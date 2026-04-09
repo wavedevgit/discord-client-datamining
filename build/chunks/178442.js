@@ -14,16 +14,16 @@ var i = n(627968),
     h = n(241847),
     m = n(167155),
     A = n(652215),
-    p = n(490178);
-let g = {
-        [A.vkP.CONNECTED]: p.nf,
-        [A.vkP.CONNECTING]: p._6,
-        [A.vkP.ERROR]: p.Il
+    g = n(490178);
+let p = {
+        [A.vkP.CONNECTED]: g.nf,
+        [A.vkP.CONNECTING]: g._6,
+        [A.vkP.ERROR]: g.Il
     },
     f = {
-        [A.bFR.FINE]: p.LP,
-        [A.bFR.AVERAGE]: p.mq,
-        [A.bFR.BAD]: p.yA,
+        [A.bFR.FINE]: g.LP,
+        [A.bFR.AVERAGE]: g.mq,
+        [A.bFR.BAD]: g.yA,
         [A.bFR.UNKNOWN]: null
     },
     _ = {
@@ -40,8 +40,8 @@ function E(e) {
         ...l
     } = e, s = _[t];
     return (0, i.jsx)(s, {
-        className: a()(p.hU, {
-            [p.kV]: n
+        className: a()(g.hU, {
+            [g.kV]: n
         }),
         ...l
     })
@@ -66,9 +66,9 @@ function x(e) {
         connectionStatusText: j
     } = u.A.getStatus(s, N);
     return (0, i.jsxs)("div", {
-        className: p.pe,
+        className: g.pe,
         children: [(0, i.jsx)("div", {
-            className: a()(p.yH, f[t], _),
+            className: a()(g.yH, f[t], _),
             ref: I,
             children: (0, i.jsx)(o.YNO, {
                 targetElementRef: I,
@@ -82,7 +82,7 @@ function x(e) {
                         children: [v && (0, i.jsx)(r.m, {
                             text: t !== A.bFR.UNKNOWN && null != n ? `${n.toFixed(0)} ms` : null,
                             children: (0, i.jsx)(o.DUT, {
-                                className: p.xr,
+                                className: g.xr,
                                 onClick: e => {
                                     (0, d.X)(c.A.RTC_PANEL, d.O.CONNECTION_STATUS), l(e)
                                 },
@@ -92,7 +92,7 @@ function x(e) {
                                 })
                             })
                         }), (0, i.jsxs)("div", {
-                            className: p.ei,
+                            className: g.ei,
                             children: [(0, i.jsx)(o.DUT, {
                                 onClick: e => {
                                     (0, d.X)(c.A.RTC_PANEL, d.O.CONNECTION_STATUS), l(e)
@@ -101,7 +101,7 @@ function x(e) {
                                     text: j,
                                     textVariant: T,
                                     hasVideo: N,
-                                    className: g[b],
+                                    className: p[b],
                                     hasConnectedChannel: null != C
                                 })
                             }), S ? x : null]

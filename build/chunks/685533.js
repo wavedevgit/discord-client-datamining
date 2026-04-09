@@ -1,124 +1,128 @@
 /** chunk id: 685533 params = (module,exports,require) **/
 "use strict";
 s.d(t, {
-    A: () => L
+    A: () => j
 });
 var n = s(627968),
     r = s(64700),
     l = s(503698),
     i = s.n(l),
-    a = s(417597),
-    o = s(397927),
-    c = s(287809),
-    d = s(954571),
-    u = s(440938),
-    _ = s(590180),
-    g = s(940980),
-    m = s(511265),
-    h = s(365491),
-    p = s(856686),
-    f = s(100057),
-    x = s(751304),
-    E = s(561769),
-    b = s(484469),
-    C = s(998694),
-    A = s(438166),
-    S = s(652215),
-    v = s(16464);
-let I = {
+    a = s(641150),
+    o = s(417597),
+    c = s(397927),
+    d = s(287809),
+    u = s(954571),
+    _ = s(440938),
+    g = s(590180),
+    m = s(940980),
+    h = s(511265),
+    p = s(365491),
+    f = s(856686),
+    x = s(100057),
+    E = s(751304),
+    b = s(561769),
+    C = s(484469),
+    A = s(998694),
+    S = s(438166),
+    v = s(652215),
+    I = s(16464);
+let L = {
     flattenProductVariants: !0
 };
 
-function L(e) {
+function j(e) {
     let {
         isFetchingCategories: t,
         scrollerRef: s,
         tab: l
-    } = e, L = (0, u.uM)(), j = L?.sessionId ?? "", {
-        noCache: O,
-        includeUnpublished: T
-    } = (0, C.A)(), k = (0, g.W)("CollectiblesFilterResults"), y = (0, a.bG)([c.default], () => c.default.getCurrentUser()), {
-        skus: N,
-        currentPage: R,
-        totalCount: B,
-        isFetchingResults: P
-    } = (0, p.S)(), M = (0, a.yK)([_.A], () => _.A.getProductsBySkus(N)), H = r.useCallback(() => {
+    } = e, j = (0, _.uM)(), O = j?.sessionId ?? "", {
+        noCache: T,
+        includeUnpublished: k
+    } = (0, A.A)(), y = (0, m.W)("CollectiblesFilterResults"), N = (0, o.bG)([d.default], () => d.default.getCurrentUser()), {
+        skus: R,
+        currentPage: B,
+        totalCount: P,
+        isFetchingResults: M
+    } = (0, f.S)(), {
+        itemTypeFilters: H
+    } = (0, p.v)(), D = 1 === H.size && H.has(a.q.BUNDLE), w = (0, o.yK)([g.A], () => g.A.getProductsBySkus(R)), F = r.useCallback(() => {
         s?.current?.scrollToTop({
             animate: !0
         })
-    }, [s]), D = N?.join("");
+    }, [s]), G = R?.join("");
     r.useEffect(() => {
-        H()
-    }, [D, H]);
-    let w = (0, m.p)(),
-        F = r.useMemo(() => w(M), [w, M]);
+        F()
+    }, [G, F]);
+    let U = (0, h.p)(),
+        V = r.useMemo(() => U(w), [U, w]);
     r.useEffect(() => {
-        t || (0, f.z)({
-            sessionId: j,
-            checkpoint: f.t.SHOP_RENDERED,
+        t || (0, x.z)({
+            sessionId: O,
+            checkpoint: x.t.SHOP_RENDERED,
             tab: l,
-            unpublishedCategoriesShown: T,
-            cacheDisabled: O
+            unpublishedCategoriesShown: k,
+            cacheDisabled: T
         })
-    }, [j, T, O, t, l]);
-    let G = r.useRef(null),
+    }, [O, k, T, t, l]);
+    let W = r.useRef(null),
         {
-            setQueryPageSize: U,
-            setQueryPageOffset: V,
-            queryPageSize: W
-        } = (0, h.v)(),
-        [K, z] = r.useState(!1),
-        Y = t || P || null == y;
+            setQueryPageSize: K,
+            setQueryPageOffset: z,
+            queryPageSize: Y
+        } = (0, p.v)(),
+        [$, Z] = r.useState(!1),
+        q = t || M || null == N;
     r.useEffect(() => {
-        Y ? z(!1) : F.length > 0 && z(!0)
-    }, [Y, F.length]);
-    let $ = W > 0 && !Y && 0 === F.length;
+        q ? Z(!1) : V.length > 0 && Z(!0)
+    }, [q, V.length]);
+    let X = Y > 0 && !q && 0 === V.length;
     r.useEffect(() => {
         let e = new ResizeObserver(() => {
-            null == G.current || U(Math.floor(5 * getComputedStyle(G.current).gridTemplateColumns.split(/\s+/).length))
+            null == W.current || K(Math.floor(5 * getComputedStyle(W.current).gridTemplateColumns.split(/\s+/).length))
         });
-        if (null != G.current) return e.observe(G.current), () => e.disconnect()
-    }, [U]);
-    let Z = r.useCallback(e => {
-        d.default.track(S.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-            collectibles_shop_session_id: L?.sessionId,
-            page_section: L?.pageSection,
-            page_category: L?.pageCategory,
+        if (null != W.current) return e.observe(W.current), () => e.disconnect()
+    }, [K]);
+    let J = r.useCallback(e => {
+        u.default.track(v.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            collectibles_shop_session_id: j?.sessionId,
+            page_section: j?.pageSection,
+            page_category: j?.pageCategory,
             page_index: e,
-            page_size: W,
+            page_size: Y,
             cta_name: `filter results page ${e}`,
             page_type: "catalog"
-        }), V((e - 1) * W)
-    }, [L, W, V]);
-    return (0, n.jsxs)(E.v3.Provider, {
-        value: I,
+        }), z((e - 1) * Y)
+    }, [j, Y, z]);
+    return (0, n.jsxs)(b.v3.Provider, {
+        value: L,
         children: [(0, n.jsxs)("div", {
             className: i()({
-                [v.oE]: $
+                [I.oE]: X
             }),
-            children: [$ && (0, n.jsx)(A.A, {}), (0, n.jsxs)("div", {
-                className: i()(v.ZE, {
-                    [v.Kp]: K
+            children: [X && (0, n.jsx)(S.A, {}), (0, n.jsxs)("div", {
+                className: i()(I.ZE, {
+                    [I.Kp]: $
                 }),
-                ref: G,
-                children: [Y && [...Array(W)].map((e, t) => (0, n.jsx)(b.A, {}, t)), !Y && F.map((e, t) => null == _.A.getCategory(e.categorySkuId) ? null : (0, n.jsx)(u.R9, {
+                ref: W,
+                children: [q && [...Array(Y)].map((e, t) => (0, n.jsx)(C.A, {}, t)), !q && V.map((e, t) => null == g.A.getCategory(e.categorySkuId) ? null : (0, n.jsx)(_.R9, {
                     newValue: {
                         tilePosition: t
                     },
-                    children: (0, n.jsx)(x.A, {
+                    children: (0, n.jsx)(E.A, {
                         skuId: e.skuId,
-                        prioritizedCurrency: k ? E.Hi.FIAT : void 0
+                        hideStaticBundleBackgroundAsset: !D,
+                        prioritizedCurrency: y ? b.Hi.FIAT : void 0
                     }, e.skuId)
                 }, e.skuId))]
             })]
-        }), B > W && (0, n.jsx)("div", {
-            className: v.Ej,
+        }), P > Y && (0, n.jsx)("div", {
+            className: I.Ej,
             children: (0, n.jsx)("div", {
-                children: (0, n.jsx)(o.mgR, {
-                    currentPage: R,
-                    totalCount: B,
-                    pageSize: W,
-                    onPageChange: Z,
+                children: (0, n.jsx)(c.mgR, {
+                    currentPage: B,
+                    totalCount: P,
+                    pageSize: Y,
+                    onPageChange: J,
                     disablePaginationGap: !0
                 })
             })

@@ -48,57 +48,73 @@ function k(e) {
         allClips: O
     } = (0, y.a)(), {
         onShareClick: P
-    } = (0, v.A)(t), U = (0, r.bG)([p.A], () => p.A.getExportingClipIds().length > 0), [G, V] = a.useState("gallery"), [H, z] = a.useState(null), $ = (0, r.bG)([p.A], () => null != H ? p.A.getClipById(H) : null, [H]), [_, K] = a.useState(c.ip4.HIDDEN), B = a.useRef(null), F = (0, C.P)(e => e.selectedGameId), Y = a.useMemo(() => null == F || "favorites" === F ? null : T.find(e => e.applicationId === F) ?? null, [F, T]), X = a.useMemo(() => "favorites" === F ? D : Y?.filteredClips ?? R, [F, Y, R, D]), Q = a.useMemo(() => "favorites" === F ? N.intl.string(N.t["9rlCk1"]) : Y?.name ?? N.intl.string(N.t.dPVrEv), [F, Y]), q = a.useCallback(e => {
+    } = (0, v.A)(t), U = (0, r.bG)([p.A], () => p.A.getExportingClipIds().length > 0), [G, V] = a.useState("gallery"), [H, z] = a.useState(null), $ = (0, r.bG)([p.A], () => null != H ? p.A.getClipById(H) : null, [H]), _ = a.useRef(G);
+    _.current = G;
+    let [K, B] = a.useState(c.ip4.HIDDEN), F = a.useRef(null), Y = (0, C.P)(e => e.selectedGameId), X = a.useMemo(() => null == Y || "favorites" === Y ? null : T.find(e => e.applicationId === Y) ?? null, [Y, T]), Q = a.useMemo(() => "favorites" === Y ? D : X?.filteredClips ?? R, [Y, X, R, D]), q = a.useMemo(() => "favorites" === Y ? N.intl.string(N.t["9rlCk1"]) : X?.name ?? N.intl.string(N.t.dPVrEv), [Y, X]), W = a.useCallback(e => {
         M(t => {
             let l = new Set(t);
             return l.has(e) ? l.delete(e) : l.add(e), l
         })
-    }, []), W = a.useCallback(e => {
-        z(e.id), V("editing"), u.A.useReducedMotion && K(c.ip4.ENTERED)
-    }, []), Z = a.useCallback(() => {
-        u.A.useReducedMotion && z(null), V("gallery")
+    }, []), Z = a.useCallback(e => {
+        z(e.id), V("editing"), u.A.useReducedMotion && B(c.ip4.ENTERED)
     }, []), J = a.useCallback(() => {
-        M(new Set)
-    }, []), ee = L.size > 0, et = a.useCallback(() => {
-        let e = O.filter(e => L.has(e.id));
-        (0, c.mMO)(async () => {
-            let {
-                default: t
-            } = await l.e("13367").then(l.bind(l, 223818));
-            return l => (0, n.jsx)(t, {
-                ...l,
-                clips: e,
-                onAfterDelete: () => {
-                    J(), l.onClose()
-                }
+        u.A.useReducedMotion && z(null), V("gallery")
+    }, []);
+    a.useEffect(() => {
+        let e = e => {
+            "Escape" === e.key && "editing" === _.current && (e.stopPropagation(), J())
+        };
+        return document.addEventListener("keydown", e), () => {
+            document.removeEventListener("keydown", e)
+        }
+    }, [J, i]);
+    let ee = a.useCallback(() => {
+            M(new Set)
+        }, []),
+        et = L.size > 0,
+        el = a.useCallback(() => {
+            let e = O.filter(e => L.has(e.id));
+            (0, c.mMO)(async () => {
+                let {
+                    default: t
+                } = await l.e("13367").then(l.bind(l, 223818));
+                return l => (0, n.jsx)(t, {
+                    ...l,
+                    clips: e,
+                    onAfterDelete: () => {
+                        ee(), l.onClose()
+                    }
+                })
+            }, {
+                stackingBehavior: "stack"
             })
-        }, {
-            stackingBehavior: "stack"
-        })
-    }, [O, L, J]), el = a.useCallback(async () => {
-        let e = O.filter(e => L.has(e.id));
-        await P({
-            clips: e
-        }), J()
-    }, [O, L, P, J]), en = a.useMemo(() => ({
-        selectedClipIds: L,
-        toggleClipSelection: q,
-        clearSelection: J,
-        isMultiSelectMode: ee
-    }), [L, q, J, ee]);
+        }, [O, L, ee]),
+        en = a.useCallback(async () => {
+            let e = O.filter(e => L.has(e.id));
+            await P({
+                clips: e
+            }), ee()
+        }, [O, L, P, ee]),
+        ea = a.useMemo(() => ({
+            selectedClipIds: L,
+            toggleClipSelection: W,
+            clearSelection: ee,
+            isMultiSelectMode: et
+        }), [L, W, ee, et]);
     return (0, n.jsx)(h.f5, {
         value: w,
         children: (0, n.jsx)(E.Provider, {
-            value: en,
+            value: ea,
             children: (0, n.jsx)(o.N, {
                 onClose: i,
                 transitionState: I,
                 ...S,
                 children: (0, n.jsxs)("div", {
                     className: A.jT,
-                    ref: B,
+                    ref: F,
                     children: [(0, n.jsxs)("div", {
                         className: s()(A.PD, "gallery" === G && A.vu),
+                        "aria-hidden": "gallery" !== G,
                         children: [(0, n.jsx)(b.A, {
                             clipsByGame: T,
                             filteredClips: R,
@@ -111,14 +127,14 @@ function k(e) {
                                 children: [(0, n.jsx)(c.Heading, {
                                     variant: "heading-md/medium",
                                     color: "text-default",
-                                    children: Q
+                                    children: q
                                 }), (0, n.jsxs)("div", {
                                     className: A.$s,
-                                    children: [ee && (0, n.jsxs)(n.Fragment, {
+                                    children: [et && (0, n.jsxs)(n.Fragment, {
                                         children: [(0, n.jsx)(d.m, {
                                             text: N.intl.string(N.t.RDE0Sc),
                                             children: (0, n.jsx)(c.K0, {
-                                                onClick: el,
+                                                onClick: en,
                                                 icon: c.liv,
                                                 size: "sm",
                                                 variant: "icon-only",
@@ -128,7 +144,7 @@ function k(e) {
                                         }), (0, n.jsx)(d.m, {
                                             text: N.intl.string(N.t.oyYWHE),
                                             children: (0, n.jsx)(c.K0, {
-                                                onClick: et,
+                                                onClick: el,
                                                 icon: c.ucK,
                                                 size: "sm",
                                                 variant: "icon-only",
@@ -144,29 +160,30 @@ function k(e) {
                                     })]
                                 })]
                             }), (0, n.jsx)(j.A, {
-                                onEdit: W,
+                                onEdit: Z,
                                 channelId: t,
-                                filteredClips: X,
+                                filteredClips: Q,
                                 totalClipCount: O.length,
                                 onClipClick: k
                             })]
                         })]
                     }), (0, n.jsx)("div", {
                         className: s()(A.jN, "editing" === G && A.vu),
+                        "aria-hidden": "editing" !== G,
                         onTransitionEnd: () => {
-                            "gallery" === G ? (z(null), K(c.ip4.HIDDEN)) : "editing" === G && K(c.ip4.ENTERED)
+                            "gallery" === G ? (z(null), B(c.ip4.HIDDEN)) : "editing" === G && B(c.ip4.ENTERED)
                         },
                         children: null != $ && (0, n.jsxs)(g.p, {
                             clip: $,
-                            modalContainerRef: B,
+                            modalContainerRef: F,
                             children: [(0, n.jsx)(x.A, {
                                 clip: $,
-                                transitionState: _,
-                                onClose: Z
+                                transitionState: K,
+                                onClose: J
                             }), (0, n.jsx)(f.A, {
                                 channelId: t,
                                 clip: $,
-                                onClose: i
+                                onClose: J
                             })]
                         })
                     })]

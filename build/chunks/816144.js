@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(576705),
     m = n(287809),
     A = n(427262),
-    p = n(314307),
-    g = n(393194),
+    g = n(314307),
+    p = n(393194),
     f = n(455067),
     _ = n(635157),
     E = n(379768),
@@ -34,7 +34,7 @@ function b(e) {
         channel: n
     } = e, s = t && (0, r.Ae)(n), a = (0, l.bG)([u.Ay], () => null != n.guild_id && n === u.Ay.getDefaultChannel(n.guild_id), [n]);
     if ((0, o.A)(n.id)) return null;
-    if (n.isForumPost()) return (0, i.jsx)(g.A, {
+    if (n.isForumPost()) return (0, i.jsx)(p.A, {
         channel: n
     });
     if (d.Le.has(n.type)) return (0, i.jsx)(C.A, {
@@ -58,7 +58,7 @@ function j(e) {
     } = e, r = (0, a.Ay)(t), {
         type: o
     } = t, d = (0, l.bG)([m.default], () => t.isPrivate() ? m.default.getUser(t.getRecipientId()) : null), u = A.Ay.useUserTag(d), {
-        canManageRoles: g,
+        canManageRoles: p,
         canReadMessageHistory: E
     } = (0, l.cf)([h.A], () => ({
         canManageRoles: h.A.can(N.xBc.MANAGE_ROLES, t),
@@ -86,13 +86,13 @@ function j(e) {
         }) : null]
     });
     if (t.isMultiUserDM())
-        if (t.isManaged()) return (0, i.jsxs)(p.Ay, {
+        if (t.isManaged()) return (0, i.jsxs)(g.Ay, {
             channelId: t.id,
-            children: [(0, i.jsx)(p.cr, {
+            children: [(0, i.jsx)(g.cr, {
                 children: v.intl.format(v.t.I3R7Vn, {
                     channelName: r
                 })
-            }), (0, i.jsx)(p.j1, {
+            }), (0, i.jsx)(g.j1, {
                 children: v.intl.string(v.t.M8Ao6I)
             })]
         });
@@ -107,10 +107,10 @@ function j(e) {
     });
     return E ? (0, i.jsx)(b, {
         channel: t,
-        canManageRoles: g
-    }) : (0, i.jsx)(p.Ay, {
+        canManageRoles: p
+    }) : (0, i.jsx)(g.Ay, {
         channelId: t.id,
-        children: (0, i.jsx)(p.j1, {
+        children: (0, i.jsx)(g.j1, {
             children: v.intl.format(v.t.hPVEQG, {
                 channelName: r
             })

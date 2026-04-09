@@ -23,18 +23,18 @@ function c(e) {
             message: h,
             channel: m,
             groupId: A,
-            compact: p = !1
+            compact: g = !1
         },
-        messageWindow: g
+        messageWindow: p
     } = e, f = h.state === r.cmJ.SENDING, _ = h.id === A, E = (0, l.Lt)(h.flags, r.pr7.EPHEMERAL), x = h.state === r.cmJ.SEND_FAILED;
     return f || E && !x ? null : (0, i.jsx)(a.A, {
         className: o.Uo,
         innerClassName: o.Mc,
-        isHeader: !p && _ && !(0, s.A)(h),
-        isReply: !p && h.type === r.lAJ.REPLY && null != h.messageReference,
+        isHeader: !g && _ && !(0, s.A)(h),
+        isReply: !g && h.type === r.lAJ.REPLY && null != h.messageReference,
         channel: m,
         message: h,
-        messageWindow: g,
+        messageWindow: p,
         setPopout: t,
         showEmojiPicker: n,
         showEmojiBurstPicker: c,

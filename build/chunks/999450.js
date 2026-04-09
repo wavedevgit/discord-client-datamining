@@ -23,11 +23,11 @@ function h(e) {
         closeModal: h
     } = (0, u.c)(), {
         analyticsLocations: f
-    } = (0, r.Ay)([l.A.GAME_PROFILE]), p = i.useCallback(() => {
+    } = (0, r.Ay)([l.A.GAME_PROFILE]), _ = i.useCallback(() => {
         n?.guildId != null && (t(d.Ws.GameShop), h(), (0, s.default)({
             guildId: n.guildId
         }))
-    }, [n, t, h]), _ = i.useCallback((e, a) => {
+    }, [n, t, h]), p = i.useCallback((e, a) => {
         let i = n?.guildId;
         null != i && (t(d.Ws.GameShopItem), (0, o.R)({
             skuId: e,
@@ -45,11 +45,11 @@ function h(e) {
     } = n;
     return (0, a.jsx)(m.A, {
         title: g.intl.string(g.t.WDdlUb),
-        onClickViewAll: p,
+        onClickViewAll: _,
         children: (0, a.jsx)(c.R, {
             skuIds: v,
             analyticsLocations: f,
-            onCardClick: _
+            onCardClick: p
         })
     })
 }

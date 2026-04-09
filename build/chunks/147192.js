@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(657299),
     m = n(770178),
     A = n(84),
-    p = n(587895),
-    g = n(144945),
+    g = n(587895),
+    p = n(144945),
     f = n(912996),
     _ = n(629016),
     E = n(994500),
@@ -95,12 +95,12 @@ function D(e) {
         isInTextChannel: h = !1
     } = e, {
         rateLimitPerUser: A
-    } = o, p = l.useRef(null), f = l.useRef(null), [_, E] = l.useState(!1), x = l.useCallback(() => {
-        if (null == p.current || null == f.current) return;
-        let e = p.current.getBoundingClientRect();
+    } = o, g = l.useRef(null), f = l.useRef(null), [_, E] = l.useState(!1), x = l.useCallback(() => {
+        if (null == g.current || null == f.current) return;
+        let e = g.current.getBoundingClientRect();
         f.current.scrollWidth + 48 > e.width ? E(!0) : E(!1)
     }, []);
-    if ((0, m.g)(p, x, [], {
+    if ((0, m.g)(g, x, [], {
             enabled: h
         }), (0, m.g)(f, x, [], {
             enabled: h
@@ -127,7 +127,7 @@ function D(e) {
         }, r),
         children: [(0, i.jsxs)("div", {
             className: j.y5,
-            ref: p,
+            ref: g,
             children: [s.length > 0 && !1 !== d && (0, i.jsx)(u.nvX, {
                 className: j.gO,
                 dotRadius: 3.5,
@@ -147,7 +147,7 @@ function D(e) {
                 ref: f,
                 children: N
             })]
-        }), (0, i.jsx)(g.A, {
+        }), (0, i.jsx)(p.A, {
             channel: o,
             isThreadCreation: c
         })]
@@ -162,11 +162,11 @@ function O(e) {
 
 function L(e) {
     let t = (0, c.bG)([x.A], () => x.A.findActivity(e => null != e.application_id));
-    return (0, c.bG)([f.A, p.A, E.A, _.A], () => (0, A.A)({
+    return (0, c.bG)([f.A, g.A, E.A, _.A], () => (0, A.A)({
         channel: e,
         activity: t,
         ActivityInviteEducationStore: f.A,
-        ApplicationStore: p.A,
+        ApplicationStore: g.A,
         RelationshipStore: E.A,
         GamePartyStore: _.A
     })) ? t : null

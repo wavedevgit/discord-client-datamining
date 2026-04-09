@@ -1,6 +1,6 @@
 /** chunk id: 901690 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968),
     l = n(64700),
@@ -15,16 +15,16 @@ var i = n(627968),
     m = n(40056),
     A = n(422098);
 
-function p(e) {
+function g(e) {
     return (1 & e.buttons) == 1
 }
-let g = l.memo(function(e) {
+let p = l.memo(function(e) {
     let {
         ...t
     } = e, {
         streamId: n,
         onResize: s,
-        wrapperClassName: g
+        wrapperClassName: p
     } = t, {
         onActive: f
     } = l.useContext(d.k3), {
@@ -52,7 +52,7 @@ let g = l.memo(function(e) {
             y: e.clientY - t.top - t.height / 2
         }
     }, [j]), $ = l.useCallback(e => {
-        if (!q || !p(e)) return;
+        if (!q || !g(e)) return;
         e.preventDefault(), e.stopPropagation();
         let t = J(e);
         C(!0), P(t), O(t), w(Date.now()), B(t), G(S)
@@ -67,7 +67,7 @@ let g = l.memo(function(e) {
             y: U.y + i
         })), O(t)
     }, [M, F, U, _, J, x, q, f, T]), X = l.useCallback(e => {
-        !x || p(e) || (e.preventDefault(), e.stopPropagation(), C(!1), B(null), G(null))
+        !x || g(e) || (e.preventDefault(), e.stopPropagation(), C(!1), B(null), G(null))
     }, [x, C]), Q = l.useCallback(e => {
         if (q && null != L && null != D) {
             let {
@@ -135,7 +135,7 @@ let g = l.memo(function(e) {
     }, [M, x, H, I, y, S, N]);
     return (0, i.jsx)("div", {
         ref: j,
-        className: a()(A.iE, g, {
+        className: a()(A.iE, p, {
             [A.rc]: _ && q,
             [A.d$]: x
         }),

@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(73153),
     m = n(387755),
     A = n(308528),
-    p = n(711950),
-    g = n(846293),
+    g = n(711950),
+    p = n(846293),
     f = n(888906),
     _ = n(49229),
     E = n(684136),
@@ -187,7 +187,7 @@ class el extends l.PureComponent {
         let t = (0, Y.i)({
             location: "5326c5_1"
         });
-        g.Ay.createInvite(e.id, {
+        p.Ay.createInvite(e.id, {
             max_age: t
         }, Z.PE1.GROUP_DM)
     }
@@ -608,7 +608,7 @@ class el extends l.PureComponent {
         t.has(e) ? f.A.removeUser(e) : this.getRemaining() > 0 && (f.A.addUser(e), n.length > 0 && f.A.clear(i?.id)), this.forceFocus()
     };
     handleAddFriendNavigation = () => {
-        p.A.transitionToSection(Z.m3P.ADD_FRIEND, {
+        g.A.transitionToSection(Z.m3P.ADD_FRIEND, {
             explicit: !0
         }), this.props.onClose()
     };
@@ -851,8 +851,8 @@ function ec(e) {
     } = er({
         channel: t,
         subscribeToGlobalHotkey: d
-    }), p = (0, c.bG)([B.default], () => B.default.getUser(t?.getRecipientId()));
-    return p?.bot || p?.isProvisional ? null : (0, i.jsx)(J.Ay.Icon, {
+    }), g = (0, c.bG)([B.default], () => B.default.getUser(t?.getRecipientId()));
+    return g?.bot || g?.isProvisional ? null : (0, i.jsx)(J.Ay.Icon, {
         ref: h,
         onClick: A,
         icon: m,

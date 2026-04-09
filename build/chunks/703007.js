@@ -21,15 +21,15 @@ function c(e) {
         filters: h,
         multiple: m = !1,
         disabled: A = !1,
-        submitting: p = !1,
-        ...g
+        submitting: g = !1,
+        ...p
     } = e;
     return (0, i.jsx)(r.vN3, {
         within: !0,
         children: (0, i.jsxs)("div", {
             className: s()(n, (0, a.WS)({
-                ...g,
-                submitting: p,
+                ...p,
+                submitting: g,
                 disabled: A
             })),
             "aria-disabled": A,

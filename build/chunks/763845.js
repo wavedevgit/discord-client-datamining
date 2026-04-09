@@ -14,15 +14,15 @@ var i = n(627968),
     h = n(957565),
     m = n(975571),
     A = n(917592),
-    p = n(652215),
-    g = n(731854),
+    g = n(652215),
+    p = n(731854),
     f = n(985018),
     _ = n(643915),
     E = n(683981);
 let x = function(e) {
     let [t, n] = (0, l.useState)(!1);
     (0, l.useEffect)(() => {
-        u.default.track(p.HAw.OPEN_POPOUT, {
+        u.default.track(g.HAw.OPEN_POPOUT, {
             type: "RTC Connection"
         })
     }, []);
@@ -37,7 +37,7 @@ let x = function(e) {
             e = () => {
                 n(!0), setTimeout(() => n(!1), 2e3)
             }, d.Ay.getMediaEngine().once(s.bg.ConnectionStats, t => {
-                let n = JSON.stringify(Object.values(g.x).map(e => {
+                let n = JSON.stringify(Object.values(p.x).map(e => {
                     let n = t.filter(t => {
                         let {
                             connection: n
@@ -121,24 +121,24 @@ let x = function(e) {
         } = e,
         v = c.Q_.getSetting(),
         y = {
-            [p.S7L.AWAITING_ENDPOINT]: f.intl.format(f.t.Eu2vUR, {
-                url: p.qF7.STATUS
+            [g.S7L.AWAITING_ENDPOINT]: f.intl.format(f.t.Eu2vUR, {
+                url: g.qF7.STATUS
             }),
-            [p.S7L.CONNECTING]: f.intl.string(f.t["y+E8aD"]),
-            [p.S7L.AUTHENTICATING]: f.intl.string(f.t["5lGIZH"]),
-            [p.S7L.DISCONNECTED]: f.intl.string(f.t.fOX25I),
-            [p.S7L.RTC_CONNECTING]: f.intl.string(f.t.b5Ubd5),
-            [p.S7L.ICE_CHECKING]: f.intl.format(f.t.SyoYUb, {
-                url: m.A.getArticleURL(p.MVz.VOICE_CONNECTION_ERRORS)
+            [g.S7L.CONNECTING]: f.intl.string(f.t["y+E8aD"]),
+            [g.S7L.AUTHENTICATING]: f.intl.string(f.t["5lGIZH"]),
+            [g.S7L.DISCONNECTED]: f.intl.string(f.t.fOX25I),
+            [g.S7L.RTC_CONNECTING]: f.intl.string(f.t.b5Ubd5),
+            [g.S7L.ICE_CHECKING]: f.intl.format(f.t.SyoYUb, {
+                url: m.A.getArticleURL(g.MVz.VOICE_CONNECTION_ERRORS)
             }),
-            [p.S7L.DTLS_CONNECTING]: f.intl.format(f.t.SyoYUb, {
-                url: m.A.getArticleURL(p.MVz.VOICE_CONNECTION_ERRORS)
+            [g.S7L.DTLS_CONNECTING]: f.intl.format(f.t.SyoYUb, {
+                url: m.A.getArticleURL(g.MVz.VOICE_CONNECTION_ERRORS)
             }),
-            [p.S7L.RTC_CONNECTED]: T,
-            [p.S7L.NO_ROUTE]: f.intl.format(f.t["2tgQnk"], {
-                url: m.A.getArticleURL(p.MVz.VOICE_CONNECTION_ERRORS)
+            [g.S7L.RTC_CONNECTED]: T,
+            [g.S7L.NO_ROUTE]: f.intl.format(f.t["2tgQnk"], {
+                url: m.A.getArticleURL(g.MVz.VOICE_CONNECTION_ERRORS)
             }),
-            [p.S7L.RTC_DISCONNECTED]: f.intl.string(f.t.fOX25I)
+            [g.S7L.RTC_DISCONNECTED]: f.intl.string(f.t.fOX25I)
         } [N];
     return (0, i.jsxs)("div", {
         className: _.kL,
@@ -147,7 +147,7 @@ let x = function(e) {
             variant: "text-sm/normal",
             color: "text-muted",
             children: y
-        }), v && d.Ay.supports(g.O5.DIAGNOSTICS) && !__OVERLAY__ && (0, i.jsxs)(i.Fragment, {
+        }), v && d.Ay.supports(p.O5.DIAGNOSTICS) && !__OVERLAY__ && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("hr", {
                 className: E.me
             }), (0, i.jsxs)("div", {
@@ -199,7 +199,7 @@ let x = function(e) {
                 className: E.me
             }), (0, i.jsx)(a.MzZ, {
                 className: _.CU,
-                href: m.A.getArticleURL(p.MVz.VOICE_VIDEO_TROUBLESHOOTING),
+                href: m.A.getArticleURL(g.MVz.VOICE_VIDEO_TROUBLESHOOTING),
                 children: f.intl.string(f.t.hvVgAZ)
             })]
         })]

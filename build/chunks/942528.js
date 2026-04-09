@@ -16,8 +16,8 @@ var a = n(627968),
     g = n(322789),
     h = n(506326),
     f = n(985018),
-    p = n(930676),
-    _ = n(325952);
+    _ = n(930676),
+    p = n(325952);
 let v = e => {
     let {
         entry: t,
@@ -27,8 +27,8 @@ let v = e => {
         disableActivityProfileLinks: A,
         customCTA: j,
         popoutClassname: E,
-        popoutPosition: b = "right"
-    } = e, I = i.useRef(null), C = (0, s.bG)([d.A, c.A], () => c.A.getChannel(d.A.getChannelId())), N = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
+        popoutPosition: I = "right"
+    } = e, b = i.useRef(null), C = (0, s.bG)([d.A, c.A], () => c.A.getChannel(d.A.getChannelId())), N = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
         nick: S,
         avatar: T
     } = i.useMemo(() => {
@@ -39,8 +39,8 @@ let v = e => {
         }
     }, [N, C]);
     return null == N ? null : (0, a.jsx)(o.YNO, {
-        targetElementRef: I,
-        position: b,
+        targetElementRef: b,
+        position: I,
         renderPopout: e => {
             let {
                 closePopout: i,
@@ -66,9 +66,9 @@ let v = e => {
             v?.()
         },
         children: e => (0, a.jsx)(o.DUT, {
-            innerRef: I,
+            innerRef: b,
             ...e,
-            className: p.GA,
+            className: _.GA,
             children: (0, a.jsx)(o.vN3, {
                 offset: {
                     top: 4,
@@ -78,15 +78,15 @@ let v = e => {
                 },
                 children: (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)("img", {
-                        className: p.my,
+                        className: _.my,
                         src: T,
                         alt: f.intl.formatToPlainString(f.t.IzVXxY, {
                             userName: S
                         })
                     }), (0, a.jsx)("div", {
-                        className: p.Su,
+                        className: _.Su,
                         children: (0, a.jsxs)("div", {
-                            className: r()(_.fi, _.Kt),
+                            className: r()(p.fi, p.Kt),
                             children: [(0, a.jsx)(o.Text, {
                                 variant: "text-md/medium",
                                 color: "text-strong",
@@ -100,7 +100,7 @@ let v = e => {
                             })]
                         })
                     }), null != j ? j : (0, a.jsx)("div", {
-                        className: p.Br,
+                        className: _.Br,
                         children: (0, a.jsx)(o.W4J, {
                             size: "sm"
                         })

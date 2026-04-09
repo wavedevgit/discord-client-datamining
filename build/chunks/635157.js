@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(922301),
     m = n(750112),
     A = n(598104),
-    p = n(697122),
-    g = n(73028),
+    g = n(697122),
+    p = n(73028),
     f = n(95550),
     _ = n(854627),
     E = n(314307),
@@ -51,7 +51,7 @@ function S(e) {
         channelId: n.id,
         onMouseEnter: M,
         onMouseLeave: D,
-        children: [(t = !N && b, n.isMultiUserDM() ? (0, i.jsx)(p.Q, {
+        children: [(t = !N && b, n.isMultiUserDM() ? (0, i.jsx)(g.Q, {
             channel: n,
             editable: !0,
             location: c.A.EMPTY_GROUP_DM,
@@ -86,7 +86,7 @@ function S(e) {
                 variant: "secondary",
                 text: x.intl.string(x.t["5Q9+/L"]),
                 "aria-label": x.intl.string(x.t["5Q9+/L"]),
-                onClick: () => (0, g.U)(n.id, c.A.EMPTY_GROUP_DM)
+                onClick: () => (0, p.U)(n.id, c.A.EMPTY_GROUP_DM)
             })]
         })]
     })

@@ -1,6 +1,6 @@
 /** chunk id: 375366 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
     l = n(64700),
@@ -91,12 +91,12 @@ function A(e, t, n) {
     let i = e * t;
     return e > .5 ? i - n : e < .5 ? i : i - n / 2
 }
-let p = l.memo(function(e) {
+let g = l.memo(function(e) {
     let {
         wheelWidth: t,
         wheelHeight: n,
-        itemWidth: p,
-        itemHeight: g,
+        itemWidth: g,
+        itemHeight: p,
         showDeadZoneIndicator: f,
         activeItem: _,
         onItemSelect: E,
@@ -167,20 +167,20 @@ let p = l.memo(function(e) {
     }, [C, b, O, P, k]), H = l.useMemo(() => O[b].map((e, l) => {
         let s = h[l];
         if (null == s) throw Error(`Too many items supplied ${T.length} expected max of ${h.length}`);
-        let a = A(s.x, t, p),
-            r = A(s.y, n, g);
+        let a = A(s.x, t, g),
+            r = A(s.y, n, p);
         return (0, i.jsx)("div", {
             ref: e => L(e, l),
             className: d.Tj,
             style: {
                 left: a,
                 top: r,
-                width: p,
-                height: g
+                width: g,
+                height: p
             },
             children: e
         }, l)
-    }), [O, b, t, p, n, g, T.length, L]);
+    }), [O, b, t, g, n, p, T.length, L]);
     return (0, i.jsx)(r.DUT, {
         className: d.Pw,
         onMouseMove: F,

@@ -1,6 +1,6 @@
 /** chunk id: 286498 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968);
 n(64700);
@@ -16,13 +16,13 @@ var l = n(503698),
     m = n(427262),
     A = n(701066);
 
-function p(e) {
+function g(e) {
     let {
         user: t,
         row: n,
         hideDiscriminator: l,
-        comparator: p,
-        selected: g,
+        comparator: g,
+        selected: p,
         checked: f,
         disabled: _ = !1,
         onClick: E,
@@ -50,7 +50,7 @@ function p(e) {
         children: (0, i.jsxs)(u.A, {
             align: u.A.Align.CENTER,
             className: s()(A.Bc, {
-                [A.oz]: g
+                [A.oz]: p
             }),
             children: [(0, i.jsx)(d.A, {
                 user: t,
@@ -63,7 +63,7 @@ function p(e) {
                     className: A.$R,
                     "aria-hidden": !0,
                     variant: "text-md/medium",
-                    children: null != p && p === t.tag ? m.Ay.getName(t) : null != p && "" !== p ? p : m.Ay.getName(t)
+                    children: null != g && g === t.tag ? m.Ay.getName(t) : null != g && "" !== g ? g : m.Ay.getName(t)
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-xs/normal",
                     color: "text-muted",

@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(311907),
     m = n(397927),
     A = n(465532),
-    p = n(843472),
-    g = n(414798),
+    g = n(843472),
+    p = n(414798),
     f = n(608299),
     _ = n(147192),
     E = n(820284),
@@ -68,8 +68,8 @@ var i = n(627968),
     eh = n(853145),
     em = n(157432),
     eA = n(151282),
-    ep = n(654783),
-    eg = n(970244),
+    eg = n(654783),
+    ep = n(970244),
     ef = n(631576),
     e_ = n(252263),
     eE = n(67259),
@@ -207,7 +207,7 @@ class e1 extends l.PureComponent {
         let {
             channel: t
         } = this.props;
-        p.A.startEditMessageRecord(t.id, e), S.Ay.trackWithMetadata(eq.HAw.MESSAGE_EDIT_UP_ARROW)
+        g.A.startEditMessageRecord(t.id, e), S.Ay.trackWithMetadata(eq.HAw.MESSAGE_EDIT_UP_ARROW)
     }
     handleRecallLastCommand(e) {
         if (null == e.interactionData) return;
@@ -264,7 +264,7 @@ class e1 extends l.PureComponent {
         A.A.changeDraft(l, t, eN.C.ChannelMessage);
         let s = "" !== t && n !== this.state.richValue,
             a = s && !eX.test(t) && !t.startsWith("/") && (!this.isFirstChange || t !== this.state.textValue);
-        this.isFirstChange = !1, a && this.state.textValue.length < t.length && this.handleIncrementCombo(), a ? g.A.startTyping(l) : "" === t && g.A.stopTyping(l), s && i && (0, x.Bm)(), this.setState({
+        this.isFirstChange = !1, a && this.state.textValue.length < t.length && this.handleIncrementCombo(), a ? p.A.startTyping(l) : "" === t && p.A.stopTyping(l), s && i && (0, x.Bm)(), this.setState({
             textValue: t,
             richValue: n
         })
@@ -289,7 +289,7 @@ class e1 extends l.PureComponent {
             guild: d,
             channel: h,
             pendingReply: m,
-            chatInputType: g,
+            chatInputType: p,
             threadsAlsoSendToChannel: _
         } = this.props, E = !1;
         if (null != l) {
@@ -383,7 +383,7 @@ class e1 extends l.PureComponent {
             let S = ee.Ay.parse(h, t);
             S.tts = S.tts || E, null != o && (S.content = "", S.components = o);
             let T = {
-                ...p.A.getSendMessageOptions({
+                ...g.A.getSendMessageOptions({
                     content: t,
                     channelId: h.id,
                     uploads: n,
@@ -396,7 +396,7 @@ class e1 extends l.PureComponent {
                 }),
                 location: eY.Hx.CHAT_INPUT
             };
-            if (null != c && (T.announcementSendOptions = c), null != r && (T.gifMetadata = r), null != o && (T.flags = (0, u.UI)(T.flags ?? 0, eq.pr7.IS_COMPONENTS_V2)), a) return p.A.sendMessage(h.id, S, void 0, T).then(() => {
+            if (null != c && (T.announcementSendOptions = c), null != r && (T.gifMetadata = r), null != o && (T.flags = (0, u.UI)(T.flags ?? 0, eq.pr7.IS_COMPONENTS_V2)), a) return g.A.sendMessage(h.id, S, void 0, T).then(() => {
                 _ && ex._(h.parent_id ?? void 0)
             }), (0, eu.Jx)(h.id), e_.B({
                 channelId: h.id,
@@ -439,16 +439,16 @@ class e1 extends l.PureComponent {
                         flags: T.flags
                     },
                     attachmentsToUpload: n
-                }), (0, eg.c_)(T.scheduledTimestamp)
+                }), (0, ep.c_)(T.scheduledTimestamp)
             } catch (e) {
-                return (0, eg.kM)(e.message), {
+                return (0, ep.kM)(e.message), {
                     shouldClear: !1,
                     shouldRefocus: !1
                 }
-            } else p.A.sendMessage(h.id, S, void 0, T).then(() => {
+            } else g.A.sendMessage(h.id, S, void 0, T).then(() => {
                 _ && ex._(h.parent_id ?? void 0)
             });
-            return this.setState((0, P.N3)()), (0, eu.Jx)(h.id), (0, ef.x5)(h.id, g.drafts.type), e_.B({
+            return this.setState((0, P.N3)()), (0, eu.Jx)(h.id), (0, ef.x5)(h.id, p.drafts.type), e_.B({
                 channelId: h.id,
                 enabled: !1
             }), {
@@ -489,11 +489,11 @@ class e1 extends l.PureComponent {
             accessibilityLabel: u,
             shakeIntensity: h,
             poggermodeEnabled: A,
-            pendingScheduledMessage: p,
-            announcementComposerEnabled: g
+            pendingScheduledMessage: g,
+            announcementComposerEnabled: p
         } = this.props, {
             contentWarningProps: f
-        } = this.state, _ = e.type === eq.rbe.GUILD_ANNOUNCEMENT && g ? (0, i.jsx)(k.A, {
+        } = this.state, _ = e.type === eq.rbe.GUILD_ANNOUNCEMENT && p ? (0, i.jsx)(k.A, {
             ref: this.props.refInstance,
             textValue: this.state.textValue,
             richValue: this.state.richValue,
@@ -537,7 +537,7 @@ class e1 extends l.PureComponent {
             promptToUpload: eU.R,
             highlighted: a,
             setEditorRef: e => this.editorRef = e,
-            pendingScheduledMessage: p
+            pendingScheduledMessage: g
         });
         return (0, i.jsx)(m.YNO, {
             targetElementRef: this.props.refInstance,
@@ -686,8 +686,8 @@ class e2 extends l.PureComponent {
                 chatInputType: u,
                 placeholder: h,
                 accessibilityLabel: A,
-                showQuarantinedUserBanner: p,
-                filterAfterTimestamp: g,
+                showQuarantinedUserBanner: g,
+                filterAfterTimestamp: p,
                 communicationDisabledUntil: f,
                 shakeIntensity: x,
                 poggermodeEnabled: C,
@@ -787,13 +787,13 @@ class e2 extends l.PureComponent {
                                 children: [(0, i.jsx)(el.A, {
                                     channel: n,
                                     forceCozy: S,
-                                    filterAfterTimestamp: g,
-                                    showingQuarantineBanner: p,
+                                    filterAfterTimestamp: p,
+                                    showingQuarantineBanner: g,
                                     typingGradient: I,
                                     hideSummaries: u === L.oU.OVERLAY
                                 }), S ? null : this.renderMessageBanner({
                                     channel: n,
-                                    showQuarantinedUserBanner: p,
+                                    showQuarantinedUserBanner: g,
                                     guild: l,
                                     communicationDisabledUntil: f,
                                     showAutomodUserProfileChatBlocker: T
@@ -835,7 +835,7 @@ let e3 = l.memo(function(e) {
         accessibilityLabel: r
     } = (0, eB.A)({
         channel: t
-    }), o = (0, ed.L)(eM.default.getCurrentUser(), t), [c] = (0, q.c)(n?.id), d = (0, V.uZ)(n?.id), u = (0, h.bG)([eM.default], () => eM.default.getCurrentUser()), A = (0, h.bG)([ev.Ay], () => null != u && (ev.Ay.getMember(n?.id ?? eq.dJq, u?.id)?.isPending ?? !1)), p = (0, h.bG)([ea.A], () => ea.A.isEnabled()), g = (0, ec.A)(t.id), f = (0, J.A)(t.id), E = (0, ep.D)(t.id), x = (0, h.bG)([eE.A], () => eE.A.getAlsoSendToChannel(t.id)), S = (0, h.bG)([er.Ay, eS.default], () => er.Ay.getUserCombo(eS.default.getId(), t.id)), T = (0, _.rj)(t), N = (0, _.aW)(t), I = T.length > 0 || t.rateLimitPerUser > 0 || null != S || null != N, {
+    }), o = (0, ed.L)(eM.default.getCurrentUser(), t), [c] = (0, q.c)(n?.id), d = (0, V.uZ)(n?.id), u = (0, h.bG)([eM.default], () => eM.default.getCurrentUser()), A = (0, h.bG)([ev.Ay], () => null != u && (ev.Ay.getMember(n?.id ?? eq.dJq, u?.id)?.isPending ?? !1)), g = (0, h.bG)([ea.A], () => ea.A.isEnabled()), p = (0, ec.A)(t.id), f = (0, J.A)(t.id), E = (0, eg.D)(t.id), x = (0, h.bG)([eE.A], () => eE.A.getAlsoSendToChannel(t.id)), S = (0, h.bG)([er.Ay, eS.default], () => er.Ay.getUserCombo(eS.default.getId(), t.id)), T = (0, _.rj)(t), N = (0, _.aW)(t), I = T.length > 0 || t.rateLimitPerUser > 0 || null != S || null != N, {
         showLinkedLobbyApplicationLoadingIndicator: v
     } = (0, eF.A)(t.linkedLobby), y = (0, B.A)("ChannelChat");
     return (0, W.A)(t), (0, i.jsx)(e2, {
@@ -852,8 +852,8 @@ let e3 = l.memo(function(e) {
         filterAfterTimestamp: s,
         showQuarantinedUserBanner: o,
         communicationDisabledUntil: c,
-        shakeIntensity: g,
-        poggermodeEnabled: p,
+        shakeIntensity: p,
+        poggermodeEnabled: g,
         isSelectedResourceChannel: f,
         showAutomodUserProfileChatBlocker: d && !A,
         pendingScheduledMessage: E,

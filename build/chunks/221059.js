@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(994500),
     m = n(544231),
     A = n(349435),
-    p = n(665909),
-    g = n(576045),
+    g = n(665909),
+    p = n(576045),
     f = n(327337),
     _ = n(652215),
     E = n(985018);
@@ -30,20 +30,20 @@ function x(e) {
     } = (0, a.cf)([h.A], () => ({
         isIgnored: h.A.isIgnored(t)
     }), [t]), c = l.useCallback(() => {
-        (0, p._$)({
+        (0, g._$)({
             channelId: n,
             warningId: s,
             senderId: t,
             warningType: A._j.STRANGER_DANGER,
-            cta: p.Wm.USER_MODAL_IGNORE
+            cta: g.Wm.USER_MODAL_IGNORE
         }), o.A.ignoreUser(t, "web_stranger_danger_more", n)
     }, [n, s, t]), d = l.useCallback(() => {
-        (0, p._$)({
+        (0, g._$)({
             channelId: n,
             warningId: s,
             senderId: t,
             warningType: A._j.STRANGER_DANGER,
-            cta: p.Wm.USER_MODAL_UNIGNORE
+            cta: g.Wm.USER_MODAL_UNIGNORE
         }), o.A.unignoreUser(t, "web_stranger_danger_more", n)
     }, [n, s, t]);
     return (0, i.jsx)(u.PQ, {
@@ -70,7 +70,7 @@ function C(e) {
             location: f.Rx
         }).then(() => {
             N()
-        }), (0, p._$)({
+        }), (0, g._$)({
             channelId: t,
             warningId: C,
             senderId: S,
@@ -79,7 +79,7 @@ function C(e) {
         })
     }, [N, t, C, S]);
     l.useEffect(() => {
-        (0, p.mO)(_.HAw.SAFETY_WARNING_VIEWED, {
+        (0, g.mO)(_.HAw.SAFETY_WARNING_VIEWED, {
             channelId: t,
             warningId: C,
             senderId: S,
@@ -121,7 +121,7 @@ function C(e) {
                                 buttonText: E.intl.string(E.t["5QYPO2"]),
                                 buttonVariant: "critical-primary",
                                 onButtonPress: () => {
-                                    s(), b(p.Wm.USER_MODAL_BLOCK_CONFIRM, p.Wm.USER_MODAL_BLOCK_CANCEL, y)
+                                    s(), b(g.Wm.USER_MODAL_BLOCK_CONFIRM, g.Wm.USER_MODAL_BLOCK_CANCEL, y)
                                 }
                             }, "block-button")]
                         })
@@ -139,7 +139,7 @@ function C(e) {
                     userId: S,
                     confirmBlock: v(e),
                     onCancel: () => {
-                        s?.(), (0, p._$)({
+                        s?.(), (0, g._$)({
                             channelId: t,
                             warningId: C,
                             senderId: S,
@@ -150,7 +150,7 @@ function C(e) {
                 })
             })
         };
-    return (0, i.jsx)(g.N, {
+    return (0, i.jsx)(p.N, {
         channelId: t,
         warningId: C,
         senderId: S,
@@ -162,18 +162,18 @@ function C(e) {
             text: E.intl.string(E.t["Qk/c48"]),
             variant: "primary",
             onClick: () => {
-                y(), (0, p._$)({
+                y(), (0, g._$)({
                     channelId: t,
                     warningId: C,
                     senderId: S,
                     warningType: A._j.STRANGER_DANGER,
-                    cta: p.Wm.OPEN_MORE_TIPS
+                    cta: g.Wm.OPEN_MORE_TIPS
                 })
             }
         }, ...T ? [] : [{
             text: E.intl.string(E.t.ie0QdN),
             variant: "critical-primary",
-            onClick: () => b(p.Wm.USER_BANNER_BLOCK_CONFIRM, p.Wm.USER_BANNER_BLOCK_CANCEL)
+            onClick: () => b(g.Wm.USER_BANNER_BLOCK_CONFIRM, g.Wm.USER_BANNER_BLOCK_CANCEL)
         }]]
     })
 }

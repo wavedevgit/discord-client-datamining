@@ -12,11 +12,11 @@ function o(e) {
     let {
         currentUserId: t,
         participant: n
-    } = e, o = (0, s.A)(n.type), [c, d] = l.useState(), [u, h] = l.useState(), [m, A] = l.useState(), [p, g] = l.useState(), f = n.id.split(":").at(-1), _ = t === f, E = l.useCallback((e, t, n) => {
+    } = e, o = (0, s.A)(n.type), [c, d] = l.useState(), [u, h] = l.useState(), [m, A] = l.useState(), [g, p] = l.useState(), f = n.id.split(":").at(-1), _ = t === f, E = l.useCallback((e, t, n) => {
         var i, l;
         let s = n ? a.Ay.getOutboundStats(t) : a.Ay.getInboundStats(e, t),
             r = void 0 === (i = s?.resolution) || 0 === i.width && 0 === i.height ? "unknown" : i.width + " x " + i.height;
-        d("unknown" === r ? "-" : s?.codec ?? "unknown"), h("unknown" === r ? "-" : r), A(s?.bitrateEstimate !== void 0 ? (l = s.bitrateEstimate, `${(l/1e3).toFixed(2)} Kbps`) : "unknown"), g("unknown" === r || s?.fps === void 0 ? "-" : String(s.fps))
+        d("unknown" === r ? "-" : s?.codec ?? "unknown"), h("unknown" === r ? "-" : r), A(s?.bitrateEstimate !== void 0 ? (l = s.bitrateEstimate, `${(l/1e3).toFixed(2)} Kbps`) : "unknown"), p("unknown" === r || s?.fps === void 0 ? "-" : String(s.fps))
     }, []);
     return l.useEffect(() => {
         let e = () => E(f, o, _);
@@ -48,7 +48,7 @@ function o(e) {
             children: [(0, i.jsx)("span", {
                 children: "FPS: "
             }), (0, i.jsx)("strong", {
-                children: p
+                children: g
             })]
         }), _ && (0, i.jsxs)("div", {
             className: r.l,

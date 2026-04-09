@@ -21,8 +21,8 @@ function m(e) {
         canUseApplicationCommands: h,
         hasClips: m,
         channel: A,
-        activities: p,
-        newClipsCount: g,
+        activities: g,
+        newClipsCount: p,
         canPostPolls: f,
         appContext: _,
         canSendScheduledMessages: E,
@@ -40,7 +40,7 @@ function m(e) {
         type: "CLIPS",
         icon: s.xgA,
         display: u.intl.string(u.t.o034cv),
-        badgeVal: g,
+        badgeVal: p,
         badgeColor: l.A.colors.BACKGROUND_BRAND.css
     }), n && C.push({
         type: "CREATE_THREAD",
@@ -54,7 +54,7 @@ function m(e) {
         type: "SLASH_COMMAND",
         icon: s.k9F,
         display: u.intl.string(u.t.Bbvp6G)
-    }), p.forEach(e => {
+    }), g.forEach(e => {
         !(0, a.A)(e, d.jUm.EMBEDDED) && (e.type === d.$pd.PLAYING && (0, a.A)(e, d.jUm.JOIN) && C.push({
             type: "INVITE_TO_GAME",
             icon: s.LVO,

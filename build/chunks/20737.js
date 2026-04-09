@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(734066),
     m = n(274372),
     A = n(572164),
-    p = n(157207),
-    g = n(794905),
+    g = n(157207),
+    p = n(794905),
     f = n(450510),
     _ = n(267102),
     E = n(969632),
@@ -51,7 +51,7 @@ let U = l.memo(function(e) {
         location: "ChannelAttachButton"
     }), {
         onShareClick: X
-    } = (0, g.A)(s.id), Q = (0, r.bG)([f.HP], () => f.HP.hasHotspot(f._2.CLIPS_CHANNEL_ATTACH_REMINDER)), ee = (0, o.red)(e => (0, o.fDT)(e, P.nm)), et = (0, r.bG)([I.A], () => I.A.hasLayers()), en = (0, r.bG)([m.A], () => m.A.hasClips()), [ei, el] = l.useState(null), es = (0, h.sw)() && (z || en), ea = s.isPrivate(), er = (0, r.bG)([v.A], () => ea || v.A.can(L.xBc.ATTACH_FILES, s) && v.A.can(L.xBc.SEND_MESSAGES, s)), eo = (0, d.A)(q);
+    } = (0, p.A)(s.id), Q = (0, r.bG)([f.HP], () => f.HP.hasHotspot(f._2.CLIPS_CHANNEL_ATTACH_REMINDER)), ee = (0, o.red)(e => (0, o.fDT)(e, P.nm)), et = (0, r.bG)([I.A], () => I.A.hasLayers()), en = (0, r.bG)([m.A], () => m.A.hasClips()), [ei, el] = l.useState(null), es = (0, h.sw)() && (z || en), ea = s.isPrivate(), er = (0, r.bG)([v.A], () => ea || v.A.can(L.xBc.ATTACH_FILES, s) && v.A.can(L.xBc.SEND_MESSAGES, s)), eo = (0, d.A)(q);
 
     function ec() {
         (0, o.mMO)(async () => {
@@ -85,8 +85,8 @@ let U = l.memo(function(e) {
         eh = !S.D_.useSetting() && !(0, j.isAndroidWeb)() && null != window.ResizeObserver,
         em = (0, E.I7)(s ?? void 0),
         eA = (0, x.Sc)(),
-        ep = (0, u.b)(),
-        eg = Y?.length ?? 0,
+        eg = (0, u.b)(),
+        ep = Y?.length ?? 0,
         ef = (0, O.A)({
             canAttachFiles: er,
             canStartThreads: ed || eu,
@@ -95,11 +95,11 @@ let U = l.memo(function(e) {
             canUseApplicationCommands: !B,
             channel: s,
             activities: $,
-            newClipsCount: eg,
+            newClipsCount: ep,
             canPostPolls: em,
             appContext: H,
             canSendScheduledMessages: eA,
-            canSummarizeThreads: ep
+            canSummarizeThreads: eg
         });
     if (0 === ef.length) return null;
     let e_ = (0, i.jsx)(o.pa$, {
@@ -123,7 +123,7 @@ let U = l.memo(function(e) {
             renderPopout: e => {
                 switch (ei) {
                     case "recentClips":
-                        return (0, i.jsx)(p.A, {
+                        return (0, i.jsx)(g.A, {
                             ...e,
                             onOpenClips: ec,
                             lastClipsSession: q

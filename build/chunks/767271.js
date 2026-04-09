@@ -23,8 +23,8 @@ function h(e) {
     }, []), A = l.useCallback(() => {
         r.A.closeChannelSidebar(o.fe)
     }, []), {
-        acceptMessageRequest: p,
-        rejectMessageRequest: g,
+        acceptMessageRequest: g,
+        rejectMessageRequest: p,
         isAcceptLoading: f,
         isRejectLoading: _,
         isOptimisticAccepted: E,
@@ -40,13 +40,13 @@ function h(e) {
         children: [(0, i.jsx)(s.Button, {
             variant: "primary",
             disabled: C,
-            onClick: () => p(t.id),
+            onClick: () => g(t.id),
             loading: f,
             text: u.intl.string(u.t.Kz8Pwr)
         }), (0, i.jsx)(s.Button, {
             variant: "secondary",
             disabled: C,
-            onClick: () => g(t.id),
+            onClick: () => p(t.id),
             loading: _,
             text: u.intl.string(u.t.B2nygW)
         }), (0, i.jsx)(d.A, {

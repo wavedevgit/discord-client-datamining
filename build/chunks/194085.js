@@ -21,8 +21,8 @@ let d = l.forwardRef(function(e, t) {
         onClick: h,
         onTooltipShow: m,
         onTooltipHide: A,
-        disabled: p,
-        dangerous: g,
+        disabled: g,
+        dangerous: p,
         separator: f,
         buttonClassName: _,
         children: E,
@@ -42,8 +42,8 @@ let d = l.forwardRef(function(e, t) {
                     h(e)
                 },
                 "aria-label": l ?? n,
-                disabled: p,
-                dangerous: g,
+                disabled: g,
+                dangerous: p,
                 ...x,
                 children: [null != d ? (0, i.jsx)(d, {
                     className: c.Kk,

@@ -16,9 +16,9 @@ var i = n(627968),
     h = n(162284);
 let m = 112,
     A = 16 / 9 * 112 + 8,
-    p = 10 * o.A.Millis.SECOND;
+    g = 10 * o.A.Millis.SECOND;
 
-function g(e) {
+function p(e) {
     let t = r.default.getId();
     return e.type === u.lp.USER && e.user.id === t && e.voiceState?.selfVideo
 }
@@ -43,7 +43,7 @@ function f(e, t) {
     l.useEffect(() => {
         let e = setTimeout(() => {
             _(Date.now())
-        }, p);
+        }, g);
         return () => {
             clearTimeout(e)
         }
@@ -65,11 +65,11 @@ function f(e, t) {
                         case u.lp.USER:
                             var n;
                             let i, l = "\x06";
-                            return e.speaking ? l = "\x03" : t - e.lastSpoke < p ? l = "\x04" : e.voiceState?.selfVideo && (l = "\x05"), `${l}${n=e.lastSpoke,i=String(864e13).length,String(864e13-n).padStart(i,"0")}${(0,a.A)(e.userNick,e.user)}`
+                            return e.speaking ? l = "\x03" : t - e.lastSpoke < g ? l = "\x04" : e.voiceState?.selfVideo && (l = "\x05"), `${l}${n=e.lastSpoke,i=String(864e13).length,String(864e13-n).padStart(i,"0")}${(0,a.A)(e.userNick,e.user)}`
                     }
                 })(e, n)),
                 [m, A] = (0, s.partition)(l, u.Xw),
-                f = m.findIndex(g),
+                f = m.findIndex(p),
                 _ = null; - 1 !== f && (_ = m[f], m.splice(f, 1));
             let x = null == _ || h ? e : e - i - o,
                 C = Math.max(0, Math.min(Math.floor((x - o) / (r + o)), d, t.length)),
@@ -122,7 +122,7 @@ function _(e) {
         className: h.zr,
         children: t.map(e => {
             if (null == e) return null;
-            let t = g(e);
+            let t = p(e);
             return (0, i.jsx)("div", {
                 className: h.eP,
                 style: t ? {

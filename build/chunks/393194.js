@@ -19,13 +19,13 @@ function m(e) {
         channel: t
     } = e, n = (0, r.kt)(t), {
         firstMessage: m
-    } = (0, l.cf)([o.A], () => o.A.getMessage(t.id)), A = new Set((0, r.zt)(t, n)), p = (0, a.gU)(t) ?? s.oyn;
+    } = (0, l.cf)([o.A], () => o.A.getMessage(t.id)), A = new Set((0, r.zt)(t, n)), g = (0, a.gU)(t) ?? s.oyn;
     return (0, i.jsxs)(d.Ay, {
         channelId: t.id,
         className: h.kL,
         children: [(0, i.jsx)("div", {
             className: h.P0,
-            children: (0, i.jsx)(p, {
+            children: (0, i.jsx)(g, {
                 className: h.Kk,
                 strokeWidth: 1.75
             })

@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(546183),
     m = n(543465),
     A = n(954571),
-    p = n(33364),
-    g = n(652215),
+    g = n(33364),
+    p = n(652215),
     f = n(985018);
 
 function _(e) {
@@ -75,7 +75,7 @@ function E(e) {
                     }
                 }],
                 ...e
-            })), A.default.track(g.HAw.APP_MANAGE_CTA_CLICKED, {
+            })), A.default.track(p.HAw.APP_MANAGE_CTA_CLICKED, {
                 application_id: n.id,
                 channel_id: t.id,
                 channel_type: t.type
@@ -88,7 +88,7 @@ function x(e) {
     let {
         channel: t,
         user: n
-    } = e, a = (0, u.A)(n?.id ?? g.dJq), {
+    } = e, a = (0, u.A)(n?.id ?? p.dJq), {
         authorizedAppToken: c,
         authorizedAppsFetchState: d
     } = (0, s.cf)([h.default], () => ({
@@ -105,13 +105,13 @@ function x(e) {
             application: a,
             channel: t,
             oauth2Token: c
-        }), (0, i.jsx)(p.A, {
+        }), (0, i.jsx)(g.A, {
             channel: t,
             user: n
         })]
     }) : (0, i.jsx)(r.ButtonGroup, {
         size: "sm",
-        children: (0, i.jsx)(p.A, {
+        children: (0, i.jsx)(g.A, {
             channel: t,
             user: n
         })

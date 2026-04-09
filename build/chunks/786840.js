@@ -1,6 +1,6 @@
 /** chunk id: 786840 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
     l = n(64700),
@@ -16,14 +16,14 @@ n(603266);
 var m = n(985018),
     A = n(320860);
 
-function p(e) {
+function g(e) {
     let {
         channelId: t
-    } = e, n = (0, s.bG)([r.A], () => r.A.getSecureFramesState()?.epochAuthenticator), p = (0, d.z)({
+    } = e, n = (0, s.bG)([r.A], () => r.A.getSecureFramesState()?.epochAuthenticator), g = (0, d.z)({
         fingerprintBase64: n,
         chunkSize: 5,
         desiredLength: 30
-    }), g = l.useCallback(() => {
+    }), p = l.useCallback(() => {
         (0, o.k0)({
             channelId: t
         })
@@ -50,14 +50,14 @@ function p(e) {
                 variant: "text-sm/bold",
                 color: "text-strong",
                 children: m.intl.string(m.t.cTQI5t)
-            }), null != p && (0, i.jsx)(h.c, {
-                chunks: p,
+            }), null != g && (0, i.jsx)(h.c, {
+                chunks: g,
                 color: a.LU0.colors.INTERACTIVE_TEXT_DEFAULT.css,
-                onCopy: g
+                onCopy: p
             })]
         }), (0, i.jsx)(u.O, {
             className: A.aY,
-            chunks: p,
+            chunks: g,
             columns: 3
         }), (0, i.jsx)(a.Text, {
             variant: "text-xs/normal",

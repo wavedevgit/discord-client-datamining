@@ -18,14 +18,14 @@ function h(e) {
         className: n,
         onCopy: s,
         ...h
-    } = e, m = l.useMemo(() => t?.join(" "), [t]), [A, p] = l.useState(!1), g = l.useCallback(() => {
+    } = e, m = l.useMemo(() => t?.join(" "), [t]), [A, g] = l.useState(!1), p = l.useCallback(() => {
         (0, c.C)(m, () => {
-            p(!0), s?.()
+            g(!0), s?.()
         })
     }, [s, m]), f = A ? o.yr3 : o.TdU;
     return (0, i.jsx)(o.DUT, {
         className: a()(u.k, n),
-        onClick: g,
+        onClick: p,
         children: (0, i.jsx)(r.m, {
             text: A ? d.intl.string(d.t.t5VZ88) : d.intl.string(d.t.OpuAlK),
             children: (0, i.jsx)(f, {

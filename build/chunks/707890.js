@@ -14,16 +14,16 @@ var i = n(311907),
     h = n(787392),
     m = n(652215);
 let A = new Map,
-    p = new Map,
-    g = !1,
+    g = new Map,
+    p = !1,
     f = null;
 
 function _() {
     return c.A.getAllActiveStreamKeys().reduce((e, t) => {
         let {
             ownerId: n
-        } = (0, a.Iy)(t), i = !0 === A.get(n), l = p.get(t) !== i;
-        return p.set(t, i), !!l || e
+        } = (0, a.Iy)(t), i = !0 === A.get(n), l = g.get(t) !== i;
+        return g.set(t, i), !!l || e
     }, !1)
 }
 
@@ -35,8 +35,8 @@ function E() {
         if (t !== i && !0 !== A.get(i)) {
             n = !1;
             break
-        } let i = n !== g;
-    return g = n, i
+        } let i = n !== p;
+    return p = n, i
 }
 
 function x(e) {
@@ -60,7 +60,7 @@ function x(e) {
 }
 
 function C() {
-    A.clear(), p.clear(), g = !1
+    A.clear(), g.clear(), p = !1
 }
 class S extends i.Ay.Store {
     static displayName = "SecureFramesVerifiedStore";
@@ -68,10 +68,10 @@ class S extends i.Ay.Store {
         this.waitFor(r.default, o.A, c.A, u.A, h.A)
     }
     isCallVerified() {
-        return g
+        return p
     }
     isStreamVerified(e) {
-        return p.get(e)
+        return g.get(e)
     }
     isUserVerified(e) {
         return A.get(e)
@@ -96,7 +96,7 @@ let T = new S(s.h, {
         switch (i) {
             case l.x.STREAM:
                 if (null == t) return !1;
-                return p.delete(t), E();
+                return g.delete(t), E();
             case l.x.DEFAULT:
                 C()
         }

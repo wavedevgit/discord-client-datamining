@@ -16,8 +16,8 @@ var n = r(627968),
     p = r(219103),
     f = r(561769),
     x = r(525723),
-    C = r(57020),
-    g = r(985018),
+    g = r(57020),
+    C = r(985018),
     v = r(566947);
 let A = e => {
         let {
@@ -28,41 +28,41 @@ let A = e => {
         } = (0, d.I)(t.skuId), {
             isPurchased: A,
             isPartiallyOwnedBundle: k
-        } = (0, m.h)(t), I = (0, c.G0)(t), b = (0, c.tt)(t), E = l.useMemo(() => (0, c.fT)(t, h), [t, h]), y = (0, x.V_)(t), {
+        } = (0, m.h)(t), b = (0, c.G0)(t), I = (0, c.tt)(t), E = l.useMemo(() => (0, c.fT)(t, h), [t, h]), y = (0, x.V_)(t), {
             checkoutEligiblePrices: j,
-            hasSufficientOrbs: _,
-            shouldCheckoutWithOrbs: R
-        } = (0, C.F)({
+            hasSufficientOrbs: R,
+            shouldCheckoutWithOrbs: _
+        } = (0, g.F)({
             product: t,
             isPremiumUser: h,
             prioritizedCurrency: r,
             hasDiscountOffer: null != y
-        }), T = I && !h;
+        }), T = b && !h;
         return f ? (0, n.jsx)(s.Text, {
             variant: "text-md/medium",
             color: "text-muted",
             lineClamp: 1,
-            children: g.intl.string(g.t.wu4gyV)
+            children: C.intl.string(C.t.wu4gyV)
         }) : k ? (0, n.jsx)(s.Text, {
             variant: "text-md/medium",
             color: "text-muted",
             lineClamp: 1,
-            children: g.intl.string(g.t.BEjTij)
+            children: C.intl.string(C.t.BEjTij)
         }) : A && !T ? (0, n.jsx)(s.Text, {
             variant: "text-md/medium",
             color: "text-muted",
             lineClamp: 1,
-            children: g.intl.string(g.t["6cfuDj"])
-        }) : b ? (0, n.jsx)(s.Text, {
-            variant: "text-md/bold",
-            color: "text-strong",
-            lineClamp: 1,
-            children: g.intl.string(g.t.nBtvYB)
+            children: C.intl.string(C.t["6cfuDj"])
         }) : I ? (0, n.jsx)(s.Text, {
             variant: "text-md/bold",
             color: "text-strong",
             lineClamp: 1,
-            children: g.intl.string(g.t.rt69oo)
+            children: C.intl.string(C.t.nBtvYB)
+        }) : b ? (0, n.jsx)(s.Text, {
+            variant: "text-md/bold",
+            color: "text-strong",
+            lineClamp: 1,
+            children: C.intl.string(C.t.rt69oo)
         }) : 0 === j.length ? null : (0, n.jsx)(p.x, {
             priceAmount: j[0].amount,
             priceCurrency: j[0].currency,
@@ -70,7 +70,7 @@ let A = e => {
             nitroIconType: h ? "default" : void 0,
             nitroIconSize: "sm",
             discountOfferAmount: y,
-            className: R && !_ ? v.c : void 0,
+            className: _ && !R ? v.c : void 0,
             variant: "text-md/bold"
         })
     },

@@ -14,8 +14,8 @@ var i = n(64700),
     h = n(576705),
     m = n(927813),
     A = n(661191),
-    p = n(302909),
-    g = n(342220),
+    g = n(302909),
+    p = n(342220),
     f = n(652215);
 let _ = 90 * m.A.Millis.DAY,
     E = 14 * m.A.Millis.DAY;
@@ -27,10 +27,10 @@ function x(e) {
         x = (0, l.bG)([h.A], () => null != t && h.A.can(f.xBc.ADMINISTRATOR, t)),
         C = (0, l.bG)([o.A], () => o.A.getGuildAffinity(e.guild_id)?.score),
         S = (0, l.bG)([r.A], () => r.A.hasConsented(f.YAq.PERSONALIZATION)),
-        T = (0, g.A)(),
+        T = (0, p.A)(),
         {
             enabled: N
-        } = p.A.useConfig({
+        } = g.A.useConfig({
             location: "useIsEligibleForFirstBoosterUpsell"
         }),
         [I] = (0, a.Wl)(s.M.FIRST_BOOSTER_UPSELL_OVERSEER, {

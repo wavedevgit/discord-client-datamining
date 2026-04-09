@@ -1,6 +1,6 @@
 /** chunk id: 357179 params = (module,exports,require) **/
 n.d(t, {
-    _: () => g
+    _: () => p
 });
 var i = n(627968),
     l = n(64700),
@@ -14,21 +14,21 @@ var i = n(627968),
     h = n(665909),
     m = n(576045),
     A = n(327337),
-    p = n(985018);
+    g = n(985018);
 
-function g(e) {
+function p(e) {
     let {
         channelId: t,
-        warningId: g,
+        warningId: p,
         senderId: f
     } = e, _ = l.useCallback(() => {
-        (0, d.xi)(t, [g])
-    }, [t, g]), E = (0, a.bG)([c.A], () => c.A.isBlocked(f)), x = l.useMemo(() => ({
+        (0, d.xi)(t, [p])
+    }, [t, p]), E = (0, a.bG)([c.A], () => c.A.isBlocked(f)), x = l.useMemo(() => ({
         channelId: t,
-        warningId: g,
+        warningId: p,
         senderId: f,
         warningType: u._j.INAPPROPRIATE_CONVERSATION_TIER_2
-    }), [t, g, f]);
+    }), [t, p, f]);
     l.useEffect(() => {
         (0, h.QF)({
             ...x,
@@ -56,7 +56,7 @@ function g(e) {
                     return (0, i.jsx)(e, {
                         otherUserId: f,
                         channelId: t,
-                        warningId: g,
+                        warningId: p,
                         warningType: u._j.INAPPROPRIATE_CONVERSATION_TIER_2,
                         transitionState: l,
                         onClose: s
@@ -65,7 +65,7 @@ function g(e) {
             }, {
                 modalKey: A.V
             }), C(h.Wm.USER_BANNER_OPEN_SAFETY_TOOLS)
-        }, [t, f, g, C]),
+        }, [t, f, p, C]),
         T = l.useCallback(() => {
             _(), C(h.Wm.USER_BANNER_BLOCK_CONFIRM)
         }, [_, C]),
@@ -98,18 +98,18 @@ function g(e) {
         }, [T, N, f, t, C]);
     return (0, i.jsx)(m.N, {
         channelId: t,
-        warningId: g,
+        warningId: p,
         senderId: f,
         warningType: u._j.INAPPROPRIATE_CONVERSATION_TIER_2,
-        header: p.intl.string(p.t.ZzlB5p),
-        description: p.intl.string(p.t["D1aU+h"]),
+        header: g.intl.string(g.t.ZzlB5p),
+        description: g.intl.string(g.t["D1aU+h"]),
         onDismiss: _,
         buttons: [{
-            text: p.intl.string(p.t.Qyu4UK),
+            text: g.intl.string(g.t.Qyu4UK),
             variant: "primary",
             onClick: S
         }, ...E ? [] : [{
-            text: p.intl.string(p.t["7q0bNY"]),
+            text: g.intl.string(g.t["7q0bNY"]),
             variant: "secondary",
             onClick: I
         }]]

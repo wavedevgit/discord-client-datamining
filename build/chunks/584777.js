@@ -14,8 +14,8 @@ var l = n(311907),
     h = n(734057),
     m = n(153488),
     A = n(205761),
-    p = n(994500),
-    g = n(287809),
+    g = n(994500),
+    p = n(287809),
     f = n(652215);
 let _ = !1,
     E = "",
@@ -39,8 +39,8 @@ function y() {
     if (0 === E.trim().length) {
         var t;
         let n, l;
-        return null != i && i.clearQuery(), t = e, n = p.A.getFriendIDs(), l = g.default.getCurrentUser(), l?.isStaff() && (n = Array.from(new Set([...n, ...g.default.filter(e => e.isStaff() && e.id !== l.id, !1).map(e => e.id)]))), t?.isPrivate() && (n = n.filter(e => !t.recipients.includes(e))), C = n.reduce((e, t) => {
-            let n = g.default.getUser(t);
+        return null != i && i.clearQuery(), t = e, n = g.A.getFriendIDs(), l = p.default.getCurrentUser(), l?.isStaff() && (n = Array.from(new Set([...n, ...p.default.filter(e => e.isStaff() && e.id !== l.id, !1).map(e => e.id)]))), t?.isPrivate() && (n = n.filter(e => !t.recipients.includes(e))), C = n.reduce((e, t) => {
+            let n = p.default.getUser(t);
             return null == n || n.isProvisional || e.push({
                 user: n,
                 comparator: u.Ay.getName(n)
@@ -49,7 +49,7 @@ function y() {
     }
     let n = null != e ? e.recipients : [];
     if (null != i) {
-        let e, t, l, s = g.default.getCurrentUser(),
+        let e, t, l, s = p.default.getCurrentUser(),
             a = s?.isStaff() ?? !1;
         i.setQuery({
             query: E,
@@ -67,7 +67,7 @@ function y() {
             })), l = {}, e.forEach(e => {
                 let n = A.A.getScoreWithoutFetchingLatest(e.id),
                     i = e.getRecipientId(),
-                    s = .2 * !!p.A.isFriend(i),
+                    s = .2 * !!g.A.isFriend(i),
                     a = .1 * (null != h.A.getDMFromUserId(i));
                 l[i] = 1 + n / t + s + a
             }), l)
@@ -79,7 +79,7 @@ function y() {
 function b() {
     if (!_) return !1;
     let e = S;
-    return (S = p.A.getFriendCount() > 0) !== e
+    return (S = g.A.getFriendCount() > 0) !== e
 }
 
 function j(e, t) {
@@ -102,7 +102,7 @@ function R(e) {
             comparator: i
         }
         of t) {
-        let t = g.default.getUser(e);
+        let t = p.default.getUser(e);
         null != t && n.push({
             user: t,
             comparator: i
@@ -131,7 +131,7 @@ function L() {
 class P extends l.Ay.Store {
     static displayName = "PrivateChannelRecipientsInviteStore";
     initialize() {
-        this.waitFor(h.A, m.A, r.A, A.A, p.A, o.A, g.default), this.syncWith([g.default, h.A], y), this.syncWith([p.A], b)
+        this.waitFor(h.A, m.A, r.A, A.A, g.A, o.A, p.default), this.syncWith([p.default, h.A], y), this.syncWith([g.A], b)
     }
     getResults() {
         return C

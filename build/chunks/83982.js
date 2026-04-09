@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(313961),
     m = n(520698),
     A = n(164617),
-    p = n(958713),
-    g = n(525505),
+    g = n(958713),
+    p = n(525505),
     f = n(550946),
     _ = n(991701),
     E = n(401901),
@@ -83,7 +83,7 @@ function w(e) {
         guildId: n.guild_id,
         size: et,
         animateOnHover: !ee
-    }), el = (0, r.bG)([h.A], () => h.A.getSelectedParticipant(n.id)), es = (0, g.A)(M.x.DEFAULT, t.user.id), ea = (0, p.A)(t.user.id), er = {
+    }), el = (0, r.bG)([h.A], () => h.A.getSelectedParticipant(n.id)), es = (0, p.A)(M.x.DEFAULT, t.user.id), ea = (0, g.A)(t.user.id), er = {
         channel: n,
         selectedParticipant: el,
         user: K

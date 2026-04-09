@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(843472),
     m = n(928039),
     A = n(12351),
-    p = n(976860),
-    g = n(734057),
+    g = n(976860),
+    p = n(734057),
     f = n(320501),
     _ = n(576705),
     E = n(519057),
@@ -144,8 +144,8 @@ function O(e) {
         hasMore: s,
         loading: r,
         loadMore: h,
-        renderHeader: p,
-        renderEmptyState: g,
+        renderHeader: g,
+        renderEmptyState: p,
         renderItem: f,
         getProTip: _,
         scrollerClassName: T,
@@ -182,7 +182,7 @@ function O(e) {
         className: a()(y.zC, y.k$),
         children: (0, i.jsx)(u.y$y, {})
     }, "spinner")] : 0 === n.length ? P.push((0, i.jsx)(l.Fragment, {
-        children: g()
+        children: p()
     }, "empty-state")) : (k = !1, P = [], o().each(n, e => {
         P.push(...f(e))
     }));
@@ -201,7 +201,7 @@ function O(e) {
         })
     }) : (0, i.jsx)("div", {
         className: y.lJ,
-        children: g()
+        children: p()
     }));
     let U = _?.(),
         G = k && null != U ? (0, i.jsx)("div", {
@@ -227,7 +227,7 @@ function O(e) {
         onDoubleClick: b,
         "aria-label": e["aria-label"],
         children: (0, i.jsxs)(u.Fmo, {
-            component: p(),
+            component: g(),
             children: [(0, i.jsxs)(u.T7Y, {
                 className: T ?? y.m4,
                 onScroll: B ? L : void 0,
@@ -283,8 +283,8 @@ function L(e) {
             let {
                 id: i,
                 channel_id: l
-            } = e, s = g.A.getChannel(l);
-            null != s && (h.A.trackJump(l, i, t), (0, p.pX)(I.BVt.CHANNEL(s.getGuildId(), l, i))), u?.(n)
+            } = e, s = p.A.getChannel(l);
+            null != s && (h.A.trackJump(l, i, t), (0, g.pX)(I.BVt.CHANNEL(s.getGuildId(), l, i))), u?.(n)
         };
         (0, T.A)(e, i) && !R && i()
     }

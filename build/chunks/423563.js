@@ -19,14 +19,14 @@ function A(e) {
     let t, {
             channel: n,
             user: A,
-            showingBanner: p
+            showingBanner: g
         } = e,
         {
-            channelId: g
+            channelId: p
         } = (0, a.N)(),
-        f = (0, l.bG)([s.A], () => null != g && s.A.isSpam(g), [g]),
+        f = (0, l.bG)([s.A], () => null != p && s.A.isSpam(p), [p]),
         _ = (0, l.bG)([r.A], () => r.A.getRelationshipType(A.id), [A.id]),
-        E = n.id === g,
+        E = n.id === p,
         x = !0 === A.bot,
         C = m.n;
     return f || E ? t = (0, i.jsx)(u.A, {
@@ -38,7 +38,7 @@ function A(e) {
     }) : (t = (0, i.jsx)(d.A, {
         channel: n,
         user: A,
-        showingBanner: p
+        showingBanner: g
     }), _ === h.eA$.PENDING_INCOMING && (C = m.O)), (0, i.jsxs)("div", {
         className: C,
         children: [(0, i.jsx)(c.A, {

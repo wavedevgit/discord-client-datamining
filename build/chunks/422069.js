@@ -1,6 +1,6 @@
 /** chunk id: 422069 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => h
 });
 var a = n(311907),
     i = n(73153);
@@ -11,8 +11,9 @@ let l = {},
     c = {},
     d = {},
     u = {},
-    m = {};
-class x extends a.Ay.Store {
+    m = {},
+    x = null;
+class g extends a.Ay.Store {
     static displayName = "GameProfileStore";
     getSimilarGames(e) {
         return l[e]
@@ -38,8 +39,11 @@ class x extends a.Ay.Store {
     isAnnouncementsFetching(e) {
         return m[e] ?? !1
     }
+    getPendingReturn() {
+        return x
+    }
 }
-let g = new x(i.h, {
+let h = new g(i.h, {
     GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS: function(e) {
         let {
             applicationId: t,
@@ -97,5 +101,23 @@ let g = new x(i.h, {
             gameId: t
         } = e;
         u[t] = !0, m[t] = !1
+    },
+    GAME_PROFILE_SET_PENDING_RETURN: function(e) {
+        let {
+            gameId: t,
+            channelId: n
+        } = e;
+        if (x?.gameId === t && x?.channelId === n) return !1;
+        x = {
+            gameId: t,
+            channelId: n
+        }
+    },
+    GAME_PROFILE_CLEAR_PENDING_RETURN: function(e) {
+        let {
+            gameId: t
+        } = e;
+        if (null == x || x.gameId !== t) return !1;
+        x = null
     }
 })

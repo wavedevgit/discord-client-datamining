@@ -1,6 +1,6 @@
 /** chunk id: 582942 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => I
 });
 var a = n(627968);
 n(64700);
@@ -17,8 +17,8 @@ var i = n(503698),
     g = n(409626),
     h = n(422069),
     f = n(611656),
-    p = n(459746),
-    _ = n(225732),
+    _ = n(459746),
+    p = n(225732),
     v = n(985018),
     A = n(325952),
     j = n(92750);
@@ -34,23 +34,23 @@ let E = e => {
         children: (0, a.jsx)(d.DUT, {
             className: j.fS,
             onClick: async () => {
-                i(g.Ws.ClickSimilarGame, t.applicationId), (0, d.mMO)(() => Promise.resolve(e => (0, a.jsx)(_.default, {
+                i(g.Ws.ClickSimilarGame, t.applicationId), (0, d.mMO)(() => Promise.resolve(e => (0, a.jsx)(p.default, {
                     applicationId: t.applicationId,
                     source: g.Ob.SimilarGames,
                     ...e
                 }))), await new Promise(e => setTimeout(e, 10)), n()
             },
-            children: (0, a.jsx)(p.A, {
+            children: (0, a.jsx)(_.A, {
                 game: t,
                 application: l,
                 className: j.n1,
-                size: p.w.SMALL
+                size: _.w.SMALL
             })
         })
     })
 };
 
-function b(e) {
+function I(e) {
     let {
         applicationId: t,
         onClose: n,

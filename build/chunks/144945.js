@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(203982),
     m = n(927813),
     A = n(960850),
-    p = n(652215),
-    g = n(985018),
+    g = n(652215),
+    p = n(985018),
     f = n(357935);
 
 function _(e) {
@@ -32,8 +32,8 @@ function _(e) {
                     _(!1)
                 }, 1e3)
             }
-            return h._.subscribe(p.jej.EMPHASIZE_SLOWMODE_COOLDOWN, e), () => {
-                h._.unsubscribe(p.jej.EMPHASIZE_SLOWMODE_COOLDOWN, e)
+            return h._.subscribe(g.jej.EMPHASIZE_SLOWMODE_COOLDOWN, e), () => {
+                h._.unsubscribe(g.jej.EMPHASIZE_SLOWMODE_COOLDOWN, e)
             }
         }, []), !n) return null;
     let E = (0, d.L)(s);
@@ -47,7 +47,7 @@ function _(e) {
             let n = `${e.seconds()}`.padStart(2, "0");
             t = `${e.minutes()}:${n}`
         }
-    } else t = r ? g.intl.string(g.t["8+NidX"]) : g.intl.string(g.t.Icu3bf);
+    } else t = r ? p.intl.string(p.t["8+NidX"]) : p.intl.string(p.t.Icu3bf);
     let x = (0, i.jsxs)(c.Text, {
         className: f.rk,
         variant: "text-xs/medium",

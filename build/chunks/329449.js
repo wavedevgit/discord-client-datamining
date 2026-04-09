@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(961350),
     m = n(741961),
     A = n(682174),
-    p = n(928830),
-    g = n(3137),
+    g = n(928830),
+    p = n(3137),
     f = n(559908),
     _ = n(103640),
     E = n(924177),
@@ -32,7 +32,7 @@ let S = l.memo(function(e) {
                 h((null != a ? (0, _.RL)(a.combo) : 0) > 0)
             });
             let e = setTimeout(() => {
-                h(!1), null != a && (0, p.Nu)(a)
+                h(!1), null != a && (0, g.Nu)(a)
             }, 2e3);
             return () => clearTimeout(e)
         }, [a]);
@@ -119,9 +119,9 @@ let S = l.memo(function(e) {
     N = l.memo(function(e) {
         let {
             channelId: t
-        } = e, n = (0, o.bG)([h.default], () => h.default.getId()), s = (0, o.bG)([m.A], () => m.A.isTyping(t, n), [t, n]), a = (0, o.bG)([g.A], () => g.A.isEnabled()), u = (0, o.bG)([f.Ay], () => f.Ay.isComboing(n, t), [t, n]), {
+        } = e, n = (0, o.bG)([h.default], () => h.default.getId()), s = (0, o.bG)([m.A], () => m.A.isTyping(t, n), [t, n]), a = (0, o.bG)([p.A], () => p.A.isEnabled()), u = (0, o.bG)([f.Ay], () => f.Ay.isComboing(n, t), [t, n]), {
             ref: A,
-            width: p = 0
+            width: g = 0
         } = (0, d.Ay)(), [_, x] = l.useState(!1), N = (0, E.A)(t), I = a && u && s;
         l.useEffect(() => {
             I && x(!0);
@@ -152,7 +152,7 @@ let S = l.memo(function(e) {
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(S, {
                 channelId: t,
-                width: p
+                width: g
             }), (0, i.jsx)(r.animated.div, {
                 ref: A,
                 className: C.p_,

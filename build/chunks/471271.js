@@ -14,8 +14,8 @@ var i = n(64700),
     h = n(966107),
     m = n(570658),
     A = n(209079),
-    p = n(687599),
-    g = n(652215);
+    g = n(687599),
+    p = n(652215);
 
 function f(e) {
     let {
@@ -75,8 +75,8 @@ function f(e) {
         }
         let n = async () => {
             let n = null != t ? o.A.getMutualGuilds(t.id)?.map(e => e.guild.id) : [];
-            u.default.track(g.HAw.MESSAGE_REQUEST_ACTION, {
-                action: p.LD.ACCEPT_CONFIRMATION_PROMPT,
+            u.default.track(p.HAw.MESSAGE_REQUEST_ACTION, {
+                action: g.LD.ACCEPT_CONFIRMATION_PROMPT,
                 channel_id: e,
                 mutual_guild_ids: n ?? [],
                 other_user_id: t?.id
@@ -87,8 +87,8 @@ function f(e) {
             onConfirm: n,
             onCancel: () => {
                 let n = null != t ? o.A.getMutualGuilds(t.id)?.map(e => e.guild.id) : [];
-                u.default.track(g.HAw.MESSAGE_REQUEST_ACTION, {
-                    action: p.LD.DISMISS_CONFIRMATION_PROMPT,
+                u.default.track(p.HAw.MESSAGE_REQUEST_ACTION, {
+                    action: g.LD.DISMISS_CONFIRMATION_PROMPT,
                     channel_id: e,
                     mutual_guild_ids: n ?? [],
                     other_user_id: t?.id
@@ -97,8 +97,8 @@ function f(e) {
         })
     }, [R, j, t]), L = i.useCallback((e, t, n) => {
         let i = (i, l) => {
-                l && d.WY.updateSetting(i), i && null != t && (0, r.tJ)(t), R(e.id), u.default.track(g.HAw.MESSAGE_REQUEST_ACTION, {
-                    action: p.LD.ACCEPT_HAM_CONFIRMATION_PROMPT,
+                l && d.WY.updateSetting(i), i && null != t && (0, r.tJ)(t), R(e.id), u.default.track(p.HAw.MESSAGE_REQUEST_ACTION, {
+                    action: g.LD.ACCEPT_HAM_CONFIRMATION_PROMPT,
                     channel_id: e.id,
                     is_dont_show_again_checked: l,
                     non_spam_retraining_opt_in: i
@@ -109,8 +109,8 @@ function f(e) {
             channel: e,
             onConfirm: i,
             onCancel: () => {
-                u.default.track(g.HAw.MESSAGE_REQUEST_ACTION, {
-                    action: p.LD.DISMISS_HAM_CONFIRMATION_PROMPT,
+                u.default.track(p.HAw.MESSAGE_REQUEST_ACTION, {
+                    action: g.LD.DISMISS_HAM_CONFIRMATION_PROMPT,
                     channel_id: e.id
                 })
             }

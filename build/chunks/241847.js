@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(572487),
     m = n(798286),
     A = n(83942),
-    p = n(259374),
-    g = n(730986),
+    g = n(259374),
+    p = n(730986),
     f = n(786840),
     _ = n(763845),
     E = n(857341),
@@ -67,7 +67,7 @@ function j(e) {
         connectionTypeText: n,
         closePopout: l
     } = e, s = y(t);
-    return (0, i.jsx)(g.Q, {
+    return (0, i.jsx)(p.Q, {
         ...s,
         closePopout: l,
         connectionTypeText: n
@@ -91,7 +91,7 @@ function M(e) {
         closePopout: t,
         connectionTypeText: n
     } = e, l = v();
-    return (0, i.jsx)(g.Q, {
+    return (0, i.jsx)(p.Q, {
         ...l,
         closePopout: t,
         connectionTypeText: n
@@ -104,7 +104,7 @@ function D(e) {
         isOverlay: n,
         lobbyId: l,
         closePopout: s
-    } = e, a = (0, p.k)({
+    } = e, a = (0, g.k)({
         channelId: t
     }) ? S.intl.string(S.t["3BogKe"]) : S.intl.string(S.t.ETIVvg);
     return n ? (0, i.jsx)(b, {
@@ -123,7 +123,7 @@ function O(e) {
         isOverlay: n,
         lobbyId: l,
         closePopout: s
-    } = e, a = (0, p.k)({
+    } = e, a = (0, g.k)({
         channelId: t
     }) ? S.intl.string(S.t["3BogKe"]) : S.intl.string(S.t.ETIVvg);
     return n ? (0, i.jsx)(j, {
@@ -248,7 +248,7 @@ function P(e) {
 }
 
 function k(e) {
-    return (0, p.k)({
+    return (0, g.k)({
         channelId: e.channelId
     }) ? (0, i.jsx)(P, {
         ...e
@@ -264,7 +264,7 @@ function k(e) {
 }
 
 function w(e) {
-    return (0, p.k)({
+    return (0, g.k)({
         channelId: e.channelId
     }) ? (0, i.jsx)(L, {
         ...e

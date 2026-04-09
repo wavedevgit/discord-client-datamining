@@ -16,8 +16,8 @@ var a = n(627968),
     g = n(735321),
     h = n(961350),
     f = n(760751),
-    p = n(985018);
-async function _(e) {
+    _ = n(985018);
+async function p(e) {
     let t = e((0, g.BF)());
     await x.A.savePendingWidgets(t.filter(e => !e.isDiscardable()))
 }
@@ -29,26 +29,26 @@ function v(e) {
         v = (0, r.bG)([f.A], () => f.A.getDetectableGame(t)),
         A = i.useMemo(() => [{
             type: l.x.FAVORITE_GAMES,
-            addLabel: p.intl.string(p.t.fgmitg),
-            removeLabel: p.intl.string(p.t.TSGNQY),
+            addLabel: _.intl.string(_.t.fgmitg),
+            removeLabel: _.intl.string(_.t.TSGNQY),
             menuId: "game-profile-add-favorite-game",
             icon: s.C3E
         }, {
             type: l.x.PLAYED_GAMES,
-            addLabel: p.intl.string(p.t["0xIVLR"]),
-            removeLabel: p.intl.string(p.t.iN9ShA),
+            addLabel: _.intl.string(_.t["0xIVLR"]),
+            removeLabel: _.intl.string(_.t.iN9ShA),
             menuId: "game-profile-add-games-i-like",
             icon: s.Gek
         }, {
             type: l.x.CURRENT_GAMES,
-            addLabel: p.intl.string(p.t.G0c4En),
-            removeLabel: p.intl.string(p.t.h00srf),
+            addLabel: _.intl.string(_.t.G0c4En),
+            removeLabel: _.intl.string(_.t.h00srf),
             menuId: "game-profile-add-games-in-rotation",
             icon: s.H_z
         }, {
             type: l.x.WANT_TO_PLAY_GAMES,
-            addLabel: p.intl.string(p.t.UuBS4K),
-            removeLabel: p.intl.string(p.t.MB8XLq),
+            addLabel: _.intl.string(_.t.UuBS4K),
+            removeLabel: _.intl.string(_.t.MB8XLq),
             menuId: "game-profile-add-want-to-play",
             icon: s._b6
         }], []),
@@ -56,7 +56,7 @@ function v(e) {
         E = (0, o.w$)({
             location: "game-profile-overflow-menu"
         }),
-        b = i.useMemo(() => {
+        I = i.useMemo(() => {
             if (null == E || 0 === E.length) return null;
             if (null != e) {
                 if (E.some(t => t.applicationId === e.id)) return e.id;
@@ -65,9 +65,9 @@ function v(e) {
             }
             return null
         }, [E, e]),
-        I = i.useCallback(async (e, n) => {
+        b = i.useCallback(async (e, n) => {
             let a = null;
-            if (await _(i => {
+            if (await p(i => {
                     let l = i.filter(u.fu).find(t => t.type === e) ?? null;
                     if (n) {
                         if (l?.games.some(e => e.applicationId === t) || null != l && (0, g.uA)(l)) return i;
@@ -102,27 +102,27 @@ function v(e) {
             })
         }, [t]),
         C = i.useCallback(async e => {
-            if (null == b) return;
+            if (null == I) return;
             let t = null;
-            if (await _(n => e ? n.some(e => e instanceof d.R && e.applicationId === b) ? n : [t = new d.R({
-                    applicationId: b
-                }), ...n] : (t = n.find(e => e instanceof d.R && e.applicationId === b) ?? null, n.filter(e => !(e instanceof d.R && e.applicationId === b)))), null == t) return;
+            if (await p(n => e ? n.some(e => e instanceof d.R && e.applicationId === I) ? n : [t = new d.R({
+                    applicationId: I
+                }), ...n] : (t = n.find(e => e instanceof d.R && e.applicationId === I) ?? null, n.filter(e => !(e instanceof d.R && e.applicationId === I)))), null == t) return;
             let n = t;
             (0, c.un)({
                 action: e ? "WIDGET_ADDED" : "WIDGET_REMOVED",
                 ...n.getProfileEditAnalyticsOptions()
             })
-        }, [b]);
+        }, [I]);
     if (null == x) return null;
     let N = null != e && null != v && (0, g.XX)(v),
         S = [];
-    if (null != b) {
-        let e = j.some(e => e instanceof d.R && e.applicationId === b);
+    if (null != I) {
+        let e = j.some(e => e instanceof d.R && e.applicationId === I);
         S.push((0, a.jsx)(s.Drp, {
             id: "game-profile-app-widget",
-            label: e ? p.intl.formatToPlainString(p.t.Ktb1n8, {
+            label: e ? _.intl.formatToPlainString(_.t.Ktb1n8, {
                 name: n
-            }) : p.intl.formatToPlainString(p.t.Xp6iZt, {
+            }) : _.intl.formatToPlainString(_.t.Xp6iZt, {
                 name: n
             }),
             action: () => C(!e),
@@ -140,9 +140,9 @@ function v(e) {
             S.push((0, a.jsx)(s.Drp, {
                 id: e.menuId,
                 label: i ? e.removeLabel : e.addLabel,
-                subtext: l ? p.intl.string(p.t["86OoiH"]) : void 0,
+                subtext: l ? _.intl.string(_.t["86OoiH"]) : void 0,
                 subtextLineClamp: 1,
-                action: () => I(e.type, !i),
+                action: () => b(e.type, !i),
                 leadingAccessory: {
                     type: "icon",
                     icon: e.icon

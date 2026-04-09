@@ -16,13 +16,13 @@ var n = r(627968),
     p = r(139136),
     f = r(623373),
     x = r(561769),
-    C = r(846957),
-    g = r(929283),
+    g = r(846957),
+    C = r(929283),
     v = r(245068),
     A = r(761365),
     k = r(550674),
-    I = r(660598);
-let b = e => {
+    b = r(660598);
+let I = e => {
         let {
             product: t,
             isCardHovered: r
@@ -34,9 +34,9 @@ let b = e => {
         } = (0, m.P)("ProductCardPreview"), c = l === s.R.PROFILE_EFFECT || l === s.R.BUNDLE && o;
         return (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)("div", {
-                className: i()(I.mA, {
-                    [I.zj]: (a || u) && !r,
-                    [I.Ge]: c
+                className: i()(b.mA, {
+                    [b.zj]: (a || u) && !r,
+                    [b.Ge]: c
                 }),
                 children: (0, n.jsx)(E, {
                     product: t,
@@ -61,7 +61,7 @@ let b = e => {
                     hideBackground: !0
                 });
             case s.R.AVATAR_DECORATION:
-                return (0, n.jsx)(g.i, {
+                return (0, n.jsx)(C.i, {
                     item: a,
                     user: l,
                     isHighlighted: r,
@@ -80,7 +80,7 @@ let b = e => {
                     isHighlighted: r
                 });
             case s.R.EXTERNAL_SKU:
-                return (0, n.jsx)(C.B, {
+                return (0, n.jsx)(g.B, {
                     product: t,
                     animationState: r ? "on" : "off"
                 });
@@ -97,8 +97,8 @@ let b = e => {
             color: o.LU0.colors.INTERACTIVE_TEXT_ACTIVE,
             width: 40,
             height: 40,
-            className: i()(I.zo, {
-                [I.R]: t
+            className: i()(b.zo, {
+                [b.R]: t
             })
         })
     },
@@ -110,7 +110,7 @@ let b = e => {
         } = e, i = (0, x.Vm)(t), s = (0, d.Q)(i);
         if (null == i) return null;
         let a = (0, f.rb)(i, l ?? s);
-        return (0, n.jsx)(b, {
+        return (0, n.jsx)(I, {
             product: a,
             isCardHovered: r
         })

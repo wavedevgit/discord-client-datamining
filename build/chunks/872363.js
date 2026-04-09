@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(319060),
     m = n(397927),
     A = n(212245),
-    p = n(688810),
-    g = n(402216),
+    g = n(688810),
+    p = n(402216),
     f = n(287809),
     _ = n(954571),
     E = n(927578),
@@ -66,7 +66,7 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
             } = e,
             {
                 analyticsLocations: D
-            } = (0, p.Ay)(),
+            } = (0, g.Ay)(),
             O = null != (0, C.A)(r);
         try {
             t = (0, x.HB)(M)
@@ -108,7 +108,7 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
             position: "bottom",
             children: (0, i.jsxs)(m.DUT, {
                 onClick: U,
-                className: a()(I.t5, v, g.u1[h], O ? I.Y5 : I.Lc, {
+                className: a()(I.t5, v, p.u1[h], O ? I.Y5 : I.Lc, {
                     [I.vk]: w && L
                 }),
                 children: [L ? (0, i.jsx)(m.tvc, {
@@ -129,7 +129,7 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                 [I.Dc]: L && R
             }),
             color: d.A.unsafe_rawColors.PRIMARY_500.css,
-            shape: g.u1[h]
+            shape: p.u1[h]
         })
     },
     P = e => {
@@ -141,13 +141,13 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
             className: c,
             premiumIndicator: d
         } = e, [u, h] = l.useState(!1), A = (0, x.N5)(t), {
-            reducedMotion: p
+            reducedMotion: g
         } = l.useContext(m.CZY), f = n && null != A, _ = (0, m.pnh)(f, {
             enter: {
-                from: p.enabled ? j : y,
-                to: p.enabled ? R : b
+                from: g.enabled ? j : y,
+                to: g.enabled ? R : b
             },
-            leave: p.enabled ? j : y,
+            leave: g.enabled ? j : y,
             config: O
         }, "animate-always"), E = (0, m.zhh)({
             to: f ? D : M,
@@ -177,8 +177,8 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                 }) : null), (0, i.jsx)(r.animated.div, {
                     style: E,
                     className: I.Ok,
-                    children: (0, i.jsx)(g.Ay, {
-                        look: g.gv.RED,
+                    children: (0, i.jsx)(p.Ay, {
+                        look: p.gv.RED,
                         size: o,
                         shape: f ? m.EGs.ROUND_RIGHT : m.EGs.ROUND
                     })

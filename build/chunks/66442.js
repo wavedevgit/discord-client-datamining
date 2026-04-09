@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(793574),
     m = n(688810),
     A = n(571694),
-    p = n(47167),
-    g = n(734057),
+    g = n(47167),
+    p = n(734057),
     f = n(954571),
     _ = n(396787),
     E = n(652215),
@@ -33,8 +33,8 @@ function S(e) {
         petite: o = !1,
         className: d,
         allowRemovingIcon: u = !0
-    } = e, p = void 0 !== n ? n : t?.icon != null ? (0, A.Y)(t, 120) : null, {
-        analyticsLocations: g
+    } = e, g = void 0 !== n ? n : t?.icon != null ? (0, A.Y)(t, 120) : null, {
+        analyticsLocations: p
     } = (0, m.Ay)(r, h.A.GROUP_DM_ICON_EDITOR), f = o ? 32 : 64;
     return (0, i.jsxs)("div", {
         className: a()(C.r2, d),
@@ -43,9 +43,9 @@ function S(e) {
                 [C.ud]: o
             }),
             "aria-label": x.intl.string(x.t["0qPSMV"]),
-            onClick: () => (0, _.F5)(l, g),
-            children: [null != p ? (0, i.jsx)("img", {
-                src: p,
+            onClick: () => (0, _.F5)(l, p),
+            children: [null != g ? (0, i.jsx)("img", {
+                src: g,
                 alt: "",
                 className: C.Dp
             }) : (0, i.jsx)("div", {
@@ -63,7 +63,7 @@ function S(e) {
                     size: o ? "xs" : "refresh_sm"
                 })
             })]
-        }), null != p && u ? (0, i.jsx)(c.QWc, {
+        }), null != g && u ? (0, i.jsx)(c.QWc, {
             variant: "critical",
             onClick: s,
             "aria-label": x.intl.string(x.t["uY+Nk/"]),
@@ -83,7 +83,7 @@ let T = function(e) {
         setHasPendingChanges: a,
         closeOrShowDiscardChangesAlert: A,
         location: T
-    } = e, N = (0, o.bG)([g.A], () => g.A.getChannel(t)), I = N?.name, v = (0, p.e5)(N), [y, b] = l.useState(I ?? ""), [j, R] = l.useState(void 0), M = void 0 !== j, {
+    } = e, N = (0, o.bG)([p.A], () => p.A.getChannel(t)), I = N?.name, v = (0, g.e5)(N), [y, b] = l.useState(I ?? ""), [j, R] = l.useState(void 0), M = void 0 !== j, {
         analyticsLocations: D
     } = (0, m.Ay)(T, h.A.GROUP_DM_EDIT_MODAL), O = {
         channel_id: t,

@@ -24,11 +24,11 @@ function A(e, t) {
             muted: null != n ? u.Ay.isMuted(n) : void 0,
             muteConfig: null != n ? u.Ay.getMuteConfig(n) : void 0
         }), [n]),
-        p = (0, d.M)(A);
+        g = (0, d.M)(A);
     return null == n ? null : l ? (0, i.jsx)(r.Drp, {
         id: "unmute-guild",
         label: m.intl.string(m.t.De0BTC),
-        subtext: p,
+        subtext: g,
         action: () => o.A.updateGuildNotificationSettings(n, {
             muted: !1
         }, h.fd.Unmuted)

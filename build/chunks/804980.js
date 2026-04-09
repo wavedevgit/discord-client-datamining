@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(447031),
     m = n(878549),
     A = n(969151),
-    p = n(550151),
-    g = n(902439),
+    g = n(550151),
+    p = n(902439),
     f = n(283488),
     _ = n(732637),
     E = n(315206),
@@ -70,13 +70,13 @@ function w(e) {
         application: n,
         channel: s,
         width: o
-    } = e, A = o > 400 ? 2 : +(o > 300), [g] = o > 400 ? [c._3J.SIZE_56, 56] : o > 300 ? [c._3J.SIZE_32, 32] : [c._3J.SIZE_24, 24], f = (0, r.yK)([R.default, b.default], () => Array.from(t).map(e => (0, m.S)(e, b.default) ? null : R.default.getUser(e.userId)).filter(M.Vq)), _ = (0, r.bG)([u.Ay], () => u.Ay.getEmbeddedActivitiesForChannel(s.id).find(e => e.applicationId === n.id) ?? u.Ay.getEmbeddedActivitiesForStartingChannel(s.id).find(e => e.applicationId === n.id)), {
+    } = e, A = o > 400 ? 2 : +(o > 300), [p] = o > 400 ? [c._3J.SIZE_56, 56] : o > 300 ? [c._3J.SIZE_32, 32] : [c._3J.SIZE_24, 24], f = (0, r.yK)([R.default, b.default], () => Array.from(t).map(e => (0, m.S)(e, b.default) ? null : R.default.getUser(e.userId)).filter(M.Vq)), _ = (0, r.bG)([u.Ay], () => u.Ay.getEmbeddedActivitiesForChannel(s.id).find(e => e.applicationId === n.id) ?? u.Ay.getEmbeddedActivitiesForStartingChannel(s.id).find(e => e.applicationId === n.id)), {
         analyticsLocations: E
-    } = (0, N.Ay)(), x = (0, d.p)(), C = D.Ay.getName(s.getGuildId(), s.id, f?.[0]), S = (0, p.vG)({
+    } = (0, N.Ay)(), x = (0, d.p)(), C = D.Ay.getName(s.getGuildId(), s.id, f?.[0]), S = (0, g.vG)({
         userId: R.default.getCurrentUser()?.id,
         channelId: s.id,
         application: n
-    }) === p.Gy.CAN_JOIN, T = s.getGuildId() ?? void 0, v = l.useId(), y = n.id, j = l.useMemo(() => ({
+    }) === g.Gy.CAN_JOIN, T = s.getGuildId() ?? void 0, v = l.useId(), y = n.id, j = l.useMemo(() => ({
         channel: s,
         type: "channel"
     }), [s]), {
@@ -89,7 +89,7 @@ function w(e) {
     return (0, i.jsxs)("div", {
         className: L.Yi,
         children: [(0, i.jsx)(k, {
-            avatarSize: g,
+            avatarSize: p,
             guildId: T,
             channelId: s.id,
             users: f
@@ -144,8 +144,8 @@ function U(e) {
         analyticsLocations: c
     } = (0, N.Ay)(T.A.ACTIVITY_TILE), {
         applicationId: d
-    } = t, u = (0, g.A)(), h = null != u && (0, A.H)(u.location) === o.id && u.applicationId === d, [m] = (0, v.A)([d]), {
-        url: p
+    } = t, u = (0, p.A)(), h = null != u && (0, A.H)(u.location) === o.id && u.applicationId === d, [m] = (0, v.A)([d]), {
+        url: g
     } = (0, f.A)({
         applicationId: d,
         names: P,
@@ -166,10 +166,10 @@ function U(e) {
             children: [x && null != u && (0, i.jsx)(_.A, {
                 className: L.pU,
                 embedId: (0, C.A)(u.location.id, d)
-            }), I && null != m && null != p && "" !== p ? (0, i.jsx)("img", {
+            }), I && null != m && null != g && "" !== g ? (0, i.jsx)("img", {
                 className: L.j0,
                 alt: m.name,
-                src: p
+                src: g
             }) : null, b && null != m && (0, i.jsx)(w, {
                 width: n,
                 channel: o,

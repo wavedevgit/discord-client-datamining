@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(461782),
     m = n(430452),
     A = n(40056),
-    p = n(985018),
-    g = n(387203),
+    g = n(985018),
+    p = n(387203),
     f = n(217531);
 
 function _(e) {
@@ -128,7 +128,7 @@ let x = l.memo(function(e) {
                 onMouseUp: Y,
                 children: [(0, i.jsx)(J, {
                     className: a()(f.BZ, {
-                        [g.mirror]: t
+                        [p.mirror]: t
                     }),
                     streamId: n,
                     paused: s,
@@ -142,7 +142,7 @@ let x = l.memo(function(e) {
             className: f.xu,
             children: [(D || B) && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(c.m_, {
-                    text: p.intl.string(p.t.M6Cmwy),
+                    text: g.intl.string(g.t.M6Cmwy),
                     position: "top",
                     children: (0, i.jsx)(d.K0, {
                         icon: d.V0_,
@@ -150,7 +150,7 @@ let x = l.memo(function(e) {
                         disabled: N <= I,
                         variant: "overlay-secondary",
                         size: "sm",
-                        "aria-label": p.intl.string(p.t.M6Cmwy)
+                        "aria-label": g.intl.string(g.t.M6Cmwy)
                     })
                 }), (0, i.jsx)(d.Apm, {
                     minValue: I,
@@ -159,10 +159,10 @@ let x = l.memo(function(e) {
                     value: N,
                     asValueChanges: ee,
                     onValueRender: e => `${Math.round(100*e)}%`,
-                    "aria-label": p.intl.string(p.t.grzPmr)
+                    "aria-label": g.intl.string(g.t.grzPmr)
                 })]
             }), (0, i.jsx)(c.m_, {
-                text: p.intl.string(p.t["9hMafy"]),
+                text: g.intl.string(g.t["9hMafy"]),
                 position: "top",
                 children: (0, i.jsx)(d.K0, {
                     icon: d.r1u,
@@ -170,7 +170,7 @@ let x = l.memo(function(e) {
                     disabled: N >= v,
                     variant: "overlay-secondary",
                     size: "sm",
-                    "aria-label": p.intl.string(p.t["9hMafy"])
+                    "aria-label": g.intl.string(g.t["9hMafy"])
                 })
             })]
         })]

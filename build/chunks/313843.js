@@ -1,10 +1,10 @@
 /** chunk id: 313843 params = (module,exports,require) **/
 n.d(t, {
     Ay: () => E,
-    Iv: () => p,
+    Iv: () => _,
     QT: () => j,
     _R: () => f,
-    j5: () => _
+    j5: () => p
 });
 var a = n(627968),
     i = n(64700),
@@ -58,7 +58,7 @@ function f(e) {
     })
 }
 
-function p(e) {
+function _(e) {
     let {
         show: t
     } = e;
@@ -66,7 +66,7 @@ function p(e) {
         className: r()(h.nI, h.Jn, t && h.hD)
     })
 }
-let _ = i.forwardRef(function(e, t) {
+let p = i.forwardRef(function(e, t) {
     let {
         game: n
     } = e, [l] = i.useState(() => Math.random()), r = i.useMemo(() => {

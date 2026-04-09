@@ -1,6 +1,6 @@
 /** chunk id: 285745 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968),
     l = n(311907),
@@ -14,18 +14,18 @@ var i = n(627968),
     h = n(287809),
     m = n(102817),
     A = n(733045),
-    p = n(985018);
+    g = n(985018);
 
-function g(e) {
+function p(e) {
     let {
         channel: t,
         user: n,
-        guild: g
-    } = e, f = (0, l.bG)([h.default, d.A, u.A], () => null != n && null != g && (0, r.b)(g.id, n.id, [h.default, d.A, u.A])), [_, E] = (0, o.Ay)(n?.id, t.guild_id), x = (0, l.bG)([c.Ay], () => null != g && null != n && null != c.Ay.getMember(g.id, n.id));
+        guild: p
+    } = e, f = (0, l.bG)([h.default, d.A, u.A], () => null != n && null != p && (0, r.b)(p.id, n.id, [h.default, d.A, u.A])), [_, E] = (0, o.Ay)(n?.id, t.guild_id), x = (0, l.bG)([c.Ay], () => null != p && null != n && null != c.Ay.getMember(p.id, n.id));
     if (!f || !x) return null;
     let C = `timeout-user-${n?.id}`;
     return (0, i.jsx)(m.A, {
-        text: E ? p.intl.string(A.default["6uMZbv"]) : p.intl.string(A.default["Sgg/uI"]),
+        text: E ? g.intl.string(A.default["6uMZbv"]) : g.intl.string(A.default["Sgg/uI"]),
         icon: s.O4,
         onClick: () => {
             null != n && (0, a.R)({

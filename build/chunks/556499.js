@@ -408,7 +408,7 @@ function E(e) {
                         }), (0, a.jsx)(p.A, {})]
                     }), (0, a.jsx)(u.J3s, {
                         label: "Metadata Ended At Date",
-                        value: o()(B),
+                        value: "" !== B ? o()(B) : void 0,
                         onSelect: e => M({
                             endedAt: e.toISOString()
                         })

@@ -16,7 +16,7 @@ var l = n(311907),
     m = n(985018),
     A = n(268836);
 
-function p(e) {
+function g(e) {
     let {
         userId: t
     } = e;
@@ -32,7 +32,7 @@ function p(e) {
     })
 }
 
-function g(e) {
+function p(e) {
     let {
         userId: t,
         showingBanner: n
@@ -86,11 +86,11 @@ function E(e) {
         channel: t,
         user: n,
         showingBanner: r
-    } = e, g = (0, l.bG)([c.A], () => c.A.getOriginApplicationId(n.id), [n.id]), {
+    } = e, p = (0, l.bG)([c.A], () => c.A.getOriginApplicationId(n.id), [n.id]), {
         acceptFriendRequest: f
     } = (0, o.I)({
         userId: n.id,
-        applicationId: g,
+        applicationId: p,
         isGameRelationship: !1,
         location: h.liQ.DM_CHANNEL
     });
@@ -116,7 +116,7 @@ function E(e) {
                     })
                 },
                 text: m.intl.string(m.t.rQSndv)
-            }), (0, i.jsx)(p, {
+            }), (0, i.jsx)(g, {
                 userId: n.id
             }), r ? null : (0, i.jsx)(u.A, {
                 channel: t,
@@ -140,7 +140,7 @@ function x(e) {
     });
     switch (o) {
         case h.eA$.NONE:
-            a.bot || (t = (0, i.jsx)(g, {
+            a.bot || (t = (0, i.jsx)(p, {
                 userId: a.id,
                 showingBanner: r
             }));
@@ -168,7 +168,7 @@ function x(e) {
     let d = o !== h.eA$.BLOCKED;
     return (0, i.jsxs)(s.ButtonGroup, {
         size: "sm",
-        children: [t, d ? (0, i.jsx)(p, {
+        children: [t, d ? (0, i.jsx)(g, {
             userId: a.id
         }) : null, r ? null : (0, i.jsx)(u.A, {
             channel: n,

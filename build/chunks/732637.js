@@ -14,8 +14,8 @@ var i = n(627968),
     h = n(108959),
     m = n(902439),
     A = n(5867),
-    p = n(652215);
-let g = (e, t) => {
+    g = n(652215);
+let p = (e, t) => {
     a.h.wait(() => {
         (0, r.I_)(e, t)
     })
@@ -27,7 +27,7 @@ function f(e) {
             className: a,
             style: r
         } = e,
-        f = (0, s.bG)([o.A], () => o.A.getWindow(p.MLl.CHANNEL_CALL_POPOUT)),
+        f = (0, s.bG)([o.A], () => o.A.getWindow(g.MLl.CHANNEL_CALL_POPOUT)),
         _ = (0, m.A)(),
         E = (0, s.bG)([d.Ay], () => d.Ay.getActivityPanelMode());
     t = null == _ || (0, h.A)((0, u.H)(_.location)) || E !== A.Gd.PANEL ? f?.window ?? window : window;
@@ -36,12 +36,12 @@ function f(e) {
             let e = null;
             return () => {
                 null == e && (e = t.requestAnimationFrame(() => {
-                    g(n, x.current?.getBoundingClientRect() ?? null), e = null
+                    p(n, x.current?.getBoundingClientRect() ?? null), e = null
                 }))
             }
         }, [n, t]);
-    return l.useEffect(() => (t.addEventListener("resize", C), c._.subscribe(p.jej.REMEASURE_TARGET, C), () => {
-        t.removeEventListener("resize", C), c._.unsubscribe(p.jej.REMEASURE_TARGET, C)
+    return l.useEffect(() => (t.addEventListener("resize", C), c._.subscribe(g.jej.REMEASURE_TARGET, C), () => {
+        t.removeEventListener("resize", C), c._.unsubscribe(g.jej.REMEASURE_TARGET, C)
     }), [C, t]), l.useLayoutEffect(() => {
         let e = x.current;
         if (null == e) return;
@@ -50,7 +50,7 @@ function f(e) {
         C();
         let i = new t.ResizeObserver(C);
         return i.observe(e), () => {
-            i.disconnect(), g(n, null)
+            i.disconnect(), p(n, null)
         }
     }, [n, C]), (0, i.jsx)("div", {
         ref: x,
