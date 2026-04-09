@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(67480),
     v = n(45938),
     T = n(975571),
-    C = n(427262),
-    j = n(161928),
+    j = n(427262),
+    C = n(161928),
     S = n(129851),
     y = n(229),
     b = n(652215),
@@ -231,7 +231,7 @@ class L extends s.PureComponent {
             giftCodeCode: e.code,
             transitionTo: s,
             children: (0, i.jsxs)(p.Ay, {
-                children: [(0, i.jsx)(j.A, {
+                children: [(0, i.jsx)(C.A, {
                     giftCode: e
                 }), (0, i.jsx)("div", {
                     className: O.eT,
@@ -247,7 +247,7 @@ class L extends s.PureComponent {
                 }) : (0, i.jsx)(p.ME, {
                     className: O.QX,
                     children: R.intl.format(R.t.NYM08s, {
-                        userTag: C.Ay.getUserTag(t),
+                        userTag: j.Ay.getUserTag(t),
                         onLogoutClick: this.handleLogout
                     })
                 })]

@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(906564),
     v = n(854378),
     T = n(359438),
-    C = n(442184),
-    j = n(383302);
+    j = n(442184),
+    C = n(383302);
 n(829926);
 var S = n(491509),
     y = n(895600),
@@ -38,8 +38,8 @@ var S = n(491509),
     k = n(493527),
     D = n(544395),
     B = n(546727),
-    U = n(975169),
-    P = n(794696),
+    P = n(975169),
+    U = n(794696),
     G = n(961350),
     F = n(153488),
     M = n(650048),
@@ -473,7 +473,7 @@ class ei extends s.PureComponent {
                 })]
             }), null != e && d ? (0, i.jsx)(v.Ay, {
                 className: ee.QX,
-                children: (0, i.jsx)(j.N, {
+                children: (0, i.jsx)(C.N, {
                     guild: e.guild,
                     onlineCount: e.approximate_presence_count
                 })
@@ -537,7 +537,7 @@ class ei extends s.PureComponent {
                 username: I,
                 global_name: N,
                 password: T,
-                date_of_birth: j
+                date_of_birth: C
             } = {}
         } = this.state, {
             consentRequired: S,
@@ -569,7 +569,7 @@ class ei extends s.PureComponent {
             children: e()
         }, "custom-header") : (0, i.jsx)(v.hE, {
             children: $.intl.string($.t.wC4TlR)
-        }, "title"), U = (0, i.jsxs)(v.eB, {
+        }, "title"), P = (0, i.jsxs)(v.eB, {
             className: ee.QX,
             children: [(0, i.jsx)(v.pd, {
                 autoFocus: !0,
@@ -614,7 +614,7 @@ class ei extends s.PureComponent {
                         globalNameFocused: !1
                     }), this.trackInputBlur("global_name")
                 }
-            }), (0, i.jsx)(P.A, {
+            }), (0, i.jsx)(U.A, {
                 show: u,
                 top: -12,
                 bottom: 20,
@@ -667,12 +667,12 @@ class ei extends s.PureComponent {
                 name: "date_of_birth",
                 onChange: this.handleBirthdayChange,
                 ref: this.dateOfBirthRef,
-                error: A ?? en(j),
+                error: A ?? en(C),
                 value: d,
                 required: !0,
                 onFocus: this.trackInputFocus,
                 onBlur: this.trackInputBlur
-            }), (0, i.jsx)(C.A, {}), this.renderConsentComponent(), O, R, (0, i.jsx)("div", {
+            }), (0, i.jsx)(j.A, {}), this.renderConsentComponent(), O, R, (0, i.jsx)("div", {
                 className: ee.QX,
                 children: (0, i.jsx)(_.QWc, {
                     text: $.intl.string($.t["1lWxux"]),
@@ -690,7 +690,7 @@ class ei extends s.PureComponent {
                 children: [(0, i.jsx)(v.hE, {
                     className: Z.lR,
                     children: $.intl.string($.t.wC4TlR)
-                }), U]
+                }), P]
             }, "register-title")]
         }) : (0, i.jsxs)(v.Ay, {
             onSubmit: this.handleSubmit,
@@ -705,7 +705,7 @@ class ei extends s.PureComponent {
                     icon: _.n2b,
                     iconPosition: "start"
                 })
-            }) : null, B, U]
+            }) : null, B, P]
         })
     }
     render() {
@@ -765,7 +765,7 @@ function er(e) {
             isUsernameFocused: l,
             onClickSuggestion: a
         } = e,
-        c = (0, U.i)(n, !0, !0),
+        c = (0, P.i)(n, !0, !0),
         d = n.length > 0;
     return t = d ? (0, o.YW)(c).with({
         type: B.q.ERROR,
@@ -796,7 +796,7 @@ function er(e) {
         variant: "text-sm/normal",
         color: "text-default",
         children: $.intl.string($.t.z7c4bP)
-    }), (0, i.jsx)(P.A, {
+    }), (0, i.jsx)(U.A, {
         show: d && c?.type === B.q.ERROR || l,
         top: -12,
         bottom: 20,

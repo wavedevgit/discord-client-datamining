@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(122906),
     v = n(121623),
     T = n(850381),
-    C = n(21599),
-    j = n(614986),
+    j = n(21599),
+    C = n(614986),
     S = n(957622),
     y = n(463347),
     b = n(210714),
@@ -37,8 +37,8 @@ var i = n(627968),
     k = n(954571),
     D = n(139675),
     B = n(612181),
-    U = n(486020),
-    P = n(952072),
+    P = n(486020),
+    U = n(952072),
     G = n(765624),
     F = n(603647),
     M = n(527567),
@@ -66,7 +66,7 @@ let er = (0, G.A)(Y.A),
     ea = (0, G.A)(q.A),
     eo = (0, G.A)(z.A),
     ec = (0, G.A)(K.A),
-    ed = (0, G.A)(j.A),
+    ed = (0, G.A)(C.A),
     eu = (0, G.A)($.A),
     eh = (0, G.A)(et.A),
     e_ = (0, G.A)(M.A),
@@ -81,8 +81,8 @@ let er = (0, G.A)(Y.A),
     eN = (0, G.A)(J.A),
     ev = (0, G.A)(Z.A),
     eT = (0, G.A)(g.A),
-    eC = (0, G.A)(S.A);
-class ej extends s.PureComponent {
+    ej = (0, G.A)(S.A);
+class eC extends s.PureComponent {
     state = {
         splash: null,
         redirectTo: null,
@@ -103,7 +103,7 @@ class ej extends s.PureComponent {
                 guild: e,
                 target_application: t
             } = n;
-            null != t ? null != s && (a = (0, D.uD)(t.id, s, 1024)) : null != e && "string" == typeof e.splash && (a = U.Ay.getGuildSplashURL({
+            null != t ? null != s && (a = (0, D.uD)(t.id, s, 1024)) : null != e && "string" == typeof e.splash && (a = P.Ay.getGuildSplashURL({
                 id: e.id,
                 splash: e.splash
             }))
@@ -120,8 +120,8 @@ class ej extends s.PureComponent {
             isAuthenticated: n
         } = this.props;
         null != e && (!t && n && u.A.getExperiments(!0), k.default.track(ei.HAw.INVITE_OPENED, {
-            invite_code: (0, C.m0)(e),
-            load_time: P.A.getTimeSinceNavigationStart()
+            invite_code: (0, j.m0)(e),
+            load_time: U.A.getTimeSinceNavigationStart()
         }, {
             flush: !0
         })), t && this.resolveInvite(), this.resolveGiftCode(), this.resolveGuildTemplate(), p.A.initialize(), (0, b.D)()
@@ -164,7 +164,7 @@ class ej extends s.PureComponent {
         } = this.props;
         null != e && (k.default.track(ei.HAw.GUILD_TEMPLATE_OPENED, {
             guild_template_code: e,
-            load_time: P.A.getTimeSinceNavigationStart()
+            load_time: U.A.getTimeSinceNavigationStart()
         }, {
             flush: !0
         }), v.A.resolveGuildTemplate(e), v.A.openNativeAppModal(e))
@@ -194,7 +194,7 @@ class ej extends s.PureComponent {
                 })
             }), (0, i.jsx)(m.A, {
                 path: ei.BVt.LOGIN_ONE_TIME,
-                render: e => (0, i.jsx)(eC, {
+                render: e => (0, i.jsx)(ej, {
                     ...e
                 })
             }), (0, i.jsx)(m.A, {
@@ -234,7 +234,7 @@ class ej extends s.PureComponent {
                         },
                         location: s,
                         transitionTo: r
-                    } = e, l = (0, C.fB)(t, s.search);
+                    } = e, l = (0, j.fB)(t, s.search);
                     return a.Fr || a.v1 ? (0, i.jsx)(ed, {
                         inviteKey: l,
                         transitionTo: r
@@ -243,7 +243,7 @@ class ej extends s.PureComponent {
                         location: s,
                         transitionTo: r,
                         login: n === ei.BVt.INVITE_LOGIN(":inviteCode")
-                    })
+                    }, l)
                 }
             }), (0, i.jsx)(m.A, {
                 path: [ei.BVt.GUILD_TEMPLATE_LOGIN(":guildTemplateCode"), ei.BVt.GUILD_TEMPLATE(":guildTemplateCode")],
@@ -358,7 +358,7 @@ let eS = c.Ay.connectStores([O.default, w.A, L.A, I.A, N.A], e => {
     let {
         match: t,
         location: n
-    } = e, i = t?.params?.inviteCode, s = null != i ? (0, C.fB)(i, n.search) : void 0, r = t?.params?.giftCode, l = t?.params?.guildTemplateCode;
+    } = e, i = t?.params?.inviteCode, s = null != i ? (0, j.fB)(i, n.search) : void 0, r = t?.params?.giftCode, l = t?.params?.guildTemplateCode;
     return {
         inviteKey: s,
         isAuthenticated: O.default.isAuthenticated(),
@@ -369,4 +369,4 @@ let eS = c.Ay.connectStores([O.default, w.A, L.A, I.A, N.A], e => {
         guildTemplate: null != l ? N.A.getGuildTemplate(l) : null,
         hasLoadedExperiments: I.A.hasLoadedExperiments
     }
-})(ej)
+})(eC)

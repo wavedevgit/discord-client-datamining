@@ -141,7 +141,7 @@ function b(e) {
                 newWishlistData: l,
                 previousSkuId: s,
                 nextSkuId: r
-            } = (0, u.A)(i, t, e, n);
+            } = (0, u.Ap)(i, t, e, n);
         d.A.reorderWishlistItem(g, a.skuId, {
             previousSkuId: s,
             nextSkuId: r,

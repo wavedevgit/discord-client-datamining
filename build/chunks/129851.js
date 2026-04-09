@@ -26,8 +26,8 @@ var i = n(627968),
     N = n(491509),
     v = n(895600),
     T = n(720353),
-    C = n(559568),
-    j = n(274303),
+    j = n(559568),
+    C = n(274303),
     S = n(13437),
     y = n(557722),
     b = n(148864),
@@ -38,8 +38,8 @@ var i = n(627968),
     k = n(933924),
     D = n(961350),
     B = n(115036),
-    U = n(650048),
-    P = n(954571),
+    P = n(650048),
+    U = n(954571),
     G = n(203982),
     F = n(723702),
     M = n(161928),
@@ -99,7 +99,7 @@ class J extends s.PureComponent {
             invite: i,
             location: s
         } = this.props;
-        e && !t ? (0, g.ST)() : t && this.loginOrSSO(t, s, !0), P.default.track(K.HAw.LOGIN_VIEWED, {
+        e && !t ? (0, g.ST)() : t && this.loginOrSSO(t, s, !0), U.default.track(K.HAw.LOGIN_VIEWED, {
             location: null != i ? "Invite Login Page" : "Non-Invite Login Page",
             login_source: this.loginSource,
             authenticated: t,
@@ -160,7 +160,7 @@ class J extends s.PureComponent {
     handleAuthSuccess = e => {
         this.setState({
             errors: {}
-        }), P.default.track(K.HAw.LOGIN_SUCCESSFUL, {
+        }), U.default.track(K.HAw.LOGIN_SUCCESSFUL, {
             source: K.mdB.QR_CODE,
             login_source: this.loginSource,
             gift_code_sku_id: this.giftCodeSKUId,
@@ -458,7 +458,7 @@ class J extends s.PureComponent {
                 className: e,
                 expanded: !0,
                 children: this.renderDefaultForm(!0)
-            }), t && (0, i.jsx)(C.A, {})]
+            }), t && (0, i.jsx)(j.A, {})]
         })
     }
     renderGuildTemplate(e) {
@@ -737,16 +737,16 @@ class J extends s.PureComponent {
 }
 let $ = function(e) {
     (0, L.K)();
-    let t = (0, d.cf)([B.A, U.A, D.default, j.A, b.A], () => ({
+    let t = (0, d.cf)([B.A, P.A, D.default, C.A, b.A], () => ({
         authenticated: D.default.isAuthenticated(),
         handoffAvailable: B.A.isHandoffAvailable(),
         user: B.A.user,
         loginStatus: D.default.getLoginStatus(),
         mfaTicket: D.default.getMFATicket(),
         mfaMethods: D.default.getMFAMethods(),
-        defaultRoute: U.A.defaultRoute,
+        defaultRoute: P.A.defaultRoute,
         country: b.A.getCountryCode(),
-        hasLoggedInAccounts: j.A.getHasLoggedInAccounts()
+        hasLoggedInAccounts: C.A.getHasLoggedInAccounts()
     }));
     return (0, i.jsx)(J, {
         ...e,

@@ -24,7 +24,7 @@ let E = e => {
         let {
             transitionState: t,
             onClose: n
-        } = e, [i, f] = r.useState(!0), [x, I] = r.useState([]), [N, v] = r.useState("selection"), T = (0, l.bG)([_.default], () => _.default.isAuthenticated()), C = (0, l.bG)([d.A], () => d.A.hasLoadedExperiments), j = r.useCallback(() => {
+        } = e, [i, f] = r.useState(!0), [x, I] = r.useState([]), [N, v] = r.useState("selection"), T = (0, l.bG)([_.default], () => _.default.isAuthenticated()), j = (0, l.bG)([d.A], () => d.A.hasLoadedExperiments), C = r.useCallback(() => {
             (0, h.OY)().then(e => {
                 let {
                     body: {
@@ -39,21 +39,21 @@ let E = e => {
         r.useEffect(() => {
             T ? (f(!0), c.rQ({
                 withAnalyticsToken: !0
-            }).then(() => j()).catch(() => f(!1))) : j()
-        }, [T, j]), r.useEffect(() => {
+            }).then(() => C()).catch(() => f(!1))) : C()
+        }, [T, C]), r.useEffect(() => {
             (async () => {
-                C || (await o.A.getLocationMetadata(), o.A.getExperiments())
+                j || (await o.A.getLocationMetadata(), o.A.getExperiments())
             })()
-        }, [C]);
+        }, [j]);
         let S = x.filter(e => e !== u.tY.MEDIA_TAKEDOWN),
             y = x.includes(u.tY.MEDIA_TAKEDOWN),
             b = S.length > 0,
             R = b && y;
         r.useEffect(() => {
-            !i && C && !R && (b ? v("dsa") : y && v("tida"))
-        }, [i, C, R, b, y]), r.useEffect(() => {
-            i || !C || b || y || n()
-        }, [i, C, b, y, n]);
+            !i && j && !R && (b ? v("dsa") : y && v("tida"))
+        }, [i, j, R, b, y]), r.useEffect(() => {
+            i || !j || b || y || n()
+        }, [i, j, b, y, n]);
         let O = r.useCallback(e => {
                 v(e)
             }, []),
@@ -79,7 +79,7 @@ let E = e => {
             children: (0, s.jsx)(a.$mQ, {
                 className: A.k,
                 "data-migration-pending": !0,
-                children: !i && C && (b || y) ? (0, s.jsxs)(a.tN_, {
+                children: !i && j && (b || y) ? (0, s.jsxs)(a.tN_, {
                     width: "100%",
                     activeSlide: N,
                     centered: !1,

@@ -45,11 +45,11 @@ function m(e, t) {
             f = null,
             T = !0;
 
-        function C() {
+        function j() {
             if (null != o) return o;
             throw Error("No key pair set")
         }
-        let j = () => {
+        let C = () => {
                 T ? (T = !1, a.send(JSON.stringify({
                     op: "heartbeat"
                 }))) : (i("heartbeat timeout, reconnecting."), a.close(), v())
@@ -61,7 +61,7 @@ function m(e, t) {
                 switch (o.op) {
                     case "nonce_proof": {
                         let e = o.encrypted_nonce,
-                            t = await u.A.decryptNonce(C(), e);
+                            t = await u.A.decryptNonce(j(), e);
                         i("computed nonce proof"), a.send(JSON.stringify({
                             op: "nonce_proof",
                             nonce: t
@@ -70,7 +70,7 @@ function m(e, t) {
                     }
                     case "pending_remote_init": {
                         I.succeed(), d._.dispatch(p.jej.WAVE_EMPHASIZE);
-                        let e = await u.A.publicKeyFingerprint(C());
+                        let e = await u.A.publicKeyFingerprint(j());
                         if (e !== o.fingerprint) throw Error(`bad fingerprint ${e} !== ${o.fingerprint}`);
                         i("handshake complete awaiting remote auth."), E({
                             step: _.b.PENDING_REMOTE_INIT,
@@ -102,7 +102,7 @@ function m(e, t) {
                     case "pending_ticket": {
                         d._.dispatch(p.jej.WAVE_EMPHASIZE), i("remote auth handshake started, awaiting ticket/cancel.");
                         let e = o.encrypted_user_payload,
-                            t = await (0, h.n7)(C(), e);
+                            t = await (0, h.n7)(j(), e);
                         E({
                             step: _.b.PENDING_TICKET,
                             user: t
@@ -116,7 +116,7 @@ function m(e, t) {
                         i(`got hello, auth timeout=${o.timeout_ms}ms`);
                         let e = o.heartbeat_interval;
                         f = setTimeout(() => {
-                            f = null, j(), A = setInterval(j, e)
+                            f = null, C(), A = setInterval(C, e)
                         }, Math.floor(e * Math.random()));
                         return
                     }

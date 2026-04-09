@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(650048),
     v = n(877062),
     T = n(129851),
-    C = n(538796),
-    j = n(229),
+    j = n(538796),
+    C = n(229),
     S = n(652215),
     y = n(401755),
     b = n(771016),
@@ -98,7 +98,7 @@ class D extends s.PureComponent {
             children: (0, i.jsx)(A.A, {
                 guildTemplate: e
             })
-        }) : (0, i.jsx)(U, {
+        }) : (0, i.jsx)(P, {
             guildTemplate: e
         })
     }
@@ -130,7 +130,7 @@ class D extends s.PureComponent {
                     transitionTo: s,
                     location: r
                 });
-                return (0, i.jsx)(j.A, {
+                return (0, i.jsx)(C.A, {
                     guildTemplate: e,
                     transitionTo: s,
                     location: r,
@@ -159,7 +159,7 @@ function B(e) {
     })
 }
 
-function U(e) {
+function P(e) {
     let {
         guildTemplate: t
     } = e, {
@@ -180,7 +180,7 @@ function U(e) {
             })
         })]
     });
-    return (0, i.jsx)(C.A, {
+    return (0, i.jsx)(j.A, {
         className: w.sL,
         children: () => [(0, i.jsx)(m.A, {
             guildTemplate: t
