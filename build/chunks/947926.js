@@ -71,8 +71,8 @@ function L(e) {
         hasError: z,
         isLoading: $
     } = (0, v.Gk)(), q = i.useContext(N.Z) || s && L && !$ && !c, {
-        isExpanded: Y,
-        setIsExpanded: Q,
+        isExpanded: Q,
+        setIsExpanded: Y,
         expandQuestBar: J,
         isExpansionAnimationComplete: X,
         isVisibilityAnimationAtRest: Z,
@@ -95,8 +95,8 @@ function L(e) {
         handleMouseLeave: eu
     } = (0, O.m)({
         quest: t,
-        isExpanded: Y,
-        setIsExpanded: Q,
+        isExpanded: Q,
+        setIsExpanded: Y,
         expandQuestBar: J,
         isQuestCompleted: K,
         isQuestAccepted: W,
@@ -135,7 +135,7 @@ function L(e) {
             children: [q && (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)(M, {
                     questId: V,
-                    isExpanded: Y
+                    isExpanded: Q
                 }), (0, a.jsx)(P, {})]
             }), (0, a.jsx)(r.animated.div, {
                 "aria-hidden": !q,
@@ -155,12 +155,12 @@ function L(e) {
                 },
                 children: (0, a.jsx)(r.animated.div, {
                     className: l()(D.FG, {
-                        [D.E$]: Y,
+                        [D.E$]: Q,
                         [D.KA]: W
                     }),
                     children: (0, a.jsx)(E.R, {
                         springConfig: en,
-                        isExpanded: Y,
+                        isExpanded: Q,
                         children: (0, a.jsx)(C.oK, {
                             expandedContentRef: em,
                             collapsedContentRef: eh,
@@ -168,7 +168,7 @@ function L(e) {
                             children: (0, a.jsxs)(T.C, {
                                 quest: t,
                                 taskDetails: ep,
-                                isExpanded: Y,
+                                isExpanded: Q,
                                 isExpansionAnimationComplete: X,
                                 onCtxMenuClose: ei,
                                 onCtxMenuOpen: ea,

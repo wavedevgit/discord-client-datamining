@@ -1,7 +1,7 @@
 /** chunk id: 951707 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => f
+    A: () => m
 });
 var r = n(627968),
     i = n(64700),
@@ -13,13 +13,13 @@ var r = n(627968),
     c = n(770178),
     d = n(775602),
     h = n(985018),
-    m = n(911365);
-let f = e => {
+    f = n(911365);
+let m = e => {
     let {
         children: t,
         gap: n = 24,
         edgeFade: l = "xl",
-        hideActionsWhenDisabled: f = !0,
+        hideActionsWhenDisabled: m = !0,
         className: p,
         iconButtonSize: _,
         "aria-label": v
@@ -126,13 +126,13 @@ let f = e => {
         role: null != v ? "region" : void 0,
         "aria-label": v,
         style: W,
-        className: a()(m.kL, p),
+        className: a()(f.kL, p),
         children: [R && (0, r.jsxs)("div", {
-            className: m.o1,
+            className: f.o1,
             role: "group",
             children: [(0, r.jsx)("div", {
-                className: a()(m.x6, {
-                    [m.r9]: !T && f
+                className: a()(f.x6, {
+                    [f.r9]: !T && m
                 }),
                 children: (0, r.jsx)(u.K0, {
                     icon: u.Zge,
@@ -141,12 +141,12 @@ let f = e => {
                     onClick: G,
                     disabled: !T,
                     "aria-label": h.intl.string(h.t.FQx1Ru),
-                    "aria-hidden": !T && f,
+                    "aria-hidden": !T && m,
                     "aria-controls": y
                 })
             }), (0, r.jsx)("div", {
-                className: a()(m.x6, {
-                    [m.r9]: !k && f
+                className: a()(f.x6, {
+                    [f.r9]: !k && m
                 }),
                 children: (0, r.jsx)(u.K0, {
                     icon: u.KS6,
@@ -155,7 +155,7 @@ let f = e => {
                     onClick: B,
                     disabled: !k,
                     "aria-label": h.intl.string(h.t.H4hwjn),
-                    "aria-hidden": !k && f,
+                    "aria-hidden": !k && m,
                     "aria-controls": y
                 })
             })]
@@ -165,11 +165,11 @@ let f = e => {
             id: y,
             "aria-label": v,
             ref: U,
-            className: a()(m.Y_, {
-                [m.jL]: T,
-                [m.w6]: k,
-                [m.XG]: T && k,
-                [m.DY]: N
+            className: a()(f.Y_, {
+                [f.jL]: T,
+                [f.w6]: k,
+                [f.XG]: T && k,
+                [f.DY]: N
             }),
             tabIndex: 0,
             onFocus: e => {

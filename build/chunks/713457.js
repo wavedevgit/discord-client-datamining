@@ -226,7 +226,7 @@ function G(e) {
         isClaiming: h.A.isClaimingReward(t.id) || h.A.isFetchingRewardCode(t.id),
         isEnrolling: h.A.isEnrolling(t.id),
         isQuestEnrollmentBlocked: null != h.A.questEnrollmentBlockedUntil
-    })), Y = t.userStatus?.enrolledAt != null, Q = t.userStatus?.completedAt != null, J = Q && t.userStatus?.claimedAt == null, X = (0, C.if)(t), Z = !(0, C.Ic)(t), ee = (0, v.In)(t), et = (0, S.IO)(t), en = (0, S.K$)(t), ea = (0, S.Cr)(t), ei = (0, v.fc)(t), [es, el, er] = (0, v.Qo)(t, ei), eo = Z && ee === v.F3.ACCEPTED, ed = eo && es === x.X0.SELECT, ec = eo && !ed && el.length > 1, eu = g.t.useConfig({
+    })), Q = t.userStatus?.enrolledAt != null, Y = t.userStatus?.completedAt != null, J = Y && t.userStatus?.claimedAt == null, X = (0, C.if)(t), Z = !(0, C.Ic)(t), ee = (0, v.In)(t), et = (0, S.IO)(t), en = (0, S.K$)(t), ea = (0, S.Cr)(t), ei = (0, v.fc)(t), [es, el, er] = (0, v.Qo)(t, ei), eo = Z && ee === v.F3.ACCEPTED, ed = eo && es === x.X0.SELECT, ec = eo && !ed && el.length > 1, eu = g.t.useConfig({
         location: O.rE.QUEST_HOME_DESKTOP
     }), em = (0, I.Pd)(t), eh = (0, m.O)(e => e.clearErrorHints), ex = i.useCallback(e => {
         er(e), e === O.fO.DESKTOP && (p([]), eh(t.id))
@@ -276,7 +276,17 @@ function G(e) {
         text: eC,
         onClick: eA
     }), eS = null;
-    return (X && J ? eS = (0, a.jsx)("div", {
+    return (eu.enabled && em === I.UA.EXPIRED_CLAIMABLE && eu.enabledQuestStates.has(em) ? eS = (0, a.jsx)("div", {
+        className: w.x6,
+        children: (0, a.jsx)(N.A, {
+            quest: t,
+            surface: I.V3.QUEST_HOME_TILE_FOOTER,
+            analyticsCtxQuestContent: n,
+            analyticsCtxSourceQuestContent: L,
+            analyticsCtxQuestContentPosition: j,
+            analyticsCtxQuestContentRowIndex: y
+        })
+    }) : X && J ? eS = (0, a.jsx)("div", {
         className: w.x6,
         children: (0, a.jsx)(r.$nd, {
             variant: "primary",
@@ -328,7 +338,7 @@ function G(e) {
             analyticsCtxQuestContentPosition: j,
             analyticsCtxQuestContentRowIndex: y
         })
-    }) : Q ? eS = et ? (0, a.jsx)(U, {
+    }) : Y ? eS = et ? (0, a.jsx)(U, {
         quest: t,
         questContent: n,
         sourceQuestContent: L,
@@ -383,7 +393,7 @@ function G(e) {
                 fullWidth: !0
             })
         })
-    }) : Y && !e_ ? eS = ed ? (0, a.jsx)(l.Pw, {
+    }) : Q && !e_ ? eS = ed ? (0, a.jsx)(l.Pw, {
         className: w.dd,
         isSelected: () => !1,
         options: D,
@@ -455,7 +465,7 @@ function G(e) {
             text: R.intl.string(R.t["9KoPyB"]),
             fullWidth: !0
         })
-    }) : Y || (eS = q ? (0, a.jsxs)(r.e2v, {
+    }) : Q || (eS = q ? (0, a.jsxs)(r.e2v, {
         direction: "horizontal",
         fullWidth: !0,
         wrap: !1,
@@ -489,7 +499,17 @@ function G(e) {
                 fullWidth: !0
             })]
         })
-    })) : eS = (0, a.jsx)(B, {
+    })) : eS = eu.enabled && em === I.UA.EXPIRED && eu.enabledQuestStates.has(em) ? (0, a.jsx)("div", {
+        className: w.x6,
+        children: (0, a.jsx)(N.A, {
+            quest: t,
+            surface: I.V3.QUEST_HOME_TILE_FOOTER,
+            analyticsCtxQuestContent: n,
+            analyticsCtxSourceQuestContent: L,
+            analyticsCtxQuestContentPosition: j,
+            analyticsCtxQuestContentRowIndex: y
+        })
+    }) : (0, a.jsx)(B, {
         quest: t,
         sourceQuestContent: L,
         formattedExpirationDate: K
