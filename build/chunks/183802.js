@@ -19,27 +19,27 @@ var r, s = n(627968),
     f = n(442433),
     R = n(775602),
     E = n(793574),
-    C = n(688810),
-    H = n(713517),
+    H = n(688810),
+    C = n(713517),
     I = n(427209),
-    S = n(993046),
-    O = n(544028),
+    O = n(993046),
+    S = n(544028),
     N = n(253932),
     h = n(67480),
     x = n(954571),
     M = n(871123),
     p = n(733391),
-    L = n(439303),
-    b = n(832163),
+    b = n(439303),
+    L = n(832163),
     D = n(35826),
     v = n(207654),
     k = n(310962),
-    y = n(44724),
-    B = n(345938),
-    j = n(533406),
+    B = n(44724),
+    j = n(345938),
+    y = n(533406),
     U = n(971146),
-    G = n(366523),
-    w = n(300182),
+    w = n(366523),
+    G = n(300182),
     P = n(620999),
     F = n(743693),
     Y = n(696028),
@@ -67,7 +67,7 @@ function Z(t) {
         analyticsLocations: u,
         analyticsContext: o
     } = t, d = i.useCallback(t => {
-        t.stopPropagation(), null != n && null != e && (a(W.bB.FORWARD_BUTTON), (0, B.d)({
+        t.stopPropagation(), null != n && null != e && (a(W.bB.FORWARD_BUTTON), (0, j.d)({
             sku: n,
             guildId: e,
             analyticsContext: o,
@@ -106,18 +106,18 @@ function tt(t) {
         onClick: l,
         className: u,
         analyticsLocations: o
-    } = t, I = i.useRef(null), B = i.useRef(null), F = (0, _.bG)([h.A], () => h.A.get(r)), {
+    } = t, I = i.useRef(null), j = i.useRef(null), F = (0, _.bG)([h.A], () => h.A.get(r)), {
         guildId: $
     } = (0, M.nG)(F?.applicationId), tt = (0, v.b)({
         location: "storefront_card"
-    }), te = (0, _.bG)([O.A], () => (0, A.Mwr)(O.A.theme)), tn = (0, _.bG)([R.A], () => R.A.useReducedMotion), tr = N.Q_.useSetting(), {
+    }), te = (0, _.bG)([S.A], () => (0, A.Mwr)(S.A.theme)), tn = (0, _.bG)([R.A], () => R.A.useReducedMotion), tr = N.Q_.useSetting(), {
         isHoveringOrFocusing: ts
-    } = (0, H.A)(I), ti = (0, L.jM)(), {
+    } = (0, C.A)(I), ti = (0, b.jM)(), {
         analyticsLocations: ta
-    } = (0, C.Ay)(o ?? []), tl = i.useRef({
+    } = (0, H.Ay)(o ?? []), tl = i.useRef({
         positionInSection: e,
         analyticsLocations: ta
-    }), [tu, tc] = i.useState(!1), to = (0, _.bG)([b.A], () => null != r ? b.A.getNormalizedSKUEligibility(r) : void 0, [r]), td = (0, k.A)(r, tu), tA = i.useCallback(t => {
+    }), [tu, tc] = i.useState(!1), to = (0, _.bG)([L.A], () => null != r ? L.A.getNormalizedSKUEligibility(r) : void 0, [r]), td = (0, k.A)(r, tu), tA = i.useCallback(t => {
         tc(t)
     }, []), t_ = i.useMemo(() => c()(z.Nr, {
         [z.ax]: 0 === a,
@@ -165,8 +165,8 @@ function tt(t) {
             primaryIconAsset: tR,
             primaryIconLabel: tE
         } = i.useMemo(() => (0, M.Cv)(F, F?.applicationId), [F]),
-        tC = (0, _.bG)([b.A], () => null != $ ? b.A.getStorefrontState($)?.activePage ?? 0 : 0),
-        tH = i.useMemo(() => {
+        tH = (0, _.bG)([L.A], () => null != $ ? L.A.getStorefrontState($)?.activePage ?? 0 : 0),
+        tC = i.useMemo(() => {
             let t = F?.tenantMetadata?.socialLayer?.expiresAt;
             if (null == t) return null;
             let e = d()(),
@@ -176,45 +176,45 @@ function tt(t) {
             }) : null
         }, [F?.tenantMetadata?.socialLayer?.expiresAt]),
         tI = (0, M.xf)(F),
-        tS = i.useMemo(() => {
+        tO = i.useMemo(() => {
             if (!td) return "none";
             let [t, e] = X[a];
             return `linear-gradient(to top, ${Q} ${30+t}%, ${J} ${30+e}%)`
         }, [a, td]),
-        tO = i.useCallback(() => {
-            (0, y.X)({
+        tS = i.useCallback(() => {
+            (0, B.X)({
                 guildId: $
             })
         }, [$]),
         tN = i.useCallback(() => {
-            null != $ && (0, p.iR)($, r, "SocialLayerStorefrontCard")
+            null != $ && (0, p.iR)($, r)
         }, [$, r]),
         th = i.useCallback(() => {
-            tg(), null != $ && (B.current = setTimeout(() => {
-                (0, p.iR)($, r, "SocialLayerStorefrontCard")
+            tg(), null != $ && (j.current = setTimeout(() => {
+                (0, p.iR)($, r)
             }, 1e3))
         }, [$, r, tg]),
         tx = i.useCallback(() => {
-            tm(), null != B.current && (clearTimeout(B.current), B.current = null)
+            tm(), null != j.current && (clearTimeout(j.current), j.current = null)
         }, [tm]);
     i.useEffect(() => () => {
-        null != B.current && clearTimeout(B.current)
+        null != j.current && clearTimeout(j.current)
     }, []);
     let tM = i.useCallback(() => {
             null != $ && (0, D.A)({
                 guildId: $,
-                pageIndex: tC,
+                pageIndex: tH,
                 skuId: r,
                 slug: F?.slug
             })
-        }, [$, r, tC, F?.slug]),
+        }, [$, r, tH, F?.slug]),
         tp = i.useCallback(t => {
             (tf(W.bB.CARD), null != l && F?.applicationId != null) ? l(t, {
                 skuId: r,
                 applicationId: F.applicationId
             }): tM()
         }, [tf, l, tM, r, F?.applicationId]),
-        tL = i.useCallback(t => {
+        tb = i.useCallback(t => {
             tr && (0, f.L3)(t, async () => {
                 let {
                     default: t
@@ -226,7 +226,7 @@ function tt(t) {
             })
         }, [tr, r]),
         {
-            priceComponent: tb,
+            priceComponent: tL,
             extendedHeight: tD,
             displayPrice: tv
         } = function(t) {
@@ -236,7 +236,7 @@ function tt(t) {
                 normalPrice: n,
                 discountedPrice: r,
                 discountPercent: a
-            } = (0, S.o)({
+            } = (0, O.ou)({
                 sku: e,
                 priceSetAssignmentPurchaseType: K.lid.DEFAULT
             }), l = r ?? n, u = i.useMemo(() => null != e && null != e.orbsReward && e.orbsReward > 0 ? (0, s.jsx)("div", {
@@ -299,7 +299,7 @@ function tt(t) {
         });
     if (null == F) return null;
     let tk = (0, M.fq)(F),
-        ty = tt && td;
+        tB = tt && td;
     return (0, s.jsx)(g.L, {
         innerRef: I,
         onChange: tA,
@@ -307,8 +307,8 @@ function tt(t) {
         children: (0, s.jsx)(A.vN3, {
             children: (0, s.jsxs)(T.sqX, {
                 onClick: tp,
-                onContextMenu: tL,
-                onMouseDown: tO,
+                onContextMenu: tb,
+                onMouseDown: tS,
                 onMouseEnter: th,
                 onMouseLeave: tx,
                 className: c()(t_, {
@@ -319,8 +319,8 @@ function tt(t) {
                 }, u),
                 ref: I,
                 "aria-label": F.name,
-                children: [null != tH && (0, s.jsx)(T.LpS, {
-                    text: tH,
+                children: [null != tC && (0, s.jsx)(T.LpS, {
+                    text: tC,
                     disableColor: !0,
                     className: z.qS
                 }), (0, s.jsx)(Z, {
@@ -331,7 +331,7 @@ function tt(t) {
                     trackCardClick: tf,
                     analyticsLocations: ta,
                     analyticsContext: ti
-                }), null != tk ? td ? (0, s.jsx)(G.A, {
+                }), null != tk ? td ? (0, s.jsx)(w.A, {
                     containerClassName: z.Vl,
                     foregroundImageClassName: z.wP,
                     cardImage: tk,
@@ -352,7 +352,7 @@ function tt(t) {
                     children: [(0, s.jsx)("div", {
                         className: z.iZ,
                         style: {
-                            background: tS
+                            background: tO
                         }
                     }), (0, s.jsxs)("div", {
                         className: z.zH,
@@ -361,7 +361,7 @@ function tt(t) {
                                 [z.ov]: !(0, M.mC)(F),
                                 [z.w4]: tD
                             }),
-                            children: [ty && (0, s.jsx)("div", {
+                            children: [tB && (0, s.jsx)("div", {
                                 className: z.S1,
                                 children: (0, s.jsx)(U.V, {
                                     textColor: "always-white"
@@ -380,7 +380,7 @@ function tt(t) {
                             }) : (0, s.jsx)(P.r, {})]
                         }), (0, s.jsx)("div", {
                             className: z.iQ,
-                            children: td ? tb : (0, s.jsx)(P.r, {})
+                            children: td ? tL : (0, s.jsx)(P.r, {})
                         })]
                     }), (0, s.jsx)("div", {
                         className: z.li,
@@ -391,7 +391,7 @@ function tt(t) {
                                 variant: "primary",
                                 onMouseDown: tN,
                                 onClick: t => {
-                                    t.stopPropagation(), tf(W.bB.BUY_BUTTON), (0, j.a)(F, {
+                                    t.stopPropagation(), tf(W.bB.BUY_BUTTON), (0, y.a)(F, {
                                         isGift: !1
                                     }, {
                                         analyticsLocations: [...ta, E.A.SLAYER_STOREFRONT_CARD_PURCHASE_BUTTON],
@@ -412,9 +412,9 @@ function tt(t) {
                                     text: q.intl.string(q.t.KLBTgF),
                                     fullWidth: !0
                                 })
-                            }), (0, s.jsx)(w.A, {
+                            }), (0, s.jsx)(G.A, {
                                 onGift: t => {
-                                    t.stopPropagation(), tf(W.bB.GIFT_BUTTON), (0, j.a)(F, {
+                                    t.stopPropagation(), tf(W.bB.GIFT_BUTTON), (0, y.a)(F, {
                                         isGift: !0
                                     }, {
                                         analyticsLocations: [...ta, E.A.SLAYER_STOREFRONT_CARD_GIFT_BUTTON]

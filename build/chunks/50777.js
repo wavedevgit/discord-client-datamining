@@ -108,7 +108,7 @@ function M(e) {
             normalPrice: W,
             discountedPrice: Y,
             discountPercent: z
-        } = (0, g.o)({
+        } = (0, g.ou)({
             sku: M,
             priceSetAssignmentPurchaseType: L.lid.DEFAULT
         });
