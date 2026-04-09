@@ -353,7 +353,7 @@ class B {
     }
     getFormat(e) {
         let t;
-        return "object" == typeof e ? e = D(e, this) : (t = "default" === e ? Object.values(this.formats)[0] : this.formats[e]) ? t = D(t, this) : null
+        return "object" == typeof e ? e = P(e, this) : (t = "default" === e ? Object.values(this.formats)[0] : this.formats[e]) ? t = P(t, this) : null
     }
     equals(e) {
         return !!e && (this === e || this.id === e || this.id === e.id)
@@ -448,7 +448,7 @@ class B {
     }
 }
 
-function D(e, {
+function P(e, {
     coords: t
 } = {}) {
     if (e.coords && !e.coordGrammar) {
@@ -478,7 +478,7 @@ function D(e, {
     }
     return e
 }
-var P = new B({
+var D = new B({
     id: "xyz-d65",
     name: "XYZ D65",
     coords: {
@@ -515,7 +515,7 @@ class I extends B {
                 range: [0, 1],
                 name: "Blue"
             }
-        }), e.base || (e.base = P), e.toXYZ_M && e.fromXYZ_M && (e.toBase ??= t => {
+        }), e.base || (e.base = D), e.toXYZ_M && e.fromXYZ_M && (e.toBase ??= t => {
             let r = n(e.toXYZ_M, t);
             return this.white !== this.base.white && (r = R(this.white, this.base.white, r)), r
         }, e.fromBase ??= t => (t = R(this.base.white, this.white, t), n(e.fromXYZ_M, t))), e.referred ??= "display", super(e)
@@ -558,9 +558,9 @@ var q = new B({
     id: "xyz-d50",
     name: "XYZ D50",
     white: "D50",
-    base: P,
-    fromBase: e => R(P.white, "D50", e),
-    toBase: e => R("D50", P.white, e)
+    base: D,
+    fromBase: e => R(D.white, "D50", e),
+    toBase: e => R("D50", D.white, e)
 });
 let $ = 216 / 24389,
     U = 24 / 116,
@@ -671,11 +671,11 @@ function Q(e, t, {
         j = (i + f) / 2,
         S = (v + w) / 2,
         B = K(S),
-        D = (j - 50) ** 2,
-        P = 1 + .015 * D / Math.sqrt(20 + D),
+        P = (j - 50) ** 2,
+        D = 1 + .015 * P / Math.sqrt(20 + P),
         I = 1 + .045 * S,
         T = 1 + .015 * S * (1 - .17 * Math.cos(((s = v * w == 0 ? x : R <= 180 ? x / 2 : x < 360 ? (x + 360) / 2 : (x - 360) / 2) - 30) * V) + .24 * Math.cos(2 * s * V) + .32 * Math.cos((3 * s + 6) * V) - .2 * Math.cos((4 * s - 63) * V)),
-        L = (O / (r * P)) ** 2;
+        L = (O / (r * D)) ** 2;
     return Math.sqrt(L += (k / (a * I)) ** 2 + (_ / (n * T)) ** 2 + k / (a * I) * (-1 * Math.sin(2 * (30 * Math.exp(-1 * ((s - 275) / 25) ** 2)) * V) * (2 * Math.sqrt(B / (B + 0x16bcc41e9)))) * (_ / (n * T)))
 }
 let ee = [
@@ -714,7 +714,7 @@ var en = new B({
         }
     },
     white: "D65",
-    base: P,
+    base: D,
     fromBase(e) {
         let t = n(ee, e).map(e => Math.cbrt(e));
         return n(er, t)
@@ -781,7 +781,7 @@ var eu = new B({
             name: "Za"
         }
     },
-    base: P,
+    base: D,
     fromBase: e => e.map(e => Math.max(203 * e, 0)),
     toBase: e => e.map(e => Math.max(e / 203, 0))
 });
@@ -929,12 +929,12 @@ let eS = E.D65,
         [-.250268, 1.204414, .045854],
         [-.002079, .048952, .953127]
     ],
-    eD = [
+    eP = [
         [1.8620678550872327, -1.0112546305316843, .14918677544445175],
         [.38752654323613717, .6214474419314753, -.008973985167612518],
         [-.015841498849333856, -.03412293802851557, 1.0499644368778496]
     ],
-    eP = [
+    eD = [
         [460, 451, 288],
         [460, -891, -261],
         [460, -220, -6300]
@@ -1001,11 +1001,11 @@ function eG(e, t) {
         d = 5e4 / 13 * t.nc * t.ncb * f,
         h = b / t.nbb,
         p = 23 * (h + .305) * M(u, 23 * d + u * (11 * s + 108 * i)),
-        m = (r = n(eP, [h, p * s, p * i]).map(e => e / 1403), a = 100 / t.fl * 2588.068098016295, r.map(e => {
+        m = (r = n(eD, [h, p * s, p * i]).map(e => e / 1403), a = 100 / t.fl * 2588.068098016295, r.map(e => {
             let t = Math.abs(e);
             return v(a * w(t / (400 - t), 2.380952380952381), e)
         }));
-    return n(eD, m.map((e, r) => e * t.dRgbInv[r])).map(e => e / 100)
+    return n(eP, m.map((e, r) => e * t.dRgbInv[r])).map(e => e / 100)
 }
 
 function eH(e, t) {
@@ -1060,7 +1060,7 @@ var eZ = new B({
             name: "Hue"
         }
     },
-    base: P,
+    base: D,
     fromBase(e) {
         let t = eH(e, eW);
         return [t.J, t.M, t.h]
@@ -1097,7 +1097,7 @@ var eQ = new B({
             name: "Tone"
         }
     },
-    base: P,
+    base: D,
     fromBase: e => (function(e, t) {
         var r;
         let a = 116 * ((r = e[1]) > eX ? Math.cbrt(r) : (eJ * r + 16) / 116) - 16;
@@ -1707,11 +1707,11 @@ if (C.display_space = ti, "u" > typeof CSS && CSS.supports)
     }
 
 function tl(e) {
-    return L(e, [P, "y"])
+    return L(e, [D, "y"])
 }
 
 function tu(e, t) {
-    z(e, [P, "y"], t)
+    z(e, [D, "y"], t)
 }
 var tf = Object.freeze({
     __proto__: null,
@@ -1757,7 +1757,7 @@ var ty = new B({
             }
         },
         white: tg,
-        base: P,
+        base: D,
         fromBase(e) {
             let t = e.map((e, t) => e / tg[t]).map(e => e > th ? Math.cbrt(e) : (tm * e + 16) / 116);
             return [116 * t[1] - 16, 500 * (t[0] - t[1]), 200 * (t[1] - t[2])]
@@ -1815,12 +1815,12 @@ var ty = new B({
     });
 
 function tw(e) {
-    let [t, r, a] = T(e, P), n = t + 15 * r + 3 * a;
+    let [t, r, a] = T(e, D), n = t + 15 * r + 3 * a;
     return [4 * t / n, 9 * r / n]
 }
 
 function tM(e) {
-    let [t, r, a] = T(e, P), n = t + r + a;
+    let [t, r, a] = T(e, D), n = t + r + a;
     return [t / n, r / n]
 }
 var tA = Object.freeze({
@@ -2125,7 +2125,7 @@ var t_ = Object.freeze({
             [.013444280632031142, -.11836239223101838, 1.0151749943912054]
         ]
     }),
-    tD = new I({
+    tP = new I({
         id: "a98rgb",
         cssId: "a98-rgb",
         name: "Adobe\xae 98 RGB compatible",
@@ -2133,7 +2133,7 @@ var t_ = Object.freeze({
         toBase: e => e.map(e => Math.pow(Math.abs(e), 563 / 256) * Math.sign(e)),
         fromBase: e => e.map(e => Math.pow(Math.abs(e), 256 / 563) * Math.sign(e))
     }),
-    tP = new I({
+    tD = new I({
         id: "prophoto-linear",
         cssId: "--prophoto-rgb-linear",
         name: "Linear ProPhoto",
@@ -2156,7 +2156,7 @@ var tL = new I({
         id: "prophoto",
         cssId: "prophoto-rgb",
         name: "ProPhoto",
-        base: tP,
+        base: tD,
         toBase: e => e.map(e => e < tT ? e / 16 : e ** 1.8),
         fromBase: e => e.map(e => e >= tI ? e ** (1 / 1.8) : 16 * e)
     }),
@@ -2198,7 +2198,7 @@ let tz = E.D65,
     tq = 216 / 24389,
     t$ = 24389 / 27,
     [tU, tW] = tw({
-        space: P,
+        space: D,
         coords: tz
     });
 var tG = new B({
@@ -2217,12 +2217,12 @@ var tG = new B({
             }
         },
         white: tz,
-        base: P,
+        base: D,
         fromBase(e) {
             let t = [l(e[0]), l(e[1]), l(e[2])],
                 r = t[1],
                 [a, n] = tw({
-                    space: P,
+                    space: D,
                     coords: t
                 });
             if (!Number.isFinite(a) || !Number.isFinite(n)) return [0, 0, 0];
@@ -2553,7 +2553,7 @@ var rl = new I({
 let ru = (Math.log2(65504) + 9.72) / 17.52;
 var rf = Object.freeze({
     __proto__: null,
-    A98RGB: tD,
+    A98RGB: tP,
     A98RGB_Linear: tB,
     ACEScc: new I({
         id: "acescc",
@@ -2606,14 +2606,14 @@ var rf = Object.freeze({
     P3: tc,
     P3_Linear: tt,
     ProPhoto: tL,
-    ProPhoto_Linear: tP,
+    ProPhoto_Linear: tD,
     REC_2020: te,
     REC_2020_Linear: e7,
     REC_2100_HLG: ro,
     REC_2100_PQ: rn,
     XYZ_ABS_D65: eu,
     XYZ_D50: q,
-    XYZ_D65: P,
+    XYZ_D65: D,
     sRGB: ti,
     sRGB_Linear: ta
 });

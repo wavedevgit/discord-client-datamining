@@ -16,15 +16,15 @@ var i = n(64700),
     A = n(961350),
     g = n(734057),
     p = n(580745),
-    f = n(834942),
-    _ = n(320501),
+    _ = n(834942),
+    f = n(320501),
     E = n(576705),
     x = n(957565),
     C = n(203982),
     S = n(723702),
-    T = n(661191),
-    N = n(697470),
-    I = n(492841),
+    I = n(661191),
+    T = n(697470),
+    N = n(492841),
     v = n(707985),
     y = n(519222),
     b = n(652215);
@@ -37,7 +37,7 @@ let j = function(e, t, n) {
             M = n.ctrlKey && !(n.altKey || n.metaKey || n.shiftKey),
             D = n.metaKey && !(n.altKey || n.ctrlKey || n.shiftKey),
             O = n.shiftKey && !(n.altKey || n.ctrlKey || n.metaKey),
-            L = _.A.getMessage(t, e),
+            L = f.A.getMessage(t, e),
             P = g.A.getChannel(t);
         if (null == L || null == P) return;
         let k = A.default.getId();
@@ -49,14 +49,14 @@ let j = function(e, t, n) {
                 ((0, S.isMac)() ? D : M) && x.p5 && (n.preventDefault(), (0, x.C)(L.content));
                 break;
             case "e":
-                i && !P.isSystemDM() && (0, N.A)(L, k) && (n.preventDefault(), (0, y.u_)(P, L));
+                i && !P.isSystemDM() && (0, T.A)(L, k) && (n.preventDefault(), (0, y.u_)(P, L));
                 break;
             case "p":
-                (i || O) && (0, I.A)(L, P) && (n.preventDefault(), (0, y.rS)(P, L, n));
+                (i || O) && (0, N.A)(L, P) && (n.preventDefault(), (0, y.rS)(P, L, n));
                 break;
             case "+":
                 (i || O) && function(e) {
-                    let t = null == e.guild_id || f.A.canChatInGuild(e.guild_id),
+                    let t = null == e.guild_id || _.A.canChatInGuild(e.guild_id),
                         n = m.jW.getSetting(),
                         {
                             disableReactionCreates: i
@@ -88,7 +88,7 @@ let j = function(e, t, n) {
             case "t":
                 if (i && (0, c.D1)(P, L)) n.preventDefault(), (0, d.Tv)(P, L, "Message Shortcut");
                 else if (L.hasFlag(b.pr7.HAS_THREAD)) {
-                    let e = g.A.getChannel(T.default.castMessageIdAsChannelId(L.id));
+                    let e = g.A.getChannel(I.default.castMessageIdAsChannelId(L.id));
                     null != e && (i || O) && (n.preventDefault(), (0, d.JA)(e, O))
                 }
                 break;

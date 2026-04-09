@@ -10,17 +10,17 @@ var l = n(448761),
     s = n(763754),
     o = n(447215),
     c = n(888675),
-    d = n(287809),
-    u = n(733045),
+    u = n(287809),
+    d = n(733045),
     _ = n(985018);
 let A = {
-        [l.l.REPORT_TO_MOD_BAN_USER]: () => u.default.komFTv,
-        [l.l.REPORT_TO_MOD_KICK_USER]: () => u.default.FAJmJV,
-        [l.l.REPORT_TO_MOD_TIMEOUT_USER]: () => u.default["90r/sR"]
+        [l.l.REPORT_TO_MOD_BAN_USER]: () => d.default.komFTv,
+        [l.l.REPORT_TO_MOD_KICK_USER]: () => d.default.FAJmJV,
+        [l.l.REPORT_TO_MOD_TIMEOUT_USER]: () => d.default["90r/sR"]
     },
     m = {
-        [l.l.REPORT_TO_MOD_DELETED_MESSAGE]: () => u.default["4023i8"],
-        [l.l.REPORT_TO_MOD_CLOSED_REPORT]: () => u.default.UE81zV
+        [l.l.REPORT_TO_MOD_DELETED_MESSAGE]: () => d.default["4023i8"],
+        [l.l.REPORT_TO_MOD_CLOSED_REPORT]: () => d.default.UE81zV
     };
 
 function E(e) {
@@ -56,9 +56,9 @@ function T(e) {
         compact: l
     } = e, {
         author: r,
-        mentions: u,
+        mentions: d,
         type: m
-    } = t, T = (0, s.Ay)(t), I = t.getChannelId(), N = (0, a.bG)([d.default], () => d.default.getUser(u[0]), [u]), g = (0, s.m2)(r, n), f = (0, o.P)({
+    } = t, T = (0, s.Ay)(t), I = t.getChannelId(), N = (0, a.bG)([u.default], () => u.default.getUser(d[0]), [d]), g = (0, s.m2)(r, n), f = (0, o.P)({
         user: r,
         channelId: I,
         guildId: n.guild_id,
@@ -94,15 +94,15 @@ function I(e) {
     } = e, {
         author: a,
         type: r
-    } = t, d = (0, s.Ay)(t), u = t.getChannelId(), A = (0, s.m2)(a, n), T = (0, o.P)({
+    } = t, u = (0, s.Ay)(t), d = t.getChannelId(), A = (0, s.m2)(a, n), T = (0, o.P)({
         user: a,
-        channelId: u,
+        channelId: d,
         guildId: n.guild_id,
         messageId: t.id
     })(A), I = m[r] ?? null;
     if (null == I) return null;
     let N = _.intl.format(I(), {
-        actorName: d.nick,
+        actorName: u.nick,
         actorHook: T
     });
     return (0, i.jsx)(c.A, {

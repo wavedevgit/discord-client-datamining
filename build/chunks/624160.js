@@ -1,171 +1,171 @@
 /** chunk id: 624160 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => b
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    s = n.n(l),
     r = n(540185),
     o = n(397927),
     c = n(793574),
     d = n(688810),
     u = n(362490),
-    m = n(701613),
-    g = n(587895),
-    f = n(429913),
-    x = n(403362),
-    p = n(635344),
-    _ = n(735321),
+    g = n(701613),
+    _ = n(587895),
+    m = n(429913),
+    f = n(403362),
+    x = n(635344),
+    p = n(735321),
     I = n(606758),
-    h = n(492280),
-    A = n(939899),
-    E = n(518477),
-    T = n(985018),
-    v = n(788676);
-let j = {
+    A = n(492280),
+    h = n(939899),
+    v = n(518477),
+    E = n(985018),
+    j = n(788676);
+let T = {
     [r.x.FAVORITE_GAMES]: {
         placeholder: () => ({
             variant: "details",
-            applicationId: p.n.LEAGUE_OF_LEGENDS
+            applicationId: x.n.LEAGUE_OF_LEGENDS
         }),
-        getAriaLabel: () => T.intl.string(T.t.xJtdIm)
+        getAriaLabel: () => E.intl.string(E.t.xJtdIm)
     },
     [r.x.CURRENT_GAMES]: {
         placeholder: () => ({
             variant: "details",
-            applicationId: p.n.VALORANT
+            applicationId: x.n.VALORANT
         }),
-        getAriaLabel: () => T.intl.string(T.t.Ae8tRi)
+        getAriaLabel: () => E.intl.string(E.t.Ae8tRi)
     },
     [r.x.PLAYED_GAMES]: {
         placeholder: () => ({
             variant: "grid",
-            applicationIds: [p.n.PEAK, p.n.BATTLEFIELD_6, p.n.REPO, p.n.BALDURS_GATE_3]
+            applicationIds: [x.n.PEAK, x.n.BATTLEFIELD_6, x.n.REPO, x.n.BALDURS_GATE_3]
         }),
-        getAriaLabel: () => T.intl.string(T.t["pBR+4j"])
+        getAriaLabel: () => E.intl.string(E.t["pBR+4j"])
     },
     [r.x.WANT_TO_PLAY_GAMES]: {
         placeholder: () => ({
             variant: "grid",
-            applicationIds: [p.n.MARVEL_RIVALS, p.n.WORLD_OF_WARCRAFT, p.n.RUST, p.n.SILKSONG]
+            applicationIds: [x.n.MARVEL_RIVALS, x.n.WORLD_OF_WARCRAFT, x.n.RUST, x.n.SILKSONG]
         }),
-        getAriaLabel: () => T.intl.string(T.t.NtoBi1)
+        getAriaLabel: () => E.intl.string(E.t.NtoBi1)
     },
     [r.x.APPLICATION]: {
         placeholder: e => ({
             variant: "application-widget",
             applicationId: e.applicationId
         }),
-        icon: e => g.A.getApplication(e.applicationId)?.getIconURL(16),
-        getAriaLabel: e => T.intl.formatToPlainString(T.t.KfGahB, {
-            applicationName: g.A.getApplication(e.applicationId)?.name ?? ""
+        icon: e => _.A.getApplication(e.applicationId)?.getIconURL(16),
+        getAriaLabel: e => E.intl.formatToPlainString(E.t.KfGahB, {
+            applicationName: _.A.getApplication(e.applicationId)?.name ?? ""
         })
     }
 };
 
-function C(e) {
+function b(e) {
     let t, {
             widget: n,
-            onAddWidget: a,
-            size: g = "default",
-            loading: p = !1,
-            trackUserProfileEditAction: C
+            onAddWidget: l,
+            size: _ = "default",
+            loading: x = !1,
+            trackUserProfileEditAction: b
         } = e,
         {
-            placeholder: N,
-            getAriaLabel: y,
-            icon: b
-        } = j[n.type],
-        R = n.type === r.x.APPLICATION,
-        O = R ? n.applicationId : void 0,
-        S = (0, f.h)(O),
+            placeholder: C,
+            getAriaLabel: N,
+            icon: k
+        } = T[n.type],
+        S = n.type === r.x.APPLICATION,
+        O = S ? n.applicationId : void 0,
+        L = (0, m.h)(O),
         {
-            hasAlreadyLinked: k,
-            canStartAuthorization: D,
-            startAuthorization: P
-        } = (0, u.RD)(S),
+            hasAlreadyLinked: P,
+            canStartAuthorization: R,
+            startAuthorization: D
+        } = (0, u.RD)(L),
         {
-            analyticsLocations: L
+            analyticsLocations: w
         } = (0, d.Ay)(c.A.USER_PROFILE_APPLICATION_WIDGET),
-        G = m.G.useConfig({
+        G = g.G.useConfig({
             location: "UserProfileWidgetOptionAddButton"
         }),
-        w = R && !k && D && G.enabled,
-        U = l.useCallback(() => {
-            if (!p) {
-                if (w) {
-                    G.autoAdd && ((0, _.Y5)(n), C({
+        y = S && !P && R && G.enabled,
+        U = a.useCallback(() => {
+            if (!x) {
+                if (y) {
+                    G.autoAdd && ((0, p.Y5)(n), b({
                         action: "WIDGET_ADDED",
                         ...n.getProfileEditAnalyticsOptions()
-                    }), (0, I.XA)(E.jM.WIDGET_ADDED), a?.()), P({
-                        analyticsLocations: L
+                    }), (0, I.XA)(v.jM.WIDGET_ADDED), l?.()), D({
+                        analyticsLocations: w
                     });
                     return
-                }(0, _.Y5)(n), C({
+                }(0, p.Y5)(n), b({
                     action: "WIDGET_ADDED",
                     ...n.getProfileEditAnalyticsOptions()
-                }), (0, I.XA)(E.jM.WIDGET_ADDED), a?.()
+                }), (0, I.XA)(v.jM.WIDGET_ADDED), l?.()
             }
-        }, [p, w, G, n, C, a, P, L]),
-        M = b?.(n),
-        F = w ? o.qYV : o.U1e;
+        }, [x, y, G, n, b, l, D, w]),
+        M = k?.(n),
+        W = y ? o.qYV : o.U1e;
     return (0, i.jsxs)("div", {
-        className: v.LG,
+        className: j.LG,
         children: [(0, i.jsxs)(o.DUT, {
-            className: s()(v.PH, "small" === g && v.PG, p && v.Lq),
+            className: s()(j.PH, "small" === _ && j.PG, x && j.Lq),
             onClick: U,
-            "aria-label": w && null != S ? T.intl.formatToPlainString(T.t.ATS0FK, {
-                applicationName: S.name
-            }) : y(n),
-            "aria-busy": p,
+            "aria-label": y && null != L ? E.intl.formatToPlainString(E.t.ATS0FK, {
+                applicationName: L.name
+            }) : N(n),
+            "aria-busy": x,
             children: [(() => {
-                let e = N(n);
+                let e = C(n);
                 switch (e.variant) {
                     case "details":
-                        return (0, i.jsx)(h.E, {
-                            className: v.l4,
-                            gridClassName: v.Qs,
+                        return (0, i.jsx)(A.E, {
+                            className: j.l4,
+                            gridClassName: j.Qs,
                             applicationId: e.applicationId
                         });
                     case "grid":
-                        return (0, i.jsx)(h.l, {
-                            className: v.l4,
-                            gridClassName: v.Qs,
+                        return (0, i.jsx)(A.l, {
+                            className: j.l4,
+                            gridClassName: j.Qs,
                             applicationIds: e.applicationIds
                         });
                     case "application-widget":
-                        return (0, i.jsx)(A.A, {
+                        return (0, i.jsx)(h.A, {
                             applicationId: e.applicationId,
-                            size: g
+                            size: _
                         });
                     default:
-                        return (0, x.xb)(e)
+                        return (0, f.xb)(e)
                 }
             })(), (0, i.jsxs)("div", {
-                className: v.Lw,
-                children: [(0, i.jsx)(F, {
+                className: j.Lw,
+                children: [(0, i.jsx)(W, {
                     size: "md",
                     color: "currentColor",
-                    className: v.c9
+                    className: j.c9
                 }), (0, i.jsxs)("div", {
-                    className: v.DD,
+                    className: j.DD,
                     children: [(0, i.jsx)(o.Text, {
                         variant: "text-md/medium",
                         color: "text-strong",
-                        children: (0, _.L)(n)
+                        children: (0, p.L)(n)
                     }), null != M ? (0, i.jsx)("img", {
                         src: M,
                         alt: "",
                         width: 16,
                         height: 16,
-                        className: v.Kk
+                        className: j.Kk
                     }) : null]
                 })]
             })]
-        }), "application-widget" === (t = N(n)).variant ? (0, i.jsx)(A.R, {
+        }), "application-widget" === (t = C(n)).variant ? (0, i.jsx)(h.R, {
             applicationId: t.applicationId,
-            size: g
+            size: _
         }) : null]
     })
 }

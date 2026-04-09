@@ -9,8 +9,8 @@ var i = n(627968),
     s = n(827734),
     o = n(397927),
     c = n(863574),
-    d = n(888675),
-    u = n(639289),
+    u = n(888675),
+    d = n(639289),
     _ = n(287809),
     A = n(166403),
     m = n(954571),
@@ -48,7 +48,7 @@ let O = e => {
                     invite_id: t,
                     subscription_id: e
                 });
-                let d = (0, l.uniqueId)("premium-group-accept-invite-modal"),
+                let u = (0, l.uniqueId)("premium-group-accept-invite-modal"),
                     A = !1;
                 (0, o.mMO)(async () => {
                     let {
@@ -63,16 +63,16 @@ let O = e => {
                         onClose: async () => {
                             A || (A = !0, E._.dispatch(h.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), N.A.isDisplayingWowMomentConfirmation && N.A.isAnimated ? setTimeout(() => {
                                 n.onClose()
-                            }, u.K) : await n.onClose())
+                            }, d.K) : await n.onClose())
                         }
                     })
                 }, {
                     onCloseRequest: () => {
                         A || (A = !0, E._.dispatch(h.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), N.A.isDisplayingWowMomentConfirmation && N.A.isAnimated ? setTimeout(() => {
-                            (0, o.OoC)(d)
-                        }, u.K) : (0, o.OoC)(d))
+                            (0, o.OoC)(u)
+                        }, d.K) : (0, o.OoC)(u))
                     },
-                    modalKey: d
+                    modalKey: u
                 })
             },
             disabled: t
@@ -128,7 +128,7 @@ let O = e => {
             compact: r,
             actionButton: c
         } = e;
-        return (0, i.jsxs)(d.A, {
+        return (0, i.jsxs)(u.A, {
             className: x.og,
             compact: r,
             iconNode: (0, i.jsx)(a.tvc, {
@@ -174,8 +174,8 @@ let O = e => {
         } = e, a = t.premiumGroupInviteId, {
             inviteState: s,
             isFetching: o,
-            invite: d,
-            currentUser: u,
+            invite: u,
+            currentUser: d,
             premiumSubscription: m
         } = (0, r.cf)([g.A, _.default, A.A], () => ({
             inviteState: null != a ? g.A.getInviteState(a) : C.xI.NOT_FOUND,
@@ -184,9 +184,9 @@ let O = e => {
             currentUser: _.default.getCurrentUser(),
             premiumSubscription: A.A.getPremiumSubscription()
         }), [a]);
-        if (null == u) return null;
+        if (null == d) return null;
         let E = t.author,
-            T = u.id === E.id;
+            T = d.id === E.id;
         if (o || s === C.xI.FETCHING || s === C.xI.UNKNOWN) return (0, i.jsx)(c.Wb, {
             isHorizontal: !0
         });
@@ -201,15 +201,15 @@ let O = e => {
             h = null;
         return h = T ? N ? (0, i.jsx)(M, {
             disabled: !1,
-            invite: d,
+            invite: u,
             channel: n
         }) : s === C.xI.REMOVED ? (0, i.jsx)(M, {
             disabled: !0,
-            invite: d,
+            invite: u,
             channel: n
         }) : null : (0, i.jsx)(O, {
             disabled: !N,
-            invite: d,
+            invite: u,
             isExistingSub: null != m
         }), (0, i.jsx)(D, {
             message: I.message,

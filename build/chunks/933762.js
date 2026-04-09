@@ -10,8 +10,8 @@ var l = n(311907),
     s = n(734057),
     o = n(763754),
     c = n(888675),
-    d = n(985018),
-    u = n(942602);
+    u = n(985018),
+    d = n(942602);
 
 function _(e) {
     let {
@@ -21,7 +21,7 @@ function _(e) {
         onClickThread: A,
         onClickViewThreads: m,
         onContextMenuThread: E
-    } = e, T = (0, o.Ay)(t), I = _(T), N = (0, l.bG)([s.A], () => s.A.getChannel(t.messageReference?.channel_id)), g = (0, r.Ay)(N), f = d.intl.format(d.t.cZ9Uf2, {
+    } = e, T = (0, o.Ay)(t), I = _(T), N = (0, l.bG)([s.A], () => s.A.getChannel(t.messageReference?.channel_id)), g = (0, r.Ay)(N), f = u.intl.format(u.t.cZ9Uf2, {
         actorName: T.nick,
         actorHook: I,
         threadName: g ?? t.content,
@@ -35,7 +35,7 @@ function _(e) {
         iconNode: (0, i.jsx)(a.ysw, {
             size: "md",
             color: "currentColor",
-            className: u.K
+            className: d.K
         }),
         timestamp: t.timestamp,
         compact: n,

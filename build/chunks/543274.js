@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(641703),
     _ = n(807067),
     m = n(521588),
-    p = n(688810),
-    g = n(975412),
+    g = n(688810),
+    p = n(975412),
     f = n(384059),
     x = n(379848),
     E = n(267102),
@@ -45,8 +45,8 @@ function y(e) {
     }, [U]), V = (0, E.Us)() === T.BRT.POPOUT, {
         parentAnalyticsLocation: H,
         newestAnalyticsLocation: F
-    } = (0, p.Ay)(), W = l.useCallback(() => {
-        (0, f.X)(H, f.O.ACTIVITY), (0, g.A)({
+    } = (0, g.Ay)(), W = l.useCallback(() => {
+        (0, f.X)(H, f.O.ACTIVITY), (0, p.A)({
             context: null != t ? {
                 type: "channel",
                 channel: t

@@ -1,11 +1,11 @@
 /** chunk id: 909255 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => _
 });
 var i = n(627968),
     a = n(64700),
-    l = n(362599),
-    r = n(342494),
+    r = n(362599),
+    l = n(342494),
     s = n(976860),
     o = n(235365),
     d = n(652215),
@@ -13,19 +13,19 @@ var i = n(627968),
     u = n(723468),
     A = n(985018);
 
-function h(e) {
+function _(e) {
     let {
         targetElementRef: t,
         dismissPopover: n,
-        children: h
-    } = e, _ = a.useCallback(() => {
+        children: _
+    } = e, h = a.useCallback(() => {
         n(c.i.TAKE_ACTION), (0, s.pX)(`${d.BVt.NITRO_HOME}?section=${o.L}`)
-    }, [n]), m = (0, i.jsx)(r.AM, {
+    }, [n]), m = (0, i.jsx)(l.AM, {
         targetElementRef: t,
         onRequestClose: () => n(c.i.USER_DISMISS),
         graphic: {
             type: "rive",
-            rive: l.Z
+            rive: r.Z
         },
         badge: {
             type: "beta",
@@ -42,13 +42,13 @@ function h(e) {
         body: A.intl.string(u.default.XNHr3C),
         actions: [{
             text: A.intl.string(A.t.hvVgAZ),
-            onClick: _
+            onClick: h
         }],
         gradientColor: "nitro-pink"
     });
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            children: h
+            children: _
         }), m]
     })
 }

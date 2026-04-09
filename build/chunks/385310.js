@@ -1,27 +1,27 @@
 /** chunk id: 385310 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => _
 });
 var i = n(627968),
     a = n(64700),
-    l = n(311907),
-    r = n(990078),
+    r = n(311907),
+    l = n(990078),
     s = n(397927),
     o = n(624458),
     d = n(212455),
     c = n(332118),
     u = n(985018),
     A = n(714001);
-let h = e => {
+let _ = e => {
     let {
         headerId: t,
         reapplyText: n,
-        onReapply: h,
-        confirmText: _,
+        onReapply: _,
+        confirmText: h,
         onWithdrawApplication: m,
         rejectionReason: g = null,
         guild: p = null
-    } = e, E = (0, l.bG)([d.A], () => d.A.getCooldown(p?.id ?? "0")), {
+    } = e, E = (0, r.bG)([d.A], () => d.A.getCooldown(p?.id ?? "0")), {
         canReapply: I,
         isLoading: f
     } = (0, c.f)(p?.id);
@@ -59,7 +59,7 @@ let h = e => {
             }) : null]
         }), (0, i.jsxs)("div", {
             className: A.Ow,
-            children: [I || f ? (0, i.jsx)(r.m, {
+            children: [I || f ? (0, i.jsx)(l.m, {
                 asContainer: !0,
                 text: C ? u.intl.formatToPlainString(u.t.A0f0P7, {
                     days: T
@@ -68,7 +68,7 @@ let h = e => {
                     days: T
                 }) : void 0,
                 children: (0, i.jsx)(s.Button, {
-                    onClick: h,
+                    onClick: _,
                     variant: "secondary",
                     size: "md",
                     loading: null == E || f,
@@ -80,7 +80,7 @@ let h = e => {
                 onClick: () => m(I || f),
                 variant: "critical-primary",
                 size: "md",
-                text: _,
+                text: h,
                 fullWidth: !0
             })]
         })]

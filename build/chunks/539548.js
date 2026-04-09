@@ -5,24 +5,24 @@ t.d(n, {
 var i = t(627968);
 t(64700);
 var a = t(311907),
-    l = t(397927),
-    r = t(517164),
-    s = t(290863),
-    d = t(461213),
-    o = t(975571),
+    r = t(397927),
+    l = t(517164),
+    o = t(290863),
+    s = t(461213),
+    d = t(975571),
     c = t(622543),
-    u = t(146655),
-    _ = t(489379),
+    _ = t(146655),
+    u = t(489379),
     p = t(900179),
     A = t(837924),
     g = t(558628),
     m = t(842241),
-    h = t(282797),
-    I = t(518477),
-    f = t(652215),
-    x = t(985018),
-    v = t(379704),
-    b = t(272823);
+    f = t(282797),
+    h = t(518477),
+    x = t(652215),
+    I = t(985018),
+    b = t(379704),
+    v = t(272823);
 
 function E(e) {
     let {
@@ -32,30 +32,30 @@ function E(e) {
         onClose: j
     } = e, {
         live: y,
-        recent: T,
-        stream: N
-    } = (0, u.A)(n.id), {
+        recent: C,
+        stream: T
+    } = (0, _.A)(n.id), {
         voiceChannel: S,
-        voiceActivity: C
-    } = (0, _.A)({
+        voiceActivity: N
+    } = (0, u.A)({
         userId: n.id,
         guildId: E
-    }), R = (0, a.bG)([r.A], () => r.A.isFetchingUserOutbox(n.id)), L = n.id === t.id, P = (0, a.bG)([d.A, s.A], () => {
-        let e = L ? d.A.getStatus() : s.A.getStatus(n.id);
-        return e === l.clD.OFFLINE || e === l.clD.INVISIBLE
-    }), O = (0, a.bG)([c.A], () => c.A.getUserProfile(n.id)?.private === !0), D = y.length > 0 || null != N, k = !O && null == N && null == C && null != S, U = !P && (D || k), B = T.length > 0;
-    return U || B || !R ? (0, i.jsxs)(l.IpV, {
-        className: v.XG,
+    }), R = (0, a.bG)([l.A], () => l.A.isFetchingUserOutbox(n.id)), L = n.id === t.id, P = (0, a.bG)([s.A, o.A], () => {
+        let e = L ? s.A.getStatus() : o.A.getStatus(n.id);
+        return e === r.clD.OFFLINE || e === r.clD.INVISIBLE
+    }), D = (0, a.bG)([c.A], () => c.A.getUserProfile(n.id)?.private === !0), O = y.length > 0 || null != T, k = !D && null == T && null == N && null != S, B = !P && (O || k), U = C.length > 0;
+    return B || U || !R ? (0, i.jsxs)(r.IpV, {
+        className: b.XG,
         fade: !0,
-        children: [U ? (0, i.jsx)(p.A, {
-            "aria-label": x.intl.string(x.t.J6STd9),
+        children: [B ? (0, i.jsx)(p.A, {
+            "aria-label": I.intl.string(I.t.J6STd9),
             children: (0, i.jsxs)("ul", {
-                className: v.Ci,
-                children: [null != N && (0, i.jsx)("li", {
+                className: b.Ci,
+                children: [null != T && (0, i.jsx)("li", {
                     children: (0, i.jsx)(m.A, {
                         user: n,
                         currentUser: t,
-                        stream: N,
+                        stream: T,
                         onClose: j
                     })
                 }), y.map((e, a) => (0, i.jsx)("li", {
@@ -66,7 +66,7 @@ function E(e) {
                         onClose: j
                     })
                 }, `live-${a}`)), k && (0, i.jsx)("li", {
-                    children: (0, i.jsx)(h.A, {
+                    children: (0, i.jsx)(f.A, {
                         user: n,
                         currentUser: t,
                         voiceChannel: S,
@@ -74,18 +74,18 @@ function E(e) {
                     })
                 })]
             })
-        }) : null, B ? (0, i.jsx)(p.A, {
-            heading: x.intl.string(x.t.M0zgnT),
-            introText: L ? x.intl.format(x.t["4bk9Ak"], {
-                learnMoreHook: (e, n) => (0, i.jsx)(l.MzZ, {
-                    href: o.A.getArticleURL(f.MVz.ACTIVITY_STATUS_SETTINGS),
+        }) : null, U ? (0, i.jsx)(p.A, {
+            heading: I.intl.string(I.t.M0zgnT),
+            introText: L ? I.intl.format(I.t["4bk9Ak"], {
+                learnMoreHook: (e, n) => (0, i.jsx)(r.MzZ, {
+                    href: d.A.getArticleURL(x.MVz.ACTIVITY_STATUS_SETTINGS),
                     children: e
                 }, n)
             }) : void 0,
-            scrollTargetId: I.bk.RECENT_ACTIVITY,
+            scrollTargetId: h.bk.RECENT_ACTIVITY,
             children: (0, i.jsx)("ul", {
-                className: v.Ci,
-                children: T.map(e => (0, i.jsx)("li", {
+                className: b.Ci,
+                children: C.map(e => (0, i.jsx)("li", {
                     children: (0, i.jsx)(g.A, {
                         user: n,
                         entry: e,
@@ -95,7 +95,7 @@ function E(e) {
             })
         }) : null]
     }) : (0, i.jsx)("div", {
-        className: b.Ie,
-        children: (0, i.jsx)(l.y$y, {})
+        className: v.Ie,
+        children: (0, i.jsx)(r.y$y, {})
     })
 }

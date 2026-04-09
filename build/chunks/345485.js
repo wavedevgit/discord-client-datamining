@@ -5,16 +5,16 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(110259),
-    l = n(417597),
-    r = n(342494),
+    r = n(417597),
+    l = n(342494),
     s = n(139286),
     o = n(997509),
     d = n(260509),
     c = n(71393),
     u = n(287809),
     A = n(652215),
-    h = n(49999),
-    _ = n(985018),
+    _ = n(49999),
+    h = n(985018),
     m = n(330766);
 
 function g(e) {
@@ -22,7 +22,7 @@ function g(e) {
         guildId: t,
         markAsDismissed: n,
         targetElementRef: g
-    } = e, p = (0, l.bG)([c.A, u.default], () => {
+    } = e, p = (0, r.bG)([c.A, u.default], () => {
         let e = u.default.getCurrentUser(),
             n = c.A.getGuild(t);
         return null != n && (0, d.bM)(n, e)
@@ -34,22 +34,22 @@ function g(e) {
             guild_id: t,
             is_owner: p
         }
-    }), (0, i.jsx)(r.AM, {
+    }), (0, i.jsx)(l.AM, {
         targetElementRef: g,
-        title: _.intl.string(_.t.C0m4rQ),
-        body: _.intl.string(_.t.zOHfEX),
+        title: h.intl.string(h.t.C0m4rQ),
+        body: h.intl.string(h.t.zOHfEX),
         graphic: {
             type: "image",
             src: m
         },
         actions: [{
-            text: _.intl.string(_.t.OgQQbG),
+            text: h.intl.string(h.t.OgQQbG),
             variant: "primary",
             onClick: () => {
                 o.A.open(t, A.BEX.ROLE_SUBSCRIPTIONS)
             }
         }],
-        onRequestClose: () => n(h.i.USER_DISMISS),
+        onRequestClose: () => n(_.i.USER_DISMISS),
         position: "bottom",
         caretConfig: {
             align: "center"

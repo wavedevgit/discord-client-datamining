@@ -1,12 +1,12 @@
 /** chunk id: 492280 params = (module,exports,require) **/
 n.d(t, {
     E: () => u,
-    l: () => m
+    l: () => g
 });
 var i = n(627968);
 n(64700);
-var l = n(503698),
-    a = n.n(l),
+var a = n(503698),
+    l = n.n(a),
     s = n(454908),
     r = n(788593),
     o = n(496527),
@@ -17,14 +17,14 @@ function d(e) {
         applicationId: t
     } = e, {
         data: n
-    } = (0, s.I)(t), l = n?.getCoverURL();
-    return null != l && "" !== l ? (0, i.jsx)("div", {
-        className: a()(o.PY, c.LH),
+    } = (0, s.I)(t), a = n?.getCoverURL();
+    return null != a && "" !== a ? (0, i.jsx)("div", {
+        className: l()(o.PY, c.LH),
         children: (0, i.jsx)(r.R, {
-            imageSrc: l
+            imageSrc: a
         })
     }) : (0, i.jsx)("div", {
-        className: a()(o.mD, c.LH)
+        className: l()(o.mD, c.LH)
     })
 }
 
@@ -32,13 +32,13 @@ function u(e) {
     let {
         applicationId: t,
         className: n,
-        gridClassName: l
+        gridClassName: a
     } = e;
     return (0, i.jsx)("div", {
-        className: a()(c.kL, n),
+        className: l()(c.kL, n),
         "aria-hidden": !0,
         children: (0, i.jsxs)("div", {
-            className: a()(c.Yi, l),
+            className: l()(c.Yi, a),
             children: [null != t ? (0, i.jsx)(d, {
                 applicationId: t
             }) : (0, i.jsx)("div", {
@@ -55,17 +55,17 @@ function u(e) {
     })
 }
 
-function m(e) {
+function g(e) {
     let {
         applicationIds: t,
         className: n,
-        gridClassName: l
+        gridClassName: a
     } = e;
     return (0, i.jsx)("div", {
-        className: a()(c.kL, n),
+        className: l()(c.kL, n),
         "aria-hidden": !0,
         children: (0, i.jsx)("div", {
-            className: a()(c.Nu, l),
+            className: l()(c.Nu, a),
             children: t.slice(0, 4).map((e, t) => (0, i.jsx)(d, {
                 applicationId: e
             }, t))

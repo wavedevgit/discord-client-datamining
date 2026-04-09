@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(954571),
     g = n(147036),
     p = n(845202),
-    f = n(86944),
-    _ = n(737045),
+    _ = n(86944),
+    f = n(737045),
     E = n(652215),
     x = n(985018),
     C = n(959214);
@@ -31,14 +31,14 @@ function S(e) {
         A.default.track(E.HAw.OPEN_MODAL, {
             type: "Grant Channel Access"
         })
-    }, []), null == s || null == r) ? null : (0, i.jsx)(T, {
+    }, []), null == s || null == r) ? null : (0, i.jsx)(I, {
         guild: r,
         channel: s,
         ...n
     })
 }
 
-function T(e) {
+function I(e) {
     let {
         guild: t,
         channel: n,
@@ -46,25 +46,25 @@ function T(e) {
         newChannel: h,
         inSettings: m,
         ...A
-    } = e, [E, S] = l.useState(""), [T, N] = l.useState({}), [I, v] = l.useState(!1), [y, b] = l.useState(null), j = l.useRef(null), R = (0, d.Ay)(n), {
+    } = e, [E, S] = l.useState(""), [I, T] = l.useState({}), [N, v] = l.useState(!1), [y, b] = l.useState(null), j = l.useRef(null), R = (0, d.Ay)(n), {
         roles: M,
         members: D,
         getRichTag: O
-    } = (0, f.K)(t, n, n.accessPermissions, E), L = p.A.useSections({
+    } = (0, _.K)(t, n, n.accessPermissions, E), L = p.A.useSections({
         roles: M,
         members: D
-    }), P = h && 0 === Object.keys(T).length;
+    }), P = h && 0 === Object.keys(I).length;
     async function k() {
-        if (null == n || 0 === Object.keys(T).length) return void a();
+        if (null == n || 0 === Object.keys(I).length) return void a();
         v(!0);
         try {
             var e, t, i;
             let l;
-            await (e = n, t = T, i = m, l = [], Object.values(t).forEach(t => {
+            await (e = n, t = I, i = m, l = [], Object.values(t).forEach(t => {
                 let {
                     row: n
                 } = t;
-                null != n.id && "" !== n.id && (n.rowType === _.T6.ROLE ? l.push((0, g.we)(n.id, e.type)) : n.rowType === _.T6.MEMBER && l.push((0, g.n3)(n.id, e.type)))
+                null != n.id && "" !== n.id && (n.rowType === f.T6.ROLE ? l.push((0, g.we)(n.id, e.type)) : n.rowType === f.T6.MEMBER && l.push((0, g.n3)(n.id, e.type)))
             }), (0, o.R$)(e.id, l, i)), a(), v(!1)
         } catch (t) {
             let e = new c.LG(t);
@@ -76,8 +76,8 @@ function T(e) {
         listRef: j,
         query: E,
         setQuery: S,
-        pendingAdditions: T,
-        setPendingAdditions: N,
+        pendingAdditions: I,
+        setPendingAdditions: T,
         roles: M,
         members: D,
         getRichTag: O,
@@ -133,7 +133,7 @@ function T(e) {
                 variant: "primary",
                 text: x.intl.string(x.t.i4jeWR),
                 onClick: k,
-                loading: I
+                loading: N
             }]
         })
     })

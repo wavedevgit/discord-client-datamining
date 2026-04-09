@@ -17,9 +17,9 @@ var l = n(503698),
     A = n(670455),
     g = n(381941),
     p = n(985018),
-    f = n(346396);
+    _ = n(346396);
 
-function _(e) {
+function f(e) {
     let {
         summary: t,
         channel: n
@@ -50,10 +50,10 @@ function _(e) {
     }, "animate-always");
     return (0, i.jsx)(i.Fragment, {
         children: c((e, t) => t ? (0, i.jsx)("div", {
-            className: f.RD,
+            className: _.RD,
             children: (0, i.jsxs)(a.animated.div, {
                 style: e,
-                className: f.GK,
+                className: _.GK,
                 children: [(0, i.jsx)(o.Text, {
                     variant: "text-xs/medium",
                     color: "interactive-text-default",
@@ -61,14 +61,14 @@ function _(e) {
                 }), (0, i.jsx)(o.DUT, {
                     onClick: e => s(e, A.P0.GOOD),
                     children: (0, i.jsx)(u.A, {
-                        className: f.O1,
+                        className: _.O1,
                         width: 12,
                         height: 12
                     })
                 }), (0, i.jsx)(o.DUT, {
                     onClick: e => s(e, A.P0.BAD),
                     children: (0, i.jsx)(d.A, {
-                        className: f.O1,
+                        className: _.O1,
                         width: 12,
                         height: 12
                     })
@@ -92,20 +92,20 @@ function E(e) {
         children: [(0, i.jsx)(o.Kck, {
             size: "xs",
             color: "currentColor",
-            className: f.cR
+            className: _.cR
         }), n.content]
     }) : (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(_, {
+        children: [(0, i.jsx)(f, {
             summary: d,
             channel: l
         }), (0, i.jsx)(o.Kck, {
             size: "xs",
             color: "currentColor",
-            className: f.Jq
+            className: _.Jq
         })]
     }), (0, i.jsx)(c.A, {
-        className: s()(f.aK, m ? f.Ke : f.hO),
-        contentClassName: m ? f.Ew : f.rD,
+        className: s()(_.aK, m ? _.Ke : _.hO),
+        contentClassName: m ? _.Ew : _.rD,
         isUnread: u,
         id: u ? g.q4 : void 0,
         children: t

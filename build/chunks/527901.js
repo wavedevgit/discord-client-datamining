@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(397927),
-    l = n(49999),
-    r = n(985018),
+    r = n(49999),
+    l = n(985018),
     s = n(499795);
 
 function o(e) {
@@ -20,13 +20,13 @@ function o(e) {
         }), (0, i.jsx)(a.Text, {
             variant: "text-sm/normal",
             className: s.Qs,
-            children: r.intl.string(r.t.rdzeVP)
+            children: l.intl.string(l.t.rdzeVP)
         }), (0, i.jsx)(a.Button, {
             variant: "overlay-primary",
-            text: r.intl.string(r.t["NX+WJN"]),
+            text: l.intl.string(l.t["NX+WJN"]),
             fullWidth: !0,
             onClick: () => {
-                t(l.i.AUTO)
+                t(r.i.AUTO)
             }
         })]
     })

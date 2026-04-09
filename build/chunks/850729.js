@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(411976),
     _ = n(912309),
     m = n(400492),
-    p = n(728321),
-    g = n(309010),
+    g = n(728321),
+    p = n(309010),
     f = n(287809),
     x = n(816733),
     E = n(619921),
@@ -53,7 +53,7 @@ function U(e) {
         badge: a,
         link: u,
         showProgressBadge: A
-    } = e, [_, g] = l.useState(!1), [f, x] = l.useState(!1), [E, I] = l.useState(null), [C, N] = l.useState(0), T = (0, s.Vd)("home"), R = (0, h.fy)().activePanel === h.HP.APP_ICON, U = () => {
+    } = e, [_, p] = l.useState(!1), [f, x] = l.useState(!1), [E, I] = l.useState(null), [C, N] = l.useState(0), T = (0, s.Vd)("home"), R = (0, h.fy)().activePanel === h.HP.APP_ICON, U = () => {
         I(null), N(0), clearTimeout(E)
     };
     if (null == n) return null;
@@ -73,8 +73,8 @@ function U(e) {
                 width: (0, o.o6S)(a)
             },
             children: (0, i.jsx)(o.jlP, {
-                onMouseEnter: () => g(!0),
-                onMouseLeave: () => g(!1),
+                onMouseEnter: () => p(!0),
+                onMouseLeave: () => p(!1),
                 onClick: () => {
                     if (!__OVERLAY__ && (null != E && clearTimeout(E), I(setTimeout(U, 500)), N(C + 1), 15 === C)) {
                         U();
@@ -104,7 +104,7 @@ function U(e) {
         });
     return (0, i.jsx)("div", {
         className: M.Uq,
-        children: (0, i.jsx)(p.A, {
+        children: (0, i.jsx)(g.A, {
             inlineSpecs: D,
             tutorialId: "friends-list",
             position: "right",
@@ -148,14 +148,14 @@ function G() {
         c = s.fractionalState === R.xc.NONE ? r + o : 0,
         h = (0, a.bG)([f.default], () => f.default.getCurrentUser()),
         m = (0, A.W)(),
-        p = n + c + m,
-        S = p === c && c > 0 && n + m === 0,
+        g = n + c + m,
+        S = g === c && c > 0 && n + m === 0,
         b = E.A.getHomeLink();
     return S && (b = j.BVt.APPLICATION_STORE), (0, i.jsx)(U, {
         selected: e,
         user: h,
-        selectedChannelId: g.A.getChannelId(j.ME),
-        badge: p,
+        selectedChannelId: p.A.getChannelId(j.ME),
+        badge: g,
         link: b,
         showProgressBadge: t
     })

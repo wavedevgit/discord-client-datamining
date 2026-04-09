@@ -17,8 +17,8 @@ var l = n(311907),
     A = n(652215),
     g = n(340837),
     p = n(355097),
-    f = n(985018),
-    _ = n(626262);
+    _ = n(985018),
+    f = n(626262);
 
 function E(e) {
     let {
@@ -31,18 +31,18 @@ function E(e) {
             bannerIcon: (0, i.jsx)(s._mZ, {
                 size: "lg",
                 color: "currentColor",
-                className: _.q3
+                className: f.q3
             }),
-            bannerHeader: f.intl.format(f.t.GgMwjk, {
+            bannerHeader: _.intl.format(_.t.GgMwjk, {
                 guildName: t?.name ?? ""
             }),
-            bannerSubtext: f.intl.string(f.t.ONjwD5),
-            textStyles: _.cI,
-            headerStyles: _.U_,
+            bannerSubtext: _.intl.string(_.t.ONjwD5),
+            textStyles: f.cI,
+            headerStyles: f.U_,
             children: (0, i.jsx)(s.Button, {
                 variant: "primary",
                 size: "sm",
-                text: f.intl.string(f.t.Viksoo),
+                text: _.intl.string(_.t.Viksoo),
                 onClick: () => n()
             })
         })
@@ -57,20 +57,20 @@ function x(e) {
     } = (0, r.Ay)(a.A.AUTOMOD_PROFILE_QUARANTINE_ALERT), [l, c] = (0, m.j8)({
         guildId: t?.id ?? A.dJq,
         analyticsLocations: n
-    }), d = c ? f.intl.string(f.t["9ph2v7"]) : f.intl.string(f.t.ldh9Cg), u = c ? f.intl.string(f.t["/PGQf0"]) : f.intl.string(f.t.WikgZ1);
+    }), d = c ? _.intl.string(_.t["9ph2v7"]) : _.intl.string(_.t.ldh9Cg), u = c ? _.intl.string(_.t["/PGQf0"]) : _.intl.string(_.t.WikgZ1);
     return (0, i.jsx)("div", {
         children: (0, i.jsx)(o._, {
             bannerIcon: (0, i.jsx)(s._mZ, {
                 size: "lg",
                 color: "currentColor",
-                className: _.q3
+                className: f.q3
             }),
-            bannerHeader: f.intl.format(f.t.kcYdTq, {
+            bannerHeader: _.intl.format(_.t.kcYdTq, {
                 guildName: t?.name ?? ""
             }),
             bannerSubtext: d,
-            textStyles: _.cI,
-            headerStyles: _.U_,
+            textStyles: f.cI,
+            headerStyles: f.U_,
             children: (0, i.jsx)(s.Button, {
                 variant: "primary",
                 size: "sm",

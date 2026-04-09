@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(308368),
-    r = n(308528),
+    r = n(308368),
+    l = n(308528),
     s = n(442433),
     o = n(49229),
     d = n(956793),
     c = n(428249),
     u = n(67103),
     A = n(657331),
-    h = n(734057),
-    _ = n(652215),
+    _ = n(734057),
+    h = n(652215),
     m = n(381941),
     g = n(985018);
 
@@ -25,7 +25,7 @@ function p(e) {
                     if (null == t.userId) return;
                     (async () => {
                         try {
-                            let e = await r.A.getOrEnsurePrivateChannel(t.userId);
+                            let e = await l.A.getOrEnsurePrivateChannel(t.userId);
                             d.default.selectPrivateChannel(e)
                         } catch {}
                     })();
@@ -80,25 +80,25 @@ function p(e) {
                         userId: t.userId,
                         guildId: t.guildId ?? void 0,
                         channelId: t.channelId,
-                        appContext: _.BRT.APP
+                        appContext: h.BRT.APP
                     }), e();
                     break;
                 case u.c.SEND_ACTIVITY_INVITE:
                     if (null == t.userId || null == t.activity) return;
-                    l.A.sendActivityInviteUser({
-                        type: _.xL.JOIN,
+                    r.A.sendActivityInviteUser({
+                        type: h.xL.JOIN,
                         userId: t.userId,
                         activity: t.activity,
-                        location: _.ThZ.USER_ACTIVITY_ACTIONS
+                        location: h.ThZ.USER_ACTIVITY_ACTIONS
                     });
                     break;
                 case u.c.ASK_TO_JOIN:
                     if (null == t.userId || null == t.activity) return;
-                    l.A.sendActivityInviteUser({
-                        type: _.xL.JOIN_REQUEST,
+                    r.A.sendActivityInviteUser({
+                        type: h.xL.JOIN_REQUEST,
                         userId: t.userId,
                         activity: t.activity,
-                        location: _.ThZ.USER_ACTIVITY_ACTIONS
+                        location: h.ThZ.USER_ACTIVITY_ACTIONS
                     });
                     break;
                 case u.c.SEND_GAME_INVITE_MESSAGE: {
@@ -107,9 +107,9 @@ function p(e) {
                         n = t.userId;
                     (async () => {
                         try {
-                            let t = await r.A.getOrEnsurePrivateChannel(n);
+                            let t = await l.A.getOrEnsurePrivateChannel(n);
                             d.default.selectPrivateChannel(t);
-                            let i = h.A.getChannel(t);
+                            let i = _.A.getChannel(t);
                             if (null == i) return;
                             !0 === e.extra.fake_inventory_item ? await (0, c.J)({
                                 channel: i,
@@ -151,10 +151,10 @@ function p(e) {
                         return n => (0, i.jsx)(t, {
                             ...n,
                             user: e.user,
-                            appContext: _.BRT.APP
+                            appContext: h.BRT.APP
                         })
                     }, {
-                        context: _.BRT.APP
+                        context: h.BRT.APP
                     });
                     break;
                 case u.K.FRIEND_GROUP:
@@ -235,7 +235,7 @@ function p(e) {
                             user: e.user,
                             guildId: t ?? void 0,
                             channelId: e.channelId,
-                            appContext: _.BRT.APP
+                            appContext: h.BRT.APP
                         })
                     });
                     break

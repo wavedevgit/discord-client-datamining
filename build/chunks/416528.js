@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(689874),
     _ = n(872363),
     m = n(123973),
-    p = n(51082),
-    g = n(275731),
+    g = n(51082),
+    p = n(275731),
     f = n(289552),
     x = n(246356),
     E = n(977851),
@@ -36,7 +36,7 @@ function R(e) {
         guildId: n
     } = e, l = (0, r.yK)([N.A, T.A], () => {
         let e = Date.now();
-        return a()(N.A.getSpeakers()).map(e => T.A.getParticipant(t, e)).filter(e => null != e && e.type === y.lp.USER && e.speaking && !(0, p.Ay)(e)).sortBy(t => -N.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
+        return a()(N.A.getSpeakers()).map(e => T.A.getParticipant(t, e)).filter(e => null != e && e.type === y.lp.USER && e.speaking && !(0, g.Ay)(e)).sortBy(t => -N.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
     });
     return 0 === l.length ? null : (0, i.jsx)("div", {
         className: j.$U,
@@ -62,7 +62,7 @@ function O(e) {
         focusedApplication: s,
         shouldShowHeaderParticipants: a
     } = e, o = l.useRef(null), {
-        analyticsLocations: p
+        analyticsLocations: g
     } = (0, u.Ay)(c.A.VOICE_CHANNEL_HEADER), C = t.id, {
         voiceParticipantsHidden: N,
         selectedParticipant: v,
@@ -84,7 +84,7 @@ function O(e) {
     }, "current-speaker")), M.push((0, i.jsx)(A.A, {
         className: j.x6,
         channelId: C
-    }, "clips-enabled-indicator")), v?.type === y.lp.STREAM && (M.push((0, i.jsx)(g.A, {
+    }, "clips-enabled-indicator")), v?.type === y.lp.STREAM && (M.push((0, i.jsx)(p.A, {
         className: j.x6,
         participant: v
     }, "warning")), M.push((0, i.jsx)(_.A, {
@@ -122,7 +122,7 @@ function O(e) {
         className: j.x6,
         disabled: n
     }, "chat-spacer")), (0, i.jsx)(u.f5, {
-        value: p,
+        value: g,
         children: M
     })
 }

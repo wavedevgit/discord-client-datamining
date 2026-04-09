@@ -16,17 +16,17 @@ var l = n(311907),
     A = n(205761),
     g = n(994500),
     p = n(287809),
-    f = n(652215);
-let _ = !1,
+    _ = n(652215);
+let f = !1,
     E = "",
     x = 0,
     C = [],
     S = !1,
-    T = new Set,
-    N = null;
+    I = new Set,
+    T = null;
 
-function I() {
-    E = "", x = 0, C = [], T = new Set, _ = !1, N = null
+function N() {
+    E = "", x = 0, C = [], I = new Set, f = !1, T = null
 }
 
 function v(e) {
@@ -34,8 +34,8 @@ function v(e) {
 }
 
 function y() {
-    if (!_) return !1;
-    let e = h.A.getChannel(N);
+    if (!f) return !1;
+    let e = h.A.getChannel(T);
     if (0 === E.trim().length) {
         var t;
         let n, l;
@@ -77,13 +77,13 @@ function y() {
 }
 
 function b() {
-    if (!_) return !1;
+    if (!f) return !1;
     let e = S;
     return (S = g.A.getFriendCount() > 0) !== e
 }
 
 function j(e, t) {
-    if (m.A.hasConsented(f.YAq.PERSONALIZATION)) {
+    if (m.A.hasConsented(_.YAq.PERSONALIZATION)) {
         let n = o.A.getUserAffinity(e.user.id)?.communicationProbability ?? 0,
             i = o.A.getUserAffinity(t.user.id)?.communicationProbability ?? 0;
         if (n !== i) return i - n
@@ -95,7 +95,7 @@ function R(e) {
     let {
         results: t
     } = e;
-    if (!_ || "" === E) return;
+    if (!f || "" === E) return;
     let n = [];
     for (let {
             id: e,
@@ -116,17 +116,17 @@ function M() {
 }
 
 function D(e) {
-    if (e.key !== f.TLS) return !1;
-    _ = !0, b(), i = M(), N = null, v("")
+    if (e.key !== _.TLS) return !1;
+    f = !0, b(), i = M(), T = null, v("")
 }
 
 function O(e) {
-    if (e.key !== f.TLS) return !1;
+    if (e.key !== _.TLS) return !1;
     L()
 }
 
 function L() {
-    null != i && (i.destroy(), i = null), I()
+    null != i && (i.destroy(), i = null), N()
 }
 class P extends l.Ay.Store {
     static displayName = "PrivateChannelRecipientsInviteStore";
@@ -140,7 +140,7 @@ class P extends l.Ay.Store {
         return S
     }
     getSelectedUsers() {
-        return T
+        return I
     }
     getQuery() {
         return E
@@ -149,7 +149,7 @@ class P extends l.Ay.Store {
         return {
             query: E,
             selectedRow: x,
-            selectedUsers: T,
+            selectedUsers: I,
             results: C,
             hasFriends: S
         }
@@ -157,7 +157,7 @@ class P extends l.Ay.Store {
 }
 let k = new P(s.h, {
         CONNECTION_OPEN: function() {
-            I()
+            N()
         },
         CHANNEL_SELECT: function(e) {
             let {
@@ -165,19 +165,19 @@ let k = new P(s.h, {
                 channelId: n
             } = e;
             if (null != t) return !1;
-            let i = _;
-            return I(), _ = i, N = n, y()
+            let i = f;
+            return N(), f = i, T = n, y()
         },
         MODAL_PUSH: D,
         SHOW_ACTION_SHEET: D,
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-            _ = !0, b(), i = M(), N = e.channelId, v("")
+            f = !0, b(), i = M(), T = e.channelId, v("")
         },
         MODAL_POP: O,
         HIDE_ACTION_SHEET: O,
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: L,
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_QUERY: function(e) {
-            N = e.channelId, v(e.query)
+            T = e.channelId, v(e.query)
         },
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT: function(e) {
             x = e.row
@@ -186,13 +186,13 @@ let k = new P(s.h, {
             let {
                 userId: t
             } = e;
-            T.add(t), T = new Set(T)
+            I.add(t), I = new Set(I)
         },
         PRIVATE_CHANNEL_RECIPIENTS_REMOVE_USER: function(e) {
             let {
                 userId: t
             } = e;
-            T.delete(t), T = new Set(T)
+            I.delete(t), I = new Set(I)
         }
     }),
     w = k

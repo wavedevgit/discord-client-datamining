@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(964892),
-    r = n(208756),
+    r = n(964892),
+    l = n(208756),
     s = n(135564),
     o = n(916845),
     d = n(627330),
     c = n(397927),
     u = n(688810),
     A = n(532794),
-    h = n(881373),
-    _ = n(788868),
+    _ = n(881373),
+    h = n(788868),
     m = n(49999),
     g = n(284498),
     p = n(985018),
@@ -29,14 +29,14 @@ function f(e) {
         analyticsLocations: C
     } = (0, u.Ay)(), T = a.useCallback(() => {
         n(m.i.TAKE_ACTION), (0, A.A)({
-            subscriptionTier: _.pe.TIER_2,
+            subscriptionTier: h.pe.TIER_2,
             analyticsLocations: C
         })
     }, [n, C]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             children: f
-        }), (0, i.jsx)(l.x, {
+        }), (0, i.jsx)(r.x, {
             targetElementRef: t,
             onRequestClose: () => n(m.i.USER_DISMISS),
             alignmentStrategy: "edge",
@@ -62,13 +62,13 @@ function f(e) {
                 }), (0, i.jsx)(d.D, {
                     title: p.intl.string(g.default.OlObRa),
                     body: p.intl.format(g.default["A+56/R"], {
-                        discountPercent: h.aW
+                        discountPercent: _.aW
                     }),
                     badge: {
                         type: "beta",
                         variant: "expressive"
                     }
-                }), (0, i.jsx)(r.Z, {
+                }), (0, i.jsx)(l.Z, {
                     actions: [{
                         text: p.intl.string(p.t.pj0XBN),
                         variant: "primary",

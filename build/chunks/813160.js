@@ -4,19 +4,19 @@ n.d(t, {
 });
 var i = n(607399),
     a = n(311907),
-    l = n(73153);
-let r = !1;
+    r = n(73153);
+let l = !1;
 class s extends a.Ay.Store {
     static displayName = "MobileWebSidebarStore";
     getIsOpen() {
-        return !i.Fr || r
+        return !i.Fr || l
     }
 }
-let o = new s(l.h, {
+let o = new s(r.h, {
     MOBILE_WEB_SIDEBAR_OPEN: function() {
-        r = !0
+        l = !0
     },
     MOBILE_WEB_SIDEBAR_CLOSE: function() {
-        r = !1
+        l = !1
     }
 })

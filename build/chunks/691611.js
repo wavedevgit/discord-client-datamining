@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(503698),
+    l = n.n(r),
     s = n(837381),
     o = n(311907),
     d = n(201275),
     c = n(384231),
     u = n(141468),
     A = n(763754),
-    h = n(491182),
-    _ = n(860227),
+    _ = n(491182),
+    h = n(860227),
     m = n(538355),
     g = n(699352),
     p = n(715628),
@@ -30,7 +30,7 @@ let v = a.memo(function(e) {
         message: t,
         className: n,
         onContextMenu: a,
-        onClick: l,
+        onClick: r,
         hideSimpleEmbedContent: v = !0,
         channel: b,
         isGroupStart: y,
@@ -51,10 +51,10 @@ let v = a.memo(function(e) {
     }), k = (0, s.rm)(t.id), V = (0, A.Ay)(t), B = (0, o.bG)([C.A], () => t.hasFlag(N.pr7.HAS_THREAD) && C.A.getChannel(T.default.castMessageIdAsChannelId(t.id))), H = (0, d.$7)({
         guildId: b.guild_id,
         roleId: V.iconRoleId
-    }), F = (0, _.fF)(t), Y = (0, _.ZD)(t);
-    return (0, i.jsx)(h.A, {
+    }), F = (0, h.fF)(t), Y = (0, h.ZD)(t);
+    return (0, i.jsx)(_.A, {
         compact: !1,
-        className: r()(n, S.i, {
+        className: l()(n, S.i, {
             [x.M1]: (0, u.ec)(t),
             [x.XN]: D
         }),
@@ -79,7 +79,7 @@ let v = a.memo(function(e) {
             disableInteraction: D
         }),
         onContextMenu: a,
-        onClick: l,
+        onClick: r,
         hasThread: R && null != B && t.hasFlag(N.pr7.HAS_THREAD),
         hasReply: !1,
         "aria-labelledby": F,

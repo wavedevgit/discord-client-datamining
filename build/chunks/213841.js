@@ -60,8 +60,8 @@ var E = Function.prototype,
     S = x.hasOwnProperty,
     N = x.toString,
     B = RegExp("^" + j.call(S).replace(/[\\^$.*+?()[\]{}|]/g, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$"),
-    D = Object.create,
-    P = Math.max,
+    P = Object.create,
+    D = Math.max,
     I = Math.min,
     T = (n = $(Object, "defineProperty"), (o = $.name) && o.length > 2 ? n : void 0);
 
@@ -86,7 +86,7 @@ function L(e) {
             case 7:
                 return new e(r[0], r[1], r[2], r[3], r[4], r[5], r[6])
         }
-        var a = G(t = e.prototype) ? D(t) : {},
+        var a = G(t = e.prototype) ? P(t) : {},
             n = e.apply(a, r);
         return G(n) ? n : a
     }
@@ -108,12 +108,12 @@ function F(e, t, r, a, n, o, s, i, c, l) {
                 return a
             }(v, M);
         if (a && (v = function(e, t, r, a) {
-                for (var n = -1, o = e.length, s = r.length, i = -1, c = t.length, l = P(o - s, 0), u = Array(c + l), f = !a; ++i < c;) u[i] = t[i];
+                for (var n = -1, o = e.length, s = r.length, i = -1, c = t.length, l = D(o - s, 0), u = Array(c + l), f = !a; ++i < c;) u[i] = t[i];
                 for (; ++n < s;)(f || n < o) && (u[r[n]] = e[n]);
                 for (; l--;) u[i++] = e[n++];
                 return u
             }(v, a, n, d)), o && (v = function(e, t, r, a) {
-                for (var n = -1, o = e.length, s = -1, i = r.length, c = -1, l = t.length, u = P(o - i, 0), f = Array(u + l), b = !a; ++n < u;) f[n] = e[n];
+                for (var n = -1, o = e.length, s = -1, i = r.length, c = -1, l = t.length, u = D(o - i, 0), f = Array(u + l), b = !a; ++n < u;) f[n] = e[n];
                 for (var d = n; ++c < l;) f[d + c] = t[c];
                 for (; ++s < i;)(b || n < o) && (f[d + r[s]] = e[n++]);
                 return f
@@ -202,13 +202,13 @@ function W(e, t, r) {
         var c = 2 & t;
         if (!c && "function" != typeof e) throw TypeError("Expected a function");
         var l = a ? a.length : 0;
-        if (l || (t &= -97, a = n = void 0), s = void 0 === s ? s : P(H(s), 0), i = void 0 === i ? i : H(i), l -= n ? n.length : 0, 64 & t) {
+        if (l || (t &= -97, a = n = void 0), s = void 0 === s ? s : D(H(s), 0), i = void 0 === i ? i : H(i), l -= n ? n.length : 0, 64 & t) {
             var u = a,
                 f = n;
             a = n = void 0
         }
         var b = [e, t, r, a, n, u, f, o, s, i];
-        if (e = b[0], t = b[1], r = b[2], a = b[3], n = b[4], (i = b[9] = null == b[9] ? c ? 0 : e.length : P(b[9] - l, 0)) || !(24 & t) || (t &= -25), t && 1 != t) 8 == t || 16 == t ? x = function(e, t, r) {
+        if (e = b[0], t = b[1], r = b[2], a = b[3], n = b[4], (i = b[9] = null == b[9] ? c ? 0 : e.length : D(b[9] - l, 0)) || !(24 & t) || (t &= -25), t && 1 != t) 8 == t || 16 == t ? x = function(e, t, r) {
             var a = L(e);
 
             function n() {

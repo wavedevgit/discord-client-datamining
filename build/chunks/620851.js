@@ -5,9 +5,9 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     r = n(503698),
-    s = n.n(r),
-    l = n(812729),
-    o = n.n(l),
+    l = n.n(r),
+    s = n(812729),
+    o = n.n(s),
     d = n(687498),
     c = n(397927),
     u = n(259788),
@@ -24,7 +24,7 @@ function p(e) {
     let {
         locked: t,
         pinned: n
-    } = e, [r, l] = a.useState(0), [p, g] = a.useState(0), [f, A] = a.useState(0), x = a.useRef(0), [I, E] = a.useState(0), {
+    } = e, [r, s] = a.useState(0), [p, g] = a.useState(0), [f, A] = a.useState(0), x = a.useRef(0), [I, E] = a.useState(0), {
         timeToLiveMs: b,
         reappearTimeMs: v
     } = u.Ay.useState(e => ({
@@ -49,7 +49,7 @@ function p(e) {
         clearInterval(x.current)
     }), []);
     let y = () => {
-            l(Date.now()), E(e => e + 1)
+            s(Date.now()), E(e => e + 1)
         },
         T = r > 0 && p - r < 1e3,
         N = (0, c.pnh)(f > 0 && f < p && p - f < b, {
@@ -73,7 +73,7 @@ function p(e) {
             style: e,
             className: h.r2,
             children: (0, i.jsx)(_.A, {
-                className: s()(h.VC, T && h.Nd),
+                className: l()(h.VC, T && h.Nd),
                 children: (0, i.jsx)(c.DUT, {
                     onClick: y,
                     className: h.vk,

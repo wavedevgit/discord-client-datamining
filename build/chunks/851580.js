@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(554146),
-    l = n(342494),
-    r = n(932001),
+    r = n(342494),
+    l = n(932001),
     s = n(966597),
     o = n(49999),
     d = n(985018),
@@ -21,8 +21,8 @@ function A(e) {
         inInbox: A
     } = s.A.useConfig({
         location: "ForLaterCoachmarkWeb"
-    }), [h, _] = (0, r.kn)(a && t === (A ? "inbox-button" : "bookmarks-button") ? [u] : [], void 0);
-    return h !== u ? null : (0, i.jsx)(l.AM, {
+    }), [_, h] = (0, l.kn)(a && t === (A ? "inbox-button" : "bookmarks-button") ? [u] : [], void 0);
+    return _ !== u ? null : (0, i.jsx)(r.AM, {
         targetElementRef: n,
         gradientColor: "purple",
         position: "bottom",
@@ -31,12 +31,12 @@ function A(e) {
         caretConfig: {
             align: "end"
         },
-        onRequestClose: () => _(o.i.USER_DISMISS),
+        onRequestClose: () => h(o.i.USER_DISMISS),
         title: d.intl.string(d.t.qPbFK2),
         body: d.intl.string(d.t.URrJq1),
         actions: [{
             text: d.intl.string(d.t["NX+WJN"]),
-            onClick: () => _(o.i.USER_DISMISS)
+            onClick: () => h(o.i.USER_DISMISS)
         }],
         graphic: {
             type: "image",

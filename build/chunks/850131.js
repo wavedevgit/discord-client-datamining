@@ -9,8 +9,8 @@ var i = n(627968),
     s = n(23339),
     o = n(827734),
     c = n(397927),
-    d = n(843472),
-    u = n(565645),
+    u = n(843472),
+    d = n(565645),
     _ = n(763754),
     A = n(447215),
     m = n(888675),
@@ -44,7 +44,7 @@ function C(e) {
     if (n) t = (0, i.jsx)(f, {});
     else if (null != l) {
         let e = "" !== l.name ? l.name : l.displayName;
-        t = (0, i.jsx)(u.A, {
+        t = (0, i.jsx)(d.A, {
             emojiId: l.id,
             emojiName: e,
             animated: l.animated
@@ -166,20 +166,20 @@ function S(e) {
         channel: n,
         compact: a,
         disableInteraction: r = !1
-    } = e, o = t.embeds[0], u = l.useMemo(() => (0, E.A)(o), [o]), T = (0, s.EJ)(u?.questionText ?? "", I.TU), f = (0, _.Ay)(t), C = (0, A.P)({
+    } = e, o = t.embeds[0], d = l.useMemo(() => (0, E.A)(o), [o]), T = (0, s.EJ)(d?.questionText ?? "", I.TU), f = (0, _.Ay)(t), C = (0, A.P)({
         user: t.author,
         channelId: n.id,
         guildId: n.guild_id,
         messageId: t.id
     }), h = t.messageReference, S = l.useCallback(() => {
-        null != h && d.A.jumpToMessage({
+        null != h && u.A.jumpToMessage({
             channelId: h.channel_id,
             messageId: h.message_id,
             flash: !0,
             returnMessageId: t.id
         })
     }, [t.id, h]);
-    return null == u ? null : (0, i.jsxs)(i.Fragment, {
+    return null == d ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(m.A, {
             iconNode: (0, i.jsx)(c.YRe, {
                 size: "xs"
@@ -194,7 +194,7 @@ function S(e) {
             })
         }), (0, i.jsx)(p, {
             className: g.E6,
-            data: u,
+            data: d,
             onClickPollLink: r ? void 0 : S
         })]
     })

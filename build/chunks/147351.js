@@ -9,8 +9,8 @@ var i = n(627968),
     s = n(843472),
     o = n(355622),
     c = n(148355),
-    d = n(406704),
-    u = n(696451),
+    u = n(406704),
+    d = n(696451),
     _ = n(576705),
     A = n(287809),
     m = n(954571),
@@ -33,19 +33,19 @@ function f(e) {
         currentUser: t,
         channel: n,
         message: a,
-        buttonLabels: d,
-        stickers: u,
+        buttonLabels: u,
+        stickers: d,
         event: _,
         eventProperties: A
     } = e, E = l.useMemo(() => g({
-        assets: u,
-        currentUser: t,
-        message: a
-    }), [u, t, a]), I = l.useMemo(() => g({
         assets: d,
         currentUser: t,
         message: a
-    }), [d, t, a]), N = l.useCallback(async () => {
+    }), [d, t, a]), I = l.useMemo(() => g({
+        assets: u,
+        currentUser: t,
+        message: a
+    }), [u, t, a]), N = l.useCallback(async () => {
         let {
             valid: e
         } = await (0, T.i)({
@@ -111,12 +111,12 @@ function C(e) {
             message: n,
             currentUser: i
         } = e;
-        return (0, a.bG)([_.A, u.Ay], () => {
+        return (0, a.bG)([_.A, d.Ay], () => {
             let e = t.guild_id;
             if (null == i || null == e) return !1;
-            let l = (0, d.UJ)(t),
+            let l = (0, u.UJ)(t),
                 a = _.A.can(I.xBc.SEND_MESSAGES, t),
-                r = u.Ay.getMember(e, i.id)?.isPending,
+                r = d.Ay.getMember(e, i.id)?.isPending,
                 s = n.author.bot;
             return a && !l && !r && !s
         })

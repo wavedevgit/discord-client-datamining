@@ -1,33 +1,33 @@
 /** chunk id: 53977 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(397927),
+    a = n(64700),
+    l = n(397927),
     s = n(566605),
     r = n(379848),
     o = n(183555),
     c = n(357541),
     d = n(814221),
     u = n(266713),
-    m = n(985018),
-    g = n(324679);
+    g = n(985018),
+    _ = n(324679);
 
-function f() {
+function m() {
     let {
         trackUserProfileAction: e,
         trackUserProfileEditAction: t
-    } = (0, o.NJ)(), f = l.useRef(!1), {
-        suggestions: x,
-        currentUser: p,
-        isLoading: _
+    } = (0, o.NJ)(), m = a.useRef(!1), {
+        suggestions: f,
+        currentUser: x,
+        isLoading: p
     } = (0, s.A)({
         location: "UserProfileModalV2ApplicationWidgetsEmptyState"
-    }), I = x?.[0], h = l.useCallback(() => {
+    }), I = f?.[0], A = a.useCallback(() => {
         t({
             action: "PRESS_ADD_WIDGET"
-        }), (0, a.mMO)(async () => {
+        }), (0, l.mMO)(async () => {
             let {
                 default: e
             } = await n.e("87591").then(n.bind(n, 333114));
@@ -39,27 +39,27 @@ function f() {
             stackingBehavior: "stack"
         })
     }, [t]);
-    if (l.useEffect(() => {
-            _ || null == I || f.current || (e({
+    if (a.useEffect(() => {
+            p || null == I || m.current || (e({
                 action: "VIEW_APPLICATION_WIDGETS_EMPTY_STATE",
                 applicationId: I.application.id
-            }), f.current = !0)
-        }, [_, e, I]), _) return (0, i.jsx)("div", {
-        className: g.Lq,
-        children: (0, i.jsx)(a.y$y, {})
+            }), m.current = !0)
+        }, [p, e, I]), p) return (0, i.jsx)("div", {
+        className: _.Lq,
+        children: (0, i.jsx)(l.y$y, {})
     });
     if (null == I) return (0, i.jsx)(u.A, {});
-    let A = (0, i.jsxs)(a.BJc, {
+    let h = (0, i.jsxs)(l.BJc, {
         gap: 4,
-        className: g.wx,
-        children: [(0, i.jsx)(a.Heading, {
+        className: _.wx,
+        children: [(0, i.jsx)(l.Heading, {
             variant: "heading-md/medium",
             color: "text-strong",
-            children: m.intl.string(m.t["oqalC+"])
-        }), (0, i.jsx)(a.Text, {
+            children: g.intl.string(g.t["oqalC+"])
+        }), (0, i.jsx)(l.Text, {
             variant: "text-sm/normal",
             color: "text-subtle",
-            children: m.intl.format(m.t.YnNFWa, {
+            children: g.intl.format(g.t.YnNFWa, {
                 applicationName: I.application.name
             })
         })]
@@ -72,30 +72,30 @@ function f() {
                 visibleContent: t,
                 markAsDismissed: n
             } = e;
-            return t === I.dismissibleContent ? (0, i.jsxs)(a.BJc, {
+            return t === I.dismissibleContent ? (0, i.jsxs)(l.BJc, {
                 gap: 16,
                 align: "center",
-                children: [(0, i.jsx)(a.hKd, {
+                children: [(0, i.jsx)(l.hKd, {
                     size: 32
-                }), A, (0, i.jsx)("div", {
-                    className: g.Zj,
+                }), h, (0, i.jsx)("div", {
+                    className: _.Zj,
                     children: (0, i.jsx)(c.A, {
-                        user: p,
+                        user: x,
                         application: I.application,
                         onDismiss: n
                     })
                 }), (0, i.jsx)(d.A, {})]
-            }) : (0, i.jsxs)(a.BJc, {
+            }) : (0, i.jsxs)(l.BJc, {
                 gap: 32,
                 align: "center",
-                children: [(0, i.jsx)(a.hKd, {
+                children: [(0, i.jsx)(l.hKd, {
                     size: 128
-                }), A, (0, i.jsx)(a.Button, {
-                    icon: a.j96,
-                    text: m.intl.string(m.t["lBG2s/"]),
+                }), h, (0, i.jsx)(l.Button, {
+                    icon: l.j96,
+                    text: g.intl.string(g.t["lBG2s/"]),
                     size: "md",
                     variant: "secondary",
-                    onClick: h
+                    onClick: A
                 })]
             })
         }

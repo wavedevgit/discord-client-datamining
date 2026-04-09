@@ -20,7 +20,7 @@ function A(e) {
         channel: t
     } = e, n = (0, o.kt)(t), {
         firstMessage: A
-    } = (0, l.cf)([c.A], () => c.A.getMessage(t.id)), g = new Set((0, o.zt)(t, n)), p = (0, r.gU)(t) ?? s.oyn, f = (0, a.Ay)(t);
+    } = (0, l.cf)([c.A], () => c.A.getMessage(t.id)), g = new Set((0, o.zt)(t, n)), p = (0, r.gU)(t) ?? s.oyn, _ = (0, a.Ay)(t);
     return (0, i.jsxs)(u.Ay, {
         channelId: t.id,
         className: m.kL,
@@ -32,7 +32,7 @@ function A(e) {
             })
         }), (0, i.jsx)(u.cr, {
             className: m.wx,
-            children: f
+            children: _
         }), null == A && (0, i.jsx)(s.Text, {
             variant: "text-md/normal",
             color: "text-default",

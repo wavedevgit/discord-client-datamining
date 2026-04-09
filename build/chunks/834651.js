@@ -21,10 +21,10 @@ function p(e) {
     let {
         guild: t,
         disabledUntil: n
-    } = e, [p, f] = (0, u.n)(t.id), _ = (0, l.bG)([c.Ay, o.default], () => c.Ay.getMember(t.id, o.default.getId()), [t.id]);
-    return (0, d.X)(_), (0, i.jsxs)("div", {
+    } = e, [p, _] = (0, u.n)(t.id), f = (0, l.bG)([c.Ay, o.default], () => c.Ay.getMember(t.id, o.default.getId()), [t.id]);
+    return (0, d.X)(f), (0, i.jsxs)("div", {
         children: [p ? (0, i.jsx)(h.A, {
-            onClose: () => f(t.id),
+            onClose: () => _(t.id),
             guildName: t.name
         }) : null, (0, i.jsx)(r._, {
             bannerIcon: (0, i.jsx)(s.gQi, {

@@ -1,11 +1,11 @@
 /** chunk id: 779735 params = (module,exports,require) **/
 n.d(t, {
-    default: () => g
+    default: () => x
 }), n(321073);
 var l = n(627968),
     a = n(64700),
-    i = n(731738),
-    r = n(397927),
+    r = n(731738),
+    i = n(397927),
     s = n(964486),
     d = n(58149),
     o = n(915089),
@@ -14,13 +14,13 @@ var l = n(627968),
     _ = n(17372),
     m = n(369053),
     p = n(598131),
-    h = n(652215),
-    x = n(150329);
-let g = e => {
+    g = n(652215),
+    h = n(150329);
+let x = e => {
     let {
         reportType: t,
         menu: n,
-        modalProps: g,
+        modalProps: x,
         onSubmit: A,
         onNavigate: v,
         emailToken: b,
@@ -29,8 +29,8 @@ let g = e => {
         nodes: S,
         root_node_id: E,
         success_node_id: I,
-        fail_node_id: N
-    } = n, [C, j] = a.useState(E), [y, k] = a.useState(void 0), [R, D] = a.useState(void 0), [M, O] = a.useState([]), [G, w] = a.useState(void 0), [L, U] = a.useState(void 0), [P, B] = a.useState(void 0);
+        fail_node_id: C
+    } = n, [N, j] = a.useState(E), [y, k] = a.useState(void 0), [R, D] = a.useState(void 0), [M, O] = a.useState([]), [w, G] = a.useState(void 0), [L, U] = a.useState(void 0), [P, B] = a.useState(void 0);
     (0, s.Ay)(() => {
         (0, u.VE)()
     });
@@ -39,7 +39,7 @@ let g = e => {
                 destination: n
             } = e, [, l] = n, a = S[l];
             if (void 0 === a) return void c.A.increment({
-                name: i.K.IN_APP_REPORT_NAVIGATE_TO_NONEXISTENT_NODE
+                name: r.K.IN_APP_REPORT_NAVIGATE_TO_NONEXISTENT_NODE
             });
             if (a.elements.some(e => "skip" === e.type) && a.button?.type === "next") return H({
                 ...e,
@@ -47,11 +47,11 @@ let g = e => {
             });
             if (O([...M, e]), null != a.key && v?.(a.key), k(void 0), D(void 0), t.name === _.t0.MESSAGE || t.name === _.t0.FIRST_DM) {
                 let e = t.record.id;
-                d.Ay.trackWithMetadata(h.HAw.IAR_NAVIGATE, {
+                d.Ay.trackWithMetadata(g.HAw.IAR_NAVIGATE, {
                     message_id: e,
                     content_type: t.name,
                     report_sub_type: a.report_type,
-                    current_node: S[C].id,
+                    current_node: S[N].id,
                     next_node: a.id
                 })
             }
@@ -60,7 +60,7 @@ let g = e => {
         F = async e => {
             let l = f ? await (0, m.zC)(n, t, [...M, e]) : await (0, m.bo)(n, t, [...M, e], b),
                 a = l?.body?.report_id;
-            null != a && w(a), U(S[e.nodeRef].report_type), A?.(a)
+            null != a && G(a), U(S[e.nodeRef].report_type), A?.(a)
         }, V = () => {
             if (M.length < 1) return;
             let e = [...M],
@@ -68,11 +68,11 @@ let g = e => {
                 l = n?.nodeRef ?? E;
             if (t.name === _.t0.MESSAGE || t.name === _.t0.FIRST_DM) {
                 let e = t.record.id;
-                d.Ay.trackWithMetadata(h.HAw.IAR_NAVIGATE, {
+                d.Ay.trackWithMetadata(g.HAw.IAR_NAVIGATE, {
                     message_id: e,
                     content_type: t.name,
                     report_sub_type: S[l].report_type,
-                    current_node: S[C].id,
+                    current_node: S[N].id,
                     next_node: S[l].id
                 })
             }
@@ -103,7 +103,7 @@ let g = e => {
             t = [];
         for (let n in S) {
             let l = S[n];
-            if (l.id !== I && l.id !== N && l.id !== E) {
+            if (l.id !== I && l.id !== C && l.id !== E) {
                 if (l.key.endsWith("_SUBMIT") || l.button?.type === "submit") {
                     t.push(l);
                     continue
@@ -114,38 +114,38 @@ let g = e => {
                 }
             }
         }
-        return [S[E], ...e, ...t, S[I], S[N]]
-    }, [S, E, N, I]);
-    return (0, l.jsx)(r.EOs, {
+        return [S[E], ...e, ...t, S[I], S[C]]
+    }, [S, E, C, I]);
+    return (0, l.jsx)(i.EOs, {
         "data-migration-pending": !0,
-        transitionState: g.transitionState,
+        transitionState: x.transitionState,
         "aria-labelledby": T,
         parentComponent: "InAppReportModal",
-        children: (0, l.jsx)(r.tN_, {
+        children: (0, l.jsx)(i.tN_, {
             width: 440,
-            activeSlide: C,
+            activeSlide: N,
             centered: !1,
-            children: z.map(e => (0, l.jsx)(r.q7S, {
+            children: z.map(e => (0, l.jsx)(i.q7S, {
                 id: e.id,
                 children: (0, l.jsx)("div", {
-                    className: x.B,
+                    className: h.B,
                     children: (0, l.jsx)(p.A, {
                         node: e,
                         reportType: t,
                         reportSubType: L,
                         history: M,
-                        onModalClose: g.onClose,
+                        onModalClose: x.onClose,
                         onSelectChild: H,
                         onNavigateBack: V,
                         onNavigateToNode: W,
                         multiSelect: y,
                         textInput: R,
                         successNodeId: I,
-                        failNodeId: N,
+                        failNodeId: C,
                         onSubmit: F,
-                        reportId: G,
+                        reportId: w,
                         nodeMap: S,
-                        initialErrorMessage: e.id === C ? P : void 0
+                        initialErrorMessage: e.id === N ? P : void 0
                     })
                 })
             }, e.id))

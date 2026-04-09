@@ -9,8 +9,8 @@ var i = n(627968),
     s = n(607399),
     o = n(465323),
     c = n(311907),
-    d = n(827734),
-    u = n(397927),
+    u = n(827734),
+    d = n(397927),
     _ = n(863574),
     A = n(793574),
     m = n(688810),
@@ -33,8 +33,8 @@ var i = n(627968),
     U = n(788868),
     P = n(652215),
     v = n(985018),
-    j = n(922733),
-    y = n(954457);
+    y = n(922733),
+    j = n(954457);
 class k extends l.Component {
     trialOffer;
     referralsSent;
@@ -83,9 +83,9 @@ class k extends l.Component {
         let e = this.currentUser.id !== this.trialOffer.user_id || (0, h.TW)(this.currentUser) || !this.currentUser.verified || (0, L.P)(this.trialOffer),
             t = this.renderExpirationDate();
         return (0, i.jsxs)("div", {
-            className: j.UD,
+            className: y.UD,
             children: [(0, i.jsx)("div", {
-                children: (0, i.jsx)(u.Button, {
+                children: (0, i.jsx)(d.Button, {
                     variant: "primary",
                     disabled: e,
                     size: "sm",
@@ -101,7 +101,7 @@ class k extends l.Component {
                     }
                 })
             }), (0, i.jsx)("div", {
-                className: j.yu,
+                className: y.yu,
                 children: t
             })]
         })
@@ -122,7 +122,7 @@ class k extends l.Component {
     }
     renderMedia() {
         return (0, i.jsx)("div", {
-            className: j.Qj
+            className: y.Qj
         })
     }
     render() {
@@ -191,13 +191,13 @@ class k extends l.Component {
                     })(),
                     size: "md",
                     variantOverride: "expressive"
-                }), (0, i.jsx)(u.Text, {
+                }), (0, i.jsx)(d.Text, {
                     variant: "text-md/medium",
                     color: "text-subtle",
                     children: this.renderExpirationDate()
                 })]
             }),
-            l = (0, i.jsx)(u.Button, {
+            l = (0, i.jsx)(d.Button, {
                 variant: "primary",
                 disabled: !1,
                 size: "md",
@@ -208,7 +208,7 @@ class k extends l.Component {
                     } = e;
                     g.default.track(P.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                         location_stack: t
-                    }), (0, u.mMO)(async () => {
+                    }), (0, d.mMO)(async () => {
                         let {
                             default: e
                         } = await Promise.resolve().then(n.bind(n, 303682));
@@ -224,45 +224,45 @@ class k extends l.Component {
                 text: v.intl.string(v.t.Lm2nFc)
             }),
             a = this.isSender ? l : t,
-            r = (0, i.jsx)(u._V3, {
-                src: y.A,
+            r = (0, i.jsx)(d._V3, {
+                src: j.A,
                 height: 84,
                 width: 144,
-                className: j.ms
+                className: y.ms
             }),
             {
                 headerText: s,
                 bodyText: c
             } = e();
         return (0, i.jsxs)(E.A, {
-            className: j.SB,
-            iconNode: (0, i.jsx)(u.tvc, {
+            className: y.SB,
+            iconNode: (0, i.jsx)(d.tvc, {
                 size: "md",
-                color: d.A.colors.ICON_STRONG
+                color: u.A.colors.ICON_STRONG
             }),
-            iconContainerClassName: j.J5,
+            iconContainerClassName: y.J5,
             compact: this.compact,
-            children: [(0, i.jsx)(u.Text, {
+            children: [(0, i.jsx)(d.Text, {
                 variant: "text-md/medium",
                 color: "text-strong",
                 children: this.getSystemMessageHeader()
             }), (0, i.jsxs)("div", {
-                className: j.i2,
+                className: y.i2,
                 children: [r, (0, i.jsxs)("div", {
-                    className: j.KX,
+                    className: y.KX,
                     children: [(0, i.jsxs)("div", {
-                        className: j.xJ,
-                        children: [(0, i.jsx)(u.Heading, {
+                        className: y.xJ,
+                        children: [(0, i.jsx)(d.Heading, {
                             variant: "heading-md/semibold",
                             color: "text-strong",
                             children: s
-                        }), (0, i.jsx)(u.Text, {
+                        }), (0, i.jsx)(d.Text, {
                             variant: "text-md/medium",
                             color: "text-subtle",
                             children: c
                         })]
                     }), (0, i.jsx)("div", {
-                        className: j.ox,
+                        className: y.ox,
                         children: a
                     })]
                 })]
@@ -284,23 +284,23 @@ function b(e) {
         trialOffer: n ? S.A.getRelevantUserTrialOffer(t) : null,
         isResolving: !!n && S.A.isResolving(t),
         referralsSent: S.A.getRecipientStatus()
-    }), [n, t]), d = I.default.getCurrentUser(), u = (0, c.bG)([I.default], () => null != a && (0, h.TW)(void 0 !== d && a.user_id === d.id ? d : I.default.getUser(a.user_id))), E = (0, c.bG)([N.A], () => u ? N.A.getPremiumTypeSubscription()?.trialEndsAt : null), {
+    }), [n, t]), u = I.default.getCurrentUser(), d = (0, c.bG)([I.default], () => null != a && (0, h.TW)(void 0 !== u && a.user_id === u.id ? u : I.default.getUser(a.user_id))), E = (0, c.bG)([N.A], () => d ? N.A.getPremiumTypeSubscription()?.trialEndsAt : null), {
         analyticsLocations: T
     } = (0, m.Ay)(A.A.SHARE_NITRO_EMBED);
     return r ? (0, i.jsx)(_.Wb, {
         isHorizontal: !s.Fr
-    }) : n && null != a && void 0 !== d ? (0, i.jsx)(k, {
+    }) : n && null != a && void 0 !== u ? (0, i.jsx)(k, {
         trialOffer: a,
         referralsSent: o,
-        currentUser: d,
-        recipientHasNitro: u,
+        currentUser: u,
+        recipientHasNitro: d,
         trialEndsAt: E,
         analyticsLocations: T,
         compact: l
     }) : (0, i.jsx)("div", {
-        className: j.TU,
+        className: y.TU,
         children: (0, i.jsx)("div", {
-            className: j.Gq
+            className: y.Gq
         })
     })
 }

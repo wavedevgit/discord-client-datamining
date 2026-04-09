@@ -10,8 +10,8 @@ var i = n(627968),
     s = n(775602),
     o = n(820883),
     c = n(837921),
-    d = n(985018),
-    u = n(852697);
+    u = n(985018),
+    d = n(852697);
 let _ = c.Ay.getEnableHardwareAcceleration() ? r.JsQ : r.euF;
 
 function A() {
@@ -36,11 +36,11 @@ function m(e) {
         src: t
     } = e;
     return (0, i.jsx)("div", {
-        className: u.H,
+        className: d.H,
         children: (0, i.jsx)(_, {
             src: t,
             size: r._3J.SIZE_40,
-            "aria-label": d.intl.string(d.t.hG1StD)
+            "aria-label": u.intl.string(u.t.hG1StD)
         })
     })
 }

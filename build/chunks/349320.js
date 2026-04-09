@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(503698),
+    l = n.n(r),
     s = n(158954),
     o = n(51264),
     d = n(820284),
     c = n(765671),
     u = n(793574),
     A = n(688810),
-    h = n(757780),
-    _ = n(748319),
+    _ = n(757780),
+    h = n(748319),
     m = n(355205),
     g = n(652234),
     p = n(489683),
@@ -50,10 +50,10 @@ let S = a.memo(function() {
     }, []);
     let {
         isSorting: t
-    } = (0, h.A)();
+    } = (0, _.A)();
     return (0, i.jsx)("section", {
         ref: e,
-        className: r()(T.C3, {
+        className: l()(T.C3, {
             [T.aB]: t
         }),
         "aria-label": C.intl.string(C.t.vTl6Lk),
@@ -69,7 +69,7 @@ let S = a.memo(function() {
                 children: (0, i.jsx)(p.A, {})
             }), (0, i.jsx)(d.A, {
                 section: f.JJy.ACCOUNT_PANEL,
-                children: (0, i.jsx)(_.A, {})
+                children: (0, i.jsx)(h.A, {})
             })]
         })
     })

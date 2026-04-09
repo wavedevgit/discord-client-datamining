@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(976860),
     _ = n(734057),
     m = n(71393),
-    p = n(576705),
-    g = n(994500),
+    g = n(576705),
+    p = n(994500),
     f = n(287809),
     x = n(557534),
     E = n(166444),
@@ -70,7 +70,7 @@ class S extends x.Ay {
             className: a()(this.getClassName(), {
                 [N.r9]: this.isDisabled()
             }),
-            "data-dnd-name": (0, h.m1)(e, f.default, g.A),
+            "data-dnd-name": (0, h.m1)(e, f.default, p.A),
             children: (0, i.jsxs)(E.Ay, {
                 className: N.Ki,
                 channel: e,
@@ -95,11 +95,11 @@ let b = (0, c.a)(S),
             channel: t,
             guild: n,
             disableSorting: l
-        } = e, s = (0, r.cf)([_.A, p.A], () => {
+        } = e, s = (0, r.cf)([_.A, g.A], () => {
             let e = _.A.getChannel(t.parent_id);
             return {
-                canManageChannel: p.A.can(I.xBc.MANAGE_CHANNELS, t),
-                canReorderChannel: !0 !== l && null != e ? p.A.can(I.xBc.MANAGE_CHANNELS, e) : p.A.can(I.xBc.MANAGE_CHANNELS, n)
+                canManageChannel: g.A.can(I.xBc.MANAGE_CHANNELS, t),
+                canReorderChannel: !0 !== l && null != e ? g.A.can(I.xBc.MANAGE_CHANNELS, e) : g.A.can(I.xBc.MANAGE_CHANNELS, n)
             }
         });
         return (0, i.jsx)(b, {

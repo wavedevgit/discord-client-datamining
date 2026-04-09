@@ -2,66 +2,66 @@
 n.d(t, {
     A: () => u
 });
-var i = n(627968);
+var l = n(627968);
 n(64700);
-var a = n(503698),
-    l = n.n(a),
-    s = n(311907),
-    r = n(397927),
+var i = n(503698),
+    a = n.n(i),
+    r = n(311907),
+    s = n(397927),
     o = n(961350),
-    d = n(296227),
-    c = n(180415);
+    c = n(296227),
+    d = n(180415);
 
 function u(e) {
     let {
         userId: t,
         headingId: n,
-        widget: a,
-        disableInteraction: s = !1,
+        widget: i,
+        disableInteraction: r = !1,
         title: o,
-        subtitle: d,
+        subtitle: c,
         actionButtons: u = [],
-        className: m
+        className: h
     } = e;
-    return (0, i.jsxs)("div", {
-        className: l()(c.U1, m),
-        children: [(0, i.jsxs)("div", {
-            className: c.DD,
-            children: [(0, i.jsx)(r.Heading, {
+    return (0, l.jsxs)("div", {
+        className: a()(d.U1, h),
+        children: [(0, l.jsxs)("div", {
+            className: d.DD,
+            children: [(0, l.jsx)(s.Heading, {
                 variant: "heading-sm/medium",
                 color: "text-default",
                 id: n,
                 children: o
-            }), null != d && (0, i.jsx)(r.Text, {
+            }), null != c && (0, l.jsx)(s.Text, {
                 variant: "text-xs/normal",
                 color: "text-subtle",
-                children: d
+                children: c
             })]
-        }), (0, i.jsx)(g, {
-            widget: a,
+        }), (0, l.jsx)(m, {
+            widget: i,
             actionButtons: u,
-            disabledInteraction: s,
+            disabledInteraction: r,
             userId: t
         })]
     })
 }
 
-function g(e) {
+function m(e) {
     let {
         widget: t,
         actionButtons: n,
-        disabledInteraction: a,
-        userId: l
-    } = e, r = (0, s.bG)([o.default], () => o.default.getId());
-    return a ? null : null != n && n.length > 0 ? (0, i.jsx)("div", {
-        className: c.o1,
+        disabledInteraction: i,
+        userId: a
+    } = e, s = (0, r.bG)([o.default], () => o.default.getId());
+    return i ? null : null != n && n.length > 0 ? (0, l.jsx)("div", {
+        className: d.o1,
         children: n
-    }) : r !== l ? (0, i.jsx)("div", {
-        className: c.o1,
-        children: (0, i.jsx)(d.A, {
+    }) : s !== a ? (0, l.jsx)("div", {
+        className: d.o1,
+        children: (0, l.jsx)(c.A, {
             widget: t,
-            userId: l,
-            className: c.AQ
+            userId: a,
+            className: d.AQ
         })
     }) : null
 }

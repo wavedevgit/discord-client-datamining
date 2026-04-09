@@ -1,19 +1,19 @@
 /** chunk id: 939846 params = (module,exports,require) **/
 n.d(t, {
-    A: () => el
+    A: () => er
 });
 var i = n(627968),
     a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(503698),
+    l = n.n(r),
     s = n(837381),
     o = n(731738),
     d = n(311907),
     c = n(554146),
     u = n(342494),
     A = n(397927),
-    h = n(944791),
-    _ = n(456412),
+    _ = n(944791),
+    h = n(456412),
     m = n(964486),
     g = n(260762),
     p = n(812771),
@@ -49,8 +49,8 @@ var i = n(627968),
     q = n(660564),
     z = n(4270),
     $ = n(687599),
-    X = n(652215),
-    Q = n(49999),
+    Q = n(652215),
+    X = n(49999),
     Z = n(985018),
     J = n(464726),
     ee = n(513544);
@@ -59,7 +59,7 @@ function et() {
     let e = a.useRef(null),
         t = (0, F.W)(),
         n = (0, Y.A)(),
-        l = (0, V.k)(),
+        r = (0, V.k)(),
         d = (0, G.w)(),
         c = a.useCallback(() => {
             (0, A.showToast)((0, A.createToast)(Z.intl.string(Z.t["EDYbS+"]), A.ToastType.FAILURE))
@@ -69,9 +69,9 @@ function et() {
         } = (0, B.t)({
             onError: c
         }),
-        h = (0, g.A)("message-requests-list"),
+        _ = (0, g.A)("message-requests-list"),
         {
-            channelId: _
+            channelId: h
         } = (0, H.N)(),
         m = a.useCallback(() => {
             u(n.map(e => e.channel.id))
@@ -82,15 +82,15 @@ function et() {
             } = e, a = n[t], s = n[t + 1]?.channel?.id, o = a.channel.id;
             return (0, i.jsx)(q.A, {
                 index: t,
-                className: r()({
-                    [J.wH]: null != _ && _ === o,
-                    [J.wZ]: null != _ && _ === s
+                className: l()({
+                    [J.wH]: null != h && h === o,
+                    [J.wZ]: null != h && h === s
                 }),
                 channel: a.channel,
                 user: a.user,
-                hasSingleMessageRequest: l
+                hasSingleMessageRequest: r
             }, o)
-        }, [l, n, _]),
+        }, [r, n, h]),
         E = a.useCallback(() => (0, i.jsxs)(I.A, {
             className: J.Gf,
             children: [t > 0 ? Z.intl.formatToPlainString(Z.t.rA4iWY, {
@@ -115,17 +115,17 @@ function et() {
     }), 0 === n.length) ? (0, i.jsx)(K.A, {
         section: $.zz.REQUESTS
     }) : (0, i.jsx)(s.hD, {
-        navigator: h,
+        navigator: _,
         children: (0, i.jsx)(s.PR, {
             children: t => {
                 let {
                     ref: a,
-                    role: l,
-                    ...r
+                    role: r,
+                    ...l
                 } = t;
                 return (0, i.jsx)(A.B8B, {
                     className: J.p_,
-                    innerRole: l,
+                    innerRole: r,
                     innerAriaLabel: Z.intl.string(Z.t.e7GWjQ),
                     ref: t => {
                         e.current = t, a.current = t?.getScrollerNode() ?? null
@@ -139,7 +139,7 @@ function et() {
                     sections: [n.length],
                     chunkSize: 30,
                     fade: !0,
-                    ...r
+                    ...l
                 }, "message-requests-list")
             }
         })
@@ -150,15 +150,15 @@ function en(e) {
     let {
         pageWidth: t,
         onSidebarResize: n
-    } = e, a = (0, d.bG)([P.Ay], () => P.Ay.getSidebarState(P.fe)), l = (0, d.bG)([D.A], () => D.A.getChannel(a?.channelId));
-    if (null == a || a.type !== b.PE.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
-    let r = t - X.ItT;
+    } = e, a = (0, d.bG)([P.Ay], () => P.Ay.getSidebarState(P.fe)), r = (0, d.bG)([D.A], () => D.A.getChannel(a?.channelId));
+    if (null == a || a.type !== b.PE.VIEW_MESSAGE_REQUEST || null == r || !r.isPrivate()) return null;
+    let l = t - Q.ItT;
     return (0, i.jsx)(p.A, {
         sidebarType: p.X.MessageRequestSidebar,
-        maxWidth: r,
+        maxWidth: l,
         onWidthChange: n,
         children: (0, i.jsx)(E.A, {
-            channel: l,
+            channel: r,
             baseChannelId: P.fe
         })
     })
@@ -172,38 +172,38 @@ let ei = e => {
         children: n => {
             let {
                 visibleContent: a,
-                markAsDismissed: l
-            } = n, r = {
+                markAsDismissed: r
+            } = n, l = {
                 position: "bottom",
                 caretConfig: {
                     position: "top",
                     align: "center"
                 },
                 shouldShow: !0,
-                onRequestClose: () => l(Q.i.USER_DISMISS),
+                onRequestClose: () => r(X.i.USER_DISMISS),
                 targetElementRef: e.targetElementRef
             };
             return a === c.M.MESSAGE_REQUEST_SETTINGS_COACH_MARK ? (0, i.jsxs)(i.Fragment, {
                 children: [e.children, t ? (0, i.jsx)(u.AM, {
-                    ...r,
+                    ...l,
                     title: Z.intl.string(Z.t.hRT8tc),
                     body: Z.intl.string(Z.t.apPgJG),
                     actions: [{
                         text: Z.intl.string(Z.t.LNoAQW),
-                        onClick: () => l(Q.i.TAKE_ACTION)
+                        onClick: () => r(X.i.TAKE_ACTION)
                     }]
                 }) : (0, i.jsx)(u.AM, {
-                    ...r,
+                    ...l,
                     title: Z.intl.string(Z.t.hRT8tc),
                     body: Z.intl.string(Z.t["8JWods"]),
                     actions: [{
                         text: Z.intl.string(Z.t.JN6EOJ),
                         onClick: e => {
-                            e.stopPropagation(), (0, R.openUserSettings)(L.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING), l(Q.i.TAKE_ACTION)
+                            e.stopPropagation(), (0, R.openUserSettings)(L.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING), r(X.i.TAKE_ACTION)
                         }
                     }, {
                         text: Z.intl.string(Z.t.LNoAQW),
-                        onClick: () => l(Q.i.USER_DISMISS),
+                        onClick: () => r(X.i.USER_DISMISS),
                         variant: "secondary"
                     }]
                 })]
@@ -218,26 +218,26 @@ function ea(e) {
     } = e;
     return t === $.zz.SPAM ? (0, i.jsx)(z.A, {}) : (0, i.jsx)(et, {})
 }
-let el = (0, _.A)(function(e) {
+let er = (0, h.A)(function(e) {
     let {
         width: t
     } = e, n = (0, F.W)();
     (0, m.Ay)(() => {
-        h.I(X.BVt.MESSAGE_REQUESTS), (0, y.d)("message-requests"), M.default.track(X.HAw.MESSAGE_REQUESTS_VIEWED, {
+        _.I(Q.BVt.MESSAGE_REQUESTS), (0, y.d)("message-requests"), M.default.track(Q.HAw.MESSAGE_REQUESTS_VIEWED, {
             num_message_requests: n
         }), S.A.increment({
             name: o.K.MESSAGE_REQUEST_VIEW
         })
     });
-    let l = (0, d.bG)([O.A], () => O.A.theme),
+    let r = (0, d.bG)([O.A], () => O.A.theme),
         s = (0, W.I)(),
         [c, u] = a.useState(!1),
-        _ = (0, d.bG)([P.Ay], () => {
+        h = (0, d.bG)([P.Ay], () => {
             let e = P.Ay.getSidebarState(P.fe);
             return null != e && e.type === b.PE.VIEW_MESSAGE_REQUEST ? e : null
         }),
-        g = _?.channelId,
-        p = null != _,
+        g = h?.channelId,
+        p = null != h,
         E = (0, U.c)(g),
         I = (0, w.A)(g),
         C = a.useRef(null);
@@ -251,12 +251,12 @@ let el = (0, _.A)(function(e) {
         location: Z.intl.string(Z.t.e7GWjQ)
     }), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: r()(ee.TE, J.kL, {
+            className: l()(ee.TE, J.kL, {
                 [ee.js]: p,
                 [ee.jl]: p && c
             }),
             children: [(0, i.jsx)(A.NPJ, {
-                theme: l,
+                theme: r,
                 children: e => (0, i.jsxs)(N.A, {
                     className: e,
                     toolbar: !0,

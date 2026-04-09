@@ -1,6 +1,6 @@
 /** chunk id: 755439 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
 var i = n(311907),
     l = n(73153),
@@ -14,7 +14,7 @@ class c extends i.Ay.Store {
         return r
     }
 }
-let d = new c(l.h, {
+let u = new c(l.h, {
     DISPATCH_APPLICATION_LAUNCH_SETUP_START: function() {
         null != r && null != r.code && s.includes(r.code) && (r = null)
     },

@@ -9,8 +9,8 @@ var i = n(735438),
     s = n(73153),
     o = n(339048),
     c = n(830382),
-    d = n(627363),
-    u = n(587895),
+    u = n(627363),
+    d = n(587895),
     _ = n(15285),
     A = n(287809),
     m = n(469778),
@@ -29,9 +29,9 @@ function C() {
         }
         of l().values(g)) {
         if (f.includes(t)) continue;
-        let i = u.A.getApplication(n);
+        let i = d.A.getApplication(n);
         if (null == i) {
-            u.A.isFetchingApplication(n) || u.A.didFetchingApplicationFail(n) || d.Ay.fetchApplication(n);
+            d.A.isFetchingApplication(n) || d.A.didFetchingApplicationFail(n) || u.Ay.fetchApplication(n);
             continue
         }
         let l = E.A.get(t);
@@ -49,7 +49,7 @@ function C() {
 class h extends a.Ay.Store {
     static displayName = "DetectedOffPlatformPremiumPerksStore";
     initialize() {
-        this.waitFor(u.A, m.A, _.Ay, E.A, A.default), f = r.w.get(I) ?? f
+        this.waitFor(d.A, m.A, _.Ay, E.A, A.default), f = r.w.get(I) ?? f
     }
     getDetectedOffPlatformPremiumPerks() {
         return l().values(N)

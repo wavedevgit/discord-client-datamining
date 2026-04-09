@@ -4,16 +4,16 @@ n.d(t, {
 }), n(323874), n(14289), n(35956);
 var i = n(627968),
     a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(503698),
+    l = n.n(r),
     s = n(110259),
     o = n(877624),
     d = n(311907),
     c = n(554146),
     u = n(732955),
     A = n(397927),
-    h = n(775602),
-    _ = n(139286),
+    _ = n(775602),
+    h = n(139286),
     m = n(871751),
     g = n(259407),
     p = n(915089),
@@ -34,7 +34,7 @@ let y = [],
             className: n
         } = e;
         return (0, i.jsx)(A.LpS, {
-            className: r()(b.Tc, n),
+            className: l()(b.Tc, n),
             text: t
         })
     },
@@ -43,24 +43,24 @@ let y = [],
             header: t,
             subHeader: n,
             imageSrc: a,
-            tagText: l,
+            tagText: r,
             wideStyle: s
         } = e;
         return (0, i.jsxs)("div", {
-            className: r()(b.Vr, {
+            className: l()(b.Vr, {
                 [b.tF]: s
             }),
-            children: [null != l ? (0, i.jsx)(O, {
-                tagText: l,
+            children: [null != r ? (0, i.jsx)(O, {
+                tagText: r,
                 className: b.bX
             }) : null, (0, i.jsx)("img", {
                 alt: "",
-                className: r()(b._n, {
+                className: l()(b._n, {
                     [b.tF]: s
                 }),
                 src: a
             }), (0, i.jsxs)("div", {
-                className: r()(b.Zz, {
+                className: l()(b.Zz, {
                     [b.tF]: s
                 }),
                 children: [(0, i.jsx)(A.Heading, {
@@ -80,7 +80,7 @@ function R(e) {
     let {
         componentId: t,
         promotionId: n,
-        className: l,
+        className: r,
         renderModalProps: O,
         heroArt: R,
         heroArtClassName: P,
@@ -96,16 +96,16 @@ function R(e) {
     } = e, {
         onClose: H,
         transitionState: F
-    } = O, Y = (0, p.GV)(), W = G.length % 2 == 0, K = (0, d.bG)([h.A], () => h.A.useReducedMotion), [q, z] = a.useState(Date.now()), [$, X] = a.useState(0), [Q, Z] = a.useState(0), [J, ee] = a.useState(!1), [et, en] = a.useState(!0), ei = a.useRef(q), ea = a.useRef($), el = a.useRef(Q), er = a.useRef(J), es = a.useRef(et), [eo, ed] = a.useState(y), ec = a.useRef(!1);
+    } = O, Y = (0, p.GV)(), W = G.length % 2 == 0, K = (0, d.bG)([_.A], () => _.A.useReducedMotion), [q, z] = a.useState(Date.now()), [$, Q] = a.useState(0), [X, Z] = a.useState(0), [J, ee] = a.useState(!1), [et, en] = a.useState(!0), ei = a.useRef(q), ea = a.useRef($), er = a.useRef(X), el = a.useRef(J), es = a.useRef(et), [eo, ed] = a.useState(y), ec = a.useRef(!1);
 
     function eu() {
         let e = Date.now(),
             t = e - ei.current,
             n = ea.current,
-            i = el.current;
-        return er.current && (X(n += t), es.current || Z(i += t)), z(e), [n, i]
+            i = er.current;
+        return el.current && (Q(n += t), es.current || Z(i += t)), z(e), [n, i]
     }
-    return (0, _.A)({
+    return (0, h.A)({
         type: s.ImpressionTypes.MODAL,
         name: s.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
         properties: {
@@ -140,8 +140,8 @@ function R(e) {
             URL.revokeObjectURL(e.src)
         })
     }, [eo]), a.useEffect(() => {
-        ei.current = q, ea.current = $, el.current = Q, er.current = J, es.current = et
-    }, [q, $, Q, J, et]), a.useEffect(() => () => {
+        ei.current = q, ea.current = $, er.current = X, el.current = J, es.current = et
+    }, [q, $, X, J, et]), a.useEffect(() => () => {
         if ("video" === R.type || "embed" === R.type) {
             let [e, t] = eu();
             C.default.track(S.HAw.CHANGE_LOG_VIDEO_PLAYED, {
@@ -167,7 +167,7 @@ function R(e) {
         }
     }, [k, n]), (0, i.jsx)(A.EOs, {
         "data-migration-pending": !0,
-        className: r()(b.zr, b.kv, l),
+        className: l()(b.zr, b.kv, r),
         transitionState: F,
         "aria-labelledby": Y,
         parentComponent: "PremiumAnnouncementModalVariant1",
@@ -183,7 +183,7 @@ function R(e) {
                 "data-migration-pending": !0,
                 className: b.Qs,
                 children: ["video" === R.type ? (0, i.jsx)(E.A, {
-                    className: r()(b.Ki, P),
+                    className: l()(b.Ki, P),
                     autoPlay: !K,
                     loop: !0,
                     muted: !0,
@@ -217,7 +217,7 @@ function R(e) {
                         }, e.locale)
                     })
                 }) : "embed" === R.type ? (0, i.jsx)(m.rr, {
-                    className: r()(b.Ki, P),
+                    className: l()(b.Ki, P),
                     allowFullScreen: !1,
                     href: R.href,
                     thumbnail: R.thumbnail,
@@ -235,7 +235,7 @@ function R(e) {
                     }
                 }) : "image" === R.type ? (0, i.jsx)("img", {
                     alt: "",
-                    className: r()(b.Ki, P),
+                    className: l()(b.Ki, P),
                     src: R.src
                 }) : null, null != M && "" !== M ? (0, i.jsx)(N.e4, {
                     text: M,
@@ -243,7 +243,7 @@ function R(e) {
                     className: b.ON
                 }) : null, (0, i.jsx)(A.Heading, {
                     variant: "display-md",
-                    className: r()(b.TK, j),
+                    className: l()(b.TK, j),
                     children: D
                 }), (0, i.jsxs)(A.Text, {
                     variant: "text-md/normal",
@@ -255,7 +255,7 @@ function R(e) {
                     className: b.G3,
                     children: B
                 }), G.length > 0 && (0, i.jsx)("div", {
-                    className: r()(b.IS, {
+                    className: l()(b.IS, {
                         [b.tF]: W
                     }),
                     children: G.map((e, t) => (0, i.jsx)(L, {

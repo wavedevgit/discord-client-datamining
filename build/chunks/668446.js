@@ -17,15 +17,15 @@ var i = n(64700),
     A = n(186111),
     g = n(320501),
     p = n(576705),
-    f = n(661191),
-    _ = n(652215);
+    _ = n(661191),
+    f = n(652215);
 
 function E(e, t) {
     return (0, a.cf)([p.A], () => ({
         canInvite: (0, r.K)(p.A, t, e),
-        canManageGuild: null != t && p.A.can(_.xBc.MANAGE_GUILD, t),
-        canMessage: null != e && p.A.can(_.xBc.SEND_MESSAGES, e),
-        canCreateChannel: null != t && p.A.can(_.xBc.MANAGE_CHANNELS, t)
+        canManageGuild: null != t && p.A.can(f.xBc.MANAGE_GUILD, t),
+        canMessage: null != e && p.A.can(f.xBc.SEND_MESSAGES, e),
+        canCreateChannel: null != t && p.A.can(f.xBc.MANAGE_CHANNELS, t)
     }), [t, e])
 }
 
@@ -35,7 +35,7 @@ function x(e) {
     return {
         guildPopulated: (n = (0, a.bG)([d.A], () => d.A.getChannel(e?.systemChannelId)), l = (0, a.yK)([g.A], () => null != n ? g.A.getMessages(n.id).toArray() : []), (0, a.bG)([h.A], () => {
             let t = h.A.getMemberCount(e?.id) ?? 0,
-                n = l.some(e => e.type === _.lAJ.USER_JOIN);
+                n = l.some(e => e.type === f.lAJ.USER_JOIN);
             return t > 1 || n
         }, [e, l])),
         guildMessaged: (r = (0, a.bG)([d.A], () => null != e ? d.A.getMutableBasicGuildChannelsForGuild(e.id) : null), t = i.useMemo(() => null == r ? [] : s().values(r), [r]), p = (0, a.bG)([c.default], () => c.default.getId()), (0, a.bG)([g.A], () => s().some(t, e => {
@@ -48,7 +48,7 @@ function x(e) {
                 n = t[u.vM];
 
             function i(t) {
-                return null != e && f.default.extractTimestamp(t.channel.id) - f.default.extractTimestamp(e.id) > 500
+                return null != e && _.default.extractTimestamp(t.channel.id) - _.default.extractTimestamp(e.id) > 500
             }
             return t[u.I6].some(i) || n.some(i)
         }, [e])

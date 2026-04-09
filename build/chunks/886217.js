@@ -1,73 +1,73 @@
 /** chunk id: 886217 params = (module,exports,require) **/
 n.d(t, {
     Ok: () => m,
-    _B: () => _
+    _B: () => h
 });
 var i = n(627968),
     a = n(311907),
-    l = n(859703),
-    r = n(929271),
+    r = n(859703),
+    l = n(929271),
     s = n(392344),
     o = n(522043),
     d = n(214832),
     c = n(76531),
     u = n(563905),
     A = n(478677),
-    h = n(985018);
+    _ = n(985018);
 
-function _() {
+function h() {
     return [{
         value: "quest_bar",
-        label: h.intl.string(h.t.rjVPdM)
+        label: _.intl.string(_.t.rjVPdM)
     }, {
         value: "share_embed",
-        label: h.intl.string(h.t["D/gSWS"])
+        label: _.intl.string(_.t["D/gSWS"])
     }, {
         value: "home_card",
-        label: h.intl.string(h.t["5wnpF3"])
+        label: _.intl.string(_.t["5wnpF3"])
     }, {
         value: "channel_call_header",
-        label: h.intl.string(h.t.gWinpQ)
+        label: _.intl.string(_.t.gWinpQ)
     }, {
         value: "members_list",
-        label: h.intl.string(h.t.wpYima)
+        label: _.intl.string(_.t.wpYima)
     }, {
         value: "activity_panel",
-        label: h.intl.string(h.t.L2mlUb)
+        label: _.intl.string(_.t.L2mlUb)
     }]
 }
 let m = e => {
     let {
         questId: t,
         selectedSections: n
-    } = e, h = (0, a.bG)([l.A], () => l.A.getQuest(t));
-    if (null != (0, a.bG)([l.A], () => l.A.getFetchQuestPreviewError(t)) || null == h) return null;
-    let _ = e => null == n || 0 === n.length || n.includes(e);
+    } = e, _ = (0, a.bG)([r.A], () => r.A.getQuest(t));
+    if (null != (0, a.bG)([r.A], () => r.A.getFetchQuestPreviewError(t)) || null == _) return null;
+    let h = e => null == n || 0 === n.length || n.includes(e);
     return (0, i.jsxs)(i.Fragment, {
-        children: [_("quest_bar") && (0, i.jsxs)(i.Fragment, {
+        children: [h("quest_bar") && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.A, {
-                quest: h
-            }), (0, i.jsx)(r.c, {})]
-        }), _("home_card") && (0, i.jsxs)(i.Fragment, {
+                quest: _
+            }), (0, i.jsx)(l.c, {})]
+        }), h("home_card") && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(u._, {
-                quest: h
-            }), (0, i.jsx)(r.c, {})]
-        }), _("share_embed") && (0, i.jsxs)(i.Fragment, {
+                quest: _
+            }), (0, i.jsx)(l.c, {})]
+        }), h("share_embed") && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(c.A, {
-                questId: h.id
-            }), (0, i.jsx)(r.c, {})]
-        }), _("channel_call_header") && (0, i.jsxs)(i.Fragment, {
+                questId: _.id
+            }), (0, i.jsx)(l.c, {})]
+        }), h("channel_call_header") && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(d.n, {
-                quest: h
-            }), (0, i.jsx)(r.c, {})]
-        }), _("members_list") && (0, i.jsxs)(i.Fragment, {
+                quest: _
+            }), (0, i.jsx)(l.c, {})]
+        }), h("members_list") && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(A.A, {
-                quest: h
-            }), (0, i.jsx)(r.c, {})]
-        }), _("activity_panel") && (0, i.jsxs)(i.Fragment, {
+                quest: _
+            }), (0, i.jsx)(l.c, {})]
+        }), h("activity_panel") && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(s.A, {
-                quest: h
-            }), (0, i.jsx)(r.c, {})]
+                quest: _
+            }), (0, i.jsx)(l.c, {})]
         })]
     })
 }

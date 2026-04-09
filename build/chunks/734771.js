@@ -13,16 +13,16 @@ function s(e) {
             message: s,
             usernameHook: o,
             otherUser: c,
-            otherUsernameHook: d,
-            compact: u,
+            otherUsernameHook: u,
+            compact: d,
             channel: _
         } = e,
         A = (0, l.Ay)(s),
         m = A.nick,
         E = o(A),
         T = (0, l.d8)(c, _);
-    if (null != T && null != d) {
-        let e = d(T);
+    if (null != T && null != u) {
+        let e = u(T);
         t = r.intl.format(r.t.L2FyVq, {
             username: m,
             usernameHook: E,
@@ -36,7 +36,7 @@ function s(e) {
     return (0, i.jsx)(a.A, {
         icon: n(884797),
         timestamp: s.timestamp,
-        compact: u,
+        compact: d,
         children: t
     })
 }

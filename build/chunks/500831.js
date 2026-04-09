@@ -5,16 +5,16 @@ n.r(t), n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(353640),
-    r = n(574381),
+    r = n(353640),
+    l = n(574381),
     s = n(311907),
     o = n(397927),
     d = n(526900),
     c = n(587895),
     u = n(875444),
     A = n(770031),
-    h = n(932340),
-    _ = n(733738),
+    _ = n(932340),
+    h = n(733738),
     m = n(871432),
     g = n(352306),
     p = n(817199),
@@ -40,7 +40,7 @@ var i = n(627968),
     U = n(475815),
     G = n(71855);
 n(801416);
-let k = (0, l.v)(() => ({
+let k = (0, r.v)(() => ({
         isOpen: !0
     })),
     V = a.memo(function() {
@@ -56,7 +56,7 @@ let k = (0, l.v)(() => ({
             hasBugReporterAccess: n
         } = A.A.useConfig({
             location: "HeaderBar"
-        }), l = (0, s.bG)([D.A], () => D.A.isDeveloper), k = (0, R.Uk)("VoiceDareTitleBarButton"), V = (0, s.bG)([j.A, c.A], () => L.Q_.getSetting() && null != j.A.testModeApplicationId && null != c.A.getApplication(j.A.testModeApplicationId) && (0, u.A)(c.A.getApplication(j.A.testModeApplicationId))), B = null !== e && t === N.RK.TITLE_BAR_LEFT, H = null === e, {
+        }), r = (0, s.bG)([D.A], () => D.A.isDeveloper), k = (0, R.Uk)("VoiceDareTitleBarButton"), V = (0, s.bG)([j.A, c.A], () => L.Q_.getSetting() && null != j.A.testModeApplicationId && null != c.A.getApplication(j.A.testModeApplicationId) && (0, u.A)(c.A.getApplication(j.A.testModeApplicationId))), B = null !== e && t === N.RK.TITLE_BAR_LEFT, H = null === e, {
             enabled: F
         } = g.s.useConfig({
             location: "AppTitleBar"
@@ -71,7 +71,7 @@ let k = (0, l.v)(() => ({
         }, []);
         let K = (0, O.NC)(),
             q = (0, s.bG)([M.A, x.A], () => (0, U._U)()),
-            z = (0, r.xl)(),
+            z = (0, l.xl)(),
             $ = function(e) {
                 let {
                     showBackForwardButtons: t,
@@ -90,7 +90,7 @@ let k = (0, l.v)(() => ({
                 children: t => (0, i.jsx)(G.cq, {
                     className: t,
                     leading: (0, i.jsxs)(i.Fragment, {
-                        children: [z && (0, i.jsx)(_.A, {
+                        children: [z && (0, i.jsx)(h.A, {
                             firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === $ ? e : void 0
                         }), B && (0, i.jsx)(S.A, {
                             focusSectionProps: "NOTIFICATIONS_INBOX" === $ ? e : void 0
@@ -98,7 +98,7 @@ let k = (0, l.v)(() => ({
                     }),
                     title: (0, i.jsx)(T.M, {}),
                     trailing: (0, i.jsxs)(i.Fragment, {
-                        children: [(0, i.jsx)(m.A, {}), k ? (0, i.jsx)(P.A, {}) : null, F && (0, i.jsx)(p.A, {}), (0, i.jsx)(h.A, {
+                        children: [(0, i.jsx)(m.A, {}), k ? (0, i.jsx)(P.A, {}) : null, F && (0, i.jsx)(p.A, {}), (0, i.jsx)(_.A, {
                             canShowReminder: !0
                         }), Y && !W && (0, i.jsx)(y.A, {}), H && (0, i.jsx)(v.A, {
                             ..."RECENTS" === $ ? e : {}
@@ -106,7 +106,7 @@ let k = (0, l.v)(() => ({
                             focusSectionProps: "HELP" === $ ? e : void 0
                         }) : (0, i.jsx)(I.A, {
                             focusSectionProps: "HELP" === $ ? e : void 0
-                        }), l && (0, i.jsx)(E.R, {}), V && (0, i.jsx)(d.A, {}), (0, i.jsx)(C.A, {})]
+                        }), r && (0, i.jsx)(E.R, {}), V && (0, i.jsx)(d.A, {}), (0, i.jsx)(C.A, {})]
                     })
                 })
             })

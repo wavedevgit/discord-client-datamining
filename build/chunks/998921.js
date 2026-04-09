@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(264572),
     a = n(143236),
-    l = n(735438),
-    r = n.n(l),
+    r = n(735438),
+    l = n.n(r),
     s = n(626584),
     o = n(837921),
     d = n(84002),
     c = n(313731),
     u = n(546983),
     A = n(652215);
-let h = o.Ay.requireModule("discord_rpc").RPCIPC,
-    _ = new s.A("RPCServer:IPC"),
+let _ = o.Ay.requireModule("discord_rpc").RPCIPC,
+    h = new s.A("RPCServer:IPC"),
     m = {
         HANDSHAKE: 0,
         FRAME: 1,
@@ -32,7 +32,7 @@ function p(e) {
 
 function E(e) {
     return new Promise((t, n) => {
-        "string" == typeof e && (e = h.net.createConnection(e));
+        "string" == typeof e && (e = _.net.createConnection(e));
         let i = new f(e, "json");
         e.on("data", t => {
             try {
@@ -52,7 +52,7 @@ function E(e) {
                     })), e.destroy()
                 } catch (e) {}
             },
-            l = Promise.race([new Promise(t => e.on("error", () => t())), new Promise((t, n) => {
+            r = Promise.race([new Promise(t => e.on("error", () => t())), new Promise((t, n) => {
                 e.on("pong", () => n(Error("socket responded with pong")))
             }), new Promise((e, t) => {
                 setTimeout(() => t(Error("socket alive timeout")), 1e3)
@@ -61,7 +61,7 @@ function E(e) {
             }, e => {
                 throw a(), e
             });
-        return e.write(I(m.PING, r().uniqueId())), l.then(t, n)
+        return e.write(I(m.PING, l().uniqueId())), r.then(t, n)
     })
 }
 
@@ -85,7 +85,7 @@ class f extends c.A {
         return e.copy(a, 0, t, n), a
     }
     send(e) {
-        _.info(`Socket Emit: ${this.id}`, (0, d.A)(e)), this.socket.write(I(m.FRAME, e))
+        h.info(`Socket Emit: ${this.id}`, (0, d.A)(e)), this.socket.write(I(m.FRAME, e))
     }
     close(e, t) {
         this.socket.end(I(m.CLOSE, {
@@ -147,16 +147,16 @@ class C extends a.EventEmitter {
     MAX_CONNECTIONS = 100;
     constructor() {
         super();
-        const e = h.net.createServer(e => this.handleConnection(e));
-        e.on("error", e => _.error(`Error: ${e.message}`)), h.getAvailableSocket(E).then(t => {
+        const e = _.net.createServer(e => this.handleConnection(e));
+        e.on("error", e => h.error(`Error: ${e.message}`)), _.getAvailableSocket(E).then(t => {
             e.listen(t, () => {
-                ("function" == typeof e.listening ? e.listening() : e.listening) && _.info(`Starting on ${e.address()}`)
+                ("function" == typeof e.listening ? e.listening() : e.listening) && h.info(`Starting on ${e.address()}`)
             })
         })
     }
     handleConnection(e) {
         if (this.activeConnections >= this.MAX_CONNECTIONS) {
-            _.warn(`Connection limit reached (${this.MAX_CONNECTIONS}), rejecting connection`);
+            h.warn(`Connection limit reached (${this.MAX_CONNECTIONS}), rejecting connection`);
             try {
                 e.end(I(m.CLOSE, {
                     code: A.YI$.CLOSE_ABNORMAL,
@@ -169,10 +169,10 @@ class C extends a.EventEmitter {
         this.activeConnections++;
         let t = new f(e, "json");
         e.on("close", () => {
-            this.activeConnections--, _.info(`Socket Close: ${t.id} (active: ${this.activeConnections})`), t.abortController.abort(), this.emit("disconnect", t)
+            this.activeConnections--, h.info(`Socket Close: ${t.id} (active: ${this.activeConnections})`), t.abortController.abort(), this.emit("disconnect", t)
         });
         let n = setTimeout(() => {
-            _.warn("Handshake timeout for connection, closing socket");
+            h.warn("Handshake timeout for connection, closing socket");
             try {
                 e.end(I(m.CLOSE, {
                     code: A.YI$.CLOSE_ABNORMAL,
@@ -188,7 +188,7 @@ class C extends a.EventEmitter {
             try {
                 t.read(i.Buffer.from(a))
             } catch (t) {
-                clearTimeout(n), _.error(`Socket Error: ${t.message}`), e.end(I(m.CLOSE, {
+                clearTimeout(n), h.error(`Socket Error: ${t.message}`), e.end(I(m.CLOSE, {
                     code: A.YI$.CLOSE_UNSUPPORTED,
                     message: t.message
                 })), e.destroy()
@@ -196,9 +196,9 @@ class C extends a.EventEmitter {
         }), e.once("handshake", () => {
             clearTimeout(n);
             let i = t.clientId;
-            _.info(`Socket Opened: ${t.id} (active: ${this.activeConnections})`), e.on("error", e => _.error(`Socket Error: ${e.message}`)), (0, u.j7)(t, null, i).then(() => {
+            h.info(`Socket Opened: ${t.id} (active: ${this.activeConnections})`), e.on("error", e => h.error(`Socket Error: ${e.message}`)), (0, u.j7)(t, null, i).then(() => {
                 t.abortController.signal.aborted || (e.on("request", e => {
-                    _.info(`Socket Message: ${t.id}`, (0, d.A)(e)), this.emit("request", t, e)
+                    h.info(`Socket Message: ${t.id}`, (0, d.A)(e)), this.emit("request", t, e)
                 }), this.emit("connect", t))
             }).catch(e => {
                 let {

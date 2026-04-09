@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(426611),
-    l = n(459192),
-    r = n(927578),
+    r = n(459192),
+    l = n(927578),
     s = n(580630),
     o = n(881489),
     d = n(985018);
@@ -16,17 +16,17 @@ function c(e) {
         children: t,
         endsAt: n,
         variant: c = "initial"
-    } = e, u = (0, o.Zb)(n), A = (0, s.$g)(0, (0, r.Rr)(), {
+    } = e, u = (0, o.Zb)(n), A = (0, s.$g)(0, (0, l.Rr)(), {
         minimumFractionDigits: 0,
         maximumFractionDigits: 0
-    }), h = "followup" === c, _ = h ? d.intl.string(d.t.gzhz8w) : d.intl.string(d.t.aopiS6), m = h ? d.intl.format(d.t["3iUE+U"], {
+    }), _ = "followup" === c, h = _ ? d.intl.string(d.t.gzhz8w) : d.intl.string(d.t.aopiS6), m = _ ? d.intl.format(d.t["3iUE+U"], {
         price: A
     }) : d.intl.format(d.t.AQd9tZ, {
         days: u
     });
-    return (0, i.jsx)(l.u, {
+    return (0, i.jsx)(r.u, {
         title: m,
-        body: _,
+        body: h,
         asset: (0, i.jsx)(a.y, {
             alt: "",
             width: 48,

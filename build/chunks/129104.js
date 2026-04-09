@@ -1,6 +1,6 @@
 /** chunk id: 129104 params = (module,exports,require) **/
 n.d(t, {
-    R: () => g
+    R: () => p
 });
 var i = n(627968),
     l = n(64700),
@@ -15,29 +15,29 @@ var i = n(627968),
     A = n(559405),
     _ = n(652215),
     m = n(307731),
-    p = n(188712);
+    g = n(188712);
 
-function g(e) {
+function p(e) {
     let {
         customStatusEmoji: t,
         setCustomStatusEmoji: n,
-        selectedDefaultStatus: g,
+        selectedDefaultStatus: p,
         setIsEmojiPickerOpen: f,
         defaultStatusVariant: x
     } = e, E = l.useRef(null), I = (0, s.bG)([h.A, u.A], () => u.A.getChannel(h.A.getVoiceChannelId())), C = l.useCallback(() => null != t ? (0, i.jsx)(r.A, {
         emojiId: t.id,
         emojiName: t.name,
         animated: !!t.animated
-    }) : null != g ? (0, i.jsx)(A.A, {
-        className: p.Kk,
+    }) : null != p ? (0, i.jsx)(A.A, {
+        className: g.Kk,
         userId: c.default.getId(),
         size: 20,
         hangStatusActivity: {
             type: _.$pd.HANG_STATUS,
-            state: g
+            state: p
         },
         fallbackVariant: x
-    }) : null, [t, x, g]);
+    }) : null, [t, x, p]);
     return (0, i.jsx)(a.YNO, {
         targetElementRef: E,
         onRequestOpen: () => f(!0),
@@ -80,7 +80,7 @@ function g(e) {
                 ref: E,
                 active: l,
                 tabIndex: 0,
-                renderButtonContents: null == t && null == g ? null : C
+                renderButtonContents: null == t && null == p ? null : C
             })
         }
     })

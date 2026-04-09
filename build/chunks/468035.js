@@ -116,10 +116,10 @@ function o(e, t) {
         isComplete: !0
     };
     let c = a(o),
-        d = c[i];
-    if (null != d && d.length > 0)
-        for (let t = d.length - 1; t >= 0; t--) {
-            let n = d[t];
+        u = c[i];
+    if (null != u && u.length > 0)
+        for (let t = u.length - 1; t >= 0; t--) {
+            let n = u[t];
             if (null != e.Questions[n] && null != r[n]) {
                 let t = o.BlockElements.find(e => e.QuestionID === n);
                 if (null != t) {
@@ -136,39 +136,39 @@ function o(e, t) {
                             if (null == s || "" === s) continue;
                             let o = r?.match(/SelectableChoice\/(\d+)/),
                                 c = o?.[1],
-                                d = !1;
+                                u = !1;
                             switch (i) {
                                 case "Selected":
-                                    d = null != c && s.split(",").includes(c);
+                                    u = null != c && s.split(",").includes(c);
                                     break;
                                 case "NotSelected":
-                                    d = null != c && !s.split(",").includes(c);
+                                    u = null != c && !s.split(",").includes(c);
                                     break;
                                 case "EqualTo":
-                                    d = s === l?.toString();
+                                    u = s === l?.toString();
                                     break;
                                 case "NotEqualTo":
-                                    d = s !== l?.toString();
+                                    u = s !== l?.toString();
                                     break;
                                 case "GreaterThan":
-                                    d = Number(s) > Number(l ?? 0);
+                                    u = Number(s) > Number(l ?? 0);
                                     break;
                                 case "LessThan":
-                                    d = Number(s) < Number(l ?? 0);
+                                    u = Number(s) < Number(l ?? 0);
                                     break;
                                 case "GreaterThanOrEqualTo":
-                                    d = Number(s) >= Number(l ?? 0);
+                                    u = Number(s) >= Number(l ?? 0);
                                     break;
                                 case "LessThanOrEqualTo":
-                                    d = Number(s) <= Number(l ?? 0);
+                                    u = Number(s) <= Number(l ?? 0);
                                     break;
                                 case "Contains":
-                                    d = s.includes(l?.toString() ?? "");
+                                    u = s.includes(l?.toString() ?? "");
                                     break;
                                 case "DoesNotContain":
-                                    d = !s.includes(l?.toString() ?? "")
+                                    u = !s.includes(l?.toString() ?? "")
                             }
-                            if (d) {
+                            if (u) {
                                 if ("ENDOFSURVEY" === a?.trim().toUpperCase()) return "ENDOFSURVEY";
                                 return a
                             }
@@ -201,8 +201,8 @@ function o(e, t) {
         questionIds: c[i + 1],
         isComplete: !1
     };
-    let u = s.indexOf(n);
-    for (let t = u + 1; t < s.length; t++) {
+    let d = s.indexOf(n);
+    for (let t = d + 1; t < s.length; t++) {
         let n = s[t],
             i = a(e.Blocks[n]);
         if (i.length > 0 && i[0].length > 0) return {

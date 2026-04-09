@@ -1,6 +1,6 @@
 /** chunk id: 914835 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => N
 });
 var i = n(627968),
     l = n(64700),
@@ -16,22 +16,22 @@ var i = n(627968),
     A = n(967144),
     g = n(342296),
     p = n(696451),
-    f = n(287809),
-    _ = n(427262),
+    _ = n(287809),
+    f = n(427262),
     E = n(314307),
     x = n(652215),
     C = n(985018),
     S = n(812077);
 
-function T(e) {
+function I(e) {
     let {
         userId: t,
         channel: s
     } = e, h = l.useRef(null), {
         analyticsLocations: m
-    } = (0, u.Ay)(d.A.USERNAME), E = (0, r.bG)([f.default], () => f.default.getUser(t)), x = (0, r.bG)([p.Ay], () => null != t ? p.Ay.getMember(s.guild_id, t) : null), C = (0, A.gn)(s.guild_id, t ?? void 0, x?.colorStrings ?? null);
+    } = (0, u.Ay)(d.A.USERNAME), E = (0, r.bG)([_.default], () => _.default.getUser(t)), x = (0, r.bG)([p.Ay], () => null != t ? p.Ay.getMember(s.guild_id, t) : null), C = (0, A.gn)(s.guild_id, t ?? void 0, x?.colorStrings ?? null);
 
-    function T(e) {
+    function I(e) {
         if (null == E) return null;
         (0, c.L3)(e, async () => {
             let {
@@ -45,11 +45,11 @@ function T(e) {
             })
         })
     }
-    let N = x?.nick ?? _.Ay.getName(E) ?? "???",
-        I = x?.colorString;
+    let T = x?.nick ?? f.Ay.getName(E) ?? "???",
+        N = x?.colorString;
     return null == E ? (0, i.jsx)("span", {
         className: a()(S.eM, S.sL),
-        children: N
+        children: T
     }) : (0, i.jsx)(u.f5, {
         value: m,
         children: (0, i.jsx)(g.A, {
@@ -64,10 +64,10 @@ function T(e) {
                 innerRef: h,
                 tag: "span",
                 className: S.eM,
-                onContextMenu: T,
+                onContextMenu: I,
                 children: (0, i.jsx)(o.gyj, {
-                    name: N,
-                    colorString: I ?? null,
+                    name: T,
+                    colorString: N ?? null,
                     colorStrings: C
                 })
             })
@@ -75,7 +75,7 @@ function T(e) {
     })
 }
 
-function N(e) {
+function T(e) {
     let {
         channel: t
     } = e, {
@@ -92,7 +92,7 @@ function N(e) {
             children: (0, i.jsx)("div", {
                 className: S.VA,
                 children: C.intl.format(C.t.imPXd5, {
-                    usernameHook: (e, n) => (0, i.jsx)(T, {
+                    usernameHook: (e, n) => (0, i.jsx)(I, {
                         userId: t.ownerId,
                         channel: t
                     }, n)
@@ -106,7 +106,7 @@ function N(e) {
     })
 }
 
-function I(e) {
+function N(e) {
     let {
         channel: t
     } = e, n = (0, m.gU)(t) ?? o.ysw, l = (0, h.Ay)(t);
@@ -119,7 +119,7 @@ function I(e) {
             })
         }), (0, i.jsx)(E.cr, {
             children: l
-        }), (0, i.jsx)(N, {
+        }), (0, i.jsx)(T, {
             channel: t
         })]
     })

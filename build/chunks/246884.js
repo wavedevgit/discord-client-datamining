@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(260509),
     _ = n(71393),
     m = n(287809),
-    p = n(531053),
-    g = n(606256),
+    g = n(531053),
+    p = n(606256),
     f = n(652215),
     x = n(819638),
     E = n(985018),
@@ -59,7 +59,7 @@ function T(e) {
             inlineSpecs: C,
             position: "right",
             disabled: t,
-            children: [(0, i.jsx)(g.A, {
+            children: [(0, i.jsx)(p.A, {
                 showPill: !1,
                 id: "create-join-button",
                 onClick: () => {
@@ -80,7 +80,7 @@ function T(e) {
                 onContextMenu: N,
                 tooltip: E.intl.string(E.t.l5WIbf),
                 icon: a.U1e
-            }), null != n && (0, i.jsx)(p.Ay, {
+            }), null != n && (0, i.jsx)(g.Ay, {
                 name: E.intl.string(E.t["45xjM5"]),
                 targetNode: n,
                 below: !0,

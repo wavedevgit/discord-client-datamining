@@ -39,8 +39,8 @@ var i = n(284009),
     M = n(9302),
     P = n(157257),
     G = n(652215),
-    U = n(672396),
-    V = n(985018);
+    V = n(672396),
+    U = n(985018);
 let z = new r.Vy("LegacyOverlayNotificationsStore"),
     H = 5 * k.A.Millis.SECOND,
     W = 8 * k.A.Millis.SECOND,
@@ -148,10 +148,10 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
             }), null == n) return;
         let i = function(e) {
             switch (e.type) {
-                case U.Jr.GO_LIVE_VOICE:
-                case U.Jr.GO_LIVE_NON_VOICE:
+                case V.Jr.GO_LIVE_VOICE:
+                case V.Jr.GO_LIVE_NON_VOICE:
                     return (0, h.A)(e);
-                case U.Jr.NEWS:
+                case V.Jr.NEWS:
                 default:
                     return (0, _.A)(e)
             }
@@ -203,7 +203,7 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
             }(i, n, l);
             if (!1 !== e) return e
         }
-        if ((!w.default.isInstanceLocked() || w.default.isPinned(G.uss.TEXT)) && t === b.A.getChannelId() || y.A.isNotificationDisabled(U.KS.TextChat) || j.A.disableNotifications || !(0, x.lx)(n, t)) return !1;
+        if ((!w.default.isInstanceLocked() || w.default.isPinned(G.uss.TEXT)) && t === b.A.getChannelId() || y.A.isNotificationDisabled(V.KS.TextChat) || j.A.disableNotifications || !(0, x.lx)(n, t)) return !1;
         let a = !N.A.isSoundDisabled(R.cH);
         Q((0, A.A)(i, n, l, a), {
             type: 1,
@@ -257,10 +257,10 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
         }))
     },
     CLIPS_SAVE_CLIP_START: function(e) {
-        "manual" === e.clipMethod && Q((0, m.V)(V.intl.string(V.t.NBMK9m)))
+        "manual" === e.clipMethod && Q((0, m.V)(U.intl.string(U.t.NBMK9m)))
     },
     CLIPS_SAVE_CLIP_ERROR: function() {
-        Q((0, m.V)(V.intl.string(V.t["1ZbZuh"])))
+        Q((0, m.V)(U.intl.string(U.t["1ZbZuh"])))
     },
     STREAM_START: function(e) {
         let t = (0, m.t)();

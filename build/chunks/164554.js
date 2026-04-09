@@ -1,32 +1,32 @@
 /** chunk id: 164554 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => h
 });
 var i = n(627968),
     a = n(64700),
-    l = n(362599),
-    r = n(342494),
+    r = n(362599),
+    l = n(342494),
     s = n(732955),
     o = n(976860),
     d = n(235365),
     c = n(652215),
     u = n(49999),
     A = n(723468),
-    h = n(985018);
+    _ = n(985018);
 
-function _(e) {
+function h(e) {
     let {
         targetElementRef: t,
         dismissPopover: n,
-        children: _
+        children: h
     } = e, m = a.useCallback(() => {
         n(u.i.TAKE_ACTION), (0, o.pX)(`${c.BVt.NITRO_HOME}?section=${d.L}`)
-    }, [n]), g = (0, i.jsx)(r.AM, {
+    }, [n]), g = (0, i.jsx)(l.AM, {
         targetElementRef: t,
         onRequestClose: () => n(u.i.USER_DISMISS),
         graphic: {
             type: "rive",
-            rive: l.Z
+            rive: r.Z
         },
         badge: {
             type: "beta",
@@ -39,10 +39,10 @@ function _(e) {
             align: "start"
         },
         size: "md",
-        title: h.intl.string(A.default.UPOlxO),
-        body: h.intl.string(A.default.e6r8OX),
+        title: _.intl.string(A.default.UPOlxO),
+        body: _.intl.string(A.default.e6r8OX),
         actions: [{
-            text: h.intl.string(h.t.RzWDqY),
+            text: _.intl.string(_.t.RzWDqY),
             icon: s.tvc,
             onClick: m
         }],
@@ -50,7 +50,7 @@ function _(e) {
     });
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            children: _
+            children: h
         }), g]
     })
 }

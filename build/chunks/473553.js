@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(859703),
     _ = n(341915),
     m = n(759366),
-    p = n(245853),
-    g = n(714510),
+    g = n(245853),
+    p = n(714510),
     f = n(890687),
     x = n(590202),
     E = n(639214),
@@ -35,13 +35,13 @@ function O(e) {
     let {
         quest: t,
         applicationId: n
-    } = e, a = (0, f.fc)(t), u = (0, g.mU)({
+    } = e, a = (0, f.fc)(t), u = (0, p.mU)({
         quest: t,
         taskDetails: a,
         location: b.rE.QUEST_ACTIVITY_HEADER,
         questContent: _.uF.QUEST_ACTIVITY_HEADER,
         sourceQuestContent: _.uF.RUNNING_ACTIVITY
-    }), [A, m] = l.useState(!1), p = l.useRef(null), E = l.useRef(null), [T, O] = (0, d.kn)([r.M.QUEST_ACTIVITY_HEADER_INTRO], void 0, !0), {
+    }), [A, m] = l.useState(!1), g = l.useRef(null), E = l.useRef(null), [T, O] = (0, d.kn)([r.M.QUEST_ACTIVITY_HEADER_INTRO], void 0, !0), {
         completedRatio: L,
         completedRatioDisplay: M,
         percentComplete: D
@@ -69,7 +69,7 @@ function O(e) {
                 gap: 8,
                 children: [(0, i.jsx)("div", {
                     className: R.v0,
-                    ref: p,
+                    ref: g,
                     children: (0, i.jsx)(S.A, {
                         quest: t,
                         questContent: _.uF.QUEST_ACTIVITY_HEADER,
@@ -151,7 +151,7 @@ function O(e) {
         }), null != T && G && (0, i.jsx)(I.A, {
             onDismiss: () => O(y.i.USER_DISMISS),
             onCTAClick: () => O(y.i.TAKE_ACTION),
-            targetElementRef: p
+            targetElementRef: g
         })]
     })
 }
@@ -161,8 +161,8 @@ function L(e) {
         applicationId: t
     } = e, r = (0, a.bG)([A.A], () => A.A.quests), d = (0, a.bG)([u.A], () => u.A.theme), c = l.useMemo(() => (0, E.jm)(r, t, !0)[0], [r, t]), {
         enabled: h,
-        showSkipButton: g
-    } = p.Ym.useConfig({
+        showSkipButton: p
+    } = g.Ym.useConfig({
         location: b.rE.QUEST_ACTIVITY_HEADER
     }), f = (0, a.bG)([m.A], () => m.A.getState().autoEnroll), x = c?.id, I = (0, a.bG)([m.A], () => m.A.isDismissed(x), [x]);
     return (l.useEffect(() => {
@@ -173,12 +173,12 @@ function L(e) {
             return t => (0, i.jsx)(e, {
                 ...t,
                 quest: c,
-                showSkipButton: g
+                showSkipButton: p
             })
         }, {
             modalKey: "quest-activity-unenrolled-modal"
         })
-    }, [h, c, f, I, g]), null != c && h) ? (0, i.jsx)(s.NPJ, {
+    }, [h, c, f, I, p]), null != c && h) ? (0, i.jsx)(s.NPJ, {
         theme: d,
         children: e => (0, i.jsx)("div", {
             className: e,

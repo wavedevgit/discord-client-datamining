@@ -15,9 +15,9 @@ function c(e) {
         message: t,
         compact: n,
         usernameHook: c
-    } = e, d = (0, a.Ay)(t), u = c(d), _ = s.intl.format(s.t["zla/ux"], {
-        username: d.nick,
-        usernameHook: u,
+    } = e, u = (0, a.Ay)(t), d = c(u), _ = s.intl.format(s.t["zla/ux"], {
+        username: u.nick,
+        usernameHook: d,
         topic: t.content
     });
     return (0, i.jsx)(r.A, {

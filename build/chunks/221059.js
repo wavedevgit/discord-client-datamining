@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(349435),
     g = n(665909),
     p = n(576045),
-    f = n(327337),
-    _ = n(652215),
+    _ = n(327337),
+    f = n(652215),
     E = n(985018);
 
 function x(e) {
@@ -60,16 +60,16 @@ function C(e) {
         warningId: C,
         senderId: S
     } = e, {
-        isBlocked: T
+        isBlocked: I
     } = (0, a.cf)([h.A], () => ({
         isBlocked: h.A.isBlocked(S)
-    }), [S]), N = l.useCallback(() => {
+    }), [S]), T = l.useCallback(() => {
         (0, m.xi)(t, [C])
-    }, [t, C]), I = (0, f.eT)(), v = l.useCallback(e => () => {
+    }, [t, C]), N = (0, _.eT)(), v = l.useCallback(e => () => {
         o.A.blockUser(S, {
-            location: f.Rx
+            location: _.Rx
         }).then(() => {
-            N()
+            T()
         }), (0, g._$)({
             channelId: t,
             warningId: C,
@@ -77,9 +77,9 @@ function C(e) {
             warningType: A._j.STRANGER_DANGER,
             cta: e
         })
-    }, [N, t, C, S]);
+    }, [T, t, C, S]);
     l.useEffect(() => {
-        (0, g.mO)(_.HAw.SAFETY_WARNING_VIEWED, {
+        (0, g.mO)(f.HAw.SAFETY_WARNING_VIEWED, {
             channelId: t,
             warningId: C,
             senderId: S,
@@ -105,7 +105,7 @@ function C(e) {
                         warningId: C,
                         senderId: S,
                         description: E.intl.string(E.t.DJMZX6),
-                        safetyTipRows: I.map((e, t) => (0, i.jsx)(d.B, {
+                        safetyTipRows: N.map((e, t) => (0, i.jsx)(d.B, {
                             index: t,
                             listType: "numbered",
                             title: e
@@ -157,7 +157,7 @@ function C(e) {
         warningType: A._j.STRANGER_DANGER,
         header: E.intl.string(E.t.iOkDpM),
         description: E.intl.string(E.t.ISUbcM),
-        onDismiss: N,
+        onDismiss: T,
         buttons: [{
             text: E.intl.string(E.t["Qk/c48"]),
             variant: "primary",
@@ -170,7 +170,7 @@ function C(e) {
                     cta: g.Wm.OPEN_MORE_TIPS
                 })
             }
-        }, ...T ? [] : [{
+        }, ...I ? [] : [{
             text: E.intl.string(E.t.ie0QdN),
             variant: "critical-primary",
             onClick: () => b(g.Wm.USER_BANNER_BLOCK_CONFIRM, g.Wm.USER_BANNER_BLOCK_CANCEL)

@@ -1,9 +1,9 @@
 /** chunk id: 604681 params = (module,exports,require) **/
 n.d(e, {
-    A: () => l
+    A: () => r
 });
 var i = n(73153);
-let l = {
+let r = {
     toggleMembersSection() {
         i.h.dispatch({
             type: "CHANNEL_TOGGLE_MEMBERS_SECTION"

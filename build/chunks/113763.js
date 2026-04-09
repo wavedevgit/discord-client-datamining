@@ -1,69 +1,69 @@
 /** chunk id: 113763 params = (module,exports,require) **/
-n.d(t, {
+i.d(t, {
     A: () => p
 });
-var i = n(627968),
-    a = n(64700),
-    l = n(163126),
-    s = n(688810),
-    r = n(114212),
-    o = n(183555),
-    d = n(913453),
-    c = n(229187),
-    u = n(657331),
-    g = n(503062),
-    m = n(782505),
-    h = n(515054),
-    x = n(913329);
+var n = i(627968),
+    s = i(64700),
+    l = i(163126),
+    a = i(688810),
+    r = i(114212),
+    o = i(183555),
+    d = i(913453),
+    c = i(229187),
+    u = i(657331),
+    g = i(503062),
+    m = i(782505),
+    h = i(515054),
+    x = i(913329);
 
 function p(e) {
     let {
         user: t,
-        guildId: n,
+        guildId: i,
         channelId: p,
-        onClose: f
+        onClose: A
     } = e, {
-        analyticsLocations: A
-    } = (0, s.Ay)(), {
-        context: _,
-        trackUserProfileAction: I
+        analyticsLocations: f
+    } = (0, a.Ay)(), {
+        context: I,
+        trackUserProfileAction: j
     } = (0, o.NJ)(), {
-        mutualFriends: j,
-        mutualFriendsCount: v
+        mutualFriends: v,
+        mutualFriendsCount: S
     } = (0, d.A)(t), b = (0, l.A)();
-    return a.useEffect(() => {
+    return s.useEffect(() => {
         (0, c.A)(t.id, b)
-    }, [t.id, b]), (0, i.jsx)(h.K, {
+    }, [t.id, b]), (0, n.jsx)(h.K, {
         className: x.XG,
-        children: null == j ? Array.from({
-            length: v ?? 10
-        }).map((e, t) => (0, i.jsxs)("div", {
+        children: null == v ? Array.from({
+            length: S ?? 10
+        }).map((e, t) => (0, n.jsxs)("div", {
             className: x.D$,
-            children: [(0, i.jsx)(r.FQ, {
+            children: [(0, n.jsx)(r.FQ, {
                 width: 40,
                 opacity: .08
-            }), (0, i.jsx)(r.FQ, {
+            }), (0, n.jsx)(r.FQ, {
                 width: 135,
                 opacity: .08
             })]
-        }, t)) : 0 === j.length ? (0, i.jsx)(m.IA, {}) : j.map(e => {
+        }, t)) : 0 === v.length ? (0, n.jsx)(m.IA, {}) : v.map(e => {
             let {
                 key: t,
-                user: a,
+                user: s,
                 status: l
             } = e;
-            return (0, i.jsx)(g.A, {
-                user: a,
+            return (0, n.jsx)(g.A, {
+                user: s,
                 status: l,
-                guildId: n,
+                guildId: i,
                 channelId: p,
                 onSelect: () => {
-                    f?.(), I({
+                    A?.(), j({
                         action: "PRESS_MUTUAL_FRIEND"
                     }), (0, u.openUserProfileModal)({
-                        ..._,
-                        userId: a.id,
-                        sourceAnalyticsLocations: A
+                        ...I,
+                        userId: s.id,
+                        sourceAnalyticsLocations: f
                     })
                 }
             }, t)

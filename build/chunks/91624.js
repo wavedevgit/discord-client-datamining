@@ -1,6 +1,6 @@
 /** chunk id: 91624 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => N
 }), n(938796);
 var i = n(627968),
     l = n(64700),
@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(576705),
     g = n(203982),
     p = n(460350),
-    f = n(145530),
-    _ = n(291812),
+    _ = n(145530),
+    f = n(291812),
     E = n(205120),
     x = n(652215);
 n(294920);
@@ -37,7 +37,7 @@ function S(e) {
     })
 }
 
-function T(e) {
+function I(e) {
     let {
         channel: t,
         message: n
@@ -45,7 +45,7 @@ function T(e) {
         id: c
     } = t, {
         id: d
-    } = n, g = t.getGuildId(), p = (0, a.bG)([m.A], () => m.A.getGuild(g), [g]), _ = t.type === x.rbe.GUILD_ANNOUNCEMENT, T = null != p && p.features.has(x.GuildFeatures.NEWS), I = _ && T, {
+    } = n, g = t.getGuildId(), p = (0, a.bG)([m.A], () => m.A.getGuild(g), [g]), f = t.type === x.rbe.GUILD_ANNOUNCEMENT, I = null != p && p.features.has(x.GuildFeatures.NEWS), N = f && I, {
         editingMessage: v,
         editingTextValue: y,
         editingRichValue: b
@@ -56,7 +56,7 @@ function T(e) {
     }), [c]), j = (0, a.bG)([u.default], () => u.default.getId()), R = l.useCallback((e, i, l) => {
         let {
             content: a
-        } = l, c = A.A.can(x.xBc.MANAGE_MESSAGES, t), d = null != v && null != v.author ? v.author.id : null, u = I && (d === j || c), h = {
+        } = l, c = A.A.can(x.xBc.MANAGE_MESSAGES, t), d = null != v && null != v.author ? v.author.id : null, u = N && (d === j || c), h = {
             content: a,
             components: void 0
         };
@@ -69,8 +69,8 @@ function T(e) {
                 id: "82744"
             }), h.content = "", h.components = t
         }
-        return u && null != v && (0, s.Lt)(v.flags, x.pr7.CROSSPOSTED) ? f.A.confirmEdit(e, i, h) : r.A.editMessage(e, i, h), Promise.resolve()
-    }, [v, I, j, t, n]), M = l.useCallback(e => (0, l.createElement)(N, {
+        return u && null != v && (0, s.Lt)(v.flags, x.pr7.CROSSPOSTED) ? _.A.confirmEdit(e, i, h) : r.A.editMessage(e, i, h), Promise.resolve()
+    }, [v, N, j, t, n]), M = l.useCallback(e => (0, l.createElement)(T, {
         ...e,
         className: C.gM,
         key: d
@@ -83,14 +83,14 @@ function T(e) {
         richValue: b,
         onCancel: r.A.endEditMessage,
         onChange: r.A.updateEditMessage,
-        onConfirmDelete: f.A.confirmDelete,
+        onConfirmDelete: _.A.confirmDelete,
         saveMessage: R,
         validateEdit: S,
         children: M
     }) : null
 }
 
-function N(e) {
+function T(e) {
     let {
         textValue: t,
         richValue: n,
@@ -100,10 +100,10 @@ function N(e) {
         onSubmit: o,
         onKeyDown: u,
         renderLeftAccessories: h
-    } = e, [m, A] = l.useState(!0), p = l.useCallback(() => A(!0), []), f = l.useCallback(() => A(!1), []);
-    return l.useEffect(() => (g._.subscribe(x.jej.TEXTAREA_FOCUS, p), g._.subscribe(x.jej.TEXTAREA_BLUR, f), () => {
-        g._.unsubscribe(x.jej.TEXTAREA_FOCUS, p), g._.unsubscribe(x.jej.TEXTAREA_BLUR, f)
-    }), [p, f]), (0, i.jsx)(d.Ay, {
+    } = e, [m, A] = l.useState(!0), p = l.useCallback(() => A(!0), []), _ = l.useCallback(() => A(!1), []);
+    return l.useEffect(() => (g._.subscribe(x.jej.TEXTAREA_FOCUS, p), g._.subscribe(x.jej.TEXTAREA_BLUR, _), () => {
+        g._.unsubscribe(x.jej.TEXTAREA_FOCUS, p), g._.unsubscribe(x.jej.TEXTAREA_BLUR, _)
+    }), [p, _]), (0, i.jsx)(d.Ay, {
         className: C.gM,
         textValue: t,
         richValue: n,
@@ -119,21 +119,21 @@ function N(e) {
         onKeyDown: u,
         focused: m,
         onFocus: p,
-        onBlur: f,
+        onBlur: _,
         renderLeftAccessories: h
     }, s.id)
 }
 
-function I(e, t, n) {
+function N(e, t, n) {
     let {
         message: l,
         channel: s,
         compact: a
     } = e;
-    return n ? (0, i.jsx)(T, {
+    return n ? (0, i.jsx)(I, {
         channel: s,
         message: l
-    }) : (0, i.jsx)(_.Ay, {
+    }) : (0, i.jsx)(f.Ay, {
         message: l,
         content: t,
         compact: a ?? !1

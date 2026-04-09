@@ -39,8 +39,8 @@ var i = n(627968),
     M = n(31717),
     P = n(517019),
     G = n(71393),
-    U = n(320501),
-    V = n(994500),
+    V = n(320501),
+    U = n(994500),
     z = n(309010),
     H = n(967198),
     W = n(287809),
@@ -94,7 +94,7 @@ class el extends s.Component {
             e.preventDefault();
             let {
                 channel: t
-            } = this.props, n = U.A.getLastEditableMessage(t.id);
+            } = this.props, n = V.A.getLastEditableMessage(t.id);
             null != n && p.A.startEditMessageRecord(t.id, n)
         }
     };
@@ -278,7 +278,7 @@ class ea extends s.PureComponent {
         } = this.props;
         if (null == t) return null;
         let A = o || h,
-            m = (0, g.m1)(t, W.default, V.A),
+            m = (0, g.m1)(t, W.default, U.A),
             x = !l && null != t && t.isNSFW(),
             y = !A || d;
         return e = x && null != r ? (0, i.jsx)(w.A, {

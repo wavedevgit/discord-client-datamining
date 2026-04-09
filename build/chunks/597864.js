@@ -15,8 +15,8 @@ function r(e) {
         onSelectionChange: s,
         inputType: o,
         textInputValue: c,
-        onTextInputChange: d
-    } = e, u = "true" === n.TextEntry, _ = `choice-label-${t}`;
+        onTextInputChange: u
+    } = e, d = "true" === n.TextEntry, _ = `choice-label-${t}`;
     return (0, i.jsxs)("div", {
         className: a.NV,
         children: [(0, i.jsxs)(l.DUT, {
@@ -46,12 +46,12 @@ function r(e) {
                     }
                 })
             })]
-        }), u && (0, i.jsx)("div", {
+        }), d && (0, i.jsx)("div", {
             className: a.Vi,
             children: (0, i.jsx)(l.ksK, {
                 value: c ?? "",
                 onChange: e => {
-                    r || s(t), d?.(t, e)
+                    r || s(t), u?.(t, e)
                 },
                 disabled: !r
             })

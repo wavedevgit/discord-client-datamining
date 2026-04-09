@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i, a = n(627968),
     r = n(64700),
-    s = n(311907),
-    l = n(397927),
+    l = n(311907),
+    s = n(397927),
     o = n(263063),
     d = n(290863),
     c = n(102983),
@@ -17,7 +17,7 @@ function h(e, t) {
     switch (t) {
         case "user":
         case "groupDm":
-            return 24 === e ? l._3J.SIZE_24 : l._3J.SIZE_40;
+            return 24 === e ? s._3J.SIZE_24 : s._3J.SIZE_40;
         case "guild":
             return 24 === e ? o.Ay.Sizes.SMALLER : o.Ay.Sizes.MEDIUM;
         case "default":
@@ -36,7 +36,7 @@ let m = r.memo(function(e) {
         isTyping: m = !1,
         mentionCount: p = 0,
         isMentionLowImportance: g = !1
-    } = e, f = t?.isPrivate() ?? !1, A = t?.isMultiUserDM() ?? !1, x = n?.id, I = (0, s.bG)([d.A], () => null != x ? d.A.getStatus(x) : null, [x]), E = (0, s.bG)([d.A], () => null != x && d.A.isMobileOnline(x), [x]);
+    } = e, f = t?.isPrivate() ?? !1, A = t?.isMultiUserDM() ?? !1, x = n?.id, I = (0, l.bG)([d.A], () => null != x ? d.A.getStatus(x) : null, [x]), E = (0, l.bG)([d.A], () => null != x && d.A.isMobileOnline(x), [x]);
     if (f || A) return (0, a.jsx)(c.h, {
         channel: t ?? null,
         user: n,
@@ -48,9 +48,9 @@ let m = r.memo(function(e) {
         mentionCount: p,
         isMentionLowImportance: g
     });
-    if (null == i) return (0, a.jsx)(l.oyn, {
+    if (null == i) return (0, a.jsx)(s.oyn, {
         size: h(_, "default"),
-        color: l.LU0.colors.INTERACTIVE_ICON_DEFAULT
+        color: s.LU0.colors.INTERACTIVE_ICON_DEFAULT
     });
     {
         if (null == t) return (0, a.jsx)(o.Ay, {

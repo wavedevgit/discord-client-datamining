@@ -10,8 +10,8 @@ var l = n(934551),
     s = n(975571),
     o = n(763754),
     c = n(447215),
-    d = n(888675),
-    u = n(652215),
+    u = n(888675),
+    d = n(652215),
     _ = n(985018),
     A = n(999255);
 
@@ -42,9 +42,9 @@ function m(e) {
                 className: A.p4
             }), " ", e]
         }),
-        helpdeskArticle: s.A.getArticleURL(u.MVz.SOCIAL_LAYER_CONNECTIONS)
+        helpdeskArticle: s.A.getArticleURL(d.MVz.SOCIAL_LAYER_CONNECTIONS)
     });
-    return (0, i.jsx)(d.A, {
+    return (0, i.jsx)(u.A, {
         iconNode: (0, i.jsx)(l.GameControllerIcon, {
             size: "sm"
         }),

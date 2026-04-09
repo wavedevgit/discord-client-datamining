@@ -1,12 +1,12 @@
 /** chunk id: 19925 params = (module,exports,require) **/
 n.d(t, {
-    I: () => h,
-    X: () => _
+    I: () => _,
+    X: () => h
 });
 var i = n(64700),
     a = n(311907),
-    l = n(449054),
-    r = n(417426),
+    r = n(449054),
+    l = n(417426),
     s = n(747550),
     o = n(351022),
     d = n(282026),
@@ -14,14 +14,14 @@ var i = n(64700),
     u = n(601193),
     A = n(324580);
 
-function h(e) {
+function _(e) {
     let {
         loadId: t
-    } = e, n = d.A.useField("fetchedQuery"), l = d.A.useField("categoryId"), r = d.A.useField("languageCode"), c = i.useMemo(() => ({
-        categoryId: l,
+    } = e, n = d.A.useField("fetchedQuery"), r = d.A.useField("categoryId"), l = d.A.useField("languageCode"), c = i.useMemo(() => ({
+        categoryId: r,
         query: n,
-        languageCode: r
-    }), [l, r, n]), u = (0, a.bG)([o.A], () => o.A.getGuildIds(c) ?? A.VX), h = (0, a.bG)([o.A], () => o.A.getIsFetching(c) ?? !1), _ = d.A.useField("resultsQuery"), m = _ !== n, g = i.useCallback(() => {
+        languageCode: l
+    }), [r, l, n]), u = (0, a.bG)([o.A], () => o.A.getGuildIds(c) ?? A.VX), _ = (0, a.bG)([o.A], () => o.A.getIsFetching(c) ?? !1), h = d.A.useField("resultsQuery"), m = h !== n, g = i.useCallback(() => {
         let e = o.A.getGuildIds(c),
             n = o.A.getTotal(c);
         if (null == e || null == n) return;
@@ -37,14 +37,14 @@ function h(e) {
     }, [t, c]);
     return i.useMemo(() => ({
         guildIds: u,
-        loading: m || h,
-        searchResultsQuery: _,
+        loading: m || _,
+        searchResultsQuery: h,
         loadMore: g,
-        searchCategoryId: l
-    }), [u, m, h, _, g, l])
+        searchCategoryId: r
+    }), [u, m, _, h, g, r])
 }
 
-function _(e) {
+function h(e) {
     let {
         loadId: t
     } = e, n = u.A.useField("isSearchVisible"), a = d.A.useField("query");
@@ -60,7 +60,7 @@ function _(e) {
         searchQuery: a,
         onSearchTextChange: o,
         onClearSearch: i.useCallback(() => {
-            l.gp(t), r.A.clearSearchResults(), r.A.resetSearchLayout(), d.A.setState({
+            r.gp(t), l.A.clearSearchResults(), l.A.resetSearchLayout(), d.A.setState({
                 query: "",
                 fetchedQuery: "",
                 resultsQuery: "",
@@ -75,7 +75,7 @@ function _(e) {
             let e = d.A.getField("query"),
                 n = d.A.getField("fetchedQuery");
             if ("" === e.trim() || e === n) return;
-            r.A.clearSearchResults();
+            l.A.clearSearchResults();
             let i = d.A.getField("languageCode"),
                 a = d.A.getField("categoryId");
             d.A.setState({

@@ -97,18 +97,18 @@ let g = l.memo(function(e) {
         wheelHeight: n,
         itemWidth: g,
         itemHeight: p,
-        showDeadZoneIndicator: f,
-        activeItem: _,
+        showDeadZoneIndicator: _,
+        activeItem: f,
         onItemSelect: E,
         onItemAction: x,
         interactive: C = !0,
         onClose: S,
-        children: T
-    } = e, N = l.useRef(null), I = l.useRef([]), v = l.useRef(!1), y = l.useRef(null), [b, j] = l.useState(0), [R, M] = l.useState({
+        children: I
+    } = e, T = l.useRef(null), N = l.useRef([]), v = l.useRef(!1), y = l.useRef(null), [b, j] = l.useState(0), [R, M] = l.useState({
         x: 0,
         y: 0
-    }), D = Math.abs(R.x) + Math.abs(R.y) > 0, O = l.useMemo(() => a().chunk(T, m), [T]), L = l.useCallback((e, t) => {
-        null == I.current[b] ? I.current[b] = [] : I.current[b][t] = e
+    }), D = Math.abs(R.x) + Math.abs(R.y) > 0, O = l.useMemo(() => a().chunk(I, m), [I]), L = l.useCallback((e, t) => {
+        null == N.current[b] ? N.current[b] = [] : N.current[b][t] = e
     }, [b]), P = l.useCallback((e, t) => {
         y.current = t, E(m * e + t)
     }, [E]), k = l.useCallback(() => {
@@ -138,8 +138,8 @@ let g = l.memo(function(e) {
     }, []), G = l.useCallback(e => {
         null != y.current && (e.preventDefault(), e.stopPropagation(), x?.(m * b + y.current))
     }, [x, b]), F = l.useMemo(() => (0, s.throttle)(e => {
-        if (null == N.current) return;
-        let i = N.current.getBoundingClientRect(),
+        if (null == T.current) return;
+        let i = T.current.getBoundingClientRect(),
             l = {
                 x: i.left + i.width / 2,
                 y: i.top + i.height / 2
@@ -149,24 +149,24 @@ let g = l.memo(function(e) {
                 y: e.clientY
             };
         if (U(s, l, Math.max(t, n)), v.current) {
-            null != _ && k();
+            null != f && k();
             return
         }
         let a = (0, o.wf)(l, s, Math.max(t, n));
-        for (let e = 0; e < I.current[b].length; e++) {
-            let t = I.current[b][e];
+        for (let e = 0; e < N.current[b].length; e++) {
+            let t = N.current[b][e];
             if (null == t) continue;
             let n = t.getBoundingClientRect();
             if ((0, o.lw)(l, a, n)) return void P(b, e)
         }
         k()
-    }, 16), [_, U, k, P, b, n, t]), B = l.useCallback(e => {
+    }, 16), [f, U, k, P, b, n, t]), B = l.useCallback(e => {
         if (!C) return;
         let t = b + (e.deltaY > 0 ? 1 : -1);
         t >= 0 && t < O.length && (null != y.current && (O[t].length > y.current ? P(t, y.current) : k()), j(t))
     }, [C, b, O, P, k]), H = l.useMemo(() => O[b].map((e, l) => {
         let s = h[l];
-        if (null == s) throw Error(`Too many items supplied ${T.length} expected max of ${h.length}`);
+        if (null == s) throw Error(`Too many items supplied ${I.length} expected max of ${h.length}`);
         let a = A(s.x, t, g),
             r = A(s.y, n, p);
         return (0, i.jsx)("div", {
@@ -180,14 +180,14 @@ let g = l.memo(function(e) {
             },
             children: e
         }, l)
-    }), [O, b, t, g, n, p, T.length, L]);
+    }), [O, b, t, g, n, p, I.length, L]);
     return (0, i.jsx)(r.DUT, {
         className: d.Pw,
         onMouseMove: F,
         onWheel: B,
         onClick: G,
         children: (0, i.jsxs)("div", {
-            ref: N,
+            ref: T,
             className: d._$,
             style: {
                 width: t,
@@ -234,7 +234,7 @@ let g = l.memo(function(e) {
                         cy: "144",
                         r: "103.68",
                         strokeWidth: "40.32"
-                    }), f && (0, i.jsx)("circle", {
+                    }), _ && (0, i.jsx)("circle", {
                         className: d.u1,
                         onMouseEnter: () => w(!0),
                         onMouseLeave: () => w(!1),
@@ -247,7 +247,7 @@ let g = l.memo(function(e) {
                         cy: 144 + R.y,
                         r: 28.8
                     })]
-                }), f && (0, i.jsx)("circle", {
+                }), _ && (0, i.jsx)("circle", {
                     className: d.u1,
                     onMouseEnter: () => w(!0),
                     onMouseLeave: () => w(!1),
@@ -258,7 +258,7 @@ let g = l.memo(function(e) {
                 })]
             }), (0, i.jsxs)("div", {
                 className: d.gx,
-                children: [f && (0, i.jsx)(r.DUT, {
+                children: [_ && (0, i.jsx)(r.DUT, {
                     className: d.$2,
                     onClick: S,
                     children: (0, i.jsx)(u, {

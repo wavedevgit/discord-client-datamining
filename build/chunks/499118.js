@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(311907),
     a = n(73153),
-    l = n(823448),
-    r = n(351022);
+    r = n(823448),
+    l = n(351022);
 let s = [];
 
 function o() {
@@ -14,7 +14,7 @@ function o() {
 class d extends i.Ay.Store {
     static displayName = "GlobalDiscoveryServersSearchLayoutStore";
     initialize() {
-        this.waitFor(l.A, r.A)
+        this.waitFor(r.A, l.A)
     }
     getVisibleTabs() {
         return s
@@ -26,7 +26,7 @@ let c = new d(a.h, {
     GLOBAL_DISCOVERY_SERVERS_SEARCH_COUNT_SUCCESS: function(e) {
         let {
             query: t
-        } = e, n = l.A.getCounts(t);
+        } = e, n = r.A.getCounts(t);
         if (null == n) return !1;
         s = n
     }

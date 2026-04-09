@@ -15,21 +15,21 @@ var i = n(627968),
     A = n(652215),
     _ = n(788868),
     m = n(985018),
-    p = n(939957),
-    g = n(7410),
+    g = n(939957),
+    p = n(7410),
     f = n(936037);
 
 function x() {
     return (0, h.A)() ? (0, i.jsx)("div", {
-        className: p.do,
+        className: g.do,
         children: (0, i.jsxs)("div", {
-            className: p.U6,
+            className: g.U6,
             children: [(0, i.jsx)("img", {
-                src: g,
-                className: p.Sl,
+                src: p,
+                className: g.Sl,
                 alt: ""
             }), (0, i.jsx)(o.Heading, {
-                className: p.wx,
+                className: g.wx,
                 variant: "heading-xl/semibold",
                 color: "text-default",
                 children: m.intl.string(m.t.erEf2g)
@@ -40,15 +40,15 @@ function x() {
             })]
         })
     }) : (0, i.jsxs)("div", {
-        className: p.do,
+        className: g.do,
         children: [(0, i.jsxs)("div", {
-            className: p.U6,
+            className: g.U6,
             children: [(0, i.jsx)("img", {
                 src: f,
-                className: p.Sl,
+                className: g.Sl,
                 alt: ""
             }), (0, i.jsx)(o.Heading, {
-                className: p.wx,
+                className: g.wx,
                 variant: "heading-xl/semibold",
                 color: "text-default",
                 children: m.intl.string(m.t.w4DRbZ)
@@ -76,19 +76,19 @@ function E() {
             onClick: t
         });
     return (0, i.jsxs)("div", {
-        className: p.Zj,
+        className: g.Zj,
         children: [(0, i.jsx)(s.NitroWheelIcon, {
             size: "md",
             color: d.k0.PREMIUM_TIER_2
         }), (0, i.jsx)(a.EYj, {
             variant: "text-xs/medium",
             color: "text-strong",
-            className: p.tD,
+            className: g.tD,
             children: h
         }), (0, i.jsx)(c.A, {
-            className: p.Oy,
+            className: g.Oy,
             size: r.lO.TINY,
-            shinyButtonClassName: p.Oy,
+            shinyButtonClassName: g.Oy,
             subscriptionTier: _.pe.TIER_2,
             premiumModalAnalyticsLocation: {
                 section: A.JJy.FOR_LATER_POPOUT_UPSELL

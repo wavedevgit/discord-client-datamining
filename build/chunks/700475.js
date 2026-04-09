@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(397927),
-    l = n(587895),
-    r = n(851907);
+    r = n(587895),
+    l = n(851907);
 
 function s(e) {
     let {
@@ -15,19 +15,19 @@ function s(e) {
         linkId: o,
         message: d,
         onShare: c
-    } = e, u = l.A.getApplication(t);
+    } = e, u = r.A.getApplication(t);
     if (null == u) return void c(!1, !1);
-    let A = null != (0, r.LU)({
+    let A = null != (0, l.LU)({
             applicationId: u.id
         }) ? a.KX8 : a.SYi,
-        h = !1;
+        _ = !1;
 
-    function _(e) {
-        c(e, h)
+    function h(e) {
+        c(e, _)
     }
 
     function m() {
-        h = !0
+        _ = !0
     }(0, a.mMO)(async () => {
         let {
             default: e
@@ -38,14 +38,14 @@ function s(e) {
             linkId: o,
             message: d,
             onCopyLink: m,
-            onShare: _,
+            onShare: h,
             ...n
         })
     }, {
         modalKey: "activity-share-moment-modal",
         contextKey: A,
         onCloseCallback: () => {
-            c(!1, h)
+            c(!1, _)
         }
     })
 }

@@ -1,6 +1,6 @@
 /** chunk id: 90924 params = (module,exports,require) **/
 n.d(t, {
-    BB: () => Q,
+    BB: () => X,
     B_: () => Y,
     D2: () => ee,
     Gc: () => B,
@@ -15,21 +15,21 @@ n.d(t, {
     lG: () => J,
     px: () => K,
     qG: () => V,
-    sq: () => X,
+    sq: () => Q,
     uM: () => z
 }), n(321073), n(938796), n(735438);
 var i = n(567243),
     a = n(179771),
-    l = n(562465),
-    r = n(898467),
+    r = n(562465),
+    l = n(898467),
     s = n(843472),
     o = n(956518),
     d = n(587895),
     c = n(46054),
     u = n(763754),
     A = n(611010),
-    h = n(95701),
-    _ = n(427157),
+    _ = n(95701),
+    h = n(427157),
     m = n(734057),
     g = n(71393),
     p = n(430452),
@@ -73,7 +73,7 @@ function U(e) {
 function G(e, t) {
     let n = [],
         i = e.getGuildId();
-    return [O.rbe.GUILD_CATEGORY, ...h.OU].includes(e.type) || n.push(new Promise(t => {
+    return [O.rbe.GUILD_CATEGORY, ..._.OU].includes(e.type) || n.push(new Promise(t => {
         E.A.whenReady(e.id, () => t()), s.A.fetchMessages({
             channelId: e.id,
             limit: O.EMb
@@ -101,7 +101,7 @@ function k(e) {
             channelId: e.channel_id
         }).map(M),
         n = m.A.getChannel(e.channel_id),
-        i = null != e.author ? new _.A(e.author) : void 0,
+        i = null != e.author ? new h.A(e.author) : void 0,
         a = null != e.author ? (0, u.FT)(i, n) : void 0;
     return {
         id: e.id,
@@ -129,8 +129,8 @@ function V(e, t, n) {
     let {
         mute: i,
         deaf: a,
-        selfMute: l,
-        selfDeaf: r,
+        selfMute: r,
+        selfDeaf: l,
         suppress: s,
         userId: o
     } = n, d = f.default.getUser(o);
@@ -143,8 +143,8 @@ function V(e, t, n) {
         voice_state: {
             mute: i,
             deaf: a,
-            self_mute: l,
-            self_deaf: r,
+            self_mute: r,
+            self_deaf: l,
             suppress: s
         },
         user: (0, b.A)(d)
@@ -206,7 +206,7 @@ function K(e, t, n) {
 }
 
 function q(e) {
-    return l.Bo.get({
+    return r.Bo.get({
         url: O.Rsh.APPLICATION_RPC(e),
         oldFormErrors: !0,
         retries: 3,
@@ -238,22 +238,22 @@ async function z(e, t, n) {
         } null == i && (i = A.Ay.createFromServer(await q(t)));
     let {
         id: a,
-        name: l,
-        icon: r,
+        name: r,
+        icon: l,
         coverImage: s,
         flags: c
     } = i;
     e.application = {
         id: a,
-        name: l,
-        icon: r,
+        name: r,
+        icon: l,
         coverImage: s,
         flags: c
     }
 }
 async function $(e, t, n) {
     let i = j[e];
-    null == i && (i = new r.A(t ? 2 : 60, D), j[e] = i);
+    null == i && (i = new l.A(t ? 2 : 60, D), j[e] = i);
     try {
         await i.process(n)
     } catch (e) {
@@ -263,11 +263,11 @@ async function $(e, t, n) {
     }
 }
 
-function X(e, t) {
+function Q(e, t) {
     null == t && (e.authorization.scopes = [y.hj])
 }
 
-function Q(e) {
+function X(e) {
     let t = p.Ay.getSettings(),
         n = e => Object.values(e).sort((e, t) => e.index - t.index).map(e => ({
             id: e.id,

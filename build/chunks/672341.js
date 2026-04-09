@@ -16,15 +16,15 @@ var i = n(627968),
     A = n(655377),
     g = n(816144),
     p = n(928764),
-    f = n(640708),
-    _ = n(265869),
+    _ = n(640708),
+    f = n(265869),
     E = n(715757),
     x = n(378570),
     C = n(349435),
     S = n(452082),
-    T = n(357179),
-    N = n(74114),
-    I = n(221059),
+    I = n(357179),
+    T = n(74114),
+    N = n(221059),
     v = n(513272),
     y = n(881020),
     b = n(637384),
@@ -108,14 +108,14 @@ function en(e) {
         eA = (0, F.r)(l),
         eg = m.length > 0 && m.first()?.isFirstMessageInForumPost(l),
         ep = (0, o.cI)(l),
-        ef = (0, s.bG)([v.A], () => v.A.shouldShowTopicsBar() && !ed),
-        e_ = (0, N.l)(l.id),
+        e_ = (0, s.bG)([v.A], () => v.A.shouldShowTopicsBar() && !ed),
+        ef = (0, T.l)(l.id),
         eE = (0, S.j)(l.id, X.Rx),
         ex = (0, u.E)(l.id),
         eC = (0, G.A)(),
         eS = function(e, t) {
             if (e.isDM() && null != t)
-                if (t.type === C._j.STRANGER_DANGER) return (0, i.jsx)(I.e, {
+                if (t.type === C._j.STRANGER_DANGER) return (0, i.jsx)(N.e, {
                     channelId: e.id,
                     warningId: t.id,
                     senderId: e.getRecipientId()
@@ -125,18 +125,18 @@ function en(e) {
                 warningId: t.id,
                 senderId: e.getRecipientId()
             });
-            else return (0, i.jsx)(T._, {
+            else return (0, i.jsx)(I._, {
                 channelId: e.id,
                 warningId: t.id,
                 senderId: e.getRecipientId()
             });
             return null
-        }(l, e_ ?? eE ?? ex),
-        eT = l.isForumPost() && !eg ? (0, i.jsx)(p.A, {
+        }(l, ef ?? eE ?? ex),
+        eI = l.isForumPost() && !eg ? (0, i.jsx)(p.A, {
             postId: l.id
         }) : null,
-        eN = (0, _.A)(l.id),
-        eI = (0, E.W1)(l);
+        eT = (0, f.A)(l.id),
+        eN = (0, E.W1)(l);
     (0, Y.A)();
     let ev = null,
         ey = [],
@@ -179,7 +179,7 @@ function en(e) {
             if (null != eo && eo > e.content.timestamp.getTime() * L.A.Millis.SECOND) return;
             e.type === Z.TZK.MESSAGE && null == ev && (ev = e);
             let n = e.groupId === ev?.groupId ? ev.content.id : e.groupId,
-                s = eI && e.content.isFirstMessageInForumPost(l),
+                s = eN && e.content.isFirstMessageInForumPost(l),
                 a = e.type === Z.TZK.THREAD_STARTER_MESSAGE ? H.VO : H.Ay;
             return (0, i.jsx)(a, {
                 compact: ei && !s,
@@ -189,7 +189,7 @@ function en(e) {
                 flashKey: e.flashKey,
                 id: (0, w.j)(l.id, e.content.id),
                 isLastItem: t >= el.length - 1,
-                renderContentOnly: eN || s
+                renderContentOnly: eT || s
             }, e.content.id)
         });
     ey.push(...eb);
@@ -240,16 +240,16 @@ function en(e) {
                     num_unread_summaries: c,
                     num_unread_messages: B,
                     last_ack_message_id: s,
-                    summaries_enabled_by_user: ef,
+                    summaries_enabled_by_user: e_,
                     summaries_enabled_for_channel: (0, o.pk)(l)
                 }), (0, o.pk)(l)) {
-                let s = ef ? Q.intl.format(n, {
+                let s = e_ ? Q.intl.format(n, {
                     count: B
                 }) : Q.intl.format(e, {
                     count: B,
                     timestamp: r
                 });
-                if (ef) {
+                if (e_) {
                     let e = c > 0 ? (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(a.Text, {
                             variant: "text-sm/medium",
@@ -257,7 +257,7 @@ function en(e) {
                             children: Q.intl.format(n, {
                                 count: B
                             })
-                        }), (0, i.jsx)(f.A, {
+                        }), (0, i.jsx)(_.A, {
                             style: {
                                 paddingLeft: 8,
                                 paddingRight: 8
@@ -295,7 +295,7 @@ function en(e) {
                                 children: Q.intl.format(n, {
                                     count: B
                                 })
-                            }), (0, i.jsx)(f.A, {
+                            }), (0, i.jsx)(_.A, {
                                 style: {
                                     paddingLeft: 8,
                                     paddingRight: 8
@@ -329,7 +329,7 @@ function en(e) {
             channelId: l.id
         }))
     }
-    if (null == t && (0, o.pk)(l) && ef && eC.includes(J.i.SUMMARIES) && (t = (0, i.jsx)(W.UK, {
+    if (null == t && (0, o.pk)(l) && e_ && eC.includes(J.i.SUMMARIES) && (t = (0, i.jsx)(W.UK, {
             channel: l,
             scrollManager: ea
         })), m.error) n = (0, i.jsx)(W.Ez, {
@@ -372,7 +372,7 @@ function en(e) {
         channelStreamMarkup: ey,
         newMessagesBar: t,
         jumpToPresentBar: n,
-        forumPostActionBar: eT,
+        forumPostActionBar: eI,
         safetyWarningBanner: eS
     }
 }

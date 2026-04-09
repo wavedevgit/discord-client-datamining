@@ -120,12 +120,12 @@ var O = w(M, 9, 1),
                     if (1 == N) y = O, v = k, M = 9, A = 5;
                     else if (2 == N) {
                     var B = E(e, p, 31) + 257,
-                        D = E(e, p + 10, 15) + 4,
-                        P = B + E(e, p + 5, 31) + 1;
+                        P = E(e, p + 10, 15) + 4,
+                        D = B + E(e, p + 5, 31) + 1;
                     p += 14;
-                    for (var I = new o(P), T = new o(19), L = 0; L < D; ++L) T[u[L]] = E(e, p + 3 * L, 7);
-                    p += 3 * D;
-                    for (var F = C(T), z = (1 << F) - 1, q = w(T, F, 1), L = 0; L < P;) {
+                    for (var I = new o(D), T = new o(19), L = 0; L < P; ++L) T[u[L]] = E(e, p + 3 * L, 7);
+                    p += 3 * P;
+                    for (var F = C(T), z = (1 << F) - 1, q = w(T, F, 1), L = 0; L < D;) {
                         var $ = q[E(e, p, z)];
                         p += 15 & $;
                         var U = $ >> 4;
@@ -203,13 +203,13 @@ var O = w(M, 9, 1),
         return g == r.length ? r : _(r, 0, g)
     },
     B = new o(0),
-    D = function(e, t) {
+    P = function(e, t) {
         var r = {};
         for (var a in e) r[a] = e[a];
         for (var a in t) r[a] = t[a];
         return r
     },
-    P = function(e, t, r) {
+    D = function(e, t, r) {
         for (var a = e(), n = e.toString(), o = n.slice(n.indexOf("[") + 1, n.lastIndexOf("]")).replace(/\s+/g, "").split(","), s = 0; s < a.length; ++s) {
             var i = a[s],
                 c = o[s];
@@ -235,13 +235,13 @@ var O = w(M, 9, 1),
     },
     L = function(e, t, r, a) {
         if (!I[r]) {
-            for (var o = "", s = {}, i = e.length - 1, c = 0; c < i; ++c) o = P(e[c], o, s);
+            for (var o = "", s = {}, i = e.length - 1, c = 0; c < i; ++c) o = D(e[c], o, s);
             I[r] = {
-                c: P(e[i], o, s),
+                c: D(e[i], o, s),
                 e: s
             }
         }
-        var l = D({}, I[r].e);
+        var l = P({}, I[r].e);
         return n(I[r].c + ";onmessage=function(e){for(var k in e.data)self[k]=e.data[k];onmessage=" + t.toString() + "}", r, l, T(l), a)
     },
     F = function() {

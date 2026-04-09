@@ -9,12 +9,12 @@ var i = n(627968),
     r = n(311907),
     o = n(397927),
     d = n(73153),
-    c = n(384904),
-    u = n(73825),
-    m = n(974544),
-    g = n(107834),
-    _ = n(793574),
-    x = n(688810),
+    c = n(73825),
+    u = n(974544),
+    m = n(107834),
+    g = n(793574),
+    _ = n(688810),
+    x = n(323082),
     A = n(86379),
     h = n(160946),
     p = n(459793),
@@ -44,7 +44,7 @@ let M = function(e) {
         {
             sourceAnalyticsLocations: l,
             analyticsLocations: M
-        } = (0, x.Ay)(_.A.PREMIUM_MARKETING),
+        } = (0, _.Ay)(g.A.PREMIUM_MARKETING),
         U = (0, r.bG)([C.A], () => C.A.hasFetchedSubscriptions()),
         k = (0, r.bG)([E.A], () => E.A.hasFetchedPaymentSources),
         w = (0, r.bG)([b.default], () => b.default.getCurrentUser()),
@@ -57,11 +57,11 @@ let M = function(e) {
         K = (0, v.YE)(w, P.PremiumTypes.TIER_2),
         W = (0, r.bG)([I.A], () => I.A.hasFetched);
     s.useEffect(() => {
-        W || c.xG()
+        W || x.xG()
     }, [W]), s.useEffect(() => {
         d.h.wait(async () => {
             let e = Date.now();
-            await Promise.all([c.hP(), c.$o(), (0, u.zS)(null, null, D.tF5.DISCOVERY)]), X.current = Date.now() - e, Y(!1)
+            await Promise.all([x.hP(), x.$o(), (0, c.zS)(null, null, D.tF5.DISCOVERY)]), X.current = Date.now() - e, Y(!1)
         })
     }, []), s.useEffect(() => {
         z || N.default.track(D.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
@@ -73,7 +73,7 @@ let M = function(e) {
     }, [n, B, F]);
     let Z = (0, r.bG)([S.A], () => S.A.enabled),
         q = t === P.Mf.ApplicationStoreHome,
-        Q = Z ? (0, i.jsx)(m.A, {}) : n ? (0, i.jsx)(p.uK, {}) : q && K ? (0, i.jsx)(x.f5, {
+        Q = Z ? (0, i.jsx)(u.A, {}) : n ? (0, i.jsx)(p.uK, {}) : q && K ? (0, i.jsx)(_.f5, {
             value: M,
             children: (0, i.jsx)(y.A, {
                 userId: V
@@ -83,8 +83,8 @@ let M = function(e) {
             children: (0, i.jsx)(o.y$y, {})
         });
     return null != Q ? (0, i.jsxs)(i.Fragment, {
-        children: [q && (0, i.jsx)(g.A, {}), Q]
-    }) : (0, i.jsx)(x.f5, {
+        children: [q && (0, i.jsx)(m.A, {}), Q]
+    }) : (0, i.jsx)(_.f5, {
         value: M,
         children: (0, i.jsx)(L.A, {
             entrypoint: t

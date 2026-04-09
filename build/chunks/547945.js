@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(928039),
     _ = n(636922),
     m = n(976860),
-    p = n(151282),
-    g = n(199160),
+    g = n(151282),
+    p = n(199160),
     f = n(551640),
     x = n(970244),
     E = n(253932),
@@ -38,14 +38,14 @@ let R = {
 
 function O() {
     return l.useEffect(() => {
-        (0, p.sy)()
+        (0, g.sy)()
     }, []), (0, i.jsx)(L, {})
 }
 
 function L() {
-    let e = (0, u.bG)([g.A], () => g.A.getScheduledMessagesForInbox(), []),
+    let e = (0, u.bG)([p.A], () => p.A.getScheduledMessagesForInbox(), []),
         t = l.useMemo(() => Object.values(e).sort((e, t) => new Date(e.sendAtTimestamp) > new Date(t.sendAtTimestamp) ? -1 : 1), [e]),
-        n = (0, u.bG)([g.A], () => g.A.loading, []),
+        n = (0, u.bG)([p.A], () => p.A.loading, []),
         s = l.useRef(null),
         a = (0, A.A)("scheduled-messages", s);
     return n ? (0, i.jsx)(h.y$y, {
@@ -85,7 +85,7 @@ function M(e) {
             channel: n,
             scheduledMessages: [...e[n.id]?.scheduledMessages ?? [], t]
         }), e
-    }, {}), [t]), s = (0, u.bG)([g.A], () => g.A.getMessagesPendingDeletion(), []);
+    }, {}), [t]), s = (0, u.bG)([p.A], () => p.A.getMessagesPendingDeletion(), []);
     return (0, i.jsx)(i.Fragment, {
         children: Object.entries(n).map(e => {
             let [t, {
@@ -154,7 +154,7 @@ let D = l.memo(function(e) {
                 (0, T.xb)(e)
         }
     }(t.state), A = l.useCallback(() => {
-        (0, p.mk)(t.scheduledMessageId).then(() => {
+        (0, g.mk)(t.scheduledMessageId).then(() => {
             (0, x.Re)()
         }).catch(e => {
             (0, x.kM)(e.message)

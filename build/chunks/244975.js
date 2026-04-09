@@ -11,9 +11,9 @@ var i = t(627968),
     c = t(311907),
     o = t(421380),
     u = t(397927),
-    d = t(384904),
-    m = t(793574),
-    f = t(688810),
+    d = t(793574),
+    m = t(688810),
+    f = t(323082),
     x = t(611371),
     _ = t(721923),
     h = t(954571),
@@ -75,7 +75,7 @@ function M(e) {
         ...eu
     } = e, ed = null != s, em = (0, E.V)(), ef = (0, A.O)(), ex = !ea && (em?.subscription_trial?.sku_id === K || (0, j.U9)(ef, K)) && !ed, {
         analyticsLocations: e_
-    } = (0, f.Ay)(m.A.PREMIUM_UPSELL_MODAL), eh = {
+    } = (0, m.Ay)(d.A.PREMIUM_UPSELL_MODAL), eh = {
         analyticsLocation: N,
         analyticsLocations: e_,
         analyticsSource: r,
@@ -122,7 +122,7 @@ function M(e) {
         }(t),
         eE = (0, c.bG)([g.A], () => g.A.hasFetched);
     a.useEffect(() => {
-        eE || d.xG()
+        eE || f.xG()
     }, [eE]);
     let eL = J ? l()(S.JS, S.OV, U) : l()(S.JS, U),
         eN = null;

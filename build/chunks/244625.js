@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(681154),
-    r = n(311907),
+    r = n(681154),
+    l = n(311907),
     s = n(47167),
     o = n(713654),
     d = n(263063),
     c = n(698441),
     u = n(995273),
     A = n(734057),
-    h = n(71393),
-    _ = n(287809),
+    _ = n(71393),
+    h = n(287809),
     m = n(661191),
     g = n(652215),
     p = n(985018),
@@ -59,7 +59,7 @@ function I(e) {
             default:
                 return t.timestamp
         }
-    }, [t]), N = (0, r.bG)([A.A], () => A.A.getChannel(I), [I]), S = (0, s.Ay)(N), x = N?.guild_id ?? f, v = (0, r.bG)([h.A], () => null != x ? h.A.getGuild(x) : null, [x]), b = (0, r.bG)([_.default], () => null != C ? _.default.getUser(C) : null, [C]);
+    }, [t]), N = (0, l.bG)([A.A], () => A.A.getChannel(I), [I]), S = (0, s.Ay)(N), x = N?.guild_id ?? f, v = (0, l.bG)([_.A], () => null != x ? _.A.getGuild(x) : null, [x]), b = (0, l.bG)([h.default], () => null != C ? h.default.getUser(C) : null, [C]);
     return "unknown" === n ? null : (0, i.jsx)("div", {
         className: E.kL,
         children: (0, i.jsxs)("div", {
@@ -113,10 +113,10 @@ function I(e) {
                                 return p.intl.string(p.t.bYNuVx);
                             case "contentInventory":
                                 switch (t.data.content.content_type) {
-                                    case l.ContentInventoryEntryType.CUSTOM_STATUS:
+                                    case r.ContentInventoryEntryType.CUSTOM_STATUS:
                                         return p.intl.string(p.t.fxOLPR);
-                                    case l.ContentInventoryEntryType.TOP_GAME:
-                                    case l.ContentInventoryEntryType.PLAYED_GAME:
+                                    case r.ContentInventoryEntryType.TOP_GAME:
+                                    case r.ContentInventoryEntryType.PLAYED_GAME:
                                         return p.intl.string(p.t.ktOTRQ);
                                     default:
                                         return `${t.data.content.content_type}`

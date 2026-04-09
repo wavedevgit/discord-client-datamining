@@ -4,8 +4,8 @@ n.d(t, {
 });
 var l = n(627968),
     a = n(64700),
-    i = n(311907),
-    r = n(49229),
+    r = n(311907),
+    i = n(49229),
     s = n(58149),
     d = n(632738),
     o = n(734057),
@@ -19,17 +19,17 @@ let p = e => {
         channelId: n,
         reportId: p
     } = e, {
-        isIgnored: h,
-        isBlocked: x
-    } = (0, i.cf)([c.A], () => ({
+        isIgnored: g,
+        isBlocked: h
+    } = (0, r.cf)([c.A], () => ({
         isIgnored: c.A.isIgnored(t.id),
         isBlocked: c.A.isBlocked(t.id)
-    }), [t]), g = (0, i.bG)([o.A], () => o.A.getChannel(n), [n]), A = a.useMemo(() => u.Ay.getName(g?.guild_id, g?.id, t), [g, t]), v = a.useCallback(() => {
+    }), [t]), x = (0, r.bG)([o.A], () => o.A.getChannel(n), [n]), A = a.useMemo(() => u.Ay.getName(x?.guild_id, x?.id, t), [x, t]), v = a.useCallback(() => {
         s.Ay.trackWithMetadata(_.HAw.IAR_IGNORE_USER_BUTTON_CLICKED, {
             other_user_id: t.id,
             report_id: p
-        }), r.A.ignoreUser(t.id, "web_iar_ignore_user_element", n)
-    }, [t, p, n]), b = a.useMemo(() => h || x, [h, x]);
+        }), i.A.ignoreUser(t.id, "web_iar_ignore_user_element", n)
+    }, [t, p, n]), b = a.useMemo(() => g || h, [g, h]);
     return (0, l.jsx)(d.PQ, {
         title: m.intl.formatToPlainString(m.t.U3yyFs, {
             username: A

@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(263715),
     _ = n(928568),
     m = n(842452),
-    p = n(357064),
-    g = n(985018),
+    g = n(357064),
+    p = n(985018),
     f = n(800428);
 
 function x(e) {
@@ -42,16 +42,16 @@ function x(e) {
                         className: f.q3,
                         children: [(0, i.jsx)(a.Heading, {
                             variant: "heading-md/medium",
-                            children: g.intl.string(g.t["0YV0YE"])
+                            children: p.intl.string(p.t["0YV0YE"])
                         }), (0, i.jsx)(a.Text, {
                             variant: "text-xs/normal",
                             color: "text-muted",
-                            children: g.intl.string(g.t["0UQVDL"])
+                            children: p.intl.string(p.t["0UQVDL"])
                         })]
                     }), (0, i.jsx)(a.Button, {
                         variant: "primary",
                         size: "sm",
-                        text: g.intl.string(g.t["4r+amb"]),
+                        text: p.intl.string(p.t["4r+amb"]),
                         fullWidth: !0,
                         onClick: h
                     })]
@@ -78,7 +78,7 @@ function E(e) {
     } = e, [n, E] = l.useState(!1), I = (0, s.bG)([u.A], () => u.A.getGuildId()), C = (0, s.bG)([c.A], () => c.A.hasFetchedRequestToJoinGuilds), N = (0, _.A)(), T = (0, r.A)(I), S = l.useMemo(() => {
         let e = (0, A.xW)({
             folderId: h.U.PENDING_JOIN_REQUESTS_FOLDER,
-            folderName: g.intl.string(g.t["scsU+l"]),
+            folderName: p.intl.string(p.t["scsU+l"]),
             expanded: n,
             guildIds: []
         });
@@ -111,7 +111,7 @@ function E(e) {
                 })
             }),
             renderChildNode: function(e, t, n) {
-                return e.type !== A.PJ.GUILD ? null : (0, i.jsx)(p.A, {
+                return e.type !== A.PJ.GUILD ? null : (0, i.jsx)(g.A, {
                     guildNode: e,
                     "aria-setsize": n,
                     "aria-posinset": t

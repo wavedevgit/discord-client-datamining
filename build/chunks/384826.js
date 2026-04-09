@@ -4,8 +4,8 @@ n.d(t, {
 });
 var l = n(627968),
     a = n(64700),
-    i = n(397927),
-    r = n(518977),
+    r = n(397927),
+    i = n(518977),
     s = n(153335);
 let d = e => {
     let {
@@ -19,10 +19,10 @@ let d = e => {
     a.useEffect(() => {
         p(_)
     }, [_]);
-    let h = a.useMemo(() => u.map(e => {
+    let g = a.useMemo(() => u.map(e => {
             let t = e.label;
             try {
-                t = (0, r.Gw)(e.value)
+                t = (0, i.Gw)(e.value)
             } catch {}
             return {
                 id: e.id ?? e.value,
@@ -30,17 +30,17 @@ let d = e => {
                 label: t
             }
         }).sort((e, t) => e.label.localeCompare(t.label)), [u]),
-        x = a.useCallback(e => {
+        h = a.useCallback(e => {
             null != e && (p(e), n(o, e))
         }, [n, o]);
     return (0, l.jsx)("div", {
         className: s.QB,
-        children: (0, l.jsx)(i.ZiE, {
+        children: (0, l.jsx)(r.ZiE, {
             label: c,
             value: m,
             required: t.should_submit_data,
-            onSelectionChange: x,
-            options: h,
+            onSelectionChange: h,
+            options: g,
             selectionMode: "single",
             maxOptionsVisible: 4,
             fullWidth: !0

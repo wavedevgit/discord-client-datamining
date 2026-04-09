@@ -24,8 +24,8 @@ function f(t) {
         applicationStream: n,
         onAction: f
     } = t, {
-        activeStream: T,
-        watchingOtherStream: E
+        activeStream: E,
+        watchingOtherStream: T
     } = (0, l.cf)([h.A], () => ({
         activeStream: h.A.getActiveStreamForApplicationStream(n),
         watchingOtherStream: null != n && h.A.getAllActiveStreamsForChannel(n.channelId).filter(t => {
@@ -34,23 +34,23 @@ function f(t) {
             } = t;
             return e !== n.ownerId
         }).length > 0
-    })), C = (0, l.bG)([A.A], () => A.A.getChannel(n?.channelId)), [S, _] = (0, d.zP)(C), y = (0, c.aL)(), I = null != T && null != n && T.state !== p.XYD.ENDED && T.ownerId === n.ownerId, N = t => {
-        null != n && (f?.(), o.default.selectVoiceChannel(n.channelId), I || (0, u.Nl)(n, {
+    })), C = (0, l.bG)([A.A], () => A.A.getChannel(n?.channelId)), [S, _] = (0, d.zP)(C), y = (0, c.aL)(), N = null != E && null != n && E.state !== p.XYD.ENDED && E.ownerId === n.ownerId, v = t => {
+        null != n && (f?.(), o.default.selectVoiceChannel(n.channelId), N || (0, u.Nl)(n, {
             forceMultiple: t
         }), y.dispatch(p.jej.POPOUT_CLOSE), m._.dispatch(p.jej.MODAL_CLOSE), a.A.popAll())
     };
     if (null == n) return null;
-    let v = (0, d.CT)(_);
-    return e ? v = g.intl.string(g.t.XvBdeT) : I && (v = g.intl.string(g.t["JH1SJ+"])), (0, i.jsxs)(i.Fragment, {
+    let I = (0, d.CT)(_);
+    return e ? I = g.intl.string(g.t.XvBdeT) : N && (I = g.intl.string(g.t["JH1SJ+"])), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(s.Button, {
             size: "sm",
-            variant: I ? "secondary" : "active",
+            variant: N ? "secondary" : "active",
             icon: s.Fzq,
-            text: v,
-            disabled: e || I || !S,
-            onClick: () => N(!1),
+            text: I,
+            disabled: e || N || !S,
+            onClick: () => v(!1),
             fullWidth: !0
-        }), E && !I ? (0, i.jsx)(r.m, {
+        }), T && !N ? (0, i.jsx)(r.m, {
             text: g.intl.string(g.t.wCrzut),
             children: (0, i.jsx)(s.K0, {
                 variant: "secondary",
@@ -58,7 +58,7 @@ function f(t) {
                 icon: s.vAm,
                 "aria-label": g.intl.string(g.t.wCrzut),
                 onClick: () => {
-                    N(!0)
+                    v(!0)
                 }
             })
         }) : null]

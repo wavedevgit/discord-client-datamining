@@ -5,16 +5,16 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(284009),
-    l = n.n(a),
-    r = n(765379),
+    r = n.n(a),
+    l = n(765379),
     s = n(90644),
     o = n(61330),
     d = n(609425),
     c = n(73392),
     u = n(409626),
     A = n(692969),
-    h = n(290987),
-    _ = n(427262),
+    _ = n(290987),
+    h = n(427262),
     m = n(516085),
     g = n(928636);
 n(595);
@@ -38,19 +38,19 @@ function I(e) {
                 user: t
             } = e;
             return t.id
-        })), a = n.filter(e => !i.has(e.id)), l = _.Ay.getName(t[0].user), r = null != t[1] ? _.Ay.getName(t[1].user) : null != a[0] ? _.Ay.getName(a[0]) : null;
+        })), a = n.filter(e => !i.has(e.id)), r = h.Ay.getName(t[0].user), l = null != t[1] ? h.Ay.getName(t[1].user) : null != a[0] ? h.Ay.getName(a[0]) : null;
         switch (n.length) {
             case 1:
-                return l;
+                return r;
             case 2:
                 return E.intl.format(E.t.t1DyC1, {
-                    user1: l,
-                    user2: r
+                    user1: r,
+                    user2: l
                 });
             default:
                 return E.intl.format(E.t["5CSEcJ"], {
-                    user1: l,
-                    user2: r,
+                    user1: r,
+                    user2: l,
                     extras: n.length - 2
                 })
         }
@@ -63,21 +63,21 @@ function I(e) {
             partiedMembers: a,
             voiceChannels: d,
             currentActivities: c
-        } = e, u = t.length, A = a.length - u, _ = c[0], I = _?.activity, f = _?.startedPlayingTime, C = {
+        } = e, u = t.length, A = a.length - u, h = c[0], I = h?.activity, f = h?.startedPlayingTime, C = {
             name: I?.name ?? ""
         };
-        if ((0, r.A)(I) && null != I) return {
-            subtitle: (0, i.jsx)(h.Ay, {
+        if ((0, l.A)(I) && null != I) return {
+            subtitle: (0, i.jsx)(_.Ay, {
                 start: f,
-                location: h.Ay.Locations.ACTIVITY_FEED_NEW,
+                location: _.Ay.Locations.ACTIVITY_FEED_NEW,
                 messageProps: C
             }),
             icon: null
         };
-        if (u + A === 1 && null != _) {
+        if (u + A === 1 && null != h) {
             let {
                 game: e
-            } = _;
+            } = h;
             if (null == I) return {
                 subtitle: null,
                 icon: null
@@ -93,9 +93,9 @@ function I(e) {
                         })
                     };
                     return {
-                        subtitle: (0, i.jsx)(h.Ay, {
+                        subtitle: (0, i.jsx)(_.Ay, {
                             start: f,
-                            location: h.Ay.Locations.ACTIVITY_FEED_NEW,
+                            location: _.Ay.Locations.ACTIVITY_FEED_NEW,
                             messageProps: C
                         }), icon: null != e ? (0, i.jsx)(g.A.Header.Icon, {
                             src: null != e.getIconURL(64) ? e.getIconURL(64) : n(960648)
@@ -167,10 +167,10 @@ function I(e) {
                 game: n,
                 startedPlayingTime: a
             } = e;
-            return l()(null != t, "Activity was null somehow"), {
-                subtitle: (0, i.jsx)(h.Ay, {
+            return r()(null != t, "Activity was null somehow"), {
+                subtitle: (0, i.jsx)(_.Ay, {
                     start: a,
-                    location: h.Ay.Locations.ACTIVITY_FEED_NEW,
+                    location: _.Ay.Locations.ACTIVITY_FEED_NEW,
                     messageProps: C
                 }),
                 icon: null != n && null != n.getIconURL(64) ? (0, i.jsx)(g.A.Header.Icon, {

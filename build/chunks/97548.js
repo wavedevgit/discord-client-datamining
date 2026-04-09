@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     r = n(311907),
-    s = n(397927),
-    l = n(684013),
+    l = n(397927),
+    s = n(684013),
     o = n(964486),
     d = n(313961),
     c = n(652896),
@@ -31,23 +31,23 @@ function y(e) {
     let y, T, N, {
             id: w,
             widget: L,
-            size: j,
-            locked: O,
+            size: O,
+            locked: j,
             padding: P,
-            borderWidth: R,
-            opacity: D,
-            horizontal: M,
-            pinned: k,
+            borderWidth: D,
+            opacity: R,
+            horizontal: k,
+            pinned: M,
             anchorTop: G,
             anchorLeft: z,
             showEmpty: U = !0
         } = e,
-        V = M ? b.IV.HORIZONTAL : b.IV.VERTICAL,
+        V = k ? b.IV.HORIZONTAL : b.IV.VERTICAL,
         F = V === b.IV.VERTICAL,
         W = (0, r.bG)([p.A], () => {
             let e = p.A.getWidget(w);
-            return !!(0, b.dO)(e) && !O && (e.meta.showAllStreams ?? !0)
-        }, [w, O]),
+            return !!(0, b.dO)(e) && !j && (e.meta.showAllStreams ?? !0)
+        }, [w, j]),
         H = (0, r.bG)([g.A], () => g.A.getVoiceChannelId()),
         B = (0, r.bG)([m.A], () => m.A.getChannel(H)),
         Y = (0, r.bG)([h.default], () => h.default.getId()),
@@ -55,7 +55,7 @@ function y(e) {
             streamParticipants: X,
             activeStreams: Z,
             participantsVersion: K
-        } = (t = G && F || z && M, n = !G && F || !z && M, y = (0, r.yK)([_.A], () => null == H ? [] : _.A.getAllActiveStreamsForChannel(H)), T = a.useMemo(() => new Set(y.map(e => (0, c._z)(e))), [y]), N = (0, r.bG)([d.A], () => null == H ? -1 : d.A.getParticipantsVersion(H)), {
+        } = (t = G && F || z && k, n = !G && F || !z && k, y = (0, r.yK)([_.A], () => null == H ? [] : _.A.getAllActiveStreamsForChannel(H)), T = a.useMemo(() => new Set(y.map(e => (0, c._z)(e))), [y]), N = (0, r.bG)([d.A], () => null == H ? -1 : d.A.getParticipantsVersion(H)), {
             streamParticipants: (0, r.yK)([d.A, _.A], () => {
                 if (null == H) return [];
 
@@ -93,9 +93,9 @@ function y(e) {
         } = (0, E.K2)({
             tileCount: J,
             padding: P,
-            borderWidth: R,
+            borderWidth: D,
             isVertical: F,
-            widgetSize: j
+            widgetSize: O
         }),
         ea = {
             id: w,
@@ -103,7 +103,7 @@ function y(e) {
             layout: V,
             participants: X.length,
             padding: P,
-            borderWidth: R,
+            borderWidth: D,
             widgetMinMaxSizes: ei,
             containerSize: {
                 width: ee,
@@ -115,7 +115,7 @@ function y(e) {
                 bottom: Q?.height ?? et,
                 right: Q?.width ?? ee
             },
-            locked: O
+            locked: j
         };
     (0, E.k1)({
         id: w,
@@ -123,31 +123,31 @@ function y(e) {
         layout: V,
         widgetLayoutSpecs: ea
     });
-    let er = null == B || 0 === Z.size && O || 0 === J && !O;
+    let er = null == B || 0 === Z.size && j || 0 === J && !j;
     return (a.useEffect(() => {
-        l.A.setGpuBoostRequested(f.y7.OVERLAY_VIDEO_STREAM_RENDERING, !er)
+        s.A.setGpuBoostRequested(f.y7.OVERLAY_VIDEO_STREAM_RENDERING, !er)
     }, [er]), (0, o.Ay)(() => () => {
-        l.A.setGpuBoostRequested(f.y7.OVERLAY_VIDEO_STREAM_RENDERING, !1)
-    }), (er || !k) && O) ? null : er && !O ? U ? O ? null : (0, i.jsx)(A.g, {
+        s.A.setGpuBoostRequested(f.y7.OVERLAY_VIDEO_STREAM_RENDERING, !1)
+    }), (er || !M) && j) ? null : er && !j ? U ? j ? null : (0, i.jsx)(A.g, {
         emptyText: C.intl.string(C.t["T6+rXy"]),
-        icon: s.Fzq,
+        icon: l.Fzq,
         absolute: !0
     }) : null : (0, i.jsx)("div", {
         className: S.u,
         style: {
-            opacity: D
+            opacity: R
         },
         ref: en,
         children: (0, i.jsx)(x.A, {
             widgetId: w,
             tileWidth: q,
             tileHeight: $,
-            locked: O,
+            locked: j,
             layout: V,
             activeStreams: Z,
             streamParticipants: X,
             participantsVersion: K,
-            pinned: k,
+            pinned: M,
             padding: P
         })
     })

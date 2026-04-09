@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(793574),
     _ = n(688810),
     m = n(309698),
-    p = n(915089),
-    g = n(5180),
+    g = n(915089),
+    p = n(5180),
     f = n(227004),
     x = n(581007),
     E = n(522435),
@@ -79,7 +79,7 @@ function em(e) {
         density: e
     }) + 2
 }
-class ep extends l.PureComponent {
+class eg extends l.PureComponent {
     static contextType = a.nC;
     _list = null;
     unreadTopRef = l.createRef();
@@ -491,12 +491,12 @@ class ep extends l.PureComponent {
             }
         }
         if (c.isPlaceholderRow(t, n)) return null;
-        let p = c.getChannelFromSectionRow(t, n);
-        if (null == p) return null;
+        let g = c.getChannelFromSectionRow(t, n);
+        if (null == g) return null;
         let {
-            category: g,
+            category: p,
             channel: x
-        } = p, E = g instanceof B.xu, C = x.record, N = `${t}${x.id}`;
+        } = g, E = p instanceof B.xu, C = x.record, N = `${t}${x.id}`;
         switch (C.type) {
             case ec.rbe.GUILD_ANNOUNCEMENT:
             case ec.rbe.GUILD_TEXT:
@@ -531,7 +531,7 @@ class ep extends l.PureComponent {
                     position: x.position,
                     selected: r === x.id,
                     connected: d === x.id,
-                    collapsed: x.isCollapsed || g.isCollapsed,
+                    collapsed: x.isCollapsed || p.isCollapsed,
                     voiceStates: u[x.id] ?? [],
                     speakerVoiceStates: A[x.id] ?? [],
                     disableManageChannels: h,
@@ -545,7 +545,7 @@ class ep extends l.PureComponent {
                     position: x.position,
                     selected: r === x.id,
                     connected: d === x.id,
-                    collapsed: x.isCollapsed || g.isCollapsed,
+                    collapsed: x.isCollapsed || p.isCollapsed,
                     voiceStates: u[x.id],
                     subtitle: x.subtitle,
                     disableManageChannels: h,
@@ -678,7 +678,7 @@ class ep extends l.PureComponent {
             selectedGuildId: n,
             density: l
         } = this.props, s = {};
-        (0, g.ai)(n) && (s["data-favorites"] = !0);
+        (0, p.ai)(n) && (s["data-favorites"] = !0);
         let {
             ref: a,
             ...r
@@ -731,7 +731,7 @@ class ep extends l.PureComponent {
             guildChannelsVersion: t,
             showNewUnreadsBar: n
         } = this.props;
-        return (0, i.jsx)(p.V0, {
+        return (0, i.jsx)(g.V0, {
             children: s => (0, i.jsx)(d.Fmo, {
                 component: (0, i.jsx)(d.AC4, {
                     children: (0, i.jsx)(d.H, {
@@ -763,14 +763,14 @@ class ep extends l.PureComponent {
         })
     }
 }
-let eg = e => {
+let ep = e => {
     let {
         guildId: t,
         selectedChannelId: n,
         selectedVoiceChannelId: s
     } = e, d = (0, o.bG)([h.A], () => h.A.keyboardModeEnabled), {
         analyticsLocations: c
-    } = (0, _.Ay)(A.A.GUILD_CHANNEL_LIST), m = (0, o.bG)([G.A], () => G.A.getChannel(n)), p = (0, o.bG)([G.A], () => G.A.getChannel(s)), g = (0, o.bG)([w.A], () => w.A.getGuildId()), f = (0, T.jN)(t), x = l.useRef(null), E = l.useCallback((e, t) => {
+    } = (0, _.Ay)(A.A.GUILD_CHANNEL_LIST), m = (0, o.bG)([G.A], () => G.A.getChannel(n)), g = (0, o.bG)([G.A], () => G.A.getChannel(s)), p = (0, o.bG)([w.A], () => w.A.getGuildId()), f = (0, T.jN)(t), x = l.useRef(null), E = l.useCallback((e, t) => {
         let n = x.current;
         null != n && (ec.Ut1.test(t) || (0, eu.jq)(t) ? n.scrollToChannel(t, !1, 16, () => {
             requestAnimationFrame(() => document.querySelector(e)?.focus())
@@ -801,14 +801,14 @@ let eg = e => {
             section: ec.JJy.GUILD_CHANNEL_LIST,
             children: (0, i.jsx)(a.hD, {
                 navigator: N,
-                children: (0, i.jsx)(ep, {
+                children: (0, i.jsx)(eg, {
                     ...e,
                     listNavigator: N,
                     ref: x,
                     selectedChannel: m,
-                    selectedVoiceChannel: p,
+                    selectedVoiceChannel: g,
                     stageChannelSpeakerVoiceStates: b,
-                    selectedGuildId: g,
+                    selectedGuildId: p,
                     optInEnabled: f
                 })
             })
@@ -876,7 +876,7 @@ function ef(e) {
                 })]
             })]
         })
-    }) : (0, i.jsx)(eg, {
+    }) : (0, i.jsx)(ep, {
         ...e,
         guildChannels: t,
         guildChannelsVersion: 0,
@@ -893,7 +893,7 @@ function ex(e) {
         {
             density: l
         } = (0, d.wRf)();
-    return (0, i.jsx)(eg, {
+    return (0, i.jsx)(ep, {
         ...e,
         ...n,
         density: l

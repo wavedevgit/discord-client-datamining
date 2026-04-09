@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     r = n(442433),
-    s = n(95701),
-    l = n(652215);
+    l = n(95701),
+    s = n(652215);
 
 function o(e) {
     let {
@@ -24,7 +24,7 @@ function o(e) {
                     ...n,
                     channel: t,
                     selected: !1,
-                    widgetType: l.uss.TEXT_CHAT_V3
+                    widgetType: s.uss.TEXT_CHAT_V3
                 })
             });
             if (t.isDM() && null != d) return void(0, r.L3)(e, async () => {
@@ -36,7 +36,7 @@ function o(e) {
                     user: d,
                     channel: t,
                     showModalItems: !1,
-                    widgetType: l.uss.TEXT_CHAT_V3
+                    widgetType: s.uss.TEXT_CHAT_V3
                 })
             });
             if (t.isModeratorReportChannel()) return void(0, r.L3)(e, async () => {
@@ -46,10 +46,10 @@ function o(e) {
                 return n => (0, i.jsx)(e, {
                     ...n,
                     channel: t,
-                    widgetType: l.uss.TEXT_CHAT_V3
+                    widgetType: s.uss.TEXT_CHAT_V3
                 })
             });
-            if ((0, s.ay)(t.type)) {
+            if ((0, l.ay)(t.type)) {
                 if (null == o) return;
                 (0, r.L3)(e, async () => {
                     let {
@@ -59,7 +59,7 @@ function o(e) {
                         ...n,
                         channel: t,
                         guild: o,
-                        widgetType: l.uss.TEXT_CHAT_V3
+                        widgetType: s.uss.TEXT_CHAT_V3
                     })
                 });
                 return
@@ -72,7 +72,7 @@ function o(e) {
                     ...n,
                     channel: t,
                     guild: o,
-                    widgetType: l.uss.TEXT_CHAT_V3
+                    widgetType: s.uss.TEXT_CHAT_V3
                 })
             })
         }

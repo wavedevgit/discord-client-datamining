@@ -20,13 +20,13 @@ let p = {
         [A.vkP.CONNECTING]: g._6,
         [A.vkP.ERROR]: g.Il
     },
-    f = {
+    _ = {
         [A.bFR.FINE]: g.LP,
         [A.bFR.AVERAGE]: g.mq,
         [A.bFR.BAD]: g.yA,
         [A.bFR.UNKNOWN]: null
     },
-    _ = {
+    f = {
         [A.bFR.FINE]: o.QtE,
         [A.bFR.AVERAGE]: o.jHk,
         [A.bFR.BAD]: o.RIK,
@@ -38,7 +38,7 @@ function E(e) {
         quality: t,
         largePing: n,
         ...l
-    } = e, s = _[t];
+    } = e, s = f[t];
     return (0, i.jsx)(s, {
         className: a()(g.hU, {
             [g.kV]: n
@@ -52,26 +52,26 @@ function x(e) {
         quality: t,
         lastPing: n,
         state: s,
-        className: _,
+        className: f,
         children: x,
         channelId: C,
         childrenAsSubtitle: S,
-        connectionStatusTextVariant: T,
-        hasVideo: N
-    } = e, I = l.useRef(null), v = s === A.S7L.RTC_CONNECTED, y = l.useCallback(e => (0, i.jsx)(h.A, {
+        connectionStatusTextVariant: I,
+        hasVideo: T
+    } = e, N = l.useRef(null), v = s === A.S7L.RTC_CONNECTED, y = l.useCallback(e => (0, i.jsx)(h.A, {
         ...e,
         channelId: C
     }), [C]), {
         connectionStatus: b,
         connectionStatusText: j
-    } = u.A.getStatus(s, N);
+    } = u.A.getStatus(s, T);
     return (0, i.jsxs)("div", {
         className: g.pe,
         children: [(0, i.jsx)("div", {
-            className: a()(g.yH, f[t], _),
-            ref: I,
+            className: a()(g.yH, _[t], f),
+            ref: N,
             children: (0, i.jsx)(o.YNO, {
-                targetElementRef: I,
+                targetElementRef: N,
                 renderPopout: y,
                 position: "top",
                 children: e => {
@@ -99,8 +99,8 @@ function x(e) {
                                 },
                                 children: (0, i.jsx)(m.A, {
                                     text: j,
-                                    textVariant: T,
-                                    hasVideo: N,
+                                    textVariant: I,
+                                    hasVideo: T,
                                     className: p[b],
                                     hasConnectedChannel: null != C
                                 })

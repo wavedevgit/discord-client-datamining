@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i, a = n(627968),
     r = n(64700),
-    s = n(503698),
-    l = n.n(s),
+    l = n(503698),
+    s = n.n(l),
     o = n(687498),
     d = n(52133),
     c = n(203982),
@@ -199,10 +199,10 @@ class b extends r.Component {
             },
             state: {
                 operation: r,
-                operationStarted: s
+                operationStarted: l
             }
         } = this;
-        !(null == r || !s && Math.pow(i - t, 2) + Math.pow(a - n, 2) < 3) && ("MOVE" === r ? this.handleDragMove(t, n) : p.has(r) && this.handleResizeMove(t, n))
+        !(null == r || !l && Math.pow(i - t, 2) + Math.pow(a - n, 2) < 3) && ("MOVE" === r ? this.handleDragMove(t, n) : p.has(r) && this.handleResizeMove(t, n))
     };
     handleResizeMouseDown(e, t) {
         let {
@@ -220,8 +220,8 @@ class b extends r.Component {
                 targetWindow: a,
                 active: r,
                 container: {
-                    maxX: s,
-                    maxY: l
+                    maxX: l,
+                    maxY: s
                 }
             }
         } = this;
@@ -229,7 +229,7 @@ class b extends r.Component {
         let {
             width: o,
             height: d
-        } = x(i, this.size), c = (0, u.Ly)(this.anchor, s, l, o, d);
+        } = x(i, this.size), c = (0, u.Ly)(this.anchor, l, s, o, d);
         if ("MOVE" === e) {
             let {
                 x: e,
@@ -279,8 +279,8 @@ class b extends r.Component {
                 container: {
                     maxX: a,
                     maxY: r,
-                    minX: s,
-                    minY: l
+                    minX: l,
+                    minY: s
                 },
                 onDragStart: o,
                 onDrag: d,
@@ -295,7 +295,7 @@ class b extends r.Component {
             }
         } = this;
         if (null == n) return null;
-        e = Math.max(Math.min(a, e), s), t = Math.max(Math.min(r, t), l);
+        e = Math.max(Math.min(a, e), l), t = Math.max(Math.min(r, t), s);
         let {
             width: p,
             height: g
@@ -321,8 +321,8 @@ class b extends r.Component {
                 container: {
                     maxX: a,
                     maxY: r,
-                    minX: s,
-                    minY: l
+                    minX: l,
+                    minY: s
                 },
                 onDragStart: o,
                 onDrag: c,
@@ -337,7 +337,7 @@ class b extends r.Component {
             startY: g
         } = this.dragState, f = 0, A = 0;
         if (null == h) return;
-        switch (e = Math.max(Math.min(a, e), s), t = Math.max(Math.min(r, t), l), h) {
+        switch (e = Math.max(Math.min(a, e), l), t = Math.max(Math.min(r, t), s), h) {
             case "RESIZE_EAST":
             case "RESIZE_SOUTH_EAST":
             case "RESIZE_NORTH_EAST":
@@ -405,8 +405,8 @@ class b extends r.Component {
             } = this.props.container, {
                 width: n,
                 height: a
-            } = x(this.ref.current, this.size), r = (0, u.Ly)(this.anchor, e, t, n, a), s = (0, u.h1)(r);
-            this.setDOMPositions(s), this.setDOMSize({
+            } = x(this.ref.current, this.size), r = (0, u.Ly)(this.anchor, e, t, n, a), l = (0, u.h1)(r);
+            this.setDOMPositions(l), this.setDOMSize({
                 width: n,
                 height: a,
                 fixed: this.size.fixed
@@ -458,46 +458,46 @@ class b extends r.Component {
         return (0, a.jsxs)(a.Fragment, {
             children: [e ? (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)("div", {
-                    className: l()(h.M$, {
+                    className: s()(h.M$, {
                         [h.An]: n
                     }),
                     onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_NORTH")
                 }), (0, a.jsx)("div", {
-                    className: l()(h.Q8, {
+                    className: s()(h.Q8, {
                         [h.An]: n
                     }),
                     onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_SOUTH")
                 })]
             }) : null, t ? (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)("div", {
-                    className: l()(h.cz, {
+                    className: s()(h.cz, {
                         [h.zC]: n
                     }),
                     onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_EAST")
                 }), (0, a.jsx)("div", {
-                    className: l()(h._J, {
+                    className: s()(h._J, {
                         [h.zC]: n
                     }),
                     onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_WEST")
                 })]
             }) : null, t && e ? (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)("div", {
-                    className: l()(h.DS, {
+                    className: s()(h.DS, {
                         [h.Ke]: n
                     }),
                     onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_NORTH_WEST")
                 }), (0, a.jsx)("div", {
-                    className: l()(h.Bc, {
+                    className: s()(h.Bc, {
                         [h.UJ]: n
                     }),
                     onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_NORTH_EAST")
                 }), (0, a.jsx)("div", {
-                    className: l()(h.rL, {
+                    className: s()(h.rL, {
                         [h.UJ]: n
                     }),
                     onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_SOUTH_WEST")
                 }), (0, a.jsx)("div", {
-                    className: l()(h.Rl, {
+                    className: s()(h.Rl, {
                         [h.Ke]: n
                     }),
                     onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_SOUTH_EAST")
@@ -519,7 +519,7 @@ class b extends r.Component {
             setLockExtras: n
         } = this, i = e?.(n);
         return null != i ? (0, a.jsx)("div", {
-            className: l()({
+            className: s()({
                 [h.Q4]: !0,
                 [h.VO]: null != t.bottom && null == t.top,
                 [h.ao]: null != t.right && null == t.left
@@ -538,7 +538,7 @@ class b extends r.Component {
                 borderRadius: r = 12
             },
             state: {
-                operation: s
+                operation: l
             }
         } = this;
         return {
@@ -549,7 +549,7 @@ class b extends r.Component {
                 borderWidth: a,
                 padding: i,
                 borderRadius: r + a + i,
-                zIndex: null != s ? 1e3 : void 0,
+                zIndex: null != l ? 1e3 : void 0,
                 visibility: e ? "hidden" : void 0
             }
         }
@@ -564,8 +564,8 @@ class b extends r.Component {
                 locked: a
             },
             size: r,
-            anchor: s,
-            setLockExtras: l,
+            anchor: l,
+            setLockExtras: s,
             state: {
                 anchorTopOverride: o,
                 anchorLeftOverride: d
@@ -574,12 +574,12 @@ class b extends r.Component {
         return e({
             dragStart: this.handleOperationStart,
             dragOperation: this.state.operation,
-            anchorTop: null != o ? o : null != s.top,
-            anchorLeft: null != d ? d : null != s.left,
+            anchorTop: null != o ? o : null != l.top,
+            anchorLeft: null != d ? d : null != l.left,
             size: r,
             padding: n,
             borderWidth: i,
-            setLockExtras: l,
+            setLockExtras: s,
             locked: a,
             hidden: t,
             showEmpty: this.state.lockExtras
@@ -595,16 +595,16 @@ class b extends r.Component {
                 forceShowExtras: r
             },
             state: {
-                operationStarted: s,
+                operationStarted: l,
                 lockExtras: d
             }
         } = this;
         return (0, a.jsxs)(o.animated.div, {
             ref: this.ref,
             style: this.getInlineStyles(),
-            className: l()({
+            className: s()({
                 [h.iE]: !0,
-                [h.MQ]: s,
+                [h.MQ]: l,
                 [h.YR]: !n,
                 [h.sG]: r && n,
                 [h.vP]: d

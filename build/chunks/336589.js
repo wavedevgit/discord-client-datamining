@@ -9,8 +9,8 @@ var i = n(627968),
     s = n(355622),
     o = n(148355),
     c = n(406704),
-    d = n(696451),
-    u = n(71393),
+    u = n(696451),
+    d = n(71393),
     _ = n(576705),
     A = n(287809),
     m = n(460350),
@@ -52,13 +52,13 @@ let g = e => {
         let {
             message: t,
             channel: n
-        } = e, l = n.getGuildId(), r = (0, a.bG)([A.default, _.A, u.A, d.Ay], () => {
+        } = e, l = n.getGuildId(), r = (0, a.bG)([A.default, _.A, d.A, u.Ay], () => {
             let e = A.default.getCurrentUser(),
                 i = (0, c.UJ)(n),
                 a = _.A.can(T.xBc.SEND_MESSAGES, n),
-                r = null != l && null != e && d.Ay.getMember(l, e.id)?.isPending,
+                r = null != l && null != e && u.Ay.getMember(l, e.id)?.isPending,
                 s = t.author.bot,
-                o = u.A.getGuild(l),
+                o = d.A.getGuild(l),
                 m = null != o && (o.systemChannelFlags & T.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
             return a && !i && !r && !s && m
         });

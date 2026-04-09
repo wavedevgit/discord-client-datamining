@@ -1,6 +1,6 @@
 /** chunk id: 672834 params = (module,exports,require) **/
 n.d(t, {
-    A: () => ey
+    A: () => ej
 });
 var i = n(627968),
     l = n(64700),
@@ -9,8 +9,8 @@ var i = n(627968),
     s = n(442433),
     o = n(843472),
     c = n(956793),
-    d = n(401843),
-    u = n(155718),
+    u = n(401843),
+    d = n(155718),
     _ = n(626584),
     A = n(659859),
     m = n(785823),
@@ -33,15 +33,15 @@ var i = n(627968),
     U = n(105530),
     P = n(353202),
     v = n(747926),
-    j = n(336589),
-    y = n(961350),
+    y = n(336589),
+    j = n(961350),
     k = n(470710),
     b = n(734057),
     G = n(71393),
     H = n(576705),
-    F = n(290863),
-    B = n(309010),
-    w = n(287809),
+    w = n(290863),
+    F = n(309010),
+    B = n(287809),
     V = n(977997),
     X = n(203982),
     q = n(562153),
@@ -63,8 +63,8 @@ var i = n(627968),
     es = n(986533),
     eo = n(394388),
     ec = n(320381),
-    ed = n(749795),
-    eu = n(821241),
+    eu = n(749795),
+    ed = n(821241),
     e_ = n(541171),
     eA = n(229673),
     em = n(494086),
@@ -95,15 +95,15 @@ function eP(e) {
         author: s
     } = t, {
         guild_id: o
-    } = n, c = t.getChannelId(), d = (0, a.bG)([G.A], () => G.A.getGuild(o), [o]), u = l.useCallback(() => {
-        null != d && (0, E.K4)({
-            guildId: d.id,
+    } = n, c = t.getChannelId(), u = (0, a.bG)([G.A], () => G.A.getGuild(o), [o]), d = l.useCallback(() => {
+        null != u && (0, E.K4)({
+            guildId: u.id,
             location: {
                 section: eD.JJy.CHANNEL_TEXT_AREA,
                 object: eD.ZSU.BOOST_ANNOUNCEMENT_UPSELL
             }
         })
-    }, [d]), _ = (0, Z.P)({
+    }, [u]), _ = (0, Z.P)({
         user: s,
         channelId: c,
         guildId: n.guild_id,
@@ -113,9 +113,9 @@ function eP(e) {
     return (0, i.jsx)(eO.Ay, {
         message: t,
         compact: r,
-        guild: d,
+        guild: u,
         usernameHook: _,
-        onClickMessage: u
+        onClickMessage: d
     })
 }
 
@@ -136,7 +136,7 @@ function ev(e) {
         usernameHook: a
     })
 }
-let ej = Object.freeze({
+let ey = Object.freeze({
         [eD.lAJ.DEFAULT]: void 0,
         [eD.lAJ.REPLY]: void 0,
         [eD.lAJ.CHAT_INPUT_COMMAND]: void 0,
@@ -148,12 +148,12 @@ let ej = Object.freeze({
                 compact: l
             } = e, {
                 author: r
-            } = t, s = t.getChannelId(), o = (0, a.bG)([w.default], () => w.default.getUser(t.mentions[0]), [t]), c = q.Ay.getName(null, s, o), d = (0, Z.P)({
+            } = t, s = t.getChannelId(), o = (0, a.bG)([B.default], () => B.default.getUser(t.mentions[0]), [t]), c = q.Ay.getName(null, s, o), u = (0, Z.P)({
                 user: r,
                 channelId: s,
                 guildId: n.guild_id,
                 messageId: t.id
-            }), u = (0, Z.P)({
+            }), d = (0, Z.P)({
                 user: o,
                 channelId: s,
                 guildId: n.guild_id,
@@ -164,14 +164,14 @@ let ej = Object.freeze({
                 channel: n,
                 compact: l,
                 targetUser: o,
-                actorUsernameHook: d,
-                targetUsernameHook: u
+                actorUsernameHook: u,
+                targetUsernameHook: d
             }) : (0, i.jsx)(em.A, {
                 message: t,
                 compact: l,
                 otherUsername: c,
-                usernameHook: d,
-                otherUsernameHook: u
+                usernameHook: u,
+                otherUsernameHook: d
             })
         },
         [eD.lAJ.RECIPIENT_REMOVE]: function(e) {
@@ -181,12 +181,12 @@ let ej = Object.freeze({
                 compact: l
             } = e, {
                 author: r
-            } = t, s = t.getChannelId(), o = (0, a.bG)([w.default], () => w.default.getUser(t.mentions[0]), [t]), c = (0, Z.P)({
+            } = t, s = t.getChannelId(), o = (0, a.bG)([B.default], () => B.default.getUser(t.mentions[0]), [t]), c = (0, Z.P)({
                 user: r,
                 channelId: s,
                 guildId: n.guild_id,
                 messageId: t.id
-            }), d = (0, Z.P)({
+            }), u = (0, Z.P)({
                 user: o,
                 channelId: s,
                 guildId: n.guild_id,
@@ -198,14 +198,14 @@ let ej = Object.freeze({
                 compact: l,
                 targetUser: o,
                 actorUsernameHook: c,
-                targetUsernameHook: d
+                targetUsernameHook: u
             }) : null != o && o.id !== r.id ? (0, i.jsx)(eE.A, {
                 message: t,
                 channel: n,
                 compact: l,
                 usernameHook: c,
                 otherUser: o,
-                otherUsernameHook: d
+                otherUsernameHook: u
             }) : (0, i.jsx)(eE.A, {
                 message: t,
                 channel: n,
@@ -220,9 +220,9 @@ let ej = Object.freeze({
             } = e, {
                 id: s,
                 author: o
-            } = t, d = y.default.getId(), u = t.getChannelId(), _ = (0, a.bG)([k.A], () => k.A.isCallActive(u, s), [u, s]), A = (0, a.bG)([V.A], () => V.A.getVoiceState(eD.ME, d)), m = !_ && null != t.call && !t.call.participants.includes(d), E = _ && (null == A || A.channelId !== u), T = l.useCallback(() => c.default.selectVoiceChannel(u), [u]), I = (0, Z.P)({
+            } = t, u = j.default.getId(), d = t.getChannelId(), _ = (0, a.bG)([k.A], () => k.A.isCallActive(d, s), [d, s]), A = (0, a.bG)([V.A], () => V.A.getVoiceState(eD.ME, u)), m = !_ && null != t.call && !t.call.participants.includes(u), E = _ && (null == A || A.channelId !== d), T = l.useCallback(() => c.default.selectVoiceChannel(d), [d]), I = (0, Z.P)({
                 user: o,
-                channelId: u,
+                channelId: d,
                 guildId: r.guild_id,
                 messageId: t.id,
                 enableDisplayNameStyles: !0
@@ -283,7 +283,7 @@ let ej = Object.freeze({
             } = e, {
                 author: r
             } = t, s = t.getChannelId(), o = l.useCallback(() => {
-                if (B.A.getChannelId() !== s) {
+                if (F.A.getChannelId() !== s) {
                     let e = b.A.getChannel(s);
                     null != e && (0, M.uh)(e.guild_id, e.id)
                 }
@@ -319,7 +319,7 @@ let ej = Object.freeze({
                     message: t,
                     compact: n,
                     usernameHook: s
-                }), (0, i.jsx)(j.I, {
+                }), (0, i.jsx)(y.I, {
                     channel: l,
                     message: t
                 })]
@@ -359,13 +359,13 @@ let ej = Object.freeze({
                     id: o
                 },
                 messageReference: c
-            } = t, u = t.getChannelId(), _ = (0, a.bG)([F.A], () => F.A.findActivity(o, e => e.type === eD.$pd.PLAYING), [o]), A = (0, a.bG)([b.A], () => null != c ? b.A.getChannel(c.channel_id) : null, [c]), m = c?.guild_id, E = (0, Z.P)({
+            } = t, d = t.getChannelId(), _ = (0, a.bG)([w.A], () => w.A.findActivity(o, e => e.type === eD.$pd.PLAYING), [o]), A = (0, a.bG)([b.A], () => null != c ? b.A.getChannel(c.channel_id) : null, [c]), m = c?.guild_id, E = (0, Z.P)({
                 user: s,
-                channelId: u,
+                channelId: d,
                 guildId: r.guild_id,
                 messageId: t.id
             }), T = l.useCallback(() => {
-                null != A && null != m && (0, d.Nl)({
+                null != A && null != m && (0, u.Nl)({
                     streamType: eL.U4.GUILD,
                     ownerId: o,
                     channelId: A.id,
@@ -407,14 +407,14 @@ let ej = Object.freeze({
                 channelId: t.channel_id,
                 guildId: a.guild_id,
                 messageId: t.id
-            }), d = l.useCallback(async e => {
+            }), u = l.useCallback(async e => {
                 let n = t.messageReference?.channel_id;
                 if (null != n) {
                     await P.A.loadThread(n);
                     let t = b.A.getChannel(n);
                     null != t && (0, v.JA)(t, e.shiftKey)
                 }
-            }, [t]), u = l.useCallback(() => {
+            }, [t]), d = l.useCallback(() => {
                 (0, r.mMO)(async () => {
                     let {
                         default: e
@@ -440,8 +440,8 @@ let ej = Object.freeze({
                 message: t,
                 compact: o,
                 usernameHook: c,
-                onClickThread: d,
-                onClickViewThreads: u,
+                onClickThread: u,
+                onClickViewThreads: d,
                 onContextMenuThread: _
             })
         },
@@ -472,7 +472,7 @@ let ej = Object.freeze({
                 guildId: l.guild_id,
                 messageId: t.id
             });
-            return (0, i.jsx)(eu.A, {
+            return (0, i.jsx)(ed.A, {
                 message: t,
                 compact: n,
                 channel: l,
@@ -490,7 +490,7 @@ let ej = Object.freeze({
                 guildId: l.guild_id,
                 messageId: t.id
             });
-            return (0, i.jsx)(ed.A, {
+            return (0, i.jsx)(eu.A, {
                 message: t,
                 compact: n,
                 channel: l,
@@ -504,7 +504,7 @@ let ej = Object.freeze({
                 channel: n,
                 compact: l
             } = e;
-            return t.purchaseNotification?.type === u.hE.GUILD_PRODUCT ? (0, i.jsx)(I.A, {
+            return t.purchaseNotification?.type === d.hE.GUILD_PRODUCT ? (0, i.jsx)(I.A, {
                 message: t,
                 channel: n,
                 compact: l
@@ -576,7 +576,7 @@ let ej = Object.freeze({
                 channelId: n.id,
                 guildId: n.guild_id,
                 messageId: t.id
-            }), c = (0, a.bG)([H.A], () => H.A.can(eD.xBc.MUTE_MEMBERS, n)), d = (0, a.bG)([L.A], () => L.A.getParticipant(n.id, t.author.id)), u = new Date(Y.default.extractTimestamp(t.id)).toISOString() === new Date(d?.voiceState?.requestToSpeakTimestamp ?? 0).toISOString(), _ = c && d?.rtsState === U.zF.REQUESTED_TO_SPEAK && u;
+            }), c = (0, a.bG)([H.A], () => H.A.can(eD.xBc.MUTE_MEMBERS, n)), u = (0, a.bG)([L.A], () => L.A.getParticipant(n.id, t.author.id)), d = new Date(Y.default.extractTimestamp(t.id)).toISOString() === new Date(u?.voiceState?.requestToSpeakTimestamp ?? 0).toISOString(), _ = c && u?.rtsState === U.zF.REQUESTED_TO_SPEAK && d;
             return (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(eI.A, {
                     message: t,
@@ -655,7 +655,7 @@ let ej = Object.freeze({
             let {
                 message: t,
                 channel: n
-            } = e, l = t.giftingPrompt, r = (0, a.bG)([w.default], () => w.default.getUser(l?.recipientUserId));
+            } = e, l = t.giftingPrompt, r = (0, a.bG)([B.default], () => B.default.getUser(l?.recipientUserId));
             return null == l || null == r ? null : (0, i.jsx)(J.A, {
                 giftIntentType: l.giftIntentType,
                 recipientUser: r,
@@ -761,7 +761,7 @@ let ej = Object.freeze({
             })
         }
     }),
-    ey = l.memo(function(e) {
+    ej = l.memo(function(e) {
         let {
             message: t,
             channel: n,
@@ -769,7 +769,7 @@ let ej = Object.freeze({
             disableInteraction: a
         } = e, {
             type: r
-        } = t, s = ej[r];
+        } = t, s = ey[r];
         if (null == s) {
             var o;
             return o = Error(`unknown message type ${t.type}`), K.A.captureException(o), new _.A("SystemMessage").error("", o), null

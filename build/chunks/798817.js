@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(311907),
-    r = n(342494),
+    r = n(311907),
+    l = n(342494),
     s = n(274372),
     o = n(372684),
     d = n(399925),
@@ -17,15 +17,15 @@ function A(e) {
         onOpenClipsGallery: t,
         clipIconRef: n,
         lastClipsSession: A
-    } = e, h = (0, l.bG)([s.A], () => {
+    } = e, _ = (0, r.bG)([s.A], () => {
         let e = s.A.getLastClipsSession()?.newClipIds;
         if (null == e) return null;
         let t = s.A.getClipIds().find(t => e.includes(t));
         return null == t ? null : s.A.getClipById(t)
-    }), _ = (0, c.j)(h), m = a.useCallback(() => {
+    }), h = (0, c.j)(_), m = a.useCallback(() => {
         (0, d.jA)()
     }, []);
-    return null == h ? null : h.type !== o.nQ.SCREENSHOT && h.type !== o.nQ.VOICE_CLIP && null != _ ? (0, i.jsx)(r.HZ, {
+    return null == _ ? null : _.type !== o.nQ.SCREENSHOT && _.type !== o.nQ.VOICE_CLIP && null != h ? (0, i.jsx)(l.HZ, {
         targetElementRef: {
             current: n
         },
@@ -34,7 +34,7 @@ function A(e) {
         body: u.intl.format(u.t["+qxkzC"], {
             count: A.newClipIds.length
         }),
-        assetUrl: _,
+        assetUrl: h,
         disableMediaViewer: !0,
         caretConfig: {
             align: "center"
@@ -44,7 +44,7 @@ function A(e) {
             onClick: t
         },
         onRequestClose: m
-    }) : (0, i.jsx)(r.AM, {
+    }) : (0, i.jsx)(l.AM, {
         targetElementRef: {
             current: n
         },
@@ -53,9 +53,9 @@ function A(e) {
         body: u.intl.format(u.t["+qxkzC"], {
             count: A.newClipIds.length
         }),
-        graphic: null != h.thumbnail ? {
+        graphic: null != _.thumbnail ? {
             type: "image",
-            src: h.thumbnail
+            src: _.thumbnail
         } : void 0,
         caretConfig: {
             align: "center"

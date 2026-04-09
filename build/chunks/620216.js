@@ -1,6 +1,6 @@
 /** chunk id: 620216 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    t: () => i
+    t: () => r
 });
-var a, i = ((a = {}).ACCENT = "accent", a.GREEN = "statusGreen", a.YELLOW = "statusYellow", a.ORANGE = "statusOrange", a.RED = "statusRed", a.NONE = "transparent", a)
+var a, r = ((a = {}).ACCENT = "accent", a.GREEN = "statusGreen", a.YELLOW = "statusYellow", a.ORANGE = "statusOrange", a.RED = "statusRed", a.NONE = "transparent", a)

@@ -10,8 +10,8 @@ var s = i(627968),
     a = i(421380),
     o = i(397927),
     d = i(73153),
-    _ = i(384904),
-    m = i(73825),
+    _ = i(73825),
+    m = i(323082),
     u = i(160946),
     p = i(422936),
     x = i(234419),
@@ -128,7 +128,7 @@ function A(e) {
     } = e, t = (0, u.Y)(), l = (0, c.bG)([k.A], () => k.A.hasFetchedPaymentSources), a = t && l, f = (0, x.V)(), j = (0, p.O)();
     r.useEffect(() => {
         d.h.wait(() => {
-            (0, _.$o)(), (0, m.zS)(null, null, E.tF5.DISCOVERY)
+            (0, m.$o)(), (0, _.zS)(null, null, E.tF5.DISCOVERY)
         })
     }, []);
     let g = a ? y.Ay.getDefaultPrice(v.gD.PREMIUM_MONTH_TIER_2) : null;

@@ -2,11 +2,11 @@
 n.d(t, {
     Ay: () => _,
     GI: () => d,
-    J5: () => l,
+    J5: () => s,
     g_: () => u,
     jc: () => o,
     nj: () => c,
-    nl: () => s
+    nl: () => l
 });
 var i = n(839214);
 let a = {
@@ -14,8 +14,8 @@ let a = {
         reappearTimeMs: 1e4
     },
     r = (0, i.D)(() => a),
-    s = 1e4,
-    l = 2e4,
+    l = 1e4,
+    s = 2e4,
     o = 500,
     d = 1e3;
 

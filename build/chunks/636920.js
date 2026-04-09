@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(69555),
     _ = n(886019),
     m = n(846218),
-    p = n(806246),
-    g = n(358957),
+    g = n(806246),
+    p = n(358957),
     f = n(559405),
     x = n(708455),
     E = n(652215),
@@ -36,20 +36,20 @@ function N(e) {
         h.default.track(E.HAw.VIEW_HANG_STATUS, {
             source: S,
             other_user_id: N,
-            ...(0, p.A)(n.id)
+            ...(0, g.A)(n.id)
         })
     }, [S, n.id, N]);
     let R = l.useCallback(() => {
             !y && v && (d.default.selectVoiceChannel(n.id), b?.(), h.default.track(E.HAw.HANG_STATUS_CTA_CLICKED, {
                 source: S,
-                ...(0, p.A)(n.id),
+                ...(0, g.A)(n.id),
                 other_user_id: N,
                 cta_type: "join"
             }))
         }, [y, v, n.id, N, S, b]),
         O = l.useCallback(() => {
             if (!y || !j || null == t.state) return;
-            let [e] = (0, g.e)(N, t.state);
+            let [e] = (0, p.e)(N, t.state);
             if (null != e) {
                 if (e === x.Kk.CUSTOM) {
                     if (null == t.details || null == t.emoji) return;
@@ -57,7 +57,7 @@ function N(e) {
                 } else(0, A.Iq)(e, !0);
                 b?.(), h.default.track(E.HAw.HANG_STATUS_CTA_CLICKED, {
                     source: S,
-                    ...(0, p.A)(n.id),
+                    ...(0, g.A)(n.id),
                     other_user_id: N,
                     cta_type: "swipe"
                 })

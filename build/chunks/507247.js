@@ -1,20 +1,20 @@
 /** chunk id: 507247 params = (module,exports,require) **/
-n.d(t, {
+i.d(t, {
     A: () => l
 });
-var i = n(627968);
-n(64700);
-var a = n(352337);
+var n = i(627968);
+i(64700);
+var s = i(352337);
 
 function l(e) {
     let {
         games: t,
-        renderGame: n
+        renderGame: i
     } = e;
-    return (0, i.jsx)("ul", {
-        className: a.V,
-        children: t.map((e, t) => (0, i.jsx)("li", {
-            children: n(e, t)
+    return (0, n.jsx)("ul", {
+        className: s.V,
+        children: t.map((e, t) => (0, n.jsx)("li", {
+            children: i(e, t)
         }, e.applicationId))
     })
 }

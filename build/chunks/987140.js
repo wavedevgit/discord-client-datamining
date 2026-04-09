@@ -1,19 +1,19 @@
 /** chunk id: 987140 params = (module,exports,require) **/
-n.d(t, {
+i.d(t, {
     A: () => c
 });
-var i = n(627968),
-    a = n(64700),
-    l = n(183555),
-    s = n(735321),
-    r = n(958338),
-    o = n(253798),
-    d = n(224360);
+var n = i(627968),
+    s = i(64700),
+    l = i(183555),
+    a = i(735321),
+    r = i(958338),
+    o = i(253798),
+    d = i(224360);
 
 function c(e) {
     let {
         widgetType: t,
-        ...n
+        ...i
     } = e, {
         games: c,
         onAddGame: u
@@ -21,8 +21,8 @@ function c(e) {
         setExpanded: g
     } = (0, o.B)(), {
         trackUserProfileEditAction: m
-    } = (0, l.NJ)(), h = a.useCallback(e => {
-        u(e), g(!0), (0, s.ew)({
+    } = (0, l.NJ)(), h = s.useCallback(e => {
+        u(e), g(!0), (0, a.ew)({
             widgetType: t,
             game: {
                 applicationId: e
@@ -33,9 +33,9 @@ function c(e) {
             widgetEdited: t
         })
     }, [u, t, m, g]);
-    return (0, i.jsx)(d.A, {
+    return (0, n.jsx)(d.A, {
         games: c,
         onClick: h,
-        ...n
+        ...i
     })
 }

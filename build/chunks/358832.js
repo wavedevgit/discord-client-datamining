@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(311907),
-    r = n(397927),
+    r = n(311907),
+    l = n(397927),
     s = n(157559),
     o = n(229224),
     d = n(966871),
     c = n(987482),
     u = n(598384),
     A = n(383501),
-    h = n(985018),
-    _ = n(169796);
+    _ = n(985018),
+    h = n(169796);
 class m extends a.PureComponent {
     static getDerivedStateFromProps(e, t) {
         return e.mode !== t.memoizedMode ? {
@@ -26,18 +26,18 @@ class m extends a.PureComponent {
         clicked: !1
     };
     handleDownloadApps() {
-        (0, r.qfG)(e => (0, i.jsx)(c.default, {
+        (0, l.qfG)(e => (0, i.jsx)(c.default, {
             source: "Links",
             ...e
         }))
     }
     handleInstallDownload = () => {
         A.A.isConnected() ? s.A.show({
-            title: h.intl.string(h.t.tiu1ly),
-            body: h.intl.string(h.t["zK+lqW"]),
+            title: _.intl.string(_.t.tiu1ly),
+            body: _.intl.string(_.t["zK+lqW"]),
             onConfirm: this.doUpdate,
-            cancelText: h.intl.string(h.t["ETE/oC"]),
-            confirmText: h.intl.string(h.t["QDX/qu"]),
+            cancelText: _.intl.string(_.t["ETE/oC"]),
+            confirmText: _.intl.string(_.t["QDX/qu"]),
             confirmVariant: "critical-primary"
         }) : this.doUpdate()
     };
@@ -50,15 +50,15 @@ class m extends a.PureComponent {
         let e = "UPDATE_AVAILABLE" === this.props.mode,
             t = "UPDATE_DOWNLOADED" === this.props.mode || "UPDATE_MANUALLY" === this.props.mode;
         return e || t ? (0, i.jsx)(d.A, {
-            tooltip: e ? h.intl.string(h.t["zp9d/4"]) : h.intl.string(h.t.u18OXF),
-            color: r.LU0.unsafe_rawColors.GREEN_360.css,
-            colorClass: e ? _.z : void 0,
+            tooltip: e ? _.intl.string(_.t["zp9d/4"]) : _.intl.string(_.t.u18OXF),
+            color: l.LU0.unsafe_rawColors.GREEN_360.css,
+            colorClass: e ? h.z : void 0,
             onClick: this.handleInstallDownload,
-            icon: r.s3U,
+            icon: l.s3U,
             disabled: e
         }) : null
     }
 }
-let g = l.Ay.connectStores([u.A], () => ({
+let g = r.Ay.connectStores([u.A], () => ({
     mode: u.A.getState()
 }))(m)

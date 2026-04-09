@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(503698),
-    l = n.n(a),
-    r = n(235986),
+    r = n.n(a),
+    l = n(235986),
     s = n(957358),
     o = n(505806),
     d = n(985018),
@@ -22,23 +22,23 @@ let u = function(e) {
     return (0, i.jsx)(o.A, {
         getHistoricalTotalBytes: A,
         children: (e, o, A) => {
-            var h;
+            var _;
             return (0, i.jsx)("div", {
-                className: l()(c.dm, n),
-                children: (0, i.jsxs)(r.A, {
-                    align: r.A.Align.CENTER,
-                    children: [(0, i.jsxs)(r.A, {
+                className: r()(c.dm, n),
+                children: (0, i.jsxs)(l.A, {
+                    align: l.A.Align.CENTER,
+                    children: [(0, i.jsxs)(l.A, {
                         className: c.Qq,
-                        direction: r.A.Direction.VERTICAL,
+                        direction: l.A.Direction.VERTICAL,
                         children: [(0, i.jsx)("div", {
                             className: c.DD,
                             children: t
                         }), (0, i.jsx)("div", {
                             className: c.TS,
-                            children: (h = e[e.length - 1] / o * 1e3) > 1e3 ? d.intl.formatToPlainString(d.t["WU+gTX"], {
-                                size: Math.round(h / 1e3)
+                            children: (_ = e[e.length - 1] / o * 1e3) > 1e3 ? d.intl.formatToPlainString(d.t["WU+gTX"], {
+                                size: Math.round(_ / 1e3)
                             }) : d.intl.formatToPlainString(d.t.wnF6TH, {
-                                size: Math.round(h)
+                                size: Math.round(_)
                             })
                         })]
                     }), (0, i.jsx)("div", {

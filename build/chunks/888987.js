@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     r = n(503698),
-    s = n.n(r),
-    l = n(311907),
+    l = n.n(r),
+    s = n(311907),
     o = n(990078),
     d = n(397927),
     c = n(964486),
@@ -23,9 +23,9 @@ function A(e) {
         locked: t,
         pinned: n,
         anchorLeft: r
-    } = e, A = (0, l.bG)([_.A], () => _.A.getSocket()), x = (0, l.bG)([p.A], () => p.A.isGPUBoosted());
+    } = e, A = (0, s.bG)([_.A], () => _.A.getSocket()), x = (0, s.bG)([p.A], () => p.A.isGPUBoosted());
     (0, u.ZX)();
-    let I = (0, l.bG)([h.A], () => h.A.getWindow(g.f)),
+    let I = (0, s.bG)([h.A], () => h.A.getWindow(g.f)),
         [E, b] = (0, u.DQ)(A),
         {
             currentFPS: v,
@@ -37,23 +37,23 @@ function A(e) {
             bufferFramecountRef: w,
             frameCheckerEffect: L
         } = (0, u.Dj)(!0, E, !0),
-        [j, O, P] = (0, u.F5)(A),
-        [R, D] = (0, u.km)(j, L, I),
-        M = performance.now() - b.current < u.Jc,
-        k = O(C, w.current);
-    (0, c.Ay)(() => (R(), () => {
-        D()
+        [O, j, P] = (0, u.F5)(A),
+        [D, R] = (0, u.km)(O, L, I),
+        k = performance.now() - b.current < u.Jc,
+        M = j(C, w.current);
+    (0, c.Ay)(() => (D(), () => {
+        R()
     }));
     let G = a.useCallback(() => {
-            y(), P(), R()
-        }, [y, P, R]),
+            y(), P(), D()
+        }, [y, P, D]),
         [z, U] = a.useState(!0),
         [V, F] = a.useState(!0),
         [W, H] = a.useState(!0),
         [B, Y] = a.useState(!0),
         [X, Z] = a.useState(!0);
     return t && !n ? null : (0, i.jsxs)("div", {
-        className: s()(f.st, !r && f.Hk),
+        className: l()(f.st, !r && f.Hk),
         children: [(z || !t) && (0, i.jsxs)("div", {
             className: f.PG,
             children: [!t && (0, i.jsx)("div", {
@@ -155,13 +155,13 @@ function A(e) {
                         children: ["Idle Frame Delta:", " ", (0, i.jsxs)(d.Text, {
                             tag: "span",
                             variant: "code",
-                            color: k > 1 ? "text-feedback-critical" : "text-strong",
-                            children: [k.toFixed(2), "ms"]
+                            color: M > 1 ? "text-feedback-critical" : "text-strong",
+                            children: [M.toFixed(2), "ms"]
                         })]
                     })
                 })
             })]
-        }), M && (0, i.jsx)(o.m, {
+        }), k && (0, i.jsx)(o.m, {
             position: "left",
             text: "We don't track frames while the app is in the background, because requestAnimationFrame doesn't fire in the background",
             children: (0, i.jsx)("span", {

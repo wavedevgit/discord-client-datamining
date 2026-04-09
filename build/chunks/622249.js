@@ -1,25 +1,25 @@
 /** chunk id: 622249 params = (module,exports,require) **/
-n.d(t, {
+i.d(t, {
     A: () => r
 });
-var i = n(627968),
-    a = n(397927),
-    l = n(985018),
-    s = n(62007);
+var n = i(627968),
+    s = i(397927),
+    l = i(985018),
+    a = i(62007);
 
 function r(e) {
     let {
         onClick: t,
-        expanded: n
+        expanded: i
     } = e;
-    return (0, i.jsx)(a.DUT, {
+    return (0, n.jsx)(s.DUT, {
         onClick: t,
-        className: s.x,
-        "aria-expanded": n,
-        children: (0, i.jsx)(a.Text, {
+        className: a.x,
+        "aria-expanded": i,
+        children: (0, n.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: "none",
-            children: n ? l.intl.string(l.t["6MwJo/"]) : l.intl.string(l.t.lBeKY2)
+            children: i ? l.intl.string(l.t["6MwJo/"]) : l.intl.string(l.t.lBeKY2)
         })
     })
 }

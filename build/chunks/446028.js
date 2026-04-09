@@ -1,6 +1,6 @@
 /** chunk id: 446028 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
 var i = n(627968);
 n(64700);
@@ -11,12 +11,12 @@ var l = n(397927),
     o = n(345981),
     c = n(210360);
 
-function d(e) {
+function u(e) {
     let {
         message: t,
         channel: n,
-        compact: d
-    } = e, u = (0, a.Ay)(t), _ = t.application, A = (0, r.P)({
+        compact: u
+    } = e, d = (0, a.Ay)(t), _ = t.application, A = (0, r.P)({
         user: t.author,
         channelId: n.id,
         guildId: n.guild_id,
@@ -29,11 +29,11 @@ function d(e) {
             className: c.C
         }),
         timestamp: t.timestamp,
-        compact: d,
+        compact: u,
         children: (0, o.X)({
             application: _,
-            username: u.nick,
-            usernameHook: A(u)
+            username: d.nick,
+            usernameHook: A(d)
         })
     })
 }

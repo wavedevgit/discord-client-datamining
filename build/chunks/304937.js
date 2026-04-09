@@ -10,8 +10,8 @@ var l = n(503698),
     s = n(212555),
     o = n(428855),
     c = n(880652),
-    d = n(373847),
-    u = n(830684);
+    u = n(373847),
+    d = n(830684);
 
 function _(e) {
     let {
@@ -42,7 +42,7 @@ function _(e) {
         }
     })();
     return null == A ? null : (0, i.jsxs)("div", {
-        className: a()(u.PT, d.k),
+        className: a()(d.PT, u.k),
         children: [(0, i.jsx)(r.EYj, {
             variant: "text-lg/normal",
             color: "text-strong",

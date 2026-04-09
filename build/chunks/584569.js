@@ -1,6 +1,6 @@
 /** chunk id: 584569 params = (module,exports,require) **/
 n.d(e, {
-    A: () => N
+    A: () => v
 });
 var i = n(311907),
     l = n(205693),
@@ -17,8 +17,8 @@ var i = n(311907),
     p = n(652215),
     g = n(806931);
 let f = new s.A,
-    T = new s.A,
-    E = new Set;
+    E = new s.A,
+    T = new Set;
 
 function C(t, e, n) {
     let i = new o.A({
@@ -43,13 +43,13 @@ function C(t, e, n) {
         localVideoDisabled: !1,
         isPoppedOut: !1
     };
-    T.set(t.id, r)
+    E.set(t.id, r)
 }
 
 function S(t) {
     let e = f.delete(t),
-        n = T.delete(t),
-        i = E.delete(t);
+        n = E.delete(t),
+        i = T.delete(t);
     return e || n || i
 }
 
@@ -58,17 +58,17 @@ function _() {
     if (null == t) return !1;
     let e = d.A.getChannel(t)?.getGuildId(),
         n = !1;
-    return E.forEach(i => {
-        if (null != A.A.getVoiceStateForChannel(t, i)) return void E.delete(i);
+    return T.forEach(i => {
+        if (null != A.A.getVoiceStateForChannel(t, i)) return void T.delete(i);
         let l = h.default.getUser(i);
-        null != l && (n = !0, E.delete(i), C(l, e, t))
+        null != l && (n = !0, T.delete(i), C(l, e, t))
     }), n
 }
 
 function y() {
-    f.clear(), T.clear(), E.clear()
+    f.clear(), E.clear(), T.clear()
 }
-class I extends i.Ay.Store {
+class N extends i.Ay.Store {
     static displayName = "RTCConnectionDesyncStore";
     initialize() {
         this.waitFor(A.A, h.default, d.A, c.A), this.syncWith([h.default], _)
@@ -83,10 +83,10 @@ class I extends i.Ay.Store {
         return f.values()
     }
     getDesyncedParticipants() {
-        return T.values()
+        return E.values()
     }
 }
-let N = new I(r.h, {
+let v = new N(r.h, {
     CONNECTION_OPEN: function() {
         y()
     },
@@ -121,7 +121,7 @@ let N = new I(r.h, {
         return r === l.x.DEFAULT && e.reduce((t, e) => {
             if (null != A.A.getVoiceStateForChannel(i, e)) return t;
             let l = h.default.getUser(e);
-            return null == l ? (E.add(e), t) : (C(l, n, i), !0)
+            return null == l ? (T.add(e), t) : (C(l, n, i), !0)
         }, !1)
     },
     RTC_CONNECTION_CLIENT_DISCONNECT: function(t) {

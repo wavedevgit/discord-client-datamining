@@ -1,41 +1,41 @@
 /** chunk id: 901319 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => _
 });
 var i = n(627968),
     a = n(64700),
-    l = n(884362),
-    r = n(837381),
+    r = n(884362),
+    l = n(837381),
     s = n(311907),
     o = n(73939),
     d = n(397927),
     c = n(775602),
     u = n(652215),
     A = n(998838);
-let h = function(e) {
+let _ = function(e) {
     let {
         rows: t,
         renderRow: n,
-        renderSection: h,
-        hasSearchQuery: _,
+        renderSection: _,
+        hasSearchQuery: h,
         sectionFilter: m,
         footer: g,
         renderSectionFooter: p
-    } = e, E = (0, s.bG)([c.A], () => c.A.keyboardModeEnabled), I = (0, s.bG)([c.A], () => c.A.useReducedMotion), f = (0, l.Ay)({
+    } = e, E = (0, s.bG)([c.A], () => c.A.keyboardModeEnabled), I = (0, s.bG)([c.A], () => c.A.useReducedMotion), f = (0, r.Ay)({
         id: "people",
         isEnabled: E,
         async scrollToStart() {},
         async scrollToEnd() {}
-    }), C = m !== u.m3P.ONLINE && m !== u.m3P.ALL, T = I || _ || C, N = a.useMemo(() => t.map((e, t) => 0 === e.length ? null : T ? (0, i.jsxs)("div", {
-        children: [h(t), e.map(e => n(e, t)), p?.(t)]
+    }), C = m !== u.m3P.ONLINE && m !== u.m3P.ALL, T = I || h || C, N = a.useMemo(() => t.map((e, t) => 0 === e.length ? null : T ? (0, i.jsxs)("div", {
+        children: [_(t), e.map(e => n(e, t)), p?.(t)]
     }, t) : (0, i.jsxs)(o.F, {
         transitionAppear: !1,
         component: "div",
-        children: [h(t), e.map(e => n(e, t)), p?.(t)]
-    }, t)), [n, h, p, t, T]);
-    return (0, i.jsx)(r.hD, {
+        children: [_(t), e.map(e => n(e, t)), p?.(t)]
+    }, t)), [n, _, p, t, T]);
+    return (0, i.jsx)(l.hD, {
         navigator: f,
-        children: (0, i.jsx)(r.PR, {
+        children: (0, i.jsx)(l.PR, {
             children: e => {
                 let {
                     ref: t,

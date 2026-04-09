@@ -16,15 +16,15 @@ var i = n(627968),
     A = n(747926),
     g = n(954571),
     p = n(203982),
-    f = n(453771),
-    _ = n(518960),
+    _ = n(453771),
+    f = n(518960),
     E = n(408018),
     x = n(447155),
     C = n(652215),
     S = n(49999),
-    T = n(412136),
-    N = n(985018);
-let I = /(.*)```(\w+)\n(.*)```(.*)/s;
+    I = n(412136),
+    T = n(985018);
+let N = /(.*)```(\w+)\n(.*)```(.*)/s;
 
 function v(e) {
     let {
@@ -67,7 +67,7 @@ function v(e) {
                 channel: t
             })
         }, {
-            modalKey: T.sm
+            modalKey: I.sm
         })
     }
 
@@ -75,8 +75,8 @@ function v(e) {
         let e = M,
             n = "txt",
             i = "",
-            l = M.match(I);
-        null != l && (i = l[1], n = l[2], e = l[3], i += l[4]), (0, _.R)([(0, f.VE)(new Blob([e], {
+            l = M.match(N);
+        null != l && (i = l[1], n = l[2], e = l[3], i += l[4]), (0, f.R)([(0, _.VE)(new Blob([e], {
             type: "text/plain"
         }), `message.${n}`, "text/plain")], t, R), p._.dispatchToLastSubscribed(C.jej.CLEAR_TEXT), "" !== i && p._.dispatchToLastSubscribed(C.jej.INSERT_TEXT, {
             plainText: i
@@ -93,7 +93,7 @@ function v(e) {
         onSelect: j,
         navId: "channel-attach",
         onClose: b,
-        "aria-label": N.intl.string(N.t.Xm41aV),
+        "aria-label": T.intl.string(T.t.Xm41aV),
         children: v.map(function(e) {
             switch (e.type) {
                 case x.v.UPLOAD_A_FILE:
@@ -252,7 +252,7 @@ function v(e) {
                         children: k ? null : (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsx)(r.Drp, {
                                 id: "summarize_thread_for_everyone",
-                                label: N.intl.string(N.t.eCzSdd),
+                                label: T.intl.string(T.t.eCzSdd),
                                 iconLeft: r.nFg,
                                 leadingAccessory: {
                                     type: "icon",
@@ -261,7 +261,7 @@ function v(e) {
                                 action: () => h.A.summarizeThread(t, !1)
                             }, "summarize_thread_for_everyone"), (0, i.jsx)(r.Drp, {
                                 id: "summarize_thread_for_me",
-                                label: N.intl.string(N.t["HOe+Hq"]),
+                                label: T.intl.string(T.t["HOe+Hq"]),
                                 iconLeft: r.nys,
                                 leadingAccessory: {
                                     type: "icon",

@@ -16,15 +16,15 @@ var i = n(627968),
     A = n(83942),
     g = n(259374),
     p = n(730986),
-    f = n(786840),
-    _ = n(763845),
+    _ = n(786840),
+    f = n(763845),
     E = n(857341),
     x = n(843057),
     C = n(603266),
     S = n(985018),
-    T = n(352476),
-    N = n(706873),
-    I = n(467935);
+    I = n(352476),
+    T = n(706873),
+    N = n(467935);
 
 function v() {
     return (0, r.cf)([d.A], () => ({
@@ -54,7 +54,7 @@ function b(e) {
         connectionTypeText: n,
         closePopout: l
     } = e, s = y(t);
-    return (0, i.jsx)(_.A, {
+    return (0, i.jsx)(f.A, {
         ...s,
         closePopout: l,
         connectionTypeText: n
@@ -79,7 +79,7 @@ function R(e) {
         closePopout: t,
         connectionTypeText: n
     } = e, l = v();
-    return (0, i.jsx)(_.A, {
+    return (0, i.jsx)(f.A, {
         ...l,
         closePopout: t,
         connectionTypeText: n
@@ -158,24 +158,24 @@ function L(e) {
     return l.useEffect(() => {
         d && n(C.Rj.RTC_DEBUG_PANEL)
     }, [d]), (0, i.jsxs)("div", {
-        className: a()(I.popover, N.kL),
+        className: a()(N.popover, T.kL),
         children: [(0, i.jsxs)(o.VQ0, {
-            className: N.vR,
+            className: T.vR,
             selectedItem: t,
             type: "top",
             look: "brand",
             onItemSelect: n,
             children: [(0, i.jsx)(o.VQ0.Item, {
                 id: C.Rj.RTC_DEBUG_PANEL,
-                className: N.YU,
+                className: T.YU,
                 children: S.intl.string(S.t.MBY1Pm)
             }), d ? null : (0, i.jsx)(o.VQ0.Item, {
                 id: C.Rj.RTC_SECURE_FRAMES,
-                className: N.YU,
+                className: T.YU,
                 children: S.intl.string(S.t.zC6o3s)
             })]
         }), (0, i.jsx)("div", {
-            className: N.SZ,
+            className: T.SZ,
             children: r.map(e => {
                 let {
                     id: n,
@@ -184,7 +184,7 @@ function L(e) {
                 return (0, i.jsx)(o.VQ0.Panel, {
                     id: n,
                     "aria-labelledby": s,
-                    className: n !== t ? N._t : void 0,
+                    className: n !== t ? T._t : void 0,
                     children: l
                 }, n)
             })
@@ -203,7 +203,7 @@ function P(e) {
                         ...e
                     });
                 case C.Rj.RTC_SECURE_FRAMES:
-                    return (0, i.jsx)(f.A, {
+                    return (0, i.jsx)(_.A, {
                         channelId: e.channelId
                     })
             }
@@ -218,25 +218,25 @@ function P(e) {
     return l.useEffect(() => {
         h && s(C.Rj.RTC_DEBUG_PANEL)
     }, [h]), (0, i.jsxs)("div", {
-        className: T.kL,
+        className: I.kL,
         children: [(0, i.jsx)(o.Heading, {
-            className: T.DD,
+            className: I.DD,
             variant: "heading-lg/bold",
             color: "text-strong",
             children: t ? S.intl.string(S.t.IlHdW8) : S.intl.string(S.t.WsOisp)
         }), (0, i.jsxs)(o.VQ0, {
-            className: T.vR,
+            className: I.vR,
             selectedItem: n,
             type: "top",
             look: "brand",
             onItemSelect: s,
             children: [(0, i.jsx)(o.VQ0.Item, {
                 id: C.Rj.RTC_DEBUG_PANEL,
-                className: T.YU,
+                className: I.YU,
                 children: S.intl.string(S.t.MBY1Pm)
             }), h ? null : (0, i.jsx)(o.VQ0.Item, {
                 id: C.Rj.RTC_SECURE_FRAMES,
-                className: T.YU,
+                className: I.YU,
                 children: S.intl.string(S.t.zC6o3s)
             })]
         }), (0, i.jsx)(o.VQ0.Panel, {
@@ -253,9 +253,9 @@ function k(e) {
     }) ? (0, i.jsx)(P, {
         ...e
     }) : (0, i.jsx)("div", {
-        className: T.L3,
+        className: I.L3,
         children: (0, i.jsx)("section", {
-            className: T.J8,
+            className: I.J8,
             children: (0, i.jsx)(O, {
                 ...e
             })
@@ -269,7 +269,7 @@ function w(e) {
     }) ? (0, i.jsx)(L, {
         ...e
     }) : (0, i.jsx)("div", {
-        className: a()(I.popover, N.L3),
+        className: a()(N.popover, T.L3),
         children: (0, i.jsx)(D, {
             ...e
         })

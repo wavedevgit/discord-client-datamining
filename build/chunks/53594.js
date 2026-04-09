@@ -1,8 +1,8 @@
 /** chunk id: 53594 params = (module,exports,require) **/
 n.d(t, {
-    H2: () => d,
+    H2: () => u,
     J6: () => E,
-    i$: () => u,
+    i$: () => d,
     kT: () => N,
     ub: () => m,
     ws: () => I,
@@ -14,8 +14,8 @@ var i, l, a = n(64700),
     s = n(979816),
     o = n(411335),
     c = n(985018),
-    d = ((i = {}).NEW = "new", i.RECOMMENDED = "recommended", i.BETA = "beta", i.ALPHA = "alpha", i);
-let u = {
+    u = ((i = {}).NEW = "new", i.RECOMMENDED = "recommended", i.BETA = "beta", i.ALPHA = "alpha", i);
+let d = {
     [o.uh.SPAM_LINK]: {
         getDefaultRuleName: () => c.intl.string(c.t.ffR2cM),
         type: o.uh.SPAM_LINK,
@@ -82,13 +82,13 @@ let u = {
 };
 var _ = ((l = {}).MEMBERS = "members", l.CONTENT = "content", l);
 let A = {
-        members: [u[o.uh.USER_PROFILE]],
-        content: [u[o.uh.SERVER_POLICY], u[o.uh.MENTION_SPAM], u[o.uh.ML_SPAM], u[o.uh.DEFAULT_KEYWORD_LIST], u[o.uh.KEYWORD]]
+        members: [d[o.uh.USER_PROFILE]],
+        content: [d[o.uh.SERVER_POLICY], d[o.uh.MENTION_SPAM], d[o.uh.ML_SPAM], d[o.uh.DEFAULT_KEYWORD_LIST], d[o.uh.KEYWORD]]
     },
-    m = (e, t) => u[e].flags.has(t);
+    m = (e, t) => d[e].flags.has(t);
 
 function E(e) {
-    return Array.from(u[e].availableActionTypes)
+    return Array.from(d[e].availableActionTypes)
 }
 
 function T(e, t) {
@@ -97,7 +97,7 @@ function T(e, t) {
         eventType: i,
         triggerType: l,
         actions: a
-    } = e, r = u[l];
+    } = e, r = d[l];
     if (t.filter(e => n !== e.id && e.triggerType === l).length > r.perGuildMaxCount) throw Error(`You have exceeded the maximum number of rules of type ${l}`);
     if (a.some(e => !r.availableActionTypes.has(e.type))) throw Error("You have provided an action that is not available for this trigger type");
     if (i !== r.eventType) throw Error("You have provided an event type that is not available for this trigger type")

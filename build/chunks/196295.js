@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     r = n(311907),
-    s = n(397927),
-    l = n(412477),
+    l = n(397927),
+    s = n(412477),
     o = n(592598),
     d = n(243612),
     c = n(545807),
@@ -26,14 +26,14 @@ function x(e) {
 function I(e, t, n, a) {
     let {
         index: r,
-        notification: s,
-        locked: l,
+        notification: l,
+        locked: s,
         pinned: o
     } = t;
     return (0, i.jsx)(u.A, {
         index: r,
-        notification: s,
-        locked: l,
+        notification: l,
+        locked: s,
         pinned: o,
         transitionState: n,
         cleanUp: a
@@ -68,15 +68,15 @@ let b = a.memo(function(e) {
     }, [t, n], d.oQ), b = a.useState(() => new _.Fn(t))[0];
     return (a.useLayoutEffect(() => b.updateState(f, t)), a.useLayoutEffect(() => (b.initialize((0, c.b)()), () => b.cleanUp()), [b]), 0 !== f.length || t) ? (0, i.jsx)(_.Gt.Provider, {
         value: b,
-        children: (0, i.jsx)(s.Fai, {
+        children: (0, i.jsx)(l.Fai, {
             items: f,
             renderItem: I,
             getItemKey: x,
             wrapChildren: E
         })
-    }) : u ? t ? null : (0, i.jsx)(l.g, {
+    }) : u ? t ? null : (0, i.jsx)(s.g, {
         emptyText: g.intl.string(g.t.O1Nbjq),
-        icon: s.XFE,
+        icon: l.XFE,
         absolute: !0
     }) : null
 })

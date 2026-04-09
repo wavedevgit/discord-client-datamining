@@ -4,16 +4,16 @@ n.d(t, {
     A: () => x
 });
 var a = n(73153),
-    l = n(31728),
-    r = n(272355),
+    r = n(31728),
+    l = n(272355),
     s = n(933958),
     o = n(313961),
     d = n(652896),
     c = n(869146),
     u = n(616356),
     A = n(734057),
-    h = n(186111),
-    _ = n(430452),
+    _ = n(186111),
+    h = n(430452),
     m = n(334463),
     g = n(383501),
     p = n(309010),
@@ -25,7 +25,7 @@ var a = n(73153),
 function T() {
     let e = i;
     if (null == e || !m.A.isOpen(e)) return !1;
-    a.h.wait(() => l.VN(e)), g.A.getRTCConnection()?.setPipOpen(!1), i = null
+    a.h.wait(() => r.VN(e)), g.A.getRTCConnection()?.setPipOpen(!1), i = null
 }
 
 function N() {
@@ -34,29 +34,29 @@ function N() {
     if (function() {
             let e = g.A.getChannelId(),
                 t = p.A.getChannelId();
-            if (!_.Ay.supports(C.O5.VIDEO) || c.A.getWindowOpen(f.MLl.CHANNEL_CALL_POPOUT)) return !0;
+            if (!h.Ay.supports(C.O5.VIDEO) || c.A.getWindowOpen(f.MLl.CHANNEL_CALL_POPOUT)) return !0;
             let n = null != e && u.A.getAllActiveStreams().some(t => !o.A.isParticipantPoppedOut(e, (0, d._z)(t)));
             if (!(null != e && Object.values(I.A.getVideoVoiceStatesForChannel(e)).some(t => {
                     let {
                         userId: n
                     } = t;
-                    return !_.Ay.isLocalVideoDisabled(n) && !o.A.isParticipantPoppedOut(e, n)
+                    return !h.Ay.isLocalVideoDisabled(n) && !o.A.isParticipantPoppedOut(e, n)
                 }) || n)) return !0;
-            let i = h.A.hasLayers();
-            return !(i && h.A.getLayers().includes(f.zgK.RTC_DEBUG)) && (!!i || e === t)
+            let i = _.A.hasLayers();
+            return !(i && _.A.getLayers().includes(f.zgK.RTC_DEBUG)) && (!!i || e === t)
         }()) return T();
     if (t || T(), null == e) return !1;
     let n = A.A.getChannel(e);
-    return !(null == n || m.A.isOpen(e)) && (a.h.wait(() => l.ho(n.id, f.o1q.VIDEO, {
+    return !(null == n || m.A.isOpen(e)) && (a.h.wait(() => r.ho(n.id, f.o1q.VIDEO, {
         channel: n
     })), g.A.getRTCConnection()?.setPipOpen(!0), void(i = e))
 }
-class S extends r.A {
+class S extends l.A {
     _initialize() {
-        p.A.addChangeListener(N), E.A.addChangeListener(N), g.A.addChangeListener(N), I.A.addChangeListener(N), h.A.addChangeListener(N), u.A.addChangeListener(N), c.A.addChangeListener(N), _.Ay.addChangeListener(N), s.Ay.addChangeListener(N), o.A.addChangeListener(N)
+        p.A.addChangeListener(N), E.A.addChangeListener(N), g.A.addChangeListener(N), I.A.addChangeListener(N), _.A.addChangeListener(N), u.A.addChangeListener(N), c.A.addChangeListener(N), h.Ay.addChangeListener(N), s.Ay.addChangeListener(N), o.A.addChangeListener(N)
     }
     _terminate() {
-        p.A.removeChangeListener(N), E.A.removeChangeListener(N), g.A.removeChangeListener(N), I.A.removeChangeListener(N), h.A.removeChangeListener(N), u.A.removeChangeListener(N), c.A.removeChangeListener(N), _.Ay.removeChangeListener(N), s.Ay.removeChangeListener(N), o.A.removeChangeListener(N)
+        p.A.removeChangeListener(N), E.A.removeChangeListener(N), g.A.removeChangeListener(N), I.A.removeChangeListener(N), _.A.removeChangeListener(N), u.A.removeChangeListener(N), c.A.removeChangeListener(N), h.Ay.removeChangeListener(N), s.Ay.removeChangeListener(N), o.A.removeChangeListener(N)
     }
 }
 let x = new S

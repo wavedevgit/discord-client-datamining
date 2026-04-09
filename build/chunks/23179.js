@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(651649),
     _ = n(253932),
     m = n(734057),
-    p = n(203982),
-    g = n(517381),
+    g = n(203982),
+    p = n(517381),
     f = n(822382),
     x = n(868974),
     E = n(771650),
@@ -125,9 +125,9 @@ function w(e) {
         renderPageWrapper: A,
         onBlockedResultsClick: _,
         searchRequestAnalyticsId: m,
-        searchResultsQuery: p
+        searchResultsQuery: g
     } = e, {
-        totalResults: g,
+        totalResults: p,
         isSearching: x,
         isIndexing: E,
         hasError: I
@@ -150,7 +150,7 @@ function w(e) {
         })
     }
     if (x) return null;
-    if (g > 0) return (0, i.jsx)(R.A, {
+    if (p > 0) return (0, i.jsx)(R.A, {
         search: s,
         messages: t,
         onClick: d,
@@ -163,7 +163,7 @@ function w(e) {
         renderPageWrapper: A,
         onBlockedResultsClick: _,
         searchRequestAnalyticsId: m,
-        searchResultsQuery: p
+        searchResultsQuery: g
     });
     let {
         showNoResultsAlt: C
@@ -191,7 +191,7 @@ let B = [],
             messages: u,
             blockCount: A,
             ignoreCount: _,
-            isFeedbackVisible: g,
+            isFeedbackVisible: p,
             dismissFeedbackEntrypoint: x,
             onSearchModeChange: I,
             onPageChange: N,
@@ -202,8 +202,8 @@ let B = [],
         } = e, M = l.useRef(null), G = l.useCallback(() => {
             C.A.cleanUpSearchState(t)
         }, [t]);
-        l.useEffect(() => (p._.subscribe(L.jej.SEARCH_RESULTS_CLOSE, G), () => {
-            p._.unsubscribe(L.jej.SEARCH_RESULTS_CLOSE, G)
+        l.useEffect(() => (g._.subscribe(L.jej.SEARCH_RESULTS_CLOSE, G), () => {
+            g._.unsubscribe(L.jej.SEARCH_RESULTS_CLOSE, G)
         }), [G]);
         let P = l.useRef(n.showBlockedResults);
         l.useEffect(() => {
@@ -350,7 +350,7 @@ let B = [],
                 })]
             }), (0, i.jsx)(k, {
                 searchContext: t,
-                isFeedbackVisible: g,
+                isFeedbackVisible: p,
                 dismissFeedbackEntrypoint: x
             })]
         })
@@ -375,20 +375,20 @@ function H(e) {
             }, []),
             isFeedbackVisible: e
         }
-    }(), o = (0, f.bS)(t), d = (0, r.cf)([g.A, b.A], () => ({
-        isSearching: g.A.getIsFetching(o) ?? !1,
-        isIndexing: g.A.getIsIndexing(o) ?? !1,
-        isHistoricalIndexing: g.A.getIsHistoricalIndexing(o) ?? !1,
-        documentsIndexed: g.A.getDocumentsIndexed(o),
+    }(), o = (0, f.bS)(t), d = (0, r.cf)([p.A, b.A], () => ({
+        isSearching: p.A.getIsFetching(o) ?? !1,
+        isIndexing: p.A.getIsIndexing(o) ?? !1,
+        isHistoricalIndexing: p.A.getIsHistoricalIndexing(o) ?? !1,
+        documentsIndexed: p.A.getDocumentsIndexed(o),
         offset: b.A.getSearchResultsOffset(o) ?? 0,
-        totalResults: g.A.getTotalCount(o) ?? 0,
-        hasError: null != g.A.getError(o),
+        totalResults: p.A.getTotalCount(o) ?? 0,
+        hasError: null != p.A.getError(o),
         showBlockedResults: b.A.shouldShowBlockedResults(o),
         showNoResultsAlt: b.A.shouldShowNoResultsAlt(o)
-    })), c = (0, r.bG)([g.A], () => g.A.getAnalyticsId(o)), {
+    })), c = (0, r.bG)([p.A], () => p.A.getAnalyticsId(o)), {
         renderedMessages: h,
         ignoreCount: m,
-        blockCount: p
+        blockCount: g
     } = (0, T.A)({
         searchContext: t
     }), E = (0, r.bG)([b.A], () => b.A.getSearchMode(o) ?? L.BBH.NEWEST), N = l.useCallback(e => {
@@ -419,7 +419,7 @@ function H(e) {
             searchRequestAnalyticsId: O,
             messages: j,
             ignoreCount: m,
-            blockCount: p,
+            blockCount: g,
             renderEmbeds: _.rs.useSetting(),
             isFeedbackVisible: s,
             dismissFeedbackEntrypoint: a,

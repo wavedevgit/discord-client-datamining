@@ -1,11 +1,11 @@
 /** chunk id: 858808 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var i = n(627968);
 n(64700);
-var l = n(503698),
-    a = n.n(l),
+var a = n(503698),
+    l = n.n(a),
     s = n(990078),
     r = n(397927),
     o = n(183555),
@@ -13,33 +13,33 @@ var l = n(503698),
     d = n(985018),
     u = n(57884);
 
-function m(e) {
+function g(e) {
     let {
         game: t,
         widgetType: n,
-        iconSize: l = "refresh_sm",
-        className: m,
-        buttonRef: g,
-        onRemove: f
+        iconSize: a = "refresh_sm",
+        className: g,
+        buttonRef: _,
+        onRemove: m
     } = e, {
-        trackUserProfileEditAction: x
+        trackUserProfileEditAction: f
     } = (0, o.NJ)();
     return (0, i.jsx)(s.m, {
         text: d.intl.string(d.t.HUvyDc),
         ariaHidden: !0,
         children: (0, i.jsx)(r.DUT, {
-            innerRef: g,
+            innerRef: _,
             onClick: () => {
-                (0, c.ef)(n, t.applicationId), r.ORC.announce(d.intl.string(d.t["08HmMj"])), x({
+                (0, c.ef)(n, t.applicationId), r.ORC.announce(d.intl.string(d.t["08HmMj"])), f({
                     action: "GAME_REMOVED",
                     gameId: t.applicationId,
                     widgetEdited: n
-                }), f?.()
+                }), m?.()
             },
             "aria-label": d.intl.string(d.t.HUvyDc),
-            className: a()(m, u.v),
+            className: l()(g, u.v),
             children: (0, i.jsx)(r.ucK, {
-                size: l,
+                size: a,
                 className: u.K,
                 color: r.LU0.colors.ICON_FEEDBACK_CRITICAL
             })

@@ -29,13 +29,13 @@ function A(e, t) {
 function _(e) {
     let {
         guildNode: t
-    } = e, n = t.id, s = (0, l.bG)([r.A], () => r.A.getRequest(n)), _ = (0, l.bG)([r.A], () => r.A.getJoinRequestGuild(n), [n]), m = (0, l.bG)([d.A], () => d.A.isFocused()), p = (0, l.bG)([o.A], () => o.A.getGuildId());
+    } = e, n = t.id, s = (0, l.bG)([r.A], () => r.A.getRequest(n)), _ = (0, l.bG)([r.A], () => r.A.getJoinRequestGuild(n), [n]), m = (0, l.bG)([d.A], () => d.A.isFocused()), g = (0, l.bG)([o.A], () => o.A.getGuildId());
     return null == _ ? null : (0, i.jsx)(c.A, {
         guildNode: t,
         guild: _,
         animatable: m,
         draggable: !1,
-        selected: n === p,
+        selected: n === g,
         preloadOnClick: !1,
         contextMenu: A,
         lowerBadge: s?.applicationStatus === a.B5.REJECTED ? (0, u.eW)({

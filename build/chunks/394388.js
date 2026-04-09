@@ -9,8 +9,8 @@ var i = n(627968),
     s = n(397927),
     o = n(155718),
     c = n(775602),
-    d = n(793574),
-    u = n(367727),
+    u = n(793574),
+    d = n(367727),
     _ = n(509536),
     A = n(881635),
     m = n(363487),
@@ -74,7 +74,7 @@ function R(e) {
         guild: t
     } = e;
     l.useEffect(() => {
-        (0, u.uh)(r.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
+        (0, d.uh)(r.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
             dismissAction: g.i.AUTO_DISMISS,
             guildId: t.id
         })
@@ -87,7 +87,7 @@ function R(e) {
                 tag: "a",
                 role: "link",
                 onClick: () => {
-                    n ? (0, E.A)(t.id, d.A.GUILD_BOOSTING_FIRST_TIME_BOOSTER_UPSELL) : (0, _.K4)({
+                    n ? (0, E.A)(t.id, u.A.GUILD_BOOSTING_FIRST_TIME_BOOSTER_UPSELL) : (0, _.K4)({
                         guildId: t.id,
                         location: {
                             section: N.JJy.CHANNEL_TEXT_AREA,
@@ -99,7 +99,7 @@ function R(e) {
             })
         }),
         guild: t,
-        analyticsLocations: [d.A.GUILD_BOOSTING_FIRST_TIME_BOOSTER_UPSELL]
+        analyticsLocations: [u.A.GUILD_BOOSTING_FIRST_TIME_BOOSTER_UPSELL]
     })
 }
 

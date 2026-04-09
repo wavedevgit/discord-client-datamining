@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(64700),
     a = n(311907),
-    l = n(4106),
-    r = n(883344),
+    r = n(4106),
+    l = n(883344),
     s = n(596720);
 
 function o(e, t, n) {
@@ -67,33 +67,33 @@ function o(e, t, n) {
 }
 
 function d() {
-    let e = (0, a.bG)([r.A], () => r.A.getUnreadDisplayItems()),
-        t = (0, a.bG)([r.A], () => r.A.getReadDisplayItems()),
-        n = (0, a.bG)([r.A], () => r.A.getNextIndexToHydrate()),
-        d = (0, a.cf)([r.A], () => r.A.getHydratedItems()),
-        c = (0, a.bG)([r.A], () => r.A.getMissingItems());
+    let e = (0, a.bG)([l.A], () => l.A.getUnreadDisplayItems()),
+        t = (0, a.bG)([l.A], () => l.A.getReadDisplayItems()),
+        n = (0, a.bG)([l.A], () => l.A.getNextIndexToHydrate()),
+        d = (0, a.cf)([l.A], () => l.A.getHydratedItems()),
+        c = (0, a.bG)([l.A], () => l.A.getMissingItems());
     i.useEffect(() => {
         let e = Date.now() + t.length;
-        l.A.ackGravityItems(t.map(t => ({
+        r.A.ackGravityItems(t.map(t => ({
             id: t.id,
             timestamp: e--
         }), !0))
     }, [t]);
     let u = [],
         A = [],
-        h = 0;
-    for (let t = 0; t < e.length && !(h >= n); t++) {
+        _ = 0;
+    for (let t = 0; t < e.length && !(_ >= n); t++) {
         let n = e[t];
-        if (h++, c[n.id]) continue;
+        if (_++, c[n.id]) continue;
         let i = d[n.id];
         if (null == i && n.type === s.Mm.MESSAGE && n.data.message_context?.reference_message_id != null && (i = d[n.data.message_id]), null != i) {
             let e = o(n, i, !0);
             null != e && u.push(e)
         }
     }
-    for (let e = 0; e < t.length && !(h >= n); e++) {
+    for (let e = 0; e < t.length && !(_ >= n); e++) {
         let n = t[e];
-        if (h++, c[n.id]) continue;
+        if (_++, c[n.id]) continue;
         let i = d[n.id];
         if (null == i && n.type === s.Mm.MESSAGE && n.data.message_context?.reference_message_id != null && (i = d[n.data.message_id]), null != i) {
             let e = o(n, i, !1);

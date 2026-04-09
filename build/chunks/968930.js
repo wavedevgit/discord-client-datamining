@@ -1,11 +1,11 @@
 /** chunk id: 968930 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => _
 });
 var i = n(73153),
     a = n(272355),
-    l = n(688796),
-    r = n(207803),
+    r = n(688796),
+    l = n(207803),
     s = n(84540),
     o = n(287809),
     d = n(927578),
@@ -26,7 +26,7 @@ class A extends a.A {
                 guildId: i,
                 isTryItOut: a
             } = e;
-            if (a) return void(0, r.e$)(t);
+            if (a) return void(0, l.e$)(t);
             let A = o.default.getCurrentUser();
             if (d.Ay.canUseAnimatedAvatar(A) || "image/gif" !== n.type) {
                 (0, s.p)({
@@ -35,7 +35,7 @@ class A extends a.A {
                 }), (0, c.WU)("set");
                 return
             }
-            null != A && (0, l.G)({
+            null != A && (0, r.G)({
                 uploadType: u.HL.AVATAR
             })
         })(e) : e.uploadType === u.HL.BANNER ? (e => {
@@ -44,16 +44,16 @@ class A extends a.A {
                 guildId: n,
                 isTryItOut: i
             } = e, a = t.imageUri;
-            if (i) return void(0, r.xe)(a);
+            if (i) return void(0, l.xe)(a);
             let c = o.default.getCurrentUser(),
                 A = d.Ay.canUsePremiumProfileCustomization(c);
             d.Ay.canUsePremiumProfileCustomization(c) ? (0, s.p)({
                 guildId: n,
                 banner: a
-            }) : null == c || A || (0, l.G)({
+            }) : null == c || A || (0, r.G)({
                 uploadType: u.HL.BANNER
             })
         })(e) : void 0
     }
 }
-let h = new A
+let _ = new A

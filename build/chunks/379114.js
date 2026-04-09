@@ -9,8 +9,8 @@ var i = n(627968),
     s = n(688810),
     o = n(763754),
     c = n(447215),
-    d = n(888675),
-    u = n(976860),
+    u = n(888675),
+    d = n(976860),
     _ = n(942075),
     A = n(292548),
     m = n(817533),
@@ -82,12 +82,12 @@ function C(e) {
             guildId: a,
             messageId: i.id
         })(t), {
-            analyticsLocations: d
+            analyticsLocations: u
         } = (0, s.Ay)(r.A.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE), A = i.roleSubscriptionData, m = l.useCallback(() => {
-            (0, u.pX)(E.BVt.CHANNEL(a, T.VV.ROLE_SUBSCRIPTIONS), {
-                sourceLocationStack: d
+            (0, d.pX)(E.BVt.CHANNEL(a, T.VV.ROLE_SUBSCRIPTIONS), {
+                sourceLocationStack: u
             }), A?.role_subscription_listing_id != null && (0, _.xH)(a, n.id, i.id, A.role_subscription_listing_id)
-        }, [a, n, i, A, d]);
+        }, [a, n, i, A, u]);
         return null == A ? null : (0, _.gw)({
             username: t.nick,
             usernameOnClickHandler: o,
@@ -101,7 +101,7 @@ function C(e) {
         author: I
     }), g = a.roleSubscriptionData?.total_months_subscribed != null && a.roleSubscriptionData?.total_months_subscribed <= 1;
     return null == N ? null : (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(d.A, {
+        children: [(0, i.jsx)(u.A, {
             icon: n(617184),
             timestamp: a.timestamp,
             compact: m,

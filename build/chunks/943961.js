@@ -7,16 +7,16 @@ let i = (0, n(945810).mj)({
     kind: "user",
     defaultConfig: {
         enabled: !1,
-        compact: !1
+        showCta: !0
     },
     variations: {
         1: {
             enabled: !0,
-            compact: !1
+            showCta: !0
         },
         2: {
             enabled: !0,
-            compact: !0
+            showCta: !1
         }
     }
 })

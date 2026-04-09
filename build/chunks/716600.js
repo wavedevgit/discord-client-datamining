@@ -1,64 +1,64 @@
 /** chunk id: 716600 params = (module,exports,require) **/
 n.d(t, {
-    t: () => _
+    t: () => h
 });
 var i = n(627968);
 n(64700);
 var a = n(934551),
-    l = n(232582),
-    r = n(732955),
+    r = n(232582),
+    l = n(732955),
     s = n(397927),
     o = n(954571),
     d = n(975571),
     c = n(498470),
     u = n(652215),
     A = n(985018),
-    h = n(320218);
+    _ = n(320218);
 
-function _(e) {
+function h(e) {
     let {
         componentId: t,
         promotionId: n,
-        content: _,
+        content: h,
         renderModalProps: m,
         analyticsLocations: g,
         analyticsLocation: p,
         isLightTheme: E
     } = e, I = `AnnouncementModalVariant1_${t}`, {
         onClose: f
-    } = m, C = _.button?.copy ?? A.intl.string(A.t.YScQSF), T = _.button?.buttonAction === l.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", N = (0, c.h)({
-        buttonAction: _.button?.buttonAction,
+    } = m, C = h.button?.copy ?? A.intl.string(A.t.YScQSF), T = h.button?.buttonAction === r.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", N = (0, c.h)({
+        buttonAction: h.button?.buttonAction,
         analyticsLocations: g,
         analyticsLocation: p,
         onClose: f
-    }), S = "" !== _.helpArticleId ? () => (0, i.jsxs)(i.Fragment, {
+    }), S = "" !== h.helpArticleId ? () => (0, i.jsxs)(i.Fragment, {
         children: ["\xa0", (0, i.jsx)(s.MzZ, {
-            className: h.$T,
-            href: d.A.getArticleURL(_.helpArticleId),
+            className: _.$T,
+            href: d.A.getArticleURL(h.helpArticleId),
             children: A.intl.string(A.t["sBp+u0"])
         })]
     }) : void 0, x = {
         type: "video",
-        src: E ? _.heroArtVideoLinkLightTheme : _.videoLink
+        src: E ? h.heroArtVideoLinkLightTheme : h.videoLink
     };
-    return null != _.heroArtVideoSubtitles && (x.subtitles = _.heroArtVideoSubtitles.map(e => ({
+    return null != h.heroArtVideoSubtitles && (x.subtitles = h.heroArtVideoSubtitles.map(e => ({
         locale: e.locale,
         src: e.link,
         isDefault: !1
-    }))), ("" !== _.heroArtImageLinkDarkTheme || "" !== _.heroArtImageLinkLightTheme) && (x = {
+    }))), ("" !== h.heroArtImageLinkDarkTheme || "" !== h.heroArtImageLinkLightTheme) && (x = {
         type: "image",
-        src: E ? _.heroArtImageLinkLightTheme : _.heroArtImageLinkDarkTheme
+        src: E ? h.heroArtImageLinkLightTheme : h.heroArtImageLinkDarkTheme
     }), {
         componentId: t,
         promotionId: n,
         renderModalProps: m,
-        header: _.header,
-        modalTopPill: _.modalTopPill,
-        subHeader: _.subheader,
+        header: h.header,
+        modalTopPill: h.modalTopPill,
+        subHeader: h.subheader,
         subHeaderExtra: S,
-        body: _.body,
+        body: h.body,
         heroArt: x,
-        featureCards: _.featureCards.map(e => ({
+        featureCards: h.featureCards.map(e => ({
             header: e.header,
             subHeader: e.body,
             imageSrc: E ? e.imageLinkLightTheme : e.imageLink,
@@ -67,7 +67,7 @@ function _(e) {
         changeLogId: I,
         button: () => {
             let e = Date.now();
-            return (0, i.jsx)(r.$nd, {
+            return (0, i.jsx)(l.$nd, {
                 variant: "expressive",
                 size: "md",
                 onClick: () => {

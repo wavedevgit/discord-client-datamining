@@ -1,6 +1,6 @@
 /** chunk id: 541171 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
 var i = n(627968);
 n(64700);
@@ -11,18 +11,18 @@ var l = n(397927),
     o = n(888675),
     c = n(985018);
 
-function d(e) {
+function u(e) {
     let {
         message: t,
         channel: n,
-        playingActivity: d,
-        onJoinStream: u,
+        playingActivity: u,
+        onJoinStream: d,
         usernameHook: _,
         compact: A
     } = e, m = (0, s.Ay)(t), E = (0, a.Ay)(n), T = t.call?.duration, I = _(m), N = c.intl.format(c.t.FKXvaI, {
         username: m.nick,
-        activityName: null != d ? d.name : "unknown",
-        onJoinStream: u,
+        activityName: null != u ? u.name : "unknown",
+        onJoinStream: d,
         usernameHook: I
     });
     return null != T && (N = c.intl.format(c.t.NEFxtd, {

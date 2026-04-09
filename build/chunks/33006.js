@@ -3,16 +3,16 @@ let i, a;
 n.d(t, {
     A: () => R
 }), n(323874), n(14289), n(35956), n(321073);
-var l = n(143236),
-    r = n(735438),
-    s = n.n(r),
+var r = n(143236),
+    l = n(735438),
+    s = n.n(l),
     o = n(73153),
     d = n(626584),
     c = n(111162),
     u = n(998218),
     A = n(837921),
-    h = n(636401),
-    _ = n(84002),
+    _ = n(636401),
+    h = n(84002),
     m = n(313731),
     g = n(546983),
     p = n(613057),
@@ -50,7 +50,7 @@ function x() {
 function v(e, t, n) {
     let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 200,
         a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {},
-        l = null != S(e.headers).origin ? {
+        r = null != S(e.headers).origin ? {
             "Access-Control-Allow-Origin": S(e.headers).origin,
             "Access-Control-Allow-Credentials": "true",
             "Access-Control-Allow-Methods": "POST, GET, PUT, PATCH, DELETE",
@@ -58,7 +58,7 @@ function v(e, t, n) {
         } : {};
     n = n ? JSON.stringify(n) : "", i = 200 === i && 0 === n.length ? 204 : i, t.setHeader("Content-Length", I.byteLength(n).toString()), t.setHeader("Content-Type", "application/json"), t.writeHead(i, {
         ...a,
-        ...l
+        ...r
     }), t.end(n)
 }
 
@@ -72,16 +72,16 @@ function b(e, t, n, i) {
 class y extends m.A {
     _socket;
     constructor(e, t, n) {
-        if (super("ws", t, n), -1 === ["etf", "json"].indexOf(n)) throw new h.A({
+        if (super("ws", t, n), -1 === ["etf", "json"].indexOf(n)) throw new _.A({
             closeCode: E.YI$.INVALID_ENCODING
         }, `Invalid Encoding: ${n}`);
-        if ("etf" === n && null == i) throw new h.A({
+        if ("etf" === n && null == i) throw new _.A({
             closeCode: E.YI$.INVALID_ENCODING
         }, "Erlpack cannot be used on this client");
         this._socket = e
     }
     send(e) {
-        (c.default.isLoggingOverlayEvents || e.cmd !== E.e$_.OVERLAY && e.evt !== E.ZE4.OVERLAY) && T.info(`Socket Emit: ${this.id}`, (0, _.A)(e)), null != i && "etf" === this.encoding ? this._socket.send(i.pack(e), {
+        (c.default.isLoggingOverlayEvents || e.cmd !== E.e$_.OVERLAY && e.evt !== E.ZE4.OVERLAY) && T.info(`Socket Emit: ${this.id}`, (0, h.A)(e)), null != i && "etf" === this.encoding ? this._socket.send(i.pack(e), {
             binary: !0
         }) : this._socket.send(JSON.stringify(e))
     }
@@ -93,7 +93,7 @@ class O extends m.A {
     _sendCallback;
     _closeCallback;
     constructor(e, t, n, i) {
-        if (super("http", n, i), "json" !== i) throw new h.A({
+        if (super("http", n, i), "json" !== i) throw new _.A({
             closeCode: E.YI$.INVALID_ENCODING
         }, `Invalid Encoding: ${i}`);
         this._sendCallback = e, this._closeCallback = t
@@ -105,7 +105,7 @@ class O extends m.A {
         this._closeCallback(t, e)
     }
 }
-class L extends l.EventEmitter {
+class L extends r.EventEmitter {
     constructor() {
         super();
         let e = 0;
@@ -123,19 +123,19 @@ class L extends l.EventEmitter {
         if ("/rpc" === n && "OPTIONS" === a) return void v(e, t, {
             body: ""
         });
-        let l = "POST" === a;
-        if ("/rpc" === n && ("GET" === a || l)) {
+        let r = "POST" === a;
+        if ("/rpc" === n && ("GET" === a || r)) {
             let n = new URLSearchParams(i),
-                a = l ? S(e.headers)["content-type"].split("/")[1] : "json",
-                r = function() {
+                a = r ? S(e.headers)["content-type"].split("/")[1] : "json",
+                l = function() {
                     let {
                         protocol: e,
                         host: i
                     } = u.A.toURLSafe(n.get("callback") ?? "") ?? {};
                     e === location.protocol && i === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", C), t.writeHead(301), t.end()
                 },
-                s = new O(!l ? r : v.bind(null, e, t), !l ? r : b.bind(null, e, t, 400), Number(n.get("v")), a);
-            l ? (0, g.j7)(s, S(e.headers).origin, n.get("client_id")).then(() => {
+                s = new O(!r ? l : v.bind(null, e, t), !r ? l : b.bind(null, e, t, 400), Number(n.get("v")), a);
+            r ? (0, g.j7)(s, S(e.headers).origin, n.get("client_id")).then(() => {
                 let n = "";
                 e.on("data", e => n += e), e.on("error", () => b(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
             }).catch(e => {
@@ -179,7 +179,7 @@ class L extends l.EventEmitter {
         } catch (t) {
             e.close(E.YI$.CLOSE_UNSUPPORTED, `Payload not ${e.encoding}`);
             return
-        }(c.default.isLoggingOverlayEvents || n.cmd !== E.e$_.OVERLAY) && T.info(`Socket Message: ${e.id}`, (0, _.A)(n)), this.emit("request", e, n)
+        }(c.default.isLoggingOverlayEvents || n.cmd !== E.e$_.OVERLAY) && T.info(`Socket Message: ${e.id}`, (0, h.A)(n)), this.emit("request", e, n)
     }
 }
 let R = new L

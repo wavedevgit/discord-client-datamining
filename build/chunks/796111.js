@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(562465),
     a = n(10716),
-    l = n(458664),
-    r = n(587895),
+    r = n(458664),
+    l = n(587895),
     s = n(20015),
     o = n(147964),
     d = n(954571),
     c = n(636401),
     u = n(90924),
     A = n(629471),
-    h = n(569475),
-    _ = n(613057),
+    _ = n(569475),
+    h = n(613057),
     m = n(652215);
 let g = {
     [m.e$_.SEND_ANALYTICS_EVENT]: {
@@ -31,13 +31,13 @@ let g = {
             } = e;
             (0, u.lG)(t.transport), (0, u.D2)(t.application);
             let a = t.application.id,
-                o = (0, h.A)(),
+                o = (0, _.A)(),
                 A = o?.getGuildId(),
-                _ = r.A.getApplication(a);
-            if (!(0, s.n)(_, m.gfo.EMBEDDED_FIRST_PARTY)) throw new c.A({
+                h = l.A.getApplication(a);
+            if (!(0, s.n)(h, m.gfo.EMBEDDED_FIRST_PARTY)) throw new c.A({
                 errorCode: m.Lw6.INVALID_COMMAND
             }, "This application cannot access this API");
-            let g = (0, l.D)(a),
+            let g = (0, r.D)(a),
                 p = {
                     activity_application_id: a,
                     activity_channel_type: o?.type,
@@ -51,7 +51,7 @@ let g = {
         }
     },
     [m.e$_.GET_APPLICATION_TICKET]: {
-        scope: _.hj,
+        scope: h.hj,
         handler(e) {
             let {
                 socket: t

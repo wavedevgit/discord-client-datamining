@@ -4,72 +4,72 @@ n.d(t, {
 });
 var i = n(119966),
     a = n(478437),
-    l = n(344351),
-    r = n(179771),
+    r = n(344351),
+    l = n(179771),
     s = n(420970),
     o = n(795816),
     d = n(933958),
     c = n(734057),
     u = n(954843),
     A = n(613057),
-    h = n(652215),
-    _ = n(818348);
+    _ = n(652215),
+    h = n(818348);
 let m = {
-    [_.e$.INVITE_USER_EMBEDDED]: (0, s.T)(_.e$.INVITE_USER_EMBEDDED, {
+    [h.e$.INVITE_USER_EMBEDDED]: (0, s.T)(h.e$.INVITE_USER_EMBEDDED, {
         scope: {
-            [A.sm.ANY]: [r.F.DM_CHANNELS_MESSAGES_WRITE, r.F.ACTIVITIES_INVITES_WRITE]
+            [A.sm.ANY]: [l.F.DM_CHANNELS_MESSAGES_WRITE, l.F.ACTIVITIES_INVITES_WRITE]
         },
         async handler(e) {
             let t, {
                     socket: n,
                     args: {
-                        user_id: r,
+                        user_id: l,
                         content: s
                     }
                 } = e,
                 A = n.application.id;
             if (null == A) throw new i.G({
-                errorCode: _.Lw.INVALID_COMMAND
+                errorCode: h.Lw.INVALID_COMMAND
             }, "No application.");
             let m = d.Ay.getConnectedActivityLocation();
             if (null == m) throw new i.G({
-                errorCode: _.Lw.NO_ELIGIBLE_ACTIVITY
+                errorCode: h.Lw.NO_ELIGIBLE_ACTIVITY
             }, "No eligible activity for application. Ensure an activity was set using setActivity.");
             switch (m.kind) {
-                case l.T.GUILD_CHANNEL:
-                case l.T.GUILD_CHANNEL_MESSAGE:
+                case r.T.GUILD_CHANNEL:
+                case r.T.GUILD_CHANNEL_MESSAGE:
                     t = (0, u.W)().channel;
                     break;
-                case l.T.PRIVATE_CHANNEL:
-                case l.T.PRIVATE_CHANNEL_MESSAGE:
+                case r.T.PRIVATE_CHANNEL:
+                case r.T.PRIVATE_CHANNEL_MESSAGE:
                     let g = c.A.getChannel(m.channel_id);
                     if (null == g) throw new i.G({
-                        errorCode: _.Lw.INVALID_CHANNEL
+                        errorCode: h.Lw.INVALID_CHANNEL
                     }, "Invalid channel");
                     if (g.type === a.r.DM) throw new i.G({
-                        errorCode: _.Lw.INVALID_CHANNEL
+                        errorCode: h.Lw.INVALID_CHANNEL
                     }, "Cannot send invite to a DM");
                     t = g;
                     break;
                 default:
                     throw new i.G({
-                        errorCode: _.Lw.NO_ELIGIBLE_ACTIVITY
+                        errorCode: h.Lw.NO_ELIGIBLE_ACTIVITY
                     }, "Unsupported activity location")
             }
             try {
                 await (0, o.Ue)({
                     channelId: t.id,
                     applicationId: A,
-                    userId: r,
+                    userId: l,
                     prefixedContent: s,
                     location: "RPC_ACTIVITY_INVITE_USER",
                     inviteAnalyticsMetadata: {
-                        source: h.PE1.ACTIVITY_INVITE
+                        source: _.PE1.ACTIVITY_INVITE
                     }
                 })
             } catch {
                 throw new i.G({
-                    errorCode: _.Lw.UNKNOWN_ERROR
+                    errorCode: h.Lw.UNKNOWN_ERROR
                 }, "Failed to invite user")
             }
         }

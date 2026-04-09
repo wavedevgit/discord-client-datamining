@@ -14,8 +14,8 @@ var i, l = n(627968),
     A = n(881343),
     _ = n(697675),
     m = n(869003),
-    p = n(652215),
-    g = n(985018),
+    g = n(652215),
+    p = n(985018),
     f = n(867958);
 let x = ["embedded_cover"],
     E = {
@@ -68,7 +68,7 @@ function C(e) {
                         children: (0, l.jsx)(c.Text, {
                             variant: "text-sm/medium",
                             color: "always-white",
-                            children: g.intl.string(g.t.VJlc0S)
+                            children: p.intl.string(p.t.VJlc0S)
                         })
                     })
                 });
@@ -80,7 +80,7 @@ function C(e) {
                         children: (0, l.jsx)(c.Text, {
                             variant: "text-sm/medium",
                             color: "always-white",
-                            children: g.intl.string(g.t["wH/wDO"])
+                            children: p.intl.string(p.t["wH/wDO"])
                         })
                     })
                 });
@@ -109,7 +109,7 @@ function C(e) {
                     value: t
                 } = e;
                 return (0, l.jsx)(c.NPJ, {
-                    theme: p.NJ8.DARK,
+                    theme: g.NJ8.DARK,
                     children: e => (0, l.jsx)(u.A, {
                         applicationId: n.application.id,
                         questContent: d.u.ACTIVITY_SUGGESTION,

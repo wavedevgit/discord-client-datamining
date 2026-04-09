@@ -39,8 +39,8 @@ var i = n(627968),
     M = n(430452),
     P = n(309010),
     G = n(485296),
-    U = n(157257),
-    V = n(607567),
+    V = n(157257),
+    U = n(607567),
     z = n(256415),
     H = n(996439),
     W = n(427262),
@@ -392,22 +392,22 @@ function ee(e) {
     let t = (0, r.bG)([P.A, w.A], () => w.A.getChannel(P.A.getVoiceChannelId())),
         n = (0, m.Ay)(t),
         s = function() {
-            let [e] = (0, r.bG)([V.Ay, b.A, P.A, w.A], () => {
+            let [e] = (0, r.bG)([U.Ay, b.A, P.A, w.A], () => {
                 let e = w.A.getChannel(P.A.getVoiceChannelId());
                 return null == e ? [
                     [], -1
-                ] : e.isGuildStageVoice() ? [b.A.getMutableParticipants(e.id, O.ip.SPEAKER), b.A.getParticipantsVersion(e.id)] : [V.Ay.getVoiceStatesForChannel(e), V.Ay.getVoiceStateVersion(e.getGuildId())]
+                ] : e.isGuildStageVoice() ? [b.A.getMutableParticipants(e.id, O.ip.SPEAKER), b.A.getParticipantsVersion(e.id)] : [U.Ay.getVoiceStatesForChannel(e), U.Ay.getVoiceStateVersion(e.getGuildId())]
             }, [], H.D);
             return e
         }(),
         l = (0, r.bG)([L.A], () => L.A.getStreamerActiveStreamMetadata()),
-        a = (0, r.bG)([E.Ay, U.A, k.A], () => {
-            let e = (0, I.A)(E.Ay, U.A);
+        a = (0, r.bG)([E.Ay, V.A, k.A], () => {
+            let e = (0, I.A)(E.Ay, V.A);
             return null != e ? k.A.findGame(e)?.id : null
         }),
         o = (0, g.h)(a),
-        d = (0, r.cf)([E.Ay, U.A, L.A, z.default], () => {
-            let e = (0, I.A)(E.Ay, U.A),
+        d = (0, r.cf)([E.Ay, V.A, L.A, z.default], () => {
+            let e = (0, I.A)(E.Ay, V.A),
                 t = L.A.getCurrentUserActiveStream();
             return {
                 displayUserMode: z.default.getDisplayUserMode(),

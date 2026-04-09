@@ -4,10 +4,10 @@ n.d(t, {
 });
 var i = n(311907),
     a = n(506774),
-    l = n(73153);
-let r = "hasSeenGuildTemplatePromotionTooltip",
+    r = n(73153);
+let l = "hasSeenGuildTemplatePromotionTooltip",
     s = {},
-    o = !0 === a.w.get(r);
+    o = !0 === a.w.get(l);
 
 function d(e) {
     let {
@@ -27,7 +27,7 @@ class c extends i.Ay.Store {
         return !o
     }
 }
-let u = new c(l.h, {
+let u = new c(r.h, {
     GUILD_TEMPLATE_DIRTY_TOOLTIP_REFRESH: function(e) {
         let {
             guildTemplate: t
@@ -38,7 +38,7 @@ let u = new c(l.h, {
         }
     },
     GUILD_TEMPLATE_PROMOTION_TOOLTIP_HIDE: function() {
-        a.w.set(r, !0), o = !0
+        a.w.set(l, !0), o = !0
     },
     GUILD_TEMPLATE_SYNC_SUCCESS: function(e) {
         s = {

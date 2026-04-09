@@ -16,7 +16,7 @@ var i = n(665260),
     A = n(652215),
     g = n(790782),
     p = n(355097);
-let f = [{
+let _ = [{
         timeSinceJoin: +u.A.Millis.HOUR,
         sends: 1,
         viewTime: +u.A.Millis.MINUTE
@@ -33,27 +33,27 @@ let f = [{
         sends: 10,
         viewTime: 30 * u.A.Millis.MINUTE
     }],
-    _ = 5 * f[f.length - 1].viewTime,
+    f = 5 * _[_.length - 1].viewTime,
     E = u.A.Millis.WEEK,
     x = {
         channels: {}
     },
     C = new Set,
     S = null,
-    T = 0,
-    N = 0;
+    I = 0,
+    T = 0;
 
-function I() {
+function N() {
     if (null == S || !b(S)) return !1;
     let e = y(S);
-    if (e.lastActionTime > Date.now() - u.A.Millis.DAY && e.viewDuration > _) return !1;
+    if (e.lastActionTime > Date.now() - u.A.Millis.DAY && e.viewDuration > f) return !1;
     let t = Date.now();
-    return e.lastActionTime = t, e.viewDuration += t - T, T = t, !0
+    return e.lastActionTime = t, e.viewDuration += t - I, I = t, !0
 }
 
 function v() {
-    return 0 !== N && (clearInterval(N), N = 0), d.Ay.useNewNotifications && (N = setInterval(() => {
-        I() && M.emitChange()
+    return 0 !== T && (clearInterval(T), T = 0), d.Ay.useNewNotifications && (T = setInterval(() => {
+        N() && M.emitChange()
     }, 15 * u.A.Millis.SECOND)), !1
 }
 
@@ -99,7 +99,7 @@ class R extends l.Ay.PersistedStore {
                 i = Math.min(h.default.age(e.id), Date.now() - n.getTime()),
                 l = x.channels[e.id];
             if (null == l || l.lastActionTime < Date.now() - E) return !1;
-            for (let e of f)
+            for (let e of _)
                 if (i < e.timeSinceJoin && (l.numSends >= e.sends || l.viewDuration >= e.viewTime)) return !0;
             return !1
         }(t) && (delete x.channels[e], C.add(e), (0, m.mA)(t.guild_id, t.id, g.e.ALL_MESSAGES), !0)
@@ -107,11 +107,11 @@ class R extends l.Ay.PersistedStore {
 }
 let M = new R(s.h, {
         CHANNEL_SELECT: function() {
-            let e = I();
-            return S = c.A.getChannelId(), T = Date.now(), e
+            let e = N();
+            return S = c.A.getChannelId(), I = Date.now(), e
         },
         CONNECTION_OPEN: function() {
-            S = c.A.getChannelId(), T = Date.now(), v();
+            S = c.A.getChannelId(), I = Date.now(), v();
             let e = Date.now() - E;
             h.default.forEach(x.channels, (t, n) => {
                 let {

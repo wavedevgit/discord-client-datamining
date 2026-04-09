@@ -18,11 +18,11 @@ var i = n(627968),
     x = n(421380),
     A = n(397927),
     h = n(73153),
-    p = n(384904),
-    T = n(73825),
-    f = n(736653),
-    S = n(793574),
-    b = n(688810),
+    p = n(73825),
+    T = n(736653),
+    f = n(793574),
+    S = n(688810),
+    b = n(323082),
     E = n(86379),
     C = n(531260),
     N = n(160946),
@@ -105,7 +105,7 @@ function ec(e) {
 function eu() {
     let e = (0, k.k5)(),
         t = (0, k.nf)(),
-        n = (0, f.Ay)(),
+        n = (0, T.Ay)(),
         s = (0, u.bG)([P.A], () => P.A.getPremiumTypeSubscription()),
         l = (0, u.bG)([L.default], () => L.default.getCurrentUser()),
         r = l?.isPremiumWithPremiumGroup(),
@@ -312,7 +312,7 @@ let e_ = function() {
     let e = (0, E.Hp)(),
         {
             analyticsLocations: t
-        } = (0, b.Ay)(S.A.PREMIUM_SETTINGS),
+        } = (0, S.Ay)(f.A.PREMIUM_SETTINGS),
         n = (0, u.bG)([L.default], () => L.default.getCurrentUser()),
         l = (0, u.bG)([P.A], () => P.A.getPremiumTypeSubscription()),
         a = (0, u.bG)([P.A], () => P.A.hasFetchedSubscriptions()),
@@ -325,13 +325,13 @@ let e_ = function() {
             let e = F.A.getMarketingComponentByType(c.C.BILLING_SETTINGS_NITRO_GIFT_BANNER);
             return null == e || "billingSettingsNitroGiftBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.billingSettingsNitroGiftBanner
         }),
-        f = !(d.Fr || d.v1) && null != x,
+        T = !(d.Fr || d.v1) && null != x,
         j = s.useRef(null);
     (0, z.i)();
     let y = (0, H.m)();
     s.useEffect(() => {
         h.h.wait(async () => {
-            e || await Promise.all([p.hP(), p.$o(), (0, T.zS)(null, null, et.tF5.DISCOVERY)]), g(!1)
+            e || await Promise.all([b.hP(), b.$o(), (0, p.zS)(null, null, et.tF5.DISCOVERY)]), g(!1)
         })
     }, [e]);
     let [O, R] = s.useState(!1);
@@ -345,15 +345,15 @@ let e_ = function() {
     });
     if (!D && !M && !U || o) return (0, i.jsx)(A.y$y, {});
     let k = !!l?.hasActiveTrial;
-    return (0, i.jsx)(b.f5, {
+    return (0, i.jsx)(S.f5, {
         value: t,
         children: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {
-                children: [f && (0, i.jsx)(em, {
+                children: [T && (0, i.jsx)(em, {
                     config: x
                 }), (0, i.jsx)(eu, {}), y && (0, i.jsx)(Y.A, {
                     isInSettings: !0
-                }), !f && (0, i.jsx)(eg, {}), (0, i.jsx)(J.A, {
+                }), !T && (0, i.jsx)(eg, {}), (0, i.jsx)(J.A, {
                     hideCTAs: !0,
                     headingOverride: en.intl.string(en.t.dnVvQS),
                     hidePill: !k,

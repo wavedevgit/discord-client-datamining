@@ -16,8 +16,8 @@ var i, l, s = n(64700),
     A = n(334738),
     _ = n(775602),
     m = n(323073),
-    p = n(181079),
-    g = n(567035),
+    g = n(181079),
+    p = n(567035),
     f = n(202803),
     x = n(455234),
     E = n(863005),
@@ -140,7 +140,7 @@ class F extends a.EventEmitter {
         })
     };
     markGuildRead = e => {
-        u.h.wait(() => (0, g.A)([e], k.JJy.INBOX)), this.setState({
+        u.h.wait(() => (0, p.A)([e], k.JJy.INBOX)), this.setState({
             channels: this.state.channels.filter(t => t.guildId !== e)
         }), this.maybeLoadMore()
     };
@@ -352,7 +352,7 @@ function Y(e, t, n, i) {
         mentionCount: o,
         sortOrder: function(e, t, n) {
             let i = y.A.getChannel(t);
-            if (p.A.isFavorite(t)) return 0;
+            if (g.A.isFavorite(t)) return 0;
             if (i.isPrivate()) return 1;
             if (L.Ay.getMentionCount(t) > 0) return L.Ay.getIsMentionLowImportance(t) ? 3 : 2;
             if (null != n) {

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(397927),
-    r = n(115884),
+    r = n(397927),
+    l = n(115884),
     s = n(120006),
     o = n(985018),
     d = n(116226);
@@ -13,11 +13,11 @@ var i = n(627968),
 function c() {
     return (0, i.jsxs)("header", {
         className: d.wx,
-        children: [(0, i.jsx)(l.Heading, {
+        children: [(0, i.jsx)(r.Heading, {
             variant: "heading-lg/semibold",
             className: d.DD,
             children: o.intl.string(o.t.w5uwoI)
-        }), (0, i.jsx)(r.A, {})]
+        }), (0, i.jsx)(l.A, {})]
     })
 }
 let u = function() {

@@ -1,28 +1,28 @@
 /** chunk id: 296227 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => m
 });
-var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    s = n.n(l),
-    r = n(397927),
+var l = n(627968),
+    i = n(64700),
+    a = n(503698),
+    r = n.n(a),
+    s = n(397927),
     o = n(442433),
-    d = n(928658),
-    c = n(985018),
+    c = n(928658),
+    d = n(985018),
     u = n(506573);
 
-function g(e) {
+function m(e) {
     let {
         widget: t,
         userId: n,
-        className: l,
-        menuItems: g
-    } = e, m = a.useRef(null), h = () => {
-        (0, d.GJ)(n, t)
+        className: a,
+        menuItems: m
+    } = e, h = i.useRef(null), p = () => {
+        (0, c.GJ)(n, t)
     };
-    return (0, i.jsx)(r.YNO, {
-        targetElementRef: m,
+    return (0, l.jsx)(s.YNO, {
+        targetElementRef: h,
         align: "top",
         position: "right",
         disablePointerEvents: !1,
@@ -30,35 +30,35 @@ function g(e) {
             let {
                 closePopout: t
             } = e;
-            return (0, i.jsx)(r.W1t, {
+            return (0, l.jsx)(s.W1t, {
                 "data-menu-migrated": !0,
                 navId: "user-profile-widget-context-menu",
                 onClose: () => {
                     (0, o.Z_)(), t()
                 },
                 onSelect: () => {},
-                "aria-label": c.intl.string(c.t.xpSHSk),
-                children: (0, i.jsxs)(r.rXV, {
-                    children: [g, (0, i.jsx)(r.Drp, {
+                "aria-label": d.intl.string(d.t.xpSHSk),
+                children: (0, l.jsxs)(s.rXV, {
+                    children: [m, (0, l.jsx)(s.Drp, {
                         id: "flag-widget",
-                        label: c.intl.string(c.t.D4GvHE),
-                        action: h,
+                        label: d.intl.string(d.t.D4GvHE),
+                        action: p,
                         color: "danger",
-                        icon: r.iFK,
+                        icon: s.iFK,
                         leadingAccessory: {
                             type: "icon",
-                            icon: r.iFK
+                            icon: s.iFK
                         }
                     }, "flag-widget")]
                 })
             })
         },
-        children: e => (0, i.jsx)(r.DUT, {
+        children: e => (0, l.jsx)(s.DUT, {
             ...e,
-            innerRef: m,
-            "aria-label": c.intl.string(c.t.xpSHSk),
-            className: s()(u.x, l),
-            children: (0, i.jsx)(r.jNK, {
+            innerRef: h,
+            "aria-label": d.intl.string(d.t.xpSHSk),
+            className: r()(u.x, a),
+            children: (0, l.jsx)(s.jNK, {
                 size: "sm",
                 color: "currentColor"
             })

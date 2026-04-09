@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(311907),
     _ = n(397927),
     m = n(442433),
-    p = n(928039),
-    g = n(139286),
+    g = n(928039),
+    p = n(139286),
     f = n(636922),
     x = n(194085),
     E = n(835835),
@@ -60,7 +60,7 @@ function k(e) {
     let {
         closePopout: t
     } = e, n = (0, R.A)();
-    return ((0, g.A)({
+    return ((0, p.A)({
         type: u.ImpressionTypes.POPOUT,
         name: u.ImpressionNames.FOR_LATER_LIST_VIEWED,
         properties: {
@@ -114,7 +114,7 @@ function B(e) {
     let {
         savedMessageKeys: t,
         closePopout: n
-    } = e, s = l.useRef(null), a = (0, p.A)("for-later", s), [r, o] = l.useState(new Date);
+    } = e, s = l.useRef(null), a = (0, g.A)("for-later", s), [r, o] = l.useState(new Date);
     return l.useEffect(() => {
         let e = setInterval(() => o(new Date), S.A.Millis.MINUTE);
         return () => {

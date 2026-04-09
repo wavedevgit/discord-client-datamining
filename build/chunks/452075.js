@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(64700),
     a = n(311907),
     r = n(532624),
-    s = n(531685),
-    l = n(350535),
+    l = n(531685),
+    s = n(350535),
     o = n(365971),
     d = n(395011),
     c = n(222506),
@@ -42,12 +42,12 @@ function p() {
             return null != e ? e.shortcut : []
         }, []),
         p = (0, a.bG)([c.A], () => c.A.isInputLocked(t), [t]),
-        g = (0, a.bG)([s.A], () => {
+        g = (0, a.bG)([l.A], () => {
             let t = (0, o.Q2)(e);
-            return s.A.isVisible(t) && s.A.isFocused(t)
+            return l.A.isVisible(t) && l.A.isFocused(t)
         }, [e]),
         f = i.useRef([]),
-        A = i.useMemo(() => (0, l.pi)(n).map(e => h(e)), [n]),
+        A = i.useMemo(() => (0, s.pi)(n).map(e => h(e)), [n]),
         x = i.useMemo(() => n.length > 0, [n]),
         I = !p && x && g;
     i.useEffect(() => {

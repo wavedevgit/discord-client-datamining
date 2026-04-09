@@ -1,6 +1,6 @@
 /** chunk id: 936044 params = (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => d
 });
 var i = n(627968);
 n(64700);
@@ -10,14 +10,14 @@ var l = n(503698),
     s = n(491182),
     o = n(291812),
     c = n(643204),
-    d = n(589224);
+    u = n(589224);
 
-function u(e) {
+function d(e) {
     let {
         message: t,
         channel: n,
         content: l,
-        className: u,
+        className: d,
         compact: _,
         popoutProps: A,
         hideTimestamp: m = !1,
@@ -26,18 +26,18 @@ function u(e) {
     } = e, I = (0, r.Ay)(t);
     return (0, i.jsx)("div", {
         className: a()({
-            [d.Ym]: E
-        }, d.gD, {
-            [d.oE]: _
-        }, u),
+            [u.Ym]: E
+        }, u.gD, {
+            [u.oE]: _
+        }, d),
         children: (0, i.jsx)(s.A, {
             ...T,
-            className: a()(d.zC, {
-                [d.oE]: _
+            className: a()(u.zC, {
+                [u.oE]: _
             }),
             childrenMessageContent: (0, i.jsx)(o.Ay, {
-                className: a()(d.__invalid_messageContent, {
-                    [d.oE]: _
+                className: a()(u.__invalid_messageContent, {
+                    [u.oE]: _
                 }),
                 message: t,
                 content: l,
@@ -50,8 +50,8 @@ function u(e) {
                 guildId: n?.guild_id,
                 compact: _,
                 hideTimestamp: m,
-                className: a()(d.wx, {
-                    [d.oE]: _
+                className: a()(u.wx, {
+                    [u.oE]: _
                 }),
                 ...A ?? {}
             }),

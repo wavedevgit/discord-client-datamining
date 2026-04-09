@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(397927),
-    l = n(308528),
-    r = n(928658),
+    r = n(308528),
+    l = n(928658),
     s = n(978914),
     o = n(985018);
 
@@ -19,19 +19,19 @@ function d(e) {
         onMouseLeave: u
     } = e, {
         error: A,
-        loaded: h,
-        message: _
+        loaded: _,
+        message: h
     } = (0, s.I)(t);
-    if (null == _ && (h || A)) return null;
+    if (null == h && (_ || A)) return null;
     let m = () => {
-        d?.(), l.A.closePrivateChannel(t.id)
+        d?.(), r.A.closePrivateChannel(t.id)
     };
     return (0, i.jsx)(a.Button, {
         variant: "critical-primary",
         size: "sm",
-        disabled: null == _,
+        disabled: null == h,
         onClick: e => {
-            e.stopPropagation(), n?.(), null != _ && (0, r.b8)(_, m)
+            e.stopPropagation(), n?.(), null != h && (0, l.b8)(h, m)
         },
         onMouseEnter: c,
         onMouseLeave: u,

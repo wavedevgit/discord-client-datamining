@@ -17,8 +17,8 @@ var l = n(311907),
     A = n(513461),
     g = n(123393),
     p = n(652215),
-    f = n(985018),
-    _ = n(434886);
+    _ = n(985018),
+    f = n(434886);
 
 function E(e) {
     let {
@@ -28,8 +28,8 @@ function E(e) {
     } = e, x = h.default.cast(t), {
         joinRequest: C,
         isModmin: S,
-        guildId: T,
-        maxMembers: N
+        guildId: I,
+        maxMembers: T
     } = (0, l.cf)([m.A, d.A, u.A], () => {
         let e = m.A.getRequest(x),
             t = d.A.getGuild(e?.guildId);
@@ -39,20 +39,20 @@ function E(e) {
             guildId: t?.id,
             maxMembers: t?.maxMembers
         }
-    }), I = (0, l.bG)([c.A], () => null != T ? c.A.getMemberCount(T) : 0), v = null != N && (I ?? 0) >= N, {
+    }), N = (0, l.bG)([c.A], () => null != I ? c.A.getMemberCount(I) : 0), v = null != T && (N ?? 0) >= T, {
         approveRequest: y,
         rejectRequest: b,
         submitting: j
     } = (0, g.W)(C?.guildId, C?.userId, C?.joinRequestId);
     return null != C && C.applicationStatus === A.B5.SUBMITTED && S ? (0, i.jsxs)("div", {
-        className: _.U,
+        className: f.U,
         children: [(0, i.jsx)(s.m, {
-            text: f.intl.string(f.t.cdPGbE),
+            text: _.intl.string(_.t.cdPGbE),
             shouldShow: v,
             children: (0, i.jsx)(a.Button, {
                 variant: "active",
                 size: "sm",
-                text: f.intl.string(f.t.BzjDQJ),
+                text: _.intl.string(_.t.BzjDQJ),
                 loading: j,
                 onClick: y,
                 disabled: v
@@ -60,7 +60,7 @@ function E(e) {
         }), (0, i.jsx)(a.Button, {
             variant: "critical-primary",
             size: "sm",
-            text: f.intl.string(f.t.hDtbsz),
+            text: _.intl.string(_.t.hDtbsz),
             onClick: b,
             disabled: j || C.applicationStatus !== A.B5.SUBMITTED
         }), n && (0, i.jsx)(a.Button, {
@@ -72,7 +72,7 @@ function E(e) {
             },
             variant: "secondary",
             size: "sm",
-            text: f.intl.string(f.t.iXAna6)
+            text: _.intl.string(_.t.iXAna6)
         }), E && (0, i.jsx)(r.Ay.Divider, {})]
     }) : null
 }

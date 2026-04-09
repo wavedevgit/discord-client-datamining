@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(503698),
+    l = n.n(r),
     s = n(311907),
     o = n(827734),
     d = n(421380),
     c = n(397927),
     u = n(942857),
     A = n(795816),
-    h = n(216418),
-    _ = n(47294),
+    _ = n(216418),
+    h = n(47294),
     m = n(16961),
     g = n(58149),
     p = n(429913),
@@ -40,7 +40,7 @@ let D = {
 function j(e) {
     let {
         frame: t
-    } = e, n = (0, p.h)(t.applicationId), l = (0, u.A)(), {
+    } = e, n = (0, p.h)(t.applicationId), r = (0, u.A)(), {
         selectedChannelId: j,
         selectedVoiceChannelId: M
     } = (0, s.cf)([S.A], () => ({
@@ -70,7 +70,7 @@ function j(e) {
         return e.observe(V.current), () => e.disconnect()
     }, []), a.useEffect(() => {
         let e = e => {
-            null == k.current || (0, c.HG$)(k.current, e.target) || l || x.A.updateFrameLayoutMode({
+            null == k.current || (0, c.HG$)(k.current, e.target) || r || x.A.updateFrameLayoutMode({
                 applicationId: t.applicationId,
                 layoutMode: y.y.PIP
             })
@@ -78,35 +78,35 @@ function j(e) {
         return document.addEventListener("mousedown", e), () => {
             document.removeEventListener("mousedown", e)
         }
-    }, [t.applicationId, l]);
+    }, [t.applicationId, r]);
     let W = B.width / Math.max(B.height, 1) < L.B5,
         K = 0,
         q = 0,
-        z = (0, h.A)(n?.id);
+        z = (0, _.A)(n?.id);
     if (!z) {
         let e = B.width,
             t = B.height;
         W ? ((t = B.width / L.B5) > B.height && (e = (t = B.height) * L.B5), q = (B.height - t) / 2) : ((e = Math.min(B.height * L.B5, B.width)) > B.width && (t = (e = B.width) / L.B5), K = (B.width - e) / 2)
     }
     let $ = L.E8.NO_CHAT,
-        X = (0, m.G)();
+        Q = (0, m.G)();
     if (null == n) return null;
-    let Q = (U ?? O.da6) + G,
+    let X = (U ?? O.da6) + G,
         Z = (0, b.YY)(t);
     return (0, i.jsx)(c.NPJ, {
         theme: O.NJ8.DARK,
         children: e => (0, i.jsxs)("div", {
-            className: r()(P.iE, D[$], e),
+            className: l()(P.iE, D[$], e),
             ref: k,
             style: {
-                right: w && !Number.isNaN(Q) ? Q : 0
+                right: w && !Number.isNaN(X) ? X : 0
             },
             children: [(0, i.jsx)(I.A, {
                 applicationId: t.applicationId
             }), (0, i.jsx)("div", {
                 className: P.lq,
                 children: (0, i.jsx)("div", {
-                    className: r()(P.ht, {
+                    className: l()(P.ht, {
                         [P.kK]: z
                     }),
                     style: {
@@ -151,10 +151,10 @@ function j(e) {
                         iconComponent: c.oLl,
                         color: "disconnect"
                     })]
-                }), X ? (0, i.jsx)(N.A, {
+                }), Q ? (0, i.jsx)(N.A, {
                     popoutOpen: !1,
                     onOpenPopout: () => {
-                        (0, g.zV)(O.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, _.A)({
+                        (0, g.zV)(O.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, h.A)({
                             onConfirm: async () => {
                                 n?.id != null && await x.A.refreshProxyTicket({
                                     applicationId: n.id

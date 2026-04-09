@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(397927),
-    r = n(915089),
+    r = n(397927),
+    l = n(915089),
     s = n(999856);
 
 function o(e) {
@@ -14,7 +14,7 @@ function o(e) {
         children: t,
         id: n
     } = e;
-    return (0, i.jsx)(l.Text, {
+    return (0, i.jsx)(r.Text, {
         className: s.g,
         color: "text-subtle",
         id: n,
@@ -26,11 +26,11 @@ let d = function(e) {
     let {
         children: t,
         renderPopout: n
-    } = e, o = (0, r.GV)(), d = a.useRef(null);
-    return (0, i.jsx)(l.YNO, {
+    } = e, o = (0, l.GV)(), d = a.useRef(null);
+    return (0, i.jsx)(r.YNO, {
         align: "right",
         position: "bottom",
-        renderPopout: e => (0, i.jsx)(l.lGe, {
+        renderPopout: e => (0, i.jsx)(r.lGe, {
             className: s.S,
             "aria-labelledby": o,
             children: n(e, o)

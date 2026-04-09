@@ -9,8 +9,8 @@ var i = n(627968),
     s = n(397927),
     o = n(966327),
     c = n(793574),
-    d = n(688810),
-    u = n(139286),
+    u = n(688810),
+    d = n(139286),
     _ = n(21119),
     A = n(287809),
     m = n(954571),
@@ -77,7 +77,7 @@ function O(e) {
         innerRef: M
     } = e, D = (0, r.bG)([A.default], () => A.default.getCurrentUser()), {
         analyticsLocations: L
-    } = (0, d.Ay)(c.A.PREMIUM_GIFT_INTENT_CARD), U = (0, r.bG)([T.Ay], () => T.Ay.getFriendAnniversaryYears(S.id)), P = (0, I.$)(t), {
+    } = (0, u.Ay)(c.A.PREMIUM_GIFT_INTENT_CARD), U = (0, r.bG)([T.Ay], () => T.Ay.getFriendAnniversaryYears(S.id)), P = (0, I.$)(t), {
         openGiftModal: v
     } = (0, N.$)({
         giftRecipient: S,
@@ -92,7 +92,7 @@ function O(e) {
         location: "gift-intent-card"
     });
     l.useEffect(() => {
-        (0, u.x)({
+        (0, d.x)({
             name: a.ImpressionNames.GIFT_INTENT_CARD,
             type: a.ImpressionTypes.VIEW,
             properties: {
@@ -101,7 +101,7 @@ function O(e) {
             }
         })
     }, [t]);
-    let j = () => t === g.np.FRIEND_ANNIVERSARY ? h.intl.string(h.t.ilhtIa) : (0, E.yE)(t);
+    let y = () => t === g.np.FRIEND_ANNIVERSARY ? h.intl.string(h.t.ilhtIa) : (0, E.yE)(t);
     return (0, i.jsx)("div", {
         ref: M,
         className: p.Qs,
@@ -169,9 +169,9 @@ function O(e) {
                 }), (0, i.jsx)(s.Button, {
                     size: "sm",
                     variant: "expressive",
-                    text: j(),
+                    text: y(),
                     icon: s.okO,
-                    "aria-label": j(),
+                    "aria-label": y(),
                     onClick: e => {
                         e.stopPropagation();
                         let n = _.A.getUserAffinity(S.id);

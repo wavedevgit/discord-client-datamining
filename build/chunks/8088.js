@@ -40,8 +40,8 @@ var I = n(15285),
     M = n(70142),
     P = n(157257),
     G = n(712687),
-    U = n(532624),
-    V = n(242286),
+    V = n(532624),
+    U = n(242286),
     z = n(899699),
     H = n(256415),
     W = n(531685),
@@ -148,7 +148,7 @@ class ep extends l.Component {
         this.forceUpdate()
     }, 500);
     handleWindowResize = () => {
-        V.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : this.debouncedForceUpdate()
+        U.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : this.debouncedForceUpdate()
     };
     componentDidMount() {
         g.A.startSession(), b.A.initialize(), y.A.initialize(), O.A.initialize()
@@ -314,7 +314,7 @@ function ef() {
         incompatibleApp: H.default.incompatibleApp,
         activeRegions: H.default.getActiveRegions(),
         isPreviewingInGame: H.default.isPreviewingInGame()
-    })), r = (0, f.bG)([W.A], () => W.A.windowSize()), o = (0, f.bG)([U.Ay], () => U.Ay.getOverlayKeybind()), d = (0, f.bG)([k.A], () => k.A.getVoiceChannelId()), c = (0, f.bG)([D.A], () => D.A.getChannel(d)), u = (0, f.bG)([R.A], () => null != c ? R.A.getGuild(c.guild_id) : null), h = (0, f.bG)([I.Ay, P.A], () => (0, T.A)(I.Ay, P.A)), p = (0, f.bG)([w.Ay], () => (0, N.A)(w.Ay)), A = (0, f.bG)([j.A], () => null != j.A.getCurrentUserActiveStream()), {
+    })), r = (0, f.bG)([W.A], () => W.A.windowSize()), o = (0, f.bG)([V.Ay], () => V.Ay.getOverlayKeybind()), d = (0, f.bG)([k.A], () => k.A.getVoiceChannelId()), c = (0, f.bG)([D.A], () => D.A.getChannel(d)), u = (0, f.bG)([R.A], () => null != c ? R.A.getGuild(c.guild_id) : null), h = (0, f.bG)([I.Ay, P.A], () => (0, T.A)(I.Ay, P.A)), p = (0, f.bG)([w.Ay], () => (0, N.A)(w.Ay)), A = (0, f.bG)([j.A], () => null != j.A.getCurrentUserActiveStream()), {
         analyticsLocations: _
     } = (0, S.Ay)(v.A.OVERLAY);
     return l.useEffect(() => {

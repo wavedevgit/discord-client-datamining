@@ -5,16 +5,16 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(179771),
-    l = n(420970),
-    r = n(397927),
+    r = n(420970),
+    l = n(397927),
     s = n(308368),
     o = n(298990),
     d = n(544420),
     c = n(334738),
     u = n(181658),
     A = n(646865),
-    h = n(795816),
-    _ = n(851907),
+    _ = n(795816),
+    h = n(851907),
     m = n(980142),
     g = n(572946),
     p = n(293588),
@@ -41,16 +41,16 @@ var a = n(179771),
     G = n(360469);
 async function k(e, t, n, i) {
     let a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : "",
-        l = N.A.getApplicationActivity(t);
-    if (null == l || null == l.secrets || !(0, R.px)(i, l.party, l.secrets)) throw new L.A({
+        r = N.A.getApplicationActivity(t);
+    if (null == r || null == r.secrets || !(0, R.px)(i, r.party, r.secrets)) throw new L.A({
         errorCode: U.Lw6.NO_ELIGIBLE_ACTIVITY
     }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
-    let r = (0, m.A)(l, S.A);
-    if (r) {
+    let l = (0, m.A)(r, S.A);
+    if (l) {
         let {
             lock: t
         } = (0, M.d5)(e);
-        return (0, o.qf)(l, r).then(() => {
+        return (0, o.qf)(r, l).then(() => {
             throw t(), new L.A({
                 errorCode: U.Lw6.NO_ELIGIBLE_ACTIVITY
             }, "No eligible activity for application. Ensure user does have have privacy enabled.")
@@ -59,7 +59,7 @@ async function k(e, t, n, i) {
     await s.A.sendActivityInviteUser({
         userId: n,
         type: i,
-        activity: l,
+        activity: r,
         content: a,
         location: "In-Game Invite"
     })
@@ -117,13 +117,13 @@ let V = {
                     type: n,
                     user_id: i,
                     content: a,
-                    pid: l
+                    pid: r
                 }
-            } = e, r = t.application.id;
-            if (null == r) throw new L.A({
+            } = e, l = t.application.id;
+            if (null == l) throw new L.A({
                 errorCode: U.Lw6.INVALID_COMMAND
             }, "No application.");
-            return k(l, r, i, n, a)
+            return k(r, l, i, n, a)
         }
     },
     [U.e$_.ACCEPT_ACTIVITY_INVITE]: {
@@ -145,8 +145,8 @@ let V = {
                     type: n,
                     user_id: i,
                     session_id: a,
-                    channel_id: l,
-                    message_id: r,
+                    channel_id: r,
+                    message_id: l,
                     application_id: s
                 }
             } = e, o = t.transport === w.z4.IPC ? s ?? t.application.id : t.application.id;
@@ -158,8 +158,8 @@ let V = {
                 userId: i,
                 sessionId: a,
                 applicationId: o,
-                channelId: l,
-                messageId: r
+                channelId: r,
+                messageId: l
             })), c.then(e => {
                 if (!e) throw new L.A({
                     errorCode: U.Lw6.INVALID_INVITE
@@ -179,12 +179,12 @@ let V = {
                 errorCode: U.Lw6.INVALID_COMMAND
             }, "No application.");
             let {
-                channel: l,
+                channel: r,
                 guild: s,
                 frame: d
-            } = (0, j.W)(), c = (0, _.Ay)({
+            } = (0, j.W)(), c = (0, h.Ay)({
                 application: t.application,
-                channelId: l?.id
+                channelId: r?.id
             }), u = null != c ? f.A.getWindow(c) : void 0;
             u?.closed && (u = void 0);
             let A = null != u ? U.BRT.POPOUT : U.BRT.APP;
@@ -197,24 +197,24 @@ let V = {
                 else throw new L.A({
                     errorCode: U.Lw6.NO_ELIGIBLE_ACTIVITY
                 }, "No eligible activity for application. Ensure an activity was set using setActivity.")
-            } else(0, r.mMO)(async () => {
+            } else(0, l.mMO)(async () => {
                 let {
                     default: e
                 } = await Promise.all([n.e("43600"), n.e("55221")]).then(n.bind(n, 234355));
                 return t => (0, i.jsx)(e, {
                     ...t,
                     guild: s,
-                    channel: l,
+                    channel: r,
                     applicationId: a.id,
                     analyticsLocation: U.ThZ.ACTIVITY_RPC,
                     source: U.PE1.ACTIVITY_INVITE
                 })
             }, {
-                contextKey: A === U.BRT.POPOUT ? r.KX8 : r.SYi
+                contextKey: A === U.BRT.POPOUT ? l.KX8 : l.SYi
             })
         }
     },
-    [U.e$_.INITIATE_IMAGE_UPLOAD]: (0, l.T)(U.e$_.INITIATE_IMAGE_UPLOAD, {
+    [U.e$_.INITIATE_IMAGE_UPLOAD]: (0, r.T)(U.e$_.INITIATE_IMAGE_UPLOAD, {
         scope: {
             [w.sm.ANY]: [a.F.RPC, w.hj, w.VH]
         },
@@ -250,10 +250,10 @@ let V = {
                         a()
                     }), n.document.body.addEventListener("focus", a, !0), n.document.body.appendChild(i), i.click()
                 }(async a => {
-                    let l = await (0, h.CS)(n, i, a);
-                    (0, v.Vq)(l) && (0, v.Vq)(l.url) && !(l instanceof u.A) ? e({
-                        image_url: l.url
-                    }): t(l)
+                    let r = await (0, _.CS)(n, i, a);
+                    (0, v.Vq)(r) && (0, v.Vq)(r.url) && !(r instanceof u.A) ? e({
+                        image_url: r.url
+                    }): t(r)
                 }, () => t(Error("Upload canceled")))
             }).catch(e => {
                 throw new L.A({
@@ -262,7 +262,7 @@ let V = {
             })
         }
     }),
-    [U.e$_.OPEN_SHARE_MOMENT_DIALOG]: (0, l.T)(U.e$_.OPEN_SHARE_MOMENT_DIALOG, {
+    [U.e$_.OPEN_SHARE_MOMENT_DIALOG]: (0, r.T)(U.e$_.OPEN_SHARE_MOMENT_DIALOG, {
         scope: {
             [w.sm.ANY]: [w.VH]
         },
@@ -292,7 +292,7 @@ let V = {
             })
         }
     }),
-    [U.e$_.SHARE_INTERACTION]: (0, l.T)(U.e$_.SHARE_INTERACTION, {
+    [U.e$_.SHARE_INTERACTION]: (0, r.T)(U.e$_.SHARE_INTERACTION, {
         scope: {
             [w.sm.ANY]: [w.VH, w.hj]
         },
@@ -302,7 +302,7 @@ let V = {
                     args: {
                         command: i,
                         preview_image: a,
-                        components: l,
+                        components: r,
                         require_launch_channel: s,
                         content: o,
                         options: d,
@@ -323,7 +323,7 @@ let V = {
             if (null == A && s) throw new L.A({
                 errorCode: U.Lw6.INVALID_COMMAND
             }, "No channel found");
-            if (null !== a || null !== l || null !== o) {
+            if (null !== a || null !== r || null !== o) {
                 let e = [];
                 void 0 !== a && (e = [{
                     id: b.default.cast(b.default.fromTimestamp(Date.now())),
@@ -337,15 +337,15 @@ let V = {
                     id: b.default.cast(b.default.fromTimestamp(Date.now())),
                     applicationId: u,
                     content: o,
-                    components: l,
+                    components: r,
                     attachments: e
                 })
             }
             return new Promise(e => {
                 let n = !1,
                     a = (0, M.d5)(c),
-                    l = r.SYi;
-                (f.A.getWindowOpen(U.MLl.ACTIVITY_POPOUT) || a.context === U.BRT.POPOUT) && (l = r.KX8), (0, p.m)({
+                    r = l.SYi;
+                (f.A.getWindowOpen(U.MLl.ACTIVITY_POPOUT) || a.context === U.BRT.POPOUT) && (r = l.KX8), (0, p.m)({
                     applicationId: u,
                     channel: A,
                     command: {
@@ -359,7 +359,7 @@ let V = {
                         })
                     },
                     previewMessage: t,
-                    contextKey: l
+                    contextKey: r
                 })
             })
         }

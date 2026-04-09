@@ -5,16 +5,16 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(265486),
-    l = n(397927),
-    r = n(793574),
+    r = n(397927),
+    l = n(793574),
     s = n(688810),
     o = n(927578),
     d = n(511484),
     c = n(473702),
     u = n(788868),
     A = n(49999),
-    h = n(985018),
-    _ = n(398932);
+    _ = n(985018),
+    h = n(398932);
 let m = e => {
     let {
         targetElementRef: t,
@@ -24,7 +24,7 @@ let m = e => {
         children: E
     } = e, {
         analyticsLocations: I
-    } = (0, s.Ay)(r.A.CHURN_DISCOUNT_POPOVER), f = (0, d.iU)(u.gD.PREMIUM_MONTH_TIER_2, m, g), C = (0, i.jsx)(a.h, {
+    } = (0, s.Ay)(l.A.CHURN_DISCOUNT_POPOVER), f = (0, d.iU)(u.gD.PREMIUM_MONTH_TIER_2, m, g), C = (0, i.jsx)(a.h, {
         targetElementRef: t,
         position: "right",
         align: "top",
@@ -32,24 +32,24 @@ let m = e => {
         caretConfig: {
             align: "start"
         },
-        title: h.intl.format(h.t["3yZP0G"], {
+        title: _.intl.format(_.t["3yZP0G"], {
             percent: m.discount.amount
         }).toString(),
-        body: h.intl.format(h.t["3Q4wCy"], {
+        body: _.intl.format(_.t["3Q4wCy"], {
             discountedPrice: f,
             billingPeriod: (0, o.Ke)(m.discount.user_usage_limit_interval),
             numMonths: m.discount.user_usage_limit
         }),
         graphic: {
             type: "image",
-            src: _.A
+            src: h.A
         },
         gradientColor: "nitro-pink",
         actions: [{
-            text: h.intl.string(h.t.zrCzVB),
+            text: _.intl.string(_.t.zrCzVB),
             variant: "expressive",
             onClick: () => {
-                p(A.i.TAKE_ACTION), (0, l.mMO)(async () => {
+                p(A.i.TAKE_ACTION), (0, r.mMO)(async () => {
                     let {
                         PremiumBrandRefreshSubscriptionCancellationModal: e
                     } = await n.e("72820").then(n.bind(n, 281439));
@@ -61,7 +61,7 @@ let m = e => {
                     })
                 })
             },
-            icon: l.tvc
+            icon: r.tvc
         }],
         onRequestClose: () => {
             p(A.i.USER_DISMISS)

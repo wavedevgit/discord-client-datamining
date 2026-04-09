@@ -1,38 +1,38 @@
 /** chunk id: 253798 params = (module,exports,require) **/
-n.d(t, {
+i.d(t, {
     B: () => c,
     M: () => d
 });
-var i = n(627968),
-    a = n(64700),
-    l = n(311907),
-    s = n(61881),
-    r = n(735321);
-let o = a.createContext(null);
+var n = i(627968),
+    s = i(64700),
+    l = i(311907),
+    a = i(61881),
+    r = i(735321);
+let o = s.createContext(null);
 
 function d(e) {
     let {
         widgetType: t,
-        children: n
-    } = e, d = (0, l.bG)([s.A], () => {
-        let e = s.A.getPendingWidgets();
+        children: i
+    } = e, d = (0, l.bG)([a.A], () => {
+        let e = a.A.getPendingWidgets();
         if (null == e) return !1;
-        let n = e.find(e => e.type === t);
-        if (null == n) return !1;
-        let i = (0, r.cv)(t);
-        return n.games.length > i
-    }), [c, u] = a.useState(d);
-    return (0, i.jsx)(o.Provider, {
+        let i = e.find(e => e.type === t);
+        if (null == i) return !1;
+        let n = (0, r.cv)(t);
+        return i.games.length > n
+    }), [c, u] = s.useState(d);
+    return (0, n.jsx)(o.Provider, {
         value: {
             expanded: c,
             setExpanded: u
         },
-        children: n
+        children: i
     })
 }
 
 function c() {
-    let e = a.useContext(o);
+    let e = s.useContext(o);
     if (null == e) throw Error("useGameWidgetExpandCollapse must be used within a GameWidgetExpandCollapseContextProvider");
     return e
 }

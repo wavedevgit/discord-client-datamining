@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(735438),
     a = n.n(i),
-    l = n(73153),
-    r = n(510595),
+    r = n(73153),
+    l = n(510595),
     s = n(35177),
     o = n(405892),
     d = n(594061),
@@ -13,11 +13,11 @@ var i = n(735438),
     u = n(355097);
 let A = {
     init() {
-        o.A[u.oD.PRELOADED_USER_SETTINGS] = s.A, o.A[u.oD.FRECENCY_AND_FAVORITES_SETTINGS] = r.A, l.h.subscribe("CONNECTION_OPEN", h), l.h.subscribe("USER_SETTINGS_PROTO_ENQUEUE_UPDATE", _), l.h.subscribe("USER_SETTINGS_PROTO_LOAD_IF_NECESSARY", m), l.h.subscribe("APP_STATE_UPDATE", g)
+        o.A[u.oD.PRELOADED_USER_SETTINGS] = s.A, o.A[u.oD.FRECENCY_AND_FAVORITES_SETTINGS] = l.A, r.h.subscribe("CONNECTION_OPEN", _), r.h.subscribe("USER_SETTINGS_PROTO_ENQUEUE_UPDATE", h), r.h.subscribe("USER_SETTINGS_PROTO_LOAD_IF_NECESSARY", m), r.h.subscribe("APP_STATE_UPDATE", g)
     }
 };
 
-function h() {
+function _() {
     let e = c.A.getFullState(),
         t = e[u.oD.PRELOADED_USER_SETTINGS];
     t.editInfo.triggeredMigrations && d.wc.markDirtyFromMigration(t.proto, t.editInfo.cleanupFuncs), a().forEach(d.Df, (t, n) => {
@@ -26,7 +26,7 @@ function h() {
     })
 }
 
-function _(e) {
+function h(e) {
     let {
         settings: {
             proto: t,

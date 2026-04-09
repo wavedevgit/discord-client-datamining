@@ -1,6 +1,6 @@
 /** chunk id: 34247 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
     l = n(64700),
@@ -15,24 +15,24 @@ var i = n(627968),
     A = n(324580),
     _ = n(654487),
     m = n(985018);
-let p = l.forwardRef(function(e, t) {
+let g = l.forwardRef(function(e, t) {
     let {
         selected: n,
-        onClick: p,
-        questId: g,
+        onClick: g,
+        questId: p,
         className: f
     } = e, x = l.useCallback(() => {
         (0, r.WL)({
             source: h.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
         });
-        let e = void 0 !== g ? h.GlobalDiscoveryTab.QUESTS : o.A.getField("selectedTab");
+        let e = void 0 !== p ? h.GlobalDiscoveryTab.QUESTS : o.A.getField("selectedTab");
         switch (e) {
             case h.GlobalDiscoveryTab.QUESTS:
                 return (0, d.transitionToGlobalDiscovery)({
                     tab: h.GlobalDiscoveryTab.QUESTS,
                     location: _.rE.DISCOVERY_COMPASS,
                     questContent: s.u.DISCOVERY_COMPASS,
-                    questId: g
+                    questId: p
                 });
             case h.GlobalDiscoveryTab.SERVERS:
                 return (0, d.transitionToGlobalDiscovery)({
@@ -54,13 +54,13 @@ let p = l.forwardRef(function(e, t) {
                     tab: e
                 })
         }
-    }, [g]);
+    }, [p]);
     return (0, i.jsx)(u.A, {
         id: "guild-discover-button",
         ref: t,
         className: f,
         onClick: () => {
-            x(), void 0 !== p && p()
+            x(), void 0 !== g && g()
         },
         selected: n,
         tooltip: m.intl.string(m.t["4nEZLk"]),

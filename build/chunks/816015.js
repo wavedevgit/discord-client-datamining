@@ -1,12 +1,12 @@
 /** chunk id: 816015 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => r
 });
 var i = n(627968);
 n(64700);
 var a = n(985018);
 
-function l(e) {
+function r(e) {
     return (0, i.jsx)("div", {
         style: {
             display: "flex",

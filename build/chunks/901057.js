@@ -10,8 +10,8 @@ var l = n(311907),
     s = n(367513),
     o = n(956793),
     c = n(47167),
-    d = n(332173),
-    u = n(976860),
+    u = n(332173),
+    d = n(976860),
     _ = n(95701),
     A = n(734057),
     m = n(71393),
@@ -33,7 +33,7 @@ function f(e) {
         "data-pending-richtooltip-migration": !0,
         __unsupportedReactNodeAsText: p,
         position: "top",
-        children: (0, i.jsx)(d.A, {
+        children: (0, i.jsx)(u.A, {
             role: "link",
             className: C,
             onClick: e => {
@@ -47,12 +47,12 @@ function f(e) {
                     let l = A.A.getChannel(t);
                     if (null != l && (0, _.ay)(l.type)) {
                         if (n) {
-                            s.A.updateChatOpen(l.id, !0), (0, u.pX)(g.BVt.CHANNEL(e, t));
+                            s.A.updateChatOpen(l.id, !0), (0, d.pX)(g.BVt.CHANNEL(e, t));
                             return
                         }
                         o.default.selectVoiceChannel(l.id);
                         return
-                    }(0, u.pX)(g.BVt.CHANNEL(e, t))
+                    }(0, d.pX)(g.BVt.CHANNEL(e, t))
                 }(t?.guild_id, t?.id, h))
             },
             iconType: (0, I.QG)(t),

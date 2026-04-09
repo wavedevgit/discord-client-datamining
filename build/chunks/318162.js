@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(183555),
     _ = n(672385),
     m = n(950191),
-    p = n(249790),
-    g = n(946356),
+    g = n(249790),
+    p = n(946356),
     f = n(254828),
     x = n(783123),
     E = n(996988),
@@ -41,7 +41,7 @@ function T(e) {
         children: (0, i.jsx)(A.of, {
             value: j,
             isLoaded: S?.isLoaded,
-            children: (0, i.jsx)(g.A, {
+            children: (0, i.jsx)(p.A, {
                 ref: R,
                 user: t,
                 displayProfile: S,
@@ -59,7 +59,7 @@ function T(e) {
                             className: C.rf,
                             children: [(0, i.jsxs)("div", {
                                 className: C.N1,
-                                children: [(0, i.jsx)(p.A, {
+                                children: [(0, i.jsx)(g.A, {
                                     user: t
                                 }), (0, i.jsx)(r.Heading, {
                                     variant: "heading-lg/bold",

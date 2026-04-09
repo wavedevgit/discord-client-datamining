@@ -1,36 +1,36 @@
 /** chunk id: 25530 params = (module,exports,require) **/
-n.d(t, {
+i.d(t, {
     A: () => r
 });
-var i = n(627968);
-n(64700);
-var a = n(435546),
-    l = n(466853),
-    s = n(294868);
+var n = i(627968);
+i(64700);
+var s = i(435546),
+    l = i(466853),
+    a = i(294868);
 
 function r(e) {
     let {
         user: t,
-        widget: n,
+        widget: i,
         guildId: r,
         channelId: o,
         disableInteraction: d,
         ...c
     } = e;
-    return (0, i.jsx)(l.A, {
+    return (0, n.jsx)(l.A, {
         userId: t.id,
-        widget: n,
+        widget: i,
         disableInteraction: d,
         ...c,
-        children: n.games.length > 0 ? (0, i.jsx)(s.A, {
+        children: i.games.length > 0 ? (0, n.jsx)(a.A, {
             user: t,
-            widgetType: n.type,
-            games: n.games,
+            widgetType: i.type,
+            games: i.games,
             guildId: r,
             channelId: o,
             disableInteraction: d
-        }) : (0, i.jsx)(a.A, {
-            widget: n
+        }) : (0, n.jsx)(s.A, {
+            widget: i
         })
     })
 }

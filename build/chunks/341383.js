@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(73153),
     a = n(827343),
-    l = n(684013),
-    r = n(956793),
+    r = n(684013),
+    l = n(956793),
     s = n(401843),
     o = n(55619),
     d = n(87203),
     c = n(272355),
     u = n(793574),
     A = n(734066),
-    h = n(572164),
-    _ = n(399925),
+    _ = n(572164),
+    h = n(399925),
     m = n(963169),
     g = n(652896),
     p = n(349963),
@@ -37,14 +37,14 @@ let D = new Map;
 function j(e, t, n, i) {
     if (!S.A.isConnected()) return;
     let a = i.context ?? P.x.DEFAULT,
-        l = D.get(a);
-    null == l && (l = {
+        r = D.get(a);
+    null == r && (r = {
         held: new Set,
         priorityHeld: new Set
-    }, D.set(a, l)), n || (e ? l.held.add(i.id) : l.held.delete(i.id)), t && (e ? l.priorityHeld.add(i.id) : l.priorityHeld.delete(i.id));
-    let r = l.held.size > 0,
-        s = l.priorityHeld.size > 0;
-    (0, E.N)(r, s)
+    }, D.set(a, r)), n || (e ? r.held.add(i.id) : r.held.delete(i.id)), t && (e ? r.priorityHeld.add(i.id) : r.priorityHeld.delete(i.id));
+    let l = r.held.size > 0,
+        s = r.priorityHeld.size > 0;
+    (0, E.N)(l, s)
 }
 let M = {
     [R.hCu.TOGGLE_PRIORITY_SPEAKER]: {
@@ -143,7 +143,7 @@ let M = {
         onTrigger(e, t) {
             if (!(0, v.DV)(t.shortcut)) return;
             let n = (0, L.A)();
-            null != n && l.A.setInputLocked(!y.default.isLocked(n), n)
+            null != n && r.A.setInputLocked(!y.default.isLocked(n), n)
         },
         keyEvents: {
             keyup: !0,
@@ -154,7 +154,7 @@ let M = {
         onTrigger() {
             let e = b.default.getFocusedPID(),
                 t = null != e;
-            null != e && t && y.default.isPinned(R.uss.TEXT) && y.default.isLocked(e) && b.default.isReady(e) && l.A.activateRegion(R.ajI.TEXT_WIDGET)
+            null != e && t && y.default.isPinned(R.uss.TEXT) && y.default.isLocked(e) && b.default.isReady(e) && r.A.activateRegion(R.ajI.TEXT_WIDGET)
         },
         keyEvents: {
             keyup: !0,
@@ -232,7 +232,7 @@ let M = {
     },
     [R.hCu.SAVE_CLIP]: {
         onTrigger: () => {
-            (0, h.TD)() && (O.default.track(R.HAw.CLIP_SAVE_KEYBIND_PRESSED), (0, _.l0)())
+            (0, _.TD)() && (O.default.track(R.HAw.CLIP_SAVE_KEYBIND_PRESSED), (0, h.l0)())
         },
         keyEvents: {
             keyup: !1,
@@ -241,7 +241,7 @@ let M = {
     },
     [R.hCu.SAVE_SCREENSHOT]: {
         onTrigger: () => {
-            !(0, h.TD)() || (0, A.cx)() && (O.default.track(R.HAw.CLIP_SAVE_KEYBIND_PRESSED), (0, _.yT)())
+            !(0, _.TD)() || (0, A.cx)() && (O.default.track(R.HAw.CLIP_SAVE_KEYBIND_PRESSED), (0, h.yT)())
         },
         keyEvents: {
             keyup: !1,
@@ -255,7 +255,7 @@ let M = {
                     channelId: n
                 }
             } = t;
-            null != n && r.default.selectVoiceChannel(n)
+            null != n && l.default.selectVoiceChannel(n)
         },
         keyEvents: {
             keyup: !0,
@@ -266,7 +266,7 @@ let M = {
     },
     [R.hCu.DISCONNECT_FROM_VOICE_CHANNEL]: {
         onTrigger() {
-            r.default.selectVoiceChannel(null)
+            l.default.selectVoiceChannel(null)
         },
         keyEvents: {
             keyup: !0,

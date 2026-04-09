@@ -4,8 +4,8 @@ n.d(t, {
 });
 var l = n(627968),
     a = n(64700),
-    i = n(311907),
-    r = n(397927),
+    r = n(311907),
+    i = n(397927),
     s = n(387408),
     d = n(763754),
     o = n(491182),
@@ -14,14 +14,14 @@ var l = n(627968),
     _ = n(448368),
     m = n(538355),
     p = n(253932),
-    h = n(734057),
-    x = n(838541),
-    g = n(985018),
+    g = n(734057),
+    h = n(838541),
+    x = n(985018),
     A = n(366073);
 let v = e => {
     let {
         message: t
-    } = e, n = (0, d.Ay)(t), v = (0, i.bG)([h.A], () => h.A.getChannel(t.channel_id)), b = a.useMemo(() => (0, s.A)(t), [t]), {
+    } = e, n = (0, d.Ay)(t), v = (0, r.bG)([g.A], () => g.A.getChannel(t.channel_id)), b = a.useMemo(() => (0, s.A)(t), [t]), {
         content: f
     } = (0, m.A)(b, {
         hideSimpleEmbedContent: !1
@@ -32,7 +32,7 @@ let v = e => {
         } = (0, _.o)(t, f, !1, !1, "", {
             leadingIconClass: A.$r,
             trailingIconClass: A.$r,
-            iconSize: x.eJ
+            iconSize: h.eJ
         });
         return (0, l.jsxs)("div", {
             className: A.hQ,
@@ -45,11 +45,11 @@ let v = e => {
     }, [t, f, T]);
     return null == v ? null : (0, l.jsxs)("div", {
         className: A.kL,
-        children: [(0, l.jsx)(r.Heading, {
+        children: [(0, l.jsx)(i.Heading, {
             className: A.wx,
             variant: "heading-sm/semibold",
-            children: g.intl.string(g.t.iouM3a)
-        }), (0, l.jsx)(r.HOs, {
+            children: x.intl.string(x.t.iouM3a)
+        }), (0, l.jsx)(i.HOs, {
             className: A.PI,
             children: (0, l.jsx)(o.A, {
                 childrenMessageContent: S(),

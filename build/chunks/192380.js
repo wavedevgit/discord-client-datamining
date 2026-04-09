@@ -1,23 +1,23 @@
 /** chunk id: 192380 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => h
 });
 var i = n(627968),
     a = n(64700),
-    l = n(311907),
-    r = n(883344),
+    r = n(311907),
+    l = n(883344),
     s = n(859524),
     o = n(567061),
     d = n(519028),
     c = n(285545),
     u = n(673310),
     A = n(884801),
-    h = n(785720);
-let _ = function(e) {
+    _ = n(785720);
+let h = function(e) {
     let {
         scrollContainerRef: t
-    } = e, n = (0, l.bG)([r.A], () => r.A.notificationItem(), []), {
-        showDot: _
+    } = e, n = (0, r.bG)([l.A], () => l.A.notificationItem(), []), {
+        showDot: h
     } = (0, d.A)(), m = a.useRef(null), [g, p] = a.useState(!1), {
         data: E,
         loading: I,
@@ -25,14 +25,14 @@ let _ = function(e) {
         handleOnRefresh: C,
         viewabilityConfigCallbackPairs: T
     } = (0, c.i)({
-        showDot: _,
+        showDot: h,
         notificationItem: n
     }), N = (0, o.E)();
     a.useEffect(() => () => {
         N()
     }, [N]);
-    let S = (0, l.bG)([r.A], () => r.A.hasNewContent(), []),
-        x = (0, l.bG)([r.A], () => r.A.isHydrating(), []),
+    let S = (0, r.bG)([l.A], () => l.A.hasNewContent(), []),
+        x = (0, r.bG)([l.A], () => l.A.isHydrating(), []),
         v = a.useMemo(() => T[0].onViewableItemsChanged, [T]),
         {
             registerItemRef: b
@@ -103,7 +103,7 @@ let _ = function(e) {
             children: "Loading ICYMI feed..."
         })
     }) : (0, i.jsxs)("div", {
-        className: h.k,
+        className: _.k,
         children: [S && !f && (0, i.jsx)("div", {
             style: {
                 position: "sticky",
@@ -128,7 +128,7 @@ let _ = function(e) {
             })
         }), (0, i.jsxs)("div", {
             ref: m,
-            className: h.j,
+            className: _.j,
             children: [E.map(e => P(e)), !y && (g || x) && (0, i.jsx)("div", {
                 style: {
                     padding: "16px",

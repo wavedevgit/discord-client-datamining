@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(138298),
-    l = n(761640),
-    r = n(954571),
+    r = n(761640),
+    l = n(954571),
     s = n(203982),
     o = n(957283),
     d = n(822082),
@@ -18,8 +18,8 @@ function A(e) {
         index: t,
         className: n,
         channel: A,
-        user: h,
-        hasSingleMessageRequest: _
+        user: _,
+        hasSingleMessageRequest: h
     } = e, {
         channelId: m
     } = (0, o.N)();
@@ -28,16 +28,16 @@ function A(e) {
         className: n,
         isFocused: m === A.id,
         channel: A,
-        user: h,
+        user: _,
         onClick: e => {
             e.stopPropagation(), a.A.openPrivateChannelAsSidebar({
                 channelId: A.id,
-                baseChannelId: l.fe,
-                hasSingleMessageRequest: _
-            }), r.default.track(u.HAw.MESSAGE_REQUEST_PREVIEW_VIEWED, {
+                baseChannelId: r.fe,
+                hasSingleMessageRequest: h
+            }), l.default.track(u.HAw.MESSAGE_REQUEST_PREVIEW_VIEWED, {
                 is_spam: !1,
                 channel_id: A.id,
-                other_user_id: h.id
+                other_user_id: _.id
             }), setTimeout(() => {
                 s._.dispatch(u.jej.FOCUS_CHANNEL_TEXT_AREA, {
                     channelId: A.id
@@ -46,7 +46,7 @@ function A(e) {
         },
         children: e => (0, i.jsx)(c.v, {
             active: e,
-            user: h,
+            user: _,
             channel: A
         })
     })

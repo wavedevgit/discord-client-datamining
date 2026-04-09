@@ -14,11 +14,11 @@ function s(e) {
         otherUsername: s,
         usernameHook: o,
         otherUsernameHook: c,
-        compact: d
+        compact: u
     } = e, {
-        nick: u
+        nick: d
     } = (0, l.Ay)(t), _ = o(), A = c(), m = r.intl.format(r.t.MMN2Jq, {
-        username: u,
+        username: d,
         usernameHook: _,
         otherUsername: s,
         otherUsernameHook: A
@@ -26,7 +26,7 @@ function s(e) {
     return (0, i.jsx)(a.A, {
         icon: n(617184),
         timestamp: t.timestamp,
-        compact: d,
+        compact: u,
         children: m
     })
 }

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     r = n(311907),
-    s = n(843472),
-    l = n(698718),
+    l = n(843472),
+    s = n(698718),
     o = n(355622),
     d = n(734057),
     c = n(71393),
@@ -29,7 +29,7 @@ function f(e) {
             return null == n ? null : t.getGuild(n) ?? null
         })(b, c.A), [b]);
     return (t = b?.id ?? null, n = a.useRef(new Set), f = (0, r.bG)([u.A], () => null != t ? u.A.getMessages(t) : null, [t]), A = (0, r.bG)([_.A], () => _.A.can(p.xBc.READ_MESSAGE_HISTORY, b), [b]), x = f?.first() ?? null, I = null != b && null == x && null != f && !f.loadingMore && !f.ready && !f.hasFetched && A, a.useEffect(() => {
-        null == t || !n.current.has(t) && I && (n.current.add(t), s.A.fetchMessages({
+        null == t || !n.current.has(t) && I && (n.current.add(t), l.A.fetchMessages({
             channelId: t,
             limit: 50
         }))
@@ -45,7 +45,7 @@ function f(e) {
         className: g.Q,
         children: (0, i.jsx)("div", {
             className: g.T,
-            children: (0, i.jsx)(l.A, {
+            children: (0, i.jsx)(s.A, {
                 channel: b,
                 guild: C,
                 chatInputType: o.oU.OVERLAY

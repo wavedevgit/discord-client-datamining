@@ -10,8 +10,8 @@ var l = n(192308),
     s = n(118517),
     o = n(734057),
     c = n(31717),
-    d = n(320501),
-    u = n(954571),
+    u = n(320501),
+    d = n(954571),
     _ = n(661191),
     A = n(518960),
     m = n(372684),
@@ -27,7 +27,7 @@ async function g(e, t) {
     } = t, h = o.A.getChannel(g);
     if (null != h) {
         if (null != C) {
-            let e = d.A.getMessage(C.channel_id, C.message_id);
+            let e = u.A.getMessage(C.channel_id, C.message_id);
             null != e && (0, s.Yf)({
                 message: e,
                 channel: h,
@@ -55,7 +55,7 @@ async function g(e, t) {
                         type: "image/jpeg"
                     })), n.push({})
                 }
-                u.default.track(N.HAw.CLIP_SHARED, {
+                d.default.track(N.HAw.CLIP_SHARED, {
                     location_stack: f,
                     guild_id: h.guild_id,
                     channel_id: h.id,

@@ -4,10 +4,10 @@ n.d(t, {
 });
 var i = n(554146),
     a = n(932001),
-    l = n(112848),
-    r = n(985018);
+    r = n(112848),
+    l = n(985018);
 let s = () => {
-    let e = (0, l.bu)(),
+    let e = (0, r.bu)(),
         [t] = (0, a.kn)(null != e ? [i.M.WHATS_NEW_TENURE_BADGE_REWARD] : []);
-    return t === i.M.WHATS_NEW_TENURE_BADGE_REWARD ? r.intl.string(r.t["jyYgZ+"]).toLocaleUpperCase() : null
+    return t === i.M.WHATS_NEW_TENURE_BADGE_REWARD ? l.intl.string(l.t["jyYgZ+"]).toLocaleUpperCase() : null
 }

@@ -20,31 +20,31 @@ let u = function(e) {
         buttonSubmitting: A,
         onButtonClick: g,
         imageSrc: p,
-        animationSrc: f,
-        secondaryButtonText: _,
+        animationSrc: _,
+        secondaryButtonText: f,
         onSecondaryButtonClick: E,
         children: x,
         useReducedMotion: C = !1,
         buttonVariant: S
-    } = e, T = (0, a.bG)([c.Ay], () => c.Ay.getState().isMembersOpen);
-    if (s.Fr && T) return null;
+    } = e, I = (0, a.bG)([c.Ay], () => c.Ay.getState().isMembersOpen);
+    if (s.Fr && I) return null;
     if (null == t) return (0, i.jsx)(i.Fragment, {
         children: l.Children.only(x)
     });
-    let N = null;
-    return null != p ? N = (0, i.jsx)("img", {
+    let T = null;
+    return null != p ? T = (0, i.jsx)("img", {
         alt: "",
         src: p,
         className: d.Sl
-    }) : null != f && (N = (0, i.jsx)(r.akl, {
-        importData: f,
+    }) : null != _ && (T = (0, i.jsx)(r.akl, {
+        importData: _,
         shouldAnimate: !C,
         className: d.lY
     })), (0, i.jsxs)("div", {
         className: d.iE,
         children: [(0, i.jsxs)("div", {
             className: d.Qs,
-            children: [N, (0, i.jsxs)("div", {
+            children: [T, (0, i.jsxs)("div", {
                 className: d.Qq,
                 children: [(0, i.jsx)(r.Heading, {
                     variant: "heading-md/semibold",
@@ -58,11 +58,11 @@ let u = function(e) {
             })]
         }), (0, i.jsxs)("div", {
             className: d.UD,
-            children: [null != _ && (0, i.jsx)("div", {
+            children: [null != f && (0, i.jsx)("div", {
                 className: d.x6,
                 children: (0, i.jsx)(r.QWc, {
                     textVariant: "text-sm/semibold",
-                    text: _,
+                    text: f,
                     onClick: E
                 })
             }), null != h && (0, i.jsx)("div", {

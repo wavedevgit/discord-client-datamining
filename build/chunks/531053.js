@@ -17,9 +17,9 @@ var i = n(627968),
     A = n(772972),
     _ = n(652215),
     m = n(985018),
-    p = n(251683);
+    g = n(251683);
 
-function g(e) {
+function p(e) {
     let t = l.useRef(null),
         n = e.map(e => e[0]);
     return l.useLayoutEffect(() => {
@@ -60,9 +60,9 @@ function x(e) {
     } = e, r = l.useMemo(() => f([h.PJ.GUILD, h.PJ.FOLDER], n, a, s), [n, a, s]), [{
         canDrop: o,
         isOver: c
-    }, u] = (0, d.H)(r), A = g([
-        [o, p.OP],
-        [c, p.NQ]
+    }, u] = (0, d.H)(r), A = p([
+        [o, g.OP],
+        [c, g.NQ]
     ]);
     return (0, i.jsx)("div", {
         ref: e => {
@@ -71,7 +71,7 @@ function x(e) {
         "data-dnd-name": m.intl.formatToPlainString(m.t["A5aDw+"], {
             itemName: t
         }),
-        className: p.aC
+        className: g.aC
     })
 }
 
@@ -87,9 +87,9 @@ function E(e) {
     l.useEffect(() => {
         s?.(o)
     }, [s, o]);
-    let u = g([
-        [r, p.OP],
-        [o, p.NQ]
+    let u = p([
+        [r, g.OP],
+        [o, g.NQ]
     ]);
     return (0, i.jsx)(A.A, {
         text: t,
@@ -103,7 +103,7 @@ function E(e) {
             "data-dnd-name": m.intl.formatToPlainString(m.t.qiQ0QI, {
                 itemName: t
             }),
-            className: a()(p.dw, {})
+            className: a()(g.dw, {})
         })
     })
 }
@@ -116,7 +116,7 @@ let I = l.memo(function(e) {
         onDragOverChanged: a
     } = e, r = !l && null == n.parentId;
     return (0, i.jsxs)("div", {
-        className: p.iE,
+        className: g.iE,
         "aria-hidden": !0,
         children: [(0, i.jsx)(x, {
             name: t,
@@ -137,24 +137,24 @@ function C(e) {
     } = e, [{
         canDrop: l,
         isOver: s
-    }, a] = (0, d.H)(() => f([h.PJ.GUILD], n, !0, !0)), r = g([
-        [s, p.a7]
-    ]), o = g([
-        [s, p.NQ],
-        [l, p.OP]
+    }, a] = (0, d.H)(() => f([h.PJ.GUILD], n, !0, !0)), r = p([
+        [s, g.a7]
+    ]), o = p([
+        [s, g.NQ],
+        [l, g.OP]
     ]);
     return (0, i.jsx)("div", {
         ref: r,
-        className: p.Ro,
+        className: g.Ro,
         "aria-hidden": !0,
         children: (0, i.jsx)("div", {
-            className: p.aO,
+            className: g.aO,
             children: (0, i.jsx)("div", {
                 ref: e => {
                     o.current = e, a(e)
                 },
                 "aria-label": `At end of ${t}`,
-                className: p.aC
+                className: g.aC
             })
         })
     })

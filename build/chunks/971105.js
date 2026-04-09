@@ -12,10 +12,10 @@ var i = n(627968),
     c = n(311907),
     u = n(397927),
     m = n(73153),
-    g = n(384904),
-    _ = n(661439),
-    x = n(73825),
-    A = n(928039),
+    g = n(661439),
+    _ = n(73825),
+    x = n(928039),
+    A = n(323082),
     h = n(235986),
     p = n(39190),
     T = n(933392),
@@ -36,7 +36,7 @@ function O(e) {
         locale: n,
         compactMode: l,
         numPages: r
-    } = e, o = s.useRef(null), [c, m] = s.useState(0), [_, x] = s.useState(null), h = t.slice(10 * c, (c + 1) * 10);
+    } = e, o = s.useRef(null), [c, m] = s.useState(0), [g, _] = s.useState(null), h = t.slice(10 * c, (c + 1) * 10);
     s.useEffect(() => {
         o.current?.scrollTo({
             to: 0
@@ -45,9 +45,9 @@ function O(e) {
     let T = s.useCallback(e => {
             m(e);
             let n = t[t.length - 1].id;
-            e >= r - 2 && _ !== n && ((0, g.CK)(10, n), x(n))
-        }, [t, r, _]),
-        f = (0, A.A)("billing-history", o);
+            e >= r - 2 && g !== n && ((0, A.CK)(10, n), _(n))
+        }, [t, r, g]),
+        f = (0, x.A)("billing-history", o);
     return (0, i.jsx)(d.hD, {
         navigator: f,
         children: (0, i.jsx)(d.PR, {
@@ -90,7 +90,7 @@ class R extends s.PureComponent {
     }
     componentDidMount() {
         m.h.wait(() => {
-            (0, _.X)(), (0, g.CK)(30)
+            (0, g.X)(), (0, A.CK)(30)
         })
     }
     renderPremiumExternalSubscription(e) {
@@ -173,7 +173,7 @@ function P(e) {
         d = s.useMemo(() => t.filter(e => e.currency !== C.Yri.DISCORD_ORB), [t]);
     return s.useEffect(() => {
         o() || m.h.wait(() => {
-            a.forEach(e => (0, x.ur)(e, void 0, void 0, !0, void 0))
+            a.forEach(e => (0, _.ur)(e, void 0, void 0, !0, void 0))
         })
     }, [o, a]), (0, i.jsx)(R, {
         ...e,

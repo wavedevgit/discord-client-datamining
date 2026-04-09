@@ -5,16 +5,16 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(179771),
-    l = n(397927),
-    r = n(827343),
+    r = n(397927),
+    l = n(827343),
     s = n(401843),
     o = n(793574),
     d = n(15285),
     c = n(905552),
     u = n(442353),
     A = n(616356),
-    h = n(430452),
-    _ = n(157257),
+    _ = n(430452),
+    h = n(157257),
     m = n(723702),
     g = n(629471),
     p = n(693806),
@@ -26,8 +26,8 @@ let f = {
             [E.sm.ALL]: [a.F.RPC, a.F.RPC_VIDEO_WRITE]
         },
         handler() {
-            let e = h.Ay.isVideoEnabled();
-            null != (0, p.A)() && (e ? r.A.setVideoEnabled(!1) : (0, u.A)(() => r.A.setVideoEnabled(!0), I.BRT.APP))
+            let e = _.Ay.isVideoEnabled();
+            null != (0, p.A)() && (e ? l.A.setVideoEnabled(!1) : (0, u.A)(() => l.A.setVideoEnabled(!0), I.BRT.APP))
         }
     },
     [I.e$_.TOGGLE_SCREENSHARE]: {
@@ -42,14 +42,14 @@ let f = {
                 args: {
                     pid: t
                 }
-            } = e, a = A.A.getCurrentUserActiveStream(), r = A.A.getStreamerActiveStreamMetadata(), u = (0, c.A)(d.Ay, _.A), h = (0, p.A)();
-            null != h && (null != t && null != r && r.pid !== t && (0, m.isWindows)() ? (0, s.XI)(h.guild_id, h.id, {
+            } = e, a = A.A.getCurrentUserActiveStream(), l = A.A.getStreamerActiveStreamMetadata(), u = (0, c.A)(d.Ay, h.A), _ = (0, p.A)();
+            null != _ && (null != t && null != l && l.pid !== t && (0, m.isWindows)() ? (0, s.XI)(_.guild_id, _.id, {
                 pid: t
-            }) : null != a ? (0, s.nO)(!1) : null != t && (0, m.isWindows)() ? (0, s.XI)(h.guild_id, h.id, {
+            }) : null != a ? (0, s.nO)(!1) : null != t && (0, m.isWindows)() ? (0, s.XI)(_.guild_id, _.id, {
                 pid: t
-            }) : null != u ? (0, s.XI)(h.guild_id, h.id, {
+            }) : null != u ? (0, s.XI)(_.guild_id, _.id, {
                 pid: u.pid
-            }) : (0, l.mMO)(async () => {
+            }) : (0, r.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("96811").then(n.bind(n, 648230));

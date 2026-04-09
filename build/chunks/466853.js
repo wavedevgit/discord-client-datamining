@@ -1,129 +1,129 @@
 /** chunk id: 466853 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => A
 });
-var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    s = n.n(l),
-    r = n(158954),
+var l = n(627968),
+    i = n(64700),
+    a = n(503698),
+    r = n.n(a),
+    s = n(158954),
     o = n(311907),
-    d = n(915089),
-    c = n(961350),
+    c = n(915089),
+    d = n(961350),
     u = n(183555),
-    g = n(735321),
-    m = n(94343),
-    h = n(789290),
-    x = n(451395),
-    p = n(716804),
+    m = n(735321),
+    h = n(94343),
+    p = n(789290),
+    g = n(451395),
+    x = n(716804),
     f = n(19333),
-    A = n(557137),
-    _ = n(192),
-    I = n(985018),
-    j = n(781371);
+    y = n(557137),
+    v = n(192),
+    j = n(985018),
+    T = n(781371);
 
-function v(e) {
+function E(e) {
     let {
         index: t,
         widget: n,
-        additionalManageWidgetMenuItems: l,
-        children: r,
+        additionalManageWidgetMenuItems: a,
+        children: s,
         getWidth: o
-    } = e, c = a.useRef(null), u = a.useRef(null), {
-        registerManageWidgetButtonRef: m,
-        manageFocusOnReorder: h
-    } = (0, _.r)();
-    a.useLayoutEffect(() => {
-        let e = m(n.type);
-        return e(c.current), () => e(null)
-    }, [m, n.type]);
-    let p = a.useMemo(() => n.id ?? (0, d.Ld)(), [n.id]),
+    } = e, d = i.useRef(null), u = i.useRef(null), {
+        registerManageWidgetButtonRef: h,
+        manageFocusOnReorder: p
+    } = (0, v.r)();
+    i.useLayoutEffect(() => {
+        let e = h(n.type);
+        return e(d.current), () => e(null)
+    }, [h, n.type]);
+    let x = i.useMemo(() => n.id ?? (0, c.Ld)(), [n.id]),
         {
-            isDragging: A,
-            dragSourcePosition: v
-        } = (0, x.gY)({
-            dragRef: c,
+            isDragging: y,
+            dragSourcePosition: E
+        } = (0, g.gY)({
+            dragRef: d,
             dropRef: u,
             index: t,
             listType: "WIDGETS",
             itemType: "WIDGET",
-            itemId: p,
+            itemId: x,
             itemPreviewProps: {
                 widget: n,
                 getWidth: o
             },
-            onReorder: g.R_,
-            onEnd: () => h(n.type)
+            onReorder: m.R_,
+            onEnd: () => p(n.type)
         }),
-        b = null != v,
-        S = b && t < v,
-        y = b && t > v;
-    return (0, i.jsxs)("div", {
+        A = null != E,
+        I = A && t < E,
+        N = A && t > E;
+    return (0, l.jsxs)("div", {
         ref: u,
-        className: s()(j.wX, {
-            [j.A]: S,
-            [j.Ze]: y,
-            [j.Id]: A
+        className: r()(T.wX, {
+            [T.A]: I,
+            [T.Ze]: N,
+            [T.Id]: y
         }),
-        "aria-label": I.intl.formatToPlainString(I.t.YLczh4, {
+        "aria-label": j.intl.formatToPlainString(j.t.YLczh4, {
             positionNumber: t + 1
         }),
-        children: [(0, i.jsx)(f.A, {
-            buttonRef: c,
+        children: [(0, l.jsx)(f.A, {
+            buttonRef: d,
             widget: n,
-            className: j.vn,
-            additionalMenuItems: l
-        }), r]
+            className: T.vn,
+            additionalMenuItems: a
+        }), s]
     })
 }
 
-function b(e) {
+function A(e) {
     let {
         userId: t,
         widget: n,
-        children: l,
-        disableInteraction: g,
-        className: x,
+        children: a,
+        disableInteraction: m,
+        className: g,
         index: f,
-        trailingContent: _,
-        headerTitle: I,
-        headerSubtitle: b,
-        headerActionButtons: S,
-        headerClassName: y,
-        additionalManageWidgetMenuItems: E
-    } = e, C = (0, d.GV)(), T = a.useRef(null), w = (0, o.bG)([c.default], () => c.default.getId() === t), N = (0, p.g)(), {
-        trackUserProfileAction: k
-    } = (0, u.NJ)(), R = (0, h.A)({
+        trailingContent: v,
+        headerTitle: j,
+        headerSubtitle: A,
+        headerActionButtons: I,
+        headerClassName: N,
+        additionalManageWidgetMenuItems: R
+    } = e, _ = (0, c.GV)(), C = i.useRef(null), b = (0, o.bG)([d.default], () => d.default.getId() === t), w = (0, x.g)(), {
+        trackUserProfileAction: P
+    } = (0, u.NJ)(), D = (0, p.A)({
         widget: n,
-        onAction: k
-    }), L = N === n.type;
-    (0, m.A)(R, L);
-    let O = w && null != f && !g,
-        M = () => (0, i.jsxs)("div", {
-            ref: T,
-            className: s()(j.kL, x),
-            children: [(0, i.jsx)(A.A, {
+        onAction: P
+    }), L = w === n.type;
+    (0, h.A)(D, L);
+    let O = b && null != f && !m,
+        G = () => (0, l.jsxs)("div", {
+            ref: C,
+            className: r()(T.kL, g),
+            children: [(0, l.jsx)(y.A, {
                 userId: t,
-                headingId: C,
-                title: I,
-                subtitle: b,
-                actionButtons: S,
+                headingId: _,
+                title: j,
+                subtitle: A,
+                actionButtons: I,
                 widget: n,
-                disableInteraction: g,
-                className: y
-            }), (0, i.jsxs)(r.Fmo, {
-                children: [l, _]
+                disableInteraction: m,
+                className: N
+            }), (0, l.jsxs)(s.Fmo, {
+                children: [a, v]
             })]
         });
-    return (0, i.jsx)("section", {
-        ref: R,
-        "aria-labelledby": C,
-        children: O ? (0, i.jsx)(v, {
+    return (0, l.jsx)("section", {
+        ref: D,
+        "aria-labelledby": _,
+        children: O ? (0, l.jsx)(E, {
             index: f ?? 0,
             widget: n,
-            getWidth: () => T.current?.offsetWidth,
-            additionalManageWidgetMenuItems: E,
-            children: M()
-        }) : M()
+            getWidth: () => C.current?.offsetWidth,
+            additionalManageWidgetMenuItems: R,
+            children: G()
+        }) : G()
     })
 }

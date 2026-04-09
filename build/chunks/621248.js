@@ -1,7 +1,7 @@
 /** chunk id: 621248 params = (module,exports,require) **/
 n.d(t, {
     J: () => a,
-    x: () => l
+    x: () => r
 });
 var i = n(73153);
 
@@ -12,7 +12,7 @@ function a(e) {
     })
 }
 
-function l(e) {
+function r(e) {
     i.h.dispatch({
         type: "MAX_MEMBER_COUNT_NOTICE_DISMISS",
         guildId: e

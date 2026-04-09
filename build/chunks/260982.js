@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(503698),
+    l = n.n(r),
     s = n(687498),
     o = n(158954),
     d = n(750506),
     c = n(954571),
     u = n(829203),
     A = n(178090),
-    h = n(652215),
-    _ = n(49999),
+    _ = n(652215),
+    h = n(49999),
     m = n(350601),
     g = n(985018),
     p = n(463174),
@@ -24,7 +24,7 @@ var i = n(627968),
 function C(e) {
     let {
         markAsDismissed: t
-    } = e, [n, l] = (0, a.useState)(!1), C = (0, o.zhh)({
+    } = e, [n, r] = (0, a.useState)(!1), C = (0, o.zhh)({
         opacity: +!!n,
         y: n ? 0 : -40,
         pointerEvents: n ? "all" : "none"
@@ -33,13 +33,13 @@ function C(e) {
     });
     return (0, i.jsx)(d.Ay, {
         children: (0, i.jsxs)("div", {
-            className: r()(p.kL, {
+            className: l()(p.kL, {
                 [p.DM]: n
             }),
-            onMouseLeave: () => l(!1),
+            onMouseLeave: () => r(!1),
             children: [(0, i.jsxs)("div", {
                 className: p.Zv,
-                onMouseEnter: () => l(!0),
+                onMouseEnter: () => r(!0),
                 children: [(0, i.jsx)("img", {
                     src: I.A,
                     alt: "",
@@ -52,7 +52,7 @@ function C(e) {
                     onClick: () => {
                         (0, u.A)({
                             source: "coachmark"
-                        }), t(_.i.PRIMARY)
+                        }), t(h.i.PRIMARY)
                     },
                     "aria-label": g.intl.string(g.t.E4kW5O),
                     className: p.Xk,
@@ -70,7 +70,7 @@ function C(e) {
                     children: (0, i.jsxs)(o.DUT, {
                         className: p.VH,
                         onClick: () => {
-                            window.open("https://youtu.be/1ViwrDhoG2c", "_blank"), c.default.track(h.HAw.APRIL_FOOLS_2026_VIDEO_CLICKED, {
+                            window.open("https://youtu.be/1ViwrDhoG2c", "_blank"), c.default.track(_.HAw.APRIL_FOOLS_2026_VIDEO_CLICKED, {
                                 source: "coachmark"
                             })
                         },
@@ -97,7 +97,7 @@ function C(e) {
                 style: T,
                 children: (0, i.jsxs)(o.DUT, {
                     onClick: () => {
-                        t(_.i.DISMISS)
+                        t(h.i.DISMISS)
                     },
                     "aria-label": g.intl.string(m.default["6yuu2/"]),
                     className: p.r,

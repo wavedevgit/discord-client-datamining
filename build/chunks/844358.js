@@ -4,21 +4,21 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(835245),
-    r = n(607399),
+    r = n(835245),
+    l = n(607399),
     s = n(732955),
     o = n(397927),
     d = n(642277),
     c = n(723702),
     u = n(652215),
     A = n(613057),
-    h = n(985018),
-    _ = n(583779);
+    _ = n(985018),
+    h = n(583779);
 
 function m(e) {
     let {
         applicationId: t
-    } = e, [m, g] = a.useState(null), [p, E] = a.useState(!1), I = a.useRef(!1), f = !c.isPlatformEmbedded && !r.Fr, C = a.useMemo(() => (0, l.A)(), []);
+    } = e, [m, g] = a.useState(null), [p, E] = a.useState(!1), I = a.useRef(!1), f = !c.isPlatformEmbedded && !l.Fr, C = a.useMemo(() => (0, r.A)(), []);
     if (a.useEffect(() => {
             f && !0 !== I.current ? (Promise.resolve().then(n.bind(n, 129014)).then(e => {
                 let {
@@ -41,24 +41,24 @@ function m(e) {
         }, [t, f, C]), p) return (0, i.jsx)(d.A, {});
     if (f && !1 !== m)
         if (!0 === m) return (0, i.jsxs)("div", {
-            className: _.k,
+            className: h.k,
             children: [(0, i.jsx)(o.Heading, {
                 variant: "heading-xxl/bold",
-                children: h.intl.string(h.t.csrAMJ)
+                children: _.intl.string(_.t.csrAMJ)
             }), (0, i.jsx)(o.Text, {
                 variant: "text-xs/semibold",
-                children: h.intl.string(h.t["m1+IBn"])
+                children: _.intl.string(_.t["m1+IBn"])
             }), (0, i.jsx)(s.$nd, {
                 variant: "primary",
-                text: h.intl.string(h.t.fIv16B),
+                text: _.intl.string(_.t.fIv16B),
                 onClick: () => E(!0)
             })]
         });
         else return (0, i.jsxs)("div", {
-            className: _.k,
+            className: h.k,
             children: [(0, i.jsx)(o.Heading, {
                 variant: "heading-xxl/bold",
-                children: h.intl.string(h.t["Z+hCVU"])
+                children: _.intl.string(_.t["Z+hCVU"])
             }), (0, i.jsx)(o.y$y, {})]
         });
     return (0, i.jsx)(d.A, {})

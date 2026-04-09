@@ -1,6 +1,6 @@
 /** chunk id: 167681 params = (module,exports,require) **/
 n.d(t, {
-    S9: () => d,
+    S9: () => u,
     dv: () => c
 });
 var i = n(843472),
@@ -14,7 +14,7 @@ let c = e => {
             n = ((null != t ? r.default.extractTimestamp(t) : 0) + r.default.extractTimestamp(e)) % s.I.length;
         return s.I[n]
     },
-    d = (e, t, n) => {
+    u = (e, t, n) => {
         i.A.sendGreetMessage(e.id, n, i.A.getSendMessageOptionsForReply({
             channel: e,
             message: t,

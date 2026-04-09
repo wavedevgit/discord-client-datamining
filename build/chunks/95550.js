@@ -18,15 +18,15 @@ var i = n(627968),
     A = n(308528),
     g = n(711950),
     p = n(846293),
-    f = n(888906),
-    _ = n(49229),
+    _ = n(888906),
+    f = n(49229),
     E = n(684136),
     x = n(964486),
     C = n(793574),
     S = n(58149),
-    T = n(688810),
-    N = n(571694),
-    I = n(47167),
+    I = n(688810),
+    T = n(571694),
+    N = n(47167),
     v = n(915089),
     y = n(66442),
     b = n(279208),
@@ -61,7 +61,7 @@ let et = (0, v.Ld)(),
         let {
             channel: t,
             onClose: n
-        } = e, l = (0, I.Ay)(t) ?? "", s = (0, c.bG)([U.Ay], () => U.Ay.lastMessageId(t.id) ?? t.id);
+        } = e, l = (0, N.Ay)(t) ?? "", s = (0, c.bG)([U.Ay], () => U.Ay.lastMessageId(t.id) ?? t.id);
         return (0, i.jsx)(u.DUT, {
             onClick: () => {
                 (0, R.uh)(Z.ME, t.id), n()
@@ -69,7 +69,7 @@ let et = (0, v.Ld)(),
             children: (0, i.jsxs)("div", {
                 className: ee.us,
                 children: [(0, i.jsx)(u.euF, {
-                    src: (0, N.Y)(t),
+                    src: (0, T.Y)(t),
                     size: u._3J.SIZE_24,
                     "aria-label": l
                 }), (0, i.jsx)("span", {
@@ -145,7 +145,7 @@ class el extends l.PureComponent {
         let {
             channel: e
         } = this.props;
-        h.h.wait(() => f.A.open(e?.id));
+        h.h.wait(() => _.A.open(e?.id));
         let t = (0, S.dI)(e);
         H.default.track(Z.HAw.OPEN_POPOUT, {
             ...t,
@@ -157,7 +157,7 @@ class el extends l.PureComponent {
         }, 0)
     }
     componentWillUnmount() {
-        K._.unsubscribe(Z.jej.SCROLL_PAGE_UP, this.scrollPageUp), K._.unsubscribe(Z.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), null != this.copyTimeout && clearTimeout(this.copyTimeout), h.h.wait(() => f.A.close())
+        K._.unsubscribe(Z.jej.SCROLL_PAGE_UP, this.scrollPageUp), K._.unsubscribe(Z.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), null != this.copyTimeout && clearTimeout(this.copyTimeout), h.h.wait(() => _.A.close())
     }
     scrollPageUp = () => {
         this.scrollerRef.current?.scrollPageUp({
@@ -541,7 +541,7 @@ class el extends l.PureComponent {
         })
     }
     handleAddFriend(e) {
-        this.props.onClose(), _.A.sendRequest({
+        this.props.onClose(), f.A.sendRequest({
             discordTag: q.Ay.getUserTag(e, {
                 identifiable: "always"
             }),
@@ -555,21 +555,21 @@ class el extends l.PureComponent {
         e?.focus()
     };
     focusResult = e => {
-        f.A.select(e)
+        _.A.select(e)
     };
     handleSelect = e => {
         let {
             results: t,
             channel: n
         } = this.props;
-        if (null == e) f.A.clear(n?.id);
+        if (null == e) _.A.clear(n?.id);
         else if (null != t) {
             let n = t[e];
             this.handleClick(n.user.id)
         }
     };
     handleSelectionChange = e => {
-        f.A.select(e);
+        _.A.select(e);
         let t = this.scrollerRef.current;
         null != t && t.scrollToIndex({
             section: 0,
@@ -581,7 +581,7 @@ class el extends l.PureComponent {
         let {
             channel: t
         } = this.props, n = (0, S.dI)(t);
-        f.A.search(e, t?.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
+        _.A.search(e, t?.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
             H.default.track(Z.HAw.SEARCH_USER_LIST_STARTED, {
                 ...n,
                 entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
@@ -592,11 +592,11 @@ class el extends l.PureComponent {
     };
     handleRemoveTag = e => {
         let t = Array.from(this.props.selectedUsers);
-        f.A.removeUser(t[e])
+        _.A.removeUser(t[e])
     };
     handleRemoveUser = e => {
         e.forEach(e => {
-            f.A.removeUser(e)
+            _.A.removeUser(e)
         }), this.forceFocus()
     };
     handleClick = e => {
@@ -605,7 +605,7 @@ class el extends l.PureComponent {
             query: n,
             channel: i
         } = this.props;
-        t.has(e) ? f.A.removeUser(e) : this.getRemaining() > 0 && (f.A.addUser(e), n.length > 0 && f.A.clear(i?.id)), this.forceFocus()
+        t.has(e) ? _.A.removeUser(e) : this.getRemaining() > 0 && (_.A.addUser(e), n.length > 0 && _.A.clear(i?.id)), this.forceFocus()
     };
     handleAddFriendNavigation = () => {
         g.A.transitionToSection(Z.m3P.ADD_FRIEND, {
@@ -753,7 +753,7 @@ function es(e) {
         onChange: r
     } = e, {
         analyticsLocations: o
-    } = (0, T.Ay)(C.A.NEW_GROUP_DM_INVITE_MODAL), c = (0, I.Jo)(Array.from(t), B.default, G.A);
+    } = (0, I.Ay)(C.A.NEW_GROUP_DM_INVITE_MODAL), c = (0, N.Jo)(Array.from(t), B.default, G.A);
     return (0, i.jsxs)("div", {
         className: ee.zj,
         children: [(0, i.jsx)(y.X, {

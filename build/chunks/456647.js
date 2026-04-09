@@ -1,26 +1,26 @@
 /** chunk id: 456647 params = (module,exports,require) **/
 n.d(t, {
-    X: () => r
+    X: () => s
 });
-var i = n(64700),
-    a = n(311907),
-    l = n(77468),
-    s = n(962173);
+var l = n(64700),
+    i = n(311907),
+    a = n(77468),
+    r = n(962173);
 
-function r(e) {
-    let t = (0, a.bG)([s.A], () => null != e ? s.A.getAccount(null, e) : null),
-        n = (0, a.bG)([s.A], () => s.A.isFetching()),
-        r = null != t && !t.revoked;
+function s(e) {
+    let t = (0, i.bG)([r.A], () => null != e ? r.A.getAccount(null, e) : null),
+        n = (0, i.bG)([r.A], () => r.A.isFetching()),
+        s = null != t && !t.revoked;
     return {
         loading: n,
-        hasConnection: r,
+        hasConnection: s,
         canConnect: null != e,
-        startConnection: i.useCallback(async t => {
+        startConnection: l.useCallback(async t => {
             if (null == e) return {
                 success: !1
             };
             try {
-                let n = await l.A.authorize(e, {
+                let n = await a.A.authorize(e, {
                     location: t ?? "Account Linking"
                 });
                 if (n.ok && n.body?.url != null) return {

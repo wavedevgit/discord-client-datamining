@@ -10,25 +10,25 @@ var i = n(627968),
     s = n(447215),
     o = n(888675),
     c = n(342296),
-    d = n(486020),
-    u = n(552691),
+    u = n(486020),
+    d = n(552691),
     _ = n(652215);
 
 function A(e, t) {
     let n = l.useRef(null);
     return l.useCallback(l => (r, s) => {
-        let o = d.Ay.getApplicationIconURL({
+        let o = u.Ay.getApplicationIconURL({
                 id: l.id,
                 icon: l.icon,
                 bot: l.bot,
                 botIconFirst: !0
             }),
             {
-                bot: u
+                bot: d
             } = l;
-        return null == u ? r : (0, i.jsx)(c.A, {
+        return null == d ? r : (0, i.jsx)(c.A, {
             targetElementRef: n,
-            userId: u.id,
+            userId: d.id,
             avatarUrl: o,
             guildId: e.guild_id,
             channelId: e.id,
@@ -48,7 +48,7 @@ function m(e) {
         message: t,
         channel: l,
         compact: a
-    } = e, c = (0, r.Ay)(t), d = t.application, m = (0, s.P)({
+    } = e, c = (0, r.Ay)(t), u = t.application, m = (0, s.P)({
         user: t.author,
         channelId: l.id,
         guildId: l.guild_id,
@@ -58,11 +58,11 @@ function m(e) {
         icon: n(617184),
         timestamp: t.timestamp,
         compact: a,
-        children: (0, u.eu)({
-            application: d,
+        children: (0, d.eu)({
+            application: u,
             username: c.nick,
             usernameHook: m(c),
-            applicationNameHook: null != d ? E(d) : _.tEg
+            applicationNameHook: null != u ? E(u) : _.tEg
         })
     })
 }
@@ -72,7 +72,7 @@ function E(e) {
         message: t,
         channel: l,
         compact: a
-    } = e, c = (0, r.Ay)(t), d = t.application, m = (0, s.P)({
+    } = e, c = (0, r.Ay)(t), u = t.application, m = (0, s.P)({
         user: t.author,
         channelId: l.id,
         guildId: l.guild_id,
@@ -82,11 +82,11 @@ function E(e) {
         icon: n(884797),
         timestamp: t.timestamp,
         compact: a,
-        children: (0, u.A0)({
-            application: d,
+        children: (0, d.A0)({
+            application: u,
             username: c.nick,
             usernameHook: m(c),
-            applicationNameHook: null != d ? E(d) : _.tEg
+            applicationNameHook: null != u ? E(u) : _.tEg
         })
     })
 }

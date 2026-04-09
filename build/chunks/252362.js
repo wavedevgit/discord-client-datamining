@@ -1,30 +1,30 @@
 /** chunk id: 252362 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => h
 });
 var i = n(627968),
     a = n(64700),
-    l = n(342494),
-    r = n(582754),
+    r = n(342494),
+    l = n(582754),
     s = n(736653),
     o = n(793574),
     d = n(688810),
     c = n(976860),
     u = n(979286),
     A = n(652215),
-    h = n(985018);
-let _ = e => {
+    _ = n(985018);
+let h = e => {
     let {
         displayOptions: t,
         targetElementRef: n,
-        onRequestClose: _,
+        onRequestClose: h,
         onClick: m
     } = e, {
         analyticsLocations: g
-    } = (0, d.Ay)(o.A.HOME_PAGE_SHOP_TAB), p = (0, s.Ay)(), E = (0, r.Mw)(p) ? t.assetDark : t.assetLight, I = a.useRef(_);
-    return I.current = _, a.useEffect(() => () => {
+    } = (0, d.Ay)(o.A.HOME_PAGE_SHOP_TAB), p = (0, s.Ay)(), E = (0, l.Mw)(p) ? t.assetDark : t.assetLight, I = a.useRef(h);
+    return I.current = h, a.useEffect(() => () => {
         I.current?.()
-    }, []), (0, i.jsx)(l.AM, {
+    }, []), (0, i.jsx)(r.AM, {
         targetElementRef: n,
         position: "right",
         align: "top",
@@ -39,7 +39,7 @@ let _ = e => {
             src: E
         },
         actions: [{
-            text: h.intl.string(h.t.fYfGgK),
+            text: _.intl.string(_.t.fYfGgK),
             variant: "primary",
             onClick: () => {
                 m?.(), (0, c.pX)(A.BVt.COLLECTIBLES_SHOP), (0, u.Cz)({
@@ -48,6 +48,6 @@ let _ = e => {
                 })
             }
         }],
-        onRequestClose: _
+        onRequestClose: h
     })
 }

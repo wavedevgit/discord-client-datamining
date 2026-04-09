@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(313961),
     _ = n(532622),
     m = n(550946),
-    p = n(140547),
-    g = n(242919),
+    g = n(140547),
+    p = n(242919),
     f = n(7054),
     x = n(962392),
     E = n(220995),
@@ -59,10 +59,10 @@ let H = l.memo(e => {
         return t.has(x)
     }), [x, s.id]), F = (0, h.A)(null != H ? [H.applicationId] : []), W = (0, T.Ay)(x, s.guild_id)[0], K = (0, u.YY)(W?.application_id).data ?? void 0, [Y, z] = (0, r.yK)([v.A], () => [v.A.getStreamForUser(x, s.getGuildId()), v.A.getActiveStreamForUser(x, s.getGuildId())], [s, x]), q = (0, r.bG)([M.A], () => M.A.getSessionById(a)), X = G.Ay.useName(l), $ = (0, r.bG)([U.A], () => U.A.getVoicePlatformForChannel(s.id, x), [s.id, x]), {
         enableHangStatus: J
-    } = (0, p.$j)({
+    } = (0, g.$j)({
         guildId: s.guild_id,
         location: "VoiceUsers"
-    }), Q = (0, _.Ay)(s, !0, l), Z = (0, r.bG)([g.A], () => E ? g.A.getHangStatusActivity() : null, [E]), ee = (0, f.h)(x), et = (0, S.uy)(s.id, x), {
+    }), Q = (0, _.Ay)(s, !0, l), Z = (0, r.bG)([p.A], () => E ? p.A.getHangStatusActivity() : null, [E]), ee = (0, f.h)(x), et = (0, S.uy)(s.id, x), {
         enableVCStatusIcons: en
     } = N.m.useExperiment({
         guildId: s.guild_id,
@@ -110,8 +110,8 @@ let F = [],
             collapsedMax: u = 6,
             tabIndex: _,
             numAudience: m,
-            withGuildIcon: p = !1,
-            className: g,
+            withGuildIcon: g = !1,
+            className: p,
             children: C,
             isThread: N = !1
         } = e, [T, v] = l.useState(null), R = l.useRef(null), M = (0, S.$n)(s.id, d ?? F);
@@ -199,9 +199,9 @@ let F = [],
             }, "voice-invite-suggestions-button")), l
         })();
         return null == X && null == C ? null : (0, i.jsxs)(b.Wr, {
-            className: a()(g, V.p_, {
+            className: a()(p, V.p_, {
                 [V.yZ]: c,
-                [V.lY]: p,
+                [V.lY]: g,
                 [V.fT]: N
             }),
             collapsed: c,

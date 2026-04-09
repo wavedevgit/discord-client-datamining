@@ -22,14 +22,14 @@ function _(e) {
         channel: l,
         exitFullScreen: _,
         appContext: m,
-        analyticsLocation: p,
-        className: g,
+        analyticsLocation: g,
+        className: p,
         size: f = "sm"
     } = e, x = l?.getGuildId(), E = l?.id, I = (0, a.bG)([c.A], () => null != x ? c.A.getGuild(x) : null, [x]), C = (0, a.bG)([o.Ay], () => o.Ay.getActiveEventByChannel(E), [E]);
     if (!(null != I && null != l && u.A.can(h.xBc.CREATE_INSTANT_INVITE, l))) return null;
     let N = A.intl.string(A.t.VINpSK);
     return null != t ? N = A.intl.string(A.t["6VQaqd"]) : null != n && (N = A.intl.string(A.t["OzOM/q"])), (0, i.jsx)("div", {
-        className: g,
+        className: p,
         children: (0, i.jsx)(r.Button, {
             size: f,
             variant: "secondary",
@@ -42,7 +42,7 @@ function _(e) {
                     applicationId: n,
                     appContext: m,
                     exitFullScreen: _,
-                    analyticsLocation: p,
+                    analyticsLocation: g,
                     guildScheduledEvent: C,
                     source: h.PE1.STAGE_CHANNEL
                 })

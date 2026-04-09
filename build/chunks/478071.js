@@ -5,16 +5,16 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(311907),
-    l = n(869146),
-    r = n(91242),
+    r = n(869146),
+    l = n(91242),
     s = n(100537),
     o = n(165610),
     d = n(652215);
 
 function c() {
-    let e = (0, a.bG)([r.A], () => r.A.getConnectedFrame()),
-        t = (0, a.bG)([r.A], () => r.A.getFrameLayoutMode()),
-        n = (0, a.bG)([l.A], () => l.A.getWindowOpen(d.MLl.ACTIVITY_POPOUT));
+    let e = (0, a.bG)([l.A], () => l.A.getConnectedFrame()),
+        t = (0, a.bG)([l.A], () => l.A.getFrameLayoutMode()),
+        n = (0, a.bG)([r.A], () => r.A.getWindowOpen(d.MLl.ACTIVITY_POPOUT));
     return t !== o.y.FOCUSED || null == e || n ? null : (0, i.jsx)(s.A, {
         frame: e
     })

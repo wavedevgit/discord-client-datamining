@@ -1,6 +1,6 @@
 /** chunk id: 258024 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => N
+    Ay: () => T
 }), n(321073);
 var i = n(64700),
     l = n(735438),
@@ -16,8 +16,8 @@ var i = n(64700),
     A = n(72314),
     g = n(661191),
     p = n(326337),
-    f = n(371741),
-    _ = n(420819),
+    _ = n(371741),
+    f = n(420819),
     E = n(381941),
     x = n(652215);
 
@@ -47,7 +47,7 @@ let S = {
     scrollHeight: 0,
     offsetHeight: 0
 };
-class T {
+class I {
     props;
     ref = i.createRef();
     automaticAnchor = null;
@@ -112,7 +112,7 @@ class T {
                     id: n
                 }
             } = this.props;
-        return null == t ? null : (0, f.Av)(t, n, e)
+        return null == t ? null : (0, _.Av)(t, n, e)
     }
     isScrolledToBottom() {
         let {
@@ -190,7 +190,7 @@ class T {
         if (!(0, a.vq)(i) || null == l) return null;
         let {
             offsetHeight: s
-        } = i, r = (0, _.A)(i, l), o = r - t;
+        } = i, r = (0, f.A)(i, l), o = r - t;
         return null != n && (o = Math.max(-s, Math.min(n, o))), {
             id: e,
             offsetFromTop: o,
@@ -410,7 +410,7 @@ class T {
             i = this.ref.current?.getScrollerNode();
         if (null == i) return 0;
         let l = this.getScrollerState(),
-            s = (0, _.A)(e, i);
+            s = (0, f.A)(e, i);
         return "middle" === t ? Math.min(s - .5 * l.offsetHeight + .5 * e.offsetHeight + -8, s - n) : s - n
     }
     restoreScroll() {
@@ -570,7 +570,7 @@ class T {
     }
 }
 
-function N(e) {
+function T(e) {
     let {
         messages: t,
         channel: n,
@@ -584,7 +584,7 @@ function N(e) {
         additionalMessagePadding: h = 0
     } = e, {
         windowId: m
-    } = i.useContext(u.Ay), [A] = i.useState(() => new T({
+    } = i.useContext(u.Ay), [A] = i.useState(() => new I({
         messages: t,
         channel: n,
         compact: l,

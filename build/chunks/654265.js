@@ -9,24 +9,24 @@ var i = n(64700),
     s = n(661191),
     o = n(624458),
     c = n(844944),
-    d = n(212455),
-    u = n(652215);
+    u = n(212455),
+    d = n(652215);
 
 function _(e) {
     let [t, n] = i.useState(!1), [_, A] = i.useState(!1), m = s.default.cast(e), {
         joinRequest: E,
         guild: T
-    } = (0, l.cf)([c.A, d.A, a.A, r.A], () => {
+    } = (0, l.cf)([c.A, u.A, a.A, r.A], () => {
         let e = c.A.getRequest(m);
         if (null == e) return {
             joinRequest: null,
             isModmin: !1,
             guild: null
         };
-        let t = a.A.getGuild(e.guildId) ?? d.A.getJoinRequestGuild(e.guildId);
+        let t = a.A.getGuild(e.guildId) ?? u.A.getJoinRequestGuild(e.guildId);
         return {
             joinRequest: e,
-            isModmin: null != t && r.A.can(u.xBc.KICK_MEMBERS, t),
+            isModmin: null != t && r.A.can(d.xBc.KICK_MEMBERS, t),
             guild: t
         }
     });

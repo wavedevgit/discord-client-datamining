@@ -25,7 +25,7 @@ function _(e) {
     } = e, A = s.useRef(null), {
         width: _,
         ref: m
-    } = (0, d.Ay)(), p = (0, c.bf)(_);
+    } = (0, d.Ay)(), g = (0, c.bf)(_);
     return (0, l.jsx)(o.xpW, {
         containerRef: A,
         children: (0, l.jsxs)("div", {
@@ -39,7 +39,7 @@ function _(e) {
                 className: h.K1,
                 children: n?.()
             }), u?.(), (0, l.jsx)(c.Ay.Provider, {
-                value: p,
+                value: g,
                 children: (0, l.jsxs)("div", {
                     className: h.q6,
                     ref: m,

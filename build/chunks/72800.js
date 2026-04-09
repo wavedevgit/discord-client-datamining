@@ -1,28 +1,28 @@
 /** chunk id: 72800 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => h
 });
 var i = n(627968),
     a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(503698),
+    l = n.n(r),
     s = n(417597),
     o = n(932001),
     d = n(967198),
     c = n(533550),
     u = n(49999),
     A = n(673684);
-let h = a.memo(function(e) {
+let _ = a.memo(function(e) {
     let {
         state: t,
         markAsDismissed: n
     } = e, {
-        name: l,
+        name: r,
         guildId: s,
         boundingRect: o
-    } = t, d = a.useMemo(() => null, [l, s, n]);
+    } = t, d = a.useMemo(() => null, [r, s, n]);
     return null == d ? null : (0, i.jsx)("div", {
-        className: r()(A.UX, (null == o || o.y < 0) && A.R),
+        className: l()(A.UX, (null == o || o.y < 0) && A.R),
         style: null == o ? {} : {
             top: o.top,
             left: o.right - o.x
@@ -31,7 +31,7 @@ let h = a.memo(function(e) {
     })
 });
 
-function _() {
+function h() {
     let e = (0, s.bG)([d.A], () => d.A.getGuildId()),
         t = (0, c.RX)(e),
         [n, a] = (0, o.kn)(Object.values(t).filter(e => {
@@ -46,11 +46,11 @@ function _() {
             return t
         }), u.m.SIDEBAR);
     if (null == n) return null;
-    let l = t[n];
-    return null == l ? null : (0, i.jsx)("div", {
+    let r = t[n];
+    return null == r ? null : (0, i.jsx)("div", {
         className: A.kL,
-        children: (0, i.jsx)(h, {
-            state: l,
+        children: (0, i.jsx)(_, {
+            state: r,
             markAsDismissed: a
         })
     })

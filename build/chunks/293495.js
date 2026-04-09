@@ -1,12 +1,12 @@
 /** chunk id: 293495 params = (module,exports,require) **/
 n.d(t, {
     Ay: () => p,
-    YY: () => h
+    YY: () => _
 });
 var i = n(73153),
     a = n(31728),
-    l = n(272355),
-    r = n(227042),
+    r = n(272355),
+    l = n(227042),
     s = n(869146),
     o = n(186111),
     d = n(334463),
@@ -14,17 +14,17 @@ var i = n(73153),
     u = n(652215);
 let A = null;
 
-function h(e) {
+function _(e) {
     return `framepip:${e.applicationId}`
 }
 
-function _() {
+function h() {
     let e = c.A.getConnectedFrame();
     if (null == e) {
         let e;
         return void(null != (e = A) && d.A.isOpen(e) && (i.h.wait(() => a.VN(e)), A = null))
     }
-    var t = h(e);
+    var t = _(e);
     if (d.A.isOpen(t)) return !1;
     if (null != A) {
         let e = A;
@@ -35,7 +35,7 @@ function _() {
 
 function m() {
     let e;
-    if ((0, r.A)({
+    if ((0, l.A)({
             LayerStore: o.A,
             PopoutWindowStore: s.A
         })) {
@@ -44,12 +44,12 @@ function m() {
     }
     null != (e = (void 0) ?? A) && d.A.isOpen(e) && i.h.wait(() => a.WU(e))
 }
-class g extends l.A {
+class g extends r.A {
     _initialize() {
-        c.A.addChangeListener(_), o.A.addChangeListener(m)
+        c.A.addChangeListener(h), o.A.addChangeListener(m)
     }
     _terminate() {
-        c.A.removeChangeListener(_), o.A.removeChangeListener(m)
+        c.A.removeChangeListener(h), o.A.removeChangeListener(m)
     }
 }
 let p = new g

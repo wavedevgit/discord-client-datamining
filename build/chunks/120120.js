@@ -10,8 +10,8 @@ var l = n(417597),
     s = n(763754),
     o = n(447215),
     c = n(888675),
-    d = n(976860),
-    u = n(141593),
+    u = n(976860),
+    d = n(141593),
     _ = n(652215),
     A = n(985018),
     m = n(608188);
@@ -21,7 +21,7 @@ function E(e) {
         guildId: t,
         user: n,
         username: s
-    } = e, o = (0, l.bG)([r.A], () => !r.A.useReducedMotion), c = n.getAvatarURL(t, 56, o), d = (0, i.jsx)("img", {
+    } = e, o = (0, l.bG)([r.A], () => !r.A.useReducedMotion), c = n.getAvatarURL(t, 56, o), u = (0, i.jsx)("img", {
         src: c,
         className: m.dj,
         alt: ""
@@ -32,8 +32,8 @@ function E(e) {
         "aria-label": A.intl.formatToPlainString(A.t["utf8+W"], {
             username: s
         }),
-        children: [(0, i.jsx)(u.A, {
-            avatar: d
+        children: [(0, i.jsx)(d.A, {
+            avatar: u
         }), (0, i.jsx)(a.Text, {
             className: m.Bi,
             tag: "p",
@@ -58,17 +58,17 @@ function T(e) {
         channel: t,
         message: l,
         compact: a
-    } = e, r = (0, s.Ay)(l), u = (0, o.P)({
+    } = e, r = (0, s.Ay)(l), d = (0, o.P)({
         user: l.author,
         channelId: t.id,
         guildId: t.guild_id,
         messageId: l.id
     })(r), m = A.intl.format(A.t.TQs67g, {
         username: r.nick,
-        usernameHook: u,
+        usernameHook: d,
         productName: l.purchaseNotification?.guild_product_purchase?.product_name ?? "",
         handleProductListingClick: () => {
-            (0, d.pX)(_.BVt.GUILD_PRODUCT(t.guild_id, l.purchaseNotification?.guild_product_purchase?.listing_id ?? ""))
+            (0, u.pX)(_.BVt.GUILD_PRODUCT(t.guild_id, l.purchaseNotification?.guild_product_purchase?.listing_id ?? ""))
         }
     });
     return (0, i.jsxs)(i.Fragment, {

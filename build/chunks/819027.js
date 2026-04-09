@@ -2,33 +2,33 @@
 n.d(t, {
     A: () => u
 });
-var i = n(627968);
+var a = n(627968);
 n(64700);
-var l = n(397927),
-    s = n(688810),
-    a = n(474397),
-    r = n(780964),
-    o = n(858897),
-    c = n(652215),
-    d = n(985018);
+var r = n(397927),
+    l = n(688810),
+    i = n(474397),
+    o = n(780964),
+    s = n(858897),
+    _ = n(652215),
+    c = n(985018);
 
 function u(e) {
     let {
         analyticsLocations: t
-    } = (0, s.Ay)();
-    return (0, i.jsx)(l.Drp, {
+    } = (0, l.Ay)();
+    return (0, a.jsx)(r.Drp, {
         id: "voice-settings",
-        label: d.intl.string(d.t.NiTd0e),
+        label: c.intl.string(c.t.NiTd0e),
         action: () => {
-            (0, o.openUserSettings)(r.X.VOICE_CATEGORY, {
+            (0, s.openUserSettings)(o.X.VOICE_CATEGORY, {
                 analyticsLocations: t,
                 appContext: e
-            }), (0, a.A)(e, e === c.BRT.POPOUT)
+            }), (0, i.A)(e, e === _.BRT.POPOUT)
         },
-        icon: l.Zes,
+        icon: r.Zes,
         leadingAccessory: {
             type: "icon",
-            icon: l.Zes
+            icon: r.Zes
         }
     })
 }

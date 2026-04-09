@@ -14,9 +14,9 @@ function s(e) {
         channel: s,
         targetUser: o,
         actorUsernameHook: c,
-        targetUsernameHook: d,
-        compact: u
-    } = e, _ = (0, l.Ay)(t), A = (0, l.d8)(o, s), m = c(_), E = d(A ?? void 0), T = r.intl.format(r.t["32QI5/"], {
+        targetUsernameHook: u,
+        compact: d
+    } = e, _ = (0, l.Ay)(t), A = (0, l.d8)(o, s), m = c(_), E = u(A ?? void 0), T = r.intl.format(r.t["32QI5/"], {
         actorName: _.nick,
         actorHook: m,
         targetName: A?.nick,
@@ -25,7 +25,7 @@ function s(e) {
     return (0, i.jsx)(a.A, {
         icon: n(884797),
         timestamp: t.timestamp,
-        compact: u,
+        compact: d,
         children: T
     })
 }

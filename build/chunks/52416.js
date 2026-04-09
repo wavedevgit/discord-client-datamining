@@ -1,12 +1,12 @@
 /** chunk id: 52416 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => _
 });
 var i = n(627968);
 n(64700);
 var a = n(877624),
-    l = n(342494),
-    r = n(732955),
+    r = n(342494),
+    l = n(732955),
     s = n(975571),
     o = n(549996),
     d = n(498470),
@@ -14,26 +14,26 @@ var a = n(877624),
     u = n(49999),
     A = n(985018);
 
-function h(e) {
+function _(e) {
     let {
         children: t,
         targetElementRef: n,
-        dismissPopover: h
-    } = e, _ = (0, o.c)(a.C.PREMIUM_TAB_POPOVER), m = null != _ && "premiumTabPopover" === _.properties.properties.oneofKind ? _.properties.properties.premiumTabPopover : null, g = (0, c.T)(m?.asset);
+        dismissPopover: _
+    } = e, h = (0, o.c)(a.C.PREMIUM_TAB_POPOVER), m = null != h && "premiumTabPopover" === h.properties.properties.oneofKind ? h.properties.properties.premiumTabPopover : null, g = (0, c.T)(m?.asset);
     if (null == m) return t;
     let p = m.button?.copy != null ? [{
         text: m.button.copy,
         variant: "expressive",
         onClick: (0, d.h)({
             buttonAction: m.button.buttonAction,
-            onClose: () => h(u.i.USER_DISMISS)
+            onClose: () => _(u.i.USER_DISMISS)
         }),
-        icon: r.tvc
+        icon: l.tvc
     }] : void 0;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             children: t
-        }), (0, i.jsx)(l.AM, {
+        }), (0, i.jsx)(r.AM, {
             targetElementRef: n,
             title: m.header,
             body: m.body,
@@ -53,7 +53,7 @@ function h(e) {
                 align: "start"
             },
             actions: p,
-            onRequestClose: () => h(u.i.USER_DISMISS),
+            onRequestClose: () => _(u.i.USER_DISMISS),
             gradientColor: "nitro-pink"
         })]
     })

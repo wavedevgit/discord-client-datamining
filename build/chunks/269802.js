@@ -1,6 +1,6 @@
 /** chunk id: 269802 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
 var i = n(627968);
 n(64700);
@@ -11,13 +11,13 @@ var l = n(827734),
     o = n(985018),
     c = n(466206);
 
-function d(e) {
+function u(e) {
     let {
         message: t,
         compact: n,
-        usernameHook: d
-    } = e, u = (0, r.Ay)(t), _ = d(u), A = o.intl.format(o.t["Rv+TSM"], {
-        username: u.nick,
+        usernameHook: u
+    } = e, d = (0, r.Ay)(t), _ = u(d), A = o.intl.format(o.t["Rv+TSM"], {
+        username: d.nick,
         usernameHook: _,
         topic: t.content
     });

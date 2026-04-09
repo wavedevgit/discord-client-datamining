@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(616356),
     _ = n(734057),
     m = n(71393),
-    p = n(977997),
-    g = n(954571),
+    g = n(977997),
+    p = n(954571),
     f = n(821589),
     x = n(652215),
     E = n(650417);
@@ -56,14 +56,14 @@ let C = r.A.Types,
             hideHeader: E = !1,
             showChannelDetails: C = !1,
             ...N
-        } = e, T = (0, s.bG)([p.A, _.A], () => _.A.getChannel(p.A.getVoiceStateForUser(n.id)?.channelId)), S = (0, u.v)("UserActivityContainer", T), b = (0, s.bG)([A.A], () => o ? A.A.getAnyStreamForUser(n.id) : null), y = t?.type === x.$pd.HANG_STATUS && S ? T : null, v = (0, s.bG)([m.A, p.A, _.A], () => (0, a.A)(t, x.jUm.EMBEDDED) ? m.A.getGuild(_.A.getChannel(p.A.getVoiceStateForSession(n.id, t?.session_id)?.channelId)?.getGuildId()) : null != y ? m.A.getGuild(y.getGuildId()) : null), j = (0, s.bG)([m.A], () => null != b ? m.A.getGuild(b.guildId) : null), R = (0, s.bG)([d.A], () => {
+        } = e, T = (0, s.bG)([g.A, _.A], () => _.A.getChannel(g.A.getVoiceStateForUser(n.id)?.channelId)), S = (0, u.v)("UserActivityContainer", T), b = (0, s.bG)([A.A], () => o ? A.A.getAnyStreamForUser(n.id) : null), y = t?.type === x.$pd.HANG_STATUS && S ? T : null, v = (0, s.bG)([m.A, g.A, _.A], () => (0, a.A)(t, x.jUm.EMBEDDED) ? m.A.getGuild(_.A.getChannel(g.A.getVoiceStateForSession(n.id, t?.session_id)?.channelId)?.getGuildId()) : null != y ? m.A.getGuild(y.getGuildId()) : null), j = (0, s.bG)([m.A], () => null != b ? m.A.getGuild(b.guildId) : null), R = (0, s.bG)([d.A], () => {
             if (null != t)
                 if (null != t.application_id) return d.A.getApplication(t.application_id);
                 else return d.A.getApplicationByName(t.name);
             return null
         });
         return (l.useEffect(() => {
-            t?.type === x.$pd.HANG_STATUS && S && g.default.track(x.HAw.VIEW_HANG_STATUS, {
+            t?.type === x.$pd.HANG_STATUS && S && p.default.track(x.HAw.VIEW_HANG_STATUS, {
                 source: "UserActivity",
                 other_user_id: n.id,
                 ...(0, c.A)(y?.id)

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(503698),
-    l = n.n(a),
-    r = n(397927),
+    r = n.n(a),
+    l = n(397927),
     s = n(947661);
 
 function o(e) {
@@ -19,13 +19,13 @@ function o(e) {
         onClick: c,
         ref: u,
         noBackground: A = !1,
-        ...h
+        ..._
     } = e;
-    return null != c ? (0, i.jsx)(r.DUT, {
+    return null != c ? (0, i.jsx)(l.DUT, {
         innerRef: u,
         onClick: c,
         tabIndex: null != c ? 0 : -1,
-        className: l()(o, {
+        className: r()(o, {
             [s.A7]: !n,
             [s.C5]: n,
             [s.jC]: t,
@@ -33,18 +33,18 @@ function o(e) {
             [s.bG]: null != c,
             [s._$]: A
         }),
-        ...h,
+        ..._,
         children: d
     }) : (0, i.jsx)("div", {
         ref: u,
-        className: l()(o, {
+        className: r()(o, {
             [s.A7]: !n,
             [s.C5]: n,
             [s.jC]: t,
             [s.vu]: a,
             [s._$]: A
         }),
-        ...h,
+        ..._,
         children: d
     })
 }

@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(826673),
     _ = n(855687),
     m = n(267102),
-    p = n(733586),
-    g = n(530804),
+    g = n(733586),
+    p = n(530804),
     f = n(71393),
     x = n(576705),
     E = n(686502),
@@ -38,7 +38,7 @@ function S(e) {
         popoutType: O
     } = e, L = (0, m.Us)() === N.BRT.POPOUT, M = (0, r.bG)([f.A], () => f.A.getGuild(y.guild_id), [y.guild_id]), {
         dismissedActivityEntryPointTileChannel: D
-    } = (0, C.P)(), U = (0, r.bG)([h.A], () => h.A.getUserParticipantCount(y.id), [y]), G = (0, g.vp)(y.id, t), P = l.useCallback(() => {
+    } = (0, C.P)(), U = (0, r.bG)([h.A], () => h.A.getUserParticipantCount(y.id), [y]), G = (0, p.vp)(y.id, t), P = l.useCallback(() => {
         (0, a.r)(() => {
             C.P.setState({
                 dismissedActivityEntryPointTileChannel: y.id
@@ -100,7 +100,7 @@ function S(e) {
         activitiesEnabled: Y
     })));
     let z = l.useCallback(e => G[e]?.id ?? "empty-tile", [G]);
-    return (0, i.jsx)(p.A, {
+    return (0, i.jsx)(g.A, {
         className: v,
         keyExtractor: z,
         paddingTop: 64,

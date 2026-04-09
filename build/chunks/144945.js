@@ -1,84 +1,84 @@
 /** chunk id: 144945 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => b
 });
-var i = n(627968),
-    l = n(64700),
-    s = n(989349),
-    a = n.n(s),
+var a = n(627968),
+    i = n(64700),
+    l = n(989349),
+    s = n.n(l),
     r = n(311907),
     o = n(990078),
     c = n(397927),
     d = n(943330),
     u = n(101392),
-    h = n(203982),
-    m = n(927813),
-    A = n(960850),
-    g = n(652215),
-    p = n(985018),
-    f = n(357935);
+    m = n(203982),
+    p = n(927813),
+    _ = n(960850),
+    h = n(652215),
+    A = n(985018),
+    g = n(357935);
 
-function _(e) {
+function f(e) {
     let t, {
             isEnabled: n,
-            rateLimitPerUser: s,
+            rateLimitPerUser: l,
             isBypassSlowmode: r,
             slowmodeCooldownGuess: u
         } = e,
-        [A, _] = l.useState(!1);
-    if (l.useEffect(() => {
+        [_, f] = i.useState(!1);
+    if (i.useEffect(() => {
             function e() {
-                _(!0), setTimeout(() => {
-                    _(!1)
+                f(!0), setTimeout(() => {
+                    f(!1)
                 }, 1e3)
             }
-            return h._.subscribe(g.jej.EMPHASIZE_SLOWMODE_COOLDOWN, e), () => {
-                h._.unsubscribe(g.jej.EMPHASIZE_SLOWMODE_COOLDOWN, e)
+            return m._.subscribe(h.jej.EMPHASIZE_SLOWMODE_COOLDOWN, e), () => {
+                m._.unsubscribe(h.jej.EMPHASIZE_SLOWMODE_COOLDOWN, e)
             }
         }, []), !n) return null;
-    let E = (0, d.L)(s);
+    let b = (0, d.L)(l);
     if (!r && u > 0) {
-        let e = a().duration(u);
-        if (u > m.A.Millis.HOUR) {
+        let e = s().duration(u);
+        if (u > p.A.Millis.HOUR) {
             let n = `${e.minutes()}`.padStart(2, "0"),
-                i = `${e.seconds()}`.padStart(2, "0");
-            t = `${e.hours()}:${n}:${i}`
+                a = `${e.seconds()}`.padStart(2, "0");
+            t = `${e.hours()}:${n}:${a}`
         } else {
             let n = `${e.seconds()}`.padStart(2, "0");
             t = `${e.minutes()}:${n}`
         }
-    } else t = r ? p.intl.string(p.t["8+NidX"]) : p.intl.string(p.t.Icu3bf);
-    let x = (0, i.jsxs)(c.Text, {
-        className: f.rk,
+    } else t = r ? A.intl.string(A.t["8+NidX"]) : A.intl.string(A.t.Icu3bf);
+    let T = (0, a.jsxs)(c.Text, {
+        className: g.rk,
         variant: "text-xs/medium",
-        color: A ? "text-feedback-critical" : "text-muted",
+        color: _ ? "text-feedback-critical" : "text-muted",
         tabularNumbers: !0,
-        children: [(0, i.jsx)(c.xbX, {
+        children: [(0, a.jsx)(c.xbX, {
             size: "xxs",
             color: "currentColor",
-            className: f.Eq
+            className: g.Eq
         }), t]
     });
-    return (0, i.jsx)(o.m, {
-        text: E,
-        children: (0, i.jsx)("div", {
-            className: f.ns,
-            children: x
+    return (0, a.jsx)(o.m, {
+        text: b,
+        children: (0, a.jsx)("div", {
+            className: g.ns,
+            children: T
         })
     })
 }
 
-function E(e) {
+function b(e) {
     let {
         channel: t,
         isThreadCreation: n = !1
-    } = e, l = (0, r.bG)([u.A], () => u.A.getSlowmodeCooldownGuess(t.id, n ? u.R.CreateThread : u.R.SendMessage)), s = (0, A._)(t, n ? u.R.CreateThread : u.R.SendMessage), {
-        rateLimitPerUser: a
+    } = e, i = (0, r.bG)([u.A], () => u.A.getSlowmodeCooldownGuess(t.id, n ? u.R.CreateThread : u.R.SendMessage)), l = (0, _._)(t, n ? u.R.CreateThread : u.R.SendMessage), {
+        rateLimitPerUser: s
     } = t;
-    return (0, i.jsx)(_, {
-        isEnabled: a > 0,
-        rateLimitPerUser: a,
-        isBypassSlowmode: s,
-        slowmodeCooldownGuess: l
+    return (0, a.jsx)(f, {
+        isEnabled: s > 0,
+        rateLimitPerUser: s,
+        isBypassSlowmode: l,
+        slowmodeCooldownGuess: i
     })
 }

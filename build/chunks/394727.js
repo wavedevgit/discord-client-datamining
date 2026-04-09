@@ -4,16 +4,16 @@ n.d(t, {
 }), n(323874), n(14289), n(35956);
 var i = n(64700),
     a = n(311907),
-    l = n(157559),
-    r = n(308528),
+    r = n(157559),
+    l = n(308528),
     s = n(793574),
     o = n(688810),
     d = n(429913),
     c = n(976860),
     u = n(287809),
     A = n(956549),
-    h = n(257269),
-    _ = n(985018);
+    _ = n(257269),
+    h = n(985018);
 
 function m(e) {
     let {
@@ -27,13 +27,13 @@ function m(e) {
         null != E && null != I && (async () => {
             try {
                 let e = new URL(location.href),
-                    t = await r.A.openPrivateChannel({
+                    t = await l.A.openPrivateChannel({
                         recipientIds: E
                     }),
                     n = e.searchParams.get("referrer_id") ?? void 0,
                     {
                         customId: i
-                    } = await (0, h.d9)(g, e.searchParams.get("link_id"), e.searchParams.get("custom_id"));
+                    } = await (0, _.d9)(g, e.searchParams.get("link_id"), e.searchParams.get("custom_id"));
                 await (0, A.A)({
                     targetApplicationId: g,
                     channelId: t,
@@ -45,9 +45,9 @@ function m(e) {
         })()
     }, [m, g, E, I]), i.useEffect(() => {
         let e = setTimeout(() => {
-            null == E && l.A.show({
-                title: _.intl.string(_.t.PtobXW),
-                body: _.intl.string(_.t["IOy+I5"])
+            null == E && r.A.show({
+                title: h.intl.string(h.t.PtobXW),
+                body: h.intl.string(h.t["IOy+I5"])
             })
         }, 5e3);
         return () => {

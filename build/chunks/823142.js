@@ -19,8 +19,8 @@ var i = n(627968),
     A = n(914430),
     _ = n(442433),
     m = n(676002),
-    p = n(47167),
-    g = n(485947),
+    g = n(47167),
+    p = n(485947),
     f = n(924985),
     x = n(71393),
     E = n(576705),
@@ -48,7 +48,7 @@ let v = l.memo(function(e) {
             O = (0, o.bG)([I.Ay], () => I.Ay.isChannelMuted(s.getGuildId(), s.id)),
             L = (0, o.bG)([f.A], () => f.A.isCollapsed(s.id)),
             M = (0, o.bG)([E.A], () => E.A.can(T.xBc.MANAGE_CHANNELS, s)),
-            D = (0, p.Ay)(s);
+            D = (0, g.Ay)(s);
         t = null != v ? N > v ? b.mU : b.TR : b.fx;
         let U = l.useCallback(() => {
                 L ? (0, A.fh)(s.id) : (0, A.Gv)(s.id)
@@ -121,7 +121,7 @@ let v = l.memo(function(e) {
                             focusProps: {
                                 enabled: !1
                             },
-                            children: [(0, i.jsx)(g.A, {
+                            children: [(0, i.jsx)(p.A, {
                                 className: b.UU,
                                 children: (0, i.jsx)(d.A, {
                                     children: D
@@ -168,7 +168,7 @@ let v = l.memo(function(e) {
                 className: a()(b.Ki, b._V),
                 children: [(0, i.jsx)("div", {
                     className: b.rb,
-                    children: (0, i.jsx)(g.A, {
+                    children: (0, i.jsx)(p.A, {
                         className: b.UU,
                         children: (0, i.jsx)(d.A, {
                             children: t
@@ -216,7 +216,7 @@ let v = l.memo(function(e) {
             className: b.fx,
             children: (0, i.jsx)("div", {
                 className: a()(b.Ki, b._V),
-                children: (0, i.jsx)(g.A, {
+                children: (0, i.jsx)(p.A, {
                     className: b.UU,
                     children: (0, i.jsx)(d.A, {
                         children: S.intl.string(S.t["V/u9Dy"])
@@ -232,12 +232,12 @@ let v = l.memo(function(e) {
     M = l.memo(function(e) {
         let {
             channel: t
-        } = e, n = (0, p.Ay)(t);
+        } = e, n = (0, g.Ay)(t);
         return (0, i.jsx)("li", {
             className: b.fx,
             children: (0, i.jsx)("div", {
                 className: a()(b.Ki, b._V),
-                children: (0, i.jsx)(g.A, {
+                children: (0, i.jsx)(p.A, {
                     className: b.UU,
                     children: (0, i.jsx)(d.A, {
                         children: n

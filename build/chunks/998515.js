@@ -7,12 +7,12 @@ var i = s(627968),
     r = s(873263),
     o = s(311907),
     a = s(255363),
-    d = s(384904),
-    l = s(820284),
-    A = s(490415),
-    c = s(441271),
-    _ = s(915967),
-    p = s(775121),
+    d = s(820284),
+    l = s(490415),
+    A = s(441271),
+    c = s(915967),
+    _ = s(775121),
+    p = s(323082),
     I = s(268218),
     O = s(670735),
     h = s(976860),
@@ -31,16 +31,16 @@ class C extends n.PureComponent {
     componentDidMount() {
         (0, a.N)(this.props.location), this.stopListeningToHistory = (0, h.JK)().listen(t => {
             t.pathname.startsWith(T.BVt.APPLICATION_STORE) && (0, a.N)(t)
-        }), this.props.isAuthenticated && (0, d.$o)(), p.A.disable(), p.A.setLayout(c.E), p.A.enable(), (0, u.d)("application_store")
+        }), this.props.isAuthenticated && (0, p.$o)(), _.A.disable(), _.A.setLayout(A.E), _.A.enable(), (0, u.d)("application_store")
     }
     componentWillUnmount() {
-        null != this.stopListeningToHistory && this.stopListeningToHistory(), p.A.disable(), p.A.setLayout(_.zR), p.A.enable()
+        null != this.stopListeningToHistory && this.stopListeningToHistory(), _.A.disable(), _.A.setLayout(c.zR), _.A.enable()
     }
     renderContent = () => (0, i.jsxs)(r.dO, {
         children: [(0, i.jsx)(r.qh, {
             path: T.BVt.APPLICATION_STORE,
             exact: !0,
-            render: () => (0, i.jsx)(l.A, {
+            render: () => (0, i.jsx)(d.A, {
                 page: T.liQ.STORE_DIRECTORY_HOME,
                 root: !0,
                 children: (0, i.jsx)(E.A, {})
@@ -88,7 +88,7 @@ class C extends n.PureComponent {
         })
     }
 }
-let N = (0, A.A)(function(t) {
+let N = (0, l.A)(function(t) {
     let e = (0, r.zy)();
     return (0, i.jsx)(C, {
         ...t,

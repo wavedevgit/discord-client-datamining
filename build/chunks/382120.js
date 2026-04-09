@@ -1,18 +1,18 @@
 /** chunk id: 382120 params = (module,exports,require) **/
 t.d(n, {
-    A: () => _
+    A: () => u
 });
 var i = t(627968);
 t(64700);
 var a = t(158954),
-    l = t(311907),
-    r = t(397927),
-    s = t(973925),
-    d = t(622543),
-    o = t(985018),
+    r = t(311907),
+    l = t(397927),
+    o = t(973925),
+    s = t(622543),
+    d = t(985018),
     c = t(533164);
 
-function u(e) {
+function _(e) {
     let {
         icon: n,
         title: t,
@@ -30,10 +30,10 @@ function u(e) {
             })
         }), (0, i.jsxs)("div", {
             className: c.qg,
-            children: [(0, i.jsx)(r.Heading, {
+            children: [(0, i.jsx)(l.Heading, {
                 variant: "text-xs/semibold",
                 children: t
-            }), (0, i.jsx)(r.Text, {
+            }), (0, i.jsx)(l.Text, {
                 variant: "text-sm/normal",
                 children: a
             })]
@@ -41,32 +41,32 @@ function u(e) {
     })
 }
 
-function _(e) {
+function u(e) {
     let {
         user: n
-    } = e, t = (0, l.bG)([d.A], () => d.A.getUserProfile(n.id)?.application), {
-        hasMessageContent: _,
+    } = e, t = (0, r.bG)([s.A], () => s.A.getUserProfile(n.id)?.application), {
+        hasMessageContent: u,
         hasGuildPresences: p,
         hasGuildMembers: A
-    } = (0, s.Z)(t);
+    } = (0, o.Z)(t);
     return (0, i.jsxs)(a.IpV, {
         fade: !0,
         className: c.XG,
-        children: [_ && (0, i.jsx)(u, {
-            icon: r.oyn,
-            title: o.intl.string(o.t["7Tmhfu"]),
-            description: o.intl.string(o.t.eu5x7z)
-        }), p && (0, i.jsx)(u, {
-            icon: r._xR,
-            title: o.intl.string(o.t.awYSsM),
-            description: o.intl.string(o.t.TpsXoC)
-        }), A && (0, i.jsx)(u, {
-            icon: r.nFg,
-            title: o.intl.string(o.t.WuKeSJ),
-            description: o.intl.string(o.t.wOBmtV)
-        }), (0, i.jsx)(r.Text, {
+        children: [u && (0, i.jsx)(_, {
+            icon: l.oyn,
+            title: d.intl.string(d.t["7Tmhfu"]),
+            description: d.intl.string(d.t.eu5x7z)
+        }), p && (0, i.jsx)(_, {
+            icon: l._xR,
+            title: d.intl.string(d.t.awYSsM),
+            description: d.intl.string(d.t.TpsXoC)
+        }), A && (0, i.jsx)(_, {
+            icon: l.nFg,
+            title: d.intl.string(d.t.WuKeSJ),
+            description: d.intl.string(d.t.wOBmtV)
+        }), (0, i.jsx)(l.Text, {
             variant: "text-xs/normal",
-            children: o.intl.format(o.t.b6nqk0, {
+            children: d.intl.format(d.t.b6nqk0, {
                 helpCenterUrl: "https://support.discord.com/hc/articles/7933951485975"
             })
         })]

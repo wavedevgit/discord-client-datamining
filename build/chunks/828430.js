@@ -5,25 +5,25 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(397927),
-    l = n(73153),
-    r = n(272355),
+    r = n(73153),
+    l = n(272355),
     s = n(36149),
     o = n(662502),
     d = n(260509),
     c = n(309010),
     u = n(967198),
     A = n(323073),
-    h = n(329972),
-    _ = n(784578),
+    _ = n(329972),
+    h = n(784578),
     m = n(204925),
     g = n(652215),
     p = n(835002);
-class E extends r.A {
+class E extends l.A {
     _initialize() {
-        l.h.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), l.h.subscribe("CHANNEL_SELECT", this.handleChannelSelect), l.h.subscribe("AGE_GATE_MODAL_OPEN", this.handleAgeGateModalOpen), l.h.subscribe("AGE_GATE_MODAL_CLOSE", this.handleAgeGateModalClose), l.h.subscribe("AGE_GATE_SUCCESS_MODAL_OPEN", this.handleAgeGateSuccess), l.h.subscribe("AGE_GATE_FAILURE_MODAL_OPEN", this.handleAgeGateFailure), l.h.subscribe("GUILD_UPDATE", this.handleGuildUpdate)
+        r.h.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), r.h.subscribe("CHANNEL_SELECT", this.handleChannelSelect), r.h.subscribe("AGE_GATE_MODAL_OPEN", this.handleAgeGateModalOpen), r.h.subscribe("AGE_GATE_MODAL_CLOSE", this.handleAgeGateModalClose), r.h.subscribe("AGE_GATE_SUCCESS_MODAL_OPEN", this.handleAgeGateSuccess), r.h.subscribe("AGE_GATE_FAILURE_MODAL_OPEN", this.handleAgeGateFailure), r.h.subscribe("GUILD_UPDATE", this.handleGuildUpdate)
     }
     _terminate() {
-        l.h.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), l.h.unsubscribe("CHANNEL_SELECT", this.handleChannelSelect), l.h.unsubscribe("AGE_GATE_MODAL_OPEN", this.handleAgeGateModalOpen), l.h.unsubscribe("AGE_GATE_MODAL_CLOSE", this.handleAgeGateModalClose), l.h.unsubscribe("AGE_GATE_SUCCESS_MODAL_OPEN", this.handleAgeGateSuccess), l.h.unsubscribe("AGE_GATE_FAILURE_MODAL_OPEN", this.handleAgeGateFailure), l.h.unsubscribe("GUILD_UPDATE", this.handleGuildUpdate)
+        r.h.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), r.h.unsubscribe("CHANNEL_SELECT", this.handleChannelSelect), r.h.unsubscribe("AGE_GATE_MODAL_OPEN", this.handleAgeGateModalOpen), r.h.unsubscribe("AGE_GATE_MODAL_CLOSE", this.handleAgeGateModalClose), r.h.unsubscribe("AGE_GATE_SUCCESS_MODAL_OPEN", this.handleAgeGateSuccess), r.h.unsubscribe("AGE_GATE_FAILURE_MODAL_OPEN", this.handleAgeGateFailure), r.h.unsubscribe("GUILD_UPDATE", this.handleGuildUpdate)
     }
     handleChannelSelect(e) {
         let {
@@ -62,7 +62,7 @@ class E extends r.A {
         let {
             underageMessage: t
         } = e;
-        (0, a.zbz)(m.Uy, e => (0, i.jsx)(_.default, {
+        (0, a.zbz)(m.Uy, e => (0, i.jsx)(h.default, {
             underageMessage: t,
             ...e
         }))
@@ -74,7 +74,7 @@ class E extends r.A {
         let {
             guild: t
         } = e, n = u.A.getGuildId();
-        if (null != n && t.id === n && (t.owner_configured_content_level === g.ftr.AGE_RESTRICTED || (0, h.v)("age_gate_manager") && d.uA.has(t.nsfw_level))) return void(0, A.kK)(t.id, null)
+        if (null != n && t.id === n && (t.owner_configured_content_level === g.ftr.AGE_RESTRICTED || (0, _.v)("age_gate_manager") && d.uA.has(t.nsfw_level))) return void(0, A.kK)(t.id, null)
     }
 }
 let I = new E

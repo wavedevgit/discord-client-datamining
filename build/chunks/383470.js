@@ -4,16 +4,16 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     a = n(64700),
-    l = n(397927),
-    r = n(292455),
+    r = n(397927),
+    l = n(292455),
     s = n(701508),
     o = n(979590),
     d = n(783531),
     c = n(965660),
     u = n(599907),
     A = n(652215),
-    h = n(195598);
-let _ = {
+    _ = n(195598);
+let h = {
     page: A.liQ.GUILD_DISCOVERY,
     object: A.ZSU.CARD,
     section: A.JJy.DISCOVER_POPULAR
@@ -33,7 +33,7 @@ function m(e) {
         for (let a = 0; a < e; a++) t.push((0, i.jsx)(u.jO, {
             guildId: n[a] ?? null,
             index: a,
-            onClick: e => g(e, a, C, _),
+            onClick: e => g(e, a, C, h),
             onView: e => p(e, C)
         }, n[a] ?? a));
         return t
@@ -43,15 +43,15 @@ function m(e) {
         children: [(0, i.jsx)(s.A, {
             title: E,
             description: I,
-            children: (0, i.jsx)(r.A, {})
+            children: (0, i.jsx)(l.A, {})
         }), (0, i.jsxs)(o.A, {
-            children: [(0, i.jsx)(l.Heading, {
-                className: h.G,
+            children: [(0, i.jsx)(r.Heading, {
+                className: _.G,
                 variant: "heading-lg/semibold",
                 color: "text-strong",
                 children: f
             }), (0, i.jsx)("div", {
-                className: h.Q,
+                className: _.Q,
                 children: T
             })]
         })]

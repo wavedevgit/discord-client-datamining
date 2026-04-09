@@ -9,8 +9,8 @@ var i = n(627968),
     s = n(732955),
     o = n(397927),
     c = n(274372),
-    d = n(17069),
-    u = n(794905),
+    u = n(17069),
+    d = n(794905),
     _ = n(320501),
     A = n(998218),
     m = n(888675),
@@ -42,7 +42,7 @@ function N(e) {
         }
     }(g.content) : {}, [g]), h = (0, r.bG)([c.A], () => c.A.getMatchingGroupClip(f, C)), p = (0, r.bG)([c.A], () => null != h && null != N && c.A.wasClipSharedInChannel(h.id, N)), {
         onShareClick: S
-    } = (0, u.A)(N), x = l.useCallback(() => {
+    } = (0, d.A)(N), x = l.useCallback(() => {
         null != h && null != N && t.messageReference?.message_id != null && S({
             clips: [h],
             messageReference: {
@@ -68,7 +68,7 @@ function N(e) {
         compact: n,
         additionalContent: (0, i.jsxs)("div", {
             className: I.i,
-            children: [(0, i.jsx)(d.A, {
+            children: [(0, i.jsx)(u.A, {
                 thumbnails: M,
                 variant: "stacked"
             }), (0, i.jsx)(s.$nd, {

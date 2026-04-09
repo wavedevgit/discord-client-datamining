@@ -10,8 +10,8 @@ var i = n(64700),
     s = n(907459),
     o = n(734057),
     c = n(287809),
-    d = n(480012),
-    u = n(763754),
+    u = n(480012),
+    d = n(763754),
     _ = n(985018);
 
 function A(e) {
@@ -22,14 +22,14 @@ function A(e) {
 
 function m(e) {
     let t, n, i = o.A.getChannel(e.channel_id),
-        a = (0, d.A)(e),
-        A = (0, u.p_)(e),
+        a = (0, u.A)(e),
+        A = (0, d.p_)(e),
         m = (t = e.call?.participants.reduce((t, n) => {
             let i = c.default.getUser(n);
             return null == i || i.id === e.author.id ? t : [...t, i]
         }, []) ?? [], n = r.A.getUserAffinitiesMap(), (0, s.L)(t, n, "VoiceSessionUtils - participants")).map(e => ({
             user: e,
-            messageAuthor: (0, u.FT)(e, i)
+            messageAuthor: (0, d.FT)(e, i)
         }));
     return null == a ? _.intl.formatToPlainString(_.t.HzBfIN, {
         username: A.nick,

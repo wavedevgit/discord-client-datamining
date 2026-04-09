@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(73153),
-    l = n(272355),
-    r = n(958005),
+    r = n(272355),
+    l = n(958005),
     s = n(268218),
     o = n(574172),
     d = n(652215);
@@ -25,17 +25,17 @@ let c = (0, s.Fe)({
         webpackId: 911315,
         name: "PopoutWindowStageChannelCall"
     }),
-    h = (0, s.Fe)({
+    _ = (0, s.Fe)({
         createPromise: () => n.e("71138").then(n.bind(n, 414760)),
         webpackId: 414760,
         name: "PopoutWindowRTCDebug"
     }),
-    _ = (0, s.Fe)({
+    h = (0, s.Fe)({
         createPromise: () => n.e("13492").then(n.bind(n, 860051)),
         webpackId: 860051,
         name: "PopoutWindowActivity"
     });
-class m extends l.A {
+class m extends r.A {
     _observer = null;
     _initialize() {
         a.h.subscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), a.h.subscribe("CALL_TILE_POPOUT_WINDOW_OPEN", this.handleOpenCallTilePopout), a.h.subscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), a.h.subscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.initializeStyleSheetObserver()
@@ -62,7 +62,7 @@ class m extends l.A {
         let {
             channelId: t,
             participantId: n
-        } = e, a = (0, r.A)(t, n);
+        } = e, a = (0, l.A)(t, n);
         o.open(a, e => (0, i.jsx)(u, {
             windowKey: e,
             channelId: t,
@@ -91,7 +91,7 @@ class m extends l.A {
         null != this._observer && (this._observer.disconnect(), this._observer = null)
     }
     handleOpenRTCDebugPopout() {
-        o.open(d.MLl.RTC_DEBUG_POPOUT, e => (0, i.jsx)(h, {
+        o.open(d.MLl.RTC_DEBUG_POPOUT, e => (0, i.jsx)(_, {
             windowKey: e
         }), {
             defaultWidth: 854,
@@ -99,7 +99,7 @@ class m extends l.A {
         })
     }
     handleOpenActivityPopout() {
-        o.open(d.MLl.ACTIVITY_POPOUT, e => (0, i.jsx)(_, {
+        o.open(d.MLl.ACTIVITY_POPOUT, e => (0, i.jsx)(h, {
             windowKey: e
         }), {
             defaultWidth: 854,

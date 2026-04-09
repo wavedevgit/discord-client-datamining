@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(665909),
     g = n(576045),
     p = n(477427),
-    f = n(56462),
-    _ = n(652215),
+    _ = n(56462),
+    f = n(652215),
     E = n(985018);
 
 function x(e) {
@@ -25,9 +25,9 @@ function x(e) {
         channelId: t,
         warningId: x,
         senderId: C
-    } = e, S = (0, f.CW)(), T = l.useCallback(() => {
+    } = e, S = (0, _.CW)(), I = l.useCallback(() => {
         (0, h.xi)(t, [x])
-    }, [t, x]), N = e => {
+    }, [t, x]), T = e => {
         r.A.updateChannelOverrideSettings(null, t, {
             muted: !0
         }, p.fd.Muted), c.A.showMuteSuccessToast(C, t), (0, A._$)({
@@ -36,10 +36,10 @@ function x(e) {
             senderId: C,
             warningType: m._j.LIKELY_ATO,
             cta: e
-        }), T()
+        }), I()
     };
     return l.useEffect(() => {
-        (0, A.mO)(_.HAw.SAFETY_WARNING_VIEWED, {
+        (0, A.mO)(f.HAw.SAFETY_WARNING_VIEWED, {
             channelId: t,
             warningId: x,
             senderId: C,
@@ -54,7 +54,7 @@ function x(e) {
         warningType: m._j.LIKELY_ATO,
         header: E.intl.string(E.t.R8UsiI),
         description: E.intl.string(E.t.lI8nQl),
-        onDismiss: T,
+        onDismiss: I,
         buttons: [{
             text: E.intl.string(E.t.tC1pvL),
             variant: "primary",
@@ -86,7 +86,7 @@ function x(e) {
                                 description: E.intl.string(E.t.w2ve0t),
                                 buttonText: E.intl.string(E.t.ftIK2A),
                                 onButtonPress: () => {
-                                    N(A.Wm.USER_MODAL_MUTE), s()
+                                    T(A.Wm.USER_MODAL_MUTE), s()
                                 }
                             }, "likely-ato-mute")],
                             learnMore: (0, i.jsx)(a.DUT, {
@@ -101,7 +101,7 @@ function x(e) {
                                     variant: "heading-sm/medium",
                                     color: "text-link",
                                     children: E.intl.format(E.t.UkH122, {
-                                        learnMoreLink: f.u6
+                                        learnMoreLink: _.u6
                                     })
                                 })
                             })
@@ -117,7 +117,7 @@ function x(e) {
             }
         }, {
             text: E.intl.string(E.t.ftIK2A),
-            onClick: () => N(A.Wm.USER_BANNER_MUTE)
+            onClick: () => T(A.Wm.USER_BANNER_MUTE)
         }]
     })
 }

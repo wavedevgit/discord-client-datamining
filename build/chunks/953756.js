@@ -1,81 +1,82 @@
 /** chunk id: 953756 params = (module,exports,require) **/
-a.d(t, {
-    Hq: () => o,
-    O7: () => s,
-    zn: () => c
+"use strict";
+n.d(t, {
+    Hq: () => c,
+    O7: () => o,
+    zn: () => l
 });
-var n = a(627968),
-    r = a(64700);
+var a = n(627968),
+    r = n(64700);
 let i = r.createContext(null),
-    s = {
+    o = {
         Root(e) {
             let {
                 containerInnerWidth: t,
-                children: a
-            } = e, s = r.useMemo(() => ({
+                children: n
+            } = e, o = r.useMemo(() => ({
                 isParentWidthLimited: !0,
                 parentContainerInnerWidth: t
             }), [t]);
-            return (0, n.jsx)(i.Provider, {
-                value: s,
-                children: a
+            return (0, a.jsx)(i.Provider, {
+                value: o,
+                children: n
             })
         },
         NestedContainer(e) {
             let {
                 containerOuterWidth: t,
-                containerInnerWidth: a,
-                children: s
+                containerInnerWidth: n,
+                children: o
             } = e, {
-                isParentWidthLimited: o,
-                parentContainerInnerWidth: c
-            } = l(), d = o && c === t, u = r.useMemo(() => ({
-                isParentWidthLimited: d,
-                parentContainerInnerWidth: a
-            }), [d, a]);
-            return (0, n.jsx)(i.Provider, {
+                isParentWidthLimited: c,
+                parentContainerInnerWidth: l
+            } = s(), _ = c && l === t, u = r.useMemo(() => ({
+                isParentWidthLimited: _,
+                parentContainerInnerWidth: n
+            }), [_, n]);
+            return (0, a.jsx)(i.Provider, {
                 value: u,
-                children: s
+                children: o
             })
         },
         AutoMeasuredNestedContainer(e) {
             let {
                 children: t
-            } = e, [a, r, i] = c(!0);
-            return (0, n.jsx)(s.NestedContainer, {
+            } = e, [n, r, i] = l(!0);
+            return (0, a.jsx)(o.NestedContainer, {
                 containerOuterWidth: r,
                 containerInnerWidth: i,
-                children: t(a)
+                children: t(n)
             })
         }
     };
 
-function l() {
+function s() {
     let e = r.useContext(i);
     if (null == e) throw Error("Cannot use the ComponentLayoutLimitContext system when not within the context");
     return e
 }
 
-function o(e) {
+function c(e) {
     let {
         isParentWidthLimited: t,
-        parentContainerInnerWidth: a
-    } = l();
-    return t && a === e
+        parentContainerInnerWidth: n
+    } = s();
+    return t && n === e
 }
 
-function c() {
+function l() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
         t = r.useRef(null),
-        [a, n] = r.useState(0),
-        [i, s] = r.useState(0);
+        [n, a] = r.useState(0),
+        [i, o] = r.useState(0);
     return r.useLayoutEffect(() => {
         if (null == t.current) return;
-        let a = new ResizeObserver(() => {
-            let a = t.current.getBoundingClientRect().width,
+        let n = new ResizeObserver(() => {
+            let n = t.current.getBoundingClientRect().width,
                 r = getComputedStyle(t.current);
-            n(a + (parseFloat(r.marginLeft) + parseFloat(r.marginRight))), e && s(a - (parseFloat(r.paddingLeft) + parseFloat(r.paddingRight) + parseFloat(r.borderLeftWidth) + parseFloat(r.borderRightWidth)))
+            a(n + (parseFloat(r.marginLeft) + parseFloat(r.marginRight))), e && o(n - (parseFloat(r.paddingLeft) + parseFloat(r.paddingRight) + parseFloat(r.borderLeftWidth) + parseFloat(r.borderRightWidth)))
         });
-        return a.observe(t.current), () => a.disconnect()
-    }, [e]), [t, a, i]
+        return n.observe(t.current), () => n.disconnect()
+    }, [e]), [t, n, i]
 }

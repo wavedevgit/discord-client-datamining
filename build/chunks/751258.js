@@ -1,6 +1,6 @@
 /** chunk id: 751258 params = (module,exports,require) **/
 n.d(t, {
-    S: () => f
+    S: () => _
 });
 var i = n(791332),
     l = n.n(i),
@@ -101,7 +101,7 @@ function p(e, t, n, i) {
     }), t.action(n, i)
 }
 
-function f(e, t) {
+function _(e, t) {
     for (let n in g) {
         let i = g[n];
         if (null != i.match) {

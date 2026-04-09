@@ -9,9 +9,9 @@ var i = n(627968),
     r = n(311907),
     o = n(397927),
     d = n(73153),
-    c = n(384904),
-    u = n(923408),
-    m = n(73825),
+    c = n(923408),
+    u = n(73825),
+    m = n(323082),
     g = n(160946),
     _ = n(178929),
     x = n(859241),
@@ -26,7 +26,7 @@ function b() {
     let e = (0, _.j)("UserSettingsPremiumGuildSubscriptions");
     s.useEffect(() => {
         d.h.wait(() => {
-            c.hP(), c.$o(), (0, u.CD)(), (0, m.zS)(null, null, f.tF5.DISCOVERY), (0, u.tO)(!0)
+            m.hP(), m.$o(), (0, c.CD)(), (0, u.zS)(null, null, f.tF5.DISCOVERY), (0, c.tO)(!0)
         })
     }, []);
     let {

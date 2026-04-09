@@ -10,8 +10,8 @@ var n = e(627968),
     l = e(539267),
     c = e(158954),
     o = e(421380),
-    u = e(384904),
-    d = e(964486),
+    u = e(964486),
+    d = e(323082),
     m = e(927578),
     p = e(615396),
     S = e(473702),
@@ -30,7 +30,7 @@ async function h(t) {
         analyticsLocation: l
     } = t;
     try {
-        r(!0), i(!1), await (0, u.nV)(a, {
+        r(!0), i(!1), await (0, d.nV)(a, {
             pauseDuration: e
         }, {
             amount: 0,
@@ -48,13 +48,13 @@ function f() {
         setStep: e,
         setPauseDuration: r,
         pauseDuration: s,
-        premiumSubscription: u
+        premiumSubscription: d
     } = (0, C.X)(), m = i.useCallback(t => {
         let {
             value: a
         } = t;
         r(a)
-    }, [r]), h = u.status === D.Dmq.PAUSED ? y.intl.string(y.t.Lp9WoG) : y.intl.string(y.t.eSR83U), f = function(t) {
+    }, [r]), h = d.status === D.Dmq.PAUSED ? y.intl.string(y.t.Lp9WoG) : y.intl.string(y.t.eSR83U), f = function(t) {
         let a = t.status === D.Dmq.PAUSED ? y.t.o3upfT : y.t.dBXZEm,
             {
                 durations: e,
@@ -77,8 +77,8 @@ function f() {
             radioBarClassName: g.CK,
             radioItemIconClassName: g.CK
         }), i
-    }(u);
-    return (0, d.Ay)(() => {
+    }(d);
+    return (0, u.Ay)(() => {
         f.length < 1 || r(f[0].value)
     }), (0, n.jsx)(c.Modal, {
         transitionState: t,

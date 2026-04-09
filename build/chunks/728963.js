@@ -9,8 +9,8 @@ var i = n(627968),
     s = n(311907),
     o = n(397927),
     c = n(155718),
-    d = n(688810),
-    u = n(47167),
+    u = n(688810),
+    d = n(47167),
     _ = n(740075),
     A = n(706727),
     m = n(332173),
@@ -48,7 +48,7 @@ let O = l.memo(function(e) {
         } = e,
         {
             analyticsLocations: O
-        } = (0, d.Ay)(),
+        } = (0, u.Ay)(),
         {
             onCopy: M,
             copyRef: D
@@ -68,7 +68,7 @@ let O = l.memo(function(e) {
                     option: a,
                     channel: r,
                     guild: s,
-                    messageId: d,
+                    messageId: u,
                     parentOptionKey: _,
                     commandOptionSpec: A,
                     sourceAnalyticsLocations: N
@@ -86,7 +86,7 @@ let O = l.memo(function(e) {
                     option: i,
                     channel: r,
                     guild: s,
-                    messageId: d,
+                    messageId: u,
                     parentOptionKey: p,
                     commandOptionSpec: n[i.name],
                     sourceAnalyticsLocations: N
@@ -106,7 +106,7 @@ let O = l.memo(function(e) {
                                 userId: t.id,
                                 guildId: r.guild_id,
                                 channelId: r.id,
-                                messageId: d,
+                                messageId: u,
                                 sourceAnalyticsLocations: N
                             }),
                             children: ["@", e.nick]
@@ -119,7 +119,7 @@ let O = l.memo(function(e) {
                         t = T.A.getChannel(e);
                     null != t && (n = (0, i.jsxs)(m.A, {
                         ...x,
-                        children: ["#", (0, u.m1)(t, f.default, g.A)]
+                        children: ["#", (0, d.m1)(t, f.default, g.A)]
                     }));
                     break
                 }

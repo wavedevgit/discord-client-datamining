@@ -5,12 +5,12 @@ n.r(t), n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(873263),
-    l = n(28025),
-    r = n(652215);
+    r = n(28025),
+    l = n(652215);
 
 function s() {
     return (0, i.jsx)(a.qh, {
-        path: r.BVt.APPLICATION_DIRECTORY,
-        component: l.x
+        path: l.BVt.APPLICATION_DIRECTORY,
+        component: r.x
     })
 }

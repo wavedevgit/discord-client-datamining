@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(665260),
-    r = n(311907),
+    r = n(665260),
+    l = n(311907),
     s = n(397927),
     o = n(59636),
     d = n(235986),
     c = n(253932),
     u = n(742077),
     A = n(954571),
-    h = n(144914),
-    _ = n(765258),
+    _ = n(144914),
+    h = n(765258),
     m = n(192771),
     g = n(652215),
     p = n(985018),
@@ -73,8 +73,8 @@ class f extends a.PureComponent {
         })
     }
     handleRestoreHiddenLibraryApplication = e => {
-        let t = l.PQ(e.getFlags(), g.hM6.HIDDEN);
-        o.V(e.id, e.branchId, t), this.trackRestoreApplication(e, l.Lt(t, g.hM6.HIDDEN))
+        let t = r.PQ(e.getFlags(), g.hM6.HIDDEN);
+        o.V(e.id, e.branchId, t), this.trackRestoreApplication(e, r.Lt(t, g.hM6.HIDDEN))
     };
     renderBody() {
         let {
@@ -84,7 +84,7 @@ class f extends a.PureComponent {
         } = this.props;
         return (0, i.jsxs)("div", {
             className: E.rf,
-            children: [(0, h.S)() ? (0, i.jsxs)(s.BJc, {
+            children: [(0, _.S)() ? (0, i.jsxs)(s.BJc, {
                 gap: 16,
                 children: [(0, i.jsx)(s.dOG, {
                     label: p.intl.string(p.t["9ID+Kh"]),
@@ -105,7 +105,7 @@ class f extends a.PureComponent {
     }
     render() {
         return (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(_.A, {
+            children: [(0, i.jsx)(h.A, {
                 currentRoute: g.BVt.APPLICATION_LIBRARY_SETTINGS
             }), (0, i.jsx)(s.ArX, {
                 className: E.XG,
@@ -119,7 +119,7 @@ function C() {
     let e = {
         installShortcutDesktop: c.uB.useSetting(),
         installShortcutStartMenu: c.Pf.useSetting(),
-        hiddenLibraryApplicationViewItems: (0, r.bG)([u.A], () => u.A.hiddenLibraryApplicationViewItems)
+        hiddenLibraryApplicationViewItems: (0, l.bG)([u.A], () => u.A.hiddenLibraryApplicationViewItems)
     };
     return (0, i.jsx)(f, {
         ...e

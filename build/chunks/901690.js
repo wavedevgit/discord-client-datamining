@@ -26,23 +26,23 @@ let p = l.memo(function(e) {
         onResize: s,
         wrapperClassName: p
     } = t, {
-        onActive: f
+        onActive: _
     } = l.useContext(d.k3), {
-        enabled: _,
+        enabled: f,
         minZoom: E,
         isDragging: x,
         setIsDragging: C,
         panOffset: S,
-        setPanOffset: T,
-        zoomLevel: N,
-        isWheeling: I,
+        setPanOffset: I,
+        zoomLevel: T,
+        isWheeling: N,
         setIsWheeling: v,
         isSlidering: y,
         setVideoAspectRatio: b,
         wrapperRef: j,
         doZoom: R,
         clampPanOffset: M
-    } = l.useContext(m.e9), [D, O] = l.useState(null), [L, P] = l.useState(null), [k, w] = l.useState(0), [U, G] = l.useState(null), [F, B] = l.useState(null), [H, V] = l.useState(!1), K = l.useRef(new r.Ep), W = l.useRef(new r.Ep), z = l.useRef(null), q = N > E, Y = l.useCallback(e => {
+    } = l.useContext(m.e9), [D, O] = l.useState(null), [L, P] = l.useState(null), [k, w] = l.useState(0), [U, G] = l.useState(null), [F, B] = l.useState(null), [H, V] = l.useState(!1), K = l.useRef(new r.Ep), W = l.useRef(new r.Ep), z = l.useRef(null), q = T > E, Y = l.useCallback(e => {
         e.width > 0 && e.height > 0 && b(e.width / e.height), s?.(e)
     }, [s, b]), J = l.useCallback(e => {
         if (null == j.current) return m.qd;
@@ -57,16 +57,16 @@ let p = l.memo(function(e) {
         let t = J(e);
         C(!0), P(t), O(t), w(Date.now()), B(t), G(S)
     }, [J, q, S, C]), Z = l.useCallback(e => {
-        if ((_ || q) && f(), !x || !q || null == F || null == U) return;
+        if ((f || q) && _(), !x || !q || null == F || null == U) return;
         e.preventDefault(), e.stopPropagation();
         let t = J(e),
             n = t.x - F.x,
             i = t.y - F.y;
-        T(M({
+        I(M({
             x: U.x + n,
             y: U.y + i
         })), O(t)
-    }, [M, F, U, _, J, x, q, f, T]), X = l.useCallback(e => {
+    }, [M, F, U, f, J, x, q, _, I]), X = l.useCallback(e => {
         !x || g(e) || (e.preventDefault(), e.stopPropagation(), C(!1), B(null), G(null))
     }, [x, C]), Q = l.useCallback(e => {
         if (q && null != L && null != D) {
@@ -82,10 +82,10 @@ let p = l.memo(function(e) {
     }, [q, L, k, D]), ee = l.useCallback(() => {
         C(!1), B(null), G(null)
     }, [C]), et = l.useCallback(e => {
-        _ && (v(!0), R(N - e.deltaY / 100, J(e), "wheel"), f(), K.current.start(100, () => {
+        f && (v(!0), R(T - e.deltaY / 100, J(e), "wheel"), _(), K.current.start(100, () => {
             v(!1)
         }))
-    }, [_, R, N, J, f, v]);
+    }, [f, R, T, J, _, v]);
     (0, o.i4)(j, l.useCallback(e => {
         let {
             width: t,
@@ -104,11 +104,11 @@ let p = l.memo(function(e) {
             width: l,
             height: s
         } = i;
-        1 > Math.abs(t - l) && 1 > Math.abs(n - s) || (V(!0), T(e => {
-            let i = l * (N - 1) / 2,
-                a = s * (N - 1) / 2,
-                r = t * (N - 1) / 2,
-                o = n * (N - 1) / 2;
+        1 > Math.abs(t - l) && 1 > Math.abs(n - s) || (V(!0), I(e => {
+            let i = l * (T - 1) / 2,
+                a = s * (T - 1) / 2,
+                r = t * (T - 1) / 2,
+                o = n * (T - 1) / 2;
             return M({
                 x: (0 !== i ? e.x / i : 0) * r,
                 y: (0 !== a ? e.y / a : 0) * o
@@ -119,24 +119,24 @@ let p = l.memo(function(e) {
         }, W.current.start(100, () => {
             V(!1)
         }))
-    }, [M, q, N, T]), [q, N]), (0, c.l0)(() => {
+    }, [M, q, T, I]), [q, T]), (0, c.l0)(() => {
         K.current.stop(), W.current.stop()
     }), l.useEffect(() => {
-        null != n && (0, u.c)(n, void 0, _ && q ? N : 1)
-    }, [_, q, n, N]);
+        null != n && (0, u.c)(n, void 0, f && q ? T : 1)
+    }, [f, q, n, T]);
     let en = l.useMemo(() => {
         let e = M(S);
         return {
-            "--custom-zoom-scale": N,
+            "--custom-zoom-scale": T,
             "--custom-pan-x": `${e.x}px`,
             "--custom-pan-y": `${e.y}px`,
-            "--custom-zoom-transition": x || H || I || y ? "none" : "transform 0.15s ease-out"
+            "--custom-zoom-transition": x || H || N || y ? "none" : "transform 0.15s ease-out"
         }
-    }, [M, x, H, I, y, S, N]);
+    }, [M, x, H, N, y, S, T]);
     return (0, i.jsx)("div", {
         ref: j,
         className: a()(A.iE, p, {
-            [A.rc]: _ && q,
+            [A.rc]: f && q,
             [A.d$]: x
         }),
         onMouseDown: $,

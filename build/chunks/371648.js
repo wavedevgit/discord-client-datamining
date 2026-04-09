@@ -16,15 +16,15 @@ var i = n(627968),
     A = n(775602),
     g = n(821720),
     p = n(429913),
-    f = n(47167),
-    _ = n(17447),
+    _ = n(47167),
+    f = n(17447),
     E = n(736339),
     x = n(354328),
     C = n(559149),
     S = n(164956),
-    T = n(302031),
-    N = n(513272),
-    I = n(253932),
+    I = n(302031),
+    T = n(513272),
+    N = n(253932),
     v = n(617617),
     y = n(961350),
     b = n(72314),
@@ -54,13 +54,13 @@ let Y = (0, r.animated)(d.fKU),
                 className: h,
                 messageGroupSpacing: g,
                 scrollerClassName: p,
-                channel: _,
+                channel: f,
                 messages: E,
                 unreadCount: x,
                 showNewMessagesBar: C,
-                messageDisplayCompact: T,
-                channelStream: N,
-                uploads: I,
+                messageDisplayCompact: I,
+                channelStream: T,
+                uploads: N,
                 hasUnreads: y,
                 editingMessageId: j,
                 fontSize: R,
@@ -71,23 +71,23 @@ let Y = (0, r.animated)(d.fKU),
                 jumpBarClassName: w,
                 typingGradient: U
             } = e,
-            [B, J] = l.useState(b.A.isAtBottom(_.id) ?? !1),
-            $ = (0, f.Ay)(_),
-            Z = (0, G.I)(T, R),
-            X = T ? Z : Math.round(.87 * Z),
+            [B, J] = l.useState(b.A.isAtBottom(f.id) ?? !1),
+            $ = (0, _.Ay)(f),
+            Z = (0, G.I)(I, R),
+            X = I ? Z : Math.round(.87 * Z),
             Q = Math.max(1, Math.round(X / 30 * 8)),
             ee = l.useMemo(() => (0, F.bW)({
-                compact: T,
+                compact: I,
                 messageGroups: X,
                 groupRange: 4,
                 attachments: Q,
                 fontSize: R,
                 groupSpacing: g
-            }), [T, X, Q, R, g]),
+            }), [I, X, Q, R, g]),
             et = (0, V.Ay)({
                 messages: E,
-                channel: _,
-                compact: T,
+                channel: f,
+                compact: I,
                 hasUnreads: y,
                 focusId: j,
                 placeholderHeight: ee.totalHeight,
@@ -102,7 +102,7 @@ let Y = (0, r.animated)(d.fKU),
                 keyboardModeEnabled: M,
                 hasMoreAfter: E.hasMoreAfter
             }),
-            ei = (0, c.bG)([S.A], () => D.A.can(W.xBc.READ_MESSAGE_HISTORY, _) ? null : S.A.getViewingRolesTimestamp(_.getGuildId())),
+            ei = (0, c.bG)([S.A], () => D.A.can(W.xBc.READ_MESSAGE_HISTORY, f) ? null : S.A.getViewingRolesTimestamp(f.getGuildId())),
             {
                 channelStreamMarkup: el,
                 newMessagesBar: es,
@@ -110,13 +110,13 @@ let Y = (0, r.animated)(d.fKU),
                 forumPostActionBar: er,
                 safetyWarningBanner: eo
             } = (0, K.A)({
-                channel: _,
+                channel: f,
                 messages: E,
                 unreadCount: x,
                 showNewMessagesBar: C,
-                messageDisplayCompact: T,
-                channelStream: N,
-                uploads: I,
+                messageDisplayCompact: I,
+                channelStream: T,
+                uploads: N,
                 loadMore: et.loadMore,
                 scrollManager: et,
                 specs: ee,
@@ -126,7 +126,7 @@ let Y = (0, r.animated)(d.fKU),
                 jumpToPresent: () => {
                     E.hasPresent() ? et.ref.current?.scrollToBottom({
                         animate: !A.A.useReducedMotion
-                    }) : u.A.jumpToPresent(_.id, Z)
+                    }) : u.A.jumpToPresent(f.id, Z)
                 },
                 jumpBarClassName: w
             });
@@ -176,7 +176,7 @@ let Y = (0, r.animated)(d.fKU),
                     role: "group",
                     children: [er, (0, i.jsxs)("ol", {
                         className: a()(q.bv, {
-                            [q.FD]: _.isModeratorReportChannel()
+                            [q.FD]: f.isModeratorReportChannel()
                         }),
                         "aria-label": z.intl.formatToPlainString(z.t.XarRiL, {
                             channelName: $ ?? ""
@@ -191,7 +191,7 @@ let Y = (0, r.animated)(d.fKU),
                             className: a()({
                                 [q.lB]: !L,
                                 [q.Ie]: 0 === E.length && !E.loadingMore,
-                                [q.Fb]: 1 === E.length && !E.loadingMore && _.isForumPost() && E.first()?.isFirstMessageInForumPost(_)
+                                [q.Fb]: 1 === E.length && !E.loadingMore && f.isForumPost() && E.first()?.isFirstMessageInForumPost(f)
                             })
                         })]
                     })]
@@ -213,7 +213,7 @@ let Y = (0, r.animated)(d.fKU),
         } = e, {
             canManageMessages: u,
             permissionVersion: m,
-            canChat: f
+            canChat: _
         } = function(e) {
             let t = e.getGuildId(),
                 n = (0, c.bG)([R.A], () => null == t || R.A.canChatInGuild(t), [t]),
@@ -236,8 +236,8 @@ let Y = (0, r.animated)(d.fKU),
             renderSpoilers: k,
             keyboardModeEnabled: G
         } = function() {
-            let e = I.hH.useSetting(),
-                t = I.gs.useSetting(),
+            let e = N.hH.useSetting(),
+                t = N.gs.useSetting(),
                 {
                     messageGroupSpacing: n,
                     fontSize: i,
@@ -280,10 +280,10 @@ let Y = (0, r.animated)(d.fKU),
                 r = P.default.getUser(y.default.getId())?.hasFlag(W.nhx.SPAMMER) ?? !1,
                 o = (0, h.cI)(e),
                 d = (0, x.A)("use_topic_dividers_in_chat"),
-                u = (0, c.yK)([N.A], () => o && d ? N.A.summaries(e.id) ?? [] : [], [o, e.id, d]),
-                m = (0, c.bG)([N.A], () => o ? N.A.selectedSummary(e.id) : null, [o, e.id]),
-                A = (0, _.f)("message_stream"),
-                f = (0, c.bG)([E.A], () => A ? E.A.getSelectedConversation(e.id) : null, [A, e.id]),
+                u = (0, c.yK)([T.A], () => o && d ? T.A.summaries(e.id) ?? [] : [], [o, e.id, d]),
+                m = (0, c.bG)([T.A], () => o ? T.A.selectedSummary(e.id) : null, [o, e.id]),
+                A = (0, f.f)("message_stream"),
+                _ = (0, c.bG)([E.A], () => A ? E.A.getSelectedConversation(e.id) : null, [A, e.id]),
                 S = (t = i, n = l.useMemo(() => {
                     let e = new Set;
                     return t.forEach(t => {
@@ -291,23 +291,23 @@ let Y = (0, r.animated)(d.fKU),
                     }), Array.from(e)
                 }, [t]), (0, p.A)(n));
             (0, g.A)(i, e);
-            let T = l.useMemo(() => (0, U.A)({
+            let I = l.useMemo(() => (0, U.A)({
                 channel: e,
                 messages: i,
                 oldestUnreadMessageId: s,
                 treatSpam: a && !r,
                 summaries: u,
                 selectedSummary: m,
-                selectedConversation: f
-            }), [i, e, s, a, u, m, f, S, r]);
+                selectedConversation: _
+            }), [i, e, s, a, u, m, _, S, r]);
             return {
                 messages: i,
-                channelStream: T,
+                channelStream: I,
                 oldestUnreadMessageId: s,
                 editingMessageId: (0, c.bG)([j.A], () => j.A.getEditingMessage(e.id)?.id)
             }
         }(t);
-        return (0, i.jsx)(T.Bs.Provider, {
+        return (0, i.jsx)(I.Bs.Provider, {
             value: (0, w.A)(k, u),
             children: (0, i.jsx)(B.t, {
                 children: (0, i.jsx)(J, {
@@ -322,7 +322,7 @@ let Y = (0, r.animated)(d.fKU),
                     uploads: (0, c.bG)([L.A], () => L.A.getFiles(t.id), [t]),
                     unreadCount: (0, c.bG)([O.Ay], () => O.Ay.getUnreadCount(t.id), [t]),
                     hasUnreads: null != V,
-                    canChat: f,
+                    canChat: _,
                     editingMessageId: K,
                     fontSize: v,
                     keyboardModeEnabled: G,

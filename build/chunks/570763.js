@@ -4,16 +4,16 @@ n.d(t, {
 }), n(323874), n(14289), n(35956);
 var i = n(627968),
     a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(503698),
+    l = n.n(r),
     s = n(873263),
     o = n(835245),
     d = n(110259),
     c = n(311907),
     u = n(554146),
     A = n(397927),
-    h = n(944791),
-    _ = n(775602),
+    _ = n(944791),
+    h = n(775602),
     m = n(793574),
     g = n(139286),
     p = n(197111),
@@ -49,8 +49,8 @@ var i = n(627968),
     q = n(409389),
     z = n(881172),
     $ = n(724339),
-    X = n(516226),
-    Q = n(854514),
+    Q = n(516226),
+    X = n(854514),
     Z = n(729168),
     J = n(321503),
     ee = n(475529),
@@ -58,31 +58,31 @@ var i = n(627968),
     en = n(652215),
     ei = n(758836),
     ea = n(613057),
-    el = n(985018),
-    er = n(207573),
+    er = n(985018),
+    el = n(207573),
     es = n(92872),
     eo = n(880440),
     ed = n(522303),
     ec = n(595411),
     eu = n(602557),
     eA = n(850493);
-let eh = a.createContext({});
+let e_ = a.createContext({});
 
-function e_(e) {
+function eh(e) {
     let {
         onLoadComplete: t,
         className: n
     } = e, {
-        enabled: l
+        enabled: r
     } = (0, R.Z)({
         location: et.rE.QUEST_HOME_DESKTOP
-    }), r = (0, c.bG)([_.A], () => _.A.useReducedMotion), s = (0, c.bG)([D.A], () => D.A.isFocused()), {
+    }), l = (0, c.bG)([h.A], () => h.A.useReducedMotion), s = (0, c.bG)([D.A], () => D.A.isFocused()), {
         ref: o,
         inViewport: d
     } = (0, K.p)(), u = a.useRef(null);
     if (a.useEffect(() => {
-            u?.current != null && (u.current.paused || s && d && !r ? u.current.paused && !r && d && s && u.current.play() : u.current.pause())
-        }, [r, d, s]), l) {
+            u?.current != null && (u.current.paused || s && d && !l ? u.current.paused && !l && d && s && u.current.play() : u.current.pause())
+        }, [l, d, s]), r) {
         let e = (0, M.TM)();
         return (0, i.jsx)(C.A, {
             ref: e => {
@@ -116,16 +116,16 @@ function em(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("img", {
             src: ed.Ay,
-            className: r()(er.BW, er.rZ),
+            className: l()(el.BW, el.rZ),
             alt: ""
         }), (0, i.jsx)("img", {
             src: eu.Ay,
-            className: r()(er.BW, er.rZ),
+            className: l()(el.BW, el.rZ),
             alt: "",
             onLoad: t
         }), (0, i.jsx)("img", {
             src: ec.Ay,
-            className: r()(er.BW, er.rZ),
+            className: l()(el.BW, el.rZ),
             alt: ""
         })]
     })
@@ -135,7 +135,7 @@ function eg(e) {
     let {
         renderBanner: t,
         children: n,
-        header: l,
+        header: r,
         withQuestsGrid: s = !0
     } = e, {
         isInDiscoverQuestHomeTab: o,
@@ -143,9 +143,9 @@ function eg(e) {
         onSelectTab: c,
         scrollerRef: u,
         selectedTab: A
-    } = a.useContext(eh), {
-        questHomeHero: h,
-        isLoading: _
+    } = a.useContext(e_), {
+        questHomeHero: _,
+        isLoading: h
     } = (0, H.vG)(), {
         enabled: m
     } = (0, R.Z)({
@@ -161,23 +161,23 @@ function eg(e) {
     }, []);
     return (0, i.jsxs)(J.X.Provider, {
         value: u,
-        children: [l, (0, i.jsxs)(y.A, {
+        children: [r, (0, i.jsxs)(y.A, {
             onScroll: d,
             ref: u,
             children: [function() {
                 if (!o && g) {
                     if (A !== H.NC.ALL) return null;
-                    if (_) return (0, i.jsx)(Q.Hk, {});
-                    if (null != h) return (0, i.jsx)(Q.Ay, {
-                        config: h,
+                    if (h) return (0, i.jsx)(X.Hk, {});
+                    if (null != _) return (0, i.jsx)(X.Ay, {
+                        config: _,
                         onQuestCtaClick: E
                     })
                 }
                 return t()
             }(), (0, i.jsx)(v.A, {
                 children: (0, i.jsxs)("div", {
-                    className: r()(er.Qs, {
-                        [er.HR]: g && !m && A !== H.NC.ALL
+                    className: l()(el.Qs, {
+                        [el.HR]: g && !m && A !== H.NC.ALL
                     }),
                     children: [n, s ? A === H.NC.CLAIMED ? (0, i.jsx)(z.A, {
                         onSelectTab: c
@@ -192,18 +192,18 @@ function eg(e) {
 let ep = function(e) {
     let {
         topLevelRoute: t
-    } = e, n = (0, s.zy)(), l = (0, s.W6)(), _ = a.useMemo(() => (0, O.B)(n.pathname, en.BVt.QUEST_HOME_DEPRECATED)?.isExact === !0, [n.pathname]), C = (0, c.bG)([E.A], () => E.A.getState("quests")), {
+    } = e, n = (0, s.zy)(), r = (0, s.W6)(), h = a.useMemo(() => (0, O.B)(n.pathname, en.BVt.QUEST_HOME_DEPRECATED)?.isExact === !0, [n.pathname]), C = (0, c.bG)([E.A], () => E.A.getState("quests")), {
         selectedTab: v,
         onSelectTab: y,
         tabs: D
     } = (0, ee.J)({
-        withClaimedQuestsTab: !_
+        withClaimedQuestsTab: !h
     });
     a.useLayoutEffect(() => {
-        _ && v === H.NC.CLAIMED && k.A.setState({
+        h && v === H.NC.CLAIMED && k.A.setState({
             tab: H.NC.ALL
         })
-    }, [_, v]);
+    }, [h, v]);
     let {
         onScroll: M
     } = (0, S.G)(), B = V.A.getState().getUtmCurrentContext(), Y = (0, $.W)(e => e.registerAssetLoad), K = a.useRef(B);
@@ -233,10 +233,10 @@ let ep = function(e) {
         q ? window.open(en.X7G.PAID_TERMS_ORBS) : window.open(w.A.getArticleURL(en.MVz.QUESTS_LEARN_MORE))
     }, [q]);
     (0, f.HU)({
-        location: el.intl.string(el.t.JALI2K)
+        location: er.intl.string(er.t.JALI2K)
     });
-    let J = q ? el.intl.format(el.t.BCBIlp, {}) : el.intl.format(el.t.lmMBfy, {}),
-        es = q ? el.intl.format(el.t.U9FY0J, {}) : el.intl.string(el.t.oWCrBq),
+    let J = q ? er.intl.format(er.t.BCBIlp, {}) : er.intl.format(er.t.lmMBfy, {}),
+        es = q ? er.intl.format(er.t.U9FY0J, {}) : er.intl.string(er.t.oWCrBq),
         eo = a.useRef(null),
         ed = a.useCallback(() => {
             (0, L.Y)({
@@ -250,7 +250,7 @@ let ep = function(e) {
             })
         }, []);
     a.useEffect(() => {
-        (0, h.I)(en.BVt.QUEST_HOME)
+        (0, _.I)(en.BVt.QUEST_HOME)
     }, []), a.useEffect(() => {
         N.g.trigger()
     }, []), a.useEffect(() => {
@@ -269,21 +269,21 @@ let ep = function(e) {
             return
         }
         let a = performance.getEntriesByType("navigation")[0];
-        if ("POP" === l.action && a?.type === "navigate" && t && i !== H.NC.PREVIEW_TOOL) {
+        if ("POP" === r.action && a?.type === "navigate" && t && i !== H.NC.PREVIEW_TOOL) {
             let t = (0, U.uJ)(n.hash) ? null : n.hash.substring(1),
                 a = e.get(H.L1.SORT),
-                l = e.get(H.L1.FILTER);
+                r = e.get(H.L1.FILTER);
             p.A.openNativeAppModal("quests", en.e$_.DEEP_LINK, {
                 type: ea.XK.QUEST_HOME,
                 params: {
                     questId: (0, U.uJ)(t) ? void 0 : t,
                     sort: a,
-                    filter: l,
+                    filter: r,
                     tab: i
                 }
             })
         }
-    }, [n.search, C, l.action, n.hash, t]), a.useEffect(() => {
+    }, [n.search, C, r.action, n.hash, t]), a.useEffect(() => {
         t && (0, T.Dr)(u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING)
     }, [t]);
     let ec = a.useCallback(() => {
@@ -297,39 +297,39 @@ let ep = function(e) {
             })
         }, []),
         eu = a.useCallback(e => {
-            l.replace({
-                ...l.location,
+            r.replace({
+                ...r.location,
                 hash: void 0
             }), eo.current?.scrollToTop({
                 animate: !1
             }), y(e)
-        }, [l, y]);
-    return (0, i.jsx)(X.M.Provider, {
+        }, [r, y]);
+    return (0, i.jsx)(Q.M.Provider, {
         value: {
             onAssetLoadComplete: Y
         },
-        children: (0, i.jsx)(eh.Provider, {
+        children: (0, i.jsx)(e_.Provider, {
             value: a.useMemo(() => ({
-                isInDiscoverQuestHomeTab: _,
+                isInDiscoverQuestHomeTab: h,
                 onScroll: M,
                 onSelectTab: eu,
                 scrollerRef: eo,
                 selectedTab: v
-            }), [_, M, eu, eo, v]),
+            }), [h, M, eu, eo, v]),
             children: (0, i.jsx)("div", {
-                className: r()(er.kL, {
-                    [er.KY]: !t
+                className: l()(el.kL, {
+                    [el.KY]: !t
                 }),
-                children: _ ? (0, i.jsx)(eg, {
+                children: h ? (0, i.jsx)(eg, {
                     renderBanner: () => (0, i.jsx)(x.A, {
-                        title: el.intl.string(el.t.z8YP2A),
+                        title: er.intl.string(er.t.z8YP2A),
                         titleColor: "always-white",
                         button: (0, i.jsx)(A.Button, {
                             variant: "overlay-primary",
-                            text: el.intl.string(el.t.GURBQl),
+                            text: er.intl.string(er.t.GURBQl),
                             onClick: ec
                         }),
-                        className: er.Gj,
+                        className: el.Gj,
                         children: (0, i.jsx)(em, {
                             onLoadComplete: Y
                         })
@@ -342,16 +342,16 @@ let ep = function(e) {
                     }),
                     withQuestsGrid: !1,
                     children: (0, i.jsxs)("div", {
-                        className: er.kj,
+                        className: el.kj,
                         children: [(0, i.jsx)(A.Heading, {
                             variant: "heading-xl/semibold",
-                            children: el.intl.string(el.t.z8YP2A)
+                            children: er.intl.string(er.t.z8YP2A)
                         }), (0, i.jsx)(A.Text, {
                             color: "text-subtle",
                             variant: "text-md/normal",
-                            children: el.intl.string(el.t.HdKh65)
+                            children: er.intl.string(er.t.HdKh65)
                         }), (0, i.jsx)(A.QWc, {
-                            text: el.intl.string(el.t["1CdL8d"]),
+                            text: er.intl.string(er.t["1CdL8d"]),
                             onClick: ec,
                             textVariant: "text-md/normal",
                             variant: "primary"
@@ -364,7 +364,7 @@ let ep = function(e) {
                         buttons: q ? (0, i.jsxs)(A.ButtonGroup, {
                             children: [(0, i.jsx)(A.Button, {
                                 variant: "overlay-primary",
-                                text: el.intl.string(el.t["1Wm127"]),
+                                text: er.intl.string(er.t["1Wm127"]),
                                 onClick: () => (0, I.Cz)({
                                     tab: ei.G2.ORBS,
                                     analyticsLocations: [],
@@ -372,29 +372,29 @@ let ep = function(e) {
                                 })
                             }), (0, i.jsx)(A.Button, {
                                 variant: "overlay-secondary",
-                                text: el.intl.string(el.t["7kTAgJ"]),
+                                text: er.intl.string(er.t["7kTAgJ"]),
                                 onClick: z
                             })]
                         }) : (0, i.jsx)(A.Button, {
                             variant: "overlay-primary",
-                            text: el.intl.string(el.t.hvVgAZ),
+                            text: er.intl.string(er.t.hvVgAZ),
                             onClick: z,
                             icon: A.I9m,
                             iconPosition: "end"
                         }),
                         background: (0, i.jsxs)("div", {
-                            className: r()(er.Tv, {
-                                [er.lJ]: q
+                            className: l()(el.Tv, {
+                                [el.lJ]: q
                             }),
-                            children: [(0, i.jsx)(Q.Ae, {}), (0, i.jsx)("div", {
-                                className: r()(er.nz, {
-                                    [er.ZZ]: q
+                            children: [(0, i.jsx)(X.Ae, {}), (0, i.jsx)("div", {
+                                className: l()(el.nz, {
+                                    [el.ZZ]: q
                                 })
-                            }), (0, i.jsx)(e_, {
+                            }), (0, i.jsx)(eh, {
                                 onLoadComplete: Y,
-                                className: r()(er.Fe, {
-                                    [er.H4]: q,
-                                    [er.Q8]: !q
+                                className: l()(el.Fe, {
+                                    [el.H4]: q,
+                                    [el.Q8]: !q
                                 })
                             })]
                         })
@@ -406,7 +406,7 @@ let ep = function(e) {
                         endContent: q ? (0, i.jsx)(P.SS, {
                             analyticsPage: en.liQ.GLOBAL_DISCOVERY_QUESTS,
                             cardAlignment: P.cP.END,
-                            ctaText: el.intl.string(el.t["J+vlIR"]),
+                            ctaText: er.intl.string(er.t["J+vlIR"]),
                             ctaOnClick: ed
                         }) : null,
                         icon: A.r2v

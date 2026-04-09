@@ -5,22 +5,22 @@ n.d(t, {
 var l = n(627968);
 n(64700);
 var a = n(158954),
-    i = n(397927),
-    r = n(881355);
+    r = n(397927),
+    i = n(881355);
 let s = e => {
         let {
             onChange: t,
             label: n,
-            subtitle: i,
+            subtitle: r,
             selected: s
         } = e;
         return (0, l.jsx)("div", {
-            className: r.yc,
+            className: i.yc,
             children: (0, l.jsx)(a.Sc0, {
                 checked: s,
                 onChange: t,
                 label: n,
-                description: i
+                description: r
             })
         })
     },
@@ -36,21 +36,21 @@ let s = e => {
             data: o
         } = t;
         return (0, l.jsxs)("div", {
-            children: [null != n && (0, l.jsxs)(i.Text, {
+            children: [null != n && (0, l.jsxs)(r.Text, {
                 variant: "text-md/medium",
                 color: "text-strong",
-                className: r.DD,
+                className: i.DD,
                 children: [n, t.should_submit_data && (0, l.jsx)("span", {
-                    className: r.mw,
+                    className: i.mw,
                     children: "*"
                 })]
             }), o.map((e, t) => {
-                let [n, i, r] = e;
+                let [n, r, i] = e;
                 return (0, l.jsx)(s, {
-                    onChange: () => d(n, i),
+                    onChange: () => d(n, r),
                     selected: n in a,
-                    label: i,
-                    subtitle: r
+                    label: r,
+                    subtitle: i
                 }, `${t}+button`)
             })]
         })

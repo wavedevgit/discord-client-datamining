@@ -15,9 +15,9 @@ function c(e) {
         message: t,
         compact: n,
         usernameHook: c
-    } = e, d = (0, a.Ay)(t), u = c(d), _ = s.intl.format(s.t["dKW5C+"], {
-        username: d.nick,
-        usernameHook: u
+    } = e, u = (0, a.Ay)(t), d = c(u), _ = s.intl.format(s.t["dKW5C+"], {
+        username: u.nick,
+        usernameHook: d
     });
     return (0, i.jsx)(r.A, {
         className: o.d,

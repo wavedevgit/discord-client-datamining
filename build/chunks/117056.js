@@ -4,8 +4,8 @@ n.d(t, {
 });
 var l = n(627968),
     a = n(64700),
-    i = n(314116),
-    r = n(58149),
+    r = n(314116),
+    i = n(58149),
     s = n(997509),
     d = n(632738),
     o = n(71393),
@@ -15,12 +15,12 @@ let _ = e => {
     let {
         guildId: t,
         reportId: n
-    } = e, [_, m] = a.useState(!1), p = o.A.getGuild(t), h = null != p;
+    } = e, [_, m] = a.useState(!1), p = o.A.getGuild(t), g = null != p;
     a.useEffect(() => {
-        m(!h)
-    }, [h]);
-    let x = a.useCallback(() => {
-        m(!0), r.Ay.trackWithMetadata(c.HAw.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
+        m(!g)
+    }, [g]);
+    let h = a.useCallback(() => {
+        m(!0), i.Ay.trackWithMetadata(c.HAw.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
             guild_id: t,
             report_id: n
         }), s.A.leaveGuild(t)
@@ -34,7 +34,7 @@ let _ = e => {
         buttonDisabled: _,
         buttonVariant: "critical-primary",
         onButtonPress: () => {
-            (0, i.A)({
+            (0, r.A)({
                 title: u.intl.formatToPlainString(u.t["1GX6P/"], {
                     name: p.name
                 }),
@@ -42,7 +42,7 @@ let _ = e => {
                     name: p.name
                 }),
                 confirmText: u.intl.string(u.t.J2TBi3),
-                onConfirm: x
+                onConfirm: h
             })
         }
     })

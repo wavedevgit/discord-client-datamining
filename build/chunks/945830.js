@@ -1,6 +1,6 @@
 /** chunk id: 945830 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => f
 }), n(134528), n(947204);
 var i = n(627968),
     l = n(64700),
@@ -16,19 +16,19 @@ var i = n(627968),
     A = n(966833),
     g = n(222823),
     p = n(985018);
-let f = [];
+let _ = [];
 
-function _(e) {
+function f(e) {
     let {
         channel: t,
-        onJump: _
+        onJump: f
     } = e, {
         items: E,
         state: x
     } = (0, s.cf)([A.A], () => {
         let e = A.A.getPins(t.id);
         return {
-            items: e?.items ?? f,
+            items: e?.items ?? _,
             state: e?.state ?? A.e.LOADING
         }
     }), C = l.useMemo(() => E.map(e => e.message), [E]), S = (0, s.bG)([g.Ay], () => g.Ay.hasUnreadPins(t.id));
@@ -39,20 +39,20 @@ function _(e) {
             reset: !0
         })
     });
-    let T = l.useCallback(() => {
+    let I = l.useCallback(() => {
             o.A.fetchPins(t.id)
         }, [t.id]),
-        N = l.useCallback(() => {
+        T = l.useCallback(() => {
             o.A.fetchPins(t.id, {
                 before: E.at(-1)?.pinnedAt
             })
         }, [t.id, E]),
-        I = (0, s.bG)([m.A], () => (0, a.qB)(m.A.theme));
+        N = (0, s.bG)([m.A], () => (0, a.qB)(m.A.theme));
     return (0, i.jsx)(r.lGe, {
         "aria-label": p.intl.string(p.t["mp1N/2"]),
         children: (0, i.jsx)(h.Ay, {
             channel: t,
-            onFetch: T,
+            onFetch: I,
             messages: C,
             loading: x === A.e.LOADING,
             hasMore: x === A.e.LOADED_HAS_MORE,
@@ -60,7 +60,7 @@ function _(e) {
             renderEmptyState: function() {
                 if (E.length > 0) return;
                 let e = p.intl.string(t.isPrivate() ? p.t.rhqcbJ : p.t.fmyaWJ),
-                    l = I ? n(395236) : n(90367);
+                    l = N ? n(395236) : n(90367);
                 return (0, i.jsx)(h.u9, {
                     msg: e,
                     image: l
@@ -73,8 +73,8 @@ function _(e) {
             onCloseMessage: function(e, n) {
                 null != e && (n.shiftKey ? o.A.unpinMessage(t, e.id) : u.A.confirmUnpin(t, e))
             },
-            onJump: _,
-            loadMore: N,
+            onJump: f,
+            loadMore: T,
             getProTip: function() {
                 return t.isPrivate() ? p.intl.string(p.t["3dLGAs"]) : p.intl.string(p.t.KTbRcg)
             },

@@ -1,30 +1,30 @@
 /** chunk id: 836953 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => h
 }), n(321073);
 var i = n(627968),
     a = n(64700),
-    l = n(311907),
-    r = n(587895),
+    r = n(311907),
+    l = n(587895),
     s = n(926466),
     o = n(997509),
     d = n(143582),
     c = n(915043),
     u = n(652215),
     A = n(985018),
-    h = n(298525);
+    _ = n(298525);
 
-function _(e) {
+function h(e) {
     let t, {
             guild: n
         } = e,
-        _ = (0, c.$s)(n),
+        h = (0, c.$s)(n),
         m = () => (0, d.Hc)(n.id),
-        g = a.useMemo(() => new Set(_.map(e => e.applicationId)), [_]),
-        p = (0, l.yK)([r.A], () => {
+        g = a.useMemo(() => new Set(h.map(e => e.applicationId)), [h]),
+        p = (0, r.yK)([l.A], () => {
             let e = [];
             for (let t of g) {
-                let n = r.A.getApplication(t);
+                let n = l.A.getApplication(t);
                 null != n && e.push(n)
             }
             return e
@@ -43,7 +43,7 @@ function _(e) {
         onDismissed: m,
         message: t,
         type: u.n5X.APPLICATION_SUBSCRIPTION_EXPIRATION,
-        image: h,
+        image: _,
         onClick: () => {
             m(), o.A.open(n.id, u.BEX.INTEGRATIONS)
         },

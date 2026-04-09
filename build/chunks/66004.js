@@ -20,7 +20,7 @@ function m(t) {
         guildId: n,
         userId: m,
         containerDimensions: p
-    } = t, g = (0, s.bG)([o.A], () => o.A.useReducedMotion), [f, T] = l.useState([]), E = f.length < 50;
+    } = t, g = (0, s.bG)([o.A], () => o.A.useReducedMotion), [f, E] = l.useState([]), T = f.length < 50;
     l.useEffect(() => {
         function t(t) {
             let {
@@ -32,7 +32,7 @@ function m(t) {
             } = t;
             if (null != m && m !== l) return;
             let c = null != s && null != a && null != o;
-            if (i === e && !g && E && c) {
+            if (i === e && !g && T && c) {
                 let t = (0, d.Br)(s),
                     i = null != s.id && !s.animated,
                     c = {
@@ -43,7 +43,7 @@ function m(t) {
                         url: t,
                         userId: l
                     };
-                T(t => [...t, c]), u.Ay.trackWithMetadata(h.HAw.VOICE_CHANNEL_EFFECT_VIEWED, {
+                E(t => [...t, c]), u.Ay.trackWithMetadata(h.HAw.VOICE_CHANNEL_EFFECT_VIEWED, {
                     channel_id: e,
                     guild_id: n
                 })
@@ -52,9 +52,9 @@ function m(t) {
         return a.h.subscribe("VOICE_CHANNEL_EFFECT_SEND", t), () => {
             a.h.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", t)
         }
-    }, [e, n, m, g, E]);
+    }, [e, n, m, g, T]);
     let C = l.useCallback(t => {
-        T(e => {
+        E(e => {
             let n = [...e],
                 i = n.findIndex(e => e.id === t);
             return n.splice(i, 1), n

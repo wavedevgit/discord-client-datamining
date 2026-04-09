@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(104171),
     _ = n(63995),
     m = n(69407),
-    p = n(616356),
-    g = n(734057),
+    g = n(616356),
+    p = n(734057),
     f = n(287809),
     x = n(607567),
     E = n(403362),
@@ -41,7 +41,7 @@ function b(e, t) {
 }
 
 function y() {
-    let e = (0, d.yK)([C.A, g.A], () => I.default.keys(C.A.getFavoriteChannels()).map(e => g.A.getChannel(e)).filter(E.Vq)),
+    let e = (0, d.yK)([C.A, p.A], () => I.default.keys(C.A.getFavoriteChannels()).map(e => p.A.getChannel(e)).filter(E.Vq)),
         t = e.map(e => e.id),
         n = e.filter(e => e.type === N.rbe.GUILD_VOICE),
         l = e.filter(e => e.type === N.rbe.GUILD_STAGE_VOICE).map(e => e.id),
@@ -62,7 +62,7 @@ function y() {
             for (let t of l) e += _.A.getParticipantCount(t, m.ip.AUDIENCE);
             return e
         }),
-        c = (0, d.yK)([p.A], () => p.A.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
+        c = (0, d.yK)([g.A], () => g.A.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
         T = (0, d.yK)([h.Ay], () => {
             let e = h.Ay.getEmbeddedActivitiesByChannel(),
                 n = [];

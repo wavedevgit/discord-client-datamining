@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(311907),
-    r = n(314116),
+    r = n(311907),
+    l = n(314116),
     s = n(397927),
     o = n(466472),
     d = n(29160),
     c = n(235986),
     u = n(212408),
     A = n(775228),
-    h = n(255438),
-    _ = n(723702),
+    _ = n(255438),
+    h = n(723702),
     m = n(837921),
     g = n(985018),
     p = n(345085),
@@ -45,7 +45,7 @@ class I extends a.PureComponent {
         })
     };
     handleRemoveLocation = () => {
-        (0, r.A)({
+        (0, l.A)({
             title: g.intl.string(g.t.iBUzS5),
             subtitle: g.intl.string(g.t["1XqeW2"]),
             confirmText: g.intl.string(g.t.iBUzS5),
@@ -83,13 +83,13 @@ class I extends a.PureComponent {
         let e, t, {
             path: n,
             label: a,
-            editingPath: l,
-            isDefault: r,
+            editingPath: r,
+            isDefault: l,
             metadata: o
         } = this.props;
-        return null != o && (e = null != o.availableKB ? (0, h.Xq)(o.availableKB, {
+        return null != o && (e = null != o.availableKB ? (0, _.Xq)(o.availableKB, {
             useKibibytes: !0
-        }) : null, t = null != o.totalKB ? (0, h.Xq)(o.totalKB, {
+        }) : null, t = null != o.totalKB ? (0, _.Xq)(o.totalKB, {
             useKibibytes: !0
         }) : null), (0, i.jsxs)(c.A, {
             className: p.ce,
@@ -103,7 +103,7 @@ class I extends a.PureComponent {
                         className: p.nM,
                         variant: "heading-md/semibold",
                         children: null != a ? a : A.A.getLabelFromPath(n)
-                    }), r ? (0, i.jsx)("span", {
+                    }), l ? (0, i.jsx)("span", {
                         className: p.Zn,
                         children: g.intl.string(g.t.bBvAEH)
                     }) : null]
@@ -123,7 +123,7 @@ class I extends a.PureComponent {
                 variant: "secondary",
                 size: "sm",
                 text: g.intl.string(g.t.bt75uw),
-                disabled: null != l,
+                disabled: null != r,
                 onClick: this.handleStartEditing
             })]
         })
@@ -232,25 +232,25 @@ class f extends a.PureComponent {
                 label: g.intl.string(g.t.aLszkC),
                 children: [e.map(e => {
                     let {
-                        path: l,
-                        label: r
+                        path: r,
+                        label: l
                     } = e;
                     return (0, i.jsx)(I, {
-                        path: l,
-                        label: r,
-                        metadata: t[l],
-                        isDefault: n === l,
+                        path: r,
+                        label: l,
+                        metadata: t[r],
+                        isDefault: n === r,
                         editingPath: a,
-                        hasGamesInstalledInPath: A.A.hasGamesInstalledInPath(l),
+                        hasGamesInstalledInPath: A.A.hasGamesInstalledInPath(r),
                         onToggleEditing: this.handleToggleEditing
-                    }, l)
+                    }, r)
                 }), (0, i.jsx)("div", {
                     className: p.sW,
                     children: (0, i.jsx)(s.Button, {
                         variant: "primary",
                         size: "sm",
                         text: g.intl.string(g.t.pnZ2uk),
-                        disabled: !_.isPlatformEmbedded,
+                        disabled: !h.isPlatformEmbedded,
                         onClick: this.handleAddInstallationLocation
                     })
                 })]
@@ -258,7 +258,7 @@ class f extends a.PureComponent {
         })
     }
 }
-let C = l.Ay.connectStores([A.A], () => ({
+let C = r.Ay.connectStores([A.A], () => ({
     installationPaths: A.A.installationPaths,
     installationPathsMetadata: A.A.installationPathsMetadata,
     defaultInstallationPath: A.A.defaultInstallationPath

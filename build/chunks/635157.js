@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(598104),
     g = n(697122),
     p = n(73028),
-    f = n(95550),
-    _ = n(854627),
+    _ = n(95550),
+    f = n(854627),
     E = n(314307),
     x = n(985018),
     C = n(970772);
@@ -26,16 +26,16 @@ function S(e) {
     let t, {
             channel: n,
             children: S,
-            user: T
+            user: I
         } = e,
-        N = (0, s.bG)([o.A], () => o.A.useReducedMotion),
-        I = (0, u.Ay)(n) ?? "",
+        T = (0, s.bG)([o.A], () => o.A.useReducedMotion),
+        N = (0, u.Ay)(n) ?? "",
         {
             avatarDecorationSrc: v,
             eventHandlers: y,
             isAnimating: b
-        } = (0, _.A)({
-            userId: T?.id,
+        } = (0, f.A)({
+            userId: I?.id,
             size: r._3J.SIZE_80,
             animateOnHover: !0
         }),
@@ -46,12 +46,12 @@ function S(e) {
         D = l.useCallback(() => {
             y.onMouseLeave(), R(!1)
         }, [y]),
-        O = !n.isMultiUserDM() && T?.displayNameStyles != null;
+        O = !n.isMultiUserDM() && I?.displayNameStyles != null;
     return (0, i.jsxs)(E.Ay, {
         channelId: n.id,
         onMouseEnter: M,
         onMouseLeave: D,
-        children: [(t = !N && b, n.isMultiUserDM() ? (0, i.jsx)(g.Q, {
+        children: [(t = !T && b, n.isMultiUserDM() ? (0, i.jsx)(g.Q, {
             channel: n,
             editable: !0,
             location: c.A.EMPTY_GROUP_DM,
@@ -59,25 +59,25 @@ function S(e) {
                 channel: n,
                 size: r._3J.SIZE_80,
                 animated: t,
-                "aria-label": I
+                "aria-label": N
             })
         }) : (0, i.jsx)(r.euF, {
-            "aria-label": I,
+            "aria-label": N,
             size: r._3J.SIZE_80,
             src: (0, d.Y)(n, 80, t),
             avatarDecoration: v
         })), (0, i.jsx)(E.cr, {
             children: O ? (0, i.jsx)(m.A, {
-                userName: I,
-                displayNameStyles: T?.displayNameStyles,
+                userName: N,
+                displayNameStyles: I?.displayNameStyles,
                 effectDisplayType: j ? h.G.ANIMATED : h.G.STATIC,
                 loop: !0
-            }) : I
+            }) : N
         }), (0, i.jsx)(E.j1, {
             children: S
         }), n.isMultiUserDM() && (0, i.jsxs)(a.e2v, {
             className: C.U,
-            children: [(0, i.jsx)(f.NE, {
+            children: [(0, i.jsx)(_.NE, {
                 channel: n,
                 text: x.intl.string(x.t["6Qgrev"]),
                 icon: r.DpX

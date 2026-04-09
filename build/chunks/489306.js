@@ -16,8 +16,8 @@ var i = n(64700),
     A = n(522055),
     _ = n(764322),
     m = n(969983),
-    p = n(942975),
-    g = n(904560),
+    g = n(942975),
+    p = n(904560),
     f = n(645619),
     x = n(379229),
     E = n(904629),
@@ -32,10 +32,10 @@ var i = n(64700),
     j = n(49999);
 
 function R(e) {
-    let t = (0, s.bG)([g.A], () => g.A.getNotificationStateForGuild(e), [e]),
+    let t = (0, s.bG)([p.A], () => p.A.getNotificationStateForGuild(e), [e]),
         n = (0, s.bG)([f.A], () => f.A.getStateForGuild(e)),
         {
-            indicator: p,
+            indicator: g,
             showUnread: j
         } = function(e, t, n) {
             let l = (0, b.A)(e).available,
@@ -71,8 +71,8 @@ function R(e) {
             }, [l, n?.lastBoostCount, n?.lastSeenWarningNotification, t, c, u?.entitlements])
         }(e, n ?? void 0, t),
         R = function(e, t) {
-            let n, r, [p, g] = (0, I.ty)(null != t),
-                f = p === a.M.GUILD_POWERUP_PERKS_COACHMARK,
+            let n, r, [g, p] = (0, I.ty)(null != t),
+                f = g === a.M.GUILD_POWERUP_PERKS_COACHMARK,
                 {
                     available: E
                 } = (0, b.A)(e),
@@ -163,7 +163,7 @@ function R(e) {
                 if (null != t) {
                     if (f) return {
                         type: x.o.PERKS_AVAILABLE,
-                        markAsDismissed: g
+                        markAsDismissed: p
                     };
                     if (M) {
                         if (R === y.q.GAME_SERVER_HOSTING) return {
@@ -204,10 +204,10 @@ function R(e) {
                         }
                     }
                 }
-            }, [t, f, g, J, Q, Z, M, L, R, P, D, G, V, k, B, Y, K, $, X])
+            }, [t, f, p, J, Q, Z, M, L, R, P, D, G, V, k, B, Y, K, $, X])
         }(e, n ?? void 0);
-    if (null !== n && (null != p || j || null != R)) return {
-        indicator: p,
+    if (null !== n && (null != g || j || null != R)) return {
+        indicator: g,
         showUnread: j,
         popout: R
     }
@@ -217,7 +217,7 @@ function O(e) {
     let t = (0, s.bG)([f.A], () => f.A.getStateForGuild(e)),
         n = R(e);
     i.useEffect(() => {
-        (0, p.Zm)(e)
+        (0, g.Zm)(e)
     }, [e]), i.useEffect(() => {
         let e = new Set([x.o.BOOST_TO_UNLOCK, x.o.EXPIRING_PERK]);
         n?.popout?.type != null && e.has(n.popout.type) || n?.popout?.markAsDismissed(j.i.AUTO_DISMISS)

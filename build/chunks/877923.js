@@ -9,8 +9,8 @@ var i = n(627968),
     s = n(397927),
     o = n(775602),
     c = n(21161),
-    d = n(67414),
-    u = n(147036),
+    u = n(67414),
+    d = n(147036),
     _ = n(888675),
     A = n(652215),
     m = n(313917);
@@ -66,11 +66,11 @@ function E(e) {
         iconNode: (0, i.jsx)(s.XFE, {
             colorClass: m.Kk
         }),
-        children: (0, i.jsx)(d.A, {
+        children: (0, i.jsx)(u.A, {
             innerRef: I,
             giftIntentType: t,
             recipientUser: n,
-            analyticsPage: (0, u.DJ)(E),
+            analyticsPage: (0, d.DJ)(E),
             analyticsSection: A.JJy.CHANNEL
         })
     })

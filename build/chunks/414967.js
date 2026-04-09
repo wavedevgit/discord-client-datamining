@@ -5,16 +5,16 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(877624),
-    l = n(397927),
-    r = n(73153),
+    r = n(397927),
+    l = n(73153),
     s = n(272355),
     o = n(835095),
     d = n(287809),
     c = n(816733),
     u = n(536194),
     A = n(40185),
-    h = n(881489),
-    _ = n(412260),
+    _ = n(881489),
+    h = n(412260),
     m = n(852218),
     g = n(231265),
     p = n(979080),
@@ -22,10 +22,10 @@ var a = n(877624),
 let I = "PremiumServerDriveAnnouncementModal";
 class f extends s.A {
     _initialize() {
-        r.h.subscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), r.h.subscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), r.h.subscribe("ACTIVE_PROMOTIONS_FETCH_SUCCESS", this.handleActivePromotionsFetchSuccess), r.h.subscribe("BILLING_USER_OFFER_FETCH_SUCCESS", this.handleUserOfferFetchSuccess), r.h.subscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate)
+        l.h.subscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), l.h.subscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), l.h.subscribe("ACTIVE_PROMOTIONS_FETCH_SUCCESS", this.handleActivePromotionsFetchSuccess), l.h.subscribe("BILLING_USER_OFFER_FETCH_SUCCESS", this.handleUserOfferFetchSuccess), l.h.subscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate)
     }
     _terminate() {
-        r.h.unsubscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), r.h.unsubscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), r.h.unsubscribe("ACTIVE_PROMOTIONS_FETCH_SUCCESS", this.handleActivePromotionsFetchSuccess), r.h.unsubscribe("BILLING_USER_OFFER_FETCH_SUCCESS", this.handleUserOfferFetchSuccess), r.h.unsubscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate)
+        l.h.unsubscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), l.h.unsubscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), l.h.unsubscribe("ACTIVE_PROMOTIONS_FETCH_SUCCESS", this.handleActivePromotionsFetchSuccess), l.h.unsubscribe("BILLING_USER_OFFER_FETCH_SUCCESS", this.handleUserOfferFetchSuccess), l.h.unsubscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate)
     }
     maybeShowAnnouncementModalFromPromotions = e => {
         for (let t of e)
@@ -36,7 +36,7 @@ class f extends s.A {
                 }
                 for (let e of t.marketingComponents)
                     if (e.component_type === a.C.ANNOUNCEMENT_MODAL) return void this.maybeOpenServerDriveAnnouncementModal(e.id, e.promotion_id, e.properties, !1)
-            }(0, h.al)(), (0, h.QM)()
+            }(0, _.al)(), (0, _.QM)()
     };
     handleActivePromotionsFetchSuccess = e => {
         let {
@@ -48,22 +48,22 @@ class f extends s.A {
         let {
             userTrialOffer: t
         } = e;
-        null != t && this.maybeShowAnnouncementModalFromPromotions(Object.values(_.A.promotionsByType[m.pt.MARKETING_MOMENT]))
+        null != t && this.maybeShowAnnouncementModalFromPromotions(Object.values(h.A.promotionsByType[m.pt.MARKETING_MOMENT]))
     };
     handleEntitlementCreate = e => {
         let {
             entitlement: t
         } = e;
-        u.P.isDisallowPopupsSet() || t.source_type !== E.GD.REVERSE_TRIAL || (0, h.al)()
+        u.P.isDisallowPopupsSet() || t.source_type !== E.GD.REVERSE_TRIAL || (0, _.al)()
     };
-    maybeOpenServerDriveAnnouncementModal = async (e, t, a, r) => {
-        if ((0, l.kBI)(I)) return !1;
+    maybeOpenServerDriveAnnouncementModal = async (e, t, a, l) => {
+        if ((0, r.kBI)(I)) return !1;
         let s = (0, p.H)({
             promotionId: t,
             content: a,
-            isPreview: r
+            isPreview: l
         });
-        if (null != s) return (!1 !== r || s?.contentIdentifier !== "summer_bogo_content" || !!await (0, g.C)()) && ((0, l.mMO)(async () => {
+        if (null != s) return (!1 !== l || s?.contentIdentifier !== "summer_bogo_content" || !!await (0, g.C)()) && ((0, r.mMO)(async () => {
             let {
                 default: a
             } = await Promise.resolve().then(n.bind(n, 979080));

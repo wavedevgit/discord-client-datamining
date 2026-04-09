@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(562465),
     a = n(319400),
-    l = n(73153),
-    r = n(449054),
+    r = n(73153),
+    l = n(449054),
     s = n(965660),
     o = n(324580),
     d = n(652215);
@@ -16,9 +16,9 @@ let c = {
             languageCode: c,
             offset: u,
             limit: A,
-            withCounts: h
+            withCounts: _
         } = t;
-        l.h.dispatch({
+        r.h.dispatch({
             type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_START",
             query: e,
             categoryId: n,
@@ -33,14 +33,14 @@ let c = {
                         offset: u,
                         limit: A,
                         language_code: c,
-                        with_counts: h
+                        with_counts: _
                     },
                     oldFormErrors: !0,
                     rejectWithError: !1
                 }),
                 a = t.body.guilds.map(s.uk),
-                r = t.body.total_count;
-            if (h) {
+                l = t.body.total_count;
+            if (_) {
                 let n = [];
                 t.body.categories?.slice(0, 8).forEach(e => {
                     let {
@@ -48,32 +48,32 @@ let c = {
                         count: i
                     } = e;
                     n.push([Number(t), i])
-                }), l.h.dispatch({
+                }), r.h.dispatch({
                     type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_COUNT_SUCCESS",
                     query: e,
                     categoryCounts: n
                 })
             }
-            l.h.dispatch({
+            r.h.dispatch({
                 type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_SUCCESS",
                 query: e,
                 categoryId: n,
                 languageCode: c,
                 guilds: a,
-                total: r
+                total: l
             })
         } catch (i) {
             let t = new a.LG(i);
-            r.jb({
+            l.jb({
                 categoryId: n,
                 error: t,
                 willRequestRetry: !1,
                 isRequestRetry: !1
-            }), h && l.h.dispatch({
+            }), _ && r.h.dispatch({
                 type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_COUNT_SUCCESS",
                 query: e,
                 categoryCounts: []
-            }), l.h.dispatch({
+            }), r.h.dispatch({
                 type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_FAILURE",
                 query: e,
                 categoryId: n,
@@ -83,13 +83,13 @@ let c = {
         }
     },
     clearSearchResults: function(e) {
-        l.h.dispatch({
+        r.h.dispatch({
             type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_CLEAR",
             ignoreQueries: e?.ignoreQueries ?? []
         })
     },
     resetSearchLayout: function() {
-        l.h.dispatch({
+        r.h.dispatch({
             type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_LAYOUT_RESET"
         })
     }

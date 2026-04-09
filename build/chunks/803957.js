@@ -5,8 +5,8 @@ n.d(t, {
 var l = n(627968);
 n(64700);
 var a = n(503698),
-    i = n.n(a),
-    r = n(311907),
+    r = n.n(a),
+    i = n(311907),
     s = n(397927),
     d = n(865116),
     o = n(147925),
@@ -17,9 +17,9 @@ let _ = e => {
             child: t,
             onClick: n,
             nodeMap: a
-        } = e, [_, m] = t, p = (0, r.bG)([d.Ay], () => d.Ay.get("iar_show_report_sub_type_labels")), h = a[m], x = h?.report_type;
+        } = e, [_, m] = t, p = (0, i.bG)([d.Ay], () => d.Ay.get("iar_show_report_sub_type_labels")), g = a[m], h = g?.report_type;
         return (0, l.jsxs)(s.DUT, {
-            className: i()(u.Zm, c.lD),
+            className: r()(u.Zm, c.lD),
             onClick: () => n(t),
             children: [(0, l.jsxs)("div", {
                 className: u.OH,
@@ -27,11 +27,11 @@ let _ = e => {
                     className: u.ix,
                     variant: "text-md/semibold",
                     children: _
-                }), p && null != x && (0, l.jsx)(s.Text, {
+                }), p && null != h && (0, l.jsx)(s.Text, {
                     className: u.Z$,
                     variant: "text-xs/normal",
                     color: "text-muted",
-                    children: x
+                    children: h
                 })]
             }), (0, l.jsx)(o.A, {
                 className: u._2,
@@ -48,16 +48,16 @@ let _ = e => {
             nodeMap: a
         } = e;
         if (null == t || 0 === t.length) return null;
-        let i = t.map(e => {
-            let [t, i] = e;
+        let r = t.map(e => {
+            let [t, r] = e;
             return (0, l.jsx)(_, {
                 child: e,
                 onClick: n,
                 nodeMap: a
-            }, `${t}+${i}`)
+            }, `${t}+${r}`)
         });
         return (0, l.jsx)("div", {
             className: c.E8,
-            children: i
+            children: r
         })
     }

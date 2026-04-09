@@ -20,7 +20,7 @@ function A(e) {
         hasAccess: n
     } = (0, o.TW)("FavoriteGuildHeaderActionButton"), A = l.useRef(null), _ = n ? u.intl.string(c.default.G9fGlP) : u.intl.string(u.t.ojM1xJ), m = l.useCallback(() => {
         (0, r.pX)(d.BVt.ME)
-    }, []), p = l.useCallback(e => {
+    }, []), g = l.useCallback(e => {
         let {
             closePopout: t
         } = e;
@@ -38,7 +38,7 @@ function A(e) {
         position: "bottom",
         align: "left",
         spacing: 4,
-        renderPopout: p,
+        renderPopout: g,
         children: (e, n) => {
             let {
                 isShown: l

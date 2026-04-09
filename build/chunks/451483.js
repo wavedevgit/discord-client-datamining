@@ -1,6 +1,6 @@
 /** chunk id: 451483 params = (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => d
 });
 var i = n(627968),
     l = n(64700),
@@ -10,7 +10,7 @@ var i = n(627968),
     o = n(888675),
     c = n(985018);
 
-function d(e) {
+function u(e) {
     let {
         children: t,
         messageReference: n,
@@ -43,20 +43,20 @@ function d(e) {
     })
 }
 
-function u(e) {
+function d(e) {
     let {
         usernameHook: t,
         message: l,
         compact: a
     } = e, {
         content: r,
-        timestamp: u,
+        timestamp: d,
         messageReference: _
     } = l, A = (0, s.Ay)(l), m = t(A), E = (r ?? "").split(" ").slice(0, -1).join(" "), T = c.intl.format(c.t["47CZc2"], {
         username: A.nick,
         usernameHook: m,
         webhookName: r,
-        webhookNameHook: (e, t) => (0, i.jsx)(d, {
+        webhookNameHook: (e, t) => (0, i.jsx)(u, {
             messageReference: _,
             guildName: E,
             children: e
@@ -64,7 +64,7 @@ function u(e) {
     });
     return (0, i.jsx)(o.A, {
         icon: n(617184),
-        timestamp: u,
+        timestamp: d,
         compact: a,
         children: T
     })

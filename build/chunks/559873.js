@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(85109),
     _ = n(914703),
     m = n(932883),
-    p = n(394953),
-    g = n(654795),
+    g = n(394953),
+    p = n(654795),
     f = n(849077),
     x = n(652215),
     E = n(985018),
@@ -70,12 +70,12 @@ function T(e) {
         Menu: d,
         interactionType: c,
         actionType: u
-    } = e, h = (0, m.op)(), [A, _] = (0, l.useState)(!1), [p, f] = (0, l.useState)(!1), x = (0, l.useRef)(null), {
+    } = e, h = (0, m.op)(), [A, _] = (0, l.useState)(!1), [g, f] = (0, l.useState)(!1), x = (0, l.useRef)(null), {
         openMenu: E,
         closeMenu: C
-    } = (0, g.s)();
+    } = (0, p.s)();
     return (0, i.jsx)(r.YNO, {
-        shouldShow: p,
+        shouldShow: g,
         animation: r.YNO.Animation.NONE,
         position: "right",
         align: "top",
@@ -110,7 +110,7 @@ function T(e) {
                         message: n,
                         interactionType: c,
                         viewId: h
-                    }), e.stopPropagation(), f(t = !p), t ? E(n.id, u) : C(n.id, u)
+                    }), e.stopPropagation(), f(t = !g), t ? E(n.id, u) : C(n.id, u)
                 },
                 children: (0, i.jsx)(o, {
                     ...e,
@@ -226,7 +226,7 @@ function b(e) {
             channel: s,
             isUnread: a
         } = e,
-        o = (t = (0, p.i3)(), (0, l.useMemo)(() => {
+        o = (t = (0, g.i3)(), (0, l.useMemo)(() => {
             let e = f.Th.MENTION,
                 n = new Set;
             return a && n.add(f.kR.ACK), t && n.add(f.kR.BOOKMARK), C[e].forEach(e => n.add(e)), Array.from(n)

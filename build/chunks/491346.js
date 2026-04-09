@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(46570),
     _ = n(680779),
     m = n(296753),
-    p = n(663093);
-let g = e => {
+    g = n(663093);
+let p = e => {
         let {
             searchQuery: t,
             setSearchQuery: n,
@@ -32,7 +32,7 @@ let g = e => {
             children: [(0, i.jsx)("img", {
                 alt: "",
                 className: _.F0,
-                src: A ? p : m
+                src: A ? g : m
             }), (0, i.jsx)("div", {
                 className: _.AZ,
                 children: (0, i.jsxs)("div", {
@@ -74,7 +74,7 @@ let g = e => {
             setSearchQuery: o,
             handleClearSearch: u,
             handleSearchKeyPress: m,
-            currentCategoryId: p,
+            currentCategoryId: g,
             handleSelectCategory: f,
             categoryCounts: x,
             allEntriesCount: E,
@@ -84,7 +84,7 @@ let g = e => {
             className: A.$$,
             children: (0, i.jsxs)(r.GtU, {
                 className: A.XG,
-                children: [(0, i.jsx)(g, {
+                children: [(0, i.jsx)(p, {
                     searchQuery: a,
                     setSearchQuery: o,
                     handleClearSearch: u,
@@ -95,7 +95,7 @@ let g = e => {
                         className: _.$H,
                         type: "top",
                         look: "brand",
-                        selectedItem: p,
+                        selectedItem: g,
                         onItemSelect: e => {
                             f(e)
                         },

@@ -23,17 +23,17 @@ function g(e) {
         hideDiscriminator: l,
         comparator: g,
         selected: p,
-        checked: f,
-        disabled: _ = !1,
+        checked: _,
+        disabled: f = !1,
         onClick: E,
         onMouseEnter: x,
         "aria-setsize": C,
         "aria-posinset": S
-    } = e, T = (0, r.bG)([h.A], () => h.A.getStatus(t.id)), N = (0, a.rm)(String(t.id));
+    } = e, I = (0, r.bG)([h.A], () => h.A.getStatus(t.id)), T = (0, a.rm)(String(t.id));
     return (0, i.jsx)(o.DUT, {
         id: `user-row-${n}`,
         className: s()(A.Se, {
-            [A.r9]: _
+            [A.r9]: f
         }),
         onClick: () => {
             E?.(t.id)
@@ -41,10 +41,10 @@ function g(e) {
         onMouseEnter: () => {
             x?.(n)
         },
-        ...N,
+        ...T,
         role: "option",
-        "aria-selected": f,
-        "aria-disabled": _,
+        "aria-selected": _,
+        "aria-disabled": f,
         "aria-setsize": C,
         "aria-posinset": S,
         children: (0, i.jsxs)(u.A, {
@@ -54,7 +54,7 @@ function g(e) {
             }),
             children: [(0, i.jsx)(d.A, {
                 user: t,
-                status: T,
+                status: I,
                 className: A.my
             }), (0, i.jsxs)("div", {
                 className: A.YW,
@@ -75,8 +75,8 @@ function g(e) {
                     })
                 })]
             }), (0, i.jsx)(o.P7L, {
-                checked: f,
-                disabled: _
+                checked: _,
+                disabled: f
             })]
         })
     })

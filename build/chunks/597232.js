@@ -51,7 +51,7 @@ function p(e) {
     })
 }
 
-function f(e) {
+function _(e) {
     let {
         userId: t
     } = e;
@@ -66,7 +66,7 @@ function f(e) {
     })
 }
 
-function _(e) {
+function f(e) {
     let {
         userId: t
     } = e;
@@ -87,7 +87,7 @@ function E(e) {
         user: n,
         showingBanner: r
     } = e, p = (0, l.bG)([c.A], () => c.A.getOriginApplicationId(n.id), [n.id]), {
-        acceptFriendRequest: f
+        acceptFriendRequest: _
     } = (0, o.I)({
         userId: n.id,
         applicationId: p,
@@ -106,7 +106,7 @@ function E(e) {
             size: "sm",
             children: [(0, i.jsx)(s.Button, {
                 variant: "primary",
-                onClick: f,
+                onClick: _,
                 text: m.intl.string(m.t["+WbSn5"])
             }), (0, i.jsx)(s.Button, {
                 variant: "secondary",
@@ -146,12 +146,12 @@ function x(e) {
             }));
             break;
         case h.eA$.FRIEND:
-            t = (0, i.jsx)(f, {
+            t = (0, i.jsx)(_, {
                 userId: a.id
             });
             break;
         case h.eA$.BLOCKED:
-            t = (0, i.jsx)(_, {
+            t = (0, i.jsx)(f, {
                 userId: a.id
             });
             break;

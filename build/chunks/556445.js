@@ -24,7 +24,7 @@ function o(t) {
         tooltip: p,
         loading: g,
         disabled: f,
-        onClick: T
+        onClick: E
     } = (0, a.J$)(e, n, d, s.Ay.getNickname(u, o, n));
     return (0, i.jsx)(l.m, {
         text: p,
@@ -33,7 +33,7 @@ function o(t) {
             size: c,
             variant: h,
             onClick: () => {
-                A?.(), T()
+                A?.(), E()
             },
             disabled: f,
             loading: g,

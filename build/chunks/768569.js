@@ -5,16 +5,16 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(342494),
-    l = n(397927),
-    r = n(688810),
+    r = n(397927),
+    l = n(688810),
     s = n(532794),
     o = n(113359),
     d = n(788868),
     c = n(88001),
     u = n(49999),
     A = n(518582),
-    h = n(985018),
-    _ = n(438705);
+    _ = n(985018),
+    h = n(438705);
 let m = e => {
     let {
         targetElementRef: t,
@@ -24,9 +24,9 @@ let m = e => {
         location: "nitro_tab_popover"
     }) === o.xb.POPOVER, {
         analyticsLocations: E
-    } = (0, r.Ay)(), I = p ? h.intl.string(A.default.oOSj1l) : h.intl.format(A.default["c+NBSl"], {
+    } = (0, l.Ay)(), I = p ? _.intl.string(A.default.oOSj1l) : _.intl.format(A.default["c+NBSl"], {
         premiumGroupProductName: (0, c.DP)()
-    }), f = p ? h.intl.string(A.default.nCLJQn) : h.intl.format(A.default.MuUV5u, {
+    }), f = p ? _.intl.string(A.default.nCLJQn) : _.intl.format(A.default.MuUV5u, {
         premiumGroupProductName: (0, c.DP)(),
         totalSeats: c.aw
     }), C = (0, i.jsx)(a.AM, {
@@ -35,7 +35,7 @@ let m = e => {
         body: f,
         graphic: {
             type: "image",
-            src: _
+            src: h
         },
         badge: {
             type: "beta",
@@ -49,16 +49,16 @@ let m = e => {
             align: "start"
         },
         actions: [{
-            text: p ? h.intl.format(A.default.LwdrNi, {
+            text: p ? _.intl.format(A.default.LwdrNi, {
                 premiumGroupProductName: (0, c.DP)()
-            }) : h.intl.string(A.default["IO+nlU"]),
+            }) : _.intl.string(A.default["IO+nlU"]),
             variant: p ? "expressive" : "primary",
             onClick: () => {
                 m(u.i.TAKE_ACTION), p ? (0, s.A)({
                     subscriptionTier: d.pe.TIER_2,
                     initialPlanId: d.gD.PREMIUM_GROUP_MONTH,
                     analyticsLocations: E
-                }) : (0, l.mMO)(async () => {
+                }) : (0, r.mMO)(async () => {
                     let {
                         default: e
                     } = await n.e("91976").then(n.bind(n, 526710));
@@ -68,7 +68,7 @@ let m = e => {
                 })
             },
             ...p ? {
-                icon: l.tvc,
+                icon: r.tvc,
                 iconPosition: "start"
             } : {}
         }],

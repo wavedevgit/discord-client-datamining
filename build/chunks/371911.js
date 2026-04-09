@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(966597),
     _ = n(85109),
     m = n(44022),
-    p = n(566908),
-    g = n(594061),
+    g = n(566908),
+    p = n(594061),
     f = n(617617),
     x = n(203982),
     E = n(646468),
@@ -45,18 +45,18 @@ function v(e) {
         } = (0, h.Ay)(u.A.NOTIFICATION_CENTER),
         [P, k] = l.useState(!1),
         [w, B] = [(0, o.bG)([f.A], () => f.A.settings.inbox?.currentTab ?? d.Y2.UNREADS), l.useCallback(e => {
-            g.wc.updateAsync("inbox", t => {
+            p.wc.updateAsync("inbox", t => {
                 if (t.currentTab === e) return !1;
                 t.currentTab = e
-            }, g.Sb.FREQUENT_USER_ACTION)
+            }, p.Sb.FREQUENT_USER_ACTION)
         }, [])],
         {
             showTutorial: V,
             setSeenTutorial: H
         } = (t = (0, o.bG)([f.A], () => f.A.settings.inbox?.viewedTutorial ?? !1), n = l.useCallback(() => {
-            g.wc.updateAsync("inbox", e => {
+            p.wc.updateAsync("inbox", e => {
                 e.viewedTutorial = !0
-            }, g.Sb.INFREQUENT_USER_ACTION)
+            }, p.Sb.INFREQUENT_USER_ACTION)
         }, []), {
             showTutorial: !t && w === d.Y2.UNREADS,
             setSeenTutorial: n
@@ -80,7 +80,7 @@ function v(e) {
     let q = l.useCallback(e => {
             e.shiftKey || F()
         }, [F]),
-        X = (0, p.Sc)();
+        X = (0, g.Sc)();
     return (0, i.jsx)(h.f5, {
         value: G,
         children: (0, i.jsx)(c.YNO, {

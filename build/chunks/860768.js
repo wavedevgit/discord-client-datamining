@@ -1,23 +1,23 @@
 /** chunk id: 860768 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => h
 });
 var i = n(627968),
     a = n(64700),
-    l = n(397927),
-    r = n(843472),
+    r = n(397927),
+    l = n(843472),
     s = n(309010),
     o = n(926466),
     d = n(652215),
     c = n(49999),
     u = n(985018),
     A = n(988726);
-class h extends a.PureComponent {
+class _ extends a.PureComponent {
     handleInvite = () => {
         let {
             guild: e
         } = this.props;
-        (0, l.mMO)(async () => {
+        (0, r.mMO)(async () => {
             let {
                 default: t
             } = await Promise.all([n.e("43600"), n.e("55221")]).then(n.bind(n, 234355));
@@ -33,7 +33,7 @@ class h extends a.PureComponent {
             t = u.intl.formatToPlainString(u.t.DEn7nu, {
                 invitePeople: u.intl.string(u.t.Sd8Ixw)
             });
-        this.props.markAsDismissed(c.i.UNKNOWN), null != e && r.A.sendBotMessage(e, t)
+        this.props.markAsDismissed(c.i.UNKNOWN), null != e && l.A.sendBotMessage(e, t)
     };
     render() {
         let e = `${u.intl.string(u.t.VWqWZQ)}
@@ -51,4 +51,4 @@ ${u.intl.string(u.t["0Lgb/K"])}`;
         })
     }
 }
-let _ = h
+let h = _

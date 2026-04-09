@@ -9,8 +9,8 @@ var i = n(627968),
     s = n(688810),
     o = n(287809),
     c = n(987144),
-    d = n(652215),
-    u = n(985018);
+    u = n(652215),
+    d = n(985018);
 
 function _(e) {
     let {
@@ -26,8 +26,8 @@ function _(e) {
         T(!0), await (0, c.g)({
             analyticsLocations: I,
             analyticsLocation: {
-                object: d.ZSU.BUTTON_CTA,
-                objectType: d.AnalyticsObjectTypes.BUY,
+                object: u.ZSU.BUTTON_CTA,
+                objectType: u.AnalyticsObjectTypes.BUY,
                 ...n
             },
             guild: t,
@@ -41,7 +41,7 @@ function _(e) {
         variant: m,
         size: "md",
         icon: r._Jp,
-        text: u.intl.string(u.t.gKmQ1G),
+        text: d.intl.string(d.t.gKmQ1G),
         onClick: f,
         loading: E,
         disabled: g

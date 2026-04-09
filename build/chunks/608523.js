@@ -4,8 +4,8 @@ n.d(t, {
 });
 var l = n(627968),
     a = n(64700),
-    i = n(397927),
-    r = n(46054),
+    r = n(397927),
+    i = n(46054),
     s = n(861662),
     d = n(985018),
     o = n(716213),
@@ -19,32 +19,32 @@ let u = e => {
                 placeholder: _,
                 rows: m,
                 character_limit: p,
-                pattern: h
+                pattern: g
             },
-            onChange: x,
-            initialText: g,
+            onChange: h,
+            initialText: x,
             isRequired: A
-        } = e, v = a.useMemo(() => r.A.reactParserFor({
-            ...r.A.defaultRules,
+        } = e, v = a.useMemo(() => i.A.reactParserFor({
+            ...i.A.defaultRules,
             link: s.B
         }), []), [b, f] = a.useState(""), [T, S] = a.useState(null);
         a.useEffect(() => {
-            f(g?.value ?? "")
-        }, [g]);
+            f(x?.value ?? "")
+        }, [x]);
         let E = a.useCallback(e => {
-            let t = null != h ? new RegExp(h) : null;
-            null == t || t.test(e) ? null != e && (S(null), f(e), x({
+            let t = null != g ? new RegExp(g) : null;
+            null == t || t.test(e) ? null != e && (S(null), f(e), h({
                 value: e,
                 isValid: !0
-            })) : (S(d.intl.string(d.t["24xrGb"])), x({
+            })) : (S(d.intl.string(d.t["24xrGb"])), h({
                 value: e,
                 isValid: !1
             }))
-        }, [x, h]);
+        }, [h, g]);
         return (0, l.jsxs)("div", {
             children: [(0, l.jsxs)("div", {
                 className: c.QB,
-                children: [null != t && (0, l.jsxs)(i.Text, {
+                children: [null != t && (0, l.jsxs)(r.Text, {
                     variant: "text-md/medium",
                     color: "text-strong",
                     children: [t, A && (0, l.jsx)("span", {
@@ -53,19 +53,19 @@ let u = e => {
                     })]
                 }), null != u && (0, l.jsx)("div", {
                     className: c.a5,
-                    children: (0, l.jsx)(i.Text, {
+                    children: (0, l.jsx)(r.Text, {
                         variant: "text-sm/normal",
                         color: "text-muted",
                         children: u
                     })
                 })]
-            }), 1 === m ? (0, l.jsx)(i.ksK, {
+            }), 1 === m ? (0, l.jsx)(r.ksK, {
                 maxLength: p,
                 onChange: E,
                 value: b,
                 error: T,
                 placeholder: _
-            }) : (0, l.jsx)(i.fs1, {
+            }) : (0, l.jsx)(r.fs1, {
                 maxLength: p,
                 onChange: E,
                 value: b,
@@ -74,7 +74,7 @@ let u = e => {
                 placeholder: _
             }), null != n && (0, l.jsx)("div", {
                 className: c.a5,
-                children: (0, l.jsx)(i.Text, {
+                children: (0, l.jsx)(r.Text, {
                     variant: "text-xs/normal",
                     color: "text-muted",
                     children: v(n)
@@ -87,7 +87,7 @@ let u = e => {
             elements: t,
             onChange: n,
             state: a
-        } = e, i = t.map(e => {
+        } = e, r = t.map(e => {
             let t = e.name;
             return (0, l.jsx)(u, {
                 data: e.data,
@@ -98,6 +98,6 @@ let u = e => {
         });
         return (0, l.jsx)("div", {
             className: o.k,
-            children: i
+            children: r
         })
     }

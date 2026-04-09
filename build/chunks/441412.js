@@ -15,8 +15,8 @@ function c(e) {
         message: t,
         usernameHook: n,
         onClickPins: c,
-        compact: d
-    } = e, u = (0, r.Ay)(t), _ = u.nick, A = n(u), m = () => {
+        compact: u
+    } = e, d = (0, r.Ay)(t), _ = d.nick, A = n(d), m = () => {
         if (null == t.messageReference) return;
         let {
             channel_id: e,
@@ -36,7 +36,7 @@ function c(e) {
     return (0, i.jsx)(s.A, {
         ...E,
         timestamp: t.timestamp,
-        compact: d,
+        compact: u,
         children: null != t.messageReference ? null == c ? o.intl.format(o.t.lD5tup, {
             usernameHook: A,
             username: _,

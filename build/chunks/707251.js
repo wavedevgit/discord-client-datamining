@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(313961),
     _ = n(384059),
     m = n(47167),
-    p = n(689874),
-    g = n(509536),
+    g = n(689874),
+    p = n(509536),
     f = n(58736),
     x = n(742589),
     E = n(977851),
@@ -43,10 +43,10 @@ function U(e) {
     } = e, {
         analyticsLocations: s,
         newestAnalyticsLocation: o
-    } = (0, h.Ay)(u.A.VOICE_CHANNEL_HEADER), d = (0, r.bG)([A.A], () => A.A.getChatOpen(t.id), [t.id]), m = (0, b.Ni)(t.id), g = (0, T.zy)(t.id, S.ip.REQUESTED_TO_SPEAK_ONLY);
+    } = (0, h.Ay)(u.A.VOICE_CHANNEL_HEADER), d = (0, r.bG)([A.A], () => A.A.getChatOpen(t.id), [t.id]), m = (0, b.Ni)(t.id), p = (0, T.zy)(t.id, S.ip.REQUESTED_TO_SPEAK_ONLY);
     return (0, i.jsxs)(h.f5, {
         value: s,
-        children: [(0, i.jsx)(p.A, {
+        children: [(0, i.jsx)(g.A, {
             channelId: t.id
         }, "clips-enabled-indicator"), !l && m ? (0, i.jsx)("div", {
             className: a()(D.x6, {
@@ -57,7 +57,7 @@ function U(e) {
                     d && c.A.updateChatOpen(t.id, !1), (0, _.X)(o, _.O.OPEN_REQUEST_TO_SPEAK_SIDEBAR), n()
                 },
                 showRequestToSpeakSidebar: l,
-                numRequestToSpeak: g
+                numRequestToSpeak: p
             })
         }) : null, !d && (0, i.jsx)("div", {
             className: a()(D.x6, {
@@ -78,7 +78,7 @@ function G(e) {
         channel: t,
         toggleRequestToSpeakSidebar: n,
         showRequestToSpeakSidebar: s
-    } = e, u = (0, m.Ay)(t), h = (0, r.bG)([v.A], () => v.A.getStageInstanceByChannel(t.id)), A = (0, T.uy)(t.id), _ = (0, T.zy)(t.id, S.ip.AUDIENCE), p = (0, r.bG)([I.A], () => I.A.getGuild(t.guild_id), [t.guild_id]), E = p?.maxStageVideoChannelUsers ?? 0, b = null != p && p.features.has(O.GuildFeatures.COMMUNITY) ? E < O.p2C : p?.premiumTier !== O.TVA.TIER_3 && E <= O.nyz, j = (0, R.A)(t), G = (0, r.bG)([C.A], () => C.A.can(y.QY, t)), k = () => {
+    } = e, u = (0, m.Ay)(t), h = (0, r.bG)([v.A], () => v.A.getStageInstanceByChannel(t.id)), A = (0, T.uy)(t.id), _ = (0, T.zy)(t.id, S.ip.AUDIENCE), g = (0, r.bG)([I.A], () => I.A.getGuild(t.guild_id), [t.guild_id]), E = g?.maxStageVideoChannelUsers ?? 0, b = null != g && g.features.has(O.GuildFeatures.COMMUNITY) ? E < O.p2C : g?.premiumTier !== O.TVA.TIER_3 && E <= O.nyz, j = (0, R.A)(t), G = (0, r.bG)([C.A], () => C.A.can(y.QY, t)), k = () => {
         c.A.updateStageVideoLimitBoostUpsellDismissed(t.id, !0), N.default.track(O.HAw.BOOSTING_UPSELL_CLICKED, {
             guild_id: t.guild_id,
             type: L.e.VIDEO_STAGE_LIMIT,
@@ -181,7 +181,7 @@ function G(e) {
                     }), (0, i.jsx)(d.Button, {
                         variant: "expressive",
                         onClick: () => {
-                            (0, g.K4)({
+                            (0, p.K4)({
                                 guildId: t.guild_id,
                                 location: {
                                     section: O.JJy.STAGE_VIDEO_LIMIT

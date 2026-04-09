@@ -4,16 +4,16 @@ n.d(t, {
 }), n(323874), n(14289), n(35956);
 var i = n(627968),
     a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(503698),
+    l = n.n(r),
     s = n(873263),
     o = n(311907),
     d = n(397927),
     c = n(73153),
     u = n(944791),
     A = n(711950),
-    h = n(726249),
-    _ = n(915089),
+    _ = n(726249),
+    h = n(915089),
     m = n(346084),
     g = n(742589),
     p = n(95550),
@@ -40,15 +40,15 @@ function O() {
 let L = function(e) {
     let {
         initialSection: t
-    } = e, n = (0, s.zy)(), l = (0, s.W6)();
+    } = e, n = (0, s.zy)(), r = (0, s.W6)();
     a.useEffect(() => {
         "true" === new URLSearchParams(n.search).get("confirm-age") && c.h.dispatch({
             type: "AGE_GATE_MODAL_OPEN",
             source: v.w_.DEEP_LINK_PROMPT
         }).then(() => {
-            l.replace(x.BVt.ME)
+            r.replace(x.BVt.ME)
         })
-    }, [l, n]), a.useEffect(() => {
+    }, [r, n]), a.useEffect(() => {
         u.I(x.BVt.FRIENDS), (0, I.d)("friends")
     }, []);
     let p = (0, o.bG)([f.A], () => f.A.theme),
@@ -67,8 +67,8 @@ let L = function(e) {
                 explicit: !0
             })
         },
-        w = (0, _.GV)(),
-        U = (0, _.GV)(),
+        w = (0, h.GV)(),
+        U = (0, h.GV)(),
         G = [{
             id: x.m3P.ONLINE,
             show: P.filter(x.m3P.ONLINE).length > 0,
@@ -112,7 +112,7 @@ let L = function(e) {
                 children: b.intl.string(b.t.j0wbE5)
             }),
             ariaLabel: b.intl.string(b.t.j0wbE5),
-            className: r()(y.AS, y.GU)
+            className: l()(y.AS, y.GU)
         }],
         k = null,
         V = (0, i.jsx)("div", {
@@ -124,7 +124,7 @@ let L = function(e) {
     }), (0, i.jsxs)("main", {
         className: y.kL,
         "aria-label": b.intl.string(b.t.TdEu5X),
-        children: [(0, i.jsx)(h.HI, {
+        children: [(0, i.jsx)(_.HI, {
             location: b.intl.string(b.t.TdEu5X)
         }), (0, i.jsx)(d.NPJ, {
             theme: p,

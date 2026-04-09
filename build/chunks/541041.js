@@ -1,18 +1,18 @@
 /** chunk id: 541041 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => h
 });
 var i = n(627968),
     a = n(64700),
-    l = n(311907),
-    r = n(926466),
+    r = n(311907),
+    l = n(926466),
     s = n(509536),
     o = n(498642),
     d = n(652215),
     c = n(49999),
     u = n(985018),
     A = n(98100);
-class h extends a.PureComponent {
+class _ extends a.PureComponent {
     handleButtonClick = () => {
         let {
             guild: e
@@ -31,7 +31,7 @@ class h extends a.PureComponent {
             memberCount: t,
             markAsDismissed: n
         } = this.props;
-        return (0, i.jsx)(r.A, {
+        return (0, i.jsx)(l.A, {
             guild: e,
             onDismissed: () => n(c.i.UNKNOWN),
             onClick: this.handleButtonClick,
@@ -44,11 +44,11 @@ class h extends a.PureComponent {
         })
     }
 }
-let _ = l.Ay.connectStores([o.A], e => {
+let h = r.Ay.connectStores([o.A], e => {
     let {
         guild: t
     } = e;
     return {
         memberCount: o.A.getMemberCount(t.id)
     }
-})(h)
+})(_)

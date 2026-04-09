@@ -1,8 +1,8 @@
 /** chunk id: 690946 params = (module,exports,require) **/
-n.d(t, {
-    X: () => a
+i.d(t, {
+    X: () => s
 });
-let i = (0, n(945810).mj)({
+let n = (0, i(945810).mj)({
     name: "2026-01-social-layer-storefront-recommendations-on-profile-modal",
     kind: "user",
     defaultConfig: {
@@ -18,11 +18,11 @@ let i = (0, n(945810).mj)({
     }
 });
 
-function a(e) {
+function s(e) {
     let {
         location: t
     } = e;
-    return i.useConfig({
+    return n.useConfig({
         location: t
     }).enabled
 }

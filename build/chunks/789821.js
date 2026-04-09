@@ -4,7 +4,7 @@ n.d(t, {
     Mv: () => c,
     Uq: () => s,
     c_: () => r,
-    ir: () => d
+    ir: () => u
 });
 let i = /[\t\n,]/g,
     l = /\s{2,}/g,
@@ -30,6 +30,6 @@ function c(e) {
     return e.join(", ")
 }
 
-function d(e) {
+function u(e) {
     return e.includes("\n") || e.includes(",")
 }

@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(676002),
     _ = n(296216),
     m = n(963027),
-    p = n(47167),
-    g = n(202384),
+    g = n(47167),
+    p = n(202384),
     f = n(51758),
     x = n(721592),
     E = n(214660),
@@ -91,7 +91,7 @@ class X extends B.Ay {
             unverifiedAccount: i,
             isSuggestedSection: l
         } = this.props, s = e.getGuildId();
-        null != s && (0, f.V)(s) && (0, g.Ze)(s), i && this.setState({
+        null != s && (0, f.V)(s) && (0, p.Ze)(s), i && this.setState({
             shouldShowGuildVerificationPopout: !0
         }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, N.av)(e), __OVERLAY__ || (0, C.iN)(e.id, l ? {
             source: I.A.CHANNEL_LIST_SUGGESTED_SECTION
@@ -202,7 +202,7 @@ class X extends B.Ay {
             canReorderChannel: h,
             canMoveMembers: A,
             stageInstance: _,
-            isSubscriptionGated: g,
+            isSubscriptionGated: p,
             needSubscriptionToAccess: f,
             unread: x,
             resolvedUnreadSetting: E,
@@ -214,7 +214,7 @@ class X extends B.Ay {
             className: a()(this.getModeClass(), {
                 [z.r9]: this.isDisabled()
             }),
-            "data-dnd-name": (0, p.m1)(e, P.default, U.A),
+            "data-dnd-name": (0, g.m1)(e, P.default, U.A),
             children: [(0, i.jsx)(c.YNO, {
                 targetElementRef: this.channelItemRef,
                 position: "right",
@@ -250,7 +250,7 @@ class X extends B.Ay {
                             channel: e,
                             unread: x,
                             mentionCount: I,
-                            isSubscriptionGated: g,
+                            isSubscriptionGated: p,
                             needSubscriptionToAccess: f
                         }),
                         children: [C && this.renderAcceptSuggestionButton(), C && this.renderRemoveSuggestionButton(), !C && this.renderOpenChatButton(), !C && this.renderInviteButton(), !C && this.renderEditButton(), !C && this.renderChannelInfo()]
@@ -286,15 +286,15 @@ function J(e) {
             unverifiedAccount: !i.canChat
         }
     }), h = (0, r.bG)([j.A], () => j.A.isCollapsed(n.parent_id)), A = (0, v.Ay)(n.id), _ = (0, r.bG)([b.A], () => b.A.getStageInstanceByChannel(n.id), [n.id]), m = (0, T.zy)(n.id, S.ip.AUDIENCE), {
-        isSubscriptionGated: p,
-        needSubscriptionToAccess: g
+        isSubscriptionGated: g,
+        needSubscriptionToAccess: p
     } = (0, x.A)(n.id), f = (0, r.bG)([G.Ay], () => G.Ay.isFavorite(t.id, n.id)), E = (0, y.xn)(n.id), I = (0, V.A)({
         channel: n,
         isChannelSelected: !1,
         isChannelCollapsed: a,
         voiceStates: o,
-        isSubscriptionGated: p,
-        needSubscriptionToAccess: g,
+        isSubscriptionGated: g,
+        needSubscriptionToAccess: p,
         enableConnectedUserLimit: E || n.userLimit > 0 && n.userLimit < W.RCc
     }), C = e.connected && null == I;
     return (0, i.jsx)($, {
@@ -302,8 +302,8 @@ function J(e) {
         connectAction: A,
         numAudience: m,
         stageInstance: _,
-        isSubscriptionGated: p,
-        needSubscriptionToAccess: g,
+        isSubscriptionGated: g,
+        needSubscriptionToAccess: p,
         ...d,
         ...u,
         ...e,

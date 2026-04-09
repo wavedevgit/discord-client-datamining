@@ -5,7 +5,7 @@ n.d(t, {
     g2: () => m,
     m8: () => h,
     mU: () => _,
-    ul: () => p
+    ul: () => g
 });
 var i, l, s, a, r = n(136722),
     o = n(488926),
@@ -54,7 +54,7 @@ function m(e) {
     }]
 }
 
-function p() {
+function g() {
     return {
         CREATE: {
             id: "CREATE",

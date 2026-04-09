@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(554146),
     _ = n(52133),
     m = n(451988),
-    p = n(827734),
-    g = n(192308),
+    g = n(827734),
+    p = n(192308),
     f = n(397927),
     x = n(951001),
     E = n(964486),
@@ -180,7 +180,7 @@ function eu(e) {
         lurkingGuildIds: s
     } = e, a = (0, v.A)("TopSection"), {
         isExperimentEnabled: r
-    } = (0, y.TW)("TopSection"), o = (0, h.bG)([B.A], () => null != B.A.getVoiceChannelId()), d = (0, g.useHasAnyModalOpen)(), c = (0, S.Ay)(e => e.postConnectionOpen), [u, _] = (0, b.kn)(c && r && !o && !d ? [A.M.FAVORITES_SERVER_ONBOARDING_INTRO] : []), m = u === A.M.FAVORITES_SERVER_ONBOARDING_INTRO, [p] = (0, b.kn)(m ? [A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : [], void 0, !0), f = p === A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM, x = l.useRef(!1), E = f && a;
+    } = (0, y.TW)("TopSection"), o = (0, h.bG)([B.A], () => null != B.A.getVoiceChannelId()), d = (0, p.useHasAnyModalOpen)(), c = (0, S.Ay)(e => e.postConnectionOpen), [u, _] = (0, b.kn)(c && r && !o && !d ? [A.M.FAVORITES_SERVER_ONBOARDING_INTRO] : []), m = u === A.M.FAVORITES_SERVER_ONBOARDING_INTRO, [g] = (0, b.kn)(m ? [A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : [], void 0, !0), f = g === A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM, x = l.useRef(!1), E = f && a;
     l.useEffect(() => {
         E && !x.current && n(), x.current = E
     }, [n, E]);
@@ -241,13 +241,13 @@ function eA(e) {
         let e = V.Ay.getGuildsTree();
         return [e, e.version]
     }), u = (0, h.bG)([O.A], () => O.A.lurkingGuildIds()), A = l.useMemo(() => n ? [] : u, [u, n]), _ = (0, h.bG)([T.A], () => T.A.isFullscreenInContext()), {
-        isSorting: g,
+        isSorting: p,
         startSorting: x,
         stopSorting: I
     } = (0, F.A)(), S = l.useRef(!1), [b] = l.useState(() => new m.Ep), y = l.useRef(null), j = l.useRef(null), {
         ref: R,
         ...G
-    } = (0, c.$y)(), P = (0, f.R7z)(), [w, B] = l.useState(!1), z = (0, f.rdh)(p.A.modules.guildbar.AVATAR_SIZE), q = (0, f.rdh)(p.A.space.SPACE_XS), X = (0, v.A)("GuildsBar"), {
+    } = (0, c.$y)(), P = (0, f.R7z)(), [w, B] = l.useState(!1), z = (0, f.rdh)(g.A.modules.guildbar.AVATAR_SIZE), q = (0, f.rdh)(g.A.space.SPACE_XS), X = (0, v.A)("GuildsBar"), {
         pathname: $
     } = (0, d.zy)(), {
         entrypoint: Q
@@ -316,7 +316,7 @@ function eA(e) {
                         folderNode: t,
                         setNodeRef: ei.setNodeRef,
                         draggable: !0,
-                        sorting: g,
+                        sorting: p,
                         onDragStart: x,
                         onDragEnd: I,
                         renderChildNode: e,
@@ -328,7 +328,7 @@ function eA(e) {
                         guildNode: t,
                         setRef: ei.setNodeRef,
                         draggable: !0,
-                        sorting: g,
+                        sorting: p,
                         onDragStart: x,
                         onDragEnd: I,
                         "aria-setsize": l,
@@ -337,12 +337,12 @@ function eA(e) {
                 default:
                     return null
             }
-        }, [x, I, g, ei.setNodeRef]),
-        ep = (0, i.jsx)(J.A, {
+        }, [x, I, p, ei.setNodeRef]),
+        eg = (0, i.jsx)(J.A, {
             selected: eA,
             className: er.ai
         }),
-        eg = Q === L.RK.SERVER_RAIL_BOTTOM;
+        ep = Q === L.RK.SERVER_RAIL_BOTTOM;
     return (0, i.jsx)(N.f5, {
         value: el,
         children: (0, i.jsx)(f.NPJ, {
@@ -379,13 +379,13 @@ function eA(e) {
                                 scrollToTop: e_,
                                 lurkingGuildIds: A
                             }), (0, i.jsx)(Z.A, {}), (0, i.jsx)(eh, {
-                                guildDiscoveryButton: ep,
+                                guildDiscoveryButton: eg,
                                 disableAppDownload: t,
                                 isOverlay: n,
                                 renderTreeNode: em,
                                 lurkingGuildIds: A
                             })]
-                        }), eg && (0, i.jsxs)("div", {
+                        }), ep && (0, i.jsxs)("div", {
                             children: [(0, i.jsx)(Z.A, {
                                 fullWidth: !0
                             }), (0, i.jsx)("div", {
@@ -400,8 +400,8 @@ function eA(e) {
                     isVisible: ei.isItemVisible,
                     onJumpTo: ei.handleJumpToGuild,
                     className: a()(er.LZ, {
-                        [er.CH]: !n && !eg,
-                        [er.c0]: !n && eg
+                        [er.CH]: !n && !ep,
+                        [er.c0]: !n && ep
                     }),
                     barClassName: er.Sh
                 })]

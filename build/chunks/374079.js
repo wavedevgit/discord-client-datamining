@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(964892),
-    r = n(208756),
+    r = n(964892),
+    l = n(208756),
     s = n(135564),
     o = n(916845),
     d = n(627330),
     c = n(397927),
     u = n(793574),
     A = n(688810),
-    h = n(532794),
-    _ = n(295140),
+    _ = n(532794),
+    h = n(295140),
     m = n(788868),
     g = n(652215),
     p = n(49999),
@@ -30,7 +30,7 @@ function C(e) {
     } = e, {
         analyticsLocations: N
     } = (0, A.Ay)(u.A.PREMIUM_MARKETING_NITRO_HOME_ORBS_SECTION), S = a.useCallback(() => {
-        n(p.i.TAKE_ACTION), (0, h.A)({
+        n(p.i.TAKE_ACTION), (0, _.A)({
             subscriptionTier: m.pe.TIER_2,
             analyticsLocations: N,
             analyticsObject: {
@@ -42,7 +42,7 @@ function C(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             children: C
-        }), (0, i.jsx)(l.x, {
+        }), (0, i.jsx)(r.x, {
             targetElementRef: t,
             onRequestClose: () => n(p.i.USER_DISMISS),
             alignmentStrategy: "edge",
@@ -59,7 +59,7 @@ function C(e) {
                     variant: "color-mix"
                 }), (0, i.jsx)("div", {
                     className: f.O,
-                    children: (0, i.jsx)(_.A, {
+                    children: (0, i.jsx)(h.A, {
                         orbsCount: T
                     })
                 }), (0, i.jsx)(d.D, {
@@ -72,7 +72,7 @@ function C(e) {
                         variant: "expressive"
                     },
                     className: f.Q
-                }), (0, i.jsx)(r.Z, {
+                }), (0, i.jsx)(l.Z, {
                     actions: [{
                         text: I.intl.string(I.t.pj0XBN),
                         variant: "primary",

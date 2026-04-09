@@ -4,28 +4,28 @@ n.d(t, {
 });
 var i = n(793574),
     a = n(4630),
-    l = n(580960),
-    r = n(636401),
+    r = n(580960),
+    l = n(636401),
     s = n(629471),
     o = n(569475),
     d = n(994717),
     c = n(546983),
     u = n(613057),
     A = n(652215),
-    h = n(788868);
-let _ = [i.A.RPC];
+    _ = n(788868);
+let h = [i.A.RPC];
 
 function m(e, t) {
     let n = {
-        subscriptionTier: h.pe.TIER_2,
-        analyticsLocations: _,
+        subscriptionTier: _.pe.TIER_2,
+        analyticsLocations: h,
         analyticsObject: t
     };
     switch (e) {
         case A.BRT.APP:
-            return l.A.openPremiumPaymentModalInApp(n);
+            return r.A.openPremiumPaymentModalInApp(n);
         case A.BRT.OVERLAY:
-            return l.A.openPremiumPaymentModalInOverlay(n);
+            return r.A.openPremiumPaymentModalInOverlay(n);
         default:
             throw Error(`Unexpected app context: ${e}`)
     }
@@ -46,15 +46,15 @@ let g = {
                 }
             } = e;
             (0, d.C)(t.transport);
-            let l = t.application.id;
-            if (null == l) throw new r.A({
+            let r = t.application.id;
+            if (null == r) throw new l.A({
                 errorCode: A.Lw6.INVALID_COMMAND
             }, "No application.");
             let {
                 lock: s,
-                context: h
+                context: _
             } = (0, c.d5)(t.transport !== u.z4.POST_MESSAGE ? i : null);
-            if (null == (0, o.A)()) throw new r.A({
+            if (null == (0, o.A)()) throw new l.A({
                 errorCode: A.Lw6.INVALID_CHANNEL
             }, "Invalid channel");
             let g = {
@@ -63,22 +63,22 @@ let g = {
             return (async () => {
                 try {
                     let e = await (0, a.j)({
-                        applicationId: l,
+                        applicationId: r,
                         skuId: n,
-                        openPremiumPaymentModal: () => m(h, g),
-                        analyticsLocations: _,
+                        openPremiumPaymentModal: () => m(_, g),
+                        analyticsLocations: h,
                         analyticsLocationObject: g,
-                        context: h
+                        context: _
                     });
                     return s(), e
                 } catch (e) {
                     if (s(), null != e) {
                         let t = "";
-                        throw t = "object" == typeof e && "message" in e && "string" == typeof e.message ? e.message : "string" == typeof e ? e : JSON.stringify(e), new r.A({
+                        throw t = "object" == typeof e && "message" in e && "string" == typeof e.message ? e.message : "string" == typeof e ? e : JSON.stringify(e), new l.A({
                             errorCode: A.Lw6.PURCHASE_ERROR
                         }, t)
                     }
-                    throw new r.A({
+                    throw new l.A({
                         errorCode: A.Lw6.PURCHASE_CANCELED
                     }, "Purchase was canceled by the user.")
                 }
@@ -97,7 +97,7 @@ let g = {
                     pid: n
                 }
             } = e;
-            if ((0, d.C)(t.transport), null == t.application.id) throw new r.A({
+            if ((0, d.C)(t.transport), null == t.application.id) throw new l.A({
                 errorCode: A.Lw6.INVALID_COMMAND
             }, "No application.");
             let {
@@ -109,10 +109,10 @@ let g = {
             }).then(() => {
                 i()
             }, e => {
-                if (i(), null != e) throw new r.A({
+                if (i(), null != e) throw new l.A({
                     errorCode: A.Lw6.PURCHASE_ERROR
                 }, e);
-                throw new r.A({
+                throw new l.A({
                     errorCode: A.Lw6.PURCHASE_CANCELED
                 }, "Purchase was canceled by the user.")
             })

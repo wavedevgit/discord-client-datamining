@@ -1,20 +1,20 @@
 /** chunk id: 673310 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => h
 });
 var i = n(627968),
     a = n(64700),
-    l = n(397927),
-    r = n(698441),
+    r = n(397927),
+    l = n(698441),
     s = n(976860),
     o = n(378570),
     d = n(657331),
     c = n(665583),
     u = n(244625),
     A = n(652215),
-    h = n(343854);
+    _ = n(343854);
 
-function _(e) {
+function h(e) {
     let {
         item: t
     } = e, n = a.useCallback(e => {
@@ -23,7 +23,7 @@ function _(e) {
                 (0, o.ci)(t.data.message.channel_id, t.data.message.id);
                 break;
             case "guildEvent": {
-                let e = r.Ay.getGuildScheduledEvent(t.data.eventId);
+                let e = l.Ay.getGuildScheduledEvent(t.data.eventId);
                 null != e && (0, s.pX)(A.BVt.GUILD_EVENT_DETAILS(e.guild_id, e.id));
                 break
             }
@@ -36,13 +36,13 @@ function _(e) {
                 })
         }
     }, [t]);
-    return (0, i.jsxs)(l.DUT, {
-        className: h.k,
+    return (0, i.jsxs)(r.DUT, {
+        className: _.k,
         onClick: n,
         children: [(0, i.jsx)(u.A, {
             item: t
         }), (0, i.jsx)("div", {
-            className: h.o,
+            className: _.o,
             children: (0, i.jsx)(c.A, {
                 item: t
             })

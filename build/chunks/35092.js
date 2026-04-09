@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(44120),
     _ = n(532794),
     m = n(317560),
-    p = n(533406),
-    g = n(183555),
+    g = n(533406),
+    p = n(183555),
     f = n(661492),
     x = n(146423),
     E = n(662349),
@@ -45,22 +45,22 @@ function O(e) {
         onPurchaseClick: _,
         singleCardInfo: m
     } = e, {
-        trackUserProfileWishlistAction: p
-    } = (0, g.NJ)(), C = l.useCallback(() => {
-        p({
+        trackUserProfileWishlistAction: g
+    } = (0, p.NJ)(), C = l.useCallback(() => {
+        g({
             action: b.Mq.PRESS_WISHLIST_BREADCRUMB_CARD,
             skuId: t.id,
             wishlistId: s,
             productLines: new Set([t.productLine])
         }), A()
-    }, [t, s, A, p]), N = l.useCallback(() => {
-        p({
+    }, [t, s, A, g]), N = l.useCallback(() => {
+        g({
             action: b.Mq.PRESS_WISHLIST_BREADCRUMB_CARD,
             skuId: t.id,
             wishlistId: s,
             productLines: new Set([t.productLine])
         }), _()
-    }, [_, t.id, s, t.productLine, p]), {
+    }, [_, t.id, s, t.productLine, g]), {
         label: T,
         icon: S,
         isPromptingPurchase: j
@@ -117,7 +117,7 @@ function L(e) {
     } = e, r = (0, d.bG)([h.A], () => h.A.getApplication(t.applicationId)), {
         analyticsLocations: o
     } = (0, u.Ay)(...s ?? [], c.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON), A = l.useCallback(() => {
-        (0, p.a)(t, {
+        (0, g.a)(t, {
             isGift: !0,
             giftRecipient: n,
             giftingOrigin: S.vQ.USER_PROFILE_WISHLIST
@@ -133,7 +133,7 @@ function L(e) {
             giftingOrigin: S.vQ.USER_PROFILE_WISHLIST,
             analyticsLocations: o
         })
-    }, [t.id, t.applicationId, n, o]), g = l.useMemo(() => ({
+    }, [t.id, t.applicationId, n, o]), p = l.useMemo(() => ({
         title: t.name,
         description: y.intl.format(y.t["CqpEC+"], {
             applicationName: r?.name
@@ -145,7 +145,7 @@ function L(e) {
         wishlistOwner: n,
         onDetailsClick: _,
         onPurchaseClick: A,
-        singleCardInfo: g,
+        singleCardInfo: p,
         ...a
     })
 }

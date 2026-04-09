@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(503698),
+    l = n.n(r),
     s = n(110259),
     o = n(311907),
     d = n(3203),
     c = n(397927),
     u = n(793574),
     A = n(688810),
-    h = n(139286),
-    _ = n(414711),
+    _ = n(139286),
+    h = n(414711),
     m = n(187696),
     g = n(723690),
     p = n(21119),
@@ -30,7 +30,7 @@ var S = n(985018),
 function v(e) {
     let {
         ref: t,
-        isFocused: l,
+        isFocused: r,
         isActive: v,
         status: b,
         activities: y,
@@ -63,7 +63,7 @@ function v(e) {
     });
     a.useEffect(() => {
         let e = p.A.getUserAffinity(M.id);
-        (0, h.x)({
+        (0, _.x)({
             name: s.ImpressionNames.GIFT_INTENT_ACTION_BUTTON,
             type: s.ImpressionTypes.VIEW,
             properties: {
@@ -81,9 +81,9 @@ function v(e) {
             location_stack: G
         }), B()
     };
-    return (0, i.jsx)(_.A, {
+    return (0, i.jsx)(h.A, {
         ref: t,
-        isFocused: l,
+        isFocused: r,
         isActive: v,
         user: M,
         analyticsLocations: w,
@@ -91,7 +91,7 @@ function v(e) {
         onClick: j,
         height: 72,
         children: e => (0, i.jsxs)("div", {
-            className: r()(x.a4, x.Z$),
+            className: l()(x.a4, x.Z$),
             children: [(0, i.jsx)(g.A, {
                 className: x.Cv,
                 user: M,

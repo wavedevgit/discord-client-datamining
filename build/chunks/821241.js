@@ -10,8 +10,8 @@ var l = n(503698),
     s = n(397927),
     o = n(709066),
     c = n(71393),
-    d = n(763754),
-    u = n(643204),
+    u = n(763754),
+    d = n(643204),
     _ = n(809115),
     A = n(888675),
     m = n(705751),
@@ -24,7 +24,7 @@ function I(e) {
         compact: n,
         usernameHook: l,
         channel: I
-    } = e, N = (0, r.bG)([c.A], () => c.A.getGuild(I.guild_id)), g = (0, d.Ay)(t), f = l(g), {
+    } = e, N = (0, r.bG)([c.A], () => c.A.getGuild(I.guild_id)), g = (0, u.Ay)(t), f = l(g), {
         avatarSrc: C,
         eventHandlers: {
             onMouseEnter: h,
@@ -47,7 +47,7 @@ function I(e) {
                 className: a()(T.Qs, {
                     [T.oE]: n
                 }),
-                children: [(0, i.jsx)(u.ix, {
+                children: [(0, i.jsx)(d.ix, {
                     message: t,
                     messageClassname: T.he,
                     className: a()(T.QV, T.he, {

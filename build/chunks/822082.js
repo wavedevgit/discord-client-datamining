@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(503698),
+    l = n.n(r),
     s = n(615300),
     o = n(837381),
     d = n(397927),
@@ -15,10 +15,10 @@ var u = n(376506);
 let A = function(e) {
     let {
         index: t,
-        children: l,
+        children: r,
         user: A,
-        channel: h,
-        onClick: _,
+        channel: _,
+        onClick: h,
         isFocused: m,
         isActive: g,
         onOtherHover: p,
@@ -29,14 +29,14 @@ let A = function(e) {
         f(!1)
     };
     return (0, i.jsx)(o.tG, {
-        id: h.id,
+        id: _.id,
         children: e => (0, i.jsx)(d.vN3, {
             offset: {
                 left: -8,
                 right: -8
             },
             children: (0, i.jsx)(s.A.div, {
-                className: r()(u.Cf, E, {
+                className: l()(u.Cf, E, {
                     [u.vu]: g || C,
                     [u.CJ]: 0 === t
                 }),
@@ -57,13 +57,13 @@ let A = function(e) {
                 },
                 onMouseEnter: N,
                 onMouseLeave: S,
-                onClick: _ ?? void 0,
+                onClick: h ?? void 0,
                 style: {
                     LIST_ROW_HEIGHT: 73,
                     opacity: 1
                 },
                 ...e,
-                children: l(I || g || C)
+                children: r(I || g || C)
             })
         })
     })

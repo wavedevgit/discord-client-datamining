@@ -1,7 +1,7 @@
 /** chunk id: 884452 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => g,
-    is: () => p,
+    Ay: () => p,
+    is: () => g,
     sc: () => m
 });
 var i = n(627968),
@@ -31,7 +31,7 @@ function m(e, t, n, i) {
     return "compact" === i ? 32 : 40
 }
 
-function p(e, t) {
+function g(e, t) {
     switch (e) {
         case d.PU:
             return "hoisted-spacer";
@@ -50,21 +50,21 @@ function p(e, t) {
         }
     }
 }
-let g = l.memo(function(e) {
+let p = l.memo(function(e) {
     let {
         sectionIndex: t,
         guild: n,
         guildChannels: m,
-        guildChannelsVersion: p,
-        selectedChannelId: g,
+        guildChannelsVersion: g,
+        selectedChannelId: p,
         disableManageChannels: f
     } = e, x = l.useCallback(() => {
         let e = m.getCategoryFromSection(m.recentsSectionNumber);
         if (null == e) return;
         let t = null,
             i = e.getShownChannelAndThreadIds();
-        null != g && i.includes(g) && (t = (0, a.xb)(m)), (0, a.DD)(n.id, i, t)
-    }, [n.id, g, m, p]), {
+        null != p && i.includes(p) && (t = (0, a.xb)(m)), (0, a.DD)(n.id, i, t)
+    }, [n.id, p, m, g]), {
         density: E
     } = (0, s.wRf)(), I = "compact" === E ? 8 : 12;
     switch (t) {

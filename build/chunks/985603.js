@@ -5,19 +5,19 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(835245),
-    l = n(80703),
-    r = n(397927),
+    r = n(80703),
+    l = n(397927),
     s = n(73153),
-    o = n(384904),
-    d = n(6981),
-    c = n(308528),
-    u = n(77468),
-    A = n(869038),
-    h = n(933958),
+    o = n(6981),
+    d = n(308528),
+    c = n(77468),
+    u = n(869038),
+    A = n(933958),
     _ = n(956549),
-    m = n(257269),
-    g = n(793574),
-    p = n(627363),
+    h = n(257269),
+    m = n(793574),
+    g = n(627363),
+    p = n(323082),
     E = n(507263),
     I = n(352306),
     f = n(829203),
@@ -48,7 +48,7 @@ function G(e, t) {
         invite_code: null,
         has_auth_token: null,
         is_backgrounded: null,
-        fingerprint: null != n ? (0, l.d)(n) : null,
+        fingerprint: null != n ? (0, r.d)(n) : null,
         received_installation_id: i,
         link_type: t
     })
@@ -81,7 +81,7 @@ let k = {
             if (null == a) throw new j.A({
                 errorCode: U.Lw6.INVALID_GUILD_TEMPLATE
             }, `Invalid guild template id: ${t}`);
-            return D.Ay.focus(), (0, r.mMO)(async () => {
+            return D.Ay.focus(), (0, l.mMO)(async () => {
                 let {
                     default: e
                 } = await Promise.all([n.e("7726"), n.e("30106")]).then(n.bind(n, 72715));
@@ -105,14 +105,14 @@ let k = {
             } = e;
             return new Promise((e, a) => {
                 s.h.wait(() => {
-                    A.A.resolveGiftCode(t, !0, !0).then(a => {
+                    u.A.resolveGiftCode(t, !0, !0).then(a => {
                         let {
-                            giftCode: l
+                            giftCode: r
                         } = a;
                         D.Ay.focus(), L.default.track(U.HAw.OPEN_MODAL, {
                             type: "gift_accept",
                             location: U.$OG
-                        }), (0, r.mMO)(async () => {
+                        }), (0, l.mMO)(async () => {
                             let {
                                 default: e
                             } = await n.e("36820").then(n.bind(n, 67327));
@@ -121,7 +121,7 @@ let k = {
                                 ...n
                             })
                         }), e({
-                            giftCode: l
+                            giftCode: r
                         })
                     }).catch(() => a(new j.A({
                         errorCode: U.Lw6.INVALID_GIFT_CODE
@@ -203,10 +203,10 @@ let k = {
                     }), G(i, (0, w.OE)(t)));
                     break;
                 case w.XK.OAUTH2:
-                    let l = new URL(U.BVt.OAUTH2_AUTHORIZE, window.location.origin);
-                    l.search = i.search;
-                    let r = (0, T.getOAuth2AuthorizeProps)(l.toString());
-                    if (null != r) return (0, T.openOAuth2ModalWithCreateGuildModal)(r), !0;
+                    let r = new URL(U.BVt.OAUTH2_AUTHORIZE, window.location.origin);
+                    r.search = i.search;
+                    let l = (0, T.getOAuth2AuthorizeProps)(r.toString());
+                    if (null != l) return (0, T.openOAuth2ModalWithCreateGuildModal)(l), !0;
                     return !1;
                 case w.XK.ONE_TIME_LOGIN:
                     if (null != i) return (0, N.N)({
@@ -226,34 +226,34 @@ let k = {
                         let e = i.attemptId || (0, a.A)();
                         return async function(e, t, n) {
                             try {
-                                let i = h.Ay.getCurrentEmbeddedActivity();
+                                let i = A.Ay.getCurrentEmbeddedActivity();
                                 if (i?.applicationId === e) return void L.default.track(U.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {
                                     application_id: e,
                                     success: !1,
                                     failure_reason: "activity_already_running",
                                     attempt_id: n
                                 });
-                                let a = await p.Ay.fetchApplication(e),
-                                    l = a?.bot?.id;
-                                if (null == l) return void L.default.track(U.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {
+                                let a = await g.Ay.fetchApplication(e),
+                                    r = a?.bot?.id;
+                                if (null == r) return void L.default.track(U.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {
                                     application_id: e,
                                     success: !1,
                                     failure_reason: "no_bot_user",
                                     attempt_id: n
                                 });
-                                let r = await c.A.openPrivateChannel({
-                                        recipientIds: l
+                                let l = await d.A.openPrivateChannel({
+                                        recipientIds: r
                                     }),
                                     s = new URL(t),
                                     o = s.searchParams.get("referrer_id") ?? void 0,
                                     {
-                                        customId: d
-                                    } = await (0, m.d9)(e, s.searchParams.get("link_id"), s.searchParams.get("custom_id"));
+                                        customId: c
+                                    } = await (0, h.d9)(e, s.searchParams.get("link_id"), s.searchParams.get("custom_id"));
                                 await (0, _.A)({
                                     targetApplicationId: e,
-                                    channelId: r,
-                                    analyticsLocations: [g.A.DEEPLINK],
-                                    customId: d,
+                                    channelId: l,
+                                    analyticsLocations: [m.A.DEEPLINK],
+                                    customId: c,
                                     referrerId: o
                                 }), L.default.track(U.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {
                                     application_id: e,
@@ -298,7 +298,7 @@ let k = {
                     fingerprint: n
                 }
             } = e;
-            D.Ay.focus(null, !0), (0, d.mZ)(t, n)
+            D.Ay.focus(null, !0), (0, o.mZ)(t, n)
         }
     },
     [U.e$_.CONNECTIONS_CALLBACK]: {
@@ -310,18 +310,18 @@ let k = {
                     code: n,
                     openid_params: i,
                     iss: a,
-                    state: l
+                    state: r
                 }
             } = e;
-            if (!y.A.hasPendingAuthorizedState(l)) throw new j.A({
+            if (!y.A.hasPendingAuthorizedState(r)) throw new j.A({
                 errorCode: U.Lw6.INVALID_CONNECTION_CALLBACK_STATE
             }, "Provider authorization did not originate from this discord client");
             try {
-                return y.A.deletePendingAuthorizedState(l), await u.A.callback(t, {
+                return y.A.deletePendingAuthorizedState(r), await c.A.callback(t, {
                     code: n,
                     openid_params: i,
                     iss: a,
-                    state: l
+                    state: r
                 })
             } catch (e) {
                 if (e?.status === 400) throw new j.A({
@@ -341,7 +341,7 @@ let k = {
                     query: i
                 }
             } = e;
-            return (0, o.re)({
+            return (0, p.re)({
                 paymentSourceType: U.hes.PAYPAL,
                 state: t,
                 path: n,
@@ -360,7 +360,7 @@ let k = {
                     payment_source_type: a
                 }
             } = e;
-            return (0, o.re)({
+            return (0, p.re)({
                 paymentSourceType: a,
                 state: t,
                 path: n,

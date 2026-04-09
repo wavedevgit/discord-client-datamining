@@ -4,8 +4,8 @@ n.d(t, {
 });
 var l = n(627968),
     a = n(64700),
-    i = n(503698),
-    r = n.n(i),
+    r = n(503698),
+    i = n.n(r),
     s = n(397927),
     d = n(46054),
     o = n(957565),
@@ -18,11 +18,11 @@ function _(e) {
             data: {
                 title: t,
                 body: n,
-                sms: i,
+                sms: r,
                 is_localized: _
             }
         }
-    } = e, [m, p] = a.useState(!1), h = a.useRef(d.A.reactParserFor(d.A.defaultRules));
+    } = e, [m, p] = a.useState(!1), g = a.useRef(d.A.reactParserFor(d.A.defaultRules));
     return _ ? (0, l.jsxs)("div", {
         className: u.kL,
         children: [(0, l.jsx)(s.Heading, {
@@ -33,17 +33,17 @@ function _(e) {
         }), (0, l.jsx)(s.Text, {
             variant: "text-sm/normal",
             className: u.G3,
-            children: h.current(n)
+            children: g.current(n)
         }), (0, l.jsx)("div", {
             children: (0, l.jsxs)("div", {
-                className: r()(u.GH, {
+                className: i()(u.GH, {
                     [u.pG]: m
                 }),
                 children: [(0, l.jsx)(s.Text, {
                     variant: "text-md/normal",
                     selectable: !0,
                     className: u.Kk,
-                    children: i
+                    children: r
                 }), (0, l.jsx)("div", {
                     "data-button-hoisted-classname-wrapper": !0,
                     className: u.__invalid_trailingButton,
@@ -52,7 +52,7 @@ function _(e) {
                         size: "sm",
                         text: m ? c.intl.string(c.t.t5VZ88) : c.intl.string(c.t.OpuAlK),
                         onClick: () => {
-                            (0, o.C)(i, () => p(!0))
+                            (0, o.C)(r, () => p(!0))
                         }
                     })
                 })]

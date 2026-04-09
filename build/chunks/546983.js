@@ -1,15 +1,15 @@
 /** chunk id: 546983 params = (module,exports,require) **/
 n.d(t, {
     Au: () => p,
-    d5: () => _,
+    d5: () => h,
     j7: () => m,
-    kS: () => h,
+    kS: () => _,
     l6: () => g
 });
 var i = n(684013),
     a = n(833551),
-    l = n(395011),
-    r = n(837921),
+    r = n(395011),
+    l = n(837921),
     s = n(350535),
     o = n(636401),
     d = n(90924),
@@ -17,22 +17,22 @@ var i = n(684013),
     u = n(652215);
 let A = ["207646673902501888"];
 
-function h(e) {
-    return null != e && !!a.default.isOverlayOOPEnabledForPid(e) && l.A.isReady(e)
+function _(e) {
+    return null != e && !!a.default.isOverlayOOPEnabledForPid(e) && r.A.isReady(e)
 }
 
-function _(e) {
+function h(e) {
     return null == e ? {
         lock: u.FXj,
         context: u.BRT.APP
-    } : h(e) ? (i.A.setInputLocked(!1, e), {
+    } : _(e) ? (i.A.setInputLocked(!1, e), {
         lock() {
             i.A.setInputLocked(!0, e)
         },
         context: u.BRT.POPOUT
-    }) : (r.Ay.focus(null, !0), {
+    }) : (l.Ay.focus(null, !0), {
         lock() {
-            r.Ay.setForegroundProcess(e)
+            l.Ay.setForegroundProcess(e)
         },
         context: u.BRT.APP
     })
@@ -42,7 +42,7 @@ let m = async (e, t, n) => {
     if (null == n || "" === n) return Promise.reject(new o.A({
         closeCode: u.YI$.INVALID_CLIENTID
     }, "No Client ID Specified"));
-    let i = r.Ay.releaseChannel !== u.BIo.CANARY && !A.includes(n) && e.transport !== c.z4.POST_MESSAGE;
+    let i = l.Ay.releaseChannel !== u.BIo.CANARY && !A.includes(n) && e.transport !== c.z4.POST_MESSAGE;
     return await (0, d.e2)(n, i, e.abortController.signal), (0, d.uM)(e, n, t)
 }, g = () => (0, d.BB)(e => {
     let t = [];

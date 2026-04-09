@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(287809),
     g = n(486020),
     p = n(403362),
-    f = n(518477),
-    _ = n(985018),
+    _ = n(518477),
+    f = n(985018),
     E = n(880986);
 
 function x(e) {
@@ -63,7 +63,7 @@ function x(e) {
         children: (0, i.jsx)(o.Text, {
             color: "text-default",
             variant: "text-sm/normal",
-            children: _.intl.string(_.t.zjVh8h)
+            children: f.intl.string(f.t.zjVh8h)
         })
     }) : (0, i.jsxs)(o.DUT, {
         className: a()(E.kL, E.vk, {
@@ -73,7 +73,7 @@ function x(e) {
             (0, m.openUserProfileModal)({
                 userId: t,
                 channelId: n,
-                tabSection: f.RP.MUTUAL_GUILDS,
+                tabSection: _.RP.MUTUAL_GUILDS,
                 sourceAnalyticsLocations: [c.A.DM_CHANNEL]
             })
         },
@@ -83,7 +83,7 @@ function x(e) {
         }), (0, i.jsx)(o.Text, {
             className: E.NI,
             variant: "text-sm/normal",
-            children: _.intl.format(_.t.eE3oep, {
+            children: f.intl.format(f.t.eE3oep, {
                 count: x.length
             })
         })]

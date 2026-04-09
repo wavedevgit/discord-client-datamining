@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     r = n(503698),
-    s = n.n(r),
-    l = n(311907),
+    l = n.n(r),
+    s = n(311907),
     o = n(391973),
     d = n(684013),
     c = n(964486),
@@ -33,24 +33,24 @@ let v = [],
             containerRenderGate: y,
             className: T,
             dragContainerClassName: N
-        } = e, w = (0, l.bG)([u.A], () => u.A.getWidgetConfig(t.type), [t.type]), L = (0, A.RE)(t.id, A.X1), j = (0, x.A)(), [O, P] = a.useState(() => y?.stores ?? v);
+        } = e, w = (0, s.bG)([u.A], () => u.A.getWidgetConfig(t.type), [t.type]), L = (0, A.RE)(t.id, A.X1), O = (0, x.A)(), [j, P] = a.useState(() => y?.stores ?? v);
         (0, c.Ay)(() => {
             P(y?.stores ?? v)
         });
-        let R = (0, l.bG)(O, () => y?.shouldRender({
+        let D = (0, s.bG)(j, () => y?.shouldRender({
                 widget: t,
-                locked: j
-            }) ?? !0, [y, j, t]),
-            D = (0, I.A)(),
-            M = (0, l.bG)([_.A], () => _.A.windowSize((0, m.Q2)(D))),
-            k = a.useCallback((e, t, n, i, a) => {
+                locked: O
+            }) ?? !0, [y, O, t]),
+            R = (0, I.A)(),
+            k = (0, s.bG)([_.A], () => _.A.windowSize((0, m.Q2)(R))),
+            M = a.useCallback((e, t, n, i, a) => {
                 let r = _.A.windowSize((0, m.Q2)((0, I.b)())),
-                    s = (0, h.NO)(n, r),
-                    l = (0, h.R9)(i, r);
+                    l = (0, h.NO)(n, r),
+                    s = (0, h.R9)(i, r);
                 (0, o.uD)(t), (0, o.Ju)({
                     widgetId: t,
-                    anchor: s,
-                    size: l
+                    anchor: l,
+                    size: s
                 });
                 let c = e === g.P.MOVE,
                     p = (0, h.Ly)(n, r.width, r.height, a.width, a.height);
@@ -77,22 +77,22 @@ let v = [],
                 anchor: W,
                 minSize: H
             } = t,
-            B = a.useMemo(() => (0, h.fd)(F, M), [F, M]),
-            Y = (0, h.Nv)(W, M),
+            B = a.useMemo(() => (0, h.fd)(F, k), [F, k]),
+            Y = (0, h.Nv)(W, k),
             {
                 resizeX: X,
                 resizeY: Z,
                 dragAnywhere: K,
                 constrainAutoSizeToExplicitResizeEvents: J
             } = w ?? {},
-            Q = !j,
-            q = U || !j,
+            Q = !O,
+            q = U || !O,
             $ = a.useMemo(() => ({
                 minX: 0,
                 minY: 0,
-                maxX: M.width,
-                maxY: M.height
-            }), [M]),
+                maxX: k.width,
+                maxY: k.height
+            }), [k]),
             ee = a.useCallback(e => n({
                 ...e,
                 widget: t,
@@ -100,18 +100,18 @@ let v = [],
                 className: T
             }), [t, n, T]),
             et = a.useCallback(e => null != r || null != C ? (0, i.jsxs)("div", {
-                className: s()(b.vJ, L && b.vw),
+                className: l()(b.vJ, L && b.vw),
                 children: [r?.(t), C?.(t, e)]
             }) : null, [t, r, L, C]),
-            en = (0, l.bG)([f.A], () => f.A.hasRenderDebugMode(p.x7.WidgetAreas)),
+            en = (0, s.bG)([f.A], () => f.A.hasRenderDebugMode(p.x7.WidgetAreas)),
             ei = a.useMemo(() => {
                 if (null != S) return e => S({
                     ...e,
                     widget: t
                 })
             }, [S, t]);
-        return R ? (0, i.jsx)(g.A, {
-            className: s()({
+        return D ? (0, i.jsx)(g.A, {
+            className: l()({
                 [b.Yz]: en,
                 [b.xu]: en && !U,
                 [b.E]: en && U
@@ -125,7 +125,7 @@ let v = [],
                 height: 0
             },
             hidden: !q,
-            locked: j,
+            locked: O,
             resizeX: X ?? !1,
             resizeY: Z ?? !1,
             style: {
@@ -134,9 +134,9 @@ let v = [],
             dragAnywhere: K ?? !1,
             constrainAutoSizeToExplicitResizeEvents: J ?? !1,
             active: Q,
-            onUpdate: k,
+            onUpdate: M,
             onClick: G,
-            targetWindow: D,
+            targetWindow: R,
             forceShowExtras: L,
             renderExtras: et,
             resizeValidation: ei,

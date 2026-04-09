@@ -9,8 +9,8 @@ var i = n(311907),
     s = n(734057),
     o = n(320501),
     c = n(661191),
-    d = n(753738),
-    u = n(785823),
+    u = n(753738),
+    d = n(785823),
     _ = n(652215);
 let A = {},
     m = 0,
@@ -29,7 +29,7 @@ function N(e) {
         id: t = (0, a.cR)(i),
         isBlockedEdit: (0, a.Qn)(i),
         messageData: i,
-        errorMessage: (0, d.PD)(i, l)
+        errorMessage: (0, u.PD)(i, l)
     }, A[t] = n, m++, !0
 }
 
@@ -87,7 +87,7 @@ let C = new f(l.h, {
         } = e;
         if (null == t || n.type !== _.lAJ.AUTO_MODERATION_ACTION) return !1;
         let i = (0, r.rh)(n);
-        return !!(0, u.ER)(i) && !!(0, u.de)(i) && (T[t] = i.id, !0)
+        return !!(0, d.ER)(i) && !!(0, d.de)(i) && (T[t] = i.id, !0)
     },
     MESSAGE_SEND_FAILED_AUTOMOD: N,
     MESSAGE_EDIT_FAILED_AUTOMOD: N,

@@ -17,8 +17,8 @@ var i = n(627968),
     A = n(296216),
     _ = n(793574),
     m = n(480890),
-    p = n(47167),
-    g = n(643501),
+    g = n(47167),
+    p = n(643501),
     f = n(916641),
     x = n(652896),
     E = n(279250),
@@ -110,11 +110,11 @@ let G = (0, A.J)(function(e) {
         application: ea,
         hangStatusActivity: er,
         showHangStatus: eo
-    } = e, ed = (0, p.Ay)(A), ec = l.useRef(null), [eu, eh] = l.useState(!1), eA = l.useRef(null), [e_, em] = l.useState(!1), [ep, eg] = l.useState(!1), [ef, ex] = l.useState(!1), eE = e_ || ef || ep, eI = () => {
+    } = e, ed = (0, g.Ay)(A), ec = l.useRef(null), [eu, eh] = l.useState(!1), eA = l.useRef(null), [e_, em] = l.useState(!1), [eg, ep] = l.useState(!1), [ef, ex] = l.useState(!1), eE = e_ || ef || eg, eI = () => {
         eh(!eu)
     }, eC = (e, t) => {
         let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
-        null != t && n.has(t) && (ep && eg(!1), e_ && em(!1)), eN()
+        null != t && n.has(t) && (eg && ep(!1), e_ && em(!1)), eN()
     }, eN = () => {
         clearTimeout(eA.current), Z?.(s.id)
     };
@@ -122,7 +122,7 @@ let G = (0, A.J)(function(e) {
         clearTimeout(eA.current)
     }, []);
     let eT = () => {
-            if (!q || !(0, E.eo)(A, v.A, S.A, b.A, g.default)[0]) return;
+            if (!q || !(0, E.eo)(A, v.A, S.A, b.A, p.default)[0]) return;
             let e = {
                 streamType: O.U4.GUILD,
                 ownerId: s.id,
@@ -229,7 +229,7 @@ let G = (0, A.J)(function(e) {
                             ref: ec,
                             onMouseDown: e.onMouseDown,
                             onKeyDown: e.onKeyDown,
-                            onAddHangStatusClicked: () => eg(!0)
+                            onAddHangStatusClicked: () => ep(!0)
                         })
                     })
                 }

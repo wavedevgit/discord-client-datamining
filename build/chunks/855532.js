@@ -1,6 +1,6 @@
 /** chunk id: 855532 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
 var i = n(627968);
 n(64700);
@@ -11,21 +11,21 @@ var l = n(397927),
     o = n(888675),
     c = n(985018);
 
-function d(e) {
+function u(e) {
     let {
         message: t,
         usernameHook: n,
-        compact: d
-    } = e, u = (0, s.Ay)(t), _ = n(u);
+        compact: u
+    } = e, d = (0, s.Ay)(t), _ = n(d);
     return (0, i.jsx)(o.A, {
         iconNode: (0, i.jsx)(l.R2l, {
             size: "xs",
             color: "currentColor"
         }),
         timestamp: t.timestamp,
-        compact: d,
+        compact: u,
         children: c.intl.format(c.t["4wLp25"], {
-            username: u.nick,
+            username: d.nick,
             usernameHook: _,
             editGroupButton: (0, i.jsx)(l.Text, {
                 tag: "span",

@@ -23,31 +23,31 @@ let A = s.memo(function(e) {
         fit: A = "contain",
         mirror: g = !1,
         paused: p = !1,
-        streamPreviewURL: f,
-        videoSpinnerContext: _,
+        streamPreviewURL: _,
+        videoSpinnerContext: f,
         userId: E,
         streamKey: x
     } = e, [C, S] = s.useState(!0);
     (0, d.A)({
         location: "VideoStream",
-        videoSpinnerContext: _,
+        videoSpinnerContext: f,
         userId: E,
         streamId: t,
         loading: C,
         paused: p
     });
     let {
-        onReady: T
+        onReady: I
     } = (0, c.A)({
         streamId: t,
         userId: E,
         loading: C,
-        videoSpinnerContext: _,
+        videoSpinnerContext: f,
         streamKey: x,
         paused: p
-    }), N = s.useCallback(() => {
-        S(!1), T()
-    }, [T]);
+    }), T = s.useCallback(() => {
+        S(!1), I()
+    }, [I]);
     return (0, l.jsxs)("div", {
         className: r()(h.wrapper, i),
         children: [null != t && (0, l.jsx)(a, {
@@ -56,15 +56,15 @@ let A = s.memo(function(e) {
             }, m),
             streamId: t,
             onResize: n,
-            onReady: N,
+            onReady: T,
             paused: p
         }), p ? null : (0, l.jsx)("div", {
             className: r()(h.previewWrapper, {
                 [h.loading]: C
             }),
             children: C && (0, l.jsxs)(s.Fragment, {
-                children: [null != f ? (0, l.jsx)("img", {
-                    src: f,
+                children: [null != _ ? (0, l.jsx)("img", {
+                    src: _,
                     alt: "",
                     className: h.previewImage
                 }) : (0, l.jsx)("div", {

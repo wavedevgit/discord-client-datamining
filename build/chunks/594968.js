@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(311907),
-    r = n(827734),
+    r = n(311907),
+    l = n(827734),
     s = n(397927),
     o = n(308528),
     d = n(688810),
     c = n(587895),
     u = n(769015),
     A = n(640708),
-    h = n(657331),
-    _ = n(994500),
+    _ = n(657331),
+    h = n(994500),
     m = n(287809),
     g = n(954571),
     p = n(427262),
@@ -29,30 +29,30 @@ function x(e) {
     let {
         user: t,
         applicationId: n,
-        isGameRelationship: l,
+        isGameRelationship: r,
         active: o,
         onAcceptFriendRequest: d
     } = e, [c, u] = a.useState(!1), A = m.default.getCurrentUser()?.isStaff() && t?.isStaff(), {
-        acceptFriendRequest: h,
-        cancelFriendRequest: _
+        acceptFriendRequest: _,
+        cancelFriendRequest: h
     } = (0, E.I)({
         userId: t.id,
         applicationId: n,
-        isGameRelationship: l,
+        isGameRelationship: r,
         location: "Friends",
         onFinally: () => {
             u(!1)
         }
     }), g = a.useCallback(e => {
-        u(!0), e.stopPropagation(), d(), h()
-    }, [h, d]), p = a.useCallback(e => {
-        e.stopPropagation(), _()
-    }, [_]);
+        u(!0), e.stopPropagation(), d(), _()
+    }, [_, d]), p = a.useCallback(e => {
+        e.stopPropagation(), h()
+    }, [h]);
     return (0, i.jsxs)(i.Fragment, {
         children: [A && (0, i.jsx)("div", {
             className: S.ou,
             children: (0, i.jsx)(s.LpS, {
-                color: r.A.unsafe_rawColors.BRAND_500.css,
+                color: l.A.unsafe_rawColors.BRAND_500.css,
                 text: N.intl.string(N.t.oMx98L)
             })
         }), (0, i.jsx)(I.A, {
@@ -76,14 +76,14 @@ function v(e) {
     let {
         userId: t,
         applicationId: n,
-        isGameRelationship: l,
-        active: r
+        isGameRelationship: r,
+        active: l
     } = e, {
         cancelFriendRequest: o
     } = (0, E.I)({
         userId: t,
         applicationId: n,
-        isGameRelationship: l,
+        isGameRelationship: r,
         location: "Friends"
     }), d = a.useCallback(e => {
         e.stopPropagation(), o()
@@ -93,7 +93,7 @@ function v(e) {
         actionType: I.A.ActionTypes.DENY,
         tooltip: N.intl.string(N.t.eaq81S),
         onClick: d,
-        shouldHighlight: r
+        shouldHighlight: l
     })
 }
 
@@ -101,26 +101,26 @@ function b(e) {
     let {
         isGameRelationship: t,
         applicationId: n,
-        userTag: r,
+        userTag: l,
         isProvisional: o
-    } = e, d = a.useMemo(() => t ? N.intl.string(N.t["Uv/eTx"]) : r, [t, r]), h = (0, l.bG)([c.A], () => null != n ? c.A.getApplication(n) : null);
+    } = e, d = a.useMemo(() => t ? N.intl.string(N.t["Uv/eTx"]) : l, [t, l]), _ = (0, r.bG)([c.A], () => null != n ? c.A.getApplication(n) : null);
     return (0, i.jsxs)("div", {
         className: S.P9,
         children: [!o && (0, i.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: "text-subtle",
             children: d
-        }), null != h && (0, i.jsxs)(i.Fragment, {
+        }), null != _ && (0, i.jsxs)(i.Fragment, {
             children: [!o && (0, i.jsx)(A.A, {
                 height: 2,
                 width: 2
             }), (0, i.jsx)(u.A, {
-                game: h,
+                game: _,
                 size: u.M.XXSMALL
             }), (0, i.jsx)(s.Text, {
                 variant: "text-sm/medium",
                 color: "text-subtle",
-                children: h.name
+                children: _.name
             })]
         })]
     })
@@ -131,7 +131,7 @@ function y(e) {
         user: t,
         hovered: n,
         status: a,
-        isGameRelationship: l,
+        isGameRelationship: r,
         applicationId: o,
         isFriend: d
     } = e, c = p.Ay.useUserTag(t);
@@ -144,14 +144,14 @@ function y(e) {
             className: S.Tl,
             children: [(0, i.jsx)(s.Uzd, {
                 size: "sm",
-                color: r.A.colors.ICON_FEEDBACK_POSITIVE
+                color: l.A.colors.ICON_FEEDBACK_POSITIVE
             }), (0, i.jsx)(s.Text, {
                 variant: "text-sm/medium",
                 color: "text-muted",
                 children: N.intl.string(N.t.bgL68y)
             })]
         }) : (0, i.jsx)(b, {
-            isGameRelationship: l,
+            isGameRelationship: r,
             isProvisional: t.isProvisional,
             applicationId: o,
             userTag: c
@@ -163,14 +163,14 @@ function O(e) {
     let {
         user: t,
         type: n,
-        status: r,
+        status: l,
         isFocused: c,
         applicationId: u,
         isGameRelationship: A,
         onAcceptFriendRequest: m
     } = e, {
         analyticsLocations: p
-    } = (0, d.Ay)(), E = r === T.clD.OFFLINE ? T.clD.UNKNOWN : r, I = (0, l.bG)([_.A], () => _.A.getRelationshipType(t.id)), C = a.useCallback(() => (0, h.openUserProfileModal)({
+    } = (0, d.Ay)(), E = l === T.clD.OFFLINE ? T.clD.UNKNOWN : l, I = (0, r.bG)([h.A], () => h.A.getRelationshipType(t.id)), C = a.useCallback(() => (0, _.openUserProfileModal)({
         userId: t.id,
         sourceAnalyticsLocations: p
     }), [p, t.id]), N = e => {

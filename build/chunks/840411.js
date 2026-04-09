@@ -1,16 +1,16 @@
 /** chunk id: 840411 params = (module,exports,require) **/
-function i(e, t, n, i) {
-    let a = null,
+function n(e, t, i, n) {
+    let s = null,
         l = null;
-    n < i ? (a = t[i]?.skuId ?? null, l = t[i + 1]?.skuId ?? null) : (a = t[i - 1]?.skuId ?? null, l = t[i]?.skuId ?? null);
-    let s = [...t],
-        [r] = s.splice(n, 1);
-    return s.splice(i, 0, r), {
-        newWishlistData: e.set("items", s),
-        previousSkuId: a,
+    i < n ? (s = t[n]?.skuId ?? null, l = t[n + 1]?.skuId ?? null) : (s = t[n - 1]?.skuId ?? null, l = t[n]?.skuId ?? null);
+    let a = [...t],
+        [r] = a.splice(i, 1);
+    return a.splice(n, 0, r), {
+        newWishlistData: e.set("items", a),
+        previousSkuId: s,
         nextSkuId: l
     }
 }
-n.d(t, {
-    Ap: () => i
-}), n(872472), n(394300), n(652215)
+i.d(t, {
+    Ap: () => n
+}), i(872472), i(394300), i(652215)

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(442433),
     r = n(383501),
-    s = n(1193),
-    l = n(589051),
+    l = n(1193),
+    s = n(589051),
     o = n(547463),
     d = n(620851),
     c = n(646881),
@@ -31,18 +31,18 @@ let v = {
                 locked: n,
                 size: a,
                 padding: r,
-                borderWidth: s,
-                showEmpty: l
+                borderWidth: l,
+                showEmpty: s
             } = e;
             return (0, h.cv)(t) ? (0, i.jsx)(f.A, {
                 id: t.id,
                 locked: n,
                 widget: t,
-                height: "auto" === a.height ? 0 : a.height - 2 * r - 2 * s,
-                width: "auto" === a.width ? 0 : a.width - 2 * r - 2 * s,
-                showEmpty: l,
+                height: "auto" === a.height ? 0 : a.height - 2 * r - 2 * l,
+                width: "auto" === a.width ? 0 : a.width - 2 * r - 2 * l,
+                showEmpty: s,
                 padding: r,
-                borderWidth: s
+                borderWidth: l
             }) : null
         },
         renderTitle: () => (0, i.jsx)(x.Pl, {
@@ -170,8 +170,8 @@ let v = {
                 locked: n,
                 size: a,
                 dragStart: r,
-                anchorTop: s,
-                anchorLeft: l,
+                anchorTop: l,
+                anchorLeft: s,
                 showEmpty: o,
                 padding: d,
                 borderWidth: c
@@ -182,8 +182,8 @@ let v = {
                 pinned: t.pinned,
                 opacity: t.opacity,
                 size: a,
-                anchorTop: s,
-                anchorLeft: l,
+                anchorTop: l,
+                anchorLeft: s,
                 widget: t,
                 isPreviewingInGame: !1,
                 dragStart: r,
@@ -277,7 +277,7 @@ let v = {
             children: b.intl.string(b.t["6gwSFY"])
         }),
         renderButtons: () => null,
-        predicate: () => !(0, l.NI)("WidgetRenderConfig").hasFriendList
+        predicate: () => !(0, s.NI)("WidgetRenderConfig").hasFriendList
     },
     [E.uss.FRIENDS]: {
         renderWidget(e) {
@@ -292,7 +292,7 @@ let v = {
             children: b.intl.string(b.t.TdEu5X)
         }),
         renderButtons: () => null,
-        predicate: () => (0, l.NI)("WidgetRenderConfig").hasFriendList
+        predicate: () => (0, s.NI)("WidgetRenderConfig").hasFriendList
     },
     [E.uss.TEXT_CHAT_V3]: {
         renderWidget(e) {
@@ -311,16 +311,16 @@ let v = {
             children: b.intl.string(b.t["/VQax8"])
         }),
         renderButtons: () => null,
-        predicate: () => (0, l.NI)("WidgetRenderConfig").hasChat,
+        predicate: () => (0, s.NI)("WidgetRenderConfig").hasChat,
         containerRenderGate: {
-            stores: [r.A, s.A],
+            stores: [r.A, l.A],
             shouldRender(e) {
                 let {
                     locked: t
                 } = e;
                 if (t) return !1;
                 let n = r.A.getChannelId() ?? null,
-                    [i] = s.A.getSessionEntries(),
+                    [i] = l.A.getSessionEntries(),
                     a = i.length > 0;
                 return null != n || a
             }

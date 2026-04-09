@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(795816),
     _ = n(933958),
     m = n(5867),
-    p = n(652215),
-    g = n(985018),
+    g = n(652215),
+    p = n(985018),
     f = n(825346);
 
 function x(e) {
@@ -48,14 +48,14 @@ function x(e) {
         E.current?.focus()
     }, []);
     (0, h.Vo)({
-        event: p.jej.FOCUS_CHAT_BUTTON,
+        event: g.jej.FOCUS_CHAT_BUTTON,
         handler: S
     });
-    let b = I ? g.intl.string(g.t["5MstTl"]) : g.intl.string(g.t.kkKapG),
+    let b = I ? p.intl.string(p.t["5MstTl"]) : p.intl.string(p.t.kkKapG),
         y = [b];
-    T > 0 && y.push(g.intl.formatToPlainString(g.t["3l1GOx"], {
+    T > 0 && y.push(p.intl.formatToPlainString(p.t["3l1GOx"], {
         mentionCount: T
-    })), N > 0 && y.push(g.intl.string(g.t.x5zAGZ));
+    })), N > 0 && y.push(p.intl.string(p.t.x5zAGZ));
     let v = (0, a.bG)([_.Ay], () => _.Ay.getFocusedLayout()),
         j = T > 0 ? T : N,
         R = j > 0;

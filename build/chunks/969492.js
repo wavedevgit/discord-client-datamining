@@ -5,16 +5,16 @@ n.d(t, {
 });
 var i, a = n(627968);
 n(64700);
-var l = n(989349),
-    r = n.n(l),
+var r = n(989349),
+    l = n.n(r),
     s = n(192308),
     o = n(834269),
     d = n(333639),
     c = n(236697),
     u = n(768569),
     A = n(962915),
-    h = n(164554),
-    _ = n(305498),
+    _ = n(164554),
+    h = n(305498),
     m = n(909255),
     g = n(374079),
     p = n(328717),
@@ -29,7 +29,7 @@ function N(e) {
         children: t,
         popoverType: n,
         targetElementRef: i,
-        churnDiscountOffer: l,
+        churnDiscountOffer: r,
         premiumSubscription: T,
         receivesUpdatedUpsellPopover: N,
         orbsRewardAmount: S,
@@ -44,9 +44,9 @@ function N(e) {
     if ((0, s.useHasAnyModalOpen)()) return t;
     switch (n) {
         case "churn_discount":
-            if (null != l && null != T) return (0, a.jsx)(p.A, {
+            if (null != r && null != T) return (0, a.jsx)(p.A, {
                 targetElementRef: i,
-                discountOffer: l,
+                discountOffer: r,
                 premiumSubscription: T,
                 dismissCoachmark: v,
                 children: t
@@ -76,13 +76,13 @@ function N(e) {
                 children: t
             });
         case "orbs_intro":
-            return (0, a.jsx)(h.A, {
+            return (0, a.jsx)(_.A, {
                 targetElementRef: i,
                 dismissPopover: v,
                 children: t
             });
         case "orbs_drop":
-            if (null != x) return (0, a.jsx)(_.A, {
+            if (null != x) return (0, a.jsx)(h.A, {
                 targetElementRef: i,
                 dismissPopover: b,
                 lastGrantedRewardAmount: x,
@@ -91,7 +91,7 @@ function N(e) {
             break;
         case "reverse_trial": {
             let e = R?.trial_id === C.Tt,
-                n = L ?? (R?.expires_at != null ? r()(R?.expires_at) : null);
+                n = L ?? (R?.expires_at != null ? l()(R?.expires_at) : null);
             if (null != n) return (0, a.jsx)(f.A, {
                 endsAt: n,
                 variant: e ? "followup" : "initial",

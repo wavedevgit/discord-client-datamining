@@ -20,15 +20,15 @@ function p(e) {
     let {
         channelId: t,
         warningId: p,
-        senderId: f
-    } = e, _ = l.useCallback(() => {
+        senderId: _
+    } = e, f = l.useCallback(() => {
         (0, d.xi)(t, [p])
-    }, [t, p]), E = (0, a.bG)([c.A], () => c.A.isBlocked(f)), x = l.useMemo(() => ({
+    }, [t, p]), E = (0, a.bG)([c.A], () => c.A.isBlocked(_)), x = l.useMemo(() => ({
         channelId: t,
         warningId: p,
-        senderId: f,
+        senderId: _,
         warningType: u._j.INAPPROPRIATE_CONVERSATION_TIER_2
-    }), [t, p, f]);
+    }), [t, p, _]);
     l.useEffect(() => {
         (0, h.QF)({
             ...x,
@@ -54,7 +54,7 @@ function p(e) {
                         onClose: s
                     } = n;
                     return (0, i.jsx)(e, {
-                        otherUserId: f,
+                        otherUserId: _,
                         channelId: t,
                         warningId: p,
                         warningType: u._j.INAPPROPRIATE_CONVERSATION_TIER_2,
@@ -65,14 +65,14 @@ function p(e) {
             }, {
                 modalKey: A.V
             }), C(h.Wm.USER_BANNER_OPEN_SAFETY_TOOLS)
-        }, [t, f, p, C]),
-        T = l.useCallback(() => {
-            _(), C(h.Wm.USER_BANNER_BLOCK_CONFIRM)
-        }, [_, C]),
-        N = l.useCallback(() => {
-            _(), C(h.Wm.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
-        }, [_, C]),
+        }, [t, _, p, C]),
         I = l.useCallback(() => {
+            f(), C(h.Wm.USER_BANNER_BLOCK_CONFIRM)
+        }, [f, C]),
+        T = l.useCallback(() => {
+            f(), C(h.Wm.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
+        }, [f, C]),
+        N = l.useCallback(() => {
             (0, r.mMO)(async () => {
                 let {
                     default: e
@@ -84,26 +84,26 @@ function p(e) {
                     } = n;
                     return (0, i.jsx)(e, {
                         transitionState: l,
-                        onBlock: T,
-                        onBlockAndReport: N,
+                        onBlock: I,
+                        onBlockAndReport: T,
                         onCancel: () => {
                             s?.(), C(h.Wm.USER_BANNER_BLOCK_CANCEL)
                         },
                         onClose: s,
-                        userId: f,
+                        userId: _,
                         channelId: t
                     })
                 }
             })
-        }, [T, N, f, t, C]);
+        }, [I, T, _, t, C]);
     return (0, i.jsx)(m.N, {
         channelId: t,
         warningId: p,
-        senderId: f,
+        senderId: _,
         warningType: u._j.INAPPROPRIATE_CONVERSATION_TIER_2,
         header: g.intl.string(g.t.ZzlB5p),
         description: g.intl.string(g.t["D1aU+h"]),
-        onDismiss: _,
+        onDismiss: f,
         buttons: [{
             text: g.intl.string(g.t.Qyu4UK),
             variant: "primary",
@@ -111,7 +111,7 @@ function p(e) {
         }, ...E ? [] : [{
             text: g.intl.string(g.t["7q0bNY"]),
             variant: "secondary",
-            onClick: I
+            onClick: N
         }]]
     })
 }

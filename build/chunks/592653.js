@@ -1,13 +1,13 @@
 /** chunk id: 592653 params = (module,exports,require) **/
 n.d(t, {
-    WW: () => h,
+    WW: () => _,
     Y$: () => A,
-    t$: () => _
+    t$: () => h
 });
 var i = n(735438),
     a = n.n(i),
-    l = n(933958),
-    r = n(969151),
+    r = n(933958),
+    l = n(969151),
     s = n(287809),
     o = n(403362),
     d = n(562153),
@@ -15,12 +15,12 @@ var i = n(735438),
     u = n(613057);
 
 function A() {
-    let e = l.Ay.getCurrentEmbeddedActivity();
+    let e = r.Ay.getCurrentEmbeddedActivity();
     if (null == e) return {
         participants: []
     };
-    let t = (0, r.D)(e.location),
-        n = (0, r.H)(e.location);
+    let t = (0, l.D)(e.location),
+        n = (0, l.H)(e.location);
     return {
         participants: Array.from(e.userIds, e => {
             let i = s.default.getUser(e);
@@ -33,11 +33,11 @@ function A() {
         }).filter(o.Vq)
     }
 }
-let h = {
+let _ = {
         [u.sm.ANY]: [u.VH]
     },
-    _ = {
-        scope: h,
+    h = {
+        scope: _,
         handler: () => e => {
             let {
                 prevState: t,

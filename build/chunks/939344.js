@@ -14,10 +14,10 @@ function o(e) {
         message: t,
         compact: o,
         missed: c,
-        joinable: d,
-        usernameHook: u,
+        joinable: u,
+        usernameHook: d,
         onClickJoinCall: _
-    } = e, A = (0, a.Ay)(t), m = A.nick, E = u(A), T = (0, l.A)(t);
+    } = e, A = (0, a.Ay)(t), m = A.nick, E = d(A), T = (0, l.A)(t);
     return c ? (0, i.jsx)(r.A, {
         icon: n(130158),
         timestamp: t.timestamp,
@@ -41,7 +41,7 @@ function o(e) {
         }) : s.intl.format(s.t.LuB5RD, {
             username: m,
             usernameHook: E
-        }), d ? (0, i.jsx)(r.A.Action, {
+        }), u ? (0, i.jsx)(r.A.Action, {
             onClick: _,
             children: s.intl.string(s.t.oa9mvZ)
         }) : null]

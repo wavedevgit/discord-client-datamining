@@ -9,8 +9,8 @@ var i = n(627968),
     s = n(837381),
     o = n(311907),
     c = n(201275),
-    d = n(384231),
-    u = n(9842),
+    u = n(384231),
+    d = n(9842),
     _ = n(734057),
     A = n(661191),
     m = n(141468),
@@ -39,26 +39,26 @@ let M = l.memo(function(e) {
         isGroupStart: U,
         animateAvatar: P,
         subscribeToComponentDispatch: v,
-        renderThreadAccessory: j,
-        trackAnnouncementViews: y = !1,
+        renderThreadAccessory: y,
+        trackAnnouncementViews: j = !1,
         ...k
-    } = e, b = t.type === R.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), G = t.isFirstMessageInForumPost(L), H = (0, d.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
-        content: F,
-        hasSpoilerEmbeds: B,
-        hasBailedAst: w
+    } = e, b = t.type === R.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), G = t.isFirstMessageInForumPost(L), H = (0, u.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
+        content: w,
+        hasSpoilerEmbeds: F,
+        hasBailedAst: B
     } = (0, N.A)(t, {
         hideSimpleEmbedContent: D,
         allowList: G || H,
         allowHeading: G || H,
         allowLinks: !0,
         previewLinkTarget: !0
-    }), V = t.type === R.lAJ.REPLY ? t.messageReference : void 0, X = (0, o.bG)([u.A], () => u.A.getMessageByReference(V)), q = (0, s.rm)(t.id), K = (0, E.Ay)(t), Y = (0, o.bG)([_.A], () => t.hasFlag(R.pr7.HAS_THREAD) && _.A.getChannel(A.default.castMessageIdAsChannelId(t.id))), W = (0, c.$7)({
+    }), V = t.type === R.lAJ.REPLY ? t.messageReference : void 0, X = (0, o.bG)([d.A], () => d.A.getMessageByReference(V)), q = (0, s.rm)(t.id), K = (0, E.Ay)(t), Y = (0, o.bG)([_.A], () => t.hasFlag(R.pr7.HAS_THREAD) && _.A.getChannel(A.default.castMessageIdAsChannelId(t.id))), W = (0, c.$7)({
         guildId: L.guild_id,
         roleId: K.iconRoleId
     }), J = (0, g.A)({
         message: t,
         channel: L,
-        enabled: y
+        enabled: j
     }), z = (0, I.fF)(t), Q = (0, I.ZD)(t);
     return (0, i.jsx)(T.A, {
         compact: n,
@@ -75,15 +75,15 @@ let M = l.memo(function(e) {
             author: K,
             roleIcon: W
         }),
-        childrenAccessories: e.hideAccessories ? void 0 : (0, f.J)(e, B, w),
-        childrenMessageContent: (0, C.A)(e, F),
+        childrenAccessories: e.hideAccessories ? void 0 : (0, f.J)(e, F, B),
+        childrenMessageContent: (0, C.A)(e, w),
         childrenSystemMessage: (0, p.A)({
             ...e,
             disableInteraction: b
         }),
         onContextMenu: a,
         onClick: M,
-        hasThread: j && null != Y && t.hasFlag(R.pr7.HAS_THREAD),
+        hasThread: y && null != Y && t.hasFlag(R.pr7.HAS_THREAD),
         hasReply: t.type === R.lAJ.REPLY,
         "aria-labelledby": z,
         "aria-describedby": Q,

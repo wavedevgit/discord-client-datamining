@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(503698),
+    l = n.n(r),
     s = n(696292),
     o = n(397927),
     d = n(881615),
     c = n(416730),
     u = n(310419),
     A = n(282026),
-    h = n(601193),
-    _ = n(631001),
+    _ = n(601193),
+    h = n(631001),
     m = n(954571),
     g = n(726845),
     p = n(285395),
@@ -27,7 +27,7 @@ var i = n(627968),
 function S(e) {
     let {
         tab: t
-    } = e, n = g.A.useField("selectedTab"), l = a.useMemo(() => (function(e) {
+    } = e, n = g.A.useField("selectedTab"), r = a.useMemo(() => (function(e) {
         switch (e) {
             case I.GlobalDiscoveryTab.SERVERS:
                 return (0, i.jsx)(o.RR9, {
@@ -45,7 +45,7 @@ function S(e) {
     })(t), [t]), T = a.useMemo(() => (0, p.t)(t), [t]), S = n === t, x = a.useCallback(() => {
         switch (t) {
             case I.GlobalDiscoveryTab.QUESTS:
-                return S && _.A.resetState(), m.default.track(f.HAw.DISCOVERY_QUEST_TAB_CLICKED, {
+                return S && h.A.resetState(), m.default.track(f.HAw.DISCOVERY_QUEST_TAB_CLICKED, {
                     client_ad_session_id: (0, d.sN)().uuid
                 }), (0, E.transitionToGlobalDiscovery)({
                     tab: I.GlobalDiscoveryTab.QUESTS,
@@ -70,7 +70,7 @@ function S(e) {
                 if (!S) return (0, E.transitionToGlobalDiscovery)({
                     tab: t
                 });
-                A.A.resetState(), h.A.resetState();
+                A.A.resetState(), _.A.resetState();
                 return;
             default:
                 return (0, E.transitionToGlobalDiscovery)({
@@ -80,12 +80,12 @@ function S(e) {
     }, [t, S]);
     return (0, i.jsxs)(o.DUT, {
         onClick: x,
-        className: r()(N.pc, {
+        className: l()(N.pc, {
             [N.wH]: S
         }),
         children: [(0, i.jsx)("div", {
             className: N.wz,
-            children: l
+            children: r
         }), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "none",

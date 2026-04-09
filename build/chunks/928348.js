@@ -12,8 +12,8 @@ var i = n(64700),
     s = n(198982),
     o = n(137207),
     c = n(904813),
-    d = n(411335),
-    u = n(652215);
+    u = n(411335),
+    d = n(652215);
 let _ = {},
     A = (0, a.h)((e, t) => ({
         rules: {},
@@ -26,7 +26,7 @@ let _ = {},
                 triggerType: a
             } = n, {
                 rules: s
-            } = t(), o = s[i] ?? {}, d = o[a] ?? [], u = d.some(e => e.id === l), _ = d.filter(e => !(0, c.R)(e.id) || e.triggerType !== a), A = u ? _.map(e => e.id === l ? n : e) : [..._, n];
+            } = t(), o = s[i] ?? {}, u = o[a] ?? [], d = u.some(e => e.id === l), _ = u.filter(e => !(0, c.R)(e.id) || e.triggerType !== a), A = d ? _.map(e => e.id === l ? n : e) : [..._, n];
             (0, r.r)(() => {
                 e({
                     rules: {
@@ -65,12 +65,12 @@ let _ = {},
                 _[n] = Date.now();
                 try {
                     let l, a = (i = await (0, o.H0)(n), l = {
-                            [d.uh.KEYWORD]: [],
-                            [d.uh.ML_SPAM]: [],
-                            [d.uh.DEFAULT_KEYWORD_LIST]: [],
-                            [d.uh.MENTION_SPAM]: [],
-                            [d.uh.USER_PROFILE]: [],
-                            [d.uh.SERVER_POLICY]: []
+                            [u.uh.KEYWORD]: [],
+                            [u.uh.ML_SPAM]: [],
+                            [u.uh.DEFAULT_KEYWORD_LIST]: [],
+                            [u.uh.MENTION_SPAM]: [],
+                            [u.uh.USER_PROFILE]: [],
+                            [u.uh.SERVER_POLICY]: []
                         }, i.forEach(e => {
                             let {
                                 triggerType: t
@@ -125,7 +125,7 @@ function T(e) {
 
 function I(e) {
     return A(t => ({
-        rulesByTriggerType: t.rules[e ?? u.dJq] ?? {},
+        rulesByTriggerType: t.rules[e ?? d.dJq] ?? {},
         updateRule: t.updateRule,
         removeRule: t.removeRule
     }), l.x)

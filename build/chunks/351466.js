@@ -4,22 +4,22 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(873263),
-    r = n(311907),
+    r = n(873263),
+    l = n(311907),
     s = n(726249),
     o = n(49463),
     d = n(122204),
     c = n(301503),
     u = n(570763),
     A = n(403362),
-    h = n(533129),
-    _ = n(726845),
+    _ = n(533129),
+    h = n(726845),
     m = n(285395),
     g = n(488995),
     p = n(141938);
 let E = function() {
-    let e = (0, r.bG)([o.A], () => o.A.hasLoadedExperiments),
-        t = _.A.useField("selectedTab"),
+    let e = (0, l.bG)([o.A], () => o.A.hasLoadedExperiments),
+        t = h.A.useField("selectedTab"),
         n = function(e) {
             switch (e) {
                 case g.GlobalDiscoveryTab.SERVERS:
@@ -34,15 +34,15 @@ let E = function() {
                     (0, A.xb)(e)
             }
         }(t),
-        E = (0, l.zy)();
+        E = (0, r.zy)();
     return a.useEffect(() => {
         let e = E.pathname,
             t = (0, m.j)(e);
-        t !== _.A.getField("selectedTab") && _.A.setState({
+        t !== h.A.getField("selectedTab") && h.A.setState({
             selectedTab: t
         })
     }, [E.pathname]), a.useEffect(() => {
-        e && (0, h.tx)({
+        e && (0, _.tx)({
             selectedTab: t
         })
     }, [t, e]), (0, i.jsxs)("section", {

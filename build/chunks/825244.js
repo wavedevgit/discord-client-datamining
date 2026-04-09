@@ -17,15 +17,15 @@ var i = n(627968),
     A = n(668446),
     g = n(997509),
     p = n(794967),
-    f = n(595818),
-    _ = n(961350),
+    _ = n(595818),
+    f = n(961350),
     E = n(71393),
     x = n(287809),
     C = n(147925),
     S = n(203982),
-    T = n(975571),
-    N = n(723702),
-    I = n(661191),
+    I = n(975571),
+    T = n(723702),
+    N = n(661191),
     v = n(314307),
     y = n(652215),
     b = n(936649),
@@ -75,8 +75,8 @@ function D(e) {
             channel: L
         } = e,
         P = (0, o.bG)([E.A], () => null != L ? E.A.getGuild(L.getGuildId()) : null, [L]),
-        k = null != P && I.default.extractTimestamp(P.id) < Date.now() - y.NOr,
-        w = (0, o.bG)([_.default], () => P?.ownerId === _.default.getId(), [P]),
+        k = null != P && N.default.extractTimestamp(P.id) < Date.now() - y.NOr,
+        w = (0, o.bG)([f.default], () => P?.ownerId === f.default.getId(), [P]),
         {
             canInvite: U,
             canManageGuild: G,
@@ -123,7 +123,7 @@ function D(e) {
             m.Ay.trackWithMetadata(y.HAw.SERVER_SETUP_CTA_CLICKED, {
                 setup_type: b.XT.CHANNEL_WELCOME,
                 action: b.AG.PERSONALIZE_SERVER
-            }), null != P && g.A.open(P.id, (0, f.x)(), {
+            }), null != P && g.A.open(P.id, (0, _.x)(), {
                 section: y.JJy.CHANNEL_WELCOME_CTA
             })
         }, [P]), {
@@ -240,7 +240,7 @@ function D(e) {
             completed: V,
             onClick: z
         })
-    }, "message")), (0, N.isWeb)() && en.push((0, i.jsx)(r.A.div, {
+    }, "message")), (0, T.isWeb)() && en.push((0, i.jsx)(r.A.div, {
         className: R.cW,
         style: $ ? {
             opacity: X[en.length]
@@ -265,7 +265,7 @@ function D(e) {
     }, "addapp")));
     let ei = w ? j.intl.string(j.t["1ach9C"]) : j.intl.string(j.t["ezm+/j"]);
     k && (ei = j.intl.string(j.t["gwyU/J"]));
-    let el = `${T.A.getArticleURL(y.MVz.GUILD_GETTING_STARTED)}?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm`;
+    let el = `${I.A.getArticleURL(y.MVz.GUILD_GETTING_STARTED)}?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm`;
     return (0, i.jsx)(v.Ay, {
         channelId: L.id,
         children: (0, i.jsx)("div", {

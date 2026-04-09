@@ -1,116 +1,116 @@
 /** chunk id: 946599 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => x
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    s = n.n(a);
+    a = n(64700),
+    l = n(503698),
+    s = n.n(l);
 n(926675);
 var r = n(990078),
     o = n(397927),
     c = n(147925),
     d = n(183555),
     u = n(735321),
-    m = n(122338),
-    g = n(394245),
-    f = n(985018),
-    x = n(740857);
+    g = n(122338),
+    _ = n(394245),
+    m = n(985018),
+    f = n(740857);
 
-function p(e) {
+function x(e) {
     let {
         tags: t,
         isCurrentUser: n,
-        widgetType: a,
+        widgetType: l,
         applicationId: r,
         className: o,
         disableInteraction: c = !1
-    } = e, p = t?.filter(e => null != (0, g.W3)(e)) ?? [], I = p.length > 0, h = n && !c && (0, u.mS)(a) && p.length < 20, {
-        trackUserProfileAction: T
-    } = (0, d.NJ)(), v = (0, l.useRef)(new Map), j = (0, l.useRef)(null), C = (0, l.useRef)(null), [N, y] = (0, l.useState)(0), [b, R] = (0, l.useState)(!1), O = E(j, C, p, v, y);
-    if ((0, l.useEffect)(() => (O(), window.addEventListener("resize", O), () => {
+    } = e, x = t?.filter(e => null != (0, _.W3)(e)) ?? [], I = x.length > 0, A = n && !c && (0, u.mS)(l) && x.length < 20, {
+        trackUserProfileAction: E
+    } = (0, d.NJ)(), j = (0, a.useRef)(new Map), T = (0, a.useRef)(null), b = (0, a.useRef)(null), [C, N] = (0, a.useState)(0), [k, S] = (0, a.useState)(!1), O = v(T, b, x, j, N);
+    if ((0, a.useEffect)(() => (O(), window.addEventListener("resize", O), () => {
             window.removeEventListener("resize", O)
-        }), [O, p?.join("")]), !I && !h) return null;
-    let S = b ? p : p.slice(0, p.length - N);
+        }), [O, x?.join("")]), !I && !A) return null;
+    let L = k ? x : x.slice(0, x.length - C);
     return (0, i.jsxs)("div", {
-        className: s()(x.I4, o),
+        className: s()(f.I4, o),
         children: [I && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("ul", {
-                className: x.Tw,
-                "aria-label": f.intl.string(f.t.EfjTi4),
-                children: S.map(e => (0, i.jsx)(_, {
+                className: f.Tw,
+                "aria-label": m.intl.string(m.t.EfjTi4),
+                children: L.map(e => (0, i.jsx)(p, {
                     tag: e,
                     isCurrentUser: n,
                     applicationId: r,
-                    widgetType: a,
+                    widgetType: l,
                     ref: t => {
-                        null != t && v.current.set(e, t)
+                        null != t && j.current.set(e, t)
                     },
                     disableInteraction: c
                 }, e))
-            }), N > 0 && (0, i.jsx)(A, {
-                buttonRef: j,
-                isExpanded: b,
-                numberOfOverflowingTags: N,
+            }), C > 0 && (0, i.jsx)(h, {
+                buttonRef: T,
+                isExpanded: k,
+                numberOfOverflowingTags: C,
                 onExpandTags: () => {
-                    R(!0), T({
+                    S(!0), E({
                         action: "EXPAND_GAME_TAGS"
                     })
                 },
                 onCollapseTags: () => {
-                    R(!1), T({
+                    S(!1), E({
                         action: "COLLAPSE_GAME_TAGS"
                     })
                 },
                 disableInteraction: c
             })]
-        }), h && (0, i.jsx)(m.A, {
+        }), A && (0, i.jsx)(g.A, {
             tags: t,
-            widgetType: a,
+            widgetType: l,
             applicationId: r,
-            ref: C
+            ref: b
         })]
     })
 }
-let _ = e => {
+let p = e => {
     let {
         tag: t,
         isCurrentUser: n,
-        applicationId: l,
-        widgetType: a,
+        applicationId: a,
+        widgetType: l,
         disableInteraction: s,
         ref: c
     } = e, {
-        trackUserProfileEditAction: m
-    } = (0, d.NJ)(), p = (0, g.W3)(t);
-    if (null == p) return null;
+        trackUserProfileEditAction: g
+    } = (0, d.NJ)(), x = (0, _.W3)(t);
+    if (null == x) return null;
     let {
-        getText: _,
+        getText: p,
         icon: I
-    } = p;
+    } = x;
     return (0, i.jsxs)("li", {
-        className: x.Tc,
+        className: f.Tc,
         ref: c,
         children: [(0, i.jsx)(I, {
             size: "xxs"
         }), (0, i.jsx)(o.Text, {
             variant: "text-xxs/medium",
             color: "text-subtle",
-            children: _()
+            children: p()
         }), n && !s && (0, i.jsx)(r.m, {
-            text: f.intl.string(f.t.Otv9fP),
+            text: m.intl.string(m.t.Otv9fP),
             ariaHidden: !0,
             children: (0, i.jsx)(o.DUT, {
                 onClick: () => {
-                    (0, u.tg)(a, l, t), m({
+                    (0, u.tg)(l, a, t), g({
                         action: "TAG_REMOVED",
-                        widgetEdited: a,
-                        gameId: l
+                        widgetEdited: l,
+                        gameId: a
                     })
                 },
-                className: x.DT,
-                "aria-label": f.intl.formatToPlainString(f.t.GCn1ne, {
-                    tag: _()
+                className: f.DT,
+                "aria-label": m.intl.formatToPlainString(m.t.GCn1ne, {
+                    tag: p()
                 }),
                 children: (0, i.jsx)(o.PGe, {
                     size: "xxs",
@@ -132,28 +132,28 @@ function I(e) {
     })
 }
 
-function h() {
+function A() {
     return (0, i.jsx)(c.A, {
         direction: c.A.Directions.LEFT,
         width: 12,
         height: 12,
-        className: x.OW
+        className: f.OW
     })
 }
 
-function A(e) {
+function h(e) {
     let {
         isExpanded: t,
         numberOfOverflowingTags: n,
-        onExpandTags: l,
-        onCollapseTags: a,
+        onExpandTags: a,
+        onCollapseTags: l,
         disableInteraction: s,
         buttonRef: c
-    } = e, d = t ? f.intl.string(f.t.z9VPrQ) : f.intl.string(f.t.mriLXL), u = t ? f.intl.string(f.t.z9VPrQ) : f.intl.formatToPlainString(f.t.F6iMs4, {
+    } = e, d = t ? m.intl.string(m.t.z9VPrQ) : m.intl.string(m.t.mriLXL), u = t ? m.intl.string(m.t.z9VPrQ) : m.intl.formatToPlainString(m.t.F6iMs4, {
         count: n
     });
     return s ? (0, i.jsx)("div", {
-        className: x.X1,
+        className: f.X1,
         ref: c,
         children: (0, i.jsx)(I, {
             numberOfOverflowingTags: n
@@ -163,18 +163,18 @@ function A(e) {
         ariaHidden: t,
         children: (0, i.jsx)(o.DUT, {
             innerRef: c,
-            onClick: t ? a : l,
+            onClick: t ? l : a,
             "aria-label": u,
-            className: t ? x.cS : x.X1,
-            children: t ? (0, i.jsx)(h, {}) : (0, i.jsx)(I, {
+            className: t ? f.cS : f.X1,
+            children: t ? (0, i.jsx)(A, {}) : (0, i.jsx)(I, {
                 numberOfOverflowingTags: n
             })
         })
     })
 }
-let E = (e, t, n, i, a) => (0, l.useCallback)(() => {
-    if (null == n) return void a(0);
-    let l = e.current?.getBoundingClientRect().width ?? 0,
+let v = (e, t, n, i, l) => (0, a.useCallback)(() => {
+    if (null == n) return void l(0);
+    let a = e.current?.getBoundingClientRect().width ?? 0,
         s = t.current?.getBoundingClientRect().width ?? 0,
         r = s > 0 ? 8 : 4,
         o = 0,
@@ -191,9 +191,9 @@ let E = (e, t, n, i, a) => (0, l.useCallback)(() => {
     for (let e = o; e < n.length; e++) {
         let t = d.get(n[e]);
         if (null != t) {
-            if ((c += t.offsetWidth + 4) > 296 - l - s - r) break;
+            if ((c += t.offsetWidth + 4) > 296 - a - s - r) break;
             o++
         }
     }
-    a(n.length - o)
-}, [e, t, n?.join(""), i, a])
+    l(n.length - o)
+}, [e, t, n?.join(""), i, l])

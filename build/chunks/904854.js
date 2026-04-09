@@ -9,8 +9,8 @@ var i = n(627968),
     s = n(397927),
     o = n(802341),
     c = n(538451),
-    d = n(734057),
-    u = n(562153),
+    u = n(734057),
+    d = n(562153),
     _ = n(944052),
     A = n(480012),
     m = n(763754),
@@ -34,7 +34,7 @@ function g(e) {
                     user: e,
                     guildId: n ?? void 0,
                     channelId: l,
-                    nick: u.Ay.getNickname(n, l, e)
+                    nick: d.Ay.getNickname(n, l, e)
                 }, e.id))
             })
         })
@@ -46,14 +46,14 @@ function f(e) {
         message: t,
         channel: n,
         compact: c
-    } = e, u = (0, A.A)(t), f = (0, _.X7)(t), C = t.messageReference?.channel_id, h = (0, r.bG)([d.A], () => d.A.getChannel(C)), p = function(e, t, n, a, r, c) {
-        let d = (0, E.P)({
+    } = e, d = (0, A.A)(t), f = (0, _.X7)(t), C = t.messageReference?.channel_id, h = (0, r.bG)([u.A], () => u.A.getChannel(C)), p = function(e, t, n, a, r, c) {
+        let u = (0, E.P)({
                 user: n,
                 channelId: t.id,
                 guildId: t.guild_id,
                 messageId: e.id
             }),
-            u = (0, E.P)({
+            d = (0, E.P)({
                 user: a[0],
                 channelId: t.id,
                 guildId: t.guild_id,
@@ -107,33 +107,33 @@ function f(e) {
             }, t), [c]);
         return null == r ? I.intl.format(I.t["eX6e/3"], {
             username: A.nick,
-            usernameHook: d(A),
+            usernameHook: u(A),
             channelHook: S
         }) : I.intl.format(I.t.YUbgR8, {
             userCount: a.length + 1,
             username: A.nick,
-            usernameHook: d(A),
+            usernameHook: u(A),
             username2: C.nick,
-            username2Hook: u(C),
+            username2Hook: d(C),
             username3: h.nick,
             username3Hook: _(h),
             otherCount: a.length - 1,
             othersHook: p([n, ...a]),
             duration: r
         })
-    }(t, n, t.author, f, u, h), S = l.useMemo(() => {
+    }(t, n, t.author, f, d, h), S = l.useMemo(() => {
         let e = (0, i.jsx)(a.HKD, {
             size: "md",
             color: s.LU0.colors.STATUS_POSITIVE
         });
-        return null == h || null != u ? e : (0, i.jsx)(o.T, {
+        return null == h || null != d ? e : (0, i.jsx)(o.T, {
             channel: h,
             children: (0, i.jsx)(a.HKD, {
                 size: "md",
                 color: s.LU0.colors.STATUS_POSITIVE
             })
         })
-    }, [h, u]);
+    }, [h, d]);
     return (0, i.jsx)(T.A, {
         iconNode: S,
         iconContainerClassName: N.zc,

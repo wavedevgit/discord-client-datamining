@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(397244),
-    l = n(714114),
-    r = n(729551),
+    r = n(714114),
+    l = n(729551),
     s = n(427262),
     o = n(985018),
     d = n(169940);
@@ -17,25 +17,25 @@ let c = function(e) {
         applicationStream: c,
         status: u,
         user: A,
-        userIgnored: h
+        userIgnored: _
     } = e, {
-        voiceChannel: _
-    } = (0, l.A)({
+        voiceChannel: h
+    } = (0, r.A)({
         userId: A?.id
     });
-    return h ? (0, i.jsx)("div", {
+    return _ ? (0, i.jsx)("div", {
         className: d.Q,
         children: o.intl.string(o.t.tFY5Zb)
     }) : (0, a.A)({
         activities: n,
         status: u,
         applicationStream: c,
-        voiceChannel: _
-    }) ? (0, i.jsx)(r.A, {
+        voiceChannel: h
+    }) ? (0, i.jsx)(l.A, {
         textClassName: d.q,
         activities: n,
         applicationStream: c,
-        voiceChannel: _,
+        voiceChannel: h,
         animateEmoji: t,
         user: A,
         textSize: "sm"

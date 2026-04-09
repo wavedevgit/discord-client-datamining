@@ -1,6 +1,6 @@
 /** chunk id: 162792 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => I
 });
 var i = n(627968),
     l = n(64700),
@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(638075),
     g = n(465364),
     p = n(763754),
-    f = n(448368),
-    _ = n(535421),
+    _ = n(448368),
+    f = n(535421),
     E = n(112758),
     x = n(652215),
     C = n(985018);
@@ -26,9 +26,9 @@ let S = l.memo(function(e) {
         baseMessage: t,
         referencedMessage: n,
         channel: S,
-        compact: T = !1,
-        referencedUsernameProfile: N,
-        referencedAvatarProfile: I,
+        compact: I = !1,
+        referencedUsernameProfile: T,
+        referencedAvatarProfile: N,
         setPopout: v,
         isReplySpineClickable: y,
         showReplySpine: b
@@ -81,25 +81,25 @@ let S = l.memo(function(e) {
     } = (0, s.cf)([m.A], () => ({
         isReplyAuthorBlocked: null != j && m.A.isBlockedForMessage(j),
         isReplyAuthorIgnored: null != j && m.A.isIgnoredForMessage(j)
-    }), [j]), P = (0, E.r4)(j?.author.id, S.id), k = (0, E.Ck)(t, j), w = (0, E.H9)(j, S, N, v), U = (0, E.Ge)(I, v), G = l.useCallback(() => {
+    }), [j]), P = (0, E.r4)(j?.author.id, S.id), k = (0, E.Ck)(t, j), w = (0, E.H9)(j, S, T, v), U = (0, E.Ge)(N, v), G = l.useCallback(() => {
         v({
             referencedUsernameProfile: !1,
             referencedAvatarProfile: !1
         })
     }, [v]), F = (0, p.X4)(t);
-    return (0, i.jsx)(f.A, {
+    return (0, i.jsx)(_.A, {
         repliedAuthor: R,
         baseMessage: t,
         channel: S,
         baseAuthor: F,
         referencedMessage: n,
         content: D,
-        compact: T,
+        compact: I,
         isReplyAuthorBlocked: O,
         isReplyAuthorIgnored: L,
-        showAvatarPopout: I,
-        showUsernamePopout: N,
-        renderPopout: _.A,
+        showAvatarPopout: N,
+        showUsernamePopout: T,
+        renderPopout: f.A,
         onClickAvatar: U,
         onClickUsername: w,
         onClickReply: k,
@@ -110,7 +110,7 @@ let S = l.memo(function(e) {
     })
 });
 
-function T(e) {
+function I(e) {
     let {
         message: t,
         channel: n,

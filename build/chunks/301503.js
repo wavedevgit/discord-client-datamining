@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    l = n(397927),
-    r = n(178629),
+    r = n(397927),
+    l = n(178629),
     s = n(770472),
     o = n(737823),
     d = (n(153527), n(876622)),
     c = n(521974),
     u = n(282026),
     A = n(881973),
-    h = n(965660),
-    _ = n(601193),
+    _ = n(965660),
+    h = n(601193),
     m = n(424956),
     g = n(19925),
     p = n(689817),
@@ -25,18 +25,18 @@ var i = n(627968),
     N = n(691553);
 
 function S() {
-    let e = a.useRef((0, h.YP)()),
+    let e = a.useRef((0, _.YP)()),
         {
             onScroll: t,
             scrollPosition: n,
             resetScrollPosition: S
-        } = (0, r.G)(),
+        } = (0, l.G)(),
         {
             tabs: x,
             selectedTab: v,
             setSelectedTab: b
         } = (0, p.f)(),
-        y = (0, h.Ub)(v),
+        y = (0, _.Ub)(v),
         O = !f.R0.has(v),
         {
             searchQuery: L,
@@ -47,7 +47,7 @@ function S() {
         } = (0, g.X)({
             loadId: e.current
         }),
-        M = _.A.useField("searchBarState"),
+        M = h.A.useField("searchBarState"),
         {
             onTabsAvailableWidthChange: w,
             onCollapsedSearchBarClick: U,
@@ -57,7 +57,7 @@ function S() {
             isSearchBarVisible: O,
             isSearchBarEmpty: "" === L.trim(),
             searchBarState: M,
-            setSearchBarState: e => _.A.setState({
+            setSearchBarState: e => h.A.setState({
                 searchBarState: e
             })
         }),
@@ -94,17 +94,17 @@ function S() {
             children: [!j && (0, i.jsx)(o.ns, {
                 scrollPosition: n
             }), j ? (0, i.jsx)(o.XQ, {
-                icon: l.Zge,
+                icon: r.Zge,
                 onClick: P
             }) : (0, i.jsx)(o.T4, {
-                icon: l.RR9
+                icon: r.RR9
             }), !j && (0, i.jsx)(d.A, {
                 className: k,
                 tabs: H,
                 selectedTab: v,
                 onTabSelect: B,
                 onAvailableWidthChange: w
-            }), j && (0, i.jsx)(l.Heading, {
+            }), j && (0, i.jsx)(r.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
                 className: N.ov,

@@ -1,83 +1,83 @@
 /** chunk id: 770983 params = (module,exports,require) **/
-n.d(t, {
-    A: () => R
+i.d(t, {
+    A: () => L
 });
-var i = n(627968),
-    a = n(64700),
-    l = n(503698),
-    s = n.n(l),
-    r = n(158954),
-    o = n(311907),
-    d = n(435371),
-    c = n(397927),
-    u = n(688810),
-    g = n(429913),
-    m = n(576030),
-    h = n(713517),
-    x = n(492518),
-    p = n(260811),
-    f = n(366523),
-    A = n(287809),
-    _ = n(808247),
-    I = n(178213),
-    j = n(909536),
-    v = n(594832),
-    b = n(631784),
-    S = n(672564),
-    y = n(652215),
-    E = n(788868),
-    C = n(518477),
-    T = n(985018),
-    w = n(100681);
+var n = i(627968),
+    s = i(64700),
+    l = i(503698),
+    a = i.n(l),
+    r = i(158954),
+    o = i(311907),
+    d = i(435371),
+    c = i(397927),
+    u = i(688810),
+    g = i(429913),
+    m = i(576030),
+    h = i(713517),
+    x = i(492518),
+    p = i(260811),
+    A = i(366523),
+    f = i(287809),
+    I = i(808247),
+    j = i(178213),
+    v = i(909536),
+    S = i(594832),
+    b = i(631784),
+    y = i(672564),
+    E = i(652215),
+    T = i(788868),
+    C = i(518477),
+    w = i(985018),
+    N = i(100681);
 
-function N(e) {
+function R(e) {
     let {
         application: t,
-        sku: n,
+        sku: i,
         handleOpenUserProfileModal: l,
-        analyticsLocations: s
-    } = e, o = a.useRef(null), {
+        analyticsLocations: a
+    } = e, o = s.useRef(null), {
         analyticsLocations: g
-    } = (0, u.Ay)(s ?? []), {
+    } = (0, u.Ay)(a ?? []), {
         isHoveringOrFocusing: p
-    } = (0, h.A)(o), [A, I] = a.useState(!1), j = a.useCallback(async e => {
-        if (e.stopPropagation(), !A) {
-            I(!0);
+    } = (0, h.A)(o), [f, j] = s.useState(!1), v = s.useCallback(async e => {
+        if (e.stopPropagation(), !f) {
+            j(!0);
             try {
-                await _.A.addSkuToWishlist(n.id, g), l?.({
+                await I.A.addSkuToWishlist(i.id, g), l?.({
                     tabSection: C.RP.WISHLIST
                 })
             } catch (e) {
-                (0, c.showToast)((0, c.createToast)(T.intl.string(T.t.F8FvUy), c.ToastType.FAILURE)), r.ORC.announce(T.intl.string(T.t.F8FvUy))
+                (0, c.showToast)((0, c.createToast)(w.intl.string(w.t.F8FvUy), c.ToastType.FAILURE)), r.ORC.announce(w.intl.string(w.t.F8FvUy))
             } finally {
-                I(!1)
+                j(!1)
             }
         }
-    }, [n.id, g, l, A]);
-    return (0, i.jsx)(d.un, {
-        title: T.intl.string(T.t["8DkMEQ"]),
-        body: n.name,
-        asset: (0, i.jsx)(m.mW, {
+    }, [i.id, g, l, f]);
+    return (0, n.jsx)(d.un, {
+        title: w.intl.string(w.t["8DkMEQ"]),
+        body: i.name,
+        asset: (0, n.jsx)(m.mW, {
             application: t
         }),
-        assetSize: v.Q8,
-        children: (0, i.jsxs)(r.sqX, {
-            className: w.Nr,
+        assetSize: S.Q8,
+        children: (0, n.jsxs)(r.sqX, {
+            className: N.Nr,
             ref: o,
-            "aria-label": n.name,
-            onClick: j,
-            children: [(0, i.jsx)(f.e, {
+            "aria-label": i.name,
+            onClick: v,
+            children: [(0, n.jsx)(A.e, {
                 shape: "custom",
-                containerClassName: w.Nr,
-                foregroundImageClassName: w.wP,
-                backgroundImageClassName: w.GC,
-                sku: n
-            }, n.id), (p || A) && (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)("div", {
-                    className: w.p0
-                }), (0, i.jsx)("div", {
-                    className: w.R$,
-                    children: A ? (0, i.jsx)(x.k, {}) : (0, i.jsx)(r.pa$, {
+                containerClassName: N.Nr,
+                foregroundImageClassName: N.wP,
+                backgroundImageClassName: N.GC,
+                sku: i
+            }, i.id), (p || f) && (0, n.jsxs)(n.Fragment, {
+                children: [(0, n.jsx)("div", {
+                    className: N.p0
+                }), (0, n.jsx)("div", {
+                    className: N.R$,
+                    children: f ? (0, n.jsx)(x.k, {}) : (0, n.jsx)(r.pa$, {
                         size: "lg",
                         color: c.LU0.unsafe_rawColors.WHITE_500
                     })
@@ -90,7 +90,7 @@ function N(e) {
 function k(e) {
     let {
         wishlist: t,
-        handleOpenUserProfileModal: n,
+        handleOpenUserProfileModal: i,
         analyticsLocations: l,
         numWishlistItemsToRecommend: r,
         maxWishlistItemsToShow: d = r,
@@ -98,10 +98,10 @@ function k(e) {
         isLoading: u,
         recommendations: m,
         applicationIds: h
-    } = e, f = (0, g.A)(h), _ = (0, o.bG)([A.default], () => A.default.getUser(t?.userId)), v = (0, I.GG)("add_to_wishlist_grid"), b = (0, j.Gh)("add_to_wishlist_grid_suggested_nitro"), C = a.useMemo(() => f.reduce((e, t) => (null == t || (e[t.id] = t), e), {}), [f]), k = a.useMemo(() => new Set(t?.items.map(e => e.skuId) ?? []), [t]), R = b && v && !k.has(E.pe.TIER_2), L = a.useMemo(() => R ? new p.A({
-        id: E.pe.TIER_2,
-        productLine: y.EZt.PREMIUM,
-        name: T.intl.string(T.t.lG6a5x),
+    } = e, A = (0, g.A)(h), I = (0, o.bG)([f.default], () => f.default.getUser(t?.userId)), S = (0, j.GG)("add_to_wishlist_grid"), b = (0, v.Gh)("add_to_wishlist_grid_suggested_nitro"), C = s.useMemo(() => A.reduce((e, t) => (null == t || (e[t.id] = t), e), {}), [A]), k = s.useMemo(() => new Set(t?.items.map(e => e.skuId) ?? []), [t]), L = b && S && !k.has(T.pe.TIER_2), O = s.useMemo(() => L ? new p.A({
+        id: T.pe.TIER_2,
+        productLine: E.EZt.PREMIUM,
+        name: w.intl.string(w.t.lG6a5x),
         features: new Set,
         genres: new Set,
         manifests: [],
@@ -111,44 +111,44 @@ function k(e) {
         selectedOptions: [],
         eligibleOffers: [],
         prices: {}
-    }) : null, [R]), O = m.filter(e => !k.has(e.id)).slice(0, null != L ? Math.max(0, d - 1) : d), M = null != L ? [L, ...O] : O;
-    return u ? (0, i.jsx)("div", {
-        className: w.g4,
-        children: (0, i.jsx)(x.k, {})
-    }) : 0 === M.length ? null : (0, i.jsx)("ul", {
-        className: s()(w.Vg, c),
-        children: M.map(e => v ? (0, i.jsx)(S.J, {
+    }) : null, [L]), _ = m.filter(e => !k.has(e.id)).slice(0, null != O ? Math.max(0, d - 1) : d), M = null != O ? [O, ..._] : _;
+    return u ? (0, n.jsx)("div", {
+        className: N.g4,
+        children: (0, n.jsx)(x.k, {})
+    }) : 0 === M.length ? null : (0, n.jsx)("ul", {
+        className: a()(N.Vg, c),
+        children: M.map(e => S ? (0, n.jsx)(y.J, {
             sku: e,
             wishlistId: t?.id,
-            wishlistOwner: _,
-            handleOpenUserProfileModal: n,
+            wishlistOwner: I,
+            handleOpenUserProfileModal: i,
             analyticsLocations: l
-        }, e.id) : null == e.applicationId || null == C[e.applicationId] ? null : (0, i.jsx)(N, {
+        }, e.id) : null == e.applicationId || null == C[e.applicationId] ? null : (0, n.jsx)(R, {
             application: C[e.applicationId],
             sku: e,
-            handleOpenUserProfileModal: n,
+            handleOpenUserProfileModal: i,
             analyticsLocations: l
         }, e.id))
     })
 }
 
-function R(e) {
+function L(e) {
     let {
         userId: t,
-        numWishlistItemsToRecommend: n,
-        ...a
+        numWishlistItemsToRecommend: i,
+        ...s
     } = e, {
         recommendations: l,
-        status: s
+        status: a
     } = (0, b.Ul)({
         userId: t,
-        numItems: n,
-        source: v.B5.USER_PROFILE
+        numItems: i,
+        source: S.B5.USER_PROFILE
     });
-    return (0, i.jsx)(k, {
-        isLoading: "loading" === s,
+    return (0, n.jsx)(k, {
+        isLoading: "loading" === a,
         recommendations: l,
-        numWishlistItemsToRecommend: n,
-        ...a
+        numWishlistItemsToRecommend: i,
+        ...s
     })
 }

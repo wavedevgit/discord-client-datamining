@@ -9,8 +9,8 @@ var i = n(627968),
     s = n(287809),
     o = n(763754),
     c = n(447215),
-    d = n(888675),
-    u = n(985018),
+    u = n(888675),
+    d = n(985018),
     _ = n(709615);
 
 function A(e) {
@@ -25,12 +25,12 @@ function A(e) {
         messageId: t.id
     })(g);
     if (!n.isDM() || null == T || null == I) return null;
-    let C = N ? u.t.S6PRsh : u.t["H/9Tlj"],
-        h = u.intl.format(C, {
+    let C = N ? d.t.S6PRsh : d.t["H/9Tlj"],
+        h = d.intl.format(C, {
             username: g.nick,
             usernameHook: f
         });
-    return (0, i.jsx)(d.A, {
+    return (0, i.jsx)(u.A, {
         iconNode: (0, i.jsx)(r.V1C, {
             size: "sm",
             color: a.A.colors.STATUS_POSITIVE
