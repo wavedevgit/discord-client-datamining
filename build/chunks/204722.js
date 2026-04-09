@@ -64,8 +64,8 @@ let Y = l.memo(function(e) {
             application: D,
             analyticsContext: Y,
             inviteButtonRef: $,
-            accountLinkButtonRef: J,
-            startAuthorization: Q,
+            accountLinkButtonRef: Q,
+            startAuthorization: J,
             canStartAuthorization: Z,
             hasAlreadyLinked: ee,
             connectionApp: et
@@ -236,19 +236,19 @@ let Y = l.memo(function(e) {
             eL = !Z || ee ? null : (0, i.jsx)(z, {
                 runningGame: p,
                 startAuthorization: () => {
-                    Q({
+                    J({
                         analyticsLocations: ei
                     }) === x._M.RPC && (eT(!0), null != eC.current && clearTimeout(eC.current), eC.current = setTimeout(() => {
                         eT(!1)
                     }, 9e4))
                 },
                 connectionApp: et,
-                ref: J
+                ref: Q
             }),
             eM = !Z || ee ? null : (0, i.jsx)(c.AM, {
                 title: H.intl.string(H.t.ULvRFd),
                 body: H.intl.string(H.t["HJJDr+"]),
-                targetElementRef: J,
+                targetElementRef: Q,
                 position: "top",
                 align: "center",
                 caretConfig: {

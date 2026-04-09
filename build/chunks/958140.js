@@ -50,7 +50,7 @@ function k(e) {
     } = (0, x.$j)({
         guildId: t.guild_id,
         location: "HangStatusPicker"
-    }), F = (0, I.hy)(V), W = l.useRef(null), [K, Y] = l.useState(k?.status ?? ""), [z, q] = l.useState(k?.emoji ?? null), [X, $] = l.useState(!1), J = (0, c.bG)([E.A], () => E.A.getCurrentHangStatus()), Q = F[J], Z = B.length > 0, ee = null == K || "" === K.trim(), et = (0, T.A)(t), en = K.trim().length > 0 && K.trim() !== k?.status?.trim() || null != z && !o()(z, k?.emoji), [ei, el] = l.useState(!1), es = (0, c.bG)([E.A], () => E.A.getFavoritedStatuses().length >= E.x), ea = K.length > 0 || null != z, [er, eo] = (0, m.kn)([u.M.HANG_STATUS_POPOVER_NUX]);
+    }), F = (0, I.hy)(V), W = l.useRef(null), [K, Y] = l.useState(k?.status ?? ""), [z, q] = l.useState(k?.emoji ?? null), [X, $] = l.useState(!1), Q = (0, c.bG)([E.A], () => E.A.getCurrentHangStatus()), J = F[Q], Z = B.length > 0, ee = null == K || "" === K.trim(), et = (0, T.A)(t), en = K.trim().length > 0 && K.trim() !== k?.status?.trim() || null != z && !o()(z, k?.emoji), [ei, el] = l.useState(!1), es = (0, c.bG)([E.A], () => E.A.getFavoritedStatuses().length >= E.x), ea = K.length > 0 || null != z, [er, eo] = (0, m.kn)([u.M.HANG_STATUS_POPOVER_NUX]);
     l.useEffect(() => {
         p.default.track(O.HAw.HANG_STATUS_PICKER_OPENED, {
             ...(0, C.A)(t.id),
@@ -63,8 +63,8 @@ function k(e) {
         X || K !== (k?.status ?? "") && "" !== K.trim() ? n(!0) : n(!1)
     }, [K, k?.status, z, k?.emoji, n, X]);
     let ed = l.useCallback(e => {
-            e !== J && ((0, f.Iq)(e, !0), null != z && q(null), "" !== K.trim() && Y(""))
-        }, [J, z, K]),
+            e !== Q && ((0, f.Iq)(e, !0), null != z && q(null), "" !== K.trim() && Y(""))
+        }, [Q, z, K]),
         ec = l.useCallback(() => {
             q(null), Y(""), $(!1)
         }, []),
@@ -174,7 +174,7 @@ function k(e) {
                     className: D.bd,
                     children: [(0, i.jsx)(A.ksK, {
                         inputRef: r,
-                        value: X || ea ? K : Q?.title ?? "",
+                        value: X || ea ? K : J?.title ?? "",
                         onBlur: em,
                         onFocus: eg,
                         onChange: ex,
@@ -184,12 +184,12 @@ function k(e) {
                             button: (0, i.jsx)(y.R, {
                                 customStatusEmoji: z,
                                 setCustomStatusEmoji: q,
-                                selectedDefaultStatus: X || ea ? null : J,
+                                selectedDefaultStatus: X || ea ? null : Q,
                                 defaultStatusVariant: V,
                                 setIsEmojiPickerOpen: s
                             })
                         },
-                        trailing: null == k && null == J || en ? en ? {
+                        trailing: null == k && null == Q || en ? en ? {
                             icon: A.KS6,
                             onClick: eh,
                             "aria-label": M.intl.string(M.t["R3BPH+"]),

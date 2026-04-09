@@ -256,7 +256,7 @@ function $(e) {
                 channel_type: x.type,
                 guild_id: x.guild_id
             })
-        }, [x.guild_id, x.id, x.type]), v) return (0, i.jsx)(J, {
+        }, [x.guild_id, x.id, x.type]), v) return (0, i.jsx)(Q, {
         channel: x
     });
     let j = o().omit(b.containerProps, ["ref"]),
@@ -317,7 +317,7 @@ function $(e) {
     })
 }
 
-function J(e) {
+function Q(e) {
     let {
         channel: t
     } = e;

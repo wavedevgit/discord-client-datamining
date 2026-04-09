@@ -2,7 +2,7 @@
 n.d(t, {
     AU: () => b,
     Ey: () => y,
-    QF: () => v,
+    QF: () => g,
     do: () => x,
     eC: () => E
 });
@@ -38,12 +38,12 @@ let p = "-:--",
         [o.oA.MD]: o.n4.MD,
         [o.oA.LG]: o.n4.LG
     },
-    g = {
+    v = {
         [o.n4.MD]: "md",
         [o.n4.LG]: "lg"
     };
 
-function v(e) {
+function g(e) {
     let {
         current: t,
         duration: n
@@ -76,7 +76,7 @@ let y = l.forwardRef(function(e, t) {
         disabled: p,
         tooltipLabel: E,
         tooltipDelayMs: b = x,
-        shortcut: v,
+        shortcut: g,
         onClick: y,
         buttonSize: S = o.n4.MD,
         "data-testid": C
@@ -103,7 +103,7 @@ let y = l.forwardRef(function(e, t) {
                 } [S]
             },
             children: (0, r.jsx)(n, {
-                size: g[S],
+                size: v[S],
                 color: !0 !== p ? u.A.colors.WHITE : u.A.colors.TEXT_MUTED,
                 className: i()(h.jk, {
                     [h.x2]: f,
@@ -114,7 +114,7 @@ let y = l.forwardRef(function(e, t) {
     });
     return null != E && a ? (0, r.jsx)(d.m_, {
         text: E,
-        keyboardShortcut: "" !== (v ?? "").trim() ? v : void 0,
+        keyboardShortcut: "" !== (g ?? "").trim() ? g : void 0,
         delay: b,
         children: A()
     }) : A()

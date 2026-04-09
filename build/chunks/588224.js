@@ -58,18 +58,18 @@ let H = l.memo(e => {
         } = e;
         return t.has(x)
     }), [x, s.id]), F = (0, h.A)(null != H ? [H.applicationId] : []), W = (0, T.Ay)(x, s.guild_id)[0], K = (0, u.YY)(W?.application_id).data ?? void 0, [Y, z] = (0, r.yK)([v.A], () => [v.A.getStreamForUser(x, s.getGuildId()), v.A.getActiveStreamForUser(x, s.getGuildId())], [s, x]), q = (0, r.bG)([M.A], () => M.A.getSessionById(a)), X = G.Ay.useName(l), $ = (0, r.bG)([U.A], () => U.A.getVoicePlatformForChannel(s.id, x), [s.id, x]), {
-        enableHangStatus: J
+        enableHangStatus: Q
     } = (0, g.$j)({
         guildId: s.guild_id,
         location: "VoiceUsers"
-    }), Q = (0, _.Ay)(s, !0, l), Z = (0, r.bG)([p.A], () => E ? p.A.getHangStatusActivity() : null, [E]), ee = (0, f.h)(x), et = (0, S.uy)(s.id, x), {
+    }), J = (0, _.Ay)(s, !0, l), Z = (0, r.bG)([p.A], () => E ? p.A.getHangStatusActivity() : null, [E]), ee = (0, f.h)(x), et = (0, S.uy)(s.id, x), {
         enableVCStatusIcons: en
     } = N.m.useExperiment({
         guildId: s.guild_id,
         location: "VoiceUsers"
     }, {
         autoTrackExposure: W?.session_id != null
-    }), ei = en || J;
+    }), ei = en || Q;
     return (0, i.jsx)(C.A, {
         shakeLocation: B.uD.VOICE_USER,
         isShaking: L,
@@ -93,7 +93,7 @@ let H = l.memo(e => {
             isGuest: P,
             isSelf: E,
             application: ei && W?.session_id != null ? K : void 0,
-            showHangStatus: Q && J && (E || null != ee),
+            showHangStatus: J && Q && (E || null != ee),
             hangStatusActivity: E ? Z : ee
         })
     })

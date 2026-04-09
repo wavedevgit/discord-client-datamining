@@ -53,9 +53,9 @@ function K(e) {
         maxHeight: t,
         connectedLocation: n,
         renderExternalHeader: s
-    } = e, K = (0, L.A)(), Y = (0, r.yK)([v.Ay], () => v.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, r.bG)([I.A], () => I.A.getChannel(z)), X = (0, j.IQ)(Y), $ = (0, j.Rz)(X), J = l.useCallback(() => {
+    } = e, K = (0, L.A)(), Y = (0, r.yK)([v.Ay], () => v.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, r.bG)([I.A], () => I.A.getChannel(z)), X = (0, j.IQ)(Y), $ = (0, j.Rz)(X), Q = l.useCallback(() => {
         (0, y.gk)(w.Gd.PIP)
-    }, []), Q = l.useRef(null), Z = (0, r.bG)([v.Ay], () => v.Ay.getFocusedLayout()), ee = Z !== w.E8.NO_CHAT, [et, en] = l.useState(p.Ay.activityPanelHeight ?? t ?? null), ei = l.useCallback(e => {
+    }, []), J = l.useRef(null), Z = (0, r.bG)([v.Ay], () => v.Ay.getFocusedLayout()), ee = Z !== w.E8.NO_CHAT, [et, en] = l.useState(p.Ay.activityPanelHeight ?? t ?? null), ei = l.useCallback(e => {
         u.Ay.updatedUnsyncedSettings({
             activityPanelHeight: e
         })
@@ -138,7 +138,7 @@ function K(e) {
         theme: B.NJ8.DARK,
         children: e => (0, i.jsxs)("div", {
             className: a()(H.iE, W[Z], e),
-            ref: Q,
+            ref: J,
             style: em,
             children: [s?.(), (0, i.jsx)(g.A, {
                 applicationId: K.id
@@ -184,7 +184,7 @@ function K(e) {
                             }), (0, i.jsx)(f.l, {
                                 isTrayButton: !0,
                                 label: V.intl.string(V.t.brPQ5U),
-                                onClick: J,
+                                onClick: Q,
                                 iconComponent: c.gR,
                                 themeable: !0
                             })]
@@ -212,7 +212,7 @@ function K(e) {
             }), ee && null != t ? (0, i.jsx)(m.A, {
                 minHeight: 480,
                 maxHeight: t,
-                resizableNode: Q,
+                resizableNode: J,
                 onResize: e => {
                     S._.dispatch(B.jej.MANUAL_IFRAME_RESIZING, {
                         resizing: !0

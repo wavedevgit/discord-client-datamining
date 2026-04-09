@@ -70,7 +70,9 @@ function S() {
             count: 1,
             me_burst: !1,
             burst_count: 0
-        }] : []), f(A.intl.formatToPlainString(A.t["4rDfgM"], {}))], [t]),
+        }] : []), f(A.intl.formatToPlainString(A.t["4rDfgM"], {
+            link: "https://discord.com/accessibility"
+        }))], [t]),
         o = (0, l.bG)([r.A], () => r.A.messageGroupSpacing);
     return (0, i.jsx)(a.M1G, {
         children: (0, i.jsxs)("section", {

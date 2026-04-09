@@ -73,8 +73,8 @@ let P = l.memo(function(e) {
         sorting: q = !1,
         preloadOnClick: X = !0,
         guildJoinRequestStatus: $,
-        height: J,
-        "aria-setsize": Q,
+        height: Q,
+        "aria-setsize": J,
         "aria-posinset": Z
     } = e, {
         id: ee,
@@ -176,7 +176,7 @@ let P = l.memo(function(e) {
             icon: (0, E.Iv)(k, 2 * eb, ec && w, !0),
             selected: B || ec,
             ...er,
-            "aria-setsize": Q,
+            "aria-setsize": J,
             "aria-posinset": Z,
             "aria-selected": B
         }) : (0, i.jsx)(A.Qk9, {
@@ -199,7 +199,7 @@ let P = l.memo(function(e) {
                     icon: (0, E.Iv)(k, 2 * eb, ec && w, !0),
                     selected: B || ec,
                     ...er,
-                    "aria-setsize": Q,
+                    "aria-setsize": J,
                     "aria-posinset": Z,
                     "aria-selected": B
                 })
@@ -215,7 +215,7 @@ let P = l.memo(function(e) {
             } : void 0,
             "data-dnd-name": k.name,
             style: {
-                scale: null == J ? 1 : J
+                scale: null == Q ? 1 : Q
             },
             "data-drop-hovering": eA,
             className: a()(D.rN, {
@@ -232,7 +232,7 @@ let P = l.memo(function(e) {
             })
         }) : (0, i.jsx)(o.animated.div, {
             style: {
-                scale: null == J ? 1 : J
+                scale: null == Q ? 1 : Q
             },
             className: a()(D.rN, {
                 [D.p9]: q,

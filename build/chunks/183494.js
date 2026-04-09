@@ -28,8 +28,8 @@ function p(e) {
         backgroundColor: x,
         playerState: E,
         preloadedBuffers: b,
-        durationSec: g,
-        maxSeekableTime: v,
+        durationSec: v,
+        maxSeekableTime: g,
         progressGlow: y,
         progressFillClassName: S,
         glowClassName: C,
@@ -63,13 +63,13 @@ function p(e) {
     } = (0, d.A)({
         onScrubBack: j,
         onScrubForward: P,
-        maxSeekableTime: v,
+        maxSeekableTime: g,
         interactionEnabled: p,
-        durationSec: g,
+        durationSec: v,
         percent: n,
         onClick: L,
         onDragStateChange: D
-    }), H = l.useMemo(() => null == Q || null == B ? null : (0, o.rB)((0, o.hc)(Q, B, g)), [Q, B, g]), J = l.useMemo(() => {
+    }), H = l.useMemo(() => null == Q || null == B ? null : (0, o.rB)((0, o.hc)(Q, B, v)), [Q, B, v]), J = l.useMemo(() => {
         if (null != B) return (0, o.TO)(n, B)
     }, [n, B]), Z = B?.width != null && B?.width !== 0 ? B?.width : 1, [{
         playbackPxSpring: q
@@ -87,13 +87,13 @@ function p(e) {
             })), en.current = !0
         } else if (!e && a && null != et.current) {
             let e = null == J || Number.isNaN(J) ? 0 : J,
-                t = g > 0 ? Math.min(e + Z / g * .275, Z) : e;
+                t = v > 0 ? Math.min(e + Z / v * .275, Z) : e;
             et.current.style.left = `${e}px`, ee({
                 playbackPxSpring: t,
                 immediate: !0
             })
         }
-    }, [a, ee, J, E, g, Z]);
+    }, [a, ee, J, E, v, Z]);
     let el = l.useRef(Y);
     l.useLayoutEffect(() => {
         let e = el.current;
@@ -107,20 +107,20 @@ function p(e) {
             return
         }
         let e = null == J || Number.isNaN(J) ? 0 : J;
-        a && g > 0 ? ee({
-            playbackPxSpring: Math.min(e + Z / g * .275, Z),
+        a && v > 0 ? ee({
+            playbackPxSpring: Math.min(e + Z / v * .275, Z),
             immediate: !0
         }) : ee({
             playbackPxSpring: e,
             immediate: !0
         })
-    }, [J, a, ee, Z, g]);
-    let ea = g > 1,
+    }, [J, a, ee, Z, v]);
+    let ea = v > 1,
         ei = M?.indicators,
         es = l.useMemo(() => {
             let e;
             return null != ei && null != B && ea ? (e = B.width, ei.map(t => {
-                let n = Math.max(0, Math.min((0, o.DX)(t.timeSec, g, B) - t.widthPx / 2, e - t.widthPx));
+                let n = Math.max(0, Math.min((0, o.DX)(t.timeSec, v, B) - t.widthPx / 2, e - t.widthPx));
                 return {
                     leftPx: n,
                     rightPx: n + t.widthPx,
@@ -129,7 +129,7 @@ function p(e) {
                     source: t
                 }
             })) : void 0
-        }, [ei, g, B, ea]),
+        }, [ei, v, B, ea]),
         eu = l.useMemo(() => ((e, t) => {
             let n = [{
                 startPx: 0,

@@ -273,7 +273,7 @@ function X(e) {
                                     className: K.Kk
                                 })
                             }), (0, i.jsxs)(o.nVY, {
-                                children: [(0, i.jsx)(J, {
+                                children: [(0, i.jsx)(Q, {
                                     parentChannel: n,
                                     parentMessageId: s,
                                     threadSettings: m,
@@ -297,7 +297,7 @@ function X(e) {
                     })
                 }), (0, i.jsxs)("div", {
                     className: W.Eh,
-                    children: [(0, i.jsx)(Q, {
+                    children: [(0, i.jsx)(J, {
                         parentChannel: n,
                         textAreaState: x,
                         setTextAreaState: E,
@@ -336,7 +336,7 @@ function $(e) {
     })
 }
 
-function J(e) {
+function Q(e) {
     let {
         parentChannel: t,
         parentMessageId: n,
@@ -373,7 +373,7 @@ function J(e) {
     })
 }
 
-function Q(e) {
+function J(e) {
     let {
         parentChannel: t,
         textAreaState: n,

@@ -57,8 +57,8 @@ let w = l.memo(function e(t) {
         q = _.hD.useSetting(),
         X = _.rs.useSetting(),
         $ = _.kt.useSetting(),
-        J = (0, c.S)((s.editedTimestamp ?? s.timestamp).valueOf()),
-        Q = (0, u.A)(l?.id),
+        Q = (0, c.S)((s.editedTimestamp ?? s.timestamp).valueOf()),
+        J = (0, u.A)(l?.id),
         {
             disableReactionCreates: Z
         } = (0, N.A)(l),
@@ -68,8 +68,8 @@ let w = l.memo(function e(t) {
             hasBailedAst: en
         } = (0, y.A)(s, {
             hideSimpleEmbedContent: q && X,
-            allowList: J,
-            allowHeading: J,
+            allowList: Q,
+            allowHeading: Q,
             allowLinks: !0,
             previewLinkTarget: !0
         }),
@@ -127,9 +127,9 @@ let w = l.memo(function e(t) {
             renderEmbeds: X,
             gifAutoPlay: $,
             poll: ec,
-            showListsAndHeaders: J,
-            showMaskedLinks: J,
-            shouldHideMediaOptions: Q,
+            showListsAndHeaders: Q,
+            showMaskedLinks: Q,
+            shouldHideMediaOptions: J,
             enabledContentHarmTypeFlags: eo,
             ctaButtonType: ed
         }),

@@ -98,8 +98,8 @@ let G = (0, A.J)(function(e) {
         isStreaming: q,
         isWatching: X,
         isGuest: $,
-        priority: J,
-        showPreview: Q,
+        priority: Q,
+        showPreview: J,
         hidePreview: Z,
         shouldShowHoverPopout: ee,
         otherClientSessionType: et,
@@ -153,7 +153,7 @@ let G = (0, A.J)(function(e) {
             className: M.kZ,
             "data-dnd-name": ed,
             onMouseEnter: ei ? void 0 : () => {
-                eu || (eA.current = setTimeout(() => Q?.(s.id), 100))
+                eu || (eA.current = setTimeout(() => J?.(s.id), 100))
             },
             onMouseLeave: ei ? void 0 : eN,
             children: (0, i.jsx)(C.A, {
@@ -177,7 +177,7 @@ let G = (0, A.J)(function(e) {
                         isStreaming: q,
                         isGuest: $,
                         video: k,
-                        priority: J,
+                        priority: Q,
                         ringing: F,
                         deaf: P,
                         nick: H,

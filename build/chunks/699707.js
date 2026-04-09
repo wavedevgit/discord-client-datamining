@@ -53,21 +53,21 @@ function b(e) {
         q = L.type === I.lp.ACTIVITY,
         X = (0, c.A)(q ? L.applicationId : void 0),
         $ = !q && null != L.streamId,
-        J = G <= 2 * S + 144,
-        Q = M && !J,
-        Z = (0, d.A)(Q),
+        Q = G <= 2 * S + 144,
+        J = M && !Q,
+        Z = (0, d.A)(J),
         ee = P === E.DUB.MINIMUM || P === E.DUB.NORMAL,
-        et = !J && (!ee || q),
+        et = !Q && (!ee || q),
         en = (0, m.A)(et, 100),
         ei = ((0, d.A)(L.id) ?? L.id) !== L.id,
         el = 0;
-    (q || Q) && (el += 72), q && !Q && (et ? el += 48 : el += 8), Q && (el += .5 * S + 8);
+    (q || J) && (el += 72), q && !J && (et ? el += 48 : el += 8), J && (el += .5 * S + 8);
     let es = l.useMemo(() => q && X ? U / (G - 2 * el) : $ && null != V && V.width > 0 && V.height > 0 ? V.width / V.height : T, [$, V, q, U, G, el, X]),
         ea = G - 2 * el,
         er = q && X ? U : ea * es,
         eo = Math.floor(Math.min(U, er) / es),
         ed = G > U / es + 72 + S + 8;
-    t = Q || q ? Q ? -16 : -8 : 40 + Math.max(0, 72 - (G - eo) / 2);
+    t = J || q ? J ? -16 : -8 : 40 + Math.max(0, 72 - (G - eo) / 2);
     let ec = Math.max(0, 72 - (G - eo) / 2);
     l.useEffect(() => {
         let e = setTimeout(() => {
@@ -80,8 +80,8 @@ function b(e) {
     let eu = W || null == F,
         eh = eu ? "animate-never" : "animate-always",
         eA = (0, o.zhh)({
-            value: +!!Q,
-            delay: ed || !Q ? 0 : 100,
+            value: +!!J,
+            delay: ed || !J ? 0 : 100,
             config: {
                 ...r.config.stiff,
                 clamp: !0
@@ -93,7 +93,7 @@ function b(e) {
             }
         }, eh),
         e_ = (0, o.zhh)({
-            value: +!!Q,
+            value: +!!J,
             config: {
                 ...r.config.stiff,
                 clamp: !0
@@ -105,7 +105,7 @@ function b(e) {
                 ...r.config.stiff,
                 clamp: !0
             }
-        }, Z === Q && e_.value.idle && !en || ei || eu ? "animate-never" : "animate-always"),
+        }, Z === J && e_.value.idle && !en || ei || eu ? "animate-never" : "animate-always"),
         eg = (0, o.zhh)({
             value: t,
             config: {
@@ -133,7 +133,7 @@ function b(e) {
         ef = l.useCallback(e => {
             H(e), K(!1)
         }, []),
-        ex = Q ? [] : (0, f.Cf)(y, L, B),
+        ex = J ? [] : (0, f.Cf)(y, L, B),
         {
             visibleParticipants: eE,
             participantTileWidth: eI

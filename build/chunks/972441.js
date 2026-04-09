@@ -20,7 +20,7 @@ function c(e) {
         onClick: f,
         percent: h,
         onDragStateChange: p
-    } = e, [x, E] = r.useState(null), [b, g] = r.useState(null), [v, y] = r.useState(!1), [S, C] = r.useState(!1), [A, N] = r.useState(null), [R, w] = r.useState(!1), {
+    } = e, [x, E] = r.useState(null), [b, v] = r.useState(null), [g, y] = r.useState(!1), [S, C] = r.useState(!1), [A, N] = r.useState(null), [R, w] = r.useState(!1), {
         i18n: T
     } = (0, a.G98)(), L = r.useMemo(() => {
         let e = {
@@ -35,7 +35,7 @@ function c(e) {
             let t = D.current.getBoundingClientRect(),
                 n = e.clientX - t.left,
                 r = null != c ? c / m * t.width : null;
-            w(null != r && n > r), g(n)
+            w(null != r && n > r), v(n)
         }
     }, k = r.useRef(!1), I = r.useRef(null), B = (0, u.A)((e, t) => {
         if (null == f) return;
@@ -57,10 +57,10 @@ function c(e) {
             d && (y(!0), M(e))
         },
         handleMouseLeave: e => {
-            d && !k.current && (y(!1), g(null), w(!1))
+            d && !k.current && (y(!1), v(null), w(!1))
         },
         handleMouseMove: e => {
-            d && v && M(e)
+            d && g && M(e)
         },
         handleMouseDown: e => {
             if (!d || null == f || 0 !== e.button) return;
@@ -75,11 +75,11 @@ function c(e) {
                             n = Math.max(0, Math.min(e.clientX - t.left, t.width)),
                             r = null != c ? c / m * t.width : null,
                             l = null != r ? Math.min(n, r) : n;
-                        w(null != r && n > r), g(n), N(l), B(e.clientX, t)
+                        w(null != r && n > r), v(n), N(l), B(e.clientX, t)
                     } else B(e.clientX, t)
                 },
                 a = e => {
-                    k.current = !1, I.current = null, C(!1), N(null), p?.(!1), w(!1), null != D.current && ((0, l.vq)(e.target, Node) && D.current.contains(e.target) || (y(!1), g(null))), window.removeEventListener("mousemove", r), window.removeEventListener("mouseup", a)
+                    k.current = !1, I.current = null, C(!1), N(null), p?.(!1), w(!1), null != D.current && ((0, l.vq)(e.target, Node) && D.current.contains(e.target) || (y(!1), v(null))), window.removeEventListener("mousemove", r), window.removeEventListener("mouseup", a)
                 };
             window.addEventListener("mousemove", r), window.addEventListener("mouseup", a), I.current = () => {
                 window.removeEventListener("mousemove", r), window.removeEventListener("mouseup", a)
@@ -88,7 +88,7 @@ function c(e) {
         handleKeyDown: U,
         hoveredAtX: b,
         maxSeekableX: j,
-        isHovering: v,
+        isHovering: g,
         isDragging: S,
         dragX: A,
         isHoverBeyondMax: R,

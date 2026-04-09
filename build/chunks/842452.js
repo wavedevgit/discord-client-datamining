@@ -58,12 +58,12 @@ let v = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 name: X,
                 children: $
             } = u,
-            [J, Q] = l.useState(!1),
+            [Q, J] = l.useState(!1),
             [Z, ee] = l.useState(!1),
-            et = J || Z,
+            et = Q || Z,
             en = (0, _.qK)("FolderItem");
         l.useEffect(() => {
-            k && Q(!1)
+            k && J(!1)
         }, [k]);
         let [{
             dragging: ei
@@ -99,7 +99,7 @@ let v = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
         }), eh = l.useCallback(e => g?.(q, e), [g, q]), eA = (0, i.jsxs)(C.c, {
             children: [(0, i.jsx)(f.A, {
                 disabled: ei || O,
-                hovered: J,
+                hovered: Q,
                 selected: R,
                 unread: U,
                 className: y.Io
@@ -130,7 +130,7 @@ let v = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                         folderGroupId: ed,
                         onClick: V,
                         onContextMenu: H,
-                        onHoverChange: Q,
+                        onHoverChange: J,
                         onKeyDown: ea,
                         treeItemProps: eo,
                         folderButtonContent: K,

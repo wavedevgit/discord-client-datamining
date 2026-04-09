@@ -23,8 +23,8 @@ let c = e => {
         preloadedBuffers: x,
         maxSeekableX: E,
         segmentBorderRadius: b = 99,
-        showGlow: g,
-        glowClassName: v,
+        showGlow: v,
+        glowClassName: g,
         progressFillClassName: y
     } = e, {
         startPx: S,
@@ -90,9 +90,9 @@ let c = e => {
                     opacity: null != k ? k <= 0 ? 0 : 1 : j.to(e => e <= 0 ? 0 : 1)
                 }
             })]
-        }), g && (0, r.jsx)(s.animated.div, {
+        }), v && (0, r.jsx)(s.animated.div, {
             ref: T,
-            className: i()(o.DT, v),
+            className: i()(o.DT, g),
             style: {
                 width: B
             }

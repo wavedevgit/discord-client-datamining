@@ -18,8 +18,8 @@ var r = n(627968),
     x = n(91034),
     E = n(710434),
     b = n(634156),
-    g = n(652215),
-    v = n(961432),
+    v = n(652215),
+    g = n(961432),
     y = n(985018),
     S = n(246878);
 
@@ -66,7 +66,7 @@ function C(e) {
     })), er = l.useRef(null), el = l.useCallback(() => {
         if (null == L) return;
         let e = j?.split("/");
-        h.default.track(g.HAw.MEDIA_DOWNLOAD_BUTTON_TAPPED, {
+        h.default.track(v.HAw.MEDIA_DOWNLOAD_BUTTON_TAPPED, {
             attachment_type: e?.[0],
             attachment_subtype: e?.[1]
         }), window.open(L, "_blank")
@@ -141,8 +141,8 @@ function C(e) {
                     animationTime: a,
                     visible: C,
                     onClick: F,
-                    ariaLabel: y.intl.string(v.default["dRVF+Z"]),
-                    tooltipLabel: y.intl.string(v.default["dRVF+Z"]),
+                    ariaLabel: y.intl.string(g.default["dRVF+Z"]),
+                    tooltipLabel: y.intl.string(g.default["dRVF+Z"]),
                     shortcut: c.TJ.SEEK_BACK,
                     buttonSize: p.AU[T],
                     "data-testid": "discord-web-video-player-seek-backward-btn"
@@ -152,8 +152,8 @@ function C(e) {
                     visible: C,
                     onClick: _,
                     disabled: !A,
-                    ariaLabel: A ? y.intl.string(v.default.yV2FLL) : y.intl.string(v.default.YWbiPw),
-                    tooltipLabel: A ? y.intl.string(v.default.yV2FLL) : y.intl.string(v.default.YWbiPw),
+                    ariaLabel: A ? y.intl.string(g.default.yV2FLL) : y.intl.string(g.default.YWbiPw),
+                    tooltipLabel: A ? y.intl.string(g.default.yV2FLL) : y.intl.string(g.default.YWbiPw),
                     tooltipDelayMs: A ? p.do : 0,
                     shortcut: c.TJ.SEEK_FORWARD,
                     buttonSize: p.AU[T],
@@ -180,8 +180,8 @@ function C(e) {
                     animationTime: a,
                     visible: C,
                     onClick: ei,
-                    ariaLabel: y.intl.string(v.default.XiLvuG),
-                    tooltipLabel: y.intl.string(v.default.XiLvuG),
+                    ariaLabel: y.intl.string(g.default.XiLvuG),
+                    tooltipLabel: y.intl.string(g.default.XiLvuG),
                     shortcut: c.TJ.MUTE,
                     buttonSize: p.AU[T],
                     "data-testid": "discord-web-video-player-volume-btn"
@@ -214,7 +214,7 @@ function C(e) {
                             backgroundColor: o.A.colors.WHITE.css
                         },
                         orientation: "horizontal",
-                        "aria-label": y.intl.string(v.default.XiLvuG)
+                        "aria-label": y.intl.string(g.default.XiLvuG)
                     })
                 })]
             }), (0, r.jsx)(p.QF, {
@@ -230,8 +230,8 @@ function C(e) {
                 onClick: $,
                 active: I && n !== c.Q6.ENDED,
                 disabled: n === c.Q6.ENDED,
-                ariaLabel: y.intl.string(v.default["6EjGUv"]),
-                tooltipLabel: y.intl.string(v.default["6EjGUv"]),
+                ariaLabel: y.intl.string(g.default["6EjGUv"]),
+                tooltipLabel: y.intl.string(g.default["6EjGUv"]),
                 buttonSize: p.AU[T],
                 "data-testid": "discord-web-video-player-transcript-btn"
             }), !N && (0, r.jsx)(p.Ey, {
@@ -240,8 +240,8 @@ function C(e) {
                 visible: C,
                 active: B,
                 onClick: O,
-                ariaLabel: y.intl.string(v.default["0DbPcL"]),
-                tooltipLabel: y.intl.string(v.default["0DbPcL"]),
+                ariaLabel: y.intl.string(g.default["0DbPcL"]),
+                tooltipLabel: y.intl.string(g.default["0DbPcL"]),
                 shortcut: c.TJ.CAPTION,
                 buttonSize: p.AU[T],
                 "data-testid": "discord-web-video-player-captions-btn"
@@ -259,8 +259,8 @@ function C(e) {
                 animationTime: a,
                 visible: C,
                 onClick: Q,
-                ariaLabel: y.intl.string(v.default.z9Cnzv),
-                tooltipLabel: y.intl.string(v.default.z9Cnzv),
+                ariaLabel: y.intl.string(g.default.z9Cnzv),
+                tooltipLabel: y.intl.string(g.default.z9Cnzv),
                 shortcut: c.TJ.FULLSCREEN,
                 buttonSize: p.AU[T],
                 "data-testid": "discord-web-video-player-fullscreen-btn"

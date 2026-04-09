@@ -84,25 +84,25 @@ function B(e) {
         X = (0, v.v)(Y),
         {
             status: $,
-            recommendations: J,
-            skusToUserAndReason: Q
+            recommendations: Q,
+            skusToUserAndReason: J
         } = (0, x.XQ)({
             applicationIds: Y,
             numItems: 6,
             userIds: q
         }),
-        Z = "loading" === $ || 0 === J.length,
-        ee = l.useMemo(() => J.map(e => E.A.fromSKU(e)).filter(S.Vq), [J]),
+        Z = "loading" === $ || 0 === Q.length,
+        ee = l.useMemo(() => Q.map(e => E.A.fromSKU(e)).filter(S.Vq), [Q]),
         et = (0, d.A)(Z ? k : ee, V),
         en = l.useMemo(() => {
             let e = new Set(q),
                 {
                     hasWishlist: t,
                     hasPopular: n
-                } = (0, b.wH)(J, Q, e),
+                } = (0, b.wH)(Q, J, e),
                 l = t && n;
             return et.map(t => {
-                let n = Object.entries(Q[t.skuId] ?? {}).filter(t => {
+                let n = Object.entries(J[t.skuId] ?? {}).filter(t => {
                         let [n, i] = t;
                         return i === I.j.WISHLIST && e.has(n)
                     }).map(e => {
@@ -130,14 +130,14 @@ function B(e) {
                     contextContainerClassName: G.RL
                 }, t.skuId)
             })
-        }, [z, q, J, et, Q, B, X, h.guild_id, h.id]);
+        }, [z, q, Q, et, J, B, X, h.guild_id, h.id]);
     return l.useEffect(() => {
-        0 !== J.length && T.default.track(M.HAw.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
+        0 !== Q.length && T.default.track(M.HAw.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
             guild_id: h.guild_id,
             channel_id: h.id,
-            sku_ids: J.map(e => e.id)
+            sku_ids: Q.map(e => e.id)
         })
-    }, [h.id, h.guild_id, J]), (0, i.jsx)(m.A, {
+    }, [h.id, h.guild_id, Q]), (0, i.jsx)(m.A, {
         children: (0, i.jsx)(c.lGe, {
             "aria-labelledby": P,
             modal: !1,

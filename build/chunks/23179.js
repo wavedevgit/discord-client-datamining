@@ -285,8 +285,8 @@ let B = [],
             }, [N, t, a]),
             X = Math.floor(n.offset / L.T_y),
             $ = W && X >= F,
-            J = F + 1,
-            Q = (0, r.yK)([b.A], () => {
+            Q = F + 1,
+            J = (0, r.yK)([b.A], () => {
                 if (0 !== n.offset) return B;
                 let e = u.length;
                 if (e < 10) return B;
@@ -298,7 +298,7 @@ let B = [],
                     s = b.A.getSearchResultsQueryString(l);
                 return (0, f._o)(s ?? "").some(e => e.type === L.LWr.FILTER_AUTHOR_TYPE) ? B : [o.M.SEARCH_AUTHOR_TYPE_SEARCH_RESULTS_HINT]
             }),
-            [Z, ee] = (0, h.kn)(Q),
+            [Z, ee] = (0, h.kn)(J),
             et = Z === o.M.SEARCH_AUTHOR_TYPE_SEARCH_RESULTS_HINT,
             en = l.useCallback(() => {
                 if (n.isSearching) return;
@@ -324,7 +324,7 @@ let B = [],
                     className: U.VC,
                     messageType: c.YCn.WARNING,
                     children: D.intl.formatToPlainString(D.t["E+2azY"], {
-                        maxPages: J
+                        maxPages: Q
                     })
                 }), et && (0, i.jsx)(c.po8, {
                     className: U.QR,

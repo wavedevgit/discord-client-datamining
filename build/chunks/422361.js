@@ -50,8 +50,8 @@ var i = n(627968),
     q = n(68437),
     X = n(166444),
     $ = n(850457),
-    J = n(469178),
-    Q = n(562991),
+    Q = n(469178),
+    J = n(562991),
     Z = n(588224);
 n(281405);
 var ee = n(652215),
@@ -190,7 +190,7 @@ class el extends z.Ay {
         } = this.props, l = (0, N.M)(this.props.subtitle)?.subtitle, {
             hovered: s
         } = this.state;
-        return (0, i.jsx)(Q.A, {
+        return (0, i.jsx)(J.A, {
             onClick: this.handleVoiceStatusClick,
             channel: e,
             connected: t,
@@ -329,7 +329,7 @@ class el extends z.Ay {
                 [ei.fy]: j
             }),
             "data-dnd-name": (0, I.m1)(e, W.default, H.A),
-            children: [M && this.getVoiceStatesCount() > 0 && (0, i.jsx)(J.A, {
+            children: [M && this.getVoiceStatesCount() > 0 && (0, i.jsx)(Q.A, {
                 channel: e
             }), j && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)("div", {

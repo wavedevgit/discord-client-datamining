@@ -51,8 +51,8 @@ var f = n(483270),
     q = n(561446),
     X = n(300233),
     $ = n(721592),
-    J = n(403363),
-    Q = n(397036),
+    Q = n(403363),
+    J = n(397036),
     Z = n(732044),
     ee = n(733441),
     et = n(187360),
@@ -105,8 +105,8 @@ var f = n(483270),
     eq = n(287809),
     eX = n(977997),
     e$ = n(47167),
-    eJ = n(698718),
-    eQ = n(812771),
+    eQ = n(698718),
+    eJ = n(812771),
     eZ = n(991275),
     e0 = n(59e3),
     e1 = n(377045),
@@ -537,11 +537,11 @@ class tl extends l.PureComponent {
             channelIsSpoilerGated: s,
             inCall: a
         } = this.props;
-        if (o()(null != e, "Missing channel in Channel.renderChat"), n) return (o()(null != t, "premium channels must exist within a guild"), e?.isRoleSubscriptionTemplatePreviewChannel()) ? (0, i.jsx)(J.A, {
+        if (o()(null != e, "Missing channel in Channel.renderChat"), n) return (o()(null != t, "premium channels must exist within a guild"), e?.isRoleSubscriptionTemplatePreviewChannel()) ? (0, i.jsx)(Q.A, {
             guildId: t.id
         }) : (0, i.jsx)(X.H, {
             guildId: t.id,
-            children: (0, i.jsx)(Q.A, {
+            children: (0, i.jsx)(J.A, {
                 channelId: e.id,
                 guildId: t.id
             })
@@ -571,7 +571,7 @@ class tl extends l.PureComponent {
                 sidebarState: n
             }, e.id)
         }
-        return (0, i.jsx)(eJ.A, {
+        return (0, i.jsx)(eQ.A, {
             channel: e,
             guild: t,
             chatInputType: M.oU.NORMAL
@@ -726,8 +726,8 @@ class tl extends l.PureComponent {
             } if (null == e) return null;
         let d = t?.type != null && e6.kvI.GUILD_THREADS_ONLY.has(t.type) ? 528 : 450,
             c = a - e6.MdR - d;
-        return c += 375, (0, i.jsx)(eQ.A, {
-            sidebarType: t?.type != null && e6.kvI.GUILD_THREADS_ONLY.has(t.type) ? eQ.X.PostSidebar : eQ.X.ThreadSidebar,
+        return c += 375, (0, i.jsx)(eJ.A, {
+            sidebarType: t?.type != null && e6.kvI.GUILD_THREADS_ONLY.has(t.type) ? eJ.X.PostSidebar : eJ.X.ThreadSidebar,
             maxWidth: c,
             onWidthChange: this.handleThreadSidebarResize,
             children: e
@@ -811,8 +811,8 @@ let ts = (0, E.A)(tl),
                 welcomeModalChannelId: q
             } = (0, u.zy)(),
             X = (0, h.bG)([e_.A], () => null != m && e_.A.isLurking(m.guild_id), [m]),
-            J = (0, h.bG)([ek.A], () => ek.A.hasSeen(m?.guild_id, X), [m, X]),
-            Q = (0, h.bG)([R.A, N.Ay], () => null != N.Ay.getConnectedActivityLocation() && N.Ay.getActivityPanelMode() === e5.Gd.PANEL ? N.Ay.getFocusedLayout() === e5.E8.NO_CHAT ? e6.DUB.NO_CHAT : e6.DUB.NORMAL : null != a ? R.A.getLayout(a) : e6.DUB.NORMAL, [a]),
+            Q = (0, h.bG)([ek.A], () => ek.A.hasSeen(m?.guild_id, X), [m, X]),
+            J = (0, h.bG)([R.A, N.Ay], () => null != N.Ay.getConnectedActivityLocation() && N.Ay.getActivityPanelMode() === e5.Gd.PANEL ? N.Ay.getFocusedLayout() === e5.E8.NO_CHAT ? e6.DUB.NO_CHAT : e6.DUB.NORMAL : null != a ? R.A.getLayout(a) : e6.DUB.NORMAL, [a]),
             Z = (0, eh.A)(E?.id),
             ee = (0, ew.A)(q, E?.id),
             {
@@ -877,7 +877,7 @@ let ts = (0, E.A)(tl),
             formattedChannelName: er,
             parentChannel: x,
             voiceChannel: p,
-            layout: Q,
+            layout: J,
             needSubscriptionToAccess: T,
             isLurking: X,
             hasModalOpen: eb,
@@ -893,7 +893,7 @@ let ts = (0, E.A)(tl),
             isMobile: (0, h.bG)([eK.A], () => m?.type === e6.rbe.DM && eK.A.isMobileOnline(m.getRecipientId()), [m]),
             isUnavailable: (0, h.bG)([eF.A], () => m?.guild_id != null && eF.A.isUnavailable(m.guild_id), [m]),
             showRealNameModal: Z,
-            showWelcomeModal: !J && ee,
+            showWelcomeModal: !Q && ee,
             showFollowButton: m?.type === e6.rbe.GUILD_ANNOUNCEMENT && E?.features.has(e6.GuildFeatures.NEWS) || !1,
             ...(0, h.cf)([eX.A], () => ({
                 hasVideo: null != m && eX.A.hasVideo(m.id)

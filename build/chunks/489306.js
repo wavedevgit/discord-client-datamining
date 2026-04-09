@@ -98,7 +98,7 @@ function R(e) {
                 z = (0, _.S)(e, "useGuildPowerupsChannelListPopout"),
                 [q, X] = (0, I.vn)(null != t && !S && H && z),
                 $ = q === a.M.GAME_SERVER_PRICING_CHANGE_COACHMARK,
-                J = i.useMemo(() => {
+                Q = i.useMemo(() => {
                     if (null == t || f || M || Y || $ || P || V) return;
                     let n = function(e, t) {
                         let n = u.fi.find(e => {
@@ -158,7 +158,7 @@ function R(e) {
                     }(e, S, E, j);
                     if (null != l) return l
                 }, [e, t, f, M, Y, $, P, V, E, S, j]),
-                [Q, Z] = (0, I.ru)(null != J);
+                [J, Z] = (0, I.ru)(null != Q);
             return i.useMemo(() => {
                 if (null != t) {
                     if (f) return {
@@ -197,14 +197,14 @@ function R(e) {
                         type: x.o.GAME_SERVER_PRICING_CHANGE,
                         markAsDismissed: X
                     };
-                    if (Q === a.M.GUILD_POWERUP_NOTIFICATION && null != J) return {
-                        ...J,
+                    if (J === a.M.GUILD_POWERUP_NOTIFICATION && null != Q) return {
+                        ...Q,
                         markAsDismissed: e => {
-                            Z(e), J.markAsDismissed(e)
+                            Z(e), Q.markAsDismissed(e)
                         }
                     }
                 }
-            }, [t, f, p, J, Q, Z, M, L, R, P, D, G, V, k, B, Y, K, $, X])
+            }, [t, f, p, Q, J, Z, M, L, R, P, D, G, V, k, B, Y, K, $, X])
         }(e, n ?? void 0);
     if (null !== n && (null != g || j || null != R)) return {
         indicator: g,

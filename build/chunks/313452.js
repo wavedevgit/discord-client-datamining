@@ -194,10 +194,10 @@ function D(e) {
             })), e
         }, [n, s]),
         $ = 0 === n.length && 0 === s.length && H,
-        J = 0 === n.length && 0 === s.length && !F && V,
-        Q = l.useMemo(() => {
+        Q = 0 === n.length && 0 === s.length && !F && V,
+        J = l.useMemo(() => {
             let e = [];
-            return J ? e.push(A()) : $ ? e.push((0, i.jsx)(M, {}, "empty-state")) : U ? (e.push(...s.map(e => _([e], !0))), e.push(...n.map(e => _([e], !1)))) : o().each(L, t => {
+            return Q ? e.push(A()) : $ ? e.push((0, i.jsx)(M, {}, "empty-state")) : U ? (e.push(...s.map(e => _([e], !0))), e.push(...n.map(e => _([e], !1)))) : o().each(L, t => {
                 0 !== X[t].length && (e.push((0, i.jsx)(O, {
                     group: t,
                     isOpen: K[t],
@@ -211,13 +211,13 @@ function D(e) {
                     }
                 }, t)), K[t] && e.push(...X[t].map(e => _(e, t === S.Ur.UNREAD))))
             }), e
-        }, [n, s, A, K, Y, X, U, _, $, J, G]),
-        Z = Q[Q.length - 1],
+        }, [n, s, A, K, Y, X, U, _, $, Q, G]),
+        Z = J[J.length - 1],
         ee = l.isValidElement(Z) && Z.type === O,
         et = (0, N.S)(e => e.setInboxReadState);
     l.useEffect(() => {
-        J || et(0 === X.UNREAD.length)
-    }, [X, J, et]);
+        Q || et(0 === X.UNREAD.length)
+    }, [X, Q, et]);
     let en = (n.length > 0 || s.length > 0) && null != r && V;
     ! function(e) {
         let {
@@ -239,8 +239,8 @@ function D(e) {
         return null == t ? 0 : Math.max(0, Math.ceil(t.offsetHeight / 64) - e)
     }, [K, X]);
     l.useEffect(() => {
-        J || V || 0 >= ei() || (!ee || z) && r?.(S.VA.FILL_SCROLLER)
-    }, [ei, r, J, V, ee, z]);
+        Q || V || 0 >= ei() || (!ee || z) && r?.(S.VA.FILL_SCROLLER)
+    }, [ei, r, Q, V, ee, z]);
     let el = l.useMemo(() => {
         let e = Math.min(Math.max(2, ei()), 20);
         return (0, i.jsx)(T.A, {
@@ -276,7 +276,7 @@ function D(e) {
                         onScroll: q,
                         fade: !0,
                         ...n,
-                        children: [Q, en && !ee ? el : null]
+                        children: [J, en && !ee ? el : null]
                     })
                 }
             })

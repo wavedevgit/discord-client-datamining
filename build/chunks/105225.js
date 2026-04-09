@@ -52,8 +52,8 @@ var i = n(627968),
     q = n(905216),
     X = n(577062),
     $ = n(533978),
-    J = n(958449),
-    Q = n(970636),
+    Q = n(958449),
+    J = n(970636),
     Z = n(616356),
     ee = n(470710),
     et = n(430452),
@@ -158,7 +158,7 @@ function eI(e) {
                             } = e ?? {
                                 onClick: void 0
                             }, s = null != g;
-                            return (0, i.jsx)(J.h, {
+                            return (0, i.jsx)(Q.h, {
                                 ...l,
                                 centerButton: !0,
                                 disabled: o || !r,
@@ -282,7 +282,7 @@ let eN = l.memo(function(e) {
                                 onPopoutClick: C.length > 0 ? l : null
                             });
                         case "STREAM":
-                            return (0, i.jsx)(J.h, {
+                            return (0, i.jsx)(Q.h, {
                                 ...d,
                                 hasPermission: !0,
                                 streamActive: !0,
@@ -337,7 +337,7 @@ function eT(e) {
     });
     return (0, i.jsxs)("div", {
         className: ex.iE,
-        children: [(0, i.jsx)(Q.A, {
+        children: [(0, i.jsx)(J.A, {
             enabled: !0,
             centerButton: !0,
             join: !0,
@@ -396,7 +396,7 @@ let eb = function(e) {
         location: "center_control_tray"
     }), z = (0, c.bG)([p.Ay], () => p.Ay.getCurrentEmbeddedActivity()), {
         reachedLimit: q,
-        limit: J
+        limit: Q
     } = (0, es.A)(t), {
         analyticsLocations: Z
     } = (0, E.Ay)(x.A.VOICE_CONTROL_TRAY), ee = (0, V.Ay)(t), eo = l.useRef(null), eu = l.useRef(null), eA = (0, G.Us)();
@@ -484,7 +484,7 @@ let eb = function(e) {
                             } = e, {
                                 isShown: l
                             } = t;
-                            return (0, i.jsx)(Q.A, {
+                            return (0, i.jsx)(J.A, {
                                 ref: eu,
                                 centerButton: !0,
                                 hasPermission: b,
@@ -493,7 +493,7 @@ let eb = function(e) {
                                 onChange: eE,
                                 onCameraUnavailable: eh.A,
                                 channelLimitReached: q,
-                                channelLimit: J,
+                                channelLimit: Q,
                                 popoutOpen: l,
                                 onPopoutClick: n
                             })

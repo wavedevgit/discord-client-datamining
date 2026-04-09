@@ -51,8 +51,8 @@ var i = n(627968),
     q = n(506792),
     X = n(724591),
     $ = n(573956),
-    J = n(141515),
-    Q = n(463938),
+    Q = n(141515),
+    J = n(463938),
     Z = n(779881),
     ee = n(998986),
     et = n(732077),
@@ -427,7 +427,7 @@ class eg extends l.PureComponent {
                         withMargin: l.length > 1
                     }, ed.n.GUILD_PREMIUM_PROGRESS_BAR);
                 case ed.n.GUILD_HOME:
-                    return (0, i.jsx)(J.A, {
+                    return (0, i.jsx)(Q.A, {
                         guild: s,
                         selected: r === eu.VV.GUILD_HOME
                     }, ed.n.GUILD_HOME);
@@ -452,7 +452,7 @@ class eg extends l.PureComponent {
                         selected: r === eu.VV.GAME_SHOP
                     }, ed.n.GUILD_GAME_SHOP);
                 case ed.n.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR:
-                    return (0, i.jsx)(Q.j, {
+                    return (0, i.jsx)(J.j, {
                         guild: s
                     });
                 case ed.n.CHANNELS_AND_ROLES:

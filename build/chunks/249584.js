@@ -2,11 +2,11 @@
 n.d(t, {
     Gw: () => ee,
     HW: () => K,
-    K8: () => J,
+    K8: () => Q,
     Mr: () => et,
     Ns: () => Z,
     UB: () => Y,
-    YX: () => Q,
+    YX: () => J,
     bo: () => q,
     jz: () => X,
     lw: () => z,
@@ -307,7 +307,7 @@ function $(e) {
     })
 }
 
-function J(e) {
+function Q(e) {
     let {
         guildId: t,
         markAsDismissed: n,
@@ -354,7 +354,7 @@ function J(e) {
     })
 }
 
-function Q(e) {
+function J(e) {
     let {
         guildId: t,
         markAsDismissed: n,

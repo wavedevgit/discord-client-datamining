@@ -55,9 +55,9 @@ function H(e) {
         channelId: H.id
     }), X = l.useRef(null), {
         isHoveringOrFocusing: $,
-        isHovering: J
-    } = (0, _.A)(X), Q = (0, E.fC)(), Z = (0, o.zhh)({
-        opacity: +(null != Q.interactionType),
+        isHovering: Q
+    } = (0, _.A)(X), J = (0, E.fC)(), Z = (0, o.zhh)({
+        opacity: +(null != J.interactionType),
         config: {
             duration: 150
         }
@@ -86,7 +86,7 @@ function H(e) {
             value: q,
             isLoaded: W?.isLoaded,
             children: (0, i.jsx)(E.Hl, {
-                value: Q,
+                value: J,
                 children: (0, i.jsxs)(y.A, {
                     ref: X,
                     user: t,
@@ -94,7 +94,7 @@ function H(e) {
                     themeType: w.d.SIDEBAR,
                     themeOverride: Y,
                     privateBanner: W?.private === !0 ? (0, i.jsx)(S.A, {}) : void 0,
-                    children: [null != Q.interactionType && (0, i.jsx)(s.animated.div, {
+                    children: [null != J.interactionType && (0, i.jsx)(s.animated.div, {
                         style: Z,
                         className: V.tB
                     }), (0, i.jsxs)(a.d_W, {
@@ -138,7 +138,7 @@ function H(e) {
                             currentUser: n,
                             displayProfile: W,
                             channel: H,
-                            isHoveringOrFocusing: null == Q.interactionType && $,
+                            isHoveringOrFocusing: null == J.interactionType && $,
                             onOpenProfile: F ? void 0 : ee
                         }), et && (0, i.jsx)("div", {
                             className: V.sJ,
@@ -171,7 +171,7 @@ function H(e) {
                         handleOpenProfile: ee
                     }), W?.profileEffect != null && (0, i.jsx)(h.A, {
                         skuId: W?.profileEffect?.skuId,
-                        isHovering: J
+                        isHovering: Q
                     })]
                 })
             })

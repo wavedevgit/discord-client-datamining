@@ -50,8 +50,8 @@ var i = n(627968),
     q = n(874739),
     X = n(461782),
     $ = n(447404),
-    J = n(401685),
-    Q = n(20465),
+    Q = n(401685),
+    J = n(20465),
     Z = n(156652),
     ee = n(622770),
     et = n(423562),
@@ -112,9 +112,9 @@ function ek(e) {
         canInvite: a,
         onToggleChat: r,
         maybeLeaveFullScreen: o
-    } = e, d = (0, J.Bx)(), u = (0, c.bG)([L.A], () => l?.type === eL.lp.ACTIVITY ? L.A.getApplication(l.applicationId) : void 0), h = t === eM.DUB.NO_CHAT ? ee.A.Directions.UP : ee.A.Directions.DOWN, A = [eM.DUB.FULL_SCREEN, eM.DUB.NO_CHAT].includes(t);
+    } = e, d = (0, Q.Bx)(), u = (0, c.bG)([L.A], () => l?.type === eL.lp.ACTIVITY ? L.A.getApplication(l.applicationId) : void 0), h = t === eM.DUB.NO_CHAT ? ee.A.Directions.UP : ee.A.Directions.DOWN, A = [eM.DUB.FULL_SCREEN, eM.DUB.NO_CHAT].includes(t);
     return (0, i.jsxs)(i.Fragment, {
-        children: [a && d < J.vs.NO_INVITE ? (0, i.jsx)(en.A, {
+        children: [a && d < Q.vs.NO_INVITE ? (0, i.jsx)(en.A, {
             channel: n,
             stream: l?.type === eL.lp.STREAM ? (0, P.Iy)(l.id) : void 0,
             className: eU.jZ,
@@ -517,7 +517,7 @@ class ew extends l.PureComponent {
             inCall: l
         } = this.props;
         return !e || t || this.popoutOpen && !this.inPopout && l ? null : (0, i.jsx)(eS.Ay, {
-            children: (0, i.jsx)(Q.A, {
+            children: (0, i.jsx)(J.A, {
                 className: eU.T6,
                 channelId: n.id
             })
@@ -724,7 +724,7 @@ let eB = function(e) {
     } = (0, c.cf)([F.A], () => ({
         popoutWindow: F.A.getWindow(eM.MLl.CHANNEL_CALL_POPOUT),
         popoutWindowAlwaysOnTop: F.A.getIsAlwaysOnTop(eM.MLl.CHANNEL_CALL_POPOUT)
-    })), $ = (0, c.bG)([eh.A], () => eh.A.can(eM.xBc.CONNECT, t)), J = (0, c.bG)([ed.A], () => ed.A.getToastsEnabled(t.id)), Q = (0, c.bG)([U.default], () => U.default.getAwaitingRemoteSessionInfo()), Z = (0, c.bG)([Y.Ay], () => Y.Ay.callHeaderHeight), ee = l.useCallback(e => {
+    })), $ = (0, c.bG)([eh.A], () => eh.A.can(eM.xBc.CONNECT, t)), Q = (0, c.bG)([ed.A], () => ed.A.getToastsEnabled(t.id)), J = (0, c.bG)([U.default], () => U.default.getAwaitingRemoteSessionInfo()), Z = (0, c.bG)([Y.Ay], () => Y.Ay.callHeaderHeight), ee = l.useCallback(e => {
         x.Ay.updatedUnsyncedSettings({
             callHeaderHeight: e
         })
@@ -791,7 +791,7 @@ let eB = function(e) {
                         selectedParticipant: w,
                         allActiveStreams: H,
                         connectedEmbeddedActivity: ei ?? void 0,
-                        showChatToasts: J,
+                        showChatToasts: Q,
                         storedCallHeaderHeight: Z,
                         updateStoredCallHeaderHeight: ee,
                         wrapperRef: d,
@@ -804,7 +804,7 @@ let eB = function(e) {
                         width: o,
                         maxHeight: s,
                         forceShowControls: el,
-                        awaitingRemoteSessionInfo: Q,
+                        awaitingRemoteSessionInfo: J,
                         currentChannelActivities: ec,
                         theme: eg,
                         canPopout: a,

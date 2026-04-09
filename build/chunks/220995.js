@@ -113,7 +113,7 @@ function b(e) {
     let $ = l.useCallback(() => {
             v(!0)
         }, []),
-        J = l.useCallback(() => {
+        Q = l.useCallback(() => {
             v(!1), V(!1)
         }, []);
     return D ? (0, i.jsx)(u.YNO, {
@@ -129,7 +129,7 @@ function b(e) {
             ...e
         }),
         onRequestOpen: $,
-        onRequestClose: J,
+        onRequestClose: Q,
         children: e => {
             let {
                 onClick: t,

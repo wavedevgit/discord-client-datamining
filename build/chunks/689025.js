@@ -1,6 +1,6 @@
 /** chunk id: 689025 params = (module,exports,require) **/
 n.d(t, {
-    A: () => J
+    A: () => Q
 });
 var i = n(627968),
     l = n(64700),
@@ -263,7 +263,7 @@ class X extends B.Ay {
 }
 let $ = (0, A.a)((0, _.F)(X));
 
-function J(e) {
+function Q(e) {
     let {
         guild: t,
         channel: n,

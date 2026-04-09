@@ -77,8 +77,8 @@ function B(e) {
             voiceUsersToShow: q,
             stageSpeakers: X,
             numStageListeners: $,
-            streamUsersToShow: J,
-            embeddedActivitiesUsers: Q
+            streamUsersToShow: Q,
+            embeddedActivitiesUsers: J
         } = (t = Y.id, n = (0, d.yK)([j.Ay, S.A], () => [...j.Ay.getChannels(t)[j.vM].filter(e => {
             let {
                 channel: t
@@ -152,8 +152,8 @@ function B(e) {
                 })]
             })]
         }),
-        et = k(u.Fzq, J, z),
-        en = k(u.k9F, Q, z),
+        et = k(u.Fzq, Q, z),
+        en = k(u.k9F, J, z),
         {
             isMuted: ei,
             muteConfig: el

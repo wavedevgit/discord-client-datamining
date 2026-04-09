@@ -50,8 +50,8 @@ var i = n(627968),
     q = n(905552),
     X = n(95035),
     $ = n(87001),
-    J = n(249972),
-    Q = n(277009),
+    Q = n(249972),
+    J = n(277009),
     Z = n(201805),
     ee = n(95701),
     et = n(616356),
@@ -323,7 +323,7 @@ class eR extends l.PureComponent {
                     children: [(0, i.jsx)(_.tvc, {
                         size: "xxs",
                         color: U.k0.PREMIUM_TIER_2
-                    }), (0, i.jsx)(Q.A, {
+                    }), (0, i.jsx)(J.A, {
                         className: ey.s,
                         variant: "text-xxs/semibold",
                         children: n
@@ -494,13 +494,13 @@ let eO = (0, E.A)(function(e) {
     let {
         guildId: t,
         ...n
-    } = e, s = (0, c.bG)([en.default], () => en.default.getId()), a = (0, c.bG)([V.Ay, eh.A], () => (0, q.A)(V.Ay, eh.A)), r = (0, c.bG)([V.Ay], () => V.Ay.getDebugRunningGame()), o = (0, c.bG)([ec.A, ei.A], () => ei.A.getChannel(ec.A.getVoiceChannelId())), u = (0, c.bG)([S.Ay], () => S.Ay.getConnectedActivityChannelId()), h = (0, c.bG)([ei.A], () => ei.A.getChannel(u)), A = (0, c.bG)([es.A], () => es.A.getGuild(h?.guild_id)), [_, m] = (0, c.yK)([et.A], () => [et.A.getCurrentUserActiveStream(), et.A.getStreamerActiveStreamMetadata()]), g = (0, c.bG)([C.A], () => C.A.useReducedMotion), p = (0, c.bG)([S.Ay], () => S.Ay.getCurrentEmbeddedActivity()), f = (0, c.bG)([k.A], () => k.A.getConnectedFrame()), x = (0, c.bG)([es.A, er.A], () => null == o || W.vz(o, es.A, er.A, !1)), [E] = (0, R.A)([(null != m && null != m.id ? m.id : null != a && null != a.id ? a.id : null != p ? p.applicationId : null != f ? f.applicationId : void 0) ?? ""]), T = (0, c.bG)([S.Ay], () => S.Ay.getCurrentEmbeddedActivity()), y = (0, b.u)() && null != T && (0, N.f)(), O = (0, c.bG)([ea.Ay], () => (0, K.A)(ea.Ay) && (0, em.isWindows)()), L = (0, c.bG)([eo.A], () => null != s ? eo.A.findActivity(s, e => e.type === eI.$pd.PLAYING) : null), D = null != _ && _.ownerId === s && _.state !== eI.XYD.ENDED, U = (0, c.bG)([eu.default, ed.A], () => null != h ? (0, M.m1)(h, eu.default, ed.A) : void 0), G = (0, J.A)(), [P, w] = l.useState(!1), H = (0, c.bG)([$.A], () => $.A.getWindowOpen(eI.MLl.ACTIVITY_POPOUT)), {
+    } = e, s = (0, c.bG)([en.default], () => en.default.getId()), a = (0, c.bG)([V.Ay, eh.A], () => (0, q.A)(V.Ay, eh.A)), r = (0, c.bG)([V.Ay], () => V.Ay.getDebugRunningGame()), o = (0, c.bG)([ec.A, ei.A], () => ei.A.getChannel(ec.A.getVoiceChannelId())), u = (0, c.bG)([S.Ay], () => S.Ay.getConnectedActivityChannelId()), h = (0, c.bG)([ei.A], () => ei.A.getChannel(u)), A = (0, c.bG)([es.A], () => es.A.getGuild(h?.guild_id)), [_, m] = (0, c.yK)([et.A], () => [et.A.getCurrentUserActiveStream(), et.A.getStreamerActiveStreamMetadata()]), g = (0, c.bG)([C.A], () => C.A.useReducedMotion), p = (0, c.bG)([S.Ay], () => S.Ay.getCurrentEmbeddedActivity()), f = (0, c.bG)([k.A], () => k.A.getConnectedFrame()), x = (0, c.bG)([es.A, er.A], () => null == o || W.vz(o, es.A, er.A, !1)), [E] = (0, R.A)([(null != m && null != m.id ? m.id : null != a && null != a.id ? a.id : null != p ? p.applicationId : null != f ? f.applicationId : void 0) ?? ""]), T = (0, c.bG)([S.Ay], () => S.Ay.getCurrentEmbeddedActivity()), y = (0, b.u)() && null != T && (0, N.f)(), O = (0, c.bG)([ea.Ay], () => (0, K.A)(ea.Ay) && (0, em.isWindows)()), L = (0, c.bG)([eo.A], () => null != s ? eo.A.findActivity(s, e => e.type === eI.$pd.PLAYING) : null), D = null != _ && _.ownerId === s && _.state !== eI.XYD.ENDED, U = (0, c.bG)([eu.default, ed.A], () => null != h ? (0, M.m1)(h, eu.default, ed.A) : void 0), G = (0, Q.A)(), [P, w] = l.useState(!1), H = (0, c.bG)([$.A], () => $.A.getWindowOpen(eI.MLl.ACTIVITY_POPOUT)), {
         parentAnalyticsLocation: F,
         analyticsLocations: Y
     } = (0, v.Ay)(), {
         hasAlreadyLinked: z,
         canStartAuthorization: X,
-        connectionApp: Q,
+        connectionApp: J,
         startAuthorization: Z
     } = (0, j.RD)(E, {
         allowedFlows: [j._M.RPC, j._M.WEB]
@@ -509,9 +509,9 @@ let eO = (0, E.A)(function(e) {
         eg !== E?.id && e_(!1)
     }, [E, eg, e_]);
     let ep = (0, d.K)(e => {
-            e && null != Q && eA.default.track(eI.HAw.ACTIVITY_PANEL_SDK_LINK_VIEWED, {
+            e && null != J && eA.default.track(eI.HAw.ACTIVITY_PANEL_SDK_LINK_VIEWED, {
                 game_id: a?.id ?? null,
-                application_id: Q.id
+                application_id: J.id
             })
         }),
         {
@@ -555,7 +555,7 @@ let eO = (0, E.A)(function(e) {
             return e_(!0), Z(...t)
         },
         didStartAuthorization: ee,
-        connectionApp: Q,
+        connectionApp: J,
         gameCommunityGuildId: eC
     })
 })

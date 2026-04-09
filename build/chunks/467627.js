@@ -50,8 +50,8 @@ var i = n(627968),
     q = n(941604),
     X = n(246884),
     $ = n(497140),
-    J = n(34247),
-    Q = n(850729),
+    Q = n(34247),
+    J = n(850729),
     Z = n(521872),
     ee = n(827975),
     et = n(369915),
@@ -192,7 +192,7 @@ function eu(e) {
             location: "GuildsBar"
         });
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(Q.C, {}), N === L.RK.SERVER_RAIL_TOP && (0, i.jsx)(M.A, {}), a ? (0, i.jsx)(j.A, {
+        children: [(0, i.jsx)(J.C, {}), N === L.RK.SERVER_RAIL_TOP && (0, i.jsx)(M.A, {}), a ? (0, i.jsx)(j.A, {
             shouldShowIntroPopover: f,
             markIntroPopoverAsDismissed: _
         }) : null, !t && (0, i.jsx)(z.A, {}), C.map(e => (0, i.jsx)(el.A, {
@@ -250,10 +250,10 @@ function eA(e) {
     } = (0, c.$y)(), P = (0, f.R7z)(), [w, B] = l.useState(!1), z = (0, f.rdh)(g.A.modules.guildbar.AVATAR_SIZE), q = (0, f.rdh)(g.A.space.SPACE_XS), X = (0, v.A)("GuildsBar"), {
         pathname: $
     } = (0, d.zy)(), {
-        entrypoint: Q
+        entrypoint: J
     } = (0, L.X8)({
         location: "GuildsBar"
-    }), ee = +!!X + +(Q === L.RK.SERVER_RAIL_TOP), ei = l.useMemo(() => {
+    }), ee = +!!X + +(J === L.RK.SERVER_RAIL_TOP), ei = l.useMemo(() => {
         let e, t, n = (e = z + q, {
             iconSize: z,
             iconTotalSize: e,
@@ -338,11 +338,11 @@ function eA(e) {
                     return null
             }
         }, [x, I, p, ei.setNodeRef]),
-        eg = (0, i.jsx)(J.A, {
+        eg = (0, i.jsx)(Q.A, {
             selected: eA,
             className: er.ai
         }),
-        ep = Q === L.RK.SERVER_RAIL_BOTTOM;
+        ep = J === L.RK.SERVER_RAIL_BOTTOM;
     return (0, i.jsx)(N.f5, {
         value: el,
         children: (0, i.jsx)(f.NPJ, {

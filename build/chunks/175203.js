@@ -51,8 +51,8 @@ var i = n(627968),
     q = n(723702),
     X = n(837921),
     $ = n(141035),
-    J = n(654820),
-    Q = n(804980),
+    Q = n(654820),
+    J = n(804980),
     Z = n(272812),
     ee = n(304047),
     et = n(203355),
@@ -213,7 +213,7 @@ let eu = [ea.lp.ACTIVITY],
                 });
                 break;
             case ea.lp.ACTIVITY:
-                eq = (0, i.jsx)(Q.Ay, {
+                eq = (0, i.jsx)(J.Ay, {
                     interactible: ee,
                     participant: u,
                     selected: z,
@@ -234,11 +234,11 @@ let eu = [ea.lp.ACTIVITY],
                     popoutType: m
                 })
         }
-        let eJ = l.useRef(null),
-            eQ = (0, d.bG)([F.A], () => u.type === ea.lp.USER ? F.A.getVoiceVolume(u.id) : -1 / 0),
+        let eQ = l.useRef(null),
+            eJ = (0, d.bG)([F.A], () => u.type === ea.lp.USER ? F.A.getVoiceVolume(u.id) : -1 / 0),
             eZ = (0, C.v)({
                 isSpeaking: eM,
-                voiceDb: eQ,
+                voiceDb: eJ,
                 spreadDirection: C.O.INSET_ONLY,
                 maxInnerSpreadRadius: 4
             }),
@@ -265,7 +265,7 @@ let eu = [ea.lp.ACTIVITY],
                         isShaking: eM,
                         className: ec.Vs,
                         children: [(0, i.jsx)(Z.A, {
-                            ref: eJ,
+                            ref: eQ,
                             className: a()(ec.Vs, {
                                 [ec.E7]: q,
                                 [ec.k_]: null == I,
@@ -296,8 +296,8 @@ let eu = [ea.lp.ACTIVITY],
                                         channelId: M.id,
                                         guildId: M.getGuildId(),
                                         containerDimensions: {
-                                            width: eJ?.current?.clientWidth ?? 0,
-                                            height: eJ?.current?.clientHeight ?? 0
+                                            width: eQ?.current?.clientWidth ?? 0,
+                                            height: eQ?.current?.clientHeight ?? 0
                                         }
                                     })
                                 }) : null, eq, q ? null : (0, i.jsx)("div", {
@@ -343,12 +343,12 @@ let eu = [ea.lp.ACTIVITY],
                                     style: ee || eG ? void 0 : eZ
                                 }) : null]
                             })
-                        }), eC && eN && eT && (0, i.jsx)(J.A, {
+                        }), eC && eN && eT && (0, i.jsx)(Q.A, {
                             currentUserId: eb,
                             participant: u
                         }), (0, i.jsx)(v.A, {
                             isFiring: eE,
-                            callTileRef: eJ.current
+                            callTileRef: eQ.current
                         })]
                     })
                 })
@@ -471,7 +471,7 @@ let eg = l.memo(e => {
         streamId: X
     } = e, $ = (0, M.B)({
         location: "call_tile"
-    }), J = (0, D.V)($ && S === ea.lp.USER ? b : null), Q = (0, d.bG)([B.default], () => B.default.getId()), Z = (0, d.bG)([H.Ay], () => null != b && H.Ay.isLocalVideoAutoDisabled(b, (0, p.A)(S)), [b, S]), et = (0, N.A)({
+    }), Q = (0, D.V)($ && S === ea.lp.USER ? b : null), J = (0, d.bG)([B.default], () => B.default.getId()), Z = (0, d.bG)([H.Ay], () => null != b && H.Ay.isLocalVideoAutoDisabled(b, (0, p.A)(S)), [b, S]), et = (0, N.A)({
         userId: b,
         guildId: v.getGuildId()
     }), en = (0, T.a)({
@@ -525,10 +525,10 @@ let eg = l.memo(e => {
         icon: o.WindowReturnIcon,
         hideWhenInactive: !1,
         idle: t
-    }, "close"))) : ($ && null != b && b !== Q && null != J && ef.push((0, i.jsx)(ee.M, {
+    }, "close"))) : ($ && null != b && b !== J && null != Q && ef.push((0, i.jsx)(ee.M, {
         userId: b,
         channel: v,
-        applicationId: J,
+        applicationId: Q,
         hideWhenInactive: !eo,
         idle: t
     }, "gift")), ef.push((0, i.jsx)(e_, {
