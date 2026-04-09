@@ -37,15 +37,21 @@ function h(e) {
             href: d.A.getArticleURL(h.helpArticleId),
             children: A.intl.string(A.t["sBp+u0"])
         })]
-    }) : void 0, x = {
+    }) : void 0, x = h.disclaimer?.disclaimerHelpArticle, v = x?.id != null && "" !== x.id ? () => (0, i.jsxs)(i.Fragment, {
+        children: ["\xa0", (0, i.jsx)(s.MzZ, {
+            className: _.$T,
+            href: d.A.getArticleURL(x.id),
+            children: "" !== x.linkText ? x.linkText : A.intl.string(A.t["sBp+u0"])
+        })]
+    }) : void 0, b = {
         type: "video",
         src: E ? h.heroArtVideoLinkLightTheme : h.videoLink
     };
-    return null != h.heroArtVideoSubtitles && (x.subtitles = h.heroArtVideoSubtitles.map(e => ({
+    return null != h.heroArtVideoSubtitles && (b.subtitles = h.heroArtVideoSubtitles.map(e => ({
         locale: e.locale,
         src: e.link,
         isDefault: !1
-    }))), ("" !== h.heroArtImageLinkDarkTheme || "" !== h.heroArtImageLinkLightTheme) && (x = {
+    }))), ("" !== h.heroArtImageLinkDarkTheme || "" !== h.heroArtImageLinkLightTheme) && (b = {
         type: "image",
         src: E ? h.heroArtImageLinkLightTheme : h.heroArtImageLinkDarkTheme
     }), {
@@ -57,7 +63,7 @@ function h(e) {
         subHeader: h.subheader,
         subHeaderExtra: S,
         body: h.body,
-        heroArt: x,
+        heroArt: b,
         featureCards: h.featureCards.map(e => ({
             header: e.header,
             subHeader: e.body,
@@ -81,6 +87,8 @@ function h(e) {
                 text: C,
                 icon: a.NitroWheelIcon
             })
-        }
+        },
+        disclaimer: h.disclaimer?.disclaimerText !== "" ? h.disclaimer?.disclaimerText : void 0,
+        disclaimerExtra: v
     }
 }

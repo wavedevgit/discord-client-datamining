@@ -92,18 +92,20 @@ function R(e) {
         featureCards: G,
         changeLogId: k,
         button: V,
-        body: B
+        body: B,
+        disclaimer: H,
+        disclaimerExtra: F
     } = e, {
-        onClose: H,
-        transitionState: F
-    } = O, Y = (0, p.GV)(), W = G.length % 2 == 0, K = (0, d.bG)([_.A], () => _.A.useReducedMotion), [q, z] = a.useState(Date.now()), [$, Q] = a.useState(0), [X, Z] = a.useState(0), [J, ee] = a.useState(!1), [et, en] = a.useState(!0), ei = a.useRef(q), ea = a.useRef($), er = a.useRef(X), el = a.useRef(J), es = a.useRef(et), [eo, ed] = a.useState(y), ec = a.useRef(!1);
+        onClose: Y,
+        transitionState: W
+    } = O, K = (0, p.GV)(), q = G.length % 2 == 0, z = (0, d.bG)([_.A], () => _.A.useReducedMotion), [$, Q] = a.useState(Date.now()), [X, Z] = a.useState(0), [J, ee] = a.useState(0), [et, en] = a.useState(!1), [ei, ea] = a.useState(!0), er = a.useRef($), el = a.useRef(X), es = a.useRef(J), eo = a.useRef(et), ed = a.useRef(ei), [ec, eu] = a.useState(y), eA = a.useRef(!1);
 
-    function eu() {
+    function e_() {
         let e = Date.now(),
-            t = e - ei.current,
-            n = ea.current,
-            i = er.current;
-        return el.current && (Q(n += t), es.current || Z(i += t)), z(e), [n, i]
+            t = e - er.current,
+            n = el.current,
+            i = es.current;
+        return eo.current && (Z(n += t), ed.current || ee(i += t)), Q(e), [n, i]
     }
     return (0, h.A)({
         type: s.ImpressionTypes.MODAL,
@@ -129,21 +131,21 @@ function R(e) {
                         src: a
                     }
                 });
-                ed(await Promise.all(e))
+                eu(await Promise.all(e))
             } catch (e) {
-                T.A.captureException(e), ed(y)
+                T.A.captureException(e), eu(y)
             }
         };
-        !0 !== ec.current && e(), ec.current = !0
-    }, [R, eo]), a.useEffect(() => () => {
-        null != eo && eo.forEach(e => {
+        !0 !== eA.current && e(), eA.current = !0
+    }, [R, ec]), a.useEffect(() => () => {
+        null != ec && ec.forEach(e => {
             URL.revokeObjectURL(e.src)
         })
-    }, [eo]), a.useEffect(() => {
-        ei.current = q, ea.current = $, er.current = X, el.current = J, es.current = et
-    }, [q, $, X, J, et]), a.useEffect(() => () => {
+    }, [ec]), a.useEffect(() => {
+        er.current = $, el.current = X, es.current = J, eo.current = et, ed.current = ei
+    }, [$, X, J, et, ei]), a.useEffect(() => () => {
         if ("video" === R.type || "embed" === R.type) {
-            let [e, t] = eu();
+            let [e, t] = e_();
             C.default.track(S.HAw.CHANGE_LOG_VIDEO_PLAYED, {
                 change_log_id: k,
                 seconds_played: Math.round(e / 1e3)
@@ -168,8 +170,8 @@ function R(e) {
     }, [k, n]), (0, i.jsx)(A.EOs, {
         "data-migration-pending": !0,
         className: l()(b.zr, b.kv, r),
-        transitionState: F,
-        "aria-labelledby": Y,
+        transitionState: W,
+        "aria-labelledby": K,
         parentComponent: "PremiumAnnouncementModalVariant1",
         children: (0, i.jsxs)(A.hLv, {
             color: "nitro-pink",
@@ -177,14 +179,14 @@ function R(e) {
                 className: b.cG,
                 children: (0, i.jsx)(u.JnF, {
                     "data-migration-pending": !0,
-                    onClick: async () => await H()
+                    onClick: async () => await Y()
                 })
             }), (0, i.jsxs)(A.$mQ, {
                 "data-migration-pending": !0,
                 className: b.Qs,
                 children: ["video" === R.type ? (0, i.jsx)(E.A, {
                     className: l()(b.Ki, P),
-                    autoPlay: !K,
+                    autoPlay: !z,
                     loop: !0,
                     muted: !0,
                     controls: !0,
@@ -194,19 +196,19 @@ function R(e) {
                     onPlay: e => {
                         C.default.track(S.HAw.CHANGE_LOG_VIDEO_INTERACTED, {
                             change_log_id: k
-                        }), z(Date.now()), ee(!0), en(e.currentTarget.muted)
+                        }), Q(Date.now()), en(!0), ea(e.currentTarget.muted)
                     },
                     onEnded: e => {
-                        eu(), en(e.currentTarget.muted), ee(!1)
+                        e_(), ea(e.currentTarget.muted), en(!1)
                     },
                     onVolumeChange: e => {
-                        eu(), en(e.currentTarget.muted)
+                        e_(), ea(e.currentTarget.muted)
                     },
                     onPause: e => {
-                        eu(), en(e.currentTarget.muted), ee(!1)
+                        e_(), ea(e.currentTarget.muted), en(!1)
                     },
                     disablePictureInPicture: !0,
-                    children: eo?.map(e => {
+                    children: ec?.map(e => {
                         let t = (0, v.getLanguages)().find(t => t.code === e.locale);
                         return null == t ? null : (0, i.jsx)("track", {
                             label: t.englishName,
@@ -256,12 +258,17 @@ function R(e) {
                     children: B
                 }), G.length > 0 && (0, i.jsx)("div", {
                     className: l()(b.IS, {
-                        [b.tF]: W
+                        [b.tF]: q
                     }),
                     children: G.map((e, t) => (0, i.jsx)(L, {
                         ...e,
-                        wideStyle: W
+                        wideStyle: q
                     }, `${e.header}_${t}`))
+                }), null != H && "" !== H && (0, i.jsxs)(A.Text, {
+                    variant: "text-xs/medium",
+                    color: "text-subtle",
+                    className: b.ed,
+                    children: [H, F?.()]
                 }), (0, i.jsx)("div", {
                     className: b.UD,
                     children: V()

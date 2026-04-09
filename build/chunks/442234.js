@@ -17,5 +17,6 @@ e.exports = {
     Zz: "featureCardTextGroup_d06335",
     Hf: "featureCardTextHeader_d06335",
     bX: "featureCardTag_d06335",
-    Tc: "tag_d06335"
+    Tc: "tag_d06335",
+    ed: "disclaimer_d06335"
 }
