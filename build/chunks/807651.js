@@ -41,7 +41,7 @@ function g(e) {
         hasIncomingPendingGameFriends: b
     } = (0, p.J)({
         userId: l.id
-    }), O = E.length > 0 || T || b;
+    }), P = E.length > 0 || T || b;
     return v === A.eA$.BLOCKED ? null : l.id === t.id ? N ? (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(c.e, {
             userId: l.id,
@@ -103,7 +103,7 @@ function g(e) {
             guildId: g,
             viewProfileItem: C
         })]
-    }) : v === A.eA$.NONE && O ? (0, n.jsxs)(n.Fragment, {
+    }) : v === A.eA$.NONE && P ? (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(c.e, {
             userId: l.id,
             onClose: i.A.popAll,
