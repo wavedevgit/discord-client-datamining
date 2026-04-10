@@ -3,8 +3,8 @@ n.r(t), n.d(t, {
     default: () => tE
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(492462),
+    l = n(64700),
+    r = n(492462),
     a = n(873263),
     s = n(311907),
     o = n(397927),
@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(196492),
     C = n(869003),
     T = n(315206),
-    N = n(844358),
-    S = n(828430),
+    S = n(844358),
+    N = n(828430),
     x = n(857365),
     v = n(861638),
     b = n(793574),
@@ -57,8 +57,8 @@ var i = n(627968),
     et = n(435875),
     en = n(707592),
     ei = n(997509),
-    er = n(268313),
-    el = n(998654),
+    el = n(268313),
+    er = n(998654),
     ea = n(986880),
     es = n(438998),
     eo = n(114714),
@@ -76,8 +76,8 @@ var i = n(627968),
     ef = n(194970),
     eC = n(414967),
     eT = n(499454),
-    eN = n(580960),
-    eS = n(968930),
+    eS = n(580960),
+    eN = n(968930),
     ex = n(265367),
     ev = n(77509),
     eb = n(463347),
@@ -121,9 +121,9 @@ var i = n(627968),
     tt = n(652215),
     tn = n(746080),
     ti = n(771016),
-    tr = n(613057);
+    tl = n(613057);
 n(115036), n(943577), n(131319), n(794383), n(845618), n(712687), n(328968), n(67480), n(874486), n(162605), n(2866), n(628965), n(752319), n(836602), n(555337), n(863036), n(291731), n(176360), n(972937), n(279061), n(750128), n(921955);
-let tl = !1;
+let tr = !1;
 (0, v.as)(), s.Ay.initialize(), eR.A.loadServer(), e4.isPlatformEmbedded && (e8.Ay.on("USER_SETTINGS_OPEN", (e, t) => {
     (0, eK.openUserSettings)()
 }), e8.Ay.on("LAUNCH_APPLICATION", (e, t) => {
@@ -149,7 +149,7 @@ let ta = (0, g.z)(e => {
                 source: "deeplink"
             })
         }), (0, i.jsx)(m.A, {
-            deepLinkType: tr.XK.GORILLA,
+            deepLinkType: tl.XK.GORILLA,
             path: t.pathname,
             search: t.search,
             paramsBuilder: e => {
@@ -157,12 +157,12 @@ let ta = (0, g.z)(e => {
                     path: t,
                     fingerprint: n,
                     search: i,
-                    installationId: r
+                    installationId: l
                 } = e;
                 return {
                     path: t,
                     fingerprint: n,
-                    installationId: r,
+                    installationId: l,
                     search: i
                 }
             },
@@ -187,7 +187,7 @@ let ta = (0, g.z)(e => {
                 searchParams: n.params
             })
         }), (0, i.jsx)(m.A, {
-            deepLinkType: tr.XK.USER_SETTINGS,
+            deepLinkType: tl.XK.USER_SETTINGS,
             path: t.pathname,
             search: t.search,
             paramsBuilder: function(e) {
@@ -195,14 +195,14 @@ let ta = (0, g.z)(e => {
                     path: t,
                     fingerprint: n,
                     search: i,
-                    installationId: r
-                } = e, [, , l, a] = t.split("/");
+                    installationId: l
+                } = e, [, , r, a] = t.split("/");
                 return {
                     path: t,
-                    section: l,
+                    section: r,
                     subsection: a,
                     fingerprint: n,
-                    installationId: r,
+                    installationId: l,
                     search: i
                 }
             },
@@ -214,16 +214,16 @@ let ta = (0, g.z)(e => {
     to = (0, g.z)(e => {
         let {
             location: t
-        } = e, r = (0, em.parsePlaygroundUrl)(t.pathname);
+        } = e, l = (0, em.parsePlaygroundUrl)(t.pathname);
         return (0, X.B)(() => {
             let {
                 openPlaygroundFromParsedUrl: e
             } = n(965042);
             e({
-                match: r
+                match: l
             })
         }), (0, i.jsx)(m.A, {
-            deepLinkType: tr.XK.PLAYGROUND,
+            deepLinkType: tl.XK.PLAYGROUND,
             path: t.pathname,
             paramsBuilder: function(e) {
                 let {
@@ -231,13 +231,13 @@ let ta = (0, g.z)(e => {
                     fingerprint: n,
                     installationId: i
                 } = e, {
-                    collection: r,
-                    story: l
+                    collection: l,
+                    story: r
                 } = (0, em.parsePlaygroundUrl)(t);
                 return {
                     path: t,
-                    collection: r,
-                    story: l,
+                    collection: l,
+                    story: r,
                     fingerprint: n,
                     installationId: i
                 }
@@ -252,13 +252,13 @@ let ta = (0, g.z)(e => {
         defaultRoute: eZ.A.defaultRoute,
         defaultRouteFallback: eZ.A.fallbackRoute,
         token: e$.default.getToken()
-    }))(class extends r.Component {
+    }))(class extends l.Component {
         render() {
             let {
                 isConnected: e,
                 defaultRoute: t,
                 token: n,
-                defaultRouteFallback: r
+                defaultRouteFallback: l
             } = this.props;
             if (null == n) return (0, i.jsx)(a.rd, {
                 to: tt.BVt.DEFAULT_LOGGED_OUT
@@ -268,7 +268,7 @@ let ta = (0, g.z)(e => {
                 return null == e || (e.params.guildId === tt.ME || null != eJ.A.getGuild(e.params.guildId)) && null != eX.A.getChannel(e.params.channelId) ? (0, i.jsx)(a.rd, {
                     to: t
                 }) : (0, i.jsx)(a.rd, {
-                    to: r
+                    to: l
                 })
             }
             return null
@@ -287,19 +287,19 @@ function th(e) {
         guildId: t,
         channelId: n = null,
         messageId: i = null,
-        threadId: r = null
+        threadId: l = null
     } = e.params;
     return {
         guildId: t ?? tt.ME,
         channelId: n,
         messageId: i,
-        threadId: r
+        threadId: l
     }
 }
 let t_ = [{
     path: [tt.BVt.ACTIVITY_DETAILS(":applicationId")],
     render: function(e) {
-        return (0, e3.wR)() || e$.default.getLoginStatus() === tt.aUe.LOGGING_IN || !e$.default.allowLogoutRedirect() ? tc(e) : (0, i.jsx)(N.A, {
+        return (0, e3.wR)() || e$.default.getLoginStatus() === tt.aUe.LOGGING_IN || !e$.default.allowLogoutRedirect() ? tc(e) : (0, i.jsx)(S.A, {
             applicationId: e.match.params.applicationId
         })
     }
@@ -365,11 +365,11 @@ let t_ = [{
             match: t
         } = e, {
             gameId: n,
-            action: r
+            action: l
         } = t.params;
         return e5.A.whenInitialized(() => {
             e0.A.whenInitialized(() => {
-                switch (r) {
+                switch (l) {
                     case "launch": {
                         let e = e0.A.getActiveLibraryApplication(n);
                         if (null == e) return;
@@ -413,11 +413,11 @@ let t_ = [{
             match: t
         } = e, {
             section: n,
-            subsection: r
-        } = t.params, s = (0, l.parse)(location.search).feature;
-        return (0, X.B)(() => el.w({
-            section: (0, er.A)(tt.BEX, n),
-            subsection: (0, er.A)(tt.nd0, r),
+            subsection: l
+        } = t.params, s = (0, r.parse)(location.search).feature;
+        return (0, X.B)(() => er.w({
+            section: (0, el.A)(tt.BEX, n),
+            subsection: (0, el.A)(tt.nd0, l),
             feature: s
         })), (0, i.jsx)(a.rd, {
             to: eZ.A.defaultRoute
@@ -428,9 +428,9 @@ let t_ = [{
     render: function(e) {
         let {
             location: t
-        } = e, n = (0, l.parse)(t.search), r = "string" == typeof n.applicationId ? n.applicationId : null, s = "true" === n.openGameProfile;
+        } = e, n = (0, r.parse)(t.search), l = "string" == typeof n.applicationId ? n.applicationId : null, s = "true" === n.openGameProfile;
         return (0, X.B)(() => {
-            null != r && _.q1(r).then(e => {
+            null != l && _.q1(l).then(e => {
                 null != e && (0, w.nf)(w.HP.APPLICATION_TEST_MODE_DEBUG, {
                     shouldAutoOpenGameProfile: s
                 })
@@ -451,7 +451,7 @@ let t_ = [{
         let {
             match: t
         } = e, {
-            guildId: r
+            guildId: l
         } = t.params;
         return (0, X.B)(() => {
             (0, o.mMO)(async () => {
@@ -460,11 +460,11 @@ let t_ = [{
                 } = await Promise.all([n.e("64992"), n.e("96878")]).then(n.bind(n, 401539));
                 return t => (0, i.jsx)(e, {
                     ...t,
-                    guildId: r
+                    guildId: l
                 })
             })
         }), (0, i.jsx)(a.rd, {
-            to: tt.BVt.CHANNEL(r)
+            to: tt.BVt.CHANNEL(l)
         })
     }
 }, {
@@ -485,12 +485,12 @@ let t_ = [{
             match: t
         } = e, {
             guildId: n,
-            channelId: r
+            channelId: l
         } = t.params;
         (0, eh.C)(ti.zY.MARKETING_UNCLAIMED);
-        let l = tt.BVt.CHANNEL(n, r);
+        let r = tt.BVt.CHANNEL(n, l);
         return (0, i.jsx)(a.rd, {
-            to: l
+            to: r
         })
     }
 }, {
@@ -502,11 +502,11 @@ let t_ = [{
             match: t
         } = e, {
             guildId: n,
-            guildEventId: r
+            guildEventId: l
         } = t.params;
         return (0, X.B)(() => {
             (0, en.uR)({
-                eventId: r
+                eventId: l
             })
         }), (0, i.jsx)(a.rd, {
             to: tt.BVt.CHANNEL(n)
@@ -522,11 +522,11 @@ let t_ = [{
             match: t
         } = e, {
             guildId: n,
-            section: r,
-            subsection: l
+            section: l,
+            subsection: r
         } = t.params;
         return (0, X.B)(() => {
-            ei.A.open(n, (0, er.A)(tt.BEX, r), void 0, (0, er.A)(tt.nd0, l))
+            ei.A.open(n, (0, el.A)(tt.BEX, l), void 0, (0, el.A)(tt.nd0, r))
         }), (0, i.jsx)(a.rd, {
             to: tt.BVt.CHANNEL(n)
         })
@@ -548,11 +548,11 @@ let t_ = [{
             match: t
         } = e, {
             guildId: n,
-            shopSkuId: r,
-            shopSlug: l
+            shopSkuId: l,
+            shopSlug: r
         } = t.params;
         return (0, i.jsx)(a.rd, {
-            to: tt.BVt.CHANNELS_GAME_SHOP(n, 0, r, l)
+            to: tt.BVt.CHANNELS_GAME_SHOP(n, 0, l, r)
         })
     }
 }];
@@ -580,18 +580,18 @@ function tg(e) {
     } = e;
     if (!Q.A.isConnected()) return;
     let {
-        location: r
+        location: l
     } = (0, eO.JK)();
-    r.pathname === i && (null == eX.A.getChannel(t) ? (0, eO.bG)(tt.BVt.CHANNEL(n)) : (0, eO.bG)(i))
+    l.pathname === i && (null == eX.A.getChannel(t) ? (0, eO.bG)(tt.BVt.CHANNEL(n)) : (0, eO.bG)(i))
 }
-class tp extends r.PureComponent {
+class tp extends l.PureComponent {
     historyUnlisten = () => {};
     rewriterUnlisten = () => {};
     componentDidMount() {
-        e8.Ay.setZoomFactor(p.A.zoom), eR.A.init(), O.A.initialize(), ef.A.initialize(), K.A.initialize(), ez.A.initialize(), q.A.initialize(), eN.A.initialize(), k.A.initialize(), ed.A.initialize(), E.A.init(), $.A.init(), z.A.init(), e_.A.initialize(), S.A.initialize(), H.A.initialize(), eS.A.initialize(), T.Ay.initialize(), F.Ay.initialize(), eq.A.initialize(), ea.Ay.initialize(), eI.A.initialize(), C.A.initialize(), es.A.init(), D.A.init(), e2.A.init(), f.A.initialize(), ek.A.init(), e6.A.init(), eH.A.init(), eM.A.initialize(), ew.A.initialize(), eB.A.initialize(), eY.A.init(), B.A.initialize(), I.A.initialize(), ej.A.initialize(), ep.A.initialize(), eg.A.initialize(), eE.A.initialize(), j.A.initialize(), M.A.initialize(), W.A.initialize(), eo.A.initialize(), ec.A.initialize(), ex.A.initialize(), eC.A.initialize(), P.A.initialize(), x.A.initialize(), this.rewriterUnlisten = ev.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = ev.A.addRouteChangeListener(this.handleHistoryChange)
+        e8.Ay.setZoomFactor(p.A.zoom), eR.A.init(), O.A.initialize(), ef.A.initialize(), K.A.initialize(), ez.A.initialize(), q.A.initialize(), eS.A.initialize(), k.A.initialize(), ed.A.initialize(), E.A.init(), $.A.init(), z.A.init(), e_.A.initialize(), N.A.initialize(), H.A.initialize(), eN.A.initialize(), T.Ay.initialize(), F.Ay.initialize(), eq.A.initialize(), ea.Ay.initialize(), eI.A.initialize(), C.A.initialize(), es.A.init(), D.A.init(), e2.A.init(), f.A.initialize(), ek.A.init(), e6.A.init(), eH.A.init(), eM.A.initialize(), ew.A.initialize(), eB.A.initialize(), eY.A.init(), B.A.initialize(), I.A.initialize(), ej.A.initialize(), ep.A.initialize(), eg.A.initialize(), eE.A.initialize(), j.A.initialize(), M.A.initialize(), W.A.initialize(), eo.A.initialize(), ec.A.initialize(), ex.A.initialize(), eC.A.initialize(), P.A.initialize(), x.A.initialize(), this.rewriterUnlisten = ev.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = ev.A.addRouteChangeListener(this.handleHistoryChange)
     }
     componentWillUnmount() {
-        eR.A.terminate(), ez.A.terminate(), eN.A.terminate(), ef.A.terminate(), O.A.terminate(), T.Ay.terminate(), F.Ay.terminate(), eq.A.terminate(), C.A.terminate(), eS.A.terminate(), eI.A.terminate(), eB.A.terminate(), f.A.terminate(), B.A.terminate(), ec.A.terminate(), I.A.terminate(), ex.A.terminate(), ej.A.terminate(), ep.A.terminate(), eg.A.terminate(), eE.A.terminate(), j.A.terminate(), M.A.terminate(), eC.A.terminate(), Y.A.terminate(), P.A.terminate(), x.A.terminate(), W.A.terminate(), eo.A.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
+        eR.A.terminate(), ez.A.terminate(), eS.A.terminate(), ef.A.terminate(), O.A.terminate(), T.Ay.terminate(), F.Ay.terminate(), eq.A.terminate(), C.A.terminate(), eN.A.terminate(), eI.A.terminate(), eB.A.terminate(), f.A.terminate(), B.A.terminate(), ec.A.terminate(), I.A.terminate(), ex.A.terminate(), ej.A.terminate(), ep.A.terminate(), eg.A.terminate(), eE.A.terminate(), j.A.terminate(), M.A.terminate(), eC.A.terminate(), Y.A.terminate(), P.A.terminate(), x.A.terminate(), W.A.terminate(), eo.A.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
     }
     handleHistoryChange(e) {
         let {
@@ -608,29 +608,29 @@ class tp extends r.PureComponent {
             if (null == n) return;
             let {
                 guildId: i,
-                channelId: r,
+                channelId: l,
                 messageId: a,
                 threadId: s
-            } = th(n), o = (0, eb.nn)(i), d = (0, eb.ts)(r), c = (0, eb.ts)(s), u = e7.A.getGuildId(), _ = u !== i;
+            } = th(n), o = (0, eb.nn)(i), d = (0, eb.ts)(l), c = (0, eb.ts)(s), u = e7.A.getGuildId(), _ = u !== i;
             if (o && _ && A.A.selectGuild(i), o && d) {
                 let n = e1.A.getChannelId(u),
-                    o = n !== r,
+                    o = n !== l,
                     d = null != eQ.Ay.getGuildSidebarState(i);
-                if (!tl || _ || o || null != a) {
-                    tl = !0, h.default.selectChannel({
+                if (!tr || _ || o || null != a) {
+                    tr = !0, h.default.selectChannel({
                         guildId: i,
-                        channelId: r,
+                        channelId: l,
                         messageId: a
                     });
                     let {
                         summaryId: e
-                    } = (0, l.parse)(t);
-                    null != e && eU.Ay.setSelectedSummary(r, e)
+                    } = (0, r.parse)(t);
+                    null != e && eU.Ay.setSelectedSummary(l, e)
                 }
-                if (d && o && null != r && null != eQ.Ay.getCurrentSidebarChannelId(r) && eP.A.closeChannelSidebar(r), null != s && c) {
+                if (d && o && null != l && null != eQ.Ay.getCurrentSidebarChannelId(l) && eP.A.closeChannelSidebar(l), null != s && c) {
                     let e = eQ.Ay.getCurrentSidebarChannelId(n),
                         t = e !== s;
-                    if (null != r && null != s && t)
+                    if (null != l && null != s && t)
                         if (d)(0, eO.bG)(tt.BVt.CHANNEL(i, s, a));
                         else {
                             let e = {
@@ -638,15 +638,15 @@ class tp extends r.PureComponent {
                             };
                             null != a && (e.initialMessageId = a), eP.A.openThreadAsSidebar({
                                 guildId: i,
-                                baseChannelId: r,
+                                baseChannelId: l,
                                 channelId: s,
                                 details: e
                             })
                         }
-                    else d && null != e && null != r && eP.A.closeChannelSidebar(r)
-                } else null == r || o || eP.A.closeChannelSidebar(r);
+                    else d && null != e && null != l && eP.A.closeChannelSidebar(l)
+                } else null == l || o || eP.A.closeChannelSidebar(l);
                 let A = eA.A.getIsOpen();
-                if (r === tn.VV.ROLE_SUBSCRIPTIONS) eu.A.closeSidebar();
+                if (l === tn.VV.ROLE_SUBSCRIPTIONS) eu.A.closeSidebar();
                 else if (_ && A) {
                     let t = null == u && i === tt.ME,
                         n = e === tt.BVt.GUILD_DISCOVERY;
@@ -663,13 +663,13 @@ class tp extends r.PureComponent {
         if (null == n) return null;
         let {
             guildId: i,
-            channelId: r,
-            threadId: l
+            channelId: l,
+            threadId: r
         } = th(n), a = (0, eb.nn)(i) && i !== tt.ME && i !== tt.YYv;
-        if (null != r && (0, eb.ts)(r) && !(0, tn.jq)(r) && a) {
-            let n = eX.A.getChannel(r);
-            if (null == n) eG.A.loadThread(r).then(() => tg({
-                channelId: r,
+        if (null != l && (0, eb.ts)(l) && !(0, tn.jq)(l) && a) {
+            let n = eX.A.getChannel(l);
+            if (null == n) eG.A.loadThread(l).then(() => tg({
+                channelId: l,
                 guildId: i,
                 pathname: t
             }));
@@ -677,16 +677,16 @@ class tp extends r.PureComponent {
                 path: tt.BVt.CHANNEL(i),
                 state: e.state
             };
-            if (null != l) {
-                if (!((0, eb.ts)(l) && !(0, tn.jq)(r))) return null;
-                let n = eX.A.getChannel(l);
-                if (null == n) eG.A.loadThread(l).then(() => tg({
-                    channelId: l,
+            if (null != r) {
+                if (!((0, eb.ts)(r) && !(0, tn.jq)(l))) return null;
+                let n = eX.A.getChannel(r);
+                if (null == n) eG.A.loadThread(r).then(() => tg({
+                    channelId: r,
                     guildId: i,
                     pathname: t
                 }));
-                else if (n?.parent_id !== r) return eP.A.closeChannelSidebar(r), {
-                    path: tt.BVt.CHANNEL(i, r),
+                else if (n?.parent_id !== l) return eP.A.closeChannelSidebar(l), {
+                    path: tt.BVt.CHANNEL(i, l),
                     state: e.state
                 }
             }
@@ -694,7 +694,7 @@ class tp extends r.PureComponent {
         return null
     }
     render() {
-        return (0, i.jsxs)(r.Fragment, {
+        return (0, i.jsxs)(l.Fragment, {
             children: [(0, i.jsxs)(a.dO, {
                 children: [(0, i.jsx)(a.rd, {
                     exact: !0,

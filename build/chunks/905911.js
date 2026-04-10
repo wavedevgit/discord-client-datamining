@@ -3,12 +3,12 @@ n.d(t, {
     A: () => s
 });
 var i = n(562465),
-    r = n(954571),
-    l = n(613057),
+    l = n(954571),
+    r = n(613057),
     a = n(652215);
 let s = {
     [a.e$_.GET_NETWORKING_CONFIG]: {
-        scope: l.hj,
+        scope: r.hj,
         handler: () => Promise.all([i.Bo.get({
             url: location.protocol + window.GLOBAL_ENV.NETWORKING_ENDPOINT,
             retries: 3,
@@ -41,27 +41,27 @@ let s = {
         })
     },
     [a.e$_.NETWORKING_SYSTEM_METRICS]: {
-        scope: l.hj,
+        scope: r.hj,
         handler(e) {
             let {
                 socket: t,
                 args: n
             } = e;
-            n.application_id = t.application.id, r.default.track(a.HAw.NETWORKING_SYSTEM_METRICS, n)
+            n.application_id = t.application.id, l.default.track(a.HAw.NETWORKING_SYSTEM_METRICS, n)
         }
     },
     [a.e$_.NETWORKING_PEER_METRICS]: {
-        scope: l.hj,
+        scope: r.hj,
         handler(e) {
             let {
                 socket: t,
                 args: n
             } = e;
-            n.application_id = t.application.id, r.default.track(a.HAw.NETWORKING_PEER_METRICS, n)
+            n.application_id = t.application.id, l.default.track(a.HAw.NETWORKING_PEER_METRICS, n)
         }
     },
     [a.e$_.NETWORKING_CREATE_TOKEN]: {
-        scope: l.hj,
+        scope: r.hj,
         handler: () => i.Bo.post({
             url: a.Rsh.NETWORKING_TOKEN,
             retries: 1,

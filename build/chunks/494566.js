@@ -52,13 +52,13 @@ var i = n(627968),
     Y = n(309010),
     W = n(351906),
     B = n(287809),
-    X = n(977997),
-    Z = n(810412),
+    Z = n(977997),
+    X = n(810412),
     K = n(589051),
     $ = n(823901),
     q = n(395011),
-    Q = n(243612),
-    J = n(652215),
+    J = n(243612),
+    Q = n(652215),
     ee = n(985018),
     et = n(453977);
 
@@ -132,9 +132,9 @@ function el(e) {
     l.useEffect(() => () => m(), [m, d]);
     let A = en(n),
         I = e => t => {
-            e(t), (0, Z.YX)(J.uss.QUICK_ACTIONS, {
-                type: Z.Z5.MICROPHONE,
-                value: Z.IP.SETTINGS_OPENED
+            e(t), (0, X.YX)(Q.uss.QUICK_ACTIONS, {
+                type: X.Z5.MICROPHONE,
+                value: X.IP.SETTINGS_OPENED
             })
         };
     return (0, i.jsx)(h.YNO, {
@@ -152,7 +152,7 @@ function el(e) {
                 renderInputVolume: !0,
                 maybeRenderInputMeter: !0,
                 renderSettingsButton: !0,
-                appContext: J.BRT.OVERLAY
+                appContext: Q.BRT.OVERLAY
             })
         },
         align: "center",
@@ -171,9 +171,9 @@ function el(e) {
                 highlightedColor: "red",
                 tooltip: c,
                 onClick: () => {
-                    (0, x.A)(u, s, J.JJy.OVERLAY), (0, Z.YX)(J.uss.QUICK_ACTIONS, {
-                        type: Z.Z5.MICROPHONE,
-                        value: d ? Z.IP.ENABLED : Z.IP.DISABLED,
+                    (0, x.A)(u, s, Q.JJy.OVERLAY), (0, X.YX)(Q.uss.QUICK_ACTIONS, {
+                        type: X.Z5.MICROPHONE,
+                        value: d ? X.IP.ENABLED : X.IP.DISABLED,
                         userId: F.default.getId()
                     })
                 },
@@ -209,16 +209,16 @@ function er(e) {
     } = (0, a.I)(u ? "undeafen" : "deafen"), f = o ? h.TJE : d;
     l.useEffect(() => () => c(), [u, c]);
     let A = () => {
-            (0, S.A)(o, J.JJy.OVERLAY), (0, Z.YX)(J.uss.QUICK_ACTIONS, {
-                type: Z.Z5.AUDIO,
-                value: o ? Z.IP.ENABLED : Z.IP.DISABLED,
+            (0, S.A)(o, Q.JJy.OVERLAY), (0, X.YX)(Q.uss.QUICK_ACTIONS, {
+                type: X.Z5.AUDIO,
+                value: o ? X.IP.ENABLED : X.IP.DISABLED,
                 userId: F.default.getId()
             })
         },
         E = e => t => {
-            e(t), (0, Z.YX)(J.uss.QUICK_ACTIONS, {
-                type: Z.Z5.AUDIO,
-                value: Z.IP.SETTINGS_OPENED
+            e(t), (0, X.YX)(Q.uss.QUICK_ACTIONS, {
+                type: X.Z5.AUDIO,
+                value: X.IP.SETTINGS_OPENED
             })
         },
         _ = en(n);
@@ -235,7 +235,7 @@ function er(e) {
                 renderOutputDevices: !0,
                 renderOutputVolume: !0,
                 renderSettingsButton: !0,
-                appContext: J.BRT.OVERLAY
+                appContext: Q.BRT.OVERLAY
             })
         },
         align: "center",
@@ -272,14 +272,14 @@ function es(e) {
     } = e, s = l.useRef(null), a = (0, r.bG)([z.Ay], () => z.Ay.isVideoEnabled()), o = (0, r.bG)([z.Ay], () => Object.values(z.Ay.getVideoDevices())[0]), u = o?.disabled ?? !0, d = !1 === u, m = (0, O.A)(t), f = e => {
         g.A.setVideoEnabled(e)
     }, A = e => t => {
-        e(t), (0, Z.YX)(J.uss.QUICK_ACTIONS, {
-            type: Z.Z5.CAMERA,
-            value: Z.IP.SETTINGS_OPENED
+        e(t), (0, X.YX)(Q.uss.QUICK_ACTIONS, {
+            type: X.Z5.CAMERA,
+            value: X.IP.SETTINGS_OPENED
         })
     }, I = () => {
-        u ? d ? f(!0) : (0, k.A)() : f(!a), (0, Z.YX)(J.uss.QUICK_ACTIONS, {
-            type: Z.Z5.CAMERA,
-            value: a ? Z.IP.DISABLED : Z.IP.ENABLED,
+        u ? d ? f(!0) : (0, k.A)() : f(!a), (0, X.YX)(Q.uss.QUICK_ACTIONS, {
+            type: X.Z5.CAMERA,
+            value: a ? X.IP.DISABLED : X.IP.ENABLED,
             userId: F.default.getId()
         })
     }, {
@@ -307,7 +307,7 @@ function es(e) {
             } = e;
             return (0, i.jsx)(_.A, {
                 onClose: N(t),
-                appContext: J.BRT.OVERLAY
+                appContext: Q.BRT.OVERLAY
             })
         },
         align: "center",
@@ -352,35 +352,35 @@ function ea(e) {
         f = (0, $.y)({
             pid: m,
             allowOneClickGoLive: !0,
-            analyticsLocation: J.ThZ.UNLOCKED_OVERLAY
+            analyticsLocation: Q.ThZ.UNLOCKED_OVERLAY
         }),
         A = () => {
-            f(), (0, Z.YX)(J.uss.QUICK_ACTIONS, {
-                type: Z.Z5.GO_LIVE,
-                value: Z.IP.ENABLED,
+            f(), (0, X.YX)(Q.uss.QUICK_ACTIONS, {
+                type: X.Z5.GO_LIVE,
+                value: X.IP.ENABLED,
                 userId: F.default.getId()
             })
         },
         I = null != g;
     if (I) t = ee.intl.string(ee.t.S5anIc);
     else if (null != n) {
-        let e = (0, Q.qv)();
+        let e = (0, J.qv)();
         t = d ? null != e ? ee.intl.format(ee.t.AB5gTy, {
             game: e.name
         }) : ee.intl.string(ee.t.FeUKeA) : ee.intl.string(ee.t.uQn9B8)
     }
     let E = () => {
-            if (I) return (0, Z.YX)(J.uss.QUICK_ACTIONS, {
-                type: Z.Z5.GO_LIVE,
-                value: Z.IP.DISABLED,
+            if (I) return (0, X.YX)(Q.uss.QUICK_ACTIONS, {
+                type: X.Z5.GO_LIVE,
+                value: X.IP.DISABLED,
                 userId: F.default.getId()
             }), (0, v.A)(g, !1);
             A()
         },
         p = e => t => {
-            e(t), (0, Z.YX)(J.uss.QUICK_ACTIONS, {
-                type: Z.Z5.SCREEN_SHARE,
-                value: Z.IP.SETTINGS_OPENED
+            e(t), (0, X.YX)(Q.uss.QUICK_ACTIONS, {
+                type: X.Z5.SCREEN_SHARE,
+                value: X.IP.SETTINGS_OPENED
             })
         },
         {
@@ -406,7 +406,7 @@ function ea(e) {
                 activeStreams: I ? [g] : [],
                 handleGoLive: A,
                 onClose: N(t),
-                appContext: J.BRT.OVERLAY,
+                appContext: Q.BRT.OVERLAY,
                 disableChangeWindows: !0
             })
         },
@@ -452,9 +452,9 @@ function eo(e) {
     } = (0, A.Ay)();
 
     function E(e) {
-        null != o && ((0, Z.YX)(J.uss.QUICK_ACTIONS, {
-            type: Z.Z5.SOUNDBOARD,
-            value: Z.IP.SETTINGS_OPENED
+        null != o && ((0, X.YX)(Q.uss.QUICK_ACTIONS, {
+            type: X.Z5.SOUNDBOARD,
+            value: X.IP.SETTINGS_OPENED
         }), (0, m.L3)(e, async () => {
             let {
                 default: e
@@ -502,9 +502,9 @@ function eo(e) {
                 iconComponent: p,
                 tooltip: u ? ee.intl.string(ee.t["Ox4/zU"]) : c ? ee.intl.string(ee.t["+YBKYI"]) : g ? ee.intl.string(ee.t.X1lQli) : void 0,
                 onClick: e => {
-                    _(), (0, Z.YX)(J.uss.QUICK_ACTIONS, {
-                        type: Z.Z5.SOUNDBOARD,
-                        value: Z.IP.PANEL_OPENED,
+                    _(), (0, X.YX)(Q.uss.QUICK_ACTIONS, {
+                        type: X.Z5.SOUNDBOARD,
+                        value: X.IP.PANEL_OPENED,
                         userId: F.default.getId()
                     }), n(e)
                 },
@@ -527,24 +527,24 @@ function eu(e) {
         voiceChannel: t,
         locked: n
     } = e, a = l.useRef(null), o = (0, r.bG)([Y.A], () => Y.A.getVoiceChannelId() === t?.id), u = () => {
-        (0, Z.YX)(J.uss.QUICK_ACTIONS, {
-            type: Z.Z5.CALL_BUTTON,
-            value: Z.IP.DISABLED,
+        (0, X.YX)(Q.uss.QUICK_ACTIONS, {
+            type: X.Z5.CALL_BUTTON,
+            value: X.IP.DISABLED,
             userId: F.default.getId()
         }), o && f.default.disconnect()
     }, d = (e, t) => {
-        f.default.selectVoiceChannel(e), (0, Z.YX)(J.uss.QUICK_ACTIONS, {
-            type: Z.Z5.CALL_BUTTON,
-            value: Z.IP.ENABLED,
+        f.default.selectVoiceChannel(e), (0, X.YX)(Q.uss.QUICK_ACTIONS, {
+            type: X.Z5.CALL_BUTTON,
+            value: X.IP.ENABLED,
             userId: F.default.getId(),
             secondaryValue: t
         })
     }, [c, g] = l.useTransition(), m = e => t => {
         g(() => {
             e(t)
-        }), (0, Z.YX)(J.uss.QUICK_ACTIONS, {
-            type: Z.Z5.CALL_BUTTON,
-            value: Z.IP.SETTINGS_OPENED
+        }), (0, X.YX)(Q.uss.QUICK_ACTIONS, {
+            type: X.Z5.CALL_BUTTON,
+            value: X.IP.SETTINGS_OPENED
         })
     }, {
         Component: A,
@@ -657,7 +657,7 @@ function eh(e) {
         quality: H.A.getQuality(),
         state: H.A.getState(),
         lastPing: H.A.getLastPing()
-    })), s = (0, r.bG)([X.A], () => null != n && X.A.hasVideo(n), [n]), a = (0, K.Mn)("VoiceConnectionStatus"), o = (0, r.bG)([W.A], () => W.A.hidePersonalInformation);
+    })), s = (0, r.bG)([Z.A], () => null != n && Z.A.hasVideo(n), [n]), a = (0, K.Mn)("VoiceConnectionStatus"), o = (0, r.bG)([W.A], () => W.A.hidePersonalInformation);
     return null != n && null != t && (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(M.A, {
             ...l,

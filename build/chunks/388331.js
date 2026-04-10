@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(179771),
-    l = n(397927),
+var l = n(179771),
+    r = n(397927),
     a = n(827343),
     s = n(401843),
     o = n(793574),
@@ -23,7 +23,7 @@ var r = n(179771),
 let f = {
     [I.e$_.TOGGLE_VIDEO]: {
         scope: {
-            [E.sm.ALL]: [r.F.RPC, r.F.RPC_VIDEO_WRITE]
+            [E.sm.ALL]: [l.F.RPC, l.F.RPC_VIDEO_WRITE]
         },
         handler() {
             let e = h.Ay.isVideoEnabled();
@@ -32,7 +32,7 @@ let f = {
     },
     [I.e$_.TOGGLE_SCREENSHARE]: {
         scope: {
-            [E.sm.ALL]: [r.F.RPC, r.F.RPC_SCREENSHARE_WRITE]
+            [E.sm.ALL]: [l.F.RPC, l.F.RPC_SCREENSHARE_WRITE]
         },
         validation: e => (0, g.A)(e).optional().keys({
             pid: e.number().optional().min(0)
@@ -42,14 +42,14 @@ let f = {
                 args: {
                     pid: t
                 }
-            } = e, r = A.A.getCurrentUserActiveStream(), a = A.A.getStreamerActiveStreamMetadata(), u = (0, c.A)(d.Ay, _.A), h = (0, p.A)();
+            } = e, l = A.A.getCurrentUserActiveStream(), a = A.A.getStreamerActiveStreamMetadata(), u = (0, c.A)(d.Ay, _.A), h = (0, p.A)();
             null != h && (null != t && null != a && a.pid !== t && (0, m.isWindows)() ? (0, s.XI)(h.guild_id, h.id, {
                 pid: t
-            }) : null != r ? (0, s.nO)(!1) : null != t && (0, m.isWindows)() ? (0, s.XI)(h.guild_id, h.id, {
+            }) : null != l ? (0, s.nO)(!1) : null != t && (0, m.isWindows)() ? (0, s.XI)(h.guild_id, h.id, {
                 pid: t
             }) : null != u ? (0, s.XI)(h.guild_id, h.id, {
                 pid: u.pid
-            }) : (0, l.mMO)(async () => {
+            }) : (0, r.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("96811").then(n.bind(n, 648230));

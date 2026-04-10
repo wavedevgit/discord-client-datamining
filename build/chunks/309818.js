@@ -30,9 +30,9 @@ function b(e) {
             message: s,
             currentUserId: b,
             onTransitionToInviteChannel: T,
-            onAcceptInstantInvite: y
+            onAcceptInstantInvite: N
         } = e,
-        N = b === s.author.id,
+        y = b === s.author.id,
         S = n.state === E.elq.ACCEPTING,
         j = (0, o.bG)([g.A], () => null != n.channel ? g.A.getChannel(n.channel.id) : null, [n]);
     r()(null == j || j.isPrivate(), "must be a private channel");
@@ -40,14 +40,14 @@ function b(e) {
         analyticsLocations: L
     } = (0, u.Ay)(c.A.INVITE_EMBED), R = null != j, P = l.useCallback(() => {
         let e = "noop";
-        R ? (T(), e = "transition") : (y(), e = "accept"), (0, d.he)({
+        R ? (T(), e = "transition") : (N(), e = "accept"), (0, d.he)({
             invite: n,
             action: e,
             inviter_id: s.author.id,
             invite_message_id: s.id,
             invite_instance_id: (0, _._U)(n.code, s.id)
         }, L)
-    }, [n, s, L, R, T, y]);
+    }, [n, s, L, R, T, N]);
     if (null == j) {
         if (null == n.channel) return (0, i.jsx)(C.A, {});
         j = (0, p.OY)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
@@ -65,7 +65,7 @@ function b(e) {
         w = "active";
     R && (M = I.intl.string(I.t.cEnaWx), w = "secondary");
     let O = I.intl.string(I.t["3p3/BK"]);
-    return N && (O = I.intl.string(I.t.qmtuXE)), (0, i.jsxs)(h.A, {
+    return y && (O = I.intl.string(I.t.qmtuXE)), (0, i.jsxs)(h.A, {
         children: [(0, i.jsx)(h.A.Header, {
             text: O
         }), (0, i.jsxs)(h.A.Body, {

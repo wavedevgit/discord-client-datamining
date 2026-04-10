@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(397927),
-    l = n(926466),
+var l = n(397927),
+    r = n(926466),
     a = n(652215),
     s = n(49999),
     o = n(985018),
@@ -16,11 +16,11 @@ function c(e) {
         guild: t,
         markAsDismissed: c
     } = e;
-    return (0, i.jsx)(l.A, {
+    return (0, i.jsx)(r.A, {
         guild: t,
         onDismissed: () => c(s.i.UNKNOWN),
         onClick: function() {
-            (0, r.mMO)(async () => {
+            (0, l.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("98363").then(n.bind(n, 780086));

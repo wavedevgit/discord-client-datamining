@@ -3,8 +3,8 @@ n.d(t, {
     A: () => E
 }), n(321073);
 var i = n(136722),
-    r = n(937724),
-    l = n(626584),
+    l = n(937724),
+    r = n(626584),
     a = n(142120),
     s = n(95701),
     o = n(961350),
@@ -15,7 +15,7 @@ var i = n(136722),
     h = n(799422),
     _ = n(723176),
     m = n(453001);
-let g = new l.A("GuildBasicChannels");
+let g = new r.A("GuildBasicChannels");
 
 function p(e, t) {
     return null == e || e.type !== t.type || e.parent_id !== t.parent_id || A.A.computeBasicPermissions(e) !== A.A.computeBasicPermissions(t)
@@ -25,15 +25,15 @@ let E = new class {
     async getAsync(e) {
         let t = performance.now(),
             [n, i] = await Promise.all([_.A.basicChannels(e).getKvEntries(), _.A.syncedBasicChannels(e).getKvEntries()]),
-            r = performance.now() - t,
-            [l, a] = function(e) {
+            l = performance.now() - t,
+            [r, a] = function(e) {
                 let t = [],
                     n = [];
-                for (let [i, r] of e)(r ? t : n).push(i);
+                for (let [i, l] of e)(l ? t : n).push(i);
                 return [t, n]
             }(i),
-            s = new Set(l);
-        return this.synced = s, g.verbose(`loaded in ${r}ms (guilds: ${n.length}, synced: ${s.size} unsynced: ${a.length})`), {
+            s = new Set(r);
+        return this.synced = s, g.verbose(`loaded in ${l}ms (guilds: ${n.length}, synced: ${s.size} unsynced: ${a.length})`), {
             all: n,
             stale: a,
             channels: n.filter(e => {
@@ -83,15 +83,15 @@ let E = new class {
     async handlePostConnectionOpen() {
         let e = a.A.lastTimeConnectedChanged(),
             t = _.A.database();
-        if (null == this.synced || null == t || !(0, r.O)()) return;
+        if (null == this.synced || null == t || !(0, l.O)()) return;
         let n = u.A.getGuildIds(),
             i = n.filter(e => !this.synced.has(e));
-        for (let r of (g.verbose(`scheduling basic_channel optimstic writes (guilds: ${i.length})`), n)) {
+        for (let l of (g.verbose(`scheduling basic_channel optimstic writes (guilds: ${i.length})`), n)) {
             if (null == this.synced || t !== _.A.database() || e !== a.A.lastTimeConnectedChanged()) break;
-            if (!this.synced.has(r)) {
-                g.verbose(`optimstically writing basic_channels (guild: ${r})`);
+            if (!this.synced.has(l)) {
+                g.verbose(`optimstically writing basic_channels (guild: ${l})`);
                 try {
-                    await d.D.loadGuildIds([r]), await t.transaction(e => this.syncOne(r, e), "handlePostConnectionOpen")
+                    await d.D.loadGuildIds([l]), await t.transaction(e => this.syncOne(l, e), "handlePostConnectionOpen")
                 } catch (e) {
                     g.warn("couldn't optimstically write basic_channel:", e);
                     return
@@ -124,8 +124,8 @@ let E = new class {
     }
     handleGuildRoleUpdate(e, t) {
         let n = e.role,
-            r = c.A.getRole(e.guildId, n.id);
-        null != r && i.aI(i.iu(n.permissions), r.permissions) || this.unsync(e.guildId, t)
+            l = c.A.getRole(e.guildId, n.id);
+        null != l && i.aI(i.iu(n.permissions), l.permissions) || this.unsync(e.guildId, t)
     }
     handleGuildMemberUpdate(e, t) {
         e.user.id === o.default.getId() && this.unsync(e.guildId, t)

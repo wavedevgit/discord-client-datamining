@@ -3,8 +3,8 @@ n.d(t, {
     A: () => p,
     G: () => g
 });
-var i, r = n(64700),
-    l = n(311907),
+var i, l = n(64700),
+    r = n(311907),
     a = n(285059),
     s = n(82005),
     o = n(508654),
@@ -19,10 +19,10 @@ var i, r = n(64700),
 
 function p(e) {
     let t = e?.id ?? m.dJq,
-        n = (0, l.bG)([A.A], () => A.A.isVisible(e)),
-        i = (0, l.bG)([_.A], () => _.A.isVisible(e)),
+        n = (0, r.bG)([A.A], () => A.A.isVisible(e)),
+        i = (0, r.bG)([_.A], () => _.A.isVisible(e)),
         g = (0, s.C)(t),
-        p = (0, l.bG)([h.A], () => h.A.isVisible(e)),
+        p = (0, r.bG)([h.A], () => h.A.isVisible(e)),
         E = c.A.useShouldShowChannelNotice(t),
         I = (0, u.$s)(e),
         {
@@ -30,12 +30,12 @@ function p(e) {
         } = (0, d.y)(e),
         C = I.length > 0,
         T = f && !e?.features.has(m.GuildFeatures.HUB),
-        N = (0, o.WG)(t);
-    if (r.useEffect(() => {
+        S = (0, o.WG)(t);
+    if (l.useEffect(() => {
             a.A.getGuildEventsForCurrentUser(t)
         }, [t]), n) return 0;
     if (i) return 1;
-    if (g || null != N) return 2;
+    if (g || null != S) return 2;
     if (p) return 3;
     if (E) return 4;
     else if (C) return 5;

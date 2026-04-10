@@ -1,11 +1,11 @@
 /** chunk id: 349320 params = (module,exports,require) **/
 n.d(t, {
-    L: () => S
+    L: () => N
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(158954),
     o = n(51264),
     d = n(820284),
@@ -23,7 +23,7 @@ var i = n(627968),
     C = n(985018),
     T = n(325593);
 
-function N(e) {
+function S(e) {
     let {
         analyticsLocations: t
     } = (0, A.Ay)(u.A.ACTIVITY_PANEL), n = (0, I.A)(e => {
@@ -40,8 +40,8 @@ function N(e) {
         })
     })
 }
-let S = r.memo(function() {
-    let e = r.useRef(null);
+let N = l.memo(function() {
+    let e = l.useRef(null);
     (0, c.i4)(e, e => {
         let {
             height: t
@@ -61,7 +61,7 @@ let S = r.memo(function() {
             containerRef: e,
             children: [(0, i.jsx)(o.A, {}), (0, i.jsx)(E.A, {}), (0, i.jsx)(g.A, {}), (0, i.jsx)(d.A, {
                 section: f.JJy.ACTIVITY_PANEL,
-                children: (0, i.jsx)(N, {
+                children: (0, i.jsx)(S, {
                     className: T.iz
                 })
             }), (0, i.jsx)(d.A, {

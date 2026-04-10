@@ -25,8 +25,8 @@ var i = n(627968),
     v = n(486020),
     b = n(456060),
     T = n(659051),
-    y = n(837197),
-    N = n(359549),
+    N = n(837197),
+    y = n(359549),
     S = n(537643),
     j = n(444901),
     L = n(842157),
@@ -85,7 +85,7 @@ function D(e) {
             }),
             launchableAppId: D
         }),
-        X = (0, N.A)({
+        X = (0, y.A)({
             application: O,
             analyticsLocations: w
         }),
@@ -114,7 +114,7 @@ function D(e) {
         ed = (0, s.bG)([E.A], () => E.A.getMessages(k.id)),
         ec = () => {
             let e = [];
-            return (0, y.G)(F.id, ed) && en && !ei && et.enabled && e.push(r.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, i.jsx)(g.Ay, {
+            return (0, N.G)(F.id, ed) && en && !ei && et.enabled && e.push(r.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, i.jsx)(g.Ay, {
                 contentTypes: e,
                 children: e => {
                     let {

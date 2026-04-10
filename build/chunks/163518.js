@@ -1,13 +1,13 @@
 /** chunk id: 163518 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => l
 });
 var i = n(697831);
 
-function r(e) {
+function l(e) {
     let {
         currentActivities: t,
         isSpotifyActivity: n
-    } = e, r = t[0], l = (0, i.A)(r?.activity, r?.activityUser);
-    return n ? l : null
+    } = e, l = t[0], r = (0, i.A)(l?.activity, l?.activityUser);
+    return n ? r : null
 }

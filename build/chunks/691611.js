@@ -3,9 +3,9 @@ n.d(t, {
     A: () => v
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(837381),
     o = n(311907),
     d = n(201275),
@@ -22,15 +22,15 @@ var i = n(627968),
     f = n(268719),
     C = n(734057),
     T = n(661191),
-    N = n(652215),
-    S = n(955744),
+    S = n(652215),
+    N = n(955744),
     x = n(480972);
-let v = r.memo(function(e) {
+let v = l.memo(function(e) {
     let {
         message: t,
         className: n,
-        onContextMenu: r,
-        onClick: l,
+        onContextMenu: l,
+        onClick: r,
         hideSimpleEmbedContent: v = !0,
         channel: b,
         isGroupStart: y,
@@ -38,7 +38,7 @@ let v = r.memo(function(e) {
         subscribeToComponentDispatch: L,
         renderThreadAccessory: R,
         ...P
-    } = e, D = t.type === N.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), j = t.isFirstMessageInForumPost(b), M = (0, c.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
+    } = e, D = t.type === S.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), j = t.isFirstMessageInForumPost(b), M = (0, c.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
         content: w,
         hasSpoilerEmbeds: U,
         hasBailedAst: G
@@ -48,13 +48,13 @@ let v = r.memo(function(e) {
         allowHeading: j || M,
         allowLinks: !0,
         previewLinkTarget: !0
-    }), k = (0, s.rm)(t.id), V = (0, A.Ay)(t), B = (0, o.bG)([C.A], () => t.hasFlag(N.pr7.HAS_THREAD) && C.A.getChannel(T.default.castMessageIdAsChannelId(t.id))), H = (0, d.$7)({
+    }), k = (0, s.rm)(t.id), V = (0, A.Ay)(t), B = (0, o.bG)([C.A], () => t.hasFlag(S.pr7.HAS_THREAD) && C.A.getChannel(T.default.castMessageIdAsChannelId(t.id))), H = (0, d.$7)({
         guildId: b.guild_id,
         roleId: V.iconRoleId
     }), F = (0, _.fF)(t), Y = (0, _.ZD)(t);
     return (0, i.jsx)(h.A, {
         compact: !1,
-        className: a()(n, S.i, {
+        className: a()(n, N.i, {
             [x.M1]: (0, u.ec)(t),
             [x.XN]: D
         }),
@@ -78,9 +78,9 @@ let v = r.memo(function(e) {
             ...e,
             disableInteraction: D
         }),
-        onContextMenu: r,
-        onClick: l,
-        hasThread: R && null != B && t.hasFlag(N.pr7.HAS_THREAD),
+        onContextMenu: l,
+        onClick: r,
+        hasThread: R && null != B && t.hasFlag(S.pr7.HAS_THREAD),
         hasReply: !1,
         "aria-labelledby": F,
         "aria-describedby": Y,

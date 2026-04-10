@@ -25,8 +25,8 @@ var i = n(627968),
     v = n(309818),
     b = n(112007),
     T = n(877695),
-    y = n(242907),
-    N = n(168428),
+    N = n(242907),
+    y = n(168428),
     S = n(448894),
     j = n(818352),
     L = n(422844),
@@ -86,11 +86,11 @@ function P(e) {
         });
     switch (k.state) {
         case R.elq.RESOLVING:
-            q = (0, i.jsx)(N.A, {});
+            q = (0, i.jsx)(y.A, {});
             break;
         case R.elq.EXPIRED:
         case R.elq.BANNED:
-            q = (0, i.jsx)(y.A, {
+            q = (0, i.jsx)(N.A, {
                 banned: k.state === R.elq.BANNED,
                 author: n.author,
                 channelId: n.channel_id

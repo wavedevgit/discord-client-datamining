@@ -3,8 +3,8 @@ n.d(t, {
     A: () => x
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(311907),
+    l = n(64700),
+    r = n(311907),
     a = n(314116),
     s = n(765671),
     o = n(4616),
@@ -22,33 +22,33 @@ var i = n(627968),
     f = n(6939),
     C = n(652215),
     T = n(985018),
-    N = n(584811);
+    S = n(584811);
 
-function S(e) {
+function N(e) {
     let {
         guild: t,
         width: n,
-        height: l
-    } = e, a = r.useMemo(() => t?.splash != null ? A.Ay.getGuildSplashURL({
+        height: r
+    } = e, a = l.useMemo(() => t?.splash != null ? A.Ay.getGuildSplashURL({
         id: t?.id,
         splash: t?.splash
     }) : null, [t?.splash, t?.id]), s = (0, d.S)(a);
     return null == a ? (0, i.jsx)("div", {
-        className: N.Eq
+        className: S.Eq
     }) : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.A, {
-            className: N.Yi,
+            className: S.Yi,
             src: a,
-            imageClassName: N.Iv,
+            imageClassName: S.Iv,
             width: n,
-            height: l
+            height: r
         }), null != s && (0, i.jsx)("div", {
-            className: N.qj,
+            className: S.qj,
             style: {
                 background: `linear-gradient(180deg, ${(0,h.cb)(s,.16)} 0%, ${(0,h.cb)(s,1)} 100%)`
             }
         }), (0, i.jsx)("div", {
-            className: N.qj
+            className: S.qj
         })]
     })
 }
@@ -59,19 +59,19 @@ let x = e => {
         ref: n,
         width: o,
         height: d
-    } = (0, s.Ay)(), A = (0, l.bG)([p.A], () => p.A.getRequest(t)), h = (0, l.bG)([u.A], () => u.A.getGuild(t)), {
+    } = (0, s.Ay)(), A = (0, r.bG)([p.A], () => p.A.getRequest(t)), h = (0, r.bG)([u.A], () => u.A.getGuild(t)), {
         hasFetchedRequestToJoinGuilds: x,
         guildPreviewDisabled: v
-    } = (0, l.cf)([p.A], () => ({
+    } = (0, r.cf)([p.A], () => ({
         hasFetchedRequestToJoinGuilds: p.A.hasFetchedRequestToJoinGuilds,
         guildPreviewDisabled: p.A.getJoinRequestGuild(t)
     }));
-    r.useEffect(() => {
+    l.useEffect(() => {
         null != h && (0, c.pX)(C.BVt.CHANNEL(t))
-    }, [h, t]), r.useEffect(() => {
+    }, [h, t]), l.useEffect(() => {
         x || _.A.fetchRequestToJoinGuilds()
     }, [x]);
-    let b = r.useCallback(() => {
+    let b = l.useCallback(() => {
             _.A.removeGuildJoinRequest(t), (0, c.pX)(C.BVt.ME)
         }, [t]),
         y = (e, t) => () => {
@@ -93,14 +93,14 @@ let x = e => {
             name: v?.name
         }), b);
     return (0, i.jsxs)("div", {
-        className: N.MY,
+        className: S.MY,
         ref: n,
-        children: [(0, i.jsx)(S, {
+        children: [(0, i.jsx)(N, {
             guild: v,
             height: d,
             width: o
         }), (0, i.jsx)("div", {
-            className: N.FG,
+            className: S.FG,
             children: (() => {
                 if (null == A) return null;
                 switch (A.applicationStatus) {
@@ -127,7 +127,7 @@ let x = e => {
                 }
             })()
         }), (0, i.jsx)("div", {
-            className: N.T_
+            className: S.T_
         })]
     })
 }

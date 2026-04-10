@@ -3,9 +3,9 @@ let i;
 n.d(t, {
     A: () => L
 });
-var r = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(397927),
+var r = n(397927),
     a = n(73153),
     s = n(272355),
     o = n(323073),
@@ -23,15 +23,15 @@ var l = n(397927),
     f = n(403362),
     C = n(723702),
     T = n(942614),
-    N = n(426620),
-    S = n(771016),
+    S = n(426620),
+    N = n(771016),
     x = n(994277),
     v = n(652215);
 n(436317);
 var b = n(315290);
 
 function y() {
-    null != i && (0, l.OoC)(i)
+    null != i && (0, r.OoC)(i)
 }
 class O extends s.A {
     _initialize() {
@@ -42,21 +42,21 @@ class O extends s.A {
     }
     handleConnectionOpen() {
         var e;
-        let t, a = N.A.getType();
+        let t, a = S.A.getType();
         if (null == a) return;
         switch (a) {
-            case S.zY.INVITE_UNCLAIMED:
+            case N.zY.INVITE_UNCLAIMED:
                 h.A.flowStart(b.do.INVITE, b.ju.NUF_STARTED);
                 break;
-            case S.zY.ORGANIC_REGISTERED:
+            case N.zY.ORGANIC_REGISTERED:
                 h.A.flowStart(b.do.ORGANIC, b.ju.NUF_STARTED);
                 break;
-            case S.zY.MARKETING_UNCLAIMED:
+            case N.zY.MARKETING_UNCLAIMED:
                 h.A.flowStart(b.do.ORGANIC_MARKETING, b.ju.NUF_STARTED)
         }
         let s = !1,
             y = E.A.getGuildId();
-        if (a === S.zY.INVITE_UNCLAIMED) {
+        if (a === N.zY.INVITE_UNCLAIMED) {
             let e = p.A.getGuild(y);
             null != e && (0, u.Qd)(e) && (s = !0, (0, _.Fy)(e.id))
         }
@@ -94,11 +94,11 @@ class O extends s.A {
                             f.xb(e)
                     }
                 };
-                i = await (0, l.mMO)(async () => {
+                i = await (0, r.mMO)(async () => {
                     let {
                         default: e
                     } = await Promise.all([n.e("86746"), n.e("31922")]).then(n.bind(n, 218318));
-                    return n => (0, r.jsx)(e, {
+                    return n => (0, l.jsx)(e, {
                         ...n,
                         onSlideChange: t
                     })
@@ -123,11 +123,11 @@ class O extends s.A {
             predicate: () => s && !I.default.getCurrentUser()?.isClaimed() && !0
         }, {
             key: "Guild Welcome Modal",
-            open: e => (0, l.mMO)(async () => {
+            open: e => (0, r.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("98063").then(n.bind(n, 143154));
-                return t => (0, r.jsx)(e, {
+                return t => (0, l.jsx)(e, {
                     ...t,
                     guildId: y
                 })

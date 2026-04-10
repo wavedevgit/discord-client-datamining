@@ -3,9 +3,9 @@ n.d(t, {
     A: () => T
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(311907),
     o = n(397927),
     d = n(863439),
@@ -21,41 +21,41 @@ var i = n(627968),
     I = n(985018),
     f = n(530202),
     C = n(782691);
-let T = r.memo(function(e) {
+let T = l.memo(function(e) {
     let {
         channel: t
     } = e, {
         loaded: n,
-        error: l,
+        error: r,
         message: T
     } = (0, g.I)(t), {
-        isBlocked: N,
-        isIgnored: S
+        isBlocked: S,
+        isIgnored: N
     } = (0, s.cf)([m.A], () => ({
         isBlocked: null != T && m.A.isBlockedForMessage(T),
         isIgnored: null != T && m.A.isIgnoredForMessage(T)
     }), [T]), x = (0, s.bG)([_.A], () => _.A.can(p.xBc.MANAGE_MESSAGES, t)), v = h.gs.useSetting(), {
         content: b
-    } = r.useMemo(() => T?.content != null && "" !== T.content ? (0, c.Ay)(T, {
+    } = l.useMemo(() => T?.content != null && "" !== T.content ? (0, c.Ay)(T, {
         formatInline: !0,
         noStyleAndInteraction: !0
     }) : {
         content: null
     }, [T]), y = null;
-    if (l) y = (0, i.jsx)(o.Text, {
+    if (r) y = (0, i.jsx)(o.Text, {
         className: f.G4,
         variant: "text-sm/normal",
         color: "text-muted",
         children: I.intl.string(I.t.BZHld2)
     });
     else if (n)
-        if (null != T && N) y = (0, i.jsx)(o.Text, {
+        if (null != T && S) y = (0, i.jsx)(o.Text, {
             className: f.G4,
             variant: "text-sm/normal",
             color: "text-muted",
             children: I.intl.string(I.t["WPe+xL"])
         });
-        else if (null != T && S) y = (0, i.jsx)(o.Text, {
+        else if (null != T && N) y = (0, i.jsx)(o.Text, {
         className: f.G4,
         variant: "text-sm/normal",
         color: "text-muted",
@@ -65,7 +65,7 @@ let T = r.memo(function(e) {
         let {
             contentPlaceholder: e,
             renderedContent: t
-        } = (0, u.o)(T, b, N, S, a()(f.BK, C.tZ), {
+        } = (0, u.o)(T, b, S, N, a()(f.BK, C.tZ), {
             leadingIconClass: f.AF,
             trailingIconClass: f.AF,
             iconSize: E.eJ

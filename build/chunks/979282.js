@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(518620),
-    l = n(901319);
+var l = n(518620),
+    r = n(901319);
 
 function a(e) {
     let {
@@ -18,14 +18,14 @@ function a(e) {
         footer: c,
         renderSectionFooter: u
     } = e;
-    return s ? (0, i.jsx)(r.A, {
+    return s ? (0, i.jsx)(l.A, {
         rows: t,
         renderRow: n,
         renderSection: a,
         footer: c,
         sectionFilter: d,
         renderSectionFooter: u
-    }) : (0, i.jsx)(l.A, {
+    }) : (0, i.jsx)(r.A, {
         rows: t,
         renderRow: n,
         renderSection: a,

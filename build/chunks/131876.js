@@ -4,32 +4,32 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(397927),
-    l = n(73153),
+var l = n(397927),
+    r = n(73153),
     a = n(272355);
 let s = "CONNECTIONS_GRID_MODAL_KEY";
 class o extends a.A {
     _initialize() {
-        l.h.subscribe("CONNECTIONS_GRID_MODAL_SHOW", this.handleShow), l.h.subscribe("CONNECTIONS_GRID_MODAL_HIDE", this.handleHide)
+        r.h.subscribe("CONNECTIONS_GRID_MODAL_SHOW", this.handleShow), r.h.subscribe("CONNECTIONS_GRID_MODAL_HIDE", this.handleHide)
     }
     _terminate() {
-        l.h.unsubscribe("CONNECTIONS_GRID_MODAL_SHOW", this.handleShow), l.h.unsubscribe("CONNECTIONS_GRID_MODAL_HIDE", this.handleHide)
+        r.h.unsubscribe("CONNECTIONS_GRID_MODAL_SHOW", this.handleShow), r.h.unsubscribe("CONNECTIONS_GRID_MODAL_HIDE", this.handleHide)
     }
     handleShow(e) {
         let {
             onComplete: t,
-            excludedPlatformTypes: l,
+            excludedPlatformTypes: r,
             includedPlatformTypes: a,
             integrations: o,
             onCompleteApplication: d
         } = e;
-        (0, r.kBI)(s) || (0, r.mMO)(async () => {
+        (0, l.kBI)(s) || (0, l.mMO)(async () => {
             let {
                 default: e
             } = await n.e("95198").then(n.bind(n, 58829));
             return n => (0, i.jsx)(e, {
                 onComplete: t,
-                excludedPlatformTypes: l,
+                excludedPlatformTypes: r,
                 includedPlatformTypes: a,
                 integrations: o,
                 onCompleteApplication: d,
@@ -38,7 +38,7 @@ class o extends a.A {
         })
     }
     handleHide() {
-        (0, r.OoC)(s)
+        (0, l.OoC)(s)
     }
 }
 let d = new o

@@ -52,8 +52,8 @@ function v(e) {
         W = (0, r.bG)([m.A], () => m.A.getChannel(Y)),
         B = (0, r.bG)([g.default], () => g.default.getId()),
         {
-            streamParticipants: X,
-            activeStreams: Z,
+            streamParticipants: Z,
+            activeStreams: X,
             participantsVersion: K
         } = (t = G && z || P && L, n = !G && z || !P && L, v = (0, r.yK)([h.A], () => null == Y ? [] : h.A.getAllActiveStreamsForChannel(Y)), y = l.useMemo(() => new Set(v.map(e => (0, d._z)(e))), [v]), M = (0, r.bG)([u.A], () => null == Y ? -1 : u.A.getParticipantsVersion(Y)), {
             streamParticipants: (0, r.yK)([u.A, h.A], () => {
@@ -81,11 +81,11 @@ function v(e) {
             activeStreams: y,
             participantsVersion: M
         }),
-        $ = X.length,
+        $ = Z.length,
         q = (0, r.bG)([c.A], () => c.A.getWindowState(T.f), []),
         {
-            tileWidth: Q,
-            tileHeight: J,
+            tileWidth: J,
+            tileHeight: Q,
             widgetWidth: ee,
             widgetHeight: et,
             containerRef: en,
@@ -101,7 +101,7 @@ function v(e) {
             id: R,
             widget: D,
             layout: V,
-            participants: X.length,
+            participants: Z.length,
             padding: w,
             borderWidth: j,
             widgetMinMaxSizes: ei,
@@ -119,11 +119,11 @@ function v(e) {
         };
     (0, S.k1)({
         id: R,
-        streamParticipants: X,
+        streamParticipants: Z,
         layout: V,
         widgetLayoutSpecs: el
     });
-    let er = null == W || 0 === Z.size && O || 0 === $ && !O;
+    let er = null == W || 0 === X.size && O || 0 === $ && !O;
     return (l.useEffect(() => {
         a.A.setGpuBoostRequested(I.y7.OVERLAY_VIDEO_STREAM_RENDERING, !er)
     }, [er]), (0, o.Ay)(() => () => {
@@ -140,12 +140,12 @@ function v(e) {
         ref: en,
         children: (0, i.jsx)(p.A, {
             widgetId: R,
-            tileWidth: Q,
-            tileHeight: J,
+            tileWidth: J,
+            tileHeight: Q,
             locked: O,
             layout: V,
-            activeStreams: Z,
-            streamParticipants: X,
+            activeStreams: X,
+            streamParticipants: Z,
             participantsVersion: K,
             pinned: k,
             padding: w

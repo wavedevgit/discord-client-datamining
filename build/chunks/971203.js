@@ -3,8 +3,8 @@ n.d(t, {
     A: () => g
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(311907),
+    l = n(64700),
+    r = n(311907),
     a = n(397927),
     s = n(956793),
     o = n(58149),
@@ -17,9 +17,9 @@ var i = n(627968),
     m = n(985018);
 
 function g(e) {
-    let t = r.useContext(h.AnalyticsContext),
+    let t = l.useContext(h.AnalyticsContext),
         n = e.voiceChannels[0],
-        g = (0, l.bG)([u.A], () => null != n && u.A.can(_.xBc.CONNECT, n.channel));
+        g = (0, r.bG)([u.A], () => null != n && u.A.can(_.xBc.CONNECT, n.channel));
     return null == n ? null : [(0, i.jsx)(a.Drp, {
         id: "join-voice",
         action: function() {

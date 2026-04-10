@@ -3,9 +3,9 @@ n.d(t, {
     A: () => G
 }), n(321073);
 var i = n(627968),
-    r = n(64700),
-    l = n(735438),
-    a = n.n(l),
+    l = n(64700),
+    r = n(735438),
+    a = n.n(r),
     s = n(311907),
     o = n(397927),
     d = n(711950),
@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(595623),
     C = n(531685),
     T = n(98165),
-    N = n(174279),
-    S = n(278066),
+    S = n(174279),
+    N = n(278066),
     x = n(594968),
     v = n(979282),
     b = n(575474),
@@ -57,12 +57,12 @@ function U(e) {
     let {
         section: t,
         showSpamCta: n
-    } = e, l = r.useMemo(() => n ? w : t !== L.m3P.PENDING ? M : void 0, [n, t]);
+    } = e, r = l.useMemo(() => n ? w : t !== L.m3P.PENDING ? M : void 0, [n, t]);
     return (0, i.jsx)("div", {
         className: D.y7,
-        children: (0, i.jsx)(S.A, {
+        children: (0, i.jsx)(N.A, {
             type: t,
-            onClick: l
+            onClick: r
         }, t)
     })
 }
@@ -72,7 +72,7 @@ let G = function(e) {
     } = e, {
         analyticsLocations: n
     } = (0, h.Ay)(A.A.FRIENDS_LIST), {
-        rows: l,
+        rows: r,
         section: d
     } = (0, s.cf)([f.Ay], () => f.Ay.getState()), M = (0, s.bG)([C.A], () => C.A.isFocused()), {
         relationshipCount: G,
@@ -84,7 +84,7 @@ let G = function(e) {
         enabled: V
     } = T.A.useConfig({
         location: "PeopleList"
-    }), [B, H] = r.useState([]), F = r.useCallback(e => {
+    }), [B, H] = l.useState([]), F = l.useCallback(e => {
         let {
             enabled: t
         } = T.A.getConfig({
@@ -93,57 +93,57 @@ let G = function(e) {
         t && H(t => [...t, e])
     }, []);
     d !== L.m3P.PENDING && B.length > 0 && H([]);
-    let [Y, W] = r.useState(() => {
+    let [Y, W] = l.useState(() => {
         let e = {};
         for (let t of Object.values(L.m3P)) e[t] = "";
         return e
-    }), K = (0, m.p)(A.A.FRIENDS_LIST), [q, z] = r.useState(!1), $ = r.useCallback((e, t) => {
+    }), K = (0, m.p)(A.A.FRIENDS_LIST), [q, z] = l.useState(!1), $ = l.useCallback((e, t) => {
         let {
-            key: r,
-            ...l
+            key: l,
+            ...r
         } = e;
         switch (d) {
             case L.m3P.PENDING:
                 return (0, i.jsx)(x.A, {
-                    ...l,
+                    ...r,
                     isFocused: M,
                     onAcceptFriendRequest: () => F(e)
-                }, r);
+                }, l);
             case L.m3P.SUGGESTIONS:
                 return (0, i.jsx)(O.A, {
-                    ...l,
+                    ...r,
                     isFocused: M
-                }, r);
+                }, l);
             case L.m3P.ALL:
-                return (0, i.jsx)(N.A, {
-                    ...l,
+                return (0, i.jsx)(S.A, {
+                    ...r,
                     isFocused: M,
                     analyticsLocations: n,
                     sectionIndex: t,
                     hasFriendAnniversarySection: K
-                }, `${t}-${r}`);
+                }, `${t}-${l}`);
             case L.m3P.ONLINE:
             default:
-                return (0, i.jsx)(N.A, {
-                    ...l,
+                return (0, i.jsx)(S.A, {
+                    ...r,
                     isFocused: M,
                     analyticsLocations: n
-                }, r)
+                }, l)
         }
-    }, [d, M, n, K, F]), Q = r.useCallback(e => {
+    }, [d, M, n, K, F]), Q = l.useCallback(e => {
         W({
             ...Y,
             [d]: e
         })
-    }, [Y, d]), X = r.useCallback(() => {
+    }, [Y, d]), X = l.useCallback(() => {
         W({
             ...Y,
             [d]: ""
         })
-    }, [Y, d]), Z = r.useMemo(() => d === L.m3P.PENDING && (l.filter(L.m3P.SPAM).length > 0 || l.filter(L.m3P.PENDING_IGNORED).length > 0), [l, d]), J = r.useMemo(() => {
-        let e = l.filter(d, Y[d]);
+    }, [Y, d]), Z = l.useMemo(() => d === L.m3P.PENDING && (r.filter(L.m3P.SPAM).length > 0 || r.filter(L.m3P.PENDING_IGNORED).length > 0), [r, d]), J = l.useMemo(() => {
+        let e = r.filter(d, Y[d]);
         return V && d === L.m3P.PENDING && "" === Y[d] && (e = a()([...e, ...B]).uniqBy("key").sortBy(e => e.nickname?.toLowerCase() ?? e.user?.globalName?.toLowerCase() ?? e.usernameLower).value()), e
-    }, [B, V, l, Y, d]), ee = d === L.m3P.PENDING, et = r.useMemo(() => {
+    }, [B, V, r, Y, d]), ee = d === L.m3P.PENDING, et = l.useMemo(() => {
         if (!ee) return j;
         let e = [];
         return J.forEach(t => {
@@ -154,8 +154,8 @@ let G = function(e) {
         }), e
     }, [ee, J]);
     (0, _.A)(et, ee);
-    let en = r.useMemo(() => d === L.m3P.ALL && K && J.some(e => e.giftIntentType === R.np.FRIEND_ANNIVERSARY) ? J.filter(e => e.giftIntentType === R.np.FRIEND_ANNIVERSARY).length : 0, [J, d, K]),
-        ei = r.useMemo(() => {
+    let en = l.useMemo(() => d === L.m3P.ALL && K && J.some(e => e.giftIntentType === R.np.FRIEND_ANNIVERSARY) ? J.filter(e => e.giftIntentType === R.np.FRIEND_ANNIVERSARY).length : 0, [J, d, K]),
+        ei = l.useMemo(() => {
             switch (d) {
                 case L.m3P.PENDING:
                     let e = [],
@@ -175,17 +175,17 @@ let G = function(e) {
                     return [J]
             }
         }, [J, d, q, K]),
-        er = r.useMemo(() => J.filter(e => e.type === L.eA$.PENDING_INCOMING).length, [J]),
-        el = d === L.m3P.PENDING && er > 0 && er >= 5,
-        ea = r.useCallback(e => {
-            e.stopPropagation(), c.A.confirmClearPendingRelationships(er)
-        }, [er]),
-        es = r.useCallback(() => {
+        el = l.useMemo(() => J.filter(e => e.type === L.eA$.PENDING_INCOMING).length, [J]),
+        er = d === L.m3P.PENDING && el > 0 && el >= 5,
+        ea = l.useCallback(e => {
+            e.stopPropagation(), c.A.confirmClearPendingRelationships(el)
+        }, [el]),
+        es = l.useCallback(() => {
             z(e => !e)
         }, []),
-        eo = r.useCallback(e => {
+        eo = l.useCallback(e => {
             let n = ei[e],
-                r = function(e, t, n, i) {
+                l = function(e, t, n, i) {
                     switch (e) {
                         case L.m3P.ONLINE:
                             return P.intl.formatToPlainString(P.t.BagU2U, {
@@ -219,8 +219,8 @@ let G = function(e) {
                 className: D.Gf,
                 children: [(0, i.jsx)(y.A, {
                     id: t,
-                    title: r
-                }), el && (0, i.jsx)("div", {
+                    title: l
+                }), er && (0, i.jsx)("div", {
                     className: D.mt,
                     children: (0, i.jsx)(o.QWc, {
                         text: P.intl.string(P.t.O8k7O4),
@@ -229,15 +229,15 @@ let G = function(e) {
                         textVariant: "text-sm/medium"
                     })
                 })]
-            }, r) : (0, i.jsx)("div", {
+            }, l) : (0, i.jsx)("div", {
                 className: D.Gf,
                 children: (0, i.jsx)(y.A, {
                     id: t,
-                    title: r
+                    title: l
                 })
-            }, r)
-        }, [ei, d, t, el, ea]),
-        ed = r.useCallback(e => d === L.m3P.ALL && 0 === e && K && en > p.ZD ? (0, i.jsx)("div", {
+            }, l)
+        }, [ei, d, t, er, ea]),
+        ed = l.useCallback(e => d === L.m3P.ALL && 0 === e && K && en > p.ZD ? (0, i.jsx)("div", {
             className: D.Nf,
             children: (0, i.jsx)(o.Button, {
                 icon: q ? o.tN5 : o.abt,
@@ -248,9 +248,9 @@ let G = function(e) {
                 "aria-label": P.intl.string(q ? P.t["6MwJo/"] : P.t["37C26f"])
             })
         }) : null, [d, en, q, es, K]);
-    if (r.useEffect(() => {
+    if (l.useEffect(() => {
             d === L.m3P.ALL && (0, g.Ad)()
-        }, [d]), r.useEffect(() => {
+        }, [d]), l.useEffect(() => {
             z(!1)
         }, [d, en]), 0 === J.length && "" === Y[d]) return (0, i.jsx)(U, {
         section: d,
@@ -288,8 +288,8 @@ let G = function(e) {
                 }) : null
             }), eu && (0, i.jsx)("div", {
                 className: D.y7,
-                children: (0, i.jsx)(S.A, {
-                    type: S.a.SECTION_NO_RESULTS
+                children: (0, i.jsx)(N.A, {
+                    type: N.a.SECTION_NO_RESULTS
                 }, d)
             })]
         })

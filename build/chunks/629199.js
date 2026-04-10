@@ -1,11 +1,11 @@
 /** chunk id: 629199 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => N
 });
 var i = n(627968);
 n(64700);
-var r = n(311907),
-    l = n(692617),
+var l = n(311907),
+    r = n(692617),
     a = n(397927),
     s = n(297413),
     o = n(775602),
@@ -33,7 +33,7 @@ let T = e => {
             children: f.intl.string(f.t.jpY0X5)
         }) : (0, i.jsxs)("div", {
             className: C.I9,
-            children: [(0, i.jsx)(l.A, {
+            children: [(0, i.jsx)(r.A, {
                 guilds: n,
                 maxGuilds: 3,
                 size: c.$v.Sizes.SMOL,
@@ -48,14 +48,14 @@ let T = e => {
             })]
         })
     },
-    N = g.Ay.getEnableHardwareAcceleration() ? a.JsQ : a.euF;
+    S = g.Ay.getEnableHardwareAcceleration() ? a.JsQ : a.euF;
 
-function S(e) {
+function N(e) {
     let {
         channel: t,
         otherUser: n,
-        active: l
-    } = e, c = (0, r.bG)([o.A], () => o.A.useReducedMotion), g = (0, r.bG)([_.A], () => null == n ? null : _.A.getNickname(n.id)), E = !c && l, S = (0, p.j)(t), {
+        active: r
+    } = e, c = (0, l.bG)([o.A], () => o.A.useReducedMotion), g = (0, l.bG)([_.A], () => null == n ? null : _.A.getNickname(n.id)), E = !c && r, N = (0, p.j)(t), {
         avatarDecorationSrc: x
     } = (0, h.A)({
         user: n,
@@ -63,7 +63,7 @@ function S(e) {
         onlyAnimateOnHoverOrFocus: !0
     });
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(N, {
+        children: [(0, i.jsx)(S, {
             className: C.my,
             src: (0, u.Y)(t, 40, E),
             avatarDecoration: x,
@@ -84,13 +84,13 @@ function S(e) {
                     className: C.L7,
                     color: "text-muted",
                     variant: "text-xs/normal",
-                    children: S
+                    children: N
                 })]
             }), (0, i.jsx)(d.A, {
                 hoverText: (0, i.jsx)(I.A, {
                     channel: t
                 }),
-                forceHover: l,
+                forceHover: r,
                 children: (0, i.jsx)(T, {
                     userId: n.id
                 })

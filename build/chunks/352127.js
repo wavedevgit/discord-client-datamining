@@ -4,17 +4,17 @@ n.d(t, {
     WD: () => a,
     X9: () => o,
     lP: () => d,
-    xF: () => l
+    xF: () => r
 });
 var i = n(954571),
-    r = n(652215);
+    l = n(652215);
 
-function l(e) {
+function r(e) {
     let {
         targetUserId: t,
         tab: n
     } = e;
-    i.default.track(r.HAw.FRIENDS_LIST_ITEM_CLICKED, {
+    i.default.track(l.HAw.FRIENDS_LIST_ITEM_CLICKED, {
         target_user_id: t,
         tab: n
     })
@@ -25,7 +25,7 @@ function a(e) {
         targetUserId: t,
         tab: n
     } = e;
-    i.default.track(r.HAw.FRIENDS_LIST_ITEM_MESSAGE_CLICKED, {
+    i.default.track(l.HAw.FRIENDS_LIST_ITEM_MESSAGE_CLICKED, {
         target_user_id: t,
         tab: n
     })
@@ -36,7 +36,7 @@ function s(e) {
         targetUserId: t,
         tab: n
     } = e;
-    i.default.track(r.HAw.FRIENDS_LIST_ITEM_VIDEO_CALL_CLICKED, {
+    i.default.track(l.HAw.FRIENDS_LIST_ITEM_VIDEO_CALL_CLICKED, {
         target_user_id: t,
         tab: n
     })
@@ -47,7 +47,7 @@ function o(e) {
         targetUserId: t,
         tab: n
     } = e;
-    i.default.track(r.HAw.FRIENDS_LIST_ITEM_VOICE_CALL_CLICKED, {
+    i.default.track(l.HAw.FRIENDS_LIST_ITEM_VOICE_CALL_CLICKED, {
         target_user_id: t,
         tab: n
     })
@@ -58,7 +58,7 @@ function d(e) {
         targetUserId: t,
         tab: n
     } = e;
-    i.default.track(r.HAw.FRIENDS_LIST_ITEM_REMOVE_FRIEND_CLICKED, {
+    i.default.track(l.HAw.FRIENDS_LIST_ITEM_REMOVE_FRIEND_CLICKED, {
         target_user_id: t,
         tab: n
     })

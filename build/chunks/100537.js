@@ -3,9 +3,9 @@ n.d(t, {
     A: () => j
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(311907),
     o = n(827734),
     d = n(421380),
@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(964404),
     C = n(709562),
     T = n(520006),
-    N = n(128286),
-    S = n(309010),
+    S = n(128286),
+    N = n(309010),
     x = n(625180),
     v = n(898879),
     b = n(293495),
@@ -40,26 +40,26 @@ let D = {
 function j(e) {
     let {
         frame: t
-    } = e, n = (0, p.h)(t.applicationId), l = (0, u.A)(), {
+    } = e, n = (0, p.h)(t.applicationId), r = (0, u.A)(), {
         selectedChannelId: j,
         selectedVoiceChannelId: M
-    } = (0, s.cf)([S.A], () => ({
-        selectedChannelId: S.A.getChannelId(),
-        selectedVoiceChannelId: S.A.getVoiceChannelId()
-    })), w = (0, s.bG)([E.A], () => null != M && j === M && E.A.getChatOpen(M), [j, M]), U = (0, s.bG)([f.Ay], () => f.Ay.callChatSidebarWidth), G = (0, c.rdh)(o.A.modules.chat.RESIZE_HANDLE_WIDTH), k = r.useRef(null), V = r.useRef(null), [B, H] = r.useState({
+    } = (0, s.cf)([N.A], () => ({
+        selectedChannelId: N.A.getChannelId(),
+        selectedVoiceChannelId: N.A.getVoiceChannelId()
+    })), w = (0, s.bG)([E.A], () => null != M && j === M && E.A.getChatOpen(M), [j, M]), U = (0, s.bG)([f.Ay], () => f.Ay.callChatSidebarWidth), G = (0, c.rdh)(o.A.modules.chat.RESIZE_HANDLE_WIDTH), k = l.useRef(null), V = l.useRef(null), [B, H] = l.useState({
         width: 0,
         height: 0
-    }), F = r.useCallback(() => {
+    }), F = l.useCallback(() => {
         x.A.updateFrameLayoutMode({
             applicationId: t.applicationId,
             layoutMode: y.y.PIP
         })
-    }, [t.applicationId]), Y = r.useCallback(() => {
+    }, [t.applicationId]), Y = l.useCallback(() => {
         x.A.stopFrame({
             applicationId: t.applicationId
         })
     }, [t.applicationId]);
-    r.useLayoutEffect(() => {
+    l.useLayoutEffect(() => {
         if (null == V.current) return;
         let e = new ResizeObserver(() => {
             H({
@@ -68,9 +68,9 @@ function j(e) {
             })
         });
         return e.observe(V.current), () => e.disconnect()
-    }, []), r.useEffect(() => {
+    }, []), l.useEffect(() => {
         let e = e => {
-            null == k.current || (0, c.HG$)(k.current, e.target) || l || x.A.updateFrameLayoutMode({
+            null == k.current || (0, c.HG$)(k.current, e.target) || r || x.A.updateFrameLayoutMode({
                 applicationId: t.applicationId,
                 layoutMode: y.y.PIP
             })
@@ -78,7 +78,7 @@ function j(e) {
         return document.addEventListener("mousedown", e), () => {
             document.removeEventListener("mousedown", e)
         }
-    }, [t.applicationId, l]);
+    }, [t.applicationId, r]);
     let W = B.width / Math.max(B.height, 1) < L.B5,
         K = 0,
         q = 0,
@@ -151,7 +151,7 @@ function j(e) {
                         iconComponent: c.oLl,
                         color: "disconnect"
                     })]
-                }), Q ? (0, i.jsx)(N.A, {
+                }), Q ? (0, i.jsx)(S.A, {
                     popoutOpen: !1,
                     onOpenPopout: () => {
                         (0, g.zV)(O.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, _.A)({

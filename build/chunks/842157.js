@@ -25,8 +25,8 @@ var i = n(627968),
     v = n(987709),
     b = n(850670),
     T = n(206589),
-    y = n(154297),
-    N = n(467078),
+    N = n(154297),
+    y = n(467078),
     S = n(833349),
     j = n(946255),
     L = n(755420),
@@ -89,7 +89,7 @@ function k(e) {
         }
     }).filter(C.Vq), [o]);
     if (!(null != n || c.length > 0)) return null;
-    let u = null != n ? (0, y.C)(n) : w.intl.string(w.t["4dGUP0"]);
+    let u = null != n ? (0, N.C)(n) : w.intl.string(w.t["4dGUP0"]);
     return (0, i.jsxs)("div", {
         className: O.qr,
         children: [(0, i.jsx)("div", {
@@ -114,7 +114,7 @@ function U(e) {
         applicationName: r,
         channel: a,
         header: C,
-        currentUserId: y,
+        currentUserId: N,
         launchableAppId: L,
         isEmbeddedApplication: R,
         tryWithGdnAction: U,
@@ -156,8 +156,8 @@ function U(e) {
         className: O.dS,
         color: "none",
         lineClamp: 2,
-        children: [et ? (0, E.YC)(t, r, a, y, !1) : ee, et ? null : ei]
-    }), [et, t, r, a, y, ee, ei]), es = l.useMemo(() => {
+        children: [et ? (0, E.YC)(t, r, a, N, !1) : ee, et ? null : ei]
+    }), [et, t, r, a, N, ee, ei]), es = l.useMemo(() => {
         let e = V?.details;
         return null == e || "" === e ? null : (0, i.jsx)(d.Text, {
             variant: "text-xs/normal",
@@ -174,13 +174,13 @@ function U(e) {
     } = (0, I.D)({
         presenceActivity: V,
         currentUserPresenceActivity: q,
-        currentUserId: y,
+        currentUserId: N,
         message: t,
         application: n,
         isEmbeddedApplication: R,
         isFrameApplication: eo,
         isGameLaunchable: ea
-    }), eu = (0, I.M)(V, q, t, n), em = (0, v.E)(V, t, n, y), e_ = (0, T.w)(q, V), eh = (0, N.L)(V), ep = (0, o.bG)([f.A], () => null != V && null != V.application_id && f.A.getState(V.application_id, D.xL.JOIN) === D.eAD.LOADING), {
+    }), eu = (0, I.M)(V, q, t, n), em = (0, v.E)(V, t, n, N), e_ = (0, T.w)(q, V), eh = (0, y.L)(V), ep = (0, o.bG)([f.A], () => null != V && null != V.application_id && f.A.getState(V.application_id, D.xL.JOIN) === D.eAD.LOADING), {
         actions: eg,
         hasAccountLinkButton: eA
     } = l.useMemo(() => {
@@ -240,8 +240,8 @@ function U(e) {
                     location: D.ThZ.MESSAGE_EMBED
                 })
             },
-            disabled: t.author.id === y,
-            disabledReason: t.author.id === y ? w.intl.string(w.t.IBl8ID) : void 0
+            disabled: t.author.id === N,
+            disabledReason: t.author.id === N ? w.intl.string(w.t.IBl8ID) : void 0
         } : e_ ? e = {
             label: w.intl.string(w.t.KC26NR),
             trackingArea: h.kY.PLAY,
@@ -264,7 +264,7 @@ function U(e) {
             actions: l,
             hasAccountLinkButton: i
         }
-    }, [ed, eu, em, e_, U, t.author.id, t.id, V, a.id, a.guild_id, z, ec, y, ep, Q, J, X, K, eh]), ex = eg.some(e => e.trackingArea === h.kY.CLOUD_PLAY);
+    }, [ed, eu, em, e_, U, t.author.id, t.id, V, a.id, a.guild_id, z, ec, N, ep, Q, J, X, K, eh]), ex = eg.some(e => e.trackingArea === h.kY.CLOUD_PLAY);
     (0, P.A)(ex, z);
     let ef = l.useMemo(() => e_ ? null : (0, i.jsx)(k, {
         presenceActivity: V,

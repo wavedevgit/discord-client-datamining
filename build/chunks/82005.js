@@ -4,8 +4,8 @@ n.d(t, {
 }), n(64700);
 var i = n(311907);
 n(63995), n(113783), n(69407);
-var r = n(446600),
-    l = n(624265);
+var l = n(446600),
+    r = n(624265);
 n(616356);
 var a = n(734057);
 n(576705), n(607567);
@@ -14,9 +14,9 @@ n(539446);
 var o = n(508654);
 
 function d(e) {
-    let t = (0, l.Ay)(e),
+    let t = (0, r.Ay)(e),
         n = a.A.getChannel(t[0]?.id),
-        d = (0, i.bG)([r.A], () => r.A.getStageInstanceByChannel(n?.id), [n]),
+        d = (0, i.bG)([l.A], () => l.A.getStageInstanceByChannel(n?.id), [n]),
         c = (0, o.BP)(e),
         {
             isStageNoticeHidden: u,

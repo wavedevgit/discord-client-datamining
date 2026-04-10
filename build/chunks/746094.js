@@ -3,11 +3,11 @@ n.d(t, {
     A: () => d
 });
 var i = n(73153),
-    r = n(272355),
-    l = n(627363),
+    l = n(272355),
+    r = n(627363),
     a = n(800828),
     s = n(652215);
-class o extends r.A {
+class o extends l.A {
     _initialize() {
         i.h.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
     }
@@ -19,7 +19,7 @@ class o extends r.A {
             t = new Set;
         e.values().forEach(e => {
             e.type === s.eA$.PENDING_INCOMING && t.add(e.applicationId)
-        }), l.Ay.fetchApplications(Array.from(t))
+        }), r.Ay.fetchApplications(Array.from(t))
     };
     destroy() {
         i.h.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)

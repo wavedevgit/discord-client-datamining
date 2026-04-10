@@ -3,8 +3,8 @@ n.d(t, {
     A: () => g
 }), n(321073);
 var i = n(179771),
-    r = n(793574),
-    l = n(796774),
+    l = n(793574),
+    r = n(796774),
     a = n(209932),
     s = n(807348),
     o = n(536432),
@@ -21,7 +21,7 @@ let g = {
             [_.sm.ANY]: [i.F.RPC, _.hj]
         },
         async handler() {
-            await (0, l.E7)();
+            await (0, r.E7)();
             let e = a.A.getSounds(),
                 t = [];
             return e.forEach(e => e.forEach(e => t.push((0, s.A2)(e)))), t
@@ -42,7 +42,7 @@ let g = {
                     sound_id: n
                 }
             } = e;
-            await (0, l.E7)();
+            await (0, r.E7)();
             let i = c.default.getCurrentUser(),
                 s = a.A.getSound(t, n),
                 A = (0, h.A)(),
@@ -51,7 +51,7 @@ let g = {
                 errorCode: m.Lw.INVALID_CHANNEL
             }, "Invalid Channel.");
             if (_)
-                if ((0, d.Ay)(A)) null != s && (0, o.Ak)(s, A.id, [r.A.RPC]);
+                if ((0, d.Ay)(A)) null != s && (0, o.Ak)(s, A.id, [l.A.RPC]);
                 else throw new u.A({
                     errorCode: m.Lw.INVALID_PERMISSIONS
                 }, "Invalid Permissions.");

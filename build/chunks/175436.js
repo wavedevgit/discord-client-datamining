@@ -3,8 +3,8 @@ n.d(t, {
     A: () => s
 });
 var i = n(334595),
-    r = n(837921),
-    l = n(90924),
+    l = n(837921),
+    r = n(90924),
     a = n(629471);
 let s = {
     [n(652215).e$_.ENCOURAGE_HW_ACCELERATION]: {
@@ -13,10 +13,10 @@ let s = {
             let {
                 socket: t
             } = e;
-            (0, l.lG)(t.transport);
+            (0, r.lG)(t.transport);
             let n = t.application.id;
             if (null != n) return (0, i.A)(n), {
-                enabled: r.Ay.getEnableHardwareAcceleration()
+                enabled: l.Ay.getEnableHardwareAcceleration()
             }
         }
     }

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(397927),
-    l = n(308528),
+var l = n(397927),
+    r = n(308528),
     a = n(928658),
     s = n(978914),
     o = n(985018);
@@ -24,9 +24,9 @@ function d(e) {
     } = (0, s.I)(t);
     if (null == _ && (h || A)) return null;
     let m = () => {
-        d?.(), l.A.closePrivateChannel(t.id)
+        d?.(), r.A.closePrivateChannel(t.id)
     };
-    return (0, i.jsx)(r.Button, {
+    return (0, i.jsx)(l.Button, {
         variant: "critical-primary",
         size: "sm",
         disabled: null == _,

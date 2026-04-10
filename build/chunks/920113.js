@@ -3,9 +3,9 @@ n.d(t, {
     A: () => v
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(877227),
     o = n(311907),
     d = n(397927),
@@ -22,28 +22,28 @@ var i = n(627968),
     f = n(567061),
     C = n(192380),
     T = n(652215),
-    N = n(985018),
-    S = n(43288),
+    S = n(985018),
+    N = n(43288),
     x = n(358943);
 let v = (0, u.A)(function(e) {
     let {
         width: t
     } = e, n = (0, p.c)("ICYMIPage");
-    r.useEffect(() => {
+    l.useEffect(() => {
         n || (0, s.pX)(T.BVt.ME)
-    }, [n]), r.useLayoutEffect(() => {
+    }, [n]), l.useLayoutEffect(() => {
         n && c.I(T.BVt.ICYMI)
     }, [n]), (0, A.Ay)(() => {
         n && (0, m.d)("icymi")
     });
-    let l = (0, o.bG)([g.A], () => g.A.theme),
+    let r = (0, o.bG)([g.A], () => g.A.theme),
         u = (0, o.bG)([E.A], () => E.A.isRefreshing()),
-        v = r.useRef(null);
+        v = l.useRef(null);
     (0, h.HU)({
-        location: N.intl.string(N.t["jnXV/V"])
+        location: S.intl.string(S.t["jnXV/V"])
     });
-    let [b, y] = r.useState(!1);
-    r.useEffect(() => {
+    let [b, y] = l.useState(!1);
+    l.useEffect(() => {
         let e = e => {
                 e.metaKey && y(!0)
             },
@@ -61,14 +61,14 @@ let v = (0, u.A)(function(e) {
         L = p.f8.useConfig({
             location: "icymi page"
         }).enabled,
-        R = r.useCallback(async e => {
+        R = l.useCallback(async e => {
             e.metaKey && L ? await (0, I.be)(T.ZSU.ACK_GRAVITY_REGENERATE_FEED_AND_CLEAR_READ_STATES_BUTTON) : await O()
         }, [O, L]),
-        P = b && L ? N.intl.string(N.t.YplSn2) : N.intl.string(N.t.wzzjk9);
+        P = b && L ? S.intl.string(S.t.YplSn2) : S.intl.string(S.t.wzzjk9);
     return n ? (0, i.jsxs)("div", {
-        className: a()(x.TE, S.kL),
+        className: a()(x.TE, N.kL),
         children: [(0, i.jsx)(d.NPJ, {
-            theme: l,
+            theme: r,
             children: e => (0, i.jsxs)(_.A, {
                 className: e,
                 toolbar: (0, i.jsx)(_.A.Icon, {
@@ -82,17 +82,17 @@ let v = (0, u.A)(function(e) {
                     icon: d.gXB,
                     "aria-hidden": !0
                 }), (0, i.jsx)(_.A.Title, {
-                    children: N.intl.string(N.t["jnXV/V"])
+                    children: S.intl.string(S.t["jnXV/V"])
                 }), (0, i.jsx)(_.A.Title, {
                     children: (0, i.jsx)("p", {
-                        className: S.HH,
-                        children: N.intl.string(N.t.Ac2OZA)
+                        className: N.HH,
+                        children: S.intl.string(S.t.Ac2OZA)
                     })
                 })]
             })
         }), (0, i.jsx)("div", {
             ref: v,
-            className: a()(x.Qs, S.Qs),
+            className: a()(x.Qs, N.Qs),
             children: (0, i.jsx)(C.A, {
                 scrollContainerRef: v
             })

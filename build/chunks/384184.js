@@ -3,8 +3,8 @@ n.d(t, {
     A: () => p
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(731738),
+    l = n(64700),
+    r = n(731738),
     a = n(397927),
     s = n(831062),
     o = n(378570),
@@ -22,25 +22,25 @@ function p(e) {
         active: t,
         user: n,
         channel: p
-    } = e, E = (0, u.r)(), I = r.useCallback(() => {
+    } = e, E = (0, u.r)(), I = l.useCallback(() => {
         (0, a.showToast)((0, a.createToast)(m.intl.string(m.t.pIQ3h4), a.ToastType.FAILURE)), s.A.increment({
-            name: l.K.SPAM_MESSAGE_REQUEST_ERROR_VIEW
+            name: r.K.SPAM_MESSAGE_REQUEST_ERROR_VIEW
         })
-    }, []), f = r.useCallback(() => {
+    }, []), f = l.useCallback(() => {
         d.A.closeChannelSidebar(c.fe)
-    }, []), C = r.useCallback(() => {
+    }, []), C = l.useCallback(() => {
         d.A.closeChannelSidebar(c.fe), E && (0, o.iN)(p.id)
     }, [p.id, E]), {
         acceptMessageRequest: T,
-        isAcceptLoading: N,
-        isUserProfileLoading: S,
+        isAcceptLoading: S,
+        isUserProfileLoading: N,
         isOptimisticAccepted: x
     } = (0, A.t)({
         user: n,
         onAcceptSuccess: C,
         onRejectSuccess: f,
         onError: I
-    }), v = N || S, b = v || x;
+    }), v = S || N, b = v || x;
     return (0, i.jsxs)("div", {
         className: g.kL,
         children: [(0, i.jsx)(h.A, {

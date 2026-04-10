@@ -3,15 +3,15 @@ n.d(t, {
     A: () => h
 });
 var i = n(73153),
-    r = n(272355),
-    l = n(961350),
+    l = n(272355),
+    r = n(961350),
     a = n(414736),
     s = n(874486),
     o = n(927018),
     d = n(3137),
     c = n(559908);
 let u = new Set;
-class A extends r.A {
+class A extends l.A {
     _initialize() {
         i.h.subscribe("MESSAGE_CREATE", this.handleMessageCreate), i.h.subscribe("POGGERMODE_SETTINGS_UPDATE", this.handleSettingsUpdate)
     }
@@ -30,12 +30,12 @@ class A extends r.A {
             message: {
                 author: n,
                 nonce: i,
-                mentions: r
+                mentions: l
             }
         } = e;
         if (!d.A.isEnabled()) return !1;
-        let A = l.default.getId();
-        if (r?.find(e => e.id === A) != null ? (0, a._)(o.sn.PING_ME) : (r?.length ?? 0) > 0 && n?.id === A && (0, a._)(o.sn.PING_SOMEONE), !(0, c.gN)(n?.id, A, i, u)) return !1;
+        let A = r.default.getId();
+        if (l?.find(e => e.id === A) != null ? (0, a._)(o.sn.PING_ME) : (l?.length ?? 0) > 0 && n?.id === A && (0, a._)(o.sn.PING_SOMEONE), !(0, c.gN)(n?.id, A, i, u)) return !1;
         let {
             combo: h
         } = c.Ay.getMostRecentMessageCombo(t) ?? {};

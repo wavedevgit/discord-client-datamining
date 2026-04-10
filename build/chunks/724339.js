@@ -3,8 +3,8 @@ n.d(t, {
     W: () => o
 });
 var i = n(353640),
-    r = n(121894),
-    l = n(851936),
+    l = n(121894),
+    r = n(851936),
     a = n(654487),
     s = n(818348);
 let o = (0, i.v)((e, t) => ({
@@ -13,7 +13,7 @@ let o = (0, i.v)((e, t) => ({
     lastOutputLogTime: -5e3,
     logger: null,
     registerAssetLoad: () => {
-        let n = t().logger ?? (0, l.L)({
+        let n = t().logger ?? (0, r.L)({
             location: a.rE.QUEST_HOME_DESKTOP
         });
         if (n.info === s.tE || t().elapsed >= 6e4) return;
@@ -22,6 +22,6 @@ let o = (0, i.v)((e, t) => ({
         let o = {
             elapsed: i
         };
-        i - t().lastOutputLogTime > 1e3 && (n.info(`QuestHome asset loading duration so far: ${i}ms`), o.lastOutputLogTime = i), null == t().logger && (o.logger = n), (0, r.r)(() => e(o))
+        i - t().lastOutputLogTime > 1e3 && (n.info(`QuestHome asset loading duration so far: ${i}ms`), o.lastOutputLogTime = i), null == t().logger && (o.logger = n), (0, l.r)(() => e(o))
     }
 }))

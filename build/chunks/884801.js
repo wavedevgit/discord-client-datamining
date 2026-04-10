@@ -1,18 +1,18 @@
 /** chunk id: 884801 params = (module,exports,require) **/
 n.d(t, {
-    N: () => r
+    N: () => l
 });
 var i = n(64700);
 
-function r(e, t, n) {
-    let r = i.useRef(null),
-        l = i.useRef(new Map),
+function l(e, t, n) {
+    let l = i.useRef(null),
+        r = i.useRef(new Map),
         a = i.useRef(new Set),
         s = i.useRef(t),
         o = i.useRef(e);
     return i.useEffect(() => {
         s.current = t, o.current = e
-    }, [t, e]), i.useEffect(() => (r.current = new IntersectionObserver(e => {
+    }, [t, e]), i.useEffect(() => (l.current = new IntersectionObserver(e => {
         let t = !1;
         if (e.forEach(e => {
                 let n = e.target.getAttribute("data-item-id");
@@ -35,13 +35,13 @@ function r(e, t, n) {
         threshold: [0, .5, 1],
         rootMargin: "0px"
     }), () => {
-        r.current?.disconnect()
+        l.current?.disconnect()
     }), [n]), {
         registerItemRef: i.useCallback((e, t) => {
-            if (null != t) l.current.set(e, t), null != r.current && r.current.observe(t);
+            if (null != t) r.current.set(e, t), null != l.current && l.current.observe(t);
             else {
-                let t = l.current.get(e);
-                null != t && (r.current?.unobserve(t), l.current.delete(e))
+                let t = r.current.get(e);
+                null != t && (l.current?.unobserve(t), r.current.delete(e))
             }
         }, [])
     }

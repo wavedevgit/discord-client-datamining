@@ -3,8 +3,8 @@ n.d(t, {
     A: () => x
 }), n(323874), n(14289), n(35956);
 var i = n(420970),
-    r = n(975807),
-    l = n(646865),
+    l = n(975807),
+    r = n(646865),
     a = n(933958),
     s = n(51520),
     o = n(700475),
@@ -22,8 +22,8 @@ var i = n(420970),
     f = n(629471),
     C = n(613057),
     T = n(652215),
-    N = n(360469);
-let S = new Set([N.AM, N.eK]),
+    S = n(360469);
+let N = new Set([S.AM, S.eK]),
     x = {
         [T.e$_.OPEN_EXTERNAL_LINK]: {
             scope: {
@@ -44,12 +44,12 @@ let S = new Set([N.AM, N.eK]),
                 try {
                     let e = new URL(n).toString();
                     if (p.isPlatformEmbedded) {
-                        let e = (0, l.f)() ? T.MLl.ACTIVITY_POPOUT : null;
+                        let e = (0, r.f)() ? T.MLl.ACTIVITY_POPOUT : null;
                         m.A.focus(e, !0)
                     }
                     let a = u.A.getApplication(t.application?.id),
                         o = (0, d.H)(i?.location);
-                    if (await (0, c.u)(a?.id, e)) return (0, r.A)(e), _.default.track(T.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+                    if (await (0, c.u)(a?.id, e)) return (0, l.A)(e), _.default.track(T.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
                         application_id: t.application?.id,
                         url: e,
                         opened: !0
@@ -60,7 +60,7 @@ let S = new Set([N.AM, N.eK]),
                         href: e,
                         shouldConfirm: !0,
                         onConfirm: () => {
-                            (0, r.A)(e), _.default.track(T.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+                            (0, l.A)(e), _.default.track(T.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
                                 application_id: t.application?.id,
                                 url: e,
                                 opened: !0
@@ -99,7 +99,7 @@ let S = new Set([N.AM, N.eK]),
                 } = e;
                 (0, I.lG)(t.transport);
                 let i = (0, I.D2)(t.application);
-                if (!S.has(i)) throw new E.A({
+                if (!N.has(i)) throw new E.A({
                     errorCode: T.Lw6.UNAUTHORIZED_FOR_APPLICATION
                 }, "Command not available for this application");
                 {
@@ -120,12 +120,12 @@ let S = new Set([N.AM, N.eK]),
                     args: {
                         custom_id: n,
                         message: i,
-                        link_id: r
+                        link_id: l
                     }
                 } = e;
                 (0, I.lG)(t.transport);
-                let l = (0, I.D2)(t.application);
-                if (null == l) throw new E.A({
+                let r = (0, I.D2)(t.application);
+                if (null == r) throw new E.A({
                     errorCode: T.Lw6.INVALID_COMMAND
                 }, "No application.");
                 if (!(0, A.n)(t.application, T.gfo.EMBEDDED)) throw new E.A({
@@ -133,9 +133,9 @@ let S = new Set([N.AM, N.eK]),
                 }, "This application cannot access this API");
                 return new Promise(e => {
                     (0, o.a)({
-                        applicationId: l,
+                        applicationId: r,
                         customId: n,
-                        linkId: r,
+                        linkId: l,
                         message: i,
                         onShare: (t, n) => {
                             e({

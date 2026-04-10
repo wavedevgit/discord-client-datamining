@@ -3,12 +3,12 @@ n.d(t, {
     A: () => a
 });
 var i = n(271866),
-    r = n(189081),
-    l = n(147964);
+    l = n(189081),
+    r = n(147964);
 let a = {
     init() {
-        r.A.whenInitialized(() => {
-            null != l.A.testModeApplicationId && (0, i.q1)(l.A.testModeApplicationId, l.A.testModeOriginURL)
+        l.A.whenInitialized(() => {
+            null != r.A.testModeApplicationId && (0, i.q1)(r.A.testModeApplicationId, r.A.testModeOriginURL)
         })
     }
 }

@@ -3,8 +3,8 @@ n.d(t, {
     i: () => g
 }), n(321073);
 var i = n(64700),
-    r = n(311907),
-    l = n(919796),
+    l = n(311907),
+    r = n(919796),
     a = n(4106),
     s = n(105971),
     o = n(800319),
@@ -24,19 +24,19 @@ function g(e) {
         unreadItems: E,
         readItems: I,
         allUnreadItemsHydrated: f
-    } = (0, A.A)(), C = (0, r.bG)([d.A], () => d.A.getVersion(), []), T = (0, r.bG)([d.A], () => !(d.A.isFirstPageHydrated() && C > 0));
+    } = (0, A.A)(), C = (0, l.bG)([d.A], () => d.A.getVersion(), []), T = (0, l.bG)([d.A], () => !(d.A.isFirstPageHydrated() && C > 0));
     i.useEffect(() => {
         null != d.A.getLoadId() && s.k.trackFeedShown({
             homeSessionId: "gravity"
         })
     }, [C]);
-    let N = (0, r.bG)([d.A], () => d.A.isRefreshing(), []),
-        S = (0, r.bG)([d.A], () => d.A.isHydrating(), []),
+    let S = (0, l.bG)([d.A], () => d.A.isRefreshing(), []),
+        N = (0, l.bG)([d.A], () => d.A.isHydrating(), []),
         [x, v] = i.useState([]),
         {
             loadId: b,
             lastScrollEventTimestamp: y
-        } = (0, r.cf)([d.A], () => ({
+        } = (0, l.cf)([d.A], () => ({
             loadId: d.A.getLoadId(),
             lastScrollEventTimestamp: d.A.lastScrollEvent()
         })),
@@ -51,12 +51,12 @@ function g(e) {
             } = e;
             return t.id
         }).pop(),
-        L = (0, l.A)(O);
+        L = (0, r.A)(O);
     i.useEffect(() => {
-        if (N || T || null == L || null == O || O === L) return;
+        if (S || T || null == L || null == O || O === L) return;
         let e = Date.now();
         e - y > m.N && (a.A.gravityScrollEvent(e), s.k.trackFeedFirstScrollStarted())
-    }, [N, y, L, O, b, T]);
+    }, [S, y, L, O, b, T]);
     let R = i.useCallback(e => {
             let {
                 viewableItems: t
@@ -65,13 +65,13 @@ function g(e) {
             v(t);
             let n = [],
                 i = (0, u.P0)(t),
-                r = Date.now();
+                l = Date.now();
             for (let e = i.length - 1; e >= 0; e--) {
                 let t = i[e];
                 null != t && n.push({
                     id: t.id,
                     type: (0, c.xG)(t),
-                    timestamp: r++
+                    timestamp: l++
                 })
             }
             n.length > 0 && a.A.ackGravityItems(n, !0), s.k.trackItemShortImpression(t, i.map(e => ({
@@ -200,7 +200,7 @@ function g(e) {
                 }
             }), I.length > 0 && I.forEach(t => {
                 (0, u.yx)(t) || e.push(t)
-            }), S && e.push({
+            }), N && e.push({
                 id: "bottomLoading",
                 timestamp: 0,
                 unread: !1,
@@ -211,14 +211,14 @@ function g(e) {
                 data: e,
                 stickyHeaderIndices: []
             }
-        }, [T, n, E, f, I, S, w]);
+        }, [T, n, E, f, I, N, w]);
     return {
         data: U,
         loading: T,
         version: C,
         visibleItemIds: x,
         endVisible: g,
-        isRefreshing: N,
+        isRefreshing: S,
         handleOnRefresh: M,
         stickyHeaderIndices: G,
         viewabilityConfigCallbackPairs: j

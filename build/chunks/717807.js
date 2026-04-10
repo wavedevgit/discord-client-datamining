@@ -3,8 +3,8 @@ n.d(t, {
     A: () => p
 });
 var i = n(627968),
-    r = n(311907),
-    l = n(988506),
+    l = n(311907),
+    r = n(988506),
     a = n(342494),
     s = n(793574),
     o = n(22007),
@@ -19,7 +19,7 @@ var i = n(627968),
 let p = e => {
     let {
         targetElementRef: t
-    } = e, n = (0, r.bG)([d.default], () => d.default.getCurrentUser()), p = !1 === c.Ay.isPremiumExactly(n, h.PremiumTypes.TIER_2), E = n?.premiumState?.premiumSource === l.fE.FRACTIONAL_NITRO && n?.premiumState.premiumSubscriptionType !== l.jK.TIER_2, I = !0 === (null == n || p || E) ? m.intl.string(m.t.E1ONHQ) : m.intl.string(m.t.CMKNhr);
+    } = e, n = (0, l.bG)([d.default], () => d.default.getCurrentUser()), p = !1 === c.Ay.isPremiumExactly(n, h.PremiumTypes.TIER_2), E = n?.premiumState?.premiumSource === r.fE.FRACTIONAL_NITRO && n?.premiumState.premiumSubscriptionType !== r.jK.TIER_2, I = !0 === (null == n || p || E) ? m.intl.string(m.t.E1ONHQ) : m.intl.string(m.t.CMKNhr);
     return (0, i.jsx)(a.AM, {
         targetElementRef: t,
         title: m.intl.string(m.t["V8J+16"]),

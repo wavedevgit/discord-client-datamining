@@ -1,6 +1,6 @@
 /** chunk id: 646202 params = (module,exports,require) **/
 n.d(t, {
-    fN: () => r
+    fN: () => l
 });
 let i = (0, n(250105).Ay)({
     name: "2026-02-soundboard-xp-5",
@@ -18,7 +18,7 @@ let i = (0, n(250105).Ay)({
     }
 });
 
-function r(e) {
+function l(e) {
     return "control" !== (i.getConfig({
         location: e
     }).treatment ?? "control")

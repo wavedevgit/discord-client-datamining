@@ -3,9 +3,9 @@ n.d(t, {
     A: () => y
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(575593),
     o = n(440703),
     d = n(311907),
@@ -22,21 +22,21 @@ var i = n(627968),
     f = n(579473),
     C = n(590202),
     T = n(734736),
-    N = n(247455),
-    S = n(57718),
+    S = n(247455),
+    N = n(57718),
     x = n(652215),
     v = n(985018),
     b = n(864833);
-let y = (0, r.memo)(function(e) {
+let y = (0, l.memo)(function(e) {
     let {
         quest: t
-    } = e, [n, l] = (0, r.useState)(!1), [y, O] = (0, r.useState)(24), [L, R] = (0, r.useState)(!1), P = (0, r.useRef)(null), D = (0, r.useRef)(null), j = (0, r.useRef)(null), M = (0, d.bG)([g.default], () => g.default.getCurrentUser()), {
+    } = e, [n, r] = (0, l.useState)(!1), [y, O] = (0, l.useState)(24), [L, R] = (0, l.useState)(!1), P = (0, l.useRef)(null), D = (0, l.useRef)(null), j = (0, l.useRef)(null), M = (0, d.bG)([g.default], () => g.default.getCurrentUser()), {
         ref: w,
         height: U = 0
     } = (0, A.Ay)(), G = (0, h.Ay)(), k = (0, I.S5)(t.userStatus?.claimedAt, {
         month: "numeric",
         day: "numeric"
-    }), V = t.userStatus?.claimedTier ?? 0, B = t.config.rewards[V], H = B?.type === o.l.FRACTIONAL_PREMIUM, F = B?.type === o.l.COLLECTIBLE, Y = B?.type === o.l.VIRTUAL_CURRENCY, W = B?.collectibleProduct?.items?.[0], K = W?.type === s.R.AVATAR_DECORATION ? W : null, q = r.useMemo(() => null == B ? null : !0 === Y && t.userStatus?.orbQuantityClaimed != null ? v.intl.format(v.t["nLXlh+"], {
+    }), V = t.userStatus?.claimedTier ?? 0, B = t.config.rewards[V], H = B?.type === o.l.FRACTIONAL_PREMIUM, F = B?.type === o.l.COLLECTIBLE, Y = B?.type === o.l.VIRTUAL_CURRENCY, W = B?.collectibleProduct?.items?.[0], K = W?.type === s.R.AVATAR_DECORATION ? W : null, q = l.useMemo(() => null == B ? null : !0 === Y && t.userStatus?.orbQuantityClaimed != null ? v.intl.format(v.t["nLXlh+"], {
         orbAmount: t.userStatus.orbQuantityClaimed
     }) : B.name, [B, Y, t]);
     (0, A.i4)(P, e => {
@@ -46,12 +46,12 @@ let y = (0, r.memo)(function(e) {
         if (!F || null == t || null == D.current || null == P.current || null == j.current) return;
         let n = P.current.getBoundingClientRect(),
             i = D.current.getBoundingClientRect(),
-            r = j.current.getBoundingClientRect();
-        O((i.top - n.top - r.height) / 2)
+            l = j.current.getBoundingClientRect();
+        O((i.top - n.top - l.height) / 2)
     });
     let z = (0, c.Mw)(G),
-        $ = r.useMemo(() => null != t.config.cosponsorMetadata, [t]),
-        Q = r.useMemo(() => (0, f.tW)(t, f.fY.REWARD), [t]),
+        $ = l.useMemo(() => null != t.config.cosponsorMetadata, [t]),
+        Q = l.useMemo(() => (0, f.tW)(t, f.fY.REWARD), [t]),
         X = n ? U + 8 : 0,
         {
             content_position: Z,
@@ -59,13 +59,13 @@ let y = (0, r.memo)(function(e) {
             ...ee
         } = (0, C.fF)(E.uF.TROPHY_CASE_CARD),
         et = () => {
-            l(!0), p.default.track(x.HAw.QUEST_HOVER, {
+            r(!0), p.default.track(x.HAw.QUEST_HOVER, {
                 quest_id: t.id,
                 ...ee
             })
         },
         en = () => {
-            l(!1)
+            r(!1)
         },
         ei = e => {
             R(!0), p.default.track(x.HAw.QUEST_ASSET_LOADING_FAILURE, {
@@ -99,7 +99,7 @@ let y = (0, r.memo)(function(e) {
                 })
             }), H ? (0, i.jsx)(T.A, {
                 className: b.Sl
-            }) : Y ? (0, i.jsx)(N.A, {
+            }) : Y ? (0, i.jsx)(S.A, {
                 className: b.Sl,
                 isAnimated: n,
                 questName: t.config.messages.questName
@@ -127,7 +127,7 @@ let y = (0, r.memo)(function(e) {
                 style: {
                     transform: `translateY(-${X}px)`
                 },
-                children: (0, i.jsx)(S.Ay, {
+                children: (0, i.jsx)(N.Ay, {
                     logotypeClassName: a()(b.wm, {
                         [b.A0]: $
                     }),

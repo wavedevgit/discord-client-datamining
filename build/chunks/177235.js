@@ -3,8 +3,8 @@ n.d(t, {
     A: () => A
 });
 var i = n(179771),
-    r = n(827343),
-    l = n(430452),
+    l = n(827343),
+    r = n(430452),
     a = n(287809),
     s = n(636401),
     o = n(629471),
@@ -37,15 +37,15 @@ let A = {
             if (null == a.default.getUser(t) || d?.id === t) throw new s.A({
                 errorCode: u.Lw6.INVALID_USER
             }, `Invalid user id: ${t}`);
-            if (null != n && r.A.setLocalPan(t, n.left, n.right), null != i && r.A.setLocalVolume(t, i), null != o) {
-                let e = l.Ay.isLocalMute(t);
-                (e && !o || !e && o) && r.A.toggleLocalMute(t)
+            if (null != n && l.A.setLocalPan(t, n.left, n.right), null != i && l.A.setLocalVolume(t, i), null != o) {
+                let e = r.Ay.isLocalMute(t);
+                (e && !o || !e && o) && l.A.toggleLocalMute(t)
             }
             return {
                 user_id: t,
-                pan: l.Ay.getLocalPan(t),
-                volume: l.Ay.getLocalVolume(t),
-                mute: l.Ay.isLocalMute(t)
+                pan: r.Ay.getLocalPan(t),
+                volume: r.Ay.getLocalVolume(t),
+                mute: r.Ay.isLocalMute(t)
             }
         }
     },
@@ -61,11 +61,11 @@ let A = {
         },
         validation: e => (0, o.A)(e).required().keys({
             input: (0, o.A)(e).keys({
-                device_id: e.string().valid(Object.keys(l.Ay.getInputDevices())),
+                device_id: e.string().valid(Object.keys(r.Ay.getInputDevices())),
                 volume: e.number().min(0).max(100)
             }),
             output: (0, o.A)(e).keys({
-                device_id: e.string().valid(Object.keys(l.Ay.getOutputDevices())),
+                device_id: e.string().valid(Object.keys(r.Ay.getOutputDevices())),
                 volume: e.number().min(0).max(200)
             }),
             mode: (0, o.A)(e).keys({
@@ -102,18 +102,18 @@ let A = {
                     mute: h
                 }
             } = e;
-            if (t && (null != t.device_id && r.A.setInputDevice(t.device_id), null != t.volume && r.A.setInputVolume(t.volume)), n && (null != n.device_id && r.A.setOutputDevice(n.device_id), null != n.volume && r.A.setOutputVolume(n.volume)), i) {
-                let e = l.Ay.getMode(),
-                    t = l.Ay.getModeOptions();
-                null != i.type && (e = i.type), null != i.auto_threshold && (t.autoThreshold = i.auto_threshold), null != i.threshold && (t.threshold = i.threshold), null != i.shortcut && (t.shortcut = i.shortcut.map(e => [e.type, e.code])), null != i.delay && (t.delay = i.delay), r.A.setMode(e, t)
+            if (t && (null != t.device_id && l.A.setInputDevice(t.device_id), null != t.volume && l.A.setInputVolume(t.volume)), n && (null != n.device_id && l.A.setOutputDevice(n.device_id), null != n.volume && l.A.setOutputVolume(n.volume)), i) {
+                let e = r.Ay.getMode(),
+                    t = r.Ay.getModeOptions();
+                null != i.type && (e = i.type), null != i.auto_threshold && (t.autoThreshold = i.auto_threshold), null != i.threshold && (t.threshold = i.threshold), null != i.shortcut && (t.shortcut = i.shortcut.map(e => [e.type, e.code])), null != i.delay && (t.delay = i.delay), l.A.setMode(e, t)
             }
-            if (null != a && r.A.setAutomaticGainControl(a), null != s && r.A.setEchoCancellation(s), null != o && r.A.setNoiseSuppression(o), null != c && r.A.setQoS(c), null != u && r.A.setSilenceWarning(u), null != A) {
-                let e = l.Ay.isSelfDeaf();
-                (e && !A || !e && A) && r.A.toggleSelfDeaf()
+            if (null != a && l.A.setAutomaticGainControl(a), null != s && l.A.setEchoCancellation(s), null != o && l.A.setNoiseSuppression(o), null != c && l.A.setQoS(c), null != u && l.A.setSilenceWarning(u), null != A) {
+                let e = r.Ay.isSelfDeaf();
+                (e && !A || !e && A) && l.A.toggleSelfDeaf()
             }
             if (null != h) {
-                let e = l.Ay.isSelfMute();
-                (e && !h || !e && h) && r.A.toggleSelfMute()
+                let e = r.Ay.isSelfMute();
+                (e && !h || !e && h) && l.A.toggleSelfMute()
             }
             return (0, d.l6)()
         }

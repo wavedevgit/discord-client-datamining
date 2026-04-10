@@ -1,9 +1,9 @@
 /** chunk id: 881973 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => l
 });
 var i = n(449054);
-class r {
+class l {
     guildIds = new Set;
     categoryId;
     constructor(e) {

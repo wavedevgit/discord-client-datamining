@@ -1,7 +1,7 @@
 /** chunk id: 362442 params = (module,exports,require) **/
 var i = n(311907),
-    r = n(506774),
-    l = n(451988),
+    l = n(506774),
+    r = n(451988),
     a = n(73153),
     s = n(308368),
     o = n(973522),
@@ -18,15 +18,15 @@ var i = n(311907),
 let I = "ActivityTrackingStore",
     f = 30 * u.A.Millis.MINUTE,
     C = 5 * u.A.Millis.MINUTE,
-    T = r.w.get(I) ?? {},
-    N = {},
-    S = !1;
+    T = l.w.get(I) ?? {},
+    S = {},
+    N = !1;
 
 function x(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
     t && v(e, !0);
-    let n = N[e.applicationId];
-    null != n && (n.stop(), delete N[e.applicationId]), delete T[e.applicationId], r.w.set(I, T)
+    let n = S[e.applicationId];
+    null != n && (n.stop(), delete S[e.applicationId]), delete T[e.applicationId], l.w.set(I, T)
 }
 
 function v(e) {
@@ -50,8 +50,8 @@ function v(e) {
         sessionId: d,
         mediaSessionId: c
     }), e.updatedAt = n;
-    let u = N[e.applicationId];
-    null == u && (u = N[e.applicationId] = new l.IX).start(f, () => v(e)), t || (T[e.applicationId] = e, r.w.set(I, T))
+    let u = S[e.applicationId];
+    null == u && (u = S[e.applicationId] = new r.IX).start(f, () => v(e)), t || (T[e.applicationId] = e, l.w.set(I, T))
 }
 
 function b() {
@@ -72,7 +72,7 @@ function b() {
 
 function y() {
     for (let e of Object.keys(T)) x(T[e]);
-    S = !1
+    N = !1
 }
 class O extends i.Ay.Store {
     static displayName = "ActivityTrackingStore";
@@ -86,9 +86,9 @@ class O extends i.Ay.Store {
 new O(a.h, {
     RUNNING_GAMES_CHANGE: () => b(),
     CONNECTION_OPEN: function() {
-        if (S) return !1;
+        if (N) return !1;
         for (let e of Object.keys(T)) v(T[e]);
-        b(!1), S = !0
+        b(!1), N = !0
     },
     CONNECTION_CLOSED: function(e) {
         let {
@@ -103,13 +103,13 @@ new O(a.h, {
             token: n
         } = e, i = T[t];
         if (null == i) return !1;
-        i.token = n, r.w.set(I, T)
+        i.token = n, l.w.set(I, T)
     },
     ACTIVITY_UPDATE_FAIL: function(e) {
         let {
             applicationId: t
         } = e, n = T[t];
         if (null == n) return !1;
-        n.token = null, n.updatedAt = null, r.w.set(I, T)
+        n.token = null, n.updatedAt = null, l.w.set(I, T)
     }
 })

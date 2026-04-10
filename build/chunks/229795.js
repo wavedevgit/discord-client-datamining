@@ -3,13 +3,13 @@ n.d(t, {
     A: () => o
 });
 var i = n(73153),
-    r = n(636401),
-    l = n(629471),
+    l = n(636401),
+    r = n(629471),
     a = n(360469),
     s = n(818348);
 let o = {
     [s.e$.SET_ORIENTATION_LOCK_STATE]: {
-        validation: e => (0, l.A)(e).required().keys({
+        validation: e => (0, r.A)(e).required().keys({
             lock_state: e.number().valid(a.N7.UNLOCKED, a.N7.PORTRAIT, a.N7.LANDSCAPE).required(),
             picture_in_picture_lock_state: e.number().valid(a.N7.UNLOCKED, a.N7.PORTRAIT, a.N7.LANDSCAPE).allow(null).optional(),
             grid_lock_state: e.number().valid(a.N7.UNLOCKED, a.N7.PORTRAIT, a.N7.LANDSCAPE).allow(null).optional()
@@ -19,7 +19,7 @@ let o = {
                 socket: t,
                 args: {
                     lock_state: n,
-                    picture_in_picture_lock_state: l,
+                    picture_in_picture_lock_state: r,
                     grid_lock_state: a
                 }
             } = e, o = t.application.id;
@@ -27,15 +27,15 @@ let o = {
                 type: "FRAME_SET_ORIENTATION_LOCK_STATE",
                 applicationId: o,
                 lockState: n,
-                pictureInPictureLockState: l
+                pictureInPictureLockState: r
             }), i.h.dispatch({
                 type: "EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE",
                 applicationId: o,
                 lockState: n,
-                pictureInPictureLockState: l,
+                pictureInPictureLockState: r,
                 gridLockState: a
             });
-            else throw new r.A({
+            else throw new l.A({
                 errorCode: s.Lw.INVALID_COMMAND
             }, "No application.")
         }

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(397927),
-    l = n(73153),
+var l = n(397927),
+    r = n(73153),
     a = n(272355),
     s = n(961350),
     o = n(734057),
@@ -15,27 +15,27 @@ var r = n(397927),
 let A = "STAGE_INVITED_TO_SPEAK_MODAL";
 class h extends a.A {
     _initialize() {
-        l.h.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
+        r.h.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
     }
     _terminate() {
-        l.h.unsubscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
+        r.h.unsubscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
     }
     handleVoiceStateUpdates = e => {
         let {
             voiceStates: t
-        } = e, l = s.default.getId(), a = d.A.getSession()?.sessionId, h = t.find(e => e.userId === l && e.sessionId === a);
+        } = e, r = s.default.getId(), a = d.A.getSession()?.sessionId, h = t.find(e => e.userId === r && e.sessionId === a);
         if (null == h) return;
         let _ = h.channelId;
         if (null == _) {
-            (0, r.kBI)(A) && (0, r.OoC)(A);
+            (0, l.kBI)(A) && (0, l.OoC)(A);
             return
         }
         let m = o.A.getChannel(_);
         if (!m?.isGuildStageVoice()) return;
         let g = (0, c.eY)(h) === c.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
         if (null != m && g) {
-            if ((0, r.kBI)(A)) return;
-            (0, r.mMO)(async () => {
+            if ((0, l.kBI)(A)) return;
+            (0, l.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("90037").then(n.bind(n, 427412));

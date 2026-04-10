@@ -3,8 +3,8 @@ n.d(t, {
     A: () => u
 });
 var i = n(311907),
-    r = n(73153),
-    l = n(686956);
+    l = n(73153),
+    r = n(686956);
 let a = {},
     s = 0;
 
@@ -24,10 +24,10 @@ class c extends i.Ay.Store {
             fetchState: 1,
             foundMembers: 0,
             notFoundMembers: 0
-        }, s = t.length, l.A.requestMembersById(e, t, !1))
+        }, s = t.length, r.A.requestMembersById(e, t, !1))
     }
 }
-let u = new c(r.h, {
+let u = new c(l.h, {
     CONNECTION_OPEN: d,
     LOGOUT: d,
     RELATIONSHIP_ADD: d,

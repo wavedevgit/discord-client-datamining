@@ -3,8 +3,8 @@ n.d(t, {
     A: () => g
 });
 var i = n(793574),
-    r = n(4630),
-    l = n(580960),
+    l = n(4630),
+    r = n(580960),
     a = n(636401),
     s = n(629471),
     o = n(569475),
@@ -23,9 +23,9 @@ function m(e, t) {
     };
     switch (e) {
         case A.BRT.APP:
-            return l.A.openPremiumPaymentModalInApp(n);
+            return r.A.openPremiumPaymentModalInApp(n);
         case A.BRT.OVERLAY:
-            return l.A.openPremiumPaymentModalInOverlay(n);
+            return r.A.openPremiumPaymentModalInOverlay(n);
         default:
             throw Error(`Unexpected app context: ${e}`)
     }
@@ -46,8 +46,8 @@ let g = {
                 }
             } = e;
             (0, d.C)(t.transport);
-            let l = t.application.id;
-            if (null == l) throw new a.A({
+            let r = t.application.id;
+            if (null == r) throw new a.A({
                 errorCode: A.Lw6.INVALID_COMMAND
             }, "No application.");
             let {
@@ -62,8 +62,8 @@ let g = {
             };
             return (async () => {
                 try {
-                    let e = await (0, r.j)({
-                        applicationId: l,
+                    let e = await (0, l.j)({
+                        applicationId: r,
                         skuId: n,
                         openPremiumPaymentModal: () => m(h, g),
                         analyticsLocations: _,
@@ -102,9 +102,9 @@ let g = {
             }, "No application.");
             let {
                 lock: i,
-                context: r
+                context: l
             } = (0, c.d5)(t.transport !== u.z4.POST_MESSAGE ? n : null);
-            return m(r, {
+            return m(l, {
                 page: A.liQ.IN_APP
             }).then(() => {
                 i()

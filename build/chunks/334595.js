@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(397927),
-    l = n(964404),
+var l = n(397927),
+    r = n(964404),
     a = n(954571),
     s = n(723702),
     o = n(837921),
@@ -14,7 +14,7 @@ var r = n(397927),
 let u = "activity-hardware-acceleration-modal";
 
 function A(e) {
-    l.Ay.disableActivityHardwareAccelerationPrompt || !s.isPlatformEmbedded || o.Ay.getEnableHardwareAcceleration() || (0, r.mMO)(async () => {
+    r.Ay.disableActivityHardwareAccelerationPrompt || !s.isPlatformEmbedded || o.Ay.getEnableHardwareAcceleration() || (0, l.mMO)(async () => {
         let {
             default: t
         } = await Promise.resolve().then(n.bind(n, 845187));
@@ -27,7 +27,7 @@ function A(e) {
         onCloseRequest: () => {
             a.default.track(c.HAw.MODAL_DISMISSED, {
                 type: d.a
-            }), (0, r.OoC)(u)
+            }), (0, l.OoC)(u)
         }
     })
 }

@@ -3,20 +3,20 @@ n.d(t, {
     A: () => d
 });
 var i = n(73153),
-    r = n(92077),
-    l = n(961350),
+    l = n(92077),
+    r = n(961350),
     a = n(144914);
 
 function s() {
     if (!(0, a.S)()) return;
-    let e = l.default.getToken(),
-        t = l.default.getId();
+    let e = r.default.getToken(),
+        t = r.default.getId();
     if (null == e) throw Error("missing user token");
-    r.Ts(e, t)
+    l.Ts(e, t)
 }
 
 function o() {
-    r.zr()
+    l.zr()
 }
 let d = {
     init() {

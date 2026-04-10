@@ -1,25 +1,25 @@
 /** chunk id: 424956 params = (module,exports,require) **/
 n.d(t, {
-    p: () => l
+    p: () => r
 });
 var i = n(64700),
-    r = n(965660);
+    l = n(965660);
 
-function l(e) {
+function r(e) {
     let {
         guildDiscoveryCardSeenManager: t,
         loadId: n
-    } = e, l = i.useCallback((e, i) => {
+    } = e, r = i.useCallback((e, i) => {
         t.markAsSeen(i, e, n)
-    }, [t, n]), a = i.useCallback((e, t, i, l) => (0, r.Wl)({
+    }, [t, n]), a = i.useCallback((e, t, i, r) => (0, l.Wl)({
         loadId: n,
         guildId: e,
         index: t,
         categoryId: i,
-        analyticsLocation: l
+        analyticsLocation: r
     }), [n]);
     return i.useMemo(() => ({
-        onGuildCardSeen: l,
+        onGuildCardSeen: r,
         onGuildCardClick: a
-    }), [a, l])
+    }), [a, r])
 }

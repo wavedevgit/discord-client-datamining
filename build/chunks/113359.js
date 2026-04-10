@@ -1,6 +1,6 @@
 /** chunk id: 113359 params = (module,exports,require) **/
 n.d(t, {
-    Q: () => r
+    Q: () => l
 });
 let i = (0, n(945810).mj)({
     name: "2026-03-premium-group-popover",
@@ -12,7 +12,7 @@ let i = (0, n(945810).mj)({
     }
 });
 
-function r(e) {
+function l(e) {
     let {
         location: t
     } = e;

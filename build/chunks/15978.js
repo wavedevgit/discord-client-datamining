@@ -3,9 +3,9 @@ n.d(t, {
     w: () => a
 });
 var i = n(311907),
-    r = n(572009),
-    l = n(287809);
+    l = n(572009),
+    r = n(287809);
 
 function a() {
-    return (0, i.bG)([l.default], () => (0, r.I9)(l.default.getCurrentUser()))
+    return (0, i.bG)([r.default], () => (0, l.I9)(r.default.getCurrentUser()))
 }

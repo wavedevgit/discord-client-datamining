@@ -1,6 +1,6 @@
 /** chunk id: 331233 params = (module,exports,require) **/
 n.d(t, {
-    I: () => r
+    I: () => l
 });
 let i = (0, n(945810).mj)({
     name: "2026-04-premium-group-announcement",
@@ -12,7 +12,7 @@ let i = (0, n(945810).mj)({
     }
 });
 
-function r(e) {
+function l(e) {
     let {
         location: t
     } = e;

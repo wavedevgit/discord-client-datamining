@@ -3,8 +3,8 @@ n.d(t, {
     A: () => A
 });
 var i = n(323889),
-    r = n(311907),
-    l = n(73153),
+    l = n(311907),
+    r = n(73153),
     a = n(859703),
     s = n(710969);
 let o = new Map;
@@ -18,23 +18,23 @@ function c() {
     let e = a.A.quests,
         t = d(i.p.QUEST),
         n = !1;
-    for (let [i, l] of e) {
-        var r;
-        t.has(i) || (0, s.Ic)(l) || null == (r = l.userStatus) || null == r.enrolledAt && null == r.completedAt && null == r.claimedAt && 0 === r.dismissedQuestContent || (t.add(i), n = !0)
+    for (let [i, r] of e) {
+        var l;
+        t.has(i) || (0, s.Ic)(r) || null == (l = r.userStatus) || null == l.enrolledAt && null == l.completedAt && null == l.claimedAt && 0 === l.dismissedQuestContent || (t.add(i), n = !0)
     }
     if (0 !== a.A.lastFetchedCurrentQuests && e.size > 0)
         for (let i of t) {
-            let r = e.get(i);
-            (null == r || (0, s.Ic)(r)) && (t.delete(i), n = !0)
+            let l = e.get(i);
+            (null == l || (0, s.Ic)(l)) && (t.delete(i), n = !0)
         }
-    let l = d(i.p.QUEST_HOME_HERO);
-    if (null != a.A.getLastFetchedQuestHomeHero() && l.size > 0) {
+    let r = d(i.p.QUEST_HOME_HERO);
+    if (null != a.A.getLastFetchedQuestHomeHero() && r.size > 0) {
         let e = a.A.getQuestHomeHero();
-        for (let t of l)(null == e || t !== e.id) && (l.delete(t), n = !0)
+        for (let t of r)(null == e || t !== e.id) && (r.delete(t), n = !0)
     }
     return n
 }
-class u extends r.Ay.PersistedStore {
+class u extends l.Ay.PersistedStore {
     static displayName = "AdContentSeenStore";
     static persistKey = "AdContentSeenStore";
     initialize(e) {
@@ -53,7 +53,7 @@ class u extends r.Ay.PersistedStore {
         return o.get(e)?.has(t) ?? !1
     }
 }
-let A = new u(l.h, {
+let A = new u(r.h, {
     AD_CONTENT_MARK_SEEN: function(e) {
         let t = d(e.adCreativeType),
             n = !1;

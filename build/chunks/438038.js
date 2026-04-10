@@ -32,7 +32,7 @@ function _(e) {
         toggleExpanded: I
     } = (0, u.s)({
         initiallyExpanded: !0
-    }), [v, b] = l.useState(!1), T = () => b(!0), y = () => b(!1), N = x ?? 1e3;
+    }), [v, b] = l.useState(!1), T = () => b(!0), N = () => b(!1), y = x ?? 1e3;
     return (0, i.jsx)(o.R, {
         questOrQuests: t,
         questContent: n,
@@ -43,14 +43,14 @@ function _(e) {
             style: {
                 maxHeight: n === r.uF.QUESTS_EMBED ? void 0 : f.to({
                     range: [0, 1],
-                    output: [100, N]
+                    output: [100, y]
                 })
             },
             className: m.i,
             onMouseEnter: T,
-            onMouseLeave: y,
+            onMouseLeave: N,
             onFocus: T,
-            onBlur: y,
+            onBlur: N,
             children: (0, i.jsxs)("div", {
                 ref: t => {
                     e.current = t, g.current = t

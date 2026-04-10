@@ -3,8 +3,8 @@ let i;
 n.d(t, {
     A: () => d
 });
-var r = n(148803),
-    l = n(73153),
+var l = n(148803),
+    r = n(73153),
     a = n(272355),
     s = n(979286);
 {
@@ -13,15 +13,15 @@ var r = n(148803),
 }
 class o extends a.A {
     _initialize() {
-        l.h.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
+        r.h.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
     }
     _terminate() {
-        l.h.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
+        r.h.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
     }
     handlePostConnectionOpen() {
         let e = i();
         (0, s.LX)({
-            release: e ? r.P.BETA : r.P.PROD
+            release: e ? l.P.BETA : l.P.PROD
         })
     }
 }

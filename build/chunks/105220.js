@@ -1,11 +1,11 @@
 /** chunk id: 105220 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => S
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(284009),
-    a = n.n(l),
+    l = n(64700),
+    r = n(284009),
+    a = n.n(r),
     s = n(397927),
     o = n(143991),
     d = n(942857),
@@ -22,21 +22,21 @@ var i = n(627968),
     f = n(507060),
     C = n(652215),
     T = n(576211);
-let N = r.memo(function() {
+let S = l.memo(function() {
     let e = (0, d.A)(),
-        t = r.useRef(null),
-        n = r.useCallback(e => {
+        t = l.useRef(null),
+        n = l.useCallback(e => {
             let {
                 duration: n,
                 intensity: i
             } = e;
             if (A.A.useReducedMotion || !p.A.isFocused()) return;
             let {
-                current: r
+                current: l
             } = t;
-            a()(null != r, "Shakeable is shaken when not mounted"), r.shake(n, i)
+            a()(null != l, "Shakeable is shaken when not mounted"), l.shake(n, i)
         }, []);
-    return r.useEffect(() => (u.A.setLayout(c.Ay), u.A.enable(), () => u.A.disable()), []), r.useEffect(() => (E._.subscribe(C.jej.SHAKE_APP, n), () => {
+    return l.useEffect(() => (u.A.setLayout(c.Ay), u.A.enable(), () => u.A.disable()), []), l.useEffect(() => (E._.subscribe(C.jej.SHAKE_APP, n), () => {
         E._.unsubscribe(C.jej.SHAKE_APP, n)
     }), [n]), (0, h.A)(), (0, i.jsxs)(s.x0k, {
         ref: t,

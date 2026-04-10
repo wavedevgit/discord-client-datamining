@@ -3,8 +3,8 @@ n.d(t, {
     A: () => d
 }), n(321073);
 var i = n(64700),
-    r = n(311907),
-    l = n(4106),
+    l = n(311907),
+    r = n(4106),
     a = n(883344),
     s = n(596720);
 
@@ -67,14 +67,14 @@ function o(e, t, n) {
 }
 
 function d() {
-    let e = (0, r.bG)([a.A], () => a.A.getUnreadDisplayItems()),
-        t = (0, r.bG)([a.A], () => a.A.getReadDisplayItems()),
-        n = (0, r.bG)([a.A], () => a.A.getNextIndexToHydrate()),
-        d = (0, r.cf)([a.A], () => a.A.getHydratedItems()),
-        c = (0, r.bG)([a.A], () => a.A.getMissingItems());
+    let e = (0, l.bG)([a.A], () => a.A.getUnreadDisplayItems()),
+        t = (0, l.bG)([a.A], () => a.A.getReadDisplayItems()),
+        n = (0, l.bG)([a.A], () => a.A.getNextIndexToHydrate()),
+        d = (0, l.cf)([a.A], () => a.A.getHydratedItems()),
+        c = (0, l.bG)([a.A], () => a.A.getMissingItems());
     i.useEffect(() => {
         let e = Date.now() + t.length;
-        l.A.ackGravityItems(t.map(t => ({
+        r.A.ackGravityItems(t.map(t => ({
             id: t.id,
             timestamp: e--
         }), !0))

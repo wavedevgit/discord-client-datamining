@@ -3,9 +3,9 @@ n.d(t, {
     A: () => R
 }), n(321073);
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(311907),
     o = n(990078),
     d = n(397927),
@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(342296),
     C = n(961350),
     T = n(430452),
-    N = n(485296),
-    S = n(427262),
+    S = n(485296),
+    N = n(427262),
     x = n(31408),
     v = n(985018),
     b = n(391987);
@@ -59,9 +59,9 @@ let y = {
     };
 
 function L(e) {
-    let t = r.useRef(null),
+    let t = l.useRef(null),
         {
-            parentAnalyticsLocation: l
+            parentAnalyticsLocation: r
         } = (0, m.Ay)(),
         {
             channel: A,
@@ -79,7 +79,7 @@ function L(e) {
         }),
         w = A.getGuildId() ?? void 0,
         U = h.getAvatarURL(A.guild_id, 24),
-        G = C ?? S.Ay.getName(h),
+        G = C ?? N.Ay.getName(h),
         {
             icon: k,
             colorize: V,
@@ -89,14 +89,14 @@ function L(e) {
                 serverDeaf: t,
                 deaf: n,
                 serverMute: i,
-                mute: r,
-                localMute: l
+                mute: l,
+                localMute: r
             } = e;
             if (t) return O.serverDeaf;
             if (n) return O.deaf;
             if (i) return O.serverMute;
-            if (l) return O.localMute;
-            if (r) return O.mute
+            if (r) return O.localMute;
+            if (l) return O.mute
         }({
             serverDeaf: D,
             deaf: R,
@@ -138,7 +138,7 @@ function L(e) {
             })
         })
     }
-    let Y = (0, s.bG)([N.A], () => N.A.getVoiceVolume(h.id)),
+    let Y = (0, s.bG)([S.A], () => S.A.getVoiceVolume(h.id)),
         W = (0, E.v)({
             isSpeaking: M,
             voiceDb: Y,
@@ -157,7 +157,7 @@ function L(e) {
             children: (0, i.jsx)(d.DUT, {
                 innerRef: t,
                 onClick: t => {
-                    e.onClick(t), (0, g.X)(l, g.O.VOICE_USER)
+                    e.onClick(t), (0, g.X)(r, g.O.VOICE_USER)
                 },
                 className: b.H,
                 onContextMenu: F,
@@ -189,30 +189,30 @@ function R(e) {
     let {
         voiceStates: t,
         channel: n,
-        className: l
-    } = e, [c, u] = r.useState(!1), _ = (0, s.bG)([C.default], () => C.default.getId()), {
+        className: r
+    } = e, [c, u] = l.useState(!1), _ = (0, s.bG)([C.default], () => C.default.getId()), {
         containerRef: m,
         maxVisibleAvatars: g
     } = function(e) {
-        let [t, n] = r.useState(7), i = (0, h.A)(() => {
-            let t = l?.current;
+        let [t, n] = l.useState(7), i = (0, h.A)(() => {
+            let t = r?.current;
             if (null == t) return;
             let i = Math.floor((t.offsetWidth + 4) / 28);
             n(Math.max(1, e > i ? i - 1 : i))
-        }), l = (0, A.w)(i, [e], {
+        }), r = (0, A.w)(i, [e], {
             fireOnMount: !0,
             fireOnDepsChange: !0
         });
         return {
-            containerRef: l,
+            containerRef: r,
             maxVisibleAvatars: t
         }
     }(t.length - 1), [p, E] = function(e, t, n) {
         let i = [];
-        for (let r of e)
-            if (r.user.id !== t && !i.some(e => e.user.id === r.user.id)) {
+        for (let l of e)
+            if (l.user.id !== t && !i.some(e => e.user.id === l.user.id)) {
                 if (i.length >= n) return [i, !0];
-                i.push(r)
+                i.push(l)
             } return [i, !1]
     }(t, _, g), I = c ? d.QGg : d.j96, f = c ? v.intl.string(v.t["Z/Tya5"]) : v.intl.string(v.t.XR5BAc), T = (0, i.jsx)(o.m, {
         text: f,
@@ -226,30 +226,30 @@ function R(e) {
             variant: "icon-only",
             size: "sm"
         })
-    }), N = E && c ? t : p;
-    return N.length <= 0 ? null : (0, i.jsx)(d.IpV, {
-        className: a()(b.XG, l),
+    }), S = E && c ? t : p;
+    return S.length <= 0 ? null : (0, i.jsx)(d.IpV, {
+        className: a()(b.XG, r),
         fade: !0,
         children: (0, i.jsxs)("div", {
             ref: m,
             className: a()(b.Xk, !c && b.yZ),
             role: "group",
             "aria-label": v.intl.string(v.t["/ZgaVU"]),
-            children: [N.map(e => {
+            children: [S.map(e => {
                 let {
                     user: t,
-                    nick: r,
-                    voiceState: l
+                    nick: l,
+                    voiceState: r
                 } = e;
                 return t.id !== _ ? (0, i.jsx)(L, {
                     channel: n,
                     user: t,
-                    nick: r,
-                    mute: l.isVoiceMuted(),
-                    deaf: l.isVoiceDeafened(),
-                    video: l.selfVideo,
-                    serverMute: l.mute,
-                    serverDeaf: l.deaf
+                    nick: l,
+                    mute: r.isVoiceMuted(),
+                    deaf: r.isVoiceDeafened(),
+                    video: r.selfVideo,
+                    serverMute: r.mute,
+                    serverDeaf: r.deaf
                 }, t.id) : null
             }), E ? T : null]
         })

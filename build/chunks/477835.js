@@ -3,9 +3,9 @@ n.d(t, {
     A: () => O
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(417597),
     o = n(554146),
     d = n(621956),
@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(430452),
     C = n(234320),
     T = n(536432),
-    N = n(674168),
-    S = n(989799),
+    S = n(674168),
+    N = n(989799),
     x = n(652215),
     v = n(49999),
     b = n(985018),
@@ -32,11 +32,11 @@ var i = n(627968),
 function O(e) {
     let {
         channel: t,
-        ...l
-    } = e, O = r.useRef(null), {
+        ...r
+    } = e, O = l.useRef(null), {
         mute: L,
         suppress: R
-    } = (0, I.A)(t), P = (0, s.bG)([f.Ay], () => f.Ay.isDeaf()), D = L || R || P, [j, M] = r.useState(!1), w = t.getGuildId(), U = (0, T.VE)({
+    } = (0, I.A)(t), P = (0, s.bG)([f.Ay], () => f.Ay.isDeaf()), D = L || R || P, [j, M] = l.useState(!1), w = t.getGuildId(), U = (0, T.VE)({
         isSoundboardButtonDisabled: D
     }), [G, k] = (0, E.DP)(U), {
         analyticsLocations: V,
@@ -63,7 +63,7 @@ function O(e) {
             onMouseEnter: W,
             onMouseLeave: K
         }
-    } = (0, d.E)(), q = r.useCallback(() => {
+    } = (0, d.E)(), q = l.useCallback(() => {
         D || M(!j)
     }, [D, j]);
     return (0, C.Vo)({
@@ -86,11 +86,11 @@ function O(e) {
                     let {
                         closePopout: n
                     } = e;
-                    return (0, i.jsx)(S.A, {
+                    return (0, i.jsx)(N.A, {
                         guildId: w,
                         channel: t,
                         onClose: n,
-                        gridNotice: G === o.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, i.jsx)(N.m, {
+                        gridNotice: G === o.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, i.jsx)(S.m, {
                             onClose: n,
                             markAsDismissed: k
                         }),
@@ -113,15 +113,15 @@ function O(e) {
                             null != G && G !== o.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && k(v.i.UNKNOWN), M(!j), Y(), (0, g.X)(B, g.O.SOUNDBOARD)
                         },
                         onMouseEnter: e => {
-                            l.onMouseEnter?.(e), W()
+                            r.onMouseEnter?.(e), W()
                         },
                         onMouseLeave: e => {
-                            l.onMouseLeave?.(e), K()
+                            r.onMouseLeave?.(e), K()
                         },
                         onContextMenu: H,
                         fullWidth: !0,
                         size: u.$n.Sizes.MEDIUM,
-                        ...l,
+                        ...r,
                         children: (0, i.jsx)(F, {
                             className: y.iA,
                             size: "sm",

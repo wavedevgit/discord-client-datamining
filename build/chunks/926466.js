@@ -3,9 +3,9 @@ n.d(t, {
     A: () => m
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(735438),
-    a = n.n(l),
+    l = n(64700),
+    r = n(735438),
+    a = n.n(r),
     s = n(421380),
     o = n(397927),
     d = n(58149),
@@ -18,7 +18,7 @@ let _ = a().debounce(d.Ay.trackWithMetadata, 500),
         let {
             guild: t,
             title: n,
-            message: l,
+            message: r,
             image: a,
             type: m,
             imageMarginX: g,
@@ -28,16 +28,16 @@ let _ = a().debounce(d.Ay.trackWithMetadata, 500),
             onDismissed: f,
             onClick: C,
             cta: T,
-            ctaColor: N
+            ctaColor: S
         } = e;
-        r.useEffect(() => {
+        l.useEffect(() => {
             _(u.HAw.CHANNEL_NOTICE_VIEWED, {
                 notice_type: m,
                 guild_id: t.id
             })
         }, [t.id, m]);
-        let S = null;
-        "function" == typeof T ? S = T() : null != T && (S = (0, i.jsx)(s.$n, {
+        let N = null;
+        "function" == typeof T ? N = T() : null != T && (N = (0, i.jsx)(s.$n, {
             "data-migration-pending": !0,
             className: h.HM,
             size: s.$n.Sizes.SMALL,
@@ -49,7 +49,7 @@ let _ = a().debounce(d.Ay.trackWithMetadata, 500),
                 }), C?.()
             },
             fullWidth: !0,
-            color: N,
+            color: S,
             children: T
         }));
         let x = null != g ? `${g}px` : "16px";
@@ -88,8 +88,8 @@ let _ = a().debounce(d.Ay.trackWithMetadata, 500),
                     children: n
                 }) : null, (0, i.jsx)(o.Text, {
                     variant: "text-sm/normal",
-                    children: l
-                }), S]
+                    children: r
+                }), N]
             })]
         })
     }

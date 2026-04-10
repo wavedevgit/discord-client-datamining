@@ -76,16 +76,16 @@ function G() {
         })
     }, []), Y = l.useMemo(() => new Set(F.map(e => e.channel.id)), [F]), [W, B] = l.useState([]);
     (0, d.RT)(n, F, B, h.MV);
-    let X = l.useRef(null),
-        Z = (0, u.A)("friends-widget-voice", X),
+    let Z = l.useRef(null),
+        X = (0, u.A)("friends-widget-voice", Z),
         [K, $] = (0, a.bG)([R.A], () => R.A.getFavoriteTargetIdsForTab(T.x.VOICE), [], S.D),
         q = l.useMemo(() => K.filter(e => Y.has(e)), [K, Y]),
         {
-            friendVoiceChannelIds: Q,
-            recentVoiceChannelIds: J
+            friendVoiceChannelIds: J,
+            recentVoiceChannelIds: Q
         } = (0, h.S4)(),
-        ee = l.useMemo(() => Q.filter(e => Y.has(e)), [Q, Y]),
-        et = l.useMemo(() => J.filter(e => Y.has(e)), [J, Y]),
+        ee = l.useMemo(() => J.filter(e => Y.has(e)), [J, Y]),
+        et = l.useMemo(() => Q.filter(e => Y.has(e)), [Q, Y]),
         en = (0, a.bG)([I.A], () => I.A.getVoiceChannelId(), []),
         ei = (0, a.bG)([y.A], () => y.A.getActiveNowChannelIds({
             kind: y.u.Voice
@@ -229,7 +229,7 @@ function G() {
             }
         }, [eh]);
     (0, D.$)({
-        scrollerRef: X,
+        scrollerRef: Z,
         favoriteTargetIds: q,
         getScrollTargetForTargetId: e => em(e),
         getFallbackScrollTarget: ef,
@@ -325,7 +325,7 @@ function G() {
             return r <= 0 ? 50 : 50 + (32 * r + (r - 1) * 2 + 8)
         }, [b, eS]),
         ev = l.useCallback(e => {
-            r(e), X.current?.scrollToTop()
+            r(e), Z.current?.scrollToTop()
         }, []);
     return (0, i.jsxs)("div", {
         className: j.kL,
@@ -339,7 +339,7 @@ function G() {
                 size: "md"
             })
         }), (0, i.jsx)(s.hD, {
-            navigator: Z,
+            navigator: X,
             children: (0, i.jsx)(s.PR, {
                 children: e => {
                     let {
@@ -352,7 +352,7 @@ function G() {
                             innerRole: n,
                             innerAriaLabel: w.intl.string(w.t.OGiMXJ),
                             ref: e => {
-                                X.current = e, t.current = e?.getScrollerNode() ?? null
+                                Z.current = e, t.current = e?.getScrollerNode() ?? null
                             },
                             className: j.p_,
                             sectionHeight: eN,

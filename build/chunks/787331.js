@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(397927),
-    l = n(49229),
+var l = n(397927),
+    r = n(49229),
     a = n(688810),
     s = n(38910),
     o = n(657331),
@@ -25,7 +25,7 @@ function m(e) {
     } = e, {
         analyticsLocations: p
     } = (0, a.Ay)(), E = e => {
-        e?.stopPropagation(), l.A.addRelationship({
+        e?.stopPropagation(), r.A.addRelationship({
             userId: t.id,
             context: {
                 location: "Friends"
@@ -45,15 +45,15 @@ function m(e) {
             sourceAnalyticsLocations: p
         }),
         children: e => {
-            let l = (0, i.jsxs)(i.Fragment, {
+            let r = (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(d.A, {
-                    icon: r.A9s,
+                    icon: l.A9s,
                     actionType: d.A.ActionTypes.ACCEPT,
                     tooltip: h.intl.string(h.t.Zcibdf),
                     onClick: E,
                     shouldHighlight: e
                 }), (0, i.jsx)(d.A, {
-                    icon: r.PGe,
+                    icon: l.PGe,
                     actionType: d.A.ActionTypes.DENY,
                     tooltip: h.intl.string(h.t.xuio0C),
                     onClick: I,
@@ -70,7 +70,7 @@ function m(e) {
                     className: _.__invalid_userInfo
                 }), (0, i.jsx)("div", {
                     className: _.o,
-                    children: l
+                    children: r
                 })]
             })
         }

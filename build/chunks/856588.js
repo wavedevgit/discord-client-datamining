@@ -4,32 +4,32 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(397927),
-    l = n(73153);
+var l = n(397927),
+    r = n(73153);
 let a = !1,
     s = null,
     o = {
         init() {
-            l.h.subscribe("CONNECTION_OPEN", e => {
+            r.h.subscribe("CONNECTION_OPEN", e => {
                 let {
                     pendingPayments: t
                 } = e;
                 if (null != t && t.length > 0) {
-                    var l;
+                    var r;
                     if (s === t[0] || null == (s = t[0])) return;
-                    l = s, a || (a = !0, (0, r.mMO)(async () => {
+                    r = s, a || (a = !0, (0, l.mMO)(async () => {
                         let {
                             default: e
                         } = await n.e("56999").then(n.bind(n, 302810));
                         return t => {
                             let {
                                 transitionState: n,
-                                onClose: r
+                                onClose: l
                             } = t;
                             return (0, i.jsx)(e, {
-                                pendingPayment: l,
+                                pendingPayment: r,
                                 transitionState: n,
-                                onClose: () => (a = !1, r())
+                                onClose: () => (a = !1, l())
                             })
                         }
                     }))

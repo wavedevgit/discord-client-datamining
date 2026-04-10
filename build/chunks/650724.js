@@ -48,7 +48,7 @@ function A(e, t) {
                 canAccess: a
             }
         }, [n]),
-        y = i.useMemo(() => {
+        N = i.useMemo(() => {
             let e = (0, p.tU)({
                 mediaPostEmbedData: C,
                 guild: E,
@@ -64,5 +64,5 @@ function A(e, t) {
         }, [C, E, I, v, b, T]);
     return i.useEffect(() => {
         n?.threadId != null && (h.A.getEmbedFetchState(n.threadId) !== h.e.NOT_FETCHED || A && !1 === x || !A && f || (0, _.O0)(n?.threadId))
-    }, [n, A, x, f]), y
+    }, [n, A, x, f]), N
 }

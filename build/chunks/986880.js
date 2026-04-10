@@ -1,10 +1,10 @@
 /** chunk id: 986880 params = (module,exports,require) **/
 let i;
 n.d(t, {
-    Ay: () => N
+    Ay: () => S
 });
-var r = n(73153),
-    l = n(31728),
+var l = n(73153),
+    r = n(31728),
     a = n(272355),
     s = n(87001),
     o = n(734057),
@@ -28,7 +28,7 @@ function E() {
     if (!c.A.isOpen(t)) return !1;
     let n = c.A.pipHavenWindow;
     if (null == n || n.id !== t) return i = null, !1;
-    r.h.wait(() => l.VN(t)), i = null
+    l.h.wait(() => r.VN(t)), i = null
 }
 
 function I() {
@@ -45,12 +45,12 @@ function f() {
             if (c.A.isOpen(e)) return !1;
             if (null != i) {
                 let e = i;
-                r.h.wait(() => l.VN(e))
+                l.h.wait(() => r.VN(e))
             }
-            return r.h.wait(() => {
-                l.ho(e, g.o1q.HAVEN, {
+            return l.h.wait(() => {
+                r.ho(e, g.o1q.HAVEN, {
                     channel: a
-                }), I() && l.jD(e)
+                }), I() && r.jD(e)
             }), i = a.id, !0
         }
         return !1
@@ -63,13 +63,13 @@ function C() {
         let e = (void 0) ?? i;
         if (null == e) return;
         let t = p(e);
-        c.A.isOpen(t) && r.h.wait(() => l.jD(t));
+        c.A.isOpen(t) && l.h.wait(() => r.jD(t));
         return
     }
     let e = (void 0) ?? i;
     if (null == e) return;
     let t = p(e);
-    c.A.isOpen(t) && r.h.wait(() => l.WU(t))
+    c.A.isOpen(t) && l.h.wait(() => r.WU(t))
 }
 class T extends a.A {
     _initialize() {
@@ -79,4 +79,4 @@ class T extends a.A {
         A.A.removeChangeListener(f), h.A.removeChangeListener(f), u.A.removeChangeListener(f), _.A.removeChangeListener(f), d.A.removeChangeListener(C), m.A.removeChangeListener(f), s.A.removeChangeListener(f)
     }
 }
-let N = new T
+let S = new T

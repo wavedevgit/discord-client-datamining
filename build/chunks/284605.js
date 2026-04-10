@@ -31,8 +31,8 @@ function E(e) {
         hideRoleTag: v = !1,
         lineClamp: b = 1,
         cardWidth: T,
-        cardHeight: y,
-        thumbnailHeight: N,
+        cardHeight: N,
+        thumbnailHeight: y,
         descriptionTextVariant: S = "text-sm/normal",
         showOpaqueBackground: j = !1
     } = e, L = (0, l.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, l.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, r.R)(t, 600), D = (0, g.z)(t), M = (0, m.BB)(L), {
@@ -90,8 +90,8 @@ function E(e) {
         hideRoleTag: v,
         lineClamp: b,
         cardWidth: T,
-        cardHeight: y,
-        thumbnailHeight: N,
+        cardHeight: N,
+        thumbnailHeight: y,
         descriptionTextVariant: S,
         isDraft: !t.published
     }, t.id)

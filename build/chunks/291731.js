@@ -1,5 +1,5 @@
 /** chunk id: 291731 params = (module,exports,require) **/
-let i, r, l;
+let i, l, r;
 n.d(t, {
     A: () => y
 }), n(321073);
@@ -21,14 +21,14 @@ let g = [],
     C = !1,
     T = null;
 
-function N() {
-    if (i = null != (r = u.A.getChannel()) ? A.A.getGuild(r.guild_id) : null, g = null != r && null != i && h.A.can(m.xBc.MANAGE_WEBHOOKS, r) ? _.A.getWebhooksForChannel(i.id, r.id) : [], null != p) {
+function S() {
+    if (i = null != (l = u.A.getChannel()) ? A.A.getGuild(l.guild_id) : null, g = null != l && null != i && h.A.can(m.xBc.MANAGE_WEBHOOKS, l) ? _.A.getWebhooksForChannel(i.id, l.id) : [], null != p) {
         let e = x(p.id);
         null != e && (p = e)
     }
     I = m.XlH.OPEN, f = {}, C = !1
 }
-let S = s().debounce(() => {
+let N = s().debounce(() => {
     C && ((null == p || s().isEqual(p, x(p.id))) && (C = !1), C || b.emitChange())
 }, 500);
 
@@ -68,7 +68,7 @@ class v extends o.Ay.Store {
             submitting: I === m.XlH.SUBMITTING,
             webhooks: g,
             editedWebhook: p,
-            section: l,
+            section: r,
             sectionId: T,
             hasChanges: this.hasChanges(),
             isFetching: E,
@@ -77,17 +77,17 @@ class v extends o.Ay.Store {
     }
 }
 let b = new v(d.h, __OVERLAY__ ? {} : {
-        INTEGRATION_SETTINGS_INIT: N,
-        INTEGRATION_SETTINGS_SAVE_SUCCESS: N,
+        INTEGRATION_SETTINGS_INIT: S,
+        INTEGRATION_SETTINGS_SAVE_SUCCESS: S,
         CHANNEL_SETTINGS_SET_SECTION: function(e) {
             let {
                 section: t
             } = e;
             if (t !== m.p_A.INTEGRATIONS) return !1;
-            if (l = m.wLn.OVERVIEW, null == i) {
+            if (r = m.wLn.OVERVIEW, null == i) {
                 let e = u.A.getChannel(),
                     t = e?.getGuildId();
-                null != e && null != t && (c.A.fetchForChannel(t, e.id), E = !0), N()
+                null != e && null != t && (c.A.fetchForChannel(t, e.id), E = !0), S()
             }
         },
         INTEGRATION_SETTINGS_SET_SECTION: function(e) {
@@ -95,7 +95,7 @@ let b = new v(d.h, __OVERLAY__ ? {} : {
                 section: t,
                 sectionId: n
             } = e;
-            l = t, T = n
+            r = t, T = n
         },
         INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: function(e) {
             let {
@@ -114,22 +114,22 @@ let b = new v(d.h, __OVERLAY__ ? {} : {
             if (null == p) return !1;
             p = {
                 ...p
-            }, null != t.name && p.name !== t.name && (p.name = t.name, C = !0), void 0 !== t.avatar && p.avatar !== t.avatar && (p.avatar = t.avatar, C = !0), null != t.channelId && p.channel_id !== t.channelId && (p.channel_id = t.channelId, C = !0), C && S()
+            }, null != t.name && p.name !== t.name && (p.name = t.name, C = !0), void 0 !== t.avatar && p.avatar !== t.avatar && (p.avatar = t.avatar, C = !0), null != t.channelId && p.channel_id !== t.channelId && (p.channel_id = t.channelId, C = !0), C && N()
         },
         CHANNEL_SETTINGS_CLOSE: function() {
-            r = null, i = null, g = [], p = null, I = m.XlH.CLOSED
+            l = null, i = null, g = [], p = null, I = m.XlH.CLOSED
         },
         WEBHOOKS_UPDATE: function(e) {
             let {
                 guildId: t,
                 channelId: n,
-                webhooks: l
+                webhooks: r
             } = e;
-            if (E = !1, null != i && t === i.id && null != r && n === r.id && null != l && I !== m.XlH.SUBMITTING) {
+            if (E = !1, null != i && t === i.id && null != l && n === l.id && null != r && I !== m.XlH.SUBMITTING) {
                 for (let e = g.length - 1; e >= 0; e--) {
                     let t = g[e];
                     if (null != n && t?.channel_id !== n) continue;
-                    let i = l.find(e => {
+                    let i = r.find(e => {
                         let {
                             id: n
                         } = e;
@@ -143,13 +143,13 @@ let b = new v(d.h, __OVERLAY__ ? {} : {
                         g[e] = n, C || p?.id !== n.id || (p = n)
                     } else p?.id === t.id && (p = null), g.splice(e, 1)
                 }
-                for (let e of l) null == g.find(t => {
+                for (let e of r) null == g.find(t => {
                     let {
                         id: n
                     } = t;
                     if (n === e.id) return !0
                 }) && g.push(e);
-                g = [...g], S()
+                g = [...g], N()
             }
         },
         INTEGRATION_SETTINGS_SUBMITTING: function() {

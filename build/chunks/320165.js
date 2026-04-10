@@ -229,7 +229,7 @@ function z(e) {
         dragging: A
     } = e, {
         hasFriendList: S
-    } = (0, C.M8)("TextChatHeader"), [G, P] = l.useState(!1), z = (0, a.bG)([p.A], () => p.A.getChannelId(), []), H = t?.isDM() ? n?.id ?? null : null, Y = (0, b.p)(H), W = z === t?.id, B = U.intl.string(j.default.tYPfF2), X = (0, a.bG)([E.A], () => t?.isThread() && null != t.parent_id ? E.A.getChannel(t.parent_id) : null, [t]), Z = (0, a.bG)([x.default, _.A], () => null != X ? (0, g.m1)(X, x.default, _.A) : null, [X]), K = (0, a.bG)([], () => {
+    } = (0, C.M8)("TextChatHeader"), [G, P] = l.useState(!1), z = (0, a.bG)([p.A], () => p.A.getChannelId(), []), H = t?.isDM() ? n?.id ?? null : null, Y = (0, b.p)(H), W = z === t?.id, B = U.intl.string(j.default.tYPfF2), Z = (0, a.bG)([E.A], () => t?.isThread() && null != t.parent_id ? E.A.getChannel(t.parent_id) : null, [t]), X = (0, a.bG)([x.default, _.A], () => null != Z ? (0, g.m1)(Z, x.default, _.A) : null, [Z]), K = (0, a.bG)([], () => {
         var e, i;
         return e = t, i = n, null == e ? null : e.isDM() && null != i ? _.A.isFriend(i.id) ? {
             tab: N.x.FRIENDS,
@@ -284,7 +284,7 @@ function z(e) {
                         className: L.gr,
                         size: "xs"
                     }) : null
-                })(), null != X && null != Z ? (0, i.jsxs)(i.Fragment, {
+                })(), null != Z && null != X ? (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(d.DUT, {
                         className: L.oH,
                         onMouseDown: e => e.stopPropagation(),
@@ -292,8 +292,8 @@ function z(e) {
                             e.stopPropagation(), (0, M.D$)({
                                 target: {
                                     kind: M.bB.CHANNEL,
-                                    channelId: X.id,
-                                    guildId: X.getGuildId?.() ?? X.guild_id ?? null,
+                                    channelId: Z.id,
+                                    guildId: Z.getGuildId?.() ?? Z.guild_id ?? null,
                                     messageId: null
                                 },
                                 source: O.B.MANUAL,
@@ -303,7 +303,7 @@ function z(e) {
                         children: (0, i.jsx)(d.Text, {
                             variant: "text-sm/medium",
                             color: "text-muted",
-                            children: Z
+                            children: X
                         })
                     }), (0, i.jsx)(d._BQ, {
                         className: L.ln,

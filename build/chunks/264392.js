@@ -1,10 +1,10 @@
 /** chunk id: 264392 params = (module,exports,require) **/
 n.d(t, {
-    i: () => r
+    i: () => l
 });
 var i = n(527815);
 
-function r() {
+function l() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 4e3;
     return new Promise(t => {
         let n = setTimeout(() => {

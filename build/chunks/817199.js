@@ -3,8 +3,8 @@ n.d(t, {
     A: () => p
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(996682),
+    l = n(64700),
+    r = n(996682),
     a = n(158954),
     s = n(554146),
     o = n(189252),
@@ -20,11 +20,11 @@ function g(e) {
     let {
         size: t = "md",
         width: n,
-        height: r,
+        height: l,
         ...s
-    } = e, o = (0, a.JtX)(t), c = o?.width ?? n, u = o?.height ?? r, A = (0, d.GV)();
+    } = e, o = (0, a.JtX)(t), c = o?.width ?? n, u = o?.height ?? l, A = (0, d.GV)();
     return (0, i.jsxs)("svg", {
-        ...(0, l.A)(s),
+        ...(0, r.A)(s),
         xmlns: "http://www.w3.org/2000/svg",
         width: c,
         height: u,
@@ -53,18 +53,18 @@ function g(e) {
 }
 
 function p() {
-    let [e, t] = (0, c.kn)([s.M.APRIL_FOOLS_2026_COACHMARK]), n = r.useRef(null), l = e === s.M.APRIL_FOOLS_2026_COACHMARK;
+    let [e, t] = (0, c.kn)([s.M.APRIL_FOOLS_2026_COACHMARK]), n = l.useRef(null), r = e === s.M.APRIL_FOOLS_2026_COACHMARK;
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(o.A, {
             ref: n,
             onClick: () => {
                 (0, u.A)({
                     source: "app_title_bar"
-                }), l && t(h.i.INDIRECT_ACTION)
+                }), r && t(h.i.INDIRECT_ACTION)
             },
             icon: g,
             tooltip: m.intl.string(_.default.UnXoXM)
-        }), l && (0, i.jsx)(A.A, {
+        }), r && (0, i.jsx)(A.A, {
             markAsDismissed: t
         })]
     })

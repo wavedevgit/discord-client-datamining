@@ -3,14 +3,14 @@ n.d(t, {
     A: () => d
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(308528),
+    l = n(64700),
+    r = n(308528),
     a = n(442433),
     s = n(707606),
     o = n(71393);
 
 function d(e) {
-    return (0, s.A)(class extends r.Component {
+    return (0, s.A)(class extends l.Component {
         render() {
             return (0, i.jsx)(e, {
                 ...this.props,
@@ -21,11 +21,11 @@ function d(e) {
             })
         }
         handleMessageUser(e, t) {
-            return l.A.openPrivateChannel({
+            return r.A.openPrivateChannel({
                 recipientIds: t.id
             })
         }
-        handleUserContextMenu(e, t, r) {
+        handleUserContextMenu(e, t, l) {
             (0, a.L3)(e, async () => {
                 let {
                     default: e
@@ -35,7 +35,7 @@ function d(e) {
                     user: t
                 })
             }, {
-                onClose: r
+                onClose: l
             })
         }
         handleGuildContextMenu(e, t) {
@@ -50,8 +50,8 @@ function d(e) {
             })
         }
         handleChannelContextMenu(e, t) {
-            let r = o.A.getGuild(t.getGuildId());
-            if (null == r) return null;
+            let l = o.A.getGuild(t.getGuildId());
+            if (null == l) return null;
             (0, a.L3)(e, async () => {
                 let {
                     default: e
@@ -59,7 +59,7 @@ function d(e) {
                 return n => (0, i.jsx)(e, {
                     ...n,
                     channel: t,
-                    guild: r
+                    guild: l
                 })
             })
         }

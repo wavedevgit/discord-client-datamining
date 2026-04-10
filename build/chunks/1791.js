@@ -3,8 +3,8 @@ n.d(t, {
     A: () => d
 });
 var i = n(73153),
-    r = n(976860),
-    l = n(837921),
+    l = n(976860),
+    r = n(837921),
     a = n(546983),
     s = n(613057),
     o = n(652215);
@@ -25,9 +25,9 @@ let d = {
                 guildId: t,
                 channelId: n,
                 messageId: s
-            }) : ((0, r.bG)({
+            }) : ((0, l.bG)({
                 pathname: o.BVt.CHANNEL(t, n, s)
-            }), l.Ay.focus())
+            }), r.Ay.focus())
         }
     }
 }

@@ -1,15 +1,15 @@
 /** chunk id: 947270 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => l
 });
 var i = n(627968);
 n(64700);
-let r = e => {
+let l = e => {
     let {
         id: t,
         startColor: n,
-        stopColor: r,
-        color: l,
+        stopColor: l,
+        color: r,
         stop: a
     } = e;
     return (0, i.jsxs)("linearGradient", {
@@ -19,13 +19,13 @@ let r = e => {
             stopColor: n
         }), (0, i.jsx)("stop", {
             offset: a,
-            stopColor: r
+            stopColor: l
         }), (0, i.jsx)("stop", {
             offset: a,
-            stopColor: l
+            stopColor: r
         }), (0, i.jsx)("stop", {
             offset: "1",
-            stopColor: l
+            stopColor: r
         })]
     })
 }

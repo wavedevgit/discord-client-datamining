@@ -26,8 +26,8 @@ var i = n(284009),
     v = n(834942),
     b = n(320501),
     T = n(522602),
-    y = n(491037),
-    N = n(335759),
+    N = n(491037),
+    y = n(335759),
     S = n(862780),
     j = n(951727),
     L = n(652215),
@@ -82,7 +82,7 @@ function M(e) {
     let s = b.A.getMessage(t, n);
     if (null == s || null == s.poll || 0 === s.poll.answers.length) return;
     let r = i ?? String(s.poll.answers[0].answer_id);
-    y.W({
+    N.W({
         message: s,
         initialAnswerId: r
     })
@@ -177,7 +177,7 @@ async function U(e) {
             channelId: t,
             messageId: n,
             answerIds: e
-        }), await N.Q({
+        }), await y.Q({
             channelId: t,
             messageId: n,
             answerIds: e
@@ -429,7 +429,7 @@ let F = {
         await u.A.confirm({
             title: R.intl.string(R.t["+rfkTK"]),
             body: R.intl.string(R.t.H2I1gL)
-        }) && await N.w({
+        }) && await y.w({
             channelId: t,
             messageId: n
         })

@@ -3,9 +3,9 @@ n.d(t, {
     A: () => to
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(492462),
     o = n(873263),
     d = n(110259),
@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(772614),
     C = n(18422),
     T = n(761929),
-    N = n(458518),
-    S = n(107361),
+    S = n(458518),
+    N = n(107361),
     x = n(389405),
     v = n(549711),
     b = n(313961),
@@ -57,8 +57,8 @@ var i = n(627968),
     et = n(939846),
     en = n(862658),
     ei = n(813160),
-    er = n(916768),
-    el = n(851109),
+    el = n(916768),
+    er = n(851109),
     ea = n(667429),
     es = n(480680),
     eo = n(767060),
@@ -76,8 +76,8 @@ var i = n(627968),
     ef = n(334465),
     eC = n(976860),
     eT = n(97469),
-    eN = n(718446),
-    eS = n(734057),
+    eS = n(718446),
+    eN = n(734057),
     ex = n(650048),
     ev = n(696451),
     eb = n(71393),
@@ -159,9 +159,9 @@ let eB = (0, c.Fe)({
     eZ = e => {
         let {
             match: t
-        } = e, n = (0, N.o)(), l = (0, A.bG)([eS.A, ey.A], () => {
+        } = e, n = (0, S.o)(), r = (0, A.bG)([eN.A, ey.A], () => {
             let e = ey.A.getChannelId();
-            return eS.A.getChannel(e)
+            return eN.A.getChannel(e)
         }), {
             guildId: a,
             channelId: s,
@@ -187,13 +187,13 @@ let eB = (0, c.Fe)({
                 }
             }),
             C = (0, A.bG)([U.A], () => (0, em.C$)(u) && (0, em.C$)(c), [u, c]);
-        r.useEffect(() => {
+        l.useEffect(() => {
             C || (null != h && (0, eC.pX)(ej.BVt.CHANNEL(h.id, (0, eg.A)(h))), (0, ee.E)())
         }, [C, h]);
         let T = null != h,
-            S = r.useRef(null);
-        r.useEffect(() => {
-            T || null == a || S.current === a || (S.current = a, m.A.joinGuild(a, {
+            N = l.useRef(null);
+        l.useEffect(() => {
+            T || null == a || N.current === a || (N.current = a, m.A.joinGuild(a, {
                 lurker: !0,
                 autoNavigate: !1
             }).catch(() => {}))
@@ -268,28 +268,28 @@ let eB = (0, c.Fe)({
             guildId: a,
             channelId: u
         });
-        if (l?.type === ej.rbe.GUILD_STORE) {
+        if (r?.type === ej.rbe.GUILD_STORE) {
             let e = eP.default.cast(t.params.messageId);
             return (0, i.jsx)(p.A, {
-                channel: l,
+                channel: r,
                 inputSkuId: e
-            }, l.id)
+            }, r.id)
         }
         return (0, i.jsx)(y.A, {})
     },
-    eJ = r.memo(function() {
+    eJ = l.memo(function() {
         let {
             guildId: e,
             channelId: t
         } = (0, ep.A)(), {
             notificationCenterVariant: n
-        } = (0, el.X8)({
+        } = (0, er.X8)({
             location: "Sidebar"
-        }), r = (0, A.bG)([ey.A], () => t ?? ey.A.getChannelId(e));
+        }), l = (0, A.bG)([ey.A], () => t ?? ey.A.getChannelId(e));
         return window.location.pathname.startsWith(ej.BVt.CHANNEL(ej.gNP)) ? ("sidebar" !== n && (0, eC.bG)(ex.A.defaultRoute), (0, i.jsx)(es.A, {
             includePanelSpacing: !0
         })) : window.location.pathname.startsWith(ej.BVt.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(ej.BVt.GUILD_DISCOVERY) || (0, eh.r$)() ? (0, i.jsx)(B.A, {}) : null != e ? (0, i.jsx)(z.A, {
-            selectedChannelId: r,
+            selectedChannelId: l,
             guildId: e
         }, e) : (0, i.jsx)(eA.A, {})
     }),
@@ -305,7 +305,7 @@ let eB = (0, c.Fe)({
             channelId: t,
             messageId: n
         } = e.match.params;
-        return (r.useEffect(() => {
+        return (l.useEffect(() => {
             null != t && null != n && g.A.jumpToMessage({
                 channelId: t,
                 messageId: n,
@@ -353,8 +353,8 @@ let te = e => (0, i.jsx)(x.A, {
     tt = () => (0, i.jsx)(ed.A, {}),
     tn = () => (0, i.jsx)(X.A, {}),
     ti = () => (0, i.jsx)(et.A, {}),
-    tr = () => (0, i.jsx)(eo.A, {}),
-    tl = e => {
+    tl = () => (0, i.jsx)(eo.A, {}),
+    tr = e => {
         let t = e.location.pathname;
         return (0, i.jsx)(C.A, {
             deepLinkType: eG.XK.FEATURES,
@@ -378,12 +378,12 @@ let te = e => (0, i.jsx)(x.A, {
                         });
                     case "sessionManagement":
                         return (0, i.jsx)(o.rd, {
-                            to: (0, eN.settingsPathToRoute)(ek.od.SESSIONS)
+                            to: (0, eS.settingsPathToRoute)(ek.od.SESSIONS)
                         });
                     case "connections":
                         return (0, i.jsx)(o.rd, {
                             to: {
-                                pathname: (0, eN.settingsPathToRoute)(ek.od.CONNECTIONS),
+                                pathname: (0, eS.settingsPathToRoute)(ek.od.CONNECTIONS),
                                 search: e.location.search
                             }
                         });
@@ -393,11 +393,11 @@ let te = e => (0, i.jsx)(x.A, {
                         });
                     case "account-standing":
                         return (0, i.jsx)(o.rd, {
-                            to: (0, eN.settingsPathToRoute)(ek.od.ACCOUNT_ACCOUNT_STANDING)
+                            to: (0, eS.settingsPathToRoute)(ek.od.ACCOUNT_ACCOUNT_STANDING)
                         });
                     case "authorized-apps":
                         return (0, i.jsx)(o.rd, {
-                            to: (0, eN.settingsPathToRoute)(ek.od.AUTHORIZED_APPS)
+                            to: (0, eS.settingsPathToRoute)(ek.od.AUTHORIZED_APPS)
                         });
                     case "open-shop":
                         let {
@@ -412,7 +412,7 @@ let te = e => (0, i.jsx)(x.A, {
                     case "editProfile":
                         return (0, i.jsx)(o.rd, {
                             to: {
-                                pathname: (0, eN.settingsPathToRoute)(ek.od.PROFILE_CUSTOMIZATION)
+                                pathname: (0, eS.settingsPathToRoute)(ek.od.PROFILE_CUSTOMIZATION)
                             }
                         });
                     case "gift":
@@ -424,16 +424,16 @@ let te = e => (0, i.jsx)(x.A, {
                         });
                     case "connected-games":
                         return (0, i.jsx)(o.rd, {
-                            to: (0, eN.settingsPathToRoute)(ek.od.CONTENT_AND_SOCIAL_CONNECTED_GAMES)
+                            to: (0, eS.settingsPathToRoute)(ek.od.CONTENT_AND_SOCIAL_CONNECTED_GAMES)
                         });
                     case "boost":
-                        let r = t.params.guildId;
+                        let l = t.params.guildId;
                         return (0, i.jsx)(o.rd, {
-                            to: ej.BVt.POWERUP_STORE(r)
+                            to: ej.BVt.POWERUP_STORE(l)
                         });
                     case "boost-settings":
                         return (0, i.jsx)(o.rd, {
-                            to: (0, eN.settingsPathToRoute)(ek.od.GUILD_BOOSTING)
+                            to: (0, eS.settingsPathToRoute)(ek.od.GUILD_BOOSTING)
                         });
                     default:
                         return (0, i.jsx)(o.rd, {
@@ -452,11 +452,11 @@ function ts(e) {
     let {
         hasNotice: t,
         sidebarTheme: n,
-        hideSidebar: l,
+        hideSidebar: r,
         hideChannelList: s,
         isSidebarOpen: o
     } = e, d = (0, A.bG)([b.A], () => b.A.isFullscreenInContext()), c = (0, M.D)("ChannelSidebar"), m = (0, D.useAppSidebarState)(e => !e.isOpen) && c;
-    r.useLayoutEffect(() => {
+    l.useLayoutEffect(() => {
         if (c) {
             let e = parseInt(h.w.get(E.o) ?? "");
             Number.isNaN(e) && (e = 375), ta(e = Math.min(Math.max(e, 264), 432));
@@ -469,15 +469,15 @@ function ts(e) {
                 document.removeEventListener("keydown", t)
             }
         }
-    }, [c]), r.useLayoutEffect(() => {
+    }, [c]), l.useLayoutEffect(() => {
         if (m) ta(76);
         else {
             let e = parseInt(h.w.get(E.o) ?? "");
             Number.isNaN(e) && (e = 375), ta(e)
         }
     }, [m]);
-    let g = r.useRef(null),
-        p = r.useCallback((e, t) => {
+    let g = l.useRef(null),
+        p = l.useCallback((e, t) => {
             ta(e);
             let n = t < 88;
             t <= 264 ? document.body.classList.add(eV._A) : document.body.classList.remove(eV._A), t >= 432 ? document.body.classList.add(eV.uN) : document.body.classList.remove(eV.uN);
@@ -486,10 +486,10 @@ function ts(e) {
                 isOpen: !n
             }), n && ta(76))
         }, [c]),
-        I = r.useCallback(() => {
+        I = l.useCallback(() => {
             document.body.classList.add(eV.cB)
         }, []),
-        f = r.useCallback(e => {
+        f = l.useCallback(e => {
             document.body.classList.remove(eV.cB), document.body.classList.remove(eV._A), document.body.classList.remove(eV.uN), document.body.classList.remove(eV.l4), g.current?.style.setProperty("--custom-overdrag", "0px"), h.w.set(E.o, e), eL.default.track(ej.HAw.CHANNEL_SIDEBAR_RESIZED, {
                 width: e
             })
@@ -504,15 +504,15 @@ function ts(e) {
             orientation: T.R.HORIZONTAL_RIGHT,
             throttleDuration: 0
         }),
-        N = r.useCallback(() => {
+        S = l.useCallback(() => {
             D.useAppSidebarState.setState(e => ({
                 isOpen: !e.isOpen
             }))
         }, []);
-    if (r.useLayoutEffect(() => {
+    if (l.useLayoutEffect(() => {
             m && ta(76)
-        }, [m]), l) return null;
-    let S = {
+        }, [m]), r) return null;
+    let N = {
         className: a()(eV.th, {
             [eV.Qd]: !t
         })
@@ -532,10 +532,10 @@ function ts(e) {
                 themeOverride: n
             }), !s && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)("div", {
-                    ...S,
+                    ...N,
                     children: (0, i.jsx)(eJ, {})
                 }), (0, i.jsx)(_.DUT, {
-                    onClick: N,
+                    onClick: S,
                     "aria-label": "Resize Sidebar",
                     className: eV.tq,
                     onMouseDown: C
@@ -548,9 +548,9 @@ function ts(e) {
 function to() {
     let e, t = (0, A.bG)([eO.Ay], () => eO.Ay.hasNotice()),
         n = (0, eT.NC)(),
-        l = function() {
-            let [e, t] = r.useState(() => window.location.pathname.startsWith(ej.BVt.GUILD_MEMBER_VERIFICATION("")));
-            return r.useEffect(() => eE.A.addRouteChangeListener(e => {
+        r = function() {
+            let [e, t] = l.useState(() => window.location.pathname.startsWith(ej.BVt.GUILD_MEMBER_VERIFICATION("")));
+            return l.useEffect(() => eE.A.addRouteChangeListener(e => {
                 t(e.pathname.startsWith(ej.BVt.GUILD_MEMBER_VERIFICATION("")))
             }), []), e
         }(),
@@ -558,7 +558,7 @@ function to() {
         s = (0, A.bG)([ei.A], () => ei.A.getIsOpen()),
         {
             notificationCenterVariant: c
-        } = (0, el.X8)({
+        } = (0, er.X8)({
             location: "Sidebar"
         }),
         h = (0, w.f)("AppView"),
@@ -566,7 +566,7 @@ function to() {
             optional: !0
         }), ":messageId?")]),
         m = _?.params?.channelId === eM.VV.GUILD_ONBOARDING,
-        g = r.useCallback(() => en.A.openSidebar(), []),
+        g = l.useCallback(() => en.A.openSidebar(), []),
         p = (0, M.D)("AppView"),
         E = (0, D.useAppSidebarState)(e => !e.isOpen),
         I = (0, A.bG)([b.A], () => b.A.isFullscreenInContext()),
@@ -578,18 +578,18 @@ function to() {
             children: (0, i.jsxs)("div", {
                 className: eV.E3,
                 "data-fullscreen": I,
-                children: [!I && (0, i.jsx)(eB, {}), u.Fr ? null : (0, i.jsx)(er.A, {}), (0, i.jsxs)("div", {
+                children: [!I && (0, i.jsx)(eB, {}), u.Fr ? null : (0, i.jsx)(el.A, {}), (0, i.jsxs)("div", {
                     className: eV.Qs,
                     children: [(0, i.jsx)(O.A, {}), (0, i.jsx)(ts, {
                         isSidebarOpen: s,
                         hasNotice: t,
                         sidebarTheme: n,
-                        hideChannelList: l || a || m,
+                        hideChannelList: r || a || m,
                         hideSidebar: !s
                     }), (0, i.jsx)("div", {
                         className: eV.MY,
                         "data-collapsed": !!p && E,
-                        children: (0, i.jsxs)(S.A.Provider, {
+                        children: (0, i.jsxs)(N.A.Provider, {
                             value: g,
                             children: [(0, i.jsxs)(o.dO, {
                                 children: [(0, i.jsx)(v.A, {
@@ -631,12 +631,12 @@ function to() {
                                             match: t,
                                             ...n
                                         } = e, {
-                                            layoutId: r
+                                            layoutId: l
                                         } = t.params;
-                                        return null == r || "" === r ? (0, i.jsx)(R.A, {
+                                        return null == l || "" === l ? (0, i.jsx)(R.A, {
                                             ...n
                                         }) : (0, i.jsx)(P.A, {
-                                            layoutId: r,
+                                            layoutId: l,
                                             ...n
                                         })
                                     },
@@ -648,12 +648,12 @@ function to() {
                                             match: t,
                                             ...n
                                         } = e, {
-                                            collectionId: r
+                                            collectionId: l
                                         } = t.params;
-                                        return null == r || "" === r ? (0, i.jsx)(R.A, {
+                                        return null == l || "" === l ? (0, i.jsx)(R.A, {
                                             ...n
                                         }) : (0, i.jsx)(L.A, {
-                                            collectionId: r,
+                                            collectionId: l,
                                             ...n
                                         })
                                     },
@@ -676,7 +676,7 @@ function to() {
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
                                     path: ej.BVt.FAMILY_CENTER,
-                                    render: tr,
+                                    render: tl,
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
                                     path: ej.BVt.ME,
@@ -684,7 +684,7 @@ function to() {
                                     render: tt,
                                     impressionName: d.ImpressionNames.FRIENDS,
                                     disableTrack: !0
-                                }), c === el.U5.SIDEBAR && (0, i.jsx)(v.A, {
+                                }), c === er.U5.SIDEBAR && (0, i.jsx)(v.A, {
                                     path: ej.BVt.CHANNEL(ej.gNP, eI.pv.channelId({
                                         optional: !0
                                     }), ":messageId?"),
@@ -739,12 +739,12 @@ function to() {
                                 }), (0, i.jsx)(v.A, {
                                     path: ej.BVt.GUILD_FEATURE(":feature", eI.pv.guildId()),
                                     exact: !0,
-                                    render: tl,
+                                    render: tr,
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
                                     path: ej.BVt.FEATURE(":feature"),
                                     exact: !0,
-                                    render: tl,
+                                    render: tr,
                                     disableTrack: !0
                                 })]
                             }), f && (0, i.jsx)(k.A, {})]

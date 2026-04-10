@@ -1,11 +1,11 @@
 /** chunk id: 663111 params = (module,exports,require) **/
 n.d(t, {
-    M: () => N
+    M: () => S
 });
 var i = n(627968);
 n(64700);
-var r = n(873263),
-    l = n(311907),
+var l = n(873263),
+    r = n(311907),
     a = n(397927),
     s = n(587895),
     o = n(93055),
@@ -24,19 +24,19 @@ var r = n(873263),
     C = n(842130),
     T = n(782584);
 
-function N() {
-    let e, t = (0, r.zy)(),
-        n = (0, l.bG)([g.A], () => g.A.getGuildId()),
-        N = (0, l.bG)([m.A], () => m.A.getChannelId()),
-        S = (0, l.bG)([h.A], () => h.A.getChannel(N), [N]),
-        x = n ?? S?.guild_id,
-        v = (0, l.bG)([_.A], () => _.A.getGuild(x), [x]),
+function S() {
+    let e, t = (0, l.zy)(),
+        n = (0, r.bG)([g.A], () => g.A.getGuildId()),
+        S = (0, r.bG)([m.A], () => m.A.getChannelId()),
+        N = (0, r.bG)([h.A], () => h.A.getChannel(S), [S]),
+        x = n ?? N?.guild_id,
+        v = (0, r.bG)([_.A], () => _.A.getGuild(x), [x]),
         b = (0, o.DZ)(),
         y = (0, A.lI)(),
         {
             application: O,
             isFrameInFocusedMode: L
-        } = (0, l.cf)([s.A, c.A], () => {
+        } = (0, r.cf)([s.A, c.A], () => {
             let e = c.A.getConnectedFrame();
             return {
                 application: s.A.getApplication(e?.applicationId),
@@ -64,7 +64,7 @@ function N() {
         size: u.Ay.Sizes.SMOL,
         active: !0,
         className: T.$f
-    })) : null != S && (S.isDM() || S.isGroupDM()) ? (e = f.intl.string(f.t.YUU0RF), P = (0, i.jsx)(a.pVd, {
+    })) : null != N && (N.isDM() || N.isGroupDM()) ? (e = f.intl.string(f.t.YUU0RF), P = (0, i.jsx)(a.pVd, {
         size: "sm"
     })) : t.pathname.startsWith(E.BVt.ICYMI) ? (e = f.intl.string(f.t["jnXV/V"]), P = (0, i.jsx)(a.gXB, {
         size: "sm"

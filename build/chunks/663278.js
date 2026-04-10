@@ -3,15 +3,15 @@ n.d(t, {
     MW: () => a,
     zw: () => s
 });
-var i, r = n(723702),
-    l = n(655087),
+var i, l = n(723702),
+    r = n(655087),
     a = ((i = {})[i.UNHANDLED = -1] = "UNHANDLED", i[i.NOMINAL = 0] = "NOMINAL", i[i.FAIR = 1] = "FAIR", i[i.SERIOUS = 2] = "SERIOUS", i[i.CRITICAL = 3] = "CRITICAL", i);
 
 function s() {
-    var e = l.A.getRawThermalState();
+    var e = r.A.getRawThermalState();
     if (null == e) return -1;
-    if ((0, r.isIOS)()) return e;
-    if (!(0, r.isAndroid)()) return -1;
+    if ((0, l.isIOS)()) return e;
+    if (!(0, l.isAndroid)()) return -1;
     switch (e) {
         case 0:
             return 0;

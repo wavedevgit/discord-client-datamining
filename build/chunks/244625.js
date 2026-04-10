@@ -3,8 +3,8 @@ n.d(t, {
     A: () => I
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(681154),
+    l = n(64700),
+    r = n(681154),
     a = n(311907),
     s = n(47167),
     o = n(713654),
@@ -22,7 +22,7 @@ var i = n(627968),
 function I(e) {
     let {
         item: t
-    } = e, n = r.useMemo(() => {
+    } = e, n = l.useMemo(() => {
         switch (t.data.kind) {
             case "message":
             case "guildEvent":
@@ -33,7 +33,7 @@ function I(e) {
             default:
                 return "unknown"
         }
-    }, [t]), I = r.useMemo(() => {
+    }, [t]), I = l.useMemo(() => {
         switch (t.data.kind) {
             case "message":
                 return t.data.message.channel_id;
@@ -42,14 +42,14 @@ function I(e) {
             default:
                 return
         }
-    }, [t]), f = r.useMemo(() => {
+    }, [t]), f = l.useMemo(() => {
         if ("guildEvent" === t.data.kind) {
             let e = c.Ay.getGuildScheduledEvent(t.data.eventId);
             return e?.guild_id
         }
-    }, [t]), C = r.useMemo(() => {
+    }, [t]), C = l.useMemo(() => {
         if ("contentInventory" === t.data.kind) return t.data.content.author_id
-    }, [t]), T = r.useMemo(() => {
+    }, [t]), T = l.useMemo(() => {
         switch (t.data.kind) {
             case "message":
             case "forumThread":
@@ -59,7 +59,7 @@ function I(e) {
             default:
                 return t.timestamp
         }
-    }, [t]), N = (0, a.bG)([A.A], () => A.A.getChannel(I), [I]), S = (0, s.Ay)(N), x = N?.guild_id ?? f, v = (0, a.bG)([h.A], () => null != x ? h.A.getGuild(x) : null, [x]), b = (0, a.bG)([_.default], () => null != C ? _.default.getUser(C) : null, [C]);
+    }, [t]), S = (0, a.bG)([A.A], () => A.A.getChannel(I), [I]), N = (0, s.Ay)(S), x = S?.guild_id ?? f, v = (0, a.bG)([h.A], () => null != x ? h.A.getGuild(x) : null, [x]), b = (0, a.bG)([_.default], () => null != C ? _.default.getUser(C) : null, [C]);
     return "unknown" === n ? null : (0, i.jsx)("div", {
         className: E.kL,
         children: (0, i.jsxs)("div", {
@@ -113,10 +113,10 @@ function I(e) {
                                 return p.intl.string(p.t.bYNuVx);
                             case "contentInventory":
                                 switch (t.data.content.content_type) {
-                                    case l.ContentInventoryEntryType.CUSTOM_STATUS:
+                                    case r.ContentInventoryEntryType.CUSTOM_STATUS:
                                         return p.intl.string(p.t.fxOLPR);
-                                    case l.ContentInventoryEntryType.TOP_GAME:
-                                    case l.ContentInventoryEntryType.PLAYED_GAME:
+                                    case r.ContentInventoryEntryType.TOP_GAME:
+                                    case r.ContentInventoryEntryType.PLAYED_GAME:
                                         return p.intl.string(p.t.ktOTRQ);
                                     default:
                                         return `${t.data.content.content_type}`
@@ -132,8 +132,8 @@ function I(e) {
                             children: e
                         })
                     });
-                    if (null != N && null != e) {
-                        let t = (0, o.gU)(N, v);
+                    if (null != S && null != e) {
+                        let t = (0, o.gU)(S, v);
                         return (0, i.jsxs)("div", {
                             className: E.VA,
                             children: [(0, i.jsx)("span", {
@@ -149,7 +149,7 @@ function I(e) {
                                     width: 16,
                                     height: 16,
                                     className: E.p
-                                }), S]
+                                }), N]
                             })]
                         })
                     }

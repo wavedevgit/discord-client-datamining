@@ -3,22 +3,22 @@ n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(397927),
     o = n(770178),
     d = n(652215),
     c = n(311401);
-let u = r.forwardRef(function(e, t) {
+let u = l.forwardRef(function(e, t) {
     let {
         topContent: n,
-        title: l,
+        title: r,
         subtitle: u,
         buttons: A,
         background: h,
         className: _
-    } = e, [m, g] = r.useState("display-lg"), p = r.useCallback(e => {
+    } = e, [m, g] = l.useState("display-lg"), p = l.useCallback(e => {
         g(e.contentRect.width < 500 ? "display-md" : "display-lg")
     }, []), E = (0, o.w)(p, [], {
         fireOnMount: !0
@@ -46,7 +46,7 @@ let u = r.forwardRef(function(e, t) {
                                 color: "text-strong",
                                 variant: m,
                                 className: c.DD,
-                                children: l
+                                children: r
                             }), (0, i.jsx)(s.Text, {
                                 color: "text-strong",
                                 variant: "text-md/normal",

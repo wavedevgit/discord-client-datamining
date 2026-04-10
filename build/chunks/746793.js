@@ -3,9 +3,9 @@ n.d(t, {
     A: () => O
 }), n(321073);
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(735438),
     o = n.n(s),
     d = n(311907),
@@ -22,12 +22,12 @@ var i = n(627968),
     f = n(437959),
     C = n(828184),
     T = n(723702),
-    N = n(837921),
-    S = n(902811),
+    S = n(837921),
+    N = n(902811),
     x = n(652215),
     v = n(985018),
     b = n(540528);
-class y extends r.PureComponent {
+class y extends l.PureComponent {
     videoRef = null;
     _noProblemsTimeout = null;
     _problemsTimeout = null;
@@ -125,19 +125,19 @@ class y extends r.PureComponent {
         let {
             ready: n,
             hide: i,
-            problems: r
+            problems: l
         } = this.state, {
-            connected: l,
+            connected: r,
             soundpack: a
-        } = this.props, s = l && n && !i && !r;
-        e.soundpack !== a && (this._connectedSound = this.createSound()), e.connected !== l || s ? (l && (0, E.D)(), l && null != this.videoRef && c.w.get(x.wqg) && this._connectedSound.play(), this.setState({
+        } = this.props, s = r && n && !i && !l;
+        e.soundpack !== a && (this._connectedSound = this.createSound()), e.connected !== r || s ? (r && (0, E.D)(), r && null != this.videoRef && c.w.get(x.wqg) && this._connectedSound.play(), this.setState({
             problems: !1,
-            hide: l
+            hide: r
         })) : t.hide !== i ? (i ? this.clearProblemsTimeout() : this.setProblemsTimeout(), this.setState({
             shouldRender: !0
         }), setTimeout(() => this.setState({
             shouldRender: !i
-        }), 200)) : t.problems !== r && r && A.A.checkIncidents()
+        }), 200)) : t.problems !== l && l && A.A.checkIncidents()
     }
     componentWillUnmount() {
         this.clearProblemsTimeout()
@@ -145,7 +145,7 @@ class y extends r.PureComponent {
     handleReady = () => {
         this.setState({
             ready: !0
-        }), (0, T.isDesktop)() && (N.Ay.send("UPDATED_QUOTES", ["Hold Tight — Loading Discord"]), N.Ay.send("UPDATE_OPEN_ON_STARTUP"))
+        }), (0, T.isDesktop)() && (S.Ay.send("UPDATED_QUOTES", ["Hold Tight — Loading Discord"]), S.Ay.send("UPDATE_OPEN_ON_STARTUP"))
     };
     setVideoRef = e => {
         this.videoRef = e
@@ -167,9 +167,9 @@ class y extends r.PureComponent {
         } = this.state;
         if (!this.state.shouldRender) return null;
         {
-            let r = this._loadingText,
-                l = null;
-            return null != this._eventLoadingText && (r = this._eventLoadingText), null != t && (r = t.name, l = t.incident_updates[0].body), (0, i.jsxs)("div", {
+            let l = this._loadingText,
+                r = null;
+            return null != this._eventLoadingText && (l = this._eventLoadingText), null != t && (l = t.name, r = t.incident_updates[0].body), (0, i.jsxs)("div", {
                 className: b.kL,
                 "data-fade": n,
                 style: {
@@ -178,7 +178,7 @@ class y extends r.PureComponent {
                 },
                 children: [(0, i.jsxs)("div", {
                     className: b.Qs,
-                    children: [(0, i.jsx)(S.A, {
+                    children: [(0, i.jsx)(N.A, {
                         autoPlay: !0,
                         loop: !e,
                         setRef: this.setVideoRef,
@@ -191,10 +191,10 @@ class y extends r.PureComponent {
                             children: v.intl.string(v.t.v0R1Lh)
                         }), (0, i.jsx)("div", {
                             className: null != t ? b.DD : b.uN,
-                            children: r
+                            children: l
                         }), (0, i.jsx)("div", {
                             className: b.rf,
-                            children: l
+                            children: r
                         })]
                     })]
                 }), (0, i.jsxs)("div", {
@@ -238,14 +238,14 @@ let O = d.Ay.connectStores([_.A, f.A, p.A, h.A], () => ({
     let {
         isTryingToConnect: t,
         connected: n,
-        incident: r,
-        soundpack: l,
+        incident: l,
+        soundpack: r,
         reducedMotion: a
     } = e;
     return t ? (0, i.jsx)(y, {
         reducedMotion: a,
-        soundpack: l,
+        soundpack: r,
         connected: n,
-        incident: r
+        incident: l
     }) : null
 })

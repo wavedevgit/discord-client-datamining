@@ -25,8 +25,8 @@ var i = n(627968),
     v = n(453384),
     b = n(201805),
     T = n(212614),
-    y = n(79545),
-    N = n(646764),
+    N = n(79545),
+    y = n(646764),
     S = n(398025),
     j = n(545986),
     L = n(654487),
@@ -57,7 +57,7 @@ function w(e) {
     }), H = (0, C.Ic)(t), V = (0, A.In)(t), q = (0, E.mq)(t.config), W = (0, E.mH)(t.config), Y = t.userStatus?.enrolledAt != null, z = t.userStatus?.completedAt != null, Q = t.userStatus?.claimedAt != null, K = (0, E.ks)(t.config), J = (0, E._Z)(t.config), {
         completedRatio: X,
         completedRatioDisplay: Z
-    } = (0, A.O9)(t), $ = (0, g.gj)(t, b, m.Ob.QuestEmbed, w), ee = (0, y.Pd)(t), et = l.useMemo(() => Q && K ? R.intl.format(R.t["8Op4c4"], {
+    } = (0, A.O9)(t), $ = (0, g.gj)(t, b, m.Ob.QuestEmbed, w), ee = (0, N.Pd)(t), et = l.useMemo(() => Q && K ? R.intl.format(R.t["8Op4c4"], {
         balanceHook: () => (0, i.jsxs)(O, {
             questId: t.id,
             children: [(0, i.jsx)(_.A, {
@@ -128,7 +128,7 @@ function w(e) {
                         size: 76,
                         percentComplete: X,
                         percentCompleteText: s && !H ? Z : void 0,
-                        children: (0, i.jsx)(N.A, {
+                        children: (0, i.jsx)(y.A, {
                             quest: t,
                             questContent: n,
                             autoplay: s,
@@ -137,7 +137,7 @@ function w(e) {
                             sourceQuestContent: b
                         })
                     })]
-                }) : (0, i.jsx)(N.A, {
+                }) : (0, i.jsx)(y.A, {
                     quest: t,
                     autoplay: s,
                     questContent: n,
@@ -193,9 +193,9 @@ function w(e) {
                     text: R.intl.string(R.t.LLLLPD),
                     fullWidth: !0,
                     onClick: el
-                }), er.enabled && (ee === y.UA.UNENROLLED || ee === y.UA.ENROLLED || ee === y.UA.INCOMPLETE) && er.enabledQuestStates.has(ee) ? (0, i.jsx)(T.A, {
+                }), er.enabled && (ee === N.UA.UNENROLLED || ee === N.UA.ENROLLED || ee === N.UA.INCOMPLETE) && er.enabledQuestStates.has(ee) ? (0, i.jsx)(T.A, {
                     quest: t,
-                    surface: y.V3.QUEST_EMBED,
+                    surface: N.V3.QUEST_EMBED,
                     analyticsCtxQuestContent: n,
                     analyticsCtxSourceQuestContent: b,
                     analyticsCtxQuestContentPosition: I

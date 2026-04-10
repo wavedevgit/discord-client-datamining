@@ -198,8 +198,8 @@ function P() {
             }
             return n
         }, [z, W, c, O, F.activeNowRows, F.dmRows, F.recentTextRows, P, I, V]),
-        X = l.useMemo(() => B.map(e => e.length), [B]),
-        Z = l.useCallback(e => {
+        Z = l.useMemo(() => B.map(e => e.length), [B]),
+        X = l.useCallback(e => {
             let t = B.findIndex(e => "FAVORITES" === e.kind);
             if (-1 === t) {
                 for (let t = 0; t < B.length; t += 1) {
@@ -228,7 +228,7 @@ function P() {
     (0, b.$)({
         scrollerRef: _,
         favoriteTargetIds: O,
-        getScrollTargetForTargetId: e => Z(e),
+        getScrollTargetForTargetId: e => X(e),
         getFallbackScrollTarget: K,
         padding: 8,
         animate: !1
@@ -241,7 +241,7 @@ function P() {
         }, [B]),
         {
             shownUserIds: q,
-            contentInventoryIds: Q
+            contentInventoryIds: J
         } = (0, a.bG)([], () => (function(e) {
             let t = new Set,
                 n = new Set;
@@ -265,14 +265,14 @@ function P() {
                 contentInventoryIds: n
             }
         })($), [$]),
-        J = (0, T.Dk)(() => q, [q]),
-        ee = (0, T.Dk)(() => Q, [Q]);
+        Q = (0, T.Dk)(() => q, [q]),
+        ee = (0, T.Dk)(() => J, [J]);
     l.useEffect(() => {
-        (0 !== J.size || 0 !== ee.size) && k({
-            shownUserIds: L(J),
+        (0 !== Q.size || 0 !== ee.size) && k({
+            shownUserIds: L(Q),
             contentInventoryIds: L(ee)
         })
-    }, [J, ee]);
+    }, [Q, ee]);
     let et = l.useCallback(e => B[e], [B]),
         en = l.useCallback(e => {
             let {
@@ -348,7 +348,7 @@ function P() {
                             sidebarHeight: 0,
                             renderSection: en,
                             renderRow: ei,
-                            sections: X,
+                            sections: Z,
                             paddingBottom: 8,
                             ...l,
                             ...e

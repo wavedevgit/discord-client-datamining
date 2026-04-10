@@ -3,9 +3,9 @@ n.d(t, {
     A: () => I
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(735438),
-    a = n.n(l),
+    l = n(64700),
+    r = n(735438),
+    a = n.n(r),
     s = n(311907),
     o = n(442433),
     d = n(504337),
@@ -17,7 +17,7 @@ var i = n(627968),
     m = n(901133),
     g = n(507133),
     p = n(985018);
-class E extends r.PureComponent {
+class E extends l.PureComponent {
     hasParty(e) {
         return e.length > 1
     }
@@ -65,11 +65,11 @@ class E extends r.PureComponent {
 let I = s.Ay.connectStores([c.A, h.default, A.A, u.A], () => {
     let e, t, n = c.A.getSyncingWith(),
         i = c.A.getActivity(),
-        r = h.default.getCurrentUser(),
-        l = [];
-    return null != n ? (e = h.default.getUser(n.userId), t = n.partyId) : null != i && null != i.party && null != i.party.id && (e = r, t = i.party.id), null != t && (l = a()(Array.from(u.A.getParty(t) ?? [])).map(e => h.default.getUser(e)).filter(_.Vq).orderBy([t => null == e || e.id === t.id, e => A.A.isFriend(e.id)], ["desc", "desc"]).value()), {
-        currentUser: r,
+        l = h.default.getCurrentUser(),
+        r = [];
+    return null != n ? (e = h.default.getUser(n.userId), t = n.partyId) : null != i && null != i.party && null != i.party.id && (e = l, t = i.party.id), null != t && (r = a()(Array.from(u.A.getParty(t) ?? [])).map(e => h.default.getUser(e)).filter(_.Vq).orderBy([t => null == e || e.id === t.id, e => A.A.isFriend(e.id)], ["desc", "desc"]).value()), {
+        currentUser: l,
         host: e,
-        party: l
+        party: r
     }
 })(E)

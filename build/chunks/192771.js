@@ -3,8 +3,8 @@ n.d(t, {
     A: () => C
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(311907),
+    l = n(64700),
+    r = n(311907),
     a = n(314116),
     s = n(397927),
     o = n(466472),
@@ -18,7 +18,7 @@ var i = n(627968),
     g = n(985018),
     p = n(672208),
     E = n(885106);
-class I extends r.PureComponent {
+class I extends l.PureComponent {
     state = {
         label: void 0,
         isDefault: null
@@ -82,8 +82,8 @@ class I extends r.PureComponent {
     renderViewing() {
         let e, t, {
             path: n,
-            label: r,
-            editingPath: l,
+            label: l,
+            editingPath: r,
             isDefault: a,
             metadata: o
         } = this.props;
@@ -102,7 +102,7 @@ class I extends r.PureComponent {
                     children: [(0, i.jsx)(s.Heading, {
                         className: p.nM,
                         variant: "heading-md/semibold",
-                        children: null != r ? r : A.A.getLabelFromPath(n)
+                        children: null != l ? l : A.A.getLabelFromPath(n)
                     }), a ? (0, i.jsx)("span", {
                         className: p.Zn,
                         children: g.intl.string(g.t.bBvAEH)
@@ -123,7 +123,7 @@ class I extends r.PureComponent {
                 variant: "secondary",
                 size: "sm",
                 text: g.intl.string(g.t.bt75uw),
-                disabled: null != l,
+                disabled: null != r,
                 onClick: this.handleStartEditing
             })]
         })
@@ -134,7 +134,7 @@ class I extends r.PureComponent {
             hasGamesInstalledInPath: t
         } = this.props, {
             label: n,
-            isDefault: r
+            isDefault: l
         } = this.state;
         return (0, i.jsx)(s.ZpM, {
             editable: !0,
@@ -156,7 +156,7 @@ class I extends r.PureComponent {
                     }), (0, i.jsx)("div", {
                         className: p.gZ,
                         children: (0, i.jsx)(s.Checkbox, {
-                            checked: null != r ? r : this.props.isDefault,
+                            checked: null != l ? l : this.props.isDefault,
                             disabled: this.props.isDefault,
                             onChange: this.handleToggleDefault,
                             label: g.intl.string(g.t.Z2MWuH)
@@ -182,7 +182,7 @@ class I extends r.PureComponent {
                                     variant: "active",
                                     size: "sm",
                                     text: g.intl.string(g.t["R3BPH+"]),
-                                    disabled: e === this.props.path && n === this.props.label && r === this.props.isDefault,
+                                    disabled: e === this.props.path && n === this.props.label && l === this.props.isDefault,
                                     onClick: this.handleSaveChanges
                                 })]
                             })
@@ -196,7 +196,7 @@ class I extends r.PureComponent {
         return this.props.editingPath === this.props.path ? this.renderEditing() : this.renderViewing()
     }
 }
-class f extends r.PureComponent {
+class f extends l.PureComponent {
     state = {
         editingPath: null
     };
@@ -224,7 +224,7 @@ class f extends r.PureComponent {
             installationPathsMetadata: t,
             defaultInstallationPath: n
         } = this.props, {
-            editingPath: r
+            editingPath: l
         } = this.state;
         return (0, i.jsx)("div", {
             className: p.iE,
@@ -232,18 +232,18 @@ class f extends r.PureComponent {
                 label: g.intl.string(g.t.aLszkC),
                 children: [e.map(e => {
                     let {
-                        path: l,
+                        path: r,
                         label: a
                     } = e;
                     return (0, i.jsx)(I, {
-                        path: l,
+                        path: r,
                         label: a,
-                        metadata: t[l],
-                        isDefault: n === l,
-                        editingPath: r,
-                        hasGamesInstalledInPath: A.A.hasGamesInstalledInPath(l),
+                        metadata: t[r],
+                        isDefault: n === r,
+                        editingPath: l,
+                        hasGamesInstalledInPath: A.A.hasGamesInstalledInPath(r),
                         onToggleEditing: this.handleToggleEditing
-                    }, l)
+                    }, r)
                 }), (0, i.jsx)("div", {
                     className: p.sW,
                     children: (0, i.jsx)(s.Button, {
@@ -258,7 +258,7 @@ class f extends r.PureComponent {
         })
     }
 }
-let C = l.Ay.connectStores([A.A], () => ({
+let C = r.Ay.connectStores([A.A], () => ({
     installationPaths: A.A.installationPaths,
     installationPathsMetadata: A.A.installationPathsMetadata,
     defaultInstallationPath: A.A.defaultInstallationPath

@@ -130,16 +130,16 @@ function H(e) {
     let W = (0, w.b)(),
         {
             searchQuery: B,
-            setSearchQuery: X,
-            clearSearch: Z,
+            setSearchQuery: Z,
+            clearSearch: X,
             ...K
         } = (0, w.n)(W),
         {
             showSuggestions: $,
             setShowSuggestions: q
         } = (0, C.A)(),
-        Q = B.trim().length > 0,
-        J = l.useMemo(() => K.groups.filter(e => e.users.length > 0), [K.groups]),
+        J = B.trim().length > 0,
+        Q = l.useMemo(() => K.groups.filter(e => e.users.length > 0), [K.groups]),
         ee = l.useMemo(() => W.groups.map(e => e.id), [W.groups]),
         {
             draggedGroupId: et,
@@ -148,7 +148,7 @@ function H(e) {
             getDragHandleProps: el
         } = (0, O.s)({
             groupIds: ee,
-            isDisabled: Q,
+            isDisabled: J,
             onCommitNewOrder: f.A.reorderGroups
         }),
         [er, es] = (0, u.bG)([D.A], () => D.A.getFavoriteTargetIdsForTab(x.x.FRIENDS), [], _.D),
@@ -182,7 +182,7 @@ function H(e) {
             })
         }, [ea, B]),
         ed = es > 0 && eu.length > 0,
-        ec = !ed && 0 === J.length && 0 === K.friendRequests.length && (!$ || 0 === K.suggestions.length) && 0 === K.sameActivity.length && 0 === K.inGame.length && 0 === K.activities.length && 0 === K.online.length && 0 === K.offline.length,
+        ec = !ed && 0 === Q.length && 0 === K.friendRequests.length && (!$ || 0 === K.suggestions.length) && 0 === K.sameActivity.length && 0 === K.inGame.length && 0 === K.activities.length && 0 === K.online.length && 0 === K.offline.length,
         eh = (0, u.bG)([y.A], () => y.A.getCollapsedSectionOverridesForTab(x.x.FRIENDS), []),
         eg = l.useRef(null),
         em = (0, g.A)("friends-popout", eg),
@@ -205,11 +205,11 @@ function H(e) {
             trailing: !1
         }), [t]),
         ep = l.useCallback(e => {
-            X(e), eE(), eg.current?.scrollToTop()
-        }, [X, eE]),
-        e_ = l.useCallback(() => {
-            Z(), eE(), eg.current?.scrollToTop()
+            Z(e), eE(), eg.current?.scrollToTop()
         }, [Z, eE]),
+        e_ = l.useCallback(() => {
+            X(), eE(), eg.current?.scrollToTop()
+        }, [X, eE]),
         eS = l.useMemo(() => {
             let e = e => {
                 let t = A.A.getStatus(e);
@@ -249,7 +249,7 @@ function H(e) {
                     length: Math.max(n.length, 1)
                 })
             }
-            for (let n of J) {
+            for (let n of Q) {
                 let i = `GROUP:${n.id}`,
                     l = n.users,
                     r = eA(i) ? l.filter(t => !e(t.user.id)) : l;
@@ -336,7 +336,7 @@ function H(e) {
                 })
             }
             return t
-        }, [eA, K.friendRequests, J, K.sameActivity, K.activities, K.inGame, K.suggestions, K.online, K.offline, W.currentActivityName, ec, $, ed, eu]),
+        }, [eA, K.friendRequests, Q, K.sameActivity, K.activities, K.inGame, K.suggestions, K.online, K.offline, W.currentActivityName, ec, $, ed, eu]),
         ex = l.useCallback(e => eS[e], [eS]),
         eT = l.useCallback(e => {
             let {
@@ -369,7 +369,7 @@ function H(e) {
                     isCollapsed: r,
                     onToggle: () => ef(l.key),
                     onContextMenu: h,
-                    isReorderDisabled: Q,
+                    isReorderDisabled: J,
                     draggedGroupId: et,
                     dropTargetGroupId: en,
                     dropTargetPosition: ei,
@@ -394,7 +394,7 @@ function H(e) {
                     }) : null
                 })]
             })
-        }, [ex, eA, ef, Q, et, en, ei, el, eI, n]),
+        }, [ex, eA, ef, J, et, en, ei, el, eI, n]),
         eN = l.useCallback(e => {
             let l;
             if (ec) return (0, i.jsx)("div", {

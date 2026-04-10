@@ -1,11 +1,11 @@
 /** chunk id: 569475 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => r
 });
 var i = n(933958),
-    r = n(734057);
+    l = n(734057);
 
-function l() {
+function r() {
     let e = i.Ay.getConnectedActivityChannelId();
-    return r.A.getChannel(e)
+    return l.A.getChannel(e)
 }

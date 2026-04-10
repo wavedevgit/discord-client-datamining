@@ -3,9 +3,9 @@ n.d(t, {
     A: () => w
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(311907),
     o = n(397927),
     d = n(409626),
@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(710969),
     C = n(814793),
     T = n(73473),
-    N = n(270045),
-    S = n(201805),
+    S = n(270045),
+    N = n(201805),
     x = n(212614),
     v = n(79545),
     b = n(847641),
@@ -37,7 +37,7 @@ var i = n(627968),
 function j(e) {
     let {
         quest: t
-    } = e, n = (0, g.S5)(t.config.expiresAt), r = (0, g.S5)(t.config.rewardsConfig.rewardsExpireAt), l = (0, s.bG)([c.A], () => c.A.getState().theme), a = (0, o.Mwr)(l) ? R.NJ8.DARK : R.NJ8.LIGHT, d = t.userStatus?.completedAt != null;
+    } = e, n = (0, g.S5)(t.config.expiresAt), l = (0, g.S5)(t.config.rewardsConfig.rewardsExpireAt), r = (0, s.bG)([c.A], () => c.A.getState().theme), a = (0, o.Mwr)(r) ? R.NJ8.DARK : R.NJ8.LIGHT, d = t.userStatus?.completedAt != null;
     return (0, i.jsxs)("div", {
         className: D.R_,
         children: [(0, i.jsx)("img", {
@@ -56,7 +56,7 @@ function j(e) {
                 variant: "text-xs/normal",
                 color: "text-default",
                 children: d ? P.intl.formatToPlainString(P.t.APddvF, {
-                    expirationDate: r
+                    expirationDate: l
                 }) : P.intl.formatToPlainString(P.t["pX+fmn"], {
                     expirationDate: n
                 })
@@ -69,20 +69,20 @@ function M(e) {
     let {
         nodeRef: t,
         quest: n
-    } = e, l = (0, E.Ut)(), c = (0, s.bG)([A.A], () => A.A.isEnrolling(n.id), [n]), [p, T] = r.useState(!1), R = r.useCallback(() => T(!0), []), M = r.useCallback(() => T(!1), []), {
+    } = e, r = (0, E.Ut)(), c = (0, s.bG)([A.A], () => A.A.isEnrolling(n.id), [n]), [p, T] = l.useState(!1), R = l.useCallback(() => T(!0), []), M = l.useCallback(() => T(!1), []), {
         launchInGameActivity: w
     } = (0, g.zW)(n), U = _.t.useConfig({
         location: L.rE.ACTIVITY_PANEL
-    }), G = (0, v.Pd)(n), k = r.useCallback(e => {
+    }), G = (0, v.Pd)(n), k = l.useCallback(e => {
         e.stopPropagation()
-    }, []), V = r.useCallback(() => {
+    }, []), V = l.useCallback(() => {
         (0, u.Oy)(n.id, {
             questContent: h.uF.ACTIVITY_PANEL,
             questContentCTA: I.Cy.ACCEPT_QUEST,
             sourceQuestContent: h.uF.ACTIVITY_PANEL
         }), (0, C.vA)(n) && w()
-    }, [n, w]), B = r.useCallback(() => {
-        null != n && (l({
+    }, [n, w]), B = l.useCallback(() => {
+        null != n && (r({
             questId: n.id,
             questContent: h.uF.ACTIVITY_PANEL,
             questContentCTA: I.Cy.TRACK_PROGRESS,
@@ -91,8 +91,8 @@ function M(e) {
             fromContent: h.uF.ACTIVITY_PANEL,
             questId: n.id
         }))
-    }, [n, l]), H = r.useCallback(() => {
-        l({
+    }, [n, r]), H = l.useCallback(() => {
+        r({
             questId: n.id,
             questContent: h.uF.ACTIVITY_PANEL,
             questContentCTA: I.Cy.LEARN_MORE,
@@ -101,7 +101,7 @@ function M(e) {
             fromContent: h.uF.ACTIVITY_PANEL,
             questId: n.id
         })
-    }, [n.id, l]), F = (0, S.ix)({
+    }, [n.id, r]), F = (0, N.ix)({
         quest: n,
         questContent: h.uF.ACTIVITY_PANEL,
         sourceQuestContent: h.uF.ACTIVITY_PANEL
@@ -125,7 +125,7 @@ function M(e) {
             className: D.Wp,
             children: [Y ? (0, i.jsx)(j, {
                 quest: n
-            }) : (0, i.jsx)(b.A, {}), (0, i.jsx)(N.C, {
+            }) : (0, i.jsx)(b.A, {}), (0, i.jsx)(S.C, {
                 quest: n,
                 questContent: h.uF.ACTIVITY_PANEL,
                 shouldShowDisclosure: n.userStatus?.enrolledAt == null,

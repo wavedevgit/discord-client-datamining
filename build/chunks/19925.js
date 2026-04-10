@@ -4,8 +4,8 @@ n.d(t, {
     X: () => _
 });
 var i = n(64700),
-    r = n(311907),
-    l = n(449054),
+    l = n(311907),
+    r = n(449054),
     a = n(417426),
     s = n(747550),
     o = n(351022),
@@ -17,17 +17,17 @@ var i = n(64700),
 function h(e) {
     let {
         loadId: t
-    } = e, n = d.A.useField("fetchedQuery"), l = d.A.useField("categoryId"), a = d.A.useField("languageCode"), c = i.useMemo(() => ({
-        categoryId: l,
+    } = e, n = d.A.useField("fetchedQuery"), r = d.A.useField("categoryId"), a = d.A.useField("languageCode"), c = i.useMemo(() => ({
+        categoryId: r,
         query: n,
         languageCode: a
-    }), [l, a, n]), u = (0, r.bG)([o.A], () => o.A.getGuildIds(c) ?? A.VX), h = (0, r.bG)([o.A], () => o.A.getIsFetching(c) ?? !1), _ = d.A.useField("resultsQuery"), m = _ !== n, g = i.useCallback(() => {
+    }), [r, a, n]), u = (0, l.bG)([o.A], () => o.A.getGuildIds(c) ?? A.VX), h = (0, l.bG)([o.A], () => o.A.getIsFetching(c) ?? !1), _ = d.A.useField("resultsQuery"), m = _ !== n, g = i.useCallback(() => {
         let e = o.A.getGuildIds(c),
             n = o.A.getTotal(c);
         if (null == e || null == n) return;
         let i = o.A.getIsFetching(c),
-            r = o.A.getIsInitialFetchComplete(c);
-        i || !r || e.length >= n || s.A.loadMoreCategoryResults({
+            l = o.A.getIsInitialFetchComplete(c);
+        i || !l || e.length >= n || s.A.loadMoreCategoryResults({
             loadId: t,
             offset: e.length,
             categoryId: d.A.getField("categoryId"),
@@ -40,14 +40,14 @@ function h(e) {
         loading: m || h,
         searchResultsQuery: _,
         loadMore: g,
-        searchCategoryId: l
-    }), [u, m, h, _, g, l])
+        searchCategoryId: r
+    }), [u, m, h, _, g, r])
 }
 
 function _(e) {
     let {
         loadId: t
-    } = e, n = u.A.useField("isSearchVisible"), r = d.A.useField("query");
+    } = e, n = u.A.useField("isSearchVisible"), l = d.A.useField("query");
     i.useEffect(() => {
         (0, c.Mu)()
     }, []);
@@ -57,10 +57,10 @@ function _(e) {
         })
     }, []);
     return {
-        searchQuery: r,
+        searchQuery: l,
         onSearchTextChange: o,
         onClearSearch: i.useCallback(() => {
-            l.gp(t), a.A.clearSearchResults(), a.A.resetSearchLayout(), d.A.setState({
+            r.gp(t), a.A.clearSearchResults(), a.A.resetSearchLayout(), d.A.setState({
                 query: "",
                 fetchedQuery: "",
                 resultsQuery: "",
@@ -77,14 +77,14 @@ function _(e) {
             if ("" === e.trim() || e === n) return;
             a.A.clearSearchResults();
             let i = d.A.getField("languageCode"),
-                r = d.A.getField("categoryId");
+                l = d.A.getField("categoryId");
             d.A.setState({
-                resultsInitialCategoryId: r
+                resultsInitialCategoryId: l
             }), u.A.setState({
                 isSearchVisible: !0
             }), s.A.loadCategoryResultsAndCounts({
                 loadId: t,
-                categoryId: r,
+                categoryId: l,
                 query: e,
                 languageCode: i
             })

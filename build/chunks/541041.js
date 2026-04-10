@@ -3,8 +3,8 @@ n.d(t, {
     A: () => _
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(311907),
+    l = n(64700),
+    r = n(311907),
     a = n(926466),
     s = n(509536),
     o = n(498642),
@@ -12,7 +12,7 @@ var i = n(627968),
     c = n(49999),
     u = n(985018),
     A = n(98100);
-class h extends r.PureComponent {
+class h extends l.PureComponent {
     handleButtonClick = () => {
         let {
             guild: e
@@ -44,7 +44,7 @@ class h extends r.PureComponent {
         })
     }
 }
-let _ = l.Ay.connectStores([o.A], e => {
+let _ = r.Ay.connectStores([o.A], e => {
     let {
         guild: t
     } = e;

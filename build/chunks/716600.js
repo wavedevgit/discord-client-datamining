@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(934551),
-    l = n(232582),
+var l = n(934551),
+    r = n(232582),
     a = n(732955),
     s = n(397927),
     o = n(954571),
@@ -26,12 +26,12 @@ function _(e) {
         isLightTheme: E
     } = e, I = `AnnouncementModalVariant1_${t}`, {
         onClose: f
-    } = m, C = _.button?.copy ?? A.intl.string(A.t.YScQSF), T = _.button?.buttonAction === l.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", N = (0, c.h)({
+    } = m, C = _.button?.copy ?? A.intl.string(A.t.YScQSF), T = _.button?.buttonAction === r.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", S = (0, c.h)({
         buttonAction: _.button?.buttonAction,
         analyticsLocations: g,
         analyticsLocation: p,
         onClose: f
-    }), S = "" !== _.helpArticleId ? () => (0, i.jsxs)(i.Fragment, {
+    }), N = "" !== _.helpArticleId ? () => (0, i.jsxs)(i.Fragment, {
         children: ["\xa0", (0, i.jsx)(s.MzZ, {
             className: h.$T,
             href: d.A.getArticleURL(_.helpArticleId),
@@ -61,7 +61,7 @@ function _(e) {
         header: _.header,
         modalTopPill: _.modalTopPill,
         subHeader: _.subheader,
-        subHeaderExtra: S,
+        subHeaderExtra: N,
         body: _.body,
         heroArt: b,
         featureCards: _.featureCards.map(e => ({
@@ -82,10 +82,10 @@ function _(e) {
                         cta_type: T,
                         seconds_open: Math.round((Date.now() - e) / 1e3),
                         target: I
-                    }), N()
+                    }), S()
                 },
                 text: C,
-                icon: r.NitroWheelIcon
+                icon: l.NitroWheelIcon
             })
         },
         disclaimer: _.disclaimer?.disclaimerText !== "" ? _.disclaimer?.disclaimerText : void 0,

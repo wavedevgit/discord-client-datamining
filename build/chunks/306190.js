@@ -3,8 +3,8 @@ n.d(t, {
     A: () => p
 }), n(667532);
 var i = n(627968),
-    r = n(64700),
-    l = n(311907),
+    l = n(64700),
+    r = n(311907),
     a = n(397927),
     s = n(416052),
     o = n(240248),
@@ -22,8 +22,8 @@ let p = function(e) {
         setQuestId: n,
         quest: p,
         refreshQuest: E
-    } = e, [I, f] = r.useState(!1), [C, T] = r.useState(!1), N = r.useRef(null), S = (0, u.pT)(), x = (0, l.bG)([c.A], () => null != t ? c.A.getFetchQuestPreviewError(t) : null, [t]), v = (0, l.bG)([c.A], () => null != t && c.A.isFetchingQuestPreview(t), [t]), b = r.useMemo(() => {
-        let e = S.map(e => ({
+    } = e, [I, f] = l.useState(!1), [C, T] = l.useState(!1), S = l.useRef(null), N = (0, u.pT)(), x = (0, r.bG)([c.A], () => null != t ? c.A.getFetchQuestPreviewError(t) : null, [t]), v = (0, r.bG)([c.A], () => null != t && c.A.isFetchingQuestPreview(t), [t]), b = l.useMemo(() => {
+        let e = N.map(e => ({
             id: e.id,
             label: `${e.config?.messages?.questName??e.id} (${e.id})`,
             value: e.id
@@ -33,7 +33,7 @@ let p = function(e) {
             label: t,
             value: t
         }), e
-    }, [S, t]), y = r.useCallback(async () => {
+    }, [N, t]), y = l.useCallback(async () => {
         if (null != t) {
             f(!0);
             try {
@@ -42,7 +42,7 @@ let p = function(e) {
                 f(!1)
             }
         }
-    }, [t, f]), O = r.useCallback(async () => {
+    }, [t, f]), O = l.useCallback(async () => {
         if (null != t) {
             f(!0);
             try {
@@ -51,7 +51,7 @@ let p = function(e) {
                 f(!1)
             }
         }
-    }, [t, f]), L = r.useCallback(async () => {
+    }, [t, f]), L = l.useCallback(async () => {
         if (null != t) {
             f(!0);
             try {
@@ -61,7 +61,7 @@ let p = function(e) {
                 f(!1)
             }
         }
-    }, [t, f]), R = r.useCallback(e => {
+    }, [t, f]), R = l.useCallback(e => {
         (0, o.uJ)(e) || null == n || n(e)
     }, [n]);
     return (0, i.jsxs)("div", {
@@ -122,7 +122,7 @@ let p = function(e) {
                     variant: "secondary",
                     text: m.intl.string(m.t.cKSLr4)
                 }), (0, i.jsx)(a.YNO, {
-                    targetElementRef: N,
+                    targetElementRef: S,
                     shouldShow: C,
                     onRequestClose: () => T(!1),
                     position: "bottom",
@@ -138,7 +138,7 @@ let p = function(e) {
                         })
                     }),
                     children: () => (0, i.jsx)(a.K0, {
-                        buttonRef: N,
+                        buttonRef: S,
                         onClick: () => T(!C),
                         "aria-label": m.intl.string(m.t.rNGQfD),
                         icon: a.TdU,

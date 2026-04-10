@@ -3,8 +3,8 @@ n.d(t, {
     A: () => A
 });
 var i = n(311907),
-    r = n(73153),
-    l = n(891540),
+    l = n(73153),
+    r = n(891540),
     a = n(71393),
     s = n(652215);
 let o = !1;
@@ -20,13 +20,13 @@ function c() {
 class u extends i.Ay.Store {
     static displayName = "HubLinkNoticeStore";
     initialize() {
-        this.waitFor(a.A, l.A), this.syncWith([l.A], c)
+        this.waitFor(a.A, r.A), this.syncWith([r.A], c)
     }
     channelNoticePredicate(e) {
         return !!e.features.has(s.GuildFeatures.LINKED_TO_HUB) && !o
     }
 }
-let A = new u(r.h, {
+let A = new u(l.h, {
     CONNECTION_OPEN: function(e) {
         for (let t of e.guilds)
             if (d(t.id)) return !0;

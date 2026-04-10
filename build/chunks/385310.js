@@ -3,8 +3,8 @@ n.d(t, {
     A: () => h
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(311907),
+    l = n(64700),
+    r = n(311907),
     a = n(990078),
     s = n(397927),
     o = n(624458),
@@ -21,11 +21,11 @@ let h = e => {
         onWithdrawApplication: m,
         rejectionReason: g = null,
         guild: p = null
-    } = e, E = (0, l.bG)([d.A], () => d.A.getCooldown(p?.id ?? "0")), {
+    } = e, E = (0, r.bG)([d.A], () => d.A.getCooldown(p?.id ?? "0")), {
         canReapply: I,
         isLoading: f
     } = (0, c.f)(p?.id);
-    r.useEffect(() => {
+    l.useEffect(() => {
         null == E && null != p && o.A.fetchJoinRequestCooldown(p.id)
     }, [E, p]);
     let C = (E ?? 0) > 0,

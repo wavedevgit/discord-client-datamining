@@ -3,9 +3,9 @@ n.d(t, {
     A: () => x
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(696292),
     o = n(397927),
     d = n(881615),
@@ -22,12 +22,12 @@ var i = n(627968),
     f = n(652215),
     C = n(654487),
     T = n(985018),
-    N = n(404260);
+    S = n(404260);
 
-function S(e) {
+function N(e) {
     let {
         tab: t
-    } = e, n = g.A.useField("selectedTab"), l = r.useMemo(() => (function(e) {
+    } = e, n = g.A.useField("selectedTab"), r = l.useMemo(() => (function(e) {
         switch (e) {
             case I.GlobalDiscoveryTab.SERVERS:
                 return (0, i.jsx)(o.RR9, {
@@ -42,10 +42,10 @@ function S(e) {
                     color: "currentColor"
                 })
         }
-    })(t), [t]), T = r.useMemo(() => (0, p.t)(t), [t]), S = n === t, x = r.useCallback(() => {
+    })(t), [t]), T = l.useMemo(() => (0, p.t)(t), [t]), N = n === t, x = l.useCallback(() => {
         switch (t) {
             case I.GlobalDiscoveryTab.QUESTS:
-                return S && _.A.resetState(), m.default.track(f.HAw.DISCOVERY_QUEST_TAB_CLICKED, {
+                return N && _.A.resetState(), m.default.track(f.HAw.DISCOVERY_QUEST_TAB_CLICKED, {
                     client_ad_session_id: (0, d.sN)().uuid
                 }), (0, E.transitionToGlobalDiscovery)({
                     tab: I.GlobalDiscoveryTab.QUESTS,
@@ -53,7 +53,7 @@ function S(e) {
                     questContent: s.u.DISCOVERY_SIDEBAR
                 });
             case I.GlobalDiscoveryTab.APPS:
-                if (!S) return (0, E.transitionToGlobalDiscovery)({
+                if (!N) return (0, E.transitionToGlobalDiscovery)({
                     tab: t,
                     newSessionState: {
                         entrypoint: {
@@ -67,7 +67,7 @@ function S(e) {
                 });
                 return;
             case I.GlobalDiscoveryTab.SERVERS:
-                if (!S) return (0, E.transitionToGlobalDiscovery)({
+                if (!N) return (0, E.transitionToGlobalDiscovery)({
                     tab: t
                 });
                 A.A.resetState(), h.A.resetState();
@@ -77,15 +77,15 @@ function S(e) {
                     tab: t
                 })
         }
-    }, [t, S]);
+    }, [t, N]);
     return (0, i.jsxs)(o.DUT, {
         onClick: x,
-        className: a()(N.pc, {
-            [N.wH]: S
+        className: a()(S.pc, {
+            [S.wH]: N
         }),
         children: [(0, i.jsx)("div", {
-            className: N.wz,
-            children: l
+            className: S.wz,
+            children: r
         }), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "none",
@@ -95,16 +95,16 @@ function S(e) {
 }
 let x = function() {
     return (0, i.jsxs)("div", {
-        className: N.kL,
+        className: S.kL,
         children: [(0, i.jsx)("div", {
-            className: N.wx,
+            className: S.wx,
             children: (0, i.jsx)(o.Heading, {
                 variant: "text-lg/semibold",
                 children: T.intl.string(T.t["1KqYnl"])
             })
         }), (0, i.jsx)("nav", {
-            className: N.C$,
-            children: I.GLOBAL_DISCOVERY_TABS.map(e => (0, i.jsx)(S, {
+            className: S.C$,
+            children: I.GLOBAL_DISCOVERY_TABS.map(e => (0, i.jsx)(N, {
                 tab: e
             }, e))
         })]

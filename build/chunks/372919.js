@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(179771),
-    l = n(420970),
+var l = n(179771),
+    r = n(420970),
     a = n(397927),
     s = n(308368),
     o = n(298990),
@@ -23,8 +23,8 @@ var r = n(179771),
     f = n(869146),
     C = n(383233),
     T = n(734057),
-    N = n(375492),
-    S = n(461213),
+    S = n(375492),
+    N = n(461213),
     x = n(531685),
     v = n(403362),
     b = n(661191),
@@ -40,17 +40,17 @@ var r = n(179771),
     U = n(652215),
     G = n(360469);
 async function k(e, t, n, i) {
-    let r = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : "",
-        l = N.A.getApplicationActivity(t);
-    if (null == l || null == l.secrets || !(0, R.px)(i, l.party, l.secrets)) throw new L.A({
+    let l = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : "",
+        r = S.A.getApplicationActivity(t);
+    if (null == r || null == r.secrets || !(0, R.px)(i, r.party, r.secrets)) throw new L.A({
         errorCode: U.Lw6.NO_ELIGIBLE_ACTIVITY
     }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
-    let a = (0, m.A)(l, S.A);
+    let a = (0, m.A)(r, N.A);
     if (a) {
         let {
             lock: t
         } = (0, M.d5)(e);
-        return (0, o.qf)(l, a).then(() => {
+        return (0, o.qf)(r, a).then(() => {
             throw t(), new L.A({
                 errorCode: U.Lw6.NO_ELIGIBLE_ACTIVITY
             }, "No eligible activity for application. Ensure user does have have privacy enabled.")
@@ -59,15 +59,15 @@ async function k(e, t, n, i) {
     await s.A.sendActivityInviteUser({
         userId: n,
         type: i,
-        activity: l,
-        content: r,
+        activity: r,
+        content: l,
         location: "In-Game Invite"
     })
 }
 let V = {
     [U.e$_.SEND_ACTIVITY_JOIN_INVITE]: {
         scope: {
-            [w.sm.ANY]: [r.F.RPC, w.hj]
+            [w.sm.ANY]: [l.F.RPC, w.hj]
         },
         handler(e) {
             let {
@@ -76,16 +76,16 @@ let V = {
                     user_id: n,
                     pid: i
                 }
-            } = e, r = t.application.id;
-            if (null == r) throw new L.A({
+            } = e, l = t.application.id;
+            if (null == l) throw new L.A({
                 errorCode: U.Lw6.INVALID_COMMAND
             }, "No application.");
-            return k(i, r, n, U.xL.JOIN)
+            return k(i, l, n, U.xL.JOIN)
         }
     },
     [U.e$_.CLOSE_ACTIVITY_JOIN_REQUEST]: {
         scope: {
-            [w.sm.ANY]: [r.F.RPC, w.hj]
+            [w.sm.ANY]: [l.F.RPC, w.hj]
         },
         handler(e) {
             let {
@@ -102,7 +102,7 @@ let V = {
     },
     [U.e$_.ACTIVITY_INVITE_USER]: {
         scope: {
-            [w.sm.ANY]: [r.F.RPC, w.hj]
+            [w.sm.ANY]: [l.F.RPC, w.hj]
         },
         validation: e => (0, P.A)(e).required().keys({
             user_id: e.string().required(),
@@ -116,19 +116,19 @@ let V = {
                 args: {
                     type: n,
                     user_id: i,
-                    content: r,
-                    pid: l
+                    content: l,
+                    pid: r
                 }
             } = e, a = t.application.id;
             if (null == a) throw new L.A({
                 errorCode: U.Lw6.INVALID_COMMAND
             }, "No application.");
-            return k(l, a, i, n, r)
+            return k(r, a, i, n, l)
         }
     },
     [U.e$_.ACCEPT_ACTIVITY_INVITE]: {
         scope: {
-            [w.sm.ANY]: [r.F.RPC, w.hj]
+            [w.sm.ANY]: [l.F.RPC, w.hj]
         },
         validation: e => (0, P.A)(e).required().keys({
             type: e.number().required().valid([U.xL.JOIN]),
@@ -144,8 +144,8 @@ let V = {
                 args: {
                     type: n,
                     user_id: i,
-                    session_id: r,
-                    channel_id: l,
+                    session_id: l,
+                    channel_id: r,
                     message_id: a,
                     application_id: s
                 }
@@ -156,9 +156,9 @@ let V = {
             let c = Promise.resolve(!1);
             return n === U.xL.JOIN && (c = d.Ay.join({
                 userId: i,
-                sessionId: r,
+                sessionId: l,
                 applicationId: o,
-                channelId: l,
+                channelId: r,
                 messageId: a
             })), c.then(e => {
                 if (!e) throw new L.A({
@@ -169,30 +169,30 @@ let V = {
     },
     [U.e$_.OPEN_INVITE_DIALOG]: {
         scope: {
-            [w.sm.ANY]: [r.F.RPC, w.hj, w.VH]
+            [w.sm.ANY]: [l.F.RPC, w.hj, w.VH]
         },
         handler(e) {
             let {
                 socket: t
-            } = e, r = t.application;
-            if (null == r.id) throw new L.A({
+            } = e, l = t.application;
+            if (null == l.id) throw new L.A({
                 errorCode: U.Lw6.INVALID_COMMAND
             }, "No application.");
             let {
-                channel: l,
+                channel: r,
                 guild: s,
                 frame: d
             } = (0, j.W)(), c = (0, _.Ay)({
                 application: t.application,
-                channelId: l?.id
+                channelId: r?.id
             }), u = null != c ? f.A.getWindow(c) : void 0;
             u?.closed && (u = void 0);
             let A = null != u ? U.BRT.POPOUT : U.BRT.APP;
             if ((0, O.sP)({}, u?.document), null != d) {
-                if (d.applicationId !== r.id) throw new L.A({
+                if (d.applicationId !== l.id) throw new L.A({
                     errorCode: U.Lw6.INVALID_COMMAND
                 }, "Application is not currently mounted.");
-                let e = N.A.getApplicationActivity(r.id);
+                let e = S.A.getApplicationActivity(l.id);
                 if (null != e)(0, o.qf)(e, !1, A);
                 else throw new L.A({
                     errorCode: U.Lw6.NO_ELIGIBLE_ACTIVITY
@@ -204,8 +204,8 @@ let V = {
                 return t => (0, i.jsx)(e, {
                     ...t,
                     guild: s,
-                    channel: l,
-                    applicationId: r.id,
+                    channel: r,
+                    applicationId: l.id,
                     analyticsLocation: U.ThZ.ACTIVITY_RPC,
                     source: U.PE1.ACTIVITY_INVITE
                 })
@@ -214,9 +214,9 @@ let V = {
             })
         }
     },
-    [U.e$_.INITIATE_IMAGE_UPLOAD]: (0, l.T)(U.e$_.INITIATE_IMAGE_UPLOAD, {
+    [U.e$_.INITIATE_IMAGE_UPLOAD]: (0, r.T)(U.e$_.INITIATE_IMAGE_UPLOAD, {
         scope: {
-            [w.sm.ANY]: [r.F.RPC, w.hj, w.VH]
+            [w.sm.ANY]: [l.F.RPC, w.hj, w.VH]
         },
         handler(e) {
             let {
@@ -239,21 +239,21 @@ let V = {
                     }, "No valid window found");
                     let i = n.document.createElement("input");
                     i.style.display = "none", i.type = "file", i.accept = "image/jpeg, image/jpg, image/png, image/gif";
-                    let r = () => {
-                        (null == i.files || 0 === i.files.length) && t(), n.document.body.removeEventListener("focus", r, !0), setTimeout(() => {
+                    let l = () => {
+                        (null == i.files || 0 === i.files.length) && t(), n.document.body.removeEventListener("focus", l, !0), setTimeout(() => {
                             n.document.body.removeChild(i)
                         }, 1e3)
                     };
                     i.addEventListener("change", () => {
-                        (0, v.Vq)(i.files) && e(i.files[0]), r()
+                        (0, v.Vq)(i.files) && e(i.files[0]), l()
                     }), i.addEventListener("cancel", () => {
-                        r()
-                    }), n.document.body.addEventListener("focus", r, !0), n.document.body.appendChild(i), i.click()
-                }(async r => {
-                    let l = await (0, h.CS)(n, i, r);
-                    (0, v.Vq)(l) && (0, v.Vq)(l.url) && !(l instanceof u.A) ? e({
-                        image_url: l.url
-                    }): t(l)
+                        l()
+                    }), n.document.body.addEventListener("focus", l, !0), n.document.body.appendChild(i), i.click()
+                }(async l => {
+                    let r = await (0, h.CS)(n, i, l);
+                    (0, v.Vq)(r) && (0, v.Vq)(r.url) && !(r instanceof u.A) ? e({
+                        image_url: r.url
+                    }): t(r)
                 }, () => t(Error("Upload canceled")))
             }).catch(e => {
                 throw new L.A({
@@ -262,7 +262,7 @@ let V = {
             })
         }
     }),
-    [U.e$_.OPEN_SHARE_MOMENT_DIALOG]: (0, l.T)(U.e$_.OPEN_SHARE_MOMENT_DIALOG, {
+    [U.e$_.OPEN_SHARE_MOMENT_DIALOG]: (0, r.T)(U.e$_.OPEN_SHARE_MOMENT_DIALOG, {
         scope: {
             [w.sm.ANY]: [w.VH]
         },
@@ -281,18 +281,18 @@ let V = {
             if (!(0, E.n)(t.application, U.gfo.EMBEDDED)) throw new L.A({
                 errorCode: U.Lw6.INVALID_COMMAND
             }, "This application cannot access this API");
-            let r = (0, D.A)();
+            let l = (0, D.A)();
             if (!y.A.isDiscordCdnUrl(n)) throw new L.A({
                 errorCode: U.Lw6.INVALID_PAYLOAD
             }, "mediaUrl must be a Discord CDN url");
             (0, g.g)({
                 applicationId: i,
-                channelId: r?.id,
+                channelId: l?.id,
                 mediaUrl: n
             })
         }
     }),
-    [U.e$_.SHARE_INTERACTION]: (0, l.T)(U.e$_.SHARE_INTERACTION, {
+    [U.e$_.SHARE_INTERACTION]: (0, r.T)(U.e$_.SHARE_INTERACTION, {
         scope: {
             [w.sm.ANY]: [w.VH, w.hj]
         },
@@ -301,8 +301,8 @@ let V = {
                     socket: n,
                     args: {
                         command: i,
-                        preview_image: r,
-                        components: l,
+                        preview_image: l,
+                        components: r,
                         require_launch_channel: s,
                         content: o,
                         options: d,
@@ -323,29 +323,29 @@ let V = {
             if (null == A && s) throw new L.A({
                 errorCode: U.Lw6.INVALID_COMMAND
             }, "No channel found");
-            if (null !== r || null !== l || null !== o) {
+            if (null !== l || null !== r || null !== o) {
                 let e = [];
-                void 0 !== r && (e = [{
+                void 0 !== l && (e = [{
                     id: b.default.cast(b.default.fromTimestamp(Date.now())),
                     size: 0,
-                    proxy_url: r.url,
+                    proxy_url: l.url,
                     filename: "preview",
-                    url: r.url,
-                    height: r.height,
-                    width: r.width
+                    url: l.url,
+                    height: l.height,
+                    width: l.width
                 }]), t = new C.Ay({
                     id: b.default.cast(b.default.fromTimestamp(Date.now())),
                     applicationId: u,
                     content: o,
-                    components: l,
+                    components: r,
                     attachments: e
                 })
             }
             return new Promise(e => {
                 let n = !1,
-                    r = (0, M.d5)(c),
-                    l = a.SYi;
-                (f.A.getWindowOpen(U.MLl.ACTIVITY_POPOUT) || r.context === U.BRT.POPOUT) && (l = a.KX8), (0, p.m)({
+                    l = (0, M.d5)(c),
+                    r = a.SYi;
+                (f.A.getWindowOpen(U.MLl.ACTIVITY_POPOUT) || l.context === U.BRT.POPOUT) && (r = a.KX8), (0, p.m)({
                     applicationId: u,
                     channel: A,
                     command: {
@@ -354,12 +354,12 @@ let V = {
                     },
                     requireLaunchChannel: !0 === s,
                     onShareResult: t => {
-                        n || (n = t), r.lock(), e({
+                        n || (n = t), l.lock(), e({
                             success: n
                         })
                     },
                     previewMessage: t,
-                    contextKey: l
+                    contextKey: r
                 })
             })
         }

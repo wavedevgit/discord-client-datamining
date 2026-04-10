@@ -29,25 +29,25 @@ function A(e) {
         members: c,
         ref: h,
         motion: A
-    } = e, f = c.length > 4, C = f ? c.slice(0, 3) : c, E = f ? c.length - 4 + 1 : 0, I = Math.min(f ? C.length + 1 : C.length, 4), v = (A?.percentX ?? 0) * 6, b = (A?.percentY ?? 0) * 6, T = 1 + (A?.proximity ?? 0) / 2 * .08, [y, N] = (0, d.zhh)(() => ({
+    } = e, f = c.length > 4, C = f ? c.slice(0, 3) : c, E = f ? c.length - 4 + 1 : 0, I = Math.min(f ? C.length + 1 : C.length, 4), v = (A?.percentX ?? 0) * 6, b = (A?.percentY ?? 0) * 6, T = 1 + (A?.proximity ?? 0) / 2 * .08, [N, y] = (0, d.zhh)(() => ({
         x: 0,
         y: 0,
         scale: 1,
         config: g
     }));
     return l.useEffect(() => {
-        N({
+        y({
             x: v,
             y: b,
             scale: T
         })
-    }, [v, b, T, N]), (0, i.jsxs)(a.animated.div, {
+    }, [v, b, T, y]), (0, i.jsxs)(a.animated.div, {
         ref: h,
         className: r()(p.gg, t),
         "data-count": I,
         "aria-hidden": !0,
         style: {
-            transform: (0, a.to)([y.x, y.y, y.scale], (e, t, n) => `translate3d(${e}px, ${t}px, 0) scale(${n})`)
+            transform: (0, a.to)([N.x, N.y, N.scale], (e, t, n) => `translate3d(${e}px, ${t}px, 0) scale(${n})`)
         },
         children: [C.map((e, t) => (0, i.jsx)("div", {
             className: p.my,

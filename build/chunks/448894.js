@@ -1,6 +1,6 @@
 /** chunk id: 448894 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => N
 });
 var i = n(627968),
     l = n(64700),
@@ -26,16 +26,16 @@ var i = n(627968),
     b = n(985018),
     T = n(366228);
 
-function y(e) {
+function N(e) {
     let t, {
             invite: n,
             currentUserId: s,
-            guild: y,
-            message: N,
+            guild: N,
+            message: y,
             onTransitionToInviteChannel: S,
             onAcceptInstantInvite: j
         } = e,
-        L = y?.id,
+        L = N?.id,
         R = (0, d.bG)([x.A], () => x.A.getGuildId()),
         P = (0, d.bG)([A.A], () => null != n && null != n.target_user ? A.A.getActiveStreamForUser(n.target_user.id, L) : null, [n, L]),
         D = (0, d.bG)([A.A], () => null != n && null != n.target_user ? A.A.getStreamForUser(n.target_user.id, L) : null, [n, L]),
@@ -49,7 +49,7 @@ function y(e) {
             invite_code: n.code,
             invite_guild_id: n.guild?.id,
             invite_channel_id: n.channel?.id,
-            invite_instance_id: (0, h._U)(n.code, N.id),
+            invite_instance_id: (0, h._U)(n.code, y.id),
             invite_channel_type: n.channel?.type,
             embed_type: "streaming_invite",
             location_stack: M
@@ -70,15 +70,15 @@ function y(e) {
             w ? (S(), e = "transition") : (j(), e = "accept"), (0, c.he)({
                 invite: n,
                 action: e,
-                inviter_id: N.author.id,
-                invite_message_id: N.id,
-                invite_instance_id: (0, h._U)(n.code, N.id)
+                inviter_id: y.author.id,
+                invite_message_id: y.id,
+                invite_instance_id: (0, h._U)(n.code, y.id)
             }, M)
-        }, [n, N, M, w, S, j]),
-        H = null != y;
-    if (null == y) {
+        }, [n, y, M, w, S, j]),
+        H = null != N;
+    if (null == N) {
         if (null == n.guild) return (0, i.jsx)(E.A, {});
-        y = (0, f.DY)(n.guild)
+        N = (0, f.DY)(n.guild)
     }
     let V = null != n.channel ? (0, g.OY)(n.channel) : null,
         q = C.Ay.getName(U),
@@ -90,10 +90,10 @@ function y(e) {
     }), Y = b.intl.string(b.t.Wdi5E1)) : (z = "active", w && (Y = b.intl.string(b.t.Q1W99y), z = "secondary"), t = B ? b.intl.string(b.t["4hyaHu"]) : b.intl.formatToPlainString(b.t.QmlLEq, {
         name: q
     }));
-    let Q = R === y.id && null != V ? (0, i.jsx)(p.A.Channel, {
+    let Q = R === N.id && null != V ? (0, i.jsx)(p.A.Channel, {
         channel: V
     }) : b.intl.formatToPlainString(b.t.u0vaDE, {
-        guildName: y.name
+        guildName: N.name
     });
     return (0, i.jsxs)(p.A, {
         children: [(0, i.jsx)(p.A.Header, {
@@ -102,7 +102,7 @@ function y(e) {
             children: [(0, i.jsxs)("div", {
                 className: T.iH,
                 children: [(0, i.jsx)(p.A.Icon, {
-                    guild: y,
+                    guild: N,
                     onClick: H && O ? F : void 0
                 }), (0, i.jsx)(p.A.Info, {
                     title: t,

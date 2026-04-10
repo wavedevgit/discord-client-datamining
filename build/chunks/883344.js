@@ -1,10 +1,10 @@
 /** chunk id: 883344 params = (module,exports,require) **/
 n.d(t, {
-    A: () => eN
+    A: () => eS
 }), n(321073);
 var i = n(681154),
-    r = n(311907),
-    l = n(73153),
+    l = n(311907),
+    r = n(73153),
     a = n(99753),
     s = n(20805),
     o = n(583846),
@@ -22,8 +22,8 @@ var i = n(681154),
     f = n(543465),
     C = n(927813),
     T = n(449054),
-    N = n(105971),
-    S = n(116127),
+    S = n(105971),
+    N = n(116127),
     x = n(596720),
     v = n(449e3),
     b = n(859524),
@@ -57,8 +57,8 @@ let L = +C.A.Millis.DAY,
     et = !0,
     en = !1,
     ei = new Set,
-    er = !1,
     el = !1,
+    er = !1,
     ea = 0,
     es = 0;
 
@@ -71,7 +71,7 @@ function eo(e, t) {
 }
 
 function ed(e) {
-    if (!S.A.filterStaffContent()) return !0;
+    if (!N.A.filterStaffContent()) return !0;
     if ((0, b.xj)(e)) {
         if (e.data.guild_id === x.VL) return !0;
         let t = m.A.getGuild(e.data.guild_id);
@@ -81,10 +81,10 @@ function ed(e) {
 }
 
 function ec(e, t, n, i) {
-    let r = e.filter(e => e.type !== n);
+    let l = e.filter(e => e.type !== n);
     return t.forEach((e, t) => {
-        (t + 1) * i < r.length ? r.splice((t + 1) * i, 0, e) : r.push(e)
-    }), r
+        (t + 1) * i < l.length ? l.splice((t + 1) * i, 0, e) : l.push(e)
+    }), l
 }
 
 function eu() {
@@ -122,7 +122,7 @@ function eA() {
 }
 
 function eh(e) {
-    let t, n, r, l, d;
+    let t, n, l, r, d;
     if (M.length > 0 && (P = M, M = [], w = []), F++, null != e) Q = e.newUnread, X = e.newRead;
     else {
         let [e, t] = e_(P);
@@ -167,7 +167,7 @@ function eh(e) {
         t.forEach(e => {
             G[e.id] = e, null != v.A.getReadTimestamp(e.id) ? i.push(e) : n.push(e)
         }), Q = ec(Q, n, x.Mm.GUILD_EVENT, 7), X = ec(X, i, x.Mm.GUILD_EVENT, 7)
-    })(), t = new Set, n = {}, r = [], l = [], (d = a.A.getFeed(O.X1.GLOBAL_FEED)?.entries ?? []).sort((e, t) => e.rank - t.rank).slice(0, 5), d.forEach(e => {
+    })(), t = new Set, n = {}, l = [], r = [], (d = a.A.getFeed(O.X1.GLOBAL_FEED)?.entries ?? []).sort((e, t) => e.rank - t.rank).slice(0, 5), d.forEach(e => {
         if (t.has(e.content.id) || e.content.content_type !== i.ContentInventoryEntryType.PLAYED_GAME && e.content.content_type !== i.ContentInventoryEntryType.CUSTOM_STATUS && e.content.content_type !== i.ContentInventoryEntryType.TOP_GAME || (0, o.I5)(e.content)) return;
         if ((0, s.zD)(e.content)) {
             if (null == n[e.content.author_id] && (n[e.content.author_id] = new Set), n[e.content.author_id].has(e.content.extra.application_id)) return;
@@ -188,14 +188,14 @@ function eh(e) {
                 content_id: e.content.id
             }
         };
-        t.add(e.content.id), G[a.id] = a, null != v.A.getReadTimestamp(a.id) ? l.push(a) : r.push(a)
-    }), Q = ec(Q, r, x.Mm.ACTIVITY, 5), X = ec(X, l, x.Mm.ACTIVITY, 5), eu(), null != U.load_id && D !== U.load_id && (N.k.trackFeedLoaded({
+        t.add(e.content.id), G[a.id] = a, null != v.A.getReadTimestamp(a.id) ? r.push(a) : l.push(a)
+    }), Q = ec(Q, l, x.Mm.ACTIVITY, 5), X = ec(X, r, x.Mm.ACTIVITY, 5), eu(), null != U.load_id && D !== U.load_id && (S.k.trackFeedLoaded({
         newTrackingProps: U,
         hasNewContent: W,
         unreadFeedItems: Q,
         readFeedItems: X,
         homeSessionId: "gravity"
-    }), D = U.load_id ?? null, U = {}), Z = 0, Q.length + X.length === 0 && (el = !0), (0, b.kx)([...Q, ...X], 0, x.w5), en = !1
+    }), D = U.load_id ?? null, U = {}), Z = 0, Q.length + X.length === 0 && (er = !0), (0, b.kx)([...Q, ...X], 0, x.w5), en = !1
 }
 
 function e_(e) {
@@ -203,8 +203,8 @@ function e_(e) {
         n = [],
         i = [];
     return e.forEach(e => {
-        let r = null != v.A.getReadTimestamp(e.id);
-        e.type === x.Mm.MESSAGE && e.data.message_context?.external_content_application_id == null && (r = r || !(0, b.$r)(e.data.channel_id, e.data.message_id)), r ? t.push(e) : e.type === x.Mm.MESSAGE && e.data.has_mention ? i.push(e) : n.push(e)
+        let l = null != v.A.getReadTimestamp(e.id);
+        e.type === x.Mm.MESSAGE && e.data.message_context?.external_content_application_id == null && (l = l || !(0, b.$r)(e.data.channel_id, e.data.message_id)), l ? t.push(e) : e.type === x.Mm.MESSAGE && e.data.has_mention ? i.push(e) : n.push(e)
     }), [
         [...i, ...n], t.sort((e, t) => (0, b.tI)(e.id, t.id))
     ]
@@ -213,7 +213,7 @@ function e_(e) {
 function em(e, t) {
     let n = [],
         i = new Set(P.map(e => e.id));
-    for (let r of e) !(r.type === x.Mm.RECOMMENDED_GUILDS || i.has(r.id)) && null == v.A.getReadTimestamp(r.id) && (r.type !== x.Mm.MESSAGE || (0, b.$r)(r.data.channel_id, r.data.message_id) && r.data.channel_id !== t) && n.push(r);
+    for (let l of e) !(l.type === x.Mm.RECOMMENDED_GUILDS || i.has(l.id)) && null == v.A.getReadTimestamp(l.id) && (l.type !== x.Mm.MESSAGE || (0, b.$r)(l.data.channel_id, l.data.message_id) && l.data.channel_id !== t) && n.push(l);
     return n
 }
 
@@ -238,31 +238,31 @@ function ef(e) {
         type: t,
         messageId: n,
         userId: i,
-        emoji: r,
-        reactionType: l
+        emoji: l,
+        reactionType: r
     } = e, a = k[n];
     if (null == a || a.type !== x.Mm.MESSAGE) return !1;
     let s = A.default.getId() === i;
-    "MESSAGE_REACTION_ADD" === t ? a.message = a.message.addReaction(r, s, e.colors, l) : a.message = a.message.removeReaction(r, s, l)
+    "MESSAGE_REACTION_ADD" === t ? a.message = a.message.addReaction(l, s, e.colors, r) : a.message = a.message.removeReaction(l, s, r)
 }
 
 function eC(e) {
     let {
         channelId: t
     } = e, n = [], i = [];
-    Q.forEach((e, r) => {
-        (r > Z || !K) && e.type === x.Mm.MESSAGE && e.data.channel_id === t ? n.push(e) : i.push(e)
+    Q.forEach((e, l) => {
+        (l > Z || !K) && e.type === x.Mm.MESSAGE && e.data.channel_id === t ? n.push(e) : i.push(e)
     });
-    let r = W,
-        [l, a] = e_(M);
-    if (w = em(l, t), W = K ? r && w.length >= x.$P : r && eo(i, M), 0 === n.length && r === W) return !1;
+    let l = W,
+        [r, a] = e_(M);
+    if (w = em(r, t), W = K ? l && w.length >= x.$P : l && eo(i, M), 0 === n.length && l === W) return !1;
     0 !== n.length && (Q = i, X = [...X, ...n])
 }
-class eT extends r.Ay.PersistedStore {
+class eT extends l.Ay.PersistedStore {
     static displayName = "ICYMIStore";
     static persistKey = "ICYMIStore";
     initialize(e) {
-        this.waitFor(A.default, h.A, a.A, d.A, _.A, c.Ay, m.A, S.A, v.A, g.A, p.A, E.Ay, I.A, f.Ay), null != e && ((P = e.dehydratedItems ?? []).forEach(e => {
+        this.waitFor(A.default, h.A, a.A, d.A, _.A, c.Ay, m.A, N.A, v.A, g.A, p.A, E.Ay, I.A, f.Ay), null != e && ((P = e.dehydratedItems ?? []).forEach(e => {
             G[e.id] = e
         }), B = e.customGuildScores ?? {}, H = e.customChannelScoresByGuild ?? {}, $ = e.numOpens ?? 0, j = e.lastOpened ?? 0, ee = e.lastJoinedRecommendedGuild ?? 0, es = e.lastTakenICYMISurvey ?? 0)
     }
@@ -346,10 +346,10 @@ class eT extends r.Ay.PersistedStore {
         return z
     }
     getIsTabFocused() {
-        return er
+        return el
     }
     isFirstPageHydrated() {
-        return el
+        return er
     }
     lastScrollEvent() {
         return ea
@@ -372,9 +372,9 @@ class eT extends r.Ay.PersistedStore {
         }
     }
 }
-let eN = new eT(l.h, {
+let eS = new eT(r.h, {
     LOGOUT: function() {
-        P = [], M = [], w = [], G = {}, U = {}, k = {}, V = {}, D = null, B = {}, H = {}, F = 0, Y = !1, W = !1, K = !1, Q = [], X = [], Z = 0, j = 0, ee = 0, et = !0, en = !1, ei = new Set, z = null, er = !1, el = !1, q = null, ea = 0
+        P = [], M = [], w = [], G = {}, U = {}, k = {}, V = {}, D = null, B = {}, H = {}, F = 0, Y = !1, W = !1, K = !1, Q = [], X = [], Z = 0, j = 0, ee = 0, et = !0, en = !1, ei = new Set, z = null, el = !1, er = !1, q = null, ea = 0
     },
     LOAD_ICYMI_FROM_NOTIFICATION: function(e) {
         let {
@@ -409,8 +409,8 @@ let eN = new eT(l.h, {
         let t, {
             items: n,
             loadId: i,
-            startTime: r,
-            isInitialLoad: l,
+            startTime: l,
+            isInitialLoad: r,
             isReloading: a
         } = e;
         t = new Set(x.H8), M = n.filter(e => t.has(e.type)).filter(ed).map(e => {
@@ -421,25 +421,25 @@ let eN = new eT(l.h, {
             return e
         }), eA(), U = {
             load_id: i,
-            load_time_millis: Date.now() - r,
+            load_time_millis: Date.now() - l,
             feed_item_ids: M.map(e => e.id)
         };
         let [s, o] = e_(M);
-        if (w = em(s), !K || 0 === F || l) F = 0, !er && eo(s, M) ? (W = !0, Y = !0) : W = !1, eh({
+        if (w = em(s), !K || 0 === F || r) F = 0, !el && eo(s, M) ? (W = !0, Y = !0) : W = !1, eh({
             newUnread: s,
             newRead: o
         });
         else {
             F > 0 && (z = null);
             let e = w.length > x.$P;
-            a || (W = e), e && ((0, b.kx)([...s, ...o], 0, x.w5), s.length + o.length === 0 && (el = !0))
+            a || (W = e), e && ((0, b.kx)([...s, ...o], 0, x.w5), s.length + o.length === 0 && (er = !0))
         }
-        N.k.trackFeedLoaded({
+        S.k.trackFeedLoaded({
             newTrackingProps: U,
             hasNewContent: W,
             unreadFeedItems: s,
             readFeedItems: o,
-            homeSessionId: er ? "foreground_load" : "background_load"
+            homeSessionId: el ? "foreground_load" : "background_load"
         })
     },
     LOAD_ICYMI_HYDRATED: function(e) {
@@ -447,11 +447,11 @@ let eN = new eT(l.h, {
             messageItems: t,
             activityItems: n,
             requestMessageItems: i,
-            requestActivityItems: r,
-            startingIndex: l,
+            requestActivityItems: l,
+            startingIndex: r,
             endingIndex: a
         } = e;
-        el = !0, k = {
+        er = !0, k = {
             ...k
         };
         let s = t.reduce((e, t) => (e[t.message.id] = t, e), {}),
@@ -483,7 +483,7 @@ let eN = new eT(l.h, {
                     message: i
                 }
             } else k[t.message.id] = (0, b.Rh)(t, n)
-        }), r.forEach(e => {
+        }), l.forEach(e => {
             let t = o[e.content_id];
             if (null == t) {
                 V[e.content_id] = !0;
@@ -498,7 +498,7 @@ let eN = new eT(l.h, {
                 ...n,
                 activity: t
             }
-        }), l === Z && (Z = a), ei.delete((0, b.Vq)(l, a))
+        }), r === Z && (Z = a), ei.delete((0, b.Vq)(r, a))
     },
     LOAD_ICYMI_CUSTOM_SCORES: function(e) {
         let {
@@ -553,8 +553,8 @@ let eN = new eT(l.h, {
             reactions: n
         } = e, i = k[t];
         if (null == i || i.type !== x.Mm.MESSAGE) return !1;
-        let r = A.default.getId();
-        i.message = i.message.addReactionBatch(n, r)
+        let l = A.default.getId();
+        i.message = i.message.addReactionBatch(n, l)
     },
     MESSAGE_REACTION_REMOVE: ef,
     MESSAGE_REACTION_REMOVE_ALL: function(e) {
@@ -605,7 +605,7 @@ let eN = new eT(l.h, {
         let {
             focused: t
         } = e;
-        er = t
+        el = t
     },
     LOAD_ICYMI_CURRENT_STATUS_MEDIA: function(e) {
         let {

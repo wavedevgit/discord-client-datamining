@@ -3,9 +3,9 @@ n.d(t, {
     A: () => x
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(284009),
     o = n.n(s),
     d = n(421380),
@@ -27,9 +27,9 @@ let I = n(892799),
     },
     C = (0, A.Ld)(),
     T = `${C}-decription`,
-    N = `${C}-error`;
+    S = `${C}-error`;
 
-function S(e, t) {
+function N(e, t) {
     switch (t.type) {
         case "RESET":
             return f;
@@ -51,13 +51,13 @@ function S(e, t) {
 function x(e) {
     let {
         placeholder: t = g.intl.string(g.t["Rn/sLl"])
-    } = e, n = r.useRef(null), l = r.useRef(null), [s, A] = r.useReducer(S, f), {
+    } = e, n = l.useRef(null), r = l.useRef(null), [s, A] = l.useReducer(N, f), {
         canSend: x,
         hint: v,
         error: b,
         success: y
     } = s;
-    return r.useEffect(() => {
+    return l.useEffect(() => {
         null != y && (o()(null != n.current, "Input is submitting when not mounted"), n.current.value = "", n.current.focus())
     }, [y, n]), (0, i.jsxs)("form", {
         onSubmit: e => {
@@ -96,10 +96,10 @@ function x(e) {
             })]
         }), (0, i.jsx)(c.vN3, {
             focusTarget: n,
-            ringTarget: l,
+            ringTarget: r,
             ringClassName: p.hN,
             children: (0, i.jsxs)("div", {
-                ref: l,
+                ref: r,
                 className: a()(p.fc, {
                     [p.kX]: y,
                     [p.z3]: b
@@ -114,10 +114,10 @@ function x(e) {
                         if (e.key !== m.N$.Enter && t.includes("#")) {
                             o()(null != n.current, "Input is handling keypress when not mounted");
                             let i = t.indexOf("#"),
-                                r = n.current.selectionStart,
-                                l = e.key === m.N$.Backspace || e.key === m.N$.ArrowRight || e.key === m.N$.ArrowLeft,
+                                l = n.current.selectionStart,
+                                r = e.key === m.N$.Backspace || e.key === m.N$.ArrowRight || e.key === m.N$.ArrowLeft,
                                 a = e.which >= 48 && e.which <= 57;
-                            null != r && r > i && /^(.+?#\d{4})$/.test(t) && !l ? e.preventDefault() : null == r || !(r > i) || a || l || e.preventDefault()
+                            null != l && l > i && /^(.+?#\d{4})$/.test(t) && !r ? e.preventDefault() : null == l || !(l > i) || a || r || e.preventDefault()
                         }
                     },
                     onChange: e => {
@@ -141,7 +141,7 @@ function x(e) {
                     placeholder: t,
                     "aria-label": t,
                     "aria-invalid": null != b || void 0,
-                    "aria-describedby": null != b ? N : T
+                    "aria-describedby": null != b ? S : T
                 }), null != v && (0, i.jsx)("div", {
                     className: p.dQ,
                     "aria-hidden": !0,
@@ -157,7 +157,7 @@ function x(e) {
         }), null != b && (0, i.jsx)("div", {
             role: "alert",
             children: (0, i.jsx)(c.Text, {
-                id: N,
+                id: S,
                 variant: "text-sm/normal",
                 className: E.Ot,
                 color: "text-feedback-critical",

@@ -19,8 +19,8 @@ n.d(t, {
     uM: () => z
 }), n(321073), n(938796), n(735438);
 var i = n(567243),
-    r = n(179771),
-    l = n(562465),
+    l = n(179771),
+    r = n(562465),
     a = n(898467),
     s = n(843472),
     o = n(956518),
@@ -38,8 +38,8 @@ var i = n(567243),
     f = n(287809),
     C = n(977997),
     T = n(927813),
-    N = n(562153),
-    S = n(257120),
+    S = n(562153),
+    N = n(257120),
     x = n(998218),
     v = n(636401),
     b = n(639621),
@@ -53,7 +53,7 @@ let L = x.A.toURLSafe(window.GLOBAL_ENV.API_ENDPOINT)?.host ?? "localhost",
             n = t[t.length - 1];
         return /^\d+$/.test(n) ? e : t.slice(-2).join(".")
     }(),
-    P = RegExp(`^${S.A.escape("https://")}(?:[a-z]+\\.)?(${S.A.escape(R)}|discordapp.com|discord.com)$`),
+    P = RegExp(`^${N.A.escape("https://")}(?:[a-z]+\\.)?(${N.A.escape(R)}|discordapp.com|discord.com)$`),
     D = +T.A.Millis.MINUTE,
     j = {};
 
@@ -80,7 +80,7 @@ function G(e, t) {
         })
     })), Promise.all(n).then(() => {
         let n = (!e.isNSFW() || f.default.getCurrentUser()?.nsfwAllowed === !0) && t ? E.A.getMessages(e.id).toArray().map(k) : [],
-            r = Object.values(C.A.getVoiceStatesForChannel(e.id)).map(t => V(i, e.id, t));
+            l = Object.values(C.A.getVoiceStatesForChannel(e.id)).map(t => V(i, e.id, t));
         return {
             id: e.id,
             name: e.name,
@@ -91,7 +91,7 @@ function G(e, t) {
             guild_id: i,
             position: e.position,
             messages: n,
-            voice_states: r
+            voice_states: l
         }
     })
 }
@@ -102,15 +102,15 @@ function k(e) {
         }).map(M),
         n = m.A.getChannel(e.channel_id),
         i = null != e.author ? new _.A(e.author) : void 0,
-        r = null != e.author ? (0, u.FT)(i, n) : void 0;
+        l = null != e.author ? (0, u.FT)(i, n) : void 0;
     return {
         id: e.id,
         blocked: e.blocked,
         bot: e.bot,
         content: e.content,
         content_parsed: t.length ? t : void 0,
-        nick: r?.nick,
-        author_color: r?.colorString,
+        nick: l?.nick,
+        author_color: l?.colorString,
         edited_timestamp: e.edited_timestamp || e.editedTimestamp,
         timestamp: e.timestamp,
         tts: e.tts,
@@ -128,22 +128,22 @@ function k(e) {
 function V(e, t, n) {
     let {
         mute: i,
-        deaf: r,
-        selfMute: l,
+        deaf: l,
+        selfMute: r,
         selfDeaf: a,
         suppress: s,
         userId: o
     } = n, d = f.default.getUser(o);
     if (null == d) throw Error(`Invalid user id: ${o}`);
     return {
-        nick: N.Ay.getName(e, t, d),
+        nick: S.Ay.getName(e, t, d),
         mute: p.Ay.isLocalMute(d.id),
         volume: p.Ay.getLocalVolume(d.id),
         pan: p.Ay.getLocalPan(d.id),
         voice_state: {
             mute: i,
-            deaf: r,
-            self_mute: l,
+            deaf: l,
+            self_mute: r,
             self_deaf: a,
             suppress: s
         },
@@ -187,7 +187,7 @@ function F(e) {
 
 function Y(e, t, n) {
     let i = g.A.getGuild(e.getGuildId());
-    return (null != i ? i.application_id : e.getApplicationId()) === t || n.indexOf(r.F.MESSAGES_READ) > -1
+    return (null != i ? i.application_id : e.getApplicationId()) === t || n.indexOf(l.F.MESSAGES_READ) > -1
 }
 
 function W(e) {
@@ -206,7 +206,7 @@ function K(e, t, n) {
 }
 
 function q(e) {
-    return l.Bo.get({
+    return r.Bo.get({
         url: O.Rsh.APPLICATION_RPC(e),
         oldFormErrors: !0,
         retries: 3,
@@ -237,15 +237,15 @@ async function z(e, t, n) {
             }, "Invalid Origin")
         } null == i && (i = A.Ay.createFromServer(await q(t)));
     let {
-        id: r,
-        name: l,
+        id: l,
+        name: r,
         icon: a,
         coverImage: s,
         flags: c
     } = i;
     e.application = {
-        id: r,
-        name: l,
+        id: l,
+        name: r,
         icon: a,
         coverImage: s,
         flags: c

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(435371),
-    l = n(881373),
+var l = n(435371),
+    r = n(881373),
     a = n(653624),
     s = n(985018),
     o = n(208556);
@@ -14,9 +14,9 @@ function d(e) {
     let {
         children: t
     } = e;
-    return (0, i.jsx)(r.un, {
+    return (0, i.jsx)(l.un, {
         body: s.intl.format(a.default.zinfZi, {
-            discountPercent: l.aW
+            discountPercent: r.aW
         }),
         title: s.intl.string(a.default.OlObRa),
         asset: (0, i.jsx)("img", {

@@ -1,7 +1,7 @@
 /** chunk id: 43136 params = (module,exports,require) **/
 n.d(t, {
     A: () => S,
-    C: () => N
+    C: () => y
 });
 var i = n(627968),
     l = n(64700),
@@ -27,7 +27,7 @@ var i = n(627968),
     b = n(985018),
     T = n(915047);
 
-function y(e) {
+function N(e) {
     let {
         onClick: t
     } = e;
@@ -48,7 +48,7 @@ function y(e) {
     })
 }
 
-function N(e) {
+function y(e) {
     let {
         coverImageAsset: t,
         isPreview: n = !1
@@ -107,7 +107,7 @@ function S(e) {
         }), h && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.hKd, {
                 size: 4
-            }), (0, i.jsx)(y, {
+            }), (0, i.jsx)(N, {
                 onClick: () => (0, v.A)({
                     guildId: s
                 })
@@ -164,7 +164,7 @@ function S(e) {
                     size: 9
                 }), M]
             })]
-        }), (0, i.jsx)(N, {
+        }), (0, i.jsx)(y, {
             coverImageAsset: n?.cover_image_asset,
             isPreview: P
         })]

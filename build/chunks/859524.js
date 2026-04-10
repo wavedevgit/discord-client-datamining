@@ -5,19 +5,19 @@ n.d(t, {
     P0: () => R,
     Rh: () => v,
     Vq: () => f,
-    Wu: () => N,
+    Wu: () => S,
     YM: () => O,
     _x: () => x,
     be: () => j,
-    kx: () => S,
+    kx: () => N,
     n$: () => C,
     px: () => D,
     tI: () => L,
     xj: () => T,
     yx: () => P
 }), n(321073);
-var i, r = n(6161),
-    l = n(681154);
+var i, l = n(6161),
+    r = n(681154);
 n(311907), n(256265);
 var a = n(698441),
     s = n(141468),
@@ -45,20 +45,20 @@ function T(e) {
     return e.type === p.Mm.MESSAGE || e.type === p.Mm.GUILD_EVENT
 }
 
-function N(e) {
+function S(e) {
     return e < -1.5 ? 4 : e < 0 ? 3 : e > 0 ? 2 : 1
 }
-async function S(e, t, n) {
+async function N(e, t, n) {
     let i = g.A.getHydratedItems(),
-        r = e.slice(t, n);
-    if (0 === r.length) return;
+        l = e.slice(t, n);
+    if (0 === l.length) return;
     h.A.loadHydratedAttempt(f(t, n));
-    let l = r.filter(e => null == i[e.id]),
-        a = l.filter(e => e.type === p.Mm.MESSAGE).map(e => ({
+    let r = l.filter(e => null == i[e.id]),
+        a = r.filter(e => e.type === p.Mm.MESSAGE).map(e => ({
             channel_id: e.data.channel_id,
             message_id: e.data.message_id
         })),
-        s = l.map(e => {
+        s = r.map(e => {
             if (e.type === p.Mm.MESSAGE) {
                 let t = [];
                 return e.data.message_context?.reply_message_id != null && t.push({
@@ -74,7 +74,7 @@ async function S(e, t, n) {
             }
             return []
         }).flat().filter(Boolean),
-        o = l.filter(e => e.type === p.Mm.ACTIVITY).map(e => ({
+        o = r.filter(e => e.type === p.Mm.ACTIVITY).map(e => ({
             user_id: e.data.user_id,
             content_id: e.data.content_id
         }));
@@ -87,7 +87,7 @@ async function x() {
     let e = g.A.getUnreadDisplayItems(),
         t = g.A.getReadDisplayItems(),
         n = g.A.getNextIndexToHydrate();
-    await S([...e, ...t], n, n + p.w5)
+    await N([...e, ...t], n, n + p.w5)
 }
 
 function v(e, t) {
@@ -114,10 +114,10 @@ function O(e) {
         activity: {
             id: e.id,
             author_id: e.data.user_id,
-            author_type: r.ContentInventoryAuthorType.USER,
+            author_type: l.ContentInventoryAuthorType.USER,
             traits: [],
             participants: [],
-            content_type: l.ContentInventoryEntryType.CUSTOM_STATUS,
+            content_type: r.ContentInventoryEntryType.CUSTOM_STATUS,
             extra: {
                 type: "custom_status_extra",
                 status: e.data.text ?? "",
@@ -135,8 +135,8 @@ function O(e) {
 function L(e, t, n) {
     let i = E.A.getReadTimestamp(e);
     null == i && (i = n?.[e]);
-    let r = E.A.getReadTimestamp(t);
-    return (null == r && (r = n?.[t]), null == i && null == r) ? 0 : null == i ? -1 : null == r ? 1 : r - i
+    let l = E.A.getReadTimestamp(t);
+    return (null == l && (l = n?.[t]), null == i && null == l) ? 0 : null == i ? -1 : null == l ? 1 : l - i
 }
 
 function R(e) {
@@ -171,8 +171,8 @@ function P(e) {
     }
     let i = d.A.getChannel(t);
     if (i?.nsfw) return !0;
-    let r = null != (n = i?.guild_id ?? n) ? c.A.getGuild(n) : null;
-    return r?.nsfwLevel === I.ftr.EXPLICIT || r?.nsfwLevel === I.ftr.AGE_RESTRICTED
+    let l = null != (n = i?.guild_id ?? n) ? c.A.getGuild(n) : null;
+    return l?.nsfwLevel === I.ftr.EXPLICIT || l?.nsfwLevel === I.ftr.AGE_RESTRICTED
 }
 
 function D(e) {
@@ -190,7 +190,7 @@ function D(e) {
         case "guildEvent":
             return "guild_event";
         case "contentInventory":
-            if (e.data.content.content_type === l.ContentInventoryEntryType.CUSTOM_STATUS) return "hotwheels_custom_status";
+            if (e.data.content.content_type === r.ContentInventoryEntryType.CUSTOM_STATUS) return "hotwheels_custom_status";
             return "hotwheels_gaming_activity";
         case "recommendedGuilds":
             return "recommended_guilds";

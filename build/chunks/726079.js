@@ -3,8 +3,8 @@ n.d(t, {
     l: () => d
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(397927),
+    l = n(64700),
+    r = n(397927),
     a = n(646881),
     s = n(92534),
     o = n(66510);
@@ -16,26 +16,26 @@ function d(e) {
         children: d,
         popoutPosition: c,
         popoutAlign: u
-    } = e, [A, h] = r.useState(!1), _ = r.useRef(null), m = r.useCallback(() => {
+    } = e, [A, h] = l.useState(!1), _ = l.useRef(null), m = l.useCallback(() => {
         h(!1), n?.()
     }, [n]), {
         handlePrimaryAction: g,
         handleContextMenu: p
-    } = (0, s.B)(m), E = r.useCallback(() => {
+    } = (0, s.B)(m), E = l.useCallback(() => {
         h(e => {
             let i = !e;
             return i ? t?.() : n?.(), i
         })
-    }, [n, t]), I = r.useCallback(() => (0, i.jsx)("div", {
+    }, [n, t]), I = l.useCallback(() => (0, i.jsx)("div", {
         className: o.k,
         children: (0, i.jsx)(a.$, {
             onPrimaryAction: g,
             onContextMenu: p
         })
     }), [p, g]);
-    return (0, i.jsx)(l.YNO, {
+    return (0, i.jsx)(r.YNO, {
         targetElementRef: _,
-        animation: l.YNO.Animation.NONE,
+        animation: r.YNO.Animation.NONE,
         position: c,
         align: u,
         autoInvert: !1,

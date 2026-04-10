@@ -3,9 +3,9 @@ n.d(t, {
     A: () => j
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(735438),
-    a = n.n(l),
+    l = n(64700),
+    r = n(735438),
+    a = n.n(r),
     s = n(311907),
     o = n(397927),
     d = n(157559),
@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(427262),
     C = n(607272),
     T = n(352127),
-    N = n(513297),
-    S = n(414711),
+    S = n(513297),
+    N = n(414711),
     x = n(187696),
     v = n(723690),
     b = n(652215),
@@ -36,9 +36,9 @@ function P(e) {
     let {
         user: t,
         applicationId: n,
-        isGameRelationship: l,
+        isGameRelationship: r,
         onSelect: a
-    } = e, A = r.useCallback(() => {
+    } = e, A = l.useCallback(() => {
         (0, T.X9)({
             targetUserId: t.id,
             tab: I.Ay.getState().section
@@ -46,7 +46,7 @@ function P(e) {
             recipientIds: t.id,
             joinCall: !0
         })
-    }, [t.id]), h = r.useCallback(() => {
+    }, [t.id]), h = l.useCallback(() => {
         (0, T.Cf)({
             targetUserId: t.id,
             tab: I.Ay.getState().section
@@ -55,14 +55,14 @@ function P(e) {
             joinCall: !0,
             joinCallVideo: !0
         })
-    }, [t.id]), _ = r.useCallback(() => {
+    }, [t.id]), _ = l.useCallback(() => {
         C.A.removeFriend({
             userId: t.id,
-            applicationId: l ? n : null,
+            applicationId: r ? n : null,
             location: "Friends"
         })
-    }, [n, l, t.id]), m = r.useCallback(() => {
-        let e = l ? L.intl.string(L.t.RLcE6x) : L.intl.string(L.t.cvSt1J);
+    }, [n, r, t.id]), m = l.useCallback(() => {
+        let e = r ? L.intl.string(L.t.RLcE6x) : L.intl.string(L.t.cvSt1J);
         (0, T.lP)({
             targetUserId: t.id,
             tab: I.Ay.getState().section
@@ -78,7 +78,7 @@ function P(e) {
             cancelText: L.intl.string(L.t["ETE/oC"]),
             onConfirm: _
         })
-    }, [_, l, t]), g = (0, s.bG)([p.Ay], () => p.Ay.supports(O.O5.VIDEO)), E = t.isProvisional, N = l ? L.intl.string(L.t.RLcE6x) : L.intl.string(L.t.cvSt1J);
+    }, [_, r, t]), g = (0, s.bG)([p.Ay], () => p.Ay.supports(O.O5.VIDEO)), E = t.isProvisional, S = r ? L.intl.string(L.t.RLcE6x) : L.intl.string(L.t.cvSt1J);
     return (0, i.jsxs)(o.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "friend-row",
@@ -95,14 +95,14 @@ function P(e) {
             action: A
         }), (0, i.jsx)(o.Drp, {
             id: "remove-friend",
-            label: N,
+            label: S,
             action: m,
             color: "danger"
         })]
     })
 }
-class D extends r.PureComponent {
-    peopleListItemRef = r.createRef();
+class D extends l.PureComponent {
+    peopleListItemRef = l.createRef();
     state = {
         isActiveRow: !1
     };
@@ -136,12 +136,12 @@ class D extends r.PureComponent {
         let {
             user: t,
             isGameRelationship: n,
-            applicationId: r
+            applicationId: l
         } = this.props;
         (0, u.jA)(e, e => (0, i.jsx)(P, {
             ...e,
             user: t,
-            applicationId: r,
+            applicationId: l,
             isGameRelationship: n
         }), {
             onClose: () => {
@@ -158,8 +158,8 @@ class D extends r.PureComponent {
             user: e,
             isFocused: t,
             analyticsLocations: n,
-            activities: r,
-            applicationStream: l,
+            activities: l,
+            applicationStream: r,
             status: a,
             isMobile: s,
             isVR: d,
@@ -180,12 +180,12 @@ class D extends r.PureComponent {
             onClick: this.handleRowClick,
             giftIntentType: m,
             status: a,
-            activities: r,
-            applicationStream: l,
+            activities: l,
+            applicationStream: r,
             isMobile: s,
             isVR: d,
             isGameRelationship: c
-        }) : (0, i.jsx)(S.A, {
+        }) : (0, i.jsx)(N.A, {
             ref: this.peopleListItemRef,
             isFocused: t,
             isActive: I,
@@ -202,8 +202,8 @@ class D extends r.PureComponent {
                     isVR: d,
                     subText: (0, i.jsx)(x.A, {
                         hovered: t,
-                        activities: r,
-                        applicationStream: l,
+                        activities: l,
+                        applicationStream: r,
                         status: a,
                         user: e,
                         userIgnored: E.A.isIgnored(e.id)
@@ -212,12 +212,12 @@ class D extends r.PureComponent {
                     showAccountIdentifier: !c && !e.isProvisional
                 }), (0, i.jsxs)("div", {
                     className: R.o1,
-                    children: [(0, i.jsx)(N.A, {
+                    children: [(0, i.jsx)(S.A, {
                         icon: o.oyn,
                         tooltip: L.intl.string(L.t["g33r/P"]),
                         onClick: this.handleMessageClick,
                         shouldHighlight: t
-                    }), (0, i.jsx)(N.A, {
+                    }), (0, i.jsx)(S.A, {
                         icon: o.FHP,
                         tooltip: L.intl.string(L.t["UKOtz+"]),
                         onClick: this.handleOpenActionsMenu,

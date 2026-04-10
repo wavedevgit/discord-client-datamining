@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(877624),
-    l = n(342494),
+var l = n(877624),
+    r = n(342494),
     a = n(732955),
     s = n(975571),
     o = n(549996),
@@ -19,7 +19,7 @@ function h(e) {
         children: t,
         targetElementRef: n,
         dismissPopover: h
-    } = e, _ = (0, o.c)(r.C.PREMIUM_TAB_POPOVER), m = null != _ && "premiumTabPopover" === _.properties.properties.oneofKind ? _.properties.properties.premiumTabPopover : null, g = (0, c.T)(m?.asset);
+    } = e, _ = (0, o.c)(l.C.PREMIUM_TAB_POPOVER), m = null != _ && "premiumTabPopover" === _.properties.properties.oneofKind ? _.properties.properties.premiumTabPopover : null, g = (0, c.T)(m?.asset);
     if (null == m) return t;
     let p = m.button?.copy != null ? [{
         text: m.button.copy,
@@ -33,7 +33,7 @@ function h(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             children: t
-        }), (0, i.jsx)(l.AM, {
+        }), (0, i.jsx)(r.AM, {
             targetElementRef: n,
             title: m.header,
             body: m.body,

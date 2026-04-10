@@ -4,8 +4,8 @@ n.d(t, {
 }), n(323874), n(14289), n(35956);
 var i = n(627968);
 n(64700);
-var r = n(835245),
-    l = n(80703),
+var l = n(835245),
+    r = n(80703),
     a = n(397927),
     s = n(73153),
     o = n(6981),
@@ -23,8 +23,8 @@ var r = n(835245),
     f = n(829203),
     C = n(121623),
     T = n(200330),
-    N = n(708281),
-    S = n(890687),
+    S = n(708281),
+    N = n(890687),
     x = n(976860),
     v = n(718446),
     b = n(858897),
@@ -48,7 +48,7 @@ function G(e, t) {
         invite_code: null,
         has_auth_token: null,
         is_backgrounded: null,
-        fingerprint: null != n ? (0, l.d)(n) : null,
+        fingerprint: null != n ? (0, r.d)(n) : null,
         received_installation_id: i,
         link_type: t
     })
@@ -76,9 +76,9 @@ let k = {
             } = e;
             if (null == O.default.getCurrentUser()) return;
             let {
-                guildTemplate: r
+                guildTemplate: l
             } = await C.A.resolveGuildTemplate(t);
-            if (null == r) throw new j.A({
+            if (null == l) throw new j.A({
                 errorCode: U.Lw6.INVALID_GUILD_TEMPLATE
             }, `Invalid guild template id: ${t}`);
             return D.Ay.focus(), (0, a.mMO)(async () => {
@@ -87,10 +87,10 @@ let k = {
                 } = await Promise.all([n.e("7726"), n.e("49040")]).then(n.bind(n, 72715));
                 return t => (0, i.jsx)(e, {
                     ...t,
-                    guildTemplate: r
+                    guildTemplate: l
                 })
             }), {
-                guildTemplate: r,
+                guildTemplate: l,
                 code: t
             }
         }
@@ -103,12 +103,12 @@ let k = {
                     code: t
                 }
             } = e;
-            return new Promise((e, r) => {
+            return new Promise((e, l) => {
                 s.h.wait(() => {
-                    u.A.resolveGiftCode(t, !0, !0).then(r => {
+                    u.A.resolveGiftCode(t, !0, !0).then(l => {
                         let {
-                            giftCode: l
-                        } = r;
+                            giftCode: r
+                        } = l;
                         D.Ay.focus(), L.default.track(U.HAw.OPEN_MODAL, {
                             type: "gift_accept",
                             location: U.$OG
@@ -121,9 +121,9 @@ let k = {
                                 ...n
                             })
                         }), e({
-                            giftCode: l
+                            giftCode: r
                         })
-                    }).catch(() => r(new j.A({
+                    }).catch(() => l(new j.A({
                         errorCode: U.Lw6.INVALID_GIFT_CODE
                     }, `Invalid gift code: ${t}`)))
                 })
@@ -183,7 +183,7 @@ let k = {
                 case w.XK.QUEST_HOME:
                     if (null != i) {
                         let e = new URLSearchParams;
-                        null != i.sort && e.set(S.L1.SORT, i.sort), null != i.filter && e.set(S.L1.FILTER, i.filter), null != i.tab && e.set(S.L1.TAB, i.tab), (0, x.pX)(U.BVt.QUEST_HOME, {
+                        null != i.sort && e.set(N.L1.SORT, i.sort), null != i.filter && e.set(N.L1.FILTER, i.filter), null != i.tab && e.set(N.L1.TAB, i.tab), (0, x.pX)(U.BVt.QUEST_HOME, {
                             hash: i.questId,
                             search: `?${e.toString()}`
                         }), G(i, (0, w.OE)(t))
@@ -192,7 +192,7 @@ let k = {
                 case w.XK.QUEST_PREVIEW_TOOL:
                     if (null != i) {
                         let e = new URLSearchParams;
-                        e.set(S.L1.TAB, S.NC.PREVIEW_TOOL), null != i.questId && e.set(S.L1.QUEST_ID, i.questId), (0, x.pX)(U.BVt.QUEST_HOME, {
+                        e.set(N.L1.TAB, N.NC.PREVIEW_TOOL), null != i.questId && e.set(N.L1.QUEST_ID, i.questId), (0, x.pX)(U.BVt.QUEST_HOME, {
                             search: `?${e.toString()}`
                         }), G(i, (0, w.OE)(t))
                     }
@@ -203,13 +203,13 @@ let k = {
                     }), G(i, (0, w.OE)(t)));
                     break;
                 case w.XK.OAUTH2:
-                    let l = new URL(U.BVt.OAUTH2_AUTHORIZE, window.location.origin);
-                    l.search = i.search;
-                    let a = (0, T.getOAuth2AuthorizeProps)(l.toString());
+                    let r = new URL(U.BVt.OAUTH2_AUTHORIZE, window.location.origin);
+                    r.search = i.search;
+                    let a = (0, T.getOAuth2AuthorizeProps)(r.toString());
                     if (null != a) return (0, T.openOAuth2ModalWithCreateGuildModal)(a), !0;
                     return !1;
                 case w.XK.ONE_TIME_LOGIN:
-                    if (null != i) return (0, N.N)({
+                    if (null != i) return (0, S.N)({
                         token: i.token
                     }), G(i, (0, w.OE)(t)), !0;
                     return !1;
@@ -223,7 +223,7 @@ let k = {
                     break;
                 case w.XK.ACTIVITIES:
                     if (null != i) {
-                        let e = i.attemptId || (0, r.A)();
+                        let e = i.attemptId || (0, l.A)();
                         return async function(e, t, n) {
                             try {
                                 let i = A.Ay.getCurrentEmbeddedActivity();
@@ -233,16 +233,16 @@ let k = {
                                     failure_reason: "activity_already_running",
                                     attempt_id: n
                                 });
-                                let r = await g.Ay.fetchApplication(e),
-                                    l = r?.bot?.id;
-                                if (null == l) return void L.default.track(U.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {
+                                let l = await g.Ay.fetchApplication(e),
+                                    r = l?.bot?.id;
+                                if (null == r) return void L.default.track(U.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {
                                     application_id: e,
                                     success: !1,
                                     failure_reason: "no_bot_user",
                                     attempt_id: n
                                 });
                                 let a = await d.A.openPrivateChannel({
-                                        recipientIds: l
+                                        recipientIds: r
                                     }),
                                     s = new URL(t),
                                     o = s.searchParams.get("referrer_id") ?? void 0,
@@ -309,19 +309,19 @@ let k = {
                     providerType: t,
                     code: n,
                     openid_params: i,
-                    iss: r,
-                    state: l
+                    iss: l,
+                    state: r
                 }
             } = e;
-            if (!y.A.hasPendingAuthorizedState(l)) throw new j.A({
+            if (!y.A.hasPendingAuthorizedState(r)) throw new j.A({
                 errorCode: U.Lw6.INVALID_CONNECTION_CALLBACK_STATE
             }, "Provider authorization did not originate from this discord client");
             try {
-                return y.A.deletePendingAuthorizedState(l), await c.A.callback(t, {
+                return y.A.deletePendingAuthorizedState(r), await c.A.callback(t, {
                     code: n,
                     openid_params: i,
-                    iss: r,
-                    state: l
+                    iss: l,
+                    state: r
                 })
             } catch (e) {
                 if (e?.status === 400) throw new j.A({
@@ -357,11 +357,11 @@ let k = {
                     state: t,
                     path: n,
                     query: i,
-                    payment_source_type: r
+                    payment_source_type: l
                 }
             } = e;
             return (0, p.re)({
-                paymentSourceType: r,
+                paymentSourceType: l,
                 state: t,
                 path: n,
                 query: i

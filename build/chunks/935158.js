@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(926466),
-    l = n(997509),
+var l = n(926466),
+    r = n(997509),
     a = n(320426),
     s = n(652215),
     o = n(985018),
@@ -15,7 +15,7 @@ function c(e) {
     let {
         guild: t
     } = e, n = () => a.A.dismissNotice(t.id);
-    return (0, i.jsx)(r.A, {
+    return (0, i.jsx)(l.A, {
         guild: t,
         onDismissed: n,
         cta: o.intl.string(o.t.RzWDqY),
@@ -23,7 +23,7 @@ function c(e) {
         type: s.n5X.COMMANDS_MIGRATION,
         image: d,
         onClick: () => {
-            n(), l.A.open(t.id, s.BEX.INTEGRATIONS)
+            n(), r.A.open(t.id, s.BEX.INTEGRATIONS)
         },
         imageMarginTop: 15,
         imageMarginX: 22

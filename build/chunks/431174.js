@@ -1,6 +1,6 @@
 /** chunk id: 431174 params = (module,exports,require) **/
 n.d(t, {
-    j: () => y
+    j: () => N
 }), n(801541);
 var i = n(627968),
     l = n(64700),
@@ -35,9 +35,9 @@ function I(e) {
         x((0, g.$m)(c, d, r))
     }, [c, d, r]), T = l.useCallback(() => {
         b(), I(!0)
-    }, [b]), y = l.useCallback(() => {
+    }, [b]), N = l.useCallback(() => {
         I(!1)
-    }, []), N = l.useCallback(() => {
+    }, []), y = l.useCallback(() => {
         (0, p.e)({
             channelId: d,
             messageId: c,
@@ -62,10 +62,10 @@ function I(e) {
                 "aria-label": !1,
                 children: (0, i.jsx)(m.QWc, {
                     onMouseEnter: T,
-                    onMouseLeave: y,
+                    onMouseLeave: N,
                     onFocus: T,
-                    onBlur: y,
-                    onClick: N,
+                    onBlur: N,
+                    onClick: y,
                     "aria-describedby": v ? o : void 0,
                     text: n,
                     variant: "secondary",
@@ -73,10 +73,10 @@ function I(e) {
                 })
             }) : (0, i.jsx)(m.QWc, {
                 onMouseEnter: T,
-                onMouseLeave: y,
+                onMouseLeave: N,
                 onFocus: T,
-                onBlur: y,
-                onClick: N,
+                onBlur: N,
+                onClick: y,
                 text: n,
                 variant: "secondary",
                 textVariant: "text-xs/semibold"
@@ -199,7 +199,7 @@ function T(e) {
     })
 }
 
-function y(e) {
+function N(e) {
     let {
         isExpired: t,
         answersInteraction: n,

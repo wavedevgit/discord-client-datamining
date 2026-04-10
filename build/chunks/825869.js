@@ -3,8 +3,8 @@ n.d(t, {
     v: () => _
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(397927),
+    l = n(64700),
+    r = n(397927),
     a = n(378570),
     s = n(138298),
     o = n(761640),
@@ -19,26 +19,26 @@ function _(e) {
         active: t,
         user: n,
         channel: _
-    } = e, m = (0, d.k)(), g = r.useCallback(() => {
-        (0, l.showToast)((0, l.createToast)(A.intl.string(A.t["EDYbS+"]), l.ToastType.FAILURE))
-    }, []), p = r.useCallback(() => {
+    } = e, m = (0, d.k)(), g = l.useCallback(() => {
+        (0, r.showToast)((0, r.createToast)(A.intl.string(A.t["EDYbS+"]), r.ToastType.FAILURE))
+    }, []), p = l.useCallback(() => {
         s.A.closeChannelSidebar(o.fe)
-    }, []), E = r.useCallback(() => {
+    }, []), E = l.useCallback(() => {
         s.A.closeChannelSidebar(o.fe), m && (0, a.iN)(_.id)
     }, [_.id, m]), {
         acceptMessageRequest: I,
         rejectMessageRequest: f,
         isAcceptLoading: C,
         isRejectLoading: T,
-        isUserProfileLoading: N,
-        isOptimisticAccepted: S,
+        isUserProfileLoading: S,
+        isOptimisticAccepted: N,
         isOptimisticRejected: x
     } = (0, c.t)({
         user: n,
         onAcceptSuccess: E,
         onRejectSuccess: p,
         onError: g
-    }), v = C || T || N || S || x;
+    }), v = C || T || S || N || x;
     return (0, i.jsxs)("div", {
         className: h.kL,
         children: [(0, i.jsx)(u.A, {
@@ -50,7 +50,7 @@ function _(e) {
             children: [(0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: h.x6,
-                children: (0, i.jsx)(l.Button, {
+                children: (0, i.jsx)(r.Button, {
                     variant: "secondary",
                     size: "sm",
                     text: A.intl.string(A.t.B2nygW),
@@ -63,7 +63,7 @@ function _(e) {
             }), (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: h.x6,
-                children: (0, i.jsx)(l.Button, {
+                children: (0, i.jsx)(r.Button, {
                     variant: "primary",
                     size: "sm",
                     text: A.intl.string(A.t.Kz8Pwr),
@@ -71,7 +71,7 @@ function _(e) {
                         e.stopPropagation(), I(_.id)
                     },
                     disabled: v,
-                    loading: C || N || S
+                    loading: C || S || N
                 })
             })]
         })]

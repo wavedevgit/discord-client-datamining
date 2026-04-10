@@ -3,13 +3,13 @@ n.d(t, {
     A: () => u
 });
 var i = n(735438),
-    r = n.n(i),
-    l = n(626584),
+    l = n.n(i),
+    r = n(626584),
     a = n(734057),
     s = n(222823),
     o = n(661191),
     d = n(723176);
-let c = new l.A("ReadStates"),
+let c = new r.A("ReadStates"),
     u = new class {
         readStateVersion = null;
         async getAll(e) {
@@ -42,9 +42,9 @@ let c = new l.A("ReadStates"),
                 if (null == this.readStateVersion) return;
                 let t = "0",
                     i = "0",
-                    l = Object.keys(a.A.getMutablePrivateChannels()),
-                    s = new Set(l);
-                for (let e of (i = r()(l).sort(o.default.compare).reverse().value()[0] ?? "0", n)) null != e._lastMessageId && (1 === o.default.compare(e._lastMessageId, t) && (t = e._lastMessageId), s.has(e.channelId) && 1 === o.default.compare(e._lastMessageId, i) && (i = e._lastMessageId));
+                    r = Object.keys(a.A.getMutablePrivateChannels()),
+                    s = new Set(r);
+                for (let e of (i = l()(r).sort(o.default.compare).reverse().value()[0] ?? "0", n)) null != e._lastMessageId && (1 === o.default.compare(e._lastMessageId, t) && (t = e._lastMessageId), s.has(e.channelId) && 1 === o.default.compare(e._lastMessageId, i) && (i = e._lastMessageId));
                 d.A.nonGuildVersionsTransaction(e).putAll([{
                     id: "highest_last_message_id",
                     versionString: t

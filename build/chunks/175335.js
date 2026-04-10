@@ -1,6 +1,6 @@
 /** chunk id: 175335 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => N
 });
 var i = n(627968),
     l = n(64700),
@@ -26,14 +26,14 @@ var i = n(627968),
     b = n(985018),
     T = n(952372);
 
-function y(e) {
+function N(e) {
     let {
         guildId: t
     } = e, n = (0, o.bG)([x.A], () => x.A.getGuild(t)), {
         loading: s,
-        subscriptionsSettings: y
+        subscriptionsSettings: N
     } = (0, C.G)(t), {
-        listingsLoaded: N
+        listingsLoaded: y
     } = (0, p.bb)(t), S = (0, p.fZ)(t, {
         publishedOnly: !0
     }), j = l.useCallback(async () => {
@@ -48,13 +48,13 @@ function y(e) {
         disableTrack: null == n
     });
     let L = S.length > 0 ? new Date(Math.min(...S.map(e => Date.parse(e.published_at)))) : void 0;
-    return s || !N ? (0, i.jsx)("div", {
+    return s || !y ? (0, i.jsx)("div", {
         className: r()(T.lm, T.dc),
         children: (0, i.jsx)(u.y$y, {})
-    }) : null == n || null == y ? null : (0, i.jsxs)("div", {
+    }) : null == n || null == N ? null : (0, i.jsxs)("div", {
         className: T.lm,
         children: [(0, i.jsx)(E.C, {
-            coverImageAsset: y.cover_image_asset ?? null
+            coverImageAsset: N.cover_image_asset ?? null
         }), (0, i.jsx)(u.hKd, {
             size: 16
         }), (0, i.jsxs)("div", {
@@ -83,7 +83,7 @@ function y(e) {
             variant: "text-sm/normal",
             color: "text-muted",
             lineClamp: 2,
-            children: y.description
+            children: N.description
         }), (0, i.jsx)(u.hKd, {
             size: 16
         }), (0, i.jsx)(A.A, {}), (0, i.jsx)(u.hKd, {

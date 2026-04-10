@@ -3,8 +3,8 @@ n.d(t, {
     A: () => m
 }), n(321073);
 var i = n(627968),
-    r = n(64700),
-    l = n(397927),
+    l = n(64700),
+    r = n(397927),
     a = n(292455),
     s = n(701508),
     o = n(979590),
@@ -27,15 +27,15 @@ function m(e) {
         onScroll: m,
         onGuildCardClick: g,
         onGuildCardSeen: p
-    } = e, E = (0, c.kc)(t), I = (0, c.Ot)(t), f = (0, c.UW)(t), C = (0, c.Ub)(t), T = r.useMemo(() => {
+    } = e, E = (0, c.kc)(t), I = (0, c.Ot)(t), f = (0, c.UW)(t), C = (0, c.Ub)(t), T = l.useMemo(() => {
         let e = A ? 30 : n.length,
             t = [];
-        for (let r = 0; r < e; r++) t.push((0, i.jsx)(u.jO, {
-            guildId: n[r] ?? null,
-            index: r,
-            onClick: e => g(e, r, C, _),
+        for (let l = 0; l < e; l++) t.push((0, i.jsx)(u.jO, {
+            guildId: n[l] ?? null,
+            index: l,
+            onClick: e => g(e, l, C, _),
             onView: e => p(e, C)
-        }, n[r] ?? r));
+        }, n[l] ?? l));
         return t
     }, [C, n, A, g, p]);
     return (0, i.jsxs)(d.A, {
@@ -45,7 +45,7 @@ function m(e) {
             description: I,
             children: (0, i.jsx)(a.A, {})
         }), (0, i.jsxs)(o.A, {
-            children: [(0, i.jsx)(l.Heading, {
+            children: [(0, i.jsx)(r.Heading, {
                 className: h.G,
                 variant: "heading-lg/semibold",
                 color: "text-strong",

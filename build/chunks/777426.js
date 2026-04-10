@@ -3,9 +3,9 @@ n.d(t, {
     A: () => v
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(110259),
     o = n(311907),
     d = n(3203),
@@ -22,15 +22,15 @@ var i = n(627968),
     f = n(45787),
     C = n(275759),
     T = n(233971),
-    N = n(652215);
+    S = n(652215);
 n(646363);
-var S = n(985018),
+var N = n(985018),
     x = n(664184);
 
 function v(e) {
     let {
         ref: t,
-        isFocused: l,
+        isFocused: r,
         isActive: v,
         status: b,
         activities: y,
@@ -52,16 +52,16 @@ function v(e) {
     } = (0, T.$)({
         giftRecipient: M,
         analyticsLocations: G,
-        analyticsLocation: N.ThZ.FRIEND_ANNIVERSARIES_ACTION_BUTTON,
+        analyticsLocation: S.ThZ.FRIEND_ANNIVERSARIES_ACTION_BUTTON,
         analyticsObject: {
-            page: N.liQ.FRIENDS_LIST,
-            section: N.JJy.FRIENDS_LIST_FRIEND_ROW,
-            object: N.ZSU.BUTTON_CTA,
-            objectType: N.AnalyticsObjectTypes.GIFT
+            page: S.liQ.FRIENDS_LIST,
+            section: S.JJy.FRIENDS_LIST_FRIEND_ROW,
+            object: S.ZSU.BUTTON_CTA,
+            objectType: S.AnalyticsObjectTypes.GIFT
         },
         location: "gift-intent-friend-row"
     });
-    r.useEffect(() => {
+    l.useEffect(() => {
         let e = p.A.getUserAffinity(M.id);
         (0, h.x)({
             name: s.ImpressionNames.GIFT_INTENT_ACTION_BUTTON,
@@ -75,7 +75,7 @@ function v(e) {
     let H = e => {
         e.stopPropagation();
         let t = p.A.getUserAffinity(M.id);
-        I.default.track(N.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
+        I.default.track(S.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
             gift_intent_type: U,
             affinity: t?.dmProbability,
             location_stack: G
@@ -83,7 +83,7 @@ function v(e) {
     };
     return (0, i.jsx)(_.A, {
         ref: t,
-        isFocused: l,
+        isFocused: r,
         isActive: v,
         user: M,
         analyticsLocations: w,
@@ -114,7 +114,7 @@ function v(e) {
                         }), (0, i.jsx)(c.Text, {
                             variant: "text-xs/normal",
                             color: "text-subtle",
-                            children: S.intl.formatToPlainString(S.t.S3fdq7, {
+                            children: N.intl.formatToPlainString(N.t.S3fdq7, {
                                 numberOfYears: V
                             })
                         })]
@@ -128,9 +128,9 @@ function v(e) {
                     size: "sm",
                     variant: "secondary",
                     icon: k,
-                    "aria-label": S.intl.string(S.t.I61IsE),
+                    "aria-label": N.intl.string(N.t.I61IsE),
                     onClick: () => {
-                        I.default.track(N.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
+                        I.default.track(S.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
                             gift_intent_type: U,
                             cta_type: "send_message",
                             location_stack: G
@@ -147,9 +147,9 @@ function v(e) {
                     }
                 }), (0, i.jsx)(c.Button, {
                     size: "sm",
-                    text: S.intl.string(S.t.PEjaCx),
+                    text: N.intl.string(N.t.PEjaCx),
                     icon: c.okO,
-                    "aria-label": S.intl.string(S.t.PEjaCx),
+                    "aria-label": N.intl.string(N.t.PEjaCx),
                     onClick: H
                 })]
             })]

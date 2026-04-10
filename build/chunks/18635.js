@@ -3,9 +3,9 @@ n.d(t, {
     A: () => L
 }), n(323874), n(14289), n(35956);
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(873263),
     o = n(311907),
     d = n(397927),
@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(544028),
     C = n(595623),
     T = n(912309),
-    N = n(662074),
-    S = n(265990),
+    S = n(662074),
+    N = n(265990),
     x = n(652215),
     v = n(204925),
     b = n(985018),
@@ -40,15 +40,15 @@ function O() {
 let L = function(e) {
     let {
         initialSection: t
-    } = e, n = (0, s.zy)(), l = (0, s.W6)();
-    r.useEffect(() => {
+    } = e, n = (0, s.zy)(), r = (0, s.W6)();
+    l.useEffect(() => {
         "true" === new URLSearchParams(n.search).get("confirm-age") && c.h.dispatch({
             type: "AGE_GATE_MODAL_OPEN",
             source: v.w_.DEEP_LINK_PROMPT
         }).then(() => {
-            l.replace(x.BVt.ME)
+            r.replace(x.BVt.ME)
         })
-    }, [l, n]), r.useEffect(() => {
+    }, [r, n]), l.useEffect(() => {
         u.I(x.BVt.FRIENDS), (0, I.d)("friends")
     }, []);
     let p = (0, o.bG)([f.A], () => f.A.theme),
@@ -58,8 +58,8 @@ let L = function(e) {
             rows: P
         } = (0, o.cf)([C.Ay], () => C.Ay.getState()),
         D = (0, o.bG)([m.A], () => m.A.getSuggestionCount()),
-        j = r.useMemo(() => P.getRelationshipCounts(), [P]);
-    r.useEffect(() => {
+        j = l.useMemo(() => P.getRelationshipCounts(), [P]);
+    l.useEffect(() => {
         null != t && A.A.setInitialSection(t), 0 === j[x.eA$.FRIEND] && 0 === j[x.eA$.PENDING_INCOMING] && 0 === j[x.eA$.PENDING_OUTGOING] && 0 === j[x.eA$.BLOCKED] && A.A.transitionToSection(x.m3P.ADD_FRIEND)
     }, [t, j]);
     let M = e => {
@@ -119,7 +119,7 @@ let L = function(e) {
             className: y.Xl,
             children: (0, i.jsx)(E.A, {})
         });
-    return k = R === x.m3P.ADD_FRIEND ? (0, i.jsx)(N.A, {}) : (0, i.jsx)(S.A, {
+    return k = R === x.m3P.ADD_FRIEND ? (0, i.jsx)(S.A, {}) : (0, i.jsx)(N.A, {
         titleId: U
     }), (0, i.jsxs)("main", {
         className: y.kL,

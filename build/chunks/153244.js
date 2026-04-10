@@ -3,8 +3,8 @@ n.d(t, {
     A: () => g
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(873263),
+    l = n(64700),
+    r = n(873263),
     a = n(820284),
     s = n(549711),
     o = n(726249),
@@ -16,7 +16,7 @@ var i = n(627968),
     _ = n(258269);
 
 function m() {
-    return (0, i.jsxs)(l.dO, {
+    return (0, i.jsxs)(r.dO, {
         children: [(0, i.jsx)(s.A, {
             path: A.BVt.APPLICATION_LIBRARY_SETTINGS,
             exact: !0,
@@ -39,8 +39,8 @@ function m() {
         })]
     })
 }
-let g = r.memo(function() {
-    return r.useEffect(() => {
+let g = l.memo(function() {
+    return l.useEffect(() => {
         (0, d.d)("application_library")
     }, []), (0, i.jsxs)("div", {
         className: _.k,

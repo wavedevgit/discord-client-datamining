@@ -25,8 +25,8 @@ var i = n(627968),
     v = n(897288),
     b = n(168428),
     T = n(652215),
-    y = n(985018),
-    N = n(105544);
+    N = n(985018),
+    y = n(105544);
 
 function S(e) {
     let {
@@ -65,51 +65,51 @@ function S(e) {
             transition: M ? void 0 : "height 0.2s ease"
         } : {}, [S, R, M]);
     return null == O ? (0, i.jsx)(b.A, {}) : (0, i.jsxs)(d.sqX, {
-        className: r()(N.Gg, {
-            [N.vk]: R && S
+        className: r()(y.Gg, {
+            [y.vk]: R && S
         }),
         onClick: k,
         style: B,
-        "aria-label": y.intl.string(y.t.dcl9MQ),
+        "aria-label": N.intl.string(N.t.dcl9MQ),
         children: [(0, i.jsxs)("div", {
-            className: N.uY,
+            className: y.uY,
             ref: x,
             children: [(0, i.jsx)(C.J$, {
                 profile: O,
-                className: N.vK
+                className: y.vK
             }), (0, i.jsx)(C.CG, {
                 profile: O
             }), (0, i.jsx)(f.A, {
                 profile: O
             }), (0, i.jsx)(A.P, {
                 profile: O,
-                className: N.rb
+                className: y.rb
             }), (0, i.jsx)(v.A, {
                 guild: null != t.guild ? (0, I.DY)(t.guild) : null,
                 roles: t.roles,
-                className: N.Ei
+                className: y.Ei
             })]
         }), R && !S ? (0, i.jsx)("div", {
-            className: N.Se,
+            className: y.Se,
             children: (0, i.jsx)(d.QWc, {
                 textVariant: "text-xs/medium",
                 variant: "secondary",
                 size: "sm",
                 onClick: U,
-                text: y.intl.string(y.t.xdCLeM)
+                text: N.intl.string(N.t.xdCLeM)
             })
         }) : null, (0, i.jsxs)("div", {
-            className: r()(N.qr, {
-                [N.iK]: R
+            className: r()(y.qr, {
+                [y.iK]: R
             }),
             children: [R && S ? (0, i.jsx)("div", {
-                className: N.D7
+                className: y.D7
             }) : null, (0, i.jsx)("div", {
-                className: r()(N.z8, {
-                    [N.it]: R && S
+                className: r()(y.z8, {
+                    [y.it]: R && S
                 }),
                 children: (0, i.jsx)("div", {
-                    className: N.UD,
+                    className: y.UD,
                     children: (0, i.jsx)(j, {
                         invite: t,
                         profile: O,

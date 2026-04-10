@@ -3,8 +3,8 @@ n.d(t, {
     A: () => g
 }), n(323874), n(14289), n(35956), n(321073);
 var i = n(627968),
-    r = n(64700),
-    l = n(873263),
+    l = n(64700),
+    r = n(873263),
     a = n(311907),
     s = n(73153),
     o = n(829219),
@@ -25,15 +25,15 @@ let g = function(e) {
         questId: n,
         setQuestId: g
     } = function(e) {
-        let t = (0, l.W6)(),
-            [n, i] = r.useState(e),
+        let t = (0, r.W6)(),
+            [n, i] = l.useState(e),
             {
                 search: a
-            } = (0, l.zy)();
-        return r.useEffect(() => {
+            } = (0, r.zy)();
+        return l.useEffect(() => {
             let t = m(a);
             null != t ? i(t) : null != e && i(e)
-        }, [e, a]), r.useEffect(() => {
+        }, [e, a]), l.useEffect(() => {
             if (null == n || m(a) === n) return;
             let e = new URLSearchParams;
             e.set(c.L1.TAB, c.NC.PREVIEW_TOOL), e.set(c.L1.QUEST_ID, n), t.push(`${_.BVt.QUEST_HOME}?${e.toString()}`)
@@ -42,11 +42,11 @@ let g = function(e) {
             setQuestId: i
         }
     }(t), p = (0, a.bG)([d.A], () => null != n ? d.A.getQuest(n) : void 0, [n]), E = (0, a.bG)([d.A], () => null != n ? d.A.getQuestLoadedViaPreview(n) : null, [n]);
-    r.useEffect(() => {
+    l.useEffect(() => {
         null != n && (0, o.dQ)(n).then(() => {
             (0, o.Gt)(n)
         })
-    }, [n]), r.useEffect(() => {
+    }, [n]), l.useEffect(() => {
         let e = e => {
             let {
                 quest_id: t
@@ -57,7 +57,7 @@ let g = function(e) {
             s.h.unsubscribe("QUEST_PREVIEW_UPDATE", e)
         }
     }, [n]);
-    let [I, f] = r.useState([]);
+    let [I, f] = l.useState([]);
     return (0, i.jsx)(A.A, {
         controls: (0, i.jsx)(u.A, {
             questId: n,

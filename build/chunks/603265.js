@@ -3,11 +3,11 @@ n.d(t, {
     A: () => o
 });
 var i = n(636401),
-    r = n(440454),
-    l = n(313731),
+    l = n(440454),
+    r = n(313731),
     a = n(613057),
     s = n(652215);
-class o extends l.A {
+class o extends r.A {
     origin;
     frameId;
     postMessageToRPCClient;
@@ -19,22 +19,22 @@ class o extends l.A {
         origin: e,
         postMessageToRPCClient: t,
         frameId: n,
-        version: r,
-        encoding: l,
+        version: l,
+        encoding: r,
         logger: o,
         postClose: d,
         onSendingToRPCClient: c
     }) {
-        if (super(a.z4.POST_MESSAGE, r, l), -1 === ["etf", "json"].indexOf(l)) throw new i.A({
+        if (super(a.z4.POST_MESSAGE, l, r), -1 === ["etf", "json"].indexOf(r)) throw new i.A({
             closeCode: s.YI$.INVALID_ENCODING
-        }, `Invalid Encoding: ${l}`);
-        if ("etf" === l) throw new i.A({
+        }, `Invalid Encoding: ${r}`);
+        if ("etf" === r) throw new i.A({
             closeCode: s.YI$.INVALID_ENCODING
         }, "Erlpack cannot be used on this client");
         this.origin = e, this.postMessageToRPCClient = t, this.frameId = n, this.logger = o, this.postClose = d, this.onSendingToRPCClient = c, this.closed = !1
     }
     send(e) {
-        this.onSendingToRPCClient?.(e, this.id), this.postMessageToRPCClient([r.A.FRAME, e], this.origin)
+        this.onSendingToRPCClient?.(e, this.id), this.postMessageToRPCClient([l.A.FRAME, e], this.origin)
     }
     close(e, t) {
         this.closed || this.postClose(this.origin, {

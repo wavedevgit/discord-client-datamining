@@ -4,8 +4,8 @@ n.d(t, {
     o: () => en
 }), n(321073), n(323874), n(14289), n(35956);
 var i = n(627968),
-    r = n(64700),
-    l = n(837381),
+    l = n(64700),
+    r = n(837381),
     a = n(877624),
     s = n(311907),
     o = n(554146),
@@ -23,8 +23,8 @@ var i = n(627968),
     f = n(909536),
     C = n(287809),
     T = n(166403),
-    N = n(954571),
-    S = n(927578),
+    S = n(954571),
+    N = n(927578),
     x = n(683760),
     v = n(40185),
     b = n(851746),
@@ -58,7 +58,7 @@ let ee = new Set([o.M.PREMIUM_WISHLIST_COACHMARK]),
     et = e => {
         let {
             selected: t
-        } = e, n = (0, s.bG)([C.default], () => C.default.getCurrentUser()), i = (0, s.bG)([T.A], () => T.A.getPremiumTypeSubscription()), r = (0, w.V)(), l = (0, M.O)(), a = (0, v.cg)(), o = (0, q.H)(), d = (0, S.Of)(n, i), c = (0, s.bG)([x.A], () => x.A.getCreatedAtOverride()), u = t || null != r || null != l || a || null != o || d, A = null != c ? c : n?.createdAt;
+        } = e, n = (0, s.bG)([C.default], () => C.default.getCurrentUser()), i = (0, s.bG)([T.A], () => T.A.getPremiumTypeSubscription()), l = (0, w.V)(), r = (0, M.O)(), a = (0, v.cg)(), o = (0, q.H)(), d = (0, N.Of)(n, i), c = (0, s.bG)([x.A], () => x.A.getCreatedAtOverride()), u = t || null != l || null != r || a || null != o || d, A = null != c ? c : n?.createdAt;
         return u || null != n && null != A && Date.now() - A.getTime() > 12096e5
     },
     en = e => {
@@ -66,14 +66,14 @@ let ee = new Set([o.M.PREMIUM_WISHLIST_COACHMARK]),
                 selected: x,
                 nitroTabButtonRef: en,
                 route: ei,
-                locationState: er,
-                ...el
+                locationState: el,
+                ...er
             } = e,
             ea = (0, s.bG)([C.default], () => C.default.getCurrentUser()),
             es = (0, s.bG)([T.A], () => T.A.getPremiumTypeSubscription()),
-            eo = (0, S.Of)(ea, es),
-            ed = (0, S.YE)(ea, Q.PremiumTypes.TIER_2),
-            ec = (0, l.rm)("nitro"),
+            eo = (0, N.Of)(ea, es),
+            ed = (0, N.YE)(ea, Q.PremiumTypes.TIER_2),
+            ec = (0, r.rm)("nitro"),
             eu = (0, w.V)(),
             eA = (0, M.O)(),
             eh = (0, j.p)(),
@@ -90,8 +90,8 @@ let ee = new Set([o.M.PREMIUM_WISHLIST_COACHMARK]),
                 orbMultiplier: eC
             } = (0, p.p)(),
             eT = (0, F.Tp)(),
-            eN = (0, s.bG)([b.A], () => b.A.getReminderStateId()),
-            eS = (0, H.c7)(),
+            eS = (0, s.bG)([b.A], () => b.A.getReminderStateId()),
+            eN = (0, H.c7)(),
             {
                 programReward: ex,
                 isEligible: ev
@@ -108,7 +108,7 @@ let ee = new Set([o.M.PREMIUM_WISHLIST_COACHMARK]),
             eL = (0, O.I)({
                 location: "nitro_tab_popover"
             }),
-            eR = !(0, S.TW)(ea),
+            eR = !(0, N.TW)(ea),
             eP = eR && ev,
             eD = ex?.last_granted_reward,
             ej = ex?.last_granted_reward_amount,
@@ -139,17 +139,17 @@ let ee = new Set([o.M.PREMIUM_WISHLIST_COACHMARK]),
             e$ = eu?.trial_id === Q.Dw,
             eQ = [],
             eX = [];
-        (0, _.Tc)() && (eS && eQ.push(o.M.RECURRING_3P_PROMOTION_POPOVER), em && eQ.push(o.M.BOGO_2025_NITRO_TAB_BADGE));
+        (0, _.Tc)() && (eN && eQ.push(o.M.RECURRING_3P_PROMOTION_POPOVER), em && eQ.push(o.M.BOGO_2025_NITRO_TAB_BADGE));
         let [eZ, eJ] = (0, g.kn)(eQ, void 0, !0);
         eG && eX.push(o.M.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK), ep && (eO || eL ? eX.push(o.M.PREMIUM_GROUP_POPOVER_UPSELL_V2) : eX.push(o.M.PREMIUM_GROUP_POPOVER)), eP && eX.push(o.M.PREMIUM_ORBS_UPSELL_POPOVER), eU && eX.push(o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER), eB && eX.push(o.M.L_3PP_NITRO_TOOLTIP), eH && eX.push(o.M.L_3PP_NON_NITRO_POPOVER), ek && eX.push(o.M.PREMIUM_WISHLIST_COACHMARK);
         let [e0, e1] = (0, g.kn)(eX, void 0, !0), e7 = (0, U.c)(a.C.PREMIUM_TAB), e9 = (0, U.c)(a.C.PREMIUM_TAB_TOOLTIP), e6 = (0, U.c)(a.C.PREMIUM_TAB_POPOVER), [e5, e2] = (0, g.Cc)(null != e7 && "premiumTab" === e7.properties.properties.oneofKind ? o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, e7?.promotionId ?? "", void 0, !0), [e3, e4] = (0, g.Cc)(null != e6 && "premiumTabPopover" === e6.properties.properties.oneofKind ? o.M.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL : null, e6?.promotionId ?? "", void 0, !0), [e8, te] = (0, g.Cc)(ew ? o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER : null, eD ?? "", void 0, !0), tt = null != e9 && "premiumTabTooltip" === e9.properties.properties.oneofKind && e5 === o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, tn = eB && e0 === o.M.L_3PP_NITRO_TOOLTIP, ti = eH && e0 === o.M.L_3PP_NON_NITRO_POPOVER;
-        if (r.useEffect(() => {
+        if (l.useEffect(() => {
                 !0 === x && (null != eZ && eJ(Z.i.AUTO_DISMISS), null == e0 || ee.has(e0) || e1(Z.i.AUTO_DISMISS), null != e5 && e2(Z.i.AUTO_DISMISS), null != e8 && te(Z.i.AUTO_DISMISS), null != e3 && e4(Z.i.AUTO_DISMISS), eI && ef(Z.i.AUTO_DISMISS))
             }, [eJ, x, eZ, e1, e0, e5, e2, e8, te, e3, e4, eI, ef]), !et({
                 selected: x
             })) return null;
-        let tr = () => {
-            eq === o.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL && ez(Z.i.TAKE_ACTION), N.default.track(X.HAw.NITRO_TAB_VISITED, {
+        let tl = () => {
+            eq === o.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL && ez(Z.i.TAKE_ACTION), S.default.track(X.HAw.NITRO_TAB_VISITED, {
                 badge_decorator: n,
                 has_premium: eo
             }), null != eZ && eJ(Z.i.USER_DISMISS), null != e5 && e2(Z.i.USER_DISMISS), (e0 === o.M.PREMIUM_GROUP_POPOVER || e0 === o.M.PREMIUM_GROUP_POPOVER_UPSELL_V2) && e1(Z.i.USER_DISMISS), e0 === o.M.L_3PP_NITRO_TOOLTIP && e1(Z.i.USER_DISMISS), e0 === o.M.L_3PP_NON_NITRO_POPOVER && e1(Z.i.USER_DISMISS), eI && ef(Z.i.USER_DISMISS)
@@ -161,8 +161,8 @@ let ee = new Set([o.M.PREMIUM_WISHLIST_COACHMARK]),
             messageStyle: A.yE.SHORT_TIME,
             upperCase: !0
         }));
-        let tl = e0 === o.M.PREMIUM_GROUP_POPOVER || e0 === o.M.PREMIUM_GROUP_POPOVER_UPSELL_V2,
-            ta = ep && tl;
+        let tr = e0 === o.M.PREMIUM_GROUP_POPOVER || e0 === o.M.PREMIUM_GROUP_POPOVER_UPSELL_V2,
+            ta = ep && tr;
         if (ta) t = (0, i.jsx)(c.Exy, {
             type: "new",
             variant: "expressive"
@@ -184,8 +184,8 @@ let ee = new Set([o.M.PREMIUM_WISHLIST_COACHMARK]),
         } else eZ === o.M.RECURRING_3P_PROMOTION_POPOVER ? (t = (0, i.jsx)(c.Exy, {
             type: "new",
             variant: "expressive"
-        }), n = 4, tr = () => {
-            N.default.track(X.HAw.NITRO_TAB_VISITED, {
+        }), n = 4, tl = () => {
+            S.default.track(X.HAw.NITRO_TAB_VISITED, {
                 badge_decorator: n,
                 has_premium: eo
             }), eJ(Z.i.USER_DISMISS)
@@ -228,11 +228,11 @@ let ee = new Set([o.M.PREMIUM_WISHLIST_COACHMARK]),
                 text: J.intl.string(J.t.RDE0Sc)
             },
             variant: "expressive"
-        }), tr = () => {
-            N.default.track(X.HAw.NITRO_TAB_VISITED, {
+        }), tl = () => {
+            S.default.track(X.HAw.NITRO_TAB_VISITED, {
                 badge_decorator: n,
                 has_premium: eo
-            }), (0, F.ne)(eN)
+            }), (0, F.ne)(eS)
         }, n = 6);
         let ts = z.L.NONE;
         e3 === o.M.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL ? ts = z.L.MARKETING_MOMENT_POPOVER : eG && e0 === o.M.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK && 8 === n ? ts = z.L.CHURN_DISCOUNT : ta && !eL ? ts = z.L.PREMIUM_GROUP : ta && eL ? ts = z.L.PREMIUM_GROUP_TOOLTIP : eP && e0 === o.M.PREMIUM_ORBS_UPSELL_POPOVER ? ts = z.L.ORBS_UPSELL : eU && e0 === o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER ? ts = z.L.ORBS_INTRO : ew && e8 === o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER ? ts = z.L.ORBS_DROP : tt ? ts = z.L.TOOLTIP : tn ? ts = z.L.L_PREMIUM_SUB_TOOLTIP : ti ? ts = z.L.L_UPSELL : e_ || eu?.trial_id === Q.Tt ? ts = z.L.REVERSE_TRIAL : eI && (ts = z.L.ORBS_MULTIPLIER);
@@ -246,7 +246,7 @@ let ee = new Set([o.M.PREMIUM_WISHLIST_COACHMARK]),
             text: (0, i.jsx)(d.A, {
                 children: ed ? J.intl.string(J.t["4gwVVn"]) : J.intl.string(J.t.Ipxkog)
             }),
-            locationState: er,
+            locationState: el,
             onClick: () => {
                 if (tn) {
                     let e = new URLSearchParams({
@@ -254,9 +254,9 @@ let ee = new Set([o.M.PREMIUM_WISHLIST_COACHMARK]),
                     }).toString();
                     (0, I.pX)(ei.includes("?") ? `${ei}&${e}` : `${ei}?${e}`)
                 }
-                tr()
+                tl()
             },
-            ...el,
+            ...er,
             ...ec,
             children: t
         });

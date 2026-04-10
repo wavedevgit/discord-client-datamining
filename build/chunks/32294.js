@@ -3,8 +3,8 @@ let i;
 n.d(t, {
     A: () => x
 });
-var r = n(73153),
-    l = n(31728),
+var l = n(73153),
+    r = n(31728),
     a = n(272355),
     s = n(933958),
     o = n(313961),
@@ -25,10 +25,10 @@ var r = n(73153),
 function T() {
     let e = i;
     if (null == e || !m.A.isOpen(e)) return !1;
-    r.h.wait(() => l.VN(e)), g.A.getRTCConnection()?.setPipOpen(!1), i = null
+    l.h.wait(() => r.VN(e)), g.A.getRTCConnection()?.setPipOpen(!1), i = null
 }
 
-function N() {
+function S() {
     let e = g.A.getChannelId(),
         t = i === e;
     if (function() {
@@ -47,16 +47,16 @@ function N() {
         }()) return T();
     if (t || T(), null == e) return !1;
     let n = A.A.getChannel(e);
-    return !(null == n || m.A.isOpen(e)) && (r.h.wait(() => l.ho(n.id, f.o1q.VIDEO, {
+    return !(null == n || m.A.isOpen(e)) && (l.h.wait(() => r.ho(n.id, f.o1q.VIDEO, {
         channel: n
     })), g.A.getRTCConnection()?.setPipOpen(!0), void(i = e))
 }
-class S extends a.A {
+class N extends a.A {
     _initialize() {
-        p.A.addChangeListener(N), E.A.addChangeListener(N), g.A.addChangeListener(N), I.A.addChangeListener(N), h.A.addChangeListener(N), u.A.addChangeListener(N), c.A.addChangeListener(N), _.Ay.addChangeListener(N), s.Ay.addChangeListener(N), o.A.addChangeListener(N)
+        p.A.addChangeListener(S), E.A.addChangeListener(S), g.A.addChangeListener(S), I.A.addChangeListener(S), h.A.addChangeListener(S), u.A.addChangeListener(S), c.A.addChangeListener(S), _.Ay.addChangeListener(S), s.Ay.addChangeListener(S), o.A.addChangeListener(S)
     }
     _terminate() {
-        p.A.removeChangeListener(N), E.A.removeChangeListener(N), g.A.removeChangeListener(N), I.A.removeChangeListener(N), h.A.removeChangeListener(N), u.A.removeChangeListener(N), c.A.removeChangeListener(N), _.Ay.removeChangeListener(N), s.Ay.removeChangeListener(N), o.A.removeChangeListener(N)
+        p.A.removeChangeListener(S), E.A.removeChangeListener(S), g.A.removeChangeListener(S), I.A.removeChangeListener(S), h.A.removeChangeListener(S), u.A.removeChangeListener(S), c.A.removeChangeListener(S), _.Ay.removeChangeListener(S), s.Ay.removeChangeListener(S), o.A.removeChangeListener(S)
     }
 }
-let x = new S
+let x = new N

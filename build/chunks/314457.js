@@ -3,8 +3,8 @@ n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(621248),
+    l = n(64700),
+    r = n(621248),
     a = n(926466),
     s = n(997509),
     o = n(652215),
@@ -13,8 +13,8 @@ var i = n(627968),
 let u = e => {
     let {
         guild: t
-    } = e, n = r.useCallback(() => {
-        (0, l.J)(t.id)
+    } = e, n = l.useCallback(() => {
+        (0, r.J)(t.id)
     }, [t.id]);
     return (0, i.jsx)(a.A, {
         guild: t,

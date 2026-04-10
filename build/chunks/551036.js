@@ -3,8 +3,8 @@ n.d(t, {
     A: () => O
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(607399),
+    l = n(64700),
+    r = n(607399),
     a = n(311907),
     s = n(397927),
     o = n(323082),
@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(514179),
     C = n(715837),
     T = n(457830),
-    N = n(167010),
-    S = n(139613),
+    S = n(167010),
+    N = n(139613),
     x = n(746080),
     v = n(985018),
     b = n(369717);
@@ -38,13 +38,13 @@ function y(e) {
     (0, c.HU)({
         subsection: v.intl.string(v.t["KzCF/6"]),
         location: n?.name
-    }), (0, d.A)(l.Fr ? "role-subscriptions-overview" : void 0);
+    }), (0, d.A)(r.Fr ? "role-subscriptions-overview" : void 0);
     let w = y && (null == n || !(O || L) || D && !j);
-    if (r.useEffect(() => {
+    if (l.useEffect(() => {
             o.hP()
-        }, []), r.useEffect(() => {
-            w && !l.Fr && (0, u.B)(t, x.VV.ROLE_SUBSCRIPTIONS)
-        }, [t, w]), l.Fr && w) {
+        }, []), l.useEffect(() => {
+            w && !r.Fr && (0, u.B)(t, x.VV.ROLE_SUBSCRIPTIONS)
+        }, [t, w]), r.Fr && w) {
         let e = null == n ? T.b.NOT_GUILD_MEMBER : T.b.GUILD_NOT_ELIGIBLE;
         return (0, i.jsx)(T.k, {
             errorType: e
@@ -53,7 +53,7 @@ function y(e) {
     return (0, i.jsxs)("div", {
         className: b.kL,
         children: [(0, i.jsxs)(m.A, {
-            toolbar: (0, i.jsx)(r.Fragment, {}),
+            toolbar: (0, i.jsx)(l.Fragment, {}),
             className: b.jr,
             children: [(0, i.jsx)(m.A.Icon, {
                 icon: (0, s.kHD)(f.A),
@@ -62,7 +62,7 @@ function y(e) {
                 children: v.intl.string(v.t["KzCF/6"])
             })]
         }), (0, i.jsx)("div", {
-            id: S.K
+            id: N.K
         }), (0, i.jsx)("div", {
             className: b.Qs,
             children: O ? (0, i.jsx)(s.d_W, {
@@ -73,7 +73,7 @@ function y(e) {
                         guild: n
                     })
                 })
-            }) : (0, i.jsx)(N.A, {})
+            }) : (0, i.jsx)(S.A, {})
         })]
     })
 }

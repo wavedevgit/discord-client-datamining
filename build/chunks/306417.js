@@ -54,7 +54,7 @@ function T(e) {
     })
 }
 
-function y(e) {
+function N(e) {
     let {
         className: t,
         children: n
@@ -73,7 +73,7 @@ function y(e) {
     })
 }
 
-function N(e) {
+function y(e) {
     let {
         className: t,
         onClick: n,
@@ -134,7 +134,7 @@ function j(e) {
     }).with({
         answersInteraction: f.CQ.RADIO_BUTTONS
     }, () => ({
-        ContainerComponent: y,
+        ContainerComponent: N,
         answerElementType: 1
     })).with({
         answersInteraction: f.CQ.CHECKBOXES
@@ -200,7 +200,7 @@ function L(e) {
                 children: s
             });
         case 2:
-            return (0, i.jsx)(N, {
+            return (0, i.jsx)(y, {
                 className: r()(t, m),
                 onClick: h,
                 isSelected: _,

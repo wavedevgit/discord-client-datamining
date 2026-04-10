@@ -3,16 +3,16 @@ n.d(t, {
     p: () => c
 });
 var i = n(554146),
-    r = n(192308),
-    l = n(771781),
+    l = n(192308),
+    r = n(771781),
     a = n(932001),
     s = n(245853),
     o = n(654487),
     d = n(49999);
 
 function c() {
-    let e = (0, r.useHasAnyModalOpen)(),
-        t = (0, l.Ay)(e => e.postConnectionOpen),
+    let e = (0, l.useHasAnyModalOpen)(),
+        t = (0, r.Ay)(e => e.postConnectionOpen),
         {
             shouldShowBonusOrbsUX: n,
             multiplier: c

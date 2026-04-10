@@ -49,7 +49,7 @@ function I(e) {
     } = e, I = (0, h.Ic)(t), v = t.userStatus?.claimedAt != null, b = (0, _.S5)(t.config.expiresAt, {
         month: "numeric",
         day: "numeric"
-    }), T = (0, o.bG)([m.A], () => m.A.getQuestHomeHero()), y = l.useMemo(() => null != T && (0, p.I0)(T, t.id), [T, t.id]), N = (0, c.Ay)(), S = (0, a.Mwr)(N) ? "text-muted" : "always-white";
+    }), T = (0, o.bG)([m.A], () => m.A.getQuestHomeHero()), N = l.useMemo(() => null != T && (0, p.I0)(T, t.id), [T, t.id]), y = (0, c.Ay)(), S = (0, a.Mwr)(y) ? "text-muted" : "always-white";
     return (0, i.jsxs)("div", {
         className: C.kL,
         children: [(0, i.jsx)("div", {
@@ -72,12 +72,12 @@ function I(e) {
                 className: C.PG,
                 children: [(0, i.jsxs)("div", {
                     className: C.mY,
-                    children: [(y || t.preview) && (0, i.jsxs)(a.BJc, {
+                    children: [(N || t.preview) && (0, i.jsxs)(a.BJc, {
                         className: C.Bv,
                         direction: "horizontal",
                         fullWidth: !1,
                         gap: 8,
-                        children: [y && !I && (0, i.jsx)(E, {
+                        children: [N && !I && (0, i.jsx)(E, {
                             children: f.intl.string(f.t.Jt6u7B)
                         }), t.preview && (0, i.jsx)(E, {
                             variant: "brand",

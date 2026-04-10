@@ -46,13 +46,13 @@ var i = n(627968),
     Y = n(243612),
     W = n(578093),
     B = n(296064),
-    X = n(20796),
-    Z = n(67103),
+    Z = n(20796),
+    X = n(67103),
     K = n(576420),
     $ = n(70191),
     q = n(652215),
-    Q = n(985018),
-    J = n(925031);
+    J = n(985018),
+    Q = n(925031);
 let ee = u._3J.SIZE_32,
     et = [_.iq, _.tR, _.K7, _.sp, _.MK];
 
@@ -81,16 +81,16 @@ function en(e) {
         }) ?? [], (e, t) => null != e.application_id && null != t.application_id && e.application_id === t.application_id || null != e.name && null != t.name && e.name === t.name), [o, x?.name]),
         C = N?.[0];
     return (0, i.jsxs)("div", {
-        className: J.fE,
+        className: Q.fE,
         children: [(t = N?.length > 0, (0, i.jsxs)("div", {
-            className: J._9,
+            className: Q._9,
             children: [!t && !T && null != p && (0, i.jsxs)("div", {
-                className: J.j1,
+                className: Q.j1,
                 children: [(0, i.jsx)(M.Ay, {
                     guild: p,
                     iconSize: 14
                 }), (0, i.jsx)(u.Text, {
-                    className: J.J5,
+                    className: Q.J5,
                     variant: s,
                     color: "currentColor",
                     lineClamp: 1,
@@ -103,12 +103,12 @@ function en(e) {
                 size: "custom",
                 color: g,
                 channel: n,
-                className: J.WT
+                className: Q.WT
             }), (0, i.jsx)(u.Text, {
                 variant: s,
                 color: "currentColor",
                 lineClamp: 1,
-                className: J.Qo,
+                className: Q.Qo,
                 children: m
             })]
         })), (() => {
@@ -117,10 +117,10 @@ function en(e) {
                 text: e
             } = (0, c.A)(C, !1), t = (0, A.f)(C);
             return null == e && null == t ? null : (0, i.jsxs)("div", {
-                className: J._9,
+                className: Q._9,
                 children: [null != t ? (0, i.jsx)(f.A, {
                     icon: t,
-                    className: J.WT
+                    className: Q.WT
                 }) : void 0, null != e ? (0, i.jsx)(u.Text, {
                     variant: s,
                     color: "text-status-online",
@@ -157,7 +157,7 @@ function ei(e) {
             t = r ?? "no-relationship",
             n = o ? "suggestion" : "not-suggestion";
         return `friends-widget-friend-row:${E}:${e}:${t}:${n}`
-    }, [I, o, r, E]), y = (0, a.yK)([P.A], () => P.A.getActivities().filter(e => e.type === q.$pd.PLAYING && null != e.application_id)), {
+    }, [I, o, r, E]), y = (0, a.yK)([P.A], () => [...P.A.getActivities(!0), ...P.A.getHiddenActivities()].filter(e => e.type === q.$pd.PLAYING && null != e.application_id)), {
         voiceChannel: M
     } = (0, g.A)({
         userId: t.id
@@ -191,7 +191,7 @@ function ei(e) {
                 };
             return (0, i.jsx)(_.mG, {
                 location: _.N5.FRIENDS_POPOUT,
-                className: J.cV,
+                className: Q.cV,
                 children: et.map((e, n) => (0, i.jsx)(e, {
                     entry: t
                 }, n))
@@ -248,7 +248,7 @@ function ei(e) {
         renderSubtext: H,
         renderUserContextMenu: l.useCallback(e => {
             f?.({
-                type: Z.K.FRIEND_ROW,
+                type: X.K.FRIEND_ROW,
                 event: e,
                 user: t,
                 friendGroupId: I
@@ -312,9 +312,9 @@ let er = l.memo(e => {
     }), F = (0, T.A)({
         userId: t.id,
         guildId: k
-    }), Q = V.Ay.useName(k, P, t), et = l.useCallback(e => {
+    }), J = V.Ay.useName(k, P, t), et = l.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), d?.({
-            type: Z.c.OPEN_DIRECT_MESSAGE,
+            type: X.c.OPEN_DIRECT_MESSAGE,
             userId: t.id
         }), r?.()
     }, [r, d, t.id]), en = n.some($.A), er = (0, Y.b4)(), es = l.useMemo(() => {
@@ -327,21 +327,21 @@ let er = l.memo(e => {
             tab: z.x.FRIENDS,
             targetId: t.id
         }, "favorite")), r && l.push((0, i.jsx)(B.r, {
-            userId: t.id,
+            user: t,
             friendActivities: n,
             currentUserPlayingActivities: O,
             gameProfileEntry: _,
             onPrimaryAction: d
         }, "game-action")), en && l.push((0, i.jsx)("div", {
-            className: J.im,
-            children: (0, i.jsx)(X.B, {
+            className: Q.im,
+            children: (0, i.jsx)(Z.B, {
                 activities: n,
                 gameProfileEntry: _,
                 gameIconSize: v.M.SMALL,
                 platformIconSizePx: 24
             })
         }, "activity-icon")), l.length > 0 ? l : null
-    }, [n, O, _, en, es, d, t.id]);
+    }, [n, O, _, en, es, d, t]);
     return (0, i.jsx)(H.D, {
         listItemId: S,
         outerRef: x,
@@ -359,18 +359,18 @@ let er = l.memo(e => {
             isMobile: y,
             isTyping: !1,
             status: M,
-            className: J.my,
+            className: Q.my,
             "aria-label": t.username,
             statusTooltip: !0,
             avatarDecoration: I
         }),
         primaryText: (0, i.jsxs)("div", {
-            className: J.QV,
+            className: Q.QV,
             children: [(0, i.jsx)(C.A, {
-                userName: Q,
+                userName: J,
                 displayNameStyles: F,
                 effectDisplayType: N.G.STATIC,
-                textClassName: J.Xh
+                textClassName: Q.Xh
             }), (0, i.jsx)(R.Ay, {
                 userId: t.id,
                 disableGuildProfile: !0
@@ -428,31 +428,31 @@ let es = l.memo(e => {
     }, []);
     let G = l.useCallback(e => {
             e.preventDefault(), e.stopPropagation(), c?.({
-                type: Z.c.OPEN_DIRECT_MESSAGE,
+                type: X.c.OPEN_DIRECT_MESSAGE,
                 userId: t.id
             })
         }, [c, t.id]),
         P = l.useCallback(e => {
             e.preventDefault(), e.stopPropagation(), j || (k(), c?.({
-                type: Z.c.ACCEPT_FRIEND_REQUEST,
+                type: X.c.ACCEPT_FRIEND_REQUEST,
                 userId: t.id
             }))
         }, [t.id, c, j, k]),
         F = l.useCallback(e => {
             e.preventDefault(), e.stopPropagation(), j || (k(), c?.({
-                type: Z.c.DECLINE_FRIEND_REQUEST,
+                type: X.c.DECLINE_FRIEND_REQUEST,
                 userId: t.id
             }))
         }, [t.id, c, j, k]),
         z = l.useCallback(e => {
             e.preventDefault(), e.stopPropagation(), j || (k(), c?.({
-                type: Z.c.CANCEL_FRIEND_REQUEST,
+                type: X.c.CANCEL_FRIEND_REQUEST,
                 userId: t.id
             }))
         }, [t.id, c, j, k]),
         Y = l.useCallback(e => {
             e.preventDefault(), e.stopPropagation(), j || (k(), c?.({
-                type: Z.c.SEND_FRIEND_REQUEST,
+                type: X.c.SEND_FRIEND_REQUEST,
                 userId: t.id
             }))
         }, [t.id, c, j, k]),
@@ -479,7 +479,7 @@ let es = l.memo(e => {
             isMobile: S,
             isTyping: !1,
             status: x,
-            className: J.my,
+            className: Q.my,
             "aria-label": t.username,
             statusTooltip: !0,
             avatarDecoration: f
@@ -488,13 +488,13 @@ let es = l.memo(e => {
             userName: w,
             displayNameStyles: O,
             effectDisplayType: N.G.PLAIN,
-            textClassName: J.Xh
+            textClassName: Q.Xh
         }),
         secondaryText: M(),
         rightActions: () => (0, i.jsxs)(i.Fragment, {
             children: [W ? (0, i.jsx)("div", {
-                className: J.im,
-                children: (0, i.jsx)(X.B, {
+                className: Q.im,
+                children: (0, i.jsx)(Z.B, {
                     activities: n,
                     gameProfileEntry: E,
                     gameIconSize: v.M.XSMALL,
@@ -502,9 +502,9 @@ let es = l.memo(e => {
                 })
             }) : null, r === q.eA$.PENDING_INCOMING ? (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(o.m_, {
-                    text: Q.intl.string(Q.t.MMlhsr),
+                    text: J.intl.string(J.t.MMlhsr),
                     children: (0, i.jsx)(u.K0, {
-                        "aria-label": Q.intl.string(Q.t.MMlhsr),
+                        "aria-label": J.intl.string(J.t.MMlhsr),
                         size: "sm",
                         variant: "secondary",
                         icon: u.A9s,
@@ -512,9 +512,9 @@ let es = l.memo(e => {
                         disabled: j
                     })
                 }), (0, i.jsx)(o.m_, {
-                    text: Q.intl.string(Q.t.ytCpKs),
+                    text: J.intl.string(J.t.ytCpKs),
                     children: (0, i.jsx)(u.K0, {
-                        "aria-label": Q.intl.string(Q.t.ytCpKs),
+                        "aria-label": J.intl.string(J.t.ytCpKs),
                         size: "sm",
                         variant: "secondary",
                         icon: u.PGe,
@@ -523,9 +523,9 @@ let es = l.memo(e => {
                     })
                 })]
             }) : r === q.eA$.PENDING_OUTGOING ? (0, i.jsx)(o.m_, {
-                text: Q.intl.string(Q.t["bTfA//"]),
+                text: J.intl.string(J.t["bTfA//"]),
                 children: (0, i.jsx)(u.K0, {
-                    "aria-label": Q.intl.string(Q.t["bTfA//"]),
+                    "aria-label": J.intl.string(J.t["bTfA//"]),
                     size: "sm",
                     variant: "secondary",
                     icon: u.lI8,
@@ -533,9 +533,9 @@ let es = l.memo(e => {
                     disabled: j
                 })
             }) : s ? (0, i.jsx)(o.m_, {
-                text: Q.intl.string(Q.t.w5uwoI),
+                text: J.intl.string(J.t.w5uwoI),
                 children: (0, i.jsx)(u.K0, {
-                    "aria-label": Q.intl.string(Q.t.w5uwoI),
+                    "aria-label": J.intl.string(J.t.w5uwoI),
                     size: "sm",
                     variant: "secondary",
                     icon: u.Rvf,

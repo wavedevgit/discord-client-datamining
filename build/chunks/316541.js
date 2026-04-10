@@ -283,7 +283,7 @@ function B() {
     P()
 }
 
-function X(e) {
+function Z(e) {
     let t = o.A.getChannel(e);
     if (null == t) return !1;
     let n = t.getGuildId?.() ?? null;
@@ -292,7 +292,7 @@ function X(e) {
         l = null != O.getChannel(e);
     return i && b.delete(e), l && O.delete(e), i || l
 }
-class Z extends l.Ay.Store {
+class X extends l.Ay.Store {
     static displayName = "OverlayActiveNowStore";
     initialize() {
         this.waitFor(o.A, u.A, T.A, S.default, d.A, h.Ay, c.A, s.A, m.default, g.Ay, f.A)
@@ -353,7 +353,7 @@ class Z extends l.Ay.Store {
     }
 }
 let K = e => (0, _.v$)(e, "OverlayActiveNowStore"),
-    $ = new Z(r.h, __OVERLAY__ ? {} : {
+    $ = new X(r.h, __OVERLAY__ ? {} : {
         OVERLAY_FRIENDS_WIDGET_SET_FAVORITE: K(function(e) {
             if (e.tab !== E.x.MESSAGES) return !1;
             let t = e.targetId;
@@ -550,20 +550,20 @@ let K = e => (0, _.v$)(e, "OverlayActiveNowStore"),
             return !(null == n || n.isPrivate()) && (R = n.getGuildId?.() ?? null, P(), !0)
         }),
         USER_GUILD_SETTINGS_CHANNEL_UPDATE: K(function(e) {
-            return X(e.channelId)
+            return Z(e.channelId)
         }),
         USER_GUILD_SETTINGS_GUILD_UPDATE: K(function(e) {
             let t = e.guildId,
                 n = !1;
-            for (let e of b.getSortedChannels()) e.candidate.guildId === t && (n = X(e.candidate.channelId) || n);
-            for (let e of O.getSortedChannels()) e.candidate.guildId === t && (n = X(e.candidate.channelId) || n);
+            for (let e of b.getSortedChannels()) e.candidate.guildId === t && (n = Z(e.candidate.channelId) || n);
+            for (let e of O.getSortedChannels()) e.candidate.guildId === t && (n = Z(e.candidate.channelId) || n);
             return n
         }),
         USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: K(function(e) {
             let t = e.guildId,
                 n = !1;
-            for (let e of b.getSortedChannels()) e.candidate.guildId === t && (n = X(e.candidate.channelId) || n);
-            for (let e of O.getSortedChannels()) e.candidate.guildId === t && (n = X(e.candidate.channelId) || n);
+            for (let e of b.getSortedChannels()) e.candidate.guildId === t && (n = Z(e.candidate.channelId) || n);
+            for (let e of O.getSortedChannels()) e.candidate.guildId === t && (n = Z(e.candidate.channelId) || n);
             return n
         }),
         LOGOUT: K(function() {

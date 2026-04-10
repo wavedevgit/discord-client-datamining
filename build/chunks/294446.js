@@ -4,8 +4,8 @@ n.d(t, {
 }), n(323874), n(14289), n(35956);
 var i = n(627968);
 n(64700);
-var r = n(397927),
-    l = n(851907),
+var l = n(397927),
+    r = n(851907),
     a = n(587895),
     s = n(200330),
     o = n(321987),
@@ -30,8 +30,8 @@ let p = (0, h.A)(e => {
         state: f,
         guildId: C,
         channelId: T,
-        prompt: N,
-        disableGuildSelect: S,
+        prompt: S,
+        disableGuildSelect: N,
         disclosures: x,
         integrationType: v,
         pid: b,
@@ -39,31 +39,31 @@ let p = (0, h.A)(e => {
     } = e, O = `OAuth2Authorize_${t}_${C}_${T}`, L = null != v ? n?.get(v) : void 0, R = L?.application ?? a.A.getApplication(t);
     return new Promise((e, a) => {
         let L = (0, _.d5)(b),
-            P = r.SYi;
-        null != R && null != (0, l.Ay)({
+            P = l.SYi;
+        null != R && null != (0, r.Ay)({
             application: R,
             channelId: T
-        }) ? P = r.KX8 : L.context === m.BRT.POPOUT && (P = r.KX8);
+        }) ? P = l.KX8 : L.context === m.BRT.POPOUT && (P = l.KX8);
         let D = !1,
             j = n => {
                 let {
-                    clientId: l,
+                    clientId: r,
                     location: s
                 } = n;
-                if (null == l || l === t) {
+                if (null == r || r === t) {
                     if (D = !0, null == s) {
                         a(new A.A({
                             errorCode: m.Lw6.OAUTH2_ERROR
                         }, "OAuth2 Error: No location provided")), L.lock();
                         return
-                    }(e(s), null == p || null == R) ? L.lock(): null == new URL(s).searchParams.get("error") ? (0, r.qfG)(e => (0, i.jsx)(d.Sm, {
+                    }(e(s), null == p || null == R) ? L.lock(): null == new URL(s).searchParams.get("error") ? (0, l.qfG)(e => (0, i.jsx)(d.Sm, {
                         application: R,
                         ...e
                     }), {
                         onCloseCallback: () => {
                             L.lock()
                         }
-                    }, P) : (0, r.qfG)(e => (0, i.jsx)(d.xb, {
+                    }, P) : (0, l.qfG)(e => (0, i.jsx)(d.xb, {
                         ...e
                     }), {
                         onCloseCallback: () => {
@@ -76,7 +76,7 @@ let p = (0, h.A)(e => {
                 cleanup: M
             } = function(e, t) {
                 function n() {
-                    (0, r.OoC)(e) && (0, r.qfG)(e => (0, i.jsx)(o.f, {
+                    (0, l.OoC)(e) && (0, l.qfG)(e => (0, i.jsx)(o.f, {
                         ...e,
                         title: g.intl.string(g.t.j2d6Km),
                         subtitle: g.intl.string(g.t["4LKmN5"]),
@@ -92,7 +92,7 @@ let p = (0, h.A)(e => {
                     }
                 }
             }(O, y);
-        (0, r.qfG)(e => (0, i.jsx)(s.OAuth2AuthorizeModal, {
+        (0, l.qfG)(e => (0, i.jsx)(s.OAuth2AuthorizeModal, {
             ...e,
             authorizations: n,
             clientId: t,
@@ -107,8 +107,8 @@ let p = (0, h.A)(e => {
             permissions: u,
             guildId: C,
             channelId: T,
-            prompt: N,
-            disableGuildSelect: "boolean" == typeof S ? S : "true" === S,
+            prompt: S,
+            disableGuildSelect: "boolean" == typeof N ? N : "true" === N,
             integrationType: v,
             cancelCompletesFlow: !0
         }), {
@@ -122,7 +122,7 @@ let p = (0, h.A)(e => {
     })
 }, function(e, t, n) {
     if ((0, _.kS)(n) || !c.isPlatformEmbedded) return;
-    let i = (0, l.Ay)({
+    let i = (0, r.Ay)({
         application: e,
         channelId: t
     });

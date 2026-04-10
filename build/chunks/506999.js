@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(397927),
-    l = n(985018),
+var l = n(397927),
+    r = n(985018),
     a = n(872146);
 let s = e => {
     let {
@@ -15,26 +15,26 @@ let s = e => {
         className: a.kL,
         children: [(0, i.jsx)("div", {
             className: a.zc,
-            children: (0, i.jsx)(r.Pfh, {
+            children: (0, i.jsx)(l.Pfh, {
                 size: "md",
-                color: r.LU0.colors.WHITE.css
+                color: l.LU0.colors.WHITE.css
             })
-        }), (0, i.jsx)(r.Text, {
+        }), (0, i.jsx)(l.Text, {
             color: "text-strong",
             variant: "text-lg/semibold",
             className: a.wx,
-            children: t ? l.intl.string(l.t.hsSHh8) : l.intl.string(l.t.Wf6iij)
-        }), (0, i.jsx)(r.Text, {
+            children: t ? r.intl.string(r.t.hsSHh8) : r.intl.string(r.t.Wf6iij)
+        }), (0, i.jsx)(l.Text, {
             color: "text-default",
             variant: "text-sm/normal",
             className: a.__invalid_description,
-            children: t ? l.intl.string(l.t.FZ2J3Y) : l.intl.string(l.t.TvHcv6)
+            children: t ? r.intl.string(r.t.FZ2J3Y) : r.intl.string(r.t.TvHcv6)
         }), (0, i.jsx)("div", {
             className: a.rQ
-        }), (0, i.jsx)(r.Button, {
+        }), (0, i.jsx)(l.Button, {
             fullWidth: !0,
             variant: t ? "secondary" : "active",
-            onClick: () => (0, r.mMO)(async () => {
+            onClick: () => (0, l.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("98363").then(n.bind(n, 780086));
@@ -42,7 +42,7 @@ let s = e => {
                     ...t
                 })
             }),
-            text: t ? l.intl.string(l.t.IyjHD9) : l.intl.string(l.t["KU/aN4"])
+            text: t ? r.intl.string(r.t.IyjHD9) : r.intl.string(r.t["KU/aN4"])
         })]
     })
 }

@@ -125,12 +125,12 @@ let O = r.memo(function(e) {
             guild: V,
             user: F
         }),
-        X = z?.isPrivate() ?? !1,
-        Z = V?.name ?? "",
-        K = X ? void 0 : P,
-        $ = X ? P : "" !== Z ? Z : P,
+        Z = z?.isPrivate() ?? !1,
+        X = V?.name ?? "",
+        K = Z ? void 0 : P,
+        $ = Z ? P : "" !== X ? X : P,
         q = (() => {
-            if (null == z || X) return null;
+            if (null == z || Z) return null;
             let e = (0, h.gU)(z, V);
             return e ??= d.oyn, (0, l.jsx)(e, {
                 size: "sm",

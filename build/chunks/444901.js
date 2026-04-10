@@ -75,8 +75,8 @@ function T(e) {
         isEmbeddedApplication: p,
         tryWithGdnAction: v,
         staticBannerSrc: T,
-        onClickContent: y,
-        iconSrc: N,
+        onClickContent: N,
+        iconSrc: y,
         onView: S,
         presenceActivity: j,
         analyticsLocations: L,
@@ -135,22 +135,22 @@ function T(e) {
     return 0 === O.length ? (0, i.jsx)(b, {
         message: t,
         applicationName: s,
-        iconSrc: N,
+        iconSrc: y,
         channel: r,
         currentUserId: _,
-        viewAction: y
+        viewAction: N
     }) : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(c.h, {
             header: m,
             title: s,
             staticBannerSrc: T,
-            onClickBanner: y,
+            onClickBanner: N,
             bannerAspectRatio: c.u.ACTIVITY,
-            iconSrc: N ?? void 0,
+            iconSrc: y ?? void 0,
             info: G,
             actions: O,
             primaryActionFirst: !0,
-            onClickContent: y,
+            onClickContent: N,
             trackingConfig: {
                 id: n.id,
                 linkType: C.J.RICH_PRESENCE_INVITE,

@@ -1,12 +1,12 @@
 /** chunk id: 969492 params = (module,exports,require) **/
 n.d(t, {
-    H: () => N,
+    H: () => S,
     L: () => T
 });
-var i, r = n(627968);
+var i, l = n(627968);
 n(64700);
-var l = n(989349),
-    a = n.n(l),
+var r = n(989349),
+    a = n.n(r),
     s = n(192308),
     o = n(834269),
     d = n(333639),
@@ -24,15 +24,15 @@ var l = n(989349),
     C = n(788868),
     T = ((i = {}).NONE = "none", i.CHURN_DISCOUNT = "churn_discount", i.PREMIUM_GROUP = "premium_group", i.PREMIUM_GROUP_TOOLTIP = "premium_group_tooltip", i.ORBS_UPSELL = "orbs_upsell", i.ORBS_INTRO = "orbs_intro", i.ORBS_DROP = "orbs_drop", i.TOOLTIP = "tooltip", i.MARKETING_MOMENT_POPOVER = "marketing_moment_popover", i.L_PREMIUM_SUB_TOOLTIP = "l_premium_sub_tooltip", i.L_UPSELL = "l_upsell", i.REVERSE_TRIAL = "reverse_trial", i.ORBS_MULTIPLIER = "orbs_multiplier", i);
 
-function N(e) {
+function S(e) {
     let {
         children: t,
         popoverType: n,
         targetElementRef: i,
-        churnDiscountOffer: l,
+        churnDiscountOffer: r,
         premiumSubscription: T,
-        receivesUpdatedUpsellPopover: N,
-        orbsRewardAmount: S,
+        receivesUpdatedUpsellPopover: S,
+        orbsRewardAmount: N,
         lastGrantedRewardAmount: x,
         dismissCoachMark: v,
         dismissOrbsDropPopover: b,
@@ -44,45 +44,45 @@ function N(e) {
     if ((0, s.useHasAnyModalOpen)()) return t;
     switch (n) {
         case "churn_discount":
-            if (null != l && null != T) return (0, r.jsx)(p.A, {
+            if (null != r && null != T) return (0, l.jsx)(p.A, {
                 targetElementRef: i,
-                discountOffer: l,
+                discountOffer: r,
                 premiumSubscription: T,
                 dismissCoachmark: v,
                 children: t
             });
             break;
         case "premium_group":
-            return (0, r.jsx)(u.p, {
+            return (0, l.jsx)(u.p, {
                 targetElementRef: i,
                 dismissPopover: v,
                 children: t
             });
         case "premium_group_tooltip":
-            return (0, r.jsx)(A.A, {
+            return (0, l.jsx)(A.A, {
                 targetElementRef: i,
                 children: t
             });
         case "orbs_upsell":
-            if (N) return (0, r.jsx)(g.A, {
+            if (S) return (0, l.jsx)(g.A, {
                 targetElementRef: i,
                 dismissPopover: v,
-                numOrbs: S,
+                numOrbs: N,
                 children: t
             });
-            return (0, r.jsx)(m.A, {
+            return (0, l.jsx)(m.A, {
                 targetElementRef: i,
                 dismissPopover: v,
                 children: t
             });
         case "orbs_intro":
-            return (0, r.jsx)(h.A, {
+            return (0, l.jsx)(h.A, {
                 targetElementRef: i,
                 dismissPopover: v,
                 children: t
             });
         case "orbs_drop":
-            if (null != x) return (0, r.jsx)(_.A, {
+            if (null != x) return (0, l.jsx)(_.A, {
                 targetElementRef: i,
                 dismissPopover: b,
                 lastGrantedRewardAmount: x,
@@ -92,7 +92,7 @@ function N(e) {
         case "reverse_trial": {
             let e = R?.trial_id === C.Tt,
                 n = L ?? (R?.expires_at != null ? a()(R?.expires_at) : null);
-            if (null != n) return (0, r.jsx)(f.A, {
+            if (null != n) return (0, l.jsx)(f.A, {
                 endsAt: n,
                 variant: e ? "followup" : "initial",
                 children: t
@@ -100,27 +100,27 @@ function N(e) {
             break
         }
         case "tooltip":
-            return (0, r.jsx)(I.A, {
+            return (0, l.jsx)(I.A, {
                 children: t
             });
         case "marketing_moment_popover":
-            return (0, r.jsx)(E.A, {
+            return (0, l.jsx)(E.A, {
                 targetElementRef: i,
                 dismissPopover: y,
                 children: t
             });
         case "l_premium_sub_tooltip":
-            return (0, r.jsx)(d.e, {
+            return (0, l.jsx)(d.e, {
                 children: t
             });
         case "l_upsell":
-            return (0, r.jsx)(c.u, {
+            return (0, l.jsx)(c.u, {
                 targetElementRef: i,
                 dismissPopover: v,
                 children: t
             });
         case "orbs_multiplier":
-            return (0, r.jsx)(o.A, {
+            return (0, l.jsx)(o.A, {
                 multiplier: O,
                 children: t
             })

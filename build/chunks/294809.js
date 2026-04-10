@@ -95,8 +95,8 @@ function H(e) {
         Y = (0, u.Ay)(H ?? void 0, !0) ?? "???",
         W = H?.getGuildId?.() ?? null,
         B = (0, r.bG)([g.A], () => null != W ? g.A.getGuild(W) ?? null : null, [W]),
-        X = (0, r.bG)([E.A], () => E.A.getVoiceChannelId() === n, [n]),
-        Z = (0, r.bG)([m.A], () => null != H && (!!H.isPrivate?.() || m.A.can(U.xBc.READ_MESSAGE_HISTORY, H)), [H]),
+        Z = (0, r.bG)([E.A], () => E.A.getVoiceChannelId() === n, [n]),
+        X = (0, r.bG)([m.A], () => null != H && (!!H.isPrivate?.() || m.A.can(U.xBc.READ_MESSAGE_HISTORY, H)), [H]),
         [K] = (0, r.bG)([S.Ay], () => null == H || null == W ? [
             [], 0
         ] : [S.Ay.getVoiceStatesForChannel(H), S.Ay.getVoiceStateVersion(W)], [H, W], T.D),
@@ -108,8 +108,8 @@ function H(e) {
             }
             return null
         }, [n]),
-        Q = (0, O.A2)(n),
-        J = (0, j.X6)(H),
+        J = (0, O.A2)(n),
+        Q = (0, j.X6)(H),
         ee = l.useRef(null),
         et = l.useCallback(() => {
             let e = ee.current;
@@ -132,12 +132,12 @@ function H(e) {
             })
         }, [n, y]),
         el = l.useCallback(() => {
-            Z && y?.({
+            X && y?.({
                 type: D.c.OPEN_TEXT_CHAT_CHANNEL,
                 channelId: n,
                 guildId: W
             })
-        }, [Z, n, W, y]),
+        }, [X, n, W, y]),
         er = l.useCallback(e => {
             if ($) return void x?.(n)
         }, [n, $, x]),
@@ -164,7 +164,7 @@ function H(e) {
         ed = (0, o.rdh)(o.LU0.colors.STATUS_DANGER),
         ec = (0, o.rdh)(o.LU0.colors.TEXT_STRONG),
         eh = (0, o.rdh)(o.LU0.colors.TEXT_MUTED),
-        eg = X ? eu : eo > 0 ? ec : eh,
+        eg = Z ? eu : eo > 0 ? ec : eh,
         {
             Component: em,
             events: {
@@ -173,14 +173,14 @@ function H(e) {
             }
         } = (0, s.O)(),
         eI = () => {
-            let e = X ? L.intl.string(L.t["6vrfgt"]) : L.intl.string(L.t.S0W8Z5),
-                t = X ? ed.hex() : eu.hex(),
-                n = X ? em : o._jp;
+            let e = Z ? L.intl.string(L.t["6vrfgt"]) : L.intl.string(L.t.S0W8Z5),
+                t = Z ? ed.hex() : eu.hex(),
+                n = Z ? em : o._jp;
             return (0, i.jsx)("div", {
                 onDoubleClick: V,
                 children: (0, i.jsx)(C.S, {
                     tooltipText: e,
-                    onClick: X ? ei : en,
+                    onClick: Z ? ei : en,
                     onMouseEnter: ef,
                     onMouseLeave: eA,
                     children: (0, i.jsx)(n, {
@@ -194,11 +194,11 @@ function H(e) {
         onDoubleClick: es,
         children: [(0, i.jsx)(v.D, {
             listItemId: a,
-            recentlyAddedTimestampMs: I ? Q : null,
+            recentlyAddedTimestampMs: I ? J : null,
             onClick: er,
             onContextMenu: ea,
             avatar: null != H ? (0, i.jsx)(R.A, {
-                isTyping: J,
+                isTyping: Q,
                 guild: B ?? void 0,
                 channel: H,
                 size: R.Q.SMALL_32
@@ -212,7 +212,7 @@ function H(e) {
                 }), (0, i.jsx)(o.Text, {
                     className: k.Xh,
                     variant: "text-sm/medium",
-                    color: X ? "status-positive-text" : eo > 0 ? "text-strong" : "text-muted",
+                    color: Z ? "status-positive-text" : eo > 0 ? "text-strong" : "text-muted",
                     children: Y
                 })]
             }),

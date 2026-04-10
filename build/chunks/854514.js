@@ -5,9 +5,9 @@ n.d(t, {
     Hk: () => y
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(323889),
     o = n(311907),
     d = n(397927),
@@ -24,12 +24,12 @@ var i = n(627968),
     f = n(7832),
     C = n(654487),
     T = n(985018),
-    N = n(684027),
-    S = n(311401);
+    S = n(684027),
+    N = n(311401);
 
 function x() {
     return (0, i.jsx)("div", {
-        className: N.Np
+        className: S.Np
     })
 }
 
@@ -37,44 +37,44 @@ function v(e) {
     let {
         heroImage: t,
         heroVideo: n
-    } = e, l = r.useRef(null);
-    (0, E.A)(l, C.rE.QUEST_HOME_DESKTOP);
-    let s = r.useMemo(() => (null != n ? (0, h.WV)(n) : null) ?? t, [n, t]);
+    } = e, r = l.useRef(null);
+    (0, E.A)(r, C.rE.QUEST_HOME_DESKTOP);
+    let s = l.useMemo(() => (null != n ? (0, h.WV)(n) : null) ?? t, [n, t]);
     return null == n ? (0, i.jsxs)("div", {
-        className: N.Tv,
+        className: S.Tv,
         children: [(0, i.jsx)(x, {}), (0, i.jsx)("div", {
-            className: N.LO,
+            className: S.LO,
             children: (0, i.jsx)("img", {
-                className: N.LY,
+                className: S.LY,
                 src: t,
                 alt: ""
             })
         }), (0, i.jsx)("div", {
-            className: a()(N.LO, N.jx, N.hw),
+            className: a()(S.LO, S.jx, S.hw),
             children: (0, i.jsx)("img", {
-                className: N.LY,
+                className: S.LY,
                 src: t,
                 alt: ""
             })
         }), (0, i.jsx)("div", {
-            className: a()(N.LO, N.jx, N.Co),
+            className: a()(S.LO, S.jx, S.Co),
             children: (0, i.jsx)("img", {
-                className: N.LY,
+                className: S.LY,
                 src: t,
                 alt: ""
             })
         })]
     }) : (0, i.jsxs)("div", {
-        className: N.Tv,
+        className: S.Tv,
         children: [(0, i.jsx)(x, {}), (0, i.jsx)("div", {
-            className: N.LO,
+            className: S.LO,
             children: (0, i.jsx)(g.N, {
                 showImage: !1,
                 showVideo: !0,
-                assetRef: l,
+                assetRef: r,
                 imageAsset: {
                     alt: "",
-                    className: N.LY,
+                    className: S.LY,
                     asset: {
                         url: s,
                         mimetype: (0, h.vm)(s),
@@ -84,7 +84,7 @@ function v(e) {
                 },
                 videoAsset: {
                     alt: "",
-                    className: N.LY,
+                    className: S.LY,
                     asset: {
                         url: n,
                         mimetype: (0, h.vm)(n),
@@ -101,13 +101,13 @@ function b(e) {
     let {
         hero: t,
         onQuestCtaClick: n
-    } = e, l = (0, o.bG)([u.A], () => u.A.quests), {
+    } = e, r = (0, o.bG)([u.A], () => u.A.quests), {
         dismissQuestHomeHeroContent: a
     } = (0, f.I)();
-    r.useEffect(() => {
+    l.useEffect(() => {
         a()
     }, [a]);
-    let h = r.useMemo(() => t.questIds?.find(e => l.has(e)), [l, t.questIds]);
+    let h = l.useMemo(() => t.questIds?.find(e => r.has(e)), [r, t.questIds]);
     return (0, i.jsx)(p.R, {
         adContentId: t.id,
         adCreativeType: s.p.QUEST_HOME_HERO,
@@ -122,11 +122,11 @@ function b(e) {
                 children: [null != t.sponsorImage && (0, i.jsx)("img", {
                     src: t.sponsorImage,
                     alt: "",
-                    className: N.wm
+                    className: S.wm
                 }), (0, i.jsx)(d.Text, {
                     color: "text-strong",
                     variant: "text-sm/normal",
-                    className: N.yu,
+                    className: S.yu,
                     children: T.intl.string(T.t.OJjFi5)
                 })]
             }),
@@ -171,7 +171,7 @@ function b(e) {
 
 function y() {
     return (0, i.jsx)("div", {
-        className: a()(S.iE, S.FG, S.B3),
+        className: a()(N.iE, N.FG, N.B3),
         children: (0, i.jsx)(d.y$y, {})
     })
 }

@@ -25,8 +25,8 @@ var i = n(627968),
     v = n(201805),
     b = n(545986),
     T = n(654487),
-    y = n(652215),
-    N = n(818348),
+    N = n(652215),
+    y = n(818348),
     S = n(985018);
 
 function j(e) {
@@ -71,7 +71,7 @@ function j(e) {
             action: k
         }), [k, e.quest.id, t?.id]),
         q = l.useCallback(() => {
-            (0, d.pX)(y.BVt.QUEST_PREVIEW_TOOL_2(e.quest.id))
+            (0, d.pX)(N.BVt.QUEST_PREVIEW_TOOL_2(e.quest.id))
         }, [e.quest.id]),
         W = e.shouldShowDisclosure && e.quest.id !== T.Fw;
     return (0, i.jsxs)(r.W1t, {
@@ -82,7 +82,7 @@ function j(e) {
         },
         navId: "quests-entry",
         "aria-label": S.intl.string(S.t.ogxXGq),
-        onClose: e?.onClose ?? N.tE,
+        onClose: e?.onClose ?? y.tE,
         children: [(0, i.jsxs)(r.rXV, {
             children: [(0, i.jsx)(r.Drp, {
                 id: "play-game",

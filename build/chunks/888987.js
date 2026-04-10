@@ -51,7 +51,7 @@ function E(e) {
         [V, z] = l.useState(!0),
         [H, Y] = l.useState(!0),
         [W, B] = l.useState(!0),
-        [X, Z] = l.useState(!0);
+        [Z, X] = l.useState(!0);
     return t && !n ? null : (0, i.jsxs)("div", {
         className: s()(I.st, !r && I.Hk),
         children: [(P || !t) && (0, i.jsxs)("div", {
@@ -136,13 +136,13 @@ function E(e) {
                     children: M.current.toFixed(0)
                 })]
             })]
-        }), (X || !t) && (0, i.jsxs)("div", {
+        }), (Z || !t) && (0, i.jsxs)("div", {
             className: I.PG,
             children: [!t && (0, i.jsx)("div", {
                 className: I.On,
                 children: (0, i.jsx)(u.dOG, {
-                    checked: X,
-                    onChange: e => Z(e)
+                    checked: Z,
+                    onChange: e => X(e)
                 })
             }), (0, i.jsx)(o.m, {
                 position: "left",
