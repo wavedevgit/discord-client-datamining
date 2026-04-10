@@ -17,8 +17,8 @@ var i = n(627968),
     E = n(488926),
     T = n(661191),
     I = n(529942),
-    N = n(164956),
-    g = n(209700),
+    g = n(164956),
+    N = n(209700),
     f = n(652215),
     C = n(985018),
     h = n(698222);
@@ -29,10 +29,10 @@ function p(e) {
     } = e, n = (0, s.bG)([m.default], () => m.default.getCurrentUser()), p = (0, s.bG)([A.A], () => A.A.getGuild(t)), x = (0, s.bG)([_.A], () => _.A.getRolesSnapshot(t)), R = (0, s.bG)([_.A], () => _.A.getSortedRoles(t)), {
         impersonateType: O,
         viewingRoles: M
-    } = (0, s.cf)([N.A], () => ({
-        impersonateType: N.A.getImpersonateType(t),
-        viewingRoles: N.A.getViewingRoles(t)
-    })), D = O === g._.SERVER_SHOP, L = (0, s.bG)([d.Ay], () => null != n ? d.Ay.getTrueMember(t, n.id) : null), U = null != p ? x[(0, c.af)(p)] : null, [P, v] = l.useState(() => {
+    } = (0, s.cf)([g.A], () => ({
+        impersonateType: g.A.getImpersonateType(t),
+        viewingRoles: g.A.getViewingRoles(t)
+    })), D = O === N._.SERVER_SHOP, L = (0, s.bG)([d.Ay], () => null != n ? d.Ay.getTrueMember(t, n.id) : null), U = null != p ? x[(0, c.af)(p)] : null, [P, v] = l.useState(() => {
         let e = null == M ? [] : T.default.keys(M);
         return null != U && e.push(U.id), e
     }), y = l.useRef(p);

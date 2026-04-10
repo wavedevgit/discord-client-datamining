@@ -17,8 +17,8 @@ var i = n(627968),
     E = n(533567),
     T = n(306417),
     I = n(412136),
-    N = n(985018),
-    g = n(948762);
+    g = n(985018),
+    N = n(948762);
 
 function f() {
     return (0, i.jsx)("svg", {
@@ -51,7 +51,7 @@ function C(e) {
         })
     }
     return null != t ? (0, i.jsx)("div", {
-        className: g.ZS,
+        className: N.ZS,
         children: t
     }) : null
 }
@@ -68,7 +68,7 @@ function h(e) {
                 variant: "text-sm/semibold",
                 color: "text-default",
                 scaleFontToUserSetting: !0,
-                children: N.intl.string(N.t["a+lSZ/"])
+                children: g.intl.string(g.t["a+lSZ/"])
             });
             break;
         case "VICTOR":
@@ -77,16 +77,16 @@ function h(e) {
             } = l;
             t = (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsxs)("div", {
-                    className: g.sj,
+                    className: N.sj,
                     children: [(0, i.jsx)(c.Text, {
                         variant: "text-sm/semibold",
                         color: "text-default",
-                        className: g.Dq,
+                        className: N.Dq,
                         scaleFontToUserSetting: !0,
                         children: r
                     }), (0, i.jsx)(T.Vx, {
                         size: 16,
-                        className: g.To,
+                        className: N.To,
                         isVictor: !0,
                         isExpired: !0
                     })]
@@ -94,7 +94,7 @@ function h(e) {
                     variant: "text-xs/medium",
                     color: a,
                     scaleFontToUserSetting: !0,
-                    children: [N.intl.string(N.t.ufIDIx), " • ", s, "%"]
+                    children: [g.intl.string(g.t.ufIDIx), " • ", s, "%"]
                 })]
             });
             break;
@@ -107,7 +107,7 @@ function h(e) {
                     variant: "text-sm/semibold",
                     color: "text-default",
                     scaleFontToUserSetting: !0,
-                    children: N.intl.string(N.t.kPN9si)
+                    children: g.intl.string(g.t.kPN9si)
                 }), (0, i.jsxs)(c.Text, {
                     variant: "text-xs/medium",
                     color: a,
@@ -117,7 +117,7 @@ function h(e) {
             })
     }
     return (0, i.jsx)("div", {
-        className: g.h_,
+        className: N.h_,
         children: t
     })
 }
@@ -143,8 +143,8 @@ function p(e) {
         }
     })(n), [n]), o = null != n.victorEmoji || "NO_VOTES" === s.type;
     return (0, i.jsxs)("div", {
-        className: r()(g.kL, {
-            [g.FS]: o
+        className: r()(N.kL, {
+            [N.FS]: o
         }, t),
         children: [(0, i.jsx)(C, {
             hasNoVotes: "NO_VOTES" === s.type,
@@ -155,7 +155,7 @@ function p(e) {
             size: "sm",
             onClick: a,
             variant: "secondary",
-            text: N.intl.string(N.t.Jw7Vbf)
+            text: g.intl.string(g.t.Jw7Vbf)
         })]
     })
 }
@@ -186,14 +186,14 @@ function S(e) {
             }),
             timestamp: t.timestamp,
             compact: a,
-            children: N.intl.format(N.t.VJcK41, {
+            children: g.intl.format(g.t.VJcK41, {
                 username: f.nick,
                 usernameHook: C(f),
                 title: T,
                 titleOnClick: S
             })
         }), (0, i.jsx)(p, {
-            className: g.E6,
+            className: N.E6,
             data: d,
             onClickPollLink: r ? void 0 : S
         })]

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => x
 });
 var a = n(627968),
-    i = n(64700),
-    l = n(311907),
+    l = n(64700),
+    i = n(311907),
     r = n(397927),
     s = n(289363),
     o = n(287809),
@@ -25,7 +25,7 @@ function x(e) {
         startAuthorization: p,
         connectionApp: _,
         officialInvite: v
-    } = (0, u.c)(), A = (0, l.bG)([o.default], () => o.default.getCurrentUser()), b = i.useCallback(() => {
+    } = (0, u.c)(), A = (0, i.bG)([o.default], () => o.default.getCurrentUser()), b = l.useCallback(() => {
         t(d.Ws.LinkAccount), p({
             analyticsLocations: n
         })

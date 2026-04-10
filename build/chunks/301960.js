@@ -17,8 +17,8 @@ var i = n(627968),
     E = n(795816),
     T = n(793574),
     I = n(688810),
-    N = n(735991),
-    g = n(975412),
+    g = n(735991),
+    N = n(975412),
     f = n(168186),
     C = n(597929),
     h = n(589022),
@@ -69,8 +69,8 @@ function k(e, t, n, l, a, s) {
         showTargetAvatarPopout: E,
         onClickAvatar: T,
         onUserContextMenu: I,
-        onClickTargetAvatar: N,
-        onTargetUserContextMenu: g,
+        onClickTargetAvatar: g,
+        onTargetUserContextMenu: N,
         onPopoutRequestClose: f
     } = e;
     if (c && 1 === n) return null;
@@ -111,8 +111,8 @@ function k(e, t, n, l, a, s) {
             user: t,
             guildId: u.guild_id,
             guildAvatar: C,
-            onClick: 1 === n ? N : T,
-            onContextMenu: 1 === n ? g : I,
+            onClick: 1 === n ? g : T,
+            onContextMenu: 1 === n ? N : I,
             ref: s
         }),
         p = 1 === n ? E : m;
@@ -187,16 +187,16 @@ function H(e) {
         })), [a, n.id, n.interactionData]),
         F = (0, f.Am)(n),
         B = F?.type === A.G4.APPLICATION_COMMAND && null != F.target_user ? new p.A(F.target_user) : null,
-        V = F?.type === A.G4.APPLICATION_COMMAND && null != n.messageReference && null != e.renderTargetMessage,
-        X = (0, M.d8)(n.interaction?.user, a),
-        q = (0, M.d8)(B, a),
+        X = F?.type === A.G4.APPLICATION_COMMAND && null != n.messageReference && null != e.renderTargetMessage,
+        q = (0, M.d8)(n.interaction?.user, a),
+        V = (0, M.d8)(B, a),
         K = l.useMemo(() => e.compact ? (0, U.A)((0, O.i$)(u()(), "LT")) : null, [e.compact]),
         Y = (0, m.Gp)(a.id),
         W = n.interaction;
-    if (null == W || null == X) return null;
+    if (null == W || null == q) return null;
     let J = () => {
-        let t = k(e, W.user, 0, X, e => H(e, W.user, [T.A.AVATAR]), D),
-            n = b(e, W.user, 0, X, e => H(e, W.user));
+        let t = k(e, W.user, 0, q, e => H(e, W.user, [T.A.AVATAR]), D),
+            n = b(e, W.user, 0, q, e => H(e, W.user));
         return (0, i.jsxs)(l.Fragment, {
             children: [t, n]
         }, "user")
@@ -247,7 +247,7 @@ function H(e) {
                             children: c
                         });
                         {
-                            let e = (0, N.kF)(c);
+                            let e = (0, g.kF)(c);
                             return (0, i.jsx)(_.DUT, {
                                 ...l,
                                 tag: "span",
@@ -276,13 +276,13 @@ function H(e) {
                 children: t
             }, "command")
         }
-    }), V && null != e.renderTargetMessage ? t = (0, i.jsxs)(i.Fragment, {
+    }), X && null != e.renderTargetMessage ? t = (0, i.jsxs)(i.Fragment, {
         children: [t, (0, i.jsx)(G, {}), e.renderTargetMessage()]
     }) : null != B && (t = (0, i.jsxs)(i.Fragment, {
         children: [t, (0, i.jsx)(G, {}), (0, i.jsx)(() => {
             if (null == B) return null;
-            let t = k(e, B, 1, q, e => H(e, B, [T.A.AVATAR]), D),
-                n = b(e, B, 1, q, e => H(e, B));
+            let t = k(e, B, 1, V, e => H(e, B, [T.A.AVATAR]), D),
+                n = b(e, B, 1, V, e => H(e, B));
             return (0, i.jsxs)(l.Fragment, {
                 children: [t, n]
             }, "target")
@@ -290,7 +290,7 @@ function H(e) {
     }));
     else {
         let e = () => {
-            (0, g.A)({
+            (0, N.A)({
                 context: null != a ? {
                     type: "channel",
                     channel: a

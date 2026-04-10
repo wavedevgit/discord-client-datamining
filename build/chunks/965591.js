@@ -1,6 +1,6 @@
 /** chunk id: 965591 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => g
 });
 var i = n(627968);
 n(64700);
@@ -15,12 +15,12 @@ var r = n(503698),
     _ = n(985018),
     m = n(288492),
     p = n(67423);
-let A = function(e) {
+let g = function(e) {
     let {
         isVisible: t,
         premiumSubscription: r,
-        churnDiscountOffer: A,
-        discountedPrice: g
+        churnDiscountOffer: g,
+        discountedPrice: A
     } = e, {
         analyticsLocations: x
     } = (0, o.Ay)(c.A.CHURN_DISCOUNT_PERSISTENT_CTA), h = (0, l.zhh)({
@@ -48,15 +48,15 @@ let A = function(e) {
                     variant: "heading-md/semibold",
                     color: "text-strong",
                     children: _.intl.format(_.t["3yZP0G"], {
-                        percent: A.discount.amount
+                        percent: g.discount.amount
                     })
                 }), (0, i.jsx)(l.Text, {
                     variant: "text-sm/medium",
                     color: "text-default",
                     children: _.intl.format(_.t["3Q4wCy"], {
-                        numMonths: A.discount.user_usage_limit,
-                        discountedPrice: g,
-                        billingPeriod: (0, d.Ke)(A.discount.user_usage_limit_interval)
+                        numMonths: g.discount.user_usage_limit,
+                        discountedPrice: A,
+                        billingPeriod: (0, d.Ke)(g.discount.user_usage_limit_interval)
                     })
                 })]
             }), (0, i.jsx)(l.Button, {

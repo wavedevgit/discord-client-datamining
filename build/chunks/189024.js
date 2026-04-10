@@ -14,34 +14,34 @@ var i = n(627968),
     _ = n(793574),
     m = n(688810),
     p = n(562819),
-    A = n(793943),
-    g = n(259065),
+    g = n(793943),
+    A = n(259065),
     x = n(95035),
     h = n(532794),
     f = n(829219),
     b = n(859703),
     N = n(341915),
-    R = n(245853),
-    C = n(890687),
+    C = n(245853),
+    R = n(890687),
     v = n(590202),
-    I = n(976860),
-    E = n(591179),
-    j = n(462463),
+    E = n(976860),
+    j = n(591179),
+    I = n(462463),
     T = n(780964),
     y = n(358776),
-    O = n(858897),
+    S = n(858897),
     P = n(166403),
-    S = n(975571),
-    M = n(398523),
+    M = n(975571),
+    O = n(398523),
     D = n(881373),
     L = n(152815),
     U = n(612669),
     k = n(852218),
     B = n(161319),
     w = n(920050),
-    V = n(9458),
-    G = n(788868),
-    H = n(88001),
+    G = n(9458),
+    H = n(788868),
+    V = n(88001),
     F = n(652215),
     W = n(654487),
     z = n(653624),
@@ -49,9 +49,9 @@ var i = n(627968),
     X = n(755157),
     K = n(985018),
     q = n(547807),
-    $ = n(998663),
-    Q = n(817577),
-    Z = n(419455),
+    Q = n(998663),
+    Z = n(817577),
+    $ = n(419455),
     J = n(716925),
     ee = n(288604),
     et = n(223157),
@@ -64,29 +64,29 @@ var i = n(627968),
 function el() {
     let {
         analyticsLocations: e
-    } = (0, m.Ay)(_.A.PREMIUM_MARKETING_PERK_CARD), t = (0, E.X)("useWhatsNewPerkCards"), el = (0, d.Ay)(), ec = (0, U.O9)(), eo = (0, D.YS)({
+    } = (0, m.Ay)(_.A.PREMIUM_MARKETING_PERK_CARD), t = (0, j.X)("useWhatsNewPerkCards"), el = (0, d.Ay)(), ec = (0, U.O9)(), eo = (0, D.YS)({
         location: "useWhatsNewPerkCards"
-    }).functionalityEnabled, ed = M.A.useConfig({
+    }).functionalityEnabled, ed = O.A.useConfig({
         location: "PremiumWhatsNewSection"
-    }).enabled, eu = (0, s.bG)([P.A], () => P.A.getPremiumTypeSubscription()), e_ = eu?.hasActiveTrial ?? !1, em = (0, s.bG)([b.A], () => [...b.A.quests.values()].find(e => e.config.features.includes(W.Li.NITRO_CONTROL_CTA)) ?? null), ep = (0, j.A)({
+    }).enabled, eu = (0, s.bG)([P.A], () => P.A.getPremiumTypeSubscription()), e_ = eu?.hasActiveTrial ?? !1, em = (0, s.bG)([b.A], () => [...b.A.quests.values()].find(e => e.config.features.includes(W.Li.NITRO_CONTROL_CTA)) ?? null), ep = (0, I.A)({
         analyticsLocations: e
     }), {
-        launchInGameActivity: eA
-    } = (0, C.zW)(em), eg = (0, r.useCallback)(() => {
-        (0, O.openUserSettings)(T.X.PROFILE_PANEL, {
+        launchInGameActivity: eg
+    } = (0, R.zW)(em), eA = (0, r.useCallback)(() => {
+        (0, S.openUserSettings)(T.X.PROFILE_PANEL, {
             analyticsLocations: e
-        }, () => (0, g.L)({
+        }, () => (0, A.L)({
             analyticsLocations: e
         }))
     }, [e]), ex = (0, r.useCallback)(() => {
-        (0, O.openUserSettings)(T.X.PROFILE_PANEL, {
+        (0, S.openUserSettings)(T.X.PROFILE_PANEL, {
             analyticsLocations: e
         }, () => (0, p.L)({
             analyticsLocations: e
         }))
     }, [e]), eh = (0, r.useCallback)(() => {
         let e = (0, y.Ci)("openCustomAppSettings") ? T.X.DISPLAY_IN_APP_ICON_CATEGORY : T.X.APPEARANCE_IN_APP_ICON;
-        (0, O.openUserSettings)(e)
+        (0, S.openUserSettings)(e)
     }, []), ef = (0, r.useCallback)(() => {
         null != em && (em.userStatus?.enrolledAt == null ? (0, f.Oy)(em.id, {
             questContent: N.uF.NITRO_HOME_PERK_CARD,
@@ -95,7 +95,7 @@ function el() {
         }).then(e => {
             switch (e.type) {
                 case f.WM.SUCCESS:
-                    eA();
+                    eg();
                     break;
                 case f.WM.CAPTCHA_FAILED:
                     o.A.show({
@@ -109,9 +109,9 @@ function el() {
                         body: K.intl.string(K.t.OXD41D)
                     })
             }
-        }) : eA())
-    }, [em, eA]), eb = () => {
-        (0, u.A)(H.TE)
+        }) : eg())
+    }, [em, eg]), eb = () => {
+        (0, u.A)(V.TE)
     }, eN = (0, r.useCallback)(() => {
         e_ ? (0, c.mMO)(async () => {
             let {
@@ -121,16 +121,16 @@ function el() {
                 ...t
             })
         }) : (0, h.A)({
-            subscriptionTier: G.pe.TIER_2,
-            initialPlanId: G.gD.PREMIUM_GROUP_MONTH,
+            subscriptionTier: H.pe.TIER_2,
+            initialPlanId: H.gD.PREMIUM_GROUP_MONTH,
             analyticsLocations: e
         })
-    }, [e, e_]), eR = (0, V.A)(e), {
-        shouldShowBonusOrbsUX: eC,
+    }, [e, e_]), eC = (0, G.A)(e), {
+        shouldShowBonusOrbsUX: eR,
         multiplier: ev
-    } = (0, R.Dl)(W.rE.NITRO_HOME_MARKETING), {
-        currentDate: eI,
-        nDaysInMonth: eE
+    } = (0, C.Dl)(W.rE.NITRO_HOME_MARKETING), {
+        currentDate: eE,
+        nDaysInMonth: ej
     } = (0, r.useMemo)(() => {
         let e = new Date;
         return {
@@ -157,10 +157,10 @@ function el() {
                 title: K.intl.string(z.default.OlObRa),
                 description: K.intl.format(z.default["/UNTlE"], {
                     discountPercent: D.aW,
-                    termsUrl: S.A.getArticleURL(F.MVz.LOGITECH_PROMOTION)
+                    termsUrl: M.A.getArticleURL(F.MVz.LOGITECH_PROMOTION)
                 }),
                 subscriptionRequired: !0,
-                progress: eI.getDate() / eE,
+                progress: eE.getDate() / ej,
                 ctaText: K.intl.string(K.t.w7s5Qr),
                 onCtaClick: () => (0, L.P)({
                     partnerId: k.XY
@@ -177,8 +177,8 @@ function el() {
                 title: K.intl.string(Y.default.YkvksF),
                 description: (0, i.jsxs)(i.Fragment, {
                     children: [K.intl.formatToPlainString(Y.default.JlyGQj, {
-                        totalSeats: H.aw,
-                        premiumGroupProductName: (0, H.DP)()
+                        totalSeats: V.aw,
+                        premiumGroupProductName: (0, V.DP)()
                     }), (0, i.jsx)("div", {
                         className: q.LF,
                         children: (0, i.jsx)(x.A, {
@@ -188,7 +188,7 @@ function el() {
                     })]
                 }),
                 pillText: K.intl.string(K.t.oW0eUd),
-                primaryAsset: Q,
+                primaryAsset: Z,
                 ctaIcon: c.tvc,
                 ctaIconPosition: "start",
                 ctaText: K.intl.string(K.t.IJI7yk),
@@ -200,18 +200,18 @@ function el() {
                 subscriptionRequired: !0,
                 pillText: K.intl.string(K.t.oW0eUd),
                 caption: (0, i.jsx)("img", {
-                    src: $,
+                    src: Q,
                     alt: "SteelSeries"
                 }),
                 backgroundAssetUrl: ei.A,
-                progress: eI.getDate() / eE,
+                progress: eE.getDate() / ej,
                 ctaText: K.intl.string(K.t.w7s5Qr),
                 onCtaClick: () => (0, B.u)({
                     analyticsLocations: e,
                     partnerIds: [k.KS, k.Cs]
                 }),
                 blurTint: "#2E213D"
-            } : null, eC ? {
+            } : null, eR ? {
                 id: w.QUEST_ORB_MULTIPLIER_CARD_ID,
                 title: K.intl.string(K.t.F2MShO),
                 description: K.intl.format(K.t.NpUfej, {
@@ -220,15 +220,15 @@ function el() {
                 pillText: K.intl.string(K.t.oW0eUd),
                 primaryAsset: J.A,
                 ctaText: K.intl.string(K.t.jVcuVY),
-                onCtaClick: () => (0, I.pX)(F.BVt.QUEST_HOME),
+                onCtaClick: () => (0, E.pX)(F.BVt.QUEST_HOME),
                 primaryAssetClassName: q.Nf
             } : null, {
                 id: w.DISPLAY_NAME_STYLES_CARD_ID,
                 title: K.intl.string(K.t.OLtTrt),
                 description: K.intl.string(K.t["di/pXR"]),
-                onCtaClick: t ? ep : eg,
+                onCtaClick: t ? ep : eA,
                 ctaText: K.intl.string(K.t.jVcuVY),
-                primaryAsset: Z.A,
+                primaryAsset: $.A,
                 pillText: K.intl.string(K.t.y2b7CA)
             }, {
                 id: w.CLIENT_THEMES_CARD_ID,
@@ -239,7 +239,7 @@ function el() {
                 primaryAsset: es.A,
                 ctaText: K.intl.string(K.t.jVcuVY),
                 onCtaClick: () => {
-                    (0, A.nf)(A.HP.CUSTOM_THEME)
+                    (0, g.nf)(g.HP.CUSTOM_THEME)
                 }
             }, {
                 id: w.PERMADECOS_CARD_ID,
@@ -261,6 +261,6 @@ function el() {
             }],
             s = (r = r.filter(e => null != e))[0].featured,
             o = s ? 5 : 6;
-        return r.splice(+!!s, 0, eR), r.length > o && r.splice(o, r.length - o), r
-    }, [eR, em, el, ef, ec, ed, eC, ev, eE, eI, e, eg, eh, ex, eN, ep, t, eo])
+        return r.splice(+!!s, 0, eC), r.length > o && r.splice(o, r.length - o), r
+    }, [eC, em, el, ef, ec, ed, eR, ev, ej, eE, e, eA, eh, ex, eN, ep, t, eo])
 }

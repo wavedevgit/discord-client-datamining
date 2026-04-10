@@ -4,9 +4,9 @@ n.d(t, {
     h: () => _
 });
 var a = n(627968),
-    i = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    i = n(503698),
+    r = n.n(i),
     s = n(934551),
     o = n(158954),
     c = n(827734),
@@ -23,11 +23,11 @@ function _(e) {
     let {
         game: t,
         trackAction: n
-    } = e, [l, f] = i.useState(t?.summaryLocalized != null), [_, v] = i.useState(!0), [A, b] = i.useState(!1), E = i.useRef(null), {
+    } = e, [i, f] = l.useState(t?.summaryLocalized != null), [_, v] = l.useState(!0), [A, b] = l.useState(!1), E = l.useRef(null), {
         width: j,
         height: I
     } = (0, u.A)();
-    return (i.useEffect(() => {
+    return (l.useEffect(() => {
         let e = E.current;
         null != e && b(e.scrollHeight - e.clientHeight > 1 || !_)
     }, [E, j, I, _]), null == t.description) ? null : (0, a.jsxs)("div", {
@@ -40,7 +40,7 @@ function _(e) {
             }), (0, a.jsx)(o.EYj, {
                 variant: "text-xs/medium",
                 color: "text-default",
-                children: l ? h.intl.format(h.t.aZ2iIp, {
+                children: i ? h.intl.format(h.t.aZ2iIp, {
                     onShowOriginal: () => f(!1)
                 }) : h.intl.format(h.t["/2ylF4"], {
                     onShowTranslated: () => f(!0)
@@ -50,7 +50,7 @@ function _(e) {
             ref: E,
             lineClamp: _ ? 8 : void 0,
             variant: "text-sm/normal",
-            children: l ? t.summaryLocalized : t.description
+            children: i ? t.summaryLocalized : t.description
         }), A && (0, a.jsx)(d.DUT, {
             className: g.vk,
             onClick: () => {
@@ -71,13 +71,13 @@ function v(e) {
     let {
         game: t,
         trackAction: n
-    } = e, l = i.useRef(null), {
+    } = e, i = l.useRef(null), {
         isExpanded: s,
         showToggle: c,
         handleToggleExpanded: d
     } = function(e, t) {
-        let [n, a] = i.useState("full");
-        i.useEffect(() => {
+        let [n, a] = l.useState("full");
+        l.useEffect(() => {
             let t = e.current;
             if (null == t) return;
             let n = new ResizeObserver(() => {
@@ -86,23 +86,23 @@ function v(e) {
             });
             return n.observe(t), () => n.disconnect()
         }, [e]);
-        let l = i.useCallback(() => {
+        let i = l.useCallback(() => {
             "expanded" === n ? (t(m.Ws.ShowLess), a("collapsed")) : "collapsed" === n && (t(m.Ws.ShowMore), a("expanded"))
         }, [t, n]);
         return {
             isExpanded: "expanded" === n,
             showToggle: "expanded" === n || "collapsed" === n,
-            handleToggleExpanded: l
+            handleToggleExpanded: i
         }
-    }(l, n), {
+    }(i, n), {
         isTwoColumn: u
-    } = (0, f.c)(), x = i.useMemo(() => u ? 8 : 5, [u]);
+    } = (0, f.c)(), x = l.useMemo(() => u ? 8 : 5, [u]);
     if (null == t.description) return null;
     let p = s ? h.intl.string(h.t["6MwJo/"]) : h.intl.string(h.t.lBeKY2);
     return (0, a.jsxs)("div", {
         className: r()(g.fi, g.mX),
         children: [(0, a.jsx)(o.EYj, {
-            ref: l,
+            ref: i,
             lineClamp: s ? void 0 : x,
             variant: "text-md/medium",
             children: t.description

@@ -26,11 +26,11 @@ let A = e => {
         onSuccess: I,
         tooltipDelay: v,
         fullWidth: f = !1,
-        giftRecipient: _,
-        giftingOrigin: y = h.vQ.SHOP_PAGE,
-        onTrackClick: j
+        giftRecipient: y,
+        giftingOrigin: _ = h.vQ.SHOP_PAGE,
+        onTrackClick: E
     } = e, {
-        analyticsLocations: E
+        analyticsLocations: j
     } = (0, u.Ay)(), b = l.useRef(null), R = (0, c.uM)(), T = (0, p.A)(), P = e => {
         e.stopPropagation(), d.default.track(g.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: R?.sessionId,
@@ -41,15 +41,15 @@ let A = e => {
             tile_position: String(R?.tilePosition),
             cta_name: "gift button",
             page_type: T ?? "home"
-        }), j?.(x.sH.SEND_AS_GIFT), (0, o.A)({
+        }), E?.(x.sH.SEND_AS_GIFT), (0, o.A)({
             skuId: (0, m.Y)({
                 product: t,
                 selectedVariantIndex: A
             }),
             isGift: !0,
-            giftRecipient: _,
-            giftingOrigin: y,
-            analyticsLocations: E,
+            giftRecipient: y,
+            giftingOrigin: _,
+            analyticsLocations: j,
             returnRef: k,
             onClose: null != I ? e => {
                 e && I()

@@ -16,8 +16,8 @@ var i, l = n(627968),
     E = n(828162),
     T = n(763754),
     I = n(888675),
-    N = n(652215),
-    g = n(985018),
+    g = n(652215),
+    N = n(985018),
     f = n(272435),
     C = n(274993),
     h = n(218924);
@@ -28,8 +28,8 @@ function p(e) {
         null != e && (t ? (0, E.A)(e, u.A.GUILD_BOOSTING_SYSTEM_MESSAGE) : (0, d.K4)({
             guildId: e,
             location: {
-                section: N.JJy.CHANNEL_TEXT_AREA,
-                object: N.ZSU.BOOST_ANNOUNCEMENT_UPSELL
+                section: g.JJy.CHANNEL_TEXT_AREA,
+                object: g.ZSU.BOOST_ANNOUNCEMENT_UPSELL
             }
         }))
     }, [e, t])
@@ -83,9 +83,9 @@ function R(e) {
             guild: t,
             variant: "secondary",
             analyticsLocation: {
-                page: N.liQ.GUILD_CHANNEL,
-                section: N.JJy.CHANNEL_TEXT_AREA,
-                object: N.ZSU.BOOST_ANNOUNCEMENT_UPSELL
+                page: g.liQ.GUILD_CHANNEL,
+                section: g.JJy.CHANNEL_TEXT_AREA,
+                object: g.ZSU.BOOST_ANNOUNCEMENT_UPSELL
             },
             analyticsLocations: [n ? u.A.GUILD_BOOSTING_ANNOUNCEMENT_MESSAGE_FIRST_TIME_BOOSTER : u.A.GUILD_BOOSTING_ANNOUNCEMENT_MESSAGE]
         })
@@ -116,22 +116,22 @@ function M(e) {
         C = (t = (0, r.bG)([c.A], () => c.A.useReducedMotion), u = (i || (i = n.t(a, 2))).useContext(s.C)?.animate ?? !1, !t && u),
         h = (0, T.Ay)(d),
         M = m(h),
-        D = d.hasFlag(N.pr7.IS_FIRST_BOOSTER),
+        D = d.hasFlag(g.pr7.IS_FIRST_BOOSTER),
         L = p(_?.id),
-        U = D ? g.intl.format(g.t["/1IQGD"], {
+        U = D ? N.intl.format(N.t["/1IQGD"], {
             username: h.nick,
             usernameHook: M
-        }) : g.intl.format(g.t.SbSWvY, {
+        }) : N.intl.format(N.t.SbSWvY, {
             username: h.nick,
             usernameHook: M,
             numSubscriptions: (0, A.A)(d)
         }),
-        P = E ? g.intl.format(g.t.dWm8Iu, {
+        P = E ? N.intl.format(N.t.dWm8Iu, {
             learnMoreHook: e => (0, l.jsx)(O, {
                 guild: _,
                 children: e
             })
-        }) : g.intl.string(g.t["0Mdw0t"]),
+        }) : N.intl.string(N.t["0Mdw0t"]),
         v = (0, l.jsxs)("div", {
             className: f.kL,
             children: [(0, l.jsx)(S, {

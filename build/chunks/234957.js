@@ -25,10 +25,10 @@ let _ = l.memo(function(e) {
     } = (0, a.cf)([s.A], () => ({
         isReplyAuthorBlocked: null != A && s.A.isBlockedForMessage(A),
         isReplyAuthorIgnored: null != A && s.A.isIgnoredForMessage(A)
-    }), [A]), I = (0, c.X4)(A), N = (0, c.X4)(t);
+    }), [A]), I = (0, c.X4)(A), g = (0, c.X4)(t);
     return (0, i.jsx)(u.A, {
         repliedAuthor: I,
-        baseAuthor: N,
+        baseAuthor: g,
         baseMessage: t,
         channel: n,
         referencedMessage: d,

@@ -1,6 +1,6 @@
 /** chunk id: 364616 params = (module,exports,require) **/
 r.d(t, {
-    A: () => y
+    A: () => _
 });
 var n = r(627968),
     l = r(64700),
@@ -73,7 +73,7 @@ let I = e => {
                             onVariantExit: i,
                             zIndex: C - Math.abs(x - t),
                             onVariantClick: I
-                        }, e.variantValue)), null != c && A && (0, n.jsx)(_, {
+                        }, e.variantValue)), null != c && A && (0, n.jsx)(y, {
                             zIndex: x >= c.maxVariantsToShow - 1 ? C + 1 : 0,
                             isSelected: x >= c.maxVariantsToShow - 1,
                             onOverflowClick: c.onClick,
@@ -134,7 +134,7 @@ let I = e => {
             color: r ? d.A.colors.BLACK.css : d.A.colors.WHITE.css
         })
     },
-    _ = e => {
+    y = e => {
         let {
             zIndex: t,
             isSelected: r,
@@ -162,7 +162,7 @@ let I = e => {
             })
         })
     },
-    y = e => {
+    _ = e => {
         let {
             skuId: t,
             isCollapsed: r = !1,

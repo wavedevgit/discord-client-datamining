@@ -20,7 +20,8 @@ function u(e) {
     }), u = i.useCallback(() => {
         null != n && r.A.returnToGameProfile({
             gameId: n.gameId,
-            source: o.Ob.AnnouncementChannelReturn
+            source: o.Ob.AnnouncementChannelReturn,
+            initialScrollOffset: n.initialScrollOffset
         })
     }, [n]), h = (0, l.bG)([s.A], () => n?.gameId != null ? s.A.getGame(n.gameId) : null);
     i.useEffect(() => {

@@ -17,8 +17,8 @@ var i = n(627968),
     E = n(763754),
     T = n(491182),
     I = n(860227),
-    N = n(538355),
-    g = n(522871),
+    g = n(538355),
+    N = n(522871),
     f = n(699352),
     C = n(715628),
     h = n(752636),
@@ -46,16 +46,16 @@ let M = l.memo(function(e) {
         content: w,
         hasSpoilerEmbeds: F,
         hasBailedAst: B
-    } = (0, N.A)(t, {
+    } = (0, g.A)(t, {
         hideSimpleEmbedContent: D,
         allowList: G || H,
         allowHeading: G || H,
         allowLinks: !0,
         previewLinkTarget: !0
-    }), V = t.type === R.lAJ.REPLY ? t.messageReference : void 0, X = (0, o.bG)([d.A], () => d.A.getMessageByReference(V)), q = (0, s.rm)(t.id), K = (0, E.Ay)(t), Y = (0, o.bG)([_.A], () => t.hasFlag(R.pr7.HAS_THREAD) && _.A.getChannel(A.default.castMessageIdAsChannelId(t.id))), W = (0, c.$7)({
+    }), X = t.type === R.lAJ.REPLY ? t.messageReference : void 0, q = (0, o.bG)([d.A], () => d.A.getMessageByReference(X)), V = (0, s.rm)(t.id), K = (0, E.Ay)(t), Y = (0, o.bG)([_.A], () => t.hasFlag(R.pr7.HAS_THREAD) && _.A.getChannel(A.default.castMessageIdAsChannelId(t.id))), W = (0, c.$7)({
         guildId: L.guild_id,
         roleId: K.iconRoleId
-    }), J = (0, g.A)({
+    }), J = (0, N.A)({
         message: t,
         channel: L,
         enabled: j
@@ -67,7 +67,7 @@ let M = l.memo(function(e) {
             [O.XN]: b
         }),
         disableInteraction: b,
-        childrenRepliedMessage: (0, x.A)(t, L, V, X, n),
+        childrenRepliedMessage: (0, x.A)(t, L, X, q, n),
         childrenExecutedCommand: (0, S.A)(t, L, n),
         childrenHeader: (0, h.A)({
             ...e,
@@ -89,7 +89,7 @@ let M = l.memo(function(e) {
         "aria-describedby": Q,
         messageRef: J,
         author: K,
-        ...q,
+        ...V,
         ...k
     })
 })

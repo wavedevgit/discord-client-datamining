@@ -27,8 +27,8 @@ let C = l.forwardRef((e, t) => {
         maxBoostCount: s,
         premiumSubscriberCount: d,
         className: u
-    } = e, h = n >= s, A = Math.min(n / s * 100, 100), [_, p] = (0, c.zhh)(() => ({
-        width: n === d ? `calc(${A}% - 4px)` : "0%",
+    } = e, h = n >= s, A = Math.min(n / s * 100, 100), _ = `calc(${A}% - 4px)`, [p, g] = (0, c.zhh)(() => ({
+        width: n === d ? _ : "calc(0% - 0px)",
         config: {
             tension: 250,
             damping: 5,
@@ -36,10 +36,10 @@ let C = l.forwardRef((e, t) => {
         }
     }), "respect-motion-settings", [n, d]);
     return l.useEffect(() => {
-        p({
-            width: `calc(${A}% - 4px)`
+        g({
+            width: _
         })
-    }, [A, p]), (0, i.jsxs)("div", {
+    }, [_, g]), (0, i.jsxs)("div", {
         ref: t,
         className: I.hQ,
         children: [(0, i.jsx)("div", {
@@ -48,7 +48,7 @@ let C = l.forwardRef((e, t) => {
             className: a()(I.qB, {
                 [I.mu]: A <= 5
             }),
-            style: _
+            style: p
         }), (0, i.jsxs)("div", {
             className: I.FS,
             children: [(0, i.jsxs)("div", {

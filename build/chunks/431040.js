@@ -3,8 +3,8 @@ n.d(t, {
     A: () => v
 });
 var a = n(627968),
-    i = n(64700),
-    l = n(397927),
+    l = n(64700),
+    i = n(397927),
     r = n(155718),
     s = n(405269),
     o = n(541830),
@@ -19,7 +19,7 @@ var a = n(627968),
     p = n(706445);
 
 function _() {
-    return (0, a.jsx)(l.Text, {
+    return (0, a.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-subtle",
         children: g.intl.string(g.t.GruYxV)
@@ -30,12 +30,12 @@ let v = function(e) {
         application: t,
         game: n,
         trackAction: v
-    } = e, A = i.useMemo(() => n.genres.map(o.du).join(", "), [n]), b = n.getCompanyByRole(r.wk.PUBLISHER), E = n.getCompanyByRole(r.wk.DEVELOPER), j = b.map(e => e.name).join(", "), I = E.map(e => e.name).join(", "), C = n.firstReleaseDate, N = (0, u.A)(n), S = (0, d.Y)(n), y = !(0, c.uJ)(A), T = !(0, c.uJ)(j), L = !(0, c.uJ)(I), k = !(0, c.uJ)(C), R = N.length > 0, O = S.length > 0 && !S.every(e => (0, c.uJ)(e.url));
+    } = e, A = l.useMemo(() => n.genres.map(o.du).join(", "), [n]), b = n.getCompanyByRole(r.wk.PUBLISHER), E = n.getCompanyByRole(r.wk.DEVELOPER), j = b.map(e => e.name).join(", "), I = E.map(e => e.name).join(", "), C = n.firstReleaseDate, N = (0, u.A)(n), S = (0, d.Y)(n), T = !(0, c.uJ)(A), y = !(0, c.uJ)(j), L = !(0, c.uJ)(I), k = !(0, c.uJ)(C), R = N.length > 0, O = S.length > 0 && !S.every(e => (0, c.uJ)(e.url));
     return (0, a.jsxs)("div", {
         className: p.uW,
         children: [(0, a.jsx)("div", {
             className: p.Gf,
-            children: (0, a.jsx)(l.Heading, {
+            children: (0, a.jsx)(i.Heading, {
                 variant: "heading-sm/semibold",
                 color: "text-strong",
                 children: g.intl.string(g.t["7OjmmH"])
@@ -44,11 +44,11 @@ let v = function(e) {
             className: p.kL,
             children: [(0, a.jsxs)("div", {
                 className: p.J1,
-                children: [(0, a.jsx)(l.Text, {
+                children: [(0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: 1 !== n.genres.length ? g.intl.string(g.t.pDgwYB) : g.intl.string(g.t.mjFKqn)
-                }), y ? (0, a.jsx)(l.Text, {
+                }), T ? (0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     className: p.Gu,
@@ -56,11 +56,11 @@ let v = function(e) {
                 }) : (0, a.jsx)(_, {})]
             }), (0, a.jsxs)("div", {
                 className: p.J1,
-                children: [(0, a.jsx)(l.Text, {
+                children: [(0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: 1 !== b.length ? g.intl.string(g.t.Hc7Enk) : g.intl.string(g.t["4Byy/G"])
-                }), T ? (0, a.jsx)(l.Text, {
+                }), y ? (0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     className: p.Gu,
@@ -68,11 +68,11 @@ let v = function(e) {
                 }) : (0, a.jsx)(_, {})]
             }), (0, a.jsxs)("div", {
                 className: p.J1,
-                children: [(0, a.jsx)(l.Text, {
+                children: [(0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: 1 !== E.length ? g.intl.string(g.t.KATEJB) : g.intl.string(g.t.na3PT0)
-                }), L ? (0, a.jsx)(l.Text, {
+                }), L ? (0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     className: p.Gu,
@@ -80,11 +80,11 @@ let v = function(e) {
                 }) : (0, a.jsx)(_, {})]
             }), (0, a.jsxs)("div", {
                 className: p.J1,
-                children: [(0, a.jsx)(l.Text, {
+                children: [(0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: g.intl.string(g.t.H3mPDT)
-                }), k ? (0, a.jsx)(l.Text, {
+                }), k ? (0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     className: p.Gu,
@@ -92,7 +92,7 @@ let v = function(e) {
                 }) : (0, a.jsx)(_, {})]
             }), (0, a.jsxs)("div", {
                 className: p.J1,
-                children: [(0, a.jsx)(l.Text, {
+                children: [(0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: N.length > 1 ? g.intl.string(g.t.PNqxNe) : g.intl.string(g.t["UxAag+"])
@@ -104,7 +104,7 @@ let v = function(e) {
                 }) : (0, a.jsx)(_, {})]
             }), (0, a.jsxs)("div", {
                 className: p.J1,
-                children: [(0, a.jsx)(l.Text, {
+                children: [(0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: g.intl.string(g.t["Oj3o1/"])
@@ -117,11 +117,11 @@ let v = function(e) {
                 }) : (0, a.jsx)(_, {})]
             }), (0, a.jsxs)("div", {
                 className: p.J1,
-                children: [(0, a.jsx)(l.Text, {
+                children: [(0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: g.intl.string(g.t["BwQ+9e"])
-                }), (0, a.jsx)(l.Text, {
+                }), (0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     className: p.Gu,

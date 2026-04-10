@@ -3,9 +3,9 @@ n.r(t), n.d(t, {
     default: () => p
 });
 var a = n(627968),
-    i = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    i = n(503698),
+    r = n.n(i),
     s = n(311907),
     o = n(397927),
     c = n(303136),
@@ -23,11 +23,11 @@ let g = () => (0, a.jsx)("div", {
             className: f.LG
         })
     }),
-    p = i.memo(function(e) {
+    p = l.memo(function(e) {
         let {
             application: t,
             isIncentivizedAccountLinking: n
-        } = e, i = (0, s.bG)([u.default], () => u.default.getCurrentUser()), l = m.Ay.getUserAvatarURL(i), c = r()(f.pw, {
+        } = e, l = (0, s.bG)([u.default], () => u.default.getCurrentUser()), i = m.Ay.getUserAvatarURL(l), c = r()(f.pw, {
             [f.yi]: n
         });
         return (0, a.jsxs)("div", {
@@ -52,9 +52,9 @@ let g = () => (0, a.jsx)("div", {
                 })]
             }), (0, a.jsx)(o.euF, {
                 className: f.my,
-                src: l,
+                src: i,
                 size: o._3J.SIZE_48,
-                "aria-label": i.username
+                "aria-label": l.username
             })]
         })
     })

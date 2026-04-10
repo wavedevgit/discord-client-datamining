@@ -7,9 +7,9 @@ n.d(t, {
     j5: () => _
 });
 var a = n(627968),
-    i = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    i = n(503698),
+    r = n.n(i),
     s = n(158954),
     o = n(486020),
     c = n(541830),
@@ -24,16 +24,16 @@ function g(e) {
     let {
         game: t,
         application: n,
-        show: i,
-        onClose: l,
+        show: l,
+        onClose: i,
         trackAction: o
     } = e, c = t.name ?? n?.name, d = n.getIconURL(80);
     return (0, a.jsxs)("div", {
         className: h.y5,
         children: [(0, a.jsx)("div", {
-            className: r()(h.nI, i && h.hD)
+            className: r()(h.nI, l && h.hD)
         }), (0, a.jsxs)("div", {
-            className: r()(h.A1, i && h.g8),
+            className: r()(h.A1, l && h.g8),
             children: [null != d && (0, a.jsx)("img", {
                 src: d,
                 alt: "",
@@ -51,7 +51,7 @@ function g(e) {
             })]
         }), (0, a.jsx)(m.N, {
             game: t,
-            onClose: l,
+            onClose: i,
             className: h.HK,
             trackAction: o
         })]
@@ -66,10 +66,10 @@ function p(e) {
         className: r()(h.nI, h.Jn, t && h.hD)
     })
 }
-let _ = i.forwardRef(function(e, t) {
+let _ = l.forwardRef(function(e, t) {
     let {
         game: n
-    } = e, [l] = i.useState(() => Math.random()), r = i.useMemo(() => {
+    } = e, [i] = l.useState(() => Math.random()), r = l.useMemo(() => {
         if (null != n.bannerHash) return o.Ay.getGameAssetURL({
             id: n.id,
             hash: n.bannerHash,
@@ -77,11 +77,11 @@ let _ = i.forwardRef(function(e, t) {
             keepAspectRatio: !0
         }) ?? "";
         if (null != n.screenshotUrls && n.screenshotUrls.length > 0) {
-            let e = Math.floor(l * n.screenshotUrls.length);
+            let e = Math.floor(i * n.screenshotUrls.length);
             return n.screenshotUrls[e]
         }
         return ""
-    }, [n.id, n.bannerHash, n.screenshotUrls, l]);
+    }, [n.id, n.bannerHash, n.screenshotUrls, i]);
     return (0, d.uJ)(r) ? null : (0, a.jsxs)("div", {
         ref: t,
         children: [(0, a.jsx)("div", {
@@ -129,10 +129,10 @@ function b(e) {
     let {
         game: t,
         application: n,
-        isTwoColumn: i
+        isTwoColumn: l
     } = e;
     return (0, a.jsx)("div", {
-        className: i ? h.n8 : h.FS,
+        className: l ? h.n8 : h.FS,
         children: (0, a.jsx)(u.A, {
             game: t,
             application: n,
@@ -145,12 +145,12 @@ let E = function(e) {
     let {
         game: t,
         application: n,
-        onSetCompactBarScrollThreshold: l,
+        onSetCompactBarScrollThreshold: i,
         showCompactBar: o
     } = e, {
         isTwoColumn: c
-    } = (0, f.c)(), d = i.useRef(null), m = i.useRef(null);
-    i.useEffect(() => {
+    } = (0, f.c)(), d = l.useRef(null), m = l.useRef(null);
+    l.useEffect(() => {
         let e = d.current,
             t = m.current;
         if (null == e || null == t) return;
@@ -160,8 +160,8 @@ let E = function(e) {
             for (; null != a && a !== t;) n += a.offsetTop, a = a.offsetParent;
             return n
         }(t, e);
-        n > 0 && l?.(n)
-    }, [l]);
+        n > 0 && i?.(n)
+    }, [i]);
     let x = t.name ?? n?.name;
     return (0, a.jsxs)("div", {
         ref: d,

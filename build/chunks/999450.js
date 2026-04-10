@@ -3,8 +3,8 @@ n.d(t, {
     A: () => h
 });
 var a = n(627968),
-    i = n(64700),
-    l = n(793574),
+    l = n(64700),
+    i = n(793574),
     r = n(688810),
     s = n(44724),
     o = n(317560),
@@ -23,19 +23,19 @@ function h(e) {
         closeModal: h
     } = (0, u.c)(), {
         analyticsLocations: g
-    } = (0, r.Ay)([l.A.GAME_PROFILE]), p = i.useCallback(() => {
+    } = (0, r.Ay)([i.A.GAME_PROFILE]), p = l.useCallback(() => {
         n?.guildId != null && (t(d.Ws.GameShop), h(), (0, s.default)({
             guildId: n.guildId
         }))
-    }, [n, t, h]), _ = i.useCallback((e, a) => {
-        let i = n?.guildId;
-        null != i && (t(d.Ws.GameShopItem), (0, o.R)({
+    }, [n, t, h]), _ = l.useCallback((e, a) => {
+        let l = n?.guildId;
+        null != l && (t(d.Ws.GameShopItem), (0, o.R)({
             skuId: e,
             applicationId: a,
             isStorefront: !1,
             analyticsLocations: g,
             onClose: () => {
-                location.pathname.indexOf(f.BVt.CHANNELS_GAME_SHOP(i)) >= 0 && h()
+                location.pathname.indexOf(f.BVt.CHANNELS_GAME_SHOP(l)) >= 0 && h()
             }
         }))
     }, [t, h, g, n]);

@@ -21,7 +21,7 @@ function _(e) {
         variant: m = "expressive"
     } = e, [E, T] = l.useState(!1), {
         analyticsLocations: I
-    } = (0, s.Ay)(_ ?? []), N = (0, a.bG)([o.default], () => o.default.getCurrentUser()), g = N?.isPremiumGroupMember();
+    } = (0, s.Ay)(_ ?? []), g = (0, a.bG)([o.default], () => o.default.getCurrentUser()), N = g?.isPremiumGroupMember();
     async function f() {
         T(!0), await (0, c.g)({
             analyticsLocations: I,
@@ -44,6 +44,6 @@ function _(e) {
         text: d.intl.string(d.t.gKmQ1G),
         onClick: f,
         loading: E,
-        disabled: g
+        disabled: N
     })
 }

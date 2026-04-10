@@ -8,7 +8,7 @@ n.d(t, {
     fi: () => m,
     k$: () => c,
     mR: () => A,
-    ql: () => N,
+    ql: () => g,
     r2: () => I,
     yc: () => o
 }), n(321073);
@@ -62,7 +62,7 @@ function I(e) {
     return e?.invitesDisabledUntil != null && new Date(e.invitesDisabledUntil) > new Date
 }
 
-function N(e, t) {
+function g(e, t) {
     let n = e.dmsDisabledUntil ?? e.invitesDisabledUntil;
     if (null == n) return "";
     let i = null != e.dmsDisabledUntil,

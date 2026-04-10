@@ -1,10 +1,10 @@
 /** chunk id: 317607 params = (module,exports,require) **/
 n.d(t, {
-    j: () => i
+    j: () => l
 });
 var a = n(223273);
 
-function i(e, t) {
+function l(e, t) {
     if (null == e || null == t || t < 10) return a.vI.NO_USER_REVIEWS;
     if (e >= 80) return t < 50 ? a.vI.POSITIVE : t < 500 || e < 95 ? a.vI.VERY_POSITIVE : a.vI.OVERWHELMINGLY_POSITIVE;
     if (e >= 70) return a.vI.MOSTLY_POSITIVE;

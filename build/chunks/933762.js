@@ -21,10 +21,10 @@ function _(e) {
         onClickThread: A,
         onClickViewThreads: m,
         onContextMenuThread: E
-    } = e, T = (0, o.Ay)(t), I = _(T), N = (0, l.bG)([s.A], () => s.A.getChannel(t.messageReference?.channel_id)), g = (0, r.Ay)(N), f = u.intl.format(u.t.cZ9Uf2, {
+    } = e, T = (0, o.Ay)(t), I = _(T), g = (0, l.bG)([s.A], () => s.A.getChannel(t.messageReference?.channel_id)), N = (0, r.Ay)(g), f = u.intl.format(u.t.cZ9Uf2, {
         actorName: T.nick,
         actorHook: I,
-        threadName: g ?? t.content,
+        threadName: N ?? t.content,
         threadOnClick: {
             onClick: A,
             onContextMenu: E

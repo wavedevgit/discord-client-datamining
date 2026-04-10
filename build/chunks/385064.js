@@ -3,8 +3,8 @@ n.d(t, {
     A: () => d
 });
 var a = n(284009),
-    i = n.n(a),
-    l = n(846293),
+    l = n.n(a),
+    i = n(846293),
     r = n(976860),
     s = n(71393),
     o = n(449054),
@@ -17,7 +17,7 @@ async function d(e) {
         messageId: d,
         analyticsLocationStack: u
     } = e;
-    i()(u.length > 0, "analyticsLocationStack must have at least one location");
+    l()(u.length > 0, "analyticsLocationStack must have at least one location");
     let m = u[u.length - 1],
         f = null;
     if (null != t && (n = t.guild?.id, f = new Set(t.guild?.features)), null == n) return;
@@ -29,7 +29,7 @@ async function d(e) {
             messageId: d,
             joinSource: c.Q4z.GAME_PROFILE_ANNOUNCEMENTS
         }, u);
-        else null != t && await l.Ay.acceptInvite({
+        else null != t && await i.Ay.acceptInvite({
             inviteKey: t.code,
             context: {
                 location: m

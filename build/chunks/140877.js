@@ -28,15 +28,15 @@ let I = e => {
         } = (0, c.I)(t.skuId), {
             isPurchased: I,
             isPartiallyOwnedBundle: v
-        } = (0, p.h)(t), f = (0, d.G0)(t), _ = (0, d.tt)(t), y = l.useMemo(() => (0, d.fT)(t, m), [t, m]), j = (0, h.V_)(t), {
-            checkoutEligiblePrices: E,
+        } = (0, p.h)(t), f = (0, d.G0)(t), y = (0, d.tt)(t), _ = l.useMemo(() => (0, d.fT)(t, m), [t, m]), E = (0, h.V_)(t), {
+            checkoutEligiblePrices: j,
             hasSufficientOrbs: b,
             shouldCheckoutWithOrbs: R
         } = (0, C.F)({
             product: t,
             isPremiumUser: m,
             prioritizedCurrency: r,
-            hasDiscountOffer: null != j
+            hasDiscountOffer: null != E
         }), T = f && !m;
         return g ? (0, n.jsx)(s.Text, {
             variant: "text-md/medium",
@@ -53,7 +53,7 @@ let I = e => {
             color: "text-muted",
             lineClamp: 1,
             children: A.intl.string(A.t["6cfuDj"])
-        }) : _ ? (0, n.jsx)(s.Text, {
+        }) : y ? (0, n.jsx)(s.Text, {
             variant: "text-md/bold",
             color: "text-strong",
             lineClamp: 1,
@@ -63,13 +63,13 @@ let I = e => {
             color: "text-strong",
             lineClamp: 1,
             children: A.intl.string(A.t.rt69oo)
-        }) : 0 === E.length ? null : (0, n.jsx)(x.x, {
-            priceAmount: E[0].amount,
-            priceCurrency: E[0].currency,
-            discount: y,
+        }) : 0 === j.length ? null : (0, n.jsx)(x.x, {
+            priceAmount: j[0].amount,
+            priceCurrency: j[0].currency,
+            discount: _,
             nitroIconType: m ? "default" : void 0,
             nitroIconSize: "sm",
-            discountOfferAmount: j,
+            discountOfferAmount: E,
             className: R && !b ? k.c : void 0,
             variant: "text-md/bold"
         })

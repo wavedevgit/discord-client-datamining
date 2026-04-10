@@ -1,7 +1,7 @@
 /** chunk id: 608416 params = (module,exports,require) **/
 n.d(t, {
     $G: () => d,
-    Ay: () => A,
+    Ay: () => g,
     MN: () => p,
     Mp: () => u,
     XN: () => _,
@@ -17,7 +17,7 @@ let d = 3e3,
     _ = 6e3;
 var m = ((i = {}).SINE = "sine", i.COSINE = "cosine", i),
     p = ((r = {}).UP = "up", r.DOWN = "down", r);
-let A = e => {
+let g = e => {
     let {
         blurAnimationData: t,
         scaleAnimationData: n,
@@ -40,12 +40,12 @@ let A = e => {
         loop: !0
     } : {
         y: 0
-    }), A = i?.path === "sine" ? Math.sin : Math.cos, [g, x] = (0, s.useState)(1), h = (0, c.zhh)(null != n ? {
+    }), g = i?.path === "sine" ? Math.sin : Math.cos, [A, x] = (0, s.useState)(1), h = (0, c.zhh)(null != n ? {
         from: {
-            scale: g > 0 ? n.startScale : n.endScale
+            scale: A > 0 ? n.startScale : n.endScale
         },
         to: {
-            scale: g > 0 ? n.endScale : n.startScale
+            scale: A > 0 ? n.endScale : n.startScale
         },
         config: {
             duration: n.duration * _
@@ -66,21 +66,21 @@ let A = e => {
         onRest: () => b(e => -1 * e)
     } : {
         blur: 0
-    }), R = (0, s.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), [C, v] = (0, s.useState)(0), [I, E] = (0, s.useState)(1), j = (0, c.zhh)({
-        xOffset: C,
+    }), C = (0, s.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), [R, v] = (0, s.useState)(0), [E, j] = (0, s.useState)(1), I = (0, c.zhh)({
+        xOffset: R,
         config: {
             tension: 10,
             friction: 10,
-            duration: R
+            duration: C
         }
     });
     return ((0, o.A)(() => {
-        v(I * (.5 * Math.random() * 5 + 2.5)), E(e => -1 * e)
-    }, R), u) ? m : (0, a.jsx)(l.animated.div, {
+        v(E * (.5 * Math.random() * 5 + 2.5)), j(e => -1 * e)
+    }, C), u) ? m : (0, a.jsx)(l.animated.div, {
         style: {
             transform: p.y?.to(e => {
                 if (null == i) return "translateY(0px)";
-                let t = A(e * Math.PI * 2) * i.range,
+                let t = g(e * Math.PI * 2) * i.range,
                     n = 0;
                 if (null != r) {
                     let e = r.range * (1 - r.containerVisibilityPercentage);
@@ -88,7 +88,7 @@ let A = e => {
                 }
                 return `translateY(${t+n}px)`
             }),
-            translateX: d ? j.xOffset.to(e => `${e}px`) : 0,
+            translateX: d ? I.xOffset.to(e => `${e}px`) : 0,
             scale: h.scale,
             filter: N.blur?.to(e => `blur(${e}px)`),
             opacity: null != r && r.changeOpacity ? r.containerVisibilityPercentage : 1

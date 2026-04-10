@@ -3,9 +3,9 @@ n.d(t, {
     A: () => v
 });
 var a = n(627968),
-    i = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    i = n(503698),
+    r = n.n(i),
     s = n(311907),
     o = n(397927),
     c = n(734057),
@@ -22,16 +22,16 @@ let v = e => {
     let {
         entry: t,
         onClose: n,
-        onReaction: l,
+        onReaction: i,
         onRequestOpen: v,
         disableActivityProfileLinks: A,
         customCTA: b,
         popoutClassname: E,
         popoutPosition: j = "right"
-    } = e, I = i.useRef(null), C = (0, s.bG)([d.A, c.A], () => c.A.getChannel(d.A.getChannelId())), N = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
+    } = e, I = l.useRef(null), C = (0, s.bG)([d.A, c.A], () => c.A.getChannel(d.A.getChannelId())), N = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
         nick: S,
-        avatar: y
-    } = i.useMemo(() => {
+        avatar: T
+    } = l.useMemo(() => {
         let e = N?.getAvatarURL(C?.guild_id, 48, !1);
         return {
             nick: m.Ay.getName(C?.guild_id, C?.id, N),
@@ -43,19 +43,19 @@ let v = e => {
         position: j,
         renderPopout: e => {
             let {
-                closePopout: i,
+                closePopout: l,
                 updatePosition: r
             } = e;
             return (0, a.jsx)("div", {
                 className: E,
                 children: (0, a.jsx)(f.Oo, {
                     entry: t,
-                    closePopout: i,
+                    closePopout: l,
                     updatePopoutPosition: r,
                     onReaction: () => {
-                        l?.(), n(), i()
+                        i?.(), n(), l()
                     },
-                    onUserPopoutClosed: () => i(),
+                    onUserPopoutClosed: () => l(),
                     disableGameProfileLinks: !0,
                     disableActivityProfileLinks: A
                 })
@@ -79,7 +79,7 @@ let v = e => {
                 children: (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)("img", {
                         className: p.my,
-                        src: y,
+                        src: T,
                         alt: g.intl.formatToPlainString(g.t.IzVXxY, {
                             userName: S
                         })

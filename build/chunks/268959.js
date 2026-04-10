@@ -30,20 +30,20 @@ let I = e => {
         } = e, {
             isPurchased: I,
             isPartiallyOwnedBundle: v
-        } = (0, m.h)(t), f = (0, p.G0)(t), _ = (0, s.bG)([d.A], () => d.A.getCategoryForProduct(t.skuId)), y = _?.unpublishedAt != null ? (0, p.WU)(_.unpublishedAt) : null, j = (0, s.bG)([u.default], () => u.default.getCurrentUser()), E = o.Ay.canUseCollectibles(j), b = (0, h.V_)(t), {
+        } = (0, m.h)(t), f = (0, p.G0)(t), y = (0, s.bG)([d.A], () => d.A.getCategoryForProduct(t.skuId)), _ = y?.unpublishedAt != null ? (0, p.WU)(y.unpublishedAt) : null, E = (0, s.bG)([u.default], () => u.default.getCurrentUser()), j = o.Ay.canUseCollectibles(E), b = (0, h.V_)(t), {
             isOrbExclusive: R
         } = (0, C.F)({
             product: t,
-            isPremiumUser: E,
+            isPremiumUser: j,
             prioritizedCurrency: x,
             hasDiscountOffer: null != b
         }), T = r;
-        if (null == T && (!l && (0, p.HF)(_?.unpublishedAt) ? T = g.AW.LIMITED_TIME : !v && !I && (0, p.aT)(t.skuId) ? T = g.AW.NEW : R ? T = g.AW.ORBS_EXCLUSIVE : f && (T = g.AW.NITRO_EXCLUSIVE)), null == T || T === g.AW.NONE) return null;
+        if (null == T && (!l && (0, p.HF)(y?.unpublishedAt) ? T = g.AW.LIMITED_TIME : !v && !I && (0, p.aT)(t.skuId) ? T = g.AW.NEW : R ? T = g.AW.ORBS_EXCLUSIVE : f && (T = g.AW.NITRO_EXCLUSIVE)), null == T || T === g.AW.NONE) return null;
         let P = null;
         switch (T) {
             case g.AW.LIMITED_TIME:
-                P = null != y ? y > 1 ? A.intl.formatToPlainString(A.t.Io7ozn, {
-                    days: y
+                P = null != _ ? _ > 1 ? A.intl.formatToPlainString(A.t.Io7ozn, {
+                    days: _
                 }) : A.intl.string(A.t.Bc13HF) : A.intl.string(A.t["h/uBCR"]);
                 break;
             case g.AW.NEW:

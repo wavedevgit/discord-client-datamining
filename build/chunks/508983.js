@@ -17,8 +17,8 @@ var i = n(627968),
     E = n(775602),
     T = n(709066),
     I = n(845625),
-    N = n(785823),
-    g = n(449585),
+    g = n(785823),
+    N = n(449585),
     f = n(137207),
     C = n(22007),
     h = n(378570),
@@ -42,9 +42,9 @@ var i = n(627968),
     w = n(705751),
     F = n(200700),
     B = n(985018),
-    V = n(96476);
+    X = n(96476);
 
-function X(e, t) {
+function q(e, t) {
     let {
         popouts: n,
         selected: i,
@@ -70,7 +70,7 @@ function X(e, t) {
     }
 }
 
-function q(e, t, n) {
+function V(e, t, n) {
     return l.useMemo(() => {
         if (null != t && null != n) return l => (0, i.jsx)(p.A, {
             ...l,
@@ -89,8 +89,8 @@ function K(e) {
         compact: l
     } = e;
     return (0, i.jsx)("div", {
-        className: r()(V.xQ, n, {
-            [V.oE]: l
+        className: r()(X.xQ, n, {
+            [X.oE]: l
         }),
         children: t
     })
@@ -102,7 +102,7 @@ function Y(e) {
         className: n
     } = e;
     return (0, i.jsx)("div", {
-        className: r()(V.A3, n),
+        className: r()(X.A3, n),
         children: t
     })
 }
@@ -113,19 +113,19 @@ function W(e) {
             return (0, i.jsx)(A.ucK, {
                 size: "xs",
                 color: "currentColor",
-                className: V.yr
+                className: X.yr
             });
         case I.G.SET_COMPLETED:
             return (0, i.jsx)(A.A9s, {
                 size: "xs",
                 color: "currentColor",
-                className: r()(V.yr, V.r0)
+                className: r()(X.yr, X.r0)
             });
         case I.G.SUBMIT_FEEDBACK:
             return (0, i.jsx)(A.iFK, {
                 size: "xs",
                 color: "currentColor",
-                className: V.yr
+                className: X.yr
             });
         default:
             return null
@@ -183,7 +183,7 @@ function z(e) {
         guildId: n
     } = e, l = Object.values(t.actions).sort((e, t) => e.actionType < t.actionType ? 1 : -1);
     return (0, i.jsx)("div", {
-        className: V.q_,
+        className: X.q_,
         children: l.map(e => (0, i.jsx)(J, {
             alertAction: e,
             guildId: n
@@ -198,8 +198,8 @@ let Q = l.memo(function(e) {
             compact: r,
             interactionUserId: s
         } = e,
-        o = X(n, l),
-        c = q(l, n.author),
+        o = q(n, l),
+        c = V(l, n.author),
         u = (0, D.Ay)(n),
         d = (0, P.tO)({
             message: n,
@@ -210,8 +210,8 @@ let Q = l.memo(function(e) {
             ...o
         }, c),
         _ = x.default.getUser(s),
-        m = X(n, l),
-        E = q(l, _, x.default.getCurrentUser());
+        m = q(n, l),
+        E = V(l, _, x.default.getCurrentUser());
     if (null != _) {
         let e = (0, D.FT)(_, l),
             i = (0, P.tO)({
@@ -228,12 +228,12 @@ let Q = l.memo(function(e) {
         variant: "text-md/normal",
         color: "text-strong",
         tag: "span",
-        className: V.he,
-        children: (0, N.fu)(n, a, () => (0, i.jsx)("div", {
-            className: V.aT,
+        className: X.he,
+        children: (0, g.fu)(n, a, () => (0, i.jsx)("div", {
+            className: X.aT,
             children: (0, i.jsx)(L.A, {
                 channel: a,
-                className: V.HA,
+                className: X.HA,
                 openChatWithoutConnecting: !0
             })
         }), () => d, t)
@@ -261,7 +261,7 @@ function Z(e) {
         handleBlur: L
     } = (0, y.G8)(x), v = (0, u.bG)([E.A], () => E.A.keyboardModeEnabled), j = (0, u.bG)([S.A], () => S.A.can(H.xBc.MANAGE_MESSAGES, s), [s]), {
         ruleName: G,
-        embedChannel: q,
+        embedChannel: V,
         decisionId: W,
         keywordMatchedContent: J,
         keyword: Z,
@@ -272,59 +272,59 @@ function Z(e) {
         alertActionsExecution: ei,
         quarantineType: el,
         interactionUserId: ea
-    } = (0, N.Ay)(a), er = l.useMemo(() => (0, M.Tz)($, J, s.id), [$, J, s]), {
+    } = (0, g.Ay)(a), er = l.useMemo(() => (0, M.Tz)($, J, s.id), [$, J, s]), {
         selected: es,
         ...eo
-    } = X(a, s), ec = l.useCallback(() => {
-        (0, g.w2)(a.id, $, W, s)
+    } = q(a, s), ec = l.useCallback(() => {
+        (0, N.w2)(a.id, $, W, s)
     }, [a.id, $, W, s]), eu = l.useCallback(e => {
-        null != ee && null != q && (e.stopPropagation(), e.preventDefault(), (0, C.A)(H.BVt.CHANNEL(q?.guild_id, q?.id, ee)))
-    }, [q, ee]), ed = l.useCallback(e => {
-        null != q && (m.default.selectChannel({
-            guildId: q.guild_id,
+        null != ee && null != V && (e.stopPropagation(), e.preventDefault(), (0, C.A)(H.BVt.CHANNEL(V?.guild_id, V?.id, ee)))
+    }, [V, ee]), ed = l.useCallback(e => {
+        null != V && (m.default.selectChannel({
+            guildId: V.guild_id,
             channelId: e,
             messageId: a.id
         }), (0, h.iN)(e))
-    }, [a, q]), e_ = l.useCallback(() => {
+    }, [a, V]), e_ = l.useCallback(() => {
         (0, f.E5)(a.id, s, I.G.DELETE_USER_MESSAGE)
     }, [s, a.id]), eA = (0, F.getFriendlyDurationString)(Number(et)), em = null != en, eE = j && null != ee && (null == ei || !ei.actions.hasOwnProperty(I.G.DELETE_USER_MESSAGE)), eT = a.embeds.length > 0 ? a.embeds[0].fields.find(e => "channel_id" === e.rawName)?.rawValue : null, eI = null != eT;
     return (0, i.jsx)("div", {
         onMouseEnter: _,
         onMouseLeave: p,
         children: (0, i.jsx)(b.A, {
-            className: r()(V.rs, {
-                [V.oE]: n
+            className: r()(X.rs, {
+                [X.oE]: n
             }),
             iconNode: n ? null : (0, i.jsx)(k.l, {
                 src: o
             }),
-            iconContainerClassName: V.zc,
+            iconContainerClassName: X.zc,
             compact: n,
             children: (0, i.jsxs)("div", {
-                className: r()(V.Qs, {
-                    [V.oE]: n
+                className: r()(X.Qs, {
+                    [X.oE]: n
                 }),
                 children: [(0, i.jsx)(P.ix, {
                     message: a,
-                    messageClassname: V.he,
-                    className: r()(V.QV, V.he, {
-                        [V.oE]: n
+                    messageClassname: X.he,
+                    className: r()(X.QV, X.he, {
+                        [X.oE]: n
                     }),
                     username: (0, i.jsxs)("div", {
-                        className: V.he,
+                        className: X.he,
                         children: [(0, i.jsx)(A.Text, {
                             variant: "text-md/normal",
                             color: "text-brand",
                             tag: "span",
-                            className: V.Xh,
+                            className: X.Xh,
                             children: B.intl.string(B.t.hG1StD)
                         }), (0, i.jsx)(T.A, {
                             type: w.nu.SYSTEM_DM,
-                            className: V.Al
+                            className: X.Al
                         }), (0, i.jsx)(Q, {
                             message: a,
                             channel: s,
-                            embedChannel: q,
+                            embedChannel: V,
                             compact: n,
                             interactionUserId: ea
                         })]
@@ -332,25 +332,25 @@ function Z(e) {
                     compact: n,
                     showTimestamp: !0
                 }), (0, i.jsx)("div", {
-                    className: r()(V.BK, {
-                        [V.oE]: n
+                    className: r()(X.BK, {
+                        [X.oE]: n
                     }),
                     children: (0, i.jsx)(U.A, {
                         ...R,
                         message: a,
-                        channel: q,
+                        channel: V,
                         content: er,
                         compact: n,
                         withFooter: !0,
                         hideTimestamp: !0,
-                        className: r()(V.gD, {
-                            [V.oE]: n,
-                            [V.wH]: es || v && O,
-                            [V.JD]: null != ee && null != q
+                        className: r()(X.gD, {
+                            [X.oE]: n,
+                            [X.wH]: es || v && O,
+                            [X.JD]: null != ee && null != V
                         }),
                         childrenAccessories: (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsxs)("div", {
-                                className: V.Y4,
+                                className: X.Y4,
                                 children: [null != Z && (0, i.jsxs)(i.Fragment, {
                                     children: [(0, i.jsx)(A.Text, {
                                         variant: "text-xs/medium",
@@ -360,7 +360,7 @@ function Z(e) {
                                             keyword: Z
                                         })
                                     }), (0, i.jsx)("div", {
-                                        className: r()(V.Om, V.Gx)
+                                        className: r()(X.Om, X.Gx)
                                     })]
                                 }), null != G && (0, i.jsx)(A.Text, {
                                     variant: "text-xs/medium",
@@ -371,26 +371,26 @@ function Z(e) {
                                     })
                                 }), null != eA && (0, i.jsxs)(i.Fragment, {
                                     children: [(0, i.jsx)("div", {
-                                        className: r()(V.Om, V.Gx)
+                                        className: r()(X.Om, X.Gx)
                                     }), (0, i.jsx)(A.Text, {
                                         variant: "text-xs/medium",
                                         color: "text-muted",
                                         tag: "span",
-                                        className: V.__invalid_footerText,
+                                        className: X.__invalid_footerText,
                                         children: B.intl.format(B.t["3LYql6"], {
                                             duration: eA
                                         })
                                     })]
                                 }), null != el && (0, i.jsxs)(i.Fragment, {
                                     children: [(0, i.jsx)("div", {
-                                        className: r()(V.Om, V.Gx)
+                                        className: r()(X.Om, X.Gx)
                                     }), (0, i.jsx)(A.Text, {
                                         variant: "text-xs/medium",
                                         color: "text-muted",
                                         tag: "span",
-                                        className: V.nx,
+                                        className: X.nx,
                                         children: B.intl.format(B.t["26bB2M"], {
-                                            reason: (0, N.o2)(el)
+                                            reason: (0, g.o2)(el)
                                         })
                                     })]
                                 })]
@@ -412,15 +412,15 @@ function Z(e) {
                 }), (0, i.jsx)(K, {
                     compact: n,
                     children: (0, i.jsxs)("div", {
-                        className: r()(V.Y4, V.UD, {
-                            [V.oE]: n
+                        className: r()(X.Y4, X.UD, {
+                            [X.oE]: n
                         }),
                         children: [(0, i.jsxs)("div", {
-                            className: V.AX,
+                            className: X.AX,
                             children: [(0, i.jsx)(A.lmn, {
                                 size: "xs",
                                 color: d.A.unsafe_rawColors.BRAND_500.css,
-                                className: V.Dq
+                                className: X.Dq
                             }), (0, i.jsx)(A.QWc, {
                                 variant: "primary",
                                 size: "sm",
@@ -432,9 +432,9 @@ function Z(e) {
                             })]
                         }), eI ? (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsx)("div", {
-                                className: V.Om
+                                className: X.Om
                             }), (0, i.jsx)("div", {
-                                className: V.AX,
+                                className: X.AX,
                                 children: (0, i.jsx)(A.QWc, {
                                     onClick: () => ed(eT),
                                     variant: "primary",
@@ -444,9 +444,9 @@ function Z(e) {
                                 })
                             })]
                         }) : null, (0, i.jsx)("div", {
-                            className: V.Om
+                            className: X.Om
                         }), (0, i.jsx)("div", {
-                            className: V.AX,
+                            className: X.AX,
                             children: (0, i.jsx)(A.QWc, {
                                 onClick: ec,
                                 variant: "primary",
@@ -456,9 +456,9 @@ function Z(e) {
                             })
                         }), eE ? (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsx)("div", {
-                                className: V.Om
+                                className: X.Om
                             }), (0, i.jsx)("div", {
-                                className: V.AX,
+                                className: X.AX,
                                 children: (0, i.jsx)(A.QWc, {
                                     onClick: e_,
                                     variant: "primary",

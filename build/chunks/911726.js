@@ -16,8 +16,8 @@ var i, l = n(627968),
     E = n(513609),
     T = n(928830),
     I = n(567771),
-    N = n(780964),
-    g = n(858897),
+    g = n(780964),
+    N = n(858897),
     f = n(473145),
     C = n(763754),
     h = n(888675),
@@ -146,7 +146,7 @@ function H(e) {
     }()), {
         createMultipleConfettiAt: T,
         confettiCanvas: I
-    } = a.useContext(A.x), [N, g] = a.useState(null), f = (0, o.f9)(I, N), C = function(e, t) {
+    } = a.useContext(A.x), [g, N] = a.useState(null), f = (0, o.f9)(I, g), C = function(e, t) {
         if (null == e) return "enter";
         switch (e) {
             case "enter":
@@ -252,7 +252,7 @@ function H(e) {
         }
     }, [h, f, E, d]), (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(o.K_, {
-            ref: g,
+            ref: N,
             sprites: b,
             colors: y,
             spriteWidth: 45,
@@ -346,7 +346,7 @@ function w(e) {
         k = a.useCallback(() => {
             (0, T.O9)({
                 settingsVisible: !0
-            }), (0, g.openUserSettings)(N.X.POGGERMODE_PANEL), O(!1)
+            }), (0, N.openUserSettings)(g.X.POGGERMODE_PANEL), O(!1)
         }, []),
         b = a.useCallback((e, t) => {
             t?.id.startsWith(v) && k()

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => E
 });
 var a = n(627968),
-    i = n(64700),
-    l = n(792216),
+    l = n(64700),
+    i = n(792216),
     r = n(990078),
     s = n(397927),
     o = n(223273),
@@ -22,15 +22,15 @@ function _(e) {
     let {
         game: t,
         url: n,
-        trackAction: l
+        trackAction: i
     } = e, {
         reviews: m
     } = t, x = m?.steam ?? {
         rating: void 0,
         ratingCount: void 0
-    }, h = (0, f.A)(), _ = (0, c.j)(x.rating, x.ratingCount), v = (0, u.y)(_), A = i.useCallback(() => {
-        l(d.Ws.SteamReviews), h(n)
-    }, [h, l, n]);
+    }, h = (0, f.A)(), _ = (0, c.j)(x.rating, x.ratingCount), v = (0, u.y)(_), A = l.useCallback(() => {
+        i(d.Ws.SteamReviews), h(n)
+    }, [h, i, n]);
     return (0, a.jsx)(s.DUT, {
         onClick: A,
         className: p.nf,
@@ -76,16 +76,16 @@ function v(e) {
     let {
         game: t,
         url: n,
-        trackAction: l
+        trackAction: i
     } = e, {
         reviews: r
     } = t, c = r?.opencritic ?? {
         topCriticRating: void 0,
         topCriticRatingCount: void 0,
         tier: void 0
-    }, m = c.tier, x = c.topCriticRating ?? -1, h = c.topCriticRatingCount ?? -1, _ = (x <= 0 || h <= 0) && null == m, v = (0, f.A)(), E = i.useCallback(() => {
-        l(d.Ws.OpenCriticReviews), v(n)
-    }, [v, l, n]);
+    }, m = c.tier, x = c.topCriticRating ?? -1, h = c.topCriticRatingCount ?? -1, _ = (x <= 0 || h <= 0) && null == m, v = (0, f.A)(), E = l.useCallback(() => {
+        i(d.Ws.OpenCriticReviews), v(n)
+    }, [v, i, n]);
     return (0, a.jsx)(s.DUT, {
         onClick: E,
         className: p.nf,
@@ -117,13 +117,13 @@ function v(e) {
 function A(e) {
     let {
         tier: t
-    } = e, n = (0, m.a)(t), i = (0, m.GE)(t);
+    } = e, n = (0, m.a)(t), l = (0, m.GE)(t);
     return (0, a.jsx)(r.m, {
         text: n,
         children: (0, a.jsx)("div", {
             className: p.TE,
             children: (0, a.jsx)("img", {
-                src: i,
+                src: l,
                 alt: n,
                 width: 32,
                 height: 32,
@@ -138,19 +138,19 @@ function b(e) {
         rating: t,
         tier: n
     } = e, {
-        foregroundColor: i,
-        backgroundColor: l
+        foregroundColor: l,
+        backgroundColor: i
     } = (0, m.ff)(n);
     return (0, a.jsx)(r.m, {
         text: g.intl.string(g.t.Ub4YR1),
         children: (0, a.jsxs)("div", {
             className: p.TE,
             style: {
-                backgroundColor: l
+                backgroundColor: i
             },
             children: [(0, a.jsx)(h.A, {
                 rating: t,
-                strokeColor: i
+                strokeColor: l
             }), (0, a.jsx)(s.Text, {
                 variant: "text-xs/bold",
                 color: "always-white",
@@ -165,8 +165,8 @@ let E = function(e) {
         game: t,
         trackAction: n
     } = e, {
-        applicationId: i
-    } = t, r = (0, x.I)(i), o = t.opencriticUrl, c = t.steamReleaseStatus !== l.Y.RETIRED_ABANDONED && null != r, d = t.reviews?.opencritic != null && null != o;
+        applicationId: l
+    } = t, r = (0, x.I)(l), o = t.opencriticUrl, c = t.steamReleaseStatus !== i.Y.RETIRED_ABANDONED && null != r, d = t.reviews?.opencritic != null && null != o;
     return c || d ? (0, a.jsxs)("div", {
         className: p.uW,
         children: [(0, a.jsx)("div", {

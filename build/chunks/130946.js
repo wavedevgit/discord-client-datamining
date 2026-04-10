@@ -1,7 +1,7 @@
 /** chunk id: 130946 params = (module,exports,require) **/
 n.d(t, {
     A: () => v,
-    c: () => C
+    c: () => R
 });
 var i, r = n(627968);
 n(64700);
@@ -15,15 +15,15 @@ var a = n(503698),
     _ = n(975571),
     m = n(40185),
     p = n(396375),
-    A = n(788868),
-    g = n(652215),
+    g = n(788868),
+    A = n(652215),
     x = n(985018),
     h = n(488149),
     f = n(137815),
     b = n(967521),
     N = n(767032),
-    R = n(990521),
-    C = ((i = {}).SUBSCRIBER_HOME = "SUBSCRIBER_HOME", i.NITRO_SETTINGS = "SETTINGS", i.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", i);
+    C = n(990521),
+    R = ((i = {}).SUBSCRIBER_HOME = "SUBSCRIBER_HOME", i.NITRO_SETTINGS = "SETTINGS", i.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", i);
 let v = function(e) {
     let {
         variant: t
@@ -56,14 +56,14 @@ let v = function(e) {
                     variant: "text-md/medium",
                     color: "text-subtle",
                     children: x.intl.format(x.t["lVOH/p"], {
-                        helpCenterLink: _.A.getArticleURL(g.MVz.SUMMER_BOGO_2025)
+                        helpCenterLink: _.A.getArticleURL(A.MVz.SUMMER_BOGO_2025)
                     })
                 }), (0, r.jsx)(p.A, {
                     textOptions: {
                         textOverride: x.intl.string(x.t.J61px0),
                         textClassName: h.cZ
                     },
-                    subscriptionTier: A.pe.TIER_2,
+                    subscriptionTier: g.pe.TIER_2,
                     showIcon: !1,
                     className: h.xF,
                     color: a
@@ -100,14 +100,14 @@ let v = function(e) {
                     variant: "text-sm/medium",
                     color: "text-subtle",
                     children: x.intl.format(x.t["lVOH/p"], {
-                        helpCenterLink: _.A.getArticleURL(g.MVz.SUMMER_BOGO_2025)
+                        helpCenterLink: _.A.getArticleURL(A.MVz.SUMMER_BOGO_2025)
                     })
                 }), (0, r.jsx)(p.A, {
                     textOptions: {
                         textOverride: x.intl.string(x.t.J61px0),
                         textClassName: h.cZ
                     },
-                    subscriptionTier: A.pe.TIER_2,
+                    subscriptionTier: g.pe.TIER_2,
                     showIcon: !1,
                     className: h.xF,
                     color: a
@@ -116,7 +116,7 @@ let v = function(e) {
                 className: h.m0,
                 children: (0, r.jsx)("img", {
                     alt: "",
-                    src: R.A,
+                    src: C.A,
                     className: h.$V
                 })
             })]
@@ -142,11 +142,11 @@ let v = function(e) {
                 variant: "text-sm/medium",
                 color: "text-subtle",
                 children: x.intl.format(x.t["lVOH/p"], {
-                    helpCenterLink: _.A.getArticleURL(g.MVz.SUMMER_BOGO_2025)
+                    helpCenterLink: _.A.getArticleURL(A.MVz.SUMMER_BOGO_2025)
                 })
             })]
         }), (0, r.jsx)(p.A, {
-            subscriptionTier: A.pe.TIER_2,
+            subscriptionTier: g.pe.TIER_2,
             showIcon: !0,
             shinyButtonClassName: h.Xp,
             hasActivePromotion: !0

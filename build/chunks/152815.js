@@ -1,7 +1,7 @@
 /** chunk id: 152815 params = (module,exports,require) **/
 n.d(t, {
     P: () => v,
-    ThirdPartyPromotionsModal: () => C
+    ThirdPartyPromotionsModal: () => R
 });
 var i = n(627968);
 n(64700);
@@ -16,8 +16,8 @@ var r = n(158954),
     _ = n(412260),
     m = n(116011),
     p = n(881373),
-    A = n(125877),
-    g = n(652215),
+    g = n(125877),
+    A = n(652215),
     x = n(653624),
     h = n(985018),
     f = n(276478);
@@ -69,13 +69,13 @@ let b = {
             modalSubtitle: {
                 message: x.default.W8jOD0,
                 values: {
-                    termsUrl: o.A.getArticleURL(g.MVz.LOGITECH_PROMOTION)
+                    termsUrl: o.A.getArticleURL(A.MVz.LOGITECH_PROMOTION)
                 }
             },
             landingUrl: "https://www.logitech.com/"
         }
     },
-    R = (e, t) => {
+    C = (e, t) => {
         let n = b[e.outboundTitle];
         return {
             id: e.id,
@@ -88,7 +88,7 @@ let b = {
             code: t
         }
     },
-    C = e => {
+    R = e => {
         let {
             partnerId: t,
             transitionState: n,
@@ -101,13 +101,13 @@ let b = {
             return [e, n]
         }), {
             promotionsLoaded: p,
-            claimedOutboundPromotionCodeMap: g
+            claimedOutboundPromotionCodeMap: A
         } = (0, u.y7)();
         if (!p) return (0, i.jsx)(r.y$y, {});
         let b = c?.modalSubtitle != null ? h.intl.format(c.modalSubtitle.message, c.modalSubtitle.values) : void 0,
-            C = null == c ? t : h.intl.string(c.modalTitle);
+            R = null == c ? t : h.intl.string(c.modalTitle);
         return (0, i.jsx)(r.Modal, {
-            title: C,
+            title: R,
             subtitle: b,
             actions: [],
             transitionState: n,
@@ -123,7 +123,7 @@ let b = {
                         className: f.kR,
                         children: o.map(e => (0, i.jsx)(m.wx, {
                             recurrence: {
-                                ...R(e, g[e.id] ?? null),
+                                ...C(e, A[e.id] ?? null),
                                 asset: m.oL[e.partnerId ?? ""]?.asset ?? ""
                             },
                             showPartnerImage: !0,
@@ -139,8 +139,8 @@ let b = {
                         children: h.intl.string(x.default.Wm58LR)
                     }), (0, i.jsx)("div", {
                         className: f.kR,
-                        children: d.map(e => (0, i.jsx)(A.$, {
-                            promotion: R(e, g[e.id] ?? null),
+                        children: d.map(e => (0, i.jsx)(g.$, {
+                            promotion: C(e, A[e.id] ?? null),
                             analyticsLocations: [l.A.THIRD_PARTY_PROMOTIONS_MODAL]
                         }, e.id))
                     })]
@@ -152,7 +152,7 @@ let b = {
         let {
             partnerId: t
         } = e;
-        c.default.track(g.HAw.THIRD_PARTY_PROMOTION_MODAL_OPENED, {
+        c.default.track(A.HAw.THIRD_PARTY_PROMOTION_MODAL_OPENED, {
             partner_id: t
         }), d.Ay.fetchActivePromotions(), (0, s.mMO)(async () => {
             let {

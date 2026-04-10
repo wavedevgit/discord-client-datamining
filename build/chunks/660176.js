@@ -1,6 +1,6 @@
 /** chunk id: 660176 params = (module,exports,require) **/
 n.d(t, {
-    A: () => V
+    A: () => X
 });
 var i = n(627968),
     l = n(64700),
@@ -17,8 +17,8 @@ var i = n(627968),
     E = n(585510),
     T = n(903093),
     I = n(785823),
-    N = n(449585),
-    g = n(137207),
+    g = n(449585),
+    N = n(137207),
     f = n(997509),
     C = n(916768),
     h = n(854627),
@@ -210,12 +210,12 @@ function w(e) {
         dmsSent: s,
         raidType: c,
         resolvedReason: m
-    } = (0, I.Bk)(t), g = (0, d.bG)([S.A], () => S.A.getChannel(t.channel_id), [t.channel_id]), f = g?.guild_id ?? null, {
+    } = (0, I.Bk)(t), N = (0, d.bG)([S.A], () => S.A.getChannel(t.channel_id), [t.channel_id]), f = N?.guild_id ?? null, {
         shouldShowIncidentActions: C
     } = (0, E.Li)(f), h = (0, M.Am)(t.author.id, t.channel_id), p = l.useCallback(() => {
-        let e = g?.guild_id;
-        null != e && (0, N.is)(t.id, e)
-    }, [t.id, g]), x = c === u.p.DM_RAID, R = x ? A.EpV : A.EF8;
+        let e = N?.guild_id;
+        null != e && (0, g.is)(t.id, e)
+    }, [t.id, N]), x = c === u.p.DM_RAID, R = x ? A.EpV : A.EF8;
     return (0, i.jsx)(B, {
         compact: n,
         header: (0, i.jsxs)(l.Fragment, {
@@ -332,8 +332,8 @@ function F(e) {
                     size: "sm",
                     text: v.intl.string(v.t.oX14El),
                     onClick: function() {
-                        null != a && null != s && (0, g.W5)(a, s, () => {
-                            (0, C.w)(c), (0, g.wu)(a)
+                        null != a && null != s && (0, N.W5)(a, s, () => {
+                            (0, C.w)(c), (0, N.wu)(a)
                         })
                     }
                 })
@@ -386,7 +386,7 @@ function B(e) {
     })
 }
 
-function V(e) {
+function X(e) {
     let {
         id: t,
         compact: n,

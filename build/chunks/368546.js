@@ -1,18 +1,18 @@
 /** chunk id: 368546 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => i
 });
 var a = n(64700);
-let i = "requestVideoFrameCallback" in HTMLVideoElement.prototype;
+let l = "requestVideoFrameCallback" in HTMLVideoElement.prototype;
 
-function l(e) {
+function i(e) {
     let {
         videoRef: t,
         canvasRef: n,
-        enabled: l
+        enabled: i
     } = e;
     a.useEffect(() => {
-        if (!l) return;
+        if (!i) return;
         let e = t.current,
             a = n.current;
         if (null == e || null == a) return;
@@ -24,7 +24,7 @@ function l(e) {
         function o() {
             s || e.readyState < 2 || r.drawImage(e, 0, 0, 10, 6)
         }
-        if (i) {
+        if (l) {
             let t;
 
             function c() {
@@ -59,5 +59,5 @@ function l(e) {
                 s = !0, cancelAnimationFrame(t), e.removeEventListener("play", f), e.removeEventListener("pause", x), e.removeEventListener("ended", x), e.removeEventListener("seeked", o), e.removeEventListener("loadeddata", o)
             }
         }
-    }, [t, n, l])
+    }, [t, n, i])
 }

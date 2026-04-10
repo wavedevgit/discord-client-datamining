@@ -24,13 +24,13 @@ function E(e) {
     } = e, E = (0, o.Ay)(t), T = l(E), {
         avatarSrc: I,
         eventHandlers: {
-            onMouseEnter: N,
-            onMouseLeave: g
+            onMouseEnter: g,
+            onMouseLeave: N
         }
     } = (0, u.a)(!0);
     return (0, i.jsx)("div", {
-        onMouseEnter: N,
-        onMouseLeave: g,
+        onMouseEnter: g,
+        onMouseLeave: N,
         children: (0, i.jsx)(d.A, {
             className: a()(m.rs, {
                 [m.oE]: n

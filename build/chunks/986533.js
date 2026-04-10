@@ -23,9 +23,9 @@ function T(e) {
         compact: n,
         usernameHook: l
     } = e, T = (0, o.Ay)(t), I = l(T), {
-        avatarSrc: N,
+        avatarSrc: g,
         eventHandlers: {
-            onMouseEnter: g,
+            onMouseEnter: N,
             onMouseLeave: f
         }
     } = (0, u.a)(!0), C = "" !== t.content ? new Date(t.content).toLocaleString(m.intl.currentLocale, {
@@ -36,14 +36,14 @@ function T(e) {
         year: "numeric"
     }) : "";
     return (0, i.jsx)("div", {
-        onMouseEnter: g,
+        onMouseEnter: N,
         onMouseLeave: f,
         children: (0, i.jsx)(d.A, {
             className: a()(E.rs, {
                 [E.oE]: n
             }),
             iconNode: n ? null : (0, i.jsx)(u.l, {
-                src: N
+                src: g
             }),
             iconContainerClassName: E.zc,
             compact: n,
