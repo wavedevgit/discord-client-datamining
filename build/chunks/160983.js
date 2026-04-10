@@ -30,10 +30,10 @@ function A(e) {
         text: p.intl.string(p.t.chq59f),
         section: x.RP.ACTIVITY
     });
-    let P = !1 === l.nsfwAllowed,
-        _ = s.A.isFriend(l.id),
-        R = E?.visibility === n.a.PUBLIC;
-    return (N || !N && T && R && v && (!P || P && _)) && I.push({
+    let O = !1 === l.nsfwAllowed,
+        P = s.A.isFriend(l.id),
+        _ = E?.visibility === n.a.PUBLIC;
+    return (N || !N && T && _ && v && (!O || O && P)) && I.push({
         text: p.intl.string(p.t["7lZ31J"]),
         section: x.RP.WISHLIST
     }), l.id !== t?.id && h && (I.push({
