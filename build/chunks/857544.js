@@ -5,9 +5,9 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(735438),
-    o = n.n(r),
+    r = n.n(l),
+    a = n(735438),
+    o = n.n(a),
     d = n(158954),
     c = n(435371),
     u = n(397927),
@@ -61,9 +61,9 @@ class N extends s.Component {
         } = this.props;
         return (0, i.jsxs)(A.A, {
             direction: A.A.Direction.VERTICAL,
-            className: a()(f.oS, E.SX, S.N, f.nM),
+            className: r()(f.oS, E.SX, S.N, f.nM),
             children: [(0, i.jsx)(m.A, {
-                className: a()(f.lL, {
+                className: r()(f.lL, {
                     [f.zi]: s
                 }),
                 onClick: s ? void 0 : this.handleRemoveBuildOverride
@@ -229,7 +229,7 @@ class I extends s.Component {
     renderEmpty() {
         return (0, i.jsx)(u.ppr, {
             theme: h.A.theme,
-            className: a()(E.eT, E.SX),
+            className: r()(E.eT, E.SX),
             children: (0, i.jsx)(u.SGT, {
                 children: "You have no build overrides configured."
             })
@@ -303,7 +303,7 @@ class I extends s.Component {
             className: E.QX
         }) : null != s && 0 === Object.keys(s).length ? this.renderEmpty() : this.renderItems();
         let l = !n && !t && this.getAvailableProjects().length > 0,
-            a = v(s ?? {}) && "stable" !== window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, i.jsx)(u.Text, {
+            r = v(s ?? {}) && "stable" !== window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, i.jsx)(u.Text, {
                 color: "text-feedback-critical",
                 variant: "text-md/normal",
                 children: "Mobile build overrides must be generated using the desktop/web stable client for now!"
@@ -325,7 +325,7 @@ class I extends s.Component {
                     })),
                     onSelectionChange: this.handleAddBuildOverride,
                     disabled: !l
-                }), a, e, (0, i.jsxs)(u.ButtonGroup, {
+                }), r, e, (0, i.jsxs)(u.ButtonGroup, {
                     justify: "end",
                     children: [this.renderRefreshButton(), this.renderLinkButton(), this.renderSaveButton()]
                 })]
@@ -473,8 +473,8 @@ class j extends s.Component {
             userIdEntry: n,
             userIdEntryError: s,
             allowedVersions: l,
-            allowedVersionEntry: a,
-            allowedVersionEntryError: r,
+            allowedVersionEntry: r,
+            allowedVersionEntryError: a,
             allowLoggedOut: o,
             experiments: d,
             experimentsError: c
@@ -502,9 +502,9 @@ class j extends s.Component {
                 children: [(0, i.jsx)(u.ksK, {
                     label: "Add allowed app version (required)",
                     autoFocus: !0,
-                    value: a,
+                    value: r,
                     onKeyDown: this.handleAllowedVersionEnter,
-                    error: r,
+                    error: a,
                     onChange: this.handleAllowedVersionEntry,
                     placeholder: "Example: 34",
                     trailing: {

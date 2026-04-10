@@ -1,47 +1,47 @@
 /** chunk id: 684136 params = (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => A
 });
-var i, s = n(627968);
+var i, l = n(627968);
 n(64700);
-var r = n(503698),
-    l = n.n(r),
-    a = n(607399),
-    d = n(397927),
-    o = n(985018),
-    h = n(494697),
-    u = ((i = u || {}).DEFAULT = "", i.BOLD = "Bold", i.SOLID = "Solid", i);
+var a = n(503698),
+    r = n.n(a),
+    s = n(607399),
+    o = n(397927),
+    u = n(985018),
+    d = n(494697),
+    c = ((i = c || {}).DEFAULT = "", i.BOLD = "Bold", i.SOLID = "Solid", i);
 
-function c(e) {
+function A(e) {
     let {
         closeAction: t,
         variant: n = "",
         keybind: i,
-        className: r
+        className: a
     } = e;
-    return (0, s.jsxs)("div", {
-        className: l()(h.kL, r),
-        children: [(0, s.jsx)(d.DUT, {
-            className: l()(h.b, {
-                [h.EH]: "Bold" === n,
-                [h.O3]: "Solid" === n
+    return (0, l.jsxs)("div", {
+        className: r()(d.kL, a),
+        children: [(0, l.jsx)(o.DUT, {
+            className: r()(d.b, {
+                [d.EH]: "Bold" === n,
+                [d.O3]: "Solid" === n
             }),
             onClick: t,
-            "aria-label": o.intl.string(o.t.cpT0Cq),
-            children: "Solid" === n ? (0, s.jsx)(d.aXh, {
+            "aria-label": u.intl.string(u.t.cpT0Cq),
+            children: "Solid" === n ? (0, l.jsx)(o.aXh, {
                 size: "md",
                 color: "currentColor",
                 "aria-hidden": !0
-            }) : (0, s.jsx)(d.PGe, {
+            }) : (0, l.jsx)(o.PGe, {
                 size: "sm",
                 color: "currentColor",
                 "aria-hidden": !0
             })
-        }), a.Fr ? null : (0, s.jsx)("div", {
-            className: h.P,
+        }), s.Fr ? null : (0, l.jsx)("div", {
+            className: d.P,
             "aria-hidden": !0,
             children: i
         })]
     })
 }
-c.Variants = u
+A.Variants = c

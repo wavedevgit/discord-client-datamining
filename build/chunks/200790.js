@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(421380),
-    r = n(397927),
+    r = n(421380),
+    a = n(397927),
     o = n(688810),
     d = n(821956),
     c = n(562819),
@@ -33,7 +33,7 @@ function A(e) {
     }), {
         pendingAvatarDecoration: S,
         errors: E
-    } = (0, m.CP)(n?.id), b = p ? r.wLn : a.$n;
+    } = (0, m.CP)(n?.id), b = p ? a.wLn : r.$n;
     return (0, i.jsx)(g.A, {
         className: s,
         forcedDivider: h,
@@ -43,7 +43,7 @@ function A(e) {
         children: (0, i.jsxs)("div", {
             className: x.NC,
             children: [(0, i.jsx)(b, {
-                size: a.$n.Sizes.SMALL,
+                size: r.$n.Sizes.SMALL,
                 onClick: () => {
                     (0, c.L)({
                         analyticsLocations: T,
@@ -57,7 +57,7 @@ function A(e) {
             }), (void 0 === S ? null != f : null != S) && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: x.DT,
-                children: (0, i.jsx)(r.Button, {
+                children: (0, i.jsx)(a.Button, {
                     variant: "secondary",
                     size: "sm",
                     text: (0, d.uZ)(t, n) ? _.intl.string(_.t.CHf9iJ) : _.intl.string(_.t.OrokWm),

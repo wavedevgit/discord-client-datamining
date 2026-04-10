@@ -1,27 +1,27 @@
 /** chunk id: 200470 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => s
 });
 var i = n(627968);
 n(64700);
 var r = n(503698),
-    a = n.n(r),
-    s = n(134491);
-let l = e => {
+    l = n.n(r),
+    o = n(134491);
+let s = e => {
     let {
         value: t = 0,
         text: n,
         className: r,
-        lowImportance: l,
-        ...o
+        lowImportance: s,
+        ...a
     } = e;
     return null != n ? (0, i.jsx)("div", {
-        className: a()(s.i, r, l && s.H),
-        ...o,
+        className: l()(o.i, r, s && o.H),
+        ...a,
         children: n
     }) : t > 0 ? (0, i.jsx)("div", {
-        className: a()(s.i, r, l && s.H),
-        ...o,
+        className: l()(o.i, r, s && o.H),
+        ...a,
         children: t
     }) : null
 }

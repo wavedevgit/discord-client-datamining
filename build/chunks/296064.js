@@ -1,70 +1,70 @@
 /** chunk id: 296064 params = (module,exports,require) **/
 n.d(t, {
-    r: () => S
+    r: () => p
 });
-var l = n(627968),
-    i = n(64700),
+var i = n(627968),
+    l = n(64700),
     r = n(6161),
     s = n(681154),
     a = n(974690),
-    u = n(435371),
-    o = n(397927),
+    o = n(435371),
+    u = n(397927),
     d = n(833349),
     c = n(672979),
     h = n(661191),
     g = n(243612),
-    I = n(67103),
-    A = n(652215),
-    f = n(985018);
+    m = n(67103),
+    f = n(652215),
+    A = n(985018);
 
-function E(e) {
-    return e.find(e => (0, d.A)(e, A.jUm.JOIN))
+function I(e) {
+    return e.find(e => (0, d.A)(e, f.jUm.JOIN))
 }
 
-function m(e, t) {
-    return null == t ? E(e) : e.find(e => (0, d.A)(e, A.jUm.JOIN) && e.application_id === t) ?? E(e)
+function E(e, t) {
+    return null == t ? I(e) : e.find(e => (0, d.A)(e, f.jUm.JOIN) && e.application_id === t) ?? I(e)
 }
 
-function S(e) {
+function p(e) {
     let {
         userId: t,
         friendActivities: n,
         currentUserPlayingActivities: d,
-        gameProfileEntry: A,
-        onPrimaryAction: E
-    } = e, [S, _] = i.useState(!1), p = i.useRef(null);
-    i.useEffect(() => () => {
-        null != p.current && clearTimeout(p.current)
+        gameProfileEntry: f,
+        onPrimaryAction: I
+    } = e, [p, _] = l.useState(!1), S = l.useRef(null);
+    l.useEffect(() => () => {
+        null != S.current && clearTimeout(S.current)
     }, []);
-    let N = function(e, t, n, l) {
-            let i = (0, g.qv)(),
-                u = i?.altId ?? i?.id,
-                o = m(t, u);
-            if (null != o) return {
+    let x = function(e, t, n, i) {
+            let l = (0, g.qv)(),
+                o = l?.altId ?? l?.id,
+                u = E(t, o);
+            if (null != u) return {
                 kind: "ask_to_join",
-                activity: o
+                activity: u
             };
-            let d = m(n, u);
+            let d = E(n, o);
             if (null != d) return {
                 kind: "invite_to_activity",
                 activity: d
             };
-            if (null != l) return {
+            if (null != i) return {
                 kind: "send_game_invite_message",
-                gameEntry: l
+                gameEntry: i
             };
-            let I = n.find(c.A);
-            if (null != I) {
+            let m = n.find(c.A);
+            if (null != m) {
                 let t;
                 return {
                     kind: "send_game_invite_message",
-                    gameEntry: (t = I.timestamps?.start ?? Date.now(), {
+                    gameEntry: (t = m.timestamps?.start ?? Date.now(), {
                         id: h.default.fromTimestamp(t),
                         author_id: e,
                         extra: {
                             type: "played_game_extra",
-                            game_name: I.name,
-                            application_id: I.application_id ?? "",
+                            game_name: m.name,
+                            application_id: m.application_id ?? "",
                             fake_inventory_item: !0
                         },
                         content_type: s.ContentInventoryEntryType.PLAYED_GAME,
@@ -78,58 +78,58 @@ function S(e) {
                 }
             }
             return null
-        }(t, n, d, A),
-        T = i.useCallback(e => {
-            e.preventDefault(), e.stopPropagation(), S || null == N || (_(!0), null != p.current && clearTimeout(p.current), p.current = setTimeout(() => {
-                _(!1), p.current = null
-            }, 2e3), E?.({
+        }(t, n, d, f),
+        T = l.useCallback(e => {
+            e.preventDefault(), e.stopPropagation(), p || null == x || (_(!0), null != S.current && clearTimeout(S.current), S.current = setTimeout(() => {
+                _(!1), S.current = null
+            }, 2e3), I?.({
                 type: function(e) {
                     switch (e) {
                         case "ask_to_join":
-                            return I.c.ASK_TO_JOIN;
+                            return m.c.ASK_TO_JOIN;
                         case "invite_to_activity":
-                            return I.c.SEND_ACTIVITY_INVITE;
+                            return m.c.SEND_ACTIVITY_INVITE;
                         case "send_game_invite_message":
-                            return I.c.SEND_GAME_INVITE_MESSAGE
+                            return m.c.SEND_GAME_INVITE_MESSAGE
                     }
-                }(N.kind),
+                }(x.kind),
                 userId: t,
-                activity: N.activity,
-                gameEntry: N.gameEntry
+                activity: x.activity,
+                gameEntry: x.gameEntry
             }))
-        }, [S, N, t, E]);
-    if (null == N) return null;
-    let y = function(e, t) {
-            if (t) return o.BNr;
+        }, [p, x, t, I]);
+    if (null == x) return null;
+    let N = function(e, t) {
+            if (t) return u.BNr;
             switch (e) {
                 case "ask_to_join":
-                    return o.E7M;
+                    return u.E7M;
                 case "invite_to_activity":
-                    return o.DpX;
+                    return u.DpX;
                 case "send_game_invite_message":
-                    return o.lX7
+                    return u.lX7
             }
-        }(N.kind, S),
+        }(x.kind, p),
         C = function(e) {
             switch (e) {
                 case "ask_to_join":
-                    return f.intl.string(f.t.OKsSCR);
+                    return A.intl.string(A.t.OKsSCR);
                 case "invite_to_activity":
-                    return f.intl.string(f.t["3fRySx"]);
+                    return A.intl.string(A.t["3fRySx"]);
                 case "send_game_invite_message":
-                    return f.intl.string(f.t.XHxDIV)
+                    return A.intl.string(A.t.XHxDIV)
             }
-        }(N.kind);
-    return (0, l.jsx)(u.m_, {
+        }(x.kind);
+    return (0, i.jsx)(o.m_, {
         text: C,
         "aria-label": C,
-        children: (0, l.jsx)(o.K0, {
-            icon: y,
+        children: (0, i.jsx)(u.K0, {
+            icon: N,
             "aria-label": C,
             size: "sm",
             variant: "icon-only",
             onClick: T,
-            disabled: S
+            disabled: p
         })
     })
 }

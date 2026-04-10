@@ -5,10 +5,10 @@ n.d(t, {
 var i = n(934551),
     s = n(314116),
     l = n(830215),
-    a = n(419954),
-    r = n(780964),
+    r = n(419954),
+    a = n(780964),
     o = n(985018);
-let d = (0, a.i4)(r.X.LOGOUT_SIDEBAR_ITEM, {
+let d = (0, r.i4)(a.X.LOGOUT_SIDEBAR_ITEM, {
     variant: "destructive",
     useTitle: () => o.intl.string(o.t["2jxGer"]),
     icon: i.DoorExitIcon,

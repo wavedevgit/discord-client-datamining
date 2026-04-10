@@ -6,16 +6,16 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(397927),
-    r = n(985018),
+    r = n(397927),
+    a = n(985018),
     o = n(347217);
 
 function d(e) {
     let {
         className: t
     } = e;
-    return (0, i.jsx)(a.LpS, {
+    return (0, i.jsx)(r.LpS, {
         className: l()(o.T, t),
-        text: r.intl.string(r.t.EYxi0o)
+        text: a.intl.string(a.t.EYxi0o)
     })
 }

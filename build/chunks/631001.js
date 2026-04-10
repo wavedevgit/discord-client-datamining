@@ -3,20 +3,20 @@ n.d(t, {
     A: () => o
 }), n(323874), n(14289), n(35956);
 var i = n(877227),
-    a = n(839214),
-    r = n(890687),
+    r = n(839214),
+    a = n(890687),
     l = n(652215);
 let s = Object.freeze({
-        tab: r.NC.ALL
+        tab: a.NC.ALL
     }),
-    o = (0, a.D)(e => ({
+    o = (0, r.D)(e => ({
         ...s,
         initializeFromUrl: (t, n) => {
-            let i = new URLSearchParams(t).get(r.L1.TAB);
-            (i !== r.NC.PREVIEW_TOOL || n) && null != i && Object.values(r.NC).includes(i) ? e({
+            let i = new URLSearchParams(t).get(a.L1.TAB);
+            (i !== a.NC.PREVIEW_TOOL || n) && null != i && Object.values(a.NC).includes(i) ? e({
                 tab: i
             }) : e({
-                tab: r.NC.ALL
+                tab: a.NC.ALL
             })
         },
         setTab: t => {
@@ -24,8 +24,8 @@ let s = Object.freeze({
                 tab: t
             });
             let n = new URLSearchParams;
-            n.set(r.L1.TAB, t);
-            let a = `${l.BVt.QUEST_HOME}?${n.toString()}`;
-            (0, i.pX)(a.toString())
+            n.set(a.L1.TAB, t);
+            let r = `${l.BVt.QUEST_HOME}?${n.toString()}`;
+            (0, i.pX)(r.toString())
         }
     }))

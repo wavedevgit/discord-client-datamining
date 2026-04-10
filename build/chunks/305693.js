@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(311907),
     s = n(419954),
     l = n(933297),
-    a = n(287809),
-    r = n(780964),
+    r = n(287809),
+    a = n(780964),
     o = n(358776),
     d = n(199499),
     c = n(272338),
@@ -19,10 +19,10 @@ var i = n(311907),
     h = n(398336),
     p = n(865054),
     T = n(985018);
-let f = (0, s.zZ)(r.X.ACCOUNT_AUTHENTICATION_CATEGORY, {
+let f = (0, s.zZ)(a.X.ACCOUNT_AUTHENTICATION_CATEGORY, {
     useTitle: () => T.intl.string(T.t.pKSjEj),
     useInlineNotice: function() {
-        return (0, i.bG)([a.default], () => a.default.getCurrentUser()?.mfaEnabled ?? !1) ? {
+        return (0, i.bG)([r.default], () => r.default.getCurrentUser()?.mfaEnabled ?? !1) ? {
             type: l.lT.STRONGLY_DISCOURAGED_CUSTOM,
             notice: d.A
         } : null

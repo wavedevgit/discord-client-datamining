@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(158954),
-    a = n(311907),
-    r = n(397927),
+    r = n(311907),
+    a = n(397927),
     o = n(73153),
     d = n(271866),
     c = n(956518),
@@ -25,7 +25,7 @@ function h(e) {
         authorizedApplicationId: h,
         authorizationError: p,
         authorizing: T
-    } = (0, a.cf)([m.A], () => ({
+    } = (0, r.cf)([m.A], () => ({
         authorizedApplicationId: m.A.testModeApplicationId,
         authorizationError: m.A.error,
         authorizing: m.A.isFetchingAuthorization
@@ -63,7 +63,7 @@ function h(e) {
         transitionState: n,
         children: [null == p ? null : (0, i.jsx)("div", {
             className: x.SX,
-            children: (0, i.jsx)(r.wx6, {
+            children: (0, i.jsx)(a.wx6, {
                 type: "critical",
                 children: p
             })
@@ -72,7 +72,7 @@ function h(e) {
             align: u.A.Align.START,
             children: [(0, i.jsx)("div", {
                 className: _.I,
-                children: (0, i.jsx)(r.ksK, {
+                children: (0, i.jsx)(a.ksK, {
                     label: g.intl.string(g.t.P6TzgI),
                     required: !0,
                     value: f,
@@ -85,7 +85,7 @@ function h(e) {
                 })
             }), (0, i.jsx)("div", {
                 className: _.I,
-                children: (0, i.jsx)(r.l6P, {
+                children: (0, i.jsx)(a.l6P, {
                     selectionMode: "single",
                     label: g.intl.string(g.t["/GTqXG"]),
                     disabled: !N || "" === f,
@@ -106,7 +106,7 @@ function h(e) {
                 })
             }), "localhost" !== C ? null : (0, i.jsx)("div", {
                 className: _.I,
-                children: (0, i.jsx)(r.ksK, {
+                children: (0, i.jsx)(a.ksK, {
                     required: !0,
                     label: g.intl.string(g.t.fF4zxq),
                     value: E,

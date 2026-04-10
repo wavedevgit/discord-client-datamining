@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(397927),
-    r = n(780964),
+    r = n(397927),
+    a = n(780964),
     o = n(858897),
     d = n(975571),
     c = n(927578),
@@ -26,14 +26,14 @@ let A = e => {
     if (null == s) return null;
     let T = null != s ? c.Ay.getPremiumPlanItem(s) : null;
     if (c.Ay.isBoostOnlySubscription(s) ? t = _.intl.string(_.t.Uj0md3) : null != T && (t = c.Ay.getTierDisplayNameByPlanId(T.planId)), null == t) return null;
-    let f = () => (0, o.openUserSettings)(r.X.SUBSCRIPTIONS_PANEL),
+    let f = () => (0, o.openUserSettings)(a.X.SUBSCRIPTIONS_PANEL),
         S = (null != T ? c.Ay.getSkuIdForPlan(T.planId) : null) === m.pe.TIER_1;
-    return n = null != h ? h : p ? "always-white" : "text-default", (0, i.jsxs)(a.ZpM, {
+    return n = null != h ? h : p ? "always-white" : "text-default", (0, i.jsxs)(r.ZpM, {
         className: l()(x.kL, A, {
             [x.He]: p
         }),
-        type: a.ZpM.Types.CUSTOM,
-        children: [(0, i.jsx)(a.EpV, {
+        type: r.ZpM.Types.CUSTOM,
+        children: [(0, i.jsx)(r.EpV, {
             size: "custom",
             width: 20,
             height: 20,
@@ -41,7 +41,7 @@ let A = e => {
             className: l()(x.Kk, {
                 [x.Pt]: p
             })
-        }), (0, i.jsx)(a.Text, {
+        }), (0, i.jsx)(r.Text, {
             variant: "text-sm/medium",
             color: n,
             children: S ? _.intl.format(_.t["tYuv+T"], {

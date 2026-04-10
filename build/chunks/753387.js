@@ -5,12 +5,12 @@ n.d(t, {
 var i = n(419954),
     s = n(104954),
     l = n(780964),
-    a = n(922475),
-    r = n(985018);
+    r = n(922475),
+    a = n(985018);
 let o = (0, i.zZ)(l.X.DATA_REQUEST_CATEGORY, {
-    useTitle: () => r.intl.string(r.t.VjDjpb),
+    useTitle: () => a.intl.string(a.t.VjDjpb),
     initialize: () => {
         (0, s.s)()
     },
-    buildLayout: () => [a.h]
+    buildLayout: () => [r.h]
 })

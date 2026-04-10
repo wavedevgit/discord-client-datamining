@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    r = n.n(a),
+var r = n(503698),
+    a = n.n(r),
     l = n(311907),
     s = n(554146),
     o = n(397927),
@@ -13,8 +13,8 @@ var a = n(503698),
     c = n(793574),
     u = n(688810),
     A = n(915089),
-    _ = n(379848),
-    h = n(193699),
+    h = n(379848),
+    _ = n(193699),
     m = n(153488),
     g = n(426389),
     p = n(652215),
@@ -30,7 +30,7 @@ function f() {
         children: (0, i.jsx)(d.A, {
             section: p.JJy.ACTIVE_NOW_COLUMN,
             children: (0, i.jsx)("aside", {
-                className: r()(I.kL, "refresh-active-now"),
+                className: a()(I.kL, "refresh-active-now"),
                 "aria-labelledby": n,
                 children: (0, i.jsx)(o.HOs, {
                     className: I.XG,
@@ -40,14 +40,14 @@ function f() {
                             className: I.wx,
                             id: n,
                             children: E.intl.string(E.t.F4Zggw)
-                        }), (0, i.jsx)(_.Ay, {
+                        }), (0, i.jsx)(h.Ay, {
                             contentTypes: t,
                             children: e => {
                                 let {
                                     visibleContent: t,
                                     markAsDismissed: n
                                 } = e;
-                                if (t === s.M.NOW_PLAYING_CONSENT_CARD) return (0, i.jsx)(h.A, {
+                                if (t === s.M.NOW_PLAYING_CONSENT_CARD) return (0, i.jsx)(_.A, {
                                     className: I.__invalid_consentCard,
                                     markAsDismissed: n
                                 })

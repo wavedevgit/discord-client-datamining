@@ -1,7 +1,7 @@
 /** chunk id: 227308 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => m
 });
 var i = n(627968),
     s = n(64700),
@@ -18,12 +18,12 @@ var i = n(627968),
     f = n(652215),
     g = n(975455);
 
-function _(e) {
+function m(e) {
     let {
         locked: t,
         keybind: n
-    } = e, l = s.useRef(null), h = (0, o.yK)([d.A], () => d.A.getNotifications()), _ = (0, o.bG)([c.default], () => c.default.getNotificationPositionMode());
-    if ((0, o.bG)([p.A], () => p.A.isNotificationDisabled(A.KS.TextChat)) || _ === f.G6Q.DISABLED) return null;
+    } = e, l = s.useRef(null), h = (0, o.yK)([d.A], () => d.A.getNotifications()), m = (0, o.bG)([c.default], () => c.default.getNotificationPositionMode());
+    if ((0, o.bG)([p.A], () => p.A.isNotificationDisabled(A.KS.TextChat)) || m === f.G6Q.DISABLED) return null;
     let x = h.filter(e => !t || e.status !== f.yFH.TIMED_OUT),
         E = (0, r.groupBy)(x, e => e.type);
     return (0, i.jsx)(u.A, {
@@ -31,13 +31,13 @@ function _(e) {
         observeInterval: 200,
         children: (0, i.jsx)("div", {
             ref: l,
-            className: a()(g.container, g[_]),
+            className: a()(g.container, g[m]),
             children: Object.entries(E).map(e => {
                 let [s, l] = e;
-                return 0 === l.length ? null : (0, i.jsx)(m, {
+                return 0 === l.length ? null : (0, i.jsx)(_, {
                     locked: t,
                     keybind: n,
-                    position: _,
+                    position: m,
                     notification: l[0]
                 }, s)
             })
@@ -45,7 +45,7 @@ function _(e) {
     })
 }
 
-function m(e) {
+function _(e) {
     let {
         notification: t,
         position: n,

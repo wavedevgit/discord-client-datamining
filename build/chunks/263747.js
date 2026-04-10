@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(435371),
     d = n(421380),
     c = n(397927),
@@ -36,7 +36,7 @@ let N = e => {
             userId: t?.id,
             size: c._3J.SIZE_32,
             animateOnHover: !0
-        }), a = null != t, r = a ? (0, i.jsx)(c.euF, {
+        }), r = null != t, a = r ? (0, i.jsx)(c.euF, {
             src: s,
             "aria-label": t.username,
             size: c._3J.SIZE_32,
@@ -48,10 +48,10 @@ let N = e => {
         });
         return (0, i.jsx)(o.m_, {
             text: b.intl.string(b.t.UnKHdo),
-            shouldShow: !a,
+            shouldShow: !r,
             children: (0, i.jsx)("div", {
                 className: C.Lg,
-                children: r
+                children: a
             })
         })
     },
@@ -65,7 +65,7 @@ let N = e => {
             children: [(0, i.jsx)("div", {
                 className: C.Ej
             }), (0, i.jsx)("div", {
-                className: a()({
+                className: r()({
                     [C.ch]: t > n,
                     [C.q_]: t === n
                 })
@@ -75,7 +75,7 @@ let N = e => {
     j = e => {
         let {
             userRecords: t
-        } = e, n = t.length, s = n < 1 ? null : t[0], l = n < 2 ? null : t[1], a = n < 3 ? null : t[2];
+        } = e, n = t.length, s = n < 1 ? null : t[0], l = n < 2 ? null : t[1], r = n < 3 ? null : t[2];
         return (0, i.jsxs)("div", {
             className: C.ZM,
             children: [(0, i.jsx)(N, {
@@ -91,7 +91,7 @@ let N = e => {
                 numSentReferrals: n,
                 placement: 2
             }), (0, i.jsx)(N, {
-                userRecord: a,
+                userRecord: r,
                 placement: 3
             })]
         })
@@ -99,7 +99,7 @@ let N = e => {
     y = e => {
         let {
             isInSettings: t = !1
-        } = e, l = (0, r.bG)([p.A], () => p.A.getRecipientStatus()), {
+        } = e, l = (0, a.bG)([p.A], () => p.A.getRecipientStatus()), {
             referralSentUsers: o
         } = (0, f.J)(), g = s.useMemo(() => o.map(e => new _.A(e)), [o]), N = {
             redeemed: 0,
@@ -121,7 +121,7 @@ let N = e => {
                 children: [(0, i.jsx)(T.Ay, {
                     percentage: L,
                     progressCircleVariation: T.BN.NITRO_LOGO,
-                    iconClassName: a()({
+                    iconClassName: r()({
                         [C.VC]: !t,
                         [C.ER]: t
                     })
@@ -142,7 +142,7 @@ let N = e => {
                             referralsStatuses: N
                         })
                     }), (0, i.jsx)("div", {
-                        className: a()(C.Fb, {
+                        className: r()(C.Fb, {
                             [C.jv]: !t
                         }),
                         children: (0, i.jsx)(c.wLn, {
@@ -184,7 +184,7 @@ let N = e => {
         return (0, i.jsx)(m.f5, {
             value: O,
             children: (0, i.jsx)("div", {
-                className: a()({
+                className: r()({
                     [C.f5]: D,
                     [C.JY]: !D,
                     [C.VX]: !t,
@@ -192,7 +192,7 @@ let N = e => {
                 }),
                 children: (0, i.jsx)("div", {
                     ref: R,
-                    className: a()({
+                    className: r()({
                         [C.dn]: !t,
                         [C.d_]: t,
                         [C.kS]: D

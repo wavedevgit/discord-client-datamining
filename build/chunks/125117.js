@@ -1,15 +1,15 @@
 /** chunk id: 125117 params = (module,exports,require) **/
 n.d(t, {
-    b: () => I,
-    n: () => m
+    b: () => m,
+    n: () => E
 });
-var l = n(64700),
-    i = n(311907),
+var i = n(64700),
+    l = n(311907),
     r = n(870391),
     s = n(379078),
     a = n(704554),
-    u = n(461213),
-    o = n(403362),
+    o = n(461213),
+    u = n(403362),
     d = n(185657);
 
 function c(e) {
@@ -26,22 +26,22 @@ function h(e) {
 }
 
 function g(e, t) {
-    let [, n] = e, [, l] = t;
-    return n === l
+    let [, n] = e, [, i] = t;
+    return n === i
 }
 
-function I() {
-    let [e] = (0, i.bG)([d.A, r.A, u.A], () => {
+function m() {
+    let [e] = (0, l.bG)([d.A, r.A, o.A], () => {
         let e = r.A.getGroups(),
             [t, n] = d.A.getRows(d.j.FRIEND_REQUESTS),
-            l = h(t),
-            i = h(d.A.getRows(d.j.SUGGESTIONS)[0]),
+            i = h(t),
+            l = h(d.A.getRows(d.j.SUGGESTIONS)[0]),
             s = h(d.A.getRows(d.j.SAME_ACTIVITY)[0]),
             a = h(d.A.getRows(d.j.ACTIVITIES)[0]),
-            o = h(d.A.getRows(d.j.IN_GAME)[0]),
+            u = h(d.A.getRows(d.j.IN_GAME)[0]),
             c = h(d.A.getRows(d.j.ONLINE)[0]),
             g = h(d.A.getRows(d.j.OFFLINE)[0]),
-            I = e.map(e => {
+            m = e.map(e => {
                 let [t] = d.A.getRows(`GROUP:${e.id}`);
                 return {
                     id: e.id,
@@ -49,70 +49,70 @@ function I() {
                     users: h(t)
                 }
             }),
-            A = u.A.getPrimaryActivity()?.name ?? "",
-            f = e.map(e => `${e.id}\0${e.name}\0${e.userIds.length}`).join("|"),
-            E = `${n}\0${f}\0${A}`;
+            f = o.A.getPrimaryActivity()?.name ?? "",
+            A = e.map(e => `${e.id}\0${e.name}\0${e.userIds.length}`).join("|"),
+            I = `${n}\0${A}\0${f}`;
         return [{
-            groups: I,
-            friendRequests: l,
-            suggestions: i,
-            inGame: o,
+            groups: m,
+            friendRequests: i,
+            suggestions: l,
+            inGame: u,
             activities: a,
             sameActivity: s,
             online: c,
             offline: g,
-            currentActivityName: A
-        }, E]
+            currentActivityName: f
+        }, I]
     }, [], g);
     return e
 }
 
-function A(e) {
+function f(e) {
     let {
         user: t,
         activities: n,
-        nickname: l
+        nickname: i
     } = e;
-    return [t.username, t.globalName, l, ...n.map(e => e.name)].filter(o.Vq)
+    return [t.username, t.globalName, i, ...n.map(e => e.name)].filter(u.Vq)
 }
-let f = {
+let A = {
     searchType: s.n.FUZZY,
-    searchStringGenerator: A,
+    searchStringGenerator: f,
     sortType: s.r.JARO_WINKLER,
     throttleMs: 100
 };
 
-function E(e, t) {
-    let [n, i] = l.useState(t), r = l.useCallback(() => i(t), [t]);
-    return (0, a.RT)(e, t, i, f), [n, r]
+function I(e, t) {
+    let [n, l] = i.useState(t), r = i.useCallback(() => l(t), [t]);
+    return (0, a.RT)(e, t, l, A), [n, r]
 }
 
-function m(e) {
-    let [t, n] = l.useState(""), [i, r] = E(t, e.friendRequests), [s, a] = E(t, e.suggestions), [u, o] = E(t, e.sameActivity), [d, c] = E(t, e.activities), [h, g] = E(t, e.inGame), [I, f] = E(t, e.online), [m, S] = E(t, e.offline), _ = l.useMemo(() => {
+function E(e) {
+    let [t, n] = i.useState(""), [l, r] = I(t, e.friendRequests), [s, a] = I(t, e.suggestions), [o, u] = I(t, e.sameActivity), [d, c] = I(t, e.activities), [h, g] = I(t, e.inGame), [m, A] = I(t, e.online), [E, p] = I(t, e.offline), _ = i.useMemo(() => {
         if ("" === t.trim()) return e.groups;
         let n = t.toLowerCase();
         return e.groups.map(e => {
-            let t = e.users.filter(e => A(e).some(e => null != e && e.toLowerCase().includes(n)));
+            let t = e.users.filter(e => f(e).some(e => null != e && e.toLowerCase().includes(n)));
             return {
                 ...e,
                 users: t
             }
         }).filter(e => e.users.length > 0)
-    }, [t, e.groups]), p = l.useCallback(() => {
-        n(""), r(), a(), o(), c(), g(), f(), S()
-    }, [r, a, o, c, g, f, S]);
+    }, [t, e.groups]), S = i.useCallback(() => {
+        n(""), r(), a(), u(), c(), g(), A(), p()
+    }, [r, a, u, c, g, A, p]);
     return {
         groups: _,
-        friendRequests: i,
+        friendRequests: l,
         suggestions: s,
-        sameActivity: u,
+        sameActivity: o,
         inGame: h,
         activities: d,
-        online: I,
-        offline: m,
+        online: m,
+        offline: E,
         currentActivityName: e.currentActivityName,
         searchQuery: t,
         setSearchQuery: n,
-        clearSearch: p
+        clearSearch: S
     }
 }

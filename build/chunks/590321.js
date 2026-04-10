@@ -9,16 +9,16 @@ function l(e) {
     let t = (0, s.fk)(),
         n = (0, i.b8)(),
         l = (0, i.yM)(),
-        a = (0, i.Y2)();
+        r = (0, i.Y2)();
     if (!t) return !1;
-    let r = !n || l;
+    let a = !n || l;
     switch (e) {
         case "verify":
-            return r;
+            return a;
         case "edit":
-            return !r && a;
+            return !a && r;
         case "info":
-            return !r && !a;
+            return !a && !r;
         default:
             return !1
     }

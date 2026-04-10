@@ -1,8 +1,8 @@
 /** chunk id: 937136 params = (module,exports,require) **/
 n.d(t, {
-    p: () => l
+    p: () => i
 });
-class l {
+class i {
     pending = new Set;
     fetching = new Set;
     empty() {

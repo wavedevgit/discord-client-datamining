@@ -3,8 +3,8 @@ n.d(t, {
     A: () => p
 });
 var i = n(73153),
-    a = n(77468),
-    r = n(573648),
+    r = n(77468),
+    a = n(573648),
     l = n(882997),
     s = n(962173),
     o = n(203982),
@@ -12,10 +12,10 @@ var i = n(73153),
     c = n(90924),
     u = n(629471),
     A = n(613057),
-    _ = n(652215),
-    h = n(360469),
+    h = n(652215),
+    _ = n(360469),
     m = n(818348);
-let g = new Set([h.AM, h.eK]),
+let g = new Set([_.AM, _.eK]),
     p = {
         [m.e$.GET_PROVIDER_ACCESS_TOKEN]: {
             scope: {
@@ -35,11 +35,11 @@ let g = new Set([h.AM, h.eK]),
                 } = e;
                 (0, c.lG)(t.transport);
                 let A = (0, c.D2)(t.application),
-                    h = r.A.get(n);
-                if (null == h) throw new d.A({
+                    _ = a.A.get(n);
+                if (null == _) throw new d.A({
                     errorCode: m.Lw.INVALID_PROVIDER
                 }, `Platform not found for provider "${n}"`);
-                if (n === _.fg2.AMAZON_MUSIC) {
+                if (n === h.fg2.AMAZON_MUSIC) {
                     if (!g.has(A)) throw new d.A({
                         errorCode: m.Lw.UNAUTHORIZED_FOR_APPLICATION
                     }, "Command not available for this application")
@@ -47,11 +47,11 @@ let g = new Set([h.AM, h.eK]),
                     errorCode: m.Lw.UNAUTHORIZED_FOR_APPLICATION
                 }, "Command not available for this application");
                 return new Promise(async (e, t) => {
-                    let r = s.A.getAccount(null, n);
-                    if (null == r) {
+                    let a = s.A.getAccount(null, n);
+                    if (null == a) {
                         function c(t) {
-                            if (null == h) return;
-                            let n = (t.accounts ?? []).find(e => e.type === h.type);
+                            if (null == _) return;
+                            let n = (t.accounts ?? []).find(e => e.type === _.type);
                             null != n && (e({
                                 access_token: n.access_token
                             }), g())
@@ -64,15 +64,15 @@ let g = new Set([h.AM, h.eK]),
                         }
 
                         function g() {
-                            i.h.unsubscribe("USER_CONNECTIONS_UPDATE", c), o._.unsubscribe(_.jej.CONNECTIONS_CALLBACK_ERROR, A)
+                            i.h.unsubscribe("USER_CONNECTIONS_UPDATE", c), o._.unsubscribe(h.jej.CONNECTIONS_CALLBACK_ERROR, A)
                         }
-                        i.h.subscribe("USER_CONNECTIONS_UPDATE", c), o._.subscribe(_.jej.CONNECTIONS_CALLBACK_ERROR, A), (0, l.A)({
-                            platformType: h.type,
-                            location: _.ThZ.ACTIVITY_RPC,
+                        i.h.subscribe("USER_CONNECTIONS_UPDATE", c), o._.subscribe(h.jej.CONNECTIONS_CALLBACK_ERROR, A), (0, l.A)({
+                            platformType: _.type,
+                            location: h.ThZ.ACTIVITY_RPC,
                             successRedirect: u
                         })
                     } else try {
-                        let t = await a.A.refreshAccessToken(h.type, r.id);
+                        let t = await r.A.refreshAccessToken(_.type, a.id);
                         if (null == t) throw new d.A({
                             errorCode: m.Lw.OAUTH2_ERROR
                         }, "Refreshing access token did not return a new access token");
@@ -101,11 +101,11 @@ let g = new Set([h.AM, h.eK]),
                 } = e;
                 (0, c.lG)(t.transport);
                 let i = (0, c.D2)(t.application),
-                    l = r.A.get(n);
+                    l = a.A.get(n);
                 if (null == l) throw new d.A({
                     errorCode: m.Lw.INVALID_PROVIDER
                 }, `Platform not found for provider "${n}"`);
-                if (n === _.fg2.AMAZON_MUSIC) {
+                if (n === h.fg2.AMAZON_MUSIC) {
                     if (!g.has(i)) throw new d.A({
                         errorCode: m.Lw.UNAUTHORIZED_FOR_APPLICATION
                     }, "Command not available for this application")
@@ -116,7 +116,7 @@ let g = new Set([h.AM, h.eK]),
                 if (null == o) throw new d.A({
                     errorCode: m.Lw.NO_CONNECTION_FOUND
                 }, "No connection found");
-                let u = await a.A.refreshAccessToken(l.type, o.id);
+                let u = await r.A.refreshAccessToken(l.type, o.id);
                 if (null == u) throw new d.A({
                     errorCode: m.Lw.OAUTH2_ERROR
                 }, "Refreshing access token did not return a new access token");

@@ -1,60 +1,60 @@
 /** chunk id: 727949 params = (module,exports,require) **/
 "use strict";
-s.d(e, {
-    GQ: () => l,
-    NF: () => S,
-    QG: () => M,
-    Tp: () => P,
-    ZR: () => o,
-    ne: () => d
+n.d(t, {
+    GQ: () => A,
+    NF: () => T,
+    QG: () => I,
+    Tp: () => N,
+    ZR: () => m,
+    ne: () => g
 });
-var r = s(311907),
-    n = s(554146),
-    i = s(826673),
-    a = s(367727),
-    _ = s(927813),
-    E = s(661191),
-    u = s(851746),
-    c = s(894374),
-    p = s(103411),
-    I = s(49999),
-    R = s(985018);
+var i = n(311907),
+    r = n(554146),
+    s = n(826673),
+    l = n(367727),
+    a = n(927813),
+    c = n(661191),
+    o = n(851746),
+    u = n(894374),
+    d = n(103411),
+    _ = n(49999),
+    E = n(985018);
 
-function l(t) {
-    let e = (t - Date.now()) / _.A.Millis.HOUR;
-    return e > 24 ? R.intl.formatToPlainString(R.t["g9s+dA"], {
-        numDays: Math.floor(e / 24)
-    }) : e >= 1 ? R.intl.formatToPlainString(R.t.k9v33y, {
-        numHours: Math.floor(e)
-    }) : R.intl.formatToPlainString(R.t["/d0GmT"], {
-        numMinutes: Math.floor(60 * e)
+function A(e) {
+    let t = (e - Date.now()) / a.A.Millis.HOUR;
+    return t > 24 ? E.intl.formatToPlainString(E.t["g9s+dA"], {
+        numDays: Math.floor(t / 24)
+    }) : t >= 1 ? E.intl.formatToPlainString(E.t.k9v33y, {
+        numHours: Math.floor(t)
+    }) : E.intl.formatToPlainString(E.t["/d0GmT"], {
+        numMinutes: Math.floor(60 * t)
     })
 }
-let o = () => (0, i.k8)(n.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
-    M = () => {
-        (0, i.Dr)(n.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE)
+let m = () => (0, s.k8)(r.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
+    I = () => {
+        (0, s.Dr)(r.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE)
     },
-    S = t => {
+    T = e => {
         let {
-            trialOffer: e
-        } = t;
-        if (null == e) return !1;
-        let s = void 0 !== e.referrer_id,
-            r = void 0 === e.redeemed_at,
-            n = new Date(E.default.extractTimestamp(e.id)),
-            i = new Date;
-        return s && r && i >= n
+            trialOffer: t
+        } = e;
+        if (null == t) return !1;
+        let n = void 0 !== t.referrer_id,
+            i = void 0 === t.redeemed_at,
+            r = new Date(c.default.extractTimestamp(t.id)),
+            s = new Date;
+        return n && i && s >= r
     },
-    d = t => {
-        null != t ? (0, a.qr)(n.M.REFERRAL_PROGRAM_POPOVER_V2, t, {
-            dismissAction: I.i.INDIRECT_ACTION
-        }) : (0, i.Dr)(n.M.REFERRAL_PROGRAM_POPOVER)
+    g = e => {
+        null != e ? (0, l.qr)(r.M.REFERRAL_PROGRAM_POPOVER_V2, e, {
+            dismissAction: _.i.INDIRECT_ACTION
+        }) : (0, s.Dr)(r.M.REFERRAL_PROGRAM_POPOVER)
     },
-    P = () => {
-        let t, e = (0, p.m)(!1),
-            s = (0, r.bG)([u.A], () => u.A.getReferralsRemaining()),
-            a = (0, r.bG)([u.A], () => u.A.getReminderStateId());
-        return t = (0, c.A)({
+    N = () => {
+        let e, t = (0, d.m)(!1),
+            n = (0, i.bG)([o.A], () => o.A.getReferralsRemaining()),
+            l = (0, i.bG)([o.A], () => o.A.getReminderStateId());
+        return e = (0, u.A)({
             location: "ReferralProgramUtils"
-        }) ? null != a && !(0, i.u$)(n.M.REFERRAL_PROGRAM_POPOVER_V2, a).isDismissed : !(0, i.k8)(n.M.REFERRAL_PROGRAM_POPOVER), e && t && null != s && s > 0
+        }) ? null != l && !(0, s.u$)(r.M.REFERRAL_PROGRAM_POPOVER_V2, l).isDismissed : !(0, s.k8)(r.M.REFERRAL_PROGRAM_POPOVER), t && e && null != n && n > 0
     }

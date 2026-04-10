@@ -1,22 +1,23 @@
 /** chunk id: 850131 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => S
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    r = n.n(a),
-    s = n(23339),
-    o = n(827734),
-    c = n(397927),
+    r = n(64700),
+    s = n(503698),
+    l = n.n(s),
+    a = n(23339),
+    c = n(827734),
+    o = n(397927),
     u = n(843472),
     d = n(565645),
     _ = n(763754),
-    A = n(447215),
-    m = n(888675),
-    E = n(533567),
-    T = n(306417),
-    I = n(412136),
+    E = n(447215),
+    A = n(888675),
+    m = n(533567),
+    I = n(306417),
+    T = n(412136),
     g = n(985018),
     N = n(948762);
 
@@ -25,7 +26,7 @@ function f() {
         width: "24",
         height: "24",
         viewBox: "0 0 24 24",
-        fill: o.A.colors.INTERACTIVE_TEXT_DEFAULT.css,
+        fill: c.A.colors.INTERACTIVE_TEXT_DEFAULT.css,
         "aria-hidden": !0,
         children: (0, i.jsx)("path", {
             fillRule: "evenodd",
@@ -36,18 +37,18 @@ function f() {
     })
 }
 
-function C(e) {
+function p(e) {
     let t, {
         hasNoVotes: n,
-        victorEmoji: l
+        victorEmoji: r
     } = e;
     if (n) t = (0, i.jsx)(f, {});
-    else if (null != l) {
-        let e = "" !== l.name ? l.name : l.displayName;
+    else if (null != r) {
+        let e = "" !== r.name ? r.name : r.displayName;
         t = (0, i.jsx)(d.A, {
-            emojiId: l.id,
+            emojiId: r.id,
             emojiName: e,
-            animated: l.animated
+            animated: r.animated
         })
     }
     return null != t ? (0, i.jsx)("div", {
@@ -56,15 +57,15 @@ function C(e) {
     }) : null
 }
 
-function h(e) {
+function C(e) {
     let t, {
             type: n,
-            ...l
+            ...r
         } = e,
-        a = "text-muted";
+        s = "text-muted";
     switch (n) {
         case "NO_VOTES":
-            t = (0, i.jsx)(c.Text, {
+            t = (0, i.jsx)(o.Text, {
                 variant: "text-sm/semibold",
                 color: "text-default",
                 scaleFontToUserSetting: !0,
@@ -73,46 +74,46 @@ function h(e) {
             break;
         case "VICTOR":
             let {
-                victorAnswerText: r, victorVotePercentage: s
-            } = l;
+                victorAnswerText: l, victorVotePercentage: a
+            } = r;
             t = (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsxs)("div", {
                     className: N.sj,
-                    children: [(0, i.jsx)(c.Text, {
+                    children: [(0, i.jsx)(o.Text, {
                         variant: "text-sm/semibold",
                         color: "text-default",
                         className: N.Dq,
                         scaleFontToUserSetting: !0,
-                        children: r
-                    }), (0, i.jsx)(T.Vx, {
+                        children: l
+                    }), (0, i.jsx)(I.Vx, {
                         size: 16,
                         className: N.To,
                         isVictor: !0,
                         isExpired: !0
                     })]
-                }), (0, i.jsxs)(c.Text, {
+                }), (0, i.jsxs)(o.Text, {
                     variant: "text-xs/medium",
-                    color: a,
+                    color: s,
                     scaleFontToUserSetting: !0,
-                    children: [g.intl.string(g.t.ufIDIx), " • ", s, "%"]
+                    children: [g.intl.string(g.t.ufIDIx), " • ", a, "%"]
                 })]
             });
             break;
         case "TIE":
             let {
-                tiedVotePercentage: o
-            } = l;
+                tiedVotePercentage: c
+            } = r;
             t = (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(c.Text, {
+                children: [(0, i.jsx)(o.Text, {
                     variant: "text-sm/semibold",
                     color: "text-default",
                     scaleFontToUserSetting: !0,
                     children: g.intl.string(g.t.kPN9si)
-                }), (0, i.jsxs)(c.Text, {
+                }), (0, i.jsxs)(o.Text, {
                     variant: "text-xs/medium",
-                    color: a,
+                    color: s,
                     scaleFontToUserSetting: !0,
-                    children: [o, "%"]
+                    children: [c, "%"]
                 })]
             })
     }
@@ -122,12 +123,12 @@ function h(e) {
     })
 }
 
-function p(e) {
+function h(e) {
     let {
         className: t,
         data: n,
-        onClickPollLink: a
-    } = e, s = l.useMemo(() => (function(e) {
+        onClickPollLink: s
+    } = e, a = r.useMemo(() => (function(e) {
         if (0 === e.totalVotes) return {
             type: "NO_VOTES"
         };
@@ -141,19 +142,19 @@ function p(e) {
             type: "TIE",
             tiedVotePercentage: n
         }
-    })(n), [n]), o = null != n.victorEmoji || "NO_VOTES" === s.type;
+    })(n), [n]), c = null != n.victorEmoji || "NO_VOTES" === a.type;
     return (0, i.jsxs)("div", {
-        className: r()(N.kL, {
-            [N.FS]: o
+        className: l()(N.kL, {
+            [N.FS]: c
         }, t),
-        children: [(0, i.jsx)(C, {
-            hasNoVotes: "NO_VOTES" === s.type,
+        children: [(0, i.jsx)(p, {
+            hasNoVotes: "NO_VOTES" === a.type,
             victorEmoji: n.victorEmoji
-        }), (0, i.jsx)(h, {
-            ...s
-        }), null != a && (0, i.jsx)(c.Button, {
+        }), (0, i.jsx)(C, {
+            ...a
+        }), null != s && (0, i.jsx)(o.Button, {
             size: "sm",
-            onClick: a,
+            onClick: s,
             variant: "secondary",
             text: g.intl.string(g.t.Jw7Vbf)
         })]
@@ -164,38 +165,38 @@ function S(e) {
     let {
         message: t,
         channel: n,
-        compact: a,
-        disableInteraction: r = !1
-    } = e, o = t.embeds[0], d = l.useMemo(() => (0, E.A)(o), [o]), T = (0, s.EJ)(d?.questionText ?? "", I.TU), f = (0, _.Ay)(t), C = (0, A.P)({
+        compact: s,
+        disableInteraction: l = !1
+    } = e, c = t.embeds[0], d = r.useMemo(() => (0, m.A)(c), [c]), I = (0, a.EJ)(d?.questionText ?? "", T.TU), f = (0, _.Ay)(t), p = (0, E.P)({
         user: t.author,
         channelId: n.id,
         guildId: n.guild_id,
         messageId: t.id
-    }), h = t.messageReference, S = l.useCallback(() => {
-        null != h && u.A.jumpToMessage({
-            channelId: h.channel_id,
-            messageId: h.message_id,
+    }), C = t.messageReference, S = r.useCallback(() => {
+        null != C && u.A.jumpToMessage({
+            channelId: C.channel_id,
+            messageId: C.message_id,
             flash: !0,
             returnMessageId: t.id
         })
-    }, [t.id, h]);
+    }, [t.id, C]);
     return null == d ? null : (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(m.A, {
-            iconNode: (0, i.jsx)(c.YRe, {
+        children: [(0, i.jsx)(A.A, {
+            iconNode: (0, i.jsx)(o.YRe, {
                 size: "xs"
             }),
             timestamp: t.timestamp,
-            compact: a,
+            compact: s,
             children: g.intl.format(g.t.VJcK41, {
                 username: f.nick,
-                usernameHook: C(f),
-                title: T,
+                usernameHook: p(f),
+                title: I,
                 titleOnClick: S
             })
-        }), (0, i.jsx)(p, {
+        }), (0, i.jsx)(h, {
             className: N.E6,
             data: d,
-            onClickPollLink: r ? void 0 : S
+            onClickPollLink: l ? void 0 : S
         })]
     })
 }

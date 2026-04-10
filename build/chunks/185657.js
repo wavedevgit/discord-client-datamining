@@ -1,29 +1,29 @@
 /** chunk id: 185657 params = (module,exports,require) **/
-let l;
+let i;
 n.d(t, {
-    A: () => F,
-    j: () => y
+    A: () => L,
+    j: () => N
 }), n(321073);
-var i, r = n(311907),
+var l, r = n(311907),
     s = n(713402),
     a = n(73153),
-    u = n(870391),
-    o = n(21119),
+    o = n(870391),
+    u = n(21119),
     d = n(734057),
     c = n(290863),
     h = n(994500),
     g = n(309010),
-    I = n(461213),
-    A = n(287809),
-    f = n(977997),
-    E = n(562153),
-    m = n(914853),
-    S = n(956753),
+    m = n(461213),
+    f = n(287809),
+    A = n(977997),
+    I = n(562153),
+    E = n(914853),
+    p = n(956753),
     _ = n(406595),
-    p = n(70191),
-    N = n(240516),
+    S = n(70191),
+    x = n(240516),
     T = n(652215),
-    y = ((i = {}).FRIEND_REQUESTS = "FRIEND_REQUESTS", i.SUGGESTIONS = "SUGGESTIONS", i.SAME_ACTIVITY = "SAME_ACTIVITY", i.ACTIVITIES = "ACTIVITIES", i.IN_GAME = "IN_GAME", i.ONLINE = "ONLINE", i.OFFLINE = "OFFLINE", i);
+    N = ((l = {}).FRIEND_REQUESTS = "FRIEND_REQUESTS", l.SUGGESTIONS = "SUGGESTIONS", l.SAME_ACTIVITY = "SAME_ACTIVITY", l.ACTIVITIES = "ACTIVITIES", l.IN_GAME = "IN_GAME", l.ONLINE = "ONLINE", l.OFFLINE = "OFFLINE", l);
 let C = new s.J(function(e) {
     if ("FRIEND_REQUEST" === e.category) return ["FRIEND_REQUESTS"];
     if ("SUGGESTION" === e.category) return ["SUGGESTIONS"];
@@ -34,64 +34,64 @@ let C = new s.J(function(e) {
     return e.sortKey
 });
 
-function x(e, t) {
+function v(e, t) {
     return String(Math.floor(Math.max(0, Math.min(e, Number("9".repeat(t)))))).padStart(t, "0")
 }
 
-function v(e) {
-    return x(1e6 - Math.max(0, Math.min(1e6, Math.round(1e6 * e))), 7)
+function y(e) {
+    return v(1e6 - Math.max(0, Math.min(1e6, Math.round(1e6 * e))), 7)
 }
 let M = new Map;
 
-function D() {
+function R() {
     let e = new Map;
-    for (let t of u.A.getGroups())
+    for (let t of o.A.getGroups())
         for (let n of t.userIds) {
-            let l = e.get(n);
-            null == l && (l = [], e.set(n, l)), l.push(t.id)
+            let i = e.get(n);
+            null == i && (i = [], e.set(n, i)), i.push(t.id)
         }
     M = e
 }
 
-function R() {
-    let e = I.A.getPrimaryActivity();
-    l = e?.application_id
+function D() {
+    let e = m.A.getPrimaryActivity();
+    i = e?.application_id
 }
 
-function O(e) {
+function b(e) {
     return e.type === T.$pd.PLAYING || e.type === T.$pd.COMPETING || e.type === T.$pd.WATCHING || e.type === T.$pd.STREAMING
 }
 
-function U(e) {
+function O(e) {
     let t = function(e) {
-        let t = A.default.getUser(e);
+        let t = f.default.getUser(e);
         if (null == t) return null;
         let n = h.A.getRelationshipType(e),
-            i = n === T.eA$.PENDING_INCOMING || n === T.eA$.PENDING_OUTGOING,
+            l = n === T.eA$.PENDING_INCOMING || n === T.eA$.PENDING_OUTGOING,
             r = h.A.isFriend(e),
             s = c.A.getActivities(e),
             a = h.A.getNickname(e),
-            u = o.A.getUserAffinity(e)?.communicationProbability ?? 0;
-        return i ? function(e) {
+            o = u.A.getUserAffinity(e)?.communicationProbability ?? 0;
+        return l ? function(e) {
             var t, n;
             let {
-                userId: l,
-                user: i,
+                userId: i,
+                user: l,
                 activities: r,
                 nickname: s,
                 relationshipType: a
-            } = e, u = h.A.getSince(l), o = null != u ? new Date(u).getTime() : 0;
+            } = e, o = h.A.getSince(i), u = null != o ? new Date(o).getTime() : 0;
             return {
-                id: l,
-                userId: l,
-                user: i,
+                id: i,
+                userId: i,
+                user: l,
                 activities: r,
                 nickname: s,
                 relationshipType: a,
                 category: "FRIEND_REQUEST",
                 activityCategory: null,
                 groupIds: [],
-                sortKey: (t = Number.isFinite(o) ? o : 0, n = l, `REQ\0${x(Math.max(0,Math.min(0x9184e729fff,0x9184e729fff-Math.floor(t))),13)}\0${n}`)
+                sortKey: (t = Number.isFinite(u) ? u : 0, n = i, `REQ\0${v(Math.max(0,Math.min(0x9184e729fff,0x9184e729fff-Math.floor(t))),13)}\0${n}`)
             }
         }({
             userId: e,
@@ -100,76 +100,76 @@ function U(e) {
             nickname: a,
             relationshipType: n
         }) : r ? function(e) {
-            let t, n, i, r, s, a, u, o, h, {
-                    userId: A,
-                    user: S,
-                    activities: N,
-                    nickname: y,
+            let t, n, l, r, s, a, o, u, h, {
+                    userId: f,
+                    user: p,
+                    activities: x,
+                    nickname: N,
                     affinity: C
                 } = e,
                 {
-                    category: x,
-                    displayActivities: D
-                } = (t = I.A.getPrimaryActivity(), n = l, i = t?.name != null && null != n, r = c.A.getStatus(A), s = f.A.getVoiceStateForUser(A), a = s?.channelId != null, o = (u = N.filter(O)).filter(p.A), h = u.filter(e => e.application_id === n), i && h.length > 0 ? {
+                    category: v,
+                    displayActivities: R
+                } = (t = m.A.getPrimaryActivity(), n = i, l = t?.name != null && null != n, r = c.A.getStatus(f), s = A.A.getVoiceStateForUser(f), a = s?.channelId != null, u = (o = x.filter(b)).filter(S.A), h = o.filter(e => e.application_id === n), l && h.length > 0 ? {
                     category: "SAME_ACTIVITY",
                     displayActivities: h
-                } : o.length > 0 ? {
+                } : u.length > 0 ? {
                     category: "IN_GAME",
-                    displayActivities: o
+                    displayActivities: u
                 } : a ? {
                     category: "ACTIVITIES",
-                    displayActivities: N
+                    displayActivities: x
                 } : r === T.clD.ONLINE || r === T.clD.IDLE || r === T.clD.DND ? {
                     category: "ONLINE",
-                    displayActivities: u
+                    displayActivities: o
                 } : {
                     category: "OFFLINE",
-                    displayActivities: u
+                    displayActivities: o
                 }),
-                R = "IN_GAME" === x ? D[0]?.name ?? null : null,
-                U = M.get(A) ?? [],
-                [G] = _.A.isFavorite(m.x.FRIENDS, A),
-                w = g.A.getVoiceChannelId() ?? g.A.getChannelId(),
-                L = null != w ? d.A.getChannel(w)?.guild_id : null,
-                F = c.A.getStatus(A),
-                b = F === T.clD.ONLINE,
-                k = D.some(O),
-                P = F === T.clD.DND || F === T.clD.IDLE,
-                j = E.Ay.getName(L, w, S);
+                D = "IN_GAME" === v ? R[0]?.name ?? null : null,
+                O = M.get(f) ?? [],
+                [w] = _.A.isFavorite(E.x.FRIENDS, f),
+                j = g.A.getVoiceChannelId() ?? g.A.getChannelId(),
+                U = null != j ? d.A.getChannel(j)?.guild_id : null,
+                L = c.A.getStatus(f),
+                k = L === T.clD.ONLINE,
+                G = R.some(b),
+                P = L === T.clD.DND || L === T.clD.IDLE,
+                F = I.Ay.getName(U, j, p);
             return {
-                id: A,
-                userId: A,
-                user: S,
-                activities: D,
-                nickname: y,
+                id: f,
+                userId: f,
+                user: p,
+                activities: R,
+                nickname: N,
                 category: "FRIEND",
-                activityCategory: G ? null : x,
-                groupIds: U,
+                activityCategory: w ? null : v,
+                groupIds: O,
                 sortKey: function(e) {
                     let {
                         isOnline: t,
                         hasDisplayableActivity: n,
-                        isDndOrIdle: l,
-                        activityCategory: i,
+                        isDndOrIdle: i,
+                        activityCategory: l,
                         inGameActivityName: r,
                         affinity: s,
                         displayName: a,
-                        userId: u
-                    } = e, o = t ? "0" : "1", d = n ? "0" : "1", c = l ? "0" : "1", h = a.toLowerCase();
-                    if ("IN_GAME" === i) {
+                        userId: o
+                    } = e, u = t ? "0" : "1", d = n ? "0" : "1", c = i ? "0" : "1", h = a.toLowerCase();
+                    if ("IN_GAME" === l) {
                         let e, t = (e = r?.trim().toLowerCase() ?? "").length > 0 ? e : "￿";
-                        return `FRD\0${o}\0${d}\0${c}\0${t}\0${v(s)}\0${h}\0${u}`
+                        return `FRD\0${u}\0${d}\0${c}\0${t}\0${y(s)}\0${h}\0${o}`
                     }
-                    return `FRD\0${o}\0${d}\0${c}\0${v(s)}\0${h}\0${u}`
+                    return `FRD\0${u}\0${d}\0${c}\0${y(s)}\0${h}\0${o}`
                 }({
-                    isOnline: b,
-                    hasDisplayableActivity: k,
+                    isOnline: k,
+                    hasDisplayableActivity: G,
                     isDndOrIdle: P,
-                    activityCategory: x,
-                    inGameActivityName: R,
+                    activityCategory: v,
+                    inGameActivityName: D,
                     affinity: C,
-                    displayName: j,
-                    userId: A
+                    displayName: F,
+                    userId: f
                 })
             }
         }({
@@ -177,55 +177,55 @@ function U(e) {
             user: t,
             activities: s,
             nickname: a,
-            affinity: u
+            affinity: o
         }) : function(e) {
             let {
                 userId: t,
                 user: n,
-                activities: l,
-                nickname: i,
+                activities: i,
+                nickname: l,
                 affinity: r
             } = e;
-            if (!(r > N.u.HIGH_AFFINITY_MINIMUM)) return null;
-            let s = f.A.getVoiceStateForUser(t),
+            if (!(r > x.u.HIGH_AFFINITY_MINIMUM)) return null;
+            let s = A.A.getVoiceStateForUser(t),
                 a = s?.channelId,
-                u = null != a ? d.A.getChannel(a)?.guild_id : null,
-                o = l.length > 0 || null != a,
-                c = E.Ay.getName(u, a, n);
+                o = null != a ? d.A.getChannel(a)?.guild_id : null,
+                u = i.length > 0 || null != a,
+                c = I.Ay.getName(o, a, n);
             return {
                 id: t,
                 userId: t,
                 user: n,
-                activities: l,
-                nickname: i,
+                activities: i,
+                nickname: l,
                 category: "SUGGESTION",
                 activityCategory: null,
                 groupIds: [],
-                sortKey: `SUG\0${o?"0":"1"}\0${v(r)}\0${c.toLowerCase()}\0${t}`
+                sortKey: `SUG\0${u?"0":"1"}\0${y(r)}\0${c.toLowerCase()}\0${t}`
             }
         }({
             userId: e,
             user: t,
             activities: s,
             nickname: a,
-            affinity: u
+            affinity: o
         })
     }(e);
     return null == t ? C.delete(e) : C.set(e, t)
 }
 
-function G() {
-    C.clear(), D(), R();
+function w() {
+    C.clear(), R(), D();
     let e = !1;
-    for (let [t, n] of h.A.getMutableRelationships().entries())(n === T.eA$.PENDING_INCOMING || n === T.eA$.PENDING_OUTGOING) && (e = U(t) || e);
-    for (let t of o.A.getUserAffinitiesMap().keys()) h.A.isFriend(t) || (e = U(t) || e);
-    for (let t of h.A.getFriendIDs()) e = U(t) || e;
+    for (let [t, n] of h.A.getMutableRelationships().entries())(n === T.eA$.PENDING_INCOMING || n === T.eA$.PENDING_OUTGOING) && (e = O(t) || e);
+    for (let t of u.A.getUserAffinitiesMap().keys()) h.A.isFriend(t) || (e = O(t) || e);
+    for (let t of h.A.getFriendIDs()) e = O(t) || e;
     return e
 }
-class w extends r.Ay.Store {
+class j extends r.Ay.Store {
     static displayName = "FriendsWidgetFriendsStore";
     initialize() {
-        this.waitFor(d.A, u.A, _.A, c.A, h.A, g.A, I.A, o.A, A.default, f.A), G()
+        this.waitFor(d.A, o.A, _.A, c.A, h.A, g.A, m.A, u.A, f.default, A.A), w()
     }
     getRows(e) {
         return [C.values(e), C.version]
@@ -234,97 +234,97 @@ class w extends r.Ay.Store {
         return C.get(e)
     }
 }
-let L = e => (0, S.v$)(e, "FriendsWidgetFriendsStore"),
-    F = new w(a.h, __OVERLAY__ ? {} : {
-        POST_CONNECTION_OPEN: L(G),
-        OVERLAY_INITIALIZE: L(G),
-        CACHE_LOADED: L(G),
-        CACHE_LOADED_LAZY: L(G),
-        FRIENDS_LIST_POPOUT_MOUNTED: L(G),
-        OVERLAY_FRIENDS_WIDGET_SET_FAVORITE: L(function(e) {
-            return e.tab === m.x.FRIENDS && U(e.targetId)
+let U = e => (0, p.v$)(e, "FriendsWidgetFriendsStore"),
+    L = new j(a.h, __OVERLAY__ ? {} : {
+        POST_CONNECTION_OPEN: U(w),
+        OVERLAY_INITIALIZE: U(w),
+        CACHE_LOADED: U(w),
+        CACHE_LOADED_LAZY: U(w),
+        FRIENDS_LIST_POPOUT_MOUNTED: U(w),
+        OVERLAY_FRIENDS_WIDGET_SET_FAVORITE: U(function(e) {
+            return e.tab === E.x.FRIENDS && O(e.targetId)
         }),
-        PRESENCE_UPDATES: L(function(e) {
+        PRESENCE_UPDATES: U(function(e) {
             let t = !1;
             for (let n of e.updates) {
                 let e = n.user?.id;
-                null != e && (t = U(e) || t)
+                null != e && (t = O(e) || t)
             }
             return t
         }),
-        PRESENCES_REPLACE: L(function(e) {
+        PRESENCES_REPLACE: U(function(e) {
             let t = !1;
             for (let n of e.presences) {
                 let e = n.user?.id;
-                null != e && (t = U(e) || t)
+                null != e && (t = O(e) || t)
             }
             return t
         }),
-        ACTIVITY_METADATA_UPDATE: L(function(e) {
-            return U(e.userId)
+        ACTIVITY_METADATA_UPDATE: U(function(e) {
+            return O(e.userId)
         }),
-        VOICE_STATE_UPDATES: L(function(e) {
+        VOICE_STATE_UPDATES: U(function(e) {
             let t = !1;
-            for (let n of e.voiceStates) t = U(n.userId) || t;
+            for (let n of e.voiceStates) t = O(n.userId) || t;
             return t
         }),
-        VOICE_CHANNEL_SELECT: L(function(e) {
+        VOICE_CHANNEL_SELECT: U(function(e) {
+            D();
+            let t = !1;
+            for (let e of h.A.getFriendIDs()) t = O(e) || t;
+            return t
+        }),
+        RELATIONSHIP_ADD: U(function(e) {
+            return O(e.relationship.id)
+        }),
+        RELATIONSHIP_REMOVE: U(function(e) {
+            return O(e.relationship.id)
+        }),
+        RELATIONSHIP_UPDATE: U(function(e) {
+            return O(e.relationship.id)
+        }),
+        RELATIONSHIP_PENDING_INCOMING_REMOVED: U(function(e) {
+            let t = !1;
+            for (let e of C.values("FRIEND_REQUESTS", !0)) e.relationshipType === T.eA$.PENDING_INCOMING && (t = O(e.userId) || t);
+            return t
+        }),
+        CREATE_FRIEND_GROUP: U(function(e) {
+            return R(), !1
+        }),
+        DELETE_FRIEND_GROUP: U(function(e) {
             R();
             let t = !1;
-            for (let e of h.A.getFriendIDs()) t = U(e) || t;
+            for (let e of h.A.getFriendIDs()) t = O(e) || t;
             return t
         }),
-        RELATIONSHIP_ADD: L(function(e) {
-            return U(e.relationship.id)
-        }),
-        RELATIONSHIP_REMOVE: L(function(e) {
-            return U(e.relationship.id)
-        }),
-        RELATIONSHIP_UPDATE: L(function(e) {
-            return U(e.relationship.id)
-        }),
-        RELATIONSHIP_PENDING_INCOMING_REMOVED: L(function(e) {
-            let t = !1;
-            for (let e of C.values("FRIEND_REQUESTS", !0)) e.relationshipType === T.eA$.PENDING_INCOMING && (t = U(e.userId) || t);
-            return t
-        }),
-        CREATE_FRIEND_GROUP: L(function(e) {
-            return D(), !1
-        }),
-        DELETE_FRIEND_GROUP: L(function(e) {
-            D();
-            let t = !1;
-            for (let e of h.A.getFriendIDs()) t = U(e) || t;
-            return t
-        }),
-        ADD_USERS_TO_GROUP: L(function(e) {
-            D();
-            let t = !1;
-            for (let n of e.userIds) t = U(n) || t;
-            return t
-        }),
-        REMOVE_USERS_FROM_GROUP: L(function(e) {
-            D();
-            let t = !1;
-            for (let n of e.userIds) t = U(n) || t;
-            return t
-        }),
-        LOAD_USER_AFFINITIES_V2_SUCCESS: L(function(e) {
-            let t = !1;
-            for (let e of o.A.getUserAffinitiesMap().keys()) t = U(e) || t;
-            return t
-        }),
-        USER_UPDATE: L(function(e) {
-            return U(e.user.id)
-        }),
-        CURRENT_USER_UPDATE: L(function(e) {
+        ADD_USERS_TO_GROUP: U(function(e) {
             R();
             let t = !1;
-            for (let e of h.A.getFriendIDs()) t = U(e) || t;
+            for (let n of e.userIds) t = O(n) || t;
             return t
         }),
-        LOGOUT: L(function() {
+        REMOVE_USERS_FROM_GROUP: U(function(e) {
+            R();
+            let t = !1;
+            for (let n of e.userIds) t = O(n) || t;
+            return t
+        }),
+        LOAD_USER_AFFINITIES_V2_SUCCESS: U(function(e) {
+            let t = !1;
+            for (let e of u.A.getUserAffinitiesMap().keys()) t = O(e) || t;
+            return t
+        }),
+        USER_UPDATE: U(function(e) {
+            return O(e.user.id)
+        }),
+        CURRENT_USER_UPDATE: U(function(e) {
+            D();
+            let t = !1;
+            for (let e of h.A.getFriendIDs()) t = O(e) || t;
+            return t
+        }),
+        LOGOUT: U(function() {
             let e = C.size() > 0;
-            return C.clear(), l = void 0, M = new Map, e
+            return C.clear(), i = void 0, M = new Map, e
         })
     })

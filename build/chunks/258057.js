@@ -3,14 +3,14 @@ n.d(t, {
     z: () => s
 });
 var i = n(397927),
-    a = n(587895),
-    r = n(626584),
+    r = n(587895),
+    a = n(626584),
     l = n(92077);
 
 function s(e, t, s) {
     var o;
     let d;
-    o = () => (0, l.NQ)(e, t, s), null == (d = a.A.getApplication(e)) ? new r.A("DispatchUninstallActionCreators").log(`Application not found for game ${e}`) : (0, i.mMO)(async () => {
+    o = () => (0, l.NQ)(e, t, s), null == (d = r.A.getApplication(e)) ? new a.A("DispatchUninstallActionCreators").log(`Application not found for game ${e}`) : (0, i.mMO)(async () => {
         let {
             default: e
         } = await n.e("60745").then(n.bind(n, 831120));

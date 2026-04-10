@@ -1,10 +1,10 @@
 /** chunk id: 305498 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => _
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(362599),
+    r = n(64700),
+    a = n(362599),
     l = n(342494),
     s = n(732955),
     o = n(976860),
@@ -12,22 +12,22 @@ var i = n(627968),
     c = n(652215),
     u = n(49999),
     A = n(49370),
-    _ = n(985018);
+    h = n(985018);
 
-function h(e) {
+function _(e) {
     let {
         targetElementRef: t,
         dismissPopover: n,
-        lastGrantedRewardAmount: h,
+        lastGrantedRewardAmount: _,
         children: m
-    } = e, g = a.useCallback(() => {
+    } = e, g = r.useCallback(() => {
         n(u.i.TAKE_ACTION), (0, o.pX)(`${c.BVt.NITRO_HOME}?section=${d.L}`)
     }, [n]), p = (0, i.jsx)(l.AM, {
         targetElementRef: t,
         onRequestClose: () => n(u.i.USER_DISMISS),
         graphic: {
             type: "rive",
-            rive: r.Z
+            rive: a.Z
         },
         badge: {
             type: "beta",
@@ -40,12 +40,12 @@ function h(e) {
             align: "start"
         },
         size: "md",
-        title: _.intl.string(A.default["78+gLr"]),
-        body: _.intl.formatToPlainString(A.default.Ry1TXC, {
-            orbsCount: h
+        title: h.intl.string(A.default["78+gLr"]),
+        body: h.intl.formatToPlainString(A.default.Ry1TXC, {
+            orbsCount: _
         }),
         actions: [{
-            text: _.intl.string(_.t.RzWDqY),
+            text: h.intl.string(h.t.RzWDqY),
             icon: s.tvc,
             onClick: g
         }],

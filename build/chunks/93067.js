@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(451988),
     o = n(397927),
     c = n(487329),
@@ -20,9 +20,9 @@ function p(e) {
     let {
         errorMessage: t,
         className: n,
-        avError: s
-    } = e, p = l.useRef(null), f = "", {
-        text: _,
+        avError: a
+    } = e, p = l.useRef(null), _ = "", {
+        text: f,
         node: E
     } = function(e) {
         if (null == e) return {
@@ -37,22 +37,22 @@ function p(e) {
                 errorCode: t,
                 helpDeskURL: u.A.getArticleURL(m.MVz.AV_ERROR_CODES)
             }),
-            s = d.A.isDeveloper;
+            a = d.A.isDeveloper;
         return {
-            text: s ? `${n} (${e})` : n,
-            node: s ? (0, i.jsxs)(i.Fragment, {
+            text: a ? `${n} (${e})` : n,
+            node: a ? (0, i.jsxs)(i.Fragment, {
                 children: [l, " (", e, ")"]
             }) : l
         }
-    }(s);
-    f = null != _ ? `${t} ${_}` : t;
-    let [x] = l.useState(new r.Ep), [C, S] = l.useState(!1), [I, T] = l.useState(!1), N = l.useCallback(() => {
-        x.start(250, () => {
+    }(a);
+    _ = null != f ? `${t} ${f}` : t;
+    let [C] = l.useState(new r.Ep), [x, S] = l.useState(!1), [I, T] = l.useState(!1), v = l.useCallback(() => {
+        C.start(250, () => {
             S(!1)
         }, !1)
-    }, [x, S]), v = l.useCallback(() => {
-        x.stop(), S(!0)
-    }, [x, S]), y = l.useCallback(() => {
+    }, [C, S]), N = l.useCallback(() => {
+        C.stop(), S(!0)
+    }, [C, S]), y = l.useCallback(() => {
         T(!0)
     }, []), b = l.useCallback(() => {
         T(!1)
@@ -61,8 +61,8 @@ function p(e) {
         renderPopout: () => (0, i.jsx)(h.A, {
             children: (0, i.jsxs)("div", {
                 className: g.SW,
-                onMouseEnter: v,
-                onMouseLeave: N,
+                onMouseEnter: N,
+                onMouseLeave: v,
                 children: [t, null != E && (0, i.jsx)(o.Text, {
                     variant: "text-sm/semibold",
                     color: "text-muted",
@@ -72,19 +72,19 @@ function p(e) {
             })
         }),
         targetElementRef: p,
-        shouldShow: I || C,
+        shouldShow: I || x,
         position: "bottom",
         children: e => (0, i.jsx)(h.A, {
             children: (0, i.jsx)(o.vN3, {
                 children: (0, i.jsx)("div", {
                     ref: p,
                     tabIndex: 0,
-                    onMouseEnter: v,
-                    onMouseLeave: N,
+                    onMouseEnter: N,
+                    onMouseLeave: v,
                     onFocus: y,
                     onBlur: b,
-                    className: a()(n, g.zr),
-                    "aria-label": f,
+                    className: s()(n, g.zr),
+                    "aria-label": _,
                     ...e,
                     children: (0, i.jsx)(o.EpV, {
                         size: "custom",

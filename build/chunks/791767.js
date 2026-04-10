@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    r = n(73153),
+var r = n(397927),
+    a = n(73153),
     l = n(361158),
     s = n(80556),
     o = n(159329),
@@ -13,8 +13,8 @@ var a = n(397927),
     c = n(446868),
     u = n(524134),
     A = n(961350),
-    _ = n(287809),
-    h = n(536194),
+    h = n(287809),
+    _ = n(536194),
     m = n(639719),
     g = n(652215),
     p = n(53516),
@@ -22,11 +22,11 @@ var a = n(397927),
     I = n(818348);
 let f = {
     init() {
-        r.h.subscribe("CONNECTION_OPEN", this.handleRequiredAction), r.h.subscribe("USER_REQUIRED_ACTION_UPDATE", this.handleRequiredAction), r.h.subscribe("CURRENT_USER_UPDATE", this.handleCurrentUserUpdate), A.default.addChangeListener(this.handleAuthenticationStoreChanged)
+        a.h.subscribe("CONNECTION_OPEN", this.handleRequiredAction), a.h.subscribe("USER_REQUIRED_ACTION_UPDATE", this.handleRequiredAction), a.h.subscribe("CURRENT_USER_UPDATE", this.handleCurrentUserUpdate), A.default.addChangeListener(this.handleAuthenticationStoreChanged)
     },
     handleRequiredAction(e) {
         let t = e.requiredAction;
-        !h.P.isDisallowPopupsSet() && null != _.default.getCurrentUser() && (t === g.a3B.REQUIRE_CAPTCHA || t === g.a3B.REQUIRE_VERIFIED_EMAIL || t === g.a3B.REQUIRE_VERIFIED_PHONE || t === g.a3B.REQUIRE_REVERIFIED_PHONE || t === g.a3B.REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE || t === g.a3B.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || t === g.a3B.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE || c.A.isEmailReverification(t) ? (0, o.P3)({
+        !_.P.isDisallowPopupsSet() && null != h.default.getCurrentUser() && (t === g.a3B.REQUIRE_CAPTCHA || t === g.a3B.REQUIRE_VERIFIED_EMAIL || t === g.a3B.REQUIRE_VERIFIED_PHONE || t === g.a3B.REQUIRE_REVERIFIED_PHONE || t === g.a3B.REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE || t === g.a3B.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || t === g.a3B.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE || c.A.isEmailReverification(t) ? (0, o.P3)({
             location: "verification-legacy"
         }) ? (0, l.B8)(e => {
             let {
@@ -41,7 +41,7 @@ let f = {
         }) : (0, l.B8)(() => (0, i.jsx)(u.A, {}), {
             layerKey: E._s,
             Layer: s.Ay
-        }) : t === g.a3B.AGREEMENTS ? (0, a.qfG)(e => (0, i.jsx)(m.default, {
+        }) : t === g.a3B.AGREEMENTS ? (0, r.qfG)(e => (0, i.jsx)(m.default, {
             ...e
         }), {
             modalKey: E.i$,
@@ -57,15 +57,15 @@ let f = {
         }, {
             layerKey: E._s,
             Layer: s.Ay
-        }) : null == t && ((0, l.dF)(E._s), (0, a.kBI)(E.i$) && (0, a.OoC)(E.i$)))
+        }) : null == t && ((0, l.dF)(E._s), (0, r.kBI)(E.i$) && (0, r.OoC)(E.i$)))
     },
     handleAuthenticationStoreChanged() {
-        null == A.default.getId() && ((0, l.dF)(E._s), (0, a.OoC)(E.i$), (0, a.OoC)(E.Pr), (0, a.OoC)(E.H1), (0, a.OoC)(p.V))
+        null == A.default.getId() && ((0, l.dF)(E._s), (0, r.OoC)(E.i$), (0, r.OoC)(E.Pr), (0, r.OoC)(E.H1), (0, r.OoC)(p.V))
     },
     handleCurrentUserUpdate(e) {
         let {
             user: t
         } = e;
-        t.verified && (0, a.OoC)(E.H1)
+        t.verified && (0, r.OoC)(E.H1)
     }
 }

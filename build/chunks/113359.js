@@ -1,36 +1,22 @@
 /** chunk id: 113359 params = (module,exports,require) **/
 n.d(t, {
-    QG: () => s,
-    xb: () => r
+    Q: () => r
 });
-var i, a = n(945810),
-    r = ((i = {})[i.CONTROL = 0] = "CONTROL", i[i.POPOVER = 1] = "POPOVER", i[i.ANNOUNCEMENT_MODAL = 2] = "ANNOUNCEMENT_MODAL", i);
-let l = (0, a.mj)({
+let i = (0, n(945810).mj)({
     name: "2026-03-premium-group-popover",
     kind: "user",
-    defaultConfig: {
-        variant: 0
-    },
+    defaultConfig: !1,
     variations: {
-        0: {
-            variant: 0
-        },
-        1: {
-            variant: 1
-        },
-        2: {
-            variant: 2
-        }
+        0: !1,
+        1: !0
     }
 });
 
-function s(e) {
+function r(e) {
     let {
         location: t
-    } = e, {
-        variant: n
-    } = l.useConfig({
+    } = e;
+    return i.useConfig({
         location: t
-    });
-    return n
+    })
 }

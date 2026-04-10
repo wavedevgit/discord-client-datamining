@@ -3,8 +3,8 @@ n.d(t, {
     A: () => A
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(397927),
+    r = n(64700),
+    a = n(397927),
     l = n(308528),
     s = n(58149),
     o = n(231608),
@@ -18,8 +18,8 @@ function A(e) {
             priorityMembers: n,
             partiedMembers: A
         } = e,
-        _ = a.useContext(d.AnalyticsContext),
-        h = n.map(e => {
+        h = r.useContext(d.AnalyticsContext),
+        _ = n.map(e => {
             let {
                 user: t
             } = e;
@@ -27,18 +27,18 @@ function A(e) {
         }),
         m = 1 === A.length && 1 === n.length,
         g = n.length - A.length > 0;
-    return (m || t) && !g && 0 !== h.length ? (0, i.jsx)(r.Drp, {
+    return (m || t) && !g && 0 !== _.length ? (0, i.jsx)(a.Drp, {
         id: "message",
         action: function() {
             l.A.openPrivateChannel({
-                recipientIds: h
+                recipientIds: _
             }).then(t => s.Ay.trackWithMetadata(c.HAw.ACTIVITY_FEED_DM_VISITED, {
                 source: {
-                    ..._.location,
+                    ...h.location,
                     object: c.ZSU.LIST_ITEM
                 },
                 channel_id: t,
-                recipient_id: "string" == typeof h ? h : h[0],
+                recipient_id: "string" == typeof _ ? _ : _[0],
                 af_recently_played: !1,
                 ...(0, o.o)(e)
             }))

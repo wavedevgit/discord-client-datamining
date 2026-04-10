@@ -80,7 +80,7 @@ function j(e) {
                     (0, d.L3)(e, async () => {
                         let {
                             default: e
-                        } = await n.e("33").then(n.bind(n, 44536));
+                        } = await n.e("22414").then(n.bind(n, 44536));
                         return t => (0, i.jsx)(e, {
                             ...t,
                             channel: L

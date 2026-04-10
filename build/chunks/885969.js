@@ -3,8 +3,8 @@ n.d(t, {
     A: () => g
 });
 var i = n(793574),
-    a = n(4630),
-    r = n(580960),
+    r = n(4630),
+    a = n(580960),
     l = n(636401),
     s = n(629471),
     o = n(569475),
@@ -12,20 +12,20 @@ var i = n(793574),
     c = n(546983),
     u = n(613057),
     A = n(652215),
-    _ = n(788868);
-let h = [i.A.RPC];
+    h = n(788868);
+let _ = [i.A.RPC];
 
 function m(e, t) {
     let n = {
-        subscriptionTier: _.pe.TIER_2,
-        analyticsLocations: h,
+        subscriptionTier: h.pe.TIER_2,
+        analyticsLocations: _,
         analyticsObject: t
     };
     switch (e) {
         case A.BRT.APP:
-            return r.A.openPremiumPaymentModalInApp(n);
+            return a.A.openPremiumPaymentModalInApp(n);
         case A.BRT.OVERLAY:
-            return r.A.openPremiumPaymentModalInOverlay(n);
+            return a.A.openPremiumPaymentModalInOverlay(n);
         default:
             throw Error(`Unexpected app context: ${e}`)
     }
@@ -46,13 +46,13 @@ let g = {
                 }
             } = e;
             (0, d.C)(t.transport);
-            let r = t.application.id;
-            if (null == r) throw new l.A({
+            let a = t.application.id;
+            if (null == a) throw new l.A({
                 errorCode: A.Lw6.INVALID_COMMAND
             }, "No application.");
             let {
                 lock: s,
-                context: _
+                context: h
             } = (0, c.d5)(t.transport !== u.z4.POST_MESSAGE ? i : null);
             if (null == (0, o.A)()) throw new l.A({
                 errorCode: A.Lw6.INVALID_CHANNEL
@@ -62,13 +62,13 @@ let g = {
             };
             return (async () => {
                 try {
-                    let e = await (0, a.j)({
-                        applicationId: r,
+                    let e = await (0, r.j)({
+                        applicationId: a,
                         skuId: n,
-                        openPremiumPaymentModal: () => m(_, g),
-                        analyticsLocations: h,
+                        openPremiumPaymentModal: () => m(h, g),
+                        analyticsLocations: _,
                         analyticsLocationObject: g,
-                        context: _
+                        context: h
                     });
                     return s(), e
                 } catch (e) {
@@ -102,9 +102,9 @@ let g = {
             }, "No application.");
             let {
                 lock: i,
-                context: a
+                context: r
             } = (0, c.d5)(t.transport !== u.z4.POST_MESSAGE ? n : null);
-            return m(a, {
+            return m(r, {
                 page: A.liQ.IN_APP
             }).then(() => {
                 i()

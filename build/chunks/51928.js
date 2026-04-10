@@ -5,16 +5,16 @@ n.d(t, {
 var i = n(627968),
     s = n(397927),
     l = n(652215),
-    a = n(985018),
-    r = n(936981);
+    r = n(985018),
+    a = n(936981);
 
 function o() {
     return (0, i.jsx)(s.ZpM, {
         type: s.ZpM.Types.PRIMARY,
-        className: r.A,
+        className: a.A,
         children: (0, i.jsx)(s.Text, {
             variant: "text-sm/normal",
-            children: a.intl.format(a.t.xvCsx4, {
+            children: r.intl.format(r.t.xvCsx4, {
                 termsLink: l.X7G.TERMS,
                 privacyLink: l.X7G.PRIVACY
             })

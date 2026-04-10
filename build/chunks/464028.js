@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(252452),
-    a = n(444802),
-    r = n(975571),
+    r = n(444802),
+    a = n(975571),
     o = n(429041),
     d = n(639491),
     c = n(106148),
@@ -16,7 +16,7 @@ var i = n(627968),
     _ = n(338425);
 
 function x() {
-    let e = (0, a.WX)(),
+    let e = (0, r.WX)(),
         t = s.useMemo(() => [{
             id: "explicit-media-redaction",
             title: g.intl.string(g.t.GYpoAq),
@@ -35,7 +35,7 @@ function x() {
         children: [(0, i.jsx)(c._, {
             header: g.intl.string(g.t["Hj/But"]),
             description: g.intl.format(g.t.dliU4j, {
-                learnMoreLink: r.A.getArticleURL(e)
+                learnMoreLink: a.A.getArticleURL(e)
             })
         }), (0, i.jsx)(u.A, {
             tabs: t,

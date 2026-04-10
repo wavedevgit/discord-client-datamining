@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(397927),
     d = n(531260),
     c = n(509536),
@@ -28,7 +28,7 @@ function b(e) {
         slot: t,
         guildTier: n,
         premiumSubscription: l,
-        hasCancelableSlots: r,
+        hasCancelableSlots: a,
         isLast: c
     } = e, m = s.useRef(null), g = (0, _.I5)(t), x = s.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t.cooldownEndsAt]), h = null != x && x > new Date, b = (0, d.A)(), C = s.useMemo(() => (function(e, t) {
         if (null == e || e === p.TVA.NONE) return "";
@@ -63,7 +63,7 @@ function b(e) {
         })
     }, [C, t.premiumGuildSubscription]), N = s.useMemo(() => g ? l.isPausedForFractionalPremium ? b.endsAt.toDate() : l.currentPeriodEnd : null, [g, l, b]);
     return (0, i.jsxs)("div", {
-        className: a()(S.iq, {
+        className: r()(S.iq, {
             [S.Mt]: c
         }),
         children: [(0, i.jsxs)("div", {
@@ -115,7 +115,7 @@ function b(e) {
                     onClose: n,
                     guildBoostSlot: t,
                     premiumSubscription: l,
-                    hasCancelableGuildBoostSlot: r,
+                    hasCancelableGuildBoostSlot: a,
                     fractionalState: b.fractionalState
                 })
             },
@@ -141,14 +141,14 @@ function C(e) {
         slots: n,
         premiumSubscription: s,
         hasCancelableSlots: l
-    } = e, a = (0, r.bG)([g.A], () => g.A.getGuild(t), [t]);
+    } = e, r = (0, a.bG)([g.A], () => g.A.getGuild(t), [t]);
     return (0, i.jsxs)("div", {
         className: S.Nr,
         children: [(0, i.jsx)("div", {
             className: S.MY,
-            children: null != a ? (0, i.jsxs)(i.Fragment, {
+            children: null != r ? (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(h.R, {
-                    guild: a,
+                    guild: r,
                     className: S.OA
                 }), (0, i.jsx)(o.Button, {
                     variant: "secondary",
@@ -156,7 +156,7 @@ function C(e) {
                     text: f.intl.string(f.t.KLOhbO),
                     onClick: () => {
                         (0, c.K4)({
-                            guildId: a.id,
+                            guildId: r.id,
                             location: {
                                 section: p.JJy.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA
                             }
@@ -173,7 +173,7 @@ function C(e) {
             })
         }), n.map((e, t) => (0, i.jsx)(b, {
             slot: e,
-            guildTier: a?.premiumTier,
+            guildTier: r?.premiumTier,
             premiumSubscription: s,
             hasCancelableSlots: l,
             isLast: t === n.length - 1
@@ -186,12 +186,12 @@ function v(e) {
         guildBoostSlots: t,
         premiumSubscription: n,
         pausedAppliedGuildBoosts: l,
-        isPaused: a
+        isPaused: r
     } = e, {
-        boostsByGuildId: r,
+        boostsByGuildId: a,
         numActiveSlots: o
     } = s.useMemo(() => {
-        if (a && null != n) return {
+        if (r && null != n) return {
             boostsByGuildId: function(e, t) {
                 let n = {};
                 for (let t of e) t.guildId in n || (n[t.guildId] = []), n[t.guildId].push(t);
@@ -226,14 +226,14 @@ function v(e) {
             boostsByGuildId: i,
             numActiveSlots: e
         }
-    }, [t, a, l, n]);
-    if (null == n || 0 === Object.keys(r).length) return null;
+    }, [t, r, l, n]);
+    if (null == n || 0 === Object.keys(a).length) return null;
     let d = o > x.Ay.getNumIncludedPremiumGuildSubscriptionSlots(n.planId);
     return (0, i.jsx)("div", {
         className: S.kR,
-        children: A.default.keys(r).map(e => (0, i.jsx)(C, {
+        children: A.default.keys(a).map(e => (0, i.jsx)(C, {
             guildId: e,
-            slots: r[e],
+            slots: a[e],
             premiumSubscription: n,
             hasCancelableSlots: d
         }, e))

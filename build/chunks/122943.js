@@ -3,17 +3,17 @@ n.d(t, {
     A: () => T
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(311907),
     o = n(397927),
     d = n(863439),
     c = n(465364),
     u = n(448368),
     A = n(302031),
-    _ = n(253932),
-    h = n(576705),
+    h = n(253932),
+    _ = n(576705),
     m = n(994500),
     g = n(978914),
     p = n(652215),
@@ -21,12 +21,12 @@ var i = n(627968),
     I = n(985018),
     f = n(530202),
     C = n(782691);
-let T = a.memo(function(e) {
+let T = r.memo(function(e) {
     let {
         channel: t
     } = e, {
         loaded: n,
-        error: r,
+        error: a,
         message: T
     } = (0, g.I)(t), {
         isBlocked: N,
@@ -34,15 +34,15 @@ let T = a.memo(function(e) {
     } = (0, s.cf)([m.A], () => ({
         isBlocked: null != T && m.A.isBlockedForMessage(T),
         isIgnored: null != T && m.A.isIgnoredForMessage(T)
-    }), [T]), x = (0, s.bG)([h.A], () => h.A.can(p.xBc.MANAGE_MESSAGES, t)), v = _.gs.useSetting(), {
+    }), [T]), x = (0, s.bG)([_.A], () => _.A.can(p.xBc.MANAGE_MESSAGES, t)), v = h.gs.useSetting(), {
         content: b
-    } = a.useMemo(() => T?.content != null && "" !== T.content ? (0, c.Ay)(T, {
+    } = r.useMemo(() => T?.content != null && "" !== T.content ? (0, c.Ay)(T, {
         formatInline: !0,
         noStyleAndInteraction: !0
     }) : {
         content: null
     }, [T]), y = null;
-    if (r) y = (0, i.jsx)(o.Text, {
+    if (a) y = (0, i.jsx)(o.Text, {
         className: f.G4,
         variant: "text-sm/normal",
         color: "text-muted",

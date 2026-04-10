@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(419954),
     s = n(780964),
     l = n(325120),
-    a = n(27496),
-    r = n(974361),
+    r = n(27496),
+    a = n(974361),
     o = n(152303),
     d = n(288321),
     c = n(139111),
@@ -16,5 +16,5 @@ var i = n(419954),
 let _ = (0, i.zZ)(s.X.DISPLAY_MESSAGES_CATEGORY, {
     useTitle: () => g.intl.string(g.t.OIgYlQ),
     useSearchTerms: () => [g.intl.string(g.t["/VQax8"])],
-    buildLayout: () => [c.g, l.r, a.j, u.z, o.z, m.F, r.t, d.$]
+    buildLayout: () => [c.g, l.r, r.j, u.z, o.z, m.F, a.t, d.$]
 })

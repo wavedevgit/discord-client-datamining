@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(284009),
     l = n.n(s),
-    a = n(311907),
-    r = n(990078),
+    r = n(311907),
+    a = n(990078),
     o = n(397927),
     d = n(81400),
     c = n(757036),
@@ -38,12 +38,12 @@ var s = n(284009),
     G = n(966227);
 
 function M() {
-    let e = (0, a.bG)([I.default], () => {
+    let e = (0, r.bG)([I.default], () => {
             let e = I.default.getCurrentUser();
             return l()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
         }),
         t = (0, c.L)(P.PremiumTypes.TIER_2),
-        n = (0, a.bG)([b.A, N.A], () => N.A.getGuild(b.A.selectedGuildId));
+        n = (0, r.bG)([b.A, N.A], () => N.A.getGuild(b.A.selectedGuildId));
     l()(null != n, "guild should not be null");
     let {
         pendingAvatar: s,
@@ -53,13 +53,13 @@ function M() {
         pendingPronouns: w,
         pendingThemeColors: V,
         errors: B
-    } = (0, a.cf)([b.A], () => ({
+    } = (0, r.cf)([b.A], () => ({
         ...b.A.getPendingChanges(n.id),
         errors: b.A.getErrors(n.id)
     })), F = (0, S.V7)({
         userId: e.id,
         image: s
-    }), H = (0, d.EC)(n.id), z = (0, a.bG)([v.Ay], () => null == n.id ? null : v.Ay.getMember(n.id, e.id)), Y = (0, a.bG)([C.A], () => C.A.getGuildMemberProfile(e.id, n.id)), X = j.Ay.canUsePremiumProfileCustomization(e), K = (0, u.z5)(s, z?.avatar), W = (0, u.Ac)(k, Y?.banner), Z = (0, O.l)(V, Y?.themeColors), q = Y?.bio ?? "", Q = Y?.pronouns ?? "", J = (e, t, n) => {
+    }), H = (0, d.EC)(n.id), z = (0, r.bG)([v.Ay], () => null == n.id ? null : v.Ay.getMember(n.id, e.id)), Y = (0, r.bG)([C.A], () => C.A.getGuildMemberProfile(e.id, n.id)), X = j.Ay.canUsePremiumProfileCustomization(e), K = (0, u.z5)(s, z?.avatar), W = (0, u.Ac)(k, Y?.banner), Z = (0, O.l)(V, Y?.themeColors), q = Y?.bio ?? "", Q = Y?.pronouns ?? "", J = (e, t, n) => {
         n(e ?? (null != t ? null : void 0))
     };
     return (0, i.jsxs)("div", {
@@ -85,7 +85,7 @@ function M() {
             showOverlay: !X,
             children: [(0, i.jsx)(_.A, {
                 sectionTitle: (0, i.jsxs)(i.Fragment, {
-                    children: [D.intl.string(D.t.lqaIxI), (0, i.jsx)(r.m, {
+                    children: [D.intl.string(D.t.lqaIxI), (0, i.jsx)(a.m, {
                         text: D.intl.string(D.t["5AFxuK"]),
                         children: (0, i.jsx)(o.tvc, {
                             size: "md",
@@ -104,7 +104,7 @@ function M() {
                 disabled: !X
             }, "avatar"), (0, i.jsx)(g.A, {
                 sectionTitle: (0, i.jsxs)(i.Fragment, {
-                    children: [D.intl.string(D.t["7v0T9P"]), (0, i.jsx)(r.m, {
+                    children: [D.intl.string(D.t["7v0T9P"]), (0, i.jsx)(a.m, {
                         text: D.intl.string(D.t["5AFxuK"]),
                         children: (0, i.jsx)(o.tvc, {
                             size: "md",
@@ -121,7 +121,7 @@ function M() {
             }), (0, i.jsx)(A.A, {
                 user: e,
                 guild: n,
-                titleIcon: (0, i.jsx)(r.m, {
+                titleIcon: (0, i.jsx)(a.m, {
                     text: D.intl.string(D.t["5AFxuK"]),
                     children: (0, i.jsx)(o.tvc, {
                         size: "md",
@@ -131,7 +131,7 @@ function M() {
                 })
             }, "nameplate"), (0, i.jsx)(p.A, {
                 sectionTitle: (0, i.jsxs)(i.Fragment, {
-                    children: [D.intl.string(D.t.wR5wOo), (0, i.jsx)(r.m, {
+                    children: [D.intl.string(D.t.wR5wOo), (0, i.jsx)(a.m, {
                         text: D.intl.string(D.t["5AFxuK"]),
                         children: (0, i.jsx)(o.tvc, {
                             size: "md",
@@ -164,7 +164,7 @@ function M() {
             }), (0, i.jsx)(m.A, {
                 placeholder: D.intl.string(D.t["/7NKgv"]),
                 sectionTitle: (0, i.jsxs)(i.Fragment, {
-                    children: [D.intl.string(D.t.ZzAR2Y), (0, i.jsx)(r.m, {
+                    children: [D.intl.string(D.t.ZzAR2Y), (0, i.jsx)(a.m, {
                         text: D.intl.string(D.t["5AFxuK"]),
                         children: (0, i.jsx)(o.tvc, {
                             size: "md",

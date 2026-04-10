@@ -21,8 +21,8 @@ function c(e, t, n, c, u) {
         title: f,
         body: g
     } = (0, l.TB)(e, t, n), {
-        trackView: _,
-        trackClick: m
+        trackView: m,
+        trackClick: _
     } = (0, r.Y)(o.KS.ActivityInvite, {
         notif_type: o.KS.ActivityInvite,
         notif_user_id: n.id,
@@ -40,7 +40,7 @@ function c(e, t, n, c, u) {
         body: g,
         hint: e => (0, a.sI)(e, (0, r.J)(), d.t.aB5xLy),
         onNotificationShow: () => {
-            _()
+            m()
         },
         confirmText: d.intl.string(d.t.VJlc0S),
         onConfirmClick: (l, a) => {
@@ -50,10 +50,10 @@ function c(e, t, n, c, u) {
                 applicationId: c.id,
                 channelId: e.id,
                 messageId: t.id
-            }), s.A.updateNotificationStatus(a), m("join")
+            }), s.A.updateNotificationStatus(a), _("join")
         },
         onDismissClick: () => {
-            m("dismiss")
+            _("dismiss")
         }
     }
 }

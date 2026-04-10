@@ -30,8 +30,8 @@ var i = n(627968),
     I = n(568031),
     T = n(518491),
     y = n(965591),
-    S = n(495022),
-    P = n(382694),
+    P = n(495022),
+    S = n(382694),
     M = n(235365),
     O = n(994763),
     D = n(788868),
@@ -67,7 +67,7 @@ let w = "perk",
                 glowingSectionId: X,
                 glowingPerkId: K,
                 scrollBlock: q,
-                scrollInline: Q
+                scrollInline: Z
             } = r.useMemo(() => {
                 let e = new URLSearchParams(a.search),
                     t = e.get(w),
@@ -83,8 +83,8 @@ let w = "perk",
                     scrollBlock: "start"
                 } : {}
             }, [a.search]);
-        (0, O.z)(Y ?? "", null != Y, q, Q);
-        let [Z, $] = r.useState(!1), J = (0, R.p)(), ee = r.useRef(null), [et, en] = r.useState(!1), ei = null != J && null != V && V.status === L.Dmq.CANCELED, er = (0, E.iU)(D.gD.PREMIUM_MONTH_TIER_2, J, V), ea = !et && ei, {
+        (0, O.z)(Y ?? "", null != Y, q, Z);
+        let [Q, $] = r.useState(!1), J = (0, R.p)(), ee = r.useRef(null), [et, en] = r.useState(!1), ei = null != J && null != V && V.status === L.Dmq.CANCELED, er = (0, E.iU)(D.gD.PREMIUM_MONTH_TIER_2, J, V), ea = !et && ei, {
             analyticsLocations: es
         } = (0, m.Ay)(_.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [el, ec] = r.useState(!1);
         return null != (0, c.bG)([h.A], () => null != t ? h.A.getUserProfile(t) : null) && (F || null != W) ? (0, i.jsxs)(d.GtU, {
@@ -108,13 +108,13 @@ let w = "perk",
                             userDiscountOffer: J,
                             discountedPrice: er
                         })
-                    }), (0, i.jsx)(P.A, {
+                    }), (0, i.jsx)(S.A, {
                         glowingPerkId: K
                     }), (0, i.jsx)(j.A, {
                         glowingSectionId: X
                     }), null != W && z && (0, i.jsx)(M.A, {
                         location: _.A.PREMIUM_MARKETING_NITRO_HOME_ORBS_SECTION
-                    }), (0, i.jsx)(S.A, {
+                    }), (0, i.jsx)(P.A, {
                         glowingPerkId: K
                     }), (0, i.jsx)(I.A, {
                         className: k.Zy,
@@ -145,7 +145,7 @@ let w = "perk",
                     })]
                 })
             }), ei && null != er && (0, i.jsx)(y.A, {
-                isVisible: ea && Z,
+                isVisible: ea && Q,
                 premiumSubscription: V,
                 churnDiscountOffer: J,
                 discountedPrice: er

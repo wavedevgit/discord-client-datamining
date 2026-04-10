@@ -38,7 +38,7 @@ function A(t) {
             t.stopPropagation(), null != C && (0, c.L3)(t, async () => {
                 let {
                     default: t
-                } = await Promise.all([n.e("77371"), n.e("11478"), n.e("97580")]).then(n.bind(n, 406406));
+                } = await Promise.all([n.e("77371"), n.e("3795"), n.e("97580")]).then(n.bind(n, 406406));
                 return n => (0, l.jsx)(t, {
                     guildEventId: E.id,
                     recurrenceId: e,

@@ -1,12 +1,12 @@
 /** chunk id: 597232 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => C
 });
 var i = n(627968);
 n(64700);
 var l = n(311907),
-    s = n(397927),
-    a = n(49229),
+    a = n(397927),
+    s = n(49229),
     r = n(327166),
     o = n(390848),
     c = n(994500),
@@ -20,11 +20,11 @@ function g(e) {
     let {
         userId: t
     } = e;
-    return (0, i.jsx)(s.Button, {
+    return (0, i.jsx)(a.Button, {
         size: "sm",
         variant: "secondary",
         onClick: () => {
-            a.A.blockUser(t, {
+            s.A.blockUser(t, {
                 location: h.liQ.DM_CHANNEL
             })
         },
@@ -37,10 +37,10 @@ function p(e) {
         userId: t,
         showingBanner: n
     } = e, l = (0, r.D)(t);
-    return n ? null : (0, i.jsx)(s.Button, {
+    return n ? null : (0, i.jsx)(a.Button, {
         variant: "primary",
         onClick: () => {
-            a.A.addRelationship({
+            s.A.addRelationship({
                 userId: t,
                 context: {
                     location: h.liQ.DM_CHANNEL
@@ -51,14 +51,14 @@ function p(e) {
     })
 }
 
-function f(e) {
+function _(e) {
     let {
         userId: t
     } = e;
-    return (0, i.jsx)(s.Button, {
+    return (0, i.jsx)(a.Button, {
         variant: "secondary",
         onClick: () => {
-            a.A.removeFriend(t, {
+            s.A.removeFriend(t, {
                 location: h.liQ.DM_CHANNEL
             })
         },
@@ -66,14 +66,14 @@ function f(e) {
     })
 }
 
-function _(e) {
+function f(e) {
     let {
         userId: t
     } = e;
-    return (0, i.jsx)(s.Button, {
+    return (0, i.jsx)(a.Button, {
         variant: "secondary",
         onClick: () => {
-            a.A.unblockUser(t, {
+            s.A.unblockUser(t, {
                 location: h.liQ.DM_CHANNEL
             })
         },
@@ -87,7 +87,7 @@ function E(e) {
         user: n,
         showingBanner: r
     } = e, p = (0, l.bG)([c.A], () => c.A.getOriginApplicationId(n.id), [n.id]), {
-        acceptFriendRequest: f
+        acceptFriendRequest: _
     } = (0, o.I)({
         userId: n.id,
         applicationId: p,
@@ -96,22 +96,22 @@ function E(e) {
     });
     return (0, i.jsxs)("div", {
         className: A.K,
-        children: [(0, i.jsx)(s.Text, {
+        children: [(0, i.jsx)(a.Text, {
             color: "text-default",
             variant: "text-sm/normal",
             children: m.intl.format(m.t.uIomXw, {
                 username: d.Ay.getName(n)
             })
-        }), (0, i.jsxs)(s.ButtonGroup, {
+        }), (0, i.jsxs)(a.ButtonGroup, {
             size: "sm",
-            children: [(0, i.jsx)(s.Button, {
+            children: [(0, i.jsx)(a.Button, {
                 variant: "primary",
-                onClick: f,
+                onClick: _,
                 text: m.intl.string(m.t["+WbSn5"])
-            }), (0, i.jsx)(s.Button, {
+            }), (0, i.jsx)(a.Button, {
                 variant: "secondary",
                 onClick: () => {
-                    a.A.cancelFriendRequest(n.id, {
+                    s.A.cancelFriendRequest(n.id, {
                         location: h.liQ.DM_CHANNEL
                     })
                 },
@@ -126,37 +126,37 @@ function E(e) {
     })
 }
 
-function x(e) {
+function C(e) {
     let t, {
             channel: n,
-            user: a,
+            user: s,
             showingBanner: r
         } = e,
-        o = (0, l.bG)([c.A], () => c.A.getRelationshipType(a.id), [a.id]);
+        o = (0, l.bG)([c.A], () => c.A.getRelationshipType(s.id), [s.id]);
     if (o === h.eA$.PENDING_INCOMING) return (0, i.jsx)(E, {
         channel: n,
-        user: a,
+        user: s,
         showingBanner: r
     });
     switch (o) {
         case h.eA$.NONE:
-            a.bot || (t = (0, i.jsx)(p, {
-                userId: a.id,
+            s.bot || (t = (0, i.jsx)(p, {
+                userId: s.id,
                 showingBanner: r
             }));
             break;
         case h.eA$.FRIEND:
-            t = (0, i.jsx)(f, {
-                userId: a.id
+            t = (0, i.jsx)(_, {
+                userId: s.id
             });
             break;
         case h.eA$.BLOCKED:
-            t = (0, i.jsx)(_, {
-                userId: a.id
+            t = (0, i.jsx)(f, {
+                userId: s.id
             });
             break;
         case h.eA$.PENDING_OUTGOING:
-            t = (0, i.jsx)(s.Button, {
+            t = (0, i.jsx)(a.Button, {
                 variant: "primary",
                 disabled: !0,
                 text: m.intl.string(m.t.xMH6vD)
@@ -166,13 +166,13 @@ function x(e) {
             t = null
     }
     let d = o !== h.eA$.BLOCKED;
-    return (0, i.jsxs)(s.ButtonGroup, {
+    return (0, i.jsxs)(a.ButtonGroup, {
         size: "sm",
         children: [t, d ? (0, i.jsx)(g, {
-            userId: a.id
+            userId: s.id
         }) : null, r ? null : (0, i.jsx)(u.A, {
             channel: n,
-            user: a
+            user: s
         })]
     })
 }

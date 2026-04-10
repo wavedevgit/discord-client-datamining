@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(421380),
     s = n(935649),
     l = n(847599),
-    a = n(171316),
-    r = n(419954),
+    r = n(171316),
+    a = n(419954),
     o = n(71393),
     d = n(954571),
     c = n(975571),
@@ -33,7 +33,7 @@ let b = (e, t) => {
 function C() {
     return E.intl.string(E.t["3o2ojh"])
 }
-let v = (0, r.zD)(x.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
+let v = (0, a.zD)(x.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
     useTitle: C,
     useSubtitle: () => (0, h.q9)() ? E.intl.format(E.t.WpnWLc, {
         helpdeskArticle: c.A.getArticleURL(S.MVz.MESSAGE_REQUESTS)
@@ -50,7 +50,7 @@ let v = (0, r.zD)(x.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
     },
     useDisabled: () => {
         let e = (0, h.Tx)(),
-            t = (0, a.uM)(),
+            t = (0, r.uM)(),
             n = (0, g.K)(),
             i = _.$s.useSetting().includes(e);
         return e === A.YG ? n || t : i

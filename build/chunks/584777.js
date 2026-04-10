@@ -1,11 +1,11 @@
 /** chunk id: 584777 params = (module,exports,require) **/
 let i;
 n.d(t, {
-    A: () => w
+    A: () => k
 }), n(321073);
 var l = n(311907),
-    s = n(73153),
-    a = n(450827),
+    a = n(73153),
+    s = n(450827),
     r = n(49463),
     o = n(21119),
     c = n(95701),
@@ -16,30 +16,30 @@ var l = n(311907),
     A = n(205761),
     g = n(994500),
     p = n(287809),
-    f = n(652215);
-let _ = !1,
+    _ = n(652215);
+let f = !1,
     E = "",
-    x = 0,
-    C = [],
+    C = 0,
+    x = [],
     S = !1,
     I = new Set,
     T = null;
 
-function N() {
-    E = "", x = 0, C = [], I = new Set, _ = !1, T = null
+function v() {
+    E = "", C = 0, x = [], I = new Set, f = !1, T = null
 }
 
-function v(e) {
-    E = e, x = 0, y()
+function N(e) {
+    E = e, C = 0, y()
 }
 
 function y() {
-    if (!_) return !1;
+    if (!f) return !1;
     let e = h.A.getChannel(T);
     if (0 === E.trim().length) {
         var t;
         let n, l;
-        return null != i && i.clearQuery(), t = e, n = g.A.getFriendIDs(), l = p.default.getCurrentUser(), l?.isStaff() && (n = Array.from(new Set([...n, ...p.default.filter(e => e.isStaff() && e.id !== l.id, !1).map(e => e.id)]))), t?.isPrivate() && (n = n.filter(e => !t.recipients.includes(e))), C = n.reduce((e, t) => {
+        return null != i && i.clearQuery(), t = e, n = g.A.getFriendIDs(), l = p.default.getCurrentUser(), l?.isStaff() && (n = Array.from(new Set([...n, ...p.default.filter(e => e.isStaff() && e.id !== l.id, !1).map(e => e.id)]))), t?.isPrivate() && (n = n.filter(e => !t.recipients.includes(e))), x = n.reduce((e, t) => {
             let n = p.default.getUser(t);
             return null == n || n.isProvisional || e.push({
                 user: n,
@@ -49,13 +49,13 @@ function y() {
     }
     let n = null != e ? e.recipients : [];
     if (null != i) {
-        let e, t, l, s = p.default.getCurrentUser(),
-            a = s?.isStaff() ?? !1;
+        let e, t, l, a = p.default.getCurrentUser(),
+            s = a?.isStaff() ?? !1;
         i.setQuery({
             query: E,
             filters: {
                 friends: !0,
-                staff: a,
+                staff: s,
                 provisional: !1
             },
             blacklist: n,
@@ -67,9 +67,9 @@ function y() {
             })), l = {}, e.forEach(e => {
                 let n = A.A.getScoreWithoutFetchingLatest(e.id),
                     i = e.getRecipientId(),
-                    s = .2 * !!g.A.isFriend(i),
-                    a = .1 * (null != h.A.getDMFromUserId(i));
-                l[i] = 1 + n / t + s + a
+                    a = .2 * !!g.A.isFriend(i),
+                    s = .1 * (null != h.A.getDMFromUserId(i));
+                l[i] = 1 + n / t + a + s
             }), l)
         })
     }
@@ -77,13 +77,13 @@ function y() {
 }
 
 function b() {
-    if (!_) return !1;
+    if (!f) return !1;
     let e = S;
     return (S = g.A.getFriendCount() > 0) !== e
 }
 
 function j(e, t) {
-    if (m.A.hasConsented(f.YAq.PERSONALIZATION)) {
+    if (m.A.hasConsented(_.YAq.PERSONALIZATION)) {
         let n = o.A.getUserAffinity(e.user.id)?.communicationProbability ?? 0,
             i = o.A.getUserAffinity(t.user.id)?.communicationProbability ?? 0;
         if (n !== i) return i - n
@@ -95,7 +95,7 @@ function R(e) {
     let {
         results: t
     } = e;
-    if (!_ || "" === E) return;
+    if (!f || "" === E) return;
     let n = [];
     for (let {
             id: e,
@@ -108,25 +108,25 @@ function R(e) {
             comparator: i
         })
     }
-    C = n, k.emitChange()
+    x = n, U.emitChange()
 }
 
 function M() {
-    return null != i && (i.destroy(), i = null), a.A.getUserSearchContext(R, 1e3)
+    return null != i && (i.destroy(), i = null), s.A.getUserSearchContext(R, 1e3)
+}
+
+function L(e) {
+    if (e.key !== _.TLS) return !1;
+    f = !0, b(), i = M(), T = null, N("")
 }
 
 function O(e) {
-    if (e.key !== f.TLS) return !1;
-    _ = !0, b(), i = M(), T = null, v("")
+    if (e.key !== _.TLS) return !1;
+    D()
 }
 
-function D(e) {
-    if (e.key !== f.TLS) return !1;
-    L()
-}
-
-function L() {
-    null != i && (i.destroy(), i = null), N()
+function D() {
+    null != i && (i.destroy(), i = null), v()
 }
 class P extends l.Ay.Store {
     static displayName = "PrivateChannelRecipientsInviteStore";
@@ -134,7 +134,7 @@ class P extends l.Ay.Store {
         this.waitFor(h.A, m.A, r.A, A.A, g.A, o.A, p.default), this.syncWith([p.default, h.A], y), this.syncWith([g.A], b)
     }
     getResults() {
-        return C
+        return x
     }
     hasFriends() {
         return S
@@ -148,16 +148,16 @@ class P extends l.Ay.Store {
     getState() {
         return {
             query: E,
-            selectedRow: x,
+            selectedRow: C,
             selectedUsers: I,
-            results: C,
+            results: x,
             hasFriends: S
         }
     }
 }
-let k = new P(s.h, {
+let U = new P(a.h, {
         CONNECTION_OPEN: function() {
-            N()
+            v()
         },
         CHANNEL_SELECT: function(e) {
             let {
@@ -165,22 +165,22 @@ let k = new P(s.h, {
                 channelId: n
             } = e;
             if (null != t) return !1;
-            let i = _;
-            return N(), _ = i, T = n, y()
+            let i = f;
+            return v(), f = i, T = n, y()
         },
-        MODAL_PUSH: O,
-        SHOW_ACTION_SHEET: O,
+        MODAL_PUSH: L,
+        SHOW_ACTION_SHEET: L,
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-            _ = !0, b(), i = M(), T = e.channelId, v("")
+            f = !0, b(), i = M(), T = e.channelId, N("")
         },
-        MODAL_POP: D,
-        HIDE_ACTION_SHEET: D,
-        PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: L,
+        MODAL_POP: O,
+        HIDE_ACTION_SHEET: O,
+        PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: D,
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_QUERY: function(e) {
-            T = e.channelId, v(e.query)
+            T = e.channelId, N(e.query)
         },
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT: function(e) {
-            x = e.row
+            C = e.row
         },
         PRIVATE_CHANNEL_RECIPIENTS_ADD_USER: function(e) {
             let {
@@ -195,4 +195,4 @@ let k = new P(s.h, {
             I.delete(t), I = new Set(I)
         }
     }),
-    w = k
+    k = U

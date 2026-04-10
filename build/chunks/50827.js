@@ -4,28 +4,28 @@ n.d(t, {
 });
 var i = n(311907),
     s = n(73153);
-let r = new Set;
-class l extends i.Ay.PersistedStore {
+let l = new Set;
+class r extends i.Ay.PersistedStore {
     static displayName = "RecentlyActiveCollapseStore";
     static persistKey = "RecentlyActiveCollapseStore";
     initialize(e) {
-        r.clear(), e?.guilds.forEach(e => r.add(e))
+        l.clear(), e?.guilds.forEach(e => l.add(e))
     }
     isCollapsed(e) {
-        return r.has(e)
+        return l.has(e)
     }
     getState() {
         return {
-            guilds: r
+            guilds: l
         }
     }
 }
-let a = new l(s.h, {
+let a = new r(s.h, {
     SET_RECENTLY_ACTIVE_COLLAPSED: function(e) {
         let {
             guildId: t,
             collapsed: n
         } = e;
-        n ? r.add(t) : r.delete(t)
+        n ? l.add(t) : l.delete(t)
     }
 })

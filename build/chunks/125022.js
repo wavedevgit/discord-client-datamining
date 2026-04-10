@@ -3,31 +3,31 @@ n.d(t, {
     A: () => m
 });
 var i = n(311907),
-    a = n(73153),
-    r = n(927813),
+    r = n(73153),
+    a = n(927813),
     l = n(48128);
-let s = r.A.Millis.DAY,
-    o = 5 * r.A.Millis.MINUTE,
+let s = a.A.Millis.DAY,
+    o = 5 * a.A.Millis.MINUTE,
     d = {},
     c = !1,
     u = null,
     A = null;
 
-function _() {
+function h() {
     !(c || null != A && Date.now() < A + o) && (null == u || Date.now() >= u + s) && l.A.fetch()
 }
-class h extends i.Ay.Store {
+class _ extends i.Ay.Store {
     static displayName = "UnclaimedGamesStore";
     getUnclaimedGameIdsForGuild(e) {
-        return _(), d[e] ?? []
+        return h(), d[e] ?? []
     }
     hasUnclaimedGames(e) {
-        _();
+        h();
         let t = d[e];
         return null != t && t.length > 0
     }
     getGuildIdsWithUnclaimedGames() {
-        return _(), Object.keys(d).filter(e => d[e].length > 0)
+        return h(), Object.keys(d).filter(e => d[e].length > 0)
     }
     get fetching() {
         return c
@@ -36,7 +36,7 @@ class h extends i.Ay.Store {
         return u
     }
 }
-let m = new h(a.h, {
+let m = new _(r.h, {
     LOGOUT: function() {
         d = {}, c = !1, u = null, A = null
     },

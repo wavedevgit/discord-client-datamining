@@ -50,7 +50,7 @@ function w(e) {
                     (0, o.L3)(e, async () => {
                         let {
                             default: e
-                        } = await Promise.all([r.e("97262"), r.e("91042"), r.e("32250")]).then(r.bind(r, 365689));
+                        } = await Promise.all([r.e("97262"), r.e("91042"), r.e("54631")]).then(r.bind(r, 365689));
                         return r => (0, i.jsx)(e, {
                             ...r,
                             user: u,

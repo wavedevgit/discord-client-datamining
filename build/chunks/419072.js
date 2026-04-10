@@ -1,13 +1,13 @@
 /** chunk id: 419072 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => m
 });
-var l = n(311907),
-    i = n(73153),
+var i = n(311907),
+    l = n(73153),
     r = n(914853),
     s = n(956753);
 let a = new Set(Object.values(r.x)),
-    u = {
+    o = {
         [r.x.FRIENDS]: {
             FAVORITES: !0,
             FRIEND_REQUESTS: !0,
@@ -18,35 +18,35 @@ let a = new Set(Object.values(r.x)),
         },
         [r.x.VOICE]: {}
     },
-    o = {
-        ...u
+    u = {
+        ...o
     };
 
 function d(e, t) {
-    return !!(e === r.x.FRIENDS && t.startsWith("GROUP:")) || u[e]?.[t] === !0
+    return !!(e === r.x.FRIENDS && t.startsWith("GROUP:")) || o[e]?.[t] === !0
 }
 
 function c() {
-    return o = {
-        ...u
+    return u = {
+        ...o
     }, !0
 }
-class h extends l.Ay.Store {
+class h extends i.Ay.Store {
     static displayName = "FriendsWidgetCollapsibleStore";
     initialize() {
-        o = {
-            ...u
+        u = {
+            ...o
         }
     }
     getCollapsedSectionOverridesForTab(e) {
-        return o[e]
+        return u[e]
     }
     isSectionCollapsedByDefault(e, t) {
         return d(e, t)
     }
 }
 let g = e => (0, s.v$)(e, "FriendsWidgetCollapsibleStore"),
-    I = new h(i.h, __OVERLAY__ ? {} : {
+    m = new h(l.h, __OVERLAY__ ? {} : {
         OVERLAY_FRIENDS_WIDGET_TOGGLE_SECTION_COLLAPSED: g(function(e) {
             let t = e.tab;
             if (!a.has(t)) return !1;
@@ -56,15 +56,15 @@ let g = e => (0, s.v$)(e, "FriendsWidgetCollapsibleStore"),
                 return "" === t ? null : t
             }(e.sectionKey);
             if (null == n) return !1;
-            let l = o[t] ?? {},
-                i = l[n],
+            let i = u[t] ?? {},
+                l = i[n],
                 r = d(t, n),
                 s = {
-                    ...l,
-                    [n]: !(i ?? r)
+                    ...i,
+                    [n]: !(l ?? r)
                 };
-            return o = {
-                ...o,
+            return u = {
+                ...u,
                 [t]: s
             }, !0
         }),

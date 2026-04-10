@@ -1,26 +1,27 @@
 /** chunk id: 362790 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => _
 });
 var i = n(311907),
-    l = n(73153),
-    a = n(927813),
-    r = n(661191),
-    s = n(961350),
-    o = n(994500);
-let c = 180 * a.A.Millis.DAY,
+    r = n(73153),
+    s = n(927813),
+    l = n(661191),
+    a = n(961350),
+    c = n(994500);
+let o = 180 * s.A.Millis.DAY,
     u = !1;
 class d extends i.Ay.Store {
     static displayName = "PremiumPromoStore";
     initialize() {
-        this.waitFor(o.A, s.default)
+        this.waitFor(c.A, a.default)
     }
     isEligible() {
         return u
     }
 }
-let _ = new d(l.h, {
+let _ = new d(r.h, {
     CONNECTION_OPEN: function() {
-        return u !== (u = o.A.getFriendIDs().length >= 10 && r.default.extractTimestamp(s.default.getId()) < Date.now() - c)
+        return u !== (u = c.A.getFriendIDs().length >= 10 && l.default.extractTimestamp(a.default.getId()) < Date.now() - o)
     }
 })

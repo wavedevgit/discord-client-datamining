@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(934551),
-    a = n(554146),
-    r = n(397927),
+    r = n(554146),
+    a = n(397927),
     o = n(419954),
     d = n(933297),
     c = n(780964),
@@ -31,7 +31,7 @@ let v = (0, o.t_)(c.X.DISPLAY_PANEL, {
     }),
     N = [...x.j0, {
         badgeType: d.Xi.STRONGLY_DISCOURAGED_CUSTOM,
-        dismissibleContent: a.M.FAVORITES_GUILD_NEW_BADGE,
+        dismissibleContent: r.M.FAVORITES_GUILD_NEW_BADGE,
         StronglyDiscouragedCustomComponent: A.L
     }],
     I = (0, o.i4)(c.X.DISPLAY_SIDEBAR_ITEM, {
@@ -44,10 +44,10 @@ let v = (0, o.t_)(c.X.DISPLAY_PANEL, {
                 n = (0, g.A)();
             return s.useMemo(() => {
                 let s = [...e];
-                return null != t && s.push((0, i.jsx)(r.rXV, {
+                return null != t && s.push((0, i.jsx)(a.rXV, {
                     label: C.intl.string(C.t.Ob7VMB),
                     children: t
-                }, "text-and-images")), null != n && s.push((0, i.jsx)(r.rXV, {
+                }, "text-and-images")), null != n && s.push((0, i.jsx)(a.rXV, {
                     children: n
                 }, "streamer-mode")), s
             }, [e, t, n])

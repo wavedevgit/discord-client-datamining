@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(138298),
-    r = n(761640),
+var r = n(138298),
+    a = n(761640),
     l = n(954571),
     s = n(203982),
     o = n(957283),
@@ -18,8 +18,8 @@ function A(e) {
         index: t,
         className: n,
         channel: A,
-        user: _,
-        hasSingleMessageRequest: h
+        user: h,
+        hasSingleMessageRequest: _
     } = e, {
         channelId: m
     } = (0, o.N)();
@@ -28,16 +28,16 @@ function A(e) {
         className: n,
         isFocused: m === A.id,
         channel: A,
-        user: _,
+        user: h,
         onClick: e => {
-            e.stopPropagation(), a.A.openPrivateChannelAsSidebar({
+            e.stopPropagation(), r.A.openPrivateChannelAsSidebar({
                 channelId: A.id,
-                baseChannelId: r.fe,
-                hasSingleMessageRequest: h
+                baseChannelId: a.fe,
+                hasSingleMessageRequest: _
             }), l.default.track(u.HAw.MESSAGE_REQUEST_PREVIEW_VIEWED, {
                 is_spam: !1,
                 channel_id: A.id,
-                other_user_id: _.id
+                other_user_id: h.id
             }), setTimeout(() => {
                 s._.dispatch(u.jej.FOCUS_CHANNEL_TEXT_AREA, {
                     channelId: A.id
@@ -46,7 +46,7 @@ function A(e) {
         },
         children: e => (0, i.jsx)(c.v, {
             active: e,
-            user: _,
+            user: h,
             channel: A
         })
     })

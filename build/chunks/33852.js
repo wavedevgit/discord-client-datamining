@@ -1,36 +1,36 @@
 /** chunk id: 33852 params = (module,exports,require) **/
-n.d(e, {
-    A: () => u
+n.d(t, {
+    A: () => c
 });
 var i = n(627968);
 n(64700);
 var l = n(311907),
-    r = n(397927),
+    a = n(397927),
     s = n(882997),
-    a = n(962173),
+    r = n(962173),
     o = n(985018);
 
-function u(t) {
+function c(e) {
     let {
-        platform: e,
+        platform: t,
         variant: n = "secondary",
-        size: u = "sm",
+        size: c = "sm",
         onAction: d,
-        icon: c,
+        icon: u,
         ...h
-    } = t;
-    return (0, l.bG)([a.A], () => a.A.getAccounts().some(t => t.type === e.type)) ? null : (0, i.jsx)(r.Button, {
+    } = e;
+    return (0, l.bG)([r.A], () => r.A.getAccounts().some(e => e.type === t.type)) ? null : (0, i.jsx)(a.Button, {
         onClick: () => {
             d?.(), (0, s.A)({
-                platformType: e.type,
+                platformType: t.type,
                 location: "Activity Action"
             })
         },
         variant: n,
-        size: u,
-        icon: c,
+        size: c,
+        icon: u,
         text: o.intl.format(o.t.XWSHTb, {
-            platform: e.name
+            platform: t.name
         }),
         fullWidth: !0,
         ...h

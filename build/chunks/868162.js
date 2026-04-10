@@ -4,8 +4,8 @@ n.d(t, {
     x: () => T
 });
 var i = n(735438),
-    a = n.n(i),
-    r = n(311907),
+    r = n.n(i),
+    a = n(311907),
     l = n(73153),
     s = n(827343),
     o = n(617617),
@@ -13,10 +13,10 @@ var i = n(735438),
     c = n(723702),
     u = n(792205),
     A = n(731854);
-let _ = {
+let h = {
         ignoredDevices: {}
     },
-    h = _,
+    _ = h,
     m = !1,
     g = {},
     p = {},
@@ -48,7 +48,7 @@ function N(e, t, n) {
         type: u.E.INPUT_AND_OUTPUT
     } : e
 }
-class S extends r.Ay.DeviceSettingsStore {
+class S extends a.Ay.DeviceSettingsStore {
     static displayName = "ConnectedDeviceStore";
     static persistKey = "ConnectedDeviceStore";
     static migrations = [e => null == e.ignoredDevices ? {
@@ -56,10 +56,10 @@ class S extends r.Ay.DeviceSettingsStore {
         ignoredDevices: {}
     } : e];
     initialize(e) {
-        this.waitFor(d.Ay, o.A), h = e ?? _
+        this.waitFor(d.Ay, o.A), _ = e ?? h
     }
     getUserAgnosticState() {
-        return h
+        return _
     }
     get initialized() {
         return m
@@ -92,27 +92,27 @@ let x = new S(l.h, {
                 t !== I.id && (I.justChanged = !0), I.id = t
             }
         });
-        let r = {};
+        let a = {};
         if (f.justChanged = !1, n.forEach(e => {
-                if (r[T(e)] = e.id, e.id === A.dx) {
+                if (a[T(e)] = e.id, e.id === A.dx) {
                     let t = e.originalId ?? e.originalName;
                     t !== f.id && (f.justChanged = !0), f.id = t
                 }
             }), !m) {
-            g = i, p = r, m = !0;
+            g = i, p = a, m = !0;
             return
         }
         let l = Object.keys(g),
             s = Object.keys(i),
             o = Object.keys(p),
-            d = Object.keys(r),
-            c = a().difference(l, s),
-            _ = a().difference(o, d);
-        return c.length > 0 || _.length > 0 ? E = {} : (a().difference(s, l).forEach(e => {
+            d = Object.keys(a),
+            c = r().difference(l, s),
+            h = r().difference(o, d);
+        return c.length > 0 || h.length > 0 ? E = {} : (r().difference(s, l).forEach(e => {
             E[e] = N(E[e], e, u.E.INPUT)
-        }), a().difference(d, o).forEach(e => {
+        }), r().difference(d, o).forEach(e => {
             E[e] = N(E[e], e, u.E.OUTPUT)
-        })), !(a().isEqual(l, s) && a().isEqual(o, d)) && (g = i, p = r, !0)
+        })), !(r().isEqual(l, s) && r().isEqual(o, d)) && (g = i, p = a, !0)
     },
     CONNECTED_DEVICE_SWITCH: function(e) {
         let {
@@ -144,9 +144,9 @@ let x = new S(l.h, {
         let {
             displayName: t
         } = e;
-        h.ignoredDevices[t] = !0, delete E[t]
+        _.ignoredDevices[t] = !0, delete E[t]
     },
     CONNECTED_DEVICE_NEVER_SHOW_MODAL: function() {
-        E = {}, h.neverShowModal = !0
+        E = {}, _.neverShowModal = !0
     }
 })

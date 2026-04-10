@@ -1,40 +1,41 @@
 /** chunk id: 904854 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => f
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(158954),
-    r = n(311907),
-    s = n(397927),
-    o = n(802341),
-    c = n(538451),
+    r = n(64700),
+    s = n(158954),
+    l = n(311907),
+    a = n(397927),
+    c = n(802341),
+    o = n(538451),
     u = n(734057),
     d = n(562153),
     _ = n(944052),
-    A = n(480012),
-    m = n(763754),
-    E = n(447215),
-    T = n(888675),
-    I = n(985018),
+    E = n(480012),
+    A = n(763754),
+    m = n(447215),
+    I = n(888675),
+    T = n(985018),
     g = n(139487);
 
 function N(e) {
     let {
         users: t,
         guildId: n,
-        channelId: l
+        channelId: r
     } = e;
-    return (0, i.jsx)(s.lGe, {
+    return (0, i.jsx)(a.lGe, {
         className: g.XM,
-        children: (0, i.jsx)(s.HOs, {
+        children: (0, i.jsx)(a.HOs, {
             className: g.XG,
             children: (0, i.jsx)("div", {
-                children: t.map(e => (0, i.jsx)(c.A, {
+                children: t.map(e => (0, i.jsx)(o.A, {
                     user: e,
                     guildId: n ?? void 0,
-                    channelId: l,
-                    nick: d.Ay.getNickname(n, l, e)
+                    channelId: r,
+                    nick: d.Ay.getNickname(n, r, e)
                 }, e.id))
             })
         })
@@ -45,45 +46,45 @@ function f(e) {
     let {
         message: t,
         channel: n,
-        compact: c
-    } = e, d = (0, A.A)(t), f = (0, _.X7)(t), C = t.messageReference?.channel_id, h = (0, r.bG)([u.A], () => u.A.getChannel(C)), p = function(e, t, n, a, r, c) {
-        let u = (0, E.P)({
+        compact: o
+    } = e, d = (0, E.A)(t), f = (0, _.X7)(t), p = t.messageReference?.channel_id, C = (0, l.bG)([u.A], () => u.A.getChannel(p)), h = function(e, t, n, s, l, o) {
+        let u = (0, m.P)({
                 user: n,
                 channelId: t.id,
                 guildId: t.guild_id,
                 messageId: e.id
             }),
-            d = (0, E.P)({
-                user: a[0],
+            d = (0, m.P)({
+                user: s[0],
                 channelId: t.id,
                 guildId: t.guild_id,
                 messageId: e.id
             }),
-            _ = (0, E.P)({
-                user: a[1],
+            _ = (0, m.P)({
+                user: s[1],
                 channelId: t.id,
                 guildId: t.guild_id,
                 messageId: e.id
             }),
-            A = (0, m.Ay)(e),
-            [T, f] = a,
-            C = (0, m.d8)(T, t),
-            h = (0, m.d8)(f, t),
-            p = function(e, t) {
-                let n = l.useRef(null),
-                    [a, r] = l.useState(!1),
-                    o = l.useCallback(n => (0, i.jsx)(N, {
+            E = (0, A.Ay)(e),
+            [I, f] = s,
+            p = (0, A.d8)(I, t),
+            C = (0, A.d8)(f, t),
+            h = function(e, t) {
+                let n = r.useRef(null),
+                    [s, l] = r.useState(!1),
+                    c = r.useCallback(n => (0, i.jsx)(N, {
                         users: n,
                         guildId: e,
                         channelId: t
                     }), [e, t]);
-                return l.useCallback(e => (t, l) => (0, i.jsx)(s.YNO, {
+                return r.useCallback(e => (t, r) => (0, i.jsx)(a.YNO, {
                     targetElementRef: n,
-                    renderPopout: () => o(e),
-                    shouldShow: a,
+                    renderPopout: () => c(e),
+                    shouldShow: s,
                     position: "bottom",
-                    onRequestClose: () => r(!1),
-                    children: e => (0, i.jsx)(s.DUT, {
+                    onRequestClose: () => l(!1),
+                    children: e => (0, i.jsx)(a.DUT, {
                         ...e,
                         tag: "a",
                         style: {
@@ -91,54 +92,54 @@ function f(e) {
                         },
                         innerRef: n,
                         onClick: () => {
-                            r(e => !e)
+                            l(e => !e)
                         },
                         children: t
                     })
-                }, l), [a, o])
+                }, r), [s, c])
             }(t.guild_id, t.id),
-            S = l.useCallback((e, t) => null == c ? e : (0, i.jsx)(o.T, {
-                channel: c,
+            S = r.useCallback((e, t) => null == o ? e : (0, i.jsx)(c.T, {
+                channel: o,
                 childWrapperClassName: g.c6,
-                children: (0, i.jsx)(s.DUT, {
+                children: (0, i.jsx)(a.DUT, {
                     tag: "a",
                     children: e
                 })
-            }, t), [c]);
-        return null == r ? I.intl.format(I.t["eX6e/3"], {
-            username: A.nick,
-            usernameHook: u(A),
+            }, t), [o]);
+        return null == l ? T.intl.format(T.t["eX6e/3"], {
+            username: E.nick,
+            usernameHook: u(E),
             channelHook: S
-        }) : I.intl.format(I.t.YUbgR8, {
-            userCount: a.length + 1,
-            username: A.nick,
-            usernameHook: u(A),
-            username2: C.nick,
-            username2Hook: d(C),
-            username3: h.nick,
-            username3Hook: _(h),
-            otherCount: a.length - 1,
-            othersHook: p([n, ...a]),
-            duration: r
+        }) : T.intl.format(T.t.YUbgR8, {
+            userCount: s.length + 1,
+            username: E.nick,
+            usernameHook: u(E),
+            username2: p.nick,
+            username2Hook: d(p),
+            username3: C.nick,
+            username3Hook: _(C),
+            otherCount: s.length - 1,
+            othersHook: h([n, ...s]),
+            duration: l
         })
-    }(t, n, t.author, f, d, h), S = l.useMemo(() => {
-        let e = (0, i.jsx)(a.HKD, {
+    }(t, n, t.author, f, d, C), S = r.useMemo(() => {
+        let e = (0, i.jsx)(s.HKD, {
             size: "md",
-            color: s.LU0.colors.STATUS_POSITIVE
+            color: a.LU0.colors.STATUS_POSITIVE
         });
-        return null == h || null != d ? e : (0, i.jsx)(o.T, {
-            channel: h,
-            children: (0, i.jsx)(a.HKD, {
+        return null == C || null != d ? e : (0, i.jsx)(c.T, {
+            channel: C,
+            children: (0, i.jsx)(s.HKD, {
                 size: "md",
-                color: s.LU0.colors.STATUS_POSITIVE
+                color: a.LU0.colors.STATUS_POSITIVE
             })
         })
-    }, [h, d]);
-    return (0, i.jsx)(T.A, {
+    }, [C, d]);
+    return (0, i.jsx)(I.A, {
         iconNode: S,
         iconContainerClassName: g.zc,
         timestamp: t.timestamp,
-        compact: c,
-        children: p
+        compact: o,
+        children: h
     })
 }

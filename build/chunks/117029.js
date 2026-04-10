@@ -1,11 +1,11 @@
 /** chunk id: 117029 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => C
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(735438),
     o = n(451988),
     c = n(435371),
@@ -16,145 +16,145 @@ var i = n(627968),
     A = n(40056),
     g = n(985018),
     p = n(695292),
-    f = n(688046);
+    _ = n(688046);
 
-function _(e) {
+function f(e) {
     e.preventDefault(), e.stopPropagation()
 }
 
 function E(e) {
     return (1 & e.buttons) == 1
 }
-let x = l.memo(function(e) {
+let C = l.memo(function(e) {
     let {
         mirror: t = !1,
         streamId: n,
-        paused: s
+        paused: a
     } = e, {
-        onActive: x,
-        onPreventIdle: C,
+        onActive: C,
+        onPreventIdle: x,
         onAllowIdle: S
     } = l.useContext(h.k3), {
         enabled: I,
         zoomLevel: T,
-        minZoom: N,
-        maxZoom: v,
+        minZoom: v,
+        maxZoom: N,
         isDragging: y,
         isWheeling: b,
         isSlidering: j,
         setIsSlidering: R,
         doZoom: M,
-        isZooming: O,
-        videoAspectRatio: D,
-        wrapperRef: L,
+        isZooming: L,
+        videoAspectRatio: O,
+        wrapperRef: D,
         panOffset: P,
-        setPanOffset: k,
-        clampPanOffset: w
-    } = l.useContext(A.e9), [U, G] = l.useState(!1), F = l.useRef(null), B = T > N, H = l.useCallback(() => {
-        C("interact")
-    }, [C]), V = l.useCallback(() => {
+        setPanOffset: U,
+        clampPanOffset: k
+    } = l.useContext(A.e9), [w, G] = l.useState(!1), F = l.useRef(null), H = T > v, B = l.useCallback(() => {
+        x("interact")
+    }, [x]), V = l.useCallback(() => {
         G(!1), S("interact")
-    }, [S]), K = l.useMemo(() => {
-        let e = 120 * Math.min(D, 32 / 9);
+    }, [S]), W = l.useMemo(() => {
+        let e = 120 * Math.min(O, 32 / 9);
         return {
             "--custom-zoom-minimap-width": `${e}px`,
             "--custom-zoom-minimap-height": "120px"
         }
-    }, [D]), W = l.useCallback(e => {
-        if (null == F.current || null == L.current) return;
+    }, [O]), K = l.useCallback(e => {
+        if (null == F.current || null == D.current) return;
         let t = F.current.getBoundingClientRect(),
-            n = L.current.clientWidth,
-            i = L.current.clientHeight,
+            n = D.current.clientWidth,
+            i = D.current.clientHeight,
             l = e.x - t.left,
-            s = e.y - t.top;
-        k(w({
+            a = e.y - t.top;
+        U(k({
             x: (.5 - l / t.width) * n * T,
-            y: (.5 - s / t.height) * i * T
+            y: (.5 - a / t.height) * i * T
         }))
-    }, [w, T, L, k]), z = l.useCallback(e => {
-        E(e) && (e.preventDefault(), e.stopPropagation(), G(!0), W({
+    }, [k, T, D, U]), z = l.useCallback(e => {
+        E(e) && (e.preventDefault(), e.stopPropagation(), G(!0), K({
             x: e.clientX,
             y: e.clientY
         }))
-    }, [W]), q = l.useCallback(e => {
-        U && (e.preventDefault(), e.stopPropagation(), W({
+    }, [K]), Y = l.useCallback(e => {
+        w && (e.preventDefault(), e.stopPropagation(), K({
             x: e.clientX,
             y: e.clientY
         }))
-    }, [U, W]), Y = l.useCallback(e => {
-        !U || E(e) || (e.preventDefault(), e.stopPropagation(), G(!1))
-    }, [U]), J = m.Ay.getVideoComponent(), $ = l.useMemo(() => {
-        let e = null != L.current ? L.current.clientWidth : 1,
-            t = null != L.current ? L.current.clientHeight : 1,
+    }, [w, K]), J = l.useCallback(e => {
+        !w || E(e) || (e.preventDefault(), e.stopPropagation(), G(!1))
+    }, [w]), q = m.Ay.getVideoComponent(), $ = l.useMemo(() => {
+        let e = null != D.current ? D.current.clientWidth : 1,
+            t = null != D.current ? D.current.clientHeight : 1,
             n = 1 / T,
             i = 1 / T,
             l = .5 - P.x / (e * T),
-            s = .5 - P.y / (t * T);
+            a = .5 - P.y / (t * T);
         return {
             "--custom-zoom-indicator-left": `${100*(0,r.clamp)(l-n/2,0,1-n)}%`,
-            "--custom-zoom-indicator-top": `${100*(0,r.clamp)(s-i/2,0,1-i)}%`,
+            "--custom-zoom-indicator-top": `${100*(0,r.clamp)(a-i/2,0,1-i)}%`,
             "--custom-zoom-indicator-width": `${100*n}%`,
             "--custom-zoom-indicator-height": `${100*i}%`,
-            "--custom-zoom-indicator-transition": y || U || b || j ? "none" : "top 0.1s ease-out, left 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out"
+            "--custom-zoom-indicator-transition": y || w || b || j ? "none" : "top 0.1s ease-out, left 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out"
         }
-    }, [y, U, b, j, P, T, L]), Z = l.useCallback(e => {
+    }, [y, w, b, j, P, T, D]), Z = l.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), M(T - .25, A.qd, "button")
     }, [M, T]), X = l.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), M(T + .25, A.qd, "button")
     }, [M, T]), Q = l.useRef(null), ee = l.useCallback(e => {
-        R(!0), M(e, A.qd, "slider"), x(), null == Q.current && (Q.current = new o.Ep), Q.current.start(100, () => {
+        R(!0), M(e, A.qd, "slider"), C(), null == Q.current && (Q.current = new o.Ep), Q.current.start(100, () => {
             R(!1)
         })
-    }, [M, x, R]);
+    }, [M, C, R]);
     return ((0, u.l0)(() => {
         Q.current?.stop()
     }), I && null != n) ? (0, i.jsxs)("div", {
-        className: a()(f.ne, {
-            [f.Ge]: O || B
+        className: s()(_.ne, {
+            [_.Ge]: L || H
         }),
-        onMouseEnter: H,
+        onMouseEnter: B,
         onMouseLeave: V,
-        onClick: _,
-        children: [(O || B) && (0, i.jsx)(d.DUT, {
-            onClick: _,
-            onMouseEnter: H,
+        onClick: f,
+        children: [(L || H) && (0, i.jsx)(d.DUT, {
+            onClick: f,
+            onMouseEnter: B,
             onMouseLeave: V,
             children: (0, i.jsxs)("div", {
                 ref: F,
-                className: f.Wc,
-                style: K,
+                className: _.Wc,
+                style: W,
                 onMouseDown: z,
-                onMouseMove: q,
-                onMouseUp: Y,
-                children: [(0, i.jsx)(J, {
-                    className: a()(f.BZ, {
+                onMouseMove: Y,
+                onMouseUp: J,
+                children: [(0, i.jsx)(q, {
+                    className: s()(_.BZ, {
                         [p.mirror]: t
                     }),
                     streamId: n,
-                    paused: s,
+                    paused: a,
                     reportContainerResized: !1
                 }), (0, i.jsx)("div", {
-                    className: f.xq,
+                    className: _.xq,
                     style: $
                 })]
             })
         }), (0, i.jsxs)("div", {
-            className: f.xu,
-            children: [(O || B) && (0, i.jsxs)(i.Fragment, {
+            className: _.xu,
+            children: [(L || H) && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(c.m_, {
                     text: g.intl.string(g.t.M6Cmwy),
                     position: "top",
                     children: (0, i.jsx)(d.K0, {
                         icon: d.V0_,
                         onClick: Z,
-                        disabled: T <= N,
+                        disabled: T <= v,
                         variant: "overlay-secondary",
                         size: "sm",
                         "aria-label": g.intl.string(g.t.M6Cmwy)
                     })
                 }), (0, i.jsx)(d.Apm, {
-                    minValue: N,
-                    maxValue: v,
+                    minValue: v,
+                    maxValue: N,
                     initialValue: T,
                     value: T,
                     asValueChanges: ee,
@@ -167,7 +167,7 @@ let x = l.memo(function(e) {
                 children: (0, i.jsx)(d.K0, {
                     icon: d.r1u,
                     onClick: X,
-                    disabled: T >= v,
+                    disabled: T >= N,
                     variant: "overlay-secondary",
                     size: "sm",
                     "aria-label": g.intl.string(g.t["9hMafy"])

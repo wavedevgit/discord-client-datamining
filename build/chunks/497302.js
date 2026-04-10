@@ -3,8 +3,8 @@ n.d(t, {
     A: () => I
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(311907),
+    r = n(64700),
+    a = n(311907),
     l = n(397927),
     s = n(47167),
     o = n(713654),
@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(435328),
     u = n(563312),
     A = n(826383),
-    _ = n(9448),
-    h = n(974930),
+    h = n(9448),
+    _ = n(974930),
     m = n(734057),
     g = n(71393),
     p = n(985018),
@@ -22,11 +22,11 @@ var i = n(627968),
 function I(e) {
     let {
         eventId: t
-    } = e, n = (0, r.bG)([d.Ay], () => d.Ay.getGuildScheduledEvent(t), [t]), I = (0, r.bG)([g.A], () => g.A.getGuild(n?.guild_id), [n]), f = (0, r.bG)([m.A], () => m.A.getChannel(n?.channel_id), [n]), C = (0, u.nh)(t, null), T = null != n && (0, d.Fd)(n), N = null != n ? (0, h.G3)(n) : null, S = (0, A.A)(n?.guild_id, n?.id, N), x = C?.startTime.toISOString(), {
+    } = e, n = (0, a.bG)([d.Ay], () => d.Ay.getGuildScheduledEvent(t), [t]), I = (0, a.bG)([g.A], () => g.A.getGuild(n?.guild_id), [n]), f = (0, a.bG)([m.A], () => m.A.getChannel(n?.channel_id), [n]), C = (0, u.nh)(t, null), T = null != n && (0, d.Fd)(n), N = null != n ? (0, _.G3)(n) : null, S = (0, A.A)(n?.guild_id, n?.id, N), x = C?.startTime.toISOString(), {
         startDateTimeString: v
-    } = a.useMemo(() => T ? {
+    } = r.useMemo(() => T ? {
         startDateTimeString: p.intl.string(p.t.TxqPQR)
-    } : (0, h.CC)(x ?? new Date().toISOString()), [x, T]), b = (0, s.Ay)(f), y = null != n ? (0, _.oF)(n) : void 0, O = b ?? y, L = null != f ? (0, o.gU)(f) : null;
+    } : (0, _.CC)(x ?? new Date().toISOString()), [x, T]), b = (0, s.Ay)(f), y = null != n ? (0, h.oF)(n) : void 0, O = b ?? y, L = null != f ? (0, o.gU)(f) : null;
     if (null == n || null == I) return null;
     let R = null != n.description && n.description.length > 0;
     return (0, i.jsxs)("div", {

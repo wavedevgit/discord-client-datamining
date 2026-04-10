@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(554146),
-    a = n(397927),
-    r = n(688810),
+    r = n(397927),
+    a = n(688810),
     o = n(932001),
     d = n(259065),
     c = n(84540),
@@ -27,7 +27,7 @@ function f(e) {
         className: f
     } = e, S = m.Ay.canUsePremiumProfileCustomization(t), {
         analyticsLocations: E
-    } = (0, r.Ay)(), {
+    } = (0, a.Ay)(), {
         userDisplayNameStyles: b,
         guildDisplayNameStyles: C,
         pendingDisplayNameStyles: v,
@@ -49,7 +49,7 @@ function f(e) {
     }, [n]), P = void 0 !== v || (null != n ? null != C : null != b);
     return (0, i.jsx)(_.A, {
         title: h.intl.string(p.default["86GtGH"]),
-        titleIcon: y ? (0, i.jsx)(a.LpS, {
+        titleIcon: y ? (0, i.jsx)(r.LpS, {
             text: h.intl.string(h.t.y2b7CA),
             className: T.A
         }) : void 0,
@@ -58,17 +58,17 @@ function f(e) {
         errors: N,
         children: (0, i.jsxs)("div", {
             className: T.N,
-            children: [(0, i.jsx)(a.Button, {
+            children: [(0, i.jsx)(r.Button, {
                 variant: "primary",
                 size: "sm",
                 text: h.intl.string(p.default.vJqrIg),
                 onClick: O
-            }), null == n && P && (0, i.jsx)(a.Button, {
+            }), null == n && P && (0, i.jsx)(r.Button, {
                 variant: "secondary",
                 size: "sm",
                 text: h.intl.string(p.default.ymq8WQ),
                 onClick: R
-            }), null != n && null != (void 0 !== v ? v : C) && (0, i.jsx)(a.Button, {
+            }), null != n && null != (void 0 !== v ? v : C) && (0, i.jsx)(r.Button, {
                 variant: "secondary",
                 size: "sm",
                 text: h.intl.string(p.default["j/KRxc"]),

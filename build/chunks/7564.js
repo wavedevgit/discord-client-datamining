@@ -1,7 +1,7 @@
 /** chunk id: 7564 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => f
 });
 var r = n(627968),
     i = n(64700),
@@ -13,10 +13,10 @@ var r = n(627968),
     c = n(975571),
     d = n(228093),
     h = n(652215),
-    m = n(985018),
-    p = n(901875);
+    p = n(985018),
+    _ = n(901875);
 
-function f(e) {
+function m(e) {
     let {
         onClose: t
     } = e;
@@ -29,36 +29,36 @@ function f(e) {
         children: (0, r.jsxs)(l.rXV, {
             children: [(0, r.jsx)(l.Drp, {
                 id: "changelog",
-                label: m.intl.string(m.t.LRmNAl),
+                label: p.intl.string(p.t.LRmNAl),
                 action: () => (0, u.j)(!0)
             }), (0, r.jsx)(l.Drp, {
                 id: "acknowledgements",
-                label: m.intl.string(m.t["0nUKy3"]),
+                label: p.intl.string(p.t["0nUKy3"]),
                 action: () => (0, o.A)(h.X7G.ACKNOWLEDGEMENTS)
             }), (0, r.jsx)(l.Drp, {
                 id: "support",
-                label: m.intl.string(m.t["Yl/Riu"]),
+                label: p.intl.string(p.t["Yl/Riu"]),
                 action: () => (0, o.A)(c.C)
             })]
         })
     })
 }
 
-function _() {
+function f() {
     let e = i.useRef(null);
     return (0, r.jsxs)("div", {
         children: [(0, r.jsx)(d.A, {}), (0, r.jsxs)("div", {
-            className: p.yJ,
+            className: _.yJ,
             children: [(0, r.jsx)(l.MzZ, {
                 href: h.X7G.PRIVACY,
                 children: (0, r.jsx)(l.Text, {
                     tag: "span",
                     variant: "text-xxs/normal",
                     color: "currentColor",
-                    children: m.intl.string(m.t["Knf/f/"])
+                    children: p.intl.string(p.t["Knf/f/"])
                 })
             }), (0, r.jsx)("span", {
-                className: p.xE,
+                className: _.xE,
                 "aria-hidden": "true",
                 children: "•"
             }), (0, r.jsx)(l.MzZ, {
@@ -67,10 +67,10 @@ function _() {
                     tag: "span",
                     variant: "text-xxs/normal",
                     color: "currentColor",
-                    children: m.intl.string(m.t.uFSTGq)
+                    children: p.intl.string(p.t.uFSTGq)
                 })
             }), (0, r.jsx)("span", {
-                className: p.xE,
+                className: _.xE,
                 "aria-hidden": "true",
                 children: "•"
             }), (0, r.jsx)(l.YNO, {
@@ -83,7 +83,7 @@ function _() {
                     let {
                         closePopout: t
                     } = e;
-                    return (0, r.jsx)(f, {
+                    return (0, r.jsx)(m, {
                         onClose: t
                     })
                 },
@@ -91,14 +91,14 @@ function _() {
                     ...t,
                     ref: e,
                     useDefaultUnderlineStyles: !1,
-                    className: s()(p.Mj, {
-                        [p.vu]: n.isShown
+                    className: s()(_.Mj, {
+                        [_.vu]: n.isShown
                     }),
                     children: (0, r.jsx)(l.Text, {
                         tag: "span",
                         variant: "text-xxs/normal",
                         color: "currentColor",
-                        children: m.intl.string(m.t["UKOtz+"])
+                        children: p.intl.string(p.t["UKOtz+"])
                     })
                 })
             })]

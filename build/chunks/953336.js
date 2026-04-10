@@ -1,14 +1,14 @@
 /** chunk id: 953336 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(627968);
 n(64700);
 var s = n(990078),
     l = n(611371),
-    a = n(985018);
-let r = () => (0, i.jsx)(s.m, {
+    r = n(985018);
+let a = () => (0, i.jsx)(s.m, {
     asContainer: !0,
-    text: a.intl.string(a.t["/fgfWh"]),
+    text: r.intl.string(r.t["/fgfWh"]),
     children: (0, i.jsx)(l.A, {})
 })

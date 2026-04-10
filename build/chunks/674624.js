@@ -30,8 +30,8 @@ var i, r = n(627968),
     I = n(64514),
     T = n(121818),
     y = n(419455),
-    S = n(288604),
-    P = n(163635),
+    P = n(288604),
+    S = n(163635),
     M = n(345362),
     O = n(509442),
     D = ((i = {}).BEST_OF_NITRO = "bestof", i.APPEARANCE_STYLE = "appearance", i.UPGRADES = "upgrades", i.VIP_EXTRAS = "vip", i);
@@ -172,7 +172,7 @@ function U() {
             description: j.intl.string(j.t["1uPk1Z"]),
             ctaText: j.intl.string(j.t.jVcuVY),
             onCtaClick: B,
-            primaryAsset: S.A,
+            primaryAsset: P.A,
             categories: ["appearance"]
         }, {
             id: C.ENTRANCE_SOUNDS_CARD_ID,
@@ -180,7 +180,7 @@ function U() {
             description: j.intl.string(j.t.liQKJR),
             ctaText: j.intl.string(j.t.jVcuVY),
             onCtaClick: G,
-            primaryAsset: P.A,
+            primaryAsset: S.A,
             categories: ["appearance"]
         }, {
             id: C.DISPLAY_NAME_STYLES_CARD_ID,

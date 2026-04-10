@@ -1,10 +1,10 @@
 /** chunk id: 416082 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => _
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(311907),
+    r = n(64700),
+    a = n(311907),
     l = n(397927),
     s = n(747550),
     o = n(282026),
@@ -12,11 +12,11 @@ var i = n(627968),
     c = n(324580),
     u = n(985018),
     A = n(456057),
-    _ = n(842503);
-let h = function(e) {
+    h = n(842503);
+let _ = function(e) {
     let {
         loadId: t
-    } = e, n = o.A.useField("categoryId"), h = (0, r.bG)([d.A], () => d.A.getCategoryName(n)), m = a.useCallback(() => {
+    } = e, n = o.A.useField("categoryId"), _ = (0, a.bG)([d.A], () => d.A.getCategoryName(n)), m = r.useCallback(() => {
         o.A.setState({
             categoryId: c.Iq
         }), s.A.loadCategoryResults({
@@ -26,7 +26,7 @@ let h = function(e) {
             languageCode: o.A.getField("languageCode")
         })
     }, [t]), g = n === c.Iq ? u.intl.string(u.t.Ivw1Is) : u.intl.formatToPlainString(u.t["+1WAFb"], {
-        categoryName: h
+        categoryName: _
     }), p = n === c.Iq ? u.intl.string(u.t.aXvEjd) : u.intl.format(u.t.XLioqn, {
         onClick: m
     });
@@ -34,7 +34,7 @@ let h = function(e) {
         className: A.kL,
         children: [(0, i.jsx)("img", {
             alt: "",
-            src: _,
+            src: h,
             className: A.Sl
         }), (0, i.jsx)(l.Heading, {
             variant: "heading-xl/semibold",

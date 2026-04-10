@@ -1,77 +1,77 @@
 /** chunk id: 66004 params = (module,exports,require) **/
-n.d(e, {
-    A: () => m
+n.d(t, {
+    A: () => A
 });
 var i = n(627968),
     l = n(64700),
-    r = n(835245),
+    a = n(835245),
     s = n(311907),
-    a = n(73153),
+    r = n(73153),
     o = n(775602),
-    u = n(58149),
+    c = n(58149),
     d = n(667050),
-    c = n(407781),
+    u = n(407781),
     h = n(652215),
-    A = n(384187);
+    m = n(384187);
 
-function m(t) {
+function A(e) {
     let {
-        channelId: e,
+        channelId: t,
         guildId: n,
-        userId: m,
-        containerDimensions: p
-    } = t, g = (0, s.bG)([o.A], () => o.A.useReducedMotion), [f, E] = l.useState([]), T = f.length < 50;
+        userId: A,
+        containerDimensions: g
+    } = e, p = (0, s.bG)([o.A], () => o.A.useReducedMotion), [_, f] = l.useState([]), E = _.length < 50;
     l.useEffect(() => {
-        function t(t) {
+        function e(e) {
             let {
                 channelId: i,
                 userId: l,
                 emoji: s,
-                animationType: a,
+                animationType: r,
                 animationId: o
-            } = t;
-            if (null != m && m !== l) return;
-            let c = null != s && null != a && null != o;
-            if (i === e && !g && T && c) {
-                let t = (0, d.Br)(s),
+            } = e;
+            if (null != A && A !== l) return;
+            let u = null != s && null != r && null != o;
+            if (i === t && !p && E && u) {
+                let e = (0, d.Br)(s),
                     i = null != s.id && !s.animated,
-                    c = {
-                        id: (0, r.A)(),
-                        animationType: a,
+                    u = {
+                        id: (0, a.A)(),
+                        animationType: r,
                         animationId: o,
                         shouldResize: i,
-                        url: t,
+                        url: e,
                         userId: l
                     };
-                E(t => [...t, c]), u.Ay.trackWithMetadata(h.HAw.VOICE_CHANNEL_EFFECT_VIEWED, {
-                    channel_id: e,
+                f(e => [...e, u]), c.Ay.trackWithMetadata(h.HAw.VOICE_CHANNEL_EFFECT_VIEWED, {
+                    channel_id: t,
                     guild_id: n
                 })
             }
         }
-        return a.h.subscribe("VOICE_CHANNEL_EFFECT_SEND", t), () => {
-            a.h.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", t)
+        return r.h.subscribe("VOICE_CHANNEL_EFFECT_SEND", e), () => {
+            r.h.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", e)
         }
-    }, [e, n, m, g, T]);
-    let C = l.useCallback(t => {
-        E(e => {
-            let n = [...e],
-                i = n.findIndex(e => e.id === t);
+    }, [t, n, A, p, E]);
+    let C = l.useCallback(e => {
+        f(t => {
+            let n = [...t],
+                i = n.findIndex(t => t.id === e);
             return n.splice(i, 1), n
         })
     }, []);
-    return g ? null : (0, i.jsx)("div", {
-        className: A.Y,
+    return p ? null : (0, i.jsx)("div", {
+        className: m.Y,
         style: {
-            width: p.width
+            width: g.width
         },
         children: (0, i.jsx)("div", {
-            className: A.z,
-            children: f.map(t => (0, i.jsx)(c.A, {
-                containerDimensions: p,
-                effect: t,
+            className: m.z,
+            children: _.map(e => (0, i.jsx)(u.A, {
+                containerDimensions: g,
+                effect: e,
                 onComplete: C
-            }, t.id))
+            }, e.id))
         })
     })
 }

@@ -1,9 +1,9 @@
 /** chunk id: 804630 params = (module,exports,require) **/
-i.d(e, {
-    Gf: () => T,
-    Tf: () => N,
+i.d(t, {
+    Gf: () => N,
+    Tf: () => v,
     _Q: () => I,
-    vP: () => S
+    vP: () => C
 });
 var n = i(627968);
 i(64700);
@@ -11,169 +11,169 @@ var a = i(503698),
     l = i.n(a),
     s = i(311907),
     r = i(990078),
-    d = i(397927),
+    c = i(397927),
     o = i(672979),
-    c = i(90644),
+    d = i(90644),
     u = i(432166),
     p = i(587895),
     m = i(769015),
-    A = i(172710),
+    _ = i(172710),
     h = i(763758),
-    E = i(139675),
-    g = i(486020),
-    _ = i(652215),
-    f = i(985018),
-    v = i(257081);
+    g = i(139675),
+    A = i(486020),
+    f = i(652215),
+    x = i(985018),
+    b = i(257081);
 
-function I(t) {
+function I(e) {
     return ({
-        [_.$pd.PLAYING]: f.intl.string(f.t.J4MQFX),
-        [_.$pd.COMPETING]: f.intl.string(f.t.J4MQFX),
-        [_.$pd.WATCHING]: f.intl.string(f.t.xeqvTg),
-        [_.$pd.LISTENING]: f.intl.string(f.t.ep6av7)
-    })[t] ?? f.intl.string(f.t["1+boPi"])
+        [f.$pd.PLAYING]: x.intl.string(x.t.J4MQFX),
+        [f.$pd.COMPETING]: x.intl.string(x.t.J4MQFX),
+        [f.$pd.WATCHING]: x.intl.string(x.t.xeqvTg),
+        [f.$pd.LISTENING]: x.intl.string(x.t.ep6av7)
+    })[e] ?? x.intl.string(x.t["1+boPi"])
 }
 
-function T(t, e, i) {
+function N(e, t, i) {
     let n;
-    return null != e && (0, c.A)(e) ? {
+    return null != t && (0, d.A)(t) ? {
         isSpotify: !0,
-        name: e.details ?? e.name ?? "",
-        type: _.$pd.LISTENING,
-        assets: e.assets ?? void 0,
-        applicationId: e.application_id,
-        state: e.state ?? void 0,
-        syncId: e.sync_id ?? void 0,
-        timestamps: e.timestamps ?? void 0,
-        rawActivity: e,
-        userId: t
-    } : null != i ? (n = e?.type === _.$pd.WATCHING ? _.$pd.WATCHING : _.$pd.PLAYING, {
+        name: t.details ?? t.name ?? "",
+        type: f.$pd.LISTENING,
+        assets: t.assets ?? void 0,
+        applicationId: t.application_id,
+        state: t.state ?? void 0,
+        syncId: t.sync_id ?? void 0,
+        timestamps: t.timestamps ?? void 0,
+        rawActivity: t,
+        userId: e
+    } : null != i ? (n = t?.type === f.$pd.WATCHING ? f.$pd.WATCHING : f.$pd.PLAYING, {
         isSpotify: !1,
         isEmbedded: !0,
         isGame: !1,
         name: i.application.name,
         type: n,
         applicationId: i.application.id,
-        embeddedIconUrl: g.Ay.getApplicationIconURL({
+        embeddedIconUrl: A.Ay.getApplicationIconURL({
             id: i.application.id,
             icon: i.application.icon
         }) ?? void 0,
         embeddedApplicationName: i.application.name,
-        assets: e?.assets ?? void 0,
-        details: e?.details ?? void 0,
-        state: e?.state ?? void 0,
-        timestamps: e?.timestamps ?? void 0,
-        userId: t
+        assets: t?.assets ?? void 0,
+        details: t?.details ?? void 0,
+        state: t?.state ?? void 0,
+        timestamps: t?.timestamps ?? void 0,
+        userId: e
     }) : {
         isSpotify: !1,
         isEmbedded: !1,
-        isGame: (0, o.A)(e),
-        name: e?.name ?? "",
-        type: e?.type ?? _.$pd.PLAYING,
-        applicationId: e?.application_id,
+        isGame: (0, o.A)(t),
+        name: t?.name ?? "",
+        type: t?.type ?? f.$pd.PLAYING,
+        applicationId: t?.application_id,
         embeddedIconUrl: void 0,
         embeddedApplicationName: void 0,
-        assets: e?.assets ?? void 0,
-        details: e?.details ?? void 0,
-        state: e?.state ?? void 0,
-        timestamps: e?.timestamps ?? void 0,
-        userId: t
+        assets: t?.assets ?? void 0,
+        details: t?.details ?? void 0,
+        state: t?.state ?? void 0,
+        timestamps: t?.timestamps ?? void 0,
+        userId: e
     }
 }
 
-function S(t) {
+function C(e) {
     let {
-        resolvedActivity: e,
+        resolvedActivity: t,
         showHeader: i = !0
-    } = t, {
+    } = e, {
         assets: a,
         applicationId: s,
         name: o,
-        state: c,
+        state: d,
         syncId: p,
         timestamps: m,
-        userId: g,
-        rawActivity: _
-    } = e, f = a?.large_image ?? a?.small_image;
+        userId: A,
+        rawActivity: f
+    } = t, x = a?.large_image ?? a?.small_image;
     return (0, n.jsxs)("div", {
-        className: v.ec,
+        className: b.ec,
         children: [i ? (0, n.jsx)("div", {
-            className: v.N1,
-            children: (0, n.jsx)(d.Heading, {
+            className: b.N1,
+            children: (0, n.jsx)(c.Heading, {
                 variant: "text-xs/medium",
                 color: "text-muted",
-                children: I(e.type)
+                children: I(t.type)
             })
         }) : null, (0, n.jsxs)("div", {
-            className: v.Wh,
-            children: [null != f ? (0, n.jsx)(r.m, {
+            className: b.Wh,
+            children: [null != x ? (0, n.jsx)(r.m, {
                 text: a?.large_text ?? null,
                 position: "top",
-                children: (0, n.jsx)(d.DUT, {
-                    onClick: () => (0, A.QX)(_, g),
-                    className: v.nf,
+                children: (0, n.jsx)(c.DUT, {
+                    onClick: () => (0, _.QX)(f, A),
+                    className: b.nf,
                     children: (0, n.jsx)("img", {
                         alt: a?.large_text ?? "",
-                        src: (0, E.uD)(s, f, [128, 128]),
-                        className: v.Sl
+                        src: (0, g.uD)(s, x, [128, 128]),
+                        className: b.Sl
                     })
                 })
             }) : null, (0, n.jsxs)("div", {
-                className: v.wt,
-                children: [null != o && o.length > 0 && (0, n.jsx)(d.Heading, {
+                className: b.wt,
+                children: [null != o && o.length > 0 && (0, n.jsx)(c.Heading, {
                     variant: "heading-sm/medium",
                     color: "text-strong",
                     lineClamp: 1,
-                    children: null != p ? (0, n.jsx)(d.DUT, {
-                        onClick: () => (0, A.Mp)(_),
-                        className: v.nf,
+                    children: null != p ? (0, n.jsx)(c.DUT, {
+                        onClick: () => (0, _.Mp)(f),
+                        className: b.nf,
                         children: o
                     }) : o
-                }), null != c && c.length > 0 && (0, n.jsx)("div", {
-                    className: l()(v.QJ, v.p9, v.Mo),
+                }), null != d && d.length > 0 && (0, n.jsx)("div", {
+                    className: l()(b.QJ, b.p9, b.Mo),
                     children: (0, n.jsx)(h.A, {
-                        artists: c,
+                        artists: d,
                         canOpen: null != p,
-                        linkClassName: v.QJ,
-                        onOpenSpotifyArtist: t => (0, A.mN)(_, g, t)
+                        linkClassName: b.QJ,
+                        onOpenSpotifyArtist: e => (0, _.mN)(f, A, e)
                     })
                 })]
             })]
         }), m?.start != null && m?.end != null && (0, n.jsx)(u.A, {
             start: m.start,
             end: m.end,
-            className: v.Jq,
+            className: b.Jq,
             themed: !0,
             singleLine: !0
         })]
     })
 }
 
-function N(t) {
+function v(e) {
     let {
-        resolvedActivity: e
-    } = t, i = (0, s.bG)([p.A], () => null != e.applicationId ? p.A.getApplication(e.applicationId) : null, [e.applicationId]), {
+        resolvedActivity: t
+    } = e, i = (0, s.bG)([p.A], () => null != t.applicationId ? p.A.getApplication(t.applicationId) : null, [t.applicationId]), {
         assets: a,
         isGame: l,
-        isEmbedded: d
-    } = e;
-    if (null == a || null == a.large_image && null == a.small_image) return d && null != e.embeddedIconUrl ? (0, n.jsx)(r.m, {
-        text: e.embeddedApplicationName,
+        isEmbedded: c
+    } = t;
+    if (null == a || null == a.large_image && null == a.small_image) return c && null != t.embeddedIconUrl ? (0, n.jsx)(r.m, {
+        text: t.embeddedApplicationName,
         position: "top",
         asContainer: !0,
         children: (0, n.jsx)("img", {
-            alt: e.embeddedApplicationName,
-            src: e.embeddedIconUrl,
-            className: v.Sl
+            alt: t.embeddedApplicationName,
+            src: t.embeddedIconUrl,
+            className: b.Sl
         })
     }) : l ? (0, n.jsx)(m.A, {
         game: i,
-        className: v.Sl
+        className: b.Sl
     }) : null;
     let o = a.large_image ?? a.small_image;
     return null != o ? (0, n.jsx)("img", {
         alt: a.large_text ?? "",
-        src: (0, E.uD)(e.applicationId, o, [128, 128]),
-        className: v.Sl
+        src: (0, g.uD)(t.applicationId, o, [128, 128]),
+        className: b.Sl
     }) : null
 }

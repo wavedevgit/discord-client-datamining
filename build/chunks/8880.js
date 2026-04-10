@@ -1,6 +1,6 @@
 /** chunk id: 8880 params = (module,exports,require) **/
-i.d(e, {
-    A: () => d
+i.d(t, {
+    A: () => c
 });
 var n = i(311907),
     a = i(73153);
@@ -13,17 +13,17 @@ class r extends n.Ay.DeviceSettingsStore {
     static displayName = "TTSStore";
     static persistKey = "TTSStore";
     static migrations = [];
-    initialize(t) {
+    initialize(e) {
         s = {
             ...l,
-            ...t ?? null
+            ...e ?? null
         }
     }
-    isSpeakingMessage(t, e) {
+    isSpeakingMessage(e, t) {
         let {
             currentMessage: i
         } = s;
-        return null !== i && i.channelId === t && i.messageId === e
+        return null !== i && i.channelId === e && i.messageId === t
     }
     get currentMessage() {
         return s.currentMessage
@@ -35,16 +35,16 @@ class r extends n.Ay.DeviceSettingsStore {
         return s
     }
 }
-let d = new r(a.h, __OVERLAY__ ? {} : {
-    SPEAKING_MESSAGE: function(t) {
+let c = new r(a.h, __OVERLAY__ ? {} : {
+    SPEAKING_MESSAGE: function(e) {
         let {
-            messageId: e,
+            messageId: t,
             channelId: i
-        } = t;
+        } = e;
         s = {
             ...s,
             currentMessage: {
-                messageId: e,
+                messageId: t,
                 channelId: i
             }
         }
@@ -55,10 +55,10 @@ let d = new r(a.h, __OVERLAY__ ? {} : {
             currentMessage: null
         }
     },
-    SET_TTS_SPEECH_RATE: function(t) {
+    SET_TTS_SPEECH_RATE: function(e) {
         s = {
             ...s,
-            speechRate: t.speechRate
+            speechRate: e.speechRate
         }
     }
 })

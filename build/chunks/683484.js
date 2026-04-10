@@ -17,8 +17,8 @@ var i = n(627968),
     A = n(95701),
     f = n(470710),
     g = n(734057),
-    _ = n(71393),
-    m = n(994500),
+    m = n(71393),
+    _ = n(994500),
     x = n(309010),
     E = n(745891),
     y = n(855790),
@@ -159,7 +159,7 @@ function I(e) {
     } = e, s = (0, r.bG)([x.A, g.A], () => {
         let e = x.A.getVoiceChannelId();
         return g.A.getChannel(e)
-    }), l = (0, r.bG)([_.A], () => _.A.getGuild(t.guild_id)), a = (0, r.bG)([f.A], () => f.A.isCallActive(t.id)), o = (0, u.Ay)(t), d = (0, r.bG)([m.A], () => !!t.isDM() && null != t.getRecipientId() && m.A.isBlocked(t.getRecipientId()));
+    }), l = (0, r.bG)([m.A], () => m.A.getGuild(t.guild_id)), a = (0, r.bG)([f.A], () => f.A.isCallActive(t.id)), o = (0, u.Ay)(t), d = (0, r.bG)([_.A], () => !!t.isDM() && null != t.getRecipientId() && _.A.isBlocked(t.getRecipientId()));
     return (0, i.jsx)(C, {
         channel: t,
         channelName: o,

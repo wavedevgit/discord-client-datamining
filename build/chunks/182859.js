@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(732955),
+    r = n.n(l),
+    a = n(732955),
     o = n(397927),
     d = n(688810),
     c = n(893598),
@@ -40,7 +40,7 @@ function x(e) {
         })
     }, [A, T, t, h]);
     return "member" === l ? (0, i.jsxs)(o.DUT, {
-        className: a()(g.iR, x),
+        className: r()(g.iR, x),
         onClick: f,
         "aria-label": m.intl.string(u.default["103aY+"]),
         children: [(0, i.jsx)("img", {
@@ -64,8 +64,8 @@ function x(e) {
     }) : (0, i.jsxs)("div", {
         className: g.kL,
         children: [(0, i.jsx)("div", {
-            className: a()(g.X8, "theme-dark"),
-            children: (0, i.jsx)(r.K0, {
+            className: r()(g.X8, "theme-dark"),
+            children: (0, i.jsx)(a.K0, {
                 variant: "icon-only",
                 size: "md",
                 "aria-label": m.intl.string(m.t.WAI6xu),

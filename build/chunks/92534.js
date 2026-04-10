@@ -3,8 +3,8 @@ n.d(t, {
     B: () => p
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(308368),
+    r = n(64700),
+    a = n(308368),
     l = n(308528),
     s = n(442433),
     o = n(49229),
@@ -12,14 +12,14 @@ var i = n(627968),
     c = n(428249),
     u = n(67103),
     A = n(657331),
-    _ = n(734057),
-    h = n(652215),
+    h = n(734057),
+    _ = n(652215),
     m = n(381941),
     g = n(985018);
 
 function p(e) {
     return {
-        handlePrimaryAction: a.useCallback(t => {
+        handlePrimaryAction: r.useCallback(t => {
             switch (t.type) {
                 case u.c.OPEN_DIRECT_MESSAGE:
                     if (null == t.userId) return;
@@ -80,25 +80,25 @@ function p(e) {
                         userId: t.userId,
                         guildId: t.guildId ?? void 0,
                         channelId: t.channelId,
-                        appContext: h.BRT.APP
+                        appContext: _.BRT.APP
                     }), e();
                     break;
                 case u.c.SEND_ACTIVITY_INVITE:
                     if (null == t.userId || null == t.activity) return;
-                    r.A.sendActivityInviteUser({
-                        type: h.xL.JOIN,
+                    a.A.sendActivityInviteUser({
+                        type: _.xL.JOIN,
                         userId: t.userId,
                         activity: t.activity,
-                        location: h.ThZ.USER_ACTIVITY_ACTIONS
+                        location: _.ThZ.USER_ACTIVITY_ACTIONS
                     });
                     break;
                 case u.c.ASK_TO_JOIN:
                     if (null == t.userId || null == t.activity) return;
-                    r.A.sendActivityInviteUser({
-                        type: h.xL.JOIN_REQUEST,
+                    a.A.sendActivityInviteUser({
+                        type: _.xL.JOIN_REQUEST,
                         userId: t.userId,
                         activity: t.activity,
-                        location: h.ThZ.USER_ACTIVITY_ACTIONS
+                        location: _.ThZ.USER_ACTIVITY_ACTIONS
                     });
                     break;
                 case u.c.SEND_GAME_INVITE_MESSAGE: {
@@ -109,7 +109,7 @@ function p(e) {
                         try {
                             let t = await l.A.getOrEnsurePrivateChannel(n);
                             d.default.selectPrivateChannel(t);
-                            let i = _.A.getChannel(t);
+                            let i = h.A.getChannel(t);
                             if (null == i) return;
                             !0 === e.extra.fake_inventory_item ? await (0, c.J)({
                                 channel: i,
@@ -140,21 +140,21 @@ function p(e) {
                     t.type
             }
         }, [e]),
-        handleContextMenu: a.useCallback(e => {
+        handleContextMenu: r.useCallback(e => {
             switch (e.type) {
                 case u.K.FRIEND_ROW:
                     if (null == e.user) return;
                     (0, s.L3)(e.event, async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("97262"), n.e("32418"), n.e("54631")]).then(n.bind(n, 668569));
+                        } = await Promise.all([n.e("97262"), n.e("32418"), n.e("77012")]).then(n.bind(n, 668569));
                         return n => (0, i.jsx)(t, {
                             ...n,
                             user: e.user,
-                            appContext: h.BRT.APP
+                            appContext: _.BRT.APP
                         })
                     }, {
-                        context: h.BRT.APP
+                        context: _.BRT.APP
                     });
                     break;
                 case u.K.FRIEND_GROUP:
@@ -228,14 +228,14 @@ function p(e) {
                     let t = e.guild?.id ?? null;
                     (0, s.L3)(e.event, async () => {
                         let {
-                            default: a
-                        } = await Promise.all([n.e("97262"), n.e("32418"), n.e("54631")]).then(n.bind(n, 668569));
-                        return n => (0, i.jsx)(a, {
+                            default: r
+                        } = await Promise.all([n.e("97262"), n.e("32418"), n.e("77012")]).then(n.bind(n, 668569));
+                        return n => (0, i.jsx)(r, {
                             ...n,
                             user: e.user,
                             guildId: t ?? void 0,
                             channelId: e.channelId,
-                            appContext: h.BRT.APP
+                            appContext: _.BRT.APP
                         })
                     });
                     break

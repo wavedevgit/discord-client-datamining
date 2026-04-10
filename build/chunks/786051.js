@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(607399),
-    a = n(311907),
+    a = n(607399),
+    s = n(311907),
     r = n(397927),
     o = n(576470),
     c = n(761640),
@@ -20,25 +20,25 @@ let u = function(e) {
         buttonSubmitting: A,
         onButtonClick: g,
         imageSrc: p,
-        animationSrc: f,
-        secondaryButtonText: _,
+        animationSrc: _,
+        secondaryButtonText: f,
         onSecondaryButtonClick: E,
-        children: x,
-        useReducedMotion: C = !1,
+        children: C,
+        useReducedMotion: x = !1,
         buttonVariant: S
-    } = e, I = (0, a.bG)([c.Ay], () => c.Ay.getState().isMembersOpen);
-    if (s.Fr && I) return null;
+    } = e, I = (0, s.bG)([c.Ay], () => c.Ay.getState().isMembersOpen);
+    if (a.Fr && I) return null;
     if (null == t) return (0, i.jsx)(i.Fragment, {
-        children: l.Children.only(x)
+        children: l.Children.only(C)
     });
     let T = null;
     return null != p ? T = (0, i.jsx)("img", {
         alt: "",
         src: p,
         className: d.Sl
-    }) : null != f && (T = (0, i.jsx)(r.akl, {
-        importData: f,
-        shouldAnimate: !C,
+    }) : null != _ && (T = (0, i.jsx)(r.akl, {
+        importData: _,
+        shouldAnimate: !x,
         className: d.lY
     })), (0, i.jsxs)("div", {
         className: d.iE,
@@ -58,11 +58,11 @@ let u = function(e) {
             })]
         }), (0, i.jsxs)("div", {
             className: d.UD,
-            children: [null != _ && (0, i.jsx)("div", {
+            children: [null != f && (0, i.jsx)("div", {
                 className: d.x6,
                 children: (0, i.jsx)(r.QWc, {
                     textVariant: "text-sm/semibold",
-                    text: _,
+                    text: f,
                     onClick: E
                 })
             }), null != h && (0, i.jsx)("div", {

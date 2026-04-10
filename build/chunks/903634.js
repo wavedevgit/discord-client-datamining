@@ -6,10 +6,10 @@ n.d(t, {
 var i = n(311907),
     s = n(955572),
     l = n(775602),
-    a = n(419954),
-    r = n(780964),
+    r = n(419954),
+    a = n(780964),
     o = n(985018);
-let d = (0, a.Hn)(r.X.ROLE_STYLE, {
+let d = (0, r.Hn)(a.X.ROLE_STYLE, {
         useTitle: () => o.intl.string(o.t.uSOPWm),
         useSubtitle: () => o.intl.string(o.t.u7fFKS),
         useOptions: () => [{
@@ -28,7 +28,7 @@ let d = (0, a.Hn)(r.X.ROLE_STYLE, {
         useValue: () => (0, i.bG)([l.A], () => l.A.roleStyle),
         setValue: e => (0, s.IX)(e)
     }),
-    c = (0, a.Qx)(r.X.ROLE_STYLE, {
+    c = (0, r.Qx)(a.X.ROLE_STYLE, {
         useTitle: () => o.intl.string(o.t.uSOPWm),
         useSubtitle: () => o.intl.string(o.t["86hjzQ"]),
         useOptions: () => [{

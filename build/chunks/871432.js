@@ -1,10 +1,10 @@
 /** chunk id: 871432 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => _
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(311907),
+    r = n(64700),
+    a = n(311907),
     l = n(397927),
     s = n(73153),
     o = n(189252),
@@ -13,18 +13,18 @@ var i = n(627968),
     u = n(726079),
     A = n(985018);
 
-function _() {
-    let e = (0, r.bG)([d.A], () => d.A.getPendingCount() > 0);
-    return a.useEffect(() => {
+function h() {
+    let e = (0, a.bG)([d.A], () => d.A.getPendingCount() > 0);
+    return r.useEffect(() => {
         s.h.dispatch({
             type: "FRIENDS_LIST_POPOUT_MOUNTED"
         })
     }, []), (0, i.jsx)(u.l, {
         popoutPosition: "bottom",
         popoutAlign: "left",
-        children: (t, n, a, r) => (0, i.jsx)(o.A, {
-            ...a,
-            ref: r,
+        children: (t, n, r, a) => (0, i.jsx)(o.A, {
+            ...r,
+            ref: a,
             onClick: t,
             icon: l.$yI,
             tooltip: A.intl.string(A.t.TdEu5X),
@@ -34,9 +34,9 @@ function _() {
     })
 }
 
-function h() {
+function _() {
     let {
         hasFriendList: e
     } = (0, c.K)("friends-button");
-    return e ? (0, i.jsx)(_, {}) : null
+    return e ? (0, i.jsx)(h, {}) : null
 }

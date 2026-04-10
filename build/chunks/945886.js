@@ -4,21 +4,21 @@ n.d(t, {
 });
 var i = n(311907),
     s = n(73153),
-    r = n(661191),
-    l = n(734057);
+    l = n(661191),
+    r = n(734057);
 let a = {},
     d = a;
 
-function o() {
-    r.default.keys(d).forEach(e => {
-        null == l.A.getChannel(e) && delete d[e]
+function h() {
+    l.default.keys(d).forEach(e => {
+        null == r.A.getChannel(e) && delete d[e]
     })
 }
-class h extends i.Ay.PersistedStore {
+class o extends i.Ay.PersistedStore {
     static displayName = "CollapsedVoiceChannelStore";
     static persistKey = "collapsedChannels";
     initialize(e) {
-        this.waitFor(l.A), d = e ?? a
+        this.waitFor(r.A), d = e ?? a
     }
     getState() {
         return d
@@ -30,9 +30,9 @@ class h extends i.Ay.PersistedStore {
         return d[e] || !1
     }
 }
-let u = new h(s.h, {
-    CONNECTION_OPEN: o,
-    OVERLAY_INITIALIZE: o,
+let u = new o(s.h, {
+    CONNECTION_OPEN: h,
+    OVERLAY_INITIALIZE: h,
     CHANNEL_COLLAPSE: function(e) {
         let {
             channelId: t

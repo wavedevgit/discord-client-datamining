@@ -5,9 +5,9 @@ n.d(t, {
 var i = n(419954),
     s = n(780964),
     l = n(599743),
-    a = n(650432),
-    r = n(985018);
+    r = n(650432),
+    a = n(985018);
 let o = (0, i.zZ)(s.X.CHAT_INPUT, {
-    useTitle: () => r.intl.string(r.t.onqU6o),
-    buildLayout: () => [a.g, l.R]
+    useTitle: () => a.intl.string(a.t.onqU6o),
+    buildLayout: () => [r.g, l.R]
 })

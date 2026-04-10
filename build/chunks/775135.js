@@ -3,8 +3,8 @@ n.d(t, {
     A: () => P
 }), n(321073);
 var i = n(627968),
-    a = n(64700),
-    r = n(311907),
+    r = n(64700),
+    a = n(311907),
     l = n(554146),
     s = n(506774),
     o = n(108722),
@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(975076),
     u = n(67602),
     A = n(571616),
-    _ = n(541041),
-    h = n(289357),
+    h = n(541041),
+    _ = n(289357),
     m = n(264328),
     g = n(636781),
     p = n(935158),
@@ -37,26 +37,26 @@ let L = [];
 function R(e) {
     var t;
     let n, {
-            guild: h
+            guild: _
         } = e,
-        [g, p] = a.useState(s.w.get(v.hV) ?? 0),
-        E = (t = h.id, n = (0, c.I)(t), a.useMemo(() => {
+        [g, p] = r.useState(s.w.get(v.hV) ?? 0),
+        E = (t = _.id, n = (0, c.I)(t), r.useMemo(() => {
             let e = [];
             return n && e.push(l.M.GAME_CLAIM_COACHMARK), e.length > 0 ? e : L
         }, [n])),
-        [I, f] = (0, d.ww)(E, h.id, b.m.CHANNEL_NOTICES, !0),
+        [I, f] = (0, d.ww)(E, _.id, b.m.CHANNEL_NOTICES, !0),
         C = null != I,
-        N = (0, r.yK)(v.cJ, () => C ? [] : v.cA.filter(e => {
+        N = (0, a.yK)(v.cJ, () => C ? [] : v.cA.filter(e => {
             let {
                 dismissibleContentType: t,
                 store: n
             } = e;
-            return !0 === n?.channelNoticePredicate(h, g) && !y.has(t)
-        }).map(e => e.dismissibleContentType), [h, g, C]),
+            return !0 === n?.channelNoticePredicate(_, g) && !y.has(t)
+        }).map(e => e.dismissibleContentType), [_, g, C]),
         [x, R] = (0, d.kn)(N, b.m.CHANNEL_NOTICES),
         P = I ?? x,
         D = null != I ? f : R,
-        j = a.useCallback(() => {
+        j = r.useCallback(() => {
             var e;
             e = Date.now(), s.w.set(v.hV, e), p(e), D(b.i.UNKNOWN)
         }, [D]),
@@ -64,37 +64,37 @@ function R(e) {
             switch (P) {
                 case l.M.CHANNEL_NOTICE_HUBLINK:
                     return (0, i.jsx)(m.A, {
-                        guild: h,
+                        guild: _,
                         markAsDismissed: j
                     });
                 case l.M.CHANNEL_NOTICE_INVITE:
                     return (0, i.jsx)(T.A, {
-                        guild: h,
+                        guild: _,
                         markAsDismissed: j
                     });
                 case l.M.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION:
-                    return (0, i.jsx)(_.A, {
-                        guild: h,
+                    return (0, i.jsx)(h.A, {
+                        guild: _,
                         markAsDismissed: j
                     });
                 case l.M.CHANNEL_NOTICE_QUICKSWITCHER:
                     return (0, i.jsx)(S.A, {
-                        guild: h,
+                        guild: _,
                         markAsDismissed: j
                     });
                 case l.M.CHANNEL_NOTICE_GUILD_BANNER:
                     return (0, i.jsx)(A.A, {
-                        guild: h,
+                        guild: _,
                         markAsDismissed: j
                     });
                 case l.M.LINKED_ROLE_ADMIN_GUILD:
                     return (0, i.jsx)(o.A, {
-                        guild: h,
+                        guild: _,
                         markAsDismissed: () => D(b.i.UNKNOWN)
                     });
                 case l.M.GAME_CLAIM_COACHMARK:
                     return (0, i.jsx)(u.A, {
-                        guild: h,
+                        guild: _,
                         markAsDismissed: D
                     });
                 default:
@@ -120,7 +120,7 @@ let P = e => {
                 guild: t
             });
         case x.G.GUILD_LIVE_CHANNEL:
-            return (0, i.jsx)(h.Ay, {
+            return (0, i.jsx)(_.Ay, {
                 guild: t
             });
         case x.G.GUILD_MFA_WARNING:

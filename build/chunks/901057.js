@@ -1,23 +1,24 @@
 /** chunk id: 901057 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => f
 });
 var i = n(627968);
 n(64700);
-var l = n(311907),
-    a = n(990078),
-    r = n(397927),
-    s = n(367513),
-    o = n(956793),
-    c = n(47167),
+var r = n(311907),
+    s = n(990078),
+    l = n(397927),
+    a = n(367513),
+    c = n(956793),
+    o = n(47167),
     u = n(332173),
     d = n(976860),
     _ = n(95701),
-    A = n(734057),
-    m = n(71393),
-    E = n(994500),
-    T = n(287809),
-    I = n(147036),
+    E = n(734057),
+    A = n(71393),
+    m = n(994500),
+    I = n(287809),
+    T = n(147036),
     g = n(449054),
     N = n(652215);
 
@@ -26,37 +27,37 @@ function f(e) {
         channel: t,
         onClick: n,
         beforeTransition: f,
-        className: C,
-        openChatWithoutConnecting: h
-    } = e, p = (0, l.bG)([T.default, E.A], () => null == t ? "" : (0, c.m1)(t, T.default, E.A), [t]);
-    return (0, i.jsx)(a.m, {
+        className: p,
+        openChatWithoutConnecting: C
+    } = e, h = (0, r.bG)([I.default, m.A], () => null == t ? "" : (0, o.m1)(t, I.default, m.A), [t]);
+    return (0, i.jsx)(s.m, {
         "data-pending-richtooltip-migration": !0,
-        __unsupportedReactNodeAsText: p,
+        __unsupportedReactNodeAsText: h,
         position: "top",
         children: (0, i.jsx)(u.A, {
             role: "link",
-            className: C,
+            className: p,
             onClick: e => {
-                e.stopPropagation(), null != n ? n() : (null != f && f(), (0, r.s7G)(), function(e, t) {
+                e.stopPropagation(), null != n ? n() : (null != f && f(), (0, l.s7G)(), function(e, t) {
                     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
                     if (null == e || null == t) return;
-                    let i = m.A.getGuild(e);
+                    let i = A.A.getGuild(e);
                     if (i?.joinedAt == null) return g.Z2(e, {}, {
                         channelId: t
                     });
-                    let l = A.A.getChannel(t);
-                    if (null != l && (0, _.ay)(l.type)) {
+                    let r = E.A.getChannel(t);
+                    if (null != r && (0, _.ay)(r.type)) {
                         if (n) {
-                            s.A.updateChatOpen(l.id, !0), (0, d.pX)(N.BVt.CHANNEL(e, t));
+                            a.A.updateChatOpen(r.id, !0), (0, d.pX)(N.BVt.CHANNEL(e, t));
                             return
                         }
-                        o.default.selectVoiceChannel(l.id);
+                        c.default.selectVoiceChannel(r.id);
                         return
                     }(0, d.pX)(N.BVt.CHANNEL(e, t))
-                }(t?.guild_id, t?.id, h))
+                }(t?.guild_id, t?.id, C))
             },
-            iconType: (0, I.QG)(t),
-            children: p
+            iconType: (0, T.QG)(t),
+            children: h
         })
     })
 }

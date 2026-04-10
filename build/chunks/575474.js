@@ -1,10 +1,10 @@
 /** chunk id: 575474 params = (module,exports,require) **/
 n.d(t, {
-    g: () => h
+    g: () => _
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(554146),
+    r = n(64700),
+    a = n(554146),
     l = n(932001),
     s = n(866945),
     o = n(780964),
@@ -12,17 +12,17 @@ var i = n(627968),
     c = n(49999),
     u = n(835002),
     A = n(985018),
-    _ = n(945771);
+    h = n(945771);
 
-function h() {
-    let [e, t] = (0, l.kn)([r.M.RESTRICTED_ACCOUNTS_SETTING_NOTICE]);
-    return a.useMemo(() => e === r.M.RESTRICTED_ACCOUNTS_SETTING_NOTICE, [e]) ? (0, i.jsx)(s.e, {
+function _() {
+    let [e, t] = (0, l.kn)([a.M.RESTRICTED_ACCOUNTS_SETTING_NOTICE]);
+    return r.useMemo(() => e === a.M.RESTRICTED_ACCOUNTS_SETTING_NOTICE, [e]) ? (0, i.jsx)(s.e, {
         label: A.t.zqv4nV,
         labelHook: () => {
             (0, d.openUserSettings)(o.X.CONTENT_AND_SOCIAL_RESTRICTED_USERS_CATEGORY)
         },
         dismissNotice: () => t(c.i.USER_DISMISS),
-        className: _._,
+        className: h._,
         noticeType: u.YA.RESTRICTED_ACCOUNTS_SETTING_NOTICE
     }) : null
 }

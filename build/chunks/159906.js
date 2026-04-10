@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(284009),
     l = n.n(s),
-    a = n(397927),
-    r = n(793574),
+    r = n(397927),
+    a = n(793574),
     o = n(688810),
     d = n(97352),
     c = n(927578),
@@ -30,7 +30,7 @@ function h(e) {
             subscriptionId: n.id,
             renewal: !0,
             analyticsLocations: h,
-            analyticsLocation: r.A.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT
+            analyticsLocation: a.A.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT
         });
     if (null == p) return null;
     let T = s ? A.r : A.a,
@@ -61,7 +61,7 @@ function h(e) {
         paidURL: _.X7G.PAID_TERMS,
         privacyUrl: _.X7G.PRIVACY,
         intervalCount: E.intervalCount
-    })), (0, i.jsx)(a.Text, {
+    })), (0, i.jsx)(r.Text, {
         color: "text-muted",
         className: T,
         variant: "text-xs/normal",

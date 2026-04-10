@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(503698),
-    s = n.n(l),
-    a = n(695842);
+    a = n.n(l),
+    s = n(695842);
 
 function r(e) {
     let {
@@ -19,25 +19,25 @@ function r(e) {
         children: d
     } = e;
     return (0, i.jsxs)("div", {
-        className: s()(a.Ew, c),
+        className: a()(s.Ew, c),
         children: [(0, i.jsxs)("div", {
-            className: s()(a.lt, r),
+            className: a()(s.lt, r),
             children: [null != t && ("string" == typeof t ? (0, i.jsx)("img", {
                 src: t,
                 alt: "",
-                className: a.q3
+                className: s.q3
             }) : t), (0, i.jsxs)("div", {
-                className: a._M,
+                className: s._M,
                 children: [(0, i.jsx)("div", {
-                    className: s()(a.U_, o),
+                    className: a()(s.U_, o),
                     children: n
                 }), null != l && (0, i.jsx)("div", {
-                    className: a.mi,
+                    className: s.mi,
                     children: l
                 })]
             })]
         }), (0, i.jsx)("div", {
-            className: a.uu,
+            className: s.uu,
             children: d
         })]
     })

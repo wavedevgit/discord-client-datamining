@@ -5,16 +5,16 @@ n.d(t, {
 var i = n(524136),
     s = n(70730),
     l = n(419954),
-    a = n(933297),
-    r = n(253932),
+    r = n(933297),
+    a = n(253932),
     o = n(780964),
     d = n(985018);
 let c = (0, l.zD)(o.X.FRIEND_ANNIVERSARY_NOTIFICATIONS, {
     useTitle: () => d.intl.string(d.t.NjOMvh),
     usePersistentBadge: () => ({
-        badgeType: a.Xi.BETA
+        badgeType: r.Xi.BETA
     }),
-    useValue: r.oz.useSetting,
+    useValue: a.oz.useSetting,
     setValue: i.O,
     useSearchTerms: () => [d.intl.string(d.t.hi4dSk)],
     usePredicate: () => {

@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(397927),
-    r = n(985018),
+    r = n(397927),
+    a = n(985018),
     o = n(105041),
     d = n(93364);
 
@@ -21,7 +21,7 @@ function c(e) {
         className: l()(o.Nr, t),
         children: [(0, i.jsx)(n, {
             className: o.Kk
-        }), (0, i.jsx)(a.Text, {
+        }), (0, i.jsx)(r.Text, {
             className: o.__invalid_description,
             variant: "text-sm/medium",
             children: s
@@ -36,17 +36,17 @@ let u = function(e) {
         className: o.iE,
         children: [(0, i.jsxs)("div", {
             className: o.Qs,
-            children: [(0, i.jsx)(a.Heading, {
+            children: [(0, i.jsx)(r.Heading, {
                 className: o.R_,
                 color: "always-white",
                 variant: "heading-xxl/bold",
-                children: r.intl.string(r.t.IzKs3o)
+                children: a.intl.string(a.t.IzKs3o)
             }), (0, i.jsxs)("ul", {
                 className: o.kR,
                 children: [(0, i.jsx)(c, {
                     className: t,
-                    icon: a.vRF,
-                    children: r.intl.string(r.t.TZigSO)
+                    icon: r.vRF,
+                    children: a.intl.string(a.t.TZigSO)
                 }), (0, i.jsx)(c, {
                     className: t,
                     icon: e => (0, i.jsx)("img", {
@@ -54,15 +54,15 @@ let u = function(e) {
                         src: d,
                         alt: ""
                     }),
-                    children: r.intl.string(r.t.hjQuV2)
+                    children: a.intl.string(a.t.hjQuV2)
                 }), (0, i.jsx)(c, {
                     className: t,
-                    icon: a.iTF,
-                    children: r.intl.string(r.t["2RUcaM"])
+                    icon: r.iTF,
+                    children: a.intl.string(a.t["2RUcaM"])
                 }), (0, i.jsx)(c, {
                     className: t,
-                    icon: a.C3E,
-                    children: r.intl.string(r.t.bJoZKV)
+                    icon: r.C3E,
+                    children: a.intl.string(a.t.bJoZKV)
                 })]
             })]
         }), (0, i.jsx)("div", {

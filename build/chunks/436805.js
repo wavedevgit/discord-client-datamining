@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(575593),
+    r = n.n(l),
+    a = n(575593),
     o = n(397927),
     d = n(821701),
     c = n(253292),
@@ -81,18 +81,18 @@ let x = e => {
             children: (0, i.jsx)(o.U1X, {})
         });
         switch (n.type) {
-            case r.R.AVATAR_DECORATION:
+            case a.R.AVATAR_DECORATION:
                 return (0, i.jsx)(x, {
                     displayName: t,
                     product: n
                 });
-            case r.R.NAMEPLATE:
+            case a.R.NAMEPLATE:
                 let s = (0, u.EQ)(n);
                 return null != s ? (0, i.jsx)(A, {
                     displayName: t,
                     nameplateData: s
                 }) : null;
-            case r.R.PROFILE_EFFECT:
+            case a.R.PROFILE_EFFECT:
                 return (0, i.jsx)(h, {
                     displayName: t,
                     product: n
@@ -110,7 +110,7 @@ let x = e => {
             subscriptionPlanId: n,
             total: s,
             currency: l,
-            className: r
+            className: a
         } = e, {
             product: c
         } = (0, d.A)(t), {
@@ -121,7 +121,7 @@ let x = e => {
         if (null != t && !A && null == c || null == u) return null;
         let h = (0, m.$g)(s, l);
         return (0, i.jsxs)("div", {
-            className: a()(_.kL, r),
+            className: r()(_.kL, a),
             children: [A ? (0, i.jsx)(p, {
                 subscriptionPlanId: n
             }) : (0, i.jsx)(T, {

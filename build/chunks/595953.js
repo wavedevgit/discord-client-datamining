@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(827734),
-    r = n(397927),
+    r = n(827734),
+    a = n(397927),
     o = n(565645),
     d = n(287809),
     c = n(927578),
@@ -21,21 +21,21 @@ var i = n(627968),
 function p(e) {
     let {
         onSelect: t
-    } = e, [n, a] = s.useState(!1), o = (0, l.bG)([d.default], () => d.default.getCurrentUser()), u = c.Ay.canUseCustomCallSounds(o), m = s.useRef(null);
+    } = e, [n, r] = s.useState(!1), o = (0, l.bG)([d.default], () => d.default.getCurrentUser()), u = c.Ay.canUseCustomCallSounds(o), m = s.useRef(null);
 
     function p(e) {
-        u && (a(!1), t?.(e))
+        u && (r(!1), t?.(e))
     }
-    return (0, i.jsx)(r.YNO, {
+    return (0, i.jsx)(a.YNO, {
         targetElementRef: m,
         shouldShow: n,
         position: "left",
-        onRequestClose: () => a(!1),
+        onRequestClose: () => r(!1),
         renderPopout: e => {
             let {
                 closePopout: t
             } = e;
-            return (0, i.jsx)(r.lGe, {
+            return (0, i.jsx)(a.lGe, {
                 children: (0, i.jsx)(_.A, {
                     suppressPlaySound: !0,
                     shouldShowLockedSounds: !1,
@@ -52,10 +52,10 @@ function p(e) {
             ...e,
             ref: m,
             onClick: () => {
-                a(!n)
+                r(!n)
             },
             text: A.intl.string(A.t.uOe0Az),
-            children: (0, i.jsx)(r.R2l, {
+            children: (0, i.jsx)(a.R2l, {
                 size: "md",
                 color: "currentColor",
                 className: h.Wo
@@ -76,7 +76,7 @@ function T(e) {
     return (0, i.jsx)(x.dT, {
         onClick: n,
         text: s,
-        children: (0, i.jsx)(r.HKD, {
+        children: (0, i.jsx)(a.HKD, {
             size: "md",
             color: "currentColor",
             className: h.wg
@@ -98,13 +98,13 @@ function f(e) {
                 emojiId: d,
                 emojiName: c,
                 className: h.Zg
-            }), (0, i.jsx)(r.Text, {
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-md/normal",
                 color: "text-strong",
                 className: h.dj,
                 children: null == t ? A.intl.string(A.t.PoWNfe) : n ? A.intl.format(A.t.B6HU6O, {
                     soundName: t.name,
-                    subtextHook: e => (0, i.jsx)(r.Text, {
+                    subtextHook: e => (0, i.jsx)(a.Text, {
                         variant: "text-xs/medium",
                         color: "text-default",
                         tag: "span",
@@ -113,7 +113,7 @@ function f(e) {
                 }) : t.name
             }), l ? (0, i.jsx)(T, {
                 sound: t
-            }) : (0, i.jsx)(r.HKD, {
+            }) : (0, i.jsx)(a.HKD, {
                 size: "md",
                 color: "currentColor",
                 className: h.Gk
@@ -125,9 +125,9 @@ function f(e) {
             }), l && !n && (0, i.jsx)(x.dT, {
                 onClick: () => s(null),
                 text: A.intl.string(A.t.jmtcGA),
-                children: (0, i.jsx)(r.ucK, {
+                children: (0, i.jsx)(a.ucK, {
                     size: "md",
-                    color: a.A.unsafe_rawColors.RED_400.css,
+                    color: r.A.unsafe_rawColors.RED_400.css,
                     className: h.Wo
                 })
             })]

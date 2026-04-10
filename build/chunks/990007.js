@@ -3,8 +3,8 @@ n.d(t, {
     A: () => O
 }), n(323874), n(14289), n(35956);
 var i = n(488428),
-    a = n(485845),
-    r = n(179771),
+    r = n(485845),
+    a = n(179771),
     l = n(136722),
     s = n(562465),
     o = n(898467),
@@ -12,8 +12,8 @@ var i = n(488428),
     c = n(506774),
     u = n(73153),
     A = n(587895),
-    _ = n(224750),
-    h = n(20015),
+    h = n(224750),
+    _ = n(20015),
     m = n(716965),
     g = n(671523),
     p = n(337095),
@@ -29,7 +29,7 @@ let x = "CachedTokens",
         "1273616940451102832": new o.A(2, +f.A.Millis.MINUTE)
     };
 async function b(e, t, n) {
-    let i, r, s, o, d, {
+    let i, a, s, o, d, {
         client_id: c,
         response_type: u = "code",
         redirect_uri: f,
@@ -61,11 +61,11 @@ async function b(e, t, n) {
     if ("string" == typeof O ? k = O.split(" ").filter(e => e.length > 0) : Array.isArray(O) && (k = O), null == I.default.getCurrentUser()) throw new T.A({
         errorCode: S.Lw6.OAUTH2_ERROR
     }, "Client is not logged in");
-    if (null != M) r = Number(M);
+    if (null != M) a = Number(M);
     else {
-        let e = e => (0, h.n)(e, S.gfo.EMBEDDED) && e?.integrationTypesConfig?.[a.b.USER_INSTALL] != null,
+        let e = e => (0, _.n)(e, S.gfo.EMBEDDED) && e?.integrationTypesConfig?.[r.b.USER_INSTALL] != null,
             t = A.A.getApplication(c);
-        r = e(t) || e(t = E.Ay.createFromServer(await (0, p.TA)(c, U))) ? a.b.USER_INSTALL : a.b.GUILD_INSTALL
+        a = e(t) || e(t = E.Ay.createFromServer(await (0, p.TA)(c, U))) ? r.b.USER_INSTALL : r.b.GUILD_INSTALL
     }
     try {
         [s, {
@@ -79,9 +79,9 @@ async function b(e, t, n) {
             codeChallenge: N,
             codeChallengeMethod: x,
             state: b,
-            integrationType: r,
+            integrationType: a,
             signal: U
-        }), (0, _.vG)(c)])
+        }), (0, h.vG)(c)])
     } catch (t) {
         let {
             body: e
@@ -101,7 +101,7 @@ async function b(e, t, n) {
             codeChallengeMethod: x,
             state: b,
             nonce: y,
-            integrationType: r
+            integrationType: a
         })).location
     } catch (t) {
         let {
@@ -116,7 +116,7 @@ async function b(e, t, n) {
     try {
         V = l.iu(L ?? 0)
     } catch (e) {}
-    if (null != s.integration_type && Object.values(a.b).includes(s.integration_type) && (i = new Map).set(s.integration_type, s), null != v[s.application.id] && (await v[s.application.id].process(), U?.aborted)) throw new T.A({
+    if (null != s.integration_type && Object.values(r.b).includes(s.integration_type) && (i = new Map).set(s.integration_type, s), null != v[s.application.id] && (await v[s.application.id].process(), U?.aborted)) throw new T.A({
         errorCode: S.Lw6.UNKNOWN_ERROR
     }, "Request aborted");
     return t({
@@ -134,7 +134,7 @@ async function b(e, t, n) {
         prompt: D,
         disableGuildSelect: j,
         disclosures: o,
-        integrationType: r,
+        integrationType: a,
         pid: w,
         signal: U
     })
@@ -158,18 +158,18 @@ function y(e, t) {
         e.authorization.authing = !1;
         let {
             application: i,
-            user: a,
-            scopes: r,
+            user: r,
+            scopes: a,
             expires: l
         } = n.body;
         if (e.application.id !== i.id) throw new T.A({
             errorCode: S.Lw6.INVALID_CLIENTID
         }, "Application does not match the connection's");
         let s = I.default.getCurrentUser();
-        if (null == s || !a || s.id !== a.id) throw new T.A({
+        if (null == s || !r || s.id !== r.id) throw new T.A({
             errorCode: S.Lw6.INVALID_TOKEN
         }, "Token does not match current user");
-        return e.authorization.scopes = [...e.authorization.scopes, ...r, N.VH], e.authorization.accessToken = t, e.authorization.expires = new Date(l), u.h.dispatch({
+        return e.authorization.scopes = [...e.authorization.scopes, ...a, N.VH], e.authorization.accessToken = t, e.authorization.expires = new Date(l), u.h.dispatch({
             type: "RPC_APP_AUTHENTICATED",
             socketId: e.id,
             application: e.application
@@ -191,18 +191,18 @@ function O(e, t) {
         [S.e$_.AUTHENTICATE]: (0, d.T)(S.e$_.AUTHENTICATE, {
             handler(n) {
                 let {
-                    socket: a,
+                    socket: r,
                     signal: l,
                     args: {
                         access_token: s
                     }
                 } = n;
-                if (null == s && a.transport === N.z4.IPC) {
-                    let n = a.application.id;
+                if (null == s && r.transport === N.z4.IPC) {
+                    let n = r.application.id;
                     if (null == n) throw new T.A({
                         errorCode: S.Lw6.INVALID_COMMAND
                     }, "No application.");
-                    let o = r.F.IDENTIFY,
+                    let o = a.F.IDENTIFY,
                         d = () => b({
                             client_id: n,
                             scope: o,
@@ -210,7 +210,7 @@ function O(e, t) {
                             signal: l,
                             isSocketRpcPrivateScope: !1
                         }, e, t).then(e => {
-                            var t, r, l;
+                            var t, a, l;
                             let s;
                             if (null == e) throw new T.A({
                                 errorCode: S.Lw6.UNKNOWN_ERROR
@@ -220,11 +220,11 @@ function O(e, t) {
                             if (null != d.error) throw new T.A({
                                 errorCode: S.Lw6.OAUTH2_ERROR
                             }, `OAuth2 Error: ${d.error}: ${d.error_description??"unknown error"}`);
-                            return t = d.access_token, r = d.scope, l = d.expires_in, (s = c.w.get(x) ?? {})[n] = {
+                            return t = d.access_token, a = d.scope, l = d.expires_in, (s = c.w.get(x) ?? {})[n] = {
                                 accessToken: t,
-                                scope: r,
+                                scope: a,
                                 expires: Date.now() + l
-                            }, c.w.set(x, s), y(a, d.access_token)
+                            }, c.w.set(x, s), y(r, d.access_token)
                         });
                     return null != (s = function(e, t) {
                         let n = c.w.get(x);
@@ -233,7 +233,7 @@ function O(e, t) {
                             if (!(i.scope !== t || i.expires <= Date.now())) return i.accessToken;
                             delete n[e], c.w.set(x, n)
                         }
-                    }(n, o)) ? y(a, s).catch(() => {
+                    }(n, o)) ? y(r, s).catch(() => {
                         let e;
                         return e = c.w.get(x) ?? {}, delete e[n], c.w.set(x, e), d()
                     }) : d()
@@ -241,16 +241,16 @@ function O(e, t) {
                 if (null == s) throw new T.A({
                     errorCode: S.Lw6.INVALID_TOKEN
                 }, "No access token provided");
-                return y(a, s)
+                return y(r, s)
             }
         }),
         [S.e$_.AUTHORIZE]: {
             handler(n) {
                 let {
                     socket: i,
-                    signal: a,
-                    args: r
-                } = n, l = r.client_id;
+                    signal: r,
+                    args: a
+                } = n, l = a.client_id;
                 if (!l) throw new T.A({
                     errorCode: S.Lw6.INVALID_CLIENTID
                 }, "No client id provided");
@@ -260,18 +260,18 @@ function O(e, t) {
                 if (i.authorization.authing) throw new T.A({
                     errorCode: S.Lw6.INVALID_COMMAND
                 }, "Already authing");
-                if (i.authorization.authing = !0, "token" === r.response_type) throw i.authorization.authing = !1, new T.A({
+                if (i.authorization.authing = !0, "token" === a.response_type) throw i.authorization.authing = !1, new T.A({
                     errorCode: S.Lw6.INVALID_COMMAND
                 }, 'Authorization response_type "token" is not supported');
                 let s = i.authorization.scopes.includes(N.LQ);
                 if (!s && i.application.id !== l) throw i.authorization.authing = !1, new T.A({
                     errorCode: S.Lw6.INVALID_CLIENTID
                 }, "Application does not match the connection's");
-                let o = r.scopes || r.scope;
-                return delete r.scopes, b({
-                    ...r,
+                let o = a.scopes || a.scope;
+                return delete a.scopes, b({
+                    ...a,
                     scope: o,
-                    signal: a,
+                    signal: r,
                     isSocketRpcPrivateScope: s
                 }, e, t).then(e => {
                     if (i.authorization.authing = !1, null == e) throw new T.A({
@@ -283,12 +283,12 @@ function O(e, t) {
                         code: n,
                         location: e
                     };
-                    let a = t.searchParams.get("error");
-                    if (null != a && "" !== a) {
+                    let r = t.searchParams.get("error");
+                    if (null != r && "" !== r) {
                         let e = t.searchParams.get("error_description") ?? "unknown error";
                         throw new T.A({
                             errorCode: S.Lw6.OAUTH2_ERROR
-                        }, `OAuth2 Error: ${a}: ${e}`)
+                        }, `OAuth2 Error: ${r}: ${e}`)
                     }
                     if (null == n) throw new T.A({
                         errorCode: S.Lw6.OAUTH2_ERROR

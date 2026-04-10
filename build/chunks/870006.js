@@ -1,12 +1,12 @@
 /** chunk id: 870006 params = (module,exports,require) **/
 n.d(t, {
-    u: () => C
+    u: () => x
 });
 var i = n(627968);
 n(64700);
 var l = n(311907),
-    s = n(397927),
-    a = n(793574),
+    a = n(397927),
+    s = n(793574),
     r = n(688810),
     o = n(989985),
     c = n(206835),
@@ -17,8 +17,8 @@ var l = n(311907),
     A = n(652215),
     g = n(340837),
     p = n(355097),
-    f = n(985018),
-    _ = n(604137);
+    _ = n(985018),
+    f = n(604137);
 
 function E(e) {
     let {
@@ -28,50 +28,50 @@ function E(e) {
     });
     return (0, i.jsx)("div", {
         children: (0, i.jsx)(o._, {
-            bannerIcon: (0, i.jsx)(s._mZ, {
+            bannerIcon: (0, i.jsx)(a._mZ, {
                 size: "lg",
                 color: "currentColor",
-                className: _.q3
+                className: f.q3
             }),
-            bannerHeader: f.intl.format(f.t.GgMwjk, {
+            bannerHeader: _.intl.format(_.t.GgMwjk, {
                 guildName: t?.name ?? ""
             }),
-            bannerSubtext: f.intl.string(f.t.ONjwD5),
-            textStyles: _.cI,
-            headerStyles: _.U_,
-            children: (0, i.jsx)(s.Button, {
+            bannerSubtext: _.intl.string(_.t.ONjwD5),
+            textStyles: f.cI,
+            headerStyles: f.U_,
+            children: (0, i.jsx)(a.Button, {
                 variant: "primary",
                 size: "sm",
-                text: f.intl.string(f.t.Viksoo),
+                text: _.intl.string(_.t.Viksoo),
                 onClick: () => n()
             })
         })
     })
 }
 
-function x(e) {
+function C(e) {
     let {
         guild: t
     } = e, {
         analyticsLocations: n
-    } = (0, r.Ay)(a.A.AUTOMOD_PROFILE_QUARANTINE_ALERT), [l, c] = (0, m.j8)({
+    } = (0, r.Ay)(s.A.AUTOMOD_PROFILE_QUARANTINE_ALERT), [l, c] = (0, m.j8)({
         guildId: t?.id ?? A.dJq,
         analyticsLocations: n
-    }), d = c ? f.intl.string(f.t["9ph2v7"]) : f.intl.string(f.t.ldh9Cg), u = c ? f.intl.string(f.t["/PGQf0"]) : f.intl.string(f.t.WikgZ1);
+    }), d = c ? _.intl.string(_.t["9ph2v7"]) : _.intl.string(_.t.ldh9Cg), u = c ? _.intl.string(_.t["/PGQf0"]) : _.intl.string(_.t.WikgZ1);
     return (0, i.jsx)("div", {
         children: (0, i.jsx)(o._, {
-            bannerIcon: (0, i.jsx)(s._mZ, {
+            bannerIcon: (0, i.jsx)(a._mZ, {
                 size: "lg",
                 color: "currentColor",
-                className: _.q3
+                className: f.q3
             }),
-            bannerHeader: f.intl.format(f.t.kcYdTq, {
+            bannerHeader: _.intl.format(_.t.kcYdTq, {
                 guildName: t?.name ?? ""
             }),
             bannerSubtext: d,
-            textStyles: _.cI,
-            headerStyles: _.U_,
-            children: (0, i.jsx)(s.Button, {
+            textStyles: f.cI,
+            headerStyles: f.U_,
+            children: (0, i.jsx)(a.Button, {
                 variant: "primary",
                 size: "sm",
                 text: u,
@@ -83,7 +83,7 @@ function x(e) {
     })
 }
 
-function C(e) {
+function x(e) {
     let {
         guild: t
     } = e, n = (0, l.bG)([d.default, u.Ay], () => {
@@ -91,11 +91,11 @@ function C(e) {
         let e = d.default.getId();
         return (0, h.wj)(u.Ay.getMember(t.id, e))
     }, [t]);
-    return n.has(g.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || n.has(g.D.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(x, {
+    return n.has(g.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || n.has(g.D.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(C, {
         guild: t
     }) : n.has(g.D.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(E, {
         guild: t
-    }) : (0, i.jsx)(x, {
+    }) : (0, i.jsx)(C, {
         guild: t
     })
 }

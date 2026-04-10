@@ -3,8 +3,8 @@ n.d(t, {
     A: () => o
 }), n(321073);
 var i = n(311907),
-    a = n(73153),
-    r = n(988794);
+    r = n(73153),
+    a = n(988794);
 let l = {
     hiddenEventsAndStages: []
 };
@@ -25,7 +25,7 @@ class s extends i.Ay.PersistedStore {
         return l
     }
 }
-let o = new s(a.h, {
+let o = new s(r.h, {
     LIVE_CHANNEL_NOTICE_HIDE: function(e) {
         let {
             eventId: t,
@@ -37,7 +37,7 @@ let o = new s(a.h, {
         let {
             guildScheduledEvent: t
         } = e, n = `event-${t.id}`;
-        l.hiddenEventsAndStages.includes(n) && (t.status === r.XG.CANCELED || t.status === r.XG.COMPLETED) && (l.hiddenEventsAndStages = l.hiddenEventsAndStages.filter(e => e !== n))
+        l.hiddenEventsAndStages.includes(n) && (t.status === a.XG.CANCELED || t.status === a.XG.COMPLETED) && (l.hiddenEventsAndStages = l.hiddenEventsAndStages.filter(e => e !== n))
     },
     GUILD_SCHEDULED_EVENT_DELETE: function(e) {
         let {

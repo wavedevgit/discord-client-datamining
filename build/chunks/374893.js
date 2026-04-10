@@ -1,12 +1,12 @@
 /** chunk id: 374893 params = (module,exports,require) **/
 n.d(t, {
-    m: () => r
+    m: () => a
 });
 var i = n(745109),
     s = n(419954),
     l = n(780964),
-    a = n(985018);
-let r = (0, s.E2)(l.X.PROFILE_SETTING, {
+    r = n(985018);
+let a = (0, s.E2)(l.X.PROFILE_SETTING, {
     Component: i.A,
-    useSearchTerms: () => [a.intl.string(a.t["vi7f+q"]), a.intl.string(a.t.Ip9nBS), a.intl.string(a.t["2p07FR"]), a.intl.string(a.t["7vhiqk"]), a.intl.string(a.t.kPHroX), a.intl.string(a.t.lqaIxI), a.intl.string(a.t.Vgdusv), a.intl.string(a.t.DMeO2X)]
+    useSearchTerms: () => [r.intl.string(r.t["vi7f+q"]), r.intl.string(r.t.Ip9nBS), r.intl.string(r.t["2p07FR"]), r.intl.string(r.t["7vhiqk"]), r.intl.string(r.t.kPHroX), r.intl.string(r.t.lqaIxI), r.intl.string(r.t.Vgdusv), r.intl.string(r.t.DMeO2X)]
 })

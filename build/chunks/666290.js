@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(284009),
-    r = n.n(a),
+var r = n(284009),
+    a = n.n(r),
     l = n(765379),
     s = n(90644),
     o = n(61330),
@@ -13,8 +13,8 @@ var a = n(284009),
     c = n(73392),
     u = n(409626),
     A = n(692969),
-    _ = n(290987),
-    h = n(427262),
+    h = n(290987),
+    _ = n(427262),
     m = n(516085),
     g = n(928636);
 n(595);
@@ -24,7 +24,7 @@ var p = n(652215),
 function I(e) {
     let {
         party: t,
-        onUserContextMenu: a
+        onUserContextMenu: r
     } = e, {
         priorityMembers: I,
         partiedMembers: f,
@@ -38,18 +38,18 @@ function I(e) {
                 user: t
             } = e;
             return t.id
-        })), a = n.filter(e => !i.has(e.id)), r = h.Ay.getName(t[0].user), l = null != t[1] ? h.Ay.getName(t[1].user) : null != a[0] ? h.Ay.getName(a[0]) : null;
+        })), r = n.filter(e => !i.has(e.id)), a = _.Ay.getName(t[0].user), l = null != t[1] ? _.Ay.getName(t[1].user) : null != r[0] ? _.Ay.getName(r[0]) : null;
         switch (n.length) {
             case 1:
-                return r;
+                return a;
             case 2:
                 return E.intl.format(E.t.t1DyC1, {
-                    user1: r,
+                    user1: a,
                     user2: l
                 });
             default:
                 return E.intl.format(E.t["5CSEcJ"], {
-                    user1: r,
+                    user1: a,
                     user2: l,
                     extras: n.length - 2
                 })
@@ -60,24 +60,24 @@ function I(e) {
     } = function(e) {
         let {
             priorityMembers: t,
-            partiedMembers: a,
+            partiedMembers: r,
             voiceChannels: d,
             currentActivities: c
-        } = e, u = t.length, A = a.length - u, h = c[0], I = h?.activity, f = h?.startedPlayingTime, C = {
+        } = e, u = t.length, A = r.length - u, _ = c[0], I = _?.activity, f = _?.startedPlayingTime, C = {
             name: I?.name ?? ""
         };
         if ((0, l.A)(I) && null != I) return {
-            subtitle: (0, i.jsx)(_.Ay, {
+            subtitle: (0, i.jsx)(h.Ay, {
                 start: f,
-                location: _.Ay.Locations.ACTIVITY_FEED_NEW,
+                location: h.Ay.Locations.ACTIVITY_FEED_NEW,
                 messageProps: C
             }),
             icon: null
         };
-        if (u + A === 1 && null != h) {
+        if (u + A === 1 && null != _) {
             let {
                 game: e
-            } = h;
+            } = _;
             if (null == I) return {
                 subtitle: null,
                 icon: null
@@ -93,9 +93,9 @@ function I(e) {
                         })
                     };
                     return {
-                        subtitle: (0, i.jsx)(_.Ay, {
+                        subtitle: (0, i.jsx)(h.Ay, {
                             start: f,
-                            location: _.Ay.Locations.ACTIVITY_FEED_NEW,
+                            location: h.Ay.Locations.ACTIVITY_FEED_NEW,
                             messageProps: C
                         }), icon: null != e ? (0, i.jsx)(g.A.Header.Icon, {
                             src: null != e.getIconURL(64) ? e.getIconURL(64) : n(960648)
@@ -108,8 +108,8 @@ function I(e) {
                         }) : null
                     };
                 case p.$pd.LISTENING:
-                    let a;
-                    return a = (0, s.A)(I) ? (0, i.jsx)(g.A.Header.Icon, {
+                    let r;
+                    return r = (0, s.A)(I) ? (0, i.jsx)(g.A.Header.Icon, {
                         src: g.A.Header.Icon.Src.SPOTIFY
                     }) : null != e.getIconURL(64) ? (0, i.jsx)(g.A.Header.Icon, {
                         src: e.getIconURL(64)
@@ -119,7 +119,7 @@ function I(e) {
                         subtitle: E.intl.formatToPlainString(E.t.NF5xop, {
                             name: I.name
                         }),
-                        icon: a
+                        icon: r
                     };
                 case p.$pd.WATCHING:
                     return {
@@ -165,12 +165,12 @@ function I(e) {
             let {
                 activity: t,
                 game: n,
-                startedPlayingTime: a
+                startedPlayingTime: r
             } = e;
-            return r()(null != t, "Activity was null somehow"), {
-                subtitle: (0, i.jsx)(_.Ay, {
-                    start: a,
-                    location: _.Ay.Locations.ACTIVITY_FEED_NEW,
+            return a()(null != t, "Activity was null somehow"), {
+                subtitle: (0, i.jsx)(h.Ay, {
+                    start: r,
+                    location: h.Ay.Locations.ACTIVITY_FEED_NEW,
                     messageProps: C
                 }),
                 icon: null != n && null != n.getIconURL(64) ? (0, i.jsx)(g.A.Header.Icon, {
@@ -202,7 +202,7 @@ function I(e) {
         icon: x,
         onSubtitleClick: v,
         onIconClick: v,
-        onContextMenu: e => a(e, T.user),
+        onContextMenu: e => r(e, T.user),
         displayNameFont: 1 === f.length ? y : void 0
     })
 }

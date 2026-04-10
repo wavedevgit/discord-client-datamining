@@ -1,23 +1,23 @@
 /** chunk id: 602582 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => E
 });
-var l = n(735438),
-    i = n.n(l),
+var i = n(735438),
+    l = n.n(i),
     r = n(562465),
     s = n(73153),
     a = n(439372),
-    u = n(723176),
-    o = n(626584),
+    o = n(723176),
+    u = n(626584),
     d = n(142120);
 n(95701);
 var c = n(961350),
     h = n(734057),
     g = n(946132),
-    I = n(937136),
-    A = n(652215);
-let f = new o.A("MessagePreviewManager");
-class E extends a.A {
+    m = n(937136),
+    f = n(652215);
+let A = new u.A("MessagePreviewManager");
+class I extends a.A {
     remote = new Map;
     remoteTicking = !1;
     tickQueued = !1;
@@ -38,7 +38,7 @@ class E extends a.A {
     addWant(e) {
         h.A.getBasicChannel(e)
     }
-    remoteTick = i().debounce((() => {
+    remoteTick = l().debounce((() => {
         var e = this;
         return async function() {
             let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0;
@@ -52,16 +52,16 @@ class E extends a.A {
                     for (let [t, n] of(e.remoteTicking = !0, e.remote)) await (null == t ? e.fetchDms(n) : e.fetchGuilds(t, n));
                     e.cleanup(), e.remoteTicking = !1
                 } catch (n) {
-                    f.log(`couldn't fetch message previews (attempt: ${t}, error: ${n})`), e.remoteTicking = !1, e.remoteTick(t + 1)
+                    A.log(`couldn't fetch message previews (attempt: ${t}, error: ${n})`), e.remoteTicking = !1, e.remoteTick(t + 1)
                 }
             }
         }
     })(), 100);
     async fetchLocal(e) {
         if (!(!g.A.isLocalFetchNeeded(e) || this.localFetching.has(e))) try {
-            f.verbose(`fetching local previews (via: database, guild_id: ${e})`), this.localFetching.add(e);
+            A.verbose(`fetching local previews (via: database, guild_id: ${e})`), this.localFetching.add(e);
             let t = c.default.getId(),
-                n = await u.A.messages()?.getMostRecents(e);
+                n = await o.A.messages()?.getMostRecents(e);
             null != n && t === c.default.getId() && s.h.dispatch({
                 type: "MESSAGE_PREVIEWS_LOCALLY_LOADED",
                 guildId: e,
@@ -71,21 +71,21 @@ class E extends a.A {
                 })
             })
         } catch (e) {
-            f.log(`couldn't fetch local previews (error: ${e})`)
+            A.log(`couldn't fetch local previews (error: ${e})`)
         } finally {
             this.localFetching.delete(e)
         }
     }
     fetchGuilds(e, t) {
         let n = t.nextWants(1e3);
-        return 0 === n.length ? Promise.resolve() : t.try(n, () => (f.verbose(`fetching guild previews (via: gateway, guild_id: ${e}, channel_ids: ${n.join(", ")})`), d.A.getSocket().requestLastMessages(e, n), Promise.resolve()))
+        return 0 === n.length ? Promise.resolve() : t.try(n, () => (A.verbose(`fetching guild previews (via: gateway, guild_id: ${e}, channel_ids: ${n.join(", ")})`), d.A.getSocket().requestLastMessages(e, n), Promise.resolve()))
     }
     fetchDms(e) {
         let t = e.nextWants(30);
         return 0 === t.length ? Promise.resolve() : e.try(t, async () => {
-            f.verbose(`fetching dm previews (via: http, channel_ids: ${t.join(", ")})`);
+            A.verbose(`fetching dm previews (via: http, channel_ids: ${t.join(", ")})`);
             let e = (await r.Bo.post({
-                url: A.Rsh.MESSAGE_PREVIEWS,
+                url: f.Rsh.MESSAGE_PREVIEWS,
                 body: {
                     channel_ids: t
                 },
@@ -103,7 +103,7 @@ class E extends a.A {
         null != n && g.A.isLatest(e, t) && n.removeWant(t)
     }
     getOrCreate(e) {
-        return this.remote.has(e) || this.remote.set(e, new I.p), this.remote.get(e)
+        return this.remote.has(e) || this.remote.set(e, new m.p), this.remote.get(e)
     }
     cleanup() {
         for (let [e, t] of this.remote) t.empty() && this.remote.delete(e)
@@ -145,4 +145,4 @@ class E extends a.A {
             for (let n of e.mostRecentMessages ?? []) t.removeWant(n.channel_id)
     }
 }
-let m = new E
+let E = new I

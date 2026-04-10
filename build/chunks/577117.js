@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(419954),
-    a = n(933297),
-    r = n(975571),
+    r = n(933297),
+    a = n(975571),
     o = n(780964),
     d = n(590321),
     c = n(652215),
@@ -19,7 +19,7 @@ function g() {
     return (0, i.jsxs)(s.Text, {
         variant: "text-md/medium",
         children: [`${e} • `, u.intl.format(m.default.WM5adV, {
-            handleOnHelpUrlHook: () => window.open(r.A.getArticleURL(c.MVz.TIGGER_PAWTECT_LEARN_MORE), "_blank")
+            handleOnHelpUrlHook: () => window.open(a.A.getArticleURL(c.MVz.TIGGER_PAWTECT_LEARN_MORE), "_blank")
         })]
     })
 }
@@ -28,7 +28,7 @@ let _ = (0, l.Tf)(o.X.ACCOUNT_INFO_AGE_GROUP_EDIT_SETTING, {
     useTitle: () => u.intl.string(u.t["/52UYy"]),
     useVariant: () => "secondary",
     useTrailingContent: () => ({
-        type: a._1.STRONGLY_DISCOURAGED_CUSTOM,
+        type: r._1.STRONGLY_DISCOURAGED_CUSTOM,
         StronglyDiscouragedCustomComponent: g
     }),
     useLabel: () => u.intl.string(u.t.bt75uw),

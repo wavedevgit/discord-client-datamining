@@ -3,17 +3,17 @@ n.d(t, {
     A: () => P
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(687498),
     o = n(837381),
     d = n(158954),
     c = n(311907),
     u = n(554146),
     A = n(192308),
-    _ = n(435371),
-    h = n(397927),
+    h = n(435371),
+    _ = n(397927),
     m = n(701363),
     g = n(770178),
     p = n(826673),
@@ -34,7 +34,7 @@ let L = Math.ceil(Math.sqrt(115200)),
     P = function(e) {
         let {
             selected: t
-        } = e, n = (0, o.rm)("quests"), r = a.useRef(null), {
+        } = e, n = (0, o.rm)("quests"), a = r.useRef(null), {
             shouldShowPopover: P,
             shouldShowGradientAndBadge: D,
             dismissOnboardingContent: j
@@ -42,10 +42,10 @@ let L = Math.ceil(Math.sqrt(115200)),
             let e = (0, A.useHasAnyModalOpen)(),
                 t = (0, c.bG)([f.A], () => f.A.quests.size > 0),
                 n = (0, c.bG)([I.default], () => I.default.getCurrentUser()),
-                [i, r] = (0, E.kn)(!e && t && null != n ? [u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING] : [], b.m.PRIVATE_CHANNELS_LIST, !0),
-                l = a.useCallback(() => {
-                    r(b.i.TAKE_ACTION)
-                }, [r]),
+                [i, a] = (0, E.kn)(!e && t && null != n ? [u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING] : [], b.m.PRIVATE_CHANNELS_LIST, !0),
+                l = r.useCallback(() => {
+                    a(b.i.TAKE_ACTION)
+                }, [a]),
                 s = i === u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING,
                 o = (0, p.JZ)(u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING);
             return {
@@ -57,13 +57,13 @@ let L = Math.ceil(Math.sqrt(115200)),
             shouldShowQuestHomeHeroContent: M,
             dismissQuestHomeHeroContent: w,
             questHomeHeroConfig: U
-        } = (0, N.I)(), G = a.useCallback(() => {
+        } = (0, N.I)(), G = r.useCallback(() => {
             C.A.getState().setUtmCurrentContext({
                 utmContentCurrent: "PRIMARY_QUEST_HOME"
             }), M && w()
         }, [M, w]), [{
             glowSpring: k
-        }, V] = (0, h.zhh)(() => ({
+        }, V] = (0, _.zhh)(() => ({
             from: {
                 glowSpring: 0
             },
@@ -75,7 +75,7 @@ let L = Math.ceil(Math.sqrt(115200)),
             }
         })), [{
             shineSpring: B
-        }, H] = (0, h.zhh)(() => ({
+        }, H] = (0, _.zhh)(() => ({
             from: {
                 shineSpring: 0
             },
@@ -88,14 +88,14 @@ let L = Math.ceil(Math.sqrt(115200)),
         })), F = (0, T.cR)({
             questHomeHeroConfig: U,
             shouldShowQuestHomeHeroContent: M
-        }), Y = a.useCallback(() => {
+        }), Y = r.useCallback(() => {
             H({
                 shineSpring: 1
             }), V({
                 glowSpring: 1,
                 delay: 200
             }), F.handleMouseEnter()
-        }, [H, V, F]), W = a.useCallback(() => {
+        }, [H, V, F]), W = r.useCallback(() => {
             H({
                 shineSpring: 0,
                 immediate: !0
@@ -103,7 +103,7 @@ let L = Math.ceil(Math.sqrt(115200)),
                 glowSpring: 0,
                 delay: 0
             }), F.handleMouseLeave()
-        }, [H, V, F]), K = a.useCallback(() => {
+        }, [H, V, F]), K = r.useCallback(() => {
             H({
                 shineSpring: 1,
                 delay: 500
@@ -111,14 +111,14 @@ let L = Math.ceil(Math.sqrt(115200)),
                 glowSpring: 1,
                 delay: 700
             }), F.handleOnboardingPopoutRender()
-        }, [H, V, F]), [q, z] = a.useState(-1), $ = a.useCallback(e => {
+        }, [H, V, F]), [q, z] = r.useState(-1), $ = r.useCallback(e => {
             z(e.contentRect.width)
         }, []), Q = (0, g.w)($, [], {
             fireOnMount: !0
         }), X = !M && D, Z = !M && P, J = M && U?.questHomeEntrypoint?.tooltipTitle != null, {
             inlineCssProperties: ee,
             shouldShowQuestHomeHeroGradient: et
-        } = a.useMemo(() => {
+        } = r.useMemo(() => {
             let e = {
                     "--custom-shine-dimensions": "240px",
                     "--custom-shine-rotated-dimensions-delta": `${R}px`
@@ -126,13 +126,13 @@ let L = Math.ceil(Math.sqrt(115200)),
                 t = U?.questHomeEntrypoint?.linearGradientStart,
                 n = U?.questHomeEntrypoint?.linearGradientEnd,
                 i = U?.questHomeEntrypoint?.radialGradientStart,
-                a = U?.questHomeEntrypoint?.radialGradientEnd;
-            M && (null != t && null != n && (e["--custom-quest-home-hero-linear-gradient-start"] = t, e["--custom-quest-home-hero-linear-gradient-end"] = n), null != i && null != a && (e["--custom-quest-home-hero-radial-gradient-start"] = i, e["--custom-quest-home-hero-radial-gradient-end"] = a));
-            let r = null != i && null != a,
+                r = U?.questHomeEntrypoint?.radialGradientEnd;
+            M && (null != t && null != n && (e["--custom-quest-home-hero-linear-gradient-start"] = t, e["--custom-quest-home-hero-linear-gradient-end"] = n), null != i && null != r && (e["--custom-quest-home-hero-radial-gradient-start"] = i, e["--custom-quest-home-hero-radial-gradient-end"] = r));
+            let a = null != i && null != r,
                 l = null != t && null != n;
             return {
                 inlineCssProperties: e,
-                shouldShowQuestHomeHeroGradient: M && (r || l)
+                shouldShowQuestHomeHeroGradient: M && (a || l)
             }
         }, [M, U]), en = (0, i.jsx)("div", {
             className: O.iE,
@@ -149,8 +149,8 @@ let L = Math.ceil(Math.sqrt(115200)),
                     [O.jR]: X,
                     [O.XO]: M
                 }),
-                icon: h.r2v,
-                listItemRef: r,
+                icon: _.r2v,
+                listItemRef: a,
                 onClick: G,
                 route: v.BVt.QUEST_HOME,
                 selected: t,
@@ -184,16 +184,16 @@ let L = Math.ceil(Math.sqrt(115200)),
                                 output: [0, .5]
                             }))
                         }
-                    }), (0, i.jsx)(h.LpS, {
+                    }), (0, i.jsx)(_.LpS, {
                         className: O.qS,
                         text: y.intl.string(y.t.y2b7CA),
-                        color: h.LU0.colors.BACKGROUND_BRAND.css
+                        color: _.LU0.colors.BACKGROUND_BRAND.css
                     })]
                 })]
             })
         });
         return (0, i.jsxs)(i.Fragment, {
-            children: [J ? (0, i.jsx)(_.un, {
+            children: [J ? (0, i.jsx)(h.un, {
                 title: U?.questHomeEntrypoint?.tooltipTitle,
                 body: U?.questHomeEntrypoint?.tooltipSubtitle ?? "",
                 asset: U?.questHomeEntrypoint?.tooltipAssetImageUrl != null ? (0, i.jsx)("img", {
@@ -207,7 +207,7 @@ let L = Math.ceil(Math.sqrt(115200)),
                 asContainer: !0,
                 children: en
             }) : en, Z && (0, i.jsx)(S.A, {
-                targetElementRef: r,
+                targetElementRef: a,
                 onNavigateToQuestHome: G,
                 onRender: K,
                 onRequestClose: j

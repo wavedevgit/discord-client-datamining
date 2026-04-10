@@ -17,9 +17,9 @@ var i = n(627968),
     A = n(266244),
     f = n(439817),
     g = n(985018),
-    _ = n(156052);
+    m = n(156052);
 
-function m(e) {
+function _(e) {
     let {
         closePopout: t
     } = e;
@@ -48,13 +48,13 @@ class x extends s.PureComponent {
             onDragStart: this.onDragStart
         }, e) : (0, i.jsx)(f.A, {
             title: g.intl.string(g.t.YUU0RF),
-            renderSettings: m,
+            renderSettings: _,
             onDragStart: this.onDragStart,
             children: (0, i.jsx)(A.A, {})
         }), r = n ? "div" : u.Ay;
         return (0, i.jsxs)(r, {
-            className: a()(_.E, {
-                [_.H]: !n
+            className: a()(m.E, {
+                [m.H]: !n
             }, s),
             children: [(0, i.jsx)(d.A, {
                 isOverlay: !0,

@@ -1,30 +1,30 @@
 /** chunk id: 38910 params = (module,exports,require) **/
-s.d(t, {
-    A: () => o
+n.d(t, {
+    A: () => s
 });
-var i = s(562465),
-    n = s(73153),
-    a = s(652215);
-let o = {
+var i = n(562465),
+    l = n(73153),
+    r = n(652215);
+let s = {
     async fetch() {
         try {
             let e = await i.Bo.get({
-                url: a.Rsh.FRIEND_SUGGESTIONS,
+                url: r.Rsh.FRIEND_SUGGESTIONS,
                 rejectWithError: !0
             });
-            n.h.dispatch({
+            l.h.dispatch({
                 type: "LOAD_FRIEND_SUGGESTIONS_SUCCESS",
                 suggestions: e.body
             })
         } catch (e) {
-            n.h.dispatch({
+            l.h.dispatch({
                 type: "LOAD_FRIEND_SUGGESTIONS_FAILURE"
             })
         }
     },
     ignore(e) {
         i.Bo.del({
-            url: a.Rsh.FRIEND_SUGGESTION(e),
+            url: r.Rsh.FRIEND_SUGGESTION(e),
             rejectWithError: !0
         })
     }

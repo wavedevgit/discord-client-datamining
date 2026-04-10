@@ -1,6 +1,6 @@
 /** chunk id: 464473 params = (module,exports,require) **/
 n.d(e, {
-    A: () => _
+    A: () => E
 });
 var i = n(627968),
     l = n(311907),
@@ -15,7 +15,7 @@ function u() {
     (0, o.sL)("nagbar")
 }
 
-function _() {
+function E() {
     return null == (0, l.bG)([s.Ay], () => s.Ay.getVisibleGame()) ? null : (0, i.jsxs)(r.$Td, {
         color: r.Hv$.DANGER,
         children: [(0, i.jsx)(r.PMB, {

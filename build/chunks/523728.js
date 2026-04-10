@@ -1,11 +1,11 @@
 /** chunk id: 523728 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => l
 });
 var i = n(652215),
     r = n(985018);
 
-function a(e) {
+function l(e) {
     if (null == e) return null;
     switch (e.type) {
         case i.rbe.GUILD_ANNOUNCEMENT:

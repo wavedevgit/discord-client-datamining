@@ -1,47 +1,47 @@
 /** chunk id: 834425 params = (module,exports,require) **/
-n.d(e, {
+n.d(t, {
     A: () => o
 });
 var i = n(627968);
 n(64700);
 var l = n(397927),
-    r = n(729937),
+    a = n(729937),
     s = n(307600),
-    a = n(998218);
+    r = n(998218);
 
-function o(t) {
+function o(e) {
     let {
-        activity: e,
+        activity: t,
         user: n,
         variant: o = "secondary",
-        onAction: u,
+        onAction: c,
         ...d
-    } = t;
-    if (e?.buttons == null || e.buttons.length < 1) return null;
-    async function c(t, e, n) {
+    } = e;
+    if (t?.buttons == null || t.buttons.length < 1) return null;
+    async function u(e, t, n) {
         try {
-            let i = await (0, r.yb)(t, e);
+            let i = await (0, a.yb)(e, t);
             if (i.button_urls.length <= n) return;
             let l = i.button_urls[n];
             if ("string" != typeof l) return;
-            let o = a.A.safeParseWithQuery(l);
+            let o = r.A.safeParseWithQuery(l);
             if (null == o || null == o.protocol || null == o.hostname) return;
             (0, s.h)({
-                href: a.A.format(o),
+                href: r.A.format(o),
                 trusted: !1
             })
-        } catch (t) {}
+        } catch (e) {}
     }
     return (0, i.jsx)(i.Fragment, {
-        children: e.buttons.map((t, r) => (0, i.jsx)(l.Button, {
-            text: t,
+        children: t.buttons.map((e, a) => (0, i.jsx)(l.Button, {
+            text: e,
             variant: o,
             size: "sm",
             fullWidth: !0,
             onClick: () => {
-                u?.(), c(e, n.id, r)
+                c?.(), u(t, n.id, a)
             },
             ...d
-        }, `customButton-${r}`))
+        }, `customButton-${a}`))
     })
 }

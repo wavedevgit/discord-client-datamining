@@ -1,12 +1,12 @@
 /** chunk id: 950557 params = (module,exports,require) **/
 n.d(t, {
-    h: () => r
+    h: () => a
 });
 var i = n(419954),
     s = n(780964),
     l = n(121274),
-    a = n(985018);
-let r = (0, i.zZ)(s.X.NOTIFICATIONS_BADGES_CATEGORY, {
-    useTitle: () => a.intl.string(a.t.l6w3Vj),
+    r = n(985018);
+let a = (0, i.zZ)(s.X.NOTIFICATIONS_BADGES_CATEGORY, {
+    useTitle: () => r.intl.string(r.t.l6w3Vj),
     buildLayout: () => [l.f]
 })

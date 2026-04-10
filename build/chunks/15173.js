@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(158954),
+    r = n.n(l),
+    a = n(158954),
     o = n(311907),
     d = n(397927),
     c = n(98207),
@@ -46,12 +46,12 @@ function h() {
                 children: (0, i.jsx)(d.Button, {
                     text: x.intl.string(x.t["OO+Nib"]),
                     variant: "secondary",
-                    icon: r.s3U
+                    icon: a.s3U
                 })
             }), (0, i.jsx)(d.Button, {
                 text: x.intl.string(x.t["3x962E"]),
                 variant: "secondary",
-                icon: r.fNY,
+                icon: a.fNY,
                 onClick: T
             })]
         })]
@@ -81,16 +81,16 @@ function f(e) {
             consumed: n
         }
     } = e, l = p(t), o = s.useRef(null), c = (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(r.P7L, {
+        children: [(0, i.jsx)(a.P7L, {
             checked: n
-        }), (0, i.jsx)(r.EYj, {
+        }), (0, i.jsx)(a.EYj, {
             variant: "text-md/normal",
             children: l
         })]
     });
-    return _.p5 ? (0, i.jsx)(r.DUT, {
+    return _.p5 ? (0, i.jsx)(a.DUT, {
         tag: "li",
-        className: a()(A.aY, A.vk),
+        className: r()(A.aY, A.vk),
         innerRef: o,
         onKeyDown: e => {
             "c" === e.key && (e.metaKey || e.ctrlKey) && (e.preventDefault(), e.stopPropagation(), (0, _.C)(l), o?.current?.focus())

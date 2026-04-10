@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(397927),
-    a = n(557722),
-    r = n(419954),
+    r = n(557722),
+    a = n(419954),
     o = n(933297),
     d = n(662758),
     c = n(287809),
@@ -44,14 +44,14 @@ function h() {
                     title: A.intl.string(A.t["3CTiKi"]),
                     children: e.hasFlag(_.nhx.MFA_SMS) ? A.intl.string(A.t.jrhJyo) : void 0,
                     actionText: A.intl.string(A.t.N86XcP),
-                    handleSubmit: e => a.A.removePhone(e, a.d.USER_SETTINGS_UPDATE)
+                    handleSubmit: e => r.A.removePhone(e, r.d.USER_SETTINGS_UPDATE)
                 }))
             },
             "aria-label": A.intl.string(A.t.Rpn4A3)
         })]
     })
 }
-let p = (0, r.Tf)(u.X.ACCOUNT_INFO_PHONE_SETTING, {
+let p = (0, a.Tf)(u.X.ACCOUNT_INFO_PHONE_SETTING, {
     usePredicate: () => (0, s.bG)([c.default], () => c.default.getCurrentUser()?.isClaimed()) ?? !1,
     useTitle: () => A.intl.string(A.t.kerONq),
     useAriaLabel: function() {
@@ -71,7 +71,7 @@ let p = (0, r.Tf)(u.X.ACCOUNT_INFO_PHONE_SETTING, {
                 default: e
             } = await Promise.resolve().then(n.bind(n, 615715));
             return t => (0, i.jsx)(e, {
-                reason: a.d.USER_SETTINGS_UPDATE,
+                reason: r.d.USER_SETTINGS_UPDATE,
                 ...t
             })
         }, {

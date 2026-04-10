@@ -27,18 +27,18 @@ function g(e) {
     } = e;
     f = !0, A.x = t, A.y = n
 }
-let _ = new Map;
+let m = new Map;
 
-function m(e, t) {
-    if (null == t) _.delete(e), 0 === _.size && (window.removeEventListener("mousemove", g), f = !1);
+function _(e, t) {
+    if (null == t) m.delete(e), 0 === m.size && (window.removeEventListener("mousemove", g), f = !1);
     else {
-        let n = _.get(e);
+        let n = m.get(e);
         if (null != n && (0, r.A)(n.zone, t.zone)) return;
-        0 === _.size && window.addEventListener("mousemove", g), _.set(e, t)
+        0 === m.size && window.addEventListener("mousemove", g), m.set(e, t)
     }
     if (p.isPlatformEmbedded)
         if (c.default.isCurrentPidOutOfProcess()) {
-            let e = Array.from(_.values()).map(e => {
+            let e = Array.from(m.values()).map(e => {
                 let {
                     zone: t
                 } = e;
@@ -57,14 +57,14 @@ function m(e, t) {
             if (null == e) return;
             e.broadcastCommand({
                 message: "set_click_zones",
-                zones: Array.from(_.values()).map(e => {
+                zones: Array.from(m.values()).map(e => {
                     let {
                         zone: t
                     } = e;
                     return t
                 })
             }), n = e, x || (n.setClickZoneCallback((e, t, n) => {
-                let i = _.get(e);
+                let i = m.get(e);
                 null != i && (f || (A.x = t, A.y = n), i.instance.click())
             }), x = !0)
         }
@@ -81,7 +81,7 @@ class E extends i.PureComponent {
         this.props.observe ? this.observeZone() : this.updateZone()
     }
     componentWillUnmount() {
-        this.interval.stop(), m(this.zone, null)
+        this.interval.stop(), _(this.zone, null)
     }
     componentDidUpdate(e) {
         let {
@@ -104,7 +104,7 @@ class E extends i.PureComponent {
                 right: i,
                 bottom: s
             } = e.getBoundingClientRect();
-            m(this.zone, {
+            _(this.zone, {
                 instance: this,
                 zone: {
                     name: this.zone,

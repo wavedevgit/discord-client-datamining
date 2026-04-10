@@ -1,42 +1,43 @@
 /** chunk id: 451483 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => d
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(397927),
-    r = n(517905),
-    s = n(763754),
-    o = n(888675),
-    c = n(985018);
+    r = n(64700),
+    s = n(397927),
+    l = n(517905),
+    a = n(763754),
+    c = n(888675),
+    o = n(985018);
 
 function u(e) {
     let {
         children: t,
         messageReference: n,
-        guildName: s
-    } = e, o = l.useRef(null);
-    if (null == n) return (0, i.jsx)(a.MzZ, {
+        guildName: a
+    } = e, c = r.useRef(null);
+    if (null == n) return (0, i.jsx)(s.MzZ, {
         children: t
     });
     let {
-        guild_id: c
+        guild_id: o
     } = n;
-    return null == c ? (0, i.jsx)(a.MzZ, {
+    return null == o ? (0, i.jsx)(s.MzZ, {
         children: t
-    }) : (0, i.jsx)(r.A, {
-        guildId: c,
-        name: s,
-        targetElementRef: o,
+    }) : (0, i.jsx)(l.A, {
+        guildId: o,
+        name: a,
+        targetElementRef: c,
         children: e => {
             let {
                 "aria-controls": n,
-                "aria-expanded": l,
-                ...r
+                "aria-expanded": r,
+                ...l
             } = e;
-            return (0, i.jsx)(a.MzZ, {
-                ...r,
-                ref: o,
+            return (0, i.jsx)(s.MzZ, {
+                ...l,
+                ref: c,
                 children: t
             })
         }
@@ -46,26 +47,26 @@ function u(e) {
 function d(e) {
     let {
         usernameHook: t,
-        message: l,
-        compact: a
+        message: r,
+        compact: s
     } = e, {
-        content: r,
+        content: l,
         timestamp: d,
         messageReference: _
-    } = l, A = (0, s.Ay)(l), m = t(A), E = (r ?? "").split(" ").slice(0, -1).join(" "), T = c.intl.format(c.t["47CZc2"], {
-        username: A.nick,
-        usernameHook: m,
-        webhookName: r,
+    } = r, E = (0, a.Ay)(r), A = t(E), m = (l ?? "").split(" ").slice(0, -1).join(" "), I = o.intl.format(o.t["47CZc2"], {
+        username: E.nick,
+        usernameHook: A,
+        webhookName: l,
         webhookNameHook: (e, t) => (0, i.jsx)(u, {
             messageReference: _,
-            guildName: E,
+            guildName: m,
             children: e
         }, t)
     });
-    return (0, i.jsx)(o.A, {
+    return (0, i.jsx)(c.A, {
         icon: n(617184),
         timestamp: d,
-        compact: a,
-        children: T
+        compact: s,
+        children: I
     })
 }

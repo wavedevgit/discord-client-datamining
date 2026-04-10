@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    a = n(793574),
-    r = n(688810),
+    r = n(793574),
+    a = n(688810),
     o = n(823092),
     d = n(954571),
     c = n(979286),
@@ -18,7 +18,7 @@ var i = n(627968),
 let A = () => {
     let {
         analyticsLocations: e
-    } = (0, r.Ay)(a.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), t = s.useRef(null), {
+    } = (0, a.Ay)(r.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), t = s.useRef(null), {
         asset: n,
         popoutAsset: A,
         title: h,
@@ -65,7 +65,7 @@ let A = () => {
             onClick: () => {
                 S(() => (0, c.Cz)({
                     analyticsLocations: e,
-                    analyticsSource: a.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
+                    analyticsSource: r.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
                 }))
             },
             variant: "overlay-primary",

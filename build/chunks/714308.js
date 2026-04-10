@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(327479),
-    a = n(985018),
-    r = n(519983),
+    r = n(985018),
+    a = n(519983),
     o = n(193921);
 
 function d(e) {
@@ -18,37 +18,37 @@ function d(e) {
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(s.Heading, {
             variant: "heading-md/bold",
-            children: a.intl.string(a.t["48ywCu"])
+            children: r.intl.string(r.t["48ywCu"])
         }), (0, i.jsx)(s.hKd, {
             size: 4
         }), (0, i.jsx)(s.Text, {
             variant: "text-md/normal",
-            className: r.yV,
-            children: a.intl.string(a.t.VWxmSo)
+            className: a.yV,
+            children: r.intl.string(r.t.VWxmSo)
         }), (0, i.jsx)(s.hKd, {
             size: 24
         }), (0, i.jsxs)("div", {
-            className: r.Nr,
+            className: a.Nr,
             children: [(0, i.jsx)("img", {
                 src: o,
                 alt: "",
-                className: r._e
+                className: a._e
             }), (0, i.jsxs)("div", {
-                className: r.FS,
+                className: a.FS,
                 children: [(0, i.jsx)(s.Heading, {
                     variant: "heading-xl/semibold",
-                    className: r.wx,
-                    children: a.intl.string(a.t["48ywCu"])
+                    className: a.wx,
+                    children: r.intl.string(r.t["48ywCu"])
                 }), (0, i.jsx)(s.Text, {
                     variant: "text-md/normal",
-                    className: r.h_,
-                    children: a.intl.format(a.t["/esXLj"], {
+                    className: a.h_,
+                    children: r.intl.format(r.t["/esXLj"], {
                         numSubscriptions: n
                     })
                 })]
             }), (0, i.jsx)(l.A, {
                 onClick: t,
-                text: a.intl.string(a.t["z5YcJ+"])
+                text: r.intl.string(r.t["z5YcJ+"])
             })]
         })]
     })

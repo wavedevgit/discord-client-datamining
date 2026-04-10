@@ -4,8 +4,8 @@ r.r(t), r.d(t, {
 });
 var n = r(627968),
     l = r(64700),
-    u = r(158954),
-    s = r(311907),
+    s = r(158954),
+    u = r(311907),
     i = r(397927),
     a = r(734057),
     c = r(287809),
@@ -16,10 +16,10 @@ var n = r(627968),
     A = r(204459),
     _ = r(665691),
     S = r(998759),
-    g = r(50299),
-    T = r(82821),
-    C = r(75811),
-    R = r(930840);
+    T = r(50299),
+    g = r(82821),
+    R = r(75811),
+    C = r(930840);
 r(603266);
 var m = r(652215),
     y = r(985018),
@@ -29,10 +29,10 @@ function I(e) {
     let {
         badgeText: t,
         badgeColor: r
-    } = e, u = l.useRef(t), s = l.useRef(r);
+    } = e, s = l.useRef(t), u = l.useRef(r);
     return (0, n.jsx)(i.LpS, {
-        text: u.current,
-        color: s.current
+        text: s.current,
+        color: u.current
     })
 }
 
@@ -42,16 +42,16 @@ function h(e) {
         userId: r,
         channelId: h,
         onClose: x
-    } = e, U = (0, s.bG)([c.default], () => c.default.getUser(r)), F = (0, s.bG)([a.A], () => a.A.getChannel(h)?.getGuildId()), p = o.Ay.useName(F, null, U), {
+    } = e, U = (0, u.bG)([c.default], () => c.default.getUser(r)), F = (0, u.bG)([a.A], () => a.A.getChannel(h)?.getGuildId()), p = o.Ay.useName(F, null, U), {
         fingerprint: b,
         userKey: k
-    } = (0, g.R)({
+    } = (0, T.R)({
         userId: r
-    }), v = (0, S.z)({
+    }), w = (0, S.z)({
         fingerprintBase64: b,
         chunkSize: 5,
         desiredLength: 45
-    }), w = l.useCallback(() => {
+    }), v = l.useCallback(() => {
         (0, d.Hb)({
             userId: r,
             channelId: h
@@ -80,7 +80,7 @@ function h(e) {
         isCurrentUserKeyPersistent: D,
         isOtherUserKeyPersistent: O,
         otherUserNickname: p
-    }), [D, O, p]), P = (0, T.H)({
+    }), [D, O, p]), P = (0, g.H)({
         userId: r,
         keyToOmit: k
     });
@@ -112,14 +112,14 @@ function h(e) {
                         variant: "text-sm/bold",
                         color: "text-strong",
                         children: y.intl.string(y.t["/WPGnF"])
-                    }), null != v && (0, n.jsx)(R.c, {
+                    }), null != w && (0, n.jsx)(C.c, {
                         className: N.nJ,
-                        chunks: v,
+                        chunks: w,
                         color: i.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
-                        onCopy: w
+                        onCopy: v
                     }), (0, n.jsx)("div", {
                         className: N.ub,
-                        children: null == v ? (0, n.jsx)(i.y$y, {
+                        children: null == w ? (0, n.jsx)(i.y$y, {
                             className: N.u1,
                             type: i.tVU.SPINNING_CIRCLE
                         }) : (0, n.jsx)(I, {
@@ -127,9 +127,9 @@ function h(e) {
                             badgeColor: G
                         })
                     })]
-                }), (0, n.jsx)(C.j, {
+                }), (0, n.jsx)(R.j, {
                     className: N.aY,
-                    chunks: v,
+                    chunks: w,
                     columns: 3
                 })]
             }), (0, n.jsx)(i.Text, {
@@ -141,7 +141,7 @@ function h(e) {
         }),
         H = {
             text: M ? y.intl.string(y.t["Osb+/n"]) : y.intl.string(y.t["0tvNAn"]),
-            disabled: null == v || V,
+            disabled: null == w || V,
             onClick: M ? K : j
         },
         q = {
@@ -149,7 +149,7 @@ function h(e) {
             onClick: x,
             variant: "secondary"
         };
-    return (0, n.jsx)(u.Modal, {
+    return (0, n.jsx)(s.Modal, {
         onClose: x,
         ...z,
         actions: [q, H],

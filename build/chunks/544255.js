@@ -22,14 +22,14 @@ function A(t) {
         channel: g
     } = t, _ = null != n, {
         canManageGuildEvent: h
-    } = (0, d.nr)(g ?? A), [T, f] = (0, r.yK)([s.Ay], () => [s.Ay.isActive(e), s.Ay.getGuildScheduledEvent(e)]), y = (0, o.A)(n, f?.id), v = null != f && h(f), p = f?.recurrence_rule != null && !_, m = (0, c.nh)(e, n);
-    if (!v || T && !p && !_ || _ && !_ || null == f || null == m) return null;
+    } = (0, d.nr)(g ?? A), [T, f] = (0, r.yK)([s.Ay], () => [s.Ay.isActive(e), s.Ay.getGuildScheduledEvent(e)]), m = (0, o.A)(n, f?.id), y = null != f && h(f), v = f?.recurrence_rule != null && !_, p = (0, c.nh)(e, n);
+    if (!y || T && !v && !_ || _ && !_ || null == f || null == p) return null;
     let {
         startTime: N
-    } = m;
+    } = p;
     if (T && _) {
         if (null == N) return null;
-        let t = new Date(y?.scheduled_start_time ?? N);
+        let t = new Date(m?.scheduled_start_time ?? N);
         if (new Date > t) return null
     }
     let S = t => {
@@ -37,10 +37,10 @@ function A(t) {
             ...r,
             title: E.intl.string(E.t.R5bpin),
             subtitle: E.intl.string(E.t.v2GWNQ),
-            confirmText: p || t ? E.intl.string(E.t["8ZsNv5"]) : E.intl.string(E.t.B9sJLX),
+            confirmText: v || t ? E.intl.string(E.t["8ZsNv5"]) : E.intl.string(E.t.B9sJLX),
             cancelText: E.intl.string(E.t.oEAioF),
-            onConfirm: () => _ && !t ? u.A.deleteRecurrence(A.id, e, n, y) : u.A.deleteGuildEvent(e, A.id),
-            children: (p || t) && (0, l.jsx)(a.Text, {
+            onConfirm: () => _ && !t ? u.A.deleteRecurrence(A.id, e, n, m) : u.A.deleteGuildEvent(e, A.id),
+            children: (v || t) && (0, l.jsx)(a.Text, {
                 variant: "text-md/normal",
                 children: E.intl.format(E.t.ZcpcyO, {})
             })
@@ -56,7 +56,7 @@ function A(t) {
                 id: E.intl.string(E.t.tqClly),
                 label: E.intl.string(E.t.tqClly),
                 action: () => S(),
-                disabled: y?.is_canceled,
+                disabled: m?.is_canceled,
                 color: "danger"
             }), (0, l.jsx)(a.Drp, {
                 id: E.intl.string(E.t.wr33rW),

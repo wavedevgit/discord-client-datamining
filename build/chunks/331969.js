@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(158954),
-    a = n(311907),
-    r = n(397927),
+    r = n(311907),
+    a = n(397927),
     o = n(97260),
     d = n(337692),
     c = n(235986),
@@ -31,7 +31,7 @@ function S(e) {
 function E() {
     return (0, i.jsx)("div", {
         className: p.i1,
-        children: (0, i.jsx)(r.Text, {
+        children: (0, i.jsx)(a.Text, {
             variant: "text-md/medium",
             color: "text-muted",
             className: p.GN,
@@ -47,11 +47,11 @@ function b(e) {
     s.useEffect(() => {
         n.current = t
     });
-    let [l, a] = s.useState(t.params?.channelId ?? void 0), d = s.useCallback(() => {
-        (0, r.mMO)(async () => e => (0, i.jsx)(C, {
+    let [l, r] = s.useState(t.params?.channelId ?? void 0), d = s.useCallback(() => {
+        (0, a.mMO)(async () => e => (0, i.jsx)(C, {
             ...e,
             onSelect: e => {
-                a(e), o.A.setKeybind({
+                r(e), o.A.setKeybind({
                     ...n.current,
                     params: {
                         channelId: e
@@ -62,7 +62,7 @@ function b(e) {
     }, []);
     return (0, i.jsx)("div", {
         className: p.a8,
-        children: (0, i.jsx)(r.D0$, {
+        children: (0, i.jsx)(a.D0$, {
             label: h.intl.string(h.t.q4JpM8),
             children: (0, i.jsxs)(c.A, {
                 align: c.A.Align.STRETCH,
@@ -74,7 +74,7 @@ function b(e) {
                 }), (0, i.jsx)(c.A.Child, {
                     grow: 0,
                     shrink: 0,
-                    children: (0, i.jsx)(r.Button, {
+                    children: (0, i.jsx)(a.Button, {
                         variant: "primary",
                         text: h.intl.string(h.t.Dm8O4e),
                         onClick: d
@@ -102,7 +102,7 @@ function C(e) {
             autocompleterResultTypes: f,
             autocompleterBeforeCreateSearchContext: S
         }),
-        j = (t = "" !== v, n = (0, a.yK)([g.Ay, m.A, x.A], () => {
+        j = (t = "" !== v, n = (0, r.yK)([g.Ay, m.A, x.A], () => {
             let e = x.A.getGuildId();
             if (t || null == e) return [];
             let n = [];
@@ -186,7 +186,7 @@ function C(e) {
         title: h.intl.string(h.t.Dm8O4e),
         subtitle: h.intl.string(h.t.q4JpM8),
         actions: void 0,
-        input: (0, i.jsx)(r.ksK, {
+        input: (0, i.jsx)(a.ksK, {
             value: v,
             onChange: N,
             onKeyDown: function(e) {
@@ -231,7 +231,7 @@ function v(e) {
         channel: n,
         category: s,
         guild: l
-    } = (0, a.cf)([m.A, _.A], () => {
+    } = (0, r.cf)([m.A, _.A], () => {
         let e = null != t ? m.A.getChannel(t) : void 0;
         return null != e ? {
             channel: e,
@@ -243,7 +243,7 @@ function v(e) {
             guild: void 0
         }
     });
-    return null == n ? (0, i.jsx)(r.Text, {
+    return null == n ? (0, i.jsx)(a.Text, {
         variant: "text-md/medium",
         color: "text-muted",
         className: p.GN,

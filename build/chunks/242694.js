@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(397927),
     l = n(975571),
-    a = n(68925),
-    r = n(137770),
+    r = n(68925),
+    a = n(137770),
     o = n(652215),
     d = n(788868),
     c = n(985018),
@@ -34,12 +34,12 @@ function m(e) {
                     helpdeskArticle: x
                 })
             })]
-        }), (0, i.jsx)(a.A, {
+        }), (0, i.jsx)(r.A, {
             guildBoostSlots: n,
             premiumSubscription: m,
             pausedAppliedGuildBoosts: g,
             isPaused: A
-        }), (0, i.jsx)(r.A, {
+        }), (0, i.jsx)(a.A, {
             guildBoostSlots: t,
             fractionalPremiumState: _
         })]

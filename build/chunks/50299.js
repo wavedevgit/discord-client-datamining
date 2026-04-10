@@ -4,8 +4,8 @@ r.d(t, {
 }), r(393431), r(532706), r(42231), r(232424), r(949626), r(767709), r(65162);
 var n = r(64700),
     l = r(827762),
-    u = r(284009),
-    s = r.n(u),
+    s = r(284009),
+    u = r.n(s),
     i = r(311907),
     a = r(149597),
     c = r(961350),
@@ -18,23 +18,23 @@ function f(e) {
     let {
         userId: t
     } = e, r = (0, i.bG)([c.default], () => c.default.getId());
-    s()(r !== t, "[useSecureFramesPairwiseFingerprint] Should not pass current user id.");
-    let [u, f] = n.useState(null), [A, _] = n.useState(!1), S = (0, i.bG)([d.A], () => d.A.getSecureFramesRosterMapEntry(t)), g = (0, i.bG)([d.A], () => d.A.getSecureFramesRosterMapEntry(r)), T = n.useCallback(e => {
+    u()(r !== t, "[useSecureFramesPairwiseFingerprint] Should not pass current user id.");
+    let [s, f] = n.useState(null), [A, _] = n.useState(!1), S = (0, i.bG)([d.A], () => d.A.getSecureFramesRosterMapEntry(t)), T = (0, i.bG)([d.A], () => d.A.getSecureFramesRosterMapEntry(r)), g = n.useCallback(e => {
         f(l.fromByteArray(e)), _(!1)
-    }, []), C = n.useCallback(async (e, t, r, n) => {
+    }, []), R = n.useCallback(async (e, t, r, n) => {
         o.Ay.supports(E.O5.MLS_PAIRWISE_FINGERPRINTS) ? d.A.getRTCConnection()?.getMLSPairwiseFingerprint(0, r, e => {
-            T(new Uint8Array(e))
-        }) : T(await (0, a._x)(0, new Uint8Array(t), e, new Uint8Array(n), r))
-    }, [T]), R = n.useRef(null);
+            g(new Uint8Array(e))
+        }) : g(await (0, a._x)(0, new Uint8Array(t), e, new Uint8Array(n), r))
+    }, [g]), C = n.useRef(null);
     return n.useEffect(() => {
-        null != S && null != g && null == R.current && (_(!0), R.current = setTimeout(() => C(r, g, t, S), 0));
-        let e = R.current;
+        null != S && null != T && null == C.current && (_(!0), C.current = setTimeout(() => R(r, T, t, S), 0));
+        let e = C.current;
         return () => {
             null != e && clearTimeout(e)
         }
-    }, [r, g, C, t, S]), n.useMemo(() => ({
-        fingerprint: u,
+    }, [r, T, R, t, S]), n.useMemo(() => ({
+        fingerprint: s,
         userKey: S,
         loading: A
-    }), [u, A, S])
+    }), [s, A, S])
 }

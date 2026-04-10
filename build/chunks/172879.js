@@ -1,15 +1,14 @@
 /** chunk id: 172879 params = (module,exports,require) **/
-"use strict";
-var a = n(557939),
-    i = n(108591),
-    r = n(581390),
-    o = n(633228),
+var o = t(557939),
+    r = t(108591),
+    _ = t(581390),
+    i = t(633228),
     l = Array;
-a({
+o({
     target: "Array",
     proto: !0
 }, {
     toReversed: function() {
-        return i(r(this), l)
+        return r(_(this), l)
     }
-}), o("toReversed")
+}), i("toReversed")

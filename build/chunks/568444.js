@@ -1,15 +1,15 @@
 /** chunk id: 568444 params = (module,exports,require) **/
 n.d(t, {
-    E: () => r
+    E: () => a
 });
 var i = n(253932),
     s = n(954571),
     l = n(652215),
-    a = n(406535);
+    r = n(406535);
 
-function r(e) {
+function a(e) {
     i.Yh.updateSetting(e), s.default.track(l.HAw.NOTIFICATION_SETTINGS_UPDATED, {
-        update_type: a.Y.ACCOUNT,
+        update_type: r.Y.ACCOUNT,
         go_live_notifications: e
     })
 }

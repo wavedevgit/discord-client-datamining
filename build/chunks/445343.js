@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(93857),
     l = n(106148),
-    a = n(650832),
-    r = n(975571),
+    r = n(650832),
+    a = n(975571),
     o = n(500470),
     d = n(652215),
     c = n(842130),
@@ -18,10 +18,10 @@ function m() {
         t = s.yH.useControlledSetting(e),
         n = s.kf.useControlledSetting(e);
     return null == e ? null : (0, i.jsx)(l.h, {
-        children: (0, i.jsx)(a.Ay, {
+        children: (0, i.jsx)(r.Ay, {
             title: u.intl.string(u.t.CyLYKZ),
             note: u.intl.format(c.default["6mK5Pz"], {
-                helpdeskArticle: r.A.getArticleURL(d.MVz.QUESTS_PRIVACY_CONTROLS)
+                helpdeskArticle: a.A.getArticleURL(d.MVz.QUESTS_PRIVACY_CONTROLS)
             }),
             value: !t,
             onChange: t => s.yH.updateControlledSetting(e, !t),

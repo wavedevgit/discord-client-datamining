@@ -16,8 +16,8 @@ n.d(t, {
     xj: () => T,
     yx: () => P
 }), n(321073);
-var i, a = n(6161),
-    r = n(681154);
+var i, r = n(6161),
+    a = n(681154);
 n(311907), n(256265);
 var l = n(698441),
     s = n(141468),
@@ -27,8 +27,8 @@ var l = n(698441),
 n(320501);
 var u = n(222823),
     A = n(661191),
-    _ = n(4106),
-    h = n(335934),
+    h = n(4106),
+    _ = n(335934),
     m = n(800319),
     g = n(883344),
     p = n(596720),
@@ -50,15 +50,15 @@ function N(e) {
 }
 async function S(e, t, n) {
     let i = g.A.getHydratedItems(),
-        a = e.slice(t, n);
-    if (0 === a.length) return;
-    _.A.loadHydratedAttempt(f(t, n));
-    let r = a.filter(e => null == i[e.id]),
-        l = r.filter(e => e.type === p.Mm.MESSAGE).map(e => ({
+        r = e.slice(t, n);
+    if (0 === r.length) return;
+    h.A.loadHydratedAttempt(f(t, n));
+    let a = r.filter(e => null == i[e.id]),
+        l = a.filter(e => e.type === p.Mm.MESSAGE).map(e => ({
             channel_id: e.data.channel_id,
             message_id: e.data.message_id
         })),
-        s = r.map(e => {
+        s = a.map(e => {
             if (e.type === p.Mm.MESSAGE) {
                 let t = [];
                 return e.data.message_context?.reply_message_id != null && t.push({
@@ -74,11 +74,11 @@ async function S(e, t, n) {
             }
             return []
         }).flat().filter(Boolean),
-        o = r.filter(e => e.type === p.Mm.ACTIVITY).map(e => ({
+        o = a.filter(e => e.type === p.Mm.ACTIVITY).map(e => ({
             user_id: e.data.user_id,
             content_id: e.data.content_id
         }));
-    await _.A.fetchHydrated(t, n, {
+    await h.A.fetchHydrated(t, n, {
         messageItems: [...l, ...s],
         activityItems: o
     })
@@ -104,7 +104,7 @@ function b(e, t) {
 }
 
 function y(e) {
-    return (0, h.HF)(e)
+    return (0, _.HF)(e)
 }
 
 function O(e) {
@@ -114,10 +114,10 @@ function O(e) {
         activity: {
             id: e.id,
             author_id: e.data.user_id,
-            author_type: a.ContentInventoryAuthorType.USER,
+            author_type: r.ContentInventoryAuthorType.USER,
             traits: [],
             participants: [],
-            content_type: r.ContentInventoryEntryType.CUSTOM_STATUS,
+            content_type: a.ContentInventoryEntryType.CUSTOM_STATUS,
             extra: {
                 type: "custom_status_extra",
                 status: e.data.text ?? "",
@@ -135,8 +135,8 @@ function O(e) {
 function L(e, t, n) {
     let i = E.A.getReadTimestamp(e);
     null == i && (i = n?.[e]);
-    let a = E.A.getReadTimestamp(t);
-    return (null == a && (a = n?.[t]), null == i && null == a) ? 0 : null == i ? -1 : null == a ? 1 : a - i
+    let r = E.A.getReadTimestamp(t);
+    return (null == r && (r = n?.[t]), null == i && null == r) ? 0 : null == i ? -1 : null == r ? 1 : r - i
 }
 
 function R(e) {
@@ -171,8 +171,8 @@ function P(e) {
     }
     let i = d.A.getChannel(t);
     if (i?.nsfw) return !0;
-    let a = null != (n = i?.guild_id ?? n) ? c.A.getGuild(n) : null;
-    return a?.nsfwLevel === I.ftr.EXPLICIT || a?.nsfwLevel === I.ftr.AGE_RESTRICTED
+    let r = null != (n = i?.guild_id ?? n) ? c.A.getGuild(n) : null;
+    return r?.nsfwLevel === I.ftr.EXPLICIT || r?.nsfwLevel === I.ftr.AGE_RESTRICTED
 }
 
 function D(e) {
@@ -190,7 +190,7 @@ function D(e) {
         case "guildEvent":
             return "guild_event";
         case "contentInventory":
-            if (e.data.content.content_type === r.ContentInventoryEntryType.CUSTOM_STATUS) return "hotwheels_custom_status";
+            if (e.data.content.content_type === a.ContentInventoryEntryType.CUSTOM_STATUS) return "hotwheels_custom_status";
             return "hotwheels_gaming_activity";
         case "recommendedGuilds":
             return "recommended_guilds";
@@ -213,8 +213,8 @@ async function j(e) {
             object: e,
             objectType: i.ACK_SEMI_AUTOMATIC
         }, !0, !0, A.default.atPreviousMillisecond(n.data.message_id))
-    }), await _.A.clearReadStates(), await _.A.fetchDehydrated({
+    }), await h.A.clearReadStates(), await h.A.fetchDehydrated({
         isReloading: !0,
         forceRefresh: !0
-    }), await _.A.reloadICYMITab(), await _.A.getGuildChannelScores(), _.A.getRecommendedGuilds()
+    }), await h.A.reloadICYMITab(), await h.A.getGuildChannelScores(), h.A.getRecommendedGuilds()
 }

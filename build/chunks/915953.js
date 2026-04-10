@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    a = n(600812),
-    r = n(791498),
+    r = n(600812),
+    a = n(791498),
     o = n(244242);
 
 function d(e) {
@@ -31,10 +31,10 @@ function d(e) {
         fieldLayout: b,
         usePersistentBadge: C,
         getDismissibleBadges: v
-    } = t, [N] = s.useState(() => d()), I = h?.(), j = g(), y = _?.(), O = x?.(), R = A?.(), L = m?.(), P = C?.(), D = v?.(), G = (0, a.A)({
+    } = t, [N] = s.useState(() => d()), I = h?.(), j = g(), y = _?.(), O = x?.(), R = A?.(), L = m?.(), P = C?.(), D = v?.(), G = (0, r.A)({
         persistentBadge: P,
         dismissibleBadges: D
-    }), M = (0, r.q)(t);
+    }), M = (0, a.q)(t);
     return (0, i.jsxs)(o.L, {
         children: [(0, i.jsx)(l.Apm, {
             label: j,

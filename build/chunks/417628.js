@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(139033),
     l = n(314116),
-    a = n(397927),
-    r = n(631670),
+    r = n(397927),
+    a = n(631670),
     o = n(425587),
     d = n(662758),
     c = n(71393),
@@ -35,9 +35,9 @@ async function x() {
     }) : c.A.getGuildsArray().filter(e => e.ownerId === t.id).length > 0 ? (0, s.A)({
         title: g.intl.string(g.t.I5UrbV),
         subtitle: g.intl.string(g.t.UyVVan)
-    }) : t.isClaimed() ? (0, a.qfG)(t => (0, i.jsx)(d.default, {
+    }) : t.isClaimed() ? (0, r.qfG)(t => (0, i.jsx)(d.default, {
         ...t,
-        handleSubmit: t => (0, r.U_)(t, e).then(m.tEg, _),
+        handleSubmit: t => (0, a.U_)(t, e).then(m.tEg, _),
         title: e ? g.intl.string(g.t["8lQ2rR"]) : g.intl.string(g.t.jf5GGb),
         actionText: e ? g.intl.string(g.t["8lQ2rR"]) : g.intl.string(g.t.jf5GGb),
         variant: "critical-primary",
@@ -46,6 +46,6 @@ async function x() {
         title: g.intl.string(g.t["8lQ2rR"]),
         subtitle: g.intl.string(g.t.FB4H1D),
         confirmText: g.intl.string(g.t["8lQ2rR"]),
-        onConfirm: () => (0, r.U_)("", !0)
+        onConfirm: () => (0, a.U_)("", !0)
     })
 }

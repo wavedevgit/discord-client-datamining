@@ -9,8 +9,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(827734),
+    r = n.n(l),
+    a = n(827734),
     o = n(397927),
     d = n(854627),
     c = n(427262),
@@ -22,7 +22,7 @@ let _ = e => {
             user: t,
             isOwnUser: n,
             label: l,
-            removeButton: r,
+            removeButton: a,
             isFaded: u
         } = e, {
             avatarSrc: _,
@@ -32,13 +32,13 @@ let _ = e => {
             size: o._3J.SIZE_24
         }), A = (0, c.$3)(t), [h, p] = s.useState(!1);
         return (0, i.jsxs)("div", {
-            className: a()(g.kL, {
-                [g.RE]: null != r
+            className: r()(g.kL, {
+                [g.RE]: null != a
             }),
             onMouseEnter: () => p(!0),
             onMouseLeave: () => p(!1),
             children: [(0, i.jsxs)("div", {
-                className: a()(g.TT, {
+                className: r()(g.TT, {
                     [g.zj]: u
                 }),
                 children: [(0, i.jsx)(o.euF, {
@@ -61,13 +61,13 @@ let _ = e => {
                         children: "\xb7"
                     }), l]
                 })]
-            }), null != r && h && (0, i.jsx)("div", {
+            }), null != a && h && (0, i.jsx)("div", {
                 className: g.dM,
                 children: (0, i.jsx)(o.QWc, {
                     textVariant: "text-sm/medium",
                     variant: "secondary",
-                    text: r.label,
-                    onClick: r.onRemove
+                    text: a.label,
+                    onClick: a.onRemove
                 })
             })]
         })
@@ -129,7 +129,7 @@ let _ = e => {
             canInvite: n
         } = e, [l, d] = s.useState(!1);
         return (0, i.jsxs)("div", {
-            className: a()(g.kL, {
+            className: r()(g.kL, {
                 [g.RE]: n
             }),
             onMouseEnter: () => d(!0),
@@ -137,10 +137,10 @@ let _ = e => {
             children: [(0, i.jsxs)("div", {
                 className: g.TT,
                 children: [(0, i.jsx)("div", {
-                    className: a()(g.vG, g.my),
+                    className: r()(g.vG, g.my),
                     children: (0, i.jsx)(o.nys, {
                         size: "xxs",
-                        color: r.A.colors.ICON_SUBTLE
+                        color: a.A.colors.ICON_SUBTLE
                     })
                 }), (0, i.jsx)(o.Text, {
                     className: g.Xh,

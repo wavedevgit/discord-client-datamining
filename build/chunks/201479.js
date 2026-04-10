@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(769015);
+var l = n(769015);
 
 function r(e) {
     let {
         application: t,
         fallback: n
     } = e;
-    return null == t ? n : (0, i.jsx)(a.A, {
+    return null == t ? n : (0, i.jsx)(l.A, {
         game: t,
-        size: a.M.XSMALL,
+        size: l.M.XSMALL,
         allowUnknownGameIcon: !0,
         unknownGameIconFallback: n
     })

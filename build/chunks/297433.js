@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(419954),
     s = n(780964),
     l = n(504910),
-    a = n(262374),
-    r = n(630776),
+    r = n(262374),
+    a = n(630776),
     o = n(37401),
     d = n(135476),
     c = n(996153),
@@ -14,5 +14,5 @@ var i = n(419954),
 let m = (0, i.zZ)(s.X.DESIGN_TOOLS, {
     useTitle: () => "Design & A11y Tools",
     useSearchTerms: () => ["accessibility tools"],
-    buildLayout: () => [a.g, c.V, d.q, u.u, r.g, o.H, l.K]
+    buildLayout: () => [r.g, c.V, d.q, u.u, a.g, o.H, l.K]
 })

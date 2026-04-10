@@ -5,19 +5,19 @@ n.d(t, {
 var i = n(200921),
     s = n(754333),
     l = n(419954),
-    a = n(933297),
-    r = n(780964),
+    r = n(933297),
+    a = n(780964),
     o = n(358776),
     d = n(4887),
     c = n(985018);
-let u = (0, l.eA)(r.X.ACCOUNT_SESSIONS_NESTED_PANEL, {
+let u = (0, l.eA)(a.X.ACCOUNT_SESSIONS_NESTED_PANEL, {
     buildLayout: () => [d.C],
     usePredicate: () => (0, o._A)("AccountSessionsNestedPanel"),
     initialize: () => ((0, i.GY)(), () => {
         (0, i.ZQ)()
     }),
     useTrailingDecoration: () => ({
-        type: a.sw.TEXT,
+        type: r.sw.TEXT,
         useText: () => {
             let {
                 currentSession: e,

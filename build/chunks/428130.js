@@ -9,8 +9,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(582754),
     d = n(397927),
     c = n(775602),
@@ -103,7 +103,7 @@ let v = {
             {
                 theme: l,
                 messageGroupSpacing: u
-            } = (0, r.cf)([x.A, c.A], () => ({
+            } = (0, a.cf)([x.A, c.A], () => ({
                 theme: x.A.theme,
                 messageGroupSpacing: c.A.messageGroupSpacing
             })),
@@ -113,7 +113,7 @@ let v = {
             T = (0, o.Mw)(l) ? m : h;
         return (0, i.jsx)(d.M1G, {
             children: (0, i.jsx)(d.ZpM, {
-                className: a()(b.VH, C.C2, e ? b.Me : void 0, `group-spacing-${null!=u?u:e?S.y5:S.ES}`),
+                className: r()(b.VH, C.C2, e ? b.Me : void 0, `group-spacing-${null!=u?u:e?S.y5:S.ES}`),
                 outline: !0,
                 "aria-hidden": !0,
                 children: T.map((t, n) => (0, i.jsx)(_.A, {

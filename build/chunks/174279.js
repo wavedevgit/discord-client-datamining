@@ -3,17 +3,17 @@ n.d(t, {
     A: () => j
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(735438),
-    l = n.n(r),
+    r = n(64700),
+    a = n(735438),
+    l = n.n(a),
     s = n(311907),
     o = n(397927),
     d = n(157559),
     c = n(308528),
     u = n(442433),
     A = n(793574),
-    _ = n(70730),
-    h = n(777426),
+    h = n(70730),
+    _ = n(777426),
     m = n(976860),
     g = n(734057),
     p = n(430452),
@@ -36,9 +36,9 @@ function P(e) {
     let {
         user: t,
         applicationId: n,
-        isGameRelationship: r,
+        isGameRelationship: a,
         onSelect: l
-    } = e, A = a.useCallback(() => {
+    } = e, A = r.useCallback(() => {
         (0, T.X9)({
             targetUserId: t.id,
             tab: I.Ay.getState().section
@@ -46,7 +46,7 @@ function P(e) {
             recipientIds: t.id,
             joinCall: !0
         })
-    }, [t.id]), _ = a.useCallback(() => {
+    }, [t.id]), h = r.useCallback(() => {
         (0, T.Cf)({
             targetUserId: t.id,
             tab: I.Ay.getState().section
@@ -55,14 +55,14 @@ function P(e) {
             joinCall: !0,
             joinCallVideo: !0
         })
-    }, [t.id]), h = a.useCallback(() => {
+    }, [t.id]), _ = r.useCallback(() => {
         C.A.removeFriend({
             userId: t.id,
-            applicationId: r ? n : null,
+            applicationId: a ? n : null,
             location: "Friends"
         })
-    }, [n, r, t.id]), m = a.useCallback(() => {
-        let e = r ? L.intl.string(L.t.RLcE6x) : L.intl.string(L.t.cvSt1J);
+    }, [n, a, t.id]), m = r.useCallback(() => {
+        let e = a ? L.intl.string(L.t.RLcE6x) : L.intl.string(L.t.cvSt1J);
         (0, T.lP)({
             targetUserId: t.id,
             tab: I.Ay.getState().section
@@ -76,9 +76,9 @@ function P(e) {
             confirmText: e,
             confirmVariant: "critical-primary",
             cancelText: L.intl.string(L.t["ETE/oC"]),
-            onConfirm: h
+            onConfirm: _
         })
-    }, [h, r, t]), g = (0, s.bG)([p.Ay], () => p.Ay.supports(O.O5.VIDEO)), E = t.isProvisional, N = r ? L.intl.string(L.t.RLcE6x) : L.intl.string(L.t.cvSt1J);
+    }, [_, a, t]), g = (0, s.bG)([p.Ay], () => p.Ay.supports(O.O5.VIDEO)), E = t.isProvisional, N = a ? L.intl.string(L.t.RLcE6x) : L.intl.string(L.t.cvSt1J);
     return (0, i.jsxs)(o.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "friend-row",
@@ -88,7 +88,7 @@ function P(e) {
         children: [!E && g ? (0, i.jsx)(o.Drp, {
             id: "start-video-call",
             label: L.intl.string(L.t.oCqlGG),
-            action: _
+            action: h
         }) : null, !E && (0, i.jsx)(o.Drp, {
             id: "start-voice-call",
             label: L.intl.string(L.t.focH1t),
@@ -101,8 +101,8 @@ function P(e) {
         })]
     })
 }
-class D extends a.PureComponent {
-    peopleListItemRef = a.createRef();
+class D extends r.PureComponent {
+    peopleListItemRef = r.createRef();
     state = {
         isActiveRow: !1
     };
@@ -136,12 +136,12 @@ class D extends a.PureComponent {
         let {
             user: t,
             isGameRelationship: n,
-            applicationId: a
+            applicationId: r
         } = this.props;
         (0, u.jA)(e, e => (0, i.jsx)(P, {
             ...e,
             user: t,
-            applicationId: a,
+            applicationId: r,
             isGameRelationship: n
         }), {
             onClose: () => {
@@ -158,8 +158,8 @@ class D extends a.PureComponent {
             user: e,
             isFocused: t,
             analyticsLocations: n,
-            activities: a,
-            applicationStream: r,
+            activities: r,
+            applicationStream: a,
             status: l,
             isMobile: s,
             isVR: d,
@@ -170,7 +170,7 @@ class D extends a.PureComponent {
         } = this.props, {
             isActiveRow: I
         } = this.state;
-        return (0, _.p)(A.A.FRIENDS_LIST) && m === y.np.FRIEND_ANNIVERSARY && g && 0 === p ? (0, i.jsx)(h.A, {
+        return (0, h.p)(A.A.FRIENDS_LIST) && m === y.np.FRIEND_ANNIVERSARY && g && 0 === p ? (0, i.jsx)(_.A, {
             ref: this.peopleListItemRef,
             isFocused: t,
             isActive: I,
@@ -180,8 +180,8 @@ class D extends a.PureComponent {
             onClick: this.handleRowClick,
             giftIntentType: m,
             status: l,
-            activities: a,
-            applicationStream: r,
+            activities: r,
+            applicationStream: a,
             isMobile: s,
             isVR: d,
             isGameRelationship: c
@@ -202,8 +202,8 @@ class D extends a.PureComponent {
                     isVR: d,
                     subText: (0, i.jsx)(x.A, {
                         hovered: t,
-                        activities: a,
-                        applicationStream: r,
+                        activities: r,
+                        applicationStream: a,
                         status: l,
                         user: e,
                         userIgnored: E.A.isIgnored(e.id)

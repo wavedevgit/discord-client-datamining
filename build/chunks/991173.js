@@ -3,8 +3,8 @@ n.d(t, {
     A: () => c
 });
 var i = n(179771),
-    a = n(10584),
-    r = n(636401),
+    r = n(10584),
+    a = n(636401),
     l = n(629471),
     s = n(613057),
     o = n(652215),
@@ -40,10 +40,10 @@ let c = {
                     devices: n
                 }
             } = e;
-            if (null == t.application.id) throw new r.A({
+            if (null == t.application.id) throw new a.A({
                 errorCode: o.Lw6.INVALID_COMMAND
             }, "No application.");
-            (0, a.z)(t.application.id, n.map(e => ({
+            (0, r.z)(t.application.id, n.map(e => ({
                 type: e.type,
                 id: e.id,
                 vendor: e.vendor,

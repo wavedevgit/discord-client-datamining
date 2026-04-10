@@ -1,9 +1,9 @@
 /** chunk id: 980923 params = (module,exports,require) **/
-a.d(t, {
-    A: () => r
+n.d(t, {
+    A: () => l
 });
-var n = a(985018);
+var i = n(985018);
 
-function r(e, t, a, r) {
-    return r ? n.intl.string(n.t["2Ne/Y1"]) : a ? n.intl.string(n.t.FJSZVM) : t ? n.intl.string(n.t["+JQCa/"]) : e ? n.intl.string(n.t.YqAjXy) : n.intl.string(n.t.w4m945)
+function l(e, t, n, l) {
+    return l ? i.intl.string(i.t["2Ne/Y1"]) : n ? i.intl.string(i.t.FJSZVM) : t ? i.intl.string(i.t["+JQCa/"]) : e ? i.intl.string(i.t.YqAjXy) : i.intl.string(i.t.w4m945)
 }

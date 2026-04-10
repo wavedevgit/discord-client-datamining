@@ -1,11 +1,11 @@
 /** chunk id: 845187 params = (module,exports,require) **/
 n.d(t, {
-    a: () => _,
-    default: () => h
+    a: () => h,
+    default: () => _
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(158954),
+    r = n(64700),
+    a = n(158954),
     l = n(397927),
     s = n(817281),
     o = n(429913),
@@ -13,17 +13,17 @@ var i = n(627968),
     c = n(837921),
     u = n(652215),
     A = n(985018);
-let _ = "Activity Encourages Hardware Acceleration";
+let h = "Activity Encourages Hardware Acceleration";
 
-function h(e) {
+function _(e) {
     let {
         applicationId: t,
         transitionState: n,
-        onClose: h
-    } = e, [m, g] = a.useState(!1), [p] = (0, o.A)([t]), E = p?.name ?? "This Activity";
-    a.useEffect(() => {
+        onClose: _
+    } = e, [m, g] = r.useState(!1), [p] = (0, o.A)([t]), E = p?.name ?? "This Activity";
+    r.useEffect(() => {
         d.default.track(u.HAw.OPEN_MODAL, {
-            type: _
+            type: h
         })
     }, []);
     let I = async () => {
@@ -31,15 +31,15 @@ function h(e) {
         m && (e = "permanent", s.Ay.updatedUnsyncedSettings({
             disableActivityHardwareAccelerationPrompt: !0
         })), d.default.track(u.HAw.MODAL_DISMISSED, {
-            type: _,
+            type: h,
             dismiss_type: e
-        }), await h()
+        }), await _()
     }, f = async () => {
         d.default.track(u.HAw.ACTIVITY_ENABLE_HARDWARE_ACCELERATION, {
             application_id: t
         }), c.Ay.setEnableHardwareAcceleration(!0), await I()
     };
-    return (0, i.jsx)(r.Modal, {
+    return (0, i.jsx)(a.Modal, {
         size: "md",
         transitionState: n,
         onClose: I,

@@ -4,18 +4,18 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    r = n.n(a),
+var r = n(503698),
+    a = n.n(r),
     l = n(649122);
 let s = e => {
     let {
         aspectRatio: t,
         style: n,
-        className: a,
+        className: r,
         children: s
     } = e;
     return (0, i.jsx)("div", {
-        className: r()(l.A, a),
+        className: a()(l.A, r),
         style: {
             paddingTop: `${1/t*100}%`,
             ...n

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(311907),
     s = n(521933),
     l = n(419954),
-    a = n(933297),
-    r = n(287809),
+    r = n(933297),
+    a = n(287809),
     o = n(780964),
     d = n(876696),
     c = n(577117),
@@ -18,12 +18,12 @@ var i = n(311907),
     A = n(648699),
     h = n(985018);
 let p = (0, l.zZ)(o.X.ACCOUNT_INFO_CATEGORY, {
-    usePredicate: () => (0, i.bG)([r.default], () => null != r.default.getCurrentUser()),
+    usePredicate: () => (0, i.bG)([a.default], () => null != a.default.getCurrentUser()),
     useTitle: () => h.intl.string(h.t.apNo4l),
     useInlineNotice: function() {
-        let e = (0, i.bG)([r.default], () => r.default.getCurrentUser());
+        let e = (0, i.bG)([a.default], () => a.default.getCurrentUser());
         return null == e ? null : e.isClaimed() ? null == e.email || e.verified ? null : {
-            type: a.lT.INLINE_NOTICE,
+            type: r.lT.INLINE_NOTICE,
             noticeType: "warning",
             useTitle: () => h.intl.string(h.t.tuGzBT),
             useText: () => h.intl.string(h.t.NAzplE),
@@ -32,7 +32,7 @@ let p = (0, l.zZ)(o.X.ACCOUNT_INFO_CATEGORY, {
                 onClick: () => (0, d.S)(e)
             }
         } : {
-            type: a.lT.INLINE_NOTICE,
+            type: r.lT.INLINE_NOTICE,
             noticeType: "critical",
             useTitle: () => h.intl.string(h.t["/3qnL/"]),
             useText: () => h.intl.string(h.t.qKs3vg),

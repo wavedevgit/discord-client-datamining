@@ -1,11 +1,11 @@
 /** chunk id: 533560 params = (module,exports,require) **/
 n.d(t, {
-    L: () => r
+    L: () => a
 });
 var i = n(64700),
-    a = n(73153);
+    r = n(73153);
 
-function r() {
+function a() {
     let e = i.useCallback(() => {
             if (null == window || !("navigation" in window)) return {
                 canGoBack: !1,
@@ -22,8 +22,8 @@ function r() {
         let t = () => {
             n(e())
         };
-        return a.h.subscribe("ROUTE_CHANGED", t), a.h.subscribe("LOGOUT", t), () => {
-            a.h.unsubscribe("ROUTE_CHANGED", t), a.h.unsubscribe("LOGOUT", t)
+        return r.h.subscribe("ROUTE_CHANGED", t), r.h.subscribe("LOGOUT", t), () => {
+            r.h.unsubscribe("ROUTE_CHANGED", t), r.h.unsubscribe("LOGOUT", t)
         }
     }, [e]), t
 }

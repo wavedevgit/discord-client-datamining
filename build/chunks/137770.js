@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(502572),
     d = n(397927),
     c = n(983511),
@@ -26,7 +26,7 @@ function E(e) {
     let {
         guildBoostSlots: t,
         fractionalPremiumState: l
-    } = e, c = (0, r.bG)([g.A], () => g.A.getPremiumTypeSubscription()), {
+    } = e, c = (0, a.bG)([g.A], () => g.A.getPremiumTypeSubscription()), {
         unappliedSlots: u,
         numActiveSlots: A
     } = s.useMemo(() => {
@@ -51,7 +51,7 @@ function E(e) {
                         className: f.F8,
                         src: S.A
                     }), (0, i.jsx)("div", {
-                        className: a()(f.qS, "theme-dark"),
+                        className: r()(f.qS, "theme-dark"),
                         children: (0, i.jsx)("span", {
                             className: f.Vv,
                             children: u.length
@@ -124,7 +124,7 @@ function b(e) {
     let t, {
             slot: n,
             isLast: l,
-            isCancelable: r,
+            isCancelable: a,
             isCanceled: o,
             premiumSubscription: m,
             modificationsDisabled: g
@@ -144,9 +144,9 @@ function b(e) {
         color: "text-subtle",
         children: T.intl.string(T.t["2mcafz"])
     });
-    let h = r || o;
+    let h = a || o;
     return (0, i.jsxs)("div", {
-        className: a()(f.iq, {
+        className: r()(f.iq, {
             [f.Mt]: l
         }),
         children: [(0, i.jsxs)("div", {
@@ -167,7 +167,7 @@ function b(e) {
                     "aria-label": T.intl.string(T.t.ogxXGq),
                     onSelect: void 0,
                     onClose: t,
-                    children: [r && (0, i.jsx)(d.Drp, {
+                    children: [a && (0, i.jsx)(d.Drp, {
                         id: "cancel-boost",
                         label: T.intl.string(T.t.twFU3R),
                         color: "danger",

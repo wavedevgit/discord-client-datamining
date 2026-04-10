@@ -1,10 +1,10 @@
 /** chunk id: 788866 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => _
 });
 var i = n(311907),
-    a = n(506774),
-    r = n(73153),
+    r = n(506774),
+    a = n(73153),
     l = n(498642),
     s = n(71393),
     o = n(576705),
@@ -12,10 +12,10 @@ var i = n(311907),
     c = n(652215);
 let u = "publicUpsellChannelNoticeGuilds",
     A = new Set;
-class _ extends i.Ay.Store {
+class h extends i.Ay.Store {
     static displayName = "EnablePublicGuildUpsellNoticeStore";
     initialize() {
-        this.waitFor(o.A, s.A, l.A), this.syncWith([o.A, s.A, l.A], c.tEg), A = new Set(a.w.get(u)) ?? new Set
+        this.waitFor(o.A, s.A, l.A), this.syncWith([o.A, s.A, l.A], c.tEg), A = new Set(r.w.get(u)) ?? new Set
     }
     isVisible(e) {
         if (null == e) return;
@@ -23,9 +23,9 @@ class _ extends i.Ay.Store {
         return !A.has(e.id) && null != t && t >= d.dH && o.A.can(c.xBc.ADMINISTRATOR, e) && !e.features.has(c.GuildFeatures.COMMUNITY)
     }
 }
-let h = new _(r.h, {
+let _ = new h(a.h, {
     PUBLIC_UPSELL_NOTICE_DISMISS: function(e) {
         let t = e.guildId;
-        if (!A.has(t)) return A.add(t), a.w.set(u, A), !0
+        if (!A.has(t)) return A.add(t), r.w.set(u, A), !0
     }
 })

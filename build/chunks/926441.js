@@ -3,8 +3,8 @@ n.d(t, {
     A: () => T
 });
 var i = n(64700),
-    a = n(498419),
-    r = n.n(a),
+    r = n(498419),
+    a = n.n(r),
     l = n(481613),
     s = n.n(l),
     o = n(311907),
@@ -12,8 +12,8 @@ var i = n(64700),
     c = n(912309),
     u = n(458294),
     A = n(803224),
-    _ = n(994500),
-    h = n(503509),
+    h = n(994500),
+    _ = n(503509),
     m = n(723702),
     g = n(837921),
     p = n(726249),
@@ -23,7 +23,7 @@ let f = new Set(["Blink", "Gecko", "WebKit"]),
     C = E.tEg;
 if (m.isPlatformEmbedded) C = e => g.Ay.setBadge(e);
 else if (f.has(s().layout)) {
-    let e = new(r())({
+    let e = new(a())({
         animation: "none"
     });
     C = t => {
@@ -34,14 +34,14 @@ else if (f.has(s().layout)) {
 }
 
 function T() {
-    let e = (0, o.bG)([h.A], () => h.A.hasIncomingCalls()),
-        t = (0, o.bG)([u.default, _.A, A.A, d.A], () => {
+    let e = (0, o.bG)([_.A], () => _.A.hasIncomingCalls()),
+        t = (0, o.bG)([u.default, h.A, A.A, d.A], () => {
             let e = u.default.getTotalMentionCount(),
-                t = (0, c.dH)([_.A, d.A]),
+                t = (0, c.dH)([h.A, d.A]),
                 n = u.default.hasAnyUnread(),
                 i = A.A.getDisableUnreadBadge(),
-                a = e + t;
-            return 0 === a && n && !i && (a = -1), a
+                r = e + t;
+            return 0 === r && n && !i && (r = -1), r
         });
     i.useEffect(() => {
         if (!e) return;

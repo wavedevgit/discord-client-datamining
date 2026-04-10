@@ -1,20 +1,21 @@
 /** chunk id: 740075 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => a
+    A: () => s
 });
 var i = n(64700),
-    l = n(842209);
+    r = n(842209);
 
-function a(e, t) {
+function s(e, t) {
     let n = i.useRef(null),
-        a = i.useCallback((e, t) => {
+        s = i.useCallback((e, t) => {
             e.preventDefault(), e.clipboardData.setData("application/x-discord-interaction-data", JSON.stringify(t)), e.clipboardData.setData("text/plain", n.current?.textContent?.trim() ?? "")
         }, []);
-    return l.D3({
+    return r.D3({
         channel: e,
         type: "channel"
     }, t), {
-        onCopy: a,
+        onCopy: s,
         copyRef: n
     }
 }

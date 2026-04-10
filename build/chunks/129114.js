@@ -1,11 +1,11 @@
 /** chunk id: 129114 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => f
 });
 var i = n(627968),
     l = n(64700),
-    s = n(661492),
-    a = n(594832),
+    a = n(661492),
+    s = n(594832),
     r = n(146423),
     o = n(121700),
     c = n(662349),
@@ -16,21 +16,21 @@ var i = n(627968),
     A = n(788868),
     g = n(699976),
     p = n(985018);
-let f = g.Z.SIZE_90;
+let _ = g.Z.SIZE_90;
 
-function _(e) {
+function f(e) {
     let {
         sku: t,
         targetUser: n,
         isTargetingCurrentUser: g,
-        source: _,
+        source: f,
         showIcons: E,
-        guildId: x,
-        channelId: C,
+        guildId: C,
+        channelId: x,
         analyticsLocations: S,
         onCardClick: I,
         onButtonClick: T
-    } = e, [N, v] = l.useState(!1), {
+    } = e, [v, N] = l.useState(!1), {
         guildId: y
     } = (0, u.nG)(t.applicationId), b = l.useCallback(() => {
         I?.(), (0, h.R)({
@@ -63,28 +63,28 @@ function _(e) {
     return (0, i.jsxs)(r.A, {
         sku: t,
         user: n,
-        spec: f,
+        spec: _,
         onClick: b,
         "aria-label": p.intl.formatToPlainString(p.t.ZBB4Ty, {
-            productName: (0, s.TC)(t)
+            productName: (0, a.TC)(t)
         }),
-        onHoverOrFocusChange: v,
+        onHoverOrFocusChange: N,
         children: [(0, i.jsx)(c.A, {
-            spec: f,
+            spec: _,
             onClick: j,
-            isHoveringOrFocusing: N,
+            isHoveringOrFocusing: v,
             label: R,
             icon: M
         }), (0, i.jsx)(o.A, {
-            spec: f,
+            spec: _,
             sku: t,
-            isCardHovered: N,
+            isCardHovered: v,
             location: "SocialLayerGiftingVoicePanelSkuItemCard",
-            replacedElement: E && !g && _ === a.uS.WISHLIST ? (0, i.jsx)(d.n, {
-                spec: f,
+            replacedElement: E && !g && f === s.uS.WISHLIST ? (0, i.jsx)(d.n, {
+                spec: _,
                 user: n,
-                guildId: x ?? void 0,
-                channelId: C ?? void 0
+                guildId: C ?? void 0,
+                channelId: x ?? void 0
             }) : null
         })]
     })

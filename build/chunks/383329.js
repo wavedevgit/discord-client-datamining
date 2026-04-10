@@ -1,38 +1,37 @@
 /** chunk id: 383329 params = (module,exports,require) **/
-"use strict";
-n.d(t, {
-    R: () => u
+t.d(n, {
+    R: () => d
 });
-var a = n(64700),
-    i = n(735438),
-    r = n.n(i),
-    o = n(311907),
-    l = n(735321),
-    c = n(760751),
-    s = n(282435);
+var o = t(64700),
+    r = t(735438),
+    _ = t.n(r),
+    i = t(311907),
+    l = t(735321),
+    a = t(760751),
+    s = t(282435);
 
-function _(e) {
+function c(e) {
     return s.Bf.get(e) ?? 0
 }
 
-function u() {
-    let e = (0, o.bG)([c.A], () => c.A.games),
-        t = a.useMemo(() => r()(e).filter(e => (0, l.XX)(e)).map(e => ({
+function d() {
+    let e = (0, i.bG)([a.A], () => a.A.games),
+        n = o.useMemo(() => _()(e).filter(e => (0, l.XX)(e)).map(e => ({
             id: e.id,
             value: e.id,
             label: e.name
         })).sortBy(e => {
             let {
-                value: t
+                value: n
             } = e;
-            return _(t)
+            return c(n)
         }).reverse().value(), [e]),
-        n = a.useCallback((e, t) => _(t.item.value) - _(e.item.value), []);
+        t = o.useCallback((e, n) => c(n.item.value) - c(e.item.value), []);
     return {
-        options: t,
-        matchSorterOptions: a.useMemo(() => ({
-            baseSort: n,
+        options: n,
+        matchSorterOptions: o.useMemo(() => ({
+            baseSort: t,
             keys: ["label"]
-        }), [n])
+        }), [t])
     }
 }

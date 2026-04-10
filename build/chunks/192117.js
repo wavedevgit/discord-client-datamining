@@ -5,12 +5,12 @@ n.d(t, {
 var i = n(311907),
     s = n(926919),
     l = n(419954),
-    a = n(111162),
-    r = n(780964);
-let o = (0, l.zD)(r.X.REQUEST_TRACING, {
+    r = n(111162),
+    a = n(780964);
+let o = (0, l.zD)(a.X.REQUEST_TRACING, {
     useTitle: () => "Enable Tracing Requests",
     useSubtitle: () => "Force trace all client requests with APM.",
-    useValue: () => (0, i.bG)([a.default], () => a.default.isTracingRequests),
+    useValue: () => (0, i.bG)([r.default], () => r.default.isTracingRequests),
     setValue: e => (0, s.x)({
         trace: e
     })

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(397927),
     d = n(83257),
     c = n(159001),
@@ -33,13 +33,13 @@ let j = {
 };
 
 function y() {
-    let e = (0, r.bG)([p.A, T.Ay, m.A], () => {
+    let e = (0, a.bG)([p.A, T.Ay, m.A], () => {
             let e = m.A.selectedGuildId ?? p.A.getGuildId();
             return null == e || m._.has(e) ? T.Ay.getFlattenedGuildIds().find(e => !m._.has(e)) : e
         }),
-        t = (0, r.bG)([h.A], () => h.A.getGuild(e)),
-        n = (0, r.bG)([m.A], () => m.A.showNotice()),
-        l = (0, r.bG)([f.default], () => f.default.getCurrentUser()),
+        t = (0, a.bG)([h.A], () => h.A.getGuild(e)),
+        n = (0, a.bG)([m.A], () => m.A.showNotice()),
+        l = (0, a.bG)([f.default], () => f.default.getCurrentUser()),
         y = b.A.useField("subsection");
     return s.useEffect(() => {
         (0, _._)(j[y])
@@ -72,7 +72,7 @@ function y() {
                 id: v.Eq.USER_PROFILE,
                 children: N.intl.string(N.t["2p07FR"])
             }, v.Eq.USER_PROFILE), (0, i.jsx)(o.VQ0.Item, {
-                className: a()(I.YU, I.HY),
+                className: r()(I.YU, I.HY),
                 "aria-label": N.intl.string(N.t.kPHroX),
                 id: v.Eq.GUILD,
                 children: N.intl.string(N.t.kPHroX)

@@ -2,45 +2,45 @@
 n.d(t, {
     t: () => P
 }), n(321073);
-var l = n(627968),
-    i = n(64700),
+var i = n(627968),
+    l = n(64700),
     r = n(735438),
     s = n(837381),
     a = n(311907),
-    u = n(397927),
-    o = n(928039),
+    o = n(397927),
+    u = n(928039),
     d = n(47167),
     c = n(379078),
     h = n(704554),
     g = n(594831),
-    I = n(734057),
-    A = n(71393),
-    f = n(222823),
-    E = n(994500),
-    m = n(287809),
-    S = n(645959),
+    m = n(734057),
+    f = n(71393),
+    A = n(222823),
+    I = n(994500),
+    E = n(287809),
+    p = n(645959),
     _ = n(256415),
-    p = n(403362),
-    N = n(996439),
+    S = n(403362),
+    x = n(996439),
     T = n(810412),
-    y = n(914853),
+    N = n(914853),
     C = n(179917),
-    x = n(419072),
-    v = n(437331),
+    v = n(419072),
+    y = n(437331),
     M = n(91868),
-    D = n(554932),
-    R = n(406595),
-    O = n(557404),
-    U = n(652215),
-    G = n(895867),
-    w = n(985018),
-    L = n(453748);
+    R = n(554932),
+    D = n(406595),
+    b = n(557404),
+    O = n(652215),
+    w = n(895867),
+    j = n(985018),
+    U = n(453748);
 
-function F(e) {
+function L(e) {
     return Array.from(e).sort()
 }
-let b = (0, r.throttle)(e => {
-        (0, T.Y)(U.uss.FRIENDS, {
+let k = (0, r.throttle)(e => {
+        (0, T.Y)(O.uss.FRIENDS, {
             locked: _.default.isInstanceLocked(),
             shownUserIds: e.shownUserIds,
             liveUserIds: [],
@@ -50,26 +50,26 @@ let b = (0, r.throttle)(e => {
         leading: !0,
         trailing: !1
     }),
-    k = {
+    G = {
         searchType: c.n.REGEX,
         sortType: c.r.JARO_WINKLER,
         searchStringGenerator: e => {
             let {
                 channel: t
-            } = e, n = [(0, d.m1)(t, m.default, E.A), t.name, t.id];
+            } = e, n = [(0, d.m1)(t, E.default, I.A), t.name, t.id];
             if (t.isDM()) {
                 let e = t.getRecipientId(),
-                    l = m.default.getUser(e),
-                    i = E.A.getNickname(e);
-                n.push(l?.username, l?.globalName, i)
+                    i = E.default.getUser(e),
+                    l = I.A.getNickname(e);
+                n.push(i?.username, i?.globalName, l)
             } else if (t.isMultiUserDM())
                 for (let e of t.recipients ?? []) {
-                    let t = m.default.getUser(e),
-                        l = E.A.getNickname(e);
-                    n.push(t?.username, t?.globalName, l)
+                    let t = E.default.getUser(e),
+                        i = I.A.getNickname(e);
+                    n.push(t?.username, t?.globalName, i)
                 }
-            let l = null != t.guild_id ? A.A.getGuild(t.guild_id)?.name ?? null : null;
-            return null != l && n.push(l), n.filter(p.Vq)
+            let i = null != t.guild_id ? f.A.getGuild(t.guild_id)?.name ?? null : null;
+            return null != i && n.push(i), n.filter(S.Vq)
         },
         throttleMs: 100
     };
@@ -79,12 +79,12 @@ function P() {
             onPrimaryAction: t,
             onContextMenu: n
         } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-        [r, d] = i.useState(""),
+        [r, d] = l.useState(""),
         c = r.trim().toLowerCase(),
-        A = (e = (0, g.Dz)(), (0, a.yK)([S.default, I.A], () => {
+        f = (e = (0, g.Dz)(), (0, a.yK)([p.default, m.A], () => {
             let t = [];
-            for (let e of S.default.getPrivateChannelIds()) {
-                let n = I.A.getChannel(e);
+            for (let e of p.default.getPrivateChannelIds()) {
+                let n = m.A.getChannel(e);
                 null != n && t.push({
                     channel: n,
                     voiceStates: []
@@ -93,113 +93,113 @@ function P() {
             for (let n of e) t.push(n);
             return t
         }, [e])),
-        [E, m] = i.useState([]);
-    (0, h.RT)(r, A, m, k);
-    let _ = i.useRef(null),
-        p = (0, o.A)("friends-widget-messages", _),
-        [U, P] = (0, a.bG)([R.A], () => R.A.getFavoriteTargetIdsForTab(y.x.MESSAGES), [], N.D),
-        [j, V] = (0, a.bG)([M.A], () => {
-            let [e, t] = M.A.getRows(M.Y.ACTIVE_NOW), [n] = M.A.getRows(M.Y.DMS), [l] = M.A.getRows(M.Y.RECENT_TEXT), i = n.slice(0, 5), r = l.slice(0, 8);
+        [I, E] = l.useState([]);
+    (0, h.RT)(r, f, E, G);
+    let _ = l.useRef(null),
+        S = (0, u.A)("friends-widget-messages", _),
+        [O, P] = (0, a.bG)([D.A], () => D.A.getFavoriteTargetIdsForTab(N.x.MESSAGES), [], x.D),
+        [F, V] = (0, a.bG)([M.A], () => {
+            let [e, t] = M.A.getRows(M.Y.ACTIVE_NOW), [n] = M.A.getRows(M.Y.DMS), [i] = M.A.getRows(M.Y.RECENT_TEXT), l = n.slice(0, 5), r = i.slice(0, 8);
             return [{
                 activeNowRows: e.slice(0, 8),
-                dmRows: i,
+                dmRows: l,
                 recentTextRows: r
             }, t]
-        }, [], N.D),
-        H = (0, a.bG)([x.A], () => x.A.getCollapsedSectionOverridesForTab(y.x.MESSAGES), []),
-        Y = i.useCallback(e => {
-            (0, D.G)({
-                tab: y.x.MESSAGES,
+        }, [], x.D),
+        z = (0, a.bG)([v.A], () => v.A.getCollapsedSectionOverridesForTab(N.x.MESSAGES), []),
+        H = l.useCallback(e => {
+            (0, R.G)({
+                tab: N.x.MESSAGES,
                 sectionKey: e
             })
         }, []),
-        W = i.useMemo(() => {
+        Y = l.useMemo(() => {
             let e = new Set;
-            for (let t of U) e.add(t);
-            for (let t of j.dmRows) e.add(t.channelId);
-            for (let t of j.activeNowRows) e.add(t.channelId);
-            for (let t of j.recentTextRows) e.add(t.channelId);
+            for (let t of O) e.add(t);
+            for (let t of F.dmRows) e.add(t.channelId);
+            for (let t of F.activeNowRows) e.add(t.channelId);
+            for (let t of F.recentTextRows) e.add(t.channelId);
             return Array.from(e)
-        }, [U, j.activeNowRows, j.dmRows, j.recentTextRows]),
+        }, [O, F.activeNowRows, F.dmRows, F.recentTextRows]),
         {
-            unreadOrMentionChannels: z
-        } = (0, a.cf)([f.Ay], () => {
+            unreadOrMentionChannels: W
+        } = (0, a.cf)([A.Ay], () => {
             let e = new Set;
-            for (let t of W) {
-                let n = f.Ay.hasUnread(t),
-                    l = f.Ay.getMentionCount(t),
-                    i = f.Ay.getIsMentionLowImportance(t),
-                    r = l > 0 && !i;
+            for (let t of Y) {
+                let n = A.Ay.hasUnread(t),
+                    i = A.Ay.getMentionCount(t),
+                    l = A.Ay.getIsMentionLowImportance(t),
+                    r = i > 0 && !l;
                 (n || r) && e.add(t)
             }
             return {
                 unreadOrMentionChannels: e
             }
-        }, [W]),
-        B = i.useMemo(() => {
-            let e = e => !0 === H[e],
-                t = e => z.has(e),
+        }, [Y]),
+        B = l.useMemo(() => {
+            let e = e => !0 === z[e],
+                t = e => W.has(e),
                 n = [];
             if (0 === V) return [];
             if ("" !== c) return n.push({
                 kind: "SEARCH_RESULTS",
                 key: "SEARCH_RESULTS",
-                title: w.intl.string(G.default.HGimIS),
-                count: E.length,
-                channelIds: E.map(e => e.channel.id),
-                length: E.length
+                title: j.intl.string(w.default.HGimIS),
+                count: I.length,
+                channelIds: I.map(e => e.channel.id),
+                length: I.length
             }), n;
-            if (U.length > 0 && P > 0) {
-                let l = e("FAVORITES") ? U.filter(t) : U;
+            if (O.length > 0 && P > 0) {
+                let i = e("FAVORITES") ? O.filter(t) : O;
                 n.push({
                     kind: "FAVORITES",
                     key: "FAVORITES",
-                    title: w.intl.string(G.default.GKTlS6),
-                    count: U.length,
-                    channelIds: l,
-                    length: Math.max(l.length, 1)
+                    title: j.intl.string(w.default.GKTlS6),
+                    count: O.length,
+                    channelIds: i,
+                    length: Math.max(i.length, 1)
                 })
             }
-            if (j.activeNowRows.length > 0) {
-                let t = j.activeNowRows.map(e => e.channelId),
-                    l = e("ACTIVE_NOW") ? [] : t;
+            if (F.activeNowRows.length > 0) {
+                let t = F.activeNowRows.map(e => e.channelId),
+                    i = e("ACTIVE_NOW") ? [] : t;
                 n.push({
                     kind: "ACTIVE_NOW",
                     key: "ACTIVE_NOW",
-                    title: w.intl.string(G.default.d3yO98),
+                    title: j.intl.string(w.default.d3yO98),
                     count: t.length,
+                    channelIds: i,
+                    length: Math.max(i.length, 1)
+                })
+            }
+            if (F.dmRows.length > 0) {
+                let i = F.dmRows.map(e => e.channelId),
+                    l = e("DMS") ? i.filter(t) : i;
+                n.push({
+                    kind: "DMS",
+                    key: "DMS",
+                    title: j.intl.string(j.t.YUU0RF),
+                    count: i.length,
                     channelIds: l,
                     length: Math.max(l.length, 1)
                 })
             }
-            if (j.dmRows.length > 0) {
-                let l = j.dmRows.map(e => e.channelId),
-                    i = e("DMS") ? l.filter(t) : l;
-                n.push({
-                    kind: "DMS",
-                    key: "DMS",
-                    title: w.intl.string(w.t.YUU0RF),
-                    count: l.length,
-                    channelIds: i,
-                    length: Math.max(i.length, 1)
-                })
-            }
-            if (j.recentTextRows.length > 0) {
-                let l = j.recentTextRows.map(e => e.channelId),
-                    i = e("TEXT_CHANNELS") ? l.filter(t) : l;
+            if (F.recentTextRows.length > 0) {
+                let i = F.recentTextRows.map(e => e.channelId),
+                    l = e("TEXT_CHANNELS") ? i.filter(t) : i;
                 n.push({
                     kind: "TEXT_CHANNELS",
                     key: "TEXT_CHANNELS",
-                    title: w.intl.string(G.default.uC6Lhg),
-                    count: l.length,
-                    channelIds: i,
-                    length: Math.max(i.length, 1)
+                    title: j.intl.string(w.default.uC6Lhg),
+                    count: i.length,
+                    channelIds: l,
+                    length: Math.max(l.length, 1)
                 })
             }
             return n
-        }, [H, z, c, U, j.activeNowRows, j.dmRows, j.recentTextRows, P, E, V]),
-        $ = i.useMemo(() => B.map(e => e.length), [B]),
-        K = i.useCallback(e => {
+        }, [z, W, c, O, F.activeNowRows, F.dmRows, F.recentTextRows, P, I, V]),
+        X = l.useMemo(() => B.map(e => e.length), [B]),
+        Z = l.useCallback(e => {
             let t = B.findIndex(e => "FAVORITES" === e.kind);
             if (-1 === t) {
                 for (let t = 0; t < B.length; t += 1) {
@@ -212,41 +212,41 @@ function P() {
                 return null
             }
             let n = B[t],
-                l = n?.channelIds.findIndex(t => t === e) ?? -1;
-            return -1 !== l ? {
+                i = n?.channelIds.findIndex(t => t === e) ?? -1;
+            return -1 !== i ? {
                 section: t,
-                row: l
+                row: i
             } : null
         }, [B]),
-        X = i.useCallback(() => {
+        K = l.useCallback(() => {
             let e = B.findIndex(e => "FAVORITES" === e.kind);
             return -1 === e ? null : {
                 section: e,
                 row: void 0
             }
         }, [B]);
-    (0, O.$)({
+    (0, b.$)({
         scrollerRef: _,
-        favoriteTargetIds: U,
-        getScrollTargetForTargetId: e => K(e),
-        getFallbackScrollTarget: X,
+        favoriteTargetIds: O,
+        getScrollTargetForTargetId: e => Z(e),
+        getFallbackScrollTarget: K,
         padding: 8,
         animate: !1
     });
-    let Z = (0, T.Dk)(() => {
+    let $ = (0, T.Dk)(() => {
             let e = new Set;
             for (let t of B)
                 for (let n of t.channelIds) e.add(n);
             return e
         }, [B]),
         {
-            shownUserIds: Q,
-            contentInventoryIds: J
+            shownUserIds: q,
+            contentInventoryIds: Q
         } = (0, a.bG)([], () => (function(e) {
             let t = new Set,
                 n = new Set;
-            for (let l of e) {
-                let e = I.A.getChannel(l);
+            for (let i of e) {
+                let e = m.A.getChannel(i);
                 if (null != e) {
                     if (e.isDM()) {
                         let n = e.getRecipientId?.() ?? null;
@@ -257,100 +257,100 @@ function P() {
                         for (let n of e.recipients ?? []) t.add(n);
                         continue
                     }
-                    n.add(l)
+                    n.add(i)
                 }
             }
             return {
                 shownUserIds: t,
                 contentInventoryIds: n
             }
-        })(Z), [Z]),
-        q = (0, T.Dk)(() => Q, [Q]),
-        ee = (0, T.Dk)(() => J, [J]);
-    i.useEffect(() => {
-        (0 !== q.size || 0 !== ee.size) && b({
-            shownUserIds: F(q),
-            contentInventoryIds: F(ee)
+        })($), [$]),
+        J = (0, T.Dk)(() => q, [q]),
+        ee = (0, T.Dk)(() => Q, [Q]);
+    l.useEffect(() => {
+        (0 !== J.size || 0 !== ee.size) && k({
+            shownUserIds: L(J),
+            contentInventoryIds: L(ee)
         })
-    }, [q, ee]);
-    let et = i.useCallback(e => B[e], [B]),
-        en = i.useCallback(e => {
+    }, [J, ee]);
+    let et = l.useCallback(e => B[e], [B]),
+        en = l.useCallback(e => {
             let {
                 section: t
             } = e, n = et(t);
             if (null == n) return null;
-            let i = "SEARCH_RESULTS" !== n.kind,
-                r = i && !0 === H[n.key];
-            return (0, l.jsxs)(l.Fragment, {
-                children: [(0, l.jsx)(u.AC4, {
+            let l = "SEARCH_RESULTS" !== n.kind,
+                r = l && !0 === z[n.key];
+            return (0, i.jsxs)(i.Fragment, {
+                children: [(0, i.jsx)(o.AC4, {
                     children: n.title
-                }), (0, l.jsx)(C.I, {
+                }), (0, i.jsx)(C.I, {
                     title: n.title,
                     count: n.count,
                     isCollapsed: r,
-                    canCollapse: i,
-                    onToggle: () => Y(n.key)
+                    canCollapse: l,
+                    onToggle: () => H(n.key)
                 })]
             })
-        }, [H, et, Y]),
-        el = i.useCallback(e => {
-            let i = et(e.section);
-            if (null == i) return null;
-            let r = i.channelIds[e.row];
+        }, [z, et, H]),
+        ei = l.useCallback(e => {
+            let l = et(e.section);
+            if (null == l) return null;
+            let r = l.channelIds[e.row];
             if (null == r) return null;
-            let s = `${i.key}:${e.row}`;
-            return (0, l.jsx)(v.V, {
+            let s = `${l.key}:${e.row}`;
+            return (0, i.jsx)(y.V, {
                 channelId: r,
                 listItemId: s,
-                shouldHighlightIfRecentlyAdded: "FAVORITES" === i.kind,
+                shouldHighlightIfRecentlyAdded: "FAVORITES" === l.kind,
                 onPrimaryAction: t,
                 onContextMenu: n
             }, s)
         }, [et, n, t]),
-        ei = i.useCallback(() => 40, []),
-        er = i.useCallback((e, t) => {
+        el = l.useCallback(() => 40, []),
+        er = l.useCallback((e, t) => {
             let n = et(e);
             return null == n ? 50 : 50 * (null != n.channelIds[t])
         }, [et]),
-        es = i.useCallback(e => {
+        es = l.useCallback(e => {
             d(e), _.current?.scrollToTop()
         }, []);
-    return (0, l.jsxs)("div", {
-        className: L.kL,
-        children: [(0, l.jsx)("div", {
-            className: L.MT,
-            children: (0, l.jsx)(u.IWV, {
+    return (0, i.jsxs)("div", {
+        className: U.kL,
+        children: [(0, i.jsx)("div", {
+            className: U.MT,
+            children: (0, i.jsx)(o.IWV, {
                 query: r,
                 onChange: es,
                 onClear: () => d(""),
-                placeholder: w.intl.string(G.default["xB/0Z9"]),
+                placeholder: j.intl.string(w.default["xB/0Z9"]),
                 size: "md"
             })
-        }), (0, l.jsx)(s.hD, {
-            navigator: p,
-            children: (0, l.jsx)(s.PR, {
+        }), (0, i.jsx)(s.hD, {
+            navigator: S,
+            children: (0, i.jsx)(s.PR, {
                 children: e => {
                     let {
                         ref: t,
                         role: n,
-                        ...i
+                        ...l
                     } = e;
-                    return (0, l.jsx)(u.skg, {
-                        children: e => (0, l.jsx)(u.B8B, {
+                    return (0, i.jsx)(o.skg, {
+                        children: e => (0, i.jsx)(o.B8B, {
                             innerRole: n,
-                            innerAriaLabel: w.intl.string(w.t.OIgYlQ),
+                            innerAriaLabel: j.intl.string(j.t.OIgYlQ),
                             ref: e => {
                                 _.current = e, t.current = e?.getScrollerNode() ?? null
                             },
-                            className: L.p_,
-                            sectionHeight: ei,
+                            className: U.p_,
+                            sectionHeight: el,
                             rowHeight: er,
                             sidebarHeight: 0,
                             renderSection: en,
-                            renderRow: el,
-                            sections: $,
+                            renderRow: ei,
+                            sections: X,
                             paddingBottom: 8,
-                            ...i,
+                            ...l,
                             ...e
                         })
                     })

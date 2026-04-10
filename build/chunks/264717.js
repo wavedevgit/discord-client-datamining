@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(158954),
-    a = n(311907),
-    r = n(442433),
+    r = n(311907),
+    a = n(442433),
     o = n(754333),
     d = n(917136),
     c = n(976910),
@@ -17,7 +17,7 @@ function g() {
     let {
         credentials: e,
         hasFetchedCredentials: t
-    } = (0, a.cf)([c.A], () => ({
+    } = (0, r.cf)([c.A], () => ({
         hasFetchedCredentials: c.A.hasFetchedCredentials(),
         credentials: c.A.getCredentials()
     }));
@@ -56,7 +56,7 @@ function _(e) {
             size: "sm",
             "aria-label": u.intl.string(u.t["+nrTbK"]),
             onClick: e => {
-                (0, r.L3)(e, async () => {
+                (0, a.L3)(e, async () => {
                     let {
                         default: e
                     } = await n.e("32529").then(n.bind(n, 41e3));

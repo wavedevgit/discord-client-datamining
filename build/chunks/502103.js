@@ -3,8 +3,8 @@ n.d(t, {
     A: () => m
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(554146),
+    r = n(64700),
+    a = n(554146),
     l = n(397927),
     s = n(15073),
     o = n(5180),
@@ -12,20 +12,20 @@ var i = n(627968),
     c = n(488926),
     u = n(45780),
     A = n(652215),
-    _ = n(49999),
-    h = n(124759);
+    h = n(49999),
+    _ = n(124759);
 
 function m(e) {
     let t = (0, s.TZ)(e),
-        m = h.dR.some(t => !(0, o.ai)(e?.id) && c.Ib(t, e)),
+        m = _.dR.some(t => !(0, o.ai)(e?.id) && c.Ib(t, e)),
         g = e?.defaultMessageNotifications === A.orn.ALL_MESSAGES,
-        p = (0, u.G$)(r.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, e?.id ?? A.dJq),
+        p = (0, u.G$)(a.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, e?.id ?? A.dJq),
         E = t && (m || g) && !p,
-        I = a.useCallback(() => {
-            (0, u._$)(r.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, e?.id ?? A.dJq, !0, _.i.DISMISS)
+        I = r.useCallback(() => {
+            (0, u._$)(a.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, e?.id ?? A.dJq, !0, h.i.DISMISS)
         }, [e]),
-        f = a.useRef(!1);
-    a.useEffect(() => {
+        f = r.useRef(!1);
+    r.useEffect(() => {
         E && !f.current && ((0, l.mMO)(async () => {
             let {
                 default: t
@@ -39,7 +39,7 @@ function m(e) {
         }, {
             onCloseCallback: I
         }), d.default.track(A.HAw.DISMISSIBLE_CONTENT_SHOWN, {
-            type: r.V[r.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE],
+            type: a.V[a.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE],
             guild_id: e?.id ?? A.dJq
         }), f.current = !0)
     }, [m, e, I, g, E])

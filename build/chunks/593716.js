@@ -1,5 +1,4 @@
 /** chunk id: 593716 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     E3: "base_e42a84",
     dQ: "sparkle_e42a84 base_e42a84",

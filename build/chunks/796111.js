@@ -3,8 +3,8 @@ n.d(t, {
     A: () => g
 });
 var i = n(562465),
-    a = n(10716),
-    r = n(458664),
+    r = n(10716),
+    a = n(458664),
     l = n(587895),
     s = n(20015),
     o = n(147964),
@@ -12,8 +12,8 @@ var i = n(562465),
     c = n(636401),
     u = n(90924),
     A = n(629471),
-    _ = n(569475),
-    h = n(613057),
+    h = n(569475),
+    _ = n(613057),
     m = n(652215);
 let g = {
     [m.e$_.SEND_ANALYTICS_EVENT]: {
@@ -30,16 +30,16 @@ let g = {
                 }
             } = e;
             (0, u.lG)(t.transport), (0, u.D2)(t.application);
-            let a = t.application.id,
-                o = (0, _.A)(),
+            let r = t.application.id,
+                o = (0, h.A)(),
                 A = o?.getGuildId(),
-                h = l.A.getApplication(a);
-            if (!(0, s.n)(h, m.gfo.EMBEDDED_FIRST_PARTY)) throw new c.A({
+                _ = l.A.getApplication(r);
+            if (!(0, s.n)(_, m.gfo.EMBEDDED_FIRST_PARTY)) throw new c.A({
                 errorCode: m.Lw6.INVALID_COMMAND
             }, "This application cannot access this API");
-            let g = (0, r.D)(a),
+            let g = (0, a.D)(r),
                 p = {
-                    activity_application_id: a,
+                    activity_application_id: r,
                     activity_channel_type: o?.type,
                     activity_guild_id: A,
                     activity_user_session_id: g?.activityUserSessionId
@@ -51,7 +51,7 @@ let g = {
         }
     },
     [m.e$_.GET_APPLICATION_TICKET]: {
-        scope: h.hj,
+        scope: _.hj,
         handler(e) {
             let {
                 socket: t
@@ -62,7 +62,7 @@ let g = {
             return i.Bo.post({
                 url: m.Rsh.APPLICATION_TICKET(n),
                 body: {
-                    test_mode: o.A.inTestModeForApplication(n) || a.A.inDevModeForApplication(n)
+                    test_mode: o.A.inTestModeForApplication(n) || r.A.inDevModeForApplication(n)
                 },
                 retries: 3,
                 oldFormErrors: !0,

@@ -1,65 +1,66 @@
 /** chunk id: 394388 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => M
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(311907),
-    r = n(554146),
-    s = n(397927),
-    o = n(155718),
-    c = n(775602),
+    r = n(64700),
+    s = n(311907),
+    l = n(554146),
+    a = n(397927),
+    c = n(155718),
+    o = n(775602),
     u = n(793574),
     d = n(367727),
     _ = n(509536),
-    A = n(881635),
-    m = n(363487),
-    E = n(828162),
-    T = n(71393),
-    I = n(888675),
+    E = n(881635),
+    A = n(363487),
+    m = n(828162),
+    I = n(71393),
+    T = n(888675),
     g = n(652215),
     N = n(49999),
     f = n(985018),
-    C = n(333354),
-    h = n(884967),
-    p = n(274993),
+    p = n(333354),
+    C = n(884967),
+    h = n(274993),
     S = n(218924);
 
-function x(e) {
+function R(e) {
     let {
         title: t,
         body: n,
-        guild: l,
-        analyticsLocations: r
-    } = e, o = (0, a.bG)([c.A], () => c.A.useReducedMotion);
+        guild: r,
+        analyticsLocations: l
+    } = e, c = (0, s.bG)([o.A], () => o.A.useReducedMotion);
     return (0, i.jsxs)("div", {
-        className: h.kL,
+        className: C.kL,
         children: [(0, i.jsx)("div", {
-            className: h.ZS,
+            className: C.ZS,
             children: (0, i.jsx)("img", {
-                className: h.Sl,
-                src: o ? S.A : p.A,
+                className: C.Sl,
+                src: c ? S.A : h.A,
                 alt: "Boost gem"
             })
         }), (0, i.jsxs)("div", {
-            className: h.Qs,
-            children: [(0, i.jsx)(s.Heading, {
+            className: C.Qs,
+            children: [(0, i.jsx)(a.Heading, {
                 variant: "heading-md/semibold",
                 style: {
                     marginTop: 0,
                     marginBottom: "var(--space-4)"
                 },
                 children: t
-            }), (0, i.jsx)(s.Text, {
+            }), (0, i.jsx)(a.Text, {
                 color: "text-muted",
-                className: h.rf,
+                className: C.rf,
                 variant: "text-sm/medium",
                 children: n
             })]
         }), (0, i.jsx)("div", {
-            children: (0, i.jsx)(A.A, {
-                guild: l,
-                analyticsLocations: r,
+            children: (0, i.jsx)(E.A, {
+                guild: r,
+                analyticsLocations: l,
                 analyticsLocation: {
                     page: g.liQ.GUILD_CHANNEL,
                     section: g.JJy.CHANNEL_TEXT_AREA
@@ -69,25 +70,25 @@ function x(e) {
     })
 }
 
-function R(e) {
+function x(e) {
     let {
         guild: t
     } = e;
-    l.useEffect(() => {
-        (0, d.uh)(r.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
+    r.useEffect(() => {
+        (0, d.uh)(l.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
             dismissAction: N.i.AUTO_DISMISS,
             guildId: t.id
         })
     }, [t.id]);
-    let n = (0, m.A)(t.id);
-    return (0, i.jsx)(x, {
-        title: f.intl.string(C.default.qGDEON),
-        body: f.intl.format(C.default["s+HTdX"], {
-            viewAllPerks: e => (0, i.jsx)(s.DUT, {
+    let n = (0, A.A)(t.id);
+    return (0, i.jsx)(R, {
+        title: f.intl.string(p.default.qGDEON),
+        body: f.intl.format(p.default["s+HTdX"], {
+            viewAllPerks: e => (0, i.jsx)(a.DUT, {
                 tag: "a",
                 role: "link",
                 onClick: () => {
-                    n ? (0, E.A)(t.id, u.A.GUILD_BOOSTING_FIRST_TIME_BOOSTER_UPSELL) : (0, _.K4)({
+                    n ? (0, m.A)(t.id, u.A.GUILD_BOOSTING_FIRST_TIME_BOOSTER_UPSELL) : (0, _.K4)({
                         guildId: t.id,
                         location: {
                             section: g.JJy.CHANNEL_TEXT_AREA,
@@ -108,7 +109,7 @@ function O(e) {
         boostingPrompt: t,
         guild: n
     } = e;
-    return t.guildBoostUpsellType === o.Mk.FIRST_BOOSTER ? (0, i.jsx)(R, {
+    return t.guildBoostUpsellType === c.Mk.FIRST_BOOSTER ? (0, i.jsx)(x, {
         guild: n
     }) : null
 }
@@ -117,16 +118,16 @@ function M(e) {
     let {
         boostingPrompt: t,
         channel: n
-    } = e, l = n.guild_id, r = (0, a.bG)([T.A], () => T.A.getGuild(l), [l]);
-    return null == r ? null : (0, i.jsx)(I.A, {
-        contentClassName: h.FG,
-        iconContainerClassName: h.zc,
-        iconNode: (0, i.jsx)(s.XFE, {
-            colorClass: h.Kk
+    } = e, r = n.guild_id, l = (0, s.bG)([I.A], () => I.A.getGuild(r), [r]);
+    return null == l ? null : (0, i.jsx)(T.A, {
+        contentClassName: C.FG,
+        iconContainerClassName: C.zc,
+        iconNode: (0, i.jsx)(a.XFE, {
+            colorClass: C.Kk
         }),
         children: (0, i.jsx)(O, {
             boostingPrompt: t,
-            guild: r
+            guild: l
         })
     })
 }

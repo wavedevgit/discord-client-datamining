@@ -5,13 +5,13 @@ n.d(t, {
 var i = n(627968),
     s = n(397927),
     l = n(285058),
-    a = n(253932),
-    r = n(985018),
+    r = n(253932),
+    a = n(985018),
     o = n(536482),
     d = n(439695);
 
 function c() {
-    let e = a.tz.useSetting();
+    let e = r.tz.useSetting();
     return (0, i.jsxs)("div", {
         className: d.QF,
         children: [(0, i.jsxs)("div", {
@@ -20,12 +20,12 @@ function c() {
                 className: d.n7,
                 variant: "heading-md/medium",
                 color: "text-strong",
-                children: r.intl.string(r.t.TqdOvC)
+                children: a.intl.string(a.t.TqdOvC)
             }), !e && (0, i.jsx)("div", {
                 className: d.ZT,
                 children: (0, i.jsx)(s.wx6, {
                     type: "warning",
-                    children: r.intl.string(o.default["xxI0/W"])
+                    children: a.intl.string(o.default["xxI0/W"])
                 })
             })]
         }), (0, i.jsx)(l.A, {})]

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => S
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(397927),
+    r = n(64700),
+    a = n(397927),
     l = n(178629),
     s = n(770472),
     o = n(737823),
@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(521974),
     u = n(282026),
     A = n(881973),
-    _ = n(965660),
-    h = n(601193),
+    h = n(965660),
+    _ = n(601193),
     m = n(424956),
     g = n(19925),
     p = n(689817),
@@ -25,7 +25,7 @@ var i = n(627968),
     N = n(579528);
 
 function S() {
-    let e = a.useRef((0, _.YP)()),
+    let e = r.useRef((0, h.YP)()),
         {
             onScroll: t,
             scrollPosition: n,
@@ -36,7 +36,7 @@ function S() {
             selectedTab: v,
             setSelectedTab: b
         } = (0, p.f)(),
-        y = (0, _.Ub)(v),
+        y = (0, h.Ub)(v),
         O = !f.R0.has(v),
         {
             searchQuery: L,
@@ -47,7 +47,7 @@ function S() {
         } = (0, g.X)({
             loadId: e.current
         }),
-        M = h.A.useField("searchBarState"),
+        M = _.A.useField("searchBarState"),
         {
             onTabsAvailableWidthChange: w,
             onCollapsedSearchBarClick: U,
@@ -57,21 +57,21 @@ function S() {
             isSearchBarVisible: O,
             isSearchBarEmpty: "" === L.trim(),
             searchBarState: M,
-            setSearchBarState: e => h.A.setState({
+            setSearchBarState: e => _.A.setState({
                 searchBarState: e
             })
         }),
         V = u.A.useField("fetchedQuery"),
-        B = a.useCallback(e => {
+        B = r.useCallback(e => {
             b(e), j && P()
         }, [j, P, b]),
-        H = a.useMemo(() => j ? x.filter(e => {
+        H = r.useMemo(() => j ? x.filter(e => {
             let {
                 id: t
             } = e;
             return !f.R0.has(t)
         }) : x, [x, j]),
-        F = a.useRef(new A.A(y)),
+        F = r.useRef(new A.A(y)),
         {
             onGuildCardSeen: Y,
             onGuildCardClick: W
@@ -79,11 +79,11 @@ function S() {
             guildDiscoveryCardSeenManager: F.current,
             loadId: e.current
         });
-    return a.useEffect(() => {
+    return r.useEffect(() => {
         F.current.flushSeenGuilds(e.current)
-    }, [y]), a.useEffect(() => {
+    }, [y]), r.useEffect(() => {
         S()
-    }, [v, S]), a.useEffect(() => {
+    }, [v, S]), r.useEffect(() => {
         j || u.A.setState({
             scrollPosition: null
         })
@@ -94,17 +94,17 @@ function S() {
             children: [!j && (0, i.jsx)(o.ns, {
                 scrollPosition: n
             }), j ? (0, i.jsx)(o.XQ, {
-                icon: r.Zge,
+                icon: a.Zge,
                 onClick: P
             }) : (0, i.jsx)(o.T4, {
-                icon: r.RR9
+                icon: a.RR9
             }), !j && (0, i.jsx)(d.A, {
                 className: k,
                 tabs: H,
                 selectedTab: v,
                 onTabSelect: B,
                 onAvailableWidthChange: w
-            }), j && (0, i.jsx)(r.Heading, {
+            }), j && (0, i.jsx)(a.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
                 className: N.ov,

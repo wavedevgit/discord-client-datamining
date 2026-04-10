@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(735438),
-    a = n.n(l),
-    r = n(80703),
+    r = n.n(l),
+    a = n(80703),
     o = n(311907),
     d = n(397927),
     c = n(100392),
@@ -30,7 +30,7 @@ function b() {
     } = (0, _.op)(), {
         experiments: n,
         overridesInfo: l
-    } = (0, A.hI)(), a = s.useMemo(() => ({
+    } = (0, A.hI)(), r = s.useMemo(() => ({
         ...n,
         ...e
     }), [n, e]), c = s.useMemo(() => ({
@@ -38,8 +38,8 @@ function b() {
         ...t
     }), [l, t]), u = (0, o.bG)([h.default], () => {
         let e = h.default.getInstallationForTracking();
-        return null == e ? null : (0, r.v)(e)
-    }), [m, g] = s.useState(""), x = (0, f.oC)((0, f.R3)((0, f.Fm)(a), c), m);
+        return null == e ? null : (0, a.v)(e)
+    }), [m, g] = s.useState(""), x = (0, f.oC)((0, f.R3)((0, f.Fm)(r), c), m);
     return (0, i.jsxs)("div", {
         "data-mtctest-ignore": "true",
         children: [null != u && (0, i.jsxs)(d.BJc, {
@@ -88,10 +88,10 @@ function C(e) {
         experiment: t,
         experimentId: n,
         overrideInfo: l,
-        defaultOpen: r
-    } = e, [_, A] = s.useState(r), [p, f] = s.useState(!1), b = s.useCallback(() => {
+        defaultOpen: a
+    } = e, [_, A] = s.useState(a), [p, f] = s.useState(!1), b = s.useCallback(() => {
         A(e => !e)
-    }, []), C = (0, o.bG)([h.default], () => h.default.getId()), v = (0, x.iN)(t, C), N = (0, x.Fm)(t, C), I = (0, o.yK)([g.A], () => a().sortBy(g.A.getRecentExposures(S.Vh.USER, n), e => {
+    }, []), C = (0, o.bG)([h.default], () => h.default.getId()), v = (0, x.iN)(t, C), N = (0, x.Fm)(t, C), I = (0, o.yK)([g.A], () => r().sortBy(g.A.getRecentExposures(S.Vh.USER, n), e => {
         let [t, n] = e;
         return -n
     }).map(e => {
@@ -199,16 +199,16 @@ function v(e) {
         experiment: t,
         experimentId: n,
         overrideInfo: l
-    } = e, [r, c] = s.useState(null != l), [u, _] = s.useState(!1), x = s.useCallback(() => {
+    } = e, [a, c] = s.useState(null != l), [u, _] = s.useState(!1), x = s.useCallback(() => {
         c(e => !e)
-    }, []), A = (0, o.bG)([g.A], () => g.A.getLoadedGuildExperiment(n)), h = (0, o.yK)([g.A], () => a().sortBy(g.A.getRecentExposures(S.Vh.GUILD, n), e => {
+    }, []), A = (0, o.bG)([g.A], () => g.A.getLoadedGuildExperiment(n)), h = (0, o.yK)([g.A], () => r().sortBy(g.A.getRecentExposures(S.Vh.GUILD, n), e => {
         let [t, n] = e;
         return -n
     }).map(e => {
         let [t, n] = e;
         return `${new Date(n).toLocaleString()} (${t})`
     })), [T, f] = (0, o.yK)([p.A, g.A], () => {
-        let e = a().sortBy(p.A.getGuildsArray(), e => e.name.toLowerCase()),
+        let e = r().sortBy(p.A.getGuildsArray(), e => e.name.toLowerCase()),
             t = {},
             i = [];
         for (let s of e) {
@@ -216,7 +216,7 @@ function v(e) {
                 l = e?.bucket ?? S.RE.NOT_ELIGIBLE;
             l in t || (t[l] = 0), t[l]++, i.push(`${s.name}: ${l}`)
         }
-        let s = a()(t).keys().map(Number).sort().map(e => `${t[e]} guilds in bucket ${e}`).join(", ");
+        let s = r()(t).keys().map(Number).sort().map(e => `${t[e]} guilds in bucket ${e}`).join(", ");
         return [i.join("\n"), s]
     }), b = (0, i.jsx)(d.DUT, {
         onClick: x,
@@ -237,7 +237,7 @@ function v(e) {
             })]
         })
     });
-    return r ? (0, i.jsxs)("div", {
+    return a ? (0, i.jsxs)("div", {
         className: E.Os,
         children: [b, (0, i.jsx)(m.g, {
             label: "Bucket Override",

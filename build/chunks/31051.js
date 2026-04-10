@@ -1,76 +1,77 @@
 /** chunk id: 31051 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => L
+    A: () => U
 });
 var i = n(627968),
-    l = n(735438),
-    a = n(158954),
-    r = n(311907),
-    s = n(827734),
-    o = n(397927),
-    c = n(863574),
+    r = n(735438),
+    s = n(158954),
+    l = n(311907),
+    a = n(827734),
+    c = n(397927),
+    o = n(863574),
     u = n(888675),
     d = n(639289),
     _ = n(287809),
-    A = n(166403),
-    m = n(954571),
-    E = n(203982),
-    T = n(728458),
-    I = n(427262),
+    E = n(166403),
+    A = n(954571),
+    m = n(203982),
+    I = n(728458),
+    T = n(427262),
     g = n(573359),
     N = n(59784),
     f = n(612669),
-    C = n(88001),
-    h = n(652215),
-    p = n(519412),
+    p = n(88001),
+    C = n(652215),
+    h = n(519412),
     S = n(985018),
-    x = n(313902),
-    R = n(421438);
+    R = n(313902),
+    x = n(421438);
 let O = e => {
         let {
             disabled: t,
-            invite: r,
-            isExistingSub: s
+            invite: l,
+            isExistingSub: a
         } = e;
-        return (0, i.jsx)(o.Button, {
+        return (0, i.jsx)(c.Button, {
             variant: "expressive",
             size: "md",
-            text: S.intl.string(p.default.rjuKse),
-            icon: a.tvc,
+            text: S.intl.string(h.default.rjuKse),
+            icon: s.tvc,
             onClick: () => {
-                if (null == r) return;
-                let e = r.subscription,
-                    t = r.id,
-                    a = _.default.getUser(r.primary_user);
-                if (null == a) return;
-                let c = (0, I.$3)(a);
-                m.default.track(h.HAw.PREMIUM_GROUP_INVITE_EMBED_ACCEPT_CLICKED, {
+                if (null == l) return;
+                let e = l.subscription,
+                    t = l.id,
+                    s = _.default.getUser(l.primary_user);
+                if (null == s) return;
+                let o = (0, T.$3)(s);
+                A.default.track(C.HAw.PREMIUM_GROUP_INVITE_EMBED_ACCEPT_CLICKED, {
                     invite_id: t,
                     subscription_id: e
                 });
-                let u = (0, l.uniqueId)("premium-group-accept-invite-modal"),
-                    A = !1;
-                (0, o.mMO)(async () => {
+                let u = (0, r.uniqueId)("premium-group-accept-invite-modal"),
+                    E = !1;
+                (0, c.mMO)(async () => {
                     let {
-                        default: l
+                        default: r
                     } = await n.e("60072").then(n.bind(n, 159707));
-                    return n => (0, i.jsx)(l, {
+                    return n => (0, i.jsx)(r, {
                         ...n,
                         premiumGroupSubscriptionId: e,
                         premiumGroupInviteId: t,
-                        premiumGroupPrimaryName: c,
-                        isExistingSub: s,
+                        premiumGroupPrimaryName: o,
+                        isExistingSub: a,
                         onClose: async () => {
-                            A || (A = !0, E._.dispatch(h.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), g.A.isDisplayingWowMomentConfirmation && g.A.isAnimated ? setTimeout(() => {
+                            E || (E = !0, m._.dispatch(C.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), g.A.isDisplayingWowMomentConfirmation && g.A.isAnimated ? setTimeout(() => {
                                 n.onClose()
                             }, d.K) : await n.onClose())
                         }
                     })
                 }, {
                     onCloseRequest: () => {
-                        A || (A = !0, E._.dispatch(h.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), g.A.isDisplayingWowMomentConfirmation && g.A.isAnimated ? setTimeout(() => {
-                            (0, o.OoC)(u)
-                        }, d.K) : (0, o.OoC)(u))
+                        E || (E = !0, m._.dispatch(C.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), g.A.isDisplayingWowMomentConfirmation && g.A.isAnimated ? setTimeout(() => {
+                            (0, c.OoC)(u)
+                        }, d.K) : (0, c.OoC)(u))
                     },
                     modalKey: u
                 })
@@ -81,39 +82,39 @@ let O = e => {
     M = e => {
         let {
             disabled: t,
-            invite: l,
-            channel: a
+            invite: r,
+            channel: s
         } = e;
-        return (0, i.jsx)(o.Button, {
+        return (0, i.jsx)(c.Button, {
             variant: "secondary",
             size: "md",
-            text: S.intl.string(p.default["eYHh+z"]),
+            text: S.intl.string(h.default["eYHh+z"]),
             onClick: () => {
-                if (null == l || !a.isDM()) return void T.A.captureMessage("CancelInviteButton onClick: unexpected state", {
+                if (null == r || !s.isDM()) return void I.A.captureMessage("CancelInviteButton onClick: unexpected state", {
                     extra: {
-                        inviteIsNull: null == l,
-                        channelIsDM: a.isDM(),
-                        channelId: a.id,
-                        subscriptionGroupMemberId: l?.id,
-                        subscriptionId: l?.subscription,
-                        primaryUserId: l?.primary_user
+                        inviteIsNull: null == r,
+                        channelIsDM: s.isDM(),
+                        channelId: s.id,
+                        subscriptionGroupMemberId: r?.id,
+                        subscriptionId: r?.subscription,
+                        primaryUserId: r?.primary_user
                     }
                 });
-                let e = a.getRecipientId(),
+                let e = s.getRecipientId(),
                     t = _.default.getUser(e);
-                null != t && (m.default.track(h.HAw.PREMIUM_GROUP_INVITE_EMBED_CANCEL_CLICKED, {
-                    invite_id: l.id,
-                    subscription_id: l.subscription,
+                null != t && (A.default.track(C.HAw.PREMIUM_GROUP_INVITE_EMBED_CANCEL_CLICKED, {
+                    invite_id: r.id,
+                    subscription_id: r.subscription,
                     invited_user_id: e
-                }), (0, o.mMO)(async () => {
+                }), (0, c.mMO)(async () => {
                     let {
                         default: e
                     } = await n.e("15554").then(n.bind(n, 115225));
                     return n => (0, i.jsx)(e, {
                         ...n,
-                        subscriptionId: l.subscription,
+                        subscriptionId: r.subscription,
                         invitedUser: t,
-                        subscriptionGroupMemberId: l.id
+                        subscriptionGroupMemberId: r.id
                     })
                 }))
             },
@@ -124,98 +125,98 @@ let O = e => {
         let {
             message: t,
             header: n,
-            body: l,
-            compact: r,
-            actionButton: c
+            body: r,
+            compact: l,
+            actionButton: o
         } = e;
         return (0, i.jsxs)(u.A, {
-            className: x.og,
-            compact: r,
-            iconNode: (0, i.jsx)(a.tvc, {
+            className: R.og,
+            compact: l,
+            iconNode: (0, i.jsx)(s.tvc, {
                 size: "md",
-                color: s.A.colors.ICON_STRONG
+                color: a.A.colors.ICON_STRONG
             }),
-            children: [(0, i.jsx)(o.Text, {
+            children: [(0, i.jsx)(c.Text, {
                 variant: "text-md/medium",
                 color: "text-strong",
                 children: t
-            }), (0, i.jsxs)(o.BJc, {
+            }), (0, i.jsxs)(c.BJc, {
                 direction: "horizontal",
-                className: x.x,
+                className: R.x,
                 children: [(0, i.jsx)("img", {
-                    src: R,
+                    src: x,
                     alt: "",
-                    className: x.Sl
+                    className: R.Sl
                 }), (0, i.jsxs)("div", {
-                    className: x.Qs,
-                    children: [(0, i.jsx)(o.Exy, {
+                    className: R.Qs,
+                    children: [(0, i.jsx)(c.Exy, {
                         type: "beta",
                         variant: "expressive"
                     }), (0, i.jsx)("h2", {
-                        className: x.DD,
+                        className: R.DD,
                         children: n
-                    }), (0, i.jsx)(o.Text, {
+                    }), (0, i.jsx)(c.Text, {
                         variant: "text-md/medium",
                         color: "text-subtle",
-                        children: l
-                    }), null != c && (0, i.jsx)("div", {
-                        className: x.UD,
-                        children: c
+                        children: r
+                    }), null != o && (0, i.jsx)("div", {
+                        className: R.UD,
+                        children: o
                     })]
                 })]
             })]
         })
     },
-    L = e => {
+    U = e => {
         let {
             message: t,
             channel: n,
-            compact: l
-        } = e, a = t.premiumGroupInviteId, {
-            inviteState: s,
-            isFetching: o,
+            compact: r
+        } = e, s = t.premiumGroupInviteId, {
+            inviteState: a,
+            isFetching: c,
             invite: u,
             currentUser: d,
-            premiumSubscription: m
-        } = (0, r.cf)([N.A, _.default, A.A], () => ({
-            inviteState: null != a ? N.A.getInviteState(a) : C.xI.NOT_FOUND,
-            isFetching: null != a && N.A.isFetching(a),
-            invite: null != a ? N.A.getInvite(a)?.invite : null,
+            premiumSubscription: A
+        } = (0, l.cf)([N.A, _.default, E.A], () => ({
+            inviteState: null != s ? N.A.getInviteState(s) : p.xI.NOT_FOUND,
+            isFetching: null != s && N.A.isFetching(s),
+            invite: null != s ? N.A.getInvite(s)?.invite : null,
             currentUser: _.default.getCurrentUser(),
-            premiumSubscription: A.A.getPremiumSubscription()
-        }), [a]);
+            premiumSubscription: E.A.getPremiumSubscription()
+        }), [s]);
         if (null == d) return null;
-        let E = t.author,
-            T = d.id === E.id;
-        if (o || s === C.xI.FETCHING || s === C.xI.UNKNOWN) return (0, i.jsx)(c.Wb, {
+        let m = t.author,
+            I = d.id === m.id;
+        if (c || a === p.xI.FETCHING || a === p.xI.UNKNOWN) return (0, i.jsx)(o.Wb, {
             isHorizontal: !0
         });
-        let I = (0, f.o1)({
-            sender: E,
+        let T = (0, f.o1)({
+            sender: m,
             channel: n,
-            isSender: T,
-            inviteState: s
+            isSender: I,
+            inviteState: a
         });
-        if (null == I) return null;
-        let g = s === C.xI.PENDING,
-            h = null;
-        return h = T ? g ? (0, i.jsx)(M, {
+        if (null == T) return null;
+        let g = a === p.xI.PENDING,
+            C = null;
+        return C = I ? g ? (0, i.jsx)(M, {
             disabled: !1,
             invite: u,
             channel: n
-        }) : s === C.xI.REMOVED ? (0, i.jsx)(M, {
+        }) : a === p.xI.REMOVED ? (0, i.jsx)(M, {
             disabled: !0,
             invite: u,
             channel: n
         }) : null : (0, i.jsx)(O, {
             disabled: !g,
             invite: u,
-            isExistingSub: null != m
+            isExistingSub: null != A
         }), (0, i.jsx)(D, {
-            message: I.message,
-            header: I.header,
-            body: I.body,
-            compact: l,
-            actionButton: h
+            message: T.message,
+            header: T.header,
+            body: T.body,
+            compact: r,
+            actionButton: C
         })
     }

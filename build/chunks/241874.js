@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(143413),
-    a = n(860227),
+    a = n(143413),
+    s = n(860227),
     r = n(643204),
     o = n(449859),
     c = n(535421),
@@ -15,16 +15,16 @@ let h = l.memo(function(e) {
         let {
             message: t,
             channel: n,
-            compact: s = !1,
-            groupId: a,
+            compact: a = !1,
+            groupId: s,
             isGroupStart: o,
             usernameProfile: h,
             avatarProfile: m,
             setPopout: A,
             author: g,
             repliedMessage: p,
-            roleIcon: f
-        } = e, _ = (0, d.r4)(t.author.id, n.id), E = (0, d.m)(t, n, h, A), x = (0, d.Jo)(m, A), C = l.useCallback(() => {
+            roleIcon: _
+        } = e, f = (0, d.r4)(t.author.id, n.id), E = (0, d.m)(t, n, h, A), C = (0, d.Jo)(m, A), x = l.useCallback(() => {
             A({
                 usernameProfile: !1,
                 avatarProfile: !1,
@@ -37,17 +37,17 @@ let h = l.memo(function(e) {
             channel: n,
             repliedMessage: p,
             author: g,
-            compact: s,
-            subscribeToGroupId: a,
-            showTimestampOnHover: !o && s && t.type !== u.lAJ.REPLY,
+            compact: a,
+            subscribeToGroupId: s,
+            showTimestampOnHover: !o && a && t.type !== u.lAJ.REPLY,
             renderPopout: c.A,
             showAvatarPopout: m,
             showUsernamePopout: h,
-            onClickAvatar: x,
+            onClickAvatar: C,
             onClickUsername: E,
-            onContextMenu: _,
-            onPopoutRequestClose: C,
-            roleIcon: f
+            onContextMenu: f,
+            onPopoutRequestClose: x,
+            roleIcon: _
         })
     }),
     m = l.memo(o.A);
@@ -67,10 +67,10 @@ function A(e) {
         channel: g,
         groupId: p
     } = t, {
-        usernameProfile: f,
-        avatarProfile: _
+        usernameProfile: _,
+        avatarProfile: f
     } = l;
-    if ((0, s.A)(u)) return null;
+    if ((0, a.A)(u)) return null;
     let E = u.id === p;
     return E || A || null != r ? (0, i.jsx)(h, {
         message: u,
@@ -80,8 +80,8 @@ function A(e) {
         isGroupStart: E,
         groupId: p,
         setPopout: n,
-        usernameProfile: f,
-        avatarProfile: _,
+        usernameProfile: _,
+        avatarProfile: f,
         author: o,
         repliedMessage: c,
         roleIcon: d
@@ -89,7 +89,7 @@ function A(e) {
         compact: !0,
         timestamp: u.timestamp,
         isInline: !1,
-        id: (0, a.xl)(u),
+        id: (0, s.xl)(u),
         isVisibleOnlyOnHover: !0,
         cozyAlt: !0
     })

@@ -1,43 +1,43 @@
 /** chunk id: 73028 params = (module,exports,require) **/
 n.d(e, {
-    U: () => u
+    U: () => o
 });
 var i = n(627968);
 n(64700);
 var l = n(397927),
     r = n(157559),
-    a = n(818348),
-    d = n(985018);
-let u = (t, e) => {
-    let u = `group-dm-edit-modal-${t}`,
-        s = !1,
-        o = t => {
-            s = t
+    s = n(818348),
+    a = n(985018);
+let o = (t, e) => {
+    let o = `group-dm-edit-modal-${t}`,
+        c = !1,
+        d = t => {
+            c = t
         },
-        c = () => {
-            s ? r.A.show({
-                title: d.intl.string(d.t.pvRCSu),
-                body: d.intl.string(d.t.DRi46S),
-                confirmText: d.intl.string(d.t["6GQDFu"]),
+        u = () => {
+            c ? r.A.show({
+                title: a.intl.string(a.t.pvRCSu),
+                body: a.intl.string(a.t.DRi46S),
+                confirmText: a.intl.string(a.t["6GQDFu"]),
                 confirmVariant: "critical-primary",
-                cancelText: d.intl.string(d.t.DmDzZB),
-                onConfirm: () => (0, l.OoC)(u),
-                onCancel: a.tE
-            }) : (0, l.OoC)(u)
+                cancelText: a.intl.string(a.t.DmDzZB),
+                onConfirm: () => (0, l.OoC)(o),
+                onCancel: s.tE
+            }) : (0, l.OoC)(o)
         };
     (0, l.mMO)(async () => {
         let {
             default: l
         } = await n.e("42455").then(n.bind(n, 66442));
         return n => (0, i.jsx)(l, {
-            closeOrShowDiscardChangesAlert: c,
-            setHasPendingChanges: o,
+            closeOrShowDiscardChangesAlert: u,
+            setHasPendingChanges: d,
             channelId: t,
             location: e,
             ...n
         })
     }, {
-        modalKey: u,
-        onCloseRequest: c
+        modalKey: o,
+        onCloseRequest: u
     })
 }

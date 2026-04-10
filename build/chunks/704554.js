@@ -2,103 +2,103 @@
 n.d(t, {
     RT: () => d
 }), n(323874), n(14289), n(35956);
-var a = n(64700),
+var i = n(64700),
     l = n(812729),
-    i = n.n(l),
-    r = n(735438),
-    s = n(403362),
-    u = n(379078);
-let o = new Worker(new URL("/assets/" + n.u("83450"), n.b));
+    r = n.n(l),
+    s = n(735438),
+    a = n(403362),
+    o = n(379078);
+let u = new Worker(new URL("/assets/" + n.u("83450"), n.b));
 
 function d(e, t, n, l) {
     let d = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : [],
-        c = a.useRef(null),
-        m = a.useRef(null),
-        g = a.useRef(n),
+        c = i.useRef(null),
+        h = i.useRef(null),
+        g = i.useRef(n),
         {
-            searchStringGenerator: f
+            searchStringGenerator: m
         } = l,
-        p = function(e) {
+        f = function(e) {
             let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
-                [n, l] = a.useState(e),
-                r = a.useRef(e);
-            return a.useEffect(() => {
-                r.current = e
-            }, [e]), a.useEffect(() => {
+                [n, l] = i.useState(e),
+                s = i.useRef(e);
+            return i.useEffect(() => {
+                s.current = e
+            }, [e]), i.useEffect(() => {
                 l(e => {
-                    let t = r.current;
-                    return i()(e, t) ? e : t
+                    let t = s.current;
+                    return r()(e, t) ? e : t
                 })
             }, t), n
-        }(t.map(f), [t, f, ...d]),
-        h = function(e) {
+        }(t.map(m), [t, m, ...d]),
+        A = function(e) {
             let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
-                [n, l] = a.useState(e),
-                r = a.useRef(e);
-            return a.useEffect(() => {
-                r.current = e
-            }, [e]), a.useEffect(() => {
+                [n, l] = i.useState(e),
+                s = i.useRef(e);
+            return i.useEffect(() => {
+                s.current = e
+            }, [e]), i.useEffect(() => {
                 l(e => {
-                    let t = r.current;
-                    return i()(e, t) ? e : t
+                    let t = s.current;
+                    return r()(e, t) ? e : t
                 })
             }, t), n
         }(t, [t]);
-    a.useEffect(() => {
+    i.useEffect(() => {
         g.current = n
     }, [n]);
-    let v = a.useMemo(() => {
+    let I = i.useMemo(() => {
         let {
             throttleMs: e = 200,
             throttleLeading: t = !0,
             throttleTrailing: n = !0,
-            maxSearchResults: a = -1
+            maxSearchResults: i = -1
         } = l;
-        return m.current = (0, r.throttle)(async (e, t, n) => {
-            if ("" === e.trim()) return void(a > 0 ? g.current(t.slice(0, a)) : g.current(t));
-            c.current = (0, r.uniqueId)();
-            let i = await
-            function(e, t, n, a) {
-                let l = a.promiseUuid ?? (0, r.uniqueId)(),
+        return h.current = (0, s.throttle)(async (e, t, n) => {
+            if ("" === e.trim()) return void(i > 0 ? g.current(t.slice(0, i)) : g.current(t));
+            c.current = (0, s.uniqueId)();
+            let r = await
+            function(e, t, n, i) {
+                let l = i.promiseUuid ?? (0, s.uniqueId)(),
                     {
-                        searchType: i = u.n.FUZZY,
-                        sortType: d = u.r.NONE,
+                        searchType: r = o.n.FUZZY,
+                        sortType: d = o.r.NONE,
                         jaroWinklerSearchThreshold: c = .85,
-                        maxSearchResults: m = -1
-                    } = a;
-                return new Promise(a => {
-                    let r = t => {
+                        maxSearchResults: h = -1
+                    } = i;
+                return new Promise(i => {
+                    let s = t => {
                         let {
                             data: {
                                 id: n,
-                                foundItemIndexes: i
+                                foundItemIndexes: r
                             }
                         } = t;
-                        l === n && (a(i.map(t => e[t]).filter(s.Vq)), o?.removeEventListener("message", r))
+                        l === n && (i(r.map(t => e[t]).filter(a.Vq)), u?.removeEventListener("message", s))
                     };
-                    o?.addEventListener("message", r), o?.postMessage({
+                    u?.addEventListener("message", s), u?.postMessage({
                         id: l,
                         searchTerm: t,
                         searchStrings: n,
-                        searchType: i,
+                        searchType: r,
                         sortType: d,
                         jaroWinklerSearchThreshold: c,
-                        maxSearchResults: m
+                        maxSearchResults: h
                     })
                 })
             }(t, e, n, {
                 promiseUuid: c.current,
                 ...l
             });
-            null != c.current && g.current(i)
+            null != c.current && g.current(r)
         }, e, {
             leading: t,
             trailing: n
-        }), m.current
+        }), h.current
     }, [l]);
-    return a.useEffect(() => {
-        v(e, h, p)
-    }, [v, e, h, p, ...d]), a.useEffect(() => () => {
-        null != m.current && m.current.cancel(), m.current = null, c.current = null
-    }, [p, n, l]), v
+    return i.useEffect(() => {
+        I(e, A, f)
+    }, [I, e, A, f, ...d]), i.useEffect(() => () => {
+        null != h.current && h.current.cancel(), h.current = null, c.current = null
+    }, [f, n, l]), I
 }

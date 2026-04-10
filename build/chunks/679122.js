@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(311907),
     l = n(743790),
-    a = n(419954),
-    r = n(933297),
+    r = n(419954),
+    a = n(933297),
     o = n(71393),
     d = n(711014),
     c = n(253932),
@@ -21,7 +21,7 @@ function g() {
     }, [e])
 }
 let _ = {
-        type: r.wF.STACKED_ICONS,
+        type: a.wF.STACKED_ICONS,
         useIcons: function() {
             let e = g(),
                 t = (0, s.bG)([o.A], () => e.slice(0, 2).map(e => o.A.getGuild(e)).filter(e => null != e), [e]);
@@ -31,14 +31,14 @@ let _ = {
                         guild: t[0],
                         size: 48
                     }),
-                    shape: r.NF.SQUIRCLE
+                    shape: a.NF.SQUIRCLE
                 },
                 backIcon: {
                     icon: (0, i.jsx)(l.$, {
                         guild: t[1],
                         size: 48
                     }),
-                    shape: r.NF.SQUIRCLE
+                    shape: a.NF.SQUIRCLE
                 }
             } : {
                 frontIcon: {
@@ -46,12 +46,12 @@ let _ = {
                         guild: t[0],
                         size: 48
                     }),
-                    shape: r.NF.SQUIRCLE
+                    shape: a.NF.SQUIRCLE
                 }
             }
         }
     },
-    x = (0, a.AK)(u.X.PROFILE_PRIVACY_TO_ACTIVITY_PRIVACY_NAVIGATOR, {
+    x = (0, r.AK)(u.X.PROFILE_PRIVACY_TO_ACTIVITY_PRIVACY_NAVIGATOR, {
         useSubtitle: function() {
             let e = g();
             if (0 === e.length) return m.intl.format(m.t.QJIJ5p, {});
@@ -70,6 +70,6 @@ let _ = {
         },
         destinationKey: u.X.ACTIVITY_PRIVACY_PANEL
     }),
-    A = (0, a.gN)(u.X.PROFILE_PRIVACY_RELATED_SETTINGS, {
+    A = (0, r.gN)(u.X.PROFILE_PRIVACY_RELATED_SETTINGS, {
         buildLayout: () => [x]
     })

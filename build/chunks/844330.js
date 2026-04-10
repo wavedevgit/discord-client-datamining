@@ -1,83 +1,84 @@
 /** chunk id: 844330 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => c
+    A: () => d
 });
-var a = n(627968),
-    i = n(64700),
-    s = n(503698),
-    l = n.n(s),
-    r = n(397927),
+var i = n(627968),
+    s = n(64700),
+    r = n(503698),
+    l = n.n(r),
+    a = n(397927),
     o = n(147925),
-    d = n(485965);
+    c = n(485965);
 
-function c(e) {
+function d(e) {
     let {
         icon: t,
         title: n,
-        subtitle: s,
-        children: c,
+        subtitle: r,
+        children: d,
         className: u,
-        isExpanded: m,
-        onExpandedChange: h,
-        defaultExpanded: x = !1,
-        onOpen: p,
-        maxHeight: g
-    } = e, [f, v] = i.useState(x), _ = i.useRef(null), [b, j] = i.useState(null), A = void 0 !== m, C = A ? m : f;
-    i.useEffect(() => {
-        C && null != _.current && j(_.current.scrollHeight)
-    }, [C, c]);
-    let y = i.useCallback(() => {
-            let e = !C;
-            A || v(e), h?.(e), e && null != p && p()
-        }, [C, A, h, p]),
-        S = i.useMemo(() => {
-            if (C) {
-                if (null != g) return {
-                    maxHeight: "number" == typeof g ? `${g}px` : g
+        isExpanded: h,
+        onExpandedChange: _,
+        defaultExpanded: p = !1,
+        onOpen: g,
+        maxHeight: m
+    } = e, [A, f] = s.useState(p), E = s.useRef(null), [x, I] = s.useState(null), N = void 0 !== h, v = N ? h : A;
+    s.useEffect(() => {
+        v && null != E.current && I(E.current.scrollHeight)
+    }, [v, d]);
+    let T = s.useCallback(() => {
+            let e = !v;
+            N || f(e), _?.(e), e && null != g && g()
+        }, [v, N, _, g]),
+        C = s.useMemo(() => {
+            if (v) {
+                if (null != m) return {
+                    maxHeight: "number" == typeof m ? `${m}px` : m
                 };
-                if (null != b) return {
-                    maxHeight: `${b}px`
+                if (null != x) return {
+                    maxHeight: `${x}px`
                 }
             }
-        }, [g, C, b]);
-    return (0, a.jsxs)("div", {
-        className: l()(d.Yt, u, {
-            [d.Sg]: C
+        }, [m, v, x]);
+    return (0, i.jsxs)("div", {
+        className: l()(c.Yt, u, {
+            [c.Sg]: v
         }),
-        children: [(0, a.jsxs)(r.DUT, {
-            className: d.wx,
-            onClick: y,
-            children: [null != t && (0, a.jsx)("div", {
-                className: d.Y5,
+        children: [(0, i.jsxs)(a.DUT, {
+            className: c.wx,
+            onClick: T,
+            children: [null != t && (0, i.jsx)("div", {
+                className: c.Y5,
                 children: t
-            }), (0, a.jsxs)("div", {
-                className: d.DD,
-                children: [(0, a.jsx)(r.Text, {
+            }), (0, i.jsxs)("div", {
+                className: c.DD,
+                children: [(0, i.jsx)(a.Text, {
                     variant: "text-sm/medium",
                     color: "text-default",
                     children: n
-                }), null != s && "" !== s && (0, a.jsx)(r.Text, {
+                }), null != r && "" !== r && (0, i.jsx)(a.Text, {
                     variant: "text-xs/medium",
                     color: "text-subtle",
-                    children: s
+                    children: r
                 })]
-            }), (0, a.jsx)("div", {
-                className: l()(d.OW, {
-                    [d.Sg]: C
+            }), (0, i.jsx)("div", {
+                className: l()(c.OW, {
+                    [c.Sg]: v
                 }),
-                children: (0, a.jsx)(o.A, {
+                children: (0, i.jsx)(o.A, {
                     width: 20,
                     height: 20,
                     direction: o.A.Directions.RIGHT
                 })
             })]
-        }), (0, a.jsx)("div", {
-            ref: _,
-            className: l()(d.Qs, {
-                [d.Sg]: C
+        }), (0, i.jsx)("div", {
+            ref: E,
+            className: l()(c.Qs, {
+                [c.Sg]: v
             }),
-            style: S,
-            children: c
+            style: C,
+            children: d
         })]
     })
 }

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(83257),
-    a = n(203982),
-    r = n(115063),
+    r = n(203982),
+    a = n(115063),
     o = n(652215);
 let d = s.createContext(void 0);
 
@@ -18,10 +18,10 @@ function c(e) {
         u(e?.some(e => e.showNotice() && !e.canCloseEarly?.()) ?? !1), n.current = l.n3
     }, []), g = s.useCallback(e => {
         if (c) {
-            (0, r.fO)({
+            (0, a.fO)({
                 duration: 300,
                 intensity: n.current
-            }), n.current = Math.min(n.current + l.pe, l.OZ), a._.dispatch(o.jej.EMPHASIZE_NOTICE);
+            }), n.current = Math.min(n.current + l.pe, l.OZ), r._.dispatch(o.jej.EMPHASIZE_NOTICE);
             return
         }
         e()

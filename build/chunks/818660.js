@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(735438),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(827734),
     d = n(435371),
     c = n(397927),
@@ -284,7 +284,7 @@ class G extends s.PureComponent {
         let {
             enableClips: e,
             enableScreenshotKeybind: t
-        } = this.props, n = a()(this.props.keybinds).reject(e => e.managed && ![j.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, j.hCu.SAVE_CLIP, j.hCu.SAVE_SCREENSHOT].includes(e.action)).reject(t => !e && (t.action === j.hCu.SAVE_CLIP || t.action === j.hCu.SAVE_SCREENSHOT)).reject(e => !t && e.action === j.hCu.SAVE_SCREENSHOT).reject(e => !this.props.allowSoundboard && (e.action === j.hCu.SOUNDBOARD || e.action === j.hCu.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => !0 === e.managed ? -1 : 0).value(), l = a()((0, _.Bx)()).filter(e => e.description !== O.intl.string(O.t.HnNtEI)).groupBy(e => e.group).value();
+        } = this.props, n = r()(this.props.keybinds).reject(e => e.managed && ![j.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, j.hCu.SAVE_CLIP, j.hCu.SAVE_SCREENSHOT].includes(e.action)).reject(t => !e && (t.action === j.hCu.SAVE_CLIP || t.action === j.hCu.SAVE_SCREENSHOT)).reject(e => !t && e.action === j.hCu.SAVE_SCREENSHOT).reject(e => !this.props.allowSoundboard && (e.action === j.hCu.SOUNDBOARD || e.action === j.hCu.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => !0 === e.managed ? -1 : 0).value(), l = r()((0, _.Bx)()).filter(e => e.description !== O.intl.string(O.t.HnNtEI)).groupBy(e => e.group).value();
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(I.A, {
                 className: L.IE,
@@ -337,14 +337,14 @@ class G extends s.PureComponent {
                     children: e => (0, i.jsx)(i.Fragment, {
                         children: e.map((e, t) => {
                             let n = (0, _.Gm)(e),
-                                a = (0, _.zF)(e),
-                                r = l[e];
+                                r = (0, _.zF)(e),
+                                a = l[e];
                             return (0, i.jsx)(c.nVY, {
                                 label: n,
-                                description: a,
+                                description: r,
                                 children: (0, i.jsx)("div", {
                                     className: R.jh,
-                                    children: r.map((e, t) => (0, i.jsxs)(s.Fragment, {
+                                    children: a.map((e, t) => (0, i.jsxs)(s.Fragment, {
                                         children: [0 !== t && (0, i.jsx)(c.cGx, {}), (0, i.jsxs)("div", {
                                             className: R.yZ,
                                             children: [(0, i.jsx)(c.Text, {
@@ -373,17 +373,17 @@ function M() {
     s.useEffect(() => (u.A.enableAll(!1), () => {
         u.A.enableAll(!0)
     }), []);
-    let e = (0, r.bG)([E.Ay], () => E.Ay.getState()),
-        t = (0, r.bG)([S.Ay], () => (0, h.A)(S.Ay)),
-        n = (0, r.bG)([T.A], () => T.A.isSupported),
+    let e = (0, a.bG)([E.Ay], () => E.Ay.getState()),
+        t = (0, a.bG)([S.Ay], () => (0, h.A)(S.Ay)),
+        n = (0, a.bG)([T.A], () => T.A.isSupported),
         l = (0, A.sw)(),
-        a = (0, A.BW)();
+        r = (0, A.BW)();
     return (0, i.jsx)(G, {
         keybinds: e,
         canGoLive: t,
         overlaySupported: n,
         allowSoundboard: (0, C.isWindows)(),
         enableClips: l,
-        enableScreenshotKeybind: a
+        enableScreenshotKeybind: r
     })
 }

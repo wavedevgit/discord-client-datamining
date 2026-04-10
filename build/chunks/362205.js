@@ -1,7 +1,7 @@
 /** chunk id: 362205 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => j
+    A: () => C
 });
 var r = n(627968),
     i = n(64700),
@@ -13,16 +13,16 @@ var r = n(627968),
     c = n(942381),
     d = n(837381),
     h = n(935399),
-    m = n(319354),
-    p = n(397927),
-    f = n(775602),
-    _ = n(253932),
+    p = n(319354),
+    _ = n(397927),
+    m = n(775602),
+    f = n(253932),
     g = n(894858),
     y = n(272053),
     v = n(397274),
-    x = n(189857),
-    S = n(674085),
-    E = n(188180),
+    S = n(189857),
+    E = n(674085),
+    x = n(188180),
     A = n(890690),
     N = n(480270);
 
@@ -36,23 +36,23 @@ function b(e) {
         useTitle: l,
         useSubnavLabel: u,
         key: c
-    } = t, h = l?.(), m = u?.() ?? h;
-    return o()(null != m, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(d.tG, {
+    } = t, h = l?.(), p = u?.() ?? h;
+    return o()(null != p, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(d.tG, {
         id: c,
-        children: e => (0, r.jsxs)(p.DUT, {
+        children: e => (0, r.jsxs)(_.DUT, {
             onClick: n,
             className: s()(N.AS, {
                 [N.vu]: i
             }),
             ...e,
-            children: [m, null != a && !i && (0, r.jsx)(S.A, {
+            children: [p, null != a && !i && (0, r.jsx)(E.A, {
                 badge: a
             })]
         }, c)
     })
 }
 
-function j(e) {
+function C(e) {
     let {
         active: t,
         categories: n,
@@ -78,29 +78,29 @@ function j(e) {
     let h = i.useMemo(() => Math.max(n.findIndex(e => e.key === l), 0), [n, l]);
     i.useEffect(() => {
         if (!t) {
-            let e = m.current;
+            let e = p.current;
             null != e && (e.style.height = `${e.scrollHeight}px`, window.getComputedStyle(e).height, e.style.height = "0", Promise.allSettled(e.getAnimations().map(e => e.finished)).then(() => {
                 d(!1)
             }))
         }
     }, [t]);
-    let m = i.useRef(null),
-        [p, f] = i.useState(t ? "auto" : "0");
+    let p = i.useRef(null),
+        [_, m] = i.useState(t ? "auto" : "0");
     return (0, A.u)(n, t), (0, r.jsx)("div", {
         className: N.lK,
         style: {
-            height: p,
+            height: _,
             opacity: +!!t
         },
-        ref: m,
-        children: u && (0, r.jsx)(C, {
+        ref: p,
+        children: u && (0, r.jsx)(j, {
             index: h,
             activeKey: l,
             categories: n,
             visibleContent: a,
             dismissibleBadges: s,
             onMount: function() {
-                let e = m.current;
+                let e = p.current;
                 null != e && (e.style.height = `${e.scrollHeight}px`, Promise.all(e.getAnimations().map(e => e.finished)).then(() => {
                     e.style.height = "auto", v.A.scrollSidebarNodeIntoView(e, {
                         animate: !0,
@@ -112,7 +112,7 @@ function j(e) {
     })
 }
 
-function C(e) {
+function j(e) {
     let {
         index: t,
         activeKey: n,
@@ -126,13 +126,13 @@ function C(e) {
         thumbAnchorRef: g,
         springs: v
     } = function(e) {
-        let t = _.Xi.useSetting(),
+        let t = f.Xi.useSetting(),
             n = i.useRef(null),
             r = i.useRef(null),
             a = i.useRef(null),
             s = i.useRef(!0),
             l = i.useRef(t),
-            [o, u] = (0, p.zhh)(() => ({
+            [o, u] = (0, _.zhh)(() => ({
                 y: 0,
                 height: 0,
                 config: {
@@ -145,10 +145,10 @@ function C(e) {
             let e = l.current !== t,
                 i = () => {
                     if (null == n.current || null == r.current || null == a.current) return;
-                    let [i, c] = [n.current.getBoundingClientRect(), a.current.getBoundingClientRect()], d = i.width / 2, h = (c.y - i.y) / d, m = c.height / d;
-                    s.current || e || f.A.useReducedMotion ? (o.y.set(h), o.height.set(m)) : u({
+                    let [i, c] = [n.current.getBoundingClientRect(), a.current.getBoundingClientRect()], d = i.width / 2, h = (c.y - i.y) / d, p = c.height / d;
+                    s.current || e || m.A.useReducedMotion ? (o.y.set(h), o.height.set(p)) : u({
                         y: h,
-                        height: m
+                        height: p
                     }), s.current = !1, l.current = t
                 },
                 c = null;
@@ -171,7 +171,7 @@ function C(e) {
             "--custom-nav-count": a.length,
             "--custom-nav-index": t,
             "--custom-nav-width": "2px",
-            "--custom-icon-size": `${m.E[E.V]}px`
+            "--custom-icon-size": `${p.E[x.V]}px`
         },
         children: [(0, r.jsx)("div", {
             className: N.u4,
@@ -187,7 +187,7 @@ function C(e) {
             "aria-hidden": "true",
             ref: g
         }), a.map(e => {
-            let t = (0, x.H)(e.key, s, l);
+            let t = (0, S.H)(e.key, s, l);
             return (0, r.jsx)(b, {
                 onClick: () => {
                     var t;

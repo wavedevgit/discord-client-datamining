@@ -3,8 +3,8 @@ n.d(t, {
     A: () => o
 });
 var i = n(735438),
-    a = n.n(i),
-    r = n(179771),
+    r = n.n(i),
+    a = n(179771),
     l = n(613057),
     s = n(652215);
 
@@ -12,14 +12,14 @@ function o(e, t) {
     return {
         [s.ZE4.VOICE_SETTINGS_UPDATE]: {
             scope: {
-                [l.sm.ANY]: [r.F.RPC, r.F.RPC_VOICE_READ]
+                [l.sm.ANY]: [a.F.RPC, a.F.RPC_VOICE_READ]
             },
             handler: () => t => {
                 let {
                     prevState: n,
                     dispatch: i
-                } = t, r = e();
-                return a().isEqual(r, n) || i(r), r
+                } = t, a = e();
+                return r().isEqual(a, n) || i(a), a
             }
         },
         [s.ZE4.VOICE_SETTINGS_UPDATE_2]: {
@@ -31,11 +31,11 @@ function o(e, t) {
                 return e => {
                     let {
                         prevState: i,
-                        dispatch: r
+                        dispatch: a
                     } = e;
                     if (null == n.application.id) return i;
                     let l = t(n.application.id);
-                    return a().isEqual(l, i) || r(l), l
+                    return r().isEqual(l, i) || a(l), l
                 }
             }
         }

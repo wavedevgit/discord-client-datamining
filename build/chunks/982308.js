@@ -1,6 +1,6 @@
 /** chunk id: 982308 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => I
 });
 var i = n(627968);
 n(64700);
@@ -20,10 +20,10 @@ var l = n(503698),
     h = n(652215),
     y = n(307731),
     E = n(985018),
-    _ = n(551623);
-let S = ["slight_smile", "frowning", "smile", "stuck_out_tongue", "wink"];
+    S = n(551623);
+let _ = ["slight_smile", "frowning", "smile", "stuck_out_tongue", "wink"];
 
-function b(e) {
+function T(e) {
     let {
         emoji: t,
         isFocused: n
@@ -45,14 +45,14 @@ function b(e) {
             "aria-label": E.intl.formatToPlainString(E.t["/iYSo6"], {
                 emojiName: t.name
             }),
-            className: a()(_.x6, {
-                [_.in]: n
+            className: a()(S.x6, {
+                [S.in]: n
             }),
             children: null == r || "" === r.trim() ? (0, i.jsx)("span", {
-                className: a()("emoji", "emoji-text", _.Kk),
+                className: a()("emoji", "emoji-text", S.Kk),
                 children: o
             }) : (0, i.jsx)("img", {
-                className: _.Kk,
+                className: S.Kk,
                 src: r,
                 alt: ""
             })
@@ -60,8 +60,8 @@ function b(e) {
     })
 }
 
-function v(e, t) {
-    let n = (0, d.D6)(t.guild_id).filter(e => !(e.useSpriteSheet && S.indexOf(e.uniqueName ?? "") >= 0) && !f.Ay.isEmojiPremiumLocked({
+function I(e, t) {
+    let n = (0, d.D6)(t.guild_id).filter(e => !(e.useSpriteSheet && _.indexOf(e.uniqueName ?? "") >= 0) && !f.Ay.isEmojiPremiumLocked({
         emoji: e,
         channel: t,
         intention: y.EmojiIntention.REACTION
@@ -70,14 +70,14 @@ function v(e, t) {
     let l = A.jW.useSetting(),
         a = (0, g.Id)(t);
     return (0, r.bG)([p.A], () => l && a && (t.isPrivate() || p.A.can(h.xBc.ADD_REACTIONS, t)), [t, a, l]) && n.length > 0 ? (0, i.jsx)(o.rXV, {
-        className: _.iE,
+        className: S.iE,
         children: n.map((n, l) => (0, i.jsx)(o.Drp, {
             id: `quickreact-${n.id??l}`,
             render: e => {
                 let {
                     isFocused: t
                 } = e;
-                return (0, i.jsx)(b, {
+                return (0, i.jsx)(T, {
                     emoji: n,
                     isFocused: t
                 })

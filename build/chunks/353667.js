@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(73939),
     d = n(397927),
     c = n(823092),
@@ -24,18 +24,18 @@ function p(e) {
         children: n
     } = e, {
         showNotice: l,
-        handleStoreUpdate: a
+        handleStoreUpdate: r
     } = (0, c.L_)(), u = t?.stores;
     s.useEffect(() => {
         if (null != u) {
-            let e = new r.ru(u, () => {
-                a(u)
+            let e = new a.ru(u, () => {
+                r(u)
             });
-            return e.attach("SettingPanelNotice"), a(u), () => {
+            return e.attach("SettingPanelNotice"), r(u), () => {
                 e.detach()
             }
         }
-    }, [u, a]);
+    }, [u, r]);
     let m = s.useMemo(() => {
         if (null == t || !l) return null;
         let {
@@ -59,7 +59,7 @@ function T(e) {
         decoration: t
     } = e, n = t.component;
     return (0, i.jsx)("div", {
-        className: a()(h.oK, {
+        className: r()(h.oK, {
             [h.qf]: t.sticky
         }),
         "data-settings-panel-sticky-decoration": t.sticky || void 0,
@@ -72,8 +72,8 @@ function f(e) {
         notice: t,
         children: n,
         useObscuredNotice: l
-    } = e, a = s.useRef(null), r = l?.();
-    return null != r ? (0, i.jsx)(r, {}) : (0, i.jsx)(p, {
+    } = e, r = s.useRef(null), a = l?.();
+    return null != a ? (0, i.jsx)(a, {}) : (0, i.jsx)(p, {
         notice: t,
         children: (0, i.jsxs)(d.GtU, {
             className: h.XG,
@@ -82,9 +82,9 @@ function f(e) {
             },
             children: [(0, i.jsx)("div", {
                 className: h.nd,
-                ref: a,
+                ref: r,
                 children: (0, i.jsx)(d.xpW, {
-                    containerRef: a,
+                    containerRef: r,
                     children: n
                 })
             }), (0, i.jsx)("div", {
@@ -119,8 +119,8 @@ function E(e) {
         panelKey: t,
         layout: n,
         notice: l,
-        decoration: a,
-        useObscuredNotice: r
+        decoration: r,
+        useObscuredNotice: a
     } = e, o = m.A.useState(e => {
         let {
             currentTabKeys: n
@@ -138,7 +138,7 @@ function E(e) {
     let c = n.find(e => e.key === o) ?? n[0];
     return (0, i.jsxs)(f, {
         notice: l,
-        useObscuredNotice: r,
+        useObscuredNotice: a,
         children: [(0, i.jsx)(d.VQ0, {
             className: h.$H,
             selectedItem: o,
@@ -167,7 +167,7 @@ function E(e) {
             id: o,
             children: (0, i.jsx)(S, {
                 layout: c.layout,
-                decoration: a
+                decoration: r
             })
         })]
     }, t)
@@ -179,11 +179,11 @@ function b(e) {
         notice: n,
         decoration: s,
         layout: l,
-        useObscuredNotice: a
+        useObscuredNotice: r
     } = e;
     return (0, i.jsx)(f, {
         notice: n,
-        useObscuredNotice: a,
+        useObscuredNotice: r,
         children: (0, i.jsx)(S, {
             layout: l,
             decoration: s

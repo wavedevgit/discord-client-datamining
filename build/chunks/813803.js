@@ -12,8 +12,8 @@ var l = n(877624),
     c = n(532794),
     d = n(412260),
     u = n(357186),
-    _ = n(379848),
-    E = n(49999),
+    E = n(379848),
+    _ = n(49999),
     T = n(652215),
     A = n(985018),
     I = n(381703);
@@ -27,10 +27,10 @@ let N = t => {
         let t = d.A.getMarketingComponentByType(l.C.GIFT_REMINDER_NAGBAR);
         return null == t || "giftReminderNagbar" !== t.properties.properties.oneofKind ? null : t.properties.properties.giftReminderNagbar
     });
-    return (0, i.jsx)(_.GY, {
+    return (0, i.jsx)(E.GY, {
         contentType: e,
         latestVersion: (0, u.c)(e),
-        groupName: E.m.NOTICE_BAR,
+        groupName: _.m.NOTICE_BAR,
         bypassAutoDismiss: !0,
         children: t => {
             let {
@@ -40,7 +40,7 @@ let N = t => {
             if (e === s.M.GIFTING_PROMOTION_REMINDER) return null == R ? null : (0, i.jsxs)(a.$Td, {
                 color: a.Hv$.PREMIUM_TIER_2,
                 children: [(0, i.jsx)(a.PMB, {
-                    onClick: () => l(E.i.USER_DISMISS),
+                    onClick: () => l(_.i.USER_DISMISS),
                     noticeType: n
                 }), (0, i.jsx)(a.okO, {
                     size: "custom",

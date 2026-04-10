@@ -4,9 +4,9 @@ r.d(e, {
 });
 var i = r(627968);
 r(64700);
-var E = r(397927),
-    n = r(985018);
-let c = (t, e) => (0, i.jsxs)(E.Text, {
+var n = r(397927),
+    E = r(985018);
+let c = (t, e) => (0, i.jsxs)(n.Text, {
         color: "text-feedback-critical",
         style: {
             display: "flex",
@@ -15,7 +15,7 @@ let c = (t, e) => (0, i.jsxs)(E.Text, {
             alignItems: "center"
         },
         variant: "text-sm/normal",
-        children: [(0, i.jsx)(E.EpV, {
+        children: [(0, i.jsx)(n.EpV, {
             size: "custom",
             color: "currentColor",
             width: 14,
@@ -24,7 +24,7 @@ let c = (t, e) => (0, i.jsxs)(E.Text, {
     }, e),
     s = {
         getForumChannelPermissionText: function() {
-            return n.intl.format(n.t.zlXUVY, {
+            return E.intl.format(E.t.zlXUVY, {
                 warningHook: c
             })
         }

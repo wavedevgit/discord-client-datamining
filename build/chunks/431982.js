@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    a = n(688810),
-    r = n(637193),
+    r = n(688810),
+    a = n(637193),
     o = n(84540),
     d = n(919395),
     c = n(128450),
@@ -20,13 +20,13 @@ function g(e) {
         titleIcon: g
     } = e, {
         analyticsLocations: _
-    } = (0, a.Ay)(), x = null != n, {
+    } = (0, r.Ay)(), x = null != n, {
         userNameplate: A,
         guildNameplate: h,
         pendingNameplate: p,
         pendingErrors: T
     } = (0, d.rv)(t, n?.id), f = s.useCallback(() => {
-        (0, r.p)({
+        (0, a.p)({
             analyticsLocations: _,
             guildId: n?.id
         })

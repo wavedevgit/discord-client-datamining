@@ -1,7 +1,7 @@
 /** chunk id: 379078 params = (module,exports,require) **/
 n.d(t, {
-    n: () => i,
-    r: () => r
+    n: () => r,
+    r: () => s
 });
-var a, l, i = ((a = {}).FUZZY = "fuzzy", a.EXACT = "exact", a.REGEX = "regex", a.JARO_WINKLER = "jaro_winkler", a),
-    r = ((l = {}).NONE = "none", l.JARO_WINKLER = "jaro_winkler", l)
+var i, l, r = ((i = {}).FUZZY = "fuzzy", i.EXACT = "exact", i.REGEX = "regex", i.JARO_WINKLER = "jaro_winkler", i),
+    s = ((l = {}).NONE = "none", l.JARO_WINKLER = "jaro_winkler", l)

@@ -1,34 +1,35 @@
 /** chunk id: 986533 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => T
+    A: () => I
 });
 var i = n(627968);
 n(64700);
-var l = n(503698),
-    a = n.n(l),
-    r = n(397927),
-    s = n(709066),
-    o = n(763754),
-    c = n(643204),
+var r = n(503698),
+    s = n.n(r),
+    l = n(397927),
+    a = n(709066),
+    c = n(763754),
+    o = n(643204),
     u = n(809115),
     d = n(888675),
     _ = n(652215),
-    A = n(705751),
-    m = n(985018),
-    E = n(240775);
+    E = n(705751),
+    A = n(985018),
+    m = n(240775);
 
-function T(e) {
+function I(e) {
     let {
         message: t,
         compact: n,
-        usernameHook: l
-    } = e, T = (0, o.Ay)(t), I = l(T), {
+        usernameHook: r
+    } = e, I = (0, c.Ay)(t), T = r(I), {
         avatarSrc: g,
         eventHandlers: {
             onMouseEnter: N,
             onMouseLeave: f
         }
-    } = (0, u.a)(!0), C = "" !== t.content ? new Date(t.content).toLocaleString(m.intl.currentLocale, {
+    } = (0, u.a)(!0), p = "" !== t.content ? new Date(t.content).toLocaleString(A.intl.currentLocale, {
         hour: "numeric",
         minute: "2-digit",
         month: "2-digit",
@@ -39,50 +40,50 @@ function T(e) {
         onMouseEnter: N,
         onMouseLeave: f,
         children: (0, i.jsx)(d.A, {
-            className: a()(E.rs, {
-                [E.oE]: n
+            className: s()(m.rs, {
+                [m.oE]: n
             }),
             iconNode: n ? null : (0, i.jsx)(u.l, {
                 src: g
             }),
-            iconContainerClassName: E.zc,
+            iconContainerClassName: m.zc,
             compact: n,
             children: (0, i.jsxs)("div", {
-                className: a()(E.Qs, {
-                    [E.oE]: n
+                className: s()(m.Qs, {
+                    [m.oE]: n
                 }),
-                children: [(0, i.jsx)(c.ix, {
+                children: [(0, i.jsx)(o.ix, {
                     message: t,
-                    messageClassname: E.he,
-                    className: a()(E.QV, E.he, {
-                        [E.oE]: n
+                    messageClassname: m.he,
+                    className: s()(m.QV, m.he, {
+                        [m.oE]: n
                     }),
                     username: (0, i.jsxs)("div", {
-                        className: E.he,
-                        children: [(0, i.jsx)(r.Text, {
+                        className: m.he,
+                        children: [(0, i.jsx)(l.Text, {
                             variant: "text-md/normal",
                             color: "text-brand",
                             tag: "span",
-                            className: E.Xh,
-                            children: m.intl.string(m.t.hG1StD)
-                        }), (0, i.jsx)(s.A, {
-                            type: A.nu.SYSTEM_DM,
-                            className: E.Al
+                            className: m.Xh,
+                            children: A.intl.string(A.t.hG1StD)
+                        }), (0, i.jsx)(a.A, {
+                            type: E.nu.SYSTEM_DM,
+                            className: m.Al
                         })]
                     }),
                     compact: n,
                     showTimestamp: !0
                 }), (0, i.jsx)("div", {
-                    className: a()(E.__invalid_messageContent, {
-                        [E.oE]: n
+                    className: s()(m.__invalid_messageContent, {
+                        [m.oE]: n
                     }),
-                    children: t.type === _.lAJ.GUILD_INCIDENT_ALERT_MODE_ENABLED ? m.intl.format(m.t["+m8eD7"], {
-                        username: T.nick,
-                        usernameHook: I,
-                        time: C
-                    }) : m.intl.format(m.t["BHeke+"], {
-                        username: T.nick,
-                        usernameHook: I
+                    children: t.type === _.lAJ.GUILD_INCIDENT_ALERT_MODE_ENABLED ? A.intl.format(A.t["+m8eD7"], {
+                        username: I.nick,
+                        usernameHook: T,
+                        time: p
+                    }) : A.intl.format(A.t["BHeke+"], {
+                        username: I.nick,
+                        usernameHook: T
                     })
                 })]
             })

@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(963935),
     l = n(347606),
-    a = n(244242),
-    r = n(578598),
+    r = n(244242),
+    a = n(578598),
     o = n(318903),
     d = n(44909),
     c = n(98254),
@@ -71,7 +71,7 @@ function b(e) {
                 node: t
             });
         case s.Z6.BUTTON:
-            return (0, i.jsx)(r.D, {
+            return (0, i.jsx)(a.D, {
                 node: t
             });
         case s.Z6.SELECT:
@@ -95,7 +95,7 @@ function b(e) {
                 node: t
             });
         case s.Z6.CUSTOM:
-            return (0, i.jsx)(a.L, {
+            return (0, i.jsx)(r.L, {
                 children: (0, i.jsx)(t.Component, {})
             })
     }

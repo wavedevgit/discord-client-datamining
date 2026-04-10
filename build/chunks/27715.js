@@ -6,8 +6,8 @@ var i = n(627968),
     s = n(64700);
 n(873298);
 var l = n(990078),
-    a = n(397927),
-    r = n(486020),
+    r = n(397927),
+    a = n(486020),
     o = n(975571),
     d = n(661191);
 n(253932);
@@ -33,7 +33,7 @@ function A(e) {
             s = n.length - 3;
         return s > 0 ? _.intl.format(_.t.sHFdTg, {
             gameList: t,
-            plusMoreHook: (e, t) => (0, i.jsx)(a.Text, {
+            plusMoreHook: (e, t) => (0, i.jsx)(r.Text, {
                 tag: "span",
                 variant: "text-sm/medium",
                 color: "text-muted",
@@ -48,12 +48,12 @@ function A(e) {
             let s = n[t];
             if (null == s) break;
             let {
-                icon: a,
+                icon: r,
                 name: o,
                 id: d
-            } = s, c = r.Ay.getApplicationIconURL({
+            } = s, c = a.Ay.getApplicationIconURL({
                 id: d,
-                icon: a
+                icon: r
             });
             e.push((0, i.jsx)(l.m, {
                 __unsupportedReactNodeAsText: o,
@@ -67,7 +67,7 @@ function A(e) {
         let t = n.length - 3;
         return t > 0 && e.push((0, i.jsx)("div", {
             className: x.lK,
-            children: (0, i.jsx)(a.Text, {
+            children: (0, i.jsx)(r.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
                 children: `+${t}`
@@ -78,22 +78,22 @@ function A(e) {
         className: x.wx,
         children: [(0, i.jsxs)("div", {
             className: x.kX,
-            children: [(0, i.jsx)(a.Text, {
+            children: [(0, i.jsx)(r.Text, {
                 variant: "text-md/normal",
                 color: "text-strong",
                 children: o
-            }), (0, i.jsxs)(a.DUT, {
+            }), (0, i.jsxs)(r.DUT, {
                 onClick: () => {
                     (0, m.openUserSettings)(c.X.AUTHORIZED_APPS_PANEL)
                 },
                 className: x.bJ,
-                children: [(0, i.jsx)(a.Text, {
+                children: [(0, i.jsx)(r.Text, {
                     variant: "text-xs/normal",
                     color: "interactive-text-default",
                     children: _.intl.format(_.t.oYaYOe, {})
-                }), (0, i.jsx)(a._BQ, {
+                }), (0, i.jsx)(r._BQ, {
                     size: "xxs",
-                    color: a.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
+                    color: r.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
                     className: x.g7
                 })]
             })]
@@ -109,12 +109,12 @@ function A(e) {
 function h() {
     return (0, i.jsxs)("div", {
         className: x.do,
-        children: [(0, i.jsx)(a.Text, {
+        children: [(0, i.jsx)(r.Text, {
             variant: "text-md/medium",
             color: "text-strong",
             className: x.xV,
             children: _.intl.string(_.t["+0U77d"])
-        }), (0, i.jsx)(a.Text, {
+        }), (0, i.jsx)(r.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
             children: _.intl.format(_.t.V8wClM, {
@@ -138,7 +138,7 @@ function T() {
         showLoadingIndicator: e,
         slayerSdkApplications: t
     } = (0, u.A)(!0);
-    return e ? (0, i.jsx)(a.y$y, {}) : (0, i.jsx)(p, {
+    return e ? (0, i.jsx)(r.y$y, {}) : (0, i.jsx)(p, {
         applications: t
     })
 }

@@ -1,25 +1,24 @@
 /** chunk id: 190187 params = (module,exports,require) **/
-"use strict";
-n.d(t, {
-    i: () => d
+n.d(e, {
+    i: () => E
 });
-var a = n(64700),
-    i = n(311907),
+var i = n(64700),
+    l = n(311907),
     r = n(531260),
-    o = n(287809),
-    l = n(474090),
-    c = n(526292),
-    s = n(89366),
-    _ = n(851746),
+    s = n(287809),
+    a = n(474090),
+    o = n(526292),
+    c = n(89366),
+    d = n(851746),
     u = n(788868);
-let d = function() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
-        t = (0, i.bG)([o.default], () => o.default.getCurrentUser()),
-        n = (0, c.k5)(),
-        d = (0, s.QQ)(),
-        m = (0, r.A)(),
-        b = t?.verified === !0 && (0, l.YE)(t, u.PremiumTypes.TIER_2) && m.fetched && m.fractionalState !== u.xc.FP_ONLY && !n && !d;
-    a.useEffect(() => {
-        b && !e && _.A.checkAndFetchReferralsRemaining()
-    }, [b, e])
+let E = function() {
+    let t = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
+        e = (0, l.bG)([s.default], () => s.default.getCurrentUser()),
+        n = (0, o.k5)(),
+        E = (0, c.QQ)(),
+        _ = (0, r.A)(),
+        T = e?.verified === !0 && (0, a.YE)(e, u.PremiumTypes.TIER_2) && _.fetched && _.fractionalState !== u.xc.FP_ONLY && !n && !E;
+    i.useEffect(() => {
+        T && !t && d.A.checkAndFetchReferralsRemaining()
+    }, [T, t])
 }

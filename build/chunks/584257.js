@@ -1,17 +1,17 @@
 /** chunk id: 584257 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => h
 });
 var i = n(73153),
-    a = n(272355),
-    r = n(961350),
+    r = n(272355),
+    a = n(961350),
     l = n(414736),
     s = n(874486),
     o = n(927018),
     d = n(3137),
     c = n(559908);
 let u = new Set;
-class A extends a.A {
+class A extends r.A {
     _initialize() {
         i.h.subscribe("MESSAGE_CREATE", this.handleMessageCreate), i.h.subscribe("POGGERMODE_SETTINGS_UPDATE", this.handleSettingsUpdate)
     }
@@ -30,22 +30,22 @@ class A extends a.A {
             message: {
                 author: n,
                 nonce: i,
-                mentions: a
+                mentions: r
             }
         } = e;
         if (!d.A.isEnabled()) return !1;
-        let A = r.default.getId();
-        if (a?.find(e => e.id === A) != null ? (0, l._)(o.sn.PING_ME) : (a?.length ?? 0) > 0 && n?.id === A && (0, l._)(o.sn.PING_SOMEONE), !(0, c.gN)(n?.id, A, i, u)) return !1;
+        let A = a.default.getId();
+        if (r?.find(e => e.id === A) != null ? (0, l._)(o.sn.PING_ME) : (r?.length ?? 0) > 0 && n?.id === A && (0, l._)(o.sn.PING_SOMEONE), !(0, c.gN)(n?.id, A, i, u)) return !1;
         let {
-            combo: _
+            combo: h
         } = c.Ay.getMostRecentMessageCombo(t) ?? {};
-        if (null == _) return !1;
+        if (null == h) return !1;
         Object.values(o.sn).forEach(e => {
             if (null != s.A.getUnlocked(e)) return;
             let t = (0, o.vM)(e),
                 n = t?.checkUnlock;
-            null == n || !1 !== n(_) && (0, l._)(e)
+            null == n || !1 !== n(h) && (0, l._)(e)
         })
     }
 }
-let _ = new A
+let h = new A

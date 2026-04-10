@@ -1,14 +1,14 @@
 /** chunk id: 849736 params = (module,exports,require) **/
 n.d(e, {
-    J7: () => p,
+    J7: () => v,
     Nx: () => I,
     OE: () => x,
-    SA: () => m,
+    SA: () => p,
     Tf: () => S,
     b3: () => C,
-    b6: () => D,
+    b6: () => b,
     e7: () => N,
-    gt: () => b,
+    gt: () => D,
     lL: () => G
 });
 var l = n(284009),
@@ -28,15 +28,15 @@ var s = n(155718),
     h = n(602146),
     T = n(105530),
     f = n(418208),
-    y = n(652215),
-    v = n(835002);
+    m = n(652215),
+    y = n(835002);
 
-function p(t, e) {
+function v(t, e) {
     let n = t.getGuildId();
-    return i()(null != n, "This channel cannot be guildless."), e && (0, u.zV)(y.HAw.REQUEST_TO_SPEAK_INITIATED, {
+    return i()(null != n, "This channel cannot be guildless."), e && (0, u.zV)(m.HAw.REQUEST_TO_SPEAK_INITIATED, {
         ...(0, _.l7)(t)
     }), a.Bo.patch({
-        url: y.Rsh.UPDATE_VOICE_STATE(n),
+        url: m.Rsh.UPDATE_VOICE_STATE(n),
         body: {
             request_to_speak_timestamp: e ? new Date().toISOString() : null,
             channel_id: t.id
@@ -45,17 +45,17 @@ function p(t, e) {
     })
 }
 
-function m(t, e) {
+function p(t, e) {
     let n = t.getGuildId();
     return i()(null != n, "This channel cannot be guildless."), a.Bo.patch({
-        url: y.Rsh.UPDATE_VOICE_STATE(n, e),
+        url: m.Rsh.UPDATE_VOICE_STATE(n, e),
         body: {
             suppress: !1,
             request_to_speak_timestamp: new Date().toISOString(),
             channel_id: t.id
         },
         rejectWithError: !1
-    }).catch(t => (t.code === y.t02.STAGE_CHANNEL_USER_NOT_ALLOWED_TO_SPEAK && o.A.showFailedToast(v.OB.GENERIC_ERROR), t))
+    }).catch(t => (t.code === m.t02.STAGE_CHANNEL_USER_NOT_ALLOWED_TO_SPEAK && o.A.showFailedToast(y.OB.GENERIC_ERROR), t))
 }
 
 function N(t, e) {
@@ -64,10 +64,10 @@ function N(t, e) {
     i()(null != l, "This channel cannot be guildless.");
     let r = E.A.getVoiceStateForChannel(t.id),
         d = (0, T.eY)(r);
-    return !e && (0, f.Cf)() ? Promise.resolve() : (d !== T.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK || e || (0, u.zV)(y.HAw.PROMOTED_TO_SPEAKER, {
+    return !e && (0, f.Cf)() ? Promise.resolve() : (d !== T.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK || e || (0, u.zV)(m.HAw.PROMOTED_TO_SPEAKER, {
         ...(0, _.l7)(t)
     }), a.Bo.patch({
-        url: y.Rsh.UPDATE_VOICE_STATE(l),
+        url: m.Rsh.UPDATE_VOICE_STATE(l),
         body: {
             suppress: e,
             request_to_speak_timestamp: null,
@@ -83,7 +83,7 @@ function N(t, e) {
 function S(t) {
     let e = t?.getGuildId();
     return i()(null != e, "This channel cannot be guildless."), a.Bo.patch({
-        url: y.Rsh.UPDATE_VOICE_STATE(e),
+        url: m.Rsh.UPDATE_VOICE_STATE(e),
         body: {
             suppress: !0,
             channel_id: t.id,
@@ -97,20 +97,20 @@ function S(t) {
 function G(t, e, n) {
     let l = t.getGuildId();
     return i()(null != l, "This channel cannot be guildless."), a.Bo.patch({
-        url: y.Rsh.UPDATE_VOICE_STATE(l, e),
+        url: m.Rsh.UPDATE_VOICE_STATE(l, e),
         body: {
             suppress: n,
             channel_id: t.id
         },
         rejectWithError: !1
-    }).catch(t => (t.code === y.t02.STAGE_CHANNEL_USER_NOT_ALLOWED_TO_SPEAK && o.A.showFailedToast(v.OB.GENERIC_ERROR), t))
+    }).catch(t => (t.code === m.t02.STAGE_CHANNEL_USER_NOT_ALLOWED_TO_SPEAK && o.A.showFailedToast(y.OB.GENERIC_ERROR), t))
 }
 
-function b(t, e) {
+function D(t, e) {
     if (null == e || null == t) return;
     let n = e.getGuildId();
     return i()(null != n, "This channel cannot be guildless."), G(e, t.id, !0), a.Bo.patch({
-        url: y.Rsh.UPDATE_VOICE_STATE(n, t.id),
+        url: m.Rsh.UPDATE_VOICE_STATE(n, t.id),
         body: {
             suppress: !0,
             channel_id: e.id,
@@ -121,7 +121,7 @@ function b(t, e) {
     })
 }
 
-function D(t, e, n) {
+function b(t, e, n) {
     let l = t.getGuildId();
     i()(null != l, "Channel cannot be guildless");
     let a = t.permissionOverwrites[l],

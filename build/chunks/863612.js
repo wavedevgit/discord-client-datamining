@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(732955),
-    r = n(397927),
+    r = n(732955),
+    a = n(397927),
     o = n(500380),
     d = n(518977),
     c = n(287809),
@@ -24,11 +24,11 @@ function _() {
         }, [e?.country]);
     if (null == e) return (0, i.jsxs)("div", {
         className: g.OO,
-        children: [(0, i.jsx)(r.Text, {
+        children: [(0, i.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "text-subtle",
             children: m.intl.string(m.t.jGL0O5)
-        }), (0, i.jsx)(a.$nd, {
+        }), (0, i.jsx)(r.$nd, {
             variant: "secondary",
             size: "sm",
             text: m.intl.string(m.t.EeFkoB),
@@ -49,16 +49,16 @@ function _() {
                 })
             }), (0, i.jsxs)("div", {
                 className: g.d0,
-                children: [(0, i.jsx)(r.Text, {
+                children: [(0, i.jsx)(a.Text, {
                     variant: "text-md/semibold",
                     children: _
-                }), null != t ? (0, i.jsx)(r.Text, {
+                }), null != t ? (0, i.jsx)(a.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: t
                 }) : null]
             })]
-        }), (0, i.jsx)(a.$nd, {
+        }), (0, i.jsx)(r.$nd, {
             variant: "secondary",
             size: "sm",
             text: m.intl.string(m.t.EeFkoB),

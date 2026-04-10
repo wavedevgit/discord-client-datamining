@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(574381),
-    a = n(311907),
-    r = n(192308),
+    r = n(311907),
+    a = n(192308),
     o = n(827343),
     d = n(793574),
     c = n(419954),
@@ -20,14 +20,14 @@ var i = n(627968),
 let h = !l.Av;
 
 function p() {
-    return (0, a.bG)([u.Ay], () => u.Ay.getMode() === x.TB.PUSH_TO_TALK)
+    return (0, r.bG)([u.Ay], () => u.Ay.getMode() === x.TB.PUSH_TO_TALK)
 }
 let T = (0, c.zD)(m.X.VOICE_PUSH_TO_TALK_SETTING, {
     useTitle: function() {
         return l.Av ? A.intl.string(A.t.tG4Np5) : A.intl.string(A.t.JMyQin)
     },
     useSubtitle: function() {
-        let e = (0, a.bG)([u.Ay], () => u.Ay.getMode());
+        let e = (0, r.bG)([u.Ay], () => u.Ay.getMode());
         return s.useMemo(() => {
             if (!l.Av && e === x.TB.PUSH_TO_TALK) return A.intl.format(A.t["VHI4+Y"], {
                 onDownloadClick: () => (0, g._)("Help Text PTT")
@@ -35,14 +35,14 @@ let T = (0, c.zD)(m.X.VOICE_PUSH_TO_TALK_SETTING, {
         }, [e])
     },
     usePredicate: function() {
-        return (0, a.bG)([u.Ay], () => u.Ay.getActiveInputProfile() !== _.m.STUDIO)
+        return (0, r.bG)([u.Ay], () => u.Ay.getActiveInputProfile() !== _.m.STUDIO)
     },
     useValue: function() {
-        return (0, a.bG)([u.Ay], () => u.Ay.getMode() === x.TB.PUSH_TO_TALK)
+        return (0, r.bG)([u.Ay], () => u.Ay.getMode() === x.TB.PUSH_TO_TALK)
     },
     setValue: function(e) {
         var t, s;
-        t = e ? x.TB.PUSH_TO_TALK : x.TB.VOICE_ACTIVITY, s = [d.A.USER_SETTINGS_VOICE_AND_VIDEO], t === x.TB.PUSH_TO_TALK && h && (0, r.openModalLazy)(async () => {
+        t = e ? x.TB.PUSH_TO_TALK : x.TB.VOICE_ACTIVITY, s = [d.A.USER_SETTINGS_VOICE_AND_VIDEO], t === x.TB.PUSH_TO_TALK && h && (0, a.openModalLazy)(async () => {
             let {
                 default: e
             } = await n.e("10919").then(n.bind(n, 556506));

@@ -3,8 +3,8 @@ n.d(t, {
     u: () => f
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(964892),
+    r = n(64700),
+    a = n(964892),
     l = n(208756),
     s = n(135564),
     o = n(916845),
@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(397927),
     u = n(688810),
     A = n(532794),
-    _ = n(881373),
-    h = n(788868),
+    h = n(881373),
+    _ = n(788868),
     m = n(49999),
     g = n(653624),
     p = n(985018),
@@ -27,16 +27,16 @@ function f(e) {
         children: f
     } = e, {
         analyticsLocations: C
-    } = (0, u.Ay)(), T = a.useCallback(() => {
+    } = (0, u.Ay)(), T = r.useCallback(() => {
         n(m.i.TAKE_ACTION), (0, A.A)({
-            subscriptionTier: h.pe.TIER_2,
+            subscriptionTier: _.pe.TIER_2,
             analyticsLocations: C
         })
     }, [n, C]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             children: f
-        }), (0, i.jsx)(r.x, {
+        }), (0, i.jsx)(a.x, {
             targetElementRef: t,
             onRequestClose: () => n(m.i.USER_DISMISS),
             alignmentStrategy: "edge",
@@ -62,7 +62,7 @@ function f(e) {
                 }), (0, i.jsx)(d.D, {
                     title: p.intl.string(g.default.OlObRa),
                     body: p.intl.format(g.default["A+56/R"], {
-                        discountPercent: _.aW
+                        discountPercent: h.aW
                     }),
                     badge: {
                         type: "beta",

@@ -1,32 +1,32 @@
 /** chunk id: 74395 params = (module,exports,require) **/
 n.d(t, {
-    t: () => u
+    t: () => o
 });
-var l = n(64700),
-    i = n(810412),
+var i = n(64700),
+    l = n(810412),
     r = n(914853),
     s = n(509295),
     a = n(406595);
 
-function u(e) {
+function o(e) {
     let {
         tab: t,
         targetId: n,
-        shouldStopPropagation: u,
-        widgetType: o
+        shouldStopPropagation: o,
+        widgetType: u
     } = e;
-    return l.useCallback(e => {
-        u && (e?.preventDefault(), e?.stopPropagation());
-        let [l] = a.A.isFavorite(t, n);
+    return i.useCallback(e => {
+        o && (e?.preventDefault(), e?.stopPropagation());
+        let [i] = a.A.isFavorite(t, n);
         (0, s.k)({
             tab: t,
             targetId: n,
-            isFavorite: !l
-        }), (0, i.YX)(o, {
-            type: i.Z5.FAVORITE,
-            value: l ? i.IP.REMOVED_FROM_FAVORITES : i.IP.ADDED_TO_FAVORITES,
+            isFavorite: !i
+        }), (0, l.YX)(u, {
+            type: l.Z5.FAVORITE,
+            value: i ? l.IP.REMOVED_FROM_FAVORITES : l.IP.ADDED_TO_FAVORITES,
             secondaryValue: t,
             userId: t === r.x.FRIENDS ? n : void 0
         })
-    }, [u, t, n, o])
+    }, [o, t, n, u])
 }

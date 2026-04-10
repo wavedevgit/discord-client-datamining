@@ -3,16 +3,16 @@ n.d(t, {
     f: () => d
 });
 var i = n(64700),
-    a = n(311907),
-    r = n(299091),
+    r = n(311907),
+    a = n(299091),
     l = n(408213),
     s = n(212455),
     o = n(652215);
 
 function d(e) {
-    let [t, n] = i.useState(!0), d = (0, a.bG)([s.A], () => null != e ? s.A.getJoinRequestGuild(e) : void 0), c = i.useCallback(async e => {
+    let [t, n] = i.useState(!0), d = (0, r.bG)([s.A], () => null != e ? s.A.getJoinRequestGuild(e) : void 0), c = i.useCallback(async e => {
         try {
-            let t = r.A.getInviteKeyForGuildId(e);
+            let t = a.A.getInviteKeyForGuildId(e);
             null != t && await l.Ay.fetchVerificationForm(e, t)
         } finally {
             n(!1)

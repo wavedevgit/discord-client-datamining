@@ -19,37 +19,37 @@ var i = n(242934),
     h = n(287809),
     T = n(723702),
     f = n(698441),
-    y = n(563312),
-    v = n(794782),
-    p = n(974930),
-    m = n(988794),
+    m = n(563312),
+    y = n(794782),
+    v = n(974930),
+    p = n(988794),
     N = n(652215),
     S = n(985018);
 let G = "YYYYMMDDTHHmmss",
-    b = "YYYY-MM-DDTHH:mm:ss",
-    D = /RRULE:.*/;
+    D = "YYYY-MM-DDTHH:mm:ss",
+    b = /RRULE:.*/;
 
 function I(t, e, n, i) {
     let a, I = (0, u.bG)([f.Ay], () => f.Ay.isActive(t)),
-        C = (0, y.nh)(t ?? "", i),
+        C = (0, m.nh)(t ?? "", i),
         x = (0, u.bG)([f.Ay], () => f.Ay.getGuildScheduledEvent(t), [t]),
         w = (0, u.bG)([g.A], () => g.A.getGuild(e), [e]);
     if (I || null == C || null == x) return null;
-    a = x.entity_type === m.Ps.EXTERNAL ? x.entity_metadata.location : null != n && null != w ? S.intl.formatToPlainString(S.t["2t8L04"], {
+    a = x.entity_type === p.Ps.EXTERNAL ? x.entity_metadata.location : null != n && null != w ? S.intl.formatToPlainString(S.t["2t8L04"], {
         channelName: (0, E.m1)(n, h.default, _.A),
         guildName: w.name
     }) : S.intl.string(S.t.VSgOVg);
     let O = d()(x.scheduled_start_time),
         R = null != x.scheduled_end_time ? d()(x.scheduled_end_time) : O,
         j = null != x.description && "" !== x.description ? A.Ay.unparse(x.description, n?.id ?? N.dJq, !0) : "",
-        L = (0, v.Sn)(x.recurrence_rule),
-        U = null != L ? (0, p.X7)(L) : null,
+        L = (0, y.Sn)(x.recurrence_rule),
+        U = null != L ? (0, v.X7)(L) : null,
         {
             startTime: P,
             endTime: V
         } = C,
-        B = d()(P) ?? O,
-        M = d()(V ?? P) ?? O,
+        M = d()(P) ?? O,
+        B = d()(V ?? P) ?? O,
         W = () => {
             let t = r()();
             t.createEvent({
@@ -76,7 +76,7 @@ function I(t, e, n, i) {
                         details: j,
                         action: "TEMPLATE",
                         location: a,
-                        recur: null != t ? D.exec(t)?.[0] : void 0
+                        recur: null != t ? b.exec(t)?.[0] : void 0
                     },
                     n = `https://calendar.google.com/calendar/render?${(0,s.stringify)(e)}`;
                 window.open(n, "_blank")
@@ -92,8 +92,8 @@ function I(t, e, n, i) {
                 let t = {
                         v: 60,
                         title: x.name,
-                        st: B.format(G),
-                        et: M.format(G),
+                        st: M.format(G),
+                        et: B.format(G),
                         desc: j,
                         in_loc: a
                     },
@@ -107,8 +107,8 @@ function I(t, e, n, i) {
                 let t = {
                         path: "/calendar/action/compose",
                         rru: "addevent",
-                        startdt: B.format(b),
-                        enddt: M.format(b),
+                        startdt: M.format(D),
+                        enddt: B.format(D),
                         subject: x.name,
                         body: j,
                         location: a,

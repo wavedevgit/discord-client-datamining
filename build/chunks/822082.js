@@ -3,9 +3,9 @@ n.d(t, {
     A: () => A
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(615300),
     o = n(837381),
     d = n(397927),
@@ -15,21 +15,21 @@ var u = n(456187);
 let A = function(e) {
     let {
         index: t,
-        children: r,
+        children: a,
         user: A,
-        channel: _,
-        onClick: h,
+        channel: h,
+        onClick: _,
         isFocused: m,
         isActive: g,
         onOtherHover: p,
         className: E
-    } = e, [I, f] = a.useState(!1), [C, T] = a.useState(!1), N = () => {
+    } = e, [I, f] = r.useState(!1), [C, T] = r.useState(!1), N = () => {
         f(!0), !m || g || C || p?.()
     }, S = () => {
         f(!1)
     };
     return (0, i.jsx)(o.tG, {
-        id: _.id,
+        id: h.id,
         children: e => (0, i.jsx)(d.vN3, {
             offset: {
                 left: -8,
@@ -44,7 +44,7 @@ let A = function(e) {
                     null != A && (T(!0), (0, c.L3)(e, async () => {
                         let {
                             default: e
-                        } = await Promise.all([n.e("97262"), n.e("32418"), n.e("54631")]).then(n.bind(n, 668569));
+                        } = await Promise.all([n.e("97262"), n.e("32418"), n.e("77012")]).then(n.bind(n, 668569));
                         return t => (0, i.jsx)(e, {
                             ...t,
                             user: A
@@ -57,13 +57,13 @@ let A = function(e) {
                 },
                 onMouseEnter: N,
                 onMouseLeave: S,
-                onClick: h ?? void 0,
+                onClick: _ ?? void 0,
                 style: {
                     LIST_ROW_HEIGHT: 73,
                     opacity: 1
                 },
                 ...e,
-                children: r(I || g || C)
+                children: a(I || g || C)
             })
         })
     })

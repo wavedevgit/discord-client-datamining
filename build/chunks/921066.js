@@ -1,31 +1,32 @@
 /** chunk id: 921066 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => M
 });
-var i, l = n(627968),
-    a = n(64700),
-    r = n(311907),
-    s = n(473193),
-    o = n(397927),
-    c = n(775602),
+var i, r = n(627968),
+    s = n(64700),
+    l = n(311907),
+    a = n(473193),
+    c = n(397927),
+    o = n(775602),
     u = n(793574),
     d = n(509536),
     _ = n(881635),
-    A = n(567771),
-    m = n(363487),
-    E = n(828162),
-    T = n(763754),
-    I = n(888675),
+    E = n(567771),
+    A = n(363487),
+    m = n(828162),
+    I = n(763754),
+    T = n(888675),
     g = n(652215),
     N = n(985018),
     f = n(272435),
-    C = n(274993),
-    h = n(218924);
+    p = n(274993),
+    C = n(218924);
 
-function p(e) {
-    let t = (0, m.A)(e);
-    return a.useCallback(() => {
-        null != e && (t ? (0, E.A)(e, u.A.GUILD_BOOSTING_SYSTEM_MESSAGE) : (0, d.K4)({
+function h(e) {
+    let t = (0, A.A)(e);
+    return s.useCallback(() => {
+        null != e && (t ? (0, m.A)(e, u.A.GUILD_BOOSTING_SYSTEM_MESSAGE) : (0, d.K4)({
             guildId: e,
             location: {
                 section: g.JJy.CHANNEL_TEXT_AREA,
@@ -40,30 +41,30 @@ function S(e) {
         className: t,
         animate: n
     } = e;
-    return (0, l.jsx)("div", {
+    return (0, r.jsx)("div", {
         className: t,
-        children: (0, l.jsx)("img", {
+        children: (0, r.jsx)("img", {
             className: f.fj,
-            src: n ? C.A : h.A,
+            src: n ? p.A : C.A,
             alt: "",
             "aria-hidden": !0
         })
     })
 }
 
-function x(e) {
+function R(e) {
     let {
         title: t,
         body: n
     } = e;
-    return (0, l.jsxs)("div", {
+    return (0, r.jsxs)("div", {
         className: f.Qs,
-        children: [(0, l.jsx)(o.Text, {
+        children: [(0, r.jsx)(c.Text, {
             variant: "text-md/semibold",
             scaleFontToUserSetting: !0,
             className: f.DD,
             children: t
-        }), (0, l.jsx)(o.Text, {
+        }), (0, r.jsx)(c.Text, {
             variant: "text-sm/medium",
             scaleFontToUserSetting: !0,
             className: f.rf,
@@ -72,14 +73,14 @@ function x(e) {
     })
 }
 
-function R(e) {
+function x(e) {
     let {
         guild: t,
         firstBooster: n
     } = e;
-    return (0, l.jsx)("div", {
+    return (0, r.jsx)("div", {
         className: f.o1,
-        children: (0, l.jsx)(_.A, {
+        children: (0, r.jsx)(_.A, {
             guild: t,
             variant: "secondary",
             analyticsLocation: {
@@ -96,8 +97,8 @@ function O(e) {
     let {
         guild: t,
         children: n
-    } = e, i = p(t?.id);
-    return (0, l.jsx)(o.DUT, {
+    } = e, i = h(t?.id);
+    return (0, r.jsx)(c.DUT, {
         tag: "a",
         role: "link",
         className: f.oT,
@@ -110,51 +111,51 @@ function M(e) {
     let t, u, {
             message: d,
             guild: _,
-            usernameHook: m,
-            showCta: E
+            usernameHook: A,
+            showCta: m
         } = e,
-        C = (t = (0, r.bG)([c.A], () => c.A.useReducedMotion), u = (i || (i = n.t(a, 2))).useContext(s.C)?.animate ?? !1, !t && u),
-        h = (0, T.Ay)(d),
-        M = m(h),
+        p = (t = (0, l.bG)([o.A], () => o.A.useReducedMotion), u = (i || (i = n.t(s, 2))).useContext(a.C)?.animate ?? !1, !t && u),
+        C = (0, I.Ay)(d),
+        M = A(C),
         D = d.hasFlag(g.pr7.IS_FIRST_BOOSTER),
-        L = p(_?.id),
-        U = D ? N.intl.format(N.t["/1IQGD"], {
-            username: h.nick,
+        U = h(_?.id),
+        P = D ? N.intl.format(N.t["/1IQGD"], {
+            username: C.nick,
             usernameHook: M
         }) : N.intl.format(N.t.SbSWvY, {
-            username: h.nick,
+            username: C.nick,
             usernameHook: M,
-            numSubscriptions: (0, A.A)(d)
+            numSubscriptions: (0, E.A)(d)
         }),
-        P = E ? N.intl.format(N.t.dWm8Iu, {
-            learnMoreHook: e => (0, l.jsx)(O, {
+        L = m ? N.intl.format(N.t.dWm8Iu, {
+            learnMoreHook: e => (0, r.jsx)(O, {
                 guild: _,
                 children: e
             })
         }) : N.intl.string(N.t["0Mdw0t"]),
-        v = (0, l.jsxs)("div", {
+        v = (0, r.jsxs)("div", {
             className: f.kL,
-            children: [(0, l.jsx)(S, {
+            children: [(0, r.jsx)(S, {
                 className: f.rc,
-                animate: C
-            }), (0, l.jsx)(x, {
-                title: U,
-                body: P
-            }), E && null != _ && (0, l.jsx)(R, {
+                animate: p
+            }), (0, r.jsx)(R, {
+                title: P,
+                body: L
+            }), m && null != _ && (0, r.jsx)(x, {
                 guild: _,
                 firstBooster: D
             })]
         }),
-        y = (0, l.jsx)(o._Jp, {
+        y = (0, r.jsx)(c._Jp, {
             className: f.Kk
         });
-    return (0, l.jsx)(I.A, {
+    return (0, r.jsx)(T.A, {
         contentClassName: f.$O,
         iconNode: y,
         iconContainerClassName: f.zc,
-        children: E ? v : (0, l.jsx)(o.DUT, {
+        children: m ? v : (0, r.jsx)(c.DUT, {
             className: f.w8,
-            onClick: L,
+            onClick: U,
             children: v
         })
     })

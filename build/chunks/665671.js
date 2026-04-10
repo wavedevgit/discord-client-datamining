@@ -1,30 +1,29 @@
 /** chunk id: 665671 params = (module,exports,require) **/
-"use strict";
-n.d(e, {
-    A: () => l
+n.d(t, {
+    A: () => o
 });
-var r = n(627968),
-    i = n(397927),
-    o = n(464477),
-    a = n(917136),
-    s = n(985018);
-async function l() {
+var i = n(627968),
+    s = n(397927),
+    l = n(464477),
+    r = n(917136),
+    a = n(985018);
+async function o() {
     try {
         let {
-            ticket: t,
-            challenge: e
-        } = await a.startRegisterWebAuthnCredential();
-        (0, i.mMO)(async () => {
+            ticket: e,
+            challenge: t
+        } = await r.startRegisterWebAuthnCredential();
+        (0, s.mMO)(async () => {
             let {
-                RegisterWebAuthnCredentialModal: i
+                RegisterWebAuthnCredentialModal: s
             } = await Promise.all([n.e("44667"), n.e("35510")]).then(n.bind(n, 359990));
-            return n => (0, r.jsx)(i, {
+            return n => (0, i.jsx)(s, {
                 ...n,
-                ticket: t,
-                challenge: e
+                ticket: e,
+                challenge: t
             })
         })
-    } catch (t) {
-        t.message !== s.intl.string(s.t.N2yb9a) && ((0, o.Os)(t), (0, i.showToast)((0, i.createToast)(s.intl.string(s.t.xSCvBf), i.ToastType.FAILURE)))
+    } catch (e) {
+        e.message !== a.intl.string(a.t.N2yb9a) && ((0, l.Os)(e), (0, s.showToast)((0, s.createToast)(a.intl.string(a.t.xSCvBf), s.ToastType.FAILURE)))
     }
 }

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => p
 });
 var i = n(627968),
-    a = n(311907),
-    r = n(988506),
+    r = n(311907),
+    a = n(988506),
     l = n(342494),
     s = n(793574),
     o = n(22007),
@@ -12,14 +12,14 @@ var i = n(627968),
     c = n(927578),
     u = n(161319),
     A = n(385327),
-    _ = n(788868),
-    h = n(652215),
+    h = n(788868),
+    _ = n(652215),
     m = n(985018),
     g = n(174872);
 let p = e => {
     let {
         targetElementRef: t
-    } = e, n = (0, a.bG)([d.default], () => d.default.getCurrentUser()), p = !1 === c.Ay.isPremiumExactly(n, _.PremiumTypes.TIER_2), E = n?.premiumState?.premiumSource === r.fE.FRACTIONAL_NITRO && n?.premiumState.premiumSubscriptionType !== r.jK.TIER_2, I = !0 === (null == n || p || E) ? m.intl.string(m.t.E1ONHQ) : m.intl.string(m.t.CMKNhr);
+    } = e, n = (0, r.bG)([d.default], () => d.default.getCurrentUser()), p = !1 === c.Ay.isPremiumExactly(n, h.PremiumTypes.TIER_2), E = n?.premiumState?.premiumSource === a.fE.FRACTIONAL_NITRO && n?.premiumState.premiumSubscriptionType !== a.jK.TIER_2, I = !0 === (null == n || p || E) ? m.intl.string(m.t.E1ONHQ) : m.intl.string(m.t.CMKNhr);
     return (0, i.jsx)(l.AM, {
         targetElementRef: t,
         title: m.intl.string(m.t["V8J+16"]),
@@ -42,7 +42,7 @@ let p = e => {
         actions: [{
             text: m.intl.string(m.t["CDdYB/"]),
             onClick: () => {
-                (0, o.A)(h.BVt.NITRO_HOME), (0, u.u)({
+                (0, o.A)(_.BVt.NITRO_HOME), (0, u.u)({
                     analyticsLocations: [s.A.HOME_PAGE_PREMIUM_TAB]
                 }), (0, A.Es)()
             }

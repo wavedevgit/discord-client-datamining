@@ -1,10 +1,10 @@
 /** chunk id: 278066 params = (module,exports,require) **/
 n.d(t, {
     A: () => p,
-    a: () => _
+    a: () => h
 });
-var i, a = n(627968),
-    r = n(64700),
+var i, r = n(627968),
+    a = n(64700),
     l = n(615300),
     s = n(311907),
     o = n(397927),
@@ -12,20 +12,20 @@ var i, a = n(627968),
     c = n(652215),
     u = n(985018),
     A = n(929811),
-    _ = ((i = {}).SECTION_NO_RESULTS = "SECTION_NO_RESULTS", i);
-let h = Object.freeze({
+    h = ((i = {}).SECTION_NO_RESULTS = "SECTION_NO_RESULTS", i);
+let _ = Object.freeze({
         SECTION_ALL: {
             lightSrc: n(445451),
             darkSrc: n(642269),
             width: 376,
             height: 162,
-            renderContent: e => (0, a.jsxs)(r.Fragment, {
-                children: [(0, a.jsx)(o.SGT, {
+            renderContent: e => (0, r.jsxs)(a.Fragment, {
+                children: [(0, r.jsx)(o.SGT, {
                     note: u.intl.string(u.t.Y4vMY8)
-                }), (0, a.jsx)("div", {
+                }), (0, r.jsx)("div", {
                     "data-button-hoisted-classname-wrapper": !0,
                     className: A.x6,
-                    children: (0, a.jsx)(o.Button, {
+                    children: (0, r.jsx)(o.Button, {
                         variant: "primary",
                         text: u.intl.string(u.t.w5uwoI),
                         onClick: e
@@ -38,7 +38,7 @@ let h = Object.freeze({
             darkSrc: n(492055),
             width: 421,
             height: 218,
-            renderContent: () => (0, a.jsx)(o.SGT, {
+            renderContent: () => (0, r.jsx)(o.SGT, {
                 note: u.intl.string(u.t.v7HbiQ)
             })
         },
@@ -47,7 +47,7 @@ let h = Object.freeze({
             darkSrc: n(689818),
             width: 433,
             height: 232,
-            renderContent: () => (0, a.jsx)(o.SGT, {
+            renderContent: () => (0, r.jsx)(o.SGT, {
                 note: u.intl.string(u.t["9xdyWB"])
             })
         },
@@ -56,11 +56,11 @@ let h = Object.freeze({
             darkSrc: n(317017),
             width: 415,
             height: 200,
-            renderContent: (e, t) => (0, a.jsxs)("div", {
+            renderContent: (e, t) => (0, r.jsxs)("div", {
                 className: A.y7,
-                children: [(0, a.jsx)(o.SGT, {
+                children: [(0, r.jsx)(o.SGT, {
                     note: u.intl.string(u.t["aCYQ+P"])
-                }), null != e && (0, a.jsx)(o.Button, {
+                }), null != e && (0, r.jsx)(o.Button, {
                     variant: "secondary",
                     text: t ? u.intl.string(u.t.R40bU2) : u.intl.string(u.t.rXl8fj),
                     onClick: e,
@@ -73,7 +73,7 @@ let h = Object.freeze({
             darkSrc: n(317017),
             width: 415,
             height: 200,
-            renderContent: () => (0, a.jsx)(o.SGT, {
+            renderContent: () => (0, r.jsx)(o.SGT, {
                 note: u.intl.string(u.t["vgI/EF"])
             })
         },
@@ -82,7 +82,7 @@ let h = Object.freeze({
             darkSrc: n(492055),
             width: 421,
             height: 218,
-            renderContent: () => (0, a.jsx)(o.SGT, {
+            renderContent: () => (0, r.jsx)(o.SGT, {
                 note: u.intl.string(u.t["7sW4h1"])
             })
         }
@@ -91,14 +91,14 @@ let h = Object.freeze({
         let {
             theme: t
         } = e, n = u.intl.string(u.t["oi+B4p"]);
-        return (0, a.jsx)(o.ppr, {
+        return (0, r.jsx)(o.ppr, {
             theme: t,
-            children: (0, a.jsx)(o.SGT, {
+            children: (0, r.jsx)(o.SGT, {
                 note: n
             })
         })
     };
-class g extends r.PureComponent {
+class g extends a.PureComponent {
     state = {
         opacity: new l.A.Value(1)
     };
@@ -121,35 +121,35 @@ class g extends r.PureComponent {
             theme: n
         } = this.props, i = {
             opacity: this.state.opacity
-        }, r = function(e) {
+        }, a = function(e) {
             switch (e) {
                 case c.m3P.ADD_FRIEND:
                 case c.m3P.ALL:
-                    return h.SECTION_ALL;
+                    return _.SECTION_ALL;
                 case c.m3P.ONLINE:
-                    return h.SECTION_ONLINE;
+                    return _.SECTION_ONLINE;
                 case c.m3P.PENDING:
-                    return h.SECTION_PENDING;
+                    return _.SECTION_PENDING;
                 case c.m3P.SUGGESTIONS:
-                    return h.SECTION_SUGGESTIONS;
+                    return _.SECTION_SUGGESTIONS;
                 case "SECTION_NO_RESULTS":
-                    return h.SECTION_NO_RESULTS;
+                    return _.SECTION_NO_RESULTS;
                 default:
                     throw Error("FriendsEmptyState: Invalid empty state")
             }
         }(e);
-        return e === c.m3P.ADD_FRIEND ? (0, a.jsx)(l.A.div, {
+        return e === c.m3P.ADD_FRIEND ? (0, r.jsx)(l.A.div, {
             className: A.VD,
             style: i,
-            children: (0, a.jsx)(m, {
+            children: (0, r.jsx)(m, {
                 theme: n
             })
-        }) : (0, a.jsx)(l.A.div, {
+        }) : (0, r.jsx)(l.A.div, {
             className: A.VD,
             style: i,
-            children: (0, a.jsx)(o.ppr, {
+            children: (0, r.jsx)(o.ppr, {
                 theme: n,
-                children: r.renderContent(t)
+                children: a.renderContent(t)
             })
         })
     }

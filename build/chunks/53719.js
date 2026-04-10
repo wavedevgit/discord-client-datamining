@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(990078),
-    r = n(397927),
+    r = n(990078),
+    a = n(397927),
     o = n(907406);
 
 function d(e) {
@@ -17,9 +17,9 @@ function d(e) {
         onClick: s,
         className: d
     } = e;
-    return (0, i.jsx)(a.m, {
+    return (0, i.jsx)(r.m, {
         text: n,
-        children: (0, i.jsx)(r.DUT, {
+        children: (0, i.jsx)(a.DUT, {
             "aria-label": n,
             onClick: e => {
                 e.preventDefault(), e.stopPropagation(), s(e)

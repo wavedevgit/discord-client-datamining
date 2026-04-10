@@ -1,11 +1,11 @@
 /** chunk id: 684018 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => C
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(311907),
     o = n(397927),
     c = n(793574),
@@ -16,64 +16,64 @@ var i = n(627968),
     A = n(287809),
     g = n(486020),
     p = n(403362),
-    f = n(518477),
-    _ = n(985018),
+    _ = n(518477),
+    f = n(985018),
     E = n(604545);
 
-function x(e) {
+function C(e) {
     let {
         userId: t,
         channelId: n,
-        showDivider: s = !1
-    } = e, x = (0, r.bG)([u.A], () => u.A.getMutualGuilds(t), [t]), C = A.default.getUser(t);
+        showDivider: a = !1
+    } = e, C = (0, r.bG)([u.A], () => u.A.getMutualGuilds(t), [t]), x = A.default.getUser(t);
     l.useEffect(() => {
-        null == x && null != C && (0, h.A)(t, C.getAvatarURL(null, 80), {
+        null == C && null != x && (0, h.A)(t, x.getAvatarURL(null, 80), {
             withMutualGuilds: !0
         })
-    }, [x, t, C]);
+    }, [C, t, x]);
     let S = l.useMemo(() => {
-        if (null == x) return [];
-        let e = x.slice(0, 3),
+        if (null == C) return [];
+        let e = C.slice(0, 3),
             t = e.length - 1;
         return e.map((e, n) => {
             let {
                 guild: l
-            } = e, s = g.Ay.getGuildIconURL({
+            } = e, a = g.Ay.getGuildIconURL({
                 id: l.id,
                 icon: l.icon,
                 size: 24
             });
-            if (null == s) return null;
-            let a = (0, i.jsx)("img", {
-                src: s,
+            if (null == a) return null;
+            let s = (0, i.jsx)("img", {
+                src: a,
                 alt: "",
                 className: E.my
             }, l.id);
-            return n === t ? a : (0, i.jsx)(d.Ay, {
+            return n === t ? s : (0, i.jsx)(d.Ay, {
                 className: E.cp,
                 mask: d.Ay.Masks.VOICE_USER_SUMMARY_ITEM,
                 width: 24,
                 height: 24,
-                children: a
+                children: s
             }, l.id)
         }).filter(p.Vq)
-    }, [x]);
-    return null == x || 0 === x.length ? (0, i.jsx)("div", {
-        className: a()(E.kL, s ? E.yF : null),
+    }, [C]);
+    return null == C || 0 === C.length ? (0, i.jsx)("div", {
+        className: s()(E.kL, a ? E.yF : null),
         children: (0, i.jsx)(o.Text, {
             color: "text-default",
             variant: "text-sm/normal",
-            children: _.intl.string(_.t.zjVh8h)
+            children: f.intl.string(f.t.zjVh8h)
         })
     }) : (0, i.jsxs)(o.DUT, {
-        className: a()(E.kL, E.vk, {
-            [E.yF]: s
+        className: s()(E.kL, E.vk, {
+            [E.yF]: a
         }),
         onClick: () => {
             (0, m.openUserProfileModal)({
                 userId: t,
                 channelId: n,
-                tabSection: f.RP.MUTUAL_GUILDS,
+                tabSection: _.RP.MUTUAL_GUILDS,
                 sourceAnalyticsLocations: [c.A.DM_CHANNEL]
             })
         },
@@ -83,8 +83,8 @@ function x(e) {
         }), (0, i.jsx)(o.Text, {
             className: E.NI,
             variant: "text-sm/normal",
-            children: _.intl.format(_.t.eE3oep, {
-                count: x.length
+            children: f.intl.format(f.t.eE3oep, {
+                count: C.length
             })
         })]
     })

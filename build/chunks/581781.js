@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(990078),
+    r = n.n(l),
+    a = n(990078),
     o = n(145497),
     d = n(534400),
     c = n(743981),
@@ -26,7 +26,7 @@ function m(e) {
         let e = A.current;
         null != e && null != e.offsetWidth && null != e.scrollWidth && p(e.offsetWidth < e.scrollWidth)
     }, []), (0, i.jsxs)("div", {
-        className: a()(u.kL, t),
+        className: r()(u.kL, t),
         children: [(0, i.jsxs)("div", {
             className: u.v2,
             children: [(0, i.jsx)(o.j, {
@@ -38,7 +38,7 @@ function m(e) {
                 animate: !1
             }), (0, i.jsx)("div", {
                 className: u.zH,
-                children: (0, i.jsx)(r.m, {
+                children: (0, i.jsx)(a.m, {
                     __unsupportedReactNodeAsText: g,
                     shouldShow: h,
                     children: (0, i.jsx)("span", {

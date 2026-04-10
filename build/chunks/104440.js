@@ -3,8 +3,8 @@ n.d(t, {
     A: () => C
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(665260),
+    r = n(64700),
+    a = n(665260),
     l = n(311907),
     s = n(397927),
     o = n(59636),
@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(253932),
     u = n(742077),
     A = n(954571),
-    _ = n(144914),
-    h = n(765258),
+    h = n(144914),
+    _ = n(765258),
     m = n(192771),
     g = n(652215),
     p = n(985018),
@@ -25,7 +25,7 @@ function I(e) {
         restoreApplication: n
     } = e;
     if (0 === t.length) return null;
-    let a = t.map(e => {
+    let r = t.map(e => {
         let t = e.libraryApplication.getDistributor();
         return (0, i.jsxs)("div", {
             className: E.Kp,
@@ -56,10 +56,10 @@ function I(e) {
             variant: "heading-md/semibold",
             className: E.Z9,
             children: p.intl.string(p.t["5PJtrH"])
-        }), a]
+        }), r]
     })
 }
-class f extends a.PureComponent {
+class f extends r.PureComponent {
     handleToggleShortcutDesktop(e) {
         c.uB.updateSetting(e)
     }
@@ -73,8 +73,8 @@ class f extends a.PureComponent {
         })
     }
     handleRestoreHiddenLibraryApplication = e => {
-        let t = r.PQ(e.getFlags(), g.hM6.HIDDEN);
-        o.V(e.id, e.branchId, t), this.trackRestoreApplication(e, r.Lt(t, g.hM6.HIDDEN))
+        let t = a.PQ(e.getFlags(), g.hM6.HIDDEN);
+        o.V(e.id, e.branchId, t), this.trackRestoreApplication(e, a.Lt(t, g.hM6.HIDDEN))
     };
     renderBody() {
         let {
@@ -84,7 +84,7 @@ class f extends a.PureComponent {
         } = this.props;
         return (0, i.jsxs)("div", {
             className: E.rf,
-            children: [(0, _.S)() ? (0, i.jsxs)(s.BJc, {
+            children: [(0, h.S)() ? (0, i.jsxs)(s.BJc, {
                 gap: 16,
                 children: [(0, i.jsx)(s.dOG, {
                     label: p.intl.string(p.t["9ID+Kh"]),
@@ -105,7 +105,7 @@ class f extends a.PureComponent {
     }
     render() {
         return (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(h.A, {
+            children: [(0, i.jsx)(_.A, {
                 currentRoute: g.BVt.APPLICATION_LIBRARY_SETTINGS
             }), (0, i.jsx)(s.ArX, {
                 className: E.XG,

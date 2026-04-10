@@ -3,8 +3,8 @@ n.d(t, {
     A: () => I
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(311907),
+    r = n(64700),
+    a = n(311907),
     l = n(451988),
     s = n(990078),
     o = n(397927),
@@ -12,20 +12,20 @@ var i = n(627968),
     c = n(186975),
     u = n(379103),
     A = n(652215),
-    _ = n(985018);
-let h = (0, o.kHD)(c.A),
+    h = n(985018);
+let _ = (0, o.kHD)(c.A),
     m = (0, o.kHD)(u.A),
     g = new Set([A.VX0.PUSHING, A.VX0.PULLING]),
     p = Object.freeze({
-        [A.VX0.DONE]: h,
-        [A.VX0.PLANNING]: h,
-        [A.VX0.PREPARING]: h,
+        [A.VX0.DONE]: _,
+        [A.VX0.PLANNING]: _,
+        [A.VX0.PREPARING]: _,
         [A.VX0.PUSHING]: o.JMY,
         [A.VX0.PULLING]: o.s3U,
-        [A.VX0.CONFLICT]: h,
-        [A.VX0.ERROR]: h
+        [A.VX0.CONFLICT]: _,
+        [A.VX0.ERROR]: _
     });
-class E extends a.PureComponent {
+class E extends r.PureComponent {
     _doneTimer = new l.Ep;
     componentDidMount() {
         this.getIsRecentlySynced() && this.setRecentlySyncedTimeout()
@@ -63,19 +63,19 @@ class E extends a.PureComponent {
     getTooltip(e, t) {
         switch (e.type) {
             case A.VX0.DONE:
-                if (t) return _.intl.string(_.t.atpo0W);
-                return _.intl.string(_.t.ZCw6zh);
+                if (t) return h.intl.string(h.t.atpo0W);
+                return h.intl.string(h.t.ZCw6zh);
             case A.VX0.CONFLICT:
             case A.VX0.ERROR:
-                return _.intl.string(_.t.ZCw6zh);
+                return h.intl.string(h.t.ZCw6zh);
             case A.VX0.PLANNING:
-                return _.intl.string(_.t.ERQ0VA);
+                return h.intl.string(h.t.ERQ0VA);
             case A.VX0.PREPARING:
-                return _.intl.string(_.t.n5feu3);
+                return h.intl.string(h.t.n5feu3);
             case A.VX0.PUSHING:
-                return _.intl.string(_.t.oCBh0J);
+                return h.intl.string(h.t.oCBh0J);
             case A.VX0.PULLING:
-                return _.intl.string(_.t.RTLNqC);
+                return h.intl.string(h.t.RTLNqC);
             default:
                 return null
         }
@@ -85,20 +85,20 @@ class E extends a.PureComponent {
             cloudSyncState: e,
             libraryApplication: t,
             className: n
-        } = this.props, a = null == e ? {
+        } = this.props, r = null == e ? {
             type: A.VX0.DONE
-        } : e, r = this.getIsRecentlySynced();
-        (g.has(a.type) || r) && (t.id, this.getStop(a, r));
-        let l = r ? m : p[a.type];
+        } : e, a = this.getIsRecentlySynced();
+        (g.has(r.type) || a) && (t.id, this.getStop(r, a));
+        let l = a ? m : p[r.type];
         return (0, i.jsx)(s.m, {
-            text: this.getTooltip(a, r),
+            text: this.getTooltip(r, a),
             children: (0, i.jsx)(l, {
                 className: n
             })
         })
     }
 }
-let I = r.Ay.connectStores([d.A], e => {
+let I = a.Ay.connectStores([d.A], e => {
     let {
         libraryApplication: t
     } = e;

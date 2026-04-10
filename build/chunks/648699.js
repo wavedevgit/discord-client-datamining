@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(827734),
-    a = n(990078),
-    r = n(397927),
+    r = n(990078),
+    a = n(397927),
     o = n(81400),
     d = n(419954),
     c = n(933297),
@@ -27,13 +27,13 @@ function x() {
     if (null == n) return null;
     let d = n.hasUniqueUsername() ? n.username : `${n.username}#${n.discriminator}`;
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(r.Text, {
+        children: [(0, i.jsx)(a.Text, {
             variant: "text-md/medium",
             children: d
-        }), null != t && (0, i.jsx)(a.m, {
+        }), null != t && (0, i.jsx)(r.m, {
             __unsupportedReactNodeAsText: t,
             "aria-label": !1,
-            children: (0, i.jsx)(r.EpV, {
+            children: (0, i.jsx)(a.EpV, {
                 size: "custom",
                 width: 20,
                 height: 20,
@@ -54,7 +54,7 @@ let A = (0, d.Tf)(m.X.ACCOUNT_INFO_USERNAME_SETTING, {
     useVariant: () => "secondary",
     useDisabled: _,
     onClick: function() {
-        (0, r.mMO)(async () => {
+        (0, a.mMO)(async () => {
             let {
                 default: e
             } = await n.e("13161").then(n.bind(n, 331632));

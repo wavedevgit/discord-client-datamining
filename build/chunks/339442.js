@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(757036),
-    a = n(128450),
-    r = n(180020),
+    r = n(128450),
+    a = n(180020),
     o = n(652215),
     d = n(788868),
     c = n(985018),
@@ -15,7 +15,7 @@ var s = n(397927),
 
 function m(e) {
     let t = (0, l.L)(d.PremiumTypes.TIER_2);
-    return (0, i.jsxs)(a.A, {
+    return (0, i.jsxs)(r.A, {
         errors: e.errors,
         disabled: e.disabled,
         title: c.intl.string(c.t["9AjdkD"]),
@@ -26,7 +26,7 @@ function m(e) {
                 onChange: e.onGlobalNameChange,
                 value: e.pendingGlobalName ?? e.currentGlobalName ?? ""
             })
-        }), t && (0, i.jsx)(r.A, {
+        }), t && (0, i.jsx)(a.A, {
             user: e.user,
             className: u.F
         })]

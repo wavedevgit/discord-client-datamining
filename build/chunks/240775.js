@@ -1,4 +1,5 @@
 /** chunk id: 240775 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     rs: "mainContainer_b99f57",
     oE: "compact_b99f57",

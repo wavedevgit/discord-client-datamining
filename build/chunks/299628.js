@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(934551),
-    r = n(397927),
+    r = n(934551),
+    a = n(397927),
     o = n(294433),
     d = n(842130),
     c = n(985018),
@@ -18,22 +18,22 @@ let g = e => {
             header: t,
             description: n,
             icon: s,
-            inModal: a
+            inModal: r
         } = e;
         return (0, i.jsxs)("div", {
             className: l()(u.nM, m.QB, {
-                [u.zE]: a
+                [u.zE]: r
             }),
             children: [(0, i.jsx)("div", {
                 className: u.zc,
                 children: s
             }), (0, i.jsxs)("div", {
-                children: [(0, i.jsx)(r.Text, {
+                children: [(0, i.jsx)(a.Text, {
                     className: u.wx,
                     variant: "text-sm/bold",
                     color: "text-strong",
                     children: t
-                }), (0, i.jsx)(r.Text, {
+                }), (0, i.jsx)(a.Text, {
                     variant: "text-xs/medium",
                     color: "text-default",
                     children: n
@@ -49,59 +49,59 @@ let g = e => {
             children: [(0, i.jsx)(g, {
                 header: m,
                 description: _,
-                icon: (0, i.jsx)(r.$yI, {
+                icon: (0, i.jsx)(a.$yI, {
                     size: "custom",
                     width: 20,
                     height: 20,
-                    color: r.LU0.colors.TEXT_STRONG.css
+                    color: a.LU0.colors.TEXT_STRONG.css
                 }),
                 inModal: t
             }), (0, i.jsx)(g, {
                 header: c.intl.string(d.default["44NEx6"]),
                 description: x,
-                icon: (0, i.jsx)(r.Bxc, {
+                icon: (0, i.jsx)(a.Bxc, {
                     size: "custom",
                     width: 20,
                     height: 20,
-                    color: r.LU0.colors.TEXT_STRONG.css
+                    color: a.LU0.colors.TEXT_STRONG.css
                 }),
                 inModal: t
             }), (0, i.jsx)(g, {
                 header: A,
                 description: h,
-                icon: (0, i.jsx)(a.ChatIcon, {
+                icon: (0, i.jsx)(r.ChatIcon, {
                     size: "md"
                 }),
                 inModal: t
             }), (0, i.jsx)(g, {
                 header: c.intl.string(d.default.GNs2ZH),
                 description: c.intl.string(d.default.Ief2xc),
-                icon: (0, i.jsx)(r._jp, {
+                icon: (0, i.jsx)(a._jp, {
                     size: "md"
                 }),
                 inModal: t
             }), (0, i.jsx)(g, {
                 header: c.intl.string(d.default.PjM3r5),
                 description: p,
-                icon: (0, i.jsx)(r.BFk, {
+                icon: (0, i.jsx)(a.BFk, {
                     size: "md"
                 }),
                 inModal: t
             }), (0, i.jsx)(g, {
                 header: T,
                 description: f,
-                icon: (0, i.jsx)(a.FlagIcon, {
+                icon: (0, i.jsx)(r.FlagIcon, {
                     size: "md"
                 }),
                 inModal: t
             }), (0, i.jsx)(g, {
                 header: c.intl.string(d.default.UCuHM8),
                 description: S,
-                icon: (0, i.jsx)(a.SettingsIcon, {
+                icon: (0, i.jsx)(r.SettingsIcon, {
                     size: "md"
                 }),
                 inModal: t
-            }), (0, i.jsx)(r.Text, {
+            }), (0, i.jsx)(a.Text, {
                 className: u.x_,
                 variant: "text-xxs/bold",
                 color: "text-default",
@@ -109,11 +109,11 @@ let g = e => {
             }), (0, i.jsx)(g, {
                 header: s,
                 description: l,
-                icon: (0, i.jsx)(r.PGe, {
+                icon: (0, i.jsx)(a.PGe, {
                     size: "custom",
                     width: 20,
                     height: 20,
-                    color: r.LU0.colors.TEXT_STRONG.css
+                    color: a.LU0.colors.TEXT_STRONG.css
                 }),
                 inModal: t
             })]

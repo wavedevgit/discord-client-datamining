@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(311907),
-    r = n(692617),
+var r = n(311907),
+    a = n(692617),
     l = n(397927),
     s = n(297413),
     o = n(775602),
@@ -13,8 +13,8 @@ var a = n(311907),
     c = n(854378),
     u = n(571694),
     A = n(562819),
-    _ = n(215689),
-    h = n(994500),
+    h = n(215689),
+    _ = n(994500),
     m = n(427262),
     g = n(837921),
     p = n(800583),
@@ -33,7 +33,7 @@ let T = e => {
             children: f.intl.string(f.t.jpY0X5)
         }) : (0, i.jsxs)("div", {
             className: C.I9,
-            children: [(0, i.jsx)(r.A, {
+            children: [(0, i.jsx)(a.A, {
                 guilds: n,
                 maxGuilds: 3,
                 size: c.$v.Sizes.SMOL,
@@ -54,10 +54,10 @@ function S(e) {
     let {
         channel: t,
         otherUser: n,
-        active: r
-    } = e, c = (0, a.bG)([o.A], () => o.A.useReducedMotion), g = (0, a.bG)([h.A], () => null == n ? null : h.A.getNickname(n.id)), E = !c && r, S = (0, p.j)(t), {
+        active: a
+    } = e, c = (0, r.bG)([o.A], () => o.A.useReducedMotion), g = (0, r.bG)([_.A], () => null == n ? null : _.A.getNickname(n.id)), E = !c && a, S = (0, p.j)(t), {
         avatarDecorationSrc: x
-    } = (0, _.A)({
+    } = (0, h.A)({
         user: n,
         size: (0, A.Te)(l._3J.SIZE_40),
         onlyAnimateOnHoverOrFocus: !0
@@ -90,7 +90,7 @@ function S(e) {
                 hoverText: (0, i.jsx)(I.A, {
                     channel: t
                 }),
-                forceHover: r,
+                forceHover: a,
                 children: (0, i.jsx)(T, {
                     userId: n.id
                 })

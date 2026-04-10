@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(607399),
+    r = n.n(l),
+    a = n(607399),
     o = n(417597),
     d = n(397927),
     c = n(944791),
@@ -99,8 +99,8 @@ function w(e) {
     return (0, i.jsx)(d.NPJ, {
         theme: t,
         children: e => (0, i.jsxs)(x.A, {
-            className: a()(e, D.ZB),
-            scrollable: r.Fr,
+            className: r()(e, D.ZB),
+            scrollable: a.Fr,
             role: "navigation",
             "aria-labelledby": l,
             toolbar: !0,
@@ -139,7 +139,7 @@ function V() {
             isLoading: t,
             selectedTab: n,
             handleTabChange: l,
-            showAgeGateModal: a
+            showAgeGateModal: r
         } = (0, y.j)({
             location: O.MH.SETTINGS,
             onMountEffect: () => {
@@ -148,8 +148,8 @@ function V() {
         });
     if (s.useEffect(() => {
             (0, p._)(E.q[n])
-        }, [n]), a) return null;
-    let r = G[n];
+        }, [n]), r) return null;
+    let a = G[n];
     return (0, i.jsxs)("main", {
         className: D.kL,
         "aria-label": P.intl.string(L.default.RZqaJn),
@@ -164,7 +164,7 @@ function V() {
             id: n,
             "aria-labelledby": e,
             className: D.Us,
-            children: t ? (0, i.jsx)(k, {}) : (0, i.jsx)(r, {})
+            children: t ? (0, i.jsx)(k, {}) : (0, i.jsx)(a, {})
         })]
     })
 }
@@ -172,7 +172,7 @@ function V() {
 function B() {
     let {
         analyticsLocations: e
-    } = (0, m.Ay)(u.A.FAMILY_CENTER), t = (0, S.A)(), n = (0, o.bG)([f.A], () => f.A.getIsInitialized()), l = (0, o.bG)([A.A], () => A.A.theme), r = (0, _.GV)(), {
+    } = (0, m.Ay)(u.A.FAMILY_CENTER), t = (0, S.A)(), n = (0, o.bG)([f.A], () => f.A.getIsInitialized()), l = (0, o.bG)([A.A], () => A.A.theme), a = (0, _.GV)(), {
         isLoading: x,
         selectedTab: p,
         handleTabChange: E,
@@ -192,7 +192,7 @@ function B() {
     return (0, i.jsx)(m.f5, {
         value: e,
         children: (0, i.jsxs)("main", {
-            className: a()(D.kL, D.ei),
+            className: r()(D.kL, D.ei),
             "aria-label": P.intl.string(L.default.RZqaJn),
             children: [(0, i.jsx)(g.HI, {
                 location: P.intl.string(L.default.RZqaJn)
@@ -204,7 +204,7 @@ function B() {
                 }
             }), (0, i.jsx)(d.VQ0.Panel, {
                 id: C,
-                "aria-labelledby": r,
+                "aria-labelledby": a,
                 className: D.Om,
                 children: (0, i.jsx)(d.HOs, {
                     children: (0, i.jsx)("div", {

@@ -17,8 +17,8 @@ var i = n(627968),
     A = n(684013),
     f = n(401843),
     g = n(717558),
-    _ = n(429913),
-    m = n(47167),
+    m = n(429913),
+    _ = n(47167),
     x = n(235986),
     E = n(15285),
     y = n(769015),
@@ -28,8 +28,8 @@ var i = n(627968),
     I = n(905552),
     N = n(22705),
     T = n(994314),
-    b = n(63995),
-    O = n(69407),
+    O = n(63995),
+    b = n(69407),
     j = n(520006),
     D = n(352018),
     R = n(481947),
@@ -49,8 +49,8 @@ var i = n(627968),
     F = n(799808),
     Y = n(855790),
     Z = n(652215),
-    J = n(731854),
-    X = n(985018),
+    X = n(731854),
+    J = n(985018),
     Q = n(298041);
 
 function q(e) {
@@ -66,8 +66,8 @@ function q(e) {
         onContextMenu: p,
         context: A,
         guildId: f,
-        voiceState: _
-    } = e, m = (0, r.bG)([M.Ay], () => M.Ay.isLocalMute(l.id)), x = (0, r.bG)([L.A], () => L.A.getCurrentUserActiveStream()), E = (0, r.yK)([L.A], () => null != x ? L.A.getViewerIds(x) : []), y = (0, g.A)({
+        voiceState: m
+    } = e, _ = (0, r.bG)([M.Ay], () => M.Ay.isLocalMute(l.id)), x = (0, r.bG)([L.A], () => L.A.getCurrentUserActiveStream()), E = (0, r.yK)([L.A], () => null != x ? L.A.getViewerIds(x) : []), y = (0, g.A)({
         userId: l.id,
         context: A
     }), v = (0, r.bG)([G.A], () => G.A.isPrioritySpeaker(l.id, A)), S = (0, r.bG)([L.A], () => null != L.A.getStreamForUser(l.id, f)), C = s.useMemo(() => null != x && x.ownerId !== l.id && E.includes(l.id), [x, l.id, E]);
@@ -76,9 +76,9 @@ function q(e) {
         mute: I,
         selfMute: N,
         suppress: T,
-        deaf: b,
-        selfDeaf: O
-    } = _;
+        deaf: O,
+        selfDeaf: b
+    } = m;
     return (0, i.jsx)(R.Ay, {
         guildId: f,
         onClick: n ? void 0 : e => h?.(e, l),
@@ -99,11 +99,11 @@ function q(e) {
         isOverlay: !0,
         size: u,
         priority: v,
-        mute: I || N || m,
-        localMute: m,
+        mute: I || N || _,
+        localMute: _,
         serverMute: I || T,
-        deaf: b || O,
-        serverDeaf: b,
+        deaf: O || b,
+        serverDeaf: O,
         userNameClassName: a()(Q.Xh, {
             [Q.xt]: n,
             [Q.R]: n && (d === Z.pwA.NEVER || !y && d === Z.pwA.ONLY_WHILE_SPEAKING)
@@ -112,7 +112,7 @@ function q(e) {
 }
 class $ extends s.PureComponent {
     static defaultProps = {
-        context: J.x.DEFAULT
+        context: X.x.DEFAULT
     };
     handleUserContextMenu = (e, t) => {
         let {
@@ -121,7 +121,7 @@ class $ extends s.PureComponent {
         (0, h.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("32418"), n.e("54631")]).then(n.bind(n, 668569));
+            } = await Promise.all([n.e("97262"), n.e("32418"), n.e("77012")]).then(n.bind(n, 668569));
             return n => (0, i.jsx)(e, {
                 ...n,
                 user: t,
@@ -249,13 +249,13 @@ class $ extends s.PureComponent {
                 })]
             }), n ? null : (0, i.jsx)(Y.Ay.Icon, {
                 icon: u.Zes,
-                label: X.intl.string(X.t.NiTd0e),
+                label: J.intl.string(J.t.NiTd0e),
                 onClick: this.handleOpenVoiceSettings,
                 tooltipPosition: "left",
                 size: 18
             }), n ? null : (0, i.jsx)(Y.Ay.Icon, {
                 icon: e ? u.hl9 : u.qgw,
-                label: e ? X.intl.string(X.t.cSu80j) : X.intl.string(X.t.cM8Vnm),
+                label: e ? J.intl.string(J.t.cSu80j) : J.intl.string(J.t.cM8Vnm),
                 onClick: this.handlePin,
                 tooltipPosition: "left",
                 size: 18,
@@ -301,7 +301,7 @@ class $ extends s.PureComponent {
                         children: [(0, i.jsx)(u.Text, {
                             className: Q.$A,
                             variant: "text-sm/normal",
-                            children: X.intl.string(X.t.XKYej5)
+                            children: J.intl.string(J.t.XKYej5)
                         }), (0, i.jsx)(T.A, {
                             children: o?.name ?? p
                         })]
@@ -325,10 +325,10 @@ class $ extends s.PureComponent {
                         className: Q.yf,
                         children: (0, i.jsx)(d.m, {
                             asContainer: !0,
-                            text: X.intl.string(X.t.S5anIc),
+                            text: J.intl.string(J.t.S5anIc),
                             children: (0, i.jsx)(u.DUT, {
                                 onClick: this.handleStopStream,
-                                "aria-label": X.intl.string(X.t.S5anIc),
+                                "aria-label": J.intl.string(J.t.S5anIc),
                                 children: (0, i.jsx)(u.GT3, {
                                     size: "md",
                                     color: "currentColor",
@@ -390,13 +390,13 @@ class $ extends s.PureComponent {
 
 function ee(e) {
     let t = (0, r.bG)([P.A, w.A], () => w.A.getChannel(P.A.getVoiceChannelId())),
-        n = (0, m.Ay)(t),
+        n = (0, _.Ay)(t),
         s = function() {
-            let [e] = (0, r.bG)([U.Ay, b.A, P.A, w.A], () => {
+            let [e] = (0, r.bG)([U.Ay, O.A, P.A, w.A], () => {
                 let e = w.A.getChannel(P.A.getVoiceChannelId());
                 return null == e ? [
                     [], -1
-                ] : e.isGuildStageVoice() ? [b.A.getMutableParticipants(e.id, O.ip.SPEAKER), b.A.getParticipantsVersion(e.id)] : [U.Ay.getVoiceStatesForChannel(e), U.Ay.getVoiceStateVersion(e.getGuildId())]
+                ] : e.isGuildStageVoice() ? [O.A.getMutableParticipants(e.id, b.ip.SPEAKER), O.A.getParticipantsVersion(e.id)] : [U.Ay.getVoiceStatesForChannel(e), U.Ay.getVoiceStateVersion(e.getGuildId())]
             }, [], H.D);
             return e
         }(),
@@ -405,7 +405,7 @@ function ee(e) {
             let e = (0, I.A)(E.Ay, V.A);
             return null != e ? k.A.findGame(e)?.id : null
         }),
-        o = (0, _.h)(a),
+        o = (0, m.h)(a),
         d = (0, r.cf)([E.Ay, V.A, L.A, z.default], () => {
             let e = (0, I.A)(E.Ay, V.A),
                 t = L.A.getCurrentUserActiveStream();

@@ -1,4 +1,5 @@
 /** chunk id: 153431 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     gD: "embedCard__44c9a",
     oE: "compact__44c9a",

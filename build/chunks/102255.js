@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(397927),
     d = n(793574),
     c = n(200921),
@@ -75,7 +75,7 @@ function b() {
     let {
         currentSession: e,
         otherSessions: t
-    } = (0, u.r)(), n = (0, r.bG)([m.default], () => m.default.getCurrentUser()), [l, a] = s.useState(new Set);
+    } = (0, u.r)(), n = (0, a.bG)([m.default], () => m.default.getCurrentUser()), [l, r] = s.useState(new Set);
     return null == e && 0 === t.length || 0 === t.length && n?.mfaEnabled ? null : t.length > 0 || !n?.mfaEnabled ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(o.nVY, {
             label: p.intl.string(p.t.xx1MWc),
@@ -85,7 +85,7 @@ function b() {
                 checked: l.has(e.id_hash),
                 setChecked: t => {
                     let n = new Set(l);
-                    t ? n.add(e.id_hash) : n.delete(e.id_hash), a(n)
+                    t ? n.add(e.id_hash) : n.delete(e.id_hash), r(n)
                 }
             }, e.id_hash)), n?.mfaEnabled ? null : (0, i.jsx)(v, {})]
         }), t.length > 0 && (0, i.jsx)("div", {
@@ -104,7 +104,7 @@ function C(e) {
         current: n,
         setChecked: s,
         checked: l,
-        useChecks: r
+        useChecks: a
     } = e, {
         location: d,
         platform: u,
@@ -113,7 +113,7 @@ function C(e) {
         lastActive: x
     } = (0, h.T)(t, n), A = [m, u].filter(_.Vq), f = [d, x].filter(_.Vq);
     return (0, i.jsxs)("div", {
-        className: a()(T.dZ, {
+        className: r()(T.dZ, {
             [T.gg]: n
         }),
         children: [(0, i.jsxs)("div", {
@@ -151,7 +151,7 @@ function C(e) {
                         })]
                     })]
                 })]
-            }), n ? null : r ? (0, i.jsx)("div", {
+            }), n ? null : a ? (0, i.jsx)("div", {
                 className: T.GR,
                 children: (0, i.jsx)(o.JuY, {
                     onChange: e => {
@@ -178,7 +178,7 @@ function C(e) {
 
 function v() {
     return (0, i.jsxs)("div", {
-        className: a()(T.dZ, T.EC),
+        className: r()(T.dZ, T.EC),
         children: [(0, i.jsxs)("div", {
             className: T.OC,
             children: [(0, i.jsx)("div", {

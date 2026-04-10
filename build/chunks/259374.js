@@ -1,22 +1,22 @@
 /** chunk id: 259374 params = (module,exports,require) **/
 n.d(t, {
-    k: () => a
+    k: () => l
 });
-var l = n(311907),
+var r = n(311907),
     i = n(734057),
-    r = n(383501);
+    a = n(383501);
 
-function a(e) {
+function l(e) {
     let {
         channelId: t
     } = e;
-    return (0, l.bG)([r.A, i.A], () => (function(e) {
-        let [t, n] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [r.A, i.A];
+    return (0, r.bG)([a.A, i.A], () => (function(e) {
+        let [t, n] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [a.A, i.A];
         if (null == e || t.getChannelId() !== e) return !1;
-        let l = n.getChannel(e);
-        if (null == l || l.isGuildStageVoice()) return !1;
-        let a = t.getSecureFramesState()?.version;
-        return null != a && 0 !== a
-    })(t, [r.A, i.A]), [t])
+        let r = n.getChannel(e);
+        if (null == r || r.isGuildStageVoice()) return !1;
+        let l = t.getSecureFramesState()?.version;
+        return null != l && 0 !== l
+    })(t, [a.A, i.A]), [t])
 }
 n(603266)

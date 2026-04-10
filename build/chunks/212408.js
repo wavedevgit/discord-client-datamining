@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(990078),
-    r = n(985018),
+var r = n(990078),
+    a = n(985018),
     l = n(304463);
 let s = Math.ceil(2 * Math.PI * 20),
     o = e => {
@@ -14,16 +14,16 @@ let s = Math.ceil(2 * Math.PI * 20),
                 used: u
             } = e,
             A = Math.max(0, Math.min(1, u / c)),
-            _ = `${Math.floor(100*A)}%`;
-        return (0, i.jsx)(a.m, {
-            text: r.intl.formatToPlainString(r.t["2eoRMh"], {
-                used: _
+            h = `${Math.floor(100*A)}%`;
+        return (0, i.jsx)(r.m, {
+            text: a.intl.formatToPlainString(a.t["2eoRMh"], {
+                used: h
             }),
             children: (0, i.jsxs)("div", {
                 className: l.iE,
                 role: "progressbar",
-                "aria-label": r.intl.formatToPlainString(r.t["2eoRMh"], {
-                    used: _
+                "aria-label": a.intl.formatToPlainString(a.t["2eoRMh"], {
+                    used: h
                 }),
                 children: [(0, i.jsxs)("svg", {
                     viewBox: "25 25 50 50",
@@ -45,7 +45,7 @@ let s = Math.ceil(2 * Math.PI * 20),
                 }), (0, i.jsx)("aside", {
                     className: l.Y3,
                     "aria-hidden": !0,
-                    children: _
+                    children: h
                 })]
             })
         })

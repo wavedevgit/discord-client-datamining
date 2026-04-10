@@ -1,49 +1,50 @@
 /** chunk id: 939344 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => o
+    A: () => c
 });
 var i = n(627968);
 n(64700);
-var l = n(480012),
-    a = n(763754),
-    r = n(888675),
-    s = n(985018);
+var r = n(480012),
+    s = n(763754),
+    l = n(888675),
+    a = n(985018);
 
-function o(e) {
+function c(e) {
     let {
         message: t,
-        compact: o,
-        missed: c,
+        compact: c,
+        missed: o,
         joinable: u,
         usernameHook: d,
         onClickJoinCall: _
-    } = e, A = (0, a.Ay)(t), m = A.nick, E = d(A), T = (0, l.A)(t);
-    return c ? (0, i.jsx)(r.A, {
+    } = e, E = (0, s.Ay)(t), A = E.nick, m = d(E), I = (0, r.A)(t);
+    return o ? (0, i.jsx)(l.A, {
         icon: n(130158),
         timestamp: t.timestamp,
-        compact: o,
-        children: null != T ? s.intl.format(s.t.AcqBmO, {
-            username: m,
-            usernameHook: E,
-            callDuration: T
-        }) : s.intl.format(s.t["43phHx"], {
-            username: m,
-            usernameHook: E
+        compact: c,
+        children: null != I ? a.intl.format(a.t.AcqBmO, {
+            username: A,
+            usernameHook: m,
+            callDuration: I
+        }) : a.intl.format(a.t["43phHx"], {
+            username: A,
+            usernameHook: m
         })
-    }) : (0, i.jsxs)(r.A, {
+    }) : (0, i.jsxs)(l.A, {
         icon: n(175476),
         timestamp: t.timestamp,
-        compact: o,
-        children: [null != T ? s.intl.format(s.t["7TeC1P"], {
-            username: m,
-            usernameHook: E,
-            callDuration: T
-        }) : s.intl.format(s.t.LuB5RD, {
-            username: m,
-            usernameHook: E
-        }), u ? (0, i.jsx)(r.A.Action, {
+        compact: c,
+        children: [null != I ? a.intl.format(a.t["7TeC1P"], {
+            username: A,
+            usernameHook: m,
+            callDuration: I
+        }) : a.intl.format(a.t.LuB5RD, {
+            username: A,
+            usernameHook: m
+        }), u ? (0, i.jsx)(l.A.Action, {
             onClick: _,
-            children: s.intl.string(s.t.oa9mvZ)
+            children: a.intl.string(a.t.oa9mvZ)
         }) : null]
     })
 }

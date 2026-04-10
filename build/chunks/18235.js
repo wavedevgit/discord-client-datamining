@@ -1,16 +1,16 @@
 /** chunk id: 18235 params = (module,exports,require) **/
-r.d(t, {
-    A: () => l
+n.d(t, {
+    A: () => s
 });
-var n = r(827343),
-    a = r(579872),
-    c = r(985018);
+var i = n(827343),
+    l = n(579872),
+    r = n(985018);
 
-function l(e, t) {
-    e ? a.A.show({
-        title: c.intl.string(c.t.QZ7WSS),
-        body: c.intl.string(c.t.Tl9JpL)
-    }) : n.A.toggleSelfDeaf({
+function s(e, t) {
+    e ? l.A.show({
+        title: r.intl.string(r.t.QZ7WSS),
+        body: r.intl.string(r.t.Tl9JpL)
+    }) : i.A.toggleSelfDeaf({
         location: t
     })
 }

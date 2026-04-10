@@ -1,5 +1,22 @@
 /** chunk id: 256688 params = (module,exports,require) **/
 n.d(t, {
-    B: () => l.B9
+    I: () => u
 });
-var l = n(41984)
+var i = n(158954),
+    s = n(419954),
+    l = n(780964),
+    r = n(284650),
+    a = n(36286),
+    o = n(985018);
+let d = (0, s.zZ)(l.X.DEVELOPER_CATEGORY, {
+        buildLayout: () => [a.w, r.A]
+    }),
+    c = (0, s.t_)(l.X.DEVELOPER_PANEL, {
+        useTitle: () => o.intl.string(o.t["0BRxRp"]),
+        buildLayout: () => [d]
+    }),
+    u = (0, s.i4)(l.X.DEVELOPER_SIDEBAR_ITEM, {
+        icon: i.GaO,
+        useTitle: () => o.intl.string(o.t["0BRxRp"]),
+        buildLayout: () => [c]
+    })

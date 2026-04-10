@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(942381),
+    r = n.n(l),
+    a = n(942381),
     o = n(894858),
     d = n(258791);
 
@@ -23,7 +23,7 @@ function c(e) {
                 })
             }, 100))
         }, {
-            equalityFn: r.x,
+            equalityFn: a.x,
             fireImmediately: !0
         });
         return () => {
@@ -31,7 +31,7 @@ function c(e) {
         }
     }, [t.key, t.type]), (0, i.jsx)("div", {
         "data-nav-anchor-key": t.key,
-        className: a()(d.k, l && d.j),
+        className: r()(d.k, l && d.j),
         children: n
     })
 }

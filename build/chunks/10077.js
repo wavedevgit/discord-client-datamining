@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i, s = n(64700),
     l = n(311907),
-    a = n(253932),
-    r = n(71393),
+    r = n(253932),
+    a = n(71393),
     o = n(711014),
     d = ((i = {}).SERVER_ORDER = "server-order", i.RECENTLY_JOINED = "recently-joined", i.ACTIVITY_SHARING_ON = "activity-sharing-on", i.ACTIVITY_SHARING_OFF = "activity-sharing-off", i);
 let c = {
@@ -25,14 +25,14 @@ let c = {
 };
 
 function u() {
-    let [e, t] = (0, s.useState)(""), [n, i] = (0, s.useState)("server-order"), d = (0, l.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), u = (0, l.bG)([r.A], () => r.A.getGuilds()), m = d.map(e => u[e]), g = a.Pw.useSetting(), [_, x] = (0, s.useState)(g);
+    let [e, t] = (0, s.useState)(""), [n, i] = (0, s.useState)("server-order"), d = (0, l.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), u = (0, l.bG)([a.A], () => a.A.getGuilds()), m = d.map(e => u[e]), g = r.Pw.useSetting(), [_, x] = (0, s.useState)(g);
     (0, s.useEffect)(() => {
         x(g)
     }, [g]);
     let A = async e => {
         x(e);
         try {
-            await a.Pw.updateSetting(e)
+            await r.Pw.updateSetting(e)
         } catch (e) {
             x(g)
         }

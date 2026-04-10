@@ -1,68 +1,68 @@
 /** chunk id: 346084 params = (module,exports,require) **/
-s.d(t, {
-    A: () => S
+n.d(t, {
+    A: () => I
 });
-var i = s(735438),
-    n = s.n(i),
-    a = s(311907),
-    o = s(73153),
-    r = s(427157),
-    c = s(287809),
-    l = s(38910),
-    u = s(858885);
-let _ = {},
-    d = 0,
+var i = n(735438),
+    l = n.n(i),
+    r = n(311907),
+    s = n(73153),
+    a = n(427157),
+    o = n(287809),
+    u = n(38910),
+    d = n(858885);
+let c = {},
+    h = 0,
     g = !1,
-    h = !1;
+    m = !1;
 
-function p(e) {
+function f(e) {
     let t = null != e.contact_names && e.contact_names.length >= 2 ? e.contact_names.slice(0, 2) : [];
     return {
         key: e.suggested_user.id,
-        name: n().first(e.reasons)?.name,
-        user: new r.A(e.suggested_user),
+        name: l().first(e.reasons)?.name,
+        user: new a.A(e.suggested_user),
         mutualFriendsCount: e.mutual_friends_count,
         contactNames: t
     }
 }
-class m extends a.Ay.Store {
+class A extends r.Ay.Store {
     static displayName = "FriendSuggestionStore";
     initialize() {
-        this.waitFor(c.default)
+        this.waitFor(o.default)
     }
     getSuggestionCount() {
-        return d
+        return h
     }
     getSuggestions() {
-        return Object.entries(_).map(e => {
-            let [t, s] = e;
-            return s
+        return Object.entries(c).map(e => {
+            let [t, n] = e;
+            return n
         })
     }
     getSuggestion(e) {
-        return _[e]
+        return c[e]
     }
 }
-let S = new m(o.h, {
+let I = new A(s.h, {
     CONNECTION_OPEN: function(e) {
-        _ = {}, (d = e.friendSuggestionCount) > 0 ? (h = !0, !g && h && (g = !0, h = !1, l.A.fetch())) : (0, u.A)()
+        c = {}, (h = e.friendSuggestionCount) > 0 ? (m = !0, !g && m && (g = !0, m = !1, u.A.fetch())) : (0, d.A)()
     },
     FRIEND_SUGGESTION_CREATE: function(e) {
-        let t = p(e.suggestion);
-        if (null != _[t.key]) return !1;
-        d++, _ = {
-            ..._,
+        let t = f(e.suggestion);
+        if (null != c[t.key]) return !1;
+        h++, c = {
+            ...c,
             [t.key]: t
         }
     },
     FRIEND_SUGGESTION_DELETE: function(e) {
-        d = Math.max(0, --d), delete _[e.suggestedUserId]
+        h = Math.max(0, --h), delete c[e.suggestedUserId]
     },
     LOAD_FRIEND_SUGGESTIONS_SUCCESS: function(e) {
         var t;
-        g = !1, t = e.suggestions, _ = n().chain(t).map(e => p(e)).keyBy(e => e.key).value(), d = n().keys(_).length
+        g = !1, t = e.suggestions, c = l().chain(t).map(e => f(e)).keyBy(e => e.key).value(), h = l().keys(c).length
     },
     LOAD_FRIEND_SUGGESTIONS_FAILURE: function() {
-        g = !1, _ = {}
+        g = !1, c = {}
     }
 })

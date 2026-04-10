@@ -1,14 +1,14 @@
 /** chunk id: 576420 params = (module,exports,require) **/
 n.d(t, {
     A2: () => a,
-    Ay: () => u,
+    Ay: () => o,
     WS: () => r
 });
-var l = n(839214),
-    i = n(914853);
+var i = n(839214),
+    l = n(914853);
 let r = 1e3,
-    s = (0, l.D)((e, t) => ({
-        activeTab: i.x.FRIENDS,
+    s = (0, i.D)((e, t) => ({
+        activeTab: l.x.FRIENDS,
         recentlyAddedFavoriteTimestampMsByKey: {},
         setActiveTab: n => {
             t().activeTab !== n && e({
@@ -16,11 +16,11 @@ let r = 1e3,
             })
         },
         markFavoriteAdded: (t, n) => {
-            let l = n ?? Date.now();
+            let i = n ?? Date.now();
             e(e => ({
                 recentlyAddedFavoriteTimestampMsByKey: {
                     ...e.recentlyAddedFavoriteTimestampMsByKey,
-                    [t]: l
+                    [t]: i
                 }
             }))
         },
@@ -37,4 +37,4 @@ let r = 1e3,
 function a(e) {
     return s.useState(t => t.recentlyAddedFavoriteTimestampMsByKey[e] ?? null)
 }
-let u = s
+let o = s

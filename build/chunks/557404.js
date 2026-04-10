@@ -2,8 +2,8 @@
 n.d(t, {
     $: () => r
 });
-var l = n(64700),
-    i = n(576420);
+var i = n(64700),
+    l = n(576420);
 
 function r(e) {
     let {
@@ -12,15 +12,15 @@ function r(e) {
         getScrollTargetForTargetId: r,
         getFallbackScrollTarget: s,
         padding: a = 8,
-        animate: u = !1
-    } = e, o = i.Ay.useState(e => e.recentlyAddedFavoriteTimestampMsByKey), d = l.useMemo(() => (function(e) {
+        animate: o = !1
+    } = e, u = l.Ay.useState(e => e.recentlyAddedFavoriteTimestampMsByKey), d = i.useMemo(() => (function(e) {
         let {
             targetIds: t,
             timestampsByKey: n
-        } = e, l = Date.now(), r = null;
+        } = e, i = Date.now(), r = null;
         for (let e of t) {
             let t = n[e];
-            null == t || t > l || !(l - t > i.WS) && (null == r || t > r.addedTimestampMs) && (r = {
+            null == t || t > i || !(i - t > l.WS) && (null == r || t > r.addedTimestampMs) && (r = {
                 targetId: e,
                 addedTimestampMs: t
             })
@@ -28,20 +28,20 @@ function r(e) {
         return r
     })({
         targetIds: n,
-        timestampsByKey: o
-    }), [n, o]), c = l.useRef(null);
-    l.useEffect(() => {
+        timestampsByKey: u
+    }), [n, u]), c = i.useRef(null);
+    i.useEffect(() => {
         if (null == d) return;
         let e = c.current;
         if (e?.targetId === d.targetId && e.addedTimestampMs === d.addedTimestampMs) return;
         let n = t.current;
         if (null == n) return;
-        let l = r(d.targetId) ?? s?.() ?? null;
-        null != l && (c.current = d, n.scrollToIndex({
-            section: l.section,
-            row: l.row,
+        let i = r(d.targetId) ?? s?.() ?? null;
+        null != i && (c.current = d, n.scrollToIndex({
+            section: i.section,
+            row: i.row,
             padding: a,
-            animate: u
+            animate: o
         }))
-    }, [u, d, s, r, a, t])
+    }, [o, d, s, r, a, t])
 }

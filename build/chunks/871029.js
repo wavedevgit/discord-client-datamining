@@ -1,4 +1,5 @@
 /** chunk id: 871029 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     pG: "welcomeCard_d74b42",
     _X: "welcomeCardText_d74b42",

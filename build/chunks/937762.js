@@ -5,9 +5,9 @@ n.d(t, {
 var i = n(419954),
     s = n(780964),
     l = n(572727),
-    a = n(58454),
-    r = n(985018);
+    r = n(58454),
+    a = n(985018);
 let o = (0, i.zZ)(s.X.APPEARANCE_SCALING_CATEGORY, {
-    useTitle: () => r.intl.string(r.t["0Yh+ZX"]),
-    buildLayout: () => [l.B, a.G]
+    useTitle: () => a.intl.string(a.t["0Yh+ZX"]),
+    buildLayout: () => [l.B, r.G]
 })

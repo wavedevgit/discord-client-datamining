@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(531260),
-    r = n(459793),
+    r = n(531260),
+    a = n(459793),
     o = n(449280),
     d = n(406245),
     c = n(836275),
@@ -31,12 +31,12 @@ function N(e) {
         premiumSubscription: t
     } = e, n = (0, l.bG)([A.A], () => A.A.boostSlots), N = s.useMemo(() => Object.values(n), [n]), I = (0, l.bG)([x.default], () => x.default.getCurrentUser()), j = h.Ay.isPremium(I, C.PremiumTypes.TIER_2), y = (0, l.bG)([g.A], () => g.A.affinities), O = (0, l.bG)([_.Ay], () => _.Ay.getFlattenedGuildIds()), R = y.length > 0 || O.length > 0, L = N.length > 0, P = s.useMemo(() => N.filter(e => null != e.premiumGuildSubscription), [N]), D = P.length > 0, G = N.length > P.length, M = (0, l.bG)([m.A], () => m.A.getCurrentUserAppliedBoosts()), {
         fractionalState: k
-    } = (0, a.A)({
+    } = (0, r.A)({
         forceFetch: !0
     }), U = I?.isPremiumGroupMember(), w = t?.isPausedOrPausePending === !0 && k === C.xc.NONE, V = t?.isPausedOrPausePending !== !0 && k === C.xc.NONE && !U, B = j && k === C.xc.FP_SUB_PAUSED, F = k === C.xc.NONE && !U;
     return (0, i.jsxs)("div", {
         className: v.GO,
-        children: [(0, i.jsx)(r.kb, {
+        children: [(0, i.jsx)(a.kb, {
             className: v.ek
         }), (0, i.jsx)(T.A, {
             hasGuildBoostSlots: L,

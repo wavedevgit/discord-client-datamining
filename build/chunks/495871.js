@@ -5,12 +5,12 @@ n.d(t, {
 var i = n(311907),
     s = n(926919),
     l = n(419954),
-    a = n(111162),
-    r = n(780964);
-let o = (0, l.zD)(r.X.QUEST_LOGGING, {
+    r = n(111162),
+    a = n(780964);
+let o = (0, l.zD)(a.X.QUEST_LOGGING, {
     useTitle: () => "Enable Quests Debug Logging",
     useSubtitle: () => "Logs quest lifecycle events to the developer console.",
-    useValue: () => (0, i.bG)([a.default], () => a.default.isLoggingQuestEvents),
+    useValue: () => (0, i.bG)([r.default], () => r.default.isLoggingQuestEvents),
     setValue: e => (0, s.x)({
         logQuestEvents: e
     })

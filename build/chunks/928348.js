@@ -1,39 +1,40 @@
 /** chunk id: 928348 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    H6: () => E,
-    p3: () => m,
-    qv: () => T,
-    wP: () => I
+    H6: () => m,
+    p3: () => A,
+    qv: () => I,
+    wP: () => T
 }), n(321073);
 var i = n(64700),
-    l = n(942381),
-    a = n(265690),
-    r = n(121894),
-    s = n(198982),
-    o = n(137207),
-    c = n(904813),
+    r = n(942381),
+    s = n(265690),
+    l = n(121894),
+    a = n(198982),
+    c = n(137207),
+    o = n(904813),
     u = n(411335),
     d = n(652215);
 let _ = {},
-    A = (0, a.h)((e, t) => ({
+    E = (0, s.h)((e, t) => ({
         rules: {},
         fetching: !1,
         error: null,
         updateRule: n => {
             let {
                 guildId: i,
-                id: l,
-                triggerType: a
+                id: r,
+                triggerType: s
             } = n, {
-                rules: s
-            } = t(), o = s[i] ?? {}, u = o[a] ?? [], d = u.some(e => e.id === l), _ = u.filter(e => !(0, c.R)(e.id) || e.triggerType !== a), A = d ? _.map(e => e.id === l ? n : e) : [..._, n];
-            (0, r.r)(() => {
+                rules: a
+            } = t(), c = a[i] ?? {}, u = c[s] ?? [], d = u.some(e => e.id === r), _ = u.filter(e => !(0, o.R)(e.id) || e.triggerType !== s), E = d ? _.map(e => e.id === r ? n : e) : [..._, n];
+            (0, l.r)(() => {
                 e({
                     rules: {
-                        ...s,
+                        ...a,
                         [i]: {
-                            ...o,
-                            [a]: A
+                            ...c,
+                            [s]: E
                         }
                     },
                     error: null
@@ -42,17 +43,17 @@ let _ = {},
         },
         removeRule: (n, i) => {
             let {
-                rules: l
-            } = t(), a = l[i], s = Object.keys(a).reduce((e, t) => {
+                rules: r
+            } = t(), s = r[i], a = Object.keys(s).reduce((e, t) => {
                 let i = Number(t),
-                    l = a[i] ?? [];
-                return e[i] = l.filter(e => e.id !== n), e
+                    r = s[i] ?? [];
+                return e[i] = r.filter(e => e.id !== n), e
             }, {});
-            (0, r.r)(() => {
+            (0, l.r)(() => {
                 e({
                     rules: {
-                        ...l,
-                        [i]: s
+                        ...r,
+                        [i]: a
                     },
                     error: null
                 })
@@ -60,11 +61,11 @@ let _ = {},
         },
         syncRules: async n => {
             var i;
-            let l;
-            if (l = Date.now(), l - (_[n] ?? 0) > 2e4) {
+            let r;
+            if (r = Date.now(), r - (_[n] ?? 0) > 2e4) {
                 _[n] = Date.now();
                 try {
-                    let l, a = (i = await (0, o.H0)(n), l = {
+                    let r, s = (i = await (0, c.H0)(n), r = {
                             [u.uh.KEYWORD]: [],
                             [u.uh.ML_SPAM]: [],
                             [u.uh.DEFAULT_KEYWORD_LIST]: [],
@@ -75,21 +76,21 @@ let _ = {},
                             let {
                                 triggerType: t
                             } = e;
-                            l[t]?.push(e)
-                        }), l),
-                        s = t().rules;
-                    (0, r.r)(() => {
+                            r[t]?.push(e)
+                        }), r),
+                        a = t().rules;
+                    (0, l.r)(() => {
                         e({
                             rules: {
-                                ...s,
-                                [n]: a
+                                ...a,
+                                [n]: s
                             },
                             error: null
                         })
                     })
                 } catch (n) {
-                    let t = new s.LG(n);
-                    (0, r.r)(() => {
+                    let t = new a.LG(n);
+                    (0, l.r)(() => {
                         e({
                             error: t
                         })
@@ -98,24 +99,24 @@ let _ = {},
             }
         }
     })),
-    m = (e, t) => {
-        let n = A.getState().rules;
+    A = (e, t) => {
+        let n = E.getState().rules;
         return (n[e]?.[t] ?? []).length
     };
 
-function E(e) {
-    let [t, n] = i.useState(!1), [a, r] = A(e => [e.syncRules, e.fetching], l.x);
+function m(e) {
+    let [t, n] = i.useState(!1), [s, l] = E(e => [e.syncRules, e.fetching], r.x);
     return [t, i.useCallback(async () => {
-        if (!r && null != e) try {
-            n(!0), await a(e)
+        if (!l && null != e) try {
+            n(!0), await s(e)
         } finally {
             n(!1)
         }
-    }, [e, r, a])]
+    }, [e, l, s])]
 }
 
-function T(e) {
-    let [t, n] = E(e);
+function I(e) {
+    let [t, n] = m(e);
     return i.useEffect(() => {
         (async () => {
             await n()
@@ -123,10 +124,10 @@ function T(e) {
     }, [e, n]), [t, n]
 }
 
-function I(e) {
-    return A(t => ({
+function T(e) {
+    return E(t => ({
         rulesByTriggerType: t.rules[e ?? d.dJq] ?? {},
         updateRule: t.updateRule,
         removeRule: t.removeRule
-    }), l.x)
+    }), r.x)
 }

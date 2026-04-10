@@ -1,17 +1,17 @@
 /** chunk id: 982363 params = (module,exports,require) **/
 n.d(t, {
-    q: () => r
+    q: () => a
 });
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    a = n(985018);
+    r = n(985018);
 
-function r(e) {
+function a(e) {
     let {
         text: t,
         censor: n,
-        revealLabel: r,
+        revealLabel: a,
         hideLabel: o,
         redesign: d = !1
     } = e, [c, u] = s.useState(!1), m = c ? t : n(t);
@@ -26,9 +26,9 @@ function r(e) {
         }) : m, (0, i.jsx)(l.QWc, {
             variant: "primary",
             textVariant: d ? "text-md/medium" : "text-sm/medium",
-            "aria-label": c ? o : r,
+            "aria-label": c ? o : a,
             onClick: () => u(!c),
-            text: c ? a.intl.string(a.t.fgq1gs) : a.intl.string(a.t.dcztdU)
+            text: c ? r.intl.string(r.t.fgq1gs) : r.intl.string(r.t.dcztdU)
         })]
     })
 }

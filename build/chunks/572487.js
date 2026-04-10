@@ -4,14 +4,14 @@ n.d(t, {
 });
 var i = n(311907),
     l = n(73153),
-    s = n(652215);
-let a = {};
+    a = n(652215);
+let s = {};
 
 function r(e) {
-    let t = a[e = e ?? "null"];
-    return null == t && (t = a[e] = {
-        state: s.S7L.DISCONNECTED,
-        quality: s.bFR.UNKNOWN,
+    let t = s[e = e ?? "null"];
+    return null == t && (t = s[e] = {
+        state: a.S7L.DISCONNECTED,
+        quality: a.bFR.UNKNOWN,
         pings: [],
         hostname: null,
         lossRate: null
@@ -19,7 +19,7 @@ function r(e) {
 }
 
 function o(e, t, n) {
-    let i = a[e = e ?? "null"];
+    let i = s[e = e ?? "null"];
     return null != i ? t(i) : n
 }
 class c extends i.Ay.Store {
@@ -30,7 +30,7 @@ class c extends i.Ay.Store {
                 state: t
             } = e;
             return t
-        }, s.S7L.DISCONNECTED)
+        }, a.S7L.DISCONNECTED)
     }
     getQuality(e) {
         return o(e, e => {
@@ -38,7 +38,7 @@ class c extends i.Ay.Store {
                 quality: t
             } = e;
             return t
-        }, s.bFR.UNKNOWN)
+        }, a.bFR.UNKNOWN)
     }
     getHostname(e) {
         return o(e, e => {
@@ -75,7 +75,7 @@ class c extends i.Ay.Store {
 }
 let d = new c(l.h, {
     OVERLAY_INITIALIZE: function(e) {
-        a = e.rtcConnectionStates
+        s = e.rtcConnectionStates
     },
     RTC_CONNECTION_STATE: function(e) {
         if (null != e.streamKey) return !1;

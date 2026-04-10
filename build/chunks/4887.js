@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(64700),
     s = n(934551),
     l = n(554146),
-    a = n(974544),
-    r = n(200921),
+    r = n(974544),
+    a = n(200921),
     o = n(419954),
     d = n(933297),
     c = n(780964),
@@ -20,8 +20,8 @@ var i = n(64700),
 let h = (0, o.zZ)(c.X.SESSIONS_CATEGORY, {
         useTitle: () => A.intl.string(A.t.mEndXM),
         useSubtitle: () => A.intl.string(A.t.b7ZpTM),
-        initialize: () => ((0, r.GY)(), () => {
-            (0, r.ZQ)()
+        initialize: () => ((0, a.GY)(), () => {
+            (0, a.ZQ)()
         }),
         buildLayout: () => [g.I, x.A, _.V],
         useSearchTerms: () => [A.intl.string(A.t["+1h0k/"]), A.intl.string(A.t.LLS19o), A.intl.string(A.t.xx1MWc), A.intl.string(A.t.lSWsrd)]
@@ -29,8 +29,8 @@ let h = (0, o.zZ)(c.X.SESSIONS_CATEGORY, {
     p = (0, o.zZ)(c.X.SESSIONS_CATEGORY, {
         useSearchTerms: () => [A.intl.string(A.t["+1h0k/"]), A.intl.string(A.t.LLS19o), A.intl.string(A.t.xx1MWc), A.intl.string(A.t.Vij32M), A.intl.string(A.t.lSWsrd)],
         buildLayout: () => [g.I, x.A],
-        initialize: () => ((0, r.GY)(), () => {
-            (0, r.ZQ)()
+        initialize: () => ((0, a.GY)(), () => {
+            (0, a.ZQ)()
         }),
         useInlineNotice: function() {
             return i.useMemo(() => ({
@@ -41,7 +41,7 @@ let h = (0, o.zZ)(c.X.SESSIONS_CATEGORY, {
     }),
     T = (0, o.t_)(c.X.SESSIONS_PANEL, {
         useTitle: () => (0, u._A)("SessionsPanel") ? A.intl.string(A.t.mEndXM) : A.intl.string(A.t["+1h0k/"]),
-        useObscuredNotice: a.L,
+        useObscuredNotice: r.L,
         buildLayout: () => (0, u.pC)("SessionsPanel") ? [h] : [p]
     }),
     f = (0, o.i4)(c.X.SESSIONS_SIDEBAR_ITEM, {

@@ -1,19 +1,19 @@
 /** chunk id: 209100 params = (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => a
 });
 var i = n(627968);
 n(64700);
 var l = n(953727);
 
-function s(e) {
+function a(e) {
     let {
         width: t = 45,
         height: n = 46,
-        ...s
+        ...a
     } = e;
     return (0, i.jsxs)("svg", {
-        ...(0, l.A)(s),
+        ...(0, l.A)(a),
         width: t,
         height: n,
         viewBox: "0 0 49 50",

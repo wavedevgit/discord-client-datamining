@@ -3,17 +3,17 @@ n.d(t, {
     A: () => x
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(284009),
     o = n.n(s),
     d = n(421380),
     c = n(397927),
     u = n(49229),
     A = n(915089),
-    _ = n(395422),
-    h = n(652215),
+    h = n(395422),
+    _ = n(652215),
     m = n(650583),
     g = n(985018),
     p = n(323687),
@@ -51,20 +51,20 @@ function S(e, t) {
 function x(e) {
     let {
         placeholder: t = g.intl.string(g.t["Rn/sLl"])
-    } = e, n = a.useRef(null), r = a.useRef(null), [s, A] = a.useReducer(S, f), {
+    } = e, n = r.useRef(null), a = r.useRef(null), [s, A] = r.useReducer(S, f), {
         canSend: x,
         hint: v,
         error: b,
         success: y
     } = s;
-    return a.useEffect(() => {
+    return r.useEffect(() => {
         null != y && (o()(null != n.current, "Input is submitting when not mounted"), n.current.value = "", n.current.focus())
     }, [y, n]), (0, i.jsxs)("form", {
         onSubmit: e => {
             e.preventDefault(), o()(null != n.current, "Input is submitted when not mounted");
             let t = n.current.value.trim();
             !t.includes("#") && t.startsWith("@") && (t = t.substring(1));
-            let i = (0, _.Ty)(t);
+            let i = (0, h.Ty)(t);
             null != i ? A({
                 type: "ERROR",
                 text: i
@@ -80,7 +80,7 @@ function x(e) {
                 })
             }), e => A({
                 type: "ERROR",
-                text: (0, _.vU)(e.body?.code, t)
+                text: (0, h.vU)(e.body?.code, t)
             }))
         },
         autoComplete: "off",
@@ -96,10 +96,10 @@ function x(e) {
             })]
         }), (0, i.jsx)(c.vN3, {
             focusTarget: n,
-            ringTarget: r,
+            ringTarget: a,
             ringClassName: p.hN,
             children: (0, i.jsxs)("div", {
-                ref: r,
+                ref: a,
                 className: l()(p.fc, {
                     [p.kX]: y,
                     [p.z3]: b
@@ -114,10 +114,10 @@ function x(e) {
                         if (e.key !== m.N$.Enter && t.includes("#")) {
                             o()(null != n.current, "Input is handling keypress when not mounted");
                             let i = t.indexOf("#"),
-                                a = n.current.selectionStart,
-                                r = e.key === m.N$.Backspace || e.key === m.N$.ArrowRight || e.key === m.N$.ArrowLeft,
+                                r = n.current.selectionStart,
+                                a = e.key === m.N$.Backspace || e.key === m.N$.ArrowRight || e.key === m.N$.ArrowLeft,
                                 l = e.which >= 48 && e.which <= 57;
-                            null != a && a > i && /^(.+?#\d{4})$/.test(t) && !r ? e.preventDefault() : null == a || !(a > i) || l || r || e.preventDefault()
+                            null != r && r > i && /^(.+?#\d{4})$/.test(t) && !a ? e.preventDefault() : null == r || !(r > i) || l || a || e.preventDefault()
                         }
                     },
                     onChange: e => {
@@ -126,7 +126,7 @@ function x(e) {
                         });
                         let t = "",
                             [, n] = e.split("#");
-                        null != n && (t = e + h.RoK.slice(null != n ? n.length + 1 : 0)), A({
+                        null != n && (t = e + _.RoK.slice(null != n ? n.length + 1 : 0)), A({
                             type: "HINT",
                             text: t
                         })

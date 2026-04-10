@@ -11,16 +11,16 @@ var i = n(627968),
     c = n(397927),
     d = n(686956),
     u = n(976860),
-    _ = n(71393),
-    E = n(967198),
+    E = n(71393),
+    _ = n(967198),
     T = n(449054),
     A = n(652215),
     I = n(985018),
     N = n(236458),
     R = n(215433);
 let p = 21552 == n.j ? () => {
-    let t = (0, a.bG)([E.A], () => E.A.getGuildId(), []),
-        e = (0, a.bG)([_.A], () => _.A.getGuild(t), [t]),
+    let t = (0, a.bG)([_.A], () => _.A.getGuildId(), []),
+        e = (0, a.bG)([E.A], () => E.A.getGuild(t), [t]),
         [n, r] = l.useState(!1);
     if (null == e) return null;
     let p = async () => {

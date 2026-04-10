@@ -3,8 +3,8 @@ n.d(t, {
     A: () => I
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(681154),
+    r = n(64700),
+    a = n(681154),
     l = n(311907),
     s = n(47167),
     o = n(713654),
@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(698441),
     u = n(995273),
     A = n(734057),
-    _ = n(71393),
-    h = n(287809),
+    h = n(71393),
+    _ = n(287809),
     m = n(661191),
     g = n(652215),
     p = n(985018),
@@ -22,7 +22,7 @@ var i = n(627968),
 function I(e) {
     let {
         item: t
-    } = e, n = a.useMemo(() => {
+    } = e, n = r.useMemo(() => {
         switch (t.data.kind) {
             case "message":
             case "guildEvent":
@@ -33,7 +33,7 @@ function I(e) {
             default:
                 return "unknown"
         }
-    }, [t]), I = a.useMemo(() => {
+    }, [t]), I = r.useMemo(() => {
         switch (t.data.kind) {
             case "message":
                 return t.data.message.channel_id;
@@ -42,14 +42,14 @@ function I(e) {
             default:
                 return
         }
-    }, [t]), f = a.useMemo(() => {
+    }, [t]), f = r.useMemo(() => {
         if ("guildEvent" === t.data.kind) {
             let e = c.Ay.getGuildScheduledEvent(t.data.eventId);
             return e?.guild_id
         }
-    }, [t]), C = a.useMemo(() => {
+    }, [t]), C = r.useMemo(() => {
         if ("contentInventory" === t.data.kind) return t.data.content.author_id
-    }, [t]), T = a.useMemo(() => {
+    }, [t]), T = r.useMemo(() => {
         switch (t.data.kind) {
             case "message":
             case "forumThread":
@@ -59,7 +59,7 @@ function I(e) {
             default:
                 return t.timestamp
         }
-    }, [t]), N = (0, l.bG)([A.A], () => A.A.getChannel(I), [I]), S = (0, s.Ay)(N), x = N?.guild_id ?? f, v = (0, l.bG)([_.A], () => null != x ? _.A.getGuild(x) : null, [x]), b = (0, l.bG)([h.default], () => null != C ? h.default.getUser(C) : null, [C]);
+    }, [t]), N = (0, l.bG)([A.A], () => A.A.getChannel(I), [I]), S = (0, s.Ay)(N), x = N?.guild_id ?? f, v = (0, l.bG)([h.A], () => null != x ? h.A.getGuild(x) : null, [x]), b = (0, l.bG)([_.default], () => null != C ? _.default.getUser(C) : null, [C]);
     return "unknown" === n ? null : (0, i.jsx)("div", {
         className: E.kL,
         children: (0, i.jsxs)("div", {
@@ -113,10 +113,10 @@ function I(e) {
                                 return p.intl.string(p.t.bYNuVx);
                             case "contentInventory":
                                 switch (t.data.content.content_type) {
-                                    case r.ContentInventoryEntryType.CUSTOM_STATUS:
+                                    case a.ContentInventoryEntryType.CUSTOM_STATUS:
                                         return p.intl.string(p.t.fxOLPR);
-                                    case r.ContentInventoryEntryType.TOP_GAME:
-                                    case r.ContentInventoryEntryType.PLAYED_GAME:
+                                    case a.ContentInventoryEntryType.TOP_GAME:
+                                    case a.ContentInventoryEntryType.PLAYED_GAME:
                                         return p.intl.string(p.t.ktOTRQ);
                                     default:
                                         return `${t.data.content.content_type}`

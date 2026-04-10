@@ -1,22 +1,22 @@
 /** chunk id: 682174 params = (module,exports,require) **/
-n.d(e, {
-    A: () => r
+n.d(t, {
+    A: () => a
 });
 var i = n(627968);
 n(64700);
 var l = n(953727);
 
-function r(t) {
+function a(e) {
     let {
-        width: e = 20,
+        width: t = 20,
         height: n = 20,
-        className: r,
+        className: a,
         ...s
-    } = t;
+    } = e;
     return (0, i.jsx)("svg", {
-        width: e,
+        width: t,
         height: n,
-        className: r,
+        className: a,
         ...(0, l.A)(s),
         viewBox: "0 0 20 20",
         children: (0, i.jsxs)("g", {

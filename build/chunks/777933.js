@@ -1,108 +1,108 @@
 /** chunk id: 777933 params = (module,exports,require) **/
-n.d(e, {
-    A: () => _
+n.d(t, {
+    A: () => I
 }), n(323874), n(14289), n(35956), n(321073);
-var a = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    r = n(803316),
-    l = n(207133),
-    o = n(253932),
-    s = n(155078),
-    c = n(954571),
+var s = n(397927),
+    l = n(803316),
+    r = n(207133),
+    a = n(253932),
+    c = n(155078),
+    o = n(954571),
     d = n(307600),
-    p = n(723702),
-    u = n(837921),
-    g = n(179581),
-    h = n(652215),
-    y = n(985018);
-let E = /^(tel|sms|mailto):([^?;]+)/,
-    m = /\.(png|jpe?g|webp|avif|bmp|svg)(\?|$)/i,
-    T = /\.(png|jpe?g|webp|avif|bmp|svg|gif|mp4|webm|mov)(\?|$)/i,
-    A = /^\/emojis\/\d+\./;
+    u = n(723702),
+    E = n(837921),
+    A = n(179581),
+    m = n(652215),
+    p = n(985018);
+let f = /^(tel|sms|mailto):([^?;]+)/,
+    g = /\.(png|jpe?g|webp|avif|bmp|svg)(\?|$)/i,
+    D = /\.(png|jpe?g|webp|avif|bmp|svg|gif|mp4|webm|mov)(\?|$)/i,
+    _ = /^\/emojis\/\d+\./;
 
-function _(t, e, n, _) {
-    let f = (0, l.A)(n?.getChannelId()),
-        v = o.Q_.useSetting();
-    if (!p.isPlatformEmbedded || null == t || "" === t || !v && function(t) {
+function I(e, t, n, I) {
+    let h = (0, r.A)(n?.getChannelId()),
+        S = a.Q_.useSetting();
+    if (!u.isPlatformEmbedded || null == e || "" === e || !S && function(e) {
             try {
-                return A.test(new URL(t).pathname)
+                return _.test(new URL(e).pathname)
             } catch {
                 return !1
             }
-        }(t) || f || _?.shouldHideMediaOptions === !0 || !(0, r.fW)(t)) return null;
-    let C = (0, s.E)(t),
-        N = t => {
-            c.default.track(h.HAw.CONTEXT_MENU_LINK_COPIED, {
-                hostname: C,
-                ...(0, g.N)()
-            }), u.Ay.copy(t), (0, i.showToast)((0, i.createToast)(y.intl.string(y.t["L/PwZf"]), i.ToastType.SUCCESS))
+        }(e) || h || I?.shouldHideMediaOptions === !0 || !(0, l.fW)(e)) return null;
+    let N = (0, c.E)(e),
+        y = e => {
+            o.default.track(m.HAw.CONTEXT_MENU_LINK_COPIED, {
+                hostname: N,
+                ...(0, A.N)()
+            }), E.Ay.copy(e), (0, s.showToast)((0, s.createToast)(p.intl.string(p.t["L/PwZf"]), s.ToastType.SUCCESS))
         },
-        w = (n, a) => {
-            let i = !0 === a ? t.replace("tel:", "sms:") : t;
-            c.default.track(h.HAw.CONTEXT_MENU_LINK_OPENED, {
-                hostname: C,
-                ...(0, g.N)()
+        L = (n, i) => {
+            let s = !0 === i ? e.replace("tel:", "sms:") : e;
+            o.default.track(m.HAw.CONTEXT_MENU_LINK_OPENED, {
+                hostname: N,
+                ...(0, A.N)()
             }), (0, d.h)({
-                href: i,
-                trusted: (0, d.m)(t, e),
+                href: s,
+                trusted: (0, d.m)(e, t),
                 shouldConfirm: !0
             }, n)
         },
-        I = [],
-        b = t.match(E);
-    if (null != b) {
-        let t = y.intl.string("mailto" === b[1] ? y.t.ZYLVKo : y.t["3zozoR"]);
-        I.push((0, a.jsx)(i.Drp, {
+        O = [],
+        v = e.match(f);
+    if (null != v) {
+        let e = p.intl.string("mailto" === v[1] ? p.t.ZYLVKo : p.t["3zozoR"]);
+        O.push((0, i.jsx)(s.Drp, {
             id: "copy-native-contact",
-            label: t,
+            label: e,
             action: () => {
-                N(b[2])
+                y(v[2])
             }
-        }, "copy-native-contact")), "tel" === b[1] && I.push((0, a.jsx)(i.Drp, {
+        }, "copy-native-contact")), "tel" === v[1] && O.push((0, i.jsx)(s.Drp, {
             id: "native-send-sms",
-            label: y.intl.string(y.t["+wbjMW"]),
-            action: t => w(t, !0)
+            label: p.intl.string(p.t["+wbjMW"]),
+            action: e => L(e, !0)
         }, "native-send-sms"))
     }
-    let x = function(t) {
+    let M = function(e) {
             try {
-                let e = new URL(t);
-                return "cdn.discordapp.com" === e.hostname && m.test(e.pathname)
+                let t = new URL(e);
+                return "cdn.discordapp.com" === t.hostname && g.test(t.pathname)
             } catch {
                 return !1
             }
-        }(t),
-        D = !x && function(t) {
+        }(e),
+        C = !M && function(e) {
             try {
-                return T.test(new URL(t).pathname)
+                return D.test(new URL(e).pathname)
             } catch {
                 return !1
             }
-        }(t),
-        O = x ? y.t["8xHmxo"] : D ? y.t["92CPQ+"] : y.t.WqhZss,
-        S = x ? y.t.w8ldGK : D ? y.t.q5FbIB : y.t.wuRE8M;
-    return [(0, a.jsx)(i.Drp, {
+        }(e),
+        T = M ? p.t["8xHmxo"] : C ? p.t["92CPQ+"] : p.t.WqhZss,
+        b = M ? p.t.w8ldGK : C ? p.t.q5FbIB : p.t.wuRE8M;
+    return [(0, i.jsx)(s.Drp, {
         id: "copy-native-link",
-        label: y.intl.string(O),
+        label: p.intl.string(T),
         leadingAccessory: {
             type: "icon",
-            icon: i.qYV
+            icon: s.qYV
         },
         action: () => {
-            N(t)
+            y(e)
         }
-    }, "copy-native-link"), ...I, (0, a.jsx)(i.Drp, {
+    }, "copy-native-link"), ...O, (0, i.jsx)(s.Drp, {
         id: "open-native-link",
-        label: y.intl.string(S),
+        label: p.intl.string(b),
         leadingAccessory: {
             type: "icon",
-            icon: i.WxK
+            icon: s.WxK
         },
         trailingIndicator: {
             type: "icon",
-            icon: i.I9m
+            icon: s.I9m
         },
-        action: t => w(t)
+        action: e => L(e)
     }, "open-native-link")]
 }

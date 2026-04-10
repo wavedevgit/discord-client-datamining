@@ -5,17 +5,17 @@ n.d(t, {
     Hk: () => O
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(323889),
     o = n(311907),
     d = n(397927),
     c = n(975807),
     u = n(859703),
     A = n(341915),
-    _ = n(579473),
-    h = n(561844),
+    h = n(579473),
+    _ = n(561844),
     m = n(590202),
     g = n(415441),
     p = n(73473),
@@ -38,9 +38,9 @@ function b(e) {
     let {
         assetImage: t,
         assetVideo: n
-    } = e, r = a.useRef(null);
-    (0, E.A)(r, C.rE.QUEST_HOME_DESKTOP);
-    let s = a.useMemo(() => (null != n ? (0, _.WV)(n.url) : null) ?? t.url, [n, t]);
+    } = e, a = r.useRef(null);
+    (0, E.A)(a, C.rE.QUEST_HOME_DESKTOP);
+    let s = r.useMemo(() => (null != n ? (0, h.WV)(n.url) : null) ?? t.url, [n, t]);
     return null == n ? (0, i.jsxs)("div", {
         className: S.Tv,
         children: [(0, i.jsx)(v, {}), (0, i.jsx)("div", {
@@ -72,13 +72,13 @@ function b(e) {
             children: (0, i.jsx)(g.N, {
                 showImage: !1,
                 showVideo: !0,
-                assetRef: r,
+                assetRef: a,
                 imageAsset: {
                     alt: n.altText,
                     className: S.LY,
                     asset: {
                         url: s,
-                        mimetype: (0, _.vm)(s),
+                        mimetype: (0, h.vm)(s),
                         isAnimated: !1
                     },
                     assetId: s
@@ -88,7 +88,7 @@ function b(e) {
                     className: S.LY,
                     asset: {
                         url: n.url,
-                        mimetype: (0, _.vm)(n.url),
+                        mimetype: (0, h.vm)(n.url),
                         isAnimated: !0
                     },
                     assetId: n.url
@@ -102,13 +102,13 @@ function y(e) {
     let {
         config: t,
         onQuestCtaClick: n
-    } = e, r = (0, o.bG)([u.A], () => u.A.quests), {
+    } = e, a = (0, o.bG)([u.A], () => u.A.quests), {
         dismissQuestHomeHeroContent: l
     } = (0, f.I)();
-    a.useEffect(() => {
+    r.useEffect(() => {
         l(T.i.INDIRECT_ACTION)
     }, [l]);
-    let _ = a.useMemo(() => t.ctaQuests.find(e => r.has(e.questId)), [r, t.ctaQuests]);
+    let h = r.useMemo(() => t.ctaQuests.find(e => a.has(e.questId)), [a, t.ctaQuests]);
     return (0, i.jsx)(p.R, {
         adContentId: t.campaignId,
         adCreativeType: s.p.QUEST_HOME_HERO,
@@ -136,7 +136,7 @@ function y(e) {
             buttons: (0, i.jsxs)(d.ButtonGroup, {
                 children: [(0, i.jsx)(d.Button, {
                     onClick: () => {
-                        (0, c.A)(t.ctaSponsorUrl.url), (0, h.vK)({
+                        (0, c.A)(t.ctaSponsorUrl.url), (0, _.vK)({
                             adContentId: t.campaignId,
                             adCreativeType: s.p.QUEST_HOME_HERO,
                             questContent: A.uF.QUEST_HOME_HERO,
@@ -147,9 +147,9 @@ function y(e) {
                     size: "md",
                     text: t.ctaSponsorUrl.title,
                     variant: "overlay-primary"
-                }), null != _ && (0, i.jsx)(d.Button, {
+                }), null != h && (0, i.jsx)(d.Button, {
                     onClick: () => {
-                        n?.(_.questId), (0, h.vK)({
+                        n?.(h.questId), (0, _.vK)({
                             adContentId: t.campaignId,
                             adCreativeType: s.p.QUEST_HOME_HERO,
                             questContent: A.uF.QUEST_HOME_HERO,
@@ -158,7 +158,7 @@ function y(e) {
                         })
                     },
                     size: "md",
-                    text: _.title,
+                    text: h.title,
                     variant: "color-mix"
                 })]
             }),

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(989349),
-    a = n.n(l),
-    r = n(793574),
+    r = n.n(l),
+    a = n(793574),
     o = n(688810),
     d = n(323082),
     c = n(599941),
@@ -20,7 +20,7 @@ function g(e) {
         className: l
     } = e, {
         analyticsLocations: g
-    } = (0, o.Ay)(r.A.PENDING_PLAN_CHANGE_NOTICE), {
+    } = (0, o.Ay)(a.A.PENDING_PLAN_CHANGE_NOTICE), {
         resetRenewalMutation: _,
         submitting: x,
         error: A
@@ -58,7 +58,7 @@ function g(e) {
         }
     }, [n, h]);
     if (null == n || null == p || null == T) return null;
-    let f = a()(n.currentPeriodEnd).format("MMM DD, YYYY");
+    let f = r()(n.currentPeriodEnd).format("MMM DD, YYYY");
     return (0, i.jsx)(u.A, {
         message: m.intl.format(m.t.chw89X, {
             currentListing: p.name,

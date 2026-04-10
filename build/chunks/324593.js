@@ -1,10 +1,10 @@
 /** chunk id: 324593 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => l
 });
 var i = n(835245),
     s = n(187559);
-let r = new class {
+let l = new class {
     searchSessionId = null;
     searchSessionStartTime = null;
     isQueryEnteredTracked = !1;

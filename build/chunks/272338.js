@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(311907),
     l = n(419954),
-    a = n(961350),
-    r = n(670492),
+    r = n(961350),
+    a = n(670492),
     o = n(287809),
     d = n(780964),
     c = n(767669),
@@ -23,7 +23,7 @@ function _() {
 }
 let x = (0, l.E2)(d.X.ACCOUNT_AUTHENTICATOR_APP_SETTING, {
     useSearchTerms: function() {
-        let e = (0, s.bG)([a.default], () => a.default.hasTOTPEnabled()),
+        let e = (0, s.bG)([r.default], () => r.default.hasTOTPEnabled()),
             t = [g.intl.string(g.t.m0FidJ), g.intl.string(g.t.xZEzbu)];
         return e ? t.push(g.intl.string(g.t["D+aE7g"])) : t.push(g.intl.string(g.t.cDgKte)), t
     },
@@ -35,8 +35,8 @@ let x = (0, l.E2)(d.X.ACCOUNT_AUTHENTICATOR_APP_SETTING, {
     },
     Component: function() {
         let e = (0, s.bG)([o.default], () => o.default.getCurrentUser()),
-            t = (0, s.bG)([r.A], () => r.A.getBackupCodes()),
-            n = (0, s.bG)([a.default], () => a.default.hasTOTPEnabled());
+            t = (0, s.bG)([a.A], () => a.A.getBackupCodes()),
+            n = (0, s.bG)([r.default], () => r.default.hasTOTPEnabled());
         return null == e ? null : (0, i.jsx)(c.A, {
             backupCodes: t,
             currentUser: e,

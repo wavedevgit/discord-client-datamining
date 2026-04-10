@@ -1,4 +1,5 @@
 /** chunk id: 272435 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     $O: "messageWrapper__22cef",
     kL: "container__22cef",

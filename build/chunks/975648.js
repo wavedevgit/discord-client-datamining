@@ -5,17 +5,17 @@ n.d(t, {
 });
 var s = n(311907),
     l = n(73153);
-let a = !1;
-class r extends s.Ay.Store {
+let r = !1;
+class a extends s.Ay.Store {
     static displayName = "DataHarvestStore";
     get harvestType() {
         return i
     }
     get requestingHarvest() {
-        return a
+        return r
     }
 }
-let o = new r(l.h, {
+let o = new a(l.h, {
     CONNECTION_OPEN: function() {
         i = void 0
     },
@@ -23,15 +23,15 @@ let o = new r(l.h, {
         let {
             harvestType: t
         } = e;
-        a = !1, i = t
+        r = !1, i = t
     },
     LOAD_DATA_HARVEST_TYPE_START: function() {
-        a = !0
+        r = !0
     },
     LOAD_DATA_HARVEST_TYPE_FAILURE: function() {
-        a = !1
+        r = !1
     },
     LOGOUT: function() {
-        a = !1, i = null
+        r = !1, i = null
     }
 })

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(65412),
-    r = n(554146),
+var r = n(65412),
+    a = n(554146),
     l = n(287683),
     s = n(397927),
     o = n(212245),
@@ -14,8 +14,8 @@ var a = n(65412),
     c = n(793574),
     u = n(688810),
     A = n(826673),
-    _ = n(728458),
-    h = n(716600),
+    h = n(728458),
+    _ = n(716600),
     m = n(848295);
 
 function g(e) {
@@ -23,12 +23,12 @@ function g(e) {
         promotionId: t,
         content: n,
         isPreview: i
-    } = e, s = l.m.fromBinary((0, a.A)(n));
+    } = e, s = l.m.fromBinary((0, r.A)(n));
     if ("announcementModalVariant1" !== s.properties.oneofKind) return null;
     {
         let {
             isDismissed: e
-        } = (0, A.u$)(r.M.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, t);
+        } = (0, A.u$)(a.M.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, t);
         return !i && e ? null : (i && (s.properties.announcementModalVariant1.dismissKey = ""), s)
     }
 }
@@ -37,19 +37,19 @@ function p(e) {
     let {
         componentId: t,
         promotionId: n,
-        renderModalProps: a,
-        properties: r
+        renderModalProps: r,
+        properties: a
     } = e, {
         location: l
     } = (0, o.p)(), {
         analyticsLocations: A
     } = (0, u.Ay)(c.A.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL), g = (0, d.Ay)(), p = (0, s.qB1)(g);
-    if ("announcementModalVariant1" === r.properties.oneofKind) {
-        let e = (0, h.t)({
+    if ("announcementModalVariant1" === a.properties.oneofKind) {
+        let e = (0, _.t)({
             componentId: t,
             promotionId: n,
-            content: r.properties.announcementModalVariant1,
-            renderModalProps: a,
+            content: a.properties.announcementModalVariant1,
+            renderModalProps: r,
             analyticsLocations: A,
             analyticsLocation: l,
             isLightTheme: p
@@ -58,5 +58,5 @@ function p(e) {
             ...e
         })
     }
-    return _.A.captureMessage(`Property type ${r.properties.oneofKind} is not supported to render ServerDriveAnnouncementModal`), null
+    return h.A.captureMessage(`Property type ${a.properties.oneofKind} is not supported to render ServerDriveAnnouncementModal`), null
 }

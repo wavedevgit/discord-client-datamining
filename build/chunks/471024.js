@@ -1,7 +1,7 @@
 /** chunk id: 471024 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => m,
+    Ay: () => _,
     de: () => g,
     sI: () => f
 });
@@ -38,7 +38,7 @@ let h = e => e.stopPropagation(),
         className: c.g2,
         children: t
     });
-class _ extends s.PureComponent {
+class m extends s.PureComponent {
     static defaultProps = {
         maxBodyLines: void 0,
         expand: !1,
@@ -234,4 +234,4 @@ class _ extends s.PureComponent {
         })
     }
 }
-let m = _
+let _ = m

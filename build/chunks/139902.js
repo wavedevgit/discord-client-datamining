@@ -1,24 +1,24 @@
 /** chunk id: 139902 params = (module,exports,require) **/
-n.d(e, {
-    A: () => a
+n.d(t, {
+    A: () => r
 });
 var i = n(573648),
     l = n(855511),
-    r = n(652215),
+    a = n(652215),
     s = n(985018);
 
-function a(t) {
-    let e = (0, l.A)(t) ?? "";
-    switch (e) {
-        case r.yTV.PS4:
-        case r.yTV.PS5:
+function r(e) {
+    let t = (0, l.A)(e) ?? "";
+    switch (t) {
+        case a.yTV.PS4:
+        case a.yTV.PS5:
             return s.intl.formatToPlainString(s.t.A17aM8, {
-                platform: e.toUpperCase()
+                platform: t.toUpperCase()
             });
-        case r.yTV.XBOX:
-        case r.yTV.SAMSUNG:
+        case a.yTV.XBOX:
+        case a.yTV.SAMSUNG:
             return s.intl.formatToPlainString(s.t.A17aM8, {
-                platform: i.A.get(e).name
+                platform: i.A.get(t).name
             });
         default:
             return s.intl.string(s.t["2TbM/G"])

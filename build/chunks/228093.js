@@ -1,7 +1,7 @@
 /** chunk id: 228093 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => f
 }), n(321073);
 var r = n(627968);
 n(64700);
@@ -14,46 +14,46 @@ var i = n(503698),
     c = n(521502),
     d = n(915089),
     h = n(206845),
-    m = n(837921),
-    p = n(985018),
-    f = n(738532);
+    p = n(837921),
+    _ = n(985018),
+    m = n(738532);
 
-function _() {
+function f() {
     let e = (0, d.GV)(),
         t = window.GLOBAL_ENV.RELEASE_CHANNEL,
-        n = "526939",
-        i = "9cc15038e1fdce81f16234b57228be2182d163c2".substring(0, 7),
+        n = "526986",
+        i = "2a14e807ff4a3424849a0416c6b5c307b9381f0a".substring(0, 7),
         s = u.A?.app.getVersion(),
-        _ = u.A?.app.getBuildNumber(),
+        f = u.A?.app.getBuildNumber(),
         g = u.A?.app.getAppArch(),
         y = c.A.getCurrentBuildOverride().overrides?.discord_web,
         v = function() {
             let e = l()?.os?.toString();
             if (null == e || null == u.A) return null;
             let t = u.A.os.release,
-                [n, r, i] = m.Ay.parsedOSRelease;
+                [n, r, i] = p.Ay.parsedOSRelease;
             return e.includes("Windows 10") && void 0 !== i && i >= 22e3 && (e = e.replace("Windows 10", "Windows 11")), e.includes("OS X 10.15.7") && void 0 !== n && n >= 20 && (e = `macOS ${n>=25?n+1:n-9}`), `${e} (${t})`
         }(),
-        x = [t, n, `(${i})`];
-    return null != s && (x.push(`Host ${s}`), null != g && x.push(g.toLowerCase()), null != _ && x.push(`(${_})`)), x.push(`Build Override: ${null!=y?y.id:"N/A"}`), null != v && x.push(v), (0, r.jsxs)(r.Fragment, {
+        S = [t, n, `(${i})`];
+    return null != s && (S.push(`Host ${s}`), null != g && S.push(g.toLowerCase()), null != f && S.push(`(${f})`)), S.push(`Build Override: ${null!=y?y.id:"N/A"}`), null != v && S.push(v), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(h.A, {
-            copyValue: x.join(" "),
-            text: p.intl.string(p.t["9Al4Qd"]),
+            copyValue: S.join(" "),
+            text: _.intl.string(_.t["9Al4Qd"]),
             "aria-label": !1,
             dataMeticulousIgnore: "true",
             children: l => (0, r.jsxs)(o.DUT, {
                 ...l,
                 "aria-describedby": e,
-                className: a()(f.vk, f.oE),
+                className: a()(m.vk, m.oE),
                 children: [(0, r.jsxs)("div", {
-                    className: f.Cr,
+                    className: m.Cr,
                     "data-mtctest-ignore": "true",
                     children: [(0, r.jsxs)(o.Text, {
                         tag: "span",
                         variant: "text-xxs/normal",
                         color: "text-muted",
                         children: [t, " ", n, " ", (0, r.jsxs)("span", {
-                            className: f.Pc,
+                            className: m.Pc,
                             children: ["(", i, ")"]
                         })]
                     }), null != s && (0, r.jsxs)(o.Text, {
@@ -61,10 +61,10 @@ function _() {
                         variant: "text-xxs/normal",
                         color: "text-muted",
                         children: [s, null != g && (0, r.jsxs)("span", {
-                            className: f.GI,
+                            className: m.GI,
                             children: [" ", g.toLowerCase()]
-                        }), null != _ && (0, r.jsxs)("span", {
-                            children: [" (", _, ")"]
+                        }), null != f && (0, r.jsxs)("span", {
+                            children: [" (", f, ")"]
                         })]
                     })]
                 }), null != y && (0, r.jsx)(o.Text, {
@@ -72,14 +72,14 @@ function _() {
                     variant: "text-xxs/normal",
                     color: "text-muted",
                     children: (0, r.jsxs)("span", {
-                        className: f.Pc,
+                        className: m.Pc,
                         children: ["Build Override: ", y.id]
                     })
                 })]
             })
         }), (0, r.jsx)(o.AC4, {
             id: e,
-            children: p.intl.string(p.t["9Al4Qd"])
+            children: _.intl.string(_.t["9Al4Qd"])
         })]
     })
 }

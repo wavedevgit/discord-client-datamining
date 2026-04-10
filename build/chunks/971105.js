@@ -5,9 +5,9 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(284009),
-    o = n.n(r),
+    r = n.n(l),
+    a = n(284009),
+    o = n.n(a),
     d = n(837381),
     c = n(311907),
     u = n(397927),
@@ -35,7 +35,7 @@ function O(e) {
         payments: t,
         locale: n,
         compactMode: l,
-        numPages: r
+        numPages: a
     } = e, o = s.useRef(null), [c, m] = s.useState(0), [g, _] = s.useState(null), h = t.slice(10 * c, (c + 1) * 10);
     s.useEffect(() => {
         o.current?.scrollTo({
@@ -45,8 +45,8 @@ function O(e) {
     let T = s.useCallback(e => {
             m(e);
             let n = t[t.length - 1].id;
-            e >= r - 2 && g !== n && ((0, A.CK)(10, n), _(n))
-        }, [t, r, g]),
+            e >= a - 2 && g !== n && ((0, A.CK)(10, n), _(n))
+        }, [t, a, g]),
         f = (0, x.A)("billing-history", o);
     return (0, i.jsx)(d.hD, {
         navigator: f,
@@ -60,7 +60,7 @@ function O(e) {
                     className: j.GD,
                     currentPageIndex: c,
                     onChangePage: T,
-                    numPages: r,
+                    numPages: a,
                     showPageCount: !1,
                     ref: t,
                     ...s,
@@ -69,7 +69,7 @@ function O(e) {
                         ref: o,
                         overflow: "auto",
                         children: h.map((e, t) => (0, i.jsx)(b.A, {
-                            className: a()(j.Nj, j.Bd),
+                            className: r()(j.Nj, j.Bd),
                             payment: e,
                             locale: n,
                             compactMode: l
@@ -120,9 +120,9 @@ class R extends s.PureComponent {
         return 0 !== t.length || l ? (0, i.jsxs)("div", {
             className: j.GD,
             children: [null != n && l ? this.renderPremiumExternalSubscription(n) : null, t.length > 0 ? (0, i.jsxs)("div", {
-                className: a()(j.PQ, j.GD),
+                className: r()(j.PQ, j.GD),
                 children: [e ? null : (0, i.jsx)("div", {
-                    className: a()(j.Nj, j.Bd),
+                    className: r()(j.Nj, j.Bd),
                     children: (0, i.jsxs)(h.A, {
                         className: j.Yi,
                         children: [(0, i.jsx)("div", {
@@ -162,20 +162,20 @@ function P(e) {
             } = e;
             return t?.items[0].planId
         })), [t]),
-        a = s.useMemo(() => new Set(t.filter(L).map(e => {
+        r = s.useMemo(() => new Set(t.filter(L).map(e => {
             let {
                 skuId: t
             } = e;
             return t
         })), [t]),
-        r = (0, c.yK)([f.A], () => f.A.getPlanIdsForSkus(Array.from(a))),
-        o = s.useCallback(() => r.length === l.size, [r, l]),
+        a = (0, c.yK)([f.A], () => f.A.getPlanIdsForSkus(Array.from(r))),
+        o = s.useCallback(() => a.length === l.size, [a, l]),
         d = s.useMemo(() => t.filter(e => e.currency !== C.Yri.DISCORD_ORB), [t]);
     return s.useEffect(() => {
         o() || m.h.wait(() => {
-            a.forEach(e => (0, _.ur)(e, void 0, void 0, !0, void 0))
+            r.forEach(e => (0, _.ur)(e, void 0, void 0, !0, void 0))
         })
-    }, [o, a]), (0, i.jsx)(R, {
+    }, [o, r]), (0, i.jsx)(R, {
         ...e,
         payments: d,
         subscription: n

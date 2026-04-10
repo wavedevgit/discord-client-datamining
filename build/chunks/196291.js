@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(397927),
-    r = n(793574),
+    r = n(397927),
+    a = n(793574),
     o = n(688810),
     d = n(422936),
     c = n(234419),
@@ -65,7 +65,7 @@ function k(e) {
     let {
         analyticsLocations: W,
         sourceAnalyticsLocations: Z
-    } = (0, o.Ay)(r.A.USER_SETTINGS_TRY_OUT_PREMIUM), q = e => {
+    } = (0, o.Ay)(a.A.USER_SETTINGS_TRY_OUT_PREMIUM), q = e => {
         e && (z?.startsWith("https:") === !0 ? fetch(z).then(e => e.blob()).then(e => (0, E.We)(e)).then(e => {
             (0, T.p)({
                 avatar: H,
@@ -112,7 +112,7 @@ function k(e) {
                 stickyPreview: !1,
                 layoutClassName: M.th,
                 profilePreviewTitle: (0, i.jsxs)(i.Fragment, {
-                    children: [(0, i.jsx)(a.tvc, {
+                    children: [(0, i.jsx)(r.tvc, {
                         size: "md",
                         color: "currentColor",
                         className: M.PC
@@ -129,10 +129,10 @@ function k(e) {
                 children: (0, i.jsxs)("div", {
                     className: M.EN,
                     children: [(0, i.jsxs)("div", {
-                        children: [(0, i.jsx)(a.Heading, {
+                        children: [(0, i.jsx)(r.Heading, {
                             variant: "heading-xl/extrabold",
                             children: G.intl.string(G.t["2zGdAW"])
-                        }), (0, i.jsx)(a.Text, {
+                        }), (0, i.jsx)(r.Text, {
                             className: M.h_,
                             variant: "text-sm/normal",
                             children: G.intl.string(G.t.xeEC20)
@@ -164,7 +164,7 @@ function k(e) {
                     }), (0, i.jsx)(I.A, {
                         user: t,
                         className: M.fz
-                    }), !Q && (0, i.jsx)(a.Text, {
+                    }), !Q && (0, i.jsx)(r.Text, {
                         variant: "text-sm/normal",
                         children: G.intl.string(G.t["smo74/"])
                     })]

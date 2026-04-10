@@ -1,43 +1,43 @@
 /** chunk id: 302223 params = (module,exports,require) **/
-r.d(t, {
-    A: () => u
+n.d(t, {
+    A: () => o
 });
-var n = r(627968);
-r(64700);
-var a = r(503698),
-    c = r.n(a),
-    l = r(51183),
-    s = r(890920);
+var i = n(627968);
+n(64700);
+var l = n(503698),
+    r = n.n(l),
+    s = n(51183),
+    a = n(890920);
 
-function u(e) {
+function o(e) {
     let {
         activity: t,
-        className: r,
-        emojiClassName: a,
-        textClassName: u,
-        placeholderText: i,
-        soloEmojiClassName: o,
-        animate: d = !0,
-        hideTooltip: m = !1,
-        hideEmoji: f = !1,
-        children: x
+        className: n,
+        emojiClassName: l,
+        textClassName: o,
+        placeholderText: u,
+        soloEmojiClassName: d,
+        animate: c = !0,
+        hideTooltip: h = !1,
+        hideEmoji: g = !1,
+        children: m
     } = e;
     if (null == t) return null;
     let {
-        emoji: h
-    } = t, g = null != t.state && "" !== t.state ? t.state : i;
-    return (0, n.jsxs)("div", {
-        className: c()(s.__invalid_container, r),
-        children: [f || null == h ? null : (0, n.jsx)(l.A, {
-            emoji: h,
-            className: c()(s.Z, a, null != o ? {
-                [o]: null == g || "" === g
+        emoji: f
+    } = t, A = null != t.state && "" !== t.state ? t.state : u;
+    return (0, i.jsxs)("div", {
+        className: r()(a.__invalid_container, n),
+        children: [g || null == f ? null : (0, i.jsx)(s.A, {
+            emoji: f,
+            className: r()(a.Z, l, null != d ? {
+                [d]: null == A || "" === A
             } : null),
-            animate: d,
-            hideTooltip: m
-        }), null != g && g.length > 0 ? (0, n.jsx)("span", {
-            className: u,
-            children: g
-        }) : null, x]
+            animate: c,
+            hideTooltip: h
+        }), null != A && A.length > 0 ? (0, i.jsx)("span", {
+            className: o,
+            children: A
+        }) : null, m]
     })
 }

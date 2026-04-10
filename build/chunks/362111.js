@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(284009),
     l = n.n(s),
-    a = n(158954),
-    r = n(156312),
+    r = n(158954),
+    a = n(156312),
     o = n(166532),
     d = n(480800),
     c = n(985018),
@@ -18,7 +18,7 @@ function m(e) {
         transitionState: t,
         analyticsLocation: n,
         onClose: s,
-        onAddPaymentSource: r,
+        onAddPaymentSource: a,
         toastContent: m,
         initialStep: g = o.pn.PAYMENT_TYPE,
         overwriteSubscriptionPaymentSource: _ = !1
@@ -31,10 +31,10 @@ function m(e) {
             s()
         },
         onComplete: (e, t) => {
-            l()(null != t, "paymentSource missing"), r?.(t), s()
+            l()(null != t, "paymentSource missing"), a?.(t), s()
         },
         onStepChange: () => {},
-        header: (0, i.jsx)(a.rQ0, {
+        header: (0, i.jsx)(r.rQ0, {
             title: c.intl.string(c.t.eQ2bLp)
         }),
         analyticsLocation: n,
@@ -42,7 +42,7 @@ function m(e) {
         toastContent: m,
         overwriteSubscriptionPaymentSource: _
     });
-    return (0, i.jsx)(a.dWK, {
+    return (0, i.jsx)(r.dWK, {
         transitionState: t,
         onClose: s,
         size: "sm",
@@ -58,7 +58,7 @@ function m(e) {
 }
 
 function g(e) {
-    return (0, i.jsx)(r.PaymentContextProvider, {
+    return (0, i.jsx)(a.PaymentContextProvider, {
         activeSubscription: null,
         stepConfigs: [],
         skuIDs: [],

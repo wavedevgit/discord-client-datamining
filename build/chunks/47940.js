@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(311907),
     s = n(684013),
     l = n(93465),
-    a = n(589051),
-    r = n(592598),
+    r = n(589051),
+    a = n(592598),
     o = n(419954),
     d = n(780964),
     c = n(985018);
@@ -43,7 +43,7 @@ let u = [{
     usePredicate: () => {
         let {
             showNowPlayingForDifferentGames: e
-        } = (0, a.M8)("OverlayV3NowPlayingDifferentGamesNotificationSetting"), t = (0, i.bG)([r.A], () => r.A.isNotificationDisabledBySetting(l.M.NOW_PLAYING));
+        } = (0, r.M8)("OverlayV3NowPlayingDifferentGamesNotificationSetting"), t = (0, i.bG)([a.A], () => a.A.isNotificationDisabledBySetting(l.M.NOW_PLAYING));
         return !!e && !t
     }
 }];
@@ -52,7 +52,7 @@ function m(e) {
     return (0, o.zD)(e.key, {
         useTitle: () => c.intl.string(e.title),
         useSubtitle: () => c.intl.string(e.description),
-        useValue: () => !(0, i.bG)([r.A], () => r.A.getDisabledNotifications().has(e.disabledSetting)),
+        useValue: () => !(0, i.bG)([a.A], () => a.A.getDisabledNotifications().has(e.disabledSetting)),
         setValue: t => {
             s.A.setNotificationDisabledSetting(e.disabledSetting, !t)
         },

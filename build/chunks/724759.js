@@ -1,12 +1,12 @@
 /** chunk id: 724759 params = (module,exports,require) **/
 n.d(t, {
     BF: () => r,
-    HW: () => s,
-    zK: () => a
+    HW: () => a,
+    zK: () => s
 });
 var i, l = n(945810),
-    s = ((i = {})[i.NONE = 0] = "NONE", i[i.OPEN_GAME_PROFILE = 1] = "OPEN_GAME_PROFILE", i[i.OPEN_APPLICATION_WIDGET = 2] = "OPEN_APPLICATION_WIDGET", i);
-let a = (0, l.mj)({
+    a = ((i = {})[i.NONE = 0] = "NONE", i[i.OPEN_GAME_PROFILE = 1] = "OPEN_GAME_PROFILE", i[i.OPEN_APPLICATION_WIDGET = 2] = "OPEN_APPLICATION_WIDGET", i);
+let s = (0, l.mj)({
     name: "2026-04-social-layer-storefront-vc-gifting-panel",
     kind: "user",
     defaultConfig: {
@@ -33,7 +33,7 @@ function r(e) {
     let {
         location: t
     } = e;
-    return a.useConfig({
+    return s.useConfig({
         location: t
     }).enabled
 }

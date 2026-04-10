@@ -4,8 +4,8 @@ n.d(t, {
 }), n(323874), n(14289), n(35956);
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    r = n(851907),
+var r = n(397927),
+    a = n(851907),
     l = n(587895),
     s = n(200330),
     o = n(321987),
@@ -13,17 +13,17 @@ var a = n(397927),
     c = n(723702),
     u = n(837921),
     A = n(636401),
-    _ = n(990007),
-    h = n(546983),
+    h = n(990007),
+    _ = n(546983),
     m = n(652215),
     g = n(985018);
-let p = (0, _.A)(e => {
+let p = (0, h.A)(e => {
     let {
         clientId: t,
         authorizations: n,
         scopes: c,
         parsedPermissions: u,
-        responseType: _,
+        responseType: h,
         redirectUri: p,
         codeChallenge: E,
         codeChallengeMethod: I,
@@ -38,32 +38,32 @@ let p = (0, _.A)(e => {
         signal: y
     } = e, O = `OAuth2Authorize_${t}_${C}_${T}`, L = null != v ? n?.get(v) : void 0, R = L?.application ?? l.A.getApplication(t);
     return new Promise((e, l) => {
-        let L = (0, h.d5)(b),
-            P = a.SYi;
-        null != R && null != (0, r.Ay)({
+        let L = (0, _.d5)(b),
+            P = r.SYi;
+        null != R && null != (0, a.Ay)({
             application: R,
             channelId: T
-        }) ? P = a.KX8 : L.context === m.BRT.POPOUT && (P = a.KX8);
+        }) ? P = r.KX8 : L.context === m.BRT.POPOUT && (P = r.KX8);
         let D = !1,
             j = n => {
                 let {
-                    clientId: r,
+                    clientId: a,
                     location: s
                 } = n;
-                if (null == r || r === t) {
+                if (null == a || a === t) {
                     if (D = !0, null == s) {
                         l(new A.A({
                             errorCode: m.Lw6.OAUTH2_ERROR
                         }, "OAuth2 Error: No location provided")), L.lock();
                         return
-                    }(e(s), null == p || null == R) ? L.lock(): null == new URL(s).searchParams.get("error") ? (0, a.qfG)(e => (0, i.jsx)(d.Sm, {
+                    }(e(s), null == p || null == R) ? L.lock(): null == new URL(s).searchParams.get("error") ? (0, r.qfG)(e => (0, i.jsx)(d.Sm, {
                         application: R,
                         ...e
                     }), {
                         onCloseCallback: () => {
                             L.lock()
                         }
-                    }, P) : (0, a.qfG)(e => (0, i.jsx)(d.xb, {
+                    }, P) : (0, r.qfG)(e => (0, i.jsx)(d.xb, {
                         ...e
                     }), {
                         onCloseCallback: () => {
@@ -76,7 +76,7 @@ let p = (0, _.A)(e => {
                 cleanup: M
             } = function(e, t) {
                 function n() {
-                    (0, a.OoC)(e) && (0, a.qfG)(e => (0, i.jsx)(o.f, {
+                    (0, r.OoC)(e) && (0, r.qfG)(e => (0, i.jsx)(o.f, {
                         ...e,
                         title: g.intl.string(g.t.j2d6Km),
                         subtitle: g.intl.string(g.t["4LKmN5"]),
@@ -92,14 +92,14 @@ let p = (0, _.A)(e => {
                     }
                 }
             }(O, y);
-        (0, a.qfG)(e => (0, i.jsx)(s.OAuth2AuthorizeModal, {
+        (0, r.qfG)(e => (0, i.jsx)(s.OAuth2AuthorizeModal, {
             ...e,
             authorizations: n,
             clientId: t,
             scopes: c ?? [],
             disclosures: x ?? [],
             callback: j,
-            responseType: _,
+            responseType: h,
             redirectUri: p,
             codeChallenge: E,
             codeChallengeMethod: I,
@@ -121,8 +121,8 @@ let p = (0, _.A)(e => {
         }, P)
     })
 }, function(e, t, n) {
-    if ((0, h.kS)(n) || !c.isPlatformEmbedded) return;
-    let i = (0, r.Ay)({
+    if ((0, _.kS)(n) || !c.isPlatformEmbedded) return;
+    let i = (0, a.Ay)({
         application: e,
         channelId: t
     });

@@ -1,47 +1,47 @@
 /** chunk id: 802790 params = (module,exports,require) **/
-t.d(n, {
-    A: () => p
+n.d(t, {
+    A: () => u
 });
-var l = t(627968);
-t(64700);
-var i = t(311907),
-    r = t(397927),
-    s = t(775602),
-    a = t(235986),
-    o = t(899343),
-    c = t(796012),
-    u = t(654771);
+var i = n(627968);
+n(64700);
+var s = n(311907),
+    l = n(397927),
+    r = n(775602),
+    a = n(235986),
+    o = n(899343),
+    d = n(796012),
+    c = n(654771);
 
-function p(e) {
+function u(e) {
     let {
-        purchaseState: n,
-        currentStep: t,
-        onClose: p
-    } = e, [d, _] = (0, o.f)({
-        purchaseState: n,
-        currentStep: t,
-        initialScene: c.V1.Scenes.ENTRY,
-        purchaseScene: c.V1.Scenes.STARS,
-        errorScene: c.V1.Scenes.ERROR,
-        successScene: c.V1.Scenes.SUCCESS
-    }), m = (0, i.bG)([s.A], () => s.A.useReducedMotion);
-    return (0, l.jsxs)(r.rQ0, {
+        purchaseState: t,
+        currentStep: n,
+        onClose: u
+    } = e, [m, g] = (0, o.f)({
+        purchaseState: t,
+        currentStep: n,
+        initialScene: d.V1.Scenes.ENTRY,
+        purchaseScene: d.V1.Scenes.STARS,
+        errorScene: d.V1.Scenes.ERROR,
+        successScene: d.V1.Scenes.SUCCESS
+    }), _ = (0, s.bG)([r.A], () => r.A.useReducedMotion);
+    return (0, i.jsxs)(l.rQ0, {
         "data-migration-pending": !0,
         align: a.A.Align.START,
-        className: u.wx,
+        className: c.wx,
         separator: !1,
-        children: [(0, l.jsx)(c.V1, {
-            className: u.lY,
-            nextScene: d,
-            onScenePlay: e => _(c.V1.getNextScene(e)),
+        children: [(0, i.jsx)(d.V1, {
+            className: c.lY,
+            nextScene: m,
+            onScenePlay: e => g(d.V1.getNextScene(e)),
             pauseWhileUnfocused: !1,
-            pause: m
-        }), (0, l.jsx)("div", {
-            className: u.qd
-        }), (0, l.jsx)(r.s_y, {
+            pause: _
+        }), (0, i.jsx)("div", {
+            className: c.qd
+        }), (0, i.jsx)(l.s_y, {
             "data-migration-pending": !0,
-            onClick: p,
-            className: u.b
+            onClick: u,
+            className: c.b
         })]
     })
 }

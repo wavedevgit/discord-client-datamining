@@ -1,37 +1,37 @@
 /** chunk id: 676923 params = (module,exports,require) **/
 n.d(t, {
-    S: () => o
+    S: () => u
 });
-var l = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    r = n.n(i),
+var l = n(503698),
+    r = n.n(l),
     s = n(435371),
     a = n(397927),
-    u = n(361396);
+    o = n(361396);
 
-function o(e) {
+function u(e) {
     let {
         tooltipText: t,
         showTooltip: n = !0,
-        className: i,
-        ariaLabel: o,
+        className: l,
+        ariaLabel: u,
         onClick: d,
         onMouseEnter: c,
         onMouseLeave: h,
         children: g
-    } = e, I = o ?? t, A = (0, l.jsx)(a.DUT, {
-        className: r()(u.k, i),
-        "aria-label": I,
+    } = e, m = u ?? t, f = (0, i.jsx)(a.DUT, {
+        className: r()(o.k, l),
+        "aria-label": m,
         onClick: d,
         onMouseEnter: c,
         onMouseLeave: h,
         role: "button",
         children: g
     });
-    return n ? (0, l.jsx)(s.m_, {
+    return n ? (0, i.jsx)(s.m_, {
         text: t,
-        "aria-label": I,
-        children: A
-    }) : A
+        "aria-label": m,
+        children: f
+    }) : f
 }

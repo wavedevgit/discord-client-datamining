@@ -29,8 +29,8 @@ var i = n(627968),
     I = n(462463),
     T = n(780964),
     y = n(358776),
-    S = n(858897),
-    P = n(166403),
+    P = n(858897),
+    S = n(166403),
     M = n(975571),
     O = n(398523),
     D = n(881373),
@@ -49,8 +49,8 @@ var i = n(627968),
     X = n(755157),
     K = n(985018),
     q = n(547807),
-    Q = n(998663),
-    Z = n(817577),
+    Z = n(998663),
+    Q = n(817577),
     $ = n(419455),
     J = n(716925),
     ee = n(288604),
@@ -68,25 +68,25 @@ function el() {
         location: "useWhatsNewPerkCards"
     }).functionalityEnabled, ed = O.A.useConfig({
         location: "PremiumWhatsNewSection"
-    }).enabled, eu = (0, s.bG)([P.A], () => P.A.getPremiumTypeSubscription()), e_ = eu?.hasActiveTrial ?? !1, em = (0, s.bG)([b.A], () => [...b.A.quests.values()].find(e => e.config.features.includes(W.Li.NITRO_CONTROL_CTA)) ?? null), ep = (0, I.A)({
+    }).enabled, eu = (0, s.bG)([S.A], () => S.A.getPremiumTypeSubscription()), e_ = eu?.hasActiveTrial ?? !1, em = (0, s.bG)([b.A], () => [...b.A.quests.values()].find(e => e.config.features.includes(W.Li.NITRO_CONTROL_CTA)) ?? null), ep = (0, I.A)({
         analyticsLocations: e
     }), {
         launchInGameActivity: eg
     } = (0, R.zW)(em), eA = (0, r.useCallback)(() => {
-        (0, S.openUserSettings)(T.X.PROFILE_PANEL, {
+        (0, P.openUserSettings)(T.X.PROFILE_PANEL, {
             analyticsLocations: e
         }, () => (0, A.L)({
             analyticsLocations: e
         }))
     }, [e]), ex = (0, r.useCallback)(() => {
-        (0, S.openUserSettings)(T.X.PROFILE_PANEL, {
+        (0, P.openUserSettings)(T.X.PROFILE_PANEL, {
             analyticsLocations: e
         }, () => (0, p.L)({
             analyticsLocations: e
         }))
     }, [e]), eh = (0, r.useCallback)(() => {
         let e = (0, y.Ci)("openCustomAppSettings") ? T.X.DISPLAY_IN_APP_ICON_CATEGORY : T.X.APPEARANCE_IN_APP_ICON;
-        (0, S.openUserSettings)(e)
+        (0, P.openUserSettings)(e)
     }, []), ef = (0, r.useCallback)(() => {
         null != em && (em.userStatus?.enrolledAt == null ? (0, f.Oy)(em.id, {
             questContent: N.uF.NITRO_HOME_PERK_CARD,
@@ -188,7 +188,7 @@ function el() {
                     })]
                 }),
                 pillText: K.intl.string(K.t.oW0eUd),
-                primaryAsset: Z,
+                primaryAsset: Q,
                 ctaIcon: c.tvc,
                 ctaIconPosition: "start",
                 ctaText: K.intl.string(K.t.IJI7yk),
@@ -200,7 +200,7 @@ function el() {
                 subscriptionRequired: !0,
                 pillText: K.intl.string(K.t.oW0eUd),
                 caption: (0, i.jsx)("img", {
-                    src: Q,
+                    src: Z,
                     alt: "SteelSeries"
                 }),
                 backgroundAssetUrl: ei.A,

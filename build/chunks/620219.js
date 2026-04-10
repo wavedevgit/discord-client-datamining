@@ -5,9 +5,9 @@ n.d(t, {
 var i = n(419954),
     s = n(780964),
     l = n(612698),
-    a = n(569936),
-    r = n(985018);
+    r = n(569936),
+    a = n(985018);
 let o = (0, i.zZ)(s.X.STREAMING_CATEGORY, {
-    useTitle: () => r.intl.string(r.t.KDdjou),
-    buildLayout: () => [l.H, a.C]
+    useTitle: () => a.intl.string(a.t.KDdjou),
+    buildLayout: () => [l.H, r.C]
 })

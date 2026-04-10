@@ -1,11 +1,11 @@
 /** chunk id: 454148 params = (module,exports,require) **/
 n.d(t, {
-    L: () => x
+    L: () => C
 });
 var i = n(627968),
     l = n(64700),
-    s = n(731738),
-    a = n(397927),
+    a = n(731738),
+    s = n(397927),
     r = n(832712),
     o = n(831062),
     c = n(662502),
@@ -16,41 +16,41 @@ var i = n(627968),
     A = n(665909),
     g = n(576045),
     p = n(477427),
-    f = n(56462),
-    _ = n(652215),
+    _ = n(56462),
+    f = n(652215),
     E = n(985018);
 
-function x(e) {
+function C(e) {
     let {
         channelId: t,
-        warningId: x,
-        senderId: C
-    } = e, S = (0, f.CW)(), I = l.useCallback(() => {
-        (0, h.xi)(t, [x])
-    }, [t, x]), T = e => {
+        warningId: C,
+        senderId: x
+    } = e, S = (0, _.CW)(), I = l.useCallback(() => {
+        (0, h.xi)(t, [C])
+    }, [t, C]), T = e => {
         r.A.updateChannelOverrideSettings(null, t, {
             muted: !0
-        }, p.fd.Muted), c.A.showMuteSuccessToast(C, t), (0, A._$)({
+        }, p.fd.Muted), c.A.showMuteSuccessToast(x, t), (0, A._$)({
             channelId: t,
-            warningId: x,
-            senderId: C,
+            warningId: C,
+            senderId: x,
             warningType: m._j.LIKELY_ATO,
             cta: e
         }), I()
     };
     return l.useEffect(() => {
-        (0, A.mO)(_.HAw.SAFETY_WARNING_VIEWED, {
+        (0, A.mO)(f.HAw.SAFETY_WARNING_VIEWED, {
             channelId: t,
-            warningId: x,
-            senderId: C,
+            warningId: C,
+            senderId: x,
             warningType: m._j.LIKELY_ATO
         }), o.A.increment({
-            name: s.K.SAFETY_WARNING_VIEW
+            name: a.K.SAFETY_WARNING_VIEW
         })
-    }, [t, x, C]), (0, i.jsx)(g.N, {
+    }, [t, C, x]), (0, i.jsx)(g.N, {
         channelId: t,
-        warningId: x,
-        senderId: C,
+        warningId: C,
+        senderId: x,
         warningType: m._j.LIKELY_ATO,
         header: E.intl.string(E.t.R8UsiI),
         description: E.intl.string(E.t.lI8nQl),
@@ -59,21 +59,21 @@ function x(e) {
             text: E.intl.string(E.t.tC1pvL),
             variant: "primary",
             onClick: () => {
-                (0, a.mMO)(async () => {
+                (0, s.mMO)(async () => {
                     let {
                         default: e
                     } = await n.e("8546").then(n.bind(n, 63865));
                     return n => {
                         let {
                             transitionState: l,
-                            onClose: s
+                            onClose: a
                         } = n;
                         return (0, i.jsx)(e, {
                             transitionState: l,
-                            onClose: s,
+                            onClose: a,
                             channelId: t,
-                            warningId: x,
-                            senderId: C,
+                            warningId: C,
+                            senderId: x,
                             description: E.intl.string(E.t["/uid3p"]),
                             safetyTipRows: S.map((e, t) => (0, i.jsx)(d.B, {
                                 listType: "numbered",
@@ -86,22 +86,22 @@ function x(e) {
                                 description: E.intl.string(E.t.w2ve0t),
                                 buttonText: E.intl.string(E.t.ftIK2A),
                                 onButtonPress: () => {
-                                    T(A.Wm.USER_MODAL_MUTE), s()
+                                    T(A.Wm.USER_MODAL_MUTE), a()
                                 }
                             }, "likely-ato-mute")],
-                            learnMore: (0, i.jsx)(a.DUT, {
+                            learnMore: (0, i.jsx)(s.DUT, {
                                 onClick: () => (0, A._$)({
                                     channelId: t,
-                                    warningId: x,
-                                    senderId: C,
+                                    warningId: C,
+                                    senderId: x,
                                     warningType: m._j.LIKELY_ATO,
                                     cta: A.Wm.USER_MODAL_LEARN_MORE
                                 }),
-                                children: (0, i.jsx)(a.Heading, {
+                                children: (0, i.jsx)(s.Heading, {
                                     variant: "heading-sm/medium",
                                     color: "text-link",
                                     children: E.intl.format(E.t.UkH122, {
-                                        learnMoreLink: f.u6
+                                        learnMoreLink: _.u6
                                     })
                                 })
                             })
@@ -109,8 +109,8 @@ function x(e) {
                     }
                 }), (0, A._$)({
                     channelId: t,
-                    warningId: x,
-                    senderId: C,
+                    warningId: C,
+                    senderId: x,
                     warningType: m._j.LIKELY_ATO,
                     cta: A.Wm.OPEN_MORE_TIPS
                 })

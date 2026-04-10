@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    r = n(308528),
+var r = n(397927),
+    a = n(308528),
     l = n(928658),
     s = n(978914),
     o = n(985018);
@@ -19,19 +19,19 @@ function d(e) {
         onMouseLeave: u
     } = e, {
         error: A,
-        loaded: _,
-        message: h
+        loaded: h,
+        message: _
     } = (0, s.I)(t);
-    if (null == h && (_ || A)) return null;
+    if (null == _ && (h || A)) return null;
     let m = () => {
-        d?.(), r.A.closePrivateChannel(t.id)
+        d?.(), a.A.closePrivateChannel(t.id)
     };
-    return (0, i.jsx)(a.Button, {
+    return (0, i.jsx)(r.Button, {
         variant: "critical-primary",
         size: "sm",
-        disabled: null == h,
+        disabled: null == _,
         onClick: e => {
-            e.stopPropagation(), n?.(), null != h && (0, l.b8)(h, m)
+            e.stopPropagation(), n?.(), null != _ && (0, l.b8)(_, m)
         },
         onMouseEnter: c,
         onMouseLeave: u,

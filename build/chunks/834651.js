@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(311907),
-    s = n(397927),
-    a = n(576470),
+    a = n(397927),
+    s = n(576470),
     r = n(989985),
     o = n(961350),
     c = n(696451),
@@ -21,13 +21,13 @@ function p(e) {
     let {
         guild: t,
         disabledUntil: n
-    } = e, [p, f] = (0, u.n)(t.id), _ = (0, l.bG)([c.Ay, o.default], () => c.Ay.getMember(t.id, o.default.getId()), [t.id]);
-    return (0, d.X)(_), (0, i.jsxs)("div", {
+    } = e, [p, _] = (0, u.n)(t.id), f = (0, l.bG)([c.Ay, o.default], () => c.Ay.getMember(t.id, o.default.getId()), [t.id]);
+    return (0, d.X)(f), (0, i.jsxs)("div", {
         children: [p ? (0, i.jsx)(h.A, {
-            onClose: () => f(t.id),
+            onClose: () => _(t.id),
             guildName: t.name
         }) : null, (0, i.jsx)(r._, {
-            bannerIcon: (0, i.jsx)(s.gQi, {
+            bannerIcon: (0, i.jsx)(a.gQi, {
                 size: "md",
                 color: "currentColor",
                 className: g.q3
@@ -38,9 +38,9 @@ function p(e) {
             }),
             textStyles: g.cI,
             headerStyles: g.U_,
-            children: (0, i.jsx)(s.Text, {
+            children: (0, i.jsx)(a.Text, {
                 variant: "text-sm/semibold",
-                children: (0, i.jsx)(a.A, {
+                children: (0, i.jsx)(s.A, {
                     deadline: new Date(n),
                     showUnits: !0,
                     stopAtOneSec: !0

@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(311907),
     s = n(264686),
     l = n(839214),
-    a = n(419954),
-    r = n(400492),
+    r = n(419954),
+    a = n(400492),
     o = n(803224),
     d = n(780964),
     c = n(985018);
@@ -26,14 +26,14 @@ function m() {
 function g(e) {
     let t = u.getField("currentPlayingSound");
     t?.stop();
-    let n = (0, r.Ak)(e);
+    let n = (0, a.Ak)(e);
     u.setState({
         currentPlayingSound: n
     })
 }
 
 function _(e) {
-    return (0, a.zD)(`${d.X.SOUNDS_LIST_ITEM_PREFIX}${e.sound}`, {
+    return (0, r.zD)(`${d.X.SOUNDS_LIST_ITEM_PREFIX}${e.sound}`, {
         useTitle: e.useTitle,
         useSubtitle: () => c.intl.format(c.t.OOiGCM, {
             onClick: () => g(e.sound)

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => I
 }), n(938796);
 var i = n(735438),
-    a = n.n(i),
-    r = n(179771),
+    r = n.n(i),
+    a = n(179771),
     l = n(599026),
     s = n(73153),
     o = n(182892),
@@ -12,8 +12,8 @@ var i = n(735438),
     c = n(207371),
     u = n(954571),
     A = n(139675),
-    _ = n(927813),
-    h = n(636401),
+    h = n(927813),
+    _ = n(636401),
     m = n(629471),
     g = n(613057),
     p = n(652215);
@@ -21,7 +21,7 @@ let E = ["1402418171662569542"],
     I = {
         [p.e$_.SET_ACTIVITY]: {
             scope: {
-                [g.sm.ANY]: [r.F.RPC, r.F.RPC_ACTIVITIES_WRITE, g.hj]
+                [g.sm.ANY]: [a.F.RPC, a.F.RPC_ACTIVITIES_WRITE, g.hj]
             },
             validation: e => (0, m.A)(e).required().keys({
                 pid: e.number().min(0),
@@ -69,34 +69,34 @@ let E = ["1402418171662569542"],
                     socket: n,
                     args: {
                         pid: i,
-                        activity: r
+                        activity: a
                     },
                     isSocketConnected: l
                 } = e;
-                if (![g.z4.IPC, g.z4.WEBSOCKET, g.z4.POST_MESSAGE].includes(n.transport)) throw new h.A({
+                if (![g.z4.IPC, g.z4.WEBSOCKET, g.z4.POST_MESSAGE].includes(n.transport)) throw new _.A({
                     errorCode: p.Lw6.INVALID_COMMAND
                 }, `command not available from "${n.transport}" transport`);
-                if (null == i && g.z4.IPC === n.transport) throw new h.A({
+                if (null == i && g.z4.IPC === n.transport) throw new _.A({
                     errorCode: p.Lw6.INVALID_COMMAND
                 }, "nonzero pid required");
-                if (null == r) return s.h.dispatch({
+                if (null == a) return s.h.dispatch({
                     type: "LOCAL_ACTIVITY_UPDATE",
                     socketId: n.id,
                     pid: i,
-                    activity: r
-                }), Promise.resolve(r);
+                    activity: a
+                }), Promise.resolve(a);
                 let m = {};
-                r.name || (r.name = n.application.name);
+                a.name || (a.name = n.application.name);
                 let I = n.application.id;
-                r.application_id = I;
+                a.application_id = I;
                 let f = n.transport === g.z4.POST_MESSAGE;
-                r.platform = f ? p.yTV.EMBEDDED : p.yTV.DESKTOP;
+                a.platform = f ? p.yTV.EMBEDDED : p.yTV.DESKTOP;
                 let C = d.A.getApplication(I ?? void 0),
-                    T = r.instance ?? !1,
-                    N = r.party?.privacy;
-                delete r.instance, delete r.party?.privacy;
-                let S = (0, o.E)(r, T, f, null != C && (0, c.x)(C) && f, N);
-                S > 0 && (r.flags = S);
+                    T = a.instance ?? !1,
+                    N = a.party?.privacy;
+                delete a.instance, delete a.party?.privacy;
+                let S = (0, o.E)(a, T, f, null != C && (0, c.x)(C) && f, N);
+                S > 0 && (a.flags = S);
                 let {
                     assets: x,
                     party: v,
@@ -104,49 +104,49 @@ let E = ["1402418171662569542"],
                     timestamps: y,
                     buttons: O,
                     type: L
-                } = r;
-                if (null == L && (r.type = p.$pd.PLAYING), null != b) {
-                    let e = a().values(b).filter(e => !!e);
-                    if (null != v && a().intersection(e, [v.id]).length > 0 && !E.includes(n.application.id)) throw new h.A({
+                } = a;
+                if (null == L && (a.type = p.$pd.PLAYING), null != b) {
+                    let e = r().values(b).filter(e => !!e);
+                    if (null != v && r().intersection(e, [v.id]).length > 0 && !E.includes(n.application.id)) throw new _.A({
                         errorCode: p.Lw6.INVALID_ACTIVITY_SECRET
                     }, "secrets cannot match the party id");
-                    if (a().uniq(e).length < e.length) throw new h.A({
+                    if (r().uniq(e).length < e.length) throw new _.A({
                         errorCode: p.Lw6.INVALID_ACTIVITY_SECRET
                     }, "secrets must be unique");
-                    if (null != O) throw new h.A({
+                    if (null != O) throw new _.A({
                         errorCode: p.Lw6.INVALID_ACTIVITY_SECRET
                     }, "secrets cannot currently be sent with buttons")
                 }
-                if (null != O && (m.button_urls = O.map(e => e.url), r.buttons = O.map(e => e.label)), r.metadata = m, null != y)
-                    for (let e of Object.keys(y)) Date.now().toString().length - y[e].toString().length > 2 && (y[e] = Math.floor(y[e] * _.A.Millis.SECOND));
+                if (null != O && (m.button_urls = O.map(e => e.url), a.buttons = O.map(e => e.label)), a.metadata = m, null != y)
+                    for (let e of Object.keys(y)) Date.now().toString().length - y[e].toString().length > 2 && (y[e] = Math.floor(y[e] * h.A.Millis.SECOND));
                 if (null == x) t = Promise.resolve([]);
                 else {
                     if (null == n.application || null == n.application.id) throw Error();
                     t = (0, A.RG)(n.application.id, [x.large_image, x.small_image, x.invite_cover_image])
                 }
                 return t.then(e => {
-                    let [t, a, o] = e;
-                    if (null != x && (null != t ? x.large_image = t : delete x.large_image, null != a ? x.small_image = a : delete x.small_image, null != o ? x.invite_cover_image = o : delete x.invite_cover_image), !l()) return;
+                    let [t, r, o] = e;
+                    if (null != x && (null != t ? x.large_image = t : delete x.large_image, null != r ? x.small_image = r : delete x.small_image, null != o ? x.invite_cover_image = o : delete x.invite_cover_image), !l()) return;
                     s.h.dispatch({
                         type: "LOCAL_ACTIVITY_UPDATE",
                         socketId: n.id,
                         pid: i,
-                        activity: r,
+                        activity: a,
                         partyPrivacy: N
                     });
                     let {
                         secrets: d,
                         party: c
-                    } = r, A = {
+                    } = a, A = {
                         application_id: n.application.id,
-                        type: r.type,
-                        name: r.name,
-                        status_display_type: r.status_display_type,
-                        details: r.details ?? "",
-                        state: r.state ?? "",
-                        has_urls: null != r.state_url || null != r.details_url || r.assets?.large_url != null || r.assets?.small_url != null
+                        type: a.type,
+                        name: a.name,
+                        status_display_type: a.status_display_type,
+                        details: a.details ?? "",
+                        state: a.state ?? "",
+                        has_urls: null != a.state_url || null != a.details_url || a.assets?.large_url != null || a.assets?.small_url != null
                     };
-                    return null != d && (A.has_match_secret = !!d.match, A.has_join_secret = !!d.join), null != x && (A.has_images = !!(x.large_image || x.small_image || x.invite_cover_image)), null != c && (A.party_max = null != c.size && c.size[1] > 0 ? c.size[1] : void 0, A.party_id = c.id), u.default.track(p.HAw.ACTIVITY_UPDATED, A), r
+                    return null != d && (A.has_match_secret = !!d.match, A.has_join_secret = !!d.join), null != x && (A.has_images = !!(x.large_image || x.small_image || x.invite_cover_image)), null != c && (A.party_max = null != c.size && c.size[1] > 0 ? c.size[1] : void 0, A.party_id = c.id), u.default.track(p.HAw.ACTIVITY_UPDATED, A), a
                 })
             }
         }

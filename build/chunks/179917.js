@@ -1,35 +1,35 @@
 /** chunk id: 179917 params = (module,exports,require) **/
 n.d(t, {
-    I: () => u
+    I: () => o
 });
-var l = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
+var l = n(397927),
     r = n(485947),
     s = n(483392),
     a = n(453748);
 
-function u(e) {
+function o(e) {
     let {
         title: t,
         count: n,
-        isCollapsed: u,
-        canCollapse: o,
+        isCollapsed: o,
+        canCollapse: u,
         onToggle: d,
         rightAccessory: c
-    } = e, h = u && null != n ? `${t} (${n})` : t, g = o ? (0, l.jsx)(s.C, {
-        isCollapsed: u,
+    } = e, h = o && null != n ? `${t} (${n})` : t, g = u ? (0, i.jsx)(s.C, {
+        isCollapsed: o,
         size: "md",
         className: a.t4
     }) : null;
-    return (0, l.jsx)(r.A, {
+    return (0, i.jsx)(r.A, {
         className: a.uW,
-        children: (0, l.jsxs)("div", {
+        children: (0, i.jsxs)("div", {
             className: a.bV,
-            children: [(0, l.jsxs)(i.DUT, {
-                onClick: () => o && d(),
+            children: [(0, i.jsxs)(l.DUT, {
+                onClick: () => u && d(),
                 "aria-hidden": !0,
-                className: o ? a.Ws : void 0,
+                className: u ? a.Ws : void 0,
                 children: [h, g]
             }), c]
         })

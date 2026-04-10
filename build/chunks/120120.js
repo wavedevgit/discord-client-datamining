@@ -1,47 +1,48 @@
 /** chunk id: 120120 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => T
+    A: () => I
 });
 var i = n(627968);
 n(64700);
-var l = n(417597),
-    a = n(397927),
-    r = n(775602),
-    s = n(763754),
-    o = n(447215),
-    c = n(888675),
+var r = n(417597),
+    s = n(397927),
+    l = n(775602),
+    a = n(763754),
+    c = n(447215),
+    o = n(888675),
     u = n(976860),
     d = n(141593),
     _ = n(652215),
-    A = n(985018),
-    m = n(367537);
+    E = n(985018),
+    A = n(367537);
 
-function E(e) {
+function m(e) {
     let {
         guildId: t,
         user: n,
-        username: s
-    } = e, o = (0, l.bG)([r.A], () => !r.A.useReducedMotion), c = n.getAvatarURL(t, 56, o), u = (0, i.jsx)("img", {
-        src: c,
-        className: m.dj,
+        username: a
+    } = e, c = (0, r.bG)([l.A], () => !l.A.useReducedMotion), o = n.getAvatarURL(t, 56, c), u = (0, i.jsx)("img", {
+        src: o,
+        className: A.dj,
         alt: ""
     });
     return (0, i.jsxs)("div", {
-        className: m.uE,
+        className: A.uE,
         role: "img",
-        "aria-label": A.intl.formatToPlainString(A.t["utf8+W"], {
-            username: s
+        "aria-label": E.intl.formatToPlainString(E.t["utf8+W"], {
+            username: a
         }),
         children: [(0, i.jsx)(d.A, {
             avatar: u
-        }), (0, i.jsx)(a.Text, {
-            className: m.Bi,
+        }), (0, i.jsx)(s.Text, {
+            className: A.Bi,
             tag: "p",
             color: "status-positive-text",
             variant: "heading-xl/medium",
-            children: A.intl.format(A.t["52BAtC"], {
-                username: s,
-                usernameHook: (e, t) => (0, i.jsx)(a.Text, {
+            children: E.intl.format(E.t["52BAtC"], {
+                username: a,
+                usernameHook: (e, t) => (0, i.jsx)(s.Text, {
                     tag: "span",
                     color: "status-positive-text",
                     variant: "heading-xxl/extrabold",
@@ -53,34 +54,34 @@ function E(e) {
     })
 }
 
-function T(e) {
+function I(e) {
     let {
         channel: t,
-        message: l,
-        compact: a
-    } = e, r = (0, s.Ay)(l), d = (0, o.P)({
-        user: l.author,
+        message: r,
+        compact: s
+    } = e, l = (0, a.Ay)(r), d = (0, c.P)({
+        user: r.author,
         channelId: t.id,
         guildId: t.guild_id,
-        messageId: l.id
-    })(r), m = A.intl.format(A.t.TQs67g, {
-        username: r.nick,
+        messageId: r.id
+    })(l), A = E.intl.format(E.t.TQs67g, {
+        username: l.nick,
         usernameHook: d,
-        productName: l.purchaseNotification?.guild_product_purchase?.product_name ?? "",
+        productName: r.purchaseNotification?.guild_product_purchase?.product_name ?? "",
         handleProductListingClick: () => {
-            (0, u.pX)(_.BVt.GUILD_PRODUCT(t.guild_id, l.purchaseNotification?.guild_product_purchase?.listing_id ?? ""))
+            (0, u.pX)(_.BVt.GUILD_PRODUCT(t.guild_id, r.purchaseNotification?.guild_product_purchase?.listing_id ?? ""))
         }
     });
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(c.A, {
+        children: [(0, i.jsx)(o.A, {
             icon: n(617184),
-            timestamp: l.timestamp,
-            compact: a,
-            children: m
-        }), (0, i.jsx)(E, {
-            username: r.nick,
+            timestamp: r.timestamp,
+            compact: s,
+            children: A
+        }), (0, i.jsx)(m, {
+            username: l.nick,
             guildId: t.guild_id,
-            user: l.author
+            user: r.author
         })]
     })
 }

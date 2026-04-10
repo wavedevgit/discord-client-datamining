@@ -3,8 +3,8 @@ n.d(t, {
     A: () => g
 });
 var i = n(627968),
-    a = n(73153),
-    r = n(272355),
+    r = n(73153),
+    a = n(272355),
     l = n(958005),
     s = n(268218),
     o = n(574172),
@@ -25,23 +25,23 @@ let c = (0, s.Fe)({
         webpackId: 911315,
         name: "PopoutWindowStageChannelCall"
     }),
-    _ = (0, s.Fe)({
+    h = (0, s.Fe)({
         createPromise: () => n.e("71138").then(n.bind(n, 414760)),
         webpackId: 414760,
         name: "PopoutWindowRTCDebug"
     }),
-    h = (0, s.Fe)({
+    _ = (0, s.Fe)({
         createPromise: () => n.e("13492").then(n.bind(n, 860051)),
         webpackId: 860051,
         name: "PopoutWindowActivity"
     });
-class m extends r.A {
+class m extends a.A {
     _observer = null;
     _initialize() {
-        a.h.subscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), a.h.subscribe("CALL_TILE_POPOUT_WINDOW_OPEN", this.handleOpenCallTilePopout), a.h.subscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), a.h.subscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.initializeStyleSheetObserver()
+        r.h.subscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), r.h.subscribe("CALL_TILE_POPOUT_WINDOW_OPEN", this.handleOpenCallTilePopout), r.h.subscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), r.h.subscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.initializeStyleSheetObserver()
     }
     _terminate() {
-        a.h.unsubscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), a.h.unsubscribe("CALL_TILE_POPOUT_WINDOW_OPEN", this.handleOpenCallTilePopout), a.h.unsubscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), a.h.unsubscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.terminateStyleSheetObserver()
+        r.h.unsubscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), r.h.unsubscribe("CALL_TILE_POPOUT_WINDOW_OPEN", this.handleOpenCallTilePopout), r.h.unsubscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), r.h.unsubscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.terminateStyleSheetObserver()
     }
     handleOpenChannelCallPopout(e) {
         let {
@@ -62,8 +62,8 @@ class m extends r.A {
         let {
             channelId: t,
             participantId: n
-        } = e, a = (0, l.A)(t, n);
-        o.open(a, e => (0, i.jsx)(u, {
+        } = e, r = (0, l.A)(t, n);
+        o.open(r, e => (0, i.jsx)(u, {
             windowKey: e,
             channelId: t,
             participantId: n
@@ -91,7 +91,7 @@ class m extends r.A {
         null != this._observer && (this._observer.disconnect(), this._observer = null)
     }
     handleOpenRTCDebugPopout() {
-        o.open(d.MLl.RTC_DEBUG_POPOUT, e => (0, i.jsx)(_, {
+        o.open(d.MLl.RTC_DEBUG_POPOUT, e => (0, i.jsx)(h, {
             windowKey: e
         }), {
             defaultWidth: 854,
@@ -99,7 +99,7 @@ class m extends r.A {
         })
     }
     handleOpenActivityPopout() {
-        o.open(d.MLl.ACTIVITY_POPOUT, e => (0, i.jsx)(h, {
+        o.open(d.MLl.ACTIVITY_POPOUT, e => (0, i.jsx)(_, {
             windowKey: e
         }), {
             defaultWidth: 854,

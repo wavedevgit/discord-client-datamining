@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(812729),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(990078),
     d = n(397927),
     c = n(544420),
@@ -35,16 +35,16 @@ function R() {
     let {
         runningGame: e,
         runningGameApplication: t
-    } = (0, x.A)(), n = e?.pid, l = (0, r.bG)([f.default], () => null == e || null == n ? null : f.default.getTrackedGameByPid(n), [e, n], a()), {
+    } = (0, x.A)(), n = e?.pid, l = (0, a.bG)([f.default], () => null == e || null == n ? null : f.default.getTrackedGameByPid(n), [e, n], r()), {
         enabledLegacy: R,
         enabledOOP: L
-    } = (0, r.cf)([b.A, C.A], () => null == e && null == l ? {
+    } = (0, a.cf)([b.A, C.A], () => null == e && null == l ? {
         enabledLegacy: !1,
         enabledOOP: !1
     } : null == e ? {
         enabledLegacy: l?.legacyEnabled ?? !1,
         enabledOOP: l?.oopEnabled ?? !1
-    } : (0, _.hw)(e, !1, [b.A, C.A]), [e, l]), P = (0, r.bG)([_.Ay, b.A, C.A], () => null == e ? null : (0, _.xU)(e, _.Ay, b.A, C.A), [e], a()), [D, G] = s.useState(L), [M, k] = s.useState(R), [U, w] = s.useState(!1);
+    } : (0, _.hw)(e, !1, [b.A, C.A]), [e, l]), P = (0, a.bG)([_.Ay, b.A, C.A], () => null == e ? null : (0, _.xU)(e, _.Ay, b.A, C.A), [e], r()), [D, G] = s.useState(L), [M, k] = s.useState(R), [U, w] = s.useState(!1);
     s.useEffect(() => {
         G(L), k(R)
     }, [L, R]);
@@ -53,7 +53,7 @@ function R() {
         {
             legacyEnabled: F,
             oopEnabled: H
-        } = (0, r.cf)([f.default], () => f.default.getGlobalEnabledStatus()),
+        } = (0, a.cf)([f.default], () => f.default.getGlobalEnabledStatus()),
         z = (t, n) => {
             if (null == e) return;
             let i = !1,
@@ -166,7 +166,7 @@ function R() {
     (0, g.Ay)(() => {
         c.Ay.getDetectableGames()
     });
-    let [el, ea] = s.useMemo(() => Q ? ["text-muted", d.LU0.colors.TEXT_MUTED.css] : q && $ ? ["text-feedback-warning", d.LU0.colors.TEXT_FEEDBACK_WARNING.css] : q && J ? ["text-feedback-positive", d.LU0.colors.TEXT_FEEDBACK_POSITIVE.css] : q && ee ? ["text-strong", d.LU0.colors.TEXT_STRONG.css] : ["interactive-text-default", d.LU0.colors.INTERACTIVE_TEXT_DEFAULT.css], [Q, q, $, J, ee]);
+    let [el, er] = s.useMemo(() => Q ? ["text-muted", d.LU0.colors.TEXT_MUTED.css] : q && $ ? ["text-feedback-warning", d.LU0.colors.TEXT_FEEDBACK_WARNING.css] : q && J ? ["text-feedback-positive", d.LU0.colors.TEXT_FEEDBACK_POSITIVE.css] : q && ee ? ["text-strong", d.LU0.colors.TEXT_STRONG.css] : ["interactive-text-default", d.LU0.colors.INTERACTIVE_TEXT_DEFAULT.css], [Q, q, $, J, ee]);
     return null == e ? null : (0, i.jsxs)(N.A, {
         onExpand: w,
         className: U ? O.tx : void 0,
@@ -190,7 +190,7 @@ function R() {
         header: (0, i.jsxs)(i.Fragment, {
             children: [q || Q ? (0, i.jsx)(d.kN9, {
                 size: "xxs",
-                color: ea
+                color: er
             }) : (0, i.jsx)("div", {
                 className: O.W4
             }), (0, i.jsx)(d.Text, {
@@ -232,9 +232,9 @@ function R() {
                             i = !H && D,
                             s = !F && M,
                             l = !D && H,
-                            a = !M && F;
+                            r = !M && F;
                         switch (!0) {
-                            case n && (i || s) && (l || a):
+                            case n && (i || s) && (l || r):
                                 return "both";
                             case n && (i || s):
                                 return "global";

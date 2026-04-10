@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(397927),
+    r = n.n(l),
+    a = n(397927),
     o = n(662232),
     d = n(985018),
     c = n(287800),
@@ -14,10 +14,10 @@ var i = n(627968),
 let m = () => {
     let e = s.useRef(null);
     return (0, i.jsxs)("div", {
-        className: a()(c.a, u.Gf),
+        className: r()(c.a, u.Gf),
         children: [(0, i.jsx)("span", {
             children: d.intl.string(d.t.xwhoqM)
-        }), (0, i.jsx)(r.YNO, {
+        }), (0, i.jsx)(a.YNO, {
             targetElementRef: e,
             renderPopout: e => {
                 let {
@@ -29,7 +29,7 @@ let m = () => {
             },
             align: "center",
             position: "bottom",
-            children: t => (0, i.jsx)(r.QWc, {
+            children: t => (0, i.jsx)(a.QWc, {
                 ...t,
                 buttonRef: e,
                 variant: "primary",

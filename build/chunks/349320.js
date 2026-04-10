@@ -3,17 +3,17 @@ n.d(t, {
     L: () => S
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(158954),
     o = n(51264),
     d = n(820284),
     c = n(765671),
     u = n(793574),
     A = n(688810),
-    _ = n(757780),
-    h = n(748319),
+    h = n(757780),
+    _ = n(748319),
     m = n(355205),
     g = n(652234),
     p = n(489683),
@@ -40,8 +40,8 @@ function N(e) {
         })
     })
 }
-let S = a.memo(function() {
-    let e = a.useRef(null);
+let S = r.memo(function() {
+    let e = r.useRef(null);
     (0, c.i4)(e, e => {
         let {
             height: t
@@ -50,7 +50,7 @@ let S = a.memo(function() {
     }, []);
     let {
         isSorting: t
-    } = (0, _.A)();
+    } = (0, h.A)();
     return (0, i.jsx)("section", {
         ref: e,
         className: l()(T.C3, {
@@ -69,7 +69,7 @@ let S = a.memo(function() {
                 children: (0, i.jsx)(p.A, {})
             }), (0, i.jsx)(d.A, {
                 section: f.JJy.ACCOUNT_PANEL,
-                children: (0, i.jsx)(h.A, {})
+                children: (0, i.jsx)(_.A, {})
             })]
         })
     })

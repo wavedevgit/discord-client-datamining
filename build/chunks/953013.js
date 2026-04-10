@@ -1,65 +1,65 @@
 /** chunk id: 953013 params = (module,exports,require) **/
 n.d(t, {
-    o: () => y
+    o: () => N
 }), n(321073);
-var l = n(627968),
-    i = n(64700),
+var i = n(627968),
+    l = n(64700),
     r = n(503698),
     s = n.n(r),
     a = n(311907),
-    u = n(397927),
-    o = n(46054),
+    o = n(397927),
+    u = n(46054),
     d = n(190012),
     c = n(465364),
     h = n(21119),
     g = n(994500),
-    I = n(741961),
-    A = n(287809),
-    f = n(562153),
-    E = n(985018),
-    m = n(404666);
+    m = n(741961),
+    f = n(287809),
+    A = n(562153),
+    I = n(985018),
+    E = n(404666);
 
-function S(e) {
+function p(e) {
     let {
         icon: t,
         ...n
     } = e;
     switch (t) {
         case "image":
-            return (0, l.jsx)(u.xfq, {
+            return (0, i.jsx)(o.xfq, {
                 ...n
             });
         case "video":
-            return (0, l.jsx)(u.npA, {
+            return (0, i.jsx)(o.npA, {
                 ...n
             });
         case "audio":
-            return (0, l.jsx)(u.T7G, {
+            return (0, i.jsx)(o.T7G, {
                 ...n
             });
         case "attachment":
-            return (0, l.jsx)(u.PtA, {
+            return (0, i.jsx)(o.PtA, {
                 ...n
             });
         case "link":
-            return (0, l.jsx)(u.qYV, {
+            return (0, i.jsx)(o.qYV, {
                 ...n
             });
         case "sticker":
-            return (0, l.jsx)(u.tEP, {
+            return (0, i.jsx)(o.tEP, {
                 ...n
             });
         case "call-active":
-            return (0, l.jsx)(u._jp, {
+            return (0, i.jsx)(o._jp, {
                 ...n
             });
         case "call-ended":
-            return (0, l.jsx)(u.zWQ, {
+            return (0, i.jsx)(o.zWQ, {
                 ...n
             })
     }
 }
-let _ = i.memo(function(e) {
+let _ = l.memo(function(e) {
         let {
             message: t
         } = e;
@@ -68,44 +68,44 @@ let _ = i.memo(function(e) {
             noStyleAndInteraction: !0
         }).content
     }),
-    p = i.memo(function(e) {
+    S = l.memo(function(e) {
         let {
             markup: t,
             channelId: n
         } = e;
-        return (0, c.jp)(o.A.parseInlineReply, {
+        return (0, c.jp)(u.A.parseInlineReply, {
             content: t,
             channelId: n
         })
     });
 
-function N(e) {
+function x(e) {
     let {
         channel: t,
         typingUserIds: n
-    } = e, i = (0, a.bG)([], () => (function(e, t, n) {
-        let l = [];
-        for (let i of e) {
-            let e = A.default.getUser(i);
-            null != e && l.push(f.Ay.getName(n, t, e))
+    } = e, l = (0, a.bG)([], () => (function(e, t, n) {
+        let i = [];
+        for (let l of e) {
+            let e = f.default.getUser(l);
+            null != e && i.push(A.Ay.getName(n, t, e))
         }
-        let [i, r, s, a] = l;
-        return null == i ? null : null == r ? E.intl.format(E.t.lJ9sZX, {
-            a: i
-        }) : null == s ? E.intl.format(E.t.rB0CUa, {
-            a: i,
+        let [l, r, s, a] = i;
+        return null == l ? null : null == r ? I.intl.format(I.t.lJ9sZX, {
+            a: l
+        }) : null == s ? I.intl.format(I.t.rB0CUa, {
+            a: l,
             b: r
-        }) : null == a ? E.intl.format(E.t.StKThj, {
-            a: i,
+        }) : null == a ? I.intl.format(I.t.StKThj, {
+            a: l,
             b: r,
             c: s
-        }) : E.intl.string(E.t.uVDhqZ)
+        }) : I.intl.string(I.t.uVDhqZ)
     })(n, t.id, t.guild_id), [n, t.id, t.guild_id]);
-    return null == i ? null : (0, l.jsx)("div", {
-        className: m.Sl,
-        children: (0, l.jsx)("span", {
-            className: m.BK,
-            children: i
+    return null == l ? null : (0, i.jsx)("div", {
+        className: E.Sl,
+        children: (0, i.jsx)("span", {
+            className: E.BK,
+            children: l
         })
     })
 }
@@ -113,60 +113,60 @@ function N(e) {
 function T(e) {
     let t, {
             channel: n,
-            message: i
+            message: l
         } = e,
-        r = (0, d.BC)(i, n);
+        r = (0, d.BC)(l, n);
     if (null == r) return null;
     let {
         authorLabel: a,
-        color: u,
-        trailingIcon: o
+        color: o,
+        trailingIcon: u
     } = r;
-    return "text" === r.type ? t = r.text : "markup" === r.type ? t = (0, l.jsx)(p, {
+    return "text" === r.type ? t = r.text : "markup" === r.type ? t = (0, i.jsx)(S, {
         markup: r.markup,
-        channelId: i.channel_id
-    }) : "message" === r.type && (t = (0, l.jsx)(_, {
+        channelId: l.channel_id
+    }) : "message" === r.type && (t = (0, i.jsx)(_, {
         message: r.message
-    })), (0, l.jsxs)("div", {
-        className: s()(m.Sl, {
-            [m.Vz]: "text-feedback-positive" === u
+    })), (0, i.jsxs)("div", {
+        className: s()(E.Sl, {
+            [E.Vz]: "text-feedback-positive" === o
         }),
-        children: [(0, l.jsxs)("span", {
-            className: m.BK,
+        children: [(0, i.jsxs)("span", {
+            className: E.BK,
             children: [null != a && `${a}: `, t]
-        }), null != o && (0, l.jsx)(S, {
-            icon: o,
+        }), null != u && (0, i.jsx)(p, {
+            icon: u,
             size: "xxs",
             color: "currentColor",
-            className: m.sl
+            className: E.sl
         })]
     })
 }
 
-function y(e) {
+function N(e) {
     let {
         channel: t,
         message: n,
-        showTypingPreview: i
-    } = e, r = (0, a.bG)([A.default], () => {
-        if (!i) return [];
-        let e = A.default.getCurrentUser()?.id ?? null;
+        showTypingPreview: l
+    } = e, r = (0, a.bG)([f.default], () => {
+        if (!l) return [];
+        let e = f.default.getCurrentUser()?.id ?? null;
         var n = t.id;
-        let l = I.A.getTypingUsers(n),
+        let i = m.A.getTypingUsers(n),
             r = [];
-        for (let t in l) t !== e && r.push(t);
+        for (let t in i) t !== e && r.push(t);
         return r.sort((e, t) => {
             let n = +!!g.A.isFriend(e),
-                l = +!!g.A.isFriend(t);
-            if (n !== l) return l - n;
-            let i = h.A.getUserAffinity(e)?.communicationProbability ?? 0;
-            return (h.A.getUserAffinity(t)?.communicationProbability ?? 0) - i
+                i = +!!g.A.isFriend(t);
+            if (n !== i) return i - n;
+            let l = h.A.getUserAffinity(e)?.communicationProbability ?? 0;
+            return (h.A.getUserAffinity(t)?.communicationProbability ?? 0) - l
         })
-    }, [t.id, i]);
-    return r.length > 0 ? (0, l.jsx)(N, {
+    }, [t.id, l]);
+    return r.length > 0 ? (0, i.jsx)(x, {
         channel: t,
         typingUserIds: r
-    }) : null == n ? null : (0, l.jsx)(T, {
+    }) : null == n ? null : (0, i.jsx)(T, {
         channel: t,
         message: n
     })

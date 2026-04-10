@@ -4,8 +4,8 @@ n.d(t, {
     o: () => m
 });
 var i = n(284009),
-    a = n.n(i),
-    r = n(205693),
+    r = n.n(i),
+    a = n(205693),
     l = n(602674),
     s = n(76788),
     o = n(738011),
@@ -13,14 +13,14 @@ var i = n(284009),
     c = n(430452),
     u = n(728458),
     A = n(904054);
-let _ = new Map;
-async function h(e) {
-    let t = _.get(e);
+let h = new Map;
+async function _(e) {
+    let t = h.get(e);
     if (null != t) return t;
     let n = await (await fetch(e)).arrayBuffer(),
         i = (0, l.v)(),
-        a = await i?.decodeAudioData(n);
-    return null != a && _.set(e, a), a
+        r = await i?.decodeAudioData(n);
+    return null != r && h.set(e, r), r
 }
 
 function m(e) {
@@ -31,9 +31,9 @@ function m(e) {
         reportSoundStartedPlaying: l
     } = e;
     return new Promise(async (e, s) => {
-        let o = await h(n);
+        let o = await _(n);
         null == o && e(), c.Ay.getMediaEngine().eachConnection(n => {
-            n.context === r.x.DEFAULT && (l(), a()(null != o, "audioBuffer cannot be null here"), n.startSamplesLocalPlayback(t, o, i, (t, n) => {
+            n.context === a.x.DEFAULT && (l(), r()(null != o, "audioBuffer cannot be null here"), n.startSamplesLocalPlayback(t, o, i, (t, n) => {
                 0 !== t ? s(Error(`${n}`)) : e()
             }))
         })
@@ -44,8 +44,8 @@ function g(e, t) {
     let {
         soundKey: n,
         soundURL: i,
-        soundVolume: a,
-        reportSoundStartedPlaying: r
+        soundVolume: r,
+        reportSoundStartedPlaying: a
     } = e, l = t.get(n);
     if (null != l) {
         l.currentTime = 0;
@@ -53,8 +53,8 @@ function g(e, t) {
     }
     return new Promise(async e => {
         let l = new(await (0, d.A)(i));
-        l.src = i, l.volume = (0, A.A)(a), l.addEventListener(l instanceof s.A.OGVPlayer ? "loadedmetadata" : "canplaythrough", () => {
-            r(), t.set(n, l), l.play()?.catch(i => {
+        l.src = i, l.volume = (0, A.A)(r), l.addEventListener(l instanceof s.A.OGVPlayer ? "loadedmetadata" : "canplaythrough", () => {
+            a(), t.set(n, l), l.play()?.catch(i => {
                 if ((0, o.u)(i)) {
                     u.A.captureException(i, {
                         tags: {

@@ -4,32 +4,32 @@ n.d(t, {
 });
 var i = n(478437),
     r = n(367513),
-    a = n(604681),
-    s = n(313961),
-    l = n(672385),
-    o = n(950191),
+    l = n(604681),
+    o = n(313961),
+    s = n(672385),
+    a = n(950191),
     d = n(761640),
-    _ = n(734057),
-    c = n(309010),
-    u = n(967198),
+    c = n(734057),
+    u = n(309010),
+    _ = n(967198),
     A = n(652215);
 let E = {
     binds: ["mod+u"],
     comboKeysBindGlobal: !0,
     action() {
-        let e = u.A.getGuildId(),
-            t = c.A.getChannelId(e),
-            n = _.A.getChannel(t);
-        if (null != t && null != n && n.type === i.r.GUILD_VOICE) return r.A.updateChatOpen(t, !s.A.getChatOpen(t), "toggle users keybind"), !1;
+        let e = _.A.getGuildId(),
+            t = u.A.getChannelId(e),
+            n = c.A.getChannel(t);
+        if (null != t && null != n && n.type === i.r.GUILD_VOICE) return r.A.updateChatOpen(t, !o.A.getChatOpen(t), "toggle users keybind"), !1;
         if (null != t && null != n && n.type === i.r.DM) {
             let e = d.Ay.getSection(t, n?.isDM()),
-                i = (0, o.AP)(n.getRecipientId()),
+                i = (0, a.AP)(n.getRecipientId()),
                 r = e === A.YvQ.PROFILE;
-            return (0, l.am)({
+            return (0, s.am)({
                 displayProfile: i,
                 isProfileOpen: !r
-            }), a.A.toggleUserProfileSidebarSection(), !1
+            }), l.A.toggleUserProfileSidebarSection(), !1
         }
-        return a.A.toggleMembersSection(), !1
+        return l.A.toggleMembersSection(), !1
     }
 }

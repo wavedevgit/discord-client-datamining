@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(503698),
     l = n.n(s),
-    a = n(311907),
-    r = n(15285),
+    r = n(311907),
+    a = n(15285),
     o = n(227309),
     d = n(475380),
     c = n(610215),
@@ -33,11 +33,11 @@ let x = () => {
     let {
         robloxSubgameHistory: e,
         overrideExePaths: t
-    } = (0, c.a)(), n = (0, a.bG)([r.Ay], () => r.Ay.getVisibleGame());
+    } = (0, c.a)(), n = (0, r.bG)([a.Ay], () => a.Ay.getVisibleGame());
     return null != n ? (0, i.jsx)(d.A, {
         rawGame: n,
         isOverride: t.has(n.exePath),
         nowPlaying: !0,
         subgames: n.id === o.a7 ? e : void 0
-    }, (0, r.Es)(n)) : (0, i.jsx)(_, {})
+    }, (0, a.Es)(n)) : (0, i.jsx)(_, {})
 }

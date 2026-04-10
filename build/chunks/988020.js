@@ -1,4 +1,5 @@
 /** chunk id: 988020 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     kL: "container__85015",
     UD: "buttonContainer__85015",

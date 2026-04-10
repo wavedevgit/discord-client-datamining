@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(397927),
-    r = n(985018),
+    r = n(397927),
+    a = n(985018),
     o = n(271417);
 
 function d(e) {
@@ -16,7 +16,7 @@ function d(e) {
         children: n
     } = e;
     return (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(a.Heading, {
+        children: [(0, i.jsx)(r.Heading, {
             variant: "text-md/medium",
             className: o.Vf,
             children: t
@@ -29,7 +29,7 @@ function c(e) {
         children: t,
         className: n,
         layoutClassName: s,
-        profilePreview: a,
+        profilePreview: r,
         profilePreviewTitle: c,
         nameplatePreview: u,
         stickyPreview: m = !0
@@ -42,10 +42,10 @@ function c(e) {
                 className: l()(o.Fp, m && o.Oz),
                 children: (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(d, {
-                        title: c ?? r.intl.string(r.t.Zb06yP),
-                        children: a
+                        title: c ?? a.intl.string(a.t.Zb06yP),
+                        children: r
                     }), null != u ? (0, i.jsx)(d, {
-                        title: r.intl.string(r.t.x5CoXR),
+                        title: a.intl.string(a.t.x5CoXR),
                         children: u
                     }) : null]
                 })

@@ -1,62 +1,62 @@
 /** chunk id: 75280 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => _
 });
 var i = n(627968),
-    a = n(64700),
+    l = n(64700),
     r = n(503698),
-    l = n.n(r),
-    s = n(687498),
+    s = n.n(r),
+    a = n(687498),
     o = n(397927),
-    d = n(475743),
-    c = n(652896),
-    u = n(256415),
-    _ = n(810412),
-    h = n(433560),
+    u = n(475743),
+    d = n(652896),
+    c = n(256415),
+    h = n(810412),
+    g = n(433560),
     m = n(324093),
-    p = n(916494),
-    g = n(897720),
-    f = n(652215),
-    A = n(456847);
-let I = {
+    f = n(916494),
+    A = n(897720),
+    I = n(652215),
+    E = n(456847);
+let p = {
         mass: 1,
         tension: 250,
         friction: 18,
         clamp: !0
     },
-    x = a.memo(function(e) {
+    _ = l.memo(function(e) {
         let {
             widgetId: t,
             tileWidth: n,
             tileHeight: r,
-            layout: x,
-            locked: E,
-            activeStreams: b,
-            streamParticipants: v,
-            participantsVersion: S,
+            layout: _,
+            locked: S,
+            activeStreams: x,
+            streamParticipants: T,
+            participantsVersion: N,
             pinned: C,
-            padding: y
-        } = e, T = v.map(e => ({
+            padding: v
+        } = e, y = T.map(e => ({
             participant: e,
             key: e.user.id,
             width: n,
             height: r,
-            locked: E,
+            locked: S,
             widgetId: t,
             pinned: C
-        })), N = (0, d.A)(n), w = (0, d.A)(E), L = x === g.IV.VERTICAL, O = E || w !== E || N !== n, j = a.useMemo(() => {
+        })), M = (0, u.A)(n), R = (0, u.A)(S), D = _ === A.IV.VERTICAL, b = S || R !== S || M !== n, O = l.useMemo(() => {
             let e = 0,
                 t = 0;
-            return L ? T.map((t, n) => ({
+            return D ? y.map((t, n) => ({
                 ...t,
-                y: (e += t.height + (n > 0 ? y : 0)) - t.height,
+                y: (e += t.height + (n > 0 ? v : 0)) - t.height,
                 x: 0
-            })) : T.map((e, n) => ({
+            })) : y.map((e, n) => ({
                 ...e,
-                x: (t += e.width + (n > 0 ? y : 0)) - e.width,
+                x: (t += e.width + (n > 0 ? v : 0)) - e.width,
                 y: 0
             }))
-        }, [T, y, L]), P = a.useMemo(() => 0 === j.length ? (0, p.uc)(m.Ub) : j.reduce((e, t) => e + t.height, 0) + (L ? y * (j.length - 1) : 0), [j, L, y]), R = a.useMemo(() => 0 === j.length ? m.Ub : j.reduce((e, t) => e + t.width, 0) + (L ? 0 : y * (j.length - 1)), [j, L, y]), D = (0, o.pnh)(j, {
+        }, [y, v, D]), w = l.useMemo(() => 0 === O.length ? (0, f.uc)(m.Ub) : O.reduce((e, t) => e + t.height, 0) + (D ? v * (O.length - 1) : 0), [O, D, v]), j = l.useMemo(() => 0 === O.length ? m.Ub : O.reduce((e, t) => e + t.width, 0) + (D ? 0 : v * (O.length - 1)), [O, D, v]), U = (0, o.pnh)(O, {
             key: e => e.key,
             from: {
                 height: 0,
@@ -71,13 +71,13 @@ let I = {
                     x: t,
                     y: n,
                     width: i,
-                    height: a
+                    height: l
                 } = e;
                 return {
                     x: t,
                     y: n,
                     width: i,
-                    height: a,
+                    height: l,
                     opacity: 1
                 }
             },
@@ -86,59 +86,59 @@ let I = {
                     x: t,
                     y: n,
                     width: i,
-                    height: a
+                    height: l
                 } = e;
                 return {
                     x: t,
                     y: n,
                     width: i,
-                    height: a
+                    height: l
                 }
             },
-            config: I,
-            trail: 100 * !O
-        }, O ? "animate-never" : "respect-motion-settings"), M = (0, _.Dk)(() => new Set(v.map(e => e.user.id)), [v, S]), k = (0, _.Dk)(() => new Set(v.filter(e => b.has((0, c._z)(e.stream))).map(e => e.user.id)), [v, b, S]);
-        return a.useEffect(() => {
-            0 !== M.size && (0, _.Y)(f.uss.GO_LIVE, {
-                locked: u.default.isInstanceLocked(),
-                shownUserIds: Array.from(M),
+            config: p,
+            trail: 100 * !b
+        }, b ? "animate-never" : "respect-motion-settings"), L = (0, h.Dk)(() => new Set(T.map(e => e.user.id)), [T, N]), k = (0, h.Dk)(() => new Set(T.filter(e => x.has((0, d._z)(e.stream))).map(e => e.user.id)), [T, x, N]);
+        return l.useEffect(() => {
+            0 !== L.size && (0, h.Y)(I.uss.GO_LIVE, {
+                locked: c.default.isInstanceLocked(),
+                shownUserIds: Array.from(L),
                 liveUserIds: Array.from(k),
                 contentInventoryIds: []
             })
-        }, [M, k]), (0, i.jsx)("div", {
-            className: l()({
-                [A.UT]: !0,
-                [A.Vd]: L,
-                [A.xM]: !L
+        }, [L, k]), (0, i.jsx)("div", {
+            className: s()({
+                [E.UT]: !0,
+                [E.Vd]: D,
+                [E.xM]: !D
             }),
-            style: L ? {
-                height: P
+            style: D ? {
+                height: w
             } : {
-                width: R
+                width: j
             },
-            children: D((e, t, a, l) => (0, i.jsx)(s.animated.div, {
-                className: A.ux,
+            children: U((e, t, l, s) => (0, i.jsx)(a.animated.div, {
+                className: E.ux,
                 style: Object.assign({}, e, {
                     width: n,
                     height: r,
-                    zIndex: T.length - l
+                    zIndex: y.length - s
                 }),
                 children: (e => {
                     let {
                         participant: t,
                         width: n,
-                        locked: a,
+                        locked: l,
                         widgetId: r,
-                        pinned: l
+                        pinned: s
                     } = e;
                     return (0, i.jsx)("div", {
-                        className: A.iA,
-                        children: (0, i.jsx)(h.d, {
+                        className: E.iA,
+                        children: (0, i.jsx)(g.d, {
                             participant: t,
                             width: n,
-                            locked: a,
+                            locked: l,
                             widgetId: r,
-                            pinned: l
+                            pinned: s
                         }, t.user.id)
                     })
                 })(t)

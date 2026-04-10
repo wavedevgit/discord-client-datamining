@@ -1,13 +1,13 @@
 /** chunk id: 40056 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => f,
+    Ay: () => _,
     e9: () => A,
     qd: () => m
 });
 var i = n(627968),
     l = n(64700),
-    s = n(735438),
-    a = n(451988),
+    a = n(735438),
+    s = n(451988),
     r = n(964486),
     o = n(652896),
     c = n(834757),
@@ -40,7 +40,7 @@ let m = {
         doZoom: () => {},
         wrapperRef: l.createRef()
     }),
-    g = (0, s.debounce)((e, t, n) => {
+    g = (0, a.debounce)((e, t, n) => {
         let i = null,
             l = null;
         if (null != n && (0, o.wL)(n)) {
@@ -61,7 +61,7 @@ let m = {
             minZoom: n = 1,
             maxZoom: o = 5,
             children: c
-        } = e, [d, u] = l.useState(n), [h, p] = l.useState(!1), [f, _] = l.useState(!1), [E, x] = l.useState(!1), [C, S] = l.useState(!1), [I, T] = l.useState(16 / 9), [N, v] = l.useState({
+        } = e, [d, u] = l.useState(n), [h, p] = l.useState(!1), [_, f] = l.useState(!1), [E, C] = l.useState(!1), [x, S] = l.useState(!1), [I, T] = l.useState(16 / 9), [v, N] = l.useState({
             x: 0,
             y: 0
         }), y = l.useRef(null), b = l.useRef(null);
@@ -73,22 +73,22 @@ let m = {
                 let n = t ?? d,
                     i = y.current.clientWidth,
                     l = y.current.clientHeight,
-                    a = i * (n - 1) / 2,
+                    s = i * (n - 1) / 2,
                     r = l * (n - 1) / 2;
                 return {
-                    x: (0, s.clamp)(e.x, -a, a),
-                    y: (0, s.clamp)(e.y, -r, r)
+                    x: (0, a.clamp)(e.x, -s, s),
+                    y: (0, a.clamp)(e.y, -r, r)
                 }
             }, [d]),
             R = l.useCallback((e, i, l) => {
-                let r = (0, s.clamp)(e, n, o);
+                let r = (0, a.clamp)(e, n, o);
                 if (null == i || r === d) return;
                 p(!0);
                 let c = r / d;
-                v(e => j({
+                N(e => j({
                     x: (e.x - i.x) * c + i.x,
                     y: (e.y - i.y) * c + i.y
-                }, r)), u(r), g(r, l, t), null == b.current && (b.current = new a.Ep), b.current.start(2e3, () => {
+                }, r)), u(r), g(r, l, t), null == b.current && (b.current = new s.Ep), b.current.start(2e3, () => {
                     p(!1)
                 })
             }, [j, o, n, t, d]),
@@ -100,27 +100,27 @@ let m = {
                 setZoomLevel: u,
                 isZooming: h,
                 setIsZooming: p,
-                isDragging: f,
-                setIsDragging: _,
+                isDragging: _,
+                setIsDragging: f,
                 isWheeling: E,
-                setIsWheeling: x,
-                isSlidering: C,
+                setIsWheeling: C,
+                isSlidering: x,
                 setIsSlidering: S,
                 videoAspectRatio: I,
                 setVideoAspectRatio: T,
                 doZoom: R,
-                panOffset: N,
-                setPanOffset: v,
+                panOffset: v,
+                setPanOffset: N,
                 wrapperRef: y,
                 clampPanOffset: j
-            }), [j, R, f, C, E, h, o, n, N, I, d]);
+            }), [j, R, _, x, E, h, o, n, v, I, d]);
         return (0, i.jsx)(A.Provider, {
             value: M,
             children: c
         })
     });
 
-function f(e) {
+function _(e) {
     return e.enableZoom ? (0, i.jsx)(p, {
         ...e
     }) : e.children

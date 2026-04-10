@@ -1,6 +1,6 @@
 /** chunk id: 329554 params = (module,exports,require) **/
-i.d(e, {
-    A: () => g
+i.d(t, {
+    A: () => A
 });
 var n = i(627968);
 i(64700);
@@ -8,27 +8,27 @@ var a = i(311907),
     l = i(397927),
     s = i(302959),
     r = i(765379),
-    d = i(592182),
+    c = i(592182),
     o = i(506326),
-    c = i(409626),
+    d = i(409626),
     u = i(692969),
     p = i(78871),
     m = i(287809),
-    A = i(804630),
+    _ = i(804630),
     h = i(257081);
 
-function E(t) {
+function g(e) {
     let {
-        resolvedActivity: e,
+        resolvedActivity: t,
         presenceActivity: i,
         showHeader: a = !0
-    } = t, s = (0, u.A)({
+    } = e, s = (0, u.A)({
         location: "UserActivityRow",
-        applicationId: e.applicationId,
-        source: c.Ob.UserProfile,
-        sourceUserId: e.userId,
+        applicationId: t.applicationId,
+        source: d.Ob.UserProfile,
+        sourceUserId: t.userId,
         trackEntryPointImpression: !0
-    }), d = null != i && !(0, r.A)(i) && null != i.party, m = null != e.state && e.state.length > 0 && !d;
+    }), c = null != i && !(0, r.A)(i) && null != i.party, m = null != t.state && t.state.length > 0 && !c;
     return (0, n.jsxs)("div", {
         className: h.ec,
         children: [a ? (0, n.jsx)("div", {
@@ -36,12 +36,12 @@ function E(t) {
             children: (0, n.jsx)(l.Heading, {
                 variant: "text-xs/medium",
                 color: "text-muted",
-                children: (0, A._Q)(e.type)
+                children: (0, _._Q)(t.type)
             })
         }) : null, (0, n.jsxs)("div", {
             className: h.Wh,
-            children: [(0, n.jsx)(A.Tf, {
-                resolvedActivity: e
+            children: [(0, n.jsx)(_.Tf, {
+                resolvedActivity: t
             }), (0, n.jsx)("div", {
                 className: h.wt,
                 children: (0, n.jsxs)(l.DUT, {
@@ -52,17 +52,17 @@ function E(t) {
                         color: "text-strong",
                         className: h.DD,
                         lineClamp: 1,
-                        children: e.name
-                    }), null != e.details ? (0, n.jsx)(l.Text, {
+                        children: t.name
+                    }), null != t.details ? (0, n.jsx)(l.Text, {
                         variant: "text-xs/normal",
                         color: "text-muted",
                         lineClamp: 1,
-                        children: e.details
+                        children: t.details
                     }) : null, m ? (0, n.jsx)(l.Text, {
                         variant: "text-xs/normal",
                         color: "text-muted",
                         lineClamp: 1,
-                        children: e.state
+                        children: t.state
                     }) : null, null != i ? (0, n.jsxs)(o.mG, {
                         location: o.N5.VOICE_USER_POPOUT,
                         children: [(0, n.jsx)(p.QA, {
@@ -78,36 +78,36 @@ function E(t) {
         })]
     })
 }
-let g = /^(14256|21552)$/.test(i.j) ? function(t) {
+let A = /^(14256|21552)$/.test(i.j) ? function(e) {
     let {
-        channel: e,
+        channel: t,
         presenceActivity: i,
         userId: l,
         embeddedApp: r,
         applicationStream: o,
-        onAction: c,
+        onAction: d,
         showHeader: u = !0
-    } = t, p = (0, a.bG)([m.default], () => null != l ? m.default.getUser(l) : null, [l]);
+    } = e, p = (0, a.bG)([m.default], () => null != l ? m.default.getUser(l) : null, [l]);
     if (null == p) return null;
-    let h = (0, A.Gf)(p.id, i, r);
+    let h = (0, _.Gf)(p.id, i, r);
     return (0, n.jsxs)("div", {
-        children: [h.isSpotify ? (0, n.jsx)(A.vP, {
+        children: [h.isSpotify ? (0, n.jsx)(_.vP, {
             resolvedActivity: h,
             showHeader: u
-        }) : (0, n.jsx)(E, {
+        }) : (0, n.jsx)(g, {
             resolvedActivity: h,
             presenceActivity: i,
             showHeader: u
-        }), (0, n.jsx)(d.A, {
+        }), (0, n.jsx)(c.A, {
             type: null != o ? s.M.STREAM_PREVIEW : s.M.VOICE_CHANNEL,
             activity: i,
             embeddedActivity: r?.embeddedActivity,
             applicationStream: o,
             user: p,
-            guildId: e.guild_id,
-            channelId: e.id,
+            guildId: t.guild_id,
+            channelId: t.id,
             buttonVariant: "primary",
-            onAction: c
+            onAction: d
         })]
     })
 } : null

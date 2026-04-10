@@ -686,7 +686,7 @@ let _ = {
         })
     },
     DeprivateModal: async () => {
-        let e = (await Promise.all([n.e("8018"), n.e("77238")]).then(n.bind(n, 147696))).default;
+        let e = (await n.e("54857").then(n.bind(n, 147696))).default;
         return t => (0, a.jsx)(e, {
             ...t,
             guildId: "123456789012345678",
@@ -716,7 +716,7 @@ let _ = {
     ModeratorReportResolveConfirmModal: async () => {
         let {
             default: e
-        } = await n.e("92682").then(n.bind(n, 390897));
+        } = await Promise.resolve().then(n.bind(n, 390897));
         return t => (0, a.jsx)(e, {
             ...t,
             handleResolveFlag: () => console.log("ModeratorReportResolveConfirmModal: Flag resolved")
@@ -1183,7 +1183,7 @@ let _ = {
     OtherFriendRequestsModal: async () => {
         let {
             default: e
-        } = await Promise.all([n.e("71853"), n.e("34185")]).then(n.bind(n, 516259));
+        } = await Promise.all([n.e("71853"), n.e("60036")]).then(n.bind(n, 516259));
         return t => (0, a.jsx)(e, {
             ...t
         })

@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(975571),
-    a = n(927578),
-    r = n(580630),
+    r = n(927578),
+    a = n(580630),
     o = n(780964),
     d = n(858897),
     c = n(652215),
@@ -45,8 +45,8 @@ let _ = function(e) {
             })
         };
         let g = u.hd[u.gD.PREMIUM_MONTH_GUILD],
-            _ = a.Ay.getDefaultPrice(g.id, n),
-            x = (0, r.CE)((0, r.$g)(_.amount, _.currency), g.interval, g.intervalCount);
+            _ = r.Ay.getDefaultPrice(g.id, n),
+            x = (0, a.CE)((0, a.$g)(_.amount, _.currency), g.interval, g.intervalCount);
         return {
             subtitle: n ? m.intl.string(m.t.bhPzXR) : m.intl.string(m.t.Zs9h9Z),
             flavor: m.intl.formatToPlainString(m.t.PGgTdA, {

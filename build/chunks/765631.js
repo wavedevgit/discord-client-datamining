@@ -1,14 +1,14 @@
 /** chunk id: 765631 params = (module,exports,require) **/
 n.d(t, {
-    l: () => r
+    l: () => a
 });
 var i = n(253932),
     s = n(954571),
     l = n(406535),
-    a = n(652215);
+    r = n(652215);
 
-function r(e) {
-    i.zS.updateSetting(e), s.default.track(a.HAw.NOTIFICATION_SETTINGS_UPDATED, {
+function a(e) {
+    i.zS.updateSetting(e), s.default.track(r.HAw.NOTIFICATION_SETTINGS_UPDATED, {
         update_type: l.Y.ACCOUNT,
         upcoming_server_event_notifications: e
     })

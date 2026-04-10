@@ -1,7 +1,7 @@
 /** chunk id: 745891 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -17,7 +17,7 @@ var i = n(627968),
     A = n(189046);
 let f = Object.values(u.Li).map(e => 100 * e),
     g = (0, o.Ld)();
-class _ extends s.PureComponent {
+class m extends s.PureComponent {
     initialValue = 100 * this.props.opacity;
     handleUpdateBackgroundOpacity(e) {
         r.A.setTextWidgetOpacity((0, c.A)(e / 100)), r.A.track(h.HAw.OVERLAY_SETTINGS_UPDATED, {
@@ -52,6 +52,6 @@ class _ extends s.PureComponent {
         })
     }
 }
-let m = l.Ay.connectStores([d.default], () => ({
+let _ = l.Ay.connectStores([d.default], () => ({
     opacity: d.default.getTextWidgetOpacity()
-}))(_)
+}))(m)

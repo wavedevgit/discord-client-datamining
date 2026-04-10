@@ -3,8 +3,8 @@ n.d(t, {
     A: () => x
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(311907),
+    r = n(64700),
+    a = n(311907),
     l = n(314116),
     s = n(765671),
     o = n(4616),
@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(976860),
     u = n(71393),
     A = n(486020),
-    _ = n(998304),
-    h = n(624458),
+    h = n(998304),
+    _ = n(624458),
     m = n(202384),
     g = n(513461),
     p = n(212455),
@@ -28,8 +28,8 @@ function S(e) {
     let {
         guild: t,
         width: n,
-        height: r
-    } = e, l = a.useMemo(() => t?.splash != null ? A.Ay.getGuildSplashURL({
+        height: a
+    } = e, l = r.useMemo(() => t?.splash != null ? A.Ay.getGuildSplashURL({
         id: t?.id,
         splash: t?.splash
     }) : null, [t?.splash, t?.id]), s = (0, d.S)(l);
@@ -41,11 +41,11 @@ function S(e) {
             src: l,
             imageClassName: N.Iv,
             width: n,
-            height: r
+            height: a
         }), null != s && (0, i.jsx)("div", {
             className: N.qj,
             style: {
-                background: `linear-gradient(180deg, ${(0,_.cb)(s,.16)} 0%, ${(0,_.cb)(s,1)} 100%)`
+                background: `linear-gradient(180deg, ${(0,h.cb)(s,.16)} 0%, ${(0,h.cb)(s,1)} 100%)`
             }
         }), (0, i.jsx)("div", {
             className: N.qj
@@ -59,20 +59,20 @@ let x = e => {
         ref: n,
         width: o,
         height: d
-    } = (0, s.Ay)(), A = (0, r.bG)([p.A], () => p.A.getRequest(t)), _ = (0, r.bG)([u.A], () => u.A.getGuild(t)), {
+    } = (0, s.Ay)(), A = (0, a.bG)([p.A], () => p.A.getRequest(t)), h = (0, a.bG)([u.A], () => u.A.getGuild(t)), {
         hasFetchedRequestToJoinGuilds: x,
         guildPreviewDisabled: v
-    } = (0, r.cf)([p.A], () => ({
+    } = (0, a.cf)([p.A], () => ({
         hasFetchedRequestToJoinGuilds: p.A.hasFetchedRequestToJoinGuilds,
         guildPreviewDisabled: p.A.getJoinRequestGuild(t)
     }));
-    a.useEffect(() => {
-        null != _ && (0, c.pX)(C.BVt.CHANNEL(t))
-    }, [_, t]), a.useEffect(() => {
-        x || h.A.fetchRequestToJoinGuilds()
+    r.useEffect(() => {
+        null != h && (0, c.pX)(C.BVt.CHANNEL(t))
+    }, [h, t]), r.useEffect(() => {
+        x || _.A.fetchRequestToJoinGuilds()
     }, [x]);
-    let b = a.useCallback(() => {
-            h.A.removeGuildJoinRequest(t), (0, c.pX)(C.BVt.ME)
+    let b = r.useCallback(() => {
+            _.A.removeGuildJoinRequest(t), (0, c.pX)(C.BVt.ME)
         }, [t]),
         y = (e, t) => () => {
             (0, l.A)({
@@ -84,7 +84,7 @@ let x = e => {
             })
         },
         O = async () => {
-            await h.A.resetGuildJoinRequest(t), (0, m.Ze)(t)
+            await _.A.resetGuildJoinRequest(t), (0, m.Ze)(t)
         }, L = e => {
             e ? y(T.intl.format(T.t["9ZezpN"], {
                 name: v?.name

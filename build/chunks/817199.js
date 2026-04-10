@@ -3,8 +3,8 @@ n.d(t, {
     A: () => p
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(996682),
+    r = n(64700),
+    a = n(996682),
     l = n(158954),
     s = n(554146),
     o = n(189252),
@@ -12,19 +12,19 @@ var i = n(627968),
     c = n(932001),
     u = n(829203),
     A = n(260982),
-    _ = n(49999),
-    h = n(429311),
+    h = n(49999),
+    _ = n(429311),
     m = n(985018);
 
 function g(e) {
     let {
         size: t = "md",
         width: n,
-        height: a,
+        height: r,
         ...s
-    } = e, o = (0, l.JtX)(t), c = o?.width ?? n, u = o?.height ?? a, A = (0, d.GV)();
+    } = e, o = (0, l.JtX)(t), c = o?.width ?? n, u = o?.height ?? r, A = (0, d.GV)();
     return (0, i.jsxs)("svg", {
-        ...(0, r.A)(s),
+        ...(0, a.A)(s),
         xmlns: "http://www.w3.org/2000/svg",
         width: c,
         height: u,
@@ -53,18 +53,18 @@ function g(e) {
 }
 
 function p() {
-    let [e, t] = (0, c.kn)([s.M.APRIL_FOOLS_2026_COACHMARK]), n = a.useRef(null), r = e === s.M.APRIL_FOOLS_2026_COACHMARK;
+    let [e, t] = (0, c.kn)([s.M.APRIL_FOOLS_2026_COACHMARK]), n = r.useRef(null), a = e === s.M.APRIL_FOOLS_2026_COACHMARK;
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(o.A, {
             ref: n,
             onClick: () => {
                 (0, u.A)({
                     source: "app_title_bar"
-                }), r && t(_.i.INDIRECT_ACTION)
+                }), a && t(h.i.INDIRECT_ACTION)
             },
             icon: g,
-            tooltip: m.intl.string(h.default.UnXoXM)
-        }), r && (0, i.jsx)(A.A, {
+            tooltip: m.intl.string(_.default.UnXoXM)
+        }), a && (0, i.jsx)(A.A, {
             markAsDismissed: t
         })]
     })

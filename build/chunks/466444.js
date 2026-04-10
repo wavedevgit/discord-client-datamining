@@ -1,10 +1,10 @@
 /** chunk id: 466444 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => _
 });
 var i = n(179771),
-    a = n(827343),
-    r = n(140175),
+    r = n(827343),
+    a = n(140175),
     l = n(430452),
     s = n(350535),
     o = n(636401),
@@ -13,14 +13,14 @@ var i = n(179771),
     u = n(652215),
     A = n(731854);
 
-function _(e) {
+function h(e) {
     let t = e.application.id;
     if (null == t) throw new o.A({
         errorCode: u.Lw6.INVALID_COMMAND
     }, "No application.");
     return t
 }
-let h = {
+let _ = {
     [u.e$_.SET_VOICE_SETTINGS_2]: {
         scope: c.hj,
         validation: e => (0, d.A)(e).required().keys({
@@ -37,14 +37,14 @@ let h = {
                 args: {
                     input_mode: n,
                     self_mute: i,
-                    self_deaf: r
+                    self_deaf: a
                 }
-            } = e, o = _(t);
-            null != n && a.A.setMode(n.type, {
+            } = e, o = h(t);
+            null != n && r.A.setMode(n.type, {
                 shortcut: (0, s.OH)(n.shortcut)
-            }, o), null != i && i !== l.Ay.isSelfMute(o) && a.A.toggleSelfMute({
+            }, o), null != i && i !== l.Ay.isSelfMute(o) && r.A.toggleSelfMute({
                 context: o
-            }), null != r && r !== l.Ay.isSelfDeaf(o) && a.A.toggleSelfDeaf({
+            }), null != a && a !== l.Ay.isSelfDeaf(o) && r.A.toggleSelfDeaf({
                 context: o
             })
         }
@@ -62,10 +62,10 @@ let h = {
                 args: {
                     user_id: n,
                     mute: i,
-                    volume: r
+                    volume: a
                 }
-            } = e, s = _(t);
-            null != i && i !== l.Ay.isLocalMute(n, s) && a.A.toggleLocalMute(n, s), null != r && a.A.setLocalVolume(n, r, s)
+            } = e, s = h(t);
+            null != i && i !== l.Ay.isLocalMute(n, s) && r.A.toggleLocalMute(n, s), null != a && r.A.setLocalVolume(n, a, s)
         }
     },
     [u.e$_.PUSH_TO_TALK]: {
@@ -81,7 +81,7 @@ let h = {
                     active: t
                 }
             } = e;
-            l.Ay.getMode(A.x.DEFAULT) === u.TBI.PUSH_TO_TALK && (0, r.N)(t)
+            l.Ay.getMode(A.x.DEFAULT) === u.TBI.PUSH_TO_TALK && (0, a.N)(t)
         }
     }
 }

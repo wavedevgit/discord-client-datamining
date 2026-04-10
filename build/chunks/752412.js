@@ -3,8 +3,8 @@ n.d(t, {
     A: () => p
 });
 var i = n(73153),
-    a = n(827343),
-    r = n(272355),
+    r = n(827343),
+    a = n(272355),
     l = n(15285),
     s = n(869146),
     o = n(430452),
@@ -12,19 +12,19 @@ var i = n(73153),
     c = n(652215),
     u = n(731854);
 let A = new Set,
-    _ = new Set,
-    h = null;
+    h = new Set,
+    _ = null;
 
 function m() {
-    for (let e of A) a.A.setDisableLocalVideo(e, c.bb8.MANUAL_ENABLED, u.x.DEFAULT, !1);
-    _.clear(), A.clear()
+    for (let e of A) r.A.setDisableLocalVideo(e, c.bb8.MANUAL_ENABLED, u.x.DEFAULT, !1);
+    h.clear(), A.clear()
 }
-class g extends r.A {
+class g extends a.A {
     _initialize() {
         i.h.subscribe("RTC_CONNECTION_VIDEO", this.handleIncomingVideo), i.h.subscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleManualLocalVideoToggle), i.h.subscribe("WINDOW_VISIBILITY_CHANGE", this.handleWindowVisibilityChange), i.h.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), s.A.addChangeListener(this.handlePopoutChange)
     }
     _terminate() {
-        i.h.unsubscribe("RTC_CONNECTION_VIDEO", this.handleIncomingVideo), i.h.unsubscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleManualLocalVideoToggle), i.h.unsubscribe("WINDOW_VISIBILITY_CHANGE", this.handleWindowVisibilityChange), i.h.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), s.A.removeChangeListener(this.handlePopoutChange), m(), h = null
+        i.h.unsubscribe("RTC_CONNECTION_VIDEO", this.handleIncomingVideo), i.h.unsubscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleManualLocalVideoToggle), i.h.unsubscribe("WINDOW_VISIBILITY_CHANGE", this.handleWindowVisibilityChange), i.h.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), s.A.removeChangeListener(this.handlePopoutChange), m(), _ = null
     }
     handleIncomingVideo(e) {
         let {
@@ -33,19 +33,19 @@ class g extends r.A {
             streamId: i
         } = e;
         if (n !== u.x.DEFAULT || null == i) return;
-        let r = null != l.Ay.getVisibleGame(),
-            h = d.A.isVisible(),
+        let a = null != l.Ay.getVisibleGame(),
+            _ = d.A.isVisible(),
             m = s.A.getWindowVisible(c.MLl.CHANNEL_CALL_POPOUT),
             g = o.Ay.isLocalVideoDisabled(t, n),
-            p = _.has(t);
-        !r || h || m || g || p || (A.add(t), a.A.setDisableLocalVideo(t, c.bb8.DISABLED, n, !1))
+            p = h.has(t);
+        !a || _ || m || g || p || (A.add(t), r.A.setDisableLocalVideo(t, c.bb8.DISABLED, n, !1))
     }
     handleManualLocalVideoToggle(e) {
         let {
             userId: t,
             persist: n
         } = e;
-        n && (_.add(t), A.delete(t))
+        n && (h.add(t), A.delete(t))
     }
     handleWindowVisibilityChange = e => {
         let {
@@ -57,7 +57,7 @@ class g extends r.A {
         let {
             channelId: t
         } = e;
-        t !== h && (m(), h = t)
+        t !== _ && (m(), _ = t)
     };
     handlePopoutChange = () => {
         s.A.getWindowVisible(c.MLl.CHANNEL_CALL_POPOUT) && m()

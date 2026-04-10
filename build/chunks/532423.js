@@ -11,8 +11,8 @@ var i = n(627968),
     c = n(549996),
     d = n(498470),
     u = n(635995),
-    _ = n(652215),
-    E = n(49999);
+    E = n(652215),
+    _ = n(49999);
 
 function T() {
     let t = (0, c.c)(r.C.NAGBAR),
@@ -20,12 +20,12 @@ function T() {
         n = t?.promotionId,
         T = l.useCallback(() => {
             null != n && (0, a.qr)(s.M.PREMIUM_MARKETING_MOMENT_NAGBAR_UPSELL, n, {
-                dismissAction: E.i.USER_DISMISS
+                dismissAction: _.i.USER_DISMISS
             })
         }, [n]),
         A = l.useCallback(() => {
-            o.default.track(_.HAw.APP_NOTICE_CLOSED, {
-                notice_type: _.kqX.PREMIUM_MARKETING_NAGBAR
+            o.default.track(E.HAw.APP_NOTICE_CLOSED, {
+                notice_type: E.kqX.PREMIUM_MARKETING_NAGBAR
             }), T()
         }, [T]);
     if (null == e) return null;
@@ -40,8 +40,8 @@ function T() {
         }), "" !== e.ctaLabel && (0, i.jsx)(u.fY, {
             text: e.ctaLabel,
             onClick: () => {
-                o.default.track(_.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
-                    notice_type: _.kqX.PREMIUM_MARKETING_NAGBAR
+                o.default.track(E.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
+                    notice_type: E.kqX.PREMIUM_MARKETING_NAGBAR
                 }), I()
             }
         })]

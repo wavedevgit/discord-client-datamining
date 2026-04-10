@@ -2,23 +2,23 @@
 n.d(t, {
     A: () => g
 });
-var l = n(311907),
-    i = n(73153),
+var i = n(311907),
+    l = n(73153),
     r = n(640631),
     s = n(626584),
     a = n(734057),
-    u = n(320501),
-    o = n(595766);
+    o = n(320501),
+    u = n(595766);
 let d = -1 / 0,
     c = new s.A("MessagePreviewStore");
-class h extends l.Ay.Store {
+class h extends i.Ay.Store {
     initialize() {
-        this.waitFor(a.A, u.A)
+        this.waitFor(a.A, o.A)
     }
     guilds = new Map;
     generation = 0;
     constructor() {
-        super(i.h, {
+        super(l.h, {
             CONNECTION_OPEN: e => this.handleConnectionOpen(e),
             GUILD_CREATE: e => this.handleGuildCreate(e),
             GUILD_DELETE: e => this.handleGuildDelete(e),
@@ -44,7 +44,7 @@ class h extends l.Ay.Store {
         return this.guilds.get(e)?.messageRecord(t) ?? null
     }
     data(e) {
-        return this.guilds.has(e) || this.guilds.set(e, new o.x), this.guilds.get(e)
+        return this.guilds.has(e) || this.guilds.set(e, new u.x), this.guilds.get(e)
     }
     handleOneGuildCreate(e) {
         let t = this.data(e.id);
@@ -66,19 +66,19 @@ class h extends l.Ay.Store {
     handleMessageDelete(e) {
         let t = e.guildId ?? null;
         if (this.data(t)?.messageId(e.channelId) === e.id) {
-            let n = u.A.getMessages(e.channelId),
-                l = n.hasMoreAfter ? null : n.last();
-            null != l ? this.data(t).put(e.channelId, l, this.generation) : this.data(t).delete(e.channelId)
+            let n = o.A.getMessages(e.channelId),
+                i = n.hasMoreAfter ? null : n.last();
+            null != i ? this.data(t).put(e.channelId, i, this.generation) : this.data(t).delete(e.channelId)
         }
     }
     handleMessageUpdate(e) {
         let t = e.guildId ?? null,
             n = e.message.channel_id,
-            l = e.message.id;
-        if (null == n || null == l) return !1;
-        let i = this.data(t);
-        if (i?.messageId(n) !== l) return !1;
-        i?.update(e.message)
+            i = e.message.id;
+        if (null == n || null == i) return !1;
+        let l = this.data(t);
+        if (l?.messageId(n) !== i) return !1;
+        l?.update(e.message)
     }
     handleThreadListSync(e) {
         this.data(e.guildId).putMany(e.mostRecentMessages ?? [], this.generation)
@@ -100,7 +100,7 @@ class h extends l.Ay.Store {
     handleMessagePreviewsLocallyLoaded(e) {
         c.verbose(`adding local previews (guildId: ${e.guildId}, messages: ${e.messages.length})`);
         let t = this.data(e.guildId);
-        for (let [n, l] of e.messages) t.has(n) || t.put(n, l, d);
+        for (let [n, i] of e.messages) t.has(n) || t.put(n, i, d);
         t.localNeeded = !1
     }
     handleLogout(e) {

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(397927),
-    r = n(775602),
+    r = n(397927),
+    a = n(775602),
     o = n(201805),
     d = n(461797),
     c = n(985018),
@@ -16,7 +16,7 @@ function m(e) {
     let {
         preset: t,
         onShuffle: n
-    } = e, m = (0, l.bG)([r.A], () => r.A.useReducedMotion), g = (0, o.Xf)({
+    } = e, m = (0, l.bG)([a.A], () => a.A.useReducedMotion), g = (0, o.Xf)({
         useReducedMotion: m
     }), {
         name: _,
@@ -30,14 +30,14 @@ function m(e) {
     }, [t]);
     return (0, i.jsxs)("div", {
         className: u.kL,
-        children: [(0, i.jsx)(a.DUT, {
+        children: [(0, i.jsx)(r.DUT, {
             onClick: () => {
                 n(), g.startAnimation(!1)
             },
             className: u.x6,
             "aria-label": c.intl.string(c.t["44yJxh"]),
             children: g.render()
-        }), (0, i.jsxs)(a.DUT, {
+        }), (0, i.jsxs)(r.DUT, {
             onClick: () => {
                 n(), g.startAnimation(!1)
             },
@@ -48,7 +48,7 @@ function m(e) {
                 "aria-hidden": !0,
                 src: x,
                 className: u.L_
-            }), (0, i.jsx)(a.Text, {
+            }), (0, i.jsx)(r.Text, {
                 className: u._e,
                 variant: "text-sm/bold",
                 color: "always-white",

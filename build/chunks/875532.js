@@ -1,10 +1,10 @@
 /** chunk id: 875532 params = (module,exports,require) **/
 n.d(t, {
-    t: () => a
+    t: () => r
 });
 var i = n(419954),
     s = n(780964),
     l = n(524916);
-let a = (0, i.zZ)(s.X.ACCOUNT_STANDING_CATEGORY, {
+let r = (0, i.zZ)(s.X.ACCOUNT_STANDING_CATEGORY, {
     buildLayout: () => [l.y]
 })

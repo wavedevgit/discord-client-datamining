@@ -1,6 +1,6 @@
 /** chunk id: 180812 params = (module,exports,require) **/
 n.d(t, {
-    default: () => p
+    default: () => M
 });
 var i = n(627968);
 n(64700);
@@ -16,18 +16,18 @@ var l = n(397927),
     g = n(803664),
     b = n(29293),
     m = n(291247),
-    h = n(239211),
+    f = n(239211),
     x = n(707378),
-    f = n(399476),
+    h = n(399476),
     E = n(889460),
     j = n(443439),
     C = n(198229),
-    S = n(972432),
-    I = n(77544),
+    I = n(972432),
+    S = n(77544),
     v = n(652215),
-    D = n(985018);
+    _ = n(985018);
 
-function M(e) {
+function p(e) {
     let {
         user: t,
         guildId: n,
@@ -35,46 +35,46 @@ function M(e) {
         mediaEngineContext: d,
         onSelect: o,
         onShowProfile: v,
-        onWatchStream: M,
-        appContext: _
-    } = e, p = (0, j.A)({
+        onWatchStream: p,
+        appContext: D
+    } = e, M = (0, j.A)({
         onAction: () => {
             v?.()
         }
     }), y = (0, x.A)({
         user: t,
-        context: _
+        context: D
     }), T = (0, u.D)({
         userId: t.id
     }), N = (0, b.A)({
         user: t,
-        appContext: _
-    }), U = (0, I.A)(t.id, M), L = (0, S.A)(t.id), V = (0, C.A)(t.id, d), G = (0, E.A)({
+        appContext: D
+    }), U = (0, S.A)(t.id, p), L = (0, I.A)(t.id), V = (0, C.A)(t.id, d), G = (0, E.A)({
         user: t
     }), O = (0, s.A)(null, t), B = (0, g.A)({
         user: t,
-        appContext: _
-    }), P = (0, h.A)({
+        appContext: D
+    }), P = (0, f.A)({
         user: t,
-        appContext: _
-    }), R = (0, f.A)({
+        appContext: D
+    }), R = (0, h.A)({
         user: t,
-        appContext: _
+        appContext: D
     }), k = (0, c.A)({
         id: t.id,
-        label: D.intl.string(D.t["/AXYnE"])
+        label: _.intl.string(_.t["/AXYnE"])
     }), w = (0, A.A)(t), F = (0, m.A)(t, n, r), X = t.isNonUserBot();
     return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "user-context",
         onClose: a.Z_,
-        "aria-label": D.intl.string(D.t.liqwPJ),
+        "aria-label": _.intl.string(_.t.liqwPJ),
         onSelect: o,
         children: [!X && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(l.rXV, {
                 children: w
             }), (0, i.jsxs)(l.rXV, {
-                children: [p, T, y, N, U]
+                children: [M, T, y, N, U]
             }), (0, i.jsx)(l.rXV, {
                 children: L
             }), (0, i.jsx)(l.rXV, {
@@ -90,7 +90,7 @@ function M(e) {
     })
 }
 
-function _(e) {
+function D(e) {
     let {
         user: t,
         mediaEngineContext: n,
@@ -105,37 +105,37 @@ function _(e) {
     }), v = (0, x.A)({
         user: t,
         context: u
-    }), M = (0, b.A)({
+    }), p = (0, b.A)({
         user: t,
         appContext: u
-    }), _ = (0, I.A)(t.id, o), p = (0, S.A)(t.id), y = (0, C.A)(t.id, n), T = (0, E.A)({
+    }), D = (0, S.A)(t.id, o), M = (0, I.A)(t.id), y = (0, C.A)(t.id, n), T = (0, E.A)({
         user: t
     }), N = (0, s.A)(null, t), U = (0, g.A)({
         user: t,
         appContext: u
-    }), L = (0, h.A)({
+    }), L = (0, f.A)({
         user: t,
         appContext: u
-    }), V = (0, f.A)({
+    }), V = (0, h.A)({
         user: t,
         appContext: u
     }), G = (0, c.A)({
         id: t.id,
-        label: D.intl.string(D.t["/AXYnE"])
+        label: _.intl.string(_.t["/AXYnE"])
     }), O = (0, A.A)(t), B = t.isNonUserBot();
     return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "user-context",
         onClose: a.Z_,
-        "aria-label": D.intl.string(D.t.liqwPJ),
+        "aria-label": _.intl.string(_.t.liqwPJ),
         onSelect: r,
         children: [!B && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(l.rXV, {
                 children: O
             }), (0, i.jsxs)(l.rXV, {
-                children: [m, v, M, _]
+                children: [m, v, p, D]
             }), (0, i.jsx)(l.rXV, {
-                children: p
+                children: M
             }), (0, i.jsx)(l.rXV, {
                 children: N
             }), (0, i.jsxs)(l.rXV, {
@@ -146,17 +146,17 @@ function _(e) {
         })]
     })
 }
-let p = (0, d.A)((0, r.A)(function(e) {
+let M = (0, d.A)((0, r.A)(function(e) {
     let {
         guildId: t,
         channelId: n,
         ...l
     } = e;
-    return null != t && null != n ? (0, i.jsx)(M, {
+    return null != t && null != n ? (0, i.jsx)(p, {
         ...l,
         guildId: t,
         channelId: n
-    }) : (0, i.jsx)(_, {
+    }) : (0, i.jsx)(D, {
         ...l,
         guildId: t,
         channelId: n

@@ -5,11 +5,11 @@ n.d(t, {
 var i = n(311907),
     s = n(274372),
     l = n(399925),
-    a = n(419954),
-    r = n(780964),
+    r = n(419954),
+    a = n(780964),
     o = n(696016),
     d = n(985018);
-let c = (0, a.Hn)(r.X.CLIPS_LENGTH, {
+let c = (0, r.Hn)(a.X.CLIPS_LENGTH, {
     useTitle: () => d.intl.string(d.t.OgfUio),
     useSubtitle: () => d.intl.string(d.t.H7j4tY),
     useValue: () => (0, i.bG)([s.A], () => s.A.getSettings().clipsLength),

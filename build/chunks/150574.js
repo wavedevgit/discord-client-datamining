@@ -3,17 +3,17 @@ n.d(t, {
     A: () => y
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(575593),
     o = n(440703),
     d = n(311907),
     c = n(582754),
     u = n(397927),
     A = n(765671),
-    _ = n(736653),
-    h = n(162232),
+    h = n(736653),
+    _ = n(162232),
     m = n(607470),
     g = n(287809),
     p = n(954571),
@@ -27,16 +27,16 @@ var i = n(627968),
     x = n(652215),
     v = n(985018),
     b = n(864833);
-let y = (0, a.memo)(function(e) {
+let y = (0, r.memo)(function(e) {
     let {
         quest: t
-    } = e, [n, r] = (0, a.useState)(!1), [y, O] = (0, a.useState)(24), [L, R] = (0, a.useState)(!1), P = (0, a.useRef)(null), D = (0, a.useRef)(null), j = (0, a.useRef)(null), M = (0, d.bG)([g.default], () => g.default.getCurrentUser()), {
+    } = e, [n, a] = (0, r.useState)(!1), [y, O] = (0, r.useState)(24), [L, R] = (0, r.useState)(!1), P = (0, r.useRef)(null), D = (0, r.useRef)(null), j = (0, r.useRef)(null), M = (0, d.bG)([g.default], () => g.default.getCurrentUser()), {
         ref: w,
         height: U = 0
-    } = (0, A.Ay)(), G = (0, _.Ay)(), k = (0, I.S5)(t.userStatus?.claimedAt, {
+    } = (0, A.Ay)(), G = (0, h.Ay)(), k = (0, I.S5)(t.userStatus?.claimedAt, {
         month: "numeric",
         day: "numeric"
-    }), V = t.userStatus?.claimedTier ?? 0, B = t.config.rewards[V], H = B?.type === o.l.FRACTIONAL_PREMIUM, F = B?.type === o.l.COLLECTIBLE, Y = B?.type === o.l.VIRTUAL_CURRENCY, W = B?.collectibleProduct?.items?.[0], K = W?.type === s.R.AVATAR_DECORATION ? W : null, q = a.useMemo(() => null == B ? null : !0 === Y && t.userStatus?.orbQuantityClaimed != null ? v.intl.format(v.t["nLXlh+"], {
+    }), V = t.userStatus?.claimedTier ?? 0, B = t.config.rewards[V], H = B?.type === o.l.FRACTIONAL_PREMIUM, F = B?.type === o.l.COLLECTIBLE, Y = B?.type === o.l.VIRTUAL_CURRENCY, W = B?.collectibleProduct?.items?.[0], K = W?.type === s.R.AVATAR_DECORATION ? W : null, q = r.useMemo(() => null == B ? null : !0 === Y && t.userStatus?.orbQuantityClaimed != null ? v.intl.format(v.t["nLXlh+"], {
         orbAmount: t.userStatus.orbQuantityClaimed
     }) : B.name, [B, Y, t]);
     (0, A.i4)(P, e => {
@@ -46,12 +46,12 @@ let y = (0, a.memo)(function(e) {
         if (!F || null == t || null == D.current || null == P.current || null == j.current) return;
         let n = P.current.getBoundingClientRect(),
             i = D.current.getBoundingClientRect(),
-            a = j.current.getBoundingClientRect();
-        O((i.top - n.top - a.height) / 2)
+            r = j.current.getBoundingClientRect();
+        O((i.top - n.top - r.height) / 2)
     });
     let z = (0, c.Mw)(G),
-        $ = a.useMemo(() => null != t.config.cosponsorMetadata, [t]),
-        Q = a.useMemo(() => (0, f.tW)(t, f.fY.REWARD), [t]),
+        $ = r.useMemo(() => null != t.config.cosponsorMetadata, [t]),
+        Q = r.useMemo(() => (0, f.tW)(t, f.fY.REWARD), [t]),
         X = n ? U + 8 : 0,
         {
             content_position: Z,
@@ -59,13 +59,13 @@ let y = (0, a.memo)(function(e) {
             ...ee
         } = (0, C.fF)(E.uF.TROPHY_CASE_CARD),
         et = () => {
-            r(!0), p.default.track(x.HAw.QUEST_HOVER, {
+            a(!0), p.default.track(x.HAw.QUEST_HOVER, {
                 quest_id: t.id,
                 ...ee
             })
         },
         en = () => {
-            r(!1)
+            a(!1)
         },
         ei = e => {
             R(!0), p.default.track(x.HAw.QUEST_ASSET_LOADING_FAILURE, {
@@ -91,7 +91,7 @@ let y = (0, a.memo)(function(e) {
                 style: {
                     top: y
                 },
-                children: (0, i.jsx)(h.A, {
+                children: (0, i.jsx)(_.A, {
                     avatarDecorationOverride: K,
                     user: M,
                     guildId: null,

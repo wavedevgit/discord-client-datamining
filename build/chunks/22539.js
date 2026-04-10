@@ -1,8 +1,8 @@
 /** chunk id: 22539 params = (module,exports,require) **/
 n.d(t, {
     AZ: () => o,
-    Cp: () => r,
-    _s: () => a,
+    Cp: () => a,
+    _s: () => r,
     fk: () => l,
     tA: () => d
 });
@@ -13,7 +13,7 @@ let l = (0, i.D)(() => ({
     startMinimized: !1,
     minimizeToTray: !0
 }));
-async function a() {
+async function r() {
     let e = await s.Ay.getOpenOnStart(),
         t = await s.Ay.getSetting("START_MINIMIZED", !1),
         n = await s.Ay.getSetting("MINIMIZE_TO_TRAY", !0);
@@ -24,7 +24,7 @@ async function a() {
     })
 }
 
-function r(e) {
+function a(e) {
     l.setState({
         openOnStartup: e
     }), s.Ay.send("TOGGLE_OPEN_ON_STARTUP", e)

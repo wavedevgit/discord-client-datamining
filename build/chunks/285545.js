@@ -3,8 +3,8 @@ n.d(t, {
     i: () => g
 }), n(321073);
 var i = n(64700),
-    a = n(311907),
-    r = n(919796),
+    r = n(311907),
+    a = n(919796),
     l = n(4106),
     s = n(105971),
     o = n(800319),
@@ -12,8 +12,8 @@ var i = n(64700),
     c = n(596720),
     u = n(859524),
     A = n(639040),
-    _ = n(567061),
-    h = n(563874),
+    h = n(567061),
+    _ = n(563874),
     m = n(118972);
 
 function g(e) {
@@ -24,19 +24,19 @@ function g(e) {
         unreadItems: E,
         readItems: I,
         allUnreadItemsHydrated: f
-    } = (0, A.A)(), C = (0, a.bG)([d.A], () => d.A.getVersion(), []), T = (0, a.bG)([d.A], () => !(d.A.isFirstPageHydrated() && C > 0));
+    } = (0, A.A)(), C = (0, r.bG)([d.A], () => d.A.getVersion(), []), T = (0, r.bG)([d.A], () => !(d.A.isFirstPageHydrated() && C > 0));
     i.useEffect(() => {
         null != d.A.getLoadId() && s.k.trackFeedShown({
             homeSessionId: "gravity"
         })
     }, [C]);
-    let N = (0, a.bG)([d.A], () => d.A.isRefreshing(), []),
-        S = (0, a.bG)([d.A], () => d.A.isHydrating(), []),
+    let N = (0, r.bG)([d.A], () => d.A.isRefreshing(), []),
+        S = (0, r.bG)([d.A], () => d.A.isHydrating(), []),
         [x, v] = i.useState([]),
         {
             loadId: b,
             lastScrollEventTimestamp: y
-        } = (0, a.cf)([d.A], () => ({
+        } = (0, r.cf)([d.A], () => ({
             loadId: d.A.getLoadId(),
             lastScrollEventTimestamp: d.A.lastScrollEvent()
         })),
@@ -51,7 +51,7 @@ function g(e) {
             } = e;
             return t.id
         }).pop(),
-        L = (0, r.A)(O);
+        L = (0, a.A)(O);
     i.useEffect(() => {
         if (N || T || null == L || null == O || O === L) return;
         let e = Date.now();
@@ -65,13 +65,13 @@ function g(e) {
             v(t);
             let n = [],
                 i = (0, u.P0)(t),
-                a = Date.now();
+                r = Date.now();
             for (let e = i.length - 1; e >= 0; e--) {
                 let t = i[e];
                 null != t && n.push({
                     id: t.id,
                     type: (0, c.xG)(t),
-                    timestamp: a++
+                    timestamp: r++
                 })
             }
             n.length > 0 && l.A.ackGravityItems(n, !0), s.k.trackItemShortImpression(t, i.map(e => ({
@@ -159,8 +159,8 @@ function g(e) {
     i.useEffect(() => {
         l.A.openICYMITab()
     }, []);
-    let M = (0, _.E)(t),
-        w = (0, h.n)(),
+    let M = (0, h.E)(t),
+        w = (0, _.n)(),
         {
             data: U,
             stickyHeaderIndices: G

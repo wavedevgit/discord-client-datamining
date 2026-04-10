@@ -3,13 +3,13 @@ n.d(t, {
     w: () => A
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(397927),
+    r = n(64700),
+    a = n(397927),
     l = n(975807),
     s = n(189252),
     o = n(975571),
     d = n(985018);
-let c = () => (0, r.mMO)(async () => {
+let c = () => (0, a.mMO)(async () => {
     let {
         default: e
     } = await n.e("81008").then(n.bind(n, 572723));
@@ -22,34 +22,34 @@ function u(e) {
     let {
         onClose: t
     } = e;
-    return (0, i.jsx)(r.W1t, {
+    return (0, i.jsx)(a.W1t, {
         "data-menu-migrated": !0,
         onSelect: () => {},
         navId: "staff-help-popout",
         variant: "fixed",
         onClose: t,
         "aria-label": d.intl.string(d.t.HpQykc),
-        children: (0, i.jsxs)(r.rXV, {
-            children: [(0, i.jsx)(r.Drp, {
+        children: (0, i.jsxs)(a.rXV, {
+            children: [(0, i.jsx)(a.Drp, {
                 id: "staff-help-bug-reporter",
                 label: d.intl.string(d.t["5LqopY"]),
-                icon: r.Q5O,
+                icon: a.Q5O,
                 leadingAccessory: {
                     type: "icon",
-                    icon: r.Q5O
+                    icon: a.Q5O
                 },
                 action: c
-            }), (0, i.jsx)(r.Drp, {
+            }), (0, i.jsx)(a.Drp, {
                 id: "staff-help-center",
                 label: "Go to Help Center",
-                icon: r.I9m,
+                icon: a.I9m,
                 leadingAccessory: {
                     type: "icon",
-                    icon: r.cBN
+                    icon: a.cBN
                 },
                 trailingIndicator: {
                     type: "icon",
-                    icon: r.I9m
+                    icon: a.I9m
                 },
                 action: () => (0, l.A)(o.C)
             })]
@@ -60,18 +60,18 @@ function u(e) {
 function A(e) {
     let {
         focusSectionProps: t
-    } = e, [n, l] = a.useState(!1), [o, A] = a.useState(0), _ = a.useRef(null), h = e => {
+    } = e, [n, l] = r.useState(!1), [o, A] = r.useState(0), h = r.useRef(null), _ = e => {
         clearTimeout(o), A(setTimeout(() => {
             l(e)
         }, 100))
     };
     return (0, i.jsx)("div", {
-        onMouseEnter: () => h(!0),
-        onMouseLeave: () => h(!1),
-        children: (0, i.jsx)(r.YNO, {
-            targetElementRef: _,
+        onMouseEnter: () => _(!0),
+        onMouseLeave: () => _(!1),
+        children: (0, i.jsx)(a.YNO, {
+            targetElementRef: h,
             shouldShow: n,
-            animation: r.YNO.Animation.NONE,
+            animation: a.YNO.Animation.NONE,
             position: "bottom",
             align: "right",
             autoInvert: !1,
@@ -82,14 +82,14 @@ function A(e) {
             }),
             children: (e, n) => {
                 let {
-                    isShown: a
+                    isShown: r
                 } = n;
                 return (0, i.jsx)(s.A, {
-                    ref: _,
+                    ref: h,
                     onClick: c,
-                    icon: r.Q5O,
+                    icon: a.Q5O,
                     "aria-label": d.intl.string(d.t["5LqopY"]),
-                    selected: a,
+                    selected: r,
                     ...t
                 })
             }

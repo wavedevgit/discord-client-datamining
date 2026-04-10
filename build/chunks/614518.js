@@ -1,12 +1,12 @@
 /** chunk id: 614518 params = (module,exports,require) **/
 let i;
 n.d(t, {
-    A: () => _,
+    A: () => f,
     a: () => m
 }), n(667532);
 var l = n(735438),
-    s = n(311907),
-    a = n(582754),
+    a = n(311907),
+    s = n(582754),
     r = n(73153),
     o = n(927813),
     c = n(667050);
@@ -24,9 +24,9 @@ let d = [],
     g = 10 * o.A.Millis.SECOND,
     p = (0, l.debounce)(() => {
         let e = (0, c.fr)(h);
-        a.OR.announce(e, "polite"), h = []
+        s.OR.announce(e, "polite"), h = []
     }, 500);
-class f extends s.Ay.Store {
+class _ extends a.Ay.Store {
     static displayName = "VoiceChannelEffectsStore";
     get recentlyUsedEmojis() {
         return d
@@ -41,7 +41,7 @@ class f extends s.Ay.Store {
         return u[e]
     }
 }
-let _ = new f(r.h, {
+let f = new _(r.h, {
     VOICE_CHANNEL_EFFECT_CLEAR: e => {
         let {
             userId: t

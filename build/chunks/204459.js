@@ -4,8 +4,8 @@ r.d(t, {
 });
 var n = r(64700),
     l = r(311907),
-    u = r(383501),
-    s = r(162605),
+    s = r(383501),
+    u = r(162605),
     i = r(814278);
 
 function a(e) {
@@ -18,7 +18,7 @@ function a(e) {
         let {
             userId: t
         } = e;
-        return (0, l.bG)([u.A, s.A], () => (0, i.m8)(t, [u.A, s.A]))
+        return (0, l.bG)([s.A, u.A], () => (0, i.m8)(t, [s.A, u.A]))
     }({
         userId: r
     }), d = n.useRef(null);

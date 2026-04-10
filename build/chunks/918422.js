@@ -1,12 +1,12 @@
 /** chunk id: 918422 params = (module,exports,require) **/
 n.d(t, {
-    Q: () => r
+    Q: () => a
 });
 var i = n(627968),
     s = n(158954),
     l = n(933297);
 
-function a(e) {
+function r(e) {
     let {
         decoration: t
     } = e, n = t.useText();
@@ -16,11 +16,11 @@ function a(e) {
     })
 }
 
-function r(e) {
+function a(e) {
     let {
         decoration: t
     } = e;
-    if (t.type === l.sw.TEXT) return (0, i.jsx)(a, {
+    if (t.type === l.sw.TEXT) return (0, i.jsx)(r, {
         decoration: t
     })
 }

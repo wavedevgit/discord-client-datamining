@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    r = n(51183),
+var r = n(397927),
+    a = n(51183),
     l = n(74034);
 
 function s(e) {
@@ -32,12 +32,12 @@ function s(e) {
                 className: l.Qs,
                 children: [o && (0, i.jsx)("div", {
                     className: l.qq,
-                    children: (0, i.jsx)(r.A, {
+                    children: (0, i.jsx)(a.A, {
                         emoji: s,
                         animate: !0,
                         hideTooltip: !1
                     })
-                }), d && (0, i.jsx)(a.Text, {
+                }), d && (0, i.jsx)(r.Text, {
                     variant: "text-md/normal",
                     color: "text-strong",
                     className: l.qS,

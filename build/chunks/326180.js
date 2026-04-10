@@ -5,14 +5,14 @@ n.d(t, {
 var i = n(627968),
     s = n(417597),
     l = n(775602),
-    a = n(676279),
-    r = n(307973),
+    r = n(676279),
+    a = n(307973),
     o = n(432870),
     d = n(938617);
 let c = e => {
     let {
         containerVisibilityPercentage: t
-    } = e, n = (0, s.bG)([l.A], () => l.A.useReducedMotion), c = (0, a.TM)();
+    } = e, n = (0, s.bG)([l.A], () => l.A.useReducedMotion), c = (0, r.TM)();
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.A, {
             supportHEVCAlpha: c,
@@ -20,7 +20,7 @@ let c = e => {
             containerVisibilityPercentage: t,
             containerClassName: d.wG,
             assetClassName: d.lu
-        }), (0, i.jsx)(r.A, {
+        }), (0, i.jsx)(a.A, {
             isMotionReduced: n,
             containerVisibilityPercentage: t,
             boltContainerClassName: d.nJ,

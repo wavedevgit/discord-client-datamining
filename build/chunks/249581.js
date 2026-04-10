@@ -1,20 +1,20 @@
 /** chunk id: 249581 params = (module,exports,require) **/
-n.d(t, {
-    A: () => _
+n.d(e, {
+    A: () => C
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
-    s = n(397927),
+    r = n(64700),
+    s = n(503698),
+    l = n.n(s),
+    a = n(397927),
     o = n(927018),
-    d = n(64585),
-    c = n(906688),
-    u = n(263244);
-let A = e => {
+    c = n(64585),
+    d = n(906688),
+    h = n(263244);
+let u = t => {
     let {
-        color: t
-    } = e;
+        color: e
+    } = t;
     return (0, i.jsxs)("svg", {
         width: "48",
         height: "28",
@@ -27,92 +27,92 @@ let A = e => {
             width: "14.4203",
             height: "14.4203",
             transform: "rotate(45 10.1968 7)",
-            className: u.__invalid_toastBG
+            className: h.__invalid_toastBG
         }), (0, i.jsx)("rect", {
             x: "27.3936",
             y: "0.59021",
             width: "23.4851",
             height: "23.4851",
             transform: "rotate(45 27.3936 0.59021)",
-            className: u.__invalid_toastBG
+            className: h.__invalid_toastBG
         }), (0, i.jsx)("rect", {
             x: "44.5903",
             y: "7",
             width: "14.4203",
             height: "14.4203",
             transform: "rotate(45 44.5903 7)",
-            className: u.__invalid_toastBG
+            className: h.__invalid_toastBG
         }), (0, i.jsx)("rect", {
             x: "10.1968",
             y: "13",
             width: "6",
             height: "6",
             transform: "rotate(45 10.1968 13)",
-            fill: t
+            fill: e
         }), (0, i.jsx)("path", {
             d: "M27.3936 4.39355L34.1233 16.2873L27.3936 28.1811L20.6638 16.2873L27.3936 4.39355Z",
-            fill: t
+            fill: e
         }), (0, i.jsx)("rect", {
             x: "44.5903",
             y: "13",
             width: "6",
             height: "6",
             transform: "rotate(45 44.5903 13)",
-            fill: t
+            fill: e
         })]
     })
 };
 
-function _(e) {
+function C(t) {
     let {
-        achievement: t,
+        achievement: e,
         unlocked: n
-    } = e, {
-        name: r,
-        description: _,
-        rarity: h,
-        hideDescriptionUntilUnlock: m,
-        onAction: g
     } = t, {
-        color: p
-    } = (0, o.ag)(h);
-    a.useEffect(() => {
-        let e = setTimeout(() => {
-            d.A.playAchievementUnlockSound()
+        name: s,
+        description: C,
+        rarity: _,
+        hideDescriptionUntilUnlock: A,
+        onAction: E
+    } = e, {
+        color: g
+    } = (0, o.ag)(_);
+    r.useEffect(() => {
+        let t = setTimeout(() => {
+            c.A.playAchievementUnlockSound()
         }, 50);
         return () => {
-            clearTimeout(e)
+            clearTimeout(t)
         }
     }, []);
-    let E = null != g && n,
-        I = E ? s.DUT : "div";
-    return (0, i.jsxs)(I, {
-        className: l()(u.kL, E && u.b),
+    let T = null != E && n,
+        L = T ? a.DUT : "div";
+    return (0, i.jsxs)(L, {
+        className: l()(h.kL, T && h.b),
         onClick: () => {
-            E && g()
+            T && E()
         },
         children: [(0, i.jsx)("div", {
-            className: u.zc,
-            children: (0, i.jsx)(c.A, {
-                achievementId: t.id,
-                size: c.A.Sizes.SIZE_40,
+            className: h.zc,
+            children: (0, i.jsx)(d.A, {
+                achievementId: e.id,
+                size: d.A.Sizes.SIZE_40,
                 unlocked: n
             })
         }), (0, i.jsxs)("div", {
-            className: u.__invalid_nameContainer,
-            children: [(0, i.jsx)(s.Text, {
+            className: h.__invalid_nameContainer,
+            children: [(0, i.jsx)(a.Text, {
                 variant: "text-md/semibold",
                 color: "text-strong",
-                children: r()
-            }), (0, i.jsx)(s.Text, {
+                children: s()
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
-                children: m && !n ? "?????" : _()
+                children: A && !n ? "?????" : C()
             })]
         }), (0, i.jsx)("div", {
-            className: u.Db,
-            children: (0, i.jsx)(A, {
-                color: p
+            className: h.Db,
+            children: (0, i.jsx)(u, {
+                color: g
             })
         })]
     })

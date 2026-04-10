@@ -7,8 +7,8 @@ n.d(t, {
 });
 var i, s = n(417597),
     l = n(71393),
-    a = n(576705),
-    r = n(287809),
+    r = n(576705),
+    a = n(287809),
     o = n(464477),
     d = n(652215),
     c = n(985018);
@@ -20,11 +20,11 @@ function u(e) {
 var m = ((i = {}).AVAILABLE = "available", i.UNAVAILABLE_NO_CRYPTO = "unavailable_no_crypto", i.UNAVAILABLE_UNVERIFIED = "unavailable_unverified", i);
 
 function g() {
-    let e = (0, s.bG)([r.default], () => r.default.getCurrentUser()?.verified);
+    let e = (0, s.bG)([a.default], () => a.default.getCurrentUser()?.verified);
     return o.K7 ? !1 === e ? "unavailable_unverified" : "available" : "unavailable_no_crypto"
 }
 
 function _() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-    return (0, s.bG)([l.A, a.A, r.default], () => r.default.getCurrentUser()?.hasAnyStaffLevel() ? e ? c.intl.string(c.t.hxf9fX) : c.intl.string(c.t["3iKih7"]) : l.A.getGuildsArray().some(e => e.features.has(d.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) && a.A.can(d.xBc.ADMINISTRATOR, e)) ? e ? c.intl.string(c.t.OYTCUh) : c.intl.string(c.t.HC8uSZ) : null)
+    return (0, s.bG)([l.A, r.A, a.default], () => a.default.getCurrentUser()?.hasAnyStaffLevel() ? e ? c.intl.string(c.t.hxf9fX) : c.intl.string(c.t["3iKih7"]) : l.A.getGuildsArray().some(e => e.features.has(d.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) && r.A.can(d.xBc.ADMINISTRATOR, e)) ? e ? c.intl.string(c.t.OYTCUh) : c.intl.string(c.t.HC8uSZ) : null)
 }

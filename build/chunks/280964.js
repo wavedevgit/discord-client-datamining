@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(64700),
     s = n(311907),
     l = n(827343),
-    a = n(793574),
-    r = n(419954),
+    r = n(793574),
+    a = n(419954),
     o = n(933297),
     d = n(347481),
     c = n(430452),
@@ -21,7 +21,7 @@ var i = n(64700),
     T = n(916607),
     f = n(509381),
     S = n(985018);
-let E = (0, r.Qx)(u.X.VOICE_INPUT_PROFILE_SETTING, {
+let E = (0, a.Qx)(u.X.VOICE_INPUT_PROFILE_SETTING, {
         useTitle: () => S.intl.string(S.t.LM3U3k),
         usePredicate: function() {
             let {
@@ -36,7 +36,7 @@ let E = (0, r.Qx)(u.X.VOICE_INPUT_PROFILE_SETTING, {
             return (0, s.bG)([c.Ay], () => c.Ay.getActiveInputProfile() ?? f.m.CUSTOM)
         },
         setValue: function(e) {
-            let t = [a.A.USER_SETTINGS_VOICE_AND_VIDEO];
+            let t = [r.A.USER_SETTINGS_VOICE_AND_VIDEO];
             l.A.setActiveInputProfile(e, {
                 analyticsLocations: t
             })
@@ -67,7 +67,7 @@ let E = (0, r.Qx)(u.X.VOICE_INPUT_PROFILE_SETTING, {
             })
         }
     }),
-    b = (0, r.zZ)(u.X.VOICE_INPUT_PROFILE_CATEGORY, {
+    b = (0, a.zZ)(u.X.VOICE_INPUT_PROFILE_CATEGORY, {
         useInlineNotice: function() {
             let e = (0, s.bG)([d.A, c.Ay], () => {
                 let e = c.Ay.getInputDeviceId();

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(417597),
+    r = n.n(l),
+    a = n(417597),
     o = n(397927),
     d = n(775602),
     c = n(793574),
@@ -43,7 +43,7 @@ let T = e => {
             description: n,
             className: s,
             imageSource: l,
-            imageClassName: r,
+            imageClassName: a,
             titleBadge: d,
             isNew: _ = !1,
             isEarlyAccess: x = !1
@@ -53,7 +53,7 @@ let T = e => {
         return (0, i.jsx)(u.f5, {
             value: A,
             children: (0, i.jsxs)("div", {
-                className: a()(p.perkCard, s),
+                className: r()(p.perkCard, s),
                 children: [_ ? (0, i.jsx)(g.A, {
                     className: p.perkCardNewBadge,
                     shouldInheritBackgroundColor: !0,
@@ -63,7 +63,7 @@ let T = e => {
                 }) : null, (0, i.jsx)("img", {
                     src: l,
                     alt: "",
-                    className: a()(r, p.perksCardArt)
+                    className: r()(a, p.perksCardArt)
                 }), (0, i.jsxs)("div", {
                     children: [(0, i.jsxs)(o.Heading, {
                         variant: "heading-lg/extrabold",
@@ -84,11 +84,11 @@ let T = e => {
             isSubscriberNitroHome: n = !1
         } = e, [l, c] = s.useState(!1), m = (0, x.d)({
             styles: p
-        }), g = (0, r.bG)([d.A], () => d.A.useReducedMotion), {
+        }), g = (0, a.bG)([d.A], () => d.A.useReducedMotion), {
             analyticsLocations: S
         } = (0, u.Ay)(), E = [m.emoji, m.streaming, m.upload, m.customAppIcons, m.soundboard, m.videoBackground, m.superReactions, m.stickersPremiumPerk, m.badgeAlt];
         return (0, i.jsxs)("div", {
-            className: a()(p.perksContainer, t, {
+            className: r()(p.perksContainer, t, {
                 [p.partiallyHidden]: n && !l,
                 [p.subscriberNitroHome]: n,
                 [p.reducedMotion]: g
@@ -98,7 +98,7 @@ let T = e => {
                 className: p.perksTitle,
                 children: n ? h.intl.string(h.t.QX14gI) : h.intl.string(h.t.RGadQR)
             }), (0, i.jsx)("div", {
-                className: a()(p.perkCardContainer, {
+                className: r()(p.perkCardContainer, {
                     [p.perkCardContainerExpanded]: l
                 }),
                 children: E.map(e => null != e && (0, i.jsx)(f, {
@@ -106,7 +106,7 @@ let T = e => {
                 }, e.title))
             }), n && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)("div", {
-                    className: a()({
+                    className: r()({
                         [p.sizeGizmo]: !l,
                         [p.sizeGizmoExpanded]: l
                     }),
@@ -120,7 +120,7 @@ let T = e => {
                         isShowingAll: l
                     })
                 }), (0, i.jsx)("div", {
-                    className: a()(p.cover, {
+                    className: r()(p.cover, {
                         [p.hidden]: l
                     })
                 })]

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(877624),
+    r = n.n(l),
+    a = n(877624),
     o = n(311907),
     d = n(230109),
     c = n(582754),
@@ -69,9 +69,9 @@ let F = e => {
             ei = (0, E.ar)(),
             es = (0, S.cg)(),
             el = (0, h.Gh)("premium-marketing-settings-page"),
-            ea = es ?? !1,
-            er = (0, o.bG)([N.A], () => {
-                let e = N.A.getMarketingComponentByType(r.C.BILLING_SETTINGS_NITRO_GIFT_BANNER);
+            er = es ?? !1,
+            ea = (0, o.bG)([N.A], () => {
+                let e = N.A.getMarketingComponentByType(a.C.BILLING_SETTINGS_NITRO_GIFT_BANNER);
                 return null == e || "billingSettingsNitroGiftBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.billingSettingsNitroGiftBanner
             }),
             {
@@ -109,7 +109,7 @@ let F = e => {
                         showIcon: !1,
                         subscriptionTier: M.pe.TIER_2,
                         className: w.Ph,
-                        hasActivePromotion: ea,
+                        hasActivePromotion: er,
                         textOptions: {
                             textClassName: w.Ac
                         },
@@ -123,11 +123,11 @@ let F = e => {
             "data-cy": "tier-0-marketing-page",
             children: [(0, i.jsx)(R.A, {
                 premiumSubscription: Q,
-                className: a()(V.R3, {
+                className: r()(V.R3, {
                     [V.aZ]: ei
                 })
             }), (0, i.jsxs)("div", {
-                className: a()({
+                className: r()({
                     [V.n1]: ei
                 }),
                 children: [(0, i.jsx)(F, {
@@ -139,12 +139,12 @@ let F = e => {
                     forceDarkTheme: !0
                 })]
             }), (0, i.jsxs)("div", {
-                className: a()({
+                className: r()({
                     [V.V1]: !ei
                 }),
-                children: [null != er && (0, i.jsx)(y.c, {
+                children: [null != ea && (0, i.jsx)(y.c, {
                     className: V.w$,
-                    config: er
+                    config: ea
                 }), (0, i.jsx)(d.L, {
                     innerRef: t,
                     onChange: e => z(e),
@@ -153,7 +153,7 @@ let F = e => {
                     children: (0, i.jsx)(v.Ay, {
                         ref: t,
                         subscriptionTier: ee,
-                        className: a()({
+                        className: r()({
                             [V.p7]: ei,
                             [V.Pw]: ei,
                             [V.AG]: es,

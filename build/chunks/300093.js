@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(397927),
-    r = n(544420),
+    r = n(397927),
+    a = n(544420),
     o = n(684013),
     d = n(429913),
     c = n(15285),
@@ -35,7 +35,7 @@ function E() {
         let {
             enabledLegacy: i
         } = n;
-        r.Ay.toggleOverlay(t, e, i)
+        a.Ay.toggleOverlay(t, e, i)
     }, j = s.useMemo(() => m.O ? b ? f.intl.string(f.t.C7bLTQ) : f.intl.string(f.t.ndgADE) : f.intl.string(f.t.m7X4az), [b]);
     return 0 === C.length ? (0, i.jsx)(T.A, {
         title: f.intl.string(f.t["7BlVIs"]),
@@ -43,7 +43,7 @@ function E() {
         "aria-label": f.intl.string(f.t["7BlVIs"]),
         className: S.dA,
         action: (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(a.dOG, {
+            children: [(0, i.jsx)(r.dOG, {
                 checked: n,
                 disabled: b,
                 onChange: e => N(e)
@@ -57,9 +57,9 @@ function E() {
         title: f.intl.string(f.t["7BlVIs"]),
         description: j,
         "aria-label": f.intl.string(f.t["7BlVIs"]),
-        action: (0, i.jsx)(a.DUT, {
+        action: (0, i.jsx)(r.DUT, {
             onClick: e => (0, T.$)(e),
-            children: (0, i.jsx)(a.dOG, {
+            children: (0, i.jsx)(r.dOG, {
                 checked: n,
                 disabled: b,
                 onChange: e => N(e)
@@ -67,12 +67,12 @@ function E() {
         }),
         children: [(0, i.jsx)("div", {
             className: S.SC,
-            children: (0, i.jsx)(a.Text, {
+            children: (0, i.jsx)(r.Text, {
                 variant: "text-xs/semibold",
                 color: "text-muted",
                 children: f.intl.string(f.t.FzoWRo)
             })
-        }), (0, i.jsx)(a.IpV, {
+        }), (0, i.jsx)(r.IpV, {
             className: S.XG,
             children: C.map((e, t) => (0, i.jsx)(p.A, {
                 rawGame: e,

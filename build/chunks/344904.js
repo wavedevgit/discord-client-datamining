@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i, s = n(627968),
     l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    r = n(503698),
+    a = n.n(r),
     o = n(311907),
     d = n(397927),
     c = n(775602),
@@ -21,7 +21,7 @@ let h = e => {
             avatarDecorationLegacyAssetId: t,
             avatarDecorationSkuId: n,
             avatarDecoAssetDescription: i
-        } = e, a = l.useMemo(() => (0, u.A)({
+        } = e, r = l.useMemo(() => (0, u.A)({
             legacyAssetId: t,
             skuId: n,
             size: d._3J.SIZE_120,
@@ -31,10 +31,10 @@ let h = e => {
             className: x.Q7,
             children: (0, s.jsx)("div", {
                 className: x.Nk,
-                children: null != a && (0, s.jsx)("img", {
+                children: null != r && (0, s.jsx)("img", {
                     className: x.CH,
                     alt: i,
-                    src: a
+                    src: r
                 })
             })
         })
@@ -45,7 +45,7 @@ let h = e => {
             iconClassName: n,
             staticPercentage: i,
             innerCircleClassName: l,
-            progressCircleStrokeSize: a,
+            progressCircleStrokeSize: r,
             backgroundCircleSize: d,
             percentage: u,
             initialPercentage: A,
@@ -59,14 +59,14 @@ let h = e => {
             circleStroke: v
         } = e, N = (0, o.bG)([c.A], () => c.A.useReducedMotion), I = t && !N;
         return (0, s.jsx)("div", {
-            className: r()(x.G3, n),
+            className: a()(x.G3, n),
             children: (0, s.jsx)(_.A, {
-                animationClassName: r()(x._0, {
+                animationClassName: a()(x._0, {
                     [x.uJ]: I,
                     [b ?? ""]: I
                 }),
                 progressCircleStroke: v,
-                progressCircleStrokeSize: a,
+                progressCircleStrokeSize: r,
                 percentage: i ?? u,
                 initialPercentage: i ?? A,
                 progressCircleVariation: p,
@@ -75,7 +75,7 @@ let h = e => {
                         case 0:
                             return (0, s.jsx)(m.A, {
                                 className: I ? x.Ow : void 0,
-                                backgroundColor: r()(x.vH, l),
+                                backgroundColor: a()(x.vH, l),
                                 backgroundCircleSize: d
                             });
                         case 1:

@@ -21,7 +21,7 @@ let p = u.UVF.DEFAULT,
         opacity: A
     }),
     g = s.createContext(void 0),
-    _ = e => {
+    m = e => {
         let {
             children: t,
             className: n,
@@ -43,7 +43,7 @@ let p = u.UVF.DEFAULT,
             }
         })
     };
-class m extends s.PureComponent {
+class _ extends s.PureComponent {
     static defaultProps = {
         disableScroll: !1
     };
@@ -119,7 +119,7 @@ x.Background = e => {
         opacityOverride: n
     } = e;
     if (null == t) return null;
-    let l = [_, m, E];
+    let l = [m, _, E];
     return (0, i.jsx)(f.Consumer, {
         children: e => {
             let {
@@ -140,7 +140,7 @@ x.Background = e => {
             }
         }
     })
-}, x.Body = m, x.Content = E, x.Icon = e => {
+}, x.Body = _, x.Content = E, x.Icon = e => {
     let {
         ref: t,
         icon: n,
@@ -175,5 +175,5 @@ x.Background = e => {
             })
         })
     })
-}, x.Bar = _;
+}, x.Bar = m;
 let y = x

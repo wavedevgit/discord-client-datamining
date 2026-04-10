@@ -5,15 +5,15 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(735438),
-    a = n.n(l),
-    r = n(935399),
+    r = n.n(l),
+    a = n(935399),
     o = n(311907),
     d = n(397927),
     c = n(54570),
     u = n(8880),
     m = n(75804),
     g = n(985018);
-let _ = a().debounce(e => {
+let _ = r().debounce(e => {
     (0, c.zU)(e)
 }, 250);
 
@@ -49,7 +49,7 @@ function x() {
 
 function A() {
     let [e, t] = s.useState(!1);
-    return (0, r.l0)(() => (0, c.pr)()), (0, i.jsx)(d.Button, {
+    return (0, a.l0)(() => (0, c.pr)()), (0, i.jsx)(d.Button, {
         text: g.intl.string(g.t.SKNnqq),
         icon: e ? d.E$n : d.udU,
         size: "sm",

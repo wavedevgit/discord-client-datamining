@@ -33,9 +33,9 @@ function u(e) {
         null != g && (0, r.A)(g)
     }, [g]), E = "sticker" === u;
     if (!A || !d.p5 || !p || "emoji" !== u && !E || null == n) return null;
-    let _ = E ? c.intl.string(c.t.SJ3249) : c.intl.string(c.t.Ap2oVy),
-        S = E ? c.intl.string(c.t.B1ubHx) : c.intl.string(c.t.cIoudn),
-        b = E ? c.intl.string(c.t["qAEi+C"]) : c.intl.string(c.t.gDAM2n);
+    let S = E ? c.intl.string(c.t.SJ3249) : c.intl.string(c.t.Ap2oVy),
+        _ = E ? c.intl.string(c.t.B1ubHx) : c.intl.string(c.t.cIoudn),
+        T = E ? c.intl.string(c.t["qAEi+C"]) : c.intl.string(c.t.gDAM2n);
     return (0, i.jsxs)(a.Drp, {
         id: "message-details",
         label: c.intl.string(c.t.IqqJNI),
@@ -53,7 +53,7 @@ function u(e) {
             }
         }), (0, i.jsx)(a.Drp, {
             id: "copy-item-id",
-            label: _,
+            label: S,
             action: f,
             leadingAccessory: {
                 type: "icon",
@@ -62,7 +62,7 @@ function u(e) {
         }), null != g && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(a.Drp, {
                 id: "copy-image-link",
-                label: S,
+                label: _,
                 action: h,
                 leadingAccessory: {
                     type: "icon",
@@ -70,7 +70,7 @@ function u(e) {
                 }
             }), (0, i.jsx)(a.Drp, {
                 id: "open-image-link",
-                label: b,
+                label: T,
                 action: y,
                 leadingAccessory: {
                     type: "icon",

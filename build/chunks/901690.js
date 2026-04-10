@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(451988),
     o = n(765671),
     c = n(964486),
@@ -23,28 +23,28 @@ let p = l.memo(function(e) {
         ...t
     } = e, {
         streamId: n,
-        onResize: s,
+        onResize: a,
         wrapperClassName: p
     } = t, {
-        onActive: f
+        onActive: _
     } = l.useContext(d.k3), {
-        enabled: _,
+        enabled: f,
         minZoom: E,
-        isDragging: x,
-        setIsDragging: C,
+        isDragging: C,
+        setIsDragging: x,
         panOffset: S,
         setPanOffset: I,
         zoomLevel: T,
-        isWheeling: N,
-        setIsWheeling: v,
+        isWheeling: v,
+        setIsWheeling: N,
         isSlidering: y,
         setVideoAspectRatio: b,
         wrapperRef: j,
         doZoom: R,
         clampPanOffset: M
-    } = l.useContext(m.e9), [O, D] = l.useState(null), [L, P] = l.useState(null), [k, w] = l.useState(0), [U, G] = l.useState(null), [F, B] = l.useState(null), [H, V] = l.useState(!1), K = l.useRef(new r.Ep), W = l.useRef(new r.Ep), z = l.useRef(null), q = T > E, Y = l.useCallback(e => {
-        e.width > 0 && e.height > 0 && b(e.width / e.height), s?.(e)
-    }, [s, b]), J = l.useCallback(e => {
+    } = l.useContext(m.e9), [L, O] = l.useState(null), [D, P] = l.useState(null), [U, k] = l.useState(0), [w, G] = l.useState(null), [F, H] = l.useState(null), [B, V] = l.useState(!1), W = l.useRef(new r.Ep), K = l.useRef(new r.Ep), z = l.useRef(null), Y = T > E, J = l.useCallback(e => {
+        e.width > 0 && e.height > 0 && b(e.width / e.height), a?.(e)
+    }, [a, b]), q = l.useCallback(e => {
         if (null == j.current) return m.qd;
         let t = j.current.getBoundingClientRect();
         return {
@@ -52,46 +52,46 @@ let p = l.memo(function(e) {
             y: e.clientY - t.top - t.height / 2
         }
     }, [j]), $ = l.useCallback(e => {
-        if (!q || !g(e)) return;
+        if (!Y || !g(e)) return;
         e.preventDefault(), e.stopPropagation();
-        let t = J(e);
-        C(!0), P(t), D(t), w(Date.now()), B(t), G(S)
-    }, [J, q, S, C]), Z = l.useCallback(e => {
-        if ((_ || q) && f(), !x || !q || null == F || null == U) return;
+        let t = q(e);
+        x(!0), P(t), O(t), k(Date.now()), H(t), G(S)
+    }, [q, Y, S, x]), Z = l.useCallback(e => {
+        if ((f || Y) && _(), !C || !Y || null == F || null == w) return;
         e.preventDefault(), e.stopPropagation();
-        let t = J(e),
+        let t = q(e),
             n = t.x - F.x,
             i = t.y - F.y;
         I(M({
-            x: U.x + n,
-            y: U.y + i
-        })), D(t)
-    }, [M, F, U, _, J, x, q, f, I]), X = l.useCallback(e => {
-        !x || g(e) || (e.preventDefault(), e.stopPropagation(), C(!1), B(null), G(null))
-    }, [x, C]), Q = l.useCallback(e => {
-        if (q && null != L && null != O) {
+            x: w.x + n,
+            y: w.y + i
+        })), O(t)
+    }, [M, F, w, f, q, C, Y, _, I]), X = l.useCallback(e => {
+        !C || g(e) || (e.preventDefault(), e.stopPropagation(), x(!1), H(null), G(null))
+    }, [C, x]), Q = l.useCallback(e => {
+        if (Y && null != D && null != L) {
             let {
                 x: t,
                 y: n
-            } = L, {
+            } = D, {
                 x: i,
                 y: l
-            } = O;
-            (Math.sqrt((i - t) ** 2 + (l - n) ** 2) > .01 || Date.now() - k >= 500) && (e.preventDefault(), e.stopPropagation())
+            } = L;
+            (Math.sqrt((i - t) ** 2 + (l - n) ** 2) > .01 || Date.now() - U >= 500) && (e.preventDefault(), e.stopPropagation())
         }
-    }, [q, L, k, O]), ee = l.useCallback(() => {
-        C(!1), B(null), G(null)
-    }, [C]), et = l.useCallback(e => {
-        _ && (v(!0), R(T - e.deltaY / 100, J(e), "wheel"), f(), K.current.start(100, () => {
-            v(!1)
+    }, [Y, D, U, L]), ee = l.useCallback(() => {
+        x(!1), H(null), G(null)
+    }, [x]), et = l.useCallback(e => {
+        f && (N(!0), R(T - e.deltaY / 100, q(e), "wheel"), _(), W.current.start(100, () => {
+            N(!1)
         }))
-    }, [_, R, T, J, f, v]);
+    }, [f, R, T, q, _, N]);
     (0, o.i4)(j, l.useCallback(e => {
         let {
             width: t,
             height: n
         } = e;
-        if (!q || null == t || null == n) return;
+        if (!Y || null == t || null == n) return;
         let i = z.current;
         if (null == i) {
             z.current = {
@@ -102,42 +102,42 @@ let p = l.memo(function(e) {
         }
         let {
             width: l,
-            height: s
+            height: a
         } = i;
-        1 > Math.abs(t - l) && 1 > Math.abs(n - s) || (V(!0), I(e => {
+        1 > Math.abs(t - l) && 1 > Math.abs(n - a) || (V(!0), I(e => {
             let i = l * (T - 1) / 2,
-                a = s * (T - 1) / 2,
+                s = a * (T - 1) / 2,
                 r = t * (T - 1) / 2,
                 o = n * (T - 1) / 2;
             return M({
                 x: (0 !== i ? e.x / i : 0) * r,
-                y: (0 !== a ? e.y / a : 0) * o
+                y: (0 !== s ? e.y / s : 0) * o
             })
         }), z.current = {
             width: t,
             height: n
-        }, W.current.start(100, () => {
+        }, K.current.start(100, () => {
             V(!1)
         }))
-    }, [M, q, T, I]), [q, T]), (0, c.l0)(() => {
-        K.current.stop(), W.current.stop()
+    }, [M, Y, T, I]), [Y, T]), (0, c.l0)(() => {
+        W.current.stop(), K.current.stop()
     }), l.useEffect(() => {
-        null != n && (0, u.c)(n, void 0, _ && q ? T : 1)
-    }, [_, q, n, T]);
+        null != n && (0, u.c)(n, void 0, f && Y ? T : 1)
+    }, [f, Y, n, T]);
     let en = l.useMemo(() => {
         let e = M(S);
         return {
             "--custom-zoom-scale": T,
             "--custom-pan-x": `${e.x}px`,
             "--custom-pan-y": `${e.y}px`,
-            "--custom-zoom-transition": x || H || N || y ? "none" : "transform 0.15s ease-out"
+            "--custom-zoom-transition": C || B || v || y ? "none" : "transform 0.15s ease-out"
         }
-    }, [M, x, H, N, y, S, T]);
+    }, [M, C, B, v, y, S, T]);
     return (0, i.jsx)("div", {
         ref: j,
-        className: a()(A.iE, p, {
-            [A.rc]: _ && q,
-            [A.d$]: x
+        className: s()(A.iE, p, {
+            [A.rc]: f && Y,
+            [A.d$]: C
         }),
         onMouseDown: $,
         onMouseMove: Z,
@@ -146,11 +146,11 @@ let p = l.memo(function(e) {
         onWheel: et,
         onClick: Q,
         children: null != n && (0, i.jsx)("div", {
-            className: a()(A.j, A.L2),
+            className: s()(A.j, A.L2),
             style: en,
             children: (0, i.jsx)(h.A, {
                 ...t,
-                onResize: Y,
+                onResize: J,
                 wrapperClassName: void 0
             })
         })

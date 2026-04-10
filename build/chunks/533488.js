@@ -1,24 +1,24 @@
 /** chunk id: 533488 params = (module,exports,require) **/
-n.d(e, {
-    _: () => r,
+n.d(t, {
+    _: () => a,
     d: () => s
 });
 var i = n(509381);
 let l = [i.m.VOICE_ISOLATION, i.m.STUDIO, i.m.CUSTOM];
 
-function r(t) {
+function a(e) {
     let {
-        location: e
-    } = t;
+        location: t
+    } = e;
     return {
         enabledInputProfiles: l
     }
 }
 
-function s(t) {
+function s(e) {
     let {
-        location: e
-    } = t;
+        location: t
+    } = e;
     return {
         enabledInputProfiles: l
     }

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(311907),
-    s = n(397927),
-    a = n(47167),
+    a = n(397927),
+    s = n(47167),
     r = n(495273),
     o = n(265869),
     c = n(437774),
@@ -16,37 +16,37 @@ var i = n(627968),
     A = n(427262),
     g = n(314307),
     p = n(393194),
-    f = n(455067),
-    _ = n(635157),
+    _ = n(455067),
+    f = n(635157),
     E = n(379768),
-    x = n(391257),
-    C = n(914835),
+    C = n(391257),
+    x = n(914835),
     S = n(825244),
     I = n(423563),
     T = n(652215),
-    N = n(746080),
-    v = n(985018),
+    v = n(746080),
+    N = n(985018),
     y = n(885106);
 
 function b(e) {
     let {
         canManageRoles: t,
         channel: n
-    } = e, s = t && (0, r.Ae)(n), a = (0, l.bG)([u.Ay], () => null != n.guild_id && n === u.Ay.getDefaultChannel(n.guild_id), [n]);
+    } = e, a = t && (0, r.Ae)(n), s = (0, l.bG)([u.Ay], () => null != n.guild_id && n === u.Ay.getDefaultChannel(n.guild_id), [n]);
     if ((0, o.A)(n.id)) return null;
     if (n.isForumPost()) return (0, i.jsx)(p.A, {
         channel: n
     });
-    if (d.Le.has(n.type)) return (0, i.jsx)(C.A, {
+    if (d.Le.has(n.type)) return (0, i.jsx)(x.A, {
         channel: n
     });
-    if (a) return (0, i.jsx)(S.A, {
+    if (s) return (0, i.jsx)(S.A, {
         channel: n
     });
-    if (s) return (0, i.jsx)(E.A, {
+    if (a) return (0, i.jsx)(E.A, {
         channel: n
     });
-    return (0, i.jsx)(x.A, {
+    return (0, i.jsx)(C.A, {
         channel: n
     })
 }
@@ -55,7 +55,7 @@ function j(e) {
     let {
         channel: t,
         showingBanner: n
-    } = e, r = (0, a.Ay)(t), {
+    } = e, r = (0, s.Ay)(t), {
         type: o
     } = t, d = (0, l.bG)([m.default], () => t.isPrivate() ? m.default.getUser(t.getRecipientId()) : null), u = A.Ay.useUserTag(d), {
         canManageRoles: p,
@@ -64,18 +64,18 @@ function j(e) {
         canManageRoles: h.A.can(T.xBc.MANAGE_ROLES, t),
         canReadMessageHistory: h.A.can(T.xBc.READ_MESSAGE_HISTORY, t)
     }));
-    if (t.isSystemDM()) return (0, i.jsx)(_.A, {
+    if (t.isSystemDM()) return (0, i.jsx)(f.A, {
         channel: t,
-        children: v.intl.string(v.t.Rzvnig)
+        children: N.intl.string(N.t.Rzvnig)
     });
-    if (o === T.rbe.DM) return (0, i.jsxs)(_.A, {
+    if (o === T.rbe.DM) return (0, i.jsxs)(f.A, {
         channel: t,
         user: d,
-        children: [null == d || d.isProvisional ? null : (0, i.jsx)(s.Heading, {
+        children: [null == d || d.isProvisional ? null : (0, i.jsx)(a.Heading, {
             variant: "heading-xl/medium",
             className: y.SX,
             children: u
-        }), v.intl.format(v.t["Qvg+6+"], {
+        }), N.intl.format(N.t["Qvg+6+"], {
             username: r
         }), d?.isProvisional ? (0, i.jsx)(c.Y, {
             userId: d.id
@@ -89,19 +89,19 @@ function j(e) {
         if (t.isManaged()) return (0, i.jsxs)(g.Ay, {
             channelId: t.id,
             children: [(0, i.jsx)(g.cr, {
-                children: v.intl.format(v.t.I3R7Vn, {
+                children: N.intl.format(N.t.I3R7Vn, {
                     channelName: r
                 })
             }), (0, i.jsx)(g.j1, {
-                children: v.intl.string(v.t.M8Ao6I)
+                children: N.intl.string(N.t.M8Ao6I)
             })]
         });
-        else if (t.hasFlag(N.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(f.A, {
+        else if (t.hasFlag(v.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(_.A, {
         channel: t
     });
-    else return (0, i.jsx)(_.A, {
+    else return (0, i.jsx)(f.A, {
         channel: t,
-        children: v.intl.format(v.t.MFwcqO, {
+        children: N.intl.format(N.t.MFwcqO, {
             name: r
         })
     });
@@ -111,7 +111,7 @@ function j(e) {
     }) : (0, i.jsx)(g.Ay, {
         channelId: t.id,
         children: (0, i.jsx)(g.j1, {
-            children: v.intl.format(v.t.hPVEQG, {
+            children: N.intl.format(N.t.hPVEQG, {
                 channelName: r
             })
         })

@@ -17,9 +17,9 @@ var i = n(627968),
     A = n(939496),
     f = n(652215),
     g = n(996988),
-    _ = n(816223);
-let m = a._3J.SIZE_40,
-    x = (0, a.FT9)(m);
+    m = n(816223);
+let _ = a._3J.SIZE_40,
+    x = (0, a.FT9)(_);
 
 function E(e) {
     let {
@@ -33,11 +33,11 @@ function E(e) {
         themeType: I
     } = (0, A.E)(), N = s.useMemo(() => t.isNonUserBot() || (0, u.c)(t, v), [t, v]), {
         activities: T,
-        isMobileOnline: b
+        isMobileOnline: O
     } = (0, l.cf)([p.A], () => ({
         activities: p.A.getActivities(t.id),
         isMobileOnline: p.A.isMobileOnline(t.id)
-    })), O = (0, h.A)(t.id), {
+    })), b = (0, h.A)(t.id), {
         voiceChannel: j
     } = (0, d.A)({
         userId: t.id,
@@ -55,13 +55,13 @@ function E(e) {
                 right: 8
             }
         },
-        className: _.nM,
+        className: m.nM,
         onClick: S,
         onContextMenu: e => {
             (0, r.L3)(e, async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("97262"), n.e("11478"), n.e("32418"), n.e("73417")]).then(n.bind(n, 668569));
+                } = await Promise.all([n.e("97262"), n.e("3795"), n.e("32418"), n.e("73417")]).then(n.bind(n, 668569));
                 return n => (0, i.jsx)(e, {
                     ...n,
                     user: t
@@ -71,21 +71,21 @@ function E(e) {
         children: [(0, i.jsx)(a.euF, {
             src: t.getAvatarURL(y, x),
             "aria-label": t.username,
-            size: m,
+            size: _,
             status: N ? f.clD.UNKNOWN : E,
             statusBackdropColor: N ? void 0 : (0, a.C$5)(C),
-            isMobile: b,
-            className: _.my
+            isMobile: O,
+            className: m.my
         }), (0, i.jsxs)("div", {
-            className: _.zH,
+            className: m.zH,
             children: [(0, i.jsx)(o.A, {
                 user: t,
-                className: _.Tc,
-                discriminatorClass: _.D2
+                className: m.Tc,
+                discriminatorClass: m.D2
             }), (0, i.jsx)(c.A, {
                 user: t,
                 activities: T,
-                applicationStream: O,
+                applicationStream: b,
                 voiceChannel: j
             })]
         })]

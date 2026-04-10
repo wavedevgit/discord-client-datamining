@@ -1,32 +1,32 @@
 /** chunk id: 575530 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
-var i = n(627968),
-    a = n(64700),
-    r = n(311907),
-    l = n(528772),
-    s = n(944775),
-    o = n(927421),
-    d = n(734057),
-    c = n(309010),
-    u = n(427603),
-    _ = n(302614),
+var r = n(627968),
+    i = n(64700),
+    l = n(311907),
+    a = n(528772),
+    o = n(944775),
+    d = n(927421),
+    s = n(734057),
+    u = n(309010),
+    c = n(427603),
+    A = n(302614),
     h = n(980504),
-    m = n(401747);
-let p = a.memo(function() {
-    let [e, t] = (0, r.yK)([l.A], () => [l.A.enabled, l.A.keepOpen]), n = (0, r.bG)([c.A], () => c.A.getVoiceChannelId()), a = (0, r.bG)([d.A], () => d.A.getChannel(n), [n]), p = a?.getGuildId();
-    return e && null != a ? (0, i.jsx)(_.A, {
-        className: m.k,
-        children: (0, i.jsx)(o.A, {
+    f = n(401747);
+let g = i.memo(function() {
+    let [e, t] = (0, l.yK)([a.A], () => [a.A.enabled, a.A.keepOpen]), n = (0, l.bG)([u.A], () => u.A.getVoiceChannelId()), i = (0, l.bG)([s.A], () => s.A.getChannel(n), [n]), g = i?.getGuildId();
+    return e && null != i ? (0, r.jsx)(A.A, {
+        className: f.k,
+        children: (0, r.jsx)(d.A, {
             width: h.ed.width,
             height: h.ed.height,
-            guildId: p,
-            channel: a,
+            guildId: g,
+            channel: i,
             keepOpen: t,
             onClose: function() {
-                let e = (0, u.A)();
-                null != e && (0, s.Lk)(e)
+                let e = (0, c.A)();
+                null != e && (0, o.Lk)(e)
             },
             analyticsSource: "overlay"
         })

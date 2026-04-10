@@ -6,12 +6,12 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(419954),
-    a = n(780964),
-    r = n(590321),
+    r = n(780964),
+    a = n(590321),
     o = n(818348),
     d = n(985018);
-let c = (0, l.E2)(a.X.ACCOUNT_INFO_AGE_GROUP_INFO_SETTING, {
-    usePredicate: () => (0, r.f)("info"),
+let c = (0, l.E2)(r.X.ACCOUNT_INFO_AGE_GROUP_INFO_SETTING, {
+    usePredicate: () => (0, a.f)("info"),
     useSearchTerms: () => [d.intl.string(d.t["/52UYy"])],
     Component: function() {
         return (0, i.jsx)(s.D0$, {

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(397927),
-    r = n(565645),
+    r = n(397927),
+    a = n(565645),
     o = n(688810),
     d = n(687021),
     c = n(128450),
@@ -46,15 +46,15 @@ function C(e) {
     } = s, c = null != o || null != d;
     return (0, i.jsxs)("div", {
         className: E.Io,
-        children: [c ? (0, i.jsx)(r.A, {
+        children: [c ? (0, i.jsx)(a.A, {
             emojiId: o,
             emojiName: d,
             className: E.nW
-        }) : (0, i.jsx)(a.HKD, {
+        }) : (0, i.jsx)(r.HKD, {
             size: "md",
             color: "currentColor",
             className: E.nW
-        }), (0, i.jsx)(a.Text, {
+        }), (0, i.jsx)(r.Text, {
             className: E.dK,
             variant: "text-xs/medium",
             children: s.name
@@ -66,7 +66,7 @@ let v = (0, u.E2)(p.X.ENTRANCE_SOUNDS_SETTING, {
     Component: function() {
         let {
             analyticsLocations: e
-        } = (0, o.Ay)(), [t, n] = s.useState("0"), r = (0, x.mz)(t), u = b(r), p = r?.type === x.PP.GLOBAL, T = (0, l.bG)([g.A], () => g.A.hasFetchedAllSounds()) && null != r && null == u;
+        } = (0, o.Ay)(), [t, n] = s.useState("0"), a = (0, x.mz)(t), u = b(a), p = a?.type === x.PP.GLOBAL, T = (0, l.bG)([g.A], () => g.A.hasFetchedAllSounds()) && null != a && null == u;
         s.useEffect(() => {
             T && (0, _.ND)({
                 location: e
@@ -82,7 +82,7 @@ let v = (0, u.E2)(p.X.ENTRANCE_SOUNDS_SETTING, {
                 guildId: e.value
             }) : null
         }, []);
-        return (0, i.jsxs)(a.nVY, {
+        return (0, i.jsxs)(r.nVY, {
             label: S.intl.string(S.t.nzUc3B),
             description: S.intl.format(S.t.u9RWmv, {
                 helpdeskArticle: h.A.getArticleURL(f.MVz.SOUNDBOARD)
@@ -101,7 +101,7 @@ let v = (0, u.E2)(p.X.ENTRANCE_SOUNDS_SETTING, {
                 hideDivider: !0
             }), (0, i.jsxs)(c.A, {
                 title: S.intl.format(S.t.I2TsYN, {
-                    nitroWheelHook: () => (0, i.jsx)(a.tvc, {
+                    nitroWheelHook: () => (0, i.jsx)(r.tvc, {
                         size: "md",
                         color: "currentColor",
                         className: E.ax
@@ -113,9 +113,9 @@ let v = (0, u.E2)(p.X.ENTRANCE_SOUNDS_SETTING, {
                     onSelect: n => {
                         null == n ? (0, _.Dv)(t, e) : (0, _.un)(t, n, e)
                     }
-                }), T && (0, i.jsx)(a.po8, {
+                }), T && (0, i.jsx)(r.po8, {
                     className: E.lm,
-                    messageType: a.YCn.WARNING,
+                    messageType: r.YCn.WARNING,
                     children: S.intl.string(S.t.WkPsFR)
                 })]
             })]

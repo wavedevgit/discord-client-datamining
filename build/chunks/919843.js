@@ -1,23 +1,23 @@
 /** chunk id: 919843 params = (module,exports,require) **/
 n.d(t, {
-    b: () => s
+    b: () => a
 });
 var i = n(73153),
-    a = n(308528),
+    l = n(308528),
     r = n(95701);
-let l = new Set;
-async function s(e) {
-    if (!l.has(e)) {
-        l.add(e);
+let s = new Set;
+async function a(e) {
+    if (!s.has(e)) {
+        s.add(e);
         try {
-            let t = await a.A.fetchChannel(e),
+            let t = await l.A.fetchChannel(e),
                 n = (0, r.UE)(t);
             i.h.dispatch({
                 type: "CHANNEL_CREATE",
                 channel: n
             });
-            let l = n.getGuildId?.() ?? n.guild_id ?? null;
-            if (null != l) return void a.A.preload(l, n.id)
+            let s = n.getGuildId?.() ?? n.guild_id ?? null;
+            if (null != s) return void l.A.preload(s, n.id)
         } catch {}
     }
 }

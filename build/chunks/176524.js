@@ -1,21 +1,21 @@
 /** chunk id: 176524 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var i = n(627968);
 n(64700);
 var s = n(827734),
     l = n(95211);
-let a = function(e) {
+let r = function(e) {
     let {
         Icon: t,
         color: n = "currentColor",
-        backgroundColor: a = s.A.colors.BACKGROUND_MOD_MUTED
+        backgroundColor: r = s.A.colors.BACKGROUND_MOD_MUTED
     } = e;
     return (0, i.jsx)("div", {
         className: l.K,
         style: {
-            backgroundColor: a?.css
+            backgroundColor: r?.css
         },
         children: (0, i.jsx)(t, {
             color: n

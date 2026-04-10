@@ -1,38 +1,38 @@
 /** chunk id: 602146 params = (module,exports,require) **/
-n.d(e, {
-    RR: () => d,
-    RY: () => a,
-    yG: () => r
+r.d(e, {
+    RR: () => s,
+    RY: () => c,
+    yG: () => E
 });
-var l = n(562465),
-    i = n(652215);
-async function r(t, e, n, r, a) {
-    return (await l.Bo.post({
-        url: i.Rsh.STAGE_INSTANCES,
+var i = r(562465),
+    n = r(652215);
+async function E(t, e, r, E, c) {
+    return (await i.Bo.post({
+        url: n.Rsh.STAGE_INSTANCES,
         body: {
             channel_id: t,
             topic: e,
-            privacy_level: n,
-            guild_scheduled_event_id: a,
-            send_start_notification: r
+            privacy_level: r,
+            guild_scheduled_event_id: c,
+            send_start_notification: E
         },
         rejectWithError: !1
     })).body
 }
-async function a(t, e, n) {
-    return (await l.Bo.patch({
-        url: i.Rsh.STAGE_INSTANCE(t),
+async function c(t, e, r) {
+    return (await i.Bo.patch({
+        url: n.Rsh.STAGE_INSTANCE(t),
         body: {
             topic: e,
-            privacy_level: n
+            privacy_level: r
         },
         rejectWithError: !1
     })).body
 }
 
-function d(t) {
-    return l.Bo.del({
-        url: i.Rsh.STAGE_INSTANCE(t),
+function s(t) {
+    return i.Bo.del({
+        url: n.Rsh.STAGE_INSTANCE(t),
         rejectWithError: !1
     })
 }

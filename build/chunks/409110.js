@@ -17,8 +17,8 @@ var i = n(627968),
     A = n(9302),
     f = n(328913),
     g = n(131575),
-    _ = n(799808),
-    m = n(407195),
+    m = n(799808),
+    _ = n(407195),
     x = n(61714),
     E = n(652215);
 let y = {
@@ -30,7 +30,7 @@ let y = {
             dragStart: l,
             className: a
         } = e;
-        return (0, i.jsx)(m.A, {
+        return (0, i.jsx)(_.A, {
             dragStart: l,
             locked: n,
             pinned: s,
@@ -187,10 +187,10 @@ class v extends s.PureComponent {
             anchor: h,
             minSize: A
         } = e, f = (0, p.fd)(u, n), g = (0, p.Nv)(h, n), {
-            resizeX: m,
+            resizeX: _,
             resizeY: x,
             dragAnywhere: E
-        } = t, y = (0, _.AE)({
+        } = t, y = (0, m.AE)({
             locked: s,
             isPreviewingInGame: l,
             pinned: o
@@ -207,7 +207,7 @@ class v extends s.PureComponent {
             container: v,
             minSize: A,
             hidden: !y,
-            resizeX: m,
+            resizeX: _,
             resizeY: x,
             style: {
                 zIndex: c

@@ -1,10 +1,10 @@
 /** chunk id: 870308 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => _
 });
 var i = n(64700),
-    a = n(379197),
-    r = n(488430),
+    r = n(379197),
+    a = n(488430),
     l = n(311907),
     s = n(554146),
     o = n(397927),
@@ -12,14 +12,14 @@ var i = n(64700),
     c = n(457421),
     u = n(212407),
     A = n(158216),
-    _ = n(49999);
-let h = () => {
-    let e = (0, l.bG)([c.A], () => c.A.getMarketingBySurface(a.R.DESKTOP_SHOP_BUTTON)),
+    h = n(49999);
+let _ = () => {
+    let e = (0, l.bG)([c.A], () => c.A.getMarketingBySurface(r.R.DESKTOP_SHOP_BUTTON)),
         t = !(0, o.ueM)(),
-        [n, h] = (0, d.RF)(t ? s.M.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, e?.version ?? 0, void 0, !0),
+        [n, _] = (0, d.RF)(t ? s.M.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, e?.version ?? 0, void 0, !0),
         m = (0, u.bv)(e),
         g = null != n ? ((e, t) => {
-            if (t?.type === r.G.COACHMARK) {
+            if (t?.type === a.G.COACHMARK) {
                 let e = t.refTargetBackground;
                 return {
                     type: A.FF.COACHMARK,
@@ -36,7 +36,7 @@ let h = () => {
                     }
                 }
             }
-            return t?.type === r.G.TAB_TOOLTIP ? {
+            return t?.type === a.G.TAB_TOOLTIP ? {
                 type: A.FF.TAB_TOOLTIP,
                 title: () => t.title,
                 body: () => t.body,
@@ -54,8 +54,8 @@ let h = () => {
             } : null
         })(m, e) : null,
         p = i.useCallback(() => {
-            null != g && h(_.i.AUTO)
-        }, [g, h]);
+            null != g && _(h.i.AUTO)
+        }, [g, _]);
     return {
         shopButtonDisplayOptions: g,
         dismissShopButtonDC: p

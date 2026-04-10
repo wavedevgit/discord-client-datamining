@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(311907),
     s = n(98207),
     l = n(700062),
-    a = n(557722),
-    r = n(419954),
+    r = n(557722),
+    a = n(419954),
     o = n(933297),
     d = n(961350),
     c = n(287809),
@@ -16,7 +16,7 @@ var i = n(311907),
     _ = n(946531),
     x = n(652215),
     A = n(985018);
-let h = (0, r.zZ)(m.X.SMS_AUTH_CATEGORY, {
+let h = (0, a.zZ)(m.X.SMS_AUTH_CATEGORY, {
     useTitle: () => A.intl.string(A.t.wuHuI5),
     useSubtitle: () => (0, i.bG)([c.default], () => (0, u.BE)(c.default.getCurrentUser(), !0)),
     useHeaderDecoration: () => {
@@ -46,7 +46,7 @@ let h = (0, r.zZ)(m.X.SMS_AUTH_CATEGORY, {
 function p() {
     let e = c.default.getCurrentUser();
     null != e && (null == e.phone ? (0, l.ZM)({
-        reason: a.d.USER_SETTINGS_UPDATE,
+        reason: r.d.USER_SETTINGS_UPDATE,
         onAddedPhone: s.A.enableSMS
     }) : s.A.enableSMS())
 }

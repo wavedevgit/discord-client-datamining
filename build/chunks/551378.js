@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(397927),
-    r = n(294433),
+    r = n(397927),
+    a = n(294433),
     o = n(438732),
     d = n(809697),
     c = n(834981),
@@ -27,7 +27,7 @@ let T = () => {
             } = (0, d.A)();
         return (0, c.xr)() || t && e ? null : (0, i.jsx)("div", {
             className: x.x6,
-            children: t ? (0, i.jsx)(a.Button, {
+            children: t ? (0, i.jsx)(r.Button, {
                 variant: "primary",
                 text: _.intl.string(_.t.LhlgY9),
                 onClick: () => n(m.u9.REQUESTS)
@@ -36,8 +36,8 @@ let T = () => {
     },
     f = () => {
         let e = (0, o.A)(),
-            t = (0, r.y)(_.intl.string(g.default["T7GyW+"]), _.intl.string(g.default.goKE2b)),
-            n = (0, r.y)(_.intl.format(g.default.MXjDSv, {
+            t = (0, a.y)(_.intl.string(g.default["T7GyW+"]), _.intl.string(g.default.goKE2b)),
+            n = (0, a.y)(_.intl.format(g.default.MXjDSv, {
                 articleLink: "https://support.discord.com/hc/articles/14155060633623"
             }), _.intl.format(g.default.EMCf6j, {
                 articleLink: "https://support.discord.com/hc/articles/14155043715735"
@@ -48,12 +48,12 @@ let T = () => {
                 children: [(0, i.jsx)("div", {
                     children: (0, i.jsxs)("div", {
                         className: x.TK,
-                        children: [(0, i.jsx)(a.Heading, {
+                        children: [(0, i.jsx)(r.Heading, {
                             variant: "heading-xl/medium",
-                            children: (0, i.jsx)(a.Fmo, {
+                            children: (0, i.jsx)(r.Fmo, {
                                 children: t
                             })
-                        }), (0, i.jsx)(a.Text, {
+                        }), (0, i.jsx)(r.Text, {
                             variant: "text-sm/medium",
                             color: "text-muted",
                             children: n

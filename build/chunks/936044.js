@@ -1,62 +1,63 @@
 /** chunk id: 936044 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => d
 });
 var i = n(627968);
 n(64700);
-var l = n(503698),
-    a = n.n(l),
-    r = n(763754),
-    s = n(491182),
-    o = n(291812),
-    c = n(643204),
+var r = n(503698),
+    s = n.n(r),
+    l = n(763754),
+    a = n(491182),
+    c = n(291812),
+    o = n(643204),
     u = n(153431);
 
 function d(e) {
     let {
         message: t,
         channel: n,
-        content: l,
+        content: r,
         className: d,
         compact: _,
-        popoutProps: A,
-        hideTimestamp: m = !1,
-        withFooter: E = !1,
-        ...T
-    } = e, I = (0, r.Ay)(t);
+        popoutProps: E,
+        hideTimestamp: A = !1,
+        withFooter: m = !1,
+        ...I
+    } = e, T = (0, l.Ay)(t);
     return (0, i.jsx)("div", {
-        className: a()({
-            [u.Ym]: E
+        className: s()({
+            [u.Ym]: m
         }, u.gD, {
             [u.oE]: _
         }, d),
-        children: (0, i.jsx)(s.A, {
-            ...T,
-            className: a()(u.zC, {
+        children: (0, i.jsx)(a.A, {
+            ...I,
+            className: s()(u.zC, {
                 [u.oE]: _
             }),
-            childrenMessageContent: (0, i.jsx)(o.Ay, {
-                className: a()(u.__invalid_messageContent, {
+            childrenMessageContent: (0, i.jsx)(c.Ay, {
+                className: s()(u.__invalid_messageContent, {
                     [u.oE]: _
                 }),
                 message: t,
-                content: l,
+                content: r,
                 compact: _ ?? !1
             }),
-            childrenHeader: (0, i.jsx)(c.Ay, {
+            childrenHeader: (0, i.jsx)(o.Ay, {
                 message: t,
                 channel: n,
-                author: I,
+                author: T,
                 guildId: n?.guild_id,
                 compact: _,
-                hideTimestamp: m,
-                className: a()(u.wx, {
+                hideTimestamp: A,
+                className: s()(u.wx, {
                     [u.oE]: _
                 }),
-                ...A ?? {}
+                ...E ?? {}
             }),
             compact: _,
-            author: I
+            author: T
         })
     })
 }

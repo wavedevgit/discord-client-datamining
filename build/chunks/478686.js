@@ -17,42 +17,42 @@ n.d(t, {
                 parentAccordionKey: l.accordion?.key
             }), n
         }
-        let a = l;
-        t.type === i.Z6.SIDEBAR_ITEM && (a = {
+        let r = l;
+        t.type === i.Z6.SIDEBAR_ITEM && (r = {
             sidebarItem: t.key,
             panel: t.layout[0]
-        }), t.type === i.Z6.PANEL && (a = {
+        }), t.type === i.Z6.PANEL && (r = {
             sidebarItem: l.sidebarItem,
             panel: t
-        }), t.type === i.Z6.NESTED_PANEL && (a = {
+        }), t.type === i.Z6.NESTED_PANEL && (r = {
             ...l,
             panel: t.layout[0]
-        }), t.type === i.Z6.CATEGORY && (a = {
+        }), t.type === i.Z6.CATEGORY && (r = {
             ...l,
             category: t
-        }), t.type === i.Z6.ACCORDION && (a = {
+        }), t.type === i.Z6.ACCORDION && (r = {
             ...l,
             accordion: t
-        }), t.type === i.Z6.TAB_ITEM && (a = {
+        }), t.type === i.Z6.TAB_ITEM && (r = {
             ...l,
             tab: t
         });
-        let r = t.layout.map(t => e(t, n, s, a)).filter(e => null != e);
-        if (0 === r.length && !1 !== t.collapseOnEmpty && !("StronglyDiscouragedCustomComponent" in t || t.type === i.Z6.SIDEBAR_ITEM && "onClick" in t)) return null;
+        let a = t.layout.map(t => e(t, n, s, r)).filter(e => null != e);
+        if (0 === a.length && !1 !== t.collapseOnEmpty && !("StronglyDiscouragedCustomComponent" in t || t.type === i.Z6.SIDEBAR_ITEM && "onClick" in t)) return null;
         let {
             usePredicate: o,
             ...d
         } = t, c = {
             ...d,
-            layout: r
+            layout: a
         };
         return s.register({
             node: c,
-            parentSidebarItemKey: a.sidebarItem,
-            parentPanelKey: a.panel?.key,
-            parentTabKey: a.tab?.key,
-            parentCategoryKey: a.category?.key,
-            parentAccordionKey: a.accordion?.key
+            parentSidebarItemKey: r.sidebarItem,
+            parentPanelKey: r.panel?.key,
+            parentTabKey: r.tab?.key,
+            parentCategoryKey: r.category?.key,
+            parentAccordionKey: r.accordion?.key
         }), c
     }
 });

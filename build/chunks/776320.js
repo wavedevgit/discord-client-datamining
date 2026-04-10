@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(311907),
     s = n(419954),
     l = n(933297),
-    a = n(961350),
-    r = n(87707),
+    r = n(961350),
+    a = n(87707),
     o = n(780964),
     d = n(407186),
     c = n(115467),
@@ -15,8 +15,8 @@ let m = (0, s.zZ)(o.X.AUTHENTICATOR_APP_CATEGORY, {
     useTitle: () => u.intl.string(u.t.RumMFo),
     useSubtitle: () => u.intl.string(u.t.iTbTo7),
     useHeaderDecoration: function() {
-        let e = (0, i.bG)([a.default], () => a.default.hasTOTPEnabled()),
-            t = (0, r.dI)() === r.gW.AVAILABLE;
+        let e = (0, i.bG)([r.default], () => r.default.hasTOTPEnabled()),
+            t = (0, a.dI)() === a.gW.AVAILABLE;
         if (!e && t) return {
             type: l.WX.BUTTON_GROUP,
             buttons: [{
@@ -28,16 +28,16 @@ let m = (0, s.zZ)(o.X.AUTHENTICATOR_APP_CATEGORY, {
         }
     },
     useInlineNotice: function() {
-        switch ((0, r.dI)()) {
-            case r.gW.UNAVAILABLE_NO_CRYPTO:
+        switch ((0, a.dI)()) {
+            case a.gW.UNAVAILABLE_NO_CRYPTO:
                 return {
                     type: l.lT.INLINE_NOTICE, noticeType: "info", useText: () => u.intl.string(u.t.PhHhsj)
                 };
-            case r.gW.UNAVAILABLE_UNVERIFIED:
+            case a.gW.UNAVAILABLE_UNVERIFIED:
                 return {
                     type: l.lT.INLINE_NOTICE, noticeType: "warning", useText: () => u.intl.string(u.t.uggF7o)
                 };
-            case r.gW.AVAILABLE:
+            case a.gW.AVAILABLE:
                 return
         }
     },

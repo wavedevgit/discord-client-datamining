@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    r = n(587895),
+var r = n(397927),
+    a = n(587895),
     l = n(851907);
 
 function s(e) {
@@ -15,20 +15,20 @@ function s(e) {
         linkId: o,
         message: d,
         onShare: c
-    } = e, u = r.A.getApplication(t);
+    } = e, u = a.A.getApplication(t);
     if (null == u) return void c(!1, !1);
     let A = null != (0, l.LU)({
             applicationId: u.id
-        }) ? a.KX8 : a.SYi,
-        _ = !1;
+        }) ? r.KX8 : r.SYi,
+        h = !1;
 
-    function h(e) {
-        c(e, _)
+    function _(e) {
+        c(e, h)
     }
 
     function m() {
-        _ = !0
-    }(0, a.mMO)(async () => {
+        h = !0
+    }(0, r.mMO)(async () => {
         let {
             default: e
         } = await n.e("48587").then(n.bind(n, 824774));
@@ -38,14 +38,14 @@ function s(e) {
             linkId: o,
             message: d,
             onCopyLink: m,
-            onShare: h,
+            onShare: _,
             ...n
         })
     }, {
         modalKey: "activity-share-moment-modal",
         contextKey: A,
         onCloseCallback: () => {
-            c(!1, _)
+            c(!1, h)
         }
     })
 }

@@ -17,8 +17,8 @@ var s = n(627968),
     A = n(311907),
     f = n(397927),
     g = n(442433),
-    _ = n(684013),
-    m = n(684136),
+    m = n(684013),
+    _ = n(684136),
     x = n(34968),
     E = n(775121),
     y = n(836753),
@@ -29,8 +29,8 @@ n(607470);
 var I = n(15285),
     N = n(880144),
     T = n(905552),
-    b = n(768841),
-    O = n(265367),
+    O = n(768841),
+    b = n(265367),
     j = n(616356),
     D = n(734057),
     R = n(71393),
@@ -50,8 +50,8 @@ var I = n(15285),
     F = n(837921),
     Y = n(316501),
     Z = n(350535),
-    J = n(9302),
-    X = n(41984),
+    X = n(9302),
+    J = n(41984),
     Q = n(589051),
     q = n(223251),
     $ = n(227308),
@@ -107,8 +107,8 @@ let eu = e => {
             onContextMenu: ec,
             children: l ? null : (0, s.jsx)("div", {
                 className: er.G3,
-                children: (0, s.jsx)(m.A, {
-                    variant: m.A.Variants.BOLD,
+                children: (0, s.jsx)(_.A, {
+                    variant: _.A.Variants.BOLD,
                     keybind: t,
                     closeAction: n
                 })
@@ -139,10 +139,10 @@ class ep extends l.Component {
         E.A.setLayout(t ? x.dY : x.CJ), t && E.A.enable()
     }
     handleLock() {
-        (0, f.ueM)() || G.A.isOpen() || _.A.setInputLocked(!0, (0, J.getPID)())
+        (0, f.ueM)() || G.A.isOpen() || m.A.setInputLocked(!0, (0, X.getPID)())
     }
     handleDeactivate() {
-        _.A.deactivateAllRegions()
+        m.A.deactivateAllRegions()
     }
     debouncedForceUpdate = u()(() => {
         this.forceUpdate()
@@ -151,7 +151,7 @@ class ep extends l.Component {
         U.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : this.debouncedForceUpdate()
     };
     componentDidMount() {
-        _.A.startSession(), b.A.initialize(), y.A.initialize(), O.A.initialize()
+        m.A.startSession(), O.A.initialize(), y.A.initialize(), b.A.initialize()
     }
     componentDidUpdate(e) {
         let {
@@ -165,12 +165,12 @@ class ep extends l.Component {
             if (!e.locked && this.props.locked) {
                 if (window.addEventListener("contextmenu", ed, !1), null != eo) {
                     let e = Date.now() - eo;
-                    _.A.track(el.HAw.OVERLAY_LOCKED, {
+                    m.A.track(el.HAw.OVERLAY_LOCKED, {
                         unlocked_duration: e
                     }), eo = null
                 }
                 E.A.disable(), this.activeKeyEventShapes = [], H.default.isPinned(el.uss.TEXT) && (E.A.setLayout(x.dY), E.A.enable())
-            } else e.locked && !this.props.locked && (window.removeEventListener("contextmenu", ed, !1), null == eo && (eo = Date.now(), _.A.track(el.HAw.OVERLAY_UNLOCKED)), E.A.disable(), this.activeKeyEventShapes = [], E.A.setLayout(x.CJ), E.A.enable());
+            } else e.locked && !this.props.locked && (window.removeEventListener("contextmenu", ed, !1), null == eo && (eo = Date.now(), m.A.track(el.HAw.OVERLAY_UNLOCKED)), E.A.disable(), this.activeKeyEventShapes = [], E.A.setLayout(x.CJ), E.A.enable());
             e.keybindKeyCodes !== this.props.keybindKeyCodes && (this.lockEventShape = (0, Z.pi)(this.props.keybindKeyCodes))
         }
     }
@@ -184,11 +184,11 @@ class ep extends l.Component {
             voiceChannelId: o,
             game: d
         } = this.props;
-        _.A.track(el.HAw.OVERLAY_INITIALIZED, {
+        m.A.track(el.HAw.OVERLAY_INITIALIZED, {
             voice_widget_connected: t,
             text_widget_connected: H.default.isPinned(el.uss.TEXT),
-            overlay_render_method: X.Ue[X.Ue.Hook],
-            unpinned_widget_types: L.A.getAllUnpinnedPinnedWidgets(J.OVERLAY_LAYOUT_ID)
+            overlay_render_method: J.Ue[J.Ue.Hook],
+            unpinned_widget_types: L.A.getAllUnpinnedPinnedWidgets(X.OVERLAY_LAYOUT_ID)
         });
         let c = l && !a && null != d,
             u = t && null != r && null != o,
@@ -205,12 +205,12 @@ class ep extends l.Component {
                 type: es.Jr.GO_LIVE_NON_VOICE,
                 game: d
             }), setTimeout(async () => {
-                await (0, Y.pF)(), null != e ? _.A.overlayMounted(e) : _.A.overlayMounted()
+                await (0, Y.pF)(), null != e ? m.A.overlayMounted(e) : m.A.overlayMounted()
             }, 128), window.addEventListener("resize", this.handleWindowResize), i && window.addEventListener("contextmenu", ed, !1), B.isPlatformEmbedded) {
             let e = (0, z.m)();
             if (null == e) return;
             void 0 !== e.setPerfInfoCallback && (e.setPerfInfoCallback(e => {
-                _.A.track(el.HAw.OVERLAY_PERF_INFO, e)
+                m.A.track(el.HAw.OVERLAY_PERF_INFO, e)
             }), e.broadcastCommand?.({
                 message: "set_perf_report_interval",
                 interval: 15 * K.A.Millis.MINUTE
@@ -229,7 +229,7 @@ class ep extends l.Component {
         window.addEventListener("keydown", this.onKeyDownGlobal, !0), window.addEventListener("keyup", this.onKeyUpGlobal, !0)
     }
     componentWillUnmount() {
-        window.removeEventListener("resize", this.handleWindowResize), window.removeEventListener("keydown", this.onKeyDownGlobal, !0), window.removeEventListener("keyup", this.onKeyUpGlobal, !0), this.props.locked && window.removeEventListener("contextmenu", ed, !1), b.A.terminate(), y.A.terminate(), O.A.terminate()
+        window.removeEventListener("resize", this.handleWindowResize), window.removeEventListener("keydown", this.onKeyDownGlobal, !0), window.removeEventListener("keyup", this.onKeyUpGlobal, !0), this.props.locked && window.removeEventListener("contextmenu", ed, !1), O.A.terminate(), y.A.terminate(), b.A.terminate()
     }
     activeKeyEventShapes = [];
     lockEventShape = (0, Z.pi)(this.props.keybindKeyCodes);
@@ -243,7 +243,7 @@ class ep extends l.Component {
             locked: s,
             activeRegions: l
         } = this.props;
-        t.keyCode === d().codes.esc && s && l.has(el.ajI.TEXT_WIDGET) && _.A.deactivateAllRegions()
+        t.keyCode === d().codes.esc && s && l.has(el.ajI.TEXT_WIDGET) && m.A.deactivateAllRegions()
     };
     onKeyUpGlobal = e => {
         let t = eh(e),
@@ -257,7 +257,7 @@ class ep extends l.Component {
             className: er.rU,
             children: (0, s.jsx)("div", {
                 className: er.JV,
-                children: ea.intl.format(ea.t.ketnW0, J.OVERLAY_MIN_RESOLUTION)
+                children: ea.intl.format(ea.t.ketnW0, X.OVERLAY_MIN_RESOLUTION)
             })
         })
     }
@@ -286,7 +286,7 @@ class ep extends l.Component {
                 keybind: t,
                 onClick: e ? this.handleDeactivate : this.handleLock,
                 isPreviewingInGame: a
-            }), (0, J.validResolution)(d) ? (0, s.jsx)(ee.A, {
+            }), (0, X.validResolution)(d) ? (0, s.jsx)(ee.A, {
                 className: r()({
                     [er.ZK]: e,
                     [er.al]: !e
@@ -309,7 +309,7 @@ function eA() {
         activeRegions: i,
         isPreviewingInGame: a
     } = (0, A.cf)([H.default], () => ({
-        locked: H.default.isLocked((0, J.getPID)()),
+        locked: H.default.isLocked((0, X.getPID)()),
         initialized: H.default.initialized,
         incompatibleApp: H.default.incompatibleApp,
         activeRegions: H.default.getActiveRegions(),

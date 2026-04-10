@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(397927),
-    a = n(15285),
-    r = n(227309),
+    r = n(15285),
+    a = n(227309),
     o = n(544028),
     d = n(475380),
     c = n(610215),
@@ -41,8 +41,8 @@ function _() {
             children: e.map(e => (0, i.jsx)(d.A, {
                 rawGame: e,
                 isOverride: n.has(e.exePath),
-                subgames: e.id === r.a7 ? t : void 0
-            }, (0, a.Es)(e)))
+                subgames: e.id === a.a7 ? t : void 0
+            }, (0, r.Es)(e)))
         })
     })
 }

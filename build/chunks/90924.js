@@ -19,8 +19,8 @@ n.d(t, {
     uM: () => z
 }), n(321073), n(938796), n(735438);
 var i = n(567243),
-    a = n(179771),
-    r = n(562465),
+    r = n(179771),
+    a = n(562465),
     l = n(898467),
     s = n(843472),
     o = n(956518),
@@ -28,8 +28,8 @@ var i = n(567243),
     c = n(46054),
     u = n(763754),
     A = n(611010),
-    _ = n(95701),
-    h = n(427157),
+    h = n(95701),
+    _ = n(427157),
     m = n(734057),
     g = n(71393),
     p = n(430452),
@@ -73,14 +73,14 @@ function U(e) {
 function G(e, t) {
     let n = [],
         i = e.getGuildId();
-    return [O.rbe.GUILD_CATEGORY, ..._.OU].includes(e.type) || n.push(new Promise(t => {
+    return [O.rbe.GUILD_CATEGORY, ...h.OU].includes(e.type) || n.push(new Promise(t => {
         E.A.whenReady(e.id, () => t()), s.A.fetchMessages({
             channelId: e.id,
             limit: O.EMb
         })
     })), Promise.all(n).then(() => {
         let n = (!e.isNSFW() || f.default.getCurrentUser()?.nsfwAllowed === !0) && t ? E.A.getMessages(e.id).toArray().map(k) : [],
-            a = Object.values(C.A.getVoiceStatesForChannel(e.id)).map(t => V(i, e.id, t));
+            r = Object.values(C.A.getVoiceStatesForChannel(e.id)).map(t => V(i, e.id, t));
         return {
             id: e.id,
             name: e.name,
@@ -91,7 +91,7 @@ function G(e, t) {
             guild_id: i,
             position: e.position,
             messages: n,
-            voice_states: a
+            voice_states: r
         }
     })
 }
@@ -101,16 +101,16 @@ function k(e) {
             channelId: e.channel_id
         }).map(M),
         n = m.A.getChannel(e.channel_id),
-        i = null != e.author ? new h.A(e.author) : void 0,
-        a = null != e.author ? (0, u.FT)(i, n) : void 0;
+        i = null != e.author ? new _.A(e.author) : void 0,
+        r = null != e.author ? (0, u.FT)(i, n) : void 0;
     return {
         id: e.id,
         blocked: e.blocked,
         bot: e.bot,
         content: e.content,
         content_parsed: t.length ? t : void 0,
-        nick: a?.nick,
-        author_color: a?.colorString,
+        nick: r?.nick,
+        author_color: r?.colorString,
         edited_timestamp: e.edited_timestamp || e.editedTimestamp,
         timestamp: e.timestamp,
         tts: e.tts,
@@ -128,8 +128,8 @@ function k(e) {
 function V(e, t, n) {
     let {
         mute: i,
-        deaf: a,
-        selfMute: r,
+        deaf: r,
+        selfMute: a,
         selfDeaf: l,
         suppress: s,
         userId: o
@@ -142,8 +142,8 @@ function V(e, t, n) {
         pan: p.Ay.getLocalPan(d.id),
         voice_state: {
             mute: i,
-            deaf: a,
-            self_mute: r,
+            deaf: r,
+            self_mute: a,
             self_deaf: l,
             suppress: s
         },
@@ -187,7 +187,7 @@ function F(e) {
 
 function Y(e, t, n) {
     let i = g.A.getGuild(e.getGuildId());
-    return (null != i ? i.application_id : e.getApplicationId()) === t || n.indexOf(a.F.MESSAGES_READ) > -1
+    return (null != i ? i.application_id : e.getApplicationId()) === t || n.indexOf(r.F.MESSAGES_READ) > -1
 }
 
 function W(e) {
@@ -206,7 +206,7 @@ function K(e, t, n) {
 }
 
 function q(e) {
-    return r.Bo.get({
+    return a.Bo.get({
         url: O.Rsh.APPLICATION_RPC(e),
         oldFormErrors: !0,
         retries: 3,
@@ -237,15 +237,15 @@ async function z(e, t, n) {
             }, "Invalid Origin")
         } null == i && (i = A.Ay.createFromServer(await q(t)));
     let {
-        id: a,
-        name: r,
+        id: r,
+        name: a,
         icon: l,
         coverImage: s,
         flags: c
     } = i;
     e.application = {
-        id: a,
-        name: r,
+        id: r,
+        name: a,
         icon: l,
         coverImage: s,
         flags: c

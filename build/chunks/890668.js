@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(284009),
     l = n.n(s),
-    a = n(311907),
-    r = n(81400),
+    r = n(311907),
+    a = n(81400),
     o = n(185955),
     d = n(318785),
     c = n(919395),
@@ -34,11 +34,11 @@ var s = n(284009),
     R = n(125955);
 
 function L() {
-    let e = (0, a.bG)([j.default], () => {
+    let e = (0, r.bG)([j.default], () => {
             let e = j.default.getCurrentUser();
             return l()(null != e, "DefaultCustomizationSections: user cannot be undefined"), e
         }),
-        t = (0, a.bG)([N.A], () => N.A.getUserProfile(e.id)),
+        t = (0, r.bG)([N.A], () => N.A.getUserProfile(e.id)),
         {
             pendingAvatar: n,
             pendingGlobalName: s,
@@ -50,7 +50,7 @@ function L() {
             pendingLegacyUsernameDisabled: k,
             pendingPrimaryGuildId: U,
             errors: w
-        } = (0, a.cf)([v.A], () => {
+        } = (0, r.cf)([v.A], () => {
             let e = v.A.getPendingChanges(),
                 t = v.A.getErrors();
             return {
@@ -62,7 +62,7 @@ function L() {
             userId: e.id,
             image: n
         }),
-        B = (0, r.EC)(),
+        B = (0, a.EC)(),
         F = y.Ay.canUsePremiumProfileCustomization(e),
         H = (0, c.z5)(n, e.avatar),
         z = (0, c.Ac)(L, t?.banner),

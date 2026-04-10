@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(397927),
-    r = n(587895),
+    r = n(397927),
+    a = n(587895),
     o = n(15285),
     d = n(769015),
     c = n(663677),
@@ -19,10 +19,10 @@ function x(e) {
     let {
         game: t,
         gameApplication: n
-    } = e, a = s.useMemo(() => null == t ? null : "pid" in t ? t.pid : null, [t]), o = (0, l.bG)([r.A], () => null != n ? n : r.A.getApplication(t?.id), [n, t]);
+    } = e, r = s.useMemo(() => null == t ? null : "pid" in t ? t.pid : null, [t]), o = (0, l.bG)([a.A], () => null != n ? n : a.A.getApplication(t?.id), [n, t]);
     return (0, i.jsx)(d.A, {
         game: o,
-        pid: a,
+        pid: r,
         size: d.M.SMALL
     })
 }
@@ -31,7 +31,7 @@ function A(e) {
     let {
         rawGame: t,
         gameApplication: n,
-        supportDisabled: r,
+        supportDisabled: a,
         getEnabledFromStatus: d,
         onChange: A,
         clientSettingType: h,
@@ -47,9 +47,9 @@ function A(e) {
         }),
         "aria-label": p,
         action: (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(a.dOG, {
+            children: [(0, i.jsx)(r.dOG, {
                 checked: E,
-                disabled: r,
+                disabled: a,
                 onChange: e => {
                     let n;
                     return n = !e && E, void(b(e), A(e, T, f), n && (0, c.L)(h, T.id ?? t?.id ?? null))

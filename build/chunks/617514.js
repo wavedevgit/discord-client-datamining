@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(311907),
     l = n(397927),
-    a = n(793574),
-    r = n(657331),
+    r = n(793574),
+    a = n(657331),
     o = n(961350),
     d = n(128450),
     c = n(518477),
@@ -18,9 +18,9 @@ let m = () => {
         children: (0, i.jsx)(l.Button, {
             text: u.intl.string(u.t.Geikwq),
             onClick: () => {
-                (0, r.openUserProfileModal)({
+                (0, a.openUserProfileModal)({
                     userId: e,
-                    sourceAnalyticsLocations: [a.A.USER_SETTINGS_USER_PROFILE],
+                    sourceAnalyticsLocations: [r.A.USER_SETTINGS_USER_PROFILE],
                     hideRestrictedProfile: !0,
                     tabSection: c.RP.WIDGETS
                 })

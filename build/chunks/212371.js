@@ -1,10 +1,10 @@
 /** chunk id: 212371 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => _
 });
 var i = n(73153),
-    a = n(827343),
-    r = n(401843),
+    r = n(827343),
+    a = n(401843),
     l = n(272355),
     s = n(652896),
     o = n(616356),
@@ -12,7 +12,7 @@ var i = n(73153),
     c = n(734057),
     u = n(430452),
     A = n(105530);
-class _ extends l.A {
+class h extends l.A {
     _initialize() {
         i.h.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
     }
@@ -29,10 +29,10 @@ class _ extends l.A {
     };
     handleStopStream = e => {
         let t = o.A.getActiveStreamForUser(e.userId, e.guildId);
-        null != t && (0, r.vN)((0, s._z)(t), !1)
+        null != t && (0, a.vN)((0, s._z)(t), !1)
     };
     handleStopUserVideo = () => {
-        u.Ay.isVideoEnabled() && a.A.setVideoEnabled(!1)
+        u.Ay.isVideoEnabled() && r.A.setVideoEnabled(!1)
     }
 }
-let h = new _
+let _ = new h

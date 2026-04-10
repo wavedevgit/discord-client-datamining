@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(397927),
     l = n(600812),
-    a = n(791498),
-    r = n(244242);
+    r = n(791498),
+    a = n(244242);
 
 function o(e) {
     let {
@@ -24,8 +24,8 @@ function o(e) {
     } = t, A = d(), h = c?.(), p = n(), T = u?.() ?? !1, f = m?.(), S = g?.(), E = x?.(), b = (0, l.A)({
         persistentBadge: S,
         dismissibleBadges: E
-    }), C = (0, a.q)(t);
-    return (0, i.jsxs)(r.L, {
+    }), C = (0, r.q)(t);
+    return (0, i.jsxs)(a.L, {
         children: [(0, i.jsx)(s.dOG, {
             label: A,
             description: h,

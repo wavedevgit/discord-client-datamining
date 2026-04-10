@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(158954),
-    a = n(397927),
-    r = n(308528),
+    r = n(397927),
+    a = n(308528),
     o = n(922529),
     d = n(780964),
     c = n(779733),
@@ -39,7 +39,7 @@ let E = e => {
             children: [(0, i.jsx)(l.EYj, {
                 variant: "text-md/medium",
                 children: t
-            }), (0, i.jsx)(a.Button, {
+            }), (0, i.jsx)(r.Button, {
                 text: n,
                 onClick: s,
                 variant: "secondary",
@@ -67,18 +67,18 @@ let E = e => {
                     variant: "text-md/medium",
                     color: "text-muted",
                     children: f.intl.format(T.default.X9rW0j, {
-                        openSettingsHook: (e, n) => (0, i.jsx)(a.MzZ, {
+                        openSettingsHook: (e, n) => (0, i.jsx)(r.MzZ, {
                             onClick: t,
                             children: e
                         }, n)
                     })
                 })]
-            }), (0, i.jsx)(a.Button, {
+            }), (0, i.jsx)(r.Button, {
                 text: f.intl.formatToPlainString(T.default.ggcjPR, {
                     count: e.length
                 }),
                 onClick: () => {
-                    (0, c.default)(), r.A.openPrivateChannel({
+                    (0, c.default)(), a.A.openPrivateChannel({
                         recipientIds: e
                     })
                 },
@@ -90,7 +90,7 @@ let E = e => {
     C = e => {
         let {
             teenId: t
-        } = e, s = (0, x.y3)(), r = s?.restrictedSchedule?.rules.length ?? 0;
+        } = e, s = (0, x.y3)(), a = s?.restrictedSchedule?.rules.length ?? 0;
         return (0, i.jsxs)(l.BJc, {
             padding: {
                 top: 12,
@@ -109,14 +109,14 @@ let E = e => {
                 }), (0, i.jsx)(l.EYj, {
                     variant: "text-sm/normal",
                     color: "text-muted",
-                    children: 0 === r ? f.intl.string(T.default.fOBIZH) : f.intl.formatToPlainString(T.default.XfwcpX, {
-                        count: r
+                    children: 0 === a ? f.intl.string(T.default.fOBIZH) : f.intl.formatToPlainString(T.default.XfwcpX, {
+                        count: a
                     })
                 })]
-            }), (0, i.jsx)(a.Button, {
+            }), (0, i.jsx)(r.Button, {
                 text: f.intl.string(T.default.OwFF4o),
                 onClick: () => {
-                    (0, a.mMO)(async () => {
+                    (0, r.mMO)(async () => {
                         let {
                             default: e
                         } = await n.e("38842").then(n.bind(n, 6241));
@@ -137,13 +137,13 @@ let E = e => {
             {
                 handleTabChange: n
             } = (0, _.A)(),
-            a = (0, g.Vh)({
+            r = (0, g.Vh)({
                 location: "TimeControlsRow"
             });
         s.useEffect(() => {
             e?.id != null && t && m.Ay.fetchTeenSettingsAndConsents(e?.id)
         }, [e?.id, t]);
-        let r = e => {
+        let a = e => {
             n(e)
         };
         return (0, i.jsxs)(i.Fragment, {
@@ -161,14 +161,14 @@ let E = e => {
             }), (0, i.jsx)(E, {
                 title: f.intl.string(f.t["+o1pDZ"]),
                 buttonText: f.intl.string(f.t.bt75uw),
-                onButtonPress: () => r(p.u9.CONTENT_AND_SOCIAL)
+                onButtonPress: () => a(p.u9.CONTENT_AND_SOCIAL)
             }), (0, i.jsx)(o.A, {
                 className: S.yF
             }), (0, i.jsx)(E, {
                 title: f.intl.string(f.t.OAuOHD),
                 buttonText: f.intl.string(f.t.bt75uw),
-                onButtonPress: () => r(p.u9.DATA_AND_PRIVACY)
-            }), a && e?.id != null && (0, i.jsxs)(i.Fragment, {
+                onButtonPress: () => a(p.u9.DATA_AND_PRIVACY)
+            }), r && e?.id != null && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(o.A, {
                     className: S.yF
                 }), (0, i.jsx)(C, {

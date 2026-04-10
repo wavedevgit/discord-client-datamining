@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(827734),
-    a = n(582754),
+    a = n(827734),
+    s = n(582754),
     r = n(397927),
     o = n(58149),
     c = n(544028),
@@ -20,18 +20,18 @@ function g(e) {
         onClose: t,
         onConfirm: g,
         onCancel: p,
-        channel: f,
-        analyticsType: _,
+        channel: _,
+        analyticsType: f,
         popoutText: E,
-        animation: x
+        animation: C
     } = e;
     l.useEffect(() => {
         d.default.track(u.HAw.OPEN_POPOUT, {
-            type: _,
-            ...(0, o.dI)(f)
+            type: f,
+            ...(0, o.dI)(_)
         })
-    }, [_, f]);
-    let C = l.useCallback(() => {
+    }, [f, _]);
+    let x = l.useCallback(() => {
             g?.(), t()
         }, [g, t]),
         S = l.useCallback(() => {
@@ -41,28 +41,28 @@ function g(e) {
     return l.useEffect(() => {
         let e, t = c.A.theme,
             i = !1;
-        return null != x && (async () => {
+        return null != C && (async () => {
             let [{
                 default: l
-            }, s] = await Promise.all([Promise.resolve().then(n.t.bind(n, 883885, 23)), (0, a.Mw)(t) ? x.dark() : x.light()]);
+            }, a] = await Promise.all([Promise.resolve().then(n.t.bind(n, 883885, 23)), (0, s.Mw)(t) ? C.dark() : C.light()]);
             i || null == I.current || (e = l.loadAnimation({
                 container: I.current,
                 renderer: "svg",
                 loop: !0,
                 autoplay: !0,
-                animationData: s
+                animationData: a
             }))
         })(), () => {
             i = !0, null != e && (e.destroy(), e = void 0)
         }
-    }, [x]), (0, i.jsx)(r.lGe, {
+    }, [C]), (0, i.jsx)(r.lGe, {
         "aria-labelledby": "content-warning-popout-label",
         children: (0, i.jsxs)("form", {
             className: m.$,
-            onSubmit: C,
+            onSubmit: x,
             children: [(0, i.jsxs)("div", {
                 className: m.rf,
-                children: [null != x && (0, i.jsx)("div", {
+                children: [null != C && (0, i.jsx)("div", {
                     className: m.lY,
                     ref: I
                 }), (0, i.jsxs)("div", {
@@ -97,7 +97,7 @@ function g(e) {
                                 className: m.x6,
                                 children: (0, i.jsx)(r.Button, {
                                     variant: "primary",
-                                    onClick: C,
+                                    onClick: x,
                                     text: h.intl.string(h.t.KJnHq3),
                                     autoFocus: !0
                                 })
@@ -113,7 +113,7 @@ function g(e) {
                 className: m.qr,
                 children: [(0, i.jsx)(r.mir, {
                     size: "xs",
-                    color: s.A.unsafe_rawColors.PRIMARY_400.css,
+                    color: a.A.unsafe_rawColors.PRIMARY_400.css,
                     className: m.Kk
                 }), (0, i.jsx)(r.Text, {
                     variant: "text-sm/normal",

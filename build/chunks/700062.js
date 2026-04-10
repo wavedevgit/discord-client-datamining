@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(627968),
     s = n(397927),
     l = n(98207),
-    a = n(53516),
-    r = n(985018);
+    r = n(53516),
+    a = n(985018);
 
 function o(e) {
     (0, s.mMO)(async () => {
@@ -20,7 +20,7 @@ function o(e) {
             ...e
         })
     }, {
-        modalKey: a.V
+        modalKey: r.V
     })
 }
 
@@ -32,8 +32,8 @@ function d() {
         return t => (0, i.jsx)(e, {
             ...t,
             handleSubmit: l.A.disableSMS,
-            title: r.intl.string(r.t.KLWnit),
-            children: r.intl.string(r.t["W0/Duf"])
+            title: a.intl.string(a.t.KLWnit),
+            children: a.intl.string(a.t["W0/Duf"])
         })
     })
 }
@@ -59,8 +59,8 @@ function c() {
                     stackingBehavior: "stack"
                 })
             }),
-            title: r.intl.string(r.t.PsQmzU),
-            actionText: r.intl.string(r.t.ajkYcF)
+            title: a.intl.string(a.t.PsQmzU),
+            actionText: a.intl.string(a.t.ajkYcF)
         })
     })
 }

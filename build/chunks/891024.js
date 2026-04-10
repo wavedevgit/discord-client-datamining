@@ -3,10 +3,10 @@ n.d(t, {
     A: () => l
 });
 var i = n(311907),
-    a = n(320501),
-    r = n(287809);
-let l = e => (0, i.bG)([a.A, r.default], () => {
+    r = n(320501),
+    a = n(287809);
+let l = e => (0, i.bG)([r.A, a.default], () => {
     if (null == e) return !1;
-    let t = r.default.getCurrentUser();
-    return null != a.A.getMessages(e).findNewest(e => e.author.id === t?.id)
+    let t = a.default.getCurrentUser();
+    return null != r.A.getMessages(e).findNewest(e => e.author.id === t?.id)
 })

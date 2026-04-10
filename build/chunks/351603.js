@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(397927),
-    a = n(419954),
-    r = n(933297),
+    r = n(419954),
+    a = n(933297),
     o = n(287809),
     d = n(780964),
     c = n(980429),
@@ -27,12 +27,12 @@ function g() {
         redesign: !0
     })
 }
-let _ = (0, a.Tf)(d.X.ACCOUNT_INFO_EMAIL_SETTING, {
+let _ = (0, r.Tf)(d.X.ACCOUNT_INFO_EMAIL_SETTING, {
     usePredicate: () => (0, s.bG)([o.default], () => o.default.getCurrentUser()?.isClaimed()) ?? !1,
     useTitle: () => m.intl.string(m.t.tlZllC),
     useVariant: () => "secondary",
     useTrailingContent: () => ({
-        type: r._1.STRONGLY_DISCOURAGED_CUSTOM,
+        type: a._1.STRONGLY_DISCOURAGED_CUSTOM,
         StronglyDiscouragedCustomComponent: g
     }),
     useLabel: function() {

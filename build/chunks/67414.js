@@ -1,44 +1,45 @@
 /** chunk id: 67414 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => O
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(110259),
-    r = n(311907),
-    s = n(397927),
-    o = n(966327),
-    c = n(793574),
+    r = n(64700),
+    s = n(110259),
+    l = n(311907),
+    a = n(397927),
+    c = n(966327),
+    o = n(793574),
     u = n(688810),
     d = n(139286),
     _ = n(21119),
-    A = n(287809),
-    m = n(954571),
-    E = n(242874),
-    T = n(275759),
-    I = n(51501),
+    E = n(287809),
+    A = n(954571),
+    m = n(242874),
+    I = n(275759),
+    T = n(51501),
     g = n(233971),
     N = n(788868),
     f = n(652215),
-    C = n(778712),
-    h = n(985018),
-    p = n(478169);
-let S = (0, s.FT9)(C._3.SIZE_56),
-    x = (0, s.FT9)(C._3.SIZE_24);
+    p = n(778712),
+    C = n(985018),
+    h = n(478169);
+let S = (0, a.FT9)(p._3.SIZE_56),
+    R = (0, a.FT9)(p._3.SIZE_24);
 
-function R(e) {
+function x(e) {
     let {
         user: t,
         ariaLabel: n,
-        showCutout: a
-    } = e, r = l.useId(), s = "u" > typeof document && document.documentElement?.dir === "rtl" ? -2 : S - x - -2, c = S - x - -3;
+        showCutout: s
+    } = e, l = r.useId(), a = "u" > typeof document && document.documentElement?.dir === "rtl" ? -2 : S - R - -2, o = S - R - -3;
     return (0, i.jsxs)("svg", {
         width: S,
         height: S,
         viewBox: `0 0 ${S} ${S}`,
-        className: p.XH,
-        children: [a && (0, i.jsxs)("mask", {
-            id: r,
+        className: h.XH,
+        children: [s && (0, i.jsxs)("mask", {
+            id: l,
             maskUnits: "userSpaceOnUse",
             children: [(0, i.jsx)("rect", {
                 x: 0,
@@ -47,9 +48,9 @@ function R(e) {
                 height: S,
                 fill: "white"
             }), (0, i.jsx)("circle", {
-                cx: s + x / 2,
-                cy: c + x / 2,
-                r: x / 2 + 2,
+                cx: a + R / 2,
+                cy: o + R / 2,
+                r: R / 2 + 2,
                 fill: "black"
             })]
         }), (0, i.jsx)("foreignObject", {
@@ -57,12 +58,12 @@ function R(e) {
             y: 0,
             width: S,
             height: S,
-            mask: a ? `url(#${r})` : void 0,
-            children: (0, i.jsx)(o.A, {
-                className: p.A6,
+            mask: s ? `url(#${l})` : void 0,
+            children: (0, i.jsx)(c.A, {
+                className: h.A6,
                 user: t,
                 "aria-label": n,
-                size: C._3.SIZE_56
+                size: p._3.SIZE_56
             })
         })]
     })
@@ -72,113 +73,113 @@ function O(e) {
     let {
         giftIntentType: t,
         recipientUser: S,
-        analyticsPage: x,
+        analyticsPage: R,
         analyticsSection: O,
         innerRef: M
-    } = e, D = (0, r.bG)([A.default], () => A.default.getCurrentUser()), {
-        analyticsLocations: L
-    } = (0, u.Ay)(c.A.PREMIUM_GIFT_INTENT_CARD), U = (0, r.bG)([T.Ay], () => T.Ay.getFriendAnniversaryYears(S.id)), P = (0, I.$)(t), {
+    } = e, D = (0, l.bG)([E.default], () => E.default.getCurrentUser()), {
+        analyticsLocations: U
+    } = (0, u.Ay)(o.A.PREMIUM_GIFT_INTENT_CARD), P = (0, l.bG)([I.Ay], () => I.Ay.getFriendAnniversaryYears(S.id)), L = (0, T.$)(t), {
         openGiftModal: v
     } = (0, g.$)({
         giftRecipient: S,
-        analyticsLocations: L,
-        analyticsLocation: P.chat,
+        analyticsLocations: U,
+        analyticsLocation: L.chat,
         analyticsObject: {
-            page: x,
+            page: R,
             section: O,
             object: f.ZSU.BUTTON_CTA,
             objectType: f.AnalyticsObjectTypes.GIFT
         },
         location: "gift-intent-card"
     });
-    l.useEffect(() => {
+    r.useEffect(() => {
         (0, d.x)({
-            name: a.ImpressionNames.GIFT_INTENT_CARD,
-            type: a.ImpressionTypes.VIEW,
+            name: s.ImpressionNames.GIFT_INTENT_CARD,
+            type: s.ImpressionTypes.VIEW,
             properties: {
                 gift_intent_type: t,
-                num_friend_anniversaries: T.Ay.getFriendAnniversaries().length
+                num_friend_anniversaries: I.Ay.getFriendAnniversaries().length
             }
         })
     }, [t]);
-    let y = () => t === N.np.FRIEND_ANNIVERSARY ? h.intl.string(h.t.ilhtIa) : (0, E.yE)(t);
+    let y = () => t === N.np.FRIEND_ANNIVERSARY ? C.intl.string(C.t.ilhtIa) : (0, m.yE)(t);
     return (0, i.jsx)("div", {
         ref: M,
-        className: p.Qs,
+        className: h.Qs,
         children: (0, i.jsxs)("div", {
-            className: p.gx,
+            className: h.gx,
             children: [(0, i.jsxs)("div", {
-                className: p.ou,
+                className: h.ou,
                 children: [(0, i.jsxs)("div", {
-                    className: p.HD,
-                    children: [(0, i.jsx)(R, {
+                    className: h.HD,
+                    children: [(0, i.jsx)(x, {
                         user: S,
                         ariaLabel: S.username,
                         showCutout: null != D
-                    }), null != D && (0, i.jsx)(o.A, {
-                        className: p.GM,
+                    }), null != D && (0, i.jsx)(c.A, {
+                        className: h.GM,
                         user: D,
                         "aria-label": S.username,
-                        size: C._3.SIZE_24
+                        size: p._3.SIZE_24
                     })]
                 }), (0, i.jsxs)("div", {
-                    className: p.FS,
-                    children: [(0, i.jsx)(s.Text, {
+                    className: h.FS,
+                    children: [(0, i.jsx)(a.Text, {
                         variant: "text-md/medium",
                         color: "text-strong",
                         lineClamp: 3,
-                        children: t === N.np.FRIEND_ANNIVERSARY ? h.intl.string(h.t.CeQIwZ) : (0, E.yE)(t)
+                        children: t === N.np.FRIEND_ANNIVERSARY ? C.intl.string(C.t.CeQIwZ) : (0, m.yE)(t)
                     }), (0, i.jsxs)("div", {
-                        className: p.jA,
-                        children: [(0, i.jsx)(s.$yI, {
+                        className: h.jA,
+                        children: [(0, i.jsx)(a.$yI, {
                             size: "xs"
-                        }), (0, i.jsx)(s.Text, {
-                            className: p.Tm,
+                        }), (0, i.jsx)(a.Text, {
+                            className: h.Tm,
                             variant: "text-md/normal",
                             color: "text-subtle",
                             lineClamp: 1,
-                            children: t === N.np.FRIEND_ANNIVERSARY ? h.intl.formatToPlainString(h.t.PpG27s, {
-                                numberOfYears: U
-                            }) : (0, E.yE)(t)
+                            children: t === N.np.FRIEND_ANNIVERSARY ? C.intl.formatToPlainString(C.t.PpG27s, {
+                                numberOfYears: P
+                            }) : (0, m.yE)(t)
                         })]
                     })]
                 })]
             }), (0, i.jsxs)("div", {
-                className: p.UD,
-                children: [(0, i.jsx)(s.Button, {
+                className: h.UD,
+                children: [(0, i.jsx)(a.Button, {
                     size: "sm",
                     variant: "secondary",
-                    text: h.intl.string(h.t.nffuyb),
-                    "aria-label": h.intl.string(h.t.nffuyb),
+                    text: C.intl.string(C.t.nffuyb),
+                    "aria-label": C.intl.string(C.t.nffuyb),
                     onClick: e => {
-                        e.stopPropagation(), m.default.track(f.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
+                        e.stopPropagation(), A.default.track(f.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
                             gift_intent_type: t,
                             cta_type: "send_message",
-                            location_stack: L
-                        }), (0, s.mMO)(async () => {
+                            location_stack: U
+                        }), (0, a.mMO)(async () => {
                             let {
                                 default: e
                             } = await n.e("95501").then(n.bind(n, 367516));
                             return n => (0, i.jsx)(e, {
                                 ...n,
                                 giftIntentType: t,
-                                analyticsLocationHistory: L
+                                analyticsLocationHistory: U
                             })
                         })
                     }
-                }), (0, i.jsx)(s.Button, {
+                }), (0, i.jsx)(a.Button, {
                     size: "sm",
                     variant: "expressive",
                     text: y(),
-                    icon: s.okO,
+                    icon: a.okO,
                     "aria-label": y(),
                     onClick: e => {
                         e.stopPropagation();
                         let n = _.A.getUserAffinity(S.id);
-                        m.default.track(f.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
+                        A.default.track(f.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
                             gift_intent_type: t,
                             affinity: n?.dmProbability,
-                            location_stack: L
+                            location_stack: U
                         }), v()
                     }
                 })]

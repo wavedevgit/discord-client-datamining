@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(284009),
-    a = n.n(l),
-    r = n(417597),
+    r = n.n(l),
+    a = n(417597),
     o = n(397927),
     d = n(287809),
     c = n(438732),
@@ -21,8 +21,8 @@ var i = n(627968),
 function p(e) {
     let {
         user: t
-    } = e, l = (0, c.A)(), p = (0, u.xr)(), T = (0, r.bG)([d.default], () => d.default.getCurrentUser()), f = s.useCallback(() => {
-        a()(void 0 !== T, "User must be logged in to accept a link request"), (0, o.mMO)(async () => {
+    } = e, l = (0, c.A)(), p = (0, u.xr)(), T = (0, a.bG)([d.default], () => d.default.getCurrentUser()), f = s.useCallback(() => {
+        r()(void 0 !== T, "User must be logged in to accept a link request"), (0, o.mMO)(async () => {
             let {
                 default: e
             } = await n.e("31385").then(n.bind(n, 58144));
@@ -33,7 +33,7 @@ function p(e) {
             })
         })
     }, [T, t]), S = s.useCallback(() => {
-        a()(void 0 !== T, "User must be logged in to decline a link request"), (0, o.mMO)(async () => {
+        r()(void 0 !== T, "User must be logged in to decline a link request"), (0, o.mMO)(async () => {
             let {
                 default: e
             } = await n.e("84811").then(n.bind(n, 389094));
@@ -44,7 +44,7 @@ function p(e) {
             })
         })
     }, [T, t]), E = s.useCallback(() => {
-        a()(void 0 !== T, "User must be logged in to decline a link request"), (0, o.mMO)(async () => {
+        r()(void 0 !== T, "User must be logged in to decline a link request"), (0, o.mMO)(async () => {
             let {
                 default: e
             } = await n.e("17219").then(n.bind(n, 187278));

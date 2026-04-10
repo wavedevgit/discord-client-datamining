@@ -1,22 +1,22 @@
 /** chunk id: 42589 params = (module,exports,require) **/
 n.d(t, {
     EB: () => g,
-    G: () => i,
-    Qb: () => I,
+    G: () => l,
+    Qb: () => m,
     aU: () => h,
     o5: () => d
 }), n(321073);
-var l, i = ((l = {}).GuildText = "GUILD_TEXT", l.GuildVoice = "GUILD_VOICE", l.DirectMessage = "DIRECT_MESSAGE", l.GroupDM = "GROUP_DM", l);
+var i, l = ((i = {}).GuildText = "GUILD_TEXT", i.GuildVoice = "GUILD_VOICE", i.DirectMessage = "DIRECT_MESSAGE", i.GroupDM = "GROUP_DM", i);
 
-function r(e, t, n, l) {
-    let i = 0;
+function r(e, t, n, i) {
+    let l = 0;
     for (let [r, s] of e.entries()) {
-        let e = l(r);
+        let e = i(r);
         if (e <= 0) continue;
-        let a = e * u(s, t, n);
-        a > i && (i = a)
+        let a = e * o(s, t, n);
+        a > l && (l = a)
     }
-    return i
+    return l
 }
 class s {
     signals;
@@ -30,9 +30,9 @@ class s {
     }
     _computeMentionScore(e) {
         if (this.signals.mentionCount <= 0) return 0;
-        let t = u(this.signals.lastDirectMentionAtMs, e, 6e5);
+        let t = o(this.signals.lastDirectMentionAtMs, e, 6e5);
         this.scoreInfo.rawSignalsScore.lastDirectMentionAtMs = t;
-        let n = u(this.signals.lastRoleMentionAtMs, e, 6e5);
+        let n = o(this.signals.lastRoleMentionAtMs, e, 6e5);
         return this.scoreInfo.rawSignalsScore.lastRoleMentionAtMs = n, 2 * Math.min(this.signals.mentionCount, 3) * Math.max(t, n)
     }
     _computeMessageScore(e) {
@@ -42,7 +42,7 @@ class s {
                 let n = t - e;
                 return n <= 0 || n <= 18e4 ? .8 : n >= 6e5 ? 0 : .8 * (1 - (n - 18e4) / 42e4)
             }(this.signals.lastMessageAtMs, e), this.signals.unread) {
-            let n = u(this.signals.lastUnreadAtMs, e, 18e5);
+            let n = o(this.signals.lastUnreadAtMs, e, 18e5);
             t += .8 * n, this.scoreInfo.rawSignalsScore.lastUnreadAtMs = n
         }
         let n = r(this.signals.recentMessageAuthorIds, e, 6e5, this.providers.getNormalizedUserAffinity);
@@ -56,8 +56,8 @@ class s {
     getScoreWithoutPenalty(e) {
         let t = this._computeActivityScore(e),
             n = this._computeMentionScore(e),
-            l = this._computeMessageScore(e);
-        return this.scoreInfo.activityScore = t, this.scoreInfo.mentionScore = n, this.scoreInfo.messageScore = l, t + n + l
+            i = this._computeMessageScore(e);
+        return this.scoreInfo.activityScore = t, this.scoreInfo.mentionScore = n, this.scoreInfo.messageScore = i, t + n + i
     }
     computeScore(e) {
         let t = c(e, this.lastActivityAtMs);
@@ -66,7 +66,7 @@ class s {
     pruneSignals(e) {
         if (this.signals.typingUserIdsWithTimestampMs.size > 0) {
             let t = new Map;
-            for (let [n, l] of this.signals.typingUserIdsWithTimestampMs.entries()) e - l <= 15e3 && t.set(n, l);
+            for (let [n, i] of this.signals.typingUserIdsWithTimestampMs.entries()) e - i <= 15e3 && t.set(n, i);
             let n = Array.from(t.keys());
             this.signals = {
                 ...this.signals,
@@ -77,7 +77,7 @@ class s {
         }
         if (this.signals.recentMessageAuthorIds.size > 0) {
             let t = new Map;
-            for (let [n, l] of this.signals.recentMessageAuthorIds.entries()) e - l <= 6e5 && t.set(n, l);
+            for (let [n, i] of this.signals.recentMessageAuthorIds.entries()) e - i <= 6e5 && t.set(n, i);
             let n = null != this.signals.recentMessageAuthorId && t.has(this.signals.recentMessageAuthorId) ? this.signals.recentMessageAuthorId : null;
             this.signals = {
                 ...this.signals,
@@ -110,7 +110,7 @@ class a {
                 ...this.scoreInfo.rawSignalsScore,
                 ...this._textualScore.scoreInfo.rawSignalsScore
             }
-        }, o(t, 2)
+        }, u(t, 2)
     }
     _computeVoiceUsersScore(e) {
         if (0 === this.signals.voiceUsersWithJoinTimestampMs.size) return 0;
@@ -119,7 +119,7 @@ class a {
     }
     _computeVoiceActivityScore(e) {
         let t = 0;
-        null != this.signals.lastVoiceJoinAtMs && (t = Math.max(t, u(this.signals.lastVoiceJoinAtMs, e, 12e4))), this.scoreInfo.rawSignalsScore.lastVoiceJoinAtMs = t;
+        null != this.signals.lastVoiceJoinAtMs && (t = Math.max(t, o(this.signals.lastVoiceJoinAtMs, e, 12e4))), this.scoreInfo.rawSignalsScore.lastVoiceJoinAtMs = t;
         let n = r(this.signals.lastUnmuteActivityAtMs, e, 12e4, this.providers.getNormalizedUserAffinity);
         return this.scoreInfo.rawSignalsScore.lastUnmuteActivityAtMs = n, n = Math.max(n, r(this.signals.lastUndeafenActivityAtMs, e, 12e4, this.providers.getNormalizedUserAffinity)), this.scoreInfo.rawSignalsScore.lastUndeafenActivityAtMs = n, 1.25 * (n + t)
     }
@@ -132,17 +132,17 @@ class a {
     computeScore(e) {
         let t = this._computeTextualScore(e),
             n = this._computeVoiceUsersScore(e),
-            l = this._computeVoiceActivityScore(e),
-            i = this._computeStreamUsersScore(e),
+            i = this._computeVoiceActivityScore(e),
+            l = this._computeStreamUsersScore(e),
             r = c(e, this.lastActivityAtMs);
-        return this.scoreInfo.penalty = r, this.scoreInfo.voiceUsersScore = n, this.scoreInfo.voiceActivityScore = l, this.scoreInfo.streamUsersScore = i, (t + n + l + i) * (1 - r)
+        return this.scoreInfo.penalty = r, this.scoreInfo.voiceUsersScore = n, this.scoreInfo.voiceActivityScore = i, this.scoreInfo.streamUsersScore = l, (t + n + i + l) * (1 - r)
     }
     pruneSignals(e) {
         this._textualScore.pruneSignals(e);
         let t = t => {
             if (0 === t.size) return t;
             let n = new Map;
-            for (let [l, i] of t.entries()) e - i <= 12e4 && n.set(l, i);
+            for (let [i, l] of t.entries()) e - l <= 12e4 && n.set(i, l);
             return n
         };
         this.signals = {
@@ -156,13 +156,13 @@ class a {
     }
 }
 
-function u(e, t, n) {
+function o(e, t, n) {
     if (null == e) return 0;
-    let l = t - e;
-    return l <= 0 ? 1 : l >= n ? 0 : 1 - l / n
+    let i = t - e;
+    return i <= 0 ? 1 : i >= n ? 0 : 1 - i / n
 }
 
-function o(e) {
+function u(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1;
     return e <= 0 ? 0 : e >= t ? t : e
 }
@@ -199,14 +199,14 @@ function c(e, t) {
 function h(e, t) {
     let n = e.guildId;
     if (null == n) return 0;
-    let l = 0;
-    return null != t.voiceGuildId && n === t.voiceGuildId && (l += 1), null != t.mostRecentGuildId && n === t.mostRecentGuildId && (l += .4), l
+    let i = 0;
+    return null != t.voiceGuildId && n === t.voiceGuildId && (i += 1), null != t.mostRecentGuildId && n === t.mostRecentGuildId && (i += .4), i
 }
 
 function g(e, t) {
-    return .8 * (null != e.guildId ? o(t.getNormalizedGuildAffinity(e.guildId)) : 0)
+    return .8 * (null != e.guildId ? u(t.getNormalizedGuildAffinity(e.guildId)) : 0)
 }
-class I {
+class m {
     candidate;
     signals;
     _activeNowScoreSource;

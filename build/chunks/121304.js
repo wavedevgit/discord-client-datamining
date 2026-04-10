@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(31502),
     s = n(773669),
     l = n(927578),
-    a = n(580630),
-    r = n(788868),
+    r = n(580630),
+    a = n(788868),
     o = n(652215),
     d = n(985018);
 n(418483);
@@ -110,10 +110,10 @@ let u = () => {
             id: 4,
             label: d.intl.string(d.t["ufhQC+"]),
             tier0ColumnData: {
-                text: (0, l.EJ)(r.PremiumTypes.TIER_0)
+                text: (0, l.EJ)(a.PremiumTypes.TIER_0)
             },
             tier2ColumnData: {
-                text: (0, l.EJ)(r.PremiumTypes.TIER_2)
+                text: (0, l.EJ)(a.PremiumTypes.TIER_2)
             }
         }, {
             id: 11,
@@ -154,8 +154,8 @@ let u = () => {
         }, {
             id: 6,
             label: d.intl.formatToPlainString(d.t.nyhDpw, {
-                numBoosts: r.M4,
-                percentageOff: (0, a.l9)(s.default.locale, r.oX / 100)
+                numBoosts: a.M4,
+                percentageOff: (0, r.l9)(s.default.locale, a.oX / 100)
             }),
             tier0ColumnData: {
                 includes: !1

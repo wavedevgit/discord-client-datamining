@@ -3,8 +3,8 @@ n.d(t, {
     A: () => O
 });
 var i = n(256415),
-    a = n(837921),
-    r = n(214961),
+    r = n(837921),
+    a = n(214961),
     l = n(88065),
     s = n(474951),
     o = n(770804),
@@ -12,8 +12,8 @@ var i = n(256415),
     c = n(228440),
     u = n(372919),
     A = n(624712),
-    _ = n(294446),
-    h = n(175436),
+    h = n(294446),
+    _ = n(175436),
     m = n(43203),
     g = n(1791),
     p = n(293890),
@@ -27,10 +27,10 @@ var i = n(256415),
     x = n(177235),
     v = n(266686);
 let b = {
-        ...r.U,
+        ...a.U,
         ...u.A,
         ...A.A,
-        ...h.A,
+        ..._.A,
         ...g.A,
         ...m.A,
         ...p.A,
@@ -41,7 +41,7 @@ let b = {
         ...N.A,
         ...x.A,
         ...S.A,
-        ..._.A,
+        ...h.A,
         ...T.A
     },
     y = {
@@ -57,7 +57,7 @@ let b = {
         stores: [i.default],
         transports: [v.A],
         registerTransportsForEmbeddedPlatform: function() {
-            a.Ay.ensureModule("discord_rpc").then(() => {
+            r.Ay.ensureModule("discord_rpc").then(() => {
                 for (let e of [n(33006).A, n(998921).A]) s.A.registerTransport(e)
             })
         }

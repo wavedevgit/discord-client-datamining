@@ -28,8 +28,8 @@ let m = s.forwardRef(function(e, t) {
             onMouseLeave: T,
             "aria-label": p,
             "aria-checked": g,
-            role: C,
-            plated: h
+            role: h,
+            plated: C
         } = e, S = "function" == typeof c ? (0, l.jsx)(c, {
             width: 20,
             height: 20,
@@ -50,8 +50,8 @@ let m = s.forwardRef(function(e, t) {
                 [A.Xr]: _,
                 [A.r9]: o,
                 [A.Sn]: !o,
-                [A.ZQ]: h,
-                [A.OH]: _ && h
+                [A.ZQ]: C,
+                [A.OH]: _ && C
             }),
             onClick: e => {
                 null != i && i(e)
@@ -60,7 +60,7 @@ let m = s.forwardRef(function(e, t) {
             onMouseEnter: N,
             onMouseLeave: T,
             onContextMenu: s,
-            role: C,
+            role: h,
             "aria-checked": g,
             focusProps: {
                 offset: {

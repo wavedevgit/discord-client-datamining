@@ -17,8 +17,8 @@ var i = n(627968),
     A = n(235986),
     f = n(42473),
     g = n(994314),
-    _ = n(241847),
-    m = n(178442),
+    m = n(241847),
+    _ = n(178442),
     x = n(71393),
     E = n(430452),
     y = n(994500),
@@ -28,8 +28,8 @@ var i = n(627968),
     I = n(855790),
     N = n(652215),
     T = n(985018),
-    b = n(672829),
-    O = n(470534);
+    O = n(672829),
+    b = n(470534);
 class j extends s.PureComponent {
     rtcConnectionStatusRef = s.createRef();
     handleToggleSelfMute = () => {
@@ -57,7 +57,7 @@ class j extends s.PureComponent {
         let {
             lobbyId: t
         } = this.props;
-        return (0, i.jsx)(_.A, {
+        return (0, i.jsx)(m.A, {
             channelId: e,
             lobbyId: t,
             isOverlay: !0
@@ -73,7 +73,7 @@ class j extends s.PureComponent {
                 t.stopPropagation(), u.A.channelListScrollTo(l, e.id)
             },
             children: (0, i.jsx)(g.A, {
-                className: O.Ix,
+                className: b.Ix,
                 children: s
             })
         })
@@ -93,14 +93,14 @@ class j extends s.PureComponent {
             mute: p
         } = this.props;
         return null == l ? null : (0, i.jsx)(I.Ay.Bar, {
-            className: a()(e, b.ne, {
-                [b.CW]: !n
+            className: a()(e, O.ne, {
+                [O.CW]: !n
             }),
             children: (0, i.jsxs)(I.Ay.Content, {
-                className: a()(t, b.Qs),
+                className: a()(t, O.Qs),
                 dynamicSize: !0,
                 children: [(0, i.jsx)("div", {
-                    className: O.vW,
+                    className: b.vW,
                     children: (0, i.jsx)(d.YNO, {
                         targetElementRef: this.rtcConnectionStatusRef,
                         renderPopout: () => this.renderPopout(l.id),
@@ -108,7 +108,7 @@ class j extends s.PureComponent {
                         children: e => (0, i.jsx)(d.DUT, {
                             ...e,
                             innerRef: this.rtcConnectionStatusRef,
-                            children: (0, i.jsx)(m.A, {
+                            children: (0, i.jsx)(_.A, {
                                 channelId: l.id,
                                 quality: r,
                                 lastPing: o,
@@ -123,13 +123,13 @@ class j extends s.PureComponent {
                     children: [(0, i.jsx)(f.A, {
                         tooltipText: p ? T.intl.string(T.t.YqAjXy) : T.intl.string(T.t.w4m945),
                         icon: p ? d.z0P : d.cNw,
-                        iconForeground: p ? b.of : null,
+                        iconForeground: p ? O.of : null,
                         onClick: this.handleToggleSelfMute
                     }), (0, i.jsx)(f.A, {
                         tooltipText: h ? T.intl.string(T.t["2US872"]) : T.intl.string(T.t.wjcRFX),
                         icon: h ? d.cQT : d.LoC,
                         onClick: this.handleToggleSelfDeaf,
-                        iconForeground: h ? b.of : null
+                        iconForeground: h ? O.of : null
                     }), null == s && (0, i.jsx)(f.A, {
                         tooltipText: T.intl.string(T.t["6vrfgt"]),
                         onClick: this.handleDisconnect,

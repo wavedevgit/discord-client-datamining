@@ -1,11 +1,11 @@
 /** chunk id: 914835 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => v
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(311907),
     o = n(397927),
     c = n(442433),
@@ -16,20 +16,20 @@ var i = n(627968),
     A = n(967144),
     g = n(342296),
     p = n(696451),
-    f = n(287809),
-    _ = n(427262),
+    _ = n(287809),
+    f = n(427262),
     E = n(314307),
-    x = n(652215),
-    C = n(985018),
+    C = n(652215),
+    x = n(985018),
     S = n(756304);
 
 function I(e) {
     let {
         userId: t,
-        channel: s
+        channel: a
     } = e, h = l.useRef(null), {
         analyticsLocations: m
-    } = (0, u.Ay)(d.A.USERNAME), E = (0, r.bG)([f.default], () => f.default.getUser(t)), x = (0, r.bG)([p.Ay], () => null != t ? p.Ay.getMember(s.guild_id, t) : null), C = (0, A.gn)(s.guild_id, t ?? void 0, x?.colorStrings ?? null);
+    } = (0, u.Ay)(d.A.USERNAME), E = (0, r.bG)([_.default], () => _.default.getUser(t)), C = (0, r.bG)([p.Ay], () => null != t ? p.Ay.getMember(a.guild_id, t) : null), x = (0, A.gn)(a.guild_id, t ?? void 0, C?.colorStrings ?? null);
 
     function I(e) {
         if (null == E) return null;
@@ -40,24 +40,24 @@ function I(e) {
             return t => (0, i.jsx)(e, {
                 ...t,
                 user: E,
-                guildId: s.guild_id,
-                channel: s
+                guildId: a.guild_id,
+                channel: a
             })
         })
     }
-    let T = x?.nick ?? _.Ay.getName(E) ?? "???",
-        N = x?.colorString;
+    let T = C?.nick ?? f.Ay.getName(E) ?? "???",
+        v = C?.colorString;
     return null == E ? (0, i.jsx)("span", {
-        className: a()(S.eM, S.sL),
+        className: s()(S.eM, S.sL),
         children: T
     }) : (0, i.jsx)(u.f5, {
         value: m,
         children: (0, i.jsx)(g.A, {
             targetElementRef: h,
             user: E,
-            guildId: s.guild_id,
-            channelId: s.id,
-            roleId: x?.colorRoleId,
+            guildId: a.guild_id,
+            channelId: a.id,
+            roleId: C?.colorRoleId,
             clickTrap: !0,
             children: e => (0, i.jsx)(o.DUT, {
                 ...e,
@@ -67,8 +67,8 @@ function I(e) {
                 onContextMenu: I,
                 children: (0, i.jsx)(o.gyj, {
                     name: T,
-                    colorString: N ?? null,
-                    colorStrings: C
+                    colorString: v ?? null,
+                    colorStrings: x
                 })
             })
         })
@@ -91,22 +91,22 @@ function T(e) {
             color: "text-default",
             children: (0, i.jsx)("div", {
                 className: S.VA,
-                children: C.intl.format(C.t.imPXd5, {
+                children: x.intl.format(x.t.imPXd5, {
                     usernameHook: (e, n) => (0, i.jsx)(I, {
                         userId: t.ownerId,
                         channel: t
                     }, n)
                 })
             })
-        }), t.type === x.rbe.PRIVATE_THREAD ? (0, i.jsx)(o.Text, {
+        }), t.type === C.rbe.PRIVATE_THREAD ? (0, i.jsx)(o.Text, {
             variant: "text-md/normal",
             color: "text-default",
-            children: C.intl.string(C.t["1awbZG"])
+            children: x.intl.string(x.t["1awbZG"])
         }) : null]
     })
 }
 
-function N(e) {
+function v(e) {
     let {
         channel: t
     } = e, n = (0, m.gU)(t) ?? o.ysw, l = (0, h.Ay)(t);

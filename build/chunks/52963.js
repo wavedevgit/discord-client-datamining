@@ -5,12 +5,12 @@ n.d(t, {
 var i = n(419954),
     s = n(890164),
     l = n(780964),
-    a = n(679122),
-    r = n(675844),
+    r = n(679122),
+    a = n(675844),
     o = n(985018);
 let d = (0, i.zZ)(l.X.PROFILE_PRIVACY_CATEGORY, {
     usePredicate: () => (0, s.lX)("ProfilePrivacyCategory"),
     useTitle: () => o.intl.string(o.t.ul884f),
     useSubtitle: () => o.intl.string(o.t.J0SFL2),
-    buildLayout: () => [r.I, a.O]
+    buildLayout: () => [a.I, r.O]
 })

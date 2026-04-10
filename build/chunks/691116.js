@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(158954),
     l = n(272053),
-    a = n(590089),
-    r = n(688897),
+    r = n(590089),
+    a = n(688897),
     o = n(24578),
     d = n(918422);
 
@@ -20,8 +20,8 @@ function c(e) {
         useTrailingDecoration: m
     } = t, g = n?.(), _ = c?.(), x = u?.(), A = m?.(), h = t.layout[0].key, {
         parentPanelNode: p
-    } = (0, r.x)(h), T = p?.useTitle?.(), f = g ?? T;
-    return null == p || null == f ? null : (0, i.jsx)(a.U, {
+    } = (0, a.x)(h), T = p?.useTitle?.(), f = g ?? T;
+    return null == p || null == f ? null : (0, i.jsx)(r.U, {
         role: "link",
         title: f,
         leadingElement: null != x ? (0, i.jsx)(o.g, {

@@ -1,11 +1,11 @@
 /** chunk id: 619036 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => _
 });
 var i = n(627968);
 n(64700);
-var a = n(735438),
-    r = n.n(a),
+var r = n(735438),
+    a = n.n(r),
     l = n(397927),
     s = n(347481),
     o = n(430452),
@@ -14,18 +14,18 @@ var a = n(735438),
 let u = new Set(["DisplayPort"]),
     A = "connected-device-modal";
 
-function _() {
+function h() {
     let e;
     if ((0, l.kBI)(A)) return;
     let t = o.Ay.getInputDeviceId(),
-        a = o.Ay.getOutputDeviceId();
-    if (d.A.getState().neverShowModal || r().isEmpty(d.A.lastDeviceConnected)) return;
-    let _ = (0, d.x)(o.Ay.getInputDevices()[t]),
-        h = (0, d.x)(o.Ay.getOutputDevices()[a]);
-    if (r().some(d.A.lastDeviceConnected, e => u.has(e.displayName) || e.displayName === _ || e.displayName === h)) return;
-    let m = r().some(d.A.lastDeviceConnected, e => s.A.isCertified(d.A.inputDevices[e.displayName]) || s.A.isCertified(d.A.outputDevices[e.displayName]));
-    if ((t === c.dx && d.A.lastInputSystemDevice.justChanged || a === c.dx && d.A.lastOutputSystemDevice.justChanged) && !m) return;
-    let g = r().first(Object.keys(d.A.lastDeviceConnected)),
+        r = o.Ay.getOutputDeviceId();
+    if (d.A.getState().neverShowModal || a().isEmpty(d.A.lastDeviceConnected)) return;
+    let h = (0, d.x)(o.Ay.getInputDevices()[t]),
+        _ = (0, d.x)(o.Ay.getOutputDevices()[r]);
+    if (a().some(d.A.lastDeviceConnected, e => u.has(e.displayName) || e.displayName === h || e.displayName === _)) return;
+    let m = a().some(d.A.lastDeviceConnected, e => s.A.isCertified(d.A.inputDevices[e.displayName]) || s.A.isCertified(d.A.outputDevices[e.displayName]));
+    if ((t === c.dx && d.A.lastInputSystemDevice.justChanged || r === c.dx && d.A.lastOutputSystemDevice.justChanged) && !m) return;
+    let g = a().first(Object.keys(d.A.lastDeviceConnected)),
         p = null != g && "" !== g ? d.A.lastDeviceConnected[g] : null;
     null == p || d.A.getState().ignoredDevices[p.displayName] || (d.A.initialized && null != g && (s.A.isCertified(d.A.inputDevices[g]) ? e = s.A.getCertifiedDevice(d.A.inputDevices[g]) : s.A.isCertified(d.A.outputDevices[g]) && (e = s.A.getCertifiedDevice(d.A.outputDevices[g]))), (0, l.mMO)(async () => {
         let {
@@ -33,22 +33,22 @@ function _() {
         } = await n.e("68386").then(n.bind(n, 347961));
         return n => {
             let {
-                transitionState: a,
-                onClose: r
+                transitionState: r,
+                onClose: a
             } = n;
             return (0, i.jsx)(t, {
                 device: p,
                 certifiedDeviceMetadata: e,
-                transitionState: a,
-                onClose: r
+                transitionState: r,
+                onClose: a
             })
         }
     }, {
         modalKey: A
     }))
 }
-let h = {
+let _ = {
     init() {
-        d.A.addChangeListener(_)
+        d.A.addChangeListener(h)
     }
 }

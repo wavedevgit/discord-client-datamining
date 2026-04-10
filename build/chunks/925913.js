@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(934551),
     l = n(311907),
-    a = n(554146),
-    r = n(397927),
+    r = n(554146),
+    a = n(397927),
     o = n(73153),
     d = n(631670),
     c = n(252452),
@@ -27,7 +27,7 @@ var i = n(627968),
     C = n(630044);
 let v = [{
         badgeType: g.Xi.NEW,
-        dismissibleContent: a.M.DISPLAY_NAME_STYLES_NEW_BADGE
+        dismissibleContent: r.M.DISPLAY_NAME_STYLES_NEW_BADGE
     }],
     N = () => {
         let e = (0, l.bG)([T.default], () => T.default.getCurrentUser()),
@@ -36,25 +36,25 @@ let v = [{
                 avatarDecorationSrc: n
             } = (0, A.A)({
                 userId: e?.id,
-                size: r._3J.SIZE_48
+                size: a._3J.SIZE_48
             });
         return null == e ? null : (0, i.jsxs)("div", {
             className: C.a5,
-            children: [(0, i.jsx)(r.euF, {
+            children: [(0, i.jsx)(a.euF, {
                 src: t,
                 avatarDecoration: n,
-                size: r._3J.SIZE_48,
+                size: a._3J.SIZE_48,
                 "aria-label": b.intl.string(b.t.lqaIxI)
             }), (0, i.jsxs)("div", {
                 className: C.FS,
-                children: [(0, i.jsx)(r.Text, {
+                children: [(0, i.jsx)(a.Text, {
                     color: "text-strong",
                     variant: "text-md/medium",
                     lineClamp: 1,
                     children: e.globalName ?? e.username
                 }), (0, i.jsxs)("div", {
                     className: C.Fk,
-                    children: [(0, i.jsx)(r.Text, {
+                    children: [(0, i.jsx)(a.Text, {
                         variant: "text-sm/normal",
                         color: "currentColor",
                         lineClamp: 1,
@@ -108,12 +108,12 @@ function O() {
             avatarDecorationSrc: n
         } = (0, A.A)({
             userId: e?.id,
-            size: r._3J.SIZE_48
+            size: a._3J.SIZE_48
         });
-    return (0, i.jsx)(r.euF, {
+    return (0, i.jsx)(a.euF, {
         src: t,
         avatarDecoration: n,
-        size: r._3J.SIZE_20,
+        size: a._3J.SIZE_20,
         "aria-hidden": !0
     })
 }

@@ -3,17 +3,17 @@ n.d(t, {
     A: () => R
 }), n(323874), n(14289), n(35956);
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(110259),
     o = n(877624),
     d = n(311907),
     c = n(554146),
     u = n(732955),
     A = n(397927),
-    _ = n(775602),
-    h = n(139286),
+    h = n(775602),
+    _ = n(139286),
     m = n(871751),
     g = n(259407),
     p = n(915089),
@@ -42,23 +42,23 @@ let y = [],
         let {
             header: t,
             subHeader: n,
-            imageSrc: a,
-            tagText: r,
+            imageSrc: r,
+            tagText: a,
             wideStyle: s
         } = e;
         return (0, i.jsxs)("div", {
             className: l()(b.Vr, {
                 [b.tF]: s
             }),
-            children: [null != r ? (0, i.jsx)(O, {
-                tagText: r,
+            children: [null != a ? (0, i.jsx)(O, {
+                tagText: a,
                 className: b.bX
             }) : null, (0, i.jsx)("img", {
                 alt: "",
                 className: l()(b._n, {
                     [b.tF]: s
                 }),
-                src: a
+                src: r
             }), (0, i.jsxs)("div", {
                 className: l()(b.Zz, {
                     [b.tF]: s
@@ -80,7 +80,7 @@ function R(e) {
     let {
         componentId: t,
         promotionId: n,
-        className: r,
+        className: a,
         renderModalProps: O,
         heroArt: R,
         heroArtClassName: P,
@@ -98,23 +98,23 @@ function R(e) {
     } = e, {
         onClose: Y,
         transitionState: W
-    } = O, K = (0, p.GV)(), q = G.length % 2 == 0, z = (0, d.bG)([_.A], () => _.A.useReducedMotion), [$, Q] = a.useState(Date.now()), [X, Z] = a.useState(0), [J, ee] = a.useState(0), [et, en] = a.useState(!1), [ei, ea] = a.useState(!0), er = a.useRef($), el = a.useRef(X), es = a.useRef(J), eo = a.useRef(et), ed = a.useRef(ei), [ec, eu] = a.useState(y), eA = a.useRef(!1);
+    } = O, K = (0, p.GV)(), q = G.length % 2 == 0, z = (0, d.bG)([h.A], () => h.A.useReducedMotion), [$, Q] = r.useState(Date.now()), [X, Z] = r.useState(0), [J, ee] = r.useState(0), [et, en] = r.useState(!1), [ei, er] = r.useState(!0), ea = r.useRef($), el = r.useRef(X), es = r.useRef(J), eo = r.useRef(et), ed = r.useRef(ei), [ec, eu] = r.useState(y), eA = r.useRef(!1);
 
-    function e_() {
+    function eh() {
         let e = Date.now(),
-            t = e - er.current,
+            t = e - ea.current,
             n = el.current,
             i = es.current;
         return eo.current && (Z(n += t), ed.current || ee(i += t)), Q(e), [n, i]
     }
-    return (0, h.A)({
+    return (0, _.A)({
         type: s.ImpressionTypes.MODAL,
         name: s.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
         properties: {
             component_id: t,
             component_type: o.C.ANNOUNCEMENT_MODAL
         }
-    }), a.useEffect(() => {
+    }), r.useEffect(() => {
         let e = async () => {
             try {
                 if ("video" !== R.type || null == R.subtitles) return;
@@ -125,10 +125,10 @@ function R(e) {
                         i = new Blob([n], {
                             type: "text/vtt"
                         }),
-                        a = URL.createObjectURL(i);
+                        r = URL.createObjectURL(i);
                     return {
                         ...e,
-                        src: a
+                        src: r
                     }
                 });
                 eu(await Promise.all(e))
@@ -137,15 +137,15 @@ function R(e) {
             }
         };
         !0 !== eA.current && e(), eA.current = !0
-    }, [R, ec]), a.useEffect(() => () => {
+    }, [R, ec]), r.useEffect(() => () => {
         null != ec && ec.forEach(e => {
             URL.revokeObjectURL(e.src)
         })
-    }, [ec]), a.useEffect(() => {
-        er.current = $, el.current = X, es.current = J, eo.current = et, ed.current = ei
-    }, [$, X, J, et, ei]), a.useEffect(() => () => {
+    }, [ec]), r.useEffect(() => {
+        ea.current = $, el.current = X, es.current = J, eo.current = et, ed.current = ei
+    }, [$, X, J, et, ei]), r.useEffect(() => () => {
         if ("video" === R.type || "embed" === R.type) {
-            let [e, t] = e_();
+            let [e, t] = eh();
             C.default.track(S.HAw.CHANGE_LOG_VIDEO_PLAYED, {
                 change_log_id: k,
                 seconds_played: Math.round(e / 1e3)
@@ -154,7 +154,7 @@ function R(e) {
                 seconds_unmuted: Math.round(t / 1e3)
             })
         }
-    }, [k, R.type]), a.useEffect(() => {
+    }, [k, R.type]), r.useEffect(() => {
         (0, I.Vh)(c.M.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL);
         let e = Date.now();
         return C.default.track(S.HAw.CHANGE_LOG_OPENED, {
@@ -169,7 +169,7 @@ function R(e) {
         }
     }, [k, n]), (0, i.jsx)(A.EOs, {
         "data-migration-pending": !0,
-        className: l()(b.zr, b.kv, r),
+        className: l()(b.zr, b.kv, a),
         transitionState: W,
         "aria-labelledby": K,
         parentComponent: "PremiumAnnouncementModalVariant1",
@@ -196,16 +196,16 @@ function R(e) {
                     onPlay: e => {
                         C.default.track(S.HAw.CHANGE_LOG_VIDEO_INTERACTED, {
                             change_log_id: k
-                        }), Q(Date.now()), en(!0), ea(e.currentTarget.muted)
+                        }), Q(Date.now()), en(!0), er(e.currentTarget.muted)
                     },
                     onEnded: e => {
-                        e_(), ea(e.currentTarget.muted), en(!1)
+                        eh(), er(e.currentTarget.muted), en(!1)
                     },
                     onVolumeChange: e => {
-                        e_(), ea(e.currentTarget.muted)
+                        eh(), er(e.currentTarget.muted)
                     },
                     onPause: e => {
-                        e_(), ea(e.currentTarget.muted), en(!1)
+                        eh(), er(e.currentTarget.muted), en(!1)
                     },
                     disablePictureInPicture: !0,
                     children: ec?.map(e => {

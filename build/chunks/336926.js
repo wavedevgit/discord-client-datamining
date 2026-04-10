@@ -1,16 +1,16 @@
 /** chunk id: 336926 params = (module,exports,require) **/
 n.d(t, {
-    T: () => a
+    T: () => r
 });
 var i = n(158954),
     s = n(754333),
     l = n(985018);
 
-function a(e, t) {
+function r(e, t) {
     let n = e.client_info?.location ?? e.client_info?.ip,
-        a = e.client_info?.platform,
+        r = e.client_info?.platform,
         {
-            text: r,
+            text: a,
             icon: o
         } = function(e) {
             switch (e?.toLowerCase().trim()) {
@@ -37,8 +37,8 @@ function a(e, t) {
         }(e.client_info?.os);
     return {
         location: n,
-        platform: a,
-        os: r,
+        platform: r,
+        os: a,
         Icon: o,
         lastActive: t ? null : (0, s.Y)(e.approx_last_used_time)
     }

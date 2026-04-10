@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(421380),
-    r = n(397927),
+    r = n(421380),
+    a = n(397927),
     o = n(688810),
     d = n(385612),
     c = n(128450),
@@ -29,7 +29,7 @@ function _(e) {
         withHighlight: f = !1
     } = e, {
         newestAnalyticsLocation: S
-    } = (0, o.Ay)(), E = f ? r.wLn : a.$n;
+    } = (0, o.Ay)(), E = f ? a.wLn : r.$n;
     return (0, i.jsx)(c.A, {
         className: x,
         title: m.intl.string(m.t.Vgdusv),
@@ -43,7 +43,7 @@ function _(e) {
                 className: l()({
                     [g.yj]: f
                 }),
-                size: a.$n.Sizes.SMALL,
+                size: r.$n.Sizes.SMALL,
                 onClick: () => (0, d.XD)({
                     uploadType: u.HL.BANNER,
                     analyticsSource: S,
@@ -54,7 +54,7 @@ function _(e) {
             }), t && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: g.DT,
-                children: (0, i.jsx)(r.Button, {
+                children: (0, i.jsx)(a.Button, {
                     variant: "secondary",
                     size: "sm",
                     text: null != _ ? m.intl.string(m.t.jHlJNS) : m.intl.string(m.t.tT9n7D),

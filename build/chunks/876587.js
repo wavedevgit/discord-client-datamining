@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(554146),
     l = n(342494),
-    a = n(397927),
-    r = n(932001),
+    r = n(397927),
+    a = n(932001),
     o = n(808247),
     d = n(788868),
     c = n(49999),
@@ -16,7 +16,7 @@ var s = n(554146),
 let g = e => {
     let {
         targetElementRef: t
-    } = e, [n, g] = (0, r.kn)([s.M.PREMIUM_WISHLIST_COACHMARK]);
+    } = e, [n, g] = (0, a.kn)([s.M.PREMIUM_WISHLIST_COACHMARK]);
     return n !== s.M.PREMIUM_WISHLIST_COACHMARK ? null : (0, i.jsx)(l.AM, {
         targetElementRef: t,
         title: u.intl.string(u.t["1YLUuN"]),
@@ -38,7 +38,7 @@ let g = e => {
                 try {
                     await o.A.addSkuToWishlist(d.pe.TIER_2), g(c.i.TAKE_ACTION)
                 } catch {
-                    (0, a.showToast)((0, a.createToast)(u.intl.string(u.t.F8FvUy), a.ToastType.FAILURE)), a.ORC.announce(u.intl.string(u.t.F8FvUy))
+                    (0, r.showToast)((0, r.createToast)(u.intl.string(u.t.F8FvUy), r.ToastType.FAILURE)), r.ORC.announce(u.intl.string(u.t.F8FvUy))
                 }
             }
         }],

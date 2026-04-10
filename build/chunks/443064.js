@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(827734),
     d = n(990078),
     c = n(397927),
@@ -58,14 +58,14 @@ function X(e) {
     let {
         className: t,
         user: l
-    } = e, r = s.useRef(null), u = (0, p.EC)(), m = u?.nick?.[0] ?? null, [g, _] = s.useState(!1);
+    } = e, a = s.useRef(null), u = (0, p.EC)(), m = u?.nick?.[0] ?? null, [g, _] = s.useState(!1);
     s.useEffect(() => {
-        _(null != r.current && r.current.scrollWidth > r.current.clientWidth)
+        _(null != a.current && a.current.scrollWidth > a.current.clientWidth)
     }, [l.username]);
     let x = !l.isClaimed(),
         A = x ? B.intl.string(B.t["7Ngnyr"]) : void 0;
     return (0, i.jsxs)("div", {
-        className: a()(H.ZZ, t),
+        className: r()(H.ZZ, t),
         children: [(0, i.jsx)("div", {
             className: H.NQ,
             children: (0, i.jsxs)("div", {
@@ -76,7 +76,7 @@ function X(e) {
                     children: B.intl.string(B.t.qqhR3L)
                 }), (0, i.jsxs)("div", {
                     className: H.HR,
-                    ref: r,
+                    ref: a,
                     children: [(0, i.jsx)(c.Text, {
                         tag: "span",
                         color: "text-strong",
@@ -131,11 +131,11 @@ function K(e) {
     let {
         user: t,
         className: n
-    } = e, l = Y(t.id), r = (0, p.EC)(), u = r?.nick?.[0] ?? null, m = L.Ay.getGlobalName(t), g = s.useRef(null), [_, x] = s.useState(!1);
+    } = e, l = Y(t.id), a = (0, p.EC)(), u = a?.nick?.[0] ?? null, m = L.Ay.getGlobalName(t), g = s.useRef(null), [_, x] = s.useState(!1);
     return s.useEffect(() => {
         x(null != g.current && g.current.scrollWidth > g.current.clientWidth)
     }, [m]), (0, i.jsxs)("div", {
-        className: a()(H.ZZ, n),
+        className: r()(H.ZZ, n),
         children: [(0, i.jsx)("div", {
             className: H.NQ,
             children: (0, i.jsxs)("div", {
@@ -230,7 +230,7 @@ function W(e) {
         handleClick: () => x.A.openClaimAccountModal()
     };
     return (0, i.jsxs)("div", {
-        className: a()(H.ZZ, s),
+        className: r()(H.ZZ, s),
         children: [(0, i.jsx)("div", {
             className: H.NQ,
             children: (0, i.jsxs)("div", {
@@ -268,16 +268,16 @@ function Z(e) {
     } = e;
     if (!l.isClaimed()) return null;
     let {
-        phone: r,
+        phone: a,
         email: o
-    } = l, d = null != r;
+    } = l, d = null != a;
     return t = d ? (0, i.jsx)(U.q, {
-        text: r,
+        text: a,
         censor: k.D,
         revealLabel: B.intl.string(B.t.eY3xlT),
         hideLabel: B.intl.string(B.t["jllbv+"])
     }) : B.intl.string(B.t.I5kDqj), (0, i.jsxs)("div", {
-        className: a()(H.ZZ, s),
+        className: r()(H.ZZ, s),
         children: [(0, i.jsx)("div", {
             className: H.NQ,
             children: (0, i.jsxs)("div", {
@@ -297,7 +297,7 @@ function Z(e) {
         }), (0, i.jsxs)("div", {
             className: H.PU,
             children: [d && null != o ? (0, i.jsx)("div", {
-                className: a()(H.pr, H.DT),
+                className: r()(H.pr, H.DT),
                 children: (0, i.jsx)(c.QWc, {
                     textVariant: "text-sm/medium",
                     variant: "secondary",
@@ -346,9 +346,9 @@ function q(e) {
     } = e, n = (0, A.A)({
         id: t.id,
         label: B.intl.string(B.t["/AXYnE"])
-    }), l = D.Q_.useSetting(), a = s.useRef(null);
+    }), l = D.Q_.useSetting(), r = s.useRef(null);
     return l && O.p5 ? (0, i.jsx)(c.YNO, {
-        targetElementRef: a,
+        targetElementRef: r,
         renderPopout: e => {
             let {
                 closePopout: t
@@ -364,7 +364,7 @@ function q(e) {
         },
         children: e => (0, i.jsx)(c.DUT, {
             ...e,
-            innerRef: a,
+            innerRef: r,
             className: H.SI,
             "aria-label": B.intl.string(B.t.DEoVWZ),
             children: (0, i.jsx)(c.jNK, {
@@ -379,7 +379,7 @@ function q(e) {
 function Q(e) {
     let {
         className: t
-    } = e, l = (0, _.b8)(), r = (0, _.yM)(), o = (0, _.Y2)(), d = !l || r, u = B.intl.string(B.t["9KiIz6"]), x = B.intl.string(B.t.DVywUB), A = B.intl.string(B.t.lKDPGA), h = s.useCallback(() => {
+    } = e, l = (0, _.b8)(), a = (0, _.yM)(), o = (0, _.Y2)(), d = !l || a, u = B.intl.string(B.t["9KiIz6"]), x = B.intl.string(B.t.DVywUB), A = B.intl.string(B.t.lKDPGA), h = s.useCallback(() => {
         window.open(R.A.getArticleURL(w.MVz.TIGGER_PAWTECT_LEARN_MORE), "_blank")
     }, []), p = s.useCallback(() => {
         (0, c.mMO)(async () => {
@@ -390,11 +390,11 @@ function Q(e) {
                 ...t
             })
         })
-    }, []), T = s.useMemo(() => l ? r ? B.intl.string(B.t.sK0dmH) : o ? B.intl.format(F.default.WM5adV, {
+    }, []), T = s.useMemo(() => l ? a ? B.intl.string(B.t.sK0dmH) : o ? B.intl.format(F.default.WM5adV, {
         handleOnHelpUrlHook: h
-    }) : B.intl.string(B.t.XxRj7f) : A, [l, r, o, A, h]), f = l && !r && o;
+    }) : B.intl.string(B.t.XxRj7f) : A, [l, a, o, A, h]), f = l && !a && o;
     return (0, i.jsxs)("div", {
-        className: a()(H.ZZ, t),
+        className: r()(H.ZZ, t),
         children: [(0, i.jsx)("div", {
             className: H.NQ,
             children: (0, i.jsxs)("div", {
@@ -407,7 +407,7 @@ function Q(e) {
                         tag: "span",
                         color: "text-strong",
                         variant: "text-md/normal",
-                        children: [o && l && !r ? `${B.intl.string(B.t.XxRj7f)} • ` : null, T]
+                        children: [o && l && !a ? `${B.intl.string(B.t.XxRj7f)} • ` : null, T]
                     })
                 })]
             })
@@ -427,8 +427,8 @@ function Q(e) {
             children: (0, i.jsx)(c.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: r ? u : x,
-                "aria-label": r ? u : x,
+                text: a ? u : x,
+                "aria-label": a ? u : x,
                 onClick: () => m.A.showAgeVerificationGetStartedModal({
                     entryPoint: g.q1.ACCOUNT_AGE_GROUP
                 })
@@ -440,7 +440,7 @@ function Q(e) {
 function J(e) {
     let {
         currentUser: t
-    } = e, n = Y(t.id), s = (0, C.Ay)(t.id), l = (0, b.A)(s), a = D.jP.useSetting(), o = (0, r.bG)([S.A], () => S.A.getErrors()), d = o?.avatar?.[0], {
+    } = e, n = Y(t.id), s = (0, C.Ay)(t.id), l = (0, b.A)(s), r = D.jP.useSetting(), o = (0, a.bG)([S.A], () => S.A.getErrors()), d = o?.avatar?.[0], {
         avatarSrc: m,
         avatarDecorationSrc: g
     } = (0, v.A)({
@@ -464,7 +464,7 @@ function J(e) {
                 className: H.my,
                 src: m,
                 avatarDecoration: g,
-                status: a,
+                status: r,
                 size: c._3J.SIZE_80,
                 "aria-label": t.username
             }), (0, i.jsxs)("div", {

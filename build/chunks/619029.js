@@ -12,8 +12,8 @@ var l = n(311907),
     c = n(961350),
     d = n(696451),
     u = n(229527),
-    _ = n(81400),
-    E = n(340837),
+    E = n(81400),
+    _ = n(340837),
     T = n(355097),
     A = n(985018);
 
@@ -21,7 +21,7 @@ function I(t) {
     let {
         guildId: e,
         analyticsLocations: n
-    } = t, [l, s] = (0, _.j8)({
+    } = t, [l, s] = (0, E.j8)({
         guildId: e,
         analyticsLocations: n
     }), a = s ? A.intl.string(A.t["6ndMcq"]) : A.intl.string(A.t["0eiu6J"]), o = s ? A.intl.string(A.t.S09nw4) : A.intl.string(A.t.tEttXd);
@@ -58,10 +58,10 @@ function R(t) {
         let t = c.default.getId();
         return (0, u.wj)(d.Ay.getMember(n.guildId, t))
     }, [n.guildId]);
-    return o.has(E.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || o.has(E.D.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(I, {
+    return o.has(_.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || o.has(_.D.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(I, {
         ...n,
         analyticsLocations: r
-    }) : o.has(E.D.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(N, {}) : (0, i.jsx)(I, {
+    }) : o.has(_.D.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(N, {}) : (0, i.jsx)(I, {
         ...n,
         analyticsLocations: r
     })

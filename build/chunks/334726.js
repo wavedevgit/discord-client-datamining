@@ -1,7 +1,7 @@
 /** chunk id: 334726 params = (module,exports,require) **/
 n.d(t, {
-    i: () => a,
-    r: () => r
+    i: () => r,
+    r: () => a
 });
 var i = n(945810),
     s = n(890164);
@@ -27,13 +27,13 @@ let l = (0, i.mj)({
             }
         }
     }),
-    a = e => {
+    r = e => {
         let t = (0, s.lX)(e),
             n = l.useConfig({
                 location: e
             });
         return t || n.copyChanges
     },
-    r = e => (0, s.W1)(e) || l.getConfig({
+    a = e => (0, s.W1)(e) || l.getConfig({
         location: e
     }).upsell

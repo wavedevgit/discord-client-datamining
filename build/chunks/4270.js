@@ -3,17 +3,17 @@ n.d(t, {
     A: () => b
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(837381),
     o = n(731738),
     d = n(397927),
     c = n(964486),
     u = n(260762),
     A = n(485947),
-    _ = n(831062),
-    h = n(954571),
+    h = n(831062),
+    _ = n(954571),
     m = n(15978),
     g = n(336590),
     p = n(471271),
@@ -28,16 +28,16 @@ var i = n(627968),
     v = n(69081);
 
 function b() {
-    let e = a.useRef(null),
+    let e = r.useRef(null),
         t = (0, I.A)(),
         n = (0, f.I)(),
-        r = (0, g.r)(),
+        a = (0, g.r)(),
         b = (0, m.w)(),
         y = (0, u.A)("message-requests-spam-list"),
         {
             channelId: O
         } = (0, E.N)(),
-        L = a.useCallback(() => {
+        L = r.useCallback(() => {
             (0, d.showToast)((0, d.createToast)(x.intl.string(x.t["EDYbS+"]), d.ToastType.FAILURE))
         }, []),
         {
@@ -45,32 +45,32 @@ function b() {
         } = (0, p.t)({
             onError: L
         }),
-        P = a.useCallback(() => {
+        P = r.useCallback(() => {
             R(t.map(e => e.channel.id))
         }, [t, R]);
     (0, c.Ay)(() => {
-        h.default.track(S.HAw.SPAM_MESSAGE_REQUESTS_VIEWED, {
+        _.default.track(S.HAw.SPAM_MESSAGE_REQUESTS_VIEWED, {
             num_spam_message_requests: n
-        }), _.A.increment({
+        }), h.A.increment({
             name: o.K.SPAM_MESSAGE_REQUEST_VIEW
         })
     });
-    let D = a.useCallback(e => {
+    let D = r.useCallback(e => {
             let {
                 row: n
-            } = e, a = t[n], s = t[n + 1]?.channel?.id, o = a.channel.id;
+            } = e, r = t[n], s = t[n + 1]?.channel?.id, o = r.channel.id;
             return (0, i.jsx)(T.A, {
                 index: n,
                 className: l()({
                     [v.wH]: null != O && O === o,
                     [v.wZ]: null != O && O === s
                 }),
-                channel: a.channel,
-                user: a.user,
-                hasSingleMessageRequest: r
+                channel: r.channel,
+                user: r.user,
+                hasSingleMessageRequest: a
             }, o)
-        }, [t, r, O]),
-        j = a.useCallback(() => (0, i.jsxs)(A.A, {
+        }, [t, a, O]),
+        j = r.useCallback(() => (0, i.jsxs)(A.A, {
             className: v.Gf,
             children: [x.intl.format(x.t.C79Edh, {
                 count: n
@@ -96,16 +96,16 @@ function b() {
         children: (0, i.jsx)(s.PR, {
             children: n => {
                 let {
-                    ref: a,
-                    role: r,
+                    ref: r,
+                    role: a,
                     ...l
                 } = n;
                 return (0, i.jsx)(d.B8B, {
                     className: v.p_,
-                    innerRole: r,
+                    innerRole: a,
                     innerAriaLabel: x.intl.string(x.t.e7GWjQ),
                     ref: t => {
-                        e.current = t, a.current = t?.getScrollerNode() ?? null
+                        e.current = t, r.current = t?.getScrollerNode() ?? null
                     },
                     paddingTop: 24,
                     paddingBottom: 24,

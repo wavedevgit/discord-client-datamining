@@ -1,12 +1,12 @@
 /** chunk id: 704844 params = (module,exports,require) **/
-a.d(t, {
-    A: () => i
+n.d(t, {
+    A: () => a
 });
-var n = a(562465),
-    r = a(652215);
-let i = {
-    updatePrivateChannelRecipientFlags: (e, t) => n.Bo.patch({
-        url: r.Rsh.CHANNEL_RECIPIENT_ME(e),
+var i = n(562465),
+    l = n(652215);
+let a = {
+    updatePrivateChannelRecipientFlags: (e, t) => i.Bo.patch({
+        url: l.Rsh.CHANNEL_RECIPIENT_ME(e),
         body: {
             flags: t
         },

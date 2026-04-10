@@ -3,8 +3,8 @@ n.d(t, {
     A: () => g
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(311907),
+    r = n(64700),
+    a = n(311907),
     l = n(533129),
     s = n(403362),
     o = n(670412),
@@ -12,22 +12,22 @@ var i = n(627968),
     c = n(965660),
     u = n(383470),
     A = n(166641),
-    _ = n(324580);
+    h = n(324580);
 
-function h(e) {
+function _(e) {
     let {
         onScroll: t,
         onGuildCardSeen: n,
         onGuildCardClick: l
-    } = e, s = (0, r.bG)([d.A], () => d.A.getGuildIds({
-        categoryId: _.Iq
-    }) ?? _.VX), c = (0, r.bG)([d.A], () => d.A.getIsFetching({
-        categoryId: _.Iq
+    } = e, s = (0, a.bG)([d.A], () => d.A.getGuildIds({
+        categoryId: h.Iq
+    }) ?? h.VX), c = (0, a.bG)([d.A], () => d.A.getIsFetching({
+        categoryId: h.Iq
     }) ?? !0);
-    return a.useEffect(() => {
+    return r.useEffect(() => {
         o.A.fetchFeaturedGuilds()
     }, []), (0, i.jsx)(u.A, {
-        tab: _.o.FEATURED,
+        tab: h.o.FEATURED,
         guildIds: s,
         loading: c,
         onScroll: t,
@@ -42,18 +42,18 @@ function m(e) {
         onScroll: n,
         onGuildCardSeen: l,
         onGuildCardClick: s
-    } = e, A = (0, c.Ub)(t), h = (0, r.bG)([d.A], () => d.A.getGuildIds({
+    } = e, A = (0, c.Ub)(t), _ = (0, a.bG)([d.A], () => d.A.getGuildIds({
         categoryId: A
-    }) ?? _.VX), m = (0, r.bG)([d.A], () => d.A.getIsFetching({
+    }) ?? h.VX), m = (0, a.bG)([d.A], () => d.A.getIsFetching({
         categoryId: A
     }) ?? !0);
-    return a.useEffect(() => {
+    return r.useEffect(() => {
         o.A.fetchCategoryFeaturedGuilds({
             categoryId: A
         })
     }, [A]), (0, i.jsx)(u.A, {
         tab: t,
-        guildIds: h,
+        guildIds: _,
         loading: m,
         onScroll: n,
         onGuildCardSeen: l,
@@ -65,34 +65,34 @@ function g(e) {
     let {
         selectedTab: t,
         onScroll: n,
-        onGuildCardSeen: r,
+        onGuildCardSeen: a,
         onGuildCardClick: o
     } = e;
-    switch (a.useEffect(() => {
+    switch (r.useEffect(() => {
             let e = (0, c.Ub)(t);
             (0, l.np)({
                 selectedCategoryId: e
             })
         }, [t]), t) {
-        case _.o.FEATURED:
-            return (0, i.jsx)(h, {
+        case h.o.FEATURED:
+            return (0, i.jsx)(_, {
                 tab: t,
                 onScroll: n,
                 onGuildCardClick: o,
-                onGuildCardSeen: r
+                onGuildCardSeen: a
             });
-        case _.o.GAMING:
-        case _.o.MUSIC:
-        case _.o.ENTERTAINMENT:
-        case _.o.TECH:
-        case _.o.EDUCATION:
+        case h.o.GAMING:
+        case h.o.MUSIC:
+        case h.o.ENTERTAINMENT:
+        case h.o.TECH:
+        case h.o.EDUCATION:
             return (0, i.jsx)(m, {
                 tab: t,
                 onScroll: n,
                 onGuildCardClick: o,
-                onGuildCardSeen: r
+                onGuildCardSeen: a
             }, t);
-        case _.o.HUBS:
+        case h.o.HUBS:
             return (0, i.jsx)(A.A, {
                 onScroll: n
             });

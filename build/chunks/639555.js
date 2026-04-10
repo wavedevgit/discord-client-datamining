@@ -1,6 +1,6 @@
 /** chunk id: 639555 params = (module,exports,require) **/
 n.d(e, {
-    Rv: () => l
+    Rv: () => r
 });
 let i = (0, n(600975).C)({
     kind: "user",
@@ -18,7 +18,7 @@ let i = (0, n(600975).C)({
     }]
 });
 
-function l(t) {
+function r(t) {
     let {
         location: e
     } = t, {

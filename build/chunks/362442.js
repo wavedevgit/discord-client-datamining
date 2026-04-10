@@ -1,7 +1,7 @@
 /** chunk id: 362442 params = (module,exports,require) **/
 var i = n(311907),
-    a = n(506774),
-    r = n(451988),
+    r = n(506774),
+    a = n(451988),
     l = n(73153),
     s = n(308368),
     o = n(973522),
@@ -9,8 +9,8 @@ var i = n(311907),
     c = n(617617),
     u = n(927813),
     A = n(674378),
-    _ = n(961350),
-    h = n(760751),
+    h = n(961350),
+    _ = n(760751),
     m = n(189081),
     g = n(383501),
     p = n(309010),
@@ -18,7 +18,7 @@ var i = n(311907),
 let I = "ActivityTrackingStore",
     f = 30 * u.A.Millis.MINUTE,
     C = 5 * u.A.Millis.MINUTE,
-    T = a.w.get(I) ?? {},
+    T = r.w.get(I) ?? {},
     N = {},
     S = !1;
 
@@ -26,7 +26,7 @@ function x(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
     t && v(e, !0);
     let n = N[e.applicationId];
-    null != n && (n.stop(), delete N[e.applicationId]), delete T[e.applicationId], a.w.set(I, T)
+    null != n && (n.stop(), delete N[e.applicationId]), delete T[e.applicationId], r.w.set(I, T)
 }
 
 function v(e) {
@@ -36,7 +36,7 @@ function v(e) {
     i > f + C && (i = 0);
     let l = (0, A.kv)(e.applicationId, m.A),
         o = p.A.getVoiceChannelId(),
-        d = _.default.getSessionId(),
+        d = h.default.getSessionId(),
         c = g.A.getMediaSessionId();
     s.A.updateActivity({
         applicationId: e.applicationId,
@@ -51,7 +51,7 @@ function v(e) {
         mediaSessionId: c
     }), e.updatedAt = n;
     let u = N[e.applicationId];
-    null == u && (u = N[e.applicationId] = new r.IX).start(f, () => v(e)), t || (T[e.applicationId] = e, a.w.set(I, T))
+    null == u && (u = N[e.applicationId] = new a.IX).start(f, () => v(e)), t || (T[e.applicationId] = e, r.w.set(I, T))
 }
 
 function b() {
@@ -59,7 +59,7 @@ function b() {
         t = d.Ay.getVisibleRunningGames(),
         n = new Set;
     for (let e of t) {
-        let t = h.A.findGame(e);
+        let t = _.A.findGame(e);
         null != t && (n.add(t.id), t.id in T || v({
             applicationId: t.id,
             updatedAt: Date.now(),
@@ -77,7 +77,7 @@ function y() {
 class O extends i.Ay.Store {
     static displayName = "ActivityTrackingStore";
     initialize() {
-        this.waitFor(_.default, h.A, m.A, g.A, d.Ay, p.A, c.A), this.syncWith([c.A], b)
+        this.waitFor(h.default, _.A, m.A, g.A, d.Ay, p.A, c.A), this.syncWith([c.A], b)
     }
     getActivities() {
         return T
@@ -103,13 +103,13 @@ new O(l.h, {
             token: n
         } = e, i = T[t];
         if (null == i) return !1;
-        i.token = n, a.w.set(I, T)
+        i.token = n, r.w.set(I, T)
     },
     ACTIVITY_UPDATE_FAIL: function(e) {
         let {
             applicationId: t
         } = e, n = T[t];
         if (null == n) return !1;
-        n.token = null, n.updatedAt = null, a.w.set(I, T)
+        n.token = null, n.updatedAt = null, r.w.set(I, T)
     }
 })

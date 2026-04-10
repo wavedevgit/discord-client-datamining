@@ -17,8 +17,8 @@ var i = n(627968),
     A = n(684013),
     f = n(996308),
     g = n(831062),
-    _ = n(471024),
-    m = n(976860),
+    m = n(471024),
+    _ = n(976860),
     x = n(144400),
     E = n(927813),
     y = n(9302),
@@ -28,8 +28,8 @@ var i = n(627968),
     I = n(855790),
     N = n(672396),
     T = n(652215),
-    b = n(985018),
-    O = n(227499);
+    O = n(985018),
+    b = n(227499);
 let j = 10 * E.A.Millis.SECOND,
     D = new h.Vy("LegacyOverlayErrorBoundary");
 
@@ -105,29 +105,29 @@ class L extends s.PureComponent {
                 theme: T.NJ8.DARK,
                 children: s => (0, i.jsxs)(p.DUT, {
                     innerRef: this.contentDomRef,
-                    className: a()(s, O.kL),
+                    className: a()(s, b.kL),
                     onClick: e => e.stopPropagation(),
-                    children: [(0, i.jsx)(_.Ay, {
+                    children: [(0, i.jsx)(m.Ay, {
                         expand: !0,
                         icon: (0, i.jsx)(x.A, {
                             width: 40,
                             height: 40,
-                            className: O.Lo
+                            className: b.Lo
                         }),
-                        title: b.intl.string(b.t.U38qZj),
-                        confirmText: b.intl.string(b.t.TzAl1a),
+                        title: O.intl.string(O.t.U38qZj),
+                        confirmText: O.intl.string(O.t.TzAl1a),
                         onNotificationClick: this.handleNotificationClick,
                         onConfirmClick: this.handleReload,
                         onDismissClick: this.hideNotification,
                         locked: !1
                     }), n && null != e ? (0, i.jsxs)(I.Ay, {
-                        className: O.a2,
+                        className: b.a2,
                         children: [(0, i.jsx)(I.Ay.Bar, {
                             children: "Error Details"
                         }), (0, i.jsx)(I.Ay.Content, {
-                            className: O.Xh,
+                            className: b.Xh,
                             children: (0, i.jsx)("code", {
-                                className: O.aY,
+                                className: b.aY,
                                 children: (0, i.jsx)("pre", {
                                     children: t.stack
                                 })
@@ -153,7 +153,7 @@ class k extends s.PureComponent {
         info: null
     };
     componentDidCatch(e, t) {
-        let n = (0, m.JK)().location;
+        let n = (0, _.JK)().location;
         this.setState({
             error: e,
             info: t

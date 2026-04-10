@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(397927),
-    r = n(502040);
+    r = n(397927),
+    a = n(502040);
 let o = e => {
     e.preventDefault(), e.stopPropagation()
 };
@@ -27,41 +27,41 @@ function d(e) {
         className: _
     } = e;
     return (0, i.jsxs)("div", {
-        className: l()(r.HS, _),
-        children: [(0, i.jsxs)(a.sqX, {
+        className: l()(a.HS, _),
+        children: [(0, i.jsxs)(r.sqX, {
             "aria-label": g,
             onClick: m,
             children: [null != t && (0, i.jsx)("div", {
-                className: r.x_,
+                className: a.x_,
                 children: t
             }), (0, i.jsxs)("div", {
-                className: r.rN,
+                className: a.rN,
                 children: [null != n && (0, i.jsx)("div", {
-                    className: r.$t,
+                    className: a.$t,
                     children: n
                 }), (0, i.jsxs)("div", {
-                    className: r.c8,
-                    children: [(0, i.jsx)(a.Text, {
+                    className: a.c8,
+                    children: [(0, i.jsx)(r.Text, {
                         variant: "text-md/medium",
                         color: "text-strong",
-                        className: r.SZ,
+                        className: a.SZ,
                         children: s
-                    }), null != o && (0, i.jsx)(a.Text, {
+                    }), null != o && (0, i.jsx)(r.Text, {
                         variant: "text-sm/normal",
                         color: "text-subtle",
                         children: o
-                    }), null != c && (0, i.jsx)(a.Text, {
+                    }), null != c && (0, i.jsx)(r.Text, {
                         variant: "text-xxs/medium",
                         color: "text-muted",
                         children: c
                     })]
                 }), (0, i.jsx)("div", {
-                    className: r.a$,
+                    className: a.a$,
                     children: d
                 })]
             })]
         }), (0, i.jsx)("div", {
-            className: r.Om,
+            className: a.Om,
             children: u
         })]
     })

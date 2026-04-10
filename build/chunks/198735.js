@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(873263),
+    r = n.n(l),
+    a = n(873263),
     o = n(311907),
     d = n(230109),
     c = n(397927),
@@ -39,7 +39,7 @@ var i = n(627968),
     k = n(818348),
     U = n(352989);
 let w = () => {
-    let e = (0, r.zy)();
+    let e = (0, a.zy)();
     (0, x.P)(_.b);
     let t = s.useRef(null),
         n = s.useRef(null),
@@ -68,17 +68,17 @@ let w = () => {
     let es = [N.k.HOME, N.k.WHATS_NEW, N.k.BEST_OF_NITRO, N.k.PLANS, N.k.COMPARE],
         {
             navBarSections: el,
-            activeSectionId: ea
+            activeSectionId: er
         } = (0, D.o)(es),
         {
-            home: er,
+            home: ea,
             whatsNew: eo,
             bestOfNitro: ed,
             plans: ec,
             compare: eu
         } = el,
         em = (0, i.jsxs)("div", {
-            className: a()(U.kL, U.Gd, U.iI, {
+            className: r()(U.kL, U.Gd, U.iI, {
                 [U.Hq]: !B
             }),
             "data-cy": "tier-0-marketing-page",
@@ -86,12 +86,12 @@ let w = () => {
                 className: U.yH
             }), (0, i.jsx)(O.A, {
                 navBarSections: el,
-                activeSectionId: ea
+                activeSectionId: er
             }), (0, i.jsxs)("div", {
                 className: U.Qr,
                 children: [(0, i.jsx)("div", {
                     className: U.qY,
-                    ref: er.ref,
+                    ref: ea.ref,
                     children: (0, i.jsx)(d.L, {
                         innerRef: l,
                         onChange: e => H(e),
@@ -163,7 +163,7 @@ let w = () => {
     return (0, i.jsx)(c.NPJ, {
         theme: k.NJ.DARKER,
         children: e => (0, i.jsx)(c.GtU, {
-            className: a()(U.XG, e),
+            className: r()(U.XG, e),
             ref: t,
             children: em
         })

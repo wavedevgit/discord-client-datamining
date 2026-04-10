@@ -1,38 +1,39 @@
 /** chunk id: 808821 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => g
 }), n(938796);
 var i = n(627968),
-    l = n(64700),
-    a = n(665260),
-    r = n(311907),
-    s = n(732955),
-    o = n(397927),
-    c = n(274372),
+    r = n(64700),
+    s = n(665260),
+    l = n(311907),
+    a = n(732955),
+    c = n(397927),
+    o = n(274372),
     u = n(17069),
     d = n(794905),
     _ = n(320501),
-    A = n(998218),
-    m = n(888675),
-    E = n(652215),
-    T = n(985018),
-    I = n(419397);
+    E = n(998218),
+    A = n(888675),
+    m = n(652215),
+    I = n(985018),
+    T = n(419397);
 
 function g(e) {
     let {
         message: t,
         compact: n
-    } = e, g = t.channel_id, N = (0, r.bG)([_.A], () => null != t.messageReference ? _.A.getMessage(t.messageReference.channel_id, t.messageReference.message_id) : null, [t.messageReference]), {
+    } = e, g = t.channel_id, N = (0, l.bG)([_.A], () => null != t.messageReference ? _.A.getMessage(t.messageReference.channel_id, t.messageReference.message_id) : null, [t.messageReference]), {
         clipId: f,
-        remoteTriggerClipId: C
-    } = l.useMemo(() => null != N ? function(e) {
+        remoteTriggerClipId: p
+    } = r.useMemo(() => null != N ? function(e) {
         let t = "__CLIP_METADATA__",
             n = e.indexOf(t);
         if (-1 === n) return {};
         let i = n + t.length,
-            l = e.substring(i);
+            r = e.substring(i);
         try {
-            let e = JSON.parse(l);
+            let e = JSON.parse(r);
             return {
                 clipId: e.id,
                 remoteTriggerClipId: e.remoteTriggerClipId
@@ -40,44 +41,44 @@ function g(e) {
         } catch (e) {
             return {}
         }
-    }(N.content) : {}, [N]), h = (0, r.bG)([c.A], () => c.A.getMatchingGroupClip(f, C)), p = (0, r.bG)([c.A], () => null != h && null != g && c.A.wasClipSharedInChannel(h.id, g)), {
+    }(N.content) : {}, [N]), C = (0, l.bG)([o.A], () => o.A.getMatchingGroupClip(f, p)), h = (0, l.bG)([o.A], () => null != C && null != g && o.A.wasClipSharedInChannel(C.id, g)), {
         onShareClick: S
-    } = (0, d.A)(g), x = l.useCallback(() => {
-        null != h && null != g && t.messageReference?.message_id != null && S({
-            clips: [h],
+    } = (0, d.A)(g), R = r.useCallback(() => {
+        null != C && null != g && t.messageReference?.message_id != null && S({
+            clips: [C],
             messageReference: {
                 channel_id: g,
                 message_id: t.messageReference.message_id
             }
         })
-    }, [h, g, t.messageReference, S]);
-    if (null == N || null == f && null == C || null == h || p) return null;
-    let R = N.attachments.find(e => (0, a.Lt)(e.flags ?? 0, E.sbO.IS_CLIP)),
+    }, [C, g, t.messageReference, S]);
+    if (null == N || null == f && null == p || null == C || h) return null;
+    let x = N.attachments.find(e => (0, s.Lt)(e.flags ?? 0, m.sbO.IS_CLIP)),
         O = null;
-    if (R?.proxy_url != null) {
-        let e = A.A.toURLSafe(R.proxy_url);
+    if (x?.proxy_url != null) {
+        let e = E.A.toURLSafe(x.proxy_url);
         null != e && (e.searchParams.append("format", "webp"), O = e.toString())
     }
-    let M = null != O ? [O, h.thumbnail] : [h.thumbnail];
-    return (0, i.jsx)(m.A, {
-        iconNode: (0, i.jsx)(o.xgA, {
+    let M = null != O ? [O, C.thumbnail] : [C.thumbnail];
+    return (0, i.jsx)(A.A, {
+        iconNode: (0, i.jsx)(c.xgA, {
             size: "md",
             color: "currentColor"
         }),
         timestamp: t.timestamp,
         compact: n,
         additionalContent: (0, i.jsxs)("div", {
-            className: I.i,
+            className: T.i,
             children: [(0, i.jsx)(u.A, {
                 thumbnails: M,
                 variant: "stacked"
-            }), (0, i.jsx)(s.$nd, {
+            }), (0, i.jsx)(a.$nd, {
                 size: "sm",
-                onClick: x,
-                text: T.intl.string(T.t["5qb8EX"]),
-                icon: o.W4J
+                onClick: R,
+                text: I.intl.string(I.t["5qb8EX"]),
+                icon: c.W4J
             })]
         }),
-        children: T.intl.string(T.t.ThhsNG)
+        children: I.intl.string(I.t.ThhsNG)
     })
 }

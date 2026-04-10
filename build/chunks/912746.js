@@ -1,27 +1,28 @@
 /** chunk id: 912746 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => o
+    A: () => c
 });
 var i = n(627968);
 n(64700);
-var l = n(397927),
-    a = n(888675),
-    r = n(985018),
-    s = n(470435);
+var r = n(397927),
+    s = n(888675),
+    l = n(985018),
+    a = n(470435);
 
-function o(e) {
+function c(e) {
     let {
         message: t,
         compact: n
     } = e;
-    return (0, i.jsx)(a.A, {
-        iconNode: (0, i.jsx)(l.ysw, {
+    return (0, i.jsx)(s.A, {
+        iconNode: (0, i.jsx)(r.ysw, {
             size: "md",
             color: "currentColor",
-            className: s.K
+            className: a.K
         }),
         timestamp: t.timestamp,
         compact: n,
-        children: r.intl.string(r.t.OCs36J)
+        children: l.intl.string(l.t.OCs36J)
     })
 }

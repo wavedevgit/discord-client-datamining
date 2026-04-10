@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(397927),
-    r = n(15285),
+    r = n(397927),
+    a = n(15285),
     o = n(942405),
     d = n(403362),
     c = n(975571),
@@ -15,24 +15,24 @@ var i = n(627968),
     g = n(595241);
 
 function _() {
-    let [e, t] = s.useState(!1), [n, _] = s.useState(() => (0, o.TC)()), x = (0, l.bG)([r.Ay], () => r.Ay.getSystemServiceStatus("input-service")), A = s.useCallback(async () => {
+    let [e, t] = s.useState(!1), [n, _] = s.useState(() => (0, o.TC)()), x = (0, l.bG)([a.Ay], () => a.Ay.getSystemServiceStatus("input-service")), A = s.useCallback(async () => {
         t(!0), n ? await (0, o.z8)("windows-settings") : await (0, o.sL)("windows-settings"), t(!1), _((0, o.TC)())
     }, [n]), h = "running" === x.state;
     return (0, i.jsxs)("div", {
         className: g.q,
         children: [(0, i.jsxs)("div", {
             className: g.L,
-            children: [(0, i.jsx)(a.Text, {
+            children: [(0, i.jsx)(r.Text, {
                 variant: "text-md/medium",
                 color: "text-strong",
                 children: m.intl.string(m.t.roHq80)
-            }), (0, i.jsx)(a.Text, {
+            }), (0, i.jsx)(r.Text, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
                 children: m.intl.format(m.t["8CAL+D"], {
                     helpCenterLink: c.A.getArticleURL(u.MVz.SYSTEM_SERVICE)
                 })
-            }), n ? (0, i.jsx)(a.Text, {
+            }), n ? (0, i.jsx)(r.Text, {
                 variant: "text-sm/normal",
                 color: h ? "text-feedback-positive" : "text-feedback-warning",
                 children: h ? m.intl.string(m.t.KHVMkW) : m.intl.format(m.t["5Rlr0b"], {
@@ -62,7 +62,7 @@ function _() {
                     }(x)
                 })
             }) : null]
-        }), (0, i.jsx)(a.Button, {
+        }), (0, i.jsx)(r.Button, {
             variant: n ? "critical-secondary" : "primary",
             loading: e,
             onClick: A,

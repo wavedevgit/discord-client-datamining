@@ -1,4 +1,5 @@
 /** chunk id: 868208 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     o9: "messageContentContainer__4ea49",
     zc: "iconContainer__4ea49",

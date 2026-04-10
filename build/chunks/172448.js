@@ -3,9 +3,9 @@ let i;
 n.d(t, {
     A: () => L
 });
-var a = n(627968);
+var r = n(627968);
 n(64700);
-var r = n(397927),
+var a = n(397927),
     l = n(73153),
     s = n(272355),
     o = n(323073),
@@ -13,8 +13,8 @@ var r = n(397927),
     c = n(202384),
     u = n(709977),
     A = n(14509),
-    _ = n(894778),
-    h = n(447696),
+    h = n(894778),
+    _ = n(447696),
     m = n(684407),
     g = n(919638),
     p = n(71393),
@@ -31,7 +31,7 @@ n(436317);
 var b = n(315290);
 
 function y() {
-    null != i && (0, r.OoC)(i)
+    null != i && (0, a.OoC)(i)
 }
 class O extends s.A {
     _initialize() {
@@ -46,19 +46,19 @@ class O extends s.A {
         if (null == l) return;
         switch (l) {
             case S.zY.INVITE_UNCLAIMED:
-                _.A.flowStart(b.do.INVITE, b.ju.NUF_STARTED);
+                h.A.flowStart(b.do.INVITE, b.ju.NUF_STARTED);
                 break;
             case S.zY.ORGANIC_REGISTERED:
-                _.A.flowStart(b.do.ORGANIC, b.ju.NUF_STARTED);
+                h.A.flowStart(b.do.ORGANIC, b.ju.NUF_STARTED);
                 break;
             case S.zY.MARKETING_UNCLAIMED:
-                _.A.flowStart(b.do.ORGANIC_MARKETING, b.ju.NUF_STARTED)
+                h.A.flowStart(b.do.ORGANIC_MARKETING, b.ju.NUF_STARTED)
         }
         let s = !1,
             y = E.A.getGuildId();
         if (l === S.zY.INVITE_UNCLAIMED) {
             let e = p.A.getGuild(y);
-            null != e && (0, u.Qd)(e) && (s = !0, (0, h.Fy)(e.id))
+            null != e && (0, u.Qd)(e) && (s = !0, (0, _.Fy)(e.id))
         }
         let O = () => 0 === g.A.totalGuilds && !C.isPlatformEmbedded,
             L = o.xq();
@@ -68,25 +68,25 @@ class O extends s.A {
                 let t = e => {
                     switch (e) {
                         case x.i.AGE_GATE:
-                            _.A.flowStep(b.do.ANY, b.ju.AGE_GATE);
+                            h.A.flowStep(b.do.ANY, b.ju.AGE_GATE);
                             break;
                         case x.i.CHOOSE_TEMPLATE:
-                            _.A.flowStep(b.do.ANY, b.jC.GUILD_TEMPLATES);
+                            h.A.flowStep(b.do.ANY, b.jC.GUILD_TEMPLATES);
                             break;
                         case x.i.CUSTOMIZE_GUILD:
-                            _.A.flowStep(b.do.ANY, b.jC.GUILD_CREATE);
+                            h.A.flowStep(b.do.ANY, b.jC.GUILD_CREATE);
                             break;
                         case x.i.CHANNEL_PROMPT:
-                            _.A.flowStep(b.do.ANY, b.jC.CHANNEL_PROMPT);
+                            h.A.flowStep(b.do.ANY, b.jC.CHANNEL_PROMPT);
                             break;
                         case x.i.JOIN_GUILD:
-                            _.A.flowStep(b.do.ANY, b.jC.JOIN_GUILD);
+                            h.A.flowStep(b.do.ANY, b.jC.JOIN_GUILD);
                             break;
                         case x.i.CREATION_INTENT:
-                            _.A.flowStep(b.do.ANY, b.jC.CREATION_INTENT);
+                            h.A.flowStep(b.do.ANY, b.jC.CREATION_INTENT);
                             break;
                         case x.i.COMPLETE:
-                            _.A.flowStep(b.do.ANY, b.jC.SUCCESS);
+                            h.A.flowStep(b.do.ANY, b.jC.SUCCESS);
                             break;
                         case null:
                             break;
@@ -94,11 +94,11 @@ class O extends s.A {
                             f.xb(e)
                     }
                 };
-                i = await (0, r.mMO)(async () => {
+                i = await (0, a.mMO)(async () => {
                     let {
                         default: e
                     } = await Promise.all([n.e("86746"), n.e("31922")]).then(n.bind(n, 218318));
-                    return n => (0, a.jsx)(e, {
+                    return n => (0, r.jsx)(e, {
                         ...n,
                         onSlideChange: t
                     })
@@ -123,11 +123,11 @@ class O extends s.A {
             predicate: () => s && !I.default.getCurrentUser()?.isClaimed() && !0
         }, {
             key: "Guild Welcome Modal",
-            open: e => (0, r.mMO)(async () => {
+            open: e => (0, a.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("98063").then(n.bind(n, 143154));
-                return t => (0, a.jsx)(e, {
+                return t => (0, r.jsx)(e, {
                     ...t,
                     guildId: y
                 })
@@ -136,7 +136,7 @@ class O extends s.A {
             }),
             predicate: () => null != y && null != m.A.get(y) && m.A.get(y) !== m.E
         }], t = () => {
-            T.D(), _.A.flowStep(b.do.ANY, b.ju.NUF_COMPLETE, !0)
+            T.D(), h.A.flowStep(b.do.ANY, b.ju.NUF_COMPLETE, !0)
         }, [...e].reverse().forEach(e => {
             let n = t;
             t = () => {

@@ -1,10 +1,10 @@
 /** chunk id: 541041 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => _
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(311907),
+    r = n(64700),
+    a = n(311907),
     l = n(926466),
     s = n(509536),
     o = n(498642),
@@ -12,7 +12,7 @@ var i = n(627968),
     c = n(49999),
     u = n(985018),
     A = n(98100);
-class _ extends a.PureComponent {
+class h extends r.PureComponent {
     handleButtonClick = () => {
         let {
             guild: e
@@ -44,11 +44,11 @@ class _ extends a.PureComponent {
         })
     }
 }
-let h = r.Ay.connectStores([o.A], e => {
+let _ = a.Ay.connectStores([o.A], e => {
     let {
         guild: t
     } = e;
     return {
         memberCount: o.A.getMemberCount(t.id)
     }
-})(_)
+})(h)

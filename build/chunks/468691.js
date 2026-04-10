@@ -3,23 +3,23 @@ n.d(t, {
     A: () => f
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(621466),
     o = n(311907),
     d = n(397927),
     c = n(73153),
     u = n(194894),
     A = n(186111),
-    _ = n(742077),
-    h = n(268387),
+    h = n(742077),
+    _ = n(268387),
     m = n(715671),
     g = n(652215),
     p = n(985018),
     E = n(699504);
-class I extends a.Component {
-    searchBarRef = a.createRef();
+class I extends r.Component {
+    searchBarRef = r.createRef();
     state = {
         focused: !1
     };
@@ -42,10 +42,10 @@ class I extends a.Component {
         let {
             applicationViewItems: t,
             activeRowKey: n
-        } = this.props, i = t.findIndex(e => e.key === n), a = 0;
-        i >= 0 && (a = (i + e) % t.length) < 0 && (a = t.length - 1);
-        let r = t[a];
-        u.pU(null != r ? r.key : null, !0)
+        } = this.props, i = t.findIndex(e => e.key === n), r = 0;
+        i >= 0 && (r = (i + e) % t.length) < 0 && (r = t.length - 1);
+        let a = t[r];
+        u.pU(null != a ? a.key : null, !0)
     }
     handleKeyDown = e => {
         let {
@@ -53,21 +53,21 @@ class I extends a.Component {
             hasModalOpen: n,
             applicationViewItems: i
         } = this.props, {
-            searchBarRef: a
+            searchBarRef: r
         } = this;
-        if (n || e.ctrlKey || e.altKey || e.metaKey || null == a) return;
-        let r = (0, s.BF)(e)?.activeElement;
-        if (!(r !== a.current && (0, s.Cw)(r))) switch (e.which) {
+        if (n || e.ctrlKey || e.altKey || e.metaKey || null == r) return;
+        let a = (0, s.BF)(e)?.activeElement;
+        if (!(a !== r.current && (0, s.Cw)(a))) switch (e.which) {
             case g.Ks6.ESCAPE:
-                e.target !== a.current ? this.reset() : null != a.current && a.current?.blur();
+                e.target !== r.current ? this.reset() : null != r.current && r.current?.blur();
                 break;
             case g.Ks6.ENTER:
                 if (null != t) {
                     e.preventDefault();
                     let n = i.find(e => e.key === t);
                     if (null == n) return;
-                    let a = n.libraryApplication;
-                    m.performDefaultLibraryApplicationAction(a, {
+                    let r = n.libraryApplication;
+                    m.performDefaultLibraryApplicationAction(r, {
                         analyticsParams: {
                             source: g.ThZ.APPLICATION_LIBRARY,
                             location: {
@@ -84,7 +84,7 @@ class I extends a.Component {
                 e.preventDefault(), e.stopPropagation(), this.updateActiveRow(e.which === g.Ks6.ARROW_DOWN ? 1 : -1);
                 break;
             default:
-                null != a.current && e.target !== a.current && a.current?.focus()
+                null != r.current && e.target !== r.current && r.current?.focus()
         }
     };
     render() {
@@ -121,9 +121,9 @@ function f() {
     let e = (0, o.bG)([A.A], () => A.A.hasLayers()),
         t = (0, d.red)(d.DXt);
     return (0, i.jsx)(I, {
-        activeRowKey: (0, o.bG)([h.A], () => h.A.activeRowKey),
+        activeRowKey: (0, o.bG)([_.A], () => _.A.activeRowKey),
         hasModalOpen: t || e,
-        filterQuery: (0, o.bG)([_.A], () => _.A.applicationFilterQuery),
-        applicationViewItems: (0, o.bG)([_.A], () => _.A.sortedFilteredLibraryApplicationViewItems)
+        filterQuery: (0, o.bG)([h.A], () => h.A.applicationFilterQuery),
+        applicationViewItems: (0, o.bG)([h.A], () => h.A.sortedFilteredLibraryApplicationViewItems)
     })
 }

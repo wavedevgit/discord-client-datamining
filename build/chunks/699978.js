@@ -1,14 +1,14 @@
 /** chunk id: 699978 params = (module,exports,require) **/
 n.d(t, {
-    k: () => r
+    k: () => a
 });
 var i = n(735438),
     s = n.n(i),
     l = n(311907),
-    a = n(787392);
+    r = n(787392);
 
-function r(e) {
-    return (0, l.yK)([a.A], () => s()(a.A.getUserVerifiedKeys(e)).entries().map(e => {
+function a(e) {
+    return (0, l.yK)([r.A], () => s()(r.A.getUserVerifiedKeys(e)).entries().map(e => {
         let [t, n] = e;
         return {
             verifiedKey: t,

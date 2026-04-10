@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(397927),
+    r = n.n(l),
+    a = n(397927),
     o = n(31502),
     d = n(750338),
     c = n(23003),
@@ -25,8 +25,8 @@ function g(e) {
         highlightBento: g
     } = e;
     return (0, i.jsxs)("div", {
-        className: a()(m.boxBackdrop, t),
-        children: [(0, i.jsx)(r.Heading, {
+        className: r()(m.boxBackdrop, t),
+        children: [(0, i.jsx)(a.Heading, {
             className: m.bentoSectionHeader,
             variant: "display-md",
             color: "text-strong",

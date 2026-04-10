@@ -3,17 +3,17 @@ n.d(t, {
     A: () => v
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(110259),
     o = n(311907),
     d = n(3203),
     c = n(397927),
     u = n(793574),
     A = n(688810),
-    _ = n(139286),
-    h = n(414711),
+    h = n(139286),
+    _ = n(414711),
     m = n(187696),
     g = n(723690),
     p = n(21119),
@@ -30,7 +30,7 @@ var S = n(985018),
 function v(e) {
     let {
         ref: t,
-        isFocused: r,
+        isFocused: a,
         isActive: v,
         status: b,
         activities: y,
@@ -61,9 +61,9 @@ function v(e) {
         },
         location: "gift-intent-friend-row"
     });
-    a.useEffect(() => {
+    r.useEffect(() => {
         let e = p.A.getUserAffinity(M.id);
-        (0, _.x)({
+        (0, h.x)({
             name: s.ImpressionNames.GIFT_INTENT_ACTION_BUTTON,
             type: s.ImpressionTypes.VIEW,
             properties: {
@@ -81,9 +81,9 @@ function v(e) {
             location_stack: G
         }), B()
     };
-    return (0, i.jsx)(h.A, {
+    return (0, i.jsx)(_.A, {
         ref: t,
-        isFocused: r,
+        isFocused: a,
         isActive: v,
         user: M,
         analyticsLocations: w,

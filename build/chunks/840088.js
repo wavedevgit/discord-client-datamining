@@ -1,6 +1,6 @@
 /** chunk id: 840088 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => T
 });
 var i = n(627968),
     l = n(64700),
@@ -19,15 +19,15 @@ var i = n(627968),
     h = n(690521),
     y = n(652215),
     E = n(307731),
-    _ = n(985018),
-    S = n(186785);
+    S = n(985018),
+    _ = n(186785);
 
-function b(e, t) {
+function T(e, t) {
     let {
         reducedMotion: n
     } = l.useContext(o.CZY), a = (0, g.Id)(t), r = (0, s.bG)([p.A], () => (t.isPrivate() || p.A.can(y.xBc.ADD_REACTIONS, t)) && a, [t, a]), m = (0, d.D6)(t.getGuildId());
     if (!A.jW.getSetting() || !r) return null;
-    let S = m.filter(e => !h.Ay.isEmojiFilteredOrLocked({
+    let _ = m.filter(e => !h.Ay.isEmojiFilteredOrLocked({
         emoji: e,
         channel: t,
         intention: E.EmojiIntention.REACTION
@@ -35,7 +35,7 @@ function b(e, t) {
         color: "default",
         id: l.id ?? l.optionallyDiverseSequence ?? l.name,
         label: `:${l.name}:`,
-        icon: e => (0, i.jsx)(v, {
+        icon: e => (0, i.jsx)(I, {
             ...e,
             reducedMotionEnabled: n.enabled,
             emoji: l
@@ -53,7 +53,7 @@ function b(e, t) {
     }, a));
     return (0, i.jsx)(o.Drp, {
         id: "add-reaction",
-        label: _.intl.string(_.t.lfIHs4),
+        label: S.intl.string(S.t.lfIHs4),
         leadingAccessory: {
             type: "icon",
             icon: o.nm2
@@ -65,10 +65,10 @@ function b(e, t) {
         },
         color: "default",
         children: (0, i.jsxs)(i.Fragment, {
-            children: [S, (0, i.jsx)(o.bXX, {}), (0, i.jsx)(o.Drp, {
+            children: [_, (0, i.jsx)(o.bXX, {}), (0, i.jsx)(o.Drp, {
                 color: "default",
                 id: "other-reactions",
-                label: _.intl.string(_.t["OBCR+p"]),
+                label: S.intl.string(S.t["OBCR+p"]),
                 icon: o.nm2,
                 leadingAccessory: {
                     type: "icon",
@@ -84,7 +84,7 @@ function b(e, t) {
     })
 }
 
-function v(e) {
+function I(e) {
     let {
         emoji: t,
         reducedMotionEnabled: n,
@@ -92,7 +92,7 @@ function v(e) {
         isFocused: a = !1
     } = e;
     return (0, i.jsx)("img", {
-        className: r()(l, S.Z),
+        className: r()(l, _.Z),
         src: null != t.id ? m.Ay.getEmojiURL({
             id: t.id,
             animated: t.animated && (!n || a),

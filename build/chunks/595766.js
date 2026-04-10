@@ -2,8 +2,8 @@
 n.d(t, {
     x: () => a
 });
-var l = n(141468),
-    i = n(383233),
+var i = n(141468),
+    l = n(383233),
     r = n(222823),
     s = n(661191);
 class a {
@@ -25,7 +25,7 @@ class a {
     }
     messageRecord(e) {
         let t = this.messages.get(e);
-        return null == t || null == t.message || t.message instanceof i.Ay || (t.message = (0, l.rh)(t.message)), t?.message ?? null
+        return null == t || null == t.message || t.message instanceof l.Ay || (t.message = (0, i.rh)(t.message)), t?.message ?? null
     }
     has(e) {
         return this.messages.has(e)
@@ -37,9 +37,9 @@ class a {
         })
     }
     putNew(e, t, n) {
-        var l, i;
+        var i, l;
         let r = this.messages.get(e);
-        null != t && (l = t.id, null == (i = r?.message?.id) || s.default.compare(l, i) > 0) && this.put(e, t, n)
+        null != t && (i = t.id, null == (l = r?.message?.id) || s.default.compare(i, l) > 0) && this.put(e, t, n)
     }
     putMany(e, t) {
         for (let n of e) this.put(n.channel_id, n, t)
@@ -49,7 +49,7 @@ class a {
         let t = e.channel_id,
             n = this.messages.get(t);
         if (n?.message?.id !== e.id) return;
-        let r = n.message instanceof i.Ay ? (0, l.IU)(n.message, e) : (0, l.SP)(n.message, e);
+        let r = n.message instanceof l.Ay ? (0, i.IU)(n.message, e) : (0, i.SP)(n.message, e);
         this.messages.set(t, {
             ...n,
             message: r

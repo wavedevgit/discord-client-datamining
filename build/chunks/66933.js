@@ -1,9 +1,8 @@
 /** chunk id: 66933 params = (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => i
+i.d(t, {
+    A: () => a
 });
-let a = (0, n(945810).mj)({
+let n = (0, i(945810).mj)({
         name: "2026-03-app-guild-validation",
         kind: "guild",
         defaultConfig: {
@@ -18,4 +17,4 @@ let a = (0, n(945810).mj)({
             }
         }
     }),
-    i = 21552 == n.j ? a : null
+    a = 21552 == i.j ? n : null

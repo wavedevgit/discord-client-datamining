@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(397927),
     d = n(395011),
     c = n(897720),
@@ -68,18 +68,18 @@ function b(e) {
 }
 
 function C() {
-    let e, t = (0, r.bG)([h.default], () => h.default.getCurrentUser()),
+    let e, t = (0, a.bG)([h.default], () => h.default.getCurrentUser()),
         {
             avatarSizeMode: n,
             displayNameMode: l,
             displayUserMode: _
-        } = (0, r.cf)([p.default], () => ({
+        } = (0, a.cf)([p.default], () => ({
             avatarSizeMode: p.default.getAvatarSizeMode(),
             displayNameMode: p.default.getDisplayNameMode(),
             displayUserMode: p.default.getDisplayUserMode()
         })),
         [x] = s.useState(() => [b(S.intl.string(S.t.C0ZDvo), !0, !1), b(S.intl.string(S.t.iOtj8E), !1, !1, !0), b(S.intl.string(S.t["0oqNgL"]), !1, !0)]),
-        C = (0, r.bG)([d.A, A.A], () => {
+        C = (0, a.bG)([d.A, A.A], () => {
             let e = d.A.getWidgetByType(f.uss.VOICE_V3);
             if (null == e) return null;
             let t = A.A.getWidget(e.id);
@@ -91,7 +91,7 @@ function C() {
         j = (0, i.jsx)(o.NPJ, {
             theme: f.NJ8.MIDNIGHT,
             children: e => (0, i.jsxs)("div", {
-                className: a()(E.Y5, e),
+                className: r()(E.Y5, e),
                 children: [(0, i.jsx)("div", {
                     className: E.kJ,
                     children: (0, i.jsx)(u.DH, {

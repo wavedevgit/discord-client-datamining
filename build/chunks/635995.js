@@ -1,8 +1,8 @@
 /** chunk id: 635995 params = (module,exports,require) **/
 n.d(e, {
     In: () => u,
-    T0: () => E,
-    fY: () => _
+    T0: () => _,
+    fY: () => E
 });
 var i = n(627968);
 n(64700);
@@ -24,7 +24,7 @@ let u = t => {
             children: e
         })
     },
-    _ = t => {
+    E = t => {
         let {
             text: e,
             onClick: n
@@ -38,7 +38,7 @@ let u = t => {
         })
     };
 
-function E(t) {
+function _(t) {
     let {
         className: e,
         ref: n,

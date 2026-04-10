@@ -1,30 +1,31 @@
 /** chunk id: 428855 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => s
+    A: () => a
 });
 var i = n(627968);
 n(64700);
-var l = n(397927),
-    a = n(880652),
-    r = n(83034);
+var r = n(397927),
+    s = n(880652),
+    l = n(83034);
 
-function s(e) {
+function a(e) {
     let {
         question: t,
         questionId: n,
-        value: s,
-        onValueChange: o
-    } = e, c = t.Selector !== a.BO.SINGLE_LINE;
+        value: a,
+        onValueChange: c
+    } = e, o = t.Selector !== s.BO.SINGLE_LINE;
     return (0, i.jsx)("div", {
-        className: r.k,
-        children: c ? (0, i.jsx)(l.fs1, {
-            value: s,
-            onChange: e => o(n, e),
+        className: l.k,
+        children: o ? (0, i.jsx)(r.fs1, {
+            value: a,
+            onChange: e => c(n, e),
             placeholder: "Enter your response...",
             rows: 4
-        }) : (0, i.jsx)(l.ksK, {
-            value: s,
-            onChange: e => o(n, e),
+        }) : (0, i.jsx)(r.ksK, {
+            value: a,
+            onChange: e => c(n, e),
             placeholder: "Enter your response..."
         })
     })

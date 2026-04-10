@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(284009),
     l = n.n(s),
-    a = n(311907),
-    r = n(397927),
+    r = n(311907),
+    a = n(397927),
     o = n(97260),
     d = n(117178),
     c = n(15285),
@@ -18,10 +18,10 @@ var s = n(284009),
     x = n(502040);
 
 function A() {
-    let e = (0, a.bG)([m.Ay], () => m.Ay.getOverlayKeybind()),
+    let e = (0, r.bG)([m.Ay], () => m.Ay.getOverlayKeybind()),
         t = !(0, g.supportsLegacy)(),
         n = !(0, g.supportsOutOfProcess)(),
-        [s, A] = (0, a.yK)([c.Ay], () => [c.Ay.canShowAdminWarning, c.Ay.getVisibleGame()], []),
+        [s, A] = (0, r.yK)([c.Ay], () => [c.Ay.canShowAdminWarning, c.Ay.getVisibleGame()], []),
         h = (0, u.NP)(),
         p = null != A && A.elevated && s && !h,
         T = !(0, m.DV)(e?.shortcut ?? []);
@@ -31,16 +31,16 @@ function A() {
             className: x.eH,
             children: [(0, i.jsxs)("div", {
                 className: x.Bu,
-                children: [(0, i.jsx)(r.Text, {
+                children: [(0, i.jsx)(a.Text, {
                     variant: "text-md/medium",
                     color: "text-strong",
                     children: _.intl.string(_.t.VsAZcC)
-                }), p && (0, i.jsx)(r.Text, {
+                }), p && (0, i.jsx)(a.Text, {
                     variant: "text-xs/normal",
                     color: "text-feedback-warning",
                     className: x.y7,
                     children: _.intl.string(_.t.NsowVa)
-                }), T && (0, i.jsx)(r.Text, {
+                }), T && (0, i.jsx)(a.Text, {
                     variant: "text-xs/normal",
                     color: "text-feedback-warning",
                     className: x.y7,

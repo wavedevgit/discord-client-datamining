@@ -1,7 +1,5 @@
 /** chunk id: 533567 params = (module,exports,require) **/
-n.d(t, {
-    A: () => i
-});
+"use strict";
 
 function i(e) {
     if (e?.fields == null) return null;
@@ -34,3 +32,6 @@ function i(e) {
     }
     return null != n.name && (n.animated = n.animated ?? !1, t.victorEmoji = n), t
 }
+n.d(t, {
+    A: () => i
+})

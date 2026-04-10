@@ -1,11 +1,11 @@
 /** chunk id: 178442 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => C
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(990078),
     o = n(397927),
     c = n(793574),
@@ -20,13 +20,13 @@ let p = {
         [A.vkP.CONNECTING]: g._6,
         [A.vkP.ERROR]: g.Il
     },
-    f = {
+    _ = {
         [A.bFR.FINE]: g.LP,
         [A.bFR.AVERAGE]: g.mq,
         [A.bFR.BAD]: g.yA,
         [A.bFR.UNKNOWN]: null
     },
-    _ = {
+    f = {
         [A.bFR.FINE]: o.QtE,
         [A.bFR.AVERAGE]: o.jHk,
         [A.bFR.BAD]: o.RIK,
@@ -38,40 +38,40 @@ function E(e) {
         quality: t,
         largePing: n,
         ...l
-    } = e, s = _[t];
-    return (0, i.jsx)(s, {
-        className: a()(g.hU, {
+    } = e, a = f[t];
+    return (0, i.jsx)(a, {
+        className: s()(g.hU, {
             [g.kV]: n
         }),
         ...l
     })
 }
 
-function x(e) {
+function C(e) {
     let {
         quality: t,
         lastPing: n,
-        state: s,
-        className: _,
-        children: x,
-        channelId: C,
+        state: a,
+        className: f,
+        children: C,
+        channelId: x,
         childrenAsSubtitle: S,
         connectionStatusTextVariant: I,
         hasVideo: T
-    } = e, N = l.useRef(null), v = s === A.S7L.RTC_CONNECTED, y = l.useCallback(e => (0, i.jsx)(h.A, {
+    } = e, v = l.useRef(null), N = a === A.S7L.RTC_CONNECTED, y = l.useCallback(e => (0, i.jsx)(h.A, {
         ...e,
-        channelId: C
-    }), [C]), {
+        channelId: x
+    }), [x]), {
         connectionStatus: b,
         connectionStatusText: j
-    } = u.A.getStatus(s, T);
+    } = u.A.getStatus(a, T);
     return (0, i.jsxs)("div", {
         className: g.pe,
         children: [(0, i.jsx)("div", {
-            className: a()(g.yH, f[t], _),
-            ref: N,
+            className: s()(g.yH, _[t], f),
+            ref: v,
             children: (0, i.jsx)(o.YNO, {
-                targetElementRef: N,
+                targetElementRef: v,
                 renderPopout: y,
                 position: "top",
                 children: e => {
@@ -79,7 +79,7 @@ function x(e) {
                         onClick: l
                     } = e;
                     return (0, i.jsxs)(i.Fragment, {
-                        children: [v && (0, i.jsx)(r.m, {
+                        children: [N && (0, i.jsx)(r.m, {
                             text: t !== A.bFR.UNKNOWN && null != n ? `${n.toFixed(0)} ms` : null,
                             children: (0, i.jsx)(o.DUT, {
                                 className: g.xr,
@@ -102,13 +102,13 @@ function x(e) {
                                     textVariant: I,
                                     hasVideo: T,
                                     className: p[b],
-                                    hasConnectedChannel: null != C
+                                    hasConnectedChannel: null != x
                                 })
-                            }), S ? x : null]
+                            }), S ? C : null]
                         })]
                     })
                 }
             })
-        }), S ? null : x]
+        }), S ? null : C]
     })
 }

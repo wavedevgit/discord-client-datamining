@@ -1,5 +1,5 @@
 /** chunk id: 914853 params = (module,exports,require) **/
 n.d(t, {
-    x: () => i
+    x: () => l
 });
-var l, i = ((l = {}).FRIENDS = "friends", l.MESSAGES = "messages", l.VOICE = "voice", l)
+var i, l = ((i = {}).FRIENDS = "friends", i.MESSAGES = "messages", i.VOICE = "voice", i)

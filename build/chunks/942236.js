@@ -1,7 +1,7 @@
 /** chunk id: 942236 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968);
 n(64700);
@@ -18,9 +18,9 @@ var s = n(684013),
     A = n(684748),
     f = n(652215),
     g = n(672396),
-    _ = n(985018);
+    m = n(985018);
 
-function m(e, t, n, m) {
+function _(e, t, n, _) {
     let {
         icon: x,
         title: E,
@@ -45,11 +45,11 @@ function m(e, t, n, m) {
             style: {
                 textAlign: "center"
             },
-            children: _.intl.string(_.t["+MJm3w"])
+            children: m.intl.string(m.t["+MJm3w"])
         }) : null,
         maxBodyLines: 2,
         onNotificationShow: () => {
-            m && (0, o.Ak)(d.cH, d.pD), v()
+            _ && (0, o.Ak)(d.cH, d.pD), v()
         },
         onNotificationClick: () => {
             if (a.default.isOverlayOOPEnabledForPid((0, p.getPID)())) {

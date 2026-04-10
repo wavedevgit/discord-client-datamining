@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(397927),
-    r = n(775602),
+    r = n(397927),
+    a = n(775602),
     o = n(141468),
     d = n(963852),
     c = n(763754),
@@ -24,13 +24,13 @@ let p = new m.nA({
         name: "preview"
     }),
     T = [{
-        status: a.clD.IDLE,
+        status: r.clD.IDLE,
         discriminator: "2"
     }, {
-        status: a.clD.DND,
+        status: r.clD.DND,
         discriminator: "3"
     }, {
-        status: a.clD.ONLINE,
+        status: r.clD.ONLINE,
         mobile: !0,
         discriminator: "4"
     }];
@@ -73,15 +73,15 @@ function S() {
         }] : []), f(A.intl.formatToPlainString(A.t["4rDfgM"], {
             link: "https://discord.com/accessibility"
         }))], [t]),
-        o = (0, l.bG)([r.A], () => r.A.messageGroupSpacing);
-    return (0, i.jsx)(a.M1G, {
+        o = (0, l.bG)([a.A], () => a.A.messageGroupSpacing);
+    return (0, i.jsx)(r.M1G, {
         children: (0, i.jsxs)("section", {
-            children: [(0, i.jsx)(a.Heading, {
+            children: [(0, i.jsx)(r.Heading, {
                 variant: "text-md/medium",
                 color: "text-muted",
                 className: h.Vf,
                 children: A.intl.string(A.t.RC22qg)
-            }), (0, i.jsxs)(a.IpV, {
+            }), (0, i.jsxs)(r.IpV, {
                 className: h.VH,
                 children: [(0, i.jsx)("ol", {
                     className: h.DZ,
@@ -110,15 +110,15 @@ function S() {
                                 discriminator: n,
                                 mobile: s = !1
                             } = e;
-                            return (0, i.jsx)(a.euF, {
+                            return (0, i.jsx)(r.euF, {
                                 status: t,
                                 isMobile: s,
-                                size: a._3J.SIZE_32,
+                                size: r._3J.SIZE_32,
                                 src: g.Ay.getDefaultAvatarURL(void 0, n),
                                 "aria-label": A.intl.string(A.t.VKE5TK)
                             }, t)
                         })
-                    }), (0, i.jsx)(a.Button, {
+                    }), (0, i.jsx)(r.Button, {
                         text: A.intl.string(A.t["2RHHgz"]),
                         size: "sm",
                         variant: "primary"

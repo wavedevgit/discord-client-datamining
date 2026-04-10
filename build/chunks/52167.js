@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(417597),
     s = n(582754),
     l = n(736653),
-    a = n(507553),
-    r = n(591179),
+    r = n(507553),
+    a = n(591179),
     o = n(780964),
     d = n(287809),
     c = n(255438),
@@ -42,7 +42,7 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
     w = e => {
         let {
             styles: t
-        } = e, s = (0, l.Ay)(), w = (0, r.X)("usePerkCards"), V = (0, i.bG)([d.default], () => {
+        } = e, s = (0, l.Ay)(), w = (0, a.X)("usePerkCards"), V = (0, i.bG)([d.default], () => {
             let e = d.default.getCurrentUser();
             return u.Ay.canUsePremiumProfileCustomization(e)
         }), B = (0, c.Xq)(m.f3 / 1024, {
@@ -93,7 +93,7 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
                             let {
                                 openUserSettings: t
                             } = n(858897);
-                            a.A.setState({
+                            r.A.setState({
                                 scrollPosition: g._F.TRY_IT_OUT
                             }), t(o.X.PROFILE_PANEL, {
                                 analyticsLocations: e

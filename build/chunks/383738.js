@@ -1,5 +1,5 @@
 /** chunk id: 383738 params = (module,exports,require) **/
-e.exports = {
+t.exports = {
     Uh: "confirmModal__1b38b",
     xK: "discordTag__1b38b",
     jj: "avatarIcon__1b38b",

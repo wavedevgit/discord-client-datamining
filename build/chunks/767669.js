@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    a = n(98207),
-    r = n(579872),
+    r = n(98207),
+    a = n(579872),
     o = n(900686),
     d = n(518142),
     c = n(662758),
@@ -28,7 +28,7 @@ function g(e) {
     }, []), x = s.useCallback(() => {
         (0, l.qfG)(e => (0, i.jsx)(c.default, {
             ...e,
-            handleSubmit: e => a.A.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
+            handleSubmit: e => r.A.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
                 _(e)
             }),
             title: m.intl.string(m.t.PsQmzU),
@@ -63,11 +63,11 @@ ${e}`
         text: m.intl.string(m.t.xZEzbu),
         onClick: x
     }), [t.length, A, x]), p = s.useCallback(() => {
-        r.A.show({
+        a.A.show({
             title: m.intl.string(m.t["D+aE7g"]),
             body: m.intl.string(m.t.EA4ZEk),
             cancelText: m.intl.string(m.t["ETE/oC"]),
-            onConfirm: () => a.A.disable()
+            onConfirm: () => r.A.disable()
         })
     }, []);
     return (0, i.jsx)(l.D0$, {

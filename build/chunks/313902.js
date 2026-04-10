@@ -1,4 +1,5 @@
 /** chunk id: 313902 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     og: "systemMessageContainer_c0ec5e",
     x: "embedContainer_c0ec5e",

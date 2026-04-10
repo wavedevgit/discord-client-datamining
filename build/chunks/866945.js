@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(397927),
+    r = n.n(l),
+    a = n(397927),
     o = n(558001),
     d = n(835002),
     c = n(985018),
@@ -31,28 +31,28 @@ function m(e) {
             n(), (0, o.N)(_, d.YX.LEARN_MORE)
         }, [_, n]);
     return (0, i.jsxs)("div", {
-        className: a()(u.I, g),
-        children: [(0, i.jsx)(r.mir, {
+        className: r()(u.I, g),
+        children: [(0, i.jsx)(a.mir, {
             size: "md"
-        }), (0, i.jsx)(r.Text, {
+        }), (0, i.jsx)(a.Text, {
             variant: "text-sm/medium",
             color: "interactive-text-active",
             children: null != l ? c.intl.format(t, {
-                hook: (e, t) => (0, i.jsx)(r.MzZ, {
+                hook: (e, t) => (0, i.jsx)(a.MzZ, {
                     onClick: h,
                     children: e
                 }, t),
                 count: l
             }) : c.intl.format(t, {
-                hook: (e, t) => (0, i.jsx)(r.MzZ, {
+                hook: (e, t) => (0, i.jsx)(a.MzZ, {
                     onClick: h,
                     children: e
                 }, t)
             })
-        }), x && (0, i.jsx)(r.DUT, {
+        }), x && (0, i.jsx)(a.DUT, {
             className: u.b,
             onClick: A,
-            children: (0, i.jsx)(r.PGe, {})
+            children: (0, i.jsx)(a.PGe, {})
         })]
     })
 }

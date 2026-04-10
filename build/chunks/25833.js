@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(311907),
     l = n(397927),
-    a = n(87719),
-    r = n(287809),
+    r = n(87719),
+    a = n(287809),
     o = n(975571),
     d = n(927578),
     c = n(652215),
@@ -16,7 +16,7 @@ var i = n(627968),
     _ = n(410229);
 
 function x() {
-    let e = (0, s.bG)([r.default], () => r.default.getCurrentUser());
+    let e = (0, s.bG)([a.default], () => a.default.getCurrentUser());
     if (null == e || d.Ay.hasFreeBoosts(e)) return null;
     let t = o.A.getArticleURL(c.MVz.GUILD_BOOSTING_FAQ);
     return (0, i.jsxs)(l.hLv, {
@@ -58,7 +58,7 @@ function x() {
             size: "sm",
             icon: l.tvc,
             text: m.intl.string(m.t["8x0jKT"]),
-            onClick: a.e
+            onClick: r.e
         })]
     })
 }

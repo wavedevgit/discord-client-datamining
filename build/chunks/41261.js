@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    r = n.n(a),
+var r = n(503698),
+    a = n.n(r),
     l = n(311907),
     s = n(397927),
     o = n(528767),
@@ -13,17 +13,17 @@ var a = n(503698),
     c = n(266080),
     u = n(30529),
     A = n(544105),
-    _ = n(985018),
-    h = n(220842);
+    h = n(985018),
+    _ = n(220842);
 
 function m(e) {
     let {
         platform: t
     } = e;
     return t === A.f$.XBOX ? (0, i.jsx)(c.A, {
-        className: h.Kk
+        className: _.Kk
     }) : t === A.f$.PLAYSTATION ? (0, i.jsx)(d.A, {
-        className: h.Kk
+        className: _.Kk
     }) : null
 }
 
@@ -31,12 +31,12 @@ function g(e) {
     let {
         voiceState: t,
         awaitingRemoteSessionInfo: n
-    } = e, a = null != n ? (0, u.X)(n.type) : null, d = (0, l.bG)([o.A], () => o.A.getSessionById(t?.sessionId ?? "")?.clientInfo.os), c = a ?? d;
+    } = e, r = null != n ? (0, u.X)(n.type) : null, d = (0, l.bG)([o.A], () => o.A.getSessionById(t?.sessionId ?? "")?.clientInfo.os), c = r ?? d;
     if (null == c || !A.hv.has(c)) return null;
     let g = null != n,
-        p = g ? c === A.f$.XBOX ? _.intl.string(_.t.UjA4HX) : _.intl.string(_.t.QCw1oW) : c === A.f$.XBOX ? _.intl.format(_.t["ynEs/Y"], {}) : _.intl.format(_.t.TZ17Bg, {});
+        p = g ? c === A.f$.XBOX ? h.intl.string(h.t.UjA4HX) : h.intl.string(h.t.QCw1oW) : c === A.f$.XBOX ? h.intl.format(h.t["ynEs/Y"], {}) : h.intl.format(h.t.TZ17Bg, {});
     return (0, i.jsxs)("div", {
-        className: r()(h.zr, g ? h.jI : h.aW),
+        className: a()(_.zr, g ? _.jI : _.aW),
         children: [(0, i.jsx)(m, {
             platform: c
         }), (0, i.jsx)(s.Text, {

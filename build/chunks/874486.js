@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(311907),
     s = n(73153),
     l = n(961350),
-    a = n(414736),
-    r = n(3137),
+    r = n(414736),
+    a = n(3137),
     o = n(559908);
 let d = {
         unlockedAchievements: {}
@@ -18,7 +18,7 @@ class u extends i.Ay.PersistedStore {
     static displayName = "PoggermodeAchievementStore";
     static persistKey = "PoggermodeAchievementStore";
     initialize(e) {
-        this.waitFor(l.default, r.A, o.Ay);
+        this.waitFor(l.default, a.A, o.Ay);
         let t = e ?? {
             ...d
         };
@@ -39,7 +39,7 @@ let m = new u(s.h, {
         let {
             achievementId: t
         } = e;
-        if (!r.A.isEnabled()) return !1;
+        if (!a.A.isEnabled()) return !1;
         null != c.unlockedAchievements[t] || (c.unlockedAchievements = {
             ...c.unlockedAchievements,
             [t]: {
@@ -47,7 +47,7 @@ let m = new u(s.h, {
                 dateUnlocked: Date.now()
             }
         }, setTimeout(() => {
-            (0, a.U)(t, !0)
+            (0, r.U)(t, !0)
         }, 2e3))
     }
 })

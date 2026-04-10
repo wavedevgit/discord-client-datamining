@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(158954),
-    a = n(311907),
-    r = n(767375),
+    r = n(311907),
+    a = n(767375),
     o = n(323082),
     d = n(459357),
     c = n(615405),
@@ -19,7 +19,7 @@ var i = n(627968),
 function A(e) {
     let {
         showHeader: t = !1
-    } = e, n = (0, a.bG)([c.A], () => c.A.isSyncing), A = (0, a.bG)([u.A], () => u.A.paymentSources), h = (0, a.bG)([u.A], () => u.A.defaultPaymentSourceId), p = (0, a.bG)([g.default], () => g.default.locale), T = (0, a.bG)([m.A], () => m.A.getPremiumTypeSubscription()), f = (0, a.bG)([c.A], () => c.A.isRemovingPaymentSource), S = (0, a.bG)([c.A], () => c.A.isUpdatingPaymentSource), {
+    } = e, n = (0, r.bG)([c.A], () => c.A.isSyncing), A = (0, r.bG)([u.A], () => u.A.paymentSources), h = (0, r.bG)([u.A], () => u.A.defaultPaymentSourceId), p = (0, r.bG)([g.default], () => g.default.locale), T = (0, r.bG)([m.A], () => m.A.getPremiumTypeSubscription()), f = (0, r.bG)([c.A], () => c.A.isRemovingPaymentSource), S = (0, r.bG)([c.A], () => c.A.isUpdatingPaymentSource), {
         enabled: E
     } = (0, d.c)({
         location: "UserSettingsBilling"
@@ -29,7 +29,7 @@ function A(e) {
     }, []), n && 0 === Object.keys(A).length) ? (0, i.jsx)("div", {
         className: x.o,
         children: (0, i.jsx)(l.y$y, {})
-    }) : (0, i.jsx)(r.A, {
+    }) : (0, i.jsx)(a.A, {
         showHeader: t,
         paymentSources: A,
         defaultPaymentSourceId: h,

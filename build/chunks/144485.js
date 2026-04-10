@@ -1,14 +1,14 @@
 /** chunk id: 144485 params = (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => s
 });
 var r = n(627968);
 n(64700);
 var i = n(314116),
     a = n(397927),
-    o = n(652215),
-    l = n(985018);
-let c = {
+    l = n(652215),
+    o = n(985018);
+let s = {
     openSecureFramesStreamVerification: function(e, t) {
         (0, a.mMO)(async () => {
             let i = (await n.e("46115").then(n.bind(n, 773262))).default;
@@ -19,7 +19,7 @@ let c = {
             })
         })
     },
-    openSecureFramesUserVerificationModal: function(e, t, i, l) {
+    openSecureFramesUserVerificationModal: function(e, t, i, o) {
         i() && (0, a.mMO)(async () => {
             let i = (await n.e("16674").then(n.bind(n, 632441))).default;
             return n => (0, r.jsx)(i, {
@@ -28,14 +28,14 @@ let c = {
                 ...n
             })
         }, {
-            contextKey: l === o.BRT.POPOUT ? a.KX8 : a.SYi
+            contextKey: o === l.BRT.POPOUT ? a.KX8 : a.SYi
         })
     },
     openSecureFramesUpdateConfirmation: function(e) {
         let {
             title: t,
             subtitle: n,
-            confirmText: r = l.intl.string(l.t["cY+Oob"]),
+            confirmText: r = o.intl.string(o.t["cY+Oob"]),
             onConfirm: a
         } = e;
         (0, i.A)({

@@ -1,12 +1,12 @@
 /** chunk id: 791498 params = (module,exports,require) **/
 n.d(t, {
-    q: () => a
+    q: () => r
 });
 var i = n(64700),
     s = n(954571),
     l = n(652215);
 
-function a(e) {
+function r(e) {
     return i.useCallback(() => {
         let t = e;
         for (;

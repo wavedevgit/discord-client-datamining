@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(311907),
     l = n(397927),
-    a = n(263063),
-    r = n(987144),
+    r = n(263063),
+    a = n(987144),
     o = n(864310),
     d = n(71393),
     c = n(473145),
@@ -24,10 +24,10 @@ function _(e) {
     } = (0, o.A)(t.id);
     return (0, i.jsxs)("div", {
         className: n ?? g.OA,
-        children: [(0, i.jsx)(a.Ay, {
+        children: [(0, i.jsx)(r.Ay, {
             className: g.$f,
             guild: t,
-            size: a.Ay.Sizes.MEDIUM
+            size: r.Ay.Sizes.MEDIUM
         }), (0, i.jsxs)("div", {
             className: g.gI,
             children: [(0, i.jsx)(l.Text, {
@@ -79,7 +79,7 @@ function x(e) {
             icon: l._Jp,
             text: m.intl.string(m.t.aBHecF),
             onClick: () => {
-                (0, r.g)({
+                (0, a.g)({
                     analyticsLocations: [],
                     analyticsLocation: {
                         page: u.liQ.GUILD_BOOSTING_USER_SETTINGS,

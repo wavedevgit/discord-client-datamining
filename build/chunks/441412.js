@@ -1,58 +1,59 @@
 /** chunk id: 441412 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => c
+    A: () => o
 });
 var i = n(627968);
 n(64700);
-var l = n(397927),
-    a = n(843472),
-    r = n(763754),
-    s = n(888675),
-    o = n(985018);
+var r = n(397927),
+    s = n(843472),
+    l = n(763754),
+    a = n(888675),
+    c = n(985018);
 
-function c(e) {
+function o(e) {
     let {
         message: t,
         usernameHook: n,
-        onClickPins: c,
+        onClickPins: o,
         compact: u
-    } = e, d = (0, r.Ay)(t), _ = d.nick, A = n(d), m = () => {
+    } = e, d = (0, l.Ay)(t), _ = d.nick, E = n(d), A = () => {
         if (null == t.messageReference) return;
         let {
             channel_id: e,
             message_id: n
         } = t.messageReference;
-        a.A.jumpToMessage({
+        s.A.jumpToMessage({
             channelId: e,
             messageId: n,
             flash: !0
         })
-    }, E = {
-        iconNode: (0, i.jsx)(l.tsw, {
+    }, m = {
+        iconNode: (0, i.jsx)(r.tsw, {
             size: "sm",
             color: "currentColor"
         })
     };
-    return (0, i.jsx)(s.A, {
-        ...E,
+    return (0, i.jsx)(a.A, {
+        ...m,
         timestamp: t.timestamp,
         compact: u,
-        children: null != t.messageReference ? null == c ? o.intl.format(o.t.lD5tup, {
-            usernameHook: A,
+        children: null != t.messageReference ? null == o ? c.intl.format(c.t.lD5tup, {
+            usernameHook: E,
             username: _,
-            messageOnClick: m
-        }) : o.intl.format(o.t.yIDvPL, {
-            usernameHook: A,
+            messageOnClick: A
+        }) : c.intl.format(c.t.yIDvPL, {
+            usernameHook: E,
             username: _,
-            pinsActionOnClick: c,
-            messageOnClick: m
-        }) : null == c ? o.intl.format(o.t.vfkjqx, {
-            usernameHook: A,
+            pinsActionOnClick: o,
+            messageOnClick: A
+        }) : null == o ? c.intl.format(c.t.vfkjqx, {
+            usernameHook: E,
             username: _
-        }) : o.intl.format(o.t.R7vZGZ, {
-            usernameHook: A,
+        }) : c.intl.format(c.t.R7vZGZ, {
+            usernameHook: E,
             username: _,
-            pinsActionOnClick: c
+            pinsActionOnClick: o
         })
     })
 }

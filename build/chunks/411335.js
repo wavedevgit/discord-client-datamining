@@ -1,40 +1,41 @@
 /** chunk id: 411335 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    $5: () => E,
-    AH: () => l.A,
-    Ku: () => A,
+    $5: () => m,
+    AH: () => r.A,
+    Ku: () => E,
     M3: () => g,
-    Mc: () => a.M,
-    NX: () => T,
+    Mc: () => s.M,
+    NX: () => I,
     Nu: () => N,
     TZ: () => f,
-    UW: () => c,
-    Us: () => I,
-    bV: () => o,
+    UW: () => o,
+    Us: () => T,
+    bV: () => c,
     hG: () => u,
     kS: () => _,
-    oN: () => C,
+    oN: () => p,
     qm: () => d,
-    uh: () => r.u,
-    vY: () => s,
-    zs: () => m
+    uh: () => l.u,
+    vY: () => a,
+    zs: () => A
 });
-var i, l = n(185348),
-    a = n(269820),
-    r = n(866232),
-    s = ((i = {})[i.PROFANITY = 1] = "PROFANITY", i[i.SEXUAL_CONTENT = 2] = "SEXUAL_CONTENT", i[i.SLURS = 3] = "SLURS", i);
-r.u.USER_PROFILE, r.u.SERVER_POLICY, r.u.MENTION_SPAM, r.u.ML_SPAM, r.u.DEFAULT_KEYWORD_LIST, r.u.KEYWORD;
-let o = 1e3,
-    c = 100,
+var i, r = n(185348),
+    s = n(269820),
+    l = n(866232),
+    a = ((i = {})[i.PROFANITY = 1] = "PROFANITY", i[i.SEXUAL_CONTENT = 2] = "SEXUAL_CONTENT", i[i.SLURS = 3] = "SLURS", i);
+l.u.USER_PROFILE, l.u.SERVER_POLICY, l.u.MENTION_SPAM, l.u.ML_SPAM, l.u.DEFAULT_KEYWORD_LIST, l.u.KEYWORD;
+let c = 1e3,
+    o = 100,
     u = 1e3,
     d = 10,
     _ = 60,
+    E = 1,
     A = 1,
-    m = 1,
-    E = 260,
-    T = 100,
-    I = 1,
+    m = 260,
+    I = 100,
+    T = 1,
     g = 50,
     N = 20,
     f = 300,
-    C = "automod-profile-quarantine-alert"
+    p = "automod-profile-quarantine-alert"

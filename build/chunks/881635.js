@@ -1,14 +1,15 @@
 /** chunk id: 881635 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => _
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(311907),
-    r = n(397927),
-    s = n(688810),
-    o = n(287809),
-    c = n(987144),
+    r = n(64700),
+    s = n(311907),
+    l = n(397927),
+    a = n(688810),
+    c = n(287809),
+    o = n(987144),
     u = n(652215),
     d = n(985018);
 
@@ -17,33 +18,33 @@ function _(e) {
         guild: t,
         analyticsLocation: n,
         analyticsLocations: _,
-        closeLayer: A,
-        variant: m = "expressive"
-    } = e, [E, T] = l.useState(!1), {
-        analyticsLocations: I
-    } = (0, s.Ay)(_ ?? []), g = (0, a.bG)([o.default], () => o.default.getCurrentUser()), N = g?.isPremiumGroupMember();
+        closeLayer: E,
+        variant: A = "expressive"
+    } = e, [m, I] = r.useState(!1), {
+        analyticsLocations: T
+    } = (0, a.Ay)(_ ?? []), g = (0, s.bG)([c.default], () => c.default.getCurrentUser()), N = g?.isPremiumGroupMember();
     async function f() {
-        T(!0), await (0, c.g)({
-            analyticsLocations: I,
+        I(!0), await (0, o.g)({
+            analyticsLocations: T,
             analyticsLocation: {
                 object: u.ZSU.BUTTON_CTA,
                 objectType: u.AnalyticsObjectTypes.BUY,
                 ...n
             },
             guild: t,
-            closeLayer: A,
+            closeLayer: E,
             onClose: () => {
-                T(!1)
+                I(!1)
             }
         })
     }
-    return (0, i.jsx)(r.Button, {
-        variant: m,
+    return (0, i.jsx)(l.Button, {
+        variant: A,
         size: "md",
-        icon: r._Jp,
+        icon: l._Jp,
         text: d.intl.string(d.t.gKmQ1G),
         onClick: f,
-        loading: E,
+        loading: m,
         disabled: N
     })
 }

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(417597),
+    r = n.n(l),
+    a = n(417597),
     o = n(397927),
     d = n(714991),
     c = n(695515),
@@ -26,14 +26,14 @@ let p = s.memo(e => {
         guildId: t,
         className: n,
         customSubtext: s
-    } = e, l = (0, r.bG)([c.A], () => c.A.getGuild(t));
+    } = e, l = (0, a.bG)([c.A], () => c.A.getGuild(t));
     if (void 0 === l) return null;
     let A = l.features.has(m.GuildFeatures.VERIFIED) || l.features.has(m.GuildFeatures.PARTNERED),
         {
             name: h
         } = l;
     return (0, i.jsxs)("div", {
-        className: a()(x.kL, n),
+        className: r()(x.kL, n),
         children: [(0, i.jsx)(u.A, {
             guildId: t
         }), (0, i.jsxs)("div", {

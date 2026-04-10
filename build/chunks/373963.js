@@ -1,6 +1,6 @@
 /** chunk id: 373963 params = (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => c
 });
 var i = n(627968);
 n(64700);
@@ -9,7 +9,7 @@ var s = n(397927),
     r = n(837921),
     a = n(985018);
 
-function o(e, t) {
+function c(e, t) {
     return l.isPlatformEmbedded && e?.length !== 0 ? (0, i.jsx)(s.Drp, {
         id: "copy",
         label: a.intl.string(a.t.OpuAlK),

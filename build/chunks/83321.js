@@ -5,17 +5,17 @@ n.d(t, {
 var i = n(271995),
     s = n(419954),
     l = n(933297),
-    a = n(780964),
-    r = n(524916),
+    r = n(780964),
+    a = n(524916),
     o = n(985018);
-let d = (0, s.zZ)(a.X.ACCOUNT_STANDING_NESTED_CATEGORY, {
-        buildLayout: () => [r.y]
+let d = (0, s.zZ)(r.X.ACCOUNT_STANDING_NESTED_CATEGORY, {
+        buildLayout: () => [a.y]
     }),
-    c = (0, s.t_)(a.X.ACCOUNT_STANDING_PANEL, {
+    c = (0, s.t_)(r.X.ACCOUNT_STANDING_PANEL, {
         useTitle: () => o.intl.string(o.t["16r9jm"]),
         buildLayout: () => [d]
     }),
-    u = (0, s.eA)(a.X.ACCOUNT_STANDING_NESTED_PANEL, {
+    u = (0, s.eA)(r.X.ACCOUNT_STANDING_NESTED_PANEL, {
         useTitle: i.$b,
         useSubtitle: i.bh,
         useLeadingDecoration: function() {

@@ -1,6 +1,6 @@
 /** chunk id: 406406 params = (module,exports,require) **/
 n.d(e, {
-    default: () => v
+    default: () => y
 });
 var l = n(627968);
 n(64700);
@@ -19,56 +19,56 @@ var i = n(397927),
     h = n(675623),
     T = n(174966),
     f = n(652215),
-    y = n(985018);
+    m = n(985018);
 
-function v(t) {
+function y(t) {
     let {
         guildEventId: e,
         recurrenceId: n,
-        channel: v,
-        guild: p,
-        analyticsContext: m,
+        channel: y,
+        guild: v,
+        analyticsContext: p,
         isRecurrenceItem: N = !1,
         onSelect: S,
         target: G
-    } = t, b = (0, _.A)({
+    } = t, D = (0, _.A)({
         guildEventId: e,
         recurrenceId: n,
-        guild: p,
-        channel: v
-    }), D = (0, c.A)({
+        guild: v,
+        channel: y
+    }), b = (0, c.A)({
         guildEventId: e,
         recurrenceId: n,
-        guild: p,
-        channel: v
+        guild: v,
+        channel: y
     }), I = (0, E.A)({
         guildEventId: e,
-        guild: p,
-        channel: v,
+        guild: v,
+        channel: y,
         recurrenceId: n,
         isRecurrenceItem: N
-    }), C = (0, A.A)(e, p, v), x = (0, T.A)(e, p, v), w = (0, o.A)(e, p.id, n), O = (0, u.A)(e, G), R = (0, g.A)(e), j = (0, d.A)({
+    }), C = (0, A.A)(e, v, y), x = (0, T.A)(e, v, y), w = (0, o.A)(e, v.id, n), O = (0, u.A)(e, G), R = (0, g.A)(e), j = (0, d.A)({
         id: e,
-        label: y.intl.string(y.t.WZwPO4)
+        label: m.intl.string(m.t.WZwPO4)
     }), L = (0, d.A)({
         id: n,
-        label: y.intl.string(y.t.NZRGQo)
-    }), U = (0, s.A)(e, p.id, v, n), P = (0, h.A)({
+        label: m.intl.string(m.t.NZRGQo)
+    }), U = (0, s.A)(e, v.id, y, n), P = (0, h.A)({
         guildEventId: e,
-        guildId: p.id,
+        guildId: v.id,
         recurrenceId: n
     });
     return (0, l.jsx)(a.A, {
-        context: m,
+        context: p,
         object: f.ZSU.CONTEXT_MENU,
         children: (0, l.jsxs)(i.W1t, {
             "data-menu-migrated-auto": !0,
             navId: "user-context",
             onClose: r.Z_,
-            "aria-label": y.intl.string(y.t.liqwPJ),
+            "aria-label": m.intl.string(m.t.liqwPJ),
             onSelect: S,
             children: [(0, l.jsxs)(i.rXV, {
-                children: [U, !N && x, I, !N && C, D, b, w, N && P]
+                children: [U, !N && x, I, !N && C, b, D, w, N && P]
             }), !N && (0, l.jsx)(i.rXV, {
                 children: R
             }), null != O && (0, l.jsx)(i.rXV, {

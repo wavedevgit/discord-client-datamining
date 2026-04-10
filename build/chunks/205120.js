@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(155718),
-    a = n(751258),
+    a = n(155718),
+    s = n(751258),
     r = n(451909),
     o = n(652215),
     c = n(650583),
@@ -46,13 +46,13 @@ class m extends l.PureComponent {
                 shouldClear: !1,
                 shouldRefocus: !1
             });
-            let u = (0, a.S)(e, {
+            let u = (0, s.S)(e, {
                 channel: n,
                 isEdit: !0
             });
             if (u?.content != null && (e = u.content), t.hasFlag(o.pr7.IS_COMPONENTS_V2) && this.props.channel.type === o.rbe.GUILD_ANNOUNCEMENT) {
                 let t = r.Ay.parse(this.props.channel, e),
-                    n = this.props.message.components.filter(e => e.type === s.I5.TEXT_DISPLAY);
+                    n = this.props.message.components.filter(e => e.type === a.I5.TEXT_DISPLAY);
                 if (1 === n.length) {
                     let i = n[0];
                     e !== i.content && c(this.props.channel.id, this.props.message.id, t)
@@ -89,13 +89,13 @@ class m extends l.PureComponent {
             textValue: t,
             richValue: n,
             message: l,
-            channel: s,
-            onCancel: a,
+            channel: a,
+            onCancel: s,
             children: r
         } = this.props, o = (0, i.jsx)("div", {
             className: u.z,
             children: d.intl.format(d.t.wDsPXs, {
-                onCancel: () => a(s.id),
+                onCancel: () => s(a.id),
                 onSave: this.onClickSave
             })
         });
@@ -107,7 +107,7 @@ class m extends l.PureComponent {
                 textValue: t,
                 richValue: n,
                 message: l,
-                channel: s,
+                channel: a,
                 onChange: this.onChange,
                 onSubmit: this.onSubmit,
                 onKeyDown: this.onKeyDown,

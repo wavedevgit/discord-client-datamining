@@ -5,15 +5,15 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(487329),
-    s = n(821715),
-    a = n(93067),
+    a = n(821715),
+    s = n(93067),
     r = n(985018);
 
 function o(e) {
     let {
         participant: t,
         className: n
-    } = e, o = (0, s.A)(t);
+    } = e, o = (0, a.A)(t);
     if (null == o) return null;
     let c = function(e) {
         switch (e) {
@@ -31,7 +31,7 @@ function o(e) {
                 return
         }
     }(o);
-    return null != c ? (0, i.jsx)(a.A, {
+    return null != c ? (0, i.jsx)(s.A, {
         className: n,
         errorMessage: c,
         avError: o

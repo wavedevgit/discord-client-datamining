@@ -1,17 +1,17 @@
 /** chunk id: 920603 params = (module,exports,require) **/
 n.d(t, {
-    v: () => r
+    v: () => a
 });
 var i = n(562465),
     s = n(73153),
     l = n(74396),
-    a = n(652215);
+    r = n(652215);
 
-function r() {
+function a() {
     l.A.isFetching() || (s.h.dispatch({
         type: "SAVED_CUSTOM_THEMES_FETCH_START"
     }), i.Bo.get({
-        url: a.Rsh.USERS_ME_CUSTOM_THEMES,
+        url: r.Rsh.USERS_ME_CUSTOM_THEMES,
         oldFormErrors: !0,
         rejectWithError: !0
     }).then(e => {

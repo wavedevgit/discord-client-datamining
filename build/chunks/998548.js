@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(687123),
-    a = n(397927),
-    r = n(935649),
+    r = n(397927),
+    a = n(935649),
     o = n(847599),
     d = n(36149),
     c = n(444802),
@@ -36,7 +36,7 @@ function p() {
             noticeType: "info",
             trackView: l,
             useText: () => h.intl.format(h.t.EUo0yj, {
-                hook: (e, t) => (0, i.jsx)(a.MzZ, {
+                hook: (e, t) => (0, i.jsx)(r.MzZ, {
                     onClick: n,
                     children: e
                 }, t)
@@ -50,7 +50,7 @@ function T() {
         t = (0, d.b8)(),
         n = e && !t,
         l = s.useCallback(() => {
-            r.A.showAgeVerificationGetStartedModal({
+            a.A.showAgeVerificationGetStartedModal({
                 entryPoint: o.q1.CONTENT_AND_SOCIAL_NOTICE
             }), (0, m.N)(A.YA.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE, A.YX.LEARN_MORE)
         }, []),
@@ -63,7 +63,7 @@ function T() {
             noticeType: "info",
             trackView: c,
             useText: () => h.intl.format(h.t.OX4ybh, {
-                hook: (e, t) => (0, i.jsx)(a.MzZ, {
+                hook: (e, t) => (0, i.jsx)(r.MzZ, {
                     onClick: l,
                     children: e
                 }, t)
@@ -81,13 +81,13 @@ function f() {
             window.open(x.A.getArticleURL(e), "_blank"), (0, m.N)(A.YA.AGE_CONFIRMATION_NOTICE, A.YX.LEARN_MORE)
         }, [e]),
         n = s.useCallback(() => {
-            r.A.showAgeVerificationGetStartedModal({
+            a.A.showAgeVerificationGetStartedModal({
                 entryPoint: o.q1.CONTENT_AND_SOCIAL_NOTICE
             }), (0, m.N)(A.YA.AGE_CONFIRMATION_NOTICE, A.YX.CONFIRM_AGE)
         }, []);
-    return (0, i.jsx)(a.po8, {
-        messageType: a.YCn.INFO,
-        action: (0, i.jsx)(a.QWc, {
+    return (0, i.jsx)(r.po8, {
+        messageType: r.YCn.INFO,
+        action: (0, i.jsx)(r.QWc, {
             variant: "secondary",
             size: "sm",
             textVariant: "text-sm/medium",
@@ -95,7 +95,7 @@ function f() {
             onClick: n
         }),
         children: h.intl.format(h.t.mFgsfg, {
-            hook: (e, n) => (0, i.jsx)(a.MzZ, {
+            hook: (e, n) => (0, i.jsx)(r.MzZ, {
                 onClick: t,
                 children: e
             }, n)

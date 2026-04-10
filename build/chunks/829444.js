@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(64700),
     l = n(417597),
-    s = n(73153),
-    a = n(775602),
+    a = n(73153),
+    s = n(775602),
     r = n(649963),
     o = n(253932),
     c = n(900210),
@@ -13,25 +13,25 @@ var i = n(64700),
 
 function u() {
     let e = o.Sf.useSetting(),
-        t = (0, l.bG)([a.A], () => a.A.useReducedMotion);
+        t = (0, l.bG)([s.A], () => s.A.useReducedMotion);
     i.useEffect(() => {
         function n(n) {
             let {
                 messageId: i,
                 channelId: l,
-                emoji: s,
-                optimistic: a,
+                emoji: a,
+                optimistic: s,
                 reactionType: o
             } = n;
-            a || o !== d.v.BURST || !e || t || (0, r.on)({
+            s || o !== d.v.BURST || !e || t || (0, r.on)({
                 channelId: l,
                 messageId: i,
-                emoji: s,
+                emoji: a,
                 key: c.W.EXTERNAL
             })
         }
-        return s.h.subscribe("MESSAGE_REACTION_ADD", n), () => {
-            s.h.unsubscribe("MESSAGE_REACTION_ADD", n)
+        return a.h.subscribe("MESSAGE_REACTION_ADD", n), () => {
+            a.h.unsubscribe("MESSAGE_REACTION_ADD", n)
         }
     }, [e, t])
 }

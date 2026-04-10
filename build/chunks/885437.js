@@ -1,18 +1,18 @@
 /** chunk id: 885437 params = (module,exports,require) **/
-n.d(t, {
-    p: () => a
+l.d(t, {
+    p: () => s
 });
-var i = n(976860),
-    l = n(734057),
-    s = n(332456);
+var n = l(976860),
+    r = l(734057),
+    a = l(332456);
 
-function a(e) {
-    let t = (0, s.C)(l.A.getChannel(e), !0),
-        n = t?.location ?? (0, i.PR)();
+function s(e) {
+    let t = (0, a.C)(r.A.getChannel(e), !0),
+        l = t?.location ?? (0, n.PR)();
     return {
         ...t ?? {},
-        ...null != n ? {
-            location: n
+        ...null != l ? {
+            location: l
         } : {}
     }
 }

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(397927),
     d = n(49229),
     c = n(730134),
@@ -53,7 +53,7 @@ function p(e) {
     let {
         userId: t,
         last: n
-    } = e, l = (0, r.bG)([m.A], () => m.A.isBlocked(t)), _ = (0, r.bG)([g.default], () => g.default.getUser(t)), [h, p] = s.useState(!1), T = s.useCallback(() => {
+    } = e, l = (0, a.bG)([m.A], () => m.A.isBlocked(t)), _ = (0, a.bG)([g.default], () => g.default.getUser(t)), [h, p] = s.useState(!1), T = s.useCallback(() => {
         p(!0), l ? d.A.unblockUser(t).catch(() => {
             p(!1)
         }) : d.A.unignoreUser(t, u.A.USER_SETTINGS).catch(() => {
@@ -61,7 +61,7 @@ function p(e) {
         })
     }, [l, t]);
     return null == _ ? null : (0, i.jsxs)("div", {
-        className: a()(A.nM, {
+        className: r()(A.nM, {
             [A.fW]: n
         }),
         children: [(0, i.jsxs)("div", {
@@ -94,7 +94,7 @@ function T(e) {
     let {
         userIds: t,
         listType: n
-    } = e, [l, a] = s.useState(5);
+    } = e, [l, r] = s.useState(5);
     return (0, i.jsx)(_.h, {
         children: (0, i.jsxs)("div", {
             className: A.Nr,
@@ -111,7 +111,7 @@ function T(e) {
                 className: A.vM,
                 children: (0, i.jsx)(o.DUT, {
                     onClick: () => {
-                        a(e => e + 5)
+                        r(e => e + 5)
                     },
                     className: A.Qf,
                     children: (0, i.jsx)(o.Text, {
@@ -128,7 +128,7 @@ function T(e) {
 }
 
 function f() {
-    let e = (0, r.yK)([m.A], () => m.A.getBlockedIDs());
+    let e = (0, a.yK)([m.A], () => m.A.getBlockedIDs());
     return (0, i.jsx)(T, {
         userIds: e,
         listType: "blocked"
@@ -136,7 +136,7 @@ function f() {
 }
 
 function S() {
-    let e = (0, r.yK)([m.A], () => m.A.getIgnoredIDs());
+    let e = (0, a.yK)([m.A], () => m.A.getIgnoredIDs());
     return (0, i.jsx)(T, {
         userIds: e,
         listType: "ignored"

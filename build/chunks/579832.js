@@ -1,5 +1,5 @@
 /** chunk id: 579832 params = (module,exports,require) **/
-var r = {
+var a = {
     "./bg.png": "365627",
     "./cs.png": "408100",
     "./da.png": "903723",
@@ -34,16 +34,16 @@ var r = {
 };
 
 function n(t) {
-    return s(i(t))
+    return s(r(t))
 }
 
-function i(t) {
-    if (!s.o(r, t)) {
+function r(t) {
+    if (!s.o(a, t)) {
         var e = Error("Cannot find module '" + t + "'");
         throw e.code = "MODULE_NOT_FOUND", e
     }
-    return r[t]
+    return a[t]
 }
 n.keys = function() {
-    return Object.keys(r)
-}, n.resolve = i, t.exports = n, n.id = 579832
+    return Object.keys(a)
+}, n.resolve = r, t.exports = n, n.id = 579832

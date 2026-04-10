@@ -1,10 +1,10 @@
 /** chunk id: 385310 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => h
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(311907),
+    r = n(64700),
+    a = n(311907),
     l = n(990078),
     s = n(397927),
     o = n(624458),
@@ -12,20 +12,20 @@ var i = n(627968),
     c = n(332118),
     u = n(985018),
     A = n(874628);
-let _ = e => {
+let h = e => {
     let {
         headerId: t,
         reapplyText: n,
-        onReapply: _,
-        confirmText: h,
+        onReapply: h,
+        confirmText: _,
         onWithdrawApplication: m,
         rejectionReason: g = null,
         guild: p = null
-    } = e, E = (0, r.bG)([d.A], () => d.A.getCooldown(p?.id ?? "0")), {
+    } = e, E = (0, a.bG)([d.A], () => d.A.getCooldown(p?.id ?? "0")), {
         canReapply: I,
         isLoading: f
     } = (0, c.f)(p?.id);
-    a.useEffect(() => {
+    r.useEffect(() => {
         null == E && null != p && o.A.fetchJoinRequestCooldown(p.id)
     }, [E, p]);
     let C = (E ?? 0) > 0,
@@ -68,7 +68,7 @@ let _ = e => {
                     days: T
                 }) : void 0,
                 children: (0, i.jsx)(s.Button, {
-                    onClick: _,
+                    onClick: h,
                     variant: "secondary",
                     size: "md",
                     loading: null == E || f,
@@ -80,7 +80,7 @@ let _ = e => {
                 onClick: () => m(I || f),
                 variant: "critical-primary",
                 size: "md",
-                text: h,
+                text: _,
                 fullWidth: !0
             })]
         })]

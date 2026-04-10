@@ -5,25 +5,25 @@ n.d(t, {
 var i = n(627968),
     s = n(397927),
     l = n(917064),
-    a = n(985018),
-    r = n(684387);
+    r = n(985018),
+    a = n(684387);
 
 function o() {
     return (0, i.jsxs)("div", {
-        className: r.iE,
+        className: a.iE,
         children: [(0, i.jsx)(s.Heading, {
             variant: "heading-xl/normal",
-            children: a.intl.string(a.t.IzKs3o)
+            children: r.intl.string(r.t.IzKs3o)
         }), (0, i.jsx)("div", {
-            className: r.kR,
+            className: a.kR,
             children: l.s.map((e, t) => {
                 let n = e.icon;
                 return (0, i.jsxs)("div", {
-                    className: r.Nr,
+                    className: a.Nr,
                     children: [(0, i.jsx)(n, {
-                        className: r.Kk
+                        className: a.Kk
                     }), (0, i.jsx)(s.Text, {
-                        className: r.h_,
+                        className: a.h_,
                         color: "text-muted",
                         variant: "text-sm/medium",
                         children: e.getText()

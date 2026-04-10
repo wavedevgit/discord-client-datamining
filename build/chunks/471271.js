@@ -1,11 +1,11 @@
 /** chunk id: 471271 params = (module,exports,require) **/
 n.d(t, {
-    t: () => f
+    t: () => _
 });
 var i = n(64700),
     l = n(424266),
-    s = n.n(l),
-    a = n(198982),
+    a = n.n(l),
+    s = n(198982),
     r = n(928658),
     o = n(622543),
     c = n(576622),
@@ -17,50 +17,50 @@ var i = n(64700),
     g = n(687599),
     p = n(652215);
 
-function f(e) {
+function _(e) {
     let {
         user: t,
         onAcceptSuccess: n,
         onRejectSuccess: l,
-        onError: f
-    } = e, _ = (0, A.A)(), [E, x] = i.useState(!1), [C, S] = i.useState(!1), [I, T] = i.useState(!1), [N, v] = i.useState(!1), [y, b] = i.useState(!1), j = E || C || I, R = i.useCallback(async e => {
+        onError: _
+    } = e, f = (0, A.A)(), [E, C] = i.useState(!1), [x, S] = i.useState(!1), [I, T] = i.useState(!1), [v, N] = i.useState(!1), [y, b] = i.useState(!1), j = E || x || I, R = i.useCallback(async e => {
         if (!j) {
-            x(!0);
+            C(!0);
             try {
-                await (0, h.RK)(e), v(!0), n?.()
+                await (0, h.RK)(e), N(!0), n?.()
             } catch (t) {
-                let e = new a.LG(t);
-                f?.(e)
+                let e = new s.LG(t);
+                _?.(e)
             } finally {
-                x(!1)
+                C(!1)
             }
         }
-    }, [j, n, f]), M = i.useCallback(async e => {
+    }, [j, n, _]), M = i.useCallback(async e => {
         if (!j) {
             S(!0);
             try {
                 await (0, h.UK)(e), b(!0), l?.()
             } catch (t) {
-                let e = new a.LG(t);
-                f?.(e)
+                let e = new s.LG(t);
+                _?.(e)
             } finally {
                 S(!1)
             }
         }
-    }, [j, l, f]), O = i.useCallback(async e => {
+    }, [j, l, _]), L = i.useCallback(async e => {
         if (j) return;
         S(!0);
-        let t = s()(e, 50);
+        let t = a()(e, 50);
         try {
             for (let e of t) await (0, h.ST)(e);
             b(!0), l?.()
         } catch (t) {
-            let e = new a.LG(t);
-            f?.(e)
+            let e = new s.LG(t);
+            _?.(e)
         } finally {
             S(!1)
         }
-    }, [j, l, f]), D = i.useCallback(async e => {
+    }, [j, l, _]), O = i.useCallback(async e => {
         if (j) return;
         if (null != t && null == o.A.getMutualGuilds(t.id)) {
             T(!0);
@@ -95,7 +95,7 @@ function f(e) {
                 })
             }
         })
-    }, [R, j, t]), L = i.useCallback((e, t, n) => {
+    }, [R, j, t]), D = i.useCallback((e, t, n) => {
         let i = (i, l) => {
                 l && d.WY.updateSetting(i), i && null != t && (0, r.tJ)(t), R(e.id), u.default.track(p.HAw.MESSAGE_REQUEST_ACTION, {
                     action: g.LD.ACCEPT_HAM_CONFIRMATION_PROMPT,
@@ -117,14 +117,14 @@ function f(e) {
         }) : i(l)
     }, [R]);
     return {
-        acceptMessageRequest: _ ? D : R,
+        acceptMessageRequest: f ? O : R,
         rejectMessageRequest: M,
-        rejectAll: O,
-        markAsNotSpam: L,
+        rejectAll: L,
+        markAsNotSpam: D,
         isAcceptLoading: E,
-        isRejectLoading: C,
+        isRejectLoading: x,
         isUserProfileLoading: I,
-        isOptimisticAccepted: N,
+        isOptimisticAccepted: v,
         isOptimisticRejected: y
     }
 }

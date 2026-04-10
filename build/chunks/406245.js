@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(397927),
+    r = n.n(l),
+    a = n(397927),
     o = n(975571),
     d = n(652215),
     c = n(985018),
@@ -46,8 +46,8 @@ let m = [{
             className: t
         } = e, [n, l] = s.useState(null);
         return (0, i.jsxs)("div", {
-            className: a()(u.iE, t),
-            children: [(0, i.jsx)(r.Heading, {
+            className: r()(u.iE, t),
+            children: [(0, i.jsx)(a.Heading, {
                 className: u.R_,
                 variant: "heading-xxl/bold",
                 children: c.intl.string(c.t.HPJ6Nj)
@@ -57,26 +57,26 @@ let m = [{
                     let s = n === t;
                     return (0, i.jsxs)("div", {
                         className: u.Aw,
-                        children: [(0, i.jsxs)(r.DUT, {
-                            className: a()(u.k7, {
+                        children: [(0, i.jsxs)(a.DUT, {
+                            className: r()(u.k7, {
                                 [u.lo]: s
                             }),
                             onClick: () => l(e => e === t ? null : t),
                             tag: "li",
-                            children: [(0, i.jsx)(r.Text, {
+                            children: [(0, i.jsx)(a.Text, {
                                 className: u.b1,
                                 variant: "text-lg/normal",
                                 children: e.getQuestion()
-                            }), s ? (0, i.jsx)(r.QGg, {
+                            }), s ? (0, i.jsx)(a.QGg, {
                                 size: "md",
                                 color: "currentColor",
                                 className: u.q4
-                            }) : (0, i.jsx)(r.j96, {
+                            }) : (0, i.jsx)(a.j96, {
                                 size: "md",
                                 color: "currentColor",
                                 className: u.q4
                             })]
-                        }), s && (0, i.jsx)(r.Text, {
+                        }), s && (0, i.jsx)(a.Text, {
                             className: u.ZF,
                             color: "text-default",
                             variant: "text-md/normal",

@@ -22,16 +22,16 @@ function T(e) {
     let {
         targetElementRef: t,
         markMenuItemPopoverAsDismissed: n
-    } = e, [T, p] = s.useState("top"), g = s.useRef(null), C = s.useRef(null), {
-        hasAccess: h
+    } = e, [T, p] = s.useState("top"), g = s.useRef(null), h = s.useRef(null), {
+        hasAccess: C
     } = (0, A.TW)("FavoritesOnboardingMenuItemPopover"), {
         analyticsLocations: S
     } = (0, u.Ay)(o.A.FAVORITES_GUILD_MENU_ITEM), x = (0, i.bG)([d.A], () => d.A.hasStoredFavorites());
     s.useLayoutEffect(() => {
         if (null == t.current) return;
         let e = () => {
-            null == C.current && (C.current = window.requestAnimationFrame(() => {
-                C.current = null, (() => {
+            null == h.current && (h.current = window.requestAnimationFrame(() => {
+                h.current = null, (() => {
                     let e = t.current?.getBoundingClientRect();
                     if (null == e) return;
                     let n = g.current?.getBoundingClientRect().height ?? 0;
@@ -40,15 +40,15 @@ function T(e) {
             }))
         };
         return e(), window.addEventListener("resize", e), window.addEventListener("scroll", e, !0), () => {
-            null != C.current && (window.cancelAnimationFrame(C.current), C.current = null), window.removeEventListener("resize", e), window.removeEventListener("scroll", e, !0)
+            null != h.current && (window.cancelAnimationFrame(h.current), h.current = null), window.removeEventListener("resize", e), window.removeEventListener("scroll", e, !0)
         }
     }, [t]);
     let v = s.useCallback(() => {
-            n?.(m.i.TAKE_ACTION), h || (0, c.A)({
+            n?.(m.i.TAKE_ACTION), C || (0, c.A)({
                 subscriptionTier: E.pe.TIER_2,
                 analyticsLocations: S
             })
-        }, [n, S, h]),
+        }, [n, S, C]),
         I = x ? f.default.TWuDTt : f.default["25YCHl"];
     return (0, l.jsx)(r.AM, {
         targetElementRef: t,
@@ -69,10 +69,10 @@ function T(e) {
             type: "image",
             aspectRatio: "16/9"
         },
-        title: _.intl.string(h ? I : f.default.A3ZjbM),
-        body: _.intl.string(h ? f.default.DFjrWw : f.default.qJUI2v),
+        title: _.intl.string(C ? I : f.default.A3ZjbM),
+        body: _.intl.string(C ? f.default.DFjrWw : f.default.qJUI2v),
         onRequestClose: () => n?.(m.i.USER_DISMISS),
-        actions: h ? void 0 : [{
+        actions: C ? void 0 : [{
             icon: a.tvc,
             text: _.intl.string(f.default["avps/2"]),
             onClick: () => v(),

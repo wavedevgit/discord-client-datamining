@@ -1,19 +1,19 @@
 /** chunk id: 825772 params = (module,exports,require) **/
 "use strict";
-s.d(e, {
-    A: () => i
+n.d(t, {
+    A: () => s
 });
-var r = s(315069),
-    n = s(427157);
-class i extends r.A {
+var i = n(315069),
+    r = n(427157);
+class s extends i.A {
     user;
     member_type;
     accepted_at;
-    static createFromServer(t) {
-        return new i(t)
+    static createFromServer(e) {
+        return new s(e)
     }
-    constructor(t) {
-        super(), this.user = new n.A(t.user), this.member_type = t.member_type, this.accepted_at = t.accepted_at
+    constructor(e) {
+        super(), this.user = new r.A(e.user), this.member_type = e.member_type, this.accepted_at = e.accepted_at
     }
     isPrimary() {
         return 1 === this.member_type

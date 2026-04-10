@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(827734),
     d = n(435371),
     c = n(397927),
@@ -35,15 +35,15 @@ function I(e) {
         subgames: j,
         isSubgame: y = !1,
         parentGame: O
-    } = e, R = (0, r.cf)([_.Ay, h.A, p.A], () => (0, _.xU)(t, _.Ay, h.A, p.A)), {
+    } = e, R = (0, a.cf)([_.Ay, h.A, p.A], () => (0, _.xU)(t, _.Ay, h.A, p.A)), {
         canToggleDetection: L,
         isCurrentGameDetectionEnabled: P
-    } = (0, r.cf)([_.Ay], () => ({
+    } = (0, a.cf)([_.Ay], () => ({
         canToggleDetection: null == O || _.Ay.isDetectionEnabled(O),
         isCurrentGameDetectionEnabled: _.Ay.isDetectionEnabled(R)
-    })), D = (0, r.bG)([_.Ay], () => _.Ay.getVisibleGame()), [G, M] = s.useState(!1), k = s.useMemo(() => (0, A.n1)(R) ? y ? R.gameName : b.intl.formatToPlainString(b.t.G6BGdx, {
+    })), D = (0, a.bG)([_.Ay], () => _.Ay.getVisibleGame()), [G, M] = s.useState(!1), k = s.useMemo(() => (0, A.n1)(R) ? y ? R.gameName : b.intl.formatToPlainString(b.t.G6BGdx, {
         subgameName: R.gameName
-    }) : R.name, [R, y]), [U, w] = s.useState(k ?? "???"), V = a()(v.tR, {
+    }) : R.name, [R, y]), [U, w] = s.useState(k ?? "???"), V = r()(v.tR, {
         [C.LO]: !l,
         [C.Rw]: l,
         [C.FB]: null != R && l,
@@ -84,7 +84,7 @@ function I(e) {
         children: [(0, i.jsxs)("div", {
             className: V,
             children: [(0, i.jsxs)("div", {
-                className: a()(C.$K, v.Vd),
+                className: r()(C.$K, v.Vd),
                 children: [R.verified && !f ? (0, i.jsxs)("div", {
                     className: C.HS,
                     children: [(0, i.jsx)("div", {
@@ -105,7 +105,7 @@ function I(e) {
                         })
                     })]
                 }) : (0, i.jsx)("input", {
-                    className: a()(C.mO, C.sr),
+                    className: r()(C.mO, C.sr),
                     type: "text",
                     maxLength: 128,
                     value: U,
@@ -132,7 +132,7 @@ function I(e) {
                     })
                 }()]
             }), f || G ? null : (0, i.jsx)("div", {
-                className: a()(v.tR, v.oA, v.LT, C.E3),
+                className: r()(v.tR, v.oA, v.LT, C.E3),
                 children: (0, i.jsx)(d.m_, {
                     text: b.intl.string(b.t["y0B+lo"]),
                     children: (0, i.jsx)(c.DUT, {
@@ -147,7 +147,7 @@ function I(e) {
                             }), M(!0), (0, c.mMO)(async () => {
                                 let {
                                     default: t
-                                } = await n.e("27495").then(n.bind(n, 651930));
+                                } = await n.e("49876").then(n.bind(n, 651930));
                                 return n => (0, i.jsx)(t, {
                                     ...n,
                                     detectedActivity: {
@@ -182,7 +182,7 @@ function I(e) {
                     colorClass: C.GS
                 });
                 return (0, i.jsx)("div", {
-                    className: a()(v.tR, v.oA, v.LT, C.E3),
+                    className: r()(v.tR, v.oA, v.LT, C.E3),
                     children: (0, i.jsx)(d.m_, {
                         text: b.intl.string(b.t.QmitzM),
                         children: L ? (0, i.jsx)(c.DUT, {
@@ -215,7 +215,7 @@ function I(e) {
                     })
                 }) : null;
                 return (0, i.jsxs)("div", {
-                    className: a()(v.tR, v.oA, v.LT, C.E3),
+                    className: r()(v.tR, v.oA, v.LT, C.E3),
                     children: [s, (0, i.jsx)(d.m_, {
                         text: b.intl.string(b.t["1+O+Tu"]),
                         children: (0, i.jsx)(c.DUT, {

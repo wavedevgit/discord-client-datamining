@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(158954),
-    r = n(200921),
+    r = n(158954),
+    a = n(200921),
     o = n(403362),
     d = n(336926),
     c = n(985018),
@@ -19,11 +19,11 @@ function m(e) {
         icon: t,
         label: n,
         subLabel: s,
-        description: r,
+        description: a,
         children: o,
         muted: d
     } = e;
-    return (0, i.jsxs)(a.BJc, {
+    return (0, i.jsxs)(r.BJc, {
         direction: "horizontal",
         align: "center",
         gap: "sm",
@@ -36,30 +36,30 @@ function m(e) {
                 size: "md",
                 color: "currentColor"
             })
-        }), (0, i.jsxs)(a.BJc, {
+        }), (0, i.jsxs)(r.BJc, {
             direction: "vertical",
             gap: "xxs",
-            children: [(0, i.jsxs)(a.BJc, {
+            children: [(0, i.jsxs)(r.BJc, {
                 direction: "horizontal",
                 gap: "xs",
-                children: [(0, i.jsx)(a.EYj, {
+                children: [(0, i.jsx)(r.EYj, {
                     variant: "text-md/semibold",
                     color: "text-strong",
                     children: n
-                }), null != n && null != s && (0, i.jsx)(a.EYj, {
+                }), null != n && null != s && (0, i.jsx)(r.EYj, {
                     variant: "text-md/medium",
                     color: "text-subtle",
                     "aria-hidden": !0,
                     children: "•"
-                }), null != s && (0, i.jsx)(a.EYj, {
+                }), null != s && (0, i.jsx)(r.EYj, {
                     variant: "text-md/medium",
                     color: "text-subtle",
                     children: s
                 })]
-            }), (0, i.jsx)(a.EYj, {
+            }), (0, i.jsx)(r.EYj, {
                 variant: "text-sm/normal",
                 color: "text-muted",
-                children: r
+                children: a
             })]
         }), o]
     })
@@ -81,11 +81,11 @@ function g(e) {
         label: g,
         subLabel: l,
         description: A.join(" \xb7 "),
-        children: !n && (0, i.jsx)(a.DUT, {
+        children: !n && (0, i.jsx)(r.DUT, {
             className: u.XP,
-            onClick: () => (0, r.U0)(t.id_hash),
+            onClick: () => (0, a.U0)(t.id_hash),
             "aria-label": c.intl.string(c.t.E4MJNt),
-            children: (0, i.jsx)(a.PGe, {
+            children: (0, i.jsx)(r.PGe, {
                 size: "md",
                 color: "currentColor"
             })

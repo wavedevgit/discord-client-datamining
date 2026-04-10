@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(421380),
+    r = n.n(l),
+    a = n(421380),
     o = n(397927),
     d = n(688810),
     c = n(617061),
@@ -46,7 +46,7 @@ function S(e) {
             location_stack: N
         })
     }, [I, N]);
-    let R = C ? o.wLn : r.$n;
+    let R = C ? o.wLn : a.$n;
     return (0, i.jsx)(x.A, {
         forcedDivider: b,
         borderType: A.i.PREMIUM,
@@ -58,7 +58,7 @@ function S(e) {
         children: (0, i.jsxs)("div", {
             className: f.NC,
             children: [(0, i.jsx)(R, {
-                size: r.$n.Sizes.SMALL,
+                size: a.$n.Sizes.SMALL,
                 onClick: () => {
                     (0, c.W)({
                         analyticsLocations: N,
@@ -66,7 +66,7 @@ function S(e) {
                         initialSelectedEffect: l
                     })
                 },
-                className: a()({
+                className: r()({
                     [f.yj]: C
                 }),
                 children: T.intl.string(T.t["/dRfCf"])

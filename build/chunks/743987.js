@@ -23,8 +23,8 @@ function f(e) {
         guildId: n,
         textClassName: f,
         tooltipDelay: g
-    } = e, _ = (0, s.bG)([d.default], () => d.default.locale), m = (0, s.bG)([u.A], () => null != n ? u.A.getGuild(n) : null), x = (0, s.bG)([c.Ay], () => null != n ? c.Ay.getMember(n, t) : null), E = (0, r.An)(h.default.extractTimestamp(t), _), y = (0, r.An)(x?.joinedAt, _);
-    return null == m || null == x ? (0, i.jsx)(a.Text, {
+    } = e, m = (0, s.bG)([d.default], () => d.default.locale), _ = (0, s.bG)([u.A], () => null != n ? u.A.getGuild(n) : null), x = (0, s.bG)([c.Ay], () => null != n ? c.Ay.getMember(n, t) : null), E = (0, r.An)(h.default.extractTimestamp(t), m), y = (0, r.An)(x?.joinedAt, m);
+    return null == _ || null == x ? (0, i.jsx)(a.Text, {
         variant: "text-sm/normal",
         className: f,
         children: E
@@ -52,10 +52,10 @@ function f(e) {
         }), (0, i.jsxs)("div", {
             className: A.R1,
             children: [(0, i.jsx)(l.m, {
-                text: m.name,
+                text: _.name,
                 delay: g,
                 children: (0, i.jsx)(o.Ay, {
-                    guild: m,
+                    guild: _,
                     size: o.Ay.Sizes.SMOL,
                     className: A.$f
                 })

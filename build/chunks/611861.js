@@ -17,17 +17,17 @@ var i = n(627968),
     A = n(750506),
     f = n(267102),
     g = n(580960),
-    _ = n(237631),
-    m = n(355052),
+    m = n(237631),
+    _ = n(355052),
     x = n(8088),
     E = n(652215);
 n(71071), n(939857), n(40876), n(851341), n(921955), a.Ay.initialize();
 let y = function() {
-    return s.useEffect(() => (g.A.initialize(), c.A.initialize(), _.A.init(), () => {
+    return s.useEffect(() => (g.A.initialize(), c.A.initialize(), m.A.init(), () => {
         g.A.terminate(), c.A.terminate()
     }), []), (0, i.jsxs)(s.Fragment, {
         children: [(0, i.jsx)(u.A, {}), (0, i.jsx)(d.N, {
-            children: (0, i.jsxs)(m.A, {
+            children: (0, i.jsxs)(_.A, {
                 children: [(0, i.jsx)(p.Al, {}), (0, i.jsx)(h.Ay, {}), (0, i.jsx)(f.Wr, {
                     appContext: E.BRT.OVERLAY,
                     renderWindow: window,

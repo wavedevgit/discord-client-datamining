@@ -21,13 +21,13 @@ function g(e) {
     let t = (0, r.m1)(e, u.default, c.A),
         n = f.intl.string(f.t.ssrVzG),
         g = (0, a.Y)(e),
-        _ = (0, d.A)(e),
+        m = (0, d.A)(e),
         {
-            trackView: m,
+            trackView: _,
             trackClick: x
         } = (0, h.Y)(A.KS.IncomingCall, {
             notif_type: A.KS.IncomingCall,
-            notif_user_id: _,
+            notif_user_id: m,
             guild_id: e.guild_id,
             channel_id: e.id,
             channel_type: e.type
@@ -40,7 +40,7 @@ function g(e) {
         confirmText: f.intl.string(f.t["0D/6Rz"]),
         cancelText: f.intl.string(f.t.BVN4pL),
         onNotificationShow: () => {
-            m()
+            _()
         },
         onConfirmClick: () => {
             if (p.kvI.CALLABLE.has(e.type)) s.A.callPrivateChannel(e.id);

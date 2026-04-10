@@ -1,7 +1,7 @@
 /** chunk id: 883662 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => m
+    A: () => p
 });
 var r = n(627968),
     i = n(64700),
@@ -14,43 +14,43 @@ var r = n(627968),
     d = n(418829),
     h = n(652215);
 
-function m(e) {
+function p(e) {
     let {
         partialRoot: t,
         target: n,
-        defaultTarget: m,
-        onViewChange: p,
-        sidebarFooter: f,
-        emptyState: _,
+        defaultTarget: p,
+        onViewChange: _,
+        sidebarFooter: m,
+        emptyState: f,
         searchQuery: g,
         clearSearchQuery: y,
         searchBar: v,
-        ...x
-    } = e, [S, E] = i.useState(!1), [A, N] = i.useState(1.4), b = i.useRef(null), j = (0, a.bG)([o.A], () => o.A.useReducedMotion), C = (0, a.bG)([u.A], () => u.A.isFocused());
+        ...S
+    } = e, [E, x] = i.useState(!1), [A, N] = i.useState(1.4), b = i.useRef(null), C = (0, a.bG)([o.A], () => o.A.useReducedMotion), j = (0, a.bG)([u.A], () => u.A.isFocused());
     return i.useEffect(() => {
         let e = e => {
             let {
                 intensity: t,
                 duration: n
             } = e;
-            !j && C && (E(!0), N(t ?? 1.4), clearTimeout(b.current), b.current = setTimeout(() => E(!1), n ?? 1e3))
+            !C && j && (x(!0), N(t ?? 1.4), clearTimeout(b.current), b.current = setTimeout(() => x(!1), n ?? 1e3))
         };
         return c._.subscribe(h.jej.SHAKE_SETTINGS_MODAL, e), () => {
             c._.unsubscribe(h.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(b.current)
         }
-    }, [j, C]), (0, r.jsx)(l.bfh, {
-        isShaking: S,
+    }, [C, j]), (0, r.jsx)(l.bfh, {
+        isShaking: E,
         intensity: A,
         children: (0, r.jsx)(s.N, {
-            ...x,
+            ...S,
             children: (0, r.jsx)(d.A, {
-                onClose: x.onClose,
+                onClose: S.onClose,
                 partialRoot: t,
                 target: n,
-                defaultTarget: m,
-                onViewChange: p,
-                emptyState: _,
-                sidebarFooter: f,
+                defaultTarget: p,
+                onViewChange: _,
+                emptyState: f,
+                sidebarFooter: m,
                 searchQuery: g,
                 clearSearchQuery: y,
                 searchBar: v

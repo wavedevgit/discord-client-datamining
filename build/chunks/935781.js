@@ -1,15 +1,15 @@
 /** chunk id: 935781 params = (module,exports,require) **/
 n.d(t, {
-    N: () => r
+    N: () => a
 });
 var i = n(419954),
     s = n(780964),
     l = n(417628),
-    a = n(985018);
-let r = (0, i.Tf)(s.X.ACCOUNT_DELETE_SETTING, {
-    useTitle: () => a.intl.string(a.t["gIpzR+"]),
-    useSubtitle: () => a.intl.string(a.t.Bd6dOf),
-    useLabel: () => a.intl.string(a.t["8lQ2rR"]),
+    r = n(985018);
+let a = (0, i.Tf)(s.X.ACCOUNT_DELETE_SETTING, {
+    useTitle: () => r.intl.string(r.t["gIpzR+"]),
+    useSubtitle: () => r.intl.string(r.t.Bd6dOf),
+    useLabel: () => r.intl.string(r.t["8lQ2rR"]),
     useVariant: () => "critical-secondary",
     onClick: () => (0, l.c)(!0)
 })

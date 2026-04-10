@@ -1,11 +1,11 @@
 /** chunk id: 241847 params = (module,exports,require) **/
 n.d(t, {
-    A: () => U
+    A: () => w
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(311907),
     o = n(397927),
     c = n(915089),
@@ -16,17 +16,17 @@ var i = n(627968),
     A = n(83942),
     g = n(259374),
     p = n(730986),
-    f = n(786840),
-    _ = n(763845),
+    _ = n(786840),
+    f = n(763845),
     E = n(857341),
-    x = n(843057),
-    C = n(603266),
+    C = n(843057),
+    x = n(603266),
     S = n(985018),
     I = n(298979),
     T = n(451070),
-    N = n(442078);
+    v = n(442078);
 
-function v() {
+function N() {
     return (0, r.cf)([d.A], () => ({
         connectionState: d.A.getState(),
         hostname: d.A.getHostname(),
@@ -53,9 +53,9 @@ function b(e) {
         lobbyId: t,
         connectionTypeText: n,
         closePopout: l
-    } = e, s = y(t);
-    return (0, i.jsx)(_.A, {
-        ...s,
+    } = e, a = y(t);
+    return (0, i.jsx)(f.A, {
+        ...a,
         closePopout: l,
         connectionTypeText: n
     })
@@ -66,9 +66,9 @@ function j(e) {
         lobbyId: t,
         connectionTypeText: n,
         closePopout: l
-    } = e, s = y(t);
+    } = e, a = y(t);
     return (0, i.jsx)(p.Q, {
-        ...s,
+        ...a,
         closePopout: l,
         connectionTypeText: n
     })
@@ -78,8 +78,8 @@ function R(e) {
     let {
         closePopout: t,
         connectionTypeText: n
-    } = e, l = v();
-    return (0, i.jsx)(_.A, {
+    } = e, l = N();
+    return (0, i.jsx)(f.A, {
         ...l,
         closePopout: t,
         connectionTypeText: n
@@ -90,11 +90,30 @@ function M(e) {
     let {
         closePopout: t,
         connectionTypeText: n
-    } = e, l = v();
+    } = e, l = N();
     return (0, i.jsx)(p.Q, {
         ...l,
         closePopout: t,
         connectionTypeText: n
+    })
+}
+
+function L(e) {
+    let {
+        channelId: t,
+        isOverlay: n,
+        lobbyId: l,
+        closePopout: a
+    } = e, s = (0, g.k)({
+        channelId: t
+    }) ? S.intl.string(S.t["3BogKe"]) : S.intl.string(S.t.ETIVvg);
+    return n ? (0, i.jsx)(b, {
+        lobbyId: l,
+        closePopout: a,
+        connectionTypeText: s
+    }) : (0, i.jsx)(R, {
+        closePopout: a,
+        connectionTypeText: s
     })
 }
 
@@ -103,47 +122,28 @@ function O(e) {
         channelId: t,
         isOverlay: n,
         lobbyId: l,
-        closePopout: s
-    } = e, a = (0, g.k)({
-        channelId: t
-    }) ? S.intl.string(S.t["3BogKe"]) : S.intl.string(S.t.ETIVvg);
-    return n ? (0, i.jsx)(b, {
-        lobbyId: l,
-        closePopout: s,
-        connectionTypeText: a
-    }) : (0, i.jsx)(R, {
-        closePopout: s,
-        connectionTypeText: a
-    })
-}
-
-function D(e) {
-    let {
-        channelId: t,
-        isOverlay: n,
-        lobbyId: l,
-        closePopout: s
-    } = e, a = (0, g.k)({
+        closePopout: a
+    } = e, s = (0, g.k)({
         channelId: t
     }) ? S.intl.string(S.t["3BogKe"]) : S.intl.string(S.t.ETIVvg);
     return n ? (0, i.jsx)(j, {
         lobbyId: l,
-        closePopout: s,
-        connectionTypeText: a
+        closePopout: a,
+        connectionTypeText: s
     }) : (0, i.jsx)(M, {
-        closePopout: s,
-        connectionTypeText: a
+        closePopout: a,
+        connectionTypeText: s
     })
 }
 
-function L(e) {
-    let [t, n] = l.useState(C.Rj.RTC_DEBUG_PANEL), s = (0, c.GV)(), r = [{
-        id: C.Rj.RTC_DEBUG_PANEL,
-        content: (0, i.jsx)(O, {
+function D(e) {
+    let [t, n] = l.useState(x.Rj.RTC_DEBUG_PANEL), a = (0, c.GV)(), r = [{
+        id: x.Rj.RTC_DEBUG_PANEL,
+        content: (0, i.jsx)(L, {
             ...e
         })
     }, {
-        id: C.Rj.RTC_SECURE_FRAMES,
+        id: x.Rj.RTC_SECURE_FRAMES,
         content: (0, i.jsx)(E.A, {
             channelId: e.channelId
         })
@@ -156,9 +156,9 @@ function L(e) {
     }, [e.channelId, t]);
     let d = (0, A.c)();
     return l.useEffect(() => {
-        d && n(C.Rj.RTC_DEBUG_PANEL)
+        d && n(x.Rj.RTC_DEBUG_PANEL)
     }, [d]), (0, i.jsxs)("div", {
-        className: a()(N.popover, T.kL),
+        className: s()(v.popover, T.kL),
         children: [(0, i.jsxs)(o.VQ0, {
             className: T.vR,
             selectedItem: t,
@@ -166,11 +166,11 @@ function L(e) {
             look: "brand",
             onItemSelect: n,
             children: [(0, i.jsx)(o.VQ0.Item, {
-                id: C.Rj.RTC_DEBUG_PANEL,
+                id: x.Rj.RTC_DEBUG_PANEL,
                 className: T.YU,
                 children: S.intl.string(S.t.MBY1Pm)
             }), d ? null : (0, i.jsx)(o.VQ0.Item, {
-                id: C.Rj.RTC_SECURE_FRAMES,
+                id: x.Rj.RTC_SECURE_FRAMES,
                 className: T.YU,
                 children: S.intl.string(S.t.zC6o3s)
             })]
@@ -183,7 +183,7 @@ function L(e) {
                 } = e;
                 return (0, i.jsx)(o.VQ0.Panel, {
                     id: n,
-                    "aria-labelledby": s,
+                    "aria-labelledby": a,
                     className: n !== t ? T._t : void 0,
                     children: l
                 }, n)
@@ -194,16 +194,16 @@ function L(e) {
 
 function P(e) {
     let t = (0, r.bG)([u.A], () => u.A.hasVideo(e.channelId)),
-        [n, s] = l.useState(C.Rj.RTC_DEBUG_PANEL),
-        a = (0, c.GV)(),
+        [n, a] = l.useState(x.Rj.RTC_DEBUG_PANEL),
+        s = (0, c.GV)(),
         d = l.useMemo(() => {
             switch (n) {
-                case C.Rj.RTC_DEBUG_PANEL:
-                    return (0, i.jsx)(D, {
+                case x.Rj.RTC_DEBUG_PANEL:
+                    return (0, i.jsx)(O, {
                         ...e
                     });
-                case C.Rj.RTC_SECURE_FRAMES:
-                    return (0, i.jsx)(f.A, {
+                case x.Rj.RTC_SECURE_FRAMES:
+                    return (0, i.jsx)(_.A, {
                         channelId: e.channelId
                     })
             }
@@ -216,7 +216,7 @@ function P(e) {
     }, [e.channelId, n]);
     let h = (0, A.c)();
     return l.useEffect(() => {
-        h && s(C.Rj.RTC_DEBUG_PANEL)
+        h && a(x.Rj.RTC_DEBUG_PANEL)
     }, [h]), (0, i.jsxs)("div", {
         className: I.kL,
         children: [(0, i.jsx)(o.Heading, {
@@ -229,25 +229,25 @@ function P(e) {
             selectedItem: n,
             type: "top",
             look: "brand",
-            onItemSelect: s,
+            onItemSelect: a,
             children: [(0, i.jsx)(o.VQ0.Item, {
-                id: C.Rj.RTC_DEBUG_PANEL,
+                id: x.Rj.RTC_DEBUG_PANEL,
                 className: I.YU,
                 children: S.intl.string(S.t.MBY1Pm)
             }), h ? null : (0, i.jsx)(o.VQ0.Item, {
-                id: C.Rj.RTC_SECURE_FRAMES,
+                id: x.Rj.RTC_SECURE_FRAMES,
                 className: I.YU,
                 children: S.intl.string(S.t.zC6o3s)
             })]
         }), (0, i.jsx)(o.VQ0.Panel, {
             id: n,
-            "aria-labelledby": a,
+            "aria-labelledby": s,
             children: d
         })]
     })
 }
 
-function k(e) {
+function U(e) {
     return (0, g.k)({
         channelId: e.channelId
     }) ? (0, i.jsx)(P, {
@@ -256,30 +256,30 @@ function k(e) {
         className: I.L3,
         children: (0, i.jsx)("section", {
             className: I.J8,
-            children: (0, i.jsx)(D, {
+            children: (0, i.jsx)(O, {
                 ...e
             })
         })
     })
 }
 
-function w(e) {
+function k(e) {
     return (0, g.k)({
         channelId: e.channelId
-    }) ? (0, i.jsx)(L, {
+    }) ? (0, i.jsx)(D, {
         ...e
     }) : (0, i.jsx)("div", {
-        className: a()(N.popover, T.L3),
-        children: (0, i.jsx)(O, {
+        className: s()(v.popover, T.L3),
+        children: (0, i.jsx)(L, {
             ...e
         })
     })
 }
 
-function U(e) {
-    return (0, x.p)("RTCConnectionPopout") ? (0, i.jsx)(w, {
+function w(e) {
+    return (0, C.p)("RTCConnectionPopout") ? (0, i.jsx)(k, {
         ...e
-    }) : (0, i.jsx)(k, {
+    }) : (0, i.jsx)(U, {
         ...e
     })
 }

@@ -1,82 +1,82 @@
 /** chunk id: 196295 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => x
 }), n(321073);
 var i = n(627968),
-    a = n(64700),
+    l = n(64700),
     r = n(311907),
-    l = n(397927),
-    s = n(412477),
+    s = n(397927),
+    a = n(412477),
     o = n(592598),
-    d = n(243612),
-    c = n(545807),
-    u = n(672910),
-    _ = n(57019),
-    h = n(703552),
+    u = n(243612),
+    d = n(545807),
+    c = n(672910),
+    h = n(57019),
+    g = n(703552),
     m = n(672396),
-    p = n(652215),
-    g = n(985018),
-    f = n(458904);
-let A = [];
+    f = n(652215),
+    A = n(985018),
+    I = n(458904);
+let E = [];
 
-function I(e) {
+function p(e) {
     return e.notification.id
 }
 
-function x(e, t, n, a) {
+function _(e, t, n, l) {
     let {
         index: r,
-        notification: l,
-        locked: s,
+        notification: s,
+        locked: a,
         pinned: o
     } = t;
-    return (0, i.jsx)(u.A, {
+    return (0, i.jsx)(c.A, {
         index: r,
-        notification: l,
-        locked: s,
+        notification: s,
+        locked: a,
         pinned: o,
         transitionState: n,
-        cleanUp: a
+        cleanUp: l
     }, e)
 }
 
-function E(e) {
+function S(e) {
     return (0, i.jsx)("div", {
-        className: f.k,
+        className: I.k,
         children: e
     })
 }
-let b = a.memo(function(e) {
+let x = l.memo(function(e) {
     let {
         locked: t,
         pinned: n,
-        showEmpty: u = !0
-    } = e, f = (0, r.bG)([h.A, o.A], () => {
-        if (o.A.isNotificationDisabled(m.KS.TextChat)) return A;
+        showEmpty: c = !0
+    } = e, I = (0, r.bG)([g.A, o.A], () => {
+        if (o.A.isNotificationDisabled(m.KS.TextChat)) return E;
         let e = [],
             i = 0;
-        for (let a of h.A.getNotifications()) {
+        for (let l of g.A.getNotifications()) {
             if (i > 4) break;
-            (!t || a.status !== p.yFH.TIMED_OUT) && (e.push({
+            (!t || l.status !== f.yFH.TIMED_OUT) && (e.push({
                 index: i,
                 locked: t,
                 pinned: n,
-                notification: a
+                notification: l
             }), i++)
         }
         return e
-    }, [t, n], d.oQ), b = a.useState(() => new _.Fn(t))[0];
-    return (a.useLayoutEffect(() => b.updateState(f, t)), a.useLayoutEffect(() => (b.initialize((0, c.b)()), () => b.cleanUp()), [b]), 0 !== f.length || t) ? (0, i.jsx)(_.Gt.Provider, {
-        value: b,
-        children: (0, i.jsx)(l.Fai, {
-            items: f,
-            renderItem: x,
-            getItemKey: I,
-            wrapChildren: E
+    }, [t, n], u.oQ), x = l.useState(() => new h.Fn(t))[0];
+    return (l.useLayoutEffect(() => x.updateState(I, t)), l.useLayoutEffect(() => (x.initialize((0, d.b)()), () => x.cleanUp()), [x]), 0 !== I.length || t) ? (0, i.jsx)(h.Gt.Provider, {
+        value: x,
+        children: (0, i.jsx)(s.Fai, {
+            items: I,
+            renderItem: _,
+            getItemKey: p,
+            wrapChildren: S
         })
-    }) : u ? t ? null : (0, i.jsx)(s.g, {
-        emptyText: g.intl.string(g.t.O1Nbjq),
-        icon: l.XFE,
+    }) : c ? t ? null : (0, i.jsx)(a.g, {
+        emptyText: A.intl.string(A.t.O1Nbjq),
+        icon: s.XFE,
         absolute: !0
     }) : null
 })

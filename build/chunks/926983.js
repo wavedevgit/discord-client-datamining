@@ -4,9 +4,9 @@ r.d(e, {
 });
 var i = r(627968);
 r(64700);
-var E = r(397927),
-    n = r(985018);
-let c = (t, e) => (0, i.jsxs)(E.Text, {
+var n = r(397927),
+    E = r(985018);
+let c = (t, e) => (0, i.jsxs)(n.Text, {
         color: "text-feedback-critical",
         style: {
             display: "flex",
@@ -15,7 +15,7 @@ let c = (t, e) => (0, i.jsxs)(E.Text, {
             alignItems: "center"
         },
         variant: "text-sm/normal",
-        children: [(0, i.jsx)(E.EpV, {
+        children: [(0, i.jsx)(n.EpV, {
             size: "custom",
             color: "currentColor",
             width: 14,
@@ -24,13 +24,13 @@ let c = (t, e) => (0, i.jsxs)(E.Text, {
     }, e),
     s = {
         getTextInVoiceSendMessageChannelPermissionText: function(t) {
-            return t ? n.intl.format(n.t.Q1rwpr, {
+            return t ? E.intl.format(E.t.Q1rwpr, {
                 warningHook: c
-            }) : n.intl.string(n.t.WQ6zpT)
+            }) : E.intl.string(E.t.WQ6zpT)
         },
         getTextInVoiceReadMessageHistoryChannelPermissionText: function(t) {
-            return t ? n.intl.format(n.t.Rx4pbJ, {
+            return t ? E.intl.format(E.t.Rx4pbJ, {
                 warningHook: c
-            }) : n.intl.string(n.t.cuMfH0)
+            }) : E.intl.string(E.t.cuMfH0)
         }
     }

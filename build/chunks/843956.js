@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(419954),
     s = n(780964),
     l = n(358776),
-    a = n(23819),
-    r = n(230495),
+    r = n(23819),
+    a = n(230495),
     o = n(603815),
     d = n(976025),
     c = n(973015),
@@ -17,5 +17,5 @@ var i = n(419954),
     x = n(985018);
 let A = (0, i.WI)(s.X.USER_SECTION, {
     useTitle: () => x.intl.string(x.t.cduTBL),
-    buildLayout: () => [a.J, c.T, u.v, m.T, r.J, ...(0, l.pC)("UserSection") ? [] : [_.$], d.z, g.e, o.r]
+    buildLayout: () => [r.J, c.T, u.v, m.T, a.J, ...(0, l.pC)("UserSection") ? [] : [_.$], d.z, g.e, o.r]
 })

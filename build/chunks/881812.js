@@ -5,14 +5,14 @@ n.d(t, {
 var i = n(627968),
     s = n(158954),
     l = n(311907),
-    a = n(817281),
-    r = n(419954),
+    r = n(817281),
+    a = n(419954),
     o = n(964404),
     d = n(253932),
     c = n(780964),
     u = n(858897),
     m = n(985018);
-let g = (0, r.zD)(c.X.APPEARANCE_DISPLAY_COMPACT_AVATARS, {
+let g = (0, a.zD)(c.X.APPEARANCE_DISPLAY_COMPACT_AVATARS, {
     useTitle: () => m.intl.string(m.t.JgjNG3),
     useSubtitle: () => {
         if (!d.hH.useSetting()) return m.intl.format(m.t["31PRaj"], {
@@ -29,7 +29,7 @@ let g = (0, r.zD)(c.X.APPEARANCE_DISPLAY_COMPACT_AVATARS, {
         return !d.hH.useSetting() || e
     },
     setValue: e => {
-        a.Ay.updatedUnsyncedSettings({
+        r.Ay.updatedUnsyncedSettings({
             displayCompactAvatars: e
         })
     }

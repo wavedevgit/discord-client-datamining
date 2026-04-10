@@ -1,11 +1,11 @@
 /** chunk id: 970144 params = (module,exports,require) **/
 n.d(t, {
-    r: () => a
+    r: () => r
 });
 var i = n(419954),
     s = n(780964),
     l = n(925913);
-let a = (0, i.WI)(s.X.PROFILE_SECTION, {
+let r = (0, i.WI)(s.X.PROFILE_SECTION, {
     hoisted: !0,
     buildLayout: () => [l.f, l.A]
 })

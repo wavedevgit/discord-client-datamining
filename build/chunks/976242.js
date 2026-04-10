@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(934551),
     s = n(419954),
     l = n(933297),
-    a = n(780964),
-    r = n(358776),
+    r = n(780964),
+    a = n(358776),
     o = n(733188),
     d = n(380450),
     c = n(519282),
@@ -22,11 +22,11 @@ var i = n(934551),
     f = n(60398),
     S = n(925759),
     E = n(985018);
-let b = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
+let b = (0, s.t_)(r.X.ACCESSIBILITY_PANEL, {
         useTitle: () => E.intl.string(E.t.G0neg7),
         buildLayout: () => [c.s, T._, A.b, p.T, _.V, h.G, u.v, m.T]
     }),
-    C = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
+    C = (0, s.t_)(r.X.ACCESSIBILITY_PANEL, {
         useTitle: () => E.intl.string(E.t.G0neg7),
         buildLayout: () => [f.U, S.P, x.l, p.T, g.X],
         decoration: {
@@ -35,9 +35,9 @@ let b = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
             sticky: !0
         }
     }),
-    v = (0, s.i4)(a.X.ACCESSIBILITY_SIDEBAR_ITEM, {
+    v = (0, s.i4)(r.X.ACCESSIBILITY_SIDEBAR_ITEM, {
         useTitle: () => E.intl.string(E.t.G0neg7),
         icon: i.AccessibilityIcon,
         useMenu: d.A,
-        buildLayout: () => (0, r.Ci)("AccessibilityPanel") ? [C] : [b]
+        buildLayout: () => (0, a.Ci)("AccessibilityPanel") ? [C] : [b]
     })

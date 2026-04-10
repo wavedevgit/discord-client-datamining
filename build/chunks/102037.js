@@ -24,7 +24,7 @@ function p(e) {
         title: A,
         body: f,
         hint: g,
-        notifType: _
+        notifType: m
     } = (t = {
         icon: n(513653),
         title: u.intl.string(u.t.pkXAeG),
@@ -38,10 +38,10 @@ function p(e) {
         hint: e.news?.hint ?? t.hint,
         notifType: null != e.news ? c.KS.NewsNudge : t.notifType
     } : t), {
-        trackView: m,
+        trackView: _,
         trackClick: x
-    } = (0, d.Y)(_, {
-        notif_type: _
+    } = (0, d.Y)(m, {
+        notif_type: m
     });
     return {
         icon: p,
@@ -56,7 +56,7 @@ function p(e) {
             children: u.intl.string(u.t["9MyuT0"])
         }),
         onNotificationShow: () => {
-            m()
+            _()
         },
         onNotificationClick: (e, t) => {
             x("unlock"), l === c.Jr.NEWS && s.A.updateNotificationStatus(t), a.default.isOverlayOOPEnabledForPid((0, o.getPID)()) ? s.A.setInputLocked(!1, (0, o.getPID)()) : r.default.isInstanceLocked() && s.A.setInstanceLocked(!1)

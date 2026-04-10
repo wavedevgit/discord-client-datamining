@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(397927),
-    a = n(926919),
-    r = n(172272),
+    r = n(926919),
+    a = n(172272),
     o = n(540999),
     d = n(111162),
     c = n(253932),
@@ -43,10 +43,10 @@ function g() {
     })), {
         horizontalSpacing: S,
         verticalSpacing: E
-    } = (0, r.Or)(), {
+    } = (0, a.Or)(), {
         setHorizontalSpacing: b,
         setVerticalSpacing: C
-    } = r.Or.getState(), v = c.HZ.useSetting();
+    } = a.Or.getState(), v = c.HZ.useSetting();
     return t ? [(0, i.jsxs)(l.Drp, {
         id: "overrides",
         label: "Overrides",
@@ -65,7 +65,7 @@ function g() {
             label: "Forced Canary",
             checked: A,
             action: () => {
-                (0, a.x)({
+                (0, r.x)({
                     canary: !A
                 })
             }
@@ -74,7 +74,7 @@ function g() {
             label: "Preview Unpublished Collections",
             checked: T,
             action: () => {
-                (0, a.x)({
+                (0, r.x)({
                     onlyShowPreviewAppCollections: !T
                 })
             }
@@ -83,7 +83,7 @@ function g() {
             label: "Disable Collections Cache",
             checked: f,
             action: () => {
-                (0, a.x)({
+                (0, r.x)({
                     disableAppCollectionsCache: !f
                 })
             }
@@ -99,7 +99,7 @@ function g() {
             label: "Gateway Events",
             checked: n,
             action: () => {
-                (0, a.x)({
+                (0, r.x)({
                     logGatewayEvents: !n
                 })
             }
@@ -108,7 +108,7 @@ function g() {
             label: "Overlay RPC Events",
             checked: g,
             action: () => {
-                (0, a.x)({
+                (0, r.x)({
                     logOverlayEvents: !g
                 })
             }
@@ -117,7 +117,7 @@ function g() {
             label: "Analytics Events",
             checked: _,
             action: () => {
-                (0, a.x)({
+                (0, r.x)({
                     logAnalyticsEvents: !_
                 })
             }
@@ -126,7 +126,7 @@ function g() {
             label: "Tracing Requests",
             checked: x,
             action: () => {
-                (0, a.x)({
+                (0, r.x)({
                     trace: !x
                 })
             }
@@ -135,7 +135,7 @@ function g() {
             label: "Prevent Popouts From Closing",
             checked: p,
             action: () => {
-                (0, a.x)({
+                (0, r.x)({
                     preventPopoutClose: !p
                 })
             }
@@ -151,7 +151,7 @@ function g() {
             label: "Accessibility Auditing",
             checked: h,
             action: () => {
-                (0, a.x)({
+                (0, r.x)({
                     axeEnabled: !h
                 })
             }
@@ -160,7 +160,7 @@ function g() {
             label: "Enable Layout Debugging",
             checked: e,
             action: () => {
-                (0, a.x)({
+                (0, r.x)({
                     layoutDebuggingEnabled: !e
                 })
             }
@@ -173,7 +173,7 @@ function g() {
                     ref: t,
                     value: S,
                     minValue: 0,
-                    maxValue: r.YR,
+                    maxValue: a.YR,
                     onChange: e => b(e),
                     renderValue: e => `${Math.round(e)}px`,
                     "aria-label": "Horizontal Spacing"
@@ -186,7 +186,7 @@ function g() {
                     ref: t,
                     value: E,
                     minValue: 0,
-                    maxValue: r.YR,
+                    maxValue: a.YR,
                     onChange: e => C(e),
                     "aria-label": "Vertical Spacing",
                     renderValue: e => `${Math.round(e)}px`

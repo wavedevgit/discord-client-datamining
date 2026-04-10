@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(397927),
-    r = n(793574),
+    r = n(397927),
+    a = n(793574),
     o = n(742589),
     d = n(909536),
     c = n(287809),
@@ -34,7 +34,7 @@ let h = e => {
             className: A.Wc,
             children: [(0, i.jsxs)("div", {
                 className: A.wG,
-                children: [(0, i.jsx)(a.tvc, {
+                children: [(0, i.jsx)(r.tvc, {
                     className: A.nE,
                     colorClass: A.oG
                 }), (0, i.jsx)("div", {
@@ -42,10 +42,10 @@ let h = e => {
                     children: S.map(e => {
                         let t = n === e.id,
                             s = h[e.id];
-                        return (0, i.jsxs)(a.DUT, {
+                        return (0, i.jsxs)(r.DUT, {
                             className: A.S0,
                             onClick: e.scrollToSection,
-                            children: [(0, i.jsx)(a.Text, {
+                            children: [(0, i.jsx)(r.Text, {
                                 variant: "text-sm/medium",
                                 color: "text-strong",
                                 children: s
@@ -60,7 +60,7 @@ let h = e => {
                 children: [T && (0, i.jsx)(m.l, {
                     ref: f,
                     size: "sm",
-                    location: r.A.PREMIUM_WISHLIST_MARKETING_PAGE
+                    location: a.A.PREMIUM_WISHLIST_MARKETING_PAGE
                 }), (0, i.jsx)(u.A, {
                     size: "sm",
                     variant: "overlay-secondary"

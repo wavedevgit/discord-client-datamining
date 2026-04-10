@@ -1,5 +1,4 @@
 /** chunk id: 381703 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     PC: "premiumIcon_b68a35",
     tV: "platformIcon_b68a35",

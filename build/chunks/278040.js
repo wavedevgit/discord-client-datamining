@@ -1,18 +1,18 @@
 /** chunk id: 278040 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(846017),
-    a = n(985018);
+    r = n(985018);
 
-function r() {
+function a() {
     return (0, i.jsx)(s.Button, {
         variant: "primary",
         size: "sm",
-        text: a.intl.string(a.t["FRep5/"]),
+        text: r.intl.string(r.t["FRep5/"]),
         onClick: () => (0, s.qfG)(e => (0, i.jsx)(l.default, {
             ...e,
             onSuccess: e.onClose

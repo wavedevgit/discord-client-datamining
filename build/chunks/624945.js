@@ -1,43 +1,44 @@
 /** chunk id: 624945 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => A
+    A: () => E
 });
 var i = n(627968),
-    l = n(311907),
-    a = n(827734),
-    r = n(397927),
-    s = n(287809),
-    o = n(763754),
-    c = n(447215),
+    r = n(311907),
+    s = n(827734),
+    l = n(397927),
+    a = n(287809),
+    c = n(763754),
+    o = n(447215),
     u = n(888675),
     d = n(985018),
     _ = n(351810);
 
-function A(e) {
+function E(e) {
     let {
         message: t,
         channel: n,
-        compact: A
-    } = e, m = t.getChannelId(), E = n.isDM() ? n.getRecipientId() : void 0, T = (0, l.bG)([s.default], () => null != E ? s.default.getUser(E) : void 0, [E]), I = (0, l.bG)([s.default], () => s.default.getCurrentUser(), []), g = null != I && t.author.id === I.id, N = (0, o.d8)(T, n), f = (0, c.P)({
-        user: T,
-        channelId: m,
+        compact: E
+    } = e, A = t.getChannelId(), m = n.isDM() ? n.getRecipientId() : void 0, I = (0, r.bG)([a.default], () => null != m ? a.default.getUser(m) : void 0, [m]), T = (0, r.bG)([a.default], () => a.default.getCurrentUser(), []), g = null != T && t.author.id === T.id, N = (0, c.d8)(I, n), f = (0, o.P)({
+        user: I,
+        channelId: A,
         guildId: void 0,
         messageId: t.id
     })(N);
-    if (!n.isDM() || null == T || null == I) return null;
-    let C = g ? d.t.S6PRsh : d.t["H/9Tlj"],
-        h = d.intl.format(C, {
+    if (!n.isDM() || null == I || null == T) return null;
+    let p = g ? d.t.S6PRsh : d.t["H/9Tlj"],
+        C = d.intl.format(p, {
             username: N.nick,
             usernameHook: f
         });
     return (0, i.jsx)(u.A, {
-        iconNode: (0, i.jsx)(r.V1C, {
+        iconNode: (0, i.jsx)(l.V1C, {
             size: "sm",
-            color: a.A.colors.STATUS_POSITIVE
+            color: s.A.colors.STATUS_POSITIVE
         }),
         iconContainerClassName: _.z,
         timestamp: t.timestamp,
-        compact: A,
-        children: h
+        compact: E,
+        children: C
     })
 }

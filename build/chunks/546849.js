@@ -1,18 +1,18 @@
 /** chunk id: 546849 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(128450),
-    a = n(985018);
+    r = n(985018);
 
-function r(e) {
+function a(e) {
     let {
         sectionTitle: t,
         errors: n,
-        onPronounsChange: r,
+        onPronounsChange: a,
         pendingPronouns: o,
         placeholder: d,
         currentPronouns: c,
@@ -23,11 +23,11 @@ function r(e) {
         errors: n,
         disabled: u,
         children: (0, i.jsx)(s.ksK, {
-            placeholder: d ?? a.intl.string(a.t.NPEUUu),
+            placeholder: d ?? r.intl.string(r.t.NPEUUu),
             maxLength: 40,
             value: o ?? c,
             onChange: function(e) {
-                r(e === c ? void 0 : e)
+                a(e === c ? void 0 : e)
             },
             disabled: u
         })

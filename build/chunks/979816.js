@@ -1,36 +1,37 @@
 /** chunk id: 979816 params = (module,exports,require) **/
-e.d(i, {
-    XO: () => a,
+"use strict";
+n.d(t, {
+    XO: () => d,
     hX: () => o,
-    iI: () => A,
-    i_: () => l
+    iI: () => u,
+    i_: () => c
 });
-var n = e(311907),
-    r = e(71393),
-    E = e(576705),
-    s = e(652215);
-let S = function(t) {
-    let i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.A,
-        e = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : E.A,
-        n = i.getGuild(t);
-    return null != n && e.can(s.xBc.MANAGE_GUILD, n)
+var i = n(311907),
+    r = n(71393),
+    s = n(576705),
+    l = n(652215);
+let a = function(e) {
+    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.A,
+        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.A,
+        i = t.getGuild(e);
+    return null != i && n.can(l.xBc.MANAGE_GUILD, i)
 };
 
-function l(t) {
-    return null != t && S(t)
+function c(e) {
+    return null != e && a(e)
 }
 
-function o(t) {
-    return S(t)
+function o(e) {
+    return a(e)
 }
 
-function A(t) {
-    return (0, n.bG)([r.A, E.A], () => S(t, r.A, E.A), [t])
+function u(e) {
+    return (0, i.bG)([r.A, s.A], () => a(e, r.A, s.A), [e])
 }
 
-function a(t) {
-    return (0, n.bG)([r.A], () => {
-        let i = r.A.getGuild(t);
-        return i?.features.has(s.GuildFeatures.COMMUNITY) || !1
-    }, [t])
+function d(e) {
+    return (0, i.bG)([r.A], () => {
+        let t = r.A.getGuild(e);
+        return t?.features.has(l.GuildFeatures.COMMUNITY) || !1
+    }, [e])
 }

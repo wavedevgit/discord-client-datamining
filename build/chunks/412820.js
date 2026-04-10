@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(36525),
-    r = n(587600),
+    r = n(36525),
+    a = n(587600),
     o = n(207803),
     d = n(836602),
     c = n(624826),
@@ -26,8 +26,8 @@ function _() {
     })), [_, x] = s.useState(!1), A = s.useMemo(() => n?.guild_tag !== void 0 && n.guild_tag.length > 0 ? n.guild_tag[0] : Object.keys(n ?? {}).length > 0 ? g.intl.string(g.t.s35OuK) : null, [n]), h = s.useCallback(async () => {
         x(!0);
         let t = d.A.getPendingChanges(e),
-            n = (0, r.C5)(t),
-            i = (0, r.yX)(t, e),
+            n = (0, a.C5)(t),
+            i = (0, a.yX)(t, e),
             s = !0;
         if (Object.keys(n).length > 0) {
             let i = await (0, m.GL)(e, n);
@@ -49,7 +49,7 @@ function _() {
     }, [e]), p = s.useCallback(() => {
         (0, m.IM)()
     }, []);
-    return (0, i.jsx)(a.A, {
+    return (0, i.jsx)(r.A, {
         submitting: _,
         onSave: h,
         onReset: p,

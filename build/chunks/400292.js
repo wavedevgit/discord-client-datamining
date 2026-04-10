@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(687498),
     l = n(397927),
-    a = n(65470),
-    r = n(792656),
+    r = n(65470),
+    a = n(792656),
     o = n(652215),
     d = n(688523);
 let c = function(e) {
@@ -31,13 +31,13 @@ let c = function(e) {
         "data-mtctest-ignore": "true",
         children: (0, i.jsxs)("div", {
             className: d.U,
-            children: [(0, i.jsx)(r.A, {
+            children: [(0, i.jsx)(a.A, {
                 size: "md",
                 subscriptionTier: n,
                 hasActivePromotion: !!c,
                 isPersistentCTA: !0,
                 premiumModalAnalyticsLocation: m
-            }), (0, i.jsx)(a.A, {
+            }), (0, i.jsx)(r.A, {
                 variant: "secondary",
                 size: "md"
             })]

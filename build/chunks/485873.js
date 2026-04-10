@@ -1,30 +1,30 @@
 /** chunk id: 485873 params = (module,exports,require) **/
-n.d(e, {
+n.d(t, {
     A: () => d
 });
 var i = n(627968);
 n(64700);
 var l = n(311907),
-    r = n(397927),
+    a = n(397927),
     s = n(827343),
-    a = n(430452),
+    r = n(430452),
     o = n(824744),
-    u = n(985018);
+    c = n(985018);
 
-function d(t) {
-    let e = (0, l.bG)([a.Ay], () => (0, o.M)(a.Ay.getInputVolume()));
-    return (0, i.jsx)(r.aK1, {
+function d(e) {
+    let t = (0, l.bG)([r.Ay], () => (0, o.M)(r.Ay.getInputVolume()));
+    return (0, i.jsx)(a.aK1, {
         id: "input",
-        label: u.intl.string(u.t.OX2Bnr),
+        label: c.intl.string(c.t.OX2Bnr),
         interactive: !1,
-        control: (n, l) => (0, i.jsx)(r.i42, {
+        control: (n, l) => (0, i.jsx)(a.i42, {
             ...n,
             ref: l,
-            value: e,
-            onChange: e => s.A.setInputVolume((0, o.w)(e), {
-                analyticsLocations: t
+            value: t,
+            onChange: t => s.A.setInputVolume((0, o.w)(t), {
+                analyticsLocations: e
             }),
-            "aria-label": u.intl.string(u.t.OX2Bnr)
+            "aria-label": c.intl.string(c.t.OX2Bnr)
         })
     })
 }

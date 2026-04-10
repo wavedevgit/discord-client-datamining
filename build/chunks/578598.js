@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    a = n(933297),
-    r = n(791498),
+    r = n(933297),
+    a = n(791498),
     o = n(244242);
 
 function d(e) {
@@ -31,11 +31,11 @@ function u(e) {
         trailingContent: t
     } = e;
     switch (t.type) {
-        case a._1.TEXT:
+        case r._1.TEXT:
             return (0, i.jsx)(c, {
                 trailingContent: t
             });
-        case a._1.STRONGLY_DISCOURAGED_CUSTOM:
+        case r._1.STRONGLY_DISCOURAGED_CUSTOM:
             return (0, i.jsx)(d, {
                 trailingContent: t
             })
@@ -47,14 +47,14 @@ function m(e) {
         node: t
     } = e, {
         useLabel: n,
-        useTitle: a,
+        useTitle: r,
         useAriaLabel: d,
         useSubtitle: c,
         useVariant: m,
         useDisabled: g,
         useTrailingContent: _,
         onClick: x
-    } = t, [A, h] = s.useState(!1), p = (0, r.q)(t), T = a(), f = c?.(), S = n(), E = d?.(), b = m?.(), C = g?.(), v = _?.();
+    } = t, [A, h] = s.useState(!1), p = (0, a.q)(t), T = r(), f = c?.(), S = n(), E = d?.(), b = m?.(), C = g?.(), v = _?.();
     return (0, i.jsx)(o.L, {
         children: (0, i.jsx)(l.D0$, {
             label: T,

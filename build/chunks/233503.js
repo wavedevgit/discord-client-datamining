@@ -1,73 +1,73 @@
 /** chunk id: 233503 params = (module,exports,require) **/
-n.d(i, {
-    default: () => b
+l.d(e, {
+    default: () => A
 });
-var e = n(627968),
-    l = n(64700),
-    a = n(477782),
-    r = n(397927),
-    o = n(442433),
-    s = n(50268),
-    u = n(253925),
-    c = n(378058),
-    d = n(253932),
-    g = n(957565),
-    p = n(690521),
-    y = n(60587),
-    A = n(985018);
+var i = l(627968),
+    n = l(64700),
+    a = l(477782),
+    r = l(397927),
+    s = l(442433),
+    u = l(50268),
+    d = l(253925),
+    c = l(378058),
+    o = l(253932),
+    g = l(957565),
+    p = l(690521),
+    b = l(60587),
+    m = l(985018);
 
-function b(t) {
+function A(t) {
     let {
-        target: i,
-        onSelect: n
-    } = t, b = i.getAttribute("data-type"), E = i.getAttribute("data-id"), I = i.getAttribute("data-name"), f = i.getAttribute("data-surrogates"), C = "true" === i.getAttribute("data-animated"), m = i.getAttribute("data-format-type"), S = b === y.g.EMOJI, x = b === y.g.STICKER, j = d.Q_.useSetting(), v = (0, u.A)({
-        type: b,
-        id: E,
-        name: I,
+        target: e,
+        onSelect: l
+    } = t, A = e.getAttribute("data-type"), C = e.getAttribute("data-id"), f = e.getAttribute("data-name"), h = e.getAttribute("data-surrogates"), k = "true" === e.getAttribute("data-animated"), x = e.getAttribute("data-format-type"), y = A === b.g.EMOJI, I = A === b.g.STICKER, E = o.Q_.useSetting(), S = (0, d.A)({
+        type: A,
+        id: C,
+        name: f,
         isInExpressionPicker: !0
-    }), k = null != f ? (0, e.jsx)(a.Dr, {
+    }), _ = null != h ? (0, i.jsx)(a.Dr, {
         id: "copy",
-        label: A.intl.string(A.t.ad58UB),
-        action: () => (0, g.C)(f)
-    }) : null, J = (0, s.A)({
-        id: E,
-        shiftId: b === y.g.EMOJI ? `<${C?"a":""}:${I?.split("~")[0]}:${E}>` : void 0,
-        label: b === y.g.STICKER ? A.intl.string(A.t.SJ3249) : A.intl.string(A.t.Ap2oVy)
-    }), h = l.useCallback(() => {
-        if (null != E && null != I) {
-            if (S)(0, g.C)((0, p.Ez)({
-                id: E,
-                name: I,
-                animated: C
+        label: m.intl.string(m.t.ad58UB),
+        action: () => (0, g.C)(h)
+    }) : null, j = (0, u.A)({
+        id: C,
+        shiftId: A === b.g.EMOJI ? `<${k?"a":""}:${f?.split("~")[0]}:${C}>` : void 0,
+        label: A === b.g.STICKER ? m.intl.string(m.t.SJ3249) : m.intl.string(m.t.Ap2oVy)
+    }), V = n.useCallback(() => {
+        if (null != C && null != f) {
+            if (y)(0, g.C)((0, p.Ez)({
+                id: C,
+                name: f,
+                animated: k
             }));
-            else if (x && null != m) {
+            else if (I && null != x) {
                 let t = (0, c.zg)({
-                    id: E,
-                    name: I,
-                    format_type: Number(m)
+                    id: C,
+                    name: f,
+                    format_type: Number(x)
                 });
                 null != t && (0, g.C)(t)
             }
         }
-    }, [E, I, C, S, x, m]), K = null != E && null != I && (S && null == f || x && null != m) ? (0, e.jsx)(a.Dr, {
+    }, [C, f, k, y, I, x]), v = null != C && null != f && (y && null == h || I && null != x) ? (0, i.jsx)(a.Dr, {
         id: "copy-image-link",
-        label: A.intl.string(x ? A.t.B1ubHx : A.t.cIoudn),
-        action: h,
+        label: m.intl.string(I ? m.t.B1ubHx : m.t.cIoudn),
+        action: V,
         icon: r.qYV,
         leadingAccessory: {
             type: "icon",
             icon: r.qYV
         }
     }) : null;
-    return (0, e.jsx)(r.W1t, {
+    return (0, i.jsx)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "expression-picker",
-        onClose: o.Z_,
-        "aria-label": A.intl.string(A.t.XoasSC),
-        onSelect: n,
+        onClose: s.Z_,
+        "aria-label": m.intl.string(m.t.XoasSC),
+        onSelect: l,
         className: "context-menu",
-        children: (0, e.jsxs)(r.rXV, {
-            children: [v, g.p5 && j ? k ?? J : null, g.p5 && j ? K : null]
+        children: (0, i.jsxs)(r.rXV, {
+            children: [S, g.p5 && E ? _ ?? j : null, g.p5 && E ? v : null]
         })
     })
 }

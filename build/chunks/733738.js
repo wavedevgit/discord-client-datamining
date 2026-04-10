@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(503698),
-    r = n.n(a),
+var r = n(503698),
+    a = n.n(r),
     l = n(435371),
     s = n(397927),
     o = n(430086),
@@ -13,14 +13,14 @@ var a = n(503698),
     c = n(533560),
     u = n(985018),
     A = n(710267);
-let _ = o.GY.binds["0"],
-    h = o.M$.binds["0"],
+let h = o.GY.binds["0"],
+    _ = o.M$.binds["0"],
     m = e => {
         let {
             firstElementFocusJumpSectionProps: t = {}
         } = e, {
             canGoBack: n,
-            canGoForward: a
+            canGoForward: r
         } = (0, c.L)();
         return (0, i.jsxs)("div", {
             className: A.y_,
@@ -28,12 +28,12 @@ let _ = o.GY.binds["0"],
                 ariaHidden: !0,
                 shouldShow: n,
                 text: u.intl.string(u.t.B9vzIP),
-                keyboardShortcut: _,
+                keyboardShortcut: h,
                 children: (0, i.jsx)(s.DUT, {
                     "aria-label": u.intl.string(u.t.B9vzIP),
                     "aria-disabled": !n,
                     tabIndex: n ? 0 : -1,
-                    className: r()(A.x6, A.aX, {
+                    className: a()(A.x6, A.aX, {
                         [A.r9]: !n
                     }),
                     onClick: () => (0, d.OE)("nav_button"),
@@ -45,15 +45,15 @@ let _ = o.GY.binds["0"],
                 })
             }), (0, i.jsx)(l.m_, {
                 ariaHidden: !0,
-                shouldShow: a,
+                shouldShow: r,
                 text: u.intl.string(u.t["9KJ29e"]),
-                keyboardShortcut: h,
+                keyboardShortcut: _,
                 children: (0, i.jsx)(s.DUT, {
                     "aria-label": u.intl.string(u.t["9KJ29e"]),
-                    "aria-disabled": !a,
-                    tabIndex: a ? 0 : -1,
-                    className: r()(A.x6, A.sY, {
-                        [A.r9]: !a
+                    "aria-disabled": !r,
+                    tabIndex: r ? 0 : -1,
+                    className: a()(A.x6, A.sY, {
+                        [A.r9]: !r
                     }),
                     onClick: () => (0, d.Qb)("nav_button"),
                     children: (0, i.jsx)(s.EdP, {

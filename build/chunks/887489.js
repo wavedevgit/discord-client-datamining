@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(421380),
     s = n(171316),
     l = n(419954),
-    a = n(71393),
-    r = n(954571),
+    r = n(71393),
+    a = n(954571),
     o = n(115063),
     d = n(762183),
     c = n(253932),
@@ -22,7 +22,7 @@ var i = n(421380),
     T = n(985018);
 let f = () => (0, g.e)() ? T.intl.string(T.t.PMsfcH) : T.intl.string(T.t.RAQUSN),
     S = (e, t) => {
-        r.default.track(p.HAw.GUILD_DEFAULT_DMS_UPDATED, {
+        a.default.track(p.HAw.GUILD_DEFAULT_DMS_UPDATED, {
             default_guilds_restricted: e,
             applied_to_existing_guilds: t
         })
@@ -59,12 +59,12 @@ let f = () => (0, g.e)() ? T.intl.string(T.t.PMsfcH) : T.intl.string(T.t.RAQUSN)
                         c.n6.updateSetting(n), S(n, !1)
                     },
                     onCancel: () => {
-                        c.n6.updateSetting(n), c.$s.updateSetting(n ? a.A.getGuildIds() : []), S(n, !0)
+                        c.n6.updateSetting(n), c.$s.updateSetting(n ? r.A.getGuildIds() : []), S(n, !0)
                     }
                 })
             } else {
                 let n = (0, o.Tb)();
-                e ? n.delete(t) : n.add(t), c.$s.updateSetting(Array.from(n)), r.default.track(p.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+                e ? n.delete(t) : n.add(t), c.$s.updateSetting(Array.from(n)), a.default.track(p.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
                     action: A.m.DIRECT_MESSAGES_TOGGLE,
                     ingress: h.bf.USER_SETTINGS_PRIVACY_SAFETY,
                     guild_id: t

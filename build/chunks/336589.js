@@ -1,49 +1,50 @@
 /** chunk id: 336589 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
     I: () => f
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(311907),
-    r = n(732955),
-    s = n(355622),
-    o = n(148355),
-    c = n(406704),
+    r = n(64700),
+    s = n(311907),
+    l = n(732955),
+    a = n(355622),
+    c = n(148355),
+    o = n(406704),
     u = n(696451),
     d = n(71393),
     _ = n(576705),
-    A = n(287809),
-    m = n(460350),
-    E = n(167681),
-    T = n(652215),
-    I = n(985018),
+    E = n(287809),
+    A = n(460350),
+    m = n(167681),
+    I = n(652215),
+    T = n(985018),
     g = n(453302);
 let N = e => {
         let {
             channel: t,
             message: n
-        } = e, a = (0, E.dv)(n.id), c = l.useCallback(() => {
-            (0, m.i)({
-                type: s.oU.FORM,
+        } = e, s = (0, m.dv)(n.id), o = r.useCallback(() => {
+            (0, A.i)({
+                type: a.oU.FORM,
                 content: "",
                 channel: t
             }).then(e => {
                 let {
                     valid: i
                 } = e;
-                i && (0, E.S9)(t, n, a.id)
+                i && (0, m.S9)(t, n, s.id)
             })
-        }, [t, n, a]);
+        }, [t, n, s]);
         return (0, i.jsx)("div", {
             className: g.T,
-            children: (0, i.jsx)(r.$nd, {
+            children: (0, i.jsx)(l.$nd, {
                 icon: {
                     type: "sticker",
-                    asset: a,
-                    component: o.A
+                    asset: s,
+                    component: c.A
                 },
-                text: I.intl.string(I.t["7Tj6HT"]),
-                onClick: c,
+                text: T.intl.string(T.t["7Tj6HT"]),
+                onClick: o,
                 variant: "secondary"
             })
         })
@@ -52,17 +53,17 @@ let N = e => {
         let {
             message: t,
             channel: n
-        } = e, l = n.getGuildId(), r = (0, a.bG)([A.default, _.A, d.A, u.Ay], () => {
-            let e = A.default.getCurrentUser(),
-                i = (0, c.UJ)(n),
-                a = _.A.can(T.xBc.SEND_MESSAGES, n),
-                r = null != l && null != e && u.Ay.getMember(l, e.id)?.isPending,
-                s = t.author.bot,
-                o = d.A.getGuild(l),
-                m = null != o && (o.systemChannelFlags & T.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
-            return a && !i && !r && !s && m
+        } = e, r = n.getGuildId(), l = (0, s.bG)([E.default, _.A, d.A, u.Ay], () => {
+            let e = E.default.getCurrentUser(),
+                i = (0, o.UJ)(n),
+                s = _.A.can(I.xBc.SEND_MESSAGES, n),
+                l = null != r && null != e && u.Ay.getMember(r, e.id)?.isPending,
+                a = t.author.bot,
+                c = d.A.getGuild(r),
+                A = null != c && (c.systemChannelFlags & I.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
+            return s && !i && !l && !a && A
         });
-        return null != l && r ? (0, i.jsx)(N, {
+        return null != r && l ? (0, i.jsx)(N, {
             message: t,
             channel: n
         }) : null

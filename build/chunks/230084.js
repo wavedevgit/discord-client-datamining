@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(421380),
+    r = n.n(l),
+    a = n(421380),
     o = n(397927),
     d = n(688810),
     c = n(385612),
@@ -34,7 +34,7 @@ function A(e) {
         withHighlight: b = !1
     } = e, {
         newestAnalyticsLocation: C
-    } = (0, d.Ay)(), v = b ? o.wLn : r.$n, N = s.useCallback(() => {
+    } = (0, d.Ay)(), v = b ? o.wLn : a.$n, N = s.useCallback(() => {
         (0, c.XD)({
             uploadType: m.HL.AVATAR,
             analyticsSource: C,
@@ -52,10 +52,10 @@ function A(e) {
         children: (0, i.jsxs)("div", {
             className: _.NC,
             children: [(0, i.jsx)(v, {
-                className: a()({
+                className: r()({
                     [_.yj]: b
                 }),
-                size: r.$n.Sizes.SMALL,
+                size: a.$n.Sizes.SMALL,
                 onClick: N,
                 children: h ?? g.intl.string(g.t["4OynCD"])
             }), t && (0, i.jsx)("div", {

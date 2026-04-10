@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(397927),
+    r = n.n(l),
+    a = n(397927),
     o = n(686533),
     d = n(525923),
     c = n(502040);
@@ -18,7 +18,7 @@ function u(e) {
         onExpand: l,
         ...u
     } = e, [m, g] = s.useState(!1);
-    return (0, i.jsx)(r.Nt8, {
+    return (0, i.jsx)(a.Nt8, {
         className: c.uR,
         collapsibleContent: (0, i.jsx)("div", {
             className: c.oV,
@@ -34,15 +34,15 @@ function u(e) {
                     var n;
                     g(n = !m), l?.(n), t?.(e)
                 },
-                className: a()(c.AC, n),
+                className: r()(c.AC, n),
                 action: (0, i.jsxs)("div", {
                     className: c.rc,
-                    children: [u.action, m ? (0, i.jsx)(r.abt, {
+                    children: [u.action, m ? (0, i.jsx)(a.abt, {
                         size: "custom",
                         width: d.S4,
                         height: d.S4,
                         color: "var(--interactive-text-active)"
-                    }) : (0, i.jsx)(r._BQ, {
+                    }) : (0, i.jsx)(a._BQ, {
                         size: "custom",
                         width: d.S4,
                         height: d.S4,

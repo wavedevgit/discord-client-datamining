@@ -3,22 +3,22 @@ n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(397927),
     o = n(770178),
     d = n(652215),
     c = n(311401);
-let u = a.forwardRef(function(e, t) {
+let u = r.forwardRef(function(e, t) {
     let {
         topContent: n,
-        title: r,
+        title: a,
         subtitle: u,
         buttons: A,
-        background: _,
-        className: h
-    } = e, [m, g] = a.useState("display-lg"), p = a.useCallback(e => {
+        background: h,
+        className: _
+    } = e, [m, g] = r.useState("display-lg"), p = r.useCallback(e => {
         g(e.contentRect.width < 500 ? "display-md" : "display-lg")
     }, []), E = (0, o.w)(p, [], {
         fireOnMount: !0
@@ -27,7 +27,7 @@ let u = a.forwardRef(function(e, t) {
         theme: d.NJ8.MIDNIGHT,
         disableAdaptiveTheme: !0,
         children: e => (0, i.jsx)("div", {
-            className: l()(c.iE, e, h),
+            className: l()(c.iE, e, _),
             ref: e => {
                 E.current = e, "function" == typeof t ? t(e) : null != t && (t.current = e)
             },
@@ -46,7 +46,7 @@ let u = a.forwardRef(function(e, t) {
                                 color: "text-strong",
                                 variant: m,
                                 className: c.DD,
-                                children: r
+                                children: a
                             }), (0, i.jsx)(s.Text, {
                                 color: "text-strong",
                                 variant: "text-md/normal",
@@ -55,7 +55,7 @@ let u = a.forwardRef(function(e, t) {
                             })]
                         }), A]
                     })]
-                }), _]
+                }), h]
             })
         })
     })

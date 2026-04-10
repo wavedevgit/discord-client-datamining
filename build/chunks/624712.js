@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(562465),
-    r = n(451988),
+var r = n(562465),
+    a = n(451988),
     l = n(397927),
     s = n(339048),
     o = n(10716),
@@ -13,26 +13,26 @@ var a = n(562465),
     c = n(287809),
     u = n(469778),
     A = n(147964),
-    _ = n(927813),
-    h = n(837921),
+    h = n(927813),
+    _ = n(837921),
     m = n(636401),
     g = n(613057),
     p = n(652215);
-let E = 10 * _.A.Millis.SECOND,
+let E = 10 * h.A.Millis.SECOND,
     I = {
         [p.e$_.VALIDATE_APPLICATION]: {
             scope: g.hj,
             handler(e) {
                 let {
                     socket: t
-                } = e, a = t.application.id;
+                } = e, r = t.application.id;
                 try {
                     var o;
                     let e;
-                    if (null == a) throw new m.A({
+                    if (null == r) throw new m.A({
                         errorCode: p.Lw6.INVALID_COMMAND
                     }, "No application.");
-                    let t = d.A.getApplication(a);
+                    let t = d.A.getApplication(r);
                     if (null == t) throw new m.A({
                         errorCode: p.Lw6.INVALID_ENTITLEMENT
                     }, "SKU does not exist.");
@@ -44,19 +44,19 @@ let E = 10 * _.A.Millis.SECOND,
                         if (!e) throw new m.A({
                             errorCode: p.Lw6.INVALID_ENTITLEMENT
                         }, "User does not have entitlement.")
-                    }), (0, r.BK)(E).then(() => {
+                    }), (0, a.BK)(E).then(() => {
                         throw new m.A({
                             errorCode: p.Lw6.INVALID_ENTITLEMENT
                         }, "Timed out fetching entitlement.")
                     })])
                 } catch (e) {
-                    throw e.code === p.Lw6.INVALID_ENTITLEMENT && (h.Ay.focus(null, !0), (0, l.mMO)(async () => {
+                    throw e.code === p.Lw6.INVALID_ENTITLEMENT && (_.Ay.focus(null, !0), (0, l.mMO)(async () => {
                         let {
                             default: e
                         } = await n.e("26766").then(n.bind(n, 448701));
                         return t => (0, i.jsx)(e, {
                             ...t,
-                            applicationId: a
+                            applicationId: r
                         })
                     })), e
                 }
@@ -67,14 +67,14 @@ let E = 10 * _.A.Millis.SECOND,
             handler(e) {
                 let {
                     socket: t
-                } = e, r = t.application.id;
-                if (null == r) throw new m.A({
+                } = e, a = t.application.id;
+                if (null == a) throw new m.A({
                     errorCode: p.Lw6.INVALID_COMMAND
                 }, "No application.");
-                return a.Bo.post({
-                    url: p.Rsh.ENTITLEMENT_TICKET(r),
+                return r.Bo.post({
+                    url: p.Rsh.ENTITLEMENT_TICKET(a),
                     body: {
-                        test_mode: A.A.inTestModeForApplication(r) || o.A.inDevModeForApplication(r)
+                        test_mode: A.A.inTestModeForApplication(a) || o.A.inDevModeForApplication(a)
                     },
                     retries: 3,
                     oldFormErrors: !0,
@@ -85,13 +85,13 @@ let E = 10 * _.A.Millis.SECOND,
                     } = e;
                     return t
                 }).catch(e => {
-                    throw h.Ay.focus(null, !0), (0, l.mMO)(async () => {
+                    throw _.Ay.focus(null, !0), (0, l.mMO)(async () => {
                         let {
                             default: e
                         } = await n.e("26766").then(n.bind(n, 448701));
                         return t => (0, i.jsx)(e, {
                             ...t,
-                            applicationId: r
+                            applicationId: a
                         })
                     }), e
                 })

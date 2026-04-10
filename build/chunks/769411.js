@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(582754),
-    a = n(736653),
-    r = n(344904),
+    r = n(736653),
+    a = n(344904),
     o = n(683757);
 let d = "url(#gradient)",
     c = e => {
@@ -25,14 +25,14 @@ let d = "url(#gradient)",
             }, 200);
             return () => clearTimeout(e)
         }, [t]);
-        let T = (0, a.Ay)(),
+        let T = (0, r.Ay)(),
             f = (0, l.qB)(T),
             S = (e => {
                 switch (e) {
-                    case r.BN.NITRO_GEM:
-                    case r.BN.AVATAR_DECO:
+                    case a.BN.NITRO_GEM:
+                    case a.BN.AVATAR_DECO:
                         return "var(--background-base-low)";
-                    case r.BN.NITRO_LOGO:
+                    case a.BN.NITRO_LOGO:
                         return "var(--premium-tier-2-purple)";
                     default:
                         return
@@ -40,20 +40,20 @@ let d = "url(#gradient)",
             })(g),
             E = ((e, t) => {
                 switch (e) {
-                    case r.BN.NITRO_LOGO:
+                    case a.BN.NITRO_LOGO:
                         return t ? "0.3" : "0.2";
-                    case r.BN.NITRO_GEM:
-                    case r.BN.AVATAR_DECO:
+                    case a.BN.NITRO_GEM:
+                    case a.BN.AVATAR_DECO:
                     default:
                         return
                 }
             })(g, f),
             b = _ ?? ((e, t) => {
                 switch (t) {
-                    case r.BN.NITRO_GEM:
-                    case r.BN.AVATAR_DECO:
+                    case a.BN.NITRO_GEM:
+                    case a.BN.AVATAR_DECO:
                         return d;
-                    case r.BN.NITRO_LOGO:
+                    case a.BN.NITRO_LOGO:
                         return e ? "url(#gradient_nitro_logo)" : d;
                     default:
                         return
@@ -65,7 +65,7 @@ let d = "url(#gradient)",
                 viewBox: "0 0 100 100",
                 className: o.fB,
                 children: [(0, i.jsx)("circle", {
-                    className: g === r.BN.NITRO_GEM || g === r.BN.AVATAR_DECO ? o.F3 : void 0,
+                    className: g === a.BN.NITRO_GEM || g === a.BN.AVATAR_DECO ? o.F3 : void 0,
                     fill: "transparent",
                     strokeWidth: m,
                     r: `${x}`,

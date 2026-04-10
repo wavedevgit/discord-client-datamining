@@ -1,26 +1,26 @@
 /** chunk id: 869965 params = (module,exports,require) **/
 n.d(t, {
-    d: () => a
+    d: () => r
 });
 var i = n(627968),
     s = n(64700),
     l = n(158954);
 
-function a(e) {
+function r(e) {
     let {
         title: t,
         children: n
-    } = e, a = s.useId();
+    } = e, r = s.useId();
     return (0, i.jsxs)(l.BJc, {
         role: "group",
-        "aria-labelledby": a,
+        "aria-labelledby": r,
         gap: "xl",
         padding: {
             top: 8,
             bottom: 8
         },
         children: [(0, i.jsx)(l.DZT, {
-            id: a,
+            id: r,
             variant: "heading-md/semibold",
             color: "text-muted",
             children: t

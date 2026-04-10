@@ -4,16 +4,16 @@ n.d(t, {
 }), n(321073);
 var l = n(311907),
     i = n(233993),
-    r = n(808728),
-    a = n(576705);
+    a = n(808728),
+    r = n(576705);
 
 function s(e) {
     let t = e?.id ?? null;
-    return (0, l.yK)([r.Ay, a.A], () => r.Ay.getChannels(t)[r.vM].reduce((e, t) => {
+    return (0, l.yK)([a.Ay, r.A], () => a.Ay.getChannels(t)[a.vM].reduce((e, t) => {
         let n = t.channel;
         return n.isGuildStageVoice() && function(e) {
-            let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : a.A;
+            let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.A;
             return !!e.isGuildStageVoice() && t.can(i.QY, e)
-        }(t.channel, a.A) && e.push(n), e
+        }(t.channel, r.A) && e.push(n), e
     }, []), [t])
 }

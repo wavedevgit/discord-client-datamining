@@ -3,8 +3,8 @@ n.d(t, {
     A: () => T
 });
 var i = n(735438),
-    a = n.n(i),
-    r = n(179771),
+    r = n.n(i),
+    a = n(179771),
     l = n(846293),
     s = n(956793),
     o = n(976860),
@@ -12,8 +12,8 @@ var i = n(735438),
     c = n(734057),
     u = n(71393),
     A = n(576705),
-    _ = n(309010),
-    h = n(977997),
+    h = n(309010),
+    _ = n(977997),
     m = n(147036),
     g = n(636401),
     p = n(90924),
@@ -24,7 +24,7 @@ var i = n(735438),
 let T = {
     [C.e$_.GET_CHANNEL]: {
         scope: {
-            [f.sm.ANY]: [r.F.RPC, r.F.GUILDS, r.F.GUILDS_CHANNELS_READ]
+            [f.sm.ANY]: [a.F.RPC, a.F.GUILDS, a.F.GUILDS_CHANNELS_READ]
         },
         handler(e) {
             let {
@@ -38,7 +38,7 @@ let T = {
             }, `Invalid channel id: ${t}`);
             if (i.isPrivate()) {
                 let e = n.authorization.scopes;
-                if (!e.includes(r.F.RPC) && !e.includes(r.F.DM_CHANNELS_READ)) throw new g.A({
+                if (!e.includes(a.F.RPC) && !e.includes(a.F.DM_CHANNELS_READ)) throw new g.A({
                     errorCode: C.Lw6.INVALID_PERMISSIONS
                 }, "Invalid scope")
             }
@@ -46,13 +46,13 @@ let T = {
         }
     },
     [C.e$_.GET_CHANNELS]: {
-        scope: r.F.RPC,
+        scope: a.F.RPC,
         handler(e) {
             let {
                 args: {
                     guild_id: t
                 }
-            } = e, n = a().values(c.A.loadAllGuildAndPrivateChannelsFromDisk());
+            } = e, n = r().values(c.A.loadAllGuildAndPrivateChannelsFromDisk());
             if (t) {
                 let e = u.A.getGuild(t);
                 if (null == e) throw new g.A({
@@ -83,7 +83,7 @@ let T = {
     },
     [C.e$_.GET_CHANNEL_PERMISSIONS]: {
         scope: {
-            [f.sm.ANY]: [r.F.GUILDS_MEMBERS_READ, r.F.GUILDS_CHANNELS_READ]
+            [f.sm.ANY]: [a.F.GUILDS_MEMBERS_READ, a.F.GUILDS_CHANNELS_READ]
         },
         handler(e) {
             let t = (0, I.A)();
@@ -96,7 +96,7 @@ let T = {
         }
     },
     [C.e$_.SELECT_VOICE_CHANNEL]: {
-        scope: r.F.RPC,
+        scope: a.F.RPC,
         validation: e => (0, E.A)(e).required().keys({
             channel_id: e.string().allow(null),
             timeout: e.number().min(0).max(60),
@@ -109,17 +109,17 @@ let T = {
                 socket: n,
                 args: {
                     channel_id: i,
-                    timeout: a = 0,
-                    force: r = !1,
+                    timeout: r = 0,
+                    force: a = !1,
                     navigate: l = !1
                 }
             } = e;
             if (!i) return s.default.selectVoiceChannel(null), null;
-            let E = _.A.getVoiceChannelId();
-            if (null != E && E !== i && !1 === r) throw new g.A({
+            let E = h.A.getVoiceChannelId();
+            if (null != E && E !== i && !1 === a) throw new g.A({
                 errorCode: C.Lw6.SELECT_VOICE_FORCE_REQUIRED
             }, "User is already joined to a voice channel.");
-            return t.storeWait(n, () => c.A.getChannel(i), a).catch(() => {
+            return t.storeWait(n, () => c.A.getChannel(i), r).catch(() => {
                 throw new g.A({
                     errorCode: C.Lw6.SELECT_CHANNEL_TIMED_OUT
                 }, "Request to select voice channel timed out.")
@@ -134,7 +134,7 @@ let T = {
             }).then(e => {
                 let [t, n] = e;
                 if (n.guild_id) {
-                    if ((0, m.Pd)(t, h.A, u.A)) throw new g.A({
+                    if ((0, m.Pd)(t, _.A, u.A)) throw new g.A({
                         errorCode: C.Lw6.INVALID_CHANNEL
                     }, "Channel is full");
                     if (!A.A.can(C.xBc.CONNECT, t)) throw new g.A({
@@ -147,17 +147,17 @@ let T = {
     },
     [C.e$_.GET_SELECTED_VOICE_CHANNEL]: {
         scope: {
-            [f.sm.ANY]: [r.F.RPC, r.F.RPC_VOICE_READ]
+            [f.sm.ANY]: [a.F.RPC, a.F.RPC_VOICE_READ]
         },
         handler(e) {
             let {
                 socket: t
-            } = e, n = _.A.getVoiceChannelId(), i = null != n ? c.A.getChannel(n) : null;
+            } = e, n = h.A.getVoiceChannelId(), i = null != n ? c.A.getChannel(n) : null;
             return null != i ? (0, p.SN)(i, (0, p.B_)(i, t.application.id, t.authorization.scopes)) : null
         }
     },
     [C.e$_.SELECT_TEXT_CHANNEL]: {
-        scope: r.F.RPC,
+        scope: a.F.RPC,
         validation: e => (0, E.A)(e).required().keys({
             channel_id: e.string().allow(null),
             timeout: e.number().min(0).max(60)
@@ -168,10 +168,10 @@ let T = {
                 socket: n,
                 args: {
                     channel_id: i,
-                    timeout: a = 0
+                    timeout: r = 0
                 }
             } = e;
-            return i ? t.storeWait(n, () => c.A.getChannel(i), a).catch(() => {
+            return i ? t.storeWait(n, () => c.A.getChannel(i), r).catch(() => {
                 throw new g.A({
                     errorCode: C.Lw6.SELECT_CHANNEL_TIMED_OUT
                 }, "Request to select text channel timed out.")
@@ -193,7 +193,7 @@ let T = {
         }
     },
     [C.e$_.CREATE_CHANNEL_INVITE]: {
-        scope: r.F.RPC,
+        scope: a.F.RPC,
         handler(e) {
             let {
                 args: {

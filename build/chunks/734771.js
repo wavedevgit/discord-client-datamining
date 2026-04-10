@@ -1,41 +1,42 @@
 /** chunk id: 734771 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => s
+    A: () => a
 });
 var i = n(627968);
 n(64700);
-var l = n(763754),
-    a = n(888675),
-    r = n(985018);
+var r = n(763754),
+    s = n(888675),
+    l = n(985018);
 
-function s(e) {
+function a(e) {
     let t, {
-            message: s,
-            usernameHook: o,
-            otherUser: c,
+            message: a,
+            usernameHook: c,
+            otherUser: o,
             otherUsernameHook: u,
             compact: d,
             channel: _
         } = e,
-        A = (0, l.Ay)(s),
-        m = A.nick,
-        E = o(A),
-        T = (0, l.d8)(c, _);
-    if (null != T && null != u) {
-        let e = u(T);
-        t = r.intl.format(r.t.L2FyVq, {
-            username: m,
-            usernameHook: E,
-            otherUsername: T.nick,
+        E = (0, r.Ay)(a),
+        A = E.nick,
+        m = c(E),
+        I = (0, r.d8)(o, _);
+    if (null != I && null != u) {
+        let e = u(I);
+        t = l.intl.format(l.t.L2FyVq, {
+            username: A,
+            usernameHook: m,
+            otherUsername: I.nick,
             otherUsernameHook: e
         })
-    } else t = r.intl.format(r.t["5v2xa8"], {
-        username: m,
-        usernameHook: E
+    } else t = l.intl.format(l.t["5v2xa8"], {
+        username: A,
+        usernameHook: m
     });
-    return (0, i.jsx)(a.A, {
+    return (0, i.jsx)(s.A, {
         icon: n(884797),
-        timestamp: s.timestamp,
+        timestamp: a.timestamp,
         compact: d,
         children: t
     })

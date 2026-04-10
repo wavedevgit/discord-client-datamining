@@ -1,58 +1,59 @@
 /** chunk id: 155052 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => v
 }), n(321073);
-var i = n(627968),
-    a = n(64700),
-    r = n(311907),
-    l = n(397927),
-    s = n(555528),
-    o = n(531685),
-    d = n(365971),
+var r = n(627968),
+    i = n(64700),
+    l = n(311907),
+    a = n(397927),
+    o = n(555528),
+    d = n(351906),
+    s = n(531685),
+    u = n(365971),
     c = n(243612),
-    u = n(582240),
-    _ = n(295102),
-    h = n(545807),
-    m = n(644434);
+    A = n(582240),
+    h = n(295102),
+    f = n(545807),
+    g = n(644434);
 
-function p(e) {
+function m(e) {
     return e.widget.id
 }
 
-function g(e, t, n, a) {
-    return n === l.wLy.YEETED ? null : (0, i.jsx)(u.A, {
+function y(e, t, n, i) {
+    return n === a.wLy.YEETED ? null : (0, r.jsx)(A.A, {
         ...t,
         transitionState: n,
-        cleanUp: a
+        cleanUp: i
     }, e)
 }
-let f = [],
-    A = a.memo(function(e) {
+let p = [],
+    v = i.memo(function(e) {
         let {
             className: t
-        } = e, n = (0, h.A)(), u = (0, r.bG)([o.A], () => o.A.windowSize((0, d.Q2)(n))), A = (0, r.bG)([s.A], () => {
-            let e = s.A.getLayout(m.G);
-            if (null == e) return f;
+        } = e, n = (0, f.A)(), A = (0, l.bG)([s.A], () => s.A.windowSize((0, u.Q2)(n))), v = (0, l.bG)([o.A, d.A], () => {
+            let e = o.A.getLayout(g.G);
+            if (null == e) return p;
             let t = [];
             for (let n of e.widgets) {
-                let e = s.A.getWidget(n);
+                let e = o.A.getWidget(n);
                 if (null == e) continue;
-                let i = _.A[e.type];
-                null != i && (null == i.predicate || i.predicate()) && t.push({
+                let r = h.A[e.type];
+                null != r && (null == r.predicate || r.predicate()) && (d.A.isOverlayWidgetDisabled(e.type) || t.push({
                     widget: e,
-                    ...i
-                })
+                    ...r
+                }))
             }
             return t
-        }, [], c.VC), I = a.useCallback(e => (0, i.jsx)("div", {
+        }, [], c.VC), _ = i.useCallback(e => (0, r.jsx)("div", {
             className: t,
-            style: u,
+            style: A,
             children: e
-        }), [t, u]);
-        return (0, i.jsx)(l.Fai, {
-            items: A,
-            renderItem: g,
-            getItemKey: p,
-            wrapChildren: I
+        }), [t, A]);
+        return (0, r.jsx)(a.Fai, {
+            items: v,
+            renderItem: y,
+            getItemKey: m,
+            wrapChildren: _
         })
     })

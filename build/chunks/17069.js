@@ -1,45 +1,46 @@
 /** chunk id: 17069 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => s
+    A: () => a
 });
 var i = n(627968);
 n(64700);
-var l = n(503698),
-    a = n.n(l),
-    r = n(662714);
+var r = n(503698),
+    s = n.n(r),
+    l = n(662714);
 
-function s(e) {
+function a(e) {
     let {
         thumbnails: t,
         variant: n = "gallery",
-        className: l
+        className: r
     } = e;
     if ("stacked" === n) {
         let e = Math.min(t.length, 2);
         return (0, i.jsx)("div", {
-            className: a()(r.qH, l, {
-                [r.qK]: 1 === e,
-                [r.xs]: 2 === e
+            className: s()(l.qH, r, {
+                [l.qK]: 1 === e,
+                [l.xs]: 2 === e
             }),
             children: t.slice(0, 2).map((e, t) => (0, i.jsx)("img", {
                 alt: "Clip preview",
-                className: r.M3,
+                className: l.M3,
                 src: e,
                 "data-index": t
             }, `${e}-${t}`))
         })
     }
-    let s = Math.min(t.length, 4);
+    let a = Math.min(t.length, 4);
     return (0, i.jsx)("div", {
-        className: a()(r.bF, l, {
-            [r.tK]: 1 === s,
-            [r.y0]: 2 === s,
-            [r.rm]: 3 === s,
-            [r.E1]: s >= 4
+        className: s()(l.bF, r, {
+            [l.tK]: 1 === a,
+            [l.y0]: 2 === a,
+            [l.rm]: 3 === a,
+            [l.E1]: a >= 4
         }),
         children: t.slice(0, 4).map((e, t) => (0, i.jsx)("img", {
             alt: "Clip preview",
-            className: r.N3,
+            className: l.N3,
             src: e,
             "data-index": t
         }, `${e}-${t}`)).reverse()

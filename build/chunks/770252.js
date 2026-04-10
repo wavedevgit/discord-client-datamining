@@ -1,18 +1,18 @@
 /** chunk id: 770252 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(985018),
-    a = n(465905);
+    r = n(465905);
 
-function r(e) {
+function a(e) {
     let {
         currentUser: t,
         disabled: n,
-        handleDisableAccount: r,
+        handleDisableAccount: a,
         handleDeleteAccount: o
     } = e, d = t.isClaimed();
     return (0, i.jsx)(s.D0$, {
@@ -20,13 +20,13 @@ function r(e) {
         description: d ? l.intl.string(l.t.TIh3Yj) : l.intl.string(l.t.czsGA8),
         children: (0, i.jsxs)(s.ButtonGroup, {
             size: "sm",
-            className: a.U,
+            className: r.U,
             children: [d ? (0, i.jsx)(s.Button, {
                 variant: "critical-primary",
                 size: "sm",
                 text: l.intl.string(l.t.jf5GGb),
                 disabled: n,
-                onClick: r
+                onClick: a
             }) : null, (0, i.jsx)(s.Button, {
                 variant: "critical-secondary",
                 size: "sm",

@@ -8,8 +8,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(503698),
-    s = n.n(l),
-    a = n(397927),
+    a = n.n(l),
+    s = n(397927),
     r = n(375901),
     o = n(652215),
     c = n(982692);
@@ -18,11 +18,11 @@ function d(e) {
     let {
         locked: t = !1,
         channelType: n
-    } = e, l = n === o.rbe.GUILD_VOICE || n === o.rbe.GUILD_STAGE_VOICE ? a.oyn : t ? a.I$d : a.N$i;
+    } = e, l = n === o.rbe.GUILD_VOICE || n === o.rbe.GUILD_STAGE_VOICE ? s.oyn : t ? s.I$d : s.N$i;
     return (0, i.jsx)("div", {
-        className: s()(c.qk, c.tP),
+        className: a()(c.qk, c.tP),
         children: (0, i.jsx)(l, {
-            color: a.LU0.colors.ICON_STRONG,
+            color: s.LU0.colors.ICON_STRONG,
             size: "custom",
             width: 42,
             height: 42
@@ -35,9 +35,9 @@ function u(e) {
         children: t,
         className: n
     } = e;
-    return (0, i.jsx)(a.Heading, {
+    return (0, i.jsx)(s.Heading, {
         "aria-hidden": "true",
-        className: s()(n, c.wx),
+        className: a()(n, c.wx),
         variant: "heading-xxl/extrabold",
         children: t
     })
@@ -48,10 +48,10 @@ function h(e) {
         children: t,
         className: n
     } = e;
-    return (0, i.jsx)(a.Text, {
+    return (0, i.jsx)(s.Text, {
         variant: "text-md/normal",
         color: "none",
-        className: s()(c.h_, n),
+        className: a()(c.h_, n),
         children: t
     })
 }
@@ -60,12 +60,12 @@ let m = function(e) {
         className: t,
         channelId: n,
         children: l,
-        ...a
+        ...s
     } = e;
     return (0, i.jsx)("div", {
-        className: s()(t, c.kL),
+        className: a()(t, c.kL),
         id: (0, r.j)(n, n),
-        ...a,
+        ...s,
         children: l
     })
 }

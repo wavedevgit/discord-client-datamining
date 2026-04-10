@@ -1,6 +1,6 @@
 /** chunk id: 345254 params = (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => o
 });
 var i = n(627968);
 n(64700);
@@ -8,12 +8,12 @@ var s = n(397927),
     l = n(954571),
     r = n(957565),
     a = n(652215),
-    o = n(985018);
+    c = n(985018);
 
-function c(e, t) {
+function o(e, t) {
     return r.p5 ? (0, i.jsx)(s.Drp, {
         id: "copy-link",
-        label: o.intl.string(o.t.Xrt5Po),
+        label: c.intl.string(c.t.Xrt5Po),
         leadingAccessory: {
             type: "icon",
             icon: s.qYV

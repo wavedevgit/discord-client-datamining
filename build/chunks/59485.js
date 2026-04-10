@@ -5,17 +5,17 @@ n.d(t, {
 var i = n(574381),
     s = n(311907),
     l = n(55619),
-    a = n(419954),
-    r = n(351906),
+    r = n(419954),
+    a = n(351906),
     o = n(780964),
     d = n(985018);
-let c = (0, a.zD)(o.X.STREAMING_AUTO_STREAMER_MODE, {
+let c = (0, r.zD)(o.X.STREAMING_AUTO_STREAMER_MODE, {
     useTitle: () => d.intl.string(d.t.IxjaoF),
     useValue: function() {
-        return (0, s.bG)([r.A], () => {
+        return (0, s.bG)([a.A], () => {
             let {
                 autoToggle: e
-            } = r.A.getSettings();
+            } = a.A.getSettings();
             return e
         })
     },

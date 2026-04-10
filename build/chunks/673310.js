@@ -1,10 +1,10 @@
 /** chunk id: 673310 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => _
 });
 var i = n(627968),
-    a = n(64700),
-    r = n(397927),
+    r = n(64700),
+    a = n(397927),
     l = n(698441),
     s = n(976860),
     o = n(378570),
@@ -12,12 +12,12 @@ var i = n(627968),
     c = n(665583),
     u = n(244625),
     A = n(652215),
-    _ = n(479873);
+    h = n(479873);
 
-function h(e) {
+function _(e) {
     let {
         item: t
-    } = e, n = a.useCallback(e => {
+    } = e, n = r.useCallback(e => {
         if (null == e.target.closest('img, video, audio, [class*="imageWrapper"], [class*="embedWrapper"], [class*="attachment"], [class*="mediaPlayer"]')) switch (t.data.kind) {
             case "message":
                 (0, o.ci)(t.data.message.channel_id, t.data.message.id);
@@ -36,13 +36,13 @@ function h(e) {
                 })
         }
     }, [t]);
-    return (0, i.jsxs)(r.DUT, {
-        className: _.k,
+    return (0, i.jsxs)(a.DUT, {
+        className: h.k,
         onClick: n,
         children: [(0, i.jsx)(u.A, {
             item: t
         }), (0, i.jsx)("div", {
-            className: _.o,
+            className: h.o,
             children: (0, i.jsx)(c.A, {
                 item: t
             })

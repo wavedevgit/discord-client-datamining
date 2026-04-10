@@ -1,32 +1,32 @@
 /** chunk id: 761661 params = (module,exports,require) **/
 n.d(t, {
-    CZ: () => u,
-    Qp: () => c,
-    XG: () => _,
-    dh: () => d,
+    CZ: () => c,
+    Qp: () => d,
+    XG: () => h,
+    dh: () => u,
     f4: () => o
 });
 var i = n(812729),
-    a = n.n(i),
+    l = n.n(i),
     r = n(839214),
-    l = n(652896);
-let s = (0, r.D)(() => ({
+    s = n(652896);
+let a = (0, r.D)(() => ({
     streams: {}
 }));
 
 function o(e) {
-    let t = (0, l._z)(e),
-        n = s.useState(e => e.streams, a());
+    let t = (0, s._z)(e),
+        n = a.useState(e => e.streams, l());
     return n[t]?.zoom ?? 100
 }
 
-function d(e) {
+function u(e) {
     return o(e) / 100
 }
 
-function c(e, t) {
-    let n = (0, l._z)(e);
-    s.setState(e => ({
+function d(e, t) {
+    let n = (0, s._z)(e);
+    a.setState(e => ({
         ...e,
         streams: {
             ...e.streams,
@@ -38,9 +38,9 @@ function c(e, t) {
     }), !0)
 }
 
-function u(e, t) {
-    let n = (0, l._z)(e);
-    s.setState(e => ({
+function c(e, t) {
+    let n = (0, s._z)(e);
+    a.setState(e => ({
         ...e,
         streams: {
             ...e.streams,
@@ -52,8 +52,8 @@ function u(e, t) {
     }))
 }
 
-function _(e) {
-    let t = (0, l._z)(e),
-        n = s.useState(e => e.streams, a());
+function h(e) {
+    let t = (0, s._z)(e),
+        n = a.useState(e => e.streams, l());
     return n[t]?.fitOverride
 }

@@ -8,8 +8,8 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(397927),
-    a = n(964486),
-    r = n(793574),
+    r = n(964486),
+    a = n(793574),
     o = n(688810),
     d = n(526162),
     c = n(848971),
@@ -39,8 +39,8 @@ function f() {
 let S = () => {
     let {
         analyticsLocations: e
-    } = (0, o.Ay)(r.A.USER_SETTINGS), t = (0, s.bG)([d.A], () => d.A.isUpsellPreview);
-    return (0, a.Ay)(() => {
+    } = (0, o.Ay)(a.A.USER_SETTINGS), t = (0, s.bG)([d.A], () => d.A.isUpsellPreview);
+    return (0, r.Ay)(() => {
         t && g.default.track(x.HAw.PREMIUM_UPSELL_VIEWED, {
             type: A.e.APP_ICON_UPSELL,
             location_stack: e

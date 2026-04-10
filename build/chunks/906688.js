@@ -1,88 +1,88 @@
 /** chunk id: 906688 params = (module,exports,require) **/
-n.d(t, {
-    A: () => _
+n.d(e, {
+    A: () => C
 });
 var i = n(627968);
 n(64700);
-var a = n(827734),
-    r = n(582754),
+var r = n(827734),
+    s = n(582754),
     l = n(397927),
-    s = n(736653),
+    a = n(736653),
     o = n(682174),
-    d = n(927018),
-    c = n(579157);
-let u = {
-        trophy: a.A.unsafe_rawColors.PRIMARY_400.css,
-        locked: a.A.unsafe_rawColors.PRIMARY_400.css,
-        unlocked: a.A.unsafe_rawColors.GREEN_330.css
+    c = n(927018),
+    d = n(579157);
+let h = {
+        trophy: r.A.unsafe_rawColors.PRIMARY_400.css,
+        locked: r.A.unsafe_rawColors.PRIMARY_400.css,
+        unlocked: r.A.unsafe_rawColors.GREEN_330.css
     },
-    A = {
-        trophy: a.A.unsafe_rawColors.PRIMARY_400.css,
-        locked: a.A.unsafe_rawColors.PRIMARY_400.css,
-        unlocked: a.A.unsafe_rawColors.GREEN_330.css
+    u = {
+        trophy: r.A.unsafe_rawColors.PRIMARY_400.css,
+        locked: r.A.unsafe_rawColors.PRIMARY_400.css,
+        unlocked: r.A.unsafe_rawColors.GREEN_330.css
     };
 
-function _(e) {
+function C(t) {
     let {
-        achievementId: t,
+        achievementId: e,
         unlocked: n,
-        size: a = l._3J.SIZE_40
-    } = e, _ = (0, s.Ay)(), h = (0, d.vM)(t);
-    if (null == h) return null;
-    let m = (0, l.KjH)(a),
+        size: r = l._3J.SIZE_40
+    } = t, C = (0, a.Ay)(), _ = (0, c.vM)(e);
+    if (null == _) return null;
+    let A = (0, l.KjH)(r),
         {
-            name: g,
-            rarity: p
-        } = h,
+            name: E,
+            rarity: g
+        } = _,
         {
-            color: E
-        } = (0, d.ag)(p),
-        I = (0, r.Mw)(_) ? u : A,
-        f = (m.size - m.offset - 2 * m.stroke) * .8,
-        C = m.size - m.stroke,
-        T = {
-            width: .4 * f,
-            height: .4 * f
+            color: T
+        } = (0, c.ag)(g),
+        L = (0, s.Mw)(C) ? h : u,
+        O = (A.size - A.offset - 2 * A.stroke) * .8,
+        S = A.size - A.stroke,
+        p = {
+            width: .4 * O,
+            height: .4 * O
         },
-        N = {
-            width: T.width + 1,
-            height: T.height + 1,
-            right: m.stroke + 1,
-            bottom: m.stroke + 1,
+        I = {
+            width: p.width + 1,
+            height: p.height + 1,
+            right: A.stroke + 1,
+            bottom: A.stroke + 1,
             padding: 0
         };
     return (0, i.jsxs)("div", {
-        className: c.kL,
+        className: d.kL,
         style: {
-            width: C,
-            height: C,
-            padding: m.stroke
+            width: S,
+            height: S,
+            padding: A.stroke
         },
-        "aria-label": `${g()??""}`,
+        "aria-label": `${E()??""}`,
         children: [(0, i.jsx)("div", {
-            className: c.r5,
+            className: d.r5,
             children: (0, i.jsx)(l.OR, {
                 size: "custom",
-                color: n ? E : I.trophy,
-                width: f,
-                height: f
+                color: n ? T : L.trophy,
+                width: O,
+                height: O
             })
         }), !n && (0, i.jsx)("div", {
-            className: c.dq,
-            style: N,
+            className: d.dq,
+            style: I,
             children: (0, i.jsx)(l.XAi, {
                 size: "custom",
-                color: I.locked,
-                ...T
+                color: L.locked,
+                ...p
             })
-        }), n && p === d.md.LEGENDARY && (0, i.jsx)("div", {
-            className: c.dq,
-            style: N,
+        }), n && g === c.md.LEGENDARY && (0, i.jsx)("div", {
+            className: d.dq,
+            style: I,
             children: (0, i.jsx)(o.A, {
-                className: c.ox,
-                ...T
+                className: d.ox,
+                ...p
             })
         })]
     })
 }
-_.Sizes = l._3J
+C.Sizes = l._3J
