@@ -16,13 +16,13 @@ let m = e => {
         skuId: t,
         canUsePremiumCollectibles: n,
         isPurchaseSection: m,
-        isPremiumSection: f
-    } = e, p = (0, o.aT)(t), x = (0, i.bG)([a.A, c.A], () => {
+        isPremiumSection: p
+    } = e, f = (0, o.aT)(t), x = (0, i.bG)([a.A, c.A], () => {
         let e = a.A.getProduct(t),
             n = c.A.getPurchase(t);
         return null != n ? (0, o.gA)(n) : (0, o.G0)(e)
     });
-    return m || f && n ? null : p ? (0, r.jsx)(l.JIr, {
+    return m || p && n ? null : f ? (0, r.jsx)(l.JIr, {
         className: u.Ad,
         text: (0, r.jsxs)("div", {
             className: u.rm,

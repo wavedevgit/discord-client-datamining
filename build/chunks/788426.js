@@ -11,9 +11,9 @@ var r = n(627968),
     o = n(203632),
     d = n(181774),
     u = n(483968),
-    m = n(496867),
-    f = n(369742),
-    p = n(985018),
+    m = n(942426),
+    p = n(369742),
+    f = n(985018),
     x = n(832765),
     g = n(423393);
 let A = () => 80,
@@ -36,19 +36,19 @@ let A = () => 80,
     },
     _ = e => {
         let {
-            profileEffect: t,
+            skuId: t,
             innerRef: n,
             section: s,
             isSelected: l,
             canUsePremiumCollectibles: a,
             ...c
-        } = e, o = (0, m.V)(t.skuId), p = i.useRef(null), {
+        } = e, o = (0, m.A)(t), f = i.useRef(null), {
             accessibilityLabel: A,
             thumbnailPreviewSrc: _,
             title: E
-        } = o?.config ?? {}, C = i.useMemo(() => (0, d.Rc)(_), [_]);
+        } = o ?? {}, C = i.useMemo(() => (0, d.Rc)(_), [_]);
         return (0, r.jsxs)(h, {
-            innerRef: n ?? p,
+            innerRef: n ?? f,
             isSelected: l,
             ...c,
             children: [(0, r.jsx)("img", {
@@ -60,10 +60,10 @@ let A = () => 80,
                 src: C,
                 alt: E
             }), (0, r.jsx)(u.A, {
-                skuId: t.skuId,
+                skuId: t,
                 canUsePremiumCollectibles: a,
-                isPurchaseSection: s === f.wn.PURCHASE,
-                isPremiumSection: s === f.wn.PREMIUM_PURCHASE
+                isPurchaseSection: s === p.wn.PURCHASE,
+                isPremiumSection: s === p.wn.PREMIUM_PURCHASE
             })]
         })
     },
@@ -75,7 +75,7 @@ let A = () => 80,
             selectedProfileEffectRef: s,
             onSelect: l,
             onOpenShop: d
-        } = e, u = (0, f.Ay)(), m = null != i, g = c.Ay.canUseCollectibles(t);
+        } = e, u = (0, p.Ay)(), m = null != i, g = c.Ay.canUseCollectibles(t);
         return (0, r.jsx)("section", {
             className: x.uW,
             children: (0, r.jsx)(a.a0_, {
@@ -97,7 +97,7 @@ let A = () => 80,
                         section: E,
                         items: C
                     } = u[e], j = C[t];
-                    if (j === f.dP) return (0, r.jsxs)(h, {
+                    if (j === p.dP) return (0, r.jsxs)(h, {
                         style: {
                             ...c
                         },
@@ -110,10 +110,10 @@ let A = () => 80,
                         }), (0, r.jsx)(a.Text, {
                             variant: "text-xs/normal",
                             color: "text-strong",
-                            children: null != n ? p.intl.string(p.t.CHf9iJ) : p.intl.string(p.t.PoWNfe)
+                            children: null != n ? f.intl.string(f.t.CHf9iJ) : f.intl.string(f.t.PoWNfe)
                         })]
                     }, A);
-                    if (j === f.ZK) return (0, r.jsxs)(h, {
+                    if (j === p.ZK) return (0, r.jsxs)(h, {
                         style: c,
                         onSelect: d,
                         children: [(0, r.jsx)(a.U1X, {
@@ -125,17 +125,17 @@ let A = () => 80,
                         }), (0, r.jsx)(a.Text, {
                             variant: "text-xs/normal",
                             color: "text-strong",
-                            children: p.intl.string(p.t.pWG4ze)
+                            children: f.intl.string(f.t.pWG4ze)
                         })]
                     }, A);
-                    if ((0, o.C)(j)) {
+                    if ((0, o.C3)(j)) {
                         let e = i?.skuId === j.skuId;
                         return (0, r.jsx)(_, {
                             style: {
                                 ...c
                             },
                             section: E,
-                            profileEffect: j,
+                            skuId: j.skuId,
                             innerRef: e ? s : void 0,
                             isSelected: e,
                             onSelect: () => l(j),

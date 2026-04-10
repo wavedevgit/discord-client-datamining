@@ -9,8 +9,8 @@ var a = n(627968),
     r = n(351966);
 let o = e => {
     let {
-        config: t
-    } = e, n = i.useMemo(() => (0, s.cloneDeep)(t), [t]), o = i.useMemo(() => t.effects.some(e => null != e.randomizedSources && e.randomizedSources.length > 0), [t]), d = i.useMemo(() => {
+        profileEffect: t
+    } = e, n = i.useMemo(() => (0, s.cloneDeep)(t), [t]), o = i.useMemo(() => t.effects.some(e => null != e.randomizedSources && e.randomizedSources.length > 0), [t.effects]), d = i.useMemo(() => {
         if (o) {
             var e;
             let a = 1 === (e = n.effects.reduce((e, t) => {
@@ -29,7 +29,7 @@ let o = e => {
         layers: d.effects
     });
     return (0, a.jsx)(r.p, {
-        profileEffectConfig: d,
+        profileEffect: d,
         layerData: c,
         skuId: "debug"
     })

@@ -26,7 +26,7 @@ let c = e => {
     u = e => {
         if (0 === e.items.length) return null;
         let t = e.items[0];
-        return (0, l.C)(t) ? t.thumbnailPreviewSrc : null
+        return (0, l.C3)(t) ? t.thumbnailPreviewSrc : null
     },
     m = e => {
         if (null == e) return !1;

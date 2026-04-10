@@ -155,7 +155,7 @@ function S(e) {
                     });
                     if (null == n) {
                         let t = e[i];
-                        null !== t && null == t.connectionMetadataField && null == t.operator && null == t.value ? s = s.filter(e => null == t.applicationId ? e.connectionType !== t.connectionType : e.connectionType !== t.connectionType && e.applicationId !== t.applicationId) : s.splice(i, 1)
+                        null !== t && null == t.connectionMetadataField && null == t.operator && null == t.value ? s = s.filter(e => null == t.applicationId ? e.connectionType !== t.connectionType : e.connectionType !== t.connectionType || e.applicationId !== t.applicationId) : s.splice(i, 1)
                     } else - 1 === i ? s.push(n) : i >= 0 && (s[i] = n);
                     t(s)
                 }

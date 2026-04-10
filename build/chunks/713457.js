@@ -428,7 +428,7 @@ function F(e) {
         },
         size: "sm",
         "data-migration-pending": !0
-    }) : eh.enabled && (ex === k.UA.ENROLLED || ex === k.UA.INCOMPLETE) && eh.enabledQuestStates.has(ex) ? (0, E.t)({
+    }) : eh.enabled && (ex === k.UA.ENROLLED || ex === k.UA.INCOMPLETE) && eh.enabledQuestStates.has(ex) ? eT && (0, E.t)({
         quest: t
     }) && !(0, E.g5)(t) ? (0, a.jsx)("div", {
         className: D.x6,

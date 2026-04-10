@@ -12,8 +12,8 @@ var r = n(627968),
     d = n(725807),
     u = n(919395),
     m = n(84540),
-    f = n(287809),
-    p = n(954571),
+    p = n(287809),
+    f = n(954571),
     x = n(927578),
     g = n(979286),
     A = n(993408),
@@ -36,28 +36,28 @@ function v(e) {
         onOpenShop: c,
         disableApplyButton: u,
         canUsePremiumCollectibles: m,
-        selectedProfileEffect: f
-    } = e, p = null != i ? (0, A.gA)(i) : (0, A.G0)(n);
+        selectedProfileEffect: p
+    } = e, f = null != i ? (0, A.gA)(i) : (0, A.G0)(n);
     return (0, r.jsx)(r.Fragment, {
         children: (0, r.jsxs)(l.jlY, {
             "data-migration-pending": !0,
             className: P.Hx,
-            children: [null != i && (m || !p) || null === f ? (0, r.jsx)(l.Button, {
+            children: [null != i && (m || !f) || null === p ? (0, r.jsx)(l.Button, {
                 variant: "primary",
                 text: I.intl.string(I.t.Jh8fJz),
                 onClick: s,
                 disabled: u
-            }) : null == i && (m || !p) ? (0, r.jsx)(l.Button, {
+            }) : null == i && (m || !f) ? (0, r.jsx)(l.Button, {
                 variant: "primary",
                 text: I.intl.string(I.t.fYfGgK),
-                onClick: () => c(f?.skuId)
+                onClick: () => c(p?.skuId)
             }) : (0, r.jsx)(d.A, {
                 subscriptionTier: y.pe.TIER_2,
                 showGradient: !m,
                 textOptions: {
                     textOverride: x.Ay.isPremium(t) ? I.intl.string(I.t.KXLX7l) : m ? I.intl.string(I.t.mr4K7D) : I.intl.string(I.t.pj0XBN)
                 }
-            }), !m && p ? (0, r.jsx)(o.A, {
+            }), !m && f ? (0, r.jsx)(o.A, {
                 itemType: i?.type ?? n?.type,
                 onClose: a
             }) : (0, r.jsx)(l.Button, {
@@ -77,8 +77,8 @@ function T(e) {
         purchases: c,
         initialSelectedProfileEffect: o,
         currentSavedEffect: d,
-        analyticsLocations: f,
-        onClose: p
+        analyticsLocations: p,
+        onClose: f
     } = e, {
         pendingProfileEffect: _
     } = (0, u.nZ)(n?.id), [j, y] = i.useMemo(() => {
@@ -100,12 +100,12 @@ function T(e) {
     } = (0, h.A)(N?.skuId), O = i.useRef(null), R = x.Ay.canUseCollectibles(t), L = void 0 === _ ? T?.skuId === d?.skuId : T?.skuId === _?.skuId, U = i.useCallback(e => {
         b(e)
     }, [b]), M = i.useCallback(e => {
-        p(), (0, g.Cz)({
-            analyticsLocations: f,
+        f(), (0, g.Cz)({
+            analyticsLocations: p,
             analyticsSource: a.A.EDIT_PROFILE_EFFECT_MODAL,
             initialProductSkuId: e
         })
-    }, [f, p]);
+    }, [p, f]);
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)(l.rQ0, {
             "data-migration-pending": !0,
@@ -117,7 +117,7 @@ function T(e) {
             }), (0, r.jsx)(l.s_y, {
                 "data-migration-pending": !0,
                 className: P.iT,
-                onClick: p
+                onClick: f
             })]
         }), (0, r.jsxs)(l.$mQ, {
             "data-migration-pending": !0,
@@ -142,9 +142,9 @@ function T(e) {
                 (0, m.p)({
                     guildId: n?.id,
                     profileEffect: T ?? null
-                }), p()
+                }), f()
             },
-            onClose: p,
+            onClose: f,
             onOpenShop: M,
             product: S,
             purchase: k,
@@ -166,14 +166,14 @@ function b(e) {
         isFetching: x,
         categories: g,
         purchases: A
-    } = (0, _.Ay)(), h = (0, s.bG)([f.default], () => f.default.getCurrentUser()), {
+    } = (0, _.Ay)(), h = (0, s.bG)([p.default], () => p.default.getCurrentUser()), {
         analyticsLocations: E
     } = (0, c.Ay)(n, a.A.EDIT_PROFILE_EFFECT_MODAL), C = (0, u.N2)({
         user: h,
         guildId: d?.id
     });
     return i.useEffect(() => {
-        p.default.track(j.HAw.OPEN_MODAL, {
+        f.default.track(j.HAw.OPEN_MODAL, {
             type: j.JJy.PROFILE_EFFECT_CUSTOMIZATION,
             location_stack: E
         })

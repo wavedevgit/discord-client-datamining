@@ -13,8 +13,8 @@ var i = n(735438),
     d = n(101058),
     u = n(84540),
     m = n(836602),
-    f = n(950191),
-    p = n(814390),
+    p = n(950191),
+    f = n(814390),
     x = n(773669),
     g = n(780207),
     A = n(287809),
@@ -30,7 +30,7 @@ let P = e => {
             pendingProfileEffectRecord: t,
             product: n,
             purchase: a
-        } = e, o = (0, s.bG)([A.default], () => A.default.getCurrentUser()), d = (0, s.bG)([E.A], () => E.A.getProduct(t?.skuId)), u = (0, s.bG)([x.default], () => x.default.locale), m = _.Ay.canUseCollectibles(o), f = (0, C.gA)(a), p = (0, C.G0)(n), g = !m && f, P = a?.expiresAt != null ? (0, h.Tf)(Date.now(), a.expiresAt) : null, T = (0, j.Sw)(a), b = (0, j.VG)(d), N = (0, c.b)(!p || m), S = v(g, p, m, N), k = null == a || g;
+        } = e, o = (0, s.bG)([A.default], () => A.default.getCurrentUser()), d = (0, s.bG)([E.A], () => E.A.getProduct(t?.skuId)), u = (0, s.bG)([x.default], () => x.default.locale), m = _.Ay.canUseCollectibles(o), p = (0, C.gA)(a), f = (0, C.G0)(n), g = !m && p, P = a?.expiresAt != null ? (0, h.Tf)(Date.now(), a.expiresAt) : null, T = (0, j.Sw)(a), b = (0, j.VG)(d), N = (0, c.b)(!f || m), S = v(g, f, m, N), k = null == a || g;
         return null != t ? (0, r.jsx)("div", {
             className: k ? I.Mf : I.zf,
             children: (0, r.jsxs)("div", {
@@ -69,7 +69,7 @@ let P = e => {
                                 })
                             })]
                         })]
-                    }), f && (0, r.jsx)(l.Text, {
+                    }), p && (0, r.jsx)(l.Text, {
                         variant: "text-xxs/normal",
                         color: "text-muted",
                         children: y.intl.string(y.t.nKdAlO)
@@ -96,13 +96,13 @@ let P = e => {
             pendingAvatarDecoration: y,
             pendingThemeColors: v,
             pendingAccentColor: T
-        } = (0, s.cf)([m.A], () => m.A.getPendingChanges(c?.id)), b = _.Ay.isPremium(t), N = _.Ay.canUsePremiumProfileCustomization(t), S = (0, f.Ay)(t.id), k = !!S?.getPreviewBio(E), O = {
+        } = (0, s.cf)([m.A], () => m.A.getPendingChanges(c?.id)), b = _.Ay.isPremium(t), N = _.Ay.canUsePremiumProfileCustomization(t), S = (0, p.Ay)(t.id), k = !!S?.getPreviewBio(E), O = {
             user: t,
             guild: c,
             pendingGlobalName: x,
             pendingNickname: A,
             pendingPronouns: h,
-            pendingBio: (0, p.A)() && null != E ? a.Ay.parse(void 0, E).content : E,
+            pendingBio: (0, f.A)() && null != E ? a.Ay.parse(void 0, E).content : E,
             pendingBanner: C,
             useLargeBanner: !0,
             pendingAvatar: (0, d.V7)({

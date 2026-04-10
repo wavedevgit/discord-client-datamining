@@ -20,20 +20,18 @@ var a = n(627968),
 let v = "Make sure you're only uploading text files!",
     _ = e => {
         let {
-            effect: t,
+            profileEffect: t,
             onClick: n
         } = e, {
-            deleteConfig: i
+            deleteProfileEffect: i
         } = (0, x.wu)();
         return (0, a.jsxs)(o.DUT, {
             className: f.B0,
-            onClick: () => {
-                n(t)
-            },
+            onClick: n,
             children: [(0, a.jsx)("div", {
                 className: f.yV,
                 style: {
-                    backgroundImage: `url(${t.config?.effects?.[0]?.base64})`
+                    backgroundImage: `url(${t.effects?.[0]?.base64})`
                 }
             }), (0, a.jsxs)("div", {
                 className: f.eL,
@@ -54,7 +52,7 @@ let v = "Make sure you're only uploading text files!",
 function b() {
     let {
         profileEffects: e,
-        upsertConfig: t,
+        upsertProfileEffect: t,
         clearAll: n
     } = (0, x.wu)(), [s, b] = i.useState(), j = i.useRef(null), {
         categories: A
@@ -97,10 +95,8 @@ function b() {
                 }), (0, a.jsx)("div", {
                     className: f.Iv,
                     children: Object.values(e).map(e => (0, a.jsx)(_, {
-                        effect: e,
-                        onClick: e => {
-                            b(e)
-                        }
+                        profileEffect: e,
+                        onClick: () => b(e)
                     }, e.skuId))
                 })]
             }), (0, a.jsxs)("div", {
@@ -123,9 +119,7 @@ function b() {
                         t({
                             skuId: (0, r.A)(),
                             name: "New Profile Effect",
-                            config: {
-                                effects: []
-                            }
+                            effects: []
                         })
                     }
                 })]
@@ -167,11 +161,9 @@ function b() {
                             b({
                                 skuId: e.skuId,
                                 name: e.title,
-                                readonly: !0,
-                                config: {
-                                    effects: e.effects,
-                                    stillFrames: t
-                                }
+                                effects: e.effects,
+                                stillFrames: t,
+                                readonly: !0
                             })
                         },
                         children: (0, a.jsx)("div", {
@@ -186,7 +178,7 @@ function b() {
                 })]
             })]
         }), null != s && (0, a.jsx)(g.A, {
-            effect: s
+            profileEffect: s
         })]
     })
 }
