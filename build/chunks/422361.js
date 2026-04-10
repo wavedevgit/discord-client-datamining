@@ -220,12 +220,13 @@ class el extends z.Ay {
         let {
             channel: e,
             connected: t,
-            voiceStates: n
+            voiceStates: n,
+            collapsed: l
         } = this.props;
-        return null != n && n.length > 0 ? (0, i.jsx)(O.A, {
+        return !(null != n && n.length > 0) || l ? null : (0, i.jsx)(O.A, {
             channel: e,
             isConnected: t
-        }) : null
+        })
     }
     renderPopout = () => {
         let {

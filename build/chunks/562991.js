@@ -33,7 +33,7 @@ function E(e) {
     } = (0, h.Dm)({
         guildId: t.guild_id,
         location: "VoiceChannelStatus"
-    }), S = T && (0, A.TP)(N), b = null != N && N.length > 0 && !S, v = (0, c.Ay)(t, !0), y = null != E && E.length > 0;
+    }), S = T && (0, A.lr)(t), b = null != N && N.length > 0, v = (0, c.Ay)(t, !0), y = null != E && E.length > 0;
     if (l.useEffect(() => {
             b && m.default.track(g.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
                 channel_id: t.id,
