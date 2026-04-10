@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(267102),
     _ = n(342296),
     m = n(636585),
-    g = n(486020),
-    p = n(840585);
+    p = n(486020),
+    g = n(840585);
 
 function f(e) {
     let {
@@ -29,7 +29,7 @@ function f(e) {
         reducedMotion: I
     } = l.useContext(o.CZY), C = (0, c.A)({
         userId: s.id
-    }), N = null != s.member ? (0, g.xT)(s.member) : null, T = e => {
+    }), N = null != s.member ? (0, p.xT)(s.member) : null, T = e => {
         (0, d.L3)(e, async () => {
             let {
                 default: e
@@ -68,7 +68,7 @@ function f(e) {
                 children: (0, i.jsx)(o.euF, {
                     src: N ?? s.user.getAvatarURL(t.guild_id, 24),
                     size: o._3J.SIZE_24,
-                    className: a()(p.my, m),
+                    className: a()(g.my, m),
                     "aria-label": s.userNick,
                     isSpeaking: C && !I.enabled
                 })
@@ -83,7 +83,7 @@ function x(e) {
         channel: n
     } = e;
     return (0, i.jsx)(m.A, {
-        className: p.z,
+        className: g.z,
         guildId: n.guild_id,
         users: t,
         max: 10,
@@ -93,7 +93,7 @@ function x(e) {
             className: t
         }, l),
         renderMoreUsers: (e, t, n) => (0, i.jsx)("div", {
-            className: a()(p.$U, t),
+            className: a()(g.$U, t),
             children: e
         }, n)
     })

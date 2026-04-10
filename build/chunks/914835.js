@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(967144),
     g = n(342296),
     p = n(696451),
-    _ = n(287809),
-    f = n(427262),
+    f = n(287809),
+    _ = n(427262),
     E = n(314307),
     x = n(652215),
     C = n(985018),
@@ -29,7 +29,7 @@ function I(e) {
         channel: s
     } = e, h = l.useRef(null), {
         analyticsLocations: m
-    } = (0, u.Ay)(d.A.USERNAME), E = (0, r.bG)([_.default], () => _.default.getUser(t)), x = (0, r.bG)([p.Ay], () => null != t ? p.Ay.getMember(s.guild_id, t) : null), C = (0, A.gn)(s.guild_id, t ?? void 0, x?.colorStrings ?? null);
+    } = (0, u.Ay)(d.A.USERNAME), E = (0, r.bG)([f.default], () => f.default.getUser(t)), x = (0, r.bG)([p.Ay], () => null != t ? p.Ay.getMember(s.guild_id, t) : null), C = (0, A.gn)(s.guild_id, t ?? void 0, x?.colorStrings ?? null);
 
     function I(e) {
         if (null == E) return null;
@@ -45,7 +45,7 @@ function I(e) {
             })
         })
     }
-    let T = x?.nick ?? f.Ay.getName(E) ?? "???",
+    let T = x?.nick ?? _.Ay.getName(E) ?? "???",
         N = x?.colorString;
     return null == E ? (0, i.jsx)("span", {
         className: a()(S.eM, S.sL),

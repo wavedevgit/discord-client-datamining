@@ -18,16 +18,16 @@ var o = n(288104),
     A = n(576705),
     _ = n(993838),
     m = n(233993),
-    g = n(446600),
-    p = n(418208);
+    p = n(446600),
+    g = n(418208);
 n(806931);
 var f = n(985018);
 
 function x(e) {
     let t = (0, a.bG)([h.A], () => h.A.getChannel(e), [e]),
         n = (0, a.bG)([A.A], () => A.A.can(m.QY, t)),
-        l = (0, p.zU)(),
-        s = (0, a.bG)([g.A], () => g.A.getStageInstanceByChannel(e), [e]),
+        l = (0, g.zU)(),
+        s = (0, a.bG)([p.A], () => p.A.getStageInstanceByChannel(e), [e]),
         o = (0, c.Us)();
     return t?.isGuildStageVoice() && n && !l ? null != s ? (0, i.jsx)(r.Drp, {
         id: "edit-stage",

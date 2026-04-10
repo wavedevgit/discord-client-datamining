@@ -1,11 +1,11 @@
 /** chunk id: 546145 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => i
 });
-var l = n(287809),
-    a = n(622543);
+var a = n(287809),
+    l = n(622543);
 
-function r(e) {
-    let t = l.default.getCurrentUser();
-    return null == t ? null : null != e ? a.A.getGuildMemberProfile(t.id, e) : a.A.getUserProfile(t.id)
+function i(e) {
+    let t = a.default.getCurrentUser();
+    return null == t ? null : null != e ? l.A.getGuildMemberProfile(t.id, e) : l.A.getUserProfile(t.id)
 }

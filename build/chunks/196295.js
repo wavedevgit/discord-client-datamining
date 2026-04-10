@@ -19,11 +19,11 @@ var i = n(627968),
     f = n(458904);
 let A = [];
 
-function x(e) {
+function I(e) {
     return e.notification.id
 }
 
-function I(e, t, n, a) {
+function x(e, t, n, a) {
     let {
         index: r,
         notification: l,
@@ -70,8 +70,8 @@ let b = a.memo(function(e) {
         value: b,
         children: (0, i.jsx)(l.Fai, {
             items: f,
-            renderItem: I,
-            getItemKey: x,
+            renderItem: x,
+            getItemKey: I,
             wrapChildren: E
         })
     }) : u ? t ? null : (0, i.jsx)(s.g, {

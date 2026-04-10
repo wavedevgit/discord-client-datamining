@@ -1,6 +1,6 @@
 /** chunk id: 40056 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => _,
+    Ay: () => f,
     e9: () => A,
     qd: () => m
 });
@@ -61,7 +61,7 @@ let m = {
             minZoom: n = 1,
             maxZoom: o = 5,
             children: c
-        } = e, [d, u] = l.useState(n), [h, p] = l.useState(!1), [_, f] = l.useState(!1), [E, x] = l.useState(!1), [C, S] = l.useState(!1), [I, T] = l.useState(16 / 9), [N, v] = l.useState({
+        } = e, [d, u] = l.useState(n), [h, p] = l.useState(!1), [f, _] = l.useState(!1), [E, x] = l.useState(!1), [C, S] = l.useState(!1), [I, T] = l.useState(16 / 9), [N, v] = l.useState({
             x: 0,
             y: 0
         }), y = l.useRef(null), b = l.useRef(null);
@@ -100,8 +100,8 @@ let m = {
                 setZoomLevel: u,
                 isZooming: h,
                 setIsZooming: p,
-                isDragging: _,
-                setIsDragging: f,
+                isDragging: f,
+                setIsDragging: _,
                 isWheeling: E,
                 setIsWheeling: x,
                 isSlidering: C,
@@ -113,14 +113,14 @@ let m = {
                 setPanOffset: v,
                 wrapperRef: y,
                 clampPanOffset: j
-            }), [j, R, _, C, E, h, o, n, N, I, d]);
+            }), [j, R, f, C, E, h, o, n, N, I, d]);
         return (0, i.jsx)(A.Provider, {
             value: M,
             children: c
         })
     });
 
-function _(e) {
+function f(e) {
     return e.enableZoom ? (0, i.jsx)(p, {
         ...e
     }) : e.children

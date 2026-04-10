@@ -28,8 +28,8 @@ var i = n(627968),
     I = n(905552),
     N = n(22705),
     T = n(994314),
-    O = n(63995),
-    b = n(69407),
+    b = n(63995),
+    O = n(69407),
     j = n(520006),
     D = n(352018),
     R = n(481947),
@@ -76,8 +76,8 @@ function q(e) {
         mute: I,
         selfMute: N,
         suppress: T,
-        deaf: O,
-        selfDeaf: b
+        deaf: b,
+        selfDeaf: O
     } = _;
     return (0, i.jsx)(R.Ay, {
         guildId: f,
@@ -102,8 +102,8 @@ function q(e) {
         mute: I || N || m,
         localMute: m,
         serverMute: I || T,
-        deaf: O || b,
-        serverDeaf: O,
+        deaf: b || O,
+        serverDeaf: b,
         userNameClassName: a()(Q.Xh, {
             [Q.xt]: n,
             [Q.R]: n && (d === Z.pwA.NEVER || !y && d === Z.pwA.ONLY_WHILE_SPEAKING)
@@ -392,11 +392,11 @@ function ee(e) {
     let t = (0, r.bG)([P.A, w.A], () => w.A.getChannel(P.A.getVoiceChannelId())),
         n = (0, m.Ay)(t),
         s = function() {
-            let [e] = (0, r.bG)([U.Ay, O.A, P.A, w.A], () => {
+            let [e] = (0, r.bG)([U.Ay, b.A, P.A, w.A], () => {
                 let e = w.A.getChannel(P.A.getVoiceChannelId());
                 return null == e ? [
                     [], -1
-                ] : e.isGuildStageVoice() ? [O.A.getMutableParticipants(e.id, b.ip.SPEAKER), O.A.getParticipantsVersion(e.id)] : [U.Ay.getVoiceStatesForChannel(e), U.Ay.getVoiceStateVersion(e.getGuildId())]
+                ] : e.isGuildStageVoice() ? [b.A.getMutableParticipants(e.id, O.ip.SPEAKER), b.A.getParticipantsVersion(e.id)] : [U.Ay.getVoiceStatesForChannel(e), U.Ay.getVoiceStateVersion(e.getGuildId())]
             }, [], H.D);
             return e
         }(),

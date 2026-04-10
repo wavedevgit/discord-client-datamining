@@ -24,12 +24,12 @@ function A(e) {
         {
             channelId: p
         } = (0, a.N)(),
-        _ = (0, l.bG)([s.A], () => null != p && s.A.isSpam(p), [p]),
-        f = (0, l.bG)([r.A], () => r.A.getRelationshipType(A.id), [A.id]),
+        f = (0, l.bG)([s.A], () => null != p && s.A.isSpam(p), [p]),
+        _ = (0, l.bG)([r.A], () => r.A.getRelationshipType(A.id), [A.id]),
         E = n.id === p,
         x = !0 === A.bot,
         C = m.n;
-    return _ || E ? t = (0, i.jsx)(u.A, {
+    return f || E ? t = (0, i.jsx)(u.A, {
         channel: n,
         user: A
     }) : x ? t = (0, i.jsx)(o.A, {
@@ -39,7 +39,7 @@ function A(e) {
         channel: n,
         user: A,
         showingBanner: g
-    }), f === h.eA$.PENDING_INCOMING && (C = m.O)), (0, i.jsxs)("div", {
+    }), _ === h.eA$.PENDING_INCOMING && (C = m.O)), (0, i.jsxs)("div", {
         className: C,
         children: [(0, i.jsx)(c.A, {
             userId: A.id,

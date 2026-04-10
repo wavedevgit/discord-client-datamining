@@ -3,18 +3,18 @@ n.d(t, {
     A: () => S
 });
 var a = n(627968),
-    l = n(64700),
-    i = n(503698),
-    r = n.n(i),
+    i = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(621466),
     o = n(649658),
     c = n(397927),
     d = n(688810),
     u = n(951707),
     m = n(46054),
-    x = n(405269),
-    h = n(890060),
-    f = n(60465),
+    f = n(405269),
+    x = n(890060),
+    h = n(60465),
     g = n(409626),
     p = n(21091),
     _ = n(385064),
@@ -38,16 +38,16 @@ function N(e) {
     let {
         variant: t,
         message: n,
-        channelId: i,
+        channelId: l,
         onCardClick: d
-    } = e, [u, m] = l.useState(!1), f = "main" === t, g = l.useCallback(() => m(!0), []), p = l.useCallback(e => {
+    } = e, [u, m] = i.useState(!1), h = "main" === t, g = i.useCallback(() => m(!0), []), p = i.useCallback(e => {
         if (!((0, s.vq)(e.target, HTMLAnchorElement) || (0, s.vq)(e.target, HTMLSpanElement) && (0, s.vq)(e.target.parentElement, HTMLAnchorElement))) return d(n.id)
-    }, [d, n.id]), _ = n.media?.width != null && n.media?.height != null ? n.media.width / n.media.height : 16 / 9, v = n.media?.proxyUrl ?? n.media?.url, A = (null != v ? (0, h.V)(v) : null) ?? v;
+    }, [d, n.id]), _ = n.media?.width != null && n.media?.height != null ? n.media.width / n.media.height : 16 / 9, v = n.media?.proxyUrl ?? n.media?.url, A = (null != v ? (0, x.V)(v) : null) ?? v;
     return (0, a.jsxs)(c.DUT, {
-        className: f ? j.cG : j.IU,
+        className: h ? j.cG : j.IU,
         onClick: p,
         children: [null != n.media && null != A && (0, a.jsx)("div", {
-            className: f ? j._v : j.eZ,
+            className: h ? j._v : j.eZ,
             children: (0, a.jsx)(o.y, {
                 readyState: u ? b.Rv1.READY : b.Rv1.LOADING,
                 aspectRatio: _,
@@ -60,28 +60,28 @@ function N(e) {
                 },
                 children: (0, a.jsx)("img", {
                     src: A,
-                    className: f ? j.fk : j.v,
+                    className: h ? j.fk : j.v,
                     alt: "",
                     draggable: !1,
                     onLoad: g
                 })
             })
         }), (0, a.jsxs)("div", {
-            className: f ? j.GT : j.s4,
+            className: h ? j.GT : j.s4,
             children: [null != n.title && (0, a.jsx)(c.Heading, {
                 variant: "heading-md/bold",
                 color: "text-strong",
-                className: f ? j.KX : j._N,
-                children: C(n.title, i)
+                className: h ? j.KX : j._N,
+                children: C(n.title, l)
             }), n.body.length > 0 && (0, a.jsx)("div", {
-                className: r()(j.h_, f ? j.My : j.Gd, I.PT),
-                children: C(n.body, i)
+                className: r()(j.h_, h ? j.My : j.Gd, I.PT),
+                children: C(n.body, l)
             }), (0, a.jsxs)("div", {
                 className: j.ov,
                 children: [(0, a.jsx)(c.Text, {
                     variant: "text-xs/medium",
                     color: "text-muted",
-                    children: (0, x.i$)(new Date(n.timestamp), "LL")
+                    children: (0, f.i$)(new Date(n.timestamp), "LL")
                 }), n.reactionCount > 0 && (0, a.jsxs)("div", {
                     className: j.a5,
                     children: [(0, a.jsx)(c.nm2, {
@@ -103,7 +103,7 @@ function S(e) {
         gameId: t,
         trackAction: n
     } = e, {
-        analyticsLocations: i
+        analyticsLocations: l
     } = (0, d.Ay)(), {
         officialInvite: r,
         closeModal: s
@@ -111,20 +111,20 @@ function S(e) {
         messages: o,
         guildId: c,
         channelId: m
-    } = (0, p.A)(t), x = l.useCallback(() => {
+    } = (0, p.A)(t), f = i.useCallback(() => {
         let e = r?.guild?.id ?? c;
-        null != e && null != m && (n(g.Ws.Announcements), f.A.setGameProfilePendingReturn({
+        null != e && null != m && (n(g.Ws.Announcements), h.A.setGameProfilePendingReturn({
             gameId: t,
             channelId: m
         }), s(), (0, _.A)({
             invite: r,
             guildId: e,
             channelId: m,
-            analyticsLocationStack: i
+            analyticsLocationStack: l
         }))
-    }, [n, s, r, c, m, i, t]), h = l.useCallback(e => {
+    }, [n, s, r, c, m, l, t]), x = i.useCallback(e => {
         let a = r?.guild?.id ?? c;
-        null != a && null != m && (n(g.Ws.AnnouncementsItem), f.A.setGameProfilePendingReturn({
+        null != a && null != m && (n(g.Ws.AnnouncementsItem), h.A.setGameProfilePendingReturn({
             gameId: t,
             channelId: m
         }), s(), (0, _.A)({
@@ -132,30 +132,30 @@ function S(e) {
             guildId: a,
             channelId: m,
             messageId: e,
-            analyticsLocationStack: i
+            analyticsLocationStack: l
         }))
-    }, [n, s, r, c, m, i, t]);
+    }, [n, s, r, c, m, l, t]);
     if (null == m || 0 === o.length) return null;
     let b = 2 !== o.length,
         I = b ? o[0] : null,
         C = b ? o.slice(1) : o;
     return (0, a.jsx)(A.A, {
         title: E.intl.string(E.t.B0BV3Y),
-        onClickViewAll: x,
+        onClickViewAll: f,
         children: (0, a.jsxs)("div", {
             className: j.f3,
             children: [null != I && (0, a.jsx)(N, {
                 variant: "main",
                 message: I,
                 channelId: m,
-                onCardClick: h
+                onCardClick: x
             }), C.length > 0 && (0, a.jsx)(u.A, {
                 gap: 16,
                 children: C.map(e => (0, a.jsx)(N, {
                     variant: "small",
                     message: e,
                     channelId: m,
-                    onCardClick: h
+                    onCardClick: x
                 }, e.id))
             })]
         })

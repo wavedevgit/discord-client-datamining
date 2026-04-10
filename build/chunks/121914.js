@@ -18,13 +18,13 @@ var i, a = n(627968),
     g = n(222823),
     f = n(994500),
     A = n(485296),
-    x = n(741961),
-    I = n(287809),
+    I = n(741961),
+    x = n(287809),
     E = n(1193),
     b = n(145567),
     v = n(922611),
-    C = n(651813),
-    S = n(919843),
+    S = n(651813),
+    C = n(919843),
     y = n(534765),
     T = n(256688),
     N = n(652215),
@@ -36,8 +36,8 @@ let j = r.memo(function(e) {
         channelId: t,
         selectedVoiceChannelId: n,
         iconVariant: i = "DEFAULT"
-    } = e, l = null != n && t === n, O = (0, o.bG)([E.A], () => E.A.getSelectedChannelId() === t, [t]), j = (0, o.bG)([E.A], () => E.A.getVoiceChatMinimized()), P = (0, c.rdh)(c.LU0.colors.ICON_STATUS_ONLINE), D = (0, o.bG)([A.A], () => !!l && !!(A.A.isAnyoneElseSpeaking() || A.A.isCurrentUserSpeaking()), [l]), [R, k] = r.useState(!1), {
-        mentionCount: M,
+    } = e, l = null != n && t === n, O = (0, o.bG)([E.A], () => E.A.getSelectedChannelId() === t, [t]), j = (0, o.bG)([E.A], () => E.A.getVoiceChatMinimized()), P = (0, c.rdh)(c.LU0.colors.ICON_STATUS_ONLINE), R = (0, o.bG)([A.A], () => !!l && !!(A.A.isAnyoneElseSpeaking() || A.A.isCurrentUserSpeaking()), [l]), [D, M] = r.useState(!1), {
+        mentionCount: k,
         isMentionLowImportance: G
     } = (0, o.cf)([g.Ay], () => null != t ? {
         mentionCount: g.Ay.getMentionCount(t),
@@ -50,7 +50,7 @@ let j = r.memo(function(e) {
         user: U,
         guild: V,
         channel: F
-    } = (0, o.cf)([m.A, p.A, I.default, f.A], () => {
+    } = (0, o.cf)([m.A, p.A, x.default, f.A], () => {
         let e = m.A.getChannel(t) ?? null;
         if (null == e) return {
             label: w.intl.string(w.t.zLZPmk),
@@ -58,21 +58,21 @@ let j = r.memo(function(e) {
             guild: null,
             channel: null
         };
-        let n = (0, u.m1)(e, I.default, f.A);
+        let n = (0, u.m1)(e, x.default, f.A);
         return {
             label: n,
-            user: (0, C.j)(e, I.default),
-            guild: (0, C.P)(e, p.A),
+            user: (0, S.j)(e, x.default),
+            guild: (0, S.P)(e, p.A),
             channel: e
         }
     }, [t]);
     r.useEffect(() => {
-        null == F && (0, S.b)(t)
+        null == F && (0, C.b)(t)
     }, [F, t]);
-    let W = (0, o.bG)([x.A, I.default], () => {
+    let W = (0, o.bG)([I.A, x.default], () => {
             if (null == F) return !1;
-            let e = I.default.getCurrentUser()?.id ?? null,
-                t = x.A.getTypingUsers(F.id);
+            let e = x.default.getCurrentUser()?.id ?? null,
+                t = I.A.getTypingUsers(F.id);
             for (let n in t)
                 if (n !== e) return !0;
             return !1
@@ -88,7 +88,7 @@ let j = r.memo(function(e) {
                 if ("CHANNEL_TYPE" === i && !e) {
                     let e = (0, _.gU)(F, V);
                     e ??= c.oyn;
-                    let t = l && !j && D,
+                    let t = l && !j && R,
                         n = {
                             boxShadow: "none"
                         },
@@ -115,7 +115,7 @@ let j = r.memo(function(e) {
                     isSelected: O,
                     size: v.c.SIZE_40,
                     isTyping: W,
-                    mentionCount: M,
+                    mentionCount: k,
                     isMentionLowImportance: G
                 })
             })()
@@ -162,13 +162,13 @@ let j = r.memo(function(e) {
                 })
             },
             onContextMenu: Y,
-            onMouseEnter: () => k(!0),
-            onMouseLeave: () => k(!1),
+            onMouseEnter: () => M(!0),
+            onMouseLeave: () => M(!1),
             children: [B, (0, a.jsx)("div", {
                 className: L.vT,
                 children: (0, a.jsx)(h.A, {
                     selected: O,
-                    hovered: R,
+                    hovered: D,
                     unread: H
                 })
             })]

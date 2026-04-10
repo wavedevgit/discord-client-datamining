@@ -29,8 +29,8 @@ n(607470);
 var I = n(15285),
     N = n(880144),
     T = n(905552),
-    O = n(768841),
-    b = n(265367),
+    b = n(768841),
+    O = n(265367),
     j = n(616356),
     D = n(734057),
     R = n(71393),
@@ -151,7 +151,7 @@ class ep extends l.Component {
         U.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : this.debouncedForceUpdate()
     };
     componentDidMount() {
-        _.A.startSession(), O.A.initialize(), y.A.initialize(), b.A.initialize()
+        _.A.startSession(), b.A.initialize(), y.A.initialize(), O.A.initialize()
     }
     componentDidUpdate(e) {
         let {
@@ -229,7 +229,7 @@ class ep extends l.Component {
         window.addEventListener("keydown", this.onKeyDownGlobal, !0), window.addEventListener("keyup", this.onKeyUpGlobal, !0)
     }
     componentWillUnmount() {
-        window.removeEventListener("resize", this.handleWindowResize), window.removeEventListener("keydown", this.onKeyDownGlobal, !0), window.removeEventListener("keyup", this.onKeyUpGlobal, !0), this.props.locked && window.removeEventListener("contextmenu", ed, !1), O.A.terminate(), y.A.terminate(), b.A.terminate()
+        window.removeEventListener("resize", this.handleWindowResize), window.removeEventListener("keydown", this.onKeyDownGlobal, !0), window.removeEventListener("keyup", this.onKeyUpGlobal, !0), this.props.locked && window.removeEventListener("contextmenu", ed, !1), b.A.terminate(), y.A.terminate(), O.A.terminate()
     }
     activeKeyEventShapes = [];
     lockEventShape = (0, Z.pi)(this.props.keybindKeyCodes);

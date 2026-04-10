@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(568598),
     _ = n(313961),
     m = n(246356),
-    g = n(178213),
-    p = n(332772),
+    p = n(178213),
+    g = n(332772),
     f = n(594832),
     x = n(631784),
     E = n(721932),
@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(954571),
     S = n(403362),
     b = n(871123),
-    v = n(832163),
-    y = n(453774),
+    y = n(832163),
+    v = n(453774),
     j = n(533562),
     R = n(568751),
     O = n(620406),
@@ -55,11 +55,11 @@ function B(e) {
     l.useEffect(() => {
         t || n()
     }, [n, t]);
-    let B = (0, g.GG)("social_layer_storefront_gifting_mini_shelf");
-    (0, p.T)({
+    let B = (0, p.GG)("social_layer_storefront_gifting_mini_shelf");
+    (0, g.T)({
         location: "social_layer_storefront_gifting_mini_shelf"
     });
-    let H = (0, u.bG)([v.A], () => v.A.getDetectableIdsToApplicationIds()),
+    let H = (0, u.bG)([y.A], () => y.A.getDetectableIdsToApplicationIds()),
         F = (0, j.W)(),
         [W] = (0, u.bG)([_.A], () => null != h.id ? [_.A.getParticipants(h.id), _.A.getParticipantsVersion(h.id)] : [
             [], 0
@@ -81,7 +81,7 @@ function B(e) {
             let e = W.map(e => (0, D.Xw)(e) || (0, D.Ay)(e) ? e.user.id : null).filter(S.Vq);
             return (0, r.uniq)([...K, ...e])
         }, [W, K]),
-        X = (0, y.v)(Y),
+        X = (0, v.v)(Y),
         {
             status: $,
             recommendations: Q,

@@ -28,13 +28,13 @@ function d(e) {
         return n(), () => clearTimeout(t)
     }, [h]);
     let m = !n && null != t && A,
-        [g, p] = (0, s.Wl)(m ? d : null, {
+        [p, g] = (0, s.Wl)(m ? d : null, {
             cooldownDurationMs: 864e5
         }, c, u);
     return {
-        shouldShow: g === d,
+        shouldShow: p === d,
         markAsDismissed: e => {
-            null != t && ((0, a.M)(t.id, d), p(e))
+            null != t && ((0, a.M)(t.id, d), g(e))
         }
     }
 }

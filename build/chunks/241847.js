@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(83942),
     g = n(259374),
     p = n(730986),
-    _ = n(786840),
-    f = n(763845),
+    f = n(786840),
+    _ = n(763845),
     E = n(857341),
     x = n(843057),
     C = n(603266),
@@ -54,7 +54,7 @@ function b(e) {
         connectionTypeText: n,
         closePopout: l
     } = e, s = y(t);
-    return (0, i.jsx)(f.A, {
+    return (0, i.jsx)(_.A, {
         ...s,
         closePopout: l,
         connectionTypeText: n
@@ -79,7 +79,7 @@ function R(e) {
         closePopout: t,
         connectionTypeText: n
     } = e, l = v();
-    return (0, i.jsx)(f.A, {
+    return (0, i.jsx)(_.A, {
         ...l,
         closePopout: t,
         connectionTypeText: n
@@ -98,7 +98,7 @@ function M(e) {
     })
 }
 
-function D(e) {
+function O(e) {
     let {
         channelId: t,
         isOverlay: n,
@@ -117,7 +117,7 @@ function D(e) {
     })
 }
 
-function O(e) {
+function D(e) {
     let {
         channelId: t,
         isOverlay: n,
@@ -139,7 +139,7 @@ function O(e) {
 function L(e) {
     let [t, n] = l.useState(C.Rj.RTC_DEBUG_PANEL), s = (0, c.GV)(), r = [{
         id: C.Rj.RTC_DEBUG_PANEL,
-        content: (0, i.jsx)(D, {
+        content: (0, i.jsx)(O, {
             ...e
         })
     }, {
@@ -199,11 +199,11 @@ function P(e) {
         d = l.useMemo(() => {
             switch (n) {
                 case C.Rj.RTC_DEBUG_PANEL:
-                    return (0, i.jsx)(O, {
+                    return (0, i.jsx)(D, {
                         ...e
                     });
                 case C.Rj.RTC_SECURE_FRAMES:
-                    return (0, i.jsx)(_.A, {
+                    return (0, i.jsx)(f.A, {
                         channelId: e.channelId
                     })
             }
@@ -256,7 +256,7 @@ function k(e) {
         className: I.L3,
         children: (0, i.jsx)("section", {
             className: I.J8,
-            children: (0, i.jsx)(O, {
+            children: (0, i.jsx)(D, {
                 ...e
             })
         })
@@ -270,7 +270,7 @@ function w(e) {
         ...e
     }) : (0, i.jsx)("div", {
         className: a()(N.popover, T.L3),
-        children: (0, i.jsx)(D, {
+        children: (0, i.jsx)(O, {
             ...e
         })
     })

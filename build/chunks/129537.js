@@ -48,7 +48,7 @@ function A(e) {
     return "auto" === e || null == e ? "auto" : `${e}px`
 }
 
-function x(e, t) {
+function I(e, t) {
     let n = 0;
     return {
         width: n = "auto" === t.width ? null != e ? e.clientWidth : 0 : t.width,
@@ -56,7 +56,7 @@ function x(e, t) {
     }
 }
 
-function I(e, t) {
+function x(e, t) {
     let {
         top: n,
         left: i,
@@ -229,7 +229,7 @@ class b extends r.Component {
         let {
             width: o,
             height: d
-        } = x(i, this.size), c = (0, u.Ly)(this.anchor, l, s, o, d);
+        } = I(i, this.size), c = (0, u.Ly)(this.anchor, l, s, o, d);
         if ("MOVE" === e) {
             let {
                 x: e,
@@ -252,7 +252,7 @@ class b extends r.Component {
                 offsetY: n - i
             }
         } else {
-            let i = I(e, c);
+            let i = x(e, c);
             this.setDOMPositions(i), this.dragState = {
                 ...this.dragState,
                 startX: t,
@@ -299,12 +299,12 @@ class b extends r.Component {
         let {
             width: p,
             height: g
-        } = x(n, this.size), f = t - h, A = e - _, E = (0, u.fh)((0, u.Ly)({
+        } = I(n, this.size), f = t - h, A = e - _, E = (0, u.fh)((0, u.Ly)({
             top: f,
             left: A,
             bottom: void 0,
             right: void 0
-        }, a, r, p, g)), b = c ? (0, u.h1)(E) : I("RESIZE_SOUTH_EAST", E);
+        }, a, r, p, g)), b = c ? (0, u.h1)(E) : x("RESIZE_SOUTH_EAST", E);
         this.setDOMPositions(b), this.setState({
             operationStarted: !0,
             anchorTopOverride: null != b.top,
@@ -359,7 +359,7 @@ class b extends r.Component {
             case "RESIZE_NORTH_EAST":
                 A += g - t
         }
-        let x = _({
+        let I = _({
                 padding: 8,
                 borderWidth: 2,
                 operation: h,
@@ -374,11 +374,11 @@ class b extends r.Component {
                 containerSpecs: this.props.container,
                 orientedPosition: this.dragState.dragOrientedCoords
             }),
-            I = (0, u.af)((0, u.fh)((0, u.Ly)(this.dragState.dragOrientedCoords, a, r, x.width, x.height)), this.dragState.dragOrientedCoords);
+            x = (0, u.af)((0, u.fh)((0, u.Ly)(this.dragState.dragOrientedCoords, a, r, I.width, I.height)), this.dragState.dragOrientedCoords);
         this.setDOMSize({
-            ...x,
+            ...I,
             fixed: this.size.fixed
-        }, !0), (0, d.A)(I, this.dragState.dragOrientedCoords) || (this.dragState.dragOrientedCoords = I, this.setDOMPositions(this.dragState.dragOrientedCoords)), m || (null != o && o(), this.setState({
+        }, !0), (0, d.A)(x, this.dragState.dragOrientedCoords) || (this.dragState.dragOrientedCoords = x, this.setDOMPositions(this.dragState.dragOrientedCoords)), m || (null != o && o(), this.setState({
             operationStarted: !0
         })), null != c && c(n, h, this.anchor, this.size)
     }
@@ -396,7 +396,7 @@ class b extends r.Component {
                 onUpdate: t,
                 id: n
             } = this.props, i = this.shouldConstrainAutoSizeToExplicitResizeEvents() && "MOVE" === e ? this.requestedSize : this.size;
-            t(e, n, this.anchor, i, x(this.ref.current, this.size))
+            t(e, n, this.anchor, i, I(this.ref.current, this.size))
         } : void 0;
         if (t) {
             let {
@@ -405,7 +405,7 @@ class b extends r.Component {
             } = this.props.container, {
                 width: n,
                 height: a
-            } = x(this.ref.current, this.size), r = (0, u.Ly)(this.anchor, e, t, n, a), l = (0, u.h1)(r);
+            } = I(this.ref.current, this.size), r = (0, u.Ly)(this.anchor, e, t, n, a), l = (0, u.h1)(r);
             this.setDOMPositions(l), this.setDOMSize({
                 width: n,
                 height: a,

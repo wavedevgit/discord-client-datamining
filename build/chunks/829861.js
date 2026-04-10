@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(775602),
     _ = n(58149),
     m = n(587837),
-    g = n(473553),
-    p = n(964404),
+    p = n(473553),
+    g = n(964404),
     f = n(709562),
     x = n(383831),
     E = n(128286),
@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(287809),
     S = n(203982),
     b = n(427262),
-    v = n(795816),
-    y = n(933958),
+    y = n(795816),
+    v = n(933958),
     j = n(685399),
     R = n(216418),
     O = n(969151),
@@ -53,9 +53,9 @@ function K(e) {
         maxHeight: t,
         connectedLocation: n,
         renderExternalHeader: s
-    } = e, K = (0, L.A)(), Y = (0, r.yK)([y.Ay], () => y.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, r.bG)([I.A], () => I.A.getChannel(z)), X = (0, j.IQ)(Y), $ = (0, j.Rz)(X), Q = l.useCallback(() => {
-        (0, v.gk)(w.Gd.PIP)
-    }, []), J = l.useRef(null), Z = (0, r.bG)([y.Ay], () => y.Ay.getFocusedLayout()), ee = Z !== w.E8.NO_CHAT, [et, en] = l.useState(p.Ay.activityPanelHeight ?? t ?? null), ei = l.useCallback(e => {
+    } = e, K = (0, L.A)(), Y = (0, r.yK)([v.Ay], () => v.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, r.bG)([I.A], () => I.A.getChannel(z)), X = (0, j.IQ)(Y), $ = (0, j.Rz)(X), Q = l.useCallback(() => {
+        (0, y.gk)(w.Gd.PIP)
+    }, []), J = l.useRef(null), Z = (0, r.bG)([v.Ay], () => v.Ay.getFocusedLayout()), ee = Z !== w.E8.NO_CHAT, [et, en] = l.useState(g.Ay.activityPanelHeight ?? t ?? null), ei = l.useCallback(e => {
         u.Ay.updatedUnsyncedSettings({
             activityPanelHeight: e
         })
@@ -115,10 +115,10 @@ function K(e) {
                 } : i
             }, [o, e, n, t])
         }(ee, et, t),
-        eg = (0, P.G)();
+        ep = (0, P.G)();
     if (null == K) return null;
-    let ep = [];
-    null != eu && (ep = Array.from(eu.embeddedActivity.userIds).map(e => T.default.getUser(e)).filter(e => null != e && void 0 !== e));
+    let eg = [];
+    null != eu && (eg = Array.from(eu.embeddedActivity.userIds).map(e => T.default.getUser(e)).filter(e => null != e && void 0 !== e));
     let ef = e => {
         if (null == e || void 0 === e || e === D.mt) return null;
         let t = e_.get(e.id),
@@ -140,7 +140,7 @@ function K(e) {
             className: a()(H.iE, W[Z], e),
             ref: J,
             style: em,
-            children: [s?.(), (0, i.jsx)(g.A, {
+            children: [s?.(), (0, i.jsx)(p.A, {
                 applicationId: K.id
             }), (0, i.jsxs)("div", {
                 className: H.lq,
@@ -171,7 +171,7 @@ function K(e) {
                     className: H.qr,
                     children: [(0, i.jsx)(D.Ay, {
                         renderIcon: !1,
-                        users: ep,
+                        users: eg,
                         size: F,
                         max: 6,
                         renderUser: ef
@@ -197,12 +197,12 @@ function K(e) {
                                 color: "disconnect"
                             })
                         })]
-                    }), eg ? (0, i.jsx)(E.A, {
+                    }), ep ? (0, i.jsx)(E.A, {
                         popoutOpen: !1,
                         onOpenPopout: () => {
                             (0, _.zV)(B.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, U.A)({
                                 onConfirm: async () => {
-                                    K?.id != null && null != z && await (0, v.od)(K.id, z), (0, v.jp)()
+                                    K?.id != null && null != z && await (0, y.od)(K.id, z), (0, y.jp)()
                                 }
                             })
                         },

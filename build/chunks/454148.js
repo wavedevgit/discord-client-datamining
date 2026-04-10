@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(665909),
     g = n(576045),
     p = n(477427),
-    _ = n(56462),
-    f = n(652215),
+    f = n(56462),
+    _ = n(652215),
     E = n(985018);
 
 function x(e) {
@@ -25,7 +25,7 @@ function x(e) {
         channelId: t,
         warningId: x,
         senderId: C
-    } = e, S = (0, _.CW)(), I = l.useCallback(() => {
+    } = e, S = (0, f.CW)(), I = l.useCallback(() => {
         (0, h.xi)(t, [x])
     }, [t, x]), T = e => {
         r.A.updateChannelOverrideSettings(null, t, {
@@ -39,7 +39,7 @@ function x(e) {
         }), I()
     };
     return l.useEffect(() => {
-        (0, A.mO)(f.HAw.SAFETY_WARNING_VIEWED, {
+        (0, A.mO)(_.HAw.SAFETY_WARNING_VIEWED, {
             channelId: t,
             warningId: x,
             senderId: C,
@@ -101,7 +101,7 @@ function x(e) {
                                     variant: "heading-sm/medium",
                                     color: "text-link",
                                     children: E.intl.format(E.t.UkH122, {
-                                        learnMoreLink: _.u6
+                                        learnMoreLink: f.u6
                                     })
                                 })
                             })

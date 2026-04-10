@@ -28,8 +28,8 @@ var i = n(627968),
     I = n(383501),
     N = n(309010),
     T = n(543465),
-    O = n(607567),
-    b = n(855790),
+    b = n(607567),
+    O = n(855790),
     j = n(714977),
     D = n(439817),
     R = n(652215),
@@ -151,7 +151,7 @@ class M extends s.PureComponent {
                     targetElementRef: this.settingsIconRef,
                     position: "right",
                     renderPopout: this.renderSettings,
-                    children: e => (0, i.jsx)(b.Ay.Icon, {
+                    children: e => (0, i.jsx)(O.Ay.Icon, {
                         ref: this.settingsIconRef,
                         icon: r.Zes,
                         label: w.intl.string(w.t["3D5yo/"]),
@@ -189,14 +189,14 @@ function P(e) {
     } = (0, a.cf)([T.Ay], () => ({
         mutedChannels: T.Ay.getMutedChannels(t),
         collapseMuted: T.Ay.isGuildCollapsed(t)
-    })), u = (0, a.bG)([O.Ay], () => O.Ay.getVoiceStates(t)), h = (0, a.bG)([_.A], () => _.A.getCollapsed()), {
+    })), u = (0, a.bG)([b.Ay], () => b.Ay.getVoiceStates(t)), h = (0, a.bG)([_.A], () => _.A.getCollapsed()), {
         scrollTo: p
     } = (0, a.bG)([m.A], () => m.A.getGuildDimensions(t)), A = (0, f.A)(e => {
         let {
             channelId: t
         } = e;
         return t
-    }), b = (0, a.bG)([N.A], () => N.A.getVoiceChannelId()), j = (0, a.bG)([S.A], () => S.A.getGuildVersion(t)), D = (0, a.bG)([g.A], () => g.A.version), L = (0, a.bG)([y.default], () => y.default.getGuildChangeSentinel(t)), w = (0, o.a1)(n?.id), k = (0, d.vj)(n?.id), P = n?.features.has(R.GuildFeatures.COMMUNITY) ?? !1, G = (0, a.bG)([I.A], () => I.A.getChannelId()), V = (0, a.bG)([C.A], () => C.A.desyncedVoiceStatesCount);
+    }), O = (0, a.bG)([N.A], () => N.A.getVoiceChannelId()), j = (0, a.bG)([S.A], () => S.A.getGuildVersion(t)), D = (0, a.bG)([g.A], () => g.A.version), L = (0, a.bG)([y.default], () => y.default.getGuildChangeSentinel(t)), w = (0, o.a1)(n?.id), k = (0, d.vj)(n?.id), P = n?.features.has(R.GuildFeatures.COMMUNITY) ?? !1, G = (0, a.bG)([I.A], () => I.A.getChannelId()), V = (0, a.bG)([C.A], () => C.A.desyncedVoiceStatesCount);
     return (0, i.jsx)(M, {
         guildId: t,
         guild: n,
@@ -205,7 +205,7 @@ function P(e) {
         mutedChannels: r,
         scrollToChannel: p,
         selectedChannelId: A,
-        selectedVoiceChannelId: b,
+        selectedVoiceChannelId: O,
         voiceStates: u,
         rtcConnectedChannelId: G,
         rtcDesyncedVoiceStatesCount: V,

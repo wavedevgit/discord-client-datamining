@@ -3,15 +3,15 @@ n.d(t, {
     A: () => c
 });
 var a = n(64700),
-    l = n(868714),
-    i = n(206572),
+    i = n(868714),
+    l = n(206572),
     r = n(311907),
     s = n(250105),
     o = n(217222);
 
 function c(e, t) {
-    let n = (0, l.A)(e),
-        c = (0, i.A)(t),
+    let n = (0, i.A)(e),
+        c = (0, l.A)(t),
         d = (0, a.useMemo)(() => (0, s.cT)("user", {
             location: c.location
         }), [c]),

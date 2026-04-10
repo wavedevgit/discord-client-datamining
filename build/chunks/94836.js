@@ -4,18 +4,18 @@ n.d(t, {
     a: () => N
 });
 var a = n(627968),
-    l = n(64700),
-    i = n(503698),
-    r = n.n(i),
+    i = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(311907),
     o = n(732955),
     c = n(397927),
     d = n(775602),
     u = n(951707),
     m = n(898736),
-    x = n(248643),
-    h = n(256905),
-    f = n(652176),
+    f = n(248643),
+    x = n(256905),
+    h = n(652176),
     g = n(371794),
     p = n(409626),
     _ = n(368546),
@@ -28,7 +28,7 @@ function j(e) {
     let {
         game: t,
         trackAction: n
-    } = e, i = l.useRef(null), r = (0, m._)(t), s = l.useMemo(() => {
+    } = e, l = i.useRef(null), r = (0, m._)(t), s = i.useMemo(() => {
         let e = r.map(e => ({
             url: e,
             type: "IMAGE"
@@ -40,9 +40,9 @@ function j(e) {
     }, [r, t.screenshotUrls]), o = s.length > 2;
 
     function d(e) {
-        if (null == i.current) return;
-        let t = i.current.getScrollerState().scrollLeft;
-        i.current.scrollTo({
+        if (null == l.current) return;
+        let t = l.current.getScrollerState().scrollLeft;
+        l.current.scrollTo({
             to: t + 280 * e,
             animate: !0
         })
@@ -56,7 +56,7 @@ function j(e) {
         }), (0, a.jsxs)("div", {
             className: o ? b.DA : b.pZ,
             children: [(0, a.jsx)(c.zCo, {
-                ref: i,
+                ref: l,
                 className: b.ec,
                 orientation: "horizontal",
                 children: s.map((e, t) => (0, a.jsx)(c.DUT, {
@@ -66,7 +66,7 @@ function j(e) {
                         ringClassName: b.jR
                     },
                     onClick: () => {
-                        n(p.Ws.ClickImage), (0, h.R)({
+                        n(p.Ws.ClickImage), (0, x.R)({
                             items: s,
                             startingIndex: t,
                             shouldHideMediaOptions: !0,
@@ -106,17 +106,17 @@ function j(e) {
         })]
     })
 }
-let I = l.memo(function(e) {
+let I = i.memo(function(e) {
         let {
             item: t,
             index: n,
-            isSelected: i,
+            isSelected: l,
             isPlaying: s,
             onSelect: d,
             gameName: u
-        } = e, m = l.useCallback(() => d(n), [d, n]);
+        } = e, m = i.useCallback(() => d(n), [d, n]);
         return (0, a.jsx)(c.DUT, {
-            className: r()(E.JS, i && E.Y4),
+            className: r()(E.JS, l && E.Y4),
             onClick: m,
             children: (0, a.jsxs)("div", {
                 className: E.ub,
@@ -130,25 +130,25 @@ let I = l.memo(function(e) {
                 }), "VIDEO" === t.type && (0, a.jsx)("div", {
                     className: E.UZ,
                     children: (0, a.jsx)(o.DMX, {
-                        playing: i && s,
+                        playing: l && s,
                         size: "sm"
                     })
                 })]
             })
         })
     }),
-    C = l.memo(function(e) {
+    C = i.memo(function(e) {
         let {
             item: t,
             reducedMotion: n,
-            videoRef: i,
+            videoRef: l,
             mediaPlayerRef: r,
             onPlay: s,
             onPause: o,
             onFullscreenChange: c
-        } = e, d = l.useRef(null);
+        } = e, d = i.useRef(null);
         return (0, _.A)({
-            videoRef: i,
+            videoRef: l,
             canvasRef: d,
             enabled: !n
         }), (0, a.jsxs)(a.Fragment, {
@@ -158,7 +158,7 @@ let I = l.memo(function(e) {
                 "aria-hidden": "true"
             }), (0, a.jsx)("div", {
                 className: E.tN,
-                children: (0, a.jsx)(x.A, {
+                children: (0, a.jsx)(f.A, {
                     src: t.url,
                     poster: t.poster ?? "",
                     width: t.width ?? 1920,
@@ -171,12 +171,12 @@ let I = l.memo(function(e) {
                     autoMute: !0,
                     useFullWidth: !0,
                     responsive: !0,
-                    renderLinkComponent: f.bU,
+                    renderLinkComponent: h.bU,
                     onPlay: s,
                     onPause: o,
                     onFullscreenChange: c,
                     mediaPlayerClassName: E.T9,
-                    videoRef: i,
+                    videoRef: l,
                     mediaPlayerRef: r
                 })
             })]
@@ -187,9 +187,9 @@ function N(e) {
     let {
         game: t,
         trackAction: n
-    } = e, [i, r] = l.useState(0), [o, m] = l.useState(null), [x, f] = l.useState(t.screenshotUrls), _ = l.useRef(null), A = l.useRef(null), b = (0, s.bG)([d.A], () => d.A.useReducedMotion);
-    x !== t.screenshotUrls && (f(t.screenshotUrls), r(0));
-    let j = l.useMemo(() => [...(t.trailers ?? []).map(e => {
+    } = e, [l, r] = i.useState(0), [o, m] = i.useState(null), [f, h] = i.useState(t.screenshotUrls), _ = i.useRef(null), A = i.useRef(null), b = (0, s.bG)([d.A], () => d.A.useReducedMotion);
+    f !== t.screenshotUrls && (h(t.screenshotUrls), r(0));
+    let j = i.useMemo(() => [...(t.trailers ?? []).map(e => {
             let t = (0, g.YE)(e.application_id, e.id, e.width, "mp4");
             return {
                 url: t,
@@ -203,23 +203,23 @@ function N(e) {
             url: e,
             type: "IMAGE"
         }))], [t.trailers, t.screenshotUrls]),
-        N = j.length > 0 ? Math.min(i, j.length - 1) : 0,
+        N = j.length > 0 ? Math.min(l, j.length - 1) : 0,
         S = j[N],
         y = S?.type === "VIDEO",
-        T = l.useCallback(e => {
+        T = i.useCallback(e => {
             let t = j[N],
                 n = j[e];
             t?.type === "IMAGE" && n?.type === "IMAGE" && t.url !== n.url ? m(t.url) : m(null), r(e)
         }, [j, N]),
-        [L, k] = l.useState(!1),
-        R = l.useRef(null),
-        O = l.useCallback(() => {
+        [L, k] = i.useState(!1),
+        R = i.useRef(null),
+        O = i.useCallback(() => {
             n(y ? p.Ws.ClickTrailer : p.Ws.ClickImage);
             let e = _.current,
                 t = R.current,
                 a = null != e && !e.paused,
-                l = e?.muted ?? !0,
-                i = e?.currentTime ?? 0;
+                i = e?.muted ?? !0,
+                l = e?.currentTime ?? 0;
             t?.setPlay(!1);
             let s = j.map((e, t) => {
                 if ("VIDEO" === e.type) {
@@ -227,14 +227,14 @@ function N(e) {
                     return {
                         ...e,
                         autoPlay: !!n && a,
-                        autoMute: !n || l,
-                        initialTimeSec: n ? i : void 0,
+                        autoMute: !n || i,
+                        initialTimeSec: n ? l : void 0,
                         videoRef: A
                     }
                 }
                 return e
             });
-            (0, h.R)({
+            (0, x.R)({
                 items: s,
                 startingIndex: N,
                 shouldHideMediaOptions: !0,
@@ -248,10 +248,10 @@ function N(e) {
                 }
             })
         }, [n, j, N, y]),
-        M = l.useCallback(() => k(!0), []),
-        G = l.useCallback(() => k(!1), []),
-        w = l.useCallback(() => m(null), []),
-        P = l.useCallback(e => {
+        M = i.useCallback(() => k(!0), []),
+        G = i.useCallback(() => k(!1), []),
+        w = i.useCallback(() => m(null), []),
+        P = i.useCallback(e => {
             e && O()
         }, [O]);
     return 0 === j.length ? null : (0, a.jsxs)("div", {

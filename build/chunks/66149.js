@@ -16,9 +16,9 @@ var i = n(627968),
     A = n(652215),
     g = n(985018),
     p = n(213607),
-    _ = n(480972);
+    f = n(480972);
 
-function f(e) {
+function _(e) {
     let {
         expanded: t,
         onClick: n,
@@ -93,13 +93,13 @@ let E = l.memo(function(e) {
     let C = t.hasUnread ? t.content.length - 1 : t.content.length;
     return (0, i.jsxs)("div", {
         className: a()({
-            [_._A]: !0,
+            [f._A]: !0,
             [p.sz]: g
         }),
         children: [t.hasUnread && (!g || t.content[0]?.type === A.TZK.DIVIDER) ? (0, i.jsx)(h.A, {
             isUnread: !0,
             id: r
-        }, "divider") : null, (0, i.jsx)(f, {
+        }, "divider") : null, (0, i.jsx)(_, {
             count: C,
             compact: s,
             expanded: g,

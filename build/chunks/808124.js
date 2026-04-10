@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(998740),
     _ = n(732777),
     m = n(709382),
-    g = n(287245),
-    p = n(615658),
+    p = n(287245),
+    g = n(615658),
     f = n(592044),
     x = n(100449),
     E = n(588703),
@@ -38,7 +38,7 @@ let N = e => {
                 N(!0)
             }, 2500)
         }, []);
-        let [v, y] = l.useState(.65), [j, R] = l.useState(.65), [O, L] = l.useState(.65), [M, D] = l.useState({
+        let [y, v] = l.useState(.65), [j, R] = l.useState(.65), [O, L] = l.useState(.65), [M, D] = l.useState({
             x: 0,
             y: 0
         }), [U, G] = l.useState(!1), [P, k] = l.useState(0), [w, B] = l.useState({
@@ -57,7 +57,7 @@ let N = e => {
                 y: s / 2 + i.y
             });
             let c = Math.max(a, r);
-            if (y(Math.max(o, d)), L(c), null != K.current) {
+            if (v(Math.max(o, d)), L(c), null != K.current) {
                 let e = K.current.getBoundingClientRect();
                 z({
                     x: e.left - i.left,
@@ -65,7 +65,7 @@ let N = e => {
                 })
             }
         }), X = l.useCallback(e => {
-            let t = Math.max(e, v),
+            let t = Math.max(e, y),
                 n = q.current?.getBoundingClientRect();
             if (null == n) return;
             let i = {
@@ -84,7 +84,7 @@ let N = e => {
                 x: d,
                 y: c
             })
-        }, [q, v]);
+        }, [q, y]);
         l.useEffect(() => {
             X(O)
         }, [O, X]);
@@ -176,7 +176,7 @@ let N = e => {
                                 e.preventDefault(), e.stopPropagation(), b(!S)
                             }
                         })]
-                    }), (0, i.jsx)(g.A, {
+                    }), (0, i.jsx)(p.A, {
                         channel: t,
                         idle: n,
                         showChat: S ?? !1
@@ -213,7 +213,7 @@ let N = e => {
                         left: Y.x,
                         top: Y.y
                     } : void 0
-                }), (0, i.jsx)(p.A, {}), (0, i.jsx)("div", {
+                }), (0, i.jsx)(g.A, {}), (0, i.jsx)("div", {
                     className: a()(C.Lw, {
                         [C.FD]: A
                     }),

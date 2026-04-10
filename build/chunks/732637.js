@@ -1,6 +1,6 @@
 /** chunk id: 732637 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => f
 });
 var i = n(627968),
     l = n(64700),
@@ -21,16 +21,16 @@ let p = (e, t) => {
     })
 };
 
-function _(e) {
+function f(e) {
     let t, {
             embedId: n,
             className: a,
             style: r
         } = e,
-        _ = (0, s.bG)([o.A], () => o.A.getWindow(g.MLl.CHANNEL_CALL_POPOUT)),
-        f = (0, m.A)(),
+        f = (0, s.bG)([o.A], () => o.A.getWindow(g.MLl.CHANNEL_CALL_POPOUT)),
+        _ = (0, m.A)(),
         E = (0, s.bG)([d.Ay], () => d.Ay.getActivityPanelMode());
-    t = null == f || (0, h.A)((0, u.H)(f.location)) || E !== A.Gd.PANEL ? _?.window ?? window : window;
+    t = null == _ || (0, h.A)((0, u.H)(_.location)) || E !== A.Gd.PANEL ? f?.window ?? window : window;
     let x = l.useRef(null),
         C = l.useMemo(() => {
             let e = null;

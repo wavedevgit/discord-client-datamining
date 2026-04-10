@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(152007),
     _ = n(747926),
     m = n(734057),
-    g = n(222823),
-    p = n(977997),
+    p = n(222823),
+    g = n(977997),
     f = n(607567),
     x = n(892896),
     E = n(884415),
@@ -26,18 +26,18 @@ var i = n(627968),
     T = n(985018),
     S = n(928409),
     b = n(567431),
-    v = n(570302);
+    y = n(570302);
 
-function y(e) {
+function v(e) {
     let {
         style: t,
         withGuildIcon: n,
         inverted: l
     } = e, s = {
-        className: a()(v.GI, {
-            [v.a7]: n
+        className: a()(y.GI, {
+            [y.a7]: n
         }, {
-            [v.BJ]: l
+            [y.BJ]: l
         }),
         style: t
     }, {
@@ -98,17 +98,17 @@ let j = l.memo(function(e) {
     let {
         thread: t,
         isSelectedChannel: s,
-        isSelectedVoice: v,
+        isSelectedVoice: y,
         isLast: j,
         withGuildIcon: R
-    } = e, O = (0, o.bG)([f.Ay], () => f.Ay.getVoiceStatesForChannel(t), [t]), L = (0, o.bG)([p.A], () => p.A.hasVideo(t.id)), {
+    } = e, O = (0, o.bG)([f.Ay], () => f.Ay.getVoiceStatesForChannel(t), [t]), L = (0, o.bG)([g.A], () => g.A.hasVideo(t.id)), {
         unread: M,
         mentionCount: D,
         isMentionLowImportance: U
-    } = (0, o.cf)([g.Ay], () => ({
-        unread: g.Ay.hasUnread(t.id),
-        mentionCount: g.Ay.getMentionCount(t.id),
-        isMentionLowImportance: g.Ay.getIsMentionLowImportance(t.id)
+    } = (0, o.cf)([p.Ay], () => ({
+        unread: p.Ay.hasUnread(t.id),
+        mentionCount: p.Ay.getMentionCount(t.id),
+        isMentionLowImportance: p.Ay.getIsMentionLowImportance(t.id)
     })), G = (0, o.bG)([A.A], () => A.A.isMuted(t.id)), P = l.useCallback(e => {
         (0, _.JA)(t, !e.shiftKey, N.H9.CHANNEL_LIST)
     }, [t]), k = l.useCallback(() => {
@@ -140,9 +140,9 @@ let j = l.memo(function(e) {
         className: a()(S.fx, {
             [S.wH]: s
         }),
-        children: [(0, i.jsx)(y, {
+        children: [(0, i.jsx)(v, {
             withGuildIcon: R
-        }), j ? null : (0, i.jsx)(y, {
+        }), j ? null : (0, i.jsx)(v, {
             withGuildIcon: R,
             inverted: !0,
             style: {
@@ -198,7 +198,7 @@ let j = l.memo(function(e) {
             })
         }), (0, i.jsx)(C.A, {
             channel: t,
-            collapsed: !v && 1 !== O.length,
+            collapsed: !y && 1 !== O.length,
             collapsedMax: 6,
             voiceStates: O,
             isThread: !0

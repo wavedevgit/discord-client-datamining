@@ -21,16 +21,16 @@ function p(e) {
     let {
         channel: t,
         children: p
-    } = e, _ = (0, l.bG)([c.A], () => c.A.isBlocked(t.getRecipientId()));
+    } = e, f = (0, l.bG)([c.A], () => c.A.isBlocked(t.getRecipientId()));
     (0, r.A)(t.id);
-    let f = (0, o.A)(t.id),
+    let _ = (0, o.A)(t.id),
         E = t.isSystemDM(),
-        x = _ && !E && !t.isMultiUserDM(),
+        x = f && !E && !t.isMultiUserDM(),
         C = {};
     if (E) {
-        let e = f ? g.intl.string(g.t["+KSnWX"]) : g.intl.string(g.t.hvVgAZ);
-        C.message = g.intl.string(g.t.Bt2N7D), C.subtitle = g.intl.string(g.t["n/Vzkw"]), C.buttonText = e, C.buttonIcon = f ? s.tfB : void 0, C.onButtonClick = () => {
-            if (f) {
+        let e = _ ? g.intl.string(g.t["+KSnWX"]) : g.intl.string(g.t.hvVgAZ);
+        C.message = g.intl.string(g.t.Bt2N7D), C.subtitle = g.intl.string(g.t["n/Vzkw"]), C.buttonText = e, C.buttonIcon = _ ? s.tfB : void 0, C.onButtonClick = () => {
+            if (_) {
                 open(A.Do), d.default.track(m.HAw.CHANGE_LOG_CTA_CLICKED, {
                     cta_type: "chat_blocker",
                     target: A.Do

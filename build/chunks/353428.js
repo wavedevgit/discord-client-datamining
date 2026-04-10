@@ -17,8 +17,8 @@ var i = n(627968),
     A = n(47167),
     _ = n(713654),
     m = n(932001),
-    g = n(263063),
-    p = n(394953),
+    p = n(263063),
+    g = n(394953),
     f = n(976860),
     x = n(622543),
     E = n(576622),
@@ -28,8 +28,8 @@ var i = n(627968),
     T = n(486020),
     S = n(975571),
     b = n(282978),
-    v = n(95655),
-    y = n(565265),
+    y = n(95655),
+    v = n(565265),
     j = n(742589),
     R = n(849205),
     O = n(652215),
@@ -102,8 +102,8 @@ function G(e) {
         handleContextMenu: u,
         handleParentClick: h,
         handleParentContextMenu: m,
-        renderFollowButton: g
-    } = e, p = (0, _.gU)(t, r), {
+        renderFollowButton: p
+    } = e, g = (0, _.gU)(t, r), {
         prefix: f,
         level: x
     } = function(e, t) {
@@ -155,7 +155,7 @@ function G(e) {
             return (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(c.AC4, {
                     children: M.intl.string(M.t["e5y+gm"])
-                }), (0, i.jsx)(v.n, {
+                }), (0, i.jsx)(y.n, {
                     channel: t
                 }, `channel-${t.id}`)]
             });
@@ -165,23 +165,23 @@ function G(e) {
         case O.rbe.GUILD_MEDIA:
             return null != t.linkedLobby ? (0, i.jsxs)(U, {
                 channel: t,
-                children: [w(p, t.type === O.rbe.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
+                children: [w(g, t.type === O.rbe.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
                     onClick: d,
                     children: E
                 })]
             }) : (0, i.jsxs)(l.Fragment, {
-                children: [w(p, t.type === O.rbe.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
+                children: [w(g, t.type === O.rbe.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
                     onClick: d,
                     children: E
-                }), null != g ? g() : null]
+                }), null != p ? p() : null]
             });
         case O.rbe.GUILD_VOICE:
             return (0, i.jsxs)(l.Fragment, {
-                children: [w(p, M.intl.string(M.t.BVZqJl)), (0, i.jsx)(j.A.Title, {
+                children: [w(g, M.intl.string(M.t.BVZqJl)), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
                     onClick: d,
@@ -190,7 +190,7 @@ function G(e) {
             });
         case O.rbe.GUILD_STAGE_VOICE:
             return (0, i.jsxs)(l.Fragment, {
-                children: [w(p, M.intl.string(M.t.EErMzA)), (0, i.jsx)(j.A.Title, {
+                children: [w(g, M.intl.string(M.t.EErMzA)), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
                     onClick: d,
@@ -215,7 +215,7 @@ function G(e) {
             }
             let T = s?.type != null && O.kvI.GUILD_THREADS_ONLY.has(s.type);
             return (0, i.jsxs)(l.Fragment, {
-                children: [C, w(T ? null : p, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(j.A.Title, {
+                children: [C, w(T ? null : g, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(j.A.Title, {
                     level: x,
                     onContextMenu: u,
                     onClick: d,
@@ -230,8 +230,8 @@ function G(e) {
                 guildName: n
             }) : n;
             return (0, i.jsxs)(l.Fragment, {
-                children: [null !== p ? (0, i.jsx)(j.A.ChannelIcon, {
-                    icon: p,
+                children: [null !== g ? (0, i.jsx)(j.A.ChannelIcon, {
+                    icon: g,
                     "aria-hidden": !0
                 }) : null, (0, i.jsxs)(j.A.Title, {
                     level: x,
@@ -278,7 +278,7 @@ function k(e, t) {
         case O.rbe.GUILD_VOICE:
         case O.rbe.GUILD_STAGE_VOICE:
         case O.rbe.GROUP_DM:
-            return null != t ? (0, i.jsx)(y.A, {
+            return null != t ? (0, i.jsx)(v.A, {
                 channel: e,
                 guild: t
             }, e.id) : null;
@@ -303,7 +303,7 @@ function B(e) {
         guild: t,
         channel: n,
         caretPosition: s = "left"
-    } = e, a = (0, r.bG)([C.A], () => C.A.getGuildId()), o = (0, p.lI)(), u = l.useRef(null);
+    } = e, a = (0, r.bG)([C.A], () => C.A.getGuildId()), o = (0, g.lI)(), u = l.useRef(null);
     return (a === O.YYv || o) && null != t ? (0, i.jsx)(d.m, {
         asContainer: !0,
         text: t.name,
@@ -318,9 +318,9 @@ function B(e) {
                 direction: "left"
             }), (0, i.jsx)("div", {
                 ref: u,
-                children: (0, i.jsx)(g.Ay, {
+                children: (0, i.jsx)(p.Ay, {
                     guild: t,
-                    size: g.Ay.Sizes.SMALLER,
+                    size: p.Ay.Sizes.SMALLER,
                     className: D.gL,
                     active: !0
                 })

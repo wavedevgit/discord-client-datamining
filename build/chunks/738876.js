@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(994500),
     _ = n(287809),
     m = n(203982),
-    g = n(518960),
-    p = n(65593),
+    p = n(518960),
+    g = n(65593),
     f = n(698638),
     x = n(652215),
     E = n(985018);
@@ -26,25 +26,25 @@ let I = function(e) {
         style: n,
         channel: I,
         draftType: C
-    } = e, [N, T] = l.useState(!0), S = (0, s.bG)([u.A], () => u.A.hasLayers()), b = (0, s.bG)([h.A], () => null != I && h.A.can(x.xBc.ATTACH_FILES, I), [I]), v = null != (0, s.bG)([r.A], () => r.A.getActiveCommand(I.id)), y = I.getGuildId(), j = C === d.C.FirstThreadMessage, R = (0, a.ni)(I), O = l.useMemo(() => !S && (I.isPrivate() && !I.isManaged() || null != y && !R && b && c.A.canChatInGuild(y)), [b, R, I, y, S]), L = j ? x.kvI.GUILD_THREADS_ONLY.has(I.type) ? E.intl.string(E.t.RBBLhL) : E.intl.string(E.t.gUx4eu) : N ? E.intl.format(E.t.dYP2Fc, {
+    } = e, [N, T] = l.useState(!0), S = (0, s.bG)([u.A], () => u.A.hasLayers()), b = (0, s.bG)([h.A], () => null != I && h.A.can(x.xBc.ATTACH_FILES, I), [I]), y = null != (0, s.bG)([r.A], () => r.A.getActiveCommand(I.id)), v = I.getGuildId(), j = C === d.C.FirstThreadMessage, R = (0, a.ni)(I), O = l.useMemo(() => !S && (I.isPrivate() && !I.isManaged() || null != v && !R && b && c.A.canChatInGuild(v)), [b, R, I, v, S]), L = j ? x.kvI.GUILD_THREADS_ONLY.has(I.type) ? E.intl.string(E.t.RBBLhL) : E.intl.string(E.t.gUx4eu) : N ? E.intl.format(E.t.dYP2Fc, {
         destination: (0, o.m1)(I, _.default, A.A, !0)
     }) : E.intl.string(E.t.h76ulG);
-    return v || !O ? null : (0, i.jsx)(p.A, {
+    return y || !O ? null : (0, i.jsx)(g.A, {
         className: t,
         style: n,
         title: L,
         description: j ? E.intl.string(E.t.lpgkzq) : E.intl.string(E.t.usQh4J),
         icons: f.ir,
         onDrop: e => {
-            if (v) return !1;
-            O && null != I && ((0, g.R)(e, I, C, {
+            if (y) return !1;
+            O && null != I && ((0, p.R)(e, I, C, {
                 requireConfirm: N,
                 origin: "drag_drop"
             }), m._.dispatchToLastSubscribed(x.jej.TEXTAREA_FOCUS))
         },
         onDragClear: () => T(!0),
         onDragOver: e => {
-            if (v) return !1;
+            if (y) return !1;
             j || e.shiftKey !== N || T(!e.shiftKey)
         }
     })

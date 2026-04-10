@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(430452),
     _ = n(203982),
     m = n(220144),
-    g = n(175203),
-    p = n(306852),
+    p = n(175203),
+    g = n(306852),
     f = n(947580),
     x = n(163432),
     E = n(652215),
@@ -31,8 +31,8 @@ function b(e) {
             onSelectParticipant: n,
             onContextMenuParticipant: s,
             onFullscreenParticipant: b,
-            participants: v,
-            filteredParticipants: y,
+            participants: y,
+            filteredParticipants: v,
             popoutType: j,
             inCall: R,
             channel: O,
@@ -106,14 +106,14 @@ function b(e) {
                 clamp: !0
             }
         }, Z === J && e_.value.idle && !en || ei || eu ? "animate-never" : "animate-always"),
-        eg = (0, o.zhh)({
+        ep = (0, o.zhh)({
             value: t,
             config: {
                 ...r.config.stiff,
                 clamp: !0
             }
         }, eh),
-        ep = (0, o.pnh)(L, {
+        eg = (0, o.pnh)(L, {
             keys: e => e?.id,
             config: {
                 ...r.config.stiff,
@@ -133,11 +133,11 @@ function b(e) {
         ef = l.useCallback(e => {
             H(e), K(!1)
         }, []),
-        ex = J ? [] : (0, f.Cf)(v, L, B),
+        ex = J ? [] : (0, f.Cf)(y, L, B),
         {
             visibleParticipants: eE,
             participantTileWidth: eI
-        } = (0, x.i4)(U, y);
+        } = (0, x.i4)(U, v);
     return (0, i.jsxs)("div", {
         className: a()(N.zr, C.tR, D),
         children: [(0, i.jsxs)("div", {
@@ -160,14 +160,14 @@ function b(e) {
                         style: {
                             aspectRatio: es
                         },
-                        children: ep((e, t, l) => {
+                        children: eg((e, t, l) => {
                             let {
                                 key: a
                             } = l;
                             return null != t ? (0, i.jsx)(r.animated.div, {
                                 className: C.qX,
                                 style: e,
-                                children: (0, i.jsx)(g.Ay, {
+                                children: (0, i.jsx)(p.Ay, {
                                     focused: !0,
                                     noBorder: er >= U || ea >= G,
                                     channel: O,
@@ -191,7 +191,7 @@ function b(e) {
                         [N.N7]: k
                     }),
                     style: {
-                        bottom: eg.value
+                        bottom: ep.value
                     },
                     children: (0, i.jsx)(u.A, {
                         channelId: O.id,
@@ -219,7 +219,7 @@ function b(e) {
                     paused: Y || !M
                 })
             })]
-        }), ex.length > 0 ? (0, i.jsx)(p.A, {
+        }), ex.length > 0 ? (0, i.jsx)(g.A, {
             onContextMenuParticipant: s,
             width: U,
             height: G,

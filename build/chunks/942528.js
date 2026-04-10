@@ -3,18 +3,18 @@ n.d(t, {
     A: () => v
 });
 var a = n(627968),
-    l = n(64700),
-    i = n(503698),
-    r = n.n(i),
+    i = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(311907),
     o = n(397927),
     c = n(734057),
     d = n(309010),
     u = n(287809),
     m = n(562153),
-    x = n(420706),
-    h = n(322789),
-    f = n(506326),
+    f = n(420706),
+    x = n(322789),
+    h = n(506326),
     g = n(985018),
     p = n(504225),
     _ = n(282063);
@@ -22,16 +22,16 @@ let v = e => {
     let {
         entry: t,
         onClose: n,
-        onReaction: i,
+        onReaction: l,
         onRequestOpen: v,
         disableActivityProfileLinks: A,
         customCTA: b,
         popoutClassname: E,
         popoutPosition: j = "right"
-    } = e, I = l.useRef(null), C = (0, s.bG)([d.A, c.A], () => c.A.getChannel(d.A.getChannelId())), N = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
+    } = e, I = i.useRef(null), C = (0, s.bG)([d.A, c.A], () => c.A.getChannel(d.A.getChannelId())), N = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
         nick: S,
         avatar: y
-    } = l.useMemo(() => {
+    } = i.useMemo(() => {
         let e = N?.getAvatarURL(C?.guild_id, 48, !1);
         return {
             nick: m.Ay.getName(C?.guild_id, C?.id, N),
@@ -43,19 +43,19 @@ let v = e => {
         position: j,
         renderPopout: e => {
             let {
-                closePopout: l,
+                closePopout: i,
                 updatePosition: r
             } = e;
             return (0, a.jsx)("div", {
                 className: E,
-                children: (0, a.jsx)(x.Oo, {
+                children: (0, a.jsx)(f.Oo, {
                     entry: t,
-                    closePopout: l,
+                    closePopout: i,
                     updatePopoutPosition: r,
                     onReaction: () => {
-                        i?.(), n(), l()
+                        l?.(), n(), i()
                     },
-                    onUserPopoutClosed: () => l(),
+                    onUserPopoutClosed: () => i(),
                     disableGameProfileLinks: !0,
                     disableActivityProfileLinks: A
                 })
@@ -92,9 +92,9 @@ let v = e => {
                                 color: "text-strong",
                                 lineClamp: 1,
                                 children: S
-                            }), (0, a.jsx)(f.mG, {
-                                location: f.N5.APP_LAUNCHER,
-                                children: h.n.map((e, n) => (0, a.jsx)(e, {
+                            }), (0, a.jsx)(h.mG, {
+                                location: h.N5.APP_LAUNCHER,
+                                children: x.n.map((e, n) => (0, a.jsx)(e, {
                                     entry: t
                                 }, n))
                             })]

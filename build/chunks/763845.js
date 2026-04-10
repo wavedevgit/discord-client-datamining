@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(917592),
     g = n(652215),
     p = n(731854),
-    _ = n(985018),
-    f = n(452088),
+    f = n(985018),
+    _ = n(452088),
     E = n(97262);
 let x = function(e) {
     let [t, n] = (0, l.useState)(!1);
@@ -53,10 +53,10 @@ let x = function(e) {
                 (0, h.C)(n, e)
             })
         }, []),
-        S = null != e.outboundLossRate ? _.intl.formatToPlainString(_.t["3pFz1P"], {
+        S = null != e.outboundLossRate ? f.intl.formatToPlainString(f.t["3pFz1P"], {
             badPing: 250,
             badLossRate: 10
-        }) : _.intl.formatToPlainString(_.t.vggaMt, {
+        }) : f.intl.formatToPlainString(f.t.vggaMt, {
             badPing: 250
         }),
         I = (0, l.useCallback)(() => {
@@ -69,7 +69,7 @@ let x = function(e) {
             return (0, i.jsxs)(l.Fragment, {
                 children: [d && (0, i.jsxs)("div", {
                     children: [(0, i.jsx)("div", {
-                        className: f.o0,
+                        className: _.o0,
                         children: (0, i.jsx)(o.A, {
                             dataPoints: e.pings,
                             width: 258,
@@ -78,32 +78,32 @@ let x = function(e) {
                     }), (0, i.jsx)(a.Text, {
                         variant: "text-sm/bold",
                         color: "text-default",
-                        className: f.VU,
+                        className: _.VU,
                         children: A.A.getShortHostname(t)
                     })]
                 }), (0, i.jsx)("div", {
-                    className: f.ew,
+                    className: _.ew,
                     children: (0, i.jsxs)("div", {
-                        className: f.zS,
+                        className: _.zS,
                         children: [(0, i.jsx)(a.Text, {
                             variant: "text-xs/normal",
                             color: "text-default",
-                            className: f.VU,
-                            children: _.intl.format(_.t["X58/lN"], {
+                            className: _.VU,
+                            children: f.intl.format(f.t["X58/lN"], {
                                 averagePing: n.toFixed(0)
                             })
                         }), null != s ? (0, i.jsx)(a.Text, {
                             variant: "text-xs/normal",
                             color: "text-default",
-                            className: f.VU,
-                            children: _.intl.format(_.t["6iv2TF"], {
+                            className: _.VU,
+                            children: f.intl.format(f.t["6iv2TF"], {
                                 lastPing: s.toFixed(0)
                             })
                         }) : null, null != r ? (0, i.jsx)(a.Text, {
                             variant: "text-xs/normal",
                             color: "text-default",
-                            className: f.VU,
-                            children: _.intl.format(_.t["VIBJM+"], {
+                            className: _.VU,
+                            children: f.intl.format(f.t["VIBJM+"], {
                                 outboundLossRate: r.toFixed(1)
                             })
                         }) : null]
@@ -121,27 +121,27 @@ let x = function(e) {
         } = e,
         v = c.Q_.getSetting(),
         y = {
-            [g.S7L.AWAITING_ENDPOINT]: _.intl.format(_.t.Eu2vUR, {
+            [g.S7L.AWAITING_ENDPOINT]: f.intl.format(f.t.Eu2vUR, {
                 url: g.qF7.STATUS
             }),
-            [g.S7L.CONNECTING]: _.intl.string(_.t["y+E8aD"]),
-            [g.S7L.AUTHENTICATING]: _.intl.string(_.t["5lGIZH"]),
-            [g.S7L.DISCONNECTED]: _.intl.string(_.t.fOX25I),
-            [g.S7L.RTC_CONNECTING]: _.intl.string(_.t.b5Ubd5),
-            [g.S7L.ICE_CHECKING]: _.intl.format(_.t.SyoYUb, {
+            [g.S7L.CONNECTING]: f.intl.string(f.t["y+E8aD"]),
+            [g.S7L.AUTHENTICATING]: f.intl.string(f.t["5lGIZH"]),
+            [g.S7L.DISCONNECTED]: f.intl.string(f.t.fOX25I),
+            [g.S7L.RTC_CONNECTING]: f.intl.string(f.t.b5Ubd5),
+            [g.S7L.ICE_CHECKING]: f.intl.format(f.t.SyoYUb, {
                 url: m.A.getArticleURL(g.MVz.VOICE_CONNECTION_ERRORS)
             }),
-            [g.S7L.DTLS_CONNECTING]: _.intl.format(_.t.SyoYUb, {
+            [g.S7L.DTLS_CONNECTING]: f.intl.format(f.t.SyoYUb, {
                 url: m.A.getArticleURL(g.MVz.VOICE_CONNECTION_ERRORS)
             }),
             [g.S7L.RTC_CONNECTED]: I,
-            [g.S7L.NO_ROUTE]: _.intl.format(_.t["2tgQnk"], {
+            [g.S7L.NO_ROUTE]: f.intl.format(f.t["2tgQnk"], {
                 url: m.A.getArticleURL(g.MVz.VOICE_CONNECTION_ERRORS)
             }),
-            [g.S7L.RTC_DISCONNECTED]: _.intl.string(_.t.fOX25I)
+            [g.S7L.RTC_DISCONNECTED]: f.intl.string(f.t.fOX25I)
         } [T];
     return (0, i.jsxs)("div", {
-        className: f.kL,
+        className: _.kL,
         children: ["function" == typeof y ? y() : (0, i.jsx)(a.Text, {
             tag: "p",
             variant: "text-sm/normal",
@@ -151,22 +151,22 @@ let x = function(e) {
             children: [(0, i.jsx)("hr", {
                 className: E.me
             }), (0, i.jsxs)("div", {
-                className: f.pw,
+                className: _.pw,
                 children: [(0, i.jsx)(a.Button, {
                     icon: a.Q5O,
-                    text: _.intl.string(_.t.KBoWg9),
+                    text: f.intl.string(f.t.KBoWg9),
                     variant: "secondary",
                     size: "sm",
                     fullWidth: !0,
                     onClick: x
                 }), (0, i.jsxs)(a.DUT, {
-                    className: `${E.n2} ${f.n2}`,
+                    className: `${E.n2} ${_.n2}`,
                     onClick: C,
                     children: [(0, i.jsx)("div", {
                         className: t ? E.Dx : E.t6,
                         children: (0, i.jsx)(a.Button, {
                             icon: a.TdU,
-                            text: _.intl.string(_.t["XEb+Sj"]),
+                            text: f.intl.string(f.t["XEb+Sj"]),
                             variant: "secondary",
                             size: "sm",
                             fullWidth: !0
@@ -175,7 +175,7 @@ let x = function(e) {
                         className: t ? E.t6 : E.Dx,
                         children: (0, i.jsx)(a.Button, {
                             icon: a.yr3,
-                            text: _.intl.string(_.t.t5VZ88),
+                            text: f.intl.string(f.t.t5VZ88),
                             variant: "secondary",
                             size: "sm",
                             fullWidth: !0
@@ -198,9 +198,9 @@ let x = function(e) {
             children: [(0, i.jsx)("hr", {
                 className: E.me
             }), (0, i.jsx)(a.MzZ, {
-                className: f.CU,
+                className: _.CU,
                 href: m.A.getArticleURL(g.MVz.VOICE_VIDEO_TROUBLESHOOTING),
-                children: _.intl.string(_.t.hvVgAZ)
+                children: f.intl.string(f.t.hvVgAZ)
             })]
         })]
     })

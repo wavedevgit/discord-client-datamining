@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(397927),
     _ = n(308528),
     m = n(442433),
-    g = n(817281),
-    p = n(658128),
+    p = n(817281),
+    g = n(658128),
     f = n(976860),
     x = n(345942),
     E = n(260509),
@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(263715),
     S = n(941971),
     b = n(264409),
-    v = n(531053),
-    y = n(647668),
+    y = n(531053),
+    v = n(647668),
     j = n(107385),
     R = n(900848),
     O = n(65611),
@@ -97,7 +97,7 @@ let P = l.memo(function(e) {
                 nodeId: t.id
             }),
             end() {
-                m?.(), (0, g.um)(C.Ay.getCompatibleGuildFolders())
+                m?.(), (0, p.um)(C.Ay.getCompatibleGuildFolders())
             },
             collect: e => ({
                 dragging: e.isDragging()
@@ -109,9 +109,9 @@ let P = l.memo(function(e) {
         [eu, eh] = l.useState(!1),
         [eA, e_] = l.useState(!1),
         [em] = l.useState(() => new h.J_(70, () => e_(!0))),
-        eg = (0, N.nr)() && !c.Fr;
+        ep = (0, N.nr)() && !c.Fr;
     l.useEffect(() => () => em.cancel(), [em]);
-    let ep = l.useCallback(() => {
+    let eg = l.useCallback(() => {
             null != P ? (0, f.pX)(P, {
                 state: U
             }) : (0, x.u)(ee, {
@@ -120,7 +120,7 @@ let P = l.memo(function(e) {
         }, [ee, P]),
         ef = l.useCallback(() => {
             if (null != P || null == k || F || !X) return;
-            let e = (0, p.W)(k.id);
+            let e = (0, g.W)(k.id);
             null != e && _.A.preload(k.id, e)
         }, [P, k, F, X]),
         ex = (0, u.bG)([I.Ay], () => I.Ay.isCurrentUserGuest(ee)),
@@ -146,14 +146,14 @@ let P = l.memo(function(e) {
         }, [ee, n]),
         eb = (0, A.rdh)(A.LU0.modules.guildbar.AVATAR_SIZE);
     if (null == k) return null;
-    let ev = k.name;
-    W > 0 ? ev = M.intl.formatToPlainString(M.t["/uzRss"], {
+    let ey = k.name;
+    W > 0 ? ey = M.intl.formatToPlainString(M.t["/uzRss"], {
         guildName: k.name,
         mentions: W
-    }) : V && (ev = M.intl.formatToPlainString(M.t.lzqe42, {
+    }) : V && (ey = M.intl.formatToPlainString(M.t.lzqe42, {
         guildName: k.name
     }));
-    let ey = (0, i.jsx)(b.A, {
+    let ev = (0, i.jsx)(b.A, {
             guild: k,
             show: eA,
             active: B,
@@ -164,10 +164,10 @@ let P = l.memo(function(e) {
                 eA || eh(!1)
             }
         }),
-        ej = eg ? (0, i.jsx)(A.jlP, {
-            ariaLabel: ev,
+        ej = ep ? (0, i.jsx)(A.jlP, {
+            ariaLabel: ey,
             name: k.name,
-            onClick: ep,
+            onClick: eg,
             onMouseEnter: eN,
             onMouseLeave: eT,
             onMouseDown: ef,
@@ -188,9 +188,9 @@ let P = l.memo(function(e) {
                 "data-dnd-name": k.name,
                 "data-drop-hovering": eA,
                 children: (0, i.jsx)(A.jlP, {
-                    ariaLabel: ev,
+                    ariaLabel: ey,
                     name: k.name,
-                    onClick: ep,
+                    onClick: eg,
                     onMouseEnter: eN,
                     onMouseLeave: eT,
                     onMouseDown: ef,
@@ -205,11 +205,11 @@ let P = l.memo(function(e) {
                 })
             })
         }),
-        eR = eA || eu ? ey : ej,
-        eO = (0, i.jsx)(v.g4, {
+        eR = eA || eu ? ev : ej,
+        eO = (0, i.jsx)(y.g4, {
             children: (0, i.jsx)(j.A, {})
         }),
-        eL = eg ? (0, i.jsx)(o.animated.div, {
+        eL = ep ? (0, i.jsx)(o.animated.div, {
             ref: z ? e => {
                 ea(e)
             } : void 0,
@@ -255,12 +255,12 @@ let P = l.memo(function(e) {
             selected: !es && B,
             unread: !es && V,
             className: D.Io
-        }), (0, i.jsx)(y.A, {
+        }), (0, i.jsx)(v.A, {
             guild: k,
             disabled: q,
             isDragging: es,
             children: es ? eO : eL
-        }), z ? (0, i.jsx)(v.Ay, {
+        }), z ? (0, i.jsx)(y.Ay, {
             name: k.name,
             targetNode: t,
             onDragOverChanged: eC

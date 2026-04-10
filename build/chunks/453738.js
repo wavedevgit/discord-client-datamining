@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(256331),
     _ = n(141850),
     m = n(736339),
-    g = n(701952),
-    p = n(652215),
+    p = n(701952),
+    g = n(652215),
     f = n(968353);
 
 function x(e, t) {
@@ -135,18 +135,18 @@ let I = ["high", "medium", "low"],
                 block: "center"
             })
         }, [r]);
-        let p = h.default.extractTimestamp(t.start_message_id),
+        let g = h.default.extractTimestamp(t.start_message_id),
             x = h.default.extractTimestamp(t.end_message_id),
             E = (0, d.e)({
-                timestamp: p
+                timestamp: g
             }),
-            I = Math.max(1, Math.round((x - p) / 1e3)),
+            I = Math.max(1, Math.round((x - g) / 1e3)),
             N = (0, o.WR)({
                 seconds: I,
                 getFormatter: o.i
             }),
             T = t.summary_map?.entries.find(e => "TOPIC_EXTRACTION_SUMMARY" === e.summary_type),
-            S = null != T ? (0, g.i)(T.content_json) : null;
+            S = null != T ? (0, p.i)(T.content_json) : null;
         return (0, i.jsxs)(a.DUT, {
             innerRef: m,
             className: `${f.Nm}${s?` ${f.Sk}`:""}`,
@@ -252,12 +252,12 @@ let I = ["high", "medium", "low"],
 function T(e) {
     let {
         channel: t
-    } = e, n = (0, s.bG)([m.A], () => m.A.getChannelConversations(t.id), [t.id], x), o = (0, s.bG)([m.A], () => m.A.getVisibleConversationIds(t.id), [t.id], E), d = (0, s.bG)([m.A], () => m.A.hasMoreConversations(t.id, "before"), [t.id]), u = (0, s.bG)([m.A], () => m.A.hasMoreConversations(t.id, "after"), [t.id]), h = (0, s.bG)([m.A], () => m.A.isPendingFetch(t.id), [t.id]), g = (0, s.bG)([A.A], () => A.A.isHighlightingEnabled(), []), I = (0, s.bG)([m.A], () => m.A.getScrollToConversation(t.id), [t.id]), C = l.useCallback(e => {
+    } = e, n = (0, s.bG)([m.A], () => m.A.getChannelConversations(t.id), [t.id], x), o = (0, s.bG)([m.A], () => m.A.getVisibleConversationIds(t.id), [t.id], E), d = (0, s.bG)([m.A], () => m.A.hasMoreConversations(t.id, "before"), [t.id]), u = (0, s.bG)([m.A], () => m.A.hasMoreConversations(t.id, "after"), [t.id]), h = (0, s.bG)([m.A], () => m.A.isPendingFetch(t.id), [t.id]), p = (0, s.bG)([A.A], () => A.A.isHighlightingEnabled(), []), I = (0, s.bG)([m.A], () => m.A.getScrollToConversation(t.id), [t.id]), C = l.useCallback(e => {
         (0, _.UA)(t.id, e)
     }, [t.id]), T = l.useCallback(() => {
         (0, _.UA)(null, null)
     }, []), S = l.useCallback(e => {
-        (0, _.xI)(e.channel_id, e.id), (0, c.pX)(p.BVt.CHANNEL(e.guild_id, e.channel_id, e.start_message_id))
+        (0, _.xI)(e.channel_id, e.id), (0, c.pX)(g.BVt.CHANNEL(e.guild_id, e.channel_id, e.start_message_id))
     }, []);
     return (0, i.jsxs)("aside", {
         "aria-label": "Conversations",
@@ -268,8 +268,8 @@ function T(e) {
             children: (0, i.jsx)("div", {
                 className: f.y6,
                 children: (0, i.jsx)(a.K0, {
-                    icon: g ? a.bMW : a.G3N,
-                    "aria-label": g ? "Hide highlights" : "Show highlights",
+                    icon: p ? a.bMW : a.G3N,
+                    "aria-label": p ? "Hide highlights" : "Show highlights",
                     variant: "secondary",
                     size: "sm",
                     onClick: _.Eg

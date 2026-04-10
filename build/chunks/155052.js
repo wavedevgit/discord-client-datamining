@@ -44,7 +44,7 @@ let f = [],
                 })
             }
             return t
-        }, [], c.VC), x = a.useCallback(e => (0, i.jsx)("div", {
+        }, [], c.VC), I = a.useCallback(e => (0, i.jsx)("div", {
             className: t,
             style: u,
             children: e
@@ -53,6 +53,6 @@ let f = [],
             items: A,
             renderItem: g,
             getItemKey: p,
-            wrapChildren: x
+            wrapChildren: I
         })
     })

@@ -18,8 +18,8 @@ function h(e) {
             messages: A,
             oldestUnreadMessageId: g,
             treatSpam: p,
-            summaries: _,
-            selectedSummary: f,
+            summaries: f,
+            selectedSummary: _,
             selectedConversation: E
         } = e,
         x = [],
@@ -29,19 +29,19 @@ function h(e) {
     return A.forEach(e => {
         var s, T;
         let N, v;
-        if (null != _ && _.length > 0) {
+        if (null != f && f.length > 0) {
             let t = r.default.extractTimestamp(e.id);
-            for (let e = 0; e < _?.length; e++) {
-                if (null == _[e]) continue;
-                let n = r.default.extractTimestamp(_[e].startId),
-                    i = r.default.extractTimestamp(_[e].endId);
+            for (let e = 0; e < f?.length; e++) {
+                if (null == f[e]) continue;
+                let n = r.default.extractTimestamp(f[e].startId),
+                    i = r.default.extractTimestamp(f[e].endId);
                 if (t >= n && t <= i) {
-                    if (I === _[e].id) break;
+                    if (I === f[e].id) break;
                     x.push({
                         type: u.TZK.DIVIDER,
-                        content: _[e].topic,
-                        contentKey: _[e].id
-                    }), I = _[e].id;
+                        content: f[e].topic,
+                        contentKey: f[e].id
+                    }), I = f[e].id;
                     break
                 }
             }
@@ -78,14 +78,14 @@ function h(e) {
             type: u.TZK.DIVIDER,
             unreadId: e.id
         }), S = null);
-        let D = (0, d.r)(e, m);
-        null != D && "before" === D.position && x.push({
+        let O = (0, d.r)(e, m);
+        null != O && "before" === O.position && x.push({
             type: u.TZK.MESSAGE,
-            content: D.message,
-            groupId: D.message.id
+            content: O.message,
+            groupId: O.message.id
         });
-        let O = b?.type === u.TZK.MESSAGE ? h : b;
-        (0, o.l)(m, O, e) && (n = e.id);
+        let D = b?.type === u.TZK.MESSAGE ? h : b;
+        (0, o.l)(m, D, e) && (n = e.id);
         let L = {
             type: e.type === u.lAJ.THREAD_STARTER_MESSAGE ? u.TZK.THREAD_STARTER_MESSAGE : u.TZK.MESSAGE,
             content: e,
@@ -97,10 +97,10 @@ function h(e) {
             jumpFlash: k,
             jumpTargetId: w
         } = A;
-        k && e.id === w && null != P && (L.flashKey = P), A.jumpTargetId === e.id && (L.jumpTarget = !0), null != f && e.id === f.startId && f.count > 1 && x.push({
+        k && e.id === w && null != P && (L.flashKey = P), A.jumpTargetId === e.id && (L.jumpTarget = !0), null != _ && e.id === _.startId && _.count > 1 && x.push({
             type: u.TZK.DIVIDER,
-            content: f.topic,
-            contentKey: f.startId,
+            content: _.topic,
+            contentKey: _.startId,
             isSummaryDivider: !0
         }), null != E && e.id === E.start_message_id && E.message_count > 1 && x.push({
             type: u.TZK.DIVIDER,
@@ -109,13 +109,13 @@ function h(e) {
             isConversationDivider: !0
         }), null !== j ? (j.content.push(L), L.jumpTarget && (j.hasJumpTarget = !0)) : x.push(L), e.isFirstMessageInForumPost(m) && x.push({
             type: u.TZK.FORUM_POST_ACTION_BAR
-        }), null != D && "after" === D.position && x.push({
+        }), null != O && "after" === O.position && x.push({
             type: u.TZK.MESSAGE,
-            content: D.message,
-            groupId: D.message.id
-        }), null != f && e.id === f.endId && f.count > 1 && x.push({
+            content: O.message,
+            groupId: O.message.id
+        }), null != _ && e.id === _.endId && _.count > 1 && x.push({
             type: u.TZK.DIVIDER,
-            contentKey: f.endId,
+            contentKey: _.endId,
             isSummaryDivider: !0
         }), null != E && e.id === E.end_message_id && E.message_count > 1 && x.push({
             type: u.TZK.DIVIDER,

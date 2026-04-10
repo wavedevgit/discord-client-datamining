@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(136179),
     _ = n(250253),
     m = n(652215),
-    g = n(985018),
-    p = n(807611);
+    p = n(985018),
+    g = n(807611);
 
 function f(e) {
     let {
@@ -36,21 +36,21 @@ function f(e) {
         location: m.ThZ.ROLE_SUBSCRIPTION_GATED_CHANNEL,
         relevantSubscriptionListingIds: f.map(e => e.id)
     }), null == I) ? (0, i.jsx)("div", {
-        className: p.__invalid_spinnerContainer,
+        className: g.__invalid_spinnerContainer,
         children: (0, i.jsx)(a.y$y, {
-            className: p.__invalid_spinner
+            className: g.__invalid_spinner
         })
     }) : (0, i.jsxs)(a.ArX, {
-        className: p.$$,
+        className: g.$$,
         children: [(0, i.jsx)(a.Heading, {
             variant: "heading-xl/semibold",
-            className: p.DX,
-            children: g.intl.format(g.t.xHMpym, {
+            className: g.DX,
+            children: p.intl.format(p.t.xHMpym, {
                 serverName: C,
                 channelName: T
             })
         }), (0, i.jsx)(a.Text, {
-            className: p.Lv,
+            className: g.Lv,
             variant: "text-md/normal",
             color: "text-default",
             children: E?.description

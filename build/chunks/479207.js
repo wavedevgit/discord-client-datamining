@@ -1,7 +1,7 @@
 /** chunk id: 479207 params = (module,exports,require) **/
 n.d(t, {
     A: () => G,
-    r: () => M
+    r: () => k
 });
 var i = n(627968),
     a = n(64700),
@@ -19,13 +19,13 @@ var i = n(627968),
     g = n(175203),
     f = n(163432),
     A = n(734057),
-    x = n(430452),
-    I = n(309010),
+    I = n(430452),
+    x = n(309010),
     E = n(256415),
     b = n(996439),
     v = n(810412),
-    C = n(799808),
-    S = n(129537),
+    S = n(799808),
+    C = n(129537),
     y = n(412477),
     T = n(916494),
     N = n(897720),
@@ -34,17 +34,17 @@ var i = n(627968),
     O = n(731854),
     j = n(985018),
     P = n(144660);
-let D = a.memo(function(e) {
+let R = a.memo(function(e) {
         let {
             participant: t,
             channel: n,
             context: a
         } = e, r = t.user?.id;
-        return (0, s.bG)([x.Ay], () => null != t.user && null != a && null != n && x.Ay.isLocalVideoDisabled(r, a), [r, t.user, a, n]) ? null : (0, i.jsx)(g.Ay, {
+        return (0, s.bG)([I.Ay], () => null != t.user && null != a && null != n && I.Ay.isLocalVideoDisabled(r, a), [r, t.user, a, n]) ? null : (0, i.jsx)(g.Ay, {
             ...e
         })
     }),
-    R = a.memo(function(e) {
+    D = a.memo(function(e) {
         let {
             context: t = O.x.DEFAULT,
             participants: r,
@@ -90,7 +90,7 @@ let D = a.memo(function(e) {
             height: c
         }), [o, c]);
         return (0, i.jsx)(i.Fragment, {
-            children: r.map(e => (0, i.jsx)(D, {
+            children: r.map(e => (0, i.jsx)(R, {
                 participant: e,
                 width: o,
                 className: P.Vs,
@@ -107,7 +107,7 @@ let D = a.memo(function(e) {
             }, e.id))
         })
     }),
-    k = a.memo(function(e) {
+    M = a.memo(function(e) {
         let {
             context: t = O.x.DEFAULT,
             participants: n,
@@ -121,7 +121,7 @@ let D = a.memo(function(e) {
             containerRef: m
         } = e, p = "boolean" != typeof d.meta.horizontal || d.meta.horizontal, g = n.length > 0 && null != t && null != c && (!s || d.pinned);
         a.useEffect(() => {
-            (0, C.j_)({
+            (0, S.j_)({
                 locked: s,
                 pinned: d.pinned,
                 widget: d.type,
@@ -140,7 +140,7 @@ let D = a.memo(function(e) {
             ref: m,
             className: A,
             style: f,
-            children: (0, i.jsx)(R, {
+            children: (0, i.jsx)(D, {
                 context: t,
                 participants: n,
                 locked: s,
@@ -159,7 +159,7 @@ let D = a.memo(function(e) {
             })
         }) : null
     }),
-    M = e => {
+    k = e => {
         let {
             widget: t,
             computedSize: n,
@@ -185,7 +185,7 @@ let D = a.memo(function(e) {
     };
 
 function G(e) {
-    let t = (0, s.bG)([I.A, A.A], () => A.A.getChannel(I.A.getVoiceChannelId())),
+    let t = (0, s.bG)([x.A, A.A], () => A.A.getChannel(x.A.getVoiceChannelId())),
         n = 2 * e.padding + 2 * e.borderWidth,
         r = t?.id,
         [l, o] = (0, s.bG)([_.A], () => null == r ? [
@@ -198,7 +198,7 @@ function G(e) {
             ref: g
         } = (0, u.Ay)(e.locked, e.widget.pinned),
         {
-            participantTileWidth: x,
+            participantTileWidth: I,
             visibleParticipants: E
         } = (0, f.i4)(d ? h : m, l, {
             tileWidth: 192,
@@ -209,7 +209,7 @@ function G(e) {
             version: o
         }),
         v = (0, s.bG)([p.A], () => p.A.getWindowState(w.f)),
-        C = {
+        S = {
             id: e.widget.id,
             containerSize: {
                 containerHeight: m,
@@ -258,10 +258,10 @@ function G(e) {
             let {
                 width: o,
                 height: d
-            } = M({
+            } = k({
                 ...s,
                 widget: r,
-                operation: S.P.RESIZE_NORTH,
+                operation: C.P.RESIZE_NORTH,
                 computedSize: {
                     width: a,
                     height: i
@@ -283,14 +283,14 @@ function G(e) {
     }({
         horizontal: d,
         widget: e.widget,
-        widgetLayoutSpecs: C
-    }), (0, i.jsx)(k, {
+        widgetLayoutSpecs: S
+    }), (0, i.jsx)(M, {
         ...e,
         channel: t,
         participants: E,
         participantsVersion: o,
-        width: d ? x : h ?? e.width,
-        height: d ? m ?? e.height : x,
+        width: d ? I : h ?? e.width,
+        height: d ? m ?? e.height : I,
         containerRef: g
     })
 }

@@ -1,6 +1,6 @@
 /** chunk id: 815213 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968),
     l = n(64700),
@@ -28,7 +28,7 @@ function m(e) {
         l = h.Ay.isChannelMuted(n, t.id);
     return (!i || !l) && u.Ay.getMentionCount(e) > 0
 }
-let g = l.forwardRef(function(e, t) {
+let p = l.forwardRef(function(e, t) {
     let {
         guildId: n,
         guildChannels: l,

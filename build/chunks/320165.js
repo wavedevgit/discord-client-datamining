@@ -18,13 +18,13 @@ var i = n(627968),
     g = n(95550),
     f = n(95701),
     A = n(734057),
-    x = n(383501),
-    I = n(994500),
+    I = n(383501),
+    x = n(994500),
     E = n(543465),
     b = n(287809),
     v = n(810412),
-    C = n(914853),
-    S = n(589051),
+    S = n(914853),
+    C = n(589051),
     y = n(129537),
     T = n(578093),
     N = n(145567),
@@ -33,11 +33,11 @@ var i = n(627968),
     O = n(691761),
     j = n(256688),
     P = n(652215),
-    D = n(895867),
-    R = n(985018),
-    k = n(580884);
+    R = n(895867),
+    D = n(985018),
+    M = n(580884);
 
-function M(e) {
+function k(e) {
     return null != e && (e.isDM() || e.isMultiUserDM())
 }
 
@@ -77,12 +77,12 @@ function G(e) {
             return (0, i.jsx)("div", {
                 ref: s,
                 children: (0, i.jsx)(d.m, {
-                    text: R.intl.string(R.t["mp1N/2"]),
-                    "aria-label": R.intl.string(R.t["mp1N/2"]),
+                    text: D.intl.string(D.t["mp1N/2"]),
+                    "aria-label": D.intl.string(D.t["mp1N/2"]),
                     children: (0, i.jsx)(c.K0, {
                         ...n,
                         icon: c.tsw,
-                        "aria-label": R.intl.string(R.t["mp1N/2"]),
+                        "aria-label": D.intl.string(D.t["mp1N/2"]),
                         size: "sm",
                         variant: "icon-only",
                         onClick: r
@@ -102,7 +102,7 @@ function z(e) {
             value: v.IP.SETTINGS_OPENED,
             secondaryValue: "notification_settings"
         })
-    }, []), g = R.intl.string(R.t.h850Ss), f = o || u !== P.orn.ALL_MESSAGES ? c.a_I : c.XFE;
+    }, []), g = D.intl.string(D.t.h850Ss), f = o || u !== P.orn.ALL_MESSAGES ? c.a_I : c.XFE;
     return l && null != t ? (0, i.jsx)(c.YNO, {
         targetElementRef: n,
         shouldShow: _,
@@ -115,7 +115,7 @@ function z(e) {
             ...e,
             channel: t,
             navId: "overlay-channel-context",
-            label: R.intl.string(R.t.Xm41aV)
+            label: D.intl.string(D.t.Xm41aV)
         }),
         clickTrap: !0,
         children: e => {
@@ -150,13 +150,13 @@ function U(e) {
         onTogglePinsPopout: r,
         onRequestClosePinsPopout: l
     } = e;
-    return M(t) ? (0, i.jsxs)(i.Fragment, {
+    return k(t) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.m, {
-            text: R.intl.string(R.t.JJogjm),
-            "aria-label": R.intl.string(R.t.JJogjm),
+            text: D.intl.string(D.t.JJogjm),
+            "aria-label": D.intl.string(D.t.JJogjm),
             children: (0, i.jsx)(c.K0, {
                 icon: c._jp,
-                "aria-label": R.intl.string(R.t.JJogjm),
+                "aria-label": D.intl.string(D.t.JJogjm),
                 size: "sm",
                 variant: "icon-only",
                 onClick: () => n(!1)
@@ -167,11 +167,11 @@ function U(e) {
             onTogglePinsPopout: r,
             onRequestClosePinsPopout: l
         }), t.isMultiUserDM() ? (0, i.jsx)(d.m, {
-            text: R.intl.string(R.t["LR+Ptf"]),
-            "aria-label": R.intl.string(R.t["LR+Ptf"]),
+            text: D.intl.string(D.t["LR+Ptf"]),
+            "aria-label": D.intl.string(D.t["LR+Ptf"]),
             children: (0, i.jsx)(c.K0, {
                 icon: c.DpX,
-                "aria-label": R.intl.string(R.t["LR+Ptf"]),
+                "aria-label": D.intl.string(D.t["LR+Ptf"]),
                 size: "sm",
                 variant: "icon-only",
                 onClick: () => {
@@ -229,20 +229,20 @@ function F(e) {
         dragging: g
     } = e, {
         hasFriendList: E
-    } = (0, S.M8)("TextChatHeader"), [G, z] = a.useState(!1), F = (0, s.bG)([x.A], () => x.A.getChannelId(), []), W = t?.isDM() ? n?.id ?? null : null, H = (0, O.p)(W), B = F === t?.id, Y = R.intl.string(D.default.tYPfF2), X = (0, s.bG)([A.A], () => t?.isThread() && null != t.parent_id ? A.A.getChannel(t.parent_id) : null, [t]), Z = (0, s.bG)([b.default, I.A], () => null != X ? (0, h.m1)(X, b.default, I.A) : null, [X]), K = (0, s.bG)([], () => {
+    } = (0, C.M8)("TextChatHeader"), [G, z] = a.useState(!1), F = (0, s.bG)([I.A], () => I.A.getChannelId(), []), W = t?.isDM() ? n?.id ?? null : null, H = (0, O.p)(W), B = F === t?.id, Y = D.intl.string(R.default.tYPfF2), X = (0, s.bG)([A.A], () => t?.isThread() && null != t.parent_id ? A.A.getChannel(t.parent_id) : null, [t]), Z = (0, s.bG)([b.default, x.A], () => null != X ? (0, h.m1)(X, b.default, x.A) : null, [X]), K = (0, s.bG)([], () => {
         var e, i;
-        return e = t, i = n, null == e ? null : e.isDM() && null != i ? I.A.isFriend(i.id) ? {
-            tab: C.x.FRIENDS,
+        return e = t, i = n, null == e ? null : e.isDM() && null != i ? x.A.isFriend(i.id) ? {
+            tab: S.x.FRIENDS,
             targetId: i.id
         } : null : (0, f.ke)(e.type) ? {
-            tab: C.x.MESSAGES,
+            tab: S.x.MESSAGES,
             targetId: e.id
         } : (0, f.ay)(e.type) ? {
-            tab: C.x.VOICE,
+            tab: S.x.VOICE,
             targetId: e.id
         } : null
     }, [t, n]), J = a.useCallback(e => {
-        M(t) && ((0, v.YX)(P.uss.TEXT_CHAT_V3, {
+        k(t) && ((0, v.YX)(P.uss.TEXT_CHAT_V3, {
             type: v.Z5.CALL_BUTTON,
             value: v.IP.ENABLED,
             secondaryValue: e ? "video" : "voice"
@@ -258,14 +258,14 @@ function F(e) {
         })
     }, [t?.id]);
     return (0, i.jsxs)("div", {
-        className: l()(k.XV, g && k.cB),
+        className: l()(M.XV, g && M.cB),
         onMouseDown: e => {
             0 === e.button && p(y.P.MOVE, e.clientX, e.clientY)
         },
         children: [(0, i.jsxs)("div", {
-            className: k.LD,
+            className: M.LD,
             children: [(0, i.jsx)("div", {
-                className: k.gr,
+                className: M.gr,
                 children: (0, i.jsx)(L.J, {
                     application: H,
                     fallback: (0, i.jsx)(w.g, {
@@ -276,17 +276,17 @@ function F(e) {
                     })
                 })
             }), (0, i.jsxs)("div", {
-                className: k.G1,
+                className: M.G1,
                 children: [(() => {
                     if (null != W) return null;
                     let e = (0, m.gU)(t, r);
                     return null != e ? (0, i.jsx)(e, {
-                        className: k.gr,
+                        className: M.gr,
                         size: "xs"
                     }) : null
                 })(), null != X && null != Z ? (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(c.DUT, {
-                        className: k.oH,
+                        className: M.oH,
                         onMouseDown: e => e.stopPropagation(),
                         onClick: e => {
                             e.stopPropagation(), (0, N.D$)({
@@ -306,27 +306,27 @@ function F(e) {
                             children: Z
                         })
                     }), (0, i.jsx)(c._BQ, {
-                        className: k.ln,
+                        className: M.ln,
                         size: "xs",
                         color: c.LU0.colors.TEXT_MUTED
                     })]
                 }) : null, (0, i.jsxs)(c.Text, {
-                    className: k.DD,
+                    className: M.DD,
                     variant: "text-sm/medium",
                     color: "text-strong",
                     children: [_, H?.name != null && "" !== H.name ? (0, i.jsx)(c.Text, {
                         tag: "span",
-                        className: k.X7,
+                        className: M.X7,
                         variant: "text-xs/medium",
                         color: "text-muted",
-                        children: R.intl.formatToPlainString(D.default.x1k3cO, {
+                        children: D.intl.formatToPlainString(R.default.x1k3cO, {
                             gameName: H.name
                         })
                     }) : null]
                 })]
             })]
         }), (0, i.jsxs)("div", {
-            className: k.IE,
+            className: M.IE,
             onMouseDown: e => {
                 e.stopPropagation()
             },
@@ -365,11 +365,11 @@ function F(e) {
                     }
                 })
             }) : (0, i.jsx)(o.u, {
-                title: R.intl.string(D.default.ERApc4),
-                body: R.intl.string(D.default.PBVXVW),
+                title: D.intl.string(R.default.ERApc4),
+                body: D.intl.string(R.default.PBVXVW),
                 children: (0, i.jsx)(c.K0, {
                     icon: c.PGe,
-                    "aria-label": R.intl.string(D.default.ERApc4),
+                    "aria-label": D.intl.string(R.default.ERApc4),
                     size: "sm",
                     variant: "icon-only",
                     onClick: e => {

@@ -1,6 +1,6 @@
 /** chunk id: 517092 params = (module,exports,require) **/
 n.d(t, {
-    A: () => D
+    A: () => O
 }), n(938796);
 var i = n(665260),
     l = n(311907),
@@ -16,7 +16,7 @@ var i = n(665260),
     A = n(652215),
     g = n(790782),
     p = n(355097);
-let _ = [{
+let f = [{
         timeSinceJoin: +u.A.Millis.HOUR,
         sends: 1,
         viewTime: +u.A.Millis.MINUTE
@@ -33,7 +33,7 @@ let _ = [{
         sends: 10,
         viewTime: 30 * u.A.Millis.MINUTE
     }],
-    f = 5 * _[_.length - 1].viewTime,
+    _ = 5 * f[f.length - 1].viewTime,
     E = u.A.Millis.WEEK,
     x = {
         channels: {}
@@ -46,7 +46,7 @@ let _ = [{
 function N() {
     if (null == S || !b(S)) return !1;
     let e = y(S);
-    if (e.lastActionTime > Date.now() - u.A.Millis.DAY && e.viewDuration > f) return !1;
+    if (e.lastActionTime > Date.now() - u.A.Millis.DAY && e.viewDuration > _) return !1;
     let t = Date.now();
     return e.lastActionTime = t, e.viewDuration += t - I, I = t, !0
 }
@@ -99,7 +99,7 @@ class R extends l.Ay.PersistedStore {
                 i = Math.min(h.default.age(e.id), Date.now() - n.getTime()),
                 l = x.channels[e.id];
             if (null == l || l.lastActionTime < Date.now() - E) return !1;
-            for (let e of _)
+            for (let e of f)
                 if (i < e.timeSinceJoin && (l.numSends >= e.sends || l.viewDuration >= e.viewTime)) return !0;
             return !1
         }(t) && (delete x.channels[e], C.add(e), (0, m.mA)(t.guild_id, t.id, g.e.ALL_MESSAGES), !0)
@@ -126,4 +126,4 @@ let M = new R(s.h, {
             t.lastActionTime = Date.now(), t.numSends++
         }
     }),
-    D = M
+    O = M

@@ -1,6 +1,6 @@
 /** chunk id: 825244 params = (module,exports,require) **/
 n.d(t, {
-    A: () => D,
+    A: () => O,
     E: () => M
 }), n(321073);
 var i = n(627968),
@@ -17,8 +17,8 @@ var i = n(627968),
     A = n(668446),
     g = n(997509),
     p = n(794967),
-    _ = n(595818),
-    f = n(961350),
+    f = n(595818),
+    _ = n(961350),
     E = n(71393),
     x = n(287809),
     C = n(147925),
@@ -70,13 +70,13 @@ function M(e) {
     })
 }
 
-function D(e) {
-    let t, s, h, C, D, O, {
+function O(e) {
+    let t, s, h, C, O, D, {
             channel: L
         } = e,
         P = (0, o.bG)([E.A], () => null != L ? E.A.getGuild(L.getGuildId()) : null, [L]),
         k = null != P && N.default.extractTimestamp(P.id) < Date.now() - y.NOr,
-        w = (0, o.bG)([f.default], () => P?.ownerId === f.default.getId(), [P]),
+        w = (0, o.bG)([_.default], () => P?.ownerId === _.default.getId(), [P]),
         {
             canInvite: U,
             canManageGuild: G,
@@ -123,7 +123,7 @@ function D(e) {
             m.Ay.trackWithMetadata(y.HAw.SERVER_SETUP_CTA_CLICKED, {
                 setup_type: b.XT.CHANNEL_WELCOME,
                 action: b.AG.PERSONALIZE_SERVER
-            }), null != P && g.A.open(P.id, (0, _.x)(), {
+            }), null != P && g.A.open(P.id, (0, f.x)(), {
                 section: y.JJy.CHANNEL_WELCOME_CTA
             })
         }, [P]), {
@@ -164,27 +164,27 @@ function D(e) {
         {
             titleAnimatedStyle: Z,
             opacities: X
-        } = (C = (0, u.A)(() => new r.A.Value(0)), D = (0, u.A)(() => new r.A.Value(0)), O = (0, u.A)(() => [new r.A.Value(0), new r.A.Value(0), new r.A.Value(0), new r.A.Value(0)]), l.useEffect(() => {
-            r.A.stagger(300, [r.A.parallel([r.A.timing(D, {
+        } = (C = (0, u.A)(() => new r.A.Value(0)), O = (0, u.A)(() => new r.A.Value(0)), D = (0, u.A)(() => [new r.A.Value(0), new r.A.Value(0), new r.A.Value(0), new r.A.Value(0)]), l.useEffect(() => {
+            r.A.stagger(300, [r.A.parallel([r.A.timing(O, {
                 toValue: 1,
                 duration: 450
             }), r.A.timing(C, {
                 toValue: 1,
                 duration: 450
-            })]), r.A.stagger(100, [r.A.timing(O[0], {
+            })]), r.A.stagger(100, [r.A.timing(D[0], {
                 toValue: 1,
                 duration: 300
-            }), r.A.timing(O[1], {
+            }), r.A.timing(D[1], {
                 toValue: 1,
                 duration: 300
-            }), r.A.timing(O[2], {
+            }), r.A.timing(D[2], {
                 toValue: 1,
                 duration: 300
-            }), r.A.timing(O[3], {
+            }), r.A.timing(D[3], {
                 toValue: 1,
                 duration: 300
             })])]).start()
-        }, [D, C, O]), {
+        }, [O, C, D]), {
             titleAnimatedStyle: $ ? {
                 transform: [{
                     translateY: C.interpolate({
@@ -192,9 +192,9 @@ function D(e) {
                         outputRange: ["-20px", "0px"]
                     })
                 }],
-                opacity: D
+                opacity: O
             } : {},
-            opacities: O
+            opacities: D
         }),
         [Q, ee] = l.useState([]),
         et = Q.length > 0;

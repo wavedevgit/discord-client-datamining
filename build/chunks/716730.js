@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(795816),
     _ = n(933958),
     m = n(5867),
-    g = n(652215),
-    p = n(985018),
+    p = n(652215),
+    g = n(985018),
     f = n(610401);
 
 function x(e) {
@@ -48,15 +48,15 @@ function x(e) {
         E.current?.focus()
     }, []);
     (0, h.Vo)({
-        event: g.jej.FOCUS_CHAT_BUTTON,
+        event: p.jej.FOCUS_CHAT_BUTTON,
         handler: S
     });
-    let b = I ? p.intl.string(p.t["5MstTl"]) : p.intl.string(p.t.kkKapG),
-        v = [b];
-    T > 0 && v.push(p.intl.formatToPlainString(p.t["3l1GOx"], {
+    let b = I ? g.intl.string(g.t["5MstTl"]) : g.intl.string(g.t.kkKapG),
+        y = [b];
+    T > 0 && y.push(g.intl.formatToPlainString(g.t["3l1GOx"], {
         mentionCount: T
-    })), N > 0 && v.push(p.intl.string(p.t.x5zAGZ));
-    let y = (0, a.bG)([_.Ay], () => _.Ay.getFocusedLayout()),
+    })), N > 0 && y.push(g.intl.string(g.t.x5zAGZ));
+    let v = (0, a.bG)([_.Ay], () => _.Ay.getFocusedLayout()),
         j = T > 0 ? T : N,
         R = j > 0;
     return (0, i.jsxs)("div", {
@@ -66,9 +66,9 @@ function x(e) {
             buttonRef: E,
             onClick: C,
             label: b,
-            "aria-label": v.join(", "),
+            "aria-label": y.join(", "),
             tooltipPosition: "top",
-            iconComponent: y === m.E8.NO_CHAT ? r.jQp : r.g8p,
+            iconComponent: v === m.E8.NO_CHAT ? r.jQp : r.g8p,
             themeable: !0,
             className: n,
             ...x

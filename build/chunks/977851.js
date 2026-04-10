@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(222823),
     _ = n(309010),
     m = n(741961),
-    g = n(234320),
-    p = n(20465),
+    p = n(234320),
+    g = n(20465),
     f = n(108460),
     x = n(709562),
     E = n(652215),
@@ -76,8 +76,8 @@ function T(e) {
         {
             disabled: b
         } = T,
-        v = l.useRef(null),
-        y = (0, o.bG)([u.A], () => u.A.getChatOpen(n), [n]),
+        y = l.useRef(null),
+        v = (0, o.bG)([u.A], () => u.A.getChatOpen(n), [n]),
         {
             isShowing: j,
             unreadCount: R,
@@ -92,7 +92,7 @@ function T(e) {
                 a(t > 0);
                 let e = setTimeout(() => {
                     a(!1)
-                }, p.R);
+                }, g.R);
                 return () => {
                     clearTimeout(e), a(!1)
                 }
@@ -103,8 +103,8 @@ function T(e) {
             }
         }(n),
         L = l.useCallback(() => {
-            (0, h.X)(S, h.O.CHAT, !y), A?.(), !y && m && f?.(), d.A.updateChatOpen(n, !y, "toggle chat button")
-        }, [n, y, A, m, f, S]),
+            (0, h.X)(S, h.O.CHAT, !v), A?.(), !v && m && f?.(), d.A.updateChatOpen(n, !v, "toggle chat button")
+        }, [n, v, A, m, f, S]),
         M = l.useCallback(e => {
             let {
                 className: t
@@ -115,16 +115,16 @@ function T(e) {
             })
         }, [n]),
         D = l.useCallback(() => {
-            v.current?.focus()
+            y.current?.focus()
         }, []);
-    (0, g.Vo)({
+    (0, p.Vo)({
         event: E.jej.FOCUS_CHAT_BUTTON,
         handler: b ? null : D
     });
     let [U, G] = l.useState(!1), P = l.useCallback(() => {
         _ && G(!0)
     }, [_]);
-    (0, g.Vo)({
+    (0, p.Vo)({
         event: E.jej.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
         handler: P
     }), l.useEffect(() => {
@@ -135,11 +135,11 @@ function T(e) {
             clearTimeout(e)
         }
     }, [U]);
-    let k = [t = _ && b ? I.intl.string(I.t.DPgc5h) : y ? I.intl.string(I.t.nthdxB) : I.intl.string(I.t["5KxXrK"])];
+    let k = [t = _ && b ? I.intl.string(I.t.DPgc5h) : v ? I.intl.string(I.t.nthdxB) : I.intl.string(I.t["5KxXrK"])];
     return O > 0 && k.push(I.intl.formatToPlainString(I.t["3l1GOx"], {
         mentionCount: O
     })), R > 0 && k.push(I.intl.string(I.t.x5zAGZ)), (0, i.jsx)(x.A, {
-        buttonRef: v,
+        buttonRef: y,
         onClick: L,
         label: t,
         "aria-label": k.join(", "),

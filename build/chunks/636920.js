@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(69555),
     _ = n(886019),
     m = n(846218),
-    g = n(806246),
-    p = n(358957),
+    p = n(806246),
+    g = n(358957),
     f = n(559405),
     x = n(708455),
     E = n(652215),
@@ -31,25 +31,25 @@ function N(e) {
         isSelf: T = !1,
         analyticsSource: S,
         onAction: b
-    } = e, v = (0, s.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), y = (0, s.bG)([c.A], () => c.A.can(E.xBc.CONNECT, n), [n]), j = null == t.emoji || (0, m.n)(t.emoji, n);
+    } = e, y = (0, s.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), v = (0, s.bG)([c.A], () => c.A.can(E.xBc.CONNECT, n), [n]), j = null == t.emoji || (0, m.n)(t.emoji, n);
     l.useEffect(() => {
         h.default.track(E.HAw.VIEW_HANG_STATUS, {
             source: S,
             other_user_id: N,
-            ...(0, g.A)(n.id)
+            ...(0, p.A)(n.id)
         })
     }, [S, n.id, N]);
     let R = l.useCallback(() => {
-            !v && y && (d.default.selectVoiceChannel(n.id), b?.(), h.default.track(E.HAw.HANG_STATUS_CTA_CLICKED, {
+            !y && v && (d.default.selectVoiceChannel(n.id), b?.(), h.default.track(E.HAw.HANG_STATUS_CTA_CLICKED, {
                 source: S,
-                ...(0, g.A)(n.id),
+                ...(0, p.A)(n.id),
                 other_user_id: N,
                 cta_type: "join"
             }))
-        }, [v, y, n.id, N, S, b]),
+        }, [y, v, n.id, N, S, b]),
         O = l.useCallback(() => {
-            if (!v || !j || null == t.state) return;
-            let [e] = (0, p.e)(N, t.state);
+            if (!y || !j || null == t.state) return;
+            let [e] = (0, g.e)(N, t.state);
             if (null != e) {
                 if (e === x.Kk.CUSTOM) {
                     if (null == t.details || null == t.emoji) return;
@@ -57,12 +57,12 @@ function N(e) {
                 } else(0, A.Iq)(e, !0);
                 b?.(), h.default.track(E.HAw.HANG_STATUS_CTA_CLICKED, {
                     source: S,
-                    ...(0, g.A)(n.id),
+                    ...(0, p.A)(n.id),
                     other_user_id: N,
                     cta_type: "swipe"
                 })
             }
-        }, [v, j, t, n.id, N, S, b]),
+        }, [y, j, t, n.id, N, S, b]),
         L = (0, _.Au)(N, t);
     return (0, i.jsxs)("div", {
         className: C.kL,
@@ -78,7 +78,7 @@ function N(e) {
                 delay: 0,
                 children: L
             })
-        }), v && !T ? (0, i.jsx)(r.m_, {
+        }), y && !T ? (0, i.jsx)(r.m_, {
             text: j ? void 0 : I.intl.string(I.t["0LMpW+"]),
             children: (0, i.jsx)("div", {
                 children: (0, i.jsx)(o.Button, {
@@ -89,7 +89,7 @@ function N(e) {
                     disabled: !j
                 })
             })
-        }) : !T && y && (0, i.jsx)(o.Button, {
+        }) : !T && v && (0, i.jsx)(o.Button, {
             size: "sm",
             variant: "secondary",
             text: I.intl.string(I.t["B/dHXL"]),

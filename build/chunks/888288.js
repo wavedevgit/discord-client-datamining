@@ -28,8 +28,8 @@ var i = n(284009),
     I = n(734057),
     N = n(803224),
     T = n(290863),
-    O = n(309010),
-    b = n(461213),
+    b = n(309010),
+    O = n(461213),
     j = n(351906),
     D = n(287809),
     R = n(845618),
@@ -108,7 +108,7 @@ function q(e) {
     if (null == s || !s.isRingable() || "GUILD_RING_START" === e.type && !S.A.getCurrentConfig({
             guildId: e.guildId,
             location: "OverlayStartRinging"
-        }).enabled || b.A.getStatus() === G.clD.DND || v.NO.getSetting()) return !1;
+        }).enabled || O.A.getStatus() === G.clD.DND || v.NO.getSetting()) return !1;
     let l = F.find(e => 1 === e.type && e.channelId === t && e.messageType === G.lAJ.CALL);
     null != l && Z(l.id), Q((0, p.A)(s), {
         priority: 1,
@@ -120,7 +120,7 @@ function q(e) {
 class $ extends a.Ay.Store {
     static displayName = "OverlayNotificationsStore";
     initialize() {
-        this.waitFor(C.default, I.A, _.A, N.A, L.default, E.default, P.A, y.A, w.default, T.A, O.A, b.A, j.A, D.default)
+        this.waitFor(C.default, I.A, _.A, N.A, L.default, E.default, P.A, y.A, w.default, T.A, b.A, O.A, j.A, D.default)
     }
     getNotifications() {
         return F
@@ -190,7 +190,7 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
                         l = (0, c.A)(e, t, n, a, i);
                         break;
                     case G.xL.JOIN_REQUEST:
-                        if (null == (i = b.A.getApplicationActivity(a.id)) || null == i.party || i.party.id !== t.activity.party_id) return !1;
+                        if (null == (i = O.A.getApplicationActivity(a.id)) || null == i.party || i.party.id !== t.activity.party_id) return !1;
                         l = (0, A.A)(e, n, a, i)
                 }
                 if (null == l) return !1;
@@ -203,7 +203,7 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
             }(i, n, l);
             if (!1 !== e) return e
         }
-        if ((!w.default.isInstanceLocked() || w.default.isPinned(G.uss.TEXT)) && t === O.A.getChannelId() || y.A.isNotificationDisabled(V.KS.TextChat) || j.A.disableNotifications || !(0, x.lx)(n, t)) return !1;
+        if ((!w.default.isInstanceLocked() || w.default.isPinned(G.uss.TEXT)) && t === b.A.getChannelId() || y.A.isNotificationDisabled(V.KS.TextChat) || j.A.disableNotifications || !(0, x.lx)(n, t)) return !1;
         let a = !N.A.isSoundDisabled(R.cH);
         Q((0, f.A)(i, n, l, a), {
             type: 1,

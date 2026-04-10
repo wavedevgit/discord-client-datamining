@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(260509),
     _ = n(71393),
     m = n(287809),
-    g = n(531053),
-    p = n(606256),
+    p = n(531053),
+    g = n(606256),
     f = n(652215),
     x = n(819638),
     E = n(985018),
@@ -50,7 +50,7 @@ function T(e) {
         disableTooltip: t,
         lastTargetNode: n
     } = e, r = (0, s.yK)([_.A], () => _.A.getGuildsArray()), T = (0, s.bG)([m.default], () => m.default.getCurrentUser()), S = l.useMemo(() => r.some(e => (0, A.bM)(e, T)), [r, T]), b = (0, a.red)(e => (0, a.fDT)(e, x.fc)), {
-        analyticsLocations: v
+        analyticsLocations: y
     } = (0, o.Ay)();
     return (0, i.jsx)("div", {
         className: I.Uq,
@@ -59,7 +59,7 @@ function T(e) {
             inlineSpecs: C,
             position: "right",
             disabled: t,
-            children: [(0, i.jsx)(p.A, {
+            children: [(0, i.jsx)(g.A, {
                 showPill: !1,
                 id: "create-join-button",
                 onClick: () => {
@@ -71,7 +71,7 @@ function T(e) {
                             page: f.ThZ.CREATE_JOIN_GUILD_MODAL,
                             section: f.JJy.GUILD_CAP_UPSELL_MODAL
                         },
-                        analyticsLocations: v
+                        analyticsLocations: y
                     }) : d.A.openCreateGuildModal({
                         location: "Guild List"
                     })
@@ -80,7 +80,7 @@ function T(e) {
                 onContextMenu: N,
                 tooltip: E.intl.string(E.t.l5WIbf),
                 icon: a.U1e
-            }), null != n && (0, i.jsx)(g.Ay, {
+            }), null != n && (0, i.jsx)(p.Ay, {
                 name: E.intl.string(E.t["45xjM5"]),
                 targetNode: n,
                 below: !0,

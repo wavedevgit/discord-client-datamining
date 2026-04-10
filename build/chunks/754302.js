@@ -1,22 +1,22 @@
 /** chunk id: 754302 params = (module,exports,require) **/
-n.d(t, {
+a.d(t, {
     B: () => _,
     q: () => s
 });
-var a = n(627968);
-n(64700);
-var r = n(503698),
-    l = n.n(r),
-    i = n(397927),
-    o = n(348953);
+var n = a(627968);
+a(64700);
+var r = a(503698),
+    i = a.n(r),
+    l = a(397927),
+    o = a(348953);
 
 function s(e) {
     let {
         children: t
     } = e;
-    return (0, a.jsx)("div", {
+    return (0, n.jsx)("div", {
         className: o.MD,
-        children: (0, a.jsx)("div", {
+        children: (0, n.jsx)("div", {
             className: o.Qs,
             children: t
         })
@@ -26,52 +26,52 @@ function s(e) {
 function _(e) {
     let {
         icon: t,
-        title: n,
+        title: a,
         description: r,
         iconClassName: s,
         color: _,
         listType: c = "icon",
-        completed: u = !1,
-        index: d
+        completed: d = !1,
+        index: u
     } = e;
-    return (0, a.jsxs)("div", {
+    return (0, n.jsxs)("div", {
         className: o.Hn,
         children: [(() => {
-            if ("numbered" === c && null != d)
-                if (u) return (0, a.jsx)("div", {
+            if ("numbered" === c && null != u)
+                if (d) return (0, n.jsx)("div", {
                     className: o.ai,
-                    children: (0, a.jsx)(i.rOg, {
+                    children: (0, n.jsx)(l.rOg, {
                         color: "green",
-                        className: l()(o.Kk, s)
+                        className: i()(o.Kk, s)
                     })
                 });
-                else return (0, a.jsx)(i.Heading, {
+                else return (0, n.jsx)(l.Heading, {
                     variant: "heading-md/semibold",
                     color: "text-brand",
                     className: o.ai,
-                    children: d + 1
+                    children: u + 1
                 });
-            if (null != t) return (0, a.jsx)("div", {
+            if (null != t) return (0, n.jsx)("div", {
                 className: o.zc,
-                children: (0, a.jsx)(t, {
+                children: (0, n.jsx)(t, {
                     color: _ ?? "currentColor",
-                    className: l()(o.Kk, s)
+                    className: i()(o.Kk, s)
                 })
             })
-        })(), (0, a.jsxs)("div", {
+        })(), (0, n.jsxs)("div", {
             className: o.FS,
-            children: [(0, a.jsx)(i.Text, {
+            children: [(0, n.jsx)(l.Text, {
                 variant: "text-md/semibold",
                 color: "text-strong",
-                className: l()({
-                    [o.VA]: u
+                className: i()({
+                    [o.VA]: d
                 }),
-                children: n
-            }), null != r && (0, a.jsx)(i.Text, {
+                children: a
+            }), null != r && (0, n.jsx)(l.Text, {
                 variant: "text-xs/medium",
                 color: "text-subtle",
-                className: l()({
-                    [o.VA]: u
+                className: i()({
+                    [o.VA]: d
                 }),
                 children: r
             })]

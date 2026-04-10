@@ -1,6 +1,6 @@
 /** chunk id: 379768 params = (module,exports,require) **/
 n.d(t, {
-    A: () => O
+    A: () => D
 });
 var i = n(627968),
     l = n(64700),
@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(155718),
     g = n(47167),
     p = n(685374),
-    _ = n(569989),
-    f = n(997509),
+    f = n(569989),
+    _ = n(997509),
     E = n(46054),
     x = n(34457),
     C = n(317525),
@@ -31,13 +31,13 @@ var i = n(627968),
     j = n(652215),
     R = n(985018),
     M = n(650373),
-    D = n(782691);
+    O = n(782691);
 
-function O(e) {
+function D(e) {
     let {
         channel: t
-    } = e, [n, s] = l.useState(!1), r = (0, g.Ay)(t, !0), O = t.guild_id, L = (0, d.bG)([C.A], () => null != O ? C.A.getSortedRoles(O) : void 0), P = (0, d.bG)([T.default, S.A], () => T.default.getUser(S.A.getGuild(O)?.ownerId)), k = l.useMemo(() => null != L ? L.filter(e => !(0, x.Oy)(e)) : [], [L]), w = l.useMemo(() => o()(k).filter(e => {
-        if (null == O) return !1;
+    } = e, [n, s] = l.useState(!1), r = (0, g.Ay)(t, !0), D = t.guild_id, L = (0, d.bG)([C.A], () => null != D ? C.A.getSortedRoles(D) : void 0), P = (0, d.bG)([T.default, S.A], () => T.default.getUser(S.A.getGuild(D)?.ownerId)), k = l.useMemo(() => null != L ? L.filter(e => !(0, x.Oy)(e)) : [], [L]), w = l.useMemo(() => o()(k).filter(e => {
+        if (null == D) return !1;
         let n = N.aH({
             forceRoles: {
                 [e.id]: e
@@ -45,7 +45,7 @@ function O(e) {
             context: t
         });
         return c.X8(n, c.kg(j.xBc.ADMINISTRATOR, j.xBc.VIEW_CHANNEL))
-    }).value(), [t, O, k]), U = (0, d.yK)([T.default], () => {
+    }).value(), [t, D, k]), U = (0, d.yK)([T.default], () => {
         let e = {};
         for (let n of (null != P && (e[P.id] = P), Object.values(t.permissionOverwrites))) {
             if (n.type !== A.r2.MEMBER || null != e[n.id]) continue;
@@ -73,7 +73,7 @@ function O(e) {
                 channelName: r
             })
         }), (0, i.jsx)(y.j1, {
-            className: D.PT,
+            className: O.PT,
             children: R.intl.format(R.t.QuwqjG, {
                 channelName: r,
                 topicHook: () => E.A.parseTopic(t.topic, !0, {
@@ -138,9 +138,9 @@ function O(e) {
                     disabled: !G,
                     verified: s,
                     onClick: () => {
-                        f.A.open(t.guild_id, j.BEX.MEMBERS), f.A.selectRole(e.id)
+                        _.A.open(t.guild_id, j.BEX.MEMBERS), _.A.selectRole(e.id)
                     }
-                }, e.id) : (0, i.jsx)(_.A, {
+                }, e.id) : (0, i.jsx)(f.A, {
                     className: a()(M.JC, {
                         [M.HV]: n === w.length - 1
                     }),

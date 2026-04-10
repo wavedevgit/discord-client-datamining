@@ -1,11 +1,11 @@
 /** chunk id: 523875 params = (module,exports,require) **/
-n.d(t, {
+a.d(t, {
     L: () => o
 });
-var a = n(627968),
-    r = n(64700),
-    l = n(744682);
-let i = {
+var n = a(627968),
+    r = a(64700),
+    i = a(744682);
+let l = {
         mute: {
             name: "mute",
             start: 0,
@@ -36,20 +36,20 @@ let i = {
             }, [e]),
             _ = r.useCallback(() => {
                 if (null == t.current) return;
-                let n = "mute" === e ? "hover_unmuted" : "hover_muted";
-                t.current.play(n)
+                let a = "mute" === e ? "hover_unmuted" : "hover_muted";
+                t.current.play(a)
             }, [e]),
             c = r.useCallback(() => {
                 if (null == t.current) return;
-                let n = "mute" === e ? "hover_unmuted" : "hover_muted";
-                t.current.stopIfPlaying(n)
+                let a = "mute" === e ? "hover_unmuted" : "hover_muted";
+                t.current.stopIfPlaying(a)
             }, [e]),
-            u = r.useCallback(e => (0, a.jsx)(l.P, {
+            d = r.useCallback(e => (0, n.jsx)(i.P, {
                 ...e,
-                src: () => n.e("18133").then(n.t.bind(n, 705844, 19)),
+                src: () => a.e("18133").then(a.t.bind(a, 705844, 19)),
                 ref: t,
                 initialAnimation: o.current,
-                markers: i
+                markers: l
             }), []);
         return {
             events: {
@@ -60,6 +60,6 @@ let i = {
             play: s,
             getDuration: r.useCallback(() => t.current?.getDuration(), []),
             getCurrentFrame: r.useCallback(() => t.current?.getCurrentFrame() ?? null, []),
-            Component: u
+            Component: d
         }
     }

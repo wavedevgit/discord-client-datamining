@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(747926),
     g = n(954571),
     p = n(203982),
-    _ = n(453771),
-    f = n(518960),
+    f = n(453771),
+    _ = n(518960),
     E = n(408018),
     x = n(447155),
     C = n(652215),
@@ -35,8 +35,8 @@ function v(e) {
         onSelect: j,
         draftType: R,
         editorTextContent: M,
-        setValue: D,
-        openClips: O
+        setValue: O,
+        openClips: D
     } = e, {
         analyticsLocations: L
     } = (0, c.Ay)(), P = (0, u.s)({
@@ -48,11 +48,11 @@ function v(e) {
     }
 
     function U() {
-        g.default.track(C.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), D("/", (0, E.x7)("/"))
+        g.default.track(C.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), O("/", (0, E.x7)("/"))
     }
 
     function G() {
-        O()
+        D()
     }
 
     function F() {
@@ -76,7 +76,7 @@ function v(e) {
             n = "txt",
             i = "",
             l = M.match(N);
-        null != l && (i = l[1], n = l[2], e = l[3], i += l[4]), (0, f.R)([(0, _.VE)(new Blob([e], {
+        null != l && (i = l[1], n = l[2], e = l[3], i += l[4]), (0, _.R)([(0, f.VE)(new Blob([e], {
             type: "text/plain"
         }), `message.${n}`, "text/plain")], t, R), p._.dispatchToLastSubscribed(C.jej.CLEAR_TEXT), "" !== i && p._.dispatchToLastSubscribed(C.jej.INSERT_TEXT, {
             plainText: i

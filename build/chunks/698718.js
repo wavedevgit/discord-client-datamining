@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(465532),
     g = n(843472),
     p = n(414798),
-    _ = n(608299),
-    f = n(147192),
+    f = n(608299),
+    _ = n(147192),
     E = n(820284),
     x = n(955572),
     C = n(775602),
@@ -31,8 +31,8 @@ var i = n(627968),
     j = n(861382),
     R = n(392054),
     M = n(168186),
-    D = n(545152),
-    O = n(972995),
+    O = n(545152),
+    D = n(972995),
     L = n(355622),
     P = n(408018),
     k = n(223938),
@@ -70,8 +70,8 @@ var i = n(627968),
     eA = n(151282),
     eg = n(654783),
     ep = n(970244),
-    e_ = n(631576),
-    ef = n(252263),
+    ef = n(631576),
+    e_ = n(252263),
     eE = n(67259),
     ex = n(351488),
     eC = n(728321),
@@ -85,8 +85,8 @@ var i = n(627968),
     ej = n(994500),
     eR = n(309010),
     eM = n(522602),
-    eD = n(287809),
-    eO = n(954571),
+    eO = n(287809),
+    eD = n(954571),
     eL = n(147036),
     eP = n(234320),
     ek = n(203982),
@@ -156,7 +156,7 @@ class e3 extends l.PureComponent {
             let e = eT.A.getDraft(n.id, eT.C.ChannelMessage);
             e !== i && this.setState((0, P.ur)(e))
         }
-        t.textValue.length < eJ.uvi && i.length >= eJ.uvi && eO.default.track(eJ.HAw.MESSAGE_LENGTH_LIMIT_REACHED, {})
+        t.textValue.length < eJ.uvi && i.length >= eJ.uvi && eD.default.track(eJ.HAw.MESSAGE_LENGTH_LIMIT_REACHED, {})
     }
     draftDidChange = (() => {
         var e = this;
@@ -201,7 +201,7 @@ class e3 extends l.PureComponent {
             case eJ.Ks6.ESCAPE:
                 if (l || e.target !== e.currentTarget) return;
                 if (e.preventDefault(), t) return void(0, x.Bm)();
-                if (eM.A.getUploadCount(i.id, eT.C.ChannelMessage) > 0) return void _.A.clearAll(i.id, eT.C.ChannelMessage)
+                if (eM.A.getUploadCount(i.id, eT.C.ChannelMessage) > 0) return void f.A.clearAll(i.id, eT.C.ChannelMessage)
         }
         n?.(e, s)
     };
@@ -292,7 +292,7 @@ class e3 extends l.PureComponent {
             channel: h,
             pendingReply: m,
             chatInputType: p,
-            threadsAlsoSendToChannel: f
+            threadsAlsoSendToChannel: _
         } = this.props, E = !1;
         if (null != l) {
             if (l.inputType === R.y$.BUILT_IN_INTEGRATION) return ek._.dispatch(eJ.jej.SHAKE_APP, {
@@ -306,7 +306,7 @@ class e3 extends l.PureComponent {
             if (null == e || e === R.iw.CHAT) {
                 let {
                     isAuthorized: e
-                } = await (0, O.q)({
+                } = await (0, D.q)({
                     applicationId: l.applicationId,
                     channel: h,
                     commandIntegrationTypes: l.integration_types
@@ -321,7 +321,7 @@ class e3 extends l.PureComponent {
                     sectionName: n
                 } = (0, eK.bV)(l) ?? {}, i = e === R.iw.APPLICATION_LAUNCHER ? T.A.lastShownEntrypoint() : N.s4.TEXT, {
                     isAuthorized: s
-                } = await (0, O.q)({
+                } = await (0, D.q)({
                     applicationId: l.applicationId,
                     channel: h,
                     commandIntegrationTypes: l.integration_types,
@@ -337,7 +337,7 @@ class e3 extends l.PureComponent {
                 });
                 (0, eK.My)(l)
             }
-            let n = await (0, D.A)({
+            let n = await (0, O.A)({
                 command: l,
                 optionValues: s ?? {},
                 context: {
@@ -393,14 +393,14 @@ class e3 extends l.PureComponent {
                     command: l,
                     isGif: a,
                     pendingReply: m,
-                    alsoForwardToChannelId: f ? h.parent_id ?? void 0 : void 0,
+                    alsoForwardToChannelId: _ ? h.parent_id ?? void 0 : void 0,
                     scheduledTimestamp: this.props.pendingScheduledMessage?.scheduledTimestamp
                 }),
                 location: e$.Hx.CHAT_INPUT
             };
             if (null != c && (I.announcementSendOptions = c), null != r && (I.gifMetadata = r), null != o && (I.flags = (0, u.UI)(I.flags ?? 0, eJ.pr7.IS_COMPONENTS_V2)), a) return g.A.sendMessage(h.id, S, void 0, I).then(() => {
-                f && ex._(h.parent_id ?? void 0)
-            }), (0, eu.Jx)(h.id), ef.B({
+                _ && ex._(h.parent_id ?? void 0)
+            }), (0, eu.Jx)(h.id), e_.B({
                 channelId: h.id,
                 enabled: !1
             }), {
@@ -420,12 +420,12 @@ class e3 extends l.PureComponent {
                         analyticsLocations: [],
                         code: i,
                         reason: l
-                    }) && ("" !== t && "" === eT.A.getDraft(h.id, eT.C.ChannelMessage) && A.A.saveDraft(h.id, t, eT.C.ChannelMessage), 0 === eM.A.getUploadCount(h.id, eT.C.ChannelMessage) && _.A.setUploads({
+                    }) && ("" !== t && "" === eT.A.getDraft(h.id, eT.C.ChannelMessage) && A.A.saveDraft(h.id, t, eT.C.ChannelMessage), 0 === eM.A.getUploadCount(h.id, eT.C.ChannelMessage) && f.A.setUploads({
                         channelId: h.id,
                         uploads: n,
                         draftType: eT.C.ChannelMessage
                     }))
-                }, _.A.clearAll(h.id, eT.C.ChannelMessage)
+                }, f.A.clearAll(h.id, eT.C.ChannelMessage)
             }
             if (null != I.scheduledTimestamp) try {
                 await (0, eA.pr)({
@@ -448,9 +448,9 @@ class e3 extends l.PureComponent {
                     shouldRefocus: !1
                 }
             } else g.A.sendMessage(h.id, S, void 0, I).then(() => {
-                f && ex._(h.parent_id ?? void 0)
+                _ && ex._(h.parent_id ?? void 0)
             });
-            return this.setState((0, P.N3)()), (0, eu.Jx)(h.id), (0, e_.x5)(h.id, p.drafts.type), ef.B({
+            return this.setState((0, P.N3)()), (0, eu.Jx)(h.id), (0, ef.x5)(h.id, p.drafts.type), e_.B({
                 channelId: h.id,
                 enabled: !1
             }), {
@@ -494,8 +494,8 @@ class e3 extends l.PureComponent {
             pendingScheduledMessage: g,
             announcementComposerEnabled: p
         } = this.props, {
-            contentWarningProps: _
-        } = this.state, f = e.type === eJ.rbe.GUILD_ANNOUNCEMENT && p ? (0, i.jsx)(k.A, {
+            contentWarningProps: f
+        } = this.state, _ = e.type === eJ.rbe.GUILD_ANNOUNCEMENT && p ? (0, i.jsx)(k.A, {
             ref: this.props.refInstance,
             textValue: this.state.textValue,
             richValue: this.state.richValue,
@@ -545,26 +545,26 @@ class e3 extends l.PureComponent {
             targetElementRef: this.props.refInstance,
             position: "top",
             onRequestClose: () => {
-                _?.onCancel?.(), this.setState({
+                f?.onCancel?.(), this.setState({
                     contentWarningProps: null
                 })
             },
-            shouldShow: null != _,
+            shouldShow: null != f,
             renderPopout: e => {
                 let {
                     closePopout: t
                 } = e;
-                return o()(null != _, "ChannelTextAreaForm > Popout > renderPopout: contentWarningProps cannot be null"), (0, i.jsx)(ei.A, {
+                return o()(null != f, "ChannelTextAreaForm > Popout > renderPopout: contentWarningProps cannot be null"), (0, i.jsx)(ei.A, {
                     onClose: t,
-                    ..._
+                    ...f
                 })
             },
             children: () => A ? (0, i.jsx)(m.bfh, {
                 isShaking: h > 0,
                 intensity: h,
                 className: eX.Xn,
-                children: f
-            }) : f
+                children: _
+            }) : _
         })
     }
 }
@@ -690,7 +690,7 @@ class e7 extends l.PureComponent {
                 accessibilityLabel: A,
                 showQuarantinedUserBanner: g,
                 filterAfterTimestamp: p,
-                communicationDisabledUntil: _,
+                communicationDisabledUntil: f,
                 shakeIntensity: x,
                 poggermodeEnabled: C,
                 isSelectedResourceChannel: S,
@@ -710,7 +710,7 @@ class e7 extends l.PureComponent {
                 className: eX.li,
                 children: (0, i.jsx)(ez.A, {})
             }),
-            D = (0, i.jsx)("div", {
+            O = (0, i.jsx)("div", {
                 className: eX.li,
                 children: (0, i.jsx)(eC.A, {
                     childRef: this.containerDomRef,
@@ -741,8 +741,8 @@ class e7 extends l.PureComponent {
                     })
                 })
             }),
-            O = v ? M : D,
-            P = (0, eH.m1)(n, eD.default, ej.A);
+            D = v ? M : O,
+            P = (0, eH.m1)(n, eO.default, ej.A);
         if (null != l && (0, et.GP)(l, "ChannelChat")) {
             let e = l.officialMessageColor ?? e$.aj;
             t = (0, e$.L)(e)
@@ -798,7 +798,7 @@ class e7 extends l.PureComponent {
                                     channel: n,
                                     showQuarantinedUserBanner: g,
                                     guild: l,
-                                    communicationDisabledUntil: _,
+                                    communicationDisabledUntil: f,
                                     showAutomodUserProfileChatBlocker: I
                                 }) ?? (0, i.jsxs)("form", {
                                     ref: this.inputFormRef,
@@ -810,11 +810,11 @@ class e7 extends l.PureComponent {
                                         channelId: n.id
                                     }), n.isPrivate() ? (0, i.jsx)(eq.A, {
                                         channel: n,
-                                        children: O
+                                        children: D
                                     }) : (0, i.jsx)(eY.A, {
                                         channel: n,
-                                        children: O
-                                    }), (0, i.jsx)(f.Ay, {
+                                        children: D
+                                    }), (0, i.jsx)(_.Ay, {
                                         channel: n,
                                         isInTextChannel: !0
                                     })]
@@ -838,7 +838,7 @@ let e6 = l.memo(function(e) {
         accessibilityLabel: r
     } = (0, eV.A)({
         channel: t
-    }), o = (0, ed.L)(eD.default.getCurrentUser(), t), [c] = (0, q.c)(n?.id), d = (0, V.uZ)(n?.id), u = (0, h.bG)([eD.default], () => eD.default.getCurrentUser()), A = (0, h.bG)([ev.Ay], () => null != u && (ev.Ay.getMember(n?.id ?? eJ.dJq, u?.id)?.isPending ?? !1)), g = (0, h.bG)([ea.A], () => ea.A.isEnabled()), p = (0, ec.A)(t.id), _ = (0, J.A)(t.id), E = (0, eg.D)(t.id), x = (0, h.bG)([eE.A], () => eE.A.getAlsoSendToChannel(t.id)), S = (0, h.bG)([er.Ay, eS.default], () => er.Ay.getUserCombo(eS.default.getId(), t.id)), I = (0, f.rj)(t), T = (0, f.aW)(t), N = I.length > 0 || t.rateLimitPerUser > 0 || null != S || null != T, {
+    }), o = (0, ed.L)(eO.default.getCurrentUser(), t), [c] = (0, q.c)(n?.id), d = (0, V.uZ)(n?.id), u = (0, h.bG)([eO.default], () => eO.default.getCurrentUser()), A = (0, h.bG)([ev.Ay], () => null != u && (ev.Ay.getMember(n?.id ?? eJ.dJq, u?.id)?.isPending ?? !1)), g = (0, h.bG)([ea.A], () => ea.A.isEnabled()), p = (0, ec.A)(t.id), f = (0, J.A)(t.id), E = (0, eg.D)(t.id), x = (0, h.bG)([eE.A], () => eE.A.getAlsoSendToChannel(t.id)), S = (0, h.bG)([er.Ay, eS.default], () => er.Ay.getUserCombo(eS.default.getId(), t.id)), I = (0, _.rj)(t), T = (0, _.aW)(t), N = I.length > 0 || t.rateLimitPerUser > 0 || null != S || null != T, {
         showLinkedLobbyApplicationLoadingIndicator: v
     } = (0, eB.A)(t.linkedLobby), y = (0, B.A)("ChannelChat");
     return (0, W.A)(t), (0, i.jsx)(e7, {
@@ -857,7 +857,7 @@ let e6 = l.memo(function(e) {
         communicationDisabledUntil: c,
         shakeIntensity: p,
         poggermodeEnabled: g,
-        isSelectedResourceChannel: _,
+        isSelectedResourceChannel: f,
         showAutomodUserProfileChatBlocker: d && !A,
         pendingScheduledMessage: E,
         messagesTypingGradient: N,

@@ -21,10 +21,10 @@ function g(e) {
         user: n,
         guild: g,
         channel: p
-    } = e, _ = (0, l.bG)([u.A], () => null != n && null != g && (0, r.Kd)(n, g, [u.A])), {
-        messageReference: f
-    } = t, E = (0, l.bG)([d.A], () => null != f ? d.A.getMessage(f.channel_id, f.message_id) : null), x = (0, l.bG)([c.A], () => null != E ? c.A.getChannel(E.channel_id) : null), C = (0, l.bG)([c.A], () => c.A.getChannel(p.id)?.isArchivedThread() ?? !1);
-    if (!_) return null;
+    } = e, f = (0, l.bG)([u.A], () => null != n && null != g && (0, r.Kd)(n, g, [u.A])), {
+        messageReference: _
+    } = t, E = (0, l.bG)([d.A], () => null != _ ? d.A.getMessage(_.channel_id, _.message_id) : null), x = (0, l.bG)([c.A], () => null != E ? c.A.getChannel(E.channel_id) : null), C = (0, l.bG)([c.A], () => c.A.getChannel(p.id)?.isArchivedThread() ?? !1);
+    if (!f) return null;
     let S = null == E ? A.intl.string(m.default["0IZbwC"]) : A.intl.string(m.default.Uj6oD4),
         I = null == E,
         T = `delete-message-${t.id}`;

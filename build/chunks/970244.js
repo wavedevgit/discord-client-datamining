@@ -3,10 +3,10 @@ n.d(t, {
     CI: () => E,
     Re: () => g,
     c_: () => h,
-    e0: () => f,
+    e0: () => _,
     kM: () => p,
     kb: () => m,
-    s: () => _,
+    s: () => f,
     xP: () => A
 }), n(321073);
 var i = n(627968),
@@ -46,7 +46,7 @@ function p(e) {
     }), a.ToastType.FAILURE))
 }
 
-function _(e) {
+function f(e) {
     let {
         channel: t
     } = e, n = s()().add(1, "day").startOf("day").set("hours", 9), l = s()().add(1, "day").startOf("day").set("hours", 13), r = s()().startOf("isoWeek").add(1, "week").set("hours", 9), c = [{
@@ -70,14 +70,14 @@ function _(e) {
         children: [(0, i.jsx)(a.bXX, {}), (0, i.jsx)(a.Drp, {
             id: "custom-time",
             label: u.intl.string(u.t.stHooC),
-            action: () => f({
+            action: () => _({
                 channel: t
             })
         }, "custom-time")]
     })), c
 }
 
-function f(e) {
+function _(e) {
     let {
         channel: t,
         defaultValue: l = s()().startOf("hour").add(1, "hour")

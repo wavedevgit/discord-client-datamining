@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(954571),
     g = n(147036),
     p = n(845202),
-    _ = n(86944),
-    f = n(737045),
+    f = n(86944),
+    _ = n(737045),
     E = n(652215),
     x = n(985018),
     C = n(401443);
@@ -48,11 +48,11 @@ function I(e) {
         ...A
     } = e, [E, S] = l.useState(""), [I, T] = l.useState({}), [N, v] = l.useState(!1), [y, b] = l.useState(null), j = l.useRef(null), R = (0, d.Ay)(n), {
         roles: M,
-        members: D,
-        getRichTag: O
-    } = (0, _.K)(t, n, n.accessPermissions, E), L = p.A.useSections({
+        members: O,
+        getRichTag: D
+    } = (0, f.K)(t, n, n.accessPermissions, E), L = p.A.useSections({
         roles: M,
-        members: D
+        members: O
     }), P = h && 0 === Object.keys(I).length;
     async function k() {
         if (null == n || 0 === Object.keys(I).length) return void a();
@@ -64,7 +64,7 @@ function I(e) {
                 let {
                     row: n
                 } = t;
-                null != n.id && "" !== n.id && (n.rowType === f.T6.ROLE ? l.push((0, g.we)(n.id, e.type)) : n.rowType === f.T6.MEMBER && l.push((0, g.n3)(n.id, e.type)))
+                null != n.id && "" !== n.id && (n.rowType === _.T6.ROLE ? l.push((0, g.we)(n.id, e.type)) : n.rowType === _.T6.MEMBER && l.push((0, g.n3)(n.id, e.type)))
             }), (0, o.R$)(e.id, l, i)), a(), v(!1)
         } catch (t) {
             let e = new c.LG(t);
@@ -79,8 +79,8 @@ function I(e) {
         pendingAdditions: I,
         setPendingAdditions: T,
         roles: M,
-        members: D,
-        getRichTag: O,
+        members: O,
+        getRichTag: D,
         children: (0, i.jsx)(s.Modal, {
             ...A,
             title: x.intl.string(x.t.dMJ3Y6),

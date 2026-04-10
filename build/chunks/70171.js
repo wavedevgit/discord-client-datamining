@@ -18,11 +18,11 @@ var i = n(627968),
 let p = {
         visibility: "hidden"
     },
-    _ = {
+    f = {
         precision: 1e-4,
         duration: 300
     },
-    f = {
+    _ = {
         tension: 150,
         friction: 20,
         precision: 1e-4,
@@ -67,7 +67,7 @@ function x(e) {
             enter: {
                 opacity: 0
             },
-            config: _
+            config: f
         }, "animate-always"),
         R = (0, l.useRef)(null),
         M = (0, o.pnh)(N, {
@@ -106,7 +106,7 @@ function x(e) {
                     })()
                 }
             },
-            config: x.enabled ? E : f,
+            config: x.enabled ? E : _,
             onRest: (e, t) => {
                 null != t.item && null != N.find(e => e.timestamp === t.item.timestamp) && (0, u.MI)(I, t.item.timestamp)
             }

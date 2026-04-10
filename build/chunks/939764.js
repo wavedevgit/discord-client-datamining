@@ -3,8 +3,8 @@ n.d(t, {
     V: () => d
 });
 var a = n(64700),
-    l = n(311907),
-    i = n(429913),
+    i = n(311907),
+    l = n(429913),
     r = n(832163),
     s = n(594832),
     o = n(631784),
@@ -13,12 +13,12 @@ var a = n(64700),
 function d(e) {
     let t = c.default.getCurrentUser()?.id,
         n = a.useMemo(() => null != t ? [t] : [], [t]),
-        d = (0, l.bG)([r.A], () => null != e ? r.A.getApplicationIdFromDetectableId(e.id) : void 0),
-        u = (0, i.h)(d),
+        d = (0, i.bG)([r.A], () => null != e ? r.A.getApplicationIdFromDetectableId(e.id) : void 0),
+        u = (0, l.h)(d),
         m = a.useMemo(() => null != d ? [d] : [], [d]),
         {
-            recommendations: x,
-            status: h
+            recommendations: f,
+            status: x
         } = (0, o.XQ)({
             applicationIds: m,
             userIds: n,
@@ -26,10 +26,10 @@ function d(e) {
             source: s.B5.USER_PROFILE
         });
     return {
-        socialLayerStorefrontRecommendationsData: a.useMemo(() => null == u || null == u.guildId || "success" !== h || 0 === x.length ? null : {
+        socialLayerStorefrontRecommendationsData: a.useMemo(() => null == u || null == u.guildId || "success" !== x || 0 === f.length ? null : {
             application: u,
-            skuIds: x.map(e => e.id),
+            skuIds: f.map(e => e.id),
             guildId: u.guildId
-        }, [u, h, x])
+        }, [u, x, f])
     }
 }

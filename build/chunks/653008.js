@@ -20,8 +20,8 @@ let m = l.memo(function(e) {
         interactionUsernameProfile: A,
         interactionAvatarProfile: g,
         interactionData: p,
-        referencedUsernameProfile: _,
-        referencedAvatarProfile: f,
+        referencedUsernameProfile: f,
+        referencedAvatarProfile: _,
         setPopout: E
     } = e, {
         isInteractionUserBlocked: x,
@@ -29,7 +29,7 @@ let m = l.memo(function(e) {
     } = (0, s.cf)([c.A], () => ({
         isInteractionUserBlocked: c.A.isBlockedForMessage(t),
         isInteractionUserIgnored: c.A.isIgnoredForMessage(t)
-    }), [t]), S = (0, s.bG)([o.A], () => o.A.getMessageByReference(t?.messageReference)), I = (0, u.r4)(t.interaction?.user.id, n.id), T = (0, u.T0)(t.interaction, n, A, E), N = (0, u.Yq)(g, E), v = (0, r.Am)(t), y = v?.type === a.G4.APPLICATION_COMMAND ? v.target_user?.id : void 0, b = (0, u.r4)(y, n.id), j = (0, u.I)(y, n, _, E), R = (0, u.Ge)(f, E), M = (0, u.U_)(p, E), D = l.useCallback(() => {
+    }), [t]), S = (0, s.bG)([o.A], () => o.A.getMessageByReference(t?.messageReference)), I = (0, u.r4)(t.interaction?.user.id, n.id), T = (0, u.T0)(t.interaction, n, A, E), N = (0, u.Yq)(g, E), v = (0, r.Am)(t), y = v?.type === a.G4.APPLICATION_COMMAND ? v.target_user?.id : void 0, b = (0, u.r4)(y, n.id), j = (0, u.I)(y, n, f, E), R = (0, u.Ge)(_, E), M = (0, u.U_)(p, E), O = l.useCallback(() => {
         E({
             interactionUsernameProfile: !1,
             interactionAvatarProfile: !1,
@@ -37,18 +37,18 @@ let m = l.memo(function(e) {
             referencedUsernameProfile: !1,
             referencedAvatarProfile: !1
         })
-    }, [E]), O = l.useCallback(() => (0, h.A)({
+    }, [E]), D = l.useCallback(() => (0, h.A)({
         message: t,
         channel: n,
         compact: m,
         setPopout: E,
-        referencedAvatarProfile: f,
-        referencedUsernameProfile: _,
+        referencedAvatarProfile: _,
+        referencedUsernameProfile: f,
         replyReference: t.messageReference,
         replyMessage: S,
         isReplySpineClickable: !1,
         showReplySpine: !1
-    }), [n, m, t, f, S, _, E]);
+    }), [n, m, t, _, S, f, E]);
     return (0, i.jsx)(d.A, {
         message: t,
         channel: n,
@@ -58,8 +58,8 @@ let m = l.memo(function(e) {
         showAvatarPopout: g,
         showUsernamePopout: A,
         showDataPopout: p,
-        showTargetAvatarPopout: f,
-        showTargetUsernamePopout: _,
+        showTargetAvatarPopout: _,
+        showTargetUsernamePopout: f,
         onClickAvatar: N,
         onClickUsername: T,
         onClickCommand: M,
@@ -67,8 +67,8 @@ let m = l.memo(function(e) {
         onClickTargetAvatar: R,
         onClickTargetUsername: j,
         onTargetUserContextMenu: b,
-        onPopoutRequestClose: D,
-        renderTargetMessage: O
+        onPopoutRequestClose: O,
+        renderTargetMessage: D
     })
 });
 

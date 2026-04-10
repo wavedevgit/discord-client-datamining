@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(775602),
     g = n(812930),
     p = n(822123),
-    _ = n(7584),
-    f = n(635222),
+    f = n(7584),
+    _ = n(635222),
     E = n(969043),
     x = n(843626),
     C = n(427209),
@@ -31,8 +31,8 @@ var i = n(627968),
     j = n(966597),
     R = n(85109),
     M = n(406704),
-    D = n(253932),
-    O = n(961350),
+    O = n(253932),
+    D = n(961350),
     L = n(580745),
     P = n(71393),
     k = n(834942),
@@ -55,7 +55,7 @@ var i = n(627968),
     Q = n(307731),
     ee = n(985018),
     et = n(410110);
-let en = [_.Ay.getByName("100"), _.Ay.getByName("laughing"), _.Ay.getByName("sparkling_heart")].filter(B.Vq);
+let en = [f.Ay.getByName("100"), f.Ay.getByName("laughing"), f.Ay.getByName("sparkling_heart")].filter(B.Vq);
 
 function ei(e) {
     e.stopPropagation()
@@ -96,7 +96,7 @@ let es = l.memo(function(e) {
         channel: t,
         intention: Q.EmojiIntention.REACTION,
         guildId: t.guild_id
-    })), s = (l.length >= 3 ? l : [...(0, f.A)(l.concat(en)).values()]).slice(0, 3), a = n.reactions.filter(e => e.me);
+    })), s = (l.length >= 3 ? l : [...(0, _.A)(l.concat(en)).values()]).slice(0, 3), a = n.reactions.filter(e => e.me);
     return (0, i.jsx)(i.Fragment, {
         children: s.map(e => {
             let l = a.find(t => (0, v.i6)(t.emoji, (0, v.jq)(e))),
@@ -153,8 +153,8 @@ function ea(e) {
         canReport: o,
         canEdit: m,
         canPublish: p,
-        canReact: _,
-        canConfigureJoin: f,
+        canReact: f,
+        canConfigureJoin: _,
         canReply: S,
         canStartThread: I,
         canViewThread: N,
@@ -181,19 +181,19 @@ function ea(e) {
             isFocused: o
         } = e, {
             author: u
-        } = n, h = (0, d.bG)([P.A], () => P.A.getGuild(t.guild_id), [t.guild_id]), m = (0, d.bG)([O.default], () => O.default.getId()), p = (0, M.Id)(t), _ = (0, M.s5)(t), {
-            firstMessage: f
-        } = (0, d.bG)([E.A], () => E.A.getMessage(t.id), [t.id]), C = D.jW.useSetting(), S = D.Q_.useSetting(), I = (0, d.bG)([k.A], () => null == t.guild_id || k.A.canChatInGuild(t.guild_id), [t]), {
+        } = n, h = (0, d.bG)([P.A], () => P.A.getGuild(t.guild_id), [t.guild_id]), m = (0, d.bG)([D.default], () => D.default.getId()), p = (0, M.Id)(t), f = (0, M.s5)(t), {
+            firstMessage: _
+        } = (0, d.bG)([E.A], () => E.A.getMessage(t.id), [t.id]), C = O.jW.useSetting(), S = O.Q_.useSetting(), I = (0, d.bG)([k.A], () => null == t.guild_id || k.A.canChatInGuild(t.guild_id), [t]), {
             canManageMessages: N,
             canAddNewReactions: v
         } = (0, d.cf)([w.A], () => ({
             canAddNewReactions: I && w.A.can(X.xBc.ADD_REACTIONS, t),
             canManageMessages: w.A.can(X.xBc.MANAGE_MESSAGES, t)
         }), [t, I]), y = (0, b.u)(t, n), L = (0, M.n)(t, n), U = (0, M.R)(n), F = (0, d.bG)([T.A], () => null != t.guild_id && T.A.isLurking(t.guild_id), [t]), B = u.id === m, Y = (N || n.canDeleteOwnMessage(m)) && p && !X.MRS.UNDELETABLE.has(n.type);
-        n.type === X.lAJ.AUTO_MODERATION_ACTION && (Y = Y && N), t.isModeratorReportChannel() && (Y = Y && n.id !== f?.id && !(0, z.A)(n));
+        n.type === X.lAJ.AUTO_MODERATION_ACTION && (Y = Y && N), t.isModeratorReportChannel() && (Y = Y && n.id !== _?.id && !(0, z.A)(n));
         let J = (0, H.ul)(n),
             $ = (0, W.A)(n, t),
-            Z = !t.isSystemDM() && (0, V.A)(n, m) && p && !_,
+            Z = !t.isSystemDM() && (0, V.A)(n, m) && p && !f,
             {
                 disableReactionCreates: Q
             } = (0, q.A)({
@@ -270,7 +270,7 @@ function ea(e) {
                 label: ee.intl.string(ee.t.WqhZss),
                 icon: u.qYV,
                 onClick: () => (0, J.S)(t, n)
-            }, "copy-link") : null, f ? (0, i.jsx)(Y.qv, {
+            }, "copy-link") : null, _ ? (0, i.jsx)(Y.qv, {
                 label: ee.intl.string(ee.t.NpHUi1),
                 icon: u.cBN,
                 onClick: () => (0, J.vc)(t)
@@ -295,7 +295,7 @@ function ea(e) {
                 icon: u.W4J,
                 onClick: e => (0, J.$b)(t, n, e)
             }, "reply-self") : null]
-        }) : null, _ ? (0, i.jsxs)(i.Fragment, {
+        }) : null, f ? (0, i.jsxs)(i.Fragment, {
             children: [F ? null : (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(es, {
                     channel: t,

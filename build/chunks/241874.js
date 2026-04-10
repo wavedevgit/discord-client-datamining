@@ -23,8 +23,8 @@ let h = l.memo(function(e) {
             setPopout: A,
             author: g,
             repliedMessage: p,
-            roleIcon: _
-        } = e, f = (0, d.r4)(t.author.id, n.id), E = (0, d.m)(t, n, h, A), x = (0, d.Jo)(m, A), C = l.useCallback(() => {
+            roleIcon: f
+        } = e, _ = (0, d.r4)(t.author.id, n.id), E = (0, d.m)(t, n, h, A), x = (0, d.Jo)(m, A), C = l.useCallback(() => {
             A({
                 usernameProfile: !1,
                 avatarProfile: !1,
@@ -45,9 +45,9 @@ let h = l.memo(function(e) {
             showUsernamePopout: h,
             onClickAvatar: x,
             onClickUsername: E,
-            onContextMenu: f,
+            onContextMenu: _,
             onPopoutRequestClose: C,
-            roleIcon: _
+            roleIcon: f
         })
     }),
     m = l.memo(o.A);
@@ -67,8 +67,8 @@ function A(e) {
         channel: g,
         groupId: p
     } = t, {
-        usernameProfile: _,
-        avatarProfile: f
+        usernameProfile: f,
+        avatarProfile: _
     } = l;
     if ((0, s.A)(u)) return null;
     let E = u.id === p;
@@ -80,8 +80,8 @@ function A(e) {
         isGroupStart: E,
         groupId: p,
         setPopout: n,
-        usernameProfile: _,
-        avatarProfile: f,
+        usernameProfile: f,
+        avatarProfile: _,
         author: o,
         repliedMessage: c,
         roleIcon: d

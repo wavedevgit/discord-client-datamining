@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(643501),
     _ = n(279250),
     m = n(834757),
-    g = n(727353),
-    p = n(140547),
+    p = n(727353),
+    g = n(140547),
     f = n(636920),
     x = n(958140),
     E = n(832163),
@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(93879),
     S = n(616356),
     b = n(961350),
-    v = n(71393),
-    y = n(576705),
+    y = n(71393),
+    v = n(576705),
     j = n(290863),
     R = n(977997),
     O = n(954571),
@@ -58,13 +58,13 @@ function k(e) {
         z = (0, C.W)(),
         q = (0, N.i)(e => e.showSelfActivity),
         [X, $] = (0, r.yK)([S.A], () => [S.A.getStreamForUser(n.id, t.getGuildId()), S.A.getActiveStreamForUser(n.id, t.getGuildId())], [t, n.id]),
-        [Q, J] = (0, r.yK)([R.A, v.A, y.A, A.default], () => (0, _.eo)(t, R.A, v.A, y.A, A.default)),
+        [Q, J] = (0, r.yK)([R.A, y.A, v.A, A.default], () => (0, _.eo)(t, R.A, y.A, v.A, A.default)),
         Z = (0, r.bG)([b.default], () => b.default.getId()),
         ee = (0, r.bG)([j.A], () => (0, m.nr)(X, j.A), [X]),
         et = (0, c.m)(n, k ?? ee),
         {
             enableHangStatus: en
-        } = (0, p.$j)({
+        } = (0, g.$j)({
             guildId: t.guild_id,
             location: "VoiceUserActivities"
         }),
@@ -104,7 +104,7 @@ function k(e) {
                 analyticsSource: "VoiceUserActivities",
                 onAction: s
             })]
-        }) : null, null == X || null == w || ea ? null : (0, i.jsx)(g.P, {
+        }) : null, null == X || null == w || ea ? null : (0, i.jsx)(p.P, {
             stream: X,
             activeStream: $,
             streamActivity: ee,

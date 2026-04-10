@@ -20,8 +20,8 @@ let u = function(e) {
         buttonSubmitting: A,
         onButtonClick: g,
         imageSrc: p,
-        animationSrc: _,
-        secondaryButtonText: f,
+        animationSrc: f,
+        secondaryButtonText: _,
         onSecondaryButtonClick: E,
         children: x,
         useReducedMotion: C = !1,
@@ -36,8 +36,8 @@ let u = function(e) {
         alt: "",
         src: p,
         className: d.Sl
-    }) : null != _ && (T = (0, i.jsx)(r.akl, {
-        importData: _,
+    }) : null != f && (T = (0, i.jsx)(r.akl, {
+        importData: f,
         shouldAnimate: !C,
         className: d.lY
     })), (0, i.jsxs)("div", {
@@ -58,11 +58,11 @@ let u = function(e) {
             })]
         }), (0, i.jsxs)("div", {
             className: d.UD,
-            children: [null != f && (0, i.jsx)("div", {
+            children: [null != _ && (0, i.jsx)("div", {
                 className: d.x6,
                 children: (0, i.jsx)(r.QWc, {
                     textVariant: "text-sm/semibold",
-                    text: f,
+                    text: _,
                     onClick: E
                 })
             }), null != h && (0, i.jsx)("div", {

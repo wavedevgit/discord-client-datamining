@@ -1,6 +1,6 @@
 /** chunk id: 602859 params = (module,exports,require) **/
 n.d(t, {
-    s: () => l
+    s: () => i
 });
 let a = (0, n(945810).mj)({
     name: "2026-03-game-profile-claim-game-cta",
@@ -15,7 +15,7 @@ let a = (0, n(945810).mj)({
     }
 });
 
-function l(e) {
+function i(e) {
     return a.useConfig({
         location: e
     }).enabled

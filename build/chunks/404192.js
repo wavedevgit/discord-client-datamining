@@ -2,11 +2,11 @@
 n.d(t, {
     A: () => _
 });
-var l = n(627968);
+var a = n(627968);
 n(64700);
-var a = n(503698),
-    r = n.n(a),
-    i = n(397927),
+var l = n(503698),
+    i = n.n(l),
+    r = n(397927),
     s = n(975807),
     d = n(985018),
     o = n(687404),
@@ -16,28 +16,28 @@ let u = e => {
         data: {
             url: t,
             link_text: n,
-            link_description: a,
+            link_description: l,
             is_localized: d
         }
     } = e;
-    return d ? (0, l.jsxs)(i.DUT, {
+    return d ? (0, a.jsxs)(r.DUT, {
         role: "link",
-        className: r()(c.$J, o.lD),
+        className: i()(c.$J, o.lD),
         onClick: () => {
             (0, s.A)(t)
         },
-        children: [(0, l.jsxs)("div", {
+        children: [(0, a.jsxs)("div", {
             className: c.xU,
-            children: [(0, l.jsx)(i.Text, {
+            children: [(0, a.jsx)(r.Text, {
                 className: c.__invalid_linkText,
                 variant: "text-md/semibold",
                 children: n
-            }), null != a && "" !== a && (0, l.jsx)(i.Text, {
+            }), null != l && "" !== l && (0, a.jsx)(r.Text, {
                 variant: "text-md/normal",
                 color: "text-muted",
-                children: a
+                children: l
             })]
-        }), (0, l.jsx)(i.I9m, {
+        }), (0, a.jsx)(r.I9m, {
             size: "sm",
             color: "currentColor",
             className: c.wP
@@ -59,19 +59,19 @@ function _(e) {
             let {
                 data: n
             } = e;
-            return (0, l.jsx)(u, {
+            return (0, a.jsx)(u, {
                 data: n
             }, `external-link+${t}`)
         }),
-        a = t.some(e => {
+        l = t.some(e => {
             let {
                 data: t
             } = e;
             return t.is_header_hidden
         });
-    return (0, l.jsxs)("div", {
-        className: r()(c.nV, o.E8),
-        children: [!a && (0, l.jsx)(i.Heading, {
+    return (0, a.jsxs)("div", {
+        className: i()(c.nV, o.E8),
+        children: [!l && (0, a.jsx)(r.Heading, {
             variant: "heading-sm/semibold",
             color: "text-default",
             className: c.wx,

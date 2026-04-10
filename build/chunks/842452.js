@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(817281),
     _ = n(534409),
     m = n(711014),
-    g = n(240248),
-    p = n(263715),
+    p = n(240248),
+    g = n(263715),
     f = n(941971),
     x = n(447253),
     E = n(531053),
@@ -26,14 +26,14 @@ var i = n(627968),
     T = n(114329),
     S = n(985018),
     b = n(142163),
-    v = n(604418);
-let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
+    y = n(604418);
+let v = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
     j = (0, o.animated)(h.BJc),
     R = l.memo(function(e) {
         var t;
         let n, s, o, {
                 folderNode: u,
-                setNodeRef: g,
+                setNodeRef: p,
                 selected: R,
                 expanded: O,
                 mediaState: L,
@@ -68,9 +68,9 @@ let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
         let [{
             dragging: ei
         }, el] = (0, r.i)({
-            type: p.PJ.FOLDER,
+            type: g.PJ.FOLDER,
             item: () => (w?.(), {
-                type: p.PJ.FOLDER,
+                type: g.PJ.FOLDER,
                 nodeId: u.id
             }),
             end() {
@@ -94,15 +94,15 @@ let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 height: 0
             },
             config: {
-                duration: y
+                duration: v
             }
-        }), eh = l.useCallback(e => g?.(q, e), [g, q]), eA = (0, i.jsxs)(C.c, {
+        }), eh = l.useCallback(e => p?.(q, e), [p, q]), eA = (0, i.jsxs)(C.c, {
             children: [(0, i.jsx)(f.A, {
                 disabled: ei || O,
                 hovered: Q,
                 selected: R,
                 unread: U,
-                className: v.Io
+                className: y.Io
             }), (0, i.jsx)(N.A, {
                 text: er,
                 disabled: k,
@@ -114,7 +114,7 @@ let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                     } : void 0,
                     className: a()(b.MJ, {
                         [b.L0]: "icon" === W || en,
-                        [v.oR]: !ei && Z && !O
+                        [y.oR]: !ei && Z && !O
                     }),
                     "data-dnd-name": er,
                     children: ei ? (0, i.jsx)(I.A, {

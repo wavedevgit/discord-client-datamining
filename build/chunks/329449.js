@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(682174),
     g = n(928830),
     p = n(3137),
-    _ = n(559908),
-    f = n(103640),
+    f = n(559908),
+    _ = n(103640),
     E = n(924177),
     x = n(985018),
     C = n(228596);
@@ -25,11 +25,11 @@ let S = l.memo(function(e) {
         let {
             channelId: t,
             width: n
-        } = e, s = (0, o.bG)([u.A], () => u.A.useReducedMotion), a = (0, o.bG)([_.Ay], () => _.Ay.getMostRecentMessageCombo(t), [t]), [d, h] = l.useState(!1);
+        } = e, s = (0, o.bG)([u.A], () => u.A.useReducedMotion), a = (0, o.bG)([f.Ay], () => f.Ay.getMostRecentMessageCombo(t), [t]), [d, h] = l.useState(!1);
         l.useEffect(() => {
             if (a?.displayed) return;
             h(!1), setImmediate(() => {
-                h((null != a ? (0, f.RL)(a.combo) : 0) > 0)
+                h((null != a ? (0, _.RL)(a.combo) : 0) > 0)
             });
             let e = setTimeout(() => {
                 h(!1), null != a && (0, g.Nu)(a)
@@ -50,7 +50,7 @@ let S = l.memo(function(e) {
             children: (0, i.jsx)(c.Text, {
                 className: C.fX,
                 variant: "text-sm/bold",
-                children: (0, f.RL)(a.combo)
+                children: (0, _.RL)(a.combo)
             })
         })
     }),
@@ -62,7 +62,7 @@ let S = l.memo(function(e) {
             color: s,
             square: r,
             flair: o
-        } = l.useMemo(() => (0, f.HN)(n), [n]);
+        } = l.useMemo(() => (0, _.HN)(n), [n]);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(c.Text, {
                 className: C.iR,
@@ -119,18 +119,18 @@ let S = l.memo(function(e) {
     T = l.memo(function(e) {
         let {
             channelId: t
-        } = e, n = (0, o.bG)([h.default], () => h.default.getId()), s = (0, o.bG)([m.A], () => m.A.isTyping(t, n), [t, n]), a = (0, o.bG)([p.A], () => p.A.isEnabled()), u = (0, o.bG)([_.Ay], () => _.Ay.isComboing(n, t), [t, n]), {
+        } = e, n = (0, o.bG)([h.default], () => h.default.getId()), s = (0, o.bG)([m.A], () => m.A.isTyping(t, n), [t, n]), a = (0, o.bG)([p.A], () => p.A.isEnabled()), u = (0, o.bG)([f.Ay], () => f.Ay.isComboing(n, t), [t, n]), {
             ref: A,
             width: g = 0
-        } = (0, d.Ay)(), [f, x] = l.useState(!1), T = (0, E.A)(t), N = a && u && s;
+        } = (0, d.Ay)(), [_, x] = l.useState(!1), T = (0, E.A)(t), N = a && u && s;
         l.useEffect(() => {
             N && x(!0);
             let e = setTimeout(() => x(N), 1e3);
             return () => clearTimeout(e)
         }, [N]);
         let v = (0, c.zhh)({
-                opacity: +!!f,
-                transform: f ? "translateY(0)" : "translateY(100%)",
+                opacity: +!!_,
+                transform: _ ? "translateY(0)" : "translateY(100%)",
                 pointerEvents: "none",
                 config: r.config.stiff
             }),

@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(104171),
     _ = n(63995),
     m = n(69407),
-    g = n(616356),
-    p = n(734057),
+    p = n(616356),
+    g = n(734057),
     f = n(287809),
     x = n(607567),
     E = n(403362),
@@ -40,8 +40,8 @@ function b(e, t) {
     })
 }
 
-function v() {
-    let e = (0, d.yK)([C.A, p.A], () => I.default.keys(C.A.getFavoriteChannels()).map(e => p.A.getChannel(e)).filter(E.Vq)),
+function y() {
+    let e = (0, d.yK)([C.A, g.A], () => I.default.keys(C.A.getFavoriteChannels()).map(e => g.A.getChannel(e)).filter(E.Vq)),
         t = e.map(e => e.id),
         n = e.filter(e => e.type === N.rbe.GUILD_VOICE),
         l = e.filter(e => e.type === N.rbe.GUILD_STAGE_VOICE).map(e => e.id),
@@ -62,15 +62,15 @@ function v() {
             for (let t of l) e += _.A.getParticipantCount(t, m.ip.AUDIENCE);
             return e
         }),
-        c = (0, d.yK)([g.A], () => g.A.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
+        c = (0, d.yK)([p.A], () => p.A.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
         T = (0, d.yK)([h.Ay], () => {
             let e = h.Ay.getEmbeddedActivitiesByChannel(),
                 n = [];
             for (let i of t) n.push(...e.get(i)?.flatMap(e => Array.from(e.userIds)) ?? []);
             return n
         }, [t]),
-        v = (0, d.yK)([f.default], () => T.map(e => f.default.getUser(e)), [T]),
-        y = (0, d.yK)([f.default], () => c.map(e => f.default.getUser(e)), [c]),
+        y = (0, d.yK)([f.default], () => T.map(e => f.default.getUser(e)), [T]),
+        v = (0, d.yK)([f.default], () => c.map(e => f.default.getUser(e)), [c]),
         j = b(u.HKD, s.filter(e => !c.includes(e.id) && !T.includes(e.id))),
         R = 0 === a.length ? null : (0, i.jsxs)("div", {
             className: S.nM,
@@ -95,14 +95,14 @@ function v() {
                 })]
             })]
         }),
-        O = b(u.Fzq, y.filter(e => null != e && !T.includes(e.id))),
-        L = b(u.k9F, v);
+        O = b(u.Fzq, v.filter(e => null != e && !T.includes(e.id))),
+        L = b(u.k9F, y);
     return (0, i.jsxs)(i.Fragment, {
         children: [R, j, O, L]
     })
 }
 
-function y() {
+function v() {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             className: a()(S.nM, S.Dl),
@@ -110,7 +110,7 @@ function y() {
                 className: a()(S.cN, S.NT),
                 children: T.intl.string(T.t.wMWyci)
             })
-        }), (0, i.jsx)(v, {})]
+        }), (0, i.jsx)(y, {})]
     })
 }
 
@@ -120,7 +120,7 @@ function j(e) {
         children: n
     } = e, s = l.useMemo(() => (0, i.jsx)("div", {
         className: S.A_,
-        children: (0, i.jsx)(y, {})
+        children: (0, i.jsx)(v, {})
     }), []);
     return (0, i.jsx)(c.m_, {
         __unsupportedReactNodeAsText: s,

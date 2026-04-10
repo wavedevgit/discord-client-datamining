@@ -21,8 +21,8 @@ function p(e) {
         errorMessage: t,
         className: n,
         avError: s
-    } = e, p = l.useRef(null), _ = "", {
-        text: f,
+    } = e, p = l.useRef(null), f = "", {
+        text: _,
         node: E
     } = function(e) {
         if (null == e) return {
@@ -45,7 +45,7 @@ function p(e) {
             }) : l
         }
     }(s);
-    _ = null != f ? `${t} ${f}` : t;
+    f = null != _ ? `${t} ${_}` : t;
     let [x] = l.useState(new r.Ep), [C, S] = l.useState(!1), [I, T] = l.useState(!1), N = l.useCallback(() => {
         x.start(250, () => {
             S(!1)
@@ -84,7 +84,7 @@ function p(e) {
                     onFocus: y,
                     onBlur: b,
                     className: a()(n, g.zr),
-                    "aria-label": _,
+                    "aria-label": f,
                     ...e,
                     children: (0, i.jsx)(o.EpV, {
                         size: "custom",

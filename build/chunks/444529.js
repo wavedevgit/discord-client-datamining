@@ -26,11 +26,11 @@ function c(e) {
             compact: g = !1
         },
         messageWindow: p
-    } = e, _ = h.state === r.cmJ.SENDING, f = h.id === A, E = (0, l.Lt)(h.flags, r.pr7.EPHEMERAL), x = h.state === r.cmJ.SEND_FAILED;
-    return _ || E && !x ? null : (0, i.jsx)(a.A, {
+    } = e, f = h.state === r.cmJ.SENDING, _ = h.id === A, E = (0, l.Lt)(h.flags, r.pr7.EPHEMERAL), x = h.state === r.cmJ.SEND_FAILED;
+    return f || E && !x ? null : (0, i.jsx)(a.A, {
         className: o.Uo,
         innerClassName: o.Mc,
-        isHeader: !g && f && !(0, s.A)(h),
+        isHeader: !g && _ && !(0, s.A)(h),
         isReply: !g && h.type === r.lAJ.REPLY && null != h.messageReference,
         channel: m,
         message: h,

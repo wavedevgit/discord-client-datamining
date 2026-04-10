@@ -21,8 +21,8 @@ function _(e) {
         whichPopoutIsOpen: _,
         setWhichPopoutIsOpen: m
     } = e, {
-        parentAnalyticsLocation: g
-    } = (0, r.Ay)(), p = l.useRef(null), {
+        parentAnalyticsLocation: p
+    } = (0, r.Ay)(), g = l.useRef(null), {
         isHovered: f,
         setIsHovered: x,
         onMouseEnter: E,
@@ -36,13 +36,13 @@ function _(e) {
         }
     } = (0, s.T)(), b = l.useCallback(e => {
         "focus" !== e.type && (E(), T())
-    }, [E, T]), v = l.useCallback(() => {
+    }, [E, T]), y = l.useCallback(() => {
         null == _ && (I(), S())
-    }, [I, S, _]), y = l.useCallback(() => {
-        (0, o.X)(g, o.O.GIFTING), _ === h.P.GIFTING ? (m?.(void 0), I()) : (null != _ ? (N(), E()) : N(), m?.(h.P.GIFTING))
-    }, [E, I, g, N, m, _]);
+    }, [I, S, _]), v = l.useCallback(() => {
+        (0, o.X)(p, o.O.GIFTING), _ === h.P.GIFTING ? (m?.(void 0), I()) : (null != _ ? (N(), E()) : N(), m?.(h.P.GIFTING))
+    }, [E, I, p, N, m, _]);
     return (0, i.jsx)(a.Y, {
-        targetElementRef: p,
+        targetElementRef: g,
         shouldShow: f && (_ === h.P.GIFTING || null == _) || _ === h.P.GIFTING,
         animation: a.Y.Animation.FADE,
         animationPosition: "top",
@@ -65,14 +65,14 @@ function _(e) {
             })
         },
         children: () => (0, i.jsx)(u.l, {
-            ref: p,
+            ref: g,
             isTrayButton: !0,
             themeable: n,
             "aria-label": A.intl.string(A.t.PEjaCx),
             iconComponent: C,
-            onClick: y,
+            onClick: v,
             onMouseEnter: b,
-            onMouseLeave: v,
+            onMouseLeave: y,
             isActive: f || _ === h.P.GIFTING,
             color: f || _ === h.P.GIFTING ? "primaryDark" : void 0
         })

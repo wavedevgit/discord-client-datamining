@@ -1,6 +1,6 @@
 /** chunk id: 129114 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var i = n(627968),
     l = n(64700),
@@ -16,14 +16,14 @@ var i = n(627968),
     A = n(788868),
     g = n(699976),
     p = n(985018);
-let _ = g.Z.SIZE_90;
+let f = g.Z.SIZE_90;
 
-function f(e) {
+function _(e) {
     let {
         sku: t,
         targetUser: n,
         isTargetingCurrentUser: g,
-        source: f,
+        source: _,
         showIcons: E,
         guildId: x,
         channelId: C,
@@ -63,25 +63,25 @@ function f(e) {
     return (0, i.jsxs)(r.A, {
         sku: t,
         user: n,
-        spec: _,
+        spec: f,
         onClick: b,
         "aria-label": p.intl.formatToPlainString(p.t.ZBB4Ty, {
             productName: (0, s.TC)(t)
         }),
         onHoverOrFocusChange: v,
         children: [(0, i.jsx)(c.A, {
-            spec: _,
+            spec: f,
             onClick: j,
             isHoveringOrFocusing: N,
             label: R,
             icon: M
         }), (0, i.jsx)(o.A, {
-            spec: _,
+            spec: f,
             sku: t,
             isCardHovered: N,
             location: "SocialLayerGiftingVoicePanelSkuItemCard",
-            replacedElement: E && !g && f === a.uS.WISHLIST ? (0, i.jsx)(d.n, {
-                spec: _,
+            replacedElement: E && !g && _ === a.uS.WISHLIST ? (0, i.jsx)(d.n, {
+                spec: f,
                 user: n,
                 guildId: x ?? void 0,
                 channelId: C ?? void 0

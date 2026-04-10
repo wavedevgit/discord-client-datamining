@@ -16,8 +16,8 @@ var l = n(311907),
     A = n(205761),
     g = n(994500),
     p = n(287809),
-    _ = n(652215);
-let f = !1,
+    f = n(652215);
+let _ = !1,
     E = "",
     x = 0,
     C = [],
@@ -26,7 +26,7 @@ let f = !1,
     T = null;
 
 function N() {
-    E = "", x = 0, C = [], I = new Set, f = !1, T = null
+    E = "", x = 0, C = [], I = new Set, _ = !1, T = null
 }
 
 function v(e) {
@@ -34,7 +34,7 @@ function v(e) {
 }
 
 function y() {
-    if (!f) return !1;
+    if (!_) return !1;
     let e = h.A.getChannel(T);
     if (0 === E.trim().length) {
         var t;
@@ -77,13 +77,13 @@ function y() {
 }
 
 function b() {
-    if (!f) return !1;
+    if (!_) return !1;
     let e = S;
     return (S = g.A.getFriendCount() > 0) !== e
 }
 
 function j(e, t) {
-    if (m.A.hasConsented(_.YAq.PERSONALIZATION)) {
+    if (m.A.hasConsented(f.YAq.PERSONALIZATION)) {
         let n = o.A.getUserAffinity(e.user.id)?.communicationProbability ?? 0,
             i = o.A.getUserAffinity(t.user.id)?.communicationProbability ?? 0;
         if (n !== i) return i - n
@@ -95,7 +95,7 @@ function R(e) {
     let {
         results: t
     } = e;
-    if (!f || "" === E) return;
+    if (!_ || "" === E) return;
     let n = [];
     for (let {
             id: e,
@@ -115,13 +115,13 @@ function M() {
     return null != i && (i.destroy(), i = null), a.A.getUserSearchContext(R, 1e3)
 }
 
-function D(e) {
-    if (e.key !== _.TLS) return !1;
-    f = !0, b(), i = M(), T = null, v("")
+function O(e) {
+    if (e.key !== f.TLS) return !1;
+    _ = !0, b(), i = M(), T = null, v("")
 }
 
-function O(e) {
-    if (e.key !== _.TLS) return !1;
+function D(e) {
+    if (e.key !== f.TLS) return !1;
     L()
 }
 
@@ -165,16 +165,16 @@ let k = new P(s.h, {
                 channelId: n
             } = e;
             if (null != t) return !1;
-            let i = f;
-            return N(), f = i, T = n, y()
+            let i = _;
+            return N(), _ = i, T = n, y()
         },
-        MODAL_PUSH: D,
-        SHOW_ACTION_SHEET: D,
+        MODAL_PUSH: O,
+        SHOW_ACTION_SHEET: O,
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-            f = !0, b(), i = M(), T = e.channelId, v("")
+            _ = !0, b(), i = M(), T = e.channelId, v("")
         },
-        MODAL_POP: O,
-        HIDE_ACTION_SHEET: O,
+        MODAL_POP: D,
+        HIDE_ACTION_SHEET: D,
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: L,
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_QUERY: function(e) {
             T = e.channelId, v(e.query)

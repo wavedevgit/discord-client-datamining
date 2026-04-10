@@ -5,11 +5,11 @@ t.d(n, {
 var i = t(627968);
 t(64700);
 var a = t(158954),
-    l = t(311907),
-    r = t(397927),
+    r = t(311907),
+    l = t(397927),
     o = t(973925),
-    s = t(622543),
-    d = t(985018),
+    d = t(622543),
+    s = t(985018),
     c = t(763683);
 
 function _(e) {
@@ -30,10 +30,10 @@ function _(e) {
             })
         }), (0, i.jsxs)("div", {
             className: c.qg,
-            children: [(0, i.jsx)(r.Heading, {
+            children: [(0, i.jsx)(l.Heading, {
                 variant: "text-xs/semibold",
                 children: t
-            }), (0, i.jsx)(r.Text, {
+            }), (0, i.jsx)(l.Text, {
                 variant: "text-sm/normal",
                 children: a
             })]
@@ -44,7 +44,7 @@ function _(e) {
 function u(e) {
     let {
         user: n
-    } = e, t = (0, l.bG)([s.A], () => s.A.getUserProfile(n.id)?.application), {
+    } = e, t = (0, r.bG)([d.A], () => d.A.getUserProfile(n.id)?.application), {
         hasMessageContent: u,
         hasGuildPresences: p,
         hasGuildMembers: A
@@ -53,20 +53,20 @@ function u(e) {
         fade: !0,
         className: c.XG,
         children: [u && (0, i.jsx)(_, {
-            icon: r.oyn,
-            title: d.intl.string(d.t["7Tmhfu"]),
-            description: d.intl.string(d.t.eu5x7z)
+            icon: l.oyn,
+            title: s.intl.string(s.t["7Tmhfu"]),
+            description: s.intl.string(s.t.eu5x7z)
         }), p && (0, i.jsx)(_, {
-            icon: r._xR,
-            title: d.intl.string(d.t.awYSsM),
-            description: d.intl.string(d.t.TpsXoC)
+            icon: l._xR,
+            title: s.intl.string(s.t.awYSsM),
+            description: s.intl.string(s.t.TpsXoC)
         }), A && (0, i.jsx)(_, {
-            icon: r.nFg,
-            title: d.intl.string(d.t.WuKeSJ),
-            description: d.intl.string(d.t.wOBmtV)
-        }), (0, i.jsx)(r.Text, {
+            icon: l.nFg,
+            title: s.intl.string(s.t.WuKeSJ),
+            description: s.intl.string(s.t.wOBmtV)
+        }), (0, i.jsx)(l.Text, {
             variant: "text-xs/normal",
-            children: d.intl.format(d.t.b6nqk0, {
+            children: s.intl.format(s.t.b6nqk0, {
                 helpCenterUrl: "https://support.discord.com/hc/articles/7933951485975"
             })
         })]

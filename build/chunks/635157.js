@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(598104),
     g = n(697122),
     p = n(73028),
-    _ = n(95550),
-    f = n(854627),
+    f = n(95550),
+    _ = n(854627),
     E = n(314307),
     x = n(985018),
     C = n(563003);
@@ -34,7 +34,7 @@ function S(e) {
             avatarDecorationSrc: v,
             eventHandlers: y,
             isAnimating: b
-        } = (0, f.A)({
+        } = (0, _.A)({
             userId: I?.id,
             size: r._3J.SIZE_80,
             animateOnHover: !0
@@ -43,14 +43,14 @@ function S(e) {
         M = l.useCallback(() => {
             y.onMouseEnter(), R(!0)
         }, [y]),
-        D = l.useCallback(() => {
+        O = l.useCallback(() => {
             y.onMouseLeave(), R(!1)
         }, [y]),
-        O = !n.isMultiUserDM() && I?.displayNameStyles != null;
+        D = !n.isMultiUserDM() && I?.displayNameStyles != null;
     return (0, i.jsxs)(E.Ay, {
         channelId: n.id,
         onMouseEnter: M,
-        onMouseLeave: D,
+        onMouseLeave: O,
         children: [(t = !T && b, n.isMultiUserDM() ? (0, i.jsx)(g.Q, {
             channel: n,
             editable: !0,
@@ -67,7 +67,7 @@ function S(e) {
             src: (0, d.Y)(n, 80, t),
             avatarDecoration: v
         })), (0, i.jsx)(E.cr, {
-            children: O ? (0, i.jsx)(m.A, {
+            children: D ? (0, i.jsx)(m.A, {
                 userName: N,
                 displayNameStyles: I?.displayNameStyles,
                 effectDisplayType: j ? h.G.ANIMATED : h.G.STATIC,
@@ -77,7 +77,7 @@ function S(e) {
             children: S
         }), n.isMultiUserDM() && (0, i.jsxs)(a.e2v, {
             className: C.U,
-            children: [(0, i.jsx)(_.NE, {
+            children: [(0, i.jsx)(f.NE, {
                 channel: n,
                 text: x.intl.string(x.t["6Qgrev"]),
                 icon: r.DpX

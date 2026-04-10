@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(975571),
     g = n(465364),
     p = n(986350),
-    _ = n(860227),
-    f = n(291812),
+    f = n(860227),
+    _ = n(291812),
     E = n(449859),
     x = n(652215),
     C = n(985018),
@@ -85,14 +85,14 @@ let N = l.memo(function(e) {
         return l.useLayoutEffect(() => {
             p.current ? null != A && A() : p.current = !0
         }, [A, s.content, d, g, r]), (0, i.jsxs)("div", {
-            id: (0, _.CJ)(s),
+            id: (0, f.CJ)(s),
             className: a()(t, T.PT, {
                 [I.BK]: !0,
                 [I.nB]: "rtl" === o()(s.content),
                 [S.Dy]: x?.isBlockedEdit,
                 [S.bv]: !x?.isBlockedEdit
             }),
-            children: [r ?? (0, f._A)(s, d), x?.isBlockedEdit && null != s.timestamp && (0, i.jsxs)(i.Fragment, {
+            children: [r ?? (0, _._A)(s, d), x?.isBlockedEdit && null != s.timestamp && (0, i.jsxs)(i.Fragment, {
                 children: [" ", (0, i.jsx)(E.A, {
                     timestamp: s.timestamp,
                     isEdited: !0,
@@ -109,4 +109,4 @@ let N = l.memo(function(e) {
                 onDismiss: v
             })]
         })
-    }, f.sP)
+    }, _.sP)

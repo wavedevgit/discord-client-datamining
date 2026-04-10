@@ -1,21 +1,21 @@
 /** chunk id: 167579 params = (module,exports,require) **/
-n.d(t, {
+a.d(t, {
     A: () => o
 });
-var a = n(311907),
-    r = n(961350),
-    l = n(430452),
-    i = n(977997);
+var n = a(311907),
+    r = a(961350),
+    i = a(430452),
+    l = a(977997);
 
 function o(e) {
-    return (0, a.cf)([i.A, l.Ay, r.default], () => (function(e) {
-        let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : i.A,
-            n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : l.Ay,
-            a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : r.default,
-            o = null != e ? t.getVoiceState(e.getGuildId(), a.getId()) : null;
+    return (0, n.cf)([l.A, i.Ay, r.default], () => (function(e) {
+        let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l.A,
+            a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : i.Ay,
+            n = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : r.default,
+            o = null != e ? t.getVoiceState(e.getGuildId(), n.getId()) : null;
         return {
-            selfDeaf: n.isSelfDeaf(),
+            selfDeaf: a.isSelfDeaf(),
             deaf: o?.deaf ?? !1
         }
-    })(e, i.A, l.Ay, r.default), [e])
+    })(e, l.A, i.Ay, r.default), [e])
 }

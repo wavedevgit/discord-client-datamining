@@ -20,17 +20,17 @@ function g(e) {
         onClose: t,
         onConfirm: g,
         onCancel: p,
-        channel: _,
-        analyticsType: f,
+        channel: f,
+        analyticsType: _,
         popoutText: E,
         animation: x
     } = e;
     l.useEffect(() => {
         d.default.track(u.HAw.OPEN_POPOUT, {
-            type: f,
-            ...(0, o.dI)(_)
+            type: _,
+            ...(0, o.dI)(f)
         })
-    }, [f, _]);
+    }, [_, f]);
     let C = l.useCallback(() => {
             g?.(), t()
         }, [g, t]),

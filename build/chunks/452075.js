@@ -48,12 +48,12 @@ function p() {
         }, [e]),
         f = i.useRef([]),
         A = i.useMemo(() => (0, s.pi)(n).map(e => h(e)), [n]),
-        x = i.useMemo(() => n.length > 0, [n]),
-        I = !p && x && g;
+        I = i.useMemo(() => n.length > 0, [n]),
+        x = !p && I && g;
     i.useEffect(() => {
         f.current = []
     }, [p, A]), i.useEffect(() => {
-        if (!I) {
+        if (!x) {
             f.current = [];
             return
         }
@@ -78,5 +78,5 @@ function p() {
         return e.addEventListener("keydown", t, !0), e.addEventListener("keyup", n, !0), () => {
             e.removeEventListener("keydown", t, !0), e.removeEventListener("keyup", n, !0)
         }
-    }, [I, A, e])
+    }, [x, A, e])
 }

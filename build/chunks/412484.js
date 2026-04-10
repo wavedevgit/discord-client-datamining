@@ -2,7 +2,7 @@
 n.d(t, {
     Ay: () => b,
     NH: () => j,
-    T: () => y
+    T: () => v
 });
 var i = n(627968),
     l = n(64700),
@@ -17,8 +17,8 @@ var i = n(627968),
     A = n(964486),
     _ = n(775602),
     m = n(928039),
-    g = n(954571),
-    p = n(203982),
+    p = n(954571),
+    g = n(203982),
     f = n(723702),
     x = n(157296),
     E = n(963702),
@@ -31,7 +31,7 @@ var i = n(627968),
 function b(e) {
     var t, n, s, r, x, b;
     let {
-        onJump: y,
+        onJump: v,
         showTutorial: j,
         setSeenTutorial: R,
         closePopout: O
@@ -66,8 +66,8 @@ function b(e) {
             let e = r.channels.find(e => !e.collapsed);
             null != e && x.markChannelRead(e)
         };
-        return p._.subscribe(N.jej.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
-            p._.unsubscribe(N.jej.MARK_TOP_INBOX_CHANNEL_READ, e)
+        return g._.subscribe(N.jej.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
+            g._.unsubscribe(N.jej.MARK_TOP_INBOX_CHANNEL_READ, e)
         }
     }, [x, r.channels]), b = D, l.useEffect(() => {
         let e = e => {
@@ -77,13 +77,13 @@ function b(e) {
             document.removeEventListener("keydown", e)
         }
     }, [b]), l.useEffect(() => {
-        g.default.track(N.HAw.OPEN_POPOUT, {
+        p.default.track(N.HAw.OPEN_POPOUT, {
             type: "Inbox"
         })
     }, []), l.useEffect(() => (h.h.subscribe("CONNECTION_OPEN", O), () => {
         h.h.unsubscribe("CONNECTION_OPEN", O)
-    }), [O]), (0, A.Ay)(() => (p._.subscribe(N.jej.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
-        p._.unsubscribe(N.jej.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
+    }), [O]), (0, A.Ay)(() => (g._.subscribe(N.jej.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
+        g._.unsubscribe(N.jej.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
     }));
     let w = (0, m.A)("unreads", L);
     return 0 === G.length ? (0, i.jsx)(E.A, {
@@ -105,9 +105,9 @@ function b(e) {
                     ...n,
                     onScroll: U === C.mJ.Done ? void 0 : P,
                     className: a()(S.XG, `group-spacing-${k}`),
-                    children: [j ? (0, i.jsx)(v, {
+                    children: [j ? (0, i.jsx)(y, {
                         setSeenTutorial: R
-                    }) : null, (0, I.A)(G, D, y), U === C.mJ.Done ? null : (0, i.jsx)(u.y$y, {
+                    }) : null, (0, I.A)(G, D, v), U === C.mJ.Done ? null : (0, i.jsx)(u.y$y, {
                         className: S.u1
                     })]
                 })
@@ -116,7 +116,7 @@ function b(e) {
     })
 }
 
-function v(e) {
+function y(e) {
     let {
         setSeenTutorial: t
     } = e;
@@ -151,7 +151,7 @@ function v(e) {
     })
 }
 
-function y() {
+function v() {
     return (0, i.jsx)(E.A, {
         Icon: u.K$s,
         disableStars: !0,
@@ -160,5 +160,5 @@ function y() {
     })
 }
 let j = () => (0, i.jsx)(x.A, {
-    onClick: () => p._.dispatch(N.jej.INBOX_MARK_ALL_UNREADS_READ)
+    onClick: () => g._.dispatch(N.jej.INBOX_MARK_ALL_UNREADS_READ)
 })

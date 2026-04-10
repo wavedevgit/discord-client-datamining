@@ -17,8 +17,8 @@ var i = n(627968),
     A = n(164617),
     g = n(402216),
     p = n(626584),
-    _ = n(525505),
-    f = n(753727),
+    f = n(525505),
+    _ = n(753727),
     E = n(638480),
     x = n(607407),
     C = n(872363),
@@ -32,8 +32,8 @@ var i = n(627968),
     j = n(200749),
     R = n(70171),
     M = n(566331),
-    D = n(768088),
-    O = n(256195),
+    O = n(768088),
+    D = n(256195),
     L = n(399849),
     P = n(275731),
     k = n(345812),
@@ -77,7 +77,7 @@ function K(e) {
         width: C,
         wrapperClassName: P,
         paused: k = !1
-    } = e, V = y.Ay.getVideoComponent(), K = (0, r.bG)([N.default], () => N.default.getId()), W = (0, f.A)(), {
+    } = e, V = y.Ay.getVideoComponent(), K = (0, r.bG)([N.default], () => N.default.getId()), W = (0, _.A)(), {
         stream: z,
         user: q,
         streamId: Y
@@ -85,7 +85,7 @@ function K(e) {
     (0, h.Ay)(() => {
         !Z && J?.isGuildStageVoice() && !Q && ((0, u.A9)(z), d.A.updateStageStreamSize(z.channelId, !1))
     });
-    let ei = (0, _.u)(G.x.STREAM, t.user.id);
+    let ei = (0, f.u)(G.x.STREAM, t.user.id);
     if (l.useEffect(() => {
             H.info(`Stream Tile State - activeStream: ${null!=$} | selected: ${n} | Video: ${null!=V} | MediaEngine: ${y.Ay.supports(G.O5.VIDEO)}`)
         }, [V, $, n]), W) return (0, i.jsx)(L.A, {
@@ -99,14 +99,14 @@ function K(e) {
         stream: $,
         width: C
     });
-    if (null != ei || $?.state === w.XYD.FAILED) return (0, i.jsx)(D.A, {
+    if (null != ei || $?.state === w.XYD.FAILED) return (0, i.jsx)(O.A, {
         avError: ei?.type,
         avErrorContext: ei,
         selected: n,
         stream: t.stream,
         width: C
     });
-    if (t.type === U.lp.HIDDEN_STREAM) return (0, i.jsx)(O.A, {
+    if (t.type === U.lp.HIDDEN_STREAM) return (0, i.jsx)(D.A, {
         selected: n,
         participant: t,
         width: C

@@ -28,8 +28,8 @@ var i = n(627968),
     I = n(20737),
     N = n(133343),
     T = n(692051),
-    O = n(685603),
-    b = n(451909),
+    b = n(685603),
+    O = n(451909),
     j = n(926262),
     D = n(371648),
     R = n(118517),
@@ -140,7 +140,7 @@ class el extends s.Component {
                 shouldRefocus: !1
             };
             let r = p.A.getSendMessageOptionsForReply(i);
-            return (p.A.sendMessage(n.id, b.Ay.parse(n, t), !0, {
+            return (p.A.sendMessage(n.id, O.Ay.parse(n, t), !0, {
                 ...r,
                 location: et.Hx.OVERLAY
             }), this.setState((0, C.N3)()), (0, R.Jx)(n.id), s) ? (A.A.deactivateAllRegions(), {
@@ -368,13 +368,13 @@ class ea extends s.PureComponent {
         let {
             dragStart: t
         } = this.props;
-        t(O.P.MOVE, e.clientX, e.clientY)
+        t(b.P.MOVE, e.clientX, e.clientY)
     };
     resizeDragStart = e => {
         let {
             dragStart: t
         } = this.props;
-        t(O.P.RESIZE_SOUTH_EAST, e.clientX, e.clientY)
+        t(b.P.RESIZE_SOUTH_EAST, e.clientX, e.clientY)
     };
     renderWidgetWrapper(e) {
         let {

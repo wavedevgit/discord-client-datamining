@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(793574),
     _ = n(688810),
     m = n(222823),
-    g = n(203982),
-    p = n(661191),
+    p = n(203982),
+    g = n(661191),
     f = n(851109),
     x = n(932883),
     E = n(39324),
@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(524628),
     S = n(849077),
     b = n(652215),
-    v = n(228160),
-    y = n(985018),
+    y = n(228160),
+    v = n(985018),
     j = n(852259);
 
 function R(e) {
@@ -54,7 +54,7 @@ function O(e) {
                 variant: "text-sm/medium",
                 color: "text-subtle",
                 className: j.P7,
-                children: (0, r.capitalize)(y.intl.string(S.v7[t]).toLowerCase())
+                children: (0, r.capitalize)(v.intl.string(S.v7[t]).toLowerCase())
             }), (0, i.jsx)(u.abt, {
                 size: "xxs",
                 className: j.ai
@@ -87,12 +87,12 @@ function M() {
                     style: {
                         textAlign: "center"
                     },
-                    children: y.intl.string(v.default["O+racd"])
+                    children: v.intl.string(y.default["O+racd"])
                 })]
             }), (0, i.jsx)(u.Button, {
                 variant: "secondary",
                 onClick: () => (0, C.tZ)(e),
-                text: y.intl.string(v.default.klSpfs)
+                text: v.intl.string(y.default.klSpfs)
             })]
         })
     })
@@ -105,8 +105,8 @@ function D(e) {
             loadMore: r,
             renderLoadingState: A,
             renderMessageGroup: _,
-            scrollerClassName: v,
-            className: y,
+            scrollerClassName: y,
+            className: v,
             listName: D,
             ignoreGrouping: U = !1
         } = e,
@@ -153,8 +153,8 @@ function D(e) {
                 animate: !0
             })
         }
-        return g._.subscribe(b.jej.SCROLL_PAGE_DOWN, t), g._.subscribe(b.jej.SCROLL_PAGE_UP, e), () => {
-            g._.unsubscribe(b.jej.SCROLL_PAGE_DOWN, t), g._.unsubscribe(b.jej.SCROLL_PAGE_UP, e)
+        return p._.subscribe(b.jej.SCROLL_PAGE_DOWN, t), p._.subscribe(b.jej.SCROLL_PAGE_UP, e), () => {
+            p._.unsubscribe(b.jej.SCROLL_PAGE_DOWN, t), p._.unsubscribe(b.jej.SCROLL_PAGE_UP, e)
         }
     }, []);
     let q = l.useCallback(() => {
@@ -188,7 +188,7 @@ function D(e) {
                 let n = (0, C.i7)(e);
                 e.kind === S.yL.MENTION ? t[n].push(e) : e.channelId in i[n] ? i[n][e.channelId].push(e) : i[n][e.channelId] = [e]
             }), o().each(L, n => {
-                [...Object.values(i[n]).map(e => e.reverse()), ...t[n].map(e => [e])].sort((e, t) => p.default.compare(t[0].id, e[0].id)).forEach(t => {
+                [...Object.values(i[n]).map(e => e.reverse()), ...t[n].map(e => [e])].sort((e, t) => g.default.compare(t[0].id, e[0].id)).forEach(t => {
                     e[n].push(t)
                 })
             })), e
@@ -256,7 +256,7 @@ function D(e) {
         messagesByCategory: X,
         viewId: G
     }), (0, i.jsx)("div", {
-        className: a()(y, j.KQ),
+        className: a()(v, j.KQ),
         onClick: R,
         onDoubleClick: R,
         "aria-label": e["aria-label"],
@@ -272,7 +272,7 @@ function D(e) {
                         ref: e => {
                             P.current = e, t.current = e?.getScrollerNode() ?? null
                         },
-                        className: a()(j.m4, v),
+                        className: a()(j.m4, y),
                         onScroll: q,
                         fade: !0,
                         ...n,

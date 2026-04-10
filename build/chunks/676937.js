@@ -1,12 +1,12 @@
 /** chunk id: 676937 params = (module,exports,require) **/
 n.d(t, {
     a: () => r,
-    y: () => i
+    y: () => l
 });
 var a = n(223273),
-    l = n(985018);
+    i = n(985018);
 
-function i(e) {
+function l(e) {
     switch (e) {
         case a.vI.NO_USER_REVIEWS:
             return "text-subtle";
@@ -30,25 +30,25 @@ function i(e) {
 function r(e) {
     switch (e) {
         case a.vI.NO_USER_REVIEWS:
-            return l.intl.string(l.t.CLMt8J);
+            return i.intl.string(i.t.CLMt8J);
         case a.vI.OVERWHELMINGLY_POSITIVE:
-            return l.intl.string(l.t["75sx1S"]);
+            return i.intl.string(i.t["75sx1S"]);
         case a.vI.VERY_POSITIVE:
-            return l.intl.string(l.t["EkOVg+"]);
+            return i.intl.string(i.t["EkOVg+"]);
         case a.vI.POSITIVE:
-            return l.intl.string(l.t.ZUkFtr);
+            return i.intl.string(i.t.ZUkFtr);
         case a.vI.MOSTLY_POSITIVE:
-            return l.intl.string(l.t.M7Z09a);
+            return i.intl.string(i.t.M7Z09a);
         case a.vI.MIXED:
-            return l.intl.string(l.t.c8yuHR);
+            return i.intl.string(i.t.c8yuHR);
         case a.vI.MOSTLY_NEGATIVE:
-            return l.intl.string(l.t.H0MSjG);
+            return i.intl.string(i.t.H0MSjG);
         case a.vI.NEGATIVE:
-            return l.intl.string(l.t.vpLrgz);
+            return i.intl.string(i.t.vpLrgz);
         case a.vI.VERY_NEGATIVE:
-            return l.intl.string(l.t["5spYuX"]);
+            return i.intl.string(i.t["5spYuX"]);
         case a.vI.OVERWHELMINGLY_NEGATIVE:
-            return l.intl.string(l.t.A8uk5J);
+            return i.intl.string(i.t.A8uk5J);
         default:
             return null
     }

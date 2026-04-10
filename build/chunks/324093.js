@@ -1,7 +1,7 @@
 /** chunk id: 324093 params = (module,exports,require) **/
 n.d(t, {
-    K2: () => S,
-    OL: () => C,
+    K2: () => C,
+    OL: () => S,
     Ub: () => p,
     k1: () => y
 });
@@ -49,12 +49,12 @@ function A(e, t, n, i) {
     }
 }
 
-function x(e, t, n, i) {
+function I(e, t, n, i) {
     let a = g(e, t);
     return i ? n.width - a : (0, _.Um)(n.height - a)
 }
 
-function I(e) {
+function x(e) {
     return e.height > e.width
 }
 let E = 180 / 1080;
@@ -67,7 +67,7 @@ function b(e) {
         padding: a,
         previousContainerSize: r,
         widgetMinMaxSizes: l
-    } = e, s = t === h.IV.VERTICAL, o = x(i, a, r, s), d = A(n, a, i, s, o);
+    } = e, s = t === h.IV.VERTICAL, o = I(i, a, r, s), d = A(n, a, i, s, o);
     return (0, _.UM)(d, {
         containerOffset: g(i, a),
         gapSize: a,
@@ -89,7 +89,7 @@ function v(e) {
         containerSpecs: s,
         defaultSize: o,
         ...d
-    } = e, c = e => C({
+    } = e, c = e => S({
         operation: u.P.RESIZE_NORTH,
         computedSize: e,
         originSize: e,
@@ -113,7 +113,7 @@ function v(e) {
         ..._
     })
 }
-let C = e => {
+let S = e => {
     let t, n, i, {
             operation: a,
             computedSize: r,
@@ -129,8 +129,8 @@ let C = e => {
             width: h,
             height: m
         },
-        f = I(p),
-        A = (t = I(p), n = x(s, o, p, t), i = (0, _.uc)(n), t ? Math.floor(p.height / i) : Math.floor(p.width / n)),
+        f = x(p),
+        A = (t = x(p), n = I(s, o, p, t), i = (0, _.uc)(n), t ? Math.floor(p.height / i) : Math.floor(p.width / n)),
         E = (0, _.eu)({
             width: h,
             height: m,
@@ -167,7 +167,7 @@ let C = e => {
     })
 };
 
-function S(e) {
+function C(e) {
     let {
         tileCount: t,
         padding: n,
@@ -183,8 +183,8 @@ function S(e) {
     }, {
         width: h = o,
         height: f = u,
-        ref: I
-    } = (0, l.Ay)(), b = (0, m.A)(), v = (0, c.Q2)(b), C = (0, a.bG)([d.A], () => d.A.windowSize(v), [v]), S = function(e) {
+        ref: x
+    } = (0, l.Ay)(), b = (0, m.A)(), v = (0, c.Q2)(b), S = (0, a.bG)([d.A], () => d.A.windowSize(v), [v]), C = function(e) {
         let {
             tileCount: t,
             padding: n,
@@ -211,10 +211,10 @@ function S(e) {
         tileCount: t,
         padding: n,
         borderWidth: i,
-        windowWidth: C.width,
-        windowHeight: C.height,
+        windowWidth: S.width,
+        windowHeight: S.height,
         isVertical: r
-    }), y = g(i, n), T = x(i, n, {
+    }), y = g(i, n), T = I(i, n, {
         width: h + y,
         height: f + y
     }, r), N = (0, _.uc)(T);
@@ -223,8 +223,8 @@ function S(e) {
         tileHeight: N,
         widgetWidth: o,
         widgetHeight: u,
-        containerRef: I,
-        containerMinMaxSizes: S
+        containerRef: x,
+        containerMinMaxSizes: C
     }
 }
 
@@ -336,7 +336,7 @@ function y(e) {
                 padding: r,
                 previousContainerSize: l,
                 widgetMinMaxSizes: s
-            } = e, o = x(a, r, l, t === h.IV.VERTICAL), d = A(i, r, a, n === h.IV.VERTICAL, o);
+            } = e, o = I(a, r, l, t === h.IV.VERTICAL), d = A(i, r, a, n === h.IV.VERTICAL, o);
             return (0, _.UM)(d, {
                 containerOffset: g(a, r),
                 gapSize: r,

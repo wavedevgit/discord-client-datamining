@@ -25,8 +25,8 @@ function h(e) {
     }, []), {
         acceptMessageRequest: g,
         rejectMessageRequest: p,
-        isAcceptLoading: _,
-        isRejectLoading: f,
+        isAcceptLoading: f,
+        isRejectLoading: _,
         isOptimisticAccepted: E,
         isOptimisticRejected: x
     } = (0, a.t)({
@@ -34,20 +34,20 @@ function h(e) {
         onError: h,
         onAcceptSuccess: A,
         onRejectSuccess: m
-    }), C = _ || f || E || x;
+    }), C = f || _ || E || x;
     return (0, i.jsxs)(s.ButtonGroup, {
         size: "sm",
         children: [(0, i.jsx)(s.Button, {
             variant: "primary",
             disabled: C,
             onClick: () => g(t.id),
-            loading: _,
+            loading: f,
             text: u.intl.string(u.t.Kz8Pwr)
         }), (0, i.jsx)(s.Button, {
             variant: "secondary",
             disabled: C,
             onClick: () => p(t.id),
-            loading: f,
+            loading: _,
             text: u.intl.string(u.t.B2nygW)
         }), (0, i.jsx)(d.A, {
             channel: t,

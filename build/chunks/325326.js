@@ -25,7 +25,7 @@ let h = () => {
             isDesktop: h,
             withMentions: A = !1,
             initialPageSize: _
-        } = e, m = (0, l.bG)([c.A], () => c.A.shouldReload()), g = i.useRef(!1), [p, f] = i.useState(!1), {
+        } = e, m = (0, l.bG)([c.A], () => c.A.shouldReload()), p = i.useRef(!1), [g, f] = i.useState(!1), {
             initialized: x,
             loading: E,
             items: I,
@@ -49,10 +49,10 @@ let h = () => {
         i.useEffect(() => ((0, o.BZ)(!0), () => (0, o.BZ)(!1)), []), i.useEffect(() => {
             x && t && (0, s.d_)(u.P.NOTIFICATION_CENTER)
         }, [t, x]);
-        let v = (0, a.A)();
+        let y = (0, a.A)();
         i.useEffect(() => () => {
-            h ? !v() && (T || I.length > 100) && (0, o.S3)() : n && I.length > 100 && (0, o.S3)()
-        }, [n, I, h, v, T]), i.useEffect(() => {
+            h ? !y() && (T || I.length > 100) && (0, o.S3)() : n && I.length > 100 && (0, o.S3)()
+        }, [n, I, h, y, T]), i.useEffect(() => {
             let e = m && t;
             (!x || e) && (0, o.ni)({
                 limit: _ ?? (A ? 8 : 20),
@@ -61,15 +61,15 @@ let h = () => {
                 everyone_filter: b
             })
         }, [x, m, t, A, S, b, _]);
-        let y = i.useCallback(async e => {
-            !g.current && x && C && null != N && (e || !T) && (g.current = !0, f(!0), await (0, o.ni)({
+        let v = i.useCallback(async e => {
+            !p.current && x && C && null != N && (e || !T) && (p.current = !0, f(!0), await (0, o.ni)({
                 after: N,
                 with_mentions: A,
                 roles_filter: S,
                 everyone_filter: b,
                 limit: A ? 8 : 20
             }, () => {
-                g.current = !1
+                p.current = !1
             }), f(!1))
         }, [x, C, N, T, A, S, b]);
         return {
@@ -77,8 +77,8 @@ let h = () => {
             loading: E,
             items: I,
             hasMore: C,
-            loadMore: y,
-            loadingMore: p,
+            loadMore: v,
+            loadingMore: g,
             setReadNotifItemToAcked: e => {
                 e.acked || (e.acked = !0)
             },

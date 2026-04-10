@@ -1,10 +1,10 @@
 /** chunk id: 422069 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => h
 });
 var a = n(311907),
-    l = n(73153);
-let i = {},
+    i = n(73153);
+let l = {},
     r = {},
     s = {},
     o = {},
@@ -12,11 +12,11 @@ let i = {},
     d = {},
     u = {},
     m = {},
-    x = null;
-class h extends a.Ay.Store {
+    f = null;
+class x extends a.Ay.Store {
     static displayName = "GameProfileStore";
     getSimilarGames(e) {
-        return i[e]
+        return l[e]
     }
     getSimilarGamesError(e) {
         return r[e]
@@ -40,16 +40,16 @@ class h extends a.Ay.Store {
         return m[e] ?? !1
     }
     getPendingReturn() {
-        return x
+        return f
     }
 }
-let f = new h(l.h, {
+let h = new x(i.h, {
     GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS: function(e) {
         let {
             applicationId: t,
             games: n
         } = e;
-        i[t] = n
+        l[t] = n
     },
     GAME_PROFILE_GET_SIMILAR_GAMES_ERROR: function(e) {
         let {
@@ -88,12 +88,12 @@ let f = new h(l.h, {
             gameId: t,
             messages: n,
             channelId: a,
-            guildId: l
+            guildId: i
         } = e;
         d[t] = {
             messages: n,
             channelId: a,
-            guildId: l
+            guildId: i
         }, u[t] = !0, m[t] = !1
     },
     GAME_PROFILE_GET_ANNOUNCEMENTS_ERROR: function(e) {
@@ -107,8 +107,8 @@ let f = new h(l.h, {
             gameId: t,
             channelId: n
         } = e;
-        if (x?.gameId === t && x?.channelId === n) return !1;
-        x = {
+        if (f?.gameId === t && f?.channelId === n) return !1;
+        f = {
             gameId: t,
             channelId: n
         }
@@ -117,7 +117,7 @@ let f = new h(l.h, {
         let {
             gameId: t
         } = e;
-        if (null == x || x.gameId !== t) return !1;
-        x = null
+        if (null == f || f.gameId !== t) return !1;
+        f = null
     }
 })

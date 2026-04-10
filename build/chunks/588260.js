@@ -3,8 +3,8 @@ n.d(t, {
     A: () => v
 });
 var a = n(627968),
-    l = n(64700),
-    i = n(793574),
+    i = n(64700),
+    l = n(793574),
     r = n(979286),
     s = n(674658),
     o = n(751304),
@@ -12,11 +12,11 @@ var a = n(627968),
     d = n(951707),
     u = n(409626),
     m = n(84904),
-    x = n(954506),
-    h = n(758836),
-    f = n(985018),
+    f = n(954506),
+    x = n(758836),
+    h = n(985018),
     g = n(536083);
-let p = l.createContext({
+let p = i.createContext({
         closeModal: () => {},
         trackAction: () => {}
     }),
@@ -26,17 +26,17 @@ let p = l.createContext({
             aspectRatio: n
         } = e, {
             product: d
-        } = (0, s.q)(t, !0), m = l.useContext(c.v3), {
-            closeModal: x,
-            trackAction: f
-        } = l.useContext(p), _ = l.useCallback(() => {
-            f(u.Ws.DiscordCollectiblesShopItem), x(), (0, r.Cz)({
-                analyticsLocations: [i.A.GAME_PROFILE],
-                analyticsSource: i.A.GAME_PROFILE,
+        } = (0, s.q)(t, !0), m = i.useContext(c.v3), {
+            closeModal: f,
+            trackAction: h
+        } = i.useContext(p), _ = i.useCallback(() => {
+            h(u.Ws.DiscordCollectiblesShopItem), f(), (0, r.Cz)({
+                analyticsLocations: [l.A.GAME_PROFILE],
+                analyticsSource: l.A.GAME_PROFILE,
                 initialProductSkuId: t,
-                tab: h.G2.CATALOG
+                tab: x.G2.CATALOG
             })
-        }, [f, x, t]);
+        }, [h, f, t]);
         if (null == d) return null;
         let {
             flattenProductVariants: v,
@@ -65,20 +65,20 @@ function v(e) {
         game: t,
         closeModal: n,
         trackAction: s
-    } = e, o = t.shopCollectionIds?.[0], c = (0, m.j)(o), g = l.useCallback(() => {
+    } = e, o = t.shopCollectionIds?.[0], c = (0, m.j)(o), g = i.useCallback(() => {
         s(u.Ws.DiscordCollectiblesShop), n(), (0, r.Cz)({
-            analyticsLocations: [i.A.GAME_PROFILE],
-            analyticsSource: i.A.GAME_PROFILE,
-            tab: h.G2.CATALOG
+            analyticsLocations: [l.A.GAME_PROFILE],
+            analyticsSource: l.A.GAME_PROFILE,
+            tab: x.G2.CATALOG
         })
-    }, [s, n]), v = l.useMemo(() => ({
+    }, [s, n]), v = i.useMemo(() => ({
         closeModal: n,
         trackAction: s
     }), [n, s]);
     return 0 === c.length ? null : (0, a.jsx)(p.Provider, {
         value: v,
-        children: (0, a.jsx)(x.A, {
-            title: f.intl.string(f.t["5DYPT8"]),
+        children: (0, a.jsx)(f.A, {
+            title: h.intl.string(h.t["5DYPT8"]),
             onClickViewAll: g,
             children: (0, a.jsx)(d.A, {
                 gap: "md",

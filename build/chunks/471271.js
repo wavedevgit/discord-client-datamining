@@ -1,6 +1,6 @@
 /** chunk id: 471271 params = (module,exports,require) **/
 n.d(t, {
-    t: () => _
+    t: () => f
 });
 var i = n(64700),
     l = n(424266),
@@ -17,37 +17,37 @@ var i = n(64700),
     g = n(687599),
     p = n(652215);
 
-function _(e) {
+function f(e) {
     let {
         user: t,
         onAcceptSuccess: n,
         onRejectSuccess: l,
-        onError: _
-    } = e, f = (0, A.A)(), [E, x] = i.useState(!1), [C, S] = i.useState(!1), [I, T] = i.useState(!1), [N, v] = i.useState(!1), [y, b] = i.useState(!1), j = E || C || I, R = i.useCallback(async e => {
+        onError: f
+    } = e, _ = (0, A.A)(), [E, x] = i.useState(!1), [C, S] = i.useState(!1), [I, T] = i.useState(!1), [N, v] = i.useState(!1), [y, b] = i.useState(!1), j = E || C || I, R = i.useCallback(async e => {
         if (!j) {
             x(!0);
             try {
                 await (0, h.RK)(e), v(!0), n?.()
             } catch (t) {
                 let e = new a.LG(t);
-                _?.(e)
+                f?.(e)
             } finally {
                 x(!1)
             }
         }
-    }, [j, n, _]), M = i.useCallback(async e => {
+    }, [j, n, f]), M = i.useCallback(async e => {
         if (!j) {
             S(!0);
             try {
                 await (0, h.UK)(e), b(!0), l?.()
             } catch (t) {
                 let e = new a.LG(t);
-                _?.(e)
+                f?.(e)
             } finally {
                 S(!1)
             }
         }
-    }, [j, l, _]), D = i.useCallback(async e => {
+    }, [j, l, f]), O = i.useCallback(async e => {
         if (j) return;
         S(!0);
         let t = s()(e, 50);
@@ -56,11 +56,11 @@ function _(e) {
             b(!0), l?.()
         } catch (t) {
             let e = new a.LG(t);
-            _?.(e)
+            f?.(e)
         } finally {
             S(!1)
         }
-    }, [j, l, _]), O = i.useCallback(async e => {
+    }, [j, l, f]), D = i.useCallback(async e => {
         if (j) return;
         if (null != t && null == o.A.getMutualGuilds(t.id)) {
             T(!0);
@@ -117,9 +117,9 @@ function _(e) {
         }) : i(l)
     }, [R]);
     return {
-        acceptMessageRequest: f ? O : R,
+        acceptMessageRequest: _ ? D : R,
         rejectMessageRequest: M,
-        rejectAll: D,
+        rejectAll: O,
         markAsNotSpam: L,
         isAcceptLoading: E,
         isRejectLoading: C,

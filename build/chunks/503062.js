@@ -33,11 +33,11 @@ function E(e) {
         themeType: I
     } = (0, A.E)(), N = s.useMemo(() => t.isNonUserBot() || (0, u.c)(t, v), [t, v]), {
         activities: T,
-        isMobileOnline: O
+        isMobileOnline: b
     } = (0, l.cf)([p.A], () => ({
         activities: p.A.getActivities(t.id),
         isMobileOnline: p.A.isMobileOnline(t.id)
-    })), b = (0, h.A)(t.id), {
+    })), O = (0, h.A)(t.id), {
         voiceChannel: j
     } = (0, d.A)({
         userId: t.id,
@@ -74,7 +74,7 @@ function E(e) {
             size: m,
             status: N ? f.clD.UNKNOWN : E,
             statusBackdropColor: N ? void 0 : (0, a.C$5)(C),
-            isMobile: O,
+            isMobile: b,
             className: _.my
         }), (0, i.jsxs)("div", {
             className: _.zH,
@@ -85,7 +85,7 @@ function E(e) {
             }), (0, i.jsx)(c.A, {
                 user: t,
                 activities: T,
-                applicationStream: b,
+                applicationStream: O,
                 voiceChannel: j
             })]
         })]

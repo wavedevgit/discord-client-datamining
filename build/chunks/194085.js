@@ -23,8 +23,8 @@ let d = l.forwardRef(function(e, t) {
         onTooltipHide: A,
         disabled: g,
         dangerous: p,
-        separator: _,
-        buttonClassName: f,
+        separator: f,
+        buttonClassName: _,
         children: E,
         ...x
     } = e;
@@ -37,7 +37,7 @@ let d = l.forwardRef(function(e, t) {
         children: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)(o.$n, {
                 ref: t,
-                className: a()(c.W1, f),
+                className: a()(c.W1, _),
                 onClick: e => {
                     h(e)
                 },
@@ -53,7 +53,7 @@ let d = l.forwardRef(function(e, t) {
                     className: a()(c.Kk, c.IO),
                     children: E
                 }) : null]
-            }), _ && (0, i.jsx)(o.wv, {})]
+            }), f && (0, i.jsx)(o.wv, {})]
         })
     })
 });

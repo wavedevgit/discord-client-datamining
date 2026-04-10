@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(411976),
     _ = n(912309),
     m = n(400492),
-    g = n(728321),
-    p = n(309010),
+    p = n(728321),
+    g = n(309010),
     f = n(287809),
     x = n(816733),
     E = n(619921),
@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(87941),
     S = n(941971),
     b = n(900848),
-    v = n(550591),
-    y = n(65611),
+    y = n(550591),
+    v = n(65611),
     j = n(652215),
     R = n(788868),
     O = n(235079),
@@ -53,7 +53,7 @@ function U(e) {
         badge: a,
         link: u,
         showProgressBadge: A
-    } = e, [_, p] = l.useState(!1), [f, x] = l.useState(!1), [E, I] = l.useState(null), [C, N] = l.useState(0), T = (0, s.Vd)("home"), R = (0, h.fy)().activePanel === h.HP.APP_ICON, U = () => {
+    } = e, [_, g] = l.useState(!1), [f, x] = l.useState(!1), [E, I] = l.useState(null), [C, N] = l.useState(0), T = (0, s.Vd)("home"), R = (0, h.fy)().activePanel === h.HP.APP_ICON, U = () => {
         I(null), N(0), clearTimeout(E)
     };
     if (null == n) return null;
@@ -67,14 +67,14 @@ function U(e) {
     let k = t || _ || R,
         w = (0, i.jsx)(o.Qk9, {
             selected: !0,
-            lowerBadge: a > 0 ? (0, y.wN)(a) : null,
+            lowerBadge: a > 0 ? (0, v.wN)(a) : null,
             upperBadge: P,
             lowerBadgeSize: {
                 width: (0, o.o6S)(a)
             },
             children: (0, i.jsx)(o.jlP, {
-                onMouseEnter: () => p(!0),
-                onMouseLeave: () => p(!1),
+                onMouseEnter: () => g(!0),
+                onMouseLeave: () => g(!1),
                 onClick: () => {
                     if (!__OVERLAY__ && (null != E && clearTimeout(E), I(setTimeout(U, 500)), N(C + 1), 15 === C)) {
                         U();
@@ -104,7 +104,7 @@ function U(e) {
         });
     return (0, i.jsx)("div", {
         className: M.Uq,
-        children: (0, i.jsx)(g.A, {
+        children: (0, i.jsx)(p.A, {
             inlineSpecs: D,
             tutorialId: "friends-list",
             position: "right",
@@ -113,7 +113,7 @@ function U(e) {
                     selected: t,
                     hovered: _,
                     className: M.Io
-                }), (0, i.jsx)(v.A, {
+                }), (0, i.jsx)(y.A, {
                     hideOnClick: !0,
                     text: G,
                     selected: t,
@@ -148,14 +148,14 @@ function G() {
         c = s.fractionalState === R.xc.NONE ? r + o : 0,
         h = (0, a.bG)([f.default], () => f.default.getCurrentUser()),
         m = (0, A.W)(),
-        g = n + c + m,
-        S = g === c && c > 0 && n + m === 0,
+        p = n + c + m,
+        S = p === c && c > 0 && n + m === 0,
         b = E.A.getHomeLink();
     return S && (b = j.BVt.APPLICATION_STORE), (0, i.jsx)(U, {
         selected: e,
         user: h,
-        selectedChannelId: p.A.getChannelId(j.ME),
-        badge: g,
+        selectedChannelId: g.A.getChannelId(j.ME),
+        badge: p,
         link: b,
         showProgressBadge: t
     })

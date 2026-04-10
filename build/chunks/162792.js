@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(638075),
     g = n(465364),
     p = n(763754),
-    _ = n(448368),
-    f = n(535421),
+    f = n(448368),
+    _ = n(535421),
     E = n(112758),
     x = n(652215),
     C = n(985018);
@@ -32,7 +32,7 @@ let S = l.memo(function(e) {
         setPopout: v,
         isReplySpineClickable: y,
         showReplySpine: b
-    } = e, j = n.state === h.a.LOADED ? n.message : void 0, R = (0, p.X4)(j), M = (0, c.S)((t.editedTimestamp ?? t.timestamp).valueOf()), D = l.useMemo(() => {
+    } = e, j = n.state === h.a.LOADED ? n.message : void 0, R = (0, p.X4)(j), M = (0, c.S)((t.editedTimestamp ?? t.timestamp).valueOf()), O = l.useMemo(() => {
         if (null == j) return null;
         let e = (0, r.A)(j);
         if (e.type === x.lAJ.USER_JOIN) return (0, a.$)(C.intl.formatToParts(A.A.getSystemMessageUserJoin(e.id), {
@@ -76,7 +76,7 @@ let S = l.memo(function(e) {
         }
         return null
     }, [j, R, S, M]), {
-        isReplyAuthorBlocked: O,
+        isReplyAuthorBlocked: D,
         isReplyAuthorIgnored: L
     } = (0, s.cf)([m.A], () => ({
         isReplyAuthorBlocked: null != j && m.A.isBlockedForMessage(j),
@@ -87,19 +87,19 @@ let S = l.memo(function(e) {
             referencedAvatarProfile: !1
         })
     }, [v]), F = (0, p.X4)(t);
-    return (0, i.jsx)(_.A, {
+    return (0, i.jsx)(f.A, {
         repliedAuthor: R,
         baseMessage: t,
         channel: S,
         baseAuthor: F,
         referencedMessage: n,
-        content: D,
+        content: O,
         compact: I,
-        isReplyAuthorBlocked: O,
+        isReplyAuthorBlocked: D,
         isReplyAuthorIgnored: L,
         showAvatarPopout: N,
         showUsernamePopout: T,
-        renderPopout: f.A,
+        renderPopout: _.A,
         onClickAvatar: U,
         onClickUsername: w,
         onClickReply: k,

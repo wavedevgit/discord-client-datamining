@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(209932),
     g = n(536432),
     p = n(933204),
-    _ = n(805143),
-    f = n(375366),
+    f = n(805143),
+    _ = n(375366),
     E = n(69217);
 n(980504);
 var x = n(653906);
@@ -45,11 +45,11 @@ function C(e) {
                 };
             return l.forEach(e => s(e, !0)), l.forEach(e => s(e, !1)), i
         }, [t, n, e])
-    }((0, _.Y)(n, !0)), b = (0, p.T)(), j = l.useRef(null), [R, M] = l.useState(void 0), D = (0, a.bG)([u.A], () => u.A.getMediaSessionId()), {
-        analyticsLocations: O
+    }((0, f.Y)(n, !0)), b = (0, p.T)(), j = l.useRef(null), [R, M] = l.useState(void 0), O = (0, a.bG)([u.A], () => u.A.getMediaSessionId()), {
+        analyticsLocations: D
     } = (0, o.Ay)(r.A.SOUNDBOARD_WHEEL), L = l.useCallback(e => {
-        (0, g.Ak)(e, n.id, O), v()
-    }, [O, n.id, v]);
+        (0, g.Ak)(e, n.id, D), v()
+    }, [D, n.id, v]);
     l.useEffect(() => {
         m.E7(), d.bW.loadIfNecessary()
     }, []), l.useEffect(() => {
@@ -63,7 +63,7 @@ function C(e) {
         properties: {
             source: N,
             guild_id: t,
-            media_session_id: D
+            media_session_id: O
         }
     }, {
         disableTrack: !T
@@ -89,8 +89,8 @@ function C(e) {
             channel: n
         }, e.soundId)), [R, n, T, y]);
     return 0 === y.length ? null : (0, i.jsx)(o.f5, {
-        value: O,
-        children: (0, i.jsx)(f.A, {
+        value: D,
+        children: (0, i.jsx)(_.A, {
             wheelWidth: C,
             wheelHeight: S,
             itemWidth: 96,

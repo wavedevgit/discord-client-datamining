@@ -28,8 +28,8 @@ var i = n(627968),
     I = n(855790),
     N = n(672396),
     T = n(652215),
-    O = n(985018),
-    b = n(227499);
+    b = n(985018),
+    O = n(227499);
 let j = 10 * E.A.Millis.SECOND,
     D = new h.Vy("LegacyOverlayErrorBoundary");
 
@@ -105,29 +105,29 @@ class L extends s.PureComponent {
                 theme: T.NJ8.DARK,
                 children: s => (0, i.jsxs)(p.DUT, {
                     innerRef: this.contentDomRef,
-                    className: a()(s, b.kL),
+                    className: a()(s, O.kL),
                     onClick: e => e.stopPropagation(),
                     children: [(0, i.jsx)(_.Ay, {
                         expand: !0,
                         icon: (0, i.jsx)(x.A, {
                             width: 40,
                             height: 40,
-                            className: b.Lo
+                            className: O.Lo
                         }),
-                        title: O.intl.string(O.t.U38qZj),
-                        confirmText: O.intl.string(O.t.TzAl1a),
+                        title: b.intl.string(b.t.U38qZj),
+                        confirmText: b.intl.string(b.t.TzAl1a),
                         onNotificationClick: this.handleNotificationClick,
                         onConfirmClick: this.handleReload,
                         onDismissClick: this.hideNotification,
                         locked: !1
                     }), n && null != e ? (0, i.jsxs)(I.Ay, {
-                        className: b.a2,
+                        className: O.a2,
                         children: [(0, i.jsx)(I.Ay.Bar, {
                             children: "Error Details"
                         }), (0, i.jsx)(I.Ay.Content, {
-                            className: b.Xh,
+                            className: O.Xh,
                             children: (0, i.jsx)("code", {
-                                className: b.aY,
+                                className: O.aY,
                                 children: (0, i.jsx)("pre", {
                                     children: t.stack
                                 })

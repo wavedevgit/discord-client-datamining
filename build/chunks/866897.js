@@ -16,8 +16,8 @@ var i = n(64700),
     A = n(961350),
     g = n(734057),
     p = n(580745),
-    _ = n(834942),
-    f = n(320501),
+    f = n(834942),
+    _ = n(320501),
     E = n(576705),
     x = n(957565),
     C = n(203982),
@@ -35,9 +35,9 @@ let j = function(e, t, n) {
         let i = !n.altKey && !n.ctrlKey && !n.metaKey && !n.shiftKey,
             R = n.altKey && !(n.ctrlKey || n.metaKey || n.shiftKey),
             M = n.ctrlKey && !(n.altKey || n.metaKey || n.shiftKey),
-            D = n.metaKey && !(n.altKey || n.ctrlKey || n.shiftKey),
-            O = n.shiftKey && !(n.altKey || n.ctrlKey || n.metaKey),
-            L = f.A.getMessage(t, e),
+            O = n.metaKey && !(n.altKey || n.ctrlKey || n.shiftKey),
+            D = n.shiftKey && !(n.altKey || n.ctrlKey || n.metaKey),
+            L = _.A.getMessage(t, e),
             P = g.A.getChannel(t);
         if (null == L || null == P) return;
         let k = A.default.getId();
@@ -46,17 +46,17 @@ let j = function(e, t, n) {
                 i && (E.A.can(b.xBc.MANAGE_MESSAGES, P) || L.canDeleteOwnMessage(k)) && (n.preventDefault(), (0, y.RC)(P, L, n));
                 break;
             case "c":
-                ((0, S.isMac)() ? D : M) && x.p5 && (n.preventDefault(), (0, x.C)(L.content));
+                ((0, S.isMac)() ? O : M) && x.p5 && (n.preventDefault(), (0, x.C)(L.content));
                 break;
             case "e":
                 i && !P.isSystemDM() && (0, T.A)(L, k) && (n.preventDefault(), (0, y.u_)(P, L));
                 break;
             case "p":
-                (i || O) && (0, N.A)(L, P) && (n.preventDefault(), (0, y.rS)(P, L, n));
+                (i || D) && (0, N.A)(L, P) && (n.preventDefault(), (0, y.rS)(P, L, n));
                 break;
             case "+":
-                (i || O) && function(e) {
-                    let t = null == e.guild_id || _.A.canChatInGuild(e.guild_id),
+                (i || D) && function(e) {
+                    let t = null == e.guild_id || f.A.canChatInGuild(e.guild_id),
                         n = m.jW.getSetting(),
                         {
                             disableReactionCreates: i
@@ -74,10 +74,10 @@ let j = function(e, t, n) {
                 }));
                 break;
             case "r":
-                (i || O) && (0, o.r)(P, L) && (n.preventDefault(), (0, y.$b)(P, L, n));
+                (i || D) && (0, o.r)(P, L) && (n.preventDefault(), (0, y.$b)(P, L, n));
                 break;
             case "f":
-                (i || O) && (0, s.p)(L) && (n.preventDefault(), (0, a.fO)({
+                (i || D) && (0, s.p)(L) && (n.preventDefault(), (0, a.fO)({
                     message: L,
                     source: "keyboard-shortcut"
                 }));
@@ -89,7 +89,7 @@ let j = function(e, t, n) {
                 if (i && (0, c.D1)(P, L)) n.preventDefault(), (0, d.Tv)(P, L, "Message Shortcut");
                 else if (L.hasFlag(b.pr7.HAS_THREAD)) {
                     let e = g.A.getChannel(I.default.castMessageIdAsChannelId(L.id));
-                    null != e && (i || O) && (n.preventDefault(), (0, d.JA)(e, O))
+                    null != e && (i || D) && (n.preventDefault(), (0, d.JA)(e, D))
                 }
                 break;
             case "enter":

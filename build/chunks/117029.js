@@ -16,9 +16,9 @@ var i = n(627968),
     A = n(40056),
     g = n(985018),
     p = n(695292),
-    _ = n(688046);
+    f = n(688046);
 
-function f(e) {
+function _(e) {
     e.preventDefault(), e.stopPropagation()
 }
 
@@ -44,8 +44,8 @@ let x = l.memo(function(e) {
         isSlidering: j,
         setIsSlidering: R,
         doZoom: M,
-        isZooming: D,
-        videoAspectRatio: O,
+        isZooming: O,
+        videoAspectRatio: D,
         wrapperRef: L,
         panOffset: P,
         setPanOffset: k,
@@ -55,12 +55,12 @@ let x = l.memo(function(e) {
     }, [C]), V = l.useCallback(() => {
         G(!1), S("interact")
     }, [S]), K = l.useMemo(() => {
-        let e = 120 * Math.min(O, 32 / 9);
+        let e = 120 * Math.min(D, 32 / 9);
         return {
             "--custom-zoom-minimap-width": `${e}px`,
             "--custom-zoom-minimap-height": "120px"
         }
-    }, [O]), W = l.useCallback(e => {
+    }, [D]), W = l.useCallback(e => {
         if (null == F.current || null == L.current) return;
         let t = F.current.getBoundingClientRect(),
             n = L.current.clientWidth,
@@ -109,38 +109,38 @@ let x = l.memo(function(e) {
     return ((0, u.l0)(() => {
         Q.current?.stop()
     }), I && null != n) ? (0, i.jsxs)("div", {
-        className: a()(_.ne, {
-            [_.Ge]: D || B
+        className: a()(f.ne, {
+            [f.Ge]: O || B
         }),
         onMouseEnter: H,
         onMouseLeave: V,
-        onClick: f,
-        children: [(D || B) && (0, i.jsx)(d.DUT, {
-            onClick: f,
+        onClick: _,
+        children: [(O || B) && (0, i.jsx)(d.DUT, {
+            onClick: _,
             onMouseEnter: H,
             onMouseLeave: V,
             children: (0, i.jsxs)("div", {
                 ref: F,
-                className: _.Wc,
+                className: f.Wc,
                 style: K,
                 onMouseDown: z,
                 onMouseMove: q,
                 onMouseUp: Y,
                 children: [(0, i.jsx)(J, {
-                    className: a()(_.BZ, {
+                    className: a()(f.BZ, {
                         [p.mirror]: t
                     }),
                     streamId: n,
                     paused: s,
                     reportContainerResized: !1
                 }), (0, i.jsx)("div", {
-                    className: _.xq,
+                    className: f.xq,
                     style: $
                 })]
             })
         }), (0, i.jsxs)("div", {
-            className: _.xu,
-            children: [(D || B) && (0, i.jsxs)(i.Fragment, {
+            className: f.xu,
+            children: [(O || B) && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(c.m_, {
                     text: g.intl.string(g.t.M6Cmwy),
                     position: "top",

@@ -18,8 +18,8 @@ var i = n(627968),
     A = n(12351),
     g = n(976860),
     p = n(734057),
-    _ = n(320501),
-    f = n(576705),
+    f = n(320501),
+    _ = n(576705),
     E = n(519057),
     x = n(531685),
     C = n(954571),
@@ -128,16 +128,16 @@ class M extends l.PureComponent {
         })
     }
 }
-let D = d.Ay.connectStores([f.A], e => {
+let O = d.Ay.connectStores([_.A], e => {
     let {
         channel: t
     } = e;
     return {
-        canManageMessages: null != t && f.A.can(N.xBc.MANAGE_MESSAGES, t)
+        canManageMessages: null != t && _.A.can(N.xBc.MANAGE_MESSAGES, t)
     }
 })(M);
 
-function O(e) {
+function D(e) {
     let {
         analyticsName: t,
         items: n,
@@ -146,12 +146,12 @@ function O(e) {
         loadMore: h,
         renderHeader: g,
         renderEmptyState: p,
-        renderItem: _,
-        getProTip: f,
+        renderItem: f,
+        getProTip: _,
         scrollerClassName: I,
         className: T,
         listName: j
-    } = e, R = l.useRef(null), M = (0, m.A)(j, R), D = (0, d.bG)([E.Ay], () => E.Ay.hasNotice()), O = (0, d.bG)([x.A], () => x.A.windowSize());
+    } = e, R = l.useRef(null), M = (0, m.A)(j, R), O = (0, d.bG)([E.Ay], () => E.Ay.hasNotice()), D = (0, d.bG)([x.A], () => x.A.windowSize());
     l.useEffect(() => {
         C.default.track(N.HAw.OPEN_POPOUT, {
             type: t
@@ -184,7 +184,7 @@ function O(e) {
     }, "spinner")] : 0 === n.length ? P.push((0, i.jsx)(l.Fragment, {
         children: p()
     }, "empty-state")) : (k = !1, P = [], o().each(n, e => {
-        P.push(..._(e))
+        P.push(...f(e))
     }));
     let w = null;
     null != n && n.length > 0 && null != h && (w = r ? (0, i.jsx)("div", {
@@ -203,7 +203,7 @@ function O(e) {
         className: y.lJ,
         children: p()
     }));
-    let U = f?.(),
+    let U = _?.(),
         G = k && null != U ? (0, i.jsx)("div", {
             className: y.qr,
             children: (0, i.jsx)(A.A, {
@@ -216,9 +216,9 @@ function O(e) {
             })
         }) : null,
         F = {
-            maxHeight: O.height - 43 - 25 - 48
+            maxHeight: D.height - 43 - 25 - 48
         };
-    D && (F.maxHeight -= 40);
+    O && (F.maxHeight -= 40);
     let B = null != h && s;
     return (0, i.jsx)("div", {
         className: a()(y.KQ, T ?? y.G6),
@@ -265,7 +265,7 @@ function L(e) {
         onJump: u,
         canCloseAllMessages: m = !1,
         renderHeader: A,
-        renderEmptyState: f,
+        renderEmptyState: _,
         renderMessage: E,
         getProTip: x,
         scrollerClassName: C,
@@ -273,8 +273,8 @@ function L(e) {
         onCloseMessage: v,
         listName: b,
         closeAriaLabel: j
-    } = e, R = (0, d.bG)([_.A], () => {
-        let e = null != s ? _.A.getMessages(s.id) : null;
+    } = e, R = (0, d.bG)([f.A], () => {
+        let e = null != s ? f.A.getMessages(s.id) : null;
         return null != e && null != e.jumpTargetId && e.loadingMore && null == e.get(e.jumpTargetId)
     });
 
@@ -295,13 +295,13 @@ function L(e) {
         message: e,
         channel: s
     })), [a, s]);
-    return (0, i.jsx)(O, {
+    return (0, i.jsx)(D, {
         className: S,
         scrollerClassName: C,
         items: L,
         loading: o,
         analyticsName: t,
-        renderEmptyState: f,
+        renderEmptyState: _,
         renderHeader: A,
         hasMore: r,
         loadMore: c,
@@ -320,7 +320,7 @@ function L(e) {
                     className: y.i0,
                     message: t,
                     channel: n
-                }), (0, i.jsx)(D, {
+                }), (0, i.jsx)(O, {
                     channel: s,
                     message: t,
                     jumping: R,

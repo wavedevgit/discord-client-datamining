@@ -1,12 +1,12 @@
 /** chunk id: 936636 params = (module,exports,require) **/
 n.d(t, {
     A: () => g,
-    s: () => f
+    s: () => h
 });
 var a = n(627968);
 n(64700);
-var l = n(503698),
-    i = n.n(l),
+var i = n(503698),
+    l = n.n(i),
     r = n(808380),
     s = n(934551),
     o = n(990078),
@@ -29,7 +29,7 @@ function m(e) {
     }
 }
 
-function x(e) {
+function f(e) {
     let {
         platform: t,
         ...n
@@ -60,31 +60,31 @@ function x(e) {
     }
 }
 
-function h(e) {
+function x(e) {
     let {
         platforms: t
     } = e;
     return (0, a.jsx)("div", {
-        className: i()(u.nM, u.Lc),
+        className: l()(u.nM, u.Lc),
         style: {
             alignItems: "center"
         },
         children: t.map(e => (0, a.jsx)(o.m, {
             text: m(e),
-            children: (0, a.jsx)(x, {
+            children: (0, a.jsx)(f, {
                 platform: e
             })
         }, e))
     })
 }
 
-function f(e) {
+function h(e) {
     let {
         platform: t
     } = e;
     return (0, a.jsx)(o.m, {
         text: m(t),
-        children: (0, a.jsx)(x, {
+        children: (0, a.jsx)(f, {
             platform: t
         })
     }, t)
@@ -94,11 +94,11 @@ function g(e) {
     let {
         game: t,
         className: n
-    } = e, l = (0, c.A)(t);
-    return 0 === l.length ? null : (0, a.jsx)("div", {
-        className: i()(u.fi, u.iH, n),
-        children: l.length > 0 && (0, a.jsx)(h, {
-            platforms: l
+    } = e, i = (0, c.A)(t);
+    return 0 === i.length ? null : (0, a.jsx)("div", {
+        className: l()(u.fi, u.iH, n),
+        children: i.length > 0 && (0, a.jsx)(x, {
+            platforms: i
         })
     })
 }

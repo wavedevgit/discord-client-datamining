@@ -1,10 +1,10 @@
 /** chunk id: 286737 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => x
 });
 var a = n(627968),
-    l = n(64700),
-    i = n(311907),
+    i = n(64700),
+    l = n(311907),
     r = n(397927),
     s = n(289363),
     o = n(287809),
@@ -12,52 +12,52 @@ var a = n(627968),
     d = n(409626),
     u = n(305080),
     m = n(985018),
-    x = n(290490);
+    f = n(290490);
 
-function h(e) {
+function x(e) {
     let {
         trackAction: t,
         analyticsLocations: n
     } = e, {
-        fetchedAuthorization: h,
-        hasAlreadyLinked: f,
+        fetchedAuthorization: x,
+        hasAlreadyLinked: h,
         canStartAuthorization: g,
         startAuthorization: p,
         connectionApp: _,
         officialInvite: v
-    } = (0, u.c)(), A = (0, i.bG)([o.default], () => o.default.getCurrentUser()), b = l.useCallback(() => {
+    } = (0, u.c)(), A = (0, l.bG)([o.default], () => o.default.getCurrentUser()), b = i.useCallback(() => {
         t(d.Ws.LinkAccount), p({
             analyticsLocations: n
         })
     }, [t, p, n]);
-    if (!h || null == _ || !g || f || null == A) return null;
+    if (!x || null == _ || !g || h || null == A) return null;
     let E = v?.guild != null ? c.Ay.getGuildSplashURL({
         id: v.guild.id,
         splash: v.guild.splash
     }) : null;
     return (0, a.jsxs)("div", {
-        className: x.uW,
+        className: f.uW,
         children: [(0, a.jsx)(r.Heading, {
-            className: x.Gf,
+            className: f.Gf,
             variant: "heading-sm/semibold",
             color: "text-strong",
             children: m.intl.string(m.t["VDAhr+"])
         }), (0, a.jsxs)("div", {
-            className: x.kL,
+            className: f.kL,
             children: [null != E ? (0, a.jsx)("img", {
-                className: x.ll,
+                className: f.ll,
                 src: E,
                 alt: "",
                 draggable: !1
             }) : (0, a.jsx)("div", {
-                className: x.sB,
+                className: f.sB,
                 children: (0, a.jsx)(s.default, {
                     application: _
                 })
             }), (0, a.jsxs)("div", {
-                className: x.hQ,
+                className: f.hQ,
                 children: [(0, a.jsxs)("div", {
-                    className: x.FS,
+                    className: f.FS,
                     children: [(0, a.jsx)(r.Heading, {
                         variant: "heading-md/semibold",
                         color: "text-default",

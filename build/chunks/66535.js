@@ -2,10 +2,10 @@
 n.d(t, {
     A: () => v
 });
-var l = n(627968),
-    a = n(64700),
-    r = n(311907),
-    i = n(397927),
+var a = n(627968),
+    l = n(64700),
+    i = n(311907),
+    r = n(397927),
     s = n(387408),
     d = n(763754),
     o = n(491182),
@@ -14,46 +14,46 @@ var l = n(627968),
     _ = n(448368),
     m = n(538355),
     p = n(253932),
-    g = n(734057),
-    h = n(838541),
-    x = n(985018),
+    h = n(734057),
+    x = n(838541),
+    g = n(985018),
     A = n(382500);
 let v = e => {
     let {
         message: t
-    } = e, n = (0, d.Ay)(t), v = (0, r.bG)([g.A], () => g.A.getChannel(t.channel_id)), b = a.useMemo(() => (0, s.A)(t), [t]), {
+    } = e, n = (0, d.Ay)(t), v = (0, i.bG)([h.A], () => h.A.getChannel(t.channel_id)), b = l.useMemo(() => (0, s.A)(t), [t]), {
         content: f
     } = (0, m.A)(b, {
         hideSimpleEmbedContent: !1
-    }), T = p.hH.useSetting(), S = a.useCallback(() => {
+    }), T = p.hH.useSetting(), S = l.useCallback(() => {
         let {
             leadingIcon: e,
             trailingIcon: n
         } = (0, _.o)(t, f, !1, !1, "", {
             leadingIconClass: A.$r,
             trailingIconClass: A.$r,
-            iconSize: h.eJ
+            iconSize: x.eJ
         });
-        return (0, l.jsxs)("div", {
+        return (0, a.jsxs)("div", {
             className: A.hQ,
-            children: [e, (0, l.jsx)(c.Ay, {
+            children: [e, (0, a.jsx)(c.Ay, {
                 message: t,
                 content: f,
                 compact: T
             }), n]
         })
     }, [t, f, T]);
-    return null == v ? null : (0, l.jsxs)("div", {
+    return null == v ? null : (0, a.jsxs)("div", {
         className: A.kL,
-        children: [(0, l.jsx)(i.Heading, {
+        children: [(0, a.jsx)(r.Heading, {
             className: A.wx,
             variant: "heading-sm/semibold",
-            children: x.intl.string(x.t.iouM3a)
-        }), (0, l.jsx)(i.HOs, {
+            children: g.intl.string(g.t.iouM3a)
+        }), (0, a.jsx)(r.HOs, {
             className: A.PI,
-            children: (0, l.jsx)(o.A, {
+            children: (0, a.jsx)(o.A, {
                 childrenMessageContent: S(),
-                childrenHeader: (0, l.jsx)(u.Ay, {
+                childrenHeader: (0, a.jsx)(u.Ay, {
                     message: t,
                     channel: v,
                     author: n,

@@ -1,49 +1,49 @@
 /** chunk id: 665691 params = (module,exports,require) **/
-r.d(t, {
-    DY: () => d,
-    UF: () => o,
-    bG: () => E
+n.d(t, {
+    DY: () => u,
+    UF: () => c,
+    bG: () => h
 });
-var n = r(311907),
-    l = r(652896),
-    u = r(961350),
-    s = r(383501),
-    i = r(707890),
-    a = r(83942),
-    c = r(259374);
+var i = n(311907),
+    l = n(652896),
+    s = n(961350),
+    a = n(383501),
+    r = n(707890),
+    o = n(83942),
+    d = n(259374);
 
-function o(e) {
+function c(e) {
     let {
         userId: t,
-        channelId: r
-    } = e, l = (0, c.k)({
-        channelId: r
+        channelId: n
+    } = e, l = (0, d.k)({
+        channelId: n
     });
-    return (0, n.bG)([i.A, u.default, s.A], () => null != t && l && s.A.isUserConnected(t) && u.default.getId() !== t && i.A.isUserVerified(t), [l, t])
+    return (0, i.bG)([r.A, s.default, a.A], () => null != t && l && a.A.isUserConnected(t) && s.default.getId() !== t && r.A.isUserVerified(t), [l, t])
 }
 
-function d(e) {
+function u(e) {
     let {
         streamKey: t,
-        channelId: r
-    } = e, s = (0, c.k)({
-        channelId: r
-    }), o = (0, a.w)(t);
-    return (0, n.bG)([i.A, u.default], () => {
-        if (!s || o || null == t) return !1;
-        let e = u.default.getId(),
+        channelId: n
+    } = e, a = (0, d.k)({
+        channelId: n
+    }), c = (0, o.w)(t);
+    return (0, i.bG)([r.A, s.default], () => {
+        if (!a || c || null == t) return !1;
+        let e = s.default.getId(),
             {
-                ownerId: r
+                ownerId: n
             } = (0, l.Iy)(t);
-        return r !== e && i.A.isStreamVerified(t)
-    }, [o, s, t])
+        return n !== e && r.A.isStreamVerified(t)
+    }, [c, a, t])
 }
 
-function E(e) {
+function h(e) {
     let {
         channelId: t
-    } = e, r = (0, c.k)({
+    } = e, n = (0, d.k)({
         channelId: t
-    }), l = (0, a.c)();
-    return (0, n.bG)([i.A], () => !!r && !l && i.A.isCallVerified(), [l, r])
+    }), l = (0, o.c)();
+    return (0, i.bG)([r.A], () => !!n && !l && r.A.isCallVerified(), [l, n])
 }

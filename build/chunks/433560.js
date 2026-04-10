@@ -1,6 +1,6 @@
 /** chunk id: 433560 params = (module,exports,require) **/
 n.d(t, {
-    O: () => M,
+    O: () => k,
     d: () => G
 });
 var i = n(627968),
@@ -19,13 +19,13 @@ var i = n(627968),
     g = n(164617),
     f = n(402216),
     A = n(607407),
-    x = n(534400),
-    I = n(267102),
+    I = n(534400),
+    x = n(267102),
     E = n(401901),
     b = n(203355),
     v = n(110234),
-    C = n(616356),
-    S = n(961350),
+    S = n(616356),
+    C = n(961350),
     y = n(430452),
     T = n(287809),
     N = n(562153),
@@ -35,13 +35,13 @@ var i = n(627968),
     j = n(985018),
     P = n(144043);
 
-function D(e) {
+function R(e) {
     let {
         participant: t
     } = e, n = t.user.id, r = (0, s.bG)([y.Ay], () => {
         let e = (0, p.A)(t.type);
         return y.Ay.isLocalMute(t.user.id, e)
-    }, [t]), l = (0, s.bG)([S.default], () => S.default.getId()), {
+    }, [t]), l = (0, s.bG)([C.default], () => C.default.getId()), {
         hasVideo: _
     } = (0, v.A)(t, l), h = r && _, m = a.useCallback(() => {
         u.A.toggleLocalMute(n, o.x.STREAM)
@@ -68,7 +68,7 @@ function D(e) {
     })
 }
 
-function R(e, t) {
+function D(e, t) {
     return a => {
         (0, w.YX)(O.uss.GO_LIVE, {
             type: w.Z5.GO_LIVE,
@@ -88,12 +88,12 @@ function R(e, t) {
     }
 }
 
-function k(e) {
+function M(e) {
     let {
         hasActiveStream: t,
         participant: n,
         onEnablePin: a
-    } = e, r = (0, I.Us)(), o = n.user, u = (0, s.bG)([T.default], () => T.default.getUser(o.id) ?? o, [o]), _ = t ? j.intl.string(j.t.tLxK4l) : j.intl.string(j.t.E5RDnK);
+    } = e, r = (0, x.Us)(), o = n.user, u = (0, s.bG)([T.default], () => T.default.getUser(o.id) ?? o, [o]), _ = t ? j.intl.string(j.t.tLxK4l) : j.intl.string(j.t.E5RDnK);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             className: l()(P.MI, {
@@ -136,7 +136,7 @@ function k(e) {
                         color: "always-white",
                         className: P.yb,
                         children: N.Ay.getName(n.stream.guildId, n.stream.channelId, o)
-                    }), (0, i.jsx)(x.Ay, {
+                    }), (0, i.jsx)(I.Ay, {
                         primaryGuild: u.primaryGuild,
                         userId: u.id,
                         containerClassName: P.Mp,
@@ -153,13 +153,13 @@ function k(e) {
             }), (0, i.jsx)("div", {
                 className: P.FO,
                 children: t && (0, i.jsxs)(i.Fragment, {
-                    children: [(0, i.jsx)(D, {
+                    children: [(0, i.jsx)(R, {
                         participant: n
                     }), (0, i.jsx)(d.m_, {
                         text: j.intl.string(j.t["3D5yo/"]),
                         children: (0, i.jsx)(c.DUT, {
                             className: P.IF,
-                            onClick: R(n, r),
+                            onClick: D(n, r),
                             children: (0, i.jsx)(c.jNK, {
                                 size: "sm",
                                 color: "currentColor"
@@ -171,7 +171,7 @@ function k(e) {
         })]
     })
 }
-let M = new Set([O.XYD.ENDED, O.XYD.FAILED, O.XYD.PAUSED]),
+let k = new Set([O.XYD.ENDED, O.XYD.FAILED, O.XYD.PAUSED]),
     G = a.memo(function(e) {
         let {
             participant: t,
@@ -179,7 +179,7 @@ let M = new Set([O.XYD.ENDED, O.XYD.FAILED, O.XYD.PAUSED]),
             locked: a,
             widgetId: r,
             pinned: l
-        } = e, o = (0, s.bG)([C.A], () => C.A.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), d = (0, I.Us)(), u = null != o && M.has(o.state), _ = null != o, m = (0, L.dh)(t.stream), p = (0, L.XG)(t.stream);
+        } = e, o = (0, s.bG)([S.A], () => S.A.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), d = (0, x.Us)(), u = null != o && k.has(o.state), _ = null != o, m = (0, L.dh)(t.stream), p = (0, L.XG)(t.stream);
         return !_ && a || u ? null : (0, i.jsxs)("div", {
             className: P.Vs,
             children: [_ && !a && (0, i.jsx)(f.Ay, {
@@ -192,7 +192,7 @@ let M = new Set([O.XYD.ENDED, O.XYD.FAILED, O.XYD.PAUSED]),
                         streamerName: t.user.username
                     }),
                     onClick: () => {},
-                    onContextMenu: R(t, d),
+                    onContextMenu: D(t, d),
                     className: P.X$,
                     style: {
                         transform: `scale(${m})`
@@ -213,7 +213,7 @@ let M = new Set([O.XYD.ENDED, O.XYD.FAILED, O.XYD.PAUSED]),
                     className: P.HL,
                     stream: t.stream
                 })
-            }), a ? null : (0, i.jsx)(k, {
+            }), a ? null : (0, i.jsx)(M, {
                 participant: t,
                 hasActiveStream: _,
                 onEnablePin: () => {

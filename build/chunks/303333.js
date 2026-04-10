@@ -16,13 +16,13 @@ var i = n(627968),
     _ = n(985018),
     m = n(591454);
 
-function g(e) {
+function p(e) {
     let {
         channel: t,
         imageUrl: n,
         animatedUrl: d,
         canModifyHangout: c
-    } = e, g = (0, r.S)(n), p = l.useCallback(() => {
+    } = e, p = (0, r.S)(n), g = l.useCallback(() => {
         (0, h.A)({
             channel: t
         })
@@ -33,8 +33,8 @@ function g(e) {
         className: m.rs,
         children: [(0, i.jsx)("div", {
             className: m.ZS,
-            style: null != g ? {
-                backgroundColor: g
+            style: null != p ? {
+                backgroundColor: p
             } : void 0,
             children: (0, i.jsx)(u.A, {
                 imageUrl: n,
@@ -47,7 +47,7 @@ function g(e) {
                 text: _.intl.string(A.default.XJ4UpB),
                 children: (0, i.jsx)(a.DUT, {
                     className: m.HF,
-                    onClick: p,
+                    onClick: g,
                     children: (0, i.jsx)(a.R2l, {
                         size: "xs",
                         color: "currentColor"
@@ -68,7 +68,7 @@ function g(e) {
     })
 }
 
-function p(e) {
+function g(e) {
     let {
         channel: t
     } = e, n = l.useCallback(() => {
@@ -106,12 +106,12 @@ function f(e) {
         guildId: t.guild_id,
         bannerHash: u
     }), [t.guild_id, u]);
-    return s ? null != h ? (0, i.jsx)(g, {
+    return s ? null != h ? (0, i.jsx)(p, {
         channel: t,
         imageUrl: h.imageUrl,
         animatedUrl: h.animatedUrl,
         canModifyHangout: r
-    }) : r ? (0, i.jsx)(p, {
+    }) : r ? (0, i.jsx)(g, {
         channel: t
     }) : null : null
 }

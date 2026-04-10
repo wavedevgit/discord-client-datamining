@@ -15,16 +15,16 @@ var i = n(627968),
     A = n(652793),
     _ = n(576705),
     m = n(221950),
-    g = n(652215),
-    p = n(985018);
+    p = n(652215),
+    g = n(985018);
 
 function f(e) {
     let {
         guild: t,
         selected: n
-    } = e, f = (0, s.bG)([_.A], () => _.A.can(g.xBc.KICK_MEMBERS, t)), x = (0, s.bG)([c.A], () => c.A.getSubmittedGuildJoinRequestTotal(t.id)), E = f ? x ?? 0 : 0;
+    } = e, f = (0, s.bG)([_.A], () => _.A.can(p.xBc.KICK_MEMBERS, t)), x = (0, s.bG)([c.A], () => c.A.getSubmittedGuildJoinRequestTotal(t.id)), E = f ? x ?? 0 : 0;
     l.useEffect(() => {
-        f && t.features.has(g.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(g.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && d.A.fetchGuildJoinRequests({
+        f && t.features.has(p.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(p.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && d.A.fetchGuildJoinRequests({
             guildId: t.id,
             status: u.B5.SUBMITTED,
             limit: h.L
@@ -43,7 +43,7 @@ function f(e) {
                 color: "currentColor",
                 className: e
             }),
-            text: p.intl.string(p.t.oclz3Z),
+            text: g.intl.string(g.t.oclz3Z),
             selected: n,
             onClick: I,
             trailing: E > 0 ? (0, i.jsx)(r.hVq, {

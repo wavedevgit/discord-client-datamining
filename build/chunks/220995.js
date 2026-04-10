@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(793574),
     _ = n(688810),
     m = n(139286),
-    g = n(713517),
-    p = n(71393),
+    p = n(713517),
+    g = n(71393),
     f = n(576705),
     x = n(954571),
     E = n(778768),
@@ -31,7 +31,7 @@ function b(e) {
     let {
         channel: t,
         onClose: s
-    } = e, b = l.useRef(null), [v, y] = l.useState(!1), j = l.useRef(null), R = l.useRef(null), [O, L] = l.useState(0), {
+    } = e, b = l.useRef(null), [y, v] = l.useState(!1), j = l.useRef(null), R = l.useRef(null), [O, L] = l.useState(0), {
         analyticsLocations: M
     } = (0, _.Ay)(A.A.VOICE_INVITE_SUGGESTIONS);
     (0, m.A)({
@@ -44,12 +44,12 @@ function b(e) {
         }
     });
     let D = (0, d.bG)([f.A], () => f.A.can(I.xBc.CREATE_INSTANT_INVITE, t), [t]),
-        U = (0, d.bG)([p.A], () => p.A.getGuild(t.guild_id)),
+        U = (0, d.bG)([g.A], () => g.A.getGuild(t.guild_id)),
         [G, P] = l.useState(!1),
         k = l.useRef(null),
         {
             isHoveringOrFocusing: w
-        } = (0, g.A)(D ? b : k),
+        } = (0, p.A)(D ? b : k),
         [B, V] = l.useState(!1),
         H = w || B,
         F = l.useCallback(function() {
@@ -59,7 +59,7 @@ function b(e) {
                 channel_id: t.id,
                 guild_id: t.guild_id,
                 location_stack: M
-            }), y(!1), s?.()
+            }), v(!1), s?.()
         }, [t, s, M]),
         W = l.useCallback(() => {
             null != U && (0, u.mMO)(async () => {
@@ -99,7 +99,7 @@ function b(e) {
             null != j.current && clearTimeout(j.current)
         }), [z]),
         X = l.useCallback(() => (null != R.current && clearTimeout(R.current), R.current = setTimeout(() => {
-            y(!1)
+            v(!1)
         }, 150), () => {
             null != R.current && clearTimeout(R.current)
         }), []);
@@ -108,17 +108,17 @@ function b(e) {
             q(), X();
             return
         }
-        null != j.current && clearTimeout(j.current), null != R.current && clearTimeout(R.current), y(!0)
+        null != j.current && clearTimeout(j.current), null != R.current && clearTimeout(R.current), v(!0)
     }, [H, q, X]);
     let $ = l.useCallback(() => {
-            y(!0)
+            v(!0)
         }, []),
         Q = l.useCallback(() => {
-            y(!1), V(!1)
+            v(!1), V(!1)
         }, []);
     return D ? (0, i.jsx)(u.YNO, {
         targetElementRef: b,
-        shouldShow: v,
+        shouldShow: y,
         position: "right",
         align: "top",
         spacing: 17,

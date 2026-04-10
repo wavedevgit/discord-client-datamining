@@ -16,8 +16,8 @@ var i, l, s = n(64700),
     A = n(334738),
     _ = n(775602),
     m = n(323073),
-    g = n(181079),
-    p = n(567035),
+    p = n(181079),
+    g = n(567035),
     f = n(202803),
     x = n(455234),
     E = n(863005),
@@ -27,8 +27,8 @@ var i, l, s = n(64700),
     T = n(594061),
     S = n(617617),
     b = n(95701),
-    v = n(734057),
-    y = n(808728),
+    y = n(734057),
+    v = n(808728),
     j = n(71393),
     R = n(320501),
     O = n(576705),
@@ -140,7 +140,7 @@ class F extends a.EventEmitter {
         })
     };
     markGuildRead = e => {
-        u.h.wait(() => (0, p.A)([e], k.JJy.INBOX)), this.setState({
+        u.h.wait(() => (0, g.A)([e], k.JJy.INBOX)), this.setState({
             channels: this.state.channels.filter(t => t.guildId !== e)
         }), this.maybeLoadMore()
     };
@@ -291,14 +291,14 @@ function K() {
                 t = S.A.settings.guilds?.guilds ?? {};
             for (let n in t)
                 for (let i in t[n].channels) {
-                    let l = v.A.getChannel(i);
+                    let l = y.A.getChannel(i);
                     i in e && l?.guild_id !== n || (e[i] = t[n].channels[i].collapsedInInbox)
                 }
             return e
         }(),
-        i = (e = n, t = [], v.A.getSortedPrivateChannels().forEach(n => Y(e, t, null, n.id)), M.Ay.getFlattenedGuildIds().forEach(n => {
+        i = (e = n, t = [], y.A.getSortedPrivateChannels().forEach(n => Y(e, t, null, n.id)), M.Ay.getFlattenedGuildIds().forEach(n => {
             if (null == n) return;
-            let i = y.Ay.getSelectableChannelIds(n),
+            let i = v.Ay.getSelectableChannelIds(n),
                 l = E.A.getActiveJoinedUnreadThreadsForGuild(n);
             i.forEach(i => {
                 Y(e, t, n, i);
@@ -320,7 +320,7 @@ function K() {
 
 function Y(e, t, n, i) {
     if (null == i) return;
-    let l = v.A.getChannel(i);
+    let l = y.A.getChannel(i);
     if (null == l || !b.Le.has(l.type) && D.Ay.isGuildOrCategoryOrChannelMuted(n, l.id)) return;
     if (l.isPrivate()) {
         if (0 === L.Ay.getMentionCount(i)) return
@@ -351,8 +351,8 @@ function Y(e, t, n, i) {
         hasMentionsOrUnreads: d,
         mentionCount: o,
         sortOrder: function(e, t, n) {
-            let i = v.A.getChannel(t);
-            if (g.A.isFavorite(t)) return 0;
+            let i = y.A.getChannel(t);
+            if (p.A.isFavorite(t)) return 0;
             if (i.isPrivate()) return 1;
             if (L.Ay.getMentionCount(t) > 0) return L.Ay.getIsMentionLowImportance(t) ? 3 : 2;
             if (null != n) {

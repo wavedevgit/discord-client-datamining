@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(544028),
     g = n(594832),
     p = n(121700),
-    _ = n(627001),
-    f = n(754804),
+    f = n(627001),
+    _ = n(754804),
     E = n(871123),
     x = n(317560),
     C = n(533406),
@@ -43,8 +43,8 @@ function b(e) {
         isTargetingCurrentUser: j,
         source: R,
         showIcons: M,
-        guildId: D,
-        channelId: O,
+        guildId: O,
+        channelId: D,
         analyticsLocations: L,
         onCardClick: P,
         onButtonClick: k
@@ -90,7 +90,7 @@ function b(e) {
             }),
             ref: w,
             "aria-label": s.name,
-            children: [(0, i.jsx)(_.P, {
+            children: [(0, i.jsx)(f.P, {
                 spec: y,
                 application: H
             }), (0, i.jsx)(p.A, {
@@ -98,11 +98,11 @@ function b(e) {
                 sku: s,
                 isCardHovered: F,
                 location: "SocialLayerGiftingVoicePanelFeaturedSkuItemCard",
-                replacedElement: M && !j && R === g.uS.WISHLIST ? (0, i.jsx)(f.n, {
+                replacedElement: M && !j && R === g.uS.WISHLIST ? (0, i.jsx)(_.n, {
                     spec: y,
                     user: b,
-                    guildId: D ?? void 0,
-                    channelId: O ?? void 0
+                    guildId: O ?? void 0,
+                    channelId: D ?? void 0
                 }) : null
             }), (0, i.jsx)(S.e, {
                 shape: "custom",

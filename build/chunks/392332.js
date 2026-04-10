@@ -1,11 +1,11 @@
 /** chunk id: 392332 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => f
 });
 var a = n(627968),
-    l = n(64700),
-    i = n(503698),
-    r = n.n(i),
+    i = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(158954),
     o = n(397927),
     c = n(760459),
@@ -13,14 +13,14 @@ var a = n(627968),
     u = n(282063),
     m = n(495379);
 
-function x(e) {
+function f(e) {
     let {
         entries: t,
         viewId: n,
-        officialGuildId: i,
-        onClose: x,
-        source: h
-    } = e, f = t.length > 7, [g, p] = l.useState(!1), _ = l.useMemo(() => t.slice(0, f && !g ? 6 : void 0), [t, f, g]);
+        officialGuildId: l,
+        onClose: f,
+        source: x
+    } = e, h = t.length > 7, [g, p] = i.useState(!1), _ = i.useMemo(() => t.slice(0, h && !g ? 6 : void 0), [t, h, g]);
     return (0, a.jsxs)("div", {
         children: [(0, a.jsx)(s.DZT, {
             className: u.bV,
@@ -35,19 +35,19 @@ function x(e) {
         }) : (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)("div", {
                 className: r()(m.yz, {
-                    [m.T6]: f && !g
+                    [m.T6]: h && !g
                 }),
                 children: (0, a.jsx)("div", {
                     className: u.fi,
                     children: _.map(e => (0, a.jsx)(c.A, {
                         entry: e,
                         viewId: n,
-                        onClose: x,
-                        officialGuildId: i,
-                        source: h
+                        onClose: f,
+                        officialGuildId: l,
+                        source: x
                     }, e.id))
                 })
-            }), f && !g && (0, a.jsxs)(o.DUT, {
+            }), h && !g && (0, a.jsxs)(o.DUT, {
                 className: m.ND,
                 onClick: () => p(!0),
                 children: [(0, a.jsx)(s.EYj, {

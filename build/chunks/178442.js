@@ -20,13 +20,13 @@ let p = {
         [A.vkP.CONNECTING]: g._6,
         [A.vkP.ERROR]: g.Il
     },
-    _ = {
+    f = {
         [A.bFR.FINE]: g.LP,
         [A.bFR.AVERAGE]: g.mq,
         [A.bFR.BAD]: g.yA,
         [A.bFR.UNKNOWN]: null
     },
-    f = {
+    _ = {
         [A.bFR.FINE]: o.QtE,
         [A.bFR.AVERAGE]: o.jHk,
         [A.bFR.BAD]: o.RIK,
@@ -38,7 +38,7 @@ function E(e) {
         quality: t,
         largePing: n,
         ...l
-    } = e, s = f[t];
+    } = e, s = _[t];
     return (0, i.jsx)(s, {
         className: a()(g.hU, {
             [g.kV]: n
@@ -52,7 +52,7 @@ function x(e) {
         quality: t,
         lastPing: n,
         state: s,
-        className: f,
+        className: _,
         children: x,
         channelId: C,
         childrenAsSubtitle: S,
@@ -68,7 +68,7 @@ function x(e) {
     return (0, i.jsxs)("div", {
         className: g.pe,
         children: [(0, i.jsx)("div", {
-            className: a()(g.yH, _[t], f),
+            className: a()(g.yH, f[t], _),
             ref: N,
             children: (0, i.jsx)(o.YNO, {
                 targetElementRef: N,

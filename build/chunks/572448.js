@@ -16,8 +16,8 @@ var l = n(503698),
     A = n(729551),
     _ = n(58149),
     m = n(571694),
-    g = n(47167),
-    p = n(713654),
+    p = n(47167),
+    g = n(713654),
     f = n(915089),
     x = n(263063),
     E = n(616356),
@@ -27,8 +27,8 @@ var l = n(503698),
     T = n(222823),
     S = n(287809),
     b = n(147925),
-    v = n(652215),
-    y = n(985018),
+    y = n(652215),
+    v = n(985018),
     j = n(612005);
 let R = {
     top: 8,
@@ -44,13 +44,13 @@ function O(e) {
         getNumUnreadChannels: l
     } = e;
     return (0, i.jsx)(d.m_, {
-        text: y.intl.string(y.t.iTcuma),
+        text: v.intl.string(v.t.iTcuma),
         children: (0, i.jsx)(c.DUT, {
             className: s()(j.cS, {
                 [j.yZ]: t?.collapsed
             }),
             onClick: function() {
-                null != t && null != n && (n(t), (0, _.zV)(v.HAw.INBOX_CHANNEL_COLLAPSED, {
+                null != t && null != n && (n(t), (0, _.zV)(y.HAw.INBOX_CHANNEL_COLLAPSED, {
                     channel_id: t.channelId,
                     guild_id: t.guildId,
                     num_unread_channels_remaining: l?.() ?? 0,
@@ -156,7 +156,7 @@ function G(e) {
         channel: t,
         gotoChannel: n,
         mentionCount: l
-    } = e, a = (0, r.bG)([C.A], () => C.A.getGuild(t.guild_id)), d = (0, r.bG)([I.A], () => I.A.getChannel(t.parent_id)), u = (0, r.bG)([T.Ay], () => T.Ay.getIsMentionLowImportance(t.id)), h = (0, p.gU)(t, a), A = (0, g.Ay)(t, !1), _ = (0, g.Ay)(d), m = null == d ? a?.name : `${a?.name} › ${_}`, f = t.isMultiUserDM() ? y.intl.formatToPlainString(y.t.CxSA5N, {
+    } = e, a = (0, r.bG)([C.A], () => C.A.getGuild(t.guild_id)), d = (0, r.bG)([I.A], () => I.A.getChannel(t.parent_id)), u = (0, r.bG)([T.Ay], () => T.Ay.getIsMentionLowImportance(t.id)), h = (0, g.gU)(t, a), A = (0, p.Ay)(t, !1), _ = (0, p.Ay)(d), m = null == d ? a?.name : `${a?.name} › ${_}`, f = t.isMultiUserDM() ? v.intl.formatToPlainString(v.t.CxSA5N, {
         members: t.recipients.length + 1
     }) : t.isPrivate() ? (0, i.jsx)(P, {
         channel: t

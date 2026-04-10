@@ -23,8 +23,8 @@ function g(e) {
         hideDiscriminator: l,
         comparator: g,
         selected: p,
-        checked: _,
-        disabled: f = !1,
+        checked: f,
+        disabled: _ = !1,
         onClick: E,
         onMouseEnter: x,
         "aria-setsize": C,
@@ -33,7 +33,7 @@ function g(e) {
     return (0, i.jsx)(o.DUT, {
         id: `user-row-${n}`,
         className: s()(A.Se, {
-            [A.r9]: f
+            [A.r9]: _
         }),
         onClick: () => {
             E?.(t.id)
@@ -43,8 +43,8 @@ function g(e) {
         },
         ...T,
         role: "option",
-        "aria-selected": _,
-        "aria-disabled": f,
+        "aria-selected": f,
+        "aria-disabled": _,
         "aria-setsize": C,
         "aria-posinset": S,
         children: (0, i.jsxs)(u.A, {
@@ -75,8 +75,8 @@ function g(e) {
                     })
                 })]
             }), (0, i.jsx)(o.P7L, {
-                checked: _,
-                disabled: f
+                checked: f,
+                disabled: _
             })]
         })
     })

@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(427262),
     g = n(314307),
     p = n(393194),
-    _ = n(455067),
-    f = n(635157),
+    f = n(455067),
+    _ = n(635157),
     E = n(379768),
     x = n(391257),
     C = n(914835),
@@ -64,11 +64,11 @@ function j(e) {
         canManageRoles: h.A.can(T.xBc.MANAGE_ROLES, t),
         canReadMessageHistory: h.A.can(T.xBc.READ_MESSAGE_HISTORY, t)
     }));
-    if (t.isSystemDM()) return (0, i.jsx)(f.A, {
+    if (t.isSystemDM()) return (0, i.jsx)(_.A, {
         channel: t,
         children: v.intl.string(v.t.Rzvnig)
     });
-    if (o === T.rbe.DM) return (0, i.jsxs)(f.A, {
+    if (o === T.rbe.DM) return (0, i.jsxs)(_.A, {
         channel: t,
         user: d,
         children: [null == d || d.isProvisional ? null : (0, i.jsx)(s.Heading, {
@@ -96,10 +96,10 @@ function j(e) {
                 children: v.intl.string(v.t.M8Ao6I)
             })]
         });
-        else if (t.hasFlag(N.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(_.A, {
+        else if (t.hasFlag(N.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(f.A, {
         channel: t
     });
-    else return (0, i.jsx)(f.A, {
+    else return (0, i.jsx)(_.A, {
         channel: t,
         children: v.intl.format(v.t.MFwcqO, {
             name: r

@@ -4,18 +4,18 @@ n.d(t, {
     h: () => _
 });
 var a = n(627968),
-    l = n(64700),
-    i = n(503698),
-    r = n.n(i),
+    i = n(64700),
+    l = n(503698),
+    r = n.n(l),
     s = n(934551),
     o = n(158954),
     c = n(827734),
     d = n(397927),
     u = n(981355),
     m = n(409626),
-    x = n(305080),
-    h = n(936636),
-    f = n(985018),
+    f = n(305080),
+    x = n(936636),
+    h = n(985018),
     g = n(282063),
     p = n(48757);
 
@@ -23,11 +23,11 @@ function _(e) {
     let {
         game: t,
         trackAction: n
-    } = e, [i, x] = l.useState(t?.summaryLocalized != null), [_, v] = l.useState(!0), [A, b] = l.useState(!1), E = l.useRef(null), {
+    } = e, [l, f] = i.useState(t?.summaryLocalized != null), [_, v] = i.useState(!0), [A, b] = i.useState(!1), E = i.useRef(null), {
         width: j,
         height: I
     } = (0, u.A)();
-    return (l.useEffect(() => {
+    return (i.useEffect(() => {
         let e = E.current;
         null != e && b(e.scrollHeight - e.clientHeight > 1 || !_)
     }, [E, j, I, _]), null == t.description) ? null : (0, a.jsxs)("div", {
@@ -40,17 +40,17 @@ function _(e) {
             }), (0, a.jsx)(o.EYj, {
                 variant: "text-xs/medium",
                 color: "text-default",
-                children: i ? f.intl.format(f.t.aZ2iIp, {
-                    onShowOriginal: () => x(!1)
-                }) : f.intl.format(f.t["/2ylF4"], {
-                    onShowTranslated: () => x(!0)
+                children: l ? h.intl.format(h.t.aZ2iIp, {
+                    onShowOriginal: () => f(!1)
+                }) : h.intl.format(h.t["/2ylF4"], {
+                    onShowTranslated: () => f(!0)
                 })
             })]
         }), (0, a.jsx)(o.EYj, {
             ref: E,
             lineClamp: _ ? 8 : void 0,
             variant: "text-sm/normal",
-            children: i ? t.summaryLocalized : t.description
+            children: l ? t.summaryLocalized : t.description
         }), A && (0, a.jsx)(d.DUT, {
             className: g.vk,
             onClick: () => {
@@ -58,9 +58,9 @@ function _(e) {
             },
             children: (0, a.jsx)(o.EYj, {
                 variant: "text-sm/semibold",
-                children: _ ? f.intl.string(f.t.lBeKY2) : f.intl.string(f.t["6MwJo/"])
+                children: _ ? h.intl.string(h.t.lBeKY2) : h.intl.string(h.t["6MwJo/"])
             })
-        }), (0, a.jsx)(h.A, {
+        }), (0, a.jsx)(x.A, {
             className: p.B,
             game: t
         })]
@@ -71,13 +71,13 @@ function v(e) {
     let {
         game: t,
         trackAction: n
-    } = e, i = l.useRef(null), {
+    } = e, l = i.useRef(null), {
         isExpanded: s,
         showToggle: c,
         handleToggleExpanded: d
     } = function(e, t) {
-        let [n, a] = l.useState("full");
-        l.useEffect(() => {
+        let [n, a] = i.useState("full");
+        i.useEffect(() => {
             let t = e.current;
             if (null == t) return;
             let n = new ResizeObserver(() => {
@@ -86,24 +86,24 @@ function v(e) {
             });
             return n.observe(t), () => n.disconnect()
         }, [e]);
-        let i = l.useCallback(() => {
+        let l = i.useCallback(() => {
             "expanded" === n ? (t(m.Ws.ShowLess), a("collapsed")) : "collapsed" === n && (t(m.Ws.ShowMore), a("expanded"))
         }, [t, n]);
         return {
             isExpanded: "expanded" === n,
             showToggle: "expanded" === n || "collapsed" === n,
-            handleToggleExpanded: i
+            handleToggleExpanded: l
         }
-    }(i, n), {
+    }(l, n), {
         isTwoColumn: u
-    } = (0, x.c)(), h = l.useMemo(() => u ? 8 : 5, [u]);
+    } = (0, f.c)(), x = i.useMemo(() => u ? 8 : 5, [u]);
     if (null == t.description) return null;
-    let p = s ? f.intl.string(f.t["6MwJo/"]) : f.intl.string(f.t.lBeKY2);
+    let p = s ? h.intl.string(h.t["6MwJo/"]) : h.intl.string(h.t.lBeKY2);
     return (0, a.jsxs)("div", {
         className: r()(g.fi, g.mX),
         children: [(0, a.jsx)(o.EYj, {
-            ref: i,
-            lineClamp: s ? void 0 : h,
+            ref: l,
+            lineClamp: s ? void 0 : x,
             variant: "text-md/medium",
             children: t.description
         }), c && (0, a.jsx)(o.QWc, {

@@ -1,6 +1,6 @@
 /** chunk id: 732077 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968),
     l = n(64700),
@@ -15,14 +15,14 @@ var i = n(627968),
     A = n(108197),
     _ = n(985018),
     m = n(570302);
-let g = l.memo(function(e) {
+let p = l.memo(function(e) {
     let {
         channel: t,
         selectedChannel: n,
         selectedVoiceChannelId: l,
         sortedThreadIds: s,
-        withGuildIcon: g
-    } = e, p = (0, d.Ay)(t), {
+        withGuildIcon: p
+    } = e, g = (0, d.Ay)(t), {
         density: f
     } = (0, o.wRf)(), x = (0, r.yK)([c.A], () => s.map(e => c.A.getChannel(e)).filter(h.Vq), [s]), E = (0, r.bG)([u.Ay], () => {
         let e = x[x.length - 1];
@@ -35,11 +35,11 @@ let g = l.memo(function(e) {
         children: (0, i.jsxs)("ul", {
             role: "group",
             "aria-label": _.intl.formatToPlainString(_.t.EiyIi6, {
-                channelName: p
+                channelName: g
             }),
             children: [(0, i.jsx)("div", {
                 className: a()(m.eh, {
-                    [m.ET]: g
+                    [m.ET]: p
                 }),
                 style: {
                     bottom: ("cozy" === f ? 28 : 24) + E
@@ -49,7 +49,7 @@ let g = l.memo(function(e) {
                 isSelectedChannel: n?.id === e.id,
                 isSelectedVoice: l === e.id,
                 isLast: t === x.length - 1,
-                withGuildIcon: g
+                withGuildIcon: p
             }, e.id))]
         })
     })

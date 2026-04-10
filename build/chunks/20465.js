@@ -1,7 +1,7 @@
 /** chunk id: 20465 params = (module,exports,require) **/
 n.d(t, {
     A: () => R,
-    R: () => y
+    R: () => v
 });
 var i = n(627968),
     l = n(64700),
@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(843472),
     _ = n(386467),
     m = n(465364),
-    g = n(763754),
-    p = n(448368),
+    p = n(763754),
+    g = n(448368),
     f = n(378058),
     x = n(148355),
     E = n(320501),
@@ -27,8 +27,8 @@ var i = n(627968),
     T = n(403362),
     S = n(652215),
     b = n(838541),
-    v = n(424366);
-let y = 10 * N.A.Millis.SECOND;
+    y = n(424366);
+let v = 10 * N.A.Millis.SECOND;
 
 function j(e) {
     let {
@@ -39,7 +39,7 @@ function j(e) {
     } = (0, d.cf)([I.A], () => ({
         isBlocked: I.A.isBlockedForMessage(t),
         isIgnored: I.A.isIgnoredForMessage(t)
-    }), [t]), r = (0, g.X4)(t), o = l.useContext(_.A), [u, E] = l.useState(!1), N = l.useCallback(e => {
+    }), [t]), r = (0, p.X4)(t), o = l.useContext(_.A), [u, E] = l.useState(!1), N = l.useCallback(e => {
         "A" !== e.target.nodeName && (h.A.updateChatOpen(t.channel_id, !0), A.A.jumpToMessage({
             channelId: t.channel_id,
             messageId: t.id,
@@ -49,21 +49,21 @@ function j(e) {
         isInteracting: u
     }).content : null, {
         contentPlaceholder: S,
-        renderedContent: y,
+        renderedContent: v,
         trailingIcon: j,
         leadingIcon: R
-    } = (0, p.o)(t, T, n, s, v.BK, {
-        trailingIconClass: v.sl,
-        leadingIconClass: v.aG,
+    } = (0, g.o)(t, T, n, s, y.BK, {
+        trailingIconClass: y.sl,
+        leadingIconClass: y.aG,
         iconSize: b.eJ
     }), O = (0, f.o6)(t), L = O.length > 0 ? O.map(e => (0, i.jsx)(x.A, {
-        className: v.yI,
+        className: y.yI,
         size: 128,
         sticker: e,
         isInteracting: u
     }, e.id)) : null;
     return (0, i.jsxs)(c.DUT, {
-        className: v.oR,
+        className: y.oR,
         onMouseEnter: () => {
             E(!0)
         },
@@ -72,10 +72,10 @@ function j(e) {
         },
         onClick: N,
         children: [(0, i.jsxs)("div", {
-            className: a()(v.kn, {
-                [v.mK]: t.mentioned
+            className: a()(y.kn, {
+                [y.mK]: t.mentioned
             }),
-            children: [null != L ? null : R, y ?? L ?? (0, i.jsx)("span", {
+            children: [null != L ? null : R, v ?? L ?? (0, i.jsx)("span", {
                 children: S
             }), null != L ? null : j]
         }), (0, i.jsx)("img", {
@@ -85,7 +85,7 @@ function j(e) {
                 userId: t.author.id,
                 avatar: r.guildMemberAvatar
             }) : t.author.getAvatarURL(o, 32),
-            className: v.my
+            className: y.my
         })]
     })
 }
@@ -135,24 +135,24 @@ function R(e) {
         channelId: t,
         isFrozen: s,
         count: 3,
-        lingerMs: y
-    }), m = l.useRef({}), [g, p] = l.useState({}), f = l.useCallback((e, t) => {
+        lingerMs: v
+    }), m = l.useRef({}), [p, g] = l.useState({}), f = l.useCallback((e, t) => {
         null == t ? delete m.current[e] : m.current[e] = t
-    }, []), x = l.useRef(g);
+    }, []), x = l.useRef(p);
     l.useLayoutEffect(() => {
-        x.current = g
+        x.current = p
     }), l.useLayoutEffect(() => {
         let e = {},
             t = 0;
         for (let n of _) {
             let i = m.current[n.id] ?? 0;
             e[n.id] = t, t += i + 8
-        }(0, r.isEqual)(e, x.current) || p(e)
+        }(0, r.isEqual)(e, x.current) || g(e)
     }, [_]);
     let I = _.map(e => ({
             message: e,
             height: m.current[e.id],
-            y: g[e.id]
+            y: p[e.id]
         })),
         C = (0, c.pnh)(I, {
             keys: e => e.message.id,
@@ -200,7 +200,7 @@ function R(e) {
             },
             children: C((e, t) => (0, i.jsx)(o.animated.div, {
                 ref: e => f(t.message.id, null != e ? e.offsetHeight : null),
-                className: v.T_,
+                className: y.T_,
                 style: e,
                 children: (0, i.jsx)(j, {
                     message: t.message

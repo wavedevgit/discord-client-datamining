@@ -1,7 +1,7 @@
 /** chunk id: 226694 params = (module,exports,require) **/
 n.d(t, {
     A: () => j,
-    s: () => v
+    s: () => y
 });
 var i = n(627968),
     l = n(64700),
@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(101555),
     _ = n(263063),
     m = n(714991),
-    g = n(776231),
-    p = n(345942),
+    p = n(776231),
+    g = n(345942),
     f = n(71393),
     x = n(486020),
     E = n(860689),
@@ -27,7 +27,7 @@ var i = n(627968),
     T = n(985018),
     S = n(802103),
     b = n(166382);
-let v = l.memo(function(e) {
+let y = l.memo(function(e) {
     let {
         onClick: t
     } = e;
@@ -46,7 +46,7 @@ let v = l.memo(function(e) {
     })
 });
 
-function y(e) {
+function v(e) {
     let {
         entry: t
     } = e, [s, r] = l.useState(!1), c = l.useRef(null), {
@@ -116,7 +116,7 @@ let j = l.memo(function(e) {
     } = e, [s, a] = l.useState(!1), o = null != (0, r.bG)([f.A], () => f.A.getGuild(t.guildId)), A = async () => {
         a(!0);
         try {
-            o ? (0, p.u)(t.guildId) : await u.A.joinGuild(t.guildId, {
+            o ? (0, g.u)(t.guildId) : await u.A.joinGuild(t.guildId, {
                 source: N.Q4z.DIRECTORY_ENTRY
             })
         } finally {
@@ -125,7 +125,7 @@ let j = l.memo(function(e) {
     }, I = x.Ay.getGuildSplashURL({
         id: t.guildId,
         splash: t.splash,
-        size: 300 * (0, g.mZ)()
+        size: 300 * (0, p.mZ)()
     }), C = x.Ay.getGuildIconURL({
         id: t.guildId,
         icon: t.icon,
@@ -224,7 +224,7 @@ let j = l.memo(function(e) {
                     fullWidth: !0
                 })
             })]
-        }), (0, i.jsx)(y, {
+        }), (0, i.jsx)(v, {
             entry: t
         })]
     })

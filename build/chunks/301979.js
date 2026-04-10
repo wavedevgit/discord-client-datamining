@@ -4,17 +4,17 @@ n.d(t, {
 });
 var a = n(627968);
 n(64700);
-var l = n(397927),
-    i = n(305080),
+var i = n(397927),
+    l = n(305080),
     r = n(747164);
 
 function s(e) {
     let {
         isTwoColumn: t
-    } = (0, i.c)();
+    } = (0, l.c)();
     return (0, a.jsx)("div", {
         className: r.U,
-        children: (0, a.jsx)(l.Button, {
+        children: (0, a.jsx)(i.Button, {
             ...e,
             variant: t ? "overlay-secondary" : "secondary",
             fullWidth: !0,

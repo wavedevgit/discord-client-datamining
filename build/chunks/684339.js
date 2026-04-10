@@ -34,7 +34,7 @@ class g {
       [${e}, count for stream: ${s}]`);
         let g = c.A.getGuildId(),
             p = d.A.getUserVoiceChannelId(g, a.default.getId()),
-            _ = function(e) {
+            f = function(e) {
                 if (null != e) {
                     if (e.isGuildVoice()) return "guild_voice";
                     if (e.isGuildStageVoice()) return "is_stage_channel";
@@ -51,7 +51,7 @@ class g {
             event_count_for_stream: s,
             guild_id: g,
             channel_id: p,
-            channel_type: _,
+            channel_type: f,
             spinning_user_id: t,
             connection_type: o.A.getType(),
             effective_connection_speed: o.A.getEffectiveConnectionSpeed(),

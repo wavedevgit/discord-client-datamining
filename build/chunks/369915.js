@@ -1,6 +1,6 @@
 /** chunk id: 369915 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 }), n(321073);
 var i = n(627968),
     l = n(64700),
@@ -15,16 +15,16 @@ var i = n(627968),
     A = n(842452),
     _ = n(305928),
     m = n(652215);
-let g = l.memo(function(e) {
+let p = l.memo(function(e) {
     let {
         folderNode: t,
-        ...g
+        ...p
     } = e, {
-        id: p,
+        id: g,
         name: f,
         color: x,
         children: E
-    } = t, I = E.map(e => e.id), C = (0, o.A)(e => e.guildId), N = (0, s.bG)([d.A], () => d.A.isFolderExpanded(p)), T = function(e) {
+    } = t, I = E.map(e => e.id), C = (0, o.A)(e => e.guildId), N = (0, s.bG)([d.A], () => d.A.isFolderExpanded(g)), T = function(e) {
         let t = e.children.map(e => {
                 let t = e.id,
                     n = u.A.getGuild(t);
@@ -36,36 +36,36 @@ let g = l.memo(function(e) {
         return `${i.join(", ")}${i.length<t.length?", ...":""}`
     }(t), S = (0, _.A)(t), {
         mentionCount: b,
-        isMentionLowImportance: v,
-        unread: y
+        isMentionLowImportance: y,
+        unread: v
     } = (0, s.cf)([c.default], () => ({
         mentionCount: I.map(e => c.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
         isMentionLowImportance: I.every(e => c.default.getIsMentionLowImportance(e)),
         unread: I.some(e => c.default.hasUnread(e))
     })), j = l.useCallback(() => {
-        r.A.toggleGuildFolderExpand(p)
-    }, [p]), R = l.useCallback(e => {
+        r.A.toggleGuildFolderExpand(g)
+    }, [g]), R = l.useCallback(e => {
         (0, a.L3)(e, async () => {
             let {
                 default: e
             } = await n.e("32857").then(n.bind(n, 842112));
             return t => (0, i.jsx)(e, {
                 ...t,
-                folderId: p,
+                folderId: g,
                 folderName: f,
                 folderColor: x,
-                unread: y || b > 0
+                unread: v || b > 0
             })
         })
-    }, [p, f, x, y, b]);
+    }, [g, f, x, v, b]);
     return (0, i.jsx)(A.A, {
-        ...g,
+        ...p,
         folderNode: t,
         expanded: N,
         selected: null != C && I.includes(C),
         mentionCount: b,
-        isMentionLowImportance: v,
-        unread: y,
+        isMentionLowImportance: y,
+        unread: v,
         mediaState: S,
         defaultFolderName: T,
         onExpandCollapse: j,

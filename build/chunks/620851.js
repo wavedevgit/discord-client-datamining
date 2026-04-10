@@ -24,29 +24,29 @@ function p(e) {
     let {
         locked: t,
         pinned: n
-    } = e, [r, s] = a.useState(0), [p, g] = a.useState(0), [f, A] = a.useState(0), x = a.useRef(0), [I, E] = a.useState(0), {
+    } = e, [r, s] = a.useState(0), [p, g] = a.useState(0), [f, A] = a.useState(0), I = a.useRef(0), [x, E] = a.useState(0), {
         timeToLiveMs: b,
         reappearTimeMs: v
     } = u.Ay.useState(e => ({
         timeToLiveMs: e.timeToLiveMs,
         reappearTimeMs: e.reappearTimeMs
-    }), o()), C = {
+    }), o()), S = {
         timeToLiveMs: b,
         reappearTimeMs: v
-    }, S = a.useRef(C);
+    }, C = a.useRef(S);
     a.useEffect(() => {
-        S.current = C
-    }), a.useEffect(() => (x.current = setInterval(() => {
+        C.current = S
+    }), a.useEffect(() => (I.current = setInterval(() => {
         let e = Date.now();
         g(e), A(t => {
             if (0 === t) return e;
             let n = e - t,
-                i = S.current.timeToLiveMs,
-                a = i + S.current.reappearTimeMs;
+                i = C.current.timeToLiveMs,
+                a = i + C.current.reappearTimeMs;
             return n > i ? t + a : t
         })
     }, 100), () => {
-        clearInterval(x.current)
+        clearInterval(I.current)
     }), []);
     let y = () => {
             s(Date.now()), E(e => e + 1)
@@ -66,8 +66,8 @@ function p(e) {
         }),
         [w, L] = a.useState(!1);
     if (a.useEffect(() => {
-            I > 10 && L(!0)
-        }, [I]), w) throw Error("ClickZoneDebugWidget crashed, too many clicks");
+            x > 10 && L(!0)
+        }, [x]), w) throw Error("ClickZoneDebugWidget crashed, too many clicks");
     return t && !n ? null : (0, i.jsx)(i.Fragment, {
         children: N((e, t) => t && (0, i.jsx)(d.animated.div, {
             style: e,
@@ -80,7 +80,7 @@ function p(e) {
                     children: (0, i.jsxs)(c.Text, {
                         variant: "text-md/semibold",
                         color: "always-white",
-                        children: ["Click Me (", I, ")"]
+                        children: ["Click Me (", x, ")"]
                     })
                 })
             })

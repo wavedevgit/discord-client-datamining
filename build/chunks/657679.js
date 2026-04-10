@@ -2,17 +2,17 @@
 n.d(t, {
     A: () => d
 });
-var l = n(627968),
-    a = n(64700),
-    r = n(397927),
-    i = n(885106);
+var a = n(627968),
+    l = n(64700),
+    i = n(397927),
+    r = n(885106);
 let s = e => {
         let {
             element: t,
             onChange: n,
             initialOption: s
-        } = e, [d, o] = a.useState("");
-        a.useEffect(() => {
+        } = e, [d, o] = l.useState("");
+        l.useEffect(() => {
             o(s ?? "")
         }, [s]);
         let c = t.name,
@@ -20,16 +20,16 @@ let s = e => {
                 title: u,
                 options: _
             } = t.data,
-            m = a.useMemo(() => _.map(e => ({
+            m = l.useMemo(() => _.map(e => ({
                 ...e,
                 id: e.id ?? e.value
             })), [_]),
-            p = a.useCallback(e => {
+            p = l.useCallback(e => {
                 null != e && (o(e), n(e))
             }, [n]);
-        return (0, l.jsx)("div", {
-            className: i.QB,
-            children: (0, l.jsx)(r.l6P, {
+        return (0, a.jsx)("div", {
+            className: r.QB,
+            children: (0, a.jsx)(i.l6P, {
                 label: u,
                 value: d,
                 required: t.should_submit_data,
@@ -44,16 +44,16 @@ let s = e => {
         let {
             elements: t,
             onChange: n,
-            state: a
-        } = e, r = t.map(e => {
+            state: l
+        } = e, i = t.map(e => {
             let t = e.name;
-            return (0, l.jsx)(s, {
+            return (0, a.jsx)(s, {
                 element: e,
-                initialOption: a?.[t]?.value ?? void 0,
+                initialOption: l?.[t]?.value ?? void 0,
                 onChange: e => n(t, e)
             }, t)
         });
-        return (0, l.jsx)("div", {
-            children: r
+        return (0, a.jsx)("div", {
+            children: i
         })
     }

@@ -5,11 +5,11 @@ t.d(n, {
 var i = t(627968);
 t(64700);
 var a = t(397927),
-    l = t(398590),
-    r = t(345942),
+    r = t(398590),
+    l = t(345942),
     o = t(183555),
-    s = t(913453),
-    d = t(51943),
+    d = t(913453),
+    s = t(51943),
     c = t(985018),
     _ = t(643146);
 
@@ -22,7 +22,7 @@ function u(e) {
     } = (0, o.NJ)(), {
         mutualGuilds: p,
         isFetching: A
-    } = (0, s.A)(n);
+    } = (0, d.A)(n);
     return (0, i.jsx)(a.IpV, {
         className: _.DK,
         fade: !0,
@@ -34,7 +34,7 @@ function u(e) {
                 guild: a,
                 nick: o
             } = e;
-            return (0, i.jsx)(d.A, {
+            return (0, i.jsx)(s.A, {
                 user: n,
                 guild: a,
                 nick: o,
@@ -42,7 +42,7 @@ function u(e) {
                     var e;
                     u({
                         action: "PRESS_MUTUAL_GUILD"
-                    }), e = a.id, (0, r.u)(e), t(), (0, l.jH)()
+                    }), e = a.id, (0, l.u)(e), t(), (0, r.jH)()
                 }
             }, a.id)
         }) : (0, i.jsxs)("div", {

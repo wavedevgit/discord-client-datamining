@@ -18,13 +18,13 @@ var i = n(627968),
     g = n(880144),
     f = n(616356),
     A = n(734057),
-    x = n(71393),
-    I = n(430452),
+    I = n(71393),
+    x = n(430452),
     E = n(309010),
     b = n(532624),
     v = n(256415),
-    C = n(531685),
-    S = n(203982),
+    S = n(531685),
+    C = n(203982),
     y = n(723702),
     T = n(350535),
     N = n(365971),
@@ -33,10 +33,10 @@ var i = n(627968),
     O = n(223251),
     j = n(935975),
     P = n(555153),
-    D = n(155052),
-    R = n(452075),
-    k = n(302614),
-    M = n(833551),
+    R = n(155052),
+    D = n(452075),
+    M = n(302614),
+    k = n(833551),
     G = n(592598),
     z = n(395011),
     U = n(222506),
@@ -96,7 +96,7 @@ let ee = a.memo(function(e) {
                 a === Z.hE4.PRIMARY && t === i && n()
             },
             onContextMenu: $,
-            children: a ? null : (0, i.jsxs)(k.A, {
+            children: a ? null : (0, i.jsxs)(M.A, {
                 className: K.BE,
                 children: [(0, i.jsx)(j.A, {
                     onClick: () => (0, F.b)(h.A.OVERLAY, Z.BRT.OVERLAY),
@@ -114,7 +114,7 @@ let ee = a.memo(function(e) {
             locked: t,
             focused: n
         } = e;
-        return t && n ? (0, i.jsx)(k.A, {
+        return t && n ? (0, i.jsx)(M.A, {
             className: K.BE,
             children: (0, i.jsx)(j.A, {
                 onClick: () => u.A.setInputLocked(!1, z.A.getTargetPID()),
@@ -129,9 +129,9 @@ function en() {
 
 function ei(e) {
     let t = U.A.isInputLocked(z.A.getTargetPID());
-    "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? S._.dispatch(Z.jej.OVERLAY_V3_SHOW_WIDGETS, {
+    "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? C._.dispatch(Z.jej.OVERLAY_V3_SHOW_WIDGETS, {
             show: !0
-        }) : "keydown" === e.type.toLowerCase() && S._.dispatch(Z.jej.OVERLAY_V3_SHOW_WIDGETS, {
+        }) : "keydown" === e.type.toLowerCase() && C._.dispatch(Z.jej.OVERLAY_V3_SHOW_WIDGETS, {
             show: !1
         })),
         function(e, t) {
@@ -156,7 +156,7 @@ let ea = a.memo(function() {
             r = (0, s.bG)([z.A], () => z.A.isFocused(t), [t]),
             c = (0, s.bG)([b.Ay], () => null != b.Ay.getOverlayKeybind() ? (0, T.dI)(b.Ay.getOverlayKeybind()?.shortcut, !0) : "???", []);
         return a.useEffect(() => {
-            if (S._.dispatch(Z.jej.OVERLAY_V3_SHOW_WIDGETS, {
+            if (C._.dispatch(Z.jej.OVERLAY_V3_SHOW_WIDGETS, {
                     show: !0
                 }), n) return (0, o.closeAllModalsInContext)(d.KX8), e.addEventListener("contextmenu", q, !1), () => {
                 e.removeEventListener("contextmenu", q, !1)
@@ -167,7 +167,7 @@ let ea = a.memo(function() {
                 locked: n,
                 keybind: c,
                 onClick: en
-            }), (0, i.jsx)(D.A, {
+            }), (0, i.jsx)(R.A, {
                 className: l()({
                     [K.ZK]: n,
                     [K.al]: !n
@@ -185,15 +185,15 @@ function el() {
     var e, t;
     let n, r, l, o = (0, B.A)(),
         c = (0, s.bG)([v.default], () => v.default.incompatibleApp),
-        p = (0, s.bG)([C.A], () => {
+        p = (0, s.bG)([S.A], () => {
             let e = (0, N.Q2)(o),
-                t = C.A.windowSize(e);
+                t = S.A.windowSize(e);
             return t.height < 360 || t.width < 640
         }, [o]),
         {
             analyticsLocations: b
         } = (0, m.Ay)(h.A.OVERLAY);
-    return (0, R.e)(), (0, _.Ay)(() => {
+    return (0, D.e)(), (0, _.Ay)(() => {
         (0, L.E)()
     }), n = (0, B.A)(), e = () => {
         u.A.overlayReady(z.A.getTargetPID()), n.addEventListener("keydown", ei, !0), n.addEventListener("keyup", ei)
@@ -213,13 +213,13 @@ function el() {
         let e = (0, W.qv)(),
             t = E.A.getVoiceChannelId(),
             n = A.A.getChannel(t),
-            i = null != n ? x.A.getGuild(n.guild_id) : null,
+            i = null != n ? I.A.getGuild(n.guild_id) : null,
             a = null != f.A.getCurrentUserActiveStream(),
             r = null != t,
-            s = (0, g.A)(I.Ay) && !a && null != e,
+            s = (0, g.A)(x.Ay) && !a && null != e,
             o = r && null != i && null != t,
             d = z.A.getTargetPID();
-        if (M.default.hasChangedRenderMode(d)) return;
+        if (k.default.hasChangedRenderMode(d)) return;
         let c = G.A.isNotificationDisabled(Y.KS.WelcomeNudge),
             _ = G.A.isNotificationDisabled(Y.KS.GoLiveNudge),
             h = G.A.isNotificationDisabled(Y.KS.ActivityInvite),

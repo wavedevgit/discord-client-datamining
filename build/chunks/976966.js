@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(253932),
     _ = n(975571),
     m = n(822382),
-    g = n(753806),
-    p = n(345859),
+    p = n(753806),
+    g = n(345859),
     f = n(145331),
     x = n(121806),
     E = n(652215),
@@ -34,9 +34,9 @@ function T(e) {
         isSearching: A,
         documentsIndexed: _,
         selectedChannelId: f
-    } = e, T = (0, p.H)(t), {
+    } = e, T = (0, g.H)(t), {
         totalFilters: b
-    } = (0, x.vj)(T, t), v = l.useMemo(() => {
+    } = (0, x.vj)(T, t), y = l.useMemo(() => {
         if (t.type === E.I4_.DMS) {
             let e = (0, m.Zf)(T),
                 t = e.channel_id?.length ?? 0;
@@ -45,25 +45,25 @@ function T(e) {
             }) : C.intl.string(C.t.tc619d)
         }
         return null
-    }, [t.type, T]), [y, j] = l.useState(null), L = l.useMemo(() => A ? [] : [r.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [A]), [M, D] = (0, u.kn)(L), U = M === r.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, G = l.useCallback(e => {
+    }, [t.type, T]), [v, j] = l.useState(null), L = l.useMemo(() => A ? [] : [r.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [A]), [M, D] = (0, u.kn)(L), U = M === r.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, G = l.useCallback(e => {
         null != e && U && D(I.i.USER_DISMISS), j(e)
     }, [U, D, j]), P = l.useCallback(e => {
         D("user:explicit" === e ? I.i.USER_DISMISS : I.i.AUTO_DISMISS)
     }, [D]), k = l.useCallback(() => {
-        G(null), g.A.openSearchFiltersModal(t)
+        G(null), p.A.openSearchFiltersModal(t)
     }, [G, t]), w = l.useMemo(() => b > 0 ? C.intl.format(C.t.uaR4sI, {
         filterCount: b
     }) : C.intl.string(C.t.UdhTtk), [b]), B = !(0, h.DZ)() && (t.type === E.I4_.DMS || t.type === E.I4_.CHANNEL);
     return (0, i.jsxs)("header", {
         className: a()(N.wL, {
-            [N.g$]: null != v
+            [N.g$]: null != y
         }),
         children: [(0, i.jsx)("div", {
             className: N.TN,
             role: "status",
             children: (0, i.jsx)(S, {
                 totalResults: o,
-                subtitle: v,
+                subtitle: y,
                 isIndexing: d,
                 isSearching: A,
                 documentsIndexed: _
@@ -79,12 +79,12 @@ function T(e) {
             }), (0, i.jsx)(O, {
                 searchMode: n,
                 onSearchModeChange: s,
-                isPopoutOpen: "sort" === y,
+                isPopoutOpen: "sort" === v,
                 setOpenPopout: G
             }), B && (0, i.jsx)(R, {
                 searchContext: t,
                 selectedChannelId: f,
-                isPopoutOpen: "settings" === y,
+                isPopoutOpen: "settings" === v,
                 setOpenPopout: G,
                 isPopoverVisible: U,
                 onPopoverRequestClose: P
@@ -101,9 +101,9 @@ function S(e) {
         isIndexing: s,
         documentsIndexed: a
     } = e;
-    return s ? (0, i.jsx)(v, {
+    return s ? (0, i.jsx)(y, {
         documentsIndexed: a
-    }) : l ? (0, i.jsx)(y, {}) : (0, i.jsx)(j, {
+    }) : l ? (0, i.jsx)(v, {}) : (0, i.jsx)(j, {
         totalResults: t,
         subtitle: n
     })
@@ -120,7 +120,7 @@ function b() {
     })
 }
 
-function v(e) {
+function y(e) {
     let {
         documentsIndexed: t
     } = e;
@@ -144,7 +144,7 @@ function v(e) {
     })
 }
 
-function y() {
+function v() {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(c.Text, {
             variant: "text-md/medium",
@@ -194,17 +194,17 @@ function R(e) {
                 let e = {
                     type: E.I4_.DMS
                 };
-                g.A.transitionStateToSearchContext(t, e, g.A.cleanUpPrivateChannelSearchState)
+                p.A.transitionStateToSearchContext(t, e, p.A.cleanUpPrivateChannelSearchState)
             } else {
                 let e = {
                     type: E.I4_.CHANNEL,
                     channelId: n
                 };
-                g.A.transitionStateToSearchContext(t, e)
+                p.A.transitionStateToSearchContext(t, e)
             }
             a(null), A.Hu.updateSetting(e)
         }
-    }, [h, a, t, n]), [m, p] = l.useMemo(() => [h ? C.intl.string(C.t["8lklch"]) : C.intl.string(C.t.ji3jTF), h ? C.intl.string(C.t.RMQZCa) : C.intl.string(C.t["v/PagC"])], [h]), x = l.useMemo(() => ({
+    }, [h, a, t, n]), [m, g] = l.useMemo(() => [h ? C.intl.string(C.t["8lklch"]) : C.intl.string(C.t.ji3jTF), h ? C.intl.string(C.t.RMQZCa) : C.intl.string(C.t["v/PagC"])], [h]), x = l.useMemo(() => ({
         align: "end"
     }), []);
     return (0, i.jsxs)(i.Fragment, {
@@ -259,7 +259,7 @@ function R(e) {
             shouldShow: d,
             onRequestClose: r,
             title: m,
-            body: p,
+            body: g,
             caretConfig: x,
             badge: "new"
         })]

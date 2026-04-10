@@ -23,8 +23,8 @@ function m(e) {
         channel: A,
         activities: g,
         newClipsCount: p,
-        canPostPolls: _,
-        appContext: f,
+        canPostPolls: f,
+        appContext: _,
         canSendScheduledMessages: E,
         canSummarizeThreads: x
     } = e, C = [];
@@ -36,7 +36,7 @@ function m(e) {
         type: "UPLOAD_TEXT_AS_FILE",
         icon: s.H8$,
         display: u.intl.string(u.t["G9s+EM"])
-    })), m && t && f !== d.BRT.POPOUT && C.push({
+    })), m && t && _ !== d.BRT.POPOUT && C.push({
         type: "CLIPS",
         icon: s.xgA,
         display: u.intl.string(u.t.o034cv),
@@ -46,7 +46,7 @@ function m(e) {
         type: "CREATE_THREAD",
         icon: s.G_k,
         display: u.intl.string(u.t.rBIGBL)
-    }), _ && C.push({
+    }), f && C.push({
         type: "POLL",
         icon: s.YRe,
         display: u.intl.string(u.t.Flr51u)

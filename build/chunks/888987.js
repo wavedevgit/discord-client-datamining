@@ -23,14 +23,14 @@ function A(e) {
         locked: t,
         pinned: n,
         anchorLeft: r
-    } = e, A = (0, s.bG)([_.A], () => _.A.getSocket()), x = (0, s.bG)([p.A], () => p.A.isGPUBoosted());
+    } = e, A = (0, s.bG)([_.A], () => _.A.getSocket()), I = (0, s.bG)([p.A], () => p.A.isGPUBoosted());
     (0, u.ZX)();
-    let I = (0, s.bG)([h.A], () => h.A.getWindow(g.f)),
+    let x = (0, s.bG)([h.A], () => h.A.getWindow(g.f)),
         [E, b] = (0, u.DQ)(A),
         {
             currentFPS: v,
-            averageFrameTime: C,
-            timeSinceLastDrop: S,
+            averageFrameTime: S,
+            timeSinceLastDrop: C,
             onResetFrameData: y,
             droppedFramesRef: T,
             renderedFrameCount: N,
@@ -38,15 +38,15 @@ function A(e) {
             frameCheckerEffect: L
         } = (0, u.Dj)(!0, E, !0),
         [O, j, P] = (0, u.F5)(A),
-        [D, R] = (0, u.km)(O, L, I),
-        k = performance.now() - b.current < u.Jc,
-        M = j(C, w.current);
-    (0, c.Ay)(() => (D(), () => {
-        R()
+        [R, D] = (0, u.km)(O, L, x),
+        M = performance.now() - b.current < u.Jc,
+        k = j(S, w.current);
+    (0, c.Ay)(() => (R(), () => {
+        D()
     }));
     let G = a.useCallback(() => {
-            y(), P(), D()
-        }, [y, P, D]),
+            y(), P(), R()
+        }, [y, P, R]),
         [z, U] = a.useState(!0),
         [V, F] = a.useState(!0),
         [W, H] = a.useState(!0),
@@ -88,8 +88,8 @@ function A(e) {
                 children: ["Frame Times:", " ", (0, i.jsxs)(d.Text, {
                     tag: "span",
                     variant: "code",
-                    color: C > 1.1 * u.L6 ? "text-feedback-warning" : "text-strong",
-                    children: [C.toFixed(2), "ms"]
+                    color: S > 1.1 * u.L6 ? "text-feedback-warning" : "text-strong",
+                    children: [S.toFixed(2), "ms"]
                 })]
             })]
         }), (W || !t) && (0, i.jsxs)("div", {
@@ -107,7 +107,7 @@ function A(e) {
                 children: ["Dropped Frames:", " ", (0, i.jsx)(d.Text, {
                     tag: "span",
                     variant: "code",
-                    color: S < 2 ? "text-feedback-critical" : S < 5 ? "text-feedback-warning" : "text-strong",
+                    color: C < 2 ? "text-feedback-critical" : C < 5 ? "text-feedback-warning" : "text-strong",
                     children: T.current
                 }), (0, i.jsxs)(d.Text, {
                     tag: "span",
@@ -155,13 +155,13 @@ function A(e) {
                         children: ["Idle Frame Delta:", " ", (0, i.jsxs)(d.Text, {
                             tag: "span",
                             variant: "code",
-                            color: M > 1 ? "text-feedback-critical" : "text-strong",
-                            children: [M.toFixed(2), "ms"]
+                            color: k > 1 ? "text-feedback-critical" : "text-strong",
+                            children: [k.toFixed(2), "ms"]
                         })]
                     })
                 })
             })]
-        }), k && (0, i.jsx)(o.m, {
+        }), M && (0, i.jsx)(o.m, {
             position: "left",
             text: "We don't track frames while the app is in the background, because requestAnimationFrame doesn't fire in the background",
             children: (0, i.jsx)("span", {
@@ -172,7 +172,7 @@ function A(e) {
                     children: "(Main App Backgrounded)"
                 })
             })
-        }), x && (0, i.jsx)(d.Text, {
+        }), I && (0, i.jsx)(d.Text, {
             tag: "span",
             variant: "code",
             color: "text-feedback-positive",

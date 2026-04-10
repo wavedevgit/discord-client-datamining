@@ -1,6 +1,6 @@
 /** chunk id: 75280 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => x
 });
 var i = n(627968),
     a = n(64700),
@@ -18,23 +18,23 @@ var i = n(627968),
     g = n(897720),
     f = n(652215),
     A = n(456847);
-let x = {
+let I = {
         mass: 1,
         tension: 250,
         friction: 18,
         clamp: !0
     },
-    I = a.memo(function(e) {
+    x = a.memo(function(e) {
         let {
             widgetId: t,
             tileWidth: n,
             tileHeight: r,
-            layout: I,
+            layout: x,
             locked: E,
             activeStreams: b,
             streamParticipants: v,
-            participantsVersion: C,
-            pinned: S,
+            participantsVersion: S,
+            pinned: C,
             padding: y
         } = e, T = v.map(e => ({
             participant: e,
@@ -43,8 +43,8 @@ let x = {
             height: r,
             locked: E,
             widgetId: t,
-            pinned: S
-        })), N = (0, d.A)(n), w = (0, d.A)(E), L = I === g.IV.VERTICAL, O = E || w !== E || N !== n, j = a.useMemo(() => {
+            pinned: C
+        })), N = (0, d.A)(n), w = (0, d.A)(E), L = x === g.IV.VERTICAL, O = E || w !== E || N !== n, j = a.useMemo(() => {
             let e = 0,
                 t = 0;
             return L ? T.map((t, n) => ({
@@ -56,7 +56,7 @@ let x = {
                 x: (t += e.width + (n > 0 ? y : 0)) - e.width,
                 y: 0
             }))
-        }, [T, y, L]), P = a.useMemo(() => 0 === j.length ? (0, p.uc)(m.Ub) : j.reduce((e, t) => e + t.height, 0) + (L ? y * (j.length - 1) : 0), [j, L, y]), D = a.useMemo(() => 0 === j.length ? m.Ub : j.reduce((e, t) => e + t.width, 0) + (L ? 0 : y * (j.length - 1)), [j, L, y]), R = (0, o.pnh)(j, {
+        }, [T, y, L]), P = a.useMemo(() => 0 === j.length ? (0, p.uc)(m.Ub) : j.reduce((e, t) => e + t.height, 0) + (L ? y * (j.length - 1) : 0), [j, L, y]), R = a.useMemo(() => 0 === j.length ? m.Ub : j.reduce((e, t) => e + t.width, 0) + (L ? 0 : y * (j.length - 1)), [j, L, y]), D = (0, o.pnh)(j, {
             key: e => e.key,
             from: {
                 height: 0,
@@ -95,17 +95,17 @@ let x = {
                     height: a
                 }
             },
-            config: x,
+            config: I,
             trail: 100 * !O
-        }, O ? "animate-never" : "respect-motion-settings"), k = (0, _.Dk)(() => new Set(v.map(e => e.user.id)), [v, C]), M = (0, _.Dk)(() => new Set(v.filter(e => b.has((0, c._z)(e.stream))).map(e => e.user.id)), [v, b, C]);
+        }, O ? "animate-never" : "respect-motion-settings"), M = (0, _.Dk)(() => new Set(v.map(e => e.user.id)), [v, S]), k = (0, _.Dk)(() => new Set(v.filter(e => b.has((0, c._z)(e.stream))).map(e => e.user.id)), [v, b, S]);
         return a.useEffect(() => {
-            0 !== k.size && (0, _.Y)(f.uss.GO_LIVE, {
+            0 !== M.size && (0, _.Y)(f.uss.GO_LIVE, {
                 locked: u.default.isInstanceLocked(),
-                shownUserIds: Array.from(k),
-                liveUserIds: Array.from(M),
+                shownUserIds: Array.from(M),
+                liveUserIds: Array.from(k),
                 contentInventoryIds: []
             })
-        }, [k, M]), (0, i.jsx)("div", {
+        }, [M, k]), (0, i.jsx)("div", {
             className: l()({
                 [A.UT]: !0,
                 [A.Vd]: L,
@@ -114,9 +114,9 @@ let x = {
             style: L ? {
                 height: P
             } : {
-                width: D
+                width: R
             },
-            children: R((e, t, a, l) => (0, i.jsx)(s.animated.div, {
+            children: D((e, t, a, l) => (0, i.jsx)(s.animated.div, {
                 className: A.ux,
                 style: Object.assign({}, e, {
                     width: n,

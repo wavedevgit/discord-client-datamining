@@ -21,10 +21,10 @@ function u(e) {
         userCount: A,
         onClick: _,
         highlight: m,
-        onDismiss: g
-    } = e, p = l.useCallback(e => {
-        e.stopPropagation(), g?.()
-    }, [g]);
+        onDismiss: p
+    } = e, g = l.useCallback(e => {
+        e.stopPropagation(), p?.()
+    }, [p]);
     return (0, i.jsxs)(o.DUT, {
         className: a()(c.kL, t, null != m && {
             [c.U6]: m
@@ -59,11 +59,11 @@ function u(e) {
                     })
                 })]
             }) : null]
-        }), null != g ? (0, i.jsx)("div", {
+        }), null != p ? (0, i.jsx)("div", {
             className: c.r,
             children: (0, i.jsx)(r.JnF, {
                 size: "xs",
-                onClick: p
+                onClick: g
             })
         }) : (0, i.jsx)(o._BQ, {
             size: "xs",

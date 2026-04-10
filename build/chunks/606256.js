@@ -19,8 +19,8 @@ let A = l.forwardRef(function(e, t) {
         onContextMenu: A,
         icon: _,
         selected: m,
-        tooltip: g,
-        upperBadge: p,
+        tooltip: p,
+        upperBadge: g,
         lowerBadge: f,
         lowerBadgeSize: x,
         showPill: E = !0,
@@ -30,20 +30,20 @@ let A = l.forwardRef(function(e, t) {
         onMouseEnter: T,
         onMouseLeave: S,
         onMouseDown: b
-    } = e, v = (0, r.Vd)(n), [y, j] = l.useState(!1), R = "string" == typeof g && null == C ? g : C;
+    } = e, y = (0, r.Vd)(n), [v, j] = l.useState(!1), R = "string" == typeof p && null == C ? p : C;
     return (0, i.jsxs)(c.c, {
         children: [E ? (0, i.jsx)("div", {
             className: h.Io,
             children: (0, i.jsx)(d.A, {
-                hovered: y,
+                hovered: v,
                 selected: m
             })
         }) : null, (0, i.jsx)(u.A, {
-            text: g,
+            text: p,
             selected: m,
             children: (0, i.jsx)(o.Qk9, {
                 selected: !0,
-                upperBadge: p,
+                upperBadge: g,
                 lowerBadge: f,
                 lowerBadgeSize: x,
                 children: (0, i.jsx)(o.DUT, {
@@ -56,7 +56,7 @@ let A = l.forwardRef(function(e, t) {
                     },
                     onMouseDown: b,
                     className: a()(h.oZ, I, {
-                        [h.wH]: m || y
+                        [h.wH]: m || v
                     }),
                     onClick: s,
                     "aria-label": R,
@@ -65,7 +65,7 @@ let A = l.forwardRef(function(e, t) {
                     focusProps: {
                         enabled: !1
                     },
-                    ...v,
+                    ...y,
                     children: null != _ && (0, i.jsx)(_, {
                         className: h.sF,
                         color: "currentColor"

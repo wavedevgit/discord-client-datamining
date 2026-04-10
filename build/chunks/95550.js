@@ -18,8 +18,8 @@ var i = n(627968),
     A = n(308528),
     g = n(711950),
     p = n(846293),
-    _ = n(888906),
-    f = n(49229),
+    f = n(888906),
+    _ = n(49229),
     E = n(684136),
     x = n(964486),
     C = n(793574),
@@ -33,8 +33,8 @@ var i = n(627968),
     j = n(267102),
     R = n(976860),
     M = n(219271),
-    D = n(21119),
-    O = n(95701),
+    O = n(21119),
+    D = n(95701),
     L = n(734057),
     P = n(958590),
     k = n(584777),
@@ -145,7 +145,7 @@ class el extends l.PureComponent {
         let {
             channel: e
         } = this.props;
-        h.h.wait(() => _.A.open(e?.id));
+        h.h.wait(() => f.A.open(e?.id));
         let t = (0, S.dI)(e);
         H.default.track(Z.HAw.OPEN_POPOUT, {
             ...t,
@@ -157,7 +157,7 @@ class el extends l.PureComponent {
         }, 0)
     }
     componentWillUnmount() {
-        K._.unsubscribe(Z.jej.SCROLL_PAGE_UP, this.scrollPageUp), K._.unsubscribe(Z.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), null != this.copyTimeout && clearTimeout(this.copyTimeout), h.h.wait(() => _.A.close())
+        K._.unsubscribe(Z.jej.SCROLL_PAGE_UP, this.scrollPageUp), K._.unsubscribe(Z.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), null != this.copyTimeout && clearTimeout(this.copyTimeout), h.h.wait(() => f.A.close())
     }
     scrollPageUp = () => {
         this.scrollerRef.current?.scrollPageUp({
@@ -541,7 +541,7 @@ class el extends l.PureComponent {
         })
     }
     handleAddFriend(e) {
-        this.props.onClose(), f.A.sendRequest({
+        this.props.onClose(), _.A.sendRequest({
             discordTag: q.Ay.getUserTag(e, {
                 identifiable: "always"
             }),
@@ -555,21 +555,21 @@ class el extends l.PureComponent {
         e?.focus()
     };
     focusResult = e => {
-        _.A.select(e)
+        f.A.select(e)
     };
     handleSelect = e => {
         let {
             results: t,
             channel: n
         } = this.props;
-        if (null == e) _.A.clear(n?.id);
+        if (null == e) f.A.clear(n?.id);
         else if (null != t) {
             let n = t[e];
             this.handleClick(n.user.id)
         }
     };
     handleSelectionChange = e => {
-        _.A.select(e);
+        f.A.select(e);
         let t = this.scrollerRef.current;
         null != t && t.scrollToIndex({
             section: 0,
@@ -581,7 +581,7 @@ class el extends l.PureComponent {
         let {
             channel: t
         } = this.props, n = (0, S.dI)(t);
-        _.A.search(e, t?.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
+        f.A.search(e, t?.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
             H.default.track(Z.HAw.SEARCH_USER_LIST_STARTED, {
                 ...n,
                 entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
@@ -592,11 +592,11 @@ class el extends l.PureComponent {
     };
     handleRemoveTag = e => {
         let t = Array.from(this.props.selectedUsers);
-        _.A.removeUser(t[e])
+        f.A.removeUser(t[e])
     };
     handleRemoveUser = e => {
         e.forEach(e => {
-            _.A.removeUser(e)
+            f.A.removeUser(e)
         }), this.forceFocus()
     };
     handleClick = e => {
@@ -605,7 +605,7 @@ class el extends l.PureComponent {
             query: n,
             channel: i
         } = this.props;
-        t.has(e) ? _.A.removeUser(e) : this.getRemaining() > 0 && (_.A.addUser(e), n.length > 0 && _.A.clear(i?.id)), this.forceFocus()
+        t.has(e) ? f.A.removeUser(e) : this.getRemaining() > 0 && (f.A.addUser(e), n.length > 0 && f.A.clear(i?.id)), this.forceFocus()
     };
     handleAddFriendNavigation = () => {
         g.A.transitionToSection(Z.m3P.ADD_FRIEND, {
@@ -621,7 +621,7 @@ class el extends l.PureComponent {
     _getUserAffinities(e) {
         return {
             affinities: e.map(e => {
-                let t = D.A.getUserAffinity(e);
+                let t = O.A.getUserAffinity(e);
                 return t?.communicationProbability ?? -1
             })
         }
@@ -891,7 +891,7 @@ function ed(e) {
 
 function eu(e) {
     let t = eh(e);
-    return new Set((0, s.chain)(L.A.getMutablePrivateChannels()).values().filter(e => (0, O.MK)(e.type)).filter(e => eh(e.recipients) === t).map(e => e.id).value())
+    return new Set((0, s.chain)(L.A.getMutablePrivateChannels()).values().filter(e => (0, D.MK)(e.type)).filter(e => eh(e.recipients) === t).map(e => e.id).value())
 }
 
 function eh(e) {

@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(304072),
     g = n(390395),
     p = n(659195),
-    _ = n(505527),
-    f = n(467073),
+    f = n(505527),
+    _ = n(467073),
     E = n(960538),
     x = n(898280),
     C = n(573163),
@@ -31,8 +31,8 @@ var i = n(627968),
     j = n(867455),
     R = n(734057),
     M = n(147036),
-    D = n(957565),
-    O = n(435470),
+    O = n(957565),
+    D = n(435470),
     L = n(473503),
     P = n(853742),
     k = n(652215),
@@ -94,7 +94,7 @@ function V(e) {
         disableReactionCreates: Z,
         isLurking: X,
         isPendingMember: Q
-    } = (0, f.A)(q), ee = (0, N.W1)(q), et = (0, r.bG)([R.A], () => R.A.getChannel(o)), en = (0, O.Ck)(et), ei = (0, r.bG)([g.A], () => g.A.shouldDisplayPrompt(t) && !0 === n, [t, n]), el = l.useCallback(e => {
+    } = (0, _.A)(q), ee = (0, N.W1)(q), et = (0, r.bG)([R.A], () => R.A.getChannel(o)), en = (0, D.Ck)(et), ei = (0, r.bG)([g.A], () => g.A.shouldDisplayPrompt(t) && !0 === n, [t, n]), el = l.useCallback(e => {
         let t = e[0];
         if (null != t && n) {
             let e = t.intersectionRect,
@@ -123,7 +123,7 @@ function V(e) {
                 location: {
                     section: k.JJy.CHANNEL_HEADER
                 }
-            }), (0, D.C)((0, M.af)(q, et), () => z(!0))
+            }), (0, O.C)((0, M.af)(q, et), () => z(!0))
         },
         ec = J ? d.A9s : d.XFE;
     return (0, i.jsxs)(i.Fragment, {
@@ -151,7 +151,7 @@ function V(e) {
                         isLurking: X,
                         isPendingMember: Q,
                         emoji: en,
-                        type: _.v.NORMAL,
+                        type: f.v.NORMAL,
                         hideCount: !0,
                         count: 0,
                         me: !1,

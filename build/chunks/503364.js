@@ -1,11 +1,11 @@
 /** chunk id: 503364 params = (module,exports,require) **/
 n.d(t, {
     A: () => m,
-    N: () => x
+    N: () => f
 });
 var a = n(627968),
-    l = n(64700),
-    i = n(990078),
+    i = n(64700),
+    l = n(990078),
     r = n(397927),
     s = n(442433),
     o = n(50268),
@@ -18,11 +18,11 @@ function m(e) {
         applicationId: t,
         className: n,
         trackAction: d
-    } = e, m = l.useRef(null), x = (0, o.A)({
+    } = e, m = i.useRef(null), f = (0, o.A)({
         id: t,
         label: u.intl.string(u.t["FfCL+6"])
-    }), h = (0, c.n)(t, d);
-    return null == x && null == h ? null : (0, a.jsx)(r.YNO, {
+    }), x = (0, c.n)(t, d);
+    return null == f && null == x ? null : (0, a.jsx)(r.YNO, {
         targetElementRef: m,
         align: "top",
         position: "right",
@@ -41,14 +41,14 @@ function m(e) {
                 onSelect: () => {},
                 children: (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(r.rXV, {
-                        children: x
+                        children: f
                     }), (0, a.jsx)(r.rXV, {
-                        children: h
+                        children: x
                     })]
                 })
             })
         },
-        children: e => (0, a.jsx)(i.m, {
+        children: e => (0, a.jsx)(l.m, {
             text: u.intl.string(u.t["UKOtz+"]),
             children: (0, a.jsx)(r.DUT, {
                 innerRef: m,
@@ -63,20 +63,20 @@ function m(e) {
     })
 }
 
-function x(e) {
+function f(e) {
     let {
         game: t,
         onClose: n,
         className: m,
-        trackAction: x
-    } = e, h = l.useRef(null), f = l.useRef(null), g = (0, o.A)({
+        trackAction: f
+    } = e, x = i.useRef(null), h = i.useRef(null), g = (0, o.A)({
         id: t.id,
         label: u.intl.string(u.t["FfCL+6"])
-    }), p = (0, c.n)(t.id, x), _ = (0, d.A)(t);
+    }), p = (0, c.n)(t.id, f), _ = (0, d.A)(t);
     return (0, a.jsxs)("div", {
         className: m,
         children: [null != _ && (0, a.jsx)(r.YNO, {
-            targetElementRef: f,
+            targetElementRef: h,
             align: "top",
             position: "right",
             disablePointerEvents: !1,
@@ -98,7 +98,7 @@ function x(e) {
             },
             children: e => (0, a.jsx)("div", {
                 ...e,
-                ref: f,
+                ref: h,
                 children: (0, a.jsx)(r.Button, {
                     icon: r.pa$,
                     variant: "overlay-secondary",
@@ -107,7 +107,7 @@ function x(e) {
                 })
             })
         }), (null != g || null != p) && (0, a.jsx)(r.YNO, {
-            targetElementRef: h,
+            targetElementRef: x,
             align: "top",
             position: "right",
             disablePointerEvents: !1,
@@ -131,11 +131,11 @@ function x(e) {
                     })
                 })
             },
-            children: e => (0, a.jsx)(i.m, {
+            children: e => (0, a.jsx)(l.m, {
                 text: u.intl.string(u.t["UKOtz+"]),
                 children: (0, a.jsx)("div", {
                     ...e,
-                    ref: h,
+                    ref: x,
                     children: (0, a.jsx)(r.K0, {
                         icon: r.jNK,
                         variant: "overlay-secondary",

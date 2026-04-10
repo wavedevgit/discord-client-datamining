@@ -17,8 +17,8 @@ var l = n(311907),
     A = n(513461),
     g = n(123393),
     p = n(652215),
-    _ = n(985018),
-    f = n(130921);
+    f = n(985018),
+    _ = n(130921);
 
 function E(e) {
     let {
@@ -45,14 +45,14 @@ function E(e) {
         submitting: j
     } = (0, g.W)(C?.guildId, C?.userId, C?.joinRequestId);
     return null != C && C.applicationStatus === A.B5.SUBMITTED && S ? (0, i.jsxs)("div", {
-        className: f.U,
+        className: _.U,
         children: [(0, i.jsx)(s.m, {
-            text: _.intl.string(_.t.cdPGbE),
+            text: f.intl.string(f.t.cdPGbE),
             shouldShow: v,
             children: (0, i.jsx)(a.Button, {
                 variant: "active",
                 size: "sm",
-                text: _.intl.string(_.t.BzjDQJ),
+                text: f.intl.string(f.t.BzjDQJ),
                 loading: j,
                 onClick: y,
                 disabled: v
@@ -60,7 +60,7 @@ function E(e) {
         }), (0, i.jsx)(a.Button, {
             variant: "critical-primary",
             size: "sm",
-            text: _.intl.string(_.t.hDtbsz),
+            text: f.intl.string(f.t.hDtbsz),
             onClick: b,
             disabled: j || C.applicationStatus !== A.B5.SUBMITTED
         }), n && (0, i.jsx)(a.Button, {
@@ -72,7 +72,7 @@ function E(e) {
             },
             variant: "secondary",
             size: "sm",
-            text: _.intl.string(_.t.iXAna6)
+            text: f.intl.string(f.t.iXAna6)
         }), E && (0, i.jsx)(r.Ay.Divider, {})]
     }) : null
 }

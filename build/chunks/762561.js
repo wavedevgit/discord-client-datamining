@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(361628),
     _ = n(713517),
     m = n(673843),
-    g = n(594832),
-    p = n(183555),
+    p = n(594832),
+    g = n(183555),
     f = n(622543),
     x = n(950191),
     E = n(679492),
@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(439053),
     S = n(312381),
     b = n(379654),
-    v = n(946356),
-    y = n(490752),
+    y = n(946356),
+    v = n(490752),
     j = n(587168),
     R = n(193738),
     O = n(615952),
@@ -49,7 +49,7 @@ function H(e) {
         channel: H
     } = e, F = __OVERLAY__, W = (0, x.Ay)(t.id), K = (0, A.A)(W?.profileFrame?.skuId, "UserProfileSidebar"), Y = (0, d.Ay)(), {
         analyticsLocations: z
-    } = (0, u.Ay)(c.A.USER_PROFILE_SIDEBAR), q = (0, p.pb)({
+    } = (0, u.Ay)(c.A.USER_PROFILE_SIDEBAR), q = (0, g.pb)({
         layout: "SIDEBAR",
         userId: t.id,
         channelId: H.id
@@ -74,7 +74,7 @@ function H(e) {
         defaultWishlistId: f.A.getFirstWishlistId(t.id)
     })), {
         wishlist: ei
-    } = (0, g.fw)({
+    } = (0, p.fw)({
         wishlistId: en,
         userId: t.id
     });
@@ -82,12 +82,12 @@ function H(e) {
     let el = l.useMemo(() => null == ei ? null : ei.items.filter(e => !e.isOwned), [ei]);
     return (0, i.jsx)(u.f5, {
         value: z,
-        children: (0, i.jsx)(p.of, {
+        children: (0, i.jsx)(g.of, {
             value: q,
             isLoaded: W?.isLoaded,
             children: (0, i.jsx)(E.Hl, {
                 value: J,
-                children: (0, i.jsxs)(v.A, {
+                children: (0, i.jsxs)(y.A, {
                     ref: X,
                     user: t,
                     displayProfile: W,
@@ -105,7 +105,7 @@ function H(e) {
                                 themeType: w.d.SIDEBAR
                             }), (0, i.jsx)(O.A, {
                                 user: t
-                            }), t.bot ? (0, i.jsx)(y.A, {
+                            }), t.bot ? (0, i.jsx)(v.A, {
                                 user: t
                             }) : (0, i.jsx)(L.yo, {
                                 user: t

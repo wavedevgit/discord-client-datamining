@@ -1,6 +1,6 @@
 /** chunk id: 849205 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968);
 n(64700);
@@ -17,17 +17,17 @@ var l = n(417597),
     _ = n(985018),
     m = n(358943);
 
-function g(e) {
+function p(e) {
     let t = e.channel.getRecipientId(),
         n = e.channel.isSystemDM(),
-        g = (0, l.bG)([u.default], () => u.default.getUser(t)),
-        p = (0, l.bG)([d.A], () => d.A.getStatus(t)),
+        p = (0, l.bG)([u.default], () => u.default.getUser(t)),
+        g = (0, l.bG)([d.A], () => d.A.getStatus(t)),
         f = (0, l.bG)([d.A], () => d.A.isMobileOnline(t)),
         x = (0, l.bG)([d.A], () => d.A.isVROnline(t)),
         E = (0, l.bG)([c.A], () => c.A.getNickname(t)),
-        I = h.Ay.useUserTag(g),
+        I = h.Ay.useUserTag(p),
         C = (0, r.a)({
-            displayNameStyles: g?.displayNameStyles
+            displayNameStyles: p?.displayNameStyles
         }),
         N = (0, o.bG)({
             channelId: e.channel.id
@@ -35,15 +35,15 @@ function g(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(a.AC4, {
             children: _.intl.string(_.t.EJRzg7)
-        }), null != g && !n && (0, i.jsx)("div", {
+        }), null != p && !n && (0, i.jsx)("div", {
             children: (0, i.jsx)(a.euF, {
-                status: p,
+                status: g,
                 isMobile: f,
                 isVR: x,
                 className: m.my,
                 size: a._3J.SIZE_20,
-                "aria-label": h.Ay.getName(g),
-                src: g.getAvatarURL(void 0, 20)
+                "aria-label": h.Ay.getName(p),
+                src: p.getAvatarURL(void 0, 20)
             })
         }), (0, i.jsx)(A.A.Title, {
             level: e.level,
@@ -56,7 +56,7 @@ function g(e) {
                     position: "bottom",
                     children: (0, i.jsx)("span", {
                         className: C,
-                        children: E ?? h.Ay.getName(g)
+                        children: E ?? h.Ay.getName(p)
                     })
                 }), N && (0, i.jsx)(s.m, {
                     text: _.intl.string(_.t.QyZ4Td),

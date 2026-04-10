@@ -58,13 +58,13 @@ function u(e, t, n) {
             tileCount: h,
             isVertical: o
         }),
-        x = e.width - i,
-        I = e.height - i,
+        I = e.width - i,
+        x = e.height - i,
         E = u - i,
         b = _ - i;
-    return o ? (b -= g, I -= g) : (E -= g, x -= g), m && p && (e.width > e.height ? I = r(x = E, f) : x = l(I = b, A), m = x > E, p = I > b), m && (I = r(x = E, f)), p && (x = l(I = b, A)), o ? I += d(s, a) : x += d(s, a), {
-        width: x + i,
-        height: I + i
+    return o ? (b -= g, x -= g) : (E -= g, I -= g), m && p && (e.width > e.height ? x = r(I = E, f) : I = l(x = b, A), m = I > E, p = x > b), m && (x = r(I = E, f)), p && (I = l(x = b, A)), o ? x += d(s, a) : I += d(s, a), {
+        width: I + i,
+        height: x + i
     }
 }
 

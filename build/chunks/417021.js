@@ -4,22 +4,22 @@ t.d(n, {
 });
 var i = t(627968),
     a = t(311907),
-    l = t(397927),
-    r = t(793574),
+    r = t(397927),
+    l = t(793574),
     o = t(688810),
-    s = t(632738),
-    d = t(994500),
+    d = t(632738),
+    s = t(994500),
     c = t(562153),
     _ = t(183555),
     u = t(672385),
     p = t(950191),
     A = t(249790),
     g = t(946356),
-    m = t(254828),
-    f = t(783123),
-    h = t(652215),
-    x = t(996988),
-    I = t(985018),
+    h = t(254828),
+    m = t(783123),
+    I = t(652215),
+    f = t(996988),
+    x = t(985018),
     b = t(255412);
 
 function v(e) {
@@ -28,61 +28,61 @@ function v(e) {
         guildId: t,
         channelId: v,
         messageId: E,
-        roleId: j,
-        transitionState: y,
-        onHide: C,
-        sourceAnalyticsLocations: T = []
-    } = e, S = t === h.ME ? void 0 : t, N = (0, a.bG)([d.A], () => d.A.isBlocked(n.id)), {
+        roleId: y,
+        transitionState: j,
+        onHide: T,
+        sourceAnalyticsLocations: S = []
+    } = e, C = t === I.ME ? void 0 : t, N = (0, a.bG)([s.A], () => s.A.isBlocked(n.id)), {
         analyticsLocations: R
-    } = (0, o.Ay)([...T, N ? r.A.BLOCKED_PROFILE_MODAL : r.A.IGNORED_PROFILE_MODAL]), L = (0, _.pb)({
+    } = (0, o.Ay)([...S, N ? l.A.BLOCKED_PROFILE_MODAL : l.A.IGNORED_PROFILE_MODAL]), L = (0, _.pb)({
         layout: "MODAL_V2",
         userId: n.id,
-        guildId: S,
+        guildId: C,
         channelId: v,
         messageId: E,
-        roleId: j
+        roleId: y
     }), P = [{
-        icon: l.yr3,
-        description: I.intl.string(I.t.kcuWva)
+        icon: r.yr3,
+        description: x.intl.string(x.t.kcuWva)
     }, {
-        icon: l.yr3,
-        description: I.intl.string(N ? I.t.QxrDY1 : I.t.W6fjkS)
-    }], D = (0, p.Ay)(n.id, S), O = c.Ay.getName(D?.guildId, v, n), k = I.intl.formatToPlainString(I.t.KRe1Fk, {
-        name: O
+        icon: r.yr3,
+        description: x.intl.string(N ? x.t.QxrDY1 : x.t.W6fjkS)
+    }], O = (0, p.Ay)(n.id, C), D = c.Ay.getName(O?.guildId, v, n), k = x.intl.formatToPlainString(x.t.KRe1Fk, {
+        name: D
     });
     return (0, i.jsx)(o.f5, {
         value: R,
         children: (0, i.jsx)(_.of, {
             value: L,
-            isLoaded: D?.isLoaded,
-            children: (0, i.jsx)(l.EOs, {
+            isLoaded: O?.isLoaded,
+            children: (0, i.jsx)(r.EOs, {
                 "data-migration-pending": !0,
-                transitionState: y,
+                transitionState: j,
                 className: b.zr,
                 "aria-label": k,
                 parentComponent: "RestrictedUserProfileModalV2",
                 children: (0, i.jsxs)(g.A, {
                     user: n,
-                    displayProfile: D,
-                    themeType: x.d.MODAL_V2,
+                    displayProfile: O,
+                    themeType: f.d.MODAL_V2,
                     children: [(0, i.jsx)("div", {
                         className: b.Tp
                     }), (0, i.jsxs)("div", {
                         className: b.Qs,
                         children: [(0, i.jsx)(A.A, {
                             user: n,
-                            guildId: S
+                            guildId: C
                         }), (0, i.jsxs)("div", {
                             className: b.FS,
-                            children: [(0, i.jsx)(l.Heading, {
+                            children: [(0, i.jsx)(r.Heading, {
                                 variant: "heading-xl/bold",
                                 color: "text-default",
-                                children: I.intl.string(I.t.b33pLD)
-                            }), (0, i.jsx)(l.Text, {
+                                children: x.intl.string(x.t.b33pLD)
+                            }), (0, i.jsx)(r.Text, {
                                 variant: "text-md/medium",
                                 color: "text-default",
-                                children: I.intl.format(N ? I.t.T7QiLn : I.t.MnEowy, {
-                                    username: O
+                                children: x.intl.format(N ? x.t.T7QiLn : x.t.MnEowy, {
+                                    username: D
                                 })
                             })]
                         }), (0, i.jsx)("div", {
@@ -92,29 +92,29 @@ function v(e) {
                                     icon: t,
                                     description: a
                                 } = e;
-                                return (0, i.jsx)(s.PQ, {
+                                return (0, i.jsx)(d.PQ, {
                                     icon: t,
                                     title: a,
                                     titleVariant: "text-md/normal",
-                                    color: l.LU0.colors.TEXT_DEFAULT.css
+                                    color: r.LU0.colors.TEXT_DEFAULT.css
                                 }, n)
                             })
-                        }), (0, i.jsxs)(l.BJc, {
+                        }), (0, i.jsxs)(r.BJc, {
                             align: "center",
-                            children: [(0, i.jsx)(f.A, {
+                            children: [(0, i.jsx)(m.A, {
                                 size: "md",
                                 isBlocked: N,
                                 onClick: () => {
-                                    C(), (0, u.Wn)({
+                                    T(), (0, u.Wn)({
                                         action: N ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                                         analyticsLocations: R,
                                         ...L
                                     })
                                 }
-                            }), (0, i.jsx)(m.A, {
+                            }), (0, i.jsx)(h.A, {
                                 userId: n.id,
                                 onClick: () => {
-                                    C(), (0, u.Wn)({
+                                    T(), (0, u.Wn)({
                                         action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                                         analyticsLocations: R,
                                         ...L

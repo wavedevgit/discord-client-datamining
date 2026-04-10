@@ -1,124 +1,124 @@
 /** chunk id: 19333 params = (module,exports,require) **/
 n.d(t, {
-    A: () => j
+    A: () => A
 });
-var l = n(627968);
+var r = n(627968);
 n(64700);
-var i = n(503698),
-    a = n.n(i),
-    r = n(688807),
+var l = n(503698),
+    i = n.n(l),
+    a = n(688807),
     s = n(311907),
     o = n(435371),
-    c = n(397927),
-    d = n(442433),
+    d = n(397927),
+    c = n(442433),
     u = n(775602),
     m = n(915089),
     h = n(961350),
-    p = n(183555),
+    x = n(183555),
     g = n(735321),
-    x = n(606758),
-    f = n(518477),
-    y = n(985018),
-    v = n(558454);
+    f = n(606758),
+    v = n(518477),
+    j = n(985018),
+    p = n(558454);
 
-function j(e) {
+function A(e) {
     let {
         widget: t,
         className: n,
-        buttonRef: i,
-        additionalMenuItems: r
+        buttonRef: l,
+        additionalMenuItems: a
     } = e, s = (0, g.L)(t), o = (0, m.GV)();
-    return (0, l.jsx)(E, {
-        targetRef: i,
+    return (0, r.jsx)(N, {
+        targetRef: l,
         widget: t,
-        additionalMenuItems: r,
-        children: e => (0, l.jsx)(T, {
-            children: (0, l.jsxs)(c.DUT, {
-                innerRef: i,
-                className: a()(v.x6, n),
+        additionalMenuItems: a,
+        children: e => (0, r.jsx)(y, {
+            children: (0, r.jsxs)(d.DUT, {
+                innerRef: l,
+                className: i()(p.x6, n),
                 "data-dnd-name": s,
-                "aria-label": y.intl.formatToPlainString(y.t.HWNJJN, {
+                "aria-label": j.intl.formatToPlainString(j.t.HWNJJN, {
                     widgetTitle: s
                 }),
                 "aria-describedby": o,
                 "aria-keyshortcuts": "Control+D, Meta+D",
                 ...e,
-                children: [(0, l.jsx)(c.WP0, {
+                children: [(0, r.jsx)(d.WP0, {
                     size: "sm"
-                }), (0, l.jsx)(c.AC4, {
+                }), (0, r.jsx)(d.AC4, {
                     id: o,
-                    children: y.intl.string(y.t.bsuqFn)
+                    children: j.intl.string(j.t.bsuqFn)
                 })]
             })
         })
     })
 }
-let T = e => {
+let y = e => {
         let {
             children: t
         } = e, n = (0, s.bG)([u.A], () => u.A.keyboardModeEnabled), {
-            isDragging: i
-        } = (0, r.V)(e => ({
+            isDragging: l
+        } = (0, a.V)(e => ({
             isDragging: e.isDragging()
         }));
-        return (0, l.jsx)(o.m_, {
-            __unsupportedReactNodeAsText: (0, l.jsxs)("div", {
-                className: v.HE,
-                children: [(0, l.jsx)(c.Text, {
+        return (0, r.jsx)(o.m_, {
+            __unsupportedReactNodeAsText: (0, r.jsxs)("div", {
+                className: p.HE,
+                children: [(0, r.jsx)(d.Text, {
                     variant: "text-sm/normal",
                     color: "none",
-                    children: y.intl.format(n ? y.t["zvln/l"] : y.t["7cdwhg"], {
-                        emphasizeHook: e => (0, l.jsx)("strong", {
+                    children: j.intl.format(n ? j.t["zvln/l"] : j.t["7cdwhg"], {
+                        emphasizeHook: e => (0, r.jsx)("strong", {
                             children: e
                         })
                     })
-                }), (0, l.jsx)(c.Text, {
+                }), (0, r.jsx)(d.Text, {
                     variant: "text-sm/normal",
                     color: "none",
-                    children: y.intl.format(y.t["4e0rM4"], {
-                        emphasizeHook: e => (0, l.jsx)("strong", {
+                    children: j.intl.format(j.t["4e0rM4"], {
+                        emphasizeHook: e => (0, r.jsx)("strong", {
                             children: e
                         })
                     })
                 })]
             }),
             position: "top",
-            shouldShow: !0 !== i,
+            shouldShow: !0 !== l,
             ariaHidden: !0,
             children: t
         })
     },
-    E = e => {
+    N = e => {
         let {
             children: t,
-            widget: i,
-            targetRef: a,
-            additionalMenuItems: r
+            widget: l,
+            targetRef: i,
+            additionalMenuItems: a
         } = e, {
             trackUserProfileEditAction: s
-        } = (0, p.NJ)(), o = e => {
+        } = (0, x.NJ)(), o = e => {
             if (e.shiftKey) {
-                (0, g.qA)(i), s({
+                (0, g.qA)(l), s({
                     action: "WIDGET_REMOVED",
-                    ...i.getProfileEditAnalyticsOptions()
-                }), (0, x.XA)(f.jM.WIDGET_REMOVED);
+                    ...l.getProfileEditAnalyticsOptions()
+                }), (0, f.XA)(v.jM.WIDGET_REMOVED);
                 return
-            }(0, c.mMO)(async () => {
+            }(0, d.mMO)(async () => {
                 let {
                     default: e
                 } = await Promise.all([n.e("95320"), n.e("10117"), n.e("62371"), n.e("23016"), n.e("35526")]).then(n.bind(n, 380035));
-                return t => (0, l.jsx)(e, {
+                return t => (0, r.jsx)(e, {
                     ...t,
                     userId: h.default.getId(),
-                    widget: i,
+                    widget: l,
                     trackUserProfileEditAction: s
                 })
             }, {
                 stackingBehavior: "stack"
             })
         };
-        return (0, l.jsx)(c.YNO, {
-            targetElementRef: a,
+        return (0, r.jsx)(d.YNO, {
+            targetElementRef: i,
             align: "top",
             position: "right",
             disablePointerEvents: !1,
@@ -126,25 +126,25 @@ let T = e => {
                 let {
                     closePopout: t
                 } = e;
-                return (0, l.jsx)(c.W1t, {
+                return (0, r.jsx)(d.W1t, {
                     "data-menu-migrated": !0,
                     navId: "user-profile-widget-context-menu",
                     onClose: () => {
-                        (0, d.Z_)(), t()
+                        (0, c.Z_)(), t()
                     },
                     onSelect: () => {},
-                    "aria-label": y.intl.string(y.t.xpSHSk),
-                    className: v.MK,
-                    children: (0, l.jsxs)(c.rXV, {
-                        children: [r, (0, l.jsx)(c.Drp, {
+                    "aria-label": j.intl.string(j.t.xpSHSk),
+                    className: p.MK,
+                    children: (0, r.jsxs)(d.rXV, {
+                        children: [a, (0, r.jsx)(d.Drp, {
                             id: "remove-widget",
-                            label: y.intl.string(y.t.Mm07Yc),
+                            label: j.intl.string(j.t.Mm07Yc),
                             action: o,
                             color: "danger",
-                            icon: c.ucK,
+                            icon: d.ucK,
                             leadingAccessory: {
                                 type: "icon",
-                                icon: c.ucK
+                                icon: d.ucK
                             }
                         })]
                     })

@@ -20,7 +20,7 @@ function h(e) {
     } = e, A = (0, l.bG)([o.A], () => null != h && null != m && (0, a.KX)(h, m, [o.A])), g = (0, l.bG)([r.Ay], () => null == h || null == r.Ay.getMember(t.guild_id, h.id));
     if (!A) return null;
     let p = g ? u.intl.string(d.default.Ux67nW) : u.intl.string(d.default["snp/lJ"]),
-        _ = `kick-user-${h?.id}`;
+        f = `kick-user-${h?.id}`;
     return (0, i.jsx)(c.A, {
         text: p,
         icon: s.Nxw,
@@ -38,5 +38,5 @@ function h(e) {
             })
         },
         disabled: g
-    }, _)
+    }, f)
 }

@@ -1,6 +1,6 @@
 /** chunk id: 945830 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => _
 }), n(134528), n(947204);
 var i = n(627968),
     l = n(64700),
@@ -16,19 +16,19 @@ var i = n(627968),
     A = n(966833),
     g = n(222823),
     p = n(985018);
-let _ = [];
+let f = [];
 
-function f(e) {
+function _(e) {
     let {
         channel: t,
-        onJump: f
+        onJump: _
     } = e, {
         items: E,
         state: x
     } = (0, s.cf)([A.A], () => {
         let e = A.A.getPins(t.id);
         return {
-            items: e?.items ?? _,
+            items: e?.items ?? f,
             state: e?.state ?? A.e.LOADING
         }
     }), C = l.useMemo(() => E.map(e => e.message), [E]), S = (0, s.bG)([g.Ay], () => g.Ay.hasUnreadPins(t.id));
@@ -73,7 +73,7 @@ function f(e) {
             onCloseMessage: function(e, n) {
                 null != e && (n.shiftKey ? o.A.unpinMessage(t, e.id) : u.A.confirmUnpin(t, e))
             },
-            onJump: f,
+            onJump: _,
             loadMore: T,
             getProTip: function() {
                 return t.isPrivate() ? p.intl.string(p.t["3dLGAs"]) : p.intl.string(p.t.KTbRcg)

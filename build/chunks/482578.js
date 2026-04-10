@@ -2,10 +2,10 @@
 n.d(t, {
     A: () => o
 });
-var l = n(627968),
-    a = n(64700),
-    r = n(397927),
-    i = n(235986),
+var a = n(627968),
+    l = n(64700),
+    i = n(397927),
+    r = n(235986),
     s = n(985018),
     d = n(641131);
 let o = e => {
@@ -17,34 +17,34 @@ let o = e => {
             canNavigateBack: _,
             onBackClicked: m,
             isModeratorReport: p,
-            className: g
+            className: h
         } = e,
-        h = a.useRef(null),
-        x = null != n && "cancel" !== n.type,
+        x = l.useRef(null),
+        g = null != n && "cancel" !== n.type,
         A = _ && n?.type !== "done",
-        v = x || A;
-    if (a.useEffect(() => {
-            (n?.type === "submit" || n?.type === "done") && h.current?.focus()
+        v = g || A;
+    if (l.useEffect(() => {
+            (n?.type === "submit" || n?.type === "done") && x.current?.focus()
         }, [n?.type]), !v) return null;
     let b = s.intl.string(s.t.i4jeWR);
-    return n?.type === "submit" ? (t = "critical-primary", b = p ? s.intl.string(d.default.ZUyreS) : s.intl.string(s.t["G+vU89"])) : n?.type === "next" ? b = s.intl.string(s.t.PDTjLN) : n?.type === "cancel" && (b = s.intl.string(s.t["ETE/oC"]), t = "secondary"), (0, l.jsx)(r.jlY, {
+    return n?.type === "submit" ? (t = "critical-primary", b = p ? s.intl.string(d.default.ZUyreS) : s.intl.string(s.t["G+vU89"])) : n?.type === "next" ? b = s.intl.string(s.t.PDTjLN) : n?.type === "cancel" && (b = s.intl.string(s.t["ETE/oC"]), t = "secondary"), (0, a.jsx)(i.jlY, {
         "data-migration-pending": !0,
-        direction: i.A.Direction.HORIZONTAL,
-        className: g,
-        children: (0, l.jsxs)(r.ButtonGroup, {
+        direction: r.A.Direction.HORIZONTAL,
+        className: h,
+        children: (0, a.jsxs)(i.ButtonGroup, {
             fullWidth: !0,
-            children: [A && (0, l.jsx)(r.Button, {
+            children: [A && (0, a.jsx)(i.Button, {
                 onClick: m,
                 variant: "secondary",
                 disabled: o,
                 text: s.intl.string(s.t["13/7kX"])
-            }), x && (0, l.jsx)(r.Button, {
+            }), g && (0, a.jsx)(i.Button, {
                 onClick: () => {
                     null != n && u(n)
                 },
                 variant: t,
                 disabled: o || c,
-                buttonRef: h,
+                buttonRef: x,
                 text: b
             })]
         })

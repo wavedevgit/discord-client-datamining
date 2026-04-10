@@ -1,6 +1,6 @@
 /** chunk id: 582240 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => S
 });
 var i = n(627968),
     a = n(64700),
@@ -18,33 +18,33 @@ var i = n(627968),
     g = n(129537),
     f = n(127242),
     A = n(968898),
-    x = n(481484),
-    I = n(545807),
+    I = n(481484),
+    x = n(545807),
     E = n(652215),
     b = n(620819);
 let v = [],
-    C = a.memo(function(e) {
+    S = a.memo(function(e) {
         let {
             widget: t,
             renderWidget: n,
             renderTitle: r,
-            renderButtons: C,
-            resizeValidation: S,
+            renderButtons: S,
+            resizeValidation: C,
             containerRenderGate: y,
             className: T,
             dragContainerClassName: N
-        } = e, w = (0, s.bG)([u.A], () => u.A.getWidgetConfig(t.type), [t.type]), L = (0, A.RE)(t.id, A.X1), O = (0, x.A)(), [j, P] = a.useState(() => y?.stores ?? v);
+        } = e, w = (0, s.bG)([u.A], () => u.A.getWidgetConfig(t.type), [t.type]), L = (0, A.RE)(t.id, A.X1), O = (0, I.A)(), [j, P] = a.useState(() => y?.stores ?? v);
         (0, c.Ay)(() => {
             P(y?.stores ?? v)
         });
-        let D = (0, s.bG)(j, () => y?.shouldRender({
+        let R = (0, s.bG)(j, () => y?.shouldRender({
                 widget: t,
                 locked: O
             }) ?? !0, [y, O, t]),
-            R = (0, I.A)(),
-            k = (0, s.bG)([_.A], () => _.A.windowSize((0, m.Q2)(R))),
-            M = a.useCallback((e, t, n, i, a) => {
-                let r = _.A.windowSize((0, m.Q2)((0, I.b)())),
+            D = (0, x.A)(),
+            M = (0, s.bG)([_.A], () => _.A.windowSize((0, m.Q2)(D))),
+            k = a.useCallback((e, t, n, i, a) => {
+                let r = _.A.windowSize((0, m.Q2)((0, x.b)())),
                     l = (0, h.NO)(n, r),
                     s = (0, h.R9)(i, r);
                 (0, o.uD)(t), (0, o.Ju)({
@@ -77,8 +77,8 @@ let v = [],
                 anchor: W,
                 minSize: H
             } = t,
-            B = a.useMemo(() => (0, h.fd)(F, k), [F, k]),
-            Y = (0, h.Nv)(W, k),
+            B = a.useMemo(() => (0, h.fd)(F, M), [F, M]),
+            Y = (0, h.Nv)(W, M),
             {
                 resizeX: X,
                 resizeY: Z,
@@ -90,27 +90,27 @@ let v = [],
             $ = a.useMemo(() => ({
                 minX: 0,
                 minY: 0,
-                maxX: k.width,
-                maxY: k.height
-            }), [k]),
+                maxX: M.width,
+                maxY: M.height
+            }), [M]),
             ee = a.useCallback(e => n({
                 ...e,
                 widget: t,
                 dragging: null != e.dragOperation,
                 className: T
             }), [t, n, T]),
-            et = a.useCallback(e => null != r || null != C ? (0, i.jsxs)("div", {
+            et = a.useCallback(e => null != r || null != S ? (0, i.jsxs)("div", {
                 className: l()(b.vJ, L && b.vw),
-                children: [r?.(t), C?.(t, e)]
-            }) : null, [t, r, L, C]),
+                children: [r?.(t), S?.(t, e)]
+            }) : null, [t, r, L, S]),
             en = (0, s.bG)([f.A], () => f.A.hasRenderDebugMode(p.x7.WidgetAreas)),
             ei = a.useMemo(() => {
-                if (null != S) return e => S({
+                if (null != C) return e => C({
                     ...e,
                     widget: t
                 })
-            }, [S, t]);
-        return D ? (0, i.jsx)(g.A, {
+            }, [C, t]);
+        return R ? (0, i.jsx)(g.A, {
             className: l()({
                 [b.Yz]: en,
                 [b.xu]: en && !U,
@@ -134,9 +134,9 @@ let v = [],
             dragAnywhere: K ?? !1,
             constrainAutoSizeToExplicitResizeEvents: J ?? !1,
             active: Q,
-            onUpdate: M,
+            onUpdate: k,
             onClick: G,
-            targetWindow: R,
+            targetWindow: D,
             forceShowExtras: L,
             renderExtras: et,
             resizeValidation: ei,

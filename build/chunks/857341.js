@@ -24,11 +24,11 @@ function p(e) {
         fingerprintBase64: n,
         chunkSize: 5,
         desiredLength: 30
-    }), [_, f] = l.useState(!1), E = l.useMemo(() => p?.join(" "), [p]), x = l.useCallback(() => {
+    }), [f, _] = l.useState(!1), E = l.useMemo(() => p?.join(" "), [p]), x = l.useCallback(() => {
         null != E && (0, o.C)(E, () => {
-            f(!0), (0, c.k0)({
+            _(!0), (0, c.k0)({
                 channelId: t
-            }), setTimeout(() => f(!1), 2e3)
+            }), setTimeout(() => _(!1), 2e3)
         })
     }, [t, E]);
     return (0, i.jsxs)("div", {
@@ -54,7 +54,7 @@ function p(e) {
             className: A.n2,
             onClick: x,
             children: [(0, i.jsx)("div", {
-                className: _ ? A.Dx : A.t6,
+                className: f ? A.Dx : A.t6,
                 children: (0, i.jsx)(a.Button, {
                     icon: a.TdU,
                     text: m.intl.string(m.t.OpuAlK),
@@ -63,7 +63,7 @@ function p(e) {
                     fullWidth: !0
                 })
             }), (0, i.jsx)("div", {
-                className: _ ? A.t6 : A.Dx,
+                className: f ? A.t6 : A.Dx,
                 children: (0, i.jsx)(a.Button, {
                     icon: a.yr3,
                     text: m.intl.string(m.t.t5VZ88),

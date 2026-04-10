@@ -1,0 +1,52 @@
+.headerIcons_f5cf99 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between
+}
+
+.headerIconsIncentivizedAccountLinking_f5cf99 {
+    gap: 6px
+}
+
+.ellipseGroup_f5cf99 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 8px
+}
+
+.ellipseGroupIncentivizedAccountLinking_f5cf99 {
+    align-items: center;
+    gap: 1px;
+    margin: 0
+}
+
+.ellipse_f5cf99 {
+    background-color: var(--channel-icon);
+    border-radius: 50%;
+    height: 4px;
+    margin: 0 2px;
+    opacity: .3;
+    width: 4px
+}
+
+.ellipseIncentivizedAccountLinking_f5cf99 {
+    margin: 0
+}
+
+.avatar_f5cf99 {
+    border: 1px solid var(--border-muted);
+    height: 48px;
+    width: 48px
+}
+
+.orbAssetContainer_f5cf99 {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.orbAssetBackdropVideo_f5cf99 {
+    height: 38px
+}
+
+/*# sourceMappingURL=c22a23235b5537bc.css.map*/

@@ -1,10 +1,10 @@
 /** chunk id: 814698 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => f
 });
 var a = n(627968),
-    l = n(64700),
-    i = n(397927),
+    i = n(64700),
+    l = n(397927),
     r = n(155718),
     s = n(975807),
     o = n(602859),
@@ -13,23 +13,23 @@ var a = n(627968),
     u = n(652215),
     m = n(985018);
 
-function x(e) {
+function f(e) {
     let {
         application: t,
         trackAction: n
-    } = e, x = (0, o.s)("GameProfile"), h = l.useCallback(async () => {
+    } = e, f = (0, o.s)("GameProfile"), x = i.useCallback(async () => {
         n(d.Ws.ClaimGame);
         let e = await (0, c.a)(u.dSh.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY);
         (0, s.A)(e)
-    }, [n]), f = l.useCallback(e => (0, a.jsx)(i.MzZ, {
-        onClick: h,
+    }, [n]), h = i.useCallback(e => (0, a.jsx)(l.MzZ, {
+        onClick: x,
         children: e
-    }), [h]);
-    return !x || t.linkedGames?.some(e => e.type === r.Mh.OFFICIAL) ? null : (0, a.jsx)(i.Text, {
+    }), [x]);
+    return !f || t.linkedGames?.some(e => e.type === r.Mh.OFFICIAL) ? null : (0, a.jsx)(l.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: m.intl.format(m.t.KAjfKl, {
-            claimLink: f
+            claimLink: h
         })
     })
 }

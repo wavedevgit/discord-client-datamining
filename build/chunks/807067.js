@@ -15,8 +15,8 @@ var i = n(627968),
     A = n(735991),
     _ = n(786115),
     m = n(975412),
-    g = n(392054),
-    p = n(354138),
+    p = n(392054),
+    g = n(354138),
     f = n(111042),
     x = n(767599),
     E = n(267102),
@@ -26,8 +26,8 @@ var i = n(627968),
     T = n(795816),
     S = n(887700),
     b = n(855446),
-    v = n(652215),
-    y = n(985018),
+    y = n(652215),
+    v = n(985018),
     j = n(690076);
 let R = r.K.APP_LAUNCHER_IN_VOICE_BANNER,
     O = `vc-activities-${(0,s.A)()}`;
@@ -39,10 +39,10 @@ function L(e) {
             onClick: h
         } = e,
         {
-            fetchState: g,
+            fetchState: p,
             voiceBannerCollection: E
         } = (t = (0, d.bG)([C.default], () => C.default.onlyShowPreviewAppCollections) ? a.W.PREVIEW : a.W.ACTIVE, l.useEffect(() => {
-            (0, p.An)({
+            (0, g.An)({
                 surface: R,
                 activeState: t
             })
@@ -56,7 +56,7 @@ function L(e) {
                 activeState: t
             }))[0]
         }),
-        I = g === f.e.FETCHING,
+        I = p === f.e.FETCHING,
         N = l.useMemo(() => {
             let e = E?.application_directory_collection_items[0];
             return null == e ? null : e.type === o.L.APPLICATION_BANNER ? e : null
@@ -111,15 +111,15 @@ let M = l.forwardRef(function(e, t) {
         onClick: A,
         className: _
     } = e, {
-        id: p,
+        id: g,
         guild_id: f
     } = s;
     l.useEffect(() => {
-        N.default.track(v.HAw.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
-            channel_id: p,
+        N.default.track(y.HAw.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
+            channel_id: g,
             guild_id: f
         })
-    }, [p, f]), l.useEffect(() => {
+    }, [g, f]), l.useEffect(() => {
         a || r()
     }, [r, a]);
     let x = (0, E.Us)(),
@@ -127,7 +127,7 @@ let M = l.forwardRef(function(e, t) {
             analyticsLocations: C,
             newestAnalyticsLocation: R
         } = (0, h.Ay)(u.A.ACTIVITIES_MINI_SHELF),
-        M = x === v.BRT.POPOUT,
+        M = x === y.BRT.POPOUT,
         D = (n = s.getGuildId(), (0, S.A)({
             guildId: n
         }).slice(0, 5));
@@ -148,7 +148,7 @@ let M = l.forwardRef(function(e, t) {
             }), d(), A()
         }, [s, R, A, d, M]),
         G = l.useCallback(e => {
-            o(), N.default.track(v.HAw.ACTIVITIES_MINI_SHELF_HOVERED, {
+            o(), N.default.track(y.HAw.ACTIVITIES_MINI_SHELF_HOVERED, {
                 channel_id: s.id,
                 guild_id: s.getGuildId()
             })
@@ -165,7 +165,7 @@ let M = l.forwardRef(function(e, t) {
                     children: (0, i.jsx)(c.AC4, {
                         children: (0, i.jsx)(c.H, {
                             id: O,
-                            children: y.intl.string(y.t["2lnYtB"])
+                            children: v.intl.string(v.t["2lnYtB"])
                         })
                     })
                 }), (0, i.jsxs)("div", {
@@ -182,14 +182,14 @@ let M = l.forwardRef(function(e, t) {
                                 color: "var(--interactive-text-active)"
                             }), (0, i.jsx)(c.Text, {
                                 variant: "eyebrow",
-                                children: y.intl.string(y.t.f3Cz25)
+                                children: v.intl.string(v.t.f3Cz25)
                             })]
                         }), (0, i.jsxs)(c.DUT, {
                             className: j.hc,
                             onClick: U,
                             children: [(0, i.jsx)(c.Text, {
                                 variant: "eyebrow",
-                                children: y.intl.string(y.t["K8+z4S"])
+                                children: v.intl.string(v.t["K8+z4S"])
                             }), (0, i.jsx)(c._BQ, {
                                 size: "custom",
                                 width: 12,
@@ -217,7 +217,7 @@ let M = l.forwardRef(function(e, t) {
                             },
                             aspectRatio: b.C.AspectRatio.THIRTEEN_BY_ELEVEN,
                             animatedDivClass: j.KU,
-                            commandOrigin: g.iw.MINI_SHELF
+                            commandOrigin: p.iw.MINI_SHELF
                         }, e.application.id))
                     })]
                 })]

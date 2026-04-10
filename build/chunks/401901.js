@@ -23,14 +23,14 @@ let A = s.memo(function(e) {
         fit: A = "contain",
         mirror: g = !1,
         paused: p = !1,
-        streamPreviewURL: _,
-        videoSpinnerContext: f,
+        streamPreviewURL: f,
+        videoSpinnerContext: _,
         userId: E,
         streamKey: x
     } = e, [C, S] = s.useState(!0);
     (0, d.A)({
         location: "VideoStream",
-        videoSpinnerContext: f,
+        videoSpinnerContext: _,
         userId: E,
         streamId: t,
         loading: C,
@@ -42,7 +42,7 @@ let A = s.memo(function(e) {
         streamId: t,
         userId: E,
         loading: C,
-        videoSpinnerContext: f,
+        videoSpinnerContext: _,
         streamKey: x,
         paused: p
     }), T = s.useCallback(() => {
@@ -63,8 +63,8 @@ let A = s.memo(function(e) {
                 [h.loading]: C
             }),
             children: C && (0, l.jsxs)(s.Fragment, {
-                children: [null != _ ? (0, l.jsx)("img", {
-                    src: _,
+                children: [null != f ? (0, l.jsx)("img", {
+                    src: f,
                     alt: "",
                     className: h.previewImage
                 }) : (0, l.jsx)("div", {

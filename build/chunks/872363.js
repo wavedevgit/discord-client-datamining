@@ -16,8 +16,8 @@ var i = n(627968),
     A = n(212245),
     g = n(688810),
     p = n(402216),
-    _ = n(287809),
-    f = n(954571),
+    f = n(287809),
+    _ = n(954571),
     E = n(927578),
     x = n(650338),
     C = n(821715),
@@ -43,10 +43,10 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
     M = {
         borderRadius: `${v}px ${v}px ${v}px ${v}px`
     },
-    D = {
+    O = {
         borderRadius: `0px ${v}px ${v}px 0px`
     },
-    O = {
+    D = {
         mass: 1,
         tension: 500,
         friction: 18,
@@ -65,9 +65,9 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                 quality: M
             } = e,
             {
-                analyticsLocations: D
+                analyticsLocations: O
             } = (0, g.Ay)(),
-            O = null != (0, C.A)(r);
+            D = null != (0, C.A)(r);
         try {
             t = (0, x.HB)(M)
         } catch (e) {
@@ -82,7 +82,7 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
             {
                 location: P
             } = (0, A.p)(),
-            k = (0, c.bG)([_.default], () => _.default.getCurrentUser()),
+            k = (0, c.bG)([f.default], () => f.default.getCurrentUser()),
             w = o && !E.Ay.isPremium(k, I.PremiumTypes.TIER_1) && !E.Ay.canStreamQuality(E.Ay.StreamQuality.MID, k),
             U = l.useCallback(() => {
                 w && L && (0, m.mMO)(async () => {
@@ -96,19 +96,19 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                 })
             }, [w, L, P]);
         if (l.useEffect(() => {
-                !y && L && (f.default.track(S.HAw.PREMIUM_UPSELL_VIEWED, {
+                !y && L && (_.default.track(S.HAw.PREMIUM_UPSELL_VIEWED, {
                     type: I.e.STREAM_QUALITY_INDICATOR,
                     has_premium_stream_fps: t,
                     has_premium_stream_resolution: s,
-                    location_stack: D
+                    location_stack: O
                 }), b(!0))
-            }, [t, s, L, y, b, D]), null == M) return null;
+            }, [t, s, L, y, b, O]), null == M) return null;
         let G = (0, i.jsx)(u.m, {
-            text: O ? T.intl.string(T.t.q8TiVt) : L ? T.intl.string(T.t.IHgpEn) : T.intl.string(T.t.vLb0VW),
+            text: D ? T.intl.string(T.t.q8TiVt) : L ? T.intl.string(T.t.IHgpEn) : T.intl.string(T.t.vLb0VW),
             position: "bottom",
             children: (0, i.jsxs)(m.DUT, {
                 onClick: U,
-                className: a()(N.t5, v, p.u1[h], O ? N.Y5 : N.Lc, {
+                className: a()(N.t5, v, p.u1[h], D ? N.Y5 : N.Lc, {
                     [N.vk]: w && L
                 }),
                 children: [L ? (0, i.jsx)(m.tvc, {
@@ -142,16 +142,16 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
             premiumIndicator: d
         } = e, [u, h] = l.useState(!1), A = (0, x.N5)(t), {
             reducedMotion: g
-        } = l.useContext(m.CZY), _ = n && null != A, f = (0, m.pnh)(_, {
+        } = l.useContext(m.CZY), f = n && null != A, _ = (0, m.pnh)(f, {
             enter: {
                 from: g.enabled ? j : y,
                 to: g.enabled ? R : b
             },
             leave: g.enabled ? j : y,
-            config: O
+            config: D
         }, "animate-always"), E = (0, m.zhh)({
-            to: _ ? D : M,
-            config: O
+            to: f ? O : M,
+            config: D
         }, "animate-always");
         return (e => {
             let {
@@ -161,7 +161,7 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
             return (0, i.jsxs)("div", {
                 className: a()(N.dr, n),
                 ...l,
-                children: [f((e, n) => n ? (0, i.jsx)(r.animated.div, {
+                children: [_((e, n) => n ? (0, i.jsx)(r.animated.div, {
                     style: e,
                     children: (0, i.jsx)(L, {
                         className: N.LZ,
@@ -180,7 +180,7 @@ let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                     children: (0, i.jsx)(p.Ay, {
                         look: p.gv.RED,
                         size: o,
-                        shape: _ ? m.EGs.ROUND_RIGHT : m.EGs.ROUND
+                        shape: f ? m.EGs.ROUND_RIGHT : m.EGs.ROUND
                     })
                 })]
             })

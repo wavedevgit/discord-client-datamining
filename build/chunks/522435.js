@@ -3,7 +3,7 @@ n.d(t, {
     K7: () => u,
     LG: () => A,
     Sq: () => c,
-    W6: () => g,
+    W6: () => p,
     lr: () => _
 });
 var i = n(488428),
@@ -45,6 +45,6 @@ function _(e) {
 }
 let m = [d.xB.SET_VOICE_CHANNEL_STATUS, d.xB.CONNECT, d.xB.VIEW_CHANNEL];
 
-function g(e) {
+function p(e) {
     return (0, l.bG)([a.A], () => m.every(t => a.A.can(t, e)), [e])
 }

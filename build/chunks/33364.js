@@ -22,11 +22,11 @@ function h(e) {
         isLoaded: g
     } = (0, d.R)(t, n.id, h), {
         channelId: p
-    } = (0, c.N)(), _ = t.id === p, f = !s.Fr && !_, E = l.useCallback(() => {
+    } = (0, c.N)(), f = t.id === p, _ = !s.Fr && !f, E = l.useCallback(() => {
         null != m && (0, o.b8)(m, () => {
-            r.A.closePrivateChannel(t.id, f)
+            r.A.closePrivateChannel(t.id, _)
         })
-    }, [t.id, m, f]);
+    }, [t.id, m, _]);
     return !A || null == m && g ? null : (0, i.jsx)(a.Button, {
         size: "sm",
         variant: "critical-primary",

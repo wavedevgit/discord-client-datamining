@@ -2,10 +2,10 @@
 n.d(t, {
     A: () => _
 });
-var l = n(627968),
-    a = n(64700),
-    r = n(314116),
-    i = n(58149),
+var a = n(627968),
+    l = n(64700),
+    i = n(314116),
+    r = n(58149),
     s = n(997509),
     d = n(632738),
     o = n(71393),
@@ -15,17 +15,17 @@ let _ = e => {
     let {
         guildId: t,
         reportId: n
-    } = e, [_, m] = a.useState(!1), p = o.A.getGuild(t), g = null != p;
-    a.useEffect(() => {
-        m(!g)
-    }, [g]);
-    let h = a.useCallback(() => {
-        m(!0), i.Ay.trackWithMetadata(c.HAw.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
+    } = e, [_, m] = l.useState(!1), p = o.A.getGuild(t), h = null != p;
+    l.useEffect(() => {
+        m(!h)
+    }, [h]);
+    let x = l.useCallback(() => {
+        m(!0), r.Ay.trackWithMetadata(c.HAw.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
             guild_id: t,
             report_id: n
         }), s.A.leaveGuild(t)
     }, [t, n]);
-    return null == p ? null : (0, l.jsx)(d.PQ, {
+    return null == p ? null : (0, a.jsx)(d.PQ, {
         title: u.intl.string(u.t.cU96ip),
         description: u.intl.formatToPlainString(u.t["26mR6/"], {
             guildName: p?.name
@@ -34,7 +34,7 @@ let _ = e => {
         buttonDisabled: _,
         buttonVariant: "critical-primary",
         onButtonPress: () => {
-            (0, r.A)({
+            (0, i.A)({
                 title: u.intl.formatToPlainString(u.t["1GX6P/"], {
                     name: p.name
                 }),
@@ -42,7 +42,7 @@ let _ = e => {
                     name: p.name
                 }),
                 confirmText: u.intl.string(u.t.J2TBi3),
-                onConfirm: h
+                onConfirm: x
             })
         }
     })
