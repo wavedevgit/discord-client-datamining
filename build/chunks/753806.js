@@ -7,8 +7,8 @@ var n = r(627968),
     l = r(192308),
     a = r(988665),
     i = r(138298),
-    u = r(734057),
-    o = r(203982),
+    o = r(734057),
+    u = r(203982),
     c = r(504531),
     h = r(614690),
     d = r(256796),
@@ -17,8 +17,8 @@ var n = r(627968),
     E = r(956467),
     f = r(408730),
     p = r(771650),
-    A = r(616252),
-    g = r(65600),
+    g = r(616252),
+    A = r(65600),
     y = r(145331),
     R = r(768570),
     T = r(921242),
@@ -26,7 +26,7 @@ var n = r(627968),
 
 function m(e) {
     let t = (0, _.bS)(e);
-    A.A.clearSearchEditorState(e), d.A.clearSearchMessages(t), S.A.cleanUp(t), E.A.cleanUp(t)
+    g.A.clearSearchEditorState(e), d.A.clearSearchMessages(t), S.A.cleanUp(t), E.A.cleanUp(t)
 }
 
 function L(e) {
@@ -36,7 +36,7 @@ function L(e) {
         searchQuery: n,
         offset: s
     } = e, l = (0, _.bS)(t);
-    d.A.clearSearchMessages(l), A.A.setShowNoResultsAlt(t), A.A.setShowBlockedResults(t, !1), A.A.updateSearchResultsQuery(t, r, n, s), A.A.addSearchHistoryItem(t, r)
+    d.A.clearSearchMessages(l), g.A.setShowNoResultsAlt(t), g.A.setShowBlockedResults(t, !1), g.A.updateSearchResultsQuery(t, r, n, s), g.A.addSearchHistoryItem(t, r)
 }
 
 function x(e) {
@@ -45,7 +45,7 @@ function x(e) {
         searchQueryString: r,
         searchEverywhere: n,
         offset: s
-    } = e, l = (0, _.bS)(t), a = g.A.getSearchMode(l) ?? T.z, i = {
+    } = e, l = (0, _.bS)(t), a = A.A.getSearchMode(l) ?? T.z, i = {
         offset: s
     };
     t.type === I.I4_.DMS ? d.A.fetchTabMessages({
@@ -92,21 +92,21 @@ function x(e) {
 
 function C(e) {
     let t = (0, _.bS)(e),
-        r = g.A.getEditorState(t);
+        r = A.A.getEditorState(t);
     return null != r ? c.pe(r) : null
 }
 
 function N(e, t) {
     let r = (0, _.bS)(e),
-        n = g.A.getEditorState(r) ?? c.e_(h.ys(p.Ay)),
+        n = A.A.getEditorState(r) ?? c.e_(h.ys(p.Ay)),
         s = c.t7(t, n);
     s = c.a4(s, 512);
     let l = (0, _._o)(t).filter(e => e.type !== a.Ay.NON_TOKEN_TYPE);
-    s = c.uD(l, s, p.Ay), s = c.UO(0 + t.length, s), A.A.updateSearchEditorState(e, s)
+    s = c.uD(l, s, p.Ay), s = c.UO(0 + t.length, s), g.A.updateSearchEditorState(e, s)
 }
 
 function b(e) {
-    o._.dispatch(I.jej.SET_SEARCH_QUERY, e)
+    u._.dispatch(I.jej.SET_SEARCH_QUERY, e)
 }
 let F = {
     cleanUpSearchState: m,
@@ -125,10 +125,10 @@ let F = {
     getSearchInputText: C,
     ensureSearchInputDecorators: function(e) {
         let t, r = (0, _.bS)(e),
-            n = g.A.getEditorState(r),
+            n = A.A.getEditorState(r),
             l = n?.getCurrentContent(),
             a = n?.getSelection();
-        null != l && null != a ? (t = c.Rg(h.ys(p.Ay), l), t = s.EditorState.forceSelection(t, a)) : t = c.e_(h.ys(p.Ay)), A.A.updateSearchEditorState(e, t)
+        null != l && null != a ? (t = c.Rg(h.ys(p.Ay), l), t = s.EditorState.forceSelection(t, a)) : t = c.e_(h.ys(p.Ay)), g.A.updateSearchEditorState(e, t)
     },
     setSearchQuery: function(e) {
         let {
@@ -140,13 +140,13 @@ let F = {
         } = e, {
             mode: a,
             cursorScope: i
-        } = s, u = 0;
-        null != a.token ? u = a.token.start : i?.currentToken != null && (u = i.currentToken.end);
-        let o = null != a.token ? a.token.end : u;
+        } = s, o = 0;
+        null != a.token ? o = a.token.start : i?.currentToken != null && (o = i.currentToken.end);
+        let u = null != a.token ? a.token.end : o;
         b({
             query: t,
-            anchor: u,
-            focus: o,
+            anchor: o,
+            focus: u,
             performSearch: r,
             replace: n,
             searchQuerySource: l
@@ -155,15 +155,15 @@ let F = {
     dispatchSetSearchQuery: b,
     transitionStateToSearchContext: function(e, t, r) {
         let n = (0, _.bS)(e),
-            s = g.A.getEditorState(n);
+            s = A.A.getEditorState(n);
         if (null == s) return;
         let l = c.pe(s),
             a = t.type === I.I4_.CHANNEL ? (0, _.EH)(l) : l;
         N(t, a = a.trim());
-        let u = g.A.getSearchMode(n);
-        A.A.updateSearchMode(t, u ?? T.z), f.A.transferSession(e, t);
-        let o = (0, _._o)(a),
-            h = (0, _.Zf)(o);
+        let o = A.A.getSearchMode(n);
+        g.A.updateSearchMode(t, o ?? T.z), f.A.transferSession(e, t);
+        let u = (0, _._o)(a),
+            h = (0, _.Zf)(u);
         f.A.refreshQueryId(t), (0, y.fd)({
             searchContext: t,
             query: h,
@@ -175,11 +175,11 @@ let F = {
             offset: 0
         });
         let S = (0, _.bS)(t);
-        i.A.setSelectedSearchContext(S), A.A.clearSearchEditorState(e), d.A.clearSearchMessages(n), r?.()
+        i.A.setSelectedSearchContext(S), g.A.clearSearchEditorState(e), d.A.clearSearchMessages(n), r?.()
     },
     cleanUpPrivateChannelSearchState: function() {
-        g.A.getSearchStateIds().forEach(e => {
-            let t = u.A.getChannel(e);
+        A.A.getSearchStateIds().forEach(e => {
+            let t = o.A.getChannel(e);
             null != t && t.isPrivate() && m({
                 type: I.I4_.CHANNEL,
                 channelId: t.id

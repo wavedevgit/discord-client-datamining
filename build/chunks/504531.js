@@ -25,8 +25,8 @@ var n = r(271830),
     l = r.n(s),
     a = r(197576),
     i = r.n(a),
-    u = r(768260),
-    o = r.n(u),
+    o = r(768260),
+    u = r.n(o),
     c = r(589834),
     h = r.n(c),
     d = r(288598),
@@ -35,8 +35,8 @@ var n = r(271830),
     E = r.n(S),
     f = r(692807),
     p = r.n(f),
-    A = r(907014),
-    g = r.n(A),
+    g = r(907014),
+    A = r.n(g),
     y = r(70986),
     R = r.n(y),
     T = r(1214),
@@ -47,30 +47,30 @@ function m(e, t, r, s) {
         a = null;
     null != e && (a = (l = l.createEntity(...e)).getLastCreatedEntityKey());
     let i = l.getFirstBlock(),
-        u = new n.SelectionState({
+        o = new n.SelectionState({
             anchorKey: i.getKey(),
             anchorOffset: t,
             focusKey: i.getKey(),
             focusOffset: r
         });
-    return l = n.Modifier.applyEntity(l, u, a), n.EditorState.set(s, {
+    return l = n.Modifier.applyEntity(l, o, a), n.EditorState.set(s, {
         currentContent: l
     })
 }
 
 function L(e, t, r, s) {
-    let l, a, u = t.getCurrentContent(),
-        o = u.getFirstBlock(),
-        c = o.getText();
+    let l, a, o = t.getCurrentContent(),
+        u = o.getFirstBlock(),
+        c = u.getText();
     "number" == typeof r ? (r > c.length && (r = c.length), null != s && s > c.length && (s = c.length), l = new n.SelectionState({
-        anchorKey: o.getKey(),
+        anchorKey: u.getKey(),
         anchorOffset: r,
-        focusKey: o.getKey(),
+        focusKey: u.getKey(),
         focusOffset: null != s && 0 !== s ? s : r
     })) : l = t.getSelection();
     let h = t.getCurrentInlineStyle(),
-        d = i()(u, l);
-    return l.isCollapsed() ? (u = n.Modifier.insertText(u, l, e, h, d), a = "insert-characters") : (u = n.Modifier.replaceText(u, l, e, h, d), a = "replace-characters"), n.EditorState.push(t, u, a)
+        d = i()(o, l);
+    return l.isCollapsed() ? (o = n.Modifier.insertText(o, l, e, h, d), a = "insert-characters") : (o = n.Modifier.replaceText(o, l, e, h, d), a = "replace-characters"), n.EditorState.push(t, o, a)
 }
 
 function x(e, t) {
@@ -80,11 +80,11 @@ function x(e, t) {
         case "delete-word":
             return _()(t);
         case "backspace":
-            return g()(t);
+            return A()(t);
         case "backspace-word":
             return h()(t);
         case "backspace-to-start-of-line":
-            return o()(t);
+            return u()(t);
         default:
             return t
     }

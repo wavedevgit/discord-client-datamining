@@ -7,8 +7,8 @@ var n = r(627968),
     l = r(311907),
     a = r(397927),
     i = r(309010),
-    u = r(351906),
-    o = r(203982),
+    o = r(351906),
+    u = r(203982),
     c = r(822382),
     h = r(5990),
     d = r(771650),
@@ -17,8 +17,8 @@ var n = r(627968),
     E = r(806595),
     f = r(949759),
     p = r(842716),
-    A = r(65600),
-    g = r(145331),
+    g = r(65600),
+    A = r(145331),
     y = r(835121),
     R = r(443486),
     T = r(768570),
@@ -43,8 +43,8 @@ function C(e) {
         setSearchQuery: N,
         searchContext: r,
         mode: F
-    }), W = (0, l.yK)([u.A, i.A, p.A], () => {
-        if (u.A.hidePersonalInformation) return x;
+    }), W = (0, l.yK)([o.A, i.A, p.A], () => {
+        if (o.A.hidePersonalInformation) return x;
         let e = (0, c.Jl)(r, i.A);
         if (null == e) return x;
         let t = p.A.getHistory(e);
@@ -62,22 +62,22 @@ function C(e) {
             searchAutocompleteSelectAction: s,
             selectedAutocomplete: l,
             selectedAutocompleteGroup: a
-        } = e, u = F.type, o = F.filter, {
+        } = e, o = F.type, u = F.filter, {
             token: h,
             group: S
-        } = l, E = null != S && (0, d.If)(S) ? S : null, f = h ?? o ?? E, p = l.channel, y = f === I.LWr.FILTER_IN && null != p && p.id === i.A.getChannelId(), R = (0, c.bS)(r);
-        (0, g.kc)({
+        } = l, E = null != S && (0, d.If)(S) ? S : null, f = h ?? u ?? E, p = l.channel, y = f === I.LWr.FILTER_IN && null != p && p.id === i.A.getChannelId(), R = (0, c.bS)(r);
+        (0, A.kc)({
             searchContext: r,
-            searchQuery: A.A.getSearchResultsQuery(R),
+            searchQuery: g.A.getSearchResultsQuery(R),
             searchQueryString: _.A.getSearchInputText(r),
             searchTokenType: f,
             searchAutocompleteGroup: a,
             searchAutocompleteMode: F,
             searchAutocompleteResultIndex: n,
             searchAutocompleteTotalResults: t,
-            isSearchFilterPrefix: u === I.o$q.EMPTY,
-            isSearchFilterAnswer: u === I.o$q.FILTER,
-            isSearchFilterComplete: u === I.o$q.FILTER_ALL,
+            isSearchFilterPrefix: o === I.o$q.EMPTY,
+            isSearchFilterAnswer: o === I.o$q.FILTER,
+            isSearchFilterComplete: o === I.o$q.FILTER_ALL,
             isInFilterForSelectedChannel: y,
             searchAutocompleteSelectAction: s
         })
@@ -129,7 +129,7 @@ function C(e) {
                                     selectedChannel: t,
                                     searchAutocompleteSelectAction: n
                                 } = e;
-                                (0, g.rE)({
+                                (0, A.rE)({
                                     searchContext: r,
                                     searchAutocompleteSelectAction: n
                                 });
@@ -177,7 +177,7 @@ function C(e) {
                             }),
                             resultText: e,
                             onSelect: () => {
-                                (0, g.oR)({
+                                (0, A.oR)({
                                     searchContext: r,
                                     searchHistoryIndex: t,
                                     searchHistoryTotalResults: W.length
@@ -228,7 +228,7 @@ function C(e) {
                         let {
                             searchEverywhere: t
                         } = e;
-                        o._.dispatch(I.jej.PERFORM_SEARCH, {
+                        u._.dispatch(I.jej.PERFORM_SEARCH, {
                             searchEverywhere: t,
                             searchQuerySource: T.Q_.SEARCH_POPOUT
                         })
@@ -255,17 +255,17 @@ function C(e) {
                         result: t,
                         group: l
                     }), {
-                        label: u,
-                        ariaLabel: o
+                        label: o,
+                        ariaLabel: u
                     } = (0, S.c$)(t), c = l === I.LWr.FILTER_FROM || l === I.LWr.FILTER_MENTIONS ? (0, n.jsx)(S.bj, {
                         searchTokenType: l,
                         answer: t.user?.username
                     }) : void 0;
                     return (0, f.wE)(E.$.ROW, {
                         icon: i,
-                        label: u,
+                        label: o,
                         sublabel: c,
-                        ariaLabel: o,
+                        ariaLabel: u,
                         resultText: a,
                         onSelect: e => {
                             let {
@@ -332,12 +332,12 @@ function C(e) {
                         group: s
                     }), {
                         label: i,
-                        ariaLabel: u
+                        ariaLabel: o
                     } = (0, S.JK)(r);
                     return (0, f.wE)(E.$.ROW, {
                         icon: a,
                         label: i,
-                        ariaLabel: u,
+                        ariaLabel: o,
                         resultText: l,
                         onSelect: t => {
                             let {

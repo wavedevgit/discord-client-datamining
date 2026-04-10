@@ -1,6 +1,6 @@
 /** chunk id: 315059 params = (module,exports,require) **/
 r.d(t, {
-    A: () => o
+    A: () => u
 });
 var n = r(627968);
 r(64700);
@@ -8,12 +8,12 @@ var s = r(397927),
     l = r(713654),
     a = r(598104),
     i = r(287809),
-    u = r(817207);
-let o = function(e) {
+    o = r(817207);
+let u = function(e) {
     let {
         channel: t,
         avatarSize: r,
-        iconSize: o,
+        iconSize: u,
         iconClassName: c
     } = e;
     if (t.isDM()) {
@@ -23,14 +23,14 @@ let o = function(e) {
         let a = l.getAvatarURL(null, s.vCh[r].size);
         return (0, n.jsx)(s.euF, {
             "aria-hidden": !0,
-            className: u.B7,
+            className: o.B7,
             size: r,
             src: a
         })
     }
     if (t.isGroupDM()) return (0, n.jsx)(a.A, {
         "aria-hidden": !0,
-        className: u.w$,
+        className: o.w$,
         channel: t,
         size: r
     });
@@ -38,6 +38,6 @@ let o = function(e) {
     return null == h ? null : (0, n.jsx)(h, {
         className: c,
         color: "currentColor",
-        size: o
+        size: u
     })
 }

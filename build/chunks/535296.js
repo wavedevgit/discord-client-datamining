@@ -1,8 +1,8 @@
 /** chunk id: 535296 params = (module,exports,require) **/
 n.d(t, {
-    Vp: () => V,
-    Z: () => K,
-    fd: () => W
+    Vp: () => W,
+    Z: () => z,
+    fd: () => K
 });
 var i = n(627968),
     l = n(64700),
@@ -41,6 +41,23 @@ let P = `vc-gifting-${(0,a.A)()}`,
 
 function k(e) {
     let {
+        "aria-labelledby": t,
+        children: n
+    } = e;
+    return (0, i.jsx)("div", {
+        onClick: e => e.stopPropagation(),
+        children: (0, i.jsx)(g.A, {
+            children: (0, i.jsx)(r.lGe, {
+                "aria-labelledby": t,
+                modal: !1,
+                children: n
+            })
+        })
+    })
+}
+
+function w(e) {
+    let {
         application: t
     } = e;
     if (null == t) return null;
@@ -61,7 +78,7 @@ function k(e) {
     })
 }
 
-function w(e) {
+function G(e) {
     let {
         user: t,
         isGift: n
@@ -84,7 +101,7 @@ function w(e) {
     })
 }
 
-function G(e) {
+function F(e) {
     let {
         application: t,
         onClose: n
@@ -116,7 +133,7 @@ function G(e) {
     })
 }
 
-function F(e) {
+function H(e) {
     let {
         userId: t,
         applicationId: n,
@@ -130,7 +147,7 @@ function F(e) {
         userIds: r,
         applicationIds: o,
         numItems: a
-    }), h = "loading" === c || 0 === d.length, m = (0, s.A)(h ? U : d, H), A = l.useMemo(() => {
+    }), h = "loading" === c || 0 === d.length, m = (0, s.A)(h ? U : d, B), A = l.useMemo(() => {
         let {
             hasWishlist: e,
             hasPopular: t
@@ -151,15 +168,15 @@ function F(e) {
     }
 }
 
-function H(e, t) {
+function B(e, t) {
     return e.id === t.id
 }
 
-function B(e, t) {
+function V(e, t) {
     return e instanceof h.R && e.applicationId === t
 }
 
-function V(e) {
+function W(e) {
     let {
         userId: t,
         applicationId: n,
@@ -171,75 +188,72 @@ function V(e) {
     }), (0, u.P)(t);
     let {
         analyticsLocations: h
-    } = (0, d.Ay)(c.A.SLAYER_STOREFRONT_VC_GIFTING_PANEL), f = (0, o.bG)([x.default], () => x.default.getUser(t)), S = (0, o.bG)([m.A], () => m.A.getWidgets(t)?.find(e => B(e, n))), I = t === (0, o.bG)([C.default], () => C.default.getId()), T = (0, N.A)(n), {
-        status: v,
-        recommendations: y,
-        skusToUserAndReason: j,
-        hasBothSources: M
-    } = F({
+    } = (0, d.Ay)(c.A.SLAYER_STOREFRONT_VC_GIFTING_PANEL), g = (0, o.bG)([x.default], () => x.default.getUser(t)), f = (0, o.bG)([m.A], () => m.A.getWidgets(t)?.find(e => V(e, n))), S = t === (0, o.bG)([C.default], () => C.default.getId()), I = (0, N.A)(n), {
+        status: T,
+        recommendations: v,
+        skusToUserAndReason: y,
+        hasBothSources: j
+    } = H({
         userId: t,
         applicationId: n,
         channel: a,
         numItems: 8
-    }), L = "loading" === v || 0 === y.length || null == f, O = l.useMemo(() => null == f || 0 === y.length ? [] : y.map(e => {
-        let n = (j[e.id] ?? {})[t] === E.j.WISHLIST;
+    }), M = "loading" === T || 0 === v.length || null == g, L = l.useMemo(() => null == g || 0 === v.length ? [] : v.map(e => {
+        let n = (y[e.id] ?? {})[t] === E.j.WISHLIST;
         return (0, i.jsx)(R.A, {
             sku: e,
-            targetUser: f,
-            isTargetingCurrentUser: I,
+            targetUser: g,
+            isTargetingCurrentUser: S,
             source: n ? _.uS.WISHLIST : _.uS.POPULAR,
             guildId: a.guild_id,
             channelId: a.id,
-            showIcons: M,
+            showIcons: j,
             analyticsLocations: h,
             onCardClick: s,
             onButtonClick: s
         }, e.id)
-    }), [f, y, a.guild_id, a.id, j, t, I, M, h, s]);
-    return (0, i.jsx)(g.A, {
-        children: (0, i.jsx)(r.lGe, {
-            "aria-labelledby": P,
-            modal: !1,
-            children: (0, i.jsxs)("div", {
-                className: D.kL,
-                children: [(0, i.jsxs)(r.BJc, {
-                    className: D.wx,
-                    direction: "vertical",
-                    gap: 12,
-                    children: [null != f && null != S ? (0, i.jsx)("div", {
-                        className: D.p,
-                        children: (0, i.jsx)(A.A, {
-                            user: f,
-                            widget: S,
-                            guildId: a.guild_id,
-                            channelId: a.id,
-                            disableInteraction: !0,
-                            embedded: !0
-                        })
-                    }) : (0, i.jsx)(k, {
-                        application: T
-                    }), (0, i.jsx)(w, {
-                        user: f,
-                        isGift: !I
-                    })]
-                }), L ? (0, i.jsx)(r.y$y, {
-                    className: D.Zp
-                }) : (0, i.jsx)("div", {
-                    className: D.HV,
-                    children: O
+    }), [g, v, a.guild_id, a.id, y, t, S, j, h, s]);
+    return (0, i.jsx)(k, {
+        "aria-labelledby": P,
+        children: (0, i.jsxs)("div", {
+            className: D.kL,
+            children: [(0, i.jsxs)(r.BJc, {
+                className: D.wx,
+                direction: "vertical",
+                gap: 12,
+                children: [null != g && null != f ? (0, i.jsx)("div", {
+                    className: D.p,
+                    children: (0, i.jsx)(A.A, {
+                        user: g,
+                        widget: f,
+                        guildId: a.guild_id,
+                        channelId: a.id,
+                        disableInteraction: !0,
+                        embedded: !0
+                    })
+                }) : (0, i.jsx)(w, {
+                    application: I
                 }), (0, i.jsx)(G, {
-                    application: T,
-                    onClose: s
-                }), (0, i.jsx)(b.A, {
-                    location: "social_layer_vc_gifting_panel",
-                    className: D.Ij
+                    user: g,
+                    isGift: !S
                 })]
-            })
+            }), M ? (0, i.jsx)(r.y$y, {
+                className: D.Zp
+            }) : (0, i.jsx)("div", {
+                className: D.HV,
+                children: L
+            }), (0, i.jsx)(F, {
+                application: I,
+                onClose: s
+            }), (0, i.jsx)(b.A, {
+                location: "social_layer_vc_gifting_panel",
+                className: D.Ij
+            })]
         })
     })
 }
 
-function W(e) {
+function K(e) {
     let {
         userId: t,
         applicationId: n,
@@ -247,32 +261,29 @@ function W(e) {
     } = e;
     (0, u.P)(t);
     let a = (0, o.bG)([x.default], () => x.default.getUser(t)),
-        s = (0, o.bG)([m.A], () => m.A.getWidgets(t)?.find(e => B(e, n))),
+        s = (0, o.bG)([m.A], () => m.A.getWidgets(t)?.find(e => V(e, n))),
         c = null == a || null == s;
-    return (0, i.jsx)(g.A, {
-        children: (0, i.jsx)(r.lGe, {
-            modal: !1,
-            children: (0, i.jsx)("div", {
-                className: D.kL,
-                children: c ? (0, i.jsx)(r.y$y, {
-                    className: D.ps
-                }) : (0, i.jsx)("div", {
-                    className: D.$4,
-                    children: (0, i.jsx)(A.A, {
-                        user: a,
-                        widget: s,
-                        guildId: l.guild_id,
-                        channelId: l.id,
-                        disableInteraction: !0,
-                        embedded: !0
-                    })
+    return (0, i.jsx)(k, {
+        children: (0, i.jsx)("div", {
+            className: D.kL,
+            children: c ? (0, i.jsx)(r.y$y, {
+                className: D.ps
+            }) : (0, i.jsx)("div", {
+                className: D.$4,
+                children: (0, i.jsx)(A.A, {
+                    user: a,
+                    widget: s,
+                    guildId: l.guild_id,
+                    channelId: l.id,
+                    disableInteraction: !0,
+                    embedded: !0
                 })
             })
         })
     })
 }
 
-function K(e) {
+function z(e) {
     let {
         userId: t,
         applicationId: n,
@@ -285,31 +296,31 @@ function K(e) {
     let {
         analyticsLocations: u
     } = (0, d.Ay)(c.A.SLAYER_STOREFRONT_VC_GIFTING_PANEL), h = (0, o.bG)([x.default], () => x.default.getUser(t)), m = t === (0, o.bG)([C.default], () => C.default.getId()), A = (0, N.A)(n), {
-        status: f,
-        recommendations: S,
-        skusToUserAndReason: I,
-        hasBothSources: T
-    } = F({
+        status: g,
+        recommendations: f,
+        skusToUserAndReason: S,
+        hasBothSources: I
+    } = H({
         userId: t,
         applicationId: n,
         channel: a,
         numItems: 7
-    }), v = "loading" === f || 0 === S.length || null == h, [y, M] = l.useMemo(() => {
-        if (null == h || 0 === S.length) return [null, []];
-        let e = (I[S[0].id] ?? {})[t] === E.j.WISHLIST;
+    }), T = "loading" === g || 0 === f.length || null == h, [v, y] = l.useMemo(() => {
+        if (null == h || 0 === f.length) return [null, []];
+        let e = (S[f[0].id] ?? {})[t] === E.j.WISHLIST;
         return [(0, i.jsx)(j.A, {
-            sku: S[0],
+            sku: f[0],
             targetUser: h,
             isTargetingCurrentUser: m,
             source: e ? _.uS.WISHLIST : _.uS.POPULAR,
             guildId: a.guild_id,
             channelId: a.id,
-            showIcons: T,
+            showIcons: I,
             analyticsLocations: u,
             onCardClick: s,
             onButtonClick: s
-        }), S.slice(1).map(e => {
-            let n = (I[e.id] ?? {})[t] === E.j.WISHLIST;
+        }), f.slice(1).map(e => {
+            let n = (S[e.id] ?? {})[t] === E.j.WISHLIST;
             return (0, i.jsx)(R.A, {
                 sku: e,
                 targetUser: h,
@@ -317,46 +328,43 @@ function K(e) {
                 source: n ? _.uS.WISHLIST : _.uS.POPULAR,
                 guildId: a.guild_id,
                 channelId: a.id,
-                showIcons: T,
+                showIcons: I,
                 analyticsLocations: u,
                 onCardClick: s,
                 onButtonClick: s
             }, e.id)
         })]
-    }, [h, S, I, t, m, a.guild_id, a.id, T, u, s]);
-    return (0, i.jsx)(g.A, {
-        children: (0, i.jsx)(r.lGe, {
-            "aria-labelledby": P,
-            modal: !1,
-            children: (0, i.jsxs)("div", {
-                className: D.kL,
-                children: [(0, i.jsxs)(r.BJc, {
-                    className: D.wx,
-                    direction: "vertical",
-                    gap: 12,
-                    children: [(0, i.jsx)(k, {
-                        application: A
-                    }), (0, i.jsx)(w, {
-                        user: h,
-                        isGift: !m
-                    })]
-                }), v ? (0, i.jsx)(r.y$y, {
-                    className: D.kc
-                }) : (0, i.jsxs)(r.BJc, {
-                    direction: "vertical",
-                    gap: 12,
-                    children: [y, (0, i.jsx)("div", {
-                        className: D.aS,
-                        children: M
-                    })]
+    }, [h, f, S, t, m, a.guild_id, a.id, I, u, s]);
+    return (0, i.jsx)(k, {
+        "aria-labelledby": P,
+        children: (0, i.jsxs)("div", {
+            className: D.kL,
+            children: [(0, i.jsxs)(r.BJc, {
+                className: D.wx,
+                direction: "vertical",
+                gap: 12,
+                children: [(0, i.jsx)(w, {
+                    application: A
                 }), (0, i.jsx)(G, {
-                    application: A,
-                    onClose: s
-                }), (0, i.jsx)(b.A, {
-                    location: "social_layer_vc_gifting_panel",
-                    className: D.Ij
+                    user: h,
+                    isGift: !m
                 })]
-            })
+            }), T ? (0, i.jsx)(r.y$y, {
+                className: D.kc
+            }) : (0, i.jsxs)(r.BJc, {
+                direction: "vertical",
+                gap: 12,
+                children: [v, (0, i.jsx)("div", {
+                    className: D.aS,
+                    children: y
+                })]
+            }), (0, i.jsx)(F, {
+                application: A,
+                onClose: s
+            }), (0, i.jsx)(b.A, {
+                location: "social_layer_vc_gifting_panel",
+                className: D.Ij
+            })]
         })
     })
 }

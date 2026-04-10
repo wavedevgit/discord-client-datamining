@@ -179,21 +179,20 @@ let R = "dismissedCommunityFeaturesUpsell",
                 isGuildAdmin: f.A.can(b.xBc.ADMINISTRATOR, e)
             })),
             r = (0, l.bG)([_.Ay], () => null != e ? _.Ay.getChannels(e.id) : null),
-            o = s.useMemo(I.fr, []),
-            u = !0 !== a.w.get(R);
+            a = s.useMemo(I.fr, []);
         if (null == e) return null;
-        let g = [];
+        let o = [];
         null != r && r[_.I6].forEach(e => {
             let {
                 channel: t
             } = e;
-            t.type === b.rbe.GUILD_TEXT && g.push({
+            t.type === b.rbe.GUILD_TEXT && o.push({
                 id: t.id,
                 value: t.id,
                 label: (0, x.m1)(t, N.default, j.A, !0)
             })
         });
-        let h = () => {
+        let u = () => {
                 if (null == e) return;
                 let t = new Set(e.features);
                 t.delete(b.GuildFeatures.COMMUNITY), t.delete(b.GuildFeatures.DISCOVERABLE), t.delete(b.GuildFeatures.PREVIEW_ENABLED), E.A.updateGuild({
@@ -202,7 +201,7 @@ let R = "dismissedCommunityFeaturesUpsell",
                     publicUpdatesChannelId: null
                 })
             },
-            A = e => {
+            g = e => {
                 E.A.updateGuild({
                     description: e
                 })
@@ -212,17 +211,17 @@ let R = "dismissedCommunityFeaturesUpsell",
             children: [(0, i.jsx)(m.Heading, {
                 variant: "heading-lg/semibold",
                 children: v.intl.string(v.t.nRtNqn)
-            }), u ? (0, i.jsx)(G, {
+            }), (0, i.jsx)(G, {
                 discoveryEnabled: e.features.has(b.GuildFeatures.DISCOVERABLE),
                 onboardingEnabled: e.features.has(b.GuildFeatures.GUILD_ONBOARDING),
                 guild: e
-            }) : null, (0, i.jsx)(m.ZiE, {
+            }), (0, i.jsx)(m.ZiE, {
                 selectionMode: "single",
                 layout: "horizontal-responsive",
                 label: v.intl.string(v.t["otcXP/"]),
                 description: v.intl.string(v.t.BtwmYB),
                 value: e.rulesChannelId ?? void 0,
-                options: g,
+                options: o,
                 onSelectionChange: e => {
                     E.A.updateGuild({
                         rulesChannelId: e
@@ -235,7 +234,7 @@ let R = "dismissedCommunityFeaturesUpsell",
                 label: v.intl.string(v.t.vAyDGU),
                 description: v.intl.string(v.t.ZFeonu),
                 value: e.publicUpdatesChannelId ?? void 0,
-                options: g,
+                options: o,
                 onSelectionChange: e => {
                     E.A.updateGuild({
                         publicUpdatesChannelId: e
@@ -248,7 +247,7 @@ let R = "dismissedCommunityFeaturesUpsell",
                 label: v.intl.string(v.t.sMkYE8),
                 description: v.intl.string(v.t.htioQo),
                 value: e.safetyAlertsChannelId ?? void 0,
-                options: g,
+                options: o,
                 onSelectionChange: e => {
                     E.A.updateGuild({
                         safetyAlertsChannelId: e
@@ -261,7 +260,7 @@ let R = "dismissedCommunityFeaturesUpsell",
                 label: v.intl.string(v.t.pO60fy),
                 description: v.intl.string(v.t.aIR73T),
                 value: e.preferredLocale,
-                options: o,
+                options: a,
                 onSelectionChange: e => {
                     E.A.updateGuild({
                         preferredLocale: e
@@ -274,7 +273,7 @@ let R = "dismissedCommunityFeaturesUpsell",
                     description: v.intl.string(v.t["/B6PRw"]),
                     value: e.description ?? "",
                     placeholder: v.intl.string(v.t.Nvfowl),
-                    onChange: A,
+                    onChange: g,
                     maxLength: 300,
                     disabled: !t
                 })
@@ -295,20 +294,20 @@ let R = "dismissedCommunityFeaturesUpsell",
                                 subtitle: v.intl.string(v.t["P+Sh8V"]),
                                 confirmText: v.intl.string(v.t["cY+Oob"]),
                                 cancelText: v.intl.string(v.t.oEAioF),
-                                onConfirm: h
+                                onConfirm: u
                             }) : e.features.has(b.GuildFeatures.DISCOVERABLE) ? (0, d.A)({
                                 title: v.intl.string(v.t.iBnVHc),
                                 subtitle: v.intl.string(v.t["eMx/uZ"]),
                                 confirmText: v.intl.string(v.t["cY+Oob"]),
                                 cancelText: v.intl.string(v.t.oEAioF),
-                                onConfirm: h
+                                onConfirm: u
                             }) : e.features.has(b.GuildFeatures.PARTNERED) ? (0, d.A)({
                                 title: v.intl.string(v.t.iBnVHc),
                                 subtitle: v.intl.string(v.t.l1wLeX),
                                 confirmText: v.intl.string(v.t["cY+Oob"]),
                                 cancelText: v.intl.string(v.t.oEAioF),
-                                onConfirm: h
-                            }) : h()
+                                onConfirm: u
+                            }) : u()
                         },
                         disabled: !n
                     })

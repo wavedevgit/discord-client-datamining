@@ -7,8 +7,8 @@ var n = r(33851),
     l = r(311907),
     a = r(5180),
     i = r(253932),
-    u = r(734057),
-    o = r(71393),
+    o = r(734057),
+    u = r(71393),
     c = r(967198),
     h = r(652215);
 
@@ -17,9 +17,9 @@ function d(e) {
         guildId: t,
         channelId: r
     } = e, n = i.Hu.useSetting();
-    return (0, l.bG)([o.A, u.A, c.A], () => {
-        let e = o.A.getGuild(t),
-            s = u.A.getChannel(r),
+    return (0, l.bG)([u.A, o.A, c.A], () => {
+        let e = u.A.getGuild(t),
+            s = o.A.getChannel(r),
             l = c.A.getGuildId();
         if ((0, a.ai)(l)) {
             if (null != s) {

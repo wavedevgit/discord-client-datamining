@@ -8,8 +8,8 @@ var n = r(627968),
     l = r(503698),
     a = r.n(l),
     i = r(271830),
-    u = r(985623),
-    o = r.n(u),
+    o = r(985623),
+    u = r.n(o),
     c = r(311907),
     h = r(397927),
     d = r(988665),
@@ -18,8 +18,8 @@ var n = r(627968),
     E = r(915089),
     f = r(138298),
     p = r(761640),
-    A = r(734057),
-    g = r(71393),
+    g = r(734057),
+    A = r(71393),
     y = r(309010),
     R = r(203982),
     T = r(504531),
@@ -42,7 +42,7 @@ var n = r(627968),
     D = r(429566);
 let P = 512,
     U = (0, E.Ld)(),
-    $ = o()(F.A.fetchMessages, 500);
+    $ = u()(F.A.fetchMessages, 500);
 class q extends s.PureComponent {
     state = {
         focused: !1,
@@ -102,10 +102,10 @@ class q extends s.PureComponent {
             searchQuerySource: a
         } = e, {
             editorState: i
-        } = this.props, u = T.pe(i);
-        " " !== t.charAt(t.length - 1) && (t += " "), null != r && 0 !== r && " " !== u.charAt(r - 1) && " " !== t.charAt(0) && (t = " " + t), l ? (i = T.t7(t, i), r = 0) : i = T.le(t, i, r, n), i = T.a4(i, P), i = this.tokenize(i);
-        let o = Number(r) + t.length;
-        i = T.UO(o, i), this.setEditorState(i), s && this.search({
+        } = this.props, o = T.pe(i);
+        " " !== t.charAt(t.length - 1) && (t += " "), null != r && 0 !== r && " " !== o.charAt(r - 1) && " " !== t.charAt(0) && (t = " " + t), l ? (i = T.t7(t, i), r = 0) : i = T.le(t, i, r, n), i = T.a4(i, P), i = this.tokenize(i);
+        let u = Number(r) + t.length;
+        i = T.UO(u, i), this.setEditorState(i), s && this.search({
             queryString: T.pe(i),
             searchQuerySource: a
         })
@@ -176,7 +176,7 @@ class q extends s.PureComponent {
         } = e;
         if (!t) return void this.focusEditor();
         let r = y.A.getChannelId(),
-            n = A.A.getChannel(r);
+            n = g.A.getChannel(r);
         if (null == n) return void this.focusEditor();
         let {
             searchContext: s
@@ -322,15 +322,15 @@ class q extends s.PureComponent {
             searchContext: a,
             keyboardModeEnabled: i
         } = this.props;
-        if (e.stopPropagation(), (r || s) && "a" === t.toLowerCase()) {
-            e.preventDefault();
+        if ((r || s) && "a" === t.toLowerCase()) {
+            e.stopPropagation(), e.preventDefault();
             let t = T.y8(l);
             return this.setEditorState(t), this.setState({
                 focused: !0
             }), !0
         }
         if ("Escape" === t) {
-            if (e.preventDefault(), T.Im(l)) this.blurEditor();
+            if (e.stopPropagation(), e.preventDefault(), T.Im(l)) this.blurEditor();
             else {
                 let e = T.Xq(l);
                 b.A.updateSearchEditorState(a, e), this.setState({
@@ -340,31 +340,33 @@ class q extends s.PureComponent {
             return !0
         }
         if ("ArrowUp" === t) {
-            e.preventDefault();
+            e.stopPropagation(), e.preventDefault();
             let t = this.getPopoutRef();
             return null != t && t.focusPreviousOption(), !0
         }
         if ("ArrowDown" === t) {
-            e.preventDefault();
+            e.stopPropagation(), e.preventDefault();
             let t = this.getPopoutRef();
             return null != t && t.focusNextOption(), !0
         }
         if ("Tab" === t) {
             if (i) return;
-            return (0, _.uS)(), !0
+            return e.stopPropagation(), (0, _.uS)(), !0
         }
-        if ("Home" === t || "ArrowLeft" === t && r) return e.preventDefault(), l = n ? T.mQ(l) : T.aB(l), this.setEditorState(l), !0;
-        if ("End" === t || "ArrowRight" === t && r) return e.preventDefault(), l = n ? T.Le(l) : T.Tj(l), this.setEditorState(l), !0;
+        if ("Home" === t || "ArrowLeft" === t && r) return e.stopPropagation(), e.preventDefault(), l = n ? T.mQ(l) : T.aB(l), this.setEditorState(l), !0;
+        if ("End" === t || "ArrowRight" === t && r) return e.stopPropagation(), e.preventDefault(), l = n ? T.Le(l) : T.Tj(l), this.setEditorState(l), !0;
         if ("Delete" === t && r) {
-            let e = T.Xq(l);
-            return this.setEditorState(e), !0
+            e.stopPropagation();
+            let t = T.Xq(l);
+            return this.setEditorState(t), !0
         }
         if ("Backspace" === t && r) {
-            e.preventDefault();
+            e.stopPropagation(), e.preventDefault();
             let t = l.getSelection().getEndOffset();
             return t > 0 && (l = T.le("", l, 0, t), l = this.tokenize(l), l = T.aB(l)), this.setEditorState(l), !0
         }
-        return T.K6(e)
+        let o = T.K6(e);
+        return null != o && e.stopPropagation(), o
     };
     renderInput(e) {
         let {
@@ -410,10 +412,10 @@ class q extends s.PureComponent {
             animation: h.YNO.Animation.NONE,
             shouldShow: l,
             autoInvert: !1,
-            children: (t, u) => {
+            children: (t, o) => {
                 let {
-                    isShown: o
-                } = u;
+                    isShown: u
+                } = o;
                 return (0, n.jsx)("div", {
                     className: s,
                     ref: this._containerRef,
@@ -430,7 +432,7 @@ class q extends s.PureComponent {
                             children: (0, n.jsxs)("div", {
                                 className: D.ON,
                                 ref: this._searchBarRef,
-                                children: [this.renderInput(o), (0, n.jsx)(h.BT5, {
+                                children: [this.renderInput(u), (0, n.jsx)(h.BT5, {
                                     onClear: this.handleClearSearch,
                                     hasContent: i || r,
                                     className: D.Kk,
@@ -449,15 +451,15 @@ function Q(e) {
     let {
         searchContext: t,
         className: r
-    } = e, l = (0, x.bS)(t), a = (0, c.bG)([S.A], () => S.A.keyboardModeEnabled), i = (0, c.bG)([O.A], () => O.A.getEditorState(l)), u = s.useMemo(() => null != i ? i : T.e_(I.ys(N.Ay)), [i]);
+    } = e, l = (0, x.bS)(t), a = (0, c.bG)([S.A], () => S.A.keyboardModeEnabled), i = (0, c.bG)([O.A], () => O.A.getEditorState(l)), o = s.useMemo(() => null != i ? i : T.e_(I.ys(N.Ay)), [i]);
     s.useEffect(() => {
         m.A.initializeAutocomplete(t)
     }, [t]);
-    let o = (0, c.bG)([O.A], () => O.A.getIsSearchTokensInitialized()),
-        d = s.useRef(o);
+    let u = (0, c.bG)([O.A], () => O.A.getIsSearchTokensInitialized()),
+        d = s.useRef(u);
     s.useEffect(() => {
-        o && d.current !== o && (d.current = o, F.A.ensureSearchInputDecorators(t))
-    }, [o, t]), s.useEffect(() => (f.A.setSelectedSearchContext(l), () => {
+        u && d.current !== u && (d.current = u, F.A.ensureSearchInputDecorators(t))
+    }, [u, t]), s.useEffect(() => (f.A.setSelectedSearchContext(l), () => {
         f.A.setSelectedSearchContext(null)
     }), [l]);
     let {
@@ -469,9 +471,9 @@ function Q(e) {
             hasResults: null != e && e > 0,
             isSearching: L.A.getIsFetching(l)
         }
-    }), R = (0, c.bG)([p.Ay, y.A, A.A], () => {
+    }), R = (0, c.bG)([p.Ay, y.A, g.A], () => {
         let e = y.A.getCurrentlySelectedChannelId(),
-            t = A.A.getChannel(e);
+            t = g.A.getChannel(e);
         return p.Ay.getSection(e, t?.isDM()) === w.YvQ.SEARCH
     });
     s.useEffect(() => {
@@ -500,15 +502,15 @@ function Q(e) {
                 offset: 0
             })
         }, [t]),
-        M = (0, c.bG)([g.A, A.A], () => {
+        M = (0, c.bG)([A.A, g.A], () => {
             let e = (0, x._B)(t) ? t.guildId : null;
             if (null != e) {
-                let t = g.A.getGuild(e);
+                let t = A.A.getGuild(e);
                 return null == t ? null : t.name
             }
             let r = (0, x._b)(t);
             if (null != r) {
-                let e = A.A.getChannel(r);
+                let e = g.A.getChannel(r);
                 return null == e ? null : (0, x.E3)(e)
             }
             return null
@@ -520,7 +522,7 @@ function Q(e) {
         className: r,
         searchContext: t,
         isSearching: _,
-        editorState: u,
+        editorState: o,
         hasResults: E,
         keyboardModeEnabled: a,
         onSearch: k,
