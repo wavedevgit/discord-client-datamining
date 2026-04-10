@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(793574),
     _ = n(688810),
     x = n(701273),
-    A = n(323082),
-    h = n(780964),
+    h = n(323082),
+    A = n(780964),
     p = n(858897),
     T = n(287809),
     f = n(954571),
@@ -45,10 +45,10 @@ let j = [C.Dmq.PAST_DUE, C.Dmq.ACCOUNT_HOLD, C.Dmq.BILLING_RETRY],
         let _ = async () => {
             d(!0), g(!1);
             try {
-                await (0, A.M2)(l.id, r, a), f.default.track(C.HAw.GUILD_BOOST_PAST_DUE_CANCELLATION_FLOW_COMPLETED, {
+                await (0, h.M2)(l.id, r, a), f.default.track(C.HAw.GUILD_BOOST_PAST_DUE_CANCELLATION_FLOW_COMPLETED, {
                     subscription_id: l.id,
                     location_stack: r
-                }), (0, A.hP)(), n()
+                }), (0, h.hP)(), n()
             } catch (e) {
                 g(!0), d(!1)
             }
@@ -83,7 +83,7 @@ function O(e) {
             renewalInvoicePreview: s,
             fractionalPremiumInfo: l,
             fromStandaloneBillingPage: a = !0,
-            analyticsLocation: A
+            analyticsLocation: h
         } = e,
         f = (0, u.bG)([T.default], () => {
             let e = T.default.getCurrentUser();
@@ -145,14 +145,14 @@ function O(e) {
                                 ...e,
                                 subscription: n,
                                 analyticsLocations: O,
-                                analyticsLocation: A
+                                analyticsLocation: h
                             }))
                         },
                         size: "sm",
                         text: N.intl.string(N.t["ETE/oC"])
                     })
                 }), (0, i.jsx)(b.A, {
-                    onClick: () => (0, p.openUserSettings)(h.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL),
+                    onClick: () => (0, p.openUserSettings)(A.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL),
                     text: N.intl.string(N.t["NQ5g/U"])
                 })]
             })]

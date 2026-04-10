@@ -1,6 +1,6 @@
 /** chunk id: 520174 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -15,7 +15,7 @@ var i = n(627968),
     g = n(45938),
     _ = n(652215),
     x = n(985018);
-class A extends s.Component {
+class h extends s.Component {
     state = {
         codeInput: "",
         submitting: !1,
@@ -128,13 +128,13 @@ class A extends s.Component {
     }
 }
 
-function h() {
+function A() {
     let {
         enabled: e
     } = (0, o.c)({
         location: "UserSettingsBilling"
     }), t = s.useContext(m.AnalyticsContext), n = (0, l.bG)([u.A], () => u.A.enabled);
-    return (0, i.jsx)(A, {
+    return (0, i.jsx)(h, {
         analyticsContext: t,
         obscureInput: n,
         acceptGiftCardRedemption: e

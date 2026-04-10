@@ -21,8 +21,8 @@ function g(e) {
     } = e, {
         analyticsLocations: _
     } = (0, r.Ay)(), x = null != n, {
-        userNameplate: A,
-        guildNameplate: h,
+        userNameplate: h,
+        guildNameplate: A,
         pendingNameplate: p,
         pendingErrors: T
     } = (0, d.rv)(t, n?.id), f = s.useCallback(() => {
@@ -47,7 +47,7 @@ function g(e) {
                 size: "sm",
                 text: u.intl.string(u.t.BwdeM1),
                 onClick: f
-            }), (void 0 === p ? (x ? h : A) != null : null != p) && (0, i.jsx)(l.Button, {
+            }), (void 0 === p ? (x ? A : h) != null : null != p) && (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 size: "sm",
                 text: x ? u.intl.string(u.t.CHf9iJ) : u.intl.string(u.t["9zwziY"]),

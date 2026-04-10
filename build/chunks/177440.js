@@ -16,8 +16,8 @@ var i = n(421380),
     g = n(762183),
     _ = n(253932),
     x = n(780964),
-    A = n(612025),
-    h = n(112469),
+    h = n(612025),
+    A = n(112469),
     p = n(137675),
     T = n(542457),
     f = n(355097),
@@ -35,32 +35,32 @@ function C() {
 }
 let v = (0, a.zD)(x.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
     useTitle: C,
-    useSubtitle: () => (0, h.q9)() ? E.intl.format(E.t.WpnWLc, {
+    useSubtitle: () => (0, A.q9)() ? E.intl.format(E.t.WpnWLc, {
         helpdeskArticle: c.A.getArticleURL(S.MVz.MESSAGE_REQUESTS)
     }) : E.intl.format(E.t.wkm9a3, {
         helpdeskArticle: c.A.getArticleURL(S.MVz.MESSAGE_REQUESTS)
     }),
     useValue: () => {
-        let e = (0, h.Tx)(),
+        let e = (0, A.Tx)(),
             t = (0, g.K)(),
             n = _.$s.useSetting().includes(e),
             i = _.YX.useSetting(),
             s = _.Zr.useSetting().includes(e);
-        return e === A.YG ? !t && !i : !n && !s
+        return e === h.YG ? !t && !i : !n && !s
     },
     useDisabled: () => {
-        let e = (0, h.Tx)(),
+        let e = (0, A.Tx)(),
             t = (0, r.uM)(),
             n = (0, g.K)(),
             i = _.$s.useSetting().includes(e);
-        return e === A.YG ? n || t : i
+        return e === h.YG ? n || t : i
     },
     setValue: e => {
-        let t = A.xk.getState().selectedGuildId;
+        let t = h.xk.getState().selectedGuildId;
         if (!e && (0, m.w)()) return void s.A.showAgeVerificationGetStartedModal({
             entryPoint: l.q1.MESSAGE_REQUESTS_SETTINGS
         });
-        if (t === A.YG) {
+        if (t === h.YG) {
             var n;
             n = !e, (0, p.O)({
                 header: E.intl.string(E.t.yAfu1p),

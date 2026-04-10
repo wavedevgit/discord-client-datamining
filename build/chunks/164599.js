@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(927578),
     _ = n(919395),
     x = n(128450),
-    A = n(212168),
-    h = n(652215),
+    h = n(212168),
+    A = n(652215),
     p = n(788868),
     T = n(985018),
     f = n(545286);
@@ -41,7 +41,7 @@ function S(e) {
         errors: O
     } = (0, _.nZ)(n?.id);
     s.useEffect(() => {
-        I && m.default.track(h.HAw.PREMIUM_UPSELL_VIEWED, {
+        I && m.default.track(A.HAw.PREMIUM_UPSELL_VIEWED, {
             type: p.e.PROFILE_EFFECTS_INLINE_SETTINGS,
             location_stack: N
         })
@@ -49,7 +49,7 @@ function S(e) {
     let R = C ? o.wLn : a.$n;
     return (0, i.jsx)(x.A, {
         forcedDivider: b,
-        borderType: A.i.PREMIUM,
+        borderType: h.i.PREMIUM,
         hasBackground: !0,
         title: E,
         showBorder: v,

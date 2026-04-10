@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(688810),
     _ = n(323082),
     x = n(178856),
-    A = n(915089),
-    h = n(465932),
+    h = n(915089),
+    A = n(465932),
     p = n(263063),
     T = n(543767),
     f = n(420139),
@@ -124,11 +124,11 @@ let k = e => {
             expanded: m,
             handleToggleExpanded: x,
             subscriptionInfo: T
-        } = (0, I.A)(t), [f, N] = s.useState(!1), V = (0, A.GV)(), {
+        } = (0, I.A)(t), [f, N] = s.useState(!1), V = (0, h.GV)(), {
             analyticsLocations: B
         } = (0, g.Ay)(), {
             shouldHideGuildPurchaseEntryPoints: F
-        } = (0, h.MH)(a?.id), H = t?.isPurchasedViaAppleGeneric;
+        } = (0, A.MH)(a?.id), H = t?.isPurchasedViaAppleGeneric;
         if (null == l || null == n || null == T) return null;
         let z = async () => {
             try {

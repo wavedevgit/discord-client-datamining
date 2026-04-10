@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(422936),
     _ = n(234419),
     x = n(511484),
-    A = n(795269),
-    h = n(121304),
+    h = n(795269),
+    A = n(121304),
     p = n(788868),
     T = n(985018),
     f = n(705284),
@@ -185,11 +185,11 @@ let b = e => {
             O = `${y}/${(0,u.FJ)(p.WT.MONTH)}`,
             R = (0, u.JM)(p.gD.PREMIUM_MONTH_TIER_0),
             L = (0, u.JM)(p.gD.PREMIUM_MONTH_TIER_2),
-            P = (0, h.g)();
+            P = (0, A.g)();
         if (l) t = null;
         else {
             let e = null != b ? T.intl.string(T.t.IBYG5U) : T.intl.string(T.t.TR2B4T);
-            t = (0, i.jsx)(A.R, {
+            t = (0, i.jsx)(h.R, {
                 className: r()(f.Io, f.SP),
                 text: e
             })

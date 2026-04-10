@@ -16,8 +16,8 @@ var s = n(963935),
     g = n(43146),
     _ = n(112715),
     x = n(39043),
-    A = n(743961),
-    h = n(896005),
+    h = n(743961),
+    A = n(896005),
     p = n(388773),
     T = n(691116),
     f = n(353667),
@@ -43,7 +43,7 @@ function b(e) {
                 node: t
             });
         case s.Z6.FIELD_SET:
-            return (0, i.jsx)(h.A, {
+            return (0, i.jsx)(A.A, {
                 node: t
             });
         case s.Z6.RELATED:
@@ -51,7 +51,7 @@ function b(e) {
                 node: t
             });
         case s.Z6.CATEGORY:
-            return (0, i.jsx)(A.A, {
+            return (0, i.jsx)(h.A, {
                 node: t
             });
         case s.Z6.ACCORDION:

@@ -21,8 +21,8 @@ function d(e) {
         useTitle: g,
         useSubtitle: _,
         useHintText: x,
-        useDisabled: A,
-        useExternalValue: h,
+        useDisabled: h,
+        useExternalValue: A,
         onValueRender: p,
         asValueChanges: T,
         markers: f,
@@ -31,7 +31,7 @@ function d(e) {
         fieldLayout: b,
         usePersistentBadge: C,
         getDismissibleBadges: v
-    } = t, [N] = s.useState(() => d()), I = h?.(), j = g(), y = _?.(), O = x?.(), R = A?.(), L = m?.(), P = C?.(), D = v?.(), G = (0, r.A)({
+    } = t, [N] = s.useState(() => d()), I = A?.(), j = g(), y = _?.(), O = x?.(), R = h?.(), L = m?.(), P = C?.(), D = v?.(), G = (0, r.A)({
         persistentBadge: P,
         dismissibleBadges: D
     }), M = (0, a.q)(t);

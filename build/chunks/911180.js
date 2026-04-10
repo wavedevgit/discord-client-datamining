@@ -1,6 +1,6 @@
 /** chunk id: 911180 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => h
 });
 var i = n(627968),
     s = n(64700),
@@ -16,13 +16,13 @@ var i = n(627968),
     _ = n(985018),
     x = n(149255);
 
-function A(e) {
+function h(e) {
     let {
         onChange: t,
         onClose: n,
         color: l,
-        suggestedColors: A,
-        disabled: h,
+        suggestedColors: h,
+        disabled: A,
         label: p,
         colorPickerMiddle: T,
         colorPickerFooter: f,
@@ -37,7 +37,7 @@ function A(e) {
             ...e,
             value: l,
             onChange: t,
-            suggestedColors: A,
+            suggestedColors: h,
             middle: T,
             footer: f,
             showEyeDropper: S
@@ -51,12 +51,12 @@ function A(e) {
             return (0, i.jsxs)("div", {
                 ref: E,
                 className: r()(x.oP, {
-                    [x.r9]: h
+                    [x.r9]: A
                 }),
                 children: [(0, i.jsx)(c.DUT, {
                     ...n,
-                    tabIndex: h ? -1 : 0,
-                    onClick: h ? g.tEg : t,
+                    tabIndex: A ? -1 : 0,
+                    onClick: A ? g.tEg : t,
                     style: {
                         backgroundColor: N,
                         borderColor: I

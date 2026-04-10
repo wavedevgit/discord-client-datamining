@@ -16,8 +16,8 @@ var s = n(503698),
     g = n(842130),
     _ = n(985018),
     x = n(397381),
-    A = n(452567),
-    h = n(272673),
+    h = n(452567),
+    A = n(272673),
     p = n(607913);
 let T = () => {
         let e = (0, c.Li)(),
@@ -43,7 +43,7 @@ let T = () => {
                 articleLink: "https://support.discord.com/hc/articles/14155043715735"
             }));
         return (0, i.jsxs)("div", {
-            className: l()(x.kL, A.a),
+            className: l()(x.kL, h.a),
             children: [(0, i.jsxs)("div", {
                 children: [(0, i.jsx)("div", {
                     children: (0, i.jsxs)("div", {
@@ -63,7 +63,7 @@ let T = () => {
             }), (0, i.jsx)("div", {
                 className: x.F0,
                 children: (0, i.jsx)("img", {
-                    src: e ? h : p,
+                    src: e ? A : p,
                     alt: _.intl.string(g.default.ffg6xd)
                 })
             })]

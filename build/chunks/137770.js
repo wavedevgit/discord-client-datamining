@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(166403),
     _ = n(473145),
     x = n(927578),
-    A = n(311092),
-    h = n(652215),
+    h = n(311092),
+    A = n(652215),
     p = n(788868),
     T = n(985018),
     f = n(143753),
@@ -28,7 +28,7 @@ function E(e) {
         fractionalPremiumState: l
     } = e, c = (0, a.bG)([g.A], () => g.A.getPremiumTypeSubscription()), {
         unappliedSlots: u,
-        numActiveSlots: A
+        numActiveSlots: h
     } = s.useMemo(() => {
         let e = [],
             n = 0;
@@ -37,7 +37,7 @@ function E(e) {
             unappliedSlots: e,
             numActiveSlots: n
         }
-    }, [t]), E = A > (null != c ? x.Ay.getNumIncludedPremiumGuildSubscriptionSlots(c.planId) : 0), C = c?.isPausedOrPausePending === !0 && l === p.xc.NONE;
+    }, [t]), E = h > (null != c ? x.Ay.getNumIncludedPremiumGuildSubscriptionSlots(c.planId) : 0), C = c?.isPausedOrPausePending === !0 && l === p.xc.NONE;
     return 0 === u.length ? null : (0, i.jsxs)("div", {
         className: f.Nr,
         children: [(0, i.jsxs)("div", {
@@ -96,10 +96,10 @@ function E(e) {
                                     t.onClose(), (0, m.g)({
                                         analyticsLocations: [],
                                         analyticsLocation: {
-                                            page: h.liQ.GUILD_BOOSTING_USER_SETTINGS,
-                                            section: h.JJy.SETTINGS_PREMIUM,
-                                            object: h.ZSU.BUTTON_CTA,
-                                            objectType: h.AnalyticsObjectTypes.BUY
+                                            page: A.liQ.GUILD_BOOSTING_USER_SETTINGS,
+                                            section: A.JJy.SETTINGS_PREMIUM,
+                                            object: A.ZSU.BUTTON_CTA,
+                                            objectType: A.AnalyticsObjectTypes.BUY
                                         },
                                         guild: e
                                     })
@@ -137,14 +137,14 @@ function b(e) {
         children: T.intl.format(T.t.Z4ULRD, {
             date: m.currentPeriodEnd
         })
-    }) : n.isOnCooldown() && null != x ? (0, i.jsx)(A.A, {
+    }) : n.isOnCooldown() && null != x ? (0, i.jsx)(h.A, {
         cooldown: x.getTime()
     }) : (0, i.jsx)(d.Text, {
         variant: "text-sm/medium",
         color: "text-subtle",
         children: T.intl.string(T.t["2mcafz"])
     });
-    let h = a || o;
+    let A = a || o;
     return (0, i.jsxs)("div", {
         className: r()(f.iq, {
             [f.Mt]: l
@@ -156,7 +156,7 @@ function b(e) {
                 className: f.bB,
                 src: S.A
             }), t]
-        }), h && (0, i.jsx)(d.YNO, {
+        }), A && (0, i.jsx)(d.YNO, {
             targetElementRef: _,
             renderPopout: e => {
                 let {

@@ -16,8 +16,8 @@ var i = n(627968),
     g = n(933297),
     _ = n(836602),
     x = n(591179),
-    A = n(854627),
-    h = n(657331),
+    h = n(854627),
+    A = n(657331),
     p = n(961350),
     T = n(287809),
     f = n(780964),
@@ -34,7 +34,7 @@ let v = [{
             {
                 avatarSrc: t,
                 avatarDecorationSrc: n
-            } = (0, A.A)({
+            } = (0, h.A)({
                 userId: e?.id,
                 size: a._3J.SIZE_48
             });
@@ -94,7 +94,7 @@ let v = [{
         usePredicate: () => (0, x.X)("user_settings_sidebar"),
         onClick: () => {
             let e = p.default.getId();
-            (0, h.openUserProfileModal)({
+            (0, A.openUserProfileModal)({
                 userId: e
             })
         },
@@ -106,7 +106,7 @@ function O() {
         {
             avatarSrc: t,
             avatarDecorationSrc: n
-        } = (0, A.A)({
+        } = (0, h.A)({
             userId: e?.id,
             size: a._3J.SIZE_48
         });

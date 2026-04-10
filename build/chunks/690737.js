@@ -27,9 +27,9 @@ let _ = function(e) {
             tension: 120,
             friction: 12
         }
-    }), A = {
+    }), h = {
         section: m.JJy.MARKETING_FLOATING_CTA
-    }, h = (0, d.Ay)(), p = (0, o.Mwr)(h);
+    }, A = (0, d.Ay)(), p = (0, o.Mwr)(A);
     return (0, i.jsx)(r.animated.div, {
         className: l()(g.iE, {
             [g.H8]: s,
@@ -44,13 +44,13 @@ let _ = function(e) {
                     [g.Ph]: p
                 }),
                 subscriptionTier: n,
-                premiumModalAnalyticsLocation: A,
+                premiumModalAnalyticsLocation: h,
                 isPersistentCTA: !0,
                 hasActivePromotion: _,
                 shinyButtonClassName: p ? void 0 : g.PJ
             }), (0, i.jsx)(c.A, {
                 className: g.x6,
-                premiumModalAnalyticsLocation: A
+                premiumModalAnalyticsLocation: h
             })]
         })
     })

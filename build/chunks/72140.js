@@ -1,45 +1,45 @@
 /** chunk id: 72140 params = (module,exports,require) **/
-n.d(e, {
+t.d(n, {
     A: () => d,
-    G: () => c
+    G: () => u
 });
-var i = n(627968);
-n(64700);
-var r = n(503698),
-    l = n.n(r),
-    a = n(397927),
-    s = n(985018),
-    u = n(199929),
-    o = n(404648);
+var i = t(627968);
+t(64700);
+var l = t(503698),
+    r = t.n(l),
+    s = t(397927),
+    a = t(985018),
+    o = t(199929),
+    c = t(404648);
 
-function c() {
+function u() {
     return (0, i.jsxs)("div", {
-        className: l()(u.dt, u.dE),
+        className: r()(o.dt, o.dE),
         children: [(0, i.jsx)("img", {
-            src: o.A,
+            src: c.A,
             alt: "reverse trial unlock",
-            className: u.qq
-        }), (0, i.jsx)(a.Text, {
+            className: o.qq
+        }), (0, i.jsx)(s.Text, {
             variant: "text-sm/medium",
-            className: u.tD,
-            children: s.intl.format(s.t.f5VHKm, {})
+            className: o.tD,
+            children: a.intl.format(a.t.f5VHKm, {})
         })]
     })
 }
 
-function d(t) {
+function d(e) {
     let {
-        text: e,
-        color: n
-    } = t;
+        text: n,
+        color: t
+    } = e;
     return (0, i.jsxs)("div", {
-        className: u.dt,
-        children: [(0, i.jsx)(a.tvc, {
+        className: o.dt,
+        children: [(0, i.jsx)(s.tvc, {
             size: "md",
-            className: u.YW,
-            color: n
+            className: o.YW,
+            color: t
         }), (0, i.jsx)("div", {
-            children: e
+            children: n
         })]
     })
 }

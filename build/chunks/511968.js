@@ -1,6 +1,6 @@
 /** chunk id: 511968 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -15,18 +15,18 @@ var i = n(627968),
     g = n(240248),
     _ = n(237218),
     x = n(689296),
-    A = n(615751);
+    h = n(615751);
 
-function h(e) {
+function A(e) {
     let {
         cta: t,
         storeListing: n,
         className: l
     } = e, {
-        applicationId: h,
+        applicationId: A,
         benefits: p,
         description: T
-    } = n, f = s.useMemo(() => null == n.thumbnail ? null : (0, _.t)(h, n.thumbnail, 256), [h, n.thumbnail]), {
+    } = n, f = s.useMemo(() => null == n.thumbnail ? null : (0, _.t)(A, n.thumbnail, 256), [A, n.thumbnail]), {
         data: S
     } = (0, c.j)(n.skuId), E = s.useMemo(() => {
         if (null == S || 0 === S.length) return null;
@@ -34,13 +34,13 @@ function h(e) {
         return (0, m._J)(e)
     }, [S]);
     return null == E ? null : (0, i.jsxs)(a.q, {
-        className: r()(A.iE, l),
+        className: r()(h.iE, l),
         header: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {
-                className: A.qd,
+                className: h.qd,
                 children: [null != f && (0, i.jsx)(d._V3, {
                     src: f.href,
-                    imageClassName: A.rW,
+                    imageClassName: h.rW,
                     width: 48,
                     height: 48
                 }), (0, i.jsxs)("div", {
@@ -55,13 +55,13 @@ function h(e) {
             }), t]
         }),
         children: [!(0, g.uJ)(T) && (0, i.jsx)("div", {
-            className: A.h_,
+            className: h.h_,
             children: (0, i.jsx)(x.A, {
                 variant: "text-sm/medium",
                 children: T
             })
         }), null != p && p.length > 0 && (0, i.jsx)("div", {
-            className: A.PX,
+            className: h.PX,
             children: p.map(e => {
                 let {
                     id: t,
@@ -71,7 +71,7 @@ function h(e) {
                 } = e;
                 return (0, i.jsx)(o.FY, {
                     header: n,
-                    icon: (0, u.N)(h, l),
+                    icon: (0, u.N)(A, l),
                     description: s
                 }, t)
             })

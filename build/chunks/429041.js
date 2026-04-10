@@ -1,6 +1,6 @@
 /** chunk id: 429041 params = (module,exports,require) **/
 n.d(t, {
-    Z: () => h
+    Z: () => A
 }), n(667532);
 var i = n(627968);
 n(64700);
@@ -16,14 +16,14 @@ var s = n(873298),
     g = n(562783),
     _ = n(290389),
     x = n(985018),
-    A = n(842130);
+    h = n(842130);
 
-function h() {
+function A() {
     let e = (0, m.A)() ?? !0,
         t = (0, u.uM)(),
         n = (0, c.G)(),
         {
-            explicitContentGuilds: h,
+            explicitContentGuilds: A,
             explicitContentFriendDm: p,
             explicitContentNonFriendDm: T
         } = (0, d.R)(),
@@ -51,7 +51,7 @@ function h() {
     e && (S.unshift(b), E.unshift(b));
     let C = {
         isDisabled: n,
-        tooltipText: t ? x.intl.string(A.default["6Af/cw"]) : void 0
+        tooltipText: t ? x.intl.string(h.default["6Af/cw"]) : void 0
     };
     return (0, i.jsxs)(g.E, {
         description: x.intl.string(x.t.Wnojv1),
@@ -73,12 +73,12 @@ function h() {
             ...C
         }), (0, i.jsx)(_.A, {
             title: x.intl.string(x.t["FP+a42"]),
-            value: h,
+            value: A,
             onChange: e => f({
                 explicitContentGuilds: e
             }),
             isDisabled: !e || n,
-            tooltipText: t ? x.intl.string(A.default["6Af/cw"]) : void 0,
+            tooltipText: t ? x.intl.string(h.default["6Af/cw"]) : void 0,
             options: E
         })]
     })

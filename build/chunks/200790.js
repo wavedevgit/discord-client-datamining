@@ -1,6 +1,6 @@
 /** chunk id: 200790 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => h
 });
 var i = n(627968);
 n(64700);
@@ -17,13 +17,13 @@ var s = n(503698),
     _ = n(985018),
     x = n(950087);
 
-function A(e) {
+function h(e) {
     let {
         user: t,
         guild: n,
         className: s,
-        sectionTitle: A,
-        forcedDivider: h = !1,
+        sectionTitle: h,
+        forcedDivider: A = !1,
         withTutorial: p = !1
     } = e, {
         analyticsLocations: T
@@ -36,9 +36,9 @@ function A(e) {
     } = (0, m.CP)(n?.id), b = p ? a.wLn : r.$n;
     return (0, i.jsx)(g.A, {
         className: s,
-        forcedDivider: h,
+        forcedDivider: A,
         hasBackground: !0,
-        title: A,
+        title: h,
         errors: E,
         children: (0, i.jsxs)("div", {
             className: x.NC,

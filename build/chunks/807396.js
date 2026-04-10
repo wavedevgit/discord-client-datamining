@@ -16,8 +16,8 @@ var i = n(627968),
     g = n(73153),
     _ = n(77468),
     x = n(289498),
-    A = n(736653),
-    h = n(573648),
+    h = n(736653),
+    A = n(573648),
     p = n(681819),
     T = n(370480),
     f = n(882997),
@@ -74,7 +74,7 @@ let U = e => {
                     color: "text-strong",
                     children: n.guild.name
                 }), (0, i.jsx)(m.MzZ, {
-                    href: h.A.get(n.type)?.getPlatformUserUrl?.(n.account),
+                    href: A.A.get(n.type)?.getPlatformUserUrl?.(n.account),
                     children: (0, i.jsx)(m.Text, {
                         variant: "text-xs/normal",
                         color: "text-default",
@@ -93,7 +93,7 @@ let U = e => {
 
 function w(e) {
     let t, n, l, r, o, g, x, {
-            onDisconnect: A,
+            onDisconnect: h,
             account: b,
             theme: v,
             locale: N
@@ -107,7 +107,7 @@ function w(e) {
         [W, Z] = s.useState(!1),
         [q, Q] = s.useState([]),
         J = (0, p.ML)(b.type),
-        $ = h.A.get(J);
+        $ = A.A.get(J);
     s.useEffect(() => {
         j(b.friendSync), w(b.visibility), B(b.metadataVisibility), H(b.showActivity)
     }, [b]);
@@ -127,7 +127,7 @@ function w(e) {
         null != e && (w(e), _.A.setVisibility(b.type, b.id, e), Y(null)), null != t && (B(t), _.A.setMetadataVisibility(b.type, b.id, t), K(null))
     }, [b]), (0, i.jsxs)("div", {
         className: k.FI,
-        children: [(t = h.A.get(b.type), n = h.A.get(J), l = "1" === (b.metadata ?? {})[G.pK.TWITTER_VERIFIED], r = null, t.type === D.fg2.TWITTER && l && (r = (0, i.jsx)(c.m, {
+        children: [(t = A.A.get(b.type), n = A.A.get(J), l = "1" === (b.metadata ?? {})[G.pK.TWITTER_VERIFIED], r = null, t.type === D.fg2.TWITTER && l && (r = (0, i.jsx)(c.m, {
             text: M.intl.string(M.t.Jebrww),
             children: (0, i.jsx)(C.A, {
                 color: d.A.unsafe_rawColors.TWITTER.css,
@@ -163,7 +163,7 @@ function w(e) {
             }), (0, i.jsx)(m.DUT, {
                 className: k.uH,
                 onClick: function() {
-                    let e = h.A.get(b.type);
+                    let e = A.A.get(b.type);
                     (0, m.qfG)(t => (0, i.jsx)(a.Modal, {
                         title: M.intl.formatToPlainString(M.t.U5x12f, {
                             name: e.name
@@ -178,7 +178,7 @@ function w(e) {
                         }, {
                             text: M.intl.string(M.t.bsbMVz),
                             onClick: () => {
-                                A(), t.onClose()
+                                h(), t.onClose()
                             },
                             variant: "primary"
                         }],
@@ -239,7 +239,7 @@ function w(e) {
             let l = q.includes(e.id),
                 r = M.intl.string(M.t.wzzjk9);
             if (null == n || 0 === n.length)
-                if (!0 !== h.A.get(e.type).hasMetadata) return null;
+                if (!0 !== A.A.get(e.type).hasMetadata) return null;
                 else n = [(0, i.jsx)(m.LpS, {
                     className: k.Z3,
                     text: M.intl.string(M.t.y2b7CA)
@@ -285,7 +285,7 @@ function w(e) {
             onChange: function(e) {
                 H(e), _.A.setShowActivity(b.type, b.id, e)
             }
-        })), h.A.get(b.type)?.hasMetadata === !0 && (x = (0, i.jsx)(m.dOG, {
+        })), A.A.get(b.type)?.hasMetadata === !0 && (x = (0, i.jsx)(m.dOG, {
             label: M.intl.string(M.t.FYKGsL),
             checked: 1 === V,
             onChange: function(e) {
@@ -353,7 +353,7 @@ function V() {
 }
 
 function B(e) {
-    let t = h.A.get(e);
+    let t = A.A.get(e);
     (0, f.A)({
         platformType: t.type
     }), j.default.track(D.HAw.ACCOUNT_LINK_STEP, {
@@ -413,7 +413,7 @@ function H(e) {
             note: M.intl.string(M.t.WenGZ2),
             children: M.intl.string(M.t.aoLS84)
         })
-    }) : s.filter(e => h.A.isSupported(e.type)).map((e, t) => (0, i.jsx)(w, {
+    }) : s.filter(e => A.A.isSupported(e.type)).map((e, t) => (0, i.jsx)(w, {
         theme: l,
         account: e,
         locale: r,
@@ -434,7 +434,7 @@ function z() {
     let e = (0, o.bG)([I.A], () => I.A.hidePersonalInformation),
         t = (0, o.bG)([v.A], () => v.A.isFetching()),
         n = (0, o.bG)([v.A], () => v.A.getAccounts()),
-        s = (0, A.Ay)(),
+        s = (0, h.Ay)(),
         l = (0, o.bG)([O.default], () => O.default.locale);
     return e ? null : (0, i.jsxs)(i.Fragment, {
         children: [null, (0, i.jsx)(H, {

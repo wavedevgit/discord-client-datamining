@@ -15,8 +15,8 @@ var i = n(934551),
     g = n(305693),
     _ = n(372745),
     x = n(559516),
-    A = n(665526),
-    h = n(933257),
+    h = n(665526),
+    A = n(933257),
     p = n(228201),
     T = n(875532),
     f = n(935185),
@@ -38,7 +38,7 @@ let b = (0, a.dT)(u.X.ACCOUNT_STANDING_TAB, {
                 target_tab_name: f.D.SECURITY
             })
         },
-        buildLayout: () => [A.P, g.o, h.s]
+        buildLayout: () => [h.P, g.o, A.s]
     });
 
 function v() {
@@ -57,7 +57,7 @@ let N = (0, a.t_)(u.X.ACCOUNT_PANEL, {
         useTitle: () => E.intl.string(E.t["ldCE/p"]),
         initialize: v,
         useObscuredNotice: r.L,
-        buildLayout: () => [_.u, x.v, p.Q, h._]
+        buildLayout: () => [_.u, x.v, p.Q, A._]
     }),
     j = (0, a.i4)(u.X.ACCOUNT_SIDEBAR_ITEM, {
         useTitle: () => (0, m.pC)("Account") ? E.intl.string(E.t["ldCE/p"]) : E.intl.string(E.t["JAIM/m"]),

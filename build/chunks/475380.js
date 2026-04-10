@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(29160),
     _ = n(15285),
     x = n(496885),
-    A = n(847521),
-    h = n(760751),
+    h = n(847521),
+    A = n(760751),
     p = n(189081),
     T = n(954571),
     f = n(723702),
@@ -35,13 +35,13 @@ function I(e) {
         subgames: j,
         isSubgame: y = !1,
         parentGame: O
-    } = e, R = (0, a.cf)([_.Ay, h.A, p.A], () => (0, _.xU)(t, _.Ay, h.A, p.A)), {
+    } = e, R = (0, a.cf)([_.Ay, A.A, p.A], () => (0, _.xU)(t, _.Ay, A.A, p.A)), {
         canToggleDetection: L,
         isCurrentGameDetectionEnabled: P
     } = (0, a.cf)([_.Ay], () => ({
         canToggleDetection: null == O || _.Ay.isDetectionEnabled(O),
         isCurrentGameDetectionEnabled: _.Ay.isDetectionEnabled(R)
-    })), D = (0, a.bG)([_.Ay], () => _.Ay.getVisibleGame()), [G, M] = s.useState(!1), k = s.useMemo(() => (0, A.n1)(R) ? y ? R.gameName : b.intl.formatToPlainString(b.t.G6BGdx, {
+    })), D = (0, a.bG)([_.Ay], () => _.Ay.getVisibleGame()), [G, M] = s.useState(!1), k = s.useMemo(() => (0, h.n1)(R) ? y ? R.gameName : b.intl.formatToPlainString(b.t.G6BGdx, {
         subgameName: R.gameName
     }) : R.name, [R, y]), [U, w] = s.useState(k ?? "???"), V = r()(v.tR, {
         [C.LO]: !l,
@@ -140,10 +140,10 @@ function I(e) {
                         className: C.ym,
                         onClick: function() {
                             if (G) return;
-                            let e = null != R.id ? h.A.getDetectableGame(R.id) : null;
+                            let e = null != R.id ? A.A.getDetectableGame(R.id) : null;
                             T.default.track(S.HAw.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
                                 application_id: e?.id,
-                                game_name: (0, A.n1)(R) ? R.gameName : R.name
+                                game_name: (0, h.n1)(R) ? R.gameName : R.name
                             }), M(!0), (0, c.mMO)(async () => {
                                 let {
                                     default: t

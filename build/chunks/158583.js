@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(975571),
     _ = n(474090),
     x = n(181079),
-    A = n(422258),
-    h = n(668267),
+    h = n(422258),
+    A = n(668267),
     p = n(93055),
     T = n(652215),
     f = n(788868),
@@ -28,7 +28,7 @@ function C() {
     let {
         analyticsLocations: e
     } = (0, o.Ay)(a.A.USER_SETTINGS_FAVORITES), t = s.useCallback(() => {
-        (0, h.mv)("settings_page"), (0, c.uh)(T.YYv), (0, u.default)()
+        (0, A.mv)("settings_page"), (0, c.uh)(T.YYv), (0, u.default)()
     }, []);
     return (0, i.jsx)(o.f5, {
         value: e,
@@ -64,7 +64,7 @@ function v() {
         }),
         n = (0, p.DZ)(),
         a = s.useCallback(e => {
-            (0, A.tV)(e, "settings_page"), !e && n && (0, c.pX)(T.BVt.ME)
+            (0, h.tV)(e, "settings_page"), !e && n && (0, c.pX)(T.BVt.ME)
         }, [n]);
     return t ? (0, i.jsx)(r.dOG, {
         checked: e,

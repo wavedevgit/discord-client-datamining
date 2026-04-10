@@ -3,7 +3,7 @@ n.d(t, {
     AK: () => v,
     D1: () => _,
     E2: () => N,
-    FW: () => h,
+    FW: () => A,
     Hn: () => b,
     Hr: () => r,
     Qx: () => C,
@@ -12,7 +12,7 @@ n.d(t, {
     bd: () => g,
     dT: () => c,
     eA: () => x,
-    gN: () => A,
+    gN: () => h,
     hl: () => s,
     i4: () => o,
     sN: () => E,
@@ -90,11 +90,11 @@ function x(e, t) {
     return l(e, i.Z6.NESTED_PANEL, t)
 }
 
-function A(e, t) {
+function h(e, t) {
     return l(e, i.Z6.RELATED, t)
 }
 
-function h(e, t) {
+function A(e, t) {
     return l(e, i.Z6.FIELD_SET, t)
 }
 

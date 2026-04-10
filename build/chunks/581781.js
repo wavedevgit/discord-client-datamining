@@ -21,9 +21,9 @@ function m(e) {
         guildName: g,
         guildIcon: _,
         guildIconSize: x
-    } = e, A = s.useRef(null), [h, p] = s.useState(!1);
+    } = e, h = s.useRef(null), [A, p] = s.useState(!1);
     return s.useEffect(() => {
-        let e = A.current;
+        let e = h.current;
         null != e && null != e.offsetWidth && null != e.scrollWidth && p(e.offsetWidth < e.scrollWidth)
     }, []), (0, i.jsxs)("div", {
         className: r()(u.kL, t),
@@ -40,9 +40,9 @@ function m(e) {
                 className: u.zH,
                 children: (0, i.jsx)(a.m, {
                     __unsupportedReactNodeAsText: g,
-                    shouldShow: h,
+                    shouldShow: A,
                     children: (0, i.jsx)("span", {
-                        ref: A,
+                        ref: h,
                         className: u.J5,
                         children: g
                     })

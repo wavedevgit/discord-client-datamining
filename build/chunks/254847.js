@@ -1,7 +1,7 @@
 /** chunk id: 254847 params = (module,exports,require) **/
 n.d(t, {
     A: () => T,
-    Y: () => h
+    Y: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -16,10 +16,10 @@ var i = n(627968),
     g = n(842130),
     _ = n(985018),
     x = n(75262);
-let A = [18, 18, 16, 16, 14, 12, 10];
+let h = [18, 18, 16, 16, 14, 12, 10];
 
-function h(e) {
-    return A[e.length - 1] ?? A[A.length - 1]
+function A(e) {
+    return h[e.length - 1] ?? h[h.length - 1]
 }
 let p = s.memo(e => {
     let {
@@ -28,9 +28,9 @@ let p = s.memo(e => {
         customSubtext: s
     } = e, l = (0, a.bG)([c.A], () => c.A.getGuild(t));
     if (void 0 === l) return null;
-    let A = l.features.has(m.GuildFeatures.VERIFIED) || l.features.has(m.GuildFeatures.PARTNERED),
+    let h = l.features.has(m.GuildFeatures.VERIFIED) || l.features.has(m.GuildFeatures.PARTNERED),
         {
-            name: h
+            name: A
         } = l;
     return (0, i.jsxs)("div", {
         className: r()(x.kL, n),
@@ -40,14 +40,14 @@ let p = s.memo(e => {
             className: x.$z,
             children: [(0, i.jsxs)("div", {
                 className: x.wx,
-                children: [A ? (0, i.jsx)(d.A, {
+                children: [h ? (0, i.jsx)(d.A, {
                     guild: l,
                     tooltipPosition: "bottom",
                     tooltipColor: o.STz.Colors.PRIMARY,
                     className: x.n2
                 }) : null, (0, i.jsx)(o.Text, {
                     variant: "text-md/semibold",
-                    children: h
+                    children: A
                 })]
             }), (0, i.jsx)(o.Text, {
                 variant: "text-sm/medium",

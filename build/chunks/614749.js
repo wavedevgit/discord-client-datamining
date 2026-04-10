@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(652215),
     _ = n(431144),
     x = n(842130),
-    A = n(985018),
-    h = n(475112);
+    h = n(985018),
+    A = n(475112);
 let p = () => {
     let e = u.dm.useSetting(),
         {
@@ -26,16 +26,16 @@ let p = () => {
     return s.useEffect(() => {
         null == n && (0, d.cR)()
     }, [n]), (0, i.jsx)("div", {
-        className: h.kL,
+        className: A.kL,
         children: (0, i.jsxs)(o.nVY, {
-            label: A.intl.string(x.default.USIXU7),
+            label: h.intl.string(x.default.USIXU7),
             children: [(0, i.jsx)(o.dOG, {
                 checked: e,
-                description: A.intl.string(x.default["5MdB3j"]),
+                description: h.intl.string(x.default["5MdB3j"]),
                 onChange: u.dm.updateSetting,
-                label: A.intl.string(x.default.zkEceS)
+                label: h.intl.string(x.default.zkEceS)
             }), e ? (0, i.jsx)(o.ZpM, {
-                className: h.MT,
+                className: A.MT,
                 type: o.ZpM.Types.CUSTOM,
                 outline: !0,
                 children: (0, i.jsxs)(r.s, {
@@ -44,7 +44,7 @@ let p = () => {
                         children: (0, i.jsx)(o.Text, {
                             variant: "text-sm/semibold",
                             color: "text-default",
-                            children: A.intl.string(x.default.xAVm7K)
+                            children: h.intl.string(x.default.xAVm7K)
                         })
                     }), (0, i.jsx)(o.DUT, {
                         children: (0, i.jsx)(l.N_, {
@@ -55,21 +55,21 @@ let p = () => {
                                     scrollRestoration: !1
                                 }
                             },
-                            children: A.intl.string(x.default.cUIXFY)
+                            children: h.intl.string(x.default.cUIXFY)
                         })
                     }), (0, i.jsx)(o.fkz, {
                         icon: o.EdP,
-                        className: h.UE,
+                        className: A.UE,
                         disableColor: !0
                     })]
                 })
             }) : null, (0, i.jsx)(o.dOG, {
                 checked: !!t[_.HO.FAMILY_CENTER_DIGEST],
-                description: A.intl.string(x.default.y34S46),
+                description: h.intl.string(x.default.y34S46),
                 onChange: function(e) {
                     (0, d.CA)(_.HO.FAMILY_CENTER_DIGEST, e)
                 },
-                label: A.intl.string(x.default.irvJKR)
+                label: h.intl.string(x.default.irvJKR)
             })]
         })
     })

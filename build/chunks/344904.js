@@ -1,7 +1,7 @@
 /** chunk id: 344904 params = (module,exports,require) **/
 n.d(t, {
     Ay: () => p,
-    BN: () => A
+    BN: () => h
 });
 var i, s = n(627968),
     l = n(64700),
@@ -15,8 +15,8 @@ var i, s = n(627968),
     g = n(468052),
     _ = n(769411),
     x = n(997115),
-    A = ((i = {})[i.NITRO_GEM = 0] = "NITRO_GEM", i[i.NITRO_LOGO = 1] = "NITRO_LOGO", i[i.AVATAR_DECO = 2] = "AVATAR_DECO", i);
-let h = e => {
+    h = ((i = {})[i.NITRO_GEM = 0] = "NITRO_GEM", i[i.NITRO_LOGO = 1] = "NITRO_LOGO", i[i.AVATAR_DECO = 2] = "AVATAR_DECO", i);
+let A = e => {
         let {
             avatarDecorationLegacyAssetId: t,
             avatarDecorationSkuId: n,
@@ -48,7 +48,7 @@ let h = e => {
             progressCircleStrokeSize: r,
             backgroundCircleSize: d,
             percentage: u,
-            initialPercentage: A,
+            initialPercentage: h,
             progressCircleVariation: p = 0,
             avatarDecorationLegacyAssetId: T,
             avatarDecorationSkuId: f,
@@ -68,7 +68,7 @@ let h = e => {
                 progressCircleStroke: v,
                 progressCircleStrokeSize: r,
                 percentage: i ?? u,
-                initialPercentage: i ?? A,
+                initialPercentage: i ?? h,
                 progressCircleVariation: p,
                 children: (() => {
                     switch (p) {
@@ -84,7 +84,7 @@ let h = e => {
                                 ellipseOpacity: E
                             });
                         case 2:
-                            if (null != f) return (0, s.jsx)(h, {
+                            if (null != f) return (0, s.jsx)(A, {
                                 avatarDecorationLegacyAssetId: T,
                                 avatarDecorationSkuId: f,
                                 avatarDecoAssetDescription: S

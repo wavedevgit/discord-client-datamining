@@ -16,18 +16,18 @@ var i = n(64700),
     g = n(416047),
     _ = n(222994),
     x = n(342537),
-    A = n(985018);
-let h = (0, o.zZ)(c.X.SESSIONS_CATEGORY, {
-        useTitle: () => A.intl.string(A.t.mEndXM),
-        useSubtitle: () => A.intl.string(A.t.b7ZpTM),
+    h = n(985018);
+let A = (0, o.zZ)(c.X.SESSIONS_CATEGORY, {
+        useTitle: () => h.intl.string(h.t.mEndXM),
+        useSubtitle: () => h.intl.string(h.t.b7ZpTM),
         initialize: () => ((0, a.GY)(), () => {
             (0, a.ZQ)()
         }),
         buildLayout: () => [g.I, x.A, _.V],
-        useSearchTerms: () => [A.intl.string(A.t["+1h0k/"]), A.intl.string(A.t.LLS19o), A.intl.string(A.t.xx1MWc), A.intl.string(A.t.lSWsrd)]
+        useSearchTerms: () => [h.intl.string(h.t["+1h0k/"]), h.intl.string(h.t.LLS19o), h.intl.string(h.t.xx1MWc), h.intl.string(h.t.lSWsrd)]
     }),
     p = (0, o.zZ)(c.X.SESSIONS_CATEGORY, {
-        useSearchTerms: () => [A.intl.string(A.t["+1h0k/"]), A.intl.string(A.t.LLS19o), A.intl.string(A.t.xx1MWc), A.intl.string(A.t.Vij32M), A.intl.string(A.t.lSWsrd)],
+        useSearchTerms: () => [h.intl.string(h.t["+1h0k/"]), h.intl.string(h.t.LLS19o), h.intl.string(h.t.xx1MWc), h.intl.string(h.t.Vij32M), h.intl.string(h.t.lSWsrd)],
         buildLayout: () => [g.I, x.A],
         initialize: () => ((0, a.GY)(), () => {
             (0, a.ZQ)()
@@ -40,12 +40,12 @@ let h = (0, o.zZ)(c.X.SESSIONS_CATEGORY, {
         }
     }),
     T = (0, o.t_)(c.X.SESSIONS_PANEL, {
-        useTitle: () => (0, u._A)("SessionsPanel") ? A.intl.string(A.t.mEndXM) : A.intl.string(A.t["+1h0k/"]),
+        useTitle: () => (0, u._A)("SessionsPanel") ? h.intl.string(h.t.mEndXM) : h.intl.string(h.t["+1h0k/"]),
         useObscuredNotice: r.L,
-        buildLayout: () => (0, u.pC)("SessionsPanel") ? [h] : [p]
+        buildLayout: () => (0, u.pC)("SessionsPanel") ? [A] : [p]
     }),
     f = (0, o.i4)(c.X.SESSIONS_SIDEBAR_ITEM, {
-        useTitle: () => A.intl.string(A.t["+1h0k/"]),
+        useTitle: () => h.intl.string(h.t["+1h0k/"]),
         icon: s.LaptopPhoneIcon,
         getDismissibleBadges: function() {
             return [{

@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(953143),
     _ = n(954571),
     x = n(52167),
-    A = n(652215),
-    h = n(985018),
+    h = n(652215),
+    A = n(985018),
     p = n(504734);
 let T = e => {
         let {
@@ -26,7 +26,7 @@ let T = e => {
         return (0, i.jsxs)(o.DUT, {
             onClick: n,
             className: p.customButton,
-            children: [t ? h.intl.string(h.t.maZaN3) : h.intl.string(h.t["37C26f"]), t ? (0, i.jsx)(o.tN5, {
+            children: [t ? A.intl.string(A.t.maZaN3) : A.intl.string(A.t["37C26f"]), t ? (0, i.jsx)(o.tN5, {
                 size: "md",
                 color: "currentColor",
                 className: p.arrow
@@ -48,10 +48,10 @@ let T = e => {
             isNew: _ = !1,
             isEarlyAccess: x = !1
         } = e, {
-            analyticsLocations: A
+            analyticsLocations: h
         } = (0, u.Ay)(c.A.PREMIUM_MARKETING_PERK_CARD);
         return (0, i.jsx)(u.f5, {
-            value: A,
+            value: h,
             children: (0, i.jsxs)("div", {
                 className: r()(p.perkCard, s),
                 children: [_ ? (0, i.jsx)(g.A, {
@@ -72,7 +72,7 @@ let T = e => {
                     }), (0, i.jsx)(o.Text, {
                         variant: "text-sm/normal",
                         className: p.perkCardDescription,
-                        children: "function" == typeof n ? n(A) : n
+                        children: "function" == typeof n ? n(h) : n
                     })]
                 })]
             })
@@ -96,7 +96,7 @@ let T = e => {
             children: [(0, i.jsx)(o.Heading, {
                 variant: "heading-xxl/extrabold",
                 className: p.perksTitle,
-                children: n ? h.intl.string(h.t.QX14gI) : h.intl.string(h.t.RGadQR)
+                children: n ? A.intl.string(A.t.QX14gI) : A.intl.string(A.t.RGadQR)
             }), (0, i.jsx)("div", {
                 className: r()(p.perkCardContainer, {
                     [p.perkCardContainerExpanded]: l
@@ -112,7 +112,7 @@ let T = e => {
                     }),
                     children: (0, i.jsx)(T, {
                         onClick: () => {
-                            _.default.track(A.HAw.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
+                            _.default.track(h.HAw.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
                                 location_stack: S,
                                 was_expanded: l
                             }), c(!l)

@@ -16,8 +16,8 @@ var s = n(503698),
     g = n(927578),
     _ = n(911180),
     x = n(128450),
-    A = n(985018),
-    h = n(5008);
+    h = n(985018),
+    A = n(5008);
 
 function p(e) {
     let {
@@ -45,50 +45,50 @@ function p(e) {
         r(a()(e, C?.themeColors) ? void 0 : e)
     };
     return (0, i.jsx)(x.A, {
-        title: A.intl.string(A.t.DMeO2X),
+        title: h.intl.string(h.t.DMeO2X),
         disabled: !I && !p,
-        className: l()(h.__invalid_profileThemesSection, f),
+        className: l()(A.__invalid_profileThemesSection, f),
         showPremiumIcon: S,
         forcedDivider: b,
         children: (0, i.jsxs)("div", {
-            className: h.hd,
+            className: A.hd,
             children: [(0, i.jsx)("div", {
-                className: h.YX,
+                className: A.YX,
                 children: (0, i.jsx)(_.A, {
                     onChange: e => R([e, N]),
                     color: v,
                     suggestedColors: O,
                     showEyeDropper: !0,
                     label: (0, i.jsx)(d.Text, {
-                        className: h.yz,
+                        className: A.yz,
                         color: "text-default",
                         variant: "text-xs/normal",
                         "aria-hidden": !0,
-                        children: A.intl.string(A.t.C3KTQk)
+                        children: h.intl.string(h.t.C3KTQk)
                     })
                 })
             }), (0, i.jsx)("div", {
-                className: h.YX,
+                className: A.YX,
                 children: (0, i.jsx)(_.A, {
                     onChange: e => R([v, e]),
                     color: N,
                     suggestedColors: O,
                     showEyeDropper: !0,
                     label: (0, i.jsx)(d.Text, {
-                        className: h.yz,
+                        className: A.yz,
                         color: "text-default",
                         variant: "text-xs/normal",
                         "aria-hidden": !0,
-                        children: A.intl.string(A.t["8elvy6"])
+                        children: h.intl.string(h.t["8elvy6"])
                     })
                 })
             }), E && null != T && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
-                className: h.WA,
+                className: A.WA,
                 children: (0, i.jsx)(d.Button, {
                     variant: "secondary",
                     size: "sm",
-                    text: A.intl.string(A.t["L+GmoR"]),
+                    text: h.intl.string(h.t["L+GmoR"]),
                     onClick: () => R([null, null])
                 })
             })]

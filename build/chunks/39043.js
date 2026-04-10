@@ -22,17 +22,17 @@ let g = s.memo(function(e) {
         useTitle: n,
         layout: g,
         useCollapsedSubtitle: _
-    } = t, [x, A] = s.useState(!0), [h, p] = s.useState(() => m(t)), T = s.useRef(h), f = s.useRef(m(t) ? "navigation" : null);
+    } = t, [x, h] = s.useState(!0), [A, p] = s.useState(() => m(t)), T = s.useRef(A), f = s.useRef(m(t) ? "navigation" : null);
     s.useEffect(() => a.A.subscribe(e => e.requestAccordionOpenKey, e => {
-        e === t.key && (T.current ? o.A.notifyAccordionExpanded(t.key) : (f.current = "navigation", A(!1), p(!0)))
+        e === t.key && (T.current ? o.A.notifyAccordionExpanded(t.key) : (f.current = "navigation", h(!1), p(!0)))
     }, {
         equalityFn: (e, t) => e === t,
         fireImmediately: !0
-    }), [t.key, h]);
+    }), [t.key, A]);
     let S = s.useCallback(e => {
-            if (null != e.target && h !== T.current && (T.current = h, T.current)) switch (f.current) {
+            if (null != e.target && A !== T.current && (T.current = A, T.current)) switch (f.current) {
                 case "navigation":
-                    A(!0), o.A.notifyAccordionExpanded(t.key);
+                    h(!0), o.A.notifyAccordionExpanded(t.key);
                     break;
                 case "user":
                     o.A.navigate(t.key, {
@@ -40,17 +40,17 @@ let g = s.memo(function(e) {
                         panelScrollBlock: "nearest"
                     })
             }
-        }, [h, t.key]),
+        }, [A, t.key]),
         E = s.useMemo(() => (0, l.debounce)(S, 50), [S]),
         b = (0, r.w)(E),
-        C = n?.(h),
+        C = n?.(A),
         v = _?.(),
         N = (0, c.q)(t);
     return (0, i.jsx)(u.f, {
         ref: b,
         title: C,
         collapsedSubtitle: v,
-        isExpanded: h,
+        isExpanded: A,
         onExpandedChange: e => {
             f.current = "user", N(), p(e)
         },

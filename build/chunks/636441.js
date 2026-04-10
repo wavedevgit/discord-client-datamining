@@ -1,47 +1,47 @@
 /** chunk id: 636441 params = (module,exports,require) **/
-n.d(e, {
-    A: () => r
+n.d(t, {
+    A: () => s
 });
-var l = n(627968);
+var a = n(627968);
 n(64700);
-var i = n(397927),
-    s = n(985018),
-    a = n(934768);
+var c = n(397927),
+    i = n(985018),
+    r = n(934768);
 
-function r(t) {
-    let e, {
+function s(e) {
+    let t, {
             transitionState: n,
-            guild: r,
-            guildBoostQuantity: o,
-            isTransfer: c,
-            graphic: d,
-            onClose: u
-        } = t,
-        m = r?.name;
-    e = c ? null == m ? s.intl.format(s.t.mYRfYx, {}) : s.intl.format(s.t["Ps/5bb"], {
-        guildName: m
-    }) : null == m ? s.intl.format(s.t["4fw/T2"], {
-        guildSubscriptionQuantity: o
-    }) : s.intl.format(s.t.IeFTQu, {
-        guildName: m,
-        guildSubscriptionQuantity: o
+            guild: s,
+            guildBoostQuantity: d,
+            isTransfer: l,
+            graphic: o,
+            onClose: b
+        } = e,
+        u = s?.name;
+    t = l ? null == u ? i.intl.format(i.t.mYRfYx, {}) : i.intl.format(i.t["Ps/5bb"], {
+        guildName: u
+    }) : null == u ? i.intl.format(i.t["4fw/T2"], {
+        guildSubscriptionQuantity: d
+    }) : i.intl.format(i.t.IeFTQu, {
+        guildName: u,
+        guildSubscriptionQuantity: d
     });
-    let x = c ? s.intl.string(s.t["5uYZHN"]) : s.intl.string(s.t.mpb7t3),
-        h = [{
+    let p = l ? i.intl.string(i.t["5uYZHN"]) : i.intl.string(i.t.mpb7t3),
+        f = [{
             variant: "primary",
-            text: s.intl.string(s.t["/iTxgz"]),
-            onClick: u
+            text: i.intl.string(i.t["/iTxgz"]),
+            onClick: b
         }];
-    return (0, l.jsx)(i.kpP, {
+    return (0, a.jsx)(c.kpP, {
         transitionState: n,
-        onClose: u,
-        graphic: d,
-        title: x,
-        actions: h,
-        children: (0, l.jsx)(i.Text, {
+        onClose: b,
+        graphic: o,
+        title: p,
+        actions: f,
+        children: (0, a.jsx)(c.Text, {
             variant: "text-md/normal",
-            className: a.x,
-            children: e
+            className: r.x,
+            children: t
         })
     })
 }

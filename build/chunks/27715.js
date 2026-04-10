@@ -19,7 +19,7 @@ var g = n(652215),
     _ = n(985018),
     x = n(252272);
 
-function A(e) {
+function h(e) {
     let {
         applications: t
     } = e, n = s.useMemo(() => t.sort((e, t) => d.default.compare(t.id, e.id)), [t]), o = s.useMemo(() => {
@@ -106,7 +106,7 @@ function A(e) {
     })
 }
 
-function h() {
+function A() {
     return (0, i.jsxs)("div", {
         className: x.do,
         children: [(0, i.jsx)(r.Text, {
@@ -128,9 +128,9 @@ function p(e) {
     let {
         applications: t
     } = e;
-    return t.length > 0 ? (0, i.jsx)(A, {
+    return t.length > 0 ? (0, i.jsx)(h, {
         applications: t
-    }) : (0, i.jsx)(h, {})
+    }) : (0, i.jsx)(A, {})
 }
 
 function T() {

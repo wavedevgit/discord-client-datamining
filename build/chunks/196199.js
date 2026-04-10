@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(287809),
     _ = n(178368),
     x = n(927578),
-    A = n(343557),
-    h = n(242694),
+    h = n(343557),
+    A = n(242694),
     p = n(149524),
     T = n(501486),
     f = n(924699),
@@ -46,9 +46,9 @@ function I(e) {
         }), (0, i.jsx)(f.A, {}), (0, i.jsx)(S.A, {}), w > 0 && (0, i.jsx)(b.A, {
             count: w,
             disabledReason: U
-        }), G && (0, i.jsx)(d.A, {}), !R && (0, i.jsx)(A.A, {}), (0, i.jsxs)("div", {
+        }), G && (0, i.jsx)(d.A, {}), !R && (0, i.jsx)(h.A, {}), (0, i.jsxs)("div", {
             className: N.C_,
-            children: [(0, i.jsx)(h.A, {
+            children: [(0, i.jsx)(A.A, {
                 guildBoostSlots: I,
                 guildBoostSlotsByGuildId: n,
                 premiumSubscription: t,

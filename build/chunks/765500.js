@@ -75,12 +75,12 @@ function g(e) {
         os: g,
         Icon: _,
         lastActive: x
-    } = (0, d.T)(t, n), A = [s, x].filter(o.Vq);
+    } = (0, d.T)(t, n), h = [s, x].filter(o.Vq);
     return (0, i.jsx)(m, {
         icon: _,
         label: g,
         subLabel: l,
-        description: A.join(" \xb7 "),
+        description: h.join(" \xb7 "),
         children: !n && (0, i.jsx)(r.DUT, {
             className: u.XP,
             onClick: () => (0, a.U0)(t.id_hash),

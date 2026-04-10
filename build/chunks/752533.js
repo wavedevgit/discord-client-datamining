@@ -1,10 +1,10 @@
 /** chunk id: 752533 params = (module,exports,require) **/
 n.d(t, {
     Bs: () => p,
-    MT: () => A,
+    MT: () => h,
     U4: () => x,
     XN: () => T,
-    YF: () => h
+    YF: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -30,7 +30,7 @@ let _ = e => {
         } = (0, d.A)({
             userId: t?.id,
             size: o._3J.SIZE_24
-        }), A = (0, c.$3)(t), [h, p] = s.useState(!1);
+        }), h = (0, c.$3)(t), [A, p] = s.useState(!1);
         return (0, i.jsxs)("div", {
             className: r()(g.kL, {
                 [g.RE]: null != a
@@ -44,14 +44,14 @@ let _ = e => {
                 children: [(0, i.jsx)(o.euF, {
                     className: g.my,
                     src: _,
-                    "aria-label": A,
+                    "aria-label": h,
                     size: o._3J.SIZE_24,
                     ...x
                 }), (0, i.jsxs)(o.Text, {
                     className: g.Xh,
                     variant: "text-sm/medium",
                     color: "text-strong",
-                    children: [A, !!n && ` (${m.intl.string(m.t.LuZzxn)})`]
+                    children: [h, !!n && ` (${m.intl.string(m.t.LuZzxn)})`]
                 }), null != l && (0, i.jsxs)(o.Text, {
                     className: g.Pf,
                     variant: "text-sm/medium",
@@ -61,7 +61,7 @@ let _ = e => {
                         children: "\xb7"
                     }), l]
                 })]
-            }), null != a && h && (0, i.jsx)("div", {
+            }), null != a && A && (0, i.jsx)("div", {
                 className: g.dM,
                 children: (0, i.jsx)(o.QWc, {
                     textVariant: "text-sm/medium",
@@ -83,7 +83,7 @@ let _ = e => {
             label: m.intl.string(u.default.vc2xys)
         })
     },
-    A = e => {
+    h = e => {
         let {
             user: t,
             onRemove: n
@@ -97,7 +97,7 @@ let _ = e => {
             }
         })
     },
-    h = e => {
+    A = e => {
         let {
             user: t,
             isOwnUser: n

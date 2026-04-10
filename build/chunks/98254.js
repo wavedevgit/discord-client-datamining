@@ -26,25 +26,25 @@ function c(e) {
         useOptions: g,
         clearable: _,
         closeOnSelect: x,
-        wrapTags: A,
-        selectionMode: h,
+        wrapTags: h,
+        selectionMode: A,
         usePersistentBadge: p,
         getDismissibleBadges: T
     } = t, f = n(), S = c?.(), E = u(), b = g(), C = p?.(), v = T?.(), N = (0, r.A)({
         persistentBadge: C,
         dismissibleBadges: v
     }), I = (0, a.q)(t), j = s.useMemo(() => ({
-        selectionMode: h,
+        selectionMode: A,
         value: E,
         onSelectionChange: d(m, I)
-    }), [h, E, m, I]);
+    }), [A, E, m, I]);
     return (0, i.jsx)(o.L, {
         children: (0, i.jsx)(l.l6P, {
             ...j,
             label: f,
             description: S,
             options: b,
-            wrapTags: A,
+            wrapTags: h,
             closeOnSelect: x,
             clearable: _,
             layout: "horizontal-responsive",

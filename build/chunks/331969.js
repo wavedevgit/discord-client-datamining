@@ -15,12 +15,12 @@ var i = n(627968),
     g = n(808728),
     _ = n(71393),
     x = n(967198),
-    A = n(926140),
-    h = n(985018),
+    h = n(926140),
+    A = n(985018),
     p = n(730040);
 
 function T() {}
-let f = [A.rD.VOICE_CHANNEL];
+let f = [h.rD.VOICE_CHANNEL];
 
 function S(e) {
     e.setOptions({
@@ -35,7 +35,7 @@ function E() {
             variant: "text-md/medium",
             color: "text-muted",
             className: p.GN,
-            children: h.intl.string(h.t.zHjCd1)
+            children: A.intl.string(A.t.zHjCd1)
         })
     })
 }
@@ -63,7 +63,7 @@ function b(e) {
     return (0, i.jsx)("div", {
         className: p.a8,
         children: (0, i.jsx)(a.D0$, {
-            label: h.intl.string(h.t.q4JpM8),
+            label: A.intl.string(A.t.q4JpM8),
             children: (0, i.jsxs)(c.A, {
                 align: c.A.Align.STRETCH,
                 children: [(0, i.jsx)("div", {
@@ -76,7 +76,7 @@ function b(e) {
                     shrink: 0,
                     children: (0, i.jsx)(a.Button, {
                         variant: "primary",
-                        text: h.intl.string(h.t.Dm8O4e),
+                        text: A.intl.string(A.t.Dm8O4e),
                         onClick: d
                     })
                 })]
@@ -137,12 +137,12 @@ function C(e) {
         L = (() => {
             if (null != j) return j[y]?.id;
             let e = I[y];
-            if (e?.type === A.rD.VOICE_CHANNEL) return e.record.id
+            if (e?.type === h.rD.VOICE_CHANNEL) return e.record.id
         })(),
         P = R > 0 || "" === v ? {
             innerId: b,
             innerRole: "listbox",
-            innerAriaLabel: h.intl.string(h.t["+N3fW7"]),
+            innerAriaLabel: A.intl.string(A.t["+N3fW7"]),
             ref: C,
             sections: [R],
             renderRow: function(e) {
@@ -151,7 +151,7 @@ function C(e) {
                 } = e, n = (() => {
                     if (null != j) return j[t];
                     let e = I[t];
-                    if (e?.type === A.rD.VOICE_CHANNEL) return e.record
+                    if (e?.type === h.rD.VOICE_CHANNEL) return e.record
                 })();
                 if (null == n) return null;
                 let s = null != n.parent_id ? m.A.getChannel(n.parent_id) : void 0,
@@ -183,8 +183,8 @@ function C(e) {
     return (0, i.jsx)(l.Modal, {
         transitionState: o,
         onClose: c,
-        title: h.intl.string(h.t.Dm8O4e),
-        subtitle: h.intl.string(h.t.q4JpM8),
+        title: A.intl.string(A.t.Dm8O4e),
+        subtitle: A.intl.string(A.t.q4JpM8),
         actions: void 0,
         input: (0, i.jsx)(a.ksK, {
             value: v,
@@ -199,7 +199,7 @@ function C(e) {
                         let e = (() => {
                             if (null != j) return j[y];
                             let e = I[y];
-                            if (e?.type === A.rD.VOICE_CHANNEL) return e.record
+                            if (e?.type === h.rD.VOICE_CHANNEL) return e.record
                         })();
                         null == e ? T(void 0) : T(e.id), c();
                         break
@@ -211,7 +211,7 @@ function C(e) {
                         y >= R - 1 ? O(0) : O(y + 1)
                 }
             },
-            placeholder: h.intl.string(h.t.tG0r7g),
+            placeholder: A.intl.string(A.t.tG0r7g),
             role: "combobox",
             "aria-controls": b,
             "aria-expanded": R > 0,
@@ -247,7 +247,7 @@ function v(e) {
         variant: "text-md/medium",
         color: "text-muted",
         className: p.GN,
-        children: h.intl.string(h.t["/fYIK7"])
+        children: A.intl.string(A.t["/fYIK7"])
     }) : (0, i.jsx)(u.c3, {
         channel: n,
         id: n.id,

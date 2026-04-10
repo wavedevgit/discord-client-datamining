@@ -1,7 +1,7 @@
 /** chunk id: 55622 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    default: () => b
+    default: () => N
 });
 var r = n(627968),
     i = n(64700),
@@ -24,12 +24,12 @@ var r = n(627968),
     E = n(985018),
     x = n(167067);
 let A = new Set([m.X.PROFILE_PANEL, m.X.SUBSCRIPTIONS_PANEL, m.X.FAMILY_CENTER_PANEL, m.X.POGGERMODE_PANEL]),
-    N = new Map([
+    b = new Map([
         [m.X.CONNECTIONS_PANEL, a.ImpressionNames.USER_SETTINGS_CONNECTIONS],
         [m.X.SESSIONS_PANEL, a.ImpressionNames.USER_SETTINGS_SESSIONS]
     ]);
 
-function b(e) {
+function N(e) {
     let {
         target: t,
         ...n
@@ -37,10 +37,10 @@ function b(e) {
         _.A.setState({
             query: ""
         }), c.A.terminate()
-    }, []), [x, b] = i.useState(!1);
+    }, []), [x, N] = i.useState(!1);
     return (i.useLayoutEffect(() => {
         let e = () => {
-            null == p.default.getCurrentUser() && (b(!0), (0, S.default)())
+            null == p.default.getCurrentUser() && (N(!0), (0, S.default)())
         };
         return h.default.addChangeListener(e), () => {
             h.default.removeChangeListener(e), y.A.resetState(), u.A.resetState(), l.A.close()
@@ -52,7 +52,7 @@ function b(e) {
         sidebarFooter: g.A,
         onViewChange: e => {
             A.has(e) || (0, v._)(e);
-            let t = N.get(e);
+            let t = b.get(e);
             null != t && (0, o.x)({
                 type: a.ImpressionTypes.PANE,
                 name: t,

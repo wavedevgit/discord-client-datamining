@@ -18,9 +18,9 @@ function c(e) {
         useSubtitle: c,
         useLeadingDecoration: u,
         useTrailingDecoration: m
-    } = t, g = n?.(), _ = c?.(), x = u?.(), A = m?.(), h = t.layout[0].key, {
+    } = t, g = n?.(), _ = c?.(), x = u?.(), h = m?.(), A = t.layout[0].key, {
         parentPanelNode: p
-    } = (0, a.x)(h), T = p?.useTitle?.(), f = g ?? T;
+    } = (0, a.x)(A), T = p?.useTitle?.(), f = g ?? T;
     return null == p || null == f ? null : (0, i.jsx)(r.U, {
         role: "link",
         title: f,
@@ -33,10 +33,10 @@ function c(e) {
             align: "center",
             justify: "end",
             gap: "sm",
-            children: [null != A && (0, i.jsx)(d.Q, {
-                decoration: A
+            children: [null != h && (0, i.jsx)(d.Q, {
+                decoration: h
             }), (0, i.jsx)(s.uhT, {})]
         }),
-        onClick: () => l.A.navigate(h)
+        onClick: () => l.A.navigate(A)
     })
 }

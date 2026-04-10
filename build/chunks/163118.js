@@ -43,7 +43,7 @@ function _() {
                 })
             }
         }), []),
-        A = s.useCallback(e => {
+        h = s.useCallback(e => {
             _(e), g.nextTick(() => {
                 a.Ay.updateLocale(e), (0, r.OoC)(c.USER_SETTINGS_MODAL_KEY) && (0, c.openUserSettings)(d.X.LANGUAGE_AND_TIME_PANEL)
             })
@@ -54,6 +54,6 @@ function _() {
         description: u.intl.string(u.t.rTPlcq),
         value: t,
         options: x,
-        onSelectionChange: A
+        onSelectionChange: h
     })
 }

@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(511484),
     _ = n(202639),
     x = n(811611),
-    A = n(407217),
-    h = n(101058),
+    h = n(407217),
+    A = n(101058),
     p = n(207803),
     T = n(84540),
     f = n(836602),
@@ -140,7 +140,7 @@ function k(e) {
                     }), (0, i.jsx)(O.A, {
                         className: M.fz,
                         user: t,
-                        pendingAvatarSrc: (0, h.V7)({
+                        pendingAvatarSrc: (0, A.V7)({
                             userId: t.id,
                             image: H ?? V
                         }),
@@ -175,7 +175,7 @@ function k(e) {
                 showUpsell: !0,
                 text: G.intl.format(G.t.TmfgI2, {
                     onClick: () => {
-                        (0, A.K)({
+                        (0, h.K)({
                             onSubscribeFinish: q
                         })
                     }

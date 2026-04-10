@@ -1,6 +1,6 @@
 /** chunk id: 976025 params = (module,exports,require) **/
 n.d(t, {
-    z: () => A
+    z: () => h
 });
 var i = n(934551),
     s = n(554146),
@@ -26,7 +26,7 @@ let m = [{
         useObscuredNotice: l.L,
         buildLayout: () => [g, _]
     }),
-    A = (0, r.i4)(o.X.CONNECTIONS_SIDEBAR_ITEM, {
+    h = (0, r.i4)(o.X.CONNECTIONS_SIDEBAR_ITEM, {
         useTitle: () => u.intl.string(u.t["3fe7U5"]),
         icon: i.LinkIcon,
         getDismissibleBadges: () => m,

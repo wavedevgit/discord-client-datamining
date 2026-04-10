@@ -105,7 +105,7 @@ let W = e => {
             wrap: ei ? h.A.Wrap.WRAP : h.A.Wrap.NO_WRAP,
             className: a()(d, V.jx, ei ? V.Vd : V.xM),
             children: (() => {
-                if (!(0, T.A)(t)) {
+                if (!(0, T.Ay)(t)) {
                     if ((0, N.A)(t)) return (0, i.jsx)(j.A, {
                         platform: u.A.get(F.fg2.XBOX),
                         variant: C,

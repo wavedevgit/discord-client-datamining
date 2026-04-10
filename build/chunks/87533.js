@@ -1,66 +1,66 @@
 /** chunk id: 87533 params = (module,exports,require) **/
-n.d(e, {
-    A: () => d
+l.d(e, {
+    A: () => c
 });
-var l = n(627968);
-n(64700);
-var i = n(397927),
-    s = n(333672),
-    a = n(652215),
-    r = n(985018),
-    o = n(703060);
-let c = {
+var n = l(627968);
+l(64700);
+var i = l(397927),
+    s = l(333672),
+    r = l(652215),
+    a = l(985018),
+    o = l(703060);
+let d = {
     type: "rive",
     rive: i.DSM,
     aspectRatio: "16/9"
 };
 
-function d(t) {
+function c(t) {
     let {
         transitionState: e,
-        guild: n,
-        slotCount: d,
+        guild: l,
+        slotCount: c,
         canceledCount: u,
-        isModifyingSubscription: m,
-        error: x,
-        expressiveCta: h,
-        onConfirm: g,
-        onClose: p
-    } = t, f = [{
-        variant: h ? "expressive" : "primary",
-        text: r.intl.formatToPlainString(r.t.ZU5x5w, {
-            slotCount: d
+        isModifyingSubscription: x,
+        error: m,
+        expressiveCta: g,
+        onConfirm: h,
+        onClose: C
+    } = t, j = [{
+        variant: g ? "expressive" : "primary",
+        text: a.intl.formatToPlainString(a.t.ZU5x5w, {
+            slotCount: c
         }),
-        onClick: g,
-        loading: m,
-        disabled: m
+        onClick: h,
+        loading: x,
+        disabled: x
     }];
-    return (0, l.jsxs)(i.kpP, {
+    return (0, n.jsxs)(i.kpP, {
         transitionState: e,
-        onClose: p,
-        graphic: c,
-        title: r.intl.string(r.t["7KP/fI"]),
-        actions: f,
-        children: [(0, l.jsx)(i.Text, {
+        onClose: C,
+        graphic: d,
+        title: a.intl.string(a.t["7KP/fI"]),
+        actions: j,
+        children: [(0, n.jsx)(i.Text, {
             variant: "text-md/normal",
-            children: r.intl.string(r.t.yTlZV0)
-        }), (0, l.jsx)(s.Ay, {
+            children: a.intl.string(a.t.yTlZV0)
+        }), (0, n.jsx)(s.Ay, {
             className: o.g,
-            guild: n,
-            subscriptionChange: d
-        }), (0, l.jsx)(i.Text, {
+            guild: l,
+            subscriptionChange: c
+        }), (0, n.jsx)(i.Text, {
             variant: "text-md/normal",
             className: o.$,
-            children: r.intl.formatToPlainString(r.t.KPnDlu, {
-                days: a.FI6,
-                slotCount: d
+            children: a.intl.formatToPlainString(a.t.KPnDlu, {
+                days: r.FI6,
+                slotCount: c
             })
-        }), u > 0 ? (0, l.jsx)(s.ti, {
+        }), u > 0 ? (0, n.jsx)(s.ti, {
             canceledCount: u
-        }) : null, null != x && (0, l.jsx)(i.Text, {
+        }) : null, null != m && (0, n.jsx)(i.Text, {
             color: "text-feedback-critical",
             variant: "text-sm/semibold",
-            children: x.message
+            children: m.message
         })]
     })
 }

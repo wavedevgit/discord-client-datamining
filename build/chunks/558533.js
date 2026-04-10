@@ -18,8 +18,8 @@ let _ = e => {
         entrypoint: t
     } = e, n = (0, d.V)(), _ = (0, o.O)(), x = (0, u.NF)({
         trialOffer: n
-    }), A = (0, u.Tp)(), h = (0, l.bG)([r.A], () => r.A.getReminderStateId());
+    }), h = (0, u.Tp)(), A = (0, l.bG)([r.A], () => r.A.getReminderStateId());
     return (s.useEffect(() => {
-        !0 === x && (0, u.QG)(), !0 === A && (0, u.ne)(h), (null != n || null != _) && (0, a.u1)(n, _)
-    }, [n, _, x, A, h]), t === g.Mf.UserSettings) ? (0, i.jsx)(m.A, {}) : t === g.Mf.ApplicationStoreHome ? (0, i.jsx)(c.A, {}) : null
+        !0 === x && (0, u.QG)(), !0 === h && (0, u.ne)(A), (null != n || null != _) && (0, a.u1)(n, _)
+    }, [n, _, x, h, A]), t === g.Mf.UserSettings) ? (0, i.jsx)(m.A, {}) : t === g.Mf.ApplicationStoreHome ? (0, i.jsx)(c.A, {}) : null
 }

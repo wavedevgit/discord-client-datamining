@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(974544),
     _ = n(323082),
     x = n(531260),
-    A = n(262077),
-    h = n(160946),
+    h = n(262077),
+    A = n(160946),
     p = n(235986),
     T = n(769015),
     f = n(723588),
@@ -90,7 +90,7 @@ function Z() {
 let q = function() {
     var e;
     let t = (0, a.bG)([O.A], () => O.A.getPremiumTypeSubscription()),
-        n = (0, A.A)({
+        n = (0, h.A)({
             subscriptionFilter: e => w.Hy.has(e.status)
         }),
         l = (0, a.bG)([I.default], () => I.default.getCurrentUser()),
@@ -98,7 +98,7 @@ let q = function() {
         p = (0, a.bG)([y.A], () => null != t && null != t.paymentSourceId ? y.A.getPaymentSource(t.paymentSourceId) : null, [t]),
         T = (0, a.bG)([O.A], () => O.A.hasFetchedSubscriptions()),
         R = (0, a.bG)([j.A], () => j.A.isBusy),
-        D = (0, h.Y)(),
+        D = (0, A.Y)(),
         k = V.A.useField("subsection");
     s.useEffect(() => {
         (0, v._)(null != k ? X[k] : C.X.SUBSCRIPTIONS_PANEL)

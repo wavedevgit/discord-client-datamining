@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(652215),
     _ = n(788868),
     x = n(985018),
-    A = n(423149),
-    h = n(896237),
+    h = n(423149),
+    A = n(896237),
     p = n(448085);
 
 function T(e) {
@@ -33,28 +33,28 @@ function T(e) {
             type: _.e.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE
         })
     }, [n, S]), n) ? (0, i.jsxs)("div", {
-        className: A.ry,
+        className: h.ry,
         children: [(0, i.jsx)("div", {
             children: T
         }), (0, i.jsxs)("div", {
-            className: A.Wc,
+            className: h.Wc,
             children: [(0, i.jsx)("img", {
-                className: A.Tn,
+                className: h.Tn,
                 alt: x.intl.string(x.t.LHFZQy),
                 src: function(e) {
                     switch (e) {
                         case g.NJ8.DARK:
                         case g.NJ8.DARKER:
                         case g.NJ8.MIDNIGHT:
-                            return h;
+                            return A;
                         case g.NJ8.LIGHT:
                             return p;
                         default:
-                            return h
+                            return A
                     }
                 }(f)
             }), (0, i.jsxs)("div", {
-                className: A._9,
+                className: h._9,
                 children: [(0, i.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     color: "always-white",

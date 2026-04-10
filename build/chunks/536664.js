@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(964486),
     _ = n(15285),
     x = n(286237),
-    A = n(769015),
-    h = n(496885),
+    h = n(769015),
+    A = n(496885),
     p = n(810412),
     T = n(41984),
     f = n(833551),
@@ -173,7 +173,7 @@ function R() {
         title: (0, i.jsxs)(i.Fragment, {
             children: [t?.name ?? P?.name ?? e?.gameName ?? "", null != P && P.verified ? (0, i.jsx)(o.m, {
                 text: y.intl.string(y.t["4PJP5p"]),
-                children: (0, i.jsx)(h.A, {
+                children: (0, i.jsx)(A.A, {
                     size: j.zj,
                     color: d.LU0.colors.BACKGROUND_BRAND.css,
                     children: (0, i.jsx)(d.Uzd, {
@@ -199,10 +199,10 @@ function R() {
                 children: y.intl.string(y.t.CDOx3w)
             })]
         }),
-        icon: (0, i.jsx)(A.A, {
+        icon: (0, i.jsx)(h.A, {
             game: t,
             pid: e?.pid,
-            size: A.M.MEDIUM
+            size: h.M.MEDIUM
         }),
         "aria-label": y.intl.string(y.t["87O5GC"]),
         action: (0, i.jsx)(d.DUT, {

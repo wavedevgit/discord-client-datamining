@@ -29,7 +29,7 @@ function d(e) {
                 size: "xs"
             })]
         })
-    }), [x, A] = s.useState(null), h = s.useCallback(() => {
+    }), [x, h] = s.useState(null), A = s.useCallback(() => {
         if (null == x) return;
         let {
             scrollHeight: e,
@@ -41,15 +41,15 @@ function d(e) {
         })
     }, [x]);
     s.useEffect(() => {
-        requestAnimationFrame(h)
-    }, [h, t, n]);
+        requestAnimationFrame(A)
+    }, [A, t, n]);
     let p = "auto";
     return null != m && (p = c ? `${m.expandedHeight}px` : `${m.truncatedHeight}px`), (0, i.jsxs)("div", {
         children: [(0, i.jsx)(r.Text, {
             ...d,
             className: o.Qs,
             lineClamp: c ? void 0 : n,
-            ref: A,
+            ref: h,
             style: {
                 height: p
             },
