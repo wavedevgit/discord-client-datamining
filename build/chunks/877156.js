@@ -1,37 +1,37 @@
 /** chunk id: 877156 params = (module,exports,require) **/
-t.d(n, {
-    A: () => I
+n.d(t, {
+    A: () => g
 });
-var l = t(627968),
-    i = t(64700),
-    r = t(311907),
-    s = t(732955),
-    a = t(397927),
-    o = t(775602),
-    u = t(688810),
-    d = t(912140),
-    c = t(674658),
-    p = t(780898),
-    m = t(512213),
-    E = t(898461),
-    _ = t(837015),
-    S = t(61750),
-    x = t(287809),
-    T = t(482132),
-    P = t(758836),
-    h = t(985018),
-    A = t(527667);
+var l = n(627968),
+    i = n(64700),
+    r = n(311907),
+    s = n(732955),
+    a = n(397927),
+    o = n(775602),
+    u = n(688810),
+    d = n(912140),
+    c = n(674658),
+    p = n(780898),
+    m = n(512213),
+    E = n(898461),
+    _ = n(837015),
+    S = n(61750),
+    x = n(287809),
+    P = n(482132),
+    T = n(758836),
+    A = n(985018),
+    h = n(527667);
 
-function I(e) {
+function g(e) {
     let {
-        rewardSkuId: n,
-        onClose: t
-    } = e, I = (0, r.bG)([x.default], () => x.default.getCurrentUser()), g = (0, r.bG)([o.A], () => o.A.useReducedMotion), {
+        rewardSkuId: t,
+        onClose: n
+    } = e, g = (0, r.bG)([x.default], () => x.default.getCurrentUser()), I = (0, r.bG)([o.A], () => o.A.useReducedMotion), {
         analyticsLocations: f
     } = (0, u.Ay)(), j = a._3J.SIZE_32, {
         product: R,
         isFetching: M
-    } = (0, c.q)(n), [C, N] = i.useState(!1), O = R?.items[0], {
+    } = (0, c.q)(t), [C, N] = i.useState(!1), O = R?.items[0], {
         isNameplateReward: y,
         nameplateData: b,
         rewardAvatarDecorationSrc: v
@@ -55,23 +55,23 @@ function I(e) {
             legacyAssetId: O.asset,
             skuId: O.skuId,
             size: j,
-            canAnimate: !g
+            canAnimate: !I
         })
     } : {
         isNameplateReward: !1,
         nameplateData: null,
         rewardAvatarDecorationSrc: null
-    }, [O, j, g]);
-    return (0, l.jsx)(T.UX, {
+    }, [O, j, I]);
+    return (0, l.jsx)(P.UX, {
         children: (0, l.jsx)(s.jlY, {
             children: (0, l.jsxs)("div", {
-                className: A.W,
+                className: h.W,
                 children: [y && null != b ? (0, l.jsx)("div", {
-                    className: A.D,
+                    className: h.D,
                     onMouseEnter: () => N(!0),
                     onMouseLeave: () => N(!1),
                     children: (0, l.jsx)(m.a, {
-                        user: I,
+                        user: g,
                         nameplate: null,
                         nameplateData: b,
                         showPlaceholderUser: !0,
@@ -79,20 +79,20 @@ function I(e) {
                         isHighlighted: C
                     })
                 }) : (0, l.jsx)(a.JsQ, {
-                    "aria-label": I?.username,
+                    "aria-label": g?.username,
                     size: j,
-                    src: I?.getAvatarURL(void 0, (0, a.FT9)(j), !g),
+                    src: g?.getAvatarURL(void 0, (0, a.FT9)(j), !I),
                     avatarDecoration: v
                 }), (0, l.jsx)(s.$nd, {
                     variant: "primary",
-                    text: h.intl.string(h.t.kMYVwv),
+                    text: A.intl.string(A.t.kMYVwv),
                     loading: M,
                     onClick: () => {
-                        null != R && (t(), (0, S.A)({
+                        null != R && (n(), (0, S.A)({
                             product: R,
                             shouldShowPromotionalExperience: !0,
                             analyticsLocations: f,
-                            purchaseType: P.gs.PROMOTIONAL
+                            purchaseType: T.gs.PROMOTIONAL
                         }))
                     }
                 })]

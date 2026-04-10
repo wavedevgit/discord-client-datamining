@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     s = n(837381),
     o = n(934551),
     d = n(158954),
@@ -64,8 +64,8 @@ let M = e => {
         let {
             selected: t,
             locationState: n,
-            icon: a,
-            onClick: l,
+            icon: l,
+            onClick: a,
             collectibleShopTab: o,
             onMouseEnter: d,
             onMouseLeave: c,
@@ -78,7 +78,7 @@ let M = e => {
         } = e, C = (0, s.rm)("shop"), T = p.A.HOME_PAGE_SHOP_TAB, {
             analyticsLocations: S
         } = (0, E.Ay)(T), [x, v] = r.useState(!1), b = r.useCallback(() => {
-            void 0 !== l && l(), void 0 !== o && (0, N.Cz)({
+            void 0 !== a && a(), void 0 !== o && (0, N.Cz)({
                 tab: o,
                 analyticsLocations: S,
                 analyticsSource: T
@@ -86,13 +86,13 @@ let M = e => {
                 analyticsSource: T,
                 analyticsLocations: S
             })
-        }, [T, S, l, v, o]), y = R.BVt.COLLECTIBLES_SHOP;
+        }, [T, S, a, v, o]), y = R.BVt.COLLECTIBLES_SHOP;
         return (0, i.jsxs)(i.Fragment, {
             children: [x && (0, i.jsx)(w, {}), (0, i.jsx)(m.z9, {
                 showHoverGradient: A ?? !1,
                 selected: t,
                 route: y,
-                icon: a ?? h.U1X,
+                icon: l ?? h.U1X,
                 text: D.intl.string(D.t.pWG4ze),
                 locationState: n,
                 ...C,
@@ -118,7 +118,7 @@ let M = e => {
     },
     V = e => {
         let t, n, {
-                displayOptions: a,
+                displayOptions: l,
                 ...s
             } = e,
             [o, d] = r.useState(!1),
@@ -127,7 +127,7 @@ let M = e => {
             m = r.useRef(null),
             p = (0, g.Ay)(),
             E = (0, A.Mw)(p);
-        o ? (t = E ? a.entryPointBackgroundAssets?.srcDarkHovered : a.entryPointBackgroundAssets?.srcLightHovered, n = E ? a.entrypointBackgroundStyle?.hovered?.dark : a.entrypointBackgroundStyle?.hovered?.light) : (t = E ? a.entryPointBackgroundAssets?.srcDark : a.entryPointBackgroundAssets?.srcLight, n = E ? a.entrypointBackgroundStyle?.resting?.dark : a.entrypointBackgroundStyle?.resting?.light);
+        o ? (t = E ? l.entryPointBackgroundAssets?.srcDarkHovered : l.entryPointBackgroundAssets?.srcLightHovered, n = E ? l.entrypointBackgroundStyle?.hovered?.dark : l.entrypointBackgroundStyle?.hovered?.light) : (t = E ? l.entryPointBackgroundAssets?.srcDark : l.entryPointBackgroundAssets?.srcLight, n = E ? l.entrypointBackgroundStyle?.resting?.dark : l.entrypointBackgroundStyle?.resting?.light);
         let I = r.useCallback(() => {
                 d(!0);
                 let e = () => h(k(_));
@@ -139,20 +139,20 @@ let M = e => {
         return r.useEffect(() => () => {
             null != m.current && cancelAnimationFrame(m.current)
         }, []), (0, i.jsx)(C.A, {
-            title: a.title(),
-            body: a.body?.() ?? "",
+            title: l.title(),
+            body: l.body?.() ?? "",
             asset: (0, i.jsx)("img", {
-                src: a.asset,
+                src: l.asset,
                 alt: "",
                 "aria-hidden": !0
             }),
             children: (0, i.jsxs)(U, {
-                className: null != a.entryPointClassName ? (0, T.t)(j, a.entryPointClassName) : void 0,
+                className: null != l.entryPointClassName ? (0, T.t)(j, l.entryPointClassName) : void 0,
                 ...s,
-                icon: a.entryPointIcon,
+                icon: l.entryPointIcon,
                 onMouseEnter: I,
                 onMouseLeave: f,
-                ...!0 === a.showHoverGradient && {
+                ...!0 === l.showHoverGradient && {
                     showHoverGradient: !0,
                     hoverGradientStart: u.A.colors.COLLECTIBLES_TAB_GRADIENT_CENTER,
                     hoverGradientMiddle: u.A.colors.COLLECTIBLES_TAB_GRADIENT_INNER,
@@ -166,13 +166,13 @@ let M = e => {
                     },
                     children: null != t && (0, i.jsx)("img", {
                         src: t,
-                        className: l()(j.marketingButtonBackgroundImage, c && j.marketingButtonBackgroundImageFaded),
+                        className: a()(j.marketingButtonBackgroundImage, c && j.marketingButtonBackgroundImageFaded),
                         alt: "",
                         "aria-hidden": !0
                     })
                 }), (0, i.jsx)(M, {
-                    badgeIcon: a.badgeIcon,
-                    badgeText: a.badgeText
+                    badgeIcon: l.badgeIcon,
+                    badgeText: l.badgeText
                 })]
             })
         })
@@ -181,7 +181,7 @@ let M = e => {
         let {
             displayOptions: t,
             ...n
-        } = e, a = r.useMemo(() => {
+        } = e, l = r.useMemo(() => {
             let e = null != t.emojiName ? f.Ay.getByName(t.emojiName)?.surrogates : null;
             return (0, i.jsxs)(h.Text, {
                 variant: "text-sm/medium",
@@ -193,7 +193,7 @@ let M = e => {
         }, [t]);
         return (0, i.jsx)(h.STz, {
             "data-migration-pending": !0,
-            text: a,
+            text: l,
             tooltipClassName: j.marketingBadgeTooltip,
             position: "right",
             delay: 100,
@@ -213,7 +213,7 @@ let M = e => {
         let {
             displayOptions: t,
             dismissContent: n,
-            ...a
+            ...l
         } = e, s = r.useRef(null), o = r.useRef(null), [d, c] = r.useState(!1), u = (0, g.Ay)(), h = (0, A.Mw)(u), _ = t.entryPointBackgroundAssets, m = t.entrypointBackgroundStyle, p = h ? _?.srcDarkHovered : _?.srcLightHovered, E = h ? m?.hovered?.dark : m?.hovered?.light;
         return r.useEffect(() => {
             if (null == p || "" === p) return void c(!1);
@@ -227,7 +227,7 @@ let M = e => {
             }
         }, [p]), (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)(U, {
-                ...a,
+                ...l,
                 onClick: () => n(P.i.TAKE_ACTION),
                 listItemRef: s,
                 children: [(0, i.jsx)("div", {
@@ -238,7 +238,7 @@ let M = e => {
                     } : void 0,
                     children: null != p && (0, i.jsx)("img", {
                         src: p,
-                        className: l()(j.marketingButtonBackgroundImage, d && j.marketingButtonBackgroundImageFaded),
+                        className: a()(j.marketingButtonBackgroundImage, d && j.marketingButtonBackgroundImageFaded),
                         alt: "",
                         "aria-hidden": !0
                     })
@@ -258,14 +258,14 @@ let M = e => {
         let {
             dismissContent: t,
             ...n
-        } = e, a = r.useRef(null);
+        } = e, l = r.useRef(null);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(U, {
                 ...n,
                 onClick: () => t(P.i.TAKE_ACTION),
-                listItemRef: a
+                listItemRef: l
             }), (0, i.jsx)(v.A, {
-                targetElementRef: a,
+                targetElementRef: l,
                 onClick: () => t(P.i.TAKE_ACTION),
                 onRequestClose: () => t(P.i.USER_DISMISS)
             })]
@@ -276,9 +276,9 @@ let M = e => {
             selected: t,
             onClick: n,
             locationState: r,
-            listItemRef: a
+            listItemRef: l
         } = e, {
-            shopButtonDisplayOptions: l,
+            shopButtonDisplayOptions: a,
             dismissShopButtonDC: s
         } = (0, b.A)(), o = !(0, h.ueM)(), [d, u] = (0, I.kn)(o ? [c.M.WISHLIST_SHOP_BUTTON_POPOVER] : []), A = {
             selected: t,
@@ -286,18 +286,18 @@ let M = e => {
             onClick: () => {
                 s(), n?.()
             },
-            listItemRef: a
+            listItemRef: l
         };
-        if (null != l) switch (l.type) {
+        if (null != a) switch (a.type) {
             case O.FF.TOOLTIP:
                 return (0, i.jsx)(B, {
                     ...A,
-                    displayOptions: l
+                    displayOptions: a
                 });
             case O.FF.TAB_TOOLTIP:
                 return (0, i.jsx)(V, {
                     ...A,
-                    displayOptions: l
+                    displayOptions: a
                 });
             case O.FF.BADGE:
                 return (0, i.jsx)(G, {
@@ -307,7 +307,7 @@ let M = e => {
                 return (0, i.jsx)(H, {
                     dismissContent: s,
                     ...A,
-                    displayOptions: l
+                    displayOptions: a
                 })
         }
         return d === c.M.WISHLIST_SHOP_BUTTON_POPOVER ? (0, i.jsx)(F, {

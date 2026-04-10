@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(735438),
     r = n.n(i),
-    a = n(179771),
-    l = n(846293),
+    l = n(179771),
+    a = n(846293),
     s = n(956793),
     o = n(976860),
     d = n(95701),
@@ -24,7 +24,7 @@ var i = n(735438),
 let T = {
     [C.e$_.GET_CHANNEL]: {
         scope: {
-            [f.sm.ANY]: [a.F.RPC, a.F.GUILDS, a.F.GUILDS_CHANNELS_READ]
+            [f.sm.ANY]: [l.F.RPC, l.F.GUILDS, l.F.GUILDS_CHANNELS_READ]
         },
         handler(e) {
             let {
@@ -38,7 +38,7 @@ let T = {
             }, `Invalid channel id: ${t}`);
             if (i.isPrivate()) {
                 let e = n.authorization.scopes;
-                if (!e.includes(a.F.RPC) && !e.includes(a.F.DM_CHANNELS_READ)) throw new g.A({
+                if (!e.includes(l.F.RPC) && !e.includes(l.F.DM_CHANNELS_READ)) throw new g.A({
                     errorCode: C.Lw6.INVALID_PERMISSIONS
                 }, "Invalid scope")
             }
@@ -46,7 +46,7 @@ let T = {
         }
     },
     [C.e$_.GET_CHANNELS]: {
-        scope: a.F.RPC,
+        scope: l.F.RPC,
         handler(e) {
             let {
                 args: {
@@ -83,7 +83,7 @@ let T = {
     },
     [C.e$_.GET_CHANNEL_PERMISSIONS]: {
         scope: {
-            [f.sm.ANY]: [a.F.GUILDS_MEMBERS_READ, a.F.GUILDS_CHANNELS_READ]
+            [f.sm.ANY]: [l.F.GUILDS_MEMBERS_READ, l.F.GUILDS_CHANNELS_READ]
         },
         handler(e) {
             let t = (0, I.A)();
@@ -96,7 +96,7 @@ let T = {
         }
     },
     [C.e$_.SELECT_VOICE_CHANNEL]: {
-        scope: a.F.RPC,
+        scope: l.F.RPC,
         validation: e => (0, E.A)(e).required().keys({
             channel_id: e.string().allow(null),
             timeout: e.number().min(0).max(60),
@@ -110,13 +110,13 @@ let T = {
                 args: {
                     channel_id: i,
                     timeout: r = 0,
-                    force: a = !1,
-                    navigate: l = !1
+                    force: l = !1,
+                    navigate: a = !1
                 }
             } = e;
             if (!i) return s.default.selectVoiceChannel(null), null;
             let E = h.A.getVoiceChannelId();
-            if (null != E && E !== i && !1 === a) throw new g.A({
+            if (null != E && E !== i && !1 === l) throw new g.A({
                 errorCode: C.Lw6.SELECT_VOICE_FORCE_REQUIRED
             }, "User is already joined to a voice channel.");
             return t.storeWait(n, () => c.A.getChannel(i), r).catch(() => {
@@ -141,13 +141,13 @@ let T = {
                         errorCode: C.Lw6.INVALID_PERMISSIONS
                     }, "Connect permission required to join channel")
                 }
-                return s.default.selectVoiceChannel(t.id), l && (0, o.bG)(C.BVt.CHANNEL(t.guild_id, t.id)), n
+                return s.default.selectVoiceChannel(t.id), a && (0, o.bG)(C.BVt.CHANNEL(t.guild_id, t.id)), n
             })
         }
     },
     [C.e$_.GET_SELECTED_VOICE_CHANNEL]: {
         scope: {
-            [f.sm.ANY]: [a.F.RPC, a.F.RPC_VOICE_READ]
+            [f.sm.ANY]: [l.F.RPC, l.F.RPC_VOICE_READ]
         },
         handler(e) {
             let {
@@ -157,7 +157,7 @@ let T = {
         }
     },
     [C.e$_.SELECT_TEXT_CHANNEL]: {
-        scope: a.F.RPC,
+        scope: l.F.RPC,
         validation: e => (0, E.A)(e).required().keys({
             channel_id: e.string().allow(null),
             timeout: e.number().min(0).max(60)
@@ -193,7 +193,7 @@ let T = {
         }
     },
     [C.e$_.CREATE_CHANNEL_INVITE]: {
-        scope: a.F.RPC,
+        scope: l.F.RPC,
         handler(e) {
             let {
                 args: {
@@ -201,7 +201,7 @@ let T = {
                     ...n
                 }
             } = e;
-            return l.Ay.createInvite(t, n, "RPC").catch(() => {
+            return a.Ay.createInvite(t, n, "RPC").catch(() => {
                 throw new g.A({
                     errorCode: C.Lw6.INVALID_PERMISSIONS
                 }, `Unable to generate an invite for ${t}. Does this user have permissions?`)

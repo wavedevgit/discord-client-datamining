@@ -6,9 +6,9 @@ n.d(t, {
     SY: () => z
 });
 var i, r = n(627968),
-    a = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    s = n.n(a),
     o = n(311907),
     d = n(397927),
     c = n(104171),
@@ -41,13 +41,13 @@ var i, r = n(627968),
     U = n(652215),
     G = n(985018),
     k = n(999476);
-let V = a.memo(function(e) {
+let V = l.memo(function(e) {
     let {
         heading: t,
         location: n,
         locationIcon: i,
-        details: a,
-        detailsIcon: l,
+        details: l,
+        detailsIcon: a,
         topic: o,
         onClickCloseIcon: c,
         children: u
@@ -84,17 +84,17 @@ let V = a.memo(function(e) {
                 variant: "text-xs/normal",
                 className: k.HA,
                 children: n
-            }), null != a && null != l && (0, r.jsxs)(r.Fragment, {
+            }), null != l && null != a && (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)(d.Text, {
                     className: k.hY,
                     color: "none",
                     variant: "text-xs/normal",
                     children: "•"
-                }), l, (0, r.jsx)(d.Text, {
+                }), a, (0, r.jsx)(d.Text, {
                     color: "none",
                     variant: "text-xs/normal",
                     className: k.zH,
-                    children: a
+                    children: l
                 })]
             })]
         }), u]
@@ -105,12 +105,12 @@ function B(e) {
     let {
         guildEvent: t,
         channel: n
-    } = e, i = (0, u.Ay)(n), a = (0, o.yK)([C.Ay], () => C.Ay.getVoiceStatesForChannel(n).map(e => {
+    } = e, i = (0, u.Ay)(n), l = (0, o.yK)([C.Ay], () => C.Ay.getVoiceStatesForChannel(n).map(e => {
         let {
             user: t
         } = e;
         return t
-    }), [n]), l = (0, A.gU)(n);
+    }), [n]), a = (0, A.gU)(n);
     return (0, r.jsx)(V, {
         onClickCloseIcon: () => (0, v.iF)({
             eventId: t?.id
@@ -118,14 +118,14 @@ function B(e) {
         heading: G.intl.string(G.t["X2K3/4"]),
         topic: t.name,
         location: i,
-        locationIcon: null != l ? (0, r.jsx)(l, {
+        locationIcon: null != a ? (0, r.jsx)(a, {
             size: "xs",
             color: "currentColor",
             className: k.uE
         }) : null,
         children: (0, r.jsx)($, {
             channel: n,
-            speakers: a,
+            speakers: l,
             voiceType: 1
         })
     })
@@ -135,8 +135,8 @@ function H(e) {
     let {
         guildEvent: t,
         noticeType: n
-    } = e, i = (0, j.G3)(t), a = (0, o.bG)([x.Ay], () => x.Ay.isInterestedInEventRecurrence(t.id, i), [t.id, i]), l = (0, o.bG)([y.A], () => y.A.getUpcomingNoticeSeenTime(t.id), [t.id]);
-    return a || null != l || (0, v.pE)(t.id), (0, r.jsx)(d.Button, {
+    } = e, i = (0, j.G3)(t), l = (0, o.bG)([x.Ay], () => x.Ay.isInterestedInEventRecurrence(t.id, i), [t.id, i]), a = (0, o.bG)([y.A], () => y.A.getUpcomingNoticeSeenTime(t.id), [t.id]);
+    return l || null != a || (0, v.pE)(t.id), (0, r.jsx)(d.Button, {
         onClick: function() {
             (0, M.A)(t.id, null, t.guild_id, () => setTimeout(() => (0, v.Lx)(t.id), 1e3)), T.default.track(U.HAw.CHANNEL_NOTICE_CTA_CLICKED, {
                 guild_id: t.guild_id,
@@ -144,8 +144,8 @@ function H(e) {
             })
         },
         text: G.intl.string(G.t.DlcqlU),
-        icon: a ? d.A9s : d.XFE,
-        variant: a ? "secondary" : "primary",
+        icon: l ? d.A9s : d.XFE,
+        variant: l ? "secondary" : "primary",
         size: "sm",
         fullWidth: !0
     })
@@ -155,7 +155,7 @@ function F(e) {
     let {
         guildEvent: t,
         noticeType: n
-    } = e, i = (0, D.oF)(t), l = null != i ? (0, O.l)(i, !0) : null, o = (0, D.WN)(t), c = (0, u.Ay)(o), h = (0, A.gU)(o), {
+    } = e, i = (0, D.oF)(t), a = null != i ? (0, O.l)(i, !0) : null, o = (0, D.WN)(t), c = (0, u.Ay)(o), h = (0, A.gU)(o), {
         startTime: _,
         endTime: m
     } = (0, R.Ay)(t), {
@@ -167,7 +167,7 @@ function F(e) {
     }) : G.intl.string(G.t.WINqKV) : G.intl.formatToPlainString(G.t.DC6h3G, {
         date: g
     });
-    return a.useEffect(() => {
+    return l.useEffect(() => {
         T.default.track(U.HAw.CHANNEL_NOTICE_VIEWED, {
             notice_type: n,
             guild_id: t.guild_id
@@ -231,7 +231,7 @@ function F(e) {
                 color: "none",
                 variant: "text-xs/normal",
                 className: k.HA,
-                children: c ?? l
+                children: c ?? a
             })]
         }), (0, r.jsx)(H, {
             guildEvent: t,
@@ -267,7 +267,7 @@ function Y(e) {
 function W(e) {
     let {
         guildEvent: t
-    } = e, n = a.useCallback(() => {
+    } = e, n = l.useCallback(() => {
         (0, S.uR)({
             eventId: t.id
         })
@@ -309,8 +309,8 @@ function q(e) {
     let {
         stageInstance: t,
         channel: n
-    } = e, i = (0, u.Ay)(n), a = (0, o.yK)([m.A], () => [...new Set(m.A.getMutableParticipants(n.id, g.ip.SPEAKER).map(e => e.user))], [n.id]), l = (0, o.bG)([m.A], () => m.A.getParticipantCount(n.id, g.ip.AUDIENCE), [n.id]), s = G.intl.formatToPlainString(G.t["+v2pN2"], {
-        count: `${l}`
+    } = e, i = (0, u.Ay)(n), l = (0, o.yK)([m.A], () => [...new Set(m.A.getMutableParticipants(n.id, g.ip.SPEAKER).map(e => e.user))], [n.id]), a = (0, o.bG)([m.A], () => m.A.getParticipantCount(n.id, g.ip.AUDIENCE), [n.id]), s = G.intl.formatToPlainString(G.t["+v2pN2"], {
+        count: `${a}`
     });
     return (0, r.jsx)(V, {
         onClickCloseIcon: () => (0, v.iF)({
@@ -336,7 +336,7 @@ function q(e) {
         topic: t.topic,
         children: (0, r.jsx)($, {
             channel: n,
-            speakers: a,
+            speakers: l,
             voiceType: 2
         })
     })
@@ -348,7 +348,7 @@ function $(e) {
         channel: t,
         speakers: n,
         voiceType: i
-    } = e, l = t.getGuildId(), u = a.useMemo(() => n.slice(0, 3), [n]), A = (0, o.bG)([f.A], () => f.A.can(U.xBc.CONNECT, t)), h = (0, I.A)(t.id), _ = G.intl.string(G.t.VJlc0S);
+    } = e, a = t.getGuildId(), u = l.useMemo(() => n.slice(0, 3), [n]), A = (0, o.bG)([f.A], () => f.A.can(U.xBc.CONNECT, t)), h = (0, I.A)(t.id), _ = G.intl.string(G.t.VJlc0S);
     switch (i) {
         case 1:
             _ = G.intl.string(G.t.VJlc0S);
@@ -362,11 +362,11 @@ function $(e) {
         default:
             (0, N.xb)(i)
     }
-    return null == l ? null : (0, r.jsxs)(r.Fragment, {
+    return null == a ? null : (0, r.jsxs)(r.Fragment, {
         children: [u.length > 0 ? (0, r.jsxs)("div", {
             className: s()(k.fI, k.pF),
             children: [(0, r.jsx)(c.Ay, {
-                guildId: l,
+                guildId: a,
                 users: u,
                 showUserPopout: !0,
                 size: c.DN.SIZE_16
@@ -374,7 +374,7 @@ function $(e) {
                 color: "none",
                 variant: "text-xs/normal",
                 className: k.c8,
-                children: (0, p.c)(l, u, t?.id, n.length)
+                children: (0, p.c)(a, u, t?.id, n.length)
             })]
         }) : null, A && null == h && (0, r.jsx)(K, {
             channel: t,
@@ -382,25 +382,25 @@ function $(e) {
         })]
     })
 }
-let Q = a.memo(function(e) {
+let Q = l.memo(function(e) {
     let {
         guild: t
-    } = e, n = (0, L.V)(t.id), i = (0, P.BP)(t.id), a = (0, P.WG)(t.id), l = (0, o.bG)([E.A], () => E.A.getStageInstanceByChannel(n?.id), [n]), {
+    } = e, n = (0, L.V)(t.id), i = (0, P.BP)(t.id), l = (0, P.WG)(t.id), a = (0, o.bG)([E.A], () => E.A.getStageInstanceByChannel(n?.id), [n]), {
         isStageNoticeHidden: s,
         isEventNoticeHidden: d
     } = (0, o.cf)([b.A], () => ({
         isStageNoticeHidden: b.A.isLiveChannelNoticeHidden({
-            stageId: l?.id
+            stageId: a?.id
         }),
         isEventNoticeHidden: b.A.isLiveChannelNoticeHidden({
             eventId: i?.id
         })
-    }), [l, i]), c = null, u = null != l && null != n && !s;
+    }), [a, i]), c = null, u = null != a && null != n && !s;
     null == i || d ? u && (c = (0, r.jsx)(q, {
-        stageInstance: l,
+        stageInstance: a,
         channel: n
     })) : i.entity_type === w.Ps.STAGE_INSTANCE && u ? c = (0, r.jsx)(q, {
-        stageInstance: l,
+        stageInstance: a,
         channel: n
     }) : i.entity_type === w.Ps.EXTERNAL ? c = (0, r.jsx)(Y, {
         guildEvent: i
@@ -409,11 +409,11 @@ let Q = a.memo(function(e) {
         channel: n
     }));
     let A = t.features.has(U.GuildFeatures.COMMUNITY);
-    if (null == c && null != a && !A) {
+    if (null == c && null != l && !A) {
         let {
             upcomingEvent: e,
             noticeType: t
-        } = a;
+        } = l;
         c = (0, r.jsx)(F, {
             guildEvent: e,
             noticeType: t

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(106778);
-let l = [n(426560)],
+    l = n(106778);
+let a = [n(426560)],
     s = ["#FFFFFF"],
     o = 1e3 / 60,
     d = {
@@ -63,10 +63,10 @@ function c(e) {
         className: t,
         firing: n = !0,
         wind: c = 2,
-        sprites: u = l,
+        sprites: u = a,
         spriteColors: A = s,
         confettiConfig: h
-    } = e, [_, m] = r.useState(null), [g, p] = r.useState(null), E = (0, a.f9)(g, _), I = r.useMemo(() => new a.OH({
+    } = e, [_, m] = r.useState(null), [g, p] = r.useState(null), E = (0, l.f9)(g, _), I = r.useMemo(() => new l.OH({
         wind: c
     }), [c]), f = r.useCallback(() => {
         let e = g?.getCanvas();
@@ -92,11 +92,11 @@ function c(e) {
         let e = n ? setInterval(f, o) : null;
         return () => clearInterval(e)
     }, [n, f]), (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(a.Fk, {
+        children: [(0, i.jsx)(l.Fk, {
             ref: p,
             className: t,
             environment: I
-        }), (0, i.jsx)(a.K_, {
+        }), (0, i.jsx)(l.K_, {
             ref: m,
             colors: A,
             sprites: u,

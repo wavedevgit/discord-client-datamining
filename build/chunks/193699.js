@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(503698),
-    a = n.n(r),
-    l = n(397927),
+    l = n.n(r),
+    a = n(397927),
     s = n(290595),
     o = n(755395),
     d = n(780964),
@@ -22,12 +22,12 @@ function m(e) {
         markAsDismissed: n
     } = e;
     return (0, i.jsxs)(o.A, {
-        className: a()(_.Nr, t),
-        children: [(0, i.jsx)(l.Heading, {
+        className: l()(_.Nr, t),
+        children: [(0, i.jsx)(a.Heading, {
             variant: "heading-md/semibold",
             className: _.wx,
             children: h.intl.string(h.t.HcbnMM)
-        }), (0, i.jsx)(l.Text, {
+        }), (0, i.jsx)(a.Text, {
             variant: "text-sm/normal",
             children: h.intl.format(h.t.NkFrzN, {
                 onPrivacyClick: () => {
@@ -36,13 +36,13 @@ function m(e) {
             })
         }), (0, i.jsxs)("div", {
             className: _.UD,
-            children: [(0, i.jsx)(l.Button, {
+            children: [(0, i.jsx)(a.Button, {
                 variant: "primary",
                 size: "sm",
                 fullWidth: !0,
                 text: h.intl.string(h.t.ebojgD),
                 onClick: () => (0, s.U)([u.YAq.PERSONALIZATION], [])
-            }), (0, i.jsx)(l.Button, {
+            }), (0, i.jsx)(a.Button, {
                 variant: "secondary",
                 size: "sm",
                 fullWidth: !0,

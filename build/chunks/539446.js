@@ -1,14 +1,14 @@
 /** chunk id: 539446 params = (module,exports,require) **/
 n.d(t, {
-    V: () => l
+    V: () => a
 });
 var i = n(624265),
     r = n(734057),
-    a = n(508654);
+    l = n(508654);
 
-function l(e) {
-    let t = (0, a.r2)(e),
+function a(e) {
+    let t = (0, l.r2)(e),
         n = (0, i.Ay)(e),
-        l = r.A.getChannel(n[0]?.id);
-    return t ?? l
+        a = r.A.getChannel(n[0]?.id);
+    return t ?? a
 }

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     s = n(615300),
     o = n(837381),
     d = n(397927),
@@ -15,7 +15,7 @@ var u = n(456187);
 let A = function(e) {
     let {
         index: t,
-        children: a,
+        children: l,
         user: A,
         channel: h,
         onClick: _,
@@ -36,7 +36,7 @@ let A = function(e) {
                 right: -8
             },
             children: (0, i.jsx)(s.A.div, {
-                className: l()(u.Cf, E, {
+                className: a()(u.Cf, E, {
                     [u.vu]: g || C,
                     [u.CJ]: 0 === t
                 }),
@@ -63,7 +63,7 @@ let A = function(e) {
                     opacity: 1
                 },
                 ...e,
-                children: a(I || g || C)
+                children: l(I || g || C)
             })
         })
     })

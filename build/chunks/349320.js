@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     s = n(158954),
     o = n(51264),
     d = n(820284),
@@ -53,7 +53,7 @@ let S = r.memo(function() {
     } = (0, h.A)();
     return (0, i.jsx)("section", {
         ref: e,
-        className: l()(T.C3, {
+        className: a()(T.C3, {
             [T.aB]: t
         }),
         "aria-label": C.intl.string(C.t.vTl6Lk),

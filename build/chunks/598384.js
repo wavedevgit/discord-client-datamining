@@ -4,22 +4,22 @@ n.d(t, {
 });
 var i = n(311907),
     r = n(73153);
-let a = "UPDATE_NOT_AVAILABLE";
+let l = "UPDATE_NOT_AVAILABLE";
 
-function l(e) {
-    a = e.type
+function a(e) {
+    l = e.type
 }
 class s extends i.Ay.Store {
     static displayName = "AutoUpdateStore";
     getState() {
-        return a
+        return l
     }
 }
 let o = new s(r.h, {
-    CHECKING_FOR_UPDATES: l,
-    UPDATE_NOT_AVAILABLE: l,
-    UPDATE_AVAILABLE: l,
-    UPDATE_MANUALLY: l,
-    UPDATE_ERROR: l,
-    UPDATE_DOWNLOADED: l
+    CHECKING_FOR_UPDATES: a,
+    UPDATE_NOT_AVAILABLE: a,
+    UPDATE_AVAILABLE: a,
+    UPDATE_MANUALLY: a,
+    UPDATE_ERROR: a,
+    UPDATE_DOWNLOADED: a
 })

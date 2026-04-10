@@ -4,17 +4,17 @@ n.d(t, {
 });
 var i = n(311907),
     r = n(73153),
-    a = n(927813),
-    l = n(48128);
-let s = a.A.Millis.DAY,
-    o = 5 * a.A.Millis.MINUTE,
+    l = n(927813),
+    a = n(48128);
+let s = l.A.Millis.DAY,
+    o = 5 * l.A.Millis.MINUTE,
     d = {},
     c = !1,
     u = null,
     A = null;
 
 function h() {
-    !(c || null != A && Date.now() < A + o) && (null == u || Date.now() >= u + s) && l.A.fetch()
+    !(c || null != A && Date.now() < A + o) && (null == u || Date.now() >= u + s) && a.A.fetch()
 }
 class _ extends i.Ay.Store {
     static displayName = "UnclaimedGamesStore";

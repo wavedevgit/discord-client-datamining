@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     r = n(64700),
-    a = n(311907),
-    l = n(397927),
+    l = n(311907),
+    a = n(397927),
     s = n(308368),
     o = n(956793),
     d = n(573648),
@@ -39,7 +39,7 @@ function y(e) {
                 activity: t
             } = e;
             return (0, c.A)(t)
-        }), r = (0, a.bG)([E.A], () => E.A.getAccounts().some(e => e.type === d.A.get(x.fg2.XBOX).type)), s = t.filter(e => {
+        }), r = (0, l.bG)([E.A], () => E.A.getAccounts().some(e => e.type === d.A.get(x.fg2.XBOX).type)), s = t.filter(e => {
             let {
                 activity: t
             } = e;
@@ -50,7 +50,7 @@ function y(e) {
             } = e;
             return (0, u.A)(t)
         });
-        return n || r || !o || A ? null : (0, i.jsx)(l.Drp, {
+        return n || r || !o || A ? null : (0, i.jsx)(a.Drp, {
             id: "xbox-connect",
             action: () => (0, p.openUserSettings)(g.X.CONNECTIONS_PANEL),
             label: v.intl.formatToPlainString(v.t.XWSHTb, {
@@ -61,7 +61,7 @@ function y(e) {
         let {
             currentActivities: t
         } = e, n = r.useContext(T.AnalyticsContext);
-        return (0, a.yK)([_.Ay, f.A, m.A, C.A, I.A], () => t.filter(e => !(0, A.A)(e.activity)).map(e => {
+        return (0, l.yK)([_.Ay, f.A, m.A, C.A, I.A], () => t.filter(e => !(0, A.A)(e.activity)).map(e => {
             let {
                 activity: t,
                 game: i
@@ -92,23 +92,23 @@ function y(e) {
             let {
                 canJoin: n,
                 activity: r,
-                activityUser: a
+                activityUser: l
             } = e;
             if (!n || null == r) return null;
             async function d() {
                 if (null == r) return;
                 let e = await s.A.sendActivityInviteUser({
                     type: x.xL.JOIN_REQUEST,
-                    userId: a.id,
+                    userId: l.id,
                     activity: r,
                     location: x.ThZ.USER_ACTIVITY_ACTIONS
                 });
                 null != e && o.default.selectPrivateChannel(e.id)
             }
-            return (0, i.jsx)(l.Drp, {
+            return (0, i.jsx)(a.Drp, {
                 id: `join-${r.session_id}`,
                 label: t ? v.intl.formatToPlainString(v.t.wFAvxM, {
-                    name: a.toString()
+                    name: l.toString()
                 }) : v.intl.string(v.t.OKsSCR),
                 action: d
             })
@@ -116,7 +116,7 @@ function y(e) {
             let {
                 activity: n,
                 game: r,
-                libraryApplication: a,
+                libraryApplication: l,
                 location: s,
                 canPlay: o,
                 isRunning: d,
@@ -128,10 +128,10 @@ function y(e) {
             }) : c ? v.intl.formatToPlainString(v.t.WtSQwG, {
                 name: r.name
             }) : void 0;
-            return (0, i.jsx)(l.Drp, {
+            return (0, i.jsx)(a.Drp, {
                 id: `play-${n.session_id}`,
                 action: function() {
-                    (0, S.playApplication)(r.id, a, {
+                    (0, S.playApplication)(r.id, l, {
                         analyticsParams: {
                             location: {
                                 ...s,

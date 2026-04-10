@@ -139,7 +139,7 @@ function L(e) {
             sourceQuestContent: O,
             sourceQuestContentCTA: _.Cy.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
         })
-    }, [B, t, O]), Y = (0, o.bG)([g.A], () => g.A.getQuestHomeHeroConfig()), J = i.useMemo(() => null != Y && (0, A.I0)(Y, t.id), [Y, t.id]);
+    }, [B, t, O]), Y = (0, o.bG)([g.A], () => g.A.getQuestHomeHero()), J = i.useMemo(() => null != Y && (0, A.I0)(Y, t.id), [Y, t.id]);
     return (0, a.jsxs)("div", {
         className: D.kL,
         children: [(0, a.jsx)("div", {

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(956793),
-    a = n(401843),
-    l = n(682261),
+    l = n(401843),
+    a = n(682261),
     s = n(765379),
     o = n(90644),
     d = n(61330),
@@ -47,10 +47,10 @@ function C(e) {
             let {
                 members: t,
                 channel: r,
-                guild: a
+                guild: l
             } = e;
             L((0, i.jsx)(E.A.VoiceSection, {
-                guild: a,
+                guild: l,
                 channel: r,
                 members: t,
                 partySize: function(e, t) {
@@ -74,39 +74,39 @@ function C(e) {
         let {
             stream: t,
             streamUser: n,
-            activity: l
+            activity: a
         } = e;
         L((0, i.jsx)(E.A.ApplicationStreamingSection, {
             guildId: b?.id,
             user: n,
-            activity: l,
+            activity: a,
             applicationStream: t,
             onPreviewClick: () => {
-                r.default.selectVoiceChannel(t.channelId), (0, a.Nl)(t)
+                r.default.selectVoiceChannel(t.channelId), (0, l.Nl)(t)
             }
         }, `application-stream-${t.ownerId}`))
     }), S.forEach((e, t) => {
         let {
             activity: n,
             game: r,
-            playingMembers: a,
+            playingMembers: l,
             activityUser: A
         } = e;
         if (null == n || null == n.type) return null;
         if (n.type === f.$pd.PLAYING)
-            if (S.length > 1 && !(0, l.A)(n) && null != r) L((0, i.jsx)(E.A.GameSection, {
+            if (S.length > 1 && !(0, a.A)(n) && null != r) L((0, i.jsx)(E.A.GameSection, {
                 icon: r.getIconURL(64),
                 name: r.name,
                 partySize: {
-                    knownSize: a.length,
+                    knownSize: l.length,
                     unknownSize: 0,
-                    totalSize: a.length
+                    totalSize: l.length
                 },
-                members: a,
+                members: l,
                 activity: n
             }, `game-${n.session_id??t}-${n.application_id??t}`));
             else if ((0, s.A)(n)) {
-            let e = new Set(a.map(e => e.id)),
+            let e = new Set(l.map(e => e.id)),
                 t = N.find(e => null != e)?.channel;
             null != t && L((0, i.jsx)(E.A.EmbeddedActivitySection, {
                 activity: n,
@@ -123,7 +123,7 @@ function C(e) {
         }, `rich-presence-${n.session_id??t}-${A.id}`));
         else if ((0, c.A)(n)) {
             let e = N.length > 0 && N[0].members.length > 1,
-                r = a.length > 1;
+                r = l.length > 1;
             L((0, i.jsx)(E.A.TwitchSection, {
                 guildId: b?.id,
                 activity: n,
@@ -134,13 +134,13 @@ function C(e) {
             activity: n,
             isSolo: 1 === x.length,
             partySize: {
-                knownSize: a.length,
+                knownSize: l.length,
                 unknownSize: 0,
-                totalSize: a.length
+                totalSize: l.length
             },
             getAssetImage: g.uD,
-            members: a
-        }, `spotify-${n.session_id??t}-${A.id}`)) : (null != n.assets || (0, l.A)(n)) && L((0, i.jsx)(E.A.RichPresenceSection, {
+            members: l
+        }, `spotify-${n.session_id??t}-${A.id}`)) : (null != n.assets || (0, a.A)(n)) && L((0, i.jsx)(E.A.RichPresenceSection, {
             activity: n,
             getAssetImage: g.uD,
             user: A

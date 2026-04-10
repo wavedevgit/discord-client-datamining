@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(420970),
     r = n(795816),
-    a = n(20015),
-    l = n(636401),
+    l = n(20015),
+    a = n(636401),
     s = n(90924),
     o = n(592653),
     d = n(569475),
@@ -28,7 +28,7 @@ let u = {
             } = e;
             (0, s.lG)(t.transport);
             let n = (0, s.D2)(t.application);
-            if (!(0, a.n)(t.application, c.gfo.EMBEDDED)) throw new l.A({
+            if (!(0, l.n)(t.application, c.gfo.EMBEDDED)) throw new a.A({
                 errorCode: c.Lw6.UNAUTHORIZED_FOR_APPLICATION
             }, "This application cannot access this API");
             let i = (0, d.A)();
@@ -37,7 +37,7 @@ let u = {
                     ticket: await (0, r.D2)(n, i?.id)
                 }
             } catch (e) {
-                throw new l.A({
+                throw new a.A({
                     errorCode: c.Lw6.UNKNOWN_ERROR
                 }, "Failed to create proxy ticket")
             }

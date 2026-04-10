@@ -1,13 +1,13 @@
 /** chunk id: 854514 params = (module,exports,require) **/
 n.d(t, {
-    Ae: () => v,
-    Ay: () => y,
-    Hk: () => O
+    Ae: () => x,
+    Ay: () => b,
+    Hk: () => y
 });
 var i = n(627968),
     r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     s = n(323889),
     o = n(311907),
     d = n(397927),
@@ -23,59 +23,58 @@ var i = n(627968),
     I = n(729168),
     f = n(7832),
     C = n(654487),
-    T = n(49999),
-    N = n(985018),
-    S = n(684027),
-    x = n(311401);
+    T = n(985018),
+    N = n(684027),
+    S = n(311401);
 
-function v() {
+function x() {
     return (0, i.jsx)("div", {
-        className: S.Np
+        className: N.Np
     })
 }
 
-function b(e) {
+function v(e) {
     let {
-        assetImage: t,
-        assetVideo: n
-    } = e, a = r.useRef(null);
-    (0, E.A)(a, C.rE.QUEST_HOME_DESKTOP);
-    let s = r.useMemo(() => (null != n ? (0, h.WV)(n.url) : null) ?? t.url, [n, t]);
+        heroImage: t,
+        heroVideo: n
+    } = e, l = r.useRef(null);
+    (0, E.A)(l, C.rE.QUEST_HOME_DESKTOP);
+    let s = r.useMemo(() => (null != n ? (0, h.WV)(n) : null) ?? t, [n, t]);
     return null == n ? (0, i.jsxs)("div", {
-        className: S.Tv,
-        children: [(0, i.jsx)(v, {}), (0, i.jsx)("div", {
-            className: S.LO,
+        className: N.Tv,
+        children: [(0, i.jsx)(x, {}), (0, i.jsx)("div", {
+            className: N.LO,
             children: (0, i.jsx)("img", {
-                className: S.LY,
-                src: t.url,
-                alt: t.altText
-            })
-        }), (0, i.jsx)("div", {
-            className: l()(S.LO, S.jx, S.hw),
-            children: (0, i.jsx)("img", {
-                className: S.LY,
-                src: t.url,
+                className: N.LY,
+                src: t,
                 alt: ""
             })
         }), (0, i.jsx)("div", {
-            className: l()(S.LO, S.jx, S.Co),
+            className: a()(N.LO, N.jx, N.hw),
             children: (0, i.jsx)("img", {
-                className: S.LY,
-                src: t.url,
+                className: N.LY,
+                src: t,
+                alt: ""
+            })
+        }), (0, i.jsx)("div", {
+            className: a()(N.LO, N.jx, N.Co),
+            children: (0, i.jsx)("img", {
+                className: N.LY,
+                src: t,
                 alt: ""
             })
         })]
     }) : (0, i.jsxs)("div", {
-        className: S.Tv,
-        children: [(0, i.jsx)(v, {}), (0, i.jsx)("div", {
-            className: S.LO,
+        className: N.Tv,
+        children: [(0, i.jsx)(x, {}), (0, i.jsx)("div", {
+            className: N.LO,
             children: (0, i.jsx)(g.N, {
                 showImage: !1,
                 showVideo: !0,
-                assetRef: a,
+                assetRef: l,
                 imageAsset: {
-                    alt: n.altText,
-                    className: S.LY,
+                    alt: "",
+                    className: N.LY,
                     asset: {
                         url: s,
                         mimetype: (0, h.vm)(s),
@@ -84,33 +83,33 @@ function b(e) {
                     assetId: s
                 },
                 videoAsset: {
-                    alt: n.altText,
-                    className: S.LY,
+                    alt: "",
+                    className: N.LY,
                     asset: {
-                        url: n.url,
-                        mimetype: (0, h.vm)(n.url),
+                        url: n,
+                        mimetype: (0, h.vm)(n),
                         isAnimated: !0
                     },
-                    assetId: n.url
+                    assetId: n
                 }
             })
         })]
     })
 }
 
-function y(e) {
+function b(e) {
     let {
-        config: t,
+        hero: t,
         onQuestCtaClick: n
-    } = e, a = (0, o.bG)([u.A], () => u.A.quests), {
-        dismissQuestHomeHeroContent: l
+    } = e, l = (0, o.bG)([u.A], () => u.A.quests), {
+        dismissQuestHomeHeroContent: a
     } = (0, f.I)();
     r.useEffect(() => {
-        l(T.i.INDIRECT_ACTION)
-    }, [l]);
-    let h = r.useMemo(() => t.ctaQuests.find(e => a.has(e.questId)), [a, t.ctaQuests]);
+        a()
+    }, [a]);
+    let h = r.useMemo(() => t.questIds?.find(e => l.has(e)), [l, t.questIds]);
     return (0, i.jsx)(p.R, {
-        adContentId: t.campaignId,
+        adContentId: t.id,
         adCreativeType: s.p.QUEST_HOME_HERO,
         questContent: A.uF.QUEST_HOME_HERO,
         sourceQuestContent: A.uF.QUEST_HOME_HERO,
@@ -120,15 +119,15 @@ function y(e) {
                 direction: "horizontal",
                 justify: "space-between",
                 align: "start",
-                children: [(0, i.jsx)("img", {
-                    src: t.assetSponsorImage.url,
-                    alt: t.assetSponsorImage.altText,
-                    className: S.wm
+                children: [null != t.sponsorImage && (0, i.jsx)("img", {
+                    src: t.sponsorImage,
+                    alt: "",
+                    className: N.wm
                 }), (0, i.jsx)(d.Text, {
                     color: "text-strong",
                     variant: "text-sm/normal",
-                    className: S.yu,
-                    children: N.intl.string(N.t.OJjFi5)
+                    className: N.yu,
+                    children: T.intl.string(T.t.OJjFi5)
                 })]
             }),
             title: t.labelTitle,
@@ -136,8 +135,8 @@ function y(e) {
             buttons: (0, i.jsxs)(d.ButtonGroup, {
                 children: [(0, i.jsx)(d.Button, {
                     onClick: () => {
-                        (0, c.A)(t.ctaSponsorUrl.url), (0, _.vK)({
-                            adContentId: t.campaignId,
+                        (0, c.A)(t.cta.url), (0, _.vK)({
+                            adContentId: t.id,
                             adCreativeType: s.p.QUEST_HOME_HERO,
                             questContent: A.uF.QUEST_HOME_HERO,
                             questContentCTA: m.Cy.OPEN_GAME_LINK,
@@ -145,12 +144,12 @@ function y(e) {
                         })
                     },
                     size: "md",
-                    text: t.ctaSponsorUrl.title,
+                    text: t.cta.buttonLabel,
                     variant: "overlay-primary"
                 }), null != h && (0, i.jsx)(d.Button, {
                     onClick: () => {
-                        n?.(h.questId), (0, _.vK)({
-                            adContentId: t.campaignId,
+                        n?.(h), (0, _.vK)({
+                            adContentId: t.id,
                             adCreativeType: s.p.QUEST_HOME_HERO,
                             questContent: A.uF.QUEST_HOME_HERO,
                             questContentCTA: m.Cy.VIEW_QUESTS,
@@ -158,21 +157,21 @@ function y(e) {
                         })
                     },
                     size: "md",
-                    text: h.title,
+                    text: T.intl.string(T.t["th2+0j"]),
                     variant: "color-mix"
                 })]
             }),
-            background: (0, i.jsx)(b, {
-                assetImage: t.assetHeroImage,
-                assetVideo: t.assetHeroVideo
-            })
+            background: null != t.heroImage ? (0, i.jsx)(v, {
+                heroImage: t.heroImage,
+                heroVideo: t.heroVideo
+            }) : null
         })
     })
 }
 
-function O() {
+function y() {
     return (0, i.jsx)("div", {
-        className: l()(x.iE, x.FG, x.B3),
+        className: a()(S.iE, S.FG, S.B3),
         children: (0, i.jsx)(d.y$y, {})
     })
 }

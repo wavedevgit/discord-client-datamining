@@ -4,15 +4,15 @@ n.d(t, {
 });
 var i = n(73153),
     r = n(827343),
-    a = n(401843),
-    l = n(272355),
+    l = n(401843),
+    a = n(272355),
     s = n(652896),
     o = n(616356),
     d = n(961350),
     c = n(734057),
     u = n(430452),
     A = n(105530);
-class h extends l.A {
+class h extends a.A {
     _initialize() {
         i.h.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
     }
@@ -29,7 +29,7 @@ class h extends l.A {
     };
     handleStopStream = e => {
         let t = o.A.getActiveStreamForUser(e.userId, e.guildId);
-        null != t && (0, a.vN)((0, s._z)(t), !1)
+        null != t && (0, l.vN)((0, s._z)(t), !1)
     };
     handleStopUserVideo = () => {
         u.Ay.isVideoEnabled() && r.A.setVideoEnabled(!1)

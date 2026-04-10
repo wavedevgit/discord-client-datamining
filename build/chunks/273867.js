@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(136722),
     r = n(937724),
-    a = n(626584),
-    l = n(142120),
+    l = n(626584),
+    a = n(142120),
     s = n(95701),
     o = n(961350),
     d = n(734057),
@@ -15,7 +15,7 @@ var i = n(136722),
     h = n(799422),
     _ = n(723176),
     m = n(453001);
-let g = new a.A("GuildBasicChannels");
+let g = new l.A("GuildBasicChannels");
 
 function p(e, t) {
     return null == e || e.type !== t.type || e.parent_id !== t.parent_id || A.A.computeBasicPermissions(e) !== A.A.computeBasicPermissions(t)
@@ -26,16 +26,16 @@ let E = new class {
         let t = performance.now(),
             [n, i] = await Promise.all([_.A.basicChannels(e).getKvEntries(), _.A.syncedBasicChannels(e).getKvEntries()]),
             r = performance.now() - t,
-            [a, l] = function(e) {
+            [l, a] = function(e) {
                 let t = [],
                     n = [];
                 for (let [i, r] of e)(r ? t : n).push(i);
                 return [t, n]
             }(i),
-            s = new Set(a);
-        return this.synced = s, g.verbose(`loaded in ${r}ms (guilds: ${n.length}, synced: ${s.size} unsynced: ${l.length})`), {
+            s = new Set(l);
+        return this.synced = s, g.verbose(`loaded in ${r}ms (guilds: ${n.length}, synced: ${s.size} unsynced: ${a.length})`), {
             all: n,
-            stale: l,
+            stale: a,
             channels: n.filter(e => {
                 let [t, n] = e;
                 return s.has(t)
@@ -81,13 +81,13 @@ let E = new class {
         for (let n of e.guilds) this.handleOneGuildCreate(n, t)
     }
     async handlePostConnectionOpen() {
-        let e = l.A.lastTimeConnectedChanged(),
+        let e = a.A.lastTimeConnectedChanged(),
             t = _.A.database();
         if (null == this.synced || null == t || !(0, r.O)()) return;
         let n = u.A.getGuildIds(),
             i = n.filter(e => !this.synced.has(e));
         for (let r of (g.verbose(`scheduling basic_channel optimstic writes (guilds: ${i.length})`), n)) {
-            if (null == this.synced || t !== _.A.database() || e !== l.A.lastTimeConnectedChanged()) break;
+            if (null == this.synced || t !== _.A.database() || e !== a.A.lastTimeConnectedChanged()) break;
             if (!this.synced.has(r)) {
                 g.verbose(`optimstically writing basic_channels (guild: ${r})`);
                 try {

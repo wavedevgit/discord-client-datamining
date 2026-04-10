@@ -4,27 +4,27 @@ n.d(t, {
 });
 var i = n(311907),
     r = n(73153),
-    a = n(686956);
-let l = {},
+    l = n(686956);
+let a = {},
     s = 0;
 
 function o(e) {
-    return l[e]?.fetchState ?? 0
+    return a[e]?.fetchState ?? 0
 }
 
 function d() {
-    l = {}
+    a = {}
 }
 class c extends i.Ay.Store {
     isFetchingFriendsForGuild(e) {
         return 1 === o(e)
     }
     fetchFriendMembersIfNotFetched(e, t) {
-        0 === o(e) && (l[e] = {
+        0 === o(e) && (a[e] = {
             fetchState: 1,
             foundMembers: 0,
             notFoundMembers: 0
-        }, s = t.length, a.A.requestMembersById(e, t, !1))
+        }, s = t.length, l.A.requestMembersById(e, t, !1))
     }
 }
 let u = new c(r.h, {
@@ -37,6 +37,6 @@ let u = new c(r.h, {
             {
                 guildId: n
             } = t;
-        1 === o(n) && (l[n].foundMembers += t.members.length, l[n].notFoundMembers += t.notFound?.length ?? 0, l[n].foundMembers + l[n].notFoundMembers >= s && (l[n].fetchState = 2))
+        1 === o(n) && (a[n].foundMembers += t.members.length, a[n].notFoundMembers += t.notFound?.length ?? 0, a[n].foundMembers + a[n].notFoundMembers >= s && (a[n].fetchState = 2))
     }
 })

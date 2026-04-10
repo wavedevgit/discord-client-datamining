@@ -2,10 +2,10 @@
 n.d(e, {
     E5: () => C,
     G6: () => p,
-    H0: () => O,
+    H0: () => m,
     Vj: () => h,
     W5: () => g,
-    nV: () => m,
+    nV: () => O,
     s6: () => R,
     wu: () => S
 });
@@ -95,13 +95,13 @@ async function h(t) {
         rejectWithError: !1
     })).body)
 }
-async function m(t, e) {
+async function O(t, e) {
     return await i.Bo.del({
         url: _.Rsh.GUILD_AUTOMOD_RULE(e, t),
         rejectWithError: !1
     }), !0
 }
-async function O(t) {
+async function m(t) {
     let e = await i.Bo.get({
         url: _.Rsh.GUILD_AUTOMOD_RULES(t),
         rejectWithError: !1

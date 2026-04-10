@@ -17,9 +17,9 @@ n.d(t, {
     yx: () => P
 }), n(321073);
 var i, r = n(6161),
-    a = n(681154);
+    l = n(681154);
 n(311907), n(256265);
-var l = n(698441),
+var a = n(698441),
     s = n(141468),
     o = n(95701),
     d = n(734057),
@@ -53,12 +53,12 @@ async function S(e, t, n) {
         r = e.slice(t, n);
     if (0 === r.length) return;
     h.A.loadHydratedAttempt(f(t, n));
-    let a = r.filter(e => null == i[e.id]),
-        l = a.filter(e => e.type === p.Mm.MESSAGE).map(e => ({
+    let l = r.filter(e => null == i[e.id]),
+        a = l.filter(e => e.type === p.Mm.MESSAGE).map(e => ({
             channel_id: e.data.channel_id,
             message_id: e.data.message_id
         })),
-        s = a.map(e => {
+        s = l.map(e => {
             if (e.type === p.Mm.MESSAGE) {
                 let t = [];
                 return e.data.message_context?.reply_message_id != null && t.push({
@@ -74,12 +74,12 @@ async function S(e, t, n) {
             }
             return []
         }).flat().filter(Boolean),
-        o = a.filter(e => e.type === p.Mm.ACTIVITY).map(e => ({
+        o = l.filter(e => e.type === p.Mm.ACTIVITY).map(e => ({
             user_id: e.data.user_id,
             content_id: e.data.content_id
         }));
     await h.A.fetchHydrated(t, n, {
-        messageItems: [...l, ...s],
+        messageItems: [...a, ...s],
         activityItems: o
     })
 }
@@ -117,7 +117,7 @@ function O(e) {
             author_type: r.ContentInventoryAuthorType.USER,
             traits: [],
             participants: [],
-            content_type: a.ContentInventoryEntryType.CUSTOM_STATUS,
+            content_type: l.ContentInventoryEntryType.CUSTOM_STATUS,
             extra: {
                 type: "custom_status_extra",
                 status: e.data.text ?? "",
@@ -164,7 +164,7 @@ function P(e) {
             t = e.data.threadChannel.id;
             break;
         case "guildEvent":
-            n = l.Ay.getGuildScheduledEvent(e.data.eventId)?.guild_id;
+            n = a.Ay.getGuildScheduledEvent(e.data.eventId)?.guild_id;
             break;
         default:
             return !1
@@ -190,7 +190,7 @@ function D(e) {
         case "guildEvent":
             return "guild_event";
         case "contentInventory":
-            if (e.data.content.content_type === a.ContentInventoryEntryType.CUSTOM_STATUS) return "hotwheels_custom_status";
+            if (e.data.content.content_type === l.ContentInventoryEntryType.CUSTOM_STATUS) return "hotwheels_custom_status";
             return "hotwheels_gaming_activity";
         case "recommendedGuilds":
             return "recommended_guilds";

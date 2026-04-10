@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     s = n(397927),
     o = n(770178),
     d = n(652215),
@@ -13,7 +13,7 @@ var i = n(627968),
 let u = r.forwardRef(function(e, t) {
     let {
         topContent: n,
-        title: a,
+        title: l,
         subtitle: u,
         buttons: A,
         background: h,
@@ -27,7 +27,7 @@ let u = r.forwardRef(function(e, t) {
         theme: d.NJ8.MIDNIGHT,
         disableAdaptiveTheme: !0,
         children: e => (0, i.jsx)("div", {
-            className: l()(c.iE, e, _),
+            className: a()(c.iE, e, _),
             ref: e => {
                 E.current = e, "function" == typeof t ? t(e) : null != t && (t.current = e)
             },
@@ -46,7 +46,7 @@ let u = r.forwardRef(function(e, t) {
                                 color: "text-strong",
                                 variant: m,
                                 className: c.DD,
-                                children: a
+                                children: l
                             }), (0, i.jsx)(s.Text, {
                                 color: "text-strong",
                                 variant: "text-md/normal",

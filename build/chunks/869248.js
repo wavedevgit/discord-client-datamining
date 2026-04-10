@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(311907),
-    l = n(397927),
+    l = n(311907),
+    a = n(397927),
     s = n(355622),
     o = n(58736),
     d = n(353428),
@@ -27,10 +27,10 @@ function N(e) {
     let {
         channel: t,
         baseChannelId: n
-    } = e, N = (0, E.Ay)(t), S = (0, A.k)(), x = (0, A.r)(), v = (0, a.bG)([c.A], () => c.A.isMessageRequest(t.id)), b = (0, a.bG)([u.A], () => u.A.isSpam(t.id)), y = (0, _.D)(t.id, t.getRecipientId()), O = r.useCallback(() => {
+    } = e, N = (0, E.Ay)(t), S = (0, A.k)(), x = (0, A.r)(), v = (0, l.bG)([c.A], () => c.A.isMessageRequest(t.id)), b = (0, l.bG)([u.A], () => u.A.isSpam(t.id)), y = (0, _.D)(t.id, t.getRecipientId()), O = r.useCallback(() => {
         g.A.closeChannelSidebar(p.fe), v && S && (0, m.iN)(t.id), b && x && (0, m.iN)(t.id)
     }, [t.id, b, x, v, S]), L = r.useCallback(() => {
-        (0, l.showToast)((0, l.createToast)(f.intl.string(f.t.pIQ3h4), l.ToastType.FAILURE))
+        (0, a.showToast)((0, a.createToast)(f.intl.string(f.t.pIQ3h4), a.ToastType.FAILURE))
     }, []), {
         markAsNotSpam: R
     } = (0, h.t)({
@@ -39,7 +39,7 @@ function N(e) {
     });
     if (null == t || !t.isDM()) return null;
     let P = [(0, i.jsx)(o.Ay.Icon, {
-        icon: l.PGe,
+        icon: a.PGe,
         tooltip: f.intl.string(f.t.cpT0Cq),
         onClick: () => g.A.closeChannelSidebar(n)
     }, "close")];
@@ -54,12 +54,12 @@ function N(e) {
             })
         }), b && (0, i.jsxs)("div", {
             className: T.F,
-            children: [(0, i.jsx)(l.Text, {
+            children: [(0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 children: f.intl.string(f.t.XVOKgj)
             }), (0, i.jsx)("div", {
                 className: T.$,
-                children: (0, i.jsx)(l.Button, {
+                children: (0, i.jsx)(a.Button, {
                     size: "sm",
                     onClick: () => R(t, y),
                     text: f.intl.string(f.t.koqL3Z)

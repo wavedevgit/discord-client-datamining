@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(73153),
     r = n(272355),
-    a = n(961350),
-    l = n(430452);
+    l = n(961350),
+    a = n(430452);
 class s extends r.A {
     _initialize() {
         __OVERLAY__ || (i.h.subscribe("VOICE_CHANNEL_EFFECT_SEND", this._handleSoundboardSoundReceived), i.h.subscribe("GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY", this._handleSoundboardSoundPlayLocally), i.h.subscribe("VOICE_CHANNEL_SELECT", this._handleVoiceChannelSelect), i.h.subscribe("AUDIO_TOGGLE_SELF_DEAF", this._handleToggleSelfDeafened))
@@ -18,7 +18,7 @@ class s extends r.A {
     };
     _stopAndClearSounds = () => {};
     _handleToggleSelfDeafened = () => {
-        l.Ay.isDeaf() && this._stopAndClearSounds()
+        a.Ay.isDeaf() && this._stopAndClearSounds()
     };
     _handleSoundboardSoundReceived = e => {
         let {
@@ -27,13 +27,13 @@ class s extends r.A {
             userId: i,
             channelId: r
         } = e;
-        if (null != t && i !== a.default.getId()) return this._playSound(t, n, i, r)
+        if (null != t && i !== l.default.getId()) return this._playSound(t, n, i, r)
     };
     _handleSoundboardSoundPlayLocally = e => {
         let {
             sound: t,
             channelId: n
-        } = e, i = a.default.getId();
+        } = e, i = l.default.getId();
         return this._playSound(t.soundId, t.volume, i, n)
     };
     _handleVoiceChannelSelect = () => {

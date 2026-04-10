@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(311907),
-    l = n(883344),
+    l = n(311907),
+    a = n(883344),
     s = n(859524),
     o = n(567061),
     d = n(519028),
@@ -16,7 +16,7 @@ var i = n(627968),
 let _ = function(e) {
     let {
         scrollContainerRef: t
-    } = e, n = (0, a.bG)([l.A], () => l.A.notificationItem(), []), {
+    } = e, n = (0, l.bG)([a.A], () => a.A.notificationItem(), []), {
         showDot: _
     } = (0, d.A)(), m = r.useRef(null), [g, p] = r.useState(!1), {
         data: E,
@@ -31,8 +31,8 @@ let _ = function(e) {
     r.useEffect(() => () => {
         N()
     }, [N]);
-    let S = (0, a.bG)([l.A], () => l.A.hasNewContent(), []),
-        x = (0, a.bG)([l.A], () => l.A.isHydrating(), []),
+    let S = (0, l.bG)([a.A], () => a.A.hasNewContent(), []),
+        x = (0, l.bG)([a.A], () => a.A.isHydrating(), []),
         v = r.useMemo(() => T[0].onViewableItemsChanged, [T]),
         {
             registerItemRef: b

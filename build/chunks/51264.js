@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     s = n(311907),
     o = n(506774),
     d = n(397927),
@@ -18,11 +18,11 @@ let m = "isHideDevBanner",
     g = () => {
         let [e, t] = (0, r.useState)(o.w.get(m, "false")?.toString() === "true"), n = (0, s.bG)([c.A], () => (0, u.kK)() ? c.A.getCurrentBuildOverride().overrides?.discord_web : null);
         if (e) return null;
-        let a = () => {
+        let l = () => {
                 o.w.set(m, !0), t(!0)
             },
             g = () => (0, i.jsx)(d.DUT, {
-                onClick: a,
+                onClick: l,
                 className: _.b,
                 "aria-label": h.intl.string(h.t.WAI6xu),
                 children: (0, i.jsx)(d.PGe, {
@@ -32,16 +32,16 @@ let m = "isHideDevBanner",
                 })
             });
         return null != n ? (0, i.jsxs)("div", {
-            className: l()(_.Wz, _.DM),
+            className: a()(_.Wz, _.DM),
             children: [(0, i.jsx)(A.A, {
                 className: _.Kk
             }), h.intl.string(h.t.Wj3LW4), (0, i.jsx)(g, {})]
         }) : "staging" === window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, i.jsxs)("div", {
-            className: l()(_.Wz, _.mr),
+            className: a()(_.Wz, _.mr),
             children: [(0, i.jsx)(A.A, {
                 className: _.Kk
             }), h.intl.format(h.t.uyrfYF, {
-                buildNumber: "526986"
+                buildNumber: "527032"
             }), (0, i.jsx)(g, {})]
         }) : null
     }

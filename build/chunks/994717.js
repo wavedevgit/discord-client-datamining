@@ -1,13 +1,13 @@
 /** chunk id: 994717 params = (module,exports,require) **/
 n.d(t, {
-    C: () => l
+    C: () => a
 });
 var i = n(636401),
     r = n(613057),
-    a = n(652215);
+    l = n(652215);
 
-function l(e) {
+function a(e) {
     if (r.z4.IPC !== e && r.z4.POST_MESSAGE !== e) throw new i.A({
-        errorCode: a.Lw6.INVALID_COMMAND
+        errorCode: l.Lw6.INVALID_COMMAND
     }, "Invalid transport.")
 }

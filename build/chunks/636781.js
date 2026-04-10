@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(687498),
-    a = n(311907),
-    l = n(397927),
+    l = n(311907),
+    a = n(397927),
     s = n(47167),
     o = n(450510),
     d = n(808728),
@@ -20,7 +20,7 @@ function m(e) {
     let {
         channel: t,
         guild: n
-    } = e, d = (0, a.bG)([o.HP], () => o.HP.hasHotspot(o._2.HUB_STUDY_ROOM_NOTICE)), c = (0, h.Q)(t.guild_id), _ = (0, s.Ay)(t), m = (0, l.zhh)({
+    } = e, d = (0, l.bG)([o.HP], () => o.HP.hasHotspot(o._2.HUB_STUDY_ROOM_NOTICE)), c = (0, h.Q)(t.guild_id), _ = (0, s.Ay)(t), m = (0, a.zhh)({
         maxHeight: 300 * !c,
         overflow: "hidden",
         delay: 400
@@ -39,7 +39,7 @@ function m(e) {
 let g = function(e) {
     let {
         guild: t
-    } = e, n = (0, a.bG)([d.Ay], () => d.Ay.getChannels(t.id)[d.vM][0]), r = (0, a.bG)([c.A], () => null != n && c.A.can(_.xBc.CONNECT, n.channel));
+    } = e, n = (0, l.bG)([d.Ay], () => d.Ay.getChannels(t.id)[d.vM][0]), r = (0, l.bG)([c.A], () => null != n && c.A.can(_.xBc.CONNECT, n.channel));
     return t.features.has(_.GuildFeatures.HUB) && null != n && r ? (0, i.jsx)(m, {
         channel: n.channel,
         guild: t

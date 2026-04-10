@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(934551),
-    a = n(232582),
-    l = n(732955),
+    l = n(232582),
+    a = n(732955),
     s = n(397927),
     o = n(954571),
     d = n(975571),
@@ -26,7 +26,7 @@ function _(e) {
         isLightTheme: E
     } = e, I = `AnnouncementModalVariant1_${t}`, {
         onClose: f
-    } = m, C = _.button?.copy ?? A.intl.string(A.t.YScQSF), T = _.button?.buttonAction === a.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", N = (0, c.h)({
+    } = m, C = _.button?.copy ?? A.intl.string(A.t.YScQSF), T = _.button?.buttonAction === l.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", N = (0, c.h)({
         buttonAction: _.button?.buttonAction,
         analyticsLocations: g,
         analyticsLocation: p,
@@ -73,7 +73,7 @@ function _(e) {
         changeLogId: I,
         button: () => {
             let e = Date.now();
-            return (0, i.jsx)(l.$nd, {
+            return (0, i.jsx)(a.$nd, {
                 variant: "expressive",
                 size: "md",
                 onClick: () => {

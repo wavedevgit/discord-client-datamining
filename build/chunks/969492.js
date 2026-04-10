@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i, r = n(627968);
 n(64700);
-var a = n(989349),
-    l = n.n(a),
+var l = n(989349),
+    a = n.n(l),
     s = n(192308),
     o = n(834269),
     d = n(333639),
@@ -29,7 +29,7 @@ function N(e) {
         children: t,
         popoverType: n,
         targetElementRef: i,
-        churnDiscountOffer: a,
+        churnDiscountOffer: l,
         premiumSubscription: T,
         receivesUpdatedUpsellPopover: N,
         orbsRewardAmount: S,
@@ -44,9 +44,9 @@ function N(e) {
     if ((0, s.useHasAnyModalOpen)()) return t;
     switch (n) {
         case "churn_discount":
-            if (null != a && null != T) return (0, r.jsx)(p.A, {
+            if (null != l && null != T) return (0, r.jsx)(p.A, {
                 targetElementRef: i,
-                discountOffer: a,
+                discountOffer: l,
                 premiumSubscription: T,
                 dismissCoachmark: v,
                 children: t
@@ -91,7 +91,7 @@ function N(e) {
             break;
         case "reverse_trial": {
             let e = R?.trial_id === C.Tt,
-                n = L ?? (R?.expires_at != null ? l()(R?.expires_at) : null);
+                n = L ?? (R?.expires_at != null ? a()(R?.expires_at) : null);
             if (null != n) return (0, r.jsx)(f.A, {
                 endsAt: n,
                 variant: e ? "followup" : "initial",

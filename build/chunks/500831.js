@@ -5,8 +5,8 @@ n.r(t), n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(353640),
-    l = n(574381),
+    l = n(353640),
+    a = n(574381),
     s = n(311907),
     o = n(397927),
     d = n(526900),
@@ -40,7 +40,7 @@ var i = n(627968),
     U = n(475815),
     G = n(71855);
 n(801416);
-let k = (0, a.v)(() => ({
+let k = (0, l.v)(() => ({
         isOpen: !0
     })),
     V = r.memo(function() {
@@ -56,7 +56,7 @@ let k = (0, a.v)(() => ({
             hasBugReporterAccess: n
         } = A.A.useConfig({
             location: "HeaderBar"
-        }), a = (0, s.bG)([D.A], () => D.A.isDeveloper), k = (0, R.Uk)("VoiceDareTitleBarButton"), V = (0, s.bG)([j.A, c.A], () => L.Q_.getSetting() && null != j.A.testModeApplicationId && null != c.A.getApplication(j.A.testModeApplicationId) && (0, u.A)(c.A.getApplication(j.A.testModeApplicationId))), B = null !== e && t === N.RK.TITLE_BAR_LEFT, H = null === e, {
+        }), l = (0, s.bG)([D.A], () => D.A.isDeveloper), k = (0, R.Uk)("VoiceDareTitleBarButton"), V = (0, s.bG)([j.A, c.A], () => L.Q_.getSetting() && null != j.A.testModeApplicationId && null != c.A.getApplication(j.A.testModeApplicationId) && (0, u.A)(c.A.getApplication(j.A.testModeApplicationId))), B = null !== e && t === N.RK.TITLE_BAR_LEFT, H = null === e, {
             enabled: F
         } = g.s.useConfig({
             location: "AppTitleBar"
@@ -71,7 +71,7 @@ let k = (0, a.v)(() => ({
         }, []);
         let K = (0, O.NC)(),
             q = (0, s.bG)([M.A, x.A], () => (0, U._U)()),
-            z = (0, l.xl)(),
+            z = (0, a.xl)(),
             $ = function(e) {
                 let {
                     showBackForwardButtons: t,
@@ -106,7 +106,7 @@ let k = (0, a.v)(() => ({
                             focusSectionProps: "HELP" === $ ? e : void 0
                         }) : (0, i.jsx)(I.A, {
                             focusSectionProps: "HELP" === $ ? e : void 0
-                        }), a && (0, i.jsx)(E.R, {}), V && (0, i.jsx)(d.A, {}), (0, i.jsx)(C.A, {})]
+                        }), l && (0, i.jsx)(E.R, {}), V && (0, i.jsx)(d.A, {}), (0, i.jsx)(C.A, {})]
                     })
                 })
             })

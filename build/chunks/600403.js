@@ -4,8 +4,8 @@ n.d(t, {
 }), n(142703);
 var i = n(954571),
     r = n(636401),
-    a = n(722306),
-    l = n(105130),
+    l = n(722306),
+    a = n(105130),
     s = n(652215);
 let o = {
     [s.e$_.SUBSCRIBE]: {
@@ -19,7 +19,7 @@ let o = {
             if (null == c) throw new r.A({
                 errorCode: s.Lw6.INVALID_EVENT
             }, `Invalid event: ${o}`);
-            if (!(0, a.A)(n.authorization.scopes, c.scope)) throw new r.A({
+            if (!(0, l.A)(n.authorization.scopes, c.scope)) throw new r.A({
                 errorCode: s.Lw6.INVALID_PERMISSIONS
             }, "Not authenticated or invalid scope");
             if (i.default.track(s.HAw.RPC_SUBSCRIPTION_REQUESTED, {
@@ -39,7 +39,7 @@ let o = {
                     args: d,
                     socket: n
                 }),
-                A = (0, l.M)(n, o, d);
+                A = (0, a.M)(n, o, d);
             return new Promise(e => {
                 setImmediate(() => {
                     t.addSubscription(n, o, d, u), null != A && t.dispatchToSubscriptions(o, e => e.socket.id === n.id, A)
@@ -55,12 +55,12 @@ let o = {
                 server: t,
                 socket: n,
                 evt: i,
-                args: a
+                args: l
             } = e;
             if (null == t.events[i]) throw new r.A({
                 errorCode: s.Lw6.INVALID_EVENT
             }, `Invalid event: ${i}`);
-            return t.removeSubscription(n, i, a), {
+            return t.removeSubscription(n, i, l), {
                 evt: i
             }
         }

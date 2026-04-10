@@ -21,8 +21,8 @@ var o = n(299855),
     R = n(169604),
     p = n(956793),
     h = n(785796),
-    m = n(55619),
-    O = n(246605),
+    O = n(55619),
+    m = n(246605),
     C = n(271866),
     g = n(736653),
     S = n(77729),
@@ -33,9 +33,9 @@ var o = n(299855),
     x = n(315982),
     D = n(235986),
     f = n(420216),
-    j = n(984870),
-    L = n(626262),
-    k = n(813803),
+    j = n(187848),
+    L = n(984870),
+    k = n(626262),
     G = n(487329),
     v = n(102609),
     b = n(49463),
@@ -49,8 +49,8 @@ var o = n(299855),
     W = n(997509),
     F = n(475723),
     K = n(598733),
-    Y = n(801644),
-    J = n(74848),
+    J = n(801644),
+    Y = n(74848),
     z = n(4630),
     Q = n(532794),
     Z = n(234419),
@@ -75,8 +75,8 @@ var o = n(299855),
     tR = n(519057),
     tp = n(954571),
     th = n(975571),
-    tm = n(723702),
-    tO = n(652215),
+    tO = n(723702),
+    tm = n(652215),
     tC = n(502075),
     tg = n(788868),
     tS = n(831502),
@@ -100,7 +100,7 @@ let tU = t => {
         return n ? (0, i.jsx)(E.DUT, {
             tag: "span",
             className: tM.wz,
-            onClick: () => open(th.A.getArticleURL(tO.MVz.AV_ERROR_CODES)),
+            onClick: () => open(th.A.getArticleURL(tm.MVz.AV_ERROR_CODES)),
             children: s
         }) : s
     },
@@ -118,7 +118,7 @@ let tU = t => {
             }), tP.intl.string(tP.t.o3zuYz), (0, i.jsx)(tU, {
                 error: G.iy.NO_INPUT_DEVICES
             }), (0, i.jsx)(E.eCN, {
-                href: th.A.getArticleURL(tO.MVz.NO_INPUT_DETECTED),
+                href: th.A.getArticleURL(tm.MVz.NO_INPUT_DETECTED),
                 noticeType: e,
                 children: tP.intl.string(tP.t.RYKKox)
             })]
@@ -126,14 +126,14 @@ let tU = t => {
     };
 
 function tD(t) {
-    return (0, tm.isWindows)() && c().satisfies(S.A?.os.release, tC.PH) ? `ms-settings:sound-properties?endpointId=${t}` : "ms-settings:sound"
+    return (0, tO.isWindows)() && c().satisfies(S.A?.os.release, tC.PH) ? `ms-settings:sound-properties?endpointId=${t}` : "ms-settings:sound"
 }
 
 function tf(t) {
     let e, n, {
             noticeType: l
         } = t,
-        r = (0, J.x5)(ty.oh.AUDIO_INPUT),
+        r = (0, Y.x5)(ty.oh.AUDIO_INPUT),
         s = r?.guid ?? "",
         {
             inputDeviceOSMuted: a,
@@ -157,7 +157,7 @@ function tf(t) {
         },
         children: tP.intl.string(tP.t.I6YlB4)
     })) : (e = tP.intl.string(tP.t.nCO9bI), n = (0, i.jsx)(E.eCN, {
-        href: th.A.getArticleURL(tO.MVz.NO_INPUT_DETECTED),
+        href: th.A.getArticleURL(tm.MVz.NO_INPUT_DETECTED),
         noticeType: l,
         children: tP.intl.string(tP.t.RYKKox)
     })), (0, i.jsxs)(E.$Td, {
@@ -192,60 +192,59 @@ let tL = 21552 == n.j ? l.memo(function() {
     if (l.useEffect(() => {
             if (r?.type != null) {
                 let t;
-                if (null == N && (r.type === tO.kqX.PREMIUM_TIER_2_TRIAL_ENDING || r.type === tO.kqX.PREMIUM_TIER_0_TRIAL_ENDING)) return;
+                if (null == N && (r.type === tm.kqX.PREMIUM_TIER_2_TRIAL_ENDING || r.type === tm.kqX.PREMIUM_TIER_0_TRIAL_ENDING)) return;
                 let n = {};
                 null != e && (n.guild_id = e), N?.trial_id != null && (n.trial_id = N.trial_id), t = {
                     notice_type: r.type,
                     ...n
-                }, tp.default.track(tO.HAw.APP_NOTICE_VIEWED, t)
+                }, tp.default.track(tm.HAw.APP_NOTICE_VIEWED, t)
             }
         }, [r?.type, e, N]), l.useEffect(() => {
-            if (null != r && r.type === tO.kqX.SURVEY && null != r.metadata) {
+            if (null != r && r.type === tm.kqX.SURVEY && null != r.metadata) {
                 let {
                     metadata: t
                 } = r, e = b.A.getUserExperimentDescriptor(t.id);
                 null != e && (0, v.LQ)(t.id, e), (async () => {
-                    r.metadata?.id != null && await (0, O.oX)(r.metadata?.id)
+                    r.metadata?.id != null && await (0, m.oX)(r.metadata?.id)
                 })()
             }
         }, [r]), null == r) return null;
     let S = null != r.type ? tR.Re[r.type] : null,
-        P = null != r.type ? tR.k3[r.type] : null,
+        P = null != r.type ? tR.rV[r.type] : null,
         G = null != r.type ? tR.f7[r.type] : null,
-        J = tR.pe[r.type];
-    if (null != S) return (0, i.jsx)(L.$, {
+        Y = tR.pe[r.type];
+    if (null != S) return (0, i.jsx)(k.$, {
         dismissibleContent: S,
         noticeType: r.type
     });
-    if (null != P) return (0, i.jsx)(k._, {
-        dismissibleContent: P,
-        noticeType: r.type
+    if (null != P) return (0, i.jsx)(j.d, {
+        dismissibleContent: P
     });
-    if (null != G) return (0, i.jsx)(j.T, {
+    if (null != G) return (0, i.jsx)(L.T, {
         dismissibleContent: G
     });
-    if (null != J) return (0, i.jsx)(f.r, {
-        dismissibleContent: J,
+    if (null != Y) return (0, i.jsx)(f.r, {
+        dismissibleContent: Y,
         noticeType: r.type
     });
     let td = r.metadata?.premiumType;
     switch (r.type) {
-        case tO.kqX.PTT_NO_KEYBIND_WARNING:
+        case tm.kqX.PTT_NO_KEYBIND_WARNING:
             return (0, i.jsx)(tc.A, {});
-        case tO.kqX.LURKING_GUILD:
+        case tm.kqX.LURKING_GUILD:
             return (0, i.jsx)(K.A, {});
-        case tO.kqX.PENDING_MEMBER:
+        case tm.kqX.PENDING_MEMBER:
             return (0, i.jsx)(H.A, {});
-        case tO.kqX.INVITED_TO_SPEAK:
+        case tm.kqX.INVITED_TO_SPEAK:
             return (0, i.jsx)(tr.A, {});
-        case tO.kqX.GUILD_RAID_NOTIFICATION:
+        case tm.kqX.GUILD_RAID_NOTIFICATION:
             let {
                 dismissUntil: tE
             } = r.metadata;
             return (0, i.jsx)(B.A, {
                 onDismiss: () => tj(tE)
             });
-        case tO.kqX.WIN32_DEPRECATED_MESSAGE:
+        case tm.kqX.WIN32_DEPRECATED_MESSAGE:
             let {
                 dismissUntil: tC
             } = r.metadata;
@@ -255,10 +254,10 @@ let tL = 21552 == n.j ? l.memo(function() {
                     onClick: () => tj(tC),
                     noticeType: r.type
                 }), tP.intl.format(tP.t["08KQ1P"], {
-                    helpCenterLink: th.A.getArticleURL(tO.MVz.WIN32_DEPRECATE)
+                    helpCenterLink: th.A.getArticleURL(tm.MVz.WIN32_DEPRECATE)
                 })]
             });
-        case tO.kqX.WIN7_8_DEPRECATED_MESSAGE:
+        case tm.kqX.WIN7_8_DEPRECATED_MESSAGE:
             let {
                 dismissUntil: ty
             } = r.metadata;
@@ -268,10 +267,10 @@ let tL = 21552 == n.j ? l.memo(function() {
                     onClick: () => tj(ty),
                     noticeType: r.type
                 }), tP.intl.format(tP.t["8Je+dX"], {
-                    helpCenterLink: th.A.getArticleURL(tO.MVz.WIN7_8_DEPRECATE)
+                    helpCenterLink: th.A.getArticleURL(tm.MVz.WIN7_8_DEPRECATE)
                 })]
             });
-        case tO.kqX.WIN_COMPAT_MODE_MESSAGE:
+        case tm.kqX.WIN_COMPAT_MODE_MESSAGE:
             let {
                 dismissUntil: tU
             } = r.metadata;
@@ -282,7 +281,7 @@ let tL = 21552 == n.j ? l.memo(function() {
                     noticeType: r.type
                 }), tP.intl.string(tP.t["9DJgOg"])]
             });
-        case tO.kqX.MACOS_19_DEPRECATED_MESSAGE:
+        case tm.kqX.MACOS_19_DEPRECATED_MESSAGE:
             let {
                 dismissUntil: tD
             } = r.metadata;
@@ -292,10 +291,10 @@ let tL = 21552 == n.j ? l.memo(function() {
                     onClick: () => tj(tD),
                     noticeType: r.type
                 }), tP.intl.format(tP.t.q8VPLo, {
-                    helpCenterLink: th.A.getArticleURL(tO.MVz.MACOS_19_DEPRECATE)
+                    helpCenterLink: th.A.getArticleURL(tm.MVz.MACOS_19_DEPRECATE)
                 })]
             });
-        case tO.kqX.E2EE_UPDATE_REQUIRED:
+        case tm.kqX.E2EE_UPDATE_REQUIRED:
             let {
                 dismissUntil: tL
             } = r.metadata;
@@ -304,24 +303,24 @@ let tL = 21552 == n.j ? l.memo(function() {
                 children: [(0, i.jsx)(E.PMB, {
                     onClick: () => tj(tL),
                     noticeType: r.type
-                }), tP.intl.format(tm.isPlatformEmbedded ? tP.t.J232TI : tP.t.vceuiL, {
-                    helpCenterLink: th.A.getArticleURL(tO.MVz.END_TO_END_ENCRYPTION)
+                }), tP.intl.format(tO.isPlatformEmbedded ? tP.t.J232TI : tP.t.vceuiL, {
+                    helpCenterLink: th.A.getArticleURL(tm.MVz.END_TO_END_ENCRYPTION)
                 })]
             });
-        case tO.kqX.WINDOWS_MEDIA_PACK_REQUIRED:
+        case tm.kqX.WINDOWS_MEDIA_PACK_REQUIRED:
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.WARNING,
                 children: [(0, i.jsx)(E.PMB, {
                     onClick: () => tj(),
                     noticeType: r.type
                 }), tP.intl.string(tP.t.iW0fcQ), (0, i.jsx)(E.eCN, {
-                    href: th.A.getArticleURL(tO.MVz.WINDOWS_MEDIA_PACK),
+                    href: th.A.getArticleURL(tm.MVz.WINDOWS_MEDIA_PACK),
                     target: "_blank",
                     noticeType: r.type,
                     children: tP.intl.string(tP.t.LQG5j6)
                 })]
             });
-        case tO.kqX.GENERIC:
+        case tm.kqX.GENERIC:
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.DEFAULT,
                 children: [(0, i.jsx)(E.PMB, {
@@ -333,7 +332,7 @@ let tL = 21552 == n.j ? l.memo(function() {
                     children: r.buttonText
                 }) : null]
             });
-        case tO.kqX.LAUNCH_GAME_FAILURE:
+        case tm.kqX.LAUNCH_GAME_FAILURE:
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.DANGER,
                 children: [(0, i.jsx)(E.PMB, {
@@ -345,7 +344,7 @@ let tL = 21552 == n.j ? l.memo(function() {
                     children: r.buttonText
                 }) : null]
             });
-        case tO.kqX.VOICE_DISABLED:
+        case tm.kqX.VOICE_DISABLED:
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.WARNING,
                 children: [(0, i.jsx)(E.PMB, {
@@ -362,7 +361,7 @@ let tL = 21552 == n.j ? l.memo(function() {
                     children: tP.intl.string(tP.t.vD60Pv)
                 })]
             });
-        case tO.kqX.VOICE_CONNECTED_LAST_SESSION:
+        case tm.kqX.VOICE_CONNECTED_LAST_SESSION:
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.DEFAULT,
                 children: [(0, i.jsx)(E.PMB, {
@@ -379,8 +378,8 @@ let tL = 21552 == n.j ? l.memo(function() {
                     children: tP.intl.string(tP.t.vD60Pv)
                 })]
             });
-        case tO.kqX.SPOTIFY_AUTO_PAUSED:
-            let tk = y.A.get(tO.fg2.SPOTIFY);
+        case tm.kqX.SPOTIFY_AUTO_PAUSED:
+            let tk = y.A.get(tm.fg2.SPOTIFY);
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.DANGER,
                 children: [(0, i.jsx)(E.PMB, {
@@ -396,12 +395,12 @@ let tL = 21552 == n.j ? l.memo(function() {
                     children: tP.intl.string(tP.t.NiTd0e)
                 }), (0, i.jsx)(E.MzZ, {
                     className: tM.uD,
-                    href: th.A.getArticleURL(tO.MVz.SPOTIFY_AUTO_PAUSED),
+                    href: th.A.getArticleURL(tm.MVz.SPOTIFY_AUTO_PAUSED),
                     target: "_blank",
                     children: tP.intl.string(tP.t.CiqAIU)
                 })]
             });
-        case tO.kqX.UNCLAIMED_ACCOUNT:
+        case tm.kqX.UNCLAIMED_ACCOUNT:
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.DEFAULT,
                 children: [tP.intl.string(tP.t["f+Zaol"]), (0, i.jsx)(E.Z_L, {
@@ -410,7 +409,7 @@ let tL = 21552 == n.j ? l.memo(function() {
                     children: tP.intl.string(tP.t.fiNVin)
                 })]
             });
-        case tO.kqX.UNVERIFIED_ACCOUNT:
+        case tm.kqX.UNVERIFIED_ACCOUNT:
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.DEFAULT,
                 children: [tP.intl.string(tP.t["3sWbf3"]), (0, i.jsx)(E.Z_L, {
@@ -428,7 +427,7 @@ let tL = 21552 == n.j ? l.memo(function() {
                     children: tP.intl.string(tP.t.WnX4J2)
                 })]
             });
-        case tO.kqX.SCHEDULED_MAINTENANCE:
+        case tm.kqX.SCHEDULED_MAINTENANCE:
             if (null == r.metadata) return null;
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.DEFAULT,
@@ -436,20 +435,20 @@ let tL = 21552 == n.j ? l.memo(function() {
                     onClick: () => h.A.ackScheduledMaintenance(),
                     noticeType: r.type
                 }), tP.intl.format(tP.t["yb96S+"], r.metadata), (0, i.jsx)(E.eCN, {
-                    href: `${tO.qF7.STATUS}/incidents/${r.metadata.id}`,
+                    href: `${tm.qF7.STATUS}/incidents/${r.metadata.id}`,
                     noticeType: r.type,
                     children: tP.intl.string(tP.t.hvVgAZ)
                 })]
             });
-        case tO.kqX.NO_INPUT_DETECTED:
+        case tm.kqX.NO_INPUT_DETECTED:
             return (0, i.jsx)(tf, {
                 noticeType: r.type
             });
-        case tO.kqX.NO_INPUT_DEVICES_DETECTED:
+        case tm.kqX.NO_INPUT_DEVICES_DETECTED:
             return (0, i.jsx)(tx, {
                 noticeType: r.type
             });
-        case tO.kqX.HARDWARE_MUTE:
+        case tm.kqX.HARDWARE_MUTE:
             if (null != r.metadata) {
                 let {
                     vendor: t,
@@ -474,7 +473,7 @@ let tL = 21552 == n.j ? l.memo(function() {
                     })]
                 })
             }
-            if (Y.A.getConfig({
+            if (J.A.getConfig({
                     location: "Notice.AudioIssueNoticeHardwareMute"
                 }).enableHardwareSilenceWarning) return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.INFO,
@@ -486,32 +485,32 @@ let tL = 21552 == n.j ? l.memo(function() {
                 })]
             });
             return null;
-        case tO.kqX.STREAMER_MODE:
+        case tm.kqX.STREAMER_MODE:
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.STREAMER_MODE,
                 children: [(0, i.jsx)(E.PMB, {
                     onClick: () => tj(),
-                    noticeType: tO.kqX.STREAMER_MODE
+                    noticeType: tm.kqX.STREAMER_MODE
                 }), tP.intl.string(tP.t.iEgBXp), (0, i.jsx)(E.Z_L, {
-                    onClick: () => m.A.setEnabled(!1),
-                    noticeType: tO.kqX.STREAMER_MODE,
+                    onClick: () => O.A.setEnabled(!1),
+                    noticeType: tm.kqX.STREAMER_MODE,
                     children: tP.intl.string(tP.t.R9GHya)
                 })]
             });
-        case tO.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK:
+        case tm.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK:
             if (null == r.metadata) return null;
             let {
                 skuId: tG, applicationId: tv
             } = r.metadata, tb = tI.A.get(tG), tB = U.A.getApplication(tv);
             if (null == tb || null == tB) return null;
             let tw = {
-                page: tO.liQ.IN_APP
+                page: tm.liQ.IN_APP
             };
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.PREMIUM_TIER_1,
                 children: [(0, i.jsx)(E.PMB, {
                     onClick: () => I.X(tb.id),
-                    noticeType: tO.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK
+                    noticeType: tm.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK
                 }), (0, i.jsx)(E.tvc, {
                     size: "md",
                     color: "currentColor",
@@ -520,7 +519,7 @@ let tL = 21552 == n.j ? l.memo(function() {
                     applicationName: tB.name,
                     skuName: tb.name
                 }), (0, i.jsx)(E.Z_L, {
-                    noticeType: tO.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK,
+                    noticeType: tm.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK,
                     onClick: () => (0, z.j)({
                         applicationId: tB.id,
                         skuId: tb.id,
@@ -534,12 +533,12 @@ let tL = 21552 == n.j ? l.memo(function() {
                         },
                         analyticsLocations: s,
                         analyticsLocationObject: tw,
-                        context: __OVERLAY__ ? tO.BRT.OVERLAY : tO.BRT.APP
+                        context: __OVERLAY__ ? tm.BRT.OVERLAY : tm.BRT.APP
                     }).then(() => I.X(tb.id)),
                     children: tP.intl.string(tP.t.KEwPYx)
                 })]
             });
-        case tO.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL: {
+        case tm.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL: {
             if (null == r.metadata) return null;
             let {
                 skuId: t,
@@ -550,7 +549,7 @@ let tL = 21552 == n.j ? l.memo(function() {
                 color: E.Hv$.PREMIUM_TIER_1,
                 children: [(0, i.jsx)(E.PMB, {
                     onClick: () => tj(),
-                    noticeType: tO.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL
+                    noticeType: tm.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL
                 }), (0, i.jsx)(E.tvc, {
                     size: "md",
                     color: "currentColor",
@@ -562,7 +561,7 @@ let tL = 21552 == n.j ? l.memo(function() {
                     children: (0, i.jsx)(a.N_, {
                         onClick: () => tj(),
                         to: {
-                            pathname: tO.BVt.APPLICATION_STORE_LISTING_SKU(n.id),
+                            pathname: tm.BVt.APPLICATION_STORE_LISTING_SKU(n.id),
                             state: {
                                 scrollRestoration: !1
                             }
@@ -572,7 +571,7 @@ let tL = 21552 == n.j ? l.memo(function() {
                 })]
             })
         }
-        case tO.kqX.SURVEY: {
+        case tm.kqX.SURVEY: {
             let t = r.metadata;
             if (null == t) return null;
             let {
@@ -586,37 +585,37 @@ let tL = 21552 == n.j ? l.memo(function() {
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.CUSTOM,
                 children: [(0, i.jsx)(E.PMB, {
-                    noticeType: tO.kqX.SURVEY,
+                    noticeType: tm.kqX.SURVEY,
                     onClick: () => {
-                        (0, O.pX)(e, !0)
+                        (0, m.pX)(e, !0)
                     }
                 }), n, (0, i.jsx)(E.Z_L, {
-                    noticeType: tO.kqX.SURVEY,
+                    noticeType: tm.kqX.SURVEY,
                     onClick: () => {
-                        a ? (0, te.K)(o) : window.open(s, "_blank"), (0, O.pX)(e, !1)
+                        a ? (0, te.K)(o) : window.open(s, "_blank"), (0, m.pX)(e, !1)
                     },
                     children: l
                 })]
             })
         }
-        case tO.kqX.CORRUPT_INSTALLATION:
+        case tm.kqX.CORRUPT_INSTALLATION:
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.DANGER,
                 children: [tP.intl.string(tP.t["ugxmk/"]), (0, i.jsx)(E.eCN, {
-                    href: th.A.getArticleURL(tO.MVz.CORRUPT_INSTALLATION),
+                    href: th.A.getArticleURL(tm.MVz.CORRUPT_INSTALLATION),
                     target: "_blank",
                     noticeType: r.type,
                     children: tP.intl.string(tP.t["6ik4Xk"])
                 })]
             });
-        case tO.kqX.VIDEO_UNSUPPORTED_BROWSER:
+        case tm.kqX.VIDEO_UNSUPPORTED_BROWSER:
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.WARNING,
                 children: [(0, i.jsx)(E.PMB, {
                     onClick: () => tj(),
-                    noticeType: tO.kqX.VIDEO_UNSUPPORTED_BROWSER
+                    noticeType: tm.kqX.VIDEO_UNSUPPORTED_BROWSER
                 }), tP.intl.string(tP.t.wVjKGi), (0, i.jsx)(E.Z_L, {
-                    noticeType: tO.kqX.VIDEO_UNSUPPORTED_BROWSER,
+                    noticeType: tm.kqX.VIDEO_UNSUPPORTED_BROWSER,
                     onClick: () => {
                         (0, E.mMO)(async () => {
                             let {
@@ -631,7 +630,7 @@ let tL = 21552 == n.j ? l.memo(function() {
                     children: tP.intl.string(tP.t["1WjMbC"])
                 })]
             });
-        case tO.kqX.DISPATCH_ERROR:
+        case tm.kqX.DISPATCH_ERROR:
             if (null == r.metadata) return null;
             let {
                 error: tq
@@ -640,9 +639,9 @@ let tL = 21552 == n.j ? l.memo(function() {
                 color: E.Hv$.DANGER,
                 children: [(0, i.jsx)(E.PMB, {
                     onClick: () => tj(),
-                    noticeType: tO.kqX.DISPATCH_ERROR
+                    noticeType: tm.kqX.DISPATCH_ERROR
                 }), tq?.displayMessage, (0, i.jsx)(E.Z_L, {
-                    noticeType: tO.kqX.DISPATCH_ERROR,
+                    noticeType: tm.kqX.DISPATCH_ERROR,
                     onClick: () => (0, E.mMO)(async () => {
                         let {
                             default: t
@@ -654,7 +653,7 @@ let tL = 21552 == n.j ? l.memo(function() {
                     children: tP.intl.string(tP.t.hvVgAZ)
                 })]
             });
-        case tO.kqX.DISPATCH_INSTALL_SCRIPT_PROGRESS:
+        case tm.kqX.DISPATCH_INSTALL_SCRIPT_PROGRESS:
             if (null == r.metadata) return null;
             let {
                 progress: tX, total: t$, name: tH
@@ -663,7 +662,7 @@ let tL = 21552 == n.j ? l.memo(function() {
                 color: E.Hv$.DEFAULT,
                 children: [(0, i.jsx)(E.PMB, {
                     onClick: () => tj(),
-                    noticeType: tO.kqX.DISPATCH_INSTALL_SCRIPT_PROGRESS
+                    noticeType: tm.kqX.DISPATCH_INSTALL_SCRIPT_PROGRESS
                 }), (0, i.jsxs)(D.A, {
                     justify: D.A.Justify.CENTER,
                     children: [null != tH ? tP.intl.formatToPlainString(tP.t["pHj+z4"], {
@@ -679,7 +678,7 @@ let tL = 21552 == n.j ? l.memo(function() {
                     })]
                 })]
             });
-        case tO.kqX.APPLICATION_TEST_MODE:
+        case tm.kqX.APPLICATION_TEST_MODE:
             if (null == r.metadata) return null;
             if (null != tN.A.testModeEmbeddedApplicationId) return (0, i.jsx)(E.$Td, {
                 color: E.Hv$.WARNING,
@@ -692,7 +691,7 @@ let tL = 21552 == n.j ? l.memo(function() {
                         })
                     }), (0, i.jsx)(E.PMB, {
                         onClick: C.cL,
-                        noticeType: tO.kqX.APPLICATION_TEST_MODE
+                        noticeType: tm.kqX.APPLICATION_TEST_MODE
                     })]
                 })
             });
@@ -707,17 +706,17 @@ let tL = 21552 == n.j ? l.memo(function() {
                         })
                     }), (0, i.jsx)(E.PMB, {
                         onClick: C.cL,
-                        noticeType: tO.kqX.APPLICATION_TEST_MODE
+                        noticeType: tm.kqX.APPLICATION_TEST_MODE
                     })]
                 })
             });
-        case tO.kqX.VIEWING_ROLES:
+        case tm.kqX.VIEWING_ROLES:
             return (0, i.jsx)(F.A, {});
-        case tO.kqX.PREMIUM_UNCANCEL:
+        case tm.kqX.PREMIUM_UNCANCEL:
             return (0, i.jsxs)(E.$Td, {
                 color: td === tg.PremiumTypes.TIER_1 ? E.Hv$.PREMIUM_TIER_1 : td === tg.PremiumTypes.TIER_0 ? E.Hv$.PREMIUM_TIER_0 : E.Hv$.PREMIUM_TIER_2,
                 children: [(0, i.jsx)(E.PMB, {
-                    noticeType: tO.kqX.PREMIUM_UNCANCEL,
+                    noticeType: tm.kqX.PREMIUM_UNCANCEL,
                     onClick: () => {
                         tj(r.metadata?.premiumSubscription?.currentPeriodEnd)
                     }
@@ -732,7 +731,7 @@ let tL = 21552 == n.j ? l.memo(function() {
                 }) : tP.intl.formatToPlainString(tP.t.outyHh, {
                     daysLeft: r.metadata.daysLeft
                 }), (0, i.jsx)(E.Z_L, {
-                    noticeType: tO.kqX.PREMIUM_UNCANCEL,
+                    noticeType: tm.kqX.PREMIUM_UNCANCEL,
                     onClick: () => {
                         tj(r.metadata?.premiumSubscription?.currentPeriodEnd), (0, E.mMO)(async () => {
                             let {
@@ -750,7 +749,7 @@ let tL = 21552 == n.j ? l.memo(function() {
                     children: td === tg.PremiumTypes.TIER_1 ? tP.intl.string(tP.t.BkbUPM) : td === tg.PremiumTypes.TIER_0 ? tP.intl.string(tP.t.Px978X) : tP.intl.string(tP.t.LW5tCE)
                 })]
             });
-        case tO.kqX.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT:
+        case tm.kqX.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT:
             let {
                 daysPastDue: tV, dismissUntil: tW
             } = r.metadata;
@@ -764,50 +763,50 @@ let tL = 21552 == n.j ? l.memo(function() {
                 }), tP.intl.format(tP.t.zxU0Kp, {
                     daysPastDue: tV
                 }), (0, i.jsx)(E.Z_L, {
-                    noticeType: tO.kqX.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT,
+                    noticeType: tm.kqX.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT,
                     onClick: () => {
                         tj(tW), (0, to.openUserSettings)(ta.X.SUBSCRIPTIONS_PANEL)
                     },
                     children: tP.intl.string(tP.t.q8rxeS)
                 })]
             });
-        case tO.kqX.PREMIUM_PAST_DUE_INVALID_PAYMENT:
+        case tm.kqX.PREMIUM_PAST_DUE_INVALID_PAYMENT:
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.DANGER,
                 children: [(0, i.jsx)(E.PMB, {
-                    noticeType: tO.kqX.PREMIUM_PAST_DUE_INVALID_PAYMENT,
+                    noticeType: tm.kqX.PREMIUM_PAST_DUE_INVALID_PAYMENT,
                     onClick: () => {
                         tj(r.metadata?.premiumSubscription?.currentPeriodEnd)
                     }
                 }), tP.intl.string(tP.t.LlZaoX), (0, i.jsx)(E.Z_L, {
-                    noticeType: tO.kqX.PREMIUM_PAST_DUE_INVALID_PAYMENT,
+                    noticeType: tm.kqX.PREMIUM_PAST_DUE_INVALID_PAYMENT,
                     onClick: () => {
                         tj(r.metadata?.premiumSubscription?.currentPeriodEnd), (0, to.openUserSettings)(ta.X.SUBSCRIPTIONS_PANEL)
                     },
                     children: tP.intl.string(tP.t["Zpd+Yq"])
                 })]
             });
-        case tO.kqX.PREMIUM_PAST_DUE_MISSING_PAYMENT:
+        case tm.kqX.PREMIUM_PAST_DUE_MISSING_PAYMENT:
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.WARNING,
                 children: [(0, i.jsx)(E.PMB, {
-                    noticeType: tO.kqX.PREMIUM_PAST_DUE_MISSING_PAYMENT,
+                    noticeType: tm.kqX.PREMIUM_PAST_DUE_MISSING_PAYMENT,
                     onClick: () => {
                         tj(r.metadata?.premiumSubscription?.currentPeriodEnd)
                     }
                 }), tP.intl.string(tP.t["30YfCr"]), (0, i.jsx)(E.Z_L, {
-                    noticeType: tO.kqX.PREMIUM_PAST_DUE_MISSING_PAYMENT,
+                    noticeType: tm.kqX.PREMIUM_PAST_DUE_MISSING_PAYMENT,
                     onClick: () => {
                         tj(r.metadata?.premiumSubscription?.currentPeriodEnd), (0, to.openUserSettings)(ta.X.SUBSCRIPTIONS_PANEL)
                     },
                     children: tP.intl.string(tP.t.U5pKWA)
                 })]
             });
-        case tO.kqX.PREMIUM_MISSING_PAYMENT:
+        case tm.kqX.PREMIUM_MISSING_PAYMENT:
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.WARNING,
                 children: [(0, i.jsx)(E.PMB, {
-                    noticeType: tO.kqX.PREMIUM_MISSING_PAYMENT,
+                    noticeType: tm.kqX.PREMIUM_MISSING_PAYMENT,
                     onClick: () => {
                         tj(r.metadata?.premiumSubscription?.currentPeriodEnd)
                     }
@@ -818,26 +817,26 @@ let tL = 21552 == n.j ? l.memo(function() {
                 }) : tP.intl.formatToPlainString(tP.t.AyC74I, {
                     daysLeft: r.metadata.daysLeft
                 }), (0, i.jsx)(E.Z_L, {
-                    noticeType: tO.kqX.PREMIUM_MISSING_PAYMENT,
+                    noticeType: tm.kqX.PREMIUM_MISSING_PAYMENT,
                     onClick: () => {
                         tj(r.metadata?.premiumSubscription?.currentPeriodEnd), (0, to.openUserSettings)(ta.X.SUBSCRIPTIONS_PANEL)
                     },
                     children: td === tg.PremiumTypes.TIER_1 ? tP.intl.string(tP.t.lboF5O) : td === tg.PremiumTypes.TIER_0 ? tP.intl.string(tP.t["4UPwOq"]) : tP.intl.string(tP.t["P/VvGb"])
                 })]
             });
-        case tO.kqX.BACK_TO_PREVIOUS_SCREEN:
+        case tm.kqX.BACK_TO_PREVIOUS_SCREEN:
             return (0, i.jsx)(V.y, {
                 buttonText: r.buttonText ?? tP.intl.string(tP.t["/g10LC"]),
                 onGoBack: r.callback,
                 onDismiss: () => tj(),
                 showCloseButton: !0
             });
-        case tO.kqX.AUTOMOD_QUARANTINED_USER_PROFILE:
+        case tm.kqX.AUTOMOD_QUARANTINED_USER_PROFILE:
             return (0, i.jsx)(q.A, {
                 guildId: e,
                 analyticsLocations: s
             });
-        case tO.kqX.QUARANTINED:
+        case tm.kqX.QUARANTINED:
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.DANGER,
                 children: [tP.intl.string(tP.t.DVFJYf), (0, i.jsx)(E.eCN, {
@@ -846,20 +845,20 @@ let tL = 21552 == n.j ? l.memo(function() {
                     noticeType: r.type,
                     children: tP.intl.string(tP.t.kvHdFN)
                 }), (0, i.jsx)(E.MzZ, {
-                    href: th.A.getArticleURL(tO.MVz.QUARANTINE),
+                    href: th.A.getArticleURL(tm.MVz.QUARANTINE),
                     target: "_blank",
                     className: tM.yw,
                     children: tP.intl.string(tP.t.hvVgAZ)
                 })]
             });
-        case tO.kqX.AUTO_MODERATION_MENTION_RAID_DETECTION:
+        case tm.kqX.AUTO_MODERATION_MENTION_RAID_DETECTION:
             let {
                 dismissUntil: tF, decisionId: tK
             } = r.metadata;
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.WARNING,
                 children: [(0, i.jsx)(E.PMB, {
-                    noticeType: tO.kqX.AUTO_MODERATION_MENTION_RAID_DETECTION,
+                    noticeType: tm.kqX.AUTO_MODERATION_MENTION_RAID_DETECTION,
                     onClick: () => {
                         null != e && (0, w.wu)(e), tj(tF)
                     }
@@ -871,41 +870,41 @@ let tL = 21552 == n.j ? l.memo(function() {
                     },
                     children: tP.intl.string(tP.t.oX14El)
                 }), null != e ? (0, i.jsx)(E.zr9, {
-                    onClick: () => W.A.open(e, tO.BEX.GUILD_AUTOMOD, void 0, tO.nd0.AUTOMOD_MENTION_SPAM),
+                    onClick: () => W.A.open(e, tm.BEX.GUILD_AUTOMOD, void 0, tm.nd0.AUTOMOD_MENTION_SPAM),
                     children: tP.intl.string(tP.t["1R7QIx"])
                 }) : null]
             });
-        case tO.kqX.QUESTS_PROGRESS_INTERRUPTION:
+        case tm.kqX.QUESTS_PROGRESS_INTERRUPTION:
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.DANGER,
                 children: [(0, i.jsx)(E.PMB, {
-                    noticeType: tO.kqX.QUESTS_PROGRESS_INTERRUPTION,
+                    noticeType: tm.kqX.QUESTS_PROGRESS_INTERRUPTION,
                     onClick: () => {
                         r.metadata?.streamKey != null && (0, tn.lk)(r.metadata.streamKey)
                     }
                 }), tP.intl.string(tP.t.rOx44m)]
             });
-        case tO.kqX.BLOCK_USER_FEEDBACK_NAGBAR:
+        case tm.kqX.BLOCK_USER_FEEDBACK_NAGBAR:
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.BRAND,
                 children: [(0, i.jsx)(E.PMB, {
                     onClick: () => {
                         tj(r.metadata?.dismissUntil)
                     },
-                    noticeType: tO.kqX.BLOCK_USER_FEEDBACK_NAGBAR
+                    noticeType: tm.kqX.BLOCK_USER_FEEDBACK_NAGBAR
                 }), tP.intl.string(tP.t["0klLS7"]), (0, i.jsx)(E.Z_L, {
                     onClick: () => {
                         (0, tl.$)(), tj(r.metadata?.dismissUntil)
                     },
-                    noticeType: tO.kqX.BLOCK_USER_FEEDBACK_NAGBAR,
+                    noticeType: tm.kqX.BLOCK_USER_FEEDBACK_NAGBAR,
                     children: tP.intl.string(tP.t.e4y2VM)
                 })]
             });
-        case tO.kqX.IGNORE_USER_FEEDBACK_NAGBAR:
+        case tm.kqX.IGNORE_USER_FEEDBACK_NAGBAR:
             return (0, i.jsx)(ti.A, {});
-        case tO.kqX.PREMIUM_MARKETING_NAGBAR:
+        case tm.kqX.PREMIUM_MARKETING_NAGBAR:
             return (0, i.jsx)(tt.A, {});
-        case tO.kqX.SYSTEM_SERVICE_WARNING:
+        case tm.kqX.SYSTEM_SERVICE_WARNING:
             return (0, i.jsx)(ts.A, {});
         default:
             return null

@@ -21,8 +21,8 @@ var a = n(311907),
     R = n(652215),
     p = n(746080),
     h = n(985018),
-    m = n(79790),
-    O = n(215433);
+    O = n(79790),
+    m = n(215433);
 let C = 21552 == n.j ? () => {
     let t = (0, a.bG)([E.A], () => E.A.getGuildId(), []),
         e = (0, a.bG)([u.A], () => u.A.getGuild(t), [t]),
@@ -34,7 +34,7 @@ let C = 21552 == n.j ? () => {
         y = null,
         P = null,
         M = null,
-        U = [m.lm, O.lm];
+        U = [O.lm, m.lm];
     switch (S) {
         case A.B5.SUBMITTED:
             y = h.intl.string(h.t["5iLvSx"]), P = h.intl.string(h.t.mqtdmQ), M = () => {
@@ -58,7 +58,7 @@ let C = 21552 == n.j ? () => {
                         ...n
                     })
                 })
-            }, U.push(m.z3);
+            }, U.push(O.z3);
             break;
         default:
             y = h.intl.string(h.t.G5YKXP), P = h.intl.string(h.t["r8/DT+"]), M = () => {
@@ -68,7 +68,7 @@ let C = 21552 == n.j ? () => {
     return (0, i.jsxs)("div", {
         className: r()(...U),
         children: [(0, i.jsx)(c.Text, {
-            className: m.wx,
+            className: O.wx,
             variant: "text-sm/normal",
             children: y
         }), (0, i.jsx)(c.Button, {

@@ -1,11 +1,11 @@
 /** chunk id: 939846 params = (module,exports,require) **/
 n.d(t, {
-    A: () => ea
+    A: () => el
 });
 var i = n(627968),
     r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     s = n(837381),
     o = n(731738),
     d = n(311907),
@@ -59,7 +59,7 @@ function et() {
     let e = r.useRef(null),
         t = (0, F.W)(),
         n = (0, Y.A)(),
-        a = (0, V.k)(),
+        l = (0, V.k)(),
         d = (0, G.w)(),
         c = r.useCallback(() => {
             (0, A.showToast)((0, A.createToast)(Z.intl.string(Z.t["EDYbS+"]), A.ToastType.FAILURE))
@@ -82,15 +82,15 @@ function et() {
             } = e, r = n[t], s = n[t + 1]?.channel?.id, o = r.channel.id;
             return (0, i.jsx)(q.A, {
                 index: t,
-                className: l()({
+                className: a()({
                     [J.wH]: null != _ && _ === o,
                     [J.wZ]: null != _ && _ === s
                 }),
                 channel: r.channel,
                 user: r.user,
-                hasSingleMessageRequest: a
+                hasSingleMessageRequest: l
             }, o)
-        }, [a, n, _]),
+        }, [l, n, _]),
         E = r.useCallback(() => (0, i.jsxs)(I.A, {
             className: J.Gf,
             children: [t > 0 ? Z.intl.formatToPlainString(Z.t.rA4iWY, {
@@ -120,12 +120,12 @@ function et() {
             children: t => {
                 let {
                     ref: r,
-                    role: a,
-                    ...l
+                    role: l,
+                    ...a
                 } = t;
                 return (0, i.jsx)(A.B8B, {
                     className: J.p_,
-                    innerRole: a,
+                    innerRole: l,
                     innerAriaLabel: Z.intl.string(Z.t.e7GWjQ),
                     ref: t => {
                         e.current = t, r.current = t?.getScrollerNode() ?? null
@@ -139,7 +139,7 @@ function et() {
                     sections: [n.length],
                     chunkSize: 30,
                     fade: !0,
-                    ...l
+                    ...a
                 }, "message-requests-list")
             }
         })
@@ -150,15 +150,15 @@ function en(e) {
     let {
         pageWidth: t,
         onSidebarResize: n
-    } = e, r = (0, d.bG)([P.Ay], () => P.Ay.getSidebarState(P.fe)), a = (0, d.bG)([D.A], () => D.A.getChannel(r?.channelId));
-    if (null == r || r.type !== b.PE.VIEW_MESSAGE_REQUEST || null == a || !a.isPrivate()) return null;
-    let l = t - Q.ItT;
+    } = e, r = (0, d.bG)([P.Ay], () => P.Ay.getSidebarState(P.fe)), l = (0, d.bG)([D.A], () => D.A.getChannel(r?.channelId));
+    if (null == r || r.type !== b.PE.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
+    let a = t - Q.ItT;
     return (0, i.jsx)(p.A, {
         sidebarType: p.X.MessageRequestSidebar,
-        maxWidth: l,
+        maxWidth: a,
         onWidthChange: n,
         children: (0, i.jsx)(E.A, {
-            channel: a,
+            channel: l,
             baseChannelId: P.fe
         })
     })
@@ -172,38 +172,38 @@ let ei = e => {
         children: n => {
             let {
                 visibleContent: r,
-                markAsDismissed: a
-            } = n, l = {
+                markAsDismissed: l
+            } = n, a = {
                 position: "bottom",
                 caretConfig: {
                     position: "top",
                     align: "center"
                 },
                 shouldShow: !0,
-                onRequestClose: () => a(X.i.USER_DISMISS),
+                onRequestClose: () => l(X.i.USER_DISMISS),
                 targetElementRef: e.targetElementRef
             };
             return r === c.M.MESSAGE_REQUEST_SETTINGS_COACH_MARK ? (0, i.jsxs)(i.Fragment, {
                 children: [e.children, t ? (0, i.jsx)(u.AM, {
-                    ...l,
+                    ...a,
                     title: Z.intl.string(Z.t.hRT8tc),
                     body: Z.intl.string(Z.t.apPgJG),
                     actions: [{
                         text: Z.intl.string(Z.t.LNoAQW),
-                        onClick: () => a(X.i.TAKE_ACTION)
+                        onClick: () => l(X.i.TAKE_ACTION)
                     }]
                 }) : (0, i.jsx)(u.AM, {
-                    ...l,
+                    ...a,
                     title: Z.intl.string(Z.t.hRT8tc),
                     body: Z.intl.string(Z.t["8JWods"]),
                     actions: [{
                         text: Z.intl.string(Z.t.JN6EOJ),
                         onClick: e => {
-                            e.stopPropagation(), (0, R.openUserSettings)(L.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING), a(X.i.TAKE_ACTION)
+                            e.stopPropagation(), (0, R.openUserSettings)(L.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING), l(X.i.TAKE_ACTION)
                         }
                     }, {
                         text: Z.intl.string(Z.t.LNoAQW),
-                        onClick: () => a(X.i.USER_DISMISS),
+                        onClick: () => l(X.i.USER_DISMISS),
                         variant: "secondary"
                     }]
                 })]
@@ -218,7 +218,7 @@ function er(e) {
     } = e;
     return t === $.zz.SPAM ? (0, i.jsx)(z.A, {}) : (0, i.jsx)(et, {})
 }
-let ea = (0, _.A)(function(e) {
+let el = (0, _.A)(function(e) {
     let {
         width: t
     } = e, n = (0, F.W)();
@@ -229,7 +229,7 @@ let ea = (0, _.A)(function(e) {
             name: o.K.MESSAGE_REQUEST_VIEW
         })
     });
-    let a = (0, d.bG)([O.A], () => O.A.theme),
+    let l = (0, d.bG)([O.A], () => O.A.theme),
         s = (0, W.I)(),
         [c, u] = r.useState(!1),
         _ = (0, d.bG)([P.Ay], () => {
@@ -251,12 +251,12 @@ let ea = (0, _.A)(function(e) {
         location: Z.intl.string(Z.t.e7GWjQ)
     }), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: l()(ee.TE, J.kL, {
+            className: a()(ee.TE, J.kL, {
                 [ee.js]: p,
                 [ee.jl]: p && c
             }),
             children: [(0, i.jsx)(A.NPJ, {
-                theme: a,
+                theme: l,
                 children: e => (0, i.jsxs)(N.A, {
                     className: e,
                     toolbar: !0,

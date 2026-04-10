@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(793574),
-    a = n(688810),
-    l = n(926466),
+    l = n(688810),
+    a = n(926466),
     s = n(631305),
     o = n(473145),
     d = n(652215),
@@ -21,8 +21,8 @@ function _(e) {
         markAsDismissed: n
     } = e, _ = (0, o.Os)(t, d.TVA.TIER_2), {
         analyticsLocations: m
-    } = (0, a.Ay)(r.A.GUILD_BANNER_NOTICE);
-    return (0, i.jsx)(l.A, {
+    } = (0, l.Ay)(r.A.GUILD_BANNER_NOTICE);
+    return (0, i.jsx)(a.A, {
         guild: t,
         onDismissed: () => n(c.i.UNKNOWN),
         cta: A.intl.string(A.t.oPAx73),

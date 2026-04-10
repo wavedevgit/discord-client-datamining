@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(554146),
-    a = n(342494),
-    l = n(932001),
+    l = n(342494),
+    a = n(932001),
     s = n(966597),
     o = n(49999),
     d = n(985018),
@@ -21,8 +21,8 @@ function A(e) {
         inInbox: A
     } = s.A.useConfig({
         location: "ForLaterCoachmarkWeb"
-    }), [h, _] = (0, l.kn)(r && t === (A ? "inbox-button" : "bookmarks-button") ? [u] : [], void 0);
-    return h !== u ? null : (0, i.jsx)(a.AM, {
+    }), [h, _] = (0, a.kn)(r && t === (A ? "inbox-button" : "bookmarks-button") ? [u] : [], void 0);
+    return h !== u ? null : (0, i.jsx)(l.AM, {
         targetElementRef: n,
         gradientColor: "purple",
         position: "bottom",

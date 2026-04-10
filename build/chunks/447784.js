@@ -1,79 +1,79 @@
 /** chunk id: 447784 params = (module,exports,require) **/
-t.d(n, {
+n.d(t, {
     k: () => x
 });
-var l = t(627968),
-    i = t(64700),
-    r = t(503698),
-    s = t.n(r),
-    a = t(575593),
-    o = t(397927),
-    u = t(713517),
-    d = t(674658),
-    c = t(898461),
-    p = t(837015),
-    m = t(929283),
-    E = t(761365),
-    _ = t(985018),
-    S = t(846405);
+var l = n(627968),
+    i = n(64700),
+    r = n(503698),
+    s = n.n(r),
+    a = n(575593),
+    o = n(397927),
+    u = n(713517),
+    d = n(674658),
+    c = n(898461),
+    p = n(837015),
+    m = n(929283),
+    E = n(761365),
+    _ = n(985018),
+    S = n(846405);
 let x = e => {
-    let n, t, {
+    let t, n, {
             skuId: r,
             user: x,
-            claimed: T,
-            onSelect: P,
-            selectedSkuId: h
+            claimed: P,
+            onSelect: T,
+            selectedSkuId: A
         } = e,
-        [A, I] = i.useState(null),
-        g = i.useCallback(e => {
-            I(e)
+        [h, g] = i.useState(null),
+        I = i.useCallback(e => {
+            g(e)
         }, []),
         f = i.useMemo(() => ({
-            current: A
-        }), [A]),
+            current: h
+        }), [h]),
         {
             isHoveringOrFocusing: j
         } = (0, u.A)(f),
-        R = !T && j,
+        R = !P && j,
         {
             product: M
         } = (0, d.q)(r);
     if (null == M) return null;
     let C = M.items[0];
-    return null == C ? null : ((0, c.T)(C) ? (t = a.R.AVATAR_DECORATION, n = (0, l.jsx)(m.i, {
+    return null == C ? null : ((0, c.T)(C) ? (n = a.R.AVATAR_DECORATION, t = (0, l.jsx)(m.i, {
         item: C,
         user: x,
         isHighlighted: R,
         avatarSize: o._3J.SIZE_96
-    })) : (0, p.F)(C) && (t = a.R.NAMEPLATE, n = (0, l.jsx)(E.A, {
+    })) : (0, p.F)(C) && (n = a.R.NAMEPLATE, t = (0, l.jsx)(E.A, {
         nameplate: C,
         user: x,
         isHighlighted: R,
         size: "small"
     })), (0, l.jsx)(o.vN3, {
         children: (0, l.jsxs)(o.sqX, {
-            ref: g,
+            ref: I,
             "aria-label": M.name ?? "",
             onClick: () => {
-                null == r || null == P || T || P(r)
+                null == r || null == T || P || T(r)
             },
             className: s()(S._x, {
-                [S.Vp]: !T,
+                [S.Vp]: !P,
                 [S.mr]: R,
-                [S.md]: h === r
+                [S.md]: A === r
             }),
             children: [(0, l.jsx)("div", {
                 className: s()(S.VH, {
-                    [S._Q]: t === a.R.AVATAR_DECORATION,
-                    [S.M4]: t === a.R.NAMEPLATE
+                    [S._Q]: n === a.R.AVATAR_DECORATION,
+                    [S.M4]: n === a.R.NAMEPLATE
                 }),
-                children: null != n ? (0, l.jsxs)(l.Fragment, {
+                children: null != t ? (0, l.jsxs)(l.Fragment, {
                     children: [(0, l.jsx)("div", {
                         className: s()(S.i1, {
-                            [S.Sf]: T
+                            [S.Sf]: P
                         }),
-                        children: n
-                    }), T && (0, l.jsx)(o.rOg, {
+                        children: t
+                    }), P && (0, l.jsx)(o.rOg, {
                         size: "custom",
                         width: 48,
                         height: 48,
@@ -88,7 +88,7 @@ let x = e => {
                     children: M.name
                 }), (0, l.jsx)(o.Text, {
                     variant: "text-sm/normal",
-                    children: T ? _.intl.string(_.t["6cfuDj"]) : _.intl.string(_.t.QQsaCc)
+                    children: P ? _.intl.string(_.t["6cfuDj"]) : _.intl.string(_.t.QQsaCc)
                 })]
             })]
         })

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(64700),
     r = n(311907),
-    a = n(449054),
-    l = n(417426),
+    l = n(449054),
+    a = n(417426),
     s = n(747550),
     o = n(351022),
     d = n(282026),
@@ -17,11 +17,11 @@ var i = n(64700),
 function h(e) {
     let {
         loadId: t
-    } = e, n = d.A.useField("fetchedQuery"), a = d.A.useField("categoryId"), l = d.A.useField("languageCode"), c = i.useMemo(() => ({
-        categoryId: a,
+    } = e, n = d.A.useField("fetchedQuery"), l = d.A.useField("categoryId"), a = d.A.useField("languageCode"), c = i.useMemo(() => ({
+        categoryId: l,
         query: n,
-        languageCode: l
-    }), [a, l, n]), u = (0, r.bG)([o.A], () => o.A.getGuildIds(c) ?? A.VX), h = (0, r.bG)([o.A], () => o.A.getIsFetching(c) ?? !1), _ = d.A.useField("resultsQuery"), m = _ !== n, g = i.useCallback(() => {
+        languageCode: a
+    }), [l, a, n]), u = (0, r.bG)([o.A], () => o.A.getGuildIds(c) ?? A.VX), h = (0, r.bG)([o.A], () => o.A.getIsFetching(c) ?? !1), _ = d.A.useField("resultsQuery"), m = _ !== n, g = i.useCallback(() => {
         let e = o.A.getGuildIds(c),
             n = o.A.getTotal(c);
         if (null == e || null == n) return;
@@ -40,8 +40,8 @@ function h(e) {
         loading: m || h,
         searchResultsQuery: _,
         loadMore: g,
-        searchCategoryId: a
-    }), [u, m, h, _, g, a])
+        searchCategoryId: l
+    }), [u, m, h, _, g, l])
 }
 
 function _(e) {
@@ -60,7 +60,7 @@ function _(e) {
         searchQuery: r,
         onSearchTextChange: o,
         onClearSearch: i.useCallback(() => {
-            a.gp(t), l.A.clearSearchResults(), l.A.resetSearchLayout(), d.A.setState({
+            l.gp(t), a.A.clearSearchResults(), a.A.resetSearchLayout(), d.A.setState({
                 query: "",
                 fetchedQuery: "",
                 resultsQuery: "",
@@ -75,7 +75,7 @@ function _(e) {
             let e = d.A.getField("query"),
                 n = d.A.getField("fetchedQuery");
             if ("" === e.trim() || e === n) return;
-            l.A.clearSearchResults();
+            a.A.clearSearchResults();
             let i = d.A.getField("languageCode"),
                 r = d.A.getField("categoryId");
             d.A.setState({

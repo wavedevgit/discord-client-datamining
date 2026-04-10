@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(143236),
     r = n(933958),
-    a = n(969151),
-    l = n(954571),
+    l = n(969151),
+    a = n(954571),
     s = n(203982),
     o = n(927813),
     d = n(636401),
@@ -47,10 +47,10 @@ class E extends i.EventEmitter {
         g.add(t), this.handshakeFailureTimeoutId = setTimeout(() => {
             Array.from(r.Ay.getSelfEmbeddedActivities().entries()).forEach(e => {
                 let [t, n] = e;
-                l.default.track(h.HAw.ACTIVITY_HANDSHAKE_TIMED_OUT, {
+                a.default.track(h.HAw.ACTIVITY_HANDSHAKE_TIMED_OUT, {
                     application_id: t,
-                    channel_id: (0, a.H)(n.location),
-                    guild_id: (0, a.D)(n.location),
+                    channel_id: (0, l.H)(n.location),
+                    guild_id: (0, l.D)(n.location),
                     timeout_ms: _
                 })
             })
@@ -87,23 +87,23 @@ class E extends i.EventEmitter {
     };
     routeEvent(e, t, n, i) {
         if (!Array.isArray(n)) return void console.warn("[PostMessageTransport] Protocol error: event data should be an Array!");
-        let [r, a] = n;
+        let [r, l] = n;
         switch (r) {
             case c.A.HANDSHAKE:
                 if (null != e) throw new d.A({
                     closeCode: h.YI$.CLOSE_UNSUPPORTED
                 }, "Already connected");
-                return this.handleHandshake(t, a, i);
+                return this.handleHandshake(t, l, i);
             case c.A.FRAME:
                 if (null == e) throw new d.A({
                     closeCode: h.YI$.CLOSE_UNSUPPORTED
                 }, "Not connected");
-                return this.handleFrame(t, e, a);
+                return this.handleFrame(t, e, l);
             case c.A.CLOSE:
                 if (null == e) throw new d.A({
                     closeCode: h.YI$.CLOSE_UNSUPPORTED
                 }, "Not connected");
-                return this.handleClose(e, a);
+                return this.handleClose(e, l);
             default:
                 throw new d.A({
                     closeCode: h.YI$.CLOSE_UNSUPPORTED
@@ -127,14 +127,14 @@ class E extends i.EventEmitter {
     handleHandshake = async (e, t, i) => {
         let r;
         null != this.handshakeFailureTimeoutId && clearTimeout(this.handshakeFailureTimeoutId);
-        let a = (await n.e("34188").then(n.t.bind(n, 88137, 23))).default;
+        let l = (await n.e("34188").then(n.t.bind(n, 88137, 23))).default;
         try {
-            a.assert(t, (0, u.A)(a).required().keys({
-                v: a.number().min(1).max(1).required(),
-                encoding: a.string().equal("json").optional(),
-                client_id: a.string().required(),
-                frame_id: a.string().required(),
-                sdk_version: a.string().optional()
+            l.assert(t, (0, u.A)(l).required().keys({
+                v: l.number().min(1).max(1).required(),
+                encoding: l.string().equal("json").optional(),
+                client_id: l.string().required(),
+                frame_id: l.string().required(),
+                sdk_version: l.string().optional()
             }))
         } catch (e) {
             throw new d.A({
@@ -145,7 +145,7 @@ class E extends i.EventEmitter {
         if (!g.has(s)) throw this.logger.error(`Unrecognized frame ID ${s}`), new d.A({
             closeCode: h.YI$.CLOSE_UNSUPPORTED
         }, `Unrecognized frame ID ${s}`);
-        null != t.sdk_version && l.default.track(h.HAw.ACTIVITY_HANDSHAKE, {
+        null != t.sdk_version && a.default.track(h.HAw.ACTIVITY_HANDSHAKE, {
             application_id: t.client_id,
             sdk_version: t.sdk_version
         });

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(435371),
-    a = n(519412),
-    l = n(985018),
+    l = n(519412),
+    a = n(985018),
     s = n(421438);
 
 function o(e) {
@@ -20,8 +20,8 @@ function o(e) {
             src: s,
             alt: ""
         }),
-        title: l.intl.string(a.default.aFBQ3d),
-        body: l.intl.string(a.default.HXu14O),
+        title: a.intl.string(l.default.aFBQ3d),
+        body: a.intl.string(l.default.HXu14O),
         padding: "lg",
         caretConfig: {
             align: "center",

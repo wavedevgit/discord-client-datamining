@@ -2,8 +2,8 @@
 n(321073);
 var i = n(735438),
     r = n.n(i),
-    a = n(311907),
-    l = n(73153),
+    l = n(311907),
+    a = n(73153),
     s = n(734057),
     o = n(967198),
     d = n(661191),
@@ -41,7 +41,7 @@ function p(e) {
     } = e;
     delete A[t.id], delete h[t.id]
 }
-class E extends a.Ay.Store {
+class E extends l.Ay.Store {
     initialize() {
         this.waitFor(s.A, o.A)
     }
@@ -59,7 +59,7 @@ class E extends a.Ay.Store {
         return null == u[e] && !_[e]?.loading
     }
 }
-new E(l.h, {
+new E(a.h, {
     CHANNEL_SELECT: function(e) {
         let {
             channelId: t,
@@ -71,8 +71,8 @@ new E(l.h, {
         i.forEach(e => {
             m(e), A[e]?.length === 0 && delete A[e]
         });
-        let a = r().chain(Array.from(i)).filter(e => e in A).sortBy(e => -(A[e]?.length ?? 0)).value();
-        u[n] = new Set(a)
+        let l = r().chain(Array.from(i)).filter(e => e in A).sortBy(e => -(A[e]?.length ?? 0)).value();
+        u[n] = new Set(l)
     },
     MESSAGE_CREATE: function(e) {
         let {
@@ -82,11 +82,11 @@ new E(l.h, {
             isPushNotification: r
         } = e;
         if (i || r) return !1;
-        let a = s.A.getChannel(t);
-        if (null == a) return !1;
-        let l = a.guild_id;
-        if (null == l || null == u[l]) return !1;
-        g(l, t, n.id, n.author?.id)
+        let l = s.A.getChannel(t);
+        if (null == l) return !1;
+        let a = l.guild_id;
+        if (null == a || null == u[a]) return !1;
+        g(a, t, n.id, n.author?.id)
     },
     GUILD_DELETE: function(e) {
         let {

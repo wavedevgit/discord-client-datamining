@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(397927),
-    a = n(587895),
-    l = n(851907);
+    l = n(587895),
+    a = n(851907);
 
 function s(e) {
     let {
@@ -15,9 +15,9 @@ function s(e) {
         linkId: o,
         message: d,
         onShare: c
-    } = e, u = a.A.getApplication(t);
+    } = e, u = l.A.getApplication(t);
     if (null == u) return void c(!1, !1);
-    let A = null != (0, l.LU)({
+    let A = null != (0, a.LU)({
             applicationId: u.id
         }) ? r.KX8 : r.SYi,
         h = !1;

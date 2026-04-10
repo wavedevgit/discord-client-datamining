@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(311907),
-    l = n(314116),
+    l = n(311907),
+    a = n(314116),
     s = n(765671),
     o = n(4616),
     d = n(743674),
@@ -28,20 +28,20 @@ function S(e) {
     let {
         guild: t,
         width: n,
-        height: a
-    } = e, l = r.useMemo(() => t?.splash != null ? A.Ay.getGuildSplashURL({
+        height: l
+    } = e, a = r.useMemo(() => t?.splash != null ? A.Ay.getGuildSplashURL({
         id: t?.id,
         splash: t?.splash
-    }) : null, [t?.splash, t?.id]), s = (0, d.S)(l);
-    return null == l ? (0, i.jsx)("div", {
+    }) : null, [t?.splash, t?.id]), s = (0, d.S)(a);
+    return null == a ? (0, i.jsx)("div", {
         className: N.Eq
     }) : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.A, {
             className: N.Yi,
-            src: l,
+            src: a,
             imageClassName: N.Iv,
             width: n,
-            height: a
+            height: l
         }), null != s && (0, i.jsx)("div", {
             className: N.qj,
             style: {
@@ -59,10 +59,10 @@ let x = e => {
         ref: n,
         width: o,
         height: d
-    } = (0, s.Ay)(), A = (0, a.bG)([p.A], () => p.A.getRequest(t)), h = (0, a.bG)([u.A], () => u.A.getGuild(t)), {
+    } = (0, s.Ay)(), A = (0, l.bG)([p.A], () => p.A.getRequest(t)), h = (0, l.bG)([u.A], () => u.A.getGuild(t)), {
         hasFetchedRequestToJoinGuilds: x,
         guildPreviewDisabled: v
-    } = (0, a.cf)([p.A], () => ({
+    } = (0, l.cf)([p.A], () => ({
         hasFetchedRequestToJoinGuilds: p.A.hasFetchedRequestToJoinGuilds,
         guildPreviewDisabled: p.A.getJoinRequestGuild(t)
     }));
@@ -75,7 +75,7 @@ let x = e => {
             _.A.removeGuildJoinRequest(t), (0, c.pX)(C.BVt.ME)
         }, [t]),
         y = (e, t) => () => {
-            (0, l.A)({
+            (0, a.A)({
                 title: T.intl.string(T.t.y0CVes),
                 subtitle: e,
                 cancelText: T.intl.string(T.t.oEAioF),

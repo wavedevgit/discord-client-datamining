@@ -5,21 +5,21 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(397927),
-    a = n(73153),
-    l = n(272355);
+    l = n(73153),
+    a = n(272355);
 let s = "CONNECTIONS_GRID_MODAL_KEY";
-class o extends l.A {
+class o extends a.A {
     _initialize() {
-        a.h.subscribe("CONNECTIONS_GRID_MODAL_SHOW", this.handleShow), a.h.subscribe("CONNECTIONS_GRID_MODAL_HIDE", this.handleHide)
+        l.h.subscribe("CONNECTIONS_GRID_MODAL_SHOW", this.handleShow), l.h.subscribe("CONNECTIONS_GRID_MODAL_HIDE", this.handleHide)
     }
     _terminate() {
-        a.h.unsubscribe("CONNECTIONS_GRID_MODAL_SHOW", this.handleShow), a.h.unsubscribe("CONNECTIONS_GRID_MODAL_HIDE", this.handleHide)
+        l.h.unsubscribe("CONNECTIONS_GRID_MODAL_SHOW", this.handleShow), l.h.unsubscribe("CONNECTIONS_GRID_MODAL_HIDE", this.handleHide)
     }
     handleShow(e) {
         let {
             onComplete: t,
-            excludedPlatformTypes: a,
-            includedPlatformTypes: l,
+            excludedPlatformTypes: l,
+            includedPlatformTypes: a,
             integrations: o,
             onCompleteApplication: d
         } = e;
@@ -29,8 +29,8 @@ class o extends l.A {
             } = await n.e("95198").then(n.bind(n, 58829));
             return n => (0, i.jsx)(e, {
                 onComplete: t,
-                excludedPlatformTypes: a,
-                includedPlatformTypes: l,
+                excludedPlatformTypes: l,
+                includedPlatformTypes: a,
                 integrations: o,
                 onCompleteApplication: d,
                 ...n

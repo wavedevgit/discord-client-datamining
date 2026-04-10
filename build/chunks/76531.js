@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(397927),
-    a = n(892742),
-    l = n(985018),
+    l = n(892742),
+    a = n(985018),
     s = n(446e3),
     o = n(289474);
 let d = function(e) {
@@ -19,12 +19,12 @@ let d = function(e) {
             className: s.B0,
             children: [(0, i.jsx)(r.Heading, {
                 variant: "heading-md/semibold",
-                children: l.intl.string(l.t.IcljUu)
+                children: a.intl.string(a.t.IcljUu)
             }), (0, i.jsx)("div", {
                 className: o.wu,
                 children: (0, i.jsx)("span", {
                     className: o.cy,
-                    children: l.intl.string(l.t.q97mEu)
+                    children: a.intl.string(a.t.q97mEu)
                 })
             }), (0, i.jsx)("div", {
                 className: o.oU,
@@ -34,7 +34,7 @@ let d = function(e) {
                         className: o.Lj,
                         children: (0, i.jsx)("div", {
                             className: o.n0,
-                            children: (0, i.jsx)(a.A, {
+                            children: (0, i.jsx)(l.A, {
                                 questId: t
                             })
                         })

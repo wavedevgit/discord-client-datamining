@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(996682),
-    l = n(158954),
+    l = n(996682),
+    a = n(158954),
     s = n(554146),
     o = n(189252),
     d = n(915089),
@@ -22,9 +22,9 @@ function g(e) {
         width: n,
         height: r,
         ...s
-    } = e, o = (0, l.JtX)(t), c = o?.width ?? n, u = o?.height ?? r, A = (0, d.GV)();
+    } = e, o = (0, a.JtX)(t), c = o?.width ?? n, u = o?.height ?? r, A = (0, d.GV)();
     return (0, i.jsxs)("svg", {
-        ...(0, a.A)(s),
+        ...(0, l.A)(s),
         xmlns: "http://www.w3.org/2000/svg",
         width: c,
         height: u,
@@ -53,18 +53,18 @@ function g(e) {
 }
 
 function p() {
-    let [e, t] = (0, c.kn)([s.M.APRIL_FOOLS_2026_COACHMARK]), n = r.useRef(null), a = e === s.M.APRIL_FOOLS_2026_COACHMARK;
+    let [e, t] = (0, c.kn)([s.M.APRIL_FOOLS_2026_COACHMARK]), n = r.useRef(null), l = e === s.M.APRIL_FOOLS_2026_COACHMARK;
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(o.A, {
             ref: n,
             onClick: () => {
                 (0, u.A)({
                     source: "app_title_bar"
-                }), a && t(h.i.INDIRECT_ACTION)
+                }), l && t(h.i.INDIRECT_ACTION)
             },
             icon: g,
             tooltip: m.intl.string(_.default.UnXoXM)
-        }), a && (0, i.jsx)(A.A, {
+        }), l && (0, i.jsx)(A.A, {
             markAsDismissed: t
         })]
     })

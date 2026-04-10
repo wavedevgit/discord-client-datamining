@@ -1,16 +1,16 @@
 /** chunk id: 84002 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => l
 });
 var i = n(652215);
 let r = "<removed>";
 
-function a(e) {
+function l(e) {
     var t, n;
-    let a = {
+    let l = {
         ...e
     };
-    return "object" == typeof(t = a).args && "string" == typeof t.cmd && (a = function(e) {
+    return "object" == typeof(t = l).args && "string" == typeof t.cmd && (l = function(e) {
         switch (e.cmd) {
             case i.e$_.AUTHENTICATE:
             case i.e$_.GET_PROVIDER_ACCESS_TOKEN:
@@ -25,7 +25,7 @@ function a(e) {
                     ...e
                 }
         }
-    }(a)), "object" == typeof(n = a).data && "string" == typeof n.cmd && (a = function(e) {
+    }(l)), "object" == typeof(n = l).data && "string" == typeof n.cmd && (l = function(e) {
         switch (e.cmd) {
             case i.e$_.AUTHENTICATE:
             case i.e$_.GET_PROVIDER_ACCESS_TOKEN:
@@ -40,5 +40,5 @@ function a(e) {
                     ...e
                 }
         }
-    }(a)), a
+    }(l)), l
 }

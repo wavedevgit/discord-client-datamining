@@ -3,9 +3,9 @@ let i, r;
 n.d(t, {
     A: () => R
 }), n(323874), n(14289), n(35956), n(321073);
-var a = n(143236),
-    l = n(735438),
-    s = n.n(l),
+var l = n(143236),
+    a = n(735438),
+    s = n.n(a),
     o = n(73153),
     d = n(626584),
     c = n(111162),
@@ -50,7 +50,7 @@ function x() {
 function v(e, t, n) {
     let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 200,
         r = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {},
-        a = null != S(e.headers).origin ? {
+        l = null != S(e.headers).origin ? {
             "Access-Control-Allow-Origin": S(e.headers).origin,
             "Access-Control-Allow-Credentials": "true",
             "Access-Control-Allow-Methods": "POST, GET, PUT, PATCH, DELETE",
@@ -58,7 +58,7 @@ function v(e, t, n) {
         } : {};
     n = n ? JSON.stringify(n) : "", i = 200 === i && 0 === n.length ? 204 : i, t.setHeader("Content-Length", I.byteLength(n).toString()), t.setHeader("Content-Type", "application/json"), t.writeHead(i, {
         ...r,
-        ...a
+        ...l
     }), t.end(n)
 }
 
@@ -105,7 +105,7 @@ class O extends m.A {
         this._closeCallback(t, e)
     }
 }
-class L extends a.EventEmitter {
+class L extends l.EventEmitter {
     constructor() {
         super();
         let e = 0;
@@ -123,19 +123,19 @@ class L extends a.EventEmitter {
         if ("/rpc" === n && "OPTIONS" === r) return void v(e, t, {
             body: ""
         });
-        let a = "POST" === r;
-        if ("/rpc" === n && ("GET" === r || a)) {
+        let l = "POST" === r;
+        if ("/rpc" === n && ("GET" === r || l)) {
             let n = new URLSearchParams(i),
-                r = a ? S(e.headers)["content-type"].split("/")[1] : "json",
-                l = function() {
+                r = l ? S(e.headers)["content-type"].split("/")[1] : "json",
+                a = function() {
                     let {
                         protocol: e,
                         host: i
                     } = u.A.toURLSafe(n.get("callback") ?? "") ?? {};
                     e === location.protocol && i === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", C), t.writeHead(301), t.end()
                 },
-                s = new O(!a ? l : v.bind(null, e, t), !a ? l : b.bind(null, e, t, 400), Number(n.get("v")), r);
-            a ? (0, g.j7)(s, S(e.headers).origin, n.get("client_id")).then(() => {
+                s = new O(!l ? a : v.bind(null, e, t), !l ? a : b.bind(null, e, t, 400), Number(n.get("v")), r);
+            l ? (0, g.j7)(s, S(e.headers).origin, n.get("client_id")).then(() => {
                 let n = "";
                 e.on("data", e => n += e), e.on("error", () => b(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
             }).catch(e => {

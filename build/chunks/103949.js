@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(179771),
     r = n(73153),
-    a = n(859703),
-    l = n(792620),
+    l = n(859703),
+    a = n(792620),
     s = n(954571),
     o = n(636401),
     d = n(90924),
@@ -22,8 +22,8 @@ let u = {
             } = e;
             (0, d.lG)(t.transport);
             let i = (0, d.D2)(t.application),
-                r = a.A.getQuest(n),
-                s = (0, l.TP)(r);
+                r = l.A.getQuest(n),
+                s = (0, a.TP)(r);
             if (null == r || null == s || s !== i) throw new o.A({
                 errorCode: c.Lw6.INVALID_COMMAND
             }, `Quest not found: ${n}`);
@@ -45,8 +45,8 @@ let u = {
             } = e;
             (0, d.lG)(t.transport);
             let i = (0, d.D2)(t.application),
-                u = a.A.getQuest(n),
-                A = (0, l.vS)(u);
+                u = l.A.getQuest(n),
+                A = (0, a.vS)(u);
             if (null == u || null == A || A !== i) throw new o.A({
                 errorCode: c.Lw6.INVALID_COMMAND
             }, `Quest not found: ${n}`);

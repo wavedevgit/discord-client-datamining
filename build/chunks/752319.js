@@ -1,16 +1,16 @@
 /** chunk id: 752319 params = (module,exports,require) **/
 var i = n(311907),
     r = n(73153),
-    a = n(287809),
-    l = n(652215);
-let s = l.XlH.CLOSED,
+    l = n(287809),
+    a = n(652215);
+let s = a.XlH.CLOSED,
     o = {},
     d = null;
 
 function c() {
-    let e = a.default.getCurrentUser();
+    let e = l.default.getCurrentUser();
     if (null == e) return u();
-    s = l.XlH.OPEN, o = {}, d = {
+    s = a.XlH.OPEN, o = {}, d = {
         ...{
             userId: e.id,
             username: e.username,
@@ -25,22 +25,22 @@ function c() {
 }
 
 function u() {
-    s = l.XlH.CLOSED, d = null, o = {}
+    s = a.XlH.CLOSED, d = null, o = {}
 }
 
 function A() {
-    s = l.XlH.OPEN, o = {}
+    s = a.XlH.OPEN, o = {}
 }
 class h extends i.Ay.Store {
     static displayName = "UserSettingsAccountStore";
     initialize() {
-        this.waitFor(a.default)
+        this.waitFor(l.default)
     }
     getErrors() {
         return o
     }
     getSubmitting() {
-        return s === l.XlH.SUBMITTING
+        return s === a.XlH.SUBMITTING
     }
     getSettings() {
         return d
@@ -54,11 +54,11 @@ new h(r.h, {
     USER_SETTINGS_MODAL_CLOSE: u,
     LOGOUT: u,
     USER_SETTINGS_MODAL_SUBMIT: function() {
-        s = l.XlH.SUBMITTING
+        s = a.XlH.SUBMITTING
     },
     USER_SETTINGS_MODAL_SUBMIT_FAILURE: function(e) {
-        if (s !== l.XlH.SUBMITTING) return !1;
-        s = l.XlH.OPEN, o = e.errors ?? {}
+        if (s !== a.XlH.SUBMITTING) return !1;
+        s = a.XlH.OPEN, o = e.errors ?? {}
     },
     USER_SETTINGS_MODAL_UPDATE_ACCOUNT: function(e) {
         let {
@@ -71,7 +71,7 @@ new h(r.h, {
     },
     USER_SETTINGS_MODAL_SUBMIT_COMPLETE: A,
     USER_SETTINGS_MODAL_RESET: function() {
-        let e = a.default.getCurrentUser();
+        let e = l.default.getCurrentUser();
         A(), null != e && (d = {
             ...{
                 userId: e.id,

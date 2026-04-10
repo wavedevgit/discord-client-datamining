@@ -21,8 +21,8 @@ var i = n(627968),
     R = n(309010),
     p = n(967198),
     h = n(792831),
-    m = n(147925),
-    O = n(723702),
+    O = n(147925),
+    m = n(723702),
     C = n(529942),
     g = n(164956),
     S = n(311127),
@@ -70,7 +70,7 @@ function j() {
             viewingRoles: r,
             backNavigationSection: s,
             isFullServerPreview: d,
-            isServerShopPreview: O
+            isServerShopPreview: m
         } = (0, a.cf)([g.A], () => ({
             viewingRoles: null != e ? g.A.getViewingRoles(e) : null,
             backNavigationSection: g.A.getBackNavigationSection(e),
@@ -140,10 +140,10 @@ function j() {
                     return (0, i.jsxs)(D, {
                         onClick: n,
                         buttonRef: t,
-                        children: [L, (0, i.jsx)(m.A, {
+                        children: [L, (0, i.jsx)(O.A, {
                             width: 16,
                             height: 16,
-                            direction: m.A.Directions.DOWN,
+                            direction: O.A.Directions.DOWN,
                             className: x.k5
                         })]
                     })
@@ -155,7 +155,7 @@ function j() {
                     size: "xs",
                     color: o.A.unsafe_rawColors.YELLOW_300.css
                 })
-            }), O && (0, i.jsx)(c.m, {
+            }), m && (0, i.jsx)(c.m, {
                 asContainer: !0,
                 text: U.intl.formatToPlainString(U.t.eummvd, {
                     maxTiers: M.f7,
@@ -180,8 +180,8 @@ function L(t) {
     } = t;
     return (0, a.bG)([g.A], () => g.A.isViewingRoles(e)) ? (0, i.jsx)("div", {
         className: s()(x.xd, {
-            [x.KF]: (0, O.isWindows)(),
-            [x.Xz]: (0, O.isMac)()
+            [x.KF]: (0, m.isWindows)(),
+            [x.Xz]: (0, m.isMac)()
         }),
         children: (0, i.jsx)(j, {})
     }) : null

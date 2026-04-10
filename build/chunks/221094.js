@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(64700),
     r = n(600975),
-    a = n(652215);
-let l = (0, r.C)({
+    l = n(652215);
+let a = (0, r.C)({
         kind: "guild",
         id: "2021-10_study_group",
         label: "Student hub study group",
@@ -21,14 +21,14 @@ let l = (0, r.C)({
         }]
     }),
     s = e => (i.useEffect(() => {
-        null != e && e.features.has(a.GuildFeatures.HUB) && l.trackExposure({
+        null != e && e.features.has(l.GuildFeatures.HUB) && a.trackExposure({
             guildId: e.id,
             location: "467c32_1"
         })
-    }, [e]), l.useExperiment({
-        guildId: e?.id ?? a.dJq,
+    }, [e]), a.useExperiment({
+        guildId: e?.id ?? l.dJq,
         location: "467c32_2"
     }, {
         autoTrackExposure: !1,
-        disable: null == e || !e.features.has(a.GuildFeatures.HUB)
+        disable: null == e || !e.features.has(l.GuildFeatures.HUB)
     }))

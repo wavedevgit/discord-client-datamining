@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(503698),
-    a = n.n(r),
-    l = n(303136),
+    l = n.n(r),
+    a = n(303136),
     s = n(111682),
     o = n(181713);
 let d = e => {
@@ -16,8 +16,8 @@ let d = e => {
         questName: r
     } = e, d = n ? o.A : o.A + "?format=webp";
     return (0, i.jsx)("div", {
-        className: a()(s.k, t),
-        children: n ? (0, i.jsx)(l.A, {
+        className: l()(s.k, t),
+        children: n ? (0, i.jsx)(a.A, {
             preload: "auto",
             className: s.L,
             children: (0, i.jsx)("source", {

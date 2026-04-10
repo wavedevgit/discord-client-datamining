@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(503698),
-    a = n.n(r),
-    l = n(311907),
+    l = n.n(r),
+    a = n(311907),
     s = n(554146),
     o = n(397927),
     d = n(820284),
@@ -24,13 +24,13 @@ var r = n(503698),
 function f() {
     let {
         analyticsLocations: e
-    } = (0, u.Ay)(c.A.ACTIVE_NOW_COLUMN), t = (0, l.bG)([m.A], () => m.A.hasConsented(p.YAq.PERSONALIZATION)) ? [] : [s.M.NOW_PLAYING_CONSENT_CARD], n = (0, A.GV)();
+    } = (0, u.Ay)(c.A.ACTIVE_NOW_COLUMN), t = (0, a.bG)([m.A], () => m.A.hasConsented(p.YAq.PERSONALIZATION)) ? [] : [s.M.NOW_PLAYING_CONSENT_CARD], n = (0, A.GV)();
     return (0, i.jsx)(u.f5, {
         value: e,
         children: (0, i.jsx)(d.A, {
             section: p.JJy.ACTIVE_NOW_COLUMN,
             children: (0, i.jsx)("aside", {
-                className: a()(I.kL, "refresh-active-now"),
+                className: l()(I.kL, "refresh-active-now"),
                 "aria-labelledby": n,
                 children: (0, i.jsx)(o.HOs, {
                     className: I.XG,

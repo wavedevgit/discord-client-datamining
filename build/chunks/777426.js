@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     s = n(110259),
     o = n(311907),
     d = n(3203),
@@ -30,7 +30,7 @@ var S = n(985018),
 function v(e) {
     let {
         ref: t,
-        isFocused: a,
+        isFocused: l,
         isActive: v,
         status: b,
         activities: y,
@@ -83,7 +83,7 @@ function v(e) {
     };
     return (0, i.jsx)(_.A, {
         ref: t,
-        isFocused: a,
+        isFocused: l,
         isActive: v,
         user: M,
         analyticsLocations: w,
@@ -91,7 +91,7 @@ function v(e) {
         onClick: j,
         height: 72,
         children: e => (0, i.jsxs)("div", {
-            className: l()(x.a4, x.Z$),
+            className: a()(x.a4, x.Z$),
             children: [(0, i.jsx)(g.A, {
                 className: x.Cv,
                 user: M,

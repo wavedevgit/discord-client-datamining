@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(665260),
-    l = n(311907),
+    l = n(665260),
+    a = n(311907),
     s = n(397927),
     o = n(59636),
     d = n(235986),
@@ -73,8 +73,8 @@ class f extends r.PureComponent {
         })
     }
     handleRestoreHiddenLibraryApplication = e => {
-        let t = a.PQ(e.getFlags(), g.hM6.HIDDEN);
-        o.V(e.id, e.branchId, t), this.trackRestoreApplication(e, a.Lt(t, g.hM6.HIDDEN))
+        let t = l.PQ(e.getFlags(), g.hM6.HIDDEN);
+        o.V(e.id, e.branchId, t), this.trackRestoreApplication(e, l.Lt(t, g.hM6.HIDDEN))
     };
     renderBody() {
         let {
@@ -119,7 +119,7 @@ function C() {
     let e = {
         installShortcutDesktop: c.uB.useSetting(),
         installShortcutStartMenu: c.Pf.useSetting(),
-        hiddenLibraryApplicationViewItems: (0, l.bG)([u.A], () => u.A.hiddenLibraryApplicationViewItems)
+        hiddenLibraryApplicationViewItems: (0, a.bG)([u.A], () => u.A.hiddenLibraryApplicationViewItems)
     };
     return (0, i.jsx)(f, {
         ...e

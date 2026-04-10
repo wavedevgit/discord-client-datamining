@@ -1,21 +1,21 @@
 /** chunk id: 766201 params = (module,exports,require) **/
 n.d(t, {
-    n: () => l
+    n: () => a
 });
 var i = n(64700),
     r = n(651162),
-    a = n(652215);
-let l = (e, t, n) => {
-        let [r, l] = (0, i.useState)(!1);
+    l = n(652215);
+let a = (e, t, n) => {
+        let [r, a] = (0, i.useState)(!1);
         return (0, i.useEffect)(() => {
             let i = s(e);
-            if (t || n || null == i) return void l(!1);
+            if (t || n || null == i) return void a(!1);
             let r = i - Date.now();
-            if (r <= 0) return void l(!0);
-            l(!1);
+            if (r <= 0) return void a(!0);
+            a(!1);
             let o = setTimeout(() => {
-                l(!0)
-            }, Math.min(a.mnr, r));
+                a(!0)
+            }, Math.min(l.mnr, r));
             return () => clearTimeout(o)
         }, [t, n, e]), r
     },

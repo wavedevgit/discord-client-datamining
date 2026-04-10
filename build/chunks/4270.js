@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     s = n(837381),
     o = n(731738),
     d = n(397927),
@@ -31,7 +31,7 @@ function b() {
     let e = r.useRef(null),
         t = (0, I.A)(),
         n = (0, f.I)(),
-        a = (0, g.r)(),
+        l = (0, g.r)(),
         b = (0, m.w)(),
         y = (0, u.A)("message-requests-spam-list"),
         {
@@ -61,15 +61,15 @@ function b() {
             } = e, r = t[n], s = t[n + 1]?.channel?.id, o = r.channel.id;
             return (0, i.jsx)(T.A, {
                 index: n,
-                className: l()({
+                className: a()({
                     [v.wH]: null != O && O === o,
                     [v.wZ]: null != O && O === s
                 }),
                 channel: r.channel,
                 user: r.user,
-                hasSingleMessageRequest: a
+                hasSingleMessageRequest: l
             }, o)
-        }, [t, a, O]),
+        }, [t, l, O]),
         j = r.useCallback(() => (0, i.jsxs)(A.A, {
             className: v.Gf,
             children: [x.intl.format(x.t.C79Edh, {
@@ -97,12 +97,12 @@ function b() {
             children: n => {
                 let {
                     ref: r,
-                    role: a,
-                    ...l
+                    role: l,
+                    ...a
                 } = n;
                 return (0, i.jsx)(d.B8B, {
                     className: v.p_,
-                    innerRole: a,
+                    innerRole: l,
                     innerAriaLabel: x.intl.string(x.t.e7GWjQ),
                     ref: t => {
                         e.current = t, r.current = t?.getScrollerNode() ?? null
@@ -116,7 +116,7 @@ function b() {
                     sections: [t.length],
                     chunkSize: 30,
                     fade: !0,
-                    ...l
+                    ...a
                 }, "message-requests-spam-list")
             }
         })

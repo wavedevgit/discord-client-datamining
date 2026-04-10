@@ -4,10 +4,10 @@ n.d(t, {
 });
 var i = n(397927),
     r = n(73153),
-    a = n(272355),
-    l = n(480900),
+    l = n(272355),
+    a = n(480900),
     s = n(293260);
-class o extends a.A {
+class o extends l.A {
     _initialize() {
         r.h.subscribe("GUILD_ROLE_CONNECTIONS_MODAL_SHOW", this.handleShow)
     }
@@ -19,7 +19,7 @@ class o extends a.A {
             role: t,
             guildId: n
         } = e;
-        (0, i.kBI)("GUILD_ROLE_CONNECTIONS_MODAL_KEY") || (null != t && t.tags?.guild_connections === null ? (0, l.b)(t, n) : (0, s.c0)(n))
+        (0, i.kBI)("GUILD_ROLE_CONNECTIONS_MODAL_KEY") || (null != t && t.tags?.guild_connections === null ? (0, a.b)(t, n) : (0, s.c0)(n))
     }
 }
 let d = new o

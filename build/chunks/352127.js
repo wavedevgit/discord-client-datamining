@@ -1,15 +1,15 @@
 /** chunk id: 352127 params = (module,exports,require) **/
 n.d(t, {
     Cf: () => s,
-    WD: () => l,
+    WD: () => a,
     X9: () => o,
     lP: () => d,
-    xF: () => a
+    xF: () => l
 });
 var i = n(954571),
     r = n(652215);
 
-function a(e) {
+function l(e) {
     let {
         targetUserId: t,
         tab: n
@@ -20,7 +20,7 @@ function a(e) {
     })
 }
 
-function l(e) {
+function a(e) {
     let {
         targetUserId: t,
         tab: n

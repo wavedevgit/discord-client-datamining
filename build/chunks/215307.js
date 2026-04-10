@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(311907),
-    a = n(713654),
-    l = n(289357),
+    l = n(713654),
+    a = n(289357),
     s = n(607567),
     o = n(985018),
     d = n(533502);
@@ -19,8 +19,8 @@ let c = function(e) {
             user: t
         } = e;
         return t
-    }), [n]), u = (0, a.gU)(n);
-    return (0, i.jsx)(l.Qv, {
+    }), [n]), u = (0, l.gU)(n);
+    return (0, i.jsx)(a.Qv, {
         heading: o.intl.string(o.t["X2K3/4"]),
         topic: t,
         location: o.intl.string(o.t.LZA6Na),
@@ -29,10 +29,10 @@ let c = function(e) {
             color: "currentColor",
             className: d.K
         }) : null,
-        children: (0, i.jsx)(l.$i, {
+        children: (0, i.jsx)(a.$i, {
             channel: n,
             speakers: c,
-            voiceType: l.SY.STUDY_ROOM
+            voiceType: a.SY.STUDY_ROOM
         })
     })
 }

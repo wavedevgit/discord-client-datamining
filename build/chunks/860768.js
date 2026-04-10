@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(397927),
-    l = n(843472),
+    l = n(397927),
+    a = n(843472),
     s = n(309010),
     o = n(926466),
     d = n(652215),
@@ -17,7 +17,7 @@ class h extends r.PureComponent {
         let {
             guild: e
         } = this.props;
-        (0, a.mMO)(async () => {
+        (0, l.mMO)(async () => {
             let {
                 default: t
             } = await Promise.all([n.e("43600"), n.e("12629")]).then(n.bind(n, 234355));
@@ -33,7 +33,7 @@ class h extends r.PureComponent {
             t = u.intl.formatToPlainString(u.t.DEn7nu, {
                 invitePeople: u.intl.string(u.t.Sd8Ixw)
             });
-        this.props.markAsDismissed(c.i.UNKNOWN), null != e && l.A.sendBotMessage(e, t)
+        this.props.markAsDismissed(c.i.UNKNOWN), null != e && a.A.sendBotMessage(e, t)
     };
     render() {
         let e = `${u.intl.string(u.t.VWqWZQ)}

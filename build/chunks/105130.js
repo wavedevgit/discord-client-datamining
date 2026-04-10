@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(933958),
     r = n(663278),
-    a = n(91242),
-    l = n(859703),
+    l = n(91242),
+    a = n(859703),
     s = n(792620);
 n(590889);
 var o = n(592653),
@@ -29,7 +29,7 @@ function u(e, t, n) {
             } : null
         }
         case d.ZE4.FRAME_LAYOUT_MODE_UPDATE: {
-            let t = null != e.application?.id ? a.A.getConnectedFrame()?.layoutMode : null;
+            let t = null != e.application?.id ? l.A.getConnectedFrame()?.layoutMode : null;
             return null != t ? {
                 layout_mode: t
             } : null
@@ -50,7 +50,7 @@ function u(e, t, n) {
                 quest_id: t
             } = n;
             if (!t) return null;
-            let i = l.A.getQuest(t),
+            let i = a.A.getQuest(t),
                 r = (0, s.TP)(i);
             if (null == i || null == r || r !== e.application?.id) return null;
             return {

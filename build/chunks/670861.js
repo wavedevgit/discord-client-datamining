@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(311907),
-    l = n(734057),
+    l = n(311907),
+    a = n(734057),
     s = n(71393),
     o = n(320501),
     d = n(883344),
@@ -34,7 +34,7 @@ function A(e) {
                     channelId: void 0, messageIds: [], title: void 0
                 }
         }
-    }, [t]), _ = (0, a.bG)([l.A], () => null != n ? l.A.getChannel(n) : null, [n]), m = (0, a.bG)([s.A], () => _?.guild_id != null ? s.A.getGuild(_.guild_id) : null, [_]), g = (0, a.yK)([d.A, o.A], () => null == n ? [] : A.map(e => d.A.getMessage(e) ?? o.A.getMessage(n, e)).filter(e => null != e), [n, A]);
+    }, [t]), _ = (0, l.bG)([a.A], () => null != n ? a.A.getChannel(n) : null, [n]), m = (0, l.bG)([s.A], () => _?.guild_id != null ? s.A.getGuild(_.guild_id) : null, [_]), g = (0, l.yK)([d.A, o.A], () => null == n ? [] : A.map(e => d.A.getMessage(e) ?? o.A.getMessage(n, e)).filter(e => null != e), [n, A]);
     return null == _ || null == m || 0 === g.length ? null : (0, i.jsxs)("div", {
         className: u.kL,
         children: [null != h ? (0, i.jsx)("div", {

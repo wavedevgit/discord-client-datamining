@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(311907),
-    l = n(314116),
+    l = n(311907),
+    a = n(314116),
     s = n(397927),
     o = n(466472),
     d = n(29160),
@@ -45,7 +45,7 @@ class I extends r.PureComponent {
         })
     };
     handleRemoveLocation = () => {
-        (0, l.A)({
+        (0, a.A)({
             title: g.intl.string(g.t.iBUzS5),
             subtitle: g.intl.string(g.t["1XqeW2"]),
             confirmText: g.intl.string(g.t.iBUzS5),
@@ -83,8 +83,8 @@ class I extends r.PureComponent {
         let e, t, {
             path: n,
             label: r,
-            editingPath: a,
-            isDefault: l,
+            editingPath: l,
+            isDefault: a,
             metadata: o
         } = this.props;
         return null != o && (e = null != o.availableKB ? (0, h.Xq)(o.availableKB, {
@@ -103,7 +103,7 @@ class I extends r.PureComponent {
                         className: p.nM,
                         variant: "heading-md/semibold",
                         children: null != r ? r : A.A.getLabelFromPath(n)
-                    }), l ? (0, i.jsx)("span", {
+                    }), a ? (0, i.jsx)("span", {
                         className: p.Zn,
                         children: g.intl.string(g.t.bBvAEH)
                     }) : null]
@@ -123,7 +123,7 @@ class I extends r.PureComponent {
                 variant: "secondary",
                 size: "sm",
                 text: g.intl.string(g.t.bt75uw),
-                disabled: null != a,
+                disabled: null != l,
                 onClick: this.handleStartEditing
             })]
         })
@@ -232,18 +232,18 @@ class f extends r.PureComponent {
                 label: g.intl.string(g.t.aLszkC),
                 children: [e.map(e => {
                     let {
-                        path: a,
-                        label: l
+                        path: l,
+                        label: a
                     } = e;
                     return (0, i.jsx)(I, {
-                        path: a,
-                        label: l,
-                        metadata: t[a],
-                        isDefault: n === a,
+                        path: l,
+                        label: a,
+                        metadata: t[l],
+                        isDefault: n === l,
                         editingPath: r,
-                        hasGamesInstalledInPath: A.A.hasGamesInstalledInPath(a),
+                        hasGamesInstalledInPath: A.A.hasGamesInstalledInPath(l),
                         onToggleEditing: this.handleToggleEditing
-                    }, a)
+                    }, l)
                 }), (0, i.jsx)("div", {
                     className: p.sW,
                     children: (0, i.jsx)(s.Button, {
@@ -258,7 +258,7 @@ class f extends r.PureComponent {
         })
     }
 }
-let C = a.Ay.connectStores([A.A], () => ({
+let C = l.Ay.connectStores([A.A], () => ({
     installationPaths: A.A.installationPaths,
     installationPathsMetadata: A.A.installationPathsMetadata,
     defaultInstallationPath: A.A.defaultInstallationPath

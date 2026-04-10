@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(397927),
-    a = n(964486),
-    l = n(954571),
+    l = n(964486),
+    a = n(954571),
     s = n(217549),
     o = n(70856),
     d = n(875922),
@@ -22,9 +22,9 @@ function m(e) {
         close: n,
         onSelect: m
     } = e, g = (0, d.A)(t), p = (0, A.A)(t), E = (0, u.A)(t), I = (0, c.A)(t), f = (0, s.A)(t), C = (0, o.A)(t);
-    return (0, a.Ay)(() => {
-        let e = t.currentActivities.filter(e => e.game?.name != null && (0, l.isGameApplicationType)(e.game?.type)).map(e => e.game.name);
-        l.default.track(h.HAw.OPEN_POPOUT, {
+    return (0, l.Ay)(() => {
+        let e = t.currentActivities.filter(e => e.game?.name != null && (0, a.isGameApplicationType)(e.game?.type)).map(e => e.game.name);
+        a.default.track(h.HAw.OPEN_POPOUT, {
             type: "Now Playing Card Popout",
             games_detected: e
         })

@@ -1,6 +1,6 @@
 /** chunk id: 322223 params = (module,exports,require) **/
 n.d(e, {
-    A: () => m
+    A: () => O
 });
 var i = n(627968),
     l = n(64700),
@@ -21,17 +21,17 @@ var i = n(627968),
     p = n(985018),
     h = n(592528);
 
-function m(t) {
+function O(t) {
     let {
         onDismiss: e
-    } = t, m = (0, r.bG)([E.A], () => E.A.getGuildId()), O = (0, r.bG)([u.A], () => null != m ? u.A.getChannelId(m) : null, [m]), C = m ?? null, g = (0, r.bG)([d.A], () => null != C ? d.A.getGuild(C) : null, [C]), {
+    } = t, O = (0, r.bG)([E.A], () => E.A.getGuildId()), m = (0, r.bG)([u.A], () => null != O ? u.A.getChannelId(O) : null, [O]), C = O ?? null, g = (0, r.bG)([d.A], () => null != C ? d.A.getGuild(C) : null, [C]), {
         shouldShowIncidentActions: S,
         incidentData: y,
         isUnderLockdown: P
     } = (0, T.Li)(C), M = (0, o.fw)(g?.id ?? N.dJq), U = l.useCallback(() => null != g && (0, c.aZ)(g.id), [g]);
     if (null == g || null == y || !S) return null;
     let x = t => {
-            t && M && O !== R.VV.MEMBER_SAFETY && U() ? _.default.track(N.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
+            t && M && m !== R.VV.MEMBER_SAFETY && U() ? _.default.track(N.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
                 notice_type: N.kqX.GUILD_RAID_NOTIFICATION,
                 guild_id: g.id
             }) : (0, s.mMO)(async () => {
@@ -82,7 +82,7 @@ function m(t) {
         }) : p.intl.formatToPlainString(p.t.W87xDE, {
             guildName: g.name
         }),
-        L = M && O === R.VV.MEMBER_SAFETY;
+        L = M && m === R.VV.MEMBER_SAFETY;
     return (0, i.jsxs)(s.$Td, {
         className: h.lm,
         color: s.Hv$.WARNING,

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(342494),
-    l = n(582754),
+    l = n(342494),
+    a = n(582754),
     s = n(736653),
     o = n(793574),
     d = n(688810),
@@ -21,10 +21,10 @@ let _ = e => {
         onClick: m
     } = e, {
         analyticsLocations: g
-    } = (0, d.Ay)(o.A.HOME_PAGE_SHOP_TAB), p = (0, s.Ay)(), E = (0, l.Mw)(p) ? t.assetDark : t.assetLight, I = r.useRef(_);
+    } = (0, d.Ay)(o.A.HOME_PAGE_SHOP_TAB), p = (0, s.Ay)(), E = (0, a.Mw)(p) ? t.assetDark : t.assetLight, I = r.useRef(_);
     return I.current = _, r.useEffect(() => () => {
         I.current?.()
-    }, []), (0, i.jsx)(a.AM, {
+    }, []), (0, i.jsx)(l.AM, {
         targetElementRef: n,
         position: "right",
         align: "top",

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     s = n(284009),
     o = n.n(s),
     d = n(421380),
@@ -51,7 +51,7 @@ function S(e, t) {
 function x(e) {
     let {
         placeholder: t = g.intl.string(g.t["Rn/sLl"])
-    } = e, n = r.useRef(null), a = r.useRef(null), [s, A] = r.useReducer(S, f), {
+    } = e, n = r.useRef(null), l = r.useRef(null), [s, A] = r.useReducer(S, f), {
         canSend: x,
         hint: v,
         error: b,
@@ -96,11 +96,11 @@ function x(e) {
             })]
         }), (0, i.jsx)(c.vN3, {
             focusTarget: n,
-            ringTarget: a,
+            ringTarget: l,
             ringClassName: p.hN,
             children: (0, i.jsxs)("div", {
-                ref: a,
-                className: l()(p.fc, {
+                ref: l,
+                className: a()(p.fc, {
                     [p.kX]: y,
                     [p.z3]: b
                 }),
@@ -115,9 +115,9 @@ function x(e) {
                             o()(null != n.current, "Input is handling keypress when not mounted");
                             let i = t.indexOf("#"),
                                 r = n.current.selectionStart,
-                                a = e.key === m.N$.Backspace || e.key === m.N$.ArrowRight || e.key === m.N$.ArrowLeft,
-                                l = e.which >= 48 && e.which <= 57;
-                            null != r && r > i && /^(.+?#\d{4})$/.test(t) && !a ? e.preventDefault() : null == r || !(r > i) || l || a || e.preventDefault()
+                                l = e.key === m.N$.Backspace || e.key === m.N$.ArrowRight || e.key === m.N$.ArrowLeft,
+                                a = e.which >= 48 && e.which <= 57;
+                            null != r && r > i && /^(.+?#\d{4})$/.test(t) && !l ? e.preventDefault() : null == r || !(r > i) || a || l || e.preventDefault()
                         }
                     },
                     onChange: e => {

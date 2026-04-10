@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(397927),
-    a = n(73153),
-    l = n(272355),
+    l = n(73153),
+    a = n(272355),
     s = n(36149),
     o = n(662502),
     d = n(260509),
@@ -18,12 +18,12 @@ var r = n(397927),
     m = n(204925),
     g = n(652215),
     p = n(835002);
-class E extends l.A {
+class E extends a.A {
     _initialize() {
-        a.h.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), a.h.subscribe("CHANNEL_SELECT", this.handleChannelSelect), a.h.subscribe("AGE_GATE_MODAL_OPEN", this.handleAgeGateModalOpen), a.h.subscribe("AGE_GATE_MODAL_CLOSE", this.handleAgeGateModalClose), a.h.subscribe("AGE_GATE_SUCCESS_MODAL_OPEN", this.handleAgeGateSuccess), a.h.subscribe("AGE_GATE_FAILURE_MODAL_OPEN", this.handleAgeGateFailure), a.h.subscribe("GUILD_UPDATE", this.handleGuildUpdate)
+        l.h.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), l.h.subscribe("CHANNEL_SELECT", this.handleChannelSelect), l.h.subscribe("AGE_GATE_MODAL_OPEN", this.handleAgeGateModalOpen), l.h.subscribe("AGE_GATE_MODAL_CLOSE", this.handleAgeGateModalClose), l.h.subscribe("AGE_GATE_SUCCESS_MODAL_OPEN", this.handleAgeGateSuccess), l.h.subscribe("AGE_GATE_FAILURE_MODAL_OPEN", this.handleAgeGateFailure), l.h.subscribe("GUILD_UPDATE", this.handleGuildUpdate)
     }
     _terminate() {
-        a.h.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), a.h.unsubscribe("CHANNEL_SELECT", this.handleChannelSelect), a.h.unsubscribe("AGE_GATE_MODAL_OPEN", this.handleAgeGateModalOpen), a.h.unsubscribe("AGE_GATE_MODAL_CLOSE", this.handleAgeGateModalClose), a.h.unsubscribe("AGE_GATE_SUCCESS_MODAL_OPEN", this.handleAgeGateSuccess), a.h.unsubscribe("AGE_GATE_FAILURE_MODAL_OPEN", this.handleAgeGateFailure), a.h.unsubscribe("GUILD_UPDATE", this.handleGuildUpdate)
+        l.h.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), l.h.unsubscribe("CHANNEL_SELECT", this.handleChannelSelect), l.h.unsubscribe("AGE_GATE_MODAL_OPEN", this.handleAgeGateModalOpen), l.h.unsubscribe("AGE_GATE_MODAL_CLOSE", this.handleAgeGateModalClose), l.h.unsubscribe("AGE_GATE_SUCCESS_MODAL_OPEN", this.handleAgeGateSuccess), l.h.unsubscribe("AGE_GATE_FAILURE_MODAL_OPEN", this.handleAgeGateFailure), l.h.unsubscribe("GUILD_UPDATE", this.handleGuildUpdate)
     }
     handleChannelSelect(e) {
         let {

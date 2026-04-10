@@ -1,12 +1,12 @@
 /** chunk id: 891024 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => a
 });
 var i = n(311907),
     r = n(320501),
-    a = n(287809);
-let l = e => (0, i.bG)([r.A, a.default], () => {
+    l = n(287809);
+let a = e => (0, i.bG)([r.A, l.default], () => {
     if (null == e) return !1;
-    let t = a.default.getCurrentUser();
+    let t = l.default.getCurrentUser();
     return null != r.A.getMessages(e).findNewest(e => e.author.id === t?.id)
 })

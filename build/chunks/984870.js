@@ -22,7 +22,7 @@ var i = n(627968),
 let h = t => {
     let {
         dismissibleContent: e
-    } = t, n = (0, o.Cp)(), h = (0, r.bG)([E.default], () => !T.Ay.isPremium(E.default.getCurrentUser())), m = l.useCallback(() => {
+    } = t, n = (0, o.Cp)(), h = (0, r.bG)([E.default], () => !T.Ay.isPremium(E.default.getCurrentUser())), O = l.useCallback(() => {
         _.default.track(N.HAw.OUTBOUND_PROMOTION_NOTICE_CLICKED), (0, u.openUserSettings)(d.X.GIFT_PANEL), c.Ay.dismissOutboundPromotionNotice()
     }, []);
     return null == n ? null : (0, i.jsx)(A.YS, {
@@ -52,7 +52,7 @@ let h = t => {
                 }), h ? R.intl.string(R.t["5JMiOo"]) : R.intl.string(R.t["Pzh+G2"]), (0, i.jsx)(a.Z_L, {
                     noticeType: N.kqX.OUTBOUND_PROMOTION,
                     onClick: () => {
-                        m(), null !== n && n(I.i.TAKE_ACTION)
+                        O(), null !== n && n(I.i.TAKE_ACTION)
                     },
                     children: R.intl.string(R.t.jVcuVY)
                 })]

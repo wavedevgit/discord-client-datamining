@@ -4,17 +4,17 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(158954),
-    a = n(793943),
-    l = n(189252),
+    l = n(793943),
+    a = n(189252),
     s = n(985018);
 
 function o() {
     let {
         activePanel: e
-    } = (0, a.fy)(), t = e === a.HP.APPLICATION_TEST_MODE_DEBUG;
-    return (0, i.jsx)(l.A, {
+    } = (0, l.fy)(), t = e === l.HP.APPLICATION_TEST_MODE_DEBUG;
+    return (0, i.jsx)(a.A, {
         onClick: () => {
-            t ? (0, a.Jp)() : (0, a.nf)(a.HP.APPLICATION_TEST_MODE_DEBUG)
+            t ? (0, l.Jp)() : (0, l.nf)(l.HP.APPLICATION_TEST_MODE_DEBUG)
         },
         icon: r.PXj,
         tooltip: s.intl.string(s.t["9Isknj"]),

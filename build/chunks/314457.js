@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(621248),
-    l = n(926466),
+    l = n(621248),
+    a = n(926466),
     s = n(997509),
     o = n(652215),
     d = n(985018),
@@ -14,9 +14,9 @@ let u = e => {
     let {
         guild: t
     } = e, n = r.useCallback(() => {
-        (0, a.J)(t.id)
+        (0, l.J)(t.id)
     }, [t.id]);
-    return (0, i.jsx)(l.A, {
+    return (0, i.jsx)(a.A, {
         guild: t,
         onDismissed: n,
         onClick: () => s.A.open(t.id, o.BEX.COMMUNITY),

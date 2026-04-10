@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     s = n(735438),
     o = n.n(s),
     d = n(158954),
@@ -42,11 +42,11 @@ let G = e => {
             className: t,
             children: n,
             onContextMenu: r,
-            item: a
+            item: l
         } = e;
         return (0, i.jsx)("div", {
             className: t,
-            onContextMenu: e => r(e, a),
+            onContextMenu: e => r(e, l),
             children: n
         })
     },
@@ -161,14 +161,14 @@ let H = {
 };
 
 function F(e, t, n, i, r) {
-    let a = H[t],
-        l = null != a ? Object.keys(a) : [],
+    let l = H[t],
+        a = null != l ? Object.keys(l) : [],
         {
             unit: s,
             time: o
-        } = (0, x.$l)(null != e ? e / 60 : null, l);
-    if (null != a && null != s) {
-        let e = a[s];
+        } = (0, x.$l)(null != e ? e / 60 : null, a);
+    if (null != l && null != s) {
+        let e = l[s];
         return null != e ? e(n, i, r, o) : null
     }
     return null
@@ -180,9 +180,9 @@ function Y(e) {
         stage: n,
         percent: i,
         progress: r,
-        total: a,
-        secondsRemaining: l
-    } = e, s = B(a, n), o = B(r, n);
+        total: l,
+        secondsRemaining: a
+    } = e, s = B(l, n), o = B(r, n);
     switch (n) {
         case M.OQC.QUEUED:
             if (0 === r) return w.intl.string(w.t.RpfBqd);
@@ -200,7 +200,7 @@ function Y(e) {
                 percent: i
             });
         case M.OQC.PATCHING:
-            return F(l, t, i, o, s);
+            return F(a, t, i, o, s);
         case M.OQC.FINALIZING:
             return w.intl.formatToPlainString(w.t["6PHDUN"], {
                 percent: i
@@ -224,7 +224,7 @@ function Y(e) {
                 total: s
             });
         case M.OQC.REPAIRING:
-            if (t === M.WTw.REPAIRING) return F(l, t, i, o, s);
+            if (t === M.WTw.REPAIRING) return F(a, t, i, o, s);
             return w.intl.formatToPlainString(w.t.OCzETT, {
                 percent: i,
                 progress: o,
@@ -245,7 +245,7 @@ class W extends r.PureComponent {
             percent: t,
             foregroundColor: n,
             foregroundGradientColor: r,
-            message: a
+            message: l
         } = e;
         return (0, i.jsxs)(T.A, {
             direction: T.A.Direction.VERTICAL,
@@ -257,7 +257,7 @@ class W extends r.PureComponent {
                 animate: this.isFocused
             }), (0, i.jsx)("div", {
                 className: U.NO,
-                children: null != a ? a : ""
+                children: null != l ? l : ""
             })]
         })
     }
@@ -302,19 +302,19 @@ class W extends r.PureComponent {
             let {
                 progress: i,
                 total: r,
-                stage: a
+                stage: l
             } = n;
             if (null != i && null != r) {
-                let n = B(r, a),
-                    l = B(i, a),
+                let n = B(r, l),
+                    a = B(i, l),
                     s = Math.floor(t = P.uA(i, r));
-                e = a === M.OQC.PAUSING ? w.intl.formatToPlainString(w.t.vjxhWo, {
+                e = l === M.OQC.PAUSING ? w.intl.formatToPlainString(w.t.vjxhWo, {
                     percent: s,
-                    progress: l,
+                    progress: a,
                     total: n
                 }) : w.intl.formatToPlainString(w.t.voT3Bi, {
                     percent: s,
-                    progress: l,
+                    progress: a,
                     total: n
                 })
             }
@@ -339,14 +339,14 @@ class W extends r.PureComponent {
         } = e;
         if (null == n || null == i) return null;
         let r = P.uA(n, i),
-            a = Math.floor(r),
-            l = 0 === n && 1 === i ? w.intl.string(w.t["+pfsFX"]) : w.intl.formatToPlainString(w.t["+feX8S"], {
-                percent: a,
+            l = Math.floor(r),
+            a = 0 === n && 1 === i ? w.intl.string(w.t["+pfsFX"]) : w.intl.formatToPlainString(w.t["+feX8S"], {
+                percent: l,
                 progress: (0, R.Xq)(n),
                 total: (0, R.Xq)(i)
             });
         return this.renderBody({
-            message: l,
+            message: a,
             foregroundColor: (0, h.qB)(t) ? u.A.unsafe_rawColors.PRIMARY_300.css : u.A.unsafe_rawColors.PRIMARY_500.css,
             percent: r
         })
@@ -361,21 +361,21 @@ class W extends r.PureComponent {
         let {
             stage: i,
             progress: r,
-            total: a,
-            type: l,
+            total: l,
+            type: a,
             readerProgress: s
         } = n;
-        if (null == r || null == a || null == i) return null;
-        let o = P.uA(r, a),
-            d = P.uA(s ?? 0, a),
+        if (null == r || null == l || null == i) return null;
+        let o = P.uA(r, l),
+            d = P.uA(s ?? 0, l),
             c = e[e.length - 1] / t * 1e3,
-            u = a - r,
+            u = l - r,
             A = Y({
-                type: l,
+                type: a,
                 stage: i,
                 percent: Math.floor(o),
                 progress: r,
-                total: a,
+                total: l,
                 secondsRemaining: 0 !== c ? Math.max(1, u / c) : null
             });
         return this.renderStackedProgress({
@@ -401,14 +401,14 @@ class W extends r.PureComponent {
             type: r
         } = e;
         if (null == t || null == n || null == i) return null;
-        let a = P.uA(n, t),
-            l = Math.floor(a);
+        let l = P.uA(n, t),
+            a = Math.floor(l);
         return this.renderBody({
-            percent: a,
+            percent: l,
             message: Y({
                 type: r,
                 stage: i,
-                percent: l,
+                percent: a,
                 progress: n,
                 total: t
             }),
@@ -548,7 +548,7 @@ class X extends r.PureComponent {
             applications: e,
             paused: t,
             isFocused: r,
-            theme: a,
+            theme: l,
             analyticsContext: s
         } = this.props;
         return 0 === e.length ? null : (0, i.jsxs)("div", {
@@ -556,7 +556,7 @@ class X extends r.PureComponent {
             children: [(0, i.jsxs)("div", {
                 className: U.U1,
                 children: [(0, i.jsx)(j.A, {
-                    className: l()(U.e4, U.Eg),
+                    className: a()(U.e4, U.Eg),
                     title: w.intl.string(w.t.ytoXKr),
                     getHistoricalTotalBytes: y.A.getHistoricalTotalBytesDownloaded,
                     color: u.A.unsafe_rawColors.GREEN_360.resolve({
@@ -564,7 +564,7 @@ class X extends r.PureComponent {
                     }).hex(),
                     animate: r
                 }), (0, i.jsx)(j.A, {
-                    className: l()(U.e4, U.pn),
+                    className: a()(U.e4, U.pn),
                     title: w.intl.string(w.t.SjohhI),
                     getHistoricalTotalBytes: y.A.getHistoricalTotalBytesWritten,
                     color: u.A.unsafe_rawColors.BLUE_345.resolve({
@@ -582,7 +582,7 @@ class X extends r.PureComponent {
                 cellProps: {
                     paused: t,
                     isFocused: r,
-                    theme: a
+                    theme: l
                 },
                 rowProps: {
                     onContextMenu: (e, t) => {
@@ -606,20 +606,20 @@ class X extends r.PureComponent {
 }
 
 function Z(e, t, n, i) {
-    return e.reduce((e, r, a) => {
+    return e.reduce((e, r, l) => {
         let {
-            applicationId: l,
+            applicationId: a,
             branchId: s
-        } = r, o = n.getApplication(l), d = i.getState(l, s);
+        } = r, o = n.getApplication(a), d = i.getState(a, s);
         return null != o && e.push({
-            key: `${l}:${s}`,
-            applicationId: l,
+            key: `${a}:${s}`,
+            applicationId: a,
             branchId: s,
             state: d,
             application: o,
-            libraryApplication: b.A.getLibraryApplication(l, s),
+            libraryApplication: b.A.getLibraryApplication(a, s),
             finished: t,
-            index: a
+            index: l
         }), e
     }, [])
 }

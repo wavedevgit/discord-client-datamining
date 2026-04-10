@@ -1,14 +1,14 @@
 /** chunk id: 567061 params = (module,exports,require) **/
 n.d(t, {
-    E: () => l
+    E: () => a
 });
 var i = n(64700),
     r = n(4106),
-    a = n(105971);
+    l = n(105971);
 
-function l(e) {
+function a(e) {
     return i.useCallback(async () => {
-        a.k.trackFeedShown({
+        l.k.trackFeedShown({
             variant: e ? "DotShown" : "NoDotShown",
             homeSessionId: "gravity_refresh"
         }), await r.A.fetchDehydrated({

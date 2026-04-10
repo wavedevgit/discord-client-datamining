@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(397927),
-    a = n(926466),
-    l = n(652215),
+    l = n(926466),
+    a = n(652215),
     s = n(49999),
     o = n(985018),
     d = n(360567);
@@ -16,7 +16,7 @@ function c(e) {
         guild: t,
         markAsDismissed: c
     } = e;
-    return (0, i.jsx)(a.A, {
+    return (0, i.jsx)(l.A, {
         guild: t,
         onDismissed: () => c(s.i.UNKNOWN),
         onClick: function() {
@@ -31,8 +31,8 @@ function c(e) {
         },
         message: o.intl.string(o.t["1+hiP6"]),
         cta: o.intl.string(o.t.hvVgAZ),
-        trackingSource: l.kZU.HUB_LINK_NOTICE,
-        type: l.n5X.HUB_LINK,
+        trackingSource: a.kZU.HUB_LINK_NOTICE,
+        type: a.n5X.HUB_LINK,
         image: d
     })
 }

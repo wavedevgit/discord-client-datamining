@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(877624),
-    a = n(990078),
-    l = n(397927),
+    l = n(990078),
+    a = n(397927),
     s = n(549996),
     o = n(807098),
     d = n(984029);
@@ -24,18 +24,18 @@ function c(e) {
             alt: ""
         }), (0, i.jsxs)("div", {
             className: d.Vm,
-            children: [(0, i.jsx)(l.Heading, {
+            children: [(0, i.jsx)(a.Heading, {
                 variant: "heading-md/bold",
                 color: "text-strong",
                 children: c.header
-            }), (0, i.jsx)(l.Text, {
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
                 children: c.body
             })]
         })]
     });
-    return (0, i.jsx)(a.m, {
+    return (0, i.jsx)(l.m, {
         __unsupportedReactNodeAsText: A,
         position: "right",
         "aria-label": c.header,
