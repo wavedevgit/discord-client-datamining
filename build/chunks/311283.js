@@ -15,9 +15,9 @@ function o(e) {
     var t;
     let n, i, l, r;
     return s.has(e) || (s.set(e, new Set), a.set(e, (t = e, n = e => {
-        c(e.shiftKey, t)
+        e.isTrusted && c(e.shiftKey, t)
     }, i = e => {
-        c(e.shiftKey, t)
+        e.isTrusted && c(e.shiftKey, t)
     }, l = e => {
         c(e.shiftKey, t)
     }, r = () => {
