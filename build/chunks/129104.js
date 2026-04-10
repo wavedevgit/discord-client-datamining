@@ -65,7 +65,7 @@ function p(e) {
                         animated: !1
                     }), l && t()
                 },
-                pickerIntention: m.b_.STATUS
+                pickerIntention: m.EmojiIntention.STATUS
             })
         },
         position: "left",

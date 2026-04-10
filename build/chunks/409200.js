@@ -169,7 +169,7 @@ function ee(e) {
         return (0, i.jsx)(_.A, {
             channel: null,
             guildId: n,
-            pickerIntention: K.b_.NO_CUSTOM_EMOJI,
+            pickerIntention: K.EmojiIntention.NO_CUSTOM_EMOJI,
             closePopout: s,
             onNavigateAway: s,
             onSelectEmoji: e => {

@@ -32,11 +32,11 @@ function v(e) {
         emojiId: j,
         emojiName: p
     }), w = (0, i.bG)([m.Ay], () => null != l ? m.Ay.getDefaultChannel(l) : null), S = a.useRef(null), {
-        isHoveringOrFocusing: M
-    } = (0, o.A)(S), E = () => {
+        isHoveringOrFocusing: E
+    } = (0, o.A)(S), M = () => {
         C(void 0), y(void 0)
     }, T = e => {
-        e.stopPropagation(), E()
+        e.stopPropagation(), M()
     }, k = a.useMemo(() => {
         let e = null != j && "" !== j,
             t = null != p && "" !== p,
@@ -65,14 +65,14 @@ function v(e) {
                     } = e;
                     return (0, n.jsx)(c.A, {
                         closePopout: t,
-                        pickerIntention: h.b_.SOUNDBOARD,
+                        pickerIntention: h.EmojiIntention.SOUNDBOARD,
                         onNavigateAway: t,
                         onSelectEmoji: e => {
                             let {
                                 emoji: l,
                                 willClose: n
                             } = e, a = l?.id == null;
-                            E(), a ? C(l?.optionallyDiverseSequence) : (b && C(l?.name), y(l?.id)), n && t()
+                            M(), a ? C(l?.optionallyDiverseSequence) : (b && C(l?.name), y(l?.id)), n && t()
                         },
                         guildId: l,
                         channel: w
@@ -98,7 +98,7 @@ function v(e) {
                             lineClamp: 1,
                             color: P ? "text-default" : "text-muted",
                             children: P ? `:${A}:` : g.intl.string(g.t.QTK0TJ)
-                        }), P && M && (0, n.jsx)(u.A, {
+                        }), P && E && (0, n.jsx)(u.A, {
                             ...e,
                             onClick: T
                         })]

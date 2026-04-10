@@ -26,8 +26,8 @@ var l = i(627968),
     N = i(652215),
     v = i(985018),
     C = i(432019);
-let k = new Set(["application/json", "image/png", "image/apng", "image/gif", "image/jpeg", "image/jpg"]),
-    I = [{
+let I = new Set(["application/json", "image/png", "image/apng", "image/gif", "image/jpeg", "image/jpg"]),
+    k = [{
         name: "Sticker file",
         extensions: ["json", "png", "apng", "gif", "jpeg", "jpg"]
     }];
@@ -38,7 +38,7 @@ function T(e, t) {
         error: t ?? ""
     })
 }
-let _ = e => {
+let w = e => {
     let {
         stickerPreview: t
     } = e;
@@ -61,7 +61,7 @@ let _ = e => {
         })]
     })
 };
-async function w(e) {
+async function _(e) {
     let t = await (0, h.We)(e),
         i = new Image;
     i.src = t, await i.decode();
@@ -81,14 +81,14 @@ function D(e) {
     }), [K, P] = n.useState(R?.id), [M, Y] = n.useState(R?.name ?? D?.tags), [X, q] = n.useState(D?.description ?? ""), [V, H] = n.useState(!1), [Z, J] = n.useState(null), $ = (0, o.bG)([g.A], () => g.A.getGuild(s)), Q = $?.features.has(N.GuildFeatures.PARTNERED) || $?.features.has(N.GuildFeatures.VERIFIED), W = null != D, ee = W || F?.file != null, et = 0 === X.length || X.length >= 2 && X.length <= 100, ei = !V && Z?.isBlocking !== !0 && O.length >= 2 && (null != K || null != M || D?.tags != null && D?.tags !== "") && ee && et, el = async e => {
         if (null == e) return;
         let t = e.type?.split(";")[0];
-        if (!k.has(t)) return void J({
+        if (!I.has(t)) return void J({
             message: v.intl.string(v.t.B2hGAG),
             isBlocking: !0
         });
         let i = e;
-        if ("image/jpeg" === t || "image/jpg" === t) i = await w(e);
+        if ("image/jpeg" === t || "image/jpg" === t) i = await _(e);
         else if ("image/png" === t && e.size > z && !await (0, h.LZ)(e)) {
-            let t = (i = await w(e)).size > z;
+            let t = (i = await _(e)).size > z;
             p.default.track(N.HAw.STICKER_FILE_RESIZED, {
                 original_file_size_bytes: e.size,
                 resized_file_size_bytes: i.size,
@@ -231,7 +231,7 @@ function D(e) {
             children: (0, l.jsxs)(r.nVY, {
                 children: [(0, l.jsx)(r.D0$, {
                     label: v.intl.string(v.t.gjdiKE),
-                    children: (0, l.jsx)(_, {
+                    children: (0, l.jsx)(w, {
                         stickerPreview: ea
                     })
                 }), W ? (0, l.jsx)(u.ksK, {
@@ -244,7 +244,7 @@ function D(e) {
                     required: !0,
                     children: (0, l.jsx)(c.A, {
                         buttonText: v.intl.string(v.t.xEnDUa),
-                        filters: I,
+                        filters: k,
                         filename: F?.filename ?? "",
                         placeholder: v.intl.string(v.t.rUYLJ4),
                         onFileSelect: el

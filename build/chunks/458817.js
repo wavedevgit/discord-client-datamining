@@ -88,7 +88,7 @@ function _(e) {
             },
             sourceQuestContent: p
         })
-    }, [v, t, _, n, C, f, p]), O = r.useCallback(e => {
+    }, [v, t, _, n, C, f, p]), b = r.useCallback(e => {
         null != t.current && C({
             questId: v,
             event: m.HAw.QUEST_VIDEO_RESUMED,
@@ -101,7 +101,7 @@ function _(e) {
             },
             sourceQuestContent: p
         })
-    }, [v, t, _, n, C, f, p]), b = r.useCallback(e => {
+    }, [v, t, _, n, C, f, p]), O = r.useCallback(e => {
         null != t.current && null != e && C({
             questId: v,
             event: m.HAw.QUEST_VIDEO_PAUSED,
@@ -267,8 +267,8 @@ function _(e) {
         trackQuestVideoLoadingEnded: y,
         trackQuestVideoTimeToFirstFrame: R,
         trackQuestVideoProgressed: N,
-        trackQuestVideoResumed: O,
-        trackQuestVideoPaused: b,
+        trackQuestVideoResumed: b,
+        trackQuestVideoPaused: O,
         trackQuestVideoFocusChange: L,
         trackQuestContentClick: P,
         trackQuestVideoBufferingStarted: M,

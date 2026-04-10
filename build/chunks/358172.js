@@ -60,5 +60,15 @@ let n = {
         component: a.KF,
         id: "premium-guild-member-profile-upsell",
         controls: {}
+    }, {
+        name: "HD Streaming Roadblock",
+        component: a.WC,
+        id: "hd-streaming-roadblock",
+        controls: {}
+    }, {
+        name: "Emoji Picker Premium Upsell",
+        component: a.IQ,
+        id: "emoji-picker-premium-upsell",
+        controls: {}
     }]
 }

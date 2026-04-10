@@ -4,8 +4,8 @@ t.d(n, {
 });
 var i = t(627968),
     a = t(64700),
-    s = t(503698),
-    l = t.n(s),
+    l = t(503698),
+    s = t.n(l),
     r = t(158954),
     c = t(224850),
     o = t(778712),
@@ -16,7 +16,7 @@ function m(e) {
     let {
         affinities: n,
         className: t
-    } = e, s = a.useMemo(() => {
+    } = e, l = a.useMemo(() => {
         if (n.length > 1) {
             var e;
             return u.intl.formatToPlainString(u.t.HaVk0X, {
@@ -33,7 +33,7 @@ function m(e) {
         size: o._3.SIZE_20
     }, e.id));
     return (0, i.jsxs)("div", {
-        className: l()(d.kL, t),
+        className: s()(d.kL, t),
         children: [(0, i.jsx)("div", {
             className: d.zc,
             children: m
@@ -41,7 +41,7 @@ function m(e) {
             className: d.FS,
             children: (0, i.jsx)(r.EYj, {
                 variant: "text-sm/medium",
-                children: s
+                children: l
             })
         })]
     })

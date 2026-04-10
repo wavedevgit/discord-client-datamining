@@ -4,30 +4,30 @@ t.d(n, {
 });
 var i = t(311907),
     a = t(73153);
-let s = {
+let l = {
     fetched: !1,
     affinities: []
 };
-class l extends i.Ay.Store {
+class s extends i.Ay.Store {
     get hasFetched() {
-        return s.fetched
+        return l.fetched
     }
     get affinities() {
-        return s.affinities
+        return l.affinities
     }
 }
-let r = new l(a.h, {
+let r = new s(a.h, {
     BILLING_NITRO_AFFINITY_FETCHED: function(e) {
         let {} = e;
-        s.fetched = !0
+        l.fetched = !0
     },
     BILLING_NITRO_AFFINITY_FETCH_SUCCEEDED: function(e) {
         let {
             res: n
         } = e;
-        s.affinities = n
+        l.affinities = n
     },
     LOGOUT: function() {
-        s.fetched = !1, s.affinities = []
+        l.fetched = !1, l.affinities = []
     }
 })

@@ -64,7 +64,7 @@ function v(e, t) {
     let n = (0, d.D6)(t.guild_id).filter(e => !(e.useSpriteSheet && S.indexOf(e.uniqueName ?? "") >= 0) && !f.Ay.isEmojiPremiumLocked({
         emoji: e,
         channel: t,
-        intention: y.b_.REACTION
+        intention: y.EmojiIntention.REACTION
     }));
     n.length > 4 && (n.length = 4);
     let l = A.jW.useSetting(),

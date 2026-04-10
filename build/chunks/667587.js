@@ -27,8 +27,8 @@ var l = n(627968),
     _ = n(734057),
     y = n(576705),
     T = n(994500),
-    S = n(287809),
-    E = n(203982),
+    E = n(287809),
+    S = n(203982),
     I = n(608226),
     M = n(654030),
     R = n(955941),
@@ -107,13 +107,13 @@ class B extends i.PureComponent {
                             size: "xxs",
                             color: "currentColor",
                             className: k.p
-                        }) : null, (0, g.m1)(t, S.default, T.A), null != n ? (0, l.jsx)(a.Text, {
+                        }) : null, (0, g.m1)(t, E.default, T.A), null != n ? (0, l.jsx)(a.Text, {
                             tag: "span",
                             variant: "text-xs/semibold",
                             color: "text-default",
                             lineClamp: 1,
                             className: k.L,
-                            children: (0, g.m1)(n, S.default, T.A)
+                            children: (0, g.m1)(n, E.default, T.A)
                         }) : null]
                     }) : G.intl.string(G.t.XPDhcc)
                 }, {
@@ -157,7 +157,7 @@ class B extends i.PureComponent {
                     section: O.p_A.DELETE,
                     onClick() {
                         (0, I.O)(t, function() {
-                            E._.subscribeOnce(O.jej.LAYER_POP_COMPLETE, () => {
+                            S._.subscribeOnce(O.jej.LAYER_POP_COMPLETE, () => {
                                 (0, o.D3)(t.id)
                             }), (0, d.jH)()
                         })

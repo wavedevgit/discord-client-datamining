@@ -1,6 +1,6 @@
 /** chunk id: 856658 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => f
 });
 var r = n(627968),
     s = n(64700),
@@ -10,84 +10,81 @@ var r = n(627968),
     o = n(397927),
     u = n(697397),
     c = n(341915),
-    d = n(890687),
-    m = n(646764),
-    E = n(80026),
-    _ = n(684739);
-let f = {
+    d = n(646764),
+    m = n(80026),
+    E = n(684739);
+let _ = {
         duration: 250
     },
-    p = e => {
+    f = e => {
         let {
             currentPx: t,
             indicator: n,
             isAnimated: i,
-            quest: p,
-            sourceQuestContent: S,
-            expansionSpring: v,
-            onClick: h,
-            onMouseEnter: g,
-            onMouseLeave: A
+            quest: f,
+            sourceQuestContent: p,
+            expansionSpring: S,
+            onClick: v,
+            onMouseEnter: h,
+            onMouseLeave: g
         } = e, {
-            label: C,
-            targetSec: x,
-            leftPx: T,
-            rightPx: D,
-            index: I
-        } = n, {
-            completedRatio: y
-        } = (0, d.O9)(p), [R, N] = s.useState(!1), O = T - E.Ue, b = t >= O ? Math.min(1, (t - O) / (D - O)) : 0, L = 0 === I && y < 1, {
-            fill: M
+            label: A,
+            targetSec: C,
+            leftPx: x,
+            rightPx: T,
+            index: D
+        } = n, I = f.userStatus?.completedAt != null, [y, R] = s.useState(!1), N = x - m.Ue, b = t >= N ? Math.min(1, (t - N) / (T - N)) : 0, O = 0 === D && !I, {
+            fill: L
         } = (0, o.zhh)({
             fill: 100 * b,
-            config: f,
+            config: _,
             onRest: () => {
-                b <= 0 && N(!1)
+                b <= 0 && R(!1)
             },
             onStart: () => {
-                N(!0)
+                R(!0)
             }
         });
         return (0, r.jsxs)(l.animated.div, {
-            className: a()(_.ck, {
-                [_.a]: L && R,
-                [_.C9]: !L && R
+            className: a()(E.ck, {
+                [E.a]: O && y,
+                [E.C9]: !O && y
             }),
             style: {
-                left: i ? v.to(e => T - e) : T,
-                "--custom-indicator-size": i ? v.to(e => `${E.lS+2*e}px`) : `${E.lS}px`,
-                "--custom-indicator-fill": M.to(e => e)
+                left: i ? S.to(e => x - e) : x,
+                "--custom-indicator-size": i ? S.to(e => `${m.lS+2*e}px`) : `${m.lS}px`,
+                "--custom-indicator-fill": L.to(e => e)
             },
             children: [(0, r.jsx)(o.DUT, {
-                className: _.E6,
-                onClick: null != h ? e => {
-                    e.stopPropagation(), h()
+                className: E.E6,
+                onClick: null != v ? e => {
+                    e.stopPropagation(), v()
                 } : void 0,
-                onMouseEnter: g,
-                onMouseLeave: A,
-                children: (0, r.jsx)(m.A, {
+                onMouseEnter: h,
+                onMouseLeave: g,
+                children: (0, r.jsx)(d.A, {
                     fullWidth: !0,
-                    quest: p,
+                    quest: f,
                     questContent: c.uF.VIDEO_MODAL,
-                    sourceQuestContent: S,
+                    sourceQuestContent: p,
                     autoplay: !1
                 })
             }), (0, r.jsxs)("div", {
-                className: _.Ru,
+                className: E.Ru,
                 role: "tooltip",
-                "aria-label": null != C ? `${(0,u.rB)(x)} - ${C}` : (0, u.rB)(x),
+                "aria-label": null != A ? `${(0,u.rB)(C)} - ${A}` : (0, u.rB)(C),
                 children: [(0, r.jsx)(o.Text, {
                     variant: "text-xs/normal",
                     color: "always-white",
-                    children: (0, u.rB)(x)
-                }), null != C && (0, r.jsxs)(r.Fragment, {
+                    children: (0, u.rB)(C)
+                }), null != A && (0, r.jsxs)(r.Fragment, {
                     children: [(0, r.jsx)("span", {
-                        className: _.AE,
+                        className: E.AE,
                         "aria-hidden": "true"
                     }), (0, r.jsx)(o.Text, {
                         variant: "text-xs/normal",
                         color: "always-white",
-                        children: C
+                        children: A
                     })]
                 })]
             })]

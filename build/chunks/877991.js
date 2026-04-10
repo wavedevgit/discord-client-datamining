@@ -10,5 +10,5 @@ var i = n(189551),
 let o = {
     binds: ["mod+e"],
     comboKeysBindGlobal: !0,
-    action: () => !(r.A.getLayers().length > 0) && ((0, i.K)(l.Vl.SearchEmojiKeybindPressed), a._.dispatchToLastSubscribed(s.jej.TOGGLE_EMOJI_POPOUT), !1)
+    action: () => !(r.A.getLayers().length > 0) && ((0, i.K)(l.EmojiInteractionPoint.SearchEmojiKeybindPressed), a._.dispatchToLastSubscribed(s.jej.TOGGLE_EMOJI_POPOUT), !1)
 }

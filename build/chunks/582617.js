@@ -17,8 +17,8 @@ var n = l(627968),
     x = l(80569),
     j = l(818348),
     f = l(985018),
-    b = l(186438);
-let _ = new m.A("ImageEditor"),
+    _ = l(186438);
+let b = new m.A("ImageEditor"),
     E = {
         width: 288,
         height: 288
@@ -35,7 +35,7 @@ let _ = new m.A("ImageEditor"),
         }), [O, C] = i.useState({
             x: 0,
             y: 0
-        }), y = i.useRef(null), [w, M] = i.useState(1), [T, R] = i.useState(null), [k, D] = i.useState(!1), [L, G] = i.useState({
+        }), y = i.useRef(null), [M, w] = i.useState(1), [T, R] = i.useState(null), [k, D] = i.useState(!1), [L, G] = i.useState({
             top: 0,
             bottom: 0,
             left: 0,
@@ -43,12 +43,12 @@ let _ = new m.A("ImageEditor"),
         }), [F, H] = i.useState(0), [z, U] = i.useState({
             x: 0,
             y: 0
-        }), [W, P] = i.useState(!1), {
-            isGIF: J,
+        }), [W, J] = i.useState(!1), {
+            isGIF: P,
             isWebP: B,
             isCheckingAnimation: K,
             isEditableAnimatedImage: $
-        } = (0, g._)(l), Y = (0, u.q)(l.type) && !J && !B, [q, Q] = i.useState(null), V = (0, d.I)(v ?? j.tE, 500), X = i.useRef(null), Z = i.useRef(0), ee = i.useCallback(function() {
+        } = (0, g._)(l), Y = (0, u.q)(l.type) && !P && !B, [q, Q] = i.useState(null), V = (0, d.I)(v ?? j.tE, 500), X = i.useRef(null), Z = i.useRef(0), ee = i.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
                 x: p.current.x,
                 y: p.current.y
@@ -67,12 +67,12 @@ let _ = new m.A("ImageEditor"),
             })
         }, [y, F, L, k]);
         i.useEffect(() => {
-            null == T || K || G(S(T, w, $))
-        }, [T, w, $, K]);
+            null == T || K || G(S(T, M, $))
+        }, [T, M, $, K]);
         let et = i.useCallback(e => {
                 if (null == T) return;
                 let t = S(T, e, $);
-                M(e), G(t), ee(), V?.()
+                w(e), G(t), ee(), V?.()
             }, [T, ee, $, V]),
             el = i.useCallback(() => {
                 if (null == y.current || null == T) return;
@@ -82,12 +82,12 @@ let _ = new m.A("ImageEditor"),
                     n = S({
                         width: t,
                         height: l
-                    }, w, $);
+                    }, M, $);
                 H(e), R({
                     width: t,
                     height: l
                 }), G(n), ee(), V?.()
-            }, [T, F, ee, w, $, V]),
+            }, [T, F, ee, M, $, V]),
             en = i.useCallback(() => {
                 null != y.current && (D(e => !e), ee(), V?.())
             }, [y, ee, V]),
@@ -96,14 +96,14 @@ let _ = new m.A("ImageEditor"),
                 let {
                     height: e,
                     width: t
-                } = A(I(T, F), w);
+                } = A(I(T, F), M);
                 return {
                     height: e,
                     width: t,
                     minHeight: e,
                     minWidth: t
                 }
-            }, [T, F, w]),
+            }, [T, F, M]),
             er = i.useCallback(() => {
                 X.current?.moveGrabber(-.025)
             }, []),
@@ -114,10 +114,10 @@ let _ = new m.A("ImageEditor"),
                 U({
                     x: e.clientX - p.current.x,
                     y: e.clientY - p.current.y
-                }), P(!0)
+                }), J(!0)
             }, []);
         i.useEffect(() => {
-            let e = () => P(!1);
+            let e = () => J(!1);
             return window.addEventListener("mouseup", e), () => window.removeEventListener("mouseup", e)
         }, []);
         let eu = i.useCallback(e => {
@@ -155,14 +155,14 @@ let _ = new m.A("ImageEditor"),
                             flipHorizontal: k,
                             resizeWidth: 128,
                             resizeHeight: 128
-                        }, T, w),
+                        }, T, M),
                         {
                             result: r,
                             cancelFn: a
                         } = await (0, h.ny)(t);
                     eo.current = a, e = await r
                 } catch (e) {
-                    _.error("Error cropping animated image", e), a = x.j.ANIMATED_CROPPING
+                    b.error("Error cropping animated image", e), a = x.j.ANIMATED_CROPPING
                 } finally {
                     eo.current?.(), eo.current = null
                 } else e = Y ? r : (0, s.iL)({
@@ -181,10 +181,10 @@ let _ = new m.A("ImageEditor"),
                 }), () => {
                     eo.current?.(), eo.current = null
                 }
-            }, [l, F, $, Y, K, m, T, w, r, k]);
+            }, [l, F, $, Y, K, m, T, M, r, k]);
         i.useEffect(() => {
             W || ec()
-        }, [ec, O, F, T, W, w, q, k]);
+        }, [ec, O, F, T, W, M, q, k]);
         let ed = i.useCallback(() => {
                 if (null == y.current) return;
                 let e = y.current.naturalWidth,
@@ -194,7 +194,7 @@ let _ = new m.A("ImageEditor"),
                     height: t
                 }), H(0), D(!1);
                 let l = Math.min(Math.max(e, t) / Math.min(e, t), 4);
-                M(l), Q(l), Z.current += 1, G(S({
+                w(l), Q(l), Z.current += 1, G(S({
                     width: e,
                     height: t
                 }, l, $)), ee({
@@ -208,14 +208,14 @@ let _ = new m.A("ImageEditor"),
         return i.useImperativeHandle(t, () => ({
             reset: ed
         })), (0, n.jsxs)("div", {
-            className: a()(b.j0, {
-                [b.Id]: W
+            className: a()(_.j0, {
+                [_.Id]: W
             }),
             style: {
                 "--custom-image-editor-size": "288px"
             },
             children: [(0, n.jsxs)("div", {
-                className: b.oW,
+                className: _.oW,
                 children: [(0, n.jsx)("img", {
                     onLoad: em,
                     onError: () => {
@@ -229,7 +229,7 @@ let _ = new m.A("ImageEditor"),
                         transform: `translate3d(${p.current.x}px, ${p.current.y}px, 0) rotate(${F}deg) scaleX(${k?"-1":"1"})`,
                         ...ei()
                     },
-                    className: b.Sl,
+                    className: _.Sl,
                     src: r,
                     crossOrigin: "anonymous",
                     alt: f.intl.string(f.t.EYR1Fa),
@@ -237,35 +237,35 @@ let _ = new m.A("ImageEditor"),
                     onMouseDown: es,
                     draggable: !1
                 }), !Y && !K && (0, n.jsx)("div", {
-                    className: b.Lw,
+                    className: _.Lw,
                     style: {
                         opacity: +(null != T),
                         width: E.width,
                         height: E.height
                     },
                     children: (0, n.jsx)(c.Text, {
-                        className: b.TB,
+                        className: _.TB,
                         variant: "text-xs/normal",
                         color: "text-strong",
                         children: f.intl.string(f.t.oBPhdN)
                     })
                 })]
             }), Y ? (0, n.jsx)("div", {
-                className: b.Nf,
+                className: _.Nf,
                 children: (0, n.jsx)(c.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",
                     children: f.intl.string(f.t.AjdEvM)
                 })
             }) : (0, n.jsxs)("div", {
-                className: b.KE,
+                className: _.KE,
                 children: [(0, n.jsxs)("div", {
-                    className: b.R5,
+                    className: _.R5,
                     children: [(0, n.jsx)(o.m, {
                         text: f.intl.string(f.t.FEIIO9),
                         "aria-label": f.intl.string(f.t.FEIIO9),
                         children: (0, n.jsx)("div", {
-                            className: b.Q$,
+                            className: _.Q$,
                             children: (0, n.jsx)(c.K0, {
                                 size: "sm",
                                 variant: "icon-only",
@@ -278,7 +278,7 @@ let _ = new m.A("ImageEditor"),
                         text: f.intl.string(f.t["4LRS2p"]),
                         "aria-label": f.intl.string(f.t["4LRS2p"]),
                         children: (0, n.jsx)("div", {
-                            className: b.Q$,
+                            className: _.Q$,
                             children: (0, n.jsx)(c.K0, {
                                 size: "sm",
                                 variant: "icon-only",
@@ -289,12 +289,12 @@ let _ = new m.A("ImageEditor"),
                         })
                     })]
                 }), (0, n.jsxs)("div", {
-                    className: a()(b.mu, b.R5),
+                    className: a()(_.mu, _.R5),
                     children: [(0, n.jsx)(o.m, {
                         text: f.intl.string(f.t.QlArhK),
                         "aria-label": f.intl.string(f.t.QlArhK),
                         children: (0, n.jsx)("div", {
-                            className: b.Q$,
+                            className: _.Q$,
                             children: (0, n.jsx)(c.K0, {
                                 size: "sm",
                                 variant: "icon-only",
@@ -305,7 +305,7 @@ let _ = new m.A("ImageEditor"),
                         })
                     }), null != q && (0, n.jsx)(c.Apm, {
                         ref: X,
-                        className: b.aw,
+                        className: _.aw,
                         initialValue: q,
                         minValue: 1,
                         maxValue: 4,
@@ -318,7 +318,7 @@ let _ = new m.A("ImageEditor"),
                         text: f.intl.string(f.t.Ch32tT),
                         "aria-label": f.intl.string(f.t.Ch32tT),
                         children: (0, n.jsx)("div", {
-                            className: b.Q$,
+                            className: _.Q$,
                             children: (0, n.jsx)(c.K0, {
                                 size: "sm",
                                 variant: "icon-only",

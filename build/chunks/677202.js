@@ -24,11 +24,11 @@ let h = a.memo(function(e) {
         ...m.Jh
     }, {
         audio: v
-    } = (0, o.L)(), j = null != v, p = a.useRef(null), N = a.useRef(null), b = a.useRef(null), [y, C] = a.useState(0), [A, w] = a.useState(0), [S, M] = a.useState(0), [E, T] = a.useState(!1), [k, P] = a.useState(!1), [D, I] = a.useState(!1), [F, O] = a.useState(0), [L, R] = a.useState(-1), U = a.useMemo(() => F / x.fineTuningScale, [x.fineTuningScale, F]);
+    } = (0, o.L)(), j = null != v, p = a.useRef(null), N = a.useRef(null), b = a.useRef(null), [y, C] = a.useState(0), [A, w] = a.useState(0), [S, E] = a.useState(0), [M, T] = a.useState(!1), [k, P] = a.useState(!1), [D, I] = a.useState(!1), [F, O] = a.useState(0), [L, R] = a.useState(-1), U = a.useMemo(() => F / x.fineTuningScale, [x.fineTuningScale, F]);
     a.useEffect(() => {
         if (null == v) return;
         let e = v.duration * u.A.Millis.SECOND;
-        C(0), w(0), M(e), O(e)
+        C(0), w(0), E(e), O(e)
     }, [v]);
     let _ = a.useCallback((e, t) => {
             if (l(), 0 === e.button) switch (t) {
@@ -56,11 +56,11 @@ let h = a.memo(function(e) {
             R(-1)
         }, []),
         G = a.useCallback(e => {
-            if (null == v || !E) return;
+            if (null == v || !M) return;
             let t = parseInt(e.target.value),
                 l = t > S ? S : t;
             i((0, d.fP)(l)), C(l), w(l)
-        }, [v, i, S, E]),
+        }, [v, i, S, M]),
         V = a.useCallback(e => {
             if (null == v || !k) return;
             let t = parseInt(e.target.value);
@@ -70,7 +70,7 @@ let h = a.memo(function(e) {
             if (null == v || !D) return;
             let t = parseInt(e.target.value),
                 l = t > y ? t : y;
-            i((0, d.fP)(y)), w(y), M(l)
+            i((0, d.fP)(y)), w(y), E(l)
         }, [v, i, D, y]);
     return a.useEffect(() => {
         null != h && j && h({
@@ -88,12 +88,12 @@ let h = a.memo(function(e) {
     }, [v, S, l, A, t, y]), a.useEffect(() => {
         if (x.fineTuningDelay <= 0) return;
         let e = setTimeout(() => {
-            E && y == y && -1 === L ? R(y) : D && S == S && -1 === L ? R(S) : k && A == A && -1 === L && R(A)
+            M && y == y && -1 === L ? R(y) : D && S == S && -1 === L ? R(S) : k && A == A && -1 === L && R(A)
         }, x.fineTuningDelay);
         return () => {
             clearTimeout(e)
         }
-    }, [x.fineTuningDelay, D, S, L, k, A, E, y]), (0, n.jsxs)("div", {
+    }, [x.fineTuningDelay, D, S, L, k, A, M, y]), (0, n.jsxs)("div", {
         className: s()(f.IO, {
             [f.J_]: j
         }),
@@ -143,7 +143,7 @@ let h = a.memo(function(e) {
             className: f.wo,
             children: [(0, n.jsxs)("div", {
                 className: s()(f.Wm, {
-                    [f.Em]: E,
+                    [f.Em]: M,
                     [f.z6]: D
                 }),
                 style: {
@@ -177,7 +177,7 @@ let h = a.memo(function(e) {
                 className: f.i0,
                 children: (0, n.jsx)("div", {
                     className: s()(f.lG, {
-                        [f.cB]: k || E || D || t
+                        [f.cB]: k || M || D || t
                     }),
                     style: {
                         left: `${(0,d.y)(A,L,U,F)}%`

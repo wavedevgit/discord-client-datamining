@@ -120,8 +120,8 @@ class v extends l.Component {
                         onClick: e => {
                             this.handleAddReactionClick(e)
                         },
-                        onMouseEnter: () => (0, _.K)(f.Vl.AddReactionPopoutMouseEntered),
-                        onFocus: () => (0, _.K)(f.Vl.AddReactionPopoutFocused),
+                        onMouseEnter: () => (0, _.K)(f.EmojiInteractionPoint.AddReactionPopoutMouseEntered),
+                        onFocus: () => (0, _.K)(f.EmojiInteractionPoint.AddReactionPopoutFocused),
                         className: r()(o.reactionBtn, {
                             [o.active]: a
                         }, t),

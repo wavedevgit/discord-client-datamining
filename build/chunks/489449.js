@@ -85,13 +85,13 @@ function k(e) {
     });
     let E = a.useRef(null),
         P = a.useRef([]),
-        N = a.useRef(null),
-        I = a.useCallback(e => {
+        I = a.useRef(null),
+        N = a.useCallback(e => {
             let {
                 indexToRemove: t,
                 numberOfAnswers: n
             } = e;
-            n === p.FW + 1 ? N.current?.focus() : P.current[t === n - 1 ? t - 1 : t + 1]?.focusDeleteButton()
+            n === p.FW + 1 ? I.current?.focus() : P.current[t === n - 1 ? t - 1 : t + 1]?.focusDeleteButton()
         }, []),
         {
             answers: S,
@@ -114,7 +114,7 @@ function k(e) {
             submitting: M,
             shouldFocusOnInvalidField: V,
             setShouldFocusOnInvalidField: H
-        } = (0, d.A)(t, f, I, {
+        } = (0, d.A)(t, f, N, {
             initialQuestion: x,
             initialAnswers: _,
             initialDuration: w
@@ -217,7 +217,7 @@ function k(e) {
                         variant: "secondary",
                         onClick: $,
                         "aria-label": A.intl.string(A.t.B2Uvme),
-                        buttonRef: N,
+                        buttonRef: I,
                         text: A.intl.string(A.t.B2Uvme)
                     })
                 })]

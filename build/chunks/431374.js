@@ -1,6 +1,6 @@
 /** chunk id: 431374 params = (module,exports,require) **/
 n.d(t, {
-    default: () => C
+    default: () => U
 });
 var l = n(627968),
     i = n(64700),
@@ -20,8 +20,8 @@ var l = n(627968),
     T = n(937773),
     b = n(287809),
     S = n(954571),
-    _ = n(57990),
-    x = n(569921),
+    x = n(57990),
+    _ = n(569921),
     j = n(267859),
     y = n(334310),
     O = n(685396),
@@ -31,17 +31,17 @@ var l = n(627968),
     w = n(307731),
     P = n(985018),
     R = n(762331);
-let U = "CLEAR_AFTER";
+let E = "CLEAR_AFTER";
 
-function C(e) {
+function U(e) {
     let {
         transitionState: t,
         onClose: n,
         sourceAnalyticsLocations: a = [],
-        prompt: C = null
+        prompt: U = null
     } = e, {
-        analyticsLocations: E
-    } = (0, A.Ay)(a, h.A.CUSTOM_STATUS_MODAL), M = (0, o.bG)([b.default], () => b.default.getCurrentUser() ?? null), k = (0, O.K)(), [H, I] = i.useState(k?.state ?? ""), [Y, $] = i.useState(k?.emoji ?? null), [L, F] = i.useState((0, x.A)()), B = i.useRef(null), V = i.useRef(null), Z = i.useRef(null), q = null != C ? C.label() : P.intl.string(P.t.xod367), [z, G] = i.useState(q), {
+        analyticsLocations: C
+    } = (0, A.Ay)(a, h.A.CUSTOM_STATUS_MODAL), M = (0, o.bG)([b.default], () => b.default.getCurrentUser() ?? null), k = (0, O.K)(), [H, I] = i.useState(k?.state ?? ""), [Y, $] = i.useState(k?.emoji ?? null), [L, F] = i.useState((0, _.A)()), B = i.useRef(null), V = i.useRef(null), Z = i.useRef(null), q = null != U ? U.label() : P.intl.string(P.t.xod367), [z, G] = i.useState(q), {
         ref: K,
         width: Q
     } = (0, f.Ay)(q);
@@ -60,18 +60,18 @@ function C(e) {
     }, [Q, q]), i.useEffect(() => {
         S.default.track(v.HAw.OPEN_MODAL, {
             type: h.A.CUSTOM_STATUS_MODAL,
-            location_stack: E
+            location_stack: C
         })
-    }, [E]), (0, p.Ay)(() => {
+    }, [C]), (0, p.Ay)(() => {
         B.current?.focus(), B.current?.setSelection(H.length, H.length)
     });
     let W = () => {
-            L !== U && ((0, _.A)({
+            L !== E && ((0, x.A)({
                 text: H,
                 emojiInfo: Y,
                 clearAfter: L,
-                prompt: C,
-                analyticsLocations: E
+                prompt: U,
+                analyticsLocations: C
             }), n())
         },
         X = P.intl.string(P.t.rp0ahn),
@@ -84,8 +84,8 @@ function C(e) {
                 maxVisibleItems: D.SX.length + 1,
                 value: L,
                 options: [{
-                    value: U,
-                    key: U,
+                    value: E,
+                    key: E,
                     label: P.intl.string(P.t.E45wvP),
                     disabled: !0
                 }, ...D.SX.map(e => ({
@@ -103,7 +103,7 @@ function C(e) {
                     } = e;
                     return (0, l.jsx)("span", {
                         className: r()(R.j3, i ? R.r9 : void 0),
-                        children: t === U ? n : (0, y.A)(t)
+                        children: t === E ? n : (0, y.A)(t)
                     })
                 },
                 variant: "text-only",
@@ -170,7 +170,7 @@ function C(e) {
                                         animated: !1
                                     }), l && t()
                                 },
-                                pickerIntention: w.b_.STATUS,
+                                pickerIntention: w.EmojiIntention.STATUS,
                                 onNavigateAway: n
                             })
                         },

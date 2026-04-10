@@ -39,15 +39,15 @@ let p = () => (0, a.jsx)("img", {
         }, [k, S]);
         let I = k || C,
             R = C ? null : r,
-            [N, D] = (0, n.useState)(null),
-            M = (0, n.useRef)(null),
+            [N, M] = (0, n.useState)(null),
+            D = (0, n.useRef)(null),
             O = (0, n.useCallback)(() => {
-                M.current = null, D(null)
+                D.current = null, M(null)
             }, []),
             L = (0, n.useCallback)(e => {
-                let t = N === M.current;
-                e > 0 && ("earn" !== N || !t) && D("earn")
-            }, [D, N]);
+                let t = N === D.current;
+                e > 0 && ("earn" !== N || !t) && M("earn")
+            }, [M, N]);
         return (0, a.jsx)(o.DUT, {
             onClick: I ? void 0 : x,
             className: i()(u.vk, {
@@ -68,7 +68,7 @@ let p = () => (0, a.jsx)("img", {
                     className: i()(u.hr, I ? u.nr : void 0),
                     children: (0, a.jsx)(c.Ay, {
                         currentAnimationType: N,
-                        animationTypeRef: M,
+                        animationTypeRef: D,
                         onSetAnimationDurationMS: P
                     })
                 }), (0, a.jsx)(d.A, {

@@ -45,7 +45,7 @@ function h(e) {
             return (0, i.jsx)(o.A, {
                 closePopout: t,
                 onSelectEmoji: c(t),
-                pickerIntention: u.b_.GUILD_PROFILE
+                pickerIntention: u.EmojiIntention.GUILD_PROFILE
             })
         },
         children: (e, t) => {

@@ -24,9 +24,9 @@ function f(e, t, n, f) {
         [k, x] = l.useState(f?.initialDuration ?? m.fT.ONE_DAY),
         [_, w] = l.useState({}),
         [E, P] = l.useState(!1),
-        N = p.filter(e => (0, u.ND)(e)),
-        I = p.filter(e => (0, u.VD)(e)),
-        S = A.length > 0 && N.length >= m.FW && 0 === I.length,
+        I = p.filter(e => (0, u.ND)(e)),
+        N = p.filter(e => (0, u.VD)(e)),
+        S = A.length > 0 && I.length >= m.FW && 0 === N.length,
         [v, {
             error: D,
             loading: O
@@ -127,13 +127,13 @@ function f(e, t, n, f) {
             await v({
                 channel: e,
                 question: A,
-                answers: N,
+                answers: I,
                 allowMultiSelect: R,
                 duration: k,
                 layout: a.Z.DEFAULT,
                 onClose: t
             })
-        }, [A, N, R, k, v, e, t]),
+        }, [A, I, R, k, v, e, t]),
         V = l.useCallback(() => {
             !O && G() && M()
         }, [M, O, G]);

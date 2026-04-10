@@ -5,8 +5,8 @@ t.d(n, {
 });
 var i = t(627968),
     a = t(64700),
-    s = t(503698),
-    l = t.n(s),
+    l = t(503698),
+    s = t.n(l),
     r = t(311907),
     c = t(397927),
     o = t(854627),
@@ -19,7 +19,7 @@ function x(e) {
     let {
         smallerText: n,
         className: t,
-        textColor: s,
+        textColor: l,
         isApplicationHome: o,
         enablePremiumBrandRefresh: x
     } = e, h = (0, r.bG)([u.A], () => u.A.affinities.slice(0, 3).reverse()), p = h.map((e, n) => (0, i.jsx)(_, {
@@ -35,7 +35,7 @@ function x(e) {
         username: g(h[0])
     }) : "", [h]);
     return 0 === h.length ? null : (0, i.jsxs)("div", {
-        className: l()(x ? f.bD : f.kL, t, {
+        className: s()(x ? f.bD : f.kL, t, {
             [f.gr]: !x && o
         }),
         children: [(0, i.jsx)("div", {
@@ -46,15 +46,15 @@ function x(e) {
             children: (0, i.jsx)(function() {
                 return x ? (0, i.jsx)(c.Text, {
                     variant: "text-sm/medium",
-                    color: s,
+                    color: l,
                     children: A
                 }) : n || o ? (0, i.jsx)(c.Text, {
                     variant: o ? "text-sm/normal" : "text-lg/medium",
-                    color: s,
+                    color: l,
                     children: A
                 }) : (0, i.jsx)(c.Heading, {
                     variant: "heading-xl/medium",
-                    color: s,
+                    color: l,
                     children: A
                 })
             }, {})
@@ -68,7 +68,7 @@ function _(e) {
         applyMask: t,
         size: a
     } = e, {
-        avatarSrc: s,
+        avatarSrc: l,
         eventHandlers: r
     } = (0, o.A)({
         userId: n?.id,
@@ -76,10 +76,10 @@ function _(e) {
         animateOnHover: !0
     });
     return (0, i.jsx)(c.euF, {
-        className: l()(f.Kk, {
+        className: s()(f.Kk, {
             [f.dK]: t
         }),
-        src: s,
+        src: l,
         "aria-label": n.username,
         size: a,
         ...r

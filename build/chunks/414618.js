@@ -28,8 +28,8 @@ var i = n(503698),
     _ = n(317525),
     y = n(71393),
     T = n(576705),
-    S = n(287809),
-    E = n(396465),
+    E = n(287809),
+    S = n(396465),
     I = n(488926),
     M = n(495273),
     R = n(270486),
@@ -237,7 +237,7 @@ function V(e) {
     } = e, u = (0, a.bG)([T.A], () => T.A.can(k.xB.ADMINISTRATOR, t)), h = I.MJ(k.xB.VIEW_CHANNEL, t), g = I.MJ(k.xB.ADMINISTRATOR, t);
     async function m() {
         let e = i.accessPermissions,
-            s = S.default.getCurrentUser();
+            s = E.default.getCurrentUser();
         r || null == await (0, A.D)(t.id, i.id) ? (M.uB(i, e, r), r || null == s || u || M.tP(i, e)) : (0, o.mMO)(async () => {
             let {
                 Modal: e
@@ -404,7 +404,7 @@ let F = a.Ay.connectStores([N.A, T.A, v.Ay, y.A, _.A], () => {
         }) : (0, l.jsx)(w.A, {
             buttonText: D.intl.string(D.t.NVwuHq),
             canSync: !0,
-            icon: (0, o.kHD)(E.A),
+            icon: (0, o.kHD)(S.A),
             noticeText: D.intl.format(D.t.OIhm0M, {
                 categoryName: i.name
             }),

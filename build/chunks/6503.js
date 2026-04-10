@@ -34,7 +34,7 @@ function y(e) {
         onClose: y,
         transitionState: C,
         showGuildPicker: A = !1
-    } = e, [w, S] = a.useState(l?.name ?? i?.name ?? ""), [M, E] = a.useState(i?.volume ?? 1), [T, k] = a.useState(i?.emojiId), [P, D] = a.useState(i?.emojiName), {
+    } = e, [w, S] = a.useState(l?.name ?? i?.name ?? ""), [E, M] = a.useState(i?.volume ?? 1), [T, k] = a.useState(i?.emojiId), [P, D] = a.useState(i?.emojiName), {
         file: I,
         loadAudioFromFile: F,
         maxVolume: O,
@@ -113,14 +113,14 @@ function y(e) {
                     readPromise: t,
                     guildId: B,
                     name: w,
-                    volume: M,
+                    volume: E,
                     emojiId: T,
                     emojiName: P
                 }), Y("ready")
             } catch (e) {
                 throw new o.A(e)
             }
-        }, [I, B, w, Z, G, M, T, P]),
+        }, [I, B, w, Z, G, E, T, P]),
         et = a.useCallback(async () => {
             s()(null != B, "Cannot submit soundboard sound with no guildId"), U(!0), J(null);
             try {
@@ -128,24 +128,24 @@ function y(e) {
                     guildId: B,
                     soundId: i.soundId,
                     name: w,
-                    volume: M,
+                    volume: E,
                     emojiId: T,
                     emojiName: P
                 }) : (await ee(), (0, u.showToast)((0, u.createToast)(N.intl.string(N.t.T7dhBL), u.ToastType.SUCCESS))), y()
             } catch (e) {
                 X(e)
             } finally {
-                Y("ready"), U(!1), E(1), L(1)
+                Y("ready"), U(!1), M(1), L(1)
             }
-        }, [Q, y, B, i, w, M, T, P, ee, L]);
+        }, [Q, y, B, i, w, E, T, P, ee, L]);
     (0, d.Ay)(() => {
         F(null), f.default.track(p.HAw.OPEN_MODAL, {
             type: "Soundboard Upload Sound",
             guild_id: B
         })
     }), a.useEffect(() => {
-        E(Math.min(M, O))
-    }, [M, E, O]);
+        M(Math.min(E, O))
+    }, [E, M, O]);
     let el = (0, n.jsx)(c.A, {
             guildId: B,
             emojiId: T,
@@ -182,7 +182,7 @@ function y(e) {
                 onChange: $
             }) : null, (Q || null != I) && (0, n.jsx)(g.A, {
                 sound: i,
-                volume: M,
+                volume: E,
                 disabled: K,
                 onChange: V
             }), Q || null != l ? null : (0, n.jsx)(r.D0$, {
@@ -210,8 +210,8 @@ function y(e) {
                 label: N.intl.string(N.t["3CJlb1"]),
                 errorMessage: _?.getFirstFieldErrorMessage("volume"),
                 helperText: null != H ? H : void 0,
-                initialValue: M,
-                onValueChange: e => E(e),
+                initialValue: E,
+                onValueChange: e => M(e),
                 minValue: 0,
                 maxValue: O
             })]

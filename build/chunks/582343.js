@@ -41,15 +41,15 @@ let h = {
                 x.pause(), j(!1)
             }
         }, [x]);
-        let M = a.useCallback(e => {
+        let E = a.useCallback(e => {
                 null != x && (x.pause(), null != e && (x.currentTime = e), j(!1))
             }, [x]),
-            E = a.useCallback(() => {
+            M = a.useCallback(() => {
                 if (null != x) {
-                    if (v) return void M();
+                    if (v) return void E();
                     b >= y ? x.currentTime = (0, m.fP)(C) : x.currentTime = (0, m.fP)(b), x.volume = (0, o.A)(l), x.play(), j(!0)
                 }
-            }, [x, y, M, b, v, C, l]),
+            }, [x, y, E, b, v, C, l]),
             T = a.useCallback(e => {
                 N(e), g?.({
                     startMs: e.startPositionMs,
@@ -68,7 +68,7 @@ let h = {
                 className: f.k0,
                 children: [(0, n.jsx)(r.DUT, {
                     className: f.Rr,
-                    onClick: A ? E : void 0,
+                    onClick: A ? M : void 0,
                     children: v ? (0, n.jsx)(r.wFz, {
                         size: "xs",
                         color: "currentColor",
@@ -90,7 +90,7 @@ let h = {
             }), (0, n.jsx)(c.A, {
                 playing: v,
                 onPlaybackChange: k,
-                onPausePlayback: M,
+                onPausePlayback: E,
                 onChangePosition: T,
                 disabled: i
             })]

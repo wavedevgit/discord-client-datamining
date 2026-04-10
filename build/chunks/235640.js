@@ -20,16 +20,16 @@ function d(t) {
             className: r.rf,
             children: [(0, n.jsxs)("div", {
                 className: r.lm,
-                children: [(0, n.jsx)(c, {
+                children: [(0, n.jsx)(m, {
                     width: "100%",
                     marginBottom: 8
-                }), (0, n.jsx)(c, {
+                }), (0, n.jsx)(m, {
                     width: "80%",
                     marginBottom: 16
-                }), (0, n.jsx)(c, {
+                }), (0, n.jsx)(m, {
                     width: "50%",
                     marginBottom: 8
-                }), (0, n.jsx)(c, {
+                }), (0, n.jsx)(m, {
                     width: "60%",
                     marginBottom: 16
                 })]
@@ -54,12 +54,12 @@ function d(t) {
                     color: "interactive-text-default",
                     children: 17
                 })]
-            }), (0, n.jsx)(c, {
+            }), (0, n.jsx)(m, {
                 width: "24px",
                 marginBottom: 0
             }), (0, n.jsx)("div", {
                 className: r.Om
-            }), (0, n.jsx)(c, {
+            }), (0, n.jsx)(m, {
                 width: "24px",
                 marginBottom: 0
             })]
@@ -67,7 +67,7 @@ function d(t) {
     })
 }
 
-function c(t) {
+function m(t) {
     let {
         width: e,
         marginBottom: i

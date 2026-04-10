@@ -58,7 +58,7 @@ function w(e) {
             }
             return e
         }),
-        M = (0, r.cf)([p.A], () => {
+        E = (0, r.cf)([p.A], () => {
             let e = {};
             for (let [t, l] of v.default.entries(S)) {
                 let n = (0, x.tO)(l, p.A.getSoundsForGuild(t) ?? N.pD, l.premiumTier);
@@ -69,7 +69,7 @@ function w(e) {
     a.useEffect(() => {
         (0, j.E7)()
     }, []);
-    let E = a.useMemo(() => Object.values(S).map(e => {
+    let M = a.useMemo(() => Object.values(S).map(e => {
             let {
                 name: t,
                 id: l
@@ -77,9 +77,9 @@ function w(e) {
             return {
                 label: t,
                 value: l,
-                disabled: M[l] <= 0
+                disabled: E[l] <= 0
             }
-        }), [S, M]),
+        }), [S, E]),
         T = a.useCallback(e => null == e || "" === e.value ? null : (0, n.jsx)(d.Ay, {
             className: s()(C.cl, {
                 [C.QJ]: e.disabled
@@ -94,9 +94,9 @@ function w(e) {
                 className: s()({
                     [C.QJ]: e?.disabled
                 }),
-                availableSlots: M[t]
+                availableSlots: E[t]
             })
-        }, [M]),
+        }, [E]),
         P = a.useCallback(e => (0, n.jsx)("div", {
             className: s()({
                 [C.QJ]: e.disabled
@@ -104,20 +104,20 @@ function w(e) {
             children: e.label
         }), []),
         D = a.useCallback(e => {
-            M[e] <= 0 || w(e)
-        }, [M, w]),
-        I = null == (t = M[i ?? b.dJq]) || t > 0 ? i : void 0;
+            E[e] <= 0 || w(e)
+        }, [E, w]),
+        I = null == (t = E[i ?? b.dJq]) || t > 0 ? i : void 0;
     return (0, n.jsx)(u.p, {
         label: l,
         className: o,
         onChange: D,
         value: I,
         multi: !1,
-        options: E,
+        options: M,
         renderOptionPrefix: T,
         renderOptionSuffix: k,
         renderOptionLabel: P,
-        placeholder: 0 === E.length ? y.intl.string(y.t.O3i2gV) : y.intl.string(y.t.CunCMN),
+        placeholder: 0 === M.length ? y.intl.string(y.t.O3i2gV) : y.intl.string(y.t.CunCMN),
         "data-migration-pending": !0
     })
 }

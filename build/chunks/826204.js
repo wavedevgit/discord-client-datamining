@@ -1,6 +1,6 @@
 /** chunk id: 826204 params = (module,exports,require) **/
 n.d(t, {
-    default: () => A
+    default: () => I
 });
 var l = n(627968),
     i = n(64700),
@@ -21,31 +21,31 @@ var l = n(627968),
     C = n(985018),
     f = n(35983);
 
-function A(e) {
+function I(e) {
     let {
         transitionState: t,
         onClose: n,
         onSave: s,
         onDelete: x,
         option: h,
-        guild: A,
-        prompt: b,
-        index: k
-    } = e, E = (0, o.bG)([m.Ay], () => m.Ay.getDefaultChannel(A.id)), [N, S] = i.useState(() => h?.emoji ?? null), [y, P] = i.useState(() => h?.title ?? ""), [_, T] = i.useState(() => h?.description ?? ""), [R, M] = i.useState(() => new Set(h?.channelIds ?? [])), [B, w] = i.useState(() => new Set(h?.roleIds ?? [])), [D, L] = i.useState({}), O = i.useRef(null);
+        guild: I,
+        prompt: k,
+        index: b
+    } = e, E = (0, o.bG)([m.Ay], () => m.Ay.getDefaultChannel(I.id)), [N, S] = i.useState(() => h?.emoji ?? null), [y, P] = i.useState(() => h?.title ?? ""), [T, _] = i.useState(() => h?.description ?? ""), [R, M] = i.useState(() => new Set(h?.channelIds ?? [])), [B, w] = i.useState(() => new Set(h?.roleIds ?? [])), [D, L] = i.useState({}), O = i.useRef(null);
     i.useLayoutEffect(() => O.current?.focus(), []);
     let z = i.useCallback(() => {
             var e, t, l, i;
             let r, o, c = {
                     id: h?.id ?? `${Date.now()}`,
                     title: y,
-                    description: _,
+                    description: T,
                     channelIds: Array.from(R).sort(),
                     roleIds: Array.from(B).sort(),
                     emoji: null == N ? void 0 : N
                 },
-                d = (e = A, t = g.A.editedOnboardingPrompts, l = b, r = {}, (i = c).title.length <= 0 && (r.title = C.intl.string(C.t.p3PKzA)), null != (o = (0, j.fO)(e, t, l, i)) && (r.roles = o), r);
+                d = (e = I, t = g.A.editedOnboardingPrompts, l = k, r = {}, (i = c).title.length <= 0 && (r.title = C.intl.string(C.t.p3PKzA)), null != (o = (0, j.fO)(e, t, l, i)) && (r.roles = o), r);
             L(d), a().isEmpty(d) && (s(c), n())
-        }, [R, _, N, A, n, s, h?.id, b, B, y]),
+        }, [R, T, N, I, n, s, h?.id, k, B, y]),
         G = i.useMemo(() => [{
             text: C.intl.string(C.t["ETE/oC"]),
             onClick: n,
@@ -57,9 +57,9 @@ function A(e) {
         }], [z, n]);
     return (0, l.jsx)(r.Modal, {
         title: C.intl.formatToPlainString(C.t.yjS3zs, {
-            index: k + 1
+            index: b + 1
         }),
-        subtitle: null != b.title && b.title.length > 0 ? b.title : C.intl.string(C.t.vY91C9),
+        subtitle: null != k.title && k.title.length > 0 ? k.title : C.intl.string(C.t.vY91C9),
         transitionState: t,
         onClose: n,
         actions: G,
@@ -86,8 +86,8 @@ function A(e) {
                     error: D.title
                 }), (0, l.jsx)(c.ksK, {
                     placeholder: C.intl.string(C.t.mIjgJK),
-                    value: _,
-                    onChange: e => T(e),
+                    value: T,
+                    onChange: e => _(e),
                     maxLength: v.QY
                 })]
             }), (0, l.jsx)(c.cGx, {}), (0, l.jsxs)(r.D0$, {
@@ -95,13 +95,13 @@ function A(e) {
                 children: [(0, l.jsxs)(c.BJc, {
                     gap: 8,
                     children: [(0, l.jsx)(d.A, {
-                        guildId: A.id,
+                        guildId: I.id,
                         selectedChannelIds: R,
                         placeholder: C.intl.string(C.t.vephiL),
                         onChange: M,
                         helperText: C.intl.string(C.t.SoT6we)
                     }), (0, l.jsx)(u.A, {
-                        guildId: A.id,
+                        guildId: I.id,
                         selectedRoleIds: B,
                         disableEveryoneRole: !0,
                         placeholder: C.intl.string(C.t.aFO1I6),
@@ -111,8 +111,8 @@ function A(e) {
                     })]
                 }), null == D.roles ? null : (0, l.jsx)(c.dzK, {
                     error: D.roles
-                }), (0, l.jsx)(I, {
-                    guild: A,
+                }), (0, l.jsx)(A, {
+                    guild: I,
                     roleIds: B
                 })]
             }), (0, l.jsx)(c.cGx, {}), (0, l.jsx)("div", {
@@ -131,7 +131,7 @@ function A(e) {
     })
 }
 
-function I(e) {
+function A(e) {
     let {
         guild: t,
         roleIds: n

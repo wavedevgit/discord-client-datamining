@@ -28,8 +28,8 @@ var l = n(627968),
     _ = n(942234),
     y = n(233993),
     T = n(260509),
-    S = n(427157),
-    E = n(176360),
+    E = n(427157),
+    S = n(176360),
     I = n(863036),
     M = n(696451),
     R = n(317525),
@@ -49,17 +49,17 @@ var l = n(627968),
     W = n(985018),
     J = n(938626),
     z = n(132832);
-let Z = u.Ay.connectStores([E.A, I.A], () => {
+let Z = u.Ay.connectStores([S.A, I.A], () => {
     let e = I.A.getChannel();
     return {
-        submitting: E.A.formState === Y.XlH.SUBMITTING,
+        submitting: S.A.formState === Y.XlH.SUBMITTING,
         onReset() {
             (0, A.Ts)()
         },
         onSave() {
             if (null == e) return;
-            let t = E.A.editedPermissionIds.reduce((e, t) => {
-                let n = E.A.getPermissionOverwrite(t);
+            let t = S.A.editedPermissionIds.reduce((e, t) => {
+                let n = S.A.getPermissionOverwrite(t);
                 return null != n && e.push(n), e
             }, []);
             (0, A.R$)(e.id, t)
@@ -70,7 +70,7 @@ let Z = u.Ay.connectStores([E.A, I.A], () => {
 function Q(e) {
     let {
         overwrite: t
-    } = e, n = (0, u.bG)([E.A], () => E.A.channel), i = (0, u.bG)([L.A], () => null != n ? L.A.getGuild(n.getGuildId()) : null), s = (0, u.bG)([R.A], () => null != i && null != t && t.type === b.r2.ROLE ? R.A.getRole(i.id, t.id) : void 0);
+    } = e, n = (0, u.bG)([S.A], () => S.A.channel), i = (0, u.bG)([L.A], () => null != n ? L.A.getGuild(n.getGuildId()) : null), s = (0, u.bG)([R.A], () => null != i && null != t && t.type === b.r2.ROLE ? R.A.getRole(i.id, t.id) : void 0);
     if (null == n || null == i || null == t) return null;
     let {
         guild_id: a,
@@ -204,7 +204,7 @@ function $(e) {
         children: (0, l.jsxs)(m.iS7, {
             selectionMode: "single",
             onSelectionChange: e => {
-                null != e && (q(e) ? d(e.id, b.r2.ROLE) : e instanceof S.A && d(e.id, b.r2.MEMBER), r())
+                null != e && (q(e) ? d(e.id, b.r2.ROLE) : e instanceof E.A && d(e.id, b.r2.MEMBER), r())
             },
             options: x,
             formatOption: e => ({
@@ -247,7 +247,7 @@ function $(e) {
                             })]
                         })
                     }
-                    if (i instanceof S.A) return (0, l.jsx)(X, {
+                    if (i instanceof E.A) return (0, l.jsx)(X, {
                         guildId: t.id,
                         channelId: n.id,
                         user: i
@@ -265,7 +265,7 @@ function K() {
             channel: s,
             permissionOverwrites: a,
             selectedOverwriteId: r
-        } = (0, u.cf)([E.A], () => E.A),
+        } = (0, u.cf)([S.A], () => S.A),
         d = s?.getGuildId(),
         {
             guild: c,
@@ -280,7 +280,7 @@ function K() {
         }, [d]),
         _ = (0, F.A)(d, a),
         y = (0, j.Ay)(),
-        S = (0, u.bG)([N.A], () => N.A.roleStyle),
+        E = (0, u.bG)([N.A], () => N.A.roleStyle),
         I = i.useCallback((e, t) => {
             if (null == s) return null;
             (0, f.L3)(e, async () => {
@@ -320,7 +320,7 @@ function K() {
     null != a && null == a[c.id] && (a[c.id] = U.xT(c.id));
     let w = h.filter(e => a[e.id]?.type === b.r2.ROLE).map(e => (0, l.jsx)(C.A, {
             theme: y,
-            roleStyle: S,
+            roleStyle: E,
             id: e.id,
             role: e,
             guild: c,
@@ -339,7 +339,7 @@ function K() {
                 id: e.id,
                 guild: c,
                 theme: y,
-                roleStyle: S,
+                roleStyle: E,
                 "aria-label": V.Ay.getUserTag(e, {
                     decoration: "never"
                 }),
@@ -426,7 +426,7 @@ function ee() {
         channel: e,
         permissionOverwrites: t,
         selectedOverwriteId: n
-    } = (0, u.cf)([E.A], () => E.A);
+    } = (0, u.cf)([S.A], () => S.A);
     if (null == (0, u.bG)([L.A], () => null != e ? L.A.getGuild(e.getGuildId()) : null) || null == e || null == t || null == n) return null;
     let i = t[n];
     return (0, l.jsxs)(v.Ay, {

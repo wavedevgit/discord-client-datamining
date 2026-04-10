@@ -51,15 +51,15 @@ function j() {
     }, [R]), n.useEffect(() => {
         null != N && null == P && k(N)
     }, [N, P]);
-    let D = n.useRef(null);
+    let M = n.useRef(null);
     n.useEffect(() => {
         if (null == j || "" === j) {
-            D.current = P;
+            M.current = P;
             return
         }
-        if (P !== D.current) {
+        if (P !== M.current) {
             if (null == P || "" === P) {
-                D.current = P;
+                M.current = P;
                 return
             }
             C(j, P).then(() => {
@@ -69,10 +69,10 @@ Payment source changed.`)
             }).catch(e => {
                 let t = e instanceof Error ? e.message : String(e);
                 b(`Failed to update order: ${t}`)
-            }), D.current = P
+            }), M.current = P
         }
     }, [j, P]);
-    let M = n.useMemo(() => Object.values(I).map(e => {
+    let D = n.useMemo(() => Object.values(I).map(e => {
             var t;
             let l, a = (t = e.type, null != (l = p.w[t]) ? l() : String(t));
             if (e.type === f.he.CARD && "last4" in e) {
@@ -266,7 +266,7 @@ Error: ${t}`)
                         selectionMode: "single",
                         value: P,
                         onSelectionChange: k,
-                        options: M,
+                        options: D,
                         placeholder: "Select a payment source...",
                         disabled: !R,
                         label: "Payment Source",

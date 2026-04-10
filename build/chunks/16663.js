@@ -26,29 +26,29 @@ function g(e) {
         previewStatus: T,
         placeHolderText: b,
         transitionState: S
-    } = e, _ = (0, r.Ay)(t.id), x = null != n && "" !== n || null != g ? h.intl.formatToPlainString(h.t.UpF5Qa, {
+    } = e, x = (0, r.Ay)(t.id), _ = null != n && "" !== n || null != g ? h.intl.formatToPlainString(h.t.UpF5Qa, {
         emoji: g?.name ?? "",
         status: n
     }) : `${h.intl.string(h.t.EVV6uZ)}: ${b}`;
     return (0, l.jsx)("div", {
         role: "img",
-        "aria-label": x,
+        "aria-label": _,
         children: (0, l.jsxs)(d.A, {
             user: t,
-            displayProfile: _,
+            displayProfile: x,
             themeType: p.d.POPOUT,
             className: A.ti,
             "aria-hidden": "true",
             children: [(0, l.jsxs)("header", {
                 children: [(0, l.jsx)(u.A, {
                     user: t,
-                    displayProfile: _,
+                    displayProfile: x,
                     themeType: p.d.POPOUT
                 }), (0, l.jsx)("div", {
                     inert: !0,
                     children: (0, l.jsx)(s.A, {
                         user: t,
-                        displayProfile: _,
+                        displayProfile: x,
                         themeType: p.d.POPOUT,
                         previewStatus: T,
                         className: A.my
@@ -61,17 +61,17 @@ function g(e) {
                     placeholderText: b,
                     hasEntered: S === i.ip4.ENTERED
                 })]
-            }), _?.profileEffect != null && (0, l.jsx)(a.A, {
-                skuId: _.profileEffect.skuId
+            }), x?.profileEffect != null && (0, l.jsx)(a.A, {
+                skuId: x.profileEffect.skuId
             }), (0, l.jsx)("div", {
                 className: A.QV,
                 inert: !0,
                 children: (0, l.jsx)(c.A, {
                     user: t,
                     nickname: f.Ay.getName(null, null, t),
-                    pronouns: _?.pronouns,
+                    pronouns: x?.pronouns,
                     tags: (0, l.jsx)(o.A, {
-                        displayProfile: _,
+                        displayProfile: x,
                         themeType: p.d.POPOUT
                     })
                 })

@@ -154,7 +154,9 @@ function x(e) {
         onClose: g.tEg,
         isFullscreenEnabled: i,
         setIsFullscreenEnabled: s,
-        useNewProgressBarStyling: l
+        useNewProgressBarStyling: l,
+        progressSec: 0,
+        targetSec: 0
     }), [t, n, i, s, l]), u = a.useMemo(() => ({
         questConfig: t.config
     }), [t.config]);

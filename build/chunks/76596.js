@@ -51,7 +51,7 @@ function u(e) {
                             animated: n.animated
                         }), l && t())
                     },
-                    pickerIntention: d.b_.COMMUNITY_CONTENT,
+                    pickerIntention: d.EmojiIntention.COMMUNITY_CONTENT,
                     channel: x
                 })
             },

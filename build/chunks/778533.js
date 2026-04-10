@@ -1,6 +1,6 @@
 /** chunk id: 778533 params = (module,exports,require) **/
 s.d(t, {
-    A: () => j
+    A: () => f
 });
 var n = s(627968),
     l = s(64700),
@@ -15,42 +15,42 @@ var n = s(627968),
     x = s(590202),
     h = s(971649),
     C = s(781121),
-    A = s(201257),
+    g = s(201257),
     p = s(985018),
-    g = s(597052),
-    v = s(246878);
+    A = s(597052),
+    S = s(246878);
 
-function j() {
+function f() {
     let {
         quest: e,
         sourceQuestContent: t,
         isPortrait: s,
         onClose: i
-    } = l.useContext(A.VideoQuestModalContext), j = (0, h.go)(), f = (0, m.LS)(e), S = l.useRef(null), {
+    } = l.useContext(g.VideoQuestModalContext), f = (0, h.go)(), v = (0, m.LS)(e), j = l.useRef(null), {
         isHoveringOrFocusing: N
-    } = (0, u.A)(S), O = (0, C.H)({
+    } = (0, u.A)(j), O = (0, C.H)({
         quest: e,
         onClose: i,
         sourceQuestContent: t,
-        impressionId: j
+        impressionId: f
     }), E = e.config.ctaConfig.subtitle, _ = void 0 !== E && !(0, d.uJ)(E);
     return (0, n.jsx)(o.m_, {
         text: p.intl.string(p.t.EuHF34),
         children: (0, n.jsx)(r.DUT, {
             onClick: () => O(c.uF.VIDEO_MODAL, x.Cy.OPEN_GAME_LINK),
-            className: g._S,
+            className: A._S,
             children: (0, n.jsxs)("div", {
-                className: a()(v.hA, g.t8, {
-                    [g.Mc]: f
+                className: a()(S.hA, A.t8, {
+                    [A.Mc]: v
                 }),
-                ref: S,
+                ref: j,
                 children: [(0, n.jsx)("div", {
-                    className: g.sB,
+                    className: A.sB,
                     children: (0, n.jsx)(r.Heading, {
                         variant: "heading-md/medium",
                         color: "text-strong",
-                        className: a()(g.xw, {
-                            [g._L]: s
+                        className: a()(A.xw, {
+                            [A._L]: s
                         }),
                         lineClamp: s ? void 0 : 1,
                         children: p.intl.format(p.t.EQa7os, {
@@ -58,13 +58,13 @@ function j() {
                         })
                     })
                 }), (0, n.jsxs)("div", {
-                    className: a()(g.sB, {
-                        [g.fi]: s
+                    className: a()(A.sB, {
+                        [A.fi]: s
                     }),
                     children: [(0, n.jsx)("div", {
-                        className: a()(g.PV, {
-                            [g.WV]: s,
-                            [g.mq]: s
+                        className: a()(A.PV, {
+                            [A.WV]: s,
+                            [A.mq]: s
                         }),
                         children: (0, n.jsx)(r.yr3, {
                             size: "xs",
@@ -72,9 +72,9 @@ function j() {
                         })
                     }), (0, n.jsx)(r.Heading, {
                         variant: "heading-sm/medium",
-                        className: a()(g.PV, {
-                            [g.WV]: s,
-                            [g.mq]: s
+                        className: a()(A.PV, {
+                            [A.WV]: s,
+                            [A.mq]: s
                         }),
                         color: N ? "text-strong" : "text-subtle",
                         lineClamp: 1,
@@ -82,12 +82,12 @@ function j() {
                     }), _ ? (0, n.jsxs)(n.Fragment, {
                         children: [(0, n.jsx)("div", {
                             "aria-hidden": "true",
-                            className: a()(g.SC, {
-                                [g.b2]: s
+                            className: a()(A.SC, {
+                                [A.b2]: s
                             })
                         }), (0, n.jsx)(r.Heading, {
-                            className: a()(g.xw, {
-                                [g._L]: s
+                            className: a()(A.xw, {
+                                [A._L]: s
                             }),
                             variant: "heading-sm/medium",
                             lineClamp: s ? void 0 : 1,

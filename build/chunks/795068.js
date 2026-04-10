@@ -12,7 +12,9 @@ let s = r.createContext({
         isFullscreenEnabled: !1,
         useNewProgressBarStyling: !1,
         onClose: () => {},
-        setIsFullscreenEnabled: () => {}
+        setIsFullscreenEnabled: () => {},
+        progressSec: 0,
+        targetSec: 0
     }),
     i = r.createContext({
         questConfig: null

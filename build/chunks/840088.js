@@ -30,7 +30,7 @@ function b(e, t) {
     let S = m.filter(e => !h.Ay.isEmojiFilteredOrLocked({
         emoji: e,
         channel: t,
-        intention: E.b_.REACTION
+        intention: E.EmojiIntention.REACTION
     })).slice(0, 12).map((l, a) => (0, i.jsx)(o.Drp, {
         color: "default",
         id: l.id ?? l.optionallyDiverseSequence ?? l.name,

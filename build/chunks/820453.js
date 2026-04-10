@@ -87,17 +87,17 @@ function x(e) {
         containerRef: _
     } = e, w = a.useRef(null), E = (0, o.bG)([d.A], () => d.A.getChannel(t)), {
         emoji: P,
-        isLoadingMedia: N,
-        hasUpload: I,
+        isLoadingMedia: I,
+        hasUpload: N,
         mediaUrl: S,
         mediaFilename: v
     } = (0, b.A)({
         channelId: t,
         localCreationAnswerId: n,
         image: i
-    }), D = I || null != P, O = a.useCallback(() => {
+    }), D = N || null != P, O = a.useCallback(() => {
         m(f)
-    }, [m, f]), y = a.useMemo(() => I ? C.intl.formatToPlainString(C.t.vcC7Qn, {
+    }, [m, f]), y = a.useMemo(() => N ? C.intl.formatToPlainString(C.t.vcC7Qn, {
         imageName: (0, g.Kj)(v),
         answerNumber: f + 1
     }) : null != P ? C.intl.formatToPlainString(C.t.ncOAha, {
@@ -105,7 +105,7 @@ function x(e) {
         answerNumber: f + 1
     }) : C.intl.formatToPlainString(C.t.emdpNo, {
         answerNumber: f + 1
-    }), [I, P, f, v]), T = a.useCallback(e => {
+    }), [N, P, f, v]), T = a.useCallback(e => {
         let {
             closePopout: t
         } = e;
@@ -113,7 +113,7 @@ function x(e) {
             className: R.Fb,
             children: (0, l.jsx)(u.A, {
                 channel: E,
-                pickerIntention: h.b_.POLLS,
+                pickerIntention: h.EmojiIntention.POLLS,
                 closePopout: t,
                 onNavigateAway: t,
                 onSelectEmoji: e => {
@@ -135,10 +135,10 @@ function x(e) {
             onDeleteMedia: O,
             closePopout: t
         })
-    }, [O, x]), L = N ? (0, l.jsx)(s.y$y, {
+    }, [O, x]), L = I ? (0, l.jsx)(s.y$y, {
         className: R.EC
     }) : (0, l.jsx)(j, {
-        hasUpload: I,
+        hasUpload: N,
         mediaUrl: S,
         mediaFilename: v,
         imageClassName: r()(R.$_, R.qX),
@@ -220,9 +220,9 @@ function _(e) {
         focusDeleteButton: () => _.current?.focus(),
         focusInput: () => w.current?.focus()
     }));
-    let [E, P] = a.useState(!1), N = a.useCallback(() => {
+    let [E, P] = a.useState(!1), I = a.useCallback(() => {
         P(e => !e)
-    }, []), I = a.useCallback(e => {
+    }, []), N = a.useCallback(e => {
         let t = e.ctrlKey && !(e.altKey || e.metaKey || e.shiftKey),
             l = e.metaKey && !(e.altKey || e.ctrlKey || e.shiftKey);
         switch (e.key.toLowerCase()) {
@@ -230,9 +230,9 @@ function _(e) {
                 r && (e.preventDefault(), ((0, g.ND)(n) || "macos" !== (0, f.getOS)() ? t : l) ? (e.stopPropagation(), h()) : b()), j.current[i + 1]?.focusInput();
                 break;
             case "e":
-                ("macos" === (0, f.getOS)() ? l : t) && (e.preventDefault(), e.stopPropagation(), N())
+                ("macos" === (0, f.getOS)() ? l : t) && (e.preventDefault(), e.stopPropagation(), I())
         }
-    }, [b, n, j, i, r, h, N]), S = (0, l.jsx)(x, {
+    }, [b, n, j, i, r, h, I]), S = (0, l.jsx)(x, {
         containerRef: k,
         channelId: t,
         buttonImage: n.image,
@@ -241,7 +241,7 @@ function _(e) {
         localCreationAnswerId: n.localCreationAnswerId,
         answerIndex: i,
         shouldShowEmojiPicker: E,
-        toggleEmojiPicker: N
+        toggleEmojiPicker: I
     });
     return (0, l.jsx)("div", {
         ref: k,
@@ -269,7 +269,7 @@ function _(e) {
                 index: i,
                 localCreationAnswerId: n.localCreationAnswerId
             }),
-            onKeyDown: I,
+            onKeyDown: N,
             maxLength: p.dv,
             inputRef: w
         })

@@ -39,7 +39,7 @@ let x = e => {
                     closePopout: t
                 } = e;
                 return (0, i.jsx)(d.A, {
-                    pickerIntention: m.b_.COMMUNITY_CONTENT,
+                    pickerIntention: m.EmojiIntention.COMMUNITY_CONTENT,
                     closePopout: t,
                     onSelectEmoji: e => {
                         let {

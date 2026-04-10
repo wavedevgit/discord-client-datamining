@@ -33,7 +33,7 @@ function N(e) {
             closePopout: t
         } = e;
         return (0, i.jsx)(g.A, {
-            pickerIntention: p.b_.GUILD_ROLE_BENEFIT_EMOJI,
+            pickerIntention: p.EmojiIntention.GUILD_ROLE_BENEFIT_EMOJI,
             channel: u,
             closePopout: t,
             onNavigateAway: t,

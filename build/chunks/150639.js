@@ -17,11 +17,11 @@ var n = l(627968),
     x = l(80569),
     j = l(652215),
     f = l(985018);
-let b = e => ({
+let _ = e => ({
         label: e.name,
         value: e.id
     }),
-    _ = e => d.A.can(j.xBc.CREATE_GUILD_EXPRESSIONS, e),
+    b = e => d.A.can(j.xBc.CREATE_GUILD_EXPRESSIONS, e),
     E = e => {
         let {
             onChange: t,
@@ -46,7 +46,7 @@ let b = e => ({
                 emojis: s.Ay.getGuildEmoji(t),
                 isEmojiAnimated: v
             })]
-        })), [N, v]), O = i.useMemo(() => Object.values(N).filter(_).map(b), [N]), C = i.useCallback(e => {
+        })), [N, v]), O = i.useMemo(() => Object.values(N).filter(b).map(_), [N]), C = i.useCallback(e => {
             let {
                 value: t,
                 label: l,
