@@ -1,5 +1,6 @@
 /** chunk id: 8719 params = (module,exports,require) **/
 e.exports = {
+    kL: "container_ca8727",
     BQ: "giftingButton_ca8727",
     zc: "iconContainer_ca8727",
     RT: "withBorder_ca8727",

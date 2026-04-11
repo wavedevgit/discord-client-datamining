@@ -19,8 +19,9 @@ let E = {
     action() {
         let e = _.A.getGuildId(),
             t = u.A.getChannelId(e),
-            n = c.A.getChannel(t);
-        if (null != t && null != n && n.type === i.r.GUILD_VOICE) return r.A.updateChatOpen(t, !o.A.getChatOpen(t), "toggle users keybind"), !1;
+            n = c.A.getChannel(t),
+            E = null != t && n?.isVocalThread() === !0 && o.A.getUserParticipantCount(t) > 0;
+        if (null != t && null != n && (n.type === i.r.GUILD_VOICE || E)) return r.A.updateChatOpen(t, !o.A.getChatOpen(t), "toggle users keybind"), !1;
         if (null != t && null != n && n.type === i.r.DM) {
             let e = d.Ay.getSection(t, n?.isDM()),
                 i = (0, a.AP)(n.getRecipientId()),

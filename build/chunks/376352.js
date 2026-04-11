@@ -1,118 +1,128 @@
 /** chunk id: 376352 params = (module,exports,require) **/
 n.d(t, {
-    F: () => g
+    F: () => I
 });
 var i = n(627968),
     l = n(64700),
     s = n(503698),
     a = n.n(s),
     r = n(311907),
-    o = n(397927),
-    d = n(294323),
-    c = n(587895),
-    u = n(834757),
-    h = n(263063),
-    A = n(535296),
-    _ = n(961350),
-    m = n(985018),
-    p = n(8719);
+    o = n(554146),
+    d = n(397927),
+    c = n(294323),
+    u = n(587895),
+    h = n(357186),
+    A = n(932001),
+    _ = n(834757),
+    m = n(263063),
+    p = n(535296),
+    g = n(961350),
+    f = n(49999),
+    x = n(985018),
+    E = n(8719);
 
-function g(e) {
+function I(e) {
     let {
         user: t,
         stream: n,
         channel: s
-    } = e, [g, f] = l.useState(!1), x = (0, u.AO)(n), E = x?.id, I = (0, r.bG)([c.A], () => c.A.getApplication(E), [E]), {
-        isLoading: C,
-        hasApplicationWidgetOnUserProfile: N
-    } = (0, d.A)(t.id, E, "social_layer_commerce_stream_header"), T = (0, r.bG)([_.default], () => _.default.getId()), S = l.useRef(null), b = l.useCallback(() => {
-        f(!1)
+    } = e, [I, C] = l.useState(!1), N = (0, _.AO)(n), T = N?.id, S = (0, r.bG)([u.A], () => u.A.getApplication(T), [T]), {
+        isLoading: b,
+        hasApplicationWidgetOnUserProfile: y
+    } = (0, c.A)(t.id, T, "social_layer_commerce_stream_header"), v = (0, r.bG)([g.default], () => g.default.getId()), j = l.useRef(null), [R, O] = (0, A.RF)(o.M.SLAYER_STOREFRONT_VC_GIFTING_STREAM_HEADER_NEW_BADGE, (0, h.c)(o.M.SLAYER_STOREFRONT_VC_GIFTING_STREAM_HEADER_NEW_BADGE), void 0, !0), L = R === o.M.SLAYER_STOREFRONT_VC_GIFTING_STREAM_HEADER_NEW_BADGE, M = l.useCallback(() => {
+        C(!1)
     }, []), {
-        isAppIcon: y,
-        icon: v,
-        text: j,
-        renderPopout: R
+        isAppIcon: D,
+        icon: U,
+        text: G,
+        renderPopout: P
     } = l.useMemo(() => {
-        if (null == I || null == E) return {
+        if (null == S || null == T) return {
             isAppIcon: !1
         };
-        if (N) {
-            let e = I.getIconURL(h.iu.SMALL),
+        if (y) {
+            let e = S.getIconURL(m.iu.SMALL),
                 n = null != e,
                 l = n ? (0, i.jsx)("img", {
-                    className: p.Kk,
+                    className: E.Kk,
                     src: e,
                     alt: "",
                     "aria-hidden": !0
-                }) : (0, i.jsx)(o._xR, {
-                    className: p.Kk
+                }) : (0, i.jsx)(d._xR, {
+                    className: E.Kk
                 });
             return {
                 isAppIcon: n,
                 icon: l,
-                text: m.intl.string(m.t["9njbm2"]),
-                renderPopout: () => (0, i.jsx)(A.Vp, {
+                text: x.intl.string(x.t["9njbm2"]),
+                renderPopout: () => (0, i.jsx)(p.Vp, {
                     userId: t.id,
                     channel: s,
-                    applicationId: E,
-                    onClose: b
+                    applicationId: T,
+                    onClose: M
                 })
             }
         }
         let {
             icon: e,
             text: n
-        } = T === t.id ? {
-            icon: (0, i.jsx)(o.U1X, {
-                className: p.Kk
+        } = v === t.id ? {
+            icon: (0, i.jsx)(d.U1X, {
+                className: E.Kk
             }),
-            text: m.intl.string(m.t.e6S76Q)
+            text: x.intl.string(x.t.e6S76Q)
         } : {
-            icon: (0, i.jsx)(o.okO, {
-                className: p.Kk
+            icon: (0, i.jsx)(d.okO, {
+                className: E.Kk
             }),
-            text: m.intl.string(m.t["8ZzYIv"])
+            text: x.intl.string(x.t["8ZzYIv"])
         };
         return {
             isAppIcon: !1,
             icon: e,
             text: n,
-            renderPopout: () => (0, i.jsx)(A.Z, {
+            renderPopout: () => (0, i.jsx)(p.Z, {
                 userId: t.id,
                 channel: s,
-                applicationId: E,
-                onClose: b
+                applicationId: T,
+                onClose: M
             })
         }
-    }, [I, E, s, T, b, N, t.id]);
-    return C || null == R ? null : (0, i.jsx)(o.YNO, {
-        targetElementRef: S,
-        shouldShow: g,
-        animation: o.YNO.Animation.FADE,
+    }, [S, T, s, v, M, y, t.id]);
+    return b || null == P ? null : (0, i.jsx)(d.YNO, {
+        targetElementRef: j,
+        shouldShow: I,
+        animation: d.YNO.Animation.FADE,
         position: "bottom",
         align: "center",
         spacing: 8,
-        onRequestClose: b,
-        renderPopout: R,
-        children: () => (0, i.jsx)("div", {
-            ref: S,
-            children: (0, i.jsxs)(o.DUT, {
-                className: p.BQ,
-                onClick: () => f(e => !e),
-                "aria-expanded": g,
+        onRequestClose: M,
+        renderPopout: P,
+        children: () => (0, i.jsxs)("div", {
+            className: E.kL,
+            ref: j,
+            children: [(0, i.jsxs)(d.DUT, {
+                className: E.BQ,
+                onClick: () => {
+                    O(f.i.TAKE_ACTION), C(e => !e)
+                },
+                "aria-expanded": I,
                 "aria-haspopup": "dialog",
-                children: [null != v && (0, i.jsx)("div", {
-                    className: a()(p.zc, {
-                        [p.RT]: y
+                children: [null != U && (0, i.jsx)("div", {
+                    className: a()(E.zc, {
+                        [E.RT]: D
                     }),
-                    children: v
-                }), (0, i.jsx)(o.Text, {
+                    children: U
+                }), (0, i.jsx)(d.Text, {
                     variant: "text-sm/normal",
                     color: "text-strong",
                     lineClamp: 1,
-                    children: j
+                    children: G
                 })]
-            })
+            }), L && (0, i.jsx)(d.Exy, {
+                type: "new",
+                variant: "brand"
+            })]
         })
     })
 }
