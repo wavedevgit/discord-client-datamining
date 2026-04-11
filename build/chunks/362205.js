@@ -24,9 +24,9 @@ var r = n(627968),
     E = n(674085),
     x = n(188180),
     A = n(890690),
-    N = n(480270);
+    b = n(480270);
 
-function b(e) {
+function N(e) {
     let {
         category: t,
         onClick: n,
@@ -41,8 +41,8 @@ function b(e) {
         id: c,
         children: e => (0, r.jsxs)(_.DUT, {
             onClick: n,
-            className: s()(N.AS, {
-                [N.vu]: i
+            className: s()(b.AS, {
+                [b.vu]: i
             }),
             ...e,
             children: [p, null != a && !i && (0, r.jsx)(E.A, {
@@ -87,7 +87,7 @@ function C(e) {
     let p = i.useRef(null),
         [_, m] = i.useState(t ? "auto" : "0");
     return (0, A.u)(n, t), (0, r.jsx)("div", {
-        className: N.lK,
+        className: b.lK,
         style: {
             height: _,
             opacity: +!!t
@@ -165,7 +165,7 @@ function j(e) {
         }
     }(t);
     return (0, h.Ay)(o), (0, r.jsxs)("div", {
-        className: N.o8,
+        className: b.o8,
         role: "list",
         style: {
             "--custom-nav-count": a.length,
@@ -174,21 +174,21 @@ function j(e) {
             "--custom-icon-size": `${p.E[x.V]}px`
         },
         children: [(0, r.jsx)("div", {
-            className: N.u4,
+            className: b.u4,
             "aria-hidden": "true",
             ref: d,
             children: (0, r.jsx)(u.animated.div, {
-                className: N.FF,
+                className: b.FF,
                 style: v,
                 ref: c
             })
         }), (0, r.jsx)("div", {
-            className: N.gu,
+            className: b.gu,
             "aria-hidden": "true",
             ref: g
         }), a.map(e => {
             let t = (0, S.H)(e.key, s, l);
-            return (0, r.jsx)(b, {
+            return (0, r.jsx)(N, {
                 onClick: () => {
                     var t;
                     return t = e.key, void y.A.navigate(t, {
