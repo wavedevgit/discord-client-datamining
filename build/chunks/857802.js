@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(130771),
     h = n(260509),
     _ = n(287809),
-    A = n(531685),
-    p = n(954571),
+    p = n(531685),
+    A = n(954571),
     f = n(599941),
     j = n(11351),
     N = n(319225),
@@ -60,7 +60,7 @@ function y(e) {
         id: e.id,
         label: e.name,
         value: e.id
-    })), [n]), A = async () => {
+    })), [n]), p = async () => {
         await u(t, o, C.S7.GUILD_ROLE_SUBSCRIPTIONS) && (x(t.id), (0, N.E)({
             title: b.intl.string(b.t["AP/2qe"]),
             body: b.intl.string(b.t.kHMgaK)
@@ -80,7 +80,7 @@ function y(e) {
                 hideLabel: !0
             }), (0, i.jsx)(r.$nd, {
                 text: b.intl.string(b.t["9HU3ZV"]),
-                onClick: A,
+                onClick: p,
                 loading: m,
                 disabled: null == o || h || !l
             })]
@@ -94,13 +94,13 @@ function y(e) {
 let R = e => {
     let {
         guild: t
-    } = e, n = (0, l.bG)([_.default], () => _.default.getCurrentUser()), r = (0, h.bM)(t, n), c = (0, d.ME)(t), f = (0, l.bG)([A.A], () => A.A.isFocused()), {
+    } = e, n = (0, l.bG)([_.default], () => _.default.getCurrentUser()), r = (0, h.bM)(t, n), c = (0, d.ME)(t), f = (0, l.bG)([p.A], () => p.A.isFocused()), {
         teams: j,
         loading: N
     } = (0, x.A)({
         refreshOnDepChange: f
     }), C = s.useMemo(() => j.filter(e => e.payout_account_status !== I.y.BLOCKED && (0, g.y)(n?.id ?? T.dJq, e)), [j, n]), R = C.length > 0, O = s.useCallback(async () => {
-        p.default.track(T.HAw.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED, {
+        A.default.track(T.HAw.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED, {
             is_onboarding_v2: c,
             has_eligible_team: R,
             guild_id: t.id,

@@ -18,8 +18,8 @@ var s = n(311907),
     g = n(954571),
     _ = n(779733),
     x = n(652215),
-    h = n(788868),
-    A = n(985018),
+    A = n(788868),
+    h = n(985018),
     p = n(622326);
 let T = () => {
     (0, u.nf)(u.HP.APP_ICON), (0, _.default)()
@@ -27,8 +27,8 @@ let T = () => {
 
 function f() {
     return (0, i.jsx)(m.A, {
-        subscriptionTier: h.pe.TIER_2,
-        defaultTextOverride: A.intl.string(A.t.mr4K7D),
+        subscriptionTier: A.pe.TIER_2,
+        defaultTextOverride: h.intl.string(h.t.mr4K7D),
         premiumModalAnalyticsLocation: {
             object: x.ZSU.BUTTON_CTA,
             objectType: x.AnalyticsObjectTypes.BUY
@@ -42,7 +42,7 @@ let S = () => {
     } = (0, o.Ay)(a.A.USER_SETTINGS), t = (0, s.bG)([d.A], () => d.A.isUpsellPreview);
     return (0, r.Ay)(() => {
         t && g.default.track(x.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: h.e.APP_ICON_UPSELL,
+            type: A.e.APP_ICON_UPSELL,
             location_stack: e
         })
     }), (0, i.jsx)("div", {
@@ -53,7 +53,7 @@ let S = () => {
                 className: p.gY,
                 children: [(0, i.jsx)(l.Button, {
                     variant: t ? "secondary" : "primary",
-                    text: A.intl.string(A.t["hb/wE0"]),
+                    text: h.intl.string(h.t["hb/wE0"]),
                     onClick: () => T()
                 }), t && (0, i.jsx)(f, {})]
             })

@@ -22,8 +22,8 @@ function _(e) {
         onBannerChange: s,
         guildId: _,
         className: x,
-        disabled: h = !1,
-        showPremiumIcon: A = !0,
+        disabled: A = !1,
+        showPremiumIcon: h = !0,
         isTryItOut: p = !1,
         forcedDivider: T,
         withHighlight: f = !1
@@ -33,9 +33,9 @@ function _(e) {
     return (0, i.jsx)(c.A, {
         className: x,
         title: m.intl.string(m.t.Vgdusv),
-        showPremiumIcon: A,
+        showPremiumIcon: h,
         errors: n,
-        disabled: h,
+        disabled: A,
         forcedDivider: T,
         children: (0, i.jsxs)("div", {
             className: g.NC,

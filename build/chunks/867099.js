@@ -1,6 +1,6 @@
 /** chunk id: 867099 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => h
 });
 var i = n(627968),
     s = n(64700),
@@ -15,21 +15,21 @@ var i = n(627968),
     g = n(985018),
     _ = n(912158),
     x = n(885106);
-let h = /^\d+$|^$/;
+let A = /^\d+$|^$/;
 
-function A(e) {
+function h(e) {
     let {
         onClose: t,
         transitionState: n
     } = e, {
-        authorizedApplicationId: A,
+        authorizedApplicationId: h,
         authorizationError: p,
         authorizing: T
     } = (0, r.cf)([m.A], () => ({
         authorizedApplicationId: m.A.testModeApplicationId,
         authorizationError: m.A.error,
         authorizing: m.A.isFetchingAuthorization
-    })), [f, S] = s.useState(A ?? ""), [E, b] = s.useState("8080"), [C, v] = s.useState("localhost"), N = h.test(f);
+    })), [f, S] = s.useState(h ?? ""), [E, b] = s.useState("8080"), [C, v] = s.useState("localhost"), N = A.test(f);
     async function I() {
         d.SH();
         let e = function(e, t, n) {
@@ -44,7 +44,7 @@ function A(e) {
         null != await d.q1(f, e) && t()
     }
     s.useEffect(() => () => o.h.wait(() => d.SH()), []);
-    let j = null != A && A === f,
+    let j = null != h && h === f,
         y = j ? function() {
             d.cL(), S(""), v(null)
         } : I,

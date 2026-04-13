@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(95701),
     _ = n(427157),
     x = n(288737),
-    h = n(555528),
-    A = n(287809),
+    A = n(555528),
+    h = n(287809),
     p = n(256415),
     T = n(403362),
     f = n(652215);
@@ -68,7 +68,7 @@ function b(e) {
 }
 
 function C() {
-    let e, t = (0, a.bG)([A.default], () => A.default.getCurrentUser()),
+    let e, t = (0, a.bG)([h.default], () => h.default.getCurrentUser()),
         {
             avatarSizeMode: n,
             displayNameMode: l,
@@ -79,10 +79,10 @@ function C() {
             displayUserMode: p.default.getDisplayUserMode()
         })),
         [x] = s.useState(() => [b(S.intl.string(S.t.C0ZDvo), !0, !1), b(S.intl.string(S.t.iOtj8E), !1, !1, !0), b(S.intl.string(S.t["0oqNgL"]), !1, !0)]),
-        C = (0, a.bG)([d.A, h.A], () => {
+        C = (0, a.bG)([d.A, A.A], () => {
             let e = d.A.getWidgetByType(f.uss.VOICE_V3);
             if (null == e) return null;
-            let t = h.A.getWidget(e.id);
+            let t = A.A.getWidget(e.id);
             return null != t && (0, c.ZO)(t) ? t : null
         }),
         v = C?.meta?.voiceStatesMaxShown ?? 8,

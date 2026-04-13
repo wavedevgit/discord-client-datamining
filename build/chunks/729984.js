@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(12773),
     h = n(777705),
     _ = n(769765),
-    A = n(808728),
-    p = n(147925),
+    p = n(808728),
+    A = n(147925),
     f = n(555337),
     j = n(418448),
     N = n(863694),
@@ -97,7 +97,7 @@ function L(e) {
     s.useEffect(() => {
         a || r || (0, x.A)(t.id)
     }, [t.id, a, r]);
-    let A = e => {
+    let p = e => {
         (0, o.mMO)(async () => {
             let {
                 default: s
@@ -141,7 +141,7 @@ function L(e) {
                 channel: e,
                 guild: t,
                 isLast: n === m.length - 1,
-                onClickLockedChannel: A
+                onClickLockedChannel: p
             }, e.id))
         }), (0, i.jsx)("div", {
             className: R.FZ
@@ -152,7 +152,7 @@ function L(e) {
 function D(e) {
     let {
         saveOnClose: t = !1
-    } = e, n = (0, l.bG)([f.A], () => f.A.getGuild()), r = (0, l.bG)([u.A], () => u.A.isLoading()), a = (0, l.bG)([A.Ay], () => A.Ay.getChannels(n?.id)), d = (0, l.bG)([_.A], () => _.A.getCategories(n?.id)), c = (0, l.bG)([T.A], () => T.A.advancedMode), m = s.useRef(null), [g, x] = s.useState(!1), h = s.useRef(n);
+    } = e, n = (0, l.bG)([f.A], () => f.A.getGuild()), r = (0, l.bG)([u.A], () => u.A.isLoading()), a = (0, l.bG)([p.Ay], () => p.Ay.getChannels(n?.id)), d = (0, l.bG)([_.A], () => _.A.getCategories(n?.id)), c = (0, l.bG)([T.A], () => T.A.advancedMode), m = s.useRef(null), [g, x] = s.useState(!1), h = s.useRef(n);
     return (s.useEffect(() => {
         h.current = n
     }), s.useEffect(() => {
@@ -175,8 +175,8 @@ function D(e) {
             children: [(0, i.jsx)(o.DUT, {
                 className: R.cS,
                 onClick: () => x(e => !e),
-                children: (0, i.jsx)(p.A, {
-                    direction: g ? p.A.Directions.DOWN : p.A.Directions.UP,
+                children: (0, i.jsx)(A.A, {
+                    direction: g ? A.A.Directions.DOWN : A.A.Directions.UP,
                     height: 16,
                     width: 16
                 })

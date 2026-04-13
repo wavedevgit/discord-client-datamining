@@ -18,8 +18,8 @@ var i = n(627968),
     g = n(793574),
     _ = n(688810),
     x = n(531260),
-    h = n(235986),
-    A = n(769015),
+    A = n(235986),
+    h = n(769015),
     p = n(532794),
     T = n(832946),
     f = n(287809),
@@ -156,11 +156,11 @@ function z() {
         }), !t && (0, i.jsx)(u.ZpM, {
             className: w.wb,
             type: u.ZpM.Types.CUSTOM,
-            children: (0, i.jsxs)(h.A, {
-                align: h.A.Align.CENTER,
-                children: [(0, i.jsx)(A.A, {
+            children: (0, i.jsxs)(A.A, {
+                align: A.A.Align.CENTER,
+                children: [(0, i.jsx)(h.A, {
                     game: null,
-                    size: A.M.SMALL,
+                    size: h.M.SMALL,
                     className: w.pV
                 }), (0, i.jsx)("span", {
                     className: w.O,
@@ -184,8 +184,8 @@ function Y(e) {
         showNoPaymentMethod: d,
         fetchedCurrentInvoicePreview: c,
         fetchedRenewalInvoicePreview: m,
-        fetchedOpenInvoice: h,
-        isPremiumGroup: A
+        fetchedOpenInvoice: A,
+        isPremiumGroup: h
     } = e, {
         analyticsLocations: p
     } = (0, _.Ay)(g.A.SUBSCRIPTION_DETAILS), T = null != c ? {} : {
@@ -232,7 +232,7 @@ function Y(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
             className: w.fj,
-            children: [!A && Y, (0, i.jsx)(L.C, {
+            children: [!h && Y, (0, i.jsx)(L.C, {
                 subscription: t,
                 renewalInvoicePreview: f,
                 fromStandaloneBillingPage: a,
@@ -249,7 +249,7 @@ function Y(e) {
                         renewalInvoicePreview: E,
                         className: w.g4,
                         fractionalPremiumInfo: I,
-                        openInvoice: h
+                        openInvoice: A
                     }), (0, i.jsx)("div", {
                         className: r()(w.g4, {
                             [w.sE]: o
@@ -305,10 +305,10 @@ function W(e) {
         busy: a,
         fromStandaloneBillingPage: c = !0,
         analyticsLocation: x,
-        shouldRefetchInvoicesOnSubscriptionUpdate: h
+        shouldRefetchInvoicesOnSubscriptionUpdate: A
     } = e;
     null != l && null != l[0] && (n = l[0]);
-    let A = (0, d.bG)([f.default], () => f.default.getCurrentUser()),
+    let h = (0, d.bG)([f.default], () => f.default.getCurrentUser()),
         {
             analyticsLocations: p
         } = (0, _.Ay)(g.A.SUBSCRIPTION_DETAILS),
@@ -316,14 +316,14 @@ function W(e) {
         E = null != l ? l.slice(1) : [],
         [b, C] = s.useState(0);
     s.useEffect(() => {
-        if (!h) return;
+        if (!A) return;
         let e = e => {
             e.subscription.id === n.id && C(e => e + 1)
         };
         return m.h.subscribe("BILLING_SUBSCRIPTION_UPDATE_SUCCESS", e), () => {
             m.h.unsubscribe("BILLING_SUBSCRIPTION_UPDATE_SUCCESS", e)
         }
-    }, [n.id, h]);
+    }, [n.id, A]);
     let [N] = (0, v.Kq)({
         subscriptionId: n.id,
         renewal: !0,
@@ -338,7 +338,7 @@ function W(e) {
         analyticsLocation: x,
         userDiscountOfferId: S?.id,
         fetchKey: b
-    }), R = r?.invalid, L = (0, d.bG)([f.default], () => f.default.getCurrentUser()?.hasFreePremium()), P = o()(n.currentPeriodEnd), D = null != n.paymentSourceId, M = O?.total ?? 0, H = !D && M > 0 && (7 >= P.diff(o()(), "days") || n.status === k.Dmq.PAST_DUE) && !L && !n.isPurchasedExternally, z = R && n.status === k.Dmq.PAST_DUE && !L && !n.isPurchasedExternally, X = (0, I.l)(), K = !L && X, W = n?.status === k.Dmq.PAST_DUE, Z = W ? o()().diff(o()(n.currentPeriodStart), "days") : 0, q = null != A && A.isPremiumGroupPrimary(), Q = n.hasAnyPremiumGroup, [J] = (0, v.C8)({
+    }), R = r?.invalid, L = (0, d.bG)([f.default], () => f.default.getCurrentUser()?.hasFreePremium()), P = o()(n.currentPeriodEnd), D = null != n.paymentSourceId, M = O?.total ?? 0, H = !D && M > 0 && (7 >= P.diff(o()(), "days") || n.status === k.Dmq.PAST_DUE) && !L && !n.isPurchasedExternally, z = R && n.status === k.Dmq.PAST_DUE && !L && !n.isPurchasedExternally, X = (0, I.l)(), K = !L && X, W = n?.status === k.Dmq.PAST_DUE, Z = W ? o()().diff(o()(n.currentPeriodStart), "days") : 0, q = null != h && h.isPremiumGroupPrimary(), Q = n.hasAnyPremiumGroup, [J] = (0, v.C8)({
         subscriptionId: n.id,
         preventFetch: !(K || W)
     });

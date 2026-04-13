@@ -15,13 +15,13 @@ var i = n(627968),
     g = n(250253),
     _ = n(2242),
     x = n(985018),
-    h = n(15581);
-let A = e => {
+    A = n(15581);
+let h = e => {
         let {
             transitionState: t,
             groupListing: n,
             listing: l,
-            subscription: A,
+            subscription: h,
             onClose: p
         } = e, T = (0, m.GV)(), {
             analyticsLocations: f
@@ -45,8 +45,8 @@ let A = e => {
                 submitting: t
             }
         })(f), C = async () => {
-            await S(A.id) && p()
-        }, v = l.role_benefits.benefits.filter(e => e.ref_type === _.bN.CHANNEL), N = l.role_benefits.benefits.filter(e => e.ref_type === _.bN.INTANGIBLE), I = r()(A.currentPeriodEnd).format("MMMM Do, YYYY"), j = x.intl.formatToPlainString(x.t.KsMRP5, {
+            await S(h.id) && p()
+        }, v = l.role_benefits.benefits.filter(e => e.ref_type === _.bN.CHANNEL), N = l.role_benefits.benefits.filter(e => e.ref_type === _.bN.INTANGIBLE), I = r()(h.currentPeriodEnd).format("MMMM Do, YYYY"), j = x.intl.formatToPlainString(x.t.KsMRP5, {
             numChannels: v.length,
             numAdditionalBenefits: N.length,
             subscriptionEndDate: I
@@ -75,13 +75,13 @@ let A = e => {
                 }) : null, (0, i.jsx)(g.x, {
                     listingId: l.id,
                     guildId: n.guild_id,
-                    className: h.P
+                    className: A.P
                 })]
             })
         })
     },
     p = e => {
-        (0, o.qfG)(t => (0, i.jsx)(A, {
+        (0, o.qfG)(t => (0, i.jsx)(h, {
             ...t,
             ...e
         }))

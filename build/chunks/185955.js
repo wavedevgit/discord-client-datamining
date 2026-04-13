@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(597551),
     _ = n(287809),
     x = n(581781),
-    h = n(743981),
-    A = n(355097),
+    A = n(743981),
+    h = n(355097),
     p = n(985018),
     T = n(591470);
 let f = (0, o.Ld)(),
@@ -60,7 +60,7 @@ let f = (0, o.Ld)(),
                 guildId: t.id,
                 guildTag: n,
                 guildBadge: t.profile?.badge ?? void 0,
-                badgeSize: h.Sl.SIZE_16,
+                badgeSize: A.Sl.SIZE_16,
                 textColor: "interactive-text-default",
                 textVariant: "text-sm/semibold"
             })
@@ -74,7 +74,7 @@ let f = (0, o.Ld)(),
         }, [o]), O = s.useCallback(e => e === b, [b]), R = s.useCallback(e => e, []), L = s.useCallback(() => {
             o?.(null)
         }, [o]), P = s.useRef(null);
-        return (0, g.A)(P, A._F.GUILD_TAG), (0, i.jsxs)(m.A, {
+        return (0, g.A)(P, h._F.GUILD_TAG), (0, i.jsxs)(m.A, {
             title: p.intl.string(p.t.Pdd1nd),
             titleId: f,
             ref: P,

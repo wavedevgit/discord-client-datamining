@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(869038),
     _ = n(786144),
     x = n(587895),
-    h = n(235986),
-    A = n(769015),
+    A = n(235986),
+    h = n(769015),
     p = n(75825),
     T = n(871123),
     f = n(366523),
@@ -75,8 +75,8 @@ class P extends s.PureComponent {
         } = this.props, {
             copyMode: n
         } = this.state;
-        return (0, i.jsxs)(h.A, {
-            direction: h.A.Direction.VERTICAL,
+        return (0, i.jsxs)(A.A, {
+            direction: A.A.Direction.VERTICAL,
             className: L.Gj,
             children: [(0, i.jsx)(m.e2O, {
                 className: L.ph,
@@ -151,9 +151,9 @@ class D extends s.PureComponent {
             giftStyle: t,
             className: L.ez,
             shouldAnimate: this.state.isHovered
-        }) : (0, i.jsx)(A.A, {
+        }) : (0, i.jsx)(h.A, {
             game: n,
-            size: A.M.MEDIUM,
+            size: h.M.MEDIUM,
             skuId: e.id
         })
     }
@@ -165,9 +165,9 @@ class D extends s.PureComponent {
         } = this.props;
         return (0, T.bF)(e) ? (0, i.jsxs)("div", {
             className: r()(L.Oc, L.ic),
-            children: [(0, i.jsx)(A.A, {
+            children: [(0, i.jsx)(h.A, {
                 game: n,
-                size: A.M.XSMALL,
+                size: h.M.XSMALL,
                 skuId: e.id,
                 className: L._u
             }), R.intl.format(R.t["6plpZi"], {
@@ -199,9 +199,9 @@ class D extends s.PureComponent {
         })
     }
     renderGenerateGiftCodeRow() {
-        return (0, i.jsxs)(h.A, {
-            justify: h.A.Justify.BETWEEN,
-            align: h.A.Align.CENTER,
+        return (0, i.jsxs)(A.A, {
+            justify: A.A.Justify.BETWEEN,
+            align: A.A.Align.CENTER,
             className: L.pe,
             children: [(0, i.jsx)(m.Text, {
                 variant: "text-md/normal",
@@ -243,8 +243,8 @@ class D extends s.PureComponent {
                     splashArtURL: t.getSplashURL(512),
                     children: (0, i.jsxs)("div", {
                         className: L.MY,
-                        children: [(0, i.jsxs)(h.A, {
-                            align: h.A.Align.CENTER,
+                        children: [(0, i.jsxs)(A.A, {
+                            align: A.A.Align.CENTER,
                             children: [this.renderGiftIcon(), (0, i.jsxs)("div", {
                                 className: L.TK,
                                 children: [this.renderTitle(), this.renderSubtitle()]

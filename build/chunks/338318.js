@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(793574),
     _ = n(688810),
     x = n(512213),
-    h = n(429619),
-    A = n(451909),
+    A = n(429619),
+    h = n(451909),
     p = n(202639),
     T = n(400669),
     f = n(407217),
@@ -62,7 +62,7 @@ function U() {
             pendingValue: U,
             userValue: e?.collectibles?.nameplate
         }),
-        H = (0, I.A)() && null != n ? A.Ay.parse(void 0, n).content : n,
+        H = (0, I.A)() && null != n ? h.Ay.parse(void 0, n).content : n,
         z = L.Ay.canUsePremiumProfileCustomization(e),
         Y = (0, j.St)("edit-profile-upsell"),
         {
@@ -72,7 +72,7 @@ function U() {
     let [K, W] = s.useState(!1), Z = !z, q = s.useRef(null);
     return t ? (0, i.jsx)(m.A, {}) : (0, i.jsxs)(_.f5, {
         value: X,
-        children: [(0, i.jsx)(h.A, {}), (0, i.jsx)(E.A, {
+        children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(E.A, {
             profilePreview: (0, i.jsx)(b.A, {
                 user: e,
                 canUsePremiumCustomization: z,

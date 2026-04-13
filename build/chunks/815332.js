@@ -23,7 +23,7 @@ function g(e) {
     } = (0, o.Ay)(a.A.PENDING_PLAN_CHANGE_NOTICE), {
         resetRenewalMutation: _,
         submitting: x,
-        error: h
+        error: A
     } = (e => {
         let [t, n] = s.useState(!1), [i, l] = s.useState(null);
         return {
@@ -40,7 +40,7 @@ function g(e) {
             submitting: t,
             error: i
         }
-    })(g), A = (0, c.cY)(t, {
+    })(g), h = (0, c.cY)(t, {
         includeSoftDeleted: !0
     }), {
         currentListing: p,
@@ -53,10 +53,10 @@ function g(e) {
         let e = n.items[0].planId,
             t = n.renewalMutations.items[0].planId;
         return {
-            currentListing: A.find(t => t.subscription_plans[0].id === e),
-            nextListing: A.find(e => e.subscription_plans[0].id === t)
+            currentListing: h.find(t => t.subscription_plans[0].id === e),
+            nextListing: h.find(e => e.subscription_plans[0].id === t)
         }
-    }, [n, A]);
+    }, [n, h]);
     if (null == n || null == p || null == T) return null;
     let f = r()(n.currentPeriodEnd).format("MMM DD, YYYY");
     return (0, i.jsx)(u.A, {
@@ -65,7 +65,7 @@ function g(e) {
             nextListing: T.name,
             changeDate: f
         }),
-        error: h?.message,
+        error: A?.message,
         onClick: () => _(n),
         submitting: x,
         ctaMessage: m.intl.string(m.t.De4wI8),

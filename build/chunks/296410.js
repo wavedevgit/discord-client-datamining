@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(833551),
     _ = n(663677),
     x = n(847521),
-    h = n(9302),
-    A = n(505136),
+    A = n(9302),
+    h = n(505136),
     p = n(370365),
     T = n(686533),
     f = n(985018),
@@ -26,7 +26,7 @@ function E() {
     let [e, t] = s.useState(!1), {
         legacyEnabled: n,
         oopEnabled: E
-    } = (0, l.cf)([g.default], () => g.default.getGlobalEnabledStatus()), b = (0, l.yK)([c.Ay], () => c.Ay.getGamesSeen(!0)).filter(e => !(0, x.n1)(e)), C = (0, d.A)(b.map(e => e.id)), v = !(0, h.supportsLegacy)(), N = e => {
+    } = (0, l.cf)([g.default], () => g.default.getGlobalEnabledStatus()), b = (0, l.yK)([c.Ay], () => c.Ay.getGamesSeen(!0)).filter(e => !(0, x.n1)(e)), C = (0, d.A)(b.map(e => e.id)), v = !(0, A.supportsLegacy)(), N = e => {
         o.A.setEnabled(e, E);
         let t = c.Ay.getCurrentGameForAnalytics()?.id ?? null;
         (0, u.Q3)(e, u.OverlayToggledClientSettingType.LEGACY, t), !e && n && (0, _.L)(u.OverlayToggledClientSettingType.LEGACY, t)
@@ -35,7 +35,7 @@ function E() {
             enabledOOP: i
         } = n;
         a.Ay.toggleOverlay(t, e, i)
-    }, j = s.useMemo(() => (0, h.supportsLegacy)() ? v ? f.intl.string(f.t.r9jEVw) : f.intl.string(f.t.OzInYk) : f.intl.string(f.t["8Ox6/E"]), [v]);
+    }, j = s.useMemo(() => (0, A.supportsLegacy)() ? v ? f.intl.string(f.t.r9jEVw) : f.intl.string(f.t.OzInYk) : f.intl.string(f.t["8Ox6/E"]), [v]);
     return 0 === b.length ? (0, i.jsx)(T.A, {
         title: f.intl.string(f.t.BfFpW1),
         description: j,
@@ -50,7 +50,7 @@ function E() {
                 className: S.Kz
             })]
         })
-    }) : (0, i.jsxs)(A.A, {
+    }) : (0, i.jsxs)(h.A, {
         onExpand: t,
         className: e ? S.tx : void 0,
         title: f.intl.string(f.t.BfFpW1),

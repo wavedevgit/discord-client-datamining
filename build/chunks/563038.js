@@ -35,22 +35,23 @@ var l = t(627968),
 
 function R(e) {
     let {
-        transitionState: i
+        transitionState: i,
+        inviteCode: t
     } = e, {
-        analyticsLocations: t
+        analyticsLocations: s
     } = (0, h.Ay)(_.A.INVITE_MODAL);
     return (0, l.jsx)(h.f5, {
-        value: t,
+        value: s,
         children: (0, l.jsx)(a.Modal, {
             "aria-label": S.intl.string(S.t.u9zxnX),
             title: S.intl.string(S.t.u9zxnX),
             subtitle: S.intl.string(S.t.FWkU6P),
             transitionState: i,
-            onClose: () => (D.A.close(), Promise.resolve()),
+            onClose: () => (D.A.close(t), Promise.resolve()),
             size: "sm",
             actions: [{
                 text: S.intl.string(S.t.wcqOoF),
-                onClick: D.A.close
+                onClick: () => D.A.close(t)
             }]
         })
     })
@@ -108,7 +109,8 @@ function G(e) {
             })
         }, [Q, $, P?.code, P?.guild?.id]), null == P || null == k) return null;
     if (P.state === L.elq.EXPIRED || P.state === L.elq.BANNED || P.state === L.elq.ERROR) return (0, l.jsx)(R, {
-        transitionState: O
+        transitionState: O,
+        inviteCode: P.code
     });
     if (null == P.channel) return null;
 
@@ -120,7 +122,7 @@ function G(e) {
         I.default.track(L.HAw.INVITE_ACCEPT_DISMISSED, {
             invite_code: P?.code,
             guild_id: P?.guild?.id
-        }), D.A.close()
+        }), D.A.close(P?.code)
     }
     let {
         guild: ei,

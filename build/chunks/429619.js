@@ -1,6 +1,6 @@
 /** chunk id: 429619 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -15,13 +15,13 @@ var i = n(627968),
     g = n(788868),
     _ = n(985018),
     x = n(378926);
-let h = () => {
+let A = () => {
     let {
         analyticsLocations: e
     } = (0, a.Ay)(r.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), t = s.useRef(null), {
         asset: n,
-        popoutAsset: h,
-        title: A,
+        popoutAsset: A,
+        title: h,
         body: p,
         version: T,
         revertTextColor: f
@@ -45,7 +45,7 @@ let h = () => {
             "aria-hidden": !0,
             role: "presentation",
             children: (0, i.jsx)("img", {
-                src: h,
+                src: A,
                 className: x.Qw,
                 alt: ""
             })
@@ -55,7 +55,7 @@ let h = () => {
                 variant: "heading-lg/extrabold",
                 color: f ? "text-overlay-dark" : "currentColor",
                 className: x.DD,
-                children: A
+                children: h
             }), (0, i.jsx)(l.Text, {
                 variant: "text-sm/normal",
                 color: f ? "text-overlay-dark" : "currentColor",

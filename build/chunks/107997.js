@@ -23,10 +23,10 @@ function x() {
             canStartAuthorization: u
         } = (0, a.RD)(n),
         x = m.intl.string(g.default["1S6oAo"]),
-        h = r.A.useConfig({
+        A = r.A.useConfig({
             location: "RiotDeprecationInlineNotice"
         }).enabled;
-    return i.useMemo(() => h && null != t && u && n?.connectionEntrypointUrl != null ? {
+    return i.useMemo(() => A && null != t && u && n?.connectionEntrypointUrl != null ? {
         type: d.lT.INLINE_NOTICE,
         noticeType: "info",
         useText: () => m.intl.format(g.default.DeOsIl, {
@@ -34,5 +34,5 @@ function x() {
             applicationName: x,
             connectionEntrypointUrl: n.connectionEntrypointUrl
         })
-    } : null, [t, x, n, u, h])
+    } : null, [t, x, n, u, A])
 }

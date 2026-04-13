@@ -19,13 +19,13 @@ let g = e => {
         isLast: l,
         className: g
     } = e, [_, x] = s.useState(!1), {
-        analyticsLocations: h
-    } = (0, c.Ay)(), A = s.useCallback(() => {
+        analyticsLocations: A
+    } = (0, c.Ay)(), h = s.useCallback(() => {
         (0, u.openUserProfileModal)({
             userId: t,
-            sourceAnalyticsLocations: h
+            sourceAnalyticsLocations: A
         })
-    }, [t, h]), p = () => {
+    }, [t, A]), p = () => {
         x(!0)
     }, T = () => {
         x(!1)
@@ -47,7 +47,7 @@ let g = e => {
                 }),
                 onMouseEnter: p,
                 onMouseLeave: T,
-                onClick: A,
+                onClick: h,
                 ...e,
                 children: n(_)
             })

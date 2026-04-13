@@ -21,14 +21,14 @@ function o(e) {
         usePersistentBadge: g,
         hasIcon: _,
         getDismissibleBadges: x
-    } = t, h = d(), A = c?.(), p = n(), T = u?.() ?? !1, f = m?.(), S = g?.(), E = x?.(), b = (0, l.A)({
+    } = t, A = d(), h = c?.(), p = n(), T = u?.() ?? !1, f = m?.(), S = g?.(), E = x?.(), b = (0, l.A)({
         persistentBadge: S,
         dismissibleBadges: E
     }), C = (0, r.q)(t);
     return (0, i.jsxs)(a.L, {
         children: [(0, i.jsx)(s.dOG, {
-            label: h,
-            description: A,
+            label: A,
+            description: h,
             badge: b,
             checked: p,
             hasIcon: _,

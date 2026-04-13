@@ -16,8 +16,8 @@ var i = n(627968),
     g = n(726249),
     _ = n(915089),
     x = n(742589),
-    h = n(544028),
-    A = n(253932),
+    A = n(544028),
+    h = n(253932),
     p = n(178241),
     T = n(899847),
     f = n(695515),
@@ -172,7 +172,7 @@ function V() {
 function B() {
     let {
         analyticsLocations: e
-    } = (0, m.Ay)(u.A.FAMILY_CENTER), t = (0, S.A)(), n = (0, o.bG)([f.A], () => f.A.getIsInitialized()), l = (0, o.bG)([h.A], () => h.A.theme), a = (0, _.GV)(), {
+    } = (0, m.Ay)(u.A.FAMILY_CENTER), t = (0, S.A)(), n = (0, o.bG)([f.A], () => f.A.getIsInitialized()), l = (0, o.bG)([A.A], () => A.A.theme), a = (0, _.GV)(), {
         isLoading: x,
         selectedTab: p,
         handleTabChange: E,
@@ -184,8 +184,8 @@ function B() {
         }
     });
     if (s.useEffect(() => {
-            let e = A.dm.getSetting();
-            n && t && void 0 === e && A.dm.updateSetting(!0)
+            let e = h.dm.getSetting();
+            n && t && void 0 === e && h.dm.updateSetting(!0)
         }, [n, t]), b) return null;
     let C = p !== O.u9.SETTINGS ? p : O.u9.ACTIVITY,
         v = M[C];

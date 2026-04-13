@@ -18,9 +18,9 @@ var i = n(627968),
     x = n(327325),
     h = n(935206),
     _ = n(985018),
-    A = n(986424);
+    p = n(986424);
 
-function p(e) {
+function A(e) {
     let {
         guildId: t,
         emojiId: n,
@@ -31,39 +31,39 @@ function p(e) {
         index: u,
         dndName: g,
         onEdit: x,
-        onMove: p,
+        onMove: A,
         disabled: f = !1
     } = e, j = s.useRef(null), N = s.useRef(null), {
         drag: E,
         dragPreview: T,
         drop: C,
         isDragging: I
-    } = (0, h.A)(j, c, u, p);
+    } = (0, h.A)(j, c, u, A);
     return E(N), T(C(j)), (0, i.jsxs)("div", {
         ref: j,
-        className: r()(A.Nr, {
-            [A.wy]: I,
-            [A.r9]: f
+        className: r()(p.Nr, {
+            [p.wy]: I,
+            [p.r9]: f
         }),
         children: [(0, i.jsxs)("div", {
-            className: A.kV,
+            className: p.kV,
             children: [(0, i.jsx)(m.A, {
                 guildId: t,
                 emojiId: n,
                 emojiName: l,
-                className: A.Zg
+                className: p.Zg
             }), !f && (0, i.jsx)("div", {
                 ref: N,
-                className: A.$p,
+                className: p.$p,
                 "data-dnd-name": g,
                 children: (0, i.jsx)(o.WP0, {
                     size: "xs",
                     color: "currentColor",
-                    className: A.co
+                    className: p.co
                 })
             })]
         }), (0, i.jsxs)("div", {
-            className: A.O,
+            className: p.O,
             children: [(0, i.jsx)(o.Text, {
                 color: "text-strong",
                 variant: "text-md/semibold",
@@ -74,16 +74,16 @@ function p(e) {
                 children: d
             })]
         }), (0, i.jsx)("div", {
-            className: A.eB,
+            className: p.eB,
             children: !f && (0, i.jsx)(o.DUT, {
-                className: A.xQ,
+                className: p.xQ,
                 onClick: x,
                 "aria-label": _.intl.string(_.t.Eoo8h6),
                 "aria-disabled": f,
                 children: (0, i.jsx)(o.R2l, {
                     size: "xs",
                     color: "currentColor",
-                    className: A.a2
+                    className: p.a2
                 })
             })
         })]
@@ -102,13 +102,13 @@ function f(e) {
         isDragging: e.getItemType() === m
     })), _ = (0, u.gN)();
     return 0 === t.length ? null : (0, i.jsx)("div", {
-        className: r()(A.kL, {
-            [A.Id]: h
+        className: r()(p.kL, {
+            [p.Id]: h
         }),
         children: t.map((e, t) => (0, i.jsxs)(s.Fragment, {
             children: [t > 0 ? (0, i.jsx)("div", {
-                className: A.yF
-            }) : null, (0, i.jsx)(p, {
+                className: p.yF
+            }) : null, (0, i.jsx)(A, {
                 guildId: o,
                 emojiId: e.emoji_id,
                 emojiName: e.emoji_name,
@@ -132,22 +132,22 @@ function j(e) {
         disabled: s = !1
     } = e;
     return (0, i.jsx)(o.DUT, {
-        className: A.kL,
+        className: p.kL,
         onClick: s ? void 0 : t,
         "aria-disabled": s,
         children: (0, i.jsxs)("div", {
-            className: r()(A.Nr, A.xB, {
-                [A.r9]: s
+            className: r()(p.Nr, p.xB, {
+                [p.r9]: s
             }),
             children: [(0, i.jsx)("div", {
-                className: A.kV,
+                className: p.kV,
                 children: (0, i.jsx)(o.U1e, {
                     size: "xs",
                     color: "currentColor",
-                    className: A.Ak
+                    className: p.Ak
                 })
             }), (0, i.jsx)("div", {
-                className: A.O,
+                className: p.O,
                 children: (0, i.jsx)(o.Text, {
                     color: "text-strong",
                     variant: "text-md/normal",

@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(736653),
     _ = n(46054),
     x = n(807055),
-    h = n(264779),
-    A = n(35587),
+    A = n(264779),
+    h = n(35587),
     p = n(982311),
     T = n(725807),
     f = n(212168),
@@ -42,10 +42,10 @@ function D(e) {
             disabled: o
         } = e,
         [d, u] = s.useState(!1),
-        [m, A] = s.useState(!1),
+        [m, h] = s.useState(!1),
         T = () => u(e => !e),
         f = (0, g.Ay)(),
-        S = (0, h.WD)(n.id, f),
+        S = (0, A.WD)(n.id, f),
         E = null != l,
         b = (0, x.A)(n, E);
     E && d ? t = L.intl.format(L.t.pkxVx6, {
@@ -62,7 +62,7 @@ function D(e) {
         onClickDetails: T
     }));
     let C = E ? L.intl.string(L.t["2cHUti"]) : L.intl.string(L.t.O13yhz),
-        v = s.useCallback(() => A(!1), []),
+        v = s.useCallback(() => h(!1), []),
         {
             outboundTitle: N,
             outboundTermsAndConditions: I
@@ -94,7 +94,7 @@ function D(e) {
                     })]
                 }), !o && (0, i.jsx)(c.Button, {
                     text: C,
-                    onClick: () => A(!0),
+                    onClick: () => h(!0),
                     disabled: o,
                     size: "sm"
                 })]
@@ -136,13 +136,13 @@ let G = function() {
         })
     }, []);
     let {
-        promotionsLoaded: h,
+        promotionsLoaded: A,
         activeOutboundPromotions: p,
         claimedEndedOutboundPromotions: G,
         claimedOutboundPromotionCodeMap: M,
         addClaimedOutboundPromotionCode: k
-    } = (0, A.y7)(), U = p.length + G.length > 0, w = a && U;
-    return _ && h ? (0, i.jsxs)(i.Fragment, {
+    } = (0, h.y7)(), U = p.length + G.length > 0, w = a && U;
+    return _ && A ? (0, i.jsxs)(i.Fragment, {
         children: [function() {
             let e = n.find(e => e.giftCodeBatchId === R.FB && !e.consumed),
                 t = n.filter(e => e.giftCodeBatchId === R.Bu && !e.consumed) ?? [],

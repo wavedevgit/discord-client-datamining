@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(652215),
     _ = n(985018),
     x = n(304119);
-let h = (0, d.Ld)(),
-    A = (0, u.createChannelRecord)({
+let A = (0, d.Ld)(),
+    h = (0, u.createChannelRecord)({
         id: "1",
         type: g.rbe.DM
     }),
@@ -42,13 +42,13 @@ function T(e) {
         void 0 !== u || E === f || I.current || (b(f), v((0, a.x7)(f)))
     }, [u, f, E]), (0, i.jsxs)(m.A, {
         title: t,
-        titleId: h,
+        titleId: A,
         description: _.intl.string(_.t.Bbw6Ac),
         errors: n,
         disabled: S,
         children: [(0, i.jsx)(o.Ay, {
             "aria-describedby": p,
-            "aria-labelledby": h,
+            "aria-labelledby": A,
             className: x.i,
             innerClassName: x.Z,
             maxCharacterCount: g.NA2,
@@ -56,7 +56,7 @@ function T(e) {
                 t !== E && (b(t), v(n), d(t))
             },
             placeholder: T,
-            channel: A,
+            channel: h,
             textValue: E,
             richValue: C,
             emojiPickerCloseOnModalOuterClick: !0,

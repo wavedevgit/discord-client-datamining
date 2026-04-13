@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(46373),
     _ = n(419954),
     x = n(933297),
-    h = n(351906),
-    A = n(532624),
+    A = n(351906),
+    h = n(532624),
     p = n(242286),
     T = n(256415),
     f = n(723702),
@@ -83,7 +83,7 @@ function G() {
 }
 
 function M() {
-    let e = (0, a.bG)([h.A], () => h.A.enabled),
+    let e = (0, a.bG)([A.A], () => A.A.enabled),
         t = (0, u.Mn)("OverlayStreamerModeNotice");
     return e && t ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(r.wx6, {
@@ -101,8 +101,8 @@ function M() {
 }
 let k = (0, _.t_)(S.X.OVERLAY_PANEL, {
         initialize: function() {
-            return (0, v.Q)(), A.Ay.addChangeListener(v.Q), m.A.addChangeListener(v.Q), T.default.addChangeListener(v.Q), p.default.addChangeListener(v.Q), f.isPlatformEmbedded && (0, c.a2)(), () => {
-                A.Ay.removeChangeListener(v.Q), m.A.removeChangeListener(v.Q), T.default.removeChangeListener(v.Q), p.default.removeChangeListener(v.Q), f.isPlatformEmbedded && (0, c.e0)()
+            return (0, v.Q)(), h.Ay.addChangeListener(v.Q), m.A.addChangeListener(v.Q), T.default.addChangeListener(v.Q), p.default.addChangeListener(v.Q), f.isPlatformEmbedded && (0, c.a2)(), () => {
+                h.Ay.removeChangeListener(v.Q), m.A.removeChangeListener(v.Q), T.default.removeChangeListener(v.Q), p.default.removeChangeListener(v.Q), f.isPlatformEmbedded && (0, c.e0)()
             }
         },
         useTitle: () => R.intl.string(R.t["9cb1Uz"]),

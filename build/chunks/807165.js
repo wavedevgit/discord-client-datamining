@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(997509),
     h = n(555337),
     _ = n(636042),
-    A = n(396816),
-    p = n(856644),
+    p = n(396816),
+    A = n(856644),
     f = n(206774),
     j = n(763582),
     N = n(966851),
@@ -32,15 +32,15 @@ function C(e) {
 let I = () => {
     let {
         guild: e
-    } = (0, a.cf)([h.A], () => h.A.getProps()), t = (0, a.bG)([A.A], () => A.A.formState), n = (0, a.bG)([A.A], () => A.A.errorMessage);
+    } = (0, a.cf)([h.A], () => h.A.getProps()), t = (0, a.bG)([p.A], () => p.A.formState), n = (0, a.bG)([p.A], () => p.A.errorMessage);
     return (0, i.jsx)(o.A, {
         errorMessage: n,
         onSave: () => {
             if (null == e) return;
             let {
                 id: t
-            } = e, n = A.A.editedRoleIds.map(e => A.A.getRole(e)).filter(g.Vq), i = A.A.getSortDeltas(), s = null, l = null;
-            A.A.hasRoleConfigurationChanges && (l = A.A.editedRoleIdsForConfigurations, s = A.A.getEditedRoleConnectionConfigurationsMap()), (0, _.JY)(t, n, i, l, s)
+            } = e, n = p.A.editedRoleIds.map(e => p.A.getRole(e)).filter(g.Vq), i = p.A.getSortDeltas(), s = null, l = null;
+            p.A.hasRoleConfigurationChanges && (l = p.A.editedRoleIdsForConfigurations, s = p.A.getEditedRoleConnectionConfigurationsMap()), (0, _.JY)(t, n, i, l, s)
         },
         submitting: t === T.XlH.SUBMITTING,
         onReset: _.Ts
@@ -53,9 +53,9 @@ function b(e) {
     } = e, {
         guild: n,
         roles: l
-    } = (0, a.cf)([A.A], () => ({
-        guild: A.A.guild,
-        roles: A.A.roles
+    } = (0, a.cf)([p.A], () => ({
+        guild: p.A.guild,
+        roles: p.A.roles
     }), []);
     r()(null != n, "Guild cannot be null here");
     let o = s.useMemo(() => l.find(e => (0, u.Oy)(e)), [l]);
@@ -67,7 +67,7 @@ function b(e) {
         T(_ || g.length > 0)
     }, [_, g.length]), (0, c.Ay)(() => {
         let e = m.A.getMemberCount(n.id);
-        null != e && e <= p.gz && d.A.requestMembers(n.id, "", 0, !1)
+        null != e && e <= A.gz && d.A.requestMembers(n.id, "", 0, !1)
     });
     let [I, b] = s.useState(E.T$.DISPLAY);
     return (s.useEffect(() => {

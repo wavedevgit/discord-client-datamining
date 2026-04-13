@@ -19,12 +19,12 @@ function x(e) {
     let {
         guildId: t,
         triggerType: n
-    } = e, x = s.useMemo(() => () => (0, o._I)(t, n), [t, n]), [h] = s.useState(x), [_, A] = s.useState(!1), {
-        editingRule: p,
+    } = e, x = s.useMemo(() => () => (0, o._I)(t, n), [t, n]), [h] = s.useState(x), [_, p] = s.useState(!1), {
+        editingRule: A,
         createNewEditingRule: f
     } = (0, c.U)(), {
         getDefaultRuleName: j
-    } = d.i$[n], N = !(0, o.wC)(p) && p?.triggerType === n, [E, T] = s.useState(N ? p : h), C = (0, a.zhh)({
+    } = d.i$[n], N = !(0, o.wC)(A) && A?.triggerType === n, [E, T] = s.useState(N ? A : h), C = (0, a.zhh)({
         opacity: +!N,
         pointerEvents: N ? "none" : "all",
         config: {
@@ -39,13 +39,13 @@ function x(e) {
             clamp: !0
         },
         onStart: () => {
-            T(N ? p : h)
+            T(N ? A : h)
         },
         onRest: () => {
-            T(N ? p : h), A(N)
+            T(N ? A : h), p(N)
         }
     });
-    return null == p || N ? (0, i.jsxs)("div", {
+    return null == A || N ? (0, i.jsxs)("div", {
         className: g.$F,
         style: {
             height: N ? "auto" : "60px"

@@ -1,7 +1,7 @@
 /** chunk id: 474215 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -110,9 +110,9 @@ function _(e) {
         })
     })
 }
-let A = [0, 1, 2, 3, 4];
+let p = [0, 1, 2, 3, 4];
 
-function p(e) {
+function A(e) {
     let {
         profile: t,
         canManageGuild: n
@@ -130,7 +130,7 @@ function p(e) {
         description: m.intl.string(m.t.l7Ig5Z),
         children: (0, i.jsx)("div", {
             className: g.Vg,
-            children: A.map(e => (0, i.jsx)(_, {
+            children: p.map(e => (0, i.jsx)(_, {
                 guildId: t.id,
                 trait: r[e] ?? x,
                 index: e,

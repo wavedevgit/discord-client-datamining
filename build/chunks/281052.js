@@ -16,8 +16,8 @@ var s = n(284009),
     g = n(200790),
     _ = n(230084),
     x = n(180020),
-    h = n(431982),
-    A = n(730588),
+    A = n(431982),
+    h = n(730588),
     p = n(164599),
     T = n(63675),
     f = n(546849),
@@ -118,7 +118,7 @@ function M() {
             }, "decoration"), !t && (0, i.jsx)(x.A, {
                 user: e,
                 guildId: n.id
-            }), (0, i.jsx)(h.A, {
+            }), (0, i.jsx)(A.A, {
                 user: e,
                 guild: n,
                 titleIcon: (0, i.jsx)(a.m, {
@@ -142,7 +142,7 @@ function M() {
                 }),
                 user: e,
                 guild: n
-            }, "effect"), (0, i.jsx)(A.A, {
+            }, "effect"), (0, i.jsx)(h.A, {
                 showRemoveBannerButton: W,
                 errors: B?.banner,
                 onBannerChange: e => J(e, Y?.banner, e => (0, E.p)({

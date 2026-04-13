@@ -4,11 +4,11 @@ t.d(n, {
 });
 var i = t(627968),
     a = t(64700),
-    r = t(311907),
-    l = t(397927),
+    l = t(311907),
+    r = t(397927),
     o = t(351906),
-    d = t(183555),
-    s = t(382120),
+    s = t(183555),
+    d = t(382120),
     c = t(128490),
     _ = t(539548),
     u = t(412775),
@@ -24,35 +24,35 @@ function I(e) {
         section: n,
         user: t,
         currentUser: a,
-        displayProfile: r,
-        guildId: l,
+        displayProfile: l,
+        guildId: r,
         channelId: o,
-        onClose: d
+        onClose: s
     } = e;
     return n === g.RP.ACTIVITY ? (0, i.jsx)(_.A, {
         user: t,
         currentUser: a,
-        guildId: l,
-        onClose: d
+        guildId: r,
+        onClose: s
     }) : n === g.RP.MUTUAL_FRIENDS ? (0, i.jsx)(p.A, {
         user: t,
-        guildId: l,
+        guildId: r,
         channelId: o,
-        onClose: d
+        onClose: s
     }) : n === g.RP.MUTUAL_GUILDS ? (0, i.jsx)(A.A, {
         user: t,
-        onClose: d
-    }) : n === g.RP.BOT_DATA_ACCESS ? (0, i.jsx)(s.A, {
+        onClose: s
+    }) : n === g.RP.BOT_DATA_ACCESS ? (0, i.jsx)(d.A, {
         user: t
     }) : n === g.RP.BOT_INFO ? (0, i.jsx)(c.A, {
         user: t,
-        displayProfile: r,
-        guildId: l,
-        onClose: d
+        displayProfile: l,
+        guildId: r,
+        onClose: s
     }) : (0, i.jsx)(u.A, {
         user: t,
-        displayProfile: r,
-        onClose: d
+        displayProfile: l,
+        onClose: s
     })
 }
 
@@ -60,14 +60,14 @@ function x(e) {
     let {
         user: n,
         currentUser: t,
-        displayProfile: s,
+        displayProfile: d,
         guildId: c,
         items: _,
         initialSection: u = g.RP.USER_INFO,
         onClose: p
     } = e, {
         trackUserProfileAction: A
-    } = (0, d.NJ)(), x = (0, r.bG)([o.A], () => o.A.hidePersonalInformation), [b, v] = a.useState(() => _.find(e => {
+    } = (0, s.NJ)(), x = (0, l.bG)([o.A], () => o.A.hidePersonalInformation), [b, v] = a.useState(() => _.find(e => {
         let {
             section: n
         } = e;
@@ -95,7 +95,7 @@ function x(e) {
         })
     }) : (0, i.jsxs)("div", {
         className: f.kL,
-        children: [(0, i.jsx)(l.VQ0, {
+        children: [(0, i.jsx)(r.VQ0, {
             className: f.$H,
             type: "top",
             selectedItem: b,
@@ -105,11 +105,11 @@ function x(e) {
                     section: n,
                     text: t
                 } = e;
-                return (0, i.jsx)(l.VQ0.Item, {
+                return (0, i.jsx)(r.VQ0.Item, {
                     className: f.YU,
                     id: n,
                     "aria-label": t,
-                    children: (0, i.jsx)(l.Text, {
+                    children: (0, i.jsx)(r.Text, {
                         variant: "text-sm/normal",
                         children: t
                     })
@@ -120,7 +120,7 @@ function x(e) {
             section: b,
             user: n,
             currentUser: t,
-            displayProfile: s,
+            displayProfile: d,
             guildId: c,
             onClose: p
         })]

@@ -54,16 +54,16 @@ let V = l.memo(function(e) {
             primaryCTAText: z,
             secondaryCTAIcon: Q,
             productNameClassName: q,
-            badgeClassName: X,
-            cardClassName: Y,
-            prioritizedCurrency: K,
+            badgeClassName: Y,
+            cardClassName: K,
+            prioritizedCurrency: X,
             aspectRatio: Z,
             hideStaticBundleBackgroundAsset: $
         } = e, {
             previewingVariantIndex: J,
             handleEntering: ee,
             handleLeaving: et
-        } = (0, S.f)(t), er = (0, R.gZ)() ?? K, {
+        } = (0, S.f)(t), er = (0, R.gZ)() ?? X, {
             enabled: en
         } = (0, C.P)("ProductCard"), el = (0, h.Mk)(), ei = el?.tab, es = (0, g.uM)(), ea = l.useMemo(() => (0, R.UU)(t, ei, es), [t, ei, es]), eu = (0, v.s7)(t), eo = l.useRef(null), {
             isHoveringOrFocusing: ed
@@ -85,7 +85,7 @@ let V = l.memo(function(e) {
                 ref: ep,
                 onClick: U ?? ex,
                 "aria-label": eu,
-                className: s()(Y, L.ty, {
+                className: s()(K, L.ty, {
                     [L.yo]: ed
                 }),
                 onFocus: () => W?.(t.skuId),
@@ -116,7 +116,7 @@ let V = l.memo(function(e) {
                         children: [(0, n.jsx)(f.A, {
                             skuId: t.skuId,
                             badgeOverride: B,
-                            className: X,
+                            className: Y,
                             prioritizedCurrency: er,
                             skipLimitedTimeCheck: w
                         }), !r && (0, n.jsx)(P.A, {
@@ -125,7 +125,9 @@ let V = l.memo(function(e) {
                         })]
                     }), ef && (0, n.jsxs)(n.Fragment, {
                         children: [(0, n.jsx)("div", {
-                            className: L.wY
+                            className: s()(L.wY, {
+                                [L.KY]: eh
+                            })
                         }), (0, n.jsxs)("div", {
                             className: L.xQ,
                             children: [ev && (0, n.jsxs)("div", {

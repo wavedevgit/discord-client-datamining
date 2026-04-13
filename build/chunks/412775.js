@@ -5,11 +5,11 @@ t.d(n, {
 var i = t(627968);
 t(64700);
 var a = t(311907),
-    r = t(397927),
-    l = t(821269),
+    l = t(397927),
+    r = t(821269),
     o = t(437774),
-    d = t(773669),
-    s = t(967198),
+    s = t(773669),
+    d = t(967198),
     c = t(351906),
     _ = t(183555),
     u = t(346713),
@@ -32,10 +32,10 @@ function y(e) {
         onClose: y
     } = e, {
         trackUserProfileAction: j
-    } = (0, _.NJ)(), T = (0, a.bG)([s.A], () => s.A.getGuildId()), S = (0, l.q)({
+    } = (0, _.NJ)(), T = (0, a.bG)([d.A], () => d.A.getGuildId()), S = (0, r.q)({
         userId: n.id
-    }), C = (0, a.bG)([c.A], () => c.A.hidePersonalInformation), N = (0, a.bG)([d.default], () => d.default.locale), R = (0, p.A)(n.id), L = (0, u.A)(n.id);
-    return (0, i.jsxs)(r.IpV, {
+    }), C = (0, a.bG)([c.A], () => c.A.hidePersonalInformation), N = (0, a.bG)([s.default], () => s.default.locale), R = (0, p.A)(n.id), P = (0, u.A)(n.id);
+    return (0, i.jsxs)(l.IpV, {
         fade: !0,
         className: E.XG,
         children: [t?.bio != null && t?.bio !== "" && !C && (0, i.jsx)(A.A, {
@@ -46,9 +46,9 @@ function y(e) {
             guildId: t.guildId
         }), n.isProvisional && (0, i.jsx)(f.A, {
             heading: v.intl.string(v.t.Iyka0U),
-            headingIcon: (0, i.jsx)(r.EpV, {
+            headingIcon: (0, i.jsx)(l.EpV, {
                 size: "xxs",
-                color: r.LU0.colors.TEXT_STRONG
+                color: l.LU0.colors.TEXT_STRONG
             }),
             headingColor: "text-default",
             children: (0, i.jsx)(o.T, {
@@ -75,9 +75,9 @@ function y(e) {
                 userId: n.id,
                 locale: N
             })
-        }), L.length > 0 && (0, i.jsx)(f.A, {
+        }), P.length > 0 && (0, i.jsx)(f.A, {
             heading: v.intl.string(v.t.PHjkRE),
-            children: L.map(e => (0, i.jsx)(g.Wc, {
+            children: P.map(e => (0, i.jsx)(g.Wc, {
                 className: E.MI,
                 applicationRoleConnection: e,
                 locale: N,

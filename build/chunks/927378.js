@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(104954),
     _ = n(975648),
     x = n(106148),
-    h = n(652215),
-    A = n(985018),
+    A = n(652215),
+    h = n(985018),
     p = n(850605);
 
 function T() {
@@ -31,42 +31,42 @@ function T() {
         [T, f] = s.useState(!1);
     if (null == e) return null;
     let S = (0, m.Oj)(t, e) || l,
-        E = null != t && r()().diff(r()(t.created_at), "days") < h.n83,
+        E = null != t && r()().diff(r()(t.created_at), "days") < A.n83,
         b = S && E,
         C = e.isStaff(),
         v = !e.verified;
     return (0, i.jsxs)(x.h, {
         children: [(0, i.jsx)(x._, {
-            header: A.intl.string(A.t.XAHCgJ),
-            description: A.intl.format(A.t.P3kNfr, {
-                helpdeskArticle: u.A.getArticleURL(h.MVz.GDPR_REQUEST_DATA)
+            header: h.intl.string(h.t.XAHCgJ),
+            description: h.intl.format(h.t.P3kNfr, {
+                helpdeskArticle: u.A.getArticleURL(A.MVz.GDPR_REQUEST_DATA)
             })
         }), b ? (0, i.jsx)(o.ZpM, {
             className: p.N,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-md/normal",
-                children: A.intl.format(A.t.RNDlV9, {
-                    date: r()(t.created_at).add(h.n83, "days").format("MMMM Do YYYY")
+                children: h.intl.format(h.t.RNDlV9, {
+                    date: r()(t.created_at).add(A.n83, "days").format("MMMM Do YYYY")
                 })
             })
         }) : C ? (0, i.jsx)(o.ZpM, {
             className: p.N,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-md/normal",
-                children: A.intl.string(A.t.ZPQLH2)
+                children: h.intl.string(h.t.ZPQLH2)
             })
         }) : (0, i.jsxs)(i.Fragment, {
             children: [v ? (0, i.jsx)(o.ZpM, {
                 className: p.N,
                 children: (0, i.jsx)(o.Text, {
                     variant: "text-md/normal",
-                    children: A.intl.string(A.t.c1f88z)
+                    children: h.intl.string(h.t.c1f88z)
                 })
             }) : null, (0, i.jsx)("div", {
                 className: p.x,
                 children: (0, i.jsx)(o.Button, {
                     variant: "primary",
-                    text: A.intl.string(A.t.dmBSKo),
+                    text: h.intl.string(h.t.dmBSKo),
                     disabled: S,
                     onClick: () => {
                         (e => {
@@ -86,16 +86,16 @@ function T() {
                             onConfirm: e => {
                                 f(!0), (0, g.$)(e).then(e => {
                                     null != e && null != e.body ? d.A.show({
-                                        title: A.intl.string(A.t.i2iul5),
-                                        body: A.intl.string(A.t["6Nmv4i"])
+                                        title: h.intl.string(h.t.i2iul5),
+                                        body: h.intl.string(h.t["6Nmv4i"])
                                     }) : d.A.show({
-                                        title: A.intl.string(A.t.OjbtDm),
-                                        body: A.intl.string(A.t["0F5Jyt"])
+                                        title: h.intl.string(h.t.OjbtDm),
+                                        body: h.intl.string(h.t["0F5Jyt"])
                                     })
                                 }, e => {
-                                    let t = e?.message || e?.body?.message || A.intl.string(A.t["0F5Jyt"]);
+                                    let t = e?.message || e?.body?.message || h.intl.string(h.t["0F5Jyt"]);
                                     d.A.show({
-                                        title: A.intl.string(A.t.OjbtDm),
+                                        title: h.intl.string(h.t.OjbtDm),
                                         body: t
                                     })
                                 }).finally(() => f(!1))

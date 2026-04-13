@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(138298),
     h = n(657331),
     _ = n(761640),
-    A = n(71393),
-    p = n(343969),
+    p = n(71393),
+    A = n(343969),
     f = n(266047),
     j = n(221950),
     N = n(735937),
@@ -37,7 +37,7 @@ var i = n(627968),
 function L(e) {
     let {
         guildId: t
-    } = e, n = (0, a.bG)([A.A], () => A.A.getGuild(t)), {
+    } = e, n = (0, a.bG)([p.A], () => p.A.getGuild(t)), {
         analyticsLocations: l
     } = (0, c.Ay)(d.A.GUILD_SETTINGS_MEMBERS_PAGE), L = (0, u.q)(t), D = (0, a.bG)([_.Ay], () => _.Ay.getGuildSidebarState(t), [t]), M = s.useCallback(() => {
         x.A.closeGuildSidebar(t)
@@ -49,7 +49,7 @@ function L(e) {
         })
     }, [l]), w = s.useRef(null), B = s.useCallback(() => {
         w.current?.resetSearchText()
-    }, []), F = (0, p.Ms)(t), H = (0, p.Wl)(t);
+    }, []), F = (0, A.Ms)(t), H = (0, A.Wl)(t);
     if (null == n) return null;
     let V = (0, C.ii)(H, F, U);
     return (0, i.jsxs)(c.f5, {

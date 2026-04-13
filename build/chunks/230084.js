@@ -1,6 +1,6 @@
 /** chunk id: 230084 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -19,13 +19,13 @@ let x = [{
     extensions: ["gif"]
 }];
 
-function h(e) {
+function A(e) {
     let {
         showRemoveAvatarButton: t,
         errors: n,
         onAvatarChange: l,
-        sectionTitle: h,
-        changeAvatarButtonText: A,
+        sectionTitle: A,
+        changeAvatarButtonText: h,
         guildId: p,
         className: T,
         disabled: f = !1,
@@ -45,7 +45,7 @@ function h(e) {
     }, [p, C, S]);
     return (0, i.jsx)(u.A, {
         className: T,
-        title: h,
+        title: A,
         errors: n,
         disabled: f,
         forcedDivider: E,
@@ -57,7 +57,7 @@ function h(e) {
                 }),
                 size: a.$n.Sizes.SMALL,
                 onClick: N,
-                children: A ?? g.intl.string(g.t["4OynCD"])
+                children: h ?? g.intl.string(g.t["4OynCD"])
             }), t && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: _.DT,

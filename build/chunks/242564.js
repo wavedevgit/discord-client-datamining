@@ -3,12 +3,12 @@
 n.d(t, {
     A3: () => N,
     Ay: () => I,
-    CU: () => p,
+    CU: () => A,
     HA: () => h,
     IE: () => j,
     b1: () => f,
     fh: () => E,
-    mP: () => A,
+    mP: () => p,
     vc: () => x
 });
 var i = n(627968),
@@ -58,7 +58,7 @@ function _() {
     })
 }
 
-function A(e) {
+function p(e) {
     let {
         cellClassName: t,
         key: n,
@@ -94,7 +94,7 @@ function A(e) {
     })
 }
 
-function p(e) {
+function A(e) {
     let {
         cellClassName: t,
         getAmount: n,
@@ -205,7 +205,7 @@ function I(e) {
         initialSortKey: d,
         initialSortDirection: c = u.tSW.ASCENDING,
         ...m
-    } = e, [x, h] = s.useState(d), [_, A] = s.useState(c);
+    } = e, [x, h] = s.useState(d), [_, p] = s.useState(c);
     return (0, i.jsx)("div", {
         className: r()(g.CZ, t),
         children: (0, i.jsx)(o.A, {
@@ -221,7 +221,7 @@ function I(e) {
             sortKey: x,
             sortDirection: _,
             onSort: (e, t) => {
-                h(e), A(t)
+                h(e), p(t)
             },
             ...m
         })

@@ -1,6 +1,6 @@
 /** chunk id: 976025 params = (module,exports,require) **/
 n.d(t, {
-    z: () => A
+    z: () => h
 });
 var i = n(934551),
     s = n(554146),
@@ -23,14 +23,14 @@ let g = [{
     x = (0, r.zZ)(o.X.CONNECTIONS_CONNECTED_ACCOUNTS_CATEGORY, {
         buildLayout: () => [c.W]
     }),
-    h = (0, r.t_)(o.X.CONNECTIONS_PANEL, {
+    A = (0, r.t_)(o.X.CONNECTIONS_PANEL, {
         useTitle: () => m.intl.string(m.t["3fe7U5"]),
         useObscuredNotice: l.L,
         buildLayout: () => [_, x]
     }),
-    A = (0, r.i4)(o.X.CONNECTIONS_SIDEBAR_ITEM, {
+    h = (0, r.i4)(o.X.CONNECTIONS_SIDEBAR_ITEM, {
         useTitle: () => m.intl.string(m.t["3fe7U5"]),
         icon: i.LinkIcon,
         getDismissibleBadges: () => g,
-        buildLayout: () => [h]
+        buildLayout: () => [A]
     })

@@ -22,8 +22,8 @@ function g() {
         isLoggingOverlayEvents: g,
         isLoggingAnalyticsEvents: _,
         isTracingRequests: x,
-        isForcedCanary: h,
-        isAxeEnabled: A,
+        isForcedCanary: A,
+        isAxeEnabled: h,
         preventPopoutClose: p,
         onlyShowPreviewAppCollections: T,
         disableAppCollectionsCache: f
@@ -63,10 +63,10 @@ function g() {
         }, "always-deliver"), (0, i.jsx)(l.sLh, {
             id: "forced-canary",
             label: "Forced Canary",
-            checked: h,
+            checked: A,
             action: () => {
                 (0, r.x)({
-                    canary: !h
+                    canary: !A
                 })
             }
         }, "forced-canary"), (0, i.jsx)(l.sLh, {
@@ -149,10 +149,10 @@ function g() {
         children: [(0, i.jsx)(l.sLh, {
             id: "accessibility-auditing",
             label: "Accessibility Auditing",
-            checked: A,
+            checked: h,
             action: () => {
                 (0, r.x)({
-                    axeEnabled: !A
+                    axeEnabled: !h
                 })
             }
         }, "accessibility-auditing"), (0, i.jsx)(l.sLh, {

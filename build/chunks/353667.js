@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(272053),
     _ = n(397274),
     x = n(641324),
-    h = n(46373),
-    A = n(32145);
+    A = n(46373),
+    h = n(32145);
 
 function p(e) {
     let {
@@ -42,7 +42,7 @@ function p(e) {
             element: e
         } = t;
         return (0, i.jsx)(d.FQk, {
-            className: A.lm,
+            className: h.lm,
             children: (0, i.jsx)(e, {})
         })
     }, [t, l]);
@@ -59,8 +59,8 @@ function T(e) {
         decoration: t
     } = e, n = t.component;
     return (0, i.jsx)("div", {
-        className: r()(A.oK, {
-            [A.qf]: t.sticky
+        className: r()(h.oK, {
+            [h.qf]: t.sticky
         }),
         "data-settings-panel-sticky-decoration": t.sticky || void 0,
         children: (0, i.jsx)(n, {})
@@ -76,19 +76,19 @@ function f(e) {
     return null != a ? (0, i.jsx)(a, {}) : (0, i.jsx)(p, {
         notice: t,
         children: (0, i.jsxs)(d.GtU, {
-            className: A.XG,
+            className: h.XG,
             ref: e => {
                 _.A.setPanelScrollerRef(e)
             },
             children: [(0, i.jsx)("div", {
-                className: A.nd,
+                className: h.nd,
                 ref: r,
                 children: (0, i.jsx)(d.xpW, {
                     containerRef: r,
                     children: n
                 })
             }), (0, i.jsx)("div", {
-                className: A.iS,
+                className: h.iS,
                 "data-panel-bottom": !0
             })]
         })
@@ -101,14 +101,14 @@ function S(e) {
         decoration: n
     } = e;
     return (0, i.jsxs)("div", {
-        className: A.LZ,
+        className: h.LZ,
         children: [null != n && (0, i.jsx)(T, {
             decoration: n
         }), t.map((e, n) => (0, i.jsxs)(s.Fragment, {
             children: [(0, i.jsx)(x.A, {
                 node: e
-            }), n !== t.length - 1 && (0, i.jsx)(h.A, {
-                className: A.yF
+            }), n !== t.length - 1 && (0, i.jsx)(A.A, {
+                className: h.yF
             })]
         }, e.key))]
     })
@@ -140,7 +140,7 @@ function E(e) {
         notice: l,
         useObscuredNotice: a,
         children: [(0, i.jsx)(d.VQ0, {
-            className: A.$H,
+            className: h.$H,
             selectedItem: o,
             onItemSelect: e => {
                 g.A.navigate(e, {

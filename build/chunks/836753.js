@@ -40,11 +40,11 @@ class A extends a.A {
                 o.default.track(u.HAw.INVITE_ACCEPT_DISMISSED, {
                     invite_code: e,
                     guild_id: t
-                }), d.A.close()
+                }), d.A.close(c.A.getProps().invite?.code ?? e)
             }
         })
     }
-    handleCloseModal() {
+    handleCloseModal(e) {
         (0, l.OoC)(h)
     }
 }

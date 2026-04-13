@@ -1,6 +1,6 @@
 /** chunk id: 15173 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => h
 });
 var i = n(627968),
     s = n(64700),
@@ -15,9 +15,9 @@ var i = n(627968),
     g = n(670492),
     _ = n(957565),
     x = n(985018),
-    h = n(819802);
+    A = n(819802);
 
-function A() {
+function h() {
     let e = (0, o.bG)([g.A], () => g.A.getBackupCodes()),
         t = s.useMemo(() => e.map(e => {
             let {
@@ -33,7 +33,7 @@ function A() {
         onClick: m.k7
     }) : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("ul", {
-            className: h.E5,
+            className: A.E5,
             children: e.map(e => (0, i.jsx)(f, {
                 code: e
             }, e.code))
@@ -90,7 +90,7 @@ function f(e) {
     });
     return _.p5 ? (0, i.jsx)(a.DUT, {
         tag: "li",
-        className: r()(h.aY, h.vk),
+        className: r()(A.aY, A.vk),
         innerRef: o,
         onKeyDown: e => {
             "c" === e.key && (e.metaKey || e.ctrlKey) && (e.preventDefault(), e.stopPropagation(), (0, _.C)(l), o?.current?.focus())
@@ -104,7 +104,7 @@ function f(e) {
         },
         children: c
     }) : (0, i.jsx)("li", {
-        className: h.aY,
+        className: A.aY,
         children: c
     })
 }

@@ -1,6 +1,6 @@
 /** chunk id: 510273 params = (module,exports,require) **/
 r.r(t), r.d(t, {
-    default: () => N
+    default: () => E
 });
 var s = r(627968),
     i = r(64700),
@@ -8,8 +8,8 @@ var s = r(627968),
     l = r(575593),
     n = r(334279),
     d = r(417597),
-    u = r(397927),
-    c = r(287809),
+    c = r(397927),
+    u = r(287809),
     o = r(512213),
     h = r(139136),
     m = r(846957),
@@ -18,14 +18,14 @@ var s = r(627968),
     p = r(158216),
     j = r(985018),
     x = r(980456),
-    y = r(743102),
-    v = r(241988);
+    v = r(743102),
+    y = r(241988);
 let _ = e => {
         let {
             product: t,
             itemConsumed: r,
             forCollectedModal: i
-        } = e, a = (0, d.bG)([c.default], () => c.default.getCurrentUser());
+        } = e, a = (0, d.bG)([u.default], () => u.default.getCurrentUser());
         if (null == a) return null;
         let [p] = t.items;
         if (t.type === l.R.PROFILE_EFFECT) return (0, s.jsx)("div", {
@@ -40,7 +40,7 @@ let _ = e => {
         if (t.type === l.R.AVATAR_DECORATION) return (0, s.jsx)(f.i, {
             item: p,
             user: a,
-            avatarSize: u._3J.SIZE_120,
+            avatarSize: c._3J.SIZE_120,
             isHighlighted: !0
         });
         if (t.type === l.R.NAMEPLATE) return (0, s.jsx)("div", {
@@ -58,20 +58,21 @@ let _ = e => {
                 product: t,
                 user: a,
                 isHighlighted: !0,
-                forCollectedModal: i
+                forCollectedModal: i,
+                staticPreviewClassName: x.Nq
             })
         });
         if (t.type === l.R.EXTERNAL_SKU) {
             if (Object.values(n.j).includes(t.skuId))
                 if (r) return (0, s.jsx)("img", {
-                    src: v,
+                    src: y,
                     alt: j.intl.string(j.t.t0xkSB),
                     style: {
                         width: "100%"
                     }
                 });
                 else return (0, s.jsx)("img", {
-                    src: y,
+                    src: v,
                     alt: j.intl.string(j.t.g5W1g8)
                 });
             return (0, s.jsx)(m.B, {
@@ -80,11 +81,11 @@ let _ = e => {
         }
         return null
     },
-    E = e => {
+    N = e => {
         let {
             reducedMotion: t,
             displayOptions: r
-        } = e, [l, n] = i.useState(!1), d = (0, u.zhh)({
+        } = e, [l, n] = i.useState(!1), d = (0, c.zhh)({
             from: {
                 transform: "translateX(100%)",
                 right: "-100%"
@@ -97,7 +98,7 @@ let _ = e => {
                 duration: 1550
             },
             onRest: () => setTimeout(() => n(!0), 100)
-        }), c = (0, u.zhh)({
+        }), u = (0, c.zhh)({
             from: {
                 transform: "translateX(100%)",
                 right: "-100%"
@@ -110,7 +111,7 @@ let _ = e => {
                 duration: 1550
             },
             reverse: l
-        }), o = (0, u.zhh)({
+        }), o = (0, c.zhh)({
             from: {
                 transform: "translateX(50%)",
                 right: "50%",
@@ -135,7 +136,7 @@ let _ = e => {
                 })
             }), (0, s.jsx)(a.animated.div, {
                 className: x.VH,
-                style: t ? o : c,
+                style: t ? o : u,
                 children: (0, s.jsx)("img", {
                     src: r.getSrc(),
                     style: r.style,
@@ -146,9 +147,9 @@ let _ = e => {
         })
     };
 
-function N(e) {
+function E(e) {
     let t = (0, p.K9)(e.product.categorySkuId);
-    return null != t ? (0, s.jsx)(E, {
+    return null != t ? (0, s.jsx)(N, {
         ...e,
         displayOptions: t
     }) : (0, s.jsx)(_, {

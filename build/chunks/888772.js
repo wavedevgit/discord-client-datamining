@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(426190),
     _ = n(438732),
     x = n(834981),
-    h = n(469696),
-    A = n(796497),
+    A = n(469696),
+    h = n(796497),
     p = n(148131),
     T = n(845197),
     f = n(442671),
@@ -121,7 +121,7 @@ function R() {
                 children: C.intl.format(b.default.yMnoDl, {
                     link: "https://support.discord.com/hc/articles/14155060633623"
                 })
-            }), e ? null : (0, i.jsx)(A.A, {})]
+            }), e ? null : (0, i.jsx)(h.A, {})]
         }), (0, i.jsx)("img", {
             className: N._u,
             src: j,
@@ -210,7 +210,7 @@ let P = () => {
                 children: l
             }), (0, i.jsx)("div", {
                 className: N.aP,
-                children: (0, i.jsx)(h.A, {
+                children: (0, i.jsx)(A.A, {
                     text: C.intl.string(b.default.C4ScLD)
                 })
             })]

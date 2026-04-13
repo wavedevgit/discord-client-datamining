@@ -76,7 +76,7 @@ function h(e) {
         placeholder: g,
         className: h,
         maxTags: _
-    } = e, A = s.useRef(null), p = s.useRef(null), f = s.useRef(null), j = (0, u.M)(t), {
+    } = e, p = s.useRef(null), A = s.useRef(null), f = s.useRef(null), j = (0, u.M)(t), {
         handlePasteEvent: N,
         handleInputChange: E,
         handleKeyDown: T,
@@ -89,8 +89,8 @@ function h(e) {
         handleInputBlurEvent: R
     } = (0, u.d)(j, {
         scrollerRef: f,
-        mainInputRef: A,
-        mainContainerRef: p
+        mainInputRef: p,
+        mainContainerRef: A
     }), {
         state: {
             value: O,
@@ -99,7 +99,7 @@ function h(e) {
             isSelecting: D
         }
     } = j, M = (0, o.A)(G), [k, U] = s.useState(!1), P = s.useCallback(() => {
-        U(!1), y(), A.current?.focus({
+        U(!1), y(), p.current?.focus({
             preventScroll: !0
         })
     }, [y]);
@@ -115,14 +115,14 @@ function h(e) {
         B = s.useCallback(e => t => {
             if (t) {
                 let t = L.includes(G[e]);
-                A.current?.focus(), t ? S(e) : (v(e), setImmediate(() => {
-                    A.current?.blur(), setTimeout(() => p.current?.focus(), 16)
+                p.current?.focus(), t ? S(e) : (v(e), setImmediate(() => {
+                    p.current?.blur(), setTimeout(() => A.current?.focus(), 16)
                 }))
             } else S(e, !0), U(!0)
         }, [v, S, L, G]);
     return (0, i.jsxs)("div", {
         className: r()(m.rs, h),
-        ref: p,
+        ref: A,
         tabIndex: 0,
         onKeyUp: C,
         children: [(0, i.jsxs)(x, {
@@ -142,7 +142,7 @@ function h(e) {
                 className: r()(m.tM, {
                     [m.kD]: k
                 }),
-                ref: A,
+                ref: p,
                 onChange: E,
                 onKeyDownCapture: T,
                 onPaste: N,

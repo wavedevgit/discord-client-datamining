@@ -19,8 +19,8 @@ var l = n(311907),
     x = n(946274),
     h = n(342298),
     _ = n(576705),
-    A = n(486020),
-    p = n(975571),
+    p = n(486020),
+    A = n(975571),
     f = n(997509),
     j = n(555337),
     N = n(458907),
@@ -198,7 +198,7 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                                         children: [b.intl.format(b.t["+ScrMf"], {
                                             discordURL: window.GLOBAL_ENV.MARKETING_ENDPOINT
                                         }), " ", b.intl.format(b.t.T6WtKw, {
-                                            learnMoreURL: p.A.getArticleURL(I.MVz.SERVER_WEB_PAGES)
+                                            learnMoreURL: A.A.getArticleURL(I.MVz.SERVER_WEB_PAGES)
                                         })]
                                     }), (0, i.jsxs)(o.BJc, {
                                         gap: 40,
@@ -249,7 +249,7 @@ let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                                                     gap: 16,
                                                     children: [(0, i.jsx)(h.A, {
                                                         image: t.discoverySplash,
-                                                        makeURL: e => A.Ay.getGuildDiscoverySplashURL({
+                                                        makeURL: e => p.Ay.getGuildDiscoverySplashURL({
                                                             id: t.id,
                                                             splash: e,
                                                             size: 512 * (0, g.mZ)()

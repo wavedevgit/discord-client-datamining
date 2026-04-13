@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(793574),
     _ = n(688810),
     x = n(323082),
-    h = n(86379),
-    A = n(160946),
+    A = n(86379),
+    h = n(160946),
     p = n(459793),
     T = n(726649),
     f = n(611924),
@@ -40,7 +40,7 @@ let M = function(e) {
         entrypoint: t = P.Mf.UserSettings
     } = e;
     (0, f.P)(T.b);
-    let n = (0, h.Hp)(),
+    let n = (0, A.Hp)(),
         {
             sourceAnalyticsLocations: l,
             analyticsLocations: M
@@ -51,7 +51,7 @@ let M = function(e) {
         V = w?.id,
         B = (0, R.V)(),
         F = (0, O.O)(),
-        H = (0, A.Y)(P.T7),
+        H = (0, h.Y)(P.T7),
         [z, Y] = s.useState(!0),
         X = s.useRef(0),
         K = (0, N.YE)(w, P.PremiumTypes.TIER_2),

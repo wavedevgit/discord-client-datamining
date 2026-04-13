@@ -17,8 +17,8 @@ var s = n(503698),
     g = n(688810),
     _ = n(531260),
     x = n(626584),
-    h = n(639289),
-    A = n(532794),
+    A = n(639289),
+    h = n(532794),
     p = n(832946),
     T = n(97352),
     f = n(481354),
@@ -151,7 +151,7 @@ function Y() {
         }),
         buttons: (0, i.jsx)(L.A, {
             className: U.au,
-            onClick: () => (0, A.A)({
+            onClick: () => (0, h.A)({
                 subscriptionTier: D.pe.TIER_1,
                 analyticsLocations: e,
                 analyticsObject: V
@@ -201,7 +201,7 @@ let X = function(e) {
             let l = (0, v._w)(e, x?.id, !1),
                 d = l.length > 0 ? l[0] : t.currency,
                 u = !0;
-            if (1 === l.length && x?.id === t.paymentSourceId && (0, v.jJ)(e.id, d, x?.id) && (u = !1), u)(0, A.A)({
+            if (1 === l.length && x?.id === t.paymentSourceId && (0, v.jJ)(e.id, d, x?.id) && (u = !1), u)(0, h.A)({
                 initialPlanId: t.premiumPlanIdFromItems,
                 analyticsLocations: X,
                 analyticsLocation: Y,
@@ -224,21 +224,21 @@ let X = function(e) {
                         onClose: async () => {
                             l || (l = !0, b._.dispatch(G.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), y.A.isDisplayingWowMomentConfirmation && y.A.isAnimated ? setTimeout(() => {
                                 n.onClose()
-                            }, h.K) : await n.onClose())
+                            }, A.K) : await n.onClose())
                         }
                     })
                 }, {
                     onCloseRequest: () => {
                         l || (l = !0, b._.dispatch(G.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), y.A.isDisplayingWowMomentConfirmation && y.A.isAnimated ? setTimeout(() => {
                             (0, c.OoC)(e)
-                        }, h.K) : (0, c.OoC)(e))
+                        }, A.K) : (0, c.OoC)(e))
                     },
                     modalKey: e
                 })
             }
         }
     }, el = () => {
-        B.includes(t.status) && null != t.pauseEndsAt ? t.status === G.Dmq.PAUSED && t.pauseReason !== M.qf.USER_TEMPORARY_BAN ? (0, A.A)({
+        B.includes(t.status) && null != t.pauseEndsAt ? t.status === G.Dmq.PAUSED && t.pauseReason !== M.qf.USER_TEMPORARY_BAN ? (0, h.A)({
             initialPlanId: t.premiumPlanIdFromItems,
             analyticsLocations: X,
             analyticsLocation: Y,
@@ -346,7 +346,7 @@ let X = function(e) {
                             className: l()(U.au, U.lB),
                             disabled: e,
                             onClick: () => {
-                                (0, A.A)({
+                                (0, h.A)({
                                     analyticsLocations: X,
                                     analyticsLocation: Y,
                                     analyticsObject: V,

@@ -1,7 +1,7 @@
 /** chunk id: 771935 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    H: () => A
+    H: () => p
 });
 var i = n(627968);
 n(64700);
@@ -19,12 +19,12 @@ var s = n(158954),
     h = n(985018),
     _ = n(601544);
 
-function A() {
+function p() {
     let {
         analyticsLocations: e
     } = (0, a.Ay)(r.A.GUILD_SETTINGS_BOOST_PERKS_PAGE), t = (0, l.bG)([d.A], () => d.A.getProps().guild, []), {
         isGuildAdmin: n,
-        canManageGuild: A
+        canManageGuild: p
     } = (0, l.cf)([o.A], () => ({
         isGuildAdmin: null != t && o.A.can(x.xBc.ADMINISTRATOR, t),
         canManageGuild: null != t && o.A.can(x.xBc.MANAGE_GUILD, t)
@@ -38,18 +38,18 @@ function A() {
                 color: "text-strong",
                 children: h.intl.string(h.t.UKgg5N)
             }), (0, i.jsx)(g.I, {
-                canManageGuild: A,
+                canManageGuild: p,
                 premiumProgressBarEnabled: t.premiumProgressBarEnabled
             }), (0, i.jsx)("div", {
                 className: _.y
             }), (0, i.jsx)(c.l, {
                 guild: t,
-                canManageGuild: A
+                canManageGuild: p
             }), (0, i.jsx)("div", {
                 className: _.y
             }), (0, i.jsx)(u.I, {
                 guild: t,
-                canManageGuild: A
+                canManageGuild: p
             }), n && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)("div", {
                     className: _.y

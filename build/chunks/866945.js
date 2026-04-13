@@ -24,10 +24,10 @@ function m(e) {
     s.useEffect(() => {
         (0, o.N)(_, d.YX.VIEWED)
     }, [_]);
-    let h = s.useCallback(() => {
+    let A = s.useCallback(() => {
             null != m && (m(), (0, o.N)(_, d.YX.DISMISS))
         }, [_, m]),
-        A = s.useCallback(() => {
+        h = s.useCallback(() => {
             n(), (0, o.N)(_, d.YX.LEARN_MORE)
         }, [_, n]);
     return (0, i.jsxs)("div", {
@@ -39,19 +39,19 @@ function m(e) {
             color: "interactive-text-active",
             children: null != l ? c.intl.format(t, {
                 hook: (e, t) => (0, i.jsx)(a.MzZ, {
-                    onClick: A,
+                    onClick: h,
                     children: e
                 }, t),
                 count: l
             }) : c.intl.format(t, {
                 hook: (e, t) => (0, i.jsx)(a.MzZ, {
-                    onClick: A,
+                    onClick: h,
                     children: e
                 }, t)
             })
         }), x && (0, i.jsx)(a.DUT, {
             className: u.b,
-            onClick: h,
+            onClick: A,
             children: (0, i.jsx)(a.PGe, {})
         })]
     })

@@ -1,7 +1,7 @@
 /** chunk id: 843401 params = (module,exports,require) **/
 n.d(t, {
     A: () => p,
-    I: () => A
+    I: () => h
 });
 var i = n(627968),
     s = n(503698),
@@ -17,7 +17,7 @@ var i = n(627968),
     _ = n(985018),
     x = n(933230);
 
-function h(e) {
+function A(e) {
     let {
         game: t,
         application: n
@@ -44,7 +44,7 @@ function h(e) {
     })
 }
 
-function A(e) {
+function h(e) {
     let t = (0, r.bG)([c.Ay], () => c.Ay.getMode()),
         {
             runningGame: n,
@@ -68,10 +68,10 @@ function p(e) {
         canPrompt: s,
         runningGame: r,
         runningGameApplication: o
-    } = A(n);
+    } = h(n);
     return s ? (0, i.jsxs)("div", {
         className: l()(x.kL, t),
-        children: [(0, i.jsx)(h, {
+        children: [(0, i.jsx)(A, {
             game: r,
             application: o
         }), (0, i.jsxs)("div", {

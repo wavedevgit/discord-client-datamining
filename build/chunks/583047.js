@@ -22,15 +22,15 @@ function h(e) {
         formFields: n
     } = e, [d, h] = s.useState(n);
     s.useEffect(() => h(n), [n]);
-    let A = (0, a.H)({
+    let p = (0, a.H)({
             guildId: t.id
         }) ?? 0,
-        [p, f] = s.useState(null),
+        [A, f] = s.useState(null),
         j = s.useMemo(() => d?.some(e => (0, r.i7)(e)), [d]),
         N = s.useMemo(() => d.length === m.OK, [d]),
         E = s.useCallback(e => {
-            u.A.setPendingMemberVerificationRules(t.id, e), h(e), null != p && f(null)
-        }, [p, t.id]),
+            u.A.setPendingMemberVerificationRules(t.id, e), h(e), null != A && f(null)
+        }, [A, t.id]),
         T = s.useCallback(e => {
             E([...d, e])
         }, [d, E]),
@@ -45,8 +45,8 @@ function h(e) {
         b = s.useCallback((e, t, n) => {
             let i = d.indexOf(e),
                 s = [...d];
-            null != t && t !== i && (s.splice(i, 1), s.splice(t, 0, e), h(s)), n ? (E(s), null !== p && f(null)) : p !== t && f(t)
-        }, [p, d, E]);
+            null != t && t !== i && (s.splice(i, 1), s.splice(t, 0, e), h(s)), n ? (E(s), null !== A && f(null)) : A !== t && f(t)
+        }, [A, d, E]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(l.DZT, {
             variant: "text-xs/bold",
@@ -57,12 +57,12 @@ function h(e) {
                 maxCount: m.OK
             })
         }), d.map(e => (0, c.Td)({
-            dropHoveredIndex: p,
+            dropHoveredIndex: A,
             formField: e,
             guild: t,
             index: d.indexOf(e),
             isDragEnabled: d.length > 1,
-            submittedGuildJoinRequestsCount: A,
+            submittedGuildJoinRequestsCount: p,
             removeFormField: C,
             updateFormField: I,
             updateFormFieldOrder: b,

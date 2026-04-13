@@ -29,14 +29,14 @@ function u() {
     (0, s.useEffect)(() => {
         x(g)
     }, [g]);
-    let h = async e => {
+    let A = async e => {
         x(e);
         try {
             await r.Pw.updateSetting(e)
         } catch (e) {
             x(g)
         }
-    }, A = 0 !== _.length, [p, T] = (0, s.useState)(() => c[n](m, g)), f = p.map(e => u[e.id]).filter(Boolean);
+    }, h = 0 !== _.length, [p, T] = (0, s.useState)(() => c[n](m, g)), f = p.map(e => u[e.id]).filter(Boolean);
     return {
         guilds: "" === e ? f : f.filter(t => t.name.toLowerCase().includes(e.toLowerCase())),
         sortOrder: n,
@@ -50,12 +50,12 @@ function u() {
                 checked: t,
                 guildId: n
             } = e, i = new Set(_);
-            t ? i.delete(n) : i.add(n), h([...i])
+            t ? i.delete(n) : i.add(n), A([...i])
         },
         isActivityRestricted: e => _.includes(e),
-        hasActivityRestrictedGuilds: A,
+        hasActivityRestrictedGuilds: h,
         onToggleAllActivityRestrictedGuilds: () => {
-            A ? h([]) : h(d)
+            h ? A([]) : A(d)
         },
         numTotalGuilds: d.length,
         numActivityRestrictedGuilds: _.length

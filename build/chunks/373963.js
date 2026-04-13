@@ -5,21 +5,21 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(397927),
-    l = n(723702),
-    r = n(837921),
+    r = n(723702),
+    l = n(837921),
     a = n(985018);
 
 function c(e, t) {
-    return l.isPlatformEmbedded && e?.length !== 0 ? (0, i.jsx)(s.Drp, {
+    return r.isPlatformEmbedded && e?.length !== 0 ? (0, i.jsx)(s.Drp, {
         id: "copy",
         label: a.intl.string(a.t.OpuAlK),
-        shortcut: (0, l.isMac)() ? "⌘C" : "Ctrl+C",
+        shortcut: (0, r.isMac)() ? "⌘C" : "Ctrl+C",
         leadingAccessory: {
             type: "icon",
             icon: s.TdU
         },
         action: () => {
-            r.Ay.copy(e), t?.focus()
+            l.Ay.copy(e), t?.focus()
         }
     }) : null
 }

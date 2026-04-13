@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(580630),
     h = n(636194),
     _ = n(971630),
-    A = n(942117),
-    p = n(487552),
+    p = n(942117),
+    A = n(487552),
     f = n(311237),
     j = n(652215),
     N = n(311750),
@@ -188,7 +188,7 @@ let C = e => {
                             return (0, i.jsxs)(i.Fragment, {
                                 children: [null != r ? E.intl.formatToPlainString(E.t.I6YOjS, {
                                     payoutDate: r
-                                }) : E.intl.string(E.t.G5ATX6), (0, i.jsx)(p.A, {
+                                }) : E.intl.string(E.t.G5ATX6), (0, i.jsx)(A.A, {
                                     className: T.$A
                                 })]
                             });
@@ -226,7 +226,7 @@ let C = e => {
                             return (0, i.jsxs)(i.Fragment, {
                                 children: [null != r ? E.intl.formatToPlainString(E.t.I6YOjS, {
                                     payoutDate: r
-                                }) : E.intl.string(E.t.ubdQTt), (0, i.jsx)(p.A, {
+                                }) : E.intl.string(E.t.ubdQTt), (0, i.jsx)(A.A, {
                                     className: T.$A
                                 })]
                             });
@@ -243,7 +243,7 @@ let C = e => {
                         case N.bp.REJECTED:
                         case N.bp.RISK_REVIEW:
                             return (0, i.jsxs)(i.Fragment, {
-                                children: [A.A.getStatusErrorText(t), (0, i.jsx)(u.aXh, {
+                                children: [p.A.getStatusErrorText(t), (0, i.jsx)(u.aXh, {
                                     size: "md",
                                     color: "currentColor",
                                     className: T.u5

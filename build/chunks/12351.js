@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(503698),
+    l = n.n(r),
     a = n(397927),
     c = n(985018),
     o = n(522946);
@@ -21,11 +21,11 @@ class u extends s.PureComponent {
             className: t,
             textClassName: n,
             type: s = d.BLOCK,
-            style: l
+            style: r
         } = this.props;
         return (0, i.jsxs)("div", {
-            className: r()(t, s),
-            style: l,
+            className: l()(t, s),
+            style: r,
             children: [(0, i.jsxs)(a.Text, {
                 variant: "text-sm/bold",
                 tag: "div",
@@ -33,7 +33,7 @@ class u extends s.PureComponent {
                 className: o.AD,
                 children: [c.intl.string(c.t["8tvIiN"]), ":"]
             }), (0, i.jsx)(a.Text, {
-                className: r()(o.uN, n),
+                className: l()(o.uN, n),
                 variant: "text-sm/normal",
                 children: e
             })]

@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(975571),
     h = n(652215),
     _ = n(897513),
-    A = n(985018),
-    p = n(411759),
+    p = n(985018),
+    A = n(411759),
     f = n(628287),
     j = n(734673),
     N = n(920852),
@@ -64,9 +64,9 @@ let C = [{
             body: r
         } = e;
         return (0, i.jsxs)("div", {
-            className: p.Vr,
+            className: A.Vr,
             children: [(0, i.jsx)("div", {
-                className: p.AD,
+                className: A.AD,
                 children: (0, i.jsx)(t, {
                     color: n ?? "currentColor",
                     width: s,
@@ -75,7 +75,7 @@ let C = [{
                 })
             }), (0, i.jsx)(c.Heading, {
                 variant: "heading-md/semibold",
-                className: p.Uh,
+                className: A.Uh,
                 children: l
             }), (0, i.jsx)(c.Text, {
                 color: "text-default",
@@ -97,12 +97,12 @@ let C = [{
             top: o[1] + s[1]
         };
         return (0, i.jsxs)("div", {
-            className: r()(p.gI, {
-                [p.zj]: l
+            className: r()(A.gI, {
+                [A.zj]: l
             }),
             style: d,
             children: [(0, i.jsx)("div", {
-                className: p.$f,
+                className: A.$f,
                 children: (0, i.jsx)("img", {
                     alt: "",
                     src: t,
@@ -124,9 +124,9 @@ let C = [{
         }, [S, y, l, N]), s.useEffect(() => {
             (0, u.sF)(_._.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL)
         }, []), (0, i.jsxs)("div", {
-            className: p.kL,
+            className: A.kL,
             children: [(0, i.jsxs)("div", {
-                className: p.vK,
+                className: A.vK,
                 ref: e => T(e),
                 children: [C.map(e => (0, i.jsx)(b, {
                     ...e,
@@ -134,32 +134,32 @@ let C = [{
                 }, e.name)), (0, i.jsx)("img", {
                     alt: "",
                     src: f,
-                    className: p.Sl,
+                    className: A.Sl,
                     width: 256
                 }), (0, i.jsx)("img", {
                     alt: "",
                     src: j,
-                    className: p._7
+                    className: A._7
                 })]
             }), (0, i.jsx)(c.Heading, {
                 variant: "heading-xl/semibold",
-                children: A.intl.string(A.t["M/gBcA"])
+                children: p.intl.string(p.t["M/gBcA"])
             }), (0, i.jsx)(c.Text, {
                 color: "text-default",
                 variant: "text-md/normal",
-                className: p.rf,
-                children: A.intl.format(A.t["52EgsM"], {
+                className: A.rf,
+                children: p.intl.format(p.t["52EgsM"], {
                     helpdeskArticle: x.A.getArticleURL(h.MVz.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
                 })
             }), (0, i.jsx)(d.m, {
-                text: v ? null : A.intl.string(A.t["pjG+T3"]),
-                "aria-label": v ? void 0 : A.intl.string(A.t["pjG+T3"]),
+                text: v ? null : p.intl.string(p.t["pjG+T3"]),
+                "aria-label": v ? void 0 : p.intl.string(p.t["pjG+T3"]),
                 children: (0, i.jsx)("div", {
                     "data-button-hoisted-classname-wrapper": !0,
-                    className: p.x6,
+                    className: A.x6,
                     children: (0, i.jsx)(c.Button, {
                         variant: "primary",
-                        text: A.intl.string(A.t.ElKTeb),
+                        text: p.intl.string(p.t.ElKTeb),
                         onClick: () => {
                             m.A.open()
                         },
@@ -167,54 +167,54 @@ let C = [{
                     })
                 })
             }), (0, i.jsx)("hr", {
-                className: p.me
+                className: A.me
             }), (0, i.jsx)(c.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                children: A.intl.string(A.t.OzLWLE)
+                children: p.intl.string(p.t.OzLWLE)
             }), (0, i.jsx)(c.Text, {
                 color: "text-default",
-                className: p.rf,
+                className: A.rf,
                 variant: "text-sm/normal",
-                children: A.intl.format(A.t.rjhrqC, {
+                children: p.intl.format(p.t.rjhrqC, {
                     helpdeskArticle: x.A.getArticleURL(h.MVz.GUILD_COMMUNITY_FEATURE)
                 })
             }), (0, i.jsx)("div", {
-                className: p.qT,
+                className: A.qT,
                 children: [{
                     icon: c.Uy2,
                     color: o.A.unsafe_rawColors.GREEN_360.css,
-                    header: A.intl.string(A.t.oVQF2y),
-                    body: A.intl.format(A.t.A6G7ak, {
+                    header: p.intl.string(p.t.oVQF2y),
+                    body: p.intl.format(p.t.A6G7ak, {
                         featureHook: (e, t) => (0, i.jsx)("strong", {
-                            className: p.A3,
+                            className: A.A3,
                             children: e
                         }, t)
                     })
                 }, {
                     icon: c.Uy2,
                     color: o.A.unsafe_rawColors.PARTNER.css,
-                    header: A.intl.string(A.t["0rJl9y"]),
-                    body: A.intl.format(A.t.XsCNky, {
+                    header: p.intl.string(p.t["0rJl9y"]),
+                    body: p.intl.format(p.t.XsCNky, {
                         infoHook: () => (0, i.jsx)(d.m, {
-                            text: A.intl.string(A.t.kPJlTh),
-                            "aria-label": A.intl.string(A.t.kPJlTh),
+                            text: p.intl.string(p.t.kPJlTh),
+                            "aria-label": p.intl.string(p.t.kPJlTh),
                             children: (0, i.jsx)(c.mir, {
                                 size: "xs",
                                 color: "currentColor",
-                                className: p.G
+                                className: A.G
                             })
                         }),
                         featureHook: (e, t) => (0, i.jsx)("strong", {
-                            className: p.A3,
+                            className: A.A3,
                             children: e
                         }, t)
                     })
                 }, {
                     icon: c.mir,
                     color: o.A.unsafe_rawColors.RED_360.css,
-                    header: A.intl.string(A.t.W2kLJC),
-                    body: A.intl.string(A.t.hyNkHz)
+                    header: p.intl.string(p.t.W2kLJC),
+                    body: p.intl.string(p.t.hyNkHz)
                 }].map((e, t) => (0, i.jsx)(I, {
                     ...e
                 }, t))

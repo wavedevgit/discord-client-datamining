@@ -25,18 +25,18 @@ function g(e) {
             name: g,
             description: _,
             hideDescriptionUntilUnlock: x,
-            onAction: h
+            onAction: A
         } = s,
-        A = x && !r,
+        h = x && !r,
         p = r ? "text-strong" : "text-muted",
         T = r ? "text-default" : "text-muted",
         f = a()(n),
-        S = null != h && r,
+        S = null != A && r,
         E = S ? o.DUT : "div";
     return (0, i.jsxs)(E, {
         className: l()(m.kL, S && m.b),
         onClick: () => {
-            S && h()
+            S && A()
         },
         children: [(0, i.jsx)("div", {
             className: m.zc,
@@ -59,7 +59,7 @@ function g(e) {
             }), (0, i.jsx)(o.Text, {
                 variant: "text-xs/normal",
                 color: T,
-                children: A ? "?????" : _()
+                children: h ? "?????" : _()
             })]
         })]
     })

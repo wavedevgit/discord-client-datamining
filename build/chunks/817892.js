@@ -15,10 +15,10 @@ var i = n(627968),
     g = n(780964),
     _ = n(652215),
     x = n(635917),
-    h = n(788868),
-    A = n(985018);
+    A = n(788868),
+    h = n(985018);
 let p = (0, u.E2)(g.X.DISPLAY_IN_APP_ICON, {
-    useSearchTerms: () => [A.intl.string(A.t.gnwxvT)],
+    useSearchTerms: () => [h.intl.string(h.t.gnwxvT)],
     Component: function() {
         let e = (0, c.GV)(),
             {
@@ -31,7 +31,7 @@ let p = (0, u.E2)(g.X.DISPLAY_IN_APP_ICON, {
             u = (0, r.bG)([o.A], () => o.A.isUpsellPreview);
         return (0, s.Ay)(() => {
             u && m.default.track(_.HAw.PREMIUM_UPSELL_VIEWED, {
-                type: h.e.APP_ICON_UPSELL,
+                type: A.e.APP_ICON_UPSELL,
                 location_stack: [a.A.USER_SETTINGS]
             })
         }), (0, i.jsx)("div", {

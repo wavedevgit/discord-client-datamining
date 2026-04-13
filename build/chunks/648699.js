@@ -1,6 +1,6 @@
 /** chunk id: 648699 params = (module,exports,require) **/
 n.d(t, {
-    h: () => h
+    h: () => A
 });
 var i = n(627968);
 n(64700);
@@ -42,7 +42,7 @@ function x() {
         })]
     })
 }
-let h = (0, d.Tf)(m.X.ACCOUNT_INFO_USERNAME_SETTING, {
+let A = (0, d.Tf)(m.X.ACCOUNT_INFO_USERNAME_SETTING, {
     useTitle: () => g.intl.string(g.t.qqhR3L),
     useTrailingContent: () => ({
         type: c._1.STRONGLY_DISCOURAGED_CUSTOM,

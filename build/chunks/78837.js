@@ -21,8 +21,8 @@ function _(e) {
         collapsedSubtitle: l,
         isExpanded: _,
         onExpandedChange: x,
-        children: h,
-        animate: A = !0
+        children: A,
+        animate: h = !0
     } = e, p = s.useRef(null), [T, f] = s.useState(null), S = _ && null != T;
     return s.useLayoutEffect(() => {
         null != p.current && null == T && f(p.current.clientHeight)
@@ -52,14 +52,14 @@ function _(e) {
             onClick: () => x(!_)
         }), (0, i.jsx)(a.kS, {
             className: r()(g.nd, {
-                [g.t5]: !A
+                [g.t5]: !h
             }),
             children: (0, i.jsx)(u.BJc, {
                 gap: 16,
                 padding: {
                     top: 16
                 },
-                children: h
+                children: A
             })
         })]
     })

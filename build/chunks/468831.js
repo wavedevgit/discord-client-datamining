@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(209932),
     _ = n(536432),
     x = n(984813),
-    h = n(595953),
-    A = n(975571),
+    A = n(595953),
+    h = n(975571),
     p = n(780964),
     T = n(617617),
     f = n(652215);
@@ -85,7 +85,7 @@ let v = (0, u.E2)(p.X.ENTRANCE_SOUNDS_SETTING, {
         return (0, i.jsxs)(r.nVY, {
             label: S.intl.string(S.t.nzUc3B),
             description: S.intl.format(S.t.u9RWmv, {
-                helpdeskArticle: A.A.getArticleURL(f.MVz.SOUNDBOARD)
+                helpdeskArticle: h.A.getArticleURL(f.MVz.SOUNDBOARD)
             }),
             children: [(0, i.jsx)(d.A, {
                 guildId: t,
@@ -107,7 +107,7 @@ let v = (0, u.E2)(p.X.ENTRANCE_SOUNDS_SETTING, {
                         className: E.ax
                     })
                 }),
-                children: [(0, i.jsx)(h.A, {
+                children: [(0, i.jsx)(A.A, {
                     sound: u,
                     isGlobal: p,
                     onSelect: n => {

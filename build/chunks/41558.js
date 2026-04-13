@@ -1,7 +1,7 @@
 /** chunk id: 41558 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    S: () => A
+    S: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -18,11 +18,11 @@ var i = n(627968),
     h = n(985018),
     _ = n(750511);
 
-function A(e) {
+function p(e) {
     let {
         guild: t,
         canManageGuild: n
-    } = e, A = t.features.has(m.GuildFeatures.INVITE_SPLASH), p = n && A, {
+    } = e, p = t.features.has(m.GuildFeatures.INVITE_SPLASH), A = n && p, {
         analyticsLocations: f
     } = (0, r.Ay)(), j = s.useCallback(e => {
         c.A.updateGuild({
@@ -42,14 +42,14 @@ function A(e) {
             id: t.id,
             splash: e
         }) : null,
-        disabled: !p,
+        disabled: !A,
         onChange: j,
         hint: h.intl.string(h.t.uPvxqJ),
-        enabled: p,
+        enabled: A,
         maxFileSizeBytes: x.j,
         onFileSizeError: () => (0, a.A)(x.j)
     });
-    return A ? E : (0, i.jsx)(l.DUT, {
+    return p ? E : (0, i.jsx)(l.DUT, {
         "aria-hidden": !0,
         tabIndex: -1,
         className: _.U,

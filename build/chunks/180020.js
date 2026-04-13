@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(919395),
     _ = n(128450),
     x = n(652215),
-    h = n(49999),
-    A = n(985018),
+    A = n(49999),
+    h = n(985018),
     p = n(486844),
     T = n(698551);
 
@@ -33,7 +33,7 @@ function f(e) {
         pendingDisplayNameStyles: v,
         pendingErrors: N
     } = (0, g.B0)(t, n), [I, j] = (0, o.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), y = I === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, O = (0, s.useCallback)(() => {
-        j(h.i.TAKE_ACTION), u.default.track(x.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.L)({
+        j(A.i.TAKE_ACTION), u.default.track(x.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.L)({
             analyticsLocations: E,
             guildId: n
         })
@@ -48,9 +48,9 @@ function f(e) {
         })
     }, [n]), P = void 0 !== v || (null != n ? null != C : null != b);
     return (0, i.jsx)(_.A, {
-        title: A.intl.string(p.default["86GtGH"]),
+        title: h.intl.string(p.default["86GtGH"]),
         titleIcon: y ? (0, i.jsx)(r.LpS, {
-            text: A.intl.string(A.t.y2b7CA),
+            text: h.intl.string(h.t.y2b7CA),
             className: T.A
         }) : void 0,
         className: f,
@@ -61,17 +61,17 @@ function f(e) {
             children: [(0, i.jsx)(r.Button, {
                 variant: "primary",
                 size: "sm",
-                text: A.intl.string(p.default.vJqrIg),
+                text: h.intl.string(p.default.vJqrIg),
                 onClick: O
             }), null == n && P && (0, i.jsx)(r.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: A.intl.string(p.default.ymq8WQ),
+                text: h.intl.string(p.default.ymq8WQ),
                 onClick: R
             }), null != n && null != (void 0 !== v ? v : C) && (0, i.jsx)(r.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: A.intl.string(p.default["j/KRxc"]),
+                text: h.intl.string(p.default["j/KRxc"]),
                 onClick: L
             })]
         })

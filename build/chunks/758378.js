@@ -15,9 +15,9 @@ var i = n(627968),
     g = n(595241);
 
 function _() {
-    let [e, t] = s.useState(!1), [n, _] = s.useState(() => (0, o.TC)()), x = (0, l.bG)([a.Ay], () => a.Ay.getSystemServiceStatus("input-service")), h = s.useCallback(async () => {
+    let [e, t] = s.useState(!1), [n, _] = s.useState(() => (0, o.TC)()), x = (0, l.bG)([a.Ay], () => a.Ay.getSystemServiceStatus("input-service")), A = s.useCallback(async () => {
         t(!0), n ? await (0, o.z8)("windows-settings") : await (0, o.sL)("windows-settings"), t(!1), _((0, o.TC)())
-    }, [n]), A = "running" === x.state;
+    }, [n]), h = "running" === x.state;
     return (0, i.jsxs)("div", {
         className: g.q,
         children: [(0, i.jsxs)("div", {
@@ -34,8 +34,8 @@ function _() {
                 })
             }), n ? (0, i.jsx)(r.Text, {
                 variant: "text-sm/normal",
-                color: A ? "text-feedback-positive" : "text-feedback-warning",
-                children: A ? m.intl.string(m.t.KHVMkW) : m.intl.format(m.t["5Rlr0b"], {
+                color: h ? "text-feedback-positive" : "text-feedback-warning",
+                children: h ? m.intl.string(m.t.KHVMkW) : m.intl.format(m.t["5Rlr0b"], {
                     status: function(e) {
                         switch (e.state) {
                             case "unknown":
@@ -65,7 +65,7 @@ function _() {
         }), (0, i.jsx)(r.Button, {
             variant: n ? "critical-secondary" : "primary",
             loading: e,
-            onClick: h,
+            onClick: A,
             text: n ? m.intl.string(m.t.pAwbdL) : m.intl.string(m.t["1iI46O"])
         })]
     })

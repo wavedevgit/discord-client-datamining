@@ -1,6 +1,6 @@
 /** chunk id: 4852 params = (module,exports,require) **/
 n.d(t, {
-    p: () => A
+    p: () => h
 });
 var i = n(311907),
     s = n(55619),
@@ -60,7 +60,7 @@ let m = (0, r.zD)(o.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
             disableNotifications: e
         })
     }),
-    h = (0, r.zD)(o.X.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE, {
+    A = (0, r.zD)(o.X.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE, {
         useTitle: () => u.intl.string(u.t["iA81+a"]),
         useSubtitle: () => u.intl.string(u.t.P4vj0h),
         useValue: () => (0, i.bG)([a.A], () => {
@@ -74,8 +74,8 @@ let m = (0, r.zD)(o.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
         }),
         usePredicate: () => l.A?.window?.supportsContentProtection?.() ?? !1
     }),
-    A = (0, r.FW)(o.X.STREAMER_MODE_OPTIONS_LIST, {
+    h = (0, r.FW)(o.X.STREAMER_MODE_OPTIONS_LIST, {
         variant: "compact",
         useTitle: () => (0, d.bp)("StreamerModeOptions") ? u.intl.string(u.t.xYhOEh) : u.intl.string(u.t.UtW8R6),
-        buildLayout: () => [m, g, _, x, h, c.h]
+        buildLayout: () => [m, g, _, x, A, c.h]
     })

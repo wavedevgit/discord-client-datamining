@@ -1,14 +1,14 @@
 /** chunk id: 916217 params = (module,exports,require) **/
 t.d(n, {
-    A: () => L
+    A: () => P
 });
 var i = t(627968),
     a = t(64700),
-    r = t(397927),
-    l = t(793574),
+    l = t(397927),
+    r = t(793574),
     o = t(688810),
-    d = t(351966),
-    s = t(915089),
+    s = t(351966),
+    d = t(915089),
     c = t(713517),
     _ = t(562153),
     u = t(183555),
@@ -31,26 +31,26 @@ var i = t(627968),
     N = t(824860),
     R = t(843796);
 
-function L(e) {
+function P(e) {
     let {
         user: n,
         guildId: t,
-        channelId: L,
-        messageId: P,
+        channelId: P,
+        messageId: L,
         roleId: O,
         sessionId: D,
         transitionState: k,
         onClose: B,
         sourceAnalyticsLocations: U = []
-    } = e, G = t === j.ME ? void 0 : t, M = (0, p.Ay)(n.id, G), F = _.Ay.getName(G, L, n), w = (0, s.GV)(), {
+    } = e, G = t === j.ME ? void 0 : t, M = (0, p.Ay)(n.id, G), F = _.Ay.getName(G, P, n), w = (0, d.GV)(), {
         analyticsLocations: V
-    } = (0, o.Ay)([...U, l.A.USER_PROFILE_MODAL]), H = (0, u.pb)({
+    } = (0, o.Ay)([...U, r.A.USER_PROFILE_MODAL]), H = (0, u.pb)({
         layout: "MODAL",
         userId: n.id,
         sourceSessionId: D,
         guildId: G,
-        channelId: L,
-        messageId: P,
+        channelId: P,
+        messageId: L,
         roleId: O
     }), W = a.useRef(null), z = (0, c.M)(W);
     return (0, i.jsx)(o.f5, {
@@ -58,16 +58,16 @@ function L(e) {
         children: (0, i.jsx)(u.of, {
             value: H,
             isLoaded: M?.isLoaded,
-            children: (0, i.jsxs)(r.EOs, {
+            children: (0, i.jsxs)(l.EOs, {
                 "data-migration-pending": !0,
                 transitionState: k,
                 className: C.zr,
                 hideShadow: !0,
                 "aria-labelledby": w,
                 parentComponent: "NonUserBotProfileModal",
-                children: [(0, i.jsx)(r.Fmo, {
-                    component: (0, i.jsx)(r.AC4, {
-                        children: (0, i.jsx)(r.H, {
+                children: [(0, i.jsx)(l.Fmo, {
+                    component: (0, i.jsx)(l.AC4, {
+                        children: (0, i.jsx)(l.H, {
                             id: w,
                             children: S.intl.format(S.t.KRe1Fk, {
                                 name: F
@@ -94,7 +94,7 @@ function L(e) {
                                     user: n,
                                     displayProfile: M,
                                     guildId: G,
-                                    channelId: L,
+                                    channelId: P,
                                     themeType: T.d.MODAL
                                 })
                             })]
@@ -114,21 +114,21 @@ function L(e) {
                                 })
                             }), (0, i.jsxs)("div", {
                                 className: R.kL,
-                                children: [(0, i.jsx)(r.VQ0, {
+                                children: [(0, i.jsx)(l.VQ0, {
                                     className: R.$H,
                                     type: "top",
                                     selectedItem: y.RP.BOT_INFO,
                                     onItemSelect: j.tEg,
-                                    children: (0, i.jsx)(r.VQ0.Item, {
+                                    children: (0, i.jsx)(l.VQ0.Item, {
                                         className: R.YU,
                                         id: y.RP.BOT_INFO,
                                         "aria-label": S.intl.string(S.t.ZzAR2Y),
-                                        children: (0, i.jsx)(r.Text, {
+                                        children: (0, i.jsx)(l.Text, {
                                             variant: "text-sm/normal",
                                             children: S.intl.string(S.t.ZzAR2Y)
                                         })
                                     }, y.RP.BOT_INFO)
-                                }), (0, i.jsxs)(r.IpV, {
+                                }), (0, i.jsxs)(l.IpV, {
                                     fade: !0,
                                     className: N.XG,
                                     children: [(0, i.jsx)(m.E, {
@@ -147,7 +147,7 @@ function L(e) {
                             })]
                         })]
                     })
-                }), M?.profileEffect != null && (0, i.jsx)(d.A, {
+                }), M?.profileEffect != null && (0, i.jsx)(s.A, {
                     skuId: M?.profileEffect?.skuId,
                     isHovering: z
                 })]

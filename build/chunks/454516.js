@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(859126),
     h = n(287809),
     _ = n(996439),
-    A = n(997509),
-    p = n(555337),
+    p = n(997509),
+    A = n(555337),
     f = n(203498),
     j = n(660496),
     N = n(652215),
@@ -121,20 +121,20 @@ function b(e) {
         guildId: t,
         storedSearchQuery: n
     } = e, [l, r] = s.useState(n ?? ""), [a, d] = s.useState(!1), u = s.useCallback(() => {
-        A.A.setSection(N.BEX.SAFETY), (0, f.K)(j.C.DM_AND_SPAM_PROTECTION)
+        p.A.setSection(N.BEX.SAFETY), (0, f.K)(j.C.DM_AND_SPAM_PROTECTION)
     }, []), m = s.useCallback(e => {
-        r(e), 0 === e.trim().length && A.A.setSearchQuery(e)
+        r(e), 0 === e.trim().length && p.A.setSearchQuery(e)
     }, []), g = s.useCallback(() => {
-        r(""), A.A.setSearchQuery("")
+        r(""), p.A.setSearchQuery("")
     }, []), h = s.useCallback(async () => {
         if (0 === l.trim().length) {
-            A.A.setSearchQuery(l), d(!1);
+            p.A.setSearchQuery(l), d(!1);
             return
         }
         if (!a) try {
             d(!0);
             let [e, n] = (0, x.H)(l), i = e[0];
-            A.A.setSearchQuery(l), await c.A.searchGuildBans(t, i, n), d(!1)
+            p.A.setSearchQuery(l), await c.A.searchGuildBans(t, i, n), d(!1)
         } catch (e) {
             d(!1)
         }
@@ -182,7 +182,7 @@ function v() {
     let {
         guild: e,
         searchQuery: t
-    } = (0, a.bG)([p.A], () => p.A.getProps(), [], l.isEqual), d = null != t && t.trim().length > 0, g = (0, u.A)(d), A = d !== g, [f] = (0, a.bG)([p.A], () => p.A.getBans(), [], _.D), j = f?.size ?? 0, C = (0, m.Ay)(), v = e?.id ?? N.dJq, S = s.useRef(null), y = s.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
+    } = (0, a.bG)([A.A], () => A.A.getProps(), [], l.isEqual), d = null != t && t.trim().length > 0, g = (0, u.A)(d), p = d !== g, [f] = (0, a.bG)([A.A], () => A.A.getBans(), [], _.D), j = f?.size ?? 0, C = (0, m.Ay)(), v = e?.id ?? N.dJq, S = s.useRef(null), y = s.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
         if (null == t || 0 === e.trim().length) return !1;
         let [
             [n], i
@@ -201,11 +201,11 @@ function v() {
         pageSize: 100
     });
     s.useEffect(() => {
-        A && 1 !== M.currentPage && k(e => ({
+        p && 1 !== M.currentPage && k(e => ({
             ...e,
             currentPage: 1
         }))
-    }, [A, M.currentPage]);
+    }, [p, M.currentPage]);
     let U = s.useCallback(e => {
             c.A.fetchGuildBansBatch(v, 1e3, e)
         }, [v]),

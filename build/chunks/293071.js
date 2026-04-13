@@ -1,30 +1,30 @@
 /** chunk id: 293071 params = (module,exports,require) **/
 t.r(n), t.d(n, {
-    default: () => s
+    default: () => d
 });
 var i = t(627968);
 t(64700);
 var a = t(215530),
-    r = t(976270),
-    l = t(916217),
+    l = t(976270),
+    r = t(916217),
     o = t(417021),
-    d = t(239606);
+    s = t(239606);
 
-function s(e) {
+function d(e) {
     let {
         hideRestrictedProfile: n,
         ...t
     } = e, {
-        user: s
-    } = t, [c, _] = (0, a.A)(s.id);
+        user: d
+    } = t, [c, _] = (0, a.A)(d.id);
     return c && !n ? (0, i.jsx)(o.A, {
         onHide: _,
         ...t
-    }) : s.isNonUserBot() ? (0, i.jsx)(l.A, {
+    }) : d.isNonUserBot() ? (0, i.jsx)(r.A, {
         ...t
-    }) : s.bot ? (0, i.jsx)(r.A, {
+    }) : d.bot ? (0, i.jsx)(l.A, {
         ...t
-    }) : (0, i.jsx)(d.A, {
+    }) : (0, i.jsx)(s.A, {
         ...t
     })
 }

@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(512213),
     _ = n(919395),
     x = n(884546),
-    h = n(287070),
-    A = n(101058),
+    A = n(287070),
+    h = n(101058),
     p = n(836602),
     T = n(622543),
     f = n(696451),
@@ -60,7 +60,7 @@ function P(e) {
         pendingAvatar: k,
         pendingNameplate: U,
         ...w
-    } = (0, a.cf)([p.A], () => p.A.getPendingChanges(t?.id)), V = (0, A.V7)({
+    } = (0, a.cf)([p.A], () => p.A.getPendingChanges(t?.id)), V = (0, h.V7)({
         userId: P.id,
         image: k
     }), B = (0, _.lw)({
@@ -90,7 +90,7 @@ function P(e) {
                         guildName: t?.name
                     })
                 }),
-                profilePreview: (0, i.jsx)(h.A, {
+                profilePreview: (0, i.jsx)(A.A, {
                     ...w,
                     pendingAvatar: V,
                     pendingDisplayNameStyles: F,

@@ -21,8 +21,8 @@ let _ = e => {
         className: t,
         isDisabled: l,
         sticker: _,
-        canManageSticker: A
-    } = e, [p, f] = s.useState(!1), [j, N] = (0, c.A)(null, 4e3), E = async () => {
+        canManageSticker: p
+    } = e, [A, f] = s.useState(!1), [j, N] = (0, c.A)(null, 4e3), E = async () => {
         N(null), f(!0);
         try {
             await (0, m.sl)(_)
@@ -40,7 +40,7 @@ let _ = e => {
             }),
             children: [(0, i.jsxs)("div", {
                 className: r()(h.Qs, {
-                    [h.d4]: p
+                    [h.d4]: A
                 }),
                 children: [(0, i.jsx)(g.A, {
                     className: h.yI,
@@ -64,7 +64,7 @@ let _ = e => {
                             children: T
                         })]
                     })]
-                }), A ? (0, i.jsxs)("div", {
+                }), p ? (0, i.jsxs)("div", {
                     className: h.o1,
                     children: [(0, i.jsx)(o.DUT, {
                         className: h.XI,
@@ -97,7 +97,7 @@ let _ = e => {
                         })
                     })]
                 }) : null]
-            }), p && (0, i.jsx)(o.y$y, {
+            }), A && (0, i.jsx)(o.y$y, {
                 className: h.u1
             })]
         })

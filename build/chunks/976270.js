@@ -5,11 +5,11 @@ t.d(n, {
 var i = t(627968);
 t(64700);
 var a = t(397927),
-    r = t(630054),
-    l = t(793574),
+    l = t(630054),
+    r = t(793574),
     o = t(688810),
-    d = t(915089),
-    s = t(562153),
+    s = t(915089),
+    d = t(562153),
     c = t(183555),
     _ = t(950191),
     u = t(722868),
@@ -31,8 +31,8 @@ var a = t(397927),
     C = t(518477),
     N = t(652215),
     R = t(996988),
-    L = t(985018),
-    P = t(669924);
+    P = t(985018),
+    L = t(669924);
 
 function O(e) {
     let {
@@ -49,9 +49,9 @@ function O(e) {
         transitionState: w,
         onClose: V,
         sourceAnalyticsLocations: H = []
-    } = e, W = O === N.ME ? void 0 : O, z = (0, _.Ay)(n.id, W), Y = s.Ay.getName(W, k, n), X = (0, d.GV)(), {
-        analyticsLocations: K
-    } = (0, o.Ay)([...H, l.A.USER_PROFILE_MODAL]), Q = (0, c.pb)({
+    } = e, W = O === N.ME ? void 0 : O, z = (0, _.Ay)(n.id, W), Y = d.Ay.getName(W, k, n), X = (0, s.GV)(), {
+        analyticsLocations: Q
+    } = (0, o.Ay)([...H, r.A.USER_PROFILE_MODAL]), K = (0, c.pb)({
         layout: "MODAL",
         userId: n.id,
         sourceSessionId: G,
@@ -67,16 +67,16 @@ function O(e) {
         onClose: V
     });
     return (0, i.jsx)(o.f5, {
-        value: K,
+        value: Q,
         children: (0, i.jsx)(c.of, {
-            value: Q,
+            value: K,
             isLoaded: z?.isLoaded,
             children: (0, i.jsx)(p.N, {
                 value: F,
                 children: (0, i.jsx)(a.EOs, {
                     "data-migration-pending": !0,
                     transitionState: w,
-                    className: P.zr,
+                    className: L.zr,
                     hideShadow: !0,
                     "aria-labelledby": X,
                     parentComponent: "BotUserProfileModal",
@@ -84,7 +84,7 @@ function O(e) {
                         component: (0, i.jsx)(a.AC4, {
                             children: (0, i.jsx)(a.H, {
                                 id: X,
-                                children: L.intl.format(L.t.KRe1Fk, {
+                                children: P.intl.format(P.t.KRe1Fk, {
                                     name: Y
                                 })
                             })
@@ -105,7 +105,7 @@ function O(e) {
                                     displayProfile: z,
                                     themeType: R.d.MODAL
                                 }), (0, i.jsxs)("div", {
-                                    className: P.El,
+                                    className: L.El,
                                     children: [(0, i.jsx)(A.A, {
                                         user: n,
                                         displayProfile: z,
@@ -119,20 +119,20 @@ function O(e) {
                                         onCloseProfile: V,
                                         disableToolbar: !0
                                     }), (0, i.jsxs)("div", {
-                                        className: P.Pz,
+                                        className: L.Pz,
                                         children: [(0, i.jsx)("div", {
-                                            className: P.jS,
+                                            className: L.jS,
                                             children: (0, i.jsx)(y.e, {
                                                 variant: "secondary",
                                                 userId: n.id,
-                                                onClose: r.A.popAll
+                                                onClose: l.A.popAll
                                             })
                                         }), (0, i.jsx)("div", {
-                                            className: P.pg,
+                                            className: L.pg,
                                             children: (0, i.jsx)(y.l, {
                                                 variant: "secondary",
                                                 userId: n.id,
-                                                onClose: r.A.popAll
+                                                onClose: l.A.popAll
                                             })
                                         }), (0, i.jsx)(v.A, {
                                             user: n,
@@ -144,11 +144,11 @@ function O(e) {
                                 })]
                             }), (0, i.jsx)(m.A, {
                                 userId: n.id,
-                                className: P.Fd
+                                className: L.Fd
                             }), (0, i.jsxs)("div", {
-                                className: P.rf,
+                                className: L.rf,
                                 children: [(0, i.jsx)(I.A, {
-                                    className: P.Xh,
+                                    className: L.Xh,
                                     user: n,
                                     guildId: W,
                                     nickname: Y,

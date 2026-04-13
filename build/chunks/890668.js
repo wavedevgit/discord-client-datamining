@@ -16,8 +16,8 @@ var s = n(284009),
     g = n(230084),
     _ = n(339442),
     x = n(900254),
-    h = n(431982),
-    A = n(730588),
+    A = n(431982),
+    h = n(730588),
     p = n(593629),
     T = n(164599),
     f = n(63675),
@@ -103,13 +103,13 @@ function L() {
         }, "avatar"), (0, i.jsx)(m.A, {
             user: e,
             sectionTitle: O.intl.string(O.t["7v0T9P"])
-        }, "decoration"), (0, i.jsx)(h.A, {
+        }, "decoration"), (0, i.jsx)(A.A, {
             user: e
         }), (0, i.jsx)(T.A, {
             user: e,
             sectionTitle: O.intl.string(O.t.wR5wOo)
         }, "effect"), F ? (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(A.A, {
+            children: [(0, i.jsx)(h.A, {
                 showRemoveBannerButton: z,
                 errors: w.banner,
                 onBannerChange: e => (0, C.p)({

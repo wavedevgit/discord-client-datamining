@@ -1,6 +1,6 @@
 /** chunk id: 665526 params = (module,exports,require) **/
 n.d(t, {
-    P: () => h
+    P: () => A
 }), n(321073);
 var i = n(627968),
     s = n(311907),
@@ -33,6 +33,6 @@ let x = (0, o.E2)(c.X.ACCOUNT_PROFILE_SETTING, {
             })
         }
     }),
-    h = (0, o.zZ)(c.X.ACCOUNT_PROFILE_CATEGORY, {
+    A = (0, o.zZ)(c.X.ACCOUNT_PROFILE_CATEGORY, {
         buildLayout: () => [x]
     })

@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(928039),
     h = n(544028),
     _ = n(411153),
-    A = n(427157),
-    p = n(734057),
+    p = n(427157),
+    A = n(734057),
     f = n(71393),
     j = n(351906),
     N = n(287809),
@@ -89,7 +89,7 @@ let L = s.forwardRef((e, t) => {
             switch (t.targetType) {
                 case y.GaG.CHANNEL:
                 case y.GaG.CHANNEL_OVERWRITE:
-                    let s = p.A.getChannel(t.targetId),
+                    let s = A.A.getChannel(t.targetId),
                         r = f.A.getGuild(l);
                     if (null != s && null != r) return (0, m.L3)(e, async () => {
                         let {
@@ -247,7 +247,7 @@ class M extends s.PureComponent {
         }
     };
     formatUserOption = e => {
-        if (!(e.user instanceof A.A)) return {
+        if (!(e.user instanceof p.A)) return {
             id: e.value,
             value: e.value,
             label: e.label,
@@ -300,7 +300,7 @@ class M extends s.PureComponent {
                 valueLabel: R.intl.string(R.t.an9Ry3),
                 value: null
             },
-            o = [a, ...s].map(e => e instanceof A.A ? {
+            o = [a, ...s].map(e => e instanceof p.A ? {
                 label: e.username,
                 value: e.id,
                 user: e

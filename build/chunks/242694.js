@@ -19,8 +19,8 @@ function m(e) {
         premiumSubscription: m,
         pausedAppliedGuildBoosts: g,
         fractionalPremiumState: _
-    } = e, x = l.A.getArticleURL(o.MVz.GUILD_BOOSTING_FAQ), h = m?.isPaused === !0 && _ !== d.xc.FP_SUB_PAUSED, A = t.some(e => null == e.premiumGuildSubscription), p = h && g.length > 0, T = h ? p : t.some(e => null != e.premiumGuildSubscription);
-    return A || T ? (0, i.jsxs)("div", {
+    } = e, x = l.A.getArticleURL(o.MVz.GUILD_BOOSTING_FAQ), A = m?.isPaused === !0 && _ !== d.xc.FP_SUB_PAUSED, h = t.some(e => null == e.premiumGuildSubscription), p = A && g.length > 0, T = A ? p : t.some(e => null != e.premiumGuildSubscription);
+    return h || T ? (0, i.jsxs)("div", {
         className: u.i,
         children: [(0, i.jsxs)("div", {
             className: u.b,
@@ -38,7 +38,7 @@ function m(e) {
             guildBoostSlots: n,
             premiumSubscription: m,
             pausedAppliedGuildBoosts: g,
-            isPaused: h
+            isPaused: A
         }), (0, i.jsx)(a.A, {
             guildBoostSlots: t,
             fractionalPremiumState: _

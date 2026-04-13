@@ -24,7 +24,7 @@ function _() {
             banner: m,
             themeColors: _,
             avatarDecorationSkuId: x,
-            displayNameStyles: h
+            displayNameStyles: A
         } = (0, i.useMemo)(() => {
             let n = (0, c.Wt)(t);
             return {
@@ -34,7 +34,7 @@ function _() {
                 displayNameStyles: n.displayNameStyles
             }
         }, [t, e]),
-        A = (0, s.bG)([r.A], () => {
+        h = (0, s.bG)([r.A], () => {
             let e = r.A.getProduct(x);
             return (0, a.T)(e?.items[0]) ? e.items[0] : null
         });
@@ -42,10 +42,10 @@ function _() {
         (0, o.w5)({
             banner: m,
             themeColors: _,
-            avatarDecoration: A,
-            displayNameStyles: h
+            avatarDecoration: h,
+            displayNameStyles: A
         })
-    }, [m, _, A, h]);
+    }, [m, _, h, A]);
     let p = (0, i.useCallback)(() => {
         let e = g(t);
         n(e), d.default.track(u.HAw.TRY_IT_OUT_PRESET_SHUFFLED, {

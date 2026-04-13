@@ -4,11 +4,11 @@ t.d(n, {
 });
 var i = t(627968),
     a = t(64700),
-    r = t(311907),
-    l = t(688810),
+    l = t(311907),
+    r = t(688810),
     o = t(512213),
-    d = t(637193),
-    s = t(713517),
+    s = t(637193),
+    d = t(713517),
     c = t(919395),
     _ = t(287809),
     u = t(84540),
@@ -21,10 +21,10 @@ function h(e) {
         user: n,
         guildId: t
     } = e, {
-        analyticsLocations: r
-    } = (0, l.Ay)(), _ = null != t, h = a.useRef(null), {
+        analyticsLocations: l
+    } = (0, r.Ay)(), _ = null != t, h = a.useRef(null), {
         isHoveringOrFocusing: m
-    } = (0, s.A)(h), {
+    } = (0, d.A)(h), {
         guildNameplate: f,
         pendingNameplate: I
     } = (0, c.rv)(n, t ?? void 0), x = (0, c.lw)({
@@ -33,12 +33,12 @@ function h(e) {
         guildValue: f,
         guildId: t ?? void 0
     }), b = void 0 !== I, v = _ ? f : n.collectibles?.nameplate, E = a.useCallback(() => {
-        (0, d.p)({
-            analyticsLocations: r,
+        (0, s.p)({
+            analyticsLocations: l,
             guildId: t ?? void 0,
             stackingBehavior: "stack"
         })
-    }, [r, t]), y = _ && n.collectibles?.nameplate != null, j = null != x && (b ? null != I : null != v) ? {
+    }, [l, t]), y = _ && n.collectibles?.nameplate != null, j = null != x && (b ? null != I : null != v) ? {
         onClick: () => (0, u.p)({
             guildId: t ?? void 0,
             nameplate: null
@@ -75,7 +75,7 @@ function h(e) {
 function m(e) {
     let {
         guildId: n
-    } = e, t = (0, r.bG)([_.default], () => _.default.getCurrentUser());
+    } = e, t = (0, l.bG)([_.default], () => _.default.getCurrentUser());
     return null == t ? null : (0, i.jsx)(h, {
         user: t,
         guildId: n

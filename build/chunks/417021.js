@@ -4,11 +4,11 @@ t.d(n, {
 });
 var i = t(627968),
     a = t(311907),
-    r = t(397927),
-    l = t(793574),
+    l = t(397927),
+    r = t(793574),
     o = t(688810),
-    d = t(632738),
-    s = t(994500),
+    s = t(632738),
+    d = t(994500),
     c = t(562153),
     _ = t(183555),
     u = t(672385),
@@ -32,20 +32,20 @@ function v(e) {
         transitionState: j,
         onHide: T,
         sourceAnalyticsLocations: S = []
-    } = e, C = t === f.ME ? void 0 : t, N = (0, a.bG)([s.A], () => s.A.isBlocked(n.id)), {
+    } = e, C = t === f.ME ? void 0 : t, N = (0, a.bG)([d.A], () => d.A.isBlocked(n.id)), {
         analyticsLocations: R
-    } = (0, o.Ay)([...S, N ? l.A.BLOCKED_PROFILE_MODAL : l.A.IGNORED_PROFILE_MODAL]), L = (0, _.pb)({
+    } = (0, o.Ay)([...S, N ? r.A.BLOCKED_PROFILE_MODAL : r.A.IGNORED_PROFILE_MODAL]), P = (0, _.pb)({
         layout: "MODAL_V2",
         userId: n.id,
         guildId: C,
         channelId: v,
         messageId: E,
         roleId: y
-    }), P = [{
-        icon: r.yr3,
+    }), L = [{
+        icon: l.yr3,
         description: x.intl.string(x.t.kcuWva)
     }, {
-        icon: r.yr3,
+        icon: l.yr3,
         description: x.intl.string(N ? x.t.QxrDY1 : x.t.W6fjkS)
     }], O = (0, p.Ay)(n.id, C), D = c.Ay.getName(O?.guildId, v, n), k = x.intl.formatToPlainString(x.t.KRe1Fk, {
         name: D
@@ -53,9 +53,9 @@ function v(e) {
     return (0, i.jsx)(o.f5, {
         value: R,
         children: (0, i.jsx)(_.of, {
-            value: L,
+            value: P,
             isLoaded: O?.isLoaded,
-            children: (0, i.jsx)(r.EOs, {
+            children: (0, i.jsx)(l.EOs, {
                 "data-migration-pending": !0,
                 transitionState: j,
                 className: b.zr,
@@ -74,11 +74,11 @@ function v(e) {
                             guildId: C
                         }), (0, i.jsxs)("div", {
                             className: b.FS,
-                            children: [(0, i.jsx)(r.Heading, {
+                            children: [(0, i.jsx)(l.Heading, {
                                 variant: "heading-xl/bold",
                                 color: "text-default",
                                 children: x.intl.string(x.t.b33pLD)
-                            }), (0, i.jsx)(r.Text, {
+                            }), (0, i.jsx)(l.Text, {
                                 variant: "text-md/medium",
                                 color: "text-default",
                                 children: x.intl.format(N ? x.t.T7QiLn : x.t.MnEowy, {
@@ -87,19 +87,19 @@ function v(e) {
                             })]
                         }), (0, i.jsx)("div", {
                             className: b.vb,
-                            children: P.map((e, n) => {
+                            children: L.map((e, n) => {
                                 let {
                                     icon: t,
                                     description: a
                                 } = e;
-                                return (0, i.jsx)(d.PQ, {
+                                return (0, i.jsx)(s.PQ, {
                                     icon: t,
                                     title: a,
                                     titleVariant: "text-md/normal",
-                                    color: r.LU0.colors.TEXT_DEFAULT.css
+                                    color: l.LU0.colors.TEXT_DEFAULT.css
                                 }, n)
                             })
-                        }), (0, i.jsxs)(r.BJc, {
+                        }), (0, i.jsxs)(l.BJc, {
                             align: "center",
                             children: [(0, i.jsx)(m.A, {
                                 size: "md",
@@ -108,7 +108,7 @@ function v(e) {
                                     T(), (0, u.Wn)({
                                         action: N ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                                         analyticsLocations: R,
-                                        ...L
+                                        ...P
                                     })
                                 }
                             }), (0, i.jsx)(h.A, {
@@ -117,7 +117,7 @@ function v(e) {
                                     T(), (0, u.Wn)({
                                         action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                                         analyticsLocations: R,
-                                        ...L
+                                        ...P
                                     })
                                 }
                             })]

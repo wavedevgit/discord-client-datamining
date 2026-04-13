@@ -5,18 +5,18 @@ n.d(t, {
 var i = n(73153),
     l = n(846293),
     a = n(159001),
-    r = n(960736),
-    o = n(253932),
-    d = n(954571),
+    d = n(960736),
+    r = n(253932),
+    o = n(954571),
     _ = n(4274),
     u = n(115063),
     s = n(652215);
 let c = {
     acceptInvite(e, t) {
         let n = l.Ay.getInviteContext("Desktop Invite Modal", e),
-            d = (0, r.tJ)(),
-            s = (0, r.Z1)(),
-            c = (0, r.N9)();
+            o = (0, d.tJ)(),
+            s = (0, d.Z1)(),
+            c = (0, d.N9)();
         l.Ay.acceptInvite({
             inviteKey: e.code,
             context: {
@@ -31,28 +31,28 @@ let c = {
         }).then(() => {
             if (null != e.guild) {
                 if (s) {
-                    if (o.$s.getSetting().includes(e.guild.id)) {
+                    if (r.$s.getSetting().includes(e.guild.id)) {
                         let t = new Set((0, u.Tb)());
-                        t.delete(e.guild.id), o.$s.updateSetting(Array.from(t))
+                        t.delete(e.guild.id), r.$s.updateSetting(Array.from(t))
                     }
                 } else {
                     let t = new Set((0, u.Tb)());
-                    t.add(e.guild?.id), o.$s.updateSetting(Array.from(t))
+                    t.add(e.guild?.id), r.$s.updateSetting(Array.from(t))
                 }
                 if (c) {
-                    if (o.JG.getSetting().includes(e.guild.id)) {
+                    if (r.JG.getSetting().includes(e.guild.id)) {
                         let t = new Set((0, u.Kk)());
-                        t.delete(e.guild.id), o.JG.updateSetting(Array.from(t))
+                        t.delete(e.guild.id), r.JG.updateSetting(Array.from(t))
                     }
                 } else {
                     let t = new Set((0, u.Kk)());
-                    t.add(e.guild.id), o.JG.updateSetting(Array.from(t))
+                    t.add(e.guild.id), r.JG.updateSetting(Array.from(t))
                 }
-                null != d && d.length > 0 && (0, a.GL)(e.guild.id, {
-                    nick: d
+                null != o && o.length > 0 && (0, a.GL)(e.guild.id, {
+                    nick: o
                 })
             }
-            this.close()
+            this.close(e.code)
         }, e => {
             i.h.dispatch({
                 type: "INVITE_MODAL_ERROR",
@@ -60,24 +60,25 @@ let c = {
             })
         })
     },
-    close() {
-        let e = (0, r.p9)(),
-            t = (0, r.xD)();
-        if ((0, r.jJ)()) {
-            let n = (0, r.tJ)(),
-                i = (0, r.Z1)(),
-                l = (0, r.N9)(),
-                a = (0, r.qO)();
-            d.default.track(s.HAw.INVITE_ACCEPT_JOIN_SETTINGS_SET, {
-                invite_code: e,
-                guild_id: t,
-                nickname_present: null != n && n.length > 0,
+    close(e) {
+        let t = e ?? (0, d.p9)(),
+            n = (0, d.xD)();
+        if ((0, d.jJ)()) {
+            let e = (0, d.tJ)(),
+                i = (0, d.Z1)(),
+                l = (0, d.N9)(),
+                a = (0, d.qO)();
+            o.default.track(s.HAw.INVITE_ACCEPT_JOIN_SETTINGS_SET, {
+                invite_code: t,
+                guild_id: n,
+                nickname_present: null != e && e.length > 0,
                 dms_allowed: i,
                 activity_status_shown: l,
                 changed_from_default: a
             })
-        }(0, r.xP)(), i.h.dispatch({
-            type: "INVITE_MODAL_CLOSE"
+        }(0, d.xP)(), i.h.dispatch({
+            type: "INVITE_MODAL_CLOSE",
+            inviteCode: t
         })
     }
 }

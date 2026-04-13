@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(560138),
     _ = n(526292),
     x = n(236834),
-    h = n(549996),
-    A = n(371764),
+    A = n(549996),
+    h = n(371764),
     p = n(379040),
     T = n(65470),
     f = n(792656),
@@ -38,7 +38,7 @@ let y = s.memo(s.forwardRef((e, t) => {
     } = (0, m.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), O = (0, E.N)(), R = (0, x.A)(), L = null != R, P = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
         visibilityPercentageRef: D,
         visibilityPercentage: G
-    } = (0, C.U)(!P), M = (0, o.bG)([g.A], () => g.A.affinities), k = !L && M.length > 0, U = (0, h.c)(a.C.MARKETING_PAGE_BANNER), w = null != U && "marketingPageBanner" === U.properties.properties.oneofKind, V = (0, _.ar)() && !w;
+    } = (0, C.U)(!P), M = (0, o.bG)([g.A], () => g.A.affinities), k = !L && M.length > 0, U = (0, A.c)(a.C.MARKETING_PAGE_BANNER), w = null != U && "marketingPageBanner" === U.properties.properties.oneofKind, V = (0, _.ar)() && !w;
     return (0, i.jsx)(m.f5, {
         value: y,
         children: (0, i.jsx)("div", {
@@ -101,7 +101,7 @@ let y = s.memo(s.forwardRef((e, t) => {
                                     cheapestMonthlyPrice: O
                                 })
                             })
-                        }), null != U && "marketingPageBanner" === U.properties.properties.oneofKind && (0, i.jsx)(A.x, {
+                        }), null != U && "marketingPageBanner" === U.properties.properties.oneofKind && (0, i.jsx)(h.x, {
                             componentId: U.id,
                             promotionBannerMarketingComponentFields: U.properties.properties.marketingPageBanner
                         })]

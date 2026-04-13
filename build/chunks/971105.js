@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(661439),
     _ = n(73825),
     x = n(928039),
-    h = n(323082),
-    A = n(235986),
+    A = n(323082),
+    h = n(235986),
     p = n(39190),
     T = n(933392),
     f = n(97352),
@@ -36,7 +36,7 @@ function O(e) {
         locale: n,
         compactMode: l,
         numPages: a
-    } = e, o = s.useRef(null), [c, m] = s.useState(0), [g, _] = s.useState(null), A = t.slice(10 * c, (c + 1) * 10);
+    } = e, o = s.useRef(null), [c, m] = s.useState(0), [g, _] = s.useState(null), h = t.slice(10 * c, (c + 1) * 10);
     s.useEffect(() => {
         o.current?.scrollTo({
             to: 0
@@ -45,7 +45,7 @@ function O(e) {
     let T = s.useCallback(e => {
             m(e);
             let n = t[t.length - 1].id;
-            e >= a - 2 && g !== n && ((0, h.CK)(10, n), _(n))
+            e >= a - 2 && g !== n && ((0, A.CK)(10, n), _(n))
         }, [t, a, g]),
         f = (0, x.A)("billing-history", o);
     return (0, i.jsx)(d.hD, {
@@ -68,7 +68,7 @@ function O(e) {
                         className: j.Bd,
                         ref: o,
                         overflow: "auto",
-                        children: A.map((e, t) => (0, i.jsx)(b.A, {
+                        children: h.map((e, t) => (0, i.jsx)(b.A, {
                             className: r()(j.Nj, j.Bd),
                             payment: e,
                             locale: n,
@@ -90,7 +90,7 @@ class R extends s.PureComponent {
     }
     componentDidMount() {
         m.h.wait(() => {
-            (0, g.X)(), (0, h.CK)(30)
+            (0, g.X)(), (0, A.CK)(30)
         })
     }
     renderPremiumExternalSubscription(e) {
@@ -123,7 +123,7 @@ class R extends s.PureComponent {
                 className: r()(j.PQ, j.GD),
                 children: [e ? null : (0, i.jsx)("div", {
                     className: r()(j.Nj, j.Bd),
-                    children: (0, i.jsxs)(A.A, {
+                    children: (0, i.jsxs)(h.A, {
                         className: j.Yi,
                         children: [(0, i.jsx)("div", {
                             className: y.p6,

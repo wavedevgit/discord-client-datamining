@@ -1,7 +1,7 @@
 /** chunk id: 319664 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
+    A: () => p
 });
 var i = n(627968);
 n(64700);
@@ -34,12 +34,12 @@ function _(e) {
     })
 }
 
-function A(e) {
+function p(e) {
     let {
         guildId: t,
         showCTA: n,
         responsive: s = !0
-    } = e, A = [
+    } = e, p = [
         [x.intl.string(x.t["73h51J"]), x.intl.string(x.t["gbjs/6"])],
         [x.intl.string(x.t.mCoH0V), x.intl.string(x.t["l/BuSI"])],
         [x.intl.string(x.t.psQktv), x.intl.string(x.t.nMhIZQ)],
@@ -55,7 +55,7 @@ function A(e) {
                 className: h.Qs,
                 children: [(0, i.jsx)("div", {
                     className: h.V_,
-                    children: A.map((e, t) => (0, i.jsx)(_, {
+                    children: p.map((e, t) => (0, i.jsx)(_, {
                         pills: e
                     }, `pill-row-${t}`))
                 }), (0, i.jsxs)("div", {

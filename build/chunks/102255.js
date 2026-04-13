@@ -17,8 +17,8 @@ var i = n(627968),
     g = n(791606),
     _ = n(403362),
     x = n(780964),
-    h = n(858897),
-    A = n(336926),
+    A = n(858897),
+    h = n(336926),
     p = n(985018),
     T = n(237350);
 
@@ -111,7 +111,7 @@ function C(e) {
         os: m,
         Icon: g,
         lastActive: x
-    } = (0, A.T)(t, n), h = [m, u].filter(_.Vq), f = [d, x].filter(_.Vq);
+    } = (0, h.T)(t, n), A = [m, u].filter(_.Vq), f = [d, x].filter(_.Vq);
     return (0, i.jsxs)("div", {
         className: r()(T.dZ, {
             [T.gg]: n
@@ -130,12 +130,12 @@ function C(e) {
                     variant: "eyebrow",
                     className: T.nT,
                     children: [(0, i.jsx)("span", {
-                        children: h[0]
-                    }), h.length > 1 && (0, i.jsxs)(i.Fragment, {
+                        children: A[0]
+                    }), A.length > 1 && (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)("span", {
                             children: "\xb7"
                         }), (0, i.jsx)("span", {
-                            children: h[1]
+                            children: A[1]
                         })]
                     })]
                 }), (0, i.jsxs)(o.Text, {
@@ -202,7 +202,7 @@ function v() {
                     color: "text-muted",
                     children: (0, i.jsx)("span", {
                         children: p.intl.format(p.t["044+8i"], {
-                            onClick: () => (0, h.openUserSettings)(x.X.ACCOUNT_PANEL, {
+                            onClick: () => (0, A.openUserSettings)(x.X.ACCOUNT_PANEL, {
                                 analyticsLocations: [d.A.USER_SETTINGS_SESSIONS]
                             })
                         })

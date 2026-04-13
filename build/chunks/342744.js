@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(793574),
     _ = n(688810),
     x = n(323082),
-    h = n(253390),
-    A = n(166403),
+    A = n(253390),
+    h = n(166403),
     p = n(927578),
     T = n(985018),
     f = n(743641);
@@ -68,16 +68,16 @@ function C(e) {
         analyticsLocations: c
     } = (0, _.Ay)(g.A.GUILD_BOOST_UNCANCELLATION_MODAL);
     s.useEffect(() => {
-        A.A.hasFetchedSubscriptions() || (0, x.hP)()
+        h.A.hasFetchedSubscriptions() || (0, x.hP)()
     }, []);
-    let f = (0, o.bG)([A.A], () => A.A.getPremiumTypeSubscription()),
+    let f = (0, o.bG)([h.A], () => h.A.getPremiumTypeSubscription()),
         [C, v] = s.useState(1),
         [N, I] = s.useState(!1),
         [j, y] = s.useState(null),
         O = s.useCallback(async () => {
             if (null != f) try {
                 I(!0), y(null);
-                let e = (0, h.v)(f, 1);
+                let e = (0, A.v)(f, 1);
                 r()((0, p.bx)(e) <= (0, p.bx)(f.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await S(f, e, t, c), v(2)
             } catch (t) {
                 let e = t instanceof u.Ey ? t : new u.Ey(t, t.code);

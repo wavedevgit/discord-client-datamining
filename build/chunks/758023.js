@@ -1,7 +1,7 @@
 /** chunk id: 758023 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -17,11 +17,11 @@ var i = n(627968),
     x = n(132514),
     h = n(817136),
     _ = n(985018),
-    A = n(927548);
-let p = function(e) {
+    p = n(927548);
+let A = function(e) {
     let {
         guildId: t
-    } = e, l = (0, a.cf)([x.A], () => x.A.getSettings().welcomeMessage ?? h.p), p = s.useCallback(() => (0, d.mMO)(async () => {
+    } = e, l = (0, a.cf)([x.A], () => x.A.getSettings().welcomeMessage ?? h.p), A = s.useCallback(() => (0, d.mMO)(async () => {
         let {
             default: e
         } = await n.e("94194").then(n.bind(n, 930345));
@@ -36,10 +36,10 @@ let p = function(e) {
         variant: "primary",
         size: "sm",
         text: _.intl.string(_.t["9Z+aEP"]),
-        onClick: p
+        onClick: A
     }) : (0, i.jsxs)(d.DUT, {
-        className: A.ab,
-        onClick: p,
+        className: p.ab,
+        onClick: A,
         children: [(0, i.jsx)(u.A, {
             guildId: t,
             welcomeMessage: {
@@ -49,7 +49,7 @@ let p = function(e) {
         }), (0, i.jsx)(o.m, {
             text: _.intl.string(_.t.bt75uw),
             children: (0, i.jsxs)("div", {
-                className: r()(A.Md, A.Tu),
+                className: r()(p.Md, p.Tu),
                 children: [(0, i.jsx)(d.R2l, {
                     size: "md",
                     color: "currentColor"

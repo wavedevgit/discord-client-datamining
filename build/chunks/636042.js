@@ -3,7 +3,7 @@
 n.d(t, {
     C5: () => g,
     E9: () => x,
-    JY: () => A,
+    JY: () => p,
     Ts: () => a,
     Ul: () => o,
     Y_: () => d,
@@ -105,7 +105,7 @@ function _(e, t) {
         roleConnectionConfigurations: t
     })
 }
-async function A(e, t, n, r, a) {
+async function p(e, t, n, r, a) {
     let o = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : {};
     i.h.dispatch({
         type: "GUILD_SETTINGS_ROLES_SUBMITTING"

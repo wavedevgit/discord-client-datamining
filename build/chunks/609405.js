@@ -16,8 +16,8 @@ var i = n(627968),
     g = n(473145),
     _ = n(927578),
     x = n(661191),
-    h = n(311092),
-    A = n(233413),
+    A = n(311092),
+    h = n(233413),
     p = n(400297),
     T = n(652215),
     f = n(788868),
@@ -108,13 +108,13 @@ function C(e) {
         className: E.PW,
         children: [(0, i.jsxs)("div", {
             className: E.$U,
-            children: [(0, i.jsx)(A.A, {
+            children: [(0, i.jsx)(h.A, {
                 isCanceled: f,
                 hasCooldown: T,
                 useReducedMotion: x
             }), (0, i.jsx)("div", {
                 className: E.vh,
-                children: null != p && T && !f ? (0, i.jsx)(h.A, {
+                children: null != p && T && !f ? (0, i.jsx)(A.A, {
                     className: E.xm,
                     cooldown: p.getTime()
                 }) : (0, i.jsx)(b, {

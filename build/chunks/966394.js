@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(875331),
     h = n(652215),
     _ = n(985018);
-let A = "NO_CHANNEL",
-    p = l.kg(h.xBc.VIEW_CHANNEL, h.xBc.CREATE_INSTANT_INVITE);
+let p = "NO_CHANNEL",
+    A = l.kg(h.xBc.VIEW_CHANNEL, h.xBc.CREATE_INSTANT_INVITE);
 
 function f(e) {
     let {
@@ -38,7 +38,7 @@ function f(e) {
             let {
                 channel: t
             } = e;
-            return t.id === f || c.A.can(p, t)
+            return t.id === f || c.A.can(A, t)
         }).map(e => {
             let {
                 channel: t
@@ -51,11 +51,11 @@ function f(e) {
         });
         return e.unshift({
             id: "no-instant-invite",
-            value: A,
+            value: p,
             label: _.intl.string(_.t.u197b7)
         }), e
     }, [N, l, f]), T = s.useCallback(e => {
-        j ? (0, x.E)(l, h, e !== A ? e : null) : g.A.updateEmbed(l, h, e !== A ? e : null)
+        j ? (0, x.E)(l, h, e !== p ? e : null) : g.A.updateEmbed(l, h, e !== p ? e : null)
     }, [l, h, j]);
     return (0, i.jsx)(a.l6P, {
         label: t,

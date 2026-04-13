@@ -23,7 +23,7 @@ let x = function() {
             fractionalState: x
         } = (0, d.A)();
 
-    function h(n) {
+    function A(n) {
         null != e.current && (0, a.OoC)(e.current), (0, c.g)({
             analyticsLocation: {
                 page: m.liQ.GUILD_BOOSTING_USER_SETTINGS,
@@ -35,14 +35,14 @@ let x = function() {
             guild: n
         })
     }
-    async function A() {
+    async function h() {
         e.current = await (0, a.mMO)(async () => {
             let {
                 default: e
             } = await Promise.resolve().then(n.bind(n, 770101));
             return t => (0, i.jsx)(e, {
                 ...t,
-                onSelectGuild: h
+                onSelectGuild: A
             })
         }, {
             onCloseRequest: () => {
@@ -70,7 +70,7 @@ let x = function() {
                             className: _.lO,
                             children: (0, i.jsx)(r.QWc, {
                                 variant: "primary",
-                                onClick: n ? void 0 : A,
+                                onClick: n ? void 0 : h,
                                 text: s,
                                 disabled: n
                             }, t)

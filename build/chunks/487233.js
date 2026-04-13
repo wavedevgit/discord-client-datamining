@@ -5,11 +5,11 @@ t.d(n, {
 var i = t(627968);
 t(64700);
 var a = t(311907),
-    r = t(397927),
-    l = t(688810),
+    l = t(397927),
+    r = t(688810),
     o = t(919395),
-    d = t(385612),
-    s = t(101058),
+    s = t(385612),
+    d = t(101058),
     c = t(696451),
     _ = t(287809),
     u = t(84540),
@@ -25,7 +25,7 @@ function f(e) {
         guildId: t
     } = e, {
         newestAnalyticsLocation: _
-    } = (0, l.Ay)(), f = null != t, I = (0, a.bG)([c.Ay], () => null != t ? c.Ay.getMember(t, n.id) : null), x = (0, a.bG)([p.A], () => p.A.getPendingChanges(t ?? void 0).pendingAvatar), b = (0, s.V7)({
+    } = (0, r.Ay)(), f = null != t, I = (0, a.bG)([c.Ay], () => null != t ? c.Ay.getMember(t, n.id) : null), x = (0, a.bG)([p.A], () => p.A.getPendingChanges(t ?? void 0).pendingAvatar), b = (0, d.V7)({
         userId: n.id,
         image: x
     }), {
@@ -34,8 +34,8 @@ function f(e) {
         userId: n.id,
         guildId: t,
         avatarOverride: b,
-        size: r._3J.SIZE_56
-    }), E = f ? I?.avatar : n.avatar, y = null != n.avatar, j = f && I?.avatar != null, T = null != x, S = null === x, C = (0, o.z5)(x, E), N = f && y, R = () => (0, d.XD)({
+        size: l._3J.SIZE_56
+    }), E = f ? I?.avatar : n.avatar, y = null != n.avatar, j = f && I?.avatar != null, T = null != x, S = null === x, C = (0, o.z5)(x, E), N = f && y, R = () => (0, s.XD)({
         uploadType: h.HL.AVATAR,
         analyticsSource: _,
         guildId: t ?? void 0,
@@ -45,13 +45,13 @@ function f(e) {
         variant: "square",
         onClick: R,
         accessibleLabel: m.intl.string(m.t["4OynCD"]),
-        children: (0, i.jsx)(r.euF, {
+        children: (0, i.jsx)(l.euF, {
             src: v,
-            size: r._3J.SIZE_56,
+            size: l._3J.SIZE_56,
             "aria-hidden": !0
         })
     });
-    let L = C ? {
+    let P = C ? {
         onClick: () => {
             (0, u.p)({
                 guildId: t ?? void 0,
@@ -65,10 +65,10 @@ function f(e) {
         variant: "square",
         onClick: R,
         accessibleLabel: m.intl.string(m.t["4OynCD"]),
-        deleteButtonConfig: L,
-        children: (0, i.jsx)(r.euF, {
+        deleteButtonConfig: P,
+        children: (0, i.jsx)(l.euF, {
             src: v,
-            size: r._3J.SIZE_56,
+            size: l._3J.SIZE_56,
             "aria-hidden": !0
         })
     })

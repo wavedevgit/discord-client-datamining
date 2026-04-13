@@ -1,7 +1,7 @@
 /** chunk id: 838293 params = (module,exports,require) **/
 n.d(t, {
-    Ho: () => A,
-    K7: () => h,
+    Ho: () => h,
+    K7: () => A,
     f7: () => x
 });
 var i = n(419954),
@@ -18,11 +18,11 @@ var i = n(419954),
     _ = n(634411);
 let x = () => (0, d.Tx)() !== o.YG;
 
-function h() {
+function A() {
     return g.intl.string(_.default.WhdCGP)
 }
-let A = (0, i.zD)(a.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_SHARE_SETTING, {
-    useTitle: h,
+let h = (0, i.zD)(a.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_SHARE_SETTING, {
+    useTitle: A,
     useSubtitle: () => g.intl.string(_.default.UQ9RHJ),
     useValue: () => {
         let e = (0, d.Tx)();

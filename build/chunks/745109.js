@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(576622),
     _ = n(178241),
     x = n(183476),
-    h = n(338318),
-    A = n(71393),
+    A = n(338318),
+    h = n(71393),
     p = n(967198),
     T = n(711014),
     f = n(287809),
@@ -37,7 +37,7 @@ function y() {
             let e = m.A.selectedGuildId ?? p.A.getGuildId();
             return null == e || m._.has(e) ? T.Ay.getFlattenedGuildIds().find(e => !m._.has(e)) : e
         }),
-        t = (0, a.bG)([A.A], () => A.A.getGuild(e)),
+        t = (0, a.bG)([h.A], () => h.A.getGuild(e)),
         n = (0, a.bG)([m.A], () => m.A.showNotice()),
         l = (0, a.bG)([f.default], () => f.default.getCurrentUser()),
         y = b.A.useField("subsection");
@@ -89,6 +89,6 @@ function y() {
                 }
                 null != e && (0, c.JJ)(e.id)
             }
-        }) : (0, i.jsx)(h.A, {})]
+        }) : (0, i.jsx)(A.A, {})]
     })
 }

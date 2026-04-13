@@ -1,7 +1,7 @@
 /** chunk id: 271653 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => A
 });
 var i = n(627968),
     s = n(732955),
@@ -18,20 +18,20 @@ var i = n(627968),
     h = n(985018),
     _ = n(117016);
 
-function A(e) {
+function p(e) {
     let {
         guildId: t,
         handleCreateOrEditProduct: s
     } = e, m = (0, c.fZ)(t, {
         publishedOnly: !1
     }), {
-        shouldRestrictUpdatingCreatorMonetizationSettings: A
-    } = (0, a.nq)(t), p = m.length > 0;
+        shouldRestrictUpdatingCreatorMonetizationSettings: p
+    } = (0, a.nq)(t), A = m.length > 0;
     return (0, i.jsx)("div", {
         className: _.aW,
         children: (0, i.jsx)(l.D0$, {
-            label: p ? h.intl.string(h.t.RwuStQ) : h.intl.string(h.t.WKMcMW),
-            children: e => p ? (0, i.jsx)("ul", {
+            label: A ? h.intl.string(h.t.RwuStQ) : h.intl.string(h.t.WKMcMW),
+            children: e => A ? (0, i.jsx)("ul", {
                 className: _.Hn,
                 id: e.controlId,
                 children: m.map(e => (0, i.jsx)("li", {
@@ -68,7 +68,7 @@ function A(e) {
                             productId: e.id
                         }),
                         onReportProduct: () => {},
-                        disabled: A
+                        disabled: p
                     })
                 }, e.id))
             }) : (0, i.jsx)(r.A, {
@@ -80,7 +80,7 @@ function A(e) {
     })
 }
 
-function p(e) {
+function A(e) {
     let {
         guildId: t
     } = e, {
@@ -96,7 +96,7 @@ function p(e) {
             disabled: n
         }), (0, i.jsx)(l.hKd, {
             size: 24
-        }), (0, i.jsx)(A, {
+        }), (0, i.jsx)(p, {
             guildId: t,
             handleCreateOrEditProduct: r
         })]

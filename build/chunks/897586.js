@@ -17,8 +17,8 @@ var i = n(934551),
     g = n(261590),
     _ = n(37148),
     x = n(937762),
-    h = n(653026),
-    A = n(63575),
+    A = n(653026),
+    h = n(63575),
     p = n(985018);
 
 function T() {
@@ -39,7 +39,7 @@ let f = [{
     S = (0, r.t_)(o.X.APPEARANCE_PANEL, {
         useTitle: () => p.intl.string(p.t["iHH+ky"]),
         initialize: T,
-        buildLayout: () => [h.S, g._, A.u, _.U, x.M, m.d]
+        buildLayout: () => [A.S, g._, h.u, _.U, x.M, m.d]
     }),
     E = (0, r.i4)(o.X.APPEARANCE_SIDEBAR_ITEM, {
         useTitle: () => p.intl.string(p.t["iHH+ky"]),

@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(854627),
     _ = n(427157),
     x = n(954571),
-    h = n(975571),
-    A = n(326084),
+    A = n(975571),
+    h = n(326084),
     p = n(851746),
     T = n(344904),
     f = n(664654),
@@ -107,10 +107,10 @@ let N = e => {
             sent: l.size
         };
         l.forEach(e => {
-            e === A.aK.REDEEMED && N.redeemed++, e === A.aK.CONVERTED && (N.redeemed++, N.converted++)
+            e === h.aK.REDEEMED && N.redeemed++, e === h.aK.CONVERTED && (N.redeemed++, N.converted++)
         });
         let I = N.sent === f.Z,
-            y = h.A.getArticleURL(E.MVz.REFERRAL_PROGRAM),
+            y = A.A.getArticleURL(E.MVz.REFERRAL_PROGRAM),
             {
                 analyticsLocations: O
             } = (0, m.Ay)(u.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),

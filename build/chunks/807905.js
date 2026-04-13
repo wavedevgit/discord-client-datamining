@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(657516),
     _ = n(983511),
     x = n(342744),
-    h = n(87719),
-    A = n(287809),
+    A = n(87719),
+    h = n(287809),
     p = n(166403),
     T = n(473145),
     f = n(927578),
@@ -37,7 +37,7 @@ function j(e) {
         premiumSubscription: a,
         useReducedMotion: u,
         fractionalState: m
-    } = e, g = s.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), _ = (0, T.I5)(t), x = a?.isPaused === !0 && m === v.xc.NONE, h = N.intl.string(N.t.mOWsF1);
+    } = e, g = s.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), _ = (0, T.I5)(t), x = a?.isPaused === !0 && m === v.xc.NONE, A = N.intl.string(N.t.mOWsF1);
     return (0, i.jsxs)("li", {
         className: I.Hp,
         children: [(0, i.jsxs)("div", {
@@ -65,8 +65,8 @@ function j(e) {
             className: I.E7,
             children: [n && !_ && (0, i.jsx)(o.A, {
                 shouldShow: x,
-                text: h,
-                "aria-label": h.toString(),
+                text: A,
+                "aria-label": A.toString(),
                 children: e => (0, i.jsx)("div", {
                     className: I.LB,
                     children: (0, i.jsx)(d.QWc, {
@@ -80,8 +80,8 @@ function j(e) {
                 })
             }), _ && (0, i.jsx)(o.A, {
                 shouldShow: x,
-                text: h,
-                "aria-label": h.toString(),
+                text: A,
+                "aria-label": A.toString(),
                 children: e => (0, i.jsx)("div", {
                     className: I.LB,
                     children: (0, i.jsx)(d.QWc, {
@@ -121,7 +121,7 @@ let R = function(e) {
             fractionalState: b
         } = (0, m.A)(),
         R = (0, a.bG)([u.A], () => u.A.useReducedMotion),
-        L = (0, a.bG)([A.default], () => A.default.getCurrentUser()),
+        L = (0, a.bG)([h.default], () => h.default.getCurrentUser()),
         P = b === v.xc.FP_SUB_PAUSED,
         D = E && !P,
         {
@@ -171,7 +171,7 @@ let R = function(e) {
             className: I.nw,
             tag: "span",
             onClick: () => {
-                (0, h.e)()
+                (0, A.e)()
             },
             children: e
         }, t);

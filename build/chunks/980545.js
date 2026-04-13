@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(545986),
     _ = n(652215),
     x = n(985018),
-    h = n(144950),
-    A = n(641701);
+    A = n(144950),
+    h = n(641701);
 
 function p() {
     let e = (0, r.Mw)((0, o.Ay)()),
@@ -34,19 +34,19 @@ function p() {
             })
         }, []);
     return (0, i.jsx)("div", {
-        className: h.kL,
+        className: A.kL,
         style: t,
         children: (0, i.jsxs)(a.BJc, {
-            className: h.FS,
+            className: A.FS,
             justify: "space-between",
             children: [(0, i.jsxs)(a.BJc, {
                 gap: 4,
                 children: [(0, i.jsxs)("div", {
-                    className: h.N1,
+                    className: A.N1,
                     children: [(0, i.jsx)("img", {
                         alt: "",
-                        src: A,
-                        className: h.Kk
+                        src: h,
+                        className: A.Kk
                     }), (0, i.jsx)(a.Heading, {
                         variant: "heading-lg/bold",
                         color: "always-white",

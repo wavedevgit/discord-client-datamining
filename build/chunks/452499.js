@@ -26,15 +26,15 @@ function a(e, t, n) {
         id: e,
         icon: m,
         size: n
-    }), x = i.useMemo(() => null != u && u.length > t ? u.slice(0, t) : u, [u, t]), h = null != u && u.length > t ? u.length - t : null, _ = d?.slug, A = null != _ ? r.X7G.ROLE_SUBSCRIPTION_STORE_PAGE(_) : void 0, p = c?.guild?.name, f = c?.role_subscription?.subscriber_count, j = !a && null != p && null != m && null != g;
+    }), x = i.useMemo(() => null != u && u.length > t ? u.slice(0, t) : u, [u, t]), h = null != u && u.length > t ? u.length - t : null, _ = d?.slug, p = null != _ ? r.X7G.ROLE_SUBSCRIPTION_STORE_PAGE(_) : void 0, A = c?.guild?.name, f = c?.role_subscription?.subscriber_count, j = !a && null != A && null != m && null != g;
     return j ? {
         hasAllImperativeDetails: j,
         isLoading: a,
         details: {
-            guildName: p,
+            guildName: A,
             guildIcon: m,
             guildAvatarUrl: g,
-            storePageUrl: A,
+            storePageUrl: p,
             subscriberCount: f,
             emojisToShow: x,
             notShownEmojiCount: h

@@ -18,12 +18,12 @@ var i = n(627968),
 function x(e) {
     let t, n, {
             currentUser: x,
-            togglingSMS: h
+            togglingSMS: A
         } = e,
-        [A, p] = s.useState(!1),
+        [h, p] = s.useState(!1),
         T = s.useCallback(e => {
-            e.preventDefault(), p(!A)
-        }, [A]),
+            e.preventDefault(), p(!h)
+        }, [h]),
         f = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
             (0, l.qfG)(t => (0, i.jsx)(d.default, {
@@ -54,7 +54,7 @@ function x(e) {
         v = null != x.phone,
         N = x.hasFlag(u.nhx.MFA_SMS);
     if (v || N) {
-        let e = A ? x.phone : C(x.phone);
+        let e = h ? x.phone : C(x.phone);
         n = (0, i.jsxs)(l.Text, {
             variant: "text-sm/normal",
             children: [g.intl.format(g.t.PXVoEO, {
@@ -62,7 +62,7 @@ function x(e) {
             }), (0, i.jsx)(l.MzZ, {
                 onClick: T,
                 className: _.vN,
-                children: A ? g.intl.string(g.t.FfltIN) : g.intl.string(g.t.llArAg)
+                children: h ? g.intl.string(g.t.FfltIN) : g.intl.string(g.t.llArAg)
             })]
         })
     }
@@ -70,7 +70,7 @@ function x(e) {
         variant: "critical-secondary",
         size: "sm",
         text: g.intl.string(g.t.KLWnit),
-        loading: h,
+        loading: A,
         onClick: b
     });
     else {
@@ -82,7 +82,7 @@ function x(e) {
                 size: "sm",
                 text: e ?? g.intl.string(g.t.DZQe23),
                 onClick: E,
-                loading: h,
+                loading: A,
                 disabled: null != e
             }), v ? (0, i.jsx)(l.Button, {
                 variant: "secondary",

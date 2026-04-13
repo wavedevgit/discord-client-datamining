@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(997509),
     h = n(555337),
     _ = n(657421),
-    A = n(652215),
-    p = n(381941),
+    p = n(652215),
+    A = n(381941),
     f = n(985018),
     j = n(908328),
     N = n(480972);
@@ -43,7 +43,7 @@ function E() {
         },
         onSave: () => {
             null != t && x.A.saveGuild(t.id, {
-                officialMessageColor: t.officialMessageColor ?? p.aj
+                officialMessageColor: t.officialMessageColor ?? A.aj
             })
         },
         errorMessage: e
@@ -62,7 +62,7 @@ function T() {
             })
         }, []);
     if (null == e) return null;
-    let r = e.officialMessageColor ?? p.aj;
+    let r = e.officialMessageColor ?? A.aj;
     return (0, i.jsx)(u.f5, {
         value: t,
         children: (0, i.jsxs)(d.BJc, {
@@ -103,8 +103,8 @@ function C(e) {
             color: "text-default",
             children: f.intl.string(f.t["2uQ6wZ"])
         }), (0, i.jsx)(m.default, {
-            defaultColor: p.aj,
-            colors: A._tK,
+            defaultColor: A.aj,
+            colors: p._tK,
             value: t,
             onChange: n
         })]
@@ -122,7 +122,7 @@ function I(e) {
         colorRoleId: void 0,
         colorStrings: null,
         colorString: null
-    }, a = [A.NJ8.DARK, A.NJ8.DARKER, A.NJ8.MIDNIGHT, A.NJ8.LIGHT], o = (0, p.L)(n);
+    }, a = [p.NJ8.DARK, p.NJ8.DARKER, p.NJ8.MIDNIGHT, p.NJ8.LIGHT], o = (0, A.L)(n);
     return (0, i.jsx)(d.M1G, {
         children: (0, i.jsxs)(d.BJc, {
             gap: 8,

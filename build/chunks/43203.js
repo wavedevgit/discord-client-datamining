@@ -28,8 +28,9 @@ async function h(e, t) {
         type: "INVITE_MODAL_OPEN",
         invite: u,
         code: e,
-        context: m.BRT.APP
-    }) : (0, s.bG)(m.BVt.INVITE(e)), o.isPlatformEmbedded && d.Ay.focus(), {
+        context: m.BRT.APP,
+        received_installation_id: null != n.installationId ? String(n.installationId) : void 0
+    }) : (n?.installationId != null && i.Ay.setReceivedInstallationIdForInviteCode(u.code, String(n.installationId)), (0, s.bG)(m.BVt.INVITE(e))), o.isPlatformEmbedded && d.Ay.focus(), {
         invite: u,
         code: e
     }
@@ -39,11 +40,12 @@ let x = {
         scope: u.hj,
         async handler(e) {
             let {
-                args: {
-                    code: t
-                }
-            } = e;
-            await h(t, "RPC OPEN_INVITE Handler")
+                args: t
+            } = e, {
+                code: n,
+                ...a
+            } = t;
+            await h(n, "RPC OPEN_INVITE Handler", a)
         }
     }
 }

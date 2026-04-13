@@ -19,8 +19,8 @@ var i = n(627968),
     x = n(713654),
     h = n(915089),
     _ = n(201275),
-    A = n(967144),
-    p = n(657048),
+    p = n(967144),
+    A = n(657048),
     f = n(963307),
     j = n(734057),
     N = n(317525),
@@ -83,7 +83,7 @@ let L = s.memo(function(e) {
         guildId: n,
         roleId: l,
         size: 16
-    }), d = (0, c.bG)([N.A], () => N.A.getRole(n, l)), m = a.includes(f.QP) ? "" : "@", g = (0, u.rdh)(u.LU0.unsafe_rawColors.PRIMARY_300).hsl(), x = d?.colorString ?? g, h = (0, A.X_)(n, d, d?.colorStrings);
+    }), d = (0, c.bG)([N.A], () => N.A.getRole(n, l)), m = a.includes(f.QP) ? "" : "@", g = (0, u.rdh)(u.LU0.unsafe_rawColors.PRIMARY_300).hsl(), x = d?.colorString ?? g, h = (0, p.X_)(n, d, d?.colorStrings);
     return (0, i.jsxs)("div", {
         className: r()(I.xZ, I.ex, s),
         children: [(0, i.jsx)(u.WYI, {
@@ -92,7 +92,7 @@ let L = s.memo(function(e) {
             colors: h,
             background: !1,
             tooltip: !1
-        }), null != o ? (0, i.jsx)(p.A, {
+        }), null != o ? (0, i.jsx)(A.A, {
             className: I.YS,
             ...o,
             enableTooltip: !1
@@ -147,8 +147,8 @@ function k(e) {
         onChange: x,
         placeholder: h,
         helperText: _,
-        className: A
-    } = e, p = (0, c.bG)([N.A], () => N.A.getRolesSnapshot(t)), f = s.useMemo(() => (function(e, t, n) {
+        className: p
+    } = e, A = (0, c.bG)([N.A], () => N.A.getRolesSnapshot(t)), f = s.useMemo(() => (function(e, t, n) {
         if (null == e) return {};
         let i = {};
         return e.forEach(e => {
@@ -157,7 +157,7 @@ function k(e) {
         }), t.forEach(e => {
             e in n && (i[e] = O(n[e]))
         }), i
-    })(a, g, p), [a, g, p]), E = s.useMemo(() => Object.keys(f), [f]), [T, S] = s.useState(""), [L, D] = s.useState(!1), [k, U] = s.useState(!1), [P, w] = s.useState(!1), B = s.useRef(null), {
+    })(a, g, A), [a, g, A]), E = s.useMemo(() => Object.keys(f), [f]), [T, S] = s.useState(""), [L, D] = s.useState(!1), [k, U] = s.useState(!1), [P, w] = s.useState(!1), B = s.useRef(null), {
         refs: F,
         floatingStyles: H
     } = (0, d.uaw)({
@@ -242,7 +242,7 @@ function k(e) {
             }
         }), [f, E, t]);
     return (0, i.jsxs)("div", {
-        className: r()(I.MT, A),
+        className: r()(I.MT, p),
         children: [(0, i.jsxs)("div", {
             className: I.M6,
             ref: F.setReference,

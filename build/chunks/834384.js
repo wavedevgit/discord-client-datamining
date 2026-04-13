@@ -240,7 +240,7 @@ let N = e => {
             analyticsLocations: W
         } = (0, a.Ay)(s.A.COLLECTIBLES_SHOP_CARD), F = (0, y.ql)(t, s.A.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, c), [z, Q] = (0, l.yK)([g.A], () => [g.A.isClaiming === t.skuId, null != g.A.isClaiming && g.A.isClaiming !== t.skuId]), {
             handleUseNow: q,
-            isApplying: X
+            isApplying: Y
         } = (0, k.p)({
             product: t
         });
@@ -259,7 +259,7 @@ let N = e => {
         });
         if (A) return (0, n.jsx)(O, {
             handleUseNow: q,
-            isApplying: X,
+            isApplying: Y,
             text: o
         });
         if (_) return (0, n.jsx)(w, {

@@ -1,6 +1,6 @@
 /** chunk id: 639491 params = (module,exports,require) **/
 n.d(t, {
-    q: () => A
+    q: () => h
 }), n(667532);
 var i = n(627968);
 n(64700);
@@ -16,14 +16,14 @@ var s = n(873298),
     g = n(562783),
     _ = n(290389),
     x = n(985018),
-    h = n(221425);
+    A = n(221425);
 
-function A() {
+function h() {
     let e = (0, m.A)() ?? !0,
         t = (0, u.uM)(),
         n = (0, c.G)(),
         {
-            goreContentGuilds: A,
+            goreContentGuilds: h,
             goreContentFriendDm: p,
             goreContentNonFriendDm: T
         } = (0, d.g)(),
@@ -51,7 +51,7 @@ function A() {
     e && (S.unshift(b), E.unshift(b));
     let C = {
         isDisabled: n,
-        tooltipText: t ? x.intl.string(h.default["6Af/cw"]) : void 0
+        tooltipText: t ? x.intl.string(A.default["6Af/cw"]) : void 0
     };
     return (0, i.jsxs)(g.E, {
         description: x.intl.string(x.t.XgH9eh),
@@ -73,13 +73,13 @@ function A() {
             ...C
         }), (0, i.jsx)(_.A, {
             title: x.intl.string(x.t["FP+a42"]),
-            value: A,
+            value: h,
             onChange: e => f({
                 goreContentGuilds: e
             }),
             isDisabled: !e || n,
             options: E,
-            tooltipText: t ? x.intl.string(h.default["6Af/cw"]) : void 0
+            tooltipText: t ? x.intl.string(A.default["6Af/cw"]) : void 0
         })]
     })
 }

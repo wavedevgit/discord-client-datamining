@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(674168),
     _ = n(989799),
     x = n(69217),
-    h = n(985018),
-    A = n(621548);
+    A = n(985018),
+    h = n(621548);
 
 function p(e) {
     let {
@@ -54,11 +54,11 @@ function p(e) {
             onClick: () => {
                 r(!n)
             },
-            text: h.intl.string(h.t.uOe0Az),
+            text: A.intl.string(A.t.uOe0Az),
             children: (0, i.jsx)(a.R2l, {
                 size: "md",
                 color: "currentColor",
-                className: A.Wo
+                className: h.Wo
             })
         })
     })
@@ -69,7 +69,7 @@ function T(e) {
         sound: t
     } = e, {
         previewSound: n
-    } = (0, m.A)(t, null), s = 0 === (0, u.wH)() ? h.intl.string(h.t.OASXjt) : h.intl.formatToPlainString(h.t["/8fYO5"], {
+    } = (0, m.A)(t, null), s = 0 === (0, u.wH)() ? A.intl.string(A.t.OASXjt) : A.intl.formatToPlainString(A.t["/8fYO5"], {
         emojiName: t.emojiName,
         soundName: t.name
     });
@@ -79,7 +79,7 @@ function T(e) {
         children: (0, i.jsx)(a.HKD, {
             size: "md",
             color: "currentColor",
-            className: A.wg
+            className: h.wg
         })
     })
 }
@@ -91,18 +91,18 @@ function f(e) {
         onSelect: s
     } = e, l = null != t, d = t?.emojiId, c = t?.emojiName, u = l && (null != c || null != d);
     return (0, i.jsxs)("div", {
-        className: A.D6,
+        className: h.D6,
         children: [(0, i.jsxs)("div", {
-            className: A.kL,
+            className: h.kL,
             children: [u && (0, i.jsx)(o.A, {
                 emojiId: d,
                 emojiName: c,
-                className: A.Zg
+                className: h.Zg
             }), (0, i.jsx)(a.Text, {
                 variant: "text-md/normal",
                 color: "text-strong",
-                className: A.dj,
-                children: null == t ? h.intl.string(h.t.PoWNfe) : n ? h.intl.format(h.t.B6HU6O, {
+                className: h.dj,
+                children: null == t ? A.intl.string(A.t.PoWNfe) : n ? A.intl.format(A.t.B6HU6O, {
                     soundName: t.name,
                     subtextHook: e => (0, i.jsx)(a.Text, {
                         variant: "text-xs/medium",
@@ -116,19 +116,19 @@ function f(e) {
             }) : (0, i.jsx)(a.HKD, {
                 size: "md",
                 color: "currentColor",
-                className: A.Gk
+                className: h.Gk
             })]
         }), (0, i.jsxs)("div", {
-            className: A.kL,
+            className: h.kL,
             children: [(0, i.jsx)(p, {
                 onSelect: s
             }), l && !n && (0, i.jsx)(x.dT, {
                 onClick: () => s(null),
-                text: h.intl.string(h.t.jmtcGA),
+                text: A.intl.string(A.t.jmtcGA),
                 children: (0, i.jsx)(a.ucK, {
                     size: "md",
                     color: r.A.unsafe_rawColors.RED_400.css,
-                    className: A.Wo
+                    className: h.Wo
                 })
             })]
         })]

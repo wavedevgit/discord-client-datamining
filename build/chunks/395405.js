@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(297413),
     h = n(555337),
     _ = n(645619),
-    A = n(434564),
-    p = n(199139),
+    p = n(434564),
+    A = n(199139),
     f = n(636585),
     j = n(859241),
     N = n(696451),
@@ -90,7 +90,7 @@ class R extends s.Component {
         let r = {
                 numRequired: 0,
                 y: 0,
-                key: p.A
+                key: A.A
             },
             a = e.map(e => ({
                 numRequired: b.M2T[e.tier],
@@ -98,7 +98,7 @@ class R extends s.Component {
                 y: t[e.tier] ?? 0,
                 key: e.tier
             }));
-        return (0, i.jsx)(p.h, {
+        return (0, i.jsx)(A.h, {
             currentTier: l,
             className: s > 0 ? S.mm : S.qB,
             progress: s,
@@ -222,7 +222,7 @@ class R extends s.Component {
 let O = d.Ay.connectStores([E.A, _.A, h.A, j.A, T.default, N.Ay], () => {
     let e = h.A.getGuildId(),
         t = E.A.getGuild(e)?.premiumTier ?? b.TVA.NONE,
-        n = (0, A.G)(e),
+        n = (0, p.G)(e),
         i = null != e ? j.A.getAppliedGuildBoostsForGuild(e) : null,
         s = o()(null != i ? i : []).uniqBy(e => e.userId),
         l = s.map(t => ({

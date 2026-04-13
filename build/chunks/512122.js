@@ -23,7 +23,7 @@ async function x(e, t) {
 function h(e) {
     let {
         guild: t
-    } = e, n = (0, l.bG)([o.A], () => null != t && o.A.can(c.xBc.MANAGE_GUILD, t), [t]), d = t.features.has(c.GuildFeatures.REPORT_TO_MOD_PILOT), [h, _] = s.useState((0, a.A)(t) && d), A = s.useCallback(async e => {
+    } = e, n = (0, l.bG)([o.A], () => null != t && o.A.can(c.xBc.MANAGE_GUILD, t), [t]), d = t.features.has(c.GuildFeatures.REPORT_TO_MOD_PILOT), [h, _] = s.useState((0, a.A)(t) && d), p = s.useCallback(async e => {
         _(e), await x(t, e)
     }, [t]);
     return d && n ? (0, i.jsxs)(i.Fragment, {
@@ -34,7 +34,7 @@ function h(e) {
                 description: u.intl.string(m.default.uUMXyu),
                 badge: "beta",
                 checked: h,
-                onChange: A,
+                onChange: p,
                 disabled: !n
             })
         }), (0, i.jsx)(r.cGx, {

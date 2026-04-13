@@ -5,26 +5,26 @@ t.d(n, {
 var i = t(627968);
 t(64700);
 var a = t(347805),
-    r = t(183555),
-    l = t(716804),
+    l = t(183555),
+    r = t(716804),
     o = t(900179),
-    d = t(518477),
-    s = t(985018),
+    s = t(518477),
+    d = t(985018),
     c = t(714388);
 
 function _(e) {
     let {
         userId: n
-    } = e, t = (0, l.g)(), {
+    } = e, t = (0, r.g)(), {
         trackUserProfileAction: _
-    } = (0, r.NJ)();
+    } = (0, l.NJ)();
     return (0, i.jsx)(o.A, {
-        heading: s.intl.string(s.t["mQKv+v"]),
-        scrollTargetId: d.bk.NOTE,
+        heading: d.intl.string(d.t["mQKv+v"]),
+        scrollTargetId: s.bk.NOTE,
         children: (0, i.jsx)(a.A, {
             userId: n,
             className: c.N,
-            autoFocus: t === d.bk.NOTE,
+            autoFocus: t === s.bk.NOTE,
             onUpdate: () => _({
                 action: "SET_NOTE"
             })

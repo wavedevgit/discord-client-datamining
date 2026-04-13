@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(997509),
     h = n(529942),
     _ = n(209700),
-    A = n(976860),
-    p = n(260509),
+    p = n(976860),
+    A = n(260509),
     f = n(317525),
     j = n(71393),
     N = n(287809),
@@ -38,7 +38,7 @@ function O(e) {
         hasValidApplication: n
     } = e, {
         listingsLoaded: O
-    } = (0, T.bb)(t), G = (0, r.bG)([j.A], () => j.A.getGuild(t)), L = (0, r.bG)([N.default], () => N.default.getCurrentUser()), D = null != G && (0, p.bM)(G, L), {
+    } = (0, T.bb)(t), G = (0, r.bG)([j.A], () => j.A.getGuild(t)), L = (0, r.bG)([N.default], () => N.default.getCurrentUser()), D = null != G && (0, A.bM)(G, L), {
         loading: M
     } = (0, d.G)(t), [k, U] = s.useState(n ? "manage_listings" : "payment");
     (0, m.T)(G);
@@ -54,7 +54,7 @@ function O(e) {
             roles: t,
             initialTab: "guild_products",
             returnToSection: v.BEX.GUILD_PRODUCTS
-        }), (0, A.pX)(v.BVt.CHANNEL(G.id, S.VV.GUILD_SHOP))
+        }), (0, p.pX)(v.BVt.CHANNEL(G.id, S.VV.GUILD_SHOP))
     }, [G]);
     if (!O || M) return (0, i.jsx)(o.y$y, {});
     if (null == G) return null;

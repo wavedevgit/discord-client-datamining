@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(847599),
     _ = n(36149),
     x = n(521933),
-    h = n(50268),
-    A = n(922301),
+    A = n(50268),
+    h = n(922301),
     p = n(81400),
     T = n(557722),
     f = n(207560),
@@ -63,7 +63,7 @@ function X(e) {
         _(null != a.current && a.current.scrollWidth > a.current.clientWidth)
     }, [l.username]);
     let x = !l.isClaimed(),
-        h = x ? B.intl.string(B.t["7Ngnyr"]) : void 0;
+        A = x ? B.intl.string(B.t["7Ngnyr"]) : void 0;
     return (0, i.jsxs)("div", {
         className: r()(H.ZZ, t),
         children: [(0, i.jsx)("div", {
@@ -103,7 +103,7 @@ function X(e) {
                 })
             })
         }), (0, i.jsx)(d.m, {
-            text: h,
+            text: A,
             children: (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: H.pr,
@@ -343,7 +343,7 @@ function Z(e) {
 function q(e) {
     let {
         user: t
-    } = e, n = (0, h.A)({
+    } = e, n = (0, A.A)({
         id: t.id,
         label: B.intl.string(B.t["/AXYnE"])
     }), l = D.Q_.useSetting(), r = s.useRef(null);
@@ -379,7 +379,7 @@ function q(e) {
 function Q(e) {
     let {
         className: t
-    } = e, l = (0, _.b8)(), a = (0, _.yM)(), o = (0, _.Y2)(), d = !l || a, u = B.intl.string(B.t["9KiIz6"]), x = B.intl.string(B.t.DVywUB), h = B.intl.string(B.t.lKDPGA), A = s.useCallback(() => {
+    } = e, l = (0, _.b8)(), a = (0, _.yM)(), o = (0, _.Y2)(), d = !l || a, u = B.intl.string(B.t["9KiIz6"]), x = B.intl.string(B.t.DVywUB), A = B.intl.string(B.t.lKDPGA), h = s.useCallback(() => {
         window.open(R.A.getArticleURL(w.MVz.TIGGER_PAWTECT_LEARN_MORE), "_blank")
     }, []), p = s.useCallback(() => {
         (0, c.mMO)(async () => {
@@ -391,8 +391,8 @@ function Q(e) {
             })
         })
     }, []), T = s.useMemo(() => l ? a ? B.intl.string(B.t.sK0dmH) : o ? B.intl.format(F.default.WM5adV, {
-        handleOnHelpUrlHook: A
-    }) : B.intl.string(B.t.XxRj7f) : h, [l, a, o, h, A]), f = l && !a && o;
+        handleOnHelpUrlHook: h
+    }) : B.intl.string(B.t.XxRj7f) : A, [l, a, o, A, h]), f = l && !a && o;
     return (0, i.jsxs)("div", {
         className: r()(H.ZZ, t),
         children: [(0, i.jsx)("div", {
@@ -474,7 +474,7 @@ function J(e) {
                         user: t,
                         className: H.a1,
                         discriminatorClass: H.D2,
-                        displayNameStylesType: A.G.STATIC
+                        displayNameStylesType: h.G.STATIC
                     }), (0, i.jsx)(q, {
                         user: t
                     })]

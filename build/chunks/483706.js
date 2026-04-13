@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(936926),
     _ = n(809697),
     x = n(153739),
-    h = n(534654),
-    A = n(834981),
+    A = n(534654),
+    h = n(834981),
     p = n(191627),
     T = n(221425),
     f = n(985018),
@@ -48,7 +48,7 @@ let E = e => {
         })
     },
     b = () => {
-        let e = (0, A.vx)(),
+        let e = (0, h.vx)(),
             t = () => {
                 (0, u.openUserSettings)(d.X.CONTENT_AND_SOCIAL_PANEL)
             };
@@ -178,8 +178,8 @@ let E = e => {
         })
     },
     N = () => {
-        let e = (0, h.A)();
-        return 0 === (0, A.vx)().length ? null : (0, i.jsx)("div", {
+        let e = (0, A.A)();
+        return 0 === (0, h.vx)().length ? null : (0, i.jsx)("div", {
             className: S.kL,
             children: e ? (0, i.jsx)(b, {}) : (0, i.jsx)(v, {})
         })

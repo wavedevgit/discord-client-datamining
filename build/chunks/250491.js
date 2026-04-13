@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(839214),
     _ = n(98919),
     x = n(487329),
-    h = n(419954),
-    A = n(430452),
+    A = n(419954),
+    h = n(430452),
     p = n(353835),
     T = n(780964),
     f = n(652215),
@@ -47,7 +47,7 @@ async function N(e) {
     t?.();
     try {
         let e, t;
-        await A.Ay.getMediaEngine().writeAudioDebugState(), await p.A.submitLiveCrashReport({
+        await h.Ay.getMediaEngine().writeAudioDebugState(), await p.A.submitLiveCrashReport({
             message: {
                 message: "User Live Dump"
             }
@@ -99,14 +99,14 @@ async function I() {
         })
     })
 }
-let j = (0, h.E2)(T.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
+let j = (0, A.E2)(T.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
     useSearchTerms: () => [E.intl.string(E.t["726JHL"]), E.intl.string(E.t.EbwFfR), E.intl.string(E.t.nuPtYi)],
     usePredicate: function() {
-        let e = (0, r.bG)([A.Ay], () => A.Ay.supports(S.O5.DEBUG_LOGGING));
+        let e = (0, r.bG)([h.Ay], () => h.Ay.supports(S.O5.DEBUG_LOGGING));
         return l.Av && e && null != m.A.fileManager.readLogFiles
     },
     Component: function() {
-        let e = (0, r.bG)([A.Ay], () => A.Ay.getDebugLogging()),
+        let e = (0, r.bG)([h.Ay], () => h.Ay.getDebugLogging()),
             t = b.useField("isUploading"),
             n = b.useField("isDisabled"),
             l = s.useId();

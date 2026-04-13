@@ -162,7 +162,7 @@ function x(e) {
     })
 }
 
-function h(e) {
+function A(e) {
     let t, {
         className: n,
         textVariant: s = "text-md/bold",
@@ -192,7 +192,7 @@ function h(e) {
     })
 }
 
-function A(e) {
+function h(e) {
     let {
         currentTier: t
     } = e, n = function(e) {
@@ -261,14 +261,14 @@ function p(e) {
                     })
                 })
             })
-        }), !u && (0, i.jsx)(h, {
+        }), !u && (0, i.jsx)(A, {
             textVariant: "text-md/normal",
             value: c.getTier0Value()
-        }), (0, i.jsx)(h, {
+        }), (0, i.jsx)(A, {
             value: c.getTier1Value()
-        }), (0, i.jsx)(h, {
+        }), (0, i.jsx)(A, {
             value: c.getTier2Value()
-        }), (0, i.jsx)(h, {
+        }), (0, i.jsx)(A, {
             value: c.getTier3Value()
         })]
     })
@@ -280,7 +280,7 @@ let T = function(e) {
             className: r,
             guild: a,
             hideHeading: u,
-            hideTier0: h
+            hideTier0: A
         } = e;
 
     function T() {
@@ -294,7 +294,7 @@ let T = function(e) {
             children: m.intl.string(m.t["9GGb9k"])
         }), (0, i.jsxs)("div", {
             className: g.wY,
-            children: [null != a && (0, i.jsx)(A, {
+            children: [null != a && (0, i.jsx)(h, {
                 currentTier: a.premiumTier
             }), (0, i.jsxs)("table", {
                 className: g.tp,
@@ -306,7 +306,7 @@ let T = function(e) {
                         children: [(0, i.jsx)(x, {
                             className: g.VC,
                             children: m.intl.string(m.t.F5MY0k)
-                        }), !h && (0, i.jsx)(x, {
+                        }), !A && (0, i.jsx)(x, {
                             tier: c.TVA.NONE,
                             children: m.intl.string(m.t.mx8j2m)
                         }), (0, i.jsx)(x, {
@@ -332,7 +332,7 @@ let T = function(e) {
                             handleRowBlur: T,
                             theme: t,
                             row: e,
-                            hideTier0: h
+                            hideTier0: A
                         }, s) : null
                     })
                 })]

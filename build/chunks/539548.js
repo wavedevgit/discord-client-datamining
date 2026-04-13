@@ -5,11 +5,11 @@ t.d(n, {
 var i = t(627968);
 t(64700);
 var a = t(311907),
-    r = t(397927),
-    l = t(517164),
+    l = t(397927),
+    r = t(517164),
     o = t(290863),
-    d = t(461213),
-    s = t(975571),
+    s = t(461213),
+    d = t(975571),
     c = t(622543),
     _ = t(146655),
     u = t(489379),
@@ -40,11 +40,11 @@ function E(e) {
     } = (0, u.A)({
         userId: n.id,
         guildId: E
-    }), R = (0, a.bG)([l.A], () => l.A.isFetchingUserOutbox(n.id)), L = n.id === t.id, P = (0, a.bG)([d.A, o.A], () => {
-        let e = L ? d.A.getStatus() : o.A.getStatus(n.id);
-        return e === r.clD.OFFLINE || e === r.clD.INVISIBLE
-    }), O = (0, a.bG)([c.A], () => c.A.getUserProfile(n.id)?.private === !0), D = j.length > 0 || null != S, k = !O && null == S && null == N && null != C, B = !P && (D || k), U = T.length > 0;
-    return B || U || !R ? (0, i.jsxs)(r.IpV, {
+    }), R = (0, a.bG)([r.A], () => r.A.isFetchingUserOutbox(n.id)), P = n.id === t.id, L = (0, a.bG)([s.A, o.A], () => {
+        let e = P ? s.A.getStatus() : o.A.getStatus(n.id);
+        return e === l.clD.OFFLINE || e === l.clD.INVISIBLE
+    }), O = (0, a.bG)([c.A], () => c.A.getUserProfile(n.id)?.private === !0), D = j.length > 0 || null != S, k = !O && null == S && null == N && null != C, B = !L && (D || k), U = T.length > 0;
+    return B || U || !R ? (0, i.jsxs)(l.IpV, {
         className: b.XG,
         fade: !0,
         children: [B ? (0, i.jsx)(p.A, {
@@ -76,9 +76,9 @@ function E(e) {
             })
         }) : null, U ? (0, i.jsx)(p.A, {
             heading: x.intl.string(x.t.M0zgnT),
-            introText: L ? x.intl.format(x.t["4bk9Ak"], {
-                learnMoreHook: (e, n) => (0, i.jsx)(r.MzZ, {
-                    href: s.A.getArticleURL(I.MVz.ACTIVITY_STATUS_SETTINGS),
+            introText: P ? x.intl.format(x.t["4bk9Ak"], {
+                learnMoreHook: (e, n) => (0, i.jsx)(l.MzZ, {
+                    href: d.A.getArticleURL(I.MVz.ACTIVITY_STATUS_SETTINGS),
                     children: e
                 }, n)
             }) : void 0,
@@ -96,6 +96,6 @@ function E(e) {
         }) : null]
     }) : (0, i.jsx)("div", {
         className: v.Ie,
-        children: (0, i.jsx)(r.y$y, {})
+        children: (0, i.jsx)(l.y$y, {})
     })
 }

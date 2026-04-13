@@ -20,8 +20,8 @@ function x(e) {
         guildId: t,
         variant: l = "admin",
         className: x,
-        analyticsLocation: h,
-        videoPlacement: A = "sidebar",
+        analyticsLocation: A,
+        videoPlacement: h = "sidebar",
         onDismiss: p
     } = e, {
         analyticsLocations: T
@@ -33,12 +33,12 @@ function x(e) {
             return n => (0, i.jsx)(e, {
                 ...n,
                 guildId: t,
-                analyticsLocation: h,
-                videoPlacement: A,
+                analyticsLocation: A,
+                videoPlacement: h,
                 sourceAnalyticsLocations: T
             })
         })
-    }, [h, T, t, A]);
+    }, [A, T, t, h]);
     return "member" === l ? (0, i.jsxs)(o.DUT, {
         className: r()(g.iR, x),
         onClick: f,

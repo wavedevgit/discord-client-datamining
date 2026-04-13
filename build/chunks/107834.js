@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(793574),
     _ = n(742589),
     x = n(876587),
-    h = n(65470),
-    A = n(400669),
+    A = n(65470),
+    h = n(400669),
     p = n(909536),
     T = n(287809),
     f = n(927578),
@@ -44,12 +44,12 @@ let v = a.Ay.connectStores([T.default], () => ({
                     }),
                     toolbar: u ? (0, i.jsxs)("div", {
                         className: C.fI,
-                        children: [(0, i.jsx)(A.l, {
+                        children: [(0, i.jsx)(h.l, {
                             ref: T,
                             size: "sm",
                             className: C.ij,
                             location: g.A.PREMIUM_WISHLIST_NITRO_MEMBER_HUB
-                        }), (0, i.jsx)(h.A, {
+                        }), (0, i.jsx)(A.A, {
                             variant: "secondary",
                             size: "sm"
                         })]

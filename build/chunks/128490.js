@@ -5,11 +5,11 @@ t.d(n, {
 var i = t(627968);
 t(64700);
 var a = t(311907),
-    r = t(397927),
-    l = t(734057),
+    l = t(397927),
+    r = t(734057),
     o = t(309010),
-    d = t(622543),
-    s = t(987112),
+    s = t(622543),
+    d = t(987112),
     c = t(389996),
     _ = t(743987),
     u = t(900179),
@@ -25,14 +25,14 @@ function f(e) {
         displayProfile: t,
         guildId: f,
         onClose: I
-    } = e, x = (0, a.bG)([d.A], () => d.A.getUserProfile(n.id)?.application), b = (0, a.bG)([l.A, o.A], () => l.A.getChannel(o.A.getChannelId()));
-    return (0, i.jsxs)(r.IpV, {
+    } = e, x = (0, a.bG)([s.A], () => s.A.getUserProfile(n.id)?.application), b = (0, a.bG)([r.A, o.A], () => r.A.getChannel(o.A.getChannelId()));
+    return (0, i.jsxs)(l.IpV, {
         fade: !0,
         className: m.XG,
         children: [(0, i.jsx)(c.E, {
             userBio: t?.bio,
             setLineClamp: !1
-        }), x?.popularApplicationCommandIds != null && null != b && (0, i.jsx)(s.A, {
+        }), x?.popularApplicationCommandIds != null && null != b && (0, i.jsx)(d.A, {
             applicationId: x.id,
             commandIds: x.popularApplicationCommandIds,
             channel: b,

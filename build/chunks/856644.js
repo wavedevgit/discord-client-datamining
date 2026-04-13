@@ -4,10 +4,10 @@ n.d(t, {
     EF: () => N,
     K5: () => f,
     L9: () => E,
-    SB: () => p,
+    SB: () => A,
     Vh: () => T,
     cG: () => j,
-    gz: () => A,
+    gz: () => p,
     uc: () => _
 }), n(321073);
 var i = n(64700),
@@ -24,9 +24,9 @@ var i = n(64700),
     x = n(927573),
     h = n(652215);
 let _ = 50,
-    A = 1e3;
+    p = 1e3;
 
-function p(e, t) {
+function A(e, t) {
     let n = (0, r.yK)([a.Ay], () => {
             let n = a.Ay.getMembers(e);
             return null == t ? n : n.filter(t)
@@ -62,7 +62,7 @@ function f(e, t, n) {
         s.current = n
     }), i.useEffect(() => {
         (0, g.a)(e, t).catch(s.current)
-    }, [e, t]), p(e, i.useCallback(e => e.roles.includes(t), [t]))
+    }, [e, t]), A(e, i.useCallback(e => e.roles.includes(t), [t]))
 }
 
 function j(e, t) {

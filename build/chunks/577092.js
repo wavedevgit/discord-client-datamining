@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(212637),
     h = n(931991),
     _ = n(942975),
-    A = n(434564),
-    p = n(363487),
+    p = n(434564),
+    A = n(363487),
     f = n(954571),
     j = n(473145),
     N = n(740816),
@@ -99,7 +99,7 @@ let y = e => {
             guild: t
         } = e, l = (0, N.A)(t.id), {
             analyticsLocations: u
-        } = (0, m.Ay)(), f = (0, A.A)(t.id), G = t.features.has(I.GuildFeatures.MORE_STICKERS) ? I.TVA.TIER_3 : t.premiumTier, L = t.features.has(I.GuildFeatures.MORE_STICKERS) ? I.M2T[I.TVA.TIER_3] : f, D = (0, p.A)(t.id);
+        } = (0, m.Ay)(), f = (0, p.A)(t.id), G = t.features.has(I.GuildFeatures.MORE_STICKERS) ? I.TVA.TIER_3 : t.premiumTier, L = t.features.has(I.GuildFeatures.MORE_STICKERS) ? I.M2T[I.TVA.TIER_3] : f, D = (0, A.A)(t.id);
         if (s.useEffect(() => {
                 window.dispatchEvent(new Event("resize"))
             }, [l]), "success" !== l.status) return (0, i.jsx)(d.y$y, {});
@@ -142,8 +142,8 @@ let y = e => {
             renderTier: e => {
                 var s;
                 let l, m, {
-                        isAnimatedTo: A,
-                        onSetRef: p,
+                        isAnimatedTo: p,
+                        onSetRef: A,
                         tier: N,
                         tiers: T,
                         tierIndex: y
@@ -209,8 +209,8 @@ let y = e => {
                 })), (0, i.jsxs)(C.A, {
                     subscriptionCount: L,
                     tier: N,
-                    onSetRef: p,
-                    isAnimatedTo: A,
+                    onSetRef: A,
+                    isAnimatedTo: p,
                     hasBottomMargin: y !== T.length - 1,
                     withCardBody: !Y,
                     headerButton: m,

@@ -43,7 +43,7 @@ function g(e) {
         buttonLabel: l,
         buttonCallback: r,
         disabled: o
-    } = e, [g, x] = s.useState(!1), h = n.flatMap(e => e.items.map(e => e.completed)), _ = h.filter(e => e).length / h.length, A = (0, d.zhh)({
+    } = e, [g, x] = s.useState(!1), h = n.flatMap(e => e.items.map(e => e.completed)), _ = h.filter(e => e).length / h.length, p = (0, d.zhh)({
         width: `${100*_}%`
     });
     return (0, i.jsxs)("div", {
@@ -63,7 +63,7 @@ function g(e) {
             className: u.ux,
             children: (0, i.jsx)(a.animated.div, {
                 className: u.zZ,
-                style: A
+                style: p
             })
         }), !g && n.map((e, t) => {
             let {

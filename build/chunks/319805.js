@@ -21,8 +21,8 @@ let _ = function(e) {
     let {
         guild: t,
         disabled: _,
-        role: A
-    } = e, p = (0, o.qE)(t.id, A), {
+        role: p
+    } = e, A = (0, o.qE)(t.id, p), {
         analyticsLocations: f
     } = (0, r.Ay)(), j = t.features.has(m.GuildFeatures.ROLE_ICONS), N = e => {
         j || ((0, l.zV)(m.HAw.PREMIUM_GUILD_PROMOTION_OPENED, {
@@ -67,8 +67,8 @@ let _ = function(e) {
             className: h.Mw,
             children: [(0, i.jsx)("div", {
                 className: h.i1,
-                children: null != p ? (0, i.jsx)(c.A, {
-                    ...p,
+                children: null != A ? (0, i.jsx)(c.A, {
+                    ...A,
                     className: h.s1,
                     enableTooltip: !1
                 }) : (0, i.jsx)(s.XGR, {
@@ -86,8 +86,8 @@ let _ = function(e) {
                     return n => (0, i.jsx)(e, {
                         ...n,
                         guildId: t.id,
-                        onUploadIcon: e => (0, u.n3)(A.id, e, null),
-                        onSelectUnicodeEmoji: e => (0, u.n3)(A.id, null, e)
+                        onUploadIcon: e => (0, u.n3)(p.id, e, null),
+                        onSelectUnicodeEmoji: e => (0, u.n3)(p.id, null, e)
                     })
                 }) : N({
                     object: m.ZSU.UPLOAD_IMAGE
@@ -95,9 +95,9 @@ let _ = function(e) {
                 variant: "primary",
                 disabled: _,
                 text: x.intl.string(x.t.mD1oGB)
-            }), null != p ? (0, i.jsx)(s.Button, {
+            }), null != A ? (0, i.jsx)(s.Button, {
                 onClick: () => {
-                    (0, u.n3)(A.id, null, null)
+                    (0, u.n3)(p.id, null, null)
                 },
                 variant: "critical-secondary",
                 disabled: _,

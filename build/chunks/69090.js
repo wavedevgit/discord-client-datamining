@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(361739),
     h = n(63104),
     _ = n(163013),
-    A = n(665013),
-    p = n(201275),
+    p = n(665013),
+    A = n(201275),
     f = n(35275),
     j = n(676608),
     N = n(657048),
@@ -56,20 +56,20 @@ function M(e) {
             search_type: "Roles"
         }), _.current = !0)
     }, [u]);
-    let A = s.useMemo(() => r.filter(e => (0, b.Vh)(e, h)), [r, h]),
-        p = s.useMemo(() => [...r, l], [r, l]),
+    let p = s.useMemo(() => r.filter(e => (0, b.Vh)(e, h)), [r, h]),
+        A = s.useMemo(() => [...r, l], [r, l]),
         {
             draggingId: f,
             handleDragStart: j,
             handleDragReset: N,
             handleDragComplete: v
-        } = (0, S.A)(p),
+        } = (0, S.A)(A),
         y = s.useCallback(e => {
             let {
                 row: s
             } = e;
-            if (0 === A.length) return (0, i.jsx)(k, {}, "empty-role");
-            let l = A[s];
+            if (0 === p.length) return (0, i.jsx)(k, {}, "empty-role");
+            let l = p[s];
             return (0, i.jsx)(U, {
                 role: l,
                 guild: n,
@@ -80,13 +80,13 @@ function M(e) {
                 onDragReset: N,
                 onDragComplete: v,
                 disableHover: null != f,
-                disableDrag: r.length !== A.length,
+                disableDrag: r.length !== p.length,
                 setEditRoleId: t,
                 setSelectedSection: a
             }, l.id)
-        }, [A, n, g, m, j, N, v, f, r, t, a]);
+        }, [p, n, g, m, j, N, v, f, r, t, a]);
     return (0, i.jsx)(x.ic, {
-        sections: [Math.max(A.length, 1)],
+        sections: [Math.max(p.length, 1)],
         sectionHeight: c,
         renderSection: o,
         rowHeight: 61,
@@ -118,7 +118,7 @@ function U(e) {
         highestRole: d,
         currentPosition: c,
         memberCount: x,
-        onDragStart: p,
+        onDragStart: A,
         onDragReset: j,
         onDragComplete: N,
         disableHover: E,
@@ -127,7 +127,7 @@ function U(e) {
         setSelectedSection: I
     } = e, b = (0, v.c)(l, d, t), S = null != b, [R, M] = s.useState(!1), k = s.useMemo(() => ({
         type: D,
-        item: () => (p(t.id), {
+        item: () => (A(t.id), {
             id: t.id,
             position: c
         }),
@@ -139,7 +139,7 @@ function U(e) {
             let n = t.getDropResult();
             null == n ? j() : N(n.roleId)
         }
-    }), [t, p, j, N, S, R, c]), [{
+    }), [t, A, j, N, S, R, c]), [{
         isDragging: U
     }, w] = (0, a.i)(k), B = s.useMemo(() => ({
         accept: D,
@@ -168,7 +168,7 @@ function U(e) {
                 guild: l
             })
         })
-    }, [l, t]), z = (0, A.x)(l, t);
+    }, [l, t]), z = (0, p.x)(l, t);
     if (U) return (0, i.jsx)("div", {
         ref: e => {
             w(e)
@@ -289,7 +289,7 @@ function P(e) {
         hasGradient: d,
         stops: u,
         gradientId: g
-    } = (0, c.RM)(n.colorStrings?.primaryColor, n.colorStrings?.secondaryColor, n.colorStrings?.tertiaryColor), x = (0, j.jV)(t, n), h = (0, p.$7)({
+    } = (0, c.RM)(n.colorStrings?.primaryColor, n.colorStrings?.secondaryColor, n.colorStrings?.tertiaryColor), x = (0, j.jV)(t, n), h = (0, A.$7)({
         guildId: t,
         roleId: n.id,
         size: s

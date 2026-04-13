@@ -24,12 +24,12 @@ function m(e) {
         hasChanges: x,
         editingRule: h,
         errorMessage: _,
-        saveEditingRule: A
+        saveEditingRule: p
     } = (0, d.S)(), {
-        updateRule: p
+        updateRule: A
     } = (0, o.wP)(t), f = null != h, j = f && !(0, a.wC)(h), N = f || x || j, E = async () => {
         if (!x && !j) return m();
-        null == h || j || p(h);
+        null == h || j || A(h);
         let e = n.find(e => {
             let {
                 id: t
@@ -37,10 +37,10 @@ function m(e) {
             return t === h?.id
         });
         try {
-            let e = await A(n);
-            null != e && p(e)
+            let e = await p(n);
+            null != e && A(e)
         } catch (t) {
-            null != e && p(e)
+            null != e && A(e)
         }
     }, T = c.intl.string(c.t["ETE/oC"]), C = !x && f ? c.intl.formatToPlainString(c.t.nula34, {
         ruleName: h?.name

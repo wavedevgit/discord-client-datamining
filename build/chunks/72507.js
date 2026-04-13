@@ -1,7 +1,7 @@
 /** chunk id: 72507 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    l: () => A
+    l: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -18,13 +18,13 @@ var i = n(627968),
     h = n(985018),
     _ = n(364872);
 
-function A(e) {
+function p(e) {
     let {
         guild: t,
         canManageGuild: n,
-        buttonClassName: A
+        buttonClassName: p
     } = e, {
-        analyticsLocations: p
+        analyticsLocations: A
     } = (0, r.Ay)(), f = t.features.has(m.GuildFeatures.INVITE_SPLASH), j = n && f, N = s.useRef(null), E = s.useCallback(e => {
         d.A.updateGuild({
             splash: e
@@ -32,16 +32,16 @@ function A(e) {
     }, []), T = s.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), (0, u.p_)({
             guild: t,
-            analyticsLocations: p,
+            analyticsLocations: A,
             analyticsSection: m.JJy.GUILD_INVITE_BACKGROUND,
             analyticsObject: m.ZSU.BUTTON_CTA,
             perks: (0, g.Lp)()
         })
-    }, [p, t]), C = s.useCallback(() => {
+    }, [A, t]), C = s.useCallback(() => {
         N.current?.activateUploadDialogue()
     }, []);
     return f ? (0, i.jsxs)("div", {
-        className: A,
+        className: p,
         children: [(0, i.jsx)(l.$nd, {
             disabled: !j,
             variant: "primary",
@@ -60,7 +60,7 @@ function A(e) {
             })
         })]
     }) : (0, i.jsx)("div", {
-        className: A,
+        className: p,
         children: (0, i.jsx)(c.u, {
             onClick: T
         })

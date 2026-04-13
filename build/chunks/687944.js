@@ -16,8 +16,8 @@ var s = n(990078),
     g = n(580630),
     _ = n(511484),
     x = n(811611),
-    h = n(473702),
-    A = n(788868),
+    A = n(473702),
+    h = n(788868),
     p = n(652215),
     T = n(985018),
     f = n(81431),
@@ -44,7 +44,7 @@ function b(e) {
     });
     if (null == d) return null;
     let u = (0, g.$g)(d.amount, s.currency),
-        _ = (0, m.y8)(A.gD.PREMIUM_MONTH_TIER_2, !1, !1, {
+        _ = (0, m.y8)(h.gD.PREMIUM_MONTH_TIER_2, !1, !1, {
             currency: t.currency,
             paymentSourceId: t.paymentSourceId
         }),
@@ -77,7 +77,7 @@ function C(e) {
     let {
         discountOffer: t,
         premiumSubscription: n
-    } = e, s = (0, _.tQ)(n, A.gD.PREMIUM_MONTH_TIER_2, t);
+    } = e, s = (0, _.tQ)(n, h.gD.PREMIUM_MONTH_TIER_2, t);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(l.Heading, {
             variant: "heading-xl/semibold",
@@ -100,7 +100,7 @@ let v = function(e) {
     let t, c, {
             subscription: g,
             invoicePreview: _,
-            isLoading: A,
+            isLoading: h,
             analyticsLocation: v,
             discountInfo: N,
             renewalChurnDiscountInfo: I,
@@ -165,8 +165,8 @@ let v = function(e) {
                                 icon: l.tvc,
                                 size: "md",
                                 text: T.intl.string(T.t.zrCzVB),
-                                loading: A,
-                                onClick: () => O(h.g.CONFIRM_DISCOUNT)
+                                loading: h,
+                                onClick: () => O(A.g.CONFIRM_DISCOUNT)
                             }) : (0, i.jsxs)("div", {
                                 className: f.qK,
                                 children: [(0, i.jsx)(s.m, {
@@ -191,7 +191,7 @@ let v = function(e) {
                                     variant: "secondary",
                                     size: "md",
                                     text: T.intl.string(T.t["ETE/oC"]),
-                                    loading: A,
+                                    loading: h,
                                     onClick: () => {
                                         g.status !== p.Dmq.CANCELED && O()
                                     }

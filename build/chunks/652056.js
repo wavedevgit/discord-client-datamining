@@ -1,7 +1,7 @@
 /** chunk id: 652056 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -18,14 +18,14 @@ var i = n(627968),
     h = n(985018),
     _ = n(223587);
 
-function A(e) {
+function p(e) {
     let {
         onDeleteEditState: t
     } = e, {
         editStateId: l,
-        guildId: A,
-        groupListingId: p
-    } = (0, m.O)(), f = (0, a.bG)([u.A], () => u.A.getSubscriptionListing(l)), j = f?.id, N = (0, g.A)(A), E = s.useMemo(() => null != N && null != f && (N[f.role_id] ?? 0), [N, f]), T = 0 === E, C = null == j, I = f?.archived ?? !1, {
+        guildId: p,
+        groupListingId: A
+    } = (0, m.O)(), f = (0, a.bG)([u.A], () => u.A.getSubscriptionListing(l)), j = f?.id, N = (0, g.A)(p), E = s.useMemo(() => null != N && null != f && (N[f.role_id] ?? 0), [N, f]), T = 0 === E, C = null == j, I = f?.archived ?? !1, {
         error: b,
         deleteSubscriptionListing: v,
         submitting: S
@@ -35,7 +35,7 @@ function A(e) {
         submitting: O
     } = (0, c.hc)(), {
         allowSelfRemoveMonetization: G
-    } = (0, d.nq)(A);
+    } = (0, d.nq)(p);
     return null == f ? null : (0, i.jsx)(x.A, {
         title: h.intl.string(h.t["7Si8Ul"]),
         children: (0, i.jsxs)(o.BJc, {
@@ -62,7 +62,7 @@ function A(e) {
                         variant: "critical-primary",
                         onClick: () => {
                             let e = async () => {
-                                (C || (r()(null != p, "group listing doesnt exist"), r()(null != j, "subscription listing doesnt exist"), await v(A, p, j))) && t?.()
+                                (C || (r()(null != A, "group listing doesnt exist"), r()(null != j, "subscription listing doesnt exist"), await v(p, A, j))) && t?.()
                             };
                             (0, o.mMO)(async () => {
                                 let {
@@ -102,7 +102,7 @@ function A(e) {
                 children: (0, i.jsx)(o.Button, {
                     variant: "critical-primary",
                     onClick: () => {
-                        r()(null != p, "group listing doesnt exist"), r()(null != j, "subscription listing doesnt exist"), (0, o.mMO)(async () => {
+                        r()(null != A, "group listing doesnt exist"), r()(null != j, "subscription listing doesnt exist"), (0, o.mMO)(async () => {
                             let {
                                 Modal: e
                             } = await Promise.resolve().then(n.bind(n, 158954));
@@ -118,7 +118,7 @@ function A(e) {
                                     text: h.intl.string(h.t.RL0wjm),
                                     variant: "critical-primary",
                                     onClick: async () => {
-                                        await R(A, p, j), t.onClose()
+                                        await R(p, A, j), t.onClose()
                                     }
                                 }],
                                 children: (0, i.jsx)(o.Text, {

@@ -4,12 +4,12 @@ t.d(n, {
 });
 var i = t(562465),
     a = t(73153),
-    r = t(287809),
-    l = t(652215);
+    l = t(287809),
+    r = t(652215);
 async function o(e, n) {
     try {
         let t = await i.Bo.put({
-            url: l.Rsh.USER_SET_GUILD_IDENTITY,
+            url: r.Rsh.USER_SET_GUILD_IDENTITY,
             body: {
                 identity_guild_id: e,
                 identity_enabled: n
@@ -19,7 +19,7 @@ async function o(e, n) {
         return t.ok && a.h.dispatch({
             type: "CURRENT_USER_UPDATE",
             user: {
-                ...r.default.getCurrentUser(),
+                ...l.default.getCurrentUser(),
                 ...t.body
             }
         }), t

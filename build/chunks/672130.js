@@ -23,8 +23,8 @@ let g = e => {
         canStartAuthorization: _,
         startAuthorization: x
     } = (0, c.RD)(n), {
-        analyticsLocations: h
-    } = (0, d.Ay)(o.A.USER_SETTINGS_CONNECTIONS), A = u.Ay.getApplicationIconURL({
+        analyticsLocations: A
+    } = (0, d.Ay)(o.A.USER_SETTINGS_CONNECTIONS), h = u.Ay.getApplicationIconURL({
         id: n.id,
         icon: n.icon
     });
@@ -38,10 +38,10 @@ let g = e => {
                     type: "button",
                     disabled: !_ || t,
                     style: {
-                        backgroundImage: `url('${A}')`
+                        backgroundImage: `url('${h}')`
                     },
                     onClick: () => x({
-                        analyticsLocations: h
+                        analyticsLocations: A
                     }),
                     "aria-label": n.name
                 })
