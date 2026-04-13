@@ -1,14 +1,14 @@
 /** chunk id: 486678 params = (module,exports,require) **/
-l.d(t, {
+t.d(l, {
     A: () => m
 });
-var n = l(311907),
-    i = l(397927),
-    s = l(919395),
-    a = l(101058),
-    r = l(836602),
-    o = l(996988),
-    d = l(985253);
+var n = t(311907),
+    i = t(397927),
+    s = t(919395),
+    a = t(101058),
+    r = t(836602),
+    o = t(996988),
+    d = t(985253);
 let c = (0, i.FT9)(d.T[o.d.MODAL_V2].avatarSize),
     u = {
         pendingThemeColors: void 0,
@@ -18,8 +18,8 @@ let c = (0, i.FT9)(d.T[o.d.MODAL_V2].avatarSize),
 
 function m(e) {
     let {
-        user: t,
-        guildId: l,
+        user: l,
+        guildId: t,
         allowEditingInModal: i
     } = e;
     return (0, n.cf)([r.A], () => {
@@ -28,19 +28,19 @@ function m(e) {
             pendingThemeColors: e,
             pendingAvatarDecoration: n,
             pendingAvatar: o
-        } = r.A.getPendingChanges(l);
+        } = r.A.getPendingChanges(t);
         return {
             pendingThemeColors: e,
             avatarDecorationOverride: void 0 === n ? void 0 : (0, s.lw)({
-                userValue: t.avatarDecoration,
+                userValue: l.avatarDecoration,
                 pendingValue: n,
-                guildId: l
+                guildId: t
             }),
             avatarOverride: (0, a.V7)({
-                userId: t.id,
+                userId: l.id,
                 image: o,
                 size: c
             })
         }
-    }, [t, l, i])
+    }, [l, t, i])
 }

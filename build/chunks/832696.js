@@ -1,28 +1,28 @@
 /** chunk id: 832696 params = (module,exports,require) **/
-l.d(t, {
+t.d(l, {
     A: () => p
 });
-var n = l(627968),
-    i = l(64700),
-    s = l(397927),
-    a = l(688810),
-    r = l(233971),
-    o = l(746174),
-    d = l(993401),
-    c = l(518477),
-    u = l(652215),
-    m = l(985018);
+var n = t(627968),
+    i = t(64700),
+    s = t(397927),
+    a = t(688810),
+    r = t(233971),
+    o = t(746174),
+    d = t(993401),
+    c = t(518477),
+    u = t(652215),
+    m = t(985018);
 
 function p(e) {
     let {
-        user: t,
-        onClose: l
+        user: l,
+        onClose: t
     } = e, {
         analyticsLocations: p
     } = (0, a.Ay)(), x = (0, o.j)("UserProfileGiftButton"), {
         openGiftModal: A
     } = (0, r.$)({
-        giftRecipient: t,
+        giftRecipient: l,
         analyticsLocations: p,
         analyticsObject: {
             page: u.liQ.USER_PROFILE,
@@ -32,8 +32,8 @@ function p(e) {
         },
         location: "user-profile-gift-button"
     }), g = i.useCallback(() => {
-        A(), l?.()
-    }, [A, l]);
+        A(), t?.()
+    }, [A, t]);
     return x ? (0, n.jsx)(d.q3, {
         action: c.pt.GIFT,
         icon: s.okO,

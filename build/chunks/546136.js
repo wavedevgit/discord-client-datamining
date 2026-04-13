@@ -1,31 +1,31 @@
 /** chunk id: 546136 params = (module,exports,require) **/
-l.d(t, {
+t.d(l, {
     Ay: () => N,
     _T: () => v,
     oA: () => j
 });
-var n = l(627968);
-l(64700);
-var i = l(503698),
-    s = l.n(i),
-    a = l(397927),
-    r = l(927578),
-    o = l(487233),
-    d = l(230635),
-    c = l(473219),
-    u = l(542454),
-    m = l(338003),
-    p = l(642737),
-    x = l(23722),
-    A = l(985018),
-    g = l(266603);
+var n = t(627968);
+t(64700);
+var i = t(503698),
+    s = t.n(i),
+    a = t(397927),
+    r = t(927578),
+    o = t(487233),
+    d = t(230635),
+    c = t(473219),
+    u = t(542454),
+    m = t(338003),
+    p = t(642737),
+    x = t(23722),
+    A = t(985018),
+    g = t(266603);
 let f = "profile-modal-editing-panel",
     h = "profile-modal-editing-panel-heading";
 
 function j(e) {
     let {
-        onClick: t,
-        className: l,
+        onClick: l,
+        className: t,
         innerRef: i
     } = e;
     return (0, n.jsx)(a.DUT, {
@@ -33,8 +33,8 @@ function j(e) {
         "aria-label": A.intl.string(A.t.N8XQDE),
         "aria-expanded": !1,
         "aria-controls": f,
-        className: s()(g.eg, l),
-        onClick: t,
+        className: s()(g.eg, t),
+        onClick: l,
         focusProps: {
             offset: {
                 right: 6
@@ -49,19 +49,19 @@ function j(e) {
 
 function v(e) {
     let {
-        onClick: t,
-        className: l,
+        onClick: l,
+        className: t,
         buttonRef: i
     } = e;
     return (0, n.jsx)("div", {
-        className: l,
+        className: t,
         children: (0, n.jsx)(a.K0, {
             buttonRef: i,
             "aria-label": A.intl.string(A.t.N8XQDE),
             "aria-expanded": !1,
             "aria-controls": f,
             icon: a.NDp,
-            onClick: t,
+            onClick: l,
             variant: "secondary",
             size: "sm"
         })
@@ -70,14 +70,14 @@ function v(e) {
 
 function I(e) {
     let {
-        onClick: t,
-        innerRef: l
+        onClick: l,
+        innerRef: t
     } = e;
     return (0, n.jsxs)(a.DUT, {
-        innerRef: l,
+        innerRef: t,
         className: g.cS,
         "aria-label": A.intl.string(A.t.X6NklS),
-        onClick: t,
+        onClick: l,
         "aria-controls": f,
         "aria-expanded": !0,
         children: [(0, n.jsx)(a._BQ, {
@@ -92,14 +92,14 @@ function I(e) {
 
 function N(e) {
     let {
-        user: t,
-        selectedGuildId: l,
+        user: l,
+        selectedGuildId: t,
         onSelectGuildId: i,
         isLoading: j = !1,
         onClose: v,
         className: N,
         collapseButtonRef: y
-    } = e, C = (0, x.A)(i), E = r.Ay.canUsePremiumProfileCustomization(t);
+    } = e, C = (0, x.A)(i), E = null != t, T = r.Ay.canUsePremiumProfileCustomization(l);
     return (0, n.jsxs)("aside", {
         id: f,
         "aria-labelledby": h,
@@ -116,7 +116,7 @@ function N(e) {
                 innerRef: y,
                 onClick: v
             }), (0, n.jsx)(p.A, {
-                selectedGuildId: l ?? null,
+                selectedGuildId: t ?? null,
                 onChange: C,
                 loading: j
             })]
@@ -131,9 +131,9 @@ function N(e) {
                         className: g.AM,
                         children: A.intl.string(A.t.x5CoXR)
                     }), (0, n.jsx)(c.A, {
-                        user: t,
-                        guildId: l,
-                        disabled: j
+                        user: l,
+                        guildId: t,
+                        disabled: j || E && !T
                     })]
                 }), (0, n.jsxs)("div", {
                     className: g.Os,
@@ -142,27 +142,27 @@ function N(e) {
                         className: g.AM,
                         children: A.intl.string(A.t["50Nwpc"])
                     }), (0, n.jsx)(o.A, {
-                        user: t,
-                        guildId: l,
-                        disabled: j
+                        user: l,
+                        guildId: t,
+                        disabled: j || E && !T
                     }), (0, n.jsx)(d.A, {
-                        user: t,
-                        guildId: l,
-                        disabled: j
+                        user: l,
+                        guildId: t,
+                        disabled: j || E && !T
                     })]
-                }), E && (0, n.jsxs)("div", {
+                }), T && (0, n.jsxs)("div", {
                     className: g.Os,
                     children: [(0, n.jsx)(a.Heading, {
                         variant: "text-sm/medium",
                         className: g.AM,
                         children: A.intl.string(A.t.Zenogr)
                     }), (0, n.jsx)(u.A, {
-                        user: t,
-                        guildId: l,
+                        user: l,
+                        guildId: t,
                         disabled: j
                     })]
                 })]
             })
-        }), !E && (0, n.jsx)(m.O, {})]
+        }), !T && (0, n.jsx)(m.O, {})]
     })
 }

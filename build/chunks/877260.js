@@ -29,9 +29,9 @@ function E(e) {
         footer: a,
         emptyState: g,
         searchBar: E
-    } = e, A = _.A.useField("showNavigationMobile"), N = i.useRef(null), [b] = i.useState(t), {
+    } = e, A = _.A.useField("showNavigationMobile"), b = i.useRef(null), [N] = i.useState(t), {
         accessibleDirectory: C
-    } = (0, p._)(), j = i.useMemo(() => (0, f.Z)(b, C), [b, C]), [T] = (0, d.kn)(j.allDismissibleContents);
+    } = (0, p._)(), j = i.useMemo(() => (0, f.Z)(N, C), [N, C]), [T] = (0, d.kn)(j.allDismissibleContents);
     (0, y.B)({
         visibleContent: T,
         dismissibleBadges: j,
@@ -43,7 +43,7 @@ function E(e) {
         return t.layout.forEach(t => {
             t.hoisted ? e.push(t) : n.push(t)
         }), [e, n]
-    }, [t.layout]), k = (0, h.NC)(), O = (0, c.A)("settings-sidebar", N);
+    }, [t.layout]), k = (0, h.NC)(), O = (0, c.A)("settings-sidebar", b);
     return (0, r.jsx)(u.NPJ, {
         theme: k,
         children: e => (0, r.jsxs)("div", {
@@ -80,7 +80,7 @@ function E(e) {
                         } = e;
                         return (0, r.jsxs)(u.ChK, {
                             ref: e => {
-                                N.current = e, m.A.setSidebarScrollerRef(e), t.current = e?.getScrollerNode() ?? null
+                                b.current = e, m.A.setSidebarScrollerRef(e), t.current = e?.getScrollerNode() ?? null
                             },
                             className: S.Mt,
                             fade: !0,

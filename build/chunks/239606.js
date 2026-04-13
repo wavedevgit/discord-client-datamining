@@ -1,81 +1,81 @@
 /** chunk id: 239606 params = (module,exports,require) **/
-l.d(t, {
+t.d(l, {
     A: () => eb
 });
-var n = l(627968),
-    i = l(64700),
-    s = l(503698),
-    a = l.n(s),
-    r = l(311907),
-    o = l(397927),
-    d = l(241524),
-    c = l(770178),
-    u = l(80682),
-    m = l(793574),
-    p = l(688810),
-    x = l(351966),
-    A = l(361628),
-    g = l(744808),
-    f = l(915089),
-    h = l(713517),
-    j = l(645507),
-    v = l(922590),
-    I = l(821269),
-    N = l(437774),
-    y = l(594832),
-    C = l(994500),
-    E = l(351906),
-    T = l(562153),
-    b = l(474090),
-    P = l(183555),
-    _ = l(622543),
-    O = l(591179),
-    R = l(950191),
-    S = l(101928),
-    L = l(837529),
-    D = l(346713),
-    U = l(672691),
-    G = l(195898),
-    M = l(486678),
-    k = l(567915),
-    F = l(716804),
-    w = l(679492),
-    V = l(718019),
-    B = l(31432),
-    z = l(915614),
-    W = l(389996),
-    H = l(223330),
-    $ = l(559506),
-    K = l(361311),
-    Y = l(886891),
-    Z = l(439053),
-    X = l(743987),
-    q = l(312381),
-    J = l(501193),
-    Q = l(383448),
-    ee = l(946356),
-    et = l(810396),
-    el = l(159218),
-    en = l(280645),
-    ei = l(291335),
-    es = l(807651),
-    ea = l(463156),
-    er = l(510059),
-    eo = l(546136),
-    ed = l(982599),
-    ec = l(399122),
-    eu = l(358826),
-    em = l(83013),
-    ep = l(878210),
-    ex = l(515054),
-    eA = l(513265),
-    eg = l(629747),
-    ef = l(160983),
-    eh = l(518477),
-    ej = l(652215),
-    ev = l(996988),
-    eI = l(985018),
-    eN = l(572841);
+var n = t(627968),
+    i = t(64700),
+    s = t(503698),
+    a = t.n(s),
+    r = t(311907),
+    o = t(397927),
+    d = t(241524),
+    c = t(770178),
+    u = t(80682),
+    m = t(793574),
+    p = t(688810),
+    x = t(351966),
+    A = t(361628),
+    g = t(744808),
+    f = t(915089),
+    h = t(713517),
+    j = t(645507),
+    v = t(922590),
+    I = t(821269),
+    N = t(437774),
+    y = t(594832),
+    C = t(994500),
+    E = t(351906),
+    T = t(562153),
+    b = t(474090),
+    P = t(183555),
+    _ = t(622543),
+    O = t(591179),
+    R = t(950191),
+    S = t(101928),
+    L = t(837529),
+    D = t(346713),
+    U = t(672691),
+    G = t(195898),
+    M = t(486678),
+    k = t(567915),
+    F = t(716804),
+    w = t(679492),
+    V = t(718019),
+    B = t(31432),
+    z = t(915614),
+    W = t(389996),
+    H = t(223330),
+    $ = t(559506),
+    K = t(361311),
+    Y = t(886891),
+    Z = t(439053),
+    X = t(743987),
+    q = t(312381),
+    J = t(501193),
+    Q = t(383448),
+    ee = t(946356),
+    el = t(810396),
+    et = t(159218),
+    en = t(280645),
+    ei = t(291335),
+    es = t(807651),
+    ea = t(463156),
+    er = t(510059),
+    eo = t(546136),
+    ed = t(982599),
+    ec = t(399122),
+    eu = t(358826),
+    em = t(83013),
+    ep = t(878210),
+    ex = t(515054),
+    eA = t(513265),
+    eg = t(629747),
+    ef = t(160983),
+    eh = t(518477),
+    ej = t(652215),
+    ev = t(996988),
+    eI = t(985018),
+    eN = t(572841);
 let ey = e => e * (2 - e),
     eC = {
         "compact-sm": {
@@ -89,8 +89,8 @@ let ey = e => e * (2 - e),
 
 function eE(e) {
     let {
-        user: t,
-        currentUser: l,
+        user: l,
+        currentUser: t,
         guildId: s,
         originGuildId: d,
         channelId: u,
@@ -103,11 +103,11 @@ function eE(e) {
         avatarOverride: T,
         allowEditing: P = !1,
         isLoading: _ = !1
-    } = e, O = t.id === l.id, R = i.useRef(null), {
+    } = e, O = l.id === t.id, R = i.useRef(null), {
         isHoveringOrFocusing: S
     } = (0, h.A)(R), [L, G] = i.useState(), M = i.useCallback(e => {
-        let t = e.contentRect.width;
-        t <= 350 ? G("compact-xs") : t <= 380 ? G("compact-sm") : G(void 0)
+        let l = e.contentRect.width;
+        l <= 350 ? G("compact-xs") : l <= 380 ? G("compact-sm") : G(void 0)
     }, []);
     (0, c.g)(R, M, [], {
         fireOnMount: !0
@@ -118,19 +118,19 @@ function eE(e) {
             relationshipType: w,
             originApplicationId: q
         } = (0, r.cf)([C.A], () => ({
-            relationshipType: C.A.getRelationshipType(t.id),
-            originApplicationId: C.A.getOriginApplicationId(t.id)
+            relationshipType: C.A.getRelationshipType(l.id),
+            originApplicationId: C.A.getOriginApplicationId(l.id)
         })),
         ea = (0, r.bG)([E.A], () => E.A.hidePersonalInformation),
         eo = (0, I.q)({
-            userId: t.id
+            userId: l.id
         }),
-        ed = (0, v.fi)(t.id),
+        ed = (0, v.fi)(l.id),
         {
             appIdentities: eu,
             connections: ep
-        } = (0, U.A)(t.id),
-        ex = (0, D.A)(t.id),
+        } = (0, U.A)(l.id),
+        ex = (0, D.A)(l.id),
         eA = P ? eg.A : z.A;
     return (0, n.jsxs)("main", {
         className: a()(eN.profile, null != L && eN[L]),
@@ -139,16 +139,16 @@ function eE(e) {
         children: [(0, n.jsxs)("div", {
             className: eN.profileHeader,
             children: [(0, n.jsx)(eA, {
-                user: t,
+                user: l,
                 displayProfile: m,
                 themeType: ev.d.MODAL_V2,
                 specOverrides: k
             }), (0, n.jsx)(Z.A, {
-                userId: t.id,
+                userId: l.id,
                 onClose: f,
                 className: eN.interactionToast
             }), (0, n.jsx)(V.A, {
-                user: t,
+                user: l,
                 displayProfile: m,
                 guildId: s,
                 channelId: u,
@@ -156,8 +156,8 @@ function eE(e) {
                 specOverrides: k,
                 avatarDecorationOverride: y,
                 avatarOverride: T
-            }), (0, n.jsx)(el.A, {
-                user: t,
+            }), (0, n.jsx)(et.A, {
+                user: l,
                 guildId: s,
                 channelId: u,
                 themeType: ev.d.MODAL_V2,
@@ -168,9 +168,9 @@ function eE(e) {
             fade: !0,
             className: eN.profileBody,
             children: [(0, n.jsx)($.A, {
-                userId: t.id
-            }), (0, n.jsx)(et.A, {
-                user: t,
+                userId: l.id
+            }), (0, n.jsx)(el.A, {
+                user: l,
                 guildId: m?.guildId ?? void 0,
                 onClose: f,
                 nickname: p,
@@ -184,7 +184,7 @@ function eE(e) {
             }), w === ej.eA$.PENDING_INCOMING && (0, n.jsx)(ee.A.Overlay, {
                 className: eN.profileOverlay,
                 children: (0, n.jsx)(Y.A, {
-                    user: t,
+                    user: l,
                     applicationId: q,
                     guildId: m?.guildId ?? void 0,
                     channelId: u,
@@ -192,20 +192,20 @@ function eE(e) {
                 })
             }), ed.map(e => {
                 let {
-                    applicationId: l
+                    applicationId: t
                 } = e;
                 return (0, n.jsx)(ee.A.Overlay, {
                     className: eN.profileOverlay,
                     children: (0, n.jsx)(Y.A, {
-                        user: t,
+                        user: l,
                         guildId: m?.guildId ?? void 0,
                         channelId: u,
                         isGameRelationship: !0,
-                        applicationId: l,
+                        applicationId: t,
                         className: eN.profileBanner
                     })
-                }, l)
-            }), t.isProvisional && (0, n.jsx)(ee.A.Overlay, {
+                }, t)
+            }), l.isProvisional && (0, n.jsx)(ee.A.Overlay, {
                 className: eN.profileOverlay,
                 children: (0, n.jsx)(em.A, {
                     heading: eI.intl.string(eI.t.Iyka0U),
@@ -216,15 +216,15 @@ function eE(e) {
                     }),
                     className: eN.profileBanner,
                     children: (0, n.jsx)(N.T, {
-                        userId: t.id,
+                        userId: l.id,
                         variant: "text-sm/normal"
                     })
                 })
             }), O && (0, n.jsx)(H.A, {
-                isPremiumUser: (0, b.ki)(l),
+                isPremiumUser: (0, b.ki)(t),
                 onInteraction: f
             }), (0, n.jsx)(Q.A, {
-                user: t,
+                user: l,
                 className: eN.profileBanner
             }), m?.private && (0, n.jsx)(ee.A.Overlay, {
                 className: eN.profileOverlay,
@@ -234,8 +234,8 @@ function eE(e) {
             }), (0, n.jsx)("div", {
                 className: eN.profileButtons,
                 children: (0, n.jsx)(es.A, {
-                    user: t,
-                    currentUser: l,
+                    user: l,
+                    currentUser: t,
                     guildId: s,
                     originGuildId: d,
                     channelId: u,
@@ -254,12 +254,12 @@ function eE(e) {
             }), (0, n.jsx)(em.A, {
                 heading: eI.intl.string(eI.t.a6XYD9),
                 children: (0, n.jsx)(X.A, {
-                    userId: t.id,
+                    userId: l.id,
                     guildId: m?.guildId,
                     tooltipDelay: eh.In
                 })
             }), m?.guildId != null && (0, n.jsx)(en.A, {
-                userId: t.id,
+                userId: l.id,
                 guildId: m.guildId,
                 className: eN.profileRolesSection,
                 headingVariant: "text-xs/medium",
@@ -270,7 +270,7 @@ function eE(e) {
                 children: (0, n.jsx)(er.A, {
                     applicationIdentities: eu,
                     connections: ep,
-                    userId: t.id,
+                    userId: l.id,
                     className: eN.profileAppConnections
                 })
             }), ex.length > 0 && (0, n.jsx)(em.A, {
@@ -282,7 +282,7 @@ function eE(e) {
                     className: eN.profileAppConnections
                 })
             }), (0, n.jsx)(ec.A, {
-                userId: t.id
+                userId: l.id
             })]
         }), m?.profileEffect != null && (0, n.jsx)(x.A, {
             skuId: m?.profileEffect.skuId,
@@ -293,8 +293,8 @@ function eE(e) {
 
 function eT(e) {
     let {
-        user: t,
-        displayProfile: l,
+        user: l,
+        displayProfile: t,
         pendingThemeColors: i,
         children: s
     } = e, {
@@ -302,8 +302,8 @@ function eT(e) {
         primaryColor: r,
         secondaryColor: o
     } = (0, S.A)({
-        user: t,
-        displayProfile: l,
+        user: l,
+        displayProfile: t,
         pendingThemeColors: i
     }), {
         profileThemeStyle: d,
@@ -323,8 +323,8 @@ function eT(e) {
 
 function eb(e) {
     let {
-        user: t,
-        currentUser: l,
+        user: l,
+        currentUser: t,
         guildId: s,
         originGuildId: c,
         channelId: x,
@@ -338,19 +338,19 @@ function eb(e) {
         onClose: b,
         sourceAnalyticsLocations: S = [],
         themeContainerClassName: D
-    } = e, U = t.id === l.id, {
+    } = e, U = l.id === t.id, {
         guildId: G,
         pendingGuildId: V,
         isLoading: B,
         selectUserProfile: z
     } = (0, k.A)({
-        userId: t.id,
+        userId: l.id,
         initialGuildId: s
     }), W = i.useMemo(() => null != G ? {
-        [G]: [t.id]
-    } : {}, [G, t.id]);
+        [G]: [l.id]
+    } : {}, [G, l.id]);
     (0, u.Eq)(W, "UserProfileModalV2");
-    let H = (0, R.Ay)(t.id, G),
+    let H = (0, R.Ay)(l.id, G),
         $ = (0, A.A)(H?.profileFrame?.skuId, "UserProfileModalV2"),
         K = (0, O.X)("UserProfileModalV2"),
         Y = U && K,
@@ -359,14 +359,14 @@ function eb(e) {
             avatarDecorationOverride: X,
             avatarOverride: J
         } = (0, M.A)({
-            user: t,
+            user: l,
             allowEditingInModal: Y,
             guildId: G
         }),
         {
             isExpanded: Q,
-            isAnimating: et,
-            transition: el,
+            isAnimating: el,
+            transition: et,
             canShowExpand: en,
             handleExpand: ei,
             handleCollapse: es,
@@ -376,7 +376,7 @@ function eb(e) {
                 collapseButtonRef: em
             }
         } = function() {
-            let [e, t] = i.useState(() => window.innerWidth > 928), [l, n] = i.useState(!1), s = (0, o.pnh)(e, {
+            let [e, l] = i.useState(() => window.innerWidth > 928), [t, n] = i.useState(!1), s = (0, o.pnh)(e, {
                 keys: e => e ? "panel" : "empty",
                 from: {
                     progress: 0
@@ -393,12 +393,12 @@ function eb(e) {
                 },
                 onRest: () => n(!1)
             }), a = (0, d.A)("(min-width: 929px) and (min-height: 550px)"), r = i.useRef(null), c = i.useRef(null), u = i.useRef(null), m = i.useRef(null), p = i.useCallback(() => {
-                m.current = "collapse", n(!0), t(!0)
+                m.current = "collapse", n(!0), l(!0)
             }, []), x = i.useCallback(() => {
-                m.current = "expand", n(!0), t(!1)
+                m.current = "expand", n(!0), l(!1)
             }, []);
             return i.useEffect(() => {
-                if (!l) {
+                if (!t) {
                     if ("collapse" === m.current && e) m.current = null, u.current?.focus();
                     else if ("expand" === m.current && !e) {
                         m.current = null;
@@ -406,11 +406,11 @@ function eb(e) {
                         e?.focus()
                     }
                 }
-            }, [e, l, a]), {
+            }, [e, t, a]), {
                 isExpanded: e,
-                isAnimating: l,
+                isAnimating: t,
                 transition: s,
-                canShowExpand: !e && !l,
+                canShowExpand: !e && !t,
                 handleExpand: p,
                 handleCollapse: x,
                 refs: {
@@ -424,11 +424,11 @@ function eb(e) {
         {
             defaultWishlistId: eh
         } = (0, r.cf)([_.A], () => ({
-            defaultWishlistId: _.A.getFirstWishlistId(t.id)
+            defaultWishlistId: _.A.getFirstWishlistId(l.id)
         }));
     (0, y.fw)({
         wishlistId: eh,
-        userId: t.id
+        userId: l.id
     });
     let ej = (0, w.fC)(),
         eC = B || null != ej.interactionType,
@@ -437,22 +437,22 @@ function eb(e) {
             size: 1024
         }),
         eP = (0, ef.A)({
-            user: t,
-            currentUser: l
+            user: l,
+            currentUser: t
         }),
         {
             analyticsLocations: e_
         } = (0, p.Ay)([...S, m.A.USER_PROFILE_MODAL_V2]),
         eO = (0, P.pb)({
             layout: "MODAL_V2",
-            userId: t.id,
+            userId: l.id,
             sourceSessionId: v,
             guildId: G,
             channelId: x,
             messageId: h,
             roleId: j
         }),
-        eR = T.Ay.useName(H?.guildId, x, t),
+        eR = T.Ay.useName(H?.guildId, x, l),
         eS = (0, f.GV)(),
         eL = eI.intl.format(eI.t.KRe1Fk, {
             name: eR
@@ -478,11 +478,11 @@ function eb(e) {
                                 className: a()(eN.layoutContainer, {
                                     [eN.editingPanelEnabled]: Y,
                                     [eN.editingPanelExpanded]: Y && Q,
-                                    [eN.isAnimating]: et,
+                                    [eN.isAnimating]: el,
                                     [eN.hasPrivateBanner]: H?.private === !0
                                 }),
                                 children: [(0, n.jsxs)(eT, {
-                                    user: t,
+                                    user: l,
                                     displayProfile: H,
                                     pendingThemeColors: Z,
                                     children: [(0, n.jsxs)("div", {
@@ -495,7 +495,7 @@ function eb(e) {
                                                 id: eS,
                                                 children: eL
                                             })
-                                        }), Y && (!Q || et) && (0, n.jsx)(eo._T, {
+                                        }), Y && (!Q || el) && (0, n.jsx)(eo._T, {
                                             buttonRef: er,
                                             onClick: ei,
                                             className: eN.editingPanelExpandButtonCompact
@@ -506,11 +506,11 @@ function eb(e) {
                                         className: eN.editingPanelExpandButtonDefault
                                     })]
                                 }), (0, n.jsxs)(o.Fmo, {
-                                    children: [Y && el((e, l) => l ? (0, n.jsx)(eo.Ay, {
+                                    children: [Y && et((e, t) => t ? (0, n.jsx)(eo.Ay, {
                                         className: a()(eN.editingPanel, {
                                             [eN.isExpanded]: Q
                                         }),
-                                        user: t,
+                                        user: l,
                                         selectedGuildId: V,
                                         onSelectGuildId: z,
                                         onClose: es,
@@ -518,7 +518,7 @@ function eb(e) {
                                         isLoading: B
                                     }) : null), (0, n.jsxs)(ee.A, {
                                         className: a()(D, eN.profileContentContainer),
-                                        user: t,
+                                        user: l,
                                         displayProfile: H,
                                         themeType: ev.d.MODAL_V2,
                                         pendingThemeColors: Z,
@@ -534,8 +534,8 @@ function eb(e) {
                                         }), (0, n.jsx)(eA.A, {
                                             className: eN.toast
                                         }), (0, n.jsx)(eE, {
-                                            user: t,
-                                            currentUser: l,
+                                            user: l,
+                                            currentUser: t,
                                             guildId: G,
                                             channelId: x,
                                             displayProfile: H,
@@ -549,8 +549,8 @@ function eb(e) {
                                             allowEditing: Y,
                                             isLoading: B
                                         }), (0, n.jsx)(ex.A, {
-                                            user: t,
-                                            currentUser: l,
+                                            user: l,
+                                            currentUser: t,
                                             displayProfile: H,
                                             guildId: G,
                                             channelId: x,
@@ -565,7 +565,7 @@ function eb(e) {
                                 })]
                             })
                         }), (0, n.jsx)(ed.A, {
-                            userId: t.id,
+                            userId: l.id,
                             guildId: G,
                             className: eN.pendingChangesToolbar
                         })]

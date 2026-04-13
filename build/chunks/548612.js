@@ -1,42 +1,42 @@
 /** chunk id: 548612 params = (module,exports,require) **/
-l.d(t, {
+t.d(l, {
     A: () => u
 });
-var n = l(627968),
-    i = l(64700),
-    s = l(317097),
-    a = l(397927),
-    r = l(930349),
-    o = l(985018),
-    d = l(881091);
+var n = t(627968),
+    i = t(64700),
+    s = t(317097),
+    a = t(397927),
+    r = t(930349),
+    o = t(985018),
+    d = t(881091);
 
 function c(e) {
     let {
-        color: t,
-        suggestedColors: l,
+        color: l,
+        suggestedColors: t,
         disabled: r,
         ariaLabel: o,
         onSelect: c
-    } = e, u = i.useRef(null), m = (0, s.Hl)(t);
+    } = e, u = i.useRef(null), m = (0, s.Hl)(l);
     return (0, n.jsx)(a.YNO, {
         targetElementRef: u,
         renderPopout: e => (0, n.jsx)(a.VNw, {
             ...e,
-            value: t,
+            value: l,
             onChange: c,
-            suggestedColors: l,
+            suggestedColors: t,
             showEyeDropper: !0
         }),
         children: e => {
             let {
-                onClick: t,
-                ...l
+                onClick: l,
+                ...t
             } = e;
             return (0, n.jsx)(a.DUT, {
-                ...l,
+                ...t,
                 innerRef: u,
                 className: d.Dh,
-                onClick: r ? void 0 : t,
+                onClick: r ? void 0 : l,
                 "aria-label": o,
                 "aria-disabled": r,
                 tabIndex: r ? -1 : 0,
@@ -53,13 +53,13 @@ function c(e) {
 
 function u(e) {
     let {
-        primaryColor: t,
-        secondaryColor: l,
+        primaryColor: l,
+        secondaryColor: t,
         onSelectPrimaryColor: i,
         onSelectSecondaryColor: a,
         suggestedColors: u,
         disabled: m = !1
-    } = e, p = (0, s.Hl)(t), x = (0, s.Hl)(l), A = `linear-gradient(to bottom, ${p}, ${x})`, g = o.intl.formatToPlainString(o.t.FquTfm, {
+    } = e, p = (0, s.Hl)(l), x = (0, s.Hl)(t), A = `linear-gradient(to bottom, ${p}, ${x})`, g = o.intl.formatToPlainString(o.t.FquTfm, {
         colorLabel: p
     }), f = o.intl.formatToPlainString(o.t.xOnm4z, {
         colorLabel: x
@@ -73,13 +73,13 @@ function u(e) {
                 background: A
             },
             children: [(0, n.jsx)(c, {
-                color: t,
+                color: l,
                 suggestedColors: u,
                 ariaLabel: g,
                 onSelect: i,
                 disabled: m
             }), (0, n.jsx)(c, {
-                color: l,
+                color: t,
                 suggestedColors: u,
                 ariaLabel: f,
                 onSelect: a,

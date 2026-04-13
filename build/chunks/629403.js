@@ -1,15 +1,15 @@
 /** chunk id: 629403 params = (module,exports,require) **/
-l.d(t, {
+t.d(l, {
     A: () => s
 });
-var n = l(562465),
-    i = l(652215);
+var n = t(562465),
+    i = t(652215);
 let s = {
-    updateNote(e, t) {
+    updateNote(e, l) {
         n.Bo.put({
             url: i.Rsh.NOTE(e),
             body: {
-                note: t
+                note: l
             },
             oldFormErrors: !0,
             rejectWithError: !0

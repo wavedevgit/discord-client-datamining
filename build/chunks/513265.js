@@ -1,20 +1,20 @@
 /** chunk id: 513265 params = (module,exports,require) **/
-l.d(t, {
+t.d(l, {
     A: () => h
 });
-var n = l(627968),
-    i = l(64700),
-    s = l(503698),
-    a = l.n(s),
-    r = l(294426),
-    o = l(311907),
-    d = l(397927),
-    c = l(775602),
-    u = l(606758),
-    m = l(518477),
-    p = l(985018),
-    x = l(439510),
-    A = l(886981);
+var n = t(627968),
+    i = t(64700),
+    s = t(503698),
+    a = t.n(s),
+    r = t(294426),
+    o = t(311907),
+    d = t(397927),
+    c = t(775602),
+    u = t(606758),
+    m = t(518477),
+    p = t(985018),
+    x = t(439510),
+    A = t(886981);
 let g = {
         [m.jM.WIDGET_ADDED]: {
             message: p.intl.string(p.t.fFP1Uy),
@@ -53,8 +53,8 @@ let g = {
     },
     f = e => {
         let {
-            message: t,
-            icon: l,
+            message: l,
+            icon: t,
             type: i
         } = e;
         return (0, n.jsxs)("div", {
@@ -62,21 +62,21 @@ let g = {
             "data-type": i,
             children: [(0, n.jsx)("div", {
                 className: x.RC,
-                children: l
+                children: t
             }), (0, n.jsx)(d.Text, {
                 color: "text-strong",
                 variant: "text-sm/semibold",
-                children: t
+                children: l
             })]
         })
     },
     h = e => {
         let {
-            className: t
-        } = e, l = (0, u.fu)(), s = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, p] = i.useState(!1), [A, h] = i.useState(null);
+            className: l
+        } = e, t = (0, u.fu)(), s = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, p] = i.useState(!1), [A, h] = i.useState(null);
         i.useEffect(() => {
-            null !== l ? (p(!0), h(g[l]), d.ORC.announce(g[l].message)) : p(!1)
-        }, [l]);
+            null !== t ? (p(!0), h(g[t]), d.ORC.announce(g[t].message)) : p(!1)
+        }, [t]);
         let j = (0, d.pnh)(m, {
             from: {
                 transform: s ? "translateY(0)" : "translateY(-12px)",
@@ -105,8 +105,8 @@ let g = {
                 return () => clearTimeout(e)
             }
         }, [m]), (0, n.jsx)(n.Fragment, {
-            children: j((e, l) => l && null !== A && (0, n.jsx)(r.animated.div, {
-                className: a()(t, x.Jt),
+            children: j((e, t) => t && null !== A && (0, n.jsx)(r.animated.div, {
+                className: a()(l, x.Jt),
                 style: e,
                 children: (0, n.jsx)(f, {
                     ...A
