@@ -25,8 +25,8 @@ var i = n(627968),
     v = n(853390),
     b = n(611010),
     T = n(961350),
-    N = n(734057),
-    y = n(290863),
+    y = n(734057),
+    N = n(290863),
     S = n(287809),
     j = n(954571),
     L = n(486020),
@@ -62,7 +62,7 @@ let F = l.memo(function(e) {
             analyticsLocations: v
         } = (0, A.Ay)(g.A.ACTIVITY_INSTANCE_EMBED),
         R = (0, c.p)(),
-        D = (0, a.bG)([N.A], () => N.A.getChannel(s), [s]),
+        D = (0, a.bG)([y.A], () => y.A.getChannel(s), [s]),
         F = D?.isThread?.() ? D?.parent_id : s,
         H = (0, a.bG)([T.default], () => T.default.getId()),
         {
@@ -76,10 +76,10 @@ let F = l.memo(function(e) {
         }), [F, n.id]),
         Y = V?.userIds,
         z = (0, a.yK)([S.default], () => Array.from(Y ?? []).map(e => S.default.getUser(e)).filter(P.Vq), [Y]),
-        Q = (0, a.bG)([y.A], () => {
+        Q = (0, a.bG)([N.A], () => {
             if (null == Y) return null;
             for (let e of Y) {
-                let t = y.A.findActivity(e, e => e.application_id === n.id);
+                let t = N.A.findActivity(e, e => e.application_id === n.id);
                 if (null != t) return t
             }
             return null

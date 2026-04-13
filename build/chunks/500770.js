@@ -87,8 +87,8 @@ function p(e) {
         hideRoleTag: v = !1,
         lineClamp: b = 1,
         cardWidth: T = 332,
-        cardHeight: N,
-        thumbnailHeight: y = 187,
+        cardHeight: y,
+        thumbnailHeight: N = 187,
         descriptionTextVariant: S = "text-sm/normal",
         isDraft: j = !1
     } = e, L = (0, a.Ld)(), R = (0, i.jsxs)(i.Fragment, {
@@ -100,7 +100,7 @@ function p(e) {
                 src: t,
                 className: m.K_,
                 style: {
-                    height: y
+                    height: N
                 }
             })
         }), (0, i.jsxs)("div", {
@@ -159,7 +159,7 @@ function p(e) {
     }) : (0, i.jsx)("div", {
         style: {
             width: T,
-            height: N
+            height: y
         },
         children: (0, i.jsx)(r.sqX, {
             tag: "article",

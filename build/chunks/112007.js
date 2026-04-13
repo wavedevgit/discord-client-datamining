@@ -25,8 +25,8 @@ var i = n(627968),
     v = n(505417),
     b = n(168428),
     T = n(652215),
-    N = n(985018),
-    y = n(366228);
+    y = n(985018),
+    N = n(366228);
 
 function S(e) {
     let t, S, j, {
@@ -93,7 +93,7 @@ function S(e) {
         isStream: !1
     });
     return S = (0, i.jsxs)("span", {
-        className: y.FA,
+        className: N.FA,
         children: [(0, i.jsx)(g.A, {
             guildId: P.id,
             name: P.name,
@@ -105,7 +105,7 @@ function S(e) {
                 ref: $
             })
         }), (0, i.jsx)("span", {
-            className: y.E3,
+            className: N.E3,
             children: (0, i.jsx)(A.A, {
                 guild: P,
                 isBannerVisible: !1,
@@ -114,20 +114,20 @@ function S(e) {
         })]
     }), W && (j = (0, i.jsx)(d.m, {
         asContainer: !0,
-        text: N.intl.string(N.t["/FeTK6"]),
+        text: y.intl.string(y.t["/FeTK6"]),
         children: (0, i.jsx)(c.mir, {
             size: "md",
             color: "currentColor",
-            className: y.G
+            className: N.G
         })
     })), Y ? (S = (0, i.jsx)(f.A.Channel, {
         channel: F
     }), t = (0, i.jsxs)("span", {
-        className: y.FA,
-        children: [N.intl.format(N.t["2wimj5"], {
+        className: N.FA,
+        children: [y.intl.format(y.t["2wimj5"], {
             guildName: P.name
         }), (0, i.jsx)("span", {
-            className: y.E3,
+            className: N.E3,
             children: (0, i.jsx)(A.A, {
                 guild: P,
                 isBannerVisible: !1
@@ -147,7 +147,7 @@ function S(e) {
             extra: j
         }), (0, i.jsxs)(f.A.Body, {
             children: [(0, i.jsxs)("div", {
-                className: y.iH,
+                className: N.iH,
                 children: [(0, i.jsx)(f.A.Icon, {
                     guild: P
                 }), (0, i.jsx)(f.A.Info, {
@@ -156,23 +156,23 @@ function S(e) {
                     children: t
                 })]
             }), (0, i.jsx)("div", {
-                className: y.UD,
+                className: N.UD,
                 children: (0, i.jsx)(c.Button, {
                     onClick: en,
                     loading: G,
                     variant: "active",
                     fullWidth: Y,
                     disabled: !ee,
-                    text: Y ? q ? N.intl.string(N.t["7vb2cc"]) : N.intl.string(N.t.gpqgah) : H ? N.intl.string(N.t.cEnaWx) : N.intl.string(N.t.XpeFYr)
+                    text: Y ? q ? y.intl.string(y.t["7vb2cc"]) : y.intl.string(y.t.gpqgah) : H ? y.intl.string(y.t.cEnaWx) : y.intl.string(y.t.XpeFYr)
                 })
             })]
         }), P.features.has(T.GuildFeatures.HUB) && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
-                className: y.me
+                className: N.me
             }), (0, i.jsx)(c.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
-                children: N.intl.format(N.t["/o1IfA"], {
+                children: y.intl.format(y.t["/o1IfA"], {
                     onClick: () => (0, c.mMO)(async () => {
                         let {
                             default: e

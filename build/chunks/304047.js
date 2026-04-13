@@ -126,8 +126,8 @@ function I(e) {
         targetElementRef: u,
         shouldShow: c,
         animation: o.Y.Animation.FADE,
-        position: "top",
-        align: "center",
+        position: "right",
+        align: "bottom",
         spacing: 8,
         onRequestClose: m,
         renderPopout: () => (0, i.jsx)(A.fd, {
@@ -165,8 +165,8 @@ function T(e) {
         targetElementRef: g,
         shouldShow: h,
         animation: o.Y.Animation.FADE,
-        position: "top",
-        align: "center",
+        position: "left",
+        align: "bottom",
         spacing: 8,
         onRequestClose: E,
         renderPopout: () => (0, i.jsx)(A.Z, {

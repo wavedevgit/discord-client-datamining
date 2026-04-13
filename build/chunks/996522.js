@@ -59,7 +59,7 @@ function I(e) {
                 children: (0, p.aK)(u)
             })]
         })),
-        N = null != b && b > 0;
+        y = null != b && b > 0;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             className: s()(C.GI, {
@@ -101,7 +101,7 @@ function I(e) {
                         children: v
                     }), (0, i.jsx)("span", {
                         className: C.lO,
-                        "aria-hidden": !N,
+                        "aria-hidden": !y,
                         children: (0, _.ub)(b, m.id)
                     })]
                 }), (0, i.jsx)(a.Text, {

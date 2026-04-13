@@ -25,8 +25,8 @@ var i = n(627968),
     v = n(713654),
     b = n(21599),
     T = n(734057),
-    N = n(71393),
-    y = n(576705),
+    y = n(71393),
+    N = n(576705),
     S = n(287809),
     j = n(954571),
     L = n(486020),
@@ -138,7 +138,7 @@ function G(e) {
                 invite_inviter_id: s.inviter?.id
             })
         }, [s.inviter?.id, A.id]),
-        f = (0, d.bG)([N.A], () => null != s.guild ? N.A.getGuild(s.guild.id) : null, [s]),
+        f = (0, d.bG)([y.A], () => null != s.guild ? y.A.getGuild(s.guild.id) : null, [s]),
         C = (0, E.A)([A.id])[0],
         I = (0, d.bG)([_.Ay], () => s?.channel != null && _.Ay.getSelfEmbeddedActivityForChannel(s.channel.id)?.applicationId === A.id),
         v = (0, d.bG)([_.Ay], () => (s.channel?.id != null ? _.Ay.getEmbeddedActivitiesForChannel(s.channel.id) : []).some(e => {
@@ -148,7 +148,7 @@ function G(e) {
             return A.id === t
         })),
         L = T.A.getChannel(s.channel?.id),
-        M = (0, d.bG)([y.A], () => null != L && y.A.can(D.xBc.USE_EMBEDDED_ACTIVITIES, L), [L]),
+        M = (0, d.bG)([N.A], () => null != L && N.A.can(D.xBc.USE_EMBEDDED_ACTIVITIES, L), [L]),
         {
             analyticsLocations: k
         } = (0, p.Ay)(h.A.INVITE_EMBED),
@@ -221,7 +221,7 @@ function F(e) {
         id: t.id,
         icon: b,
         bot: v
-    }), N = (0, C.F)(t), y = (0, f.f)(t), S = n.length, j = l.useMemo(() => [{
+    }), y = (0, C.F)(t), N = (0, f.f)(t), S = n.length, j = l.useMemo(() => [{
         label: _,
         trackingArea: s ? x.kY.PLAY : x.kY.JOIN_SERVER,
         submitting: m,
@@ -233,8 +233,8 @@ function F(e) {
         header: t.name,
         title: O.intl.string(O.t["7vb6nw"]),
         iconSrc: T,
-        ...y,
-        onClickBanner: N,
+        ...N,
+        onClickBanner: y,
         info: (0, i.jsxs)("div", {
             className: k.QR,
             children: [(0, i.jsx)(B, {
@@ -255,7 +255,7 @@ function F(e) {
             })]
         }),
         actions: j,
-        onClickContent: N,
+        onClickContent: y,
         trackingConfig: {
             id: t.id,
             linkType: M.J.ACTIVITY_INVITE,

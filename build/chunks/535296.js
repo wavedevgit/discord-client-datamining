@@ -198,7 +198,7 @@ function W(e) {
         applicationId: n,
         channel: a,
         numItems: 8
-    }), M = "loading" === T || 0 === v.length || null == g, L = l.useMemo(() => null == g || 0 === v.length ? [] : v.map(e => {
+    }), M = "loading" === T || 0 === v.length || null == g, L = l.useMemo(() => null == g || 0 === v.length ? [] : (v.length > 8 ? v.slice(0, 8) : v).map(e => {
         let n = (y[e.id] ?? {})[t] === E.j.WISHLIST;
         return (0, i.jsx)(R.A, {
             sku: e,
@@ -304,22 +304,23 @@ function z(e) {
         userId: t,
         applicationId: n,
         channel: a,
-        numItems: 7
+        numItems: 8
     }), T = "loading" === g || 0 === f.length || null == h, [v, y] = l.useMemo(() => {
         if (null == h || 0 === f.length) return [null, []];
-        let e = (S[f[0].id] ?? {})[t] === E.j.WISHLIST;
+        let e = f.length > 7 ? f.slice(0, 7) : f,
+            n = (S[e[0].id] ?? {})[t] === E.j.WISHLIST;
         return [(0, i.jsx)(j.A, {
-            sku: f[0],
+            sku: e[0],
             targetUser: h,
             isTargetingCurrentUser: m,
-            source: e ? _.uS.WISHLIST : _.uS.POPULAR,
+            source: n ? _.uS.WISHLIST : _.uS.POPULAR,
             guildId: a.guild_id,
             channelId: a.id,
             showIcons: I,
             analyticsLocations: u,
             onCardClick: s,
             onButtonClick: s
-        }), f.slice(1).map(e => {
+        }), e.slice(1).map(e => {
             let n = (S[e.id] ?? {})[t] === E.j.WISHLIST;
             return (0, i.jsx)(R.A, {
                 sku: e,

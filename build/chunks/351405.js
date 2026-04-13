@@ -1,6 +1,6 @@
 /** chunk id: 351405 params = (module,exports,require) **/
 n.d(t, {
-    P: () => y
+    P: () => N
 }), n(321073);
 var i = n(627968),
     l = n(64700),
@@ -26,7 +26,7 @@ var i = n(627968),
     b = n(272984),
     T = n(772234);
 
-function N(e) {
+function y(e) {
     let {
         partyMembers: t,
         partySize: n,
@@ -56,14 +56,14 @@ function N(e) {
     })
 }
 
-function y(e) {
+function N(e) {
     let {
         analyticsLocations: t,
         app: n,
         channel: r,
         message: g,
         hideParty: T,
-        onView: y
+        onView: N
     } = e, S = (0, a.b)(n), j = (0, s.bG)([c.default], () => c.default.getId()), L = (0, s.bG)([_.A], () => {
         if (null == g.application) return _.A.findActivity(g.author.id, e => e.type === v.$pd.LISTENING);
         {
@@ -76,7 +76,7 @@ function y(e) {
     } = (0, f._)(L), w = l.useMemo(() => P.map(e => {
         let t = p.default.getUser(e);
         return null != t ? t : C.mt
-    }), [P]), O = l.useMemo(() => (0, i.jsx)(N, {
+    }), [P]), O = l.useMemo(() => (0, i.jsx)(y, {
         partyMembers: w,
         partySize: D,
         maxPartySize: M,
@@ -88,7 +88,7 @@ function y(e) {
         currentUserPresenceActivity: R,
         hideParty: T,
         message: g,
-        onView: y,
+        onView: N,
         partyStatusElement: O,
         presenceActivity: L,
         guildId: r.guild_id
@@ -106,7 +106,7 @@ function y(e) {
         currentUserPresenceActivity: R,
         hideParty: T,
         message: g,
-        onView: y,
+        onView: N,
         partyStatusElement: O,
         presenceActivity: L
     })

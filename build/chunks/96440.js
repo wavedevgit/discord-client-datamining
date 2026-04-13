@@ -30,14 +30,14 @@ function b(e) {
         customId: n,
         customLink: b,
         referrerId: T,
-        message: N
-    } = e, y = t?.bot?.id, S = (0, d.Vr)({
+        message: y
+    } = e, N = t?.bot?.id, S = (0, d.Vr)({
         context: {
             type: "contextless"
         },
         applicationId: t.id,
         botUserId: t?.bot?.id
-    }), j = null != t && (0, o.Ag)(t), L = null != y && j && S, {
+    }), j = null != t && (0, o.Ag)(t), L = null != N && j && S, {
         analyticsLocations: R
     } = (0, r.Ay)(s.A.ACTIVITY_CUSTOM_LINK), P = (0, l.bG)([A.A], () => A.A.getChannelId()), D = (0, I.et)(P), M = (0, l.bG)([C.Ay], () => {
         if (null == P) return;
@@ -73,7 +73,7 @@ function b(e) {
         onClick() {
             (0, a.Q)({
                 appId: t.id,
-                botId: y,
+                botId: N,
                 analyticsLocations: R,
                 customId: B,
                 referrerId: T
@@ -100,9 +100,9 @@ function b(e) {
             linkType: c.J.CUSTOM_ACTIVITY_LINK,
             referrerId: T,
             activityCustomId: B,
-            guildId: g.A.getChannel(N.channel_id)?.guild_id,
-            channelId: N.channel_id,
-            messageId: N.id
+            guildId: g.A.getChannel(y.channel_id)?.guild_id,
+            channelId: y.channel_id,
+            messageId: y.id
         }
     })
 }
