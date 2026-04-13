@@ -1,6 +1,7 @@
 /** chunk id: 473336 params = (module,exports,require) **/
 n.d(t, {
     C2: () => u,
+    EJ: () => h,
     H9: () => m,
     _D: () => r,
     b5: () => d,
@@ -67,4 +68,11 @@ function m(e, t) {
         b: s,
         a: l
     }
+}
+
+function h(e, t) {
+    let n = i.A.unsafe_rawColors[e].resolve();
+    return null != t ? n.hex({
+        opacity: t
+    }) : n.hex()
 }

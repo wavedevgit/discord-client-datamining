@@ -52,7 +52,7 @@ function V(e) {
         idle: a,
         width: s,
         premiumIndicator: o
-    } = e, c = (0, r.bG)([T.A], () => T.A.getActiveStreamForUser(t.user.id, t.stream.guildId)), d = (0, U.V)(s);
+    } = e, c = (0, r.bG)([T.A], () => T.A.getActiveStreamForUser(t.user.id, t.stream.guildId)), d = (0, U.VE)(s);
     return (0, i.jsxs)(i.Fragment, {
         children: [n || l ? null : (0, i.jsx)(P.A, {
             participant: t

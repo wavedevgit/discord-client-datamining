@@ -7,22 +7,22 @@ var n = r(64700),
     i = r(954571),
     s = r(927578),
     a = r(440938),
-    u = r(590180),
-    o = r(993408),
-    d = r(331884),
-    c = r(652215);
+    o = r(590180),
+    u = r(993408),
+    c = r(331884),
+    d = r(652215);
 
 function p(e, t) {
     let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "product",
         p = (0, a.uM)(),
-        m = (0, l.bG)([u.A], () => u.A.getProduct(e)),
-        x = (0, d.i)(),
-        g = s.Ay.canUseCollectibles(x),
-        h = n.useRef(null),
-        C = n.useCallback(() => {
-            let n = null != m ? (0, o.Br)(m, g, !1) : null,
-                l = null != m ? (0, o.c7)(m, g, !1) : void 0;
-            i.default.track(c.HAw.COLLECTIBLES_TILE_IMPRESSION, {
+        C = (0, l.bG)([o.A], () => o.A.getProduct(e)),
+        k = (0, c.i)(),
+        m = s.Ay.canUseCollectibles(k),
+        x = n.useRef(null),
+        g = n.useCallback(() => {
+            let n = null != C ? (0, u.Br)(C, m, !1) : null,
+                l = null != C ? (0, u.c7)(C, m, !1) : void 0;
+            i.default.track(d.HAw.COLLECTIBLES_TILE_IMPRESSION, {
                 collectibles_shop_session_id: p?.sessionId,
                 sku_id: e,
                 display_price: n?.amount,
@@ -35,15 +35,15 @@ function p(e, t) {
                 type: r,
                 category_position: p?.categoryPosition
             })
-        }, [p?.sessionId, p?.categoryPosition, p?.pageCategory, p?.pageSection, p?.tilePosition, g, t, m, e, r]),
-        A = n.useCallback(e => {
-            e ? null === h.current && (h.current = setTimeout(() => {
-                C(), h.current = null
-            }, 1e3)) : null !== h.current && (clearTimeout(h.current), h.current = null)
-        }, [C]);
+        }, [p?.sessionId, p?.categoryPosition, p?.pageCategory, p?.pageSection, p?.tilePosition, m, t, C, e, r]),
+        h = n.useCallback(e => {
+            e ? null === x.current && (x.current = setTimeout(() => {
+                g(), x.current = null
+            }, 1e3)) : null !== x.current && (clearTimeout(x.current), x.current = null)
+        }, [g]);
     return n.useEffect(() => () => {
-        null !== h.current && (clearTimeout(h.current), h.current = null)
+        null !== x.current && (clearTimeout(x.current), x.current = null)
     }, []), {
-        handleCardVisibilityChange: A
+        handleCardVisibilityChange: h
     }
 }

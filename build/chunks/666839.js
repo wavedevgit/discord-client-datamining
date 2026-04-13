@@ -1,6 +1,6 @@
 /** chunk id: 666839 params = (module,exports,require) **/
 r.d(t, {
-    A: () => o
+    A: () => u
 });
 var n = r(627968);
 r(64700);
@@ -8,7 +8,7 @@ var l = r(298072),
     i = r(561769),
     s = r(139146),
     a = r(673136);
-let u = e => {
+let o = e => {
         let {
             product: t,
             selectedVariantIndex: r,
@@ -23,15 +23,15 @@ let u = e => {
             onTrackClick: i
         })
     },
-    o = e => {
+    u = e => {
         let {
             skuId: t,
             isCardHovered: r,
             onTrackClick: s
-        } = e, a = (0, i.Vm)(t), o = (0, l.Q)(a);
-        return null == a ? null : (0, n.jsx)(u, {
+        } = e, a = (0, i.Vm)(t), u = (0, l.Q)(a);
+        return null == a ? null : (0, n.jsx)(o, {
             product: a,
-            selectedVariantIndex: o,
+            selectedVariantIndex: u,
             isCardHovered: r,
             onTrackClick: s
         })

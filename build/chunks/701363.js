@@ -23,9 +23,9 @@ var l = n(627968),
     T = n(3026),
     p = n(435371),
     g = n(397927),
-    h = n(308528),
-    C = n(442433),
-    S = n(765671),
+    C = n(308528),
+    S = n(442433),
+    h = n(765671),
     x = n(960076),
     v = n(397244),
     I = n(714114),
@@ -197,8 +197,8 @@ let ef = e => {
         "aria-posinset": N,
         "aria-setsize": T,
         listItemRef: p,
-        showHoverGradient: h = !1,
-        nitroHoverGradient: C = !1,
+        showHoverGradient: C = !1,
+        nitroHoverGradient: S = !1,
         hoverGradientStart: x,
         hoverGradientMiddle: v,
         hoverGradientEnd: I,
@@ -206,7 +206,7 @@ let ef = e => {
     } = e, {
         width: M,
         ref: b
-    } = (0, S.Ay)(), y = s.useRef(null), L = p ?? y;
+    } = (0, h.Ay)(), y = s.useRef(null), L = p ?? y;
     return (0, l.jsx)(V.A, {
         className: r()(ea.Ix, {
             [ea.Ij]: _.Fr
@@ -226,9 +226,9 @@ let ef = e => {
             className: r()(o, ea.bG, ea.$J, {
                 [ea.Q2]: n
             }),
-            children: [h && (0, l.jsx)(eE, {
+            children: [C && (0, l.jsx)(eE, {
                 eventTargetRef: L,
-                isNitro: C,
+                isNitro: S,
                 contentWidth: M,
                 hoverGradientStart: x,
                 hoverGradientMiddle: v,
@@ -241,7 +241,7 @@ let ef = e => {
                 className: ea.nf,
                 ...R,
                 children: [(0, l.jsx)(j.A, {
-                    ref: h ? b : void 0,
+                    ref: C ? b : void 0,
                     muted: !1,
                     avatar: (0, l.jsx)(i, {
                         size: "refresh_sm",
@@ -263,7 +263,7 @@ function e_(e) {
         user: a,
         activities: _,
         applicationStream: p,
-        voiceChannel: S,
+        voiceChannel: h,
         isTyping: I,
         status: w,
         isMobile: Q,
@@ -272,9 +272,9 @@ function e_(e) {
         ref: ee,
         "aria-posinset": en,
         "aria-setsize": el
-    } = e, [es, eE] = s.useState(!1), [ef, e_] = s.useState(!1), [eN, eT] = s.useState(!1), ep = s.useRef(null), [eg, eh] = s.useState(!1), eC = (0, A.K)(s.useCallback(e => {
-        eh(e)
-    }, [])), eS = s.useRef(null), ex = ee ?? eS, ev = (0, m.A)(ex, eC), {
+    } = e, [es, eE] = s.useState(!1), [ef, e_] = s.useState(!1), [eN, eT] = s.useState(!1), ep = s.useRef(null), [eg, eC] = s.useState(!1), eS = (0, A.K)(s.useCallback(e => {
+        eC(e)
+    }, [])), eh = s.useRef(null), ex = ee ?? eh, ev = (0, m.A)(ex, eS), {
         showMenuItemPopover: eI,
         markMenuItemPopoverAsDismissed: eR
     } = (0, H.z)({
@@ -308,16 +308,16 @@ function e_(e) {
         e_(!1)
     }, eX = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-        null != e && (e.preventDefault(), e.stopPropagation()), h.A.closePrivateChannel(t.id, i, n)
+        null != e && (e.preventDefault(), e.stopPropagation()), C.A.closePrivateChannel(t.id, i, n)
     }, eZ = () => {
-        h.A.preload(ei.ME, t.id)
+        C.A.preload(ei.ME, t.id)
     }, e0 = e => {
         e.stopPropagation()
     }, e1 = e => {
         e.target === e.currentTarget && ep.current?.click()
     }, e2 = e => {
         let s = "contextmenu" === e.type ? c.ImpressionNames.DM_LIST_RIGHT_CLICK_MENU_SHOWN : c.ImpressionNames.DM_LIST_KEBAB_MENU_SHOWN;
-        eT(!0), t.isMultiUserDM() ? (0, C.L3)(e, async () => {
+        eT(!0), t.isMultiUserDM() ? (0, S.L3)(e, async () => {
             let {
                 default: e
             } = await Promise.all([n.e("97262"), n.e("60200")]).then(n.bind(n, 4027));
@@ -330,7 +330,7 @@ function e_(e) {
             impressionName: s,
             noBlurEvent: !0,
             onClose: () => eT(!1)
-        }) : (0, C.L3)(e, async () => {
+        }) : (0, S.L3)(e, async () => {
             let {
                 default: e
             } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("54595")]).then(n.bind(n, 385913));
@@ -383,15 +383,15 @@ function e_(e) {
                 [ea.Y_]: eB
             })
         })]
-    }) : e3, e5 = s.useRef(null), e8 = (0, k.W)({
+    }) : e3, e5 = s.useRef(null), e6 = (0, k.W)({
         location: "PrivateChannel"
     }) && a?.displayNameStyles != null, {
-        isIncomingCall: e6,
+        isIncomingCall: e8,
         isOngoingCall: e4
     } = (0, b.A)(t.id), te = [(0, U.Ay)({
         channel: t,
         unread: eq,
-        isIncomingCall: e6,
+        isIncomingCall: e8,
         isOngoingCall: e4
     }), (0, U.r2)({
         channel: t,
@@ -517,11 +517,11 @@ function e_(e) {
                                 activities: _,
                                 status: w,
                                 applicationStream: p,
-                                voiceChannel: S
+                                voiceChannel: h
                             }) ? (0, l.jsx)(R.A, {
                                 user: a,
                                 activities: _,
-                                voiceChannel: S,
+                                voiceChannel: h,
                                 applicationStream: p,
                                 animateEmoji: es || ef || eN,
                                 textClassName: ea.XD,
@@ -529,7 +529,7 @@ function e_(e) {
                             }) : null,
                             name: (0, l.jsx)(T.A, {
                                 className: r()(ea.uN, {
-                                    [ea.e8]: e8
+                                    [ea.e8]: e6
                                 }),
                                 children: e7
                             }),
@@ -538,7 +538,7 @@ function e_(e) {
                                 type: M.A.Types.SYSTEM_DM,
                                 verified: !0
                             }) : null,
-                            withDisplayNameStyles: e8
+                            withDisplayNameStyles: e6
                         })
                     }), (0, l.jsxs)("div", {
                         className: r()(ea._q, {

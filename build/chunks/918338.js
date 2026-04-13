@@ -22,7 +22,7 @@ function m(t) {
         imageClassName: x,
         assetRef: f
     } = t, g = s.useMemo(() => (0, l.tW)(e, l.fY.HERO_IMAGE), [e]), C = s.useMemo(() => (0, l.tW)(e, l.fY.HERO_VIDEO), [e]), {
-        onAssetLoadComplete: N
+        onAssetLoadComplete: b
     } = s.useContext(o.M);
     return (0, i.jsx)("div", {
         className: r()(u.l1, h),
@@ -40,7 +40,7 @@ function m(t) {
             } : void 0,
             showVideo: n,
             imageSize: m,
-            onLoadComplete: N,
+            onLoadComplete: b,
             assetRef: f
         })
     })

@@ -10,7 +10,7 @@ var i, s = n(627968),
     r = n(64700),
     l = n(503698),
     o = n.n(l),
-    a = n(687498),
+    a = n(294426),
     c = n(359459),
     d = n(607399),
     u = n(73939),
@@ -143,12 +143,15 @@ let C = function(e) {
     });
 
     function P() {
-        return null == i ? null : (0, s.jsx)(h.FQk, {
-            className: o()(S.noticeRegion, {
-                [S.noticeRegionHiddenSidebar]: C
-            }),
-            children: i
-        }, l)
+        return (0, s.jsx)(u.F, {
+            component: "div",
+            children: null != i && (0, s.jsx)(h.FQk, {
+                className: o()(S.noticeRegion, {
+                    [S.noticeRegionHiddenSidebar]: C
+                }),
+                children: i
+            }, l)
+        }, "notice-transition-group")
     }
     return (0, s.jsx)(s.Fragment, {
         children: O((e, i) => (0, s.jsxs)(a.animated.div, {
@@ -185,13 +188,11 @@ let C = function(e) {
                             onClick: f
                         }), I]
                     });
-                if ("custom" === _) return (0, s.jsxs)(u.F, {
-                    component: "div",
+                if ("custom" === _) return (0, s.jsxs)("div", {
                     className: S.contentRegion,
                     children: [t, n, !d.Fr && I, P()]
                 });
-                if ("scrollableCustom" === _) return (0, s.jsxs)(u.F, {
-                    component: "div",
+                if ("scrollableCustom" === _) return (0, s.jsxs)("div", {
                     className: S.contentRegion,
                     children: [t, (0, s.jsxs)(h.GtU, {
                         className: o()(S.contentRegionScroller, C ? S.contentRegionHiddenSidebar : S.contentRegionShownSidebar),
@@ -210,34 +211,30 @@ let C = function(e) {
                     }), P()]
                 });
                 let i = v[_ ?? "default"];
-                return (0, s.jsxs)(u.F, {
-                    component: "div",
+                return (0, s.jsxs)("div", {
                     className: o()(S.contentRegion, {
                         [S.hidden]: d.Fr && !0 === x
                     }),
-                    children: [(0, s.jsxs)("div", {
-                        className: S.contentTransitionWrap,
-                        children: [t, (0, s.jsxs)(h.GtU, {
-                            className: o()(S.contentRegionScroller, C ? S.contentRegionHiddenSidebar : S.contentRegionShownSidebar),
-                            ref: R,
-                            children: [(0, s.jsx)(g.Provider, {
-                                value: b.current,
-                                children: (0, s.jsx)(h.VQ0.Panel, {
-                                    id: l,
-                                    className: o()(S.contentColumn, S[i], {
-                                        [S.mobileContent]: d.Fr
-                                    }),
-                                    ref: j,
-                                    style: d.Fr ? {
-                                        maxWidth: window.innerWidth
-                                    } : void 0,
-                                    children: C ? n : (0, s.jsx)(h.xpW, {
-                                        containerRef: j,
-                                        children: n
-                                    })
+                    children: [t, (0, s.jsxs)(h.GtU, {
+                        className: o()(S.contentRegionScroller, C ? S.contentRegionHiddenSidebar : S.contentRegionShownSidebar),
+                        ref: R,
+                        children: [(0, s.jsx)(g.Provider, {
+                            value: b.current,
+                            children: (0, s.jsx)(h.VQ0.Panel, {
+                                id: l,
+                                className: o()(S.contentColumn, S[i], {
+                                    [S.mobileContent]: d.Fr
+                                }),
+                                ref: j,
+                                style: d.Fr ? {
+                                    maxWidth: window.innerWidth
+                                } : void 0,
+                                children: C ? n : (0, s.jsx)(h.xpW, {
+                                    containerRef: j,
+                                    children: n
                                 })
-                            }), !d.Fr && I]
-                        })]
+                            })
+                        }), !d.Fr && I]
                     }), P()]
                 })
             }()]

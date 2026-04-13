@@ -7,7 +7,7 @@ var i = n(627968),
     a = n(64700),
     l = n(503698),
     s = n.n(l),
-    r = n(687498),
+    r = n(294426),
     c = n(934551),
     o = n(311907),
     d = n(827734),
@@ -480,16 +480,16 @@ let eA = a.memo(e => {
         guildId: j.getGuildId()
     }), ep = (0, y.a)({
         displayNameStyles: eo
-    }), em = (0, ea.Y)(l), eA = (0, ea.V)(l), [ef, ex] = a.useState(!1);
+    }), em = (0, ea.Yb)(l), eA = (0, ea.VE)(l), ef = (0, ea.DO)(l), [ex, eI] = a.useState(!1);
     a.useEffect(() => {
         let e = !1,
             t = () => {
-                e !== Q.A.isOpen() && ((e = Q.A.isOpen()) || ex(!1))
+                e !== Q.A.isOpen() && ((e = Q.A.isOpen()) || eI(!1))
             };
         return Q.A.addChangeListener(t), () => Q.A.removeChangeListener(t)
     }, []);
-    let eI = !F && E === er.lp.STREAM && B && (!eA || L),
-        eb = function(e) {
+    let eb = !F && E === er.lp.STREAM && B && (!eA || L),
+        eN = function(e) {
             let {
                 localMuted: t,
                 serverMuted: n,
@@ -505,23 +505,23 @@ let eA = a.memo(e => {
             deafened: k,
             muted: R
         }),
-        eN = (0, p.zhh)({
+        ev = (0, p.zhh)({
             value: null != J ? J : 0,
             config: {
                 ...r.config.stiff,
                 clamp: !0
             }
         }, "animate-always"),
-        ev = [];
-    m && E === er.lp.STREAM && ev.push((0, i.jsx)(S.A, {
+        eC = [];
+    m && E === er.lp.STREAM && eC.push((0, i.jsx)(S.A, {
         streamId: K,
         paused: $
-    }, "zoom-controls")), m ? Y === x.N.CALL_TILE && (ev.push((0, i.jsx)(eg, {
+    }, "zoom-controls")), m ? Y === x.N.CALL_TILE && (eC.push((0, i.jsx)(eg, {
         channelId: j.id,
         participantId: v,
         hideWhenInactive: !1,
         idle: t
-    }, "stay-on-top")), ev.push((0, i.jsx)(e_, {
+    }, "stay-on-top")), eC.push((0, i.jsx)(e_, {
         onClick: () => {
             (0, N.X)(_.A.CALL_TILE_POPOUT, N.O.POPOUT_RETURN), P.close((0, b.A)(j.id, v))
         },
@@ -529,53 +529,53 @@ let eA = a.memo(e => {
         icon: c.WindowReturnIcon,
         hideWhenInactive: !1,
         idle: t
-    }, "close"))) : (q && E === er.lp.USER && null != T && T !== X && null != ee && ev.push((0, i.jsx)(et.MI, {
+    }, "close"))) : (q && !ef && E === er.lp.USER && null != T && T !== X && null != ee && eC.push((0, i.jsx)(et.MI, {
         userId: T,
         channel: j,
         applicationId: ee,
-        hideWhenInactive: !ef,
+        hideWhenInactive: !ex,
         idle: t
-    }, "gift")), ev.push((0, i.jsx)(e_, {
+    }, "gift")), eC.push((0, i.jsx)(e_, {
         onClick: e => {
-            e.stopPropagation(), ex(!0), O(e, !0, er.GK.THREE_DOT)
+            e.stopPropagation(), eI(!0), O(e, !0, er.GK.THREE_DOT)
         },
         tooltipText: ed.intl.string(ed.t["+1H47t"]),
         icon: p.jNK,
-        hideWhenInactive: !ef,
+        hideWhenInactive: !ex,
         idle: t
-    }, "options")), eI && ev.push((0, i.jsx)(e_, {
+    }, "options")), eb && eC.push((0, i.jsx)(e_, {
         onClick: z,
         tooltipText: L ? ed.intl.string(ed.t.YqAjXy) : ed.intl.string(ed.t.w4m945),
         icon: L ? p._RO : p.HKD,
-        hideWhenInactive: !L && !ef,
+        hideWhenInactive: !L && !ex,
         idle: t
     }, "mute")));
-    let eC = [];
-    null != eb && E === er.lp.USER && eC.push((0, i.jsx)(eb, {
+    let ey = [];
+    null != eN && E === er.lp.USER && ey.push((0, i.jsx)(eN, {
         className: eu.gr,
         size: "xs",
         color: "currentColor"
-    }, "sound-icon")), A && eC.push((0, i.jsx)("div", {
+    }, "sound-icon")), A && ey.push((0, i.jsx)("div", {
         className: eu.Z5,
         children: (0, i.jsx)(p.KTN, {
             size: "lg",
             className: eu.Q6,
             color: d.A.unsafe_rawColors.RED_400.css
         })
-    }, "blocked-icon")), I && eC.push((0, i.jsx)("div", {
+    }, "blocked-icon")), I && ey.push((0, i.jsx)("div", {
         className: eu.PP,
         children: (0, i.jsx)(p.G3N, {
             size: "lg",
             className: eu.Q6
         })
-    }, "ignored-icon")), t || eC.push((0, i.jsx)(eh, {
+    }, "ignored-icon")), t || ey.push((0, i.jsx)(eh, {
         participantType: E,
         platform: M,
         className: eu.gr
-    }, "title-icon")), null == n || "" === n || t || eC.push((0, i.jsx)("span", {
+    }, "title-icon")), null == n || "" === n || t || ey.push((0, i.jsx)("span", {
         className: s()(eu.Wk, ep),
         children: n
-    }, "title-text")), D && eC.push((0, i.jsx)(u.m, {
+    }, "title-text")), D && ey.push((0, i.jsx)(u.m, {
         text: ed.intl.string(ed.t.ZEem6O),
         children: (0, i.jsx)(p.m5V, {
             className: eu.vW,
@@ -584,14 +584,14 @@ let eA = a.memo(e => {
             "aria-label": ed.intl.string(ed.t.mR9cf3)
         })
     }, "secure-frames-icon"));
-    let ey = null;
-    return q && !m && E === er.lp.USER && null != T && null != ee && (Z === U.HW.OPEN_APPLICATION_WIDGET ? ey = (0, i.jsx)(et.sU, {
+    let eE = null;
+    return !q || m || t || ef || E !== er.lp.USER || null == T || null == ee || (Z === U.HW.OPEN_APPLICATION_WIDGET ? eE = (0, i.jsx)(et.sU, {
         userId: T,
         applicationId: ee,
         channel: j,
         hasApplicationWidget: el.hasApplicationWidgetOnUserProfile,
         hideApplicationName: eA
-    }) : Z === U.HW.OPEN_GAME_PROFILE && (ey = (0, i.jsx)(et.X0, {
+    }) : Z === U.HW.OPEN_GAME_PROFILE && (eE = (0, i.jsx)(et.X0, {
         applicationId: ee,
         hideApplicationName: eA
     }))), (0, i.jsxs)("div", {
@@ -631,21 +631,21 @@ let eA = a.memo(e => {
                 className: s()(eu.qV, {
                     [eu.d5]: q
                 }),
-                children: [eC.length > 0 && (0, i.jsx)(p.Text, {
+                children: [ey.length > 0 && (0, i.jsx)(p.Text, {
                     className: eu.ac,
                     color: "none",
                     variant: eA ? "text-sm/normal" : "text-md/normal",
-                    children: eC
-                }), ey]
-            }), ev.length > 0 ? (0, i.jsx)(r.animated.div, {
+                    children: ey
+                }), eE]
+            }), eC.length > 0 ? (0, i.jsx)(r.animated.div, {
                 className: s()(eu._v, {
                     [eu.N7]: t,
                     [eu.d5]: q
                 }),
                 style: {
-                    marginBottom: eN.value
+                    marginBottom: ev.value
                 },
-                children: ev
+                children: eC
             }) : null]
         })]
     })

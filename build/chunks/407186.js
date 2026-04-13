@@ -31,7 +31,7 @@ let c = {
             (0, n.mMO)(async () => {
                 let {
                     default: i
-                } = await Promise.all([l.e("77406"), l.e("78811")]).then(l.bind(l, 333737));
+                } = await Promise.all([l.e("12424"), l.e("78811")]).then(l.bind(l, 333737));
                 return l => (0, t.jsx)(i, {
                     ...l,
                     handleEnableMFASuccess: e

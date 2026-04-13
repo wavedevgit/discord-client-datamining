@@ -5,8 +5,8 @@ n.d(t, {
 });
 var a = n(64700),
     r = n(735438),
-    i = n.n(r),
-    c = n(311907),
+    c = n.n(r),
+    i = n(311907),
     s = n(735321),
     o = n(760751),
     l = n(282435);
@@ -16,8 +16,8 @@ function _(e) {
 }
 
 function d() {
-    let e = (0, c.bG)([o.A], () => o.A.games),
-        t = a.useMemo(() => i()(e).filter(e => (0, s.XX)(e)).map(e => ({
+    let e = (0, i.bG)([o.A], () => o.A.games),
+        t = a.useMemo(() => c()(e).filter(e => (0, s.XX)(e)).map(e => ({
             id: e.id,
             value: e.id,
             label: e.name

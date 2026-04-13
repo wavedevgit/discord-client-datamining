@@ -1,6 +1,6 @@
 /** chunk id: 929400 params = (module,exports,require) **/
 a.d(t, {
-    default: () => eJ
+    default: () => eq
 });
 var n = a(627968),
     r = a(64700),
@@ -46,9 +46,9 @@ var n = a(627968),
     z = a(298072),
     W = a(993408),
     $ = a(640634),
-    q = a(940980),
-    J = a(495565),
-    K = a(740076),
+    K = a(940980),
+    q = a(495565),
+    J = a(740076),
     Y = a(466459),
     Z = a(442759),
     Q = a(966619),
@@ -229,7 +229,7 @@ let eD = e => {
             {
                 isDisabled: en,
                 disabledReason: ei
-            } = (0, K.I)(Q.skuId),
+            } = (0, J.I)(Q.skuId),
             el = (0, W.Zu)({
                 product: Q,
                 isPartiallyOwnedBundle: et,
@@ -252,13 +252,13 @@ let eD = e => {
             } = (0, w.Z)({
                 location: "collectibles_shop_product_details_modal"
             }),
-            eF = (0, J.r)(Q, !1),
+            eF = (0, q.r)(Q, !1),
             ez = (0, eR.V_)(t),
             eW = null != ez,
             e$ = (t.variants?.length ?? 0) > 8,
-            eq = (0, q.W)("CollectiblesShopProductDetailsModal"),
-            eJ = c === eP.G2.ORBS && l ? ev.Hi.ORBS : eq ? ev.Hi.FIAT : void 0,
-            eK = (0, $.l)("collectibles_shop_product_details_modal"),
+            eK = (0, K.W)("CollectiblesShopProductDetailsModal"),
+            eq = c === eP.G2.ORBS && l ? ev.Hi.ORBS : eK ? ev.Hi.FIAT : void 0,
+            eJ = (0, $.l)("collectibles_shop_product_details_modal"),
             {
                 checkoutEligiblePrices: eY,
                 isOrbExclusive: eZ,
@@ -267,7 +267,7 @@ let eD = e => {
                 product: Q,
                 isPremiumUser: S,
                 hasDiscountOffer: eW,
-                prioritizedCurrency: eJ
+                prioritizedCurrency: eq
             }),
             eX = r.useMemo(() => eY.some(e => e.currency === eB.Yr.DISCORD_ORB), [eY]);
         (0, P.W)({
@@ -465,7 +465,7 @@ let eD = e => {
                                             },
                                             disabled: a,
                                             "aria-label": s,
-                                            text: eM.intl.format(eK ? eM.t.JC15qj : eM.t.lOtBOI, {
+                                            text: eM.intl.format(eJ ? eM.t.JC15qj : eM.t.lOtBOI, {
                                                 orbPrice: e.amount,
                                                 orbIconHook: () => (0, n.jsx)(h.Cp8, {
                                                     className: eU.fN,
@@ -616,7 +616,7 @@ let eD = e => {
                 hideBioSection: _,
                 hideExampleButton: !0,
                 interactive: !1
-            }), _ && (0, n.jsx)(eq, {
+            }), _ && (0, n.jsx)(eK, {
                 user: a
             })]
         }), I = e => (0, n.jsx)(eW, {
@@ -654,7 +654,7 @@ let eD = e => {
             children: C()
         })
     },
-    eq = e => {
+    eK = e => {
         let {
             user: t
         } = e, a = (e => {
@@ -701,7 +701,7 @@ let eD = e => {
             })
         })
     },
-    eJ = e => {
+    eq = e => {
         let {
             transitionState: t,
             onClose: a,
@@ -758,10 +758,10 @@ let eD = e => {
             }
         });
         let $ = (0, L.o6)(),
-            q = t === h.ip4.EXITING,
-            J = (0, eR.$R)(i),
-            K = J?.amount,
-            Y = null != K && (J?.discountId === eL.eR || J?.discountId === eL.Qz),
+            K = t === h.ip4.EXITING,
+            q = (0, eR.$R)(i),
+            J = q?.amount,
+            Y = null != J && (q?.discountId === eL.eR || q?.discountId === eL.Qz),
             Z = r.useMemo(() => (0, W.aw)(E) ? E.items.length : 0, [E]),
             {
                 activeSlide: X,
@@ -801,7 +801,7 @@ let eD = e => {
                         style: {
                             backgroundImage: `url(${O})`
                         },
-                        children: [(0, eP.pQ)(i.skuId) ? i.skuId === eP.Dp.ORB_PROFILE_BADGE ? $ || q ? null : (0, n.jsx)(eg.z, {
+                        children: [(0, eP.pQ)(i.skuId) ? i.skuId === eP.Dp.ORB_PROFILE_BADGE ? $ || K ? null : (0, n.jsx)(eg.z, {
                             user: T
                         }) : i.skuId === u.j.PREMIUM_TIER_2_3_DAY ? (0, n.jsx)(ef.I, {}) : (0, n.jsx)(eI.B, {
                             product: i,
@@ -848,10 +848,10 @@ let eD = e => {
                                 variant: "text-sm/semibold",
                                 className: eU.Q2,
                                 children: eM.intl.format(eM.t["78ph4b"], {
-                                    discountOfferAmount: K
+                                    discountOfferAmount: J
                                 })
-                            }), J?.expiresAt != null && (0, n.jsx)(eo.e, {
-                                endDate: J.expiresAt
+                            }), q?.expiresAt != null && (0, n.jsx)(eo.e, {
+                                endDate: q.expiresAt
                             })]
                         })]
                     })

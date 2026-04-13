@@ -30,11 +30,11 @@ let m = function(e) {
         questContent: m,
         sourceQuestContent: _,
         gameProfileSource: N
-    }), p = (0, o.SD)(s), g = (0, o.Oq)(), h = p && g;
+    }), p = (0, o.SD)(s), g = (0, o.Oq)(), C = p && g;
     return (0, l.jsxs)("div", {
         className: i()(A.iE, t),
         children: [(0, l.jsx)(u.A, {
-            visible: h
+            visible: C
         }), (0, l.jsx)(d.A, {
             autoplay: n,
             className: A.Qq,
