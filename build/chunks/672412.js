@@ -1,6 +1,6 @@
 /** chunk id: 672412 params = (module,exports,require) **/
 a.d(t, {
-    A: () => u
+    A: () => M
 }), a(321073);
 var i = a(626584),
     l = a(430452),
@@ -11,7 +11,7 @@ var i = a(626584),
     r = a(846126),
     c = a(464414);
 let h = new i.A("MLNativeModuleManager");
-class f {
+class u {
     state = {
         nativeMLModuleState: r.Q.UNINITIALIZED,
         models: {},
@@ -181,4 +181,4 @@ class f {
         return this.activeDownloads.set(a, n), n
     }
 }
-let u = new f
+let M = new u

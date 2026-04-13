@@ -14,8 +14,8 @@ var a = n(627968),
     _ = n(800007),
     m = n(294726),
     x = n(985018),
-    g = n(514491);
-let f = {
+    f = n(514491);
+let g = {
     steps: {
         [_.HS.SERVER_SETTINGS]: {
             onBack: {
@@ -76,7 +76,7 @@ function v(e) {
                         action: () => {
                             (0, u.A)({
                                 guildId: t,
-                                stepConfig: f,
+                                stepConfig: g,
                                 initialGameServerInstance: n,
                                 analyticsLocation: r.A.GAME_SERVER_PAGE
                             })
@@ -87,7 +87,7 @@ function v(e) {
         },
         children: e => (0, a.jsx)(i.DUT, {
             "aria-label": x.intl.string(x.t["UKOtz+"]),
-            className: g.v,
+            className: f.v,
             ...e,
             innerRef: _,
             children: (0, a.jsx)(i.jNK, {

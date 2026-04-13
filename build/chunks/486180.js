@@ -14,13 +14,13 @@ var a = n(627968),
     _ = n(895770),
     m = n(355609),
     x = n(843095),
-    g = n(800007),
-    f = n(294726),
+    f = n(800007),
+    g = n(294726),
     v = n(985018),
     j = n(641784);
 let h = {
-    ...g.ZN,
-    initialStep: g.HS.SERVER_SETTINGS
+    ...f.ZN,
+    initialStep: f.HS.SERVER_SETTINGS
 };
 
 function A(e) {
@@ -39,11 +39,11 @@ function A(e) {
     }, [t, p]);
     let {
         catalog: C,
-        instances: b
+        instances: I
     } = s.useMemo(() => ({
         catalog: Object.values(A?.catalog ?? {}),
         instances: Object.values(A?.instances ?? {})
-    }), [A?.catalog, A?.instances]), I = b.length >= g.ZI;
+    }), [A?.catalog, A?.instances]), N = I.length >= f.ZI;
     return 0 === C.length ? (0, a.jsx)("div", {
         className: j.kL,
         children: (0, a.jsx)(d.y$y, {
@@ -55,8 +55,8 @@ function A(e) {
         children: [(0, a.jsx)(i.DZT, {
             className: j.R_,
             variant: "heading-md/semibold",
-            children: v.intl.string(n ? f.default["3vWDMz"] : f.default.Uvf9GK)
-        }), n && I && (0, a.jsx)("div", {
+            children: v.intl.string(n ? g.default["3vWDMz"] : g.default.Uvf9GK)
+        }), n && N && (0, a.jsx)("div", {
             className: j.Bq,
             children: (0, a.jsx)(m.k, {})
         }), (0, a.jsx)(i.IpV, {
@@ -65,7 +65,7 @@ function A(e) {
                 className: j.Y_,
                 children: C.map((e, s) => n ? (0, a.jsx)(r.m, {
                     asContainer: !0,
-                    text: e.disabled ? v.intl.formatToPlainString(f.default.uVpJYf, {
+                    text: e.disabled ? v.intl.formatToPlainString(g.default.uVpJYf, {
                         gameName: e.name
                     }) : null,
                     position: "top",
@@ -80,7 +80,7 @@ function A(e) {
                         }),
                         imageClassName: j.Sl,
                         titleClassName: j.DD,
-                        variant: I || e.disabled ? _.e.DISABLED : _.e.CLICKABLE,
+                        variant: N || e.disabled ? _.e.DISABLED : _.e.CLICKABLE,
                         location: c.A.GAME_SERVER_PAGE_SIDEBAR
                     })
                 }, `sidebar-game-${s}-${e.id}`) : (0, a.jsx)(_.A, {

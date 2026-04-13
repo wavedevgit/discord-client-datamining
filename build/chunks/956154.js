@@ -1,6 +1,6 @@
 /** chunk id: 956154 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 });
 var a = n(627968);
 n(64700);
@@ -16,16 +16,16 @@ var s = n(397927),
     m = n(228165),
     x = n(587228);
 
-function g(e) {
+function f(e) {
     let {
         className: t
-    } = e, n = (0, i.Ay)(), g = (0, s.qB1)(n), f = g ? x.A : u.A, v = (0, r.TM)() ? g ? _.A : c.A : g ? m.A : o.A;
+    } = e, n = (0, i.Ay)(), f = (0, s.qB1)(n), g = f ? x.A : u.A, v = (0, r.TM)() ? f ? _.A : c.A : f ? m.A : o.A;
     return (0, a.jsxs)("div", {
         className: t,
         children: [(0, a.jsx)("div", {
             className: d.YL
         }), (0, a.jsx)(l.A, {
-            fallbackImage: f,
+            fallbackImage: g,
             children: (0, a.jsx)("source", {
                 src: v
             })
