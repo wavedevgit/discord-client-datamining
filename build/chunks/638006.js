@@ -12,33 +12,33 @@ var n = r(627968),
     c = r(287809),
     d = r(298072),
     p = r(320447),
-    C = r(466459),
-    k = r(139136),
+    k = r(466459),
+    C = r(139136),
     m = r(623373),
     x = r(561769),
     g = r(846957),
-    h = r(929283),
-    I = r(245068),
-    A = r(761365),
+    A = r(929283),
+    h = r(245068),
+    I = r(761365),
     v = r(550674),
-    f = r(797877);
-let _ = e => {
+    _ = r(797877);
+let T = e => {
         let {
             product: t,
             isCardHovered: r
         } = e, l = (0, m.YW)(t), {
             isPurchased: a,
             isPartiallyOwnedBundle: o
-        } = (0, C.h)(t), {
+        } = (0, k.h)(t), {
             enabled: u
         } = (0, p.P)("ProductCardPreview"), c = l === s.R.PROFILE_EFFECT || l === s.R.BUNDLE && u;
         return (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)("div", {
-                className: i()(f.mA, {
-                    [f.zj]: (a || o) && !r,
-                    [f.Ge]: c
+                className: i()(_.mA, {
+                    [_.zj]: (a || o) && !r,
+                    [_.Ge]: c
                 }),
-                children: (0, n.jsx)(T, {
+                children: (0, n.jsx)(f, {
                     product: t,
                     isCardHovered: r
                 })
@@ -47,34 +47,34 @@ let _ = e => {
             })]
         })
     },
-    T = e => {
+    f = e => {
         let {
             product: t,
             isCardHovered: r
         } = e, l = (0, o.bG)([c.default], () => c.default.getCurrentUser()), i = (0, m.YW)(t), a = (0, v.D)(t);
         switch (i) {
             case s.R.PROFILE_EFFECT:
-                return (0, n.jsx)(k.A, {
+                return (0, n.jsx)(C.A, {
                     skuId: a.skuId,
                     isHighlighted: r,
                     removeSetHeight: !0,
                     hideBackground: !0
                 });
             case s.R.AVATAR_DECORATION:
-                return (0, n.jsx)(h.i, {
+                return (0, n.jsx)(A.i, {
                     item: a,
                     user: l,
                     isHighlighted: r,
                     avatarSize: u._3J.SIZE_120
                 });
             case s.R.NAMEPLATE:
-                return (0, n.jsx)(A.A, {
+                return (0, n.jsx)(I.A, {
                     nameplate: a,
                     user: l,
                     isHighlighted: r
                 });
             case s.R.BUNDLE:
-                return (0, n.jsx)(I.X, {
+                return (0, n.jsx)(h.X, {
                     product: t,
                     user: l,
                     isHighlighted: r
@@ -97,8 +97,8 @@ let _ = e => {
             color: u.LU0.colors.INTERACTIVE_TEXT_ACTIVE,
             width: 40,
             height: 40,
-            className: i()(f.zo, {
-                [f.R]: t
+            className: i()(_.zo, {
+                [_.R]: t
             })
         })
     },
@@ -110,7 +110,7 @@ let _ = e => {
         } = e, i = (0, x.Vm)(t), s = (0, d.Q)(i);
         if (null == i) return null;
         let a = (0, m.rb)(i, l ?? s);
-        return (0, n.jsx)(_, {
+        return (0, n.jsx)(T, {
             product: a,
             isCardHovered: r
         })

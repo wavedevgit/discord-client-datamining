@@ -2,8 +2,8 @@
 n.d(t, {
     Vy: () => m
 });
-var r = n(627968),
-    a = n(64700),
+var a = n(627968),
+    r = n(64700),
     o = n(397927),
     i = n(405670),
     l = n(931135),
@@ -27,8 +27,8 @@ function u(e) {
         target: m,
         videoTitle: g ? "Test Portrait Video" : "Test Landscape Video",
         transcript: "transcript.txt"
-    }), f = (0, s.ec)(S), v = a.useRef(!1);
-    v.current || (v.current = !0, i.Kr.getState().clearState()), a.useEffect(() => {
+    }), f = (0, s.ec)(S), v = r.useRef(!1);
+    v.current || (v.current = !0, i.Kr.getState().clearState()), r.useEffect(() => {
         let e = document.querySelector('[data-testid="discord-web-video-player-video"]');
         if (null == e) return;
         let t = () => {
@@ -47,7 +47,7 @@ function u(e) {
             streamProgressSeconds: S.target
         })
     } : f;
-    return (0, r.jsx)("div", {
+    return (0, a.jsx)("div", {
         style: {
             display: "flex",
             flexDirection: "column",
@@ -58,11 +58,11 @@ function u(e) {
             borderRadius: "8px",
             overflow: "hidden"
         },
-        children: (0, r.jsx)(s.sn, {
+        children: (0, a.jsx)(s.sn, {
             quest: h,
             isPortrait: g,
             useNewStyling: _,
-            children: (0, r.jsx)(l.A, {
+            children: (0, a.jsx)(l.A, {
                 targetTimeSec: S.target,
                 parentTransitionState: o.ip4.ENTERED,
                 onOptimisticProgressUpdate: d.tEg,
@@ -130,7 +130,7 @@ let p = {
                 let {
                     orientation: t,
                     autoplay: n,
-                    questCompleted: a,
+                    questCompleted: r,
                     fullEpisode: i,
                     targetTimeSec: u,
                     videoUrl: p,
@@ -144,7 +144,7 @@ let p = {
                     transcript: "transcript.txt"
                 }), g = (0, s.ec)(_);
                 i && (g.config.features = [c.Li.FULL_EPISODE_VIDEO_QUEST]);
-                let S = a ? {
+                let S = r ? {
                     ...g,
                     userStatus: (0, s.kK)({
                         enrolledAt: g.userStatus?.enrolledAt ?? null,
@@ -152,7 +152,7 @@ let p = {
                         streamProgressSeconds: _.target
                     })
                 } : g;
-                return (0, r.jsx)("div", {
+                return (0, a.jsx)("div", {
                     style: {
                         display: "flex",
                         flexDirection: "column",
@@ -163,11 +163,11 @@ let p = {
                         borderRadius: "8px",
                         overflow: "hidden"
                     },
-                    children: (0, r.jsx)(s.sn, {
+                    children: (0, a.jsx)(s.sn, {
                         quest: S,
                         isPortrait: !1,
                         useNewStyling: m,
-                        children: (0, r.jsx)(l.A, {
+                        children: (0, a.jsx)(l.A, {
                             targetTimeSec: _.target,
                             parentTransitionState: o.ip4.ENTERED,
                             onOptimisticProgressUpdate: d.tEg,

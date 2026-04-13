@@ -7,9 +7,9 @@ t(64700);
 var a = t(158954),
     l = t(311907),
     r = t(397927),
-    o = t(973925),
+    d = t(973925),
     s = t(622543),
-    d = t(985018),
+    o = t(985018),
     c = t(763683);
 
 function _(e) {
@@ -48,25 +48,25 @@ function u(e) {
         hasMessageContent: u,
         hasGuildPresences: p,
         hasGuildMembers: A
-    } = (0, o.Z)(t);
+    } = (0, d.Z)(t);
     return (0, i.jsxs)(a.IpV, {
         fade: !0,
         className: c.XG,
         children: [u && (0, i.jsx)(_, {
             icon: r.oyn,
-            title: d.intl.string(d.t["7Tmhfu"]),
-            description: d.intl.string(d.t.eu5x7z)
+            title: o.intl.string(o.t["7Tmhfu"]),
+            description: o.intl.string(o.t.eu5x7z)
         }), p && (0, i.jsx)(_, {
             icon: r._xR,
-            title: d.intl.string(d.t.awYSsM),
-            description: d.intl.string(d.t.TpsXoC)
+            title: o.intl.string(o.t.awYSsM),
+            description: o.intl.string(o.t.TpsXoC)
         }), A && (0, i.jsx)(_, {
             icon: r.nFg,
-            title: d.intl.string(d.t.WuKeSJ),
-            description: d.intl.string(d.t.wOBmtV)
+            title: o.intl.string(o.t.WuKeSJ),
+            description: o.intl.string(o.t.wOBmtV)
         }), (0, i.jsx)(r.Text, {
             variant: "text-xs/normal",
-            children: d.intl.format(d.t.b6nqk0, {
+            children: o.intl.format(o.t.b6nqk0, {
                 helpCenterUrl: "https://support.discord.com/hc/articles/7933951485975"
             })
         })]

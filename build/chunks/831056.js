@@ -1,10 +1,10 @@
 /** chunk id: 831056 params = (module,exports,require) **/
 n.d(t, {
-    KP: () => E,
+    KP: () => m,
     Kb: () => f,
     OH: () => g,
     lx: () => S,
-    nY: () => m,
+    nY: () => E,
     pK: () => p,
     zj: () => _
 });
@@ -13,12 +13,12 @@ var r = n(627968),
     i = n(503698),
     a = n.n(i),
     l = n(158954),
-    o = n(827734),
-    u = n(354361),
+    u = n(827734),
+    o = n(354361),
     c = n(985018),
     d = n(246878);
 
-function m(e) {
+function E(e) {
     let {
         url: t
     } = e;
@@ -29,7 +29,7 @@ function m(e) {
     })
 }
 
-function E() {
+function m() {
     return (0, r.jsx)("div", {
         className: d.MM,
         "data-testid": "discord-web-video-player-end-screen"
@@ -58,7 +58,7 @@ function f(e) {
     return null == t ? null : (0, r.jsx)("img", {
         ref: s,
         src: t,
-        alt: c.intl.string(u.default.E527vj),
+        alt: c.intl.string(o.default.E527vj),
         className: a()(d.C, {
             [d.TW]: "portrait" === n
         })
@@ -73,7 +73,7 @@ function p(e) {
     return null == t ? null : (0, r.jsx)("img", {
         ref: n,
         src: t,
-        alt: c.intl.string(u.default.E527vj),
+        alt: c.intl.string(o.default.E527vj),
         className: d.xc
     })
 }
@@ -85,7 +85,7 @@ function S(e) {
         ctaBtnLabel: s,
         onCTAClick: i,
         orientation: l,
-        ctaIcon: o
+        ctaIcon: u
     } = e;
     return (0, r.jsxs)("div", {
         className: a()(d.pP, {
@@ -96,7 +96,7 @@ function S(e) {
             subtitle: n
         }), (0, r.jsx)(h, {
             label: s,
-            icon: o,
+            icon: u,
             onClick: i
         })]
     })
@@ -126,17 +126,17 @@ function h(e) {
         label: t,
         icon: n,
         onClick: i,
-        className: u
-    } = e, [c, m] = s.useState(!1), E = () => {
-        m(!0)
+        className: o
+    } = e, [c, E] = s.useState(!1), m = () => {
+        E(!0)
     }, _ = () => {
-        m(!1)
+        E(!1)
     };
     return (0, r.jsxs)(l.DUT, {
-        className: a()(d.uU, d.iM, u),
-        onMouseEnter: E,
+        className: a()(d.uU, d.iM, o),
+        onMouseEnter: m,
         onMouseLeave: _,
-        onFocus: E,
+        onFocus: m,
         onBlur: _,
         onClick: i,
         children: [(0, r.jsx)(l.DZT, {
@@ -145,7 +145,7 @@ function h(e) {
             children: t
         }), null != n && (0, r.jsx)(n, {
             size: "md",
-            color: c ? o.A.colors.WHITE : "#B5BAC1",
+            color: c ? u.A.colors.WHITE : "#B5BAC1",
             className: d.J5
         })]
     })
@@ -156,21 +156,21 @@ function g(e) {
         title: t,
         subtitle: n,
         icon: i,
-        onClick: o,
-        className: u,
+        onClick: u,
+        className: o,
         divider: c
-    } = e, [m, E] = s.useState(!1), _ = () => {
-        E(!0)
+    } = e, [E, m] = s.useState(!1), _ = () => {
+        m(!0)
     }, f = () => {
-        E(!1)
+        m(!1)
     };
     return (0, r.jsx)(l.DUT, {
-        className: a()(d.Mr, d.iM, u),
+        className: a()(d.Mr, d.iM, o),
         onMouseEnter: _,
         onMouseLeave: f,
         onFocus: _,
         onBlur: f,
-        onClick: o,
+        onClick: u,
         children: (0, r.jsxs)("div", {
             className: d.ee,
             children: [(0, r.jsxs)("div", {
@@ -186,7 +186,7 @@ function g(e) {
                 })]
             }), c, (0, r.jsx)(i, {
                 size: "md",
-                color: m ? "#FFFFFF" : "#B5BAC1",
+                color: E ? "#FFFFFF" : "#B5BAC1",
                 className: d.J5
             })]
         })

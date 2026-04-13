@@ -18,10 +18,10 @@ function d(e) {
         } = (0, s.Ay)(),
         d = (0, u.Q)(e),
         p = n.useRef(null),
-        C = n.useRef(!1),
-        k = n.useRef(d);
+        k = n.useRef(!1),
+        C = n.useRef(d);
     n.useEffect(() => {
-        k.current = d
+        C.current = d
     }, [d]);
     let m = n.useCallback(() => {
             let n = (0, c.B1)(e);
@@ -29,7 +29,7 @@ function d(e) {
                 name: l.ImpressionNames.SHOP_CARD,
                 type: l.ImpressionTypes.VIEW,
                 properties: {
-                    sku_id: n ? e.variants[k.current]?.skuId ?? e.skuId : e.skuId,
+                    sku_id: n ? e.variants[C.current]?.skuId ?? e.skuId : e.skuId,
                     card_id: t?.cardId,
                     shop_session_id: t?.sessionId,
                     position_in_section: t?.tilePosition,
@@ -39,9 +39,9 @@ function d(e) {
             }, !1, !0)
         }, [e, t?.cardId, t?.sessionId, t?.tilePosition, r]),
         x = (0, i.K)(e => {
-            e ? C.current || null === p.current && (p.current = setTimeout(() => {
-                m(), C.current = !0, p.current = null
-            }, 1e3)) : (C.current = !1, null !== p.current && (clearTimeout(p.current), p.current = null))
+            e ? k.current || null === p.current && (p.current = setTimeout(() => {
+                m(), k.current = !0, p.current = null
+            }, 1e3)) : (k.current = !1, null !== p.current && (clearTimeout(p.current), p.current = null))
         }, .5);
     return n.useEffect(() => () => {
         null !== p.current && (clearTimeout(p.current), p.current = null)

@@ -15,13 +15,13 @@ var n = r(64700),
 function p(e, t) {
     let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "product",
         p = (0, a.uM)(),
-        C = (0, l.bG)([o.A], () => o.A.getProduct(e)),
-        k = (0, c.i)(),
-        m = s.Ay.canUseCollectibles(k),
+        k = (0, l.bG)([o.A], () => o.A.getProduct(e)),
+        C = (0, c.i)(),
+        m = s.Ay.canUseCollectibles(C),
         x = n.useRef(null),
         g = n.useCallback(() => {
-            let n = null != C ? (0, u.Br)(C, m, !1) : null,
-                l = null != C ? (0, u.c7)(C, m, !1) : void 0;
+            let n = null != k ? (0, u.Br)(k, m, !1) : null,
+                l = null != k ? (0, u.c7)(k, m, !1) : void 0;
             i.default.track(d.HAw.COLLECTIBLES_TILE_IMPRESSION, {
                 collectibles_shop_session_id: p?.sessionId,
                 sku_id: e,
@@ -35,8 +35,8 @@ function p(e, t) {
                 type: r,
                 category_position: p?.categoryPosition
             })
-        }, [p?.sessionId, p?.categoryPosition, p?.pageCategory, p?.pageSection, p?.tilePosition, m, t, C, e, r]),
-        h = n.useCallback(e => {
+        }, [p?.sessionId, p?.categoryPosition, p?.pageCategory, p?.pageSection, p?.tilePosition, m, t, k, e, r]),
+        A = n.useCallback(e => {
             e ? null === x.current && (x.current = setTimeout(() => {
                 g(), x.current = null
             }, 1e3)) : null !== x.current && (clearTimeout(x.current), x.current = null)
@@ -44,6 +44,6 @@ function p(e, t) {
     return n.useEffect(() => () => {
         null !== x.current && (clearTimeout(x.current), x.current = null)
     }, []), {
-        handleCardVisibilityChange: h
+        handleCardVisibilityChange: A
     }
 }

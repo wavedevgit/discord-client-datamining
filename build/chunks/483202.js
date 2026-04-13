@@ -18,8 +18,8 @@ var n = i(627968),
     m = i(451988),
     p = i(397927),
     g = i(565645),
-    _ = i(775602),
-    f = i(114166),
+    f = i(775602),
+    _ = i(114166),
     A = i(58149),
     T = i(404374),
     b = i(572680),
@@ -391,7 +391,7 @@ class er extends a.PureComponent {
                 emoji: c,
                 readOnly: h,
                 isLurking: m,
-                isPendingMember: _,
+                isPendingMember: f,
                 className: A,
                 useChatFontScaling: T,
                 message: E,
@@ -442,7 +442,7 @@ class er extends a.PureComponent {
                 children: (0, n.jsx)(d.A.div, {
                     className: o()(y.reaction, A, {
                         [y.reactionMe]: this.isMe(),
-                        [y.reactionReadOnly]: h && !m && !_,
+                        [y.reactionReadOnly]: h && !m && !f,
                         [y.shakeReaction]: x && null == I
                     }),
                     style: O,
@@ -490,7 +490,7 @@ class er extends a.PureComponent {
                                     size: N,
                                     animated: c.animated
                                 })]
-                            }), s ? null : (0, n.jsx)(f.A, {
+                            }), s ? null : (0, n.jsx)(_.A, {
                                 className: y.reactionCount,
                                 value: L,
                                 color: e,
@@ -512,7 +512,7 @@ let es = a.memo(e => {
             burst_colors: i,
             message: a,
             emoji: l
-        } = e, o = t === $.v.BURST, r = (0, I.g)(o && null != i ? i : []), s = (0, h.bG)([z.A], () => void 0 !== z.A.getEffectForEmojiId(a.getChannelId(), a.id, l)), c = (0, h.bG)([_.A], () => _.A.useReducedMotion), d = P.Sf.useSetting(), u = D.default.getCurrentUser(), m = (0, H.TW)(u), p = (0, h.bG)([z.A], () => z.A.getReactionPickerAnimation(a.id, l.name, l.id)), g = o && (s || null != p);
+        } = e, o = t === $.v.BURST, r = (0, I.g)(o && null != i ? i : []), s = (0, h.bG)([z.A], () => void 0 !== z.A.getEffectForEmojiId(a.getChannelId(), a.id, l)), c = (0, h.bG)([f.A], () => f.A.useReducedMotion), d = P.Sf.useSetting(), u = D.default.getCurrentUser(), m = (0, H.TW)(u), p = (0, h.bG)([z.A], () => z.A.getReactionPickerAnimation(a.id, l.name, l.id)), g = o && (s || null != p);
         return (0, n.jsx)(er, {
             ...e,
             colors: r,
@@ -583,7 +583,7 @@ let es = a.memo(e => {
             }),
             [d, u] = a.useState(void 0),
             [m, g] = a.useState(void 0),
-            [_, f] = a.useState(null),
+            [f, _] = a.useState(null),
             [A, T] = a.useState(!1),
             [b, I] = a.useState(!1),
             [j, R] = a.useState(!1),
@@ -593,7 +593,7 @@ let es = a.memo(e => {
             y = null != S && (S === d?.id || S === c?.id),
             O = D.default.getCurrentUser(),
             M = (0, W.O)({
-                sourceType: _,
+                sourceType: f,
                 expressionSourceApplication: m ?? null,
                 isPremium: H.Ay.isPremium(O),
                 hasJoinedEmojiSourceGuild: v,
@@ -608,7 +608,7 @@ let es = a.memo(e => {
                 !A || j || (async () => {
                     l(), I(!0);
                     let e = null != i ? await (0, N.g_)(i) : null;
-                    if (null != e) switch (f(e.type), e.type) {
+                    if (null != e) switch (_(e.type), e.type) {
                         case N.rV.APPLICATION:
                             g(e.application);
                             break;

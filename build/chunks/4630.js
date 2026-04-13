@@ -21,7 +21,7 @@ var l = n(284009),
     R = n(652215);
 async function p(t) {
     var e, n, l, p, O;
-    let h, C, {
+    let C, h, {
             applicationId: m,
             skuId: g,
             initialPlanId: S,
@@ -34,16 +34,16 @@ async function p(t) {
         r()(null != t, "Could not find store listing for sku"), t.sku.type === R.Puh.SUBSCRIPTION_GROUP && await (0, _.vz)(m, t.id)
     }
     P = P ?? A.A.get(g), r()(null != P && P.applicationId === m, "SKU must belong to application"), P.type !== R.Puh.SUBSCRIPTION || (0, d.B)([P.id]) || await (0, o.ur)(P.id);
-    let x = null == (C = null != (h = (0, c.LU)({
+    let D = null == (h = null != (C = (0, c.LU)({
         applicationId: m
-    })) ? E.A.getWindow(h) : void 0) || C.closed ? s.SYi : s.KX8;
+    })) ? E.A.getWindow(C) : void 0) || h.closed ? s.SYi : s.KX8;
     if (P.type !== R.Puh.SUBSCRIPTION) return new Promise((t, e) => {
         (0, N.A)({
             applicationId: m,
             skuId: g,
             analyticsLocationObject: M,
             analyticsLocations: y,
-            contextKey: x,
+            contextKey: D,
             onComplete: e => {
                 t(e?.entitlements ?? [])
             },

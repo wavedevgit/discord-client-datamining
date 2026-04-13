@@ -21,13 +21,13 @@ function f(e) {
         transitionState: i,
         onClose: f,
         children: m
-    } = e, y = (0, s.bG)([l.A], () => l.A.useReducedMotion), [A, E] = (0, c.useState)("entry"), [R, h] = (0, c.useState)("entry"), v = (0, c.useRef)(null), I = (0, c.useCallback)(() => {
-        "entry" === A && (E("idle"), h("idle"), v.current?.play())
-    }, [A]), S = (0, c.useCallback)(async () => {
-        "exit" !== A && (E("exit"), await new Promise(e => setTimeout(e, 175)), await f())
-    }, [A, f]), x = i === d.ip4.EXITING;
+    } = e, y = (0, s.bG)([l.A], () => l.A.useReducedMotion), [E, R] = (0, c.useState)("entry"), [A, h] = (0, c.useState)("entry"), v = (0, c.useRef)(null), I = (0, c.useCallback)(() => {
+        "entry" === E && (R("idle"), h("idle"), v.current?.play())
+    }, [E]), x = (0, c.useCallback)(async () => {
+        "exit" !== E && (R("exit"), await new Promise(e => setTimeout(e, 175)), await f())
+    }, [E, f]), S = i === d.ip4.EXITING;
     if (!y && n && null != t.activationEntry && null != t.activationIdle && null != t.celebrationEntry && null != t.celebrationIdle) {
-        let e = "idle" === R ? {
+        let e = "idle" === A ? {
                 type: "video",
                 src: t.activationIdle,
                 fallbackImageSrc: u.A,
@@ -38,7 +38,7 @@ function f(e) {
                 fallbackImageSrc: u.A,
                 loop: !1
             },
-            n = "exit" === A || x;
+            n = "exit" === E || S;
         return (0, a.jsxs)("div", {
             children: [(0, a.jsxs)("div", {
                 className: r()(b.j, {
@@ -49,7 +49,7 @@ function f(e) {
                     muted: !0,
                     autoPlay: !0,
                     onEnded: I,
-                    className: r()(b.Ki, "entry" === A ? b.RK : b.R),
+                    className: r()(b.Ki, "entry" === E ? b.RK : b.R),
                     children: (0, a.jsx)("source", {
                         src: t.celebrationEntry
                     })
@@ -58,14 +58,14 @@ function f(e) {
                     playsInline: !0,
                     muted: !0,
                     loop: !0,
-                    className: r()(b.Ki, "idle" === A ? b.RK : b.R),
+                    className: r()(b.Ki, "idle" === E ? b.RK : b.R),
                     children: (0, a.jsx)("source", {
                         src: t.celebrationIdle
                     })
                 })]
             }), (0, a.jsx)("div", {
                 className: n ? b.aO : b.ws,
-                children: m(e, S)
+                children: m(e, x)
             })]
         })
     }
@@ -75,7 +75,7 @@ function f(e) {
         aspectRatio: "16/9"
     };
     return (0, a.jsxs)(a.Fragment, {
-        children: [!y && !x && (0, a.jsx)("img", {
+        children: [!y && !S && (0, a.jsx)("img", {
             src: p.A,
             alt: "",
             className: b.hK

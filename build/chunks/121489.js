@@ -1,33 +1,33 @@
 /** chunk id: 121489 params = (module,exports,require) **/
-a.d(t, {
+n.d(t, {
     _O: () => l,
     dP: () => i,
-    wQ: () => o
+    wQ: () => r
 });
-var n = a(954571),
-    r = a(652215);
+var a = n(954571),
+    o = n(652215);
 
-function o(e, t, a, o) {
-    n.default.track(r.HAw.VOICE_MESSAGE_PLAYBACK_STARTED, {
+function r(e, t, n, r) {
+    a.default.track(o.HAw.VOICE_MESSAGE_PLAYBACK_STARTED, {
         message_id: e,
         total_duration_secs: t,
-        start_duration_secs: Math.min(t ?? a, a),
-        sender_user_id: o
+        start_duration_secs: Math.min(t ?? n, n),
+        sender_user_id: r
     })
 }
 
-function i(e, t, a, o, i) {
-    n.default.track(r.HAw.VOICE_MESSAGE_PLAYBACK_ENDED, {
+function i(e, t, n, r, i) {
+    a.default.track(o.HAw.VOICE_MESSAGE_PLAYBACK_ENDED, {
         message_id: e,
         total_duration_secs: t,
-        end_duration_secs: Math.min(t ?? a, a),
-        sender_user_id: o,
+        end_duration_secs: Math.min(t ?? n, n),
+        sender_user_id: r,
         duration_listening_secs: i
     })
 }
 
 function l(e, t) {
-    n.default.track(r.HAw.VOICE_MESSAGE_PLAYBACK_FAILED, {
+    a.default.track(o.HAw.VOICE_MESSAGE_PLAYBACK_FAILED, {
         message_id: e,
         error_message: t
     })

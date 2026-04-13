@@ -16,13 +16,13 @@ let c = e => {
         className: r
     } = e, c = (0, o.Vm)(t), d = (0, a.VG)(c), {
         enabled: p
-    } = (0, s.P)("ProductCardName"), C = p && null != c && c.type === l.R.BUNDLE && c.items.length > 0;
+    } = (0, s.P)("ProductCardName"), k = p && null != c && c.type === l.R.BUNDLE && c.items.length > 0;
     return (0, n.jsx)(i.Heading, {
         variant: "heading-md/medium",
         color: "text-strong",
         className: r,
         lineClamp: 1,
-        children: C ? u.intl.format(u.t.UTc0ny, {
+        children: k ? u.intl.format(u.t.UTc0ny, {
             count: c.items.length,
             productName: d
         }) : d

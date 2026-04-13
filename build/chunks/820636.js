@@ -7,8 +7,8 @@ var r = n(627968),
     i = n(397927),
     a = n(829219),
     l = n(405670),
-    o = n(579473),
-    u = n(246878);
+    u = n(579473),
+    o = n(246878);
 
 function c(e) {
     let {
@@ -16,40 +16,40 @@ function c(e) {
         onClose: n
     } = e, c = (0, l.Kr)(e => e.transcript);
     s.useEffect(() => {
-        let e = (0, o.tW)(t, o.fY.VIDEO_PLAYER_TRANSCRIPT, void 0, !1);
+        let e = (0, u.tW)(t, u.fY.VIDEO_PLAYER_TRANSCRIPT, void 0, !1);
         (null == c || c.questId !== t.id || c.fetchStatus === l.Lx.NONE || c.fetchStatus === l.Lx.SUCCESS && e?.url !== c.url) && (0, a.qY)(t)
     }, [c, t]);
     let d = c?.questId === t.id && c?.fetchStatus === l.Lx.SUCCESS ? c.text ?? "" : "",
-        m = s.useMemo(() => d.split("\n").map(e => e.trim()).filter(e => e.length > 0), [d]);
+        E = s.useMemo(() => d.split("\n").map(e => e.trim()).filter(e => e.length > 0), [d]);
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-            className: u.Mm,
+            className: o.Mm,
             children: [(0, r.jsx)(i.Heading, {
                 variant: "heading-md/semibold",
                 color: "currentColor",
                 children: "Transcript"
             }), (0, r.jsx)(i.DUT, {
                 onClick: n,
-                className: u.GI,
+                className: o.GI,
                 children: (0, r.jsx)(i.PGe, {
                     color: "currentColor"
                 })
             })]
         }), (0, r.jsx)(i.vN3, {
             children: (0, r.jsx)(i.ArX, {
-                className: u.j5,
+                className: o.j5,
                 fade: !0,
                 children: (0, r.jsx)("div", {
-                    className: u.FN,
+                    className: o.FN,
                     children: c?.fetchStatus === l.Lx.FETCHING ? (0, r.jsx)("div", {
-                        className: u.Cw,
+                        className: o.Cw,
                         children: (0, r.jsx)(i.y$y, {
                             type: i.y$y.Type.WANDERING_CUBES
                         })
                     }) : (0, r.jsx)(i.Heading, {
                         variant: "heading-md/normal",
                         color: "text-muted",
-                        children: m.map((e, t) => (0, r.jsx)("p", {
+                        children: E.map((e, t) => (0, r.jsx)("p", {
                             children: e
                         }, t))
                     })

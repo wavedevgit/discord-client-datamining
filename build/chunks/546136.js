@@ -95,14 +95,16 @@ function N(e) {
         user: t,
         selectedGuildId: l,
         onSelectGuildId: i,
-        onClose: j,
-        className: v,
-        collapseButtonRef: N
-    } = e, y = (0, x.A)(i), C = r.Ay.canUsePremiumProfileCustomization(t);
+        isLoading: j = !1,
+        onClose: v,
+        className: N,
+        collapseButtonRef: y
+    } = e, C = (0, x.A)(i), E = r.Ay.canUsePremiumProfileCustomization(t);
     return (0, n.jsxs)("aside", {
         id: f,
         "aria-labelledby": h,
-        className: s()(g.nd, v),
+        className: s()(g.nd, N),
+        "aria-busy": j,
         children: [(0, n.jsx)(a.AC4, {
             children: (0, n.jsx)(a.H, {
                 id: h,
@@ -111,11 +113,12 @@ function N(e) {
         }), (0, n.jsxs)("div", {
             className: g.wx,
             children: [(0, n.jsx)(I, {
-                innerRef: N,
-                onClick: j
+                innerRef: y,
+                onClick: v
             }), (0, n.jsx)(p.A, {
                 selectedGuildId: l ?? null,
-                onChange: y
+                onChange: C,
+                loading: j
             })]
         }), (0, n.jsx)(a.Fmo, {
             children: (0, n.jsxs)(a.HOs, {
@@ -127,8 +130,10 @@ function N(e) {
                         variant: "text-sm/medium",
                         className: g.AM,
                         children: A.intl.string(A.t.x5CoXR)
-                    }), (0, n.jsx)(c.W, {
-                        guildId: l
+                    }), (0, n.jsx)(c.A, {
+                        user: t,
+                        guildId: l,
+                        disabled: j
                     })]
                 }), (0, n.jsxs)("div", {
                     className: g.Os,
@@ -136,12 +141,16 @@ function N(e) {
                         variant: "text-sm/medium",
                         className: g.AM,
                         children: A.intl.string(A.t["50Nwpc"])
-                    }), (0, n.jsx)(o.m, {
-                        guildId: l
-                    }), (0, n.jsx)(d.W, {
-                        guildId: l
+                    }), (0, n.jsx)(o.A, {
+                        user: t,
+                        guildId: l,
+                        disabled: j
+                    }), (0, n.jsx)(d.A, {
+                        user: t,
+                        guildId: l,
+                        disabled: j
                     })]
-                }), C && (0, n.jsxs)("div", {
+                }), E && (0, n.jsxs)("div", {
                     className: g.Os,
                     children: [(0, n.jsx)(a.Heading, {
                         variant: "text-sm/medium",
@@ -149,10 +158,11 @@ function N(e) {
                         children: A.intl.string(A.t.Zenogr)
                     }), (0, n.jsx)(u.A, {
                         user: t,
-                        guildId: l
+                        guildId: l,
+                        disabled: j
                     })]
                 })]
             })
-        }), !C && (0, n.jsx)(m.O, {})]
+        }), !E && (0, n.jsx)(m.O, {})]
     })
 }

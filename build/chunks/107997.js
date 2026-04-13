@@ -20,19 +20,21 @@ function x() {
         t = null != e ? l.A.get(e) : null,
         n = (0, o.h)(t?.replacedBy),
         {
-            canStartAuthorization: u
+            canStartAuthorization: u,
+            hasAlreadyLinked: x,
+            fetched: A
         } = (0, a.RD)(n),
-        x = m.intl.string(g.default["1S6oAo"]),
-        A = r.A.useConfig({
+        h = m.intl.string(g.default["1S6oAo"]),
+        p = r.A.useConfig({
             location: "RiotDeprecationInlineNotice"
         }).enabled;
-    return i.useMemo(() => A && null != t && u && n?.connectionEntrypointUrl != null ? {
+    return i.useMemo(() => p && null != t && u && n?.connectionEntrypointUrl != null && !x && A ? {
         type: d.lT.INLINE_NOTICE,
         noticeType: "info",
         useText: () => m.intl.format(g.default.DeOsIl, {
             connectionName: t.name,
-            applicationName: x,
+            applicationName: h,
             connectionEntrypointUrl: n.connectionEntrypointUrl
         })
-    } : null, [t, x, n, u, A])
+    } : null, [t, h, n, u, p, x, A])
 }

@@ -21,10 +21,13 @@ let g = e => {
         innerClassName: g
     } = e, {
         canStartAuthorization: _,
-        startAuthorization: x
-    } = (0, c.RD)(n), {
-        analyticsLocations: A
-    } = (0, d.Ay)(o.A.USER_SETTINGS_CONNECTIONS), h = u.Ay.getApplicationIconURL({
+        startAuthorization: x,
+        fetched: A
+    } = (0, c.RD)(n);
+    t = t || !A || !_;
+    let {
+        analyticsLocations: h
+    } = (0, d.Ay)(o.A.USER_SETTINGS_CONNECTIONS), p = u.Ay.getApplicationIconURL({
         id: n.id,
         icon: n.icon
     });
@@ -36,14 +39,14 @@ let g = e => {
                 children: (0, i.jsx)("button", {
                     className: l()(m.v, g),
                     type: "button",
-                    disabled: !_ || t,
                     style: {
-                        backgroundImage: `url('${h}')`
+                        backgroundImage: `url('${p}')`
                     },
                     onClick: () => x({
-                        analyticsLocations: A
+                        analyticsLocations: h
                     }),
-                    "aria-label": n.name
+                    "aria-label": n.name,
+                    disabled: t
                 })
             })
         })

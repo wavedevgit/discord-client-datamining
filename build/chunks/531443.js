@@ -1,13 +1,13 @@
 /** chunk id: 531443 params = (module,exports,require) **/
 n.d(t, {
-    G: () => o
+    G: () => u
 });
 var r = n(141711),
     s = n(118356),
     i = n(740644),
     a = n(497329);
 let l = new s.Vy("SimpleMuxWrapper");
-class o {
+class u {
     isMonitoring = !1;
     videoElement;
     config;

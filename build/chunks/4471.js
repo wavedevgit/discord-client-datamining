@@ -1,6 +1,6 @@
 /** chunk id: 4471 params = (module,exports,require) **/
 s.d(t, {
-    A: () => m
+    A: () => E
 });
 var n = s(627968),
     l = s(284009),
@@ -12,67 +12,67 @@ var n = s(627968),
     c = s(303136),
     L = s(287809),
     H = s(676279),
-    o = s(659746),
-    M = s(985018),
-    u = s(869132),
+    M = s(659746),
+    u = s(985018),
+    o = s(869132),
     g = s(472161),
     h = s(573080),
     p = s(780350);
-let m = e => {
+let E = e => {
     let {
         type: t,
         text: s,
         buttonText: l,
-        buttonLoading: m,
-        hideClose: E,
+        buttonLoading: E,
+        hideClose: m,
         onClose: N
-    } = e, f = (0, a.bG)([L.default], () => {
+    } = e, _ = (0, a.bG)([L.default], () => {
         let e = L.default.getCurrentUser();
         return i()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
-    }), _ = (0, H.TM)() ? g.A : p.A, A = (e => {
+    }), f = (0, H.TM)() ? g.A : p.A, A = (e => {
         switch (e) {
-            case o.Or.PREMIUM_UPDATED:
-                return M.intl.string(M.t["75Wt0E"]);
-            case o.Or.PREMIUM_ACTIVATED:
-                return M.intl.string(M.t.QWljxE);
+            case M.Or.PREMIUM_UPDATED:
+                return u.intl.string(u.t["75Wt0E"]);
+            case M.Or.PREMIUM_ACTIVATED:
+                return u.intl.string(u.t.QWljxE);
             default:
-                return M.intl.string(M.t.X79Az5)
+                return u.intl.string(u.t.X79Az5)
         }
     })(t);
     return (0, n.jsxs)("div", {
-        className: u.kL,
+        className: o.kL,
         children: [(0, n.jsx)(C.Heading, {
-            className: u.wx,
+            className: o.wx,
             variant: "display-md",
             color: "text-strong",
             children: A
         }), (0, n.jsxs)("div", {
-            className: u.Dz,
+            className: o.Dz,
             children: [(0, n.jsx)(c.A, {
                 fallbackImage: h.A,
-                className: u.d9,
+                className: o.d9,
                 children: (0, n.jsx)("source", {
-                    src: _
+                    src: f
                 })
             }), (0, n.jsx)(d.A, {
-                user: f,
+                user: _,
                 isHighlighted: !0,
                 nameplate: null,
-                nameplateData: f.nameplate,
-                className: u.M4,
+                nameplateData: _.nameplate,
+                className: o.M4,
                 nameplatePreviewSize: "large"
             })]
         }), (0, n.jsx)("div", {
-            className: u.FS,
+            className: o.FS,
             children: s
-        }), !E && (0, n.jsx)("div", {
-            className: u.qr,
+        }), !m && (0, n.jsx)("div", {
+            className: o.qr,
             children: (0, n.jsx)(r.$nd, {
                 variant: "expressive",
                 fullWidth: !0,
                 text: l,
                 onClick: N,
-                loading: m
+                loading: E
             })
         })]
     })

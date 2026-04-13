@@ -1,7 +1,7 @@
 /** chunk id: 380786 params = (module,exports,require) **/
 n.d(e, {
     A: () => O,
-    D: () => h
+    D: () => C
 });
 var i = n(627968);
 n(64700);
@@ -52,7 +52,7 @@ function O(t) {
     })
 }
 
-function h(t) {
+function C(t) {
     t.forEach(t => {
         null == E.A.getGuildRoleConnectionsConfiguration(t.id) && (0, u.os)(t.guildId, t.id)
     });

@@ -1,83 +1,74 @@
 /** chunk id: 473219 params = (module,exports,require) **/
-t.d(n, {
-    W: () => m
+l.d(t, {
+    A: () => h
 });
-var i = t(627968),
-    a = t(64700),
-    l = t(311907),
-    r = t(688810),
-    o = t(512213),
-    s = t(637193),
-    d = t(713517),
-    c = t(919395),
-    _ = t(287809),
-    u = t(84540),
-    p = t(930349),
-    A = t(985018),
-    g = t(432856);
+var a = l(627968),
+    n = l(64700),
+    r = l(688810),
+    i = l(512213),
+    o = l(637193),
+    s = l(713517),
+    d = l(919395),
+    c = l(84540),
+    u = l(930349),
+    p = l(985018),
+    m = l(432856);
 
 function h(e) {
     let {
-        user: n,
-        guildId: t
+        user: t,
+        guildId: l,
+        disabled: h
     } = e, {
-        analyticsLocations: l
-    } = (0, r.Ay)(), _ = null != t, h = a.useRef(null), {
-        isHoveringOrFocusing: m
-    } = (0, d.A)(h), {
-        guildNameplate: f,
-        pendingNameplate: I
-    } = (0, c.rv)(n, t ?? void 0), x = (0, c.lw)({
-        pendingValue: I,
-        userValue: n.collectibles?.nameplate,
-        guildValue: f,
-        guildId: t ?? void 0
-    }), b = void 0 !== I, v = _ ? f : n.collectibles?.nameplate, E = a.useCallback(() => {
-        (0, s.p)({
-            analyticsLocations: l,
-            guildId: t ?? void 0,
+        analyticsLocations: x
+    } = (0, r.Ay)(), b = null != l, y = n.useRef(null), {
+        isHoveringOrFocusing: f
+    } = (0, s.A)(y), {
+        guildNameplate: g,
+        pendingNameplate: v
+    } = (0, d.rv)(t, l ?? void 0), _ = (0, d.lw)({
+        pendingValue: v,
+        userValue: t.collectibles?.nameplate,
+        guildValue: g,
+        guildId: l ?? void 0
+    }), E = void 0 !== v, C = b ? g : t.collectibles?.nameplate, j = n.useCallback(() => {
+        (0, o.p)({
+            analyticsLocations: x,
+            guildId: l ?? void 0,
             stackingBehavior: "stack"
         })
-    }, [l, t]), y = _ && n.collectibles?.nameplate != null, j = null != x && (b ? null != I : null != v) ? {
-        onClick: () => (0, u.p)({
-            guildId: t ?? void 0,
+    }, [x, l]), S = b && t.collectibles?.nameplate != null, T = null != _ && (E ? null != v : null != C) ? {
+        onClick: () => (0, c.p)({
+            guildId: l ?? void 0,
             nameplate: null
         }),
-        type: y ? "reset" : "remove",
-        accessibleLabel: A.intl.string(y ? A.t.neYqhR : A.t["9zwziY"])
-    } : void 0, T = (0, i.jsx)("div", {
-        className: g.M,
+        type: S ? "reset" : "remove",
+        accessibleLabel: p.intl.string(S ? p.t.neYqhR : p.t["9zwziY"])
+    } : void 0, A = (0, a.jsx)("div", {
+        className: m.M,
         "aria-hidden": !0,
-        children: (0, i.jsx)(o.A, {
-            user: n,
-            guildId: t ?? void 0,
-            nameplate: x,
-            showPlaceholderUser: null == x || !m
+        children: (0, a.jsx)(i.A, {
+            user: t,
+            guildId: l ?? void 0,
+            nameplate: _,
+            showPlaceholderUser: null == _ || !f || h
         })
     });
-    return (0, i.jsx)("div", {
-        ref: h,
-        children: null == x ? (0, i.jsx)(p.kL, {
+    return (0, a.jsx)("div", {
+        ref: y,
+        children: null == _ ? (0, a.jsx)(u.kL, {
             variant: "bar",
-            onClick: E,
-            accessibleLabel: A.intl.string(A.t.BwdeM1),
-            children: T
-        }) : (0, i.jsx)(p.NW, {
+            onClick: j,
+            accessibleLabel: p.intl.string(p.t.BwdeM1),
+            disabled: h,
+            children: A
+        }) : (0, a.jsx)(u.NW, {
             variant: "bar",
-            onClick: E,
-            accessibleLabel: A.intl.string(A.t.BwdeM1),
-            deleteButtonConfig: j,
-            children: T
+            onClick: j,
+            accessibleLabel: p.intl.string(p.t.BwdeM1),
+            deleteButtonConfig: T,
+            disabled: h,
+            children: A
         })
-    })
-}
-
-function m(e) {
-    let {
-        guildId: n
-    } = e, t = (0, l.bG)([_.default], () => _.default.getCurrentUser());
-    return null == t ? null : (0, i.jsx)(h, {
-        user: t,
-        guildId: n
     })
 }

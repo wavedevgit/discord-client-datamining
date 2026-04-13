@@ -1,72 +1,96 @@
 /** chunk id: 963135 params = (module,exports,require) **/
-a.d(t, {
-    A: () => p
+n.d(t, {
+    A: () => m
 });
-var n = a(627968),
-    r = a(64700),
-    o = a(311907),
-    i = a(397927),
-    l = a(421773),
-    c = a(657331),
-    s = a(342296),
-    _ = a(589022),
-    d = a(287809),
-    u = a(2398);
-let p = function(e) {
+var a = n(627968),
+    o = n(64700),
+    r = n(311907),
+    i = n(397927),
+    l = n(421773),
+    c = n(657331),
+    s = n(287809),
+    _ = n(2398);
+let d = o.lazy(() => Promise.resolve().then(n.bind(n, 342296))),
+    u = o.lazy(() => Promise.resolve().then(n.bind(n, 589022)));
+
+function p(e) {
     let {
         user: t,
-        guildId: a
-    } = e, p = (0, o.bG)([d.default], () => d.default.getCurrentUser()), m = r.useRef(null), {
-        isHovered: b,
+        guildId: n
+    } = e;
+    return (0, a.jsx)("div", {
+        className: _.RB,
+        children: (0, a.jsx)(i.euF, {
+            src: t.getAvatarURL(n, 24),
+            size: i._3J.SIZE_24,
+            "aria-hidden": !0
+        })
+    })
+}
+let m = function(e) {
+    let {
+        user: t,
+        guildId: n
+    } = e, m = (0, r.bG)([s.default], () => s.default.getCurrentUser()), b = o.useRef(null), {
+        isHovered: h,
         onMouseEnter: f,
         onMouseLeave: C,
         setIsHovered: g
-    } = (0, l.A)(0, 150), h = r.useCallback(e => {
+    } = (0, l.A)(0, 150), v = o.useCallback(e => {
         e.stopPropagation(), g(!1), (0, c.openUserProfileModal)({
             userId: t.id,
-            guildId: a
+            guildId: n
         })
-    }, [t.id, a, g]), v = r.useCallback(e => null == p ? null : (0, n.jsx)("div", {
+    }, [t.id, n, g]), x = o.useCallback(e => null == m ? null : (0, a.jsx)("div", {
         onMouseEnter: f,
         onMouseLeave: C,
-        children: (0, n.jsx)(_.A, {
-            ...e,
+        children: (0, a.jsx)(o.Suspense, {
+            fallback: null,
+            children: (0, a.jsx)(u, {
+                ...e,
+                user: t,
+                currentUser: m,
+                guildId: n,
+                closePopout: () => {
+                    e.closePopout(), g(!1)
+                }
+            })
+        })
+    }), [t, m, n, f, C, g]);
+    return (0, a.jsx)(o.Suspense, {
+        fallback: (0, a.jsx)(p, {
             user: t,
-            currentUser: p,
-            guildId: a,
-            closePopout: () => {
-                e.closePopout(), g(!1)
+            guildId: n
+        }),
+        children: (0, a.jsx)(d, {
+            targetElementRef: b,
+            shouldPreload: !0,
+            user: t,
+            guildId: n,
+            position: "bottom",
+            shouldShow: h,
+            renderPopout: x,
+            onRequestClose: () => g(!1),
+            children: e => {
+                let {
+                    onClick: o,
+                    ...r
+                } = e;
+                return (0, a.jsx)(i.DUT, {
+                    ...r,
+                    innerRef: b,
+                    className: _.RB,
+                    onMouseEnter: f,
+                    onMouseLeave: C,
+                    onClick: v,
+                    "aria-label": t.username,
+                    children: (0, a.jsx)(i.euF, {
+                        src: t.getAvatarURL(n, 24),
+                        size: i._3J.SIZE_24,
+                        "aria-hidden": !0
+                    })
+                })
             }
         })
-    }), [t, p, a, f, C, g]);
-    return (0, n.jsx)(s.A, {
-        targetElementRef: m,
-        shouldPreload: !0,
-        user: t,
-        guildId: a,
-        position: "bottom",
-        shouldShow: b,
-        renderPopout: v,
-        onRequestClose: () => g(!1),
-        children: e => {
-            let {
-                onClick: r,
-                ...o
-            } = e;
-            return (0, n.jsx)(i.DUT, {
-                ...o,
-                innerRef: m,
-                className: u.RB,
-                onMouseEnter: f,
-                onMouseLeave: C,
-                onClick: h,
-                "aria-label": t.username,
-                children: (0, n.jsx)(i.euF, {
-                    src: t.getAvatarURL(a, 24),
-                    size: i._3J.SIZE_24,
-                    "aria-hidden": !0
-                })
-            })
-        }
     })
 }

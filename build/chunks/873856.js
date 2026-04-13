@@ -7,8 +7,8 @@ var r = n(64700),
     i = n(536968),
     a = n(697397),
     l = n(579473),
-    o = n(795068),
-    u = n(654487);
+    u = n(795068),
+    o = n(654487);
 
 function c(e) {
     let {
@@ -17,21 +17,21 @@ function c(e) {
         hlsRef: c,
         videoAssetType: d
     } = e, {
-        questConfig: m
-    } = r.useContext(o.l), E = (0, i._o)({
-        location: u.rE.VIDEO_MODAL
+        questConfig: E
+    } = r.useContext(u.l), m = (0, i._o)({
+        location: o.rE.VIDEO_MODAL
     }).externalAnalyticsEnabled && null != t, _ = d === l.fY.VIDEO_PLAYER_VIDEO_HLS, f = r.useMemo(() => ({
         contentId: t ?? "",
         videoStreamType: _ ? "hls" : "mp4",
         contentType: "quests",
-        title: m.taskConfigV2.tasks[s.n.WATCH_VIDEO]?.messages.videoTitle,
-        questId: m.id,
-        gameName: m.messages.gameTitle
-    }), [t, _, m]);
+        title: E.taskConfigV2.tasks[s.n.WATCH_VIDEO]?.messages.videoTitle,
+        questId: E.id,
+        gameName: E.messages.gameTitle
+    }), [t, _, E]);
     (0, a.P8)({
         videoRef: n,
         hlsRef: c,
-        enabled: E,
+        enabled: m,
         contentMetadata: f,
         isHls: _
     })

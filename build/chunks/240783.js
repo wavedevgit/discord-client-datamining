@@ -6,9 +6,9 @@ var i = t(627968),
     a = t(64700),
     l = t(311907),
     r = t(397927),
-    o = t(351906),
+    d = t(351906),
     s = t(183555),
-    d = t(382120),
+    o = t(382120),
     c = t(128490),
     _ = t(539548),
     u = t(412775),
@@ -17,16 +17,16 @@ var i = t(627968),
     g = t(518477),
     h = t(985018),
     m = t(643146),
-    f = t(843796);
+    I = t(843796);
 
-function I(e) {
+function f(e) {
     let {
         section: n,
         user: t,
         currentUser: a,
         displayProfile: l,
         guildId: r,
-        channelId: o,
+        channelId: d,
         onClose: s
     } = e;
     return n === g.RP.ACTIVITY ? (0, i.jsx)(_.A, {
@@ -37,12 +37,12 @@ function I(e) {
     }) : n === g.RP.MUTUAL_FRIENDS ? (0, i.jsx)(p.A, {
         user: t,
         guildId: r,
-        channelId: o,
+        channelId: d,
         onClose: s
     }) : n === g.RP.MUTUAL_GUILDS ? (0, i.jsx)(A.A, {
         user: t,
         onClose: s
-    }) : n === g.RP.BOT_DATA_ACCESS ? (0, i.jsx)(d.A, {
+    }) : n === g.RP.BOT_DATA_ACCESS ? (0, i.jsx)(o.A, {
         user: t
     }) : n === g.RP.BOT_INFO ? (0, i.jsx)(c.A, {
         user: t,
@@ -60,14 +60,14 @@ function x(e) {
     let {
         user: n,
         currentUser: t,
-        displayProfile: d,
+        displayProfile: o,
         guildId: c,
         items: _,
         initialSection: u = g.RP.USER_INFO,
         onClose: p
     } = e, {
         trackUserProfileAction: A
-    } = (0, s.NJ)(), x = (0, l.bG)([o.A], () => o.A.hidePersonalInformation), [b, v] = a.useState(() => _.find(e => {
+    } = (0, s.NJ)(), x = (0, l.bG)([d.A], () => d.A.hidePersonalInformation), [b, v] = a.useState(() => _.find(e => {
         let {
             section: n
         } = e;
@@ -83,7 +83,7 @@ function x(e) {
         }), v(e)
     }, [A]);
     return x ? (0, i.jsx)("div", {
-        className: f.kL,
+        className: I.kL,
         children: (0, i.jsxs)("div", {
             className: m.Ie,
             children: [(0, i.jsx)("div", {
@@ -94,9 +94,9 @@ function x(e) {
             })]
         })
     }) : (0, i.jsxs)("div", {
-        className: f.kL,
+        className: I.kL,
         children: [(0, i.jsx)(r.VQ0, {
-            className: f.$H,
+            className: I.$H,
             type: "top",
             selectedItem: b,
             onItemSelect: E,
@@ -106,7 +106,7 @@ function x(e) {
                     text: t
                 } = e;
                 return (0, i.jsx)(r.VQ0.Item, {
-                    className: f.YU,
+                    className: I.YU,
                     id: n,
                     "aria-label": t,
                     children: (0, i.jsx)(r.Text, {
@@ -115,12 +115,12 @@ function x(e) {
                     })
                 }, n)
             })
-        }), (0, i.jsx)(I, {
+        }), (0, i.jsx)(f, {
             items: _,
             section: b,
             user: n,
             currentUser: t,
-            displayProfile: d,
+            displayProfile: o,
             guildId: c,
             onClose: p
         })]

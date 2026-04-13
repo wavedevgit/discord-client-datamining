@@ -93,7 +93,7 @@ let O = l.memo(function(e) {
             };
         return (0, i.jsxs)("div", {
             className: R.fn,
-            children: [(0, i.jsx)(f.A, {
+            children: [(0, i.jsx)(f.default, {
                 targetElementRef: r,
                 user: s.user,
                 guildId: t.guild_id,

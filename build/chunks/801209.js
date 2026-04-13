@@ -12,19 +12,19 @@ function i(e) {
         enabled: i,
         contentMetadata: a,
         isHls: l,
-        debug: o
-    } = e, u = r.useRef(null);
+        debug: u
+    } = e, o = r.useRef(null);
     r.useEffect(() => {
         if (!i || null == t.current || l && null == n.current) return;
         let e = {
-            debug: o ?? !1,
+            debug: u ?? !1,
             videoElement: t.current,
             hlsInstance: l ? n.current ?? void 0 : void 0,
             feature: a.contentType,
             contentMetadata: a
         };
-        return u.current = new s.Gb(e), u.current.initialize(), () => {
-            null != u.current && (u.current.endSession(), u.current.destroy(), u.current = null)
+        return o.current = new s.Gb(e), o.current.initialize(), () => {
+            null != o.current && (o.current.endSession(), o.current.destroy(), o.current = null)
         }
-    }, [i, l, n, t, a, o])
+    }, [i, l, n, t, a, u])
 }

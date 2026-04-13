@@ -46,12 +46,12 @@ function m(e, t) {
         m = r.A.getReactions(e.getChannelId(), e.id, t, 3, i),
         p = o.A.getChannel(e.getChannelId()),
         g = null == p || p.isPrivate() ? null : p.getGuildId(),
-        _ = e.getReaction(t),
-        f = i === d.v.BURST,
+        f = e.getReaction(t),
+        _ = i === d.v.BURST,
         A = a()(Array.from(m?.values() ?? [])).reject(e => s.A.isBlockedOrIgnored(e.id)).take(3).map(e => c.Ay.getName(g, p?.id, e)).value();
     if (0 === A.length) return "";
-    let T = f ? h.burst : h.standard,
-        b = Math.max(0, ((f ? _?.burst_count : _?.count) ?? 0) - A.length),
+    let T = _ ? h.burst : h.standard,
+        b = Math.max(0, ((_ ? f?.burst_count : f?.count) ?? 0) - A.length),
         E = (0, l.b3)(t);
     if (1 === A.length)
         if (!(b > 0)) return u.intl.formatToPlainString(T.reactionTooltip1, {

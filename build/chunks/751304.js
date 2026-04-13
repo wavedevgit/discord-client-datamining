@@ -12,18 +12,18 @@ var n = r(627968),
     c = r(230109),
     d = r(397927),
     p = r(444927),
-    C = r(793574),
-    k = r(688810),
+    k = r(793574),
+    C = r(688810),
     m = r(713517),
     x = r(440938),
     g = r(161918),
-    h = r(320447),
-    I = r(597783),
-    A = r(777829),
+    A = r(320447),
+    h = r(597783),
+    I = r(777829),
     v = r(859587),
-    f = r(918838),
-    _ = r(536572),
-    T = r(268959),
+    _ = r(918838),
+    T = r(536572),
+    f = r(268959),
     E = r(387945),
     y = r(638006),
     j = r(140877),
@@ -67,32 +67,32 @@ let H = l.memo(function(e) {
             handleLeaving: en
         } = (0, N.f)(t), el = (0, P.gZ)() ?? $, {
             enabled: ei
-        } = (0, h.P)("ProductCard"), es = (0, g.Mk)(), ea = es?.tab, eo = (0, x.uM)(), eu = l.useMemo(() => (0, P.UU)(t, ea, eo), [t, ea, eo]), ec = (0, _.s7)(t), ed = l.useRef(null), {
+        } = (0, A.P)("ProductCard"), es = (0, g.Mk)(), ea = es?.tab, eo = (0, x.uM)(), eu = l.useMemo(() => (0, P.UU)(t, ea, eo), [t, ea, eo]), ec = (0, T.s7)(t), ed = l.useRef(null), {
             isHoveringOrFocusing: ep
-        } = (0, m.A)(ed), eC = (0, f.U)(t), ek = (0, o.A)(ed, eC), {
+        } = (0, m.A)(ed), ek = (0, _.U)(t), eC = (0, o.A)(ed, ek), {
             handleCardVisibilityChange: em
-        } = (0, I.Z)(t.skuId, ea === L.G2.CATALOG ? "full" : ea), ex = (0, P.ql)(t, C.A.COLLECTIBLES_SHOP_CARD, eu), {
+        } = (0, h.Z)(t.skuId, ea === L.G2.CATALOG ? "full" : ea), ex = (0, P.ql)(t, k.A.COLLECTIBLES_SHOP_CARD, eu), {
             analyticsLocations: eg
-        } = (0, k.Ay)(), eh = (0, A.f)({
+        } = (0, C.Ay)(), eA = (0, I.f)({
             product: t,
             analyticsLocations: eg
-        }), eI = l.useCallback(e => {
-            null != D ? D(e) : (eh(L.sH.OPEN_DETAILS), ex(e))
-        }, [eh, D, ex]);
+        }), eh = l.useCallback(e => {
+            null != D ? D(e) : (eA(L.sH.OPEN_DETAILS), ex(e))
+        }, [eA, D, ex]);
         (0, v.x)(ep, t);
         let {
-            enabled: eA
-        } = (0, h.P)("ProductCard"), ev = t.type === u.R.BUNDLE && eA && t.previewAssets?.fgStatic != null, ef = t.type === u.R.VARIANTS_GROUP && !a, e_ = l.useMemo(() => ({
+            enabled: eI
+        } = (0, A.P)("ProductCard"), ev = t.type === u.R.BUNDLE && eI && t.previewAssets?.fgStatic != null, e_ = t.type === u.R.VARIANTS_GROUP && !a, eT = l.useMemo(() => ({
             maxVariantsToShow: 4,
             onClick: ex
-        }), [ex]), eT = t.type === u.R.BUNDLE && ei && !ee, eE = !H || !B, ey = !(p && i) || ef, ej = ey || eE, eb = eE || ef;
+        }), [ex]), ef = t.type === u.R.BUNDLE && ei && !ee, eE = !H || !B, ey = !(p && i) || e_, ej = ey || eE, eb = eE || e_;
         return (0, n.jsx)(c.L, {
             innerRef: ed,
             onChange: em,
             threshold: 0,
             children: (0, n.jsx)(d.sqX, {
-                ref: ek,
-                onClick: eI,
+                ref: eC,
+                onClick: eh,
                 "aria-label": ec,
                 className: s()(Z, V.ty, {
                     [V.yo]: ep
@@ -106,7 +106,7 @@ let H = l.memo(function(e) {
                     style: {
                         aspectRatio: J
                     },
-                    children: [eT && t.previewAssets?.bgStatic != null && (0, n.jsx)("img", {
+                    children: [ef && t.previewAssets?.bgStatic != null && (0, n.jsx)("img", {
                         className: V.vD,
                         src: t.previewAssets.bgStatic,
                         alt: ""
@@ -122,7 +122,7 @@ let H = l.memo(function(e) {
                         })
                     }), (0, n.jsxs)("div", {
                         className: V.N1,
-                        children: [(0, n.jsx)(T.A, {
+                        children: [(0, n.jsx)(f.A, {
                             skuId: t.skuId,
                             badgeOverride: w,
                             className: X,
@@ -131,7 +131,7 @@ let H = l.memo(function(e) {
                         }), !r && (0, n.jsx)(O.A, {
                             skuId: t.skuId,
                             isCardHovered: ep,
-                            onTrackClick: eh
+                            onTrackClick: eA
                         })]
                     }), ej && (0, n.jsxs)(n.Fragment, {
                         children: [(0, n.jsx)("div", {
@@ -155,13 +155,13 @@ let H = l.memo(function(e) {
                                             prioritizedCurrency: el
                                         })
                                     })]
-                                }), ef && (0, n.jsx)(S.A, {
+                                }), e_ && (0, n.jsx)(S.A, {
                                     skuId: t.skuId,
                                     isCollapsed: !ep,
                                     onVariantEnter: er,
                                     onVariantExit: en,
-                                    overflowProps: e_,
-                                    onTrackClick: eh
+                                    overflowProps: eT,
+                                    onTrackClick: eA
                                 })]
                             }), eE && (0, n.jsx)("div", {
                                 className: V.Vs,
@@ -176,7 +176,7 @@ let H = l.memo(function(e) {
                                         text: Y,
                                         prioritizedCurrency: el,
                                         onClickAnalytics: eu,
-                                        onTrackClick: eh
+                                        onTrackClick: eA
                                     }), !B && (0, n.jsx)(R.A, {
                                         skuId: t.skuId,
                                         cardRef: ed,
@@ -184,7 +184,7 @@ let H = l.memo(function(e) {
                                         icon: Q,
                                         prioritizedCurrency: el,
                                         onClickAnalytics: eu,
-                                        onTrackClick: eh
+                                        onTrackClick: eA
                                     })]
                                 })
                             })]

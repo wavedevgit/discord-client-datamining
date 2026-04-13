@@ -1,9 +1,9 @@
 /** chunk id: 352944 params = (module,exports,require) **/
-var i;
+var a;
 
-function a() {
-    return i || ((i = new Image).src = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="), i
+function l() {
+    return a || ((a = new Image).src = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="), a
 }
-t.d(n, {
-    n: () => a
+n.d(t, {
+    n: () => l
 })

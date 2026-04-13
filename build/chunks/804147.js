@@ -1,23 +1,23 @@
 /** chunk id: 804147 params = (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => o
 });
 var r = n(627968),
     s = n(64700),
     i = n(697397),
     a = n(721092),
     l = n(795068),
-    o = n(590358);
+    u = n(590358);
 
-function u(e) {
+function o(e) {
     let {
         targetSec: t,
         isFullyVisible: n,
-        percent: u,
+        percent: o,
         animate: c,
         interactionEnabled: d,
-        isQuestCompleted: m,
-        backgroundColor: E,
+        isQuestCompleted: E,
+        backgroundColor: m,
         preloadedBuffers: _,
         durationSec: f,
         maxSeekableTime: p,
@@ -29,33 +29,33 @@ function u(e) {
     } = e, {
         quest: C,
         sourceQuestContent: x,
-        useNewProgressBarStyling: T
+        useNewProgressBarStyling: D
     } = s.useContext(l.a), {
-        questConfig: D
-    } = s.useContext(l.l), I = !m && T, y = (0, a.A)({
+        questConfig: T
+    } = s.useContext(l.l), I = !E && D, y = (0, a.A)({
         targetSec: t,
         quest: C,
         sourceQuestContent: x,
-        questConfig: D,
+        questConfig: T,
         onIndicatorClick: v
     });
     return (0, r.jsx)(i.uI, {
         isFullyVisible: n,
-        percent: u,
+        percent: o,
         animate: c,
         interactionEnabled: d,
         playerState: S,
-        backgroundColor: E,
+        backgroundColor: m,
         preloadedBuffers: _,
         durationSec: f,
         maxSeekableTime: p,
-        segmentBorderRadius: T ? 99 : 8,
+        segmentBorderRadius: D ? 99 : 8,
         progressGlow: !0,
-        progressFillClassName: I ? o.QR : o.UA,
-        glowClassName: I ? o.Um : o.U5,
-        timelineHeightPx: T ? 4 : 2,
-        hoverTimelineHeightPx: T ? void 0 : 4,
-        initialTimelineHeightPx: T ? 4 : 2,
+        progressFillClassName: I ? u.QR : u.UA,
+        glowClassName: I ? u.Um : u.U5,
+        timelineHeightPx: D ? 4 : 2,
+        hoverTimelineHeightPx: D ? void 0 : 4,
+        initialTimelineHeightPx: D ? 4 : 2,
         onClick: v,
         onScrubBack: h,
         onScrubForward: g,

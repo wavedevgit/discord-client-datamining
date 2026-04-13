@@ -7,8 +7,8 @@ var r = n(627968),
     i = n(158954),
     a = n(92246),
     l = n(856658),
-    o = n(80026),
-    u = n(654487);
+    u = n(80026),
+    o = n(654487);
 let c = {
     tension: 500,
     friction: 30,
@@ -20,9 +20,9 @@ function d(e) {
         targetSec: t,
         quest: n,
         sourceQuestContent: d,
-        questConfig: m,
-        onIndicatorClick: E
-    } = e, _ = s.useMemo(() => m?.features.includes(u.Li.FULL_EPISODE_VIDEO_QUEST) === !0, [m?.features]), [f, p] = s.useState(null), S = s.useRef(null), [{
+        questConfig: E,
+        onIndicatorClick: m
+    } = e, _ = s.useMemo(() => E?.features.includes(o.Li.FULL_EPISODE_VIDEO_QUEST) === !0, [E?.features]), [f, p] = s.useState(null), S = s.useRef(null), [{
         expansion: v
     }, h] = (0, i.zhh)(() => ({
         expansion: 0,
@@ -32,16 +32,16 @@ function d(e) {
         }
     })), g = s.useCallback(e => {
         S.current = e, null != e ? (p(e), h({
-            expansion: o.KY
+            expansion: u.KY
         })) : h({
             expansion: 0
         })
     }, [h]), A = s.useMemo(() => [{
         index: 0,
         timeSec: t,
-        widthPx: o.ws,
-        gapPx: o.Ue
-    }], [t]), C = s.useMemo(() => _ ? (0, a.mq)(m) : void 0, [m, _]), x = s.useCallback((e, s) => {
+        widthPx: u.ws,
+        gapPx: u.Ue
+    }], [t]), C = s.useMemo(() => _ ? (0, a.mq)(E) : void 0, [E, _]), x = s.useCallback((e, s) => {
         let i = {
             leftPx: e.leftPx,
             rightPx: e.rightPx,
@@ -58,14 +58,14 @@ function d(e) {
             sourceQuestContent: d,
             onMouseEnter: () => g(e.index),
             onMouseLeave: () => g(null),
-            onClick: null != E ? () => E(i.targetSec) : void 0
+            onClick: null != m ? () => m(i.targetSec) : void 0
         }, `indicator-${e.index}`)
-    }, [t, C, f, v, n, d, g, E]);
+    }, [t, C, f, v, n, d, g, m]);
     if (_) return {
         indicators: A,
         animatingIndex: f,
         expansionSpring: v,
-        hoverExpansionPx: o.KY,
+        hoverExpansionPx: u.KY,
         renderIndicator: x
     }
 }

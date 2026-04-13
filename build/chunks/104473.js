@@ -2,8 +2,8 @@
 n.d(t, {
     AZ: () => f
 });
-var r = n(627968),
-    a = n(64700),
+var a = n(627968),
+    r = n(64700),
     o = n(294426),
     i = n(397927),
     l = n(664111),
@@ -15,21 +15,21 @@ function u(e) {
     let {
         orientation: t,
         thumbnailUrl: n,
-        onReplay: a
+        onReplay: r
     } = e;
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(s.nY, {
+    return (0, a.jsxs)(a.Fragment, {
+        children: [(0, a.jsx)(s.nY, {
             url: n
-        }), (0, r.jsx)(s.KP, {}), (0, r.jsxs)(s.zj, {
+        }), (0, a.jsx)(s.KP, {}), (0, a.jsxs)(s.zj, {
             orientation: t,
-            children: [(0, r.jsx)(s.Kb, {
+            children: [(0, a.jsx)(s.Kb, {
                 url: n,
                 orientation: t
-            }), (0, r.jsx)(s.lx, {
+            }), (0, a.jsx)(s.lx, {
                 title: "Watch Again",
                 subtitle: "Replay this video",
                 ctaBtnLabel: "Replay",
-                onCTAClick: a,
+                onCTAClick: r,
                 orientation: t
             })]
         })]
@@ -40,25 +40,25 @@ function p(e) {
     let {
         orientation: t,
         autoplay: n,
-        maxSeekableTimeSec: a,
+        maxSeekableTimeSec: r,
         videoUrl: o,
         poster: s,
         showEndScreen: p,
         active: m
     } = e;
-    return (0, r.jsx)("div", {
+    return (0, a.jsx)("div", {
         style: {
             width: "landscape" === t ? "640px" : "360px",
             height: "landscape" === t ? "360px" : "640px",
             margin: "0 auto"
         },
-        children: (0, r.jsx)(l.A, {
+        children: (0, a.jsx)(l.A, {
             src: o,
             poster: s,
             active: m,
             autoplay: n,
             orientation: t,
-            maxSeekableTimeSec: a > 0 ? a : void 0,
+            maxSeekableTimeSec: r > 0 ? r : void 0,
             parentTransitionState: i.ip4.ENTERED,
             targetTimeSec: 1 / 0,
             onOptimisticProgressUpdate: () => {},
@@ -71,7 +71,7 @@ function p(e) {
                 let {
                     replay: n
                 } = e;
-                return (0, r.jsx)(u, {
+                return (0, a.jsx)(u, {
                     orientation: t,
                     thumbnailUrl: d,
                     onReplay: n
@@ -182,7 +182,7 @@ let m = {
                     videoUrl: c,
                     indicatorTimeSec: d
                 } = e, u = function(e) {
-                    let [t, n] = a.useState(null), [l, s] = a.useState(null), c = a.useRef(null), [{
+                    let [t, n] = r.useState(null), [l, s] = r.useState(null), c = r.useRef(null), [{
                         expansion: d
                     }, u] = (0, i.zhh)(() => ({
                         expansion: 0,
@@ -190,20 +190,20 @@ let m = {
                         onRest: () => {
                             null == c.current && s(null)
                         }
-                    })), p = a.useCallback(e => {
+                    })), p = r.useCallback(e => {
                         c.current = e, null != e ? (s(e), u({
                             expansion: 4
                         })) : u({
                             expansion: 0
                         }), n(e)
-                    }, [u]), m = a.useMemo(() => [{
+                    }, [u]), m = r.useMemo(() => [{
                         index: 0,
                         timeSec: e,
                         widthPx: 32,
                         gapPx: 4
-                    }], [e]), b = a.useCallback((e, t) => {
+                    }], [e]), b = r.useCallback((e, t) => {
                         let n = l === e.index;
-                        return (0, r.jsx)(o.animated.div, {
+                        return (0, a.jsx)(o.animated.div, {
                             "data-testid": "timeline-indicator",
                             onMouseEnter: () => p(e.index),
                             onMouseLeave: () => p(null),
@@ -224,7 +224,7 @@ let m = {
                                 cursor: "pointer",
                                 zIndex: 1
                             },
-                            children: (0, r.jsx)(i.Text, {
+                            children: (0, a.jsx)(i.Text, {
                                 variant: "text-xs/semibold",
                                 color: "always-white",
                                 children: "R"
@@ -239,13 +239,13 @@ let m = {
                         renderIndicator: b
                     }
                 }(d);
-                return (0, r.jsx)("div", {
+                return (0, a.jsx)("div", {
                     style: {
                         width: "landscape" === t ? "640px" : "360px",
                         height: "landscape" === t ? "360px" : "640px",
                         margin: "0 auto"
                     },
-                    children: (0, r.jsx)(l.A, {
+                    children: (0, a.jsx)(l.A, {
                         src: c,
                         autoplay: n,
                         orientation: t,

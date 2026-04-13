@@ -1,19 +1,19 @@
 /** chunk id: 715628 params = (module,exports,require) **/
-a.d(t, {
-    A: () => o
+n.d(t, {
+    A: () => r
 });
-var n = a(627968);
-a(64700);
-var r = a(291812);
+var a = n(627968);
+n(64700);
+var o = n(291812);
 
-function o(e, t) {
+function r(e, t) {
     let {
-        message: a,
-        compact: o
+        message: n,
+        compact: r
     } = e;
-    return (0, n.jsx)(r.Ay, {
-        message: a,
+    return (0, a.jsx)(o.Ay, {
+        message: n,
         content: t,
-        compact: o ?? !1
+        compact: r ?? !1
     })
 }

@@ -1,29 +1,29 @@
 /** chunk id: 680901 params = (module,exports,require) **/
-a.d(t, {
-    L: () => l
+e.d(l, {
+    ClipParticipantsList: () => t
 });
-var n = a(627968),
-    r = a(397927),
-    o = a(538451),
-    i = a(573030);
-let l = e => {
+var s = e(627968),
+    r = e(397927),
+    i = e(538451),
+    p = e(573030);
+let t = a => {
     let {
-        users: t,
-        guildId: a,
-        "aria-label": l,
+        users: l,
+        guildId: e,
+        "aria-label": t,
         "aria-labelledby": c
-    } = e;
-    return (0, n.jsx)(r.lGe, {
-        "aria-label": l,
+    } = a;
+    return (0, s.jsx)(r.lGe, {
+        "aria-label": t,
         "aria-labelledby": c,
-        className: i.X,
-        children: (0, n.jsx)(r.HOs, {
-            className: i.o,
-            children: t.map(e => (0, n.jsx)(o.A, {
-                user: e,
-                guildId: a,
-                onClick: e => e.stopPropagation()
-            }, e.id))
+        className: p.X,
+        children: (0, s.jsx)(r.HOs, {
+            className: p.o,
+            children: l.map(a => (0, s.jsx)(i.A, {
+                user: a,
+                guildId: e,
+                onClick: a => a.stopPropagation()
+            }, a.id))
         })
     })
 }

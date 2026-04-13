@@ -1,7 +1,7 @@
 /** chunk id: 698405 params = (module,exports,require) **/
 i.d(t, {
-    A: () => f,
-    w: () => _
+    A: () => _,
+    w: () => f
 });
 var n, a = i(627968),
     l = i(64700),
@@ -15,17 +15,17 @@ var n, a = i(627968),
     m = i(652215),
     p = i(985018),
     g = i(947483),
-    _ = ((n = {})[n.CHAT = 0] = "CHAT", n[n.REACTIONS = 1] = "REACTIONS", n);
-let f = e => {
+    f = ((n = {})[n.CHAT = 0] = "CHAT", n[n.REACTIONS = 1] = "REACTIONS", n);
+let _ = e => {
     let {
         type: t,
         guild: n,
-        closePopout: _,
-        ctaRef: f
+        closePopout: f,
+        ctaRef: _
     } = e, A = (0, d.GV)(), [T, b] = l.useState(!1), E = (0, o.bG)([h.A], () => h.A.isLurking(n.id), [n.id]);
     l.useEffect(() => {
-        T && !E && _()
-    }, [T, E, _]);
+        T && !E && f()
+    }, [T, E, f]);
     let x = null,
         I = p.intl.string(p.t.d7b1p6);
     switch (t) {
@@ -44,7 +44,7 @@ let f = e => {
         try {
             await c.A.joinGuild(n.id, {
                 source: m.Q4z.CHAT_INPUT_BLOCKER
-            }), _()
+            }), f()
         } catch {
             b(!1)
         }
@@ -71,11 +71,11 @@ let f = e => {
                 children: [(0, a.jsx)(s.Button, {
                     variant: "primary",
                     text: p.intl.string(p.t["9VLmlZ"]),
-                    buttonRef: f,
+                    buttonRef: _,
                     onClick: N,
                     loading: T
                 }), (0, a.jsx)(r.$n, {
-                    onClick: _,
+                    onClick: f,
                     look: r.$n.Looks.BLANK,
                     className: g.ZT,
                     children: p.intl.string(p.t["2m+Sqk"])

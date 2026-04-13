@@ -1,6 +1,6 @@
 /** chunk id: 878112 params = (module,exports,require) **/
 r.d(t, {
-    A: () => h
+    A: () => A
 });
 var n = r(627968),
     l = r(64700),
@@ -12,22 +12,22 @@ var n = r(627968),
     c = r(954571),
     d = r(440938),
     p = r(238184),
-    C = r(766172),
-    k = r(758836),
+    k = r(766172),
+    C = r(758836),
     m = r(652215),
     x = r(788868),
     g = r(985018);
-let h = e => {
+let A = e => {
     let {
         product: t,
         primary: r,
-        selectedVariantIndex: h,
-        returnRef: I,
-        onSuccess: A,
+        selectedVariantIndex: A,
+        returnRef: h,
+        onSuccess: I,
         tooltipDelay: v,
-        fullWidth: f = !1,
-        giftRecipient: _,
-        giftingOrigin: T = x.vQ.SHOP_PAGE,
+        fullWidth: _ = !1,
+        giftRecipient: T,
+        giftingOrigin: f = x.vQ.SHOP_PAGE,
         onTrackClick: E
     } = e, {
         analyticsLocations: y
@@ -41,22 +41,22 @@ let h = e => {
             tile_position: String(b?.tilePosition),
             cta_name: "gift button",
             page_type: R ?? "home"
-        }), E?.(k.sH.SEND_AS_GIFT), (0, u.A)({
-            skuId: (0, C.Y)({
+        }), E?.(C.sH.SEND_AS_GIFT), (0, u.A)({
+            skuId: (0, k.Y)({
                 product: t,
-                selectedVariantIndex: h
+                selectedVariantIndex: A
             }),
             isGift: !0,
-            giftRecipient: _,
-            giftingOrigin: T,
+            giftRecipient: T,
+            giftingOrigin: f,
             analyticsLocations: y,
-            returnRef: I,
-            onClose: null != A ? e => {
-                e && A()
+            returnRef: h,
+            onClose: null != I ? e => {
+                e && I()
             } : void 0
         })
     };
-    return f ? (0, n.jsx)(a.Button, {
+    return _ ? (0, n.jsx)(a.Button, {
         variant: r ? "primary" : "secondary",
         icon: a.okO,
         onClick: P,

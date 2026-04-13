@@ -29,7 +29,7 @@ let p = e => {
             })
         }) : (0, i.jsx)("div", {
             className: h.sR,
-            children: (0, i.jsx)(c.A, {
+            children: (0, i.jsx)(c.default, {
                 targetElementRef: r,
                 userId: t.id,
                 guildId: s,

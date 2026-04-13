@@ -105,7 +105,7 @@ function R(e) {
         contextGuildId: V,
         className: N.s4,
         badgeSize: j ? M.Sl.SIZE_12 : void 0
-    }), [j, t.primaryGuild, V, n.author.id, D]), eh = s ?? n.author, eA = null != k && null != O ? (0, i.jsx)(C.A, {
+    }), [j, t.primaryGuild, V, n.author.id, D]), eh = s ?? n.author, eA = null != k && null != O ? (0, i.jsx)(C.default, {
         targetElementRef: B,
         user: eh,
         guildId: V,

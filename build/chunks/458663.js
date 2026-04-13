@@ -23,10 +23,10 @@ function f(e) {
             activationIdle: void 0
         }),
         [m, y] = (0, a.useState)(!1),
-        A = (0, a.useRef)(!1);
+        E = (0, a.useRef)(!1);
     return (0, a.useEffect)(() => {
-        if (!e || A.current) return;
-        A.current = !0;
+        if (!e || E.current) return;
+        E.current = !0;
         let n = !1;
         return Promise.all([c.Bo.get({
             url: t ? o.A : b.A,
@@ -53,9 +53,9 @@ function f(e) {
                 activationIdle: window.URL.createObjectURL(i.body)
             }), y(!0))
         }, () => {
-            n || (A.current = !1)
+            n || (E.current = !1)
         }), () => {
-            n = !0, A.current = !1
+            n = !0, E.current = !1
         }
     }, [e, t]), (0, a.useEffect)(() => () => {
         null != n.celebrationEntry && window.URL.revokeObjectURL(n.celebrationEntry), null != n.celebrationIdle && window.URL.revokeObjectURL(n.celebrationIdle), null != n.activationEntry && window.URL.revokeObjectURL(n.activationEntry), null != n.activationIdle && window.URL.revokeObjectURL(n.activationIdle)

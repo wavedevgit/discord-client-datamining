@@ -346,7 +346,7 @@ let q = i.memo(function(e) {
                 if (null != A) return L._.subscribeKeyed(F.zOV.ANIMATE_CHAT_AVATAR, `${A}:${c.author.id}`, I), () => void L._.unsubscribeKeyed(F.zOV.ANIMATE_CHAT_AVATAR, `${A}:${c.author.id}`, I)
             }, [c.author.id, A]), !h || M) return null != s && null != C ? (0, l.jsx)(g.f5, {
             value: b,
-            children: (0, l.jsx)(j.A, {
+            children: (0, l.jsx)(j.default, {
                 targetElementRef: N,
                 user: c.author,
                 guildId: n,

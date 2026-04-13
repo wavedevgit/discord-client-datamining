@@ -33,7 +33,7 @@ function _(e, t) {
     let l = u.default.getCurrentUser();
     s()(null != l, "renderUserGuildPopout: currentUser should never be null");
     let _ = c.A.getChannel(t.channel_id);
-    return s()(null != _, "renderUserGuildPopout: channel should never be null"), (0, i.jsx)(d.A, {
+    return s()(null != _, "renderUserGuildPopout: channel should never be null"), (0, i.jsx)(d.default, {
         ...e,
         user: n,
         currentUser: l,

@@ -128,7 +128,7 @@ function w(e) {
                 })]
             }), (0, i.jsxs)("div", {
                 className: D._5,
-                children: [null != k.authorId && null != er && (0, i.jsx)(E.A, {
+                children: [null != k.authorId && null != er && (0, i.jsx)(E.default, {
                     targetElementRef: O,
                     userId: k.authorId,
                     guildId: k.guildId,
@@ -178,7 +178,7 @@ function w(e) {
                                 colorString: K,
                                 colorStrings: Z,
                                 className: D.fh
-                            }) : (0, i.jsx)(E.A, {
+                            }) : (0, i.jsx)(E.default, {
                                 targetElementRef: w,
                                 userId: k.authorId,
                                 guildId: k.guildId,

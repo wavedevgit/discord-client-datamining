@@ -95,7 +95,7 @@ function C(e) {
         guildId: t,
         onContextMenu: d
     } = e, c = l.useRef(null), u = (0, s.bG)([x.default], () => x.default.getUser(n.user_id)), m = (0, s.bG)([h.A, f.A, g.default], () => n.user_id === g.default.getId() ? h.A.getStatus() : f.A.getStatus(n.user_id, t), [n.user_id, t]);
-    return null == u ? null : (0, i.jsx)(_.A, {
+    return null == u ? null : (0, i.jsx)(_.default, {
         targetElementRef: c,
         userId: n.user_id,
         guildId: t,

@@ -1,7 +1,7 @@
 /** chunk id: 211180 params = (module,exports,require) **/
 i.d(t, {
     A: () => A,
-    x: () => _
+    x: () => f
 });
 var n, a = i(627968),
     l = i(64700),
@@ -15,8 +15,8 @@ var n, a = i(627968),
     m = i(60317),
     p = i(652215),
     g = i(121505),
-    _ = ((n = {})[n.NORMAL = 20] = "NORMAL", n[n.LARGE = 32] = "LARGE", n);
-let f = async e => {
+    f = ((n = {})[n.NORMAL = 20] = "NORMAL", n[n.LARGE = 32] = "LARGE", n);
+let _ = async e => {
     let {
         effect: t
     } = e, i = await (0, h.R)(t.channelId, t.messageId ?? p.dJq, t.emoji.name), n = await (0, m.fz)(`${t.channelId}:${t.messageId}:${t.emoji.name}`, t.url, i, t.color);
@@ -29,12 +29,12 @@ function A(e) {
         effect: i,
         onComplete: n,
         emojiSize: o = 20
-    } = e, s = l.useRef(null), h = o * m.YY, p = (h + o) / 2, _ = `translateY(${p}px)`;
+    } = e, s = l.useRef(null), h = o * m.YY, p = (h + o) / 2, f = `translateY(${p}px)`;
     return l.useEffect(() => {
         let e;
         if (null != i) return !async function() {
             if (null != s.current) {
-                let t = await f({
+                let t = await _({
                     effect: i
                 });
                 (e = c().loadAnimation({
@@ -61,7 +61,7 @@ function A(e) {
         children: (0, a.jsx)("div", {
             className: r()(g.Q, t),
             style: {
-                transform: _,
+                transform: f,
                 height: h,
                 width: h
             },

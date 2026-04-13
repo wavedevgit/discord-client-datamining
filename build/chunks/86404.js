@@ -6,9 +6,9 @@ var i = t(627968),
     a = t(64700),
     l = t(397927),
     r = t(163126),
-    o = t(688810),
+    d = t(688810),
     s = t(183555),
-    d = t(913453),
+    o = t(913453),
     c = t(229187),
     _ = t(657331),
     u = t(503062),
@@ -23,10 +23,10 @@ function g(e) {
         onClose: h
     } = e, {
         mutualFriends: m
-    } = (0, d.A)(n), {
-        analyticsLocations: f
-    } = (0, o.Ay)(), {
-        context: I,
+    } = (0, o.A)(n), {
+        analyticsLocations: I
+    } = (0, d.Ay)(), {
+        context: f,
         trackUserProfileAction: x
     } = (0, s.NJ)(), b = (0, r.A)();
     return a.useEffect(() => {
@@ -61,9 +61,9 @@ function g(e) {
                     h?.(), x({
                         action: "PRESS_MUTUAL_FRIEND"
                     }), e = a.id, (0, _.openUserProfileModal)({
-                        ...I,
+                        ...f,
                         userId: e,
-                        sourceAnalyticsLocations: f
+                        sourceAnalyticsLocations: I
                     })
                 }
             }, n)

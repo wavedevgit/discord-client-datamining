@@ -7,9 +7,9 @@ t(64700);
 var a = t(311907),
     l = t(397927),
     r = t(517164),
-    o = t(290863),
+    d = t(290863),
     s = t(461213),
-    d = t(975571),
+    o = t(975571),
     c = t(622543),
     _ = t(146655),
     u = t(489379),
@@ -18,8 +18,8 @@ var a = t(311907),
     g = t(558628),
     h = t(842241),
     m = t(282797),
-    f = t(518477),
-    I = t(652215),
+    I = t(518477),
+    f = t(652215),
     x = t(985018),
     b = t(575877),
     v = t(643146);
@@ -35,15 +35,15 @@ function E(e) {
         recent: T,
         stream: S
     } = (0, _.A)(n.id), {
-        voiceChannel: C,
-        voiceActivity: N
+        voiceChannel: N,
+        voiceActivity: C
     } = (0, u.A)({
         userId: n.id,
         guildId: E
-    }), R = (0, a.bG)([r.A], () => r.A.isFetchingUserOutbox(n.id)), P = n.id === t.id, L = (0, a.bG)([s.A, o.A], () => {
-        let e = P ? s.A.getStatus() : o.A.getStatus(n.id);
+    }), R = (0, a.bG)([r.A], () => r.A.isFetchingUserOutbox(n.id)), P = n.id === t.id, L = (0, a.bG)([s.A, d.A], () => {
+        let e = P ? s.A.getStatus() : d.A.getStatus(n.id);
         return e === l.clD.OFFLINE || e === l.clD.INVISIBLE
-    }), O = (0, a.bG)([c.A], () => c.A.getUserProfile(n.id)?.private === !0), D = j.length > 0 || null != S, k = !O && null == S && null == N && null != C, B = !L && (D || k), U = T.length > 0;
+    }), O = (0, a.bG)([c.A], () => c.A.getUserProfile(n.id)?.private === !0), D = j.length > 0 || null != S, k = !O && null == S && null == C && null != N, B = !L && (D || k), U = T.length > 0;
     return B || U || !R ? (0, i.jsxs)(l.IpV, {
         className: b.XG,
         fade: !0,
@@ -69,7 +69,7 @@ function E(e) {
                     children: (0, i.jsx)(m.A, {
                         user: n,
                         currentUser: t,
-                        voiceChannel: C,
+                        voiceChannel: N,
                         onClose: y
                     })
                 })]
@@ -78,11 +78,11 @@ function E(e) {
             heading: x.intl.string(x.t.M0zgnT),
             introText: P ? x.intl.format(x.t["4bk9Ak"], {
                 learnMoreHook: (e, n) => (0, i.jsx)(l.MzZ, {
-                    href: d.A.getArticleURL(I.MVz.ACTIVITY_STATUS_SETTINGS),
+                    href: o.A.getArticleURL(f.MVz.ACTIVITY_STATUS_SETTINGS),
                     children: e
                 }, n)
             }) : void 0,
-            scrollTargetId: f.bk.RECENT_ACTIVITY,
+            scrollTargetId: I.bk.RECENT_ACTIVITY,
             children: (0, i.jsx)("ul", {
                 className: b.Ci,
                 children: T.map(e => (0, i.jsx)("li", {

@@ -17,10 +17,11 @@ let p = "MAIN_PROFILE";
 function x(e) {
     let {
         selectedGuildId: t,
-        onChange: l
-    } = e, x = (0, s.bG)([d.Ay], () => d.Ay.getFlattenedGuildIds()), A = (0, s.bG)([o.A], () => o.A.getGuilds()), g = i.useMemo(() => {
-        let e = x.map(e => {
-            let t = A[e];
+        onChange: l,
+        loading: x
+    } = e, A = (0, s.bG)([d.Ay], () => d.Ay.getFlattenedGuildIds()), g = (0, s.bG)([o.A], () => o.A.getGuilds()), f = i.useMemo(() => {
+        let e = A.map(e => {
+            let t = g[e];
             return null == t ? null : {
                 id: t.id,
                 label: t.name,
@@ -43,15 +44,16 @@ function x(e) {
                 "aria-hidden": !0
             })
         }), e
-    }, [x, A]), f = i.useCallback(e => {
+    }, [A, g]), h = i.useCallback(e => {
         l(e === p ? null : e)
     }, [l]);
     return (0, n.jsx)(a.ZiE, {
         label: u.intl.string(u.t.rki38K),
         hideLabel: !0,
         selectionMode: "single",
-        onSelectionChange: f,
+        onSelectionChange: h,
         value: t ?? p,
-        options: g
+        options: f,
+        loading: x
     })
 }

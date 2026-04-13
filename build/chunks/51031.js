@@ -1,37 +1,40 @@
 /** chunk id: 51031 params = (module,exports,require) **/
 l.d(t, {
-    bU: () => c
+    bU: () => p
 });
 var a = l(627968),
     n = l(64700),
-    r = l(687021),
-    i = l(487233),
-    o = l(230635),
-    s = l(473219);
-let d = {
+    r = l(311907),
+    i = l(687021),
+    o = l(487233),
+    s = l(230635),
+    d = l(473219),
+    c = l(287809);
+let u = {
         value: "",
         label: "No Guild (main profile)"
     },
-    c = {
+    p = {
         title: "Editable Tile Button Examples",
         stories: [{
             name: "Avatar Button",
             component: function(e) {
-                let [t, l] = n.useState("");
-                return (0, a.jsxs)("div", {
+                let [t, l] = n.useState(""), s = (0, r.bG)([c.default], () => c.default.getCurrentUser());
+                return null == s ? null : (0, a.jsxs)("div", {
                     style: {
                         display: "flex",
                         flexDirection: "column",
                         gap: 16,
                         alignItems: "flex-start"
                     },
-                    children: [(0, a.jsx)(r.v, {
+                    children: [(0, a.jsx)(i.v, {
                         guildId: t,
                         onChange: e => {
                             l(e?.id ?? "")
                         },
-                        globalOption: d
-                    }), (0, a.jsx)(i.m, {
+                        globalOption: u
+                    }), (0, a.jsx)(o.A, {
+                        user: s,
                         guildId: "" === t ? null : t
                     })]
                 })
@@ -40,21 +43,22 @@ let d = {
         }, {
             name: "Avatar Decoration Button",
             component: function(e) {
-                let [t, l] = n.useState("");
-                return (0, a.jsxs)("div", {
+                let [t, l] = n.useState(""), o = (0, r.bG)([c.default], () => c.default.getCurrentUser());
+                return null == o ? null : (0, a.jsxs)("div", {
                     style: {
                         display: "flex",
                         flexDirection: "column",
                         gap: 16,
                         alignItems: "flex-start"
                     },
-                    children: [(0, a.jsx)(r.v, {
+                    children: [(0, a.jsx)(i.v, {
                         guildId: t,
                         onChange: e => {
                             l(e?.id ?? "")
                         },
-                        globalOption: d
-                    }), (0, a.jsx)(o.W, {
+                        globalOption: u
+                    }), (0, a.jsx)(s.A, {
+                        user: o,
                         guildId: "" === t ? null : t
                     })]
                 })
@@ -63,21 +67,22 @@ let d = {
         }, {
             name: "Nameplate Button",
             component: function(e) {
-                let [t, l] = n.useState("");
-                return (0, a.jsxs)("div", {
+                let [t, l] = n.useState(""), o = (0, r.bG)([c.default], () => c.default.getCurrentUser());
+                return null == o ? null : (0, a.jsxs)("div", {
                     style: {
                         display: "flex",
                         flexDirection: "column",
                         gap: 16,
                         alignItems: "flex-start"
                     },
-                    children: [(0, a.jsx)(r.v, {
+                    children: [(0, a.jsx)(i.v, {
                         guildId: t,
                         onChange: e => {
                             l(e?.id ?? "")
                         },
-                        globalOption: d
-                    }), (0, a.jsx)(s.W, {
+                        globalOption: u
+                    }), (0, a.jsx)(d.A, {
+                        user: o,
                         guildId: "" === t ? null : t
                     })]
                 })

@@ -7,8 +7,8 @@ n.d(t, {
     kK: () => v,
     sn: () => x
 });
-var r = n(627968),
-    a = n(64700),
+var a = n(627968),
+    r = n(64700),
     o = n(412703),
     i = n(440703),
     l = n(267548),
@@ -27,19 +27,19 @@ function f(e) {
     let {
         url: t,
         width: n = 640,
-        height: r = 360,
-        target: a = 60,
+        height: a = 360,
+        target: r = 60,
         videoTitle: i = "Test Video Quest",
         transcript: l
     } = e;
     return {
         type: o.n.WATCH_VIDEO,
-        target: a,
+        target: r,
         assets: {
             video: {
                 url: t,
                 width: n,
-                height: r,
+                height: a,
                 transcript: l
             }
         },
@@ -54,15 +54,15 @@ function v() {
         {
             streamProgressSeconds: t = 0,
             completedAt: n = null,
-            enrolledAt: r = null,
-            claimedAt: a = null
+            enrolledAt: a = null,
+            claimedAt: r = null
         } = e;
     return {
         userId: "123",
         questId: h,
-        enrolledAt: r,
+        enrolledAt: a,
         completedAt: n,
-        claimedAt: a,
+        claimedAt: r,
         claimedTier: null,
         lastStreamHeartbeatAt: null,
         streamProgressSeconds: t,
@@ -146,7 +146,7 @@ function x(e) {
         isFullscreenEnabled: i = !1,
         useNewStyling: l = !1,
         setIsFullscreenEnabled: s = g.tEg
-    } = e, c = a.useMemo(() => ({
+    } = e, c = r.useMemo(() => ({
         quest: t,
         sourceQuestContent: d.uF.INTERNAL_PREVIEW_TOOL,
         videoSessionId: "playground-session",
@@ -157,16 +157,16 @@ function x(e) {
         useNewProgressBarStyling: l,
         progressSec: 0,
         targetSec: 0
-    }), [t, n, i, s, l]), u = a.useMemo(() => ({
+    }), [t, n, i, s, l]), u = r.useMemo(() => ({
         questConfig: t.config
     }), [t.config]);
-    return (0, r.jsx)(p.R, {
+    return (0, a.jsx)(p.R, {
         questOrQuests: t,
         questContent: d.uF.VIDEO_MODAL,
         sourceQuestContent: d.uF.INTERNAL_PREVIEW_TOOL,
-        children: (e, t) => (0, r.jsx)(b.l.Provider, {
+        children: (e, t) => (0, a.jsx)(b.l.Provider, {
             value: u,
-            children: (0, r.jsx)(b.a.Provider, {
+            children: (0, a.jsx)(b.a.Provider, {
                 value: c,
                 children: o
             })
@@ -183,14 +183,14 @@ function y(e) {
         targetTimeSec: l,
         useNewStyling: s,
         videoUrl: d
-    } = e, p = "portrait" === t, [b, S] = a.useState(!1), h = f({
+    } = e, p = "portrait" === t, [b, S] = r.useState(!1), h = f({
         url: d,
         width: p ? 360 : 640,
         height: p ? 640 : 360,
         target: l,
         videoTitle: p ? "Test Portrait Video" : "Test Landscape Video",
         transcript: "transcript.txt"
-    }), y = C(h), T = a.useRef(!1);
+    }), y = C(h), T = r.useRef(!1);
     T.current || (T.current = !0, u.Kr.getState().clearState()), i && (y.config.features = [_.Li.FULL_EPISODE_VIDEO_QUEST]);
     let E = o ? {
         ...y,
@@ -200,7 +200,7 @@ function y(e) {
             streamProgressSeconds: h.target
         })
     } : y;
-    return (0, r.jsx)("div", {
+    return (0, a.jsx)("div", {
         style: {
             display: "flex",
             flexDirection: "column",
@@ -212,13 +212,13 @@ function y(e) {
             overflow: "hidden",
             "--custom-footer-horizontal-padding": "20px"
         },
-        children: (0, r.jsx)(x, {
+        children: (0, a.jsx)(x, {
             quest: E,
             isPortrait: p,
             isFullscreenEnabled: b,
             setIsFullscreenEnabled: S,
             useNewStyling: s,
-            children: (0, r.jsx)(m.A, {
+            children: (0, a.jsx)(m.A, {
                 targetTimeSec: h.target,
                 parentTransitionState: c.ip4.ENTERED,
                 onOptimisticProgressUpdate: g.tEg,

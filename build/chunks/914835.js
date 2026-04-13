@@ -52,7 +52,7 @@ function I(e) {
         children: T
     }) : (0, i.jsx)(u.f5, {
         value: m,
-        children: (0, i.jsx)(g.A, {
+        children: (0, i.jsx)(g.default, {
             targetElementRef: h,
             user: E,
             guildId: a.guild_id,

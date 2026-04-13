@@ -15,8 +15,8 @@ var n = i(627968),
     m = i(486020),
     p = i(690521),
     g = i(851110),
-    _ = i(396560);
-let f = [];
+    f = i(396560);
+let _ = [];
 
 function A(e) {
     let {
@@ -90,7 +90,7 @@ function A(e) {
         children: [(0, n.jsx)(l.K_, {
             ref: j,
             sprites: C,
-            colors: f,
+            colors: _,
             spriteWidth: g.wn,
             spriteHeight: g.wn
         }), (0, n.jsx)(u.Ay, {
@@ -98,14 +98,14 @@ function A(e) {
                 style: {
                     ...O
                 },
-                className: _.qq,
+                className: f.qq,
                 children: (0, n.jsx)(o.animated.div, {
                     style: {
                         ...M,
                         opacity: M.opacity
                     },
                     children: (0, n.jsx)(c.A, {
-                        className: _.Zg,
+                        className: f.Zg,
                         emojiId: i.id,
                         emojiName: i.name,
                         animated: i.animated,

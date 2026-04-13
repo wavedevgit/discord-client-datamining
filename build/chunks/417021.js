@@ -6,9 +6,9 @@ var i = t(627968),
     a = t(311907),
     l = t(397927),
     r = t(793574),
-    o = t(688810),
+    d = t(688810),
     s = t(632738),
-    d = t(994500),
+    o = t(994500),
     c = t(562153),
     _ = t(183555),
     u = t(672385),
@@ -17,8 +17,8 @@ var i = t(627968),
     g = t(946356),
     h = t(254828),
     m = t(783123),
-    f = t(652215),
-    I = t(996988),
+    I = t(652215),
+    f = t(996988),
     x = t(985018),
     b = t(255412);
 
@@ -32,12 +32,12 @@ function v(e) {
         transitionState: j,
         onHide: T,
         sourceAnalyticsLocations: S = []
-    } = e, C = t === f.ME ? void 0 : t, N = (0, a.bG)([d.A], () => d.A.isBlocked(n.id)), {
+    } = e, N = t === I.ME ? void 0 : t, C = (0, a.bG)([o.A], () => o.A.isBlocked(n.id)), {
         analyticsLocations: R
-    } = (0, o.Ay)([...S, N ? r.A.BLOCKED_PROFILE_MODAL : r.A.IGNORED_PROFILE_MODAL]), P = (0, _.pb)({
+    } = (0, d.Ay)([...S, C ? r.A.BLOCKED_PROFILE_MODAL : r.A.IGNORED_PROFILE_MODAL]), P = (0, _.pb)({
         layout: "MODAL_V2",
         userId: n.id,
-        guildId: C,
+        guildId: N,
         channelId: v,
         messageId: E,
         roleId: y
@@ -46,11 +46,11 @@ function v(e) {
         description: x.intl.string(x.t.kcuWva)
     }, {
         icon: l.yr3,
-        description: x.intl.string(N ? x.t.QxrDY1 : x.t.W6fjkS)
-    }], O = (0, p.Ay)(n.id, C), D = c.Ay.getName(O?.guildId, v, n), k = x.intl.formatToPlainString(x.t.KRe1Fk, {
+        description: x.intl.string(C ? x.t.QxrDY1 : x.t.W6fjkS)
+    }], O = (0, p.Ay)(n.id, N), D = c.Ay.getName(O?.guildId, v, n), k = x.intl.formatToPlainString(x.t.KRe1Fk, {
         name: D
     });
-    return (0, i.jsx)(o.f5, {
+    return (0, i.jsx)(d.f5, {
         value: R,
         children: (0, i.jsx)(_.of, {
             value: P,
@@ -64,14 +64,14 @@ function v(e) {
                 children: (0, i.jsxs)(g.A, {
                     user: n,
                     displayProfile: O,
-                    themeType: I.d.MODAL_V2,
+                    themeType: f.d.MODAL_V2,
                     children: [(0, i.jsx)("div", {
                         className: b.Tp
                     }), (0, i.jsxs)("div", {
                         className: b.Qs,
                         children: [(0, i.jsx)(A.A, {
                             user: n,
-                            guildId: C
+                            guildId: N
                         }), (0, i.jsxs)("div", {
                             className: b.FS,
                             children: [(0, i.jsx)(l.Heading, {
@@ -81,7 +81,7 @@ function v(e) {
                             }), (0, i.jsx)(l.Text, {
                                 variant: "text-md/medium",
                                 color: "text-default",
-                                children: x.intl.format(N ? x.t.T7QiLn : x.t.MnEowy, {
+                                children: x.intl.format(C ? x.t.T7QiLn : x.t.MnEowy, {
                                     username: D
                                 })
                             })]
@@ -103,10 +103,10 @@ function v(e) {
                             align: "center",
                             children: [(0, i.jsx)(m.A, {
                                 size: "md",
-                                isBlocked: N,
+                                isBlocked: C,
                                 onClick: () => {
                                     T(), (0, u.Wn)({
-                                        action: N ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
+                                        action: C ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                                         analyticsLocations: R,
                                         ...P
                                     })

@@ -26,7 +26,7 @@ function A(t) {
         getSurveyResponses: A,
         setResponse: I,
         trackDisplayedQuestions: N
-    } = (0, c.i)(), R = A(e), p = (0, u.i)(n), [O, h] = l.useState(p.blockId), [C, m] = l.useState(p.pageIndex), [g, S] = l.useState(!1), y = (t, n) => {
+    } = (0, c.i)(), R = A(e), p = (0, u.i)(n), [O, C] = l.useState(p.blockId), [h, m] = l.useState(p.pageIndex), [g, S] = l.useState(!1), y = (t, n) => {
         I(e, t, n)
     }, M = l.useCallback(() => (g ? s() : (0, a.qfG)(t => (0, i.jsx)(r.Modal, {
         title: _.intl.string(_.t.T9Sx3z),
@@ -48,21 +48,21 @@ function A(t) {
         })
     })), Promise.resolve()), [s, g]), P = l.useMemo(() => null == O ? [] : (0, u.uy)(n, {
         blockId: O,
-        pageIndex: C,
+        pageIndex: h,
         responses: R
-    }), [n, O, C, R]), x = l.useCallback(() => {
+    }), [n, O, h, R]), D = l.useCallback(() => {
         if (null == n || null == O) return;
         let t = (0, u.vt)(n, {
             blockId: O,
-            pageIndex: C,
+            pageIndex: h,
             responses: R
         });
-        N(e, P), t.isComplete && o.Ay.submitSurveyResponse(e, R), h(t.blockId), m(t.pageIndex), S(t.isComplete)
-    }, [n, O, C, R, e, P, N]);
+        N(e, P), t.isComplete && o.Ay.submitSurveyResponse(e, R), C(t.blockId), m(t.pageIndex), S(t.isComplete)
+    }, [n, O, h, R, e, P, N]);
     l.useEffect(() => {
-        0 === P.length && x()
-    }, [P, x]);
-    let D = l.useMemo(() => {
+        0 === P.length && D()
+    }, [P, D]);
+    let x = l.useMemo(() => {
         if (g) return !1;
         for (let t of P) {
             let e = n.Questions[t];
@@ -98,8 +98,8 @@ function A(t) {
         actions: [{
             variant: "primary",
             text: _.intl.string(_.t.PDTjLN),
-            onClick: x,
-            disabled: !D
+            onClick: D,
+            disabled: !x
         }],
         children: (0, i.jsx)("div", {
             style: {

@@ -138,7 +138,7 @@ let b = l.memo(function(e) {
                 context: v
             })
         }, [r, N, v, C, s, b]);
-        return (0, i.jsx)(E.A, {
+        return (0, i.jsx)(E.default, {
             targetElementRef: R,
             user: r,
             guildId: s.guild_id,

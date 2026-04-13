@@ -15,8 +15,8 @@ var n = i(627968),
     m = i(73392),
     p = i(676608),
     g = i(342296),
-    _ = i(734057),
-    f = i(841549),
+    f = i(734057),
+    _ = i(841549),
     A = i(560936);
 
 function T(e) {
@@ -36,8 +36,8 @@ function T(e) {
     }), C = (0, m.a)({
         displayNameStyles: v
     }), S = a.useCallback(e => {
-        let n = _.A.getChannel(i);
-        null != n && null != t && (0, f.wQ)(e, t, n)
+        let n = f.A.getChannel(i);
+        null != n && null != t && (0, _.wQ)(e, t, n)
     }, [t, i]), y = a.useContext(o.C);
     return (0, A.A)({
         subscribeToGroupId: b,
@@ -77,7 +77,7 @@ function T(e) {
             };
         return (0, n.jsx)(c.f5, {
             value: j,
-            children: null != t ? (0, n.jsx)(g.A, {
+            children: null != t ? (0, n.jsx)(g.default, {
                 targetElementRef: N,
                 user: t,
                 guildId: T,

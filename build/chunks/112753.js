@@ -15,8 +15,8 @@ var n = i(627968),
     m = i(582754),
     p = i(397927),
     g = i(565645),
-    _ = i(297413),
-    f = i(966327),
+    f = i(297413),
+    _ = i(966327),
     A = i(775602),
     T = i(793574),
     b = i(688810),
@@ -121,7 +121,7 @@ let ee = e => {
                 className: i,
                 children: t.name
             })
-        }, [t]), g = s === R.v.BURST, _ = g ? Q.t.VmiNjd : Q.t["cNfs1/"], f = Q.intl.formatToPlainString(_, {
+        }, [t]), g = s === R.v.BURST, f = g ? Q.t.VmiNjd : Q.t["cNfs1/"], _ = Q.intl.formatToPlainString(f, {
             name: h,
             n: i
         }), A = a.useMemo(() => {
@@ -158,7 +158,7 @@ let ee = e => {
                     [Z.X_]: !l,
                     [Z.HS]: l
                 }),
-                "aria-label": f,
+                "aria-label": _,
                 "aria-selected": l,
                 onClick: b,
                 style: A,
@@ -223,7 +223,7 @@ function ei(e) {
                     grow: 0,
                     shrink: 0,
                     className: q.Gf,
-                    children: (0, n.jsx)(f.A, {
+                    children: (0, n.jsx)(_.A, {
                         "aria-hidden": !0,
                         user: A ?? i,
                         size: p._3J.SIZE_32
@@ -238,7 +238,7 @@ function ei(e) {
                             className: Z.Ci,
                             children: N
                         })
-                    }), (0, n.jsx)(_.A, {
+                    }), (0, n.jsx)(f.A, {
                         user: i,
                         className: null != N && "" !== N ? Z.rW : null,
                         usernameClass: o()(Z.Xh, Z.Ci),
@@ -268,7 +268,7 @@ function ei(e) {
             grow: 0,
             shrink: 0,
             className: q.Gf,
-            children: (0, n.jsx)(f.A, {
+            children: (0, n.jsx)(_.A, {
                 user: A ?? i,
                 size: p._3J.SIZE_32
             })
@@ -282,7 +282,7 @@ function ei(e) {
                     className: Z.Ci,
                     children: N
                 })
-            }), (0, n.jsx)(_.A, {
+            }), (0, n.jsx)(f.A, {
                 user: i,
                 className: null != N && "" !== N ? Z.rW : null,
                 usernameClass: o()(Z.Xh, Z.Ci),
@@ -443,7 +443,7 @@ function el(e) {
     }), g = (0, d.bG)([U.A, N.A], () => {
         let e = U.A.getMessage(t.getChannelId(), t.id) ?? N.A.getMessage($.default.castMessageIdAsChannelId(t.id))?.firstMessage;
         return null != e ? e.reactions : []
-    }, [t]), _ = a.useMemo(() => {
+    }, [t]), f = a.useMemo(() => {
         let e = [];
         return g.forEach(t => {
             t.burst_count > 0 && e.push({
@@ -457,7 +457,7 @@ function el(e) {
             let i = e.burst_count > 0 ? e.burst_count : e.count;
             return (t.burst_count > 0 ? t.burst_count : t.count) - i
         }), e
-    }, [g]), f = _[0], [T, b] = function(e, t, i) {
+    }, [g]), _ = f[0], [T, b] = function(e, t, i) {
         let [n, l] = a.useState(e ?? t);
         return a.useEffect(() => {
             null != n && null == i.find(e => {
@@ -467,10 +467,10 @@ function el(e) {
                 return i && a
             }) && l(t)
         }, [n, l, i, t]), [n, l]
-    }(i, null != f ? {
-        emoji: f.emoji,
-        reactionType: f.burst_count > 0 ? R.v.BURST : R.v.NORMAL
-    } : null, _), E = a.useMemo(() => null == T ? null : g.find(e => (0, X.i6)(e.emoji, T.emoji)) ?? null, [g, T]), x = (0, d.bG)([A.A], () => A.A.saturation), v = (0, d.bG)([M.A], () => (0, m.Mw)(M.A.theme));
+    }(i, null != _ ? {
+        emoji: _.emoji,
+        reactionType: _.burst_count > 0 ? R.v.BURST : R.v.NORMAL
+    } : null, f), E = a.useMemo(() => null == T ? null : g.find(e => (0, X.i6)(e.emoji, T.emoji)) ?? null, [g, T]), x = (0, d.bG)([A.A], () => A.A.saturation), v = (0, d.bG)([M.A], () => (0, m.Mw)(M.A.theme));
     if (a.useEffect(() => {
             (0 === g.length || null == T && null == E) && setImmediate(l)
         }, [l, g.length, E, T]), null == T || null == E) return (0, n.jsx)(p.y$y, {});
@@ -491,7 +491,7 @@ function el(e) {
                 children: [(0, n.jsx)(p.HOs, {
                     className: Z.XG,
                     fade: !0,
-                    children: _.map(e => {
+                    children: f.map(e => {
                         let t = e.burst_count > 0;
                         return (0, n.jsx)(et, {
                             isSelected: eo(T, e, t ? R.v.BURST : R.v.NORMAL),
