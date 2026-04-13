@@ -1,6 +1,6 @@
 /** chunk id: 515258 params = (module,exports,require) **/
 n.d(t, {
-    default: () => h
+    default: () => u
 });
 var s = n(627968),
     a = n(64700),
@@ -11,7 +11,7 @@ var s = n(627968),
     E = n(457570),
     d = n(985018),
     c = n(210243);
-class u extends a.PureComponent {
+class h extends a.PureComponent {
     constructor(e) {
         super(e), this.state = {
             phone: ""
@@ -24,8 +24,8 @@ class u extends a.PureComponent {
     };
     render() {
         let e, t, n, a, {
-                error: u,
-                working: h,
+                error: h,
+                working: u,
                 transitionState: R,
                 validPhone: I,
                 layerContext: p
@@ -40,7 +40,7 @@ class u extends a.PureComponent {
         })), I ? (n = (0, s.jsx)(o.D0$, {
             label: d.intl.string(d.t.Xclkxp),
             hideLabel: !0,
-            errorMessage: u ?? void 0,
+            errorMessage: h ?? void 0,
             children: (0, s.jsx)(r.A, {
                 onSubmit: this.handleVerifyPhone
             })
@@ -48,20 +48,20 @@ class u extends a.PureComponent {
             variant: "secondary",
             text: d.intl.string(d.t["5b60gi"]),
             onClick: this.handleResendCode,
-            loading: h
+            loading: u
         }]) : (n = (0, s.jsx)(E.A, {
             label: d.intl.string(d.t["64bX0M"]),
-            errorMessage: u ?? void 0,
+            errorMessage: h ?? void 0,
             className: c.ZZ,
             onChange: this.handlePhoneChange,
-            submitting: h,
+            submitting: u,
             layerContext: p
         }), f = [{
             text: d.intl.string(d.t.TXNS7S),
             disabled: "" === _,
-            loading: h,
+            loading: u,
             onClick: this.handleAddPhone
-        }]), a = I ? d.intl.string(d.t.Xclkxp) : d.intl.string(d.t.uR76s6), (0, s.jsx)(l.Modal, {
+        }]), a = I ? d.intl.string(d.t.xDBSN9) : d.intl.string(d.t.hY8QTR), (0, s.jsx)(l.Modal, {
             size: I ? "sm" : "md",
             title: a,
             subtitle: e,
@@ -100,4 +100,4 @@ class u extends a.PureComponent {
         e?.(this.state.phone)
     }
 }
-let h = u
+let u = h

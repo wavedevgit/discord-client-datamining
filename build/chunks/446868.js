@@ -1,6 +1,6 @@
 /** chunk id: 446868 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => u
 });
 var s = n(735438),
     a = n.n(s),
@@ -12,7 +12,7 @@ let {
     PHONE: E,
     REVERIFY_EMAIL: d,
     REVERIFY_PHONE: c
-} = i.Fz7, u = {
+} = i.Fz7, h = {
     [i.a3B.REQUIRE_VERIFIED_EMAIL]: [r],
     [i.a3B.REQUIRE_VERIFIED_PHONE]: [E],
     [i.a3B.REQUIRE_REVERIFIED_EMAIL]: [d],
@@ -24,13 +24,13 @@ let {
     [i.a3B.REQUIRE_CAPTCHA]: [o],
     [i.a3B.AGREEMENTS]: [],
     [i.a3B.REQUIRE_SAFETY_FLOWS]: []
-}, h = {
+}, u = {
     isPhoneReverification: (e, t) => void 0 !== e && e.isPhoneVerified() && (t === i.a3B.REQUIRE_REVERIFIED_PHONE || t === i.a3B.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || t === i.a3B.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE),
     isEmailReverification: e => e === i.a3B.REQUIRE_REVERIFIED_EMAIL || e === i.a3B.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || e === i.a3B.REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE,
     isFullScreenVerification(e) {
         return e === i.a3B.REQUIRE_CAPTCHA || e === i.a3B.REQUIRE_VERIFIED_EMAIL || e === i.a3B.REQUIRE_VERIFIED_PHONE || e === i.a3B.REQUIRE_REVERIFIED_PHONE || e === i.a3B.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || e === i.a3B.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE || this.isEmailReverification(e)
     },
-    getVerificationTypes: e => null == e || "symbol" == typeof e ? [] : u[e],
+    getVerificationTypes: e => null == e || "symbol" == typeof e ? [] : h[e],
     getButtonTitle(e) {
         switch (e) {
             case i.Fz7.EMAIL:

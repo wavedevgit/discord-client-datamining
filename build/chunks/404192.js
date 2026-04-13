@@ -30,7 +30,7 @@ let u = e => {
             className: c.xU,
             children: [(0, a.jsx)(r.Text, {
                 className: c.__invalid_linkText,
-                variant: "text-md/semibold",
+                variant: "text-md/normal",
                 children: n
             }), null != l && "" !== l && (0, a.jsx)(r.Text, {
                 variant: "text-md/normal",

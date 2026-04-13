@@ -1,6 +1,6 @@
 /** chunk id: 489683 params = (module,exports,require) **/
 n.d(t, {
-    A: () => e2
+    A: () => e5
 });
 var i = n(627968),
     l = n(64700),
@@ -653,7 +653,7 @@ class e6 extends l.PureComponent {
                 let {
                     isShown: l
                 } = n;
-                return (0, i.jsx)(e5, {
+                return (0, i.jsx)(e2, {
                     popoutProps: t,
                     isShown: l,
                     noiseCancellationActive: e,
@@ -772,7 +772,7 @@ class e6 extends l.PureComponent {
     }
 }
 
-function e5(e) {
+function e2(e) {
     let {
         popoutProps: t,
         isShown: n,
@@ -803,7 +803,7 @@ function e5(e) {
         })
     })
 }
-let e2 = (0, S.A)(function(e) {
+let e5 = (0, S.A)(function(e) {
     let t = (0, F.A)(),
         n = (0, c.bG)([H.default], () => H.default.getAwaitingRemoteSessionInfo()),
         r = (0, c.bG)([eD.default], () => eD.default.getCurrentUser()),

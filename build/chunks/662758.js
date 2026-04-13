@@ -16,8 +16,8 @@ function E(e) {
         children: E,
         transitionState: d,
         onClose: c,
-        handleSubmit: u,
-        onError: h,
+        handleSubmit: h,
+        onError: u,
         skipErrorMsgAbortCode: R,
         onPasswordChange: I,
         variant: p = "primary"
@@ -34,9 +34,9 @@ function E(e) {
     }) : null;
     return (0, s.jsx)("form", {
         onSubmit: e => {
-            e.preventDefault(), A(!0), u(_).then(e => c(e ?? void 0), e => {
+            e.preventDefault(), A(!0), h(_).then(e => c(e ?? void 0), e => {
                 let t;
-                null != e.body && (h?.(e.body), t = e.body, (null == R || t?.code !== R) && (e.body.password ? (C(e.body.password), A(!1)) : e.body.message && (C(e.body.message), A(!1))))
+                null != e.body && (u?.(e.body), t = e.body, (null == R || t?.code !== R) && (e.body.password ? (C(e.body.password), A(!1)) : e.body.message && (C(e.body.message), A(!1))))
             }).finally(() => A(!1))
         },
         children: (0, s.jsxs)(i.aFV, {

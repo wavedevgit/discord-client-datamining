@@ -20,8 +20,8 @@ var i = n(627968),
     E = n(994500),
     I = n(595623),
     f = n(427262),
-    C = n(607272),
-    T = n(352127),
+    C = n(22212),
+    T = n(607272),
     S = n(513297),
     N = n(414711),
     x = n(187696),
@@ -39,7 +39,7 @@ function P(e) {
         isGameRelationship: r,
         onSelect: a
     } = e, A = l.useCallback(() => {
-        (0, T.X9)({
+        (0, C.X9)({
             targetUserId: t.id,
             tab: I.Ay.getState().section
         }), c.A.openPrivateChannel({
@@ -47,7 +47,7 @@ function P(e) {
             joinCall: !0
         })
     }, [t.id]), h = l.useCallback(() => {
-        (0, T.Cf)({
+        (0, C.Cf)({
             targetUserId: t.id,
             tab: I.Ay.getState().section
         }), c.A.openPrivateChannel({
@@ -56,14 +56,14 @@ function P(e) {
             joinCallVideo: !0
         })
     }, [t.id]), _ = l.useCallback(() => {
-        C.A.removeFriend({
+        T.A.removeFriend({
             userId: t.id,
             applicationId: r ? n : null,
             location: "Friends"
         })
     }, [n, r, t.id]), m = l.useCallback(() => {
         let e = r ? L.intl.string(L.t.RLcE6x) : L.intl.string(L.t.cvSt1J);
-        (0, T.lP)({
+        (0, C.lP)({
             targetUserId: t.id,
             tab: I.Ay.getState().section
         }), d.A.show({
@@ -121,13 +121,13 @@ class D extends l.PureComponent {
         })
     };
     handleRowClick = e => {
-        e.stopPropagation(), (0, T.xF)({
+        e.stopPropagation(), (0, C.xF)({
             targetUserId: this.props.user.id,
             tab: I.Ay.getState().section
         }), this.openPrivateChannel()
     };
     handleMessageClick = e => {
-        e.stopPropagation(), (0, T.WD)({
+        e.stopPropagation(), (0, C.WD)({
             targetUserId: this.props.user.id,
             tab: I.Ay.getState().section
         }), this.openPrivateChannel()

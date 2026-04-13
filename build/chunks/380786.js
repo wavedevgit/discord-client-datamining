@@ -1,7 +1,7 @@
 /** chunk id: 380786 params = (module,exports,require) **/
 n.d(e, {
-    A: () => O,
-    D: () => C
+    A: () => C,
+    D: () => h
 });
 var i = n(627968);
 n(64700);
@@ -11,51 +11,54 @@ var l = n(503698),
     a = n.n(s),
     o = n(554146),
     c = n(397927),
-    d = n(573648),
-    u = n(619006),
-    E = n(145643),
-    _ = n(826673),
-    T = n(997509),
-    A = n(967198),
-    I = n(652215),
-    N = n(873494),
-    R = n(985018),
-    p = n(381703);
+    d = n(736653),
+    u = n(573648),
+    E = n(619006),
+    _ = n(145643),
+    T = n(826673),
+    A = n(997509),
+    I = n(967198),
+    N = n(652215),
+    R = n(873494),
+    p = n(985018),
+    O = n(381703);
 
-function O(t) {
+function C(t) {
     let {
         markAsDismissed: e
-    } = t, n = A.A.getGuildId();
-    return a()(n, "Guild Id must be defined"), (0, i.jsxs)(c.$Td, {
+    } = t, n = I.A.getGuildId(), l = (0, d.DP)();
+    a()(n, "Guild Id must be defined");
+    let s = u.A.get(N.fg2.RIOT_GAMES);
+    return (0, i.jsxs)(c.$Td, {
         color: c.Hv$.WARNING,
         children: [(0, i.jsx)(c.PMB, {
-            onClick: () => (0, _.Dr)(o.M.RIOT_CONNECTION_DEPRECATION_ADMIN_DISABLE),
-            noticeType: I.kqX.RIOT_CONNECTION_DEPRECATION_ADMIN
+            onClick: () => (0, T.Dr)(o.M.RIOT_CONNECTION_DEPRECATION_ADMIN_DISABLE),
+            noticeType: N.kqX.RIOT_CONNECTION_DEPRECATION_ADMIN
         }), (0, i.jsx)("img", {
-            src: d.A.get(I.fg2.RIOT_GAMES).icon.whiteSVG,
-            alt: R.intl.string(N.default["1S6oAo"]),
-            className: r()(p.tV, p._R)
-        }), R.intl.format(N.default["/Xhh40"], {
+            src: "light" === l ? s.icon.blackSVG : s.icon.whiteSVG,
+            alt: p.intl.string(R.default["1S6oAo"]),
+            className: r()(O.tV, O._R)
+        }), p.intl.format(R.default["/Xhh40"], {
             settingsLink: () => `https://discord.com/guilds/${n}/settings/roles`
         }), (0, i.jsx)(c.Z_L, {
             onClick: () => {
-                e(), T.A.open(n, I.BEX.ROLES)
+                e(), A.A.open(n, N.BEX.ROLES)
             },
-            noticeType: I.kqX.RIOT_CONNECTION_DEPRECATION_ADMIN,
-            className: p.HE,
-            children: R.intl.string(N.default.spsZYI)
+            noticeType: N.kqX.RIOT_CONNECTION_DEPRECATION_ADMIN,
+            className: O.HE,
+            children: p.intl.string(R.default.spsZYI)
         }), (0, i.jsx)(c.zr9, {
             onClick: () => e(),
-            className: p.wX,
-            children: R.intl.string(N.default["MVB/Ab"])
+            className: O.wX,
+            children: p.intl.string(R.default["MVB/Ab"])
         })]
     })
 }
 
-function C(t) {
+function h(t) {
     t.forEach(t => {
-        null == E.A.getGuildRoleConnectionsConfiguration(t.id) && (0, u.os)(t.guildId, t.id)
+        null == _.A.getGuildRoleConnectionsConfiguration(t.id) && (0, E.os)(t.guildId, t.id)
     });
-    let e = t.map(t => E.A.getGuildRoleConnectionsConfiguration(t.id));
-    return null != e && e.some(t => t?.some(t => t.some(t => t.connectionType === I.fg2.RIOT_GAMES || t.connectionType === I.fg2.LEAGUE_OF_LEGENDS)))
+    let e = t.map(t => _.A.getGuildRoleConnectionsConfiguration(t.id));
+    return null != e && e.some(t => t?.some(t => t.some(t => t.connectionType === N.fg2.RIOT_GAMES || t.connectionType === N.fg2.LEAGUE_OF_LEGENDS)))
 }

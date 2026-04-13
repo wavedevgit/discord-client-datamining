@@ -11,8 +11,8 @@ var s = n(627968),
     E = n(870570),
     d = n(287809),
     c = n(446868),
-    u = n(662758),
-    h = n(985018);
+    h = n(662758),
+    u = n(985018);
 let R = a.forwardRef(function(e, t) {
     let {
         onAddedPhone: n,
@@ -20,7 +20,7 @@ let R = a.forwardRef(function(e, t) {
         transitionState: I,
         reason: p,
         layerContext: _
-    } = e, f = (0, i.bG)([d.default], () => d.default.getCurrentUser()), g = (0, i.bG)([E.A], () => E.A.getAction()), [C, m] = a.useState(null), [A, y] = a.useState(null), [F, b] = a.useState(null), [P, x] = a.useState(!1), V = a.useCallback(async e => {
+    } = e, f = (0, i.bG)([d.default], () => d.default.getCurrentUser()), g = (0, i.bG)([E.A], () => E.A.getAction()), [C, m] = a.useState(null), [A, y] = a.useState(null), [F, b] = a.useState(null), [P, x] = a.useState(!1), B = a.useCallback(async e => {
         x(!0);
         try {
             c.A.isPhoneReverification(f, g) ? await o.A.beginReverifyPhone(e, p) : await o.A.beginAddPhone(e, p), b(null), m(e)
@@ -28,7 +28,7 @@ let R = a.forwardRef(function(e, t) {
             b(new l.A(e))
         }
         x(!1)
-    }, [f, p, g]), B = a.useCallback(async e => {
+    }, [f, p, g]), D = a.useCallback(async e => {
         if (null != C && null != f) {
             x(!0);
             try {
@@ -41,22 +41,22 @@ let R = a.forwardRef(function(e, t) {
             }
             x(!1)
         }
-    }, [f, C]), D = a.useCallback(async e => {
+    }, [f, C]), V = a.useCallback(async e => {
         null != A && (c.A.isPhoneReverification(f, g) ? await o.A.reverifyPhone(A, e, p) : await o.A.addPhone(A, e, p), n?.(), R())
     }, [n, R, A, p, f, g]);
-    return null != A ? (0, s.jsx)(u.default, {
+    return null != A ? (0, s.jsx)(h.default, {
         onClose: R,
         transitionState: I,
-        title: h.intl.string(h.t.ZtCDc2),
-        handleSubmit: D
+        title: u.intl.string(u.t.ZtCDc2),
+        handleSubmit: V
     }) : (0, s.jsx)(r.default, {
         onClose: R,
         transitionState: I,
         error: F?.getAnyErrorMessage(),
         working: P,
         validPhone: null != C,
-        onAddPhone: V,
-        onVerifyPhone: B,
+        onAddPhone: B,
+        onVerifyPhone: D,
         layerContext: _
     })
 })

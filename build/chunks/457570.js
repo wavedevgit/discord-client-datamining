@@ -1,6 +1,6 @@
 /** chunk id: 457570 params = (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => h
 });
 var s = n(627968),
     a = n(64700),
@@ -11,13 +11,13 @@ var s = n(627968),
     E = n(333074),
     d = n(985018),
     c = n(375739);
-let u = function(e) {
+let h = function(e) {
     let {
         className: t,
         submitting: n,
         errorMessage: i,
-        onChange: u
-    } = e, h = a.useRef(null), {
+        onChange: h
+    } = e, u = a.useRef(null), {
         countriesMap: R,
         countryCodeOptions: I
     } = (0, E.E)(), [p, _] = a.useState(() => {
@@ -28,9 +28,9 @@ let u = function(e) {
         return t ?? ""
     }), C = a.useCallback((e, t) => {
         let n = R.get(e)?.code;
-        u?.(`${n}${t}`)
-    }, [R, u]), m = a.useCallback(e => {
-        _(e), h.current?.focus(), C(e, f)
+        h?.(`${n}${t}`)
+    }, [R, h]), m = a.useCallback(e => {
+        _(e), u.current?.focus(), C(e, f)
     }, [f, C]), A = a.useCallback(e => {
         g(e), C(p, e)
     }, [p, C]), y = R.get(p);
@@ -66,7 +66,7 @@ let u = function(e) {
                 type: "tel",
                 onChange: A,
                 autoFocus: !0,
-                inputRef: h,
+                inputRef: u,
                 disabled: n,
                 value: f
             })]

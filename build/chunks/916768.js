@@ -38,14 +38,14 @@ var o = n(299855),
     L = n(626262),
     G = n(487329),
     v = n(102609),
-    B = n(49463),
-    b = n(322223),
+    b = n(49463),
+    B = n(322223),
     w = n(137207),
     q = n(619029),
     X = n(202384),
     $ = n(51758),
-    H = n(571139),
-    V = n(527012),
+    V = n(571139),
+    H = n(527012),
     W = n(997509),
     F = n(475723),
     K = n(598733),
@@ -203,7 +203,7 @@ let tk = 21552 == n.j ? l.memo(function() {
             if (null != r && r.type === th.kqX.SURVEY && null != r.metadata) {
                 let {
                     metadata: t
-                } = r, e = B.A.getUserExperimentDescriptor(t.id);
+                } = r, e = b.A.getUserExperimentDescriptor(t.id);
                 null != e && (0, v.LQ)(t.id, e), (async () => {
                     r.metadata?.id != null && await (0, h.oX)(r.metadata?.id)
                 })()
@@ -234,14 +234,14 @@ let tk = 21552 == n.j ? l.memo(function() {
         case th.kqX.LURKING_GUILD:
             return (0, i.jsx)(K.A, {});
         case th.kqX.PENDING_MEMBER:
-            return (0, i.jsx)(H.A, {});
+            return (0, i.jsx)(V.A, {});
         case th.kqX.INVITED_TO_SPEAK:
             return (0, i.jsx)(tr.A, {});
         case th.kqX.GUILD_RAID_NOTIFICATION:
             let {
                 dismissUntil: tE
             } = r.metadata;
-            return (0, i.jsx)(b.A, {
+            return (0, i.jsx)(B.A, {
                 onDismiss: () => tj(tE)
             });
         case th.kqX.WIN32_DEPRECATED_MESSAGE:
@@ -501,28 +501,28 @@ let tk = 21552 == n.j ? l.memo(function() {
             if (null == r.metadata) return null;
             let {
                 skuId: tG, applicationId: tv
-            } = r.metadata, tB = tI.A.get(tG), tb = D.A.getApplication(tv);
-            if (null == tB || null == tb) return null;
+            } = r.metadata, tb = tI.A.get(tG), tB = D.A.getApplication(tv);
+            if (null == tb || null == tB) return null;
             let tw = {
                 page: th.liQ.IN_APP
             };
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.PREMIUM_TIER_1,
                 children: [(0, i.jsx)(E.PMB, {
-                    onClick: () => I.X(tB.id),
+                    onClick: () => I.X(tb.id),
                     noticeType: th.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK
                 }), (0, i.jsx)(E.tvc, {
                     size: "md",
                     color: "currentColor",
                     className: tP.PC
                 }), tM.intl.format(tM.t["g3MU/+"], {
-                    applicationName: tb.name,
-                    skuName: tB.name
+                    applicationName: tB.name,
+                    skuName: tb.name
                 }), (0, i.jsx)(E.Z_L, {
                     noticeType: th.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK,
                     onClick: () => (0, z.j)({
-                        applicationId: tb.id,
-                        skuId: tB.id,
+                        applicationId: tB.id,
+                        skuId: tb.id,
                         openPremiumPaymentModal: () => {
                             (0, Z.A)({
                                 initialPlanId: null,
@@ -534,7 +534,7 @@ let tk = 21552 == n.j ? l.memo(function() {
                         analyticsLocations: s,
                         analyticsLocationObject: tw,
                         context: __OVERLAY__ ? th.BRT.OVERLAY : th.BRT.APP
-                    }).then(() => I.X(tB.id)),
+                    }).then(() => I.X(tb.id)),
                     children: tM.intl.string(tM.t.KEwPYx)
                 })]
             });
@@ -656,7 +656,7 @@ let tk = 21552 == n.j ? l.memo(function() {
         case th.kqX.DISPATCH_INSTALL_SCRIPT_PROGRESS:
             if (null == r.metadata) return null;
             let {
-                progress: tX, total: t$, name: tH
+                progress: tX, total: t$, name: tV
             } = r.metadata;
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.DEFAULT,
@@ -665,8 +665,8 @@ let tk = 21552 == n.j ? l.memo(function() {
                     noticeType: th.kqX.DISPATCH_INSTALL_SCRIPT_PROGRESS
                 }), (0, i.jsxs)(U.A, {
                     justify: U.A.Justify.CENTER,
-                    children: [null != tH ? tM.intl.formatToPlainString(tM.t["pHj+z4"], {
-                        name: `${tH}`,
+                    children: [null != tV ? tM.intl.formatToPlainString(tM.t["pHj+z4"], {
+                        name: `${tV}`,
                         progress: tX,
                         total: t$
                     }) : tM.intl.formatToPlainString(tM.t["lHZn+A"], {
@@ -751,7 +751,7 @@ let tk = 21552 == n.j ? l.memo(function() {
             });
         case th.kqX.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT:
             let {
-                daysPastDue: tV, dismissUntil: tW
+                daysPastDue: tH, dismissUntil: tW
             } = r.metadata;
             return (0, i.jsxs)(E.$Td, {
                 color: E.Hv$.WARNING,
@@ -761,7 +761,7 @@ let tk = 21552 == n.j ? l.memo(function() {
                         tj(tW)
                     }
                 }), tM.intl.format(tM.t.zxU0Kp, {
-                    daysPastDue: tV
+                    daysPastDue: tH
                 }), (0, i.jsx)(E.Z_L, {
                     noticeType: th.kqX.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT,
                     onClick: () => {
@@ -825,7 +825,7 @@ let tk = 21552 == n.j ? l.memo(function() {
                 })]
             });
         case th.kqX.BACK_TO_PREVIOUS_SCREEN:
-            return (0, i.jsx)(V.y, {
+            return (0, i.jsx)(H.y, {
                 buttonText: r.buttonText ?? tM.intl.string(tM.t["/g10LC"]),
                 onGoBack: r.callback,
                 onDismiss: () => tj(),

@@ -1183,7 +1183,7 @@ let _ = {
     OtherFriendRequestsModal: async () => {
         let {
             default: e
-        } = await Promise.all([n.e("71853"), n.e("60036")]).then(n.bind(n, 516259));
+        } = await Promise.all([n.e("25281"), n.e("60036")]).then(n.bind(n, 516259));
         return t => (0, a.jsx)(e, {
             ...t
         })

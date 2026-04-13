@@ -1,6 +1,6 @@
 /** chunk id: 723690 params = (module,exports,require) **/
 s.d(t, {
-    A: () => c
+    A: () => h
 });
 var i = s(627968);
 s(64700);
@@ -8,46 +8,46 @@ var n = s(503698),
     a = s.n(n),
     r = s(311907),
     l = s(297413),
-    o = s(966327),
-    u = s(994500);
+    u = s(966327),
+    o = s(994500);
 s(427262);
-var h = s(904625);
-let c = function(e) {
+var c = s(904625);
+let h = function(e) {
     let {
         user: t,
         hovered: s,
         subText: n,
-        showAccountIdentifier: c,
-        status: A,
-        isMobile: m,
-        isVR: d,
-        className: p
-    } = e, N = (0, r.bG)([u.A], () => u.A.getNickname(t.id));
+        showAccountIdentifier: h,
+        status: d,
+        isMobile: A,
+        isVR: I,
+        className: N
+    } = e, m = (0, r.bG)([o.A], () => o.A.getNickname(t.id));
     return (0, i.jsxs)("div", {
-        className: a()(h.eF, p, {
-            [h.yo]: s
+        className: a()(c.eF, N, {
+            [c.yo]: s
         }),
-        children: [(0, i.jsx)(o.A, {
+        children: [(0, i.jsx)(u.A, {
             user: t,
-            className: h.my,
+            className: c.my,
             animate: s,
-            status: A,
-            isMobile: m,
-            isVR: d
+            status: d,
+            isMobile: A,
+            isVR: I
         }), (0, i.jsxs)("div", {
-            className: h.Qq,
+            className: c.Qq,
             children: [(0, i.jsx)(l.A, {
                 user: t,
-                nick: N,
-                botClass: h.AO,
-                className: a()(h.xK, {
-                    [h.Nu]: t.hasUniqueUsername()
+                nick: m,
+                botClass: c.AO,
+                className: a()(c.xK, {
+                    [c.Nu]: t.hasUniqueUsername()
                 }),
-                usernameClass: h.Xh,
-                discriminatorClass: h.D2,
-                showAccountIdentifier: c
+                usernameClass: c.Xh,
+                discriminatorClass: c.D2,
+                showAccountIdentifier: h
             }), (0, i.jsx)("div", {
-                className: h.W$,
+                className: c.W$,
                 children: n
             })]
         })]

@@ -25,7 +25,7 @@ let _ = e => {
                 className: u.OH,
                 children: [(0, a.jsx)(s.Text, {
                     className: u.ix,
-                    variant: "text-md/semibold",
+                    variant: "text-md/normal",
                     children: _
                 }), p && null != x && (0, a.jsx)(s.Text, {
                     className: u.Z$,
