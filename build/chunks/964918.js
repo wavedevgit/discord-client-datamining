@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(576705),
     g = n(222823),
     f = n(287809),
-    x = n(486020),
-    E = n(661191),
+    E = n(486020),
+    x = n(661191),
     I = n(652215),
     C = n(37411),
     N = n(985018),
@@ -34,7 +34,7 @@ function b(e) {
         return o()(A.A.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(A.A.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && p.A.can(I.xBc.VIEW_CHANNEL, t)).sort((e, t) => {
             let n = g.Ay.lastMessageId(e.id),
                 i = g.Ay.lastMessageId(t.id);
-            return E.default.compare(n, i)
+            return x.default.compare(n, i)
         }).reverse().value()
     }), r = t.isForumLikeChannel() ? 5 : 3, u = t.isForumLikeChannel() ? c.bSJ : c.ysw;
     return l.useEffect(() => {
@@ -95,7 +95,7 @@ function y(e) {
             className: T.R4,
             children: null == n ? (0, i.jsx)("img", {
                 className: T.my,
-                src: x.Ay.getDefaultAvatarURL(void 0, void 0),
+                src: E.Ay.getDefaultAvatarURL(void 0, void 0),
                 alt: ""
             }) : (0, i.jsx)(u.A, {
                 className: T.my,

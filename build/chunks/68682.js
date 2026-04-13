@@ -1,0 +1,2 @@
+/** chunk id: 68682 params = (module,exports,require) **/
+s.exports = JSON.parse('{"yfwZuy":["Просмотр моего значка"],"UnPGii":["Значок добавлен в ваш профиль."],"nvaTQq":["Вы получили значок в профиле \xabOrbs\xbb!"]}')

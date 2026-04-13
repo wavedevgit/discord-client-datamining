@@ -1,42 +1,42 @@
 /** chunk id: 734771 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => a
+    A: () => l
 });
 var i = n(627968);
 n(64700);
 var r = n(763754),
     s = n(888675),
-    l = n(985018);
+    a = n(985018);
 
-function a(e) {
+function l(e) {
     let t, {
-            message: a,
-            usernameHook: c,
-            otherUser: o,
+            message: l,
+            usernameHook: o,
+            otherUser: c,
             otherUsernameHook: u,
             compact: d,
             channel: _
         } = e,
-        E = (0, r.Ay)(a),
+        E = (0, r.Ay)(l),
         A = E.nick,
-        m = c(E),
-        I = (0, r.d8)(o, _);
+        m = o(E),
+        I = (0, r.d8)(c, _);
     if (null != I && null != u) {
         let e = u(I);
-        t = l.intl.format(l.t.L2FyVq, {
+        t = a.intl.format(a.t.L2FyVq, {
             username: A,
             usernameHook: m,
             otherUsername: I.nick,
             otherUsernameHook: e
         })
-    } else t = l.intl.format(l.t["5v2xa8"], {
+    } else t = a.intl.format(a.t["5v2xa8"], {
         username: A,
         usernameHook: m
     });
     return (0, i.jsx)(s.A, {
         icon: n(884797),
-        timestamp: a.timestamp,
+        timestamp: l.timestamp,
         compact: d,
         children: t
     })

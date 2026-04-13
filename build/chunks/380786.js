@@ -1,38 +1,61 @@
 /** chunk id: 380786 params = (module,exports,require) **/
-"use strict";
-e.exports = {
-    kL: "container_c6ad88",
-    U1: "headerRow_c6ad88",
-    l2: "visibilityInfo_c6ad88",
-    Kk: "icon_c6ad88",
-    b: "closeButton_c6ad88",
-    ut: "closeIcon_c6ad88",
-    hQ: "contentContainer_c6ad88",
-    CT: "contentRow_c6ad88",
-    F2: "contentMediaContainer_c6ad88",
-    en: "contentRowOne_c6ad88",
-    kQ: "contentImageContainer_c6ad88",
-    JM: "previewEmbedImage_c6ad88",
-    X4: "serverSubPill_c6ad88",
-    Gw: "contentRowTwo_c6ad88",
-    IZ: "contentVideoContainer_c6ad88",
-    n$: "contentTextContainer_c6ad88",
-    Qq: "mediaChannelTagsContainer_c6ad88",
-    U0: "mediaChannelTag_c6ad88",
-    zy: "helpCenterLink_c6ad88",
-    QI: "helpCenterLinkIcon_c6ad88",
-    IP: "videoPreview_c6ad88",
-    Y6: "authorRow_c6ad88",
-    wO: "rowGroup_c6ad88",
-    cy: "author_c6ad88",
-    DD: "title_c6ad88",
-    SD: "postCreationTimestamp_c6ad88",
-    Mv: "messageCountBox_c6ad88",
-    SZ: "messageCountIcon_c6ad88",
-    qr: "footer_c6ad88",
-    GD: "forumPostControls_c6ad88",
-    vi: "reactionBox_c6ad88",
-    Ki: "video_c6ad88",
-    q6: "backgroundVideo_c6ad88",
-    Ob: "highlightVideo_c6ad88"
+n.d(e, {
+    A: () => O,
+    D: () => h
+});
+var i = n(627968);
+n(64700);
+var l = n(503698),
+    r = n.n(l),
+    s = n(284009),
+    a = n.n(s),
+    o = n(554146),
+    c = n(397927),
+    d = n(573648),
+    u = n(619006),
+    E = n(145643),
+    _ = n(826673),
+    T = n(997509),
+    A = n(967198),
+    I = n(652215),
+    N = n(873494),
+    R = n(985018),
+    p = n(381703);
+
+function O(t) {
+    let {
+        markAsDismissed: e
+    } = t, n = A.A.getGuildId();
+    return a()(n, "Guild Id must be defined"), (0, i.jsxs)(c.$Td, {
+        color: c.Hv$.WARNING,
+        children: [(0, i.jsx)(c.PMB, {
+            onClick: () => (0, _.Dr)(o.M.RIOT_CONNECTION_DEPRECATION_ADMIN_DISABLE),
+            noticeType: I.kqX.RIOT_CONNECTION_DEPRECATION_ADMIN
+        }), (0, i.jsx)("img", {
+            src: d.A.get(I.fg2.RIOT_GAMES).icon.whiteSVG,
+            alt: R.intl.string(N.default["1S6oAo"]),
+            className: r()(p.tV, p._R)
+        }), R.intl.format(N.default["/Xhh40"], {
+            settingsLink: () => `https://discord.com/guilds/${n}/settings/roles`
+        }), (0, i.jsx)(c.Z_L, {
+            onClick: () => {
+                e(), T.A.open(n, I.BEX.ROLES)
+            },
+            noticeType: I.kqX.RIOT_CONNECTION_DEPRECATION_ADMIN,
+            className: p.HE,
+            children: R.intl.string(N.default.spsZYI)
+        }), (0, i.jsx)(c.zr9, {
+            onClick: () => e(),
+            className: p.wX,
+            children: R.intl.string(N.default["MVB/Ab"])
+        })]
+    })
+}
+
+function h(t) {
+    t.forEach(t => {
+        null == E.A.getGuildRoleConnectionsConfiguration(t.id) && (0, u.os)(t.guildId, t.id)
+    });
+    let e = t.map(t => E.A.getGuildRoleConnectionsConfiguration(t.id));
+    return null != e && e.some(t => t?.some(t => t.some(t => t.connectionType === I.fg2.RIOT_GAMES || t.connectionType === I.fg2.LEAGUE_OF_LEGENDS)))
 }

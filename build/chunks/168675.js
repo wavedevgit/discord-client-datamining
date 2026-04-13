@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(688810),
     g = n(355622),
     f = n(408018),
-    x = n(133343),
-    E = n(171593),
+    E = n(133343),
+    x = n(171593),
     I = n(915089),
     C = n(314307),
     N = n(58736),
@@ -64,9 +64,9 @@ function z(e) {
                 children: [(0, i.jsx)(A.A, {
                     channel: s,
                     draftType: j.C.FirstThreadMessage
-                }), (0, i.jsx)(q, {
-                    parentChannelId: t
                 }), (0, i.jsx)(X, {
+                    parentChannelId: t
+                }), (0, i.jsx)(q, {
                     parentChannel: s,
                     parentMessageId: n,
                     location: l
@@ -76,7 +76,7 @@ function z(e) {
     })
 }
 
-function q(e) {
+function X(e) {
     let {
         parentChannelId: t
     } = e, n = l.useCallback(() => {
@@ -110,7 +110,7 @@ function q(e) {
     })
 }
 
-function X(e) {
+function q(e) {
     let t, {
             parentChannel: n,
             parentMessageId: s,
@@ -143,8 +143,8 @@ function X(e) {
             }
         }(n, s),
         {
-            textAreaState: x,
-            setTextAreaState: E
+            textAreaState: E,
+            setTextAreaState: x
         } = function(e, t) {
             let [n, i] = l.useState((0, f.N3)());
             return l.useEffect(() => {
@@ -170,7 +170,7 @@ function X(e) {
             parentMessageId: s,
             updateThreadSettings: g,
             threadSettings: m,
-            textAreaState: x
+            textAreaState: E
         }),
         {
             nameError: v,
@@ -244,7 +244,7 @@ function X(e) {
             parentMessageId: s,
             threadSettings: m,
             privateThreadMode: I,
-            textAreaState: x,
+            textAreaState: E,
             location: c,
             enableAIFeatures: T
         }),
@@ -299,8 +299,8 @@ function X(e) {
                     className: W.Eh,
                     children: [(0, i.jsx)(J, {
                         parentChannel: n,
-                        textAreaState: x,
-                        setTextAreaState: E,
+                        textAreaState: E,
+                        setTextAreaState: x,
                         submit: O,
                         error: R
                     }), (0, i.jsx)(h.Ay, {
@@ -405,7 +405,7 @@ function J(e) {
             content: n.textValue
         });
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(E.A, {
+        children: [(0, i.jsx)(x.A, {
             channelId: t.id,
             type: Y,
             canAttachFiles: I
@@ -414,7 +414,7 @@ function J(e) {
             children: (0, i.jsx)(o.dzK, {
                 error: C
             })
-        }), (0, i.jsx)(x.Ay, {
+        }), (0, i.jsx)(E.Ay, {
             type: Y,
             channel: t,
             placeholder: F.intl.string(F.t.taZfIC),

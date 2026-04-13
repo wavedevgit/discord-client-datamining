@@ -1,20 +1,20 @@
 /** chunk id: 290090 params = (module,exports,require) **/
-t.d(l, {
+l.d(t, {
     A: () => c
 });
-var n = t(627968);
-t(64700);
-var i = t(397927),
-    s = t(688810),
-    a = t(979286),
-    r = t(23722),
-    o = t(993401),
-    d = t(985018);
+var n = l(627968);
+l(64700);
+var i = l(397927),
+    s = l(688810),
+    a = l(979286),
+    r = l(23722),
+    o = l(993401),
+    d = l(985018);
 
 function c(e) {
     let {
-        onClose: l,
-        ...t
+        onClose: t,
+        ...l
     } = e, {
         analyticsLocations: c,
         newestAnalyticsLocation: u
@@ -22,13 +22,13 @@ function c(e) {
         (0, a.Cz)({
             analyticsLocations: c,
             analyticsSource: u
-        }), l?.()
+        }), t?.()
     });
     return (0, n.jsx)(o.q3, {
         action: "VISIT_SHOP",
         icon: i.U1X,
         tooltipText: d.intl.string(d.t.b2d0N0),
         onClick: m,
-        ...t
+        ...l
     })
 }

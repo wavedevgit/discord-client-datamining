@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(661191),
     g = n(32603),
     f = n(652793),
-    x = n(652215),
-    E = n(746080),
+    E = n(652215),
+    x = n(746080),
     I = n(790782),
     C = n(985018);
 
@@ -34,7 +34,7 @@ function N(e) {
         let i = p.default.extractTimestamp(n);
         return null != e && e > i
     }), R = l.useCallback(() => {
-        (0, _.pX)(x.BVt.CHANNEL(t.id, T ? E.VV.CUSTOMIZE_COMMUNITY : E.VV.CHANNEL_BROWSER))
+        (0, _.pX)(E.BVt.CHANNEL(t.id, T ? x.VV.CUSTOMIZE_COMMUNITY : x.VV.CHANNEL_BROWSER))
     }, [t.id, T]), O = l.useCallback(e => {
         (0, d.L3)(e, async () => {
             let {

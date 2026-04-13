@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(572448),
     g = n(955454),
     f = n(502754),
-    x = n(652215),
-    E = n(985018),
+    E = n(652215),
+    x = n(985018),
     I = n(368897);
 let C = l.memo(function(e) {
         let {
@@ -77,26 +77,26 @@ let C = l.memo(function(e) {
         if (l.useEffect(() => {
                 null == o || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || c.h.wait(() => {
                     (0, u.ack)(t.channelId, {
-                        section: x.JJy.INBOX,
-                        object: x.ZSU.ACK_INBOX_CHANNEL_NO_MESSAGES,
-                        objectType: x.AnalyticsObjectTypes.ACK_AUTOMATIC
+                        section: E.JJy.INBOX,
+                        object: E.ZSU.ACK_INBOX_CHANNEL_NO_MESSAGES,
+                        objectType: E.AnalyticsObjectTypes.ACK_AUTOMATIC
                     }, !0), s(t.channelId)
                 })
             }), null == o || !t.hasLoadedAnything) return null;
-        let E = (e, i) => {
-            (0, h.zV)(x.HAw.INBOX_CHANNEL_CLICKED, {
+        let x = (e, i) => {
+            (0, h.zV)(E.HAw.INBOX_CHANNEL_CLICKED, {
                 channel_id: t.channelId,
                 guild_id: t.guildId
             });
             let l = i ?? t.oldestUnreadMessageId;
-            (0, A.pX)(x.BVt.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : l)), n(e)
+            (0, A.pX)(E.BVt.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : l)), n(e)
         };
         return (0, i.jsx)("div", {
             className: I.Ix,
             children: (0, i.jsx)(d.Fmo, {
                 component: (0, i.jsx)(p.A, {
                     channel: o,
-                    gotoChannel: E,
+                    gotoChannel: x,
                     mentionCount: t.mentionCount,
                     toggleCollapsed: a,
                     showCollapseButton: !0,
@@ -115,7 +115,7 @@ let C = l.memo(function(e) {
                 children: t.collapsed ? null : "messages" === t.type ? (0, i.jsx)(f.A, {
                     channel: t,
                     channelRecord: o,
-                    gotoChannel: E
+                    gotoChannel: x
                 }) : "forum" === t.type ? (0, i.jsx)(g.A, {
                     channel: t,
                     channelRecord: o,
@@ -133,14 +133,14 @@ function T(e) {
         getNumUnreadChannels: s
     } = e, r = (0, a.A)() && null != t.guildId;
     return (0, i.jsx)(o.m_, {
-        text: r ? E.intl.string(E.t["5lLMhM"]) : E.intl.string(E.t.e6RscS),
+        text: r ? x.intl.string(x.t["5lLMhM"]) : x.intl.string(x.t.e6RscS),
         children: (0, i.jsx)(d.K0, {
             variant: "secondary",
-            "aria-label": r ? E.intl.string(E.t["5lLMhM"]) : E.intl.string(E.t.e6RscS),
+            "aria-label": r ? x.intl.string(x.t["5lLMhM"]) : x.intl.string(x.t.e6RscS),
             size: "sm",
             icon: r ? d.iA$ : d.A9s,
             onClick: function() {
-                r && null != t.guildId ? l(t.guildId) : n(t), (0, h.zV)(x.HAw.INBOX_CHANNEL_ACKED, {
+                r && null != t.guildId ? l(t.guildId) : n(t), (0, h.zV)(E.HAw.INBOX_CHANNEL_ACKED, {
                     channel_id: t.channelId,
                     guild_id: t.guildId,
                     marked_all_channels_as_read: !1,

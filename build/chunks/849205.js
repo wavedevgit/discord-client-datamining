@@ -23,8 +23,8 @@ function p(e) {
         p = (0, l.bG)([u.default], () => u.default.getUser(t)),
         g = (0, l.bG)([d.A], () => d.A.getStatus(t)),
         f = (0, l.bG)([d.A], () => d.A.isMobileOnline(t)),
-        x = (0, l.bG)([d.A], () => d.A.isVROnline(t)),
-        E = (0, l.bG)([c.A], () => c.A.getNickname(t)),
+        E = (0, l.bG)([d.A], () => d.A.isVROnline(t)),
+        x = (0, l.bG)([c.A], () => c.A.getNickname(t)),
         I = h.Ay.useUserTag(p),
         C = (0, r.a)({
             displayNameStyles: p?.displayNameStyles
@@ -39,7 +39,7 @@ function p(e) {
             children: (0, i.jsx)(a.euF, {
                 status: g,
                 isMobile: f,
-                isVR: x,
+                isVR: E,
                 className: m.my,
                 size: a._3J.SIZE_20,
                 "aria-label": h.Ay.getName(p),
@@ -56,7 +56,7 @@ function p(e) {
                     position: "bottom",
                     children: (0, i.jsx)("span", {
                         className: C,
-                        children: E ?? h.Ay.getName(p)
+                        children: x ?? h.Ay.getName(p)
                     })
                 }), N && (0, i.jsx)(s.m, {
                     text: _.intl.string(_.t.QyZ4Td),

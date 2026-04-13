@@ -1,15 +1,15 @@
 /** chunk id: 904854 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => f
+    A: () => p
 });
 var i = n(627968),
     r = n(64700),
     s = n(158954),
-    l = n(311907),
-    a = n(397927),
-    c = n(802341),
-    o = n(538451),
+    a = n(311907),
+    l = n(397927),
+    o = n(802341),
+    c = n(538451),
     u = n(734057),
     d = n(562153),
     _ = n(944052),
@@ -18,20 +18,20 @@ var i = n(627968),
     m = n(447215),
     I = n(888675),
     T = n(985018),
-    g = n(139487);
+    N = n(139487);
 
-function N(e) {
+function g(e) {
     let {
         users: t,
         guildId: n,
         channelId: r
     } = e;
-    return (0, i.jsx)(a.lGe, {
-        className: g.XM,
-        children: (0, i.jsx)(a.HOs, {
-            className: g.XG,
+    return (0, i.jsx)(l.lGe, {
+        className: N.XM,
+        children: (0, i.jsx)(l.HOs, {
+            className: N.XG,
             children: (0, i.jsx)("div", {
-                children: t.map(e => (0, i.jsx)(o.A, {
+                children: t.map(e => (0, i.jsx)(c.A, {
                     user: e,
                     guildId: n ?? void 0,
                     channelId: r,
@@ -42,12 +42,12 @@ function N(e) {
     })
 }
 
-function f(e) {
+function p(e) {
     let {
         message: t,
         channel: n,
-        compact: o
-    } = e, d = (0, E.A)(t), f = (0, _.X7)(t), p = t.messageReference?.channel_id, C = (0, l.bG)([u.A], () => u.A.getChannel(p)), h = function(e, t, n, s, l, o) {
+        compact: c
+    } = e, d = (0, E.A)(t), p = (0, _.X7)(t), C = t.messageReference?.channel_id, f = (0, a.bG)([u.A], () => u.A.getChannel(C)), h = function(e, t, n, s, a, c) {
         let u = (0, m.P)({
                 user: n,
                 channelId: t.id,
@@ -67,24 +67,24 @@ function f(e) {
                 messageId: e.id
             }),
             E = (0, A.Ay)(e),
-            [I, f] = s,
-            p = (0, A.d8)(I, t),
-            C = (0, A.d8)(f, t),
+            [I, p] = s,
+            C = (0, A.d8)(I, t),
+            f = (0, A.d8)(p, t),
             h = function(e, t) {
                 let n = r.useRef(null),
-                    [s, l] = r.useState(!1),
-                    c = r.useCallback(n => (0, i.jsx)(N, {
+                    [s, a] = r.useState(!1),
+                    o = r.useCallback(n => (0, i.jsx)(g, {
                         users: n,
                         guildId: e,
                         channelId: t
                     }), [e, t]);
-                return r.useCallback(e => (t, r) => (0, i.jsx)(a.YNO, {
+                return r.useCallback(e => (t, r) => (0, i.jsx)(l.YNO, {
                     targetElementRef: n,
-                    renderPopout: () => c(e),
+                    renderPopout: () => o(e),
                     shouldShow: s,
                     position: "bottom",
-                    onRequestClose: () => l(!1),
-                    children: e => (0, i.jsx)(a.DUT, {
+                    onRequestClose: () => a(!1),
+                    children: e => (0, i.jsx)(l.DUT, {
                         ...e,
                         tag: "a",
                         style: {
@@ -92,21 +92,21 @@ function f(e) {
                         },
                         innerRef: n,
                         onClick: () => {
-                            l(e => !e)
+                            a(e => !e)
                         },
                         children: t
                     })
-                }, r), [s, c])
+                }, r), [s, o])
             }(t.guild_id, t.id),
-            S = r.useCallback((e, t) => null == o ? e : (0, i.jsx)(c.T, {
-                channel: o,
-                childWrapperClassName: g.c6,
-                children: (0, i.jsx)(a.DUT, {
+            S = r.useCallback((e, t) => null == c ? e : (0, i.jsx)(o.T, {
+                channel: c,
+                childWrapperClassName: N.c6,
+                children: (0, i.jsx)(l.DUT, {
                     tag: "a",
                     children: e
                 })
-            }, t), [o]);
-        return null == l ? T.intl.format(T.t["eX6e/3"], {
+            }, t), [c]);
+        return null == a ? T.intl.format(T.t["eX6e/3"], {
             username: E.nick,
             usernameHook: u(E),
             channelHook: S
@@ -114,32 +114,32 @@ function f(e) {
             userCount: s.length + 1,
             username: E.nick,
             usernameHook: u(E),
-            username2: p.nick,
-            username2Hook: d(p),
-            username3: C.nick,
-            username3Hook: _(C),
+            username2: C.nick,
+            username2Hook: d(C),
+            username3: f.nick,
+            username3Hook: _(f),
             otherCount: s.length - 1,
             othersHook: h([n, ...s]),
-            duration: l
+            duration: a
         })
-    }(t, n, t.author, f, d, C), S = r.useMemo(() => {
+    }(t, n, t.author, p, d, f), S = r.useMemo(() => {
         let e = (0, i.jsx)(s.HKD, {
             size: "md",
-            color: a.LU0.colors.STATUS_POSITIVE
+            color: l.LU0.colors.STATUS_POSITIVE
         });
-        return null == C || null != d ? e : (0, i.jsx)(c.T, {
-            channel: C,
+        return null == f || null != d ? e : (0, i.jsx)(o.T, {
+            channel: f,
             children: (0, i.jsx)(s.HKD, {
                 size: "md",
-                color: a.LU0.colors.STATUS_POSITIVE
+                color: l.LU0.colors.STATUS_POSITIVE
             })
         })
-    }, [C, d]);
+    }, [f, d]);
     return (0, i.jsx)(I.A, {
         iconNode: S,
-        iconContainerClassName: g.zc,
+        iconContainerClassName: N.zc,
         timestamp: t.timestamp,
-        compact: o,
+        compact: c,
         children: h
     })
 }

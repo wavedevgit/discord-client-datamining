@@ -38,7 +38,7 @@ function h(e) {
                     webhooks: [i]
                 })
             } return Object.values(e).sort((e, t) => e.channel.name.localeCompare(t.channel.name))
-    }, [n, t]), N = l.useCallback(e => {
+    }, [n, t]), j = l.useCallback(e => {
         b() && (e === p?.id ? a.A.stopEditingWebhook() : a.A.startEditingWebhook(e))
     }, [b, p]);
     return (0, i.jsx)("div", {
@@ -96,7 +96,7 @@ function h(e) {
                 lastCreatedWebhookId: h,
                 editedWebhook: p,
                 errors: A,
-                toggleWebhookExpand: N
+                toggleWebhookExpand: j
             })
         })
     })

@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(485947),
     g = n(342296),
     f = n(290863),
-    x = n(994500),
-    E = n(741961),
+    E = n(994500),
+    x = n(741961),
     I = n(287809),
     C = n(954571),
     N = n(203982),
@@ -38,7 +38,7 @@ function L(e) {
         channel: r,
         status: u,
         activities: h
-    } = e, A = (0, a.bG)([E.A], () => null != E.A.getTypingUsers(r.id)[t.id]), p = (0, a.bG)([I.default], () => I.default.getCurrentUser()), C = (0, a.bG)([f.A], () => f.A.isMobileOnline(t.id)), T = (0, a.bG)([x.A], () => x.A.getNickname(t.id)), b = (0, _.A)(t.id), j = l.useRef(null), R = e => {
+    } = e, A = (0, a.bG)([x.A], () => null != x.A.getTypingUsers(r.id)[t.id]), p = (0, a.bG)([I.default], () => I.default.getCurrentUser()), C = (0, a.bG)([f.A], () => f.A.isMobileOnline(t.id)), T = (0, a.bG)([E.A], () => E.A.getNickname(t.id)), b = (0, _.A)(t.id), j = l.useRef(null), R = e => {
         (0, o.L3)(e, async () => {
             let {
                 default: e
@@ -122,10 +122,10 @@ function D(e) {
         analyticsLocations: o
     } = (0, h.Ay)(u.A.MEMBER_LIST), {
         listItems: d
-    } = (0, a.bG)([x.A, I.default, f.A], () => {
+    } = (0, a.bG)([E.A, I.default, f.A], () => {
         let e = (0, T.F)(t.recipients, I.default),
             n = {};
-        for (let t of e) x.A.isFriend(t.id) || t.id === I.default.getCurrentUser()?.id ? n[t.id] = {
+        for (let t of e) E.A.isFriend(t.id) || t.id === I.default.getCurrentUser()?.id ? n[t.id] = {
             status: f.A.getStatus(t.id) ?? y.clD.OFFLINE,
             activities: f.A.getActivities(t.id) ?? R
         } : n[t.id] = {

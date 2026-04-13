@@ -1,6 +1,6 @@
 /** chunk id: 948331 params = (module,exports,require) **/
 n.d(t, {
-    g: () => x
+    g: () => E
 });
 var i = n(627968),
     l = n(64700),
@@ -19,7 +19,7 @@ var i = n(627968),
     g = n(7410),
     f = n(936037);
 
-function x() {
+function E() {
     return (0, h.A)() ? (0, i.jsx)("div", {
         className: p.do,
         children: (0, i.jsxs)("div", {
@@ -57,11 +57,11 @@ function x() {
                 color: "text-muted",
                 children: m.intl.string(m.t.F6u3E3)
             })]
-        }), (0, i.jsx)(E, {})]
+        }), (0, i.jsx)(x, {})]
     })
 }
 
-function E() {
+function x() {
     let e = (0, u.Dd)(_.PremiumTypes.TIER_2),
         t = l.useCallback(() => (0, o.mMO)(async () => {
             let {

@@ -10,7 +10,7 @@ var i = t(311907),
     d = t(226698),
     s = t(376708),
     o = t(985018),
-    c = t(641131);
+    c = t(190192);
 
 function u(e) {
     let n = e.isArchivedThread(),

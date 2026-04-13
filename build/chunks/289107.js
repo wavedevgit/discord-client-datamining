@@ -1,5 +1,4 @@
 /** chunk id: 289107 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     Sd: "pulseBackgroundDark__11664",
     U4: "pulseBackgroundLight__11664",

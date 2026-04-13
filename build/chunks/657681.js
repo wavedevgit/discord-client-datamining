@@ -26,15 +26,15 @@ function _(e) {
         applicationIntegration: n
     } = e, {
         application: _
-    } = n, N = null != _.bot ? new x.A(_.bot) : null, j = (0, a.bG)([h.Ay], () => null != N ? h.Ay.getMember(t.id, N.id) : null, [N, t]), v = (0, a.bG)([p.A], () => p.A.getEveryoneRole(t)), T = (0, a.yK)([p.A], () => p.A.getManyRoles(t.id, j?.roles ?? [])), C = N?.id;
+    } = n, j = null != _.bot ? new x.A(_.bot) : null, N = (0, a.bG)([h.Ay], () => null != j ? h.Ay.getMember(t.id, j.id) : null, [j, t]), v = (0, a.bG)([p.A], () => p.A.getEveryoneRole(t)), T = (0, a.yK)([p.A], () => p.A.getManyRoles(t.id, N?.roles ?? [])), C = j?.id;
     l.useEffect(() => {
         null != C && o.A.requestMembersById(t.id, C)
     }, [t.id, C]);
-    let I = l.useMemo(() => s.kg(v.permissions, ...T.map(e => e.permissions)), [T, v]);
-    if (null == N) return null;
-    let E = A.Ay.getApplicationIconURL({
+    let E = l.useMemo(() => s.kg(v.permissions, ...T.map(e => e.permissions)), [T, v]);
+    if (null == j) return null;
+    let I = A.Ay.getApplicationIconURL({
         id: _.id,
-        guildMember: j,
+        guildMember: N,
         bot: _.bot,
         icon: _.icon,
         size: 32
@@ -48,17 +48,17 @@ function _(e) {
                 align: m.A.Align.CENTER,
                 children: [(0, i.jsx)("img", {
                     alt: "",
-                    src: E,
+                    src: I,
                     className: f.P0
                 }), (0, i.jsx)(r.Text, {
                     color: "text-strong",
                     variant: "text-sm/normal",
                     children: b.intl.format(b.t.GyhzGw, {
-                        user: N.toString()
+                        user: j.toString()
                     })
                 }), (0, i.jsx)(u.A, {
                     className: f.Tc,
-                    verified: N.isVerifiedBot()
+                    verified: j.isVerifiedBot()
                 })]
             }), function(e, t, n, l) {
                 let a = [],
@@ -86,7 +86,7 @@ function _(e) {
                         disabledPermissionsHeader: b.intl.string(b.t["/rEZ2i"])
                     }) : null]
                 })
-            }(N, t, j?.roles ?? [], I)]
+            }(j, t, N?.roles ?? [], E)]
         })
     })
 }

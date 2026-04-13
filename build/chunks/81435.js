@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(427930),
     g = n(427209),
     f = n(763754),
-    x = n(291812),
-    E = n(449859),
+    E = n(291812),
+    x = n(449859),
     I = n(812299),
     C = n(943220),
     N = n(538355),
@@ -37,7 +37,7 @@ var i = n(627968),
     U = n(559873),
     G = n(346061),
     P = n(652215),
-    k = n(228160),
+    k = n(537729),
     w = n(985018),
     B = n(68450);
 
@@ -50,8 +50,8 @@ function V(e) {
         isUnread: o,
         groupedMessages: h
     } = e, A = n.type === P.rbe.UNKNOWN ? u.N$i : (0, m.gU)(n, null), p = (0, _.Ay)(n, !1), g = (0, d.bG)([R.A], () => R.A.getGuild(n.getGuildId())), {
-        nick: x,
-        colorString: E
+        nick: E,
+        colorString: x
     } = (0, f.Ay)(t), {
         avatarSrc: N,
         eventHandlers: T
@@ -126,7 +126,7 @@ function V(e) {
                         children: [(0, i.jsx)("div", {
                             className: B.Xh,
                             style: {
-                                color: E ?? void 0
+                                color: x ?? void 0
                             },
                             children: (0, i.jsx)(c.A, {
                                 children: O
@@ -136,7 +136,7 @@ function V(e) {
                         children: (0, i.jsx)(u.Heading, {
                             variant: "text-md/semibold",
                             style: {
-                                color: E ?? void 0
+                                color: x ?? void 0
                             },
                             className: B.Xh,
                             children: g.name
@@ -178,7 +178,7 @@ function V(e) {
                             [B.gy]: o,
                             [B.wH]: r
                         }),
-                        children: [p, !b && ` \xb7 ${x}`]
+                        children: [p, !b && ` \xb7 ${E}`]
                     })]
                 }), (0, i.jsx)(W, {
                     message: t,
@@ -227,7 +227,7 @@ function F(e) {
     let {
         message: t
     } = e, n = (0, T.jb)(t.timestamp.getTime());
-    return (0, i.jsx)(E.A, {
+    return (0, i.jsx)(x.A, {
         timestamp: t.timestamp,
         className: B.vE,
         isEdited: t.isEdited(),
@@ -271,15 +271,15 @@ function W(e) {
                 _ = t.type === P.lAJ.POLL_RESULT,
                 m = t.hasFlag(P.pr7.IS_VOICE_MESSAGE),
                 f = t.type === P.lAJ.USER_JOIN,
-                E = null;
-            1 === d ? E = u.xfq : d > 1 ? E = u.sYc : c ? E = g.A : A || _ ? E = u.YRe : h ? E = u.tEP : m && (E = u.HKD);
+                x = null;
+            1 === d ? x = u.xfq : d > 1 ? x = u.sYc : c ? x = g.A : A || _ ? x = u.YRe : h ? x = u.tEP : m && (x = u.HKD);
             let I = !0,
                 C = null;
             return l ? c ? C = w.intl.string(w.t["9ddYKt"]) : A ? (I = !1, C = t.poll?.question.text) : C = _ ? w.intl.string(w.t.sad2PH) : o ? w.intl.string(w.t.p0oZmy) : d > 1 ? w.intl.formatToPlainString(w.t.rtfTKp, {
                 count: d
             }) : 1 === d ? w.intl.string(w.t.tCcq5p) : h ? w.intl.format(w.t.zY4v1B, {
                 stickerName: t.stickerItems[0].name
-            }) : m ? w.intl.string(w.t.slFYgi) : f ? w.intl.string(w.t.Yvvfw9) : w.intl.string(w.t.sDqZHL) : (I = !1, C = (0, i.jsx)(x.Ay, {
+            }) : m ? w.intl.string(w.t.slFYgi) : f ? w.intl.string(w.t.Yvvfw9) : w.intl.string(w.t.sDqZHL) : (I = !1, C = (0, i.jsx)(E.Ay, {
                 content: r,
                 message: t,
                 compact: !1,
@@ -296,7 +296,7 @@ function W(e) {
                 children: C
             })), {
                 previewContent: C,
-                Icon: E
+                Icon: x
             }
         }, [t, r, n, s])
     }({
@@ -341,9 +341,9 @@ let K = (0, l.memo)(function(e) {
         notificationCenterVariant: f
     } = (0, O.X8)({
         location: "NotificationsInboxMessageUnit"
-    }), x = (0, _.Ay)(p), E = l.useMemo(() => `${c?.author.username}: ${x}`, [c?.author.username, x]), I = s?.map(e => e.message).filter(e => null != e) ?? [];
+    }), E = (0, _.Ay)(p), x = l.useMemo(() => `${c?.author.username}: ${E}`, [c?.author.username, E]), I = s?.map(e => e.message).filter(e => null != e) ?? [];
     return null == c || null == p ? null : (0, i.jsx)(u.sqX, {
-        "aria-label": E,
+        "aria-label": x,
         className: a()(B.FJ, {
             [B.wH]: c.id === m.messageId,
             [B.Yj]: g

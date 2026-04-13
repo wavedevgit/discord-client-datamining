@@ -23,14 +23,14 @@ let m = l.forwardRef(function(e, t) {
         moreCount: p,
         isSingleCard: g = !1,
         wishlistId: f,
-        wishlistItem: x,
-        cardSize: E = h.Y.MEDIUM
+        wishlistItem: E,
+        cardSize: x = h.Y.MEDIUM
     } = e, {
         skuId: I,
         skuProductLine: C
-    } = x, {
+    } = E, {
         trackUserProfileWishlistAction: N
-    } = (0, u.NJ)(), T = s ? _.ho : _.C8, S = g ? _.pr : _.Nr, b = null != p && p > 0, y = b ? A.intl.string(A.t.TxBQzD) : (0, d.x2)(x), v = (0, i.jsxs)(o.DUT, {
+    } = (0, u.NJ)(), T = s ? _.ho : _.C8, S = g ? _.pr : _.Nr, b = null != p && p > 0, y = b ? A.intl.string(A.t.TxBQzD) : (0, d.x2)(E), v = (0, i.jsxs)(o.DUT, {
         onClick: () => {
             n(), N({
                 action: b ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
@@ -40,7 +40,7 @@ let m = l.forwardRef(function(e, t) {
             })
         },
         className: a()(S, {
-            [_.ax]: E === h.Y.SMALL
+            [_.ax]: x === h.Y.SMALL
         }),
         "aria-label": y,
         innerRef: t,
@@ -58,7 +58,7 @@ let m = l.forwardRef(function(e, t) {
     });
     return (0, i.jsx)(r.un, {
         asContainer: !0,
-        asset: l.renderIcon?.(x),
+        asset: l.renderIcon?.(E),
         assetSize: c.Q8,
         title: l.title,
         body: l.body ?? "",

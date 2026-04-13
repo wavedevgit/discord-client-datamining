@@ -6,36 +6,36 @@ n.d(t, {
 var i = n(311907),
     r = n(506774),
     s = n(73153),
-    l = n(785796);
-let a = "MaintenanceStore",
-    c = null,
+    a = n(785796);
+let l = "MaintenanceStore",
     o = null,
+    c = null,
     u = null;
 class d extends i.Ay.Store {
     static displayName = "MaintenanceStore";
     initialize() {
-        u = r.w.get(a)
+        u = r.w.get(l)
     }
     getIncident() {
-        return c
+        return o
     }
     getScheduledMaintenance() {
-        let e = o?.scheduled_until ?? o?.scheduled_for;
-        return null != o && o.id !== u && (null == e || Date.now() < new Date(e).getTime()) ? o : null
+        let e = c?.scheduled_until ?? c?.scheduled_for;
+        return null != c && c.id !== u && (null == e || Date.now() < new Date(e).getTime()) ? c : null
     }
 }
 let _ = new d(s.h, {
     CONNECTION_OPEN: function() {
-        c = null, l.A.checkScheduledMaintenances()
+        o = null, a.A.checkScheduledMaintenances()
     },
     STATUS_PAGE_INCIDENT: function(e) {
-        c = e.incident
+        o = e.incident
     },
     STATUS_PAGE_SCHEDULED_MAINTENANCE: function(e) {
-        o = e.maintenance
+        c = e.maintenance
     },
     STATUS_PAGE_SCHEDULED_MAINTENANCE_ACK: function() {
-        if (null == o) return !1;
-        u = o.id, r.w.set(a, u)
+        if (null == c) return !1;
+        u = c.id, r.w.set(l, u)
     }
 })

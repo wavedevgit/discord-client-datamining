@@ -60,7 +60,7 @@ e.exports = {
     YQ: "timestampInline_c19a55",
     CC: "alt_c19a55",
     ET: "timestampVisibleOnHover_c19a55",
-    IW: "usernameColorOnName_c19a55 " + i(307214).WY,
+    IW: "usernameColorOnName_c19a55 " + n(307214).WY,
     TK: "headerText_c19a55",
     yF: "hasRoleIcon_c19a55",
     hB: "hasBadges_c19a55",

@@ -25,9 +25,9 @@ function m(e) {
         canNavigate: b
     } = e, f = r.A.get(g), _ = l.useCallback(async e => {
         b() && (await o.A.enableIntegration(m.id, e.type, e.id), a.A.startEditingIntegration(e.id))
-    }, [b, m.id]), N = l.useCallback(e => {
+    }, [b, m.id]), j = l.useCallback(e => {
         b() && (e.id === n?.id && a.A.stopEditingIntegration(), o.A.disableIntegration(m.id, e.id))
-    }, [b, n, m.id]), j = l.useCallback(e => {
+    }, [b, n, m.id]), N = l.useCallback(e => {
         b() && (e === n?.id ? a.A.stopEditingIntegration() : a.A.startEditingIntegration(e))
     }, [b, n]);
     return (0, i.jsxs)(i.Fragment, {
@@ -51,8 +51,8 @@ function m(e) {
             guild: m,
             isExpanded: n?.id === e.id,
             onEnable: _,
-            onDisable: N,
-            onToggleExpand: () => j(e.id)
+            onDisable: j,
+            onToggleExpand: () => N(e.id)
         }, e.id)), (0, i.jsx)(s.Text, {
             className: u.BK,
             color: "text-muted",

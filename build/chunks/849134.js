@@ -25,12 +25,12 @@ function c(e) {
         skuImageDetails: p,
         title: g,
         body: f,
-        overlayImageUrl: x
+        overlayImageUrl: E
     } = e;
     l.useEffect(() => {
         n?.()
     }, [n]);
-    let E = l.useMemo(() => p?.imageUrl == null ? {
+    let x = l.useMemo(() => p?.imageUrl == null ? {
         type: "image",
         src: d.A,
         aspectRatio: "6/4"
@@ -38,12 +38,12 @@ function c(e) {
         imageUrl: p?.imageUrl,
         backgroundImageUrl: p?.backgroundImageUrl,
         altText: r.intl.string(r.t["ulQB+t"]),
-        overlayImageUrl: x,
+        overlayImageUrl: E,
         customClassNames: {
             containerClassName: o.z,
             foregroundImageClassName: o._
         }
-    }), [p?.imageUrl, p?.backgroundImageUrl, x]);
+    }), [p?.imageUrl, p?.backgroundImageUrl, E]);
     return (0, i.jsx)(s.AM, {
         size: "lg",
         shouldShow: !0,
@@ -66,6 +66,6 @@ function c(e) {
         targetElementRef: t,
         title: g ?? r.intl.string(r.t.Ylu2JM),
         body: f ?? r.intl.string(r.t.vgylLQ),
-        graphic: E
+        graphic: x
     })
 }

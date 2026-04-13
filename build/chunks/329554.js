@@ -1,26 +1,26 @@
 /** chunk id: 329554 params = (module,exports,require) **/
-i.d(t, {
+n.d(t, {
     A: () => A
 });
-var n = i(627968);
-i(64700);
-var a = i(311907),
-    l = i(397927),
-    s = i(302959),
-    r = i(765379),
-    c = i(592182),
-    o = i(506326),
-    d = i(409626),
-    u = i(692969),
-    p = i(78871),
-    m = i(287809),
-    _ = i(804630),
-    h = i(257081);
+var i = n(627968);
+n(64700);
+var a = n(311907),
+    l = n(397927),
+    s = n(302959),
+    r = n(765379),
+    c = n(592182),
+    o = n(506326),
+    d = n(409626),
+    u = n(692969),
+    p = n(78871),
+    m = n(287809),
+    h = n(804630),
+    _ = n(257081);
 
 function g(e) {
     let {
         resolvedActivity: t,
-        presenceActivity: i,
+        presenceActivity: n,
         showHeader: a = !0
     } = e, s = (0, u.A)({
         location: "UserActivityRow",
@@ -28,49 +28,49 @@ function g(e) {
         source: d.Ob.UserProfile,
         sourceUserId: t.userId,
         trackEntryPointImpression: !0
-    }), c = null != i && !(0, r.A)(i) && null != i.party, m = null != t.state && t.state.length > 0 && !c;
-    return (0, n.jsxs)("div", {
-        className: h.ec,
-        children: [a ? (0, n.jsx)("div", {
-            className: h.N1,
-            children: (0, n.jsx)(l.Heading, {
+    }), c = null != n && !(0, r.A)(n) && null != n.party, m = null != t.state && t.state.length > 0 && !c;
+    return (0, i.jsxs)("div", {
+        className: _.ec,
+        children: [a ? (0, i.jsx)("div", {
+            className: _.N1,
+            children: (0, i.jsx)(l.Heading, {
                 variant: "text-xs/medium",
                 color: "text-muted",
-                children: (0, _._Q)(t.type)
+                children: (0, h._Q)(t.type)
             })
-        }) : null, (0, n.jsxs)("div", {
-            className: h.Wh,
-            children: [(0, n.jsx)(_.Tf, {
+        }) : null, (0, i.jsxs)("div", {
+            className: _.Wh,
+            children: [(0, i.jsx)(h.Tf, {
                 resolvedActivity: t
-            }), (0, n.jsx)("div", {
-                className: h.wt,
-                children: (0, n.jsxs)(l.DUT, {
-                    className: null != s ? h.wv : void 0,
+            }), (0, i.jsx)("div", {
+                className: _.wt,
+                children: (0, i.jsxs)(l.DUT, {
+                    className: null != s ? _.wv : void 0,
                     onClick: s,
-                    children: [(0, n.jsx)(l.Heading, {
+                    children: [(0, i.jsx)(l.Heading, {
                         variant: "heading-sm/medium",
                         color: "text-strong",
-                        className: h.DD,
+                        className: _.DD,
                         lineClamp: 1,
                         children: t.name
-                    }), null != t.details ? (0, n.jsx)(l.Text, {
+                    }), null != t.details ? (0, i.jsx)(l.Text, {
                         variant: "text-xs/normal",
                         color: "text-muted",
                         lineClamp: 1,
                         children: t.details
-                    }) : null, m ? (0, n.jsx)(l.Text, {
+                    }) : null, m ? (0, i.jsx)(l.Text, {
                         variant: "text-xs/normal",
                         color: "text-muted",
                         lineClamp: 1,
                         children: t.state
-                    }) : null, null != i ? (0, n.jsxs)(o.mG, {
+                    }) : null, null != n ? (0, i.jsxs)(o.mG, {
                         location: o.N5.VOICE_USER_POPOUT,
-                        children: [(0, n.jsx)(p.QA, {
-                            activity: i
-                        }), (0, n.jsx)(p.cy, {
-                            activity: i
-                        }), (0, n.jsx)(p.Rq, {
-                            activity: i
+                        children: [(0, i.jsx)(p.QA, {
+                            activity: n
+                        }), (0, i.jsx)(p.cy, {
+                            activity: n
+                        }), (0, i.jsx)(p.Rq, {
+                            activity: n
                         })]
                     }) : null]
                 })
@@ -78,10 +78,10 @@ function g(e) {
         })]
     })
 }
-let A = /^(14256|21552)$/.test(i.j) ? function(e) {
+let A = /^(14256|21552)$/.test(n.j) ? function(e) {
     let {
         channel: t,
-        presenceActivity: i,
+        presenceActivity: n,
         userId: l,
         embeddedApp: r,
         applicationStream: o,
@@ -89,18 +89,18 @@ let A = /^(14256|21552)$/.test(i.j) ? function(e) {
         showHeader: u = !0
     } = e, p = (0, a.bG)([m.default], () => null != l ? m.default.getUser(l) : null, [l]);
     if (null == p) return null;
-    let h = (0, _.Gf)(p.id, i, r);
-    return (0, n.jsxs)("div", {
-        children: [h.isSpotify ? (0, n.jsx)(_.vP, {
-            resolvedActivity: h,
+    let _ = (0, h.Gf)(p.id, n, r);
+    return (0, i.jsxs)("div", {
+        children: [_.isSpotify ? (0, i.jsx)(h.vP, {
+            resolvedActivity: _,
             showHeader: u
-        }) : (0, n.jsx)(g, {
-            resolvedActivity: h,
-            presenceActivity: i,
+        }) : (0, i.jsx)(g, {
+            resolvedActivity: _,
+            presenceActivity: n,
             showHeader: u
-        }), (0, n.jsx)(c.A, {
+        }), (0, i.jsx)(c.A, {
             type: null != o ? s.M.STREAM_PREVIEW : s.M.VOICE_CHANNEL,
-            activity: i,
+            activity: n,
             embeddedActivity: r?.embeddedActivity,
             applicationStream: o,
             user: p,

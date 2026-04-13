@@ -22,9 +22,9 @@ let p = l.memo(function(e) {
     } = e, {
         id: g,
         name: f,
-        color: x,
-        children: E
-    } = t, I = E.map(e => e.id), C = (0, o.A)(e => e.guildId), N = (0, s.bG)([d.A], () => d.A.isFolderExpanded(g)), T = function(e) {
+        color: E,
+        children: x
+    } = t, I = x.map(e => e.id), C = (0, o.A)(e => e.guildId), N = (0, s.bG)([d.A], () => d.A.isFolderExpanded(g)), T = function(e) {
         let t = e.children.map(e => {
                 let t = e.id,
                     n = u.A.getGuild(t);
@@ -53,11 +53,11 @@ let p = l.memo(function(e) {
                 ...t,
                 folderId: g,
                 folderName: f,
-                folderColor: x,
+                folderColor: E,
                 unread: v || b > 0
             })
         })
-    }, [g, f, x, v, b]);
+    }, [g, f, E, v, b]);
     return (0, i.jsx)(A.A, {
         ...p,
         folderNode: t,

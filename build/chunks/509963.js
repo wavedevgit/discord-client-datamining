@@ -19,12 +19,12 @@ var i = n(627968),
     p = n(194871),
     g = n(966846),
     f = n(674378),
-    x = n(505806),
-    E = n(652215),
+    E = n(505806),
+    x = n(652215),
     I = n(985018),
     C = n(832954);
 let N = {
-    [E.WTw.INSTALLING]: {
+    [x.WTw.INSTALLING]: {
         [_.pJ.NONE]: (e, t) => I.intl.formatToPlainString(I.t["p+2sE+"], {
             name: e
         }),
@@ -41,7 +41,7 @@ let N = {
             timeRemaining: t
         })
     },
-    [E.WTw.UPDATING]: {
+    [x.WTw.UPDATING]: {
         [_.pJ.NONE]: (e, t) => I.intl.formatToPlainString(I.t["6F9QzC"], {
             name: e
         }),
@@ -58,7 +58,7 @@ let N = {
             timeRemaining: t
         })
     },
-    [E.WTw.REPAIRING]: {
+    [x.WTw.REPAIRING]: {
         [_.pJ.NONE]: (e, t) => I.intl.formatToPlainString(I.t["p+2sE+"], {
             name: e
         }),
@@ -107,9 +107,9 @@ class T extends l.PureComponent {
             state: e,
             isPaused: t
         } = this.props;
-        if (e.type === E.WTw.UPDATING || e.type === E.WTw.REPAIRING || e.type === E.WTw.INSTALLING) {
+        if (e.type === x.WTw.UPDATING || e.type === x.WTw.REPAIRING || e.type === x.WTw.INSTALLING) {
             if (t) return I.intl.string(I.t["5oxtFS"]);
-            else if (e.stage === E.OQC.PATCHING || e.stage === E.OQC.REPAIRING) return (0, i.jsx)(x.A, {
+            else if (e.stage === x.OQC.PATCHING || e.stage === x.OQC.REPAIRING) return (0, i.jsx)(E.A, {
                 getHistoricalTotalBytes: p.A.getHistoricalTotalBytesWritten,
                 updateInterval: 5e3,
                 children: this.renderProgressBody
@@ -148,7 +148,7 @@ class S extends l.PureComponent {
         let {
             onClick: t
         } = this.props;
-        e.preventDefault(), e.stopPropagation(), null != t && t(e), (0, m.pX)(E.BVt.APPLICATION_LIBRARY)
+        e.preventDefault(), e.stopPropagation(), null != t && t(e), (0, m.pX)(x.BVt.APPLICATION_LIBRARY)
     };
     getTooltipText() {
         let {

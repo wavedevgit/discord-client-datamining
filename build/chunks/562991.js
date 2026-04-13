@@ -1,6 +1,6 @@
 /** chunk id: 562991 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => x
 });
 var i = n(627968),
     l = n(64700),
@@ -18,14 +18,14 @@ var i = n(627968),
     p = n(652215),
     g = n(985018),
     f = n(171616),
-    x = n(782691);
+    E = n(782691);
 
-function E(e) {
+function x(e) {
     let {
         channel: t,
         connected: n,
         hovered: s,
-        subtitle: E,
+        subtitle: x,
         onClick: I,
         showEmptyChannelTopic: C
     } = e, N = (0, r.bG)([u.A], () => u.A.getChannelStatus(t)), {
@@ -33,7 +33,7 @@ function E(e) {
     } = (0, h.Dm)({
         guildId: t.guild_id,
         location: "VoiceChannelStatus"
-    }), S = T && (0, A.lr)(t), b = null != N && N.length > 0, y = (0, c.Ay)(t, !0), v = null != E && E.length > 0;
+    }), S = T && (0, A.lr)(t), b = null != N && N.length > 0, y = (0, c.Ay)(t, !0), v = null != x && x.length > 0;
     if (l.useEffect(() => {
             b && m.default.track(p.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
                 channel_id: t.id,
@@ -46,7 +46,7 @@ function E(e) {
         onClick: y ? I : void 0,
         children: (0, i.jsx)(d.Text, {
             variant: "text-xs/medium",
-            className: a()(f.qS, x.PT),
+            className: a()(f.qS, E.PT),
             children: (0, i.jsx)(o.A, {
                 children: _.A.parseVoiceChannelStatus(N, !0, {
                     channelId: t.id
@@ -66,6 +66,6 @@ function E(e) {
             size: "xxs"
         })]
     }) : v ? (0, i.jsx)(o.A, {
-        children: E
+        children: x
     }) : null
 }

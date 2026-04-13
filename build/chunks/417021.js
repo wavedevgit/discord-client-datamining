@@ -17,8 +17,8 @@ var i = t(627968),
     g = t(946356),
     h = t(254828),
     m = t(783123),
-    I = t(652215),
-    f = t(996988),
+    f = t(652215),
+    I = t(996988),
     x = t(985018),
     b = t(255412);
 
@@ -32,7 +32,7 @@ function v(e) {
         transitionState: j,
         onHide: T,
         sourceAnalyticsLocations: S = []
-    } = e, C = t === I.ME ? void 0 : t, N = (0, a.bG)([s.A], () => s.A.isBlocked(n.id)), {
+    } = e, C = t === f.ME ? void 0 : t, N = (0, a.bG)([s.A], () => s.A.isBlocked(n.id)), {
         analyticsLocations: R
     } = (0, o.Ay)([...S, N ? l.A.BLOCKED_PROFILE_MODAL : l.A.IGNORED_PROFILE_MODAL]), L = (0, _.pb)({
         layout: "MODAL_V2",
@@ -64,7 +64,7 @@ function v(e) {
                 children: (0, i.jsxs)(g.A, {
                     user: n,
                     displayProfile: O,
-                    themeType: f.d.MODAL_V2,
+                    themeType: I.d.MODAL_V2,
                     children: [(0, i.jsx)("div", {
                         className: b.Tp
                     }), (0, i.jsxs)("div", {

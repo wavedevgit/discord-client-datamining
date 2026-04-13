@@ -51,7 +51,7 @@ function f(e, t) {
     }
 }
 
-function x(e) {
+function E(e) {
     let {
         name: t,
         targetNode: n,
@@ -75,7 +75,7 @@ function x(e) {
     })
 }
 
-function E(e) {
+function x(e) {
     let {
         name: t,
         targetNode: n,
@@ -118,11 +118,11 @@ let I = l.memo(function(e) {
     return (0, i.jsxs)("div", {
         className: p.iE,
         "aria-hidden": !0,
-        children: [(0, i.jsx)(x, {
+        children: [(0, i.jsx)(E, {
             name: t,
             targetNode: n,
             below: s
-        }), r ? (0, i.jsx)(E, {
+        }), r ? (0, i.jsx)(x, {
             name: t,
             targetNode: n,
             onDragOverChanged: a

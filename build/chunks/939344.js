@@ -1,50 +1,50 @@
 /** chunk id: 939344 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => c
+    A: () => o
 });
 var i = n(627968);
 n(64700);
 var r = n(480012),
     s = n(763754),
-    l = n(888675),
-    a = n(985018);
+    a = n(888675),
+    l = n(985018);
 
-function c(e) {
+function o(e) {
     let {
         message: t,
-        compact: c,
-        missed: o,
+        compact: o,
+        missed: c,
         joinable: u,
         usernameHook: d,
         onClickJoinCall: _
     } = e, E = (0, s.Ay)(t), A = E.nick, m = d(E), I = (0, r.A)(t);
-    return o ? (0, i.jsx)(l.A, {
+    return c ? (0, i.jsx)(a.A, {
         icon: n(130158),
         timestamp: t.timestamp,
-        compact: c,
-        children: null != I ? a.intl.format(a.t.AcqBmO, {
+        compact: o,
+        children: null != I ? l.intl.format(l.t.AcqBmO, {
             username: A,
             usernameHook: m,
             callDuration: I
-        }) : a.intl.format(a.t["43phHx"], {
+        }) : l.intl.format(l.t["43phHx"], {
             username: A,
             usernameHook: m
         })
-    }) : (0, i.jsxs)(l.A, {
+    }) : (0, i.jsxs)(a.A, {
         icon: n(175476),
         timestamp: t.timestamp,
-        compact: c,
-        children: [null != I ? a.intl.format(a.t["7TeC1P"], {
+        compact: o,
+        children: [null != I ? l.intl.format(l.t["7TeC1P"], {
             username: A,
             usernameHook: m,
             callDuration: I
-        }) : a.intl.format(a.t.LuB5RD, {
+        }) : l.intl.format(l.t.LuB5RD, {
             username: A,
             usernameHook: m
-        }), u ? (0, i.jsx)(l.A.Action, {
+        }), u ? (0, i.jsx)(a.A.Action, {
             onClick: _,
-            children: a.intl.string(a.t.oa9mvZ)
+            children: l.intl.string(l.t.oa9mvZ)
         }) : null]
     })
 }

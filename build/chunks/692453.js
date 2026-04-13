@@ -48,7 +48,7 @@ function p(e) {
             ...e,
             id: (0, h.Sq)(e)
         })), [p]),
-        C = s.useCallback(e => {
+        T = s.useCallback(e => {
             let t = e.map(e => {
                 let {
                     id: t,
@@ -59,11 +59,11 @@ function p(e) {
             (0, u.Bq)(t)
         }, []),
         {
-            handleDragStart: T,
+            handleDragStart: C,
             handleDragReset: I,
             handleDragComplete: b,
             draggingId: v
-        } = (0, o.A)(E, C);
+        } = (0, o.A)(E, T);
     if (null == r) return null;
     let S = p.length < h.pA;
     return (0, i.jsx)("div", {
@@ -87,7 +87,7 @@ function p(e) {
                 children: E.map((e, t) => (0, i.jsx)(g.A, {
                     connection: e,
                     index: t,
-                    onDragStart: T,
+                    onDragStart: C,
                     onDragReset: I,
                     onDragComplete: b,
                     draggingId: v

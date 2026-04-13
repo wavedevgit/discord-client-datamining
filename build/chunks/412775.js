@@ -18,8 +18,8 @@ var a = t(311907),
     g = t(46937),
     h = t(361311),
     m = t(743987),
-    I = t(900179),
-    f = t(280645),
+    f = t(900179),
+    I = t(280645),
     x = t(928223),
     b = t(518477),
     v = t(985018),
@@ -41,10 +41,10 @@ function y(e) {
         children: [t?.bio != null && t?.bio !== "" && !C && (0, i.jsx)(A.A, {
             userBio: t.bio,
             setLineClamp: !1
-        }), t?.guildId != null && (0, i.jsx)(f.A, {
+        }), t?.guildId != null && (0, i.jsx)(I.A, {
             userId: n.id,
             guildId: t.guildId
-        }), n.isProvisional && (0, i.jsx)(I.A, {
+        }), n.isProvisional && (0, i.jsx)(f.A, {
             heading: v.intl.string(v.t.Iyka0U),
             headingIcon: (0, i.jsx)(r.EpV, {
                 size: "xxs",
@@ -54,19 +54,19 @@ function y(e) {
             children: (0, i.jsx)(o.T, {
                 userId: n.id
             })
-        }), S.length > 0 && (0, i.jsx)(I.A, {
+        }), S.length > 0 && (0, i.jsx)(f.A, {
             heading: v.intl.string(v.t["Uv/eTx"]),
             children: (0, i.jsx)(h.A, {
                 applicationIds: S
             })
-        }), (0, i.jsx)(I.A, {
+        }), (0, i.jsx)(f.A, {
             heading: v.intl.string(v.t.a6XYD9),
             children: (0, i.jsx)(m.A, {
                 userId: n.id,
                 guildId: t?.guildId,
                 tooltipDelay: b.In
             })
-        }), R.length > 0 && (0, i.jsx)(I.A, {
+        }), R.length > 0 && (0, i.jsx)(f.A, {
             heading: v.intl.string(v.t["3fe7U5"]),
             scrollTargetId: b.bk.CONNECTIONS,
             children: (0, i.jsx)(g.Ay, {
@@ -75,7 +75,7 @@ function y(e) {
                 userId: n.id,
                 locale: N
             })
-        }), L.length > 0 && (0, i.jsx)(I.A, {
+        }), L.length > 0 && (0, i.jsx)(f.A, {
             heading: v.intl.string(v.t.PHjkRE),
             children: L.map(e => (0, i.jsx)(g.Wc, {
                 className: E.MI,

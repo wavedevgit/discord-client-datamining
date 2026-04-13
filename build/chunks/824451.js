@@ -1,7 +1,7 @@
 /** chunk id: 824451 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => C,
+    Ay: () => T,
     wF: () => E
 });
 var i = n(627968),
@@ -50,7 +50,7 @@ function E() {
     })
 }
 
-function C() {
+function T() {
     let e = (0, a.bG)([h.A], () => h.A.getProps().guild),
         {
             analyticsLocations: t
@@ -79,7 +79,7 @@ function C() {
                 })]
             }), (0, i.jsx)(d.D0$, {
                 errorMessage: n,
-                children: (0, i.jsx)(T, {
+                children: (0, i.jsx)(C, {
                     color: r,
                     onColorChange: l
                 })
@@ -91,7 +91,7 @@ function C() {
     })
 }
 
-function T(e) {
+function C(e) {
     let {
         color: t,
         onColorChange: n

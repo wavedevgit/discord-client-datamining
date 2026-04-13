@@ -17,9 +17,9 @@ var i = t(627968),
     g = t(518477),
     h = t(985018),
     m = t(643146),
-    I = t(843796);
+    f = t(843796);
 
-function f(e) {
+function I(e) {
     let {
         section: n,
         user: t,
@@ -83,7 +83,7 @@ function x(e) {
         }), v(e)
     }, [A]);
     return x ? (0, i.jsx)("div", {
-        className: I.kL,
+        className: f.kL,
         children: (0, i.jsxs)("div", {
             className: m.Ie,
             children: [(0, i.jsx)("div", {
@@ -94,9 +94,9 @@ function x(e) {
             })]
         })
     }) : (0, i.jsxs)("div", {
-        className: I.kL,
+        className: f.kL,
         children: [(0, i.jsx)(l.VQ0, {
-            className: I.$H,
+            className: f.$H,
             type: "top",
             selectedItem: b,
             onItemSelect: E,
@@ -106,7 +106,7 @@ function x(e) {
                     text: t
                 } = e;
                 return (0, i.jsx)(l.VQ0.Item, {
-                    className: I.YU,
+                    className: f.YU,
                     id: n,
                     "aria-label": t,
                     children: (0, i.jsx)(l.Text, {
@@ -115,7 +115,7 @@ function x(e) {
                     })
                 }, n)
             })
-        }), (0, i.jsx)(f, {
+        }), (0, i.jsx)(I, {
             items: _,
             section: b,
             user: n,

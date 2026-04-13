@@ -13,7 +13,7 @@ var i = n(934551),
 let u = (0, r.zZ)(a.X.AUTHORIZED_APPS_CATEGORY, {
         buildLayout: () => [d._],
         initialize: () => (s.A.fetch(), () => {
-            o.i.setState({
+            o.iU.setState({
                 searchQuery: ""
             })
         })

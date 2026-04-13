@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(240248),
     g = n(263715),
     f = n(941971),
-    x = n(447253),
-    E = n(531053),
+    E = n(447253),
+    x = n(531053),
     I = n(107385),
     C = n(900848),
     N = n(550591),
@@ -54,8 +54,8 @@ let v = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 "aria-posinset": z
             } = e,
             {
-                id: q,
-                name: X,
+                id: X,
+                name: q,
                 children: $
             } = u,
             [Q, J] = l.useState(!1),
@@ -83,7 +83,7 @@ let v = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
             ee(e)
         }, []), ea = l.useCallback(e => {
             ("ArrowRight" === e.key && !O || "ArrowLeft" === e.key && O) && V()
-        }, [V, O]), er = null != X && "" !== X ? X : null != G && "" !== G ? G : S.intl.string(S.t.xV9hVh), eo = (0, d.Vd)(`${q}`), ed = `folder-items-${q}`, ec = (t = $.length, n = (0, h.rdh)(h.LU0.modules.guildbar.FOLDER_SIZE), s = (0, h.rdh)(h.LU0.modules.guildbar.AVATAR_SIZE), t * (s + (o = (0, h.rdh)(h.LU0.space.SPACE_XS))) - o + (o - (n - s) / 2) + (0, h.rdh)(h.LU0.space.SPACE_4)), eu = (0, h.pnh)(!ei && O, {
+        }, [V, O]), er = null != q && "" !== q ? q : null != G && "" !== G ? G : S.intl.string(S.t.xV9hVh), eo = (0, d.Vd)(`${X}`), ed = `folder-items-${X}`, ec = (t = $.length, n = (0, h.rdh)(h.LU0.modules.guildbar.FOLDER_SIZE), s = (0, h.rdh)(h.LU0.modules.guildbar.AVATAR_SIZE), t * (s + (o = (0, h.rdh)(h.LU0.space.SPACE_XS))) - o + (o - (n - s) / 2) + (0, h.rdh)(h.LU0.space.SPACE_4)), eu = (0, h.pnh)(!ei && O, {
             from: {
                 height: 0
             },
@@ -96,7 +96,7 @@ let v = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
             config: {
                 duration: v
             }
-        }), eh = l.useCallback(e => p?.(q, e), [p, q]), eA = (0, i.jsxs)(C.c, {
+        }), eh = l.useCallback(e => p?.(X, e), [p, X]), eA = (0, i.jsxs)(C.c, {
             children: [(0, i.jsx)(f.A, {
                 disabled: ei || O,
                 hovered: Q,
@@ -119,7 +119,7 @@ let v = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                     "data-dnd-name": er,
                     children: ei ? (0, i.jsx)(I.A, {
                         isFolder: !0
-                    }) : (0, i.jsx)(x.A, {
+                    }) : (0, i.jsx)(E.A, {
                         folderNode: u,
                         expanded: O,
                         sorting: k,
@@ -138,7 +138,7 @@ let v = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                         "aria-posinset": z
                     })
                 })
-            }), P ? (0, i.jsx)(E.Ay, {
+            }), P ? (0, i.jsx)(x.Ay, {
                 name: er,
                 targetNode: u,
                 onDragOverChanged: es
@@ -172,7 +172,7 @@ let v = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                     "aria-label": u.name,
                     children: $.map((t, n) => F(t, n, $.length, e.height))
                 }, l)
-            }), P && O ? (0, i.jsx)(E.qv, {
+            }), P && O ? (0, i.jsx)(x.qv, {
                 name: er,
                 targetNode: u
             }) : null]

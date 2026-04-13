@@ -21,7 +21,8 @@ class o extends a.A {
             excludedPlatformTypes: r,
             includedPlatformTypes: a,
             integrations: o,
-            onCompleteApplication: d
+            onCompleteApplication: d,
+            includeApplicationConnections: c
         } = e;
         (0, l.kBI)(s) || (0, l.mMO)(async () => {
             let {
@@ -33,6 +34,7 @@ class o extends a.A {
                 includedPlatformTypes: a,
                 integrations: o,
                 onCompleteApplication: d,
+                includeApplicationConnections: c,
                 ...n
             })
         })

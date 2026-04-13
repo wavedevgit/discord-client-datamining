@@ -26,8 +26,8 @@ function A(e) {
         onMouseLeave: m,
         className: p,
         ariaHidden: f,
-        avatarDecoration: x,
-        specs: E,
+        avatarDecoration: E,
+        specs: x,
         cornerIconUrl: I,
         cornerIconOffsetX: C,
         cornerIconOffsetY: N,
@@ -35,7 +35,7 @@ function A(e) {
     } = e, S = {
         width: (0, o.FT9)(n),
         height: (0, o.FT9)(n)
-    }, b = (0, l.useId)(), y = E.size * c.Xq, v = null != x && (0, i.jsxs)("svg", {
+    }, b = (0, l.useId)(), y = x.size * c.Xq, v = null != E && (0, i.jsxs)("svg", {
         width: y,
         height: y,
         viewBox: `0 0 ${y} ${y}`,
@@ -80,7 +80,7 @@ function A(e) {
                     rx: e.stroke,
                     fill: "black"
                 })
-            }(E, y, C, N)]
+            }(x, y, C, N)]
         }), (0, i.jsx)("foreignObject", {
             x: 0,
             y: 0,
@@ -89,7 +89,7 @@ function A(e) {
             mask: `url(#${b})`,
             children: (0, i.jsx)("img", {
                 className: h.M,
-                src: x,
+                src: E,
                 alt: " ",
                 "aria-hidden": !0
             })
@@ -130,24 +130,24 @@ function _(e) {
         cornerIconUrl: _,
         cornerIconOffsetX: m = 0,
         cornerIconOffsetY: f = 0
-    } = e, x = (0, u.Kj)(n), E = x.size, I = (0, l.useId)();
+    } = e, E = (0, u.Kj)(n), x = E.size, I = (0, l.useId)();
     return (0, i.jsx)(A, {
         ...e,
         ariaLabel: o,
         ariaHidden: s,
-        specs: x,
+        specs: E,
         children: (0, i.jsxs)("svg", {
-            width: E + m,
-            height: E + f,
-            viewBox: `0 0 ${E+m} ${E+f}`,
+            width: x + m,
+            height: x + f,
+            viewBox: `0 0 ${x+m} ${x+f}`,
             className: a()(h.dK, h.JW),
             "aria-hidden": !0,
             children: [(0, i.jsxs)("mask", {
                 id: I,
                 children: [(0, i.jsx)("circle", {
-                    cx: x.size / 2,
-                    cy: x.size / 2,
-                    r: x.size / 2,
+                    cx: E.size / 2,
+                    cy: E.size / 2,
+                    r: E.size / 2,
                     fill: "white"
                 }), null != _ && function(e, t, n) {
                     let {
@@ -164,12 +164,12 @@ function _(e) {
                         y: r,
                         fill: "black"
                     })
-                }(x, m, f)]
+                }(E, m, f)]
             }), (0, i.jsx)("foreignObject", {
                 x: 0,
                 y: 0,
-                width: x.size,
-                height: x.size,
+                width: E.size,
+                height: E.size,
                 mask: `url(#${I})`,
                 children: (0, i.jsx)(r.d9, {
                     src: t,
@@ -177,7 +177,7 @@ function _(e) {
                     isSpeaking: !1
                 })
             }), null != _ && (0, i.jsx)("foreignObject", {
-                ...p(x, m, f),
+                ...p(E, m, f),
                 mask: `url(#${d.hW.SQUIRCLE})`,
                 children: (0, i.jsx)("img", {
                     src: _,
@@ -199,16 +199,16 @@ function m(e) {
         cornerIconUrl: o,
         cornerIconOffsetX: c = 0,
         cornerIconOffsetY: _ = 0
-    } = e, m = (0, l.useId)(), f = (0, l.useId)(), x = (0, u.Kj)(n), E = x.size + c, I = x.size + _, C = g(x, c, _), N = p(x, c, _);
+    } = e, m = (0, l.useId)(), f = (0, l.useId)(), E = (0, u.Kj)(n), x = E.size + c, I = E.size + _, C = g(E, c, _), N = p(E, c, _);
     return (0, i.jsx)(A, {
         ...e,
         ariaLabel: r,
         ariaHidden: s,
-        specs: x,
+        specs: E,
         children: (0, i.jsxs)("svg", {
-            width: E,
+            width: x,
             height: I,
-            viewBox: `0 0 ${E} ${I}`,
+            viewBox: `0 0 ${x} ${I}`,
             className: a()(h.dK, h.JW),
             "aria-hidden": !0,
             children: [(0, i.jsxs)("mask", {
@@ -216,8 +216,8 @@ function m(e) {
                 children: [(0, i.jsx)("rect", {
                     x: 0,
                     y: 0,
-                    width: x.size,
-                    height: x.size,
+                    width: E.size,
+                    height: E.size,
                     fill: "white",
                     mask: `url(#${d.hW.SQUIRCLE})`
                 }), (0, i.jsx)("circle", {
@@ -237,8 +237,8 @@ function m(e) {
             }), (0, i.jsx)("foreignObject", {
                 x: 0,
                 y: 0,
-                width: x.size,
-                height: x.size,
+                width: E.size,
+                height: E.size,
                 mask: `url(#${m})`,
                 children: (0, i.jsx)("div", {
                     className: h.yA,

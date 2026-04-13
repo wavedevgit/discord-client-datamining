@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(535296),
     g = n(961350),
     f = n(49999),
-    x = n(985018),
-    E = n(8719);
+    E = n(985018),
+    x = n(8719);
 
 function I(e) {
     let {
@@ -44,17 +44,17 @@ function I(e) {
             let e = S.getIconURL(m.iu.SMALL),
                 n = null != e,
                 l = n ? (0, i.jsx)("img", {
-                    className: E.Kk,
+                    className: x.Kk,
                     src: e,
                     alt: "",
                     "aria-hidden": !0
                 }) : (0, i.jsx)(d._xR, {
-                    className: E.Kk
+                    className: x.Kk
                 });
             return {
                 isAppIcon: n,
                 icon: l,
-                text: x.intl.string(x.t["9njbm2"]),
+                text: E.intl.string(E.t["9njbm2"]),
                 renderPopout: () => (0, i.jsx)(p.Vp, {
                     userId: t.id,
                     channel: s,
@@ -68,14 +68,14 @@ function I(e) {
             text: n
         } = v === t.id ? {
             icon: (0, i.jsx)(d.U1X, {
-                className: E.Kk
+                className: x.Kk
             }),
-            text: x.intl.string(x.t.e6S76Q)
+            text: E.intl.string(E.t.e6S76Q)
         } : {
             icon: (0, i.jsx)(d.okO, {
-                className: E.Kk
+                className: x.Kk
             }),
-            text: x.intl.string(x.t["8ZzYIv"])
+            text: E.intl.string(E.t["8ZzYIv"])
         };
         return {
             isAppIcon: !1,
@@ -99,18 +99,18 @@ function I(e) {
         onRequestClose: M,
         renderPopout: P,
         children: () => (0, i.jsxs)("div", {
-            className: E.kL,
+            className: x.kL,
             ref: j,
             children: [(0, i.jsxs)(d.DUT, {
-                className: E.BQ,
+                className: x.BQ,
                 onClick: () => {
                     O(f.i.TAKE_ACTION), C(e => !e)
                 },
                 "aria-expanded": I,
                 "aria-haspopup": "dialog",
                 children: [null != U && (0, i.jsx)("div", {
-                    className: a()(E.zc, {
-                        [E.RT]: D
+                    className: a()(x.zc, {
+                        [x.RT]: D
                     }),
                     children: U
                 }), (0, i.jsx)(d.Text, {

@@ -29,16 +29,16 @@ function p(e) {
         onDeleteEditState: N
     } = e, {
         editStateId: E
-    } = (0, c.O)(), C = (0, l.bG)([o.A], () => o.A.getSubscriptionListing(E)), T = (0, d.gN)(), I = s.useMemo(() => {
+    } = (0, c.O)(), T = (0, l.bG)([o.A], () => o.A.getSubscriptionListing(E)), C = (0, d.gN)(), I = s.useMemo(() => {
         let e = t.filter(e => e.id !== E).map(e => e.subscription_plans[0]?.price);
         return n?.filter(t => !e.includes(t))
-    }, [t, E, n]), b = null == C, v = C?.published ?? !1, S = C?.archived ?? !1;
+    }, [t, E, n]), b = null == T, v = T?.published ?? !1, S = T?.archived ?? !1;
     return (0, i.jsxs)("div", {
         className: A.rf,
         children: [null != f && (0, i.jsx)(a.wx6, {
             type: "critical",
             children: f.getAnyErrorMessage()
-        }), !v && !T && !S && (0, i.jsxs)("div", {
+        }), !v && !C && !S && (0, i.jsxs)("div", {
             className: A.Oy,
             children: [(0, i.jsxs)("div", {
                 children: [(0, i.jsx)(a.Heading, {

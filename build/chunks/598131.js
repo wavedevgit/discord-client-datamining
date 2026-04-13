@@ -51,7 +51,7 @@ var a = n(627968),
     Y = n(964448),
     q = n(652215),
     Z = n(985018),
-    J = n(641131),
+    J = n(190192),
     X = n(687404);
 let ee = ["user_urf", "message_urf", "guild_urf", "media_takedown"];
 

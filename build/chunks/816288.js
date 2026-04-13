@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(363487),
     g = n(267771),
     f = n(828162),
-    x = n(333354),
-    E = n(985018),
+    E = n(967919),
+    x = n(985018),
     I = n(208988);
 let C = l.forwardRef((e, t) => {
     let {
@@ -56,7 +56,7 @@ let C = l.forwardRef((e, t) => {
                 children: [(0, i.jsx)(o.EYj, {
                     className: I.Qq,
                     variant: "text-xs/semibold",
-                    children: E.intl.string(x.default.NI6Ihe)
+                    children: x.intl.string(E.default.NI6Ihe)
                 }), d >= s && (0, i.jsx)(o.EYj, {
                     className: I.Qq,
                     variant: "text-xs/semibold",
@@ -67,9 +67,9 @@ let C = l.forwardRef((e, t) => {
                 children: [(0, i.jsx)(o.EYj, {
                     className: a()(I.Qq, I.ue),
                     variant: "text-xs/semibold",
-                    children: h ? E.intl.formatToPlainString(x.default["Ehpq+7"], {
+                    children: h ? x.intl.formatToPlainString(E.default["Ehpq+7"], {
                         appliedBoostCount: n
-                    }) : E.intl.formatToPlainString(x.default["/rbPDs"], {
+                    }) : x.intl.formatToPlainString(E.default["/rbPDs"], {
                         appliedBoostCount: n,
                         maxBoostCount: s
                     })
@@ -90,11 +90,11 @@ function N(e) {
         withMargin: s
     } = e, r = (0, g.A)(t), o = (0, p.A)(t.id), m = l.useCallback(() => {
         (0, f.A)(t.id, h.A.GUILD_BOOSTING_SIDEBAR_DISPLAY)
-    }, [t.id]), x = (0, d.bG)([_.A], () => _.A.getCountForGuild(t.id) ?? 0);
+    }, [t.id]), E = (0, d.bG)([_.A], () => _.A.getCountForGuild(t.id) ?? 0);
     l.useEffect(() => {
-        x !== t.premiumSubscriberCount && (0, A.u)(t.id, t.premiumSubscriberCount)
-    }, [t.id, x, t.premiumSubscriberCount]);
-    let E = l.useCallback(e => {
+        E !== t.premiumSubscriberCount && (0, A.u)(t.id, t.premiumSubscriberCount)
+    }, [t.id, E, t.premiumSubscriberCount]);
+    let x = l.useCallback(e => {
         o && (0, u.L3)(e, async () => {
             let {
                 default: e
@@ -118,9 +118,9 @@ function N(e) {
         className: a()(I.kL, {
             [I.aF]: s
         }),
-        onContextMenu: E,
+        onContextMenu: x,
         children: (0, i.jsx)(C, {
-            appliedBoostCount: x,
+            appliedBoostCount: E,
             maxBoostCount: r,
             premiumSubscriberCount: t.premiumSubscriberCount
         })

@@ -1,6 +1,6 @@
 /** chunk id: 969756 params = (module,exports,require) **/
 n.d(t, {
-    A: () => j
+    A: () => N
 });
 var i = n(627968),
     l = n(64700),
@@ -21,7 +21,7 @@ var i = n(627968),
     f = n(985018),
     _ = n(344161);
 
-function N(e) {
+function j(e) {
     let {
         applicationId: t,
         channels: n
@@ -51,7 +51,7 @@ function N(e) {
     })
 }
 
-function j(e) {
+function N(e) {
     let {
         guild: t
     } = e, n = (0, g.A)(t.id), s = a().groupBy(n, e => e.linkedLobby?.application_id), d = Object.keys(s);
@@ -65,7 +65,7 @@ function j(e) {
             })
         }), (0, i.jsx)(r.cGx, {
             className: _.zN
-        }), d.map(e => (0, i.jsx)(N, {
+        }), d.map(e => (0, i.jsx)(j, {
             applicationId: e,
             channels: s[e]
         }, e))]

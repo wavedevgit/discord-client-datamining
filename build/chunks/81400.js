@@ -1,7 +1,7 @@
 /** chunk id: 81400 params = (module,exports,require) **/
 n.d(e, {
-    EC: () => h,
-    j8: () => O,
+    EC: () => O,
+    j8: () => h,
     uZ: () => p
 }), n(938796);
 var i = n(64700),
@@ -29,7 +29,7 @@ function p(t) {
     }, [t])
 }
 
-function h(t) {
+function O(t) {
     return (0, l.cf)([c.default, d.Ay, _.A, u.A], () => {
         let e = {
                 nick: void 0,
@@ -48,7 +48,7 @@ function h(t) {
     }, [t])
 }
 
-function O(t) {
+function h(t) {
     let {
         guildId: e,
         scrollPosition: d,

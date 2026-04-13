@@ -7,28 +7,28 @@ n.d(t, {
 var i = n(64700),
     r = n(735438),
     s = n(311907),
-    l = n(21119),
-    a = n(907459),
-    c = n(734057),
-    o = n(287809),
+    a = n(21119),
+    l = n(907459),
+    o = n(734057),
+    c = n(287809),
     u = n(480012),
     d = n(763754),
     _ = n(985018);
 
 function E(e) {
-    let t = (0, s.yK)([o.default], () => e.call?.participants != null ? e.call.participants.map(e => o.default.getUser(e)).filter(e => null != e).filter(t => t.id !== e.author.id) : [], [e.author.id, e.call]),
-        n = (0, s.bG)([l.A], () => l.A.getUserAffinitiesMap(), []);
-    return i.useMemo(() => (0, a.L)(t, n, "VoiceSessionUtils - participants"), [t, n])
+    let t = (0, s.yK)([c.default], () => e.call?.participants != null ? e.call.participants.map(e => c.default.getUser(e)).filter(e => null != e).filter(t => t.id !== e.author.id) : [], [e.author.id, e.call]),
+        n = (0, s.bG)([a.A], () => a.A.getUserAffinitiesMap(), []);
+    return i.useMemo(() => (0, l.L)(t, n, "VoiceSessionUtils - participants"), [t, n])
 }
 
 function A(e) {
-    let t, n, i = c.A.getChannel(e.channel_id),
+    let t, n, i = o.A.getChannel(e.channel_id),
         s = (0, u.A)(e),
         E = (0, d.p_)(e),
         A = (t = e.call?.participants.reduce((t, n) => {
-            let i = o.default.getUser(n);
+            let i = c.default.getUser(n);
             return null == i || i.id === e.author.id ? t : [...t, i]
-        }, []) ?? [], n = l.A.getUserAffinitiesMap(), (0, a.L)(t, n, "VoiceSessionUtils - participants")).map(e => ({
+        }, []) ?? [], n = a.A.getUserAffinitiesMap(), (0, l.L)(t, n, "VoiceSessionUtils - participants")).map(e => ({
             user: e,
             messageAuthor: (0, d.FT)(e, i)
         }));

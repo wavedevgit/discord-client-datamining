@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(383501),
     g = n(222823),
     f = n(309010),
-    x = n(287809),
-    E = n(607567),
+    E = n(287809),
+    x = n(607567),
     I = n(531685),
     C = n(941971),
     N = n(375855),
@@ -127,13 +127,13 @@ class O extends l.PureComponent {
     getChannelIcon() {
         let {
             channel: e
-        } = this.props, t = e.type === b.rbe.DM ? x.default.getUser(e.getRecipientId()) : null;
+        } = this.props, t = e.type === b.rbe.DM ? E.default.getUser(e.getRecipientId()) : null;
         return null != t ? t.getAvatarURL(void 0, 48, !1) : (0, h.Y)(e)
     }
     handleContextMenu = e => {
         let {
             channel: t
-        } = this.props, l = t.type === b.rbe.DM ? x.default.getUser(t.getRecipientId()) : null;
+        } = this.props, l = t.type === b.rbe.DM ? E.default.getUser(t.getRecipientId()) : null;
         null != l ? (0, d.L3)(e, async () => {
             let {
                 default: e
@@ -171,7 +171,7 @@ class O extends l.PureComponent {
         } = this.props, {
             hovered: p,
             animating: g
-        } = this.state, f = e.isMultiUserDM() && null == e.icon, x = () => (0, i.jsx)(o.jlP, {
+        } = this.state, f = e.isMultiUserDM() && null == e.icon, E = () => (0, i.jsx)(o.jlP, {
             to: b.BVt.CHANNEL(b.ME, e.id),
             onMouseEnter: () => this.setState({
                 hovered: !0
@@ -218,7 +218,7 @@ class O extends l.PureComponent {
                         lowerBadgeSize: {
                             width: (0, o.o6S)(l)
                         },
-                        children: x()
+                        children: E()
                     })
                 })]
             })
@@ -232,7 +232,7 @@ let L = l.forwardRef(function(e, t) {
         d = (0, r.bG)([p.A], () => p.A.getChannelId(), []),
         h = (0, r.bG)([c.A], () => c.A.getMode(n), [n]),
         _ = (0, r.bG)([m.A], () => m.A.getAllApplicationStreamsForChannel(n).length > 0),
-        x = (0, r.bG)([E.Ay], () => E.Ay.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
+        E = (0, r.bG)([x.Ay], () => x.Ay.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
         I = (0, r.bG)([f.A], () => f.A.getChannelId(), []),
         C = (0, r.bG)([g.Ay], () => g.Ay.getMentionCount(n), [n]),
         N = d === n,
@@ -242,7 +242,7 @@ let L = l.forwardRef(function(e, t) {
         } = (0, u.A)(n),
         y = !1,
         v = !1;
-    (N || x) && (y = h === b._Of.VOICE, v = h === b._Of.VIDEO);
+    (N || E) && (y = h === b._Of.VOICE, v = h === b._Of.VIDEO);
     let j = (0, o.rdh)(o.LU0.modules.guildbar.AVATAR_SIZE);
     return (0, i.jsx)(O, {
         ...e,

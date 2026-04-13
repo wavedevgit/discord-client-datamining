@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(721932),
     g = n(35092),
     f = n(183555),
-    x = n(535089),
-    E = n(946356),
+    E = n(535089),
+    x = n(946356),
     I = n(173678),
     C = n(524380),
     N = n(652215),
@@ -108,7 +108,7 @@ function y(e) {
                 productLines: l
             }
         }, [t, n, O, y, v, j, P, k, D]),
-        H = (0, x.A)({
+        H = (0, E.A)({
             wishlistId: v ?? null,
             onAction: G,
             productLines: V
@@ -138,7 +138,7 @@ function y(e) {
         onViewWishlist: y
     }))), (0, i.jsx)("section", {
         "aria-labelledby": U,
-        children: (0, i.jsxs)(E.A.Overlay, {
+        children: (0, i.jsxs)(x.A.Overlay, {
             ref: H,
             className: b.kL,
             children: [(0, i.jsxs)("div", {

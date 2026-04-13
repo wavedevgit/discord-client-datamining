@@ -208,7 +208,7 @@ let t = new URL(s(235991), s.b),
             wasm: $
         },
         elixir: {
-            module: () => s.e("93762").then(s.bind(s, 210740)),
+            module: () => s.e("71381").then(s.bind(s, 210740)),
             wasm: q
         },
         elm: {

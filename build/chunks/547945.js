@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(151282),
     g = n(199160),
     f = n(551640),
-    x = n(970244),
-    E = n(253932),
+    E = n(970244),
+    x = n(253932),
     I = n(383233),
     C = n(734057),
     N = n(287809),
@@ -155,12 +155,12 @@ let D = l.memo(function(e) {
         }
     }(t.state), A = l.useCallback(() => {
         (0, p.mk)(t.scheduledMessageId).then(() => {
-            (0, x.Re)()
+            (0, E.Re)()
         }).catch(e => {
-            (0, x.kM)(e.message)
+            (0, E.kM)(e.message)
         })
     }, [t.scheduledMessageId]), m = l.useCallback(() => {
-        (0, x.CI)({
+        (0, E.CI)({
             scheduledMessage: t
         })
     }, [t]);
@@ -183,7 +183,7 @@ let D = l.memo(function(e) {
                     message: r,
                     channel: n,
                     className: j.iU,
-                    compact: E.hH.getSetting(),
+                    compact: x.hH.getSetting(),
                     animateAvatar: !1,
                     focusProps: R
                 }, r.id), (0, i.jsxs)(c.e2v, {

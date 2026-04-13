@@ -20,30 +20,30 @@ var l = n(284009),
     N = n(216678),
     R = n(652215);
 async function p(t) {
-    var e, n, l, p, h;
-    let O, m, {
-            applicationId: C,
+    var e, n, l, p, O;
+    let h, C, {
+            applicationId: m,
             skuId: g,
             initialPlanId: S,
             analyticsLocations: y,
-            analyticsLocationObject: P
+            analyticsLocationObject: M
         } = t,
-        M = A.A.get(g);
-    if (null == M) {
-        let t = (await (0, a.JI)(C)).find(t => t.sku.id === g);
-        r()(null != t, "Could not find store listing for sku"), t.sku.type === R.Puh.SUBSCRIPTION_GROUP && await (0, _.vz)(C, t.id)
+        P = A.A.get(g);
+    if (null == P) {
+        let t = (await (0, a.JI)(m)).find(t => t.sku.id === g);
+        r()(null != t, "Could not find store listing for sku"), t.sku.type === R.Puh.SUBSCRIPTION_GROUP && await (0, _.vz)(m, t.id)
     }
-    M = M ?? A.A.get(g), r()(null != M && M.applicationId === C, "SKU must belong to application"), M.type !== R.Puh.SUBSCRIPTION || (0, d.B)([M.id]) || await (0, o.ur)(M.id);
-    let U = null == (m = null != (O = (0, c.LU)({
-        applicationId: C
-    })) ? E.A.getWindow(O) : void 0) || m.closed ? s.SYi : s.KX8;
-    if (M.type !== R.Puh.SUBSCRIPTION) return new Promise((t, e) => {
+    P = P ?? A.A.get(g), r()(null != P && P.applicationId === m, "SKU must belong to application"), P.type !== R.Puh.SUBSCRIPTION || (0, d.B)([P.id]) || await (0, o.ur)(P.id);
+    let x = null == (C = null != (h = (0, c.LU)({
+        applicationId: m
+    })) ? E.A.getWindow(h) : void 0) || C.closed ? s.SYi : s.KX8;
+    if (P.type !== R.Puh.SUBSCRIPTION) return new Promise((t, e) => {
         (0, N.A)({
-            applicationId: C,
+            applicationId: m,
             skuId: g,
-            analyticsLocationObject: P,
+            analyticsLocationObject: M,
             analyticsLocations: y,
-            contextKey: U,
+            contextKey: x,
             onComplete: e => {
                 t(e?.entitlements ?? [])
             },
@@ -53,12 +53,12 @@ async function p(t) {
             checkoutFlow: u.CL.PREMIUM_APPS_OTP_CHECKOUT
         })
     });
-    await (e = C, n = g, l = S, p = P, h = y, (0, I.l)({
+    await (e = m, n = g, l = S, p = M, O = y, (0, I.l)({
         applicationId: e,
         skuId: n,
         initialPlanId: l,
         analyticsLocationObject: p,
-        analyticsLocations: h,
+        analyticsLocations: O,
         renderHeader: (t, e, n) => (0, i.jsx)(T.fs, {
             step: n,
             onClose: () => e(!1)

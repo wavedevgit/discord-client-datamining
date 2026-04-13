@@ -19,8 +19,8 @@ var s = n(503698),
     p = n(652215),
     g = n(53516),
     f = n(985018),
-    x = n(609657),
-    E = n(442078),
+    E = n(609657),
+    x = n(442078),
     I = ((i = {})[i.VOICE = 0] = "VOICE", i);
 let C = e => {
     let {
@@ -39,14 +39,14 @@ let C = e => {
     }), j = f.intl.string(f.t.BddRzS)) : S && (v = f.intl.formatToPlainString(f.t.sncw41, {
         min: p.$8o.ACCOUNT_AGE
     }), j = f.intl.string(f.t.BddRzS))), null == y || null == v) ? null : (0, l.jsxs)(d.lGe, {
-        className: a()(E.popover, x.kL),
+        className: a()(x.popover, E.kL),
         "aria-labelledby": I,
         children: [(0, l.jsx)("img", {
             alt: "",
-            className: x.Sl,
+            className: E.Sl,
             src: n(303528)
         }), (0, l.jsxs)("div", {
-            className: x.Qs,
+            className: E.Qs,
             children: [(0, l.jsx)(d.Heading, {
                 variant: "heading-md/semibold",
                 id: I,
@@ -56,10 +56,10 @@ let C = e => {
                 variant: "text-sm/normal",
                 children: v
             }), (0, l.jsxs)("div", {
-                className: x.UD,
+                className: E.UD,
                 children: [null != j ? (0, l.jsx)("div", {
                     "data-button-hoisted-classname-wrapper": !0,
-                    className: x.FS,
+                    className: E.FS,
                     children: (0, l.jsx)(d.Button, {
                         variant: "primary",
                         text: j,

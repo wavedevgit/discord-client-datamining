@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(287245),
     g = n(615658),
     f = n(592044),
-    x = n(100449),
-    E = n(588703),
+    E = n(100449),
+    x = n(732396),
     I = n(985018),
     C = n(181039);
 let N = e => {
@@ -47,7 +47,7 @@ let N = e => {
         }), [V, H] = l.useState({
             x: 0,
             y: 0
-        }), [F, W] = l.useState(!1), K = l.useRef(null), [Y, z] = l.useState(null), q = (0, c.w)(e => {
+        }), [F, W] = l.useState(!1), K = l.useRef(null), [Y, z] = l.useState(null), X = (0, c.w)(e => {
             let {
                 contentRect: t,
                 target: n
@@ -64,9 +64,9 @@ let N = e => {
                     y: e.top - i.top
                 })
             }
-        }), X = l.useCallback(e => {
+        }), q = l.useCallback(e => {
             let t = Math.max(e, y),
-                n = q.current?.getBoundingClientRect();
+                n = X.current?.getBoundingClientRect();
             if (null == n) return;
             let i = {
                     x: 1156,
@@ -84,12 +84,12 @@ let N = e => {
                 x: d,
                 y: c
             })
-        }, [q, y]);
+        }, [X, y]);
         l.useEffect(() => {
-            X(O)
-        }, [O, X]);
+            q(O)
+        }, [O, q]);
         let $ = l.useCallback(e => {
-            let t = q.current?.getBoundingClientRect();
+            let t = X.current?.getBoundingClientRect();
             if (null == t) return;
             let n = t.height / j,
                 i = t.width / j,
@@ -102,20 +102,20 @@ let N = e => {
                 r = l.y - n < -1536,
                 o = l.x - i < -2180;
             r || s || a || o || D(e)
-        }, [q, j]);
+        }, [X, j]);
         return (0, i.jsx)(o.vN3, {
             children: (0, i.jsxs)("div", {
-                ref: q,
+                ref: X,
                 className: a()(C.km, s),
                 onClick: () => {
                     k(0)
                 },
                 onMouseDown: () => G(Date.now()),
                 onMouseUp: e => {
-                    if (null != q.current) {
+                    if (null != X.current) {
                         if (P < 2) {
                             let n = Date.now(),
-                                i = q.current.getBoundingClientRect(),
+                                i = X.current.getBoundingClientRect(),
                                 l = {
                                     x: (e.pageX - i.x - M.x) / j,
                                     y: (e.pageY - i.y - M.y) / j
@@ -160,7 +160,7 @@ let N = e => {
                             ref: K,
                             children: (0, i.jsx)(o.K0, {
                                 variant: "icon-only",
-                                "aria-label": I.intl.string(E.default.W7TAH4),
+                                "aria-label": I.intl.string(x.default.W7TAH4),
                                 icon: o.T7G,
                                 disabled: n,
                                 onClick: e => {
@@ -169,7 +169,7 @@ let N = e => {
                             })
                         }), (0, i.jsx)(o.K0, {
                             variant: "icon-only",
-                            "aria-label": I.intl.string(E.default.O7EDNk),
+                            "aria-label": I.intl.string(x.default.O7EDNk),
                             icon: S ? o._mZ : o.oyn,
                             disabled: n,
                             onClick: e => {
@@ -190,7 +190,7 @@ let N = e => {
                             icon: o.V0_,
                             disabled: n,
                             onClick: e => {
-                                e.preventDefault(), e.stopPropagation(), X(j - .05)
+                                e.preventDefault(), e.stopPropagation(), q(j - .05)
                             }
                         }), (0, i.jsx)(o.K0, {
                             variant: "icon-only",
@@ -198,11 +198,11 @@ let N = e => {
                             icon: o.r1u,
                             disabled: n,
                             onClick: e => {
-                                e.preventDefault(), e.stopPropagation(), X(j + .05)
+                                e.preventDefault(), e.stopPropagation(), q(j + .05)
                             }
                         })]
                     })]
-                }), (0, i.jsx)(x.A, {
+                }), (0, i.jsx)(E.A, {
                     channel: t,
                     participants: r
                 }), (0, i.jsx)(f.A, {

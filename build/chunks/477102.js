@@ -894,7 +894,7 @@ let _ = {
     GuildVerificationLevelModal: async () => {
         let {
             default: e
-        } = await n.e("70232").then(n.bind(n, 535384)), {
+        } = await n.e("70232").then(n.bind(n, 313003)), {
             dangerouslyConstructGuildRecordFromUntypedObject: t
         } = await Promise.resolve().then(n.bind(n, 860689)), i = t({
             id: "123456789",
@@ -944,7 +944,7 @@ let _ = {
     GuildVerificationLevelModalCommunity: async () => {
         let {
             default: e
-        } = await n.e("70232").then(n.bind(n, 535384)), {
+        } = await n.e("70232").then(n.bind(n, 313003)), {
             dangerouslyConstructGuildRecordFromUntypedObject: t
         } = await Promise.resolve().then(n.bind(n, 860689)), {
             GuildFeatures: i

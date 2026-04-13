@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(203982),
     g = n(43189),
     f = n(652215),
-    x = n(49999),
-    E = n(985018),
+    E = n(49999),
+    x = n(985018),
     I = n(200393);
 let C = function(e) {
     let {
@@ -29,7 +29,7 @@ let C = function(e) {
     } = e, N = (0, d.Ay)(t);
     l.useEffect(() => {
         (0, A.Dr)(s.M.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK, {
-            dismissAction: x.i.AUTO
+            dismissAction: E.i.AUTO
         })
     }, []);
     let T = l.useCallback(() => {
@@ -37,7 +37,7 @@ let C = function(e) {
         }, [t.id]),
         S = (0, i.jsx)(_.Ay.Icon, {
             icon: a.PGe,
-            tooltip: E.intl.string(E.t.cpT0Cq),
+            tooltip: x.intl.string(x.t.cpT0Cq),
             onClick: T
         });
     return (0, i.jsxs)(u.A, {
@@ -49,10 +49,10 @@ let C = function(e) {
             draftType: m.C.ChannelMessage
         }), (0, i.jsxs)(_.Ay, {
             toolbar: S,
-            "aria-label": E.intl.string(E.t.BIYAqa),
+            "aria-label": x.intl.string(x.t.BIYAqa),
             children: [(0, i.jsx)(_.Ay.ChannelIcon, {
                 icon: a.oyn,
-                "aria-label": E.intl.string(E.t.Kx5kCN)
+                "aria-label": x.intl.string(x.t.Kx5kCN)
             }), (0, i.jsx)(_.Ay.Title, {
                 children: N
             })]

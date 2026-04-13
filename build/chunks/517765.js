@@ -1,6 +1,6 @@
 /** chunk id: 517765 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => j
 }), n(321073);
 var i = n(627968),
     l = n(64700),
@@ -21,32 +21,32 @@ var i = n(627968),
     f = n(985018),
     _ = n(30220);
 
-function N(e) {
+function j(e) {
     let {
         name: t,
         icon: n,
         imageSrc: s,
-        iconBackgroundColor: N,
-        iconClassName: j,
+        iconBackgroundColor: j,
+        iconClassName: N,
         iconWrapperClassName: v,
         details: T,
         integration: C,
-        buttonText: I,
-        buttonDisabled: E,
+        buttonText: E,
+        buttonDisabled: I,
         hasNextSection: S,
         onButtonClick: y,
         guildId: O,
         isScrolling: w,
-        canShowMigrationTooltip: R,
-        trailing: k
-    } = e, [L, M] = l.useState(!1), G = R && !w && !L && void 0 !== O && null != C, U = l.useRef(null), D = l.useRef(null), P = null == I || null == y ? null : S ? (0, i.jsxs)(c.BJc, {
+        canShowMigrationTooltip: k,
+        trailing: R
+    } = e, [L, M] = l.useState(!1), G = k && !w && !L && void 0 !== O && null != C, D = l.useRef(null), P = l.useRef(null), U = null == E || null == y ? null : S ? (0, i.jsxs)(c.BJc, {
         direction: "horizontal",
         fullWidth: !1,
         align: "center",
-        ref: D,
+        ref: P,
         children: [(0, i.jsx)(c.Text, {
             variant: "text-sm/normal",
-            children: I
+            children: E
         }), (0, i.jsx)(c._BQ, {
             size: "custom",
             color: "currentColor",
@@ -56,10 +56,10 @@ function N(e) {
         })]
     }) : (0, i.jsx)(c.Button, {
         size: "sm",
-        buttonRef: U,
-        disabled: E,
+        buttonRef: D,
+        disabled: I,
         onClick: y,
-        text: I
+        text: E
     });
     l.useEffect(() => {
         G && h.default.track(b.HAw.COMMANDS_MIGRATION_TOOLTIP_VIEWED, {
@@ -68,8 +68,8 @@ function N(e) {
             location: "overview"
         })
     }, [O, C?.application.id, G]);
-    let B = G && (null != D.current || null != U.current) ? (0, i.jsx)(d.AM, {
-            targetElementRef: S ? D : U,
+    let B = G && (null != P.current || null != D.current) ? (0, i.jsx)(d.AM, {
+            targetElementRef: S ? P : D,
             title: f.intl.string(f.t.ufFDiC),
             body: f.intl.string(f.t.TyMJwC),
             onRequestClose: () => {
@@ -91,8 +91,8 @@ function N(e) {
                 name: t,
                 icon: n,
                 imageSrc: s,
-                iconBackgroundColor: N,
-                iconClassName: j,
+                iconBackgroundColor: j,
+                iconClassName: N,
                 iconWrapperClassName: v,
                 details: T,
                 isPremium: W.length > 0,
@@ -128,11 +128,11 @@ function N(e) {
                         })
                     })
                 }(C, V)
-            }), B, P, k]
+            }), B, U, R]
         });
     return S ? (0, i.jsx)(c.DUT, {
         onClick: () => {
-            R && null != O && null != C && A.A.dismissOverviewTooltip(O, C.integration), y?.()
+            k && null != O && null != C && A.A.dismissOverviewTooltip(O, C.integration), y?.()
         },
         children: (0, i.jsx)(c.ZpM, {
             editable: !0,

@@ -1,23 +1,23 @@
 /** chunk id: 441412 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => c
 });
 var i = n(627968);
 n(64700);
 var r = n(397927),
     s = n(843472),
-    l = n(763754),
-    a = n(888675),
-    c = n(985018);
+    a = n(763754),
+    l = n(888675),
+    o = n(985018);
 
-function o(e) {
+function c(e) {
     let {
         message: t,
         usernameHook: n,
-        onClickPins: o,
+        onClickPins: c,
         compact: u
-    } = e, d = (0, l.Ay)(t), _ = d.nick, E = n(d), A = () => {
+    } = e, d = (0, a.Ay)(t), _ = d.nick, E = n(d), A = () => {
         if (null == t.messageReference) return;
         let {
             channel_id: e,
@@ -34,26 +34,26 @@ function o(e) {
             color: "currentColor"
         })
     };
-    return (0, i.jsx)(a.A, {
+    return (0, i.jsx)(l.A, {
         ...m,
         timestamp: t.timestamp,
         compact: u,
-        children: null != t.messageReference ? null == o ? c.intl.format(c.t.lD5tup, {
+        children: null != t.messageReference ? null == c ? o.intl.format(o.t.lD5tup, {
             usernameHook: E,
             username: _,
             messageOnClick: A
-        }) : c.intl.format(c.t.yIDvPL, {
+        }) : o.intl.format(o.t.yIDvPL, {
             usernameHook: E,
             username: _,
-            pinsActionOnClick: o,
+            pinsActionOnClick: c,
             messageOnClick: A
-        }) : null == o ? c.intl.format(c.t.vfkjqx, {
+        }) : null == c ? o.intl.format(o.t.vfkjqx, {
             usernameHook: E,
             username: _
-        }) : c.intl.format(c.t.R7vZGZ, {
+        }) : o.intl.format(o.t.R7vZGZ, {
             usernameHook: E,
             username: _,
-            pinsActionOnClick: o
+            pinsActionOnClick: c
         })
     })
 }

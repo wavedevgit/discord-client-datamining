@@ -25,14 +25,14 @@ function h(e) {
         background: p,
         showUnread: g = !1,
         ref: f,
-        ...x
-    } = e, E = (0, a.rm)(t), I = (0, r.O)(A) ?? "";
+        ...E
+    } = e, x = (0, a.rm)(t), I = (0, r.O)(A) ?? "";
     return (0, i.jsx)("li", {
         ref: f,
         children: (0, i.jsxs)(o.sqX, {
-            ...x,
+            ...E,
             buttonProps: {
-                ...E,
+                ...x,
                 id: t,
                 role: "button"
             },
@@ -45,7 +45,7 @@ function h(e) {
                     right: 4
                 }
             },
-            onContextMenu: null != x.onContextMenu ? x.onContextMenu : e => {
+            onContextMenu: null != E.onContextMenu ? E.onContextMenu : e => {
                 e.stopPropagation()
             },
             className: s()(c.fx, u.iE, {

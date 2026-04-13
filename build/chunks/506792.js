@@ -1,6 +1,6 @@
 /** chunk id: 506792 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => E
 });
 var i = n(627968),
     l = n(64700),
@@ -18,13 +18,13 @@ var i = n(627968),
     p = n(652215),
     g = n(790782),
     f = n(928409);
-let x = (0, d.a)(function(e) {
+let E = (0, d.a)(function(e) {
     let {
         guild: t,
         selectedChannelId: s,
         position: d,
-        disableManageChannels: x,
-        sorting: E,
+        disableManageChannels: E,
+        sorting: x,
         sortingType: I,
         sortingPosition: C,
         connectChannelDragSource: N,
@@ -46,7 +46,7 @@ let x = (0, d.a)(function(e) {
     }, [b]);
     if (null == b) return null;
     let L = (0, _.O6)(d, C),
-        M = (0, _.h$)(b, E, I),
+        M = (0, _.h$)(b, x, I),
         D = (0, i.jsx)("div", {
             className: a()(L, {
                 [f.r9]: M,
@@ -66,7 +66,7 @@ let x = (0, d.a)(function(e) {
                     tabIndex: S
                 }), (0, i.jsx)(_.Jd, {
                     channel: b,
-                    disableManageChannels: x,
+                    disableManageChannels: E,
                     tabIndex: S
                 })]
             })

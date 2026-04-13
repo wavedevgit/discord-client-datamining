@@ -1,31 +1,31 @@
 /** chunk id: 302959 params = (module,exports,require) **/
-i.d(t, {
-    A: () => C,
+n.d(t, {
+    A: () => v,
     M: () => N
 });
-var n = i(627968),
-    a = i(64700),
-    l = i(311907),
-    s = i(833349),
-    r = i(153331),
-    c = i(592182),
-    o = i(587895),
-    d = i(806246),
-    u = i(890330),
-    p = i(172710),
-    m = i(616356),
-    _ = i(734057),
-    h = i(71393),
-    g = i(977997),
-    A = i(954571),
-    f = i(821589),
-    x = i(652215),
-    b = i(78016);
+var i = n(627968),
+    a = n(64700),
+    l = n(311907),
+    s = n(833349),
+    r = n(153331),
+    c = n(592182),
+    o = n(587895),
+    d = n(806246),
+    u = n(890330),
+    p = n(172710),
+    m = n(616356),
+    h = n(734057),
+    _ = n(71393),
+    g = n(977997),
+    A = n(954571),
+    f = n(821589),
+    x = n(652215),
+    I = n(78016);
 
-function I(e) {
+function b(e) {
     let {
         type: t,
-        source: i,
+        source: n,
         activity: a,
         applicationStream: l,
         user: s,
@@ -33,10 +33,10 @@ function I(e) {
         channelId: o,
         onAction: d
     } = e;
-    return (0, n.jsx)(c.A, {
-        className: (0, f.t)(b, "actions", t),
+    return (0, i.jsx)(c.A, {
+        className: (0, f.t)(I, "actions", t),
         type: t,
-        source: i,
+        source: n,
         activity: a,
         applicationStream: l,
         user: s,
@@ -47,16 +47,16 @@ function I(e) {
     })
 }
 let N = r.A.Types,
-    C = function(e) {
+    v = function(e) {
         let {
             activity: t,
-            user: i,
+            user: n,
             useStoreStream: c = !0,
             showActions: f = !0,
-            hideHeader: b = !1,
+            hideHeader: I = !1,
             showChannelDetails: N = !1,
-            ...C
-        } = e, v = (0, l.bG)([g.A, _.A], () => _.A.getChannel(g.A.getVoiceStateForUser(i.id)?.channelId)), y = (0, u.v)("UserActivityContainer", v), T = (0, l.bG)([m.A], () => c ? m.A.getAnyStreamForUser(i.id) : null), E = t?.type === x.$pd.HANG_STATUS && y ? v : null, S = (0, l.bG)([h.A, g.A, _.A], () => (0, s.A)(t, x.jUm.EMBEDDED) ? h.A.getGuild(_.A.getChannel(g.A.getVoiceStateForSession(i.id, t?.session_id)?.channelId)?.getGuildId()) : null != E ? h.A.getGuild(E.getGuildId()) : null), j = (0, l.bG)([h.A], () => null != T ? h.A.getGuild(T.guildId) : null), M = (0, l.bG)([o.A], () => {
+            ...v
+        } = e, C = (0, l.bG)([g.A, h.A], () => h.A.getChannel(g.A.getVoiceStateForUser(n.id)?.channelId)), y = (0, u.v)("UserActivityContainer", C), E = (0, l.bG)([m.A], () => c ? m.A.getAnyStreamForUser(n.id) : null), T = t?.type === x.$pd.HANG_STATUS && y ? C : null, S = (0, l.bG)([_.A, g.A, h.A], () => (0, s.A)(t, x.jUm.EMBEDDED) ? _.A.getGuild(h.A.getChannel(g.A.getVoiceStateForSession(n.id, t?.session_id)?.channelId)?.getGuildId()) : null != T ? _.A.getGuild(T.getGuildId()) : null), j = (0, l.bG)([_.A], () => null != E ? _.A.getGuild(E.guildId) : null), M = (0, l.bG)([o.A], () => {
             if (null != t)
                 if (null != t.application_id) return o.A.getApplication(t.application_id);
                 else return o.A.getApplicationByName(t.name);
@@ -65,23 +65,23 @@ let N = r.A.Types,
         return (a.useEffect(() => {
             t?.type === x.$pd.HANG_STATUS && y && A.default.track(x.HAw.VIEW_HANG_STATUS, {
                 source: "UserActivity",
-                other_user_id: i.id,
-                ...(0, d.A)(E?.id)
+                other_user_id: n.id,
+                ...(0, d.A)(T?.id)
             })
-        }, [t?.type, y, E, i.id]), t?.type !== x.$pd.HANG_STATUS || y) ? (0, n.jsx)(r.A, {
-            ...C,
+        }, [t?.type, y, T, n.id]), t?.type !== x.$pd.HANG_STATUS || y) ? (0, i.jsx)(r.A, {
+            ...v,
             activity: t,
-            user: i,
+            user: n,
             application: M,
-            hideHeader: b,
+            hideHeader: I,
             activityGuild: S ?? j,
             showChannelDetails: N,
-            channel: N ? v : void 0,
-            renderActions: f ? () => (0, n.jsx)(I, {
-                ...C,
-                applicationStream: T,
+            channel: N ? C : void 0,
+            renderActions: f ? () => (0, i.jsx)(b, {
+                ...v,
+                applicationStream: E,
                 activity: t,
-                user: i
+                user: n
             }) : null,
             onOpenSpotifyTrack: p.Mp,
             onOpenSpotifyArtist: p.mN,

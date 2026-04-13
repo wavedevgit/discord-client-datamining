@@ -15,14 +15,14 @@ var i = n(627968),
     A = n(652215),
     _ = n(486974),
     m = n(985018),
-    p = n(641131);
+    p = n(190192);
 
 function g(e) {
     let {
         channel: t
     } = e, n = l.useContext(h.AnalyticsContext), g = (0, d.aL)(), f = m.intl.string(p.default["Beo/7v"]), {
-        firstMessage: x
-    } = (0, a.OA)(t), E = x?.messageSnapshots?.[0], I = E?.moderatorReport?.reported_user_id;
+        firstMessage: E
+    } = (0, a.OA)(t), x = E?.messageSnapshots?.[0], I = x?.moderatorReport?.reported_user_id;
     return t.isModeratorReportChannel() && null != I ? (0, i.jsx)(o.Ay.Icon, {
         onClick: () => {
             (0, u.iN)(t.id), (0, c.A)(), (0, r.z)(t.guild_id, I, t.id, {

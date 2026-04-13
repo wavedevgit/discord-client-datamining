@@ -23,24 +23,24 @@ var i = n(627968),
     j = n(652215),
     N = n(985018),
     E = n(702735);
-let C = "guild-role-subscription-tier-template-selector";
+let T = "guild-role-subscription-tier-template-selector";
 
-function T(e) {
+function C(e) {
     let {
         guildId: t,
         priceTiers: l,
         groupListingId: h
     } = e, f = (0, x.cY)(h), {
-        editStateIds: T,
+        editStateIds: C,
         addNewEditStateId: I,
         addNewEditStateFromTemplate: b,
         removeEditStateId: v
     } = A.d0(h, t, {
         includeSoftDeleted: !0
     }), [S, y] = s.useState({}), R = s.useMemo(() => {
-        let e = T.map(e => S[e] ?? e);
+        let e = C.map(e => S[e] ?? e);
         return (0, a.uniq)(e)
-    }, [T, S]), O = (0, g._Y)(t), G = s.useCallback(() => {
+    }, [C, S]), O = (0, g._Y)(t), G = s.useCallback(() => {
         O ? (0, u.mMO)(async () => {
             let {
                 default: e
@@ -53,11 +53,11 @@ function T(e) {
                 priceTiers: l
             })
         }, {
-            modalKey: C
+            modalKey: T
         }) : I()
     }, [t, b, I, l, O]), L = A.Zw(R), D = s.useCallback(() => R.forEach(A.Ts), [R]), M = (0, _.gN)(), k = (0, o.bG)([m.A], () => m.A.getProps().subsection);
     return s.useEffect(() => (k === j.nd0.ROLE_SUBSCRIPTION_TIER_TEMPLATE && G(), () => {
-        (0, u.OoC)(C)
+        (0, u.OoC)(T)
     }), [k, G]), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
             className: E.B2,
@@ -125,7 +125,7 @@ function I(e) {
         description: N.intl.format(N.t.nHRSvM, {
             maxTiers: r
         }),
-        children: (0, i.jsx)(T, {
+        children: (0, i.jsx)(C, {
             priceTiers: n,
             guildId: t,
             groupListingId: a[0]

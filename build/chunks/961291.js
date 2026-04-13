@@ -3,8 +3,8 @@ n.d(t, {
     Pm: () => C,
     rS: () => I,
     rr: () => f,
-    sW: () => x,
-    yI: () => E
+    sW: () => E,
+    yI: () => x
 });
 var i = n(827734),
     l = n(322387),
@@ -32,7 +32,7 @@ let f = {
         ADD_FRIEND: a,
         FIRST_MESSAGE: p
     },
-    x = e => {
+    E = e => {
         switch (e.type) {
             case "lifecycle_item":
                 switch (e.item_enum) {
@@ -60,7 +60,7 @@ let f = {
                 return "TOP_MESSAGES"
         }
     },
-    E = e => "icHighlight" === e ? "TOP_MESSAGES" : "NOTIFICATION_CENTER",
+    x = e => "icHighlight" === e ? "TOP_MESSAGES" : "NOTIFICATION_CENTER",
     I = e => {
         switch (e) {
             case l.hW.GO_LIVE_PUSH:

@@ -1,15 +1,2 @@
 /** chunk id: 415735 params = (module,exports,require) **/
-e.exports = {
-    Nz: "expandedUsersContainer_e72588",
-    gD: "expandedUsersRow_e72588",
-    X0: "facepileContainer_e72588",
-    h6: "expandedUserRow_e72588",
-    m2: "expandedUserName_e72588",
-    rg: "expandedUserNameContainer_e72588",
-    YT: "actionsRow_e72588",
-    ZA: "voiceIcons_e72588",
-    Ow: "voiceIcon_e72588",
-    IV: "expandedUserGameIcon_e72588",
-    z2: "gameActivitySecondaryText_e72588",
-    AE: "gameControllerIcon_e72588"
-}
+e.exports = JSON.parse('{"/cp93l":["Neste m\xe5ned"],"raS6yf":["Forrige m\xe5ned"],"JA5C7L":["Fjern"],"I8kUqR":["\xc5pne kalender"],"db85vU":["Ingenting \xe5 vise"],"bPKiId":["Ingen resultater for \xab",[1,"query"],"\xbb"],"WfH9in":["Lukk"],"m3Vfcs":["Ikke vis p\xe5 nytt"],"cgdAs2":["(\xc5pnes i en ny fane)"],"2L/ygS":[[1,"percent"]," prosent fullf\xf8rt"],"/Y7vRd":["Trykk p\xe5 x for \xe5 fjerne."],"VMNfsY":["Valgt"],"A+pfVR":["Velg\xa0…"],"v2YSk/":["Trinn ",[1,"stepNumber"]," av ",[1,"stepCount"]],"YpT3kk":["Forst\xf8rr og spill video"]}')

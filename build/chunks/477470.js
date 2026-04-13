@@ -20,16 +20,16 @@ let g = function(e) {
         paginationCaretClassName: l,
         intervalBetweenAutomaticItemRotations: g,
         renderItem: x
-    } = e, h = s.useMemo(() => new a.IX, []), [_, A] = s.useState(c.f.LEFT), [p, f] = s.useState(0), [j, N] = s.useState(!1), [E, C] = s.useState(!1), T = s.useCallback((e, t) => {
+    } = e, h = s.useMemo(() => new a.IX, []), [_, A] = s.useState(c.f.LEFT), [p, f] = s.useState(0), [j, N] = s.useState(!1), [E, T] = s.useState(!1), C = s.useCallback((e, t) => {
         f(n => {
             let i = n + t;
             return i < 0 ? i = e.length - 1 : i > e.length - 1 && (i = 0), i
         })
     }, [f]), I = s.useCallback(() => {
-        E || T(t, 1)
-    }, [T, t, E]), b = s.useCallback(() => {
-        E || T(t, -1)
-    }, [T, t, E]);
+        E || C(t, 1)
+    }, [C, t, E]), b = s.useCallback(() => {
+        E || C(t, -1)
+    }, [C, t, E]);
     return s.useEffect(() => {
         null != g && (j ? h.stop() : h.start(g, I))
     }, [j, h, g, I]), (0, i.jsxs)("div", {
@@ -50,8 +50,8 @@ let g = function(e) {
         }), (0, i.jsx)(c.A, {
             step: p,
             direction: _,
-            onAnimationStart: () => C(!0),
-            onAnimationEnd: () => C(!1),
+            onAnimationStart: () => T(!0),
+            onAnimationEnd: () => T(!1),
             className: r()(m.Dk, n),
             children: x(t[p])
         }), (0, i.jsx)(o.DUT, {

@@ -22,7 +22,7 @@ function m(e) {
         setStatus: s,
         isFavorited: m,
         onFavoriteClick: p
-    } = e, [g, f] = l.useState(!1), x = (0, r.bG)([u.A], () => u.A.getFavoritedStatuses().length >= u.x), E = null != p, I = l.useCallback(e => {
+    } = e, [g, f] = l.useState(!1), E = (0, r.bG)([u.A], () => u.A.getFavoritedStatuses().length >= u.x), x = null != p, I = l.useCallback(e => {
         e.stopPropagation(), p?.()
     }, [p]), C = m ? c.Gg5 : c.yA2;
     return (0, i.jsxs)(c.DUT, {
@@ -41,8 +41,8 @@ function m(e) {
             variant: "text-md/normal",
             className: A.rv,
             children: t
-        }), g && E && (0, i.jsx)(d.m_, {
-            text: x && !m ? h.intl.string(h.t.YSDH9n) : void 0,
+        }), g && x && (0, i.jsx)(d.m_, {
+            text: E && !m ? h.intl.string(h.t.YSDH9n) : void 0,
             children: (0, i.jsx)(c.DUT, {
                 className: a()(A.ff, A.wB),
                 onClick: I,

@@ -20,14 +20,14 @@ var i = n(627968),
     b = n(147925),
     f = n(486020),
     _ = n(957565),
-    N = n(661191),
-    j = n(427262),
+    j = n(661191),
+    N = n(427262),
     v = n(447066),
     T = n(652215),
     C = n(985018),
-    I = n(934354);
+    E = n(934354);
 
-function E(e, t) {
+function I(e, t) {
     return null != t && /^data:/.test(t) ? t : (0, f.ku)({
         id: e.id,
         avatar: t,
@@ -45,14 +45,14 @@ function S(e) {
         isNew: y,
         errors: O,
         onToggleExpand: w
-    } = e, [R, k] = l.useState(!1), [L] = l.useState(new o.Ep);
+    } = e, [k, R] = l.useState(!1), [L] = l.useState(new o.Ep);
     l.useEffect(() => () => L.stop(), [L]);
-    let M = l.useMemo(() => E(n, n.avatar), [n]),
+    let M = l.useMemo(() => I(n, n.avatar), [n]),
         G = l.useCallback(() => {
             let e = `${(0,r.TP)(!1)}${T.Rsh.WEBHOOK_INTEGRATION(n.id,n.token)}`;
             (0, _.C)(e)
         }, [n]),
-        U = l.useCallback(() => {
+        D = l.useCallback(() => {
             (0, d.A)({
                 title: C.intl.formatToPlainString(C.t.QVFjHh, {
                     name: n.name
@@ -78,34 +78,34 @@ function S(e) {
                 }
             })
         }, [n.guild_id, n.id, n.name]),
-        D = [];
-    null != n.user ? D.push({
+        P = [];
+    null != n.user ? P.push({
         icon: u.O4,
         text: C.intl.formatToPlainString(C.t["7EcUbr"], {
             user: (e => {
                 if (null == e) return null;
                 let t = new A.A(e);
-                return j.Ay.getUserTag(t)
+                return N.Ay.getUserTag(t)
             })(n.user),
-            timestamp: N.default.extractTimestamp(n.id)
+            timestamp: j.default.extractTimestamp(n.id)
         })
-    }) : D.push({
+    }) : P.push({
         icon: u.O4,
         text: C.intl.formatToPlainString(C.t["7mv59O"], {
-            timestamp: N.default.extractTimestamp(n.id)
+            timestamp: j.default.extractTimestamp(n.id)
         })
     });
-    let P = null;
-    return S && null != s && (P = (0, i.jsxs)("div", {
-        className: I.rf,
+    let U = null;
+    return S && null != s && (U = (0, i.jsxs)("div", {
+        className: E.rf,
         children: [(0, i.jsx)(u.cGx, {
-            className: I.fV
+            className: E.fV
         }), (0, i.jsxs)(h.A, {
             children: [(0, i.jsx)(h.A.Child, {
                 shrink: 1,
                 grow: 0,
                 children: (0, i.jsxs)(h.A, {
-                    className: I.R3,
+                    className: E.R3,
                     direction: h.A.Direction.VERTICAL,
                     children: [(0, i.jsx)(p.A, {
                         image: s.avatar,
@@ -114,8 +114,8 @@ function S(e) {
                                 avatar: e
                             })
                         },
-                        makeURL: e => E(n, e),
-                        imageClassName: I.mr,
+                        makeURL: e => I(n, e),
+                        imageClassName: E.mr,
                         showIcon: !0
                     }), null != O.avatar && "" !== O.avatar ? (0, i.jsx)(u.Text, {
                         color: "text-feedback-critical",
@@ -169,23 +169,23 @@ function S(e) {
                         })
                     })]
                 }), (0, i.jsx)(u.cGx, {
-                    className: I.Bd
+                    className: E.Bd
                 }), (0, i.jsxs)(h.A, {
                     children: [(0, i.jsx)(c.m_, {
                         text: C.intl.string(C.t.wwdb3g),
-                        shouldShow: R,
+                        shouldShow: k,
                         hideOnClick: !1,
-                        forceOpen: R,
+                        forceOpen: k,
                         children: (0, i.jsx)("div", {
                             "data-button-hoisted-classname-wrapper": !0,
-                            className: I.cL,
+                            className: E.cL,
                             children: (0, i.jsx)(u.Button, {
                                 variant: "secondary",
                                 size: "sm",
                                 text: C.intl.string(C.t.Ae9rUW),
                                 "aria-label": "",
                                 onClick: () => {
-                                    k(!0), u.ORC.announce(C.intl.string(C.t.wwdb3g)), L.start(1e3, () => k(!1)), G()
+                                    R(!0), u.ORC.announce(C.intl.string(C.t.wwdb3g)), L.start(1e3, () => R(!1)), G()
                                 },
                                 disabled: null == n.token || "" === n.token
                             })
@@ -194,7 +194,7 @@ function S(e) {
                         variant: "critical-secondary",
                         size: "sm",
                         text: C.intl.string(C.t.jVrUnC),
-                        onClick: U
+                        onClick: D
                     })]
                 })]
             })]
@@ -202,11 +202,11 @@ function S(e) {
     })), (0, i.jsx)(u.ZpM, {
         editable: !0,
         id: t,
-        className: a()(I.Nr, y ? I.U6 : null),
+        className: a()(E.Nr, y ? E.U6 : null),
         children: (0, i.jsxs)(h.A, {
             direction: h.A.Direction.VERTICAL,
             children: [(0, i.jsx)(u.DUT, {
-                className: I.wx,
+                className: E.wx,
                 "aria-expanded": S,
                 onClick: w,
                 children: (0, i.jsxs)(h.A, {
@@ -214,14 +214,14 @@ function S(e) {
                     children: [(0, i.jsx)(v.A, {
                         name: n.name,
                         imageSrc: M,
-                        details: D
+                        details: P
                     }), (0, i.jsx)(b.A, {
-                        className: I.eO,
+                        className: E.eO,
                         expanded: S,
                         "aria-hidden": !0
                     })]
                 })
-            }), P]
+            }), U]
         })
     })
 }

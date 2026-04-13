@@ -41,25 +41,25 @@ function p(e) {
 }
 let g = new Map,
     f = new Map,
-    x = new Map,
     E = new Map,
+    x = new Map,
     I = [];
 
 function C(e) {
     let t = g.get(e),
-        n = x.get(e),
+        n = E.get(e),
         i = t?.values(_).find(e => e.eventType === u.i.USER_LEFT && !o.A.isBlockedOrIgnored(e.userId));
     if (null != i) {
-        if (x.set(e, i.userId), n !== i.userId) return !0
-    } else if (x.delete(e), null != n) return !0;
+        if (E.set(e, i.userId), n !== i.userId) return !0
+    } else if (E.delete(e), null != n) return !0;
     return !1
 }
 
 function N(e) {
     let t = g.get(e)?.values(_) ?? [],
-        n = E.get(e) ?? I,
+        n = x.get(e) ?? I,
         i = t.filter(e => !o.A.isBlockedOrIgnored(e.userId));
-    return E.set(e, i.length > 0 ? i : I), i.length !== n.length
+    return x.set(e, i.length > 0 ? i : I), i.length !== n.length
 }
 
 function T(e, t) {
@@ -112,13 +112,13 @@ class y extends i.Ay.Store {
     }
     __getLocalVars = () => ({
         channelEventMaps: g,
-        lastLeftUserIds: x
+        lastLeftUserIds: E
     });
     getLastLeftUserId(e) {
-        return x.get(e)
+        return E.get(e)
     }
     getHistory(e) {
-        return E.get(e) ?? I
+        return x.get(e) ?? I
     }
     getHistoryVersion(e) {
         return g.get(e)?.version ?? 0
@@ -149,7 +149,7 @@ let v = new y(s.h, {
         return new Set(i.map(e => e.oldChannelId).filter(e => null != e)).forEach(e => {
             var t;
             let n;
-            0 === Object.keys(c.A.getVoiceStatesForChannel(e)).length && (t = e, null != (n = g.get(t)) && n.clear(), x.delete(t), E.delete(t))
+            0 === Object.keys(c.A.getVoiceStatesForChannel(e)).length && (t = e, null != (n = g.get(t)) && n.clear(), E.delete(t), x.delete(t))
         }), i.forEach(e => {
             let {
                 userId: i,
@@ -168,7 +168,7 @@ let v = new y(s.h, {
         let {
             channel: t
         } = e;
-        return !!g.has(t.id) && (g.delete(t.id), f.delete(t.id), x.delete(t.id), E.delete(t.id), !0)
+        return !!g.has(t.id) && (g.delete(t.id), f.delete(t.id), E.delete(t.id), x.delete(t.id), !0)
     },
     VOICE_CHANNEL_HISTORY_START_TRACKING: function(e) {
         let {
@@ -233,7 +233,7 @@ let v = new y(s.h, {
         f.set(t, n)
     },
     CONNECTION_OPEN: function() {
-        return 0 !== g.size && (g.clear(), f.clear(), x.clear(), E.clear(), !0)
+        return 0 !== g.size && (g.clear(), f.clear(), E.clear(), x.clear(), !0)
     },
     RELATIONSHIP_UPDATE: b,
     RELATIONSHIP_ADD: b,

@@ -24,8 +24,8 @@ var i = n(627968),
     j = n(994500),
     N = n(287809),
     E = n(997509),
-    C = n(600955),
-    T = n(652215),
+    T = n(600955),
+    C = n(652215),
     I = n(985018),
     b = n(141567);
 
@@ -48,7 +48,7 @@ function v(e) {
                     guild_id: t.id,
                     channel_id: e
                 };
-                (0, c.zV)(T.HAw.GUILD_RAID_ALERTS_SETUP, n)
+                (0, c.zV)(C.HAw.GUILD_RAID_ALERTS_SETUP, n)
             }
         } catch (e) {
             (0, d.showToast)((0, d.createToast)(I.intl.string(I.t["46Rs3v"]), d.ToastType.FAILURE)), j(!p)
@@ -75,7 +75,7 @@ function v(e) {
                     color: "currentColor"
                 }), " ", E]
             })]
-        }), (0, i.jsx)(C.A, {
+        }), (0, i.jsx)(T.A, {
             checked: f,
             onChange: v,
             disabled: !_ || null == l
@@ -94,7 +94,7 @@ function S(e) {
             let {
                 channel: t
             } = e;
-            return t.type === a.r.GUILD_TEXT && f.A.can(T.xBc.SEND_MESSAGES, t)
+            return t.type === a.r.GUILD_TEXT && f.A.can(C.xBc.SEND_MESSAGES, t)
         }).map(e => {
             let {
                 channel: t
@@ -123,7 +123,7 @@ function S(e) {
                     guild_id: t.id,
                     channel_id: e
                 };
-                (0, c.zV)(T.HAw.GUILD_RAID_ALERTS_SETUP, n)
+                (0, c.zV)(C.HAw.GUILD_RAID_ALERTS_SETUP, n)
             }
         } catch (e) {
             (0, d.showToast)((0, d.createToast)(I.intl.string(I.t["46Rs3v"]), d.ToastType.FAILURE)), s(m)

@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(531053),
     g = n(606256),
     f = n(652215),
-    x = n(819638),
-    E = n(985018),
+    E = n(819638),
+    x = n(985018),
     I = n(186942);
 let C = {
     origin: {
@@ -49,7 +49,7 @@ function T(e) {
     let {
         disableTooltip: t,
         lastTargetNode: n
-    } = e, r = (0, s.yK)([_.A], () => _.A.getGuildsArray()), T = (0, s.bG)([m.default], () => m.default.getCurrentUser()), S = l.useMemo(() => r.some(e => (0, A.bM)(e, T)), [r, T]), b = (0, a.red)(e => (0, a.fDT)(e, x.fc)), {
+    } = e, r = (0, s.yK)([_.A], () => _.A.getGuildsArray()), T = (0, s.bG)([m.default], () => m.default.getCurrentUser()), S = l.useMemo(() => r.some(e => (0, A.bM)(e, T)), [r, T]), b = (0, a.red)(e => (0, a.fDT)(e, E.fc)), {
         analyticsLocations: y
     } = (0, o.Ay)();
     return (0, i.jsx)("div", {
@@ -78,10 +78,10 @@ function T(e) {
                 },
                 selected: b,
                 onContextMenu: N,
-                tooltip: E.intl.string(E.t.l5WIbf),
+                tooltip: x.intl.string(x.t.l5WIbf),
                 icon: a.U1e
             }), null != n && (0, i.jsx)(p.Ay, {
-                name: E.intl.string(E.t["45xjM5"]),
+                name: x.intl.string(x.t["45xjM5"]),
                 targetNode: n,
                 below: !0,
                 noCombine: !0

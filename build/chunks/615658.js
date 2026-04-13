@@ -22,8 +22,8 @@ let A = () => {
         p = (0, d.n)(e => e.playNextSong),
         g = (0, d.n)(e => e.volumes),
         f = l.useRef(null),
-        x = l.useRef(null),
         E = l.useRef(null),
+        x = l.useRef(null),
         I = (0, h.A)(n, A),
         C = (0, s.bG)([c.A], () => c.A.assets);
     return (l.useEffect(() => {
@@ -32,8 +32,8 @@ let A = () => {
             o.A.captureException(e)
         }))
     }, [I?.src, m, _, t]), l.useEffect(() => {
-        let e = x.current,
-            n = E.current;
+        let e = E.current,
+            n = x.current;
         null != e && (m || !t ? e.pause() : e.play()?.catch(e => {
             o.A.captureException(e)
         })), null != n && (m || !t ? n.pause() : n.play()?.catch(e => {
@@ -48,13 +48,13 @@ let A = () => {
                 src: I?.src
             })
         }), (0, i.jsx)(a.A, {
-            ref: x,
+            ref: E,
             volume: m ? 0 : g.environment,
             children: (0, i.jsx)("source", {
                 src: C?.sounds?.[u.qi.ENVIRONMENT]
             })
         }), (0, i.jsx)(a.A, {
-            ref: E,
+            ref: x,
             volume: m ? 0 : g.campfire,
             children: (0, i.jsx)("source", {
                 src: C?.sounds?.[u.qi.CAMPFIRE]

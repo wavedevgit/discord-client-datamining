@@ -1,23 +1,23 @@
 /** chunk id: 513265 params = (module,exports,require) **/
-t.d(l, {
+l.d(t, {
     A: () => h
 });
-var n = t(627968),
-    i = t(64700),
-    s = t(503698),
-    a = t.n(s),
-    r = t(687498),
-    o = t(311907),
-    d = t(397927),
-    c = t(775602),
-    u = t(606758),
-    m = t(518477),
-    x = t(985018),
-    p = t(439510),
-    A = t(886981);
+var n = l(627968),
+    i = l(64700),
+    s = l(503698),
+    a = l.n(s),
+    r = l(687498),
+    o = l(311907),
+    d = l(397927),
+    c = l(775602),
+    u = l(606758),
+    m = l(518477),
+    p = l(985018),
+    x = l(439510),
+    A = l(886981);
 let g = {
         [m.jM.WIDGET_ADDED]: {
-            message: x.intl.string(x.t.fFP1Uy),
+            message: p.intl.string(p.t.fFP1Uy),
             icon: (0, n.jsx)(d.A9s, {
                 size: "sm",
                 color: d.LU0.colors.STATUS_POSITIVE.css
@@ -25,7 +25,7 @@ let g = {
             toast_id: "user_profile_widget_added"
         },
         [m.jM.WIDGET_REMOVED]: {
-            message: x.intl.string(x.t.zzsK7h),
+            message: p.intl.string(p.t.zzsK7h),
             icon: (0, n.jsx)(d.A9s, {
                 size: "sm",
                 color: d.LU0.colors.STATUS_POSITIVE.css
@@ -33,7 +33,7 @@ let g = {
             toast_id: "user_profile_widget_removed"
         },
         [m.jM.PROFILE_SAVE_GENERIC_FAILURE]: {
-            message: x.intl.string(x.t["84MExs"]),
+            message: p.intl.string(p.t["84MExs"]),
             icon: (0, n.jsx)(d.d$L, {
                 size: "sm",
                 color: d.LU0.colors.ICON_FEEDBACK_CRITICAL
@@ -42,7 +42,7 @@ let g = {
             type: d.ToastType.FAILURE
         },
         [m.jM.SOMETHING_WENT_WRONG]: {
-            message: x.intl.string(x.t.F8FvUy),
+            message: p.intl.string(p.t.F8FvUy),
             icon: (0, n.jsx)(d.d$L, {
                 size: "sm",
                 color: d.LU0.colors.ICON_FEEDBACK_CRITICAL
@@ -53,30 +53,30 @@ let g = {
     },
     f = e => {
         let {
-            message: l,
-            icon: t,
+            message: t,
+            icon: l,
             type: i
         } = e;
         return (0, n.jsxs)("div", {
-            className: a()(A.oR, p.oR),
+            className: a()(A.oR, x.oR),
             "data-type": i,
             children: [(0, n.jsx)("div", {
-                className: p.RC,
-                children: t
+                className: x.RC,
+                children: l
             }), (0, n.jsx)(d.Text, {
                 color: "text-strong",
                 variant: "text-sm/semibold",
-                children: l
+                children: t
             })]
         })
     },
     h = e => {
         let {
-            className: l
-        } = e, t = (0, u.fu)(), s = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, x] = i.useState(!1), [A, h] = i.useState(null);
+            className: t
+        } = e, l = (0, u.fu)(), s = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, p] = i.useState(!1), [A, h] = i.useState(null);
         i.useEffect(() => {
-            null !== t ? (x(!0), h(g[t]), d.ORC.announce(g[t].message)) : x(!1)
-        }, [t]);
+            null !== l ? (p(!0), h(g[l]), d.ORC.announce(g[l].message)) : p(!1)
+        }, [l]);
         let j = (0, d.pnh)(m, {
             from: {
                 transform: s ? "translateY(0)" : "translateY(-12px)",
@@ -105,8 +105,8 @@ let g = {
                 return () => clearTimeout(e)
             }
         }, [m]), (0, n.jsx)(n.Fragment, {
-            children: j((e, t) => t && null !== A && (0, n.jsx)(r.animated.div, {
-                className: a()(l, p.Jt),
+            children: j((e, l) => l && null !== A && (0, n.jsx)(r.animated.div, {
+                className: a()(t, x.Jt),
                 style: e,
                 children: (0, n.jsx)(f, {
                     ...A

@@ -18,8 +18,8 @@ var a = t(397927),
     g = t(31432),
     h = t(915614),
     m = t(559506),
-    I = t(946356),
-    f = t(810396),
+    f = t(946356),
+    I = t(810396),
     x = t(570314),
     b = t(490752),
     v = t(571077),
@@ -89,7 +89,7 @@ function O(e) {
                                 })
                             })
                         }),
-                        children: (0, i.jsxs)(I.A, {
+                        children: (0, i.jsxs)(f.A, {
                             user: n,
                             displayProfile: z,
                             themeType: R.d.MODAL,
@@ -147,7 +147,7 @@ function O(e) {
                                 className: P.Fd
                             }), (0, i.jsxs)("div", {
                                 className: P.rf,
-                                children: [(0, i.jsx)(f.A, {
+                                children: [(0, i.jsx)(I.A, {
                                     className: P.Xh,
                                     user: n,
                                     guildId: W,

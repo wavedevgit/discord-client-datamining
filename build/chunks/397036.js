@@ -25,12 +25,12 @@ function f(e) {
     } = e, f = (0, u.e)({
         guildId: t,
         channelId: n
-    }), x = (0, c.uk)(t), E = (0, c.Tq)(t), I = (0, s.bG)([d.A], () => d.A.getGuild(t), [t]), C = I?.name, N = (0, s.bG)([o.A], () => o.A.getChannel(n)), T = (0, r.Ay)(N), S = l.useMemo(() => {
+    }), E = (0, c.uk)(t), x = (0, c.Tq)(t), I = (0, s.bG)([d.A], () => d.A.getGuild(t), [t]), C = I?.name, N = (0, s.bG)([o.A], () => o.A.getChannel(n)), T = (0, r.Ay)(N), S = l.useMemo(() => {
         let e = {};
-        for (let t of x)
+        for (let t of E)
             for (let n of t.subscription_listings_ids) e[n] = t.id;
         return e
-    }, [x]);
+    }, [E]);
     return ((0, h.A)({
         guildId: t,
         location: m.ThZ.ROLE_SUBSCRIPTION_GATED_CHANNEL,
@@ -53,7 +53,7 @@ function f(e) {
             className: g.Lv,
             variant: "text-md/normal",
             color: "text-default",
-            children: E?.description
+            children: x?.description
         }), (0, i.jsx)(A.A, {
             children: f.filter(e => null != S[e.id]).map(e => (0, i.jsx)(_.A, {
                 guildId: t,

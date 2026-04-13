@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(222823),
     g = n(977997),
     f = n(607567),
-    x = n(892896),
-    E = n(884415),
+    E = n(892896),
+    x = n(884415),
     I = n(775946),
     C = n(588224),
     N = n(37411),
@@ -184,11 +184,11 @@ let j = l.memo(function(e) {
                             children: t.name
                         }), (0, i.jsxs)("div", {
                             className: b.Y_,
-                            children: [B > 0 && t.userLimit > 0 ? (0, i.jsx)(E.A, {
+                            children: [B > 0 && t.userLimit > 0 ? (0, i.jsx)(x.A, {
                                 userCount: B,
                                 video: L,
                                 channel: t
-                            }) : null, (0, x.A)(D) ? (0, i.jsx)(I.A, {
+                            }) : null, (0, E.A)(D) ? (0, i.jsx)(I.A, {
                                 mentionsCount: D,
                                 isMentionLowImportance: U
                             }) : null]

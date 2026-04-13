@@ -7,8 +7,8 @@ n.d(t, {
     Ns: () => Z,
     UB: () => Y,
     YX: () => J,
-    bo: () => q,
-    jz: () => X,
+    bo: () => X,
+    jz: () => q,
     lw: () => z,
     mn: () => $
 });
@@ -28,8 +28,8 @@ var i = n(627968),
     p = n(987144),
     g = n(976860),
     f = n(71393),
-    x = n(881756),
-    E = n(297930),
+    E = n(881756),
+    x = n(297930),
     I = n(645619),
     C = n(379229),
     N = n(990208),
@@ -45,8 +45,8 @@ var i = n(627968),
     M = n(652215),
     D = n(746080),
     U = n(49999),
-    G = n(294726),
-    P = n(333354),
+    G = n(799435),
+    P = n(967919),
     k = n(985018),
     w = n(168363),
     B = n(570890),
@@ -160,7 +160,7 @@ function z(e) {
     })
 }
 
-function q(e) {
+function X(e) {
     let {
         guildId: t,
         powerups: n,
@@ -242,7 +242,7 @@ function q(e) {
     }) : null
 }
 
-function X(e) {
+function q(e) {
     let {
         guildId: t,
         type: n,
@@ -253,7 +253,7 @@ function X(e) {
     } = (0, T.A)(t), {
         gameName: r,
         gameName2: c
-    } = (0, x.A)(), u = (0, d.bG)([h.A], () => h.A.useReducedMotion);
+    } = (0, E.A)(), u = (0, d.bG)([h.A], () => h.A.useReducedMotion);
     return (0, i.jsx)(en, {
         size: "video",
         targetElementRef: s,
@@ -315,7 +315,7 @@ function Q(e) {
     } = e, {
         gameName: s,
         gameName2: a
-    } = (0, x.A)(), r = (0, d.bG)([h.A], () => h.A.useReducedMotion);
+    } = (0, E.A)(), r = (0, d.bG)([h.A], () => h.A.useReducedMotion);
     return (0, i.jsx)(en, {
         size: "video",
         targetElementRef: l,
@@ -364,7 +364,7 @@ function J(e) {
     return (0, i.jsx)(en, {
         targetElementRef: l,
         ...s,
-        asset: (0, i.jsx)(E.default, {
+        asset: (0, i.jsx)(x.default, {
             gameId: O.YJ
         }),
         aspectRatio: "6/4",
@@ -490,7 +490,7 @@ function et(e) {
         ...r
     } = e, c = (0, d.bG)([I.A], () => I.A.getStateForGuild(t)), {
         analyticsLocations: u
-    } = (0, _.Ay)(A.A.GUILD_POWERUPS_COACHMARK_EXPIRING_PERK), m = c?.allPowerups[n.skuId], g = (0, N.A)(m, !0), x = l.useRef(null), E = (0, d.bG)([h.A], () => h.A.useReducedMotion);
+    } = (0, _.Ay)(A.A.GUILD_POWERUPS_COACHMARK_EXPIRING_PERK), m = c?.allPowerups[n.skuId], g = (0, N.A)(m, !0), E = l.useRef(null), x = (0, d.bG)([h.A], () => h.A.useReducedMotion);
     if (null == m && !n.isGameServer) return null;
     let C = n.isGameServer ? k.intl.string(P.default["9L0pAN"]) : k.intl.formatToPlainString(P.default.gG8bI8, {
             perkName: n.name
@@ -506,10 +506,10 @@ function et(e) {
             withReducedMotion: "halt",
             fit: "contain",
             className: w.Sl,
-            stateMachine: E ? "SM_Main_Int" : "SM_Auto"
+            stateMachine: x ? "SM_Main_Int" : "SM_Auto"
         }) : m?.type === L.o9.LEVEL ? (0, i.jsx)(v.n, {
             powerup: m,
-            eventTargetRef: x,
+            eventTargetRef: E,
             className: w.Lj
         }) : (0, i.jsx)("img", {
             alt: "",

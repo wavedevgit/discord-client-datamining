@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(699707),
     g = n(713397),
     f = n(652215),
-    x = n(806931),
-    E = n(256960);
+    E = n(806931),
+    x = n(256960);
 let I = (0, a.A)(e => {
     let {
         participants: t,
@@ -46,7 +46,7 @@ let I = (0, a.A)(e => {
     l.useEffect(() => {
         h._.dispatch(f.jej.REMEASURE_TARGET)
     }, [O, L, P.width, P.height]);
-    let k = l.useMemo(() => n.filter(e => e.type !== x.lp.ACTIVITY || !e.participants.some(e => (0, r.S)(e))), [n, I]),
+    let k = l.useMemo(() => n.filter(e => e.type !== E.lp.ACTIVITY || !e.participants.some(e => (0, r.S)(e))), [n, I]),
         w = (0, s.bG)([o.A], () => o.A.getVoiceParticipantsHidden(b.id), [b.id]);
     if (G?.channelId === b.id) return (0, i.jsx)(_.A, {
         height: L
@@ -64,7 +64,7 @@ let I = (0, a.A)(e => {
     if (D === f._Of.VOICE) return (0, i.jsx)(d.A, {
         guildId: b.guild_id,
         width: O,
-        className: E.Er,
+        className: x.Er,
         participants: t,
         onContextMenu: T
     });
@@ -77,12 +77,12 @@ let I = (0, a.A)(e => {
             })
         }
         return (0, i.jsx)(c.A, {
-            className: E.HA,
+            className: x.HA,
             justify: c.A.Justify.CENTER,
             align: c.A.Align.CENTER,
             children: (0, i.jsx)(m.A, {
                 channel: b,
-                className: E.g9,
+                className: x.g9,
                 participants: k,
                 totalNumberOfParticipants: t.length,
                 onClick: N,

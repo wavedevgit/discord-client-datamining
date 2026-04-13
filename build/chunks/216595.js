@@ -33,18 +33,18 @@ function f(e) {
         children: (0, i.jsxs)("div", {
             className: p.ZO,
             "data-recents-channel": t.id,
-            children: [(0, i.jsx)(x, {
+            children: [(0, i.jsx)(E, {
                 channel: t
             }), t.isPrivate() ? null : (0, i.jsx)(a.ChevronSmallRightIcon, {
                 size: "xxs"
-            }), (0, i.jsx)(E, {
+            }), (0, i.jsx)(x, {
                 channel: t
             }), n]
         })
     })
 }
 
-function x(e) {
+function E(e) {
     let {
         channel: t
     } = e, n = (0, o.bG)([_.A], () => _.A.getGuild(t.guild_id));
@@ -65,7 +65,7 @@ function x(e) {
     })
 }
 
-function E(e) {
+function x(e) {
     let {
         channel: t
     } = e, n = (0, o.bG)([_.A], () => _.A.getGuild(t.guild_id)), l = (0, c.Ay)(t, !1), s = (0, u.gU)(t, n), a = t.isPrivate() || null == s, r = t.isDM() ? m.intl.formatToPlainString(m.t.smD7XV, {

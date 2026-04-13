@@ -21,12 +21,12 @@ function g(e) {
     let {
         channelId: t,
         onClick: n
-    } = e, g = (0, r.Us)(), f = (0, m.Qs)(t), x = (0, s.bG)([u.A], () => u.A.getChannel(t), [t]), {
-        canManageGuildEvent: E
-    } = (0, o.nr)(x), I = E(f), C = l.useRef(null);
+    } = e, g = (0, r.Us)(), f = (0, m.Qs)(t), E = (0, s.bG)([u.A], () => u.A.getChannel(t), [t]), {
+        canManageGuildEvent: x
+    } = (0, o.nr)(E), I = x(f), C = l.useRef(null);
     if (null == f) return null;
     let N = () => {
-            null != x && (0, _.A)(x) ? (0, h.Py)(x, g) : n()
+            null != E && (0, _.A)(E) ? (0, h.Py)(E, g) : n()
         },
         T = () => {
             A.A.endEvent(f.id, f.guild_id)

@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(473553),
     g = n(964404),
     f = n(709562),
-    x = n(383831),
-    E = n(128286),
+    E = n(383831),
+    x = n(128286),
     I = n(734057),
     C = n(696451),
     N = n(309010),
@@ -53,7 +53,7 @@ function K(e) {
         maxHeight: t,
         connectedLocation: n,
         renderExternalHeader: s
-    } = e, K = (0, L.A)(), Y = (0, r.yK)([v.Ay], () => v.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, r.bG)([I.A], () => I.A.getChannel(z)), X = (0, j.IQ)(Y), $ = (0, j.Rz)(X), Q = l.useCallback(() => {
+    } = e, K = (0, L.A)(), Y = (0, r.yK)([v.Ay], () => v.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), X = (0, r.bG)([I.A], () => I.A.getChannel(z)), q = (0, j.IQ)(Y), $ = (0, j.Rz)(q), Q = l.useCallback(() => {
         (0, y.gk)(w.Gd.PIP)
     }, []), J = l.useRef(null), Z = (0, r.bG)([v.Ay], () => v.Ay.getFocusedLayout()), ee = Z !== w.E8.NO_CHAT, [et, en] = l.useState(g.Ay.activityPanelHeight ?? t ?? null), ei = l.useCallback(e => {
         u.Ay.updatedUnsyncedSettings({
@@ -84,7 +84,7 @@ function K(e) {
     }
     let eu = $.get(K?.id ?? ""),
         eh = (0, r.bG)([N.A], () => N.A.getChannelId()),
-        eA = (0, r.yK)([C.Ay], () => null == q ? [] : Array.from(eu?.embeddedActivity.userIds ?? []).map(e => C.Ay.getMember(q.guild_id, e)), [eu, q]),
+        eA = (0, r.yK)([C.Ay], () => null == X ? [] : Array.from(eu?.embeddedActivity.userIds ?? []).map(e => C.Ay.getMember(X.guild_id, e)), [eu, X]),
         e_ = l.useMemo(() => {
             let e = new Map;
             return eA.forEach(t => {
@@ -128,7 +128,7 @@ function K(e) {
             text: n,
             position: "bottom",
             children: (0, i.jsx)("img", {
-                src: e.getAvatarURL(q?.guild_id, F),
+                src: e.getAvatarURL(X?.guild_id, F),
                 alt: n,
                 className: H.my
             }, e.id)
@@ -190,14 +190,14 @@ function K(e) {
                             })]
                         }), (0, i.jsx)("div", {
                             className: H.pt,
-                            children: (0, i.jsx)(x.A, {
+                            children: (0, i.jsx)(E.A, {
                                 applicationId: K.id,
                                 location: n,
                                 centerButton: !0,
                                 color: "disconnect"
                             })
                         })]
-                    }), ep ? (0, i.jsx)(E.A, {
+                    }), ep ? (0, i.jsx)(x.A, {
                         popoutOpen: !1,
                         onOpenPopout: () => {
                             (0, _.zV)(B.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, U.A)({

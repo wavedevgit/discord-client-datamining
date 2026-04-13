@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(426660),
     g = n(576705),
     f = n(233993),
-    x = n(19844),
-    E = n(505543),
+    E = n(19844),
+    x = n(505543),
     I = n(985018),
     C = n(261084);
 
@@ -53,7 +53,7 @@ function T(e) {
     } = e, {
         participants: n,
         usersInSummary: l
-    } = (0, x.A)(t.id);
+    } = (0, E.A)(t.id);
     return (0, i.jsxs)("div", {
         className: C.P1,
         children: [(0, i.jsx)(c.Ay, {
@@ -90,12 +90,12 @@ function S(e) {
         onContinueClick: n
     } = e, s = (0, r.bG)([g.A], () => g.A.can(f.QY, t), [t]), o = t.guild_id, {
         canCreateGuildEvent: c
-    } = (0, m.nr)(t), u = (0, E.A)(t.id), x = l.useRef(null);
+    } = (0, m.nr)(t), u = (0, x.A)(t.id), E = l.useRef(null);
     return (0, i.jsxs)("div", {
         className: C.kL,
-        ref: x,
+        ref: E,
         children: [(0, i.jsx)(p.A, {
-            eventTargetRef: x
+            eventTargetRef: E
         }), (0, i.jsxs)("div", {
             className: C.Qs,
             children: [(0, i.jsxs)("div", {

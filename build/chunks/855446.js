@@ -17,8 +17,8 @@ var i, l = n(627968),
     p = n(652215),
     g = n(985018),
     f = n(488893);
-let x = ["embedded_cover"],
-    E = {
+let E = ["embedded_cover"],
+    x = {
         tension: 800,
         friction: 24
     };
@@ -44,7 +44,7 @@ function C(e) {
         locationObject: {},
         onActivityItemSelected: i,
         embeddedActivitiesManager: m.A,
-        assetNames: x,
+        assetNames: E,
         commandOrigin: C
     }), [y, v] = s.useState(!1), j = s.useCallback(() => {
         v(!0)
@@ -97,7 +97,7 @@ function C(e) {
         onMouseLeave: R,
         className: f.XA,
         children: (0, l.jsx)(c.c7X, {
-            config: E,
+            config: x,
             from: {
                 value: 0
             },

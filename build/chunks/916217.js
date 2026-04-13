@@ -17,8 +17,8 @@ var i = t(627968),
     g = t(31432),
     h = t(915614),
     m = t(389996),
-    I = t(743987),
-    f = t(900179),
+    f = t(743987),
+    I = t(900179),
     x = t(946356),
     b = t(810396),
     v = t(35241),
@@ -135,9 +135,9 @@ function L(e) {
                                         userId: n.id,
                                         userBio: M?.bio,
                                         setLineClamp: !1
-                                    }), (0, i.jsx)(f.A, {
+                                    }), (0, i.jsx)(I.A, {
                                         heading: S.intl.string(S.t["A//N4k"]),
-                                        children: (0, i.jsx)(I.A, {
+                                        children: (0, i.jsx)(f.A, {
                                             userId: n.id,
                                             guildId: G,
                                             tooltipDelay: y.In

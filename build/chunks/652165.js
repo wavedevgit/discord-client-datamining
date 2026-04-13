@@ -22,23 +22,23 @@ let c = "orb-checkout-payment-modal-key",
             analyticsSourceLocation: s,
             applicationId: u,
             onCloseCallback: _
-        } = e, h = (0, a.A)(), p = !1;
+        } = e, h = (0, a.A)(), b = !1;
         return m({
             loadId: h,
             skuId: t,
             onCheckoutSuccess: e => {
-                p || n(e), p = !0
+                b || n(e), b = !0
             },
             applicationId: u,
             analyticsLocations: i,
             analyticsSourceLocation: s,
             onCloseCallback: () => {
                 (0, r.S)({
-                    checkoutSucceeded: p
+                    checkoutSucceeded: b
                 }), _?.()
             },
             onCloseRequest: () => {
-                p || (0, o.g)(d.HAw.PAYMENT_FLOW_CANCELED, {
+                b || (0, o.g)(d.HAw.PAYMENT_FLOW_CANCELED, {
                     loadId: h,
                     skuId: t,
                     analyticsLocations: i,

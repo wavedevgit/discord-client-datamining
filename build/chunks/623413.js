@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(69407),
     g = n(110618),
     f = n(566388),
-    x = n(985018),
-    E = n(616124);
+    E = n(985018),
+    x = n(616124);
 let I = function(e) {
     let {
         participants: t,
@@ -29,27 +29,27 @@ let I = function(e) {
         C ? (0, u.Ze)(n.guild_id, () => r.default.selectVoiceChannel(n.id)) : r.default.selectVoiceChannel(n.id)
     }, [n.id, n.guild_id, C]), T = t.filter(e => e.type === p.wY.VOICE), S = (0, c.Ay)(n), b = 4 === T.length ? 2 : 3, y = (0, s.yK)([o.A], () => T.map(e => o.A.getParticipant(n.id, e.id)).filter(m.Vq), [n.id, T]);
     return (0, i.jsxs)("div", {
-        className: E.kL,
+        className: x.kL,
         children: [(0, i.jsx)(_.A, {}), (0, i.jsx)("div", {
-            className: E.os,
+            className: x.os,
             style: {
                 maxWidth: 168 * b
             },
             children: y.slice(0, 5).map(e => (0, i.jsx)(A.Ay, {
                 participant: e,
                 channel: n,
-                className: E.Vs,
+                className: x.Vs,
                 inCall: !0,
                 noVideoRender: !0,
                 popoutType: d.N.NO_POPOUT,
                 width: 48
             }, e.id))
         }), (0, i.jsx)(a.Heading, {
-            className: E.HA,
+            className: x.HA,
             variant: "heading-xxl/normal",
             children: S
         }), (0, i.jsx)("div", {
-            className: E.Nu,
+            className: x.Nu,
             children: (0, i.jsx)(a.Text, {
                 tag: "div",
                 color: "text-default",
@@ -57,12 +57,12 @@ let I = function(e) {
                 children: (0, g.DO)(n, T)
             })
         }), (0, i.jsxs)("div", {
-            className: E.UD,
+            className: x.UD,
             children: [(0, i.jsx)("div", {
-                className: E.PD,
+                className: x.PD,
                 children: (0, i.jsx)(a.Button, {
                     variant: "overlay-primary",
-                    text: I ? x.intl.string(x.t["7vb2cc"]) : x.intl.string(x.t.TVBCKZ),
+                    text: I ? E.intl.string(E.t["7vb2cc"]) : E.intl.string(E.t.TVBCKZ),
                     onClick: N,
                     disabled: !I
                 })

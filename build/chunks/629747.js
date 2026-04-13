@@ -1,19 +1,19 @@
 /** chunk id: 629747 params = (module,exports,require) **/
-t.d(l, {
+l.d(t, {
     A: () => o
 });
-var n = t(627968);
-t(64700);
-var i = t(397927),
-    s = t(915614),
-    a = t(985018),
-    r = t(65958);
+var n = l(627968);
+l(64700);
+var i = l(397927),
+    s = l(915614),
+    a = l(985018),
+    r = l(65958);
 
 function o(e) {
-    let l = () => {};
+    let t = () => {};
     return (0, n.jsxs)("div", {
         className: r.kL,
-        onClick: l,
+        onClick: t,
         children: [(0, n.jsx)(s.A, {
             ...e,
             className: r.Pr
@@ -25,7 +25,7 @@ function o(e) {
                 icon: i.R2l,
                 "aria-label": a.intl.string(a.t.FzU73A),
                 onClick: e => {
-                    e.stopPropagation(), l()
+                    e.stopPropagation(), t()
                 }
             })
         })]

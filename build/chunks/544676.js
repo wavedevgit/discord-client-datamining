@@ -79,7 +79,7 @@ function m(e) {
                 action: () => (0, a.mMO)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([i.e("53609"), i.e("62026"), i.e("12646")]).then(i.bind(i, 585265));
+                    } = await Promise.all([i.e("53609"), i.e("62026"), i.e("20065")]).then(i.bind(i, 585265));
                     return i => (0, n.jsx)(e, {
                         ...i,
                         guild: t
@@ -115,7 +115,7 @@ function m(e) {
                 action: () => (0, a.mMO)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([i.e("53609"), i.e("62026"), i.e("12646")]).then(i.bind(i, 585265));
+                    } = await Promise.all([i.e("53609"), i.e("62026"), i.e("20065")]).then(i.bind(i, 585265));
                     return i => (0, n.jsx)(e, {
                         ...i,
                         guild: t

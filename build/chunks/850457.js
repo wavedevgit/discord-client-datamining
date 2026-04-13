@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(290987),
     g = n(657331),
     f = n(820512),
-    x = n(769022),
-    E = n(898926),
+    E = n(769022),
+    x = n(898926),
     I = n(287809),
     C = n(954571),
     N = n(562153),
@@ -157,11 +157,11 @@ function j(e) {
         guildId: n,
         channelId: l
     } = e;
-    return t.eventType === E.i.ACTIVITY_ENDED ? (0, i.jsx)(y, {
+    return t.eventType === x.i.ACTIVITY_ENDED ? (0, i.jsx)(y, {
         event: t,
         guildId: n,
         channelId: l
-    }) : t.eventType === E.i.USER_LEFT ? (0, i.jsx)(v, {
+    }) : t.eventType === x.i.USER_LEFT ? (0, i.jsx)(v, {
         event: t,
         guildId: n,
         channelId: l
@@ -202,7 +202,7 @@ function O(e) {
     l.useEffect(() => {
         (0, f.q)(t.id)
     }, [t.id]);
-    let d = (0, s.bG)([x.A], () => x.A.getHistory(t.id), [t.id]),
+    let d = (0, s.bG)([E.A], () => E.A.getHistory(t.id), [t.id]),
         c = d.length > 0;
     return (l.useEffect(() => {
         c && C.default.track(T.HAw.OPEN_POPOUT, {

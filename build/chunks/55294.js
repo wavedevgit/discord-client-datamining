@@ -1,7 +1,7 @@
 /** chunk id: 55294 params = (module,exports,require) **/
 n.d(t, {
     A: () => g,
-    N: () => x
+    N: () => E
 });
 var i = n(64700),
     l = n(942381),
@@ -27,7 +27,7 @@ function g(e) {
         location: c,
         onThreadCreated: g,
         useDefaultThreadName: f
-    } = e, x = i.useCallback((e, t, n, i) => {
+    } = e, E = i.useCallback((e, t, n, i) => {
         a.A.sendMessage(e.id, u.Ay.parse(e, n), void 0, {
             eagerDispatch: !1,
             location: m.Hx.THREAD_CREATION,
@@ -53,7 +53,7 @@ function g(e) {
         location: c,
         onThreadCreated: g,
         useDefaultThreadName: f,
-        uploadHandler: x
+        uploadHandler: E
     })
 }
 async function f(e) {
@@ -65,7 +65,7 @@ async function f(e) {
     }
 }
 
-function x(e) {
+function E(e) {
     let {
         parentChannel: t
     } = e, {

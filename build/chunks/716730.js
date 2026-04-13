@@ -1,6 +1,6 @@
 /** chunk id: 716730 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => E
 }), n(321073);
 var i = n(627968),
     l = n(64700),
@@ -19,12 +19,12 @@ var i = n(627968),
     g = n(985018),
     f = n(610401);
 
-function x(e) {
+function E(e) {
     let {
         channelId: t,
         className: n,
-        ...x
-    } = e, E = l.useRef(null), I = (0, a.bG)([_.Ay], () => _.Ay.getFocusedLayout() === m.E8.RESIZABLE), C = l.useCallback(() => {
+        ...E
+    } = e, x = l.useRef(null), I = (0, a.bG)([_.Ay], () => _.Ay.getFocusedLayout() === m.E8.RESIZABLE), C = l.useCallback(() => {
         let e = I ? m.E8.NO_CHAT : m.E8.RESIZABLE;
         (0, A.i5)(e)
     }, [I]), {
@@ -45,7 +45,7 @@ function x(e) {
             isTyping: t
         }
     }(t), S = l.useCallback(() => {
-        E.current?.focus()
+        x.current?.focus()
     }, []);
     (0, h.Vo)({
         event: p.jej.FOCUS_CHAT_BUTTON,
@@ -63,7 +63,7 @@ function x(e) {
         className: f.iE,
         children: [(0, i.jsx)(d.l, {
             isTrayButton: !0,
-            buttonRef: E,
+            buttonRef: x,
             onClick: C,
             label: b,
             "aria-label": y.join(", "),
@@ -71,7 +71,7 @@ function x(e) {
             iconComponent: v === m.E8.NO_CHAT ? r.jQp : r.g8p,
             themeable: !0,
             className: n,
-            ...x
+            ...E
         }), R ? (0, i.jsx)(o.A, {
             hasMentions: T > 0,
             truncatedCount: j > 99 ? "99+" : j,

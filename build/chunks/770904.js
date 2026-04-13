@@ -17,9 +17,9 @@ var i = n(627968),
     m = n(652215),
     p = n(746080),
     g = n(49999),
-    f = n(294726),
-    x = n(985018),
-    E = n(866153);
+    f = n(799435),
+    E = n(985018),
+    x = n(866153);
 let I = l.memo(function(e) {
     let {
         guildId: t,
@@ -42,13 +42,13 @@ let I = l.memo(function(e) {
                 className: e,
                 color: "currentColor"
             }),
-            text: x.intl.string(f.default.vCzwM7),
+            text: E.intl.string(f.default.vCzwM7),
             selected: n,
             onClick: R,
             trailing: b ? (0, i.jsx)(o.LpS, {
                 disableColor: !0,
-                text: x.intl.string(x.t.y2b7CA),
-                className: E.q
+                text: E.intl.string(E.t.y2b7CA),
+                className: x.q
             }) : null
         }), L && M()]
     })

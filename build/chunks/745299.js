@@ -34,35 +34,35 @@ let p = 21552 == n.j ? function(t) {
             default:
                 throw Error(`Unsupported subscription tier: ${t}`)
         }
-    }(n)), h = (0, _.V)(), O = (0, r.A)(null != h && null != h.expires_at ? Date.parse(h.expires_at) : 0), m = null == h || h.subscription_trial?.sku_id !== n || null == h.expires_at || Object.values(O).every(t => 0 === t);
+    }(n)), O = (0, _.V)(), h = (0, r.A)(null != O && null != O.expires_at ? Date.parse(O.expires_at) : 0), C = null == O || O.subscription_trial?.sku_id !== n || null == O.expires_at || Object.values(h).every(t => 0 === t);
     if ((0, o.A)({
             type: l.ImpressionTypes.VIEW,
             name: l.ImpressionNames.TRIAL_NOTICE,
             properties: {
-                trial_id: h?.trial_id
+                trial_id: O?.trial_id
             }
         }, {
-            disableTrack: m
-        }), m) return null;
-    let C = n === I.pe.TIER_2 ? N.kqX.PREMIUM_TIER_2_TRIAL_ENDING : N.kqX.PREMIUM_TIER_0_TRIAL_ENDING,
+            disableTrack: C
+        }), C) return null;
+    let m = n === I.pe.TIER_2 ? N.kqX.PREMIUM_TIER_2_TRIAL_ENDING : N.kqX.PREMIUM_TIER_0_TRIAL_ENDING,
         g = (0, E.re)({
-            intervalType: h.subscription_trial?.interval,
-            intervalCount: h.subscription_trial?.interval_count
+            intervalType: O.subscription_trial?.interval,
+            intervalCount: O.subscription_trial?.interval_count
         }),
-        S = u.A.getArticleURL(h.trial_id === I.yo ? N.MVz.NITRO_TRIAL_FOR_ALL : N.MVz.PREMIUM_TRIAL);
+        S = u.A.getArticleURL(O.trial_id === I.yo ? N.MVz.NITRO_TRIAL_FOR_ALL : N.MVz.PREMIUM_TRIAL);
     return (0, i.jsxs)(T.T0, {
         onClick: () => {
             e(), d.default.track(N.HAw.APP_NOTICE_CLOSED, {
-                notice_type: C,
-                trial_id: h.trial_id
+                notice_type: m,
+                trial_id: O.trial_id
             })
         },
         children: [(0, i.jsx)(T.In, {
-            children: (0, A.GZ)(n, O, g, S)
+            children: (0, A.GZ)(n, h, g, S)
         }), (0, i.jsx)(T.fY, {
             onClick: () => {
                 (0, c.A)({
-                    trialId: h.trial_id,
+                    trialId: O.trial_id,
                     subscriptionTier: n,
                     analyticsLocations: p,
                     analyticsObject: {
@@ -71,8 +71,8 @@ let p = 21552 == n.j ? function(t) {
                         object: N.ZSU.BUTTON_CTA
                     }
                 }), d.default.track(N.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
-                    notice_type: C,
-                    trial_id: h.trial_id
+                    notice_type: m,
+                    trial_id: O.trial_id
                 })
             },
             text: function(t) {

@@ -22,7 +22,7 @@ let g = e => {
         isForceShowSharingPopout: n,
         setIsForceShowSharingPopout: g,
         popoutTargetRef: f
-    } = e, x = function(e) {
+    } = e, E = function(e) {
         let {
             isForceShowSharingPopout: t
         } = e, {
@@ -45,9 +45,9 @@ let g = e => {
             type: "SharingPrivacyPopout"
         })
     }, [n]);
-    let E = n ? [] : [a.M.SHARE_ACTIVITY_COACHMARK_V2];
+    let x = n ? [] : [a.M.SHARE_ACTIVITY_COACHMARK_V2];
     return (0, i.jsx)(r.Ay, {
-        contentTypes: E,
+        contentTypes: x,
         children: e => {
             let {
                 visibleContent: l,
@@ -55,7 +55,7 @@ let g = e => {
             } = e, r = l === a.M.SHARE_ACTIVITY_COACHMARK_V2 || n;
             return (0, i.jsx)(_.zd, {
                 showPopout: r,
-                popoutState: x,
+                popoutState: E,
                 handleClose: () => {
                     s(p.i.USER_DISMISS), g(!1)
                 },

@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(728321),
     g = n(309010),
     f = n(287809),
-    x = n(816733),
-    E = n(619921),
+    E = n(816733),
+    x = n(619921),
     I = n(194871),
     C = n(966846),
     N = n(674378),
@@ -53,8 +53,8 @@ function U(e) {
         badge: a,
         link: u,
         showProgressBadge: A
-    } = e, [_, g] = l.useState(!1), [f, x] = l.useState(!1), [E, I] = l.useState(null), [C, N] = l.useState(0), T = (0, s.Vd)("home"), R = (0, h.fy)().activePanel === h.HP.APP_ICON, U = () => {
-        I(null), N(0), clearTimeout(E)
+    } = e, [_, g] = l.useState(!1), [f, E] = l.useState(!1), [x, I] = l.useState(null), [C, N] = l.useState(0), T = (0, s.Vd)("home"), R = (0, h.fy)().activePanel === h.HP.APP_ICON, U = () => {
+        I(null), N(0), clearTimeout(x)
     };
     if (null == n) return null;
     let G = L.intl.string(L.t.YUU0RF);
@@ -76,11 +76,11 @@ function U(e) {
                 onMouseEnter: () => g(!0),
                 onMouseLeave: () => g(!1),
                 onClick: () => {
-                    if (!__OVERLAY__ && (null != E && clearTimeout(E), I(setTimeout(U, 500)), N(C + 1), 15 === C)) {
+                    if (!__OVERLAY__ && (null != x && clearTimeout(x), I(setTimeout(U, 500)), N(C + 1), 15 === C)) {
                         U();
                         let e = !r.w.get(j.wqg);
-                        r.w.set(j.wqg, e), e && r.w.set(O.L, !0), e ? (0, m.Ak)("discodo") : (0, m.Ak)("user_leave"), x(!0), setTimeout(() => {
-                            x(!1)
+                        r.w.set(j.wqg, e), e && r.w.set(O.L, !0), e ? (0, m.Ak)("discodo") : (0, m.Ak)("user_leave"), E(!0), setTimeout(() => {
+                            E(!1)
                         }, 1e3)
                     }
                 },
@@ -141,16 +141,16 @@ function G() {
         {
             unviewedTrialCount: r,
             unviewedDiscountCount: o
-        } = (0, a.cf)([x.A], () => ({
-            unviewedTrialCount: x.A.getUnacknowledgedOffers(l).length,
-            unviewedDiscountCount: x.A.getUnacknowledgedDiscountOffers().length
+        } = (0, a.cf)([E.A], () => ({
+            unviewedTrialCount: E.A.getUnacknowledgedOffers(l).length,
+            unviewedDiscountCount: E.A.getUnacknowledgedDiscountOffers().length
         })),
         c = s.fractionalState === R.xc.NONE ? r + o : 0,
         h = (0, a.bG)([f.default], () => f.default.getCurrentUser()),
         m = (0, A.W)(),
         p = n + c + m,
         S = p === c && c > 0 && n + m === 0,
-        b = E.A.getHomeLink();
+        b = x.A.getHomeLink();
     return S && (b = j.BVt.APPLICATION_STORE), (0, i.jsx)(U, {
         selected: e,
         user: h,

@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(271683),
     g = n(186369),
     f = n(725613),
-    x = n(963027),
-    E = n(844262),
+    E = n(963027),
+    x = n(844262),
     I = n(47167),
     C = n(262763),
     N = n(5932),
@@ -47,8 +47,8 @@ var i = n(627968),
     K = n(977997),
     Y = n(147036),
     z = n(557534),
-    q = n(68437),
-    X = n(166444),
+    X = n(68437),
+    q = n(166444),
     $ = n(850457),
     Q = n(469178),
     J = n(562991),
@@ -350,7 +350,7 @@ class el extends z.Ay {
                     shouldShow: L || "history" === this.state.popoutToShow && !(u || h),
                     children: () => (0, i.jsx)(d.m, {
                         text: this.getTooltipText(),
-                        children: (0, i.jsxs)(X.Ay, {
+                        children: (0, i.jsxs)(q.Ay, {
                             ref: this.channelItemRef,
                             className: ei.Ki,
                             iconClassName: a()({
@@ -373,7 +373,7 @@ class el extends z.Ay {
                             },
                             connectDragPreview: p,
                             isFavoriteSuggestion: b,
-                            "aria-label": (0, x.Ay)({
+                            "aria-label": (0, E.Ay)({
                                 channel: e,
                                 unread: l,
                                 mentionCount: r,
@@ -381,7 +381,7 @@ class el extends z.Ay {
                                 embeddedActivitiesCount: T.length,
                                 isSubscriptionGated: S
                             }),
-                            "aria-describedby": (0, E.A)({
+                            "aria-describedby": (0, x.A)({
                                 channel: e,
                                 embeddedApps: T
                             }),
@@ -430,7 +430,7 @@ function ea(e) {
             bypassLimit: B.A.can(ee.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !i.canChat
         }
-    }), A = (0, r.bG)([K.A], () => K.A.hasVideo(n.id)), _ = (0, m.Ay)(n), p = (0, I.Ay)(n), x = (0, v.Qs)(n.id), E = (0, r.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
+    }), A = (0, r.bG)([K.A], () => K.A.hasVideo(n.id)), _ = (0, m.Ay)(n), p = (0, I.Ay)(n), E = (0, v.Qs)(n.id), x = (0, r.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
         isSubscriptionGated: C,
         needSubscriptionToAccess: N
     } = (0, y.A)(n.id), S = (0, T.A)(), b = (0, r.bG)([F.Ay], () => F.Ay.isFavorite(t.id, n.id)), j = e.connected || S?.channelId === n.id, {
@@ -449,7 +449,7 @@ function ea(e) {
     }), {
         enableHighlight: U,
         enableWaveformIcon: G
-    } = (0, g.b)(t.id, "VoiceChannel"), k = null != d && d.length > 0, H = U && k, W = G && k, Y = (0, q.A)({
+    } = (0, g.b)(t.id, "VoiceChannel"), k = null != d && d.length > 0, H = U && k, W = G && k, Y = (0, X.A)({
         channel: n,
         isChannelSelected: a,
         isChannelCollapsed: o,
@@ -464,7 +464,7 @@ function ea(e) {
         embeddedApps: _,
         embeddedActivityType: ee.$pd.PLAYING,
         video: A,
-        hasActiveEvent: null != x,
+        hasActiveEvent: null != E,
         isSubscriptionGated: C,
         needSubscriptionToAccess: N,
         ...c,
@@ -479,7 +479,7 @@ function ea(e) {
         showEmptyChannelTopic: M,
         enableOpenTIVForPing: D,
         hasChannelInfo: null != Y,
-        hasStartTime: E,
+        hasStartTime: x,
         shouldHighlightChannel: H,
         shouldUseAnimatedWaveform: W
     })

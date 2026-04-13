@@ -18,9 +18,9 @@ var i = n(627968),
     p = n(394953),
     g = n(355216),
     f = n(596540),
-    x = n(879221);
+    E = n(879221);
 n(445368);
-var E = n(652215),
+var x = n(652215),
     I = n(790782),
     C = n(480293);
 
@@ -76,7 +76,7 @@ function T(e) {
             badgeDimensions: a
         }
     }(S), R = b === m.U5.LEGACY ? o.K$s : o.XFE, O = (0, a.bG)([A.A], () => A.A.getChannelId()), L = l.useMemo(() => {
-        if (b === m.U5.SIDEBAR) return E.BVt.CHANNEL(E.gNP, O)
+        if (b === m.U5.SIDEBAR) return x.BVt.CHANNEL(x.gNP, O)
     }, [b, O]);
     return (0, i.jsxs)(c.c, {
         ref: h,
@@ -86,7 +86,7 @@ function T(e) {
             unread: j > 0,
             className: C.Io,
             disabled: b === m.U5.LEGACY
-        }), (0, i.jsx)(x.A, {
+        }), (0, i.jsx)(E.A, {
             children: (0, i.jsx)(o.Qk9, {
                 selected: S || f,
                 lowerBadge: y,

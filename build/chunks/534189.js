@@ -19,8 +19,8 @@ var l = n(934551),
     p = n(389996),
     g = n(559506),
     f = n(361311),
-    x = n(886891),
-    E = n(743987),
+    E = n(886891),
+    x = n(743987),
     I = n(501193),
     C = n(383448),
     N = n(900179),
@@ -70,13 +70,13 @@ function L(e) {
                 onOpenProfile: U
             })
         }), G === v.eA$.PENDING_INCOMING && (0, i.jsx)(S.A.Overlay, {
-            children: (0, i.jsx)(x.A, {
+            children: (0, i.jsx)(E.A, {
                 user: t,
                 channelId: M.id,
                 applicationId: P
             })
         }), k.map(e => (0, i.jsx)(S.A.Overlay, {
-            children: (0, i.jsx)(x.A, {
+            children: (0, i.jsx)(E.A, {
                 user: t,
                 isGameRelationship: !0,
                 applicationId: e.applicationId,
@@ -128,7 +128,7 @@ function L(e) {
             }), (0, i.jsx)(N.A, {
                 heading: t.bot ? R.intl.string(R.t["A//N4k"]) : R.intl.string(R.t.a6XYD9),
                 headingColor: "text-strong",
-                children: (0, i.jsx)(E.A, {
+                children: (0, i.jsx)(x.A, {
                     userId: t.id
                 })
             })]

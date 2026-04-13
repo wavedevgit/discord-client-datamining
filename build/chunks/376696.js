@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(727353),
     g = n(140547),
     f = n(636920),
-    x = n(958140),
-    E = n(832163),
+    E = n(958140),
+    x = n(832163),
     I = n(565688),
     C = n(533562),
     N = n(760716),
@@ -56,11 +56,11 @@ function k(e) {
         K = l.useMemo(() => W.filter(e => e.embeddedActivity.userIds.has(n.id)), [W, n.id]),
         Y = Array.from((0, u.Rz)(K).values()),
         z = (0, C.W)(),
-        q = (0, N.i)(e => e.showSelfActivity),
-        [X, $] = (0, r.yK)([S.A], () => [S.A.getStreamForUser(n.id, t.getGuildId()), S.A.getActiveStreamForUser(n.id, t.getGuildId())], [t, n.id]),
+        X = (0, N.i)(e => e.showSelfActivity),
+        [q, $] = (0, r.yK)([S.A], () => [S.A.getStreamForUser(n.id, t.getGuildId()), S.A.getActiveStreamForUser(n.id, t.getGuildId())], [t, n.id]),
         [Q, J] = (0, r.yK)([R.A, y.A, v.A, A.default], () => (0, _.eo)(t, R.A, y.A, v.A, A.default)),
         Z = (0, r.bG)([b.default], () => b.default.getId()),
-        ee = (0, r.bG)([j.A], () => (0, m.nr)(X, j.A), [X]),
+        ee = (0, r.bG)([j.A], () => (0, m.nr)(q, j.A), [q]),
         et = (0, c.m)(n, k ?? ee),
         {
             enableHangStatus: en
@@ -71,10 +71,10 @@ function k(e) {
         ei = (0, I.m)({
             location: "voice_channel_activities"
         }),
-        el = (0, r.bG)([E.A], () => E.A.getDetectableIdsToApplicationIds()),
-        es = (0, r.bG)([b.default], () => b.default.getId() === n.id && !q),
+        el = (0, r.bG)([x.A], () => x.A.getDetectableIdsToApplicationIds()),
+        es = (0, r.bG)([b.default], () => b.default.getId() === n.id && !X),
         ea = (0, h.r9)() && (0, h.UK)(t.id),
-        er = null != X && !ea,
+        er = null != q && !ea,
         eo = et.length + Y.length > 0,
         ed = null != B,
         ec = er || eo || ed && en;
@@ -84,7 +84,7 @@ function k(e) {
             channel_id: t.id,
             other_user_id: n.id
         })
-    }, [es, en, ec, t.id, n.id]), es && en) ? (0, i.jsx)(x.h, {
+    }, [es, en, ec, t.id, n.id]), es && en) ? (0, i.jsx)(E.h, {
         channel: t,
         setIsHangStatusInputFocused: V,
         setIsEmojiPickerOpen: H
@@ -104,8 +104,8 @@ function k(e) {
                 analyticsSource: "VoiceUserActivities",
                 onAction: s
             })]
-        }) : null, null == X || null == w || ea ? null : (0, i.jsx)(p.P, {
-            stream: X,
+        }) : null, null == q || null == w || ea ? null : (0, i.jsx)(p.P, {
+            stream: q,
             activeStream: $,
             streamActivity: ee,
             user: n,

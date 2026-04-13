@@ -1,6 +1,6 @@
 /** chunk id: 825453 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => j
 }), n(321073);
 var i = n(64700),
     l = n(284009),
@@ -21,7 +21,7 @@ var i = n(64700),
     f = n(200662),
     _ = n(652215);
 
-function N(e, t, n) {
+function j(e, t, n) {
     let l = (0, o.bG)([b.A], () => b.A.getApplicationPermissions()),
         a = i.useMemo(() => {
             var t;
@@ -38,24 +38,24 @@ function N(e, t, n) {
                 type: c.RA.CHANNEL
             }), n
         }, [l, e]),
-        N = (0, o.bG)([b.A], () => {
+        j = (0, o.bG)([b.A], () => {
             if (null == n) return;
             let e = b.A.getCommand(n);
             return e?.permissions ?? {}
         }, [n]),
-        j = (0, o.bG)([b.A], () => null == n ? b.A.getEditedApplication() : b.A.getEditedCommand()?.permissions, [n]),
+        N = (0, o.bG)([b.A], () => null == n ? b.A.getEditedApplication() : b.A.getEditedCommand()?.permissions, [n]),
         v = n ?? t,
-        T = null != n ? N : a,
-        C = i.useMemo(() => j ?? {
+        T = null != n ? j : a,
+        C = i.useMemo(() => N ?? {
             ...T ?? {}
-        }, [j, T]),
-        I = i.useMemo(() => Object.keys(C).length, [C]),
-        E = i.useMemo(() => null == T || null == C ? null : !r().isEqual(T, C), [T, C]);
+        }, [N, T]),
+        E = i.useMemo(() => Object.keys(C).length, [C]),
+        I = i.useMemo(() => null == T || null == C ? null : !r().isEqual(T, C), [T, C]);
     return i.useEffect(() => {
-        v === t && (E ? d.A.startEditingCommandPermissions(v) : d.A.stopEditingCommandPermissions(v))
-    }, [t, E, v]), {
+        v === t && (I ? d.A.startEditingCommandPermissions(v) : d.A.stopEditingCommandPermissions(v))
+    }, [t, I, v]), {
         originalApplicationPermissions: a,
-        originalCommandPermissions: N,
+        originalCommandPermissions: j,
         editedTargetPermissions: function(e, t) {
             let n = (0, o.bG)([x.A], () => x.A.getGuild(e), [e]);
             s()(null != n, "guild must be present to be editing its integration settings");
@@ -78,8 +78,8 @@ function N(e, t, n) {
                         userIds: i
                     }
                 }, [t]),
-                N = (0, o.cf)([m.A], () => Object.fromEntries(d.map(m.A.getChannel).filter(A.Vq).map(e => [e.id, e])), [d]),
-                j = (0, o.cf)([g.A], () => Object.fromEntries(b.map(t => g.A.getRole(e, t)).filter(A.Vq).map(e => [e.id, e])), [b, e]),
+                j = (0, o.cf)([m.A], () => Object.fromEntries(d.map(m.A.getChannel).filter(A.Vq).map(e => [e.id, e])), [d]),
+                N = (0, o.cf)([g.A], () => Object.fromEntries(b.map(t => g.A.getRole(e, t)).filter(A.Vq).map(e => [e.id, e])), [b, e]),
                 v = (0, o.cf)([p.default], () => Object.fromEntries(f.map(p.default.getUser).filter(A.Vq).map(e => [e.id, e])), [f]);
             return i.useMemo(() => {
                 let e = n.id,
@@ -90,11 +90,11 @@ function N(e, t, n) {
                         d = !1;
                     if (o.type === c.RA.CHANNEL) {
                         let e = o.id === i,
-                            n = N[o.id];
+                            n = j[o.id];
                         t = e || h.A.can(_.xBc.VIEW_CHANNEL, n), d = !0
                     } else if (o.type === c.RA.ROLE) {
                         let i = o.id === e,
-                            s = j[o.id];
+                            s = N[o.id];
                         t = i || null != s, d = r || i || h.A.isRoleHigher(n, l, s)
                     } else if (o.type === c.RA.USER) {
                         let e = v[o.id];
@@ -107,9 +107,9 @@ function N(e, t, n) {
                     }
                 }
                 return s
-            }, [N, n, l, r, t, j, v])
+            }, [j, n, l, r, t, N, v])
         }(e, C),
-        hasChanges: E,
-        selectedPermissionCount: I
+        hasChanges: I,
+        selectedPermissionCount: E
     }
 }

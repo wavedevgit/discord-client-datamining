@@ -79,8 +79,8 @@ function h(e) {
     } = e, A = s.useRef(null), p = s.useRef(null), f = s.useRef(null), j = (0, u.M)(t), {
         handlePasteEvent: N,
         handleInputChange: E,
-        handleKeyDown: C,
-        handleContainerKeyUp: T,
+        handleKeyDown: T,
+        handleContainerKeyUp: C,
         handleRemoveTag: I,
         handleTagChangeEvent: b,
         handleSelectTag: v,
@@ -124,7 +124,7 @@ function h(e) {
         className: r()(m.rs, h),
         ref: p,
         tabIndex: 0,
-        onKeyUp: T,
+        onKeyUp: C,
         children: [(0, i.jsxs)(x, {
             ref: f,
             onClick: P,
@@ -144,7 +144,7 @@ function h(e) {
                 }),
                 ref: A,
                 onChange: E,
-                onKeyDownCapture: C,
+                onKeyDownCapture: T,
                 onPaste: N,
                 onBlur: R,
                 placeholder: 0 === G.length ? g : void 0,

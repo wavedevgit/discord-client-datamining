@@ -22,9 +22,9 @@ var p = n(985018),
 function f(e) {
     let {
         channel: t
-    } = e, [s, f] = l.useState(!1), x = l.useRef(null), E = l.useRef(null);
+    } = e, [s, f] = l.useState(!1), E = l.useRef(null), x = l.useRef(null);
     l.useEffect(() => () => {
-        clearTimeout(E.current)
+        clearTimeout(x.current)
     }, []);
     let I = (0, r.bG)([h.A, A.default], () => {
             let e = h.A.getLastLeftUserId(t.id);
@@ -52,13 +52,13 @@ function f(e) {
             })
         },
         b = () => {
-            clearTimeout(E.current), E.current = setTimeout(() => f(!0), 100)
+            clearTimeout(x.current), x.current = setTimeout(() => f(!0), 100)
         },
         y = () => {
-            clearTimeout(E.current), E.current = setTimeout(() => f(!1), 100)
+            clearTimeout(x.current), x.current = setTimeout(() => f(!1), 100)
         };
     return null == I ? null : (0, i.jsx)(o.YNO, {
-        targetElementRef: x,
+        targetElementRef: E,
         position: "right",
         shouldShow: s,
         onRequestOpen: b,
@@ -77,7 +77,7 @@ function f(e) {
                 ...l
             } = e;
             return (0, i.jsxs)(o.DUT, {
-                innerRef: x,
+                innerRef: E,
                 className: g.nM,
                 "aria-haspopup": "dialog",
                 onClick: b,

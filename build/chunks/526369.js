@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(733586),
     g = n(530804),
     f = n(71393),
-    x = n(576705),
-    E = n(686502),
+    E = n(576705),
+    x = n(686502),
     I = n(175203),
     C = n(263854),
     N = n(652215),
@@ -52,7 +52,7 @@ function S(e) {
             })
         })
     }, [y.id, D]);
-    let k = (0, r.bG)([x.A], () => y.isPrivate() || (0, _.K)(x.A, M, y), [M, y]),
+    let k = (0, r.bG)([E.A], () => y.isPrivate() || (0, _.K)(E.A, M, y), [M, y]),
         w = M?.afkChannelId === y.id,
         B = y.userLimit <= 0 || y.userLimit > 1,
         V = (0, r.bG)([d.Ay], () => d.Ay.getEmbeddedActivitiesForChannel(y.id).length <= 0),
@@ -83,14 +83,14 @@ function S(e) {
         trackOnInitialLoad: !0
     }, []);
     let Y = V && !F;
-    null != M && !w && (U >= 2 && Y && !H && !W ? K.push(e => (0, i.jsx)(E.y, {
+    null != M && !w && (U >= 2 && Y && !H && !W ? K.push(e => (0, i.jsx)(x.y, {
         channel: y,
         guild: M,
         width: e,
         inPopout: L,
         handleClose: P,
         userParticipantCount: U
-    })) : B && 1 === U && k && K.push(e => (0, i.jsx)(E.y, {
+    })) : B && 1 === U && k && K.push(e => (0, i.jsx)(x.y, {
         channel: y,
         guild: M,
         width: e,

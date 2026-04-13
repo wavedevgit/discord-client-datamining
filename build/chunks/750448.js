@@ -22,13 +22,13 @@ function f() {
     return !1
 }
 
-function x(e) {
+function E(e) {
     let t = o.default.getMutableGuildStates();
     return e === _.sFm.SERVER_DISCOVERY_BADGE && !u.A.hasViewed(_.sFm.SERVER_DISCOVERY_BADGE) || e !== p && e !== g && t[e ?? "null"]?.highImportanceMentionCount > 0
 }
-let E = (0, A.L_)((e, t, n) => ["null", ...t, ...e, g, _.sFm.E3_SERVER_DISCOVERY_BADGE, p]),
+let x = (0, A.L_)((e, t, n) => ["null", ...t, ...e, g, _.sFm.E3_SERVER_DISCOVERY_BADGE, p]),
     I = l.forwardRef(function(e, t) {
-        let n = (0, s.yK)([c.Ay, d.A, o.default], () => E(c.Ay.getGuildFolders(), d.A.getUnreadPrivateChannelIds(), o.default.getStoreChangeSentinel())),
+        let n = (0, s.yK)([c.Ay, d.A, o.default], () => x(c.Ay.getGuildFolders(), d.A.getUnreadPrivateChannelIds(), o.default.getStoreChangeSentinel())),
             l = (0, s.bG)([h.A], () => h.A.isFocused()),
             u = (0, s.bG)([r.A], () => r.A.getExpandedFolders());
         return (0, i.jsx)(a.A, {
@@ -38,7 +38,7 @@ let E = (0, A.L_)((e, t, n) => ["null", ...t, ...e, g, _.sFm.E3_SERVER_DISCOVERY
             isUnread: f,
             textUnread: m.intl.string(m.t.y2b7CA),
             textMention: m.intl.string(m.t.y2b7CA),
-            isMentioned: x,
+            isMentioned: E,
             animate: l,
             expandedFolders: u
         })

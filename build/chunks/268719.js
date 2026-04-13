@@ -1,30 +1,30 @@
 /** chunk id: 268719 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => c
+    A: () => o
 });
 var i = n(627968);
 n(64700);
 var r = n(311907),
     s = n(994500),
-    l = n(301960);
+    a = n(301960);
 
-function a(e) {
+function l(e) {
     let {
         message: t,
         channel: n,
-        compact: a
-    } = e, c = (0, r.bG)([s.A], () => null != t.interaction && s.A.isBlocked(t.interaction.user.id), [t.interaction]);
-    return (0, i.jsx)(l.A, {
+        compact: l
+    } = e, o = (0, r.bG)([s.A], () => null != t.interaction && s.A.isBlocked(t.interaction.user.id), [t.interaction]);
+    return (0, i.jsx)(a.A, {
         message: t,
         channel: n,
-        compact: a,
-        isInteractionUserBlocked: c
+        compact: l,
+        isInteractionUserBlocked: o
     })
 }
 
-function c(e, t, n) {
-    return null != e.interaction && "" !== e.interaction.displayName ? (0, i.jsx)(a, {
+function o(e, t, n) {
+    return null != e.interaction && "" !== e.interaction.displayName ? (0, i.jsx)(l, {
         message: e,
         channel: t,
         compact: n

@@ -25,9 +25,9 @@ function m(e) {
     } = e, {
         isOpen: g,
         setIsOpen: f
-    } = (0, c.A)(), x = l.useCallback(() => {
+    } = (0, c.A)(), E = l.useCallback(() => {
         f(!1)
-    }, [f]), E = l.useCallback(() => {
+    }, [f]), x = l.useCallback(() => {
         f(!g)
     }, [g, f]);
     (0, r.Ay)(() => {
@@ -35,7 +35,7 @@ function m(e) {
             f(!1)
         };
         return a.h.subscribe("USER_SETTINGS_MODAL_OPEN", e), () => a.h.unsubscribe("USER_SETTINGS_MODAL_OPEN", e)
-    }), l.useEffect(() => (o._.subscribe(h.jej.TOGGLE_INBOX, E), () => void o._.unsubscribe(h.jej.TOGGLE_INBOX, E)), [E]);
+    }), l.useEffect(() => (o._.subscribe(h.jej.TOGGLE_INBOX, x), () => void o._.unsubscribe(h.jej.TOGGLE_INBOX, x)), [x]);
     let {
         entrypoint: I
     } = (0, d.X8)({
@@ -48,7 +48,7 @@ function m(e) {
         animation: I === d.RK.TITLE_BAR_LEFT ? s.YNO.Animation.TRANSLATE : s.YNO.Animation.FADE,
         animationPosition: I === d.RK.TITLE_BAR_LEFT ? "bottom" : "left",
         position: n,
-        onRequestClose: x,
+        onRequestClose: E,
         spacing: m,
         renderPopout: () => (0, i.jsx)(s.lGe, {
             "aria-label": A.intl.string(A.t.GSmTKJ),
@@ -58,7 +58,7 @@ function m(e) {
             let {
                 isShown: i
             } = n;
-            return t(E, i, e)
+            return t(x, i, e)
         }
     })
 }

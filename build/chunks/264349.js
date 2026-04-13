@@ -1,9 +1,9 @@
 /** chunk id: 264349 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Zy: () => a,
-    cT: () => c,
-    ih: () => l
+    Zy: () => l,
+    cT: () => o,
+    ih: () => a
 });
 var i = n(627968);
 n(64700);
@@ -16,7 +16,7 @@ function s(e) {
         }, e => (t(!1), e())))
     })
 }
-let l = e => s(async (t, r) => {
+let a = e => s(async (t, r) => {
         let {
             default: s
         } = await n.e("6322").then(n.bind(n, 49065));
@@ -28,11 +28,11 @@ let l = e => s(async (t, r) => {
             onCancel: () => r(n.onClose)
         })
     }),
-    a = (e, t) => s(async (r, s) => {
+    l = (e, t) => s(async (r, s) => {
         let {
-            default: l
+            default: a
         } = await n.e("78785").then(n.bind(n, 92696));
-        return n => (0, i.jsx)(l, {
+        return n => (0, i.jsx)(a, {
             ...n,
             ruleName: e,
             keyword: t,
@@ -41,16 +41,16 @@ let l = e => s(async (t, r) => {
             onCancel: () => s(n.onClose)
         })
     }),
-    c = e => t => s(async (r, s) => {
+    o = e => t => s(async (r, s) => {
         let {
-            default: l
-        } = await n.e("99979").then(n.bind(n, 146502)), a = () => {
+            default: a
+        } = await n.e("99979").then(n.bind(n, 146502)), l = () => {
             t(), r()
         };
-        return t => (0, i.jsx)(l, {
+        return t => (0, i.jsx)(a, {
             ruleName: e,
             ...t,
-            onConfirm: a,
+            onConfirm: l,
             onClose: () => s(t.onClose),
             onCancel: () => s(t.onClose)
         })

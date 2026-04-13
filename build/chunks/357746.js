@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(828162),
     g = n(249584),
     f = n(49999),
-    x = n(333354),
-    E = n(985018),
+    E = n(967919),
+    x = n(985018),
     I = n(384055);
 
 function C(e) {
@@ -153,7 +153,7 @@ let N = {
                     className: a()({
                         [I.A7]: T?.showUnread === !0
                     }),
-                    children: E.intl.string(x.default.yv3DJJ)
+                    children: x.intl.string(E.default.yv3DJJ)
                 }),
                 selected: s,
                 onClick: S,

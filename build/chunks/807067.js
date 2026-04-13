@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(392054),
     g = n(354138),
     f = n(111042),
-    x = n(767599),
-    E = n(267102),
+    E = n(767599),
+    x = n(267102),
     I = n(246356),
     C = n(111162),
     N = n(954571),
@@ -40,7 +40,7 @@ function L(e) {
         } = e,
         {
             fetchState: p,
-            voiceBannerCollection: E
+            voiceBannerCollection: x
         } = (t = (0, d.bG)([C.default], () => C.default.onlyShowPreviewAppCollections) ? a.W.PREVIEW : a.W.ACTIVE, l.useEffect(() => {
             (0, g.An)({
                 surface: R,
@@ -58,9 +58,9 @@ function L(e) {
         }),
         I = p === f.e.FETCHING,
         N = l.useMemo(() => {
-            let e = E?.application_directory_collection_items[0];
+            let e = x?.application_directory_collection_items[0];
             return null == e ? null : e.type === o.L.APPLICATION_BANNER ? e : null
-        }, [E?.application_directory_collection_items]),
+        }, [x?.application_directory_collection_items]),
         {
             trackItemImpressionRef: T
         } = (0, _.A)({
@@ -71,7 +71,7 @@ function L(e) {
             sectionOverallPosition: 0,
             promotionalLabel: null != N ? (0, A.Ii)(N.application) : void 0
         });
-    return null == N || null == E || I ? null : (null != N.id && null != N.image_hash && (n = (0, x.DH)({
+    return null == N || null == x || I ? null : (null != N.id && null != N.image_hash && (n = (0, E.DH)({
         itemId: N.id,
         hash: N.image_hash,
         containerWidth: 584
@@ -122,12 +122,12 @@ let M = l.forwardRef(function(e, t) {
     }, [g, f]), l.useEffect(() => {
         a || r()
     }, [r, a]);
-    let x = (0, E.Us)(),
+    let E = (0, x.Us)(),
         {
             analyticsLocations: C,
             newestAnalyticsLocation: R
         } = (0, h.Ay)(u.A.ACTIVITIES_MINI_SHELF),
-        M = x === y.BRT.POPOUT,
+        M = E === y.BRT.POPOUT,
         D = (n = s.getGuildId(), (0, S.A)({
             guildId: n
         }).slice(0, 5));

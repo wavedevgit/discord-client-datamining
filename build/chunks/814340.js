@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(12351),
     g = n(915089),
     f = n(734057),
-    x = n(458294),
-    E = n(71393),
+    E = n(458294),
+    x = n(71393),
     I = n(290863),
     C = n(222823),
     N = n(309010),
@@ -52,7 +52,7 @@ class G extends l.Component {
         unread: !1
     };
     render() {
-        let e = E.A.getGuild(this.props.channel.guild_id);
+        let e = x.A.getGuild(this.props.channel.guild_id);
         return (0, i.jsx)(R.c3, {
             ...this.props,
             children: (0, i.jsx)("div", {
@@ -82,12 +82,12 @@ let P = o.Ay.connectStores([C.Ay, f.A], e => {
             voiceStates: T.Ay.getVoiceStates(t.guild_id)[t.id]
         }
     })(G),
-    w = o.Ay.connectStores([x.default], e => {
+    w = o.Ay.connectStores([E.default], e => {
         let {
             guild: t
         } = e;
         return {
-            unread: x.default.hasUnread(t.id)
+            unread: E.default.hasUnread(t.id)
         }
     })(R.OS),
     B = o.Ay.connectStores([C.Ay, I.A], e => {
@@ -196,7 +196,7 @@ class F extends l.PureComponent {
             case _.rD.TEXT_CHANNEL:
             case _.rD.VOICE_CHANNEL:
                 let l = t.record,
-                    s = E.A.getGuild(l.getGuildId());
+                    s = x.A.getGuild(l.getGuildId());
                 if (null == s) return;
                 switch (l.type) {
                     case L.rbe.GUILD_TEXT:

@@ -23,8 +23,8 @@ function g(e) {
         setCustomStatusEmoji: n,
         selectedDefaultStatus: g,
         setIsEmojiPickerOpen: f,
-        defaultStatusVariant: x
-    } = e, E = l.useRef(null), I = (0, s.bG)([h.A, u.A], () => u.A.getChannel(h.A.getVoiceChannelId())), C = l.useCallback(() => null != t ? (0, i.jsx)(r.A, {
+        defaultStatusVariant: E
+    } = e, x = l.useRef(null), I = (0, s.bG)([h.A, u.A], () => u.A.getChannel(h.A.getVoiceChannelId())), C = l.useCallback(() => null != t ? (0, i.jsx)(r.A, {
         emojiId: t.id,
         emojiName: t.name,
         animated: !!t.animated
@@ -36,10 +36,10 @@ function g(e) {
             type: _.$pd.HANG_STATUS,
             state: g
         },
-        fallbackVariant: x
-    }) : null, [t, x, g]);
+        fallbackVariant: E
+    }) : null, [t, E, g]);
     return (0, i.jsx)(a.YNO, {
-        targetElementRef: E,
+        targetElementRef: x,
         onRequestOpen: () => f(!0),
         onRequestClose: () => f(!1),
         renderPopout: e => {
@@ -77,7 +77,7 @@ function g(e) {
             } = n;
             return (0, i.jsx)(o.A, {
                 ...e,
-                ref: E,
+                ref: x,
                 active: l,
                 tabIndex: 0,
                 renderButtonContents: null == t && null == g ? null : C

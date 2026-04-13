@@ -23,15 +23,15 @@ function A(e) {
         isEntryAdmin: p,
         canEdit: g,
         canRemove: f
-    } = (0, u.A)(t), x = (0, o.A)({
+    } = (0, u.A)(t), E = (0, o.A)({
         id: t.guildId,
         label: h.intl.string(h.t["94lLD7"]),
         onSuccess: _
     });
     l.useEffect(() => {
-        g || f || null != x || (0, r.Z_)()
+        g || f || null != E || (0, r.Z_)()
     });
-    let E = () => {
+    let x = () => {
         c.ZM(t.channelId, t.guildId)
     };
 
@@ -73,7 +73,7 @@ function A(e) {
                             guildName: t.name
                         }),
                         confirmText: h.intl.string(h.t.N86XcP),
-                        onConfirm: E
+                        onConfirm: x
                     }), I()
                 },
                 color: "danger",
@@ -95,7 +95,7 @@ function A(e) {
                 color: "danger"
             })]
         }), (0, i.jsx)(a.rXV, {
-            children: x
+            children: E
         })]
     })
 }

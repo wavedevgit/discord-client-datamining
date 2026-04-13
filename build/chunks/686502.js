@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(975412),
     g = n(392054),
     f = n(826673),
-    x = n(757293),
-    E = n(954571),
+    E = n(757293),
+    x = n(954571),
     I = n(272812),
     C = n(652215),
     N = n(985018),
@@ -124,7 +124,7 @@ function v(e) {
         activitiesEnabled: o = !0
     } = e;
     l.useEffect(() => {
-        E.default.track(C.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+        x.default.track(C.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
             tile_type: "activity invite",
             n_participants: 1
         })
@@ -202,7 +202,7 @@ function j(e) {
         userParticipantCount: d
     } = e;
     (0, u.Ay)(() => {
-        E.default.track(C.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+        x.default.track(C.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
             tile_type: "activity suggestion",
             n_participants: d
         })
@@ -239,20 +239,20 @@ function j(e) {
             }), (0, i.jsxs)(c.DUT, {
                 className: T.HI,
                 onClick: function() {
-                    E.default.track(C.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+                    x.default.track(C.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
                         tile_type: "activity suggestion",
                         close_type: "permanent",
                         n_participants: d
                     }), (0, f.Dr)(r.M.VC_TILE_ACTIVITIES_ENTRY_POINT)
                 },
-                children: [(0, i.jsx)(x.A, {}), (0, i.jsx)(c.Text, {
+                children: [(0, i.jsx)(E.A, {}), (0, i.jsx)(c.Text, {
                     variant: "text-sm/medium",
                     children: N.intl.string(N.t["5E9SB9"])
                 })]
             }), (0, i.jsx)(c.DUT, {
                 className: T.cG,
                 onClick: function() {
-                    E.default.track(C.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+                    x.default.track(C.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
                         tile_type: "activity suggestion",
                         close_type: "temporary",
                         n_participants: d

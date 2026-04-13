@@ -19,8 +19,8 @@ var l = n(503698),
     p = n(508654),
     g = n(974930),
     f = n(961314),
-    x = n(58736),
-    E = n(742589),
+    E = n(58736),
+    x = n(742589),
     I = n(376352),
     C = n(353428),
     N = n(46054),
@@ -74,7 +74,7 @@ function w(e) {
         h = null != u ? (0, g.G3)(u) : null,
         A = null != u;
     if (l?.type === D.lp.ACTIVITY) null != n && (t = (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(x.Ay.Divider, {
+        children: [(0, i.jsx)(E.Ay.Divider, {
             className: G.yF
         }), (0, i.jsx)(m.A, {
             game: n,
@@ -93,7 +93,7 @@ function w(e) {
         let e = l.user,
             n = l.stream;
         t = (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(x.Ay.Divider, {
+            children: [(0, i.jsx)(E.Ay.Divider, {
                 className: G.yF
             }), (0, i.jsx)(k, {
                 user: e,
@@ -184,8 +184,8 @@ function B(e) {
         });
     return (0, i.jsxs)("div", {
         className: G.SC,
-        children: [(0, i.jsxs)(x.Ay, {
-            onDoubleClick: E.I,
+        children: [(0, i.jsxs)(E.Ay, {
+            onDoubleClick: x.I,
             transparent: !0,
             className: G.jr,
             innerClassName: G.gi,
@@ -200,10 +200,10 @@ function B(e) {
                 focusedApplication: v,
                 shouldShowHeaderParticipants: g
             }),
-            children: [(0, i.jsx)(x.Ay.Title, {
+            children: [(0, i.jsx)(E.Ay.Title, {
                 wrapperClassName: G.DD,
                 children: (0, i.jsxs)(i.Fragment, {
-                    children: [null != y ? (0, i.jsx)(x.Ay.ChannelIcon, {
+                    children: [null != y ? (0, i.jsx)(E.Ay.ChannelIcon, {
                         icon: y,
                         "aria-label": O
                     }) : null, I, F && (0, i.jsx)(r.m, {

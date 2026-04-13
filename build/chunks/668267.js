@@ -4,29 +4,29 @@ n.d(e, {
     LO: () => s,
     P: () => f,
     TX: () => c,
-    U5: () => _,
-    XC: () => h,
-    mv: () => o,
-    tC: () => v,
-    uS: () => A
+    U5: () => v,
+    XC: () => _,
+    mv: () => d,
+    tC: () => A,
+    uS: () => h
 });
 var i = n(967198),
-    l = n(954571),
-    a = n(5180),
+    a = n(954571),
+    l = n(5180),
     r = n(652215);
-let d = "manual_browsing";
+let o = "manual_browsing";
 
-function o(t) {
-    (0, a.ai)(i.A.getGuildId()) || (d = t)
+function d(t) {
+    (0, l.ai)(i.A.getGuildId()) || (o = t)
 }
 
 function u() {
-    let t = d;
-    return d = "manual_browsing", t
+    let t = o;
+    return o = "manual_browsing", t
 }
 
 function s(t, e, n) {
-    l.default.track(r.HAw.FAVORITES_GUILD_ADD_TO_FAVORITES, {
+    a.default.track(r.HAw.FAVORITES_GUILD_ADD_TO_FAVORITES, {
         source: t,
         channel_type: e,
         total_favorites: n
@@ -34,37 +34,37 @@ function s(t, e, n) {
 }
 
 function c(t, e) {
-    l.default.track(r.HAw.FAVORITES_GUILD_REMOVE_FROM_FAVORITES, {
+    a.default.track(r.HAw.FAVORITES_GUILD_REMOVE_FROM_FAVORITES, {
         channel_type: t,
         total_favorites: e
     })
 }
 
 function f() {
-    l.default.track(r.HAw.FAVORITES_GUILD_ORDER_UPDATED)
+    a.default.track(r.HAw.FAVORITES_GUILD_ORDER_UPDATED)
 }
 
-function A(t, e) {
-    l.default.track(r.HAw.FAVORITES_GUILD_SETTING_TOGGLED, {
+function h(t, e) {
+    a.default.track(r.HAw.FAVORITES_GUILD_SETTING_TOGGLED, {
         source: t,
         is_visible: e
     })
 }
 
-function h(t) {
-    l.default.track(r.HAw.FAVORITES_GUILD_UPSELL_MODAL_OPENED, {
+function _(t) {
+    a.default.track(r.HAw.FAVORITES_GUILD_UPSELL_MODAL_OPENED, {
         source: t
     })
 }
 
-function v(t) {
-    l.default.track(r.HAw.FAVORITES_GUILD_ADD_MODAL_OPENED, {
+function A(t) {
+    a.default.track(r.HAw.FAVORITES_GUILD_ADD_MODAL_OPENED, {
         source: t
     })
 }
 
-function _(t, e, n, i) {
-    l.default.track(r.HAw.FAVORITES_GUILD_VIEWED, {
+function v(t, e, n, i) {
+    a.default.track(r.HAw.FAVORITES_GUILD_VIEWED, {
         source: t,
         total_favorites: e,
         is_xp_enabled: n,

@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(263063),
     g = n(394953),
     f = n(976860),
-    x = n(622543),
-    E = n(576622),
+    E = n(622543),
+    x = n(576622),
     I = n(994500),
     C = n(967198),
     N = n(287809),
@@ -105,7 +105,7 @@ function G(e) {
         renderFollowButton: p
     } = e, g = (0, _.gU)(t, r), {
         prefix: f,
-        level: x
+        level: E
     } = function(e, t) {
         switch (e) {
             case O.rbe.DM:
@@ -137,7 +137,7 @@ function G(e) {
                     prefix: null, level: 1
                 }
         }
-    }(t.type, r), E = (0, i.jsxs)(i.Fragment, {
+    }(t.type, r), x = (0, i.jsxs)(i.Fragment, {
         children: [null != f ? (0, i.jsxs)(c.AC4, {
             children: [f, ":"]
         }) : null, " ", n]
@@ -145,13 +145,13 @@ function G(e) {
     switch (t.type) {
         case O.rbe.DM:
             return (0, i.jsx)(R.A, {
-                level: x,
+                level: E,
                 channel: t,
                 handleClick: d,
                 handleContextMenu: u
             });
         case O.rbe.GROUP_DM:
-            if (t.isManaged()) return E;
+            if (t.isManaged()) return x;
             return (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(c.AC4, {
                     children: M.intl.string(M.t["e5y+gm"])
@@ -166,35 +166,35 @@ function G(e) {
             return null != t.linkedLobby ? (0, i.jsxs)(U, {
                 channel: t,
                 children: [w(g, t.type === O.rbe.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
-                    level: x,
+                    level: E,
                     onContextMenu: u,
                     onClick: d,
-                    children: E
+                    children: x
                 })]
             }) : (0, i.jsxs)(l.Fragment, {
                 children: [w(g, t.type === O.rbe.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
-                    level: x,
+                    level: E,
                     onContextMenu: u,
                     onClick: d,
-                    children: E
+                    children: x
                 }), null != p ? p() : null]
             });
         case O.rbe.GUILD_VOICE:
             return (0, i.jsxs)(l.Fragment, {
                 children: [w(g, M.intl.string(M.t.BVZqJl)), (0, i.jsx)(j.A.Title, {
-                    level: x,
+                    level: E,
                     onContextMenu: u,
                     onClick: d,
-                    children: E
+                    children: x
                 })]
             });
         case O.rbe.GUILD_STAGE_VOICE:
             return (0, i.jsxs)(l.Fragment, {
                 children: [w(g, M.intl.string(M.t.EErMzA)), (0, i.jsx)(j.A.Title, {
-                    level: x,
+                    level: E,
                     onContextMenu: u,
                     onClick: d,
-                    children: E
+                    children: x
                 })]
             });
         case O.rbe.ANNOUNCEMENT_THREAD:
@@ -205,7 +205,7 @@ function G(e) {
                 let e = (0, _.gU)(s, r);
                 C = (0, i.jsxs)(l.Fragment, {
                     children: [w(e, M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
-                        level: x,
+                        level: E,
                         onContextMenu: m,
                         onClick: h,
                         className: a()(D.rg, D.or),
@@ -216,13 +216,13 @@ function G(e) {
             let T = s?.type != null && O.kvI.GUILD_THREADS_ONLY.has(s.type);
             return (0, i.jsxs)(l.Fragment, {
                 children: [C, w(T ? null : g, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(j.A.Title, {
-                    level: x,
+                    level: E,
                     onContextMenu: u,
                     onClick: d,
                     className: a()({
                         [D.or]: o
                     }),
-                    children: E
+                    children: x
                 })]
             });
         case O.rbe.GUILD_DIRECTORY:
@@ -234,7 +234,7 @@ function G(e) {
                     icon: g,
                     "aria-hidden": !0
                 }) : null, (0, i.jsxs)(j.A.Title, {
-                    level: x,
+                    level: E,
                     onContextMenu: u,
                     onClick: d,
                     children: [null != f ? (0, i.jsxs)(c.AC4, {
@@ -249,9 +249,9 @@ function G(e) {
 let P = e => {
     let {
         channel: t
-    } = e, n = (0, r.bG)([N.default], () => N.default.getCurrentUser()), s = (0, r.bG)([N.default], () => N.default.getUser(t.getRecipientId())), a = (0, r.bG)([x.A], () => null != s ? x.A.getUserProfile(s.id) : null), o = null != a && (a?.fetchEndedAt ?? 0) > 0;
+    } = e, n = (0, r.bG)([N.default], () => N.default.getCurrentUser()), s = (0, r.bG)([N.default], () => N.default.getUser(t.getRecipientId())), a = (0, r.bG)([E.A], () => null != s ? E.A.getUserProfile(s.id) : null), o = null != a && (a?.fetchEndedAt ?? 0) > 0;
     return (l.useEffect(() => {
-        n?.isStaff() && null != s && !s.isStaff() && (0, E.A)(s.id, s.getAvatarURL(void 0, 80), {
+        n?.isStaff() && null != s && !s.isStaff() && (0, x.A)(s.id, s.getAvatarURL(void 0, 80), {
             dispatchWait: !0,
             withMutualGuilds: !0,
             withMutualFriendsCount: !0

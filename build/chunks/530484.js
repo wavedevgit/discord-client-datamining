@@ -27,8 +27,8 @@ function p(e) {
     } = (0, l.cf)([c.Ay], () => ({
         hasUnread: c.Ay.hasUnread(t.id, A.P.GUILD_EVENT),
         mentionCount: c.Ay.getMentionCount(t.id, A.P.GUILD_EVENT)
-    }), [t.id]), x = (0, l.bG)([u.Ay], () => u.Ay.isMuteScheduledEventsEnabled(t.id));
-    async function E() {
+    }), [t.id]), E = (0, l.bG)([u.Ay], () => u.Ay.isMuteScheduledEventsEnabled(t.id));
+    async function x() {
         await (0, a.mMO)(async () => {
             let {
                 default: e
@@ -52,7 +52,7 @@ function p(e) {
         }),
         text: C,
         selected: p,
-        onClick: E,
+        onClick: x,
         onContextMenu: e => {
             (0, r.L3)(e, async () => {
                 let {
@@ -64,8 +64,8 @@ function p(e) {
                 })
             })
         },
-        showUnread: g && !x,
-        trailing: !x && f > 0 ? (0, i.jsx)(a.hVq, {
+        showUnread: g && !E,
+        trailing: !E && f > 0 ? (0, i.jsx)(a.hVq, {
             className: m.Do,
             disableColor: !0,
             count: f

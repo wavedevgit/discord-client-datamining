@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(733391),
     g = n(832163),
     f = n(44724),
-    x = n(849134),
-    E = n(203548),
+    E = n(849134),
+    x = n(203548),
     I = n(186111),
     C = n(371794),
     N = n(998218),
@@ -100,7 +100,7 @@ let j = l.memo(function(e) {
                 }), r]
             })
         }), [t.id, s, F, H, K, k]),
-        q = l.useMemo(() => {
+        X = l.useMemo(() => {
             if (null == U) return;
             let e = null != U.assetId ? N.A.toURLSafe((0, C.YE)(U.applicationId, U.assetId, 128, "webp")) : void 0,
                 t = null != U.backgroundImageAssetId ? N.A.toURLSafe((0, C.YE)(U.applicationId, U.backgroundImageAssetId, 128, "webp")) : void 0;
@@ -109,22 +109,22 @@ let j = l.memo(function(e) {
                 backgroundImageUrl: t
             }
         }, [U]),
-        X = l.useCallback(() => V ? (0, i.jsx)(x.A, {
+        q = l.useCallback(() => V ? (0, i.jsx)(E.A, {
             onActionClick: H,
             onActionMouseDown: F,
             onRender: Y,
             onRequestClose: W,
             targetElementRef: R,
-            skuImageDetails: q,
+            skuImageDetails: X,
             title: y.intl.string(y.t["7PvvS9"]),
             body: y.intl.formatToPlainString(y.t["9J4h1a"], {
                 applicationName: U.applicationName
             })
-        }) : null, [V, U, H, F, Y, W, q]);
+        }) : null, [V, U, H, F, Y, W, X]);
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(E.A, {
+        children: [(0, i.jsx)(x.A, {
             ref: j,
             children: z
-        }), !O && !L && !M && X()]
+        }), !O && !L && !M && q()]
     })
 })

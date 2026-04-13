@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(817281),
     g = n(658128),
     f = n(976860),
-    x = n(345942),
-    E = n(260509),
+    E = n(345942),
+    x = n(260509),
     I = n(696451),
     C = n(711014),
     N = n(676279),
@@ -70,8 +70,8 @@ let P = l.memo(function(e) {
         isMentionLowImportance: K,
         contextMenu: Y = G,
         draggable: z = !1,
-        sorting: q = !1,
-        preloadOnClick: X = !0,
+        sorting: X = !1,
+        preloadOnClick: q = !0,
         guildJoinRequestStatus: $,
         height: Q,
         "aria-setsize": J,
@@ -105,7 +105,7 @@ let P = l.memo(function(e) {
         }),
         er = (0, d.Vd)(ee ?? L.dJq, null != et ? 2 : 1),
         [eo, ed] = l.useState(!1),
-        ec = !q && eo,
+        ec = !X && eo,
         [eu, eh] = l.useState(!1),
         [eA, e_] = l.useState(!1),
         [em] = l.useState(() => new h.J_(70, () => e_(!0))),
@@ -114,19 +114,19 @@ let P = l.memo(function(e) {
     let eg = l.useCallback(() => {
             null != P ? (0, f.pX)(P, {
                 state: U
-            }) : (0, x.u)(ee, {
+            }) : (0, E.u)(ee, {
                 state: U
             })
         }, [ee, P]),
         ef = l.useCallback(() => {
-            if (null != P || null == k || F || !X) return;
+            if (null != P || null == k || F || !q) return;
             let e = (0, g.W)(k.id);
             null != e && _.A.preload(k.id, e)
-        }, [P, k, F, X]),
-        ex = (0, u.bG)([I.Ay], () => I.Ay.isCurrentUserGuest(ee)),
-        eE = l.useCallback(e => {
-            null == k || ex || Y(e, k)
-        }, [k, Y, ex]),
+        }, [P, k, F, q]),
+        eE = (0, u.bG)([I.Ay], () => I.Ay.isCurrentUserGuest(ee)),
+        ex = l.useCallback(e => {
+            null == k || eE || Y(e, k)
+        }, [k, Y, eE]),
         eI = l.useCallback(e => {
             "ArrowLeft" === e.key && null != et && document.querySelector(`[aria-owns=folder-items-${et}]`)?.focus()
         }, [et]),
@@ -135,11 +135,11 @@ let P = l.memo(function(e) {
         }, [em]);
 
     function eN() {
-        q || ed(!0)
+        X || ed(!0)
     }
 
     function eT() {
-        q || ed(!1)
+        X || ed(!1)
     }
     let eS = l.useCallback(e => {
             n?.(ee, e)
@@ -171,9 +171,9 @@ let P = l.memo(function(e) {
             onMouseEnter: eN,
             onMouseLeave: eT,
             onMouseDown: ef,
-            onContextMenu: eE,
+            onContextMenu: ex,
             onKeyDown: eI,
-            icon: (0, E.Iv)(k, 2 * eb, ec && w, !0),
+            icon: (0, x.Iv)(k, 2 * eb, ec && w, !0),
             selected: B || ec,
             ...er,
             "aria-setsize": J,
@@ -194,9 +194,9 @@ let P = l.memo(function(e) {
                     onMouseEnter: eN,
                     onMouseLeave: eT,
                     onMouseDown: ef,
-                    onContextMenu: eE,
+                    onContextMenu: ex,
                     onKeyDown: eI,
-                    icon: (0, E.Iv)(k, 2 * eb, ec && w, !0),
+                    icon: (0, x.Iv)(k, 2 * eb, ec && w, !0),
                     selected: B || ec,
                     ...er,
                     "aria-setsize": J,
@@ -219,7 +219,7 @@ let P = l.memo(function(e) {
             },
             "data-drop-hovering": eA,
             className: a()(D.rN, {
-                [D.p9]: q,
+                [D.p9]: X,
                 [D.oR]: eA,
                 [D.wH]: eA || B
             }),
@@ -235,7 +235,7 @@ let P = l.memo(function(e) {
                 scale: null == Q ? 1 : Q
             },
             className: a()(D.rN, {
-                [D.p9]: q,
+                [D.p9]: X,
                 [D.oR]: eA,
                 [D.wH]: eA || B
             }),
@@ -257,7 +257,7 @@ let P = l.memo(function(e) {
             className: D.Io
         }), (0, i.jsx)(v.A, {
             guild: k,
-            disabled: q,
+            disabled: X,
             isDragging: es,
             children: es ? eO : eL
         }), z ? (0, i.jsx)(y.Ay, {

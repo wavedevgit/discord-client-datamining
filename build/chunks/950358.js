@@ -44,7 +44,7 @@ function N(e) {
             (0, c.L3)(e, async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("21420"), n.e("75149"), n.e("86135")]).then(n.bind(n, 725756));
+                } = await Promise.all([n.e("21420"), n.e("75149"), n.e("61596")]).then(n.bind(n, 725756));
                 return n => (0, i.jsx)(e, {
                     ...n,
                     channel: s,
@@ -78,7 +78,7 @@ let E = s.memo(function() {
             className: j.me
         })
     }),
-    C = s.memo(function(e) {
+    T = s.memo(function(e) {
         let {
             index: t
         } = e;
@@ -88,21 +88,21 @@ let E = s.memo(function() {
             children: "\xb7"
         }, `separator-${t}`)
     }),
-    T = s.memo(function(e) {
+    C = s.memo(function(e) {
         let {
             channel: t,
             category: s,
             guild: l,
             isFirstChannel: x,
             isLastChannel: N,
-            tooltipDirection: T = "right"
+            tooltipDirection: C = "right"
         } = e, I = (0, u.Ay)(t), b = (0, _.Rg)(t.id, s.id), v = (0, _.eK)(t.id, s.id), S = (0, _.v)(t.id, s.id), y = (0, _.fS)(l.id, s.id), R = null != (0, A.A)(l).find(e => e.id === t.id);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.m, {
                 asContainer: !0,
                 __unsupportedReactNodeAsText: S ?? y,
                 delay: 500,
-                position: T,
+                position: C,
                 children: (0, i.jsxs)(d.DUT, {
                     className: r()(j.WG, {
                         [j.Qn]: x,
@@ -125,7 +125,7 @@ let E = s.memo(function() {
                         t.isGuildVocal() ? (0, c.L3)(e, async () => {
                             let {
                                 default: e
-                            } = await Promise.all([n.e("97262"), n.e("21420"), n.e("2381"), n.e("40394"), n.e("15512")]).then(n.bind(n, 698193));
+                            } = await Promise.all([n.e("97262"), n.e("21420"), n.e("2381"), n.e("40394"), n.e("53393")]).then(n.bind(n, 698193));
                             return n => (0, i.jsx)(e, {
                                 ...n,
                                 channel: t,
@@ -134,7 +134,7 @@ let E = s.memo(function() {
                         }) : (0, c.L3)(e, async () => {
                             let {
                                 default: e
-                            } = await Promise.all([n.e("97262"), n.e("21420"), n.e("2381"), n.e("79841")]).then(n.bind(n, 370372));
+                            } = await Promise.all([n.e("97262"), n.e("21420"), n.e("2381"), n.e("27520")]).then(n.bind(n, 370372));
                             return n => (0, i.jsx)(e, {
                                 ...n,
                                 channel: t,
@@ -159,7 +159,7 @@ let E = s.memo(function() {
                                     children: I
                                 })
                             }), R ? (0, i.jsxs)(i.Fragment, {
-                                children: [(0, i.jsx)(C, {
+                                children: [(0, i.jsx)(T, {
                                     index: 0
                                 }), (0, i.jsx)(d.Text, {
                                     variant: "text-xs/medium",
@@ -202,7 +202,7 @@ function I(e) {
     }, [t, n]), o = s.useCallback((e, s) => {
         let l = t._categories[e],
             a = t[l.channel.id][s];
-        return null == a ? null : (0, i.jsx)(T, {
+        return null == a ? null : (0, i.jsx)(C, {
             category: l.channel,
             channel: a.channel,
             guild: n,

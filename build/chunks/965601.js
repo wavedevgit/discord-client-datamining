@@ -34,7 +34,7 @@ function A(e) {
         updateThreadSettings: s,
         threadSettings: c,
         textAreaState: A
-    } = e, [_, m] = l.useState(!1), [p, g] = l.useState(!1), f = (0, o.b)(), x = l.useCallback(async () => {
+    } = e, [_, m] = l.useState(!1), [p, g] = l.useState(!1), f = (0, o.b)(), E = l.useCallback(async () => {
         if (f) {
             m(!0);
             try {
@@ -59,19 +59,19 @@ function A(e) {
             name: ""
         })
     }, [n, s, t.id, c.parentChannelId, c.parentMessageId]), l.useEffect(() => {
-        null != c.name && "" !== c.name.trim() || p || f && null != n && (g(!0), x())
-    }, [t.id, n, s, c.name, p, f, x]);
-    let E = l.useCallback(function() {
+        null != c.name && "" !== c.name.trim() || p || f && null != n && (g(!0), E())
+    }, [t.id, n, s, c.name, p, f, E]);
+    let x = l.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
             if (f) return {
                 icon: r.Dud,
-                onClick: x,
+                onClick: E,
                 "aria-label": u.intl.string(u.t.ZF2oBs),
                 disabled: e || _ || null == n && A.textValue.trim().length < 10,
                 tooltip: u.intl.string(u.t.ZF2oBs),
                 loading: _
             }
-        }, [f, x, _, n, A.textValue]),
+        }, [f, E, _, n, A.textValue]),
         I = l.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
             return f ? (0, i.jsx)(a.m, {
@@ -81,18 +81,18 @@ function A(e) {
                     variant: "secondary",
                     size: "sm",
                     "aria-label": u.intl.string(u.t.ZF2oBs),
-                    onClick: x,
+                    onClick: E,
                     disabled: e || _ || null == n && A.textValue.trim().length < 10,
                     loading: _,
                     type: "button"
                 })
             }) : null
-        }, [f, _, n, A.textValue, x]);
+        }, [f, _, n, A.textValue, E]);
     return {
         isGeneratingAI: _,
-        generateAIName: x,
+        generateAIName: E,
         enableAIFeatures: f,
         renderAiGenerateButton: I,
-        getThreadNameInputAccessory: E
+        getThreadNameInputAccessory: x
     }
 }

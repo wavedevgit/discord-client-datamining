@@ -1,29 +1,29 @@
 /** chunk id: 832696 params = (module,exports,require) **/
-t.d(l, {
-    A: () => x
+l.d(t, {
+    A: () => p
 });
-var n = t(627968),
-    i = t(64700),
-    s = t(397927),
-    a = t(688810),
-    r = t(233971),
-    o = t(746174),
-    d = t(993401),
-    c = t(518477),
-    u = t(652215),
-    m = t(985018);
+var n = l(627968),
+    i = l(64700),
+    s = l(397927),
+    a = l(688810),
+    r = l(233971),
+    o = l(746174),
+    d = l(993401),
+    c = l(518477),
+    u = l(652215),
+    m = l(985018);
 
-function x(e) {
+function p(e) {
     let {
-        user: l,
-        onClose: t
+        user: t,
+        onClose: l
     } = e, {
-        analyticsLocations: x
-    } = (0, a.Ay)(), p = (0, o.j)("UserProfileGiftButton"), {
+        analyticsLocations: p
+    } = (0, a.Ay)(), x = (0, o.j)("UserProfileGiftButton"), {
         openGiftModal: A
     } = (0, r.$)({
-        giftRecipient: l,
-        analyticsLocations: x,
+        giftRecipient: t,
+        analyticsLocations: p,
         analyticsObject: {
             page: u.liQ.USER_PROFILE,
             section: u.JJy.USER_PROFILE,
@@ -32,9 +32,9 @@ function x(e) {
         },
         location: "user-profile-gift-button"
     }), g = i.useCallback(() => {
-        A(), t?.()
-    }, [A, t]);
-    return p ? (0, n.jsx)(d.q3, {
+        A(), l?.()
+    }, [A, l]);
+    return x ? (0, n.jsx)(d.q3, {
         action: c.pt.GIFT,
         icon: s.okO,
         tooltipText: m.intl.string(m.t.PEjaCx),

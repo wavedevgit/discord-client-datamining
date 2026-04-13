@@ -27,13 +27,13 @@ function g(e, t) {
 let f = l.memo(function(e) {
     let {
         guild: t
-    } = e, n = (0, a.bG)([d.h], () => d.h.getNewMemberActions(t.id), [t.id]), f = (0, a.bG)([c.A], () => c.A.getCompletedActions(t.id)), x = l.useMemo(() => {
+    } = e, n = (0, a.bG)([d.h], () => d.h.getNewMemberActions(t.id), [t.id]), f = (0, a.bG)([c.A], () => c.A.getCompletedActions(t.id)), E = l.useMemo(() => {
         if (null == n || null == f) return 0;
         let e = 0;
         return n.forEach(t => {
             null != f[t.channelId] && e++
         }), e
-    }, [f, n]), E = null == n ? 0 : n.length, I = (0, s.rm)(`progress-bar-${t.id}`);
+    }, [f, n]), x = null == n ? 0 : n.length, I = (0, s.rm)(`progress-bar-${t.id}`);
     return (0, i.jsxs)("li", {
         children: [(0, i.jsxs)(o.DUT, {
             ...I,
@@ -60,8 +60,8 @@ let f = l.memo(function(e) {
                         className: p.Cv,
                         children: m.intl.format(m.t.eqZ1lW, {
                             numberHook: g,
-                            total: E.toString(),
-                            completed: x.toString()
+                            total: x.toString(),
+                            completed: E.toString()
                         })
                     }), (0, i.jsx)(h.A, {
                         className: p.UE,
@@ -73,7 +73,7 @@ let f = l.memo(function(e) {
             }), (0, i.jsx)(o.iCB, {
                 className: p.hr,
                 foregroundGradientColor: [r.A.unsafe_rawColors.GREEN_300.css, r.A.unsafe_rawColors.GREEN_230.css],
-                percent: x / E * 100 + 3,
+                percent: E / x * 100 + 3,
                 animate: !0
             })]
         }), (0, i.jsx)("div", {

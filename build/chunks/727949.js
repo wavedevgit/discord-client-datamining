@@ -4,24 +4,24 @@ n.d(t, {
     GQ: () => A,
     NF: () => T,
     QG: () => I,
-    Tp: () => N,
+    Tp: () => g,
     ZR: () => m,
-    ne: () => g
+    ne: () => N
 });
 var i = n(311907),
     r = n(554146),
     s = n(826673),
-    l = n(367727),
-    a = n(927813),
-    c = n(661191),
-    o = n(851746),
+    a = n(367727),
+    l = n(927813),
+    o = n(661191),
+    c = n(851746),
     u = n(894374),
     d = n(103411),
     _ = n(49999),
     E = n(985018);
 
 function A(e) {
-    let t = (e - Date.now()) / a.A.Millis.HOUR;
+    let t = (e - Date.now()) / l.A.Millis.HOUR;
     return t > 24 ? E.intl.formatToPlainString(E.t["g9s+dA"], {
         numDays: Math.floor(t / 24)
     }) : t >= 1 ? E.intl.formatToPlainString(E.t.k9v33y, {
@@ -41,20 +41,20 @@ let m = () => (0, s.k8)(r.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
         if (null == t) return !1;
         let n = void 0 !== t.referrer_id,
             i = void 0 === t.redeemed_at,
-            r = new Date(c.default.extractTimestamp(t.id)),
+            r = new Date(o.default.extractTimestamp(t.id)),
             s = new Date;
         return n && i && s >= r
     },
-    g = e => {
-        null != e ? (0, l.qr)(r.M.REFERRAL_PROGRAM_POPOVER_V2, e, {
+    N = e => {
+        null != e ? (0, a.qr)(r.M.REFERRAL_PROGRAM_POPOVER_V2, e, {
             dismissAction: _.i.INDIRECT_ACTION
         }) : (0, s.Dr)(r.M.REFERRAL_PROGRAM_POPOVER)
     },
-    N = () => {
+    g = () => {
         let e, t = (0, d.m)(!1),
-            n = (0, i.bG)([o.A], () => o.A.getReferralsRemaining()),
-            l = (0, i.bG)([o.A], () => o.A.getReminderStateId());
+            n = (0, i.bG)([c.A], () => c.A.getReferralsRemaining()),
+            a = (0, i.bG)([c.A], () => c.A.getReminderStateId());
         return e = (0, u.A)({
             location: "ReferralProgramUtils"
-        }) ? null != l && !(0, s.u$)(r.M.REFERRAL_PROGRAM_POPOVER_V2, l).isDismissed : !(0, s.k8)(r.M.REFERRAL_PROGRAM_POPOVER), t && e && null != n && n > 0
+        }) ? null != a && !(0, s.u$)(r.M.REFERRAL_PROGRAM_POPOVER_V2, a).isDismissed : !(0, s.k8)(r.M.REFERRAL_PROGRAM_POPOVER), t && e && null != n && n > 0
     }

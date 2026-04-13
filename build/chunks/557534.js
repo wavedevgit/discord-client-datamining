@@ -22,8 +22,8 @@ var i = n(627968),
     p = n(728321),
     g = n(95701),
     f = n(616356),
-    x = n(71393),
-    E = n(576705),
+    E = n(71393),
+    x = n(576705),
     I = n(967198),
     C = n(343360),
     N = n(652215),
@@ -46,7 +46,7 @@ function v(e) {
         forceShowButtons: s,
         hasChannelInfo: h = !1
     } = e;
-    return (0, r.bG)([E.A, I.A], () => n || (0, u.ai)(I.A.getGuildId()) || !E.A.can(N.xBc.MANAGE_CHANNELS, t) && !E.A.can(N.xBc.MANAGE_ROLES, t) && !E.A.can(N.xBc.MANAGE_WEBHOOKS, t) || (0, g.tr)(t.type) && !E.A.can(N.xBc.VIEW_CHANNEL, t) || t.isGuildVocal() && !E.A.can(N.xBc.CONNECT, t) || !g.bk.has(t.type) || t.isModeratorReportChannel()) ? null : (0, i.jsx)(o.m, {
+    return (0, r.bG)([x.A, I.A], () => n || (0, u.ai)(I.A.getGuildId()) || !x.A.can(N.xBc.MANAGE_CHANNELS, t) && !x.A.can(N.xBc.MANAGE_ROLES, t) && !x.A.can(N.xBc.MANAGE_WEBHOOKS, t) || (0, g.tr)(t.type) && !x.A.can(N.xBc.VIEW_CHANNEL, t) || t.isGuildVocal() && !x.A.can(N.xBc.CONNECT, t) || !g.bk.has(t.type) || t.isModeratorReportChannel()) ? null : (0, i.jsx)(o.m, {
         asContainer: !0,
         text: T.intl.string(T.t["3gUsJb"]),
         children: (0, i.jsx)(d.DUT, {
@@ -73,7 +73,7 @@ function j(e) {
         tabIndex: u,
         forceShowButtons: _,
         hasChannelInfo: g = !1
-    } = e, I = (0, r.bG)([x.A], () => x.A.getGuild(t.getGuildId())), C = (0, r.bG)([m.A], () => m.A.getStageInstanceByChannel(t.id), [t.id]), b = (0, r.bG)([h.Ay], () => h.Ay.getActiveEventByChannel(t.id), [t.id]), y = (0, r.bG)([E.A], () => (0, A.K)(E.A, I, t, C)), v = (0, r.bG)([], () => t?.type === N.rbe.GUILD_VOICE ? T.intl.string(T.t["EE+P0H"]) : T.intl.string(T.t["0jeAXt"])), j = l.useRef(null);
+    } = e, I = (0, r.bG)([E.A], () => E.A.getGuild(t.getGuildId())), C = (0, r.bG)([m.A], () => m.A.getStageInstanceByChannel(t.id), [t.id]), b = (0, r.bG)([h.Ay], () => h.Ay.getActiveEventByChannel(t.id), [t.id]), y = (0, r.bG)([x.A], () => (0, A.K)(x.A, I, t, C)), v = (0, r.bG)([], () => t?.type === N.rbe.GUILD_VOICE ? T.intl.string(T.t["EE+P0H"]) : T.intl.string(T.t["0jeAXt"])), j = l.useRef(null);
     if (c || !y || t.isModeratorReportChannel() || t.isThread()) return null;
     let R = (0, i.jsx)(d.Rvf, {
         size: "xs",

@@ -1,23 +1,26 @@
 /** chunk id: 316506 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _,
-    u: () => h
+    A: () => f,
+    u: () => p
 });
 var i = n(627968),
     s = n(64700),
     l = n(311907),
     r = n(397927),
     a = n(442433),
-    o = n(665013),
-    d = n(34457),
-    c = n(642133),
-    u = n(458334),
-    m = n(927573),
-    g = n(985018),
-    x = n(146583);
+    o = n(145643),
+    d = n(665013),
+    c = n(34457),
+    u = n(642133),
+    m = n(458334),
+    g = n(927573),
+    x = n(652215),
+    h = n(985018),
+    _ = n(873494),
+    A = n(146583);
 
-function h() {
+function p() {
     let [e, t] = s.useState(!0);
     return {
         scrolledToTop: e,
@@ -27,31 +30,34 @@ function h() {
     }
 }
 
-function _(e) {
+function f(e) {
     let {
         guild: t,
-        role: h,
-        selectedSection: _,
-        setSelectedSection: A
-    } = e, p = s.useCallback(e => {
-        A(e)
-    }, [A]), f = (0, l.bG)([c.A], () => c.A.getRoleMemberCount(t.id)?.[h.id], [h.id, t.id]), j = (0, d.Oy)(h), N = (0, u.A)(t.id, h);
+        role: p,
+        selectedSection: f,
+        setSelectedSection: j
+    } = e, N = s.useCallback(e => {
+        j(e)
+    }, [j]), E = (0, l.bG)([u.A], () => u.A.getRoleMemberCount(t.id)?.[p.id], [p.id, t.id]), T = (0, c.Oy)(p), C = (0, m.A)(t.id, p), I = (0, l.bG)([o.A], () => {
+        let e = o.A.getGuildRoleConnectionsConfiguration(p.id);
+        return null != e && e.some(e => e.some(e => e.connectionType === x.fg2.RIOT_GAMES || e.connectionType === x.fg2.LEAGUE_OF_LEGENDS))
+    });
     s.useEffect(() => {
-        j && A(m.T$.PERMISSIONS)
-    }, [j, A]);
-    let E = (0, o.x)(t, h);
+        T && j(g.T$.PERMISSIONS)
+    }, [T, j]);
+    let b = (0, d.x)(t, p);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: x.gn,
+            className: A.gn,
             children: [(0, i.jsx)(r.Text, {
-                className: x.Qw,
+                className: A.Qw,
                 color: "text-strong",
                 variant: "text-md/semibold",
-                children: g.intl.format(g.t.BUdGkE, {
-                    roleName: h.name
+                children: h.intl.format(h.t.BUdGkE, {
+                    roleName: p.name
                 })
-            }), E ? (0, i.jsx)(r.DUT, {
-                className: x.MK,
+            }), b ? (0, i.jsx)(r.DUT, {
+                className: A.MK,
                 onClick: function(e) {
                     (0, a.L3)(e, async () => {
                         let {
@@ -60,48 +66,54 @@ function _(e) {
                         return n => (0, i.jsx)(e, {
                             ...n,
                             guild: t,
-                            role: h
+                            role: p
                         })
                     })
                 },
-                "aria-label": g.intl.string(g.t.PdRCRg),
+                "aria-label": h.intl.string(h.t.PdRCRg),
                 children: (0, i.jsx)(r.jNK, {
                     size: "md",
                     color: "currentColor"
                 })
             }) : null]
-        }), null != N ? (0, i.jsx)(r.po8, {
-            messageType: r.YCn.WARNING,
-            children: N
-        }) : null, (0, i.jsx)(r.hKd, {
+        }), (0, i.jsxs)("div", {
+            className: A.QR,
+            children: [null != C ? (0, i.jsx)(r.po8, {
+                messageType: r.YCn.WARNING,
+                children: C
+            }) : null, I ? (0, i.jsx)(r.po8, {
+                messageType: r.YCn.WARNING,
+                children: h.intl.format(_.default.sbMMtk, {})
+            }) : null]
+        }), (0, i.jsx)(r.hKd, {
             size: 6
         }), (0, i.jsxs)(r.VQ0, {
-            className: x.$H,
-            "aria-label": g.intl.string(g.t["+1H47t"]),
-            selectedItem: _,
+            className: A.$H,
+            "aria-label": h.intl.string(h.t["+1H47t"]),
+            selectedItem: f,
             type: "top",
             look: "brand",
-            onItemSelect: p,
+            onItemSelect: N,
             children: [(0, i.jsx)(r.VQ0.Item, {
-                className: x.YU,
-                id: m.T$.DISPLAY,
-                disabled: j,
-                children: g.intl.string(g.t.hmdomw)
+                className: A.YU,
+                id: g.T$.DISPLAY,
+                disabled: T,
+                children: h.intl.string(h.t.hmdomw)
             }), (0, i.jsx)(r.VQ0.Item, {
-                className: x.YU,
-                id: m.T$.PERMISSIONS,
-                children: g.intl.string(g.t.WIDE1L)
+                className: A.YU,
+                id: g.T$.PERMISSIONS,
+                children: h.intl.string(h.t.WIDE1L)
             }), (0, i.jsx)(r.VQ0.Item, {
-                className: x.YU,
-                id: m.T$.VERIFICATIONS,
-                disabled: j,
-                children: g.intl.string(g.t["5//Muu"])
+                className: A.YU,
+                id: g.T$.VERIFICATIONS,
+                disabled: T,
+                children: h.intl.string(h.t["5//Muu"])
             }), (0, i.jsx)(r.VQ0.Item, {
-                className: x.YU,
-                id: m.T$.MEMBERS,
-                disabled: j,
-                children: j ? g.intl.string(g.t["kg//+7"]) : g.intl.formatToPlainString(g.t.bHnZWW, {
-                    numMembers: String(f)
+                className: A.YU,
+                id: g.T$.MEMBERS,
+                disabled: T,
+                children: T ? h.intl.string(h.t["kg//+7"]) : h.intl.formatToPlainString(h.t.bHnZWW, {
+                    numMembers: String(E)
                 })
             })]
         })]

@@ -7,10 +7,10 @@ var i = n(627968);
 n(64700);
 var r = n(421380),
     s = n(397927),
-    l = n(725807),
-    a = n(888675),
-    c = n(652215),
-    o = n(788868),
+    a = n(725807),
+    l = n(888675),
+    o = n(652215),
+    c = n(788868),
     u = n(985018),
     d = n(988020);
 
@@ -18,8 +18,8 @@ function _(e) {
     let {
         message: t,
         channel: n
-    } = e, _ = null != n.guild_id ? c.JJy.TEXT_IN_VOICE : c.JJy.CHANNEL_TEXT_AREA;
-    return (0, i.jsx)(a.A, {
+    } = e, _ = null != n.guild_id ? o.JJy.TEXT_IN_VOICE : o.JJy.CHANNEL_TEXT_AREA;
+    return (0, i.jsx)(l.A, {
         contentClassName: d.o9,
         iconContainerClassName: d.zc,
         iconNode: (0, i.jsx)(s.XFE, {
@@ -44,17 +44,17 @@ function _(e) {
                 })]
             }), (0, i.jsx)("div", {
                 className: d.UD,
-                children: (0, i.jsx)(l.A, {
+                children: (0, i.jsx)(a.A, {
                     showGradient: !0,
                     iconClassName: d.PC,
-                    subscriptionTier: o.pe.TIER_2,
+                    subscriptionTier: c.pe.TIER_2,
                     textOptions: {
                         textOverride: u.intl.string(u.t.Y2WKTl)
                     },
                     size: r.$n.Sizes.SMALL,
                     premiumModalAnalyticsLocation: {
                         section: _,
-                        object: c.ZSU.MESSAGE
+                        object: o.ZSU.MESSAGE
                     }
                 })
             })]

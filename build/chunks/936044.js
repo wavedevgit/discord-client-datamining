@@ -7,10 +7,10 @@ var i = n(627968);
 n(64700);
 var r = n(503698),
     s = n.n(r),
-    l = n(763754),
-    a = n(491182),
-    c = n(291812),
-    o = n(643204),
+    a = n(763754),
+    l = n(491182),
+    o = n(291812),
+    c = n(643204),
     u = n(153431);
 
 function d(e) {
@@ -24,19 +24,19 @@ function d(e) {
         hideTimestamp: A = !1,
         withFooter: m = !1,
         ...I
-    } = e, T = (0, l.Ay)(t);
+    } = e, T = (0, a.Ay)(t);
     return (0, i.jsx)("div", {
         className: s()({
             [u.Ym]: m
         }, u.gD, {
             [u.oE]: _
         }, d),
-        children: (0, i.jsx)(a.A, {
+        children: (0, i.jsx)(l.A, {
             ...I,
             className: s()(u.zC, {
                 [u.oE]: _
             }),
-            childrenMessageContent: (0, i.jsx)(c.Ay, {
+            childrenMessageContent: (0, i.jsx)(o.Ay, {
                 className: s()(u.__invalid_messageContent, {
                     [u.oE]: _
                 }),
@@ -44,7 +44,7 @@ function d(e) {
                 content: r,
                 compact: _ ?? !1
             }),
-            childrenHeader: (0, i.jsx)(o.Ay, {
+            childrenHeader: (0, i.jsx)(c.Ay, {
                 message: t,
                 channel: n,
                 author: T,

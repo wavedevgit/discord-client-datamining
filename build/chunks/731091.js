@@ -24,15 +24,15 @@ function p(e) {
         setSelectedFilter: g
     } = (0, c.A)(), f = (0, h.S)(e => e.setInboxReadState);
     if (!l) return null;
-    let x = p === A.Io.ALL ? _.intl.string(_.t["2pAkDA"]) : _.intl.string(_.t.HcoRu0);
+    let E = p === A.Io.ALL ? _.intl.string(_.t["2pAkDA"]) : _.intl.string(_.t.HcoRu0);
     return (0, i.jsx)(r.m, {
         position: "bottom",
-        text: x,
+        text: E,
         children: (0, i.jsx)(o.DUT, {
             className: s()(t, m.a, {
                 [m.S]: p === A.Io.BOOKMARKS
             }),
-            "aria-label": x,
+            "aria-label": E,
             onClick: () => {
                 let e = p === A.Io.ALL ? A.Io.BOOKMARKS : A.Io.ALL;
                 g(e), e === A.Io.ALL && f(!1), (0, d.Ut)({

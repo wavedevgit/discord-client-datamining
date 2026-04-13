@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(827734),
     g = n(192308),
     f = n(397927),
-    x = n(951001),
-    E = n(964486),
+    E = n(951001),
+    x = n(964486),
     I = n(260762),
     C = n(793574),
     N = n(688810),
@@ -47,8 +47,8 @@ var i = n(627968),
     K = n(987344),
     Y = n(750448),
     z = n(845211),
-    q = n(941604),
-    X = n(246884),
+    X = n(941604),
+    q = n(246884),
     $ = n(497140),
     Q = n(34247),
     J = n(850729),
@@ -162,7 +162,7 @@ class ec {
         let {
             scrollTop: t
         } = e.getScrollerState();
-        x.A.updateGuildListScrollTo(t), this.onScroll()
+        E.A.updateGuildListScrollTo(t), this.onScroll()
     }, 200);
     _handleScrollThrottled = o().throttle(() => {
         let e = this.scrollerRef.current;
@@ -180,10 +180,10 @@ function eu(e) {
         lurkingGuildIds: s
     } = e, a = (0, v.A)("TopSection"), {
         isExperimentEnabled: r
-    } = (0, y.TW)("TopSection"), o = (0, h.bG)([B.A], () => null != B.A.getVoiceChannelId()), d = (0, g.useHasAnyModalOpen)(), c = (0, S.Ay)(e => e.postConnectionOpen), [u, _] = (0, b.kn)(c && r && !o && !d ? [A.M.FAVORITES_SERVER_ONBOARDING_INTRO] : []), m = u === A.M.FAVORITES_SERVER_ONBOARDING_INTRO, [p] = (0, b.kn)(m ? [A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : [], void 0, !0), f = p === A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM, x = l.useRef(!1), E = f && a;
+    } = (0, y.TW)("TopSection"), o = (0, h.bG)([B.A], () => null != B.A.getVoiceChannelId()), d = (0, g.useHasAnyModalOpen)(), c = (0, S.Ay)(e => e.postConnectionOpen), [u, _] = (0, b.kn)(c && r && !o && !d ? [A.M.FAVORITES_SERVER_ONBOARDING_INTRO] : []), m = u === A.M.FAVORITES_SERVER_ONBOARDING_INTRO, [p] = (0, b.kn)(m ? [A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : [], void 0, !0), f = p === A.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM, E = l.useRef(!1), x = f && a;
     l.useEffect(() => {
-        E && !x.current && n(), x.current = E
-    }, [n, E]);
+        x && !E.current && n(), E.current = x
+    }, [n, x]);
     let I = (0, h.yK)([w.A, P.Ay], () => w.A.getGuildIds().filter(e => P.Ay.isCurrentUserGuest(e))),
         C = s.concat(I),
         {
@@ -224,10 +224,10 @@ function eh(e) {
             "aria-label": ea.intl.string(ea.t["7hB4kg"]),
             gap: "xs",
             children: o.map((e, t) => s(e, t, o.length))
-        }), d, (0, i.jsx)(ee.A, {}), l ? null : (0, i.jsx)(X.A, {
+        }), d, (0, i.jsx)(ee.A, {}), l ? null : (0, i.jsx)(q.A, {
             disableTooltip: a.length > 0,
             lastTargetNode: o[o.length - 1]
-        }), l ? null : t, n ? null : (0, i.jsx)(q.A, {})]
+        }), l ? null : t, n ? null : (0, i.jsx)(X.A, {})]
     })
 }
 
@@ -242,30 +242,30 @@ function eA(e) {
         return [e, e.version]
     }), u = (0, h.bG)([O.A], () => O.A.lurkingGuildIds()), A = l.useMemo(() => n ? [] : u, [u, n]), _ = (0, h.bG)([T.A], () => T.A.isFullscreenInContext()), {
         isSorting: g,
-        startSorting: x,
+        startSorting: E,
         stopSorting: I
     } = (0, F.A)(), S = l.useRef(!1), [b] = l.useState(() => new m.Ep), y = l.useRef(null), j = l.useRef(null), {
         ref: R,
         ...G
-    } = (0, c.$y)(), P = (0, f.R7z)(), [w, B] = l.useState(!1), z = (0, f.rdh)(p.A.modules.guildbar.AVATAR_SIZE), q = (0, f.rdh)(p.A.space.SPACE_XS), X = (0, v.A)("GuildsBar"), {
+    } = (0, c.$y)(), P = (0, f.R7z)(), [w, B] = l.useState(!1), z = (0, f.rdh)(p.A.modules.guildbar.AVATAR_SIZE), X = (0, f.rdh)(p.A.space.SPACE_XS), q = (0, v.A)("GuildsBar"), {
         pathname: $
     } = (0, d.zy)(), {
         entrypoint: J
     } = (0, L.X8)({
         location: "GuildsBar"
-    }), ee = +!!X + +(J === L.RK.SERVER_RAIL_TOP), ei = l.useMemo(() => {
-        let e, t, n = (e = z + q, {
+    }), ee = +!!q + +(J === L.RK.SERVER_RAIL_TOP), ei = l.useMemo(() => {
+        let e, t, n = (e = z + X, {
             iconSize: z,
             iconTotalSize: e,
             badgeVisibleBuffer: e - 16,
-            separatorSize: t = 2 + q,
+            separatorSize: t = 2 + X,
             heightBeforeGuilds: eo + t + ee * e,
             bottomInset: 16
         });
         return new ec(o, B, es.tEg, () => {
             y.current?.calculateState(), j.current?.calculateState()
         }, n)
-    }, [z, q, o, ee]);
+    }, [z, X, o, ee]);
     l.useEffect(() => (ei.setResizeObserver(), () => {
         ei.clearResizeObserver()
     }), [ei]), l.useEffect(() => {
@@ -277,7 +277,7 @@ function eA(e) {
     let {
         analyticsLocations: el
     } = (0, N.Ay)(C.A.GUILDS_LIST), eA = ed($);
-    (0, E.u5)(() => {
+    (0, x.u5)(() => {
         if (!S.current && 0 !== o.size) {
             if (!eA) {
                 let {
@@ -317,7 +317,7 @@ function eA(e) {
                         setNodeRef: ei.setNodeRef,
                         draggable: !0,
                         sorting: g,
-                        onDragStart: x,
+                        onDragStart: E,
                         onDragEnd: I,
                         renderChildNode: e,
                         "aria-setsize": l,
@@ -329,7 +329,7 @@ function eA(e) {
                         setRef: ei.setNodeRef,
                         draggable: !0,
                         sorting: g,
-                        onDragStart: x,
+                        onDragStart: E,
                         onDragEnd: I,
                         "aria-setsize": l,
                         "aria-posinset": void 0 !== n ? n + 1 : void 0
@@ -337,7 +337,7 @@ function eA(e) {
                 default:
                     return null
             }
-        }, [x, I, g, ei.setNodeRef]),
+        }, [E, I, g, ei.setNodeRef]),
         ep = (0, i.jsx)(Q.A, {
             selected: eA,
             className: er.ai

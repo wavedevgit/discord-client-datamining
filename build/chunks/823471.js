@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(375500),
     g = n(707653),
     f = n(50268),
-    x = n(584682),
-    E = n(58736),
+    E = n(584682),
+    x = n(58736),
     I = n(378570),
     C = n(203982),
     N = n(170428),
@@ -55,7 +55,7 @@ function v(e) {
             let {
                 isShown: n
             } = t;
-            return (0, i.jsx)(E.Ay.Icon, {
+            return (0, i.jsx)(x.Ay.Icon, {
                 ...e,
                 ref: r,
                 onClick: o,
@@ -73,7 +73,7 @@ function j(e) {
         channel: t,
         closePopout: n,
         onSelect: l
-    } = e, x = (0, d.A)(t, "Sidebar Overflow"), E = (0, u.A)(t), N = (0, m.A)(t), T = (0, p.A)(t), S = (0, a.A)(t), v = (0, c.A)(t), j = (0, _.A)(t.id), R = (0, A.A)(t), O = (0, o.A)(t), L = (0, r.A)(t), M = (0, f.A)({
+    } = e, E = (0, d.A)(t, "Sidebar Overflow"), x = (0, u.A)(t), N = (0, m.A)(t), T = (0, p.A)(t), S = (0, a.A)(t), v = (0, c.A)(t), j = (0, _.A)(t.id), R = (0, A.A)(t), O = (0, o.A)(t), L = (0, r.A)(t), M = (0, f.A)({
         id: t.id,
         label: y.intl.string(y.t.DQ797g)
     }), D = (0, g.A)(t), U = (0, h.A)(t);
@@ -88,7 +88,7 @@ function j(e) {
         "aria-label": y.intl.string(y.t["1NBjqb"]),
         onSelect: l,
         children: [(0, i.jsxs)(s.rXV, {
-            children: [x, (0, i.jsx)(s.Drp, {
+            children: [E, (0, i.jsx)(s.Drp, {
                 id: "open",
                 label: y.intl.string(y.t.IxVmZi),
                 action: G
@@ -96,7 +96,7 @@ function j(e) {
         }), (0, i.jsxs)(s.rXV, {
             children: [N, T]
         }), (0, i.jsxs)(s.rXV, {
-            children: [R, E, j, U]
+            children: [R, x, j, U]
         }), (0, i.jsxs)(s.rXV, {
             children: [(0, i.jsx)(s.Drp, {
                 id: "search",
@@ -145,10 +145,10 @@ function R(e) {
             channel: t
         }) : null, (0, i.jsx)(v, {
             channel: t
-        }), (0, i.jsx)(E.Ay.Icon, {
+        }), (0, i.jsx)(x.Ay.Icon, {
             icon: s.PGe,
             tooltip: y.intl.string(y.t.cpT0Cq),
-            onClick: () => (0, S.xu)((0, x.j)(t), n ?? t.parent_id)
+            onClick: () => (0, S.xu)((0, E.j)(t), n ?? t.parent_id)
         })]
     })
 }

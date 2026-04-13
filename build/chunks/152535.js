@@ -24,8 +24,8 @@ function _(e) {
         parentAnalyticsLocation: p
     } = (0, r.Ay)(), g = l.useRef(null), {
         isHovered: f,
-        setIsHovered: x,
-        onMouseEnter: E,
+        setIsHovered: E,
+        onMouseEnter: x,
         onMouseLeave: I
     } = (0, d.A)(200, 300), {
         Component: C,
@@ -35,12 +35,12 @@ function _(e) {
             onMouseLeave: S
         }
     } = (0, s.T)(), b = l.useCallback(e => {
-        "focus" !== e.type && (E(), T())
-    }, [E, T]), y = l.useCallback(() => {
+        "focus" !== e.type && (x(), T())
+    }, [x, T]), y = l.useCallback(() => {
         null == _ && (I(), S())
     }, [I, S, _]), v = l.useCallback(() => {
-        (0, o.X)(p, o.O.GIFTING), _ === h.P.GIFTING ? (m?.(void 0), I()) : (null != _ ? (N(), E()) : N(), m?.(h.P.GIFTING))
-    }, [E, I, p, N, m, _]);
+        (0, o.X)(p, o.O.GIFTING), _ === h.P.GIFTING ? (m?.(void 0), I()) : (null != _ ? (N(), x()) : N(), m?.(h.P.GIFTING))
+    }, [x, I, p, N, m, _]);
     return (0, i.jsx)(a.Y, {
         targetElementRef: g,
         shouldShow: f && (_ === h.P.GIFTING || null == _) || _ === h.P.GIFTING,
@@ -50,7 +50,7 @@ function _(e) {
         align: "center",
         spacing: 16,
         onRequestClose: () => {
-            x(!1), m?.(void 0)
+            E(!1), m?.(void 0)
         },
         renderPopout: e => {
             let {
@@ -60,7 +60,7 @@ function _(e) {
                 channel: t,
                 closePopout: n,
                 isHovered: f,
-                onMouseEnter: E,
+                onMouseEnter: x,
                 onMouseLeave: I
             })
         },

@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(271456),
     g = n(200273),
     f = n(565846),
-    x = n(707653),
-    E = n(50268),
+    E = n(707653),
+    x = n(50268),
     I = n(58736),
     C = n(253932),
     N = n(977997),
@@ -71,10 +71,10 @@ function y(e) {
         channel: t,
         closePopout: n,
         onSelect: l
-    } = e, s = (0, d.A)(t), I = (0, _.A)(t), b = (0, f.A)(t.id), y = (0, g.A)(t), v = (0, E.A)({
+    } = e, s = (0, d.A)(t), I = (0, _.A)(t), b = (0, f.A)(t.id), y = (0, g.A)(t), v = (0, x.A)({
         id: t.id,
         label: S.intl.string(S.t.DQ797g)
-    }), j = (0, c.A)(t), R = (0, u.A)(t), O = (0, h.A)(t, "Toolbar Overflow"), L = (0, m.A)(t), M = (0, A.A)(t), D = (0, x.A)(t), U = (0, p.A)(t), G = C.SY.useSetting(), P = (0, r.bG)([N.A], () => !a().isEmpty(N.A.getVoiceStatesForChannel(t.id)));
+    }), j = (0, c.A)(t), R = (0, u.A)(t), O = (0, h.A)(t, "Toolbar Overflow"), L = (0, m.A)(t), M = (0, A.A)(t), D = (0, E.A)(t), U = (0, p.A)(t), G = C.SY.useSetting(), P = (0, r.bG)([N.A], () => !a().isEmpty(N.A.getVoiceStatesForChannel(t.id)));
     return (0, i.jsxs)(o.W1t, {
         "data-menu-migrated": !0,
         navId: "thread-context",

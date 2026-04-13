@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(572164),
     g = n(399925),
     f = n(652215),
-    x = n(985018),
-    E = n(862741),
+    E = n(985018),
+    x = n(862741),
     I = n(145394);
 
 function C(e) {
@@ -41,17 +41,17 @@ let N = e => {
             shouldShow: s,
             targetElementRef: n,
             position: "top",
-            title: x.intl.format(x.t["o+srEw"], {
+            title: E.intl.format(E.t["o+srEw"], {
                 keybind: t,
                 keybindHook: () => (0, i.jsx)("span", {
-                    className: E.E,
+                    className: x.E,
                     children: (0, i.jsx)(r.e7I, {
-                        className: E.d,
+                        className: x.d,
                         shortcut: t
                     })
                 })
             }),
-            body: x.intl.format(x.t.DWeRm1, {
+            body: E.intl.format(E.t.DWeRm1, {
                 keybindHook: () => t,
                 keybind: t
             }),
@@ -73,9 +73,9 @@ let N = e => {
             n = (0, s.bG)([h.A], () => h.A.hasLayers()),
             a = (0, p.Et)(),
             o = (0, s.bG)([m.A], () => m.A.getIsAtMaxSaveClipOperations()),
-            E = (0, s.bG)([A.Ay], () => A.Ay.getKeybindForAction(f.hCu.SAVE_CLIP));
-        if (!a || null == E || n) return null;
-        let I = _.dI(E.shortcut, !0);
+            x = (0, s.bG)([A.Ay], () => A.Ay.getKeybindForAction(f.hCu.SAVE_CLIP));
+        if (!a || null == x || n) return null;
+        let I = _.dI(x.shortcut, !0);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(N, {
                 keybindString: I,
@@ -83,9 +83,9 @@ let N = e => {
             }), (0, i.jsx)(u.A, {
                 ref: e,
                 disabled: o,
-                tooltipText: null != E ? x.intl.formatToPlainString(x.t.HIMcv1, {
-                    hotkey: _.dI(E?.shortcut, !0)
-                }) : x.intl.string(x.t.s52pju),
+                tooltipText: null != x ? E.intl.formatToPlainString(E.t.HIMcv1, {
+                    hotkey: _.dI(x?.shortcut, !0)
+                }) : E.intl.string(E.t.s52pju),
                 onClick: () => {
                     (0, g.l0)(), (0, c.X)(t, c.O.CLIP)
                 },

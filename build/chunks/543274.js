@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(688810),
     g = n(975412),
     f = n(384059),
-    x = n(379848),
-    E = n(267102),
+    E = n(379848),
+    x = n(267102),
     I = n(421773),
     C = n(168754),
     N = n(376086),
@@ -42,7 +42,7 @@ function y(e) {
         surface: d.YI.VOICE_LAUNCHER
     }), k = (0, s.bG)([c.Ay], () => null != c.Ay.getSelfEmbeddedActivityForLocation(c.Ay.getConnectedActivityLocation())), w = !L, B = l.useCallback(e => {
         "focus" !== e.type && U()
-    }, [U]), V = (0, E.Us)() === T.BRT.POPOUT, {
+    }, [U]), V = (0, x.Us)() === T.BRT.POPOUT, {
         parentAnalyticsLocation: H,
         newestAnalyticsLocation: F
     } = (0, p.Ay)(), W = l.useCallback(() => {
@@ -60,7 +60,7 @@ function y(e) {
     L || K.push(a.M.ACTIVITIES_MINI_SHELF_SPARKLES), (0, A.A)(t.id) && !L && K.push(a.M.ACTIVITY_GDM_ROCKET_SPARKLE), L || K.push(a.M.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
     let Y = l.useRef(!1),
         z = l.useRef(null);
-    return (0, i.jsx)(x.Ay, {
+    return (0, i.jsx)(E.Ay, {
         contentTypes: K,
         children: e => {
             let {
@@ -96,7 +96,7 @@ function y(e) {
                         onClick: () => s(S.i.UNKNOWN)
                     }) : (0, i.jsx)(i.Fragment, {})
                 },
-                children: () => (0, i.jsx)(x.GY, {
+                children: () => (0, i.jsx)(E.GY, {
                     contentType: a.M.ACTIVITIES_VOICE_LAUNCHER_BADGE,
                     latestVersion: P,
                     children: e => {

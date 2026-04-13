@@ -19,7 +19,7 @@ function o(e) {
         isWishlisted: _,
         isBusy: m,
         isFirstTimeWishlister: h,
-        handleToggle: p
+        handleToggle: b
     } = (0, r.G)({
         userId: u,
         sku: t,
@@ -32,7 +32,7 @@ function o(e) {
         isWishlisted: _,
         isBusy: m,
         isFirstTimeWishlister: h,
-        onClick: p,
+        onClick: b,
         ...c
     }) : null
 }

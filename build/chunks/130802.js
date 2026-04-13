@@ -12,7 +12,7 @@ var i, l = n(627968),
     c = n(253932),
     u = n(461213),
     h = n(481045),
-    A = n(536482),
+    A = n(634411),
     _ = n(985018),
     m = n(373431),
     p = n(233732);
@@ -73,7 +73,7 @@ function f(e) {
     })
 }
 
-function x(e) {
+function E(e) {
     let {
         children: t
     } = e, n = (0, s.useRef)(null);
@@ -87,11 +87,11 @@ function x(e) {
     })
 }
 
-function E(e) {
+function x(e) {
     let {
         closePopout: t
     } = e, n = c.tz.useSetting();
-    return (0, l.jsxs)(x, {
+    return (0, l.jsxs)(E, {
         children: [(0, l.jsx)(f, {
             showCurrentGame: n
         }), (0, l.jsx)(o.Text, {
@@ -110,7 +110,7 @@ function I(e) {
     let {
         closePopout: t
     } = e;
-    return (0, l.jsxs)(x, {
+    return (0, l.jsxs)(E, {
         children: [(0, l.jsxs)(o.BJc, {
             align: "start",
             gap: 0,
@@ -147,7 +147,7 @@ function C(e) {
     let {
         closePopout: t
     } = e, n = c.tz.useSetting();
-    return (0, l.jsxs)(x, {
+    return (0, l.jsxs)(E, {
         children: [(0, l.jsx)(f, {
             showCurrentGame: n,
             shouldShowStatus: !0
@@ -171,7 +171,7 @@ function T(e) {
         handleClose: i,
         popoutTargetRef: a,
         children: u
-    } = e, [m, g] = (0, s.useState)(n), f = (0, s.useRef)(null), x = function(e) {
+    } = e, [m, g] = (0, s.useState)(n), f = (0, s.useRef)(null), E = function(e) {
         if (null === e) return null;
         switch (e) {
             case 0:
@@ -213,7 +213,7 @@ function T(e) {
                 };
             case 3:
                 return {
-                    type: "popout", children: E
+                    type: "popout", children: x
                 };
             case 4:
                 return {
@@ -229,14 +229,14 @@ function T(e) {
     }(m), N = (0, s.useRef)(t);
     if ((0, s.useEffect)(() => {
             t && !N.current && g(n), t !== N.current && (N.current = t)
-        }, [n, t]), null == x || !t) return u;
-    if ("popover" === x.type) {
+        }, [n, t]), null == E || !t) return u;
+    if ("popover" === E.type) {
         let {
             action: e,
             title: t,
             body: n,
             textLink: s
-        } = x;
+        } = E;
         return (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(r.AM, {
                 targetElementRef: a,
@@ -263,7 +263,7 @@ function T(e) {
     }
     let {
         children: T
-    } = x;
+    } = E;
     return (0, l.jsx)(o.YNO, {
         targetElementRef: f,
         shouldShow: !0,

@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(713517),
     g = n(71393),
     f = n(576705),
-    x = n(954571),
-    E = n(778768),
+    E = n(954571),
+    x = n(778768),
     I = n(652215);
 n(281405);
 var C = n(985018),
@@ -57,7 +57,7 @@ function b(e) {
         W = B || V,
         K = l.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "unknown";
-            x.default.track(I.HAw.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED, {
+            E.default.track(I.HAw.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED, {
                 reason: e,
                 channel_id: t.id,
                 guild_id: t.guild_id,
@@ -77,7 +77,7 @@ function b(e) {
                 })
             })
         }, [G, t]),
-        [z, q] = (0, u.zhh)(() => ({
+        [z, X] = (0, u.zhh)(() => ({
             from: {
                 height: "0px"
             },
@@ -90,17 +90,17 @@ function b(e) {
                 clamp: !0
             }
         })),
-        X = l.useCallback(e => {
-            k(!0), q({
+        q = l.useCallback(e => {
+            k(!0), X({
                 to: {
                     height: "0px"
                 },
                 onRest: () => K(e)
             })
-        }, [q, K]),
-        $ = l.useCallback(() => (null != R.current && clearTimeout(R.current), R.current = setTimeout(() => X("timeout"), 1e4), M(e => e + 1), () => {
+        }, [X, K]),
+        $ = l.useCallback(() => (null != R.current && clearTimeout(R.current), R.current = setTimeout(() => q("timeout"), 1e4), M(e => e + 1), () => {
             null != R.current && clearTimeout(R.current)
-        }), [X]),
+        }), [q]),
         Q = l.useCallback(() => (null != O.current && clearTimeout(O.current), O.current = setTimeout(() => {
             j(!1)
         }, 150), () => {
@@ -126,7 +126,7 @@ function b(e) {
         align: "top",
         spacing: 17,
         popoutKey: "voice-invite-suggestions-button",
-        renderPopout: e => (0, i.jsx)(E.w, {
+        renderPopout: e => (0, i.jsx)(x.w, {
             channel: t,
             onHoverOrFocus: H,
             ...e
@@ -192,7 +192,7 @@ function b(e) {
                             children: B ? (0, i.jsx)(u.DUT, {
                                 className: N.VN,
                                 onClick: e => {
-                                    e.stopPropagation(), X("user_explicit")
+                                    e.stopPropagation(), q("user_explicit")
                                 },
                                 "aria-label": C.intl.string(C.t.cpT0Cq),
                                 children: (0, i.jsx)(u.PGe, {

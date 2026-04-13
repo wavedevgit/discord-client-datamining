@@ -1,0 +1,2 @@
+/** chunk id: 827627 params = (module,exports,require) **/
+s.exports = JSON.parse('{"yfwZuy":["Переглянути мій бейдж"],"UnPGii":["Бейдж додано до вашого профілю."],"nvaTQq":["Ви отримали бейдж для профілю \xabOrbs\xbb!"]}')

@@ -18,8 +18,8 @@ var a = t(311907),
     g = t(558628),
     h = t(842241),
     m = t(282797),
-    I = t(518477),
-    f = t(652215),
+    f = t(518477),
+    I = t(652215),
     x = t(985018),
     b = t(575877),
     v = t(643146);
@@ -78,11 +78,11 @@ function E(e) {
             heading: x.intl.string(x.t.M0zgnT),
             introText: L ? x.intl.format(x.t["4bk9Ak"], {
                 learnMoreHook: (e, n) => (0, i.jsx)(r.MzZ, {
-                    href: s.A.getArticleURL(f.MVz.ACTIVITY_STATUS_SETTINGS),
+                    href: s.A.getArticleURL(I.MVz.ACTIVITY_STATUS_SETTINGS),
                     children: e
                 }, n)
             }) : void 0,
-            scrollTargetId: I.bk.RECENT_ACTIVITY,
+            scrollTargetId: f.bk.RECENT_ACTIVITY,
             children: (0, i.jsx)("ul", {
                 className: b.Ci,
                 children: T.map(e => (0, i.jsx)("li", {

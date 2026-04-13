@@ -57,18 +57,18 @@ class p extends l.PureComponent {
             onChange: b,
             showIcon: f,
             showIconDisabled: _,
-            className: N,
-            imageClassName: j,
+            className: j,
+            imageClassName: N,
             iconClassName: v,
             iconWrapperClassName: T,
             icon: C,
-            hideSize: I,
-            imageStyle: E,
+            hideSize: E,
+            imageStyle: I,
             showRemoveButton: S,
             maxFileSizeBytes: y,
             onFileSizeError: O,
             onOpenImageSelectModal: w,
-            "aria-label": R
+            "aria-label": k
         } = this.props;
         if (null != (e = null != s && /^data:/.test(s) ? s : p(s)) ? t = `url("${e}")` : null != o && (n = (0, i.jsx)(d.Heading, {
                 variant: "heading-xxl/normal",
@@ -76,11 +76,11 @@ class p extends l.PureComponent {
                 className: x.nX,
                 children: (0, c.oN)(o)
             })), A) return (0, i.jsx)("div", {
-            className: a()(x.WY, x.r9, N),
+            className: a()(x.WY, x.r9, j),
             children: (0, i.jsxs)("div", {
-                className: a()(x.Yp, j),
+                className: a()(x.Yp, N),
                 style: {
-                    ...E,
+                    ...I,
                     backgroundImage: t
                 },
                 children: [n, _ && (0, i.jsx)("div", {
@@ -93,23 +93,23 @@ class p extends l.PureComponent {
             className: x.DT,
             onClick: this.handleRemove,
             children: g.intl.string(g.t.N86XcP)
-        }) : I || (l = (0, i.jsx)("small", {
+        }) : E || (l = (0, i.jsx)("small", {
             className: x.UZ,
             children: g.intl.format(g.t.AH4c7Y, {
                 size: m.eQT
             })
         }));
-        let k = R ?? r ?? g.intl.string(g.t["Ge+941"]);
+        let R = k ?? r ?? g.intl.string(g.t["Ge+941"]);
         return (0, i.jsxs)("div", {
-            className: a()(x.WY, N),
+            className: a()(x.WY, j),
             children: [(0, i.jsx)(d.vN3, {
                 within: !0,
                 children: (0, i.jsxs)("div", {
                     className: f ? a()(x.U1, T) : void 0,
                     children: [(0, i.jsxs)("div", {
-                        className: a()(x.Yp, j),
+                        className: a()(x.Yp, N),
                         style: {
-                            ...E,
+                            ...I,
                             backgroundImage: t
                         },
                         children: [(0, i.jsx)("span", {
@@ -117,13 +117,13 @@ class p extends l.PureComponent {
                             children: n
                         }), null != w ? (0, i.jsx)(d.DUT, {
                             className: x.c4,
-                            "aria-label": k,
+                            "aria-label": R,
                             onClick: w
                         }) : (0, i.jsx)(u.Ay, {
                             ref: this.inputRef,
                             onChange: b,
                             className: x.c4,
-                            "aria-label": k,
+                            "aria-label": R,
                             tabIndex: 0,
                             maxFileSizeBytes: y,
                             onFileSizeError: O

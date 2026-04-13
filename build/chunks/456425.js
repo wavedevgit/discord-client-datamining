@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(427157),
     g = n(287809),
     f = n(954571),
-    x = n(661191),
-    E = n(998218),
+    E = n(661191),
+    x = n(998218),
     I = n(245205),
     C = n(322387),
     N = n(995273),
@@ -118,12 +118,12 @@ let w = l.memo(function(e) {
                 })
             });
             if (null != t.deeplink) {
-                let e = E.A.safeParseWithQuery(t.deeplink);
+                let e = x.A.safeParseWithQuery(t.deeplink);
                 if (null == e) return;
                 let n = e.hostname,
                     i = e.path;
                 if (null == n || null == i) return;
-                if (E.A.isDiscordHostname(n)) {
+                if (x.A.isDiscordHostname(n)) {
                     let e = i.match("^/users/(\\d+)");
                     null != e && 2 === e.length ? (0, _.openUserProfileModal)({
                         userId: e[1],
@@ -191,7 +191,7 @@ let w = l.memo(function(e) {
                     }) : null, (0, i.jsx)(a.Text, {
                         variant: "text-xs/medium",
                         color: c ? "text-muted" : "text-default",
-                        children: (0, N.jb)(x.default.extractTimestamp(t.id))
+                        children: (0, N.jb)(E.default.extractTimestamp(t.id))
                     }), m]
                 })]
             }), p ? null : (0, i.jsx)(j.e, {

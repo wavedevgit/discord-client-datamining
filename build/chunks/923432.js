@@ -1,6 +1,6 @@
 /** chunk id: 923432 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => E
 });
 var i = n(627968),
     l = n(64700),
@@ -59,7 +59,7 @@ function f(e) {
     })
 }
 
-function x(e) {
+function E(e) {
     let {
         position: t,
         guildChannels: n,
@@ -68,17 +68,17 @@ function x(e) {
         jumpToChannel: u
     } = e, {
         bottomBar: A,
-        topBar: x
-    } = (0, o.cf)([_.A], () => _.A.getUnreadStateForGuildId(n.id)), E = (0, o.bG)([h.A], () => h.A.isFocused()), {
+        topBar: E
+    } = (0, o.cf)([_.A], () => _.A.getUnreadStateForGuildId(n.id)), x = (0, o.bG)([h.A], () => h.A.isFocused()), {
         mode: I,
         mentionCount: C,
         targetChannelId: N
-    } = "bottom" === t ? A : x, T = I === _.k.HIDDEN, S = (0, d.zhh)({
+    } = "bottom" === t ? A : E, T = I === _.k.HIDDEN, S = (0, d.zhh)({
         to: {
             transform: T ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
         },
         config: g
-    }, E ? "respect-motion-settings" : "animate-never"), b = l.useCallback(e => {
+    }, x ? "respect-motion-settings" : "animate-never"), b = l.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), null != N && u(N)
     }, [u, N]);
     return (0, i.jsx)("div", {

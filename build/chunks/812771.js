@@ -59,14 +59,14 @@ function f(e) {
             case 4:
                 return "homeSidebarWidth"
         }
-    }(t), [x, E] = s.useState(A.Ay[f]), I = s.useCallback(e => {
+    }(t), [E, x] = s.useState(A.Ay[f]), I = s.useCallback(e => {
         u.Ay.updatedUnsyncedSettings({
             [f]: e
         })
     }, [f]), C = (0, _.P)({
         maxWidth: n,
         minWidth: 450
-    }), N = (0, c.rdh)(d.A.modules.chat.RESIZE_HANDLE_WIDTH), T = (0, o.clamp)(x, 450, n), S = C ? T : T + N;
+    }), N = (0, c.rdh)(d.A.modules.chat.RESIZE_HANDLE_WIDTH), T = (0, o.clamp)(E, 450, n), S = C ? T : T + N;
     s.useEffect(() => {
         i?.(T, C)
     }, [T, i, C]);
@@ -93,7 +93,7 @@ function f(e) {
                     minWidth: 450,
                     maxWidth: n,
                     resizableNode: p,
-                    onResize: E,
+                    onResize: x,
                     onResizeEnd: I
                 }), (0, l.jsx)("div", {
                     ref: p,

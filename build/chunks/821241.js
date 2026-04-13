@@ -7,10 +7,10 @@ var i = n(627968);
 n(64700);
 var r = n(503698),
     s = n.n(r),
-    l = n(311907),
-    a = n(397927),
-    c = n(709066),
-    o = n(71393),
+    a = n(311907),
+    l = n(397927),
+    o = n(709066),
+    c = n(71393),
     u = n(763754),
     d = n(643204),
     _ = n(809115),
@@ -25,22 +25,22 @@ function T(e) {
         compact: n,
         usernameHook: r,
         channel: T
-    } = e, g = (0, l.bG)([o.A], () => o.A.getGuild(T.guild_id)), N = (0, u.Ay)(t), f = r(N), {
-        avatarSrc: p,
+    } = e, N = (0, a.bG)([c.A], () => c.A.getGuild(T.guild_id)), g = (0, u.Ay)(t), p = r(g), {
+        avatarSrc: C,
         eventHandlers: {
-            onMouseEnter: C,
+            onMouseEnter: f,
             onMouseLeave: h
         }
     } = (0, _.a)(!0);
     return (0, i.jsx)("div", {
-        onMouseEnter: C,
+        onMouseEnter: f,
         onMouseLeave: h,
         children: (0, i.jsx)(E.A, {
             className: s()(I.rs, {
                 [I.oE]: n
             }),
             iconNode: n ? null : (0, i.jsx)(_.l, {
-                src: p
+                src: C
             }),
             iconContainerClassName: I.zc,
             compact: n,
@@ -56,13 +56,13 @@ function T(e) {
                     }),
                     username: (0, i.jsxs)("div", {
                         className: I.he,
-                        children: [(0, i.jsx)(a.Text, {
+                        children: [(0, i.jsx)(l.Text, {
                             variant: "text-md/normal",
                             color: "text-brand",
                             tag: "span",
                             className: I.Xh,
                             children: m.intl.string(m.t.hG1StD)
-                        }), (0, i.jsx)(c.A, {
+                        }), (0, i.jsx)(o.A, {
                             type: A.nu.SYSTEM_DM,
                             className: I.Al
                         })]
@@ -74,9 +74,9 @@ function T(e) {
                         [I.oE]: n
                     }),
                     children: m.intl.format(m.t.W0UBI3, {
-                        username: N.nick,
-                        usernameHook: f,
-                        guildName: g?.name ?? ""
+                        username: g.nick,
+                        usernameHook: p,
+                        guildName: N?.name ?? ""
                     })
                 })]
             })

@@ -18,15 +18,15 @@ var i = n(627968),
     p = n(287809),
     g = n(405269),
     f = n(576456),
-    x = n(712209),
-    E = n(652215),
+    E = n(712209),
+    x = n(652215),
     I = n(985018),
     C = n(915613);
 let N = {
         left: 4,
         right: -12
     },
-    T = [E.lAJ.THREAD_CREATED];
+    T = [x.lAJ.THREAD_CREATED];
 
 function S(e) {
     let {
@@ -74,11 +74,11 @@ function b(e) {
         location: "20e3b0_1"
     }, {
         autoTrackExposure: !1
-    }), r = _.hH.useSetting(), A = (0, u.iJ)(n), f = !1, N = 0 === t.messages.length || a()(t.messages[0].timestamp).isSame(a()(), "day"), T = p.default.getUser(m.default.getId())?.hasFlag(E.nhx.SPAMMER) ?? !1, b = [];
+    }), r = _.hH.useSetting(), A = (0, u.iJ)(n), f = !1, N = 0 === t.messages.length || a()(t.messages[0].timestamp).isSame(a()(), "day"), T = p.default.getUser(m.default.getId())?.hasFlag(x.nhx.SPAMMER) ?? !1, b = [];
     if (!t.collapsed) {
         let e = null,
             d = null,
-            _ = t.messages.slice(0, x.sz);
+            _ = t.messages.slice(0, E.sz);
         _.forEach(t => {
             if (!N && (null == e || !e.isSame(t.timestamp, "day"))) {
                 let n = (0, g.i$)(t.timestamp, "LL");
@@ -96,7 +96,7 @@ function b(e) {
                 treatSpam: !T && s && (0, u.kf)(t) && A,
                 gotoChannel: l
             }, t.id))
-        }), t.messages.length >= x.sz && b.push((0, i.jsx)("div", {
+        }), t.messages.length >= E.sz && b.push((0, i.jsx)("div", {
             className: C.Gr,
             children: (0, i.jsx)(o.QWc, {
                 variant: "primary",

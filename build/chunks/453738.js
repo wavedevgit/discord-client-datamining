@@ -19,14 +19,14 @@ var i = n(627968),
     g = n(652215),
     f = n(968353);
 
-function x(e, t) {
+function E(e, t) {
     if (e.length !== t.length) return !1;
     for (let n = 0; n < e.length; n++)
         if (e[n].conversation.id !== t[n].conversation.id) return !1;
     return !0
 }
 
-function E(e, t) {
+function x(e, t) {
     if (e.size !== t.size) return !1;
     for (let n of e)
         if (!t.has(n)) return !1;
@@ -136,11 +136,11 @@ let I = ["high", "medium", "low"],
             })
         }, [r]);
         let g = h.default.extractTimestamp(t.start_message_id),
-            x = h.default.extractTimestamp(t.end_message_id),
-            E = (0, d.e)({
+            E = h.default.extractTimestamp(t.end_message_id),
+            x = (0, d.e)({
                 timestamp: g
             }),
-            I = Math.max(1, Math.round((x - g) / 1e3)),
+            I = Math.max(1, Math.round((E - g) / 1e3)),
             N = (0, o.WR)({
                 seconds: I,
                 getFormatter: o.i
@@ -176,7 +176,7 @@ let I = ["high", "medium", "low"],
                 variant: "text-xs/normal",
                 color: "text-muted",
                 className: f.FR,
-                children: [E, " ago \xb7 ", N, " duration \xb7 ", t.message_count, " messages \xb7 ", t.user_count, " users"]
+                children: [x, " ago \xb7 ", N, " duration \xb7 ", t.message_count, " messages \xb7 ", t.user_count, " users"]
             }), S?.brief_summary != null && (0, i.jsx)(a.Text, {
                 variant: "text-xs/normal",
                 color: "text-default",
@@ -252,7 +252,7 @@ let I = ["high", "medium", "low"],
 function T(e) {
     let {
         channel: t
-    } = e, n = (0, s.bG)([m.A], () => m.A.getChannelConversations(t.id), [t.id], x), o = (0, s.bG)([m.A], () => m.A.getVisibleConversationIds(t.id), [t.id], E), d = (0, s.bG)([m.A], () => m.A.hasMoreConversations(t.id, "before"), [t.id]), u = (0, s.bG)([m.A], () => m.A.hasMoreConversations(t.id, "after"), [t.id]), h = (0, s.bG)([m.A], () => m.A.isPendingFetch(t.id), [t.id]), p = (0, s.bG)([A.A], () => A.A.isHighlightingEnabled(), []), I = (0, s.bG)([m.A], () => m.A.getScrollToConversation(t.id), [t.id]), C = l.useCallback(e => {
+    } = e, n = (0, s.bG)([m.A], () => m.A.getChannelConversations(t.id), [t.id], E), o = (0, s.bG)([m.A], () => m.A.getVisibleConversationIds(t.id), [t.id], x), d = (0, s.bG)([m.A], () => m.A.hasMoreConversations(t.id, "before"), [t.id]), u = (0, s.bG)([m.A], () => m.A.hasMoreConversations(t.id, "after"), [t.id]), h = (0, s.bG)([m.A], () => m.A.isPendingFetch(t.id), [t.id]), p = (0, s.bG)([A.A], () => A.A.isHighlightingEnabled(), []), I = (0, s.bG)([m.A], () => m.A.getScrollToConversation(t.id), [t.id]), C = l.useCallback(e => {
         (0, _.UA)(t.id, e)
     }, [t.id]), T = l.useCallback(() => {
         (0, _.UA)(null, null)

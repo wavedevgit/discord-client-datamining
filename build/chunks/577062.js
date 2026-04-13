@@ -24,16 +24,16 @@ function u(e) {
         ...g
     } = e, {
         parentAnalyticsLocation: f
-    } = (0, r.Ay)(), x = t || n || u, E = h ? c.l : c.A, I = (0, o.A)(t, n, u, A), {
+    } = (0, r.Ay)(), E = t || n || u, x = h ? c.l : c.A, I = (0, o.A)(t, n, u, A), {
         events: C,
         play: N,
         Component: T
-    } = (0, s.L)(x ? "unmute" : "mute"), S = n || u ? a.O1p : T;
-    return l.useEffect(() => () => N(), [N, x]), (0, i.jsx)(E, {
+    } = (0, s.L)(E ? "unmute" : "mute"), S = n || u ? a.O1p : T;
+    return l.useEffect(() => () => N(), [N, E]), (0, i.jsx)(x, {
         iconComponent: S,
         isTrayButton: !0,
-        caretColor: x ? "red" : "primaryDark",
-        color: x ? "red" : void 0,
+        caretColor: E ? "red" : "primaryDark",
+        color: E ? "red" : void 0,
         label: I,
         onMouseEnter: e => {
             _?.(e), C.onMouseEnter()

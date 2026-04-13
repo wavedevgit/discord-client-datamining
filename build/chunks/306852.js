@@ -1,6 +1,6 @@
 /** chunk id: 306852 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => E
 });
 var i = n(627968),
     l = n(64700),
@@ -19,26 +19,26 @@ var i = n(627968),
     g = n(778437);
 let f = "CameraPreviewPosition";
 
-function x(e) {
+function E(e) {
     let {
         width: t,
         onContextMenuParticipant: n,
         height: s,
-        channel: x,
-        participants: E,
+        channel: E,
+        participants: x,
         onSelectParticipant: I
     } = e, [C, N] = function() {
         let [e, t] = l.useState(() => o.w.get(f, _.CUs.BOTTOM_RIGHT));
         return [e, l.useCallback(e => {
             o.w.set(f, e), t(e)
         }, [])]
-    }(), T = l.useRef(null), S = null == x.getGuildId() ? 70 : 50, b = (0, r.bG)([h.A], () => h.A.pipWidth(m.R8.CAMERA_PREVIEW)), y = E.length, v = b * y + 8 * (y - 1), j = l.useMemo(() => ({
+    }(), T = l.useRef(null), S = null == E.getGuildId() ? 70 : 50, b = (0, r.bG)([h.A], () => h.A.pipWidth(m.R8.CAMERA_PREVIEW)), y = x.length, v = b * y + 8 * (y - 1), j = l.useMemo(() => ({
         minWidth: m.mn[m.R8.CAMERA_PREVIEW] * y + 8 * (y - 1),
         maxWidth: m.cF[m.R8.CAMERA_PREVIEW] * y + 8 * (y - 1)
     }), [y]);
     l.useLayoutEffect(() => {
         T.current?.ensureIsInPosition()
-    }, [E.length]);
+    }, [x.length]);
     let R = l.useCallback(e => {
             let t = 0 === y ? e : (e - 8 * (y - 1)) / y;
             d.EB(t, m.R8.CAMERA_PREVIEW)
@@ -64,9 +64,9 @@ function x(e) {
             resizeConfig: j,
             children: (0, i.jsx)("div", {
                 className: p.iA,
-                children: E.map(e => (0, i.jsx)(A.Ay, {
+                children: x.map(e => (0, i.jsx)(A.Ay, {
                     participant: e,
-                    channel: x,
+                    channel: E,
                     onContextMenu: n,
                     className: a()(p.Vs, g.a8),
                     fit: A.Yl.COVER,

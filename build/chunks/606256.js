@@ -22,8 +22,8 @@ let A = l.forwardRef(function(e, t) {
         tooltip: p,
         upperBadge: g,
         lowerBadge: f,
-        lowerBadgeSize: x,
-        showPill: E = !0,
+        lowerBadgeSize: E,
+        showPill: x = !0,
         className: I,
         "aria-label": C,
         children: N,
@@ -32,7 +32,7 @@ let A = l.forwardRef(function(e, t) {
         onMouseDown: b
     } = e, y = (0, r.Vd)(n), [v, j] = l.useState(!1), R = "string" == typeof p && null == C ? p : C;
     return (0, i.jsxs)(c.c, {
-        children: [E ? (0, i.jsx)("div", {
+        children: [x ? (0, i.jsx)("div", {
             className: h.Io,
             children: (0, i.jsx)(d.A, {
                 hovered: v,
@@ -45,7 +45,7 @@ let A = l.forwardRef(function(e, t) {
                 selected: !0,
                 upperBadge: g,
                 lowerBadge: f,
-                lowerBadgeSize: x,
+                lowerBadgeSize: E,
                 children: (0, i.jsx)(o.DUT, {
                     innerRef: t,
                     onMouseEnter: () => {

@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(47167),
     g = n(202384),
     f = n(51758),
-    x = n(721592),
-    E = n(214660),
+    E = n(721592),
+    x = n(214660),
     I = n(824865),
     C = n(378570),
     N = n(323443),
@@ -48,8 +48,8 @@ var W = n(652215),
     K = n(349828),
     Y = n(985018),
     z = n(928409),
-    q = n(822294);
-class X extends B.Ay {
+    X = n(822294);
+class q extends B.Ay {
     channelItemRef = l.createRef();
     state = {
         shouldShowGuildVerificationPopout: !1
@@ -144,8 +144,8 @@ class X extends B.Ay {
         } = this.props, {
             shouldShowGuildVerificationPopout: t
         } = this.state;
-        if (t) return (0, i.jsx)(E.A, {
-            type: E.H.VOICE,
+        if (t) return (0, i.jsx)(x.A, {
+            type: x.H.VOICE,
             guildId: e.guild_id,
             closePopout: this.closeGuildVerificationPopout
         });
@@ -204,8 +204,8 @@ class X extends B.Ay {
             stageInstance: _,
             isSubscriptionGated: g,
             needSubscriptionToAccess: f,
-            unread: x,
-            resolvedUnreadSetting: E,
+            unread: E,
+            resolvedUnreadSetting: x,
             mentionCount: I,
             isFavoriteSuggestion: C
         } = this.props, {
@@ -228,13 +228,13 @@ class X extends B.Ay {
                         ref: this.channelItemRef,
                         className: z.Ki,
                         iconClassName: a()({
-                            [q.G]: null != _
+                            [X.G]: null != _
                         }),
                         channel: e,
                         selected: !C && t,
                         connected: n,
-                        unread: n ? x : void 0,
-                        resolvedUnreadSetting: E,
+                        unread: n ? E : void 0,
+                        resolvedUnreadSetting: x,
                         mentionCount: I,
                         locked: l,
                         onClick: () => {
@@ -248,7 +248,7 @@ class X extends B.Ay {
                         isFavoriteSuggestion: C,
                         "aria-label": (0, m.Ay)({
                             channel: e,
-                            unread: x,
+                            unread: E,
                             mentionCount: I,
                             isSubscriptionGated: g,
                             needSubscriptionToAccess: f
@@ -261,7 +261,7 @@ class X extends B.Ay {
         return A && (T = o(T)), h && (T = s(r(T))), T
     }
 }
-let $ = (0, A.a)((0, _.F)(X));
+let $ = (0, A.a)((0, _.F)(q));
 
 function Q(e) {
     let {
@@ -288,14 +288,14 @@ function Q(e) {
     }), h = (0, r.bG)([j.A], () => j.A.isCollapsed(n.parent_id)), A = (0, v.Ay)(n.id), _ = (0, r.bG)([b.A], () => b.A.getStageInstanceByChannel(n.id), [n.id]), m = (0, T.zy)(n.id, S.ip.AUDIENCE), {
         isSubscriptionGated: p,
         needSubscriptionToAccess: g
-    } = (0, x.A)(n.id), f = (0, r.bG)([G.Ay], () => G.Ay.isFavorite(t.id, n.id)), E = (0, y.xn)(n.id), I = (0, V.A)({
+    } = (0, E.A)(n.id), f = (0, r.bG)([G.Ay], () => G.Ay.isFavorite(t.id, n.id)), x = (0, y.xn)(n.id), I = (0, V.A)({
         channel: n,
         isChannelSelected: !1,
         isChannelCollapsed: a,
         voiceStates: o,
         isSubscriptionGated: p,
         needSubscriptionToAccess: g,
-        enableConnectedUserLimit: E || n.userLimit > 0 && n.userLimit < W.RCc
+        enableConnectedUserLimit: x || n.userLimit > 0 && n.userLimit < W.RCc
     }), C = e.connected && null == I;
     return (0, i.jsx)($, {
         categoryCollapsed: h,

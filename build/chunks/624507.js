@@ -25,14 +25,14 @@ function A(e) {
         isExpanded: b,
         errors: f,
         onToggleExpand: _
-    } = e, N = l.useMemo(() => {
+    } = e, j = l.useMemo(() => {
         var e;
         return null != (e = t.avatar) && /^data:/.test(e) ? e : (0, m.ku)({
             id: t.id,
             avatar: e,
             discriminator: x.h3J
         })
-    }, [t]), j = l.useCallback(() => {
+    }, [t]), N = l.useCallback(() => {
         (0, a.A)({
             title: h.intl.formatToPlainString(h.t.gBKqZ0, {
                 name: t.name
@@ -98,7 +98,7 @@ function A(e) {
             }), (0, i.jsx)(r.cGx, {
                 className: p.Bd
             }), (0, i.jsx)(s.QWc, {
-                onClick: j,
+                onClick: N,
                 size: "sm",
                 variant: "critical",
                 text: h.intl.string(h.t.CMy0Cj)
@@ -118,7 +118,7 @@ function A(e) {
                     align: "center",
                     children: [(0, i.jsx)(g.A, {
                         name: t.name,
-                        imageSrc: N,
+                        imageSrc: j,
                         details: v
                     }), (0, i.jsx)(u.A, {
                         className: p.eO,

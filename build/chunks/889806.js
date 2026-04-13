@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(963027),
     g = n(47167),
     f = n(5932),
-    x = n(414808),
-    E = n(302005),
+    E = n(414808),
+    x = n(302005),
     I = n(721592),
     C = n(454058),
     N = n(824865),
@@ -191,7 +191,7 @@ class H extends U.Ay {
             connectDragPreview: A,
             canReorderChannel: _,
             isSubscriptionGated: m,
-            isFavoriteSuggestion: E,
+            isFavoriteSuggestion: x,
             subtitle: I,
             forceTopLevelThread: C,
             embeddedApps: T,
@@ -221,7 +221,7 @@ class H extends U.Ay {
                     className: V.Ki,
                     channel: e,
                     guild: t,
-                    selected: !E && n,
+                    selected: !x && n,
                     muted: l,
                     unread: s,
                     mentionCount: c,
@@ -231,7 +231,7 @@ class H extends U.Ay {
                     onMouseDown: this.handleMouseDown,
                     onContextMenu: this.handleContextMenu,
                     connectDragPreview: _ ? A : null,
-                    isFavoriteSuggestion: E,
+                    isFavoriteSuggestion: x,
                     channelTypeOverride: C ? w.rbe.GUILD_TEXT : void 0,
                     resolvedUnreadSetting: S,
                     transitionExtras: R ? {
@@ -243,13 +243,13 @@ class H extends U.Ay {
                         mentionCount: c,
                         isSubscriptionGated: m
                     }),
-                    children: [E && (0, i.jsxs)(i.Fragment, {
+                    children: [x && (0, i.jsxs)(i.Fragment, {
                         children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
-                    }), !E && (0, i.jsxs)(i.Fragment, {
+                    }), !x && (0, i.jsxs)(i.Fragment, {
                         children: [this.renderChannelInfo(), this.renderInviteButton(), this.renderEditButton()]
                     })]
                 })
-            }), y && (0, i.jsx)(x.A, {
+            }), y && (0, i.jsx)(E.A, {
                 targetElementRef: L,
                 markMenuItemPopoverAsDismissed: v
             })]
@@ -280,7 +280,7 @@ function W(e) {
             canManageChannel: v.A.can(w.xBc.MANAGE_CHANNELS, t),
             canReorderChannel: !0 !== s && (n.id === B.Vc || (null != e ? v.A.can(w.xBc.MANAGE_CHANNELS, e) : v.A.can(w.xBc.MANAGE_CHANNELS, n)))
         }
-    }), x = (0, o.bG)([C.A], () => C.A.shouldIndicateNewChannel(n.id, t.id)), {
+    }), E = (0, o.bG)([C.A], () => C.A.shouldIndicateNewChannel(n.id, t.id)), {
         needSubscriptionToAccess: N,
         isSubscriptionGated: y
     } = (0, I.A)(t.id), O = (0, o.bG)([L.Ay], () => L.Ay.isFavorite(n.id, t.id)), M = (0, m.ni)(t), D = (0, A.Gp)(t.id), U = (0, G.A)({
@@ -289,7 +289,7 @@ function W(e) {
         isChannelSelected: c,
         isSubscriptionGated: y,
         needSubscriptionToAccess: N,
-        isNewChannel: x,
+        isNewChannel: E,
         muted: d,
         enableActivities: D,
         resolvedUnreadSetting: g
@@ -298,7 +298,7 @@ function W(e) {
     }, [])), {
         showMenuItemPopover: W,
         markMenuItemPopoverAsDismissed: K
-    } = (0, E.z)({
+    } = (0, x.z)({
         location: "TextChannel",
         isChannelSelected: c,
         isTargetInViewport: k,
@@ -313,7 +313,7 @@ function W(e) {
         hasMoreActiveThreads: h,
         isSubscriptionGated: y,
         needSubscriptionToAccess: N,
-        isNewChannel: x && e.canBeNewChannel,
+        isNewChannel: E && e.canBeNewChannel,
         isFavoriteSuggestion: a && !O,
         channelIsContentGated: M,
         channelInfo: U,

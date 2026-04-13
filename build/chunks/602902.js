@@ -1,16 +1,16 @@
 /** chunk id: 602902 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    K: () => N
+    K: () => g
 }), n(321073);
 var i = n(627968);
 n(64700);
 var r = n(192308),
     s = n(397927),
-    l = n(294454),
-    a = n(118517),
-    c = n(734057),
-    o = n(31717),
+    a = n(294454),
+    l = n(118517),
+    o = n(734057),
+    c = n(31717),
     u = n(320501),
     d = n(954571),
     _ = n(661191),
@@ -19,19 +19,19 @@ var r = n(192308),
     m = n(439818),
     I = n(399925),
     T = n(696016),
-    g = n(652215);
-async function N(e, t) {
+    N = n(652215);
+async function g(e, t) {
     let {
-        channelId: N,
-        analyticsLocations: f,
-        messageReference: p
-    } = t, C = c.A.getChannel(N);
-    if (null != C) {
-        if (null != p) {
-            let e = u.A.getMessage(p.channel_id, p.message_id);
-            null != e && (0, a.Yf)({
+        channelId: g,
+        analyticsLocations: p,
+        messageReference: C
+    } = t, f = o.A.getChannel(g);
+    if (null != f) {
+        if (null != C) {
+            let e = u.A.getMessage(C.channel_id, C.message_id);
+            null != e && (0, l.Yf)({
                 message: e,
-                channel: C,
+                channel: f,
                 shouldMention: !1,
                 showMentionToggle: !1
             })
@@ -56,15 +56,15 @@ async function N(e, t) {
                         type: "image/jpeg"
                     })), n.push({})
                 }
-                d.default.track(g.HAw.CLIP_SHARED, {
-                    location_stack: f,
-                    guild_id: C.guild_id,
-                    channel_id: C.id,
-                    channel_type: C.type,
+                d.default.track(N.HAw.CLIP_SHARED, {
+                    location_stack: p,
+                    guild_id: f.guild_id,
+                    channel_id: f.id,
+                    channel_type: f.type,
                     application_id: i.applicationId,
                     clip_id: i.id
                 })
-            }(0, E.R)(t, C, o.C.ChannelMessage, {
+            }(0, E.R)(t, f, c.C.ChannelMessage, {
                 filesMetadata: n,
                 origin: "unknown:clip_share"
             }), r.closeAllModals()
@@ -78,10 +78,10 @@ async function N(e, t) {
         return n => (0, i.jsx)(t, {
             ...n,
             clips: e,
-            analyticsLocations: f
+            analyticsLocations: p
         })
     }, {
         stackingBehavior: "stack",
-        modalKey: l.aU
+        modalKey: a.aU
     })
 }

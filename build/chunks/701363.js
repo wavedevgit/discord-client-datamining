@@ -383,15 +383,15 @@ function e_(e) {
                 [ea.Y_]: eB
             })
         })]
-    }) : e3, e5 = s.useRef(null), e6 = (0, k.W)({
+    }) : e3, e5 = s.useRef(null), e8 = (0, k.W)({
         location: "PrivateChannel"
     }) && a?.displayNameStyles != null, {
-        isIncomingCall: e8,
+        isIncomingCall: e6,
         isOngoingCall: e4
     } = (0, b.A)(t.id), te = [(0, U.Ay)({
         channel: t,
         unread: eq,
-        isIncomingCall: e8,
+        isIncomingCall: e6,
         isOngoingCall: e4
     }), (0, U.r2)({
         channel: t,
@@ -529,7 +529,7 @@ function e_(e) {
                             }) : null,
                             name: (0, l.jsx)(T.A, {
                                 className: r()(ea.uN, {
-                                    [ea.e8]: e6
+                                    [ea.e8]: e8
                                 }),
                                 children: e7
                             }),
@@ -538,7 +538,7 @@ function e_(e) {
                                 type: M.A.Types.SYSTEM_DM,
                                 verified: !0
                             }) : null,
-                            withDisplayNameStyles: e6
+                            withDisplayNameStyles: e8
                         })
                     }), (0, l.jsxs)("div", {
                         className: r()(ea._q, {

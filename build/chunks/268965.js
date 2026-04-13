@@ -76,8 +76,8 @@ let g = e => {
             handleSearchKeyPress: m,
             currentCategoryId: p,
             handleSelectCategory: f,
-            categoryCounts: x,
-            allEntriesCount: E,
+            categoryCounts: E,
+            allEntriesCount: x,
             isLoading: I
         } = e;
         return (0, i.jsx)("div", {
@@ -102,7 +102,7 @@ let g = e => {
                         children: [(0, i.jsx)(r.VQ0.Item, {
                             className: _.YU,
                             id: c.mU.ALL,
-                            children: `${h.intl.string(h.t.hEAa2a)} (${E})`
+                            children: `${h.intl.string(h.t.hEAa2a)} (${x})`
                         }, c.mU.ALL), (0, c.g2)(t.id).map(e => {
                             let {
                                 value: t,
@@ -111,7 +111,7 @@ let g = e => {
                             return (0, i.jsx)(r.VQ0.Item, {
                                 className: _.YU,
                                 id: t,
-                                children: `${n} ${null!=x[t]?`(${x[t]})`:""}`
+                                children: `${n} ${null!=E[t]?`(${E[t]})`:""}`
                             }, t)
                         })]
                     })

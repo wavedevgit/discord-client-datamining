@@ -1,7 +1,7 @@
 /** chunk id: 516311 params = (module,exports,require) **/
 n.d(t, {
-    RQ: () => x,
-    dA: () => E
+    RQ: () => E,
+    dA: () => x
 });
 var i = n(627968);
 n(64700);
@@ -23,7 +23,7 @@ var o = n(288104),
 n(806931);
 var f = n(985018);
 
-function x(e) {
+function E(e) {
     let t = (0, a.bG)([h.A], () => h.A.getChannel(e), [e]),
         n = (0, a.bG)([A.A], () => A.A.can(m.QY, t)),
         l = (0, g.zU)(),
@@ -44,7 +44,7 @@ function x(e) {
     }) : null
 }
 
-function E(e) {
+function x(e) {
     let t = (0, a.bG)([h.A], () => h.A.getChannel(e), [e]);
     s()(null != t, "useNotificationSettingsItem: channel cannot be undefined");
     let n = (0, u.os)("StageChannelCallOverflowMenu"),

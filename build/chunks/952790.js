@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(731091),
     g = n(544028),
     f = n(253932),
-    x = n(576705),
-    E = n(486020),
+    E = n(576705),
+    x = n(486020),
     I = n(885631),
     C = n(986268),
     N = n(652215),
@@ -53,7 +53,7 @@ function y(e) {
                 className: a()(b.Q, {
                     [b.fr]: o.Fr
                 }),
-                src: E.Ay.getGuildBannerURL({
+                src: x.Ay.getGuildBannerURL({
                     id: t.id,
                     banner: l
                 }, s) ?? "",
@@ -139,8 +139,8 @@ function L(e) {
         ariaControls: o,
         ariaExpanded: _,
         children: g
-    } = e, f = (0, h.YC)(s), E = (0, d.bG)([x.A], () => (0, m.K)(x.A, s)), I = l.useCallback(() => {
-        E ? (0, u.mMO)(async () => {
+    } = e, f = (0, h.YC)(s), x = (0, d.bG)([E.A], () => (0, m.K)(E.A, s)), I = l.useCallback(() => {
+        x ? (0, u.mMO)(async () => {
             let {
                 default: e
             } = await Promise.all([n.e("43600"), n.e("67505")]).then(n.bind(n, 234355));
@@ -157,7 +157,7 @@ function L(e) {
                 ...t
             })
         })
-    }, [E, s]);
+    }, [x, s]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(u.DUT, {
             className: b.Vm,
@@ -210,7 +210,7 @@ let M = l.memo(function(e) {
         onMouseDown: A,
         disableBannerAnimation: m,
         "aria-expanded": p,
-        "aria-controls": x,
+        "aria-controls": E,
         guild: C,
         guildBanner: T,
         animationOverlayHeight: S,
@@ -218,7 +218,7 @@ let M = l.memo(function(e) {
         headerClassName: R,
         communityInfoVisible: O,
         hasSubheader: M
-    } = e, U = C.features.has(N.GuildFeatures.ANIMATED_BANNER), G = (0, _.A)(C), P = !G && (0, I.A)(C), k = !G && O, w = (0, E.VI)(T) && U && !m, [B, V] = l.useState(!1), H = l.useRef(!1), F = l.useRef(null), W = t ?? F, K = l.useRef(void 0), Y = f.kt.getSetting(), z = (0, d.bG)([g.A], () => g.A.theme);
+    } = e, U = C.features.has(N.GuildFeatures.ANIMATED_BANNER), G = (0, _.A)(C), P = !G && (0, I.A)(C), k = !G && O, w = (0, x.VI)(T) && U && !m, [B, V] = l.useState(!1), H = l.useRef(!1), F = l.useRef(null), W = t ?? F, K = l.useRef(void 0), Y = f.kt.getSetting(), z = (0, d.bG)([g.A], () => g.A.theme);
     l.useEffect(() => {
         if (w && n && !H.current && Y) return V(!0), K.current = setTimeout(() => {
             V(!1)
@@ -228,7 +228,7 @@ let M = l.memo(function(e) {
     }, [w, n, Y]), l.useEffect(() => {
         H.current = n
     }, [n]);
-    let q = () => {
+    let X = () => {
         let {
             renderBanner: t,
             guildBanner: n
@@ -239,12 +239,12 @@ let M = l.memo(function(e) {
         theme: z,
         children: e => (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {
-                "data-has-banner": q(),
+                "data-has-banner": X(),
                 "data-banner-visible": n,
                 ref: W,
                 className: a()(r, {
                     [b.kL]: !0,
-                    [b.r9]: q(),
+                    [b.r9]: X(),
                     [b.Pi]: n,
                     [e]: !1,
                     [b.Iv]: k || M && P
@@ -262,7 +262,7 @@ let M = l.memo(function(e) {
                             guild: C,
                             onClick: c,
                             onContextMenu: h,
-                            ariaControls: x,
+                            ariaControls: E,
                             ariaExpanded: p,
                             children: j
                         })
@@ -280,7 +280,7 @@ let M = l.memo(function(e) {
                 }) : null, (0, i.jsx)(D, {
                     controller: s
                 })]
-            }), w && q() ? (0, i.jsx)("div", {
+            }), w && X() ? (0, i.jsx)("div", {
                 className: b.rt,
                 onMouseEnter: () => {
                     V(!0), clearTimeout(K.current)

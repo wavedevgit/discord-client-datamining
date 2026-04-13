@@ -1,6 +1,6 @@
 /** chunk id: 357819 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => x
 });
 var i = n(627968),
     l = n(64700),
@@ -19,13 +19,13 @@ var i = n(627968),
     g = n(985018),
     f = n(516950);
 
-function x(e) {
+function E(e) {
     return e.type === c.wY.VOICE
 }
-let E = (0, a.A)(e => {
+let x = (0, a.A)(e => {
     let t, n, {
             channel: a,
-            width: E,
+            width: x,
             onScroll: I,
             popoutType: C
         } = e,
@@ -42,10 +42,10 @@ let E = (0, a.A)(e => {
         y = (0, d.zy)(a.id, c.ip.AUDIENCE),
         v = (0, s.bG)([o.A], () => null != N ? o.A.getParticipant(a.id, N) : null),
         j = (0, d.E5)(a.id, c.ip.SPEAKER),
-        R = j.filter(x),
+        R = j.filter(E),
         O = null != j.find(e => e.type === c.wY.STREAM),
-        L = Math.floor((E - 32) / 102),
-        M = E < 424 ? 1 : E < 624 ? 2 : E < 824 || S ? 3 : 4,
+        L = Math.floor((x - 32) / 102),
+        M = x < 424 ? 1 : x < 624 ? 2 : x < 824 || S ? 3 : 4,
         D = {
             [c.ip.SPEAKER]: M,
             [c.ip.AUDIENCE]: L,
@@ -57,11 +57,11 @@ let E = (0, a.A)(e => {
         {
             speakerTileWidth: w,
             speakerTileHeight: B
-        } = (n = Math.floor((t = Math.floor(E / M - 8)) / p.i), {
+        } = (n = Math.floor((t = Math.floor(x / M - 8)) / p.i), {
             speakerTileWidth: t,
             speakerTileHeight: n
         }),
-        V = T ? E - 32 : Math.min(E - 64, 3 * w + 8),
+        V = T ? x - 32 : Math.min(x - 64, 3 * w + 8),
         H = e => e === G.length - 1 || 0 === y && 1 === e,
         [F, W] = l.useState(!1),
         [K, Y] = l.useState(!1);

@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(616356),
     g = n(734057),
     f = n(287809),
-    x = n(607567),
-    E = n(403362),
+    E = n(607567),
+    x = n(403362),
     I = n(661191),
     C = n(181079),
     N = n(652215),
@@ -41,11 +41,11 @@ function b(e, t) {
 }
 
 function y() {
-    let e = (0, d.yK)([C.A, g.A], () => I.default.keys(C.A.getFavoriteChannels()).map(e => g.A.getChannel(e)).filter(E.Vq)),
+    let e = (0, d.yK)([C.A, g.A], () => I.default.keys(C.A.getFavoriteChannels()).map(e => g.A.getChannel(e)).filter(x.Vq)),
         t = e.map(e => e.id),
         n = e.filter(e => e.type === N.rbe.GUILD_VOICE),
         l = e.filter(e => e.type === N.rbe.GUILD_STAGE_VOICE).map(e => e.id),
-        s = (0, d.yK)([x.Ay], () => o().flatMap(n, e => x.Ay.getVoiceStatesForChannel(e).map(e => {
+        s = (0, d.yK)([E.Ay], () => o().flatMap(n, e => E.Ay.getVoiceStatesForChannel(e).map(e => {
             let {
                 user: t
             } = e;

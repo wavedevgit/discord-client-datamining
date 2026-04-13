@@ -1,6 +1,6 @@
 /** chunk id: 179242 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => E
 });
 var i = n(627968);
 n(64700);
@@ -20,14 +20,14 @@ var l = n(163126),
     g = n(985018),
     f = n(506157);
 
-function x(e) {
+function E(e) {
     let {
         user: t,
         channelId: n
     } = e, {
-        analyticsLocations: x
+        analyticsLocations: E
     } = (0, s.Ay)(), {
-        context: E
+        context: x
     } = (0, o.NJ)(), I = (0, l.A)(), {
         mutualFriendsCount: C,
         mutualFriends: N,
@@ -81,9 +81,9 @@ function x(e) {
                     channelId: n,
                     onSelect: () => {
                         (0, u.openUserProfileModal)({
-                            ...E,
+                            ...x,
                             userId: l.id,
-                            sourceAnalyticsLocations: x
+                            sourceAnalyticsLocations: E
                         })
                     }
                 }, t)

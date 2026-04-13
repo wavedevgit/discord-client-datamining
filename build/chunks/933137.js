@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(493781),
     N = n(894222),
     E = n(652215),
-    C = n(985018),
-    T = n(691742);
+    T = n(985018),
+    C = n(691742);
 
 function I(e) {
     let {
@@ -69,8 +69,8 @@ function b(e) {
         h.A.setIsAgeRestricted(t, e)
     }, [t]), g = d === N.J.DISCOVERABLE || n === E.ftr.AGE_RESTRICTED && a !== E.ftr.AGE_RESTRICTED;
     return (0, i.jsx)(r.dOG, {
-        label: C.intl.string(C.t.N9xEJF),
-        description: C.intl.format(C.t.iyQQ62, {
+        label: T.intl.string(T.t.N9xEJF),
+        description: T.intl.format(T.t.iyQQ62, {
             helpArticleLink: u.A.getArticleURL(E.MVz.NSFW_SERVER_AGE_RESTRICTION)
         }),
         checked: o,
@@ -98,18 +98,18 @@ function v() {
         children: [(0, i.jsx)(r.Heading, {
             color: "text-strong",
             variant: "heading-lg/semibold",
-            children: C.intl.string(C.t.YJlvBM)
+            children: T.intl.string(T.t.YJlvBM)
         }), (0, i.jsx)(j.G, {
             onTypePicked: a,
             activeType: c,
             guild: e
         }), (0, i.jsx)("div", {
-            className: T.y
+            className: C.y
         }), !n && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(b, {
                 guildId: e.id
             }), (0, i.jsx)("div", {
-                className: T.y
+                className: C.y
             })]
         }), (0, i.jsx)("div", {
             children: (0, i.jsx)(I, {

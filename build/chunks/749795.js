@@ -7,10 +7,10 @@ var i = n(627968);
 n(64700);
 var r = n(503698),
     s = n.n(r),
-    l = n(397927),
-    a = n(709066),
-    c = n(763754),
-    o = n(643204),
+    a = n(397927),
+    l = n(709066),
+    o = n(763754),
+    c = n(643204),
     u = n(809115),
     d = n(888675),
     _ = n(705751),
@@ -22,16 +22,16 @@ function m(e) {
         message: t,
         compact: n,
         usernameHook: r
-    } = e, m = (0, c.Ay)(t), I = r(m), {
+    } = e, m = (0, o.Ay)(t), I = r(m), {
         avatarSrc: T,
         eventHandlers: {
-            onMouseEnter: g,
-            onMouseLeave: N
+            onMouseEnter: N,
+            onMouseLeave: g
         }
     } = (0, u.a)(!0);
     return (0, i.jsx)("div", {
-        onMouseEnter: g,
-        onMouseLeave: N,
+        onMouseEnter: N,
+        onMouseLeave: g,
         children: (0, i.jsx)(d.A, {
             className: s()(A.rs, {
                 [A.oE]: n
@@ -45,7 +45,7 @@ function m(e) {
                 className: s()(A.Qs, {
                     [A.oE]: n
                 }),
-                children: [(0, i.jsx)(o.ix, {
+                children: [(0, i.jsx)(c.ix, {
                     message: t,
                     messageClassname: A.he,
                     className: s()(A.QV, A.he, {
@@ -53,13 +53,13 @@ function m(e) {
                     }),
                     username: (0, i.jsxs)("div", {
                         className: A.he,
-                        children: [(0, i.jsx)(l.Text, {
+                        children: [(0, i.jsx)(a.Text, {
                             variant: "text-md/normal",
                             color: "text-brand",
                             tag: "span",
                             className: A.Xh,
                             children: E.intl.string(E.t.hG1StD)
-                        }), (0, i.jsx)(a.A, {
+                        }), (0, i.jsx)(l.A, {
                             type: _.nu.SYSTEM_DM,
                             className: A.Al
                         })]

@@ -19,8 +19,8 @@ var l = n(503698),
     p = n(47167),
     g = n(713654),
     f = n(915089),
-    x = n(263063),
-    E = n(616356),
+    E = n(263063),
+    x = n(616356),
     I = n(734057),
     C = n(71393),
     N = n(290863),
@@ -140,11 +140,11 @@ function U(e) {
         channel: t,
         gotoChannel: n
     } = e, l = (0, r.bG)([C.A], () => C.A.getGuild(t.guild_id));
-    return null == l ? null : (0, i.jsx)(x.Ay, {
+    return null == l ? null : (0, i.jsx)(E.Ay, {
         "aria-hidden": !0,
         className: j.$f,
         guild: l,
-        size: x.Ay.Sizes.MEDIUM,
+        size: E.Ay.Sizes.MEDIUM,
         active: !0,
         onClick: n,
         tabIndex: -1
@@ -207,13 +207,13 @@ function P(e) {
         status: l,
         activities: s,
         applicationStream: a
-    } = (0, r.cf)([S.default, N.A, E.A], () => {
+    } = (0, r.cf)([S.default, N.A, x.A], () => {
         let e = S.default.getUser(t.getRecipientId());
         return {
             user: e,
             status: null != e ? N.A.getStatus(e.id) : null,
             activities: null != e ? N.A.getActivities(e.id) : null,
-            applicationStream: null != e ? E.A.getAnyStreamForUser(e.id) : null
+            applicationStream: null != e ? x.A.getAnyStreamForUser(e.id) : null
         }
     }), {
         voiceChannel: o

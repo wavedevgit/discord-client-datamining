@@ -1,6 +1,6 @@
 /** chunk id: 947461 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => E
 });
 var i = n(627968),
     l = n(64700),
@@ -14,15 +14,15 @@ var i = n(627968),
     h = n(652215),
     A = n(746080),
     _ = n(49999),
-    m = n(294726),
+    m = n(799435),
     p = n(985018),
     g = n(81152),
     f = n(928409);
-let x = l.memo(function(e) {
+let E = l.memo(function(e) {
     let {
         guildId: t,
-        selected: x
-    } = e, [E, I] = (0, d.ww)([s.M.GAME_SERVER_HOSTING_NEW_BADGE], t), C = E === s.M.GAME_SERVER_HOSTING_NEW_BADGE, N = l.useCallback(() => {
+        selected: E
+    } = e, [x, I] = (0, d.ww)([s.M.GAME_SERVER_HOSTING_NEW_BADGE], t), C = x === s.M.GAME_SERVER_HOSTING_NEW_BADGE, N = l.useCallback(() => {
         I(_.i.USER_DISMISS), (0, u.pX)(h.BVt.CHANNEL(t, A.VV.GAME_SERVERS))
     }, [t, I]), T = l.useCallback(e => {
         e.stopPropagation(), (0, a.openModalLazy)(async () => {
@@ -69,7 +69,7 @@ let x = l.memo(function(e) {
             color: "currentColor"
         }),
         text: p.intl.string(m.default.vCzwM7),
-        selected: x,
+        selected: E,
         onClick: N,
         trailing: S
     })

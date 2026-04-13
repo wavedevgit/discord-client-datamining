@@ -17,17 +17,17 @@ var i = n(627968),
 let m = function(e) {
     let {
         channel: t
-    } = e, n = (0, o.ni)(t), [m, p] = l.useState(!1), g = (0, s.bG)([c.Ay], () => c.Ay.hasUnreadPins(t.id), [t]), f = (0, d.aL)(), x = l.useRef(null), E = l.useCallback(() => {
+    } = e, n = (0, o.ni)(t), [m, p] = l.useState(!1), g = (0, s.bG)([c.Ay], () => c.Ay.hasUnreadPins(t.id), [t]), f = (0, d.aL)(), E = l.useRef(null), x = l.useCallback(() => {
         n || p(e => !e)
     }, [n]);
 
     function I(e) {
         e?.shiftKey || f.dispatch(A.jej.POPOUT_CLOSE)
     }
-    return l.useEffect(() => (u._.subscribe(A.jej.TOGGLE_CHANNEL_PINS, E), () => {
-        u._.unsubscribe(A.jej.TOGGLE_CHANNEL_PINS, E)
-    }), [E]), (0, i.jsx)(a.YNO, {
-        targetElementRef: x,
+    return l.useEffect(() => (u._.subscribe(A.jej.TOGGLE_CHANNEL_PINS, x), () => {
+        u._.unsubscribe(A.jej.TOGGLE_CHANNEL_PINS, x)
+    }), [x]), (0, i.jsx)(a.YNO, {
+        targetElementRef: E,
         shouldShow: m,
         animation: a.YNO.Animation.NONE,
         position: "bottom",
@@ -49,8 +49,8 @@ let m = function(e) {
             } = t;
             return (0, i.jsx)(h.In, {
                 ...e,
-                ref: x,
-                onClick: E,
+                ref: E,
+                onClick: x,
                 tooltip: l ? null : _.intl.string(_.t["mp1N/2"]),
                 icon: a.tsw,
                 iconSize: 20,

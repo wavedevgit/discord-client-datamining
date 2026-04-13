@@ -1,50 +1,50 @@
 /** chunk id: 548612 params = (module,exports,require) **/
-t.d(l, {
+l.d(t, {
     A: () => m
 });
-var n = t(627968),
-    i = t(64700),
-    s = t(317097),
-    a = t(397927),
-    r = t(930349),
-    o = t(652215),
-    d = t(985018),
-    c = t(881091);
+var n = l(627968),
+    i = l(64700),
+    s = l(317097),
+    a = l(397927),
+    r = l(930349),
+    o = l(652215),
+    d = l(985018),
+    c = l(881091);
 
 function u(e) {
     let {
-        color: l,
-        suggestedColors: t,
+        color: t,
+        suggestedColors: l,
         disabled: r,
         ariaLabel: d,
         onSelect: u
-    } = e, m = i.useRef(null), x = (0, s.Hl)(l);
+    } = e, m = i.useRef(null), p = (0, s.Hl)(t);
     return (0, n.jsx)(a.YNO, {
         targetElementRef: m,
         renderPopout: e => (0, n.jsx)(a.VNw, {
             ...e,
-            value: l,
+            value: t,
             onChange: u,
-            suggestedColors: t,
+            suggestedColors: l,
             showEyeDropper: !0
         }),
         children: e => {
             let {
-                onClick: l,
-                ...t
+                onClick: t,
+                ...l
             } = e;
             return (0, n.jsx)(a.DUT, {
-                ...t,
+                ...l,
                 innerRef: m,
                 className: c.Dh,
-                onClick: r ? o.tEg : l,
+                onClick: r ? o.tEg : t,
                 "aria-label": d,
                 "aria-disabled": r,
                 tabIndex: r ? -1 : 0,
                 children: (0, n.jsx)("div", {
                     className: c.Hy,
                     style: {
-                        backgroundColor: x
+                        backgroundColor: p
                     }
                 })
             })
@@ -54,16 +54,16 @@ function u(e) {
 
 function m(e) {
     let {
-        primaryColor: l,
-        secondaryColor: t,
+        primaryColor: t,
+        secondaryColor: l,
         onSelectPrimaryColor: i,
         onSelectSecondaryColor: a,
         suggestedColors: o,
         disabled: m = !1
-    } = e, x = (0, s.Hl)(l), p = (0, s.Hl)(t), A = `linear-gradient(to bottom, ${x}, ${p})`, g = d.intl.formatToPlainString(d.t.FquTfm, {
-        colorLabel: x
-    }), f = d.intl.formatToPlainString(d.t.xOnm4z, {
+    } = e, p = (0, s.Hl)(t), x = (0, s.Hl)(l), A = `linear-gradient(to bottom, ${p}, ${x})`, g = d.intl.formatToPlainString(d.t.FquTfm, {
         colorLabel: p
+    }), f = d.intl.formatToPlainString(d.t.xOnm4z, {
+        colorLabel: x
     });
     return (0, n.jsx)(r.Yt, {
         variant: "square",
@@ -73,13 +73,13 @@ function m(e) {
                 background: A
             },
             children: [(0, n.jsx)(u, {
-                color: l,
+                color: t,
                 suggestedColors: o,
                 disabled: m,
                 ariaLabel: g,
                 onSelect: i
             }), (0, n.jsx)(u, {
-                color: t,
+                color: l,
                 suggestedColors: o,
                 disabled: m,
                 ariaLabel: f,

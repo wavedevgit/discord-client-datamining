@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(994500),
     g = n(661191),
     f = n(988012),
-    x = n(141468),
-    E = n(694318),
+    E = n(141468),
+    x = n(694318),
     I = n(143413),
     C = n(763754),
     N = n(467073),
@@ -54,8 +54,8 @@ let w = l.memo(function e(t) {
         K = (0, r.bG)([A.A], () => A.A.getMessageByReference(W)),
         Y = (0, r.bG)([m.A], () => s.type === U.lAJ.THREAD_STARTER_MESSAGE && K.state === A.a.LOADED ? m.A.getChannel(K.message.channel_id) : null),
         z = _.X6.useSetting(),
-        q = _.hD.useSetting(),
-        X = _.rs.useSetting(),
+        X = _.hD.useSetting(),
+        q = _.rs.useSetting(),
         $ = _.kt.useSetting(),
         Q = (0, c.S)((s.editedTimestamp ?? s.timestamp).valueOf()),
         J = (0, u.A)(l?.id),
@@ -67,7 +67,7 @@ let w = l.memo(function e(t) {
             hasSpoilerEmbeds: et,
             hasBailedAst: en
         } = (0, y.A)(s, {
-            hideSimpleEmbedContent: q && X,
+            hideSimpleEmbedContent: X && q,
             allowList: Q,
             allowHeading: Q,
             allowLinks: !0,
@@ -91,7 +91,7 @@ let w = l.memo(function e(t) {
         message: K.message,
         channel: Y,
         hasThread: !1
-    }) : (p.A.isBlockedForMessage(s) ? n = G.t["+FcYM/"] : p.A.isIgnoredForMessage(s) ? n = G.t["VFWjc+"] : (0, E.kf)(s) && F && (n = G.t.xfkfTK), void 0 !== n) ? (0, i.jsx)(B, {
+    }) : (p.A.isBlockedForMessage(s) ? n = G.t["+FcYM/"] : p.A.isIgnoredForMessage(s) ? n = G.t["VFWjc+"] : (0, x.kf)(s) && F && (n = G.t.xfkfTK), void 0 !== n) ? (0, i.jsx)(B, {
         className: D,
         compact: o,
         count: 1,
@@ -99,7 +99,7 @@ let w = l.memo(function e(t) {
     }) : (0, i.jsx)(T.A, {
         compact: o,
         className: a()(D, {
-            [k.M1]: (0, x.ec)(s),
+            [k.M1]: (0, E.ec)(s),
             [k.XN]: V,
             [k._A]: t.isGroupStart
         }),
@@ -123,8 +123,8 @@ let w = l.memo(function e(t) {
             disableReactionUpdates: !1,
             renderThreadAccessory: H,
             inlineAttachmentMedia: z,
-            inlineEmbedMedia: q,
-            renderEmbeds: X,
+            inlineEmbedMedia: X,
+            renderEmbeds: q,
             gifAutoPlay: $,
             poll: ec,
             showListsAndHeaders: Q,

@@ -1,6 +1,6 @@
 /** chunk id: 955454 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => x
 });
 var i = n(627968),
     l = n(64700),
@@ -18,14 +18,14 @@ var i = n(627968),
     p = n(661191),
     g = n(652215),
     f = n(37411),
-    x = n(440649);
+    E = n(440649);
 
-function E(e) {
+function x(e) {
     let {
         channel: t,
         channelRecord: n,
         deleteChannel: s
-    } = e, E = (0, r.yK)([h.A, _.A], () => a()(h.A.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
+    } = e, x = (0, r.yK)([h.A, _.A], () => a()(h.A.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
         let {
             id: n
         } = e;
@@ -39,7 +39,7 @@ function E(e) {
         (0, A.JA)(e, t, f.H9.INBOX)
     }, []);
     return l.useEffect(() => {
-        null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== E.length || o.h.wait(() => {
+        null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== x.length || o.h.wait(() => {
             (0, d.ack)(t.channelId, {
                 section: g.JJy.INBOX,
                 object: g.ZSU.ACK_INBOX_FORUM_NO_POSTS,
@@ -47,11 +47,11 @@ function E(e) {
             }, !0), s(t.channelId)
         })
     }), (0, i.jsx)("div", {
-        className: x.k,
-        children: E.map(e => (0, i.jsx)(u.Cp, {
+        className: E.k,
+        children: x.map(e => (0, i.jsx)(u.Cp, {
             channel: n,
             children: (0, i.jsx)(c.Ay, {
-                className: x.u,
+                className: E.u,
                 threadId: e.id,
                 goToThread: I
             })

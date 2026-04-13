@@ -16,7 +16,7 @@ var i = n(627968),
     g = n(81461),
     x = n(997509),
     h = n(743981),
-    _ = n(583970),
+    _ = n(577957),
     A = n(985018),
     p = n(791633);
 
@@ -141,7 +141,7 @@ let E = function(e) {
         badge: l,
         primaryColor: r,
         secondaryColor: a
-    } = e, [o, u] = s.useState(!1), m = s.useRef(null), g = s.useId(), E = s.useId(), C = null == r && null == a, T = s.useMemo(() => !C && h.Ub.every(e => e.primary !== r || e.secondary !== a), [C, r, a]), I = (0, d._u)({
+    } = e, [o, u] = s.useState(!1), m = s.useRef(null), g = s.useId(), E = s.useId(), T = null == r && null == a, C = s.useMemo(() => !T && h.Ub.every(e => e.primary !== r || e.secondary !== a), [T, r, a]), I = (0, d._u)({
         orientation: "horizontal",
         isDisabled: !1,
         labelledBy: g
@@ -168,7 +168,7 @@ let E = function(e) {
                     onClick: () => b(e)
                 }, `${e.primary}${e.secondary}`)), (0, i.jsx)(N, {
                     badge: l,
-                    isSelected: C,
+                    isSelected: T,
                     onClick: () => {
                         b({
                             primary: null,
@@ -179,7 +179,7 @@ let E = function(e) {
                     badge: l,
                     primary: r ?? h.Ub["0"].primary,
                     secondary: a ?? h.Ub["0"].secondary,
-                    isSelected: T,
+                    isSelected: C,
                     showColorPopout: o,
                     setShowColorPopout: u,
                     palettePopoutTargetRef: m,

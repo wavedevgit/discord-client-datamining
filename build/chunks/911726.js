@@ -1,14 +1,14 @@
 /** chunk id: 911726 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => w
+    Ay: () => B
 });
 var i, r = n(627968),
     s = n(64700),
-    l = n(503698),
-    a = n.n(l),
-    c = n(106778),
-    o = n(835245),
+    a = n(503698),
+    l = n.n(a),
+    o = n(106778),
+    c = n(835245),
     u = n(23339),
     d = n(319060),
     _ = n(397927),
@@ -17,11 +17,11 @@ var i, r = n(627968),
     m = n(513609),
     I = n(928830),
     T = n(567771),
-    g = n(780964),
-    N = n(858897),
-    f = n(473145),
-    p = n(763754),
-    C = n(888675),
+    N = n(780964),
+    g = n(858897),
+    p = n(473145),
+    C = n(763754),
+    f = n(888675),
     h = n(921066),
     S = n(652215),
     R = n(985018),
@@ -114,9 +114,9 @@ let D = ["TOP_LEFT", "TOP_RIGHT"],
     }),
     v = "falling-leaf",
     y = ["#61D5B2"],
-    j = n(80705),
+    b = n(80705),
     k = n(232460),
-    b = [j, k];
+    j = [b, k];
 
 function G() {
     return n.e("98150").then(n.t.bind(n, 633343, 19)).then(e => {
@@ -127,12 +127,12 @@ function G() {
     })
 }
 
-function H(e) {
+function F(e) {
     let {
         onAnimationComplete: t,
         onClick: n,
         position: i,
-        size: l
+        size: a
     } = e, u = s.useRef(null), [d, A] = s.useState(null), [m] = s.useState(i ?? function() {
         switch (Math.floor(Math.random() * Object.keys(M).length)) {
             case 0:
@@ -147,7 +147,7 @@ function H(e) {
     }()), {
         createMultipleConfettiAt: I,
         confettiCanvas: T
-    } = s.useContext(E.x), [g, N] = s.useState(null), f = (0, c.f9)(T, g), p = function(e, t) {
+    } = s.useContext(E.x), [N, g] = s.useState(null), p = (0, o.f9)(T, N), C = function(e, t) {
         if (null == e) return "enter";
         switch (e) {
             case "enter":
@@ -162,7 +162,7 @@ function H(e) {
             case "exit":
                 return "enter"
         }
-    }(d, m), C = D.includes(m), h = C && "exit" === d, S = s.useCallback(e => {
+    }(d, m), f = D.includes(m), h = f && "exit" === d, S = s.useCallback(e => {
         A(e)
     }, []), R = s.useCallback(() => {
         "exit" === d && t?.()
@@ -185,7 +185,7 @@ function H(e) {
                     x: i.left + r.x,
                     y: i.top + r.y
                 }
-            }(u.current, m, l);
+            }(u.current, m, a);
             I(t.x, t.y, {
                 velocity: {
                     type: "static-random",
@@ -200,11 +200,11 @@ function H(e) {
                 }
             })
         }
-    }, [I, m, d, l]), s.useEffect(() => {
-        if (C && "leaf_fall" === d) {
+    }, [I, m, d, a]), s.useEffect(() => {
+        if (f && "leaf_fall" === d) {
             let e = L[m].leafRotationDirection;
-            f.createConfetti({
-                id: `${v}-${(0,o.A)()}`,
+            p.createConfetti({
+                id: `${v}-${(0,c.A)()}`,
                 position: {
                     type: "static",
                     value: function(e, t) {
@@ -248,19 +248,19 @@ function H(e) {
                     }
                 }
             }, {
-                sprite: "TOP_LEFT" === m ? j : k
+                sprite: "TOP_LEFT" === m ? b : k
             })
         }
-    }, [C, f, m, d]), (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(c.K_, {
-            ref: N,
-            sprites: b,
+    }, [f, p, m, d]), (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(o.K_, {
+            ref: g,
+            sprites: j,
             colors: y,
             spriteWidth: 45,
             spriteHeight: 45
         }), (0, r.jsx)(_.DUT, {
             onClick: n,
-            className: a()(x.FT, {
+            className: l()(x.FT, {
                 [x.FZ]: "TOP_LEFT" === m,
                 [x.S]: "TOP_RIGHT" === m,
                 [x.Re]: "BOTTOM_LEFT" === m,
@@ -268,10 +268,10 @@ function H(e) {
             }),
             children: (0, r.jsx)(_.tvC, {
                 animationRef: P,
-                className: a()(x.oQ, {
+                className: l()(x.oQ, {
                     [x.EG]: h
                 }),
-                nextScene: p,
+                nextScene: C,
                 sceneSegments: O,
                 onScenePlay: S,
                 onSceneComplete: R,
@@ -282,15 +282,15 @@ function H(e) {
     })
 }
 
-function F(e) {
+function H(e) {
     let t, {
             message: n,
             compact: i,
-            guild: l,
-            usernameHook: a,
-            onClickMessage: c
+            guild: a,
+            usernameHook: l,
+            onClickMessage: o
         } = e,
-        o = function(e) {
+        c = function(e) {
             switch (e.type) {
                 case S.lAJ.GUILD_BOOST_TIER_1:
                     return S.TVA.TIER_1;
@@ -311,10 +311,10 @@ function F(e) {
         {
             reducedMotion: D
         } = s.useContext(_.CZY),
-        U = (0, p.Ay)(n),
+        U = (0, C.Ay)(n),
         P = U.nick,
-        L = a(U);
-    t = null == o || null == l ? u > 1 ? R.intl.format(R.t.yfC9ds, {
+        L = l(U);
+    t = null == c || null == a ? u > 1 ? R.intl.format(R.t.yfC9ds, {
         username: P,
         usernameHook: L,
         numSubscriptions: u
@@ -325,13 +325,13 @@ function F(e) {
         username: P,
         usernameHook: L,
         numSubscriptions: u,
-        guildName: l.name,
-        newTierName: (0, f.gb)(o)
+        guildName: a.name,
+        newTierName: (0, p.gb)(c)
     }) : R.intl.format(R.t.cUfTTE, {
         username: P,
         usernameHook: L,
-        guildName: l.name,
-        newTierName: (0, f.gb)(o)
+        guildName: a.name,
+        newTierName: (0, p.gb)(c)
     });
     let y = s.useCallback(() => {
             if (!D.enabled)
@@ -341,33 +341,33 @@ function F(e) {
                     d(e.left + e.width / 2, e.top + e.height / 2)
                 } else O(!0)
         }, [d, D, h]),
-        j = s.useCallback(() => {
+        b = s.useCallback(() => {
             O(!1)
         }, []),
         k = s.useCallback(() => {
             (0, I.O9)({
                 settingsVisible: !0
-            }), (0, N.openUserSettings)(g.X.POGGERMODE_PANEL), O(!1)
+            }), (0, g.openUserSettings)(N.X.POGGERMODE_PANEL), O(!1)
         }, []),
-        b = s.useCallback((e, t) => {
+        j = s.useCallback((e, t) => {
             t?.id.startsWith(v) && k()
         }, [k]);
-    s.useEffect(() => A(b));
+    s.useEffect(() => A(j));
     let G = s.useCallback(e => {
-            e.target === e.currentTarget && c(e)
-        }, [c]),
-        F = (0, r.jsx)(_.DUT, {
+            e.target === e.currentTarget && o(e)
+        }, [o]),
+        H = (0, r.jsx)(_.DUT, {
             className: x.P0,
             innerRef: M,
-            onClick: c,
+            onClick: o,
             children: (0, r.jsx)(_._Jp, {
                 color: _.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
                 className: x.Kk,
                 onMouseEnter: y
             })
         });
-    return (0, r.jsxs)(C.A, {
-        iconNode: F,
+    return (0, r.jsxs)(f.A, {
+        iconNode: H,
         timestamp: n.timestamp,
         compact: i,
         children: [(0, r.jsx)("div", {
@@ -377,8 +377,8 @@ function F(e) {
         }), h ? (0, r.jsx)(m.Ay, {
             children: (0, r.jsx)("div", {
                 className: x.LK,
-                children: (0, r.jsx)(H, {
-                    onAnimationComplete: j,
+                children: (0, r.jsx)(F, {
+                    onAnimationComplete: b,
                     onClick: k
                 })
             })
@@ -386,24 +386,24 @@ function F(e) {
     })
 }
 
-function w(e) {
+function B(e) {
     let {
         message: t,
         compact: n,
         guild: i,
         usernameHook: s
     } = e, {
-        enabled: l,
-        showCta: a
+        enabled: a,
+        showCta: l
     } = A.X.useConfig({
         location: "UserPremiumGuildSubscription"
     });
-    return t.type === S.lAJ.GUILD_BOOST && l && !n ? (0, r.jsx)(h.A, {
+    return t.type === S.lAJ.GUILD_BOOST && a && !n ? (0, r.jsx)(h.A, {
         message: t,
         guild: i,
         usernameHook: s,
-        showCta: a
-    }) : (0, r.jsx)(F, {
+        showCta: l
+    }) : (0, r.jsx)(H, {
         ...e
     })
 }

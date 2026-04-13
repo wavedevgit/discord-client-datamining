@@ -18,7 +18,7 @@ var i = n(627968),
     p = n(944802),
     g = n(435115),
     f = n(593716);
-let x = {
+let E = {
     SCALE_MIN: .7,
     SCALE_MAX: 1,
     DURATION_IN: 300,
@@ -26,7 +26,7 @@ let x = {
     EASING_IN: r.A.Easing.inOut(r.A.Easing.back()),
     EASING_OUT: r.A.Easing.quad
 };
-class E extends l.PureComponent {
+class x extends l.PureComponent {
     scaleAnimation = new r.A.Value(0);
     spriteAnimation = new r.A.Value(0);
     spriteOpacity = new r.A.Value(0);
@@ -48,8 +48,8 @@ class E extends l.PureComponent {
         } = this;
         t.setValue(0), n.setValue(0), r.A.parallel([r.A.timing(t, {
             toValue: 1,
-            duration: x.DURATION_IN,
-            easing: x.EASING_IN
+            duration: E.DURATION_IN,
+            easing: E.EASING_IN
         }), r.A.timing(n, {
             toValue: 1,
             duration: 200
@@ -70,8 +70,8 @@ class E extends l.PureComponent {
         }));
         r.A.sequence([r.A.timing(t, {
             toValue: 0,
-            duration: x.DURATION_OUT,
-            easing: x.EASING_OUT
+            duration: E.DURATION_OUT,
+            easing: E.EASING_OUT
         }), r.A.sequence(s), r.A.timing(l, {
             toValue: 0,
             duration: 125
@@ -85,7 +85,7 @@ class E extends l.PureComponent {
             transform: [{
                 scale: e.interpolate({
                     inputRange: [0, 1],
-                    outputRange: [x.SCALE_MIN, x.SCALE_MAX]
+                    outputRange: [E.SCALE_MIN, E.SCALE_MAX]
                 })
             }],
             opacity: e
@@ -145,7 +145,7 @@ function I(e) {
         onClick: r,
         width: c,
         guildId: g
-    } = e, f = (0, h.Ay)(), x = (t = n.length, ((0, u.FT9)(u._3J.SIZE_80) + 16) * t > c ? u._3J.SIZE_40 : u._3J.SIZE_80), I = (0, o.bG)([A.A], () => A.A.isFocused()), C = n.map(e => {
+    } = e, f = (0, h.Ay)(), E = (t = n.length, ((0, u.FT9)(u._3J.SIZE_80) + 16) * t > c ? u._3J.SIZE_40 : u._3J.SIZE_80), I = (0, o.bG)([A.A], () => A.A.isFocused()), C = n.map(e => {
         if (e.type !== m.lp.USER) return null;
         let {
             user: t,
@@ -153,9 +153,9 @@ function I(e) {
             speaking: s,
             ringing: a
         } = e;
-        return (0, i.jsx)(E, {
+        return (0, i.jsx)(x, {
             className: p.Wp,
-            width: (0, u.FT9)(x),
+            width: (0, u.FT9)(E),
             theme: f,
             children: (0, i.jsx)(u.sqX, {
                 "aria-label": t.username,
@@ -163,8 +163,8 @@ function I(e) {
                 onContextMenu: t => l?.(e, t),
                 children: (0, i.jsx)(_.A, {
                     userId: t.id,
-                    src: t.getAvatarURL(g, (0, u.FT9)(x), s && I),
-                    size: x,
+                    src: t.getAvatarURL(g, (0, u.FT9)(E), s && I),
+                    size: E,
                     muted: n?.isVoiceMuted() ?? !1,
                     deafen: n?.isVoiceDeafened() ?? !1,
                     speaking: s,

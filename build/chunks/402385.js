@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(753727),
     g = n(267102),
     f = n(222692),
-    x = n(442353),
-    E = n(470710),
+    E = n(442353),
+    x = n(470710),
     I = n(186111),
     C = n(430452),
     N = n(994500),
@@ -118,7 +118,7 @@ class M extends l.PureComponent {
             notFriend: i,
             appContext: l
         } = this.props, s = i ? n.getRecipientId() : null, a = () => d.A.call(n.id, t, !i && !n.isManaged() && !e?.shiftKey, s);
-        t ? (0, x.A)(a, l) : a()
+        t ? (0, E.A)(a, l) : a()
     };
     handleJoinCall = e => {
         c.default.selectVoiceChannel(this.props.channel.id, e)
@@ -142,7 +142,7 @@ class M extends l.PureComponent {
         let {
             appContext: e
         } = this.props, t = () => this.handleJoinCall(!0);
-        (0, x.A)(t, e)
+        (0, E.A)(t, e)
     };
     handleBrowserNotSupported = () => {
         (0, f.A)()
@@ -155,22 +155,22 @@ function D(e) {
     } = e, n = (0, p.A)(), l = (0, s.bG)([A.A], () => A.A.getMode(t.id)), r = (0, s.bG)([S.A], () => S.A.isInChannel(t.id)), o = (0, s.bG)([u.A], () => u.A.useReducedMotion), {
         callActive: d,
         callUnavailable: c
-    } = (0, s.cf)([E.A], () => ({
-        callActive: E.A.isCallActive(t.id),
-        callUnavailable: E.A.isCallUnavailable(t.id)
+    } = (0, s.cf)([x.A], () => ({
+        callActive: x.A.isCallActive(t.id),
+        callUnavailable: x.A.isCallUnavailable(t.id)
     })), _ = t.getRecipientId(), {
         notFriend: m,
         isBlocked: f
     } = (0, s.cf)([N.A], () => ({
         notFriend: t.type === v.rbe.DM && null != _ && !N.A.isFriend(_),
         isBlocked: t.type === v.rbe.DM && null != _ && N.A.isBlocked(_)
-    })), x = (0, s.bG)([T.default], () => T.default.getUser(_)), C = (0, g.Us)(), b = [], y = (0, h.A)(t.id), j = (0, s.bG)([I.A], () => I.A.hasLayers());
-    return (y && !j && b.push(a.M.ACTIVITY_GDM_CALL_TOOLTIP), n || x?.bot) ? null : (0, i.jsx)(M, {
+    })), E = (0, s.bG)([T.default], () => T.default.getUser(_)), C = (0, g.Us)(), b = [], y = (0, h.A)(t.id), j = (0, s.bG)([I.A], () => I.A.hasLayers());
+    return (y && !j && b.push(a.M.ACTIVITY_GDM_CALL_TOOLTIP), n || E?.bot) ? null : (0, i.jsx)(M, {
         channel: t,
         mode: l,
         inCall: r,
         callActive: d,
-        isProvisional: x?.isProvisional ?? !1,
+        isProvisional: E?.isProvisional ?? !1,
         callUnavailable: c,
         notFriend: m,
         isBlocked: f,

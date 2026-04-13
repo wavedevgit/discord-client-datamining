@@ -21,7 +21,7 @@ let p = l.forwardRef(function(e, t) {
         onClick: p,
         questId: g,
         className: f
-    } = e, x = l.useCallback(() => {
+    } = e, E = l.useCallback(() => {
         (0, r.WL)({
             source: h.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
         });
@@ -60,7 +60,7 @@ let p = l.forwardRef(function(e, t) {
         ref: t,
         className: f,
         onClick: () => {
-            x(), void 0 !== p && p()
+            E(), void 0 !== p && p()
         },
         selected: n,
         tooltip: m.intl.string(m.t["4nEZLk"]),

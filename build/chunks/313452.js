@@ -18,15 +18,15 @@ var i = n(627968),
     p = n(203982),
     g = n(661191),
     f = n(851109),
-    x = n(932883),
-    E = n(39324),
+    E = n(932883),
+    x = n(39324),
     I = n(320697),
     C = n(394953),
     N = n(628325),
     T = n(524628),
     S = n(849077),
     b = n(652215),
-    y = n(228160),
+    y = n(537729),
     v = n(985018),
     j = n(852259);
 
@@ -110,7 +110,7 @@ function D(e) {
             listName: D,
             ignoreGrouping: U = !1
         } = e,
-        G = (0, x.op)(),
+        G = (0, E.op)(),
         P = l.useRef(null),
         k = (0, h.A)(D, P),
         {
@@ -132,7 +132,7 @@ function D(e) {
         {
             messageCategoryOpenStates: K,
             toggleOpenState: Y
-        } = (0, E.A)(),
+        } = (0, x.A)(),
         z = (t = (0, c.yK)([I.A], () => I.A.getNotifyingChannelIds() ?? []), (0, c.bG)([I.A, m.Ay], () => {
             let e = I.A.getChannelInfoMap();
             for (let n of t) {
@@ -157,13 +157,13 @@ function D(e) {
             p._.unsubscribe(b.jej.SCROLL_PAGE_DOWN, t), p._.unsubscribe(b.jej.SCROLL_PAGE_UP, e)
         }
     }, []);
-    let q = l.useCallback(() => {
+    let X = l.useCallback(() => {
             let e = P.current?.getScrollerState();
             if (null == e) return;
             let t = .5 * e.offsetHeight;
             e.scrollHeight - (e.scrollTop + e.offsetHeight) <= t && r?.(S.VA.USER_SCROLL)
         }, [r]),
-        X = l.useMemo(() => {
+        q = l.useMemo(() => {
             let e = {
                     [S.Ur.UNREAD]: [],
                     [S.Ur.TODAY]: [],
@@ -198,26 +198,26 @@ function D(e) {
         J = l.useMemo(() => {
             let e = [];
             return Q ? e.push(A()) : $ ? e.push((0, i.jsx)(M, {}, "empty-state")) : U ? (e.push(...s.map(e => _([e], !0))), e.push(...n.map(e => _([e], !1)))) : o().each(L, t => {
-                0 !== X[t].length && (e.push((0, i.jsx)(O, {
+                0 !== q[t].length && (e.push((0, i.jsx)(O, {
                     group: t,
                     isOpen: K[t],
                     toggleOpenedState: () => {
                         let e = K[t];
-                        Y(t), (0, x.Ut)({
+                        Y(t), (0, E.Ut)({
                             section: t,
                             enabled: !e,
                             viewId: G
                         })
                     }
-                }, t)), K[t] && e.push(...X[t].map(e => _(e, t === S.Ur.UNREAD))))
+                }, t)), K[t] && e.push(...q[t].map(e => _(e, t === S.Ur.UNREAD))))
             }), e
-        }, [n, s, A, K, Y, X, U, _, $, Q, G]),
+        }, [n, s, A, K, Y, q, U, _, $, Q, G]),
         Z = J[J.length - 1],
         ee = l.isValidElement(Z) && Z.type === O,
         et = (0, N.S)(e => e.setInboxReadState);
     l.useEffect(() => {
-        Q || et(0 === X.UNREAD.length)
-    }, [X, Q, et]);
+        Q || et(0 === q.UNREAD.length)
+    }, [q, Q, et]);
     let en = (n.length > 0 || s.length > 0) && null != r && V;
     ! function(e) {
         let {
@@ -225,19 +225,19 @@ function D(e) {
             messagesByCategory: n
         } = e, i = l.useRef(!1), s = n.UNREAD.length > 0, {
             setOpenStateFromUnreads: a
-        } = (0, E.A)();
+        } = (0, x.A)();
         l.useEffect(() => {
             t || i.current || (a(s), i.current = !0)
         }, [a, s, t])
     }({
-        messagesByCategory: X,
+        messagesByCategory: q,
         loadingInitial: W
     });
     let ei = l.useCallback(() => {
-        let e = L.filter(e => K[e]).reduce((e, t) => e + X[t].length, 0),
+        let e = L.filter(e => K[e]).reduce((e, t) => e + q[t].length, 0),
             t = P.current?.getScrollerState();
         return null == t ? 0 : Math.max(0, Math.ceil(t.offsetHeight / 64) - e)
-    }, [K, X]);
+    }, [K, q]);
     l.useEffect(() => {
         Q || V || 0 >= ei() || (!ee || z) && r?.(S.VA.FILL_SCROLLER)
     }, [ei, r, Q, V, ee, z]);
@@ -248,12 +248,12 @@ function D(e) {
             size: e
         })
     }, [ei]);
-    return (0, x.Hi)({
+    return (0, E.Hi)({
         notificationCenterVariant: B,
         entrypoint: w,
         messages: n,
         unreadMessages: s,
-        messagesByCategory: X,
+        messagesByCategory: q,
         viewId: G
     }), (0, i.jsx)("div", {
         className: a()(v, j.KQ),
@@ -273,7 +273,7 @@ function D(e) {
                             P.current = e, t.current = e?.getScrollerNode() ?? null
                         },
                         className: a()(j.m4, y),
-                        onScroll: q,
+                        onScroll: X,
                         fade: !0,
                         ...n,
                         children: [J, en && !ee ? el : null]

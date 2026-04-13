@@ -1,6 +1,6 @@
 /** chunk id: 717965 params = (module,exports,require) **/
 n.d(t, {
-    A: () => ex
+    A: () => eE
 });
 var i = n(627968),
     l = n(64700),
@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(750765),
     g = n(183184),
     f = n(384059),
-    x = n(480890),
-    E = n(643501),
+    E = n(480890),
+    x = n(643501),
     I = n(880144),
     C = n(698441),
     N = n(394412),
@@ -47,8 +47,8 @@ var i = n(627968),
     K = n(993838),
     Y = n(849736),
     z = n(776781),
-    q = n(233993),
-    X = n(312006),
+    X = n(233993),
+    q = n(312006),
     $ = n(446600),
     Q = n(96566),
     J = n(302884),
@@ -70,9 +70,9 @@ function eu(e) {
         channel: t
     } = e, {
         parentAnalyticsLocation: n
-    } = (0, A.Ay)(), s = (0, ei.A)(t.id), [o, h] = (0, ea.A)(t), _ = (0, en.L)(t), m = (0, el.Vv)(), p = (0, el.tp)(), g = l.useRef(null), [x, E] = (0, d.V)("age-verification-stage-popover-dismissed", !1), I = l.useContext(D.vG);
+    } = (0, A.Ay)(), s = (0, ei.A)(t.id), [o, h] = (0, ea.A)(t), _ = (0, en.L)(t), m = (0, el.Vv)(), p = (0, el.tp)(), g = l.useRef(null), [E, x] = (0, d.V)("age-verification-stage-popover-dismissed", !1), I = l.useContext(D.vG);
     if (s) return null;
-    let C = p && !x;
+    let C = p && !E;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(G.l, {
             ref: g,
@@ -81,10 +81,10 @@ function eu(e) {
             label: function(e, t, n, i) {
                 let l = !(arguments.length > 4) || void 0 === arguments[4] || arguments[4];
                 return !l && i ? null : n ? eo.intl.string(eo.t.NzITVo) : e ? eo.intl.string(eo.t.GCimTk) : t ? eo.intl.string(eo.t.hLbG5N) : eo.intl.string(eo.t.e4WMvx)
-            }(o, _, m, p, x),
+            }(o, _, m, p, E),
             iconComponent: m ? r._xi : r.E7M,
             onClick: () => {
-                (0, f.X)(n, f.O.REQUEST_TO_SPEAK, !o), E(!0), m ? c.A.showAgeVerificationGetStartedModal({
+                (0, f.X)(n, f.O.REQUEST_TO_SPEAK, !o), x(!0), m ? c.A.showAgeVerificationGetStartedModal({
                     entryPoint: u.q1.STAGE_CHANNEL_RAISE_HAND
                 }) : h()
             },
@@ -105,10 +105,10 @@ function eu(e) {
                 onClick: () => {
                     c.A.showAgeVerificationGetStartedModal({
                         entryPoint: u.q1.STAGE_CHANNEL_AGE_VERIFICATION_PROMPT
-                    }), E(!0)
+                    }), x(!0)
                 }
             }],
-            onRequestClose: () => E(!0)
+            onRequestClose: () => x(!0)
         })]
     })
 }
@@ -159,7 +159,7 @@ function e_(e) {
         canManageGuildEvent: d
     } = (0, b.nr)(t), c = (0, s.bG)([$.A], () => $.A.getStageInstanceByChannel(t.id), [t.id]), u = (0, s.bG)([C.Ay], () => C.Ay.getGuildScheduledEvent(c?.guild_scheduled_event_id)), {
         suppress: _
-    } = (0, R.A)(t), m = B.default.getId(), [p] = (0, ea.A)(t), g = X.Ay.isModerator(m, t.id), E = (0, z.Ni)(t.id), I = d(u), {
+    } = (0, R.A)(t), m = B.default.getId(), [p] = (0, ea.A)(t), g = q.Ay.isModerator(m, t.id), x = (0, z.Ni)(t.id), I = d(u), {
         parentAnalyticsLocation: N
     } = (0, A.Ay)(), T = l.useRef(null), y = () => (function(e) {
         let {
@@ -184,7 +184,7 @@ function e_(e) {
                     "aria-label": eo.intl.string(eo.t["3Uj+2p"]),
                     onClose: l,
                     onSelect: n,
-                    onInteraction: (0, x.s)("End Stage", N, {
+                    onInteraction: (0, E.s)("End Stage", N, {
                         entrypoint: er.GK.CARET
                     }),
                     children: (0, i.jsx)(r.Drp, {
@@ -219,7 +219,7 @@ function e_(e) {
                 popoutOpen: l
             })
         }
-    }) : _ && !E || p ? (0, i.jsx)(P.A, {
+    }) : _ && !x || p ? (0, i.jsx)(P.A, {
         label: eo.intl.string(eo.t.SMKyih),
         onClick: y
     }) : (0, i.jsx)(P.A, {
@@ -279,17 +279,17 @@ let eg = l.memo(function(e) {
         suppress: a,
         selfMute: o,
         mute: d
-    } = (0, R.A)(t), c = (0, z.Ni)(t.id), u = (0, s.bG)([E.default], () => null != E.default.getAwaitingRemoteSessionInfo()), {
+    } = (0, R.A)(t), c = (0, z.Ni)(t.id), u = (0, s.bG)([x.default], () => null != x.default.getAwaitingRemoteSessionInfo()), {
         cameraUnavailable: h,
         enabled: f
     } = (0, y.A)(), C = (0, j.A)(t), {
         limit: N,
         reachedLimit: T
-    } = (0, v.A)(t), S = (0, s.bG)([W.default], () => W.default.getCurrentUser()), b = (0, s.bG)([V.Ay], () => (0, I.A)(V.Ay)), D = (0, s.bG)([F.A], () => F.A.getVoiceChannelId() === t.id, [t.id]), G = (0, s.bG)([_.A], () => _.A.getStreamParticipants(t.id)[0], [t.id]), P = (0, Q.qT)(t.id), B = N > 0, H = T && !P || null != G && G.user.id !== S?.id, K = (0, x.s)("AudioDeviceMenu", n, {
+    } = (0, v.A)(t), S = (0, s.bG)([W.default], () => W.default.getCurrentUser()), b = (0, s.bG)([V.Ay], () => (0, I.A)(V.Ay)), D = (0, s.bG)([F.A], () => F.A.getVoiceChannelId() === t.id, [t.id]), G = (0, s.bG)([_.A], () => _.A.getStreamParticipants(t.id)[0], [t.id]), P = (0, Q.qT)(t.id), B = N > 0, H = T && !P || null != G && G.user.id !== S?.id, K = (0, E.s)("AudioDeviceMenu", n, {
         entrypoint: er.GK.CARET
-    }), Y = l.useRef(null), q = l.useRef(null);
+    }), Y = l.useRef(null), X = l.useRef(null);
     if (null == S) return null;
-    let X = (0, i.jsx)(r.YNO, {
+    let q = (0, i.jsx)(r.YNO, {
         targetElementRef: Y,
         renderPopout: e => {
             let {
@@ -299,7 +299,7 @@ let eg = l.memo(function(e) {
                 children: (0, i.jsx)(p.A, {
                     onClose: t,
                     minimal: !0,
-                    onInteraction: (0, x.s)("VideoDeviceMenu", n, {
+                    onInteraction: (0, E.s)("VideoDeviceMenu", n, {
                         entrypoint: er.GK.CARET
                     })
                 })
@@ -335,7 +335,7 @@ let eg = l.memo(function(e) {
         children: [D && !a ? (0, i.jsxs)("div", {
             className: ed.qi,
             children: [(0, i.jsx)(r.YNO, {
-                targetElementRef: q,
+                targetElementRef: X,
                 renderPopout: e => {
                     let {
                         closePopout: t
@@ -365,7 +365,7 @@ let eg = l.memo(function(e) {
                         isShown: l
                     } = t;
                     return (0, i.jsx)(k.A, {
-                        ref: q,
+                        ref: X,
                         centerButton: !0,
                         onPopoutClick: n,
                         selfMute: o,
@@ -376,7 +376,7 @@ let eg = l.memo(function(e) {
                         awaitingRemote: u
                     })
                 }
-            }), B && X]
+            }), B && q]
         }) : null, (0, i.jsxs)("div", {
             className: ed.qi,
             children: [D && !a && B ? (0, i.jsx)(O.rP, {
@@ -419,11 +419,11 @@ function ef(e) {
         })]
     })
 }
-let ex = l.memo(function(e) {
+let eE = l.memo(function(e) {
     let {
         channel: t,
         isOnStartStageScreen: n
-    } = e, l = (0, ei.A)(t.id), a = (0, z.Ni)(t.id), r = (0, s.bG)([H.A], () => H.A.can(q.QY, t), [t]), o = (0, el.zU)(), d = (0, es.A)(t.id), c = (0, s.bG)([_.A], () => null != t ? _.A.getSelectedParticipant(t.id) : null), u = !d && null == c;
+    } = e, l = (0, ei.A)(t.id), a = (0, z.Ni)(t.id), r = (0, s.bG)([H.A], () => H.A.can(X.QY, t), [t]), o = (0, el.zU)(), d = (0, es.A)(t.id), c = (0, s.bG)([_.A], () => null != t ? _.A.getSelectedParticipant(t.id) : null), u = !d && null == c;
     return n ? (0, i.jsx)(ef, {
         channel: t
     }) : l || a ? (0, i.jsxs)("div", {

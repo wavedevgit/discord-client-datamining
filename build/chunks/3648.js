@@ -26,7 +26,7 @@ function m(e, t) {
         wishlistId: m,
         cardSize: p,
         analyticsLocations: g
-    } = t, f = null != n && n > 0, x = {
+    } = t, f = null != n && n > 0, E = {
         title: f ? h.intl.string(h.t.TxBQzD) : h.intl.string(h.t["4yiU7x"]),
         body: f ? void 0 : h.intl.string(h.t.ilhtIa),
         renderIcon: f ? void 0 : r.GM,
@@ -43,7 +43,7 @@ function m(e, t) {
                 analyticsLocations: [...g, s.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
             })
         },
-        tooltipConfig: x,
+        tooltipConfig: E,
         shouldScalePreview: !1,
         renderPreview: () => (0, i.jsx)(c.e, {
             containerClassName: A.Nr,

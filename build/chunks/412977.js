@@ -22,7 +22,7 @@ function g(e) {
         onClick: () => (0, a.mMO)(async () => {
             let {
                 default: e
-            } = await n.e("70232").then(n.bind(n, 535384));
+            } = await n.e("70232").then(n.bind(n, 313003));
             return n => (0, i.jsx)(e, {
                 ...n,
                 guild: t,

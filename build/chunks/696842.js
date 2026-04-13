@@ -25,7 +25,7 @@ function _(e) {
         analyticsLocation: p,
         className: g,
         size: f = "sm"
-    } = e, x = l?.getGuildId(), E = l?.id, I = (0, a.bG)([c.A], () => null != x ? c.A.getGuild(x) : null, [x]), C = (0, a.bG)([o.Ay], () => o.Ay.getActiveEventByChannel(E), [E]);
+    } = e, E = l?.getGuildId(), x = l?.id, I = (0, a.bG)([c.A], () => null != E ? c.A.getGuild(E) : null, [E]), C = (0, a.bG)([o.Ay], () => o.Ay.getActiveEventByChannel(x), [x]);
     if (!(null != I && null != l && u.A.can(h.xBc.CREATE_INSTANT_INVITE, l))) return null;
     let N = A.intl.string(A.t.VINpSK);
     return null != t ? N = A.intl.string(A.t["6VQaqd"]) : null != n && (N = A.intl.string(A.t["OzOM/q"])), (0, i.jsx)("div", {

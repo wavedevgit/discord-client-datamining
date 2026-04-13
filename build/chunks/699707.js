@@ -18,13 +18,13 @@ var i = n(627968),
     p = n(175203),
     g = n(306852),
     f = n(947580),
-    x = n(163432),
-    E = n(652215),
+    E = n(163432),
+    x = n(652215),
     I = n(806931),
     C = n(256960),
     N = n(363862);
 let T = 16 / 9,
-    S = 8 + x.Vp;
+    S = 8 + E.Vp;
 
 function b(e) {
     let t, {
@@ -50,24 +50,24 @@ function b(e) {
         F = (0, d.A)(V),
         [W, K] = l.useState(!0),
         [Y, z] = l.useState(!1),
-        q = L.type === I.lp.ACTIVITY,
-        X = (0, c.A)(q ? L.applicationId : void 0),
-        $ = !q && null != L.streamId,
+        X = L.type === I.lp.ACTIVITY,
+        q = (0, c.A)(X ? L.applicationId : void 0),
+        $ = !X && null != L.streamId,
         Q = G <= 2 * S + 144,
         J = M && !Q,
         Z = (0, d.A)(J),
-        ee = P === E.DUB.MINIMUM || P === E.DUB.NORMAL,
-        et = !Q && (!ee || q),
+        ee = P === x.DUB.MINIMUM || P === x.DUB.NORMAL,
+        et = !Q && (!ee || X),
         en = (0, m.A)(et, 100),
         ei = ((0, d.A)(L.id) ?? L.id) !== L.id,
         el = 0;
-    (q || J) && (el += 72), q && !J && (et ? el += 48 : el += 8), J && (el += .5 * S + 8);
-    let es = l.useMemo(() => q && X ? U / (G - 2 * el) : $ && null != V && V.width > 0 && V.height > 0 ? V.width / V.height : T, [$, V, q, U, G, el, X]),
+    (X || J) && (el += 72), X && !J && (et ? el += 48 : el += 8), J && (el += .5 * S + 8);
+    let es = l.useMemo(() => X && q ? U / (G - 2 * el) : $ && null != V && V.width > 0 && V.height > 0 ? V.width / V.height : T, [$, V, X, U, G, el, q]),
         ea = G - 2 * el,
-        er = q && X ? U : ea * es,
+        er = X && q ? U : ea * es,
         eo = Math.floor(Math.min(U, er) / es),
         ed = G > U / es + 72 + S + 8;
-    t = J || q ? J ? -16 : -8 : 40 + Math.max(0, 72 - (G - eo) / 2);
+    t = J || X ? J ? -16 : -8 : 40 + Math.max(0, 72 - (G - eo) / 2);
     let ec = Math.max(0, 72 - (G - eo) / 2);
     l.useEffect(() => {
         let e = setTimeout(() => {
@@ -87,9 +87,9 @@ function b(e) {
                 clamp: !0
             },
             onStart: () => z(!0),
-            onChange: () => _._.dispatch(E.jej.REMEASURE_TARGET),
+            onChange: () => _._.dispatch(x.jej.REMEASURE_TARGET),
             onRest: () => {
-                z(!1), _._.dispatch(E.jej.REMEASURE_TARGET)
+                z(!1), _._.dispatch(x.jej.REMEASURE_TARGET)
             }
         }, eh),
         e_ = (0, o.zhh)({
@@ -133,11 +133,11 @@ function b(e) {
         ef = l.useCallback(e => {
             H(e), K(!1)
         }, []),
-        ex = J ? [] : (0, f.Cf)(y, L, B),
+        eE = J ? [] : (0, f.Cf)(y, L, B),
         {
-            visibleParticipants: eE,
+            visibleParticipants: ex,
             participantTileWidth: eI
-        } = (0, x.i4)(U, v);
+        } = (0, E.i4)(U, v);
     return (0, i.jsxs)("div", {
         className: a()(N.zr, C.tR, D),
         children: [(0, i.jsxs)("div", {
@@ -206,12 +206,12 @@ function b(e) {
                     opacity: eA.value,
                     visibility: eA.value.to(e => 0 === e ? "hidden" : "visible")
                 },
-                children: (0, i.jsx)(x.Ay, {
+                children: (0, i.jsx)(E.Ay, {
                     channel: O,
                     onClick: n,
                     onContextMenu: s,
                     onDoubleClick: b,
-                    participants: eE,
+                    participants: ex,
                     participantTileWidth: eI,
                     selectedParticipantId: L.id,
                     inCall: R,
@@ -219,12 +219,12 @@ function b(e) {
                     paused: Y || !M
                 })
             })]
-        }), ex.length > 0 ? (0, i.jsx)(g.A, {
+        }), eE.length > 0 ? (0, i.jsx)(g.A, {
             onContextMenuParticipant: s,
             width: U,
             height: G,
             channel: O,
-            participants: ex,
+            participants: eE,
             onSelectParticipant: n
         }) : null]
     })

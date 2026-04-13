@@ -24,9 +24,9 @@ function g(e) {
     } = e, {
         mutualFriends: m
     } = (0, s.A)(n), {
-        analyticsLocations: I
+        analyticsLocations: f
     } = (0, o.Ay)(), {
-        context: f,
+        context: I,
         trackUserProfileAction: x
     } = (0, d.NJ)(), b = (0, l.A)();
     return a.useEffect(() => {
@@ -61,9 +61,9 @@ function g(e) {
                     h?.(), x({
                         action: "PRESS_MUTUAL_FRIEND"
                     }), e = a.id, (0, _.openUserProfileModal)({
-                        ...f,
+                        ...I,
                         userId: e,
-                        sourceAnalyticsLocations: I
+                        sourceAnalyticsLocations: f
                     })
                 }
             }, n)

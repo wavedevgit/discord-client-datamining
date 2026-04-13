@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(674168),
     g = n(989799),
     f = n(173660),
-    x = n(430452),
-    E = n(246356),
+    E = n(430452),
+    x = n(246356),
     I = n(709562),
     C = n(376086),
     N = n(985018);
@@ -42,7 +42,7 @@ function T(e) {
     } = (0, r.E)(), L = t.getGuildId(), {
         mute: M,
         suppress: D
-    } = (0, f.A)(t), U = (0, s.bG)([x.Ay], () => x.Ay.isDeaf()), G = M || D || U, P = (0, m.VE)({
+    } = (0, f.A)(t), U = (0, s.bG)([E.Ay], () => E.Ay.isDeaf()), G = M || D || U, P = (0, m.VE)({
         isSoundboardButtonDisabled: G
     }), [k, w] = (0, A.DP)(P), {
         analyticsLocations: B
@@ -73,9 +73,9 @@ function T(e) {
     let z = l.useCallback(() => {
             null == S && b?.(C.P.SOUNDBOARD)
         }, [S, b]),
-        q = l.useRef(null);
+        X = l.useRef(null);
     return (0, i.jsx)(o.Y, {
-        targetElementRef: q,
+        targetElementRef: X,
         shouldShow: V && (S === C.P.SOUNDBOARD || null == S) || S === C.P.SOUNDBOARD,
         animation: o.Y.Animation.FADE,
         animationPosition: "top",
@@ -89,7 +89,7 @@ function T(e) {
             let {
                 closePopout: n
             } = e;
-            return G ? null : (0, i.jsx)(E.A, {
+            return G ? null : (0, i.jsx)(x.A, {
                 children: (0, i.jsx)("div", {
                     onMouseEnter: F,
                     onMouseLeave: W,
@@ -108,7 +108,7 @@ function T(e) {
             })
         },
         children: () => (0, i.jsx)(I.l, {
-            ref: q,
+            ref: X,
             isTrayButton: !0,
             themeable: T,
             label: M ? N.intl.string(N.t["Ox4/zU"]) : D ? N.intl.string(N.t["+YBKYI"]) : U ? N.intl.string(N.t.X1lQli) : void 0,

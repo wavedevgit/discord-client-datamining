@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(961350),
     g = n(954571),
     f = n(69555),
-    x = n(140547),
-    E = n(242919),
+    E = n(140547),
+    x = n(242919),
     I = n(886019),
     C = n(806246),
     N = n(60821),
@@ -44,13 +44,13 @@ function k(e) {
         channel: t,
         setIsHangStatusInputFocused: n,
         setIsEmojiPickerOpen: s
-    } = e, r = l.useRef(null), k = (0, c.bG)([E.A], () => E.A.getCustomHangStatus()), w = (0, S.A)(), B = (0, c.bG)([E.A], () => E.A.getFavoritedStatuses()), {
+    } = e, r = l.useRef(null), k = (0, c.bG)([x.A], () => x.A.getCustomHangStatus()), w = (0, S.A)(), B = (0, c.bG)([x.A], () => x.A.getFavoritedStatuses()), {
         defaultStatusVariant: V,
         allowPermanentClear: H
-    } = (0, x.$j)({
+    } = (0, E.$j)({
         guildId: t.guild_id,
         location: "HangStatusPicker"
-    }), F = (0, I.hy)(V), W = l.useRef(null), [K, Y] = l.useState(k?.status ?? ""), [z, q] = l.useState(k?.emoji ?? null), [X, $] = l.useState(!1), Q = (0, c.bG)([E.A], () => E.A.getCurrentHangStatus()), J = F[Q], Z = B.length > 0, ee = null == K || "" === K.trim(), et = (0, T.A)(t), en = K.trim().length > 0 && K.trim() !== k?.status?.trim() || null != z && !o()(z, k?.emoji), [ei, el] = l.useState(!1), es = (0, c.bG)([E.A], () => E.A.getFavoritedStatuses().length >= E.x), ea = K.length > 0 || null != z, [er, eo] = (0, m.kn)([u.M.HANG_STATUS_POPOVER_NUX]);
+    }), F = (0, I.hy)(V), W = l.useRef(null), [K, Y] = l.useState(k?.status ?? ""), [z, X] = l.useState(k?.emoji ?? null), [q, $] = l.useState(!1), Q = (0, c.bG)([x.A], () => x.A.getCurrentHangStatus()), J = F[Q], Z = B.length > 0, ee = null == K || "" === K.trim(), et = (0, T.A)(t), en = K.trim().length > 0 && K.trim() !== k?.status?.trim() || null != z && !o()(z, k?.emoji), [ei, el] = l.useState(!1), es = (0, c.bG)([x.A], () => x.A.getFavoritedStatuses().length >= x.x), ea = K.length > 0 || null != z, [er, eo] = (0, m.kn)([u.M.HANG_STATUS_POPOVER_NUX]);
     l.useEffect(() => {
         g.default.track(O.HAw.HANG_STATUS_PICKER_OPENED, {
             ...(0, C.A)(t.id),
@@ -60,20 +60,20 @@ function k(e) {
     }, []), l.useEffect(() => {
         K.trim().length > 0 && ei && el(!1), null == z && ei && el(!1)
     }, [K, z, ei]), l.useEffect(() => {
-        X || K !== (k?.status ?? "") && "" !== K.trim() ? n(!0) : n(!1)
-    }, [K, k?.status, z, k?.emoji, n, X]);
+        q || K !== (k?.status ?? "") && "" !== K.trim() ? n(!0) : n(!1)
+    }, [K, k?.status, z, k?.emoji, n, q]);
     let ed = l.useCallback(e => {
-            e !== Q && ((0, f.Iq)(e, !0), null != z && q(null), "" !== K.trim() && Y(""))
+            e !== Q && ((0, f.Iq)(e, !0), null != z && X(null), "" !== K.trim() && Y(""))
         }, [Q, z, K]),
         ec = l.useCallback(() => {
-            q(null), Y(""), $(!1)
+            X(null), Y(""), $(!1)
         }, []),
         eu = l.useCallback(e => {
             let {
                 emoji: t,
                 status: n
             } = e;
-            o()(t, k?.emoji) && n === k?.status || ((0, f.hS)(e.status, e.emoji, !0), q(e.emoji), Y(e.status))
+            o()(t, k?.emoji) && n === k?.status || ((0, f.hS)(e.status, e.emoji, !0), X(e.emoji), Y(e.status))
         }, [k?.emoji, k?.status]),
         eh = l.useCallback(e => {
             e?.preventDefault?.(), null != z && 0 === K.trim().length && el(!0), ee || (eu({
@@ -98,7 +98,7 @@ function k(e) {
                         name: e?.optionallyDiverseSequence ?? "",
                         animated: !1
                     }, 1 === et.length)) break; while (null == e || e?.name == null || o()(z, n));
-            null != n && e?.name != null && (q(n), Y(e.name), $(!0), r.current?.focus(), g.default.track(O.HAw.HANG_STATUS_RANDOMIZER_CLICKED, (0, C.A)(t.id)))
+            null != n && e?.name != null && (X(n), Y(e.name), $(!0), r.current?.focus(), g.default.track(O.HAw.HANG_STATUS_RANDOMIZER_CLICKED, (0, C.A)(t.id)))
         }, [et, z, t.id]),
         e_ = l.useCallback((e, n) => {
             let i = (0, N.A)(n);
@@ -116,7 +116,7 @@ function k(e) {
         eg = l.useCallback((e, t, n) => {
             let l = (0, N.A)(e),
                 s = l ? F[e] : null,
-                a = E.A.isFavorited(e),
+                a = x.A.isFavorited(e),
                 r = l ? (0, i.jsx)(v.A, {
                     userId: p.default.getId(),
                     size: 20,
@@ -142,9 +142,9 @@ function k(e) {
             }, `${n}-${t}`)
         }, [V, eu, ed, F, e_]),
         ef = l.useCallback(() => {
-            (0, f.eK)(!0, H), q(null), Y(""), $(!1)
+            (0, f.eK)(!0, H), X(null), Y(""), $(!1)
         }, [H]),
-        ex = l.useCallback(e => {
+        eE = l.useCallback(e => {
             $(!0), Y(e.substring(0, 60))
         }, []);
     return (0, i.jsxs)("div", {
@@ -174,17 +174,17 @@ function k(e) {
                     className: D.bd,
                     children: [(0, i.jsx)(A.ksK, {
                         inputRef: r,
-                        value: X || ea ? K : J?.title ?? "",
+                        value: q || ea ? K : J?.title ?? "",
                         onBlur: em,
                         onFocus: ep,
-                        onChange: ex,
+                        onChange: eE,
                         placeholder: M.intl.string(M.t.KPop4s),
                         leading: {
                             type: "emoji",
                             button: (0, i.jsx)(y.R, {
                                 customStatusEmoji: z,
-                                setCustomStatusEmoji: q,
-                                selectedDefaultStatus: X || ea ? null : Q,
+                                setCustomStatusEmoji: X,
+                                selectedDefaultStatus: q || ea ? null : Q,
                                 defaultStatusVariant: V,
                                 setIsEmojiPickerOpen: s
                             })

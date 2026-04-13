@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(566908),
     g = n(253932),
     f = n(734057),
-    x = n(517019),
-    E = n(309010),
+    E = n(517019),
+    x = n(309010),
     I = n(187508),
     C = n(576456),
     N = n(572448),
@@ -51,13 +51,13 @@ function j(e, t, n) {
 function R(e) {
     let {
         onJump: t
-    } = e, n = (0, r.bG)([f.A, E.A], () => f.A.getChannel(E.A.getChannelId())), {
+    } = e, n = (0, r.bG)([f.A, x.A], () => f.A.getChannel(x.A.getChannelId())), {
         messages: s,
         hasMore: o,
         loading: h,
         guildFilter: _,
         roleFilter: g,
-        everyoneFilter: x
+        everyoneFilter: E
     } = (0, r.cf)([I.Ay], () => ({
         messages: I.Ay.getMentions(),
         hasMore: I.Ay.hasMore,
@@ -65,10 +65,10 @@ function R(e) {
         guildFilter: I.Ay.guildFilter,
         roleFilter: I.Ay.roleFilter,
         everyoneFilter: I.Ay.everyoneFilter
-    })), C = (0, p.Sc)(), N = (0, u.A)(_), T = (0, u.A)(g), v = (0, u.A)(x);
+    })), C = (0, p.Sc)(), N = (0, u.A)(_), T = (0, u.A)(g), v = (0, u.A)(E);
     l.useEffect(() => {
-        I.Ay.hasLoadedEver ? (null != N && _ !== N || null != T && g !== T || null != v && x !== v) && j(n, !0) : j(n, !0)
-    }, [N, _, T, g, v, x, n, !0]), (0, c.Ay)(() => {
+        I.Ay.hasLoadedEver ? (null != N && _ !== N || null != T && g !== T || null != v && E !== v) && j(n, !0) : j(n, !0)
+    }, [N, _, T, g, v, E, n, !0]), (0, c.Ay)(() => {
         s?.some(A.$r) && (d.A.clearMentions(), j(n, !0))
     }), l.useEffect(() => () => {
         d.A.truncateMentions(S.Ue3)
@@ -118,7 +118,7 @@ function L(e) {
     if (null == t) return null;
     let s = f.A.getChannel(t.channel_id);
     if (null == s || (0, h.Jm)(s) || (0, h.$v)(s)) return null;
-    let a = x.A.didAgree(s.getGuildId()),
+    let a = E.A.didAgree(s.getGuildId()),
         r = !!(0, h.Gc)(s) && !a;
     return (0, i.jsxs)("div", {
         className: y.kL,

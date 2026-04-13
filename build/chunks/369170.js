@@ -12,7 +12,7 @@ var i = n(627968),
     c = n(422258),
     u = n(93055),
     h = n(788868),
-    A = n(665606),
+    A = n(415303),
     _ = n(985018),
     m = n(147705),
     p = n(988572);
@@ -24,7 +24,7 @@ function g(e) {
         hasAccess: g
     } = (0, u.TW)("favorites_empty_state"), {
         analyticsLocations: f
-    } = (0, o.Ay)(r.A.FAVORITES_GUILD_HOME), x = l.useCallback(() => {
+    } = (0, o.Ay)(r.A.FAVORITES_GUILD_HOME), E = l.useCallback(() => {
         (0, a.mMO)(async () => {
             let {
                 default: e
@@ -55,7 +55,7 @@ function g(e) {
                     children: _.intl.string(A.default["wh+Rz1"])
                 }), g ? (0, i.jsx)(a.Button, {
                     text: _.intl.string(A.default["6kk0gM"]),
-                    onClick: x,
+                    onClick: E,
                     icon: s.PlusMediumIcon
                 }) : (0, i.jsx)(d.A, {
                     subscriptionTier: h.pe.TIER_2,

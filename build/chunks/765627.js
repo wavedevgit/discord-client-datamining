@@ -29,7 +29,7 @@ function g(e) {
         inInbox: g
     } = o.A.useConfig({
         location: "RecentsPopout"
-    }), x = (0, c.Sc)(), E = (0, l.bG)([d.A], () => d.A.getOverdueMessageReminderCount());
+    }), E = (0, c.Sc)(), x = (0, l.bG)([d.A], () => d.A.getOverdueMessageReminderCount());
     return (0, i.jsxs)("div", {
         className: p.wx,
         children: [(0, i.jsxs)("div", {
@@ -85,10 +85,10 @@ function g(e) {
                     "aria-label": m.intl.string(m.t["2pAkDA"]),
                     id: s.Y2.BOOKMARKS,
                     className: p.Mf,
-                    children: 0 === E ? m.intl.string(m.t["2pAkDA"]) : m.intl.formatToPlainString(m.t.I4fryG, {
-                        count: E
+                    children: 0 === x ? m.intl.string(m.t["2pAkDA"]) : m.intl.formatToPlainString(m.t.I4fryG, {
+                        count: x
                     })
-                }) : null, x ? (0, i.jsx)(r.VQ0.Item, {
+                }) : null, E ? (0, i.jsx)(r.VQ0.Item, {
                     "aria-label": "scheduled",
                     id: s.Y2.SCHEDULED,
                     className: p.Mf,

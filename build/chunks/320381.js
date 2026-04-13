@@ -3,34 +3,34 @@
 n.d(t, {
     Cq: () => u,
     If: () => d,
-    Rk: () => c,
-    wj: () => o
+    Rk: () => o,
+    wj: () => c
 });
 var i = n(627968);
 n(64700);
 var r = n(397927),
     s = n(888675),
-    l = n(985018),
-    a = n(703238);
+    a = n(985018),
+    l = n(703238);
 
-function c(e) {
+function o(e) {
     let {
         message: t,
         compact: r,
-        onClick: c
+        onClick: o
     } = e;
     return (0, i.jsx)(s.A, {
         icon: n(290388),
         timestamp: t.timestamp,
         compact: r,
-        contentClassName: a.B,
-        children: l.intl.format(l.t.bYdG3f, {
-            onClick: c
+        contentClassName: l.B,
+        children: a.intl.format(a.t.bYdG3f, {
+            onClick: o
         })
     })
 }
 
-function o(e) {
+function c(e) {
     let {
         message: t,
         compact: r
@@ -39,8 +39,8 @@ function o(e) {
         icon: n(222548),
         timestamp: t.timestamp,
         compact: r,
-        contentClassName: a.B,
-        children: l.intl.string(l.t.tu6tOR)
+        contentClassName: l.B,
+        children: a.intl.string(a.t.tu6tOR)
     })
 }
 
@@ -55,12 +55,12 @@ function u(e) {
             width: 20,
             height: 20,
             color: "currentColor",
-            className: a.Q
+            className: l.Q
         }),
         timestamp: t.timestamp,
         compact: n,
-        contentClassName: a.B,
-        children: l.intl.string(l.t.vzfXql)
+        contentClassName: l.B,
+        children: a.intl.string(a.t.vzfXql)
     })
 }
 
@@ -75,11 +75,11 @@ function d(e) {
             width: 20,
             height: 20,
             color: "currentColor",
-            className: a.Q
+            className: l.Q
         }),
         timestamp: t.timestamp,
         compact: n,
-        contentClassName: a.B,
-        children: l.intl.string(l.t["/TfvyR"])
+        contentClassName: l.B,
+        children: a.intl.string(a.t["/TfvyR"])
     })
 }

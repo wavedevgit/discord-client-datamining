@@ -20,13 +20,13 @@ var i = n(627968),
     b = n(657048),
     f = n(734057),
     _ = n(696451),
-    N = n(317525),
-    j = n(994500),
+    j = n(317525),
+    N = n(994500),
     v = n(351906),
     T = n(287809),
     C = n(427262),
-    I = n(652215),
-    E = n(985018),
+    E = n(652215),
+    I = n(985018),
     S = n(857499);
 
 function y(e) {
@@ -46,7 +46,7 @@ function y(e) {
             return t => (0, i.jsx)(e, {
                 ...t,
                 id: s,
-                label: E.intl.string(E.t.oJ1Muw)
+                label: I.intl.string(I.t.oJ1Muw)
             })
         })
     }, [s]);
@@ -68,7 +68,7 @@ function y(e) {
                 openEntryContextMenu: u
             });
         case g.RA.USER:
-            return (0, i.jsx)(R, {
+            return (0, i.jsx)(k, {
                 guild: t,
                 id: s,
                 isLocked: r,
@@ -89,17 +89,17 @@ function O(e) {
         icon: m,
         name: g,
         categoryName: A
-    } = (0, d.cf)([f.A, T.default, j.A], () => {
+    } = (0, d.cf)([f.A, T.default, N.A], () => {
         if (c === n) return {
-            name: E.intl.string(E.t["7YqSGx"]),
+            name: I.intl.string(I.t["7YqSGx"]),
             icon: u.N$i
         };
         let e = f.A.getChannel(n),
             i = e?.parent_id != null ? f.A.getChannel(e.parent_id) : null;
         return {
             icon: null != e ? (0, p.gU)(e, t) : null,
-            name: null != e ? (0, h.m1)(e, T.default, j.A) : void 0,
-            categoryName: null != i ? (0, h.m1)(i, T.default, j.A) : void 0
+            name: null != e ? (0, h.m1)(e, T.default, N.A) : void 0,
+            categoryName: null != i ? (0, h.m1)(i, T.default, N.A) : void 0
         }
     }, [c, t, n]), b = l.useCallback(e => {
         n !== c && o(e)
@@ -122,7 +122,7 @@ function O(e) {
             className: S.Tc,
             variant: "text-sm/normal",
             children: ["(", A, ")"]
-        }) : null, s ? (0, i.jsx)(k, {
+        }) : null, s ? (0, i.jsx)(R, {
             tooltipText: r
         }) : null]
     })
@@ -134,7 +134,7 @@ function w(e) {
         id: s,
         isLocked: r,
         lockTooltipText: o
-    } = e, c = (0, d.bG)([N.A], () => N.A.getRole(t.id, s)), g = (0, A.$7)({
+    } = e, c = (0, d.bG)([j.A], () => j.A.getRole(t.id, s)), g = (0, A.$7)({
         guildId: t.id,
         roleId: s,
         size: 24
@@ -161,19 +161,19 @@ function w(e) {
             width: 23,
             height: 23,
             className: a()(S.a, S.Sl),
-            color: c.colorString ?? I.TpD
+            color: c.colorString ?? E.TpD
         }), (0, i.jsx)(u.Text, {
             className: S.S3,
             color: "text-strong",
             variant: "text-md/normal",
             children: c.name
-        }), r ? (0, i.jsx)(k, {
+        }), r ? (0, i.jsx)(R, {
             tooltipText: o
         }) : null]
     })
 }
 
-function R(e) {
+function k(e) {
     let {
         guild: t,
         id: n,
@@ -198,13 +198,13 @@ function R(e) {
             className: S.Tc,
             variant: "text-sm/normal",
             children: C.Ay.getUserTag(r)
-        }), l ? (0, i.jsx)(k, {
+        }), l ? (0, i.jsx)(R, {
             tooltipText: s
         }) : null]
     })
 }
 
-function k(e) {
+function R(e) {
     let {
         tooltipText: t
     } = e;

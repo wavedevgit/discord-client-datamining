@@ -1,37 +1,37 @@
 /** chunk id: 291335 params = (module,exports,require) **/
-t.d(l, {
+l.d(t, {
     A: () => v
 });
-var n = t(627968);
-t(64700);
-var i = t(503698),
-    s = t.n(i),
-    a = t(311907),
-    r = t(397927),
-    o = t(730134),
-    d = t(169869),
-    c = t(837057),
-    u = t(310419),
-    m = t(773669),
-    x = t(427157),
-    p = t(967198),
-    A = t(183555),
-    g = t(488995),
-    f = t(985018),
-    h = t(622376);
+var n = l(627968);
+l(64700);
+var i = l(503698),
+    s = l.n(i),
+    a = l(311907),
+    r = l(397927),
+    o = l(730134),
+    d = l(169869),
+    c = l(837057),
+    u = l(310419),
+    m = l(773669),
+    p = l(427157),
+    x = l(967198),
+    A = l(183555),
+    g = l(488995),
+    f = l(985018),
+    h = l(622376);
 
 function j(e) {
     let {
-        applicationRoleConnection: l,
-        locale: t,
+        applicationRoleConnection: t,
+        locale: l,
         onApplicationClicked: i,
         selectedGuildId: s
-    } = e, a = (0, d.VW)(l, t);
+    } = e, a = (0, d.VW)(t, l);
     return (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)("div", {
             className: h.k_,
-            children: null != l.application.bot ? (0, n.jsx)(o.A, {
-                user: new x.A(l.application.bot),
+            children: null != t.application.bot ? (0, n.jsx)(o.A, {
+                user: new p.A(t.application.bot),
                 size: r._3J.SIZE_16
             }) : (0, n.jsx)(r._7Z, {
                 color: "currentColor",
@@ -44,7 +44,7 @@ function j(e) {
                 onClick: () => {
                     i?.(), (0, c.transitionToGlobalDiscovery)({
                         tab: g.GlobalDiscoveryTab.APPS,
-                        applicationId: l.application.id,
+                        applicationId: t.application.id,
                         newSessionState: {
                             entrypoint: {
                                 name: u.sW.APPLICATION_DIRECTORY_URL
@@ -53,20 +53,20 @@ function j(e) {
                         }
                     })
                 },
-                children: [null != l.platform_name ? (0, n.jsx)(r.Text, {
+                children: [null != t.platform_name ? (0, n.jsx)(r.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    children: l.platform_name
-                }) : null, null != l.platform_username ? (0, n.jsx)(r.Text, {
+                    children: t.platform_name
+                }) : null, null != t.platform_username ? (0, n.jsx)(r.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    children: l.platform_username
+                    children: t.platform_username
                 }) : null, (0, n.jsx)(r.Text, {
                     variant: "text-xxs/normal",
                     color: "text-default",
                     className: h.nk,
                     children: f.intl.format(f.t.zIT9YA, {
-                        applicationHook: () => l.application.name
+                        applicationHook: () => t.application.name
                     })
                 })]
             }), null != a && a.length > 0 ? (0, n.jsx)("div", {
@@ -79,15 +79,15 @@ function j(e) {
 
 function v(e) {
     let {
-        applicationRoleConnections: l,
-        className: t,
+        applicationRoleConnections: t,
+        className: l,
         onClose: i
     } = e, {
         trackUserProfileAction: r
-    } = (0, A.NJ)(), o = (0, a.bG)([m.default], () => m.default.locale), d = (0, a.bG)([p.A], () => p.A.getGuildId());
-    return 0 === l.length ? null : (0, n.jsx)("ul", {
-        className: s()(h.kL, t),
-        children: l.map((e, l) => (0, n.jsx)("li", {
+    } = (0, A.NJ)(), o = (0, a.bG)([m.default], () => m.default.locale), d = (0, a.bG)([x.A], () => x.A.getGuildId());
+    return 0 === t.length ? null : (0, n.jsx)("ul", {
+        className: s()(h.kL, l),
+        children: t.map((e, t) => (0, n.jsx)("li", {
             className: h.FI,
             children: (0, n.jsx)(j, {
                 applicationRoleConnection: e,
@@ -99,6 +99,6 @@ function v(e) {
                 },
                 selectedGuildId: d ?? void 0
             })
-        }, `${l}-${e.application.id}`))
+        }, `${t}-${e.application.id}`))
     })
 }

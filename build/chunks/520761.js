@@ -28,10 +28,10 @@ let A = function(e) {
     } = e, {
         title: N,
         channelId: E,
-        description: C
-    } = l, T = u.A.getChannel(E), I = null;
-    null != T && (0, c.Yt)(T) || (I = h.intl.string(h.t.kTdL8X));
-    let b = null == C || 0 === C.length,
+        description: T
+    } = l, C = u.A.getChannel(E), I = null;
+    null != C && (0, c.Yt)(C) || (I = h.intl.string(h.t.kTdL8X));
+    let b = null == T || 0 === T.length,
         v = m.Ay.getResourceChannelIconURL({
             channelId: l.channelId,
             icon: l.icon
@@ -71,7 +71,7 @@ let A = function(e) {
                 onIconUpload: L
             })
         }), [t, l, G, L]);
-    return null == T ? null : (0, i.jsxs)("div", {
+    return null == C ? null : (0, i.jsxs)("div", {
         className: _.l5,
         children: [(0, i.jsxs)("div", {
             className: r()(_.Km, {
@@ -113,7 +113,7 @@ let A = function(e) {
                     variant: "text-xs/medium",
                     color: "text-muted",
                     lineClamp: 1,
-                    children: C
+                    children: T
                 })]
             }), (0, i.jsx)(a.m, {
                 text: h.intl.string(h.t.bt75uw),

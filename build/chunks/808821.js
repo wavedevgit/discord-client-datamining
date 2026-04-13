@@ -1,15 +1,15 @@
 /** chunk id: 808821 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => N
 }), n(938796);
 var i = n(627968),
     r = n(64700),
     s = n(665260),
-    l = n(311907),
-    a = n(732955),
-    c = n(397927),
-    o = n(274372),
+    a = n(311907),
+    l = n(732955),
+    o = n(397927),
+    c = n(274372),
     u = n(17069),
     d = n(794905),
     _ = n(320501),
@@ -19,14 +19,14 @@ var i = n(627968),
     I = n(985018),
     T = n(419397);
 
-function g(e) {
+function N(e) {
     let {
         message: t,
         compact: n
-    } = e, g = t.channel_id, N = (0, l.bG)([_.A], () => null != t.messageReference ? _.A.getMessage(t.messageReference.channel_id, t.messageReference.message_id) : null, [t.messageReference]), {
-        clipId: f,
-        remoteTriggerClipId: p
-    } = r.useMemo(() => null != N ? function(e) {
+    } = e, N = t.channel_id, g = (0, a.bG)([_.A], () => null != t.messageReference ? _.A.getMessage(t.messageReference.channel_id, t.messageReference.message_id) : null, [t.messageReference]), {
+        clipId: p,
+        remoteTriggerClipId: C
+    } = r.useMemo(() => null != g ? function(e) {
         let t = "__CLIP_METADATA__",
             n = e.indexOf(t);
         if (-1 === n) return {};
@@ -41,27 +41,27 @@ function g(e) {
         } catch (e) {
             return {}
         }
-    }(N.content) : {}, [N]), C = (0, l.bG)([o.A], () => o.A.getMatchingGroupClip(f, p)), h = (0, l.bG)([o.A], () => null != C && null != g && o.A.wasClipSharedInChannel(C.id, g)), {
+    }(g.content) : {}, [g]), f = (0, a.bG)([c.A], () => c.A.getMatchingGroupClip(p, C)), h = (0, a.bG)([c.A], () => null != f && null != N && c.A.wasClipSharedInChannel(f.id, N)), {
         onShareClick: S
-    } = (0, d.A)(g), R = r.useCallback(() => {
-        null != C && null != g && t.messageReference?.message_id != null && S({
-            clips: [C],
+    } = (0, d.A)(N), R = r.useCallback(() => {
+        null != f && null != N && t.messageReference?.message_id != null && S({
+            clips: [f],
             messageReference: {
-                channel_id: g,
+                channel_id: N,
                 message_id: t.messageReference.message_id
             }
         })
-    }, [C, g, t.messageReference, S]);
-    if (null == N || null == f && null == p || null == C || h) return null;
-    let x = N.attachments.find(e => (0, s.Lt)(e.flags ?? 0, m.sbO.IS_CLIP)),
+    }, [f, N, t.messageReference, S]);
+    if (null == g || null == p && null == C || null == f || h) return null;
+    let x = g.attachments.find(e => (0, s.Lt)(e.flags ?? 0, m.sbO.IS_CLIP)),
         O = null;
     if (x?.proxy_url != null) {
         let e = E.A.toURLSafe(x.proxy_url);
         null != e && (e.searchParams.append("format", "webp"), O = e.toString())
     }
-    let M = null != O ? [O, C.thumbnail] : [C.thumbnail];
+    let M = null != O ? [O, f.thumbnail] : [f.thumbnail];
     return (0, i.jsx)(A.A, {
-        iconNode: (0, i.jsx)(c.xgA, {
+        iconNode: (0, i.jsx)(o.xgA, {
             size: "md",
             color: "currentColor"
         }),
@@ -72,11 +72,11 @@ function g(e) {
             children: [(0, i.jsx)(u.A, {
                 thumbnails: M,
                 variant: "stacked"
-            }), (0, i.jsx)(a.$nd, {
+            }), (0, i.jsx)(l.$nd, {
                 size: "sm",
                 onClick: R,
                 text: I.intl.string(I.t["5qb8EX"]),
-                icon: c.W4J
+                icon: o.W4J
             })]
         }),
         children: I.intl.string(I.t.ThhsNG)

@@ -84,8 +84,8 @@ function p(e) {
         folderButtonContent: p,
         onClick: g,
         onContextMenu: f,
-        onHoverChange: x,
-        onKeyDown: E,
+        onHoverChange: E,
+        onKeyDown: x,
         treeItemProps: {
             onFocus: I,
             ...C
@@ -93,10 +93,10 @@ function p(e) {
         "aria-setsize": N,
         "aria-posinset": T
     } = e, [S, b] = l.useState(!1), y = l.useCallback(() => {
-        s || b(!0), x?.(!0)
-    }, [s, x]), v = l.useCallback(() => {
-        s || b(!1), x?.(!1)
-    }, [s, x]), j = n || null == a ? null : (0, u.oi)(a), R = !n && r > 0 ? (0, u.wN)(r, d ? o.LU0.colors.BACKGROUND_MOD_STRONG.css : o.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) : null;
+        s || b(!0), E?.(!0)
+    }, [s, E]), v = l.useCallback(() => {
+        s || b(!1), E?.(!1)
+    }, [s, E]), j = n || null == a ? null : (0, u.oi)(a), R = !n && r > 0 ? (0, u.wN)(r, d ? o.LU0.colors.BACKGROUND_MOD_STRONG.css : o.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) : null;
     return (0, i.jsx)(o.vN3, {
         children: (0, i.jsxs)(o.DUT, {
             className: A.H3,
@@ -104,7 +104,7 @@ function p(e) {
             onContextMenu: f,
             onMouseEnter: y,
             onMouseLeave: v,
-            onKeyDown: E,
+            onKeyDown: x,
             onFocus: I,
             focusProps: {
                 enabled: !1

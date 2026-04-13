@@ -1,28 +1,28 @@
 /** chunk id: 817253 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => c
+    A: () => o
 });
 var i = n(627968);
 n(64700);
 var r = n(638075),
     s = n(763754),
-    l = n(888675),
-    a = n(985018);
+    a = n(888675),
+    l = n(985018);
 
-function c(e) {
+function o(e) {
     let {
         message: t,
-        usernameHook: c,
-        compact: o
-    } = e, u = (0, s.Ay)(t), d = c(u), _ = r.A.getSystemMessageUserJoin(t.id), E = a.intl.format(_, {
+        usernameHook: o,
+        compact: c
+    } = e, u = (0, s.Ay)(t), d = o(u), _ = r.A.getSystemMessageUserJoin(t.id), E = l.intl.format(_, {
         username: u.nick,
         usernameHook: d
     });
-    return (0, i.jsx)(l.A, {
+    return (0, i.jsx)(a.A, {
         icon: n(617184),
         timestamp: t.timestamp,
-        compact: o,
+        compact: c,
         children: E
     })
 }

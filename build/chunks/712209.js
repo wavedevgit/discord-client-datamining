@@ -1,6 +1,6 @@
 /** chunk id: 712209 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => X,
+    Ay: () => q,
     mJ: () => V,
     sz: () => H,
     xB: () => B
@@ -19,8 +19,8 @@ var i, l, s = n(64700),
     p = n(181079),
     g = n(567035),
     f = n(202803),
-    x = n(455234),
-    E = n(863005),
+    E = n(455234),
+    x = n(863005),
     I = n(970278),
     C = n(152007),
     N = n(607508),
@@ -299,7 +299,7 @@ function K() {
         i = (e = n, t = [], y.A.getSortedPrivateChannels().forEach(n => Y(e, t, null, n.id)), M.Ay.getFlattenedGuildIds().forEach(n => {
             if (null == n) return;
             let i = v.Ay.getSelectableChannelIds(n),
-                l = E.A.getActiveJoinedUnreadThreadsForGuild(n);
+                l = x.A.getActiveJoinedUnreadThreadsForGuild(n);
             i.forEach(i => {
                 Y(e, t, n, i);
                 let s = l[i] ?? {};
@@ -324,7 +324,7 @@ function Y(e, t, n, i) {
     if (null == l || !b.Le.has(l.type) && D.Ay.isGuildOrCategoryOrChannelMuted(n, l.id)) return;
     if (l.isPrivate()) {
         if (0 === L.Ay.getMentionCount(i)) return
-    } else if (!(0, x.Y)(l) && 0 === L.Ay.getMentionCount(i)) return;
+    } else if (!(0, E.Y)(l) && 0 === L.Ay.getMentionCount(i)) return;
     if (!l.isPrivate() && !O.A.can(k.xBc.READ_MESSAGE_HISTORY, l) || (0, m.qR)(l)) return;
     let s = L.Ay.ackMessageId(i);
     if (null == s) {
@@ -357,7 +357,7 @@ function Y(e, t, n, i) {
             if (L.Ay.getMentionCount(t) > 0) return L.Ay.getIsMentionLowImportance(t) ? 3 : 2;
             if (null != n) {
                 let e = P.default.extractTimestamp(n);
-                if (Date.now() - e > q) return 8;
+                if (Date.now() - e > X) return 8;
                 if (Date.now() - e > z) return 6
             }
             if (i.isThread()) {
@@ -384,9 +384,9 @@ function Y(e, t, n, i) {
     })
 }
 let z = 2 * U.A.Millis.DAY,
-    q = 10 * U.A.Millis.DAY;
+    X = 10 * U.A.Millis.DAY;
 
-function X(e) {
+function q(e) {
     let [t, n] = s.useState(() => new F(K(), e)), [i, l] = s.useState(!1), a = s.useRef(Date.now()), [r, o] = s.useState(() => K());
     s.useEffect(() => {
         let e = e => o(e);

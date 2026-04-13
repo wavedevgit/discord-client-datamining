@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(203982),
     g = n(517381),
     f = n(822382),
-    x = n(868974),
-    E = n(771650),
+    E = n(868974),
+    x = n(771650),
     I = n(616252),
     C = n(753806),
     N = n(775427),
@@ -128,8 +128,8 @@ function w(e) {
         searchResultsQuery: p
     } = e, {
         totalResults: g,
-        isSearching: x,
-        isIndexing: E,
+        isSearching: E,
+        isIndexing: x,
         hasError: I
     } = s;
     if (I) return (0, i.jsxs)(P, {
@@ -140,7 +140,7 @@ function w(e) {
             children: D.intl.string(D.t.uvDZBZ)
         })]
     });
-    if (E) {
+    if (x) {
         let e = (0, f.Y7)(r);
         return (0, i.jsxs)(P, {
             children: [(0, i.jsx)(j.A, {}), (0, i.jsx)("div", {
@@ -149,7 +149,7 @@ function w(e) {
             })]
         })
     }
-    if (x) return null;
+    if (E) return null;
     if (g > 0) return (0, i.jsx)(R.A, {
         search: s,
         messages: t,
@@ -192,7 +192,7 @@ let B = [],
             blockCount: A,
             ignoreCount: _,
             isFeedbackVisible: g,
-            dismissFeedbackEntrypoint: x,
+            dismissFeedbackEntrypoint: E,
             onSearchModeChange: I,
             onPageChange: N,
             searchMode: T,
@@ -276,15 +276,15 @@ let B = [],
                     searchQuery: b.A.getSearchResultsQuery(r)
                 })
             }, [n, t, a, u]),
-            q = l.useCallback(e => {
+            X = l.useCallback(e => {
                 (0, y.kq)({
                     searchContext: t,
                     searchRequestAnalyticsId: a,
                     newPageIndex: e
                 }), N(e)
             }, [N, t, a]),
-            X = Math.floor(n.offset / L.T_y),
-            $ = W && X >= F,
+            q = Math.floor(n.offset / L.T_y),
+            $ = W && q >= F,
             Q = F + 1,
             J = (0, r.yK)([b.A], () => {
                 if (0 !== n.offset) return B;
@@ -302,7 +302,7 @@ let B = [],
             et = Z === o.M.SEARCH_AUTHOR_TYPE_SEARCH_RESULTS_HINT,
             en = l.useCallback(() => {
                 if (n.isSearching) return;
-                let e = `${E.Ay[L.LWr.FILTER_AUTHOR_TYPE].key} ${D.intl.string(D.t.tPZo4p)} `;
+                let e = `${x.Ay[L.LWr.FILTER_AUTHOR_TYPE].key} ${D.intl.string(D.t.tPZo4p)} `;
                 C.A.appendToSearchInputText(t, e)
             }, [t, n.isSearching]);
         return (0, i.jsxs)("section", {
@@ -341,7 +341,7 @@ let B = [],
                     renderEmbeds: s,
                     onClick: z,
                     onScrollTo: V,
-                    onPageChange: q,
+                    onPageChange: X,
                     paginationTotalCount: W ? H : void 0,
                     renderPageWrapper: K,
                     onBlockedResultsClick: j,
@@ -351,7 +351,7 @@ let B = [],
             }), (0, i.jsx)(k, {
                 searchContext: t,
                 isFeedbackVisible: g,
-                dismissFeedbackEntrypoint: x
+                dismissFeedbackEntrypoint: E
             })]
         })
     });
@@ -364,7 +364,7 @@ function H(e) {
         isFeedbackVisible: s,
         dismissFeedbackEntrypoint: a
     } = function() {
-        let [e, t] = l.useState(!1), n = (0, x.H)({
+        let [e, t] = l.useState(!1), n = (0, E.H)({
             location: "SearchResults"
         });
         return (0, u.Ay)(() => {
@@ -391,7 +391,7 @@ function H(e) {
         blockCount: p
     } = (0, T.A)({
         searchContext: t
-    }), E = (0, r.bG)([b.A], () => b.A.getSearchMode(o) ?? L.BBH.NEWEST), N = l.useCallback(e => {
+    }), x = (0, r.bG)([b.A], () => b.A.getSearchMode(o) ?? L.BBH.NEWEST), N = l.useCallback(e => {
         if (d.isSearching) return;
         I.A.updateSearchMode(t, e);
         let n = C.A.getSearchInputText(t);
@@ -425,7 +425,7 @@ function H(e) {
             dismissFeedbackEntrypoint: a,
             onPageChange: S,
             onSearchModeChange: N,
-            searchMode: E,
+            searchMode: x,
             onBlockedResultsClick: v,
             searchResultsQuery: y,
             selectedChannelId: n

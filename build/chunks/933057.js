@@ -25,7 +25,7 @@ function m(e) {
                 d._.unsubscribe(A.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
             }
         }, []), f) return null;
-    let x = _.intl.string(_.t.h850Ss);
+    let E = _.intl.string(_.t.h850Ss);
     return (0, i.jsx)(a.YNO, {
         targetElementRef: g,
         shouldShow: m,
@@ -48,9 +48,9 @@ function m(e) {
                 ...e,
                 ref: g,
                 onClick: () => p(e => !e),
-                tooltip: l ? null : x,
+                tooltip: l ? null : E,
                 icon: n === h.CP.NO_MESSAGES ? a.a_I : a.XFE,
-                "aria-label": x,
+                "aria-label": E,
                 selected: l
             })
         }

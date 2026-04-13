@@ -18,8 +18,8 @@ var i = n(478437),
     p = n(71393),
     g = n(576705),
     f = n(994500),
-    x = n(309010),
-    E = n(543465),
+    E = n(309010),
+    x = n(543465),
     I = n(977997),
     C = n(661191),
     N = n(652215);
@@ -30,7 +30,7 @@ function T(e, t) {
 }
 
 function S(e) {
-    let t = (0, l.bG)([E.Ay], () => E.Ay.isMuted(e)),
+    let t = (0, l.bG)([x.Ay], () => x.Ay.isMuted(e)),
         n = (0, d.BP)(e),
         i = (0, l.yK)([a.Ay, f.A], () => a.Ay.getEmbeddedActivitiesForGuild(e).filter(e => !(0, o.PH)([...e.userIds], f.A.getBlockedOrIgnoredIDs()))),
         N = (0, r.H)(i[0]?.location),
@@ -39,8 +39,8 @@ function S(e) {
             guildHasVoice: b,
             guildHasVideo: y,
             selectedVoiceChannelHasVideo: v
-        } = (0, l.cf)([x.A, I.A, p.A, g.A, m.A], () => {
-            let n = x.A.getVoiceChannelId(),
+        } = (0, l.cf)([E.A, I.A, p.A, g.A, m.A], () => {
+            let n = E.A.getVoiceChannelId(),
                 i = p.A.getGuild(e)?.afkChannelId,
                 l = I.A.getUsersWithVideo(e),
                 s = (0, o.hs)(I.A.getVoiceStates(e));
@@ -61,19 +61,19 @@ function S(e) {
             }
         }, [e, t]),
         j = _.default.getId();
-    return (0, l.cf)([x.A, m.A, a.Ay, u.A, A.A, g.A], () => {
-        let l = x.A.getVoiceChannelId(),
+    return (0, l.cf)([E.A, m.A, a.Ay, u.A, A.A, g.A], () => {
+        let l = E.A.getVoiceChannelId(),
             s = m.A.getChannel(l)?.guild_id === e,
             d = !1,
             _ = !1,
             p = !1,
             f = !1,
-            E = !1,
+            x = !1,
             I = !1;
         if (!s && t) return {
             audio: d,
             video: f,
-            screenshare: E,
+            screenshare: x,
             liveStage: p,
             activeEvent: _,
             activity: I,
@@ -96,10 +96,10 @@ function S(e) {
                 return !1
             })(),
             D = a.Ay.getEmbeddedActivitiesForGuild(e).length > 0;
-        return s ? (d = !0, _ = n?.channel_id === l, p = T, f = L, E = R, I = D) : (d = b, _ = null != n, p = N, f = y, E = O, I = M), {
+        return s ? (d = !0, _ = n?.channel_id === l, p = T, f = L, x = R, I = D) : (d = b, _ = null != n, p = N, f = y, x = O, I = M), {
             audio: d,
             video: f,
-            screenshare: E,
+            screenshare: x,
             liveStage: p,
             activeEvent: _,
             activity: I,

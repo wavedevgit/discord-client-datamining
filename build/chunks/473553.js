@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(245853),
     g = n(714510),
     f = n(890687),
-    x = n(590202),
-    E = n(639214),
+    E = n(590202),
+    x = n(639214),
     I = n(801320),
     C = n(898375),
     N = n(713081),
@@ -41,7 +41,7 @@ function O(e) {
         location: b.rE.QUEST_ACTIVITY_HEADER,
         questContent: _.uF.QUEST_ACTIVITY_HEADER,
         sourceQuestContent: _.uF.RUNNING_ACTIVITY
-    }), [A, m] = l.useState(!1), p = l.useRef(null), E = l.useRef(null), [T, O] = (0, d.kn)([r.M.QUEST_ACTIVITY_HEADER_INTRO], void 0, !0), {
+    }), [A, m] = l.useState(!1), p = l.useRef(null), x = l.useRef(null), [T, O] = (0, d.kn)([r.M.QUEST_ACTIVITY_HEADER_INTRO], void 0, !0), {
         completedRatio: L,
         completedRatioDisplay: M,
         percentComplete: D
@@ -53,7 +53,7 @@ function O(e) {
     }, [n]), G = t.userStatus?.enrolledAt != null, P = l.useCallback(() => {
         (0, h.Oy)(t.id, {
             questContent: _.uF.QUEST_ACTIVITY_HEADER,
-            questContentCTA: x.Cy.ACCEPT_QUEST,
+            questContentCTA: E.Cy.ACCEPT_QUEST,
             sourceQuestContent: _.uF.RUNNING_ACTIVITY
         })
     }, [t.id]);
@@ -78,7 +78,7 @@ function O(e) {
                         autoplay: A
                     })
                 }), (0, i.jsx)(o.YNO, {
-                    targetElementRef: E,
+                    targetElementRef: x,
                     renderPopout: e => {
                         let {
                             closePopout: n
@@ -100,7 +100,7 @@ function O(e) {
                         }),
                         variant: "secondary",
                         size: "sm",
-                        buttonRef: E,
+                        buttonRef: x,
                         ...e
                     })
                 })]
@@ -159,17 +159,17 @@ function O(e) {
 function L(e) {
     let {
         applicationId: t
-    } = e, r = (0, a.bG)([A.A], () => A.A.quests), d = (0, a.bG)([u.A], () => u.A.theme), c = l.useMemo(() => (0, E.jm)(r, t, !0)[0], [r, t]), {
+    } = e, r = (0, a.bG)([A.A], () => A.A.quests), d = (0, a.bG)([u.A], () => u.A.theme), c = l.useMemo(() => (0, x.jm)(r, t, !0)[0], [r, t]), {
         enabled: h,
         showSkipButton: g
     } = p.Ym.useConfig({
         location: b.rE.QUEST_ACTIVITY_HEADER
-    }), f = (0, a.bG)([m.A], () => m.A.getState().autoEnroll), x = c?.id, I = (0, a.bG)([m.A], () => m.A.isDismissed(x), [x]);
+    }), f = (0, a.bG)([m.A], () => m.A.getState().autoEnroll), E = c?.id, I = (0, a.bG)([m.A], () => m.A.isDismissed(E), [E]);
     return (l.useEffect(() => {
         !h || null == c || c.userStatus?.enrolledAt != null || f || I || (0, o.mMO)(async () => {
             let {
                 default: e
-            } = await n.e("85986").then(n.bind(n, 113273));
+            } = await n.e("85986").then(n.bind(n, 335654));
             return t => (0, i.jsx)(e, {
                 ...t,
                 quest: c,

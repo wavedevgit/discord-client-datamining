@@ -25,8 +25,8 @@ var l = n(311907),
     j = n(994500),
     N = n(287809),
     E = n(997509),
-    C = n(555337),
-    T = n(224394),
+    T = n(555337),
+    C = n(224394),
     I = n(814758),
     b = n(652215),
     v = n(985018),
@@ -38,10 +38,10 @@ let R = "dismissedCommunityFeaturesUpsell",
                 guild: t,
                 submitting: n,
                 errors: s
-            } = (0, l.cf)([C.A], () => ({
-                submitting: C.A.isSubmitting(),
-                guild: C.A.getGuild(),
-                errors: C.A.getErrors()
+            } = (0, l.cf)([T.A], () => ({
+                submitting: T.A.isSubmitting(),
+                guild: T.A.getGuild(),
+                errors: T.A.getErrors()
             })),
             r = Object.keys(s),
             a = r.length > 0 ? r[0] : null;
@@ -80,7 +80,7 @@ let R = "dismissedCommunityFeaturesUpsell",
         let j = (0, l.bG)([p.A], () => p.A.getGuild("942897714956472401")),
             N = o.features.has(b.GuildFeatures.COMMUNITY) && x >= 1e3 && _ && null == j;
         if (t && n && !N) return null;
-        let C = async () => {
+        let T = async () => {
             try {
                 let e = await r.Bo.post({
                     url: b.Rsh.JOIN_ADMIN_SERVER(o.id),
@@ -130,7 +130,7 @@ let R = "dismissedCommunityFeaturesUpsell",
                         variant: "primary",
                         size: "sm",
                         text: v.intl.string(v.t.iF1Asi),
-                        onClick: C
+                        onClick: T
                     })
                 }), n ? null : (0, i.jsx)("div", {
                     "data-button-hoisted-classname-wrapper": !0,
@@ -170,7 +170,7 @@ let R = "dismissedCommunityFeaturesUpsell",
         })
     },
     L = () => {
-        let e = (0, l.bG)([C.A], () => C.A.getGuild()),
+        let e = (0, l.bG)([T.A], () => T.A.getGuild()),
             {
                 canManageGuild: t,
                 isGuildAdmin: n
@@ -316,8 +316,8 @@ let R = "dismissedCommunityFeaturesUpsell",
         })
     },
     D = () => {
-        let e = (0, l.bG)([C.A], () => C.A.getGuild());
-        return null == e ? null : e.features.has(b.GuildFeatures.COMMUNITY) ? (0, i.jsx)(L, {}) : (0, i.jsx)(T.A, {
+        let e = (0, l.bG)([T.A], () => T.A.getGuild());
+        return null == e ? null : e.features.has(b.GuildFeatures.COMMUNITY) ? (0, i.jsx)(L, {}) : (0, i.jsx)(C.A, {
             guild: e
         })
     }

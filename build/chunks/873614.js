@@ -1,6 +1,6 @@
 /** chunk id: 873614 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => x
 });
 var i = n(627968),
     l = n(64700),
@@ -19,11 +19,11 @@ var i = n(627968),
     g = n(879317),
     f = n(324025);
 
-function x(e) {
+function E(e) {
     let {
         guild: t,
         channelId: s
-    } = e, a = (0, r.bG)([m.A], () => m.A.getChannel(s)), [f, x] = l.useState(!1), E = l.useCallback(() => {
+    } = e, a = (0, r.bG)([m.A], () => m.A.getChannel(s)), [f, E] = l.useState(!1), x = l.useCallback(() => {
         d.A.nsfwReturnToSafety(t?.id)
     }, [t]), I = l.useCallback(() => {
         d.A.spoilerAgree(s)
@@ -36,7 +36,7 @@ function x(e) {
             color: o.LU0.colors.TEXT_DEFAULT
         }), C]
     }) : p.intl.string(p.t["q38/ae"]), S = l.useCallback(e => {
-        null != e && x(e.scrollHeight - e.clientHeight > 1)
+        null != e && E(e.scrollHeight - e.clientHeight > 1)
     }, []), b = l.useCallback(() => {
         null != a && null != t && (0, o.mMO)(async () => {
             let {
@@ -73,7 +73,7 @@ function x(e) {
     }) : null;
     return (0, i.jsx)(_.A, {
         onAgree: I,
-        onDisagree: E,
+        onDisagree: x,
         modalType: c.A5.SPOILER_CHANNEL,
         title: T,
         subtitle: y,
@@ -84,7 +84,7 @@ function x(e) {
         channelId: s
     })
 }
-let E = function(e) {
+let x = function(e) {
     let {
         guild: t,
         channelId: n,
@@ -100,7 +100,7 @@ let E = function(e) {
         className: f.X,
         children: (0, i.jsx)("div", {
             className: a()(s, f.i),
-            children: (0, i.jsx)(x, {
+            children: (0, i.jsx)(E, {
                 guild: t,
                 channelId: n
             }, n)

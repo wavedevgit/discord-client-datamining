@@ -1,6 +1,6 @@
 /** chunk id: 520006 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x,
+    A: () => E,
     X: () => f
 });
 var i = n(627968);
@@ -52,13 +52,13 @@ function f(e) {
     })
 }
 
-function x(e) {
+function E(e) {
     let {
         applicationId: t,
         stream: n,
         channel: l,
-        exitFullScreen: x,
-        appContext: E,
+        exitFullScreen: E,
+        appContext: x,
         analyticsLocation: I,
         guildScheduledEvent: C,
         shouldPrioritizeGroupPlusIcon: N = !1,
@@ -90,8 +90,8 @@ function x(e) {
                 channel: l,
                 streamUserId: n?.ownerId,
                 applicationId: t,
-                appContext: E ?? O,
-                exitFullScreen: x,
+                appContext: x ?? O,
+                exitFullScreen: E,
                 analyticsLocation: I,
                 guildScheduledEvent: C,
                 source: l.isGuildStageVoice() ? p.PE1.STAGE_CHANNEL : p.PE1.STREAM_INVITE

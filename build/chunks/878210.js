@@ -1,17 +1,17 @@
 /** chunk id: 878210 params = (module,exports,require) **/
-t.d(l, {
+l.d(t, {
     A: () => o
 });
-var n = t(627968),
-    i = t(64700),
-    s = t(397927),
-    a = t(203982),
-    r = t(652215);
+var n = l(627968),
+    i = l(64700),
+    s = l(397927),
+    a = l(203982),
+    r = l(652215);
 
 function o(e) {
     let {
-        children: l
-    } = e, [t, o] = i.useState(!1);
+        children: t
+    } = e, [l, o] = i.useState(!1);
     return i.useEffect(() => {
         let e = () => {
             o(!0), setTimeout(() => {
@@ -22,8 +22,8 @@ function o(e) {
             a._.unsubscribe(r.jej.SHAKE_PROFILE_MODAL, e)
         }
     }, []), (0, n.jsx)(s.bfh, {
-        isShaking: t,
+        isShaking: l,
         intensity: 1.4,
-        children: l
+        children: t
     })
 }

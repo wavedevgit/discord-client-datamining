@@ -1,6 +1,6 @@
 /** chunk id: 467480 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => E
 });
 var i = n(627968),
     l = n(64700),
@@ -18,12 +18,12 @@ var i = n(627968),
     p = n(58736),
     g = n(327337),
     f = n(985018);
-let x = l.memo(function(e) {
+let E = l.memo(function(e) {
     let {
         channel: t
-    } = e, x = (0, u.u)(t.id), E = (0, h.S)(t.id), I = (0, A.e)(t.id), C = (0, a.useHasAnyModalOpen)(), N = (0, s.bG)([m.A], () => m.A.hasLayers()), T = l.useCallback(() => E ? f.intl.string(f.t["16QyDv"]) : null != I ? f.intl.string(f.t.kCN9i0) : null, [E, I]), S = l.useMemo(() => (E || null != I) && !C && !N, [E, I, C, N]), [b, y] = l.useState(T());
+    } = e, E = (0, u.u)(t.id), x = (0, h.S)(t.id), I = (0, A.e)(t.id), C = (0, a.useHasAnyModalOpen)(), N = (0, s.bG)([m.A], () => m.A.hasLayers()), T = l.useCallback(() => x ? f.intl.string(f.t["16QyDv"]) : null != I ? f.intl.string(f.t.kCN9i0) : null, [x, I]), S = l.useMemo(() => (x || null != I) && !C && !N, [x, I, C, N]), [b, y] = l.useState(T());
     l.useEffect(() => {
-        null != I && null != x && (o.ORC.announce(f.intl.string(f.t.acsXuG)), setTimeout(() => {
+        null != I && null != E && (o.ORC.announce(f.intl.string(f.t.acsXuG)), setTimeout(() => {
             (0, c.xi)(t.id, [I.id])
         }, 5e3), (0, _.QF)({
             channelId: t.id,
@@ -32,24 +32,24 @@ let x = l.memo(function(e) {
             warningType: I.type,
             isNudgeWarning: null != I,
             viewName: _.gN.SAFETY_TOOLS_NUDGE_TOOLTIP
-        })), E && (o.ORC.announce(f.intl.string(f.t["1dxCqG"])), setTimeout(() => {
+        })), x && (o.ORC.announce(f.intl.string(f.t["1dxCqG"])), setTimeout(() => {
             (0, c.bg)(t.id)
         }, 5e3))
-    }, [t, I, x, E]), (0, d.Ay)(() => {
-        null != x && (0, _.QF)({
+    }, [t, I, E, x]), (0, d.Ay)(() => {
+        null != E && (0, _.QF)({
             channelId: t.id,
             senderId: t.getRecipientId(),
-            warningId: x.id,
-            warningType: x.type,
+            warningId: E.id,
+            warningType: E.type,
             isNudgeWarning: null != I,
             viewName: _.gN.SAFETY_TOOLS_BUTTON
         })
     }), l.useEffect(() => {
         let e = T();
         null != e && y(e)
-    }, [E, I, T]);
+    }, [x, I, T]);
     let v = l.useCallback(() => {
-        null != I && (0, c.xi)(t.id, [I.id]), null != x && ((0, o.mMO)(async () => {
+        null != I && (0, c.xi)(t.id, [I.id]), null != E && ((0, o.mMO)(async () => {
             let {
                 default: e
             } = await Promise.all([n.e("45033"), n.e("46717"), n.e("88331")]).then(n.bind(n, 788099));
@@ -61,8 +61,8 @@ let x = l.memo(function(e) {
                 return (0, i.jsx)(e, {
                     otherUserId: t.getRecipientId(),
                     channelId: t.id,
-                    warningId: x.id,
-                    warningType: x.type,
+                    warningId: E.id,
+                    warningType: E.type,
                     onClose: l,
                     transitionState: s
                 })
@@ -72,13 +72,13 @@ let x = l.memo(function(e) {
         }), (0, _._$)({
             channelId: t.id,
             senderId: t.getRecipientId(),
-            warningId: x.id,
-            warningType: x.type,
+            warningId: E.id,
+            warningType: E.type,
             cta: _.Wm.USER_SAFETY_TOOLS_BUTTON_CLICK,
             isNudgeWarning: null != I
         }))
-    }, [I, x, t]);
-    return null == x ? null : (0, i.jsx)(r.m_, {
+    }, [I, E, t]);
+    return null == E ? null : (0, i.jsx)(r.m_, {
         forceOpen: S,
         text: b,
         position: "bottom",

@@ -39,7 +39,7 @@ let d = Math.ceil(Math.sqrt(115200)),
                 shineSpring: 0,
                 immediate: !0
             })
-        }, [p]), x = l.useMemo(() => {
+        }, [p]), E = l.useMemo(() => {
             let e = (0, i.jsx)(s.animated.div, {
                 className: o.q2,
                 style: {
@@ -62,6 +62,6 @@ let d = Math.ceil(Math.sqrt(115200)),
                 "--custom-shine-dimensions": "240px",
                 "--custom-shine-rotated-dimensions-delta": `${c}px`
             },
-            children: x
+            children: E
         })
     })

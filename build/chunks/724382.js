@@ -7,10 +7,10 @@ var i = n(627968);
 n(64700);
 var r = n(397927),
     s = n(429913),
-    l = n(763754),
-    a = n(447215),
-    c = n(888675),
-    o = n(985018),
+    a = n(763754),
+    l = n(447215),
+    o = n(888675),
+    c = n(985018),
     u = n(283753);
 
 function d(e) {
@@ -18,14 +18,14 @@ function d(e) {
         message: t,
         channel: n,
         compact: d
-    } = e, _ = (0, l.Ay)(t), E = (0, a.P)({
+    } = e, _ = (0, a.Ay)(t), E = (0, l.P)({
         user: t.author,
         channelId: n.id,
         guildId: n.guild_id,
         messageId: t.id
     })(_), A = (0, s.h)(t.applicationId);
     if (null == A) return null;
-    let m = o.intl.format(o.t.mAtJTC, {
+    let m = c.intl.format(c.t.mAtJTC, {
         username: t.author.username,
         usernameHook: E,
         applicationName: A.name,
@@ -37,7 +37,7 @@ function d(e) {
         }, A.name),
         helpdeskArticle: "#"
     });
-    return (0, i.jsx)(c.A, {
+    return (0, i.jsx)(o.A, {
         iconNode: (0, i.jsx)(r.fNY, {
             size: "sm",
             color: r.LU0.colors.STATUS_POSITIVE

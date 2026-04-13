@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(234320),
     g = n(20465),
     f = n(108460),
-    x = n(709562),
-    E = n(652215),
+    E = n(709562),
+    x = n(652215),
     I = n(985018);
 
 function C(e) {
@@ -118,14 +118,14 @@ function T(e) {
             y.current?.focus()
         }, []);
     (0, p.Vo)({
-        event: E.jej.FOCUS_CHAT_BUTTON,
+        event: x.jej.FOCUS_CHAT_BUTTON,
         handler: b ? null : D
     });
     let [U, G] = l.useState(!1), P = l.useCallback(() => {
         _ && G(!0)
     }, [_]);
     (0, p.Vo)({
-        event: E.jej.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
+        event: x.jej.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
         handler: P
     }), l.useEffect(() => {
         let e;
@@ -138,7 +138,7 @@ function T(e) {
     let k = [t = _ && b ? I.intl.string(I.t.DPgc5h) : v ? I.intl.string(I.t.nthdxB) : I.intl.string(I.t["5KxXrK"])];
     return O > 0 && k.push(I.intl.formatToPlainString(I.t["3l1GOx"], {
         mentionCount: O
-    })), R > 0 && k.push(I.intl.string(I.t.x5zAGZ)), (0, i.jsx)(x.A, {
+    })), R > 0 && k.push(I.intl.string(I.t.x5zAGZ)), (0, i.jsx)(E.A, {
         buttonRef: y,
         onClick: L,
         label: t,

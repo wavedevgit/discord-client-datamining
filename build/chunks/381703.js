@@ -1,4 +1,5 @@
 /** chunk id: 381703 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     PC: "premiumIcon_b68a35",
     tV: "platformIcon_b68a35",
@@ -15,5 +16,8 @@ e.exports = {
     gO: "ellipsis_b68a35",
     yw: "quarantineLearnMoreLink_b68a35",
     fU: "errorCodeNoticeText_b68a35",
-    wz: "errorCodeNoticeClickable_b68a35"
+    wz: "errorCodeNoticeClickable_b68a35",
+    HE: "riotConnectionDeprecationNoticeCTAButton_b68a35",
+    wX: "riotConnectionDeprecationRemindLaterButton_b68a35",
+    _R: "riotConnectionDeprecationNoticeIcon_b68a35"
 }

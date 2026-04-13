@@ -35,11 +35,11 @@ function p(e) {
         disabled: f = !1
     } = e, j = s.useRef(null), N = s.useRef(null), {
         drag: E,
-        dragPreview: C,
-        drop: T,
+        dragPreview: T,
+        drop: C,
         isDragging: I
     } = (0, h.A)(j, c, u, p);
-    return E(N), C(T(j)), (0, i.jsxs)("div", {
+    return E(N), T(C(j)), (0, i.jsxs)("div", {
         ref: j,
         className: r()(A.Nr, {
             [A.wy]: I,

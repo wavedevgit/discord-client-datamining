@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(714991),
     g = n(57991),
     f = n(513461),
-    x = n(199285),
-    E = n(347951),
+    E = n(199285),
+    x = n(347951),
     I = n(164956),
     C = n(63995),
     N = n(69407),
@@ -69,13 +69,13 @@ function w(e) {
 }
 
 function B(e) {
-    let t, n, s, r, c, m, p, g, f, x, E, I, D, G, B, V, H, F, W, K, {
+    let t, n, s, r, c, m, p, g, f, E, x, I, D, G, B, V, H, F, W, K, {
             guild: Y
         } = e,
         z = Y.id,
         {
-            voiceUsersToShow: q,
-            stageSpeakers: X,
+            voiceUsersToShow: X,
+            stageSpeakers: q,
             numStageListeners: $,
             streamUsersToShow: Q,
             embeddedActivitiesUsers: J
@@ -111,16 +111,16 @@ function B(e) {
             let e = 0;
             for (let t of r) e += C.A.getParticipantCount(t, N.ip.AUDIENCE);
             return e
-        }), x = (0, d.yK)([v.A], () => {
+        }), E = (0, d.yK)([v.A], () => {
             let e = v.A.getAllApplicationStreams().filter(e => e.guildId === t).map(e => e.ownerId);
             return (0, _.F7)(e, m)
-        }, [m, t]), E = (0, d.yK)([h.Ay], () => {
+        }, [m, t]), x = (0, d.yK)([h.Ay], () => {
             let e = h.Ay.getEmbeddedActivitiesForGuild(t).flatMap(e => Array.from(e.userIds));
             return (0, _.F7)(e, m)
         }, [t, m]), I = (0, d.yK)([L.default], () => {
-            let e = E.map(e => L.default.getUser(e));
+            let e = x.map(e => L.default.getUser(e));
             return (0, _.aw)(e)
-        }, [E]), D = (0, d.yK)([L.default], () => x.map(e => L.default.getUser(e)), [x]), G = p.filter(e => !x.includes(e.id) && !E.includes(e.id)), B = (0, _.aw)(G), V = D.filter(e => null != e && !E.includes(e.id)), H = (0, d.bG)([b.A], () => b.A.getUserAffinitiesMap(), []), F = l.useMemo(() => (0, y.L)(B, H, "GuildTooltip - nonBlockedUsers"), [B, H]), W = l.useMemo(() => (0, y.L)(g, H, "GuildTooltip - stageSpeakers"), [g, H]), K = l.useMemo(() => (0, y.L)(V, H, "GuildTooltip - streamUsers"), [V, H]), {
+        }, [x]), D = (0, d.yK)([L.default], () => E.map(e => L.default.getUser(e)), [E]), G = p.filter(e => !E.includes(e.id) && !x.includes(e.id)), B = (0, _.aw)(G), V = D.filter(e => null != e && !x.includes(e.id)), H = (0, d.bG)([b.A], () => b.A.getUserAffinitiesMap(), []), F = l.useMemo(() => (0, y.L)(B, H, "GuildTooltip - nonBlockedUsers"), [B, H]), W = l.useMemo(() => (0, y.L)(g, H, "GuildTooltip - stageSpeakers"), [g, H]), K = l.useMemo(() => (0, y.L)(V, H, "GuildTooltip - streamUsers"), [V, H]), {
             voiceUsersToShow: F,
             stageSpeakers: W,
             numStageListeners: f,
@@ -128,8 +128,8 @@ function B(e) {
             embeddedActivitiesUsers: l.useMemo(() => (0, y.L)(I, H, "GuildTooltip - embeddedActivitiesUsers"), [I, H]),
             hasActivity: g.length > 0 || G.length > 0 || V.length > 0 || I.length > 0
         }),
-        Z = k(u.HKD, q, z),
-        ee = 0 === X.length ? null : (0, i.jsxs)("div", {
+        Z = k(u.HKD, X, z),
+        ee = 0 === q.length ? null : (0, i.jsxs)("div", {
             className: P.nM,
             children: [(0, i.jsx)(u.qux, {
                 size: "lg",
@@ -137,7 +137,7 @@ function B(e) {
                 className: P.RI
             }), (0, i.jsx)(A.Ay, {
                 guildId: z,
-                users: X,
+                users: q,
                 max: 3
             }), (0, i.jsxs)("div", {
                 className: P.GZ,
@@ -197,11 +197,11 @@ function V(e) {
 function H(e) {
     let {
         guild: t
-    } = e, n = (0, m.A)(t), l = (0, x.a)(t), s = null != l ? (0, i.jsx)(V, {
+    } = e, n = (0, m.A)(t), l = (0, E.a)(t), s = null != l ? (0, i.jsx)(V, {
         guildJoinRequestStatus: l
     }) : null, r = (0, i.jsx)(B, {
         guild: t
-    }), o = (0, d.bG)([I.A], () => I.A.isViewingRoles(t.id)), c = (0, E.Ig)(t);
+    }), o = (0, d.bG)([I.A], () => I.A.isViewingRoles(t.id)), c = (0, x.Ig)(t);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
             className: a()(P.nM, P.Dl),

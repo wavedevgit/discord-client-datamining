@@ -1,7 +1,7 @@
 /** chunk id: 397400 params = (module,exports,require) **/
 n.d(t, {
     Ai: () => p,
-    ET: () => x,
+    ET: () => E,
     Jh: () => m,
     SX: () => h,
     ed: () => g,
@@ -9,7 +9,7 @@ n.d(t, {
     ft: () => u,
     gU: () => I,
     oT: () => _,
-    pK: () => E,
+    pK: () => x,
     tR: () => A,
     wN: () => c
 });
@@ -127,7 +127,7 @@ function f(e, t) {
     })
 }
 
-function x(e) {
+function E(e) {
     let {
         gameApplicationId: t,
         buttonVariant: n
@@ -138,7 +138,7 @@ function x(e) {
     })
 }
 
-function E(e) {
+function x(e) {
     let {
         gameApplicationId: t,
         buttonVariant: n

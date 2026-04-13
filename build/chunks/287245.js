@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(451909),
     g = n(538355),
     f = n(854627),
-    x = n(447404),
-    E = n(320501),
+    E = n(447404),
+    x = n(320501),
     I = n(203982),
     C = n(427262),
     N = n(652215),
@@ -111,7 +111,7 @@ let b = e => {
             })
         }, [C]), l.useEffect(() => {
             let e = Date.now();
-            m(E.A.getMessages(t.id)._array.filter(t => t.timestamp.getTime() > e - 12e5).slice(-50))
+            m(x.A.getMessages(t.id)._array.filter(t => t.timestamp.getTime() > e - 12e5).slice(-50))
         }, [t]);
         let M = l.useCallback(e => {
                 m(t => {
@@ -140,7 +140,7 @@ let b = e => {
                 let {
                     channelId: n,
                     message: i
-                } = e, l = E.A.getMessage(i.channel_id, i.id);
+                } = e, l = x.A.getMessage(i.channel_id, i.id);
                 if (n === t.id && l?.state === "SENT") {
                     M(l);
                     let e = setTimeout(() => {
@@ -167,7 +167,7 @@ let b = e => {
             onScroll: e => {
                 e.preventDefault(), e.stopPropagation()
             },
-            children: [(0, i.jsx)(x.A, {
+            children: [(0, i.jsx)(E.A, {
                 children: (0, i.jsx)("div", {
                     className: a()(S.TE, {
                         [S.N7]: n

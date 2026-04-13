@@ -39,15 +39,15 @@ function m(e) {
         case u.Uo.FRIEND_REQUESTS_GROUPED:
             let g = c.Ay.getName(o.default.getUser(t.other_users?.[0]?.id)),
                 f = c.Ay.getName(o.default.getUser(t.other_users?.[1]?.id)),
-                x = Math.max((t.other_users?.length ?? 0) - 2, 0);
+                E = Math.max((t.other_users?.length ?? 0) - 2, 0);
             return A.intl.format(A.t.g5xyIC, {
                 user: g,
                 user2: f,
-                count: x
+                count: E
             });
         case u.Uo.MOBILE_NATIVE_UPDATE_AVAILABLE:
-            let E = t.local_id?.split("_").pop() ?? "unknown";
-            return `Update to build ${E} available!`;
+            let x = t.local_id?.split("_").pop() ?? "unknown";
+            return `Update to build ${x} available!`;
         case u.hW.FRIEND_SUGGESTION_CREATED:
             r.A.getRelationshipType(i), h.eA$.PENDING_OUTGOING;
             break;

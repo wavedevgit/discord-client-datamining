@@ -1,22 +1,21 @@
 /** chunk id: 894778 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => f
+    A: () => A
 });
 var i = n(353640),
-    s = n(499867),
+    l = n(499867),
     r = n(121894),
-    l = n(506774),
+    s = n(506774),
     a = n(626584),
     o = n(954571),
     c = n(315290),
-    d = n(652215);
+    _ = n(652215);
 let u = "UserFlowAnalyticsStore_current",
-    h = "UserFlowAnalyticsStore";
+    d = "UserFlowAnalyticsStore";
 
-function _(e) {
+function I(e) {
     if (e === c.do.UNKNOWN) return null;
-    let t = l.w.get(`${h}-${e}`);
+    let t = s.w.get(`${d}-${e}`);
     if (null == t) return null;
     let {
         version: n,
@@ -25,24 +24,24 @@ function _(e) {
     return 1 !== n ? null : i
 }
 new a.A("UserFlowAnalytics");
-let p = (0, i.v)()((0, s.eh)((e, t) => ({
+let p = (0, i.v)()((0, l.eh)((e, t) => ({
     flows: {},
     currentFlow: null,
     activeFlow: () => {
-        let e = t().currentFlow ?? l.w.get(u);
+        let e = t().currentFlow ?? s.w.get(u);
         if (null == e) return null;
         let {
             [e]: n
-        } = t().flows, i = n ?? _(e);
+        } = t().flows, i = n ?? I(e);
         return i?.currentStep != null ? e : null
     }
 })));
 
-function g(e, t) {
+function N(e, t) {
     let {
         [e]: n, ...i
-    } = p.getState().flows, s = n ?? _(e);
-    (s?.currentStep == null || s.currentStep !== t) && (0, r.r)(() => {
+    } = p.getState().flows, l = n ?? I(e);
+    (l?.currentStep == null || l.currentStep !== t) && (0, r.r)(() => {
         p.setState({
             flows: {
                 ...i,
@@ -60,17 +59,17 @@ function g(e, t) {
     })
 }
 
-function m(e, t) {
+function S(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
         i = e;
     e === c.do.ANY && (i = p.getState().activeFlow() ?? c.do.UNKNOWN);
     let {
-        [i]: s, ...l
-    } = p.getState().flows, a = s ?? _(i);
+        [i]: l, ...s
+    } = p.getState().flows, a = l ?? I(i);
     null == a || null == a.currentStep || a.currentStep !== t && (0, r.r)(() => {
         p.setState({
             flows: {
-                ...l,
+                ...s,
                 [i]: {
                     ...a,
                     lastStep: a.currentStep,
@@ -85,18 +84,18 @@ function m(e, t) {
     })
 }
 
-function A() {
+function m() {
     return null != p.getState().activeFlow()
 }
 p.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : void 0, e => {
     if (null != e && (! function(e) {
             if (e.type === c.do.UNKNOWN) return;
-            let t = `${h}-${e.type}`;
-            e.ended ? (l.w.remove(t), l.w.remove(u)) : (l.w.set(`${h}-${e.type}`, {
+            let t = `${d}-${e.type}`;
+            e.ended ? (s.w.remove(t), s.w.remove(u)) : (s.w.set(`${d}-${e.type}`, {
                 ...e,
                 version: 1
-            }), l.w.set(u, e.type))
-        }(e), o.default.track(d.HAw.NUO_TRANSITION, {
+            }), s.w.set(u, e.type))
+        }(e), o.default.track(_.HAw.NUO_TRANSITION, {
             flow_type: e.type,
             from_step: e.lastStep,
             to_step: e.currentStep,
@@ -115,11 +114,11 @@ p.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : void 0, e => {
         })
     }
 });
-let f = {
-    flowStart: g,
+let A = {
+    flowStart: N,
     flowStepOrStart: function(e, t) {
-        A() ? m(e, t) : g(e, t)
+        m() ? S(e, t) : N(e, t)
     },
-    flowStep: m,
-    hasActiveFlow: A
+    flowStep: S,
+    hasActiveFlow: m
 }

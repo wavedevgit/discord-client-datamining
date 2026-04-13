@@ -1,40 +1,40 @@
 /** chunk id: 817533 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => a
+    A: () => l
 });
 var i = n(627968);
 n(64700);
 var r = n(311907),
     s = n(775602),
-    l = n(719018);
+    a = n(719018);
 
-function a(e) {
+function l(e) {
     let {
         guildId: t,
         user: n,
-        className: a
-    } = e, c = (0, r.bG)([s.A], () => !s.A.useReducedMotion), o = n.getAvatarURL(t, 56, c), u = (0, i.jsx)("foreignObject", {
+        className: l
+    } = e, o = (0, r.bG)([s.A], () => !s.A.useReducedMotion), c = n.getAvatarURL(t, 56, o), u = (0, i.jsx)("foreignObject", {
         x: "30",
         y: "68",
         width: "56",
         height: "56",
         transform: "skewX(12)",
         children: (0, i.jsx)("img", {
-            src: o,
-            className: l.dj,
+            src: c,
+            className: a.dj,
             alt: ""
         })
     });
     return (0, i.jsx)("div", {
-        className: a,
+        className: l,
         children: (0, i.jsxs)("svg", {
             width: "128",
             height: "200",
             viewBox: "0 0 128 200",
             fill: "none",
             xmlns: "http://www.w3.org/2000/svg",
-            className: l.JW,
+            className: a.JW,
             children: [(0, i.jsx)("path", {
                 fillRule: "evenodd",
                 clipRule: "evenodd",

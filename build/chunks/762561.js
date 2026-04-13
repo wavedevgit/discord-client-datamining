@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(594832),
     g = n(183555),
     f = n(622543),
-    x = n(950191),
-    E = n(679492),
+    E = n(950191),
+    x = n(679492),
     I = n(657331),
     C = n(718019),
     N = n(915614),
@@ -47,16 +47,16 @@ function H(e) {
         user: t,
         currentUser: n,
         channel: H
-    } = e, F = __OVERLAY__, W = (0, x.Ay)(t.id), K = (0, A.A)(W?.profileFrame?.skuId, "UserProfileSidebar"), Y = (0, d.Ay)(), {
+    } = e, F = __OVERLAY__, W = (0, E.Ay)(t.id), K = (0, A.A)(W?.profileFrame?.skuId, "UserProfileSidebar"), Y = (0, d.Ay)(), {
         analyticsLocations: z
-    } = (0, u.Ay)(c.A.USER_PROFILE_SIDEBAR), q = (0, g.pb)({
+    } = (0, u.Ay)(c.A.USER_PROFILE_SIDEBAR), X = (0, g.pb)({
         layout: "SIDEBAR",
         userId: t.id,
         channelId: H.id
-    }), X = l.useRef(null), {
+    }), q = l.useRef(null), {
         isHoveringOrFocusing: $,
         isHovering: Q
-    } = (0, _.A)(X), J = (0, E.fC)(), Z = (0, o.zhh)({
+    } = (0, _.A)(q), J = (0, x.fC)(), Z = (0, o.zhh)({
         opacity: +(null != J.interactionType),
         config: {
             duration: 150
@@ -65,7 +65,7 @@ function H(e) {
         (0, I.openUserProfileModal)({
             sourceAnalyticsLocations: z,
             hideRestrictedProfile: !0,
-            ...q,
+            ...X,
             ...e
         })
     }, et = W?.widgets != null && W.widgets.length > 0, {
@@ -83,12 +83,12 @@ function H(e) {
     return (0, i.jsx)(u.f5, {
         value: z,
         children: (0, i.jsx)(g.of, {
-            value: q,
+            value: X,
             isLoaded: W?.isLoaded,
-            children: (0, i.jsx)(E.Hl, {
+            children: (0, i.jsx)(x.Hl, {
                 value: J,
                 children: (0, i.jsxs)(y.A, {
-                    ref: X,
+                    ref: q,
                     user: t,
                     displayProfile: W,
                     themeType: w.d.SIDEBAR,
@@ -165,7 +165,7 @@ function H(e) {
                             channelId: H.id
                         })]
                     }), !F && (0, i.jsx)(U.A, {
-                        context: q,
+                        context: X,
                         analyticsLocations: z,
                         profileFrame: K,
                         handleOpenProfile: ee

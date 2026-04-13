@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(714114),
     g = n(864436),
     f = n(835072),
-    x = n(793574),
-    E = n(688810),
+    E = n(793574),
+    x = n(688810),
     I = n(139286),
     C = n(47167),
     N = n(713517),
@@ -56,7 +56,7 @@ function V(e) {
         location: "VoiceInviteSuggestionsPopover"
     }), {
         analyticsLocations: p
-    } = (0, E.Ay)(x.A.VOICE_INVITE_SUGGESTIONS_POPOVER);
+    } = (0, x.Ay)(E.A.VOICE_INVITE_SUGGESTIONS_POPOVER);
     (0, I.A)({
         name: d.ImpressionNames.VOICE_INVITE_SUGGESTIONS_POPOVER,
         type: d.ImpressionTypes.POPOUT,
@@ -129,8 +129,8 @@ function H(e) {
         user: n,
         ringingEnabled: s
     } = e, r = t.guild_id, o = l.useRef(null), d = (0, c.bG)([v.Ay], () => v.Ay.getMember(r, n.id), [r, n.id]), {
-        isHoveringOrFocusing: x
-    } = (0, N.A)(o), [E, I] = l.useState(null), {
+        isHoveringOrFocusing: E
+    } = (0, N.A)(o), [x, I] = l.useState(null), {
         icon: b,
         iconColor: j,
         tooltipText: D,
@@ -159,10 +159,10 @@ function H(e) {
             activityStatusIcon: null == e ? void 0 : (0, f.f)(e)
         }
     }, [K]), {
-        voiceChannel: q
+        voiceChannel: X
     } = (0, p.A)({
         userId: n.id
-    }), X = (0, C.Ay)(q), $ = (0, h.S31)(h.clD.ONLINE), Q = "success" === E || "sending" === E, J = l.useCallback(e => {
+    }), q = (0, C.Ay)(X), $ = (0, h.S31)(h.clD.ONLINE), Q = "success" === x || "sending" === x, J = l.useCallback(e => {
         e.stopPropagation(), k || H()
     }, [H, k]), Z = l.useCallback(async () => {
         if (Q) return;
@@ -199,7 +199,7 @@ function H(e) {
     } = (0, T.A)({
         userId: n.id,
         size: h._3J.SIZE_24,
-        animateOnHover: !x,
+        animateOnHover: !E,
         guildId: r
     });
     if (null == d) return null;
@@ -207,7 +207,7 @@ function H(e) {
         el = G.intl.string(G.t.jYnGPG),
         es = F !== h.clD.OFFLINE ? F : void 0,
         ea = null != Y.text,
-        er = null != q && null != X;
+        er = null != X && null != q;
     return (0, i.jsxs)(h.DUT, {
         innerRef: o,
         tag: "li",
@@ -238,7 +238,7 @@ function H(e) {
                 children: [er ? (0, i.jsx)(S.A, {
                     size: "custom",
                     color: $,
-                    channel: q,
+                    channel: X,
                     className: P.RI
                 }) : null != z ? (0, i.jsx)(g.A, {
                     icon: z,
@@ -247,22 +247,22 @@ function H(e) {
                     variant: "text-xs/medium",
                     color: "text-status-online",
                     lineClamp: 1,
-                    children: er ? X : Y.text
+                    children: er ? q : Y.text
                 })]
             })]
-        }), "sending" === E && (0, i.jsx)("div", {
+        }), "sending" === x && (0, i.jsx)("div", {
             className: P.r$,
             children: (0, i.jsx)(h.nvX, {
                 dotRadius: 2,
                 themed: !0
             })
-        }), "success" === E && (0, i.jsx)(h.Text, {
+        }), "success" === x && (0, i.jsx)(h.Text, {
             variant: "text-xs/medium",
             color: "text-muted",
             className: P.h5,
             lineClamp: 1,
             children: G.intl.string(G.t["8BEiNn"])
-        }), null == E && !s && (0, i.jsx)("div", {
+        }), null == x && !s && (0, i.jsx)("div", {
             className: P.SB,
             children: (0, i.jsx)(h.Rvf, {
                 color: "currentColor",

@@ -1,6 +1,6 @@
 /** chunk id: 788579 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => E
 });
 var i = n(627968),
     l = n(64700),
@@ -18,10 +18,10 @@ var i = n(627968),
     p = n(58736),
     g = n(652215),
     f = n(985018);
-let x = l.memo(function(e) {
+let E = l.memo(function(e) {
     let {
         channel: t
-    } = e, n = (0, c.A)(), s = (0, r.bG)([_.A], () => _.A.isInChannel(t.id)), x = (0, r.bG)([_.A], () => !a().isEmpty(_.A.getVoiceStatesForChannel(t.id))), E = (0, r.bG)([A.A], () => A.A.can(g.xBc.CONNECT, t)), {
+    } = e, n = (0, c.A)(), s = (0, r.bG)([_.A], () => _.A.isInChannel(t.id)), E = (0, r.bG)([_.A], () => !a().isEmpty(_.A.getVoiceStatesForChannel(t.id))), x = (0, r.bG)([A.A], () => A.A.can(g.xBc.CONNECT, t)), {
         needSubscriptionToAccess: I
     } = (0, u.A)(t.id), C = (0, h.Id)(t), N = l.useCallback(() => {
         d.A.handleVoiceConnect({
@@ -38,9 +38,9 @@ let x = l.memo(function(e) {
         location: "63250c_1"
     }, {
         autoTrackExposure: !1
-    }).enabled && !n && !s && E && C && t.isVocalThread()) ? (0, i.jsx)(p.Ay.Icon, {
+    }).enabled && !n && !s && x && C && t.isVocalThread()) ? (0, i.jsx)(p.Ay.Icon, {
         icon: o._jp,
         onClick: N,
-        tooltip: x ? f.intl.string(f.t.fdEeb5) : f.intl.string(f.t.focH1t)
+        tooltip: E ? f.intl.string(f.t.fdEeb5) : f.intl.string(f.t.focH1t)
     }) : null
 })

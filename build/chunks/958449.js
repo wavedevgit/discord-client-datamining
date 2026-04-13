@@ -24,10 +24,10 @@ function o(e) {
     n = d ? c ? r.intl.string(r.t.S5anIc) : r.intl.string(r.t.q3O3J8) : o ? r.intl.string(r.t.fjBNo1) : r.intl.string(r.t.uQn9B8);
     let {
         Component: f,
-        events: x,
-        play: E
+        events: E,
+        play: x
     } = (0, s.c)(d ? "disable" : "enable");
-    return l.useEffect(() => () => E(), [d, E]), (0, i.jsx)(g, {
+    return l.useEffect(() => () => x(), [d, x]), (0, i.jsx)(g, {
         buttonRef: m,
         isTrayButton: !0,
         label: n,
@@ -36,10 +36,10 @@ function o(e) {
         isActive: d,
         color: (_ ? t = "premiumGradient" : d && (t = "green"), t),
         onMouseEnter: e => {
-            h?.(e), x.onMouseEnter()
+            h?.(e), E.onMouseEnter()
         },
         onMouseLeave: e => {
-            A?.(e), x.onMouseLeave()
+            A?.(e), E.onMouseLeave()
         },
         ...p
     })

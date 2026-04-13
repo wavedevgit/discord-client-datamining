@@ -19,8 +19,8 @@ var l = n(311907),
     p = n(834857),
     g = n(451556),
     f = n(74329),
-    x = n(956747),
-    E = n(470743),
+    E = n(956747),
+    x = n(470743),
     I = n(806931),
     C = n(652215),
     N = n(985018);
@@ -35,7 +35,7 @@ function T(e) {
     } = e, y = (0, o.Us)(), {
         id: v,
         type: j
-    } = T, R = (0, l.bG)([c.A], () => c.A.getGuild(T.guild_id), [T.guild_id]), O = (0, l.bG)([u.A], () => u.A.getSelectedParticipant(v)), L = O?.type === I.lp.STREAM ? O.stream : null, M = (0, l.bG)([a.A], () => O?.type === I.lp.ACTIVITY ? a.A.getApplication(O.applicationId) : void 0), D = (0, _.A)(v), U = (0, x.A)(v), G = (0, p.A)(T, R, L?.ownerId, M?.id), P = (0, A.A)(v), k = (0, E.A)(), w = (0, d.RQ)(v), B = (0, d.dA)(v), V = (0, f.A)(L, y), H = (0, g.A)(M, v), F = (0, m.A)(), W = (0, r.A)(T), K = (0, h.f)(v);
+    } = T, R = (0, l.bG)([c.A], () => c.A.getGuild(T.guild_id), [T.guild_id]), O = (0, l.bG)([u.A], () => u.A.getSelectedParticipant(v)), L = O?.type === I.lp.STREAM ? O.stream : null, M = (0, l.bG)([a.A], () => O?.type === I.lp.ACTIVITY ? a.A.getApplication(O.applicationId) : void 0), D = (0, _.A)(v), U = (0, E.A)(v), G = (0, p.A)(T, R, L?.ownerId, M?.id), P = (0, A.A)(v), k = (0, x.A)(), w = (0, d.RQ)(v), B = (0, d.dA)(v), V = (0, f.A)(L, y), H = (0, g.A)(M, v), F = (0, m.A)(), W = (0, r.A)(T), K = (0, h.f)(v);
     return (0, i.jsxs)(s.W1t, {
         "data-menu-migrated": !0,
         onClose: t,

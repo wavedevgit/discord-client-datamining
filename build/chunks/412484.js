@@ -20,8 +20,8 @@ var i = n(627968),
     p = n(954571),
     g = n(203982),
     f = n(723702),
-    x = n(157296),
-    E = n(963702),
+    E = n(157296),
+    x = n(963702),
     I = n(792967),
     C = n(712209),
     N = n(652215),
@@ -29,7 +29,7 @@ var i = n(627968),
     S = n(996863);
 
 function b(e) {
-    var t, n, s, r, x, b;
+    var t, n, s, r, E, b;
     let {
         onJump: v,
         showTutorial: j,
@@ -61,15 +61,15 @@ function b(e) {
         (a.offsetTop < r || a.offsetTop > r + o) && i.scrollTo({
             to: a.offsetTop
         })
-    }), r = M, x = D, l.useEffect(() => {
+    }), r = M, E = D, l.useEffect(() => {
         let e = () => {
             let e = r.channels.find(e => !e.collapsed);
-            null != e && x.markChannelRead(e)
+            null != e && E.markChannelRead(e)
         };
         return g._.subscribe(N.jej.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
             g._.unsubscribe(N.jej.MARK_TOP_INBOX_CHANNEL_READ, e)
         }
-    }, [x, r.channels]), b = D, l.useEffect(() => {
+    }, [E, r.channels]), b = D, l.useEffect(() => {
         let e = e => {
             ((0, f.isMac)() || (0, f.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && b.undoMarkChannelRead()
         };
@@ -86,7 +86,7 @@ function b(e) {
         g._.unsubscribe(N.jej.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
     }));
     let w = (0, m.A)("unreads", L);
-    return 0 === G.length ? (0, i.jsx)(E.A, {
+    return 0 === G.length ? (0, i.jsx)(x.A, {
         Icon: u.K$s,
         header: T.intl.string(T.t["6XMM+D"]),
         tip: o().os?.family === "OS X" ? T.intl.string(T.t.w9uDOW) : T.intl.string(T.t.BiUJC6)
@@ -152,13 +152,13 @@ function y(e) {
 }
 
 function v() {
-    return (0, i.jsx)(E.A, {
+    return (0, i.jsx)(x.A, {
         Icon: u.K$s,
         disableStars: !0,
         header: T.intl.string(T.t["KG/ynf"]),
         tip: T.intl.string(T.t.cvcKzX)
     })
 }
-let j = () => (0, i.jsx)(x.A, {
+let j = () => (0, i.jsx)(E.A, {
     onClick: () => g._.dispatch(N.jej.INBOX_MARK_ALL_UNREADS_READ)
 })

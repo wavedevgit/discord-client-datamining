@@ -19,8 +19,8 @@ var l = n(311907),
     p = n(222823),
     g = n(977997),
     f = n(669715),
-    x = n(893943),
-    E = n(892896),
+    E = n(893943),
+    x = n(892896),
     I = n(246084),
     C = n(436133),
     N = n(884415),
@@ -48,7 +48,7 @@ function v(e) {
         video: (H || F) && null == V,
         selected: n
     }), K = (0, l.bG)([A.A], () => A.A.getNewThreadCount(t.guild_id, t.id)), Y = (0, c.ed)(t.guild_id, t.id), z = (0, l.bG)([_.A], () => _.A.getGuild(t.guild_id)?.features.has(S.GuildFeatures.COMMUNITY) ?? !1);
-    if ((0, E.A)(P)) return (0, i.jsx)(T.A, {
+    if ((0, x.A)(P)) return (0, i.jsx)(T.A, {
         mentionsCount: P,
         isMentionLowImportance: k
     });
@@ -71,9 +71,9 @@ function v(e) {
         color: "text-muted",
         children: (0, a.Gub)(Y)
     });
-    let q = j?.length ?? 0;
+    let X = j?.length ?? 0;
     return null != R && R && W ? (0, i.jsx)(N.A, {
-        userCount: q,
+        userCount: X,
         video: H || F,
         channel: t
     }) : v && (0, f.t)(j) && z ? (0, i.jsx)(a.LpS, {
@@ -84,7 +84,7 @@ function v(e) {
         entry: {
             start: V
         }
-    }) : null != O && O && (0, x.X)(w) ? (0, i.jsx)(C.A, {
+    }) : null != O && O && (0, E.X)(w) ? (0, i.jsx)(C.A, {
         embeddedApps: w,
         muted: U
     }) : null

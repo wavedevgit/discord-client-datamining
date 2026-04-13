@@ -26,9 +26,9 @@ function A(t) {
         getSurveyResponses: A,
         setResponse: I,
         trackDisplayedQuestions: N
-    } = (0, c.i)(), R = A(e), p = (0, u.i)(n), [h, O] = l.useState(p.blockId), [m, C] = l.useState(p.pageIndex), [g, S] = l.useState(!1), y = (t, n) => {
+    } = (0, c.i)(), R = A(e), p = (0, u.i)(n), [O, h] = l.useState(p.blockId), [C, m] = l.useState(p.pageIndex), [g, S] = l.useState(!1), y = (t, n) => {
         I(e, t, n)
-    }, P = l.useCallback(() => (g ? s() : (0, a.qfG)(t => (0, i.jsx)(r.Modal, {
+    }, M = l.useCallback(() => (g ? s() : (0, a.qfG)(t => (0, i.jsx)(r.Modal, {
         title: _.intl.string(_.t.T9Sx3z),
         actions: [{
             variant: "secondary",
@@ -46,25 +46,25 @@ function A(t) {
             variant: "text-md/normal",
             children: _.intl.string(_.t.iCK6G0)
         })
-    })), Promise.resolve()), [s, g]), M = l.useMemo(() => null == h ? [] : (0, u.uy)(n, {
-        blockId: h,
-        pageIndex: m,
+    })), Promise.resolve()), [s, g]), P = l.useMemo(() => null == O ? [] : (0, u.uy)(n, {
+        blockId: O,
+        pageIndex: C,
         responses: R
-    }), [n, h, m, R]), U = l.useCallback(() => {
-        if (null == n || null == h) return;
+    }), [n, O, C, R]), x = l.useCallback(() => {
+        if (null == n || null == O) return;
         let t = (0, u.vt)(n, {
-            blockId: h,
-            pageIndex: m,
+            blockId: O,
+            pageIndex: C,
             responses: R
         });
-        N(e, M), t.isComplete && o.Ay.submitSurveyResponse(e, R), O(t.blockId), C(t.pageIndex), S(t.isComplete)
-    }, [n, h, m, R, e, M, N]);
+        N(e, P), t.isComplete && o.Ay.submitSurveyResponse(e, R), h(t.blockId), m(t.pageIndex), S(t.isComplete)
+    }, [n, O, C, R, e, P, N]);
     l.useEffect(() => {
-        0 === M.length && U()
-    }, [M, U]);
-    let x = l.useMemo(() => {
+        0 === P.length && x()
+    }, [P, x]);
+    let D = l.useMemo(() => {
         if (g) return !1;
-        for (let t of M) {
+        for (let t of P) {
             let e = n.Questions[t];
             if (e?.Validation?.Settings?.ForceResponse === "ON") {
                 let e = R[t];
@@ -72,7 +72,7 @@ function A(t) {
             }
         }
         return !0
-    }, [g, M, n, R]);
+    }, [g, P, n, R]);
     return g ? (0, i.jsxs)(r.Modal, {
         transitionState: d,
         onClose: s,
@@ -92,22 +92,22 @@ function A(t) {
         })]
     }) : (0, i.jsx)(r.Modal, {
         transitionState: d,
-        onClose: P,
+        onClose: M,
         title: _.intl.string(_.t.OSqLUF),
         size: "md",
         actions: [{
             variant: "primary",
             text: _.intl.string(_.t.PDTjLN),
-            onClick: U,
-            disabled: !x
+            onClick: x,
+            disabled: !D
         }],
         children: (0, i.jsx)("div", {
             style: {
                 width: "100%"
             },
-            children: 0 === M.length ? null : (0, i.jsx)("div", {
+            children: 0 === P.length ? null : (0, i.jsx)("div", {
                 className: T.Qs,
-                children: M.map(t => {
+                children: P.map(t => {
                     let e = n.Questions[t];
                     return null == e ? null : (0, i.jsx)(E.A, {
                         question: e,

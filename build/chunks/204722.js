@@ -19,8 +19,8 @@ var i = n(627968),
     p = n(869003),
     g = n(521588),
     f = n(688810),
-    x = n(362490),
-    E = n(384059),
+    E = n(362490),
+    x = n(384059),
     I = n(359348),
     C = n(932001),
     N = n(625180),
@@ -43,7 +43,7 @@ var i = n(627968),
     B = n(652215),
     V = n(49999),
     H = n(985018),
-    F = n(294726),
+    F = n(799435),
     W = n(868509);
 
 function K(e, t, n) {
@@ -83,19 +83,19 @@ let Y = l.memo(function(e) {
                 action_type: "invite_to_game",
                 game_id: g?.id ?? null,
                 application_id: M.application_id
-            }), (0, E.X)(en, E.O.INVITE), k.default.track(B.HAw.OPEN_MODAL, {
+            }), (0, x.X)(en, x.O.INVITE), k.default.track(B.HAw.OPEN_MODAL, {
                 type: "Send Join Invite",
                 application_id: M.application_id,
                 location: Y.location
             }), (0, h.qf)(M, !1)
         }, [M, Y, en, g]), em = l.useCallback((e, t) => () => {
-            (0, E.X)(en, E.O.LEAVE_ACTIVITY), p.A.leaveActivity({
+            (0, x.X)(en, x.O.LEAVE_ACTIVITY), p.A.leaveActivity({
                 location: t,
                 applicationId: e,
                 showFeedback: !0
             })
         }, [en]), ep = l.useCallback(e => () => {
-            (0, E.X)(en, E.O.LEAVE_ACTIVITY), N.A.stopFrame({
+            (0, x.X)(en, x.O.LEAVE_ACTIVITY), N.A.stopFrame({
                 applicationId: e
             })
         }, [en]), eg = l.useCallback(() => {
@@ -112,7 +112,7 @@ let Y = l.memo(function(e) {
                     analyticsLocations: ei
                 })
             })
-        }, [g, ei]), ex = D?.name ?? g?.name ?? "", eE = l.useCallback(() => {
+        }, [g, ei]), eE = D?.name ?? g?.name ?? "", ex = l.useCallback(() => {
             (0, b.pK)({
                 gameApplicationId: g?.id,
                 buttonVariant: "admin"
@@ -121,12 +121,12 @@ let Y = l.memo(function(e) {
                     default: e
                 } = await n.e("74132").then(n.bind(n, 279871));
                 return t => (0, i.jsx)(e, {
-                    gameName: ex,
+                    gameName: eE,
                     gameApplicationId: g?.id,
                     ...t
                 })
             })
-        }, [ex, g?.id]), eI = l.useCallback(() => {
+        }, [eE, g?.id]), eI = l.useCallback(() => {
             a()(null != r, "Received null guildId"), (0, b.pK)({
                 gameApplicationId: g?.id,
                 buttonVariant: "member"
@@ -141,15 +141,15 @@ let Y = l.memo(function(e) {
         }, []), l.useEffect(() => {
             ee && (eT(!1), null != eC.current && (clearTimeout(eC.current), eC.current = null))
         }, [ee]);
-        let eS = el?.guildId == null || null == D ? null : (0, i.jsx)(X, {
+        let eS = el?.guildId == null || null == D ? null : (0, i.jsx)(q, {
                 guildId: el.guildId,
                 applicationId: el.id
             }),
-            eb = eh ? (0, i.jsx)(q, {
+            eb = eh ? (0, i.jsx)(X, {
                 tooltipText: H.intl.formatToPlainString(F.default.YhnUVO, {
-                    gameName: ex
+                    gameName: eE
                 }),
-                onClick: eE,
+                onClick: ex,
                 onViewed: () => (0, b.ET)({
                     gameApplicationId: g?.id,
                     buttonVariant: "admin"
@@ -161,18 +161,18 @@ let Y = l.memo(function(e) {
                         markBadgeAsDismissed: l
                     } = e;
                     return (0, i.jsx)(R.C, {
-                        gameName: ex,
+                        gameName: eE,
                         runningGameId: g?.id,
                         targetElementRef: t,
                         onClick: () => {
-                            eE(), n(V.i.TAKE_ACTION), l(V.i.TAKE_ACTION)
+                            ex(), n(V.i.TAKE_ACTION), l(V.i.TAKE_ACTION)
                         },
                         onClose: () => n(V.i.USER_DISMISS)
                     })
                 }
-            }) : eA ? (0, i.jsx)(q, {
+            }) : eA ? (0, i.jsx)(X, {
                 tooltipText: H.intl.formatToPlainString(F.default.lwwiHE, {
-                    gameName: ex
+                    gameName: eE
                 }),
                 onClick: eI,
                 onViewed: () => (0, b.ET)({
@@ -186,7 +186,7 @@ let Y = l.memo(function(e) {
                         markBadgeAsDismissed: l
                     } = e;
                     return (0, i.jsx)(R.D, {
-                        gameName: ex,
+                        gameName: eE,
                         runningGameId: g?.id,
                         targetElementRef: t,
                         onClick: () => {
@@ -201,9 +201,9 @@ let Y = l.memo(function(e) {
                 if (null == g && null != C && !(0, _.f)() || !d && !s) return null;
                 let l = null;
                 return d ? (e = !1, t = () => {
-                    eg(), (0, E.X)(en, E.O.STREAM, !1)
+                    eg(), (0, x.X)(en, x.O.STREAM, !1)
                 }, n = u.GT3, l = H.intl.string(H.t.S5anIc)) : m ? (e = !1, t = () => {
-                    ef(), (0, E.X)(en, E.O.STREAM, !0)
+                    ef(), (0, x.X)(en, x.O.STREAM, !0)
                 }, n = u.Fzq, l = null != g ? H.intl.formatToPlainString(H.t.AB5gTy, {
                     game: g.name
                 }) : H.intl.string(H.t.FeUKeA)) : (e = !0, t = null, n = u.Fzq, null != A && (0, U.gV)(A.type) && (l = H.intl.string(H.t.uQn9B8))), (0, i.jsx)("div", {
@@ -238,7 +238,7 @@ let Y = l.memo(function(e) {
                 startAuthorization: () => {
                     J({
                         analyticsLocations: ei
-                    }) === x._M.RPC && (eT(!0), null != eC.current && clearTimeout(eC.current), eC.current = setTimeout(() => {
+                    }) === E._M.RPC && (eT(!0), null != eC.current && clearTimeout(eC.current), eC.current = setTimeout(() => {
                         eT(!1)
                     }, 9e4))
                 },
@@ -284,7 +284,7 @@ let Y = l.memo(function(e) {
         })
     });
 
-function q(e) {
+function X(e) {
     let {
         tooltipText: t,
         onClick: n,
@@ -300,10 +300,10 @@ function q(e) {
             hasLoadedQuestBar: _
         } = (0, O.c9)(),
         [m, p] = (0, C.kn)(!c && h && _ ? [d.M.GAME_DETECTION_CREATE_GAME_SERVER_COACHMARK] : [], void 0, !0),
-        [f, x] = (0, C.kn)([d.M.GAME_SERVER_GAME_DETECTION_UPSELL_NEW_BADGE], void 0, !0),
-        E = l.useCallback(() => {
-            p(V.i.TAKE_ACTION), x(V.i.TAKE_ACTION), n()
-        }, [p, x, n]);
+        [f, E] = (0, C.kn)([d.M.GAME_SERVER_GAME_DETECTION_UPSELL_NEW_BADGE], void 0, !0),
+        x = l.useCallback(() => {
+            p(V.i.TAKE_ACTION), E(V.i.TAKE_ACTION), n()
+        }, [p, E, n]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
             className: W.IF,
@@ -315,7 +315,7 @@ function q(e) {
             }), (0, i.jsx)(w.A, {
                 ref: r,
                 tooltipText: t,
-                onClick: E,
+                onClick: x,
                 icon: u._xR
             }), f === d.M.GAME_SERVER_GAME_DETECTION_UPSELL_NEW_BADGE && (0, i.jsx)(g.a, {
                 top: 2,
@@ -325,12 +325,12 @@ function q(e) {
         }), null != m && a({
             targetElementRef: r,
             markAsDismissed: p,
-            markBadgeAsDismissed: x
+            markBadgeAsDismissed: E
         })]
     })
 }
 
-function X(e) {
+function q(e) {
     let {
         applicationId: t,
         guildId: n

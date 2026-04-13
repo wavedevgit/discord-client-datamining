@@ -15,8 +15,8 @@ var a = n(627968),
     _ = n(654107),
     m = n(871751),
     h = n(133296),
-    p = n(848752),
-    b = n(452282),
+    b = n(848752),
+    p = n(452282),
     f = n(619517),
     g = n(652176),
     C = n(203982),
@@ -156,8 +156,8 @@ let k = (0, u.A)(e => {
         let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
         O(!1), L(t);
         let n = j.current,
-            a = (0, b.U3)(I.current, n),
-            l = (0, b.U3)(e, n);
+            a = (0, p.U3)(I.current, n),
+            l = (0, p.U3)(e, n);
         I.current = l, E(l), _.current++, f(_.current), y(1 === Math.abs(l - a) || l === n - 1 && 0 === a || 0 === l && a === n - 1)
     }, []), H = (0, l.useCallback)(() => {
         F(I.current + 1, !1)
@@ -183,7 +183,7 @@ let k = (0, u.A)(e => {
         },
         setHasInteracted: L
     }), [F, u]), J = (0, l.useCallback)((e, n, l) => {
-        let i = n === (0, b.U3)(g, t.length);
+        let i = n === (0, p.U3)(g, t.length);
         return (0, a.jsx)(d.A.div, {
             className: o()(T.AS, {
                 [T.Xt]: i
@@ -203,7 +203,7 @@ let k = (0, u.A)(e => {
             }, m) : $(e, n, i)
         })
     }, [g, t.length, M, V, X, Y, q, F, $, c, u, m]), z = (0, l.useCallback)(() => {
-        let e = (0, a.jsx)(b.Ay, {
+        let e = (0, a.jsx)(p.Ay, {
             className: T.Dk,
             items: t,
             itemSize: {
@@ -217,12 +217,12 @@ let k = (0, u.A)(e => {
         });
         return t.length <= 1 ? e : (0, a.jsxs)("div", {
             className: T.HY,
-            children: [e, (0, a.jsx)(p.Q8, {
+            children: [e, (0, a.jsx)(b.Q8, {
                 onClick: W,
                 className: o()(T.UE, {
                     [T.h_]: P
                 })
-            }), (0, a.jsx)(p.Oj, {
+            }), (0, a.jsx)(b.Oj, {
                 onClick: G,
                 className: o()(T.UE, {
                     [T.h_]: B
@@ -259,14 +259,14 @@ let k = (0, u.A)(e => {
         disable: R || U || i,
         children: [z(), (0, a.jsx)("div", {
             className: T.X$,
-            children: (0, a.jsx)(p.Ay, {
+            children: (0, a.jsx)(b.Ay, {
                 renderItem: K,
                 scrollToPadding: 40,
                 items: t,
                 selectedIndex: g,
                 onSetItem: Q,
                 paginationContainerClass: T.XG,
-                align: p.Ay.Align.CENTER
+                align: b.Ay.Align.CENTER
             })
         })]
     })

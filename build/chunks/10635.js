@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(718019),
     g = n(31432),
     f = n(915614),
-    x = n(389996),
-    E = n(743987),
+    E = n(389996),
+    x = n(743987),
     I = n(900179),
     C = n(946356),
     N = n(810396),
@@ -98,7 +98,7 @@ function O(e) {
                             children: [(0, i.jsx)(I.A, {
                                 heading: v.intl.string(v.t.ZzAR2Y),
                                 headingColor: "text-strong",
-                                children: (0, i.jsx)(x.A, {
+                                children: (0, i.jsx)(E.A, {
                                     userBio: L?.bio,
                                     userId: t.id,
                                     animateOnHoverOrFocusOnly: !0,
@@ -107,7 +107,7 @@ function O(e) {
                             }), (0, i.jsx)(I.A, {
                                 heading: v.intl.string(v.t["A//N4k"]),
                                 headingColor: "text-strong",
-                                children: (0, i.jsx)(E.A, {
+                                children: (0, i.jsx)(x.A, {
                                     userId: t.id
                                 })
                             })]

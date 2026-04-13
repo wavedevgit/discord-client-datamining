@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(65611),
     g = n(855725),
     f = n(532794),
-    x = n(366811),
-    E = n(345942),
+    E = n(366811),
+    x = n(345942),
     I = n(616356),
     C = n(734057),
     N = n(309010),
@@ -37,7 +37,7 @@ var i = n(627968),
     U = n(97483),
     G = n(49999),
     P = n(788868),
-    k = n(665606),
+    k = n(415303),
     w = n(985018),
     B = n(414839),
     V = n(988572);
@@ -50,7 +50,7 @@ let H = {
 };
 
 function F(e) {
-    let t, F, W, K, Y, z, q, X, $, Q, J, Z, {
+    let t, F, W, K, Y, z, X, q, $, Q, J, Z, {
             shouldShowIntroPopover: ee,
             markIntroPopoverAsDismissed: et
         } = e,
@@ -76,22 +76,22 @@ function F(e) {
         })),
         eA = (0, a.bG)([N.A], () => N.A.getChannelId(D.YYv)),
         e_ = (0, a.bG)([C.A], () => C.A.getChannel(eA)),
-        em = (0, x.A)(e => e.guildId),
+        em = (0, E.A)(e => e.guildId),
         ep = (0, R.ai)(em),
         {
             badge: eg,
             unread: ef
         } = (0, O.A)(eh),
-        ex = (F = null != (t = (0, a.bG)([N.A], () => N.A.getVoiceChannelId())) && null != eh[t], W = (0, a.bG)([I.A], () => {
+        eE = (F = null != (t = (0, a.bG)([N.A], () => N.A.getVoiceChannelId())) && null != eh[t], W = (0, a.bG)([I.A], () => {
             if (!F) return !1;
             let e = I.A.getCurrentUserActiveStream();
             return null != e && null != eh[e.channelId]
-        }), K = (0, a.bG)([I.A], () => I.A.getAllApplicationStreams().some(e => null != eh[e.channelId])), Y = (0, a.bG)([T.A], () => F && null != t && T.A.hasVideo(t), [F, t]), z = (0, a.yK)([c.Ay], () => S.default.keys(eh).reduce((e, t) => (e.push(...c.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), q = (0, a.bG)([c.Ay], () => Array.from(c.Ay.getSelfEmbeddedActivities().values()).some(e => {
+        }), K = (0, a.bG)([I.A], () => I.A.getAllApplicationStreams().some(e => null != eh[e.channelId])), Y = (0, a.bG)([T.A], () => F && null != t && T.A.hasVideo(t), [F, t]), z = (0, a.yK)([c.Ay], () => S.default.keys(eh).reduce((e, t) => (e.push(...c.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), X = (0, a.bG)([c.Ay], () => Array.from(c.Ay.getSelfEmbeddedActivities().values()).some(e => {
             let {
                 location: t
             } = e, n = (0, u.H)(t);
             return null != n && null != eh[n]
-        })), X = z.length > 0, $ = !1, Q = !1, J = !1, Z = !1, F ? ($ = !Y, Q = Y, J = W, Z = q) : (J = K, Z = X), (0, p.oi)({
+        })), q = z.length > 0, $ = !1, Q = !1, J = !1, Z = !1, F ? ($ = !Y, Q = Y, J = W, Z = X) : (J = K, Z = q), (0, p.oi)({
             audio: $,
             video: Q,
             screenshare: J,
@@ -99,7 +99,7 @@ function F(e) {
             isCurrentUserConnected: F,
             activity: Z
         })),
-        eE = eg > 0 ? (0, g.w)(eg) : null,
+        ex = eg > 0 ? (0, g.w)(eg) : null,
         eI = l.useRef(!1),
         {
             hasAccess: eC
@@ -108,7 +108,7 @@ function F(e) {
             eI.current = !0, et(e, t)
         }, [et]),
         eT = l.useCallback(e => {
-            e && ((0, v.mv)("intro_dc"), (0, E.u)(D.YYv)), eC ? (ec || (0, y.tV)(!0, "favorites_button_onboarding"), e && (0, o.mMO)(async () => {
+            e && ((0, v.mv)("intro_dc"), (0, x.u)(D.YYv)), eC ? (ec || (0, y.tV)(!0, "favorites_button_onboarding"), e && (0, o.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("59839").then(n.bind(n, 889186));
@@ -144,8 +144,8 @@ function F(e) {
         }), (0, i.jsx)(M.A, {
             children: (0, i.jsx)(o.Qk9, {
                 selected: !0,
-                upperBadge: ex,
-                lowerBadge: eE,
+                upperBadge: eE,
+                lowerBadge: ex,
                 children: (0, i.jsx)("div", {
                     ref: es,
                     children: (0, i.jsx)(o.jlP, {

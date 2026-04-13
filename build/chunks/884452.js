@@ -58,15 +58,15 @@ let g = l.memo(function(e) {
         guildChannelsVersion: p,
         selectedChannelId: g,
         disableManageChannels: f
-    } = e, x = l.useCallback(() => {
+    } = e, E = l.useCallback(() => {
         let e = m.getCategoryFromSection(m.recentsSectionNumber);
         if (null == e) return;
         let t = null,
             i = e.getShownChannelAndThreadIds();
         null != g && i.includes(g) && (t = (0, a.xb)(m)), (0, a.DD)(n.id, i, t)
     }, [n.id, g, m, p]), {
-        density: E
-    } = (0, s.wRf)(), I = "compact" === E ? 8 : 12;
+        density: x
+    } = (0, s.wRf)(), I = "compact" === x ? 8 : 12;
     switch (t) {
         case d.PU:
             return (0, i.jsx)("div", {
@@ -88,7 +88,7 @@ let g = l.memo(function(e) {
         case m.recentsSectionNumber:
             return (0, i.jsx)(c.P4, {
                 name: A.intl.string(A.t.gKcrqM),
-                onDismiss: x
+                onDismiss: E
             });
         case m.voiceChannelsSectionNumber: {
             let e = m.getCategoryFromSection(m.voiceChannelsSectionNumber);

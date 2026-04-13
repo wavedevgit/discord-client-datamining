@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(355622),
     g = n(58736),
     f = n(353428),
-    x = n(378570),
-    E = n(734057),
+    E = n(378570),
+    x = n(734057),
     I = n(31717),
     C = n(71393),
     N = n(977997),
@@ -36,14 +36,14 @@ function j(e) {
             baseChannelId: R,
             channelViewSource: O = "Split View"
         } = e,
-        L = (0, r.bG)([E.A], () => E.A.getChannel(j)),
+        L = (0, r.bG)([x.A], () => x.A.getChannel(j)),
         M = (0, r.bG)([C.A], () => C.A.getGuild(L?.getGuildId())),
         D = (0, _.Ay)(L);
     t = L, s = (0, r.bG)([N.A], () => null != t && !a().isEmpty(N.A.getVoiceStatesForChannel(t.id))), l.useEffect(() => {
         s && null != t && (o.h.dispatch({
             type: "SIDEBAR_CLOSE",
             baseChannelId: t.parent_id
-        }), (0, x.N9)(t, {
+        }), (0, E.N9)(t, {
             source: S.H9.VOICE_AUTO_OPEN
         }))
     }, [s, t]);
@@ -51,7 +51,7 @@ function j(e) {
     if (l.useEffect(() => {
             if (null == L || U.current) return;
             U.current = !0;
-            let e = (0, h.C)(E.A.getChannel(L.id), !0);
+            let e = (0, h.C)(x.A.getChannel(L.id), !0);
             (0, u.zV)(b.HAw.CHANNEL_OPENED, {
                 ...e,
                 ...(0, u.qL)(L.id),
@@ -88,7 +88,7 @@ function j(e) {
                     })
                 },
                 handleClick: function() {
-                    null != L && (0, x.iN)(L.id)
+                    null != L && (0, E.iN)(L.id)
                 }
             })
         }), (0, i.jsx)("div", {

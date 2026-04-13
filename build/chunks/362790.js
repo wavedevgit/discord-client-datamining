@@ -6,15 +6,15 @@ n.d(t, {
 var i = n(311907),
     r = n(73153),
     s = n(927813),
-    l = n(661191),
-    a = n(961350),
-    c = n(994500);
-let o = 180 * s.A.Millis.DAY,
+    a = n(661191),
+    l = n(961350),
+    o = n(994500);
+let c = 180 * s.A.Millis.DAY,
     u = !1;
 class d extends i.Ay.Store {
     static displayName = "PremiumPromoStore";
     initialize() {
-        this.waitFor(c.A, a.default)
+        this.waitFor(o.A, l.default)
     }
     isEligible() {
         return u
@@ -22,6 +22,6 @@ class d extends i.Ay.Store {
 }
 let _ = new d(r.h, {
     CONNECTION_OPEN: function() {
-        return u !== (u = c.A.getFriendIDs().length >= 10 && l.default.extractTimestamp(a.default.getId()) < Date.now() - o)
+        return u !== (u = o.A.getFriendIDs().length >= 10 && a.default.extractTimestamp(l.default.getId()) < Date.now() - c)
     }
 })

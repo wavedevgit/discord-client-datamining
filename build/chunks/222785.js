@@ -38,7 +38,7 @@ var t = n(627968),
     w = n(652215),
     S = n(349828),
     k = n(985018),
-    H = n(583970);
+    H = n(577957);
 let X = l.memo(function(e) {
     let {
         guild: i,

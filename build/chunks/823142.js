@@ -22,8 +22,8 @@ var i = n(627968),
     p = n(47167),
     g = n(485947),
     f = n(924985),
-    x = n(71393),
-    E = n(576705),
+    E = n(71393),
+    x = n(576705),
     I = n(543465),
     C = n(551851),
     N = n(879124),
@@ -47,7 +47,7 @@ let v = l.memo(function(e) {
             } = e,
             O = (0, o.bG)([I.Ay], () => I.Ay.isChannelMuted(s.getGuildId(), s.id)),
             L = (0, o.bG)([f.A], () => f.A.isCollapsed(s.id)),
-            M = (0, o.bG)([E.A], () => E.A.can(T.xBc.MANAGE_CHANNELS, s)),
+            M = (0, o.bG)([x.A], () => x.A.can(T.xBc.MANAGE_CHANNELS, s)),
             D = (0, p.Ay)(s);
         t = null != v ? N > v ? b.mU : b.TR : b.fx;
         let U = l.useCallback(() => {
@@ -55,7 +55,7 @@ let v = l.memo(function(e) {
             }, [s.id, L]),
             G = l.useCallback(e => {
                 if ("null" !== s.id) {
-                    let t = x.A.getGuild(s.getGuildId());
+                    let t = E.A.getGuild(s.getGuildId());
                     null != t && (0, _.L3)(e, async () => {
                         let {
                             default: e

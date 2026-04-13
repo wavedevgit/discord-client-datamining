@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(616356),
     g = n(994500),
     f = n(543465),
-    x = n(287809),
-    E = n(607567),
+    E = n(287809),
+    x = n(607567),
     I = n(145408),
     C = n(985018),
     N = n(826427);
@@ -66,11 +66,11 @@ function b(e) {
             activityUsers: M,
             streamUsers: D,
             voiceUsers: U
-        } = (t = O.id, n = (0, r.yK)([g.A], () => g.A.getBlockedOrIgnoredIDs()), s = (0, r.bG)([_.A], () => _.A.getUserAffinitiesMap(), []), o = (0, r.yK)([c.Ay, x.default], () => c.Ay.getEmbeddedActivitiesForChannel(t).flatMap(e => Array.from(e.userIds)).map(e => x.default.getUser(e)), [t]), u = l.useMemo(() => (0, h.aw)(o, n), [o, n]), A = l.useMemo(() => (0, m.L)(u, s, "DirectMessageTooltip - activityUsers"), [u, s]), I = (0, r.yK)([p.A, x.default], () => {
-            let e = p.A.getAllApplicationStreamsForChannel(t).map(e => e.ownerId).map(e => x.default.getUser(e));
+        } = (t = O.id, n = (0, r.yK)([g.A], () => g.A.getBlockedOrIgnoredIDs()), s = (0, r.bG)([_.A], () => _.A.getUserAffinitiesMap(), []), o = (0, r.yK)([c.Ay, E.default], () => c.Ay.getEmbeddedActivitiesForChannel(t).flatMap(e => Array.from(e.userIds)).map(e => E.default.getUser(e)), [t]), u = l.useMemo(() => (0, h.aw)(o, n), [o, n]), A = l.useMemo(() => (0, m.L)(u, s, "DirectMessageTooltip - activityUsers"), [u, s]), I = (0, r.yK)([p.A, E.default], () => {
+            let e = p.A.getAllApplicationStreamsForChannel(t).map(e => e.ownerId).map(e => E.default.getUser(e));
             return (0, h.aw)(e, n)
-        }, [t, n]), C = l.useMemo(() => (0, h.aw)(I, n), [I, n]), b = l.useMemo(() => (0, m.L)(C, s, "DirectMessageTooltip - activityUsers"), [C, s]), y = l.useMemo(() => b.filter(e => !A.some(t => t.id === e.id)), [b, A]), v = (0, r.yK)([E.Ay], () => {
-            let e = E.Ay.getVoiceStatesForChannel(O).map(e => {
+        }, [t, n]), C = l.useMemo(() => (0, h.aw)(I, n), [I, n]), b = l.useMemo(() => (0, m.L)(C, s, "DirectMessageTooltip - activityUsers"), [C, s]), y = l.useMemo(() => b.filter(e => !A.some(t => t.id === e.id)), [b, A]), v = (0, r.yK)([x.Ay], () => {
+            let e = x.Ay.getVoiceStatesForChannel(O).map(e => {
                 let {
                     user: t
                 } = e;

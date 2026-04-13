@@ -19,8 +19,8 @@ var i = n(627968),
     p = n(763754),
     g = n(448368),
     f = n(378058),
-    x = n(148355),
-    E = n(320501),
+    E = n(148355),
+    x = n(320501),
     I = n(994500),
     C = n(486020),
     N = n(927813),
@@ -39,7 +39,7 @@ function j(e) {
     } = (0, d.cf)([I.A], () => ({
         isBlocked: I.A.isBlockedForMessage(t),
         isIgnored: I.A.isIgnoredForMessage(t)
-    }), [t]), r = (0, p.X4)(t), o = l.useContext(_.A), [u, E] = l.useState(!1), N = l.useCallback(e => {
+    }), [t]), r = (0, p.X4)(t), o = l.useContext(_.A), [u, x] = l.useState(!1), N = l.useCallback(e => {
         "A" !== e.target.nodeName && (h.A.updateChatOpen(t.channel_id, !0), A.A.jumpToMessage({
             channelId: t.channel_id,
             messageId: t.id,
@@ -56,7 +56,7 @@ function j(e) {
         trailingIconClass: y.sl,
         leadingIconClass: y.aG,
         iconSize: b.eJ
-    }), O = (0, f.o6)(t), L = O.length > 0 ? O.map(e => (0, i.jsx)(x.A, {
+    }), O = (0, f.o6)(t), L = O.length > 0 ? O.map(e => (0, i.jsx)(E.A, {
         className: y.yI,
         size: 128,
         sticker: e,
@@ -65,10 +65,10 @@ function j(e) {
     return (0, i.jsxs)(c.DUT, {
         className: y.oR,
         onMouseEnter: () => {
-            E(!0)
+            x(!0)
         },
         onMouseLeave: () => {
-            E(!1)
+            x(!1)
         },
         onClick: N,
         children: [(0, i.jsxs)("div", {
@@ -129,7 +129,7 @@ function R(e) {
         let m = h.current ?? a;
         return {
             toastsHidden: o,
-            toastMessages: (0, d.yK)([E.A], () => m.map(e => E.A.getMessage(t, e)), [t, m]).filter(T.Vq)
+            toastMessages: (0, d.yK)([x.A], () => m.map(e => x.A.getMessage(t, e)), [t, m]).filter(T.Vq)
         }
     }({
         channelId: t,
@@ -138,16 +138,16 @@ function R(e) {
         lingerMs: v
     }), m = l.useRef({}), [p, g] = l.useState({}), f = l.useCallback((e, t) => {
         null == t ? delete m.current[e] : m.current[e] = t
-    }, []), x = l.useRef(p);
+    }, []), E = l.useRef(p);
     l.useLayoutEffect(() => {
-        x.current = p
+        E.current = p
     }), l.useLayoutEffect(() => {
         let e = {},
             t = 0;
         for (let n of _) {
             let i = m.current[n.id] ?? 0;
             e[n.id] = t, t += i + 8
-        }(0, r.isEqual)(e, x.current) || g(e)
+        }(0, r.isEqual)(e, E.current) || g(e)
     }, [_]);
     let I = _.map(e => ({
             message: e,

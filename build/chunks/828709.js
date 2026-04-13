@@ -31,14 +31,14 @@ function A(e) {
         onDragStart: f,
         onDragComplete: j,
         onDragReset: N
-    } = e, E = null, C = a().findIndex(s.options, e => e.id === A.id), {
-        drag: T,
+    } = e, E = null, T = a().findIndex(s.options, e => e.id === A.id), {
+        drag: C,
         dragSourcePosition: I,
         drop: b,
         setIsDraggable: v
     } = (0, c.A)({
         type: `ONBOARDING_PROMPT_OPTION_CARD-${s.id}`,
-        index: C,
+        index: T,
         optionId: A.id,
         onDragStart: f,
         onDragComplete: j,
@@ -50,8 +50,8 @@ function A(e) {
     return (0, x.hv)(A.emoji) || null != S || null != y || (E = h.intl.string(h.t["61wfmh"])), (0, i.jsxs)(o.DUT, {
         className: l()(_.we, {
             [_.JD]: p || null != E,
-            [_.A]: null != I && C < I,
-            [_.Ze]: null != I && C > I,
+            [_.A]: null != I && T < I,
+            [_.Ze]: null != I && T > I,
             [_.h7]: r
         }),
         onClick: () => (0, o.mMO)(async () => {
@@ -79,7 +79,7 @@ function A(e) {
         onMouseEnter: () => v(!0),
         onMouseLeave: () => v(!1),
         innerRef: e => {
-            T(b(e))
+            C(b(e))
         },
         children: [(0, i.jsx)("div", {
             className: _.cK,

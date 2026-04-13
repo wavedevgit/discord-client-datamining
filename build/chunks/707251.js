@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(689874),
     g = n(509536),
     f = n(58736),
-    x = n(742589),
-    E = n(977851),
+    E = n(742589),
+    x = n(977851),
     I = n(71393),
     C = n(576705),
     N = n(954571),
@@ -63,7 +63,7 @@ function U(e) {
             className: a()(D.x6, {
                 [D.vc]: l
             }),
-            children: (0, i.jsx)(E.V, {
+            children: (0, i.jsx)(x.V, {
                 channelId: t.id,
                 showRequestToSpeakSidebar: l,
                 toggleRequestToSpeakSidebar: n,
@@ -78,7 +78,7 @@ function G(e) {
         channel: t,
         toggleRequestToSpeakSidebar: n,
         showRequestToSpeakSidebar: s
-    } = e, u = (0, m.Ay)(t), h = (0, r.bG)([v.A], () => v.A.getStageInstanceByChannel(t.id)), A = (0, T.uy)(t.id), _ = (0, T.zy)(t.id, S.ip.AUDIENCE), p = (0, r.bG)([I.A], () => I.A.getGuild(t.guild_id), [t.guild_id]), E = p?.maxStageVideoChannelUsers ?? 0, b = null != p && p.features.has(O.GuildFeatures.COMMUNITY) ? E < O.p2C : p?.premiumTier !== O.TVA.TIER_3 && E <= O.nyz, j = (0, R.A)(t), G = (0, r.bG)([C.A], () => C.A.can(y.QY, t)), k = () => {
+    } = e, u = (0, m.Ay)(t), h = (0, r.bG)([v.A], () => v.A.getStageInstanceByChannel(t.id)), A = (0, T.uy)(t.id), _ = (0, T.zy)(t.id, S.ip.AUDIENCE), p = (0, r.bG)([I.A], () => I.A.getGuild(t.guild_id), [t.guild_id]), x = p?.maxStageVideoChannelUsers ?? 0, b = null != p && p.features.has(O.GuildFeatures.COMMUNITY) ? x < O.p2C : p?.premiumTier !== O.TVA.TIER_3 && x <= O.nyz, j = (0, R.A)(t), G = (0, r.bG)([C.A], () => C.A.can(y.QY, t)), k = () => {
         c.A.updateStageVideoLimitBoostUpsellDismissed(t.id, !0), N.default.track(O.HAw.BOOSTING_UPSELL_CLICKED, {
             guild_id: t.guild_id,
             type: L.e.VIDEO_STAGE_LIMIT,
@@ -115,7 +115,7 @@ function G(e) {
                 showRequestToSpeakSidebar: s,
                 channel: t
             }),
-            onDoubleClick: x.I,
+            onDoubleClick: E.I,
             transparent: !0,
             className: a()(e, D.lF),
             children: [(0, i.jsx)(f.Ay.Icon, {

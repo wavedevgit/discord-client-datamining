@@ -1,6 +1,6 @@
 /** chunk id: 971157 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => E
 }), n(321073);
 var i = n(627968),
     l = n(64700),
@@ -20,8 +20,8 @@ var i = n(627968),
     b = n(447066),
     f = n(998874),
     _ = n(657681),
-    N = n(267001),
-    j = n(652215),
+    j = n(267001),
+    N = n(652215),
     v = n(985018),
     T = n(64250);
 
@@ -52,26 +52,26 @@ function C(e) {
     })
 }
 
-function I(e) {
+function E(e) {
     let {
         guild: t,
         applicationIntegration: n,
         selectableWebhookChannels: a,
         editedWebhook: d,
         errors: u,
-        canNavigate: I
+        canNavigate: E
     } = e, {
-        application: E,
+        application: I,
         integration: S,
         webhooks: y
-    } = n, [O, w] = (0, r.yK)([x.A], () => [x.A.can(j.xBc.MANAGE_ROLES, t), null == E.bot || x.A.canManageUser(j.xBc.MANAGE_GUILD, E.bot.id, t)], [E.bot, t]), R = (0, r.bG)([x.A], () => x.A.can(j.xBc.MANAGE_WEBHOOKS, t), [t]), k = l.useCallback(() => {
-        I() && (0, o.qfG)(e => (0, i.jsx)(C, {
+    } = n, [O, w] = (0, r.yK)([x.A], () => [x.A.can(N.xBc.MANAGE_ROLES, t), null == I.bot || x.A.canManageUser(N.xBc.MANAGE_GUILD, I.bot.id, t)], [I.bot, t]), k = (0, r.bG)([x.A], () => x.A.can(N.xBc.MANAGE_WEBHOOKS, t), [t]), R = l.useCallback(() => {
+        E() && (0, o.qfG)(e => (0, i.jsx)(C, {
             guild: t,
-            application: E,
+            application: I,
             integration: S,
             ...e
         }))
-    }, [E, I, t, S]), L = l.useMemo(() => {
+    }, [I, E, t, S]), L = l.useMemo(() => {
         let e = [{
             icon: o.O4,
             text: v.intl.formatToPlainString(v.t.gcdJ8J, {
@@ -84,7 +84,7 @@ function I(e) {
                 user: A.Ay.getUserTag(S.user)
             })
         }), e
-    }, [S.id, S.user]), M = l.useMemo(() => null != E.bot && S.scopes?.includes(s.F.BOT) ? (0, i.jsx)(_.A, {
+    }, [S.id, S.user]), M = l.useMemo(() => null != I.bot && S.scopes?.includes(s.F.BOT) ? (0, i.jsx)(_.A, {
         guild: t,
         applicationIntegration: n
     }) : (0, i.jsx)(o.ZpM, {
@@ -95,27 +95,27 @@ function I(e) {
             variant: "text-sm/normal",
             children: v.intl.string(v.t.pfLnza)
         })
-    }), [E.bot, n, t, S.scopes]);
+    }), [I.bot, n, t, S.scopes]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(b.A, {
-            name: E.name,
+            name: I.name,
             imageSrc: h.Ay.getApplicationIconURL({
-                id: E.id,
-                icon: E.icon,
+                id: I.id,
+                icon: I.icon,
                 size: 32
             }),
             details: L,
             isHeader: !0
-        }), E?.description != null ? (0, i.jsx)(g.A, {
-            userBio: E.description,
+        }), I?.description != null ? (0, i.jsx)(g.A, {
+            userBio: I.description,
             className: T.ux
         }) : null, O ? (0, i.jsx)(m.A, {
-            application: E,
-            canNavigate: I,
+            application: I,
+            canNavigate: E,
             guildId: t.id
         }) : null, (0, i.jsx)(o.cGx, {
             className: T.zN
-        }), null != E.bot ? (0, i.jsxs)("div", {
+        }), null != I.bot ? (0, i.jsxs)("div", {
             className: T.uW,
             children: [(0, i.jsx)(f.A, {
                 icon: (0, i.jsx)(o.CnV, {
@@ -132,19 +132,19 @@ function I(e) {
                     color: "currentColor"
                 }),
                 title: v.intl.string(v.t["t9ZX/I"])
-            }), y.length > 0 ? (0, i.jsx)(N.A, {
+            }), y.length > 0 ? (0, i.jsx)(j.A, {
                 webhooks: y,
                 editedWebhook: d,
                 selectableWebhookChannels: a,
                 errors: u,
-                canNavigate: I
+                canNavigate: E
             }) : (0, i.jsx)(o.ZpM, {
                 className: T.aM,
                 editable: !0,
                 children: (0, i.jsx)(o.Text, {
                     color: "text-muted",
                     variant: "text-sm/normal",
-                    children: R ? v.intl.string(v.t.ahPd2Y) : v.intl.string(v.t.axqYMl)
+                    children: k ? v.intl.string(v.t.ahPd2Y) : v.intl.string(v.t.axqYMl)
                 })
             })]
         }), (0, i.jsx)(o.cGx, {
@@ -165,7 +165,7 @@ function I(e) {
                     size: "sm",
                     text: v.intl.string(v.t.ebGf4m),
                     disabled: !w,
-                    onClick: k
+                    onClick: R
                 })
             })]
         })]

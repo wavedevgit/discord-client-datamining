@@ -7,10 +7,10 @@ var i = n(627968);
 n(64700);
 var r = n(934551),
     s = n(429913),
-    l = n(769015),
-    a = n(975571),
-    c = n(763754),
-    o = n(447215),
+    a = n(769015),
+    l = n(975571),
+    o = n(763754),
+    c = n(447215),
     u = n(888675),
     d = n(652215),
     _ = n(985018),
@@ -24,26 +24,26 @@ function A(e) {
         compact: m
     } = e, {
         nick: I
-    } = (0, c.d8)(A, n), T = (0, o.P)({
+    } = (0, o.d8)(A, n), T = (0, c.P)({
         user: A,
         channelId: n.id,
         guildId: void 0,
         messageId: void 0
-    })(), g = (0, s.h)(t.applicationId);
-    if (null == g) return null;
-    let N = _.intl.format(_.t.m7Lwas, {
+    })(), N = (0, s.h)(t.applicationId);
+    if (null == N) return null;
+    let g = _.intl.format(_.t.m7Lwas, {
         username: I,
         usernameHook: T,
-        gameName: g.name,
+        gameName: N.name,
         gameIconHook: e => (0, i.jsxs)("span", {
             className: E.Y_,
-            children: [(0, i.jsx)(l.A, {
-                game: g,
-                size: l.M.XXSMALL,
+            children: [(0, i.jsx)(a.A, {
+                game: N,
+                size: a.M.XXSMALL,
                 className: E.p4
             }), " ", e]
         }),
-        helpdeskArticle: a.A.getArticleURL(d.MVz.SOCIAL_LAYER_CONNECTIONS)
+        helpdeskArticle: l.A.getArticleURL(d.MVz.SOCIAL_LAYER_CONNECTIONS)
     });
     return (0, i.jsx)(u.A, {
         iconNode: (0, i.jsx)(r.GameControllerIcon, {
@@ -52,7 +52,7 @@ function A(e) {
         compact: m,
         contentClassName: E.Qs,
         children: (0, i.jsx)("div", {
-            children: N
+            children: g
         })
     })
 }

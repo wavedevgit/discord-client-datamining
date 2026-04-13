@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(688810),
     g = n(660387),
     f = n(343328),
-    x = n(485947),
-    E = n(915089),
+    E = n(485947),
+    x = n(915089),
     I = n(725323),
     C = n(611924),
     N = n(95550),
@@ -297,7 +297,7 @@ class G extends l.Component {
         let {
             section: t
         } = e;
-        return 0 === t ? null : (0, i.jsxs)(x.A, {
+        return 0 === t ? null : (0, i.jsxs)(E.A, {
             className: D._e,
             children: [(0, i.jsx)("span", {
                 className: D.TK,
@@ -379,7 +379,7 @@ let P = e => {
     });
     (0, C.P)(I._);
     let {
-        analyticsLocations: x
+        analyticsLocations: E
     } = (0, p.Ay)(_.A.CONTACTS_LIST), N = (0, y.NC)(), {
         keyboardModeEnabled: j,
         version: O
@@ -411,7 +411,7 @@ let P = e => {
                 requestAnimationFrame(() => setTimeout(e, 100))
             }
         })
-    }), [M]), k = (0, E.GV)(), w = (0, o.Ay)({
+    }), [M]), k = (0, x.GV)(), w = (0, o.Ay)({
         id: `private-channels-${k}`,
         isEnabled: j,
         scrollToStart: U,
@@ -420,7 +420,7 @@ let P = e => {
         setFocus: D
     });
     return (0, i.jsx)(p.f5, {
-        value: x,
+        value: E,
         children: (0, i.jsx)(r.hD, {
             navigator: w,
             children: (0, i.jsx)(G, {

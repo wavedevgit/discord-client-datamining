@@ -1,7 +1,7 @@
 /** chunk id: 646468 params = (module,exports,require) **/
 n.d(t, {
     Ay: () => f,
-    xc: () => E
+    xc: () => x
 });
 var i = n(627968),
     l = n(64700),
@@ -25,7 +25,7 @@ function f() {
         items: t,
         loading: n,
         loadMore: l
-    } = (0, u.LF)(), a = x(t, (0, s.bG)([o.A], () => o.A.localItems));
+    } = (0, u.LF)(), a = E(t, (0, s.bG)([o.A], () => o.A.localItems));
     return (0, i.jsx)(h.A, {
         initialized: e,
         items: a,
@@ -34,14 +34,14 @@ function f() {
     })
 }
 
-function x(e, t) {
+function E(e, t) {
     return l.useMemo(() => [...[...e, ...t].sort((e, t) => -1 * m.default.compare(e.id, t.id))], [e, t])
 }
 
-function E() {
+function x() {
     let {
         items: e
-    } = (0, u.LF)(), t = e.length > 0 ? e[0] : null, n = x(e, (0, s.bG)([o.A], () => o.A.localItems)), h = A.ns.useSetting();
+    } = (0, u.LF)(), t = e.length > 0 ? e[0] : null, n = E(e, (0, s.bG)([o.A], () => o.A.localItems)), h = A.ns.useSetting();
     return l.useMemo(() => {
         if (null != t && 0 >= m.default.compare(t.id, h)) return !1;
         for (let e of n) {

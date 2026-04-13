@@ -18,8 +18,8 @@ var i = n(627968),
     p = n(533406),
     g = n(183555),
     f = n(661492),
-    x = n(146423),
-    E = n(662349),
+    E = n(146423),
+    x = n(662349),
     I = n(216020),
     C = n(479026),
     N = n(699976),
@@ -64,7 +64,7 @@ function O(e) {
         label: T,
         icon: S,
         isPromptingPurchase: j
-    } = (0, E.h)({
+    } = (0, x.h)({
         sku: t,
         wishlistOwner: n,
         isOwned: !1,
@@ -78,7 +78,7 @@ function O(e) {
         fullWidth: !1,
         children: [(0, i.jsx)("div", {
             className: v.kL,
-            children: (0, i.jsx)(x.A, {
+            children: (0, i.jsx)(E.A, {
                 disableHoverOrFocus: !0,
                 disableRiveHover: h,
                 sku: t,
@@ -92,7 +92,7 @@ function O(e) {
                     productName: (0, f.TC)(t)
                 }),
                 onHoverOrFocusChange: L,
-                children: (0, i.jsx)(E.A, {
+                children: (0, i.jsx)(x.A, {
                     spec: R,
                     onClick: j ? N : C,
                     isHoveringOrFocusing: O,
