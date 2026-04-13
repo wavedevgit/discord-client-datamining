@@ -40,16 +40,16 @@ let j = function(e, t, n) {
             D = f.A.getMessage(t, e),
             P = g.A.getChannel(t);
         if (null == D || null == P) return;
-        let U = A.default.getId();
+        let k = A.default.getId();
         switch (n.key.toLowerCase()) {
             case "backspace":
-                i && (E.A.can(b.xBc.MANAGE_MESSAGES, P) || D.canDeleteOwnMessage(U)) && (n.preventDefault(), (0, y.RC)(P, D, n));
+                i && (E.A.can(b.xBc.MANAGE_MESSAGES, P) || D.canDeleteOwnMessage(k)) && (n.preventDefault(), (0, y.RC)(P, D, n));
                 break;
             case "c":
                 ((0, S.isMac)() ? L : M) && C.p5 && (n.preventDefault(), (0, C.C)(D.content));
                 break;
             case "e":
-                i && !P.isSystemDM() && (0, T.A)(D, U) && (n.preventDefault(), (0, y.u_)(P, D));
+                i && !P.isSystemDM() && (0, T.A)(D, k) && (n.preventDefault(), (0, y.u_)(P, D));
                 break;
             case "p":
                 (i || O) && (0, v.A)(D, P) && (n.preventDefault(), (0, y.rS)(P, D, n));

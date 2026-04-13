@@ -51,8 +51,8 @@ function O(e) {
         guildId: O,
         channelId: D,
         analyticsLocations: P,
-        onCardClick: U,
-        onButtonClick: k
+        onCardClick: k,
+        onButtonClick: U
     } = e, w = l.useRef(null), G = (0, d.bG)([p.A], () => (0, c.Mwr)(p.A.theme)), F = (0, d.bG)([h.A], () => h.A.useReducedMotion), {
         isHoveringOrFocusing: H
     } = (0, A.A)(w), {
@@ -61,13 +61,80 @@ function O(e) {
         primaryIconAsset: W,
         primaryIconLabel: K
     } = l.useMemo(() => (0, x.Cv)(a, a.applicationId), [a]), {
-        normalPrice: z,
-        discountedPrice: Y
-    } = (0, g.ou)({
+        priceComponent: z,
+        extendedHeight: Y,
+        displayPrice: J
+    } = function(e) {
+        let {
+            sku: t,
+            priceSetAssignmentPurchaseType: n
+        } = e, {
+            normalPrice: a,
+            discountedPrice: s,
+            discountPercent: r
+        } = (0, g.ou)({
+            sku: t,
+            priceSetAssignmentPurchaseType: n
+        }), o = s ?? a, d = l.useMemo(() => null != t && null != t.orbsReward && t.orbsReward > 0 ? (0, i.jsx)("div", {
+            className: b.pt,
+            children: (0, i.jsx)(u.Text, {
+                variant: "text-sm/semibold",
+                color: "currentColor",
+                children: y.intl.format(y.t.GiVd2Q, {
+                    orbCount: t.orbsReward,
+                    orbIconHook: () => (0, i.jsx)(c.Cp8, {
+                        size: "xs",
+                        color: "currentColor"
+                    }, "orbs-icon")
+                })
+            })
+        }) : null, [t]);
+        return null == t || null == o ? {
+            priceComponent: null,
+            extendedHeight: !1,
+            displayPrice: o
+        } : null != r && null != s ? {
+            priceComponent: (0, i.jsxs)("div", {
+                children: [(0, i.jsxs)("div", {
+                    className: b.p6,
+                    children: [null != a && (0, i.jsx)(u.Text, {
+                        className: b.of,
+                        variant: "text-md/medium",
+                        color: "text-muted",
+                        lineClamp: 1,
+                        children: a
+                    }), (0, i.jsx)(u.Text, {
+                        variant: "text-md/bold",
+                        color: "always-white",
+                        lineClamp: 1,
+                        children: s
+                    }), (0, i.jsxs)(u.Text, {
+                        variant: "text-md/bold",
+                        color: "text-feedback-positive",
+                        lineClamp: 1,
+                        children: ["(", r, ")"]
+                    })]
+                }), d]
+            }),
+            extendedHeight: null != d,
+            displayPrice: o
+        } : {
+            priceComponent: (0, i.jsxs)(i.Fragment, {
+                children: [(0, i.jsx)(u.Text, {
+                    variant: "text-md/bold",
+                    color: "always-white",
+                    lineClamp: 1,
+                    children: a
+                }), d]
+            }),
+            extendedHeight: !1,
+            displayPrice: o
+        }
+    }({
         sku: a,
         priceSetAssignmentPurchaseType: r ? v.lid.DEFAULT : v.lid.GIFT
-    }), J = Y ?? z, q = null != J, $ = l.useCallback(e => {
-        e.stopPropagation(), U?.(), (0, S.R)({
+    }), q = l.useCallback(e => {
+        e.stopPropagation(), k?.(), (0, S.R)({
             skuId: a.id,
             applicationId: a.applicationId,
             isStorefront: !1,
@@ -75,8 +142,8 @@ function O(e) {
             giftingOrigin: N.vQ.GUILD_CHANNEL,
             analyticsLocations: P
         })
-    }, [a.id, a.applicationId, s, P, U]), Z = l.useCallback(e => {
-        e.stopPropagation(), k?.(), (0, I.a)(a, {
+    }, [a.id, a.applicationId, s, P, k]), $ = l.useCallback(e => {
+        e.stopPropagation(), U?.(), (0, I.a)(a, {
             isGift: !r,
             giftRecipient: s,
             giftingOrigin: N.vQ.GUILD_CHANNEL
@@ -84,10 +151,10 @@ function O(e) {
             analyticsLocations: P,
             guildId: B
         })
-    }, [a, s, r, P, B, k]);
+    }, [a, s, r, P, B, U]);
     return (0, i.jsx)(c.vN3, {
         children: (0, i.jsxs)(u.sqX, {
-            onClick: $,
+            onClick: q,
             className: o()(b.Nr, {
                 [b.Zl]: !F,
                 [b.BN]: G,
@@ -124,7 +191,8 @@ function O(e) {
                 className: b.zH,
                 children: [(0, i.jsxs)("div", {
                     className: o()(b.gn, {
-                        [b.ov]: !q
+                        [b.ov]: null == z,
+                        [b.w4]: Y
                     }),
                     children: [null != W && (0, i.jsx)("img", {
                         src: W.toString(),
@@ -136,33 +204,15 @@ function O(e) {
                         lineClamp: 1,
                         children: a.name
                     })]
-                }), (0, i.jsxs)("div", {
+                }), (0, i.jsx)("div", {
                     className: b.iQ,
-                    children: [q && (0, i.jsx)(u.Text, {
-                        variant: "text-md/bold",
-                        color: "always-white",
-                        lineClamp: 1,
-                        children: J
-                    }), null != a.orbsReward && a.orbsReward > 0 && (0, i.jsx)("div", {
-                        className: b.pt,
-                        children: (0, i.jsx)(u.Text, {
-                            variant: "text-sm/semibold",
-                            color: "currentColor",
-                            children: y.intl.format(y.t.GiVd2Q, {
-                                orbCount: a.orbsReward,
-                                orbIconHook: () => (0, i.jsx)(c.Cp8, {
-                                    size: "xs",
-                                    color: "currentColor"
-                                }, "orbs-icon")
-                            })
-                        })
-                    })]
+                    children: z
                 })]
             }), (0, i.jsx)("div", {
                 className: b.li,
                 children: (0, i.jsx)(c.$nd, {
                     variant: "primary",
-                    onClick: Z,
+                    onClick: $,
                     text: (t = J, n = r, null != t ? n ? y.intl.format(y.t.Xp5WTn, {
                         price: t
                     }) : y.intl.format(y.t.o2WeeD, {

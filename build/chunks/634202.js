@@ -23,12 +23,12 @@ var l = n(627968),
     C = n(688810),
     N = n(709066),
     E = n(657331),
-    _ = n(427157),
-    I = n(696451),
+    I = n(427157),
+    _ = n(696451),
     b = n(954571),
     S = n(370480),
-    T = n(633452),
-    j = n(600260),
+    j = n(633452),
+    T = n(600260),
     y = n(63104),
     R = n(355971),
     M = n(293260),
@@ -36,9 +36,9 @@ var l = n(627968),
     w = n(652215),
     L = n(518477),
     k = n(985018),
-    D = n(333901);
+    G = n(333901);
 
-function G(e) {
+function D(e) {
     let t, {
         connectionType: n,
         connectionMetadataField: i,
@@ -68,11 +68,11 @@ function G(e) {
         value: a
     });
     return null == t ? null : (0, l.jsxs)("div", {
-        className: D.wL,
+        className: G.wL,
         children: [(0, l.jsx)(h.A9s, {
             size: "md",
             color: "currentColor",
-            className: D.D$
+            className: G.D$
         }), (0, l.jsx)(h.Text, {
             variant: "text-xs/medium",
             color: "text-strong",
@@ -92,26 +92,26 @@ function U(e) {
                 u = r.find(e => null != e.application),
                 c = x.A.get(e),
                 d = u?.application,
-                g = d?.bot != null ? new _.A(d.bot) : null;
+                g = d?.bot != null ? new I.A(d.bot) : null;
             return S.iC.includes(d?.id ?? "") ? t = (0, l.jsx)(R.A, {
-                className: D.AO,
+                className: G.AO,
                 color: i,
                 size: 16
             }) : null != g && (t = (0, l.jsx)(N.A, {
-                className: D.AO,
+                className: G.AO,
                 verified: g.isVerifiedBot()
             })), (0, l.jsxs)("div", {
-                className: D.sV,
+                className: G.sV,
                 children: [(0, l.jsxs)("div", {
-                    className: D.ei,
+                    className: G.ei,
                     children: [null != c ? (0, l.jsx)("img", {
                         src: (0, m.Mw)(n) ? c.icon.darkSVG : c.icon.lightSVG,
                         alt: "",
-                        className: D.j$
+                        className: G.j$
                     }) : null, null != g ? (0, l.jsx)(f.A, {
                         user: g,
                         size: h._3J.SIZE_20,
-                        className: D.j$
+                        className: G.j$
                     }) : null, (0, l.jsx)(h.Text, {
                         variant: "text-sm/medium",
                         color: "interactive-text-active",
@@ -125,7 +125,7 @@ function U(e) {
                         value: s,
                         description: r
                     } = e;
-                    return a()(null != n, "connectionMetadataField is null"), a()(null != i, "operator is null"), a()(null != s, "value is null"), (0, l.jsx)(G, {
+                    return a()(null != n, "connectionMetadataField is null"), a()(null != i, "operator is null"), a()(null != s, "value is null"), (0, l.jsx)(D, {
                         connectionType: t,
                         connectionMetadataField: n,
                         operator: i,
@@ -156,30 +156,30 @@ function P(e) {
             ...(0, v.H$)(d)
         })
     }, [r, o, c, d]);
-    let m = (0, u.bG)([I.Ay], () => I.Ay.getSelfMember(d)?.roles.includes(o) ?? !1, [d, o]);
+    let m = (0, u.bG)([_.Ay], () => _.Ay.getSelfMember(d)?.roles.includes(o) ?? !1, [d, o]);
     return t = 1 === a.length && 1 === a[0].length ? k.intl.string(k.t.jDym4E) : 1 === a.length ? k.intl.format(k.t["0eBj3x"], {}) : k.intl.format(k.t.D7uftB, {}), (0, l.jsxs)("div", {
-        className: D.SW,
+        className: G.SW,
         children: [(0, l.jsx)("div", {
-            className: D.oT,
+            className: G.oT,
             children: (0, l.jsx)(h.Text, {
                 variant: "text-xs/normal",
                 color: "text-default",
-                className: D.Io,
+                className: G.Io,
                 children: t
             })
         }), (0, l.jsx)("div", {
-            className: D.jf,
+            className: G.jf,
             children: (0, l.jsx)(U, {
                 eligibilityStates: a.flat()
             })
         }), (0, l.jsxs)("div", {
-            className: D.UD,
+            className: G.UD,
             children: [m ? null : (0, l.jsx)(g.$n, {
-                className: D.wz,
+                className: G.wz,
                 onClick: n,
                 children: k.intl.string(k.t.T1t1WV)
             }), (0, l.jsx)(g.$n, {
-                className: D.lQ,
+                className: G.lQ,
                 color: g.$n.Colors.PRIMARY,
                 onClick: s,
                 children: k.intl.string(k.t.hgKDnG)
@@ -196,7 +196,7 @@ function H(e) {
         channel: r
     } = e, {
         analyticsLocations: o
-    } = (0, C.Ay)(), c = (0, j.A)(s, t, r.id, !0), m = (0, u.bG)([T.A], () => T.A.getGuildRoleConnectionEligibility(c?.id)), [g, f] = i.useState(null == m), p = i.useRef(null);
+    } = (0, C.Ay)(), c = (0, T.A)(s, t, r.id, !0), m = (0, u.bG)([j.A], () => j.A.getGuildRoleConnectionEligibility(c?.id)), [g, f] = i.useState(null == m), p = i.useRef(null);
     if (null == c) return null;
     async function x() {
         a()(null != c, "visibleConnectionsRole is null"), g && null == m && (await A.A.fetchGuildRoleConnectionsEligibility(s.id, c.id), f(!1))
@@ -238,16 +238,16 @@ function H(e) {
             text: k.intl.string(k.t.Wpsnar),
             children: (0, l.jsxs)("div", {
                 ref: p,
-                className: D.qS,
+                className: G.qS,
                 ...e,
                 children: [(0, l.jsx)(y.A, {
-                    className: D.f7,
+                    className: G.f7,
                     size: 16,
                     color: c.colorString
                 }), (0, l.jsx)(h.Text, {
                     variant: "text-xs/bold",
                     color: "text-strong",
-                    className: D.S3,
+                    className: G.S3,
                     children: c.name
                 })]
             })

@@ -37,9 +37,9 @@ var i = n(627968),
     O = n(985018),
     D = n(274647);
 let P = `vc-gifting-${(0,a.A)()}`,
-    U = Object.freeze([]);
+    k = Object.freeze([]);
 
-function k(e) {
+function U(e) {
     let {
         "aria-labelledby": t,
         children: n
@@ -147,7 +147,7 @@ function H(e) {
         userIds: r,
         applicationIds: o,
         numItems: a
-    }), h = "loading" === c || 0 === d.length, m = (0, s.A)(h ? U : d, B), A = l.useMemo(() => {
+    }), h = "loading" === c || 0 === d.length, m = (0, s.A)(h ? k : d, B), A = l.useMemo(() => {
         let {
             hasWishlist: e,
             hasPopular: t
@@ -213,7 +213,7 @@ function W(e) {
             onButtonClick: s
         }, e.id)
     }), [g, v, a.guild_id, a.id, y, t, S, j, h, s]);
-    return (0, i.jsx)(k, {
+    return (0, i.jsx)(U, {
         "aria-labelledby": P,
         children: (0, i.jsxs)("div", {
             className: D.kL,
@@ -263,7 +263,7 @@ function K(e) {
     let a = (0, o.bG)([x.default], () => x.default.getUser(t)),
         s = (0, o.bG)([m.A], () => m.A.getWidgets(t)?.find(e => V(e, n))),
         c = null == a || null == s;
-    return (0, i.jsx)(k, {
+    return (0, i.jsx)(U, {
         children: (0, i.jsx)("div", {
             className: D.kL,
             children: c ? (0, i.jsx)(r.y$y, {
@@ -336,7 +336,7 @@ function z(e) {
             }, e.id)
         })]
     }, [h, f, S, t, m, a.guild_id, a.id, I, u, s]);
-    return (0, i.jsx)(k, {
+    return (0, i.jsx)(U, {
         "aria-labelledby": P,
         children: (0, i.jsxs)("div", {
             className: D.kL,

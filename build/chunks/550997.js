@@ -3,7 +3,7 @@
 let l;
 n.r(t), n.d(t, {
     default: () => E,
-    renderChangelogMessageMarkup: () => _
+    renderChangelogMessageMarkup: () => I
 });
 var i = n(791332),
     s = n.n(i),
@@ -117,7 +117,7 @@ let E = {
     })
 };
 
-function _(e, t, n) {
+function I(e, t, n) {
     return {
         hasSpoilerEmbeds: !1,
         hasBailedAst: !1,

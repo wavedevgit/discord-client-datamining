@@ -512,20 +512,27 @@ class R extends r.Component {
 class G extends r.Component {
     renderContent() {
         let e, t, {
-                link: n,
-                children: r
-            } = this.props,
-            o = (0, E.vu)(n.path);
-        return null == o || void 0 === o.messageId ? (e = T.intl.string(T.t.qbSCqj), t = (0, i.jsx)(l.qYV, {
+            link: n,
+            children: r
+        } = this.props;
+        if (null != n.inviteCode) e = T.intl.string(T.t.w6QG3F), t = (0, i.jsx)(l.fhe, {
             size: "xs",
             color: "currentColor"
-        })) : (0, E.r9)(o) ? (e = T.intl.string(T.t["6Fd/j1"]), t = (0, i.jsx)(l.txs, {
-            size: "xs",
-            color: "currentColor"
-        })) : (e = T.intl.string(T.t.jQRwp4), t = (0, i.jsx)(l.XAi, {
-            size: "xs",
-            color: "currentColor"
-        })), (0, i.jsxs)("div", {
+        });
+        else {
+            let r = (0, E.vu)(n.path);
+            null == r || void 0 === r.messageId ? (e = T.intl.string(T.t.qbSCqj), t = (0, i.jsx)(l.qYV, {
+                size: "xs",
+                color: "currentColor"
+            })) : (0, E.r9)(r) ? (e = T.intl.string(T.t["6Fd/j1"]), t = (0, i.jsx)(l.txs, {
+                size: "xs",
+                color: "currentColor"
+            })) : (e = T.intl.string(T.t.jQRwp4), t = (0, i.jsx)(l.XAi, {
+                size: "xs",
+                color: "currentColor"
+            }))
+        }
+        return (0, i.jsxs)("div", {
             className: S.xr,
             children: [(0, i.jsx)("div", {
                 className: S.zc,

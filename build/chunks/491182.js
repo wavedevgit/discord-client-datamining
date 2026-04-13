@@ -28,8 +28,8 @@ let A = function(e) {
         childrenHeader: C,
         childrenSystemMessage: N,
         childrenButtons: E,
-        childrenMessageContent: _,
-        childrenAccessories: I,
+        childrenMessageContent: I,
+        childrenAccessories: _,
         messageRef: b,
         focusProps: S = {
             offset: {
@@ -37,23 +37,23 @@ let A = function(e) {
                 right: 4
             }
         },
-        hasThread: T,
-        isSystemMessage: j,
+        hasThread: j,
+        isSystemMessage: T,
         hasReply: y,
         author: R,
         onMouseEnter: M,
         onMouseLeave: O,
         ...w
-    } = e, L = (0, r.bG)([g.A], () => R?.guildId == null || R?.colorRoleId == null ? null : g.A.getRole(R.guildId, R.colorRoleId)), k = (0, m.jV)(R?.guildId, L) && (0, d.kz)(R), [D, G] = i.useState(!1), U = i.useCallback(e => {
-        G(!0), M?.(e)
+    } = e, L = (0, r.bG)([g.A], () => R?.guildId == null || R?.colorRoleId == null ? null : g.A.getRole(R.guildId, R.colorRoleId)), k = (0, m.jV)(R?.guildId, L) && (0, d.kz)(R), [G, D] = i.useState(!1), U = i.useCallback(e => {
+        D(!0), M?.(e)
     }, [M]), P = i.useCallback(e => {
-        G(!1), O?.(e)
+        D(!1), O?.(e)
     }, [O]), H = (0, c.W)({
         location: "BaseMessage"
     }), V = (0, l.jsx)(o.C.Provider, {
         value: {
-            animate: D,
-            setAnimate: G
+            animate: G,
+            setAnimate: D
         },
         children: (0, l.jsx)(u.vN3, {
             ...S,
@@ -67,8 +67,8 @@ let A = function(e) {
                     [h.VH]: f,
                     [h.E]: !n,
                     [h.GZ]: A,
-                    [h.pR]: T,
-                    [h.X4]: j,
+                    [h.pR]: j,
+                    [h.X4]: T,
                     [h.h8]: y
                 }),
                 ref: b,
@@ -78,8 +78,8 @@ let A = function(e) {
                 onMouseLeave: P,
                 children: [x, v, (0, l.jsxs)("div", {
                     className: h.PG,
-                    children: [N, C, null == N && _]
-                }), I, null != E ? (0, l.jsx)("div", {
+                    children: [N, C, null == N && I]
+                }), _, null != E ? (0, l.jsx)("div", {
                     className: h.UD,
                     children: E
                 }) : null]

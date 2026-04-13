@@ -35,8 +35,8 @@ var i = n(627968),
     O = n(972995),
     D = n(355622),
     P = n(408018),
-    U = n(223938),
-    k = n(811501),
+    k = n(223938),
+    U = n(811501),
     w = n(20737),
     G = n(133343),
     F = n(35277),
@@ -89,8 +89,8 @@ var i = n(627968),
     eO = n(954571),
     eD = n(147036),
     eP = n(234320),
-    eU = n(203982),
-    ek = n(661191),
+    ek = n(203982),
+    eU = n(661191),
     ew = n(460350),
     eG = n(518960),
     eF = n(382287),
@@ -188,14 +188,14 @@ class e9 extends l.PureComponent {
                 return void this.handleIncrementCombo("", 1);
             case eq.Ks6.ARROW_UP:
                 if (l || a) return;
-                if (e.preventDefault(), t) eM.A.getUploadCount(i.id, eT.C.ChannelMessage) > 0 ? eU._.dispatchToLastSubscribed(eq.jej.FOCUS_ATTACHMENT_AREA) : eU._.dispatchToLastSubscribed(eq.jej.FOCUS_MESSAGES, {
+                if (e.preventDefault(), t) eM.A.getUploadCount(i.id, eT.C.ChannelMessage) > 0 ? ek._.dispatchToLastSubscribed(eq.jej.FOCUS_ATTACHMENT_AREA) : ek._.dispatchToLastSubscribed(eq.jej.FOCUS_MESSAGES, {
                     atEnd: !0
                 });
                 else {
                     let {
                         channel: e
                     } = this.props, t = ey.A.getLastChatCommandMessage(e.id), n = ey.A.getLastEditableMessage(e.id);
-                    null != t && null != n ? ek.default.compare(n.id, t.id) > 0 ? this.handleEditLastMessage(n) : this.handleRecallLastCommand(t) : null != t ? this.handleRecallLastCommand(t) : null != n && this.handleEditLastMessage(n)
+                    null != t && null != n ? eU.default.compare(n.id, t.id) > 0 ? this.handleEditLastMessage(n) : this.handleRecallLastCommand(t) : null != t ? this.handleRecallLastCommand(t) : null != n && this.handleEditLastMessage(n)
                 }
                 return;
             case eq.Ks6.ESCAPE:
@@ -295,7 +295,7 @@ class e9 extends l.PureComponent {
             threadsAlsoSendToChannel: f
         } = this.props, E = !1;
         if (null != l) {
-            if (l.inputType === R.y$.BUILT_IN_INTEGRATION) return eU._.dispatch(eq.jej.SHAKE_APP, {
+            if (l.inputType === R.y$.BUILT_IN_INTEGRATION) return ek._.dispatch(eq.jej.SHAKE_APP, {
                 duration: 200,
                 intensity: 2
             }), Promise.resolve({
@@ -366,10 +366,10 @@ class e9 extends l.PureComponent {
                 failureReason: C
             } = e;
             if (!a)
-                if (C === eq.X8x.SLOWMODE_COOLDOWN) return eU._.dispatch(eq.jej.SHAKE_APP, {
+                if (C === eq.X8x.SLOWMODE_COOLDOWN) return ek._.dispatch(eq.jej.SHAKE_APP, {
                     duration: 200,
                     intensity: 2
-                }), eU._.dispatch(eq.jej.EMPHASIZE_SLOWMODE_COOLDOWN), {
+                }), ek._.dispatch(eq.jej.EMPHASIZE_SLOWMODE_COOLDOWN), {
                     shouldClear: !1,
                     shouldRefocus: !0
                 };
@@ -471,7 +471,7 @@ class e9 extends l.PureComponent {
         setValue: this.handleSetValue,
         canOnlyUseTextCommands: e
     });
-    renderApplicationCommandIcon = (e, t, n) => (0, i.jsx)(k.A, {
+    renderApplicationCommandIcon = (e, t, n) => (0, i.jsx)(U.A, {
         className: n,
         command: e,
         section: t,
@@ -495,7 +495,7 @@ class e9 extends l.PureComponent {
             announcementComposerEnabled: p
         } = this.props, {
             contentWarningProps: _
-        } = this.state, f = e.type === eq.rbe.GUILD_ANNOUNCEMENT && p ? (0, i.jsx)(U.A, {
+        } = this.state, f = e.type === eq.rbe.GUILD_ANNOUNCEMENT && p ? (0, i.jsx)(k.A, {
             ref: this.props.refInstance,
             textValue: this.state.textValue,
             richValue: this.state.richValue,
@@ -590,13 +590,13 @@ class e7 extends l.PureComponent {
     };
     dispatchGroupRef = l.createRef();
     componentDidMount() {
-        eU._.subscribe(eq.jej.FOCUS_CHANNEL_TEXT_AREA, this.handleRequestFocus)
+        ek._.subscribe(eq.jej.FOCUS_CHANNEL_TEXT_AREA, this.handleRequestFocus)
     }
     componentDidUpdate(e) {
         (this.props.isEditing !== e.isEditing || this.props.hasModalOpen !== e.hasModalOpen) && (this.props.isEditing || this.props.hasModalOpen ? this.handleInputBlur() : this.handleInputFocus())
     }
     componentWillUnmount() {
-        eU._.unsubscribe(eq.jej.FOCUS_CHANNEL_TEXT_AREA, this.handleRequestFocus)
+        ek._.unsubscribe(eq.jej.FOCUS_CHANNEL_TEXT_AREA, this.handleRequestFocus)
     }
     handleRequestFocus = e => {
         e.channelId === this.props.channel.id && (this.state.textAreaFocused ? this.refToChannelTextAreaFormComponent.current?.focusEditor() : this.setState({
@@ -633,12 +633,12 @@ class e7 extends l.PureComponent {
         } = this.props;
         if (t) switch (e.which) {
             case eq.Ks6.ARROW_LEFT:
-                n === D.oU.SIDEBAR && eU._.dispatch(eq.jej.FOCUS_CHANNEL_TEXT_AREA, {
+                n === D.oU.SIDEBAR && ek._.dispatch(eq.jej.FOCUS_CHANNEL_TEXT_AREA, {
                     channelId: eR.A.getChannelId()
                 });
                 return;
             case eq.Ks6.ARROW_RIGHT:
-                n === D.oU.NORMAL && eU._.dispatch(eq.jej.FOCUS_CHANNEL_TEXT_AREA, {
+                n === D.oU.NORMAL && ek._.dispatch(eq.jej.FOCUS_CHANNEL_TEXT_AREA, {
                     channelId: eI.Ay.getCurrentSidebarChannelId(i.id)
                 })
         }

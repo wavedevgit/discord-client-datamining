@@ -35,8 +35,8 @@ var i = n(627968),
     O = n(31717),
     D = n(638128),
     P = n(522602),
-    U = n(515718),
-    k = n(723702),
+    k = n(515718),
+    U = n(723702),
     w = n(518960),
     G = n(486319),
     F = n(355622),
@@ -82,7 +82,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
             channel: y,
             type: b,
             focused: j,
-            onChange: U,
+            onChange: k,
             onResize: w,
             onBlur: W,
             onFocus: Y,
@@ -122,12 +122,12 @@ let X = l.memo(l.forwardRef(function(e, t) {
         disabled: eR,
         canAttachFiles: eM,
         canEveryoneSendMessages: eL
-    } = (0, V.Sk)(y, b, ey, _), eO = !L.D_.useSetting() && !(0, k.isAndroidWeb)() && null != window.ResizeObserver, eD = !eO || !b.commands?.enabled || !j || "/" !== a, eP = (0, R.A)(), {
-        fontSize: eU
+    } = (0, V.Sk)(y, b, ey, _), eO = !L.D_.useSetting() && !(0, U.isAndroidWeb)() && null != window.ResizeObserver, eD = !eO || !b.commands?.enabled || !j || "/" !== a, eP = (0, R.A)(), {
+        fontSize: ek
     } = (0, u.cf)([f.A], () => ({
         fontSize: f.A.fontSize,
         isSubmitButtonEnabled: f.A.isSubmitButtonEnabled
-    })), ek = (0, u.bG)([D.A], () => D.A.isEnabled()), ew = (0, M.n)(y);
+    })), eU = (0, u.bG)([D.A], () => D.A.isEnabled()), ew = (0, M.n)(y);
     (0, V.N_)(b, eR, y.id);
     let {
         eventEmitter: eG,
@@ -314,7 +314,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                         maxCharacterCount: er ?? eP,
                                         allowNewLines: !0,
                                         "aria-describedby": ec,
-                                        onChange: U,
+                                        onChange: k,
                                         onResize: eq,
                                         onBlur: W,
                                         onFocus: Y,
@@ -327,8 +327,8 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                         onMaybeShowAutocomplete: eK,
                                         onHideAutocomplete: ez,
                                         promptToUpload: el,
-                                        fontSize: eU,
-                                        spellcheckEnabled: ek,
+                                        fontSize: ek,
+                                        spellcheckEnabled: eU,
                                         canOnlyUseTextCommands: !1,
                                         "aria-labelledby": ed
                                     })
@@ -429,7 +429,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                     onSendSticker: () => {},
                     onVisibilityChange: e2,
                     editorHeight: eJ,
-                    setValue: (e, t) => U?.(null, e, t),
+                    setValue: (e, t) => k?.(null, e, t),
                     position: eh
                 })]
             }), e0 ? null : (0, i.jsx)(N.A, {
@@ -553,7 +553,7 @@ function en(e) {
         onImageUploaded: n,
         onFocus: a
     } = e, s = l.useRef(null), r = async (e, i) => {
-        let l = await (0, U.bX)(e, i.name, i.type),
+        let l = await (0, k.bX)(e, i.name, i.type),
             a = {
                 id: (0, d.A)(),
                 file: l,

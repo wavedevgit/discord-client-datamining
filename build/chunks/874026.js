@@ -25,7 +25,7 @@ var i = n(311907),
 let N = function(e) {
     let {
         channel: t
-    } = e, n = (0, i.bG)([h.A], () => h.A.isInChannel(t.id)), N = (0, d.A)(t), E = (0, A.Ay)(t), _ = (0, f.H)(t), I = (0, i.bG)([g.A], () => g.A.getAllApplicationStreamsForChannel(t.id)[0]);
+    } = e, n = (0, i.bG)([h.A], () => h.A.isInChannel(t.id)), N = (0, d.A)(t), E = (0, A.Ay)(t), I = (0, f.H)(t), _ = (0, i.bG)([g.A], () => g.A.getAllApplicationStreamsForChannel(t.id)[0]);
     return (0, l.jsxs)(u.Uq, {
         className: C.jC,
         children: [(0, l.jsxs)("div", {
@@ -50,21 +50,21 @@ let N = function(e) {
                         children: E
                     })
                 })]
-            }), null != _ && (0, l.jsx)("span", {
+            }), null != I && (0, l.jsx)("span", {
                 className: C.j2,
                 children: (0, l.jsx)(r.z, {
                     entry: {
-                        start: _
+                        start: I
                     },
                     textColor: "text-feedback-positive"
                 })
             })]
         }), (0, l.jsxs)("div", {
             className: C.Bm,
-            children: [null != I && (0, l.jsxs)("div", {
+            children: [null != _ && (0, l.jsxs)("div", {
                 className: C.yt,
                 children: [(0, l.jsx)(o.A, {
-                    stream: I,
+                    stream: _,
                     className: C.Rh,
                     noText: !0
                 }), (0, l.jsx)(x.Ay, {

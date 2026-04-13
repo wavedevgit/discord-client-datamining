@@ -41,9 +41,9 @@ function N(e) {
         analyticsLocations: D
     } = (0, c.Ay)(), P = (0, u.s)({
         channel: t
-    }), U = (0, a.bG)([m.A], () => m.A.isInProgress());
+    }), k = (0, a.bG)([m.A], () => m.A.isInProgress());
 
-    function k() {
+    function U() {
         (0, A.Tv)(t, void 0, "Plus Button")
     }
 
@@ -210,7 +210,7 @@ function N(e) {
                             type: "icon",
                             icon: e.icon
                         },
-                        action: k
+                        action: U
                     }, "THREAD");
                 case C.v.SLASH_COMMAND:
                     return (0, i.jsx)(r.Drp, {
@@ -247,9 +247,9 @@ function N(e) {
                             icon: e.icon
                         },
                         action: () => h.A.summarizeThread(t),
-                        loading: U,
-                        disabled: U,
-                        children: U ? null : (0, i.jsxs)(i.Fragment, {
+                        loading: k,
+                        disabled: k,
+                        children: k ? null : (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsx)(r.Drp, {
                                 id: "summarize_thread_for_everyone",
                                 label: T.intl.string(T.t.eCzSdd),

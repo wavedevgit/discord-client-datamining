@@ -26,15 +26,15 @@ function A(e, t) {
         allowList: C = !1,
         allowLinks: N = !1,
         allowDevLinks: E = !1,
-        previewLinkTarget: _ = !1,
-        viewingChannelId: I
+        previewLinkTarget: I = !1,
+        viewingChannelId: _
     } = t, b = (0, c.I)({
         location: "useMessageRenderedContent"
-    }), [S, T] = i.useState(!1), j = i.useCallback(e => {
-        e && T(!0)
+    }), [S, j] = i.useState(!1), T = i.useCallback(e => {
+        e && j(!0)
     }, []);
     return i.useEffect(() => {
-        T(!1)
+        j(!1)
     }, [e.content]), i.useMemo(() => {
         if (null != e.customRenderedContent) return e.customRenderedContent;
         if (e.isUnsupported) return {
@@ -59,9 +59,9 @@ function A(e, t) {
                     value: {
                         messageId: e.id,
                         channelId: e.channel_id,
-                        viewingChannelId: I,
+                        viewingChannelId: _,
                         guildId: (0, a.U)(e),
-                        setHasSpoilerEmbeds: j
+                        setHasSpoilerEmbeds: T
                     },
                     children: (0, l.jsx)(h, {
                         content: e.content
@@ -79,8 +79,8 @@ function A(e, t) {
             allowList: C,
             allowLinks: N,
             allowDevLinks: E,
-            previewLinkTarget: _,
-            viewingChannelId: I
+            previewLinkTarget: I,
+            viewingChannelId: _
         })
-    }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, A, f, p, x, v, C, N, _, E, I, b.enabled, S])
+    }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, A, f, p, x, v, C, N, I, E, _, b.enabled, S])
 }

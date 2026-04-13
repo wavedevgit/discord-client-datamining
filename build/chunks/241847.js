@@ -247,7 +247,7 @@ function P(e) {
     })
 }
 
-function U(e) {
+function k(e) {
     return (0, g.k)({
         channelId: e.channelId
     }) ? (0, i.jsx)(P, {
@@ -263,7 +263,7 @@ function U(e) {
     })
 }
 
-function k(e) {
+function U(e) {
     return (0, g.k)({
         channelId: e.channelId
     }) ? (0, i.jsx)(D, {
@@ -277,9 +277,9 @@ function k(e) {
 }
 
 function w(e) {
-    return (0, C.p)("RTCConnectionPopout") ? (0, i.jsx)(k, {
+    return (0, C.p)("RTCConnectionPopout") ? (0, i.jsx)(U, {
         ...e
-    }) : (0, i.jsx)(U, {
+    }) : (0, i.jsx)(k, {
         ...e
     })
 }

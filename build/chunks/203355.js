@@ -36,8 +36,8 @@ var i = n(627968),
     O = n(256195),
     D = n(399849),
     P = n(275731),
-    U = n(345812),
-    k = n(652215),
+    k = n(345812),
+    U = n(652215),
     w = n(806931),
     G = n(731854),
     F = n(985018),
@@ -52,11 +52,11 @@ function V(e) {
         idle: a,
         width: s,
         premiumIndicator: o
-    } = e, c = (0, r.bG)([T.A], () => T.A.getActiveStreamForUser(t.user.id, t.stream.guildId)), d = (0, U.VE)(s);
+    } = e, c = (0, r.bG)([T.A], () => T.A.getActiveStreamForUser(t.user.id, t.stream.guildId)), d = (0, k.VE)(s);
     return (0, i.jsxs)(i.Fragment, {
         children: [n || l ? null : (0, i.jsx)(P.A, {
             participant: t
-        }), l || null == c || c.state === k.XYD.ENDED || c.state === k.XYD.FAILED ? null : (0, i.jsx)(x.A, {
+        }), l || null == c || c.state === U.XYD.ENDED || c.state === U.XYD.FAILED ? null : (0, i.jsx)(x.A, {
             size: g.Ay.Sizes.SMALL,
             className: H.Ok,
             participant: t,
@@ -76,7 +76,7 @@ function W(e) {
         popoutType: p,
         width: x,
         wrapperClassName: P,
-        paused: U = !1
+        paused: k = !1
     } = e, V = y.Ay.getVideoComponent(), W = (0, r.bG)([v.default], () => v.default.getId()), K = (0, f.A)(), {
         stream: z,
         user: Y,
@@ -94,12 +94,12 @@ function W(e) {
         selected: n,
         isSelfStream: Y.id === W
     });
-    if ($?.state === k.XYD.ENDED) return (0, i.jsx)(M.A, {
+    if ($?.state === U.XYD.ENDED) return (0, i.jsx)(M.A, {
         selected: n,
         stream: $,
         width: x
     });
-    if (null != ei || $?.state === k.XYD.FAILED) return (0, i.jsx)(L.A, {
+    if (null != ei || $?.state === U.XYD.FAILED) return (0, i.jsx)(L.A, {
         avError: ei?.type,
         avErrorContext: ei,
         selected: n,
@@ -119,7 +119,7 @@ function W(e) {
             streamId: J,
             videoComponent: V,
             fit: g,
-            paused: U || $?.state === k.XYD.PAUSED || ee,
+            paused: k || $?.state === U.XYD.PAUSED || ee,
             videoSpinnerContext: Q ? m.u.SELF_STREAM : m.u.REMOTE_STREAM,
             userId: Y.id,
             streamKey: t.id

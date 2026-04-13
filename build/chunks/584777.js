@@ -1,7 +1,7 @@
 /** chunk id: 584777 params = (module,exports,require) **/
 let i;
 n.d(t, {
-    A: () => k
+    A: () => U
 }), n(321073);
 var l = n(311907),
     a = n(73153),
@@ -108,7 +108,7 @@ function R(e) {
             comparator: i
         })
     }
-    x = n, U.emitChange()
+    x = n, k.emitChange()
 }
 
 function M() {
@@ -155,7 +155,7 @@ class P extends l.Ay.Store {
         }
     }
 }
-let U = new P(a.h, {
+let k = new P(a.h, {
         CONNECTION_OPEN: function() {
             v()
         },
@@ -195,4 +195,4 @@ let U = new P(a.h, {
             I.delete(t), I = new Set(I)
         }
     }),
-    k = U
+    U = k

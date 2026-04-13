@@ -94,10 +94,10 @@ function h(e) {
         n === e.id && (h = D);
         let {
             jumpSequenceId: P,
-            jumpFlash: U,
-            jumpTargetId: k
+            jumpFlash: k,
+            jumpTargetId: U
         } = A;
-        U && e.id === k && null != P && (D.flashKey = P), A.jumpTargetId === e.id && (D.jumpTarget = !0), null != f && e.id === f.startId && f.count > 1 && C.push({
+        k && e.id === U && null != P && (D.flashKey = P), A.jumpTargetId === e.id && (D.jumpTarget = !0), null != f && e.id === f.startId && f.count > 1 && C.push({
             type: u.TZK.DIVIDER,
             content: f.topic,
             contentKey: f.startId,

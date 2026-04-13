@@ -177,17 +177,17 @@ function O(e) {
             null != e && e.scrollHeight - e.scrollTop - e.offsetHeight < 250 && a && !r && h?.()
         }, [a, h, r]),
         P = [],
-        U = !0;
+        k = !0;
     null == n || r && 0 === n.length ? P = [(0, i.jsx)("div", {
         className: s()(y.zC, y.k$),
         children: (0, i.jsx)(u.y$y, {})
     }, "spinner")] : 0 === n.length ? P.push((0, i.jsx)(l.Fragment, {
         children: p()
-    }, "empty-state")) : (U = !1, P = [], o().each(n, e => {
+    }, "empty-state")) : (k = !1, P = [], o().each(n, e => {
         P.push(..._(e))
     }));
-    let k = null;
-    null != n && n.length > 0 && null != h && (k = r ? (0, i.jsx)("div", {
+    let U = null;
+    null != n && n.length > 0 && null != h && (U = r ? (0, i.jsx)("div", {
         className: y.sw,
         children: (0, i.jsx)(u.y$y, {})
     }, "loading-more-after") : a ? (0, i.jsx)("div", {
@@ -204,7 +204,7 @@ function O(e) {
         children: p()
     }));
     let w = f?.(),
-        G = U && null != w ? (0, i.jsx)("div", {
+        G = k && null != w ? (0, i.jsx)("div", {
             className: y.qr,
             children: (0, i.jsx)(A.A, {
                 style: {
@@ -247,7 +247,7 @@ function O(e) {
                             })
                         }
                     })
-                }), k]
+                }), U]
             }), G]
         })
     })

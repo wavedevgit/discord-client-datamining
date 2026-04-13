@@ -35,8 +35,8 @@ var i = n(627968),
     O = n(435470),
     D = n(473503),
     P = n(853742),
-    U = n(652215),
-    k = n(985018),
+    k = n(652215),
+    U = n(985018),
     w = n(190192),
     G = n(12131),
     F = n(486025),
@@ -53,7 +53,7 @@ function B(e) {
     return s ? (0, i.jsx)(d.Button, {
         size: "sm",
         variant: "secondary",
-        text: a ? k.intl.string(w.default["2Y4vkk"]) : k.intl.string(w.default.YIbR4r),
+        text: a ? U.intl.string(w.default["2Y4vkk"]) : U.intl.string(w.default.YIbR4r),
         onClick: () => {
             !0 === o.w.get(N.f) ? u() : (0, d.mMO)(async () => {
                 let {
@@ -121,7 +121,7 @@ function V(e) {
             (0, P.jC)({
                 postId: Y.id,
                 location: {
-                    section: U.JJy.CHANNEL_HEADER
+                    section: k.JJy.CHANNEL_HEADER
                 }
             }), (0, L.C)((0, M.af)(Y, et), () => z(!0))
         },
@@ -179,40 +179,40 @@ function V(e) {
                         [G.w$]: !er
                     }),
                     isForumToolbar: !0,
-                    children: !er && k.intl.string(k.t.xpOyTO)
+                    children: !er && U.intl.string(U.t.xpOyTO)
                 })]
             }), (0, i.jsxs)("div", {
                 className: G.Uo,
                 children: [ee ? (0, i.jsx)(B, {
                     channel: Y
                 }) : !X && (0, i.jsx)(c.m, {
-                    text: k.intl.string(k.t.F7oeDv),
+                    text: U.intl.string(U.t.F7oeDv),
                     children: (0, i.jsx)(d.Button, {
                         icon: ec,
                         size: "sm",
                         variant: "secondary",
-                        text: q ? k.intl.string(k.t["7OkUzs"]) : k.intl.string(k.t["3aOv+h"]),
+                        text: q ? U.intl.string(U.t["7OkUzs"]) : U.intl.string(U.t["3aOv+h"]),
                         onClick: () => {
                             q ? j.A.leaveThread(Y, "Forum Toolbar") : j.A.joinThread(Y, "Forum Toolbar")
                         }
                     })
                 }), (0, i.jsx)(c.m, {
-                    text: k.intl.string(k.t.WqhZss),
+                    text: U.intl.string(U.t.WqhZss),
                     children: K ? (0, i.jsx)(d.Button, {
                         icon: d.A9s,
                         size: "sm",
                         variant: "secondary",
                         onClick: eo,
-                        text: k.intl.string(k.t.t5VZ88)
+                        text: U.intl.string(U.t.t5VZ88)
                     }) : (0, i.jsx)(d.K0, {
                         icon: d.qYV,
                         size: "sm",
                         variant: "secondary",
                         onClick: eo,
-                        "aria-label": k.intl.string(k.t.WqhZss)
+                        "aria-label": U.intl.string(U.t.WqhZss)
                     })
                 }), !n && (0, i.jsx)(c.m, {
-                    text: k.intl.string(k.t.nFP4oa),
+                    text: U.intl.string(U.t.nFP4oa),
                     children: (0, i.jsx)(d.K0, {
                         icon: d.Dl6,
                         size: "sm",
@@ -225,7 +225,7 @@ function V(e) {
                                 jumpType: h.US.INSTANT
                             })
                         },
-                        "aria-label": k.intl.string(k.t.nFP4oa)
+                        "aria-label": U.intl.string(U.t.nFP4oa)
                     })
                 })]
             })]

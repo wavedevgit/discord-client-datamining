@@ -1,7 +1,7 @@
 /** chunk id: 855344 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => I
 });
 var l = n(627968);
 n(64700);
@@ -24,12 +24,12 @@ var i = n(311907),
     C = n(746080),
     N = n(985018),
     E = n(183819);
-let _ = e => {
+let I = e => {
     let {
         roleIcon: t,
         guild: n
     } = e, {
-        name: _
+        name: I
     } = t;
     (0, r.Ay)(() => {
         p.default.track(v.HAw.OPEN_POPOUT, {
@@ -38,19 +38,19 @@ let _ = e => {
             ...(0, o.dI)(h.A.getChannel(f.A.getChannelId(n.id)))
         })
     });
-    let I = (0, i.bG)([A.A], () => null != t.roleId ? A.A.getRole(n.id, t.roleId) : void 0),
-        b = (0, d.U)(I),
+    let _ = (0, i.bG)([A.A], () => null != t.roleId ? A.A.getRole(n.id, t.roleId) : void 0),
+        b = (0, d.U)(_),
         S = b ? N.intl.formatToPlainString(N.t.t0928V, {
-            name: _
+            name: I
         }) : N.intl.formatToPlainString(N.t.UDDkGy, {
-            name: _
+            name: I
         }),
-        T = {
+        j = {
             ...t,
             src: null == t.src ? t.src : (0, u.ux)(t.src, 40),
             size: 40
         },
-        j = b ? () => {
+        T = b ? () => {
             (0, g.pX)(v.BVt.CHANNEL(n.id, C.VV.ROLE_SUBSCRIPTIONS))
         } : () => {
             (0, c.K4)({
@@ -69,7 +69,7 @@ let _ = e => {
                     children: [(0, l.jsx)("div", {
                         className: E.Xq,
                         children: (0, l.jsx)(m.A, {
-                            ...T,
+                            ...j,
                             enableTooltip: !1,
                             className: E.__invalid_roleIcon,
                             enableHeight: !1
@@ -80,7 +80,7 @@ let _ = e => {
                             variant: "heading-md/semibold",
                             className: E.S3,
                             children: (0, l.jsx)(s.A, {
-                                children: _
+                                children: I
                             })
                         }), (0, l.jsx)(a.Text, {
                             variant: "text-sm/normal",
@@ -91,7 +91,7 @@ let _ = e => {
                     size: "sm",
                     variant: "secondary",
                     text: N.intl.string(N.t["H930+H"]),
-                    onClick: j,
+                    onClick: T,
                     icon: a._Jp,
                     fullWidth: !0,
                     autoFocus: !0

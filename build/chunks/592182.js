@@ -36,8 +36,8 @@ var l = n(503698),
     O = n(443493),
     D = n(462226),
     P = n(913948),
-    U = n(329151),
-    k = n(738080),
+    k = n(329151),
+    U = n(738080),
     w = n(648246),
     G = n(305637),
     F = n(652215),
@@ -124,7 +124,7 @@ let W = e => {
                     buttonVariant: "overlay-primary"
                 });
                 if (q) {
-                    let e = (0, i.jsx)(k.A, {
+                    let e = (0, i.jsx)(U.A, {
                             activity: t,
                             user: l,
                             guildId: m,
@@ -132,7 +132,7 @@ let W = e => {
                             source: g,
                             onAction: z
                         }),
-                        n = (0, i.jsx)(U.A, {
+                        n = (0, i.jsx)(k.A, {
                             activity: t,
                             user: l,
                             source: g,
