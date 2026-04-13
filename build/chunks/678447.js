@@ -16,14 +16,14 @@ var s = n(311907),
     g = n(982363),
     _ = n(652215),
     x = n(53516),
-    A = n(985018);
+    h = n(985018);
 
-function h() {
+function A() {
     let e = (0, s.bG)([c.default], () => c.default.getCurrentUser()),
         t = e?.phone ?? null;
     return null == e || null == t ? (0, i.jsx)(l.Text, {
         variant: "text-md/medium",
-        children: A.intl.string(A.t.I5kDqj)
+        children: h.intl.string(h.t.I5kDqj)
     }) : (0, i.jsxs)(l.BJc, {
         direction: "horizontal",
         align: "center",
@@ -32,38 +32,38 @@ function h() {
         children: [(0, i.jsx)(g.q, {
             text: t,
             censor: m.D,
-            revealLabel: A.intl.string(A.t.eY3xlT),
-            hideLabel: A.intl.string(A.t["jllbv+"]),
+            revealLabel: h.intl.string(h.t.eY3xlT),
+            hideLabel: h.intl.string(h.t["jllbv+"]),
             redesign: !0
         }), (0, i.jsx)(l.Button, {
-            text: A.intl.string(A.t.N86XcP),
+            text: h.intl.string(h.t.N86XcP),
             variant: "critical-secondary",
             onClick: () => {
                 (0, l.qfG)(t => (0, i.jsx)(d.default, {
                     ...t,
-                    title: A.intl.string(A.t["3CTiKi"]),
-                    children: e.hasFlag(_.nhx.MFA_SMS) ? A.intl.string(A.t.jrhJyo) : void 0,
-                    actionText: A.intl.string(A.t.N86XcP),
+                    title: h.intl.string(h.t["3CTiKi"]),
+                    children: e.hasFlag(_.nhx.MFA_SMS) ? h.intl.string(h.t.jrhJyo) : void 0,
+                    actionText: h.intl.string(h.t.N86XcP),
                     handleSubmit: e => r.A.removePhone(e, r.d.USER_SETTINGS_UPDATE)
                 }))
             },
-            "aria-label": A.intl.string(A.t.Rpn4A3)
+            "aria-label": h.intl.string(h.t.Rpn4A3)
         })]
     })
 }
 let p = (0, a.Tf)(u.X.ACCOUNT_INFO_PHONE_SETTING, {
     usePredicate: () => (0, s.bG)([c.default], () => c.default.getCurrentUser()?.isClaimed()) ?? !1,
-    useTitle: () => A.intl.string(A.t.kerONq),
+    useTitle: () => h.intl.string(h.t.kerONq),
     useAriaLabel: function() {
-        return null == (0, s.bG)([c.default], () => c.default.getCurrentUser()?.phone) ? A.intl.string(A.t["SfUuE+"]) : A.intl.string(A.t.YDabSe)
+        return null == (0, s.bG)([c.default], () => c.default.getCurrentUser()?.phone) ? h.intl.string(h.t["SfUuE+"]) : h.intl.string(h.t.YDabSe)
     },
     useVariant: () => "secondary",
     useTrailingContent: () => ({
         type: o._1.STRONGLY_DISCOURAGED_CUSTOM,
-        StronglyDiscouragedCustomComponent: h
+        StronglyDiscouragedCustomComponent: A
     }),
     useLabel: function() {
-        return null == (0, s.bG)([c.default], () => c.default.getCurrentUser()?.phone) ? A.intl.string(A.t.OYkgVk) : A.intl.string(A.t.bt75uw)
+        return null == (0, s.bG)([c.default], () => c.default.getCurrentUser()?.phone) ? h.intl.string(h.t.OYkgVk) : h.intl.string(h.t.bt75uw)
     },
     onClick: function() {
         (0, l.mMO)(async () => {

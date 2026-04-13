@@ -1,6 +1,6 @@
 /** chunk id: 798819 params = (module,exports,require) **/
 n.d(t, {
-    p: () => A
+    p: () => h
 });
 var i = n(311907),
     s = n(506774),
@@ -15,7 +15,7 @@ var i = n(311907),
     g = n(406535),
     _ = n(790782),
     x = n(985018);
-let A = (0, r.zD)(u.X.EXPERIMENTAL_UNREADS, {
+let h = (0, r.zD)(u.X.EXPERIMENTAL_UNREADS, {
     useTitle: () => x.intl.string(x.t["k6m/si"]),
     useSubtitle: () => x.intl.string(x.t.LGynPs),
     useValue: () => (0, i.bG)([o.Ay], () => o.Ay.useNewNotifications),

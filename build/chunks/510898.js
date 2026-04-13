@@ -44,15 +44,15 @@ function _(e) {
         route: c.R.HOME
     }), {
         route: x
-    } = l, A = () => {
+    } = l, h = () => {
         _({
             route: c.R.HOME
         })
-    }, h = e => {
+    }, A = e => {
         _({
             route: c.R.SWITCH_APP_PLANS,
             ...e
-        }), n(m.intl.string(m.t.VFqtkP), A)
+        }), n(m.intl.string(m.t.VFqtkP), h)
     }, [p, T] = s.useState({});
     s.useEffect(() => {
         for (let e of t) {
@@ -83,7 +83,7 @@ function _(e) {
                     subscription: e,
                     children: (0, i.jsx)(d.A, {
                         subscription: e,
-                        navigateToSwitchPlan: h,
+                        navigateToSwitchPlan: A,
                         loadingState: S ? d.G.LOADING : p[e.id] ?? d.G.LOADING
                     })
                 }, e.id))
@@ -94,7 +94,7 @@ function _(e) {
             } = l;
             return (0, i.jsx)(u.A, {
                 ...b,
-                navigateToHome: A
+                navigateToHome: h
             });
         default:
             (0, r.xb)(x)

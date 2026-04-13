@@ -16,24 +16,24 @@ var s = n(284009),
     g = n(788868),
     _ = n(652215),
     x = n(985018),
-    A = n(816375);
+    h = n(816375);
 
-function h(e) {
+function A(e) {
     let t, {
             subscription: n,
             withOverheadSeparator: s
         } = e,
         {
-            analyticsLocations: h
+            analyticsLocations: A
         } = (0, o.Ay)(),
         [p] = (0, m.Kq)({
             subscriptionId: n.id,
             renewal: !0,
-            analyticsLocations: h,
+            analyticsLocations: A,
             analyticsLocation: a.A.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT
         });
     if (null == p) return null;
-    let T = s ? A.r : A.a,
+    let T = s ? h.r : h.a,
         f = p.invoiceItems.find(e => {
             let {
                 subscriptionPlanId: t
@@ -74,7 +74,7 @@ function p(e) {
         subscription: t,
         withOverheadSeparator: n
     } = e;
-    return t.status === _.Dmq.CANCELED || t.isPurchasedExternally ? null : (0, i.jsx)(h, {
+    return t.status === _.Dmq.CANCELED || t.isPurchasedExternally ? null : (0, i.jsx)(A, {
         subscription: t,
         withOverheadSeparator: n
     })

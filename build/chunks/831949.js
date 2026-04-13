@@ -1,6 +1,6 @@
 /** chunk id: 831949 params = (module,exports,require) **/
 n.d(t, {
-    C: () => h
+    C: () => A
 });
 var i = n(311907),
     s = n(98207),
@@ -15,9 +15,9 @@ var i = n(311907),
     g = n(272338),
     _ = n(946531),
     x = n(652215),
-    A = n(985018);
-let h = (0, a.zZ)(m.X.SMS_AUTH_CATEGORY, {
-    useTitle: () => A.intl.string(A.t.wuHuI5),
+    h = n(985018);
+let A = (0, a.zZ)(m.X.SMS_AUTH_CATEGORY, {
+    useTitle: () => h.intl.string(h.t.wuHuI5),
     useSubtitle: () => (0, i.bG)([c.default], () => (0, u.BE)(c.default.getCurrentUser(), !0)),
     useHeaderDecoration: () => {
         let e = (0, i.bG)([c.default], () => c.default.getCurrentUser()?.hasFlag(x.nhx.MFA_SMS) ?? !1),
@@ -27,7 +27,7 @@ let h = (0, a.zZ)(m.X.SMS_AUTH_CATEGORY, {
             buttons: [{
                 type: o.UV.BUTTON,
                 id: "sms-setup-button",
-                text: A.intl.string(A.t.Age7yU),
+                text: h.intl.string(h.t.Age7yU),
                 onClick: p,
                 disabled: t
             }]

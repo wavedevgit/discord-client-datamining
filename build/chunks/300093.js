@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(833551),
     _ = n(663677),
     x = n(847521),
-    A = n(9302),
-    h = n(505136),
+    h = n(9302),
+    A = n(505136),
     p = n(370365),
     T = n(686533),
     f = n(985018),
@@ -26,7 +26,7 @@ function E() {
     let [e, t] = s.useState(!1), {
         oopEnabled: n,
         legacyEnabled: E
-    } = (0, l.cf)([g.default], () => g.default.getGlobalEnabledStatus()), b = !(0, A.supportsOutOfProcess)(), C = (0, l.yK)([c.Ay], () => c.Ay.getGamesSeen(!0)).filter(e => !(0, x.n1)(e)), v = (0, d.A)(C.map(e => e.id)), N = e => {
+    } = (0, l.cf)([g.default], () => g.default.getGlobalEnabledStatus()), b = !(0, h.supportsOutOfProcess)(), C = (0, l.yK)([c.Ay], () => c.Ay.getGamesSeen(!0)).filter(e => !(0, x.n1)(e)), v = (0, d.A)(C.map(e => e.id)), N = e => {
         let t = !e && n;
         o.A.setEnabled(E, e);
         let i = c.Ay.getCurrentGameForAnalytics()?.id ?? null;
@@ -51,7 +51,7 @@ function E() {
                 className: S.Kz
             })]
         })
-    }) : (0, i.jsxs)(h.A, {
+    }) : (0, i.jsxs)(A.A, {
         onExpand: t,
         className: e ? S.tx : void 0,
         title: f.intl.string(f.t["7BlVIs"]),

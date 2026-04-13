@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(512513),
     _ = n(915967),
     x = n(775121),
-    A = n(734066),
-    h = n(880144),
+    h = n(734066),
+    A = n(880144),
     p = n(168943),
     T = n(680243),
     f = n(843401),
@@ -374,10 +374,10 @@ function M() {
         u.A.enableAll(!0)
     }), []);
     let e = (0, a.bG)([E.Ay], () => E.Ay.getState()),
-        t = (0, a.bG)([S.Ay], () => (0, h.A)(S.Ay)),
+        t = (0, a.bG)([S.Ay], () => (0, A.A)(S.Ay)),
         n = (0, a.bG)([T.A], () => T.A.isSupported),
-        l = (0, A.sw)(),
-        r = (0, A.BW)();
+        l = (0, h.sw)(),
+        r = (0, h.BW)();
     return (0, i.jsx)(G, {
         keybinds: e,
         canGoLive: t,

@@ -1,12 +1,12 @@
 /** chunk id: 777933 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => I
 }), n(323874), n(14289), n(35956), n(321073);
 var i = n(627968);
 n(64700);
 var s = n(397927),
-    r = n(803316),
-    l = n(207133),
+    l = n(803316),
+    r = n(207133),
     a = n(253932),
     c = n(155078),
     o = n(954571),
@@ -14,34 +14,34 @@ var s = n(397927),
     u = n(723702),
     E = n(837921),
     A = n(179581),
-    p = n(652215),
-    m = n(985018);
+    m = n(652215),
+    p = n(985018);
 let f = /^(tel|sms|mailto):([^?;]+)/,
     g = /\.(png|jpe?g|webp|avif|bmp|svg)(\?|$)/i,
     D = /\.(png|jpe?g|webp|avif|bmp|svg|gif|mp4|webm|mov)(\?|$)/i,
-    h = /^\/emojis\/\d+\./;
+    _ = /^\/emojis\/\d+\./;
 
-function _(e, t, n, _) {
-    let I = (0, l.A)(n?.getChannelId()),
+function I(e, t, n, I) {
+    let h = (0, r.A)(n?.getChannelId()),
         S = a.Q_.useSetting();
     if (!u.isPlatformEmbedded || null == e || "" === e || !S && function(e) {
             try {
-                return h.test(new URL(e).pathname)
+                return _.test(new URL(e).pathname)
             } catch {
                 return !1
             }
-        }(e) || I || _?.shouldHideMediaOptions === !0 || !(0, r.fW)(e)) return null;
-    let L = (0, c.E)(e),
-        N = e => {
-            o.default.track(p.HAw.CONTEXT_MENU_LINK_COPIED, {
-                hostname: L,
+        }(e) || h || I?.shouldHideMediaOptions === !0 || !(0, l.fW)(e)) return null;
+    let N = (0, c.E)(e),
+        y = e => {
+            o.default.track(m.HAw.CONTEXT_MENU_LINK_COPIED, {
+                hostname: N,
                 ...(0, A.N)()
-            }), E.Ay.copy(e), (0, s.showToast)((0, s.createToast)(m.intl.string(m.t["L/PwZf"]), s.ToastType.SUCCESS))
+            }), E.Ay.copy(e), (0, s.showToast)((0, s.createToast)(p.intl.string(p.t["L/PwZf"]), s.ToastType.SUCCESS))
         },
-        O = (n, i) => {
+        L = (n, i) => {
             let s = !0 === i ? e.replace("tel:", "sms:") : e;
-            o.default.track(p.HAw.CONTEXT_MENU_LINK_OPENED, {
-                hostname: L,
+            o.default.track(m.HAw.CONTEXT_MENU_LINK_OPENED, {
+                hostname: N,
                 ...(0, A.N)()
             }), (0, d.h)({
                 href: s,
@@ -49,23 +49,23 @@ function _(e, t, n, _) {
                 shouldConfirm: !0
             }, n)
         },
-        y = [],
-        C = e.match(f);
-    if (null != C) {
-        let e = m.intl.string("mailto" === C[1] ? m.t.ZYLVKo : m.t["3zozoR"]);
-        y.push((0, i.jsx)(s.Drp, {
+        O = [],
+        v = e.match(f);
+    if (null != v) {
+        let e = p.intl.string("mailto" === v[1] ? p.t.ZYLVKo : p.t["3zozoR"]);
+        O.push((0, i.jsx)(s.Drp, {
             id: "copy-native-contact",
             label: e,
             action: () => {
-                N(C[2])
+                y(v[2])
             }
-        }, "copy-native-contact")), "tel" === C[1] && y.push((0, i.jsx)(s.Drp, {
+        }, "copy-native-contact")), "tel" === v[1] && O.push((0, i.jsx)(s.Drp, {
             id: "native-send-sms",
-            label: m.intl.string(m.t["+wbjMW"]),
-            action: e => O(e, !0)
+            label: p.intl.string(p.t["+wbjMW"]),
+            action: e => L(e, !0)
         }, "native-send-sms"))
     }
-    let v = function(e) {
+    let M = function(e) {
             try {
                 let t = new URL(e);
                 return "cdn.discordapp.com" === t.hostname && g.test(t.pathname)
@@ -73,28 +73,28 @@ function _(e, t, n, _) {
                 return !1
             }
         }(e),
-        M = !v && function(e) {
+        C = !M && function(e) {
             try {
                 return D.test(new URL(e).pathname)
             } catch {
                 return !1
             }
         }(e),
-        G = v ? m.t["8xHmxo"] : M ? m.t["92CPQ+"] : m.t.WqhZss,
-        w = v ? m.t.w8ldGK : M ? m.t.q5FbIB : m.t.wuRE8M;
+        T = M ? p.t["8xHmxo"] : C ? p.t["92CPQ+"] : p.t.WqhZss,
+        b = M ? p.t.w8ldGK : C ? p.t.q5FbIB : p.t.wuRE8M;
     return [(0, i.jsx)(s.Drp, {
         id: "copy-native-link",
-        label: m.intl.string(G),
+        label: p.intl.string(T),
         leadingAccessory: {
             type: "icon",
             icon: s.qYV
         },
         action: () => {
-            N(e)
+            y(e)
         }
-    }, "copy-native-link"), ...y, (0, i.jsx)(s.Drp, {
+    }, "copy-native-link"), ...O, (0, i.jsx)(s.Drp, {
         id: "open-native-link",
-        label: m.intl.string(w),
+        label: p.intl.string(b),
         leadingAccessory: {
             type: "icon",
             icon: s.WxK
@@ -103,6 +103,6 @@ function _(e, t, n, _) {
             type: "icon",
             icon: s.I9m
         },
-        action: e => O(e)
+        action: e => L(e)
     }, "open-native-link")]
 }

@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(390370),
     _ = n(191627),
     x = n(221425),
-    A = n(985018),
-    h = n(967082);
+    h = n(985018),
+    A = n(967082);
 
 function p(e) {
     let {
@@ -56,27 +56,27 @@ function p(e) {
         })
     }, [T, t]);
     return (0, i.jsxs)("div", {
-        className: h.kL,
+        className: A.kL,
         children: [(0, i.jsx)("div", {
-            className: h.zH,
+            className: A.zH,
             children: (0, i.jsx)(g.A, {
                 otherUser: t,
                 status: _.Ef.PENDING
             })
         }), (0, i.jsx)("div", {
-            className: h.o1,
+            className: A.o1,
             children: l ? (0, i.jsx)(m.A, {
                 icon: o.PGe,
-                tooltip: A.intl.string(x.default.e5iHmZ),
+                tooltip: h.intl.string(x.default.e5iHmZ),
                 onClick: E
             }) : (0, i.jsxs)(i.Fragment, {
                 children: [p ? null : (0, i.jsx)(m.A, {
                     icon: o.A9s,
-                    tooltip: A.intl.string(x.default.krWQZK),
+                    tooltip: h.intl.string(x.default.krWQZK),
                     onClick: f
                 }), (0, i.jsx)(m.A, {
                     icon: o.PGe,
-                    tooltip: A.intl.string(x.default.bBDeNI),
+                    tooltip: h.intl.string(x.default.bBDeNI),
                     onClick: S
                 })]
             })

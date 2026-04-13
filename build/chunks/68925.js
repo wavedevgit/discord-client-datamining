@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(71393),
     _ = n(473145),
     x = n(927578),
-    A = n(661191),
-    h = n(827693),
+    h = n(661191),
+    A = n(827693),
     p = n(652215),
     T = n(788868),
     f = n(985018),
@@ -30,7 +30,7 @@ function b(e) {
         premiumSubscription: l,
         hasCancelableSlots: a,
         isLast: c
-    } = e, m = s.useRef(null), g = (0, _.I5)(t), x = s.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t.cooldownEndsAt]), h = null != x && x > new Date, b = (0, d.A)(), C = s.useMemo(() => (function(e, t) {
+    } = e, m = s.useRef(null), g = (0, _.I5)(t), x = s.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t.cooldownEndsAt]), A = null != x && x > new Date, b = (0, d.A)(), C = s.useMemo(() => (function(e, t) {
         if (null == e || e === p.TVA.NONE) return "";
         let n = [f.intl.formatToPlainString(f.t["dLlKX/"], {
             numEmojiSlots: T.TG[e].limits.emoji
@@ -57,7 +57,7 @@ function b(e) {
         })
     })(n, t.id), [n, t.id]), v = s.useMemo(() => {
         if ("" !== C) return C;
-        let e = null != t.premiumGuildSubscription ? A.default.extractTimestamp(t.premiumGuildSubscription.id) : 0;
+        let e = null != t.premiumGuildSubscription ? h.default.extractTimestamp(t.premiumGuildSubscription.id) : 0;
         return f.intl.formatToPlainString(f.t.lY2Bur, {
             date: new Date(e)
         })
@@ -83,7 +83,7 @@ function b(e) {
                     variant: "text-sm/medium",
                     color: "text-subtle",
                     children: v
-                }), h && null != x && (0, i.jsxs)(i.Fragment, {
+                }), A && null != x && (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)("div", {
                         className: S.zk
                     }), (0, i.jsx)(o.Text, {
@@ -93,7 +93,7 @@ function b(e) {
                             date: x.toLocaleDateString()
                         })
                     })]
-                }), !h && null != l.trialEndsAt && (0, i.jsxs)(i.Fragment, {
+                }), !A && null != l.trialEndsAt && (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)("div", {
                         className: S.zk
                     }), (0, i.jsx)(o.Text, {
@@ -147,7 +147,7 @@ function C(e) {
         children: [(0, i.jsx)("div", {
             className: S.MY,
             children: null != r ? (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(h.R, {
+                children: [(0, i.jsx)(A.R, {
                     guild: r,
                     className: S.OA
                 }), (0, i.jsx)(o.Button, {
@@ -231,7 +231,7 @@ function v(e) {
     let d = o > x.Ay.getNumIncludedPremiumGuildSubscriptionSlots(n.planId);
     return (0, i.jsx)("div", {
         className: S.kR,
-        children: A.default.keys(a).map(e => (0, i.jsx)(C, {
+        children: h.default.keys(a).map(e => (0, i.jsx)(C, {
             guildId: e,
             slots: a[e],
             premiumSubscription: n,

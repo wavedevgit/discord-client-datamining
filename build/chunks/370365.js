@@ -1,6 +1,6 @@
 /** chunk id: 370365 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => h
 });
 var i = n(627968),
     s = n(64700),
@@ -27,14 +27,14 @@ function x(e) {
     })
 }
 
-function A(e) {
+function h(e) {
     let {
         rawGame: t,
         gameApplication: n,
         supportDisabled: a,
         getEnabledFromStatus: d,
-        onChange: A,
-        clientSettingType: h,
+        onChange: h,
+        clientSettingType: A,
         ariaLabel: p
     } = e, T = (0, l.cf)([o.Ay, u.A, m.A], () => (0, o.xU)(t, o.Ay, u.A, m.A)), f = (0, l.cf)([u.A, m.A], () => (0, o.hw)(t, !1, [u.A, m.A]), [t]), S = d(f), [E, b] = s.useState(S);
     return s.useEffect(() => {
@@ -52,7 +52,7 @@ function A(e) {
                 disabled: a,
                 onChange: e => {
                     let n;
-                    return n = !e && E, void(b(e), A(e, T, f), n && (0, c.L)(h, T.id ?? t?.id ?? null))
+                    return n = !e && E, void(b(e), h(e, T, f), n && (0, c.L)(A, T.id ?? t?.id ?? null))
                 }
             }), (0, i.jsx)("div", {
                 className: _.Kz

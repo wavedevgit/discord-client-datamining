@@ -5,15 +5,15 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(397927),
-    r = n(406704),
-    l = n(439147),
+    l = n(406704),
+    r = n(439147),
     a = n(985018);
 
 function c(e, t) {
-    return (0, r.Id)(t) ? (0, i.jsx)(s.Drp, {
+    return (0, l.Id)(t) ? (0, i.jsx)(s.Drp, {
         id: "mark-unread",
         label: a.intl.string(a.t.RpE9k7),
-        action: () => (0, l.A)(t.id, e.id),
+        action: () => (0, r.A)(t.id, e.id),
         leadingAccessory: {
             type: "icon",
             icon: s.QTh

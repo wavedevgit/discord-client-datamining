@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(178241),
     _ = n(779733),
     x = n(115063),
-    A = n(414736),
-    h = n(927018),
+    h = n(414736),
+    A = n(927018),
     p = n(928830),
     T = n(3137),
     f = n(301656),
@@ -86,7 +86,7 @@ function P(e) {
         description: b.intl.string(b.t.KuYbWN),
         checked: t,
         onChange: e => {
-            e || (0, A._)(h.sn.DISABLE_POGGERMODE), e && (!n || l) ? (0, o.A)({
+            e || (0, h._)(A.sn.DISABLE_POGGERMODE), e && (!n || l) ? (0, o.A)({
                 title: l ? b.intl.string(b.t["FxT+p0"]) : b.intl.string(b.t.TAZ4F9),
                 subtitle: l ? b.intl.string(b.t.gmixrx) : b.intl.string(b.t.jN3t3K),
                 confirmText: b.intl.string(b.t.JFfins),
@@ -281,7 +281,7 @@ function M(e) {
                     var t;
                     null != (t = {
                         shakeIntensity: e
-                    }).shakeIntensity && t.shakeIntensity > s && (0, A._)(h.sn.MORE), a(t, 1)
+                    }).shakeIntensity && t.shakeIntensity > s && (0, h._)(A.sn.MORE), a(t, 1)
                 },
                 onMarkerRender: e => e === I[I.length - 1] ? b.intl.string(b.t["4rbMWc"]) : `${100*e}%`
             })]
@@ -389,12 +389,12 @@ function V(e) {
                 duration: 2e3,
                 intensity: e.shakeIntensity ?? l.shakeIntensity
             })), (0, p.O9)(e), null == t) return;
-        let A = (i = l.confettiEnabled, s = e.confettiEnabled, r = l.enabled, o = e.enabled, (s ?? i) && (o ?? r));
-        0 === t && A && c.fire(a.x, a.y, {
+        let h = (i = l.confettiEnabled, s = e.confettiEnabled, r = l.enabled, o = e.enabled, (s ?? i) && (o ?? r));
+        0 === t && h && c.fire(a.x, a.y, {
             settings: e
         });
-        let h = (d = l.screenshakeEnabled, u = e.screenshakeEnabled, g = l.enabled, _ = e.enabled, (u ?? d) && (_ ?? g));
-        1 === t && h && (0, x.fO)({
+        let A = (d = l.screenshakeEnabled, u = e.screenshakeEnabled, g = l.enabled, _ = e.enabled, (u ?? d) && (_ ?? g));
+        1 === t && A && (0, x.fO)({
             duration: 1e3,
             intensity: e.shakeIntensity ?? l.shakeIntensity
         })
@@ -437,7 +437,7 @@ function F() {
     }, [e]), s.useEffect(() => {
         (0, g._)(O[e])
     }, [e]), s.useEffect(() => {
-        Math.random() > .99 && (0, A._)(h.sn.VISITOR_100)
+        Math.random() > .99 && (0, h._)(A.sn.VISITOR_100)
     }, []), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(u.A, {
             className: C.l3,

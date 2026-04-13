@@ -18,7 +18,7 @@ var i = n(627968),
 function x(e) {
     let {
         onBackClick: t
-    } = e, n = (0, l.bG)([c.A], () => c.A.getAllUnlockedAchievements()), x = s.useMemo(() => Object.values(n).sort((e, t) => t.dateUnlocked - e.dateUnlocked), [n]), A = s.useMemo(() => Object.values(u.l0).filter(d.Vq).filter(e => null == n[e.id]).sort((e, t) => e.rarity - t.rarity), [n]);
+    } = e, n = (0, l.bG)([c.A], () => c.A.getAllUnlockedAchievements()), x = s.useMemo(() => Object.values(n).sort((e, t) => t.dateUnlocked - e.dateUnlocked), [n]), h = s.useMemo(() => Object.values(u.l0).filter(d.Vq).filter(e => null == n[e.id]).sort((e, t) => e.rarity - t.rarity), [n]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(a.DUT, {
             onClick: t,
@@ -68,7 +68,7 @@ function x(e) {
                     }, t)
                 })
             })
-        }), A.length > 0 && (0, i.jsxs)("div", {
+        }), h.length > 0 && (0, i.jsxs)("div", {
             className: _.yF,
             children: [(0, i.jsx)("div", {
                 className: _.if,
@@ -79,7 +79,7 @@ function x(e) {
                 })
             }), (0, i.jsx)("div", {
                 className: _.Eh,
-                children: A.map(e => (0, i.jsx)(m.A, {
+                children: h.map(e => (0, i.jsx)(m.A, {
                     achievementId: e.id
                 }, e.id))
             })]

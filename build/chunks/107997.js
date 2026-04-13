@@ -22,19 +22,19 @@ function x() {
         {
             canStartAuthorization: u,
             hasAlreadyLinked: x,
-            fetched: A
+            fetched: h
         } = (0, a.RD)(n),
-        h = m.intl.string(g.default["1S6oAo"]),
+        A = m.intl.string(g.default["1S6oAo"]),
         p = r.A.useConfig({
             location: "RiotDeprecationInlineNotice"
         }).enabled;
-    return i.useMemo(() => p && null != t && u && n?.connectionEntrypointUrl != null && !x && A ? {
+    return i.useMemo(() => p && null != t && u && n?.connectionEntrypointUrl != null && !x && h ? {
         type: d.lT.INLINE_NOTICE,
         noticeType: "info",
         useText: () => m.intl.format(g.default.DeOsIl, {
             connectionName: t.name,
-            applicationName: h,
+            applicationName: A,
             connectionEntrypointUrl: n.connectionEntrypointUrl
         })
-    } : null, [t, h, n, u, p, x, A])
+    } : null, [t, A, n, u, p, x, h])
 }

@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(801565),
     _ = n(89253),
     x = n(860787),
-    A = n(731854),
-    h = n(985018);
+    h = n(731854),
+    A = n(985018);
 let p = c.isWindows() ? ["BTHENUM", "BTHHFENUM"] : [];
 
 function T(e) {
@@ -29,16 +29,16 @@ function T(e) {
             sourcePage: "voice"
         }), t && (0, i.jsx)(m.A, {
             look: m.k.WARNING,
-            children: h.intl.string(h.t.Ioz3gx)
+            children: A.intl.string(A.t.Ioz3gx)
         })]
     })
 }
 let f = (0, a.zZ)(u.X.VOICE_CATEGORY, {
-    useTitle: () => h.intl.string(h.t.K3lovD),
+    useTitle: () => A.intl.string(A.t.K3lovD),
     useInlineNotice: function() {
         let e = (0, d.I)("voice"),
-            t = (0, r.x5)(A.oh.AUDIO_INPUT),
-            n = (0, r.x5)(A.oh.AUDIO_OUTPUT),
+            t = (0, r.x5)(h.oh.AUDIO_INPUT),
+            n = (0, r.x5)(h.oh.AUDIO_OUTPUT),
             l = s.useMemo(() => {
                 let e = p.some(e => t?.hardwareId?.startsWith(e)),
                     i = p.some(e => n?.hardwareId?.startsWith(e));

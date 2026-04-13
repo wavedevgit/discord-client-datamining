@@ -21,8 +21,8 @@ let _ = function(e) {
         hasGuildAffinitiesOrInGuild: _,
         subscriptionIsPausedOrPausePending: x
     } = e, {
-        subtitle: A,
-        flavor: h
+        subtitle: h,
+        flavor: A
     } = function(e) {
         let {
             hasAppliedGuildBoosts: t,
@@ -64,10 +64,10 @@ let _ = function(e) {
         children: [(0, i.jsx)(s.Heading, {
             variant: "heading-lg/bold",
             className: g.V,
-            children: A
-        }), null != h && (0, i.jsx)(s.Text, {
-            variant: "text-sm/normal",
             children: h
+        }), null != A && (0, i.jsx)(s.Text, {
+            variant: "text-sm/normal",
+            children: A
         })]
     })
 }

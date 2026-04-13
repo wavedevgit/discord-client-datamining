@@ -34,7 +34,7 @@ function x() {
     }, {
         equalityFn: (e, t) => e === t
     }), [x, t]);
-    let A = s.useMemo(() => {
+    let h = s.useMemo(() => {
         let e = [];
         return e.push({
             ..._,
@@ -70,6 +70,6 @@ function x() {
             t(e)
         },
         value: e,
-        options: A
+        options: h
     })
 }

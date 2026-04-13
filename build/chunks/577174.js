@@ -1,6 +1,6 @@
 /** chunk id: 577174 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -15,12 +15,12 @@ var i = n(627968),
     g = n(736455),
     _ = n(876587),
     x = n(985018),
-    A = n(320519);
-let h = e => {
+    h = n(320519);
+let A = e => {
     let {
         navBarSections: t,
         activeSectionId: n
-    } = e, h = {
+    } = e, A = {
         [g.k.HOME]: x.intl.string(x.t.uGRXjS),
         [g.k.WHATS_NEW]: x.intl.string(x.t["mfcR/v"]),
         [g.k.BEST_OF_NITRO]: x.intl.string(x.t.xQKkE8),
@@ -28,35 +28,35 @@ let h = e => {
         [g.k.COMPARE]: x.intl.string(x.t.pwD7If)
     }, p = (0, l.bG)([c.default], () => c.default.getCurrentUser()), T = (0, d.Gh)("premium_marketing_nav_bar") && null != p, f = s.useRef(null), S = Object.values(t).sort((e, t) => e.order - t.order);
     return (0, i.jsxs)(o.A, {
-        className: A.TQ,
+        className: h.TQ,
         transparent: !0,
         children: [(0, i.jsxs)("div", {
-            className: A.Wc,
+            className: h.Wc,
             children: [(0, i.jsxs)("div", {
-                className: A.wG,
+                className: h.wG,
                 children: [(0, i.jsx)(r.tvc, {
-                    className: A.nE,
-                    colorClass: A.oG
+                    className: h.nE,
+                    colorClass: h.oG
                 }), (0, i.jsx)("div", {
-                    className: A.zc,
+                    className: h.zc,
                     children: S.map(e => {
                         let t = n === e.id,
-                            s = h[e.id];
+                            s = A[e.id];
                         return (0, i.jsxs)(r.DUT, {
-                            className: A.S0,
+                            className: h.S0,
                             onClick: e.scrollToSection,
                             children: [(0, i.jsx)(r.Text, {
                                 variant: "text-sm/medium",
                                 color: "text-strong",
                                 children: s
                             }), t && (0, i.jsx)("div", {
-                                className: A.W0
+                                className: h.W0
                             })]
                         }, s)
                     })
                 })]
             }), (0, i.jsxs)("div", {
-                className: A.MQ,
+                className: h.MQ,
                 children: [T && (0, i.jsx)(m.l, {
                     ref: f,
                     size: "sm",

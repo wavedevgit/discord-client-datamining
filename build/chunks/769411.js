@@ -18,7 +18,7 @@ let d = "url(#gradient)",
             progressCircleStrokeSize: m = 2,
             progressCircleVariation: g,
             progressCircleStroke: _
-        } = e, x = 43 + m / 2, A = 2 * Math.PI * x, [h, p] = s.useState(u);
+        } = e, x = 43 + m / 2, h = 2 * Math.PI * x, [A, p] = s.useState(u);
         s.useEffect(() => {
             let e = setTimeout(() => {
                 p(t)
@@ -77,10 +77,10 @@ let d = "url(#gradient)",
                     stroke: b,
                     strokeWidth: m,
                     strokeLinecap: "round",
-                    strokeDasharray: `${A} ${A}`,
+                    strokeDasharray: `${h} ${h}`,
                     className: c,
                     style: {
-                        strokeDashoffset: (1 - h / 100) * A
+                        strokeDashoffset: (1 - A / 100) * h
                     },
                     r: `${x}`,
                     cx: "50%",

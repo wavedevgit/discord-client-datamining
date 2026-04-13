@@ -22,7 +22,7 @@ function m(e) {
         toastContent: m,
         initialStep: g = o.pn.PAYMENT_TYPE,
         overwriteSubscriptionPaymentSource: _ = !1
-    } = e, x = (0, d._V)(), A = (0, d.Y)({
+    } = e, x = (0, d._V)(), h = (0, d.Y)({
         paymentModalArgs: x,
         initialStep: g,
         prependSteps: [],
@@ -52,7 +52,7 @@ function m(e) {
             onSubmit: function(e) {
                 e.preventDefault()
             },
-            children: A
+            children: h
         })
     })
 }

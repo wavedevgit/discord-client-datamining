@@ -15,8 +15,8 @@ var i = n(64700),
     g = n(809697),
     _ = n(500470),
     x = n(33666),
-    A = n(834981),
-    h = n(191627),
+    h = n(834981),
+    A = n(191627),
     p = n(652215),
     T = n(204925);
 
@@ -24,7 +24,7 @@ function f(e) {
     let {
         location: t,
         onMountEffect: n
-    } = e, f = (0, x.A)(), S = (0, A.W1)(), {
+    } = e, f = (0, x.A)(), S = (0, h.W1)(), {
         familyCenterInitialized: E,
         isLoading: b
     } = (0, l.cf)([m.A], () => ({
@@ -58,8 +58,8 @@ function f(e) {
                 is_considered_adult: e,
                 num_of_accepted_links: n,
                 selected_teen_id: l,
-                initial_page: h.zu[i],
-                source: h.iN[t]
+                initial_page: A.zu[i],
+                source: A.iN[t]
             }), o.A.increment({
                 name: s.K.FAMILY_CENTER_VIEW
             })

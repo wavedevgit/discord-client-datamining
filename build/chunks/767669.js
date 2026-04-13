@@ -34,7 +34,7 @@ function g(e) {
             title: m.intl.string(m.t.PsQmzU),
             actionText: m.intl.string(m.t.ajkYcF)
         }))
-    }, [_]), A = s.useCallback(() => {
+    }, [_]), h = s.useCallback(() => {
         let e = t.map(e => {
                 let {
                     consumed: t,
@@ -48,8 +48,8 @@ function g(e) {
         return `${n}\r
 \r
 ${e}`
-    }, [t, g.email]), h = s.useMemo(() => t.length > 0 ? (0, i.jsx)(o.A, {
-        fileContents: A,
+    }, [t, g.email]), A = s.useMemo(() => t.length > 0 ? (0, i.jsx)(o.A, {
+        fileContents: h,
         contentType: "text/plain",
         fileName: "discord_backup_codes.txt",
         children: (0, i.jsx)(l.Button, {
@@ -62,7 +62,7 @@ ${e}`
         size: "sm",
         text: m.intl.string(m.t.xZEzbu),
         onClick: x
-    }), [t.length, A, x]), p = s.useCallback(() => {
+    }), [t.length, h, x]), p = s.useCallback(() => {
         a.A.show({
             title: m.intl.string(m.t["D+aE7g"]),
             body: m.intl.string(m.t.EA4ZEk),
@@ -75,7 +75,7 @@ ${e}`
         description: m.intl.string(m.t.bQwxib),
         children: (0, i.jsxs)(l.ButtonGroup, {
             size: "sm",
-            children: [h, n && (0, i.jsx)(l.Button, {
+            children: [A, n && (0, i.jsx)(l.Button, {
                 variant: "critical-secondary",
                 size: "sm",
                 text: m.intl.string(m.t["D+aE7g"]),

@@ -61,11 +61,11 @@ function _(e, t) {
     } = (0, a._)(), _ = l.get(e) ?? u.get(e);
     r()(null != _ && (_.type === o.Z6.ACCORDION || g(_)), "[useSettingCollapsibleSubtitle] Node is not a collapsible settings node");
     let x = g(_) ? _.collapseAfter ?? 0 : 0,
-        A = _.layout;
+        h = _.layout;
     return s.useMemo(() => {
         let e = x,
             t = [];
-        for (let n of A)
+        for (let n of h)
             if ("useTitle" in n && null != n.useTitle) {
                 if (e > 0) {
                     e--;
@@ -148,5 +148,5 @@ function _(e, t) {
                 index: 2
             })
         })
-    }, [n, x, A, i])
+    }, [n, x, h, i])
 }

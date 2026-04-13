@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(49463),
     _ = n(386976),
     x = n(257433),
-    A = n(32523),
-    h = n(961350),
+    h = n(32523),
+    A = n(961350),
     p = n(71393),
     T = n(957565),
     f = n(222735),
@@ -30,14 +30,14 @@ function b() {
     } = (0, _.op)(), {
         experiments: n,
         overridesInfo: l
-    } = (0, A.hI)(), r = s.useMemo(() => ({
+    } = (0, h.hI)(), r = s.useMemo(() => ({
         ...n,
         ...e
     }), [n, e]), c = s.useMemo(() => ({
         ...l,
         ...t
-    }), [l, t]), u = (0, o.bG)([h.default], () => {
-        let e = h.default.getInstallationForTracking();
+    }), [l, t]), u = (0, o.bG)([A.default], () => {
+        let e = A.default.getInstallationForTracking();
         return null == e ? null : (0, a.v)(e)
     }), [m, g] = s.useState(""), x = (0, f.oC)((0, f.R3)((0, f.Fm)(r), c), m);
     return (0, i.jsxs)("div", {
@@ -89,9 +89,9 @@ function C(e) {
         experimentId: n,
         overrideInfo: l,
         defaultOpen: a
-    } = e, [_, A] = s.useState(a), [p, f] = s.useState(!1), b = s.useCallback(() => {
-        A(e => !e)
-    }, []), C = (0, o.bG)([h.default], () => h.default.getId()), v = (0, x.iN)(t, C), N = (0, x.Fm)(t, C), I = (0, o.yK)([g.A], () => r().sortBy(g.A.getRecentExposures(S.Vh.USER, n), e => {
+    } = e, [_, h] = s.useState(a), [p, f] = s.useState(!1), b = s.useCallback(() => {
+        h(e => !e)
+    }, []), C = (0, o.bG)([A.default], () => A.default.getId()), v = (0, x.iN)(t, C), N = (0, x.Fm)(t, C), I = (0, o.yK)([g.A], () => r().sortBy(g.A.getRecentExposures(S.Vh.USER, n), e => {
         let [t, n] = e;
         return -n
     }).map(e => {
@@ -201,7 +201,7 @@ function v(e) {
         overrideInfo: l
     } = e, [a, c] = s.useState(null != l), [u, _] = s.useState(!1), x = s.useCallback(() => {
         c(e => !e)
-    }, []), A = (0, o.bG)([g.A], () => g.A.getLoadedGuildExperiment(n)), h = (0, o.yK)([g.A], () => r().sortBy(g.A.getRecentExposures(S.Vh.GUILD, n), e => {
+    }, []), h = (0, o.bG)([g.A], () => g.A.getLoadedGuildExperiment(n)), A = (0, o.yK)([g.A], () => r().sortBy(g.A.getRecentExposures(S.Vh.GUILD, n), e => {
         let [t, n] = e;
         return -n
     }).map(e => {
@@ -247,7 +247,7 @@ function v(e) {
             overrideInfo: l
         }), (0, i.jsx)("div", {
             className: E.h_,
-            children: null == A ? (0, i.jsx)(d.Text, {
+            children: null == h ? (0, i.jsx)(d.Text, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
                 children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
@@ -268,7 +268,7 @@ function v(e) {
             }), (0, i.jsx)(d.Text, {
                 variant: "code",
                 className: E.AS,
-                children: null == A ? "None" : JSON.stringify(A, void 0, 2)
+                children: null == h ? "None" : JSON.stringify(h, void 0, 2)
             }), (0, i.jsx)(d.Text, {
                 variant: "text-lg/medium",
                 className: E.id,
@@ -284,7 +284,7 @@ function v(e) {
             }), (0, i.jsx)(d.Text, {
                 variant: "code",
                 className: E.AS,
-                children: 0 === h.length ? "None" : h.join("\n")
+                children: 0 === A.length ? "None" : A.join("\n")
             })]
         }) : (0, i.jsx)("div", {
             className: E.id,

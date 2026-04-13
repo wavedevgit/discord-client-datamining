@@ -20,16 +20,16 @@ function m(e) {
         useTrailingDecoration: m,
         useTitle: g,
         useSubtitle: _
-    } = t, x = m?.(), A = _?.(), {
-        parentPanelNode: h,
+    } = t, x = m?.(), h = _?.(), {
+        parentPanelNode: A,
         parentSidebarItemNode: p
-    } = (0, a.x)(n), T = g?.(), f = h?.useTitle?.(), S = T ?? f, E = (0, o.q)(t);
-    if (null == h || null == S) return null;
+    } = (0, a.x)(n), T = g?.(), f = A?.useTitle?.(), S = T ?? f, E = (0, o.q)(t);
+    if (null == A || null == S) return null;
     let b = null != p ? p.icon : void 0;
     return (0, i.jsx)(d.U, {
         role: "link",
         title: S,
-        description: A,
+        description: h,
         leadingElement: null != b && (0, i.jsx)(r.A, {
             Icon: b
         }),

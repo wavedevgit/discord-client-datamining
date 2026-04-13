@@ -16,20 +16,20 @@ var i = n(627968),
     g = n(944993),
     _ = n(509381),
     x = n(731854),
-    A = n(985018);
-let h = !l.Av;
+    h = n(985018);
+let A = !l.Av;
 
 function p() {
     return (0, r.bG)([u.Ay], () => u.Ay.getMode() === x.TB.PUSH_TO_TALK)
 }
 let T = (0, c.zD)(m.X.VOICE_PUSH_TO_TALK_SETTING, {
     useTitle: function() {
-        return l.Av ? A.intl.string(A.t.tG4Np5) : A.intl.string(A.t.JMyQin)
+        return l.Av ? h.intl.string(h.t.tG4Np5) : h.intl.string(h.t.JMyQin)
     },
     useSubtitle: function() {
         let e = (0, r.bG)([u.Ay], () => u.Ay.getMode());
         return s.useMemo(() => {
-            if (!l.Av && e === x.TB.PUSH_TO_TALK) return A.intl.format(A.t["VHI4+Y"], {
+            if (!l.Av && e === x.TB.PUSH_TO_TALK) return h.intl.format(h.t["VHI4+Y"], {
                 onDownloadClick: () => (0, g._)("Help Text PTT")
             })
         }, [e])
@@ -42,21 +42,21 @@ let T = (0, c.zD)(m.X.VOICE_PUSH_TO_TALK_SETTING, {
     },
     setValue: function(e) {
         var t, s;
-        t = e ? x.TB.PUSH_TO_TALK : x.TB.VOICE_ACTIVITY, s = [d.A.USER_SETTINGS_VOICE_AND_VIDEO], t === x.TB.PUSH_TO_TALK && h && (0, a.openModalLazy)(async () => {
+        t = e ? x.TB.PUSH_TO_TALK : x.TB.VOICE_ACTIVITY, s = [d.A.USER_SETTINGS_VOICE_AND_VIDEO], t === x.TB.PUSH_TO_TALK && A && (0, a.openModalLazy)(async () => {
             let {
                 default: e
             } = await n.e("10919").then(n.bind(n, 556506));
             return t => (0, i.jsx)(e, {
-                title: A.intl.string(A.t.Kdt0Gb),
-                confirmText: A.intl.string(A.t["1WjMbC"]),
-                cancelText: A.intl.string(A.t.BddRzS),
+                title: h.intl.string(h.t.Kdt0Gb),
+                confirmText: h.intl.string(h.t["1WjMbC"]),
+                cancelText: h.intl.string(h.t.BddRzS),
                 onConfirm: () => (0, g._)("PTT Limited Modal"),
-                body: A.intl.string(A.t.NIozvt),
+                body: h.intl.string(h.t.NIozvt),
                 ...t
             })
         }), o.A.setMode(t, void 0, void 0, {
             analyticsLocations: s
         })
     },
-    useSearchTerms: () => [A.intl.string(A.t["pS+K2L"]), A.intl.string(A.t.nuFtHH)]
+    useSearchTerms: () => [h.intl.string(h.t["pS+K2L"]), h.intl.string(h.t.nuFtHH)]
 })

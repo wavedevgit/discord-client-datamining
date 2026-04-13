@@ -22,11 +22,11 @@ let g = e => {
     } = e, {
         canStartAuthorization: _,
         startAuthorization: x,
-        fetched: A
+        fetched: h
     } = (0, c.RD)(n);
-    t = t || !A || !_;
+    t = t || !h || !_;
     let {
-        analyticsLocations: h
+        analyticsLocations: A
     } = (0, d.Ay)(o.A.USER_SETTINGS_CONNECTIONS), p = u.Ay.getApplicationIconURL({
         id: n.id,
         icon: n.icon
@@ -43,7 +43,7 @@ let g = e => {
                         backgroundImage: `url('${p}')`
                     },
                     onClick: () => x({
-                        analyticsLocations: h
+                        analyticsLocations: A
                     }),
                     "aria-label": n.name,
                     disabled: t

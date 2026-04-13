@@ -18,8 +18,8 @@ var i = n(627968),
     g = n(47671),
     _ = n(959443),
     x = n(692798),
-    A = n(793943),
-    h = n(826673),
+    h = n(793943),
+    A = n(826673),
     p = n(422936),
     T = n(234419),
     f = n(792656),
@@ -36,10 +36,10 @@ var i = n(627968),
     R = n(985018),
     L = n(158040);
 let P = () => {
-    (0, h.Dr)(r.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
+    (0, A.Dr)(r.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
         dismissAction: y.i.PRIMARY,
         forceTrack: !0
-    }), (0, A.nf)(A.HP.CLIENT_THEMES), (0, I.default)()
+    }), (0, h.nf)(h.HP.CLIENT_THEMES), (0, I.default)()
 };
 
 function D() {

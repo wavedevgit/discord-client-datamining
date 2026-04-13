@@ -1,6 +1,6 @@
 /** chunk id: 973015 params = (module,exports,require) **/
 n.d(t, {
-    T: () => A
+    T: () => h
 });
 var i = n(934551),
     s = n(824552),
@@ -27,7 +27,7 @@ let g = (0, l.dT)(r.X.CONTENT_AND_SOCIAL_MAIN_TAB, {
         useTitle: () => m.intl.string(m.t["+o1pDZ"]),
         buildLayout: () => [g, _]
     }),
-    A = (0, l.i4)(r.X.CONTENT_AND_SOCIAL_SIDEBAR_ITEM, {
+    h = (0, l.i4)(r.X.CONTENT_AND_SOCIAL_SIDEBAR_ITEM, {
         useTitle: () => m.intl.string(m.t["+o1pDZ"]),
         icon: i.ShieldUserIcon,
         buildLayout: () => [x]

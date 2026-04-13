@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(486020),
     _ = n(253932),
     x = n(652215),
-    A = n(985018),
-    h = n(80281);
+    h = n(985018),
+    A = n(80281);
 let p = new m.nA({
         id: "1337",
         guild_id: "1337",
@@ -50,7 +50,7 @@ function f(e) {
 function S() {
     let e = _.hH.useSetting(),
         t = _.jW.useSetting(),
-        n = s.useMemo(() => [f(A.intl.formatToPlainString(A.t.BknJRT, {}), t ? [{
+        n = s.useMemo(() => [f(h.intl.formatToPlainString(h.t.BknJRT, {}), t ? [{
             emoji: {
                 id: null,
                 name: "\uD83E\uDD40",
@@ -70,7 +70,7 @@ function S() {
             count: 1,
             me_burst: !1,
             burst_count: 0
-        }] : []), f(A.intl.formatToPlainString(A.t["4rDfgM"], {
+        }] : []), f(h.intl.formatToPlainString(h.t["4rDfgM"], {
             link: "https://discord.com/accessibility"
         }))], [t]),
         o = (0, l.bG)([a.A], () => a.A.messageGroupSpacing);
@@ -79,16 +79,16 @@ function S() {
             children: [(0, i.jsx)(r.Heading, {
                 variant: "text-md/medium",
                 color: "text-muted",
-                className: h.Vf,
-                children: A.intl.string(A.t.RC22qg)
+                className: A.Vf,
+                children: h.intl.string(h.t.RC22qg)
             }), (0, i.jsxs)(r.IpV, {
-                className: h.VH,
+                className: A.VH,
                 children: [(0, i.jsx)("ol", {
-                    className: h.DZ,
+                    className: A.DZ,
                     style: {
                         gap: o
                     },
-                    "aria-label": A.intl.string(A.t.xfjsEV),
+                    "aria-label": h.intl.string(h.t.xfjsEV),
                     children: n.map(t => (0, i.jsx)("li", {
                         children: (0, i.jsx)(u.A, {
                             message: t,
@@ -101,9 +101,9 @@ function S() {
                         })
                     }, t.id))
                 }), (0, i.jsxs)("div", {
-                    className: h.Jb,
+                    className: A.Jb,
                     children: [(0, i.jsx)("div", {
-                        className: h.HD,
+                        className: A.HD,
                         children: T.map(e => {
                             let {
                                 status: t,
@@ -115,11 +115,11 @@ function S() {
                                 isMobile: s,
                                 size: r._3J.SIZE_32,
                                 src: g.Ay.getDefaultAvatarURL(void 0, n),
-                                "aria-label": A.intl.string(A.t.VKE5TK)
+                                "aria-label": h.intl.string(h.t.VKE5TK)
                             }, t)
                         })
                     }), (0, i.jsx)(r.Button, {
-                        text: A.intl.string(A.t["2RHHgz"]),
+                        text: h.intl.string(h.t["2RHHgz"]),
                         size: "sm",
                         variant: "primary"
                     })]

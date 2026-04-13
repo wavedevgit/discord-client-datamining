@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(793574),
     _ = n(688810),
     x = n(726649),
-    A = n(611924),
-    h = n(909536),
+    h = n(611924),
+    A = n(909536),
     p = n(166403),
     T = n(954571),
     f = n(927578),
@@ -50,7 +50,7 @@ let F = e => {
         }) : null
     },
     H = () => {
-        (0, A.P)(x.b);
+        (0, h.P)(x.b);
         let e = s.useRef(null),
             t = s.useRef(null),
             n = s.useRef(null),
@@ -68,7 +68,7 @@ let F = e => {
             en = et?.subscription_trial?.sku_id,
             ei = (0, E.ar)(),
             es = (0, S.cg)(),
-            el = (0, h.Gh)("premium-marketing-settings-page"),
+            el = (0, A.Gh)("premium-marketing-settings-page"),
             er = es ?? !1,
             ea = (0, o.bG)([N.A], () => {
                 let e = N.A.getMarketingComponentByType(a.C.BILLING_SETTINGS_NITRO_GIFT_BANNER);

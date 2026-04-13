@@ -19,8 +19,8 @@ var i = n(627968),
     g = n(763754),
     _ = n(20851),
     x = n(544028),
-    A = n(253932),
-    h = n(780964),
+    h = n(253932),
+    A = n(780964),
     p = n(858897),
     T = n(123857),
     f = n(652215),
@@ -88,18 +88,18 @@ let v = {
     }),
     y = () => E.intl.format(E.t.Jae48E, {
         onClick: () => {
-            (0, p.openUserSettings)(h.X.SYNC_FORCED_COLORS)
+            (0, p.openUserSettings)(A.X.SYNC_FORCED_COLORS)
         }
     }),
     O = () => E.intl.format(E.t["5LEQdc"], {
         onAccessibilityClick: () => {
-            (0, p.openUserSettings)(h.X.ACCESSIBILITY_PANEL)
+            (0, p.openUserSettings)(A.X.ACCESSIBILITY_PANEL)
         }
     }),
     R = () => {
-        let e = A.hH.useSetting(),
-            t = A.hD.useSetting(),
-            n = A.rs.useSetting(),
+        let e = h.hH.useSetting(),
+            t = h.hD.useSetting(),
+            n = h.rs.useSetting(),
             {
                 theme: l,
                 messageGroupSpacing: u
@@ -108,9 +108,9 @@ let v = {
                 messageGroupSpacing: c.A.messageGroupSpacing
             })),
             [m] = s.useState(() => I(f.NJ8.DARK)),
-            [h] = s.useState(() => I(f.NJ8.LIGHT)),
+            [A] = s.useState(() => I(f.NJ8.LIGHT)),
             p = t && n,
-            T = (0, o.Mw)(l) ? m : h;
+            T = (0, o.Mw)(l) ? m : A;
         return (0, i.jsx)(d.M1G, {
             children: (0, i.jsx)(d.ZpM, {
                 className: r()(b.VH, C.C2, e ? b.Me : void 0, `group-spacing-${null!=u?u:e?S.y5:S.ES}`),

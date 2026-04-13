@@ -1,6 +1,6 @@
 /** chunk id: 161123 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => h
 });
 var i = n(627968);
 n(64700);
@@ -17,13 +17,13 @@ var s = n(284009),
     _ = n(985018),
     x = n(502040);
 
-function A() {
+function h() {
     let e = (0, r.bG)([m.Ay], () => m.Ay.getOverlayKeybind()),
         t = !(0, g.supportsLegacy)(),
         n = !(0, g.supportsOutOfProcess)(),
-        [s, A] = (0, r.yK)([c.Ay], () => [c.Ay.canShowAdminWarning, c.Ay.getVisibleGame()], []),
-        h = (0, u.NP)(),
-        p = null != A && A.elevated && s && !h,
+        [s, h] = (0, r.yK)([c.Ay], () => [c.Ay.canShowAdminWarning, c.Ay.getVisibleGame()], []),
+        A = (0, u.NP)(),
+        p = null != h && h.elevated && s && !A,
         T = !(0, m.DV)(e?.shortcut ?? []);
     return (0, i.jsx)("div", {
         className: x.hc,

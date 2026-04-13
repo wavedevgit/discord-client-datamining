@@ -20,11 +20,11 @@ let _ = e => {
         } = e,
         _ = (0, a.TM)(),
         x = (0, s.qB1)((0, l.Ay)()),
-        A = x ? g.A : c.A;
+        h = x ? g.A : c.A;
     return t = _ ? x ? u.A : o.A : x ? m.A : d.A, (0, i.jsx)("div", {
         className: n,
         children: (0, i.jsx)(r.A, {
-            fallbackImage: A,
+            fallbackImage: h,
             children: (0, i.jsx)("source", {
                 src: t
             })

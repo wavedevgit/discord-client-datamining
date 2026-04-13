@@ -19,8 +19,8 @@ function m(e) {
         hasCancelableGuildBoostSlot: g,
         premiumSubscription: _,
         onSelect: x,
-        fractionalState: A
-    } = e, h = {
+        fractionalState: h
+    } = e, A = {
         transfer: {
             label: null != t.premiumGuildSubscription ? u.intl.string(u.t["PR0n//"]) : u.intl.string(u.t["+fmEYG"]),
             subtext: t.isOnCooldown() ? u.intl.string(u.t.XnB8M0) : null,
@@ -39,13 +39,13 @@ function m(e) {
     };
     switch (_.status) {
         case d.Dmq.PAST_DUE:
-            h.cancel.disabled = !0, h.cancel.subtext = u.intl.string(u.t.WnL6DV), h.uncancel.disabled = !0;
+            A.cancel.disabled = !0, A.cancel.subtext = u.intl.string(u.t.WnL6DV), A.uncancel.disabled = !0;
             break;
         case d.Dmq.PAUSE_PENDING:
         case d.Dmq.PAUSED:
-            A === c.xc.NONE && (h.transfer.disabled = !0, h.transfer.subtext = u.intl.string(u.t.LiLRRT), h.cancel.subtext = u.intl.string(u.t["1ywaWL"]), h.cancel.disabled = !0, h.uncancel.disabled = !0)
+            h === c.xc.NONE && (A.transfer.disabled = !0, A.transfer.subtext = u.intl.string(u.t.LiLRRT), A.cancel.subtext = u.intl.string(u.t["1ywaWL"]), A.cancel.disabled = !0, A.uncancel.disabled = !0)
     }
-    let p = s.useMemo(() => _.isPausedOrPausePending && A === c.xc.NONE ? (0, i.jsx)(l.Drp, {
+    let p = s.useMemo(() => _.isPausedOrPausePending && h === c.xc.NONE ? (0, i.jsx)(l.Drp, {
         id: "manage-subscription",
         label: u.intl.string(u.t.obRG6Y),
         action: () => (0, a.openUserSettings)(r.X.SUBSCRIPTIONS_PANEL),
@@ -54,7 +54,7 @@ function m(e) {
             type: "icon",
             icon: l.xmO
         }
-    }) : null, [A, _]);
+    }) : null, [h, _]);
     return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated-auto": !0,
         onSelect: x,
@@ -64,8 +64,8 @@ function m(e) {
         onClose: m,
         children: [(0, i.jsx)(l.Drp, {
             id: "apply",
-            label: h.transfer.label,
-            subtext: h.transfer.subtext,
+            label: A.transfer.label,
+            subtext: A.transfer.subtext,
             action: function() {
                 (0, l.mMO)(async () => {
                     let {
@@ -78,11 +78,11 @@ function m(e) {
                     })
                 })
             },
-            disabled: h.transfer.disabled
+            disabled: A.transfer.disabled
         }), (0, o.I5)(t) ? (0, i.jsx)(l.Drp, {
             id: "uncancel",
-            label: h.uncancel.label,
-            subtext: h.uncancel.subtext,
+            label: A.uncancel.label,
+            subtext: A.uncancel.subtext,
             action: function() {
                 (0, l.mMO)(async () => {
                     let {
@@ -94,11 +94,11 @@ function m(e) {
                     })
                 })
             },
-            disabled: h.uncancel.disabled
+            disabled: A.uncancel.disabled
         }) : (0, i.jsx)(l.Drp, {
             id: "cancel",
-            label: h.cancel.label,
-            subtext: h.cancel.subtext,
+            label: A.cancel.label,
+            subtext: A.cancel.subtext,
             action: function() {
                 (0, l.mMO)(async () => {
                     let {
@@ -110,7 +110,7 @@ function m(e) {
                     })
                 })
             },
-            disabled: h.cancel.disabled,
+            disabled: A.cancel.disabled,
             color: "danger"
         }), p]
     })

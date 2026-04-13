@@ -15,15 +15,15 @@ var i = n(934551),
     g = n(105244),
     _ = n(95454),
     x = n(340962),
-    A = n(268305),
-    h = n(205310),
+    h = n(268305),
+    A = n(205310),
     p = n(55899),
     T = n(169783),
     f = n(153088),
     S = n(985018);
 let E = (0, l.t_)(a.X.CHAT_PANEL, {
         useTitle: () => S.intl.string(S.t["/VQax8"]),
-        buildLayout: () => [_.M, u.f, m.z, p.J, A.n, T.p, f.U, x.W, h.o, g.c]
+        buildLayout: () => [_.M, u.f, m.z, p.J, h.n, T.p, f.U, x.W, A.o, g.c]
     }),
     b = [{
         badgeType: r.Xi.STRONGLY_DISCOURAGED_CUSTOM,

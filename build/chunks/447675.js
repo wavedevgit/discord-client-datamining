@@ -16,8 +16,8 @@ var s = n(311907),
     g = n(783420),
     _ = n(811611),
     x = n(788868),
-    A = n(652215),
-    h = n(471074),
+    h = n(652215),
+    A = n(471074),
     p = n(985018),
     T = n(239500),
     f = n(386271);
@@ -57,12 +57,12 @@ function S() {
                 className: T.rf,
                 children: [(0, i.jsx)(r.Heading, {
                     variant: "heading-xl/semibold",
-                    children: p.intl.string(h.default["7OPz+z"])
+                    children: p.intl.string(A.default["7OPz+z"])
                 }), (0, i.jsx)(r.Text, {
                     variant: "text-sm/medium",
-                    children: p.intl.format(null != S ? h.default["PyQY5+"] : h.default.SvqMnV, {
+                    children: p.intl.format(null != S ? A.default["PyQY5+"] : A.default.SvqMnV, {
                         date: n.endDate,
-                        helpCenterLink: c.A.getArticleURL(A.MVz.NITRO_CONTROL_CAMPAIGN)
+                        helpCenterLink: c.A.getArticleURL(h.MVz.NITRO_CONTROL_CAMPAIGN)
                     })
                 }), (0, i.jsx)("div", {
                     className: T.lO,

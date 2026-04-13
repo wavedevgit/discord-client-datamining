@@ -1,6 +1,6 @@
 /** chunk id: 982311 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => h
 });
 var i = n(627968),
     s = n(64700),
@@ -46,25 +46,25 @@ function x(e) {
         })
     })
 }
-let A = function(e) {
+let h = function(e) {
     let {
         onClose: t,
         onClaim: n,
-        code: A,
-        outboundPromotion: h,
+        code: h,
+        outboundPromotion: A,
         transitionState: p
     } = e, [T, f] = s.useState(null), S = (0, u.GV)(), {
         analyticsLocations: E
     } = (0, c.Ay)(d.A.USER_SETTINGS_GIFT_INVENTORY);
     return (s.useEffect(() => {
-        null == A && (0, m.kd)({
-            promotionId: h.id,
+        null == h && (0, m.kd)({
+            promotionId: A.id,
             analyticsLocations: E
         }).then(e => n(e)).catch(e => f(e?.body?.code))
-    }, [A, h.id, n, E]), null != T) ? (0, i.jsx)(x, {
+    }, [h, A.id, n, E]), null != T) ? (0, i.jsx)(x, {
         onClose: t,
         transitionState: p
-    }) : null == A ? (0, i.jsx)(a.y$y, {
+    }) : null == h ? (0, i.jsx)(a.y$y, {
         className: _.Lq
     }) : (0, i.jsx)(l.Modal, {
         title: "",
@@ -80,7 +80,7 @@ let A = function(e) {
             }), (0, i.jsx)(a.Text, {
                 variant: "text-md/normal",
                 className: _.G3,
-                children: h.outboundRedemptionModalBody
+                children: A.outboundRedemptionModalBody
             })]
         }),
         actions: [{
@@ -91,7 +91,7 @@ let A = function(e) {
             text: g.intl.string(g.t["+zx47d"]),
             variant: "primary",
             onClick: () => {
-                let e = (0, m.kc)(A, h);
+                let e = (0, m.kc)(h, A);
                 window.open(e, "_blank")
             }
         }],
@@ -104,7 +104,7 @@ let A = function(e) {
                 label: g.intl.string(g.t.s9LFQh),
                 helperText: g.intl.string(g.t["F+nFTZ"]),
                 children: (0, i.jsx)(o.A, {
-                    value: A,
+                    value: h,
                     buttonColor: r.$n.Colors.BRAND,
                     buttonLook: r.$n.Looks.FILLED,
                     delay: 1e3
