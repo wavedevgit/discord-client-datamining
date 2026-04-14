@@ -1,24 +1,24 @@
 /** chunk id: 803842 params = (module,exports,require) **/
 n.d(t, {
     $0: () => d,
-    $4: () => _,
-    B0: () => s,
-    FK: () => c,
-    cu: () => u
+    $4: () => u,
+    B0: () => c,
+    FK: () => s,
+    cu: () => _
 });
 var a = n(397927),
     i = n(186111),
     r = n(203982),
     o = n(652215);
 let l = () => i.A.hasLayers() || (0, a.ueM)(),
-    c = 21552 == n.j ? {
+    s = 21552 == n.j ? {
         binds: ["right"],
         comboKeysBindGlobal: !0,
         action() {
             if (!l()) return r._.dispatch(o.jej.CAROUSEL_NEXT), !1
         }
     } : null,
-    s = 21552 == n.j ? {
+    c = 21552 == n.j ? {
         binds: ["left"],
         comboKeysBindGlobal: !0,
         action() {
@@ -30,12 +30,12 @@ let l = () => i.A.hasLayers() || (0, a.ueM)(),
         comboKeysBindGlobal: !0,
         action: () => (r._.dispatch(o.jej.MODAL_CAROUSEL_NEXT), !1)
     },
-    _ = {
+    u = {
         binds: ["left", "up"],
         comboKeysBindGlobal: !0,
         action: () => (r._.dispatch(o.jej.MODAL_CAROUSEL_PREV), !1)
     },
-    u = {
+    _ = {
         binds: ["esc"],
         comboKeysBindGlobal: !0,
         action() {

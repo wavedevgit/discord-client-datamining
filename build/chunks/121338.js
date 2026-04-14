@@ -7,8 +7,8 @@ var r = n(627968),
     i = n(158954),
     a = n(397927),
     o = n(176634),
-    _ = n(207963),
-    l = n(750128),
+    l = n(207963),
+    _ = n(750128),
     c = n(969508),
     d = n(520586),
     s = n(818348),
@@ -23,8 +23,8 @@ function m(e) {
     } = e, {
         components: f,
         applicationIconURL: b,
-        applicationName: I,
-        submissionState: C,
+        applicationName: C,
+        submissionState: I,
         error: g,
         validators: h,
         validationErrors: T,
@@ -45,7 +45,7 @@ function m(e) {
                 leading: (0, r.jsx)(a.euF, {
                     src: b,
                     size: a._3J.SIZE_24,
-                    "aria-label": I,
+                    "aria-label": C,
                     className: p.In
                 }),
                 title: t,
@@ -59,11 +59,11 @@ function m(e) {
                     messageType: a.YCn.WARNING,
                     className: p.$Q,
                     children: u.intl.format(u.t["dSTy/w"], {
-                        applicationName: I
+                        applicationName: C
                     })
                 }), (0, r.jsx)("div", {
                     className: p.dK,
-                    children: (0, r.jsx)(_.f5, {
+                    children: (0, r.jsx)(l.f5, {
                         modal: e,
                         validators: h,
                         validationErrors: T,
@@ -79,7 +79,7 @@ function m(e) {
                 }, {
                     variant: "primary",
                     text: u.intl.string(u.t.geKm7t),
-                    loading: C === l.Z.IN_FLIGHT,
+                    loading: I === _.Z.IN_FLIGHT,
                     onClick: v
                 }],
                 actionsFullWidth: !0

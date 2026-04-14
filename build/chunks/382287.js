@@ -1,22 +1,22 @@
 /** chunk id: 382287 params = (module,exports,require) **/
 n.d(t, {
     LJ: () => d,
-    WQ: () => l,
+    WQ: () => _,
     fJ: () => c
 }), n(321073);
 var r = n(565150),
     i = n(453771),
     a = n(927578),
     o = n(788868),
-    _ = n(985018);
+    l = n(985018);
 
-function l(e, t) {
+function _(e, t) {
     let n = i.Hb(i.o2(t));
-    return a.Ay.isPremium(e, o.PremiumTypes.TIER_2) ? _.intl.formatToPlainString(_.t.fxEKdS, {
+    return a.Ay.isPremium(e, o.PremiumTypes.TIER_2) ? l.intl.formatToPlainString(l.t.fxEKdS, {
         maxSize: n
-    }) : a.Ay.isPremium(e, o.PremiumTypes.TIER_1) ? _.intl.formatToPlainString(_.t["Nr+LsZ"], {
+    }) : a.Ay.isPremium(e, o.PremiumTypes.TIER_1) ? l.intl.formatToPlainString(l.t["Nr+LsZ"], {
         maxSize: n
-    }) : _.intl.formatToPlainString(_.t.fxEKdS, {
+    }) : l.intl.formatToPlainString(l.t.fxEKdS, {
         maxSize: n
     })
 }

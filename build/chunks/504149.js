@@ -3,65 +3,65 @@ n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(445887),
-    a = n(765671),
-    s = n(700331),
-    o = n(454290);
+    r = n(64700),
+    a = n(445887),
+    l = n(765671),
+    o = n(700331),
+    s = n(454290);
 
 function d(e) {
     let {
         width: t,
         height: n,
         offset: i,
-        delta: l
-    } = e, r = t > window.innerWidth, a = n > window.innerHeight, s = (window.innerWidth - t) / 2 + i.x, o = (window.innerHeight - n) / 2 + i.y, d = (window.innerWidth + t) / 2 + i.x, u = (window.innerHeight + n) / 2 + i.y, {
-        x: c,
-        y: h
+        delta: r
+    } = e, a = t > window.innerWidth, l = n > window.innerHeight, o = (window.innerWidth - t) / 2 + i.x, s = (window.innerHeight - n) / 2 + i.y, d = (window.innerWidth + t) / 2 + i.x, u = (window.innerHeight + n) / 2 + i.y, {
+        x: h,
+        y: c
     } = i;
-    return r && (c += l.x, s + l.x > 0 && (c = (t - window.innerWidth) / 2), d + l.x < window.innerWidth && (c = (window.innerWidth - t) / 2)), a && (h += l.y, o + l.y > 0 && (h = (n - window.innerHeight) / 2), u + l.y < window.innerHeight && (h = (window.innerHeight - n) / 2)), {
-        x: c,
-        y: h
+    return a && (h += r.x, o + r.x > 0 && (h = (t - window.innerWidth) / 2), d + r.x < window.innerWidth && (h = (window.innerWidth - t) / 2)), l && (c += r.y, s + r.y > 0 && (c = (n - window.innerHeight) / 2), u + r.y < window.innerHeight && (c = (window.innerHeight - n) / 2)), {
+        x: h,
+        y: c
     }
 }
-let u = l.memo(function(e) {
+let u = r.memo(function(e) {
     let {
         children: t
     } = e, {
         scale: n,
         x: u,
-        y: c,
-        setOffset: h,
+        y: h,
+        setOffset: c,
         zoomed: m,
         setZoomed: p
-    } = (0, o.Q)(), {
+    } = (0, s.Q)(), {
         ref: g,
-        width: x,
-        height: f
-    } = (0, a.Ay)(), [A, y] = [x ?? 0, f ?? 0], w = l.useRef(!1), [j, v] = l.useState({
+        width: f,
+        height: A
+    } = (0, l.Ay)(), [x, y] = [f ?? 0, A ?? 0], w = r.useRef(!1), [C, E] = r.useState({
         x: 0,
         y: 0
-    }), C = (e, t) => {
+    }), I = (e, t) => {
         let i = d({
-            width: A * n.goal,
+            width: x * n.goal,
             height: y * n.goal,
             offset: {
                 x: u.goal,
-                y: c.goal
+                y: h.goal
             },
             delta: {
                 x: e,
                 y: t
             }
         });
-        h(i.x, i.y, {
+        c(i.x, i.y, {
             immediate: !0
         })
     };
-    return (0, i.jsx)(r.animated.div, {
+    return (0, i.jsx)(a.animated.div, {
         ref: g,
         onMouseDown: e => {
-            m && 0 === e.button && (e.preventDefault(), w.current = !0, v({
+            m && 0 === e.button && (e.preventDefault(), w.current = !0, E({
                 x: e.clientX,
                 y: e.clientY
             }))
@@ -69,11 +69,11 @@ let u = l.memo(function(e) {
         onMouseUp: e => {
             if (!m) {
                 if (0 === e.button) {
-                    s.l.markActionPerformed(s.N.ZOOM_IN_IMAGE_PRESSED), p(!0);
+                    o.l.markActionPerformed(o.N.ZOOM_IN_IMAGE_PRESSED), p(!0);
                     let t = e.clientX - window.innerWidth / 2,
                         i = e.clientY - window.innerHeight / 2,
-                        l = d({
-                            width: A * n.goal,
+                        r = d({
+                            width: x * n.goal,
                             height: y * n.goal,
                             offset: {
                                 x: 0,
@@ -84,19 +84,19 @@ let u = l.memo(function(e) {
                                 y: -i * (n.goal - 1)
                             }
                         });
-                    h(l.x, l.y)
+                    c(r.x, r.y)
                 }
                 return
-            }(e.clientX - j.x) ** 2 + (e.clientY - j.y) ** 2 < 400 && (s.l.markActionPerformed(s.N.ZOOM_OUT_IMAGE_PRESSED), p(!1)), w.current = !1
+            }(e.clientX - C.x) ** 2 + (e.clientY - C.y) ** 2 < 400 && (o.l.markActionPerformed(o.N.ZOOM_OUT_IMAGE_PRESSED), p(!1)), w.current = !1
         },
-        onMouseMove: e => w.current && C(e.movementX, e.movementY),
-        onWheel: e => !e.ctrlKey && C(-e.deltaX, -e.deltaY),
+        onMouseMove: e => w.current && I(e.movementX, e.movementY),
+        onWheel: e => !e.ctrlKey && I(-e.deltaX, -e.deltaY),
         onMouseLeave: () => w.current = !1,
         onClick: e => e.stopPropagation(),
         style: {
             scale: n,
             x: u,
-            y: c,
+            y: h,
             cursor: m ? "zoom-out" : "zoom-in"
         },
         children: t

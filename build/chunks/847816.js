@@ -7,11 +7,11 @@ var a = n(627968),
     r = n(503698),
     o = n.n(r),
     l = n(311907),
-    c = n(397927),
-    s = n(966327),
+    s = n(397927),
+    c = n(966327),
     d = n(386467),
-    _ = n(449859),
-    u = n(943220),
+    u = n(449859),
+    _ = n(943220),
     m = n(734057),
     p = n(572855),
     A = n(358731),
@@ -25,22 +25,22 @@ let g = i.memo(function(e) {
     return null == n ? null : (0, a.jsx)(A.Ay, {
         children: e => (0, a.jsxs)(d.A.Provider, {
             value: n.guild_id,
-            children: [(0, a.jsx)(s.A, {
+            children: [(0, a.jsx)(c.A, {
                 user: t.author,
-                size: c._3J.SIZE_40,
+                size: s._3J.SIZE_40,
                 className: o()(h.Du, e)
             }), (0, a.jsxs)("div", {
                 className: o()(h.cy, e),
-                children: [(0, a.jsx)(c.M1G, {
+                children: [(0, a.jsx)(s.M1G, {
                     children: (0, a.jsx)("div", {
                         className: h.mG,
-                        children: (0, a.jsx)(u.A, {
+                        children: (0, a.jsx)(_.A, {
                             className: h.fh,
                             message: t,
                             channel: n
                         })
                     })
-                }), (0, a.jsx)(_.A, {
+                }), (0, a.jsx)(u.A, {
                     timestamp: t.timestamp,
                     className: h.vE,
                     tooltipPosition: "bottom"
@@ -67,7 +67,7 @@ function C(e) {
             mode: A.nY.PINNED,
             children: e => (0, a.jsx)(b.A, {
                 onClick: i,
-                icon: c.PGe,
+                icon: s.PGe,
                 tooltip: S.intl.string(S.t.cpT0Cq),
                 className: o()(h.b, e)
             })
