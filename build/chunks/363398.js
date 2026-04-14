@@ -16,8 +16,8 @@ var i = n(627968),
     p = n(997509),
     m = n(652215),
     f = n(411335),
-    h = n(985018),
-    y = n(383799);
+    y = n(985018),
+    h = n(383799);
 let E = f.uh.KEYWORD;
 
 function S(e, t) {
@@ -61,15 +61,15 @@ function S(e, t) {
                     keywordFilter: [...t.triggerMetadata?.keywordFilter ?? [], e]
                 }
             };
-            await _(n, O), j(n), null != T ? (0, a.showToast)((0, a.createToast)(h.intl.string(h.t.wH6L0r), a.ToastType.FAILURE)) : (0, a.showToast)((0, a.createToast)(h.intl.string(h.t["0rdYm2"]), a.ToastType.SUCCESS))
+            await _(n, O), j(n), null != T ? (0, a.showToast)((0, a.createToast)(y.intl.string(y.t.wH6L0r), a.ToastType.FAILURE)) : (0, a.showToast)((0, a.createToast)(y.intl.string(y.t["0rdYm2"]), a.ToastType.SUCCESS))
         }, U = (0, i.jsx)(a.Drp, {
             id: "automod-rules-loading",
-            label: h.intl.string(h.t.ZTNur7)
+            label: y.intl.string(y.t.ZTNur7)
         });
     return D || (U = (0, i.jsxs)(i.Fragment, {
         children: [C && (0, i.jsx)(a.Drp, {
             id: "add-first-rule",
-            label: h.intl.string(h.t.f72Zqb),
+            label: y.intl.string(y.t.f72Zqb),
             action: L,
             disabled: S
         }), O.map(e => {
@@ -89,7 +89,7 @@ function S(e, t) {
                 label: e.name,
                 subtext: (0, i.jsx)(a.Text, {
                     color: "text-muted",
-                    className: y.XX,
+                    className: h.XX,
                     variant: "text-xs/normal",
                     children: t.slice(2)
                 }),
@@ -101,14 +101,14 @@ function S(e, t) {
         }), N && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(a.bXX, {}), (0, i.jsx)(a.Drp, {
                 id: "add-another-rule",
-                label: h.intl.string(h.t["0K5jDE"]),
+                label: y.intl.string(y.t["0K5jDE"]),
                 action: L,
                 disabled: S
             })]
         })]
     })), (0, i.jsx)(a.Drp, {
         id: "guild-automod-add-selection",
-        label: h.intl.formatToPlainString(h.t.Kkjv1m, {
+        label: y.intl.formatToPlainString(y.t.Kkjv1m, {
             keywordCount: R
         }),
         leadingAccessory: {

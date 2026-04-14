@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(735438),
     r = n.n(i),
     l = n(265422),
-    o = n(851109),
-    s = n(734057),
+    s = n(851109),
+    o = n(734057),
     a = n(186111),
     d = n(309010),
     c = n(203982),
@@ -18,12 +18,12 @@ let _ = {
         action: () => !(a.A.getLayers().length > 0) && ((() => {
             let {
                 notificationCenterVariant: e
-            } = (0, o.GE)({
+            } = (0, s.GE)({
                 location: "TOGGLE_INBOX"
             });
             if ("sidebar" !== e) return;
             let t = d.A.getChannelId(),
-                n = s.A.getChannel(t);
+                n = o.A.getChannel(t);
             return window.location.pathname.startsWith(u.BVt.CHANNEL(u.gNP)) && null != n ? (0, l.i)(n.guild_id, t) : (0, l.a)(u.BVt.CHANNEL(u.gNP, t ?? void 0))
         })(), c._.dispatch(u.jej.TOGGLE_INBOX), !1)
     },

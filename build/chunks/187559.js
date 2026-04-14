@@ -1,29 +1,24 @@
 /** chunk id: 187559 params = (module,exports,require) **/
 n.d(t, {
-    MH: () => d,
-    f1: () => r,
-    j6: () => a
+    MH: () => o,
+    j6: () => s
 });
 var i = n(954571),
-    s = n(324593),
+    r = n(324593),
     l = n(652215);
 
-function r() {
-    i.default.track(l.HAw.USER_SETTINGS_SEARCH_PRESS)
-}
-
-function a() {
+function s() {
     i.default.track(l.HAw.USER_SETTINGS_SEARCH_QUERY_ENTERED, {
-        search_session_id: s.A.getSearchSessionId()
+        search_session_id: r.A.getSearchSessionId()
     })
 }
 
-function d(e) {
+function o(e) {
     let {
         searchSessionDuration: t
     } = e;
     i.default.track(l.HAw.USER_SETTINGS_SEARCH_CLOSED, {
-        search_session_id: s.A.getSearchSessionId(),
+        search_session_id: r.A.getSearchSessionId(),
         search_session_duration_ms: t
     })
 }

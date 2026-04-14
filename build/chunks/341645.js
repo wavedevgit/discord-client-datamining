@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(503698),
-    r = n.n(l),
-    s = n(311907),
+    s = n.n(l),
+    r = n(311907),
     o = n(451988),
     d = n(397927),
     c = n(212245),
@@ -32,9 +32,9 @@ var i = n(627968),
     L = n(486020),
     R = n(927813),
     P = n(403362),
-    M = n(218394),
-    w = n(255345),
-    D = n(652215),
+    w = n(218394),
+    D = n(255345),
+    M = n(652215),
     k = n(360469),
     O = n(768349),
     U = n(985018),
@@ -42,7 +42,7 @@ var i = n(627968),
 let G = a.memo(e => {
     let {
         start: t
-    } = e, [n, i] = a.useState(0), l = (0, M.j)(), r = (0, s.bG)([u.A], () => u.A.useReducedMotion), d = !1 === l || r;
+    } = e, [n, i] = a.useState(0), l = (0, w.j)(), s = (0, r.bG)([u.A], () => u.A.useReducedMotion), d = !1 === l || s;
     return a.useEffect(() => {
         let e = new o.IX;
         return e.start(d ? 15 * R.A.Millis.SECOND : R.A.Millis.SECOND, () => {
@@ -62,21 +62,21 @@ let F = a.memo(function(e) {
             analyticsLocations: v
         } = (0, A.Ay)(g.A.ACTIVITY_INSTANCE_EMBED),
         R = (0, c.p)(),
-        M = (0, s.bG)([y.A], () => y.A.getChannel(l), [l]),
-        F = M?.isThread?.() ? M?.parent_id : l,
-        H = (0, s.bG)([T.default], () => T.default.getId()),
+        w = (0, r.bG)([y.A], () => y.A.getChannel(l), [l]),
+        F = w?.isThread?.() ? w?.parent_id : l,
+        H = (0, r.bG)([T.default], () => T.default.getId()),
         {
             embeddedActivity: V,
             currentEmbeddedActivity: q,
             activityLaunchState: W
-        } = (0, s.cf)([_.Ay], () => ({
+        } = (0, r.cf)([_.Ay], () => ({
             embeddedActivity: _.Ay.getEmbeddedActivitiesForChannel(F ?? "").find(e => e.applicationId === n.id),
             currentEmbeddedActivity: _.Ay.getCurrentEmbeddedActivity(),
             activityLaunchState: _.Ay.getLaunchState(n.id, F ?? void 0)
         }), [F, n.id]),
         z = V?.userIds,
-        Y = (0, s.yK)([N.default], () => Array.from(z ?? []).map(e => N.default.getUser(e)).filter(P.Vq), [z]),
-        Q = (0, s.bG)([S.A], () => {
+        Y = (0, r.yK)([N.default], () => Array.from(z ?? []).map(e => N.default.getUser(e)).filter(P.Vq), [z]),
+        Q = (0, r.bG)([S.A], () => {
             if (null == z) return null;
             for (let e of z) {
                 let t = S.A.findActivity(e, e => e.application_id === n.id);
@@ -95,19 +95,19 @@ let F = a.memo(function(e) {
             application: X
         }),
         Z = null == V,
-        $ = (0, w.I3)({
+        $ = (0, D.I3)({
             embeddedActivity: V,
             joinability: J,
             currentEmbeddedActivity: q,
-            channel: M
+            channel: w
         }),
         ee = a.useId(),
         et = null != W && W.isLaunching && W.componentId === ee,
         en = async () => {
-            j.default.track(D.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
+            j.default.track(M.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
                 application_id: n.id,
                 channel_id: l,
-                channel_type: M?.type,
+                channel_type: w?.type,
                 is_activity_start: Z,
                 cta: "Play"
             }), Z ? await (0, h.A)({
@@ -125,10 +125,10 @@ let F = a.memo(function(e) {
                 componentId: ee
             })
         }, ei = $.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), ea = (0, I.F)(X, () => {
-            j.default.track(D.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
+            j.default.track(M.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
                 application_id: n.id,
                 channel_id: l,
-                channel_type: M?.type,
+                channel_type: w?.type,
                 cta: "View"
             })
         }), el = L.Ay.getApplicationIconURL({
@@ -137,11 +137,11 @@ let F = a.memo(function(e) {
             bot: n.bot
         });
     $.disabled && (t = $.tooltip);
-    let er = Y.length,
-        es = Q?.timestamps?.start ?? Q?.created_at,
+    let es = Y.length,
+        er = Q?.timestamps?.start ?? Q?.created_at,
         eo = (0, C.y)({
             activity: Q,
-            activityUsersCount: er
+            activityUsersCount: es
         }),
         ed = [{
             label: $.text,
@@ -164,7 +164,7 @@ let F = a.memo(function(e) {
             }) : (0, i.jsxs)(i.Fragment, {
                 children: [null != K && (0, i.jsxs)("div", {
                     className: B.oL,
-                    children: [null != es && (0, i.jsxs)("div", {
+                    children: [null != er && (0, i.jsxs)("div", {
                         className: B.DT,
                         children: [(0, i.jsx)("div", {
                             className: B.y9,
@@ -176,11 +176,11 @@ let F = a.memo(function(e) {
                             variant: "text-xs/medium",
                             color: "none",
                             children: (0, i.jsx)(G, {
-                                start: es
+                                start: er
                             })
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: r()(B.DT, B.PK),
+                        className: s()(B.DT, B.PK),
                         children: [(0, i.jsx)("div", {
                             children: (0, i.jsx)(d.ueQ, {
                                 size: "xxs",
@@ -193,7 +193,7 @@ let F = a.memo(function(e) {
                             children: K
                         })]
                     })]
-                }), er > 0 && (0, i.jsx)(C.$, {
+                }), es > 0 && (0, i.jsx)(C.$, {
                     activityUsers: Y,
                     guildId: o,
                     activityText: eo.text

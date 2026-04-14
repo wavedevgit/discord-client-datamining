@@ -1,13 +1,13 @@
 /** chunk id: 873297 params = (module,exports,require) **/
 "use strict";
 s.d(t, {
-    A: () => S
+    A: () => A
 });
 var n = s(627968),
     r = s(64700),
     l = s(158954),
-    i = s(311907),
-    a = s(230109),
+    a = s(311907),
+    i = s(230109),
     o = s(688810),
     c = s(871123),
     d = s(733391),
@@ -21,160 +21,155 @@ var n = s(627968),
     x = s(954571),
     E = s(440938),
     b = s(652215),
-    C = s(985018),
-    A = s(669159);
-let S = e => {
-    let t, s, S, {
-            onDismiss: v,
-            skuIds: I,
-            endTime: L,
-            tab: j,
-            applicationId: O,
-            headerText: T,
-            shopButtonText: k,
-            analyticsSection: y,
-            analyticsTileType: N,
-            analyticsImpressionType: R,
-            backgroundImageUrl: B
+    C = s(669159);
+let A = e => {
+    let t, s, A, {
+            onDismiss: S,
+            skuIds: v,
+            tab: I,
+            applicationId: L,
+            headerText: j,
+            shopButtonText: O,
+            analyticsSection: k,
+            analyticsTileType: T,
+            analyticsImpressionType: y,
+            backgroundGradient: N,
+            logoUrl: R
         } = e,
-        P = (0, i.bG)([_.A], () => _.A.getGuildIdFromApplicationId(O), [O]),
-        M = (t = r.useRef([]), r.useEffect(() => {
-            if (null != P)
-                for (let e of I)(0, d.qf)(P, e)
-        }, [I, P]), s = (0, i.bG)([f.A], () => !I.some(e => f.A.isFetching(e)) && I.some(e => f.A.didFetchingSkuFail(e)), [I]), r.useEffect(() => {
-            s && null != P && (0, d.Rw)(P)
-        }, [s, P]), S = (0, i.yK)([f.A, _.A], () => {
-            if (I.some(e => f.A.isFetching(e))) return t.current;
-            let e = I.filter(e => null != f.A.get(e));
-            if (e.length >= I.length) return I;
-            if (null == P) return e;
-            let s = _.A.getStorefrontData(P);
+        B = (0, a.bG)([_.A], () => _.A.getGuildIdFromApplicationId(L), [L]),
+        P = (t = r.useRef([]), r.useEffect(() => {
+            if (null != B)
+                for (let e of v)(0, d.qf)(B, e)
+        }, [v, B]), s = (0, a.bG)([f.A], () => !v.some(e => f.A.isFetching(e)) && v.some(e => f.A.didFetchingSkuFail(e)), [v]), r.useEffect(() => {
+            s && null != B && (0, d.Rw)(B)
+        }, [s, B]), A = (0, a.yK)([f.A, _.A], () => {
+            if (v.some(e => f.A.isFetching(e))) return t.current;
+            let e = v.filter(e => null != f.A.get(e));
+            if (e.length >= v.length) return v;
+            if (null == B) return e;
+            let s = _.A.getStorefrontData(B);
             if (null == s || "loading" === s.state) return e;
-            let n = new Set(I);
-            return [...e, ...null != s.storefront ? (0, c.jd)(s.storefront).filter(e => !n.has(e) && null != f.A.get(e)) : []].slice(0, I.length)
-        }, [I, P]), r.useEffect(() => {
-            S.length > 0 && (t.current = S)
-        }, [S]), S);
+            let n = new Set(v);
+            return [...e, ...null != s.storefront ? (0, c.jd)(s.storefront).filter(e => !n.has(e) && null != f.A.get(e)) : []].slice(0, v.length)
+        }, [v, B]), r.useEffect(() => {
+            A.length > 0 && (t.current = A)
+        }, [A]), A);
     (0, p.j)({
-        skuIds: M,
+        skuIds: P,
         location: "GamePromotionBanner"
     });
-    let H = (0, E.uM)(),
+    let M = (0, E.uM)(),
         {
-            analyticsLocations: D
+            analyticsLocations: H
         } = (0, o.Ay)(),
-        w = r.useRef(null),
-        F = r.useRef(!1),
-        G = r.useRef(null),
-        U = r.useMemo(() => ({
-            pageSection: y
-        }), [y]),
-        V = C.intl.formatToPlainString(C.t.BXpdIg, {
-            days: Math.max(Math.floor((new Date(L).getTime() - Date.now()) / 864e5), 1)
-        }),
-        W = r.useCallback((e, t) => {
+        D = r.useRef(null),
+        w = r.useRef(!1),
+        F = r.useRef(null),
+        G = r.useMemo(() => ({
+            pageSection: k
+        }), [k]),
+        U = r.useCallback((e, t) => {
             x.default.track(b.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-                collectibles_shop_session_id: H?.sessionId,
-                page_type: j,
-                page_category: H?.pageCategory,
-                page_section: H?.pageSection,
-                tile_type: N,
+                collectibles_shop_session_id: M?.sessionId,
+                page_type: I,
+                page_category: M?.pageCategory,
+                page_section: M?.pageSection,
+                tile_type: T,
                 cta_name: e,
                 ...null != t ? {
                     sku_id: t
                 } : void 0
             })
-        }, [H?.sessionId, H?.pageCategory, H?.pageSection, j, N]),
-        K = r.useCallback(() => {
-            null != P && (0, g.X)({
-                guildId: P
+        }, [M?.sessionId, M?.pageCategory, M?.pageSection, I, T]),
+        V = r.useCallback(() => {
+            null != B && (0, g.X)({
+                guildId: B
             })
-        }, [P]),
-        z = r.useCallback(() => {
-            null != P && (W("go_to_game_shop"), (0, g.default)({
-                guildId: P
+        }, [B]),
+        W = r.useCallback(() => {
+            null != B && (U("go_to_game_shop"), (0, g.default)({
+                guildId: B
             }))
-        }, [W, P]),
-        Y = r.useCallback((e, t) => {
+        }, [U, B]),
+        z = r.useCallback((e, t) => {
             let {
                 skuId: s,
                 applicationId: n
             } = t;
-            W("card_click", s), (0, m.R)({
+            U("card_click", s), (0, m.R)({
                 skuId: s,
                 applicationId: n,
                 isStorefront: !1,
-                analyticsLocations: D
+                analyticsLocations: H
             })
-        }, [W, D]),
-        $ = r.useCallback(() => {
-            W("dismiss"), v()
-        }, [W, v]),
-        Z = r.useCallback(e => {
-            !F.current && (e && null === G.current ? G.current = setTimeout(() => {
-                F.current = !0, G.current = null, x.default.track(b.HAw.COLLECTIBLES_TILE_IMPRESSION, {
-                    collectibles_shop_session_id: H?.sessionId,
-                    page_type: j,
-                    page_category: H?.pageCategory,
-                    page_section: H?.pageSection,
-                    type: R
+        }, [U, H]),
+        K = r.useCallback(() => {
+            U("dismiss"), S()
+        }, [U, S]),
+        Y = r.useCallback(e => {
+            !w.current && (e && null === F.current ? F.current = setTimeout(() => {
+                w.current = !0, F.current = null, x.default.track(b.HAw.COLLECTIBLES_TILE_IMPRESSION, {
+                    collectibles_shop_session_id: M?.sessionId,
+                    page_type: I,
+                    page_category: M?.pageCategory,
+                    page_section: M?.pageSection,
+                    type: y
                 })
-            }, 1e3) : e || null === G.current || (clearTimeout(G.current), G.current = null))
-        }, [H?.sessionId, H?.pageCategory, H?.pageSection, j, R]);
+            }, 1e3) : e || null === F.current || (clearTimeout(F.current), F.current = null))
+        }, [M?.sessionId, M?.pageCategory, M?.pageSection, I, y]);
     return (r.useEffect(() => () => {
-        null !== G.current && (clearTimeout(G.current), G.current = null)
-    }, []), 0 === M.length) ? null : (0, n.jsx)(a.L, {
-        innerRef: w,
-        onChange: Z,
+        null !== F.current && (clearTimeout(F.current), F.current = null)
+    }, []), 0 === P.length) ? null : (0, n.jsx)(i.L, {
+        innerRef: D,
+        onChange: Y,
         threshold: 0,
         children: (0, n.jsx)("div", {
-            ref: w,
-            className: A.YB,
+            ref: D,
+            className: C.YB,
             children: (0, n.jsxs)("div", {
-                className: A.kL,
-                style: null != B ? {
-                    backgroundImage: `url(${B})`
-                } : void 0,
-                children: [(0, n.jsx)("div", {
-                    className: A.b,
+                className: C.kL,
+                children: [null != N && (0, n.jsx)("div", {
+                    className: C.D7,
+                    style: {
+                        background: N
+                    }
+                }), (0, n.jsx)("div", {
+                    className: C.b,
                     children: (0, n.jsx)(l.JnF, {
                         size: "sm",
                         variant: "icon-only",
-                        onClick: $
+                        onClick: K
                     })
-                }), (0, n.jsxs)("div", {
-                    className: A.xf,
-                    children: [(0, n.jsx)("div", {
-                        className: A.qw,
-                        children: (0, n.jsx)(l.Exy, {
-                            type: {
-                                text: `${C.intl.string(C.t.yYEZGi)} (${V})`
-                            },
-                            variant: "brand"
-                        })
-                    }), (0, n.jsxs)("div", {
-                        className: A.B5,
+                }), null != R && (0, n.jsx)("img", {
+                    className: C.wm,
+                    src: R,
+                    alt: ""
+                }), (0, n.jsx)("div", {
+                    className: C.xf,
+                    children: (0, n.jsxs)("div", {
+                        className: C.B5,
                         children: [(0, n.jsx)(l.DZT, {
-                            variant: "heading-xl/semibold",
+                            variant: "heading-lg/semibold",
                             color: "always-white",
-                            children: T
+                            children: j
                         }), (0, n.jsx)(l.$nd, {
                             variant: "overlay-primary",
+                            size: "sm",
                             icon: l.I9m,
                             iconPosition: "end",
-                            text: k,
-                            onMouseDown: K,
-                            onClick: z
+                            text: O,
+                            onMouseDown: V,
+                            onClick: W
                         })]
-                    })]
+                    })
                 }), (0, n.jsx)(u.E9, {
-                    newValue: U,
+                    newValue: G,
                     children: (0, n.jsx)("div", {
-                        className: A.$2,
-                        children: M.map((e, t) => (0, n.jsx)(h.A, {
+                        className: C.$2,
+                        children: P.map((e, t) => (0, n.jsx)(h.A, {
                             skuId: e,
                             positionInSection: t,
-                            onClick: Y
+                            onClick: z
                         }, e))
                     })
                 })]

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(158954),
-    r = n(311907),
-    s = n(990078),
+    s = n(311907),
+    r = n(990078),
     o = n(397927),
     d = n(442433),
     c = n(212245),
@@ -79,7 +79,7 @@ class C extends a.PureComponent {
         let {
             fullWidth: n,
             size: a,
-            disabledVariant: r = "secondary",
+            disabledVariant: s = "secondary",
             tooltipPosition: o
         } = this.props;
         return (0, i.jsxs)("div", {
@@ -88,9 +88,9 @@ class C extends a.PureComponent {
                 text: e,
                 fullWidth: n,
                 size: a,
-                variant: r,
+                variant: s,
                 disabled: !0
-            }), (0, i.jsx)(s.m, {
+            }), (0, i.jsx)(r.m, {
                 text: t,
                 position: o,
                 children: (0, i.jsx)("div", {
@@ -105,18 +105,18 @@ class C extends a.PureComponent {
             size: t,
             variant: n,
             isLaunchable: a,
-            isLaunching: r,
-            isRunning: s,
+            isLaunching: s,
+            isRunning: r,
             hideNotLaunchable: d
         } = this.props;
-        return a ? s ? this.renderDisabledButton(x.intl.string(x.t["3elwAB"])) : (0, i.jsxs)(l.e2v, {
+        return a ? r ? this.renderDisabledButton(x.intl.string(x.t["3elwAB"])) : (0, i.jsxs)(l.e2v, {
             size: t,
             wrap: !1,
             fullWidth: e,
             children: [(0, i.jsx)(l.$nd, {
                 text: x.intl.string(x.t["359Pbd"]),
                 variant: n,
-                loading: r,
+                loading: s,
                 onClick: this.handleClick
             }), this.hasMultipleLaunchOptions() ? (0, i.jsx)(l.K0, {
                 icon: o.abt,
@@ -132,12 +132,12 @@ function E(e) {
     let {
         applicationId: t,
         libraryApplication: n
-    } = e, a = (0, c.p)(), [l, s] = (0, r.yK)([m.A, _.A, h.A], () => [m.A.isConnected(t) || _.A.isLaunchable(t) || null != n && h.A.isLaunchable(n.id, n.branchId), _.A.launchingGames.has(t)], [t, n]), o = (0, r.bG)([u.Ay], () => new Set(u.Ay.getRunningVerifiedApplicationIds()).has(t), [t]), d = (0, r.bG)([h.A], () => null != n ? h.A.getState(n.id, n.branchId) : null, [n]);
+    } = e, a = (0, c.p)(), [l, r] = (0, s.yK)([m.A, _.A, h.A], () => [m.A.isConnected(t) || _.A.isLaunchable(t) || null != n && h.A.isLaunchable(n.id, n.branchId), _.A.launchingGames.has(t)], [t, n]), o = (0, s.bG)([u.Ay], () => new Set(u.Ay.getRunningVerifiedApplicationIds()).has(t), [t]), d = (0, s.bG)([h.A], () => null != n ? h.A.getState(n.id, n.branchId) : null, [n]);
     return (0, i.jsx)(C, {
         ...e,
         analyticsContext: a,
         isLaunchable: l,
-        isLaunching: s,
+        isLaunching: r,
         isRunning: o,
         dispatchState: d
     })

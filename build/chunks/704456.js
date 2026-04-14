@@ -2,7 +2,7 @@
 n.d(t, {
     Ce: () => m,
     kh: () => p,
-    le: () => h,
+    le: () => y,
     vr: () => f
 });
 var i, l = n(64700),
@@ -47,7 +47,7 @@ function f(e) {
         name: A.intl.string(A.t.J90oLW)
     }) : void 0, [t, e])
 }
-async function h(e, t) {
+async function y(e, t) {
     if (t?.type === g.rbe.UNKNOWN && null == e.saveData.guildId) try {
         let t = await o.A.fetchChannel(e.saveData.channelId);
         if (null == t.recipients || t.recipients.length > 1) return;

@@ -3,18 +3,18 @@ n.d(t, {
     Jf: () => _,
     TA: () => u,
     VF: () => h,
-    hH: () => c,
+    hH: () => d,
     nL: () => m,
-    pp: () => d
+    pp: () => c
 });
 var a = n(64700),
     l = n(735438),
-    i = n(58149),
-    s = n(734057),
+    s = n(58149),
+    i = n(734057),
     r = n(954571),
     o = n(652215);
 
-function d(e, t, n) {
+function c(e, t, n) {
     r.default.track(o.HAw.FORWARD_MESSAGE_STARTED, {
         channel_id: e,
         message_id: t,
@@ -22,7 +22,7 @@ function d(e, t, n) {
     })
 }
 
-function c(e) {
+function d(e) {
     let {
         channelId: t,
         messageId: n,
@@ -43,8 +43,8 @@ function u(e) {
         messageId: n,
         hasError: a,
         hasContextMessage: l,
-        numDestinations: d,
-        numDestinationChanges: c,
+        numDestinations: c,
+        numDestinationChanges: d,
         numQueryChanges: u,
         anyDestinationHasSlowmode: _,
         source: m
@@ -54,17 +54,17 @@ function u(e) {
             message_id: n,
             has_error: a,
             has_context_message: l,
-            num_destinations: d,
-            num_destination_changes: c,
+            num_destinations: c,
+            num_destination_changes: d,
             num_query_changes: u,
             any_destination_has_slowmode: _
         }), "message-shortcut" === m) {
-        let e = s.A.getChannel(t);
+        let e = i.A.getChannel(t);
         r.default.track(o.HAw.MESSAGE_SHORTCUT_ACTION_SENT, {
             action: "forward",
             original_message_id: n,
-            ...(0, i.H$)(e?.guild_id),
-            ...(0, i.dI)(e)
+            ...(0, s.H$)(e?.guild_id),
+            ...(0, s.dI)(e)
         })
     }
 }

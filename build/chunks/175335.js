@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(503698),
-    r = n.n(l),
-    s = n(110259),
+    s = n.n(l),
+    r = n(110259),
     o = n(311907),
     d = n(827734),
     c = n(732955),
@@ -42,14 +42,14 @@ function y(e) {
         }), await (0, g.A)(v.BVt.SERVER_SHOP(t))
     }, [t]);
     (0, m.A)({
-        type: s.ImpressionTypes.VIEW,
-        name: s.ImpressionNames.GUILD_SHOP_EMBED
+        type: r.ImpressionTypes.VIEW,
+        name: r.ImpressionNames.GUILD_SHOP_EMBED
     }, {
         disableTrack: null == n
     });
     let L = N.length > 0 ? new Date(Math.min(...N.map(e => Date.parse(e.published_at)))) : void 0;
     return l || !S ? (0, i.jsx)("div", {
-        className: r()(T.lm, T.dc),
+        className: s()(T.lm, T.dc),
         children: (0, i.jsx)(u.y$y, {})
     }) : null == n || null == y ? null : (0, i.jsxs)("div", {
         className: T.lm,

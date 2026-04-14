@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(284009),
-    r = n.n(l),
-    s = n(311907),
+    s = n.n(l),
+    r = n(311907),
     o = n(397927),
     d = n(241524),
     c = n(289397),
@@ -52,7 +52,7 @@ function S(e) {
     let {
         coverImageAsset: t,
         isPreview: n = !1
-    } = e, a = h.kt.useSetting(), l = (0, f.j)() && a, [r, s] = (0, m.A)(t, l), o = l ? (0, i.jsx)(u.A, {
+    } = e, a = h.kt.useSetting(), l = (0, f.j)() && a, [s, r] = (0, m.A)(t, l), o = l ? (0, i.jsx)(u.A, {
         autoPlay: !0,
         loop: !0,
         className: T.N4,
@@ -65,10 +65,10 @@ function S(e) {
         className: T.N4
     });
     return (0, i.jsx)("div", {
-        ref: r,
+        ref: s,
         className: T.El,
-        children: null == s || n ? o : (0, i.jsx)("img", {
-            src: s,
+        children: null == r || n ? o : (0, i.jsx)("img", {
+            src: r,
             alt: "",
             className: T.N4
         })
@@ -82,9 +82,9 @@ function N(e) {
     } = e, l = t.id, {
         nickname: u,
         nickcolor: m
-    } = (0, s.cf)([p.Ay, g.default], () => {
+    } = (0, r.cf)([p.Ay, g.default], () => {
         let e = g.default.getCurrentUser();
-        r()(null != e, "user cannot be null");
+        s()(null != e, "user cannot be null");
         let t = p.Ay.getMember(l, e.id);
         return {
             nickname: t?.nick ?? x.Ay.getName(e),
@@ -96,7 +96,7 @@ function N(e) {
     } = (0, C.e)(), f = (n?.description?.trim().length ?? 0) > 0, [N, j] = a.useState(1), L = (0, d.A)("(max-width: 1439px)"), {
         selectedTab: R,
         isPhantomPreview: P
-    } = (0, E.k)(), M = R === I.B.GUILD_PRODUCTS_PREVIEW ? b.intl.string(b.t["LvXy/H"]) : b.intl.string(b.t.XyqKh8), w = f ? (0, i.jsxs)(i.Fragment, {
+    } = (0, E.k)(), w = R === I.B.GUILD_PRODUCTS_PREVIEW ? b.intl.string(b.t["LvXy/H"]) : b.intl.string(b.t.XyqKh8), D = f ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(A, {
             lineClamp: L || 2 === N ? 2 : 3,
             children: (0, i.jsx)(o.Text, {
@@ -116,7 +116,7 @@ function N(e) {
     }) : (0, i.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: P ? M : b.intl.string(b.t["NY/FIW"])
+        children: P ? w : b.intl.string(b.t["NY/FIW"])
     });
     return (0, i.jsxs)("div", {
         className: T.kL,
@@ -162,7 +162,7 @@ function N(e) {
                     })
                 }), (0, i.jsx)(o.hKd, {
                     size: 9
-                }), w]
+                }), D]
             })]
         }), (0, i.jsx)(S, {
             coverImageAsset: n?.cover_image_asset,

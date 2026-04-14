@@ -1,6 +1,6 @@
 /** chunk id: 207115 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => y
 });
 var i = n(627968),
     l = n(64700),
@@ -17,11 +17,11 @@ var i = n(627968),
     m = n(652215),
     f = n(985018);
 
-function h(e, t) {
+function y(e, t) {
     let {
         reducedMotion: n
-    } = l.useContext(r.CZY), A = (0, u.Id)(t), h = (0, a.bG)([g.A], () => g.A.can(m.xBc.MANAGE_MESSAGES, t) && A, [t, A]), E = e.reactions.reduce((e, t) => t.count_details?.vote != null || null != e.find(e => null != e.id && e.id === t.emoji.id || e.name === t.emoji.name) ? e : [...e, t.emoji], []);
-    return !h || null == e.reactions || 0 === e.reactions.length || e.isPoll() && !(0, o.Gh)(e) ? null : (0, i.jsx)(r.Drp, {
+    } = l.useContext(r.CZY), A = (0, u.Id)(t), y = (0, a.bG)([g.A], () => g.A.can(m.xBc.MANAGE_MESSAGES, t) && A, [t, A]), E = e.reactions.reduce((e, t) => t.count_details?.vote != null || null != e.find(e => null != e.id && e.id === t.emoji.id || e.name === t.emoji.name) ? e : [...e, t.emoji], []);
+    return !y || null == e.reactions || 0 === e.reactions.length || e.isPoll() && !(0, o.Gh)(e) ? null : (0, i.jsx)(r.Drp, {
         id: "remove-emoji-reactions",
         label: f.intl.string(f.t["zx/e4P"]),
         leadingAccessory: {
@@ -50,7 +50,7 @@ function h(e, t) {
                 src: null == l.id ? p.Ay.getURL(l.name ?? "") : void 0,
                 animated: l.animated
             },
-            icon: e => (0, i.jsx)(y, {
+            icon: e => (0, i.jsx)(h, {
                 ...e,
                 reducedMotionEnabled: n.enabled,
                 emoji: l
@@ -60,7 +60,7 @@ function h(e, t) {
     })
 }
 
-function y(e) {
+function h(e) {
     let {
         emoji: t,
         reducedMotionEnabled: n,

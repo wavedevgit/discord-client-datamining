@@ -73,7 +73,7 @@ function X(e, t) {
 
 function q(e, t, n) {
     return r.useMemo(() => {
-        if (null != t && null != n) return r => (0, i.jsx)(h.default, {
+        if (null != t && null != n) return r => (0, i.jsx)(h.A, {
             ...r,
             user: t,
             currentUser: n,

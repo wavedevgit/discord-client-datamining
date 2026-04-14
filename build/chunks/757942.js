@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var r = n(735438),
     l = n.n(r),
-    o = n(397927),
-    s = n(310953),
+    s = n(397927),
+    o = n(310953),
     a = n(366811),
     d = n(808728),
     c = n(967198),
@@ -22,14 +22,14 @@ function g(e, t) {
     return [{
         resourceId: e,
         type: h.P.GUILD_EVENT
-    }, ...e === I.ME ? _.default.getPrivateChannelIds() : (0, s.A)(e, {
+    }, ...e === I.ME ? _.default.getPrivateChannelIds() : (0, o.A)(e, {
         withVoiceChannels: t,
         withCurrentVoiceChannel: !0
     }).map(e => e.id)]
 }
 let C = l().throttle(function(e, t) {
     var r;
-    let l, s, _, {
+    let l, o, _, {
             channelPredicate: h = () => !0,
             guildPredicate: C = () => !0,
             guildFeaturePredicate: p = () => !1,
@@ -38,7 +38,7 @@ let C = l().throttle(function(e, t) {
         } = t,
         b = a.A.getState().guildId ?? I.ME,
         f = a.A.getState().channelId,
-        N = (r = b, s = (l = [I.ME, ...u.Ay.getFlattenedGuildIds()]).indexOf(r), e > 0 ? l.slice(s).concat(l.slice(0, s), r) : (l.splice(s, 0, r), l.slice(s + 1).concat(l.slice(0, s + 1)))),
+        N = (r = b, o = (l = [I.ME, ...u.Ay.getFlattenedGuildIds()]).indexOf(r), e > 0 ? l.slice(o).concat(l.slice(0, o), r) : (l.splice(o, 0, r), l.slice(o + 1).concat(l.slice(0, o + 1)))),
         m = e > 0 ? 0 : N.length - 1,
         L = g(b, S),
         O = L.indexOf(f) + e;
@@ -47,7 +47,7 @@ let C = l().throttle(function(e, t) {
             for (; null != _ && "" !== _;) {
                 if ("string" == typeof _) {
                     if (h(b, _)) return (0, E.i)(b, _, !1, T(b, _))
-                } else if ("object" == typeof _ && p(_.resourceId, _.type)) return b !== c.A.getGuildId() && (0, E.i)(b, d.Ay.getDefaultChannel(b)?.id), (0, o.mMO)(async () => {
+                } else if ("object" == typeof _ && p(_.resourceId, _.type)) return b !== c.A.getGuildId() && (0, E.i)(b, d.Ay.getDefaultChannel(b)?.id), (0, s.mMO)(async () => {
                     let {
                         default: e
                     } = await Promise.all([n.e("51354"), n.e("7453"), n.e("85408")]).then(n.bind(n, 926956));

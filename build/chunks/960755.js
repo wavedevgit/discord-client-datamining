@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(735438),
     r = n.n(i),
     l = n(311907),
-    o = n(73153),
-    s = n(933958),
+    s = n(73153),
+    o = n(933958),
     a = n(969151),
     d = n(717125),
     c = n(698441),
@@ -109,16 +109,16 @@ function B() {
     return G.updateSubtitles()
 }
 
-function F(e) {
+function w(e) {
     let {
         guildScheduledEvent: t
     } = e;
     return G.updateSubtitles(t.guild_id)
 }
-class w extends l.Ay.Store {
+class F extends l.Ay.Store {
     static displayName = "ChannelListStore";
     initialize() {
-        this.waitFor(u.A, E.default, I.A, h.A, g.A, s.Ay, C.A, d.A, c.Ay, _.A, p.A, T.Ay, S.A, b.Ay, A.A)
+        this.waitFor(u.A, E.default, I.A, h.A, g.A, o.Ay, C.A, d.A, c.Ay, _.A, p.A, T.Ay, S.A, b.Ay, A.A)
     }
     getGuild(e, t) {
         let n = G.getGuild(e, t?.guildActionRows ?? [], t?.channelNoticeRows ?? []);
@@ -140,7 +140,7 @@ class w extends l.Ay.Store {
         return t.getCategoryFromSection(t.recentsSectionNumber).getShownChannelIds().length
     }
 }
-let W = new w(o.h, {
+let W = new F(s.h, {
     APPLICATION_FETCH_FAIL: B,
     APPLICATION_FETCH_SUCCESS: B,
     APPLICATION_FETCH: B,
@@ -234,9 +234,9 @@ let W = new w(o.h, {
     GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_FAILURE: P,
     GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: P,
     GUILD_ROLE_UPDATE: P,
-    GUILD_SCHEDULED_EVENT_CREATE: F,
-    GUILD_SCHEDULED_EVENT_DELETE: F,
-    GUILD_SCHEDULED_EVENT_UPDATE: F,
+    GUILD_SCHEDULED_EVENT_CREATE: w,
+    GUILD_SCHEDULED_EVENT_DELETE: w,
+    GUILD_SCHEDULED_EVENT_UPDATE: w,
     GUILD_TOGGLE_COLLAPSE_MUTED: P,
     GUILD_UPDATE: D,
     IMPERSONATE_STOP: P,

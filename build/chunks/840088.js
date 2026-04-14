@@ -16,8 +16,8 @@ var i = n(627968),
     p = n(576705),
     m = n(486020),
     f = n(203982),
-    h = n(690521),
-    y = n(652215),
+    y = n(690521),
+    h = n(652215),
     E = n(307731),
     S = n(985018),
     _ = n(186785);
@@ -25,9 +25,9 @@ var i = n(627968),
 function T(e, t) {
     let {
         reducedMotion: n
-    } = l.useContext(o.CZY), a = (0, g.Id)(t), r = (0, s.bG)([p.A], () => (t.isPrivate() || p.A.can(y.xBc.ADD_REACTIONS, t)) && a, [t, a]), m = (0, d.D6)(t.getGuildId());
+    } = l.useContext(o.CZY), a = (0, g.Id)(t), r = (0, s.bG)([p.A], () => (t.isPrivate() || p.A.can(h.xBc.ADD_REACTIONS, t)) && a, [t, a]), m = (0, d.D6)(t.getGuildId());
     if (!A.jW.getSetting() || !r) return null;
-    let _ = m.filter(e => !h.Ay.isEmojiFilteredOrLocked({
+    let _ = m.filter(e => !y.Ay.isEmojiFilteredOrLocked({
         emoji: e,
         channel: t,
         intention: E.EmojiIntention.REACTION
@@ -43,7 +43,7 @@ function T(e, t) {
         leadingAccessory: {
             type: "emoji",
             emojiId: l.id,
-            src: null == l.id ? h.Ay.getURL(l.optionallyDiverseSequence ?? "") : void 0,
+            src: null == l.id ? y.Ay.getURL(l.optionallyDiverseSequence ?? "") : void 0,
             animated: l.animated
         },
         action: () => {
@@ -59,7 +59,7 @@ function T(e, t) {
             icon: o.nm2
         },
         action: () => {
-            f._.dispatchKeyed(y.zOV.TOGGLE_REACTION_POPOUT, e.id, {
+            f._.dispatchKeyed(h.zOV.TOGGLE_REACTION_POPOUT, e.id, {
                 emojiPicker: !0
             })
         },
@@ -75,7 +75,7 @@ function T(e, t) {
                     icon: o.ShF
                 },
                 action: () => {
-                    f._.dispatchKeyed(y.zOV.TOGGLE_REACTION_POPOUT, e.id, {
+                    f._.dispatchKeyed(h.zOV.TOGGLE_REACTION_POPOUT, e.id, {
                         emojiPicker: !0
                     })
                 }
@@ -97,7 +97,7 @@ function I(e) {
             id: t.id,
             animated: t.animated && (!n || a),
             size: 18
-        }) : h.Ay.getURL(t.optionallyDiverseSequence ?? ""),
+        }) : y.Ay.getURL(t.optionallyDiverseSequence ?? ""),
         alt: ""
     })
 }

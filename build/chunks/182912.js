@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(503698),
-    r = n.n(l),
-    s = n(445887),
+    s = n.n(l),
+    r = n(445887),
     o = n(435371),
     d = n(397927),
     c = n(713517),
@@ -41,13 +41,13 @@ function A(e) {
             y: b,
             scale: T
         })
-    }, [v, b, T, S]), (0, i.jsxs)(s.animated.div, {
+    }, [v, b, T, S]), (0, i.jsxs)(r.animated.div, {
         ref: h,
-        className: r()(p.gg, t),
+        className: s()(p.gg, t),
         "data-count": I,
         "aria-hidden": !0,
         style: {
-            transform: (0, s.to)([y.x, y.y, y.scale], (e, t, n) => `translate3d(${e}px, ${t}px, 0) scale(${n})`)
+            transform: (0, r.to)([y.x, y.y, y.scale], (e, t, n) => `translate3d(${e}px, ${t}px, 0) scale(${n})`)
         },
         children: [C.map((e, t) => (0, i.jsx)("div", {
             className: p.my,
@@ -80,7 +80,7 @@ function x(e) {
         guildId: t,
         channelId: n,
         members: l,
-        count: s
+        count: r
     } = e, o = a.useRef(null), {
         isHoveringOrFocusing: u
     } = (0, c.A)(o);
@@ -91,13 +91,13 @@ function x(e) {
         users: l,
         shouldShow: u,
         children: e => (0, i.jsx)("div", {
-            className: r()(p.my, p.k2),
+            className: s()(p.my, p.k2),
             ref: o,
             ...e,
             children: (0, i.jsx)(d.Text, {
                 variant: "text-sm/semibold",
                 color: "text-default",
-                children: s > 99 ? ">99" : `+${s}`
+                children: r > 99 ? ">99" : `+${r}`
             })
         })
     })

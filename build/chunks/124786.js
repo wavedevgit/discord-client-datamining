@@ -1,49 +1,49 @@
 /** chunk id: 124786 params = (module,exports,require) **/
-t.d(l, {
-    A: () => u
+l.d(t, {
+    A: () => c
 });
-var r = t(627968);
-t(64700);
-var s = t(503698),
-    n = t.n(s),
-    i = t(567243),
-    a = t(560856);
+var r = l(627968);
+l(64700);
+var n = l(503698),
+    i = l.n(n),
+    a = l(567243),
+    s = l(560856);
 let o = RegExp("^music\\.amazon\\.(?:com|co\\.uk|de|co\\.jp|es|fr|it|com\\.au|in|ca|com\\.mx|com\\.br)");
 
 function d(e) {
-    let l = null,
-        t = null,
+    let t = null,
+        l = null,
         r = null;
     try {
-        l = (r = i.parse(e, !0)).host, t = r.pathname
+        t = (r = a.parse(e, !0)).host, l = r.pathname
     } catch (e) {
         return null
     }
-    return null != r && o.test(l ?? "") && null != t ? r : null
+    return null != r && o.test(t ?? "") && null != l ? r : null
 }
 
-function u(e) {
+function c(e) {
     let {
-        className: l,
+        className: t,
         embed: {
-            url: t,
-            thumbnail: s
+            url: l,
+            thumbnail: n
         }
     } = e;
-    if (null == t || null == s) return null;
-    let i = d(t);
-    if (null == i) return null;
-    let o = i.query.iframe_url;
+    if (null == l || null == n) return null;
+    let a = d(l);
+    if (null == a) return null;
+    let o = a.query.iframe_url;
     if (null == o || Array.isArray(o) || null == d(o)) return null;
     let {
-        width: u,
-        height: h
-    } = s, c = u, m = h;
-    return (u > 500 || h > 400) && (u > h ? (c = 500, m = 500 * h / u) : (c = 400 * u / h, m = 400)), (0, r.jsx)("iframe", {
-        className: n()(a.FS, l),
+        width: c,
+        height: u
+    } = n, h = c, m = u;
+    return (c > 500 || u > 400) && (c > u ? (h = 500, m = 500 * u / c) : (h = 400 * c / u, m = 400)), (0, r.jsx)("iframe", {
+        className: i()(s.FS, t),
         src: o,
         style: {
-            width: c,
+            width: h,
             height: m
         },
         frameBorder: 0,

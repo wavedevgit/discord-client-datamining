@@ -1,50 +1,50 @@
 /** chunk id: 478620 params = (module,exports,require) **/
-t.d(l, {
+l.d(t, {
     A: () => m
 });
-var r = t(627968);
-t(64700);
-var s = t(503698),
-    n = t.n(s),
-    i = t(567243),
-    a = t(311907),
-    o = t(582754),
-    d = t(544028),
-    u = t(684290),
-    h = t(278727),
-    c = t(560856);
+var r = l(627968);
+l(64700);
+var n = l(503698),
+    i = l.n(n),
+    a = l(567243),
+    s = l(311907),
+    o = l(582754),
+    d = l(544028),
+    c = l(684290),
+    u = l(278727),
+    h = l(560856);
 
 function m(e) {
     let {
-        className: l,
+        className: t,
         embed: {
-            url: t
+            url: l
         }
-    } = e, s = (0, a.bG)([d.A], () => (0, o.Mw)(d.A.theme));
-    if (null == t) return null;
+    } = e, n = (0, s.bG)([d.A], () => (0, o.Mw)(d.A.theme));
+    if (null == l) return null;
     let m = null,
         p = null,
-        g = null;
+        _ = null;
     try {
-        let e = i.parse(t, !0);
-        m = e.host, p = e.pathname, g = e.query.i ?? null, Array.isArray(g) && (g = g[0])
+        let e = a.parse(l, !0);
+        m = e.host, p = e.pathname, _ = e.query.i ?? null, Array.isArray(_) && (_ = _[0])
     } catch (e) {
         return null
     }
-    if (!(0, u.k)(m) || null == p) return null;
-    let x = /^\/([a-z]{2}(?:-[a-z]{2})?)\//.test(p) ? 2 : 1,
-        f = p.split("/"),
-        y = f[x]?.toLowerCase();
-    null != g && (y = "song");
-    let w = 450;
-    return "song" === y ? w = 175 : "music-video" === y && (w = 371), p = p.substr(1), (0, r.jsx)("iframe", {
-        className: n()(c.li, l),
-        src: h.q.EMBED(p, s ? "dark" : "light", g),
+    if (!(0, c.k)(m) || null == p) return null;
+    let b = /^\/([a-z]{2}(?:-[a-z]{2})?)\//.test(p) ? 2 : 1,
+        g = p.split("/"),
+        x = g[b]?.toLowerCase();
+    null != _ && (x = "song");
+    let v = 450;
+    return "song" === x ? v = 175 : "music-video" === x && (v = 371), p = p.substr(1), (0, r.jsx)("iframe", {
+        className: i()(h.li, t),
+        src: u.q.EMBED(p, n ? "dark" : "light", _),
         style: {
             maxWidth: 660,
             minWidth: 300,
             width: "100%",
-            height: w
+            height: v
         },
         frameBorder: 0,
         sandbox: "allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation",

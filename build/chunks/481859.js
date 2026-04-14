@@ -1,21 +1,21 @@
 /** chunk id: 481859 params = (module,exports,require) **/
 a.d(t, {
-    A: () => l
+    A: () => r
 });
-var n = a(627968);
+var s = a(627968);
 a(64700);
-var i = a(503698),
-    s = a.n(i),
-    r = a(152120);
+var n = a(503698),
+    i = a.n(n),
+    l = a(152120);
 
-function l(e) {
+function r(e) {
     let {
         children: t,
         tag: a,
-        className: i
+        className: n
     } = e;
-    return a = null != a ? a : "h3", (0, n.jsx)(a, {
-        className: s()(r.D, i),
+    return a = null != a ? a : "h3", (0, s.jsx)(a, {
+        className: i()(l.D, n),
         children: t
     })
 }

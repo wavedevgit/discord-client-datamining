@@ -1,5 +1,4 @@
 /** chunk id: 583241 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     kL: "container_b5010b",
     eq: "eventName_b5010b",

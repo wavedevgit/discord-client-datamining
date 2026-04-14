@@ -139,7 +139,7 @@ let v = t => {
                 (0, c.mMO)(async () => {
                     let {
                         default: t
-                    } = await Promise.all([s.e("68859"), s.e("92414"), s.e("9407"), s.e("74109")]).then(s.bind(s, 956450));
+                    } = await Promise.all([s.e("57174"), s.e("91652"), s.e("68859"), s.e("92414"), s.e("9407"), s.e("5920")]).then(s.bind(s, 956450));
                     return e => (0, i.jsx)(t, {
                         classificationId: a,
                         source: I.XN.StandingTab,

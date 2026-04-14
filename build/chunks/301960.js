@@ -171,7 +171,7 @@ function F(e) {
         R = (0, d.bG)([S.default], () => S.default.getCurrentUser()),
         D = r.useRef(null),
         b = r.useRef(null),
-        F = r.useMemo(() => (e, t, r) => (o()(null != t, "ExecutedCommand: user cannot be undefined"), o()(null != R, "ExecutedCommand: currentUser cannot be undefined"), o()(null != s, "ExecutedCommand: channel cannot be undefined"), (0, i.jsx)(f.default, {
+        F = r.useMemo(() => (e, t, r) => (o()(null != t, "ExecutedCommand: user cannot be undefined"), o()(null != R, "ExecutedCommand: currentUser cannot be undefined"), o()(null != s, "ExecutedCommand: channel cannot be undefined"), (0, i.jsx)(f.A, {
             ...e,
             user: t,
             currentUser: R,

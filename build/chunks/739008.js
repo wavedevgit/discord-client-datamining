@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(843472),
     r = n(567035),
     l = n(458294),
-    o = n(320501),
-    s = n(309010),
+    s = n(320501),
+    o = n(309010),
     a = n(967198),
     d = n(203982),
     c = n(652215);
@@ -17,7 +17,7 @@ let u = {
         let e = a.A.getGuildId();
         if (null == e || !l.default.getGuildHasUnreadIgnoreMuted(e)) return;
         (0, r.A)([e]);
-        let t = s.A.getChannelId(e);
-        null == t || (o.A.getMessages(t).hasMoreAfter ? i.A.jumpToPresent(t, c.EMb) : d._.dispatch(c.jej.SCROLLTO_PRESENT))
+        let t = o.A.getChannelId(e);
+        null == t || (s.A.getMessages(t).hasMoreAfter ? i.A.jumpToPresent(t, c.EMb) : d._.dispatch(c.jej.SCROLLTO_PRESENT))
     }
 }

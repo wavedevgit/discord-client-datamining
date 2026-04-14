@@ -19,8 +19,8 @@ var l = n(311907),
     p = n(967198),
     m = n(287809),
     f = n(628691),
-    h = n(49999),
-    y = n(985018),
+    y = n(49999),
+    h = n(985018),
     E = n(190192);
 
 function S(e) {
@@ -28,7 +28,7 @@ function S(e) {
         n = (0, A.Qo)(t);
     return (0, f.ul)(e) ? (0, i.jsx)(r.Drp, {
         id: "report",
-        label: n ? y.intl.string(y.t.n5EBAJ) : y.intl.string(y.t.GwbdGe),
+        label: n ? h.intl.string(h.t.n5EBAJ) : h.intl.string(h.t.GwbdGe),
         action: () => (0, c.V2)(e, "web_message_context_menu"),
         icon: n ? r.pVd : r.iFK,
         leadingAccessory: {
@@ -45,12 +45,12 @@ function _(e) {
         o = n ? [a.M.REPORT_TO_MOD_NEW_TAG] : [],
         [A, p] = (0, d.kn)(o);
     return ((0, s.l0)(() => {
-        n && p(h.i.AUTO_DISMISS)
+        n && p(y.i.AUTO_DISMISS)
     }), n) ? (0, i.jsx)(r.Drp, {
         id: "report-to-mod",
-        label: t ? y.intl.string(E.default["8wsdng"]) : y.intl.string(E.default["1D+vqy"]),
+        label: t ? h.intl.string(E.default["8wsdng"]) : h.intl.string(E.default["1D+vqy"]),
         action: () => {
-            p(h.i.USER_DISMISS), (0, c.dy)(e)
+            p(y.i.USER_DISMISS), (0, c.dy)(e)
         },
         icon: r.iFK,
         disabled: t,

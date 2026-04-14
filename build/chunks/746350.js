@@ -1,28 +1,28 @@
 /** chunk id: 746350 params = (module,exports,require) **/
-n.d(e, {
-    M: () => c
+n.d(t, {
+    M: () => d
 });
 var i = n(627968);
 n(64700);
 var a = n(503698),
-    s = n.n(a),
-    l = n(397927),
+    l = n.n(a),
+    s = n(397927),
     r = n(375045),
     o = n(886981);
 
-function c(t) {
+function d(e) {
     let {
-        text: e
-    } = t;
+        text: t
+    } = e;
     return (0, i.jsxs)("div", {
-        className: s()(o.oR, r.o),
-        children: [(0, i.jsx)(l.lmn, {
-            color: l.LU0.colors.TEXT_BRAND
-        }), (0, i.jsx)(l.Text, {
+        className: l()(o.oR, r.o),
+        children: [(0, i.jsx)(s.lmn, {
+            color: s.LU0.colors.TEXT_BRAND
+        }), (0, i.jsx)(s.Text, {
             className: o.__invalid_content,
             color: "text-strong",
             variant: "text-md/normal",
-            children: e
+            children: t
         })]
     })
 }

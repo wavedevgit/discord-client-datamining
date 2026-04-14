@@ -145,7 +145,7 @@ function L(e) {
             spreadDirection: E.O.INSET_ONLY,
             maxInnerSpreadRadius: 3
         });
-    return (0, i.jsx)(f.default, {
+    return (0, i.jsx)(f.A, {
         targetElementRef: t,
         user: h,
         guildId: w,

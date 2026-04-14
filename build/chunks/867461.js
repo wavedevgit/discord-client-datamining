@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(503698),
-    r = n.n(l),
-    s = n(158954),
+    s = n.n(l),
+    r = n(158954),
     o = n(311907),
     d = n(827734),
     c = n(736653),
@@ -27,11 +27,11 @@ function E(e) {
         variant: n = "default"
     } = e;
     return (0, i.jsx)("div", {
-        className: r()(C.Io, {
+        className: s()(C.Io, {
             [C.tV]: "brand" === n,
             "theme-light": "default" === n
         }),
-        children: (0, i.jsx)(s.EYj, {
+        children: (0, i.jsx)(r.EYj, {
             variant: "eyebrow",
             color: "brand" === n ? "always-white" : "text-default",
             className: C.Xi,
@@ -45,11 +45,11 @@ function I(e) {
         quest: t,
         isInteracting: n,
         location: l,
-        sourceQuestContent: r
+        sourceQuestContent: s
     } = e, I = (0, h.Ic)(t), v = t.userStatus?.claimedAt != null, b = (0, m.S5)(t.config.expiresAt, {
         month: "numeric",
         day: "numeric"
-    }), T = (0, o.bG)([_.A], () => _.A.getQuestHomeHero()), y = a.useMemo(() => null != T && (0, p.I0)(T, t.id), [T, t.id]), S = (0, c.Ay)(), N = (0, s.Mwr)(S) ? "text-muted" : "always-white";
+    }), T = (0, o.bG)([_.A], () => _.A.getQuestHomeHero()), y = a.useMemo(() => null != T && (0, p.I0)(T, t.id), [T, t.id]), S = (0, c.Ay)(), N = (0, r.Mwr)(S) ? "text-muted" : "always-white";
     return (0, i.jsxs)("div", {
         className: C.kL,
         children: [(0, i.jsx)("div", {
@@ -72,7 +72,7 @@ function I(e) {
                 className: C.PG,
                 children: [(0, i.jsxs)("div", {
                     className: C.mY,
-                    children: [(y || t.preview) && (0, i.jsxs)(s.BJc, {
+                    children: [(y || t.preview) && (0, i.jsxs)(r.BJc, {
                         className: C.Bv,
                         direction: "horizontal",
                         fullWidth: !1,
@@ -89,12 +89,12 @@ function I(e) {
                         hideLearnMore: !0,
                         shouldShowDisclosure: !0,
                         showShareLink: !0,
-                        sourceQuestContent: r,
-                        children: e => (0, i.jsx)(s.DUT, {
+                        sourceQuestContent: s,
+                        children: e => (0, i.jsx)(r.DUT, {
                             ...e,
                             className: C.iI,
                             "aria-label": f.intl.string(f.t.DEoVWZ),
-                            children: (0, i.jsx)(s.jNK, {
+                            children: (0, i.jsx)(r.jNK, {
                                 size: "md",
                                 color: "currentColor",
                                 className: C.A9
@@ -111,7 +111,7 @@ function I(e) {
                     className: C.E_,
                     children: [(0, i.jsxs)("span", {
                         className: C.O,
-                        children: [(0, i.jsx)(s.EYj, {
+                        children: [(0, i.jsx)(r.EYj, {
                             variant: "text-sm/medium",
                             color: N,
                             children: f.intl.string(f.t.VAbKhK)
@@ -120,18 +120,18 @@ function I(e) {
                             size: 16,
                             color: d.A.unsafe_rawColors.GREEN_360.css,
                             allowFullSizedIcon: !0,
-                            children: (0, i.jsx)(s.BNr, {
+                            children: (0, i.jsx)(r.BNr, {
                                 color: d.A.unsafe_rawColors.WHITE.css,
                                 size: "custom",
                                 width: 13,
                                 height: 13
                             })
-                        }), (0, i.jsx)(s.EYj, {
+                        }), (0, i.jsx)(r.EYj, {
                             variant: "text-sm/medium",
                             color: "always-white",
                             children: t.config.cosponsorMetadata?.name ?? t.config.messages.gamePublisher
                         })]
-                    }), I || v ? null : (0, i.jsx)(s.EYj, {
+                    }), I || v ? null : (0, i.jsx)(r.EYj, {
                         variant: "text-sm/medium",
                         color: N,
                         children: f.intl.format(f.t["7D8r4F"], {

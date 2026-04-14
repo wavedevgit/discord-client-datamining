@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(503698),
-    r = n.n(l),
-    s = n(397927),
+    s = n.n(l),
+    r = n(397927),
     o = n(538451),
     d = n(562153),
     c = n(460696),
@@ -17,15 +17,15 @@ function _(e) {
         guildId: t,
         channelId: n,
         users: l,
-        ...r
+        ...s
     } = e, o = a.useCallback(e => (0, i.jsx)(m, {
         users: e,
         guildId: t,
         channelId: n
     }), [t, n]);
-    return (0, i.jsx)(s.YNO, {
+    return (0, i.jsx)(r.YNO, {
         renderPopout: () => o(l),
-        ...r
+        ...s
     })
 }
 
@@ -35,8 +35,8 @@ function m(e) {
         guildId: n,
         channelId: a
     } = e;
-    return (0, i.jsx)(s.HOs, {
-        className: r()(u.popover, c.o),
+    return (0, i.jsx)(r.HOs, {
+        className: s()(u.popover, c.o),
         style: {
             "--custom-popover-width": "200px"
         },

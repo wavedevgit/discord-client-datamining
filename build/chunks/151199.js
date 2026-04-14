@@ -5,14 +5,14 @@ n.d(t, {
 var i = n(914430),
     r = n(924985),
     l = n(808728),
-    o = n(967198),
-    s = n(652215);
+    s = n(967198),
+    o = n(652215);
 let a = {
     binds: ["mod+shift+a"],
     comboKeysBindGlobal: !0,
     action() {
-        let e = o.A.getGuildId();
-        return null != e && (l.Ay.getChannels(e)[s.rbe.GUILD_CATEGORY].some(e => {
+        let e = s.A.getGuildId();
+        return null != e && (l.Ay.getChannels(e)[o.rbe.GUILD_CATEGORY].some(e => {
             let {
                 channel: t
             } = e;

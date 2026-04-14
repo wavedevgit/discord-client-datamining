@@ -1,12 +1,12 @@
 /** chunk id: 13403 params = (module,exports,require) **/
 n.d(t, {
-    A: () => M
+    A: () => w
 }), n(321073);
 var i = n(627968),
     a = n(64700),
     l = n(311907),
-    r = n(554146),
-    s = n(342494),
+    s = n(554146),
+    r = n(342494),
     o = n(397927),
     d = n(735991),
     c = n(690456),
@@ -33,10 +33,10 @@ var i = n(627968),
     R = n(49999),
     P = n(985018);
 
-function M(e) {
+function w(e) {
     var t, n;
-    let M, w, {
-            analyticsLocations: D,
+    let w, D, {
+            analyticsLocations: M,
             application: k,
             channel: O,
             currentUserId: U,
@@ -72,22 +72,22 @@ function M(e) {
         {
             openGameProfileModal: K,
             launchableAppId: X
-        } = (t = k.id, n = F.author.id, M = (0, f.d)(t), w = (0, l.bG)([m.A, C.A], () => {
+        } = (t = k.id, n = F.author.id, w = (0, f.d)(t), D = (0, l.bG)([m.A, C.A], () => {
             let e = m.A.getApplication(t);
             return null != e ? C.A.getGameByApplication(e) : null
         }, [t]), {
             openGameProfileModal: (0, x.A)({
                 location: "Rich Presence Activity Invite Embed",
-                applicationId: w?.id ?? void 0,
+                applicationId: D?.id ?? void 0,
                 source: A.Ob.Embed,
                 trackEntryPointImpression: !0,
                 sourceUserId: n
             }),
-            launchableAppId: M
+            launchableAppId: w
         }),
         J = (0, S.A)({
             application: k,
-            analyticsLocations: D
+            analyticsLocations: M
         }),
         Z = a.useMemo(() => {
             if (null != J) return {
@@ -108,20 +108,20 @@ function M(e) {
             startAuthorization: ea
         } = (0, _.RD)(k),
         el = (0, u.z)(ea, ei),
-        er = !(0, T.A)(q, F, k.id),
-        es = (0, b.n$)(Y, F.activity?.type, er),
+        es = !(0, T.A)(q, F, k.id),
+        er = (0, b.n$)(Y, F.activity?.type, es),
         eo = a.useRef(null),
         ed = (0, l.bG)([E.A], () => E.A.getMessages(O.id)),
         ec = () => {
             let e = [];
-            return (0, y.G)(F.id, ed) && en && !ei && et.enabled && e.push(r.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, i.jsx)(g.Ay, {
+            return (0, y.G)(F.id, ed) && en && !ei && et.enabled && e.push(s.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, i.jsx)(g.Ay, {
                 contentTypes: e,
                 children: e => {
                     let {
                         visibleContent: t,
                         markAsDismissed: n
                     } = e;
-                    if (t === r.M.GAME_INVITE_ACCOUNT_LINK_UPSELL) return (0, i.jsx)(s.AM, {
+                    if (t === s.M.GAME_INVITE_ACCOUNT_LINK_UPSELL) return (0, i.jsx)(r.AM, {
                         graphic: {
                             type: "dynamic",
                             component: o.Z86.ACCOUNT_LINK_DISPLAY,
@@ -144,12 +144,12 @@ function M(e) {
                 }
             })
         };
-    return er ? (0, i.jsx)(j.A, {
+    return es ? (0, i.jsx)(j.A, {
         message: F,
         application: k,
         applicationName: Y,
         channel: O,
-        header: es,
+        header: er,
         currentUserId: U,
         launchableAppId: X,
         isEmbeddedApplication: W,
@@ -159,7 +159,7 @@ function M(e) {
         iconSrc: z,
         onView: H,
         presenceActivity: q,
-        analyticsLocations: D,
+        analyticsLocations: M,
         showAuthButton: en && !ei && et.enabled,
         startAuthorization: el,
         accountLinkButtonRef: eo,
@@ -169,7 +169,7 @@ function M(e) {
         application: k,
         applicationName: Y,
         channel: O,
-        header: es,
+        header: er,
         currentUserId: U,
         launchableAppId: X,
         isEmbeddedApplication: W,
@@ -182,7 +182,7 @@ function M(e) {
         currentUserPresenceActivity: B,
         hideParty: G,
         partyStatusElement: V,
-        analyticsLocations: D,
+        analyticsLocations: M,
         showAuthButton: en && !ei && et.enabled,
         canPromptAuth: en && !ei,
         startAuthorization: el,

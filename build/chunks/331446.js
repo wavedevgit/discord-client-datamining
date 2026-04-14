@@ -1,41 +1,41 @@
 /** chunk id: 331446 params = (module,exports,require) **/
 n.d(t, {
-    w: () => _
+    w: () => u
 });
-var a = n(627968),
-    o = n(64700),
+var i = n(627968),
+    l = n(64700),
     r = n(939249),
-    i = n(834730),
-    l = n(397927),
-    c = n(720485);
-let s = o.lazy(() => n.e("46054").then(n.bind(n, 680901)).then(e => ({
+    a = n(834730),
+    s = n(397927),
+    o = n(720485);
+let d = l.lazy(() => n.e("46054").then(n.bind(n, 680901)).then(e => ({
         default: e.ClipParticipantsList
     }))),
-    _ = e => {
+    u = e => {
         let {
             participants: t,
             maxVisibleParticipants: n,
-            guildId: _
-        } = e, d = o.useRef(null), u = (0, o.useCallback)(() => (0, a.jsx)(o.Suspense, {
+            guildId: u
+        } = e, c = l.useRef(null), h = (0, l.useCallback)(() => (0, i.jsx)(l.Suspense, {
             fallback: null,
-            children: (0, a.jsx)(s, {
+            children: (0, i.jsx)(d, {
                 users: t,
-                guildId: _
+                guildId: u
             })
-        }), [t, _]);
-        return (0, a.jsx)(l.YNO, {
-            renderPopout: u,
-            targetElementRef: d,
+        }), [t, u]);
+        return (0, i.jsx)(s.YNO, {
+            renderPopout: h,
+            targetElementRef: c,
             position: "right",
-            children: e => (0, a.jsx)(r.D, {
+            children: e => (0, i.jsx)(r.D, {
                 ...e,
-                innerRef: d,
-                className: c.x,
+                innerRef: c,
+                className: o.x,
                 onClick: t => {
                     t.stopPropagation(), e.onClick?.(t)
                 },
-                children: (0, a.jsxs)(i.E, {
-                    className: c.s,
+                children: (0, i.jsxs)(a.E, {
+                    className: o.s,
                     variant: "text-xs/medium",
                     color: "interactive-text-default",
                     children: ["+", t.length - n]

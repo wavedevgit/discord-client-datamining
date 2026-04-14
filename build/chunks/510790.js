@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(735438),
-    r = n(110259),
-    s = n(239947),
+    s = n(110259),
+    r = n(239947),
     o = n(934551),
     d = n(97808),
     c = n(732955),
@@ -63,8 +63,8 @@ let T = e => e.map(e => `#${e}`),
             A = (0, p.Ay)(h),
             x = a.useMemo(() => (0, l.once)(() => {
                 (0, _.x)({
-                    type: r.ImpressionTypes.VIEW,
-                    name: s.I.CUSTOM_THEME_SHARE,
+                    type: s.ImpressionTypes.VIEW,
+                    name: r.I.CUSTOM_THEME_SHARE,
                     properties: {}
                 })
             }), []),

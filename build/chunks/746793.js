@@ -38,7 +38,7 @@ class y extends l.PureComponent {
                 shortcut: "tab",
                 className: b.P
             }, t)
-        }), v.intl.string(v.t.UorX4T), v.intl.string(v.t["il/GZt"]), v.intl.string(v.t.HKBJvw), v.intl.format(v.t.FVVp79, {
+        }), v.intl.string(v.t["il/GZt"]), v.intl.string(v.t["5qAKlq"]), v.intl.format(v.t.FVVp79, {
             F6Hook: (e, t) => (0, i.jsx)(u.e7I, {
                 shortcut: "f6",
                 className: b.P

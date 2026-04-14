@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     l = n(311907),
-    i = n(139146),
-    s = n(961350),
+    s = n(139146),
+    i = n(961350),
     r = n(471505);
 
 function o(e) {
@@ -13,26 +13,26 @@ function o(e) {
         sku: t,
         location: n,
         isCardHovered: o = !0,
-        trackButtonClick: d,
-        ...c
-    } = e, u = (0, l.bG)([s.default], () => s.default.getId()), {
+        trackButtonClick: c,
+        ...d
+    } = e, u = (0, l.bG)([i.default], () => i.default.getId()), {
         isWishlisted: _,
         isBusy: m,
         isFirstTimeWishlister: h,
-        handleToggle: b
+        handleToggle: p
     } = (0, r.G)({
         userId: u,
         sku: t,
         location: n,
-        trackButtonClick: d
+        trackButtonClick: c
     });
-    return o || _ ? (0, a.jsx)(i._, {
+    return o || _ ? (0, a.jsx)(s._, {
         skuId: t.id,
         productName: t.name,
         isWishlisted: _,
         isBusy: m,
         isFirstTimeWishlister: h,
-        onClick: b,
-        ...c
+        onClick: p,
+        ...d
     }) : null
 }

@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var r = n(311907),
     l = n(571356),
-    o = n(421380),
-    s = n(397927),
+    s = n(421380),
+    o = n(397927),
     a = n(725807),
     d = n(212168),
     c = n(780964),
@@ -31,29 +31,29 @@ function p(e) {
         type: d.i.PREMIUM,
         className: C.ne,
         backgroundClassName: C.u4,
-        children: [null != p ? (0, i.jsx)(s.DUT, {
+        children: [null != p ? (0, i.jsx)(o.DUT, {
             className: C.VN,
             onClick: () => p?.(I.i.DISMISS),
             "aria-label": g.intl.string(g.t.cpT0Cq),
-            children: (0, i.jsx)(s.PGe, {
+            children: (0, i.jsx)(o.PGe, {
                 size: "xs",
                 color: "currentColor",
                 className: C.ut
             })
         }) : null, (0, i.jsxs)("div", {
             className: C.ex,
-            children: [(0, i.jsx)(s.tvc, {
+            children: [(0, i.jsx)(o.tvc, {
                 size: "sm",
                 color: "currentColor",
                 className: C.ax
-            }), (0, i.jsx)(s.Heading, {
+            }), (0, i.jsx)(o.Heading, {
                 variant: "heading-sm/bold",
                 children: g.intl.string(g.t.dTbAxx)
             })]
         }), (0, i.jsx)(l.E, {
             variant: "text-sm/normal",
             children: S
-        }), b ? (0, i.jsx)(s.Button, {
+        }), b ? (0, i.jsx)(o.Button, {
             onClick: function() {
                 (0, u.openUserSettings)(c.X.SOUNDBOARD_CATEGORY), n?.(), p?.(I.i.PRIMARY)
             },
@@ -68,7 +68,7 @@ function p(e) {
                 section: E.JJy.SOUNDBOARD_SOUND_PICKER,
                 object: E.ZSU.BUTTON_CTA
             },
-            color: o.$n.Colors.GREEN,
+            color: s.$n.Colors.GREEN,
             onSubscribeModalClose: () => p?.(I.i.PRIMARY)
         })]
     })

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(110259),
-    r = n(417597),
-    s = n(793574),
+    s = n(417597),
+    r = n(793574),
     o = n(688810),
     d = n(139286),
     c = n(627363),
@@ -18,10 +18,10 @@ function h(e) {
     let {
         applicationId: t,
         message: n
-    } = e, [l, s, o] = (0, r.yK)([u.A], () => [u.A.getApplication(t), u.A.isFetchingApplication(t), u.A.didFetchingApplicationFail(t)], [t]);
+    } = e, [l, r, o] = (0, s.yK)([u.A], () => [u.A.getApplication(t), u.A.isFetchingApplication(t), u.A.didFetchingApplicationFail(t)], [t]);
     return (a.useEffect(() => {
-        null != l || s || o || c.Ay.fetchApplication(t)
-    }, [l, s, o, t]), null != l && (0, m.Ie)({
+        null != l || r || o || c.Ay.fetchApplication(t)
+    }, [l, r, o, t]), null != l && (0, m.Ie)({
         customInstallUrl: l.customInstallUrl,
         installParams: l.installParams,
         integrationTypesConfig: l.integrationTypesConfig
@@ -35,7 +35,7 @@ function p(e) {
     let {
         application: t,
         message: n
-    } = e, r = a.useCallback(() => {
+    } = e, s = a.useCallback(() => {
         (0, d.x)({
             type: l.ImpressionTypes.VIEW,
             name: l.ImpressionNames.APP_OAUTH2_LINK_EMBED,
@@ -45,13 +45,13 @@ function p(e) {
         })
     }, [t.id]), {
         analyticsLocations: c
-    } = (0, o.Ay)(s.A.APP_OAUTH2_LINK_EMBED);
+    } = (0, o.Ay)(r.A.APP_OAUTH2_LINK_EMBED);
     return (0, i.jsx)(o.f5, {
         value: c,
         children: (0, i.jsx)(_.W, {
             app: t,
             linkType: _.J.OAUTH,
-            onView: r,
+            onView: s,
             message: n
         })
     })

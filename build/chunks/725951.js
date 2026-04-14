@@ -1,28 +1,28 @@
 /** chunk id: 725951 params = (module,exports,require) **/
 a.d(t, {
-    A: () => m,
-    f: () => c
+    A: () => A,
+    f: () => _
 });
-var n, i = a(627968),
-    s = a(64700),
-    r = a(503698),
-    l = a.n(r),
-    d = a(615300),
-    _ = a(73939),
-    o = a(220880),
-    c = ((n = {})[n.RIGHT = -1] = "RIGHT", n[n.LEFT = 1] = "LEFT", n);
+var s, n = a(627968),
+    i = a(64700),
+    l = a(503698),
+    r = a.n(l),
+    c = a(615300),
+    o = a(73939),
+    d = a(220880),
+    _ = ((s = {})[s.RIGHT = -1] = "RIGHT", s[s.LEFT = 1] = "LEFT", s);
 let h = {
     friction: 7,
     tension: 40,
     clamp: !0
 };
-class u extends s.PureComponent {
+class u extends i.PureComponent {
     _animated;
     constructor(e) {
-        super(e), this._animated = new d.A.Value(-1 * e.direction)
+        super(e), this._animated = new c.A.Value(-1 * e.direction)
     }
     componentWillEnter(e) {
-        this._animated.setValue(-this.props.direction), d.A.spring(this._animated, {
+        this._animated.setValue(-this.props.direction), c.A.spring(this._animated, {
             toValue: 0,
             ...this.props.springSettings
         }).start(e)
@@ -31,13 +31,13 @@ class u extends s.PureComponent {
         this._animated.setValue(0)
     }
     componentWillLeave(e) {
-        d.A.spring(this._animated, {
+        c.A.spring(this._animated, {
             toValue: this.props.direction,
             ...this.props.springSettings
         }).start(e)
     }
     getStyle() {
-        let e = d.A.accelerate({
+        let e = c.A.accelerate({
             transform: [{
                 translateX: this._animated.interpolate({
                     inputRange: [0, 1],
@@ -51,29 +51,29 @@ class u extends s.PureComponent {
         })), e
     }
     render() {
-        return (0, i.jsx)(d.A.div, {
+        return (0, n.jsx)(c.A.div, {
             style: this.getStyle(),
-            className: o.A,
+            className: d.A,
             children: this.props.children
         })
     }
 }
-let m = e => {
+let A = e => {
     let {
         children: t,
         step: a,
-        direction: n,
-        className: s,
-        springSettings: r = h,
-        fadeInOut: d = !1
+        direction: s,
+        className: i,
+        springSettings: l = h,
+        fadeInOut: c = !1
     } = e;
-    return (0, i.jsx)(_.F, {
+    return (0, n.jsx)(o.F, {
         component: "div",
-        className: l()(o.Q, s),
-        children: (0, i.jsx)(u, {
-            direction: n,
-            springSettings: r,
-            fadeInOut: d,
+        className: r()(d.Q, i),
+        children: (0, n.jsx)(u, {
+            direction: s,
+            springSettings: l,
+            fadeInOut: c,
             children: t
         }, a)
     })

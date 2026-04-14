@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(158954),
-    r = n(956793),
-    s = n(265422),
+    s = n(956793),
+    r = n(265422),
     o = n(986268),
     d = n(529200),
     c = n(309010),
@@ -29,7 +29,7 @@ function g(e) {
             link_channel_type: n.type,
             guild_id: A,
             channel_id: x
-        }), (0, s.i)(t.id, n.id), r.default.selectVoiceChannel(n.id)
+        }), (0, r.i)(t.id, n.id), s.default.selectVoiceChannel(n.id)
     }, [g, t, n, A, x]), C = (0, i.jsx)(d.A.Channel, {
         channel: n
     });

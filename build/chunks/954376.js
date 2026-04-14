@@ -1,33 +1,33 @@
 /** chunk id: 954376 params = (module,exports,require) **/
 a.d(t, {
-    A: () => d
+    A: () => c
 });
-var n = a(627968);
+var s = a(627968);
 a(64700);
-var i = a(311907),
-    s = a(397927),
-    r = a(478063),
-    l = a(287809);
-let d = function(e) {
+var n = a(311907),
+    i = a(397927),
+    l = a(478063),
+    r = a(287809);
+let c = function(e) {
     let {
         recipients: t,
         size: a,
-        status: d,
-        isTyping: _,
-        className: o,
-        ...c
-    } = e, h = s.vCh[a], u = (0, i.yK)([l.default], () => t.slice(0, 2).map(e => {
-        let t = l.default.getUser(e);
+        status: c,
+        isTyping: o,
+        className: d,
+        ..._
+    } = e, h = i.vCh[a], u = (0, n.yK)([r.default], () => t.slice(0, 2).map(e => {
+        let t = r.default.getUser(e);
         if (null != t) return t.getAvatarURL(void 0, h.size, !1)
     }), [t, h.size]);
-    return (0, n.jsx)(r.A, {
-        "aria-label": c["aria-label"],
-        "aria-hidden": c["aria-hidden"],
+    return (0, s.jsx)(l.A, {
+        "aria-label": _["aria-label"],
+        "aria-hidden": _["aria-hidden"],
         backSrc: u[0],
         frontSrc: u[1],
         size: a,
-        status: d,
-        isTyping: _ ?? !1,
-        className: o
+        status: c,
+        isTyping: o ?? !1,
+        className: d
     })
 }

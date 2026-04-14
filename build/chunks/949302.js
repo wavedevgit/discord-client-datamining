@@ -1,7 +1,7 @@
 /** chunk id: 949302 params = (module,exports,require) **/
 n.d(t, {
-    A: () => O,
-    e: () => T
+    A: () => R,
+    e: () => j
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -19,16 +19,16 @@ var i = n(627968),
     S = n(422936),
     _ = n(234419),
     g = n(412260),
-    A = n(852218),
-    x = n(603488),
-    f = n(282077),
+    x = n(852218),
+    f = n(603488),
+    N = n(282077),
     v = n(105390),
-    N = n(49999),
+    A = n(49999),
     C = n(788868),
-    b = n(985018),
-    j = n(292127);
+    T = n(985018),
+    b = n(292127);
 
-function T() {
+function j() {
     let e, t = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
         n = (0, _.V)(),
         r = (0, S.O)(),
@@ -36,20 +36,20 @@ function T() {
         c = null != (0, E.A)(),
         d = l || c,
         u = n?.trial_id === C.Dw,
-        j = [];
-    d && j.push(a.M.BOGO_2025_NITRO_TAB_BADGE);
-    let [T, O] = (0, m.kn)(j, void 0, !0), R = (0, o.bG)([g.A], () => {
-        let e = g.A.getPromotionByTypeAndKey(A.pt.MARKETING_MOMENT, A.zw);
+        b = [];
+    d && b.push(a.M.BOGO_2025_NITRO_TAB_BADGE);
+    let [j, R] = (0, m.kn)(b, void 0, !0), O = (0, o.bG)([g.A], () => {
+        let e = g.A.getPromotionByTypeAndKey(x.pt.MARKETING_MOMENT, x.zw);
         return null == e || e.endDate < new Date ? null : e
-    }), [I, P] = (0, m.Cc)(null != R ? a.M.PREMIUM_MARKETING_MOMENT_USER_SETTINGS_OFFER_BADGE : null, R?.id ?? "", void 0, !0);
+    }), [I, P] = (0, m.Cc)(null != O ? a.M.PREMIUM_MARKETING_MOMENT_USER_SETTINGS_OFFER_BADGE : null, O?.id ?? "", void 0, !0);
     return s.useEffect(() => {
-        !0 === t && (T === a.M.BOGO_2025_NITRO_TAB_BADGE && O(N.i.AUTO_DISMISS), null != I && P(N.i.AUTO_DISMISS))
-    }, [O, P, t, T, I]), null != R ? e = (0, i.jsx)(f.A, {
+        !0 === t && (j === a.M.BOGO_2025_NITRO_TAB_BADGE && R(A.i.AUTO_DISMISS), null != I && P(A.i.AUTO_DISMISS))
+    }, [R, P, t, j, I]), null != O ? e = (0, i.jsx)(N.A, {
         componentId: "nitro-settings-offer-badge",
-        badgeCopy: b.intl.string(b.t.OS9KPu),
-        acknowledgedBadgeCopy: b.intl.string(b.t.OS9KPu),
-        isDismissed: (0, h.u$)(a.M.PREMIUM_MARKETING_MOMENT_USER_SETTINGS_OFFER_BADGE, R.id).isDismissed
-    }) : d ? e = (0, i.jsx)(x.A, {}) : null != r ? e = (0, i.jsx)(v.fY, {
+        badgeCopy: T.intl.string(T.t.OS9KPu),
+        acknowledgedBadgeCopy: T.intl.string(T.t.OS9KPu),
+        isDismissed: (0, h.u$)(a.M.PREMIUM_MARKETING_MOMENT_USER_SETTINGS_OFFER_BADGE, O.id).isDismissed
+    }) : d ? e = (0, i.jsx)(f.A, {}) : null != r ? e = (0, i.jsx)(v.fY, {
         isTabSelected: t,
         userDiscount: r,
         includesAmountOff: !1
@@ -59,24 +59,24 @@ function T() {
     })), e
 }
 
-function O(e) {
+function R(e) {
     let {
         decoration: t,
         label: n,
         isSelected: s
-    } = e, r = (0, p.cg)(), o = T(s) ?? t ?? (0, i.jsx)(d.tvc, {
+    } = e, r = (0, p.cg)(), o = j(s) ?? t ?? (0, i.jsx)(d.tvc, {
         size: "sm",
         color: s ? c.A.unsafe_rawColors.WHITE.css : u.k0.PREMIUM_TIER_2
     });
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: l()(j.gj, {
-                [j.wH]: s && !r
+            className: l()(b.gj, {
+                [b.wH]: s && !r
             }),
             children: [n, o]
         }), (0, i.jsx)("div", {
-            className: l()(j.Tp, {
-                [j._I]: !r && s
+            className: l()(b.Tp, {
+                [b._I]: !r && s
             })
         })]
     })

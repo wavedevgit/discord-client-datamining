@@ -77,7 +77,7 @@ function E(e) {
             };
         return (0, n.jsx)(u.f5, {
             value: R,
-            children: null != t ? (0, n.jsx)(g.default, {
+            children: null != t ? (0, n.jsx)(g.A, {
                 targetElementRef: j,
                 user: t,
                 guildId: E,

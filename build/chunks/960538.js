@@ -5,9 +5,9 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(503698),
-    r = n.n(l),
-    s = n(111956),
-    o = n.n(s),
+    s = n.n(l),
+    r = n(111956),
+    o = n.n(r),
     d = n(665260),
     c = n(305866),
     u = n(435371),
@@ -88,7 +88,7 @@ class v extends a.Component {
             useChatFontScaling: a,
             tabIndex: l = 0
         } = this.props, {
-            isReactionPickerActive: s
+            isReactionPickerActive: r
         } = this.state;
         if (e.state === x.cmJ.SENDING || (0, d.Lt)(e.flags, x.pr7.EPHEMERAL)) return null;
         let o = a ? I : E,
@@ -99,16 +99,16 @@ class v extends a.Component {
             };
         return e.type === x.lAJ.EMOJI_ADDED && 0 === e.reactions.length ? (0, i.jsx)(h._x, {
             message: e,
-            className: r()(o.reactionBtn, t)
+            className: s()(o.reactionBtn, t)
         }) : (0, i.jsx)(_.YNO, {
             targetElementRef: this.ref,
-            shouldShow: s,
+            shouldShow: r,
             onRequestClose: this.handleReactionPickerToggle,
             renderPopout: this.renderReactionPopout,
             position: "right",
             children: (e, a) => {
                 let {
-                    isShown: s
+                    isShown: r
                 } = a;
                 return (0, i.jsx)(u.m_, {
                     asContainer: !0,
@@ -122,8 +122,8 @@ class v extends a.Component {
                         },
                         onMouseEnter: () => (0, m.K)(f.EmojiInteractionPoint.AddReactionPopoutMouseEntered),
                         onFocus: () => (0, m.K)(f.EmojiInteractionPoint.AddReactionPopoutFocused),
-                        className: r()(o.reactionBtn, {
-                            [o.active]: s
+                        className: s()(o.reactionBtn, {
+                            [o.active]: r
                         }, t),
                         children: [(0, i.jsx)(_.nm2, {
                             ...c

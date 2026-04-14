@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(621466),
     r = n(158954),
     l = n(775602),
-    o = n(186111),
-    s = n(430452),
+    s = n(186111),
+    o = n(430452),
     a = n(383501),
     d = n(203982),
     c = n(350535),
@@ -21,6 +21,6 @@ let _ = new Set(["PageDown", "PageUp", "Home", "End", "ArrowUp", "ArrowDown", "A
             let n = (0, i.BF)(e)?.activeElement;
             if ((0, i.Cw)(n) || r.rxt.isActive() || A.has(t) || E.has(t) || I.has(t)) return !1;
             let h = null != n && "BODY" === n.tagName;
-            return !(l.A.keyboardModeEnabled && !h && !/^[a-zA-Z0-9]$/.test(t) || d._.hasSubscribers(u.jej.MODAL_CLOSE) || o.A.hasLayers()) && ("Tab" === t && d._.hasSubscribers(u.jej.TEXTAREA_FOCUS) && null != document.querySelector('[data-can-focus="true"]') ? (e.preventDefault(), d._.dispatch(u.jej.TEXTAREA_FOCUS), !1) : !(a.A.isConnected() && s.Ay.getMode() === u.TBI.PUSH_TO_TALK && !s.Ay.isSelfMute() && Object.values(s.Ay.getShortcuts()).map(c.pi).some(t => t.map(e => e.keyCode).includes(e.keyCode))) && void(!e.metaKey && !e.ctrlKey && !_.has(t) && d._.dispatchToLastSubscribed(u.jej.TEXTAREA_FOCUS)))
+            return !(l.A.keyboardModeEnabled && !h && !/^[a-zA-Z0-9]$/.test(t) || d._.hasSubscribers(u.jej.MODAL_CLOSE) || s.A.hasLayers()) && ("Tab" === t && d._.hasSubscribers(u.jej.TEXTAREA_FOCUS) && null != document.querySelector('[data-can-focus="true"]') ? (e.preventDefault(), d._.dispatch(u.jej.TEXTAREA_FOCUS), !1) : !(a.A.isConnected() && o.Ay.getMode() === u.TBI.PUSH_TO_TALK && !o.Ay.isSelfMute() && Object.values(o.Ay.getShortcuts()).map(c.pi).some(t => t.map(e => e.keyCode).includes(e.keyCode))) && void(!e.metaKey && !e.ctrlKey && !_.has(t) && d._.dispatchToLastSubscribed(u.jej.TEXTAREA_FOCUS)))
         }
     }

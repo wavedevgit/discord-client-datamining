@@ -16,14 +16,14 @@ var i = n(627968),
     p = n(260509),
     m = n(427157),
     f = n(734057),
-    h = n(71393),
-    y = n(287809),
+    y = n(71393),
+    h = n(287809),
     E = n(985018);
 
 function S(e) {
     let {
         analyticsLocations: t
-    } = (0, c.Ay)(), n = e.interactionMetadata?.authorizing_integration_owners[a.b.USER_INSTALL], S = e.interactionMetadata?.authorizing_integration_owners[a.b.GUILD_INSTALL], _ = e.interactionMetadata?.user.id, T = (0, r.bG)([y.default], () => y.default.getUser(n)), I = (0, r.bG)([h.A], () => h.A.getGuild(S)), v = f.A.getChannel(e.channel_id), b = v?.getGuildId(), D = (0, r.bG)([y.default], () => y.default.getUser(_));
+    } = (0, c.Ay)(), n = e.interactionMetadata?.authorizing_integration_owners[a.b.USER_INSTALL], S = e.interactionMetadata?.authorizing_integration_owners[a.b.GUILD_INSTALL], _ = e.interactionMetadata?.user.id, T = (0, r.bG)([h.default], () => h.default.getUser(n)), I = (0, r.bG)([y.A], () => y.A.getGuild(S)), v = f.A.getChannel(e.channel_id), b = v?.getGuildId(), D = (0, r.bG)([h.default], () => h.default.getUser(_));
     if (l.useEffect(() => {
             null == T && null != n && (0, o.wz)(n)
         }, [T, n]), !(0, u._)(e)) return null;

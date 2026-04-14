@@ -1,20 +1,20 @@
 /** chunk id: 644119 params = (module,exports,require) **/
-t.d(l, {
-    A: () => i,
-    b: () => n
+l.d(t, {
+    A: () => a,
+    b: () => i
 });
-var r = t(567243),
-    s = t(652215);
+var r = l(567243),
+    n = l(652215);
 
-function n(e) {
+function i(e) {
     return null != e && "open.spotify.com" === e
 }
 
-function i(e) {
-    if (null == e.url || e.provider?.name !== "Spotify" || e.type !== s.Auw.LINK) return !1;
+function a(e) {
+    if (null == e.url || e.provider?.name !== "Spotify" || e.type !== n.Auw.LINK) return !1;
     try {
-        let l = r.parse(e.url, !0).host;
-        return n(l)
+        let t = r.parse(e.url, !0).host;
+        return i(t)
     } catch (e) {
         return !1
     }

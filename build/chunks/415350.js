@@ -5,9 +5,9 @@ n.d(t, {
 var i = n(735438),
     a = n.n(i),
     l = n(223637),
-    r = n(542664),
-    s = n(46054);
-let o = a().omit(r.A.RULES, ["codeBlock", "heading"]),
+    s = n(542664),
+    r = n(46054);
+let o = a().omit(s.A.RULES, ["codeBlock", "heading"]),
     d = {
         ...l.A,
         parse: function(e, t, n) {
@@ -19,7 +19,7 @@ let o = a().omit(r.A.RULES, ["codeBlock", "heading"]),
             }
         }
     },
-    c = s.A.combineAndInjectMentionRule(o, [s.A.createReactRules(s.A.defaultReactRuleOptions), {
+    c = r.A.combineAndInjectMentionRule(o, [r.A.createReactRules(r.A.defaultReactRuleOptions), {
         header: d
     }]),
-    u = s.A.reactParserFor(c)
+    u = r.A.reactParserFor(c)

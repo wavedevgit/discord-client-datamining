@@ -112,7 +112,7 @@ function G(e) {
     }
     return (0, g.Eq)(h, "GuildSettingsRolesEditMembers"), (0, i.jsx)("div", {
         className: R.Q,
-        children: (0, i.jsx)(_.default, {
+        children: (0, i.jsx)(_.A, {
             targetElementRef: x,
             userId: t.id,
             guildId: l,

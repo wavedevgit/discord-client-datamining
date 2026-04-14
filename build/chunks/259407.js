@@ -1,97 +1,97 @@
 /** chunk id: 259407 params = (module,exports,require) **/
-t.d(l, {
-    Ay: () => g,
+l.d(t, {
+    Ay: () => _,
     mt: () => p
 });
-var r, s = t(627968),
-    n = t(64700),
-    i = t(998218),
-    a = t(652215),
-    o = t(560856);
+var r, n = l(627968),
+    i = l(64700),
+    a = l(998218),
+    s = l(652215),
+    o = l(560856);
 let d = "allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts";
 
-function u(e, l) {
-    let t = i.A.toURLSafe(e ?? "");
-    if (null === t) return "";
-    if (null == l) return t.toString();
-    for (let e in l) {
-        let r = l[e];
-        null != r && t.searchParams.set(e, r)
+function c(e, t) {
+    let l = a.A.toURLSafe(e ?? "");
+    if (null === l) return "";
+    if (null == t) return l.toString();
+    for (let e in t) {
+        let r = t[e];
+        null != r && l.searchParams.set(e, r)
     }
-    return t.toString()
+    return l.toString()
+}
+
+function u(e) {
+    let {
+        src: t,
+        autoMute: l,
+        ...r
+    } = e, a = i.useRef(null), s = i.useCallback(e => {
+        e.data["x-tiktok-player"] && "https://www.tiktok.com" === e.origin && "onPlayerReady" === e.data.type && (l && a.current?.contentWindow?.postMessage({
+            type: "mute",
+            "x-tiktok-player": !0
+        }, e.origin), a.current?.contentWindow?.postMessage({
+            type: "play",
+            "x-tiktok-player": !0
+        }, e.origin))
+    }, [l]);
+    i.useEffect(() => (window.addEventListener("message", s), () => window.removeEventListener("message", s)), [s]);
+    let o = c(t, {
+        utm_source: "discord.gg"
+    });
+    return (0, n.jsx)(m, {
+        src: o,
+        ref: a,
+        ...r
+    })
 }
 
 function h(e) {
     let {
-        src: l,
-        autoMute: t,
+        src: t,
+        autoMute: l,
         ...r
-    } = e, i = n.useRef(null), a = n.useCallback(e => {
-        e.data["x-tiktok-player"] && "https://www.tiktok.com" === e.origin && "onPlayerReady" === e.data.type && (t && i.current?.contentWindow?.postMessage({
-            type: "mute",
-            "x-tiktok-player": !0
-        }, e.origin), i.current?.contentWindow?.postMessage({
-            type: "play",
-            "x-tiktok-player": !0
-        }, e.origin))
-    }, [t]);
-    n.useEffect(() => (window.addEventListener("message", a), () => window.removeEventListener("message", a)), [a]);
-    let o = u(l, {
-        utm_source: "discord.gg"
-    });
-    return (0, s.jsx)(m, {
-        src: o,
-        ref: i,
-        ...r
-    })
-}
-
-function c(e) {
-    let {
-        src: l,
-        autoMute: t,
-        ...r
-    } = e, n = u(l, {
+    } = e, i = c(t, {
         autoplay: "1",
         auto_play: "1",
-        mute: t ? "1" : void 0,
-        pageType: a.NzX
+        mute: l ? "1" : void 0,
+        pageType: s.NzX
     });
-    return (0, s.jsx)(m, {
-        src: n,
+    return (0, n.jsx)(m, {
+        src: i,
         ...r
     })
 }
-let m = n.forwardRef(function(e, l) {
+let m = i.forwardRef(function(e, t) {
     let {
-        allowFullScreen: t,
+        allowFullScreen: l,
         ...r
-    } = e, n = t ? `${d} allow-fullscreen` : d;
-    return (0, s.jsx)("iframe", {
-        ref: l,
+    } = e, i = l ? `${d} allow-fullscreen` : d;
+    return (0, n.jsx)("iframe", {
+        ref: t,
         className: o.Qu,
-        allow: t ? "autoplay; fullscreen" : "autoplay",
+        allow: l ? "autoplay; fullscreen" : "autoplay",
         frameBorder: 0,
         scrolling: "no",
-        sandbox: n,
-        allowFullScreen: t,
+        sandbox: i,
+        allowFullScreen: l,
         ...r
     })
 });
 var p = ((r = {}).YOUTUBE = "YouTube", r.TIKTOK = "TikTok", r);
 
-function g(e) {
+function _(e) {
     switch (e.provider) {
         case "YouTube":
-            return (0, s.jsx)(c, {
+            return (0, n.jsx)(h, {
                 ...e
             });
         case "TikTok":
-            return (0, s.jsx)(h, {
+            return (0, n.jsx)(u, {
                 ...e
             });
         default:
-            return (0, s.jsx)(m, {
+            return (0, n.jsx)(m, {
                 ...e
             })
     }

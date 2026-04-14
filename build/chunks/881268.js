@@ -1,11 +1,11 @@
 /** chunk id: 881268 params = (module,exports,require) **/
 n.d(t, {
-    X: () => r
+    X: () => s
 });
 var i = n(562465),
     a = n(198982),
     l = n(652215);
-let r = async (e, t) => {
+let s = async (e, t) => {
     try {
         return (await i.Bo.get({
             url: l.Rsh.PRICE_TIERS,

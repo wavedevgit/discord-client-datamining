@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(503698),
-    i = s.n(l),
-    a = s(651162),
+    a = s.n(l),
+    i = s(651162),
     o = s(554146),
     c = s(397927),
     d = s(564322),
@@ -29,8 +29,8 @@ var n = s(627968),
     L = s(633026),
     j = s(251191),
     O = s(613258),
-    T = s(152568),
-    k = s(758836),
+    k = s(152568),
+    T = s(758836),
     y = s(652215),
     N = s(985018),
     R = s(297046);
@@ -81,7 +81,7 @@ let B = e => {
             errorOrigin: f.A.SHOP_PAGE,
             errorMessage: M.message
         }) : P || 0 === H.length ? (0, n.jsxs)("div", {
-            className: i()(R.g4, R.Of),
+            className: a()(R.g4, R.Of),
             children: [(0, n.jsx)(S.A, {
                 isLoading: P,
                 handleTransition: t,
@@ -92,7 +92,7 @@ let B = e => {
                 categories: []
             }), (0, n.jsx)(A.A, {
                 isLoading: P,
-                title: c === k.G2.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
+                title: c === T.G2.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
                 numVisibleItems: s,
                 tab: c
             })]
@@ -102,7 +102,7 @@ let B = e => {
                 let _ = null,
                     g = !1;
                 switch (e.type) {
-                    case a.g.HERO:
+                    case i.g.HERO:
                         _ = (0, n.jsx)(S.A, {
                             isLoading: P,
                             handleTransition: t,
@@ -110,27 +110,27 @@ let B = e => {
                             tab: c
                         }, d);
                         break;
-                    case a.g.FEATURED:
+                    case i.g.FEATURED:
                         _ = (0, n.jsx)(C.A, {
                             isLoading: P,
                             handleTransition: t,
                             featuredBlockRecord: e
                         }, d);
                         break;
-                    case a.g.FEED:
+                    case i.g.FEED:
                         let h = e.sortedSkuIds;
                         _ = (0, n.jsx)(A.A, {
-                            title: c === k.G2.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
+                            title: c === T.G2.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
                             isLoading: l,
                             numVisibleItems: s,
                             sortedSkuIds: h,
-                            buttonContainerClassName: r?.type === a.g.IMMERSIVE_BANNER ? R.w : void 0,
-                            prioritizeUserDiscounts: c === k.G2.HOME,
+                            buttonContainerClassName: r?.type === i.g.IMMERSIVE_BANNER ? R.w : void 0,
+                            prioritizeUserDiscounts: c === T.G2.HOME,
                             tab: c,
-                            orbsSupportedOnly: c === k.G2.ORBS
+                            orbsSupportedOnly: c === T.G2.ORBS
                         }, d);
                         break;
-                    case a.g.WIDE_BANNER:
+                    case i.g.WIDE_BANNER:
                         if (e.isDismissible) {
                             let t = e.dismissibleContentVersion ?? 0,
                                 {
@@ -138,31 +138,31 @@ let B = e => {
                                 } = (0, u.En)(o.M.COLLECTIBLES_SHOP_WIDE_BANNER, t);
                             if (s) return null
                         }
-                        _ = (0, n.jsx)(T.A, {
+                        _ = (0, n.jsx)(k.A, {
                             wideBannerBlock: e,
                             tab: c
                         }, d);
                         break;
-                    case a.g.SHELF:
+                    case i.g.SHELF:
                         _ = (0, n.jsx)(j.A, {
                             handleTransition: t,
                             shelf: e,
                             tab: c
                         }, d);
                         break;
-                    case a.g.COUNTDOWN_TIMER:
+                    case i.g.COUNTDOWN_TIMER:
                         _ = (0, n.jsx)(b.S, {
                             countdownTimerBlock: e,
                             isVisible: x
                         }, d), g = !0;
                         break;
-                    case a.g.IMMERSIVE_BANNER:
+                    case i.g.IMMERSIVE_BANNER:
                         _ = (0, n.jsx)(v.A, {
                             immersiveBannerBlock: e,
                             onVisibilityChange: e => O(!e)
                         }, d);
                         break;
-                    case a.g.REWARD_HERO:
+                    case i.g.REWARD_HERO:
                         _ = (0, n.jsx)(L.A, {
                             isLoading: P,
                             handleTransition: t,
@@ -170,7 +170,7 @@ let B = e => {
                             tab: c
                         }, d);
                         break;
-                    case a.g.MARVEL_RIVALS_PROMOTIONAL_BANNER: {
+                    case i.g.MARVEL_RIVALS_PROMOTIONAL_BANNER: {
                         let {
                             isDismissed: t
                         } = (0, u.En)(o.M.COLLECTIBLES_SHOP_MARVEL_RIVALS_ORBS_REWARD);
@@ -182,7 +182,6 @@ let B = e => {
                                     (0, u.d6)(o.M.COLLECTIBLES_SHOP_MARVEL_RIVALS_ORBS_REWARD, {})
                                 },
                                 skuIds: e.skuIds,
-                                endTime: e.endTime,
                                 tab: c
                             })
                         }, d)
@@ -193,7 +192,7 @@ let B = e => {
                 return (0, n.jsx)(m.rW, {
                     blockType: e.type,
                     children: (0, n.jsx)("div", {
-                        className: i()(R.v1, R.Of, {
+                        className: a()(R.v1, R.Of, {
                             [R.J1]: 0 === d || g
                         }),
                         children: _
@@ -207,25 +206,25 @@ let B = e => {
             handleTransition: t,
             tab: s,
             transitionState: l
-        } = e, i = r.useRef(null), {
-            handleScroll: a
-        } = (0, d.X)(i, s), o = (0, x.U)(), u = (0, g.uM)(), [m, h] = r.useState(k.md), [p, f] = r.useState(!1);
+        } = e, a = r.useRef(null), {
+            handleScroll: i
+        } = (0, d.X)(a, s), o = (0, x.U)(), u = (0, g.uM)(), [m, h] = r.useState(T.md), [p, f] = r.useState(!1);
         return r.useEffect(() => {
-            if (null != i.current) {
+            if (null != a.current) {
                 let e = () => {
-                        if (null == i.current) return;
-                        let e = i.current.getDistanceFromBottom();
-                        m >= 36 ? f(e < 20) : e <= 200 && h(e => e + k.md)
+                        if (null == a.current) return;
+                        let e = a.current.getDistanceFromBottom();
+                        m >= 36 ? f(e < 20) : e <= 200 && h(e => e + T.md)
                     },
-                    t = i.current.getScrollerNode();
+                    t = a.current.getScrollerNode();
                 return t?.addEventListener("scroll", e), () => {
                     t?.removeEventListener("scroll", e)
                 }
             }
-        }, [i, m, h, f]), (0, n.jsx)(c.T7Y, {
+        }, [a, m, h, f]), (0, n.jsx)(c.T7Y, {
             className: R.OW,
-            ref: i,
-            onScroll: a,
+            ref: a,
+            onScroll: i,
             children: (0, n.jsxs)("div", {
                 className: R.bx,
                 children: [(0, n.jsxs)("div", {
@@ -235,7 +234,7 @@ let B = e => {
                         numVisibleItems: m,
                         isFetchingCategories: o,
                         tab: s
-                    }), s !== k.G2.CATALOG && m >= 36 && (0, n.jsxs)("div", {
+                    }), s !== T.G2.CATALOG && m >= 36 && (0, n.jsxs)("div", {
                         className: R.R$,
                         children: [(0, n.jsx)(c.Heading, {
                             variant: "heading-md/semibold",
@@ -250,7 +249,7 @@ let B = e => {
                                 }), _.default.track(y.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                                     collectibles_shop_session_id: u?.sessionId,
                                     page_type: s,
-                                    page_category: s === k.G2.HOME ? void 0 : u?.pageCategory,
+                                    page_category: s === T.G2.HOME ? void 0 : u?.pageCategory,
                                     cta_name: "browse the shop button"
                                 })
                             },
@@ -259,7 +258,7 @@ let B = e => {
                     })]
                 }), (0, n.jsx)(O.A, {
                     peaking: p,
-                    transitioning: l === k.Pf.OUT
+                    transitioning: l === T.Pf.OUT
                 })]
             })
         })

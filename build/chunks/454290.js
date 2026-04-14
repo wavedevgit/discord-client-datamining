@@ -1,21 +1,20 @@
-/** chunk id: 454290, original params: e,t,n (module,exports,require) **/
-"use strict";
+/** chunk id: 454290 params = (module,exports,require) **/
 n.d(t, {
-    Q: () => o,
-    f: () => a
+    Q: () => a,
+    f: () => r
 });
-var r = n(64700),
-    i = n(92674);
-let a = (0, r.createContext)({
-    scale: new i.SpringValue(1),
-    x: new i.SpringValue(0),
-    y: new i.SpringValue(0),
+var i = n(64700),
+    l = n(445887);
+let r = (0, i.createContext)({
+    scale: new l.SpringValue(1),
+    x: new l.SpringValue(0),
+    y: new l.SpringValue(0),
     setScale() {},
     setOffset() {},
     zoomed: !1,
     setZoomed() {}
 });
 
-function o() {
-    return (0, r.useContext)(a)
+function a() {
+    return (0, i.useContext)(r)
 }

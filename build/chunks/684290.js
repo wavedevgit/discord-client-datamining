@@ -1,20 +1,20 @@
 /** chunk id: 684290 params = (module,exports,require) **/
-t.d(l, {
-    A: () => i,
-    k: () => n
+l.d(t, {
+    A: () => a,
+    k: () => i
 });
-var r = t(567243),
-    s = t(652215);
+var r = l(567243),
+    n = l(652215);
 
-function n(e) {
+function i(e) {
     return "music.apple.com" === e
 }
 
-function i(e) {
-    if (null == e.url || e.provider?.name !== "Apple Music" || e.type !== s.Auw.ARTICLE && e.type !== s.Auw.LINK) return !1;
+function a(e) {
+    if (null == e.url || e.provider?.name !== "Apple Music" || e.type !== n.Auw.ARTICLE && e.type !== n.Auw.LINK) return !1;
     try {
-        let l = r.parse(e.url, !0).host;
-        return n(l)
+        let t = r.parse(e.url, !0).host;
+        return i(t)
     } catch (e) {
         return !1
     }

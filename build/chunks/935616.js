@@ -1,104 +1,104 @@
 /** chunk id: 935616 params = (module,exports,require) **/
-t.d(l, {
-    A: () => u
-}), t(508300);
-var r = t(627968),
-    s = t(64700),
-    n = t(607470),
-    i = t(643612),
-    a = t(652215),
-    o = t(985018);
+l.d(t, {
+    A: () => c
+}), l(508300);
+var r = l(627968),
+    n = l(64700),
+    i = l(607470),
+    a = l(643612),
+    s = l(652215),
+    o = l(985018);
 
 function d(e) {
     let {
-        poster: l,
-        src: t,
-        width: i,
+        poster: t,
+        src: l,
+        width: a,
         height: o,
         naturalWidth: d,
-        naturalHeight: u,
-        play: h = !0,
-        className: c,
+        naturalHeight: c,
+        play: u = !0,
+        className: h,
         alt: m,
         responsive: p
-    } = e, g = s.useRef(null);
-    return (s.useEffect(() => {
+    } = e, _ = n.useRef(null);
+    return (n.useEffect(() => {
         let {
             current: e
-        } = g;
-        h ? e?.play()?.catch(e => {
+        } = _;
+        u ? e?.play()?.catch(e => {
             if (!(e instanceof DOMException) || "NotAllowedError" !== e.name) throw e
         }) : e?.pause()
-    }, [h]), d <= a.AaC && u <= a.oJQ || d <= a.oJQ && u <= a.AaC) ? (0, r.jsx)(n.A, {
-        ref: g,
-        className: c,
-        poster: l,
-        src: t,
-        width: i,
+    }, [u]), d <= s.AaC && c <= s.oJQ || d <= s.oJQ && c <= s.AaC) ? (0, r.jsx)(i.A, {
+        ref: _,
+        className: h,
+        poster: t,
+        src: l,
+        width: a,
         height: o,
         responsive: p,
         muted: !0,
         loop: !0,
-        autoPlay: h,
+        autoPlay: u,
         playsInline: !0,
         preload: "none",
         "aria-label": m
     }) : (0, r.jsx)("img", {
         alt: "",
-        src: l,
-        width: i,
+        src: t,
+        width: a,
         height: o
     })
 }
 
-function u(e) {
+function c(e) {
     let {
-        src: l,
-        poster: t,
-        naturalWidth: s,
-        naturalHeight: n,
-        responsive: a,
-        autoPlay: u,
-        className: h,
-        playable: c = !0,
+        src: t,
+        poster: l,
+        naturalWidth: n,
+        naturalHeight: i,
+        responsive: s,
+        autoPlay: c,
+        className: u,
+        playable: h = !0,
         renderImageComponent: m,
         alt: p = o.intl.string(o.t.I5gL2H),
-        sourceMetadata: g,
-        ...x
+        sourceMetadata: _,
+        ...b
     } = e;
-    return (0, r.jsx)(i.G.Consumer, {
+    return (0, r.jsx)(a.G.Consumer, {
         children: e => m({
-            ...x,
+            ...b,
             alt: p,
-            src: t,
-            containerClassName: h,
-            autoPlay: u,
-            animated: c,
-            responsive: a,
+            src: l,
+            containerClassName: u,
+            autoPlay: c,
+            animated: h,
+            responsive: s,
             renderAccessory: e,
-            tabIndex: c ? 0 : -1,
-            dataSafeSrc: l,
+            tabIndex: h ? 0 : -1,
+            dataSafeSrc: t,
             children(e) {
                 let {
-                    src: t,
-                    size: i,
+                    src: l,
+                    size: a,
                     animating: o,
-                    alt: u
+                    alt: c
                 } = e;
                 return (0, r.jsx)(d, {
-                    alt: u,
-                    className: h,
-                    poster: t,
-                    src: l,
-                    width: i.width,
-                    height: i.height,
-                    naturalWidth: s,
-                    naturalHeight: n,
-                    responsive: a,
-                    play: c && o
+                    alt: c,
+                    className: u,
+                    poster: l,
+                    src: t,
+                    width: a.width,
+                    height: a.height,
+                    naturalWidth: n,
+                    naturalHeight: i,
+                    responsive: s,
+                    play: h && o
                 })
             },
-            sourceMetadata: g,
+            sourceMetadata: _,
             analyticsSource: "LazyGIFV"
         })
     })

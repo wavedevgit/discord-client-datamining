@@ -1,27 +1,27 @@
 /** chunk id: 88872 params = (module,exports,require) **/
 "use strict";
 l.d(t, {
-    default: () => g
+    default: () => f
 });
 var a = l(627968),
-    n = l(64700),
-    r = l(158954),
-    s = l(450507),
-    i = l(397927),
-    o = l(256311),
-    d = l(954571),
-    c = l(824611),
-    u = l(45813),
-    _ = l(559868),
-    m = l(652215),
-    h = l(985018);
-class p extends n.PureComponent {
+    s = l(64700),
+    n = l(158954),
+    r = l(450507),
+    o = l(397927),
+    i = l(256311),
+    c = l(954571),
+    u = l(824611),
+    d = l(45813),
+    p = l(559868),
+    h = l(652215),
+    m = l(985018);
+class g extends s.PureComponent {
     maxScrolledPercentage = 0;
     mountedAt = 0;
     componentDidMount() {
-        this.mountedAt = Date.now(), this.maxScrolledPercentage = 0, this.track(m.HAw.CHANGE_LOG_OPENED, {}, !0)
+        this.mountedAt = Date.now(), this.maxScrolledPercentage = 0, this.track(h.HAw.CHANGE_LOG_OPENED, {}, !0)
     }
-    close = () => ((0, i.OoC)(_.lb), Promise.resolve());
+    close = () => ((0, o.OoC)(p.lb), Promise.resolve());
     handleScroll = e => {
         let {
             offsetHeight: t,
@@ -36,28 +36,28 @@ class p extends n.PureComponent {
             let l = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
                 a = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
                 {
-                    changeLog: n
+                    changeLog: s
                 } = e.props,
                 {
-                    date: r,
-                    revision: s
-                } = n,
-                i = {
-                    change_log_id: `${r}:${s}`,
+                    date: n,
+                    revision: r
+                } = s,
+                o = {
+                    change_log_id: `${n}:${r}`,
                     ...l
                 };
-            a || (i = {
+            a || (o = {
                 seconds_open: Math.round((Date.now() - e.mountedAt) / 1e3),
                 max_scrolled_percentage: 100 * parseInt(e.maxScrolledPercentage.toPrecision(4), 10),
-                ...i
-            }), d.default.track(t, i)
+                ...o
+            }), c.default.track(t, o)
         }
     })();
     componentWillUnmount() {
-        this.track(m.HAw.CHANGE_LOG_CLOSED)
+        this.track(h.HAw.CHANGE_LOG_CLOSED)
     }
     render() {
-        return (0, a.jsx)(u.A, {
+        return (0, a.jsx)(d.A, {
             ...this.props,
             changeLog: this.props.changeLog,
             onClose: this.close,
@@ -67,33 +67,33 @@ class p extends n.PureComponent {
     }
 }
 
-function g(e) {
+function f(e) {
     let {
         changelog: t,
         loaded: l,
-        clientTooOld: i
-    } = (0, c.J)();
-    if (n.useEffect(() => {
-            if (l && null != t) return () => o.A.markChangelogAsSeen(t.id, t.date)
-        }, [l, t]), i) return (0, a.jsx)(r.Modal, {
-        title: h.intl.string(h.t.V9ospk),
+        clientTooOld: o
+    } = (0, u.J)();
+    if (s.useEffect(() => {
+            if (l && null != t) return () => i.A.markChangelogAsSeen(t.id, t.date)
+        }, [l, t]), o) return (0, a.jsx)(n.Modal, {
+        title: m.intl.string(m.t.V9ospk),
         actions: [{
-            text: h.intl.string(h.t.BddRzS),
+            text: m.intl.string(m.t.BddRzS),
             onClick: e.onClose
         }],
         ...e
     });
     if (null == t)
-        if (l) return (0, a.jsx)(r.Modal, {
-            title: h.intl.string(h.t.O1iRT8),
+        if (l) return (0, a.jsx)(n.Modal, {
+            title: m.intl.string(m.t.O1iRT8),
             actions: [{
-                text: h.intl.string(h.t.BddRzS),
+                text: m.intl.string(m.t.BddRzS),
                 onClick: e.onClose
             }],
             ...e
         });
-        else return (0, s.A)(e);
-    return (0, a.jsx)(p, {
+        else return (0, r.A)(e);
+    return (0, a.jsx)(g, {
         ...e,
         changeLog: t
     })

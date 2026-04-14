@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(735438),
     r = n.n(i),
     l = n(554146),
-    o = n(771781),
-    s = n(826673),
+    s = n(771781),
+    o = n(826673),
     a = n(181079),
     d = n(379587),
     c = n(832275),
@@ -26,8 +26,8 @@ let p = r().throttle(function() {
         } = d.o.getConfig({
             location: "navigateToServer"
         }),
-        i = (0, o.dD)(l.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM),
-        r = (0, s.k8)(l.M.FAVORITES_SERVER_ONBOARDING_INTRO),
+        i = (0, s.dD)(l.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM),
+        r = (0, o.k8)(l.M.FAVORITES_SERVER_ONBOARDING_INTRO),
         p = function(e) {
             let t = u.A.getState().guildId;
             if (null == t) return -2;

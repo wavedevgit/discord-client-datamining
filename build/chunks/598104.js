@@ -1,36 +1,36 @@
 /** chunk id: 598104 params = (module,exports,require) **/
 a.d(t, {
-    A: () => d
+    A: () => c
 });
-var n = a(627968),
-    i = a(64700),
-    s = a(397927),
-    r = a(571694),
-    l = a(954376);
-let d = i.memo(function(e) {
+var s = a(627968),
+    n = a(64700),
+    i = a(397927),
+    l = a(571694),
+    r = a(954376);
+let c = n.memo(function(e) {
     let {
         channel: t,
         size: a,
-        facepileSizeOverride: i,
-        isTyping: d,
-        status: _,
-        className: o,
-        animated: c = !1,
+        facepileSizeOverride: n,
+        isTyping: c,
+        status: o,
+        className: d,
+        animated: _ = !1,
         ...h
     } = e;
-    return t.recipients.length >= 2 && null == t.icon ? (0, n.jsx)(l.A, {
+    return t.recipients.length >= 2 && null == t.icon ? (0, s.jsx)(r.A, {
         "aria-label": h["aria-label"],
         "aria-hidden": h["aria-hidden"],
-        className: o,
+        className: d,
         recipients: t.recipients,
-        size: i ?? a,
-        isTyping: d,
-        status: _
-    }) : (0, n.jsx)(s.euF, {
+        size: n ?? a,
+        isTyping: c,
+        status: o
+    }) : (0, s.jsx)(i.euF, {
         "aria-hidden": h["aria-hidden"],
         "aria-label": h["aria-label"],
-        className: o,
+        className: d,
         size: a,
-        src: (0, r.Y)(t, 80, c)
+        src: (0, l.Y)(t, 80, _)
     })
 })

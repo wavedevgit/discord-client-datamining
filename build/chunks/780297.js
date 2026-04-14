@@ -1,48 +1,48 @@
 /** chunk id: 780297 params = (module,exports,require) **/
-t.d(l, {
-    A: () => u
+l.d(t, {
+    A: () => c
 });
-var r = t(627968);
-t(64700);
-var s = t(503698),
-    n = t.n(s),
-    i = t(567243),
-    a = t(644119),
-    o = t(272984),
-    d = t(560856);
+var r = l(627968);
+l(64700);
+var n = l(503698),
+    i = l.n(n),
+    a = l(567243),
+    s = l(644119),
+    o = l(272984),
+    d = l(560856);
 
-function u(e) {
+function c(e) {
     let {
-        className: l,
+        className: t,
         embed: {
-            url: t
+            url: l
         }
     } = e;
-    if (null == t) return null;
-    let s = null,
-        u = null;
+    if (null == l) return null;
+    let n = null,
+        c = null;
     try {
-        let e = i.parse(t.replace(/intl-[^/]+\//, ""), !0);
-        s = e.host, u = e.pathname
+        let e = a.parse(l.replace(/intl-[^/]+\//, ""), !0);
+        n = e.host, c = e.pathname
     } catch (e) {
         return null
     }
-    if (!(0, a.b)(s) || null == u) return null;
-    let h = u.split("/"),
-        c = null != h[1] ? h[1].toLowerCase() : null,
-        m = null != h[3] ? h[3].toLowerCase() : null,
-        p = h[4];
-    if (!["track", "playlist", "album", "artist", "user", "show", "episode"].includes(c ?? "") || "user" === c && "playlist" !== m) return null;
-    "user" === c && "playlist" === m && null != p && (u = `/playlist/${p}`);
-    let g = 352;
-    return "track" === c ? g = 80 : ("episode" === c || "show" === c) && (g = 232), (0, r.jsx)("iframe", {
-        className: n()(d.IL, l),
-        src: o.RQ.EMBED(u),
+    if (!(0, s.b)(n) || null == c) return null;
+    let u = c.split("/"),
+        h = null != u[1] ? u[1].toLowerCase() : null,
+        m = null != u[3] ? u[3].toLowerCase() : null,
+        p = u[4];
+    if (!["track", "playlist", "album", "artist", "user", "show", "episode"].includes(h ?? "") || "user" === h && "playlist" !== m) return null;
+    "user" === h && "playlist" === m && null != p && (c = `/playlist/${p}`);
+    let _ = 352;
+    return "track" === h ? _ = 80 : ("episode" === h || "show" === h) && (_ = 232), (0, r.jsx)("iframe", {
+        className: i()(d.IL, t),
+        src: o.RQ.EMBED(c),
         style: {
             maxWidth: 400,
             minWidth: 300,
             width: "100%",
-            height: g
+            height: _
         },
         frameBorder: 0,
         sandbox: "allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts",

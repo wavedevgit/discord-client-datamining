@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(230109),
-    i = s(397927),
-    a = s(954571),
+    a = s(397927),
+    i = s(954571),
     o = s(440938),
     c = s(590180),
     d = s(597783),
@@ -36,7 +36,7 @@ let h = e => {
         innerRef: A,
         onChange: b,
         threshold: 0,
-        children: (0, n.jsxs)(i.DUT, {
+        children: (0, n.jsxs)(a.DUT, {
             className: m.oT,
             innerRef: A,
             style: {
@@ -50,7 +50,7 @@ let h = e => {
                     categorySkuId: E,
                     isInternalShopDeeplink: !0,
                     isOrbsExclusive: s?.isOrbsExclusive
-                }), a.default.track(_.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                }), i.default.track(_.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                     collectibles_shop_session_id: v?.sessionId,
                     sku_id: E,
                     page_type: "home",
@@ -61,13 +61,13 @@ let h = e => {
                     cta_name: null
                 })
             },
-            children: [null != p && (0, n.jsx)(i.LpS, {
+            children: [null != p && (0, n.jsx)(a.LpS, {
                 disableColor: !0,
                 text: p,
                 className: m.pv
             }), (0, n.jsx)("div", {
                 className: m.Gh,
-                children: null != S && (0, n.jsx)(i.Heading, {
+                children: null != S && (0, n.jsx)(a.Heading, {
                     lineClamp: 4,
                     className: m.BN,
                     style: {
@@ -78,7 +78,7 @@ let h = e => {
                 })
             }), (0, n.jsx)("div", {
                 className: m.b2,
-                children: (0, n.jsx)(i.Button, {
+                children: (0, n.jsx)(a.Button, {
                     variant: "overlay-primary",
                     text: g.intl.string(g.t.jVcuVY),
                     onClick: e => {
@@ -87,7 +87,7 @@ let h = e => {
                             categorySkuId: E,
                             isInternalShopDeeplink: !0,
                             isOrbsExclusive: s?.isOrbsExclusive
-                        }), e.stopPropagation(), a.default.track(_.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                        }), e.stopPropagation(), i.default.track(_.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                             collectibles_shop_session_id: v?.sessionId,
                             sku_id: E,
                             page_type: "home",

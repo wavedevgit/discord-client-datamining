@@ -26,7 +26,7 @@ var i = n(627968),
     C = n(985018);
 let v = (0, o.t_)(c.X.DISPLAY_PANEL, {
         initialize: x.du,
-        useTitle: () => C.intl.string(C.t.DVatCa),
+        useTitle: () => C.intl.string(C.t["iHH+ky"]),
         buildLayout: () => [E.K, T.S, f.X, p.S, S.f, (0, b.$)(!0), A.J]
     }),
     N = [...x.j0, {
@@ -35,7 +35,7 @@ let v = (0, o.t_)(c.X.DISPLAY_PANEL, {
         StronglyDiscouragedCustomComponent: h.L
     }],
     I = (0, o.i4)(c.X.DISPLAY_SIDEBAR_ITEM, {
-        useTitle: () => C.intl.string(C.t.DVatCa),
+        useTitle: () => C.intl.string(C.t["iHH+ky"]),
         icon: l.PaintPaletteIcon,
         usePredicate: () => (0, u.bp)("DisplaySidebarItem"),
         useMenu: function() {

@@ -1,21 +1,21 @@
 /** chunk id: 344011 params = (module,exports,require) **/
 "use strict";
 s.d(t, {
-    rW: () => i
+    rW: () => a
 });
 var n = s(627968),
     r = s(64700);
 let l = r.createContext(null);
 
-function i(e) {
+function a(e) {
     let {
         blockType: t,
         children: s
-    } = e, i = r.useMemo(() => ({
+    } = e, a = r.useMemo(() => ({
         blockType: t
     }), [t]);
     return (0, n.jsx)(l.Provider, {
-        value: i,
+        value: a,
         children: s
     })
 }

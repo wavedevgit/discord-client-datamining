@@ -7,8 +7,8 @@ var n = s(627968);
 s(64700);
 var r = s(503698),
     l = s.n(r),
-    i = s(172218),
-    a = s(651162),
+    a = s(172218),
+    i = s(651162),
     o = s(311907),
     c = s(397927),
     d = s(793574),
@@ -26,7 +26,7 @@ let x = {
         unpublishedAt: void 0,
         categorySkuId: void 0,
         summary: "",
-        type: a.g.REWARD_HERO,
+        type: i.g.REWARD_HERO,
         categoryStoreListingId: "",
         rewardSkuId: void 0
     },
@@ -35,10 +35,10 @@ let x = {
             isLoading: t = !1,
             heroBlock: s,
             tab: r,
-            onVisibilityChange: a
-        } = e, g = (0, i.K)(e => {
-            a?.(e)
-        }, .1, null != a), E = (0, o.bG)([_.default], () => _.default.getCurrentUser()), {
+            onVisibilityChange: i
+        } = e, g = (0, a.K)(e => {
+            i?.(e)
+        }, .1, null != i), E = (0, o.bG)([_.default], () => _.default.getCurrentUser()), {
             analyticsLocations: b
         } = (0, u.Ay)(d.A.COLLECTIBLES_SHOP_HERO), {
             bannerDisplayConfig: C,

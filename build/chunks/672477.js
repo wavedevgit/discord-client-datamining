@@ -1,8 +1,8 @@
 /** chunk id: 672477 params = (module,exports,require) **/
-i.d(t, {
-    Q: () => n
+n.d(t, {
+    Q: () => i
 });
-let n = (0, i(945810).mj)({
+let i = (0, n(945810).mj)({
     kind: "user",
     name: "2026-03-clips-m1",
     defaultConfig: {

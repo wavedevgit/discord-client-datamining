@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(503698),
-    i = s.n(l),
-    a = s(311907),
+    a = s.n(l),
+    i = s(311907),
     o = s(397927),
     c = s(793574),
     d = s(688810),
@@ -28,13 +28,13 @@ let S = e => {
         shelf: t,
         handleTransition: s,
         tab: l
-    } = e, S = (0, a.bG)([_.default], () => _.default.getCurrentUser()), v = (0, h.W)("ShelfBlock"), I = (0, a.bG)([m.A], () => m.A.getCategory(t.categorySkuId)), L = (0, p.A)(), j = r.useMemo(() => L(t.rankedSkuIds), [t.rankedSkuIds, L]), O = (0, f.X)(j), {
-        analyticsLocations: T
+    } = e, S = (0, i.bG)([_.default], () => _.default.getCurrentUser()), v = (0, h.W)("ShelfBlock"), I = (0, i.bG)([m.A], () => m.A.getCategory(t.categorySkuId)), L = (0, p.A)(), j = r.useMemo(() => L(t.rankedSkuIds), [t.rankedSkuIds, L]), O = (0, f.X)(j), {
+        analyticsLocations: k
     } = (0, d.Ay)(c.A.COLLECTIBLES_SHOP_SHELF);
     return null == S ? null : (0, n.jsx)(d.f5, {
-        value: T,
+        value: k,
         children: (0, n.jsxs)("div", {
-            className: i()(A.Vp, A.YB),
+            className: a()(A.Vp, A.YB),
             children: [(0, n.jsxs)("div", {
                 className: A.$6,
                 children: [(0, n.jsx)(o.Heading, {

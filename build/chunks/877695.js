@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(503698),
-    r = n.n(l),
-    s = n(110259),
+    s = n.n(l),
+    r = n(110259),
     o = n(311907),
     d = n(397927),
     c = n(846293),
@@ -35,12 +35,12 @@ function N(e) {
         message: l,
         onTransitionToInviteChannel: c,
         onAcceptInstantInvite: g
-    } = e, x = a.useRef(null), [N, L] = a.useState(!0), [R, P] = a.useState(!1), M = t.state === T.elq.ACCEPTING, w = (0, o.bG)([u.A], () => u.A.useReducedMotion), {
-        analyticsLocations: D
+    } = e, x = a.useRef(null), [N, L] = a.useState(!0), [R, P] = a.useState(!1), w = t.state === T.elq.ACCEPTING, D = (0, o.bG)([u.A], () => u.A.useReducedMotion), {
+        analyticsLocations: M
     } = (0, m.Ay)(_.A.INVITE_EMBED);
     (0, h.A)({
-        name: s.ImpressionNames.INVITE_EMBED,
-        type: s.ImpressionTypes.VIEW,
+        name: r.ImpressionNames.INVITE_EMBED,
+        type: r.ImpressionTypes.VIEW,
         properties: {
             invite_code: t.code,
             invite_guild_id: t.guild?.id,
@@ -48,7 +48,7 @@ function N(e) {
             invite_instance_id: (0, E._U)(t.code, l.id),
             invite_channel_type: t.channel?.type,
             embed_type: "guild_invite_v2",
-            location_stack: D
+            location_stack: M
         }
     }), a.useLayoutEffect(() => {
         P((x.current?.clientHeight ?? 0) > 292)
@@ -62,10 +62,10 @@ function N(e) {
         }, [N, R]),
         B = a.useMemo(() => R && x.current?.clientHeight != null ? {
             height: N ? 292 : x.current.clientHeight + 36 + 48,
-            transition: w ? void 0 : "height 0.2s ease"
-        } : {}, [N, R, w]);
+            transition: D ? void 0 : "height 0.2s ease"
+        } : {}, [N, R, D]);
     return null == k ? (0, i.jsx)(b.A, {}) : (0, i.jsxs)(d.sqX, {
-        className: r()(S.Gg, {
+        className: s()(S.Gg, {
             [S.vk]: R && N
         }),
         onClick: O,
@@ -99,13 +99,13 @@ function N(e) {
                 text: y.intl.string(y.t.xdCLeM)
             })
         }) : null, (0, i.jsxs)("div", {
-            className: r()(S.qr, {
+            className: s()(S.qr, {
                 [S.iK]: R
             }),
             children: [R && N ? (0, i.jsx)("div", {
                 className: S.D7
             }) : null, (0, i.jsx)("div", {
-                className: r()(S.z8, {
+                className: s()(S.z8, {
                     [S.it]: R && N
                 }),
                 children: (0, i.jsx)("div", {
@@ -115,7 +115,7 @@ function N(e) {
                         profile: k,
                         isMemberOfGuild: n,
                         message: l,
-                        submitting: M,
+                        submitting: w,
                         onTransitionToInviteChannel: c,
                         onAcceptInstantInvite: g
                     })
@@ -130,8 +130,8 @@ function j(e) {
         invite: t,
         profile: n,
         isMemberOfGuild: l,
-        message: r,
-        submitting: s,
+        message: s,
+        submitting: r,
         onTransitionToInviteChannel: o,
         onAcceptInstantInvite: d
     } = e, {
@@ -144,15 +144,15 @@ function j(e) {
         (0, c.he)({
             invite: t,
             action: e,
-            inviter_id: r.author.id,
-            invite_message_id: r.id,
-            invite_instance_id: (0, E._U)(t.code, r.id)
+            inviter_id: s.author.id,
+            invite_message_id: s.id,
+            invite_instance_id: (0, E._U)(t.code, s.id)
         }, p)
-    }, [t, r, p, l]);
+    }, [t, s, p, l]);
     return null == h ? null : (0, i.jsx)(x.Y, {
         guildId: u,
         ctaType: h,
-        submitting: s,
+        submitting: r,
         onGoToGuild: o,
         onAcceptInvite: d,
         onStartApplication: d,

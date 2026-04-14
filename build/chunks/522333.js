@@ -27,9 +27,9 @@ function u(e) {
         (0, d.C)(t)
     }, [t]), f = l.useCallback(() => {
         null != n && (0, d.C)(n)
-    }, [n]), h = l.useCallback(() => {
+    }, [n]), y = l.useCallback(() => {
         null != g && (0, d.C)(g)
-    }, [g]), y = l.useCallback(() => {
+    }, [g]), h = l.useCallback(() => {
         null != g && (0, r.A)(g)
     }, [g]), E = "sticker" === u;
     if (!A || !d.p5 || !p || "emoji" !== u && !E || null == n) return null;
@@ -63,7 +63,7 @@ function u(e) {
             children: [(0, i.jsx)(a.Drp, {
                 id: "copy-image-link",
                 label: _,
-                action: h,
+                action: y,
                 leadingAccessory: {
                     type: "icon",
                     icon: a.qYV
@@ -71,7 +71,7 @@ function u(e) {
             }), (0, i.jsx)(a.Drp, {
                 id: "open-image-link",
                 label: T,
-                action: y,
+                action: h,
                 leadingAccessory: {
                     type: "icon",
                     icon: a.WxK

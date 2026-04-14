@@ -17,8 +17,8 @@ var i = n(627968),
     p = n(115184),
     m = n(777933),
     f = n(826308),
-    h = n(51512),
-    y = n(773699),
+    y = n(51512),
+    h = n(773699),
     E = n(954571),
     S = n(363398),
     _ = n(880457),
@@ -63,19 +63,19 @@ function Z(e) {
             onHeightUpdate: f
         } = e,
         {
-            analyticsLocations: h
+            analyticsLocations: y
         } = (0, c.Ay)([d.A.MESSAGE_CONTEXT_MENU]),
-        y = g,
+        h = g,
         E = g.getAttribute("data-type"),
         S = g.getAttribute("data-id"),
         _ = g.getAttribute("data-name");
     if (null != A) n = t = l = A.url;
     else
         for (;
-            (0, a.vq)(y);)(0, a.vq)(y, HTMLImageElement) && null != y.src && (n = y.src), (0, a.vq)(y, HTMLAnchorElement) && null != y.href && (t = y.href, r = y.textContent, null == n && "img" === y.getAttribute("data-role") && (n = t, y.hasAttribute("data-safe-src") && "" !== y.getAttribute("data-safe-src") && (l = y.getAttribute("data-safe-src")))), y = y.parentNode;
+            (0, a.vq)(h);)(0, a.vq)(h, HTMLImageElement) && null != h.src && (n = h.src), (0, a.vq)(h, HTMLAnchorElement) && null != h.href && (t = h.href, r = h.textContent, null == n && "img" === h.getAttribute("data-role") && (n = t, h.hasAttribute("data-safe-src") && "" !== h.getAttribute("data-safe-src") && (l = h.getAttribute("data-safe-src")))), h = h.parentNode;
     let T = document.getSelection()?.toString() ?? "";
     return (0, i.jsx)(c.f5, {
-        value: h,
+        value: y,
         children: $({
             message: u,
             channel: o,
@@ -157,15 +157,15 @@ function $(e) {
         ep = (0, f.A)(s),
         em = (0, T.A)(t, n),
         ef = (0, M.A)(t, n),
-        eh = (0, w.A)(t, n),
-        ey = (0, O.A)(t, n),
+        ey = (0, w.A)(t, n),
+        eh = (0, O.A)(t, n),
         eE = (0, X.A)(t, n),
         eS = (0, b.A)(t),
         e_ = (0, B.A)(t, n),
         eT = (0, G.A)(t, n),
         eI = (0, C.A)(t, n),
         ev = (0, _.A)(t),
-        eb = (0, y.A)({
+        eb = (0, h.A)({
             commandType: o.kc.MESSAGE,
             commandTargetId: t.id,
             channel: n,
@@ -180,7 +180,7 @@ function $(e) {
         eO = (0, K.A)(t, n),
         eC = (0, V.A)(t, n),
         eN = (0, L.A)(t),
-        eG = (0, h.A)(t),
+        eG = (0, y.A)(t),
         eR = (0, H.A)(t),
         eL = (0, U.A)(t, n),
         eP = (0, P.A)(t, n),
@@ -237,7 +237,7 @@ function $(e) {
         }), (0, i.jsxs)(r.rXV, {
             children: ["" === s ? eg : null, em, eN]
         }), (0, i.jsxs)(r.rXV, {
-            children: [ef, eh, ey, eE]
+            children: [ef, ey, eh, eE]
         }), (0, i.jsxs)(r.rXV, {
             children: [eS, e_, eT, eI, ev, eb, eD, ex, eM, ej, eO, eC, eG, eR]
         }), (0, i.jsxs)(r.rXV, {

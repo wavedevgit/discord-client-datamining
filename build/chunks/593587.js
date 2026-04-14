@@ -1,16 +1,16 @@
 /** chunk id: 593587 params = (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => r
 });
 var i = n(627968),
     a = n(397927),
     l = n(890687),
-    r = n(985018);
-let s = function(e) {
+    s = n(985018);
+let r = function(e) {
     let {
         quest: t,
         size: n
-    } = e, s = (0, l.S5)(t.config.expiresAt, {
+    } = e, r = (0, l.S5)(t.config.expiresAt, {
         month: "numeric",
         day: "numeric"
     });
@@ -19,8 +19,8 @@ let s = function(e) {
         disabled: !0,
         fullWidth: !0,
         size: n,
-        text: r.intl.format(r.t["14o6QY"], {
-            expiryDate: s
+        text: s.intl.format(s.t["14o6QY"], {
+            expiryDate: r
         })
     })
 }

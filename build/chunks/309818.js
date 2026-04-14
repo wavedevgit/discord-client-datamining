@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(284009),
-    r = n.n(l),
-    s = n(158954),
+    s = n.n(l),
+    r = n(158954),
     o = n(311907),
     d = n(846293),
     c = n(793574),
@@ -35,7 +35,7 @@ function b(e) {
         S = b === l.author.id,
         N = n.state === E.elq.ACCEPTING,
         j = (0, o.bG)([g.A], () => null != n.channel ? g.A.getChannel(n.channel.id) : null, [n]);
-    r()(null == j || j.isPrivate(), "must be a private channel");
+    s()(null == j || j.isPrivate(), "must be a private channel");
     let {
         analyticsLocations: L
     } = (0, u.Ay)(c.A.INVITE_EMBED), R = null != j, P = a.useCallback(() => {
@@ -59,11 +59,11 @@ function b(e) {
         let e = x.default.getCurrentUser();
         R && null != e && t.push(e)
     }
-    let M = (0, _.m1)(j, x.default, A.A);
-    (null == M || "" === M) && (M = t.length > 0 ? t.filter(f.Vq).map(e => e.username).join(", ") : I.intl.string(I.t.LJpTRF));
-    let w = I.intl.string(I.t.XpeFYr),
-        D = "active";
-    R && (w = I.intl.string(I.t.cEnaWx), D = "secondary");
+    let w = (0, _.m1)(j, x.default, A.A);
+    (null == w || "" === w) && (w = t.length > 0 ? t.filter(f.Vq).map(e => e.username).join(", ") : I.intl.string(I.t.LJpTRF));
+    let D = I.intl.string(I.t.XpeFYr),
+        M = "active";
+    R && (D = I.intl.string(I.t.cEnaWx), M = "secondary");
     let k = I.intl.string(I.t["3p3/BK"]);
     return S && (k = I.intl.string(I.t.qmtuXE)), (0, i.jsxs)(h.A, {
         children: [(0, i.jsx)(h.A.Header, {
@@ -75,18 +75,18 @@ function b(e) {
                     channel: j,
                     onClick: R ? P : void 0
                 }), (0, i.jsx)(h.A.Info, {
-                    title: M,
+                    title: w,
                     onClick: R ? P : void 0,
                     children: (0, i.jsx)(h.A.Data, {
                         members: t.length
                     })
                 })]
-            }), (0, i.jsx)(s.$nd, {
+            }), (0, i.jsx)(r.$nd, {
                 onClick: P,
                 loading: N,
                 disabled: R,
-                variant: D,
-                text: w,
+                variant: M,
+                text: D,
                 fullWidth: !0
             })]
         })]

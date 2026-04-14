@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var a = n(503698),
     l = n.n(a),
-    r = n(397927),
-    s = n(915089),
+    s = n(397927),
+    r = n(915089),
     o = n(308234),
     d = n(724609),
     c = n(411342),
@@ -19,18 +19,18 @@ function m(e) {
         hidePurchaseToUnlockBadge: t,
         showDraftBadge: n,
         className: a,
-        children: s
+        children: r
     } = e;
     return (0, i.jsxs)("div", {
         className: l()(_.v0, a),
-        children: [s, !t && (0, i.jsxs)("div", {
+        children: [r, !t && (0, i.jsxs)("div", {
             className: _.su,
-            children: [(0, i.jsx)(r.XAi, {
+            children: [(0, i.jsx)(s.XAi, {
                 size: "xs",
                 className: _.hz,
                 color: "currentColor",
                 "aria-hidden": !0
-            }), (0, i.jsx)(r.Text, {
+            }), (0, i.jsx)(s.Text, {
                 variant: "text-sm/normal",
                 color: "always-white",
                 className: _.__invalid_unlockText,
@@ -48,11 +48,11 @@ function h(e) {
         onShowFullDescription: t,
         variant: n
     } = e, a = (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(r.Text, {
+        children: [(0, i.jsx)(s.Text, {
             variant: n,
             color: null != t ? "text-link" : "interactive-text-hover",
             children: u.intl.string(u.t["5fmYjW"])
-        }), (0, i.jsx)(r.EdP, {
+        }), (0, i.jsx)(s.EdP, {
             size: "xs",
             color: "currentColor",
             className: _.D6
@@ -61,7 +61,7 @@ function h(e) {
     return null == t ? (0, i.jsx)("div", {
         className: _.dO,
         children: a
-    }) : (0, i.jsx)(r.DUT, {
+    }) : (0, i.jsx)(s.DUT, {
         className: l()(_.dO, _.hY),
         onClick: e => {
             e.stopPropagation(), null != t && t()
@@ -91,7 +91,7 @@ function p(e) {
         thumbnailHeight: S = 187,
         descriptionTextVariant: N = "text-sm/normal",
         isDraft: j = !1
-    } = e, L = (0, s.Ld)(), R = (0, i.jsxs)(i.Fragment, {
+    } = e, L = (0, r.Ld)(), R = (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(m, {
             showDraftBadge: j,
             hidePurchaseToUnlockBadge: !0,
@@ -107,13 +107,13 @@ function p(e) {
             className: _.MS,
             children: [(0, i.jsxs)("div", {
                 className: _.Ag,
-                children: [(0, i.jsx)(r.Heading, {
+                children: [(0, i.jsx)(s.Heading, {
                     variant: "text-md/medium",
                     color: "text-strong",
                     className: _.tZ,
                     id: L,
                     children: n
-                }), (0, i.jsx)(r.M1G, {
+                }), (0, i.jsx)(s.M1G, {
                     children: (0, i.jsx)(o.A, {
                         variant: N,
                         color: "text-muted",
@@ -124,7 +124,7 @@ function p(e) {
                     onShowFullDescription: x,
                     variant: N
                 }), v || null == p || "" === p.name ? null : (0, i.jsxs)(i.Fragment, {
-                    children: [(0, i.jsx)(r.hKd, {
+                    children: [(0, i.jsx)(s.hKd, {
                         size: 16
                     }), (0, i.jsx)(c.A, {
                         role: p
@@ -133,12 +133,12 @@ function p(e) {
             }), E]
         }), (0, i.jsxs)("div", {
             className: _.kP,
-            children: [(0, i.jsx)(r.Text, {
+            children: [(0, i.jsx)(s.Text, {
                 variant: "text-md/medium",
                 color: "interactive-text-active",
                 className: _.__invalid_productPrice,
                 children: d ?? u.intl.string(u.t["4uLhAp"])
-            }), (0, i.jsx)(r.Text, {
+            }), (0, i.jsx)(s.Text, {
                 variant: "text-xxs/normal",
                 color: "text-default",
                 className: _.__invalid_productType,
@@ -161,7 +161,7 @@ function p(e) {
             width: T,
             height: y
         },
-        children: (0, i.jsx)(r.sqX, {
+        children: (0, i.jsx)(s.sqX, {
             tag: "article",
             "aria-label": u.intl.formatToPlainString(u.t["e+TmJa"], {
                 productName: n

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(936504),
-    r = n(158954),
-    s = n(311907),
+    s = n(158954),
+    r = n(311907),
     o = n(800342),
     d = n(820284),
     c = n(73861),
@@ -79,7 +79,7 @@ class b extends a.Component {
     renderViewInStoreButton() {
         return (0, i.jsx)("div", {
             className: v.h,
-            children: (0, i.jsx)(r.$nd, {
+            children: (0, i.jsx)(s.$nd, {
                 role: "link",
                 variant: "active",
                 size: "sm",
@@ -95,8 +95,8 @@ class b extends a.Component {
             inLibrary: n,
             width: a,
             renderCustomTitle: l,
-            renderCustomTagline: r,
-            renderCustomMedia: s
+            renderCustomTagline: s,
+            renderCustomMedia: r
         } = this.props, {
             playing: o,
             muted: d
@@ -110,8 +110,8 @@ class b extends a.Component {
             onToggleMute: this.handleToggleMute,
             renderCustomActions: () => this.renderActions(e),
             renderCustomTitle: l,
-            renderCustomTagline: r,
-            renderCustomMedia: s,
+            renderCustomTagline: s,
+            renderCustomMedia: r,
             isHorizontal: c,
             isEmbed: !0
         })
@@ -122,18 +122,18 @@ class b extends a.Component {
             application: n,
             skuId: a,
             libraryApplication: l,
-            renderCustomActions: r
+            renderCustomActions: s
         } = this.props;
-        if (null != r) return (0, i.jsx)("div", {
+        if (null != s) return (0, i.jsx)("div", {
             className: v.i,
-            children: r()
+            children: s()
         });
         if (null == n) return null;
-        let s = null != n && n.primarySkuId === a,
+        let r = null != n && n.primarySkuId === a,
             o = null != l && l.hasFlag(E.hM6.HIDDEN);
         return (0, i.jsxs)("div", {
             className: v.i,
-            children: [!s || o ? this.renderViewInStoreButton() : (0, i.jsx)(c.A, {
+            children: [!r || o ? this.renderViewInStoreButton() : (0, i.jsx)(c.A, {
                 application: n,
                 disabledVariant: "primary",
                 size: "sm",
@@ -153,10 +153,10 @@ class b extends a.Component {
             storeListing: t,
             width: n,
             fetchFailed: a,
-            renderFallback: r
-        } = this.props, s = n > m.Tm;
-        return null == e || null == t ? a ? r() : (0, i.jsx)(m.Wb, {
-            isHorizontal: s
+            renderFallback: s
+        } = this.props, r = n > m.Tm;
+        return null == e || null == t ? a ? s() : (0, i.jsx)(m.Wb, {
+            isHorizontal: r
         }) : e.productLine === E.EZt.COLLECTIBLES ? (0, i.jsx)(d.A, {
             section: E.JJy.APPLICATION_EMBED,
             children: this.renderApplicationTile(e, t)
@@ -188,5 +188,5 @@ function y(e) {
     }
 }
 let S = (0, p.A)((0, h.A)(b)),
-    N = s.Ay.connectStores(T, y)(S),
-    j = (0, h.A)(s.Ay.connectStores(T, y)(b))
+    N = r.Ay.connectStores(T, y)(S),
+    j = (0, h.A)(r.Ay.connectStores(T, y)(b))

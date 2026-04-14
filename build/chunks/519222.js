@@ -31,8 +31,8 @@ var o = n(118517),
     p = n(147036),
     m = n(957565),
     f = n(203982),
-    h = n(661191),
-    y = n(965407),
+    y = n(661191),
+    h = n(965407),
     E = n(439147),
     S = n(249700),
     _ = n(145530),
@@ -75,7 +75,7 @@ function O(e, t) {
 }
 
 function C(e, t) {
-    (0, S.A)(e, t, void 0, y.A.getOptions(t.id))
+    (0, S.A)(e, t, void 0, h.A.getOptions(t.id))
 }
 
 function N(e, t, n) {
@@ -96,7 +96,7 @@ function G(e, t) {
 }
 
 function R(e, t) {
-    let n = g.A.getChannel(h.default.castMessageIdAsChannelId(t.id));
+    let n = g.A.getChannel(y.default.castMessageIdAsChannelId(t.id));
     null != n && (0, c.JA)(n)
 }
 

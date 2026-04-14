@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(503698),
-    i = s.n(l),
-    a = s(397927),
+    a = s.n(l),
+    i = s(397927),
     o = s(564322),
     c = s(287344),
     d = s(785330),
@@ -32,7 +32,7 @@ function L(e) {
         tab: t,
         categories: s,
         initialCategoryId: l,
-        showFilterInitially: i = !0,
+        showFilterInitially: a = !0,
         onUnmount: u
     } = e;
     (0, g.S)();
@@ -45,7 +45,7 @@ function L(e) {
             setCategoryRef: f,
             handleScrollToCategory: E
         } = (0, p.k0)(_.current),
-        [b, C] = r.useState(i),
+        [b, C] = r.useState(a),
         [A, v] = r.useState(!1);
     return r.useEffect(() => {
         null != l && E(l)
@@ -60,7 +60,7 @@ function L(e) {
         className: I.VM,
         children: (0, n.jsxs)("main", {
             className: I.MY,
-            children: [(0, n.jsx)(a.GtU, {
+            children: [(0, n.jsx)(i.GtU, {
                 className: I.OW,
                 ref: _,
                 onScroll: m,
@@ -85,7 +85,7 @@ function L(e) {
                 })
             }), b && !A && (0, n.jsx)("div", {
                 className: I.yF
-            }), b && !A && (0, n.jsx)(a.HOs, {
+            }), b && !A && (0, n.jsx)(i.HOs, {
                 className: I.kT,
                 children: (0, n.jsx)(x.A, {})
             })]
@@ -102,36 +102,36 @@ let j = e => {
         categories: d,
         setCategoryRef: p,
         initialCategoryId: L
-    } = e, j = r.useRef(null), O = (0, g.v)(e => e.hasDefaultFilters()), T = (0, _.uM)(), {
-        handlePageChange: k,
+    } = e, j = r.useRef(null), O = (0, g.v)(e => e.hasDefaultFilters()), k = (0, _.uM)(), {
+        handlePageChange: T,
         currentPage: y
     } = (0, E.Z)(c), N = r.useCallback(e => {
         u.default.track(S.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-            collectibles_shop_session_id: T?.sessionId,
-            page_section: T?.pageSection,
-            page_category: T?.pageCategory,
+            collectibles_shop_session_id: k?.sessionId,
+            page_section: k?.pageSection,
+            page_category: k?.pageCategory,
             page_index: e,
-            page_size: T?.pageSize,
+            page_size: k?.pageSize,
             cta_name: `catalog page ${e}`,
             page_type: "catalog"
-        }), k(e)
-    }, [T, k]), R = r.useRef(null);
+        }), T(e)
+    }, [k, T]), R = r.useRef(null);
     return r.useEffect(() => {
         if (!t || !s) return;
         let e = e => {
             let t = e.target;
             null === j.current || null === R.current || j.current.contains(t) || R.current.contains(t) || (u.default.track(S.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-                collectibles_shop_session_id: T?.sessionId,
-                page_section: T?.pageSection,
-                page_category: T?.pageCategory,
-                page_index: T?.pageIndex,
-                page_size: T?.pageSize,
+                collectibles_shop_session_id: k?.sessionId,
+                page_section: k?.pageSection,
+                page_category: k?.pageCategory,
+                page_index: k?.pageIndex,
+                page_size: k?.pageSize,
                 cta_name: "filter bar hide outside click",
                 page_type: "catalog"
             }), l(!1))
         };
         return document.addEventListener("mousedown", e), () => document.removeEventListener("mousedown", e)
-    }, [t, s, l, T]), (0, n.jsx)("div", {
+    }, [t, s, l, k]), (0, n.jsx)("div", {
         className: I.en,
         children: (0, n.jsxs)("div", {
             className: I.pf,
@@ -141,40 +141,40 @@ let j = e => {
                     className: I.lQ,
                     children: (0, n.jsx)(m.A, {})
                 }), (0, n.jsxs)("div", {
-                    className: i()(I.wR, {
+                    className: a()(I.wR, {
                         [I.Im]: t
                     }),
                     children: [(0, n.jsxs)("div", {
                         className: I.Ul,
-                        children: [(0, n.jsx)(a.Text, {
+                        children: [(0, n.jsx)(i.Text, {
                             variant: "text-md/semibold",
                             children: v.intl.string(v.t.uaX705)
                         }), (0, n.jsx)(f.A, {})]
                     }), (0, n.jsx)("div", {
                         ref: R,
-                        children: (0, n.jsx)(a.Button, {
+                        children: (0, n.jsx)(i.Button, {
                             onClick: () => {
                                 let e = !s;
                                 u.default.track(S.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-                                    collectibles_shop_session_id: T?.sessionId,
-                                    page_section: T?.pageSection,
-                                    page_category: T?.pageCategory,
-                                    page_index: T?.pageIndex,
-                                    page_size: T?.pageSize,
+                                    collectibles_shop_session_id: k?.sessionId,
+                                    page_section: k?.pageSection,
+                                    page_category: k?.pageCategory,
+                                    page_index: k?.pageIndex,
+                                    page_size: k?.pageSize,
                                     cta_name: `filter bar ${e?"show":"hide"}`,
                                     page_type: "catalog"
                                 }), l(e)
                             },
                             variant: "secondary",
                             text: v.intl.string(s ? v.t.fYtm6f : v.t["TeTYE+"]),
-                            icon: a.RgP,
+                            icon: i.RgP,
                             iconPosition: "end"
                         })
                     })]
                 }), s && t && (0, n.jsx)("div", {
                     className: I.Dh,
                     ref: j,
-                    children: (0, n.jsx)(a.T7Y, {
+                    children: (0, n.jsx)(i.T7Y, {
                         className: I.Qo,
                         children: (0, n.jsx)(x.A, {})
                     })

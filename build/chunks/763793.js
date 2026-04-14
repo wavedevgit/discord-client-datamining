@@ -55,7 +55,7 @@ let G = 16 / 9,
             ignored: p,
             id: g
         } = t;
-        return (0, i.jsx)(T.default, {
+        return (0, i.jsx)(T.A, {
             targetElementRef: A,
             user: r,
             guildId: a,

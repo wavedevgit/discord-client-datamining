@@ -102,7 +102,7 @@ let y = s.forwardRef((e, t) => {
                             integration_type: n
                         }
                     } = l;
-                    if (null != e && null != t) return (0, i.jsx)(x.default, {
+                    if (null != e && null != t) return (0, i.jsx)(x.A, {
                         targetElementRef: k,
                         user: e,
                         guildId: N,

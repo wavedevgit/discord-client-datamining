@@ -57,7 +57,7 @@ class f extends l.PureComponent {
             host: r,
             onUserContextMenu: c
         } = this.props;
-        return n = r?.id === e.id ? E.intl.string(E.t["N9bqD+"]) : E.intl.string(E.t.Z2Y4c9), (0, i.jsx)(u.default, {
+        return n = r?.id === e.id ? E.intl.string(E.t["N9bqD+"]) : E.intl.string(E.t.Z2Y4c9), (0, i.jsx)(u.A, {
             targetElementRef: this.partyMemberAvatarRef,
             user: e,
             newAnalyticsLocations: [d.A.AVATAR],

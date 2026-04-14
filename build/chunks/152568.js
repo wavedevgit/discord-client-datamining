@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(503698),
-    i = s.n(l),
-    a = s(554146),
+    a = s.n(l),
+    i = s(554146),
     o = s(230109),
     c = s(397927),
     d = s(367727),
@@ -29,7 +29,7 @@ let I = e => {
     let {
         wideBannerBlock: t,
         tab: s
-    } = e, l = p.A.getCategoryByStoreListingId(t.categoryStoreListingId), I = r.useRef(null), L = r.useRef(null), [j, O] = r.useState(), [T, k] = r.useState(!1);
+    } = e, l = p.A.getCategoryByStoreListingId(t.categoryStoreListingId), I = r.useRef(null), L = r.useRef(null), [j, O] = r.useState(), [k, T] = r.useState(!1);
     r.useEffect(() => {
         let e = L.current;
         if (null == e) return;
@@ -53,9 +53,9 @@ let I = e => {
         H = !0 !== t.disableCta && (null != t.ctaText && "" !== t.ctaText || M),
         D = null != t.logoURL && "" !== t.logoURL,
         w = r.useCallback(() => {
-            if (k(!0), t.isDismissible) {
+            if (T(!0), t.isDismissible) {
                 let e = t.dismissibleContentVersion ?? 0;
-                (0, d.$l)(a.M.COLLECTIBLES_SHOP_WIDE_BANNER, e, {
+                (0, d.$l)(i.M.COLLECTIBLES_SHOP_WIDE_BANNER, e, {
                     dismissAction: C.i.USER_DISMISS
                 })
             }
@@ -89,8 +89,8 @@ let I = e => {
                 } else(0, u.pX)(e)
             }
         }, [t.ctaRoute, F]);
-    if (null == B || T) return null;
-    let U = i()(v.nM, v.Tq, v.TS, v.YB, {
+    if (null == B || k) return null;
+    let U = a()(v.nM, v.Tq, v.TS, v.YB, {
             [v._1]: P,
             [v.vb]: M
         }),
@@ -105,7 +105,7 @@ let I = e => {
                     "aria-label": S.intl.string(S.t.WAI6xu)
                 })
             }), (0, n.jsx)("div", {
-                className: i()(v.zK, {
+                className: a()(v.zK, {
                     [v._1]: P
                 }),
                 style: null != j ? {
@@ -115,12 +115,12 @@ let I = e => {
                     ref: L,
                     src: B,
                     alt: t.title,
-                    className: i()(v.LN, {
+                    className: a()(v.LN, {
                         [v.d5]: P
                     })
                 })
             }), (0, n.jsx)("div", {
-                className: i()(v.Ep, {
+                className: a()(v.Ep, {
                     [v.Qq]: H
                 }),
                 style: {
@@ -170,11 +170,11 @@ let I = e => {
             children: M ? (0, n.jsx)(c.DUT, {
                 innerRef: I,
                 onClick: () => G(null),
-                className: i()(e, U),
+                className: a()(e, U),
                 children: V
             }) : (0, n.jsx)("div", {
                 ref: I,
-                className: i()(e, U),
+                className: a()(e, U),
                 children: V
             })
         })

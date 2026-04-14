@@ -1,29 +1,29 @@
 /** chunk id: 945896 params = (module,exports,require) **/
-e.d(n, {
+n.d(e, {
     default: () => c
 });
-var i = e(627968);
-e(64700);
-var a = e(397927),
-    l = e(442433),
-    r = e(723702),
-    o = e(777933),
-    s = e(985018);
+var a = n(627968);
+n(64700);
+var i = n(397927),
+    r = n(442433),
+    l = n(723702),
+    s = n(777933),
+    o = n(985018);
 
 function c(t) {
     let {
-        href: n,
-        textContent: e,
+        href: e,
+        textContent: n,
         onSelect: c
-    } = t, d = (0, o.A)(n, e);
-    return r.isPlatformEmbedded && null != d ? (0, i.jsx)(a.W1t, {
+    } = t, u = (0, s.A)(e, n);
+    return l.isPlatformEmbedded && null != u ? (0, a.jsx)(i.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "image-context",
-        onClose: l.Z_,
-        "aria-label": s.intl.string(s.t.Zow2V5),
+        onClose: r.Z_,
+        "aria-label": o.intl.string(o.t.Zow2V5),
         onSelect: c,
-        children: (0, i.jsx)(a.rXV, {
-            children: d
+        children: (0, a.jsx)(i.rXV, {
+            children: u
         })
     }) : null
 }

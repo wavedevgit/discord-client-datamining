@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(503698),
-    i = s.n(l),
-    a = s(641150),
+    a = s.n(l),
+    i = s(641150),
     o = s(417597),
     c = s(397927),
     d = s(287809),
@@ -36,8 +36,8 @@ function j(e) {
         scrollerRef: s,
         tab: l
     } = e, j = (0, _.uM)(), O = j?.sessionId ?? "", {
-        noCache: T,
-        includeUnpublished: k
+        noCache: k,
+        includeUnpublished: T
     } = (0, A.A)(), y = (0, m.W)("CollectiblesFilterResults"), N = (0, o.bG)([d.default], () => d.default.getCurrentUser()), {
         skus: R,
         currentPage: B,
@@ -45,7 +45,7 @@ function j(e) {
         isFetchingResults: M
     } = (0, f.S)(), {
         itemTypeFilters: H
-    } = (0, p.v)(), D = 1 === H.size && H.has(a.q.BUNDLE), w = (0, o.yK)([g.A], () => g.A.getProductsBySkus(R)), F = r.useCallback(() => {
+    } = (0, p.v)(), D = 1 === H.size && H.has(i.q.BUNDLE), w = (0, o.yK)([g.A], () => g.A.getProductsBySkus(R)), F = r.useCallback(() => {
         s?.current?.scrollToTop({
             animate: !0
         })
@@ -60,14 +60,14 @@ function j(e) {
             sessionId: O,
             checkpoint: x.t.SHOP_RENDERED,
             tab: l,
-            unpublishedCategoriesShown: k,
-            cacheDisabled: T
+            unpublishedCategoriesShown: T,
+            cacheDisabled: k
         })
-    }, [O, k, T, t, l]);
+    }, [O, T, k, t, l]);
     let W = r.useRef(null),
         {
-            setQueryPageSize: K,
-            setQueryPageOffset: z,
+            setQueryPageSize: z,
+            setQueryPageOffset: K,
             queryPageSize: Y
         } = (0, p.v)(),
         [$, Z] = r.useState(!1),
@@ -78,10 +78,10 @@ function j(e) {
     let X = Y > 0 && !q && 0 === V.length;
     r.useEffect(() => {
         let e = new ResizeObserver(() => {
-            null == W.current || K(Math.floor(5 * getComputedStyle(W.current).gridTemplateColumns.split(/\s+/).length))
+            null == W.current || z(Math.floor(5 * getComputedStyle(W.current).gridTemplateColumns.split(/\s+/).length))
         });
         if (null != W.current) return e.observe(W.current), () => e.disconnect()
-    }, [K]);
+    }, [z]);
     let J = r.useCallback(e => {
         u.default.track(v.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: j?.sessionId,
@@ -91,16 +91,16 @@ function j(e) {
             page_size: Y,
             cta_name: `filter results page ${e}`,
             page_type: "catalog"
-        }), z((e - 1) * Y)
-    }, [j, Y, z]);
+        }), K((e - 1) * Y)
+    }, [j, Y, K]);
     return (0, n.jsxs)(b.v3.Provider, {
         value: L,
         children: [(0, n.jsxs)("div", {
-            className: i()({
+            className: a()({
                 [I.oE]: X
             }),
             children: [X && (0, n.jsx)(S.A, {}), (0, n.jsxs)("div", {
-                className: i()(I.ZE, {
+                className: a()(I.ZE, {
                     [I.Kp]: $
                 }),
                 ref: W,

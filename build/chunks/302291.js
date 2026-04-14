@@ -27,7 +27,7 @@ function E(e, t) {
             {
                 bot: d
             } = r;
-        return null == d ? a : (0, i.jsx)(c.default, {
+        return null == d ? a : (0, i.jsx)(c.A, {
             targetElementRef: n,
             userId: d.id,
             avatarUrl: o,

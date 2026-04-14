@@ -1,13 +1,13 @@
 /** chunk id: 485724 params = (module,exports,require) **/
 n.d(t, {
-    J: () => D.J,
+    J: () => M.J,
     W: () => U
 }), n(321073), n(134528), n(947204);
 var i = n(627968),
     a = n(64700),
     l = n(485845),
-    r = n(379834),
-    s = n(311907),
+    s = n(379834),
+    r = n(311907),
     o = n(397927),
     d = n(795816),
     c = n(574152),
@@ -33,9 +33,9 @@ var i = n(627968),
     L = n(178910),
     R = n(354287),
     P = n(138175),
-    M = n(112150),
-    w = n(574660),
-    D = n(768349),
+    w = n(112150),
+    D = n(574660),
+    M = n(768349),
     k = n(985018),
     O = n(716957);
 
@@ -44,7 +44,7 @@ function U(e) {
         app: t,
         linkType: n,
         activityCustomId: l,
-        activityReferrerId: r,
+        activityReferrerId: s,
         message: o,
         onView: g
     } = e, {
@@ -57,8 +57,8 @@ function U(e) {
     }), {
         staticBannerSrc: S,
         videoBannerSrc: L,
-        bannerAspectRatio: D
-    } = (0, M.f)(t), O = (0, s.bG)([E.default], () => r ?? E.default.getId(), [r]), {
+        bannerAspectRatio: M
+    } = (0, w.f)(t), O = (0, r.bG)([E.default], () => s ?? E.default.getId(), [s]), {
         analyticsLocations: U
     } = (0, _.Ay)(u.A.APP_MESSAGE_EMBED), {
         currentChannelId: F,
@@ -71,7 +71,7 @@ function U(e) {
         },
         applicationId: t.id,
         botUserId: C?.id
-    }), Y = null != v && b && z, Q = q && b, K = (0, x.e)(t), X = (0, w.F)(t), J = (0, w.t)(t), Z = a.useMemo(() => {
+    }), Y = null != v && b && z, Q = q && b, K = (0, x.e)(t), X = (0, D.F)(t), J = (0, D.t)(t), Z = a.useMemo(() => {
         let e = [];
         return b ? K ? e.push({
             label: k.intl.string(k.t.RscU7I),
@@ -119,7 +119,7 @@ function U(e) {
         staticBannerSrc: S,
         videoBannerSrc: L,
         onClickBanner: X,
-        bannerAspectRatio: D,
+        bannerAspectRatio: M,
         iconSrc: T,
         info: $,
         actions: Z,
@@ -144,9 +144,9 @@ function B(e) {
         customInstallUrl: t.customInstallUrl,
         installParams: t.installParams,
         integrationTypesConfig: t.integrationTypesConfig
-    }) && null != t.integrationTypesConfig && l.b.GUILD_INSTALL in t.integrationTypesConfig, r = (0, s.bG)([C.default], () => C.default.locale, []), d = a.useMemo(() => {
+    }) && null != t.integrationTypesConfig && l.b.GUILD_INSTALL in t.integrationTypesConfig, s = (0, r.bG)([C.default], () => C.default.locale, []), d = a.useMemo(() => {
         if (!n) return null;
-        let e = new Intl.NumberFormat(r, {
+        let e = new Intl.NumberFormat(s, {
                 notation: "compact",
                 compactDisplay: "short"
             }),
@@ -154,7 +154,7 @@ function B(e) {
         return 0 === i ? null : k.intl.format(k.t["6IW6Wi"], {
             guildCount: e.format(i)
         })
-    }, [t.directoryEntry?.guild_count, n, r]), c = t.categories?.at(0)?.name;
+    }, [t.directoryEntry?.guild_count, n, s]), c = t.categories?.at(0)?.name;
     return (0, i.jsxs)(i.Fragment, {
         children: [null != c && (0, i.jsx)(o.Text, {
             variant: "text-xs/medium",
@@ -180,7 +180,7 @@ function G(e) {
     } = e, {
         tags: n,
         maxParticipants: l = 0
-    } = t, d = (0, s.bG)([b.A], () => b.A.getGuildId() ?? void 0, []), c = (0, f.s)(t.id), u = (0, s.yK)([T.default, v.A], () => {
+    } = t, d = (0, r.bG)([b.A], () => b.A.getGuildId() ?? void 0, []), c = (0, f.s)(t.id), u = (0, r.yK)([T.default, v.A], () => {
         let e = [];
         for (let [t, n] of c.entries()) {
             if (t >= 5) break;
@@ -197,7 +197,7 @@ function G(e) {
                 count: u.length
             })
         });
-        if (c.some(e => (0, g.CZ)(e) === r.m.GLOBAL)) return (0, i.jsxs)(i.Fragment, {
+        if (c.some(e => (0, g.CZ)(e) === s.m.GLOBAL)) return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.Y3C, {
                 size: "xxs",
                 color: "currentColor"

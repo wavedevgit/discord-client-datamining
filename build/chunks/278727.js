@@ -1,7 +1,7 @@
 /** chunk id: 278727 params = (module,exports,require) **/
-t.d(l, {
+l.d(t, {
     q: () => r
 });
 let r = Object.freeze({
-    EMBED: (e, l, t) => `https://embed.music.apple.com/${e}?theme=${l}&i=${null!=t?encodeURIComponent(t):""}`
+    EMBED: (e, t, l) => `https://embed.music.apple.com/${e}?theme=${t}&i=${null!=l?encodeURIComponent(l):""}`
 })

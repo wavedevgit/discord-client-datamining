@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var a = n(317097),
     l = n(397927),
-    r = n(985018),
-    s = n(473107);
+    s = n(985018),
+    r = n(473107);
 
 function o(e) {
     let {
@@ -16,11 +16,11 @@ function o(e) {
         textVariant: o = "text-xs/medium"
     } = e, d = (0, l.rdh)(l.LU0.colors.INTERACTIVE_TEXT_DEFAULT).hex();
     return (0, i.jsx)("div", {
-        className: s.ex,
+        className: r.ex,
         children: (0, i.jsxs)("div", {
-            className: s.b6,
+            className: r.b6,
             children: [(0, i.jsx)("div", {
-                className: s.yY,
+                className: r.yY,
                 style: {
                     backgroundColor: (0, a.Hl)(n.color)
                 }
@@ -31,7 +31,7 @@ function o(e) {
                 variant: o,
                 color: "text-default",
                 children: [(0, i.jsx)(l.AC4, {
-                    children: r.intl.string(r.t.RnyseL)
+                    children: s.intl.string(s.t.RnyseL)
                 }), n.name]
             }), !0 === t && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(l.hKd, {

@@ -16,36 +16,36 @@ var i = n(311907),
     C = n(543465),
     p = n(927813),
     I = n(661191),
-    S = n(652215);
-let y = new Set,
-    A = {},
-    f = {};
+    y = n(652215);
+let A = new Set,
+    f = {},
+    S = {};
 
 function E(e, t) {
-    let n = A[e];
+    let n = f[e];
     null != n && null != t && n.has(t) && C.Ay.isOptInEnabled(e) && !h.A.getChannel(t)?.isThread() && null == g.Ay.ackMessageId(t) && s.h.wait(() => (0, l.ack)(t, {
-        object: S.ZSU.ACK_RECENT_CHANNEL_NEW_CHANNEL_VIEWED,
-        objectType: S.AnalyticsObjectTypes.ACK_AUTOMATIC
+        object: y.ZSU.ACK_RECENT_CHANNEL_NEW_CHANNEL_VIEWED,
+        objectType: y.AnalyticsObjectTypes.ACK_AUTOMATIC
     }, !0, !0, I.default.atPreviousMillisecond(t)))
 }
 
 function _(e) {
-    if (null != A[e]) return;
+    if (null != f[e]) return;
     let t = o.Ay.getChannels(e)[o.I6].map(e => e.channel.id),
         n = u.Ay.getMember(e, d.default.getId())?.joinedAt;
     if (null == n) return;
-    A[e] = new Set;
+    f[e] = new Set;
     let i = new Date(n).getTime();
-    0 !== t.length && (A[e] = new Set(t.filter(t => {
+    0 !== t.length && (f[e] = new Set(t.filter(t => {
         let n = I.default.extractTimestamp(t);
         return null == g.Ay.getTrackedAckMessageId(t) && n > Date.now() - p.A.Millis.WEEK && n > a.A.getGuildRecentsDismissedAt(e) && n > i && !C.Ay.isChannelOrParentOptedIn(e, t)
-    })), f[e] = Date.now())
+    })), S[e] = Date.now())
 }
 
 function v() {
-    I.default.keys(A).forEach(e => {
-        let t = A[e];
-        A[e] = new Set([...t].filter(t => !C.Ay.isChannelOrParentOptedIn(e, t)))
+    I.default.keys(f).forEach(e => {
+        let t = f[e];
+        f[e] = new Set([...t].filter(t => !C.Ay.isChannelOrParentOptedIn(e, t)))
     })
 }
 class w extends i.Ay.Store {
@@ -54,12 +54,12 @@ class w extends i.Ay.Store {
         this.waitFor(d.default, h.A, o.Ay, u.Ay, c.A, g.Ay, C.Ay, a.A), this.syncWith([C.Ay], v)
     }
     getNewChannelIds(e) {
-        return null != e && null == A[e] && _(e), null != e ? A[e] ?? y : y
+        return null != e && null == f[e] && _(e), null != e ? f[e] ?? A : A
     }
     shouldIndicateNewChannel(e, t) {
         if (null == e) return !1;
         let n = c.A.getGuild(e);
-        return null != n && !!n.features.has(S.GuildFeatures.COMMUNITY) && (null != e && null == A[e] && _(e), A[e]?.has(t) && null == g.Ay.getTrackedAckMessageId(t))
+        return null != n && !!n.features.has(y.GuildFeatures.COMMUNITY) && (null != e && null == f[e] && _(e), f[e]?.has(t) && null == g.Ay.getTrackedAckMessageId(t))
     }
 }
 let m = new w(s.h, {
@@ -68,8 +68,8 @@ let m = new w(s.h, {
             guildId: t,
             channelIds: n
         } = e;
-        if (null == A[t]) return !1;
-        n.forEach(e => A[t].delete(e)), 0 === A[t].size && delete A[t]
+        if (null == f[t]) return !1;
+        n.forEach(e => f[t].delete(e)), 0 === f[t].size && delete f[t]
     },
     CHANNEL_ACK: () => !0,
     CHANNEL_SELECT: function(e) {
@@ -77,7 +77,7 @@ let m = new w(s.h, {
             guildId: t,
             channelId: n
         } = e;
-        return null != t && (null == A[t] || f[t] < Date.now() - p.A.Millis.HOUR ? (_(t), !0) : (null != n && E(t, n), !1))
+        return null != t && (null == f[t] || S[t] < Date.now() - p.A.Millis.HOUR ? (_(t), !0) : (null != n && E(t, n), !1))
     },
     SIDEBAR_VIEW_CHANNEL: function(e) {
         let {
@@ -98,12 +98,12 @@ let m = new w(s.h, {
         let {
             guild: t
         } = e;
-        delete A[t.id]
+        delete f[t.id]
     },
     CHANNEL_CREATE: function(e) {
         let {
             channel: t
         } = e;
-        t.isVocal() || (A[t.guild_id] = A[t.guild_id] ?? new Set, A[t.guild_id].add(t.id))
+        t.isVocal() || (f[t.guild_id] = f[t.guild_id] ?? new Set, f[t.guild_id].add(t.id))
     }
 })

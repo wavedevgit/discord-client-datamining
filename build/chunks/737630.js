@@ -6,8 +6,8 @@ s.r(t), s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(503698),
-    i = s.n(l),
-    a = s(835245),
+    a = s.n(l),
+    i = s(835245),
     o = s(417597),
     c = s(192308),
     d = s(397927),
@@ -29,8 +29,8 @@ var n = s(627968),
     L = s(983545),
     j = s(365491),
     O = s(530971),
-    T = s(177366),
-    k = s(155486),
+    k = s(177366),
+    T = s(155486),
     y = s(278576),
     N = s(120286),
     R = s(870308),
@@ -59,7 +59,7 @@ let F = e => {
             tab: t = P.G2.HOME
         } = e;
         (0, p.P)(h.a), (0, I.g)();
-        let s = (0, _.A)((0, a.A)()),
+        let s = (0, _.A)((0, i.A)()),
             l = (0, o.bG)([x.default], () => x.default.getCurrentUser());
         (0, f.pE)();
         let c = (0, B.yB)("CollectiblesShop"),
@@ -73,18 +73,18 @@ let F = e => {
             V = r.useMemo(() => t === P.G2.HOME && null != G && U() ? G : t, [t, G, U]),
             {
                 categories: W,
-                refreshCategories: K
+                refreshCategories: z
             } = (0, v.Ay)({
                 logPerf: !0
             }, {
                 sessionId: s,
                 tab: V
             }),
-            z = r.useMemo(() => [...W.values()], [W]),
+            K = r.useMemo(() => [...W.values()], [W]),
             [Y, $] = r.useState(),
             Z = (0, o.bG)([b.A], () => b.A.getCategory(Y)?.name),
             [q, X] = r.useState();
-        (0, T.XU)(s);
+        (0, k.XU)(s);
         let J = r.useCallback((e, t) => {
                 X(e), $(t)
             }, []),
@@ -111,7 +111,7 @@ let F = e => {
         }, []), (0, B.gB)();
         let {
             analyticsLocations: el
-        } = (0, A.lC)(Q), ei = (0, S.V)(Q, "collectibles_shop");
+        } = (0, A.lC)(Q), ea = (0, S.V)(Q, "collectibles_shop");
         return (0, n.jsx)(g.f5, {
             value: el,
             children: (0, n.jsx)(E.R9, {
@@ -126,31 +126,31 @@ let F = e => {
                         onClose: H,
                         shouldAddEventListener: !1,
                         children: (0, n.jsxs)("div", {
-                            className: i()(w.bx, {
+                            className: a()(w.bx, {
                                 [B.jP]: c
                             }),
                             ref: er,
                             tabIndex: -1,
-                            children: [(0, n.jsx)(k.G, {
+                            children: [(0, n.jsx)(T.G, {
                                 handleTransition: et,
                                 selectedTab: Q
-                            }), null != ei && ei.type === S.Z.COUNTDOWN && (0, n.jsx)(N.k, {
-                                message: ei.message,
+                            }), null != ea && ea.type === S.Z.COUNTDOWN && (0, n.jsx)(N.k, {
+                                message: ea.message,
                                 onClick: () => et(P.G2.HOME),
                                 variant: "pink",
-                                countdownEndDate: ei.countdownEndDate
+                                countdownEndDate: ea.countdownEndDate
                             }), (0, n.jsx)("div", {
-                                className: i()(w.td, {
+                                className: a()(w.td, {
                                     [w.RK]: ee === P.Pf.VISIBLE,
                                     [w.in]: ee === P.Pf.IN,
                                     [w.FD]: ee === P.Pf.OUT
                                 }),
                                 children: (0, n.jsx)(O.A, {
                                     tab: Q,
-                                    refreshCategories: K,
+                                    refreshCategories: z,
                                     transitionToTab: et,
                                     transitionState: ee,
-                                    categories: z,
+                                    categories: K,
                                     updateAnalyticsState: J
                                 })
                             })]

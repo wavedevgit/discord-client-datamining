@@ -1,7 +1,7 @@
 /** chunk id: 880457 params = (module,exports,require) **/
 n.d(t, {
     A: () => f,
-    P: () => h
+    P: () => y
 });
 var i = n(627968),
     l = n(64700),
@@ -22,7 +22,7 @@ function f(e) {
         enabled: t
     } = o.A.useConfig({
         location: "LongPressMessageActionSheet"
-    }), n = (0, a.bG)([u.A], () => u.A.getSavedMessage(e.channel_id, e.id)), l = h({
+    }), n = (0, a.bG)([u.A], () => u.A.getSavedMessage(e.channel_id, e.id)), l = y({
         message: e,
         savedMessage: n
     });
@@ -91,7 +91,7 @@ function f(e) {
     }) : null
 }
 
-function h(e) {
+function y(e) {
     let {
         message: t,
         savedMessage: n

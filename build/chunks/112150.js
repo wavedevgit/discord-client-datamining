@@ -5,14 +5,14 @@ n.d(t, {
 var i = n(64700),
     a = n(435582),
     l = n(283488),
-    r = n(735991),
-    s = n(486020),
+    s = n(735991),
+    r = n(486020),
     o = n(572211);
 
 function d(e) {
     let {
         bot: t
-    } = e, n = (0, r.Ag)(e), {
+    } = e, n = (0, s.Ag)(e), {
         url: d
     } = (0, l.A)({
         applicationId: n ? e.id : void 0,
@@ -25,12 +25,12 @@ function d(e) {
             let {
                 banner: e
             } = t;
-            i = (0, s.z)({
+            i = (0, r.z)({
                 id: t.id,
                 banner: e,
                 size: 512,
                 canAnimate: !1
-            }), (0, s.VI)(e) && null == d && (l = (0, s.z)({
+            }), (0, r.VI)(e) && null == d && (l = (0, r.z)({
                 id: t.id,
                 banner: e,
                 size: 512,
@@ -38,7 +38,7 @@ function d(e) {
             }))
         }
         if (n) {
-            let t = (0, r.Cx)(e);
+            let t = (0, s.Cx)(e);
             null != d && (i = d, c = o.u.ACTIVITY);
             let n = t?.activity_preview_video_asset_id;
             null != n && (l = (0, a.A)(e.id, n), c = o.u.ACTIVITY)

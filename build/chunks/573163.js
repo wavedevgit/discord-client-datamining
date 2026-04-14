@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(503698),
-    r = n.n(l),
-    s = n(73939),
+    s = n.n(l),
+    r = n(73939),
     o = n(397927),
     d = n(505527),
     c = n(960538),
@@ -54,9 +54,9 @@ class x extends a.PureComponent {
         } = this.state, S = E ? g : p, N = T > 0;
         if (!N && !f) return null;
         let j = f || N;
-        return (0, i.jsxs)(s.F, {
+        return (0, i.jsxs)(r.F, {
             component: "div",
-            className: r()(S.reactions, x),
+            className: s()(S.reactions, x),
             transitionAppear: !y,
             role: "group",
             transitionLeave: !1,
@@ -80,7 +80,7 @@ class x extends a.PureComponent {
                 onClick: t => {
                     t.stopPropagation(), (0, m.$l)(A, e)
                 },
-                className: r()(S.reaction, C, S.remainingReactions),
+                className: s()(S.reaction, C, S.remainingReactions),
                 "aria-label": h.intl.string(h.t.lfIHs4),
                 children: (0, i.jsxs)(o.Text, {
                     className: S.reactionInner,
@@ -93,7 +93,7 @@ class x extends a.PureComponent {
                 channel: A,
                 useChatFontScaling: E,
                 isHovered: this.state.isHovered,
-                className: r()({
+                className: s()({
                     [S.forceShow]: j
                 })
             })]
@@ -106,8 +106,8 @@ let f = e => {
         maxReactions: n,
         hoistReaction: l
     } = e, {
-        combinedReactions: r,
-        remainingReactions: s,
+        combinedReactions: s,
+        remainingReactions: r,
         visibleReactionsCount: o
     } = a.useMemo(() => {
         let e = [],
@@ -117,8 +117,8 @@ let f = e => {
                 return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
             })(t.reactions, l),
             a = null != n && n < i.length ? i.slice(0, n) : i,
-            r = i.length - a.length,
-            s = i.length;
+            s = i.length - a.length,
+            r = i.length;
         return a.forEach(t => {
             t.burst_count > 0 && e.push({
                 ...t,
@@ -126,17 +126,17 @@ let f = e => {
             }), t.count > 0 && e.push({
                 ...t,
                 type: d.v.NORMAL
-            }), null != t.me_vote && --s
+            }), null != t.me_vote && --r
         }), {
             combinedReactions: e,
-            visibleReactionsCount: s,
-            remainingReactions: r
+            visibleReactionsCount: r,
+            remainingReactions: s
         }
     }, [l, n, t.reactions]);
     return (0, i.jsx)(x, {
         ...e,
         visibleReactionsCount: o,
-        combinedReactions: r,
-        remainingReactions: s
+        combinedReactions: s,
+        remainingReactions: r
     })
 }

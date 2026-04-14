@@ -18,8 +18,8 @@ let p = new Map;
 function m(e, t) {
     let m, {
             handleTranslate: f,
-            handleRevertTranslation: h,
-            isTranslating: y,
+            handleRevertTranslation: y,
+            isTranslating: h,
             isTranslated: E
         } = function(e) {
             let [t, n] = l.useState(!1), i = (0, a.bG)([c.default], () => c.default.locale);
@@ -90,9 +90,9 @@ function m(e, t) {
                     src: t
                 },
                 action: () => f(e.value, e.name),
-                disabled: y
+                disabled: h
             }, e.value)
-        }), [f, y, m])),
+        }), [f, h, m])),
         _ = (0, d.b)();
     return null != e.content && "" !== e.content.trim() && _ ? E ? (0, i.jsx)(s.Drp, {
         id: "revert-translation",
@@ -102,17 +102,17 @@ function m(e, t) {
             icon: s.UaP
         },
         icon: s.UaP,
-        action: h,
-        disabled: y
+        action: y,
+        disabled: h
     }) : (0, i.jsx)(s.Drp, {
         id: "translate",
-        label: y ? g.intl.string(g.t.SVKIdU) : g.intl.string(g.t["6epDlR"]),
+        label: h ? g.intl.string(g.t.SVKIdU) : g.intl.string(g.t["6epDlR"]),
         action: () => f(),
         leadingAccessory: {
             type: "icon",
             icon: s.UaP
         },
-        disabled: y,
+        disabled: h,
         children: S
     }) : null
 }

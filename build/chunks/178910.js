@@ -7,15 +7,15 @@ var i = n(627968);
 n(64700);
 var a = n(397927),
     l = n(104171),
-    r = n(652215),
-    s = n(985018),
+    s = n(652215),
+    r = n(985018),
     o = n(582056);
 
 function d(e) {
     let {
         activityUsers: t,
         guildId: n,
-        activityText: r
+        activityText: s
     } = e;
     return (0, i.jsxs)("div", {
         className: o.i,
@@ -27,7 +27,7 @@ function d(e) {
         }), (0, i.jsx)(a.Text, {
             variant: "text-xs/normal",
             color: "none",
-            children: r
+            children: s
         })]
     })
 }
@@ -38,21 +38,21 @@ function c(e) {
         activityUsersCount: n
     } = e;
     switch (t?.type) {
-        case r.$pd.STREAMING:
+        case s.$pd.STREAMING:
             return {
-                text: s.intl.formatToPlainString(s.t.tyCw2q, {
+                text: r.intl.formatToPlainString(r.t.tyCw2q, {
                     count: n
                 }), Icon: a.ofK
             };
-        case r.$pd.LISTENING:
+        case s.$pd.LISTENING:
             return {
-                text: s.intl.formatToPlainString(s.t["2l8yka"], {
+                text: r.intl.formatToPlainString(r.t["2l8yka"], {
                     count: n
                 }), Icon: a.T7G
             };
         default:
             return {
-                text: s.intl.formatToPlainString(s.t.yJj035, {
+                text: r.intl.formatToPlainString(r.t.yJj035, {
                     count: n
                 }), Icon: a._xR
             }

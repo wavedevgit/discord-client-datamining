@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(503698),
-    r = n.n(l),
-    s = n(311907),
+    s = n.n(l),
+    r = n(311907),
     o = n(397927),
     d = n(544420),
     c = n(572211),
@@ -30,7 +30,7 @@ function b(e) {
         applicationName: n,
         iconSrc: a,
         channel: l,
-        currentUserId: s,
+        currentUserId: r,
         viewAction: d
     } = e, c = (0, m.Ay)(t), u = (0, h.P)({
         user: t.author,
@@ -40,7 +40,7 @@ function b(e) {
     })(c);
     return (0, i.jsx)(p.A, {
         compact: !1,
-        children: E.intl.format(s === t.author.id ? E.t.anvg2q : E.t.AxVbYF, {
+        children: E.intl.format(r === t.author.id ? E.t.anvg2q : E.t.AxVbYF, {
             username: c.nick,
             usernameHook: u,
             applicationHook: () => {
@@ -51,7 +51,7 @@ function b(e) {
                     children: [(0, i.jsx)("img", {
                         alt: E.intl.string(E.t["2B/phM"]),
                         src: a,
-                        className: r()(v.Gt, _.M.XSMALL)
+                        className: s()(v.Gt, _.M.XSMALL)
                     }), (0, i.jsx)(o.Text, {
                         variant: "text-sm/semibold",
                         color: "text-muted",
@@ -68,7 +68,7 @@ function T(e) {
         message: t,
         application: n,
         applicationName: l,
-        channel: r,
+        channel: s,
         header: _,
         currentUserId: m,
         launchableAppId: h,
@@ -82,9 +82,9 @@ function T(e) {
         analyticsLocations: L,
         showAuthButton: R,
         startAuthorization: P,
-        accountLinkButtonRef: M,
-        renderAccountLinkUpsell: w
-    } = e, D = (0, s.bG)([g.A], () => g.A.getMessages(r.id)), {
+        accountLinkButtonRef: w,
+        renderAccountLinkUpsell: D
+    } = e, M = (0, r.bG)([g.A], () => g.A.getMessages(s.id)), {
         actions: k,
         hasAccountLinkButton: O
     } = a.useMemo(() => {
@@ -102,7 +102,7 @@ function T(e) {
                     })
                 }
             }] : null != v && (e = [v], i = !1), e.length > 0)
-            if (!(0, x.p)(t.id, D, n.id, j)) return {
+            if (!(0, x.p)(t.id, M, n.id, j)) return {
                 actions: [],
                 hasAccountLinkButton: !1
             };
@@ -116,13 +116,13 @@ function T(e) {
                 },
                 icon: o.A5T,
                 iconButton: !0,
-                buttonRef: M
+                buttonRef: w
             }), a = !0);
         return {
             actions: e,
             hasAccountLinkButton: a
         }
-    }, [p, h, v, D, j, n.id, t.id, R, P, L, M]), U = k.some(e => e.trackingArea === u.kY.CLOUD_PLAY);
+    }, [p, h, v, M, j, n.id, t.id, R, P, L, w]), U = k.some(e => e.trackingArea === u.kY.CLOUD_PLAY);
     (0, f.A)(U, L);
     let B = k.length > 0,
         G = a.useMemo(() => (0, i.jsx)(o.Text, {
@@ -130,13 +130,13 @@ function T(e) {
             className: I.h_,
             color: "none",
             lineClamp: 3,
-            children: (0, A.BE)(t, l, r, m, B)
-        }), [t, l, r, m, B]);
+            children: (0, A.BE)(t, l, s, m, B)
+        }), [t, l, s, m, B]);
     return 0 === k.length ? (0, i.jsx)(b, {
         message: t,
         applicationName: l,
         iconSrc: S,
-        channel: r,
+        channel: s,
         currentUserId: m,
         viewAction: y
     }) : (0, i.jsxs)(i.Fragment, {
@@ -156,11 +156,11 @@ function T(e) {
                 linkType: C.J.RICH_PRESENCE_INVITE,
                 onView: N,
                 referrerId: t.author.id,
-                guildId: r.guild_id,
+                guildId: s.guild_id,
                 channelId: t.channel_id,
                 messageId: t.id,
                 isDeadEnd: !0
             }
-        }), O ? w() : null]
+        }), O ? D() : null]
     })
 }

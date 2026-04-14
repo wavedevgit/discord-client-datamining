@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var a = n(503698),
     l = n.n(a),
-    r = n(397927),
-    s = n(207963),
+    s = n(397927),
+    r = n(207963),
     o = n(953756),
     d = n(520586),
     c = n(564107),
@@ -33,7 +33,7 @@ function h(e) {
         getOnMediaItemContextMenu: p,
         shouldHideMediaOptions: g,
         enabledContentHarmTypeFlags: A,
-        children: (0, i.jsx)(s.f5, {
+        children: (0, i.jsx)(r.f5, {
             message: n,
             shouldDisableInteractiveComponents: !0,
             children: (0, i.jsx)(o.O7.Root, {
@@ -50,7 +50,7 @@ function h(e) {
                             className: l()(_.O0, m.k, m.z, {
                                 [_.dK]: f
                             }),
-                            children: [null != x && (0, i.jsx)(r.DUT, {
+                            children: [null != x && (0, i.jsx)(s.DUT, {
                                 focusProps: {
                                     offset: {
                                         bottom: 4
@@ -59,7 +59,7 @@ function h(e) {
                                 className: _.PP,
                                 onClick: x,
                                 "aria-label": u.intl.string(u.t.GT3fNz),
-                                children: (0, i.jsx)(r.PGe, {
+                                children: (0, i.jsx)(s.PGe, {
                                     size: "xs",
                                     color: "currentColor"
                                 })

@@ -12,8 +12,8 @@ n.d(t, {
 var i = n(58149),
     r = n(324593),
     l = n(253932),
-    o = n(919638),
-    s = n(71393),
+    s = n(919638),
+    o = n(71393),
     a = n(203982),
     d = n(652215);
 n(985018);
@@ -21,22 +21,22 @@ let c = 864e5 * d.n83;
 
 function u() {
     let e = l.$s.getSetting();
-    return 0 === o.A.totalUnavailableGuilds && (e = e.filter(e => null != s.A.getGuild(e))), new Set(e)
+    return 0 === s.A.totalUnavailableGuilds && (e = e.filter(e => null != o.A.getGuild(e))), new Set(e)
 }
 
 function _() {
     let e = l.Zr.getSetting();
-    return 0 === o.A.totalUnavailableGuilds && (e = e.filter(e => null != s.A.getGuild(e))), new Set(e)
+    return 0 === s.A.totalUnavailableGuilds && (e = e.filter(e => null != o.A.getGuild(e))), new Set(e)
 }
 
 function A() {
     let e = l.JG.getSetting();
-    return 0 === o.A.totalUnavailableGuilds && (e = e.filter(e => null != s.A.getGuild(e))), new Set(e)
+    return 0 === s.A.totalUnavailableGuilds && (e = e.filter(e => null != o.A.getGuild(e))), new Set(e)
 }
 
 function E() {
     let e = l.pE.getSetting();
-    return 0 === o.A.totalUnavailableGuilds && (e = e.filter(e => null != s.A.getGuild(e))), new Set(e)
+    return 0 === s.A.totalUnavailableGuilds && (e = e.filter(e => null != o.A.getGuild(e))), new Set(e)
 }
 
 function I(e) {
@@ -60,17 +60,17 @@ function g(e) {
         destinationPane: t,
         originPane: n,
         source: l,
-        subsection: o,
-        locationStack: s,
+        subsection: s,
+        locationStack: o,
         applicationId: a
     } = e;
     i.Ay.trackWithMetadata(d.HAw.SETTINGS_PANE_VIEWED, {
         settings_type: "user",
         origin_pane: n,
         destination_pane: t,
-        location_stack: s,
+        location_stack: o,
         source: l,
-        subsection: o,
+        subsection: s,
         application_id: a,
         search_session_id: r.A.getSearchSessionId()
     })

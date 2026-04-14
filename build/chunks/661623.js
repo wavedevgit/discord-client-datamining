@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(503698),
-    i = s.n(l),
-    a = s(158954),
+    a = s.n(l),
+    i = s(158954),
     o = s(311907),
     c = s(230109),
     d = s(990078),
@@ -36,8 +36,8 @@ let L = r.memo(function(e) {
         isHoveringOrFocusing: j
     } = (0, _.A)(L), {
         readyToClaim: O,
-        collectibleProductSkuIds: T,
-        collectedSkuIds: k
+        collectibleProductSkuIds: k,
+        collectedSkuIds: T
     } = (0, E.K)(t, s), y = (0, o.bG)([p.A], () => p.A.isClaiming === s);
     return (0, n.jsx)(c.L, {
         onChange: l,
@@ -45,7 +45,7 @@ let L = r.memo(function(e) {
         innerRef: L,
         children: (0, n.jsx)("div", {
             ref: L,
-            className: i()(C.ty, A.Q3, {
+            className: a()(C.ty, A.Q3, {
                 [C.yo]: j
             }),
             "aria-label": b.intl.formatToPlainString(b.t.Ez6aHE, {
@@ -78,7 +78,7 @@ let L = r.memo(function(e) {
                                 children: b.intl.string(b.t["0mDmg/"])
                             }), (0, n.jsx)(d.m, {
                                 text: O ? b.intl.string(b.t.cKH3tk) : b.intl.formatToPlainString(b.t["8aMDPc"], {
-                                    totalCount: T.length
+                                    totalCount: k.length
                                 }),
                                 align: "right",
                                 caretConfig: {
@@ -88,7 +88,7 @@ let L = r.memo(function(e) {
                                 position: "top",
                                 children: (0, n.jsx)("span", {
                                     className: A.ZB,
-                                    children: (0, n.jsx)(a.cBN, {
+                                    children: (0, n.jsx)(i.cBN, {
                                         size: "xs"
                                     })
                                 })
@@ -100,21 +100,21 @@ let L = r.memo(function(e) {
                                 className: A.L$,
                                 children: [(0, n.jsx)(g.Ay, {
                                     variant: g.qP.BLUE,
-                                    progress: k.length,
-                                    maximum: T.length
+                                    progress: T.length,
+                                    maximum: k.length
                                 }), (0, n.jsxs)("div", {
-                                    className: i()(A.__, {
+                                    className: a()(A.__, {
                                         [A.gF]: O
                                     }),
-                                    children: [O ? (0, n.jsx)(a.Uzd, {
+                                    children: [O ? (0, n.jsx)(i.Uzd, {
                                         size: "xs",
                                         color: "currentColor"
-                                    }) : null, (0, n.jsx)(a.EYj, {
+                                    }) : null, (0, n.jsx)(i.EYj, {
                                         variant: "text-xs/medium",
                                         color: "currentColor",
                                         children: b.intl.formatToPlainString(b.t["5TwASM"], {
-                                            collectedCount: k.length,
-                                            totalCount: T.length
+                                            collectedCount: T.length,
+                                            totalCount: k.length
                                         })
                                     })]
                                 })]
@@ -122,11 +122,11 @@ let L = r.memo(function(e) {
                         })]
                     }), (0, n.jsx)("div", {
                         className: C.Vs,
-                        children: (0, n.jsx)(a.e2v, {
+                        children: (0, n.jsx)(i.e2v, {
                             wrap: !1,
                             className: C.Ld,
                             fullWidth: !0,
-                            children: (0, n.jsx)(a.$nd, {
+                            children: (0, n.jsx)(i.$nd, {
                                 variant: "primary",
                                 onClick: e => {
                                     e.stopPropagation(), O && (0, m.BX)(t.skuId, s).then(() => {
@@ -144,7 +144,7 @@ let L = r.memo(function(e) {
                                             }
                                         })
                                     }).catch(() => {
-                                        (0, u.mMO)(() => Promise.resolve(e => (0, n.jsx)(a.Modal, {
+                                        (0, u.mMO)(() => Promise.resolve(e => (0, n.jsx)(i.Modal, {
                                             transitionState: e.transitionState,
                                             onClose: e.onClose,
                                             size: "sm",

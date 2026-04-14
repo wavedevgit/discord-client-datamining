@@ -17,8 +17,8 @@ var l = n(503698),
     p = n(576705),
     m = n(486020),
     f = n(690521),
-    h = n(652215),
-    y = n(307731),
+    y = n(652215),
+    h = n(307731),
     E = n(985018),
     S = n(551623);
 let _ = ["slight_smile", "frowning", "smile", "stuck_out_tongue", "wink"];
@@ -64,12 +64,12 @@ function I(e, t) {
     let n = (0, d.D6)(t.guild_id).filter(e => !(e.useSpriteSheet && _.indexOf(e.uniqueName ?? "") >= 0) && !f.Ay.isEmojiPremiumLocked({
         emoji: e,
         channel: t,
-        intention: y.EmojiIntention.REACTION
+        intention: h.EmojiIntention.REACTION
     }));
     n.length > 4 && (n.length = 4);
     let l = A.jW.useSetting(),
         a = (0, g.Id)(t);
-    return (0, r.bG)([p.A], () => l && a && (t.isPrivate() || p.A.can(h.xBc.ADD_REACTIONS, t)), [t, a, l]) && n.length > 0 ? (0, i.jsx)(o.rXV, {
+    return (0, r.bG)([p.A], () => l && a && (t.isPrivate() || p.A.can(y.xBc.ADD_REACTIONS, t)), [t, a, l]) && n.length > 0 ? (0, i.jsx)(o.rXV, {
         className: S.iE,
         children: n.map((n, l) => (0, i.jsx)(o.Drp, {
             id: `quickreact-${n.id??l}`,

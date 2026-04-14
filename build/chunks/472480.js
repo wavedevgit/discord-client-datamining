@@ -1,5 +1,6 @@
 /** chunk id: 472480 params = (module,exports,require) **/
-e.exports = {
+"use strict";
+a.exports = {
     ch: "classificationContainer_a48d6b",
     uW: "section_a48d6b",
     rf: "body_a48d6b",

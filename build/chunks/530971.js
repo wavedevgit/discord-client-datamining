@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(572944),
-    i = s(311907),
-    a = s(775602),
+    a = s(311907),
+    i = s(775602),
     o = s(287344),
     c = s(287809),
     d = s(728458),
@@ -33,16 +33,16 @@ function A(e) {
         refreshCategories: _
     } = e, p = S();
     v(p);
-    let A = (0, i.bG)([a.A], () => a.A.useReducedMotion),
+    let A = (0, a.bG)([i.A], () => i.A.useReducedMotion),
         [I, L] = r.useState(void 0),
         [j, O] = r.useState(!0),
-        T = r.useMemo(() => s.filter(e => !b.MS.some(t => {
+        k = r.useMemo(() => s.filter(e => !b.MS.some(t => {
             let {
                 categorySkuId: s
             } = t;
             return s === e.skuId
         })), [s]),
-        k = (0, o.f)("CollectiblesContent"),
+        T = (0, o.f)("CollectiblesContent"),
         y = r.useCallback(e => {
             let {
                 sourceButton: t,
@@ -52,9 +52,9 @@ function A(e) {
                 isOrbsExclusive: l
             } = e;
             u(t, s);
-            let i = n && !A,
-                a = l ? b.G2.ORBS : b.G2.CATALOG;
-            L(s), O(!r), c(a, i)
+            let a = n && !A,
+                i = l ? b.G2.ORBS : b.G2.CATALOG;
+            L(s), O(!r), c(i, a)
         }, [A, c, u]),
         {
             searchError: N
@@ -63,11 +63,11 @@ function A(e) {
         onRetry: _,
         errorMessage: p,
         errorOrigin: h.A.SHOP_PAGE
-    }) : t === b.G2.HOME && k ? (0, n.jsx)(x.A, {
+    }) : t === b.G2.HOME && T ? (0, n.jsx)(x.A, {
         tab: l.g.HOME,
         transitionState: d,
         handleTransition: y
-    }) : t === b.G2.ORBS && k ? (0, n.jsx)(x.A, {
+    }) : t === b.G2.ORBS && T ? (0, n.jsx)(x.A, {
         tab: l.g.ORBS,
         transitionState: d,
         handleTransition: y
@@ -77,7 +77,7 @@ function A(e) {
         transitionState: d
     }) : (0, n.jsx)(m.A, {
         tab: t,
-        categories: T,
+        categories: k,
         initialCategoryId: I,
         showFilterInitially: j,
         onUnmount: () => {
@@ -85,9 +85,9 @@ function A(e) {
         }
     })
 }
-let S = () => (0, i.bG)([u.A, _.A], () => null != u.A.error ? `shop load fetch categories error: ${u.A.error.message}` : null != _.A.claimError ? `shop load claim error: ${_.A.claimError.message}` : null != _.A.fetchError ? `shop load fetch purchase error: ${_.A.fetchError.message}` : void 0),
+let S = () => (0, a.bG)([u.A, _.A], () => null != u.A.error ? `shop load fetch categories error: ${u.A.error.message}` : null != _.A.claimError ? `shop load claim error: ${_.A.claimError.message}` : null != _.A.fetchError ? `shop load fetch purchase error: ${_.A.fetchError.message}` : void 0),
     v = e => {
-        let t = (0, i.bG)([c.default], () => c.default.getCurrentUser()),
+        let t = (0, a.bG)([c.default], () => c.default.getCurrentUser()),
             {
                 noCache: s,
                 includeUnpublished: n

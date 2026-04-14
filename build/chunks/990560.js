@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(311907),
-    r = n(846293),
-    s = n(820284),
+    s = n(846293),
+    r = n(820284),
     o = n(688810),
     d = n(107123),
     c = n(698441),
@@ -38,39 +38,39 @@ function P(e) {
         message: n,
         getAcceptInviteContext: P
     } = e, {
-        invite: M,
-        inviteError: w
+        invite: w,
+        inviteError: D
     } = (0, l.cf)([x.A], () => ({
         invite: x.A.getInvite(t),
         inviteError: x.A.getInviteError(t)
-    }), [t]), D = null == M, k = (0, _._U)(t, n.id);
+    }), [t]), M = null == w, k = (0, _._U)(t, n.id);
     a.useEffect(() => {
-        D && r.Ay.resolveInvite(t, void 0, {
+        M && s.Ay.resolveInvite(t, void 0, {
             inviteInstanceId: k
         })
-    }, [t, D, k]);
-    let O = M ?? {
+    }, [t, M, k]);
+    let O = w ?? {
             state: R.elq.RESOLVING,
             code: ""
         },
         {
             analyticsLocations: U
         } = (0, o.Ay)(),
-        B = (0, l.bG)([A.A], () => M?.guild != null ? A.A.getGuild(M.guild.id) : null, [M]),
+        B = (0, l.bG)([A.A], () => w?.guild != null ? A.A.getGuild(w.guild.id) : null, [w]),
         G = (0, l.bG)([g.default], () => g.default.getId()),
         F = (0, l.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(O.guild_scheduled_event?.id), [O]),
         H = () => {
-            null != O.channel && r.Ay.transitionToInviteSync(O)
+            null != O.channel && s.Ay.transitionToInviteSync(O)
         },
         V = function() {
             let {
                 autoJoin: e
-            } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, n = null == B && M?.guild != null ? f.DY(M.guild) : B;
+            } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, n = null == B && w?.guild != null ? f.DY(w.guild) : B;
             (0, h.g)({
                 guild: n,
                 isMember: null != B,
                 analyticsLocations: U
-            }) === h.W.PROCEED && r.Ay.acceptInviteAndTransitionToInviteChannel({
+            }) === h.W.PROCEED && s.Ay.acceptInviteAndTransitionToInviteChannel({
                 inviteKey: t,
                 context: P("Invite Button Embed", t),
                 autoJoin: e
@@ -99,7 +99,7 @@ function P(e) {
         case R.elq.ERROR:
             q = (0, i.jsx)(E.A, {
                 author: n.author,
-                inviteError: w
+                inviteError: D
             });
             break;
         default:
@@ -181,7 +181,7 @@ function P(e) {
                     }))
             }
     }
-    return (0, i.jsx)(s.A, {
+    return (0, i.jsx)(r.A, {
         section: R.JJy.INVITE_LINK,
         children: q
     })

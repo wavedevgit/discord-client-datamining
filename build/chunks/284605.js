@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var a = n(417597),
     l = n(732955),
-    r = n(492749),
-    s = n(827186),
+    s = n(492749),
+    r = n(827186),
     o = n(465932),
     d = n(317525),
     c = n(71393),
@@ -35,14 +35,14 @@ function E(e) {
         thumbnailHeight: S,
         descriptionTextVariant: N = "text-sm/normal",
         showOpaqueBackground: j = !1
-    } = e, L = (0, a.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, a.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, r.R)(t, 600), M = (0, g.z)(t), w = (0, _.BB)(L), {
-        shouldHideGuildPurchaseEntryPoints: D
+    } = e, L = (0, a.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, a.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, s.R)(t, 600), w = (0, g.z)(t), D = (0, _.BB)(L), {
+        shouldHideGuildPurchaseEntryPoints: M
     } = (0, o.MH)(n), k = (0, g.X)(t), O = (0, x.A)({
         guildId: n,
         guildProductListingId: t.id,
         sourceAnalyticsLocations: E
     });
-    if (null == L || D) return null;
+    if (null == L || M) return null;
     let U = () => (0, f.M)({
             guildId: n,
             guildProductListingId: t.id,
@@ -51,19 +51,19 @@ function E(e) {
         B = (0, i.jsx)(A.i, {
             product: t,
             guildId: n,
-            showEditProduct: w,
+            showEditProduct: D,
             showUnpublishProduct: !1,
             showCopyLink: !0,
             showTestDownload: !1,
             showDeleteProduct: !1,
             showReportProduct: !0,
-            onEditProduct: w ? () => {
+            onEditProduct: D ? () => {
                 h.q(L.id, t.id)
             } : () => {},
             onUnpublishProduct: () => {},
             onDeleteProduct: () => {},
             onReportProduct: () => {
-                (0, s.F)({
+                (0, r.F)({
                     listing: t
                 })
             },
@@ -81,7 +81,7 @@ function E(e) {
         ctaComponent: (0, i.jsx)(l.$nd, {
             ...O
         }),
-        productType: M,
+        productType: w,
         shouldShowFullDescriptionButton: I,
         onShowFullDescription: U,
         onTapCard: U,

@@ -1,13 +1,13 @@
 /** chunk id: 227205 params = (module,exports,require) **/
 "use strict";
 s.d(t, {
-    A: () => k
+    A: () => T
 });
 var n = s(627968),
     r = s(64700),
     l = s(503698),
-    i = s.n(l),
-    a = s(172218),
+    a = s.n(l),
+    i = s(172218),
     o = s(696292),
     c = s(651162),
     d = s(311907),
@@ -29,7 +29,7 @@ var n = s(627968),
     L = s(652215),
     j = s(985018),
     O = s(297046);
-let T = {
+let k = {
         rankedSkuIds: [],
         name: "",
         unpublishedAt: void 0,
@@ -38,19 +38,19 @@ let T = {
         type: c.g.HERO,
         categoryStoreListingId: ""
     },
-    k = e => {
+    T = e => {
         let {
             isLoading: t,
             handleTransition: s,
             category: l,
-            heroBlock: k,
+            heroBlock: T,
             tab: y,
             onVisibilityChange: N
-        } = e, R = (0, a.K)(e => {
+        } = e, R = (0, i.K)(e => {
             N?.(e)
         }, .1, null != N), B = r.useRef(null), P = (0, A.yB)("HeroBlock"), M = (0, d.bG)([p.default], () => p.default.getCurrentUser()), H = (0, x.uM)(), {
             analyticsLocations: D
-        } = (0, g.Ay)(_.A.COLLECTIBLES_SHOP_HERO), w = r.useMemo(() => null != k ? k : null == l ? T : {
+        } = (0, g.Ay)(_.A.COLLECTIBLES_SHOP_HERO), w = r.useMemo(() => null != T ? T : null == l ? k : {
             rankedSkuIds: l.heroRanking ?? [],
             name: l.name,
             unpublishedAt: l.unpublishedAt,
@@ -63,14 +63,14 @@ let T = {
             heroLogoUrl: l.heroLogoUrl,
             heroBannerUrl: l.heroBannerUrl,
             heroBannerAnimatedUrl: l.heroBannerAnimatedUrl
-        }, [k, l]), {
+        }, [T, l]), {
             bannerDisplayConfig: F,
             logoDisplayConfig: G,
             heroLogo: U,
             heroBannerStatic: V,
             heroBannerAnimated: W,
-            heroBannerRive: K
-        } = (0, b.Kk)(w), z = F?.responsive ?? !1, Y = F?.backgroundStyle, $ = null != K, Z = y === I.G2.ORBS, q = null != l && l.isOrbsExclusive, X = Z ? j.intl.string(j.t["1CdL8d"]) : j.intl.string(j.t.xYKa1T), J = () => {
+            heroBannerRive: z
+        } = (0, b.Kk)(w), K = F?.responsive ?? !1, Y = F?.backgroundStyle, $ = null != z, Z = y === I.G2.ORBS, q = null != l && l.isOrbsExclusive, X = Z ? j.intl.string(j.t["1CdL8d"]) : j.intl.string(j.t.xYKa1T), J = () => {
             Z ? ((0, h.Y)({
                 pageType: L.liQ.SHOP_ORBS_TAB,
                 sectionType: L.JJy.ORBS_SHOP_HERO_BLOCK,
@@ -91,7 +91,7 @@ let T = {
                 cta_name: "shop latest category hero button"
             }))
         };
-        return null != M && (t || w !== T) ? (0, n.jsx)(g.f5, {
+        return null != M && (t || w !== k) ? (0, n.jsx)(g.f5, {
             value: D,
             children: (0, n.jsxs)("div", {
                 ref: R,
@@ -101,9 +101,9 @@ let T = {
                     className: O.Xt,
                     riveEventTargetRef: B
                 }) : null, (0, n.jsx)("div", {
-                    className: i()(O.vK, {
+                    className: a()(O.vK, {
                         [O.cN]: $,
-                        [O.no]: z
+                        [O.no]: K
                     }),
                     style: null != Y ? {
                         background: Y
@@ -111,8 +111,8 @@ let T = {
                     children: null != V && (0, n.jsx)(S.A, {
                         bannerStatic: V,
                         bannerAnimated: W,
-                        bannerRive: K,
-                        isResponsive: z,
+                        bannerRive: z,
+                        isResponsive: K,
                         eventTargetRef: B
                     })
                 }), (0, n.jsxs)("div", {
@@ -125,8 +125,8 @@ let T = {
                             text: X
                         })
                     }) : (0, n.jsxs)("div", {
-                        className: i()(O.bC, {
-                            [O.no]: z
+                        className: a()(O.bC, {
+                            [O.no]: K
                         }),
                         children: [t ? (0, n.jsx)("div", {
                             className: O.Hw

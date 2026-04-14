@@ -10,17 +10,17 @@ function a(e) {
         isHubGuild: n,
         isOwnInvite: a,
         isGuest: l,
-        isStage: r,
-        isStream: s
+        isStage: s,
+        isStream: r
     } = e;
     if (t)
         if (a)
-            if (s) return i.intl.string(i.t.N85DCl);
-            else if (r) return i.intl.string(i.t.TJQcNv);
+            if (r) return i.intl.string(i.t.N85DCl);
+            else if (s) return i.intl.string(i.t.TJQcNv);
     else if (l) return i.intl.string(i.t.mJyBir);
     else return i.intl.string(i.t.lxTgP9);
-    else if (s) return i.intl.string(i.t.Mnvc3C);
-    else if (r) return i.intl.string(i.t.FdPNr5);
+    else if (r) return i.intl.string(i.t.Mnvc3C);
+    else if (s) return i.intl.string(i.t.FdPNr5);
     else if (l) return i.intl.string(i.t.f4gmrf);
     else return i.intl.string(i.t.H39rEY);
     return n ? a ? i.intl.string(i.t.UxmnHx) : i.intl.string(i.t.sigPEf) : a ? i.intl.string(i.t["oU/lsl"]) : i.intl.string(i.t.BoQUFf)

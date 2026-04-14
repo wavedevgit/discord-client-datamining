@@ -1,17 +1,17 @@
 /** chunk id: 772366 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => s
 });
 var i = n(627968);
 n(64700);
 var a = n(397927),
     l = n(71393);
 
-function r(e) {
+function s(e) {
     let {
         onCloseCallback: t,
-        analyticsLocations: r,
-        ...s
+        analyticsLocations: s,
+        ...r
     } = e;
     (0, a.mMO)(async () => {
         let {
@@ -19,8 +19,8 @@ function r(e) {
         } = await n.e("45990").then(n.bind(n, 307794));
         return t => (0, i.jsx)(e, {
             ...t,
-            ...s,
-            analyticsLocations: r,
+            ...r,
+            analyticsLocations: s,
             guildCount: l.A.getGuildCount(),
             "aria-labelledby": "nitro-guild-cap-upsell"
         })

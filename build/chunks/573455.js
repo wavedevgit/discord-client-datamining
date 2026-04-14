@@ -7,8 +7,8 @@ var n = s(627968);
 s(64700);
 var r = s(503698),
     l = s.n(r),
-    i = s(424918),
-    a = s(793574),
+    a = s(424918),
+    i = s(793574),
     o = s(688810),
     c = s(440938),
     d = s(993408),
@@ -22,7 +22,7 @@ let m = e => {
         } = e;
         return (0, n.jsx)("div", {
             className: l()(g.n9, g.YB),
-            children: s?.subblocks.map((e, s) => e.type === i.u.CATEGORY ? (0, n.jsx)(c.R9, {
+            children: s?.subblocks.map((e, s) => e.type === a.u.CATEGORY ? (0, n.jsx)(c.R9, {
                 newValue: {
                     categoryPosition: 1,
                     pageCategory: e.name,
@@ -44,13 +44,13 @@ let m = e => {
             categories: s
         } = e;
         if (null == s || s.length < 2) return null;
-        let [r, i] = s;
+        let [r, a] = s;
         return (0, n.jsx)("div", {
             className: l()(g.n9, g.YB),
             children: (0, n.jsxs)(c.R9, {
                 newValue: {
                     categoryPosition: 1,
-                    pageCategory: null != r ? r.name : i?.name,
+                    pageCategory: null != r ? r.name : a?.name,
                     pageSection: "featured_block",
                     tilePosition: +(null == r)
                 },
@@ -59,9 +59,9 @@ let m = e => {
                     enablePreview: !0,
                     badgeText: (0, d.HF)(r.unpublishedAt) ? _.intl.string(_.t["h/uBCR"]) : void 0,
                     handleTransition: t
-                }), null != i && (0, n.jsx)(u.S, {
-                    category: i,
-                    badgeText: (0, d.HF)(i.unpublishedAt) ? _.intl.string(_.t["h/uBCR"]) : void 0,
+                }), null != a && (0, n.jsx)(u.S, {
+                    category: a,
+                    badgeText: (0, d.HF)(a.unpublishedAt) ? _.intl.string(_.t["h/uBCR"]) : void 0,
                     handleTransition: t
                 })]
             })
@@ -72,10 +72,10 @@ let m = e => {
             isLoading: t,
             handleTransition: s,
             categories: r,
-            featuredBlockRecord: i
+            featuredBlockRecord: a
         } = e, {
             analyticsLocations: c
-        } = (0, o.Ay)(a.A.COLLECTIBLES_SHOP_FEATURED_BLOCK);
+        } = (0, o.Ay)(i.A.COLLECTIBLES_SHOP_FEATURED_BLOCK);
         return t ? (0, n.jsxs)("div", {
             className: l()(g.n9, g.YB),
             children: [(0, n.jsx)("div", {
@@ -89,10 +89,10 @@ let m = e => {
                     className: g.uy
                 })
             })]
-        }) : null != i ? (0, n.jsx)(o.f5, {
+        }) : null != a ? (0, n.jsx)(o.f5, {
             value: c,
             children: (0, n.jsx)(m, {
-                featuredBlockRecord: i,
+                featuredBlockRecord: a,
                 handleTransition: s,
                 isLoading: !1
             })

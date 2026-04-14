@@ -7,8 +7,8 @@ var n = s(627968);
 s(64700);
 var r = s(503698),
     l = s.n(r),
-    i = s(311907),
-    a = s(653887),
+    a = s(311907),
+    i = s(653887),
     o = s(775602),
     c = s(607470),
     d = s(531685),
@@ -20,8 +20,8 @@ let _ = e => {
         bannerRive: r,
         isResponsive: _ = !1,
         eventTargetRef: g
-    } = e, m = (0, i.bG)([o.A], () => o.A.useReducedMotion), h = (0, i.bG)([d.A], () => d.A.isFocused()), p = null != s && !m && h;
-    return null != r ? (0, n.jsx)(a._, {
+    } = e, m = (0, a.bG)([o.A], () => o.A.useReducedMotion), h = (0, a.bG)([d.A], () => d.A.isFocused()), p = null != s && !m && h;
+    return null != r ? (0, n.jsx)(i._, {
         src: r,
         fit: "fit-width",
         eventTargetRef: g

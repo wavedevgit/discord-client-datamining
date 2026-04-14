@@ -1,48 +1,48 @@
 /** chunk id: 847816 params = (module,exports,require) **/
-a.d(t, {
-    A: () => S
+n.d(t, {
+    A: () => C
 });
-var n = a(627968),
-    i = a(64700),
-    l = a(503698),
-    s = a.n(l),
-    r = a(311907),
-    o = a(397927),
-    c = a(966327),
-    d = a(386467),
-    u = a(449859),
-    m = a(943220),
-    _ = a(734057),
-    p = a(572855),
-    A = a(358731),
-    h = a(597351),
-    g = a(985018),
-    E = a(197083);
-let T = i.memo(function(e) {
+var a = n(627968),
+    i = n(64700),
+    r = n(503698),
+    o = n.n(r),
+    l = n(311907),
+    c = n(397927),
+    s = n(966327),
+    d = n(386467),
+    _ = n(449859),
+    u = n(943220),
+    m = n(734057),
+    p = n(572855),
+    A = n(358731),
+    b = n(597351),
+    S = n(985018),
+    h = n(197083);
+let g = i.memo(function(e) {
     let {
         message: t
-    } = e, a = (0, r.bG)([_.A], () => _.A.getChannel(t.channel_id));
-    return null == a ? null : (0, n.jsx)(A.Ay, {
-        children: e => (0, n.jsxs)(d.A.Provider, {
-            value: a.guild_id,
-            children: [(0, n.jsx)(c.A, {
+    } = e, n = (0, l.bG)([m.A], () => m.A.getChannel(t.channel_id));
+    return null == n ? null : (0, a.jsx)(A.Ay, {
+        children: e => (0, a.jsxs)(d.A.Provider, {
+            value: n.guild_id,
+            children: [(0, a.jsx)(s.A, {
                 user: t.author,
-                size: o._3J.SIZE_40,
-                className: s()(E.Du, e)
-            }), (0, n.jsxs)("div", {
-                className: s()(E.cy, e),
-                children: [(0, n.jsx)(o.M1G, {
-                    children: (0, n.jsx)("div", {
-                        className: E.mG,
-                        children: (0, n.jsx)(m.A, {
-                            className: E.fh,
+                size: c._3J.SIZE_40,
+                className: o()(h.Du, e)
+            }), (0, a.jsxs)("div", {
+                className: o()(h.cy, e),
+                children: [(0, a.jsx)(c.M1G, {
+                    children: (0, a.jsx)("div", {
+                        className: h.mG,
+                        children: (0, a.jsx)(u.A, {
+                            className: h.fh,
                             message: t,
-                            channel: a
+                            channel: n
                         })
                     })
-                }), (0, n.jsx)(u.A, {
+                }), (0, a.jsx)(_.A, {
                     timestamp: t.timestamp,
-                    className: E.vE,
+                    className: h.vE,
                     tooltipPosition: "bottom"
                 })]
             })]
@@ -50,26 +50,26 @@ let T = i.memo(function(e) {
     })
 });
 
-function S(e) {
+function C(e) {
     let {
         item: t,
-        hideMediaOptions: a,
+        hideMediaOptions: n,
         onClose: i
-    } = e, l = t.sourceMetadata?.message;
-    return (0, n.jsxs)("div", {
-        className: E.XV,
-        children: [null != l && (0, n.jsx)(T, {
-            message: l
-        }), (0, n.jsx)(p.A, {
+    } = e, r = t.sourceMetadata?.message;
+    return (0, a.jsxs)("div", {
+        className: h.XV,
+        children: [null != r && (0, a.jsx)(g, {
+            message: r
+        }), (0, a.jsx)(p.A, {
             item: t,
-            hideMediaOptions: a
-        }), (0, n.jsx)(A.Ay, {
+            hideMediaOptions: n
+        }), (0, a.jsx)(A.Ay, {
             mode: A.nY.PINNED,
-            children: e => (0, n.jsx)(h.A, {
+            children: e => (0, a.jsx)(b.A, {
                 onClick: i,
-                icon: o.PGe,
-                tooltip: g.intl.string(g.t.cpT0Cq),
-                className: s()(E.b, e)
+                icon: c.PGe,
+                tooltip: S.intl.string(S.t.cpT0Cq),
+                className: o()(h.b, e)
             })
         })]
     })

@@ -9,8 +9,8 @@ n.d(t, {
 var i = n(949645),
     r = n(265422),
     l = n(963169),
-    o = n(345942),
-    s = n(309010),
+    s = n(345942),
+    o = n(309010),
     a = n(967198),
     d = n(723702),
     c = n(652215);
@@ -32,9 +32,9 @@ let u = {
             if (null != a.A.getGuildId()) e = c.ME;
             else {
                 let t = a.A.getLastSelectedGuildId();
-                null != t && (e = t, (0, r.i)(t, s.A.getChannelId(t)))
+                null != t && (e = t, (0, r.i)(t, o.A.getChannelId(t)))
             }
-            return null != e && (0, o.u)(e), !1
+            return null != e && (0, s.u)(e), !1
         }
     },
     E = {

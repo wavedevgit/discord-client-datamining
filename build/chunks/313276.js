@@ -6,13 +6,13 @@ s.d(t, {
 var n = s(64700),
     r = s(155999),
     l = s.n(r),
-    i = s(311907),
-    a = s(590180);
+    a = s(311907),
+    i = s(590180);
 
 function o() {
-    let e = (0, i.bG)([a.A], () => a.A.products);
+    let e = (0, a.bG)([i.A], () => i.A.products);
     return (0, n.useCallback)(t => l()(t.map(t => {
         let s = e.get(t);
-        return null != s && null != s.variantGroupStoreListingId ? a.A.getProductByStoreListingId(s.variantGroupStoreListingId) : s
+        return null != s && null != s.variantGroupStoreListingId ? i.A.getProductByStoreListingId(s.variantGroupStoreListingId) : s
     }).filter(e => null != e), "storeListingId"), [e])
 }

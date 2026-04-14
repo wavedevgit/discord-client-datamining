@@ -1,15 +1,15 @@
 /** chunk id: 707685 params = (module,exports,require) **/
-a.d(t, {
-    b: () => s,
-    w: () => l
+n.d(t, {
+    b: () => o,
+    w: () => r
 });
-var n = a(803842),
-    i = a(652215);
-let l = {
-        [i.IWg.MODAL_CAROUSEL_NEXT]: n.$0,
-        [i.IWg.MODAL_CAROUSEL_PREV]: n.$4,
-        [i.IWg.CLOSE_MODAL]: n.cu
+var a = n(803842),
+    i = n(652215);
+let r = {
+        [i.IWg.MODAL_CAROUSEL_NEXT]: a.$0,
+        [i.IWg.MODAL_CAROUSEL_PREV]: a.$4,
+        [i.IWg.CLOSE_MODAL]: a.cu
     },
-    s = {
-        [i.IWg.CLOSE_MODAL]: n.cu
+    o = {
+        [i.IWg.CLOSE_MODAL]: a.cu
     }

@@ -1,13 +1,13 @@
 /** chunk id: 842901 params = (module,exports,require) **/
 n.d(t, {
-    E: () => r,
-    T: () => s
+    E: () => s,
+    T: () => r
 }), n(801541);
 var i = n(889137),
     a = n(966974),
     l = n(108234);
 
-function r(e, t) {
+function s(e, t) {
     let n = (0, i.YW)(t).with(a.Z.IMAGE_ONLY_ANSWERS, () => l.EK).otherwise(() => l.fD);
     return {
         styles: {
@@ -23,6 +23,6 @@ function r(e, t) {
     }
 }
 
-function s(e, t) {
+function r(e, t) {
     return e.getAvatarURL(t, 20, !1)
 }

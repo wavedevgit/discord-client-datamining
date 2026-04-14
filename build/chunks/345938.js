@@ -1,17 +1,17 @@
 /** chunk id: 345938 params = (module,exports,require) **/
 n.d(t, {
-    d: () => s
+    d: () => i
 });
 var a = n(627968),
     l = n(397927),
-    i = n(294454);
-let s = e => {
+    s = n(294454);
+let i = e => {
     let {
         sku: t,
-        guildId: s,
+        guildId: i,
         source: r,
         analyticsLocations: o,
-        analyticsContext: d
+        analyticsContext: c
     } = e;
     (0, l.mMO)(async () => {
         let {
@@ -20,13 +20,13 @@ let s = e => {
         return n => (0, a.jsx)(e, {
             ...n,
             sku: t,
-            guildId: s,
+            guildId: i,
             source: r,
             analyticsLocations: o,
-            analyticsContext: d
+            analyticsContext: c
         })
     }, {
         stackingBehavior: "stack",
-        modalKey: i.aU
+        modalKey: s.aU
     })
 }

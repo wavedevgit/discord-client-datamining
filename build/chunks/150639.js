@@ -39,7 +39,7 @@ let _ = e => ({
                     guild: t,
                     emojis: l,
                     isEmojiAnimated: n
-                } = e, i = l.filter(e => e.animated === n && !(0, o.Eg)(e, t.id)).length ?? 0;
+                } = e, i = l.filter(e => e.animated === n && !e.managed && !(0, o.Eg)(e, t.id)).length ?? 0;
                 return (0, g.sN)(t) - i
             }({
                 guild: l,

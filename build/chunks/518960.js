@@ -1,100 +1,100 @@
 /** chunk id: 518960 params = (module,exports,require) **/
 n.d(t, {
-    R: () => O,
-    V: () => x
+    R: () => v,
+    V: () => E
 });
 var r = n(367513),
     i = n(843472),
     a = n(608299),
     o = n(23658),
-    l = n(743445),
-    _ = n(565150),
-    s = n(58149),
-    c = n(313961),
-    d = n(301169),
+    _ = n(743445),
+    l = n(565150),
+    c = n(58149),
+    d = n(313961),
+    s = n(301169),
     u = n(522602),
-    m = n(287809),
-    p = n(954571),
+    p = n(287809),
+    m = n(954571),
     f = n(453771),
-    E = n(927578),
-    h = n(382287),
-    I = n(652215),
-    T = n(381941),
-    g = n(788868),
-    C = n(985018);
+    b = n(927578),
+    I = n(382287),
+    C = n(652215),
+    g = n(381941),
+    h = n(788868),
+    T = n(985018);
 
-function x(e, t, n) {
-    let r = m.default.getCurrentUser(),
+function E(e, t, n) {
+    let r = p.default.getCurrentUser(),
         i = e.guild_id,
         a = f.o2(i),
-        l = Array.from(t).map(e => e.size),
-        _ = Array.from(t).map(e => null != e.type ? e.type : "unknown"),
-        c = l.reduce((e, t) => e + t, 0),
-        d = l.length > 0 ? Math.max(...l) : 0,
-        u = l.length;
-    if (d > a) {
+        _ = Array.from(t).map(e => e.size),
+        l = Array.from(t).map(e => null != e.type ? e.type : "unknown"),
+        d = _.reduce((e, t) => e + t, 0),
+        s = _.length > 0 ? Math.max(..._) : 0,
+        u = _.length;
+    if (s > a) {
         let t = n?.reduce((e, t) => e + t, 0);
-        (0, s.zV)(I.HAw.FILE_SIZE_LIMIT_EXCEEDED, {
+        (0, c.zV)(C.HAw.FILE_SIZE_LIMIT_EXCEEDED, {
             channel_id: e.id,
             guild_id: i,
             user_individual_file_size_limit: a,
-            pre_compression_file_sizes: l,
-            pre_compression_aggregate_file_size: c,
+            pre_compression_file_sizes: _,
+            pre_compression_aggregate_file_size: d,
             num_attachments: u,
-            error_type: T.ty.UPLOAD_ATTACHMENT_MAX_SIZE_ERROR,
-            attachment_mimetypes: _,
+            error_type: g.ty.UPLOAD_ATTACHMENT_MAX_SIZE_ERROR,
+            attachment_mimetypes: l,
             post_compression_file_sizes: n,
             post_compression_aggregate_file_size: t
         }), (0, o.openUploadError)({
-            title: C.intl.string(C.t["/tGlcj"]),
-            help: (0, h.WQ)(r, i),
-            showPremiumUpsell: !(0, E.YE)(r, g.PremiumTypes.TIER_2),
-            fileSize: d
+            title: T.intl.string(T.t["/tGlcj"]),
+            help: (0, I.WQ)(r, i),
+            showPremiumUpsell: !(0, b.YE)(r, h.PremiumTypes.TIER_2),
+            fileSize: s
         });
         return
     }(0, o.openUploadError)({
-        title: C.intl.string(C.t["/tGlcj"]),
-        help: C.intl.formatToPlainString(C.t.tUOJdH, {
+        title: T.intl.string(T.t["/tGlcj"]),
+        help: T.intl.formatToPlainString(T.t.tUOJdH, {
             maxSize: f.Hb(f.bB())
         })
     })
 }
-async function O(e, t, n) {
+async function v(e, t, n) {
     let {
-        filesMetadata: s,
-        requireConfirm: m = !0,
+        filesMetadata: c,
+        requireConfirm: p = !0,
         isThumbnail: f = !1,
-        origin: E
+        origin: b
     } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
     if (e.length < 1) return;
-    if (null != s && s.length !== e.length) throw Error("Unexpected mismatch between files and file metadata");
-    let g = t.getGuildId(),
-        O = Array.from(e),
-        A = O.map(e => ({
+    if (null != c && c.length !== e.length) throw Error("Unexpected mismatch between files and file metadata");
+    let h = t.getGuildId(),
+        v = Array.from(e),
+        x = v.map(e => ({
             originalContentType: e.type,
             preCompressionSize: e.size
         }));
-    if (await Promise.resolve(), (0, h.fJ)(O, g)) return void x(t, O);
-    if (u.A.getUploadCount(t.id, n) + O.length > I.XgB) {
+    if (await Promise.resolve(), (0, I.fJ)(v, h)) return void E(t, v);
+    if (u.A.getUploadCount(t.id, n) + v.length > C.XgB) {
         (0, o.openUploadError)({
-            title: C.intl.string(C.t.wOr6hB),
-            help: C.intl.formatToPlainString(C.t["qqyp/e"], {
-                limit: I.XgB
+            title: T.intl.string(T.t.wOr6hB),
+            help: T.intl.formatToPlainString(T.t["qqyp/e"], {
+                limit: C.XgB
             })
-        }), p.default.track(I.HAw.UPLOAD_FILE_LIMIT_ERROR, {
+        }), m.default.track(C.HAw.UPLOAD_FILE_LIMIT_ERROR, {
             existing_count: u.A.getUploadCount(t.id, n),
-            new_count: O.length
+            new_count: v.length
         });
         return
     }
-    if (t.type !== I.rbe.GUILD_VOICE && t.type !== I.rbe.GUILD_STAGE_VOICE || c.A.getChatOpen(t.id) || r.A.updateChatOpen(t.id, !0), m) {
-        let e = O.map((e, t) => ({
+    if (t.type !== C.rbe.GUILD_VOICE && t.type !== C.rbe.GUILD_STAGE_VOICE || d.A.getChatOpen(t.id) || r.A.updateChatOpen(t.id, !0), p) {
+        let e = v.map((e, t) => ({
             file: e,
-            platform: _.xz.WEB,
+            platform: l.xz.WEB,
             isThumbnail: f,
-            origin: E,
-            compressionMetadata: A[t],
-            ...s?.[t]
+            origin: b,
+            compressionMetadata: x[t],
+            ...c?.[t]
         }));
         a.A.addFiles({
             files: e,
@@ -102,14 +102,14 @@ async function O(e, t, n) {
             draftType: n
         })
     } else {
-        let e = O.map((e, n) => {
-            let r = null != s ? s[n] : {};
-            return new l.bK({
+        let e = v.map((e, n) => {
+            let r = null != c ? c[n] : {};
+            return new _.bK({
                 file: e,
-                platform: _.xz.WEB,
+                platform: l.xz.WEB,
                 isThumbnail: f,
-                origin: E,
-                compressionMetadata: A[n],
+                origin: b,
+                compressionMetadata: x[n],
                 ...r
             }, t.id)
         });
@@ -121,9 +121,9 @@ async function O(e, t, n) {
         }, void 0, {
             eagerDispatch: !1,
             attachmentsToUpload: e,
-            location: T.Hx.INSTANT_UPLOAD,
+            location: g.Hx.INSTANT_UPLOAD,
             onAttachmentUploadError: (e, n, r) => {
-                (0, d.k)({
+                (0, s.k)({
                     file: e,
                     guildId: t.getGuildId(),
                     analyticsLocations: [],
