@@ -11,7 +11,7 @@ function r(e) {
 }
 
 function a(e, t) {
-    let [n, a] = i.useState(t), [o, d] = i.useState(r(n)), c = i.useRef(o), u = i.useRef(null), m = i.useCallback(e => {
+    let [n, a] = i.useState(t), [o, d] = i.useState(r(n)), c = i.useRef(o), u = i.useRef(null), _ = i.useCallback(e => {
         a(t => {
             let n = {
                     ...t,
@@ -27,15 +27,15 @@ function a(e, t) {
                 emojiPicker: t,
                 emojiBurstPicker: n
             } = e;
-            return m({
+            return _({
                 emojiPicker: t,
                 emojiBurstPicker: n
             })
         };
         return l._.subscribeKeyed(s.zOV.TOGGLE_REACTION_POPOUT, e, t), () => void l._.unsubscribeKeyed(s.zOV.TOGGLE_REACTION_POPOUT, e, t)
-    }, [e, m]), {
+    }, [e, _]), {
         popouts: n,
-        setPopout: m,
+        setPopout: _,
         selected: o
     }
 }

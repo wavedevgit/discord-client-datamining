@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(397927),
     c = n(180662),
     u = n(570766),
-    m = n(290794),
-    _ = n(789646),
+    _ = n(290794),
+    m = n(789646),
     h = n(431174),
     p = n(764573);
 
@@ -67,7 +67,7 @@ function x(e) {
     } = e, {
         actionButtonRef: o,
         manageFocusOnAction: u
-    } = (0, _.Mg)(), m = l.useCallback(async () => {
+    } = (0, m.Mg)(), _ = l.useCallback(async () => {
         t?.type != null && (await c.A.handlePollActionTapped({
             channelId: n,
             messageId: s,
@@ -76,21 +76,21 @@ function x(e) {
     }, [t?.type, n, s, u]);
     return null == t ? null : "button" === t.presentation || "secondaryButton" === t.presentation ? (0, i.jsx)(d.Button, {
         buttonRef: o,
-        onClick: m,
+        onClick: _,
         disabled: !t.enabled,
         variant: "secondaryButton" === t.presentation ? "secondary" : "primary",
         size: "sm",
         text: t.label
     }, t.presentation) : "textButton" === t.presentation ? (0, i.jsx)(d.QWc, {
         buttonRef: o,
-        onClick: m,
+        onClick: _,
         text: t.label,
         variant: "secondary",
         textVariant: "text-sm/medium"
     }) : (0, i.jsx)(A, {
         buttonLabel: t.label,
         secondaryLabel: t.secondaryLabel,
-        handleClick: m,
+        handleClick: _,
         isInteractive: r,
         className: a
     })
@@ -102,8 +102,8 @@ function f(e) {
             poll: l,
             className: s
         } = e,
-        c = (0, m.hd)(l.containerStyle),
-        _ = (t = {
+        c = (0, _.hd)(l.containerStyle),
+        m = (t = {
             answers: l.answers,
             answersInteraction: l.answersInteraction,
             answerTapAccessibilityLabel: l.answerTapAccessibilityLabel,
@@ -117,7 +117,7 @@ function f(e) {
         })).with(o.Z.IMAGE_ONLY_ANSWERS, () => (0, i.jsx)(u.A, {
             ...t
         })).otherwise(() => null));
-    return null == _ ? null : (0, i.jsx)("div", {
+    return null == m ? null : (0, i.jsx)("div", {
         className: r()(p.kL, c, s),
         children: (0, i.jsxs)(d.Fmo, {
             children: [(0, i.jsxs)("div", {
@@ -131,7 +131,7 @@ function f(e) {
                     scaleFontToUserSetting: !0,
                     children: l.promptLabel
                 })]
-            }), _, (0, i.jsxs)("div", {
+            }), m, (0, i.jsxs)("div", {
                 className: p.pR,
                 children: [(0, i.jsx)(x, {
                     channelId: n.getChannelId(),
@@ -160,10 +160,10 @@ function C(e) {
         poll: n,
         className: l
     } = e;
-    return (0, i.jsx)(m.y5, {
+    return (0, i.jsx)(_.y5, {
         message: t,
         poll: n,
-        children: (0, i.jsx)(_.RZ, {
+        children: (0, i.jsx)(m.RZ, {
             children: (0, i.jsx)(f, {
                 message: t,
                 poll: n,

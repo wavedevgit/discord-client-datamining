@@ -12,8 +12,8 @@ var l = n(503698),
     d = n(47167),
     c = n(143413),
     u = n(734057),
-    m = n(661191),
-    _ = n(321045),
+    _ = n(661191),
+    m = n(321045),
     h = n(456874),
     p = n(707539),
     g = n(519397),
@@ -26,7 +26,7 @@ function E(e) {
     let {
         message: t,
         compact: n
-    } = e, l = (0, r.bG)([u.A], () => u.A.getChannel(m.default.castMessageIdAsChannelId(t.id)));
+    } = e, l = (0, r.bG)([u.A], () => u.A.getChannel(_.default.castMessageIdAsChannelId(t.id)));
     return null == l ? null : (0, i.jsx)(I, {
         channel: l,
         compact: n,
@@ -37,13 +37,13 @@ function E(e) {
 function I(e) {
     var t;
     let l, c, u, {
-            channel: m,
+            channel: _,
             compact: E,
             isSystemMessage: I
         } = e,
-        v = (0, d.Ay)(m),
-        b = (0, r.bG)([h.A], () => h.A.getCount(m.id)),
-        T = (t = m, l = (0, r.bG)([h.A], () => h.A.getMostRecentMessage(t.id)), c = (0, r.bG)([h.A], () => h.A.getCount(t.id)), u = (0, p.JO)(t), t.threadMetadata?.archived ? f.intl.string(f.t.ZTo4HS) : null == c || 0 === c ? f.intl.string(f.t.HYtNyE) : null == l ? (0, i.jsxs)(i.Fragment, {
+        v = (0, d.Ay)(_),
+        b = (0, r.bG)([h.A], () => h.A.getCount(_.id)),
+        T = (t = _, l = (0, r.bG)([h.A], () => h.A.getMostRecentMessage(t.id)), c = (0, r.bG)([h.A], () => h.A.getCount(t.id)), u = (0, p.JO)(t), t.threadMetadata?.archived ? f.intl.string(f.t.ZTo4HS) : null == c || 0 === c ? f.intl.string(f.t.HYtNyE) : null == l ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("span", {
                 children: f.intl.string(f.t.ZTo4HS)
             }), (0, i.jsx)("span", {
@@ -68,13 +68,13 @@ function I(e) {
             })
         }), (0, i.jsx)(a.DUT, {
             onClick: function(e) {
-                e.stopPropagation(), (0, A.JA)(m, e.shiftKey)
+                e.stopPropagation(), (0, A.JA)(_, e.shiftKey)
             },
             onKeyDown: function(e) {
                 e.stopPropagation();
                 let t = !e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey,
                     n = e.shiftKey && !(e.altKey || e.ctrlKey || e.metaKey);
-                (e.which === x.Ks6.SPACE || e.which === x.Ks6.ENTER) && (e.preventDefault(), (t || n) && (0, A.JA)(m, n))
+                (e.which === x.Ks6.SPACE || e.which === x.Ks6.ENTER) && (e.preventDefault(), (t || n) && (0, A.JA)(_, n))
             },
             onContextMenu: function(e) {
                 (0, o.L3)(e, async () => {
@@ -82,7 +82,7 @@ function I(e) {
                         default: e
                     } = await Promise.all([n.e("94989"), n.e("1798")]).then(n.bind(n, 44536));
                     return t => (0, i.jsx)(e, {
-                        channel: m,
+                        channel: _,
                         ...t
                     })
                 })
@@ -102,7 +102,7 @@ function I(e) {
                     }), (0, i.jsx)("span", {
                         className: C.lO,
                         "aria-hidden": !y,
-                        children: (0, _.ub)(b, m.id)
+                        children: (0, m.ub)(b, _.id)
                     })]
                 }), (0, i.jsx)(a.Text, {
                     variant: "text-sm/normal",

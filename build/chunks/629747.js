@@ -1,25 +1,25 @@
 /** chunk id: 629747 params = (module,exports,require) **/
-t.d(l, {
+n.d(l, {
     A: () => o
 });
-var n = t(627968);
-t(64700);
-var i = t(397927),
-    s = t(915614),
-    a = t(985018),
-    r = t(65958);
+var t = n(627968);
+n(64700);
+var i = n(397927),
+    s = n(915614),
+    a = n(985018),
+    r = n(65958);
 
 function o(e) {
     let l = () => {};
-    return (0, n.jsxs)("div", {
+    return (0, t.jsxs)("div", {
         className: r.kL,
         onClick: l,
-        children: [(0, n.jsx)(s.A, {
+        children: [(0, t.jsx)(s.A, {
             ...e,
             className: r.Pr
-        }), (0, n.jsx)("div", {
+        }), (0, t.jsx)("div", {
             className: r.r9,
-            children: (0, n.jsx)(i.K0, {
+            children: (0, t.jsx)(i.K0, {
                 variant: "overlay-secondary",
                 size: "sm",
                 icon: i.R2l,

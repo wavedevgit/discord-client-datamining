@@ -3,9 +3,9 @@ r.d(t, {
     A: () => j
 });
 var s = r(627968),
-    i = r(64700),
-    n = r(503698),
-    a = r.n(n),
+    n = r(64700),
+    i = r(503698),
+    a = r.n(i),
     l = r(397927),
     o = r(713517),
     c = r(927578),
@@ -21,15 +21,15 @@ let _ = () => 80,
         let {
             children: t,
             className: r,
-            onSelect: i,
-            isSelected: n,
+            onSelect: n,
+            isSelected: i,
             ...o
         } = e;
         return (0, s.jsx)(l.DUT, {
-            "aria-pressed": n,
-            className: a()(g.eA, n ? g.wH : void 0, r),
+            "aria-pressed": i,
+            className: a()(g.eA, i ? g.wH : void 0, r),
             ...o,
-            onClick: i,
+            onClick: n,
             children: t
         })
     },
@@ -37,14 +37,14 @@ let _ = () => 80,
         let {
             user: t,
             avatarDecoration: r,
-            innerRef: n,
+            innerRef: i,
             section: a,
             canUsePremiumCollectibles: l,
             isSelected: c = !1,
             ...d
-        } = e, m = i.useRef(null), {
+        } = e, m = n.useRef(null), {
             isHoveringOrFocusing: h
-        } = (0, o.A)(n ?? m), {
+        } = (0, o.A)(i ?? m), {
             avatarDecorationSrc: _
         } = (0, A.A)({
             user: t,
@@ -53,7 +53,7 @@ let _ = () => 80,
             onlyAnimateOnHoverOrFocus: !h
         });
         return (0, s.jsxs)(p, {
-            innerRef: n ?? m,
+            innerRef: i ?? m,
             isSelected: c,
             ...d,
             children: [null != _ && (0, s.jsx)("img", {
@@ -72,8 +72,8 @@ let _ = () => 80,
         let {
             user: t,
             guild: r,
-            pendingAvatarDecoration: i,
-            selectedAvatarDecorationRef: n,
+            pendingAvatarDecoration: n,
+            selectedAvatarDecorationRef: i,
             onSelect: a,
             onOpenShop: o
         } = e, u = (0, x.Ay)(), A = c.Ay.canUseCollectibles(t);
@@ -101,7 +101,7 @@ let _ = () => 80,
                     style: {
                         ..._
                     },
-                    isSelected: null === i,
+                    isSelected: null === n,
                     onSelect: () => a(null),
                     children: [(0, s.jsx)(l.KTN, {
                         size: "md",
@@ -129,7 +129,7 @@ let _ = () => 80,
                     })]
                 }, j);
                 if ((0, d.T)(C)) {
-                    let e = i?.skuId === C.skuId;
+                    let e = n?.skuId === C.skuId;
                     return (0, s.jsx)(v, {
                         style: {
                             ..._
@@ -137,7 +137,7 @@ let _ = () => 80,
                         user: t,
                         avatarDecoration: C,
                         section: I,
-                        innerRef: e ? n : void 0,
+                        innerRef: e ? i : void 0,
                         canUsePremiumCollectibles: A,
                         isSelected: e,
                         onSelect: () => a(C)

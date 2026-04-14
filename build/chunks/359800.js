@@ -14,8 +14,8 @@ let c = "in-game-auth-check-modal";
 function u(e, t) {
     let {
         showInGameModal: u = !0,
-        showToastOnSuccess: m = !0
-    } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, [_, h] = l.useState(!1), p = l.useCallback(function() {
+        showToastOnSuccess: _ = !0
+    } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, [m, h] = l.useState(!1), p = l.useCallback(function() {
         for (var t = arguments.length, l = Array(t), r = 0; r < t; r++) l[r] = arguments[r];
         h(!0);
         let o = e(...l);
@@ -31,8 +31,8 @@ function u(e, t) {
         }), o
     }, [e, h, u]), g = (0, r.A)(t);
     return l.useEffect(() => {
-        if (_ && !1 === g && !0 === t) {
-            if ((0, s.OoC)(c), h(!1), !m) return;
+        if (m && !1 === g && !0 === t) {
+            if ((0, s.OoC)(c), h(!1), !_) return;
             let e = () => {
                 (0, s.showToast)({
                     id: "account-linked-toast",
@@ -48,5 +48,5 @@ function u(e, t) {
                 document.addEventListener("visibilitychange", t)
             }
         }
-    }, [_, t, g, m]), p
+    }, [m, t, g, _]), p
 }

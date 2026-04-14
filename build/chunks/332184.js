@@ -1,4 +1,4 @@
 /** chunk id: 332184 params = (module,exports,require) **/
-t.exports = {
+e.exports = {
     z: "videoBackgroundArt__2b87f"
 }

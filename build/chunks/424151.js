@@ -15,18 +15,18 @@ let o = function(e) {
         analyticsCtxQuestContentPosition: d,
         analyticsCtxQuestContentRowIndex: c,
         size: u
-    } = e, m = (0, r.ix)({
+    } = e, _ = (0, r.ix)({
         quest: t,
         questContent: n,
         questContentPosition: d,
         questContentRowIndex: c,
         sourceQuestContent: o
-    }), _ = (0, s.r7)(t.config) ? a.intl.string(a.t.bAGFz3) : a.intl.string(a.t.vTgCWx);
+    }), m = (0, s.r7)(t.config) ? a.intl.string(a.t.bAGFz3) : a.intl.string(a.t.vTgCWx);
     return (0, i.jsx)(l.Button, {
         variant: "primary",
         fullWidth: !0,
         size: u,
-        onClick: m,
-        text: _
+        onClick: _,
+        text: m
     })
 }

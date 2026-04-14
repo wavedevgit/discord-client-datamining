@@ -1,58 +1,51 @@
 /** chunk id: 4887 params = (module,exports,require) **/
 n.d(t, {
-    $: () => f,
-    C: () => T
+    $: () => T,
+    C: () => p
 });
 var i = n(64700),
     s = n(934551),
-    l = n(554146),
-    r = n(974544),
-    a = n(200921),
-    o = n(419954),
-    d = n(933297),
-    c = n(780964),
-    u = n(358776),
-    m = n(102255),
-    g = n(416047),
-    _ = n(222994),
-    x = n(342537),
-    h = n(985018);
-let A = (0, o.zZ)(c.X.SESSIONS_CATEGORY, {
-        useTitle: () => h.intl.string(h.t.mEndXM),
-        useSubtitle: () => h.intl.string(h.t.b7ZpTM),
-        initialize: () => ((0, a.GY)(), () => {
-            (0, a.ZQ)()
+    l = n(974544),
+    r = n(200921),
+    a = n(419954),
+    o = n(933297),
+    d = n(780964),
+    c = n(358776),
+    u = n(102255),
+    m = n(416047),
+    g = n(222994),
+    _ = n(342537),
+    x = n(985018);
+let h = (0, a.zZ)(d.X.SESSIONS_CATEGORY, {
+        useTitle: () => x.intl.string(x.t.mEndXM),
+        useSubtitle: () => x.intl.string(x.t.b7ZpTM),
+        initialize: () => ((0, r.GY)(), () => {
+            (0, r.ZQ)()
         }),
-        buildLayout: () => [g.I, x.A, _.V],
-        useSearchTerms: () => [h.intl.string(h.t["+1h0k/"]), h.intl.string(h.t.LLS19o), h.intl.string(h.t.xx1MWc), h.intl.string(h.t.lSWsrd)]
+        buildLayout: () => [m.I, _.A, g.V],
+        useSearchTerms: () => [x.intl.string(x.t["+1h0k/"]), x.intl.string(x.t.LLS19o), x.intl.string(x.t.xx1MWc), x.intl.string(x.t.lSWsrd)]
     }),
-    p = (0, o.zZ)(c.X.SESSIONS_CATEGORY, {
-        useSearchTerms: () => [h.intl.string(h.t["+1h0k/"]), h.intl.string(h.t.LLS19o), h.intl.string(h.t.xx1MWc), h.intl.string(h.t.Vij32M), h.intl.string(h.t.lSWsrd)],
-        buildLayout: () => [g.I, x.A],
-        initialize: () => ((0, a.GY)(), () => {
-            (0, a.ZQ)()
+    A = (0, a.zZ)(d.X.SESSIONS_CATEGORY, {
+        useSearchTerms: () => [x.intl.string(x.t["+1h0k/"]), x.intl.string(x.t.LLS19o), x.intl.string(x.t.xx1MWc), x.intl.string(x.t.Vij32M), x.intl.string(x.t.lSWsrd)],
+        buildLayout: () => [m.I, _.A],
+        initialize: () => ((0, r.GY)(), () => {
+            (0, r.ZQ)()
         }),
         useInlineNotice: function() {
             return i.useMemo(() => ({
-                type: d.lT.STRONGLY_DISCOURAGED_CUSTOM,
-                notice: m.jH
+                type: o.lT.STRONGLY_DISCOURAGED_CUSTOM,
+                notice: u.jH
             }), [])
         }
     }),
-    T = (0, o.t_)(c.X.SESSIONS_PANEL, {
-        useTitle: () => (0, u._A)("SessionsPanel") ? h.intl.string(h.t.mEndXM) : h.intl.string(h.t["+1h0k/"]),
-        useObscuredNotice: r.L,
-        buildLayout: () => (0, u.pC)("SessionsPanel") ? [A] : [p]
+    p = (0, a.t_)(d.X.SESSIONS_PANEL, {
+        useTitle: () => (0, c._A)("SessionsPanel") ? x.intl.string(x.t.mEndXM) : x.intl.string(x.t["+1h0k/"]),
+        useObscuredNotice: l.L,
+        buildLayout: () => (0, c.pC)("SessionsPanel") ? [h] : [A]
     }),
-    f = (0, o.i4)(c.X.SESSIONS_SIDEBAR_ITEM, {
-        useTitle: () => h.intl.string(h.t["+1h0k/"]),
+    T = (0, a.i4)(d.X.SESSIONS_SIDEBAR_ITEM, {
+        useTitle: () => x.intl.string(x.t["+1h0k/"]),
         icon: s.LaptopPhoneIcon,
-        getDismissibleBadges: function() {
-            return [{
-                badgeType: d.Xi.NEW,
-                dismissibleContent: l.M.AUTH_SESSIONS_NEW
-            }]
-        },
-        usePredicate: () => !(0, u._A)("SessionsPanel"),
-        buildLayout: () => [T]
+        usePredicate: () => !(0, c._A)("SessionsPanel"),
+        buildLayout: () => [p]
     })

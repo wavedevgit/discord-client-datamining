@@ -1,42 +1,42 @@
 /** chunk id: 210402 params = (module,exports,require) **/
-e.d(a, {
-    default: () => l
+t.d(n, {
+    default: () => _
 });
-var c = e(627968);
-e(64700);
-var n = e(87719),
-    o = e(244975),
-    s = e(788868),
-    i = e(652215),
-    r = e(985018),
-    d = e(332184),
-    p = e(196436);
+var a = t(627968);
+t(64700);
+var i = t(87719),
+    s = t(244975),
+    r = t(788868),
+    l = t(652215),
+    c = t(985018),
+    o = t(332184),
+    d = t(196436);
 
-function l(t) {
+function _(e) {
     let {
-        onClose: a,
-        analyticsSource: e,
-        onLearnMore: l,
-        ..._
-    } = t, u = s.pe.TIER_2, b = r.intl.format(r.t.hDMlqD, {
+        onClose: n,
+        analyticsSource: t,
+        onLearnMore: _,
+        ...u
+    } = e, m = r.pe.TIER_2, f = c.intl.format(c.t.hDMlqD, {
         onLearnMore: function() {
-            l?.(), a(), (0, n.e)()
+            _?.(), n(), (0, i.e)()
         }
     });
-    return (0, c.jsx)(o.A, {
-        artURL: p.A,
-        artContainerClassName: d.z,
-        type: s.e.VIDEO_BACKGROUNDS_MODAL,
-        title: r.intl.string(r.t.fHqiDW),
-        body: b,
-        glowUp: b,
-        analyticsSource: e,
+    return (0, a.jsx)(s.A, {
+        artURL: d.A,
+        artContainerClassName: o.z,
+        type: r.e.VIDEO_BACKGROUNDS_MODAL,
+        title: c.intl.string(c.t.fHqiDW),
+        body: f,
+        glowUp: f,
+        analyticsSource: t,
         analyticsLocation: {
-            page: i.liQ.PREMIUM_UPSELL_MODAL_VIDEO_BACKGROUNDS,
-            object: i.ZSU.BUTTON_CTA
+            page: l.liQ.PREMIUM_UPSELL_MODAL_VIDEO_BACKGROUNDS,
+            object: l.ZSU.BUTTON_CTA
         },
-        onClose: a,
-        subscriptionTier: u,
-        ..._
+        onClose: n,
+        subscriptionTier: m,
+        ...u
     })
 }

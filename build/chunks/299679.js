@@ -1,22 +1,22 @@
 /** chunk id: 299679 params = (module,exports,require) **/
 t.d(e, {
-    Ar: () => c,
-    dB: () => o
+    Ar: () => o,
+    dB: () => c
 });
 var s = t(627968),
     n = t(64700);
 let r = n.createContext(null);
 
-function c() {
+function o() {
     return n.useContext(r)
 }
 
-function o(i) {
+function c(i) {
     let {
         newValue: e,
         children: t
     } = i, n = {
-        ...c(),
+        ...o(),
         ...e
     };
     return (0, s.jsx)(r.Provider, {

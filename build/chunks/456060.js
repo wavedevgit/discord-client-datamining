@@ -1,7 +1,7 @@
 /** chunk id: 456060 params = (module,exports,require) **/
 n.d(t, {
     BE: () => u,
-    SJ: () => m,
+    SJ: () => _,
     Wf: () => d,
     YC: () => c,
     n$: () => o
@@ -79,7 +79,7 @@ function u(e, t, n, i, l) {
     }
 }
 
-function m(e) {
+function _(e) {
     let {
         activityActionType: t,
         maxPartySize: n,

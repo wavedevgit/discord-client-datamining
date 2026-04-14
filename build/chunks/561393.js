@@ -15,14 +15,14 @@ let a = function(e) {
         analyticsCtxSourceQuestContent: d,
         analyticsCtxQuestContentPosition: c,
         analyticsCtxQuestContentRowIndex: u,
-        size: m
+        size: _
     } = e;
     return (0, l.t)({
         quest: t
     }) || (0, l.g5)(t) ? (0, i.jsx)(r.A, {
         quest: t,
         surface: a,
-        size: m,
+        size: _,
         analyticsCtxQuestContent: o,
         analyticsCtxSourceQuestContent: d,
         analyticsCtxQuestContentPosition: c,
@@ -30,7 +30,7 @@ let a = function(e) {
     }) : (0, i.jsx)(s.Ay, {
         quest: t,
         taskType: n,
-        size: m,
+        size: _,
         analyticsCtxQuestContent: o,
         analyticsCtxSourceQuestContent: d
     })

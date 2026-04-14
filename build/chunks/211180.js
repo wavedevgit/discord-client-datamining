@@ -1,51 +1,51 @@
 /** chunk id: 211180 params = (module,exports,require) **/
 i.d(t, {
-    A: () => A,
-    x: () => f
+    A: () => T,
+    x: () => A
 });
-var n, a = i(627968),
-    l = i(64700),
-    o = i(503698),
-    r = i.n(o),
-    s = i(883885),
-    c = i.n(s),
+var n, l = i(627968),
+    a = i(64700),
+    s = i(503698),
+    r = i.n(s),
+    o = i(883885),
+    u = i.n(o),
     d = i(73153),
-    u = i(900210),
+    c = i(900210),
     h = i(146497),
     m = i(60317),
     p = i(652215),
     g = i(121505),
-    f = ((n = {})[n.NORMAL = 20] = "NORMAL", n[n.LARGE = 32] = "LARGE", n);
-let _ = async e => {
+    A = ((n = {})[n.NORMAL = 20] = "NORMAL", n[n.LARGE = 32] = "LARGE", n);
+let f = async e => {
     let {
         effect: t
     } = e, i = await (0, h.R)(t.channelId, t.messageId ?? p.dJq, t.emoji.name), n = await (0, m.fz)(`${t.channelId}:${t.messageId}:${t.emoji.name}`, t.url, i, t.color);
     return n.assets[0].p = t.url, n
 };
 
-function A(e) {
+function T(e) {
     let {
         className: t,
         effect: i,
         onComplete: n,
-        emojiSize: o = 20
-    } = e, s = l.useRef(null), h = o * m.YY, p = (h + o) / 2, f = `translateY(${p}px)`;
-    return l.useEffect(() => {
+        emojiSize: s = 20
+    } = e, o = a.useRef(null), h = s * m.YY, p = (h + s) / 2, A = `translateY(${p}px)`;
+    return a.useEffect(() => {
         let e;
         if (null != i) return !async function() {
-            if (null != s.current) {
-                let t = await _({
+            if (null != o.current) {
+                let t = await f({
                     effect: i
                 });
-                (e = c().loadAnimation({
-                    container: s.current,
+                (e = u().loadAnimation({
+                    container: o.current,
                     renderer: "svg",
                     loop: !1,
                     autoplay: !0,
                     animationData: t
                 })).addEventListener("complete", () => {
                     n?.(), e.destroy()
-                }), null != i.channelId && null != i.messageId && null != i.emoji && i.key === u.W.HOVER && d.h.dispatch({
+                }), null != i.channelId && null != i.messageId && null != i.emoji && i.key === c.W.HOVER && d.h.dispatch({
                     type: "BURST_REACTION_ANIMATION_ADD",
                     channelId: i.channelId,
                     messageId: i.messageId,
@@ -56,16 +56,16 @@ function A(e) {
         }(), () => {
             null != e && e.destroy()
         }
-    }, [n, i, o]), (0, a.jsx)("div", {
+    }, [n, i, s]), (0, l.jsx)("div", {
         className: g.Y,
-        children: (0, a.jsx)("div", {
+        children: (0, l.jsx)("div", {
             className: r()(g.Q, t),
             style: {
-                transform: f,
+                transform: A,
                 height: h,
                 width: h
             },
-            ref: s
+            ref: o
         })
     })
 }

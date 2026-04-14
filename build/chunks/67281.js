@@ -18,8 +18,8 @@ var o = n(503698),
     b = n(405269),
     h = n(403362),
     f = n(963135),
-    C = n(331446),
-    g = n(985018),
+    g = n(331446),
+    C = n(985018),
     v = n(2398);
 
 function x(e) {
@@ -70,7 +70,7 @@ let I = function(e) {
                     className: v.$,
                     children: [(0, a.jsx)(c.m, {
                         asContainer: !0,
-                        text: g.intl.string(g.t["/fgfWh"]),
+                        text: C.intl.string(C.t["/fgfWh"]),
                         children: (0, a.jsx)(s.xgA, {
                             className: v.gr,
                             size: "xs",
@@ -80,7 +80,7 @@ let I = function(e) {
                         className: v.DD,
                         variant: "text-md/semibold",
                         color: "always-white",
-                        children: null != _ && _.length > 0 ? _ : g.intl.string(g.t.Cyxddp)
+                        children: null != _ && _.length > 0 ? _ : C.intl.string(C.t.Cyxddp)
                     })]
                 }), (null != o || null != S) && (0, a.jsxs)(s.Text, {
                     className: v.yu,
@@ -94,11 +94,11 @@ let I = function(e) {
             }), y.length > 0 && (0, a.jsxs)("div", {
                 className: v.HD,
                 role: "group",
-                "aria-label": g.intl.string(g.t.WTozwe),
+                "aria-label": C.intl.string(C.t.WTozwe),
                 children: [y.slice(0, 4).map(e => (0, a.jsx)(f.A, {
                     user: e,
                     guildId: d
-                }, e.id)), y.length > 4 && (0, a.jsx)(C.w, {
+                }, e.id)), y.length > 4 && (0, a.jsx)(g.w, {
                     participants: y,
                     maxVisibleParticipants: 4,
                     guildId: d

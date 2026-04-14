@@ -16,15 +16,15 @@ let u = e => {
         message: n,
         hideParty: u
     } = e, {
-        analyticsLocations: m
-    } = (0, r.Ay)(s.A.INVITE_EMBED), _ = null != n.application ? o.Ay.createFromServer(n.application) : null != n.activity && null != n.activity.party_id && (0, c.pH)(n.activity.party_id) ? d.HT : void 0, {
+        analyticsLocations: _
+    } = (0, r.Ay)(s.A.INVITE_EMBED), m = null != n.application ? o.Ay.createFromServer(n.application) : null != n.activity && null != n.activity.party_id && (0, c.pH)(n.activity.party_id) ? d.HT : void 0, {
         data: h
-    } = (0, a.YY)(n.application?.id), p = h ?? _;
+    } = (0, a.YY)(n.application?.id), p = h ?? m;
     return null == p ? null : (0, i.jsx)(l.P, {
         app: p,
         channel: t,
         message: n,
         hideParty: u,
-        analyticsLocations: m
+        analyticsLocations: _
     })
 }

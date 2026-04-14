@@ -1,6 +1,6 @@
 /** chunk id: 836629 params = (module,exports,require) **/
 n.d(t, {
-    $: () => m
+    $: () => _
 });
 var i = n(627968),
     l = n(64700),
@@ -12,13 +12,13 @@ var i = n(627968),
     c = n(460696),
     u = n(442078);
 
-function m(e) {
+function _(e) {
     let {
         guildId: t,
         channelId: n,
         users: s,
         ...r
-    } = e, o = l.useCallback(e => (0, i.jsx)(_, {
+    } = e, o = l.useCallback(e => (0, i.jsx)(m, {
         users: e,
         guildId: t,
         channelId: n
@@ -29,7 +29,7 @@ function m(e) {
     })
 }
 
-function _(e) {
+function m(e) {
     let {
         users: t,
         guildId: n,

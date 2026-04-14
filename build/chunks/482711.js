@@ -12,8 +12,8 @@ var i = n(627968),
     d = n(492749),
     c = n(580630),
     u = n(571654),
-    m = n(415295),
-    _ = n(818348),
+    _ = n(415295),
+    m = n(818348),
     h = n(985018),
     p = n(458774);
 
@@ -28,8 +28,8 @@ function g(e) {
         onEditProduct: d,
         onUnpublishProduct: c,
         onDeleteProduct: u,
-        onCopyLink: m,
-        onTestDownload: _,
+        onCopyLink: _,
+        onTestDownload: m,
         onReportProduct: g,
         closePopout: A,
         onSelect: x
@@ -60,7 +60,7 @@ function g(e) {
                         type: "icon",
                         icon: a.qYV
                     },
-                    action: m
+                    action: _
                 }), s && (0, i.jsx)(a.Drp, {
                     id: "guild-product-test-download",
                     label: h.intl.string(h.t.aXoI6U),
@@ -69,7 +69,7 @@ function g(e) {
                         type: "icon",
                         icon: a.s3U
                     },
-                    action: _
+                    action: m
                 })]
             }), (0, i.jsxs)(a.rXV, {
                 children: [n && (0, i.jsx)(a.Drp, {
@@ -104,8 +104,8 @@ function A(e) {
         showCopyLink: d,
         showDeleteProduct: c,
         showReportProduct: u,
-        onEditProduct: m,
-        onUnpublishProduct: _,
+        onEditProduct: _,
+        onUnpublishProduct: m,
         onDeleteProduct: A,
         onCopyProductLink: x,
         onTestDownload: f,
@@ -131,8 +131,8 @@ function A(e) {
                 showTestDownload: o,
                 showReportProduct: u,
                 showDeleteProduct: c,
-                onEditProduct: m,
-                onUnpublishProduct: _,
+                onEditProduct: _,
+                onUnpublishProduct: m,
                 onDeleteProduct: A,
                 onCopyLink: x,
                 onTestDownload: f,
@@ -173,7 +173,7 @@ function x(e) {
         onCopyProductLink: f,
         onTestDownload: C,
         disabled: E = !1
-    } = e, I = (0, d.R)(t, 600), v = null !== t.price_tier ? (0, c.$g)(t.price_tier, _.Yr.USD) : void 0, b = (0, u.z)(t);
+    } = e, I = (0, d.R)(t, 600), v = null !== t.price_tier ? (0, c.$g)(t.price_tier, m.Yr.USD) : void 0, b = (0, u.z)(t);
     return (0, i.jsxs)(a.sqX, {
         tag: "article",
         className: r()(p.gc, p.Um, {
@@ -235,7 +235,7 @@ function x(e) {
                     }) : null]
                 }), (0, i.jsx)(a.hKd, {
                     size: 16
-                }), t.published ? (0, i.jsx)(m.S, {}) : (0, i.jsx)(m.$, {})]
+                }), t.published ? (0, i.jsx)(_.S, {}) : (0, i.jsx)(_.$, {})]
             }), !E && (0, i.jsx)(A, {
                 product: t,
                 guildId: n,

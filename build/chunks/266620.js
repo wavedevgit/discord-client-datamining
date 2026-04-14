@@ -23,8 +23,8 @@ var a = n(627968),
     b = n(713021),
     h = n(121489),
     f = n(734057),
-    C = n(644447),
-    g = n(998218),
+    g = n(644447),
+    C = n(998218),
     v = n(465856),
     x = n(652176),
     I = n(838541),
@@ -37,7 +37,7 @@ function w(e) {
     return (0, x.LL)({
         ...e,
         alt: t.description,
-        src: (0, C.E)({
+        src: (0, g.E)({
             proxyURL: t.proxy_url,
             url: t.url
         }),
@@ -83,7 +83,7 @@ function B(e) {
                 })]
             })
         }), [r, n]),
-        m = g.A.toURLSafe(t.proxy_url);
+        m = C.A.toURLSafe(t.proxy_url);
     return null == m ? null : (m.searchParams.append("format", "webp"), r && n) ? (0, a.jsx)(p.A, {
         attachment: t,
         src: t.url,

@@ -6,8 +6,8 @@ var i = t(627968),
     a = t(64700),
     l = t(311907),
     r = t(397927),
-    d = t(351906),
-    s = t(183555),
+    s = t(351906),
+    d = t(183555),
     o = t(382120),
     c = t(128490),
     _ = t(539548),
@@ -15,8 +15,8 @@ var i = t(627968),
     p = t(86404),
     A = t(738759),
     g = t(518477),
-    h = t(985018),
-    m = t(643146),
+    m = t(985018),
+    h = t(643146),
     I = t(843796);
 
 function f(e) {
@@ -26,33 +26,33 @@ function f(e) {
         currentUser: a,
         displayProfile: l,
         guildId: r,
-        channelId: d,
-        onClose: s
+        channelId: s,
+        onClose: d
     } = e;
     return n === g.RP.ACTIVITY ? (0, i.jsx)(_.A, {
         user: t,
         currentUser: a,
         guildId: r,
-        onClose: s
+        onClose: d
     }) : n === g.RP.MUTUAL_FRIENDS ? (0, i.jsx)(p.A, {
         user: t,
         guildId: r,
-        channelId: d,
-        onClose: s
+        channelId: s,
+        onClose: d
     }) : n === g.RP.MUTUAL_GUILDS ? (0, i.jsx)(A.A, {
         user: t,
-        onClose: s
+        onClose: d
     }) : n === g.RP.BOT_DATA_ACCESS ? (0, i.jsx)(o.A, {
         user: t
     }) : n === g.RP.BOT_INFO ? (0, i.jsx)(c.A, {
         user: t,
         displayProfile: l,
         guildId: r,
-        onClose: s
+        onClose: d
     }) : (0, i.jsx)(u.A, {
         user: t,
         displayProfile: l,
-        onClose: s
+        onClose: d
     })
 }
 
@@ -67,7 +67,7 @@ function x(e) {
         onClose: p
     } = e, {
         trackUserProfileAction: A
-    } = (0, s.NJ)(), x = (0, l.bG)([d.A], () => d.A.hidePersonalInformation), [b, v] = a.useState(() => _.find(e => {
+    } = (0, d.NJ)(), x = (0, l.bG)([s.A], () => s.A.hidePersonalInformation), [b, v] = a.useState(() => _.find(e => {
         let {
             section: n
         } = e;
@@ -85,12 +85,12 @@ function x(e) {
     return x ? (0, i.jsx)("div", {
         className: I.kL,
         children: (0, i.jsxs)("div", {
-            className: m.Ie,
+            className: h.Ie,
             children: [(0, i.jsx)("div", {
-                className: m.hB
+                className: h.hB
             }), (0, i.jsx)("div", {
-                className: m.BI,
-                children: h.intl.string(h.t.Br1ls3)
+                className: h.BI,
+                children: m.intl.string(m.t.Br1ls3)
             })]
         })
     }) : (0, i.jsxs)("div", {

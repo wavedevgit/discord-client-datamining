@@ -16,7 +16,7 @@ let u = function(e) {
         className: t,
         color: n = "text-strong",
         textOpacity: l = .9
-    } = e, u = (0, o.DP)(), m = (0, r.Mw)(u);
+    } = e, u = (0, o.DP)(), _ = (0, r.Mw)(u);
     return (0, i.jsxs)(a.Text, {
         variant: "text-xxs/medium",
         color: n,
@@ -24,7 +24,7 @@ let u = function(e) {
         children: [(0, i.jsx)("span", {
             className: c.r,
             style: {
-                backgroundColor: `rgba(0, 0, 0, ${m?.2:.08})`
+                backgroundColor: `rgba(0, 0, 0, ${_?.2:.08})`
             }
         }), (0, i.jsx)("span", {
             style: {

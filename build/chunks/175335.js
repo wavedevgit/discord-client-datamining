@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(827734),
     c = n(732955),
     u = n(397927),
-    m = n(58149),
-    _ = n(139286),
+    _ = n(58149),
+    m = n(139286),
     h = n(263063),
     p = n(250627),
     g = n(22007),
@@ -33,22 +33,22 @@ function y(e) {
         loading: s,
         subscriptionsSettings: y
     } = (0, C.G)(t), {
-        listingsLoaded: N
-    } = (0, p.bb)(t), S = (0, p.fZ)(t, {
+        listingsLoaded: S
+    } = (0, p.bb)(t), N = (0, p.fZ)(t, {
         publishedOnly: !0
     }), j = l.useCallback(async () => {
         f.default.track(v.HAw.GUILD_SHOP_EMBED_CLICKED, {
-            ...(0, m.H$)(t)
+            ...(0, _.H$)(t)
         }), await (0, g.A)(v.BVt.SERVER_SHOP(t))
     }, [t]);
-    (0, _.A)({
+    (0, m.A)({
         type: a.ImpressionTypes.VIEW,
         name: a.ImpressionNames.GUILD_SHOP_EMBED
     }, {
         disableTrack: null == n
     });
-    let L = S.length > 0 ? new Date(Math.min(...S.map(e => Date.parse(e.published_at)))) : void 0;
-    return s || !N ? (0, i.jsx)("div", {
+    let L = N.length > 0 ? new Date(Math.min(...N.map(e => Date.parse(e.published_at)))) : void 0;
+    return s || !S ? (0, i.jsx)("div", {
         className: r()(T.lm, T.dc),
         children: (0, i.jsx)(u.y$y, {})
     }) : null == n || null == y ? null : (0, i.jsxs)("div", {
@@ -99,7 +99,7 @@ function y(e) {
                         variant: "text-sm/normal",
                         color: "text-muted",
                         children: b.intl.format(b.t.tKZNlb, {
-                            listingCount: S.length
+                            listingCount: N.length
                         })
                     })
                 }), null != L && (0, i.jsx)("li", {

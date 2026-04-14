@@ -34,16 +34,16 @@ let m = function(e) {
     } = e, m = (0, r.bG)([s.default], () => s.default.getCurrentUser()), b = o.useRef(null), {
         isHovered: h,
         onMouseEnter: f,
-        onMouseLeave: C,
-        setIsHovered: g
+        onMouseLeave: g,
+        setIsHovered: C
     } = (0, l.A)(0, 150), v = o.useCallback(e => {
-        e.stopPropagation(), g(!1), (0, c.openUserProfileModal)({
+        e.stopPropagation(), C(!1), (0, c.openUserProfileModal)({
             userId: t.id,
             guildId: n
         })
-    }, [t.id, n, g]), x = o.useCallback(e => null == m ? null : (0, a.jsx)("div", {
+    }, [t.id, n, C]), x = o.useCallback(e => null == m ? null : (0, a.jsx)("div", {
         onMouseEnter: f,
-        onMouseLeave: C,
+        onMouseLeave: g,
         children: (0, a.jsx)(o.Suspense, {
             fallback: null,
             children: (0, a.jsx)(u, {
@@ -52,11 +52,11 @@ let m = function(e) {
                 currentUser: m,
                 guildId: n,
                 closePopout: () => {
-                    e.closePopout(), g(!1)
+                    e.closePopout(), C(!1)
                 }
             })
         })
-    }), [t, m, n, f, C, g]);
+    }), [t, m, n, f, g, C]);
     return (0, a.jsx)(o.Suspense, {
         fallback: (0, a.jsx)(p, {
             user: t,
@@ -70,7 +70,7 @@ let m = function(e) {
             position: "bottom",
             shouldShow: h,
             renderPopout: x,
-            onRequestClose: () => g(!1),
+            onRequestClose: () => C(!1),
             children: e => {
                 let {
                     onClick: o,
@@ -81,7 +81,7 @@ let m = function(e) {
                     innerRef: b,
                     className: _.RB,
                     onMouseEnter: f,
-                    onMouseLeave: C,
+                    onMouseLeave: g,
                     onClick: v,
                     "aria-label": t.username,
                     children: (0, a.jsx)(i.euF, {

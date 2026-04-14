@@ -1525,6 +1525,9 @@ function D() {
             experimentName: m.nG.definition.name,
             options: k
         }), (0, a.jsx)(w, {
+            experimentName: m._$.definition.name,
+            options: k
+        }), (0, a.jsx)(w, {
             experimentName: c.A.definition.name,
             options: O
         }), (0, a.jsx)(w, {

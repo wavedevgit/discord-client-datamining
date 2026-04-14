@@ -72,7 +72,7 @@ function h() {
         (0, i.mMO)(async () => {
             let {
                 default: e
-            } = await l.e("32482").then(l.bind(l, 861177));
+            } = await Promise.all([l.e("91757"), l.e("32482")]).then(l.bind(l, 861177));
             return t => (0, a.jsx)(e, {
                 source: {},
                 ...t
@@ -213,7 +213,7 @@ function _() {
         (0, i.mMO)(async () => {
             let {
                 default: t
-            } = await l.e("45990").then(l.bind(l, 307794));
+            } = await Promise.all([l.e("91757"), l.e("45990")]).then(l.bind(l, 307794));
             return l => (0, a.jsx)(t, {
                 guildCount: e,
                 analyticsSource: {},
@@ -311,7 +311,7 @@ function S() {
         (0, i.mMO)(async () => {
             let {
                 default: e
-            } = await l.e("95743").then(l.bind(l, 210402));
+            } = await Promise.all([l.e("91757"), l.e("95743")]).then(l.bind(l, 210402));
             return t => (0, a.jsx)(e, {
                 analyticsSource: {},
                 ...t
@@ -333,7 +333,7 @@ function T() {
         (0, i.mMO)(async () => {
             let {
                 default: e
-            } = await l.e("65281").then(l.bind(l, 547352));
+            } = await Promise.all([l.e("91757"), l.e("65281")]).then(l.bind(l, 547352));
             return t => (0, a.jsx)(e, {
                 source: {},
                 ...t

@@ -1,6 +1,6 @@
 /** chunk id: 897518 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(284009),
     l = n.n(i),
@@ -12,20 +12,20 @@ var i = n(284009),
     c = n(179499),
     u = n(985018);
 
-function m(e) {
+function _(e) {
     let {
         guildId: t,
         guildProductListingId: n,
         sourceAnalyticsLocations: i
-    } = e, m = (0, s.bG)([o.A], () => o.A.getGuildProduct(n)), _ = (0, s.bG)([r.A], () => r.A.getGuild(t), [t]), h = (0, c.A)({
+    } = e, _ = (0, s.bG)([o.A], () => o.A.getGuildProduct(n)), m = (0, s.bG)([r.A], () => r.A.getGuild(t), [t]), h = (0, c.A)({
         guildId: t,
         productId: n
     });
-    return (l()(null != _, "guild cannot be null"), l()(null != m, "guildProductListing cannot be null"), (0, a.BB)(_)) ? {
+    return (l()(null != m, "guild cannot be null"), l()(null != _, "guildProductListing cannot be null"), (0, a.BB)(m)) ? {
         variant: "primary",
         text: u.intl.string(u.t.xUi3BL),
         disabled: !0
-    } : m.has_entitlement ? null != m.attachments ? h : {
+    } : _.has_entitlement ? null != _.attachments ? h : {
         variant: "secondary",
         text: u.intl.string(u.t.RcTOGF),
         disabled: !0
@@ -33,8 +33,8 @@ function m(e) {
         variant: "primary",
         text: u.intl.string(u.t.xUi3BL),
         onClick: () => (0, d.N)({
-            guildProductListing: m,
-            guildId: _.id,
+            guildProductListing: _,
+            guildId: m.id,
             sourceAnalyticsLocations: i
         })
     }

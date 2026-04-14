@@ -17,20 +17,20 @@ function u(e) {
         className: n,
         variant: s,
         text: u,
-        lineClamp: m
-    } = e, _ = (0, a.$Il)(), h = l.useMemo(() => null == u ? null : (0, o.A)(u, !0, {
-        allowHeading: null == m,
-        allowList: null == m,
-        initialHeaderLevel: _
-    }), [u, m, _]);
+        lineClamp: _
+    } = e, m = (0, a.$Il)(), h = l.useMemo(() => null == u ? null : (0, o.A)(u, !0, {
+        allowHeading: null == _,
+        allowList: null == _,
+        initialHeaderLevel: m
+    }), [u, _, m]);
     return (0, i.jsx)(a.Text, {
         className: r()(n, c.PT, {
-            [d.E]: null != m && m > 1,
-            [d.D]: 1 === m
+            [d.E]: null != _ && _ > 1,
+            [d.D]: 1 === _
         }),
         color: t,
         variant: s,
-        lineClamp: m,
+        lineClamp: _,
         children: h
     })
 }

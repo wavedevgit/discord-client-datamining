@@ -1,6 +1,6 @@
 /** chunk id: 438038 params = (module,exports,require) **/
 n.d(t, {
-    R: () => _
+    R: () => m
 });
 var i = n(627968),
     l = n(64700),
@@ -13,13 +13,13 @@ var r = n(341915),
     c = n(285433),
     u = n(394900);
 n(433745);
-var m = n(915689);
+var _ = n(915689);
 
-function _(e) {
+function m(e) {
     let {
         quest: t,
         location: n,
-        contentPosition: _,
+        contentPosition: m,
         sourceQuestContent: h
     } = e, p = (0, a.LS)(t), {
         containerRef: g,
@@ -32,21 +32,21 @@ function _(e) {
         toggleExpanded: I
     } = (0, u.s)({
         initiallyExpanded: !0
-    }), [v, b] = l.useState(!1), T = () => b(!0), y = () => b(!1), N = x ?? 1e3;
+    }), [v, b] = l.useState(!1), T = () => b(!0), y = () => b(!1), S = x ?? 1e3;
     return (0, i.jsx)(o.R, {
         questOrQuests: t,
         questContent: n,
-        questContentPosition: _,
+        questContentPosition: m,
         trackGuildAndChannelMetadata: n === r.uF.QUESTS_EMBED,
         sourceQuestContent: h,
         children: e => (0, i.jsx)(s.animated.div, {
             style: {
                 maxHeight: n === r.uF.QUESTS_EMBED ? void 0 : f.to({
                     range: [0, 1],
-                    output: [100, N]
+                    output: [100, S]
                 })
             },
-            className: m.i,
+            className: _.i,
             onMouseEnter: T,
             onMouseLeave: y,
             onFocus: T,
@@ -64,7 +64,7 @@ function _(e) {
                     isInteracting: v,
                     isAnimating: C,
                     isExpanded: E,
-                    contentPosition: _,
+                    contentPosition: m,
                     toggleExpanded: I,
                     sourceQuestContent: h
                 }), (0, i.jsx)(d.A, {
@@ -75,7 +75,7 @@ function _(e) {
                     isFocused: v,
                     isExpanded: E,
                     isAnimating: C,
-                    contentPosition: _,
+                    contentPosition: m,
                     sourceQuestContent: h
                 })]
             })

@@ -37,21 +37,21 @@ function N(e) {
         guildId: C,
         initialSelectedNameplate: E
     } = e, N = (0, i.bG)([p.Ay], () => null != C && null != t ? p.Ay.getMember(C, t.id) : null), b = null != N ? N.collectibles?.nameplate : t.collectibles?.nameplate, {
-        pendingNameplate: P
-    } = (0, u.rv)(t, C), [k, w] = (0, s.useState)(() => null != E ? E : void 0 !== P ? P : null == b ? null : (0, _.zd)(c, l).find(e => {
+        pendingNameplate: k
+    } = (0, u.rv)(t, C), [w, P] = (0, s.useState)(() => null != E ? E : void 0 !== k ? k : null == b ? null : (0, _.zd)(c, l).find(e => {
         let {
             skuId: t
         } = e;
         return t === b.skuId
     }) ?? null), U = (0, u.lw)({
-        pendingValue: k,
+        pendingValue: w,
         userValue: t?.collectibles?.nameplate,
         guildValue: N?.collectibles?.nameplate,
         guildId: C
     }), {
         product: L,
         purchase: O
-    } = (0, j.A)(k?.skuId), M = null != O ? (0, _.gA)(O) : (0, _.G0)(L), S = h.Ay.canUseCollectibles(t), R = void 0 === P ? k?.skuId === b?.skuId : k?.skuId === P?.skuId, D = (0, s.useCallback)(e => {
+    } = (0, j.A)(w?.skuId), M = null != O ? (0, _.gA)(O) : (0, _.G0)(L), S = h.Ay.canUseCollectibles(t), R = void 0 === k ? w?.skuId === b?.skuId : w?.skuId === k?.skuId, D = (0, s.useCallback)(e => {
         A(), (0, g.Cz)({
             analyticsLocations: x,
             analyticsSource: a.A.EDIT_NAMEPLATE_MODAL,
@@ -77,9 +77,9 @@ function N(e) {
             scrollbarType: "none",
             children: [(0, n.jsx)(v.A, {
                 currentUser: t,
-                selectedNameplate: k,
+                selectedNameplate: w,
                 guildId: C,
-                onSelect: w,
+                onSelect: P,
                 onOpenShop: D
             }), (0, n.jsx)(y.A, {
                 user: t,
@@ -89,13 +89,13 @@ function N(e) {
         }), (0, n.jsxs)(r.jlY, {
             "data-migration-pending": !0,
             className: T.Hx,
-            children: [null != O && (!M || S) || null === k ? (0, n.jsx)(r.Button, {
+            children: [null != O && (!M || S) || null === w ? (0, n.jsx)(r.Button, {
                 variant: "primary",
                 text: I.intl.string(I.t.Jh8fJz),
                 onClick: () => {
                     (0, m.p)({
                         guildId: C,
-                        nameplate: k
+                        nameplate: w
                     }), A()
                 },
                 disabled: R

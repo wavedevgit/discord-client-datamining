@@ -1,19 +1,19 @@
 /** chunk id: 23722 params = (module,exports,require) **/
-t.d(l, {
+n.d(l, {
     A: () => a
 });
-var n = t(64700),
-    i = t(207803),
-    s = t(485745);
+var t = n(64700),
+    i = n(207803),
+    s = n(485745);
 
 function a(e) {
     let l = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-        t = (0, s.A)(),
-        a = n.useRef(e);
-    return n.useLayoutEffect(() => {
+        n = (0, s.A)(),
+        a = t.useRef(e);
+    return t.useLayoutEffect(() => {
         a.current = e
-    }), n.useCallback(function() {
-        for (var e = arguments.length, n = Array(e), s = 0; s < e; s++) n[s] = arguments[s];
-        l && t ? (0, i.VQ)() : a.current(...n)
-    }, [l, t])
+    }), t.useCallback(function() {
+        for (var e = arguments.length, t = Array(e), s = 0; s < e; s++) t[s] = arguments[s];
+        l && n ? (0, i.VQ)() : a.current(...t)
+    }, [l, n])
 }

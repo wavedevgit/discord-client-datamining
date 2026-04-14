@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(402216),
     c = n(450149),
     u = n(279250),
-    m = n(877315),
-    _ = n(607407),
+    _ = n(877315),
+    m = n(607407),
     h = n(616356),
     p = n(734057),
     g = n(682524);
@@ -41,7 +41,7 @@ function A(e) {
         }, l),
         children: [(0, i.jsx)("div", {
             className: g.rB,
-            children: (0, i.jsx)(_.A, {
+            children: (0, i.jsx)(m.A, {
                 className: g.y6,
                 stream: t,
                 noText: !0
@@ -57,7 +57,7 @@ function A(e) {
                 variant: "overlay-secondary",
                 size: "sm",
                 icon: o.Fzq,
-                text: (0, m.A)(t, x, n, v)
+                text: (0, _.A)(t, x, n, v)
             })]
         }) : null]
     })

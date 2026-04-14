@@ -2,22 +2,22 @@
 n.d(t, {
     A: () => r
 });
-var a = n(64700),
-    i = n(473193),
-    l = n(203982),
-    s = n(652215);
+var i = n(64700),
+    l = n(473193),
+    s = n(203982),
+    a = n(652215);
 
 function r(e) {
     let {
         shouldSubscribe: t,
         subscribeToGroupId: n,
         authorId: r
-    } = e, o = a.useContext(i.C);
-    a.useEffect(() => {
+    } = e, o = i.useContext(l.C);
+    i.useEffect(() => {
         if (!t || null == o || null == n || null == r) return;
         let {
             setAnimate: e
         } = o;
-        return l._.subscribeKeyed(s.zOV.ANIMATE_CHAT_AVATAR, `${n}:${r}`, e), () => void l._.unsubscribeKeyed(s.zOV.ANIMATE_CHAT_AVATAR, `${n}:${r}`, e)
+        return s._.subscribeKeyed(a.zOV.ANIMATE_CHAT_AVATAR, `${n}:${r}`, e), () => void s._.unsubscribeKeyed(a.zOV.ANIMATE_CHAT_AVATAR, `${n}:${r}`, e)
     }, [t, r, n, o])
 }

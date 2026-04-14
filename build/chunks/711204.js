@@ -4,8 +4,8 @@ i.d(t, {
 });
 var r = i(927813),
     s = i(723702),
-    n = i(290805),
-    a = i(622397);
+    a = i(290805),
+    n = i(622397);
 let o = +r.A.Millis.MINUTE;
 class l {
     mode = null;
@@ -37,19 +37,20 @@ class l {
         let t = this.mode.performanceNow() - this.sessionStartTime,
             i = {
                 platform: (0, s.getNativePlatform)(),
-                release_channel: n.y ?? "unknown",
-                uptime_bucket: (0, a.X)(t)
+                release_channel: a.y ?? "unknown",
+                uptime_bucket: (0, n.X)(t)
             },
             r = {
                 type: "heap_snapshot_interval",
                 session_id: this.mode.sessionId,
                 commit_sha: this.mode.commitSha,
+                base_commit_sha: this.mode.baseCommitSha,
                 branch_name: this.mode.branchName,
                 commit_date: this.mode.commitDate,
                 timestamp: new Date().toISOString(),
-                build_number: "527959",
-                built_at: "1776121164333",
-                release_channel: n.y ?? "unknown",
+                build_number: "528031",
+                built_at: "1776124100402",
+                release_channel: a.y ?? "unknown",
                 tags: i,
                 metrics: {
                     js_heap_size_limit: e.jsHeapSizeLimit,

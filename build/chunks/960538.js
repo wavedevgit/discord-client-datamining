@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(665260),
     c = n(305866),
     u = n(435371),
-    m = n(397927),
-    _ = n(189551),
+    _ = n(397927),
+    m = n(189551),
     h = n(659859),
     p = n(649963),
     g = n(815807),
@@ -73,7 +73,7 @@ class v extends l.Component {
                 let {
                     inDialog: t
                 } = e;
-                return t ? (0, i.jsx)(m.lGe, {
+                return t ? (0, i.jsx)(_.lGe, {
                     "aria-label": C.intl.string(C.t["7Xqzdj"]),
                     children: s
                 }) : s
@@ -100,7 +100,7 @@ class v extends l.Component {
         return e.type === x.lAJ.EMOJI_ADDED && 0 === e.reactions.length ? (0, i.jsx)(h._x, {
             message: e,
             className: r()(o.reactionBtn, t)
-        }) : (0, i.jsx)(m.YNO, {
+        }) : (0, i.jsx)(_.YNO, {
             targetElementRef: this.ref,
             shouldShow: a,
             onRequestClose: this.handleReactionPickerToggle,
@@ -113,19 +113,19 @@ class v extends l.Component {
                 return (0, i.jsx)(u.m_, {
                     asContainer: !0,
                     text: C.intl.string(C.t.lfIHs4),
-                    children: (0, i.jsxs)(m.DUT, {
+                    children: (0, i.jsxs)(_.DUT, {
                         ...e,
                         innerRef: this.ref,
                         tabIndex: s,
                         onClick: e => {
                             this.handleAddReactionClick(e)
                         },
-                        onMouseEnter: () => (0, _.K)(f.EmojiInteractionPoint.AddReactionPopoutMouseEntered),
-                        onFocus: () => (0, _.K)(f.EmojiInteractionPoint.AddReactionPopoutFocused),
+                        onMouseEnter: () => (0, m.K)(f.EmojiInteractionPoint.AddReactionPopoutMouseEntered),
+                        onFocus: () => (0, m.K)(f.EmojiInteractionPoint.AddReactionPopoutFocused),
                         className: r()(o.reactionBtn, {
                             [o.active]: a
                         }, t),
-                        children: [(0, i.jsx)(m.nm2, {
+                        children: [(0, i.jsx)(_.nm2, {
                             ...c
                         }), n]
                     })

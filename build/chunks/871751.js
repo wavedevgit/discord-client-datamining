@@ -680,7 +680,7 @@ class B extends s.PureComponent {
             allowFullScreen: h,
             thumbnail: n,
             video: i,
-            provider: a?.name,
+            provider: (0, P.QY)(a?.name, i?.url),
             maxWidth: p,
             maxHeight: g,
             responsive: !0,

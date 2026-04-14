@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(846293),
     c = n(793574),
     u = n(688810),
-    m = n(47167),
-    _ = n(21599),
+    _ = n(47167),
+    m = n(21599),
     h = n(529200),
     p = n(95701),
     g = n(734057),
@@ -32,8 +32,8 @@ function b(e) {
             onTransitionToInviteChannel: T,
             onAcceptInstantInvite: y
         } = e,
-        N = b === s.author.id,
-        S = n.state === E.elq.ACCEPTING,
+        S = b === s.author.id,
+        N = n.state === E.elq.ACCEPTING,
         j = (0, o.bG)([g.A], () => null != n.channel ? g.A.getChannel(n.channel.id) : null, [n]);
     r()(null == j || j.isPrivate(), "must be a private channel");
     let {
@@ -45,7 +45,7 @@ function b(e) {
             action: e,
             inviter_id: s.author.id,
             invite_message_id: s.id,
-            invite_instance_id: (0, _._U)(n.code, s.id)
+            invite_instance_id: (0, m._U)(n.code, s.id)
         }, L)
     }, [n, s, L, R, T, y]);
     if (null == j) {
@@ -59,15 +59,15 @@ function b(e) {
         let e = x.default.getCurrentUser();
         R && null != e && t.push(e)
     }
-    let D = (0, m.m1)(j, x.default, A.A);
+    let D = (0, _.m1)(j, x.default, A.A);
     (null == D || "" === D) && (D = t.length > 0 ? t.filter(f.Vq).map(e => e.username).join(", ") : I.intl.string(I.t.LJpTRF));
     let M = I.intl.string(I.t.XpeFYr),
         w = "active";
     R && (M = I.intl.string(I.t.cEnaWx), w = "secondary");
-    let O = I.intl.string(I.t["3p3/BK"]);
-    return N && (O = I.intl.string(I.t.qmtuXE)), (0, i.jsxs)(h.A, {
+    let k = I.intl.string(I.t["3p3/BK"]);
+    return S && (k = I.intl.string(I.t.qmtuXE)), (0, i.jsxs)(h.A, {
         children: [(0, i.jsx)(h.A.Header, {
-            text: O
+            text: k
         }), (0, i.jsxs)(h.A.Body, {
             children: [(0, i.jsxs)("div", {
                 className: v.iH,
@@ -83,7 +83,7 @@ function b(e) {
                 })]
             }), (0, i.jsx)(a.$nd, {
                 onClick: P,
-                loading: S,
+                loading: N,
                 disabled: R,
                 variant: w,
                 text: M,

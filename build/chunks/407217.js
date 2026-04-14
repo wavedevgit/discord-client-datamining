@@ -7,7 +7,7 @@ var n = s(627968);
 s(64700);
 var i = s(397927),
     c = s(87719),
-    a = s(244975),
+    a = s(831318),
     r = s(985018),
     d = s(880223);
 
@@ -34,7 +34,7 @@ function l(t) {
         onClose: e,
         ...s
     } = t;
-    return (0, n.jsx)(a.F, {
+    return (0, n.jsx)(a.A, {
         title: r.intl.string(r.t.reVc0M),
         subtitle: r.intl.string(r.t.KckEj7),
         graphic: {

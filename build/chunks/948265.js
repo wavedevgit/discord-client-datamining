@@ -6,7 +6,7 @@ var t = d(627968);
 d(64700);
 var a = d(87719),
     s = d(377108),
-    b = d(244975),
+    b = d(831318),
     n = d(985018);
 
 function A(e) {
@@ -18,7 +18,7 @@ function A(e) {
         onSecondaryClick: p,
         ...f
     } = e, r = (0, s.A)(c);
-    return (0, t.jsx)(b.F, {
+    return (0, t.jsx)(b.A, {
         title: d,
         subtitle: A,
         graphic: r,

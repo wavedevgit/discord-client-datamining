@@ -1,5 +1,6 @@
 /** chunk id: 993396 params = (module,exports,require) **/
 e.exports = {
-    i: "wrapper__3fa5b",
-    v: "inner__3fa5b"
+    iE: "wrapper__3fa5b",
+    vW: "inner__3fa5b",
+    Kk: "icon__3fa5b"
 }

@@ -30,7 +30,7 @@ function d(e) {
                     (0, s.mMO)(async () => {
                         let {
                             default: e
-                        } = await Promise.all([n.e("81028"), n.e("64864"), n.e("21398")]).then(n.bind(n, 948265));
+                        } = await n.e("64864").then(n.bind(n, 948265));
                         return t => (0, r.jsx)(e, {
                             premiumUpsellType: u,
                             title: c.intl.string(c.t.JI7uhc),
@@ -45,7 +45,7 @@ function d(e) {
                     (0, s.mMO)(async () => {
                         let {
                             default: e
-                        } = await Promise.all([n.e("81028"), n.e("64864"), n.e("21398")]).then(n.bind(n, 948265));
+                        } = await n.e("64864").then(n.bind(n, 948265));
                         return t => (0, r.jsx)(e, {
                             premiumUpsellType: u,
                             title: c.intl.string(c.t.sYm15X),
@@ -60,7 +60,7 @@ function d(e) {
                     (0, s.mMO)(async () => {
                         let {
                             default: e
-                        } = await Promise.all([n.e("81028"), n.e("64864"), n.e("21398")]).then(n.bind(n, 948265));
+                        } = await n.e("64864").then(n.bind(n, 948265));
                         return t => (0, r.jsx)(e, {
                             premiumUpsellType: u,
                             title: c.intl.string(c.t.k7UN4k),

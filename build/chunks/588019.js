@@ -4,14 +4,14 @@ i.d(t, {
 });
 var r = i(626584),
     s = i(313320),
-    n = i(711204),
-    a = i(622397);
+    a = i(711204),
+    n = i(622397);
 let o = new r.A("MeticulousPerformanceReporter");
 class l {
     mode = null;
     boundBeforeUnload = null;
     actionTracker = new s.d;
-    heapSampler = new n.r;
+    heapSampler = new a.r;
     get isInitialized() {
         return null != this.mode
     }
@@ -27,11 +27,12 @@ class l {
     init() {
         let e;
         if (this.isInitialized) return !0;
-        let t = (0, a.a)();
+        let t = (0, n.a)();
         return null != t && (this.mode = (e = t.native.performance, {
             name: "meticulous",
             sessionId: t.sessionBeingReplayed.id,
             commitSha: t.commitUnderTest?.sha,
+            baseCommitSha: t.commitUnderTest?.baseCommitSha,
             branchName: t.commitUnderTest?.branchName,
             commitDate: t.commitUnderTest?.date,
             PerformanceObserver: t.native.PerformanceObserver,

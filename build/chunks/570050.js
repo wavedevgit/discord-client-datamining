@@ -1,27 +1,27 @@
 /** chunk id: 570050 params = (module,exports,require) **/
 t.d(e, {
-    J: () => o
+    J: () => c
 });
 var s = t(64700),
     n = t(954571),
     r = t(299679),
-    c = t(652215);
+    o = t(652215);
 
-function o(i, e) {
+function c(i, e) {
     let t = (0, r.Ar)(),
-        o = s.useRef(!1),
+        c = s.useRef(!1),
         l = s.useRef(t);
     s.useEffect(() => {
         l.current = t
     }, [t]), s.useEffect(() => {
         if (!i) {
-            o.current = !1;
+            c.current = !1;
             return
         }
-        if (o.current) return;
+        if (c.current) return;
         let t = setTimeout(() => {
             let i = l.current;
-            n.default.track(c.HAw.WISHLIST_ITEM_HOVERED, {
+            n.default.track(o.HAw.WISHLIST_ITEM_HOVERED, {
                 sku_id: i?.skuId,
                 wishlist_id: i?.wishlistId,
                 wishlist_owner_id: i?.wishlistOwnerId,
@@ -32,7 +32,7 @@ function o(i, e) {
                 card_id: e,
                 impression_session_id: i?.impressionSessionId,
                 location_stack: i?.analyticsLocations
-            }), o.current = !0
+            }), c.current = !0
         }, 250);
         return () => clearTimeout(t)
     }, [i, e])

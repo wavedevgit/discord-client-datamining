@@ -15,12 +15,12 @@ let d = function(e) {
         analyticsCtxSourceQuestContent: d,
         analyticsCtxQuestContentPosition: c,
         analyticsCtxQuestContentRowIndex: u,
-        size: m
-    } = e, _ = t.id, {
+        size: _
+    } = e, m = t.id, {
         isClaiming: h
     } = (0, l.cf)([r.A], () => ({
-        isClaiming: r.A.isClaimingReward(_) || r.A.isFetchingRewardCode(_)
-    }), [_]), p = (0, a.ix)({
+        isClaiming: r.A.isClaimingReward(m) || r.A.isFetchingRewardCode(m)
+    }), [m]), p = (0, a.ix)({
         quest: t,
         questContent: n,
         questContentPosition: c,
@@ -30,7 +30,7 @@ let d = function(e) {
     return (0, i.jsx)(s.Button, {
         variant: "primary",
         fullWidth: !0,
-        size: m,
+        size: _,
         loading: h,
         onClick: p,
         text: o.intl.string(o.t.cfY4PE)

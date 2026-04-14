@@ -3,19 +3,19 @@ i.d(t, {
     A: () => m,
     x: () => h
 });
-var n, a = i(627968),
-    l = i(64700),
-    o = i(735438),
-    r = i.n(o),
-    s = i(615300),
-    c = i(531685),
+var n, l = i(627968),
+    a = i(64700),
+    s = i(735438),
+    r = i.n(s),
+    o = i(615300),
+    u = i(531685),
     d = ((n = d || {})[n.ABOVE = 0] = "ABOVE", n[n.VISIBLE = 1] = "VISIBLE", n[n.BELOW = 2] = "BELOW", n);
 
-function u(e, t) {
+function c(e, t) {
     return {
         toValue: e,
         duration: t ?? 300,
-        easing: s.A.Easing.inOut(s.A.Easing.back())
+        easing: o.A.Easing.inOut(o.A.Easing.back())
     }
 }
 
@@ -25,7 +25,7 @@ function h(e, t, i) {
         return null != i && i > 0 ? Math.min(n, i) * t : n * t
     }
 }
-class m extends l.PureComponent {
+class m extends a.PureComponent {
     static Positions = d;
     prevAnimate;
     currAnimate;
@@ -34,18 +34,18 @@ class m extends l.PureComponent {
             prevValue: null,
             currValue: e.value,
             nextValue: null
-        }, this.prevAnimate = new s.A.Value(0), this.currAnimate = new s.A.Value(1)
+        }, this.prevAnimate = new o.A.Value(0), this.currAnimate = new o.A.Value(1)
     }
     static getDerivedStateFromProps(e, t) {
         let {
             prevValue: i,
             currValue: n,
-            nextValue: a
+            nextValue: l
         } = t;
         return null == i && n !== e.value ? {
-            prevValue: c.A.isFocused() ? n : null,
+            prevValue: u.A.isFocused() ? n : null,
             currValue: e.value
-        } : null != a && a !== e.value ? {
+        } : null != l && l !== e.value ? {
             nextValue: e.value
         } : null
     }
@@ -59,9 +59,9 @@ class m extends l.PureComponent {
     animateBetween(e, t) {
         let i, {
             forcePosition: n,
-            animationSpeed: a
+            animationSpeed: l
         } = this.props;
-        this.prevAnimate.setValue(1), null != n ? 0 === n ? (this.currAnimate.setValue(0), i = 2) : 2 === n && (this.currAnimate.setValue(2), i = 0) : e > t ? (this.currAnimate.setValue(0), i = 2) : (this.currAnimate.setValue(2), i = 0), s.A.parallel([s.A.timing(this.prevAnimate, u(i, a)), s.A.timing(this.currAnimate, u(1, a))]).start(this.animateNext)
+        this.prevAnimate.setValue(1), null != n ? 0 === n ? (this.currAnimate.setValue(0), i = 2) : 2 === n && (this.currAnimate.setValue(2), i = 0) : e > t ? (this.currAnimate.setValue(0), i = 2) : (this.currAnimate.setValue(2), i = 0), o.A.parallel([o.A.timing(this.prevAnimate, c(i, l)), o.A.timing(this.currAnimate, c(1, l))]).start(this.animateNext)
     }
     animateNext = () => {
         let {
@@ -69,7 +69,7 @@ class m extends l.PureComponent {
             nextValue: t
         } = this.state;
         null != t ? this.setState({
-            prevValue: c.A.isFocused() ? e : null,
+            prevValue: u.A.isFocused() ? e : null,
             currValue: t,
             nextValue: null
         }) : this.setState({
@@ -117,36 +117,36 @@ class m extends l.PureComponent {
         } = this.state, {
             color: i,
             formatString: n
-        } = this.props, l = r().omit(this.props, ["value", "digitWidth", "padStartLength", "forcePosition"]);
-        if (null == e) return (0, a.jsx)("div", {
-            ...l,
+        } = this.props, a = r().omit(this.props, ["value", "digitWidth", "padStartLength", "forcePosition"]);
+        if (null == e) return (0, l.jsx)("div", {
+            ...a,
             style: {
                 color: i,
                 minWidth: this.getMinWidth(t)
             },
             children: null != n ? n(this.padValue(t)) : this.padValue(t)
         });
-        let o = Math.max(e, t);
-        return (0, a.jsxs)("div", {
-            ...l,
+        let s = Math.max(e, t);
+        return (0, l.jsxs)("div", {
+            ...a,
             style: {
                 color: i,
                 position: "relative",
                 overflow: "hidden"
             },
-            children: [(0, a.jsx)("div", {
+            children: [(0, l.jsx)("div", {
                 style: {
                     visibility: "hidden",
-                    minWidth: this.getMinWidth(o)
+                    minWidth: this.getMinWidth(s)
                 },
-                children: this.padValue(o)
-            }), (0, a.jsx)(s.A.div, {
+                children: this.padValue(s)
+            }), (0, l.jsx)(o.A.div, {
                 style: {
                     color: i,
                     ...this.getAnimatedStyle(this.prevAnimate)
                 },
                 children: null != n ? n(this.padValue(e)) : this.padValue(e)
-            }), (0, a.jsx)(s.A.div, {
+            }), (0, l.jsx)(o.A.div, {
                 style: {
                     color: i,
                     ...this.getAnimatedStyle(this.currAnimate)

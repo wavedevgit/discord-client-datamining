@@ -1,50 +1,50 @@
 /** chunk id: 861177 params = (module,exports,require) **/
 t.d(n, {
-    default: () => b
+    default: () => h
 });
-var c = t(627968);
+var a = t(627968);
 t(64700);
-var _ = t(311907),
-    a = t(385612),
-    o = t(287809),
-    r = t(927578),
-    i = t(87719),
-    s = t(244975),
+var i = t(311907),
+    s = t(385612),
+    r = t(287809),
+    l = t(927578),
+    c = t(87719),
+    o = t(244975),
     d = t(788868),
-    p = t(652215),
+    _ = t(652215),
     u = t(339984),
-    C = t(985018),
-    l = t(626072);
+    m = t(985018),
+    f = t(626072);
 
-function b(e) {
+function h(e) {
     let {
         onClose: n,
         source: t,
-        ...b
-    } = e, h = (0, _.bG)([o.default], () => o.default.getCurrentUser()), y = r.Ay.isPremium(h) ? C.t.E0sNsc : C.t.UBcuto, f = C.intl.format(y, {
+        ...h
+    } = e, x = (0, i.bG)([r.default], () => r.default.getCurrentUser()), A = l.Ay.isPremium(x) ? m.t.E0sNsc : m.t.UBcuto, g = m.intl.format(A, {
         onLearnMore: function() {
-            n(), (0, i.e)()
+            n(), (0, c.e)()
         }
     });
-    return (0, c.jsx)(s.A, {
-        artURL: l.A,
+    return (0, a.jsx)(o.A, {
+        artURL: f.A,
         type: d.e.CUSTOM_PROFILE_UPSELL,
-        title: C.intl.string(C.t.BbsMm4),
-        body: f,
-        glowUp: f,
+        title: m.intl.string(m.t.BbsMm4),
+        body: g,
+        glowUp: g,
         onSecondaryClick: () => {
-            n(), (0, a.XD)({
+            n(), (0, s.XD)({
                 uploadType: u.HL.BANNER,
                 analyticsSource: t
             })
         },
-        secondaryCTA: C.intl.string(C.t.SpAQib),
+        secondaryCTA: m.intl.string(m.t.SpAQib),
         analyticsSource: t,
         analyticsLocation: {
-            section: p.JJy.USER_PROFILE,
-            object: p.ZSU.BUTTON_CTA
+            section: _.JJy.USER_PROFILE,
+            object: _.ZSU.BUTTON_CTA
         },
         onClose: n,
-        ...b
+        ...h
     })
 }

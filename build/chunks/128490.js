@@ -7,8 +7,8 @@ t(64700);
 var a = t(311907),
     l = t(397927),
     r = t(734057),
-    d = t(309010),
-    s = t(622543),
+    s = t(309010),
+    d = t(622543),
     o = t(987112),
     c = t(389996),
     _ = t(743987),
@@ -16,8 +16,8 @@ var a = t(311907),
     p = t(280645),
     A = t(928223),
     g = t(518477),
-    h = t(985018),
-    m = t(824860);
+    m = t(985018),
+    h = t(824860);
 
 function I(e) {
     let {
@@ -25,10 +25,10 @@ function I(e) {
         displayProfile: t,
         guildId: I,
         onClose: f
-    } = e, x = (0, a.bG)([s.A], () => s.A.getUserProfile(n.id)?.application), b = (0, a.bG)([r.A, d.A], () => r.A.getChannel(d.A.getChannelId()));
+    } = e, x = (0, a.bG)([d.A], () => d.A.getUserProfile(n.id)?.application), b = (0, a.bG)([r.A, s.A], () => r.A.getChannel(s.A.getChannelId()));
     return (0, i.jsxs)(l.IpV, {
         fade: !0,
-        className: m.XG,
+        className: h.XG,
         children: [(0, i.jsx)(c.E, {
             userBio: t?.bio,
             setLineClamp: !1
@@ -42,7 +42,7 @@ function I(e) {
             userId: n.id,
             guildId: t.guildId
         }), (0, i.jsx)(u.A, {
-            heading: h.intl.string(h.t["A//N4k"]),
+            heading: m.intl.string(m.t["A//N4k"]),
             children: (0, i.jsx)(_.A, {
                 userId: n.id,
                 guildId: I,

@@ -5,7 +5,7 @@ n.d(e, {
 var s = n(627968);
 n(64700);
 var c = n(87719),
-    i = n(244975),
+    i = n(831318),
     a = n(985018),
     r = n(101280);
 
@@ -18,7 +18,7 @@ function d(t) {
             e(), (0, c.e)()
         }
     });
-    return (0, s.jsx)(i.F, {
+    return (0, s.jsx)(i.A, {
         title: a.intl.string(a.t.SeL3ec),
         subtitle: d,
         graphic: {

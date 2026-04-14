@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(814793),
     c = n(753386),
     u = n(545986),
-    m = n(654487),
-    _ = n(985018);
+    _ = n(654487),
+    m = n(985018);
 let h = function(e) {
     let {
         quest: t,
@@ -37,10 +37,10 @@ let h = function(e) {
             l()
         } : null
     }(t, h, p, l.o.VIDEO.has(n) ? a.Cy.WATCH_VIDEO : (0, d.vA)(t) ? a.Cy.START_QUEST : a.Cy.ACCEPT_QUEST), f = (0, u.Oz)(t), C = function(e, t, n) {
-        if ((0, o.K$)(t)) return _.intl.string(_.t.IsH2Sp);
+        if ((0, o.K$)(t)) return m.intl.string(m.t.IsH2Sp);
         if ((0, o.IO)(t)) return (0, c.WM)(n);
-        if ((0, d.vA)(t)) return (0, o.Ov)(t) ? _.intl.string(_.t.CkUzLd) : (0, o.vl)(t) ? t.config.features.includes(m.Li.CLOUD_GAMING_ACTIVITY) ? _.intl.string(_.t["+qoymD"]) : _.intl.string(_.t.E4kW5O) : _.intl.string(_.t.l7E81v);
-        return _.intl.string(_.t["9KoPyB"])
+        if ((0, d.vA)(t)) return (0, o.Ov)(t) ? m.intl.string(m.t.CkUzLd) : (0, o.vl)(t) ? t.config.features.includes(_.Li.CLOUD_GAMING_ACTIVITY) ? m.intl.string(m.t["+qoymD"]) : m.intl.string(m.t.E4kW5O) : m.intl.string(m.t.l7E81v);
+        return m.intl.string(m.t["9KoPyB"])
     }(0, t, A);
     return null == x ? (0, i.jsx)(s.Button, {
         size: g,

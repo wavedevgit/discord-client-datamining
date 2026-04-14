@@ -1,5 +1,5 @@
 /** chunk id: 829216 params = (module,exports,require) **/
-i.r(e.exports = {
+n.r(e.exports = {
     effect: "effect_e5f2cb",
     effects: "effects_e5f2cb"
 })

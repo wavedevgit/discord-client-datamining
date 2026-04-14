@@ -9,7 +9,7 @@ var i = n(31717),
     c = n(453771),
     r = n(518960),
     o = n(87719),
-    d = n(244975),
+    d = n(831318),
     p = n(652215),
     l = n(985018),
     u = n(101280);
@@ -21,7 +21,7 @@ function b(t) {
         content: b,
         ...h
     } = t;
-    return (0, s.jsx)(d.F, {
+    return (0, s.jsx)(d.A, {
         title: l.intl.string(l.t.TZT3sJ),
         subtitle: l.intl.format(l.t.QhcEAL, {
             maxLength: p.uvi,

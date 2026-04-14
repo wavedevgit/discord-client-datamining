@@ -34,19 +34,23 @@ let g = e => {
     return (0, i.jsx)(r.m_, {
         text: n.name,
         children: (0, i.jsx)("div", {
-            className: l()(m.i, s),
+            className: l()(m.iE, s),
             children: (0, i.jsx)(a.vN3, {
                 children: (0, i.jsx)("button", {
-                    className: l()(m.v, g),
+                    className: l()(m.vW, g),
                     type: "button",
-                    style: {
-                        backgroundImage: `url('${p}')`
-                    },
                     onClick: () => x({
                         analyticsLocations: A
                     }),
                     "aria-label": n.name,
-                    disabled: t
+                    disabled: t,
+                    children: (0, i.jsx)("img", {
+                        className: m.Kk,
+                        src: p,
+                        height: 28,
+                        width: 28,
+                        alt: n.name
+                    })
                 })
             })
         })

@@ -1,6 +1,6 @@
 /** chunk id: 212614 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => m
 });
 var i = n(627968),
     l = n(732955),
@@ -11,12 +11,12 @@ var i = n(627968),
     d = n(593587),
     c = n(220514),
     u = n(884392),
-    m = n(985018);
-let _ = function(e) {
+    _ = n(985018);
+let m = function(e) {
     let {
         quest: t,
         surface: n,
-        preClickCallback: _,
+        preClickCallback: m,
         analyticsCtxQuestContent: h,
         analyticsCtxSourceQuestContent: p,
         analyticsCtxQuestContentPosition: g,
@@ -27,7 +27,7 @@ let _ = function(e) {
         variant: "primary",
         fullWidth: !0,
         size: "sm",
-        text: m.intl.string(m.t.P84bAD)
+        text: _.intl.string(_.t.P84bAD)
     });
     let C = Object.values(t.config.taskConfigV2.tasks)[0];
     switch (f) {
@@ -36,7 +36,7 @@ let _ = function(e) {
                 quest: t,
                 taskType: C.type,
                 size: x,
-                preClickCallback: _,
+                preClickCallback: m,
                 analyticsCtxQuestContent: h,
                 analyticsCtxSourceQuestContent: p,
                 analyticsCtxQuestContentPosition: g,
@@ -93,7 +93,7 @@ let _ = function(e) {
                 variant: "primary",
                 fullWidth: !0,
                 size: x,
-                text: m.intl.string(m.t.P84bAD)
+                text: _.intl.string(_.t.P84bAD)
             })
     }
 }

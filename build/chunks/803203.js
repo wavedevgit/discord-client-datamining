@@ -1,61 +1,61 @@
 /** chunk id: 803203 params = (module,exports,require) **/
 i.d(t, {
-    A: () => f
+    A: () => A
 });
 var n = i(627968),
-    a = i(64700),
-    l = i(311907),
-    o = i(73153),
+    l = i(64700),
+    a = i(311907),
+    s = i(73153),
     r = i(775602),
-    s = i(649963),
-    c = i(253932),
+    o = i(649963),
+    u = i(253932),
     d = i(900210),
-    u = i(297494),
+    c = i(297494),
     h = i(211180),
     m = i(60317),
     p = i(236870),
     g = i(829216);
-let f = a.memo(function(e) {
+let A = l.memo(function(e) {
     let {
         channelId: t,
         messageId: i,
-        emoji: f,
-        useChatFontScaling: _,
-        color: A,
-        count: T,
-        emojiSize: b
-    } = e, E = (0, l.bG)([d.A], () => d.A.getEffectForEmojiId(t, i, f)), x = a.useMemo(() => (0, m.eT)(f, A, t, {
-        key: E,
+        emoji: A,
+        useChatFontScaling: f,
+        color: T,
+        count: E,
+        emojiSize: x
+    } = e, I = (0, a.bG)([d.A], () => d.A.getEffectForEmojiId(t, i, A)), N = l.useMemo(() => (0, m.eT)(A, T, t, {
+        key: I,
         messageId: i
-    }), [A, E, f, t, i]), [I, N] = a.useState(!1), j = (0, l.bG)([r.A], () => r.A.useReducedMotion), R = c.Sf.useSetting(), v = a.useCallback(() => {
-        o.h.dispatch({
+    }), [T, I, A, t, i]), [v, j] = l.useState(!1), R = (0, a.bG)([r.A], () => r.A.useReducedMotion), S = u.Sf.useSetting(), C = l.useCallback(() => {
+        s.h.dispatch({
             type: "BURST_REACTION_EFFECT_CLEAR",
             channelId: t,
             messageId: i,
-            emoji: f
+            emoji: A
         })
-    }, [f, t, i]);
-    return (a.useEffect(() => {
+    }, [A, t, i]);
+    return (l.useEffect(() => {
         let e = () => {
-            if (I) return;
-            let e = (0, u.H4)(`${Date.now()}${t}${i}${f.name}`) % 10;
-            (e += T > 4 ? 4 : T - 1) > 7 && (N(!0), (0, s.on)({
+            if (v) return;
+            let e = (0, c.H4)(`${Date.now()}${t}${i}${A.name}`) % 10;
+            (e += E > 4 ? 4 : E - 1) > 7 && (j(!0), (0, o.on)({
                 channelId: t,
                 messageId: i,
-                emoji: f,
+                emoji: A,
                 key: d.W.RANDOM
             }))
         };
-        if (I || j && !R || !R) return;
+        if (v || R && !S || !S) return;
         e();
         let n = setInterval(e, 5e3);
         return () => {
             clearInterval(n)
         }
-    }, [R, t, T, f, f.name, I, i, j]), null == E) ? null : (0, n.jsx)(h.A, {
-        className: (_ ? g : p).effect,
-        effect: x,
-        onComplete: v,
-        emojiSize: b
+    }, [S, t, E, A, A.name, v, i, R]), null == I) ? null : (0, n.jsx)(h.A, {
+        className: (f ? g : p).effect,
+        effect: N,
+        onComplete: C,
+        emojiSize: x
     })
 })

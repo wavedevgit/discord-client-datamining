@@ -1,6 +1,6 @@
 /** chunk id: 877695 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => N
 });
 var i = n(627968),
     l = n(64700),
@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(397927),
     c = n(846293),
     u = n(775602),
-    m = n(793574),
-    _ = n(688810),
+    _ = n(793574),
+    m = n(688810),
     h = n(139286),
     p = n(9994),
     g = n(461888),
@@ -26,18 +26,18 @@ var i = n(627968),
     b = n(168428),
     T = n(652215),
     y = n(985018),
-    N = n(105544);
+    S = n(105544);
 
-function S(e) {
+function N(e) {
     let {
         invite: t,
         isMemberOfGuild: n,
         message: s,
         onTransitionToInviteChannel: c,
         onAcceptInstantInvite: g
-    } = e, x = l.useRef(null), [S, L] = l.useState(!0), [R, P] = l.useState(!1), D = t.state === T.elq.ACCEPTING, M = (0, o.bG)([u.A], () => u.A.useReducedMotion), {
+    } = e, x = l.useRef(null), [N, L] = l.useState(!0), [R, P] = l.useState(!1), D = t.state === T.elq.ACCEPTING, M = (0, o.bG)([u.A], () => u.A.useReducedMotion), {
         analyticsLocations: w
-    } = (0, _.Ay)(m.A.INVITE_EMBED);
+    } = (0, m.Ay)(_.A.INVITE_EMBED);
     (0, h.A)({
         name: a.ImpressionNames.INVITE_EMBED,
         type: a.ImpressionTypes.VIEW,
@@ -53,44 +53,44 @@ function S(e) {
     }), l.useLayoutEffect(() => {
         P((x.current?.clientHeight ?? 0) > 292)
     }, [P]);
-    let O = (0, p.oO)(t),
-        k = l.useCallback(() => {
-            !R || S && L(!1)
-        }, [S, R]),
+    let k = (0, p.oO)(t),
+        O = l.useCallback(() => {
+            !R || N && L(!1)
+        }, [N, R]),
         U = l.useCallback(() => {
-            !R || S || L(!0)
-        }, [S, R]),
+            !R || N || L(!0)
+        }, [N, R]),
         B = l.useMemo(() => R && x.current?.clientHeight != null ? {
-            height: S ? 292 : x.current.clientHeight + 36 + 48,
+            height: N ? 292 : x.current.clientHeight + 36 + 48,
             transition: M ? void 0 : "height 0.2s ease"
-        } : {}, [S, R, M]);
-    return null == O ? (0, i.jsx)(b.A, {}) : (0, i.jsxs)(d.sqX, {
-        className: r()(N.Gg, {
-            [N.vk]: R && S
+        } : {}, [N, R, M]);
+    return null == k ? (0, i.jsx)(b.A, {}) : (0, i.jsxs)(d.sqX, {
+        className: r()(S.Gg, {
+            [S.vk]: R && N
         }),
-        onClick: k,
+        onClick: O,
         style: B,
         "aria-label": y.intl.string(y.t.dcl9MQ),
         children: [(0, i.jsxs)("div", {
-            className: N.uY,
+            className: S.uY,
             ref: x,
             children: [(0, i.jsx)(C.J$, {
-                profile: O,
-                className: N.vK
+                profile: k,
+                className: S.vK
             }), (0, i.jsx)(C.CG, {
-                profile: O
+                profile: k
             }), (0, i.jsx)(f.A, {
-                profile: O
+                profile: k
             }), (0, i.jsx)(A.P, {
-                profile: O,
-                className: N.rb
+                profile: k,
+                className: S.rb
             }), (0, i.jsx)(v.A, {
                 guild: null != t.guild ? (0, I.DY)(t.guild) : null,
                 roles: t.roles,
-                className: N.Ei
+                className: S.Ei
             })]
-        }), R && !S ? (0, i.jsx)("div", {
-            className: N.Se,
+        }), R && !N ? (0, i.jsx)("div", {
+            className: S.Se,
             children: (0, i.jsx)(d.QWc, {
                 textVariant: "text-xs/medium",
                 variant: "secondary",
@@ -99,20 +99,20 @@ function S(e) {
                 text: y.intl.string(y.t.xdCLeM)
             })
         }) : null, (0, i.jsxs)("div", {
-            className: r()(N.qr, {
-                [N.iK]: R
+            className: r()(S.qr, {
+                [S.iK]: R
             }),
-            children: [R && S ? (0, i.jsx)("div", {
-                className: N.D7
+            children: [R && N ? (0, i.jsx)("div", {
+                className: S.D7
             }) : null, (0, i.jsx)("div", {
-                className: r()(N.z8, {
-                    [N.it]: R && S
+                className: r()(S.z8, {
+                    [S.it]: R && N
                 }),
                 children: (0, i.jsx)("div", {
-                    className: N.UD,
+                    className: S.UD,
                     children: (0, i.jsx)(j, {
                         invite: t,
-                        profile: O,
+                        profile: k,
                         isMemberOfGuild: n,
                         message: s,
                         submitting: D,
@@ -139,7 +139,7 @@ function j(e) {
         ctaType: h
     } = (0, g.Ay)(n, g.cn.INVITE, t.code), {
         analyticsLocations: p
-    } = (0, _.Ay)(m.A.INVITE_EMBED), A = l.useCallback(() => {
+    } = (0, m.Ay)(_.A.INVITE_EMBED), A = l.useCallback(() => {
         let e = s ? "transition" : "accept";
         (0, c.he)({
             invite: t,

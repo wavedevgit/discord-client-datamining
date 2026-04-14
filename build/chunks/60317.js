@@ -1,41 +1,41 @@
 /** chunk id: 60317 params = (module,exports,require) **/
 i.d(t, {
-    YY: () => c,
-    eT: () => u,
+    YY: () => u,
+    eT: () => c,
     fz: () => d
 });
 var n = i(735438),
-    a = i(835245),
-    l = i(776231),
-    o = i(667050),
+    l = i(835245),
+    a = i(776231),
+    s = i(667050),
     r = i(998304),
-    s = i(297494);
-let c = 7.5,
+    o = i(297494);
+let u = 7.5,
     d = (0, n.memoize)((e, t, i, n) => new Promise(e => {
-        let a = new Image;
-        a.src = t, a.crossOrigin = "Anonymous", a.onload = () => {
-            let t = 32 * (0, l.mZ)(),
-                o = JSON.stringify(i);
-            if (null != n && (o = (0, s.vc)(o, (0, r.E2)(n))), a.width === t && a.height === t || 0 === a.width && 0 === a.height) e(JSON.parse(o));
+        let l = new Image;
+        l.src = t, l.crossOrigin = "Anonymous", l.onload = () => {
+            let t = 32 * (0, a.mZ)(),
+                s = JSON.stringify(i);
+            if (null != n && (s = (0, o.vc)(s, (0, r.E2)(n))), l.width === t && l.height === t || 0 === l.width && 0 === l.height) e(JSON.parse(s));
             else {
-                let t = 128 / a.width * a.height;
-                e(JSON.parse(o = (o = o.replace(/"w":128,"h":128/, `"w":128,"h":${t}`)).replace(/"a":{"a":0,"k":\[64,64/, `"a":{"a":0,"k":[64,${t/2}`)))
+                let t = 128 / l.width * l.height;
+                e(JSON.parse(s = (s = s.replace(/"w":128,"h":128/, `"w":128,"h":${t}`)).replace(/"a":{"a":0,"k":\[64,64/, `"a":{"a":0,"k":[64,${t/2}`)))
             }
         }
     }));
 
-function u(e, t, i, n) {
+function c(e, t, i, n) {
     let {
-        emojiSize: l,
+        emojiSize: a,
         key: r,
-        messageId: s
-    } = n ?? {}, c = (0, o.Br)(e, null != l ? 2 * l : void 0);
+        messageId: o
+    } = n ?? {}, u = (0, s.Br)(e, null != a ? 2 * a : void 0);
     return {
         channelId: i,
-        messageId: s,
+        messageId: o,
         emoji: e,
-        animationId: (0, a.A)(),
-        url: c,
+        animationId: (0, l.A)(),
+        url: u,
         key: r,
         color: t
     }

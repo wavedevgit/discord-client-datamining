@@ -1,32 +1,32 @@
 /** chunk id: 542454 params = (module,exports,require) **/
-t.d(l, {
+n.d(l, {
     A: () => f
 });
-var n = t(627968),
-    i = t(64700),
-    s = t(33851),
-    a = t.n(s),
-    r = t(311907),
-    o = t(827734),
-    d = t(397927),
-    c = t(654107),
-    u = t(101058),
-    m = t(84540),
-    p = t(836602),
-    x = t(950191),
-    A = t(101928),
-    g = t(548612);
+var t = n(627968),
+    i = n(64700),
+    s = n(33851),
+    a = n.n(s),
+    r = n(311907),
+    o = n(827734),
+    d = n(397927),
+    c = n(654107),
+    u = n(101058),
+    m = n(84540),
+    p = n(836602),
+    x = n(950191),
+    A = n(101928),
+    g = n(548612);
 
 function f(e) {
     let {
         user: l,
-        guildId: t,
+        guildId: n,
         disabled: s = !1
-    } = e, f = (0, x.Ay)(l.id, t), {
+    } = e, f = (0, x.Ay)(l.id, n), {
         pendingThemeColors: h,
         pendingAvatar: j
     } = (0, r.cf)([p.A], () => {
-        let e = p.A.getPendingChanges(t ?? void 0);
+        let e = p.A.getPendingChanges(n ?? void 0);
         return {
             pendingThemeColors: e.pendingThemeColors,
             pendingAvatar: e.pendingAvatar
@@ -43,14 +43,14 @@ function f(e) {
         pendingThemeColors: h,
         pendingAvatarSrc: v ?? void 0,
         isPreview: !0
-    }), y = (0, d.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), C = null != v ? v : l.getAvatarURL(t ?? void 0, 80), E = (0, c.rh)(C, y, !1), T = i.useCallback(e => {
+    }), y = (0, d.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), C = null != v ? v : l.getAvatarURL(n ?? void 0, 80), E = (0, c.rh)(C, y, !1), T = i.useCallback(e => {
         let l = a()(e, f?.themeColors);
         (0, m.p)({
-            guildId: t ?? void 0,
+            guildId: n ?? void 0,
             themeColors: l ? void 0 : e
         })
-    }, [f?.themeColors, t]);
-    return null == I || null == N ? null : (0, n.jsx)(g.A, {
+    }, [f?.themeColors, n]);
+    return null == I || null == N ? null : (0, t.jsx)(g.A, {
         primaryColor: I,
         secondaryColor: N,
         onSelectPrimaryColor: e => {

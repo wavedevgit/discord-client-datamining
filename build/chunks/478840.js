@@ -3,12 +3,12 @@ i.d(t, {
     V: () => d
 });
 var n = i(310784),
-    a = i.n(n),
-    l = i(325335),
-    o = i(998304),
+    l = i.n(n),
+    a = i(325335),
+    s = i(998304),
     r = i(300703);
-let s = "#ffffff",
-    c = "#36393e",
+let o = "#ffffff",
+    u = "#36393e",
     d = (e, t, i) => {
         if (null == e || e.length < 1) return null;
         let n = (e => {
@@ -22,39 +22,39 @@ let s = "#ffffff",
                         saturationFactor: i = 1
                     } = e;
                     if (null == t || t.length < 1) return null;
-                    let n = (0, o.h6)(t),
-                        r = l.A.parseString(n);
+                    let n = (0, s.h6)(t),
+                        r = a.A.parseString(n);
                     if (null == r) return null;
-                    let d = (0, o.IB)(r.red, r.blue, r.green),
-                        u = (0, o.lZ)({
-                            foreground: a()((0, o.fE)(r, .6, !0).toHexString()),
-                            background: a()(s),
+                    let d = (0, s.IB)(r.red, r.blue, r.green),
+                        c = (0, s.lZ)({
+                            foreground: l()((0, s.fE)(r, .6, !0).toHexString()),
+                            background: l()(o),
                             ratio: 3,
                             saturationFactor: i
                         }) ?? r,
-                        h = (0, o.lZ)({
-                            foreground: a()((0, o.fE)(r, .6, !1).toHexString()),
-                            background: a()(c),
+                        h = (0, s.lZ)({
+                            foreground: l()((0, s.fE)(r, .6, !1).toHexString()),
+                            background: l()(u),
                             ratio: 5,
                             saturationFactor: i
                         }) ?? r,
-                        m = (0, o.lZ)({
-                            foreground: a()(n),
-                            background: a()(s),
+                        m = (0, s.lZ)({
+                            foreground: l()(n),
+                            background: l()(o),
                             ratio: 7,
                             saturationFactor: i
                         }),
-                        p = (0, o.lZ)({
-                            foreground: a()(n),
-                            background: a()(c),
+                        p = (0, s.lZ)({
+                            foreground: l()(n),
+                            background: l()(u),
                             ratio: 7,
                             saturationFactor: i
                         });
                     return {
                         LIGHT: {
                             accentColor: m?.hex(),
-                            backgroundColor: (0, o.WN)({
-                                colorRGB: u,
+                            backgroundColor: (0, s.WN)({
+                                colorRGB: c,
                                 saturationFactor: i
                             }),
                             highlightColor: r?.toHexString(),
@@ -62,7 +62,7 @@ let s = "#ffffff",
                         },
                         DARK: {
                             accentColor: p?.hex(),
-                            backgroundColor: (0, o.WN)({
+                            backgroundColor: (0, s.WN)({
                                 colorRGB: h,
                                 saturationFactor: i
                             }),

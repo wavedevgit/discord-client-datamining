@@ -1,38 +1,38 @@
 /** chunk id: 547352 params = (module,exports,require) **/
-c.d(e, {
-    default: () => r
+t.d(n, {
+    default: () => _
 });
-var a = c(627968);
-c(64700);
-var n = c(87719),
-    o = c(244975),
-    s = c(788868),
-    i = c(652215),
-    d = c(985018),
-    p = c(399703);
+var a = t(627968);
+t(64700);
+var s = t(87719),
+    i = t(244975),
+    l = t(788868),
+    r = t(652215),
+    c = t(985018),
+    o = t(399703);
 
-function r(t) {
+function _(e) {
     let {
-        onClose: e,
-        source: c,
-        ...r
-    } = t, f = d.intl.format(d.t.WMO9po, {
+        onClose: n,
+        source: t,
+        ..._
+    } = e, d = c.intl.format(c.t.WMO9po, {
         onAndMore: function() {
-            e(), (0, n.e)()
+            n(), (0, s.e)()
         }
     });
-    return (0, a.jsx)(o.A, {
-        artURL: p.A,
-        type: s.e.PREMIUM_GUILD_IDENTITY_MODAL,
-        title: d.intl.string(d.t.kOEBKP),
-        body: f,
-        glowUp: f,
-        analyticsSource: c,
+    return (0, a.jsx)(i.A, {
+        artURL: o.A,
+        type: l.e.PREMIUM_GUILD_IDENTITY_MODAL,
+        title: c.intl.string(c.t.kOEBKP),
+        body: d,
+        glowUp: d,
+        analyticsSource: t,
         analyticsLocation: {
-            section: i.JJy.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_MODAL,
-            object: i.ZSU.BUTTON_CTA
+            section: r.JJy.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_MODAL,
+            object: r.ZSU.BUTTON_CTA
         },
-        onClose: e,
-        ...r
+        onClose: n,
+        ..._
     })
 }

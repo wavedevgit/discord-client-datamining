@@ -1,6 +1,6 @@
 /** chunk id: 112007 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => N
 }), n(938796);
 var i = n(627968),
     l = n(64700),
@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(990078),
     c = n(397927),
     u = n(846293),
-    m = n(793574),
-    _ = n(688810),
+    _ = n(793574),
+    m = n(688810),
     h = n(139286),
     p = n(290331),
     g = n(517905),
@@ -26,10 +26,10 @@ var i = n(627968),
     b = n(168428),
     T = n(652215),
     y = n(985018),
-    N = n(366228);
+    S = n(366228);
 
-function S(e) {
-    let t, S, j, {
+function N(e) {
+    let t, N, j, {
             onTransitionToInviteChannel: L,
             onAcceptInstantInvite: R,
             guild: P,
@@ -37,39 +37,39 @@ function S(e) {
             message: M,
             currentUserId: w
         } = e,
-        O = w === M.author.id,
+        k = w === M.author.id,
         {
-            channel: k,
+            channel: O,
             approximate_member_count: U,
             approximate_presence_count: B
         } = D,
         G = D.state === T.elq.ACCEPTING,
-        F = null != k ? (0, C.OY)(k) : null,
+        F = null != O ? (0, C.OY)(O) : null,
         H = null != P,
         V = null != F,
         q = null != F && F.isGuildStageVoice(),
         W = (0, a.Lt)(D.flags ?? 0, r.Q.IS_GUEST_INVITE),
-        Y = F?.isGuildVoiceOrThread() ?? !1,
-        z = P?.features.has(T.GuildFeatures.HUB) ?? !1,
+        z = F?.isGuildVoiceOrThread() ?? !1,
+        Y = P?.features.has(T.GuildFeatures.HUB) ?? !1,
         Q = P?.id,
         {
             analyticsLocations: K
-        } = (0, _.Ay)(m.A.INVITE_EMBED);
+        } = (0, m.Ay)(_.A.INVITE_EMBED);
     (0, h.A)({
         name: s.ImpressionNames.INVITE_EMBED,
         type: s.ImpressionTypes.VIEW,
         properties: {
             invite_code: D.code,
             invite_guild_id: D.guild?.id,
-            invite_channel_id: k?.id,
+            invite_channel_id: O?.id,
             invite_instance_id: (0, x._U)(D.code, M.id),
-            invite_channel_type: k?.type,
+            invite_channel_type: O?.type,
             embed_type: "guild_invite",
             location_stack: K
         }
     });
-    let [J, X] = l.useState(!1), Z = l.useCallback(() => X(!1), []), $ = l.useRef(null), ee = (0, o.bG)([E.Ay], () => p.A.canAcceptInvite([E.Ay], D)), et = l.useCallback(() => {
-        X(!0), (0, u.Pq)(Q, "show profile", K)
+    let [X, J] = l.useState(!1), Z = l.useCallback(() => J(!1), []), $ = l.useRef(null), ee = (0, o.bG)([E.Ay], () => p.A.canAcceptInvite([E.Ay], D)), et = l.useCallback(() => {
+        J(!0), (0, u.Pq)(Q, "show profile", K)
     }, [Q, K]), en = l.useCallback(() => {
         let e = "noop";
         H ? (L(), e = "transition") : (R(), e = "accept"), (0, u.he)({
@@ -85,19 +85,19 @@ function S(e) {
         (P = I.DY(D.guild)).premiumTier = D.guild.premium_tier ?? T.TVA.NONE
     }
     let ei = (0, v.l)({
-        isVoiceChannel: Y,
-        isOwnInvite: O,
+        isVoiceChannel: z,
+        isOwnInvite: k,
         isGuest: W,
-        isHubGuild: z,
+        isHubGuild: Y,
         isStage: q,
         isStream: !1
     });
-    return S = (0, i.jsxs)("span", {
-        className: N.FA,
+    return N = (0, i.jsxs)("span", {
+        className: S.FA,
         children: [(0, i.jsx)(g.A, {
             guildId: P.id,
             name: P.name,
-            shouldShow: J,
+            shouldShow: X,
             onRequestClose: Z,
             targetElementRef: $,
             children: () => (0, i.jsx)(f.A.GuildName, {
@@ -105,7 +105,7 @@ function S(e) {
                 ref: $
             })
         }), (0, i.jsx)("span", {
-            className: N.E3,
+            className: S.E3,
             children: (0, i.jsx)(A.A, {
                 guild: P,
                 isBannerVisible: !1,
@@ -118,16 +118,16 @@ function S(e) {
         children: (0, i.jsx)(c.mir, {
             size: "md",
             color: "currentColor",
-            className: N.G
+            className: S.G
         })
-    })), Y ? (S = (0, i.jsx)(f.A.Channel, {
+    })), z ? (N = (0, i.jsx)(f.A.Channel, {
         channel: F
     }), t = (0, i.jsxs)("span", {
-        className: N.FA,
+        className: S.FA,
         children: [y.intl.format(y.t["2wimj5"], {
             guildName: P.name
         }), (0, i.jsx)("span", {
-            className: N.E3,
+            className: S.E3,
             children: (0, i.jsx)(A.A, {
                 guild: P,
                 isBannerVisible: !1
@@ -147,28 +147,28 @@ function S(e) {
             extra: j
         }), (0, i.jsxs)(f.A.Body, {
             children: [(0, i.jsxs)("div", {
-                className: N.iH,
+                className: S.iH,
                 children: [(0, i.jsx)(f.A.Icon, {
                     guild: P
                 }), (0, i.jsx)(f.A.Info, {
-                    title: S,
+                    title: N,
                     onClick: et,
                     children: t
                 })]
             }), (0, i.jsx)("div", {
-                className: N.UD,
+                className: S.UD,
                 children: (0, i.jsx)(c.Button, {
                     onClick: en,
                     loading: G,
                     variant: "active",
-                    fullWidth: Y,
+                    fullWidth: z,
                     disabled: !ee,
-                    text: Y ? q ? y.intl.string(y.t["7vb2cc"]) : y.intl.string(y.t.gpqgah) : H ? y.intl.string(y.t.cEnaWx) : y.intl.string(y.t.XpeFYr)
+                    text: z ? q ? y.intl.string(y.t["7vb2cc"]) : y.intl.string(y.t.gpqgah) : H ? y.intl.string(y.t.cEnaWx) : y.intl.string(y.t.XpeFYr)
                 })
             })]
         }), P.features.has(T.GuildFeatures.HUB) && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
-                className: N.me
+                className: S.me
             }), (0, i.jsx)(c.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",

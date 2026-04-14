@@ -7,8 +7,8 @@ t(64700);
 var a = t(311907),
     l = t(397927),
     r = t(821269),
-    d = t(437774),
-    s = t(773669),
+    s = t(437774),
+    d = t(773669),
     o = t(967198),
     c = t(351906),
     _ = t(183555),
@@ -16,8 +16,8 @@ var a = t(311907),
     p = t(484509),
     A = t(389996),
     g = t(46937),
-    h = t(361311),
-    m = t(743987),
+    m = t(361311),
+    h = t(743987),
     I = t(900179),
     f = t(280645),
     x = t(928223),
@@ -32,13 +32,13 @@ function y(e) {
         onClose: y
     } = e, {
         trackUserProfileAction: j
-    } = (0, _.NJ)(), T = (0, a.bG)([o.A], () => o.A.getGuildId()), S = (0, r.q)({
+    } = (0, _.NJ)(), T = (0, a.bG)([o.A], () => o.A.getGuildId()), N = (0, r.q)({
         userId: n.id
-    }), N = (0, a.bG)([c.A], () => c.A.hidePersonalInformation), C = (0, a.bG)([s.default], () => s.default.locale), R = (0, p.A)(n.id), P = (0, u.A)(n.id);
+    }), S = (0, a.bG)([c.A], () => c.A.hidePersonalInformation), C = (0, a.bG)([d.default], () => d.default.locale), R = (0, p.A)(n.id), P = (0, u.A)(n.id);
     return (0, i.jsxs)(l.IpV, {
         fade: !0,
         className: E.XG,
-        children: [t?.bio != null && t?.bio !== "" && !N && (0, i.jsx)(A.A, {
+        children: [t?.bio != null && t?.bio !== "" && !S && (0, i.jsx)(A.A, {
             userBio: t.bio,
             setLineClamp: !1
         }), t?.guildId != null && (0, i.jsx)(f.A, {
@@ -51,17 +51,17 @@ function y(e) {
                 color: l.LU0.colors.TEXT_STRONG
             }),
             headingColor: "text-default",
-            children: (0, i.jsx)(d.T, {
+            children: (0, i.jsx)(s.T, {
                 userId: n.id
             })
-        }), S.length > 0 && (0, i.jsx)(I.A, {
+        }), N.length > 0 && (0, i.jsx)(I.A, {
             heading: v.intl.string(v.t["Uv/eTx"]),
-            children: (0, i.jsx)(h.A, {
-                applicationIds: S
+            children: (0, i.jsx)(m.A, {
+                applicationIds: N
             })
         }), (0, i.jsx)(I.A, {
             heading: v.intl.string(v.t.a6XYD9),
-            children: (0, i.jsx)(m.A, {
+            children: (0, i.jsx)(h.A, {
                 userId: n.id,
                 guildId: t?.guildId,
                 tooltipDelay: b.In

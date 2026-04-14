@@ -3,8 +3,8 @@ r.d(t, {
     default: () => N
 });
 var s = r(627968),
-    i = r(64700),
-    n = r(311907),
+    n = r(64700),
+    i = r(311907),
     a = r(397927),
     l = r(793574),
     o = r(688810),
@@ -37,13 +37,13 @@ function k(e) {
         onClose: h,
         initialSelectedDecoration: j,
         guild: E
-    } = e, k = (0, n.bG)([x.Ay], () => null != E ? x.Ay.getMember(E.id, t.id) : null), N = null != k ? k.avatarDecoration : t.avatarDecoration, {
-        pendingAvatarDecoration: P,
-        setPendingAvatarDecoration: O
+    } = e, k = (0, i.bG)([x.Ay], () => null != E ? x.Ay.getMember(E.id, t.id) : null), N = null != k ? k.avatarDecoration : t.avatarDecoration, {
+        pendingAvatarDecoration: O,
+        setPendingAvatarDecoration: P
     } = (0, m.A)({
         analyticsLocations: A,
         guildId: E?.id
-    }), [b, D] = i.useState(() => null != j ? j : void 0 !== P ? P : null == N ? null : (0, p.ps)(o, r).find(e => {
+    }), [b, D] = n.useState(() => null != j ? j : void 0 !== O ? O : null == N ? null : (0, p.ps)(o, r).find(e => {
         let {
             skuId: t
         } = e;
@@ -56,7 +56,7 @@ function k(e) {
     }), {
         product: R,
         purchase: L
-    } = (0, v.A)(b?.skuId), M = null != L ? (0, p.gA)(L) : (0, p.G0)(R), U = g.Ay.canUseCollectibles(t), G = i.useRef(null), z = (0, I.A)(A), H = void 0 === P ? b?.skuId === N?.skuId : b?.skuId === P?.skuId, F = i.useCallback(e => {
+    } = (0, v.A)(b?.skuId), M = null != L ? (0, p.gA)(L) : (0, p.G0)(R), U = g.Ay.canUseCollectibles(t), G = n.useRef(null), z = (0, I.A)(A), H = void 0 === O ? b?.skuId === N?.skuId : b?.skuId === O?.skuId, F = n.useCallback(e => {
         h(), (0, _.Cz)({
             analyticsLocations: A,
             analyticsSource: l.A.EDIT_AVATAR_DECORATION_MODAL,
@@ -102,7 +102,7 @@ function k(e) {
                 variant: "primary",
                 text: S.intl.string(S.t.Jh8fJz),
                 onClick: () => {
-                    O(b), h()
+                    P(b), h()
                 },
                 disabled: H
             }) : null == L && (U || !M) ? (0, s.jsx)(a.Button, {
@@ -135,7 +135,7 @@ function N(e) {
         onCloseModal: d,
         initialSelectedDecoration: u,
         guild: m
-    } = e, x = (0, n.bG)([A.default], () => A.default.getCurrentUser()), {
+    } = e, x = (0, i.bG)([A.default], () => A.default.getCurrentUser()), {
         analyticsLocations: g
     } = (0, o.Ay)(r, l.A.EDIT_AVATAR_DECORATION_MODAL), {
         categories: _,
@@ -143,7 +143,7 @@ function N(e) {
         isFetchingCategories: v,
         isFetchingPurchases: I
     } = (0, j.Ay)(), y = v || I && 0 === p.size;
-    return i.useEffect(() => {
+    return n.useEffect(() => {
         h.default.track(E.HAw.OPEN_MODAL, {
             type: E.JJy.AVATAR_DECORATION_CUSTOMIZATION,
             location_stack: g

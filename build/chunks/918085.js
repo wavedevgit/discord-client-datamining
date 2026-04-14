@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(191931),
     c = n(886352),
     u = n(132696),
-    m = n(871123),
-    _ = n(366523),
+    _ = n(871123),
+    m = n(366523),
     h = n(371794),
     p = n(863574),
     g = n(622413),
@@ -59,7 +59,7 @@ class f extends l.PureComponent {
             isHorizontal: o,
             storeListing: p
         } = this.props;
-        return (0, m.bF)(a) ? (0, i.jsx)(_.e, {
+        return (0, _.bF)(a) ? (0, i.jsx)(m.e, {
             sku: a,
             shape: "custom",
             containerClassName: x.A$,

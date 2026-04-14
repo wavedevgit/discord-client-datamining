@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(51758),
     c = n(665066),
     u = n(323443),
-    m = n(734057),
-    _ = n(696451),
+    _ = n(734057),
+    m = n(696451),
     h = n(71393),
     p = n(287809),
     g = n(285059),
@@ -30,16 +30,16 @@ function E(e) {
         guildScheduledEvent: b,
         guild: T,
         channel: y,
-        isMember: N
-    } = (0, s.cf)([A.Ay, h.A, m.A, _.Ay, p.default], () => {
+        isMember: S
+    } = (0, s.cf)([A.Ay, h.A, _.A, m.Ay, p.default], () => {
         let e = A.Ay.getGuildScheduledEvent(E) ?? void 0,
             t = h.A.getGuild(n),
-            i = m.A.getChannel(e?.channel_id);
+            i = _.A.getChannel(e?.channel_id);
         return {
             guildScheduledEvent: e,
             guild: t,
             channel: i,
-            isMember: _.Ay.isMember(n, p.default.getCurrentUser()?.id)
+            isMember: m.Ay.isMember(n, p.default.getCurrentUser()?.id)
         }
     }, [n, E]);
     return l.useEffect(() => {
@@ -48,11 +48,11 @@ function E(e) {
         guild: T,
         channel: y,
         guildScheduledEvent: b,
-        isMember: N,
+        isMember: S,
         onAcceptInstantInvite: () => {
             if ((0, c.g)({
                     guild: T,
-                    isMember: N,
+                    isMember: S,
                     analyticsLocations: v
                 }) === c.W.PROCEED) {
                 if ((0, d.V)(n)) return void(0, o.Ze)(n);

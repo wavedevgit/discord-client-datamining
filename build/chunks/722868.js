@@ -1,23 +1,23 @@
 /** chunk id: 722868 params = (module,exports,require) **/
-t.d(l, {
+n.d(l, {
     A: () => x
 });
-var n = t(627968),
-    i = t(311907),
-    s = t(397927),
-    a = t(688810),
-    r = t(287809),
-    o = t(562153),
-    d = t(183555),
-    c = t(591179),
-    u = t(657331),
-    m = t(950191),
-    p = t(985018);
+var t = n(627968),
+    i = n(311907),
+    s = n(397927),
+    a = n(688810),
+    r = n(287809),
+    o = n(562153),
+    d = n(183555),
+    c = n(591179),
+    u = n(657331),
+    m = n(950191),
+    p = n(985018);
 
 function x(e) {
     let {
         user: l,
-        guildId: t,
+        guildId: n,
         channelId: x,
         displayProfile: A,
         onClose: g
@@ -27,18 +27,18 @@ function x(e) {
     } = (0, a.Ay)(), {
         context: j,
         trackUserProfileAction: v
-    } = (0, d.NJ)(), I = (0, m.Ay)(l.id, t), N = (0, i.bG)([r.default], () => r.default.getCurrentUser()?.id === l.id), y = (0, c.X)("useViewUserProfileModalItem");
-    return N && y || I?.guildId == null ? null : A?.guildId == null || A?.private ? A?.guildId != null ? null : (0, n.jsx)(s.Drp, {
+    } = (0, d.NJ)(), I = (0, m.Ay)(l.id, n), N = (0, i.bG)([r.default], () => r.default.getCurrentUser()?.id === l.id), y = (0, c.X)("useViewUserProfileModalItem");
+    return N && y || I?.guildId == null ? null : A?.guildId == null || A?.private ? A?.guildId != null ? null : (0, t.jsx)(s.Drp, {
         id: "view-server-profile",
         label: p.intl.string(p.t.DisZzB),
         subtext: p.intl.formatToPlainString(p.t["mn/nW2"], {
-            displayName: o.Ay.getName(t, x, l)
+            displayName: o.Ay.getName(n, x, l)
         }),
         action: () => {
             g?.(), (0, u.openUserProfileModal)({
                 userId: l.id,
                 ...j,
-                guildId: t,
+                guildId: n,
                 sourceAnalyticsLocations: h
             }), v({
                 action: "PRESS_VIEW_SERVER_PROFILE",
@@ -46,7 +46,7 @@ function x(e) {
                 ...j
             })
         }
-    }) : (0, n.jsx)(s.Drp, {
+    }) : (0, t.jsx)(s.Drp, {
         id: "view-main-profile",
         label: p.intl.string(p.t.GISTta),
         subtext: p.intl.formatToPlainString(p.t["mn/nW2"], {
@@ -57,7 +57,7 @@ function x(e) {
                 userId: l.id,
                 ...j,
                 guildId: void 0,
-                originGuildId: t,
+                originGuildId: n,
                 sourceAnalyticsLocations: h
             }), v({
                 action: "PRESS_VIEW_MAIN_PROFILE",

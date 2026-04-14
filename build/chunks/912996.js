@@ -2,24 +2,24 @@
 n.d(t, {
     A: () => r
 });
-var a = n(311907),
-    i = n(73153);
-let l = {};
-class s extends a.Ay.PersistedStore {
+var i = n(311907),
+    l = n(73153);
+let a = {};
+class s extends i.Ay.PersistedStore {
     static displayName = "ActivityInviteEducationStore";
     static persistKey = "ActivityInviteEducationExperimentStore";
     initialize(e) {
-        Object.assign(l, e)
+        Object.assign(a, e)
     }
     getState() {
-        return l
+        return a
     }
     shouldShowEducation(e) {
-        return !0 !== l[e]
+        return !0 !== a[e]
     }
 }
-let r = new s(i.h, {
+let r = new s(l.h, {
     ACTIVITY_INVITE_EDUCATION_DISMISS: function(e) {
-        return l[e.key] = e.value, !0
+        return a[e.key] = e.value, !0
     }
 })

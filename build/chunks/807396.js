@@ -381,7 +381,7 @@ function J(e) {
                 className: W.Il,
                 children: [(0, i.jsx)("img", {
                     alt: n.name,
-                    className: W.gj,
+                    className: r()(W.gj, W.sN),
                     src: s
                 }), (0, i.jsxs)("div", {
                     children: [(0, i.jsx)("div", {

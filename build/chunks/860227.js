@@ -1,19 +1,20 @@
 /** chunk id: 860227 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    CJ: () => s,
-    JH: () => d,
-    XL: () => u,
-    ZD: () => p,
+    CJ: () => a,
+    JH: () => c,
+    XL: () => d,
+    ZD: () => g,
     d$: () => o,
     fF: () => m,
     nS: () => r,
-    xl: () => c
+    xl: () => u
 });
-var a = n(264927),
+var l = n(264927),
     i = n(143413),
-    l = n(652215);
+    s = n(652215);
 
-function s(e) {
+function a(e) {
     return `message-content-${e.id}`
 }
 
@@ -26,51 +27,51 @@ function o(e, t) {
     return `message-username-${n}`
 }
 
-function c(e) {
+function u(e) {
     return `message-timestamp-${e.id}`
 }
 
-function d(e) {
+function c(e) {
     return `message-reactions-${e.id}`
 }
 
-function u(e) {
+function d(e) {
     return `message-accessories-${e.id}`
 }
 
 function m(e, t, n) {
-    let d = e.type === l.lAJ.REPLY && null != e.messageReference,
+    let c = e.type === s.lAJ.REPLY && null != e.messageReference,
         m = e.embeds.length > 0,
-        p = e.attachments.length > 0,
-        _ = e.stickerItems.length > 0,
-        h = e.codedLinks.length > 0,
-        A = e.components.length > 0,
-        g = e.hasFlag(l.pr7.HAS_THREAD),
-        f = m || p || _ || h || g || A || e.type === l.lAJ.THREAD_CREATED,
-        b = m && e.content === e.embeds[0].url && e.embeds[0].type === l.Auw.GIFV,
-        T = e.type !== l.lAJ.DEFAULT || !b && "" !== e.content,
-        x = (0, i.A)(e),
-        I = !x && n?.hasTimestamp !== !1,
-        C = o(e, t),
-        y = r(e),
-        E = x ? "" : `${d?y:C} ${a.lW}`;
-    if (T) {
-        let t = s(e);
-        E += ` ${t}`
+        g = e.attachments.length > 0,
+        h = e.stickerItems.length > 0,
+        A = e.codedLinks.length > 0,
+        f = e.components.length > 0,
+        p = e.hasFlag(s.pr7.HAS_THREAD),
+        x = m || g || h || A || p || f || e.type === s.lAJ.THREAD_CREATED,
+        v = m && e.content === e.embeds[0].url && e.embeds[0].type === s.Auw.GIFV,
+        C = e.type !== s.lAJ.DEFAULT || !v && "" !== e.content,
+        N = (0, i.A)(e),
+        E = !N && n?.hasTimestamp !== !1,
+        I = o(e, t),
+        _ = r(e),
+        b = N ? "" : `${c?_:I} ${l.lW}`;
+    if (C) {
+        let t = a(e);
+        b += ` ${t}`
     }
-    if (f) {
+    if (x) {
+        let t = d(e);
+        b += ` ${t}`
+    }
+    if (E) {
         let t = u(e);
-        E += ` ${t}`
+        b += ` ${l.l6} ${t}`
     }
-    if (I) {
-        let t = c(e);
-        E += ` ${a.l6} ${t}`
-    }
-    return E.trim()
+    return b.trim()
 }
 
-function p(e) {
+function g(e) {
     if (0 === e.reactions.length) return;
-    let t = d(e);
-    return `${a.oz} ${t}`
+    let t = c(e);
+    return `${l.oz} ${t}`
 }

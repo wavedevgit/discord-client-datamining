@@ -23,15 +23,15 @@ function p(e) {
         src: b,
         embed: h = !1,
         maxWidth: f,
-        maxHeight: C,
-        channelId: g,
+        maxHeight: g,
+        channelId: C,
         showParticipants: v = !0,
         volume: x,
         autoMute: I,
         onVolumeChange: y,
         onMutedChange: S,
         onContextMenu: A
-    } = e, w = t.width ?? 0, B = t.height ?? 0, P = (0, l.bG)([_.A], () => _.A.getBasicChannel(g)?.guild_id, [g]), M = w > 0 && B > 0 ? Math.min((f ?? 1 / 0) / w, (C ?? 1 / 0) / B, 1) : 1, j = Math.round(w * M), T = Math.round(B * M), k = (0, c.AE)({
+    } = e, w = t.width ?? 0, B = t.height ?? 0, P = (0, l.bG)([_.A], () => _.A.getBasicChannel(C)?.guild_id, [C]), M = w > 0 && B > 0 ? Math.min((f ?? 1 / 0) / w, (g ?? 1 / 0) / B, 1) : 1, j = Math.round(w * M), T = Math.round(B * M), k = (0, c.AE)({
         src: n,
         width: j,
         height: T
@@ -64,7 +64,7 @@ function p(e) {
         onContextMenu: A,
         style: {
             aspectRatio: `${w} / ${B}`,
-            maxHeight: C,
+            maxHeight: g,
             width: h ? void 0 : j,
             height: h ? void 0 : T
         },
