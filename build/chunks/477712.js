@@ -3,10 +3,10 @@ n.d(t, {
     A: () => r
 });
 var i = n(562465),
-    l = n(449054),
-    s = n(652215);
+    a = n(449054),
+    l = n(652215);
 let r = e => i.Bo.get({
-    url: s.Rsh.STICKER_GUILD_DATA(e),
+    url: l.Rsh.STICKER_GUILD_DATA(e),
     oldFormErrors: !0,
     rejectWithError: !0
-}).then(e => e?.body != null ? (0, l.jE)(e.body) : null).catch(() => null)
+}).then(e => e?.body != null ? (0, a.jE)(e.body) : null).catch(() => null)

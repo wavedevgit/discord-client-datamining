@@ -4,40 +4,40 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(317097),
-    s = n(397927),
+var a = n(317097),
+    l = n(397927),
     r = n(985018),
-    a = n(473107);
+    s = n(473107);
 
 function o(e) {
     let {
         locked: t,
         role: n,
         textVariant: o = "text-xs/medium"
-    } = e, d = (0, s.rdh)(s.LU0.colors.INTERACTIVE_TEXT_DEFAULT).hex();
+    } = e, d = (0, l.rdh)(l.LU0.colors.INTERACTIVE_TEXT_DEFAULT).hex();
     return (0, i.jsx)("div", {
-        className: a.ex,
+        className: s.ex,
         children: (0, i.jsxs)("div", {
-            className: a.b6,
+            className: s.b6,
             children: [(0, i.jsx)("div", {
-                className: a.yY,
+                className: s.yY,
                 style: {
-                    backgroundColor: (0, l.Hl)(n.color)
+                    backgroundColor: (0, a.Hl)(n.color)
                 }
-            }), (0, i.jsx)(s.hKd, {
+            }), (0, i.jsx)(l.hKd, {
                 size: 8,
                 horizontal: !0
-            }), (0, i.jsxs)(s.Text, {
+            }), (0, i.jsxs)(l.Text, {
                 variant: o,
                 color: "text-default",
-                children: [(0, i.jsx)(s.AC4, {
+                children: [(0, i.jsx)(l.AC4, {
                     children: r.intl.string(r.t.RnyseL)
                 }), n.name]
             }), !0 === t && (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(s.hKd, {
+                children: [(0, i.jsx)(l.hKd, {
                     size: 8,
                     horizontal: !0
-                }), (0, i.jsx)(s.XAi, {
+                }), (0, i.jsx)(l.XAi, {
                     size: "md",
                     color: d
                 })]

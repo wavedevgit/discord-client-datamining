@@ -1,12 +1,12 @@
 /** chunk id: 699352 params = (module,exports,require) **/
 n.d(t, {
     A: () => r,
-    J: () => a
+    J: () => s
 });
 var i = n(627968);
 n(64700);
-var l = n(21878),
-    s = n(756369);
+var a = n(21878),
+    l = n(756369);
 
 function r(e) {
     let {
@@ -15,7 +15,7 @@ function r(e) {
             channel: n,
             compact: r = !1
         },
-        hasSpoilerEmbeds: a,
+        hasSpoilerEmbeds: s,
         hasBailedAst: o,
         handleContextMenu: d,
         isInteracting: c,
@@ -28,15 +28,15 @@ function r(e) {
         disableComponentInteractivity: A,
         className: x
     } = e;
-    return u ? null : (0, i.jsx)(l.A, {
+    return u ? null : (0, i.jsx)(a.A, {
         message: t,
-        children: (0, i.jsx)(s.Ay, {
+        children: (0, i.jsx)(l.Ay, {
             className: x,
             isInteracting: c,
             message: t,
             channel: n,
             compact: r,
-            hasSpoilerEmbeds: a,
+            hasSpoilerEmbeds: s,
             hasBailedAst: o,
             isMessageSnapshot: _,
             onMediaItemContextMenu: d,
@@ -49,19 +49,19 @@ function r(e) {
     })
 }
 
-function a(e, t, n) {
+function s(e, t, n) {
     let {
-        message: l,
+        message: a,
         channel: r,
-        compact: a = !1,
+        compact: s = !1,
         renderThreadAccessory: o,
         disableReactionCreates: d,
         disableReactionUpdates: c
     } = e;
-    return (0, i.jsx)(s.OC, {
-        message: l,
+    return (0, i.jsx)(l.OC, {
+        message: a,
         channel: r,
-        compact: a,
+        compact: s,
         hasSpoilerEmbeds: t,
         hasBailedAst: n,
         renderThreadAccessory: o,

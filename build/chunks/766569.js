@@ -36,7 +36,7 @@ function L(e) {
     (0, o.mMO)(async () => {
         let {
             default: t
-        } = await n.e("87662").then(n.bind(n, 547352));
+        } = await n.e("65281").then(n.bind(n, 547352));
         return n => (0, i.jsx)(t, {
             source: {
                 ...e,

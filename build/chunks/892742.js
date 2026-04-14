@@ -3,10 +3,10 @@ n.d(t, {
     A: () => x
 });
 var i = n(627968),
-    l = n(64700),
-    s = n(397927),
+    a = n(64700),
+    l = n(397927),
     r = n(341915),
-    a = n(570852),
+    s = n(570852),
     o = n(890687),
     d = n(710969),
     c = n(814793),
@@ -28,12 +28,12 @@ function x(e) {
     } = (0, o.mL)({
         fetchPolicy: "cache-or-network",
         callerSource: "embed"
-    }), C = l.useMemo(() => (0, d.vc)(t, n, x), [t, n, x]), E = l.useMemo(() => x.find(e => e.id === t), [t, x]), {
+    }), C = a.useMemo(() => (0, d.vc)(t, n, x), [t, n, x]), E = a.useMemo(() => x.find(e => e.id === t), [t, x]), {
         enabled: I
-    } = a.S.useConfig({
+    } = s.S.useConfig({
         location: g.rE.EMBED_DESKTOP
     });
-    return f ? (0, i.jsx)(s.y$y, {
+    return f ? (0, i.jsx)(l.y$y, {
         className: A.u
     }) : null == C ? null != E ? (0, i.jsx)(u.g, {
         questId: t

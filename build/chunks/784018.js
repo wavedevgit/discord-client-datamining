@@ -1,12 +1,12 @@
 /** chunk id: 784018 params = (module,exports,require) **/
-n.d(t, {
-    Im: () => r,
+a.d(t, {
+    Im: () => n,
     LI: () => i,
-    kz: () => a,
+    kz: () => r,
     pQ: () => o
 });
-let a = "https://cdn.discordapp.com/assets/media_channel/admin_edu_discord_birthday.mp4",
-    r = "https://cdn.discordapp.com/assets/quests/1276640451235156082/transcoded_akuma_trailer.m3u8",
+let r = "https://cdn.discordapp.com/assets/media_channel/admin_edu_discord_birthday.mp4",
+    n = "https://cdn.discordapp.com/assets/quests/1276640451235156082/transcoded_akuma_trailer.m3u8",
     o = `Wumpus is sitting at a desk in front of a computer.
 Wumpus clicks on settings and then enables Party Mode.
 The screen says Party Mode activited and confetti starts flying out of the screen as celebratory music plays.

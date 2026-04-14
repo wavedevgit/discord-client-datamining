@@ -3,26 +3,26 @@ n.d(t, {
     A: () => c,
     e: () => r
 });
-var i, l = n(311907),
-    s = n(73153),
+var i, a = n(311907),
+    l = n(73153),
     r = ((i = {})[i.NOT_FETCHED = 0] = "NOT_FETCHED", i[i.FETCHING = 1] = "FETCHING", i[i.FETCHED = 2] = "FETCHED", i[i.FAILED = 3] = "FAILED", i);
-let a = {},
+let s = {},
     o = {};
-class d extends l.Ay.Store {
+class d extends a.Ay.Store {
     static displayName = "MediaPostEmbedStore";
     getMediaPostEmbed(e) {
-        if (null != e) return a[e]
+        if (null != e) return s[e]
     }
     getEmbedFetchState(e) {
         return o[e] ?? 0
     }
     getMediaPostEmbeds() {
-        return a
+        return s
     }
 }
-let c = new d(s.h, {
+let c = new d(l.h, {
     CONNECTION_OPEN: function() {
-        a = {}, o = {}
+        s = {}, o = {}
     },
     MEDIA_POST_EMBED_FETCH: function(e) {
         let {
@@ -35,8 +35,8 @@ let c = new d(s.h, {
             threadId: t,
             mediaPostEmbed: n
         } = e;
-        a = {
-            ...a,
+        s = {
+            ...s,
             [t]: n
         }, o[t] = 2
     },
@@ -47,6 +47,6 @@ let c = new d(s.h, {
         o[t] = 3
     },
     LOGOUT: function(e) {
-        e.isSwitchingAccount || (a = {}, o = {})
+        e.isSwitchingAccount || (s = {}, o = {})
     }
 })

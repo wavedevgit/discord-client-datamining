@@ -3,10 +3,10 @@ n.d(t, {
     A: () => N
 });
 var i = n(627968),
-    l = n(64700),
-    s = n(503698),
-    r = n.n(s),
-    a = n(110259),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
+    s = n(110259),
     o = n(311907),
     d = n(397927),
     c = n(846293),
@@ -32,38 +32,38 @@ function N(e) {
     let {
         invite: t,
         isMemberOfGuild: n,
-        message: s,
+        message: l,
         onTransitionToInviteChannel: c,
         onAcceptInstantInvite: g
-    } = e, x = l.useRef(null), [N, L] = l.useState(!0), [R, P] = l.useState(!1), D = t.state === T.elq.ACCEPTING, M = (0, o.bG)([u.A], () => u.A.useReducedMotion), {
-        analyticsLocations: w
+    } = e, x = a.useRef(null), [N, L] = a.useState(!0), [R, P] = a.useState(!1), M = t.state === T.elq.ACCEPTING, w = (0, o.bG)([u.A], () => u.A.useReducedMotion), {
+        analyticsLocations: D
     } = (0, m.Ay)(_.A.INVITE_EMBED);
     (0, h.A)({
-        name: a.ImpressionNames.INVITE_EMBED,
-        type: a.ImpressionTypes.VIEW,
+        name: s.ImpressionNames.INVITE_EMBED,
+        type: s.ImpressionTypes.VIEW,
         properties: {
             invite_code: t.code,
             invite_guild_id: t.guild?.id,
             invite_channel_id: t.channel?.id,
-            invite_instance_id: (0, E._U)(t.code, s.id),
+            invite_instance_id: (0, E._U)(t.code, l.id),
             invite_channel_type: t.channel?.type,
             embed_type: "guild_invite_v2",
-            location_stack: w
+            location_stack: D
         }
-    }), l.useLayoutEffect(() => {
+    }), a.useLayoutEffect(() => {
         P((x.current?.clientHeight ?? 0) > 292)
     }, [P]);
     let k = (0, p.oO)(t),
-        O = l.useCallback(() => {
+        O = a.useCallback(() => {
             !R || N && L(!1)
         }, [N, R]),
-        U = l.useCallback(() => {
+        U = a.useCallback(() => {
             !R || N || L(!0)
         }, [N, R]),
-        B = l.useMemo(() => R && x.current?.clientHeight != null ? {
+        B = a.useMemo(() => R && x.current?.clientHeight != null ? {
             height: N ? 292 : x.current.clientHeight + 36 + 48,
-            transition: M ? void 0 : "height 0.2s ease"
-        } : {}, [N, R, M]);
+            transition: w ? void 0 : "height 0.2s ease"
+        } : {}, [N, R, w]);
     return null == k ? (0, i.jsx)(b.A, {}) : (0, i.jsxs)(d.sqX, {
         className: r()(S.Gg, {
             [S.vk]: R && N
@@ -114,8 +114,8 @@ function N(e) {
                         invite: t,
                         profile: k,
                         isMemberOfGuild: n,
-                        message: s,
-                        submitting: D,
+                        message: l,
+                        submitting: M,
                         onTransitionToInviteChannel: c,
                         onAcceptInstantInvite: g
                     })
@@ -129,9 +129,9 @@ function j(e) {
     let {
         invite: t,
         profile: n,
-        isMemberOfGuild: s,
+        isMemberOfGuild: l,
         message: r,
-        submitting: a,
+        submitting: s,
         onTransitionToInviteChannel: o,
         onAcceptInstantInvite: d
     } = e, {
@@ -139,8 +139,8 @@ function j(e) {
         ctaType: h
     } = (0, g.Ay)(n, g.cn.INVITE, t.code), {
         analyticsLocations: p
-    } = (0, m.Ay)(_.A.INVITE_EMBED), A = l.useCallback(() => {
-        let e = s ? "transition" : "accept";
+    } = (0, m.Ay)(_.A.INVITE_EMBED), A = a.useCallback(() => {
+        let e = l ? "transition" : "accept";
         (0, c.he)({
             invite: t,
             action: e,
@@ -148,11 +148,11 @@ function j(e) {
             invite_message_id: r.id,
             invite_instance_id: (0, E._U)(t.code, r.id)
         }, p)
-    }, [t, r, p, s]);
+    }, [t, r, p, l]);
     return null == h ? null : (0, i.jsx)(x.Y, {
         guildId: u,
         ctaType: h,
-        submitting: a,
+        submitting: s,
         onGoToGuild: o,
         onAcceptInvite: d,
         onStartApplication: d,

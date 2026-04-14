@@ -3,10 +3,10 @@ n.d(t, {
     A: () => g
 });
 var i = n(627968),
-    l = n(64700),
-    s = n(158954),
+    a = n(64700),
+    l = n(158954),
     r = n(956793),
-    a = n(265422),
+    s = n(265422),
     o = n(986268),
     d = n(529200),
     c = n(309010),
@@ -21,7 +21,7 @@ function g(e) {
         guild: t,
         channel: n,
         message: g
-    } = e, A = u.A.getGuildId(), x = c.A.getChannelId(A), f = l.useCallback(() => {
+    } = e, A = u.A.getGuildId(), x = c.A.getChannelId(A), f = a.useCallback(() => {
         _.default.track(m.HAw.CHANNEL_LINK_PREVIEW_JOINED, {
             author_id: g.author?.id,
             link_guild_id: t.id,
@@ -29,7 +29,7 @@ function g(e) {
             link_channel_type: n.type,
             guild_id: A,
             channel_id: x
-        }), (0, a.i)(t.id, n.id), r.default.selectVoiceChannel(n.id)
+        }), (0, s.i)(t.id, n.id), r.default.selectVoiceChannel(n.id)
     }, [g, t, n, A, x]), C = (0, i.jsx)(d.A.Channel, {
         channel: n
     });
@@ -57,7 +57,7 @@ function g(e) {
                 })]
             }), (0, i.jsx)("div", {
                 className: p.UD,
-                children: (0, i.jsx)(s.$nd, {
+                children: (0, i.jsx)(l.$nd, {
                     fullWidth: !0,
                     onClick: f,
                     variant: "active",

@@ -4,10 +4,10 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(110259),
-    s = n(417597),
+var a = n(110259),
+    l = n(417597),
     r = n(793574),
-    a = n(139286),
+    s = n(139286),
     o = n(967198),
     d = n(250627),
     c = n(284605),
@@ -16,10 +16,10 @@ var l = n(110259),
 function _(e) {
     let {
         code: t
-    } = e, [n, _] = t.split("-"), m = (0, d.Qi)(n, _), h = (0, s.bG)([o.A], () => o.A.getGuildId());
-    return ((0, a.A)({
+    } = e, [n, _] = t.split("-"), m = (0, d.Qi)(n, _), h = (0, l.bG)([o.A], () => o.A.getGuildId());
+    return ((0, s.A)({
         type: u.z.VIEW,
-        name: l.ImpressionNames.GUILD_PRODUCT_LISTING_EMBED,
+        name: a.ImpressionNames.GUILD_PRODUCT_LISTING_EMBED,
         properties: {
             guild_product_listing_id: _,
             has_entitlement: m?.has_entitlement === !0

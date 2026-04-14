@@ -3,10 +3,10 @@ n.d(t, {
     A: () => V
 });
 var i = n(627968),
-    l = n(64700),
-    s = n(158954),
+    a = n(64700),
+    l = n(158954),
     r = n(311907),
-    a = n(52133),
+    s = n(52133),
     o = n(827734),
     d = n(397927),
     c = n(803306),
@@ -32,9 +32,9 @@ var i = n(627968),
     L = n(71393),
     R = n(576705),
     P = n(994500),
-    D = n(309010),
-    M = n(287809),
-    w = n(954571),
+    M = n(309010),
+    w = n(287809),
+    D = n(954571),
     k = n(709634),
     O = n(652215),
     U = n(381941),
@@ -45,18 +45,18 @@ function G(e) {
         message: t,
         snapshot: n,
         index: c
-    } = e, _ = l.useMemo(() => new u.j(t, n, c), [t, n, c]), h = (0, r.bG)([N.A, M.default, P.A, R.A, L.A, m.A], () => _.getForwardInfo(N.A, M.default, P.A, R.A, L.A, m.A).footerInfo, [_], a.A), p = l.useCallback(() => {
+    } = e, _ = a.useMemo(() => new u.j(t, n, c), [t, n, c]), h = (0, r.bG)([N.A, w.default, P.A, R.A, L.A, m.A], () => _.getForwardInfo(N.A, w.default, P.A, R.A, L.A, m.A).footerInfo, [_], s.A), p = a.useCallback(() => {
         let e = N.A.getChannel(t.channel_id),
             n = L.A.getGuild(e?.guild_id),
             i = t.messageReference?.channel_id,
-            l = D.A.getCurrentlySelectedChannelId(),
-            s = S.Ay.getCurrentSidebarChannelId(t.messageReference?.channel_id),
-            r = l === i && s === e?.id;
+            a = M.A.getCurrentlySelectedChannelId(),
+            l = S.Ay.getCurrentSidebarChannelId(t.messageReference?.channel_id),
+            r = a === i && l === e?.id;
         null == e || null == n || r || null == i || (T.A.openModReportAsSidebar({
             channelId: e.id,
             baseChannelId: i,
             guildId: e.guild_id
-        }), (0, b.iN)(i), w.default.track(O.HAw.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
+        }), (0, b.iN)(i), D.default.track(O.HAw.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
             moderator_report_id: t.channel_id,
             destination_channel_id: i,
             destination_message_id: t.id
@@ -70,7 +70,7 @@ function G(e) {
             className: B.yl,
             src: h.originIconUrl,
             alt: ""
-        }) : null, (0, i.jsx)(s.EYj, {
+        }) : null, (0, i.jsx)(l.EYj, {
             className: B.PJ,
             variant: "text-sm/medium",
             color: "none",
@@ -86,10 +86,10 @@ function F(e) {
     let {
         mergedMessageRecord: t,
         content: n,
-        channel: s,
+        channel: l,
         reportingUserId: r,
-        reportedTimestamp: a
-    } = e, o = (0, p.m2)(t.author, s), {
+        reportedTimestamp: s
+    } = e, o = (0, p.m2)(t.author, l), {
         onClickUsername: d,
         onClickAvatar: c,
         onPopoutRequestClose: u,
@@ -100,35 +100,35 @@ function F(e) {
             popouts: n,
             setPopout: i
         } = (0, E.A)(e.id, U.Fd), {
-            usernameProfile: s,
+            usernameProfile: l,
             avatarProfile: r
-        } = n, a = (0, C.m)(e, t, s, i);
+        } = n, s = (0, C.m)(e, t, l, i);
         return {
-            onClickUsername: a,
+            onClickUsername: s,
             onClickAvatar: (0, C.Jo)(r, i),
-            onPopoutRequestClose: l.useCallback(() => i({
+            onPopoutRequestClose: a.useCallback(() => i({
                 usernameProfile: !1,
                 avatarProfile: !1,
                 referencedUsernameProfile: !1
             }), [i]),
-            showUsernamePopout: s,
+            showUsernamePopout: l,
             showAvatarPopout: r
         }
-    }(t, s);
+    }(t, l);
     return (0, i.jsx)(g.A, {
         childrenExecutedCommand: (0, i.jsx)(k.A, {
             reportingUserId: r,
-            guildId: s.guild_id,
-            channel: s,
+            guildId: l.guild_id,
+            channel: l,
             messageId: t.id,
-            reportedTimestamp: a,
+            reportedTimestamp: s,
             compact: !1
         }),
         childrenHeader: (0, i.jsx)(x.Ay, {
             message: t,
-            channel: s,
+            channel: l,
             author: o,
-            guildId: s.guild_id,
+            guildId: l.guild_id,
             hideTimestamp: !0,
             onClickUsername: d,
             onClickAvatar: c,
@@ -155,17 +155,17 @@ function H(e) {
     let {
         message: t,
         snapshot: n,
-        index: s
-    } = e, [a, o] = l.useState(void 0);
-    l.useEffect(() => {
+        index: l
+    } = e, [s, o] = a.useState(void 0);
+    a.useEffect(() => {
         n?.moderatorReport?.reported_user_id != null && (0, c.wz)(n.moderatorReport.reported_user_id).then(e => {
             o(e)
         }).catch(() => {})
     }, [n?.moderatorReport?.reported_user_id]);
-    let d = l.useMemo(() => {
+    let d = a.useMemo(() => {
             let e = (0, _.A)(t, n);
-            return null != a && n?.moderatorReport?.reported_user_id != null ? e.set("author", a) : e
-        }, [t, n, a]),
+            return null != s && n?.moderatorReport?.reported_user_id != null ? e.set("author", s) : e
+        }, [t, n, s]),
         u = y.hD.useSetting(),
         m = y.rs.useSetting(),
         p = (0, r.bG)([j.A], () => j.A.isDeveloper),
@@ -210,10 +210,10 @@ function H(e) {
             }), (0, i.jsx)(G, {
                 message: t,
                 snapshot: n,
-                index: s
+                index: l
             })]
         })
-    }, s)
+    }, l)
 }
 
 function V(e) {

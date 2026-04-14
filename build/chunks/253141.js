@@ -4,24 +4,24 @@ n.d(t, {
     KW: () => c,
     a: () => r,
     ig: () => o,
-    kt: () => a
+    kt: () => s
 });
 var i = n(198982);
 n(576705);
-var l = n(652215),
-    s = n(985018);
+var a = n(652215),
+    l = n(985018);
 let r = "_role";
 
-function a(e) {
+function s(e) {
     if (!(e >= 0)) switch (-e) {
-        case l.t02.ENTITY_TOO_LARGE:
-            return s.intl.string(s.t.YbdEFK);
-        case l.t02.INVALID_SKU_ATTACHMENT_NO_ARCHIVES:
-            return s.intl.string(s.t.ZaXBoD);
+        case a.t02.ENTITY_TOO_LARGE:
+            return l.intl.string(l.t.YbdEFK);
+        case a.t02.INVALID_SKU_ATTACHMENT_NO_ARCHIVES:
+            return l.intl.string(l.t.ZaXBoD);
         case 1:
-            return s.intl.string(s.t.R0RpRX);
+            return l.intl.string(l.t.R0RpRX);
         default:
-            return s.intl.formatToPlainString(s.t.cYwlp9, {
+            return l.intl.formatToPlainString(l.t.cYwlp9, {
                 code: -e
             })
     }
@@ -33,7 +33,7 @@ function o(e) {
     } = e;
     if (null != t && "" === t.name.trim()) {
         var n;
-        return n = s.intl.string(s.t["V0B/k6"]), new i.LG({
+        return n = l.intl.string(l.t["V0B/k6"]), new i.LG({
             status: 400,
             body: {
                 message: "Invalid form body",
@@ -55,14 +55,14 @@ function d(e) {
         guildProductListing: t,
         name: n,
         priceTier: i,
-        description: l,
-        image: s,
+        description: a,
+        image: l,
         imageName: r,
-        isImageChanged: a,
+        isImageChanged: s,
         newRoleParams: o,
         hasUnsavedAttachmentChanges: d
     } = e, c = {};
-    t?.name !== n && "" !== n.trim() && (c.name = n), (t?.description ?? "") !== l && (c.description = l), t?.price_tier !== i && null != i && (c.priceTier = i), null != o && "" !== o.name.trim() ? c.createNewRole = !0 : null === o && (c.unlinkRole = !0), s.startsWith("data:") && (a || null == t && (Object.keys(c).length > 0 || d)) && (c.image = s, c.imageName = r);
+    t?.name !== n && "" !== n.trim() && (c.name = n), (t?.description ?? "") !== a && (c.description = a), t?.price_tier !== i && null != i && (c.priceTier = i), null != o && "" !== o.name.trim() ? c.createNewRole = !0 : null === o && (c.unlinkRole = !0), l.startsWith("data:") && (s || null == t && (Object.keys(c).length > 0 || d)) && (c.image = l, c.imageName = r);
     let u = Object.keys(c).length > 0 || d;
     return {
         changes: c,
@@ -74,5 +74,5 @@ function d(e) {
 }
 
 function c(e, t) {
-    return `${location.protocol}//${location.host}${l.BVt.GUILD_PRODUCT(e,t)}`
+    return `${location.protocol}//${location.host}${a.BVt.GUILD_PRODUCT(e,t)}`
 }

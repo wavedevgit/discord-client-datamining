@@ -4,10 +4,10 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(503698),
-    s = n.n(l),
+var a = n(503698),
+    l = n.n(a),
     r = n(397927),
-    a = n(915089),
+    s = n(915089),
     o = n(308234),
     d = n(724609),
     c = n(411342),
@@ -18,12 +18,12 @@ function m(e) {
     let {
         hidePurchaseToUnlockBadge: t,
         showDraftBadge: n,
-        className: l,
-        children: a
+        className: a,
+        children: s
     } = e;
     return (0, i.jsxs)("div", {
-        className: s()(_.v0, l),
-        children: [a, !t && (0, i.jsxs)("div", {
+        className: l()(_.v0, a),
+        children: [s, !t && (0, i.jsxs)("div", {
             className: _.su,
             children: [(0, i.jsx)(r.XAi, {
                 size: "xs",
@@ -47,7 +47,7 @@ function h(e) {
     let {
         onShowFullDescription: t,
         variant: n
-    } = e, l = (0, i.jsxs)(i.Fragment, {
+    } = e, a = (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(r.Text, {
             variant: n,
             color: null != t ? "text-link" : "interactive-text-hover",
@@ -60,13 +60,13 @@ function h(e) {
     });
     return null == t ? (0, i.jsx)("div", {
         className: _.dO,
-        children: l
+        children: a
     }) : (0, i.jsx)(r.DUT, {
-        className: s()(_.dO, _.hY),
+        className: l()(_.dO, _.hY),
         onClick: e => {
             e.stopPropagation(), null != t && t()
         },
-        children: l
+        children: a
     })
 }
 
@@ -74,7 +74,7 @@ function p(e) {
     let {
         imageUrl: t,
         name: n,
-        description: l,
+        description: a,
         formattedPrice: d,
         role: p,
         ctaComponent: g,
@@ -91,7 +91,7 @@ function p(e) {
         thumbnailHeight: S = 187,
         descriptionTextVariant: N = "text-sm/normal",
         isDraft: j = !1
-    } = e, L = (0, a.Ld)(), R = (0, i.jsxs)(i.Fragment, {
+    } = e, L = (0, s.Ld)(), R = (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(m, {
             showDraftBadge: j,
             hidePurchaseToUnlockBadge: !0,
@@ -118,7 +118,7 @@ function p(e) {
                         variant: N,
                         color: "text-muted",
                         lineClamp: b,
-                        text: l
+                        text: a
                     })
                 }), A && (0, i.jsx)(h, {
                     onShowFullDescription: x,
@@ -153,7 +153,7 @@ function p(e) {
         })]
     });
     return null == C ? (0, i.jsx)("article", {
-        className: s()(_.Um, I ? _.sG : _.Wi),
+        className: l()(_.Um, I ? _.sG : _.Wi),
         "aria-labelledby": L,
         children: R
     }) : (0, i.jsx)("div", {
@@ -166,7 +166,7 @@ function p(e) {
             "aria-label": u.intl.formatToPlainString(u.t["e+TmJa"], {
                 productName: n
             }),
-            className: s()(_.Um, I ? _.sG : _.Wi, _.GA),
+            className: l()(_.Um, I ? _.sG : _.Wi, _.GA),
             onClick: C,
             children: R
         })

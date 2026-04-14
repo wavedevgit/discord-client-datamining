@@ -3,10 +3,10 @@ n.d(t, {
     e: () => _
 });
 var i = n(627968),
-    l = n(827734),
-    s = n(397927),
+    a = n(827734),
+    l = n(397927),
     r = n(998304),
-    a = n(890687),
+    s = n(890687),
     o = n(545986),
     d = n(652215),
     c = n(985018),
@@ -17,14 +17,14 @@ function _(e) {
         onClick: t,
         questId: n,
         canUseQuestOrbMultiplier: _
-    } = e, m = (0, a.ZP)(n), h = (0, s.rdh)(l.A.colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START, d.NJ8.DARK).hex(), p = (0, s.rdh)(l.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_DIAMOND_END, d.NJ8.DARK).hex(), g = (0, s.rdh)(l.A.colors.BACKGROUND_BASE_LOWEST, d.NJ8.DARK).hex(), A = (0, r.cb)(h, .5), x = (0, r.cb)(p, .5);
+    } = e, m = (0, s.ZP)(n), h = (0, l.rdh)(a.A.colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START, d.NJ8.DARK).hex(), p = (0, l.rdh)(a.A.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_DIAMOND_END, d.NJ8.DARK).hex(), g = (0, l.rdh)(a.A.colors.BACKGROUND_BASE_LOWEST, d.NJ8.DARK).hex(), A = (0, r.cb)(h, .5), x = (0, r.cb)(p, .5);
     if (null == m) return null;
     let f = _ ? c.intl.formatToPlainString(c.t.l2UfLG, {
         bonusOrbMultiplier: m
     }) : c.intl.formatToPlainString(c.t["G+mKoo"], {
         bonusOrbMultiplier: m
     });
-    return (0, i.jsx)(s.DUT, {
+    return (0, i.jsx)(l.DUT, {
         onClick: () => {
             (0, o.gC)(m, _), t?.()
         },
@@ -36,10 +36,10 @@ function _(e) {
                 "--custom-pill-gradient-end": x,
                 "--custom-pill-base-color": g
             },
-            children: [(0, i.jsx)(s.tvc, {
+            children: [(0, i.jsx)(l.tvc, {
                 size: "xs",
                 color: "white"
-            }), (0, i.jsx)(s.Text, {
+            }), (0, i.jsx)(l.Text, {
                 variant: "text-xs/semibold",
                 color: "always-white",
                 children: f

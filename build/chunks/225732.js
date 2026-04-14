@@ -85,6 +85,12 @@ function ex(e) {
         trackAction: s
     } = e, c = l.useMemo(() => t?.genres.map(R.du).join(", "), [t]), [d] = l.useState(() => Math.random()), u = l.useMemo(() => {
         if (null == t) return "";
+        if (null != t.bannerHash) return k.Ay.getGameAssetURL({
+            id: t.id,
+            hash: t.bannerHash,
+            size: 2048,
+            keepAspectRatio: !0
+        }) ?? "";
         let e = t.getArtworkURLs(),
             n = t.screenshotUrls ?? [];
         if (e.length > 0) {

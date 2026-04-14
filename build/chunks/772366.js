@@ -4,24 +4,24 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(397927),
-    s = n(71393);
+var a = n(397927),
+    l = n(71393);
 
 function r(e) {
     let {
         onCloseCallback: t,
         analyticsLocations: r,
-        ...a
+        ...s
     } = e;
-    (0, l.mMO)(async () => {
+    (0, a.mMO)(async () => {
         let {
             default: e
-        } = await Promise.all([n.e("91757"), n.e("45990")]).then(n.bind(n, 307794));
+        } = await n.e("45990").then(n.bind(n, 307794));
         return t => (0, i.jsx)(e, {
             ...t,
-            ...a,
+            ...s,
             analyticsLocations: r,
-            guildCount: s.A.getGuildCount(),
+            guildCount: l.A.getGuildCount(),
             "aria-labelledby": "nitro-guild-cap-upsell"
         })
     }, {

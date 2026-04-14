@@ -1,34 +1,34 @@
 /** chunk id: 758889 params = (module,exports,require) **/
-n.d(t, {
+a.d(t, {
     Vy: () => m
 });
-var a = n(627968),
-    r = n(64700),
-    o = n(397927),
-    i = n(405670),
-    l = n(931135),
-    s = n(762168),
-    c = n(654487),
-    d = n(652215);
+var r = a(627968),
+    n = a(64700),
+    o = a(397927),
+    i = a(405670),
+    s = a(931135),
+    l = a(762168),
+    d = a(654487),
+    u = a(652215);
 
-function u(e) {
+function c(e) {
     let {
         orientation: t,
-        autoplay: n,
-        questCompleted: u,
+        autoplay: a,
+        questCompleted: c,
         fullEpisode: p,
         targetTimeSec: m,
-        videoUrl: b,
-        useNewStyling: _
-    } = e, g = "portrait" === t, S = (0, s.DX)({
-        url: b,
-        width: g ? 360 : 640,
-        height: g ? 640 : 360,
+        videoUrl: g,
+        useNewStyling: f
+    } = e, h = "portrait" === t, S = (0, l.DX)({
+        url: g,
+        width: h ? 360 : 640,
+        height: h ? 640 : 360,
         target: m,
-        videoTitle: g ? "Test Portrait Video" : "Test Landscape Video",
+        videoTitle: h ? "Test Portrait Video" : "Test Landscape Video",
         transcript: "transcript.txt"
-    }), f = (0, s.ec)(S), v = r.useRef(!1);
-    v.current || (v.current = !0, i.Kr.getState().clearState()), r.useEffect(() => {
+    }), x = (0, l.ec)(S), v = n.useRef(!1);
+    v.current || (v.current = !0, i.Kr.getState().clearState()), n.useEffect(() => {
         let e = document.querySelector('[data-testid="discord-web-video-player-video"]');
         if (null == e) return;
         let t = () => {
@@ -38,39 +38,39 @@ function u(e) {
             once: !0
         }), () => e.removeEventListener("loadedmetadata", t);
         t()
-    }, []), p && (f.config.features = [c.Li.FULL_EPISODE_VIDEO_QUEST]);
-    let h = u ? {
-        ...f,
-        userStatus: (0, s.kK)({
-            enrolledAt: f.userStatus?.enrolledAt ?? null,
-            completedAt: f.userStatus?.enrolledAt ?? null,
+    }, []), p && (x.config.features = [d.Li.FULL_EPISODE_VIDEO_QUEST]);
+    let E = c ? {
+        ...x,
+        userStatus: (0, l.kK)({
+            enrolledAt: x.userStatus?.enrolledAt ?? null,
+            completedAt: x.userStatus?.enrolledAt ?? null,
             streamProgressSeconds: S.target
         })
-    } : f;
-    return (0, a.jsx)("div", {
+    } : x;
+    return (0, r.jsx)("div", {
         style: {
             display: "flex",
             flexDirection: "column",
-            width: g ? "400px" : "100%",
-            maxWidth: g ? void 0 : "800px",
-            height: g ? "700px" : "500px",
+            width: h ? "400px" : "100%",
+            maxWidth: h ? void 0 : "800px",
+            height: h ? "700px" : "500px",
             backgroundColor: "#1e1f22",
             borderRadius: "8px",
             overflow: "hidden"
         },
-        children: (0, a.jsx)(s.sn, {
-            quest: h,
-            isPortrait: g,
-            useNewStyling: _,
-            children: (0, a.jsx)(l.A, {
+        children: (0, r.jsx)(l.sn, {
+            quest: E,
+            isPortrait: h,
+            useNewStyling: f,
+            children: (0, r.jsx)(s.A, {
                 targetTimeSec: S.target,
                 parentTransitionState: o.ip4.ENTERED,
-                onOptimisticProgressUpdate: d.tEg,
-                autoplay: n,
+                onOptimisticProgressUpdate: u.tEg,
+                autoplay: a,
                 autoFocus: !1,
                 performanceClockStartTime: 0,
                 orientation: t,
-                videoUrlOverride: b
+                videoUrlOverride: g
             })
         })
     })
@@ -85,11 +85,11 @@ let p = {
         stories: [{
             name: "Landscape",
             id: "landscape-video-composed",
-            component: u,
+            component: c,
             controls: {
-                ...s._v,
+                ...l._v,
                 orientation: {
-                    ...s._v.orientation,
+                    ...l._v.orientation,
                     defaultValue: "landscape"
                 },
                 fullEpisode: p
@@ -97,11 +97,11 @@ let p = {
         }, {
             name: "Portrait",
             id: "portrait-video-composed",
-            component: u,
+            component: c,
             controls: {
-                ...s._v,
+                ...l._v,
                 orientation: {
-                    ...s._v.orientation,
+                    ...l._v.orientation,
                     defaultValue: "portrait"
                 },
                 fullEpisode: p
@@ -109,11 +109,11 @@ let p = {
         }, {
             name: "Landscape — Autoplay",
             id: "landscape-video-composed-autoplay",
-            component: u,
+            component: c,
             controls: {
-                ...s._v,
+                ...l._v,
                 orientation: {
-                    ...s._v.orientation,
+                    ...l._v.orientation,
                     defaultValue: "landscape"
                 },
                 autoplay: {
@@ -129,30 +129,30 @@ let p = {
             component: function(e) {
                 let {
                     orientation: t,
-                    autoplay: n,
-                    questCompleted: r,
+                    autoplay: a,
+                    questCompleted: n,
                     fullEpisode: i,
-                    targetTimeSec: u,
+                    targetTimeSec: c,
                     videoUrl: p,
                     useNewStyling: m
-                } = e, b = "portrait" === t, _ = (0, s.DX)({
+                } = e, g = "portrait" === t, f = (0, l.DX)({
                     url: p,
-                    width: b ? 360 : 640,
-                    height: b ? 640 : 360,
-                    target: u,
-                    videoTitle: b ? "Test Portrait Video" : "Test Landscape Video",
+                    width: g ? 360 : 640,
+                    height: g ? 640 : 360,
+                    target: c,
+                    videoTitle: g ? "Test Portrait Video" : "Test Landscape Video",
                     transcript: "transcript.txt"
-                }), g = (0, s.ec)(_);
-                i && (g.config.features = [c.Li.FULL_EPISODE_VIDEO_QUEST]);
-                let S = r ? {
-                    ...g,
-                    userStatus: (0, s.kK)({
-                        enrolledAt: g.userStatus?.enrolledAt ?? null,
-                        completedAt: g.userStatus?.enrolledAt ?? null,
-                        streamProgressSeconds: _.target
+                }), h = (0, l.ec)(f);
+                i && (h.config.features = [d.Li.FULL_EPISODE_VIDEO_QUEST]);
+                let S = n ? {
+                    ...h,
+                    userStatus: (0, l.kK)({
+                        enrolledAt: h.userStatus?.enrolledAt ?? null,
+                        completedAt: h.userStatus?.enrolledAt ?? null,
+                        streamProgressSeconds: f.target
                     })
-                } : g;
-                return (0, a.jsx)("div", {
+                } : h;
+                return (0, r.jsx)("div", {
                     style: {
                         display: "flex",
                         flexDirection: "column",
@@ -163,15 +163,15 @@ let p = {
                         borderRadius: "8px",
                         overflow: "hidden"
                     },
-                    children: (0, a.jsx)(s.sn, {
+                    children: (0, r.jsx)(l.sn, {
                         quest: S,
                         isPortrait: !1,
                         useNewStyling: m,
-                        children: (0, a.jsx)(l.A, {
-                            targetTimeSec: _.target,
+                        children: (0, r.jsx)(s.A, {
+                            targetTimeSec: f.target,
                             parentTransitionState: o.ip4.ENTERED,
-                            onOptimisticProgressUpdate: d.tEg,
-                            autoplay: n,
+                            onOptimisticProgressUpdate: u.tEg,
+                            autoplay: a,
                             autoFocus: !1,
                             performanceClockStartTime: 0,
                             orientation: t,
@@ -181,9 +181,9 @@ let p = {
                 })
             },
             controls: {
-                ...s._v,
+                ...l._v,
                 orientation: {
-                    ...s._v.orientation,
+                    ...l._v.orientation,
                     defaultValue: "landscape"
                 },
                 fullEpisode: p

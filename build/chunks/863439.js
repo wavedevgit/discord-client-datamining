@@ -1,12 +1,12 @@
 /** chunk id: 863439 params = (module,exports,require) **/
-i.d(t, {
+n.d(t, {
     A: () => r,
     z: () => o
 });
-var n = i(417597),
-    s = i(253932),
-    l = i(576705),
-    a = i(652215);
+var i = n(417597),
+    s = n(253932),
+    l = n(576705),
+    a = n(652215);
 
 function r(e, t) {
     switch (e) {
@@ -21,6 +21,6 @@ function r(e, t) {
 }
 
 function o(e) {
-    let t = (0, n.bG)([l.A], () => l.A.can(a.xBc.MANAGE_MESSAGES, e));
+    let t = (0, i.bG)([l.A], () => l.A.can(a.xBc.MANAGE_MESSAGES, e));
     return !r(s.gs.useSetting(), t)
 }

@@ -4,10 +4,10 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(311907),
-    s = n(397927),
+var a = n(311907),
+    l = n(397927),
     r = n(529200),
-    a = n(635491),
+    s = n(635491),
     o = n(122906),
     d = n(401755),
     c = n(985018),
@@ -17,7 +17,7 @@ var l = n(311907),
 function m(e) {
     let {
         code: t
-    } = e, m = (0, l.bG)([o.A], () => o.A.getGuildTemplate(t));
+    } = e, m = (0, a.bG)([o.A], () => o.A.getGuildTemplate(t));
     if (null == m || m.state === d.QB.RESOLVING) return (0, i.jsxs)(r.A, {
         children: [(0, i.jsx)(r.A.Header, {
             text: c.intl.string(c.t.Xj87Yf)
@@ -37,13 +37,13 @@ function m(e) {
             })]
         })]
     });
-    let h = __OVERLAY__ ? (0, i.jsx)(s.Button, {
+    let h = __OVERLAY__ ? (0, i.jsx)(l.Button, {
         disabled: !0,
         variant: "secondary",
         text: c.intl.string(c.t.W7NTWm)
-    }) : (0, i.jsx)(s.Button, {
+    }) : (0, i.jsx)(l.Button, {
         onClick: () => {
-            (0, s.mMO)(async () => {
+            (0, l.mMO)(async () => {
                 let {
                     default: e
                 } = await Promise.all([n.e("7726"), n.e("49040")]).then(n.bind(n, 72715));
@@ -63,7 +63,7 @@ function m(e) {
         }), (0, i.jsxs)(r.A.Body, {
             children: [(0, i.jsxs)("div", {
                 className: _.iH,
-                children: [(0, i.jsx)(a.A, {
+                children: [(0, i.jsx)(s.A, {
                     className: u.K
                 }), (0, i.jsx)(r.A.Info, {
                     title: m.name,

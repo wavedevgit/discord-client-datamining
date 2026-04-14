@@ -3,10 +3,10 @@ n.d(t, {
     $: () => _
 });
 var i = n(627968),
-    l = n(64700),
-    s = n(503698),
-    r = n.n(s),
-    a = n(397927),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
+    s = n(397927),
     o = n(538451),
     d = n(562153),
     c = n(460696),
@@ -16,15 +16,15 @@ function _(e) {
     let {
         guildId: t,
         channelId: n,
-        users: s,
+        users: l,
         ...r
-    } = e, o = l.useCallback(e => (0, i.jsx)(m, {
+    } = e, o = a.useCallback(e => (0, i.jsx)(m, {
         users: e,
         guildId: t,
         channelId: n
     }), [t, n]);
-    return (0, i.jsx)(a.YNO, {
-        renderPopout: () => o(s),
+    return (0, i.jsx)(s.YNO, {
+        renderPopout: () => o(l),
         ...r
     })
 }
@@ -33,9 +33,9 @@ function m(e) {
     let {
         users: t,
         guildId: n,
-        channelId: l
+        channelId: a
     } = e;
-    return (0, i.jsx)(a.HOs, {
+    return (0, i.jsx)(s.HOs, {
         className: r()(u.popover, c.o),
         style: {
             "--custom-popover-width": "200px"
@@ -44,8 +44,8 @@ function m(e) {
             children: t.map(e => (0, i.jsx)(o.A, {
                 user: e,
                 guildId: n ?? void 0,
-                channelId: l,
-                nick: d.Ay.getNickname(n, l, e)
+                channelId: a,
+                nick: d.Ay.getNickname(n, a, e)
             }, e.id))
         })
     })

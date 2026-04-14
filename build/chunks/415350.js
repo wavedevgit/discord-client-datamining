@@ -3,23 +3,23 @@ n.d(t, {
     A: () => u
 });
 var i = n(735438),
-    l = n.n(i),
-    s = n(223637),
+    a = n.n(i),
+    l = n(223637),
     r = n(542664),
-    a = n(46054);
-let o = l().omit(r.A.RULES, ["codeBlock", "heading"]),
+    s = n(46054);
+let o = a().omit(r.A.RULES, ["codeBlock", "heading"]),
     d = {
-        ...s.A,
+        ...l.A,
         parse: function(e, t, n) {
-            let i = s.A.parse(e, t, n),
-                l = Math.min(6, (n.initialHeaderLevel ?? 3) + i.level);
+            let i = l.A.parse(e, t, n),
+                a = Math.min(6, (n.initialHeaderLevel ?? 3) + i.level);
             return {
                 ...i,
-                level: l
+                level: a
             }
         }
     },
-    c = a.A.combineAndInjectMentionRule(o, [a.A.createReactRules(a.A.defaultReactRuleOptions), {
+    c = s.A.combineAndInjectMentionRule(o, [s.A.createReactRules(s.A.defaultReactRuleOptions), {
         header: d
     }]),
-    u = a.A.reactParserFor(c)
+    u = s.A.reactParserFor(c)

@@ -1,5 +1,5 @@
 /** chunk id: 3952 params = (module,exports,require) **/
-n.r(e.exports = {
+t.r(e.exports = {
     video: "video__1689b",
     container: "container__1689b",
     paragraph: "paragraph__1689b",

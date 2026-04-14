@@ -3,10 +3,10 @@ n.d(t, {
     A: () => E
 });
 var i = n(627968),
-    l = n(64700),
-    s = n(990078),
+    a = n(64700),
+    l = n(990078),
     r = n(319060),
-    a = n(397927),
+    s = n(397927),
     o = n(793574),
     d = n(58149),
     c = n(688810),
@@ -25,11 +25,11 @@ let C = (0, _.xI)(r.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
             renderableSticker: t,
             channel: n,
             isInteracting: r
-        } = e, _ = l.useRef(null), [E, I] = l.useState(!0), [v, b] = l.useState(String(Date.now())), [T] = (0, m.Zq)(t, r), {
+        } = e, _ = a.useRef(null), [E, I] = a.useState(!0), [v, b] = a.useState(String(Date.now())), [T] = (0, m.Zq)(t, r), {
             analyticsLocations: y
         } = (0, c.Ay)(o.A.STICKER_MESSAGE), S = (0, i.jsxs)("span", {
             className: f.Zl,
-            children: [(0, i.jsx)(a.s2T, {
+            children: [(0, i.jsx)(s.s2T, {
                 size: "xs",
                 color: "currentColor",
                 className: f.lA
@@ -39,9 +39,9 @@ let C = (0, _.xI)(r.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
             value: y,
             children: (0, i.jsx)("div", {
                 className: f.be,
-                children: (0, i.jsx)(a.YNO, {
+                children: (0, i.jsx)(s.YNO, {
                     align: "center",
-                    animation: a.YNO.Animation.TRANSLATE,
+                    animation: s.YNO.Animation.TRANSLATE,
                     positionKey: v,
                     onRequestClose: () => {
                         I(!0)
@@ -57,7 +57,7 @@ let C = (0, _.xI)(r.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                         let {
                             onClick: n
                         } = e;
-                        return (0, i.jsx)(s.m, {
+                        return (0, i.jsx)(l.m, {
                             ...u.Uk,
                             shouldShow: E,
                             __unsupportedReactNodeAsText: (0, u.yR)(S),
@@ -72,7 +72,7 @@ let C = (0, _.xI)(r.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                                     is_custom: (0, h.zN)(e.type)
                                 })
                             },
-                            children: (0, i.jsx)(a.DUT, {
+                            children: (0, i.jsx)(s.DUT, {
                                 innerRef: _,
                                 className: f.q7,
                                 onClick: e => {

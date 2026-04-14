@@ -1,13 +1,13 @@
 /** chunk id: 207133 params = (module,exports,require) **/
-i.d(t, {
+n.d(t, {
     A: () => a
 });
-var n = i(417597),
-    s = i(734057),
-    l = i(746080);
+var i = n(417597),
+    s = n(734057),
+    l = n(746080);
 
 function a(e) {
-    let t = (0, n.bG)([s.A], () => {
+    let t = (0, i.bG)([s.A], () => {
         let t = s.A.getChannel(e);
         return t?.parent_id != null && t.isForumPost() ? s.A.getChannel(t?.parent_id) : null
     });

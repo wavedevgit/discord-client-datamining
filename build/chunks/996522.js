@@ -4,10 +4,10 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(503698),
-    s = n.n(l),
+var a = n(503698),
+    l = n.n(a),
     r = n(311907),
-    a = n(397927),
+    s = n(397927),
     o = n(442433),
     d = n(47167),
     c = n(143413),
@@ -26,9 +26,9 @@ function E(e) {
     let {
         message: t,
         compact: n
-    } = e, l = (0, r.bG)([u.A], () => u.A.getChannel(_.default.castMessageIdAsChannelId(t.id)));
-    return null == l ? null : (0, i.jsx)(I, {
-        channel: l,
+    } = e, a = (0, r.bG)([u.A], () => u.A.getChannel(_.default.castMessageIdAsChannelId(t.id)));
+    return null == a ? null : (0, i.jsx)(I, {
+        channel: a,
         compact: n,
         isSystemMessage: (0, c.A)(t)
     })
@@ -36,14 +36,14 @@ function E(e) {
 
 function I(e) {
     var t;
-    let l, c, u, {
+    let a, c, u, {
             channel: _,
             compact: E,
             isSystemMessage: I
         } = e,
         v = (0, d.Ay)(_),
         b = (0, r.bG)([h.A], () => h.A.getCount(_.id)),
-        T = (t = _, l = (0, r.bG)([h.A], () => h.A.getMostRecentMessage(t.id)), c = (0, r.bG)([h.A], () => h.A.getCount(t.id)), u = (0, p.JO)(t), t.threadMetadata?.archived ? f.intl.string(f.t.ZTo4HS) : null == c || 0 === c ? f.intl.string(f.t.HYtNyE) : null == l ? (0, i.jsxs)(i.Fragment, {
+        T = (t = _, a = (0, r.bG)([h.A], () => h.A.getMostRecentMessage(t.id)), c = (0, r.bG)([h.A], () => h.A.getCount(t.id)), u = (0, p.JO)(t), t.threadMetadata?.archived ? f.intl.string(f.t.ZTo4HS) : null == c || 0 === c ? f.intl.string(f.t.HYtNyE) : null == a ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("span", {
                 children: f.intl.string(f.t.ZTo4HS)
             }), (0, i.jsx)("span", {
@@ -52,7 +52,7 @@ function I(e) {
             })]
         }) : (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(g.A, {
-                message: l,
+                message: a,
                 channel: t
             }), (0, i.jsx)("span", {
                 className: C.vE,
@@ -62,11 +62,11 @@ function I(e) {
         y = null != b && b > 0;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            className: s()(C.GI, {
+            className: l()(C.GI, {
                 [C.E]: !E,
                 [C.E_]: I
             })
-        }), (0, i.jsx)(a.DUT, {
+        }), (0, i.jsx)(s.DUT, {
             onClick: function(e) {
                 e.stopPropagation(), (0, A.JA)(_, e.shiftKey)
             },
@@ -88,13 +88,13 @@ function I(e) {
                 })
             },
             "aria-roledescription": f.intl.string(f.t["8ipxiY"]),
-            className: s()(C.kL, {
+            className: l()(C.kL, {
                 [C.og]: I
             }),
-            children: (0, i.jsxs)(a.RDc, {
+            children: (0, i.jsxs)(s.RDc, {
                 children: [(0, i.jsxs)("div", {
                     className: C.kq,
-                    children: [(0, i.jsx)(a.AC4, {
+                    children: [(0, i.jsx)(s.AC4, {
                         children: f.intl.string(f.t["7Xm5QI"])
                     }), (0, i.jsx)("span", {
                         className: C.UU,
@@ -104,7 +104,7 @@ function I(e) {
                         "aria-hidden": !y,
                         children: (0, m.ub)(b, _.id)
                     })]
-                }), (0, i.jsx)(a.Text, {
+                }), (0, i.jsx)(s.Text, {
                     variant: "text-sm/normal",
                     "aria-hidden": !0,
                     lineClamp: 1,

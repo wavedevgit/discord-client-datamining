@@ -3,18 +3,18 @@ n.d(t, {
     GI: () => r,
     Oo: () => d,
     Qm: () => o,
-    py: () => a
+    py: () => s
 });
 var i = n(73153),
-    l = n(198982),
-    s = n(306522);
+    a = n(198982),
+    l = n(306522);
 let r = async e => {
     i.h.dispatch({
         type: "GUILD_PRODUCTS_FETCH",
         guildId: e
     });
     try {
-        let t = await s.oG(e);
+        let t = await l.oG(e);
         i.h.dispatch({
             type: "GUILD_PRODUCTS_FETCH_SUCCESS",
             guildId: e,
@@ -26,13 +26,13 @@ let r = async e => {
             guildId: e
         })
     }
-}, a = async (e, t) => {
+}, s = async (e, t) => {
     i.h.dispatch({
         type: "GUILD_PRODUCT_FETCH",
         productId: t
     });
     try {
-        let n = await s.bq(e, t);
+        let n = await l.bq(e, t);
         return i.h.dispatch({
             type: "GUILD_PRODUCT_FETCH_SUCCESS",
             product: n
@@ -41,19 +41,19 @@ let r = async e => {
         throw i.h.dispatch({
             type: "GUILD_PRODUCT_FETCH_FAILURE",
             productId: t,
-            error: new l.LG(e)
+            error: new a.LG(e)
         }), e
     }
 };
 async function o(e, t, n) {
-    let l = await s.Qm(e, t, n);
+    let a = await l.Qm(e, t, n);
     return i.h.dispatch({
         type: "GUILD_PRODUCT_UPDATE",
-        product: l
-    }), l
+        product: a
+    }), a
 }
 async function d(e, t) {
-    return await s.Oo(e, t), i.h.dispatch({
+    return await l.Oo(e, t), i.h.dispatch({
         type: "GUILD_PRODUCT_DELETE",
         productId: t
     }), !0

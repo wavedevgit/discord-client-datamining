@@ -3,11 +3,11 @@ n.d(t, {
     A: () => Q
 });
 var i = n(627968),
-    l = n(64700),
-    s = n(503698),
-    r = n.n(s),
-    a = n(284009),
-    o = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
+    s = n(284009),
+    o = n.n(s),
     d = n(735438),
     c = n.n(d),
     u = n(110259),
@@ -32,9 +32,9 @@ var i = n(627968),
     L = n(21119),
     R = n(95701),
     P = n(734057),
-    D = n(696451),
-    M = n(71393),
-    w = n(576705),
+    M = n(696451),
+    w = n(71393),
+    D = n(576705),
     k = n(607567),
     O = n(954571),
     U = n(860689),
@@ -52,17 +52,17 @@ function Q(e) {
     let {
         invite: t,
         currentUserId: n,
-        message: s,
-        guild: a,
+        message: l,
+        guild: s,
         onTransitionToInviteChannel: d,
         onAcceptInstantInvite: I
-    } = e, v = (0, B.xR)("VoiceInviteEmbed"), N = l.useRef(null), H = a ?? null;
+    } = e, v = (0, B.xR)("VoiceInviteEmbed"), N = a.useRef(null), H = s ?? null;
     null == H && null != t.guild && (H = U.DY(t.guild));
     let Q = null != t.channel ? (0, R.OY)(t.channel) : null;
     o()(null != H, "Voice Invite Embed must be used in context of a guild."), o()(null != Q, "Voice Invite Embed must be able to resolve an invite channel.");
-    let X = (0, _.bG)([w.A, P.A], () => {
+    let X = (0, _.bG)([D.A, P.A], () => {
             let e = P.A.getChannel(Q.id);
-            return null == e || w.A.canBasicChannel(W.hVb.VIEW_CHANNEL, e)
+            return null == e || D.A.canBasicChannel(W.hVb.VIEW_CHANNEL, e)
         }, [Q.id]),
         Z = (0, _.bG)([k.Ay], () => X ? k.Ay.getVoiceStatesForChannelAlt(Q.id, H.id) : [], [Q.id, H.id, X]),
         {
@@ -73,66 +73,66 @@ function Q(e) {
                 currentUserId: t,
                 author: n,
                 voiceStates: i
-            } = e, l = n.id === t, s = i.length > 0, r = i.length;
-            return s ? {
-                label: l ? z.intl.format(z.t["2RWMFV"], {
+            } = e, a = n.id === t, l = i.length > 0, r = i.length;
+            return l ? {
+                label: a ? z.intl.format(z.t["2RWMFV"], {
                     othersCount: r
                 }) : z.intl.format(z.t.Da7tZx, {
                     othersCount: r
                 })
             } : {
-                label: l ? z.intl.string(z.t.DVDvCD) : z.intl.string(z.t.TY77rq),
+                label: a ? z.intl.string(z.t.DVDvCD) : z.intl.string(z.t.TY77rq),
                 sublabel: z.intl.string(z.t.wM2WTM)
             }
         }({
             currentUserId: n,
-            author: s.author,
+            author: l.author,
             voiceStates: Z
         }),
-        et = (0, _.bG)([M.A], () => null != M.A.getGuild(H.id), [H.id]),
-        en = (0, _.bG)([D.Ay], () => y.A.canAcceptInvite([D.Ay], t), [t]),
+        et = (0, _.bG)([w.A], () => null != w.A.getGuild(H.id), [H.id]),
+        en = (0, _.bG)([M.Ay], () => y.A.canAcceptInvite([M.Ay], t), [t]),
         ei = t.state === W.elq.ACCEPTING,
         {
-            analyticsLocations: el
+            analyticsLocations: ea
         } = (0, C.Ay)(f.A.INVITE_EMBED),
-        es = (0, S._U)(t.code, s.id),
+        el = (0, S._U)(t.code, l.id),
         er = (0, q.A)({
             invite: t,
-            message: s,
+            message: l,
             voiceStates: Z,
             guildId: H.id,
             channelId: Q.id
         }),
-        ea = (0, T.AO)(er),
+        es = (0, T.AO)(er),
         eo = v.activityPreviewEnabled && null != er,
-        ed = l.useCallback(() => {
+        ed = a.useCallback(() => {
             let e = et ? "transition" : "accept";
             et ? d() : I(), (0, p.he)({
                 invite: t,
                 action: e,
-                inviter_id: s.author.id,
-                invite_message_id: s.id,
-                invite_instance_id: es,
-                application_id: ea?.id ?? void 0,
+                inviter_id: l.author.id,
+                invite_message_id: l.id,
+                invite_instance_id: el,
+                application_id: es?.id ?? void 0,
                 stream_key: null != er ? (0, b._z)(er) : void 0,
                 number_of_users_in_channel: Z.length
-            }, el)
-        }, [t, s, el, es, et, ea, er, Z.length, d, I]),
-        ec = l.useCallback(() => {
+            }, ea)
+        }, [t, l, ea, el, et, es, er, Z.length, d, I]),
+        ec = a.useCallback(() => {
             et ? (0, j.iN)(Q.id) : I({
                 autoJoin: !1
             }), O.default.track(W.HAw.VOICE_INVITE_EMBED_BREADCRUMB_CLICKED, {
                 invite_code: t.code,
                 invite_guild_id: H.id,
                 invite_channel_id: Q.id,
-                invite_instance_id: es,
+                invite_instance_id: el,
                 is_member: et,
-                application_id: ea?.id ?? null,
+                application_id: es?.id ?? null,
                 stream_key: null != er ? (0, b._z)(er) : null,
                 number_of_users_in_channel: Z.length,
-                location_stack: el
+                location_stack: ea
             })
-        }, [Q.id, H.id, t.code, es, et, ea, er, Z.length, el, I]);
+        }, [Q.id, H.id, t.code, el, et, es, er, Z.length, ea, I]);
     (0, E.A)({
         name: u.ImpressionNames.VOICE_INVITE_EMBED,
         type: u.ImpressionTypes.VIEW,
@@ -140,63 +140,63 @@ function Q(e) {
             invite_code: t.code,
             invite_guild_id: H.id,
             invite_channel_id: Q.id,
-            invite_instance_id: es,
+            invite_instance_id: el,
             has_active_stream: eo,
-            location_stack: el
+            location_stack: ea
         }
     });
-    let eu = l.useCallback(() => {
+    let eu = a.useCallback(() => {
             null != er && (et ? (g.default.selectVoiceChannel(er.channelId), (0, A.Nl)(er)) : I(), (0, p.he)({
                 invite: t,
                 action: et ? "transition" : "accept",
-                inviter_id: s.author.id,
-                invite_message_id: s.id,
-                invite_instance_id: es,
-                application_id: ea?.id ?? void 0,
+                inviter_id: l.author.id,
+                invite_message_id: l.id,
+                invite_instance_id: el,
+                application_id: es?.id ?? void 0,
                 stream_key: (0, b._z)(er),
                 number_of_users_in_channel: Z.length
-            }, [...el, f.A.VOICE_INVITE_STREAM_PREVIEW]))
-        }, [er, et, t, s, el, es, ea, Z.length, I]),
+            }, [...ea, f.A.VOICE_INVITE_STREAM_PREVIEW]))
+        }, [er, et, t, l, ea, el, es, Z.length, I]),
         e_ = (0, _.bG)([x.A], () => x.A.useReducedMotion),
-        em = l.useRef(null),
-        [eh, ep] = l.useState({
+        em = a.useRef(null),
+        [eh, ep] = a.useState({
             percentX: 0,
             percentY: 0,
             proximity: 0
         }),
         eg = (0, _.bG)([L.A], () => {
             let e = Z.map(e => e.user),
-                t = e.find(e => e.id === s.author.id),
-                n = e.filter(e => e.id !== s.author.id).sort((e, t) => {
+                t = e.find(e => e.id === l.author.id),
+                n = e.filter(e => e.id !== l.author.id).sort((e, t) => {
                     let n = L.A.getUserAffinity(e.id)?.vcProbability ?? 0;
                     return (L.A.getUserAffinity(t.id)?.vcProbability ?? 0) - n
                 });
             return null != t ? [t, ...n] : n
-        }, [Z, s.author.id]),
-        eA = l.useMemo(() => c().throttle(ep, 20), [ep]);
-    l.useEffect(() => () => eA.cancel(), [eA]);
-    let ex = l.useCallback(e => {
+        }, [Z, l.author.id]),
+        eA = a.useMemo(() => c().throttle(ep, 20), [ep]);
+    a.useEffect(() => () => eA.cancel(), [eA]);
+    let ex = a.useCallback(e => {
             if (e_) return;
             let t = em.current?.getBoundingClientRect();
             if (null == t) return;
             let n = (e.clientX - t.left) / t.width * 2 - 1,
                 i = (e.clientY - t.top) / t.height * 2 - 1,
-                l = 0,
-                s = N.current?.getBoundingClientRect();
-            if (null != s) {
-                let n = s.left + s.width / 2,
-                    i = s.top + s.height / 2,
+                a = 0,
+                l = N.current?.getBoundingClientRect();
+            if (null != l) {
+                let n = l.left + l.width / 2,
+                    i = l.top + l.height / 2,
                     r = e.clientX - n,
-                    a = e.clientY - i;
-                l = 2 * Math.exp(-Math.sqrt(r * r + a * a) / (.2 * Math.sqrt(t.width ** 2 + t.height ** 2)))
+                    s = e.clientY - i;
+                a = 2 * Math.exp(-Math.sqrt(r * r + s * s) / (.2 * Math.sqrt(t.width ** 2 + t.height ** 2)))
             }
             eA({
                 percentX: n,
                 percentY: i,
-                proximity: l
+                proximity: a
             })
         }, [e_, eA]),
-        ef = l.useCallback(() => {
+        ef = a.useCallback(() => {
             eA.cancel(), ep({
                 percentX: 0,
                 percentY: 0,
@@ -281,23 +281,23 @@ function K(e) {
     let {
         guildId: t,
         channelId: n,
-        members: l
+        members: a
     } = e;
-    return l.length > 4 ? (0, i.jsx)(X, {
+    return a.length > 4 ? (0, i.jsx)(X, {
         guildId: t,
         channelId: n,
-        members: l
+        members: a
     }) : (0, i.jsx)("div", {
         className: Y.WM,
         children: (0, i.jsx)(N.A, {
             guildId: t,
             partySize: {
-                knownSize: l.length,
+                knownSize: a.length,
                 unknownSize: 0,
-                totalSize: l.length
+                totalSize: a.length
             },
             maxAvatarsShown: 3,
-            members: l
+            members: a
         })
     })
 }
@@ -306,28 +306,28 @@ function X(e) {
     let {
         guildId: t,
         channelId: n,
-        members: s
-    } = e, r = l.useRef(null), {
-        isHoveringOrFocusing: a
+        members: l
+    } = e, r = a.useRef(null), {
+        isHoveringOrFocusing: s
     } = (0, I.A)(r);
     return (0, i.jsx)(H.$, {
         guildId: t,
         channelId: n,
-        users: s,
+        users: l,
         targetElementRef: r,
-        shouldShow: a,
+        shouldShow: s,
         children: e => (0, i.jsx)("div", {
             className: Y.WM,
             ...e,
             children: (0, i.jsx)(N.A, {
                 guildId: t,
                 partySize: {
-                    knownSize: s.length,
+                    knownSize: l.length,
                     unknownSize: 0,
-                    totalSize: s.length
+                    totalSize: l.length
                 },
                 maxAvatarsShown: 3,
-                members: s,
+                members: l,
                 overflowRef: r
             })
         })
@@ -339,15 +339,15 @@ function J(e) {
         className: t,
         stream: n
     } = e, {
-        previewUrl: l,
-        isLoading: s
-    } = (0, v.A)(n.guildId, n.channelId, n.ownerId), a = null != l && !s;
+        previewUrl: a,
+        isLoading: l
+    } = (0, v.A)(n.guildId, n.channelId, n.ownerId), s = null != a && !l;
     return (0, i.jsx)("div", {
         className: r()(t, Y.rr, {
-            [Y.pc]: !a
+            [Y.pc]: !s
         }),
         style: {
-            "--custom-bg-url": a ? `url(${l})` : "unset"
+            "--custom-bg-url": s ? `url(${a})` : "unset"
         },
         children: (0, i.jsx)("div", {
             className: Y.bW

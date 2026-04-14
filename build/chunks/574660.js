@@ -4,10 +4,10 @@ n.d(t, {
     t: () => E
 });
 var i = n(64700),
-    l = n(311907),
-    s = n(735991),
+    a = n(311907),
+    l = n(735991),
     r = n(297486),
-    a = n(837057),
+    s = n(837057),
     o = n(310419),
     d = n(734057),
     c = n(576705),
@@ -26,14 +26,14 @@ function f(e) {
         customInstallUrl: n,
         installParams: i,
         integrationTypesConfig: r
-    } = e, a = (0, h.Ie)({
+    } = e, s = (0, h.Ie)({
         customInstallUrl: n,
         installParams: i,
         integrationTypesConfig: r
-    }), o = (0, l.bG)([_.A], () => _.A.getGuildId() ?? void 0), m = (0, l.bG)([d.A, c.A, u.A], () => {
+    }), o = (0, a.bG)([_.A], () => _.A.getGuildId() ?? void 0), m = (0, a.bG)([d.A, c.A, u.A], () => {
         let e = d.A.getChannel(u.A.getChannelId());
         return null != e && (e.isPrivate() || c.A.can(g.xBc.SEND_MESSAGES, e))
-    }, []), p = (0, s.V1)(e, o) && m;
+    }, []), p = (0, l.V1)(e, o) && m;
     return {
         isDiscoverable: t,
         customInstallUrl: n,
@@ -41,7 +41,7 @@ function f(e) {
         integrationTypesConfig: r,
         canViewApp: t || p,
         canOpenAppLauncher: p,
-        isInstallable: a,
+        isInstallable: s,
         selectedGuildId: o
     }
 }
@@ -49,15 +49,15 @@ function f(e) {
 function C(e, t) {
     let {
         canViewApp: n,
-        canOpenAppLauncher: l,
-        isInstallable: s,
+        canOpenAppLauncher: a,
+        isInstallable: l,
         customInstallUrl: d,
         installParams: c,
         integrationTypesConfig: u,
         selectedGuildId: _
     } = f(e);
     return i.useMemo(() => n ? () => {
-        (t?.(), l) ? (0, r.hg)(e.id) : (0, a.transitionToGlobalDiscovery)({
+        (t?.(), a) ? (0, r.hg)(e.id) : (0, s.transitionToGlobalDiscovery)({
             tab: A.GlobalDiscoveryTab.APPS,
             applicationId: e.id,
             newSessionState: {
@@ -66,7 +66,7 @@ function C(e, t) {
                 }
             }
         })
-    } : s ? () => {
+    } : l ? () => {
         t?.(), (0, m.o)({
             applicationId: e.id,
             customInstallUrl: d,
@@ -75,25 +75,25 @@ function C(e, t) {
             guildId: _,
             source: "app_message_embed"
         })
-    } : void 0, [e.id, l, n, d, c, u, s, t, _])
+    } : void 0, [e.id, a, n, d, c, u, l, t, _])
 }
 
 function E(e) {
     let {
         canViewApp: t,
         isInstallable: n
-    } = f(e), l = C(e);
-    return i.useMemo(() => t && null != l ? {
+    } = f(e), a = C(e);
+    return i.useMemo(() => t && null != a ? {
         label: x.intl.string(x.t.hvVgAZ),
         trackingArea: p.kY.VIEW,
         onClick() {
-            l()
+            a()
         }
-    } : n && null != l ? {
+    } : n && null != a ? {
         label: x.intl.string(x.t.NgXl3C),
         trackingArea: p.kY.ADD_APP,
         onClick() {
-            l()
+            a()
         }
-    } : void 0, [t, n, l])
+    } : void 0, [t, n, a])
 }

@@ -3,10 +3,10 @@ n.d(t, {
     A: () => N
 }), n(938796);
 var i = n(627968),
-    l = n(64700),
-    s = n(110259),
+    a = n(64700),
+    l = n(110259),
     r = n(821418),
-    a = n(665260),
+    s = n(665260),
     o = n(311907),
     d = n(990078),
     c = n(397927),
@@ -33,22 +33,22 @@ function N(e) {
             onTransitionToInviteChannel: L,
             onAcceptInstantInvite: R,
             guild: P,
-            invite: D,
-            message: M,
-            currentUserId: w
+            invite: M,
+            message: w,
+            currentUserId: D
         } = e,
-        k = w === M.author.id,
+        k = D === w.author.id,
         {
             channel: O,
             approximate_member_count: U,
             approximate_presence_count: B
-        } = D,
-        G = D.state === T.elq.ACCEPTING,
+        } = M,
+        G = M.state === T.elq.ACCEPTING,
         F = null != O ? (0, C.OY)(O) : null,
         H = null != P,
         V = null != F,
         q = null != F && F.isGuildStageVoice(),
-        W = (0, a.Lt)(D.flags ?? 0, r.Q.IS_GUEST_INVITE),
+        W = (0, s.Lt)(M.flags ?? 0, r.Q.IS_GUEST_INVITE),
         z = F?.isGuildVoiceOrThread() ?? !1,
         Y = P?.features.has(T.GuildFeatures.HUB) ?? !1,
         Q = P?.id,
@@ -56,33 +56,33 @@ function N(e) {
             analyticsLocations: K
         } = (0, m.Ay)(_.A.INVITE_EMBED);
     (0, h.A)({
-        name: s.ImpressionNames.INVITE_EMBED,
-        type: s.ImpressionTypes.VIEW,
+        name: l.ImpressionNames.INVITE_EMBED,
+        type: l.ImpressionTypes.VIEW,
         properties: {
-            invite_code: D.code,
-            invite_guild_id: D.guild?.id,
+            invite_code: M.code,
+            invite_guild_id: M.guild?.id,
             invite_channel_id: O?.id,
-            invite_instance_id: (0, x._U)(D.code, M.id),
+            invite_instance_id: (0, x._U)(M.code, w.id),
             invite_channel_type: O?.type,
             embed_type: "guild_invite",
             location_stack: K
         }
     });
-    let [X, J] = l.useState(!1), Z = l.useCallback(() => J(!1), []), $ = l.useRef(null), ee = (0, o.bG)([E.Ay], () => p.A.canAcceptInvite([E.Ay], D)), et = l.useCallback(() => {
+    let [X, J] = a.useState(!1), Z = a.useCallback(() => J(!1), []), $ = a.useRef(null), ee = (0, o.bG)([E.Ay], () => p.A.canAcceptInvite([E.Ay], M)), et = a.useCallback(() => {
         J(!0), (0, u.Pq)(Q, "show profile", K)
-    }, [Q, K]), en = l.useCallback(() => {
+    }, [Q, K]), en = a.useCallback(() => {
         let e = "noop";
         H ? (L(), e = "transition") : (R(), e = "accept"), (0, u.he)({
-            invite: D,
+            invite: M,
             action: e,
-            inviter_id: M.author.id,
-            invite_message_id: M.id,
-            invite_instance_id: (0, x._U)(D.code, M.id)
+            inviter_id: w.author.id,
+            invite_message_id: w.id,
+            invite_instance_id: (0, x._U)(M.code, w.id)
         }, K)
-    }, [D, M, K, H, L, R]);
+    }, [M, w, K, H, L, R]);
     if (null == P) {
-        if (null == D.guild) return (0, i.jsx)(b.A, {});
-        (P = I.DY(D.guild)).premiumTier = D.guild.premium_tier ?? T.TVA.NONE
+        if (null == M.guild) return (0, i.jsx)(b.A, {});
+        (P = I.DY(M.guild)).premiumTier = M.guild.premium_tier ?? T.TVA.NONE
     }
     let ei = (0, v.l)({
         isVoiceChannel: z,

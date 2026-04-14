@@ -3,10 +3,10 @@ n.d(t, {
     I: () => d
 });
 var i = n(64700),
-    l = n(311907),
-    s = n(139675),
+    a = n(311907),
+    l = n(139675),
     r = n(835517),
-    a = n(729394),
+    s = n(729394),
     o = n(216184);
 let d = e => {
     let {
@@ -16,22 +16,22 @@ let d = e => {
     } = e, {
         cachedImageURL: c,
         imageURL: u
-    } = (0, l.cf)([o.A], () => (e => {
+    } = (0, a.cf)([o.A], () => (e => {
         let {
             messageId: t,
             presenceActivity: n,
             application: i
-        } = e, l = o.A.getCoverImageURL({
+        } = e, a = o.A.getCoverImageURL({
             messageId: t
         });
-        if (null === l) return {
+        if (null === a) return {
             cachedImageURL: null,
             imageURL: null
         };
-        let a = 600 * (0, r.A)(),
-            d = (n?.assets?.invite_cover_image != null ? (0, s.uD)(n.application_id, n.assets.invite_cover_image, a) : null) ?? l ?? i.getCoverImageURL(a) ?? null;
+        let s = 600 * (0, r.A)(),
+            d = (n?.assets?.invite_cover_image != null ? (0, l.uD)(n.application_id, n.assets.invite_cover_image, s) : null) ?? a ?? i.getCoverImageURL(s) ?? null;
         return {
-            cachedImageURL: l,
+            cachedImageURL: a,
             imageURL: d
         }
     })({
@@ -40,7 +40,7 @@ let d = e => {
         application: d
     }), [t, n, d]);
     return i.useEffect(() => {
-        c !== u && a.K({
+        c !== u && s.K({
             messageId: t,
             coverImageURL: u
         })

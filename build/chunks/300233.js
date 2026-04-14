@@ -4,21 +4,21 @@ n.d(t, {
     X: () => c
 });
 var i = n(627968),
-    l = n(64700),
-    s = n(417597),
+    a = n(64700),
+    l = n(417597),
     r = n(142120),
-    a = n(579908),
+    s = n(579908),
     o = n(636194);
-let d = l.createContext(void 0);
+let d = a.createContext(void 0);
 
 function c(e) {
-    let t = l.useContext(d);
+    let t = a.useContext(d);
     if (null == t) throw Error(`${e??"useGroupListingsFetchContext"} must be used within a GroupListingsFetchContextProvider`);
     let {
         listingsLoaded: n,
         fetchGroupListingsForGuild: i
     } = t;
-    return l.useEffect(() => {
+    return a.useEffect(() => {
         i()
     }, [i]), n
 }
@@ -31,10 +31,10 @@ function u(e) {
         includeSoftDeleted: u,
         countryCode: _,
         dontFetchWhileTrue: m
-    } = e, h = (0, s.bG)([r.A], () => r.A.isConnected()), p = (0, s.bG)([o.A], () => null != t ? o.A.getSubscriptionGroupListingsForGuildFetchState(t) : o.e.FETCHED), [g, A] = l.useState(!0 === c), x = l.useCallback(() => {
+    } = e, h = (0, l.bG)([r.A], () => r.A.isConnected()), p = (0, l.bG)([o.A], () => null != t ? o.A.getSubscriptionGroupListingsForGuildFetchState(t) : o.e.FETCHED), [g, A] = a.useState(!0 === c), x = a.useCallback(() => {
         if (null == t || !h || !0 === m) return;
         let e = o.A.getSubscriptionGroupListingsForGuildFetchState(t);
-        (g || e === o.e.NOT_FETCHED) && (A(!1), a.WA(t, {
+        (g || e === o.e.NOT_FETCHED) && (A(!1), s.WA(t, {
             includeSoftDeleted: u,
             countryCode: _
         }))

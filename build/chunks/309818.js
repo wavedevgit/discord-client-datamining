@@ -3,10 +3,10 @@ n.d(t, {
     A: () => b
 }), n(321073);
 var i = n(627968),
-    l = n(64700),
-    s = n(284009),
-    r = n.n(s),
-    a = n(158954),
+    a = n(64700),
+    l = n(284009),
+    r = n.n(l),
+    s = n(158954),
     o = n(311907),
     d = n(846293),
     c = n(793574),
@@ -27,27 +27,27 @@ var i = n(627968),
 function b(e) {
     let t, {
             invite: n,
-            message: s,
+            message: l,
             currentUserId: b,
             onTransitionToInviteChannel: T,
             onAcceptInstantInvite: y
         } = e,
-        S = b === s.author.id,
+        S = b === l.author.id,
         N = n.state === E.elq.ACCEPTING,
         j = (0, o.bG)([g.A], () => null != n.channel ? g.A.getChannel(n.channel.id) : null, [n]);
     r()(null == j || j.isPrivate(), "must be a private channel");
     let {
         analyticsLocations: L
-    } = (0, u.Ay)(c.A.INVITE_EMBED), R = null != j, P = l.useCallback(() => {
+    } = (0, u.Ay)(c.A.INVITE_EMBED), R = null != j, P = a.useCallback(() => {
         let e = "noop";
         R ? (T(), e = "transition") : (y(), e = "accept"), (0, d.he)({
             invite: n,
             action: e,
-            inviter_id: s.author.id,
-            invite_message_id: s.id,
-            invite_instance_id: (0, m._U)(n.code, s.id)
+            inviter_id: l.author.id,
+            invite_message_id: l.id,
+            invite_instance_id: (0, m._U)(n.code, l.id)
         }, L)
-    }, [n, s, L, R, T, y]);
+    }, [n, l, L, R, T, y]);
     if (null == j) {
         if (null == n.channel) return (0, i.jsx)(C.A, {});
         j = (0, p.OY)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
@@ -59,11 +59,11 @@ function b(e) {
         let e = x.default.getCurrentUser();
         R && null != e && t.push(e)
     }
-    let D = (0, _.m1)(j, x.default, A.A);
-    (null == D || "" === D) && (D = t.length > 0 ? t.filter(f.Vq).map(e => e.username).join(", ") : I.intl.string(I.t.LJpTRF));
-    let M = I.intl.string(I.t.XpeFYr),
-        w = "active";
-    R && (M = I.intl.string(I.t.cEnaWx), w = "secondary");
+    let M = (0, _.m1)(j, x.default, A.A);
+    (null == M || "" === M) && (M = t.length > 0 ? t.filter(f.Vq).map(e => e.username).join(", ") : I.intl.string(I.t.LJpTRF));
+    let w = I.intl.string(I.t.XpeFYr),
+        D = "active";
+    R && (w = I.intl.string(I.t.cEnaWx), D = "secondary");
     let k = I.intl.string(I.t["3p3/BK"]);
     return S && (k = I.intl.string(I.t.qmtuXE)), (0, i.jsxs)(h.A, {
         children: [(0, i.jsx)(h.A.Header, {
@@ -75,18 +75,18 @@ function b(e) {
                     channel: j,
                     onClick: R ? P : void 0
                 }), (0, i.jsx)(h.A.Info, {
-                    title: D,
+                    title: M,
                     onClick: R ? P : void 0,
                     children: (0, i.jsx)(h.A.Data, {
                         members: t.length
                     })
                 })]
-            }), (0, i.jsx)(a.$nd, {
+            }), (0, i.jsx)(s.$nd, {
                 onClick: P,
                 loading: N,
                 disabled: R,
-                variant: w,
-                text: M,
+                variant: D,
+                text: w,
                 fullWidth: !0
             })]
         })]

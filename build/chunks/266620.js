@@ -1,211 +1,212 @@
 /** chunk id: 266620 params = (module,exports,require) **/
-n.d(t, {
-    Cr: () => w,
-    I1: () => B,
-    Nj: () => P,
-    R6: () => j,
-    SX: () => M,
-    UB: () => T,
-    YE: () => k
-}), n(938796);
-var a = n(627968),
-    o = n(64700),
-    r = n(503698),
-    i = n.n(r),
-    l = n(665260),
-    c = n(311907),
-    s = n(571356),
-    _ = n(990078),
-    d = n(397927),
-    u = n(672477),
-    p = n(275687),
-    m = n(458517),
-    b = n(713021),
-    h = n(121489),
-    f = n(734057),
-    g = n(644447),
-    C = n(998218),
-    v = n(465856),
-    x = n(652176),
-    I = n(838541),
-    y = n(652215),
-    S = n(985018),
-    A = n(999169);
+t.d(a, {
+    Cr: () => v,
+    I1: () => S,
+    Nj: () => M,
+    R6: () => N,
+    SX: () => O,
+    UB: () => w,
+    YE: () => R
+}), t(938796);
+var n = t(627968),
+    i = t(64700),
+    o = t(503698),
+    r = t.n(o),
+    c = t(665260),
+    l = t(311907),
+    s = t(571356),
+    _ = t(990078),
+    d = t(397927),
+    u = t(672477),
+    m = t(275687),
+    p = t(458517),
+    f = t(713021),
+    C = t(121489),
+    g = t(734057),
+    I = t(644447),
+    h = t(998218),
+    A = t(465856),
+    T = t(652176),
+    b = t(838541),
+    E = t(652215),
+    y = t(985018),
+    x = t(999169);
 
-function w(e) {
-    let t = e.item.originalItem;
-    return (0, x.LL)({
+function v(e) {
+    let a = e.item.originalItem;
+    return (0, T.LL)({
         ...e,
-        alt: t.description,
-        src: (0, g.E)({
-            proxyURL: t.proxy_url,
-            url: t.url
+        alt: a.description,
+        src: (0, I.E)({
+            proxyURL: a.proxy_url,
+            url: a.url
         }),
-        original: t.url,
-        placeholder: t.placeholder,
-        placeholderVersion: t.placeholder_version,
-        contentType: t.content_type,
-        originalContentType: t.original_content_type,
-        srcIsAnimated: (0, l.Lt)(t.flags ?? 0, y.sbO.IS_ANIMATED),
+        original: a.url,
+        placeholder: a.placeholder,
+        placeholderVersion: a.placeholder_version,
+        contentType: a.content_type,
+        originalContentType: a.original_content_type,
+        srcIsAnimated: (0, c.Lt)(a.flags ?? 0, E.sbO.IS_ANIMATED),
         sourceMetadata: {
             message: e.message,
             identifier: {
                 type: "attachment",
-                attachmentId: t.id,
-                filename: t.filename,
-                title: t.title,
-                size: t.size
+                attachmentId: a.id,
+                filename: a.filename,
+                title: a.title,
+                size: a.size
             }
         },
         analyticsSource: "ImageComponentForMessageAttachment"
     })
 }
 
-function B(e) {
-    let t = e.item.originalItem,
+function S(e) {
+    let a = e.item.originalItem,
         {
-            newEmbedUi: n
+            newEmbedUi: t
         } = u.Q.useConfig({
             location: "VideoComponentForMessageAttachment"
         }),
-        r = (0, l.Lt)(t.flags ?? 0, y.sbO.IS_CLIP),
-        c = o.useCallback(() => !r || n ? null : (0, a.jsx)(_.m, {
-            text: S.intl.string(S.t["/fgfWh"]),
-            children: (0, a.jsxs)("div", {
-                className: A.M,
-                children: [(0, a.jsx)(d.xgA, {
+        o = (0, c.Lt)(a.flags ?? 0, E.sbO.IS_CLIP),
+        l = i.useCallback(() => !o || t ? null : (0, n.jsx)(_.m, {
+            text: y.intl.string(y.t["/fgfWh"]),
+            children: (0, n.jsxs)("div", {
+                className: x.M,
+                children: [(0, n.jsx)(d.xgA, {
                     size: "xs",
                     color: "currentColor"
-                }), (0, a.jsx)(s.E, {
+                }), (0, n.jsx)(s.E, {
                     variant: "text-xs/semibold",
                     color: "always-white",
-                    children: S.intl.string(S.t.oA4afG)
+                    children: y.intl.string(y.t.oA4afG)
                 })]
             })
-        }), [r, n]),
-        m = C.A.toURLSafe(t.proxy_url);
-    return null == m ? null : (m.searchParams.append("format", "webp"), r && n) ? (0, a.jsx)(p.A, {
-        attachment: t,
-        src: t.url,
-        posterUrl: m.toString(),
+        }), [o, t]),
+        p = h.A.toURLSafe(a.proxy_url);
+    return null == p ? null : (p.searchParams.append("format", "webp"), o && t) ? (0, n.jsx)(m.A, {
+        attachment: a,
+        src: a.url,
+        posterUrl: p.toString(),
         channelId: e.message.channel_id,
-        className: i()(A.m, e.className),
+        className: r()(x.m, e.className),
         embed: !0,
+        onClick: e.onClick ?? void 0,
         onContextMenu: e.onContextMenu ?? void 0,
         maxWidth: e.maxWidth,
-        maxHeight: e.maxHeight ?? I.Rk,
+        maxHeight: e.maxHeight ?? b.Rk,
         showParticipants: e.isSingleMosaicItem
-    }) : (0, x.$o)({
+    }) : (0, T.$o)({
         ...e,
-        alt: t.description,
-        poster: m.toString(),
-        fileSize: t.size,
-        fileName: (0, v.A)(t),
-        src: t.url,
-        placeholder: t.placeholder,
-        placeholderVersion: t.placeholder_version,
-        srcIsAnimated: (0, l.Lt)(t.flags ?? 0, y.sbO.IS_ANIMATED),
-        renderOverlayContent: c,
+        alt: a.description,
+        poster: p.toString(),
+        fileSize: a.size,
+        fileName: (0, A.A)(a),
+        src: a.url,
+        placeholder: a.placeholder,
+        placeholderVersion: a.placeholder_version,
+        srcIsAnimated: (0, c.Lt)(a.flags ?? 0, E.sbO.IS_ANIMATED),
+        renderOverlayContent: l,
         sourceMetadata: {
             message: e.message,
             identifier: {
                 type: "attachment",
-                attachmentId: t.id,
-                filename: t.filename,
-                size: t.size
+                attachmentId: a.id,
+                filename: a.filename,
+                size: a.size
             }
         }
     })
 }
 
-function P(e) {
-    let t = e.item.originalItem;
-    return (0, x.gL)({
-        ...e,
-        fileSize: t.size,
-        fileName: (0, v.A)(t),
-        src: t.url
-    })
-}
-
 function M(e) {
-    let {
-        message: t,
-        item: n
-    } = e, a = n.originalItem, r = (0, b.dx)(b.k0.VOICE_MESSAGE, a.id), i = o.useCallback((e, n, o) => {
-        (0, h.wQ)(t.id, a.duration_secs ?? null, n, t.author.id)
-    }, [t, a.duration_secs]), l = o.useCallback((e, n) => {
-        (0, h.dP)(t.id, a.duration_secs ?? null, e, t.author.id, n)
-    }, [t, a.duration_secs]), c = o.useCallback(e => {
-        (0, h._O)(t.id, e?.message ?? null)
-    }, [t]);
-    return (0, x.P$)({
+    let a = e.item.originalItem;
+    return (0, T.gL)({
         ...e,
         fileSize: a.size,
-        fileName: (0, v.A)(a),
-        src: a.url,
-        durationSecs: a.duration_secs,
-        waveform: a.waveform,
-        onPlay: i,
-        onPause: l,
-        onError: c,
-        playbackCacheKey: r
+        fileName: (0, A.A)(a),
+        src: a.url
     })
 }
 
-function j(e) {
-    let t = e.item.originalItem;
-    return (0, x._d)({
-        ...e,
-        url: t.url,
-        fileName: (0, v.A)(t),
-        fileSize: t.size,
-        contentType: t.content_type
-    })
-}
-
-function T(e) {
-    let t = e.item.originalItem;
-    return (0, x.Dk)({
-        ...e,
-        url: t.url,
-        fileName: (0, v.A)(t),
-        fileSize: t.size
-    })
-}
-
-function k(e) {
+function O(e) {
     let {
-        newEmbedUi: t
+        message: a,
+        item: t
+    } = e, n = t.originalItem, o = (0, f.dx)(f.k0.VOICE_MESSAGE, n.id), r = i.useCallback((e, t, i) => {
+        (0, C.wQ)(a.id, n.duration_secs ?? null, t, a.author.id)
+    }, [a, n.duration_secs]), c = i.useCallback((e, t) => {
+        (0, C.dP)(a.id, n.duration_secs ?? null, e, a.author.id, t)
+    }, [a, n.duration_secs]), l = i.useCallback(e => {
+        (0, C._O)(a.id, e?.message ?? null)
+    }, [a]);
+    return (0, T.P$)({
+        ...e,
+        fileSize: n.size,
+        fileName: (0, A.A)(n),
+        src: n.url,
+        durationSecs: n.duration_secs,
+        waveform: n.waveform,
+        onPlay: r,
+        onPause: c,
+        onError: l,
+        playbackCacheKey: o
+    })
+}
+
+function N(e) {
+    let a = e.item.originalItem;
+    return (0, T._d)({
+        ...e,
+        url: a.url,
+        fileName: (0, A.A)(a),
+        fileSize: a.size,
+        contentType: a.content_type
+    })
+}
+
+function w(e) {
+    let a = e.item.originalItem;
+    return (0, T.Dk)({
+        ...e,
+        url: a.url,
+        fileName: (0, A.A)(a),
+        fileSize: a.size
+    })
+}
+
+function R(e) {
+    let {
+        newEmbedUi: a
     } = u.Q.useConfig({
         location: "MosaicItemFooterForMessageAttachment"
     });
-    return "CLIP" !== e.item.type || t ? null : (0, a.jsx)(E, {
+    return "CLIP" !== e.item.type || a ? null : (0, n.jsx)(G, {
         attachment: e.item.originalItem,
         message: e.message
     })
 }
 
-function E(e) {
+function G(e) {
     let {
-        attachment: t,
-        message: n
-    } = e, o = n.channel_id, r = (0, c.bG)([f.A], () => f.A.getBasicChannel(o)?.guild_id), {
-        clip_created_at: i,
-        clip_participants: l,
+        attachment: a,
+        message: t
+    } = e, i = t.channel_id, o = (0, l.bG)([g.A], () => g.A.getBasicChannel(i)?.guild_id), {
+        clip_created_at: r,
+        clip_participants: c,
         title: s,
         application: _
-    } = t;
-    return (0, a.jsx)(m.A, {
-        createdAt: null != i ? Date.parse(i) : void 0,
-        participantIds: l?.map(e => {
+    } = a;
+    return (0, n.jsx)(p.A, {
+        createdAt: null != r ? Date.parse(r) : void 0,
+        participantIds: c?.map(e => {
             let {
-                id: t
+                id: a
             } = e;
-            return t
+            return a
         }) ?? [],
         applicationId: _?.id,
         title: s,
-        guildId: r
+        guildId: o
     })
 }

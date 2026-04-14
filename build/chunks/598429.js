@@ -3,10 +3,10 @@ n.d(t, {
     A: () => E
 });
 var i = n(627968),
-    l = n(64700),
-    s = n(158954),
+    a = n(64700),
+    l = n(158954),
     r = n(311907),
-    a = n(990078),
+    s = n(990078),
     o = n(397927),
     d = n(442433),
     c = n(212245),
@@ -19,7 +19,7 @@ var i = n(627968),
     A = n(652215),
     x = n(985018),
     f = n(156008);
-class C extends l.PureComponent {
+class C extends a.PureComponent {
     static defaultProps = {
         fullWidth: !1,
         size: "md",
@@ -37,10 +37,10 @@ class C extends l.PureComponent {
         e.stopPropagation();
         let {
             libraryApplication: t,
-            onDropdownOpen: l,
-            onDropdownClose: s
+            onDropdownOpen: a,
+            onDropdownClose: l
         } = this.props;
-        if (l?.(e), null == t) throw Error("Unexpected missing libraryApplication");
+        if (a?.(e), null == t) throw Error("Unexpected missing libraryApplication");
         d.L3(e, async () => {
             let {
                 default: e
@@ -51,7 +51,7 @@ class C extends l.PureComponent {
                 onPlay: this.handleClick
             })
         }, {
-            onClose: s
+            onClose: l
         })
     };
     handleClick = () => {
@@ -78,19 +78,19 @@ class C extends l.PureComponent {
     renderDisabledButton(e, t) {
         let {
             fullWidth: n,
-            size: l,
+            size: a,
             disabledVariant: r = "secondary",
             tooltipPosition: o
         } = this.props;
         return (0, i.jsxs)("div", {
             className: f.Yr,
-            children: [(0, i.jsx)(s.$nd, {
+            children: [(0, i.jsx)(l.$nd, {
                 text: e,
                 fullWidth: n,
-                size: l,
+                size: a,
                 variant: r,
                 disabled: !0
-            }), (0, i.jsx)(a.m, {
+            }), (0, i.jsx)(s.m, {
                 text: t,
                 position: o,
                 children: (0, i.jsx)("div", {
@@ -104,21 +104,21 @@ class C extends l.PureComponent {
             fullWidth: e,
             size: t,
             variant: n,
-            isLaunchable: l,
+            isLaunchable: a,
             isLaunching: r,
-            isRunning: a,
+            isRunning: s,
             hideNotLaunchable: d
         } = this.props;
-        return l ? a ? this.renderDisabledButton(x.intl.string(x.t["3elwAB"])) : (0, i.jsxs)(s.e2v, {
+        return a ? s ? this.renderDisabledButton(x.intl.string(x.t["3elwAB"])) : (0, i.jsxs)(l.e2v, {
             size: t,
             wrap: !1,
             fullWidth: e,
-            children: [(0, i.jsx)(s.$nd, {
+            children: [(0, i.jsx)(l.$nd, {
                 text: x.intl.string(x.t["359Pbd"]),
                 variant: n,
                 loading: r,
                 onClick: this.handleClick
-            }), this.hasMultipleLaunchOptions() ? (0, i.jsx)(s.K0, {
+            }), this.hasMultipleLaunchOptions() ? (0, i.jsx)(l.K0, {
                 icon: o.abt,
                 "aria-label": x.intl.string(x.t.KTPVLL),
                 variant: "secondary",
@@ -132,12 +132,12 @@ function E(e) {
     let {
         applicationId: t,
         libraryApplication: n
-    } = e, l = (0, c.p)(), [s, a] = (0, r.yK)([m.A, _.A, h.A], () => [m.A.isConnected(t) || _.A.isLaunchable(t) || null != n && h.A.isLaunchable(n.id, n.branchId), _.A.launchingGames.has(t)], [t, n]), o = (0, r.bG)([u.Ay], () => new Set(u.Ay.getRunningVerifiedApplicationIds()).has(t), [t]), d = (0, r.bG)([h.A], () => null != n ? h.A.getState(n.id, n.branchId) : null, [n]);
+    } = e, a = (0, c.p)(), [l, s] = (0, r.yK)([m.A, _.A, h.A], () => [m.A.isConnected(t) || _.A.isLaunchable(t) || null != n && h.A.isLaunchable(n.id, n.branchId), _.A.launchingGames.has(t)], [t, n]), o = (0, r.bG)([u.Ay], () => new Set(u.Ay.getRunningVerifiedApplicationIds()).has(t), [t]), d = (0, r.bG)([h.A], () => null != n ? h.A.getState(n.id, n.branchId) : null, [n]);
     return (0, i.jsx)(C, {
         ...e,
-        analyticsContext: l,
-        isLaunchable: s,
-        isLaunching: a,
+        analyticsContext: a,
+        isLaunchable: l,
+        isLaunching: s,
         isRunning: o,
         dispatchState: d
     })

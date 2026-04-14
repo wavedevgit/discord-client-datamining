@@ -1,49 +1,49 @@
 /** chunk id: 812299 params = (module,exports,require) **/
-n.d(t, {
-    k: () => o,
-    y: () => d
+t.d(a, {
+    k: () => l,
+    y: () => s
 });
-var i = n(627968);
-n(64700);
-var l = n(709066),
-    s = n(455207),
-    a = n(943667),
-    r = n(767283);
+var n = t(627968);
+t(64700);
+var i = t(709066),
+    o = t(455207),
+    r = t(943667),
+    c = t(767283);
 
-function o(e) {
-    let t, {
-        message: n,
-        channel: i,
-        user: r,
-        isRepliedMessage: o
+function l(e) {
+    let a, {
+        message: t,
+        channel: n,
+        user: c,
+        isRepliedMessage: l
     } = e;
-    return n?.isSystemDM() ? t = l.A.Types.SYSTEM_DM : null != n && (0, a.A)(n) ? t = (0, s.MZ)(n) ? l.A.Types.OFFICIAL : l.A.Types.SERVER : r?.bot ? t = l.A.Types.BOT : null != i && i.isForumPost() && i.ownerId === r?.id && !o && (t = l.A.Types.ORIGINAL_POSTER), t
+    return t?.isSystemDM() ? a = i.A.Types.SYSTEM_DM : null != t && (0, r.A)(t) ? a = (0, o.MZ)(t) ? i.A.Types.OFFICIAL : i.A.Types.SERVER : c?.bot ? a = i.A.Types.BOT : null != n && n.isForumPost() && n.ownerId === c?.id && !l && (a = i.A.Types.ORIGINAL_POSTER), a
 }
 
-function d(e) {
+function s(e) {
     let {
-        message: t,
-        channel: n,
-        user: s,
-        compact: a,
-        isRepliedMessage: d,
-        hideIcon: c = !1,
-        children: u
-    } = e, h = o({
-        message: t,
-        channel: n,
-        user: s,
-        compact: a,
-        isRepliedMessage: d,
-        hideIcon: c,
-        children: u
+        message: a,
+        channel: t,
+        user: o,
+        compact: r,
+        isRepliedMessage: s,
+        hideIcon: _ = !1,
+        children: d
+    } = e, u = l({
+        message: a,
+        channel: t,
+        user: o,
+        compact: r,
+        isRepliedMessage: s,
+        hideIcon: _,
+        children: d
     });
-    return null == h ? null : (0, i.jsx)(l.A, {
-        className: a ? r.jW : r.RQ,
-        type: h,
-        verified: s?.isVerifiedBot(),
-        hideIcon: c,
+    return null == u ? null : (0, n.jsx)(i.A, {
+        className: r ? c.jW : c.RQ,
+        type: u,
+        verified: o?.isVerifiedBot(),
+        hideIcon: _,
         useRemSizes: !0,
-        children: u
+        children: d
     })
 }

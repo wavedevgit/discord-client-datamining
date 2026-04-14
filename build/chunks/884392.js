@@ -3,10 +3,10 @@ n.d(t, {
     A: () => g
 });
 var i = n(627968),
-    l = n(412703),
-    s = n(311907),
+    a = n(412703),
+    l = n(311907),
     r = n(397927),
-    a = n(829219),
+    s = n(829219),
     o = n(859703),
     d = n(890687),
     c = n(590202),
@@ -17,9 +17,9 @@ var i = n(627968),
 
 function p(e) {
     switch (e) {
-        case l.n.ACHIEVEMENT_IN_ACTIVITY:
-        case l.n.PLAY_ACTIVITY:
-        case l.n.WATCH_VIDEO:
+        case a.n.ACHIEVEMENT_IN_ACTIVITY:
+        case a.n.PLAY_ACTIVITY:
+        case a.n.WATCH_VIDEO:
             return c.Cy.START_QUEST;
         default:
             return c.Cy.ACCEPT_QUEST
@@ -44,7 +44,7 @@ let g = function(e) {
         questContentRowIndex: E
     }, v = n.id, {
         isEnrolling: b
-    } = (0, s.cf)([o.A], () => ({
+    } = (0, l.cf)([o.A], () => ({
         isEnrolling: o.A.isEnrolling(v)
     }), [v]), T = (0, _.Oz)(n), y = function(e, t) {
         let {
@@ -54,8 +54,8 @@ let g = function(e) {
             (0, _.Fy)(t)
         };
         switch (e) {
-            case l.n.ACHIEVEMENT_IN_ACTIVITY:
-            case l.n.PLAY_ACTIVITY:
+            case a.n.ACHIEVEMENT_IN_ACTIVITY:
+            case a.n.PLAY_ACTIVITY:
                 return () => {
                     n()
                 };
@@ -67,19 +67,19 @@ let g = function(e) {
             features: n
         } = t.config;
         switch (e) {
-            case l.n.WATCH_VIDEO:
+            case a.n.WATCH_VIDEO:
                 return h.intl.formatToPlainString(h.t.GNsKiW, {
                     remainTime: (0, u.xm)((0, u.Yh)(t))
                 });
-            case l.n.ACHIEVEMENT_IN_ACTIVITY:
+            case a.n.ACHIEVEMENT_IN_ACTIVITY:
                 return h.intl.string(h.t.CkUzLd);
-            case l.n.PLAY_ACTIVITY:
+            case a.n.PLAY_ACTIVITY:
                 if (n.includes(m.Li.CLOUD_GAMING_ACTIVITY)) return h.intl.string(h.t["+qoymD"]);
                 return h.intl.string(h.t.E4kW5O);
             default:
                 return h.intl.string(h.t.kUQLMJ)
         }
-    }(c, n), N = (t = y ?? void 0, c === l.n.WATCH_VIDEO ? async () => {
+    }(c, n), N = (t = y ?? void 0, c === a.n.WATCH_VIDEO ? async () => {
         await (0, _.e0)(n, {
             questContent: I.questContent,
             questContentCTA: I.questContentCTA,
@@ -89,7 +89,7 @@ let g = function(e) {
             questContentRowIndex: I.questContentRowIndex
         })
     }: async () => {
-        await (0, a.Oy)(n.id, {
+        await (0, s.Oy)(n.id, {
             questContent: I.questContent,
             questContentCTA: I.questContentCTA,
             sourceQuestContent: I.sourceQuestContent,

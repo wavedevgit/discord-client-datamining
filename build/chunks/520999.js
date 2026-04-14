@@ -52,7 +52,7 @@ function h(e) {
             track: !1
         }).catch(() => t(null)) : null != s && t(null)
     }, [O]);
-    let P = e => {
+    let M = e => {
         j(e), (0, x.S1)(e, O, {
             location: U.location
         }).then(() => C(null)).catch(() => {
@@ -70,12 +70,12 @@ function h(e) {
                 canUseCustomBackgrounds: E,
                 customBackgroundOptions: S,
                 selectedOption: h,
-                onSelectOption: P,
+                onSelectOption: M,
                 onUpsellClick: () => {
                     (0, a.mMO)(async () => {
                         let {
                             default: e
-                        } = await Promise.all([s.e("91757"), s.e("95743")]).then(s.bind(s, 210402));
+                        } = await s.e("95743").then(s.bind(s, 210402));
                         return s => (0, n.jsx)(e, {
                             ...s,
                             onLearnMore: t,
@@ -91,7 +91,7 @@ function h(e) {
                     return new Promise(async n => {
                         try {
                             let n = await (0, d.F9)(e, A.yZ.BACKGROUND);
-                            P(n), (0, m.D1)(n, t.type === f.a.MP4, s), C(null)
+                            M(n), (0, m.D1)(n, t.type === f.a.MP4, s), C(null)
                         } catch (e) {
                             C(e.message)
                         }

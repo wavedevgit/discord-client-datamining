@@ -3,10 +3,10 @@ n.d(t, {
     A: () => p
 }), n(321073);
 var i = n(627968),
-    l = n(64700),
-    s = n(397927),
+    a = n(64700),
+    l = n(397927),
     r = n(572211),
-    a = n(354287),
+    s = n(354287),
     o = n(693879),
     d = n(353411),
     c = n(882171),
@@ -27,11 +27,11 @@ function p(e) {
         onClickContent: C,
         onView: E,
         guildId: I
-    } = e, v = (0, u.w)(f, g), b = (0, d.Gq)(g, n.author, "Invite Embed"), T = l.useMemo(() => {
+    } = e, v = (0, u.w)(f, g), b = (0, d.Gq)(g, n.author, "Invite Embed"), T = a.useMemo(() => {
         let e = [];
         return v || e.push({
             label: b.label ?? m.intl.string(m.t.VJlc0S),
-            trackingArea: a.kY.SYNC,
+            trackingArea: s.kY.SYNC,
             onClick: () => {
                 b.onClick()
             },
@@ -41,9 +41,9 @@ function p(e) {
     }, [v, b]), y = null != g && null != g.details && null != g.state ? m.intl.formatToPlainString(m.t.JCvHtx, {
         track: g.details,
         artist: g.state
-    }) : t.name, S = g?.timestamps?.start ?? g?.created_at, N = l.useMemo(() => null != S ? (0, i.jsxs)("div", {
+    }) : t.name, S = g?.timestamps?.start ?? g?.created_at, N = a.useMemo(() => null != S ? (0, i.jsxs)("div", {
         className: h.Ym,
-        children: [(0, i.jsx)(s.T7G, {
+        children: [(0, i.jsx)(l.T7G, {
             size: "xxs",
             color: "currentColor"
         }), (0, i.jsx)(o.z, {
@@ -55,9 +55,9 @@ function p(e) {
             textTabularNumbers: !1,
             textFontCode: !1
         })]
-    }) : null, [S, g?.timestamps?.end]), j = l.useMemo(() => (0, i.jsxs)("div", {
+    }) : null, [S, g?.timestamps?.end]), j = a.useMemo(() => (0, i.jsxs)("div", {
         className: h.pq,
-        children: [(0, i.jsx)(s.Text, {
+        children: [(0, i.jsx)(l.Text, {
             variant: "text-xs/normal",
             className: h.dS,
             color: "none",

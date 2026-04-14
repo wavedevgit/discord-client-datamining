@@ -2,10 +2,10 @@
 n.d(t, {
     A: () => E
 });
-var i, l = n(627968),
-    s = n(64700),
+var i, a = n(627968),
+    l = n(64700),
     r = n(503698),
-    a = n.n(r),
+    s = n.n(r),
     o = n(397927),
     d = n(360560),
     c = n(985018),
@@ -15,9 +15,9 @@ let m = e => {
         let {
             className: t
         } = e;
-        return (0, l.jsxs)("div", {
-            className: a()(u.nM, t),
-            children: [(0, l.jsx)(o._z, {
+        return (0, a.jsxs)("div", {
+            className: s()(u.nM, t),
+            children: [(0, a.jsx)(o._z, {
                 size: "md",
                 color: "currentColor",
                 className: u.Kk
@@ -29,9 +29,9 @@ let m = e => {
             sku: t,
             className: n
         } = e;
-        return (0, l.jsxs)("div", {
-            className: a()(u.nM, n),
-            children: [(0, l.jsx)(o.tvc, {
+        return (0, a.jsxs)("div", {
+            className: s()(u.nM, n),
+            children: [(0, a.jsx)(o.tvc, {
                 size: "md",
                 color: "currentColor",
                 className: u.Kk
@@ -43,8 +43,8 @@ let m = e => {
             sku: t,
             className: n
         } = e;
-        return (0, l.jsx)("div", {
-            className: a()(u.EQ, n),
+        return (0, a.jsx)("div", {
+            className: s()(u.EQ, n),
             children: t.getDisplaySalePercentage()
         })
     },
@@ -53,8 +53,8 @@ let m = e => {
             sku: t,
             className: n
         } = e;
-        return (0, l.jsx)("div", {
-            className: a()(u.I8, n),
+        return (0, a.jsx)("div", {
+            className: s()(u.I8, n),
             children: (0, d.A)(t, !1)
         })
     },
@@ -63,7 +63,7 @@ let m = e => {
             sku: t,
             className: n
         } = e;
-        return (0, l.jsx)("div", {
+        return (0, a.jsx)("div", {
             className: n,
             children: (0, d.A)(t)
         })
@@ -73,13 +73,13 @@ let m = e => {
             sku: t,
             className: n
         } = e;
-        return (0, l.jsxs)("div", {
-            className: a()(u.nM, n),
-            children: [(0, l.jsx)(p, {
+        return (0, a.jsxs)("div", {
+            className: s()(u.nM, n),
+            children: [(0, a.jsx)(p, {
                 sku: t
-            }), (0, l.jsx)(g, {
+            }), (0, a.jsx)(g, {
                 sku: t
-            }), (0, l.jsx)(A, {
+            }), (0, a.jsx)(A, {
                 sku: t
             })]
         })
@@ -88,12 +88,12 @@ let m = e => {
         let {
             className: t
         } = e;
-        return (0, l.jsx)("div", {
+        return (0, a.jsx)("div", {
             className: t,
             children: c.intl.string(c.t.QQsaCc)
         })
     };
-class C extends s.PureComponent {
+class C extends l.PureComponent {
     static Types = _;
     getState() {
         let {
@@ -116,26 +116,26 @@ class C extends s.PureComponent {
         } = this.props;
         switch (e) {
             case 5:
-                return (0, l.jsx)(f, {
-                    className: a()(t, n)
+                return (0, a.jsx)(f, {
+                    className: s()(t, n)
                 });
             case 1:
-                return (0, l.jsx)(m, {
-                    className: a()(t, n)
+                return (0, a.jsx)(m, {
+                    className: s()(t, n)
                 });
             case 3:
-                return (0, l.jsx)(h, {
+                return (0, a.jsx)(h, {
                     sku: i,
-                    className: a()(t, n)
+                    className: s()(t, n)
                 });
             case 2:
-                return (0, l.jsx)(x, {
+                return (0, a.jsx)(x, {
                     sku: i,
-                    className: a()(t, n)
+                    className: s()(t, n)
                 });
             default:
-                return (0, l.jsx)(A, {
-                    className: a()(t, n),
+                return (0, a.jsx)(A, {
+                    className: s()(t, n),
                     sku: i
                 })
         }
@@ -147,22 +147,22 @@ class C extends s.PureComponent {
         } = this.props;
         switch (e) {
             case 5:
-                return (0, l.jsx)(f, {
+                return (0, a.jsx)(f, {
                     className: t
                 });
             case 3:
-                return (0, l.jsx)(h, {
+                return (0, a.jsx)(h, {
                     sku: n,
-                    className: a()(u.OB, t)
+                    className: s()(u.OB, t)
                 });
             case 2:
-                return (0, l.jsx)(x, {
+                return (0, a.jsx)(x, {
                     sku: n,
-                    className: a()(u.dk, t)
+                    className: s()(u.dk, t)
                 });
             default:
-                return (0, l.jsx)(A, {
-                    className: a()(u.dk, t),
+                return (0, a.jsx)(A, {
+                    className: s()(u.dk, t),
                     sku: n
                 })
         }
@@ -174,29 +174,29 @@ class C extends s.PureComponent {
         } = this.props;
         switch (e) {
             case 5:
-                t = (0, l.jsx)(f, {});
+                t = (0, a.jsx)(f, {});
                 break;
             case 2:
-                t = (0, l.jsxs)(s.Fragment, {
-                    children: [(0, l.jsxs)("div", {
+                t = (0, a.jsxs)(l.Fragment, {
+                    children: [(0, a.jsxs)("div", {
                         className: u.nM,
-                        children: [(0, l.jsx)(A, {
+                        children: [(0, a.jsx)(A, {
                             sku: i
-                        }), (0, l.jsx)(p, {
+                        }), (0, a.jsx)(p, {
                             sku: i
                         })]
-                    }), (0, l.jsx)(g, {
+                    }), (0, a.jsx)(g, {
                         sku: i
                     })]
                 });
                 break;
             default:
-                t = (0, l.jsx)(A, {
+                t = (0, a.jsx)(A, {
                     sku: i
                 })
         }
-        return (0, l.jsx)("div", {
-            className: a()(u.IH, n),
+        return (0, a.jsx)("div", {
+            className: s()(u.IH, n),
             children: t
         })
     }

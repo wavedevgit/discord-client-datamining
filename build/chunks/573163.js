@@ -3,10 +3,10 @@ n.d(t, {
     A: () => f
 }), n(321073);
 var i = n(627968),
-    l = n(64700),
-    s = n(503698),
-    r = n.n(s),
-    a = n(73939),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
+    s = n(73939),
     o = n(397927),
     d = n(505527),
     c = n(960538),
@@ -17,7 +17,7 @@ var i = n(627968),
     p = n(486025),
     g = n(108277);
 let A = (e, t) => null == e && null == t || e === t;
-class x extends l.PureComponent {
+class x extends a.PureComponent {
     state = {
         disableTransitionAppear: !0,
         reactionsCount: this.props.message.reactions.length,
@@ -37,8 +37,8 @@ class x extends l.PureComponent {
             message: e,
             disableReactionCreates: t,
             disableReactionUpdates: n,
-            isLurking: l,
-            isPendingMember: s,
+            isLurking: a,
+            isPendingMember: l,
             isForumToolbar: d,
             channel: A,
             className: x,
@@ -54,7 +54,7 @@ class x extends l.PureComponent {
         } = this.state, S = E ? g : p, N = T > 0;
         if (!N && !f) return null;
         let j = f || N;
-        return (0, i.jsxs)(a.F, {
+        return (0, i.jsxs)(s.F, {
             component: "div",
             className: r()(S.reactions, x),
             transitionAppear: !y,
@@ -71,8 +71,8 @@ class x extends l.PureComponent {
                 reactions: b,
                 message: e,
                 readOnly: n,
-                isLurking: l,
-                isPendingMember: s,
+                isLurking: a,
+                isPendingMember: l,
                 isForumToolbar: d,
                 useChatFontScaling: E,
                 className: C
@@ -104,39 +104,39 @@ let f = e => {
     let {
         message: t,
         maxReactions: n,
-        hoistReaction: s
+        hoistReaction: l
     } = e, {
         combinedReactions: r,
-        remainingReactions: a,
+        remainingReactions: s,
         visibleReactionsCount: o
-    } = l.useMemo(() => {
+    } = a.useMemo(() => {
         let e = [],
             i = ((e, t) => {
                 if (null == t) return e;
                 let n = e.findIndex(e => A(e.emoji.id, t?.id) && A(e.emoji.name, t?.name));
                 return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
-            })(t.reactions, s),
-            l = null != n && n < i.length ? i.slice(0, n) : i,
-            r = i.length - l.length,
-            a = i.length;
-        return l.forEach(t => {
+            })(t.reactions, l),
+            a = null != n && n < i.length ? i.slice(0, n) : i,
+            r = i.length - a.length,
+            s = i.length;
+        return a.forEach(t => {
             t.burst_count > 0 && e.push({
                 ...t,
                 type: d.v.BURST
             }), t.count > 0 && e.push({
                 ...t,
                 type: d.v.NORMAL
-            }), null != t.me_vote && --a
+            }), null != t.me_vote && --s
         }), {
             combinedReactions: e,
-            visibleReactionsCount: a,
+            visibleReactionsCount: s,
             remainingReactions: r
         }
-    }, [s, n, t.reactions]);
+    }, [l, n, t.reactions]);
     return (0, i.jsx)(x, {
         ...e,
         visibleReactionsCount: o,
         combinedReactions: r,
-        remainingReactions: a
+        remainingReactions: s
     })
 }

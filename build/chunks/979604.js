@@ -2,10 +2,10 @@
 n.d(t, {
     A: () => R
 });
-var i, l = n(627968),
-    s = n(64700),
+var i, a = n(627968),
+    l = n(64700),
     r = n(158954),
-    a = n(311907),
+    s = n(311907),
     o = n(827734),
     d = n(990078),
     c = n(397927),
@@ -35,7 +35,7 @@ let j = Object.freeze({
     [T.Hf6.MOVE_UP]: "queued",
     [T.Hf6.RESUME]: "paused"
 });
-class L extends s.Component {
+class L extends l.Component {
     static defaultProps = {
         fullWidth: !1,
         size: "md",
@@ -127,21 +127,21 @@ class L extends s.Component {
             fullWidth: t,
             size: n,
             playButtonVariant: i = "secondary",
-            disabledVariant: s,
+            disabledVariant: l,
             onDropdownOpen: r,
-            onDropdownClose: a,
+            onDropdownClose: s,
             analyticsListSort: o,
             analyticsListIndex: d
         } = this.props;
-        return (0, l.jsx)(b.A, {
+        return (0, a.jsx)(b.A, {
             applicationId: e.id,
             libraryApplication: e,
             fullWidth: t,
             size: n,
             variant: i,
-            disabledVariant: s,
+            disabledVariant: l,
             onDropdownOpen: r,
-            onDropdownClose: a,
+            onDropdownClose: s,
             analyticsListSort: o,
             analyticsListIndex: d
         })
@@ -150,23 +150,23 @@ class L extends s.Component {
         let {
             fullWidth: n,
             size: i,
-            disabledVariant: s = "secondary",
-            tooltipPosition: a
+            disabledVariant: l = "secondary",
+            tooltipPosition: s
         } = this.props, o = this.renderProgressBar();
-        return (0, l.jsxs)("div", {
+        return (0, a.jsxs)("div", {
             className: null != o ? S.c : void 0,
-            children: [(0, l.jsxs)("div", {
+            children: [(0, a.jsxs)("div", {
                 className: S.Yr,
-                children: [(0, l.jsx)(r.$nd, {
+                children: [(0, a.jsx)(r.$nd, {
                     text: this.getText(e),
                     fullWidth: n,
                     size: i,
-                    variant: s,
+                    variant: l,
                     disabled: !0
-                }), (0, l.jsx)(d.m, {
+                }), (0, a.jsx)(d.m, {
                     text: t,
-                    position: a,
-                    children: (0, l.jsx)("div", {
+                    position: s,
+                    children: (0, a.jsx)("div", {
                         className: S.p5
                     })
                 })]
@@ -182,7 +182,7 @@ class L extends s.Component {
         let n = C.z0(t);
         if (null == n) return null;
         let i = n.type === T.WTw.UNINSTALLING ? c.iCB.INDETERMINATE : C.uA(Number(n.progress), Number(n.total));
-        return (0, l.jsx)(c.iCB, {
+        return (0, a.jsx)(c.iCB, {
             percent: i,
             size: c.iCB.Sizes.XSMALL,
             foregroundColor: n.paused ? o.A.unsafe_rawColors.PRIMARY_500.css : o.A.unsafe_rawColors.GREEN_360.css,
@@ -194,17 +194,17 @@ class L extends s.Component {
         let {
             fullWidth: n,
             size: i,
-            actionButtonVariant: s = "primary",
-            isCloudSyncing: a
+            actionButtonVariant: l = "primary",
+            isCloudSyncing: s
         } = this.props, o = this.renderProgressBar();
-        return (0, l.jsxs)("div", {
+        return (0, a.jsxs)("div", {
             className: null != o ? S.c : void 0,
-            children: [(0, l.jsx)(r.$nd, {
+            children: [(0, a.jsx)(r.$nd, {
                 text: this.getText(e),
                 fullWidth: n,
                 size: i,
-                variant: s,
-                loading: "uninstalling" === e || a,
+                variant: l,
+                loading: "uninstalling" === e || s,
                 onClick: e => this.handleClick(e, t)
             }), o]
         })
@@ -233,12 +233,12 @@ class L extends s.Component {
 function R(e) {
     let {
         libraryApplication: t
-    } = e, n = (0, _.p)(), [i, s] = (0, a.yK)([x.A, f.A], () => [(0, g.F)(t, x.A, f.A), x.A.getState(t.id, t.branchId)], [t]), r = (0, a.bG)([A.A], () => A.A.isSyncing(t.id, t.branchId), [t]), o = (0, a.bG)([p.A], () => p.A.hasNoBuild(t.id, t.branchId), [t]);
-    return (0, l.jsx)(L, {
+    } = e, n = (0, _.p)(), [i, l] = (0, s.yK)([x.A, f.A], () => [(0, g.F)(t, x.A, f.A), x.A.getState(t.id, t.branchId)], [t]), r = (0, s.bG)([A.A], () => A.A.isSyncing(t.id, t.branchId), [t]), o = (0, s.bG)([p.A], () => p.A.hasNoBuild(t.id, t.branchId), [t]);
+    return (0, a.jsx)(L, {
         ...e,
         analyticsContext: n,
         actionState: i,
-        dispatchState: s,
+        dispatchState: l,
         isCloudSyncing: r,
         hasNoBuild: o
     })

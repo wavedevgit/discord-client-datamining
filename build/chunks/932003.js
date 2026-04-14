@@ -28,10 +28,10 @@ function x() {
             gradient: T.colors,
             angle: T.angle ?? void 0
         }) : void 0,
-        I = (0, d.x)(g, p);
+        h = (0, d.x)(g, p);
     return (0, i.jsxs)("div", {
         className: m.kL,
-        style: I,
+        style: h,
         children: [(0, i.jsxs)("div", {
             className: m.V_,
             children: [(0, i.jsx)(s.Text, {

@@ -3,10 +3,10 @@ n.d(t, {
     A: () => A
 });
 var i = n(627968),
-    l = n(503698),
-    s = n.n(l),
+    a = n(503698),
+    l = n.n(a),
     r = n(311907),
-    a = n(52133),
+    s = n(52133),
     o = n(397927),
     d = n(402216),
     c = n(450149),
@@ -21,7 +21,7 @@ function A(e) {
     let {
         stream: t,
         currentUserId: n,
-        className: l,
+        className: a,
         onClick: A
     } = e, {
         activeStream: x,
@@ -29,16 +29,16 @@ function A(e) {
     } = (0, r.bG)([h.A, p.A], () => ({
         activeStream: h.A.getActiveStreamForApplicationStream(t),
         channel: p.A.getChannel(t.channelId)
-    }), [t], a.A), {
+    }), [t], s.A), {
         previewUrl: C,
         isLoading: E
     } = (0, c.A)(t.guildId, t.channelId, t.ownerId), [I, v] = (0, u.zP)(f);
     return (0, i.jsxs)(o.DUT, {
         onClick: I ? A : void 0,
-        className: s()(g.Um, {
+        className: l()(g.Um, {
             [g.qf]: null == C && !E,
             [g.vk]: I
-        }, l),
+        }, a),
         children: [(0, i.jsx)("div", {
             className: g.rB,
             children: (0, i.jsx)(m.A, {

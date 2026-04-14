@@ -1,16 +1,16 @@
 /** chunk id: 246356 params = (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => l
 });
 var i = n(64700),
-    l = n(447404);
+    a = n(447404);
 
-function s(e) {
+function l(e) {
     let {
         children: t
     } = e, {
         preventIdle: n,
-        allowIdle: s
-    } = (0, l.o)("popup");
-    return i.useEffect(() => (n(), () => s()), [s, n]), t
+        allowIdle: l
+    } = (0, a.o)("popup");
+    return i.useEffect(() => (n(), () => l()), [l, n]), t
 }

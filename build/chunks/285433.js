@@ -3,10 +3,10 @@ n.d(t, {
     A: () => v
 });
 var i = n(627968),
-    l = n(64700),
-    s = n(503698),
-    r = n.n(s),
-    a = n(294426),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
+    s = n(294426),
     o = n(827734),
     d = n(990078),
     c = n(397927),
@@ -27,7 +27,7 @@ let v = e => {
     let {
         isQuestExpired: t,
         quest: n,
-        location: s,
+        location: l,
         size: v,
         expansionSpring: b,
         isAnimating: T,
@@ -36,10 +36,10 @@ let v = e => {
         contentPosition: N,
         toggleExpanded: j,
         sourceQuestContent: L
-    } = e, [R, P] = l.useState(null), [D, M] = l.useState(null), w = (0, _.A)(e => {
+    } = e, [R, P] = a.useState(null), [M, w] = a.useState(null), D = (0, _.A)(e => {
         let t = e.target;
-        P(t.offsetWidth), M(t.scrollWidth)
-    }), k = (0, u.w)(w), O = s === m.uF.QUESTS_EMBED, U = n.userStatus?.completedAt != null, B = (0, h.S5)(n.config.expiresAt), G = (0, h.S5)(n.config.rewardsConfig.rewardsExpireAt), F = l.useMemo(() => null != n.config.cosponsorMetadata, [n]), H = (0, i.jsx)(A.Ay, {
+        P(t.offsetWidth), w(t.scrollWidth)
+    }), k = (0, u.w)(D), O = l === m.uF.QUESTS_EMBED, U = n.userStatus?.completedAt != null, B = (0, h.S5)(n.config.expiresAt), G = (0, h.S5)(n.config.rewardsConfig.rewardsExpireAt), F = a.useMemo(() => null != n.config.cosponsorMetadata, [n]), H = (0, i.jsx)(A.Ay, {
         className: I.Iu,
         logotypeClassName: F ? I.qN : void 0,
         gameTileSize: A.LU.MEDIUM,
@@ -66,11 +66,11 @@ let v = e => {
         }), (0, i.jsxs)("div", {
             className: I.wx,
             "aria-expanded": y,
-            children: [(0, i.jsx)(a.animated.div, {
+            children: [(0, i.jsx)(s.animated.div, {
                 className: r()(I.VW, {
                     [I.eX]: O
                 }),
-                children: (0, i.jsx)(a.animated.div, {
+                children: (0, i.jsx)(s.animated.div, {
                     className: r()(I.Yu, {
                         [I.Gg]: O
                     }),
@@ -93,7 +93,7 @@ let v = e => {
                             className: I.P9,
                             children: [(0, i.jsx)(d.m, {
                                 __unsupportedReactNodeAsText: n.config.messages.questName,
-                                shouldShow: null != R && null != D && R < D,
+                                shouldShow: null != R && null != M && R < M,
                                 children: (0, i.jsx)(c.Heading, {
                                     ref: k,
                                     variant: "lg" === v ? "heading-xxl/bold" : "sm" === v ? "heading-xl/bold" : "heading-lg/bold",
@@ -117,19 +117,19 @@ let v = e => {
                         })]
                     })
                 })
-            }), (0, i.jsx)(a.animated.div, {
+            }), (0, i.jsx)(s.animated.div, {
                 className: I._q,
                 style: {
                     top: 20
                 },
                 children: (0, i.jsx)(g.C, {
-                    questContent: s,
+                    questContent: l,
                     quest: n,
                     questContentPosition: N,
                     shouldShowDisclosure: !0,
                     showShareLink: !t && O,
                     sourceQuestContent: L,
-                    children: e => (0, i.jsx)(a.animated.div, {
+                    children: e => (0, i.jsx)(s.animated.div, {
                         style: {
                             opacity: (0, f.a)(b),
                             visibility: T || y ? "inherit" : "hidden"

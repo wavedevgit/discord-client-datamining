@@ -3,10 +3,10 @@ n.d(t, {
     A: () => h
 });
 var i = n(627968),
-    l = n(64700),
-    s = n(110259),
+    a = n(64700),
+    l = n(110259),
     r = n(417597),
-    a = n(793574),
+    s = n(793574),
     o = n(688810),
     d = n(139286),
     c = n(627363),
@@ -18,15 +18,15 @@ function h(e) {
     let {
         applicationId: t,
         message: n
-    } = e, [s, a, o] = (0, r.yK)([u.A], () => [u.A.getApplication(t), u.A.isFetchingApplication(t), u.A.didFetchingApplicationFail(t)], [t]);
-    return (l.useEffect(() => {
-        null != s || a || o || c.Ay.fetchApplication(t)
-    }, [s, a, o, t]), null != s && (0, m.Ie)({
-        customInstallUrl: s.customInstallUrl,
-        installParams: s.installParams,
-        integrationTypesConfig: s.integrationTypesConfig
+    } = e, [l, s, o] = (0, r.yK)([u.A], () => [u.A.getApplication(t), u.A.isFetchingApplication(t), u.A.didFetchingApplicationFail(t)], [t]);
+    return (a.useEffect(() => {
+        null != l || s || o || c.Ay.fetchApplication(t)
+    }, [l, s, o, t]), null != l && (0, m.Ie)({
+        customInstallUrl: l.customInstallUrl,
+        installParams: l.installParams,
+        integrationTypesConfig: l.integrationTypesConfig
     })) ? (0, i.jsx)(p, {
-        application: s,
+        application: l,
         message: n
     }) : null
 }
@@ -35,17 +35,17 @@ function p(e) {
     let {
         application: t,
         message: n
-    } = e, r = l.useCallback(() => {
+    } = e, r = a.useCallback(() => {
         (0, d.x)({
-            type: s.ImpressionTypes.VIEW,
-            name: s.ImpressionNames.APP_OAUTH2_LINK_EMBED,
+            type: l.ImpressionTypes.VIEW,
+            name: l.ImpressionNames.APP_OAUTH2_LINK_EMBED,
             properties: {
                 application_id: t.id
             }
         })
     }, [t.id]), {
         analyticsLocations: c
-    } = (0, o.Ay)(a.A.APP_OAUTH2_LINK_EMBED);
+    } = (0, o.Ay)(s.A.APP_OAUTH2_LINK_EMBED);
     return (0, i.jsx)(o.f5, {
         value: c,
         children: (0, i.jsx)(_.W, {

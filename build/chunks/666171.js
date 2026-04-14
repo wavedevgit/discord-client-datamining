@@ -3,10 +3,10 @@ n.d(t, {
     A: () => d
 });
 var i = n(64700),
-    l = n(157559),
-    s = n(198982),
+    a = n(157559),
+    l = n(198982),
     r = n(306522),
-    a = n(922482),
+    s = n(922482),
     o = n(985018);
 
 function d(e, t) {
@@ -24,10 +24,10 @@ function d(e, t) {
                         productId: t,
                         attachmentId: n
                     });
-                    await a.R(i)
+                    await s.R(i)
                 } catch (t) {
-                    let e = t instanceof s.LG ? t.getAnyErrorMessage() : void 0;
-                    l.A.show({
+                    let e = t instanceof l.LG ? t.getAnyErrorMessage() : void 0;
+                    a.A.show({
                         title: o.intl.string(o.t.R0RpRX),
                         body: e ?? o.intl.string(o.t.eAn6z2)
                     })

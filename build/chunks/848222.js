@@ -66,8 +66,8 @@ function j(e) {
         }
     } [t], {
         analyticsLocations: U
-    } = (0, m.Ay)(), k = (0, o.bG)([x.A], () => x.A.theme), y = S(l), P = (0, v.tR)(t), {
-        id: M
+    } = (0, m.Ay)(), k = (0, o.bG)([x.A], () => x.A.theme), y = S(l), M = (0, v.tR)(t), {
+        id: P
     } = (0, v.x5)(t), B = (0, o.bG)([A.Ay], () => E(A.Ay)), L = (0, n.jsx)(d.po8, {
         messageType: d.YCn.WARNING,
         children: b()
@@ -129,9 +129,9 @@ function j(e) {
     return (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(r.Te, {
             label: D,
-            value: j ?? M,
+            value: j ?? P,
             onChange: w,
-            options: P.map(e => {
+            options: M.map(e => {
                 let {
                     id: t,
                     name: s

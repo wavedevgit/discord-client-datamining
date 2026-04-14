@@ -3,10 +3,10 @@ n.d(t, {
     A: () => o
 });
 var i = n(627968),
-    l = n(397927),
-    s = n(92246),
+    a = n(397927),
+    l = n(92246),
     r = n(201805),
-    a = n(985018);
+    s = n(985018);
 let o = function(e) {
     let {
         quest: t,
@@ -21,8 +21,8 @@ let o = function(e) {
         questContentPosition: d,
         questContentRowIndex: c,
         sourceQuestContent: o
-    }), m = (0, s.r7)(t.config) ? a.intl.string(a.t.bAGFz3) : a.intl.string(a.t.vTgCWx);
-    return (0, i.jsx)(l.Button, {
+    }), m = (0, l.r7)(t.config) ? s.intl.string(s.t.bAGFz3) : s.intl.string(s.t.vTgCWx);
+    return (0, i.jsx)(a.Button, {
         variant: "primary",
         fullWidth: !0,
         size: u,

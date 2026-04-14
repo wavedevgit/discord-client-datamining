@@ -3,10 +3,10 @@ n.d(t, {
     C: () => L
 });
 var i = n(627968),
-    l = n(64700),
-    s = n(311907),
+    a = n(64700),
+    l = n(311907),
     r = n(397927),
-    a = n(442433),
+    s = n(442433),
     o = n(181658),
     d = n(976860),
     c = n(246356),
@@ -30,7 +30,7 @@ var i = n(627968),
     N = n(985018);
 
 function j(e) {
-    let t = (0, s.bG)([m.A], () => m.A.questDeliveryOverride, []),
+    let t = (0, l.bG)([m.A], () => m.A.questDeliveryOverride, []),
         n = (0, C.vy)(e.questContent),
         c = [h.uF.QUEST_BAR_V2, h.uF.QUEST_BAR].includes(e.questContent),
         j = (0, g.Ut)(),
@@ -38,9 +38,9 @@ function j(e) {
         R = (0, f.wr)(e.quest),
         P = !0 === e.showShareLink && (0, I.E0)(e.quest.config),
         {
-            handleComplete: D,
-            handleProgress: M,
-            handleResetDismissibilityClick: w,
+            handleComplete: M,
+            handleProgress: w,
+            handleResetDismissibilityClick: D,
             handleResetStatusClick: k,
             handleOverrideDeliveryClick: O
         } = (0, p.j$)(e.quest.id),
@@ -53,7 +53,7 @@ function j(e) {
         B = (0, v.Lk)({
             isShareable: P,
             questId: e.quest.id,
-            trackingCtx: l.useMemo(() => ({
+            trackingCtx: a.useMemo(() => ({
                 content: e.questContent,
                 position: e.questContentPosition,
                 ctaContent: A.Cy.CONTEXT_MENU_COPY_LINK,
@@ -64,13 +64,13 @@ function j(e) {
         G = e => (0, r.showToast)((0, r.createToast)(new o.A(e, e.status).message, r.ToastType.FAILURE)),
         F = () => (0, _.CV)(e.quest.id).catch(G),
         H = (0, p.nv)(e.quest),
-        V = l.useMemo(() => (0, i.jsx)(r.sLh, {
+        V = a.useMemo(() => (0, i.jsx)(r.sLh, {
             id: "delivery",
             label: "Show in Quest Bar",
             checked: t?.id === e.quest.id,
             action: O
         }), [O, e.quest.id, t?.id]),
-        q = l.useCallback(() => {
+        q = a.useCallback(() => {
             (0, d.pX)(y.BVt.QUEST_PREVIEW_TOOL_2(e.quest.id))
         }, [e.quest.id]),
         W = e.shouldShowDisclosure && e.quest.id !== T.Fw;
@@ -78,7 +78,7 @@ function j(e) {
         "data-menu-migrated": !0,
         variant: "fixed",
         onSelect: () => {
-            null != e.onSelect ? e.onSelect() : (0, a.Z_)()
+            null != e.onSelect ? e.onSelect() : (0, s.Z_)()
         },
         navId: "quests-entry",
         "aria-label": N.intl.string(N.t.ogxXGq),
@@ -155,7 +155,7 @@ function j(e) {
             children: [(0, i.jsx)(r.Drp, {
                 id: "dismiss",
                 label: N.intl.string(N.t.JF6W66),
-                action: w
+                action: D
             }), (0, i.jsx)(r.Drp, {
                 id: "enrollment",
                 label: N.intl.string(N.t.taqkwK),
@@ -166,12 +166,12 @@ function j(e) {
                 id: "progress",
                 label: N.intl.string(N.t.cKSLr4),
                 action: () => {
-                    M(.9 * Math.random() + .03)
+                    w(.9 * Math.random() + .03)
                 }
             }), (0, i.jsx)(r.Drp, {
                 id: "complete",
                 label: N.intl.string(N.t.jQEfRT),
-                action: D
+                action: M
             }), (0, E.g5)(e.quest) && (0, i.jsxs)(r.Drp, {
                 id: "console",
                 label: "Console Heartbeat",
@@ -207,14 +207,14 @@ function L(e) {
     let {
         children: t,
         onOpen: n,
-        onClose: s,
-        preventIdle: a,
+        onClose: l,
+        preventIdle: s,
         quest: o,
         questContent: d,
         questContentPosition: u,
         sourceQuestContent: _,
         ...m
-    } = e, h = (0, g.Ut)(), p = l.useRef(null), x = l.useCallback(() => {
+    } = e, h = (0, g.Ut)(), p = a.useRef(null), x = a.useCallback(() => {
         h({
             questId: o.id,
             questContent: d,
@@ -226,12 +226,12 @@ function L(e) {
     return (0, i.jsx)(r.YNO, {
         targetElementRef: p,
         onRequestOpen: x,
-        onRequestClose: s,
+        onRequestClose: l,
         renderPopout: e => {
             let {
                 closePopout: t
             } = e;
-            return a ? (0, i.jsx)(c.A, {
+            return s ? (0, i.jsx)(c.A, {
                 children: (0, i.jsx)(j, {
                     ...m,
                     quest: o,

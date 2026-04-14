@@ -3,10 +3,10 @@ n.d(t, {
     W: () => b
 }), n(321073);
 var i = n(627968),
-    l = n(311907),
-    s = n(793574),
+    a = n(311907),
+    l = n(793574),
     r = n(688810),
-    a = n(522305),
+    s = n(522305),
     o = n(735991),
     d = n(361926),
     c = n(485724),
@@ -39,11 +39,11 @@ function b(e) {
         botUserId: t?.bot?.id
     }), j = null != t && (0, o.Ag)(t), L = null != S && j && N, {
         analyticsLocations: R
-    } = (0, r.Ay)(s.A.ACTIVITY_CUSTOM_LINK), P = (0, l.bG)([A.A], () => A.A.getChannelId()), D = (0, I.et)(P), M = (0, l.bG)([C.Ay], () => {
+    } = (0, r.Ay)(l.A.ACTIVITY_CUSTOM_LINK), P = (0, a.bG)([A.A], () => A.A.getChannelId()), M = (0, I.et)(P), w = (0, a.bG)([C.Ay], () => {
         if (null == P) return;
         let e = C.Ay.getEmbeddedActivitiesForChannel(P).filter(e => e.applicationId === t.id);
         return e.length > 0 ? e[0].compositeInstanceId : void 0
-    }), w = (0, l.bG)([C.Ay], () => C.Ay.getCurrentEmbeddedActivity()), k = (0, E.A)(), O = D === I.xy.CAN_LAUNCH, U = null != M && w?.compositeInstanceId === M, B = null != n ? n : b.customId, G = (0, p.e)(t), F = [];
+    }), D = (0, a.bG)([C.Ay], () => C.Ay.getCurrentEmbeddedActivity()), k = (0, E.A)(), O = M === I.xy.CAN_LAUNCH, U = null != w && D?.compositeInstanceId === w, B = null != n ? n : b.customId, G = (0, p.e)(t), F = [];
     G ? F.push({
         label: v.intl.string(v.t.RscU7I),
         trackingArea: _.kY.PLAY,
@@ -53,13 +53,13 @@ function b(e) {
             })
         }
     }) : (O && F.push({
-        label: null == M ? v.intl.string(v.t.RscU7I) : U ? v.intl.string(v.t.DPfdsq) : v.intl.string(v.t.sqe0hj),
+        label: null == w ? v.intl.string(v.t.RscU7I) : U ? v.intl.string(v.t.DPfdsq) : v.intl.string(v.t.sqe0hj),
         trackingArea: _.kY.PLAY,
         onClick() {
             (0, f.su)({
                 channelId: P ?? void 0,
                 applicationId: t.id,
-                isStart: null == M,
+                isStart: null == w,
                 embeddedActivitiesManager: k,
                 customId: B,
                 referrerId: T,
@@ -71,7 +71,7 @@ function b(e) {
         label: v.intl.string(v.t.JeK1Wg),
         trackingArea: _.kY.PLAY,
         onClick() {
-            (0, a.Q)({
+            (0, s.Q)({
                 appId: t.id,
                 botId: S,
                 analyticsLocations: R,

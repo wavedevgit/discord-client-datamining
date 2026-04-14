@@ -3,11 +3,11 @@ n.d(t, {
     R: () => m
 });
 var i = n(627968),
-    l = n(64700),
-    s = n(294426);
+    a = n(64700),
+    l = n(294426);
 n(311907), n(859703);
 var r = n(341915),
-    a = n(890687),
+    s = n(890687),
     o = n(73473),
     d = n(288531),
     c = n(285433),
@@ -21,7 +21,7 @@ function m(e) {
         location: n,
         contentPosition: m,
         sourceQuestContent: h
-    } = e, p = (0, a.LS)(t), {
+    } = e, p = (0, s.LS)(t), {
         containerRef: g,
         size: A,
         height: x
@@ -32,14 +32,14 @@ function m(e) {
         toggleExpanded: I
     } = (0, u.s)({
         initiallyExpanded: !0
-    }), [v, b] = l.useState(!1), T = () => b(!0), y = () => b(!1), S = x ?? 1e3;
+    }), [v, b] = a.useState(!1), T = () => b(!0), y = () => b(!1), S = x ?? 1e3;
     return (0, i.jsx)(o.R, {
         questOrQuests: t,
         questContent: n,
         questContentPosition: m,
         trackGuildAndChannelMetadata: n === r.uF.QUESTS_EMBED,
         sourceQuestContent: h,
-        children: e => (0, i.jsx)(s.animated.div, {
+        children: e => (0, i.jsx)(l.animated.div, {
             style: {
                 maxHeight: n === r.uF.QUESTS_EMBED ? void 0 : f.to({
                     range: [0, 1],

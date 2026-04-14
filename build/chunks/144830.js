@@ -130,7 +130,7 @@ function y(e) {
         source: l
     });
 
-    function P() {
+    function M() {
         null != _ && T && (A.sF(_), N.default.track(I.HAw.PREMIUM_UPSELL_VIEWED, {
             type: E.e.ANIMATED_VIDEO_BACKGROUND_NEW_PRESET,
             location: D.location,
@@ -155,8 +155,8 @@ function y(e) {
         children: [r ? (0, n.jsx)("div", {
             className: S.SH
         }) : null, (0, n.jsx)("div", {
-            onFocus: P,
-            onMouseEnter: P,
+            onFocus: M,
+            onMouseEnter: M,
             className: S.kV,
             children: y
         }), j || h ? (0, n.jsx)("div", {
@@ -172,7 +172,7 @@ function y(e) {
     })
 }
 
-function P() {
+function M() {
     return (0, n.jsxs)("div", {
         className: S.j1,
         children: [(0, n.jsx)(c.tvc, {
@@ -186,7 +186,7 @@ function P() {
     })
 }
 
-function M(e) {
+function P(e) {
     let {
         onClick: t,
         tooltipText: s,
@@ -244,7 +244,7 @@ function B(e) {
             location: s.location,
             location_stack: i
         })
-    }), (0, n.jsx)(M, {
+    }), (0, n.jsx)(P, {
         onClick: t,
         tooltipText: b.intl.string(b.t["IqE0T/"])
     })
@@ -260,7 +260,7 @@ function L(e) {
         name: b.intl.string(b.t["Sp2NF+"]),
         extensions: ["jpg", "jpeg", "png", "gif", "mp4"]
     }];
-    return (0, n.jsx)(M, {
+    return (0, n.jsx)(P, {
         disabled: i,
         onClick: function() {
             (0, c.mMO)(async () => {
@@ -334,7 +334,7 @@ function w(e) {
                     size: 720
                 });
                 return null == t ? null : (0, n.jsx)(r.m, {
-                    __unsupportedReactNodeAsText: (0, n.jsx)(P, {}),
+                    __unsupportedReactNodeAsText: (0, n.jsx)(M, {}),
                     "aria-label": b.intl.string(b.t["T+yRY3"]),
                     children: (0, n.jsx)(y, {
                         option: e,

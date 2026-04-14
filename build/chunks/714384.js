@@ -4,10 +4,10 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(503698),
-    s = n.n(l),
+var a = n(503698),
+    l = n.n(a),
     r = n(990078),
-    a = n(547056),
+    s = n(547056),
     o = n(169295),
     d = n(18301),
     c = n(652215),
@@ -23,7 +23,7 @@ let m = {
         getLabel: () => u.intl.string(u.t.E4u4n5)
     },
     [c.uje.LINUX]: {
-        icon: a.A,
+        icon: s.A,
         getLabel: () => u.intl.string(u.t.tcawo3)
     }
 };
@@ -32,12 +32,12 @@ function h(e) {
     let {
         operatingSystem: t,
         className: n
-    } = e, l = m[t];
-    if (null == l) throw Error(`Unexpected operating system: ${t}`);
-    let s = l.icon;
+    } = e, a = m[t];
+    if (null == a) throw Error(`Unexpected operating system: ${t}`);
+    let l = a.icon;
     return (0, i.jsx)(r.m, {
-        text: l.getLabel(),
-        children: (0, i.jsx)(s, {
+        text: a.getLabel(),
+        children: (0, i.jsx)(l, {
             className: n
         })
     })
@@ -46,13 +46,13 @@ let p = e => {
     let {
         systems: t,
         className: n,
-        iconClassName: l
+        iconClassName: a
     } = e;
     return (0, i.jsx)("div", {
-        className: s()(_.I, n),
+        className: l()(_.I, n),
         children: t.map(e => (0, i.jsx)(h, {
             operatingSystem: e,
-            className: s()(_.A, l)
+            className: l()(_.A, a)
         }, e))
     })
 }

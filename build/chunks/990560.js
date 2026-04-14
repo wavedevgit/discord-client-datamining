@@ -3,10 +3,10 @@ n.d(t, {
     A: () => P
 });
 var i = n(627968),
-    l = n(64700),
-    s = n(311907),
+    a = n(64700),
+    l = n(311907),
     r = n(846293),
-    a = n(820284),
+    s = n(820284),
     o = n(688810),
     d = n(107123),
     c = n(698441),
@@ -38,34 +38,34 @@ function P(e) {
         message: n,
         getAcceptInviteContext: P
     } = e, {
-        invite: D,
-        inviteError: M
-    } = (0, s.cf)([x.A], () => ({
+        invite: M,
+        inviteError: w
+    } = (0, l.cf)([x.A], () => ({
         invite: x.A.getInvite(t),
         inviteError: x.A.getInviteError(t)
-    }), [t]), w = null == D, k = (0, _._U)(t, n.id);
-    l.useEffect(() => {
-        w && r.Ay.resolveInvite(t, void 0, {
+    }), [t]), D = null == M, k = (0, _._U)(t, n.id);
+    a.useEffect(() => {
+        D && r.Ay.resolveInvite(t, void 0, {
             inviteInstanceId: k
         })
-    }, [t, w, k]);
-    let O = D ?? {
+    }, [t, D, k]);
+    let O = M ?? {
             state: R.elq.RESOLVING,
             code: ""
         },
         {
             analyticsLocations: U
         } = (0, o.Ay)(),
-        B = (0, s.bG)([A.A], () => D?.guild != null ? A.A.getGuild(D.guild.id) : null, [D]),
-        G = (0, s.bG)([g.default], () => g.default.getId()),
-        F = (0, s.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(O.guild_scheduled_event?.id), [O]),
+        B = (0, l.bG)([A.A], () => M?.guild != null ? A.A.getGuild(M.guild.id) : null, [M]),
+        G = (0, l.bG)([g.default], () => g.default.getId()),
+        F = (0, l.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(O.guild_scheduled_event?.id), [O]),
         H = () => {
             null != O.channel && r.Ay.transitionToInviteSync(O)
         },
         V = function() {
             let {
                 autoJoin: e
-            } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, n = null == B && D?.guild != null ? f.DY(D.guild) : B;
+            } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, n = null == B && M?.guild != null ? f.DY(M.guild) : B;
             (0, h.g)({
                 guild: n,
                 isMember: null != B,
@@ -99,7 +99,7 @@ function P(e) {
         case R.elq.ERROR:
             q = (0, i.jsx)(E.A, {
                 author: n.author,
-                inviteError: M
+                inviteError: w
             });
             break;
         default:
@@ -181,7 +181,7 @@ function P(e) {
                     }))
             }
     }
-    return (0, i.jsx)(a.A, {
+    return (0, i.jsx)(s.A, {
         section: R.JJy.INVITE_LINK,
         children: q
     })

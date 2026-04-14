@@ -3,10 +3,10 @@ n.d(t, {
     A: () => d
 });
 var i = n(627968),
-    l = n(64700),
-    s = n(397927),
+    a = n(64700),
+    l = n(397927),
     r = n(123791),
-    a = n(627363),
+    s = n(627363),
     o = n(985018);
 
 function d(e) {
@@ -14,10 +14,10 @@ function d(e) {
         applicationId: t,
         guildId: n
     } = e, {
-        data: l
-    } = (0, a.YY)(t);
-    return null == l ? null : (0, i.jsx)(c, {
-        app: l,
+        data: a
+    } = (0, s.YY)(t);
+    return null == a ? null : (0, i.jsx)(c, {
+        app: a,
         guildId: n
     })
 }
@@ -25,25 +25,25 @@ function d(e) {
 function c(e) {
     let {
         app: t,
-        guildId: a
+        guildId: s
     } = e;
     (0, r.C)(t.id);
-    let d = l.useCallback(() => {
-        (0, s.mMO)(async () => {
+    let d = a.useCallback(() => {
+        (0, l.mMO)(async () => {
             let {
                 default: e
             } = await Promise.all([n.e("33563"), n.e("7194")]).then(n.bind(n, 719847));
             return n => (0, i.jsx)(e, {
                 appId: t.id,
-                guildId: a,
+                guildId: s,
                 ...n
             })
         })
-    }, [t, a]);
-    return (0, i.jsx)(s.Button, {
+    }, [t, s]);
+    return (0, i.jsx)(l.Button, {
         size: "sm",
         onClick: d,
-        icon: s.Uzv,
+        icon: l.Uzv,
         text: o.intl.format(o.t.XDRjs5, {
             appName: t.name
         })

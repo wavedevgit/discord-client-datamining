@@ -2,18 +2,18 @@
 n.d(t, {
     Oo: () => o,
     P0: () => u,
-    Qm: () => a,
+    Qm: () => s,
     bq: () => c,
     oG: () => d
 });
 var i = n(562465),
-    l = n(198982),
-    s = n(371794),
+    a = n(198982),
+    l = n(371794),
     r = n(652215);
-let a = async (e, t, n) => {
+let s = async (e, t, n) => {
     let {
-        priceTier: s,
-        imageName: a,
+        priceTier: l,
+        imageName: s,
         createNewRole: o,
         unlinkRole: d,
         ...c
@@ -23,15 +23,15 @@ let a = async (e, t, n) => {
             url: r.Rsh.GUILD_PRODUCT_LISTINGS(e, t),
             body: {
                 ...c,
-                image_name: a,
-                price_tier: s,
+                image_name: s,
+                price_tier: l,
                 create_new_role: o,
                 unlink_role: d
             },
             rejectWithError: !1
         })).body
     } catch (e) {
-        throw new l.LG(e)
+        throw new a.LG(e)
     }
 }, o = async (e, t) => {
     try {
@@ -40,38 +40,38 @@ let a = async (e, t, n) => {
             rejectWithError: !1
         })
     } catch (e) {
-        throw new l.LG(e)
+        throw new a.LG(e)
     }
 }, d = async e => {
     try {
-        return (await (0, s.aP)({
+        return (await (0, l.aP)({
             url: r.Rsh.GUILD_PRODUCT_LISTINGS(e),
             rejectWithError: !1
         })).body.listings
     } catch (e) {
-        throw new l.LG(e)
+        throw new a.LG(e)
     }
 }, c = async (e, t) => {
     try {
-        return (await (0, s.aP)({
+        return (await (0, l.aP)({
             url: r.Rsh.GUILD_PRODUCT_LISTINGS(e, t),
             rejectWithError: !1
         })).body
     } catch (e) {
-        throw new l.LG(e)
+        throw new a.LG(e)
     }
 }, u = async e => {
     let {
         guildId: t,
         productId: n,
-        attachmentId: s
+        attachmentId: l
     } = e;
     try {
         return (await i.Bo.post({
-            url: r.Rsh.GUILD_PRODUCT_ATTACHMENT_DOWNLOAD(t, n, s),
+            url: r.Rsh.GUILD_PRODUCT_ATTACHMENT_DOWNLOAD(t, n, l),
             rejectWithError: !1
         })).body
     } catch (e) {
-        throw new l.LG(e)
+        throw new a.LG(e)
     }
 }

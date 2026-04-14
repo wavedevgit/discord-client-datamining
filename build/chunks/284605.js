@@ -4,10 +4,10 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(417597),
-    s = n(732955),
+var a = n(417597),
+    l = n(732955),
     r = n(492749),
-    a = n(827186),
+    s = n(827186),
     o = n(465932),
     d = n(317525),
     c = n(71393),
@@ -35,14 +35,14 @@ function E(e) {
         thumbnailHeight: S,
         descriptionTextVariant: N = "text-sm/normal",
         showOpaqueBackground: j = !1
-    } = e, L = (0, l.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, l.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, r.R)(t, 600), D = (0, g.z)(t), M = (0, _.BB)(L), {
-        shouldHideGuildPurchaseEntryPoints: w
+    } = e, L = (0, a.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, a.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, r.R)(t, 600), M = (0, g.z)(t), w = (0, _.BB)(L), {
+        shouldHideGuildPurchaseEntryPoints: D
     } = (0, o.MH)(n), k = (0, g.X)(t), O = (0, x.A)({
         guildId: n,
         guildProductListingId: t.id,
         sourceAnalyticsLocations: E
     });
-    if (null == L || w) return null;
+    if (null == L || D) return null;
     let U = () => (0, f.M)({
             guildId: n,
             guildProductListingId: t.id,
@@ -51,19 +51,19 @@ function E(e) {
         B = (0, i.jsx)(A.i, {
             product: t,
             guildId: n,
-            showEditProduct: M,
+            showEditProduct: w,
             showUnpublishProduct: !1,
             showCopyLink: !0,
             showTestDownload: !1,
             showDeleteProduct: !1,
             showReportProduct: !0,
-            onEditProduct: M ? () => {
+            onEditProduct: w ? () => {
                 h.q(L.id, t.id)
             } : () => {},
             onUnpublishProduct: () => {},
             onDeleteProduct: () => {},
             onReportProduct: () => {
-                (0, a.F)({
+                (0, s.F)({
                     listing: t
                 })
             },
@@ -78,10 +78,10 @@ function E(e) {
         description: t.description,
         formattedPrice: k,
         role: R,
-        ctaComponent: (0, i.jsx)(s.$nd, {
+        ctaComponent: (0, i.jsx)(l.$nd, {
             ...O
         }),
-        productType: D,
+        productType: M,
         shouldShowFullDescriptionButton: I,
         onShowFullDescription: U,
         onTapCard: U,

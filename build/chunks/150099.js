@@ -3,10 +3,10 @@ n.d(t, {
     A: () => _
 });
 var i = n(627968),
-    l = n(64700),
-    s = n(311907),
+    a = n(64700),
+    l = n(311907),
     r = n(397927),
-    a = n(857182),
+    s = n(857182),
     o = n(572957),
     d = n(419056),
     c = n(985018),
@@ -15,12 +15,12 @@ let _ = e => {
     let {
         channelId: t,
         messageId: n
-    } = e, _ = (0, s.bG)([o.A], () => o.A.shouldShowBump(n), [n]), m = l.useCallback(() => {
-        a.A.dismissPublishBump(n), (0, d.A)(t, n)
-    }, [t, n]), h = l.useCallback(() => {
-        a.A.dismissPublishBump(n)
-    }, [n]), p = l.useCallback(() => {
-        a.A.permanentlyHidePublishBump(t)
+    } = e, _ = (0, l.bG)([o.A], () => o.A.shouldShowBump(n), [n]), m = a.useCallback(() => {
+        s.A.dismissPublishBump(n), (0, d.A)(t, n)
+    }, [t, n]), h = a.useCallback(() => {
+        s.A.dismissPublishBump(n)
+    }, [n]), p = a.useCallback(() => {
+        s.A.permanentlyHidePublishBump(t)
     }, [t]);
     return _ ? (0, i.jsxs)("div", {
         className: u.kL,

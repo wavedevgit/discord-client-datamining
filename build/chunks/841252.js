@@ -3,9 +3,9 @@ t.d(n, {
     A: () => u
 });
 var a = t(627968),
-    i = t(64700),
-    s = t(503698),
-    r = t.n(s),
+    s = t(64700),
+    i = t(503698),
+    r = t.n(i),
     l = t(158954),
     c = t(224850),
     o = t(778712),
@@ -16,7 +16,7 @@ function u(e) {
     let {
         affinities: n,
         className: t
-    } = e, s = i.useMemo(() => {
+    } = e, i = s.useMemo(() => {
         if (n.length > 1) {
             var e;
             return d.intl.formatToPlainString(d.t.HaVk0X, {
@@ -41,7 +41,7 @@ function u(e) {
             className: _.FS,
             children: (0, a.jsx)(l.EYj, {
                 variant: "text-sm/medium",
-                children: s
+                children: i
             })
         })]
     })

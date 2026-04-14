@@ -127,6 +127,16 @@ let r = {
                 success: e.boolean().required()
             })
         },
+        [l.vd.GET_QUESTS]: {
+            request: void 0,
+            response: e => ({
+                quests: e.array().items(e.object({
+                    quest_id: e.string().required(),
+                    enrolled_at: e.string().allow(null).optional(),
+                    external_cta_url: e.string().required()
+                })).required()
+            })
+        },
         [l.vd.REQUEST_PROXY_TICKET_REFRESH]: {
             request: void 0,
             response: e => ({

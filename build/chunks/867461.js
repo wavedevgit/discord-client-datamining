@@ -3,10 +3,10 @@ n.d(t, {
     l: () => I
 });
 var i = n(627968),
-    l = n(64700),
-    s = n(503698),
-    r = n.n(s),
-    a = n(158954),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
+    s = n(158954),
     o = n(311907),
     d = n(827734),
     c = n(736653),
@@ -31,7 +31,7 @@ function E(e) {
             [C.tV]: "brand" === n,
             "theme-light": "default" === n
         }),
-        children: (0, i.jsx)(a.EYj, {
+        children: (0, i.jsx)(s.EYj, {
             variant: "eyebrow",
             color: "brand" === n ? "always-white" : "text-default",
             className: C.Xi,
@@ -44,12 +44,12 @@ function I(e) {
     let {
         quest: t,
         isInteracting: n,
-        location: s,
+        location: l,
         sourceQuestContent: r
     } = e, I = (0, h.Ic)(t), v = t.userStatus?.claimedAt != null, b = (0, m.S5)(t.config.expiresAt, {
         month: "numeric",
         day: "numeric"
-    }), T = (0, o.bG)([_.A], () => _.A.getQuestHomeHero()), y = l.useMemo(() => null != T && (0, p.I0)(T, t.id), [T, t.id]), S = (0, c.Ay)(), N = (0, a.Mwr)(S) ? "text-muted" : "always-white";
+    }), T = (0, o.bG)([_.A], () => _.A.getQuestHomeHero()), y = a.useMemo(() => null != T && (0, p.I0)(T, t.id), [T, t.id]), S = (0, c.Ay)(), N = (0, s.Mwr)(S) ? "text-muted" : "always-white";
     return (0, i.jsxs)("div", {
         className: C.kL,
         children: [(0, i.jsx)("div", {
@@ -72,7 +72,7 @@ function I(e) {
                 className: C.PG,
                 children: [(0, i.jsxs)("div", {
                     className: C.mY,
-                    children: [(y || t.preview) && (0, i.jsxs)(a.BJc, {
+                    children: [(y || t.preview) && (0, i.jsxs)(s.BJc, {
                         className: C.Bv,
                         direction: "horizontal",
                         fullWidth: !1,
@@ -84,17 +84,17 @@ function I(e) {
                             children: f.intl.string(f.t.SKNnqq)
                         })]
                     }), (0, i.jsx)(A.C, {
-                        questContent: s,
+                        questContent: l,
                         quest: t,
                         hideLearnMore: !0,
                         shouldShowDisclosure: !0,
                         showShareLink: !0,
                         sourceQuestContent: r,
-                        children: e => (0, i.jsx)(a.DUT, {
+                        children: e => (0, i.jsx)(s.DUT, {
                             ...e,
                             className: C.iI,
                             "aria-label": f.intl.string(f.t.DEoVWZ),
-                            children: (0, i.jsx)(a.jNK, {
+                            children: (0, i.jsx)(s.jNK, {
                                 size: "md",
                                 color: "currentColor",
                                 className: C.A9
@@ -111,7 +111,7 @@ function I(e) {
                     className: C.E_,
                     children: [(0, i.jsxs)("span", {
                         className: C.O,
-                        children: [(0, i.jsx)(a.EYj, {
+                        children: [(0, i.jsx)(s.EYj, {
                             variant: "text-sm/medium",
                             color: N,
                             children: f.intl.string(f.t.VAbKhK)
@@ -120,18 +120,18 @@ function I(e) {
                             size: 16,
                             color: d.A.unsafe_rawColors.GREEN_360.css,
                             allowFullSizedIcon: !0,
-                            children: (0, i.jsx)(a.BNr, {
+                            children: (0, i.jsx)(s.BNr, {
                                 color: d.A.unsafe_rawColors.WHITE.css,
                                 size: "custom",
                                 width: 13,
                                 height: 13
                             })
-                        }), (0, i.jsx)(a.EYj, {
+                        }), (0, i.jsx)(s.EYj, {
                             variant: "text-sm/medium",
                             color: "always-white",
                             children: t.config.cosponsorMetadata?.name ?? t.config.messages.gamePublisher
                         })]
-                    }), I || v ? null : (0, i.jsx)(a.EYj, {
+                    }), I || v ? null : (0, i.jsx)(s.EYj, {
                         variant: "text-sm/medium",
                         color: N,
                         children: f.intl.format(f.t["7D8r4F"], {

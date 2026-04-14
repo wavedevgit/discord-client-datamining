@@ -3,10 +3,10 @@ n.d(t, {
     A: () => E
 });
 var i = n(627968),
-    l = n(64700),
-    s = n(158954),
+    a = n(64700),
+    l = n(158954),
     r = n(311907),
-    a = n(308528),
+    s = n(308528),
     o = n(846293),
     d = n(793574),
     c = n(688810),
@@ -28,9 +28,9 @@ function E(e) {
         getAcceptInviteContext: E
     } = e, I = (0, r.bG)([h.default], () => h.default.getId()), v = t.inviter?.id === I, b = t.state === x.elq.ACCEPTING, {
         analyticsLocations: T
-    } = (0, c.Ay)(d.A.INVITE_EMBED), y = (0, r.bG)([g.A], () => null != t.inviter && g.A.isFriend(t.inviter?.id)), S = l.useCallback(() => {
+    } = (0, c.Ay)(d.A.INVITE_EMBED), y = (0, r.bG)([g.A], () => null != t.inviter && g.A.isFriend(t.inviter?.id)), S = a.useCallback(() => {
         let e = "noop";
-        null != t.inviter && null != p.A.getDMFromUserId(t.inviter.id) && (e = "transition", a.A.openPrivateChannel({
+        null != t.inviter && null != p.A.getDMFromUserId(t.inviter.id) && (e = "transition", s.A.openPrivateChannel({
             recipientIds: [t.inviter.id]
         })), (0, o.he)({
             invite: t,
@@ -39,7 +39,7 @@ function E(e) {
             invite_message_id: n.id,
             invite_instance_id: (0, u._U)(t.code, n.id)
         }, T)
-    }, [t, n, T]), N = l.useCallback(() => {
+    }, [t, n, T]), N = a.useCallback(() => {
         (0, o.he)({
             invite: t,
             action: "accept",
@@ -59,8 +59,8 @@ function E(e) {
         R = "active";
     y ? (L = f.intl.string(f.t.xhxnPn), R = "secondary") : v && (L = f.intl.string(f.t.ib7Ng1), R = "secondary");
     let P = v ? f.intl.string(f.t.eQyu1F) : f.intl.string(f.t.PYJHW6),
-        D = null != t.inviter ? `${t.inviter.username}` : "",
-        M = null != t.inviter ? A.Ay.getUserTag(t.inviter) : "";
+        M = null != t.inviter ? `${t.inviter.username}` : "",
+        w = null != t.inviter ? A.Ay.getUserTag(t.inviter) : "";
     return (0, i.jsxs)(_.A, {
         children: [(0, i.jsx)(_.A.Header, {
             text: P
@@ -71,11 +71,11 @@ function E(e) {
                     user: new m.A(t.inviter),
                     onClick: y ? j : void 0
                 }), (0, i.jsx)(_.A.Info, {
-                    title: D,
+                    title: M,
                     onClick: y ? j : void 0,
-                    children: M
+                    children: w
                 })]
-            }), (0, i.jsx)(s.$nd, {
+            }), (0, i.jsx)(l.$nd, {
                 onClick: j,
                 text: L,
                 loading: b,

@@ -4,10 +4,10 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(397927),
-    s = n(287809),
+var a = n(397927),
+    l = n(287809),
     r = n(166403),
-    a = n(203982),
+    s = n(203982),
     o = n(927578),
     d = n(598653),
     c = n(788868),
@@ -19,8 +19,8 @@ function _(e) {
         channelContext: _,
         customGiftMessage: m,
         giftInfo: h
-    } = e, p = !1, g = null, A = s.default.getCurrentUser(), x = (0, o.CC)(A?.premiumType, c.PremiumTypes.TIER_0);
-    (0, l.mMO)(async () => {
+    } = e, p = !1, g = null, A = l.default.getCurrentUser(), x = (0, o.CC)(A?.premiumType, c.PremiumTypes.TIER_0);
+    (0, a.mMO)(async () => {
         let {
             default: e
         } = await n.e("36820").then(n.bind(n, 67327));
@@ -37,7 +37,7 @@ function _(e) {
         })
     }, {
         onCloseCallback: () => {
-            p && null != g && !x && g.isSubscription && g?.subscriptionPlan?.premiumSubscriptionType === c.PremiumTypes.TIER_2 && a._.dispatch(u.jej.PREMIUM_SUBSCRIPTION_CREATED)
+            p && null != g && !x && g.isSubscription && g?.subscriptionPlan?.premiumSubscriptionType === c.PremiumTypes.TIER_2 && s._.dispatch(u.jej.PREMIUM_SUBSCRIPTION_CREATED)
         }
     })
 }

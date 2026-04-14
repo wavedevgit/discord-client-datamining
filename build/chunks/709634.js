@@ -3,11 +3,11 @@ n.d(t, {
     A: () => E
 });
 var i = n(627968),
-    l = n(64700),
-    s = n(503698),
-    r = n.n(s),
-    a = n(989349),
-    o = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
+    s = n(989349),
+    o = n.n(s),
     d = n(397927),
     c = n(763754),
     u = n(449859),
@@ -24,16 +24,16 @@ let E = e => {
     let {
         reportingUserId: t,
         guildId: n,
-        compact: s,
-        channel: a,
+        compact: l,
+        channel: s,
         messageId: E,
         reportedTimestamp: I
-    } = e, v = h.default.getUser(t), b = l.useMemo(() => s ? (0, _.A)((0, p.i$)(o()(), "LT")) : null, [s]), T = (0, m.P)({
+    } = e, v = h.default.getUser(t), b = a.useMemo(() => l ? (0, _.A)((0, p.i$)(o()(), "LT")) : null, [l]), T = (0, m.P)({
         user: v,
-        channelId: a.id,
+        channelId: s.id,
         guildId: n,
         messageId: E
-    })((0, c.m2)(v, a)), y = null != v ? v.getAvatarURL(n, (0, d.FT9)(d._3J.SIZE_16)) : C, S = null != v ? A.intl.format(g.default["+zqXZs"], {
+    })((0, c.m2)(v, s)), y = null != v ? v.getAvatarURL(n, (0, d.FT9)(d._3J.SIZE_16)) : C, S = null != v ? A.intl.format(g.default["+zqXZs"], {
         username: v.username,
         onUserClick: T
     }) : A.intl.string(g.default.xpRjfS);

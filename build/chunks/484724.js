@@ -3,10 +3,10 @@ n.d(t, {
     A: () => E
 });
 var i = n(627968),
-    l = n(64700),
-    s = n(311907),
+    a = n(64700),
+    l = n(311907),
     r = n(686956),
-    a = n(688810),
+    s = n(688810),
     o = n(202384),
     d = n(51758),
     c = n(665066),
@@ -26,12 +26,12 @@ function E(e) {
         code: t
     } = e, [n, E, I] = t.split("-"), {
         analyticsLocations: v
-    } = (0, a.Ay)(), {
+    } = (0, s.Ay)(), {
         guildScheduledEvent: b,
         guild: T,
         channel: y,
         isMember: S
-    } = (0, s.cf)([A.Ay, h.A, _.A, m.Ay, p.default], () => {
+    } = (0, l.cf)([A.Ay, h.A, _.A, m.Ay, p.default], () => {
         let e = A.Ay.getGuildScheduledEvent(E) ?? void 0,
             t = h.A.getGuild(n),
             i = _.A.getChannel(e?.channel_id);
@@ -42,7 +42,7 @@ function E(e) {
             isMember: m.Ay.isMember(n, p.default.getCurrentUser()?.id)
         }
     }, [n, E]);
-    return l.useEffect(() => {
+    return a.useEffect(() => {
         b?.id == null && x.A.fetchGuildEvent(n, E), g.A.getGuildEventUserCounts(n, E, null != I ? [I] : []), g.A.getGuildEventsForCurrentUser(n)
     }, [E, n, b?.id, I]), (0, i.jsx)(f.Ay, {
         guild: T,

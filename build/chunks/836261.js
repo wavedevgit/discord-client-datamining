@@ -3,10 +3,10 @@ n.d(t, {
     A: () => I
 });
 var i = n(627968),
-    l = n(311907),
-    s = n(421380),
+    a = n(311907),
+    l = n(421380),
     r = n(397927),
-    a = n(775602),
+    s = n(775602),
     o = n(178540),
     d = n(341915),
     c = n(890687),
@@ -27,7 +27,7 @@ function C(e) {
         analyticsCtxSourceQuestContent: r,
         analyticsCtxQuestContentPosition: d,
         analyticsCtxQuestContentRowIndex: m
-    } = e, h = (0, u.Ut)(), p = (0, l.bG)([a.A], () => a.A.useReducedMotion), A = (0, g.Xf)({
+    } = e, h = (0, u.Ut)(), p = (0, a.bG)([s.A], () => s.A.useReducedMotion), A = (0, g.Xf)({
         useReducedMotion: p
     }), C = (0, o.O)(e => e.setErrorHints), {
         startingConsoleQuest: E,
@@ -48,9 +48,9 @@ function C(e) {
             A.stopAnimation(), C(t.id, e)
         }
     });
-    return (0, i.jsx)(s.$n, {
+    return (0, i.jsx)(l.$n, {
         "data-migration-pending": !0,
-        color: s.XD.PRIMARY,
+        color: l.XD.PRIMARY,
         onClick: I,
         disabled: E,
         className: f.x,
@@ -65,9 +65,9 @@ function E(e) {
     let {
         quest: t,
         surface: n,
-        analyticsCtxQuestContent: l,
-        analyticsCtxSourceQuestContent: s,
-        analyticsCtxQuestContentPosition: a,
+        analyticsCtxQuestContent: a,
+        analyticsCtxSourceQuestContent: l,
+        analyticsCtxQuestContentPosition: s,
         analyticsCtxQuestContentRowIndex: o,
         size: u
     } = e, p = (0, c.RR)({
@@ -86,21 +86,21 @@ function E(e) {
             (0, h.se)({
                 quest: t
             }, {
-                content: l,
+                content: a,
                 ctaContent: _.Cy.CONNECT_CONSOLE,
-                position: a,
+                position: s,
                 rowIndex: o,
                 impressionId: g,
-                sourceQuestContent: s
+                sourceQuestContent: l
             })
         },
         text: x.intl.string(x.t.Cfye4v),
         fullWidth: !0
     }) : (0, i.jsx)(C, {
         quest: t,
-        analyticsCtxQuestContent: l,
-        analyticsCtxSourceQuestContent: s,
-        analyticsCtxQuestContentPosition: a,
+        analyticsCtxQuestContent: a,
+        analyticsCtxSourceQuestContent: l,
+        analyticsCtxQuestContentPosition: s,
         analyticsCtxQuestContentRowIndex: o
     })
 }
@@ -108,9 +108,9 @@ let I = function(e) {
     let {
         quest: t,
         surface: n,
-        analyticsCtxQuestContent: l,
-        analyticsCtxSourceQuestContent: s,
-        analyticsCtxQuestContentPosition: a,
+        analyticsCtxQuestContent: a,
+        analyticsCtxSourceQuestContent: l,
+        analyticsCtxQuestContentPosition: s,
         analyticsCtxQuestContentRowIndex: o,
         size: d
     } = e;
@@ -118,9 +118,9 @@ let I = function(e) {
         quest: t,
         surface: n,
         size: d,
-        analyticsCtxQuestContent: l,
-        analyticsCtxSourceQuestContent: s,
-        analyticsCtxQuestContentPosition: a,
+        analyticsCtxQuestContent: a,
+        analyticsCtxSourceQuestContent: l,
+        analyticsCtxQuestContentPosition: s,
         analyticsCtxQuestContentRowIndex: o
     });
     let c = x.intl.string(x.t["9KoPyB"]);

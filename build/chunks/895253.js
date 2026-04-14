@@ -1,20 +1,20 @@
 /** chunk id: 895253 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => s
 });
 var i = n(627968);
 n(64700);
-var l = n(503698),
-    s = n.n(l),
+var a = n(503698),
+    l = n.n(a),
     r = n(92106);
-let a = e => {
+let s = e => {
     let {
         visible: t,
         glow: n,
-        className: l
+        className: a
     } = e;
     return t ? (0, i.jsx)("div", {
-        className: s()(r.kL, l),
+        className: l()(r.kL, a),
         children: (0, i.jsx)("div", {
             className: r.vW,
             children: n ? (0, i.jsx)("div", {

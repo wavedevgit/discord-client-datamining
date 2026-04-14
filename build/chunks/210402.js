@@ -4,8 +4,8 @@ t.d(n, {
 });
 var a = t(627968);
 t(64700);
-var i = t(87719),
-    s = t(244975),
+var s = t(87719),
+    i = t(244975),
     r = t(788868),
     l = t(652215),
     c = t(985018),
@@ -18,18 +18,18 @@ function _(e) {
         analyticsSource: t,
         onLearnMore: _,
         ...u
-    } = e, m = r.pe.TIER_2, f = c.intl.format(c.t.hDMlqD, {
+    } = e, m = r.pe.TIER_2, A = c.intl.format(c.t.hDMlqD, {
         onLearnMore: function() {
-            _?.(), n(), (0, i.e)()
+            _?.(), n(), (0, s.e)()
         }
     });
-    return (0, a.jsx)(s.A, {
+    return (0, a.jsx)(i.A, {
         artURL: d.A,
         artContainerClassName: o.z,
         type: r.e.VIDEO_BACKGROUNDS_MODAL,
         title: c.intl.string(c.t.fHqiDW),
-        body: f,
-        glowUp: f,
+        body: A,
+        glowUp: A,
         analyticsSource: t,
         analyticsLocation: {
             page: l.liQ.PREMIUM_UPSELL_MODAL_VIDEO_BACKGROUNDS,

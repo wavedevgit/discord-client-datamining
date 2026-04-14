@@ -3,10 +3,10 @@ n.d(t, {
     A: () => T
 }), n(321073);
 var i = n(627968),
-    l = n(64700),
-    s = n(503698),
-    r = n.n(s),
-    a = n(311907),
+    a = n(64700),
+    l = n(503698),
+    r = n.n(l),
+    s = n(311907),
     o = n(397927),
     d = n(544420),
     c = n(572211),
@@ -28,19 +28,19 @@ function b(e) {
     let {
         message: t,
         applicationName: n,
-        iconSrc: l,
-        channel: s,
-        currentUserId: a,
+        iconSrc: a,
+        channel: l,
+        currentUserId: s,
         viewAction: d
     } = e, c = (0, m.Ay)(t), u = (0, h.P)({
         user: t.author,
-        channelId: s.id,
-        guildId: s.guild_id,
+        channelId: l.id,
+        guildId: l.guild_id,
         messageId: t.id
     })(c);
     return (0, i.jsx)(p.A, {
         compact: !1,
-        children: E.intl.format(a === t.author.id ? E.t.anvg2q : E.t.AxVbYF, {
+        children: E.intl.format(s === t.author.id ? E.t.anvg2q : E.t.AxVbYF, {
             username: c.nick,
             usernameHook: u,
             applicationHook: () => {
@@ -50,7 +50,7 @@ function b(e) {
                     className: I.Lf,
                     children: [(0, i.jsx)("img", {
                         alt: E.intl.string(E.t["2B/phM"]),
-                        src: l,
+                        src: a,
                         className: r()(v.Gt, _.M.XSMALL)
                     }), (0, i.jsx)(o.Text, {
                         variant: "text-sm/semibold",
@@ -67,7 +67,7 @@ function T(e) {
     let {
         message: t,
         application: n,
-        applicationName: s,
+        applicationName: l,
         channel: r,
         header: _,
         currentUserId: m,
@@ -82,15 +82,15 @@ function T(e) {
         analyticsLocations: L,
         showAuthButton: R,
         startAuthorization: P,
-        accountLinkButtonRef: D,
-        renderAccountLinkUpsell: M
-    } = e, w = (0, a.bG)([g.A], () => g.A.getMessages(r.id)), {
+        accountLinkButtonRef: M,
+        renderAccountLinkUpsell: w
+    } = e, D = (0, s.bG)([g.A], () => g.A.getMessages(r.id)), {
         actions: k,
         hasAccountLinkButton: O
-    } = l.useMemo(() => {
+    } = a.useMemo(() => {
         let e = [],
             i = !0,
-            l = !1;
+            a = !1;
         if (null != h ? e = [{
                 label: E.intl.string(E.t["s+J8Dl"]),
                 trackingArea: u.kY.PLAY,
@@ -102,7 +102,7 @@ function T(e) {
                     })
                 }
             }] : null != v && (e = [v], i = !1), e.length > 0)
-            if (!(0, x.p)(t.id, w, n.id, j)) return {
+            if (!(0, x.p)(t.id, D, n.id, j)) return {
                 actions: [],
                 hasAccountLinkButton: !1
             };
@@ -116,25 +116,25 @@ function T(e) {
                 },
                 icon: o.A5T,
                 iconButton: !0,
-                buttonRef: D
-            }), l = !0);
+                buttonRef: M
+            }), a = !0);
         return {
             actions: e,
-            hasAccountLinkButton: l
+            hasAccountLinkButton: a
         }
-    }, [p, h, v, w, j, n.id, t.id, R, P, L, D]), U = k.some(e => e.trackingArea === u.kY.CLOUD_PLAY);
+    }, [p, h, v, D, j, n.id, t.id, R, P, L, M]), U = k.some(e => e.trackingArea === u.kY.CLOUD_PLAY);
     (0, f.A)(U, L);
     let B = k.length > 0,
-        G = l.useMemo(() => (0, i.jsx)(o.Text, {
+        G = a.useMemo(() => (0, i.jsx)(o.Text, {
             variant: "text-xs/medium",
             className: I.h_,
             color: "none",
             lineClamp: 3,
-            children: (0, A.BE)(t, s, r, m, B)
-        }), [t, s, r, m, B]);
+            children: (0, A.BE)(t, l, r, m, B)
+        }), [t, l, r, m, B]);
     return 0 === k.length ? (0, i.jsx)(b, {
         message: t,
-        applicationName: s,
+        applicationName: l,
         iconSrc: S,
         channel: r,
         currentUserId: m,
@@ -142,7 +142,7 @@ function T(e) {
     }) : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(c.h, {
             header: _,
-            title: s,
+            title: l,
             staticBannerSrc: T,
             onClickBanner: y,
             bannerAspectRatio: c.u.ACTIVITY,
@@ -161,6 +161,6 @@ function T(e) {
                 messageId: t.id,
                 isDeadEnd: !0
             }
-        }), O ? M() : null]
+        }), O ? w() : null]
     })
 }
