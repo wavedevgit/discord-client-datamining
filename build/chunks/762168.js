@@ -20,8 +20,8 @@ var a = n(627968),
     m = n(839727),
     b = n(795068),
     _ = n(654487),
-    g = n(652215),
-    S = n(784018);
+    S = n(652215),
+    g = n(784018);
 
 function f(e) {
     let {
@@ -111,7 +111,7 @@ function C(e) {
             },
             assets: {
                 hero: "",
-                heroVideo: S.kz,
+                heroVideo: g.kz,
                 questBarHero: "",
                 questBarHeroVideo: null,
                 questBarHeroBlurhash: null,
@@ -145,13 +145,13 @@ function x(e) {
         children: o,
         isFullscreenEnabled: i = !1,
         useNewStyling: l = !1,
-        setIsFullscreenEnabled: s = g.tEg
+        setIsFullscreenEnabled: s = S.tEg
     } = e, c = r.useMemo(() => ({
         quest: t,
         sourceQuestContent: d.uF.INTERNAL_PREVIEW_TOOL,
         videoSessionId: "playground-session",
         isPortrait: n,
-        onClose: g.tEg,
+        onClose: S.tEg,
         isFullscreenEnabled: i,
         setIsFullscreenEnabled: s,
         useNewProgressBarStyling: l,
@@ -183,7 +183,7 @@ function y(e) {
         targetTimeSec: l,
         useNewStyling: s,
         videoUrl: d
-    } = e, p = "portrait" === t, [b, S] = r.useState(!1), h = f({
+    } = e, p = "portrait" === t, [b, g] = r.useState(!1), h = f({
         url: d,
         width: p ? 360 : 640,
         height: p ? 640 : 360,
@@ -216,12 +216,12 @@ function y(e) {
             quest: E,
             isPortrait: p,
             isFullscreenEnabled: b,
-            setIsFullscreenEnabled: S,
+            setIsFullscreenEnabled: g,
             useNewStyling: s,
             children: (0, a.jsx)(m.A, {
                 targetTimeSec: h.target,
                 parentTransitionState: c.ip4.ENTERED,
-                onOptimisticProgressUpdate: g.tEg,
+                onOptimisticProgressUpdate: S.tEg,
                 autoplay: n,
                 autoFocus: !1,
                 performanceClockStartTime: 0,
@@ -267,7 +267,7 @@ let T = {
         videoUrl: {
             label: "Video URL",
             type: "text",
-            defaultValue: S.kz
+            defaultValue: g.kz
         }
     },
     E = {

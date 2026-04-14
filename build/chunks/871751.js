@@ -28,14 +28,14 @@ var r = l(627968),
     I = l(644447),
     S = l(954571),
     j = l(203982),
-    N = l(405269),
+    P = l(405269),
     E = l(659674),
-    P = l(515718),
+    N = l(515718),
     T = l(240248),
     M = l(998218),
     R = l(259407),
-    W = l(690595),
-    L = l(692051),
+    L = l(690595),
+    W = l(692051),
     k = l(652215),
     B = l(838541),
     V = l(985018),
@@ -70,12 +70,12 @@ function F(e) {
         onEnded: C,
         onControlsHide: A,
         onControlsShow: S,
-        onVolumeChange: N,
+        onVolumeChange: P,
         onMute: E,
         href: T,
         placeholder: M,
-        placeholderVersion: W,
-        sourceMetadata: L
+        placeholderVersion: L,
+        sourceMetadata: W
     } = e, [B, V] = n.useState(x), H = null != d && null == d.proxyURL, G = n.useCallback(() => V(!1), [V]), F = e => {
         e.preventDefault(), e.stopPropagation(), y?.(!1), V(!0), H && (j._.dispatch(k.jej.VIDEO_EMBED_PLAYBACK_STARTED), j._.subscribeOnce(k.jej.VIDEO_EMBED_PLAYBACK_STARTED, G))
     };
@@ -87,7 +87,7 @@ function F(e) {
         height: U
     } = o;
     null != d && (O = d.width, U = d.height);
-    let $ = (0, P.Uj)({
+    let $ = (0, N.Uj)({
         width: O,
         height: U,
         maxWidth: i,
@@ -101,7 +101,7 @@ function F(e) {
             poster: K,
             src: d.proxyURL,
             placeholder: M,
-            placeholderVersion: W,
+            placeholderVersion: L,
             width: O,
             height: U,
             responsive: h,
@@ -109,7 +109,7 @@ function F(e) {
             onEnded: C,
             naturalWidth: d.width,
             naturalHeight: d.height,
-            onVolumeChange: N,
+            onVolumeChange: P,
             playable: b,
             autoMute: v,
             volume: f,
@@ -118,7 +118,7 @@ function F(e) {
             onMute: E,
             onControlsHide: A,
             onControlsShow: S,
-            sourceMetadata: L
+            sourceMetadata: W
         })
     });
     if (B && null != d) {
@@ -185,9 +185,9 @@ function F(e) {
             containerClassName: D.tW,
             imageClassName: D.jq,
             placeholder: M,
-            placeholderVersion: W,
+            placeholderVersion: L,
             onClick: b && null != d ? F : null,
-            sourceMetadata: L,
+            sourceMetadata: W,
             analyticsSource: "EmbedVideo"
         }), (0, r.jsx)("div", {
             className: D._W,
@@ -197,8 +197,8 @@ function F(e) {
                     onPlay: null != d ? F : null,
                     externalURL: T,
                     renderLinkComponent: _,
-                    messageId: L?.message?.id,
-                    channelId: L?.message?.channel_id
+                    messageId: W?.message?.id,
+                    channelId: W?.message?.channel_id
                 }) : null
             })
         })]
@@ -314,7 +314,7 @@ class U extends n.PureComponent {
                 width: 150,
                 height: 18
             })
-        }) : (0, r.jsx)(L.Y.Consumer, {
+        }) : (0, r.jsx)(W.Y.Consumer, {
             children: s => {
                 let {
                     disableAnimations: o
@@ -415,7 +415,7 @@ class U extends n.PureComponent {
             {
                 sourceMetadata: s
             } = this.state;
-        return null == t ? null : (0, r.jsx)(L.Y.Consumer, {
+        return null == t ? null : (0, r.jsx)(W.Y.Consumer, {
             children: r => {
                 let {
                     disableAnimations: o
@@ -597,7 +597,7 @@ class U extends n.PureComponent {
             },
             C = l.url.split(".").pop()?.split("?")[0] ?? "";
         return "jpg" === C && (C = "jpeg"), (0, r.jsx)(h.G.Consumer, {
-            children: t => (0, r.jsx)(L.Y.Consumer, {
+            children: t => (0, r.jsx)(W.Y.Consumer, {
                 children: l => {
                     let {
                         disableAnimations: r
@@ -640,7 +640,7 @@ class U extends n.PureComponent {
             sourceMetadata: b
         } = this.state;
         if (null == n || null == i) return null;
-        if (e) return null == a ? null : (0, r.jsx)(L.Y.Consumer, {
+        if (e) return null == a ? null : (0, r.jsx)(W.Y.Consumer, {
             children: e => {
                 let {
                     disableAnimations: s
@@ -702,7 +702,7 @@ class U extends n.PureComponent {
             footer: t,
             timestamp: l
         } = this.props.embed;
-        return null != t ? (0, r.jsx)(L.Y.Consumer, {
+        return null != t ? (0, r.jsx)(W.Y.Consumer, {
             children: n => {
                 let {
                     disableAnimations: i
@@ -718,7 +718,7 @@ class U extends n.PureComponent {
                         children: [t.text, null != t.text && null != l ? (0, r.jsx)("span", {
                             className: D.i8,
                             children: "•"
-                        }) : null, null != l ? (0, N.mk)(l) : null]
+                        }) : null, null != l ? (0, P.mk)(l) : null]
                     })]
                 })
             }
@@ -726,7 +726,7 @@ class U extends n.PureComponent {
             className: a()(D.te, D.aK),
             children: (0, r.jsx)("span", {
                 className: D.oy,
-                children: (0, N.mk)(l)
+                children: (0, P.mk)(l)
             })
         }) : void 0
     }
@@ -742,7 +742,7 @@ class U extends n.PureComponent {
         let {
             width: a,
             height: o
-        } = (0, P.Uj)({
+        } = (0, N.Uj)({
             width: i.width,
             height: i.height,
             maxWidth: l,
@@ -856,7 +856,7 @@ class U extends n.PureComponent {
         if (null == o) return;
         let {
             width: d
-        } = (0, P.Uj)({
+        } = (0, N.Uj)({
             width: o.width,
             height: o.height,
             maxWidth: a,
@@ -867,7 +867,7 @@ class U extends n.PureComponent {
         if (n === k.Auw.GIFV) {
             let {
                 width: e
-            } = (0, P.Uj)({
+            } = (0, N.Uj)({
                 width: r?.width ?? i?.width ?? 0,
                 height: r?.height ?? i?.height ?? 0,
                 maxWidth: a,
@@ -1014,7 +1014,7 @@ class U extends n.PureComponent {
                     minHeight: l
                 } = this.getMinSize() ?? {}, {
                     width: r
-                } = (0, P.Uj)({
+                } = (0, N.Uj)({
                     width: e.width,
                     height: e.height,
                     maxWidth: a,
@@ -1051,7 +1051,7 @@ class U extends n.PureComponent {
             obscureReason: t,
             className: l
         } = this.props;
-        return null != e.provider && W.o.includes(e.provider.name) ? (0, r.jsx)(W.A, {
+        return null != e.provider && L.o.includes(e.provider.name) ? (0, r.jsx)(L.A, {
             embed: e,
             className: l
         }) : (0, w.A)(e) ? (0, r.jsx)(C.A, {

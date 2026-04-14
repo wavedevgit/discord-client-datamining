@@ -32,7 +32,7 @@ function o(e) {
         useNewProgressBarStyling: D
     } = s.useContext(l.a), {
         questConfig: T
-    } = s.useContext(l.l), I = !E && D, y = (0, a.A)({
+    } = s.useContext(l.l), I = (0, a.A)({
         targetSec: t,
         quest: C,
         sourceQuestContent: x,
@@ -50,16 +50,14 @@ function o(e) {
         durationSec: f,
         maxSeekableTime: p,
         segmentBorderRadius: D ? 99 : 8,
-        progressGlow: !0,
-        progressFillClassName: I ? u.QR : u.UA,
-        glowClassName: I ? u.Um : u.U5,
+        progressClassName: !E && D ? u.q : u.c,
         timelineHeightPx: D ? 4 : 2,
         hoverTimelineHeightPx: D ? void 0 : 4,
         initialTimelineHeightPx: D ? 4 : 2,
         onClick: v,
         onScrubBack: h,
         onScrubForward: g,
-        indicatorConfig: y,
+        indicatorConfig: I,
         "data-testid": A
     })
 }

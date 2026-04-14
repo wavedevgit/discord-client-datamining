@@ -1,20 +1,20 @@
 /** chunk id: 453384 params = (module,exports,require) **/
-t.d(r, {
+r.d(t, {
     A: () => p
 });
-var n = t(627968),
-    o = t(64700),
-    a = t(503698),
-    c = t.n(a),
-    i = t(445887),
-    _ = t(397927),
-    s = t(398025),
-    d = t(419367),
-    l = t(293225);
+var n = r(627968),
+    o = r(64700),
+    a = r(503698),
+    c = r.n(a),
+    i = r(445887),
+    _ = r(397927),
+    s = r(398025),
+    d = r(419367),
+    l = r(293225);
 let b = "var(--background-mod-strong)",
-    p = o.forwardRef((e, r) => {
+    p = o.forwardRef((e, t) => {
         let {
-            percentComplete: t,
+            percentComplete: r,
             size: a = 42,
             style: p = "default",
             percentCompleteText: C,
@@ -26,18 +26,18 @@ let b = "var(--background-mod-strong)",
             strokeWidth: 3
         } : {
             strokeWidth: 4
-        }, h = a / 2, x = a / 2 - u / 2, B = 2 * Math.PI * x, S = B - t * B, g = o.useMemo(() => ({
-            strokeDasharray: `${B} ${B}`,
-            strokeDashoffset: S
-        }), [B, S]), {
-            progressTextAnimation: P
+        }, x = a / 2, h = a / 2 - u / 2, S = 2 * Math.PI * h, P = S - r * S, B = o.useMemo(() => ({
+            strokeDasharray: `${S} ${S}`,
+            strokeDashoffset: P
+        }), [S, P]), {
+            progressTextAnimation: g
         } = (0, _.zhh)({
-            progressTextAnimation: +(null != C && 1 !== t),
+            progressTextAnimation: +(null != C && 1 !== r),
             config: d.N
         });
         return (0, n.jsxs)("div", {
             className: l.A7,
-            ref: r,
+            ref: t,
             style: {
                 width: a,
                 height: a,
@@ -47,7 +47,7 @@ let b = "var(--background-mod-strong)",
                 className: l.vW,
                 children: [m, (0, n.jsxs)(i.animated.div, {
                     style: {
-                        opacity: (0, s.a)(P),
+                        opacity: (0, s.a)(g),
                         inset: u
                     },
                     className: c()(l.rD, l.qk),
@@ -68,27 +68,27 @@ let b = "var(--background-mod-strong)",
                     className: l.qB,
                     strokeWidth: u,
                     fill: "transparent",
-                    r: x,
-                    cx: h,
-                    cy: h,
+                    r: h,
+                    cx: x,
+                    cy: x,
                     stroke: b
                 }), (0, n.jsx)("circle", {
                     className: l.qB,
                     strokeWidth: u,
                     fill: "transparent",
-                    r: x,
-                    cx: h,
-                    cy: h,
+                    r: h,
+                    cx: x,
+                    cy: x,
                     stroke: b
                 }), (0, n.jsx)("circle", {
                     className: l.qB,
                     strokeWidth: u,
                     fill: "transparent",
-                    r: x,
-                    cx: h,
-                    cy: h,
+                    r: h,
+                    cx: x,
+                    cy: x,
                     stroke: "rgba(98, 196, 101, 1)",
-                    style: g
+                    style: B
                 })]
             })]
         })

@@ -32,7 +32,8 @@ function _(e) {
         "data-testid": "video-quest-share-btn",
         "data-quest-id": n.id,
         style: {
-            marginLeft: t ? "auto" : void 0
+            marginLeft: t ? "auto" : void 0,
+            pointerEvents: "auto"
         },
         children: (0, r.jsx)(i.m_, {
             text: m.intl.string(m.t.WmfZHZ),

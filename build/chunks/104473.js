@@ -44,7 +44,8 @@ function p(e) {
         videoUrl: o,
         poster: s,
         showEndScreen: p,
-        active: m
+        active: m,
+        autoHideVolumeSlider: b
     } = e;
     return (0, a.jsx)("div", {
         style: {
@@ -59,6 +60,7 @@ function p(e) {
             autoplay: n,
             orientation: t,
             maxSeekableTimeSec: r > 0 ? r : void 0,
+            autoHideVolumeSlider: b,
             parentTransitionState: i.ip4.ENTERED,
             targetTimeSec: 1 / 0,
             onOptimisticProgressUpdate: () => {},
@@ -122,6 +124,11 @@ let m = {
             label: "Active",
             type: "boolean",
             defaultValue: !0
+        },
+        autoHideVolumeSlider: {
+            label: "Auto-hide Volume Slider",
+            type: "boolean",
+            defaultValue: !1
         }
     },
     b = {
@@ -148,7 +155,7 @@ let m = {
             }
         }
     },
-    g = {
+    S = {
         name: "HLS",
         id: "hls-video-generic",
         component: p,
@@ -164,14 +171,14 @@ let m = {
             }
         }
     },
-    S = {
+    g = {
         tension: 500,
         friction: 30,
         clamp: !0
     },
     f = {
         title: "Discord Video Player (Generic)",
-        stories: [b, _, g, {
+        stories: [b, _, S, {
             name: "Timeline Indicators",
             id: "timeline-indicators-generic",
             component: function(e) {
@@ -186,7 +193,7 @@ let m = {
                         expansion: d
                     }, u] = (0, i.zhh)(() => ({
                         expansion: 0,
-                        config: S,
+                        config: g,
                         onRest: () => {
                             null == c.current && s(null)
                         }
