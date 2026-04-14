@@ -1,6 +1,6 @@
 /** chunk id: 435769 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => p
 });
 var r = n(527758),
     a = n(47312),
@@ -8,13 +8,13 @@ var r = n(527758),
     c = n(392852),
     o = "hcaptcha-api-script-id",
     s = "hcaptchaOnLoad",
-    p = [],
-    d = function(e) {
+    d = [],
+    l = function(e) {
         void 0 === e && (e = {});
         var t = (0, c.yO)(e.scriptLocation);
         delete e.scriptLocation;
         var n = (0, c.CC)(t),
-            r = p.find(function(e) {
+            r = d.find(function(e) {
                 return e.scope === n.window
             });
         if (n.document.getElementById(o) && r) return r.promise;
@@ -22,19 +22,19 @@ var r = n(527758),
             n.window[s] = r;
             var i = e.apihost || "https://js.hcaptcha.com";
             delete e.apihost;
-            var p = n.document.createElement("script");
-            p.id = o, p.src = i + "/1/api.js?render=explicit&onload=" + s, p.async = void 0 === e.loadAsync || e.loadAsync, delete e.loadAsync, p.onerror = function(e) {
+            var d = n.document.createElement("script");
+            d.id = o, d.src = i + "/1/api.js?render=explicit&onload=" + s, d.async = void 0 === e.loadAsync || e.loadAsync, delete e.loadAsync, d.onerror = function(e) {
                 return a("script-error")
             };
-            var d = (0, c.YK)(e);
-            p.src += "" !== d ? "&" + d : "", t.appendChild(p)
+            var l = (0, c.YK)(e);
+            d.src += "" !== l ? "&" + l : "", t.appendChild(d)
         });
-        return p.push({
+        return d.push({
             promise: a,
             scope: n.window
         }), a
     };
-let l = function(e) {
+let p = function(e) {
     function t(t) {
         var n;
         return (n = e.call(this, t) || this)._hcaptcha = void 0, n.renderCaptcha = n.renderCaptcha.bind((0, r.A)(n)), n.resetCaptcha = n.resetCaptcha.bind((0, r.A)(n)), n.removeCaptcha = n.removeCaptcha.bind((0, r.A)(n)), n.isReady = n.isReady.bind((0, r.A)(n)), n.loadCaptcha = n.loadCaptcha.bind((0, r.A)(n)), n.handleOnLoad = n.handleOnLoad.bind((0, r.A)(n)), n.handleSubmit = n.handleSubmit.bind((0, r.A)(n)), n.handleExpire = n.handleExpire.bind((0, r.A)(n)), n.handleError = n.handleError.bind((0, r.A)(n)), n.handleOpen = n.handleOpen.bind((0, r.A)(n)), n.handleClose = n.handleClose.bind((0, r.A)(n)), n.handleChallengeExpired = n.handleChallengeExpired.bind((0, r.A)(n)), n.ref = i.createRef(), n.apiScriptRequested = !1, n.state = {
@@ -75,7 +75,7 @@ let l = function(e) {
                 r = e.endpoint,
                 a = e.host,
                 i = e.imghost;
-            d({
+            l({
                 apihost: t,
                 assethost: n,
                 endpoint: r,
