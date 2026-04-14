@@ -42,8 +42,8 @@ var i = n(627968),
     F = n(690521),
     H = n(403362),
     B = n(628691),
-    V = n(697470),
-    W = n(475481),
+    V = n(501255),
+    W = n(697470),
     K = n(492841),
     z = n(143413),
     Y = n(707985),
@@ -193,7 +193,7 @@ function es(e) {
         n.type === X.lAJ.AUTO_MODERATION_ACTION && (J = J && v), t.isModeratorReportChannel() && (J = J && n.id !== f?.id && !(0, z.A)(n));
         let q = (0, B.ul)(n),
             $ = (0, K.A)(n, t),
-            Z = !t.isSystemDM() && (0, V.A)(n, m) && p && !_,
+            Z = !t.isSystemDM() && (0, W.A)(n, m) && p && !_,
             {
                 disableReactionCreates: Q
             } = (0, Y.A)({
@@ -210,7 +210,7 @@ function es(e) {
                 guildId: et
             }),
             ei = (0, C.m)(n),
-            el = (0, W.Vc)(t.guild_id, t, "MessageHoverBar"),
+            el = (0, V.Vc)(t.guild_id, t, "MessageHoverBar"),
             ea = n.hasFlag(X.pr7.IS_GUILD_OFFICIAL),
             {
                 enabled: es
@@ -331,7 +331,7 @@ function es(e) {
             onClick: () => (0, q.mF)(t, n)
         }, "view-thread") : null, y ? (0, i.jsx)(J.qv, {
             label: D ? ee.intl.string(ee.t["2km5Gf"]) : ee.intl.string(ee.t["lE/PG3"]),
-            icon: u.LV2,
+            icon: D ? u.$pZ : u.LV2,
             onClick: () => h.A.patchMessageGuildOfficial(t.id, n.id, !D)
         }, "guild-official") : null, p ? (0, i.jsx)(J.qv, {
             label: eh ? ee.intl.string(ee.t["1kWJAr"]) : ee.intl.string(ee.t.MFGE51),

@@ -41,8 +41,8 @@ var i = n(627968),
     w = n(614323),
     F = n(292103),
     k = n(878956),
-    V = n(389889),
-    X = n(729883),
+    X = n(389889),
+    V = n(729883),
     B = n(474445),
     K = n(304795),
     H = n(25287),
@@ -159,7 +159,7 @@ function $(e) {
         ef = (0, M.A)(t, n),
         ey = (0, w.A)(t, n),
         eh = (0, O.A)(t, n),
-        eE = (0, X.A)(t, n),
+        eE = (0, V.A)(t, n),
         eS = (0, b.A)(t),
         e_ = (0, B.A)(t, n),
         eT = (0, G.A)(t, n),
@@ -178,7 +178,7 @@ function $(e) {
         eM = (0, I.A)(t, n),
         ej = (0, v.A)(t, n),
         eO = (0, K.A)(t, n),
-        eC = (0, V.A)(t, n),
+        eC = (0, X.A)(t, n),
         eN = (0, L.A)(t),
         eG = (0, y.A)(t),
         eR = (0, H.A)(t),
@@ -188,12 +188,12 @@ function $(e) {
         ew = (0, F.Ay)(t),
         eF = (0, F.S_)(t),
         ek = (0, F.zo)(t),
-        eV = (0, j.A)({
+        eX = (0, j.A)({
             type: d,
             id: c,
             name: Z
         }),
-        eX = (0, S.A)(s, n.getGuildId()),
+        eV = (0, S.A)(s, n.getGuildId()),
         eB = (0, p.A)(ee, t, {
             shouldHideMediaOptions: eo,
             contentType: a?.contentType,
@@ -222,7 +222,7 @@ function $(e) {
             children: ez ?? eq
         }),
         eZ = (0, i.jsxs)(r.rXV, {
-            children: [eV, eX, eB, eK, eH, eJ]
+            children: [eX, eV, eB, eK, eH, eJ]
         });
     return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated": !0,

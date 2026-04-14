@@ -7,7 +7,7 @@ n(64700);
 var l = n(665260),
     a = n(397927),
     r = n(843472),
-    s = n(475481),
+    s = n(501255),
     o = n(652215),
     d = n(985018);
 
@@ -22,7 +22,7 @@ function c(e, t) {
         label: d.intl.string(d.t["2km5Gf"]),
         leadingAccessory: {
             type: "icon",
-            icon: a.LV2
+            icon: a.$pZ
         }
     }) : (0, i.jsx)(a.Drp, {
         id: "guild-official-set",
