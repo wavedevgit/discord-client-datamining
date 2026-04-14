@@ -21,8 +21,8 @@ var r = n(397927),
     I = n(788593),
     A = n(492280),
     h = n(946599),
-    v = n(858808),
-    E = n(685049),
+    E = n(858808),
+    v = n(685049),
     j = n(985018),
     T = n(522500),
     b = n(629475);
@@ -149,7 +149,7 @@ function L(e) {
         applicationId: u
     } = e, g = (0, o.GV)(), _ = (0, o.GV)(), {
         trackUserProfileEditAction: x
-    } = (0, m.NJ)(), [p, I] = a.useState("idle"), [A, h] = a.useState(t ?? ""), v = a.useRef(null), E = a.useRef(null), T = j.intl.string(j.t.xKSfBT), C = null != t && "" !== t.trim(), N = a.useCallback(() => {
+    } = (0, m.NJ)(), [p, I] = a.useState("idle"), [A, h] = a.useState(t ?? ""), E = a.useRef(null), v = a.useRef(null), T = j.intl.string(j.t.xKSfBT), C = null != t && "" !== t.trim(), N = a.useCallback(() => {
         x({
             action: "PRESS_ADD_COMMENTARY",
             widgetEdited: d
@@ -168,7 +168,7 @@ function L(e) {
     return a.useEffect(() => {
         "editing" === p && h(t ?? "")
     }, [t, p]), a.useEffect(() => {
-        "completed" === p && v.current?.focus()
+        "completed" === p && E.current?.focus()
     }, [p]), "editing" === p ? (0, i.jsxs)("div", {
         className: b.kS,
         children: [(0, i.jsx)(r.AC4, {
@@ -189,7 +189,7 @@ function L(e) {
             maxLength: 200
         })]
     }) : (0, i.jsxs)("div", {
-        ref: E,
+        ref: v,
         role: "group",
         "aria-labelledby": _,
         onClick: N,
@@ -207,13 +207,13 @@ function L(e) {
             text: t ?? T,
             className: s()(b.qC, !C && b.qf)
         }), (0, i.jsx)(r.DUT, {
-            innerRef: v,
+            innerRef: E,
             "aria-label": j.intl.string(j.t.ppb9MJ),
             onClick: e => {
                 e.stopPropagation(), N()
             },
             focusProps: {
-                ringTarget: E
+                ringTarget: v
             }
         })]
     })
@@ -294,13 +294,13 @@ function P(e) {
                     applicationId: P,
                     disableInteraction: d,
                     className: b._A
-                }), !d && (0, i.jsx)(E.o, {
+                }), !d && (0, i.jsx)(v.o, {
                     className: b.Ez,
                     applicationId: P,
                     guildId: n,
                     channelId: l
                 })]
-            }), !d && F && (0, i.jsx)(v.A, {
+            }), !d && F && (0, i.jsx)(E.A, {
                 game: o,
                 widgetType: c,
                 className: b.vS,

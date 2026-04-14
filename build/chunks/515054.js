@@ -84,7 +84,7 @@ function h(e) {
     } = (0, c.NJ)(), [{
         section: I,
         text: h
-    }, v] = a.useState(g.find(e => {
+    }, E] = a.useState(g.find(e => {
         let {
             section: t
         } = e;
@@ -105,7 +105,7 @@ function h(e) {
                     d.A.hasUnsavedChanges() && I === x.RP.WIDGETS ? (0, o.VQ)() : (f({
                         action: "PRESS_SECTION",
                         section: e
-                    }), v(t => g.find(t => t.section === e) ?? t))
+                    }), E(t => g.find(t => t.section === e) ?? t))
                 },
                 children: g.map(e => (0, i.jsx)(r.VQ0.Item, {
                     className: p.YU,

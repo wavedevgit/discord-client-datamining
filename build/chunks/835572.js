@@ -46,14 +46,14 @@ function E(e) {
         isOwned: P,
         location: "PremiumWishlistItemCard"
     }), j = l.useCallback(() => {
-        C ? ((0, h.closeUserProfileModal)(), (0, o.pX)(S.BVt.APPLICATION_STORE)) : (M?.(), (0, u.A)({
+        P ? ((0, h.closeUserProfileModal)(), (0, o.pX)(S.BVt.APPLICATION_STORE)) : (M?.(), (0, u.A)({
             isGift: !0,
             giftRecipient: i,
             giftingOrigin: v,
             subscriptionTier: t.skuId,
             analyticsLocations: k
         }))
-    }, [C, i, v, t.skuId, k, M]), b = y && !O && f.has(L), N = l.useCallback(() => (0, r.jsx)("div", {
+    }, [P, i, v, t.skuId, k, M]), b = y && !O && f.has(L), N = l.useCallback(() => (0, r.jsx)("div", {
         className: A.MO,
         children: (0, r.jsx)(a.JY, {
             eventTargetRef: U,

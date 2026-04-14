@@ -26,8 +26,8 @@ function x(e) {
         className: o,
         disableInteraction: c = !1
     } = e, x = t?.filter(e => null != (0, _.W3)(e)) ?? [], I = x.length > 0, A = n && !c && (0, u.mS)(l) && x.length < 20, {
-        trackUserProfileAction: E
-    } = (0, d.NJ)(), j = (0, a.useRef)(new Map), T = (0, a.useRef)(null), b = (0, a.useRef)(null), [C, N] = (0, a.useState)(0), [k, S] = (0, a.useState)(!1), O = v(T, b, x, j, N);
+        trackUserProfileAction: v
+    } = (0, d.NJ)(), j = (0, a.useRef)(new Map), T = (0, a.useRef)(null), b = (0, a.useRef)(null), [C, N] = (0, a.useState)(0), [k, S] = (0, a.useState)(!1), O = E(T, b, x, j, N);
     if ((0, a.useEffect)(() => (O(), window.addEventListener("resize", O), () => {
             window.removeEventListener("resize", O)
         }), [O, x?.join("")]), !I && !A) return null;
@@ -53,12 +53,12 @@ function x(e) {
                 isExpanded: k,
                 numberOfOverflowingTags: C,
                 onExpandTags: () => {
-                    S(!0), E({
+                    S(!0), v({
                         action: "EXPAND_GAME_TAGS"
                     })
                 },
                 onCollapseTags: () => {
-                    S(!1), E({
+                    S(!1), v({
                         action: "COLLAPSE_GAME_TAGS"
                     })
                 },
@@ -172,7 +172,7 @@ function h(e) {
         })
     })
 }
-let v = (e, t, n, i, l) => (0, a.useCallback)(() => {
+let E = (e, t, n, i, l) => (0, a.useCallback)(() => {
     if (null == n) return void l(0);
     let a = e.current?.getBoundingClientRect().width ?? 0,
         s = t.current?.getBoundingClientRect().width ?? 0,

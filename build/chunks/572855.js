@@ -32,7 +32,7 @@ function N() {
     (0, c.OoC)(x.K)
 }
 
-function b(e) {
+function R(e) {
     let {
         tooltipText: t,
         ...a
@@ -50,12 +50,12 @@ function b(e) {
     })
 }
 
-function R() {
+function b() {
     let {
         zoomed: e,
         setZoomed: t
     } = (0, y.Q)();
-    return (0, n.jsx)(b, {
+    return (0, n.jsx)(R, {
         onClick: () => {
             C.l.markActionPerformed(e ? C.N.ZOOM_OUT_BUTTON_PRESSED : C.N.ZOOM_IN_BUTTON_PRESSED), t(!e)
         },
@@ -87,7 +87,7 @@ function v(e) {
             })
         }
     }, [a, l]);
-    return null != a && null != l && (0, m.p)(a) ? (0, n.jsx)(b, {
+    return null != a && null != l && (0, m.p)(a) ? (0, n.jsx)(R, {
         onClick: s,
         tooltipText: M.intl.string(M.t.I3ltXO),
         icon: c.tuI
@@ -122,7 +122,7 @@ function D(e) {
             }
         }
     }
-    return (0, n.jsx)(b, {
+    return (0, n.jsx)(R, {
         onClick: m,
         tooltipText: M.intl.string("VIDEO" === t.type ? M.t.JVuuz3 : M.t["S/xNKV"]),
         loading: a,
@@ -136,7 +136,7 @@ function j(e) {
     } = e;
     if (!(0, p.fW)(t.url)) return null;
     let a = (0, p.XW)((0, p.bc)(t.original, t.url), t.contentType, t.originalContentType);
-    return (0, n.jsx)(b, {
+    return (0, n.jsx)(R, {
         onClick: () => {
             C.l.markActionPerformed(C.N.OPEN_LINK_PRESSED), C.l.trackMediaViewerLinkOpened({
                 href: a
@@ -281,7 +281,7 @@ function P(e) {
             let {
                 onClick: t
             } = e;
-            return (0, n.jsx)(b, {
+            return (0, n.jsx)(R, {
                 buttonRef: a,
                 tooltipText: M.intl.string(M.t["UKOtz+"]),
                 onClick: () => {
@@ -306,7 +306,7 @@ let k = i.memo(function(e) {
             className: s()(O.uu, e),
             onClick: e => e.stopPropagation(),
             onMouseLeave: c,
-            children: ["IMAGE" === t.type && (0, n.jsx)(R, {}), !a && (0, n.jsxs)(n.Fragment, {
+            children: ["IMAGE" === t.type && (0, n.jsx)(b, {}), !a && (0, n.jsxs)(n.Fragment, {
                 children: [(0, n.jsx)(v, {
                     item: t
                 }), (0, n.jsx)(D, {

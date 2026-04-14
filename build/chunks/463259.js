@@ -21,8 +21,8 @@ var i = n(627968),
     I = n(633075),
     A = n(289173),
     h = n(958338),
-    v = n(600761),
-    E = n(667049),
+    E = n(600761),
+    v = n(667049),
     j = n(605694),
     T = n(357541),
     b = n(236599),
@@ -94,14 +94,14 @@ function U(e) {
         user: t,
         guildId: n,
         channelId: l
-    } = e, s = (0, E.A)(t.id), o = (0, r.bG)([x.default], () => x.default.getId() === t.id), d = (() => {
+    } = e, s = (0, v.A)(t.id), o = (0, r.bG)([x.default], () => x.default.getId() === t.id), d = (() => {
         let [e, t] = (0, r.yK)([p.A], () => [p.A.ipCountryCode, p.A.ipCountryCodeRequest]), n = (0, m.Z)();
         return a.useEffect(() => {
             null == e && null == t && n && (0, g.xe)()
         }, [e, t, n]), "GB" === e && n
     })(), _ = (0, c.QR)({
         location: "UserProfileModalV2Widgets"
-    }), v = 0 === s.length && o, j = a.useMemo(() => s.filter(A.fu), [s]), T = a.useMemo(() => s.filter(e => e instanceof I.R), [s]);
+    }), E = 0 === s.length && o, j = a.useMemo(() => s.filter(A.fu), [s]), T = a.useMemo(() => s.filter(e => e instanceof I.R), [s]);
     (0, h.Y)(o, j), ((e, t) => {
         let n = a.useMemo(() => t.map(e => e.applicationId), [t]);
         (0, u.A)(n);
@@ -126,7 +126,7 @@ function U(e) {
             index: a
         }, e.getUniqueKey()))]
     });
-    if (v)
+    if (E)
         if (_) return (0, i.jsx)(S.A, {});
         else return (0, i.jsx)(P.A, {});
     return o ? (0, i.jsx)(C.D, {
@@ -139,7 +139,7 @@ function M(e) {
         user: t,
         ...n
     } = e, l = a.useRef(null);
-    (0, v.i)({
+    (0, E.i)({
         containerRef: l
     });
     let r = (0, O.k)(t.id);

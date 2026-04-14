@@ -27,7 +27,7 @@ function x(e) {
         isDragging: e.isDragging(),
         item: e.getItem(),
         sourceClientOffset: e.getSourceClientOffset()
-    })), A = (0, s.bG)([d.default], () => d.default.getCurrentUser()), h = (0, r.VUy)(), v = a.useMemo(() => null == A || null == p ? null : function(e, t, n) {
+    })), A = (0, s.bG)([d.default], () => d.default.getCurrentUser()), h = (0, r.VUy)(), E = a.useMemo(() => null == A || null == p ? null : function(e, t, n) {
         let {
             id: a,
             itemType: l,
@@ -112,26 +112,26 @@ function x(e) {
             })
         }
         return null
-    }(p, A, n), [p, A, n]), E = a.useRef(null), j = a.useCallback(() => {
+    }(p, A, n), [p, A, n]), v = a.useRef(null), j = a.useCallback(() => {
         if (null == t.current) return;
         let e = t.current.getBoundingClientRect();
-        E.current = {
+        v.current = {
             x: e.left,
             y: e.top
         }
     }, [t]);
     if (a.useEffect(() => {
             if (!x) {
-                E.current = null;
+                v.current = null;
                 return
             }
-            null == E.current && j()
-        }, [x, j]), !0 !== x || null == I || null == v) return null;
-    null == E.current && j();
+            null == v.current && j()
+        }, [x, j]), !0 !== x || null == I || null == E) return null;
+    null == v.current && j();
     let {
         x: T,
         y: b
-    } = E.current ?? {
+    } = v.current ?? {
         x: 0,
         y: 0
     }, C = I.x - T - 60 * !!h, N = I.y - b;
@@ -140,6 +140,6 @@ function x(e) {
         style: {
             transform: `translate3d(${C}px, ${N}px, 0)`
         },
-        children: v
+        children: E
     })
 }

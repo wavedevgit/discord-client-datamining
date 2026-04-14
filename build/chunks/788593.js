@@ -49,26 +49,26 @@ function x(e) {
         className: p,
         hideTooltip: I = !1,
         coverRef: A
-    } = e, h = (0, g.A)(), v = (0, d.A)({
+    } = e, h = (0, g.A)(), E = (0, d.A)({
         location: "GameCover",
         applicationId: l,
         source: c.Ob.UserProfile,
         sourceUserId: x,
         trackEntryPointImpression: !0
-    }), E = n ?? _.intl.string(_.t.GIWFlF), j = _.intl.formatToPlainString(_.t["8QLQB+"], {
-        gameName: E
+    }), v = n ?? _.intl.string(_.t.GIWFlF), j = _.intl.formatToPlainString(_.t["8QLQB+"], {
+        gameName: v
     }), T = a.useCallback(e => {
         if (h) {
             e.preventDefault(), e.stopPropagation(), (0, u.VQ)();
             return
         }
-        v?.(e)
-    }, [h, v]), b = e => I ? e : (0, i.jsx)(r.m, {
-        text: E,
+        E?.(e)
+    }, [h, E]), b = e => I ? e : (0, i.jsx)(r.m, {
+        text: v,
         ariaHidden: !0,
         children: e
     });
-    return b(null == v ? (0, i.jsx)(o.vN3, {
+    return b(null == E ? (0, i.jsx)(o.vN3, {
         children: (0, i.jsx)("div", {
             ref: A,
             className: p,

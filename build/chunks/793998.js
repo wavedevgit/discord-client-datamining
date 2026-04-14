@@ -40,7 +40,8 @@ let G = {
         [O.u9.ACTIVITY]: N.A,
         [O.u9.SETTINGS]: j.A,
         [O.u9.CONTENT_AND_SOCIAL]: C.A,
-        [O.u9.DATA_AND_PRIVACY]: v.A
+        [O.u9.DATA_AND_PRIVACY]: v.A,
+        [O.u9.SCREEN_TIME_CONTROLS]: j.A
     },
     M = {
         [O.u9.REQUESTS]: I.A,
@@ -63,7 +64,7 @@ function k(e) {
         section: t,
         handleItemSelect: n
     } = e, s = (0, b.VT)(), l = (0, S.A)();
-    return t === O.u9.CONTENT_AND_SOCIAL || t === O.u9.DATA_AND_PRIVACY ? null : (0, i.jsxs)(d.VQ0, {
+    return [O.u9.CONTENT_AND_SOCIAL, O.u9.DATA_AND_PRIVACY, O.u9.SCREEN_TIME_CONTROLS].includes(t) ? null : (0, i.jsxs)(d.VQ0, {
         className: D.c5,
         "aria-label": P.intl.string(L.default.RZqaJn),
         selectedItem: t,
@@ -187,7 +188,7 @@ function B() {
             let e = A.dm.getSetting();
             n && t && void 0 === e && A.dm.updateSetting(!0)
         }, [n, t]), b) return null;
-    let C = p !== O.u9.SETTINGS ? p : O.u9.ACTIVITY,
+    let C = p !== O.u9.SETTINGS && p !== O.u9.SCREEN_TIME_CONTROLS ? p : O.u9.ACTIVITY,
         v = M[C];
     return (0, i.jsx)(m.f5, {
         value: e,

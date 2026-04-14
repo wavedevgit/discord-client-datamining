@@ -53,18 +53,18 @@ function g(e) {
             name3: g[2],
             numPeople: t.length - 3
         })),
-        v = (0, l.A)({
+        E = (0, l.A)({
             location: "SocialProofButton",
             applicationId: m,
             source: a.Ob.UserProfile,
             sourceUserId: _,
             trackEntryPointImpression: !0
         });
-    return A && null != v ? (0, i.jsx)(r.H, {
+    return A && null != E ? (0, i.jsx)(r.H, {
         users: I,
         label: h,
         className: p,
-        onClick: v,
+        onClick: E,
         guildId: f,
         channelId: x,
         "aria-label": h,

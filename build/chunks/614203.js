@@ -28,8 +28,8 @@ function b(t) {
         spellcheckEnabled: b
     };
     let h = n.useRef(!1),
-        [T, m] = n.useState(!1),
-        [y, S] = n.useState([]),
+        [T, y] = n.useState(!1),
+        [m, S] = n.useState([]),
         C = n.useCallback(() => {
             let {
                 spellcheckEnabled: t,
@@ -38,7 +38,7 @@ function b(t) {
             } = x.current;
             t && (0, u.TT)() && Promise.all([(0, u.PS)(e, !0), (0, u.Os)(e, !0)]).then(t => {
                 let [e, a] = t;
-                h.current && (m(e), S(a), s())
+                h.current && (y(e), S(a), s())
             })
         }, []),
         A = n.useCallback(() => {
@@ -58,7 +58,7 @@ function b(t) {
         }
     }, [C]), n.useEffect(() => {
         C()
-    }, [e, b, C]), (0, u.TT)()) ? [y.map((t, e) => (0, a.jsx)(c.Drp, {
+    }, [e, b, C]), (0, u.TT)()) ? [m.map((t, e) => (0, a.jsx)(c.Drp, {
         id: `correction-${e}`,
         label: t,
         action: () => {

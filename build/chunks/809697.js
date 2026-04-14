@@ -14,7 +14,8 @@ let d = {
         [a.u9.REQUESTS]: "family_center_requests_tab",
         [a.u9.SETTINGS]: "family_center_settings_tab",
         [a.u9.CONTENT_AND_SOCIAL]: "family_center_content_and_social_panel",
-        [a.u9.DATA_AND_PRIVACY]: "family_center_data_and_privacy_panel"
+        [a.u9.DATA_AND_PRIVACY]: "family_center_data_and_privacy_panel",
+        [a.u9.SCREEN_TIME_CONTROLS]: "family_center_screen_time_controls_panel"
     },
     c = () => ({
         selectedTab: (0, i.bG)([r.A], () => r.A.getSelectedTab()),

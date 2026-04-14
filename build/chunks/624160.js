@@ -20,8 +20,8 @@ var i = n(627968),
     I = n(606758),
     A = n(492280),
     h = n(939899),
-    v = n(518477),
-    E = n(985018),
+    E = n(518477),
+    v = n(985018),
     j = n(360841);
 let T = {
     [r.x.FAVORITE_GAMES]: {
@@ -29,28 +29,28 @@ let T = {
             variant: "details",
             applicationId: x.n.LEAGUE_OF_LEGENDS
         }),
-        getAriaLabel: () => E.intl.string(E.t.xJtdIm)
+        getAriaLabel: () => v.intl.string(v.t.xJtdIm)
     },
     [r.x.CURRENT_GAMES]: {
         placeholder: () => ({
             variant: "details",
             applicationId: x.n.VALORANT
         }),
-        getAriaLabel: () => E.intl.string(E.t.Ae8tRi)
+        getAriaLabel: () => v.intl.string(v.t.Ae8tRi)
     },
     [r.x.PLAYED_GAMES]: {
         placeholder: () => ({
             variant: "grid",
             applicationIds: [x.n.PEAK, x.n.BATTLEFIELD_6, x.n.REPO, x.n.BALDURS_GATE_3]
         }),
-        getAriaLabel: () => E.intl.string(E.t["pBR+4j"])
+        getAriaLabel: () => v.intl.string(v.t["pBR+4j"])
     },
     [r.x.WANT_TO_PLAY_GAMES]: {
         placeholder: () => ({
             variant: "grid",
             applicationIds: [x.n.MARVEL_RIVALS, x.n.WORLD_OF_WARCRAFT, x.n.RUST, x.n.SILKSONG]
         }),
-        getAriaLabel: () => E.intl.string(E.t.NtoBi1)
+        getAriaLabel: () => v.intl.string(v.t.NtoBi1)
     },
     [r.x.APPLICATION]: {
         placeholder: e => ({
@@ -58,7 +58,7 @@ let T = {
             applicationId: e.applicationId
         }),
         icon: e => _.A.getApplication(e.applicationId)?.getIconURL(16),
-        getAriaLabel: e => E.intl.formatToPlainString(E.t.KfGahB, {
+        getAriaLabel: e => v.intl.formatToPlainString(v.t.KfGahB, {
             applicationName: _.A.getApplication(e.applicationId)?.name ?? ""
         })
     }
@@ -98,14 +98,14 @@ function b(e) {
                     G.autoAdd && ((0, p.Y5)(n), b({
                         action: "WIDGET_ADDED",
                         ...n.getProfileEditAnalyticsOptions()
-                    }), (0, I.XA)(v.jM.WIDGET_ADDED), l?.()), D({
+                    }), (0, I.XA)(E.jM.WIDGET_ADDED), l?.()), D({
                         analyticsLocations: w
                     });
                     return
                 }(0, p.Y5)(n), b({
                     action: "WIDGET_ADDED",
                     ...n.getProfileEditAnalyticsOptions()
-                }), (0, I.XA)(v.jM.WIDGET_ADDED), l?.()
+                }), (0, I.XA)(E.jM.WIDGET_ADDED), l?.()
             }
         }, [x, y, G, n, b, l, D, w]),
         M = k?.(n),
@@ -115,7 +115,7 @@ function b(e) {
         children: [(0, i.jsxs)(o.DUT, {
             className: s()(j.PH, "small" === _ && j.PG, x && j.Lq),
             onClick: U,
-            "aria-label": y && null != L ? E.intl.formatToPlainString(E.t.ATS0FK, {
+            "aria-label": y && null != L ? v.intl.formatToPlainString(v.t.ATS0FK, {
                 applicationName: L.name
             }) : N(n),
             "aria-busy": x,

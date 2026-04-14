@@ -220,9 +220,6 @@ function eE(e) {
                         variant: "text-sm/normal"
                     })
                 })
-            }), O && (0, t.jsx)(H.A, {
-                isPremiumUser: (0, b.ki)(n),
-                onInteraction: f
             }), (0, t.jsx)(Q.A, {
                 user: l,
                 className: eN.profileBanner
@@ -243,6 +240,9 @@ function eE(e) {
                     relationshipType: w,
                     onClose: f
                 })
+            }), O && (0, t.jsx)(H.A, {
+                isPremiumUser: (0, b.ki)(n),
+                onInteraction: f
             }), !ea && (0, t.jsx)(W.E, {
                 userBio: m?.bio,
                 setLineClamp: !1

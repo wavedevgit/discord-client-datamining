@@ -28,12 +28,12 @@ function h(t) {
             range: h,
             preventEmojiSurrogates: !1
         }) : "",
-        m = n.useCallback(e => {
+        y = n.useCallback(e => {
             r.rL.focus(t), u.o.withSingleEntry(t, () => {
                 t.deleteFragment(), t.insertText(e)
             })
         }, [t]),
-        y = function(t, e) {
+        m = function(t, e) {
             let [s, r] = n.useState(!1), i = n.useCallback(async () => {
                 if (!s) {
                     r(!0), (0, l.showToast)((0, l.createToast)(f.intl.string(f.t.p54KYY), l.ToastType.AI));
@@ -58,7 +58,7 @@ function h(t) {
                 action: i,
                 disabled: s
             })
-        }(T, m),
+        }(T, y),
         S = function(t, e) {
             let [r, o] = n.useState(!1), u = (0, i.bG)([p.default], () => p.default.locale), g = n.useCallback(async (s, a) => {
                 if (r) return;
@@ -113,8 +113,8 @@ function h(t) {
                 disabled: r,
                 children: d
             })
-        }(T, m);
+        }(T, y);
     return "" !== T.trim() && e ? (0, a.jsxs)(a.Fragment, {
-        children: [y, S]
+        children: [m, S]
     }) : null
 }

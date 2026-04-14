@@ -21,47 +21,47 @@ var i = n(627968),
     I = n(183555),
     A = n(622543),
     h = n(985018),
-    v = n(808104);
+    E = n(808104);
 
-function E(e) {
+function v(e) {
     let {
         applicationId: t,
         size: n = "default"
     } = e, a = (0, d.bG)([A.A], () => A.A.getApplicationWidgetConfig(t));
     return (0, i.jsxs)("div", {
-        className: s()(v.kL, {
-            [v.PG]: "small" === n
+        className: s()(E.kL, {
+            [E.PG]: "small" === n
         }),
         children: [(0, i.jsxs)("div", {
-            className: v.Qs,
+            className: E.Qs,
             children: [(0, i.jsx)("div", {
-                className: v.wx
+                className: E.wx
             }), (0, i.jsx)("div", {
-                className: v.yF
+                className: E.yF
             }), (0, i.jsxs)("div", {
-                className: v.M1,
+                className: E.M1,
                 children: [(0, i.jsx)("div", {
-                    className: v.dJ
+                    className: E.dJ
                 }), (0, i.jsx)("div", {
-                    className: v.dJ
+                    className: E.dJ
                 }), (0, i.jsx)("div", {
-                    className: v.dJ
+                    className: E.dJ
                 }), (0, i.jsx)("div", {
-                    className: v.dJ
+                    className: E.dJ
                 }), (0, i.jsx)("div", {
-                    className: v.dJ
+                    className: E.dJ
                 }), (0, i.jsx)("div", {
-                    className: v.dJ
+                    className: E.dJ
                 })]
             })]
         }), (0, i.jsx)("div", {
-            className: v.ZS,
+            className: E.ZS,
             children: a?.miniPreviewImage != null ? (0, i.jsx)("img", {
                 src: a.miniPreviewImage,
                 alt: "",
-                className: v.oz
+                className: E.oz
             }) : (0, i.jsx)("div", {
-                className: v.FQ
+                className: E.FQ
             })
         })]
     })
@@ -74,8 +74,8 @@ function j(e) {
         userId: a
     } = e, l = (0, f.A)(a, t), c = l.surfaceConfigs[o.m.ADD_WIDGET_PREVIEW];
     return null == c ? null : (0, i.jsx)("div", {
-        className: s()(v.iW, {
-            [v.PG]: "small" === n
+        className: s()(E.iW, {
+            [E.PG]: "small" === n
         }),
         children: (0, i.jsx)(r.kH, {
             ...l,
@@ -98,7 +98,7 @@ function T(e) {
     return n ? null == t ? null : (0, i.jsx)(j, {
         ...e,
         userId: t.id
-    }) : (0, i.jsx)(E, {
+    }) : (0, i.jsx)(v, {
         ...e
     })
 }
@@ -125,7 +125,7 @@ function b(e) {
         }))
     }, [o, l, t, d, f]);
     return "default" !== n || null == s ? null : (0, i.jsxs)("div", {
-        className: v.qr,
+        className: E.qr,
         children: [(0, i.jsx)(c.A5T, {
             size: "xs"
         }), (0, i.jsx)(c.EYj, {
@@ -136,7 +136,7 @@ function b(e) {
             }) : o ? h.intl.format(h.t.RNWFOQ, {
                 onConnect: p
             }) : h.intl.string(h.t["9TX4UT"]) : (0, i.jsx)("div", {
-                className: v.bg
+                className: E.bg
             })
         })]
     })
