@@ -1,6 +1,6 @@
 /** chunk id: 663111 params = (module,exports,require) **/
 n.d(t, {
-    M: () => S
+    M: () => N
 });
 var i = n(627968);
 n(64700);
@@ -24,12 +24,12 @@ var l = n(873263),
     C = n(221425),
     T = n(782584);
 
-function S() {
+function N() {
     let e, t = (0, l.zy)(),
         n = (0, r.bG)([g.A], () => g.A.getGuildId()),
-        S = (0, r.bG)([m.A], () => m.A.getChannelId()),
-        N = (0, r.bG)([h.A], () => h.A.getChannel(S), [S]),
-        x = n ?? N?.guild_id,
+        N = (0, r.bG)([m.A], () => m.A.getChannelId()),
+        S = (0, r.bG)([h.A], () => h.A.getChannel(N), [N]),
+        x = n ?? S?.guild_id,
         v = (0, r.bG)([_.A], () => _.A.getGuild(x), [x]),
         b = (0, o.DZ)(),
         y = (0, A.lI)(),
@@ -64,7 +64,7 @@ function S() {
         size: u.Ay.Sizes.SMOL,
         active: !0,
         className: T.$f
-    })) : null != N && (N.isDM() || N.isGroupDM()) ? (e = f.intl.string(f.t.YUU0RF), P = (0, i.jsx)(a.pVd, {
+    })) : null != S && (S.isDM() || S.isGroupDM()) ? (e = f.intl.string(f.t.YUU0RF), P = (0, i.jsx)(a.pVd, {
         size: "sm"
     })) : t.pathname.startsWith(E.BVt.ICYMI) ? (e = f.intl.string(f.t["jnXV/V"]), P = (0, i.jsx)(a.gXB, {
         size: "sm"

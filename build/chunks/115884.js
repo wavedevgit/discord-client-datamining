@@ -27,9 +27,9 @@ let I = n(892799),
     },
     C = (0, A.Ld)(),
     T = `${C}-decription`,
-    S = `${C}-error`;
+    N = `${C}-error`;
 
-function N(e, t) {
+function S(e, t) {
     switch (t.type) {
         case "RESET":
             return f;
@@ -51,7 +51,7 @@ function N(e, t) {
 function x(e) {
     let {
         placeholder: t = g.intl.string(g.t["Rn/sLl"])
-    } = e, n = l.useRef(null), r = l.useRef(null), [s, A] = l.useReducer(N, f), {
+    } = e, n = l.useRef(null), r = l.useRef(null), [s, A] = l.useReducer(S, f), {
         canSend: x,
         hint: v,
         error: b,
@@ -141,7 +141,7 @@ function x(e) {
                     placeholder: t,
                     "aria-label": t,
                     "aria-invalid": null != b || void 0,
-                    "aria-describedby": null != b ? S : T
+                    "aria-describedby": null != b ? N : T
                 }), null != v && (0, i.jsx)("div", {
                     className: p.dQ,
                     "aria-hidden": !0,
@@ -157,7 +157,7 @@ function x(e) {
         }), null != b && (0, i.jsx)("div", {
             role: "alert",
             children: (0, i.jsx)(c.Text, {
-                id: S,
+                id: N,
                 variant: "text-sm/normal",
                 className: E.Ot,
                 color: "text-feedback-critical",

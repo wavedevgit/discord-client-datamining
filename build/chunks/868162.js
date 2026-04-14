@@ -39,7 +39,7 @@ function T(e) {
     return e.name
 }
 
-function S(e, t, n) {
+function N(e, t, n) {
     return null == e || e.displayName !== t ? {
         displayName: t,
         type: n
@@ -48,7 +48,7 @@ function S(e, t, n) {
         type: u.E.INPUT_AND_OUTPUT
     } : e
 }
-class N extends r.Ay.DeviceSettingsStore {
+class S extends r.Ay.DeviceSettingsStore {
     static displayName = "ConnectedDeviceStore";
     static persistKey = "ConnectedDeviceStore";
     static migrations = [e => null == e.ignoredDevices ? {
@@ -80,7 +80,7 @@ class N extends r.Ay.DeviceSettingsStore {
         return f
     }
 }
-let x = new N(a.h, {
+let x = new S(a.h, {
     MEDIA_ENGINE_DEVICES: function(e) {
         let {
             inputDevices: t,
@@ -109,9 +109,9 @@ let x = new N(a.h, {
             c = l().difference(a, s),
             h = l().difference(o, d);
         return c.length > 0 || h.length > 0 ? E = {} : (l().difference(s, a).forEach(e => {
-            E[e] = S(E[e], e, u.E.INPUT)
+            E[e] = N(E[e], e, u.E.INPUT)
         }), l().difference(d, o).forEach(e => {
-            E[e] = S(E[e], e, u.E.OUTPUT)
+            E[e] = N(E[e], e, u.E.OUTPUT)
         })), !(l().isEqual(a, s) && l().isEqual(o, d)) && (g = i, p = r, !0)
     },
     CONNECTED_DEVICE_SWITCH: function(e) {

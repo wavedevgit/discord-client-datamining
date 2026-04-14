@@ -25,7 +25,7 @@ let x = e => {
             reasonMaxLength: _,
             placeholder: p,
             position: A
-        } = e, f = s.useRef(null), [j, N] = s.useState(!1), E = (0, l.bG)([u.A], () => u.A.isGuildMetadataLoaded()), T = (0, i.jsx)(r.YNO, {
+        } = e, f = s.useRef(null), [j, N] = s.useState(!1), E = (0, l.bG)([u.A], () => u.A.isGuildMetadataLoaded()), C = (0, i.jsx)(r.YNO, {
             targetElementRef: f,
             onRequestClose: () => {
                 N(!1)
@@ -71,7 +71,7 @@ let x = e => {
             defaultDirty: t?.length > 0,
             leading: {
                 type: "emoji",
-                button: T
+                button: C
             },
             onChange: e => {
                 c(e)

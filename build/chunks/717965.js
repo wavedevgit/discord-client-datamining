@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(931991),
     y = n(151476),
     v = n(405018),
-    j = n(704877),
-    R = n(173660),
+    R = n(704877),
+    j = n(173660),
     O = n(105225),
     L = n(579153),
     M = n(222692),
@@ -50,8 +50,8 @@ var i = n(627968),
     X = n(233993),
     q = n(312006),
     $ = n(446600),
-    Q = n(96566),
-    J = n(302884),
+    J = n(96566),
+    Q = n(302884),
     Z = n(30108),
     ee = n(39938),
     et = n(106044),
@@ -159,7 +159,7 @@ function e_(e) {
         canManageGuildEvent: d
     } = (0, b.nr)(t), c = (0, s.bG)([$.A], () => $.A.getStageInstanceByChannel(t.id), [t.id]), u = (0, s.bG)([C.Ay], () => C.Ay.getGuildScheduledEvent(c?.guild_scheduled_event_id)), {
         suppress: _
-    } = (0, R.A)(t), m = B.default.getId(), [p] = (0, ea.A)(t), g = q.Ay.isModerator(m, t.id), x = (0, z.Ni)(t.id), I = d(u), {
+    } = (0, j.A)(t), m = B.default.getId(), [p] = (0, ea.A)(t), g = q.Ay.isModerator(m, t.id), x = (0, z.Ni)(t.id), I = d(u), {
         parentAnalyticsLocation: N
     } = (0, A.Ay)(), T = l.useRef(null), y = () => (function(e) {
         let {
@@ -257,7 +257,7 @@ function ep(e) {
         iconComponent: l ? r.CIB : r.T7G,
         color: l ? void 0 : "green",
         onClick: () => {
-            (0, f.X)(n, f.O.STAGE_MUSIC, l), (0, J.k)(!l)
+            (0, f.X)(n, f.O.STAGE_MUSIC, l), (0, Q.k)(!l)
         }
     }) : (0, i.jsx)(G.l, {
         isTrayButton: !0,
@@ -266,7 +266,7 @@ function ep(e) {
         iconComponent: o ? r.T7G : r.CIB,
         color: o ? "green" : void 0,
         onClick: () => {
-            (0, f.X)(n, f.O.STAGE_MUSIC, !o), (0, J.C)(!o)
+            (0, f.X)(n, f.O.STAGE_MUSIC, !o), (0, Q.C)(!o)
         }
     })
 }
@@ -279,13 +279,13 @@ let eg = l.memo(function(e) {
         suppress: a,
         selfMute: o,
         mute: d
-    } = (0, R.A)(t), c = (0, z.Ni)(t.id), u = (0, s.bG)([x.default], () => null != x.default.getAwaitingRemoteSessionInfo()), {
+    } = (0, j.A)(t), c = (0, z.Ni)(t.id), u = (0, s.bG)([x.default], () => null != x.default.getAwaitingRemoteSessionInfo()), {
         cameraUnavailable: h,
         enabled: f
-    } = (0, y.A)(), C = (0, j.A)(t), {
+    } = (0, y.A)(), C = (0, R.A)(t), {
         limit: N,
         reachedLimit: T
-    } = (0, v.A)(t), S = (0, s.bG)([W.default], () => W.default.getCurrentUser()), b = (0, s.bG)([V.Ay], () => (0, I.A)(V.Ay)), D = (0, s.bG)([F.A], () => F.A.getVoiceChannelId() === t.id, [t.id]), G = (0, s.bG)([_.A], () => _.A.getStreamParticipants(t.id)[0], [t.id]), P = (0, Q.qT)(t.id), B = N > 0, H = T && !P || null != G && G.user.id !== S?.id, K = (0, E.s)("AudioDeviceMenu", n, {
+    } = (0, v.A)(t), S = (0, s.bG)([W.default], () => W.default.getCurrentUser()), b = (0, s.bG)([V.Ay], () => (0, I.A)(V.Ay)), D = (0, s.bG)([F.A], () => F.A.getVoiceChannelId() === t.id, [t.id]), G = (0, s.bG)([_.A], () => _.A.getStreamParticipants(t.id)[0], [t.id]), P = (0, J.qT)(t.id), B = N > 0, H = T && !P || null != G && G.user.id !== S?.id, K = (0, E.s)("AudioDeviceMenu", n, {
         entrypoint: er.GK.CARET
     }), Y = l.useRef(null), X = l.useRef(null);
     if (null == S) return null;

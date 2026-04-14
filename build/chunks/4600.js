@@ -25,8 +25,8 @@ function A(e) {
     } = e, {
         editStateId: n,
         guildId: A
-    } = (0, a.O)(), [f, j] = o.lZ(n), [N, E] = o.$O(n), T = s.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
-        isFullServerGating: C
+    } = (0, a.O)(), [f, j] = o.lZ(n), [N, E] = o.$O(n), C = s.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
+        isFullServerGating: T
     } = (0, d.A)(A), I = (0, r.gN)();
     return (0, i.jsx)(c.A, {
         title: p.intl.string(p.t.YNw2Sm),
@@ -40,7 +40,7 @@ function A(e) {
                 children: [(0, i.jsx)(u.A, {
                     channelBenefits: f,
                     intangibleBenefits: N,
-                    subscriptionListings: T,
+                    subscriptionListings: C,
                     onImport: function(e, t) {
                         j(t => t.concat(e)), E(e => e.concat(t))
                     }
@@ -67,7 +67,7 @@ function A(e) {
                 description: p.intl.string(p.t["5a4AxV"]),
                 disabled: I,
                 children: e => (0, i.jsxs)(i.Fragment, {
-                    children: [C && (0, i.jsxs)(i.Fragment, {
+                    children: [T && (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(m.A, {
                             "aria-labelledby": e.labelId,
                             disabled: I

@@ -1,6 +1,6 @@
 /** chunk id: 804980 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => w,
+    Ay: () => U,
     LN: () => k
 });
 var i = n(627968),
@@ -64,7 +64,7 @@ function k(e) {
     })
 }
 
-function U(e) {
+function w(e) {
     let {
         participants: t,
         application: n,
@@ -133,7 +133,7 @@ function U(e) {
     })
 }
 
-function w(e) {
+function U(e) {
     let {
         participant: t,
         width: n,
@@ -170,7 +170,7 @@ function w(e) {
                 className: D.j0,
                 alt: m.name,
                 src: g
-            }) : null, b && null != m && (0, i.jsx)(U, {
+            }) : null, b && null != m && (0, i.jsx)(w, {
                 width: n,
                 channel: o,
                 participants: t.participants,

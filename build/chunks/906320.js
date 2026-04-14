@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(456412),
     C = n(587895),
     T = n(235986),
-    S = n(596719),
-    N = n(769015),
+    N = n(596719),
+    S = n(769015),
     x = n(290987),
     v = n(544028),
     b = n(189081),
@@ -475,10 +475,10 @@ let K = () => (0, i.jsx)(V, {
         cellClassName: U.UQ,
         render: e => (0, i.jsxs)(T.A, {
             align: T.A.Align.CENTER,
-            children: [(0, i.jsx)(N.A, {
+            children: [(0, i.jsx)(S.A, {
                 game: e.application,
                 className: U.__invalid_gameIcon,
-                size: N.M.SMALL
+                size: S.M.SMALL
             }), (0, i.jsx)("div", {
                 className: U.TF,
                 children: e.application.name
@@ -572,7 +572,7 @@ class X extends l.PureComponent {
                     }).hex(),
                     animate: l
                 })]
-            }), (0, i.jsx)(S.A, {
+            }), (0, i.jsx)(N.A, {
                 hasHeader: !1,
                 columns: Q,
                 data: e,

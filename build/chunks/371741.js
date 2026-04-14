@@ -38,8 +38,8 @@ var i = n(627968),
     D = n(866897),
     P = n(754459),
     k = n(538355),
-    U = n(522871),
-    w = n(699352),
+    w = n(522871),
+    U = n(699352),
     G = n(426153),
     F = n(444529),
     H = n(241874),
@@ -125,7 +125,7 @@ function X(e) {
     } = (0, c.rm)(e.id ?? ""), {
         isFocused: y,
         handleFocus: R,
-        handleBlur: U
+        handleBlur: w
     } = (0, O.G8)(T), {
         popouts: G,
         selected: F,
@@ -179,7 +179,7 @@ function X(e) {
             zalgo: !0,
             onKeyDown: ed,
             onFocus: R,
-            onBlur: U,
+            onBlur: w,
             childrenRepliedMessage: n.type === Y.lAJ.REPLY && (0, W.A)({
                 ...e,
                 setPopout: V,
@@ -198,7 +198,7 @@ function X(e) {
                 repliedMessage: X,
                 roleIcon: ep
             }),
-            childrenAccessories: (0, w.A)({
+            childrenAccessories: (0, U.A)({
                 channelMessageProps: e,
                 hasSpoilerEmbeds: eo,
                 hasBailedAst: ec,
@@ -299,10 +299,10 @@ let Q = l.memo(function(e) {
         eD = (0, D.A)(E, $, eT),
         eP = (0, j.Ay)(r),
         ek = (0, d.bG)([_.A], () => _.A.getPendingReply($)),
-        eU = (t = l.useRef(Q), l.useEffect(() => {
+        ew = (t = l.useRef(Q), l.useEffect(() => {
             t.current = Q ?? t.current
         }), Q ?? t.current),
-        ew = (0, g.$7)({
+        eU = (0, g.$7)({
             guildId: y.guild_id,
             roleId: eP.iconRoleId
         }),
@@ -310,7 +310,7 @@ let Q = l.memo(function(e) {
         eF = (0, L.fF)(r, ee),
         eH = (0, L.ZD)(r),
         eB = (0, d.bG)([A.A], () => A.A.getMessage(E), [E]),
-        eV = (0, U.A)({
+        eV = (0, w.A)({
             message: r,
             channel: y
         }),
@@ -376,9 +376,9 @@ let Q = l.memo(function(e) {
                         replyReference: en,
                         author: eP,
                         repliedMessage: er,
-                        roleIcon: ew
+                        roleIcon: eU
                     }),
-                    childrenAccessories: (0, w.A)({
+                    childrenAccessories: (0, U.A)({
                         channelMessageProps: e,
                         hasSpoilerEmbeds: eL,
                         hasBailedAst: eO,
@@ -408,8 +408,8 @@ let Q = l.memo(function(e) {
                 })
             })
         });
-    return null != eU ? (0, i.jsx)(R.A, {
-        flashKey: eU,
+    return null != ew ? (0, i.jsx)(R.A, {
+        flashKey: ew,
         className: s()({
             [q.bB]: !0,
             [q._A]: !Z && r.id === ee

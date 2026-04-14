@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(313961),
     C = n(626584),
     T = n(181079),
-    S = n(668267),
-    N = n(379587),
+    N = n(668267),
+    S = n(379587),
     x = n(5180),
     v = n(953384),
     b = n(973522),
@@ -382,12 +382,12 @@ function eA() {
                 if ((0, h.zV)(ea.HAw.GUILD_VIEWED, i), (0, _.k)(ea.HAw.GUILD_VIEWED_CLICKSTREAM, {
                         guild_id: o
                     }), (0, x.ai)(o)) {
-                    let e = N.o.getConfig({
+                    let e = S.o.getConfig({
                             location: "ChatAutoAnalytics"
                         }).enabled,
                         t = el.Ay.isPremiumExactly(Z.default.getCurrentUser(), eo.PremiumTypes.TIER_2),
-                        n = (0, S.Kg)();
-                    (0, S.U5)(n, T.A.getFavoritesCount(), e, t)
+                        n = (0, N.Kg)();
+                    (0, N.U5)(n, T.A.getFavoritesCount(), e, t)
                 }
             }
         }, [n, o, a]);

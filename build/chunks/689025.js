@@ -1,6 +1,6 @@
 /** chunk id: 689025 params = (module,exports,require) **/
 n.d(t, {
-    A: () => Q
+    A: () => J
 });
 var i = n(627968),
     l = n(64700),
@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(446600),
     y = n(96566),
     v = n(175452),
-    j = n(924985),
-    R = n(734057),
+    R = n(924985),
+    j = n(734057),
     O = n(71393),
     L = n(834942),
     M = n(576705),
@@ -263,7 +263,7 @@ class q extends B.Ay {
 }
 let $ = (0, A.a)((0, _.F)(q));
 
-function Q(e) {
+function J(e) {
     let {
         guild: t,
         channel: n,
@@ -274,8 +274,8 @@ function Q(e) {
     } = e, d = (0, r.cf)([D.Ay], () => ({
         unread: D.Ay.hasUnread(n.id),
         mentionCount: D.Ay.getMentionCount(n.id)
-    })), c = (0, r.bG)([G.Ay], () => G.Ay.resolveUnreadSetting(n)), u = (0, r.cf)([R.A, L.A, M.A], () => {
-        let e = R.A.getChannel(n.parent_id),
+    })), c = (0, r.bG)([G.Ay], () => G.Ay.resolveUnreadSetting(n)), u = (0, r.cf)([j.A, L.A, M.A], () => {
+        let e = j.A.getChannel(n.parent_id),
             i = L.A.getCheck(n.guild_id);
         return {
             canManageChannel: null != t && M.A.can(W.xBc.MANAGE_CHANNELS, n),
@@ -285,7 +285,7 @@ function Q(e) {
             bypassLimit: M.A.can(W.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !i.canChat
         }
-    }), h = (0, r.bG)([j.A], () => j.A.isCollapsed(n.parent_id)), A = (0, v.Ay)(n.id), _ = (0, r.bG)([b.A], () => b.A.getStageInstanceByChannel(n.id), [n.id]), m = (0, T.zy)(n.id, S.ip.AUDIENCE), {
+    }), h = (0, r.bG)([R.A], () => R.A.isCollapsed(n.parent_id)), A = (0, v.Ay)(n.id), _ = (0, r.bG)([b.A], () => b.A.getStageInstanceByChannel(n.id), [n.id]), m = (0, T.zy)(n.id, S.ip.AUDIENCE), {
         isSubscriptionGated: p,
         needSubscriptionToAccess: g
     } = (0, E.A)(n.id), f = (0, r.bG)([G.Ay], () => G.Ay.isFavorite(t.id, n.id)), x = (0, y.xn)(n.id), I = (0, V.A)({

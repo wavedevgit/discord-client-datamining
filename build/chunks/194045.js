@@ -23,8 +23,8 @@ var l = n(397927),
     f = n(904054),
     C = n(857179),
     T = n(652215),
-    S = n(731854);
-let N = new a.A("SoundboardManager");
+    N = n(731854);
+let S = new a.A("SoundboardManager");
 class x extends _.A {
     playingSoundsWeb = new Map;
     _initialize() {
@@ -34,7 +34,7 @@ class x extends _.A {
         super._terminate(), __OVERLAY__ || (r.h.unsubscribe("OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST", this._handleOverlaySoundboardSoundsFetchRequest), r.h.unsubscribe("RTC_CONNECTION_STATE", this._handleRTCConnectionState))
     }
     _stopAndClearSounds = () => {
-        u.Ay.supports(S.O5.SAMPLE_PLAYBACK) && u.Ay.getMediaEngine().eachConnection(e => {
+        u.Ay.supports(N.O5.SAMPLE_PLAYBACK) && u.Ay.getMediaEngine().eachConnection(e => {
             e.stopAllSamplesLocalPlayback()
         }), this.playingSoundsWeb.forEach(e => {
             e.pause(), e.src = ""
@@ -54,9 +54,9 @@ class x extends _.A {
                     soundVolume: (0, f.A)(n),
                     reportSoundStartedPlaying: () => (0, m.dZ)(t, i)
                 };
-                u.Ay.supports(S.O5.SAMPLE_PLAYBACK) ? await (0, C.o)(l) : await (0, C.G)(l, e.playingSoundsWeb)
+                u.Ay.supports(N.O5.SAMPLE_PLAYBACK) ? await (0, C.o)(l) : await (0, C.G)(l, e.playingSoundsWeb)
             } catch (e) {
-                N.warn(`Error playing soundboard sound: ${e.message}`)
+                S.warn(`Error playing soundboard sound: ${e.message}`)
             } finally {
                 (0, m.g0)(t, i)
             }

@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(536194),
     C = n(612340),
     T = n(860768),
-    S = n(90166),
-    N = n(940447),
+    N = n(90166),
+    S = n(940447),
     x = n(665037),
     v = n(946960),
     b = n(49999);
@@ -46,14 +46,14 @@ function R(e) {
         }, [n])),
         [I, f] = (0, d.ww)(E, _.id, b.m.CHANNEL_NOTICES, !0),
         C = null != I,
-        S = (0, r.yK)(v.cJ, () => C ? [] : v.cA.filter(e => {
+        N = (0, r.yK)(v.cJ, () => C ? [] : v.cA.filter(e => {
             let {
                 dismissibleContentType: t,
                 store: n
             } = e;
             return !0 === n?.channelNoticePredicate(_, g) && !y.has(t)
         }).map(e => e.dismissibleContentType), [_, g, C]),
-        [x, R] = (0, d.kn)(S, b.m.CHANNEL_NOTICES),
+        [x, R] = (0, d.kn)(N, b.m.CHANNEL_NOTICES),
         P = I ?? x,
         D = null != I ? f : R,
         j = l.useCallback(() => {
@@ -78,7 +78,7 @@ function R(e) {
                         markAsDismissed: j
                     });
                 case a.M.CHANNEL_NOTICE_QUICKSWITCHER:
-                    return (0, i.jsx)(N.A, {
+                    return (0, i.jsx)(S.A, {
                         guild: _,
                         markAsDismissed: j
                     });
@@ -116,7 +116,7 @@ let P = e => {
                 guild: t
             });
         case x.G.MAX_MEMBER_COUNT:
-            return (0, i.jsx)(S.A, {
+            return (0, i.jsx)(N.A, {
                 guild: t
             });
         case x.G.GUILD_LIVE_CHANNEL:

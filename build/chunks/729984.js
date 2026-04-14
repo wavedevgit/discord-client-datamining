@@ -24,8 +24,8 @@ var i = n(627968),
     j = n(418448),
     N = n(863694),
     E = n(107795),
-    T = n(655943),
-    C = n(82566),
+    C = n(655943),
+    T = n(82566),
     I = n(259866),
     b = n(950358),
     v = n(561108),
@@ -93,7 +93,7 @@ function G(e) {
 function L(e) {
     let {
         guild: t
-    } = e, r = (0, l.bG)([u.A], () => u.A.getEnabled(t.id)), a = (0, l.bG)([h.A], () => h.A.hasFetched(t.id)), d = (0, C.A)(t), c = (0, l.bG)([N.A], () => N.A.editedDefaultChannelIds), m = d.filter(e => !c.has(e.id)), [g, _] = s.useState(!1);
+    } = e, r = (0, l.bG)([u.A], () => u.A.getEnabled(t.id)), a = (0, l.bG)([h.A], () => h.A.hasFetched(t.id)), d = (0, T.A)(t), c = (0, l.bG)([N.A], () => N.A.editedDefaultChannelIds), m = d.filter(e => !c.has(e.id)), [g, _] = s.useState(!1);
     s.useEffect(() => {
         a || r || (0, x.A)(t.id)
     }, [t.id, a, r]);
@@ -152,7 +152,7 @@ function L(e) {
 function D(e) {
     let {
         saveOnClose: t = !1
-    } = e, n = (0, l.bG)([f.A], () => f.A.getGuild()), r = (0, l.bG)([u.A], () => u.A.isLoading()), a = (0, l.bG)([p.Ay], () => p.Ay.getChannels(n?.id)), d = (0, l.bG)([_.A], () => _.A.getCategories(n?.id)), c = (0, l.bG)([T.A], () => T.A.advancedMode), m = s.useRef(null), [g, x] = s.useState(!1), h = s.useRef(n);
+    } = e, n = (0, l.bG)([f.A], () => f.A.getGuild()), r = (0, l.bG)([u.A], () => u.A.isLoading()), a = (0, l.bG)([p.Ay], () => p.Ay.getChannels(n?.id)), d = (0, l.bG)([_.A], () => _.A.getCategories(n?.id)), c = (0, l.bG)([C.A], () => C.A.advancedMode), m = s.useRef(null), [g, x] = s.useState(!1), h = s.useRef(n);
     return (s.useEffect(() => {
         h.current = n
     }), s.useEffect(() => {
@@ -238,7 +238,7 @@ function D(e) {
 function M() {
     let e = (0, l.bG)([f.A], () => f.A.getProps().guild),
         t = (0, l.bG)([N.A], () => N.A.submitting),
-        n = (0, l.bG)([T.A], () => T.A.advancedMode);
+        n = (0, l.bG)([C.A], () => C.A.advancedMode);
     return null == e ? null : (0, i.jsx)(r.A, {
         onSave: () => {
             (0, j.jr)(e).then(() => {

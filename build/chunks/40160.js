@@ -29,16 +29,16 @@ function A(e) {
         j = (0, l.bG)([m.default], () => m.default.getCurrentUser()),
         N = (0, c.bM)(n, j),
         E = j?.mfaEnabled,
-        T = A === h.EkJ.ELEVATED,
-        C = N && E,
+        C = A === h.EkJ.ELEVATED,
+        T = N && E,
         I = (0, s.throttle)(async e => {
-            C && await g.A.updateMFALevel({
+            T && await g.A.updateMFALevel({
                 guildId: n.id,
                 level: e ? h.EkJ.ELEVATED : h.EkJ.NONE
             })
         }, 1e3);
     if (!f) return null;
-    C || (t = N ? _.intl.format(_.t.nFwNyR, {
+    T || (t = N ? _.intl.format(_.t.nFwNyR, {
         settingsHook: () => (0, d.openUserSettings)(o.X.ACCOUNT_PANEL)
     }) : _.intl.string(_.t["9Ghu40"]));
     let b = n.features.has(h.GuildFeatures.DISCOVERABLE);
@@ -55,16 +55,16 @@ function A(e) {
                 color: "text-default",
                 children: [_.intl.string(_.t["a/93J6"]), " ", t]
             })]
-        }), !C || T && b ? (0, i.jsx)(r.m, {
+        }), !T || C && b ? (0, i.jsx)(r.m, {
             text: b ? _.intl.string(_.t["KG1V/E"]) : N ? _.intl.string(_.t.NmsheT) : _.intl.string(_.t.LieBta),
             children: (0, i.jsx)(x.A, {
-                checked: T,
+                checked: C,
                 disabled: !0,
                 onChange: I,
                 className: p.R0
             })
         }) : (0, i.jsx)(x.A, {
-            checked: T,
+            checked: C,
             onChange: I,
             className: p.R0
         })]

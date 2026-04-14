@@ -71,7 +71,7 @@ function I(e) {
             N(!1), b(e)
         }
     }
-    let U = (0, u.ke)(n.type) ? r.I$d : r.trU;
+    let w = (0, u.ke)(n.type) ? r.I$d : r.trU;
     return (0, i.jsx)(p.A.Provider, {
         listRef: j,
         query: E,
@@ -90,7 +90,7 @@ function I(e) {
                     className: x.HA,
                     variant: "text-lg/normal",
                     color: "text-default",
-                    children: [(0, i.jsx)(U, {
+                    children: [(0, i.jsx)(w, {
                         className: x.p,
                         size: "sm",
                         color: "currentColor"

@@ -1,6 +1,6 @@
 /** chunk id: 105220 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => N
 });
 var i = n(627968),
     l = n(64700),
@@ -22,7 +22,7 @@ var i = n(627968),
     f = n(507060),
     C = n(652215),
     T = n(576211);
-let S = l.memo(function() {
+let N = l.memo(function() {
     let e = (0, d.A)(),
         t = l.useRef(null),
         n = l.useCallback(e => {

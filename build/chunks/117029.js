@@ -49,8 +49,8 @@ let C = l.memo(function(e) {
         wrapperRef: D,
         panOffset: P,
         setPanOffset: k,
-        clampPanOffset: U
-    } = l.useContext(A.e9), [w, G] = l.useState(!1), F = l.useRef(null), H = T > v, B = l.useCallback(() => {
+        clampPanOffset: w
+    } = l.useContext(A.e9), [U, G] = l.useState(!1), F = l.useRef(null), H = T > v, B = l.useCallback(() => {
         x("interact")
     }, [x]), V = l.useCallback(() => {
         G(!1), S("interact")
@@ -67,23 +67,23 @@ let C = l.memo(function(e) {
             i = D.current.clientHeight,
             l = e.x - t.left,
             a = e.y - t.top;
-        k(U({
+        k(w({
             x: (.5 - l / t.width) * n * T,
             y: (.5 - a / t.height) * i * T
         }))
-    }, [U, T, D, k]), z = l.useCallback(e => {
+    }, [w, T, D, k]), z = l.useCallback(e => {
         E(e) && (e.preventDefault(), e.stopPropagation(), G(!0), K({
             x: e.clientX,
             y: e.clientY
         }))
     }, [K]), Y = l.useCallback(e => {
-        w && (e.preventDefault(), e.stopPropagation(), K({
+        U && (e.preventDefault(), e.stopPropagation(), K({
             x: e.clientX,
             y: e.clientY
         }))
-    }, [w, K]), J = l.useCallback(e => {
-        !w || E(e) || (e.preventDefault(), e.stopPropagation(), G(!1))
-    }, [w]), q = m.Ay.getVideoComponent(), $ = l.useMemo(() => {
+    }, [U, K]), J = l.useCallback(e => {
+        !U || E(e) || (e.preventDefault(), e.stopPropagation(), G(!1))
+    }, [U]), q = m.Ay.getVideoComponent(), $ = l.useMemo(() => {
         let e = null != D.current ? D.current.clientWidth : 1,
             t = null != D.current ? D.current.clientHeight : 1,
             n = 1 / T,
@@ -95,9 +95,9 @@ let C = l.memo(function(e) {
             "--custom-zoom-indicator-top": `${100*(0,r.clamp)(a-i/2,0,1-i)}%`,
             "--custom-zoom-indicator-width": `${100*n}%`,
             "--custom-zoom-indicator-height": `${100*i}%`,
-            "--custom-zoom-indicator-transition": y || w || b || j ? "none" : "top 0.1s ease-out, left 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out"
+            "--custom-zoom-indicator-transition": y || U || b || j ? "none" : "top 0.1s ease-out, left 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out"
         }
-    }, [y, w, b, j, P, T, D]), Z = l.useCallback(e => {
+    }, [y, U, b, j, P, T, D]), Z = l.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), M(T - .25, A.qd, "button")
     }, [M, T]), X = l.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), M(T + .25, A.qd, "button")

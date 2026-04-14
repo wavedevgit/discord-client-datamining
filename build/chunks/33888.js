@@ -121,7 +121,7 @@ function E(e) {
             brandColorPrimary: e,
             customBanner: null
         })
-    }, [x]), T = s.useCallback(e => (!g || null == t.customBanner) && e === t.brandColorPrimary, [t, g]);
+    }, [x]), C = s.useCallback(e => (!g || null == t.customBanner) && e === t.brandColorPrimary, [t, g]);
     return (0, i.jsx)(d.D0$, {
         label: A.intl.string(A.t.BSVog8),
         children: (0, i.jsxs)("div", {
@@ -152,7 +152,7 @@ function E(e) {
                         }),
                         children: (0, i.jsx)("div", {
                             className: r()({
-                                [f.z2]: T(n)
+                                [f.z2]: C(n)
                             })
                         })
                     })

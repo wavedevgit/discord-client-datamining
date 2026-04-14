@@ -93,10 +93,10 @@ let E = ["1402418171662569542"],
                 r.platform = f ? p.yTV.EMBEDDED : p.yTV.DESKTOP;
                 let C = d.A.getApplication(I ?? void 0),
                     T = r.instance ?? !1,
-                    S = r.party?.privacy;
+                    N = r.party?.privacy;
                 delete r.instance, delete r.party?.privacy;
-                let N = (0, o.E)(r, T, f, null != C && (0, c.x)(C) && f, S);
-                N > 0 && (r.flags = N);
+                let S = (0, o.E)(r, T, f, null != C && (0, c.x)(C) && f, N);
+                S > 0 && (r.flags = S);
                 let {
                     assets: x,
                     party: v,
@@ -132,7 +132,7 @@ let E = ["1402418171662569542"],
                         socketId: n.id,
                         pid: i,
                         activity: r,
-                        partyPrivacy: S
+                        partyPrivacy: N
                     });
                     let {
                         secrets: d,

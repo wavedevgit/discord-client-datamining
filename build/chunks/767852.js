@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(290987),
     C = n(742077),
     T = n(268387),
-    S = n(954571),
-    N = n(674378),
+    N = n(954571),
+    S = n(674378),
     x = n(240248),
     v = n(471761),
     b = n(652215),
@@ -138,7 +138,7 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
                         }),
                         libraryApplication: e.libraryApplication
                     })]
-                }), (0, N.XZ)(e.libraryApplication) ? (0, i.jsx)(g.A, {
+                }), (0, S.XZ)(e.libraryApplication) ? (0, i.jsx)(g.A, {
                     analyticsListSort: (r = t.sortKey, s = t.sortDirection, `${P[r]} ${s===b.tSW.ASCENDING?"ASC":"DESC"}`),
                     analyticsListIndex: n,
                     source: b.ThZ.APPLICATION_LIBRARY,
@@ -264,7 +264,7 @@ class w extends l.PureComponent {
             }
             e.num_applications_total++
         }
-        S.default.track(b.HAw.LIBRARY_VIEWED, {
+        N.default.track(b.HAw.LIBRARY_VIEWED, {
             ...e,
             load_id: t.loadId
         })
@@ -387,7 +387,7 @@ class w extends l.PureComponent {
 }
 
 function U(e) {
-    let t = l.useContext(S.AnalyticsContext),
+    let t = l.useContext(N.AnalyticsContext),
         n = (0, s.zy)(),
         {
             applicationViewItems: r,

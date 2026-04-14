@@ -2,11 +2,11 @@
 n.d(t, {
     Gw: () => ee,
     HW: () => K,
-    K8: () => Q,
+    K8: () => J,
     Mr: () => et,
     Ns: () => Z,
     UB: () => Y,
-    YX: () => J,
+    YX: () => Q,
     bo: () => X,
     jz: () => q,
     lw: () => z,
@@ -38,8 +38,8 @@ var i = n(627968),
     b = n(828162),
     y = n(490557),
     v = n(306113),
-    j = n(220628),
-    R = n(867060),
+    R = n(220628),
+    j = n(867060),
     O = n(800007),
     L = n(568065),
     M = n(652215),
@@ -122,8 +122,8 @@ function z(e) {
         onActivate: o,
         isLoading: c,
         error: u
-    } = (0, j.A)(t, n[0]), h = (0, N.A)(n[0], !0);
-    if ((0, R.A)(u), 0 === n.length) return;
+    } = (0, R.A)(t, n[0]), h = (0, N.A)(n[0], !0);
+    if ((0, j.A)(u), 0 === n.length) return;
     let _ = n.length >= 3 ? k.intl.formatToPlainString(P.default["6Sv+3M"], {
             perk: n[0].title,
             perk2: n[1].title,
@@ -307,7 +307,7 @@ function $(e) {
     })
 }
 
-function Q(e) {
+function J(e) {
     let {
         guildId: t,
         markAsDismissed: n,
@@ -354,7 +354,7 @@ function Q(e) {
     })
 }
 
-function J(e) {
+function Q(e) {
     let {
         guildId: t,
         markAsDismissed: n,

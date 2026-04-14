@@ -1,7 +1,7 @@
 /** chunk id: 822525 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => T
+    A: () => C
 });
 var i = n(627968),
     s = n(64700),
@@ -24,14 +24,14 @@ var i = n(627968),
     N = n(985018),
     E = n(601674);
 
-function T(e) {
+function C(e) {
     let {
         guildId: t,
         initialEditStateId: n,
         allSubscriptionListings: l,
         priceTiers: a,
-        onDeleteEditState: T,
-        groupListingId: C,
+        onDeleteEditState: C,
+        groupListingId: T,
         onBeforeDispatchNewListing: I,
         onAfterDispatchNewListing: b
     } = e, [v, S] = s.useState(n), y = (0, d.bG)([h.A], () => h.A.getSubscriptionListing(v)), R = null == y, [O, G] = s.useState(R), L = y?.subscription_plans[0], D = y?.published ?? !1, M = y?.archived ?? !1, k = !M && !D && void 0 !== y, U = void 0 === y, P = (0, _.gN)(), [w] = A.tx(v), [B] = A.bL(v), [F] = A.I8(v), [H] = A.lK(v, 1024), V = "" !== w ? w : N.intl.string(N.t.QWhe9G), z = "" !== w && null != H && "" !== F && null != B && !P, W = A.rf(v), {
@@ -92,7 +92,7 @@ function T(e) {
                 children: [(0, i.jsx)(u.QWc, {
                     variant: "secondary",
                     onClick: () => {
-                        A.Ts(v), R ? T?.() : G(!1)
+                        A.Ts(v), R ? C?.() : G(!1)
                     },
                     text: N.intl.string(N.t["ETE/oC"])
                 }), (0, i.jsx)(u.Button, {
@@ -100,7 +100,7 @@ function T(e) {
                     onClick: () => X({
                         guildId: t,
                         editStateId: v,
-                        groupListingId: C,
+                        groupListingId: T,
                         onBeforeDispatchNewListing: I,
                         onAfterDispatchNewListing: e => {
                             S(e.id), b?.(e)
@@ -122,20 +122,20 @@ function T(e) {
         }), O && (0, i.jsx)(p.A, {
             editStateId: v,
             guildId: t,
-            groupListingId: C,
+            groupListingId: T,
             children: (0, i.jsx)(j.A, {
                 allSubscriptionListings: l,
                 priceTiers: a,
                 loading: Q,
                 error: Y ?? Z,
                 handlePublishTier: () => {
-                    o()(null != C, "group listing doesnt exist"), o()(null != y, "subscription listing doesnt exist"), q({
+                    o()(null != T, "group listing doesnt exist"), o()(null != y, "subscription listing doesnt exist"), q({
                         guildId: t,
-                        groupListingId: C,
+                        groupListingId: T,
                         listingId: y.id
                     })
                 },
-                onDeleteEditState: T
+                onDeleteEditState: C
             })
         })]
     })

@@ -21,8 +21,8 @@ let m = new Set,
     f = null,
     C = null,
     T = null,
-    S = null,
-    N = o.w.get(_.t0) || !1;
+    N = null,
+    S = o.w.get(_.t0) || !1;
 
 function x(e) {
     let t = e.getGuildId(),
@@ -35,7 +35,7 @@ function x(e) {
 function v() {
     if (f = u.A.getChannel(), C = u.A.getCategory(), null == f) return !1;
     let e = f.getGuildId();
-    I = E = x(f), null == E[T] && (T = e), l = null != C, i = c.r(f, C), S = null, p = !1, g = h.XlH.CLOSED, m.clear()
+    I = E = x(f), null == E[T] && (T = e), l = null != C, i = c.r(f, C), N = null, p = !1, g = h.XlH.CLOSED, m.clear()
 }
 class b extends s.Ay.Store {
     static displayName = "ChannelSettingsPermissionsStore";
@@ -76,7 +76,7 @@ class b extends s.Ay.Store {
         return C
     }
     get advancedMode() {
-        return N
+        return S
     }
 }
 let y = new b(d.h, {
@@ -111,14 +111,14 @@ let y = new b(d.h, {
         if (null != E && null != E[t]) T = t;
         else {
             if (null == f) return !1;
-            S = t
+            N = t
         }
     },
     CHANNEL_SETTINGS_INIT: function() {
         u.A.getSection() === h.p_A.PERMISSIONS && v()
     },
     CHANNEL_SETTINGS_CLOSE: function() {
-        g = h.XlH.CLOSED, E = null, I = null, f = null, C = null, p = !1, m.clear(), T = null, S = null
+        g = h.XlH.CLOSED, E = null, I = null, f = null, C = null, p = !1, m.clear(), T = null, N = null
     },
     CHANNEL_UPDATES: function(e) {
         let {
@@ -138,7 +138,7 @@ let y = new b(d.h, {
             }), null == n[t] && null == f.permissionOverwrites[t] && (n[t] = c.xT(t)), null == (E = {
                 ...f.permissionOverwrites,
                 ...n
-            })[T] ? T = t : null != S && null != E[S] && (T = S, S = null), i = c.r(f, C), !0
+            })[T] ? T = t : null != N && null != E[N] && (T = N, N = null), i = c.r(f, C), !0
         }(e.id) && (n = !0);
         return n
     },
@@ -155,6 +155,6 @@ let y = new b(d.h, {
         let {
             advancedMode: t
         } = e;
-        N = t, o.w.set(_.t0, t)
+        S = t, o.w.set(_.t0, t)
     }
 })

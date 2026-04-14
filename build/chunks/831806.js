@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(71393),
     N = n(287809),
     E = n(975571),
-    T = n(250627),
-    C = n(808138),
+    C = n(250627),
+    T = n(808138),
     I = n(271653),
     b = n(371701),
     v = n(652215),
@@ -38,7 +38,7 @@ function O(e) {
         hasValidApplication: n
     } = e, {
         listingsLoaded: O
-    } = (0, T.bb)(t), G = (0, r.bG)([j.A], () => j.A.getGuild(t)), L = (0, r.bG)([N.default], () => N.default.getCurrentUser()), D = null != G && (0, A.bM)(G, L), {
+    } = (0, C.bb)(t), G = (0, r.bG)([j.A], () => j.A.getGuild(t)), L = (0, r.bG)([N.default], () => N.default.getCurrentUser()), D = null != G && (0, A.bM)(G, L), {
         loading: M
     } = (0, d.G)(t), [k, U] = s.useState(n ? "manage_listings" : "payment");
     (0, m.T)(G);
@@ -101,7 +101,7 @@ function O(e) {
                 })
             }) : null]
         }),
-        F = (0, l.YW)(k).with("basic_info", () => (0, i.jsx)(C.A, {
+        F = (0, l.YW)(k).with("basic_info", () => (0, i.jsx)(T.A, {
             guildId: t
         })).with("manage_listings", () => (0, i.jsx)(I.A, {
             guildId: t

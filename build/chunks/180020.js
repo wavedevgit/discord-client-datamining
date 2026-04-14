@@ -1,78 +1,71 @@
 /** chunk id: 180020 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
-    l = n(554146),
-    r = n(397927),
-    a = n(688810),
-    o = n(932001),
-    d = n(259065),
-    c = n(84540),
-    u = n(954571),
-    m = n(927578),
-    g = n(919395),
-    _ = n(128450),
-    x = n(652215),
-    h = n(49999),
-    A = n(985018),
-    p = n(486844),
-    T = n(698551);
+    l = n(397927),
+    r = n(688810),
+    a = n(259065),
+    o = n(84540),
+    d = n(954571),
+    c = n(927578),
+    u = n(919395),
+    m = n(128450),
+    g = n(652215),
+    _ = n(985018),
+    x = n(486844),
+    h = n(698551);
 
-function f(e) {
+function A(e) {
     let {
         user: t,
         guildId: n,
-        className: f
-    } = e, S = m.Ay.canUsePremiumProfileCustomization(t), {
-        analyticsLocations: E
-    } = (0, a.Ay)(), {
-        userDisplayNameStyles: b,
-        guildDisplayNameStyles: C,
-        pendingDisplayNameStyles: v,
-        pendingErrors: N
-    } = (0, g.B0)(t, n), [I, j] = (0, o.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), y = I === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, O = (0, s.useCallback)(() => {
-        j(h.i.TAKE_ACTION), u.default.track(x.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.L)({
-            analyticsLocations: E,
+        className: A
+    } = e, p = c.Ay.canUsePremiumProfileCustomization(t), {
+        analyticsLocations: T
+    } = (0, r.Ay)(), {
+        userDisplayNameStyles: f,
+        guildDisplayNameStyles: S,
+        pendingDisplayNameStyles: E,
+        pendingErrors: b
+    } = (0, u.B0)(t, n), C = (0, s.useCallback)(() => {
+        d.default.track(g.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, a.L)({
+            analyticsLocations: T,
             guildId: n
         })
-    }, [E, j, n]), R = (0, s.useCallback)(() => {
-        (0, c.p)({
+    }, [T, n]), v = (0, s.useCallback)(() => {
+        (0, o.p)({
             displayNameStyles: null
-        }), u.default.track(x.HAw.DISPLAY_NAME_STYLES_REMOVED)
-    }, []), L = (0, s.useCallback)(() => {
-        (0, c.p)({
+        }), d.default.track(g.HAw.DISPLAY_NAME_STYLES_REMOVED)
+    }, []), N = (0, s.useCallback)(() => {
+        (0, o.p)({
             guildId: n,
             displayNameStyles: null
         })
-    }, [n]), P = void 0 !== v || (null != n ? null != C : null != b);
-    return (0, i.jsx)(_.A, {
-        title: A.intl.string(p.default["86GtGH"]),
-        titleIcon: y ? (0, i.jsx)(r.LpS, {
-            text: A.intl.string(A.t.y2b7CA),
-            className: T.A
-        }) : void 0,
-        className: f,
-        showPremiumIcon: S,
-        errors: N,
+    }, [n]), I = void 0 !== E || (null != n ? null != S : null != f);
+    return (0, i.jsx)(m.A, {
+        title: _.intl.string(x.default["86GtGH"]),
+        className: A,
+        showPremiumIcon: p,
+        errors: b,
         children: (0, i.jsxs)("div", {
-            className: T.N,
-            children: [(0, i.jsx)(r.Button, {
+            className: h.N,
+            children: [(0, i.jsx)(l.Button, {
                 variant: "primary",
                 size: "sm",
-                text: A.intl.string(p.default.vJqrIg),
-                onClick: O
-            }), null == n && P && (0, i.jsx)(r.Button, {
+                text: _.intl.string(x.default.vJqrIg),
+                onClick: C
+            }), null == n && I && (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: A.intl.string(p.default.ymq8WQ),
-                onClick: R
-            }), null != n && null != (void 0 !== v ? v : C) && (0, i.jsx)(r.Button, {
+                text: _.intl.string(x.default.ymq8WQ),
+                onClick: v
+            }), null != n && null != (void 0 !== E ? E : S) && (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: A.intl.string(p.default["j/KRxc"]),
-                onClick: L
+                text: _.intl.string(x.default["j/KRxc"]),
+                onClick: N
             })]
         })
     })

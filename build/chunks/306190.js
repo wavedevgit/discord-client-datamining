@@ -22,8 +22,8 @@ let p = function(e) {
         setQuestId: n,
         quest: p,
         refreshQuest: E
-    } = e, [I, f] = l.useState(!1), [C, T] = l.useState(!1), S = l.useRef(null), N = (0, u.pT)(), x = (0, r.bG)([c.A], () => null != t ? c.A.getFetchQuestPreviewError(t) : null, [t]), v = (0, r.bG)([c.A], () => null != t && c.A.isFetchingQuestPreview(t), [t]), b = l.useMemo(() => {
-        let e = N.map(e => ({
+    } = e, [I, f] = l.useState(!1), [C, T] = l.useState(!1), N = l.useRef(null), S = (0, u.pT)(), x = (0, r.bG)([c.A], () => null != t ? c.A.getFetchQuestPreviewError(t) : null, [t]), v = (0, r.bG)([c.A], () => null != t && c.A.isFetchingQuestPreview(t), [t]), b = l.useMemo(() => {
+        let e = S.map(e => ({
             id: e.id,
             label: `${e.config?.messages?.questName??e.id} (${e.id})`,
             value: e.id
@@ -33,7 +33,7 @@ let p = function(e) {
             label: t,
             value: t
         }), e
-    }, [N, t]), y = l.useCallback(async () => {
+    }, [S, t]), y = l.useCallback(async () => {
         if (null != t) {
             f(!0);
             try {
@@ -122,7 +122,7 @@ let p = function(e) {
                     variant: "secondary",
                     text: m.intl.string(m.t.cKSLr4)
                 }), (0, i.jsx)(a.YNO, {
-                    targetElementRef: S,
+                    targetElementRef: N,
                     shouldShow: C,
                     onRequestClose: () => T(!1),
                     position: "bottom",
@@ -138,7 +138,7 @@ let p = function(e) {
                         })
                     }),
                     children: () => (0, i.jsx)(a.K0, {
-                        buttonRef: S,
+                        buttonRef: N,
                         onClick: () => T(!C),
                         "aria-label": m.intl.string(m.t.rNGQfD),
                         icon: a.TdU,

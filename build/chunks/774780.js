@@ -29,18 +29,18 @@ function E(e) {
         setPreventNavigation: n = () => {}
     } = e, {
         editingRule: E,
-        setEditingRule: T
+        setEditingRule: C
     } = (0, x.U)(), {
-        guild: C,
+        guild: T,
         subsection: I
-    } = (0, l.cf)([a.A], () => a.A.getProps()), b = C?.id ?? t ?? f.dJq, v = null != E, [S] = (0, u.qv)(b), {
+    } = (0, l.cf)([a.A], () => a.A.getProps()), b = T?.id ?? t ?? f.dJq, v = null != E, [S] = (0, u.qv)(b), {
         rulesByTriggerType: y
     } = (0, u.wP)(b), R = {
         [m.yT.MEMBERS]: j.intl.string(j.t.sx4E5v),
         [m.yT.CONTENT]: j.intl.string(j.t.fphZb0)
     }, O = s.useMemo(() => Object.values(y ?? {}).flat().filter(d.Vq), [y]), G = {
         isInEditMode: v,
-        setEditingRule: T
+        setEditingRule: C
     }, L = s.useRef(G);
     s.useEffect(() => {
         L.current = G
@@ -105,8 +105,8 @@ function E(e) {
                     }, e))
                 })]
             }, t)
-        }), null != C && (0, i.jsx)(o.t9, {
-            guild: C,
+        }), null != T && (0, i.jsx)(o.t9, {
+            guild: T,
             withDivider: !1,
             className: N.Vf
         }), (0, i.jsx)(h.A, {

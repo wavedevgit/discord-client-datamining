@@ -1,7 +1,7 @@
 /** chunk id: 635071 params = (module,exports,require) **/
 n.d(t, {
     A: () => O,
-    w: () => R
+    w: () => j
 });
 var i, l = n(627968),
     s = n(64700),
@@ -28,8 +28,8 @@ var i, l = n(627968),
     b = n(109054),
     y = n(560936),
     v = n(743981),
-    j = n(767283),
-    R = ((i = {})[i.SYSTEM_TAG = 0] = "SYSTEM_TAG", i[i.BADGES = 1] = "BADGES", i);
+    R = n(767283),
+    j = ((i = {})[i.SYSTEM_TAG = 0] = "SYSTEM_TAG", i[i.BADGES = 1] = "BADGES", i);
 
 function O(e) {
     let {
@@ -37,7 +37,7 @@ function O(e) {
         message: n,
         channel: i,
         userOverride: a,
-        compact: R = !1,
+        compact: j = !1,
         withMentionPrefix: O = !1,
         showPopout: L = !1,
         hideGuildTag: M = !1,
@@ -56,11 +56,11 @@ function O(e) {
         nick: X,
         colorString: q,
         colorStrings: $,
-        colorRoleName: Q,
-        displayNameStyles: J
+        colorRoleName: J,
+        displayNameStyles: Q
     } = t, Z = (0, d.bG)([A.A], () => A.A.roleStyle), ee = "username" === Z, et = (0, f.a)({
-        displayNameStyles: J
-    }), en = (0, d.bG)([T.A], () => null == t.guildId || null == t.colorRoleId ? null : T.A.getRole(t.guildId, t.colorRoleId)), ei = (0, C.jV)(V ?? K, en), el = (0, b.A)(n), es = s.useContext(c.C), ea = es?.animate || L, er = ei && (0, I.kz)(t), eo = ee && er, ed = i?.isPrivate() && null != J;
+        displayNameStyles: Q
+    }), en = (0, d.bG)([T.A], () => null == t.guildId || null == t.colorRoleId ? null : T.A.getRole(t.guildId, t.colorRoleId)), ei = (0, C.jV)(V ?? K, en), el = (0, b.A)(n), es = s.useContext(c.C), ea = es?.animate || L, er = ei && (0, I.kz)(t), eo = ee && er, ed = i?.isPrivate() && null != Q;
     (0, y.A)({
         shouldSubscribe: ed || eo,
         subscribeToGroupId: H,
@@ -75,9 +75,9 @@ function O(e) {
         includeConvenienceGlow: !0,
         animateGradient: ea
     }), eh = (0, u.CR)(z + X), eA = {
-        className: r()(j.oF, et, {
+        className: r()(R.oF, et, {
             [eu]: eo,
-            [j.IW]: "username" === Z && null != q
+            [R.IW]: "username" === Z && null != q
         }),
         style: (() => {
             if (ee) return eo && null != $ ? {
@@ -91,11 +91,11 @@ function O(e) {
         onContextMenu: P,
         children: ed ? (0, l.jsx)(g.A, {
             userName: eh,
-            displayNameStyles: J,
+            displayNameStyles: Q,
             effectDisplayType: ea ? p.G.ANIMATED : p.G.PLAIN,
             loop: !0,
             shouldUnderlineOnHover: null != G,
-            textClassName: j.Mu
+            textClassName: R.Mu
         }) : eh,
         "data-text": z + X,
         "data-username-has-gradient": !!er || void 0
@@ -103,9 +103,9 @@ function O(e) {
         primaryGuild: t.primaryGuild,
         userId: n.author.id,
         contextGuildId: K,
-        className: j.s4,
-        badgeSize: R ? v.Sl.SIZE_12 : void 0
-    }), [R, t.primaryGuild, K, n.author.id, M]), em = a ?? n.author, ep = null != w && null != L ? (0, l.jsx)(N.A, {
+        className: R.s4,
+        badgeSize: j ? v.Sl.SIZE_12 : void 0
+    }), [j, t.primaryGuild, K, n.author.id, M]), em = a ?? n.author, ep = null != w && null != L ? (0, l.jsx)(N.A, {
         targetElementRef: F,
         user: em,
         guildId: K,
@@ -133,7 +133,7 @@ function O(e) {
                     innerRef: F,
                     ...n,
                     ...eA,
-                    className: r()(eA.className, j.vk, U)
+                    className: r()(eA.className, R.vk, U)
                 }), e_]
             })
         }
@@ -145,14 +145,14 @@ function O(e) {
     }), eg = null != B ? B[0] : null, ef = null != B ? B[1] : null;
     return (0, l.jsxs)(m.f5, {
         value: Y,
-        children: [null != eg && !D && R ? (0, l.jsxs)(l.Fragment, {
+        children: [null != eg && !D && j ? (0, l.jsxs)(l.Fragment, {
             children: [" ", eg, " "]
         }) : null, "dot" === Z ? (0, l.jsx)(h.WYI, {
             color: q,
             colors: er ? $ : null,
-            name: Q,
-            className: j.m4,
+            name: J,
+            className: R.m4,
             hoverOverride: ea
-        }) : null, ep, null != ef ? ef : null, null == eg || D || R ? null : eg]
+        }) : null, ep, null != ef ? ef : null, null == eg || D || j ? null : eg]
     })
 }

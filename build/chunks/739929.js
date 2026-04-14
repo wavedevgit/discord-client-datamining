@@ -32,8 +32,8 @@ function _(e) {
             submittedRequest: E
         } = (0, c.A)(e?.id),
         {
-            loading: T,
-            error: C,
+            loading: C,
+            error: T,
             refresh: I,
             eligibility: b
         } = (0, u.A)(e?.id),
@@ -70,8 +70,8 @@ function _(e) {
         isGuildOwner: A,
         createEnableRequest: N,
         resubmittedRequest: E,
-        eligibilityLoading: T,
-        eligibilityError: C,
+        eligibilityLoading: C,
+        eligibilityError: T,
         refreshEligibility: I,
         eligibility: b,
         eligibleForMonetization: G,

@@ -118,7 +118,7 @@ function N(e) {
                         [p.bY]: l
                     }),
                     children: o.title
-                }), c ? (0, i.jsx)(T, {
+                }), c ? (0, i.jsx)(C, {
                     transform: e?.unlockedTranslateY.to(e => `translate3d(0, ${e}px, 0)`),
                     headerButton: u,
                     subscriptionsRequired: m,
@@ -144,7 +144,7 @@ function E(e) {
         withCardBody: A = !0,
         guildId: f,
         showHeaderLockStatus: j = !0
-    } = e, E = (0, o.bG)([g.A], () => g.A.getGuild(f)?.premiumTier ?? h.TVA.NONE), T = h.M2T[l.tier], C = a && l.tier <= E, I = l.tier !== h.TVA.NONE && l.tier !== h.TVA.TIER_1;
+    } = e, E = (0, o.bG)([g.A], () => g.A.getGuild(f)?.premiumTier ?? h.TVA.NONE), C = h.M2T[l.tier], T = a && l.tier <= E, I = l.tier !== h.TVA.NONE && l.tier !== h.TVA.TIER_1;
     return (0, i.jsxs)("div", {
         className: r()(p.Zm, {
             [p.Ab]: c
@@ -160,8 +160,8 @@ function E(e) {
             withCardBody: A,
             guildId: f,
             hasBottomMargin: c,
-            subscriptionsRequired: T,
-            hasAnimatedUnlocked: C,
+            subscriptionsRequired: C,
+            hasAnimatedUnlocked: T,
             isAnimatedTo: a
         }), (0, i.jsx)("div", {
             className: r()({
@@ -199,26 +199,26 @@ function E(e) {
                                 })]
                             })]
                         }, e.title?.toString())
-                    })(e, C))
+                    })(e, T))
                 })]
             })
         })]
     }, l.tier)
 }
-let T = e => {
+let C = e => {
         let {
             transform: t,
             hasAnimatedUnlocked: n,
             headerButton: s,
             subscriptionsRequired: l
         } = e;
-        return null !== s ? s : n ? (0, i.jsx)(C, {
+        return null !== s ? s : n ? (0, i.jsx)(T, {
             transform: t
         }) : (0, i.jsx)(I, {
             subscriptionsRequired: l
         })
     },
-    C = e => {
+    T = e => {
         let {
             transform: t
         } = e;

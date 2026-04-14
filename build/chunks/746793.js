@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(437959),
     C = n(828184),
     T = n(723702),
-    S = n(837921),
-    N = n(902811),
+    N = n(837921),
+    S = n(902811),
     x = n(652215),
     v = n(985018),
     b = n(540528);
@@ -145,7 +145,7 @@ class y extends l.PureComponent {
     handleReady = () => {
         this.setState({
             ready: !0
-        }), (0, T.isDesktop)() && (S.Ay.send("UPDATED_QUOTES", ["Hold Tight — Loading Discord"]), S.Ay.send("UPDATE_OPEN_ON_STARTUP"))
+        }), (0, T.isDesktop)() && (N.Ay.send("UPDATED_QUOTES", ["Hold Tight — Loading Discord"]), N.Ay.send("UPDATE_OPEN_ON_STARTUP"))
     };
     setVideoRef = e => {
         this.videoRef = e
@@ -178,7 +178,7 @@ class y extends l.PureComponent {
                 },
                 children: [(0, i.jsxs)("div", {
                     className: b.Qs,
-                    children: [(0, i.jsx)(N.A, {
+                    children: [(0, i.jsx)(S.A, {
                         autoPlay: !0,
                         loop: !e,
                         setRef: this.setVideoRef,

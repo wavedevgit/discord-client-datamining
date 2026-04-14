@@ -28,17 +28,17 @@ function C(e) {
         children: C,
         numOrbs: T
     } = e, {
-        analyticsLocations: S
-    } = (0, A.Ay)(u.A.PREMIUM_MARKETING_NITRO_HOME_ORBS_SECTION), N = l.useCallback(() => {
+        analyticsLocations: N
+    } = (0, A.Ay)(u.A.PREMIUM_MARKETING_NITRO_HOME_ORBS_SECTION), S = l.useCallback(() => {
         n(p.i.TAKE_ACTION), (0, h.A)({
             subscriptionTier: m.pe.TIER_2,
-            analyticsLocations: S,
+            analyticsLocations: N,
             analyticsObject: {
                 object: g.ZSU.BUTTON_CTA,
                 objectType: g.AnalyticsObjectTypes.TIER_2
             }
         })
-    }, [n, S]);
+    }, [n, N]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             children: C
@@ -77,7 +77,7 @@ function C(e) {
                         text: I.intl.string(I.t.pj0XBN),
                         variant: "primary",
                         icon: c.tvc,
-                        onClick: N
+                        onClick: S
                     }]
                 }), (0, i.jsx)(s.F, {})]
             })

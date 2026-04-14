@@ -22,19 +22,19 @@ function h(e) {
         null != t && (u[e] = {
             ...t,
             style: "GENTLE_AMBIENT"
-        }, g.emitChange()), delete d[e]
+        }, _.emitChange()), delete d[e]
     }, 2e3)
 }
 
-function E() {
+function f() {
     for (let e of Object.keys(d)) clearTimeout(d[e]);
     d = {}, u = {}
 }
 
-function _() {
-    return E(), !0
+function g() {
+    return f(), !0
 }
-class f extends l.Ay.Store {
+class E extends l.Ay.Store {
     static displayName = "VoiceChannelAnimationStateStore";
     initialize() {
         this.waitFor(s.A, r.A)
@@ -46,7 +46,7 @@ class f extends l.Ay.Store {
         return u[e]?.userCount ?? 0
     }
 }
-let g = new f(a.h, {
+let _ = new E(a.h, {
         VOICE_STATE_UPDATES: function(e) {
             let {
                 voiceStates: t
@@ -77,7 +77,7 @@ let g = new f(a.h, {
                 guildId: t
             } = e;
             if (t === c || null == t) return !1;
-            c = t, E();
+            c = t, f();
             let n = s.A.getVoiceStates(t),
                 i = {};
             for (let e of Object.values(n)) null != e.channelId && (i[e.channelId] = (i[e.channelId] ?? 0) + 1);
@@ -87,7 +87,7 @@ let g = new f(a.h, {
             });
             return !0
         },
-        CONNECTION_OPEN: _,
-        LOGOUT: _
+        CONNECTION_OPEN: g,
+        LOGOUT: g
     }),
-    m = g
+    m = _

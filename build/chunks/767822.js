@@ -24,7 +24,7 @@ function x(e) {
         createNewEditingRule: f
     } = (0, c.U)(), {
         getDefaultRuleName: j
-    } = d.i$[n], N = !(0, o.wC)(A) && A?.triggerType === n, [E, T] = s.useState(N ? A : h), C = (0, a.zhh)({
+    } = d.i$[n], N = !(0, o.wC)(A) && A?.triggerType === n, [E, C] = s.useState(N ? A : h), T = (0, a.zhh)({
         opacity: +!N,
         pointerEvents: N ? "none" : "all",
         config: {
@@ -39,10 +39,10 @@ function x(e) {
             clamp: !0
         },
         onStart: () => {
-            T(N ? A : h)
+            C(N ? A : h)
         },
         onRest: () => {
-            T(N ? A : h), p(N)
+            C(N ? A : h), p(N)
         }
     });
     return null == A || N ? (0, i.jsxs)("div", {
@@ -59,7 +59,7 @@ function x(e) {
             })
         }), (0, i.jsx)(l.animated.div, {
             className: g.animatedNewRuleContainer,
-            style: C,
+            style: T,
             children: (0, i.jsxs)(a.DUT, {
                 className: g.Y0,
                 onClick: () => {

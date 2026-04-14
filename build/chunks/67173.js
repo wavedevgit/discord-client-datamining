@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(859703),
     C = n(87549),
     T = n(18437),
-    S = n(7832),
-    N = n(325087),
+    N = n(7832),
+    S = n(325087),
     x = n(398025),
     v = n(652215),
     b = n(49999),
@@ -57,7 +57,7 @@ let L = Math.ceil(Math.sqrt(115200)),
             shouldShowQuestHomeHeroContent: M,
             dismissQuestHomeHeroContent: w,
             questHomeHero: U
-        } = (0, S.I)(), G = l.useCallback(() => {
+        } = (0, N.I)(), G = l.useCallback(() => {
             C.A.getState().setUtmCurrentContext({
                 utmContentCurrent: "PRIMARY_QUEST_HOME"
             }), M && w()
@@ -206,7 +206,7 @@ let L = Math.ceil(Math.sqrt(115200)),
                 align: "center",
                 asContainer: !0,
                 children: en
-            }) : en, Z && (0, i.jsx)(N.A, {
+            }) : en, Z && (0, i.jsx)(S.A, {
                 targetElementRef: r,
                 onNavigateToQuestHome: G,
                 onRender: K,

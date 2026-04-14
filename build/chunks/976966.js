@@ -45,9 +45,9 @@ function T(e) {
             }) : C.intl.string(C.t.tc619d)
         }
         return null
-    }, [t.type, T]), [v, j] = l.useState(null), L = l.useMemo(() => A ? [] : [r.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [A]), [M, D] = (0, u.kn)(L), U = M === r.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, G = l.useCallback(e => {
-        null != e && U && D(I.i.USER_DISMISS), j(e)
-    }, [U, D, j]), P = l.useCallback(e => {
+    }, [t.type, T]), [v, R] = l.useState(null), L = l.useMemo(() => A ? [] : [r.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [A]), [M, D] = (0, u.kn)(L), U = M === r.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, G = l.useCallback(e => {
+        null != e && U && D(I.i.USER_DISMISS), R(e)
+    }, [U, D, R]), P = l.useCallback(e => {
         D("user:explicit" === e ? I.i.USER_DISMISS : I.i.AUTO_DISMISS)
     }, [D]), k = l.useCallback(() => {
         G(null), p.A.openSearchFiltersModal(t)
@@ -81,7 +81,7 @@ function T(e) {
                 onSearchModeChange: s,
                 isPopoutOpen: "sort" === v,
                 setOpenPopout: G
-            }), B && (0, i.jsx)(R, {
+            }), B && (0, i.jsx)(j, {
                 searchContext: t,
                 selectedChannelId: f,
                 isPopoutOpen: "settings" === v,
@@ -103,7 +103,7 @@ function S(e) {
     } = e;
     return s ? (0, i.jsx)(y, {
         documentsIndexed: a
-    }) : l ? (0, i.jsx)(v, {}) : (0, i.jsx)(j, {
+    }) : l ? (0, i.jsx)(v, {}) : (0, i.jsx)(R, {
         totalResults: t,
         subtitle: n
     })
@@ -154,7 +154,7 @@ function v() {
     })
 }
 
-function j(e) {
+function R(e) {
     let {
         totalResults: t,
         subtitle: n
@@ -175,7 +175,7 @@ function j(e) {
     }) : l
 }
 
-function R(e) {
+function j(e) {
     let {
         searchContext: t,
         selectedChannelId: n,

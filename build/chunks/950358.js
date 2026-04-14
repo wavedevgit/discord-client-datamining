@@ -78,7 +78,7 @@ let E = s.memo(function() {
             className: j.me
         })
     }),
-    T = s.memo(function(e) {
+    C = s.memo(function(e) {
         let {
             index: t
         } = e;
@@ -88,21 +88,21 @@ let E = s.memo(function() {
             children: "\xb7"
         }, `separator-${t}`)
     }),
-    C = s.memo(function(e) {
+    T = s.memo(function(e) {
         let {
             channel: t,
             category: s,
             guild: l,
             isFirstChannel: x,
             isLastChannel: N,
-            tooltipDirection: C = "right"
+            tooltipDirection: T = "right"
         } = e, I = (0, u.Ay)(t), b = (0, _.Rg)(t.id, s.id), v = (0, _.eK)(t.id, s.id), S = (0, _.v)(t.id, s.id), y = (0, _.fS)(l.id, s.id), R = null != (0, p.A)(l).find(e => e.id === t.id);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.m, {
                 asContainer: !0,
                 __unsupportedReactNodeAsText: S ?? y,
                 delay: 500,
-                position: C,
+                position: T,
                 children: (0, i.jsxs)(d.DUT, {
                     className: r()(j.WG, {
                         [j.Qn]: x,
@@ -159,7 +159,7 @@ let E = s.memo(function() {
                                     children: I
                                 })
                             }), R ? (0, i.jsxs)(i.Fragment, {
-                                children: [(0, i.jsx)(T, {
+                                children: [(0, i.jsx)(C, {
                                     index: 0
                                 }), (0, i.jsx)(d.Text, {
                                     variant: "text-xs/medium",
@@ -202,7 +202,7 @@ function I(e) {
     }, [t, n]), o = s.useCallback((e, s) => {
         let l = t._categories[e],
             a = t[l.channel.id][s];
-        return null == a ? null : (0, i.jsx)(C, {
+        return null == a ? null : (0, i.jsx)(T, {
             category: l.channel,
             channel: a.channel,
             guild: n,

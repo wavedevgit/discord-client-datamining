@@ -31,7 +31,7 @@ function b(e) {
     let {
         channel: t,
         onClose: s
-    } = e, b = l.useRef(null), y = l.useRef(null), [v, j] = l.useState(!1), R = l.useRef(null), O = l.useRef(null), [L, M] = l.useState(0), {
+    } = e, b = l.useRef(null), y = l.useRef(null), [v, R] = l.useState(!1), j = l.useRef(null), O = l.useRef(null), [L, M] = l.useState(0), {
         analyticsLocations: D
     } = (0, _.Ay)(A.A.VOICE_INVITE_SUGGESTIONS);
     (0, m.A)({
@@ -62,7 +62,7 @@ function b(e) {
                 channel_id: t.id,
                 guild_id: t.guild_id,
                 location_stack: D
-            }), j(!1), s?.()
+            }), R(!1), s?.()
         }, [t, s, D]),
         Y = l.useCallback(() => {
             null != G && (0, u.mMO)(async () => {
@@ -98,26 +98,26 @@ function b(e) {
                 onRest: () => K(e)
             })
         }, [X, K]),
-        $ = l.useCallback(() => (null != R.current && clearTimeout(R.current), R.current = setTimeout(() => q("timeout"), 1e4), M(e => e + 1), () => {
-            null != R.current && clearTimeout(R.current)
+        $ = l.useCallback(() => (null != j.current && clearTimeout(j.current), j.current = setTimeout(() => q("timeout"), 1e4), M(e => e + 1), () => {
+            null != j.current && clearTimeout(j.current)
         }), [q]),
-        Q = l.useCallback(() => (null != O.current && clearTimeout(O.current), O.current = setTimeout(() => {
-            j(!1)
+        J = l.useCallback(() => (null != O.current && clearTimeout(O.current), O.current = setTimeout(() => {
+            R(!1)
         }, 150), () => {
             null != O.current && clearTimeout(O.current)
         }), []);
     (0, h.Ay)($), l.useEffect(() => {
         if (!W) {
-            $(), Q();
+            $(), J();
             return
         }
-        null != R.current && clearTimeout(R.current), null != O.current && clearTimeout(O.current), j(!0)
-    }, [W, $, Q]);
-    let J = l.useCallback(() => {
-            j(!0)
+        null != j.current && clearTimeout(j.current), null != O.current && clearTimeout(O.current), R(!0)
+    }, [W, $, J]);
+    let Q = l.useCallback(() => {
+            R(!0)
         }, []),
         Z = l.useCallback(() => {
-            j(!1), H(!1)
+            R(!1), H(!1)
         }, []);
     return U ? (0, i.jsx)(u.YNO, {
         targetElementRef: b,
@@ -131,7 +131,7 @@ function b(e) {
             onHoverOrFocus: H,
             ...e
         }),
-        onRequestOpen: J,
+        onRequestOpen: Q,
         onRequestClose: Z,
         children: e => {
             let {

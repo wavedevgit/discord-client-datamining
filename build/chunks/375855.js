@@ -58,7 +58,7 @@ function S(e) {
 }
 
 function b(e) {
-    let t, n, s, o, u, A, I, C, b, y, v, j, R, {
+    let t, n, s, o, u, A, I, C, b, y, v, R, j, {
             channel: O
         } = e,
         L = O.id,
@@ -77,8 +77,8 @@ function b(e) {
                 return t
             });
             return (0, h.aw)(e, n)
-        }, [O, n]), j = l.useMemo(() => (0, h.aw)(v, n), [v, n]), R = l.useMemo(() => (0, m.L)(j, s, "DirectMessageTooltip - voiceUsers"), [j, s]), {
-            voiceUsers: l.useMemo(() => R.filter(e => !A.some(t => t.id === e.id) && !b.some(t => t.id === e.id)), [R, A, b]),
+        }, [O, n]), R = l.useMemo(() => (0, h.aw)(v, n), [v, n]), j = l.useMemo(() => (0, m.L)(R, s, "DirectMessageTooltip - voiceUsers"), [R, s]), {
+            voiceUsers: l.useMemo(() => j.filter(e => !A.some(t => t.id === e.id) && !b.some(t => t.id === e.id)), [j, A, b]),
             streamUsers: y,
             activityUsers: A
         }),

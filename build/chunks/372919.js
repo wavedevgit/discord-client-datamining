@@ -23,8 +23,8 @@ var l = n(179771),
     f = n(869146),
     C = n(383233),
     T = n(734057),
-    S = n(375492),
-    N = n(461213),
+    N = n(375492),
+    S = n(461213),
     x = n(531685),
     v = n(403362),
     b = n(661191),
@@ -41,11 +41,11 @@ var l = n(179771),
     G = n(360469);
 async function k(e, t, n, i) {
     let l = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : "",
-        r = S.A.getApplicationActivity(t);
+        r = N.A.getApplicationActivity(t);
     if (null == r || null == r.secrets || !(0, R.px)(i, r.party, r.secrets)) throw new L.A({
         errorCode: U.Lw6.NO_ELIGIBLE_ACTIVITY
     }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
-    let a = (0, m.A)(r, N.A);
+    let a = (0, m.A)(r, S.A);
     if (a) {
         let {
             lock: t
@@ -192,7 +192,7 @@ let V = {
                 if (d.applicationId !== l.id) throw new L.A({
                     errorCode: U.Lw6.INVALID_COMMAND
                 }, "Application is not currently mounted.");
-                let e = S.A.getApplicationActivity(l.id);
+                let e = N.A.getApplicationActivity(l.id);
                 if (null != e)(0, o.qf)(e, !1, A);
                 else throw new L.A({
                     errorCode: U.Lw6.NO_ELIGIBLE_ACTIVITY

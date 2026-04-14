@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(473503),
     P = n(853742),
     k = n(652215),
-    U = n(985018),
-    w = n(190192),
+    w = n(985018),
+    U = n(190192),
     G = n(12131),
     F = n(486025),
     H = n(303621);
@@ -53,7 +53,7 @@ function B(e) {
     return s ? (0, i.jsx)(d.Button, {
         size: "sm",
         variant: "secondary",
-        text: a ? U.intl.string(w.default["2Y4vkk"]) : U.intl.string(w.default.YIbR4r),
+        text: a ? w.intl.string(U.default["2Y4vkk"]) : w.intl.string(U.default.YIbR4r),
         onClick: () => {
             !0 === o.w.get(N.f) ? u() : (0, d.mMO)(async () => {
                 let {
@@ -87,7 +87,7 @@ function V(e) {
     } = e, {
         ref: I,
         width: T
-    } = (0, m.Ay)(), [N, w] = l.useState(3), [V, W] = l.useState(!n), [K, z] = (0, A.A)(!1, 2e3), Y = (0, r.bG)([R.A], () => R.A.getChannel(t), [t]), {
+    } = (0, m.Ay)(), [N, U] = l.useState(3), [V, W] = l.useState(!n), [K, z] = (0, A.A)(!1, 2e3), Y = (0, r.bG)([R.A], () => R.A.getChannel(t), [t]), {
         firstMessage: J
     } = (0, D.OA)(Y), q = (0, r.bG)([b.A], () => b.A.hasJoined(t)), {
         disableReactionUpdates: $,
@@ -114,7 +114,7 @@ function V(e) {
     });
     let [ea, es] = l.useState(!0);
     if (l.useEffect(() => {
-            null == T || (w(Math.floor((T - 280) / 58)), es(!1))
+            null == T || (U(Math.floor((T - 280) / 58)), es(!1))
         }, [T]), null == Y || null == J) return null;
     let er = J.reactions.length > 0,
         eo = () => {
@@ -179,40 +179,40 @@ function V(e) {
                         [G.w$]: !er
                     }),
                     isForumToolbar: !0,
-                    children: !er && U.intl.string(U.t.xpOyTO)
+                    children: !er && w.intl.string(w.t.xpOyTO)
                 })]
             }), (0, i.jsxs)("div", {
                 className: G.Uo,
                 children: [ee ? (0, i.jsx)(B, {
                     channel: Y
                 }) : !X && (0, i.jsx)(c.m, {
-                    text: U.intl.string(U.t.F7oeDv),
+                    text: w.intl.string(w.t.F7oeDv),
                     children: (0, i.jsx)(d.Button, {
                         icon: ec,
                         size: "sm",
                         variant: "secondary",
-                        text: q ? U.intl.string(U.t["7OkUzs"]) : U.intl.string(U.t["3aOv+h"]),
+                        text: q ? w.intl.string(w.t["7OkUzs"]) : w.intl.string(w.t["3aOv+h"]),
                         onClick: () => {
                             q ? j.A.leaveThread(Y, "Forum Toolbar") : j.A.joinThread(Y, "Forum Toolbar")
                         }
                     })
                 }), (0, i.jsx)(c.m, {
-                    text: U.intl.string(U.t.WqhZss),
+                    text: w.intl.string(w.t.WqhZss),
                     children: K ? (0, i.jsx)(d.Button, {
                         icon: d.A9s,
                         size: "sm",
                         variant: "secondary",
                         onClick: eo,
-                        text: U.intl.string(U.t.t5VZ88)
+                        text: w.intl.string(w.t.t5VZ88)
                     }) : (0, i.jsx)(d.K0, {
                         icon: d.qYV,
                         size: "sm",
                         variant: "secondary",
                         onClick: eo,
-                        "aria-label": U.intl.string(U.t.WqhZss)
+                        "aria-label": w.intl.string(w.t.WqhZss)
                     })
                 }), !n && (0, i.jsx)(c.m, {
-                    text: U.intl.string(U.t.nFP4oa),
+                    text: w.intl.string(w.t.nFP4oa),
                     children: (0, i.jsx)(d.K0, {
                         icon: d.Dl6,
                         size: "sm",
@@ -225,7 +225,7 @@ function V(e) {
                                 jumpType: h.US.INSTANT
                             })
                         },
-                        "aria-label": U.intl.string(U.t.nFP4oa)
+                        "aria-label": w.intl.string(w.t.nFP4oa)
                     })
                 })]
             })]

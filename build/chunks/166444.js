@@ -1,7 +1,7 @@
 /** chunk id: 166444 params = (module,exports,require) **/
 n.d(t, {
     Ay: () => H,
-    IC: () => U,
+    IC: () => w,
     Pk: () => W,
     gm: () => B
 });
@@ -16,10 +16,10 @@ var o = n(311907),
     c = n(397927),
     A = n(25639),
     h = n(186369),
-    E = n(571694),
-    _ = n(148719),
-    f = n(47167),
-    g = n(970812),
+    f = n(571694),
+    g = n(148719),
+    E = n(47167),
+    _ = n(970812),
     m = n(713654),
     I = n(945096),
     N = n(922301),
@@ -27,8 +27,8 @@ var o = n(311907),
     T = n(93055),
     L = n(584682),
     x = n(598104),
-    S = n(95035),
-    b = n(71393),
+    b = n(95035),
+    S = n(71393),
     v = n(290863),
     D = n(741961),
     p = n(287809),
@@ -51,9 +51,9 @@ let R = {
 function k(e) {
     e.preventDefault(), e.stopPropagation()
 }
-let w = G.Ay.getEnableHardwareAcceleration() ? c.JsQ : c.euF;
+let U = G.Ay.getEnableHardwareAcceleration() ? c.JsQ : c.euF;
 
-function U(e) {
+function w(e) {
     let {
         channel: t,
         size: n = c._3J.SIZE_20,
@@ -65,9 +65,9 @@ function U(e) {
         channel: t,
         "aria-hidden": !0,
         size: n
-    }) : (0, i.jsx)(w, {
+    }) : (0, i.jsx)(U, {
         className: l,
-        src: (0, E.Y)(t),
+        src: (0, f.Y)(t),
         "aria-hidden": !0,
         size: n
     })
@@ -91,7 +91,7 @@ function W(e) {
         isMobile: v.A.isMobileOnline(a.id),
         isVR: v.A.isVROnline(a.id)
     });
-    return (0, i.jsx)(w, {
+    return (0, i.jsx)(U, {
         className: l,
         size: n,
         src: a?.getAvatarURL(void 0, 40),
@@ -111,14 +111,14 @@ let B = l.memo(function(e) {
             locked: a,
             hasActiveThreads: s,
             hasUsersInVoiceChannel: u
-        } = e, E = (0, o.bG)([b.A], () => b.A.getGuild(l.guild_id), [l.guild_id]), f = l.type === O.rbe.DM || l.type === O.rbe.GROUP_DM, I = (0, T.DZ)(), N = I && f, {
+        } = e, f = (0, o.bG)([S.A], () => S.A.getGuild(l.guild_id), [l.guild_id]), E = l.type === O.rbe.DM || l.type === O.rbe.GROUP_DM, I = (0, T.DZ)(), N = I && E, {
             enableWaveformIcon: C
-        } = (0, h.b)(l.guild_id, "ChannelItemIcon"), L = (0, o.bG)([A.A], () => A.A.getAnimationStyle(l.id), [l.id]), x = l.type === O.rbe.GUILD_VOICE, S = null;
-        if (C && x && !a && u) S = (0, i.jsx)(g.A, {
+        } = (0, h.b)(l.guild_id, "ChannelItemIcon"), L = (0, o.bG)([A.A], () => A.A.getAnimationStyle(l.id), [l.id]), x = l.type === O.rbe.GUILD_VOICE, b = null;
+        if (C && x && !a && u) b = (0, i.jsx)(_.A, {
             color: "currentColor",
             className: r()(M.Kk, t),
             animationStyle: L,
-            locked: (0, _.A)(l)
+            locked: (0, g.A)(l)
         });
         else {
             let e = function(e, t, n, l, a) {
@@ -140,7 +140,7 @@ let B = l.memo(function(e) {
                             let {
                                 className: n
                             } = t;
-                            return (0, i.jsx)(U, {
+                            return (0, i.jsx)(w, {
                                 channel: e,
                                 size: r,
                                 className: n,
@@ -150,17 +150,17 @@ let B = l.memo(function(e) {
                     default:
                         return (0, m.gU)(e, t, n)
                 }
-            }(l, E, {
+            }(l, f, {
                 locked: a,
                 hasActiveThreads: s
             }, N, N);
             if (null == e) return null;
-            S = (0, i.jsx)(e, {
+            b = (0, i.jsx)(e, {
                 color: "currentColor",
                 className: r()(M.Kk, t)
             })
         }
-        let v = (0, m.Bq)(l, E, a, s),
+        let v = (0, m.Bq)(l, f, a, s),
             D = `${v} icon`;
         return (0, i.jsx)(d.m, {
             text: v,
@@ -171,8 +171,8 @@ let B = l.memo(function(e) {
                 className: r()(M.zc, n),
                 children: I ? (0, i.jsx)("div", {
                     className: M.QO,
-                    children: S
-                }) : S
+                    children: b
+                }) : b
             })
         })
     }),
@@ -183,34 +183,34 @@ let B = l.memo(function(e) {
             muted: d,
             selected: A,
             connected: h,
-            unread: E,
-            locked: _,
-            hasActiveThreads: g,
+            unread: f,
+            locked: g,
+            hasActiveThreads: _,
             onClick: m,
             onMouseDown: I,
             onMouseUp: N,
             onContextMenu: C,
             connectDragPreview: T,
             className: x,
-            iconClassName: b,
+            iconClassName: S,
             subtitle: v,
             subtitleColor: D,
             channel: {
                 type: p
             },
             onMouseEnter: G,
-            onMouseLeave: w,
-            "aria-label": U,
+            onMouseLeave: U,
+            "aria-label": w,
             children: W,
             guild: H,
             channelTypeOverride: K,
             forceInteractable: J,
-            mentionCount: V,
-            resolvedUnreadSetting: Z,
+            mentionCount: Z,
+            resolvedUnreadSetting: V,
             isFavoriteSuggestion: Y,
             hasActiveEvent: $ = !1,
             transitionExtras: q
-        } = e, X = Z === P.e.ALL_MESSAGES || null != V && V > 0, Q = (0, o.bG)([y.A], () => Object.values(y.A.getVoiceStatesForChannel(n.id)).length > 0, [n.id]), {
+        } = e, X = V === P.e.ALL_MESSAGES || null != Z && Z > 0, Q = (0, o.bG)([y.A], () => Object.values(y.A.getVoiceStatesForChannel(n.id)).length > 0, [n.id]), {
             role: ee,
             ...et
         } = (0, s.rm)(n.id), en = l.useRef(null), ei = l.useRef(null), el = (0, L.A)(n);
@@ -219,7 +219,7 @@ let B = l.memo(function(e) {
             location: "channel_item"
         });
         let ea = O.BVt.CHANNEL(el, n.id),
-            er = (0, f.Ay)(n),
+            er = (0, E.Ay)(n),
             es = n.isGuildVocal(),
             eo = null != m || null != N || null != I || J,
             eu = (0, i.jsx)("div", {
@@ -227,7 +227,7 @@ let B = l.memo(function(e) {
                     [M.ow]: Y
                 }),
                 ref: ei,
-                children: (0, i.jsxs)(S.A, {
+                children: (0, i.jsxs)(b.A, {
                     role: es && !h ? "button" : "link",
                     href: es ? void 0 : ea,
                     target: "_blank",
@@ -236,7 +236,7 @@ let B = l.memo(function(e) {
                     onClick: () => m?.(n),
                     transitionExtras: q,
                     ...et,
-                    "aria-label": U,
+                    "aria-label": w,
                     "aria-current": A ? "page" : void 0,
                     focusProps: {
                         enabled: !1
@@ -244,12 +244,12 @@ let B = l.memo(function(e) {
                     children: [(0, i.jsxs)("div", {
                         className: M.Y5,
                         children: [(0, i.jsx)(B, {
-                            className: b,
+                            className: S,
                             channel: n,
                             guild: H,
                             hasUsersInVoiceChannel: Q,
-                            hasActiveThreads: g,
-                            locked: _
+                            hasActiveThreads: _,
+                            locked: g
                         }), (0, i.jsx)(u.A, {
                             className: r()(M.UU, {
                                 [M.NW]: $
@@ -289,9 +289,9 @@ let B = l.memo(function(e) {
                 className: r()(x, eo ? M.iE : M.IA, (() => {
                     if (A) return r()(F.rM, R.SELECTED);
                     if (h) return r()(F.rM, R.CONNECTED);
-                    if (_) return R.LOCKED;
+                    if (g) return R.LOCKED;
                     if (d) return R.MUTED;
-                    if (E)
+                    if (f)
                         if (X) return R.UNREAD_IMPORTANT;
                         else return R.UNREAD_LESS_IMPORTANT;
                     return null
@@ -317,8 +317,8 @@ let B = l.memo(function(e) {
                 onMouseDown: e => I?.(e, n),
                 onContextMenu: e => C?.(e, n),
                 onMouseEnter: G,
-                onMouseLeave: w,
-                children: [d || !E ? null : (0, i.jsx)("div", {
+                onMouseLeave: U,
+                children: [d || !f ? null : (0, i.jsx)("div", {
                     className: r()(M.gy, X ? M.WS : void 0)
                 }), T?.(eu) ?? eu]
             })

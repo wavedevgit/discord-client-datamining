@@ -28,9 +28,9 @@ var i = n(627968),
     b = n(652215),
     y = n(537729),
     v = n(985018),
-    j = n(852259);
+    R = n(852259);
 
-function R(e) {
+function j(e) {
     e.stopPropagation()
 }
 
@@ -43,8 +43,8 @@ function O(e) {
     return (0, i.jsx)(u.DUT, {
         "aria-expanded": n,
         onClick: l,
-        className: a()(j.TP, {
-            [j.yZ]: !n
+        className: a()(R.TP, {
+            [R.yZ]: !n
         }),
         children: (0, i.jsxs)(u.BJc, {
             gap: 4,
@@ -53,11 +53,11 @@ function O(e) {
             children: [(0, i.jsx)(u.Heading, {
                 variant: "text-sm/medium",
                 color: "text-subtle",
-                className: j.P7,
+                className: R.P7,
                 children: (0, r.capitalize)(v.intl.string(S.v7[t]).toLowerCase())
             }), (0, i.jsx)(u.abt, {
                 size: "xxs",
-                className: j.ai
+                className: R.ai
             })]
         })
     })
@@ -69,7 +69,7 @@ function M() {
         analyticsLocations: e
     } = (0, _.Ay)(A.A.NOTIFICATIONS_INBOX);
     return (0, i.jsx)("div", {
-        className: j.y7,
+        className: R.y7,
         children: (0, i.jsxs)(u.BJc, {
             gap: 24,
             align: "center",
@@ -194,10 +194,10 @@ function D(e) {
             })), e
         }, [n, s]),
         $ = 0 === n.length && 0 === s.length && H,
-        Q = 0 === n.length && 0 === s.length && !F && V,
-        J = l.useMemo(() => {
+        J = 0 === n.length && 0 === s.length && !F && V,
+        Q = l.useMemo(() => {
             let e = [];
-            return Q ? e.push(A()) : $ ? e.push((0, i.jsx)(M, {}, "empty-state")) : U ? (e.push(...s.map(e => _([e], !0))), e.push(...n.map(e => _([e], !1)))) : o().each(L, t => {
+            return J ? e.push(A()) : $ ? e.push((0, i.jsx)(M, {}, "empty-state")) : U ? (e.push(...s.map(e => _([e], !0))), e.push(...n.map(e => _([e], !1)))) : o().each(L, t => {
                 0 !== q[t].length && (e.push((0, i.jsx)(O, {
                     group: t,
                     isOpen: K[t],
@@ -211,13 +211,13 @@ function D(e) {
                     }
                 }, t)), K[t] && e.push(...q[t].map(e => _(e, t === S.Ur.UNREAD))))
             }), e
-        }, [n, s, A, K, Y, q, U, _, $, Q, G]),
-        Z = J[J.length - 1],
+        }, [n, s, A, K, Y, q, U, _, $, J, G]),
+        Z = Q[Q.length - 1],
         ee = l.isValidElement(Z) && Z.type === O,
         et = (0, N.S)(e => e.setInboxReadState);
     l.useEffect(() => {
-        Q || et(0 === q.UNREAD.length)
-    }, [q, Q, et]);
+        J || et(0 === q.UNREAD.length)
+    }, [q, J, et]);
     let en = (n.length > 0 || s.length > 0) && null != r && V;
     ! function(e) {
         let {
@@ -239,8 +239,8 @@ function D(e) {
         return null == t ? 0 : Math.max(0, Math.ceil(t.offsetHeight / 64) - e)
     }, [K, q]);
     l.useEffect(() => {
-        Q || V || 0 >= ei() || (!ee || z) && r?.(S.VA.FILL_SCROLLER)
-    }, [ei, r, Q, V, ee, z]);
+        J || V || 0 >= ei() || (!ee || z) && r?.(S.VA.FILL_SCROLLER)
+    }, [ei, r, J, V, ee, z]);
     let el = l.useMemo(() => {
         let e = Math.min(Math.max(2, ei()), 20);
         return (0, i.jsx)(T.A, {
@@ -256,9 +256,9 @@ function D(e) {
         messagesByCategory: q,
         viewId: G
     }), (0, i.jsx)("div", {
-        className: a()(v, j.KQ),
-        onClick: R,
-        onDoubleClick: R,
+        className: a()(v, R.KQ),
+        onClick: j,
+        onDoubleClick: j,
         "aria-label": e["aria-label"],
         children: (0, i.jsx)(d.hD, {
             navigator: k,
@@ -272,11 +272,11 @@ function D(e) {
                         ref: e => {
                             P.current = e, t.current = e?.getScrollerNode() ?? null
                         },
-                        className: a()(j.m4, y),
+                        className: a()(R.m4, y),
                         onScroll: X,
                         fade: !0,
                         ...n,
-                        children: [J, en && !ee ? el : null]
+                        children: [Q, en && !ee ? el : null]
                     })
                 }
             })

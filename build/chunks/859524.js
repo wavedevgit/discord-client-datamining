@@ -5,11 +5,11 @@ n.d(t, {
     P0: () => R,
     Rh: () => v,
     Vq: () => f,
-    Wu: () => S,
+    Wu: () => N,
     YM: () => O,
     _x: () => x,
     be: () => j,
-    kx: () => N,
+    kx: () => S,
     n$: () => C,
     px: () => D,
     tI: () => L,
@@ -45,10 +45,10 @@ function T(e) {
     return e.type === p.Mm.MESSAGE || e.type === p.Mm.GUILD_EVENT
 }
 
-function S(e) {
+function N(e) {
     return e < -1.5 ? 4 : e < 0 ? 3 : e > 0 ? 2 : 1
 }
-async function N(e, t, n) {
+async function S(e, t, n) {
     let i = g.A.getHydratedItems(),
         l = e.slice(t, n);
     if (0 === l.length) return;
@@ -87,7 +87,7 @@ async function x() {
     let e = g.A.getUnreadDisplayItems(),
         t = g.A.getReadDisplayItems(),
         n = g.A.getNextIndexToHydrate();
-    await N([...e, ...t], n, n + p.w5)
+    await S([...e, ...t], n, n + p.w5)
 }
 
 function v(e, t) {

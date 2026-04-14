@@ -26,9 +26,9 @@ let m = s.memo(function(e) {
         height: N = 0
     } = (0, d.Ay)(), {
         ref: E,
-        height: T = 0
-    } = (0, d.Ay)(), [C, I] = s.useState(l), b = (0, o.zhh)({
-        height: C ? T + N : N,
+        height: C = 0
+    } = (0, d.Ay)(), [T, I] = s.useState(l), b = (0, o.zhh)({
+        height: T ? C + N : N,
         config: {
             ...a.config.stiff,
             clamp: !0

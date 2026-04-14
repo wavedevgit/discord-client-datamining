@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(196492),
     C = n(869003),
     T = n(315206),
-    S = n(844358),
-    N = n(828430),
+    N = n(844358),
+    S = n(828430),
     x = n(857365),
     v = n(861638),
     b = n(793574),
@@ -76,8 +76,8 @@ var i = n(627968),
     ef = n(194970),
     eC = n(414967),
     eT = n(499454),
-    eS = n(580960),
-    eN = n(968930),
+    eN = n(580960),
+    eS = n(968930),
     ex = n(265367),
     ev = n(77509),
     eb = n(463347),
@@ -299,7 +299,7 @@ function th(e) {
 let t_ = [{
     path: [tt.BVt.ACTIVITY_DETAILS(":applicationId")],
     render: function(e) {
-        return (0, e3.wR)() || e$.default.getLoginStatus() === tt.aUe.LOGGING_IN || !e$.default.allowLogoutRedirect() ? tc(e) : (0, i.jsx)(S.A, {
+        return (0, e3.wR)() || e$.default.getLoginStatus() === tt.aUe.LOGGING_IN || !e$.default.allowLogoutRedirect() ? tc(e) : (0, i.jsx)(N.A, {
             applicationId: e.match.params.applicationId
         })
     }
@@ -588,10 +588,10 @@ class tp extends l.PureComponent {
     historyUnlisten = () => {};
     rewriterUnlisten = () => {};
     componentDidMount() {
-        e8.Ay.setZoomFactor(p.A.zoom), eR.A.init(), O.A.initialize(), ef.A.initialize(), K.A.initialize(), ez.A.initialize(), q.A.initialize(), eS.A.initialize(), k.A.initialize(), ed.A.initialize(), E.A.init(), $.A.init(), z.A.init(), e_.A.initialize(), N.A.initialize(), H.A.initialize(), eN.A.initialize(), T.Ay.initialize(), F.Ay.initialize(), eq.A.initialize(), ea.Ay.initialize(), eI.A.initialize(), C.A.initialize(), es.A.init(), D.A.init(), e2.A.init(), f.A.initialize(), ek.A.init(), e9.A.init(), eH.A.init(), eM.A.initialize(), ew.A.initialize(), eB.A.initialize(), eY.A.init(), B.A.initialize(), I.A.initialize(), ej.A.initialize(), ep.A.initialize(), eg.A.initialize(), eE.A.initialize(), j.A.initialize(), M.A.initialize(), W.A.initialize(), eo.A.initialize(), ec.A.initialize(), ex.A.initialize(), eC.A.initialize(), P.A.initialize(), x.A.initialize(), this.rewriterUnlisten = ev.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = ev.A.addRouteChangeListener(this.handleHistoryChange)
+        e8.Ay.setZoomFactor(p.A.zoom), eR.A.init(), O.A.initialize(), ef.A.initialize(), K.A.initialize(), ez.A.initialize(), q.A.initialize(), eN.A.initialize(), k.A.initialize(), ed.A.initialize(), E.A.init(), $.A.init(), z.A.init(), e_.A.initialize(), S.A.initialize(), H.A.initialize(), eS.A.initialize(), T.Ay.initialize(), F.Ay.initialize(), eq.A.initialize(), ea.Ay.initialize(), eI.A.initialize(), C.A.initialize(), es.A.init(), D.A.init(), e2.A.init(), f.A.initialize(), ek.A.init(), e9.A.init(), eH.A.init(), eM.A.initialize(), ew.A.initialize(), eB.A.initialize(), eY.A.init(), B.A.initialize(), I.A.initialize(), ej.A.initialize(), ep.A.initialize(), eg.A.initialize(), eE.A.initialize(), j.A.initialize(), M.A.initialize(), W.A.initialize(), eo.A.initialize(), ec.A.initialize(), ex.A.initialize(), eC.A.initialize(), P.A.initialize(), x.A.initialize(), this.rewriterUnlisten = ev.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = ev.A.addRouteChangeListener(this.handleHistoryChange)
     }
     componentWillUnmount() {
-        eR.A.terminate(), ez.A.terminate(), eS.A.terminate(), ef.A.terminate(), O.A.terminate(), T.Ay.terminate(), F.Ay.terminate(), eq.A.terminate(), C.A.terminate(), eN.A.terminate(), eI.A.terminate(), eB.A.terminate(), f.A.terminate(), B.A.terminate(), ec.A.terminate(), I.A.terminate(), ex.A.terminate(), ej.A.terminate(), ep.A.terminate(), eg.A.terminate(), eE.A.terminate(), j.A.terminate(), M.A.terminate(), eC.A.terminate(), Y.A.terminate(), P.A.terminate(), x.A.terminate(), W.A.terminate(), eo.A.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
+        eR.A.terminate(), ez.A.terminate(), eN.A.terminate(), ef.A.terminate(), O.A.terminate(), T.Ay.terminate(), F.Ay.terminate(), eq.A.terminate(), C.A.terminate(), eS.A.terminate(), eI.A.terminate(), eB.A.terminate(), f.A.terminate(), B.A.terminate(), ec.A.terminate(), I.A.terminate(), ex.A.terminate(), ej.A.terminate(), ep.A.terminate(), eg.A.terminate(), eE.A.terminate(), j.A.terminate(), M.A.terminate(), eC.A.terminate(), Y.A.terminate(), P.A.terminate(), x.A.terminate(), W.A.terminate(), eo.A.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
     }
     handleHistoryChange(e) {
         let {

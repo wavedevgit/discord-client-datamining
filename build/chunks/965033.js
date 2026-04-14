@@ -25,8 +25,8 @@ var i = n(627968),
     j = n(997509),
     N = n(555337),
     E = n(512122),
-    T = n(111771),
-    C = n(294363),
+    C = n(111771),
+    T = n(294363),
     I = n(652215),
     b = n(985018),
     v = n(204282);
@@ -67,7 +67,7 @@ function S(e) {
                 variant: "text-sm/normal",
                 children: b.intl.format(b.t.iuRk2j, {})
             })]
-        }), (0, i.jsx)(T.A, {
+        }), (0, i.jsx)(C.A, {
             changeTitle: b.intl.string(b.t.TxESJG),
             value: a?.value,
             options: r,
@@ -120,7 +120,7 @@ function y(e) {
                         helpdeskArticle: A.A.getArticleURL(I.MVz.SAFE_DIRECT_MESSAGING)
                     })
                 })]
-            }), (0, i.jsx)(T.A, {
+            }), (0, i.jsx)(C.A, {
                 changeTitle: b.intl.string(b.t["eBd+Uv"]),
                 value: m?.value,
                 options: u,
@@ -233,7 +233,7 @@ function L() {
             className: v.yF
         }), (0, i.jsx)("div", {
             className: v.hu,
-            children: (0, i.jsx)(C.b, {
+            children: (0, i.jsx)(T.b, {
                 guild: e
             })
         })]

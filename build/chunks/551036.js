@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(514179),
     C = n(715837),
     T = n(457830),
-    S = n(167010),
-    N = n(139613),
+    N = n(167010),
+    S = n(139613),
     x = n(746080),
     v = n(985018),
     b = n(369717);
@@ -62,7 +62,7 @@ function y(e) {
                 children: v.intl.string(v.t["KzCF/6"])
             })]
         }), (0, i.jsx)("div", {
-            id: N.K
+            id: S.K
         }), (0, i.jsx)("div", {
             className: b.Qs,
             children: O ? (0, i.jsx)(s.d_W, {
@@ -73,7 +73,7 @@ function y(e) {
                         guild: n
                     })
                 })
-            }) : (0, i.jsx)(S.A, {})
+            }) : (0, i.jsx)(N.A, {})
         })]
     })
 }

@@ -22,9 +22,9 @@ var i = n(627968),
     f = n(652215),
     C = n(654487),
     T = n(985018),
-    S = n(404260);
+    N = n(404260);
 
-function N(e) {
+function S(e) {
     let {
         tab: t
     } = e, n = g.A.useField("selectedTab"), r = l.useMemo(() => (function(e) {
@@ -42,10 +42,10 @@ function N(e) {
                     color: "currentColor"
                 })
         }
-    })(t), [t]), T = l.useMemo(() => (0, p.t)(t), [t]), N = n === t, x = l.useCallback(() => {
+    })(t), [t]), T = l.useMemo(() => (0, p.t)(t), [t]), S = n === t, x = l.useCallback(() => {
         switch (t) {
             case I.GlobalDiscoveryTab.QUESTS:
-                return N && _.A.resetState(), m.default.track(f.HAw.DISCOVERY_QUEST_TAB_CLICKED, {
+                return S && _.A.resetState(), m.default.track(f.HAw.DISCOVERY_QUEST_TAB_CLICKED, {
                     client_ad_session_id: (0, d.sN)().uuid
                 }), (0, E.transitionToGlobalDiscovery)({
                     tab: I.GlobalDiscoveryTab.QUESTS,
@@ -53,7 +53,7 @@ function N(e) {
                     questContent: s.u.DISCOVERY_SIDEBAR
                 });
             case I.GlobalDiscoveryTab.APPS:
-                if (!N) return (0, E.transitionToGlobalDiscovery)({
+                if (!S) return (0, E.transitionToGlobalDiscovery)({
                     tab: t,
                     newSessionState: {
                         entrypoint: {
@@ -67,7 +67,7 @@ function N(e) {
                 });
                 return;
             case I.GlobalDiscoveryTab.SERVERS:
-                if (!N) return (0, E.transitionToGlobalDiscovery)({
+                if (!S) return (0, E.transitionToGlobalDiscovery)({
                     tab: t
                 });
                 A.A.resetState(), h.A.resetState();
@@ -77,14 +77,14 @@ function N(e) {
                     tab: t
                 })
         }
-    }, [t, N]);
+    }, [t, S]);
     return (0, i.jsxs)(o.DUT, {
         onClick: x,
-        className: a()(S.pc, {
-            [S.wH]: N
+        className: a()(N.pc, {
+            [N.wH]: S
         }),
         children: [(0, i.jsx)("div", {
-            className: S.wz,
+            className: N.wz,
             children: r
         }), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
@@ -95,16 +95,16 @@ function N(e) {
 }
 let x = function() {
     return (0, i.jsxs)("div", {
-        className: S.kL,
+        className: N.kL,
         children: [(0, i.jsx)("div", {
-            className: S.wx,
+            className: N.wx,
             children: (0, i.jsx)(o.Heading, {
                 variant: "text-lg/semibold",
                 children: T.intl.string(T.t["1KqYnl"])
             })
         }), (0, i.jsx)("nav", {
-            className: S.C$,
-            children: I.GLOBAL_DISCOVERY_TABS.map(e => (0, i.jsx)(N, {
+            className: N.C$,
+            children: I.GLOBAL_DISCOVERY_TABS.map(e => (0, i.jsx)(S, {
                 tab: e
             }, e))
         })]

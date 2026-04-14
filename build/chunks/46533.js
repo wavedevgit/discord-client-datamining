@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(932001),
     C = n(93055),
     T = n(5180),
-    S = n(250719),
-    N = n(780645),
+    N = n(250719),
+    S = n(780645),
     x = n(72152),
     v = n(502103),
     b = n(929163),
@@ -429,9 +429,9 @@ function ep(e) {
         guildId: t,
         hideSelectedChannel: n,
         selectedChannelId: r
-    } = e, d = (0, N.$)("favorite-guild-header-context"), {
+    } = e, d = (0, S.$)("favorite-guild-header-context"), {
         hasAccess: c
-    } = (0, C.TW)("ConnectedGuildSidebar"), A = (0, s.bG)([$.A], () => $.A.getGuild(t)), h = (0, S.A)(t), T = (0, s.bG)([K.A], () => K.A.getGuildDimensions(t).scrollTo), O = (0, s.bG)([J.A], () => J.A.getChannelId()), P = (0, s.bG)([X.A], () => X.A.can(ed.xBc.MANAGE_GUILD, A)), H = (0, s.bG)([q.A], () => q.A.isUnavailable(t)), F = (0, s.bG)([ee.default], () => ee.default.getCurrentUser()), {
+    } = (0, C.TW)("ConnectedGuildSidebar"), A = (0, s.bG)([$.A], () => $.A.getGuild(t)), h = (0, N.A)(t), T = (0, s.bG)([K.A], () => K.A.getGuildDimensions(t).scrollTo), O = (0, s.bG)([J.A], () => J.A.getChannelId()), P = (0, s.bG)([X.A], () => X.A.can(ed.xBc.MANAGE_GUILD, A)), H = (0, s.bG)([q.A], () => q.A.isUnavailable(t)), F = (0, s.bG)([ee.default], () => ee.default.getCurrentUser()), {
         enableStudyGroup: z
     } = (0, R.y)(A), en = (0, E.Ay)(e => e.currentlyShown.has(o.M.NAGBAR_NOTICE_CONNECT_PLAYSTATION)), [ei, el] = l.useState(!en), er = (0, _.A)(t), {
         analyticsLocations: ea
@@ -439,7 +439,7 @@ function ep(e) {
     l.useEffect(() => {
         t !== er && el(!en)
     }, [t, er, en]);
-    let [eo, eA] = (0, E.Ay)(e => [ec.cA.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(eu.m.GUILD_HEADER_TOOLTIPS)], a.x), eh = (0, p.A)(A), em = (0, u.red)(u.DXt), ep = (0, s.bG)([Q.A], () => Q.A.hasLayers()), eE = (0, D.xr)(e => e.fullScreenLayers.length > 0), eI = (0, s.bG)([Y.A], () => Y.A.shouldShow(e_)), ef = (0, y.A)(t), eC = A?.features.has(ed.GuildFeatures.HUB) === !0, eT = P && A?.features.has(ed.GuildFeatures.DISCOVERABLE) === !0, eS = (0, s.bG)([L.A, Q.A], () => null != A && null != F && P && !Q.A.hasLayers() && L.A.shouldShowGuildTemplateDirtyTooltip(t)), eN = (0, s.bG)([W.A], () => W.A.getChannel(r)), {
+    let [eo, eA] = (0, E.Ay)(e => [ec.cA.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(eu.m.GUILD_HEADER_TOOLTIPS)], a.x), eh = (0, p.A)(A), em = (0, u.red)(u.DXt), ep = (0, s.bG)([Q.A], () => Q.A.hasLayers()), eE = (0, D.xr)(e => e.fullScreenLayers.length > 0), eI = (0, s.bG)([Y.A], () => Y.A.shouldShow(e_)), ef = (0, y.A)(t), eC = A?.features.has(ed.GuildFeatures.HUB) === !0, eT = P && A?.features.has(ed.GuildFeatures.DISCOVERABLE) === !0, eN = (0, s.bG)([L.A, Q.A], () => null != A && null != F && P && !Q.A.hasLayers() && L.A.shouldShowGuildTemplateDirtyTooltip(t)), eS = (0, s.bG)([W.A], () => W.A.getChannel(r)), {
         isPopoutOpen: ex
     } = (0, x.S)(), ev = A?.features.has(ed.GuildFeatures.COMMUNITY) ?? !1, eb = et.Ay.isNewUser(F), ey = ei && !eb;
     (0, v.A)(A);
@@ -491,7 +491,7 @@ function ep(e) {
         guild: A,
         scrollToChannel: T,
         selectedChannelId: n ? null : r,
-        selectedChannel: eN,
+        selectedChannel: eS,
         selectedVoiceChannelId: O,
         voiceStates: h,
         rtcConnectedChannelId: eR,
@@ -501,7 +501,7 @@ function ep(e) {
         hasChannelNotice: null != eh || eo,
         anyLayerOpen: em || ep || eE,
         showGuildHeaderTutorial: eI,
-        showGuildTemplateDirtyTooltip: eS,
+        showGuildTemplateDirtyTooltip: eN,
         showNewUnreadsBar: ev,
         isHeaderPopoutOpen: ex,
         enableStudyGroup: z,

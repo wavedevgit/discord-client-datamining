@@ -23,9 +23,9 @@ let A = function(e) {
         isActive: g,
         onOtherHover: p,
         className: E
-    } = e, [I, f] = l.useState(!1), [C, T] = l.useState(!1), S = () => {
+    } = e, [I, f] = l.useState(!1), [C, T] = l.useState(!1), N = () => {
         f(!0), !m || g || C || p?.()
-    }, N = () => {
+    }, S = () => {
         f(!1)
     };
     return (0, i.jsx)(o.tG, {
@@ -55,8 +55,8 @@ let A = function(e) {
                         }
                     }))
                 },
-                onMouseEnter: S,
-                onMouseLeave: N,
+                onMouseEnter: N,
+                onMouseLeave: S,
                 onClick: _ ?? void 0,
                 style: {
                     LIST_ROW_HEIGHT: 73,

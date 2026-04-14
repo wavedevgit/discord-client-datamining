@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(342296),
     C = n(961350),
     T = n(430452),
-    S = n(485296),
-    N = n(427262),
+    N = n(485296),
+    S = n(427262),
     x = n(31408),
     v = n(985018),
     b = n(391987);
@@ -79,7 +79,7 @@ function L(e) {
         }),
         w = A.getGuildId() ?? void 0,
         U = h.getAvatarURL(A.guild_id, 24),
-        G = C ?? N.Ay.getName(h),
+        G = C ?? S.Ay.getName(h),
         {
             icon: k,
             colorize: V,
@@ -138,7 +138,7 @@ function L(e) {
             })
         })
     }
-    let Y = (0, s.bG)([S.A], () => S.A.getVoiceVolume(h.id)),
+    let Y = (0, s.bG)([N.A], () => N.A.getVoiceVolume(h.id)),
         W = (0, E.v)({
             isSpeaking: M,
             voiceDb: Y,
@@ -226,8 +226,8 @@ function R(e) {
             variant: "icon-only",
             size: "sm"
         })
-    }), S = E && c ? t : p;
-    return S.length <= 0 ? null : (0, i.jsx)(d.IpV, {
+    }), N = E && c ? t : p;
+    return N.length <= 0 ? null : (0, i.jsx)(d.IpV, {
         className: a()(b.XG, r),
         fade: !0,
         children: (0, i.jsxs)("div", {
@@ -235,7 +235,7 @@ function R(e) {
             className: a()(b.Xk, !c && b.yZ),
             role: "group",
             "aria-label": v.intl.string(v.t["/ZgaVU"]),
-            children: [S.map(e => {
+            children: [N.map(e => {
                 let {
                     user: t,
                     nick: l,

@@ -28,16 +28,16 @@ try {
 let f = A.Ay.requireModule("discord_rpc").RPCWebSocket,
     C = window.GLOBAL_ENV.MARKETING_ENDPOINT,
     T = new d.A("RPCServer:WSS"),
-    S = [];
+    N = [];
 
-function N(e) {
+function S(e) {
     return "function" == typeof e ? e() : e
 }
 
 function x() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0,
         t = e > 0 ? void 0 : () => {
-            if (!N(l.listening)) return;
+            if (!S(l.listening)) return;
             let e = l.address().port;
             T.info(`Starting on ${e}`), o.h.dispatch({
                 type: "RPC_SERVER_READY",
@@ -50,8 +50,8 @@ function x() {
 function v(e, t, n) {
     let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 200,
         l = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {},
-        r = null != N(e.headers).origin ? {
-            "Access-Control-Allow-Origin": N(e.headers).origin,
+        r = null != S(e.headers).origin ? {
+            "Access-Control-Allow-Origin": S(e.headers).origin,
             "Access-Control-Allow-Credentials": "true",
             "Access-Control-Allow-Methods": "POST, GET, PUT, PATCH, DELETE",
             "Access-Control-Allow-Headers": "Content-Type, Authorization"
@@ -119,14 +119,14 @@ class L extends r.EventEmitter {
         new f.ws.Server(t).on("connection", e => this.handleConnection(e))
     }
     handleRequest(e, t) {
-        let [n, i] = N(e.url).split("?"), l = N(e.method);
+        let [n, i] = S(e.url).split("?"), l = S(e.method);
         if ("/rpc" === n && "OPTIONS" === l) return void v(e, t, {
             body: ""
         });
         let r = "POST" === l;
         if ("/rpc" === n && ("GET" === l || r)) {
             let n = new URLSearchParams(i),
-                l = r ? N(e.headers)["content-type"].split("/")[1] : "json",
+                l = r ? S(e.headers)["content-type"].split("/")[1] : "json",
                 a = function() {
                     let {
                         protocol: e,
@@ -135,7 +135,7 @@ class L extends r.EventEmitter {
                     e === location.protocol && i === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", C), t.writeHead(301), t.end()
                 },
                 s = new O(!r ? a : v.bind(null, e, t), !r ? a : b.bind(null, e, t, 400), Number(n.get("v")), l);
-            r ? (0, g.j7)(s, N(e.headers).origin, n.get("client_id")).then(() => {
+            r ? (0, g.j7)(s, S(e.headers).origin, n.get("client_id")).then(() => {
                 let n = "";
                 e.on("data", e => n += e), e.on("error", () => b(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
             }).catch(e => {
@@ -150,8 +150,8 @@ class L extends r.EventEmitter {
         b(e, t, 404, "Not Found")
     }
     handleConnection(e) {
-        let t, n = new URLSearchParams(N(e.upgradeReq).url.split("?")[1]),
-            i = N(e.upgradeReq).headers.origin ?? "";
+        let t, n = new URLSearchParams(S(e.upgradeReq).url.split("?")[1]),
+            i = S(e.upgradeReq).headers.origin ?? "";
         try {
             t = new y(e, Number(n.get("v")), n.get("encoding") ?? "json")
         } catch (t) {
@@ -159,9 +159,9 @@ class L extends r.EventEmitter {
             return
         }
         T.info(`Socket Opened: ${t.id}`), e.on("error", e => T.error(`WS Error: ${e.message}`)), e.on("close", (e, n) => {
-            T.info(`Socket Closed: ${t.id}, code ${e}, message ${n}`), s().remove(S, e => e === t), this.emit("disconnect", t)
+            T.info(`Socket Closed: ${t.id}, code ${e}, message ${n}`), s().remove(N, e => e === t), this.emit("disconnect", t)
         }), (0, g.j7)(t, i, n.get("client_id")).then(() => {
-            S.push(t), e.on("message", e => this.handleMessage(t, e)), this.emit("connect", t)
+            N.push(t), e.on("message", e => this.handleMessage(t, e)), this.emit("connect", t)
         }).catch(e => {
             let {
                 code: n,

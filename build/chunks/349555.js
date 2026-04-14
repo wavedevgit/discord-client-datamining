@@ -49,7 +49,7 @@ let I = l.forwardRef(function(e, t) {
         hasFetched: u,
         hasFiltersApplied: I = !1,
         onClearFilters: f
-    } = e, C = (0, s.zy)(), T = l.useRef(""), [S, N] = l.useState(null), [x, v] = l.useState(0), [{
+    } = e, C = (0, s.zy)(), T = l.useRef(""), [N, S] = l.useState(null), [x, v] = l.useState(0), [{
         highlightAnimationProgress: b
     }, y] = (0, c.zhh)(() => ({
         highlightAnimationProgress: 1,
@@ -58,7 +58,7 @@ let I = l.forwardRef(function(e, t) {
         }
     })), O = l.useCallback(e => {
         let t = (0, h.vc)(e, n, r);
-        return null != t && (N(t.id), v(e => e + 1), !0)
+        return null != t && (S(t.id), v(e => e + 1), !0)
     }, [n, r]);
     return (l.useImperativeHandle(t, () => ({
         scrollToQuest: O
@@ -69,8 +69,8 @@ let I = l.forwardRef(function(e, t) {
         }
         d || !u || C.hash !== T.current && O(C.hash.slice(1)) && (T.current = C.hash)
     }, [C.hash, d, u, O]), l.useLayoutEffect(() => {
-        if (null == S) return;
-        let e = document.getElementById(`quest-tile-${S}`);
+        if (null == N) return;
+        let e = document.getElementById(`quest-tile-${N}`);
         null != e && (e.scrollIntoView({
             behavior: "smooth",
             block: "center"
@@ -83,10 +83,10 @@ let I = l.forwardRef(function(e, t) {
             },
             reset: !0,
             onRest: e => {
-                e.cancelled || N(null)
+                e.cancelled || S(null)
             }
         }))
-    }, [S, x, y]), d && 0 === n.length) ? (0, i.jsx)(c.y$y, {
+    }, [N, x, y]), d && 0 === n.length) ? (0, i.jsx)(c.y$y, {
         className: g.u1
     }) : 0 === n.length ? (0, i.jsxs)("div", {
         className: g.y7,
@@ -103,8 +103,8 @@ let I = l.forwardRef(function(e, t) {
     }) : (0, i.jsx)(E, {
         children: e => n.map((t, n) => {
             let l = Math.floor(n / e),
-                r = S === t.id,
-                s = null != S && !r;
+                r = N === t.id,
+                s = null != N && !r;
             return (0, i.jsxs)(o.animated.div, {
                 className: a()({
                     [g.XB]: r

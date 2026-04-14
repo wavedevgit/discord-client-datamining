@@ -28,28 +28,28 @@ var i = n(627968),
     b = n(699970),
     y = n(345687),
     v = n(818348),
-    j = n(985018),
-    R = n(142126);
+    R = n(985018),
+    j = n(142126);
 let O = l.memo(function(e) {
         let {
             toggleRequestToSpeakSidebar: t,
             chatOpen: n
         } = e, l = (0, i.jsx)(p.Ay.Icon, {
             icon: u.PGe,
-            tooltip: j.intl.string(j.t.cpT0Cq),
+            tooltip: R.intl.string(R.t.cpT0Cq),
             onClick: t
         });
         return (0, i.jsxs)(p.Ay, {
             toolbar: l,
-            className: a()(R.N1, {
-                [R.X_]: n
+            className: a()(j.N1, {
+                [j.X_]: n
             }),
             children: [(0, i.jsx)(p.Ay.Icon, {
                 icon: u.E7M,
                 disabled: !0,
-                "aria-label": j.intl.string(j.t.TYZgzW)
+                "aria-label": R.intl.string(R.t.TYZgzW)
             }), (0, i.jsx)(p.Ay.Title, {
-                children: j.intl.string(j.t.TYZgzW)
+                children: R.intl.string(R.t.TYZgzW)
             })]
         })
     }),
@@ -92,7 +92,7 @@ let O = l.memo(function(e) {
                 })
             };
         return (0, i.jsxs)("div", {
-            className: R.fn,
+            className: j.fn,
             children: [(0, i.jsx)(f.A, {
                 targetElementRef: r,
                 user: s.user,
@@ -103,22 +103,22 @@ let O = l.memo(function(e) {
                 clickTrap: !0,
                 children: e => (0, i.jsxs)(u.DUT, {
                     innerRef: r,
-                    className: R.$u,
+                    className: j.$u,
                     onContextMenu: D,
                     ...e,
                     children: [(0, i.jsx)(A.A, {
                         size: u._3J.SIZE_40,
-                        className: R.RB,
+                        className: j.RB,
                         user: s.user,
                         isMobile: b,
                         status: y
                     }), (0, i.jsxs)("div", {
-                        className: R.kH,
+                        className: j.kH,
                         children: [(0, i.jsx)(u.gyj, {
                             name: s.userNick,
                             colorString: v?.colorString ?? null,
                             colorStrings: O,
-                            className: R.F8
+                            className: j.F8
                         }), (0, i.jsx)(u.Text, {
                             variant: "text-xs/normal",
                             color: "text-default",
@@ -127,9 +127,9 @@ let O = l.memo(function(e) {
                     })]
                 })
             }), (0, i.jsxs)("div", {
-                className: R.UD,
+                className: j.UD,
                 children: [(0, i.jsx)(c.m, {
-                    text: M ? j.intl.string(j.t.h9rsTd) : j.intl.string(j.t.f0T7hI),
+                    text: M ? R.intl.string(R.t.h9rsTd) : R.intl.string(R.t.f0T7hI),
                     asContainer: !0,
                     children: (0, i.jsx)(u.K0, {
                         onClick: function() {
@@ -138,13 +138,13 @@ let O = l.memo(function(e) {
                         disabled: M || p,
                         icon: u.LvC,
                         variant: "secondary",
-                        "aria-label": M ? j.intl.string(j.t.h9rsTd) : j.intl.string(j.t.f0T7hI)
+                        "aria-label": M ? R.intl.string(R.t.h9rsTd) : R.intl.string(R.t.f0T7hI)
                     })
                 }), (0, i.jsx)(c.m, {
-                    text: j.intl.string(j.t.moABMy),
+                    text: R.intl.string(R.t.moABMy),
                     asContainer: !0,
                     children: (0, i.jsx)(u.K0, {
-                        "aria-label": j.intl.string(j.t.moABMy),
+                        "aria-label": R.intl.string(R.t.moABMy),
                         onClick: function() {
                             (0, C.lL)(t, s.user.id, !0)
                         },
@@ -160,24 +160,24 @@ let O = l.memo(function(e) {
             channel: t
         } = e, [n, l] = (0, b.X)(t.id);
         return (0, i.jsx)(u.dOG, {
-            label: j.intl.string(j.t.GYCh0W),
+            label: R.intl.string(R.t.GYCh0W),
             checked: n,
             onChange: l
         })
     }),
     D = l.memo(function() {
         return (0, i.jsxs)("div", {
-            className: R.y7,
+            className: j.y7,
             children: [(0, i.jsx)(y.A, {}), (0, i.jsx)(u.Text, {
-                className: R.vo,
+                className: j.vo,
                 variant: "text-lg/semibold",
                 color: "text-strong",
-                children: j.intl.string(j.t["7R24mX"])
+                children: R.intl.string(R.t["7R24mX"])
             }), (0, i.jsx)(u.Text, {
-                className: R.XG,
+                className: j.XG,
                 variant: "text-sm/normal",
                 color: "text-default",
-                children: j.intl.string(j.t.Rpr2s0)
+                children: R.intl.string(R.t.Rpr2s0)
             })]
         })
     });
@@ -189,14 +189,14 @@ function U(e) {
         chatOpen: l
     } = e, s = (0, N.J2)(t.id), r = [+!!(0, d.bG)([x.A], () => x.A.can(v.xB.MANAGE_CHANNELS, t) || x.A.can(v.xB.MANAGE_ROLES, t)), Math.max(1, s.length)];
     return (0, i.jsxs)("div", {
-        className: a()(R.kL, {
-            [R.X_]: l
+        className: a()(j.kL, {
+            [j.X_]: l
         }),
         children: [(0, i.jsx)(O, {
             toggleRequestToSpeakSidebar: n,
             chatOpen: l
         }), (0, i.jsx)(u.B8B, {
-            className: R.hQ,
+            className: j.hQ,
             sections: r,
             sectionHeight: function(e) {
                 return 40 * (1 === e)
@@ -238,12 +238,12 @@ function U(e) {
                     section: t
                 } = e;
                 return 1 === t ? (0, i.jsx)(u.Text, {
-                    className: R.Vu,
+                    className: j.Vu,
                     variant: "text-xs/bold",
                     color: "text-default",
-                    children: s.length > 0 ? j.intl.formatToPlainString(j.t["5z7q5a"], {
+                    children: s.length > 0 ? R.intl.formatToPlainString(R.t["5z7q5a"], {
                         numHands: s.length
-                    }) : j.intl.string(j.t.TYZgzW)
+                    }) : R.intl.string(R.t.TYZgzW)
                 }, "participants-section") : null
             }
         })]

@@ -29,8 +29,8 @@ var i, l, s = n(64700),
     b = n(95701),
     y = n(734057),
     v = n(808728),
-    j = n(71393),
-    R = n(320501),
+    R = n(71393),
+    j = n(320501),
     O = n(576705),
     L = n(222823),
     M = n(711014),
@@ -269,7 +269,7 @@ class F extends a.EventEmitter {
 
 function W(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-        i = R.A.getMessages(e.channelId),
+        i = j.A.getMessages(e.channelId),
         l = i.toArray().filter(t => P.default.compare(t.id, e.oldestReadMessageId) > 0 && 0 >= P.default.compare(t.id, e.newestUnreadMessageId));
     if (l.length === e.messages.length && l.every((t, n) => e.messages[n] === t) && n) return e;
     let s = null != i.getAfter(e.oldestReadMessageId) || l[0]?.id === e.oldestUnreadMessageId,
@@ -328,7 +328,7 @@ function Y(e, t, n, i) {
     if (!l.isPrivate() && !O.A.can(k.xBc.READ_MESSAGE_HISTORY, l) || (0, m.qR)(l)) return;
     let s = L.Ay.ackMessageId(i);
     if (null == s) {
-        let e = j.A.getGuild(l.guild_id);
+        let e = R.A.getGuild(l.guild_id);
         if (null == e || null == e.joinedAt) return;
         s = P.default.fromTimestamp(e.joinedAt.getTime())
     }
@@ -404,5 +404,5 @@ function q(e) {
         d.current = t
     }), s.useLayoutEffect(() => {
         r?.channels, r?.loadState, d.current.maybeLoadMore()
-    }, [r?.channels, r?.loadState]), s.useEffect(() => (R.A.addChangeListener(t.reloadMessages), () => R.A.removeChangeListener(t.reloadMessages)), [t.reloadMessages]), s.useEffect(() => (D.Ay.addChangeListener(t.handleUserGuildSettingsStoreChange), () => D.Ay.removeChangeListener(t.handleUserGuildSettingsStoreChange)), [t]), s.useEffect(() => (C.A.addChangeListener(t.handleJoinedThreadsStoreChange), () => C.A.removeChangeListener(t.handleJoinedThreadsStoreChange)), [t]), s.useEffect(() => (I.A.addChangeListener(t.handleActiveThreadsStoreChange), () => I.A.removeChangeListener(t.handleActiveThreadsStoreChange)), [t]), [r, t]
+    }, [r?.channels, r?.loadState]), s.useEffect(() => (j.A.addChangeListener(t.reloadMessages), () => j.A.removeChangeListener(t.reloadMessages)), [t.reloadMessages]), s.useEffect(() => (D.Ay.addChangeListener(t.handleUserGuildSettingsStoreChange), () => D.Ay.removeChangeListener(t.handleUserGuildSettingsStoreChange)), [t]), s.useEffect(() => (C.A.addChangeListener(t.handleJoinedThreadsStoreChange), () => C.A.removeChangeListener(t.handleJoinedThreadsStoreChange)), [t]), s.useEffect(() => (I.A.addChangeListener(t.handleActiveThreadsStoreChange), () => I.A.removeChangeListener(t.handleActiveThreadsStoreChange)), [t]), [r, t]
 }

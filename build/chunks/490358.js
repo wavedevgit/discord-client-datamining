@@ -22,9 +22,9 @@ var i = n(627968),
     f = n(6939),
     C = n(652215),
     T = n(985018),
-    S = n(584811);
+    N = n(584811);
 
-function N(e) {
+function S(e) {
     let {
         guild: t,
         width: n,
@@ -34,21 +34,21 @@ function N(e) {
         splash: t?.splash
     }) : null, [t?.splash, t?.id]), s = (0, d.S)(a);
     return null == a ? (0, i.jsx)("div", {
-        className: S.Eq
+        className: N.Eq
     }) : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.A, {
-            className: S.Yi,
+            className: N.Yi,
             src: a,
-            imageClassName: S.Iv,
+            imageClassName: N.Iv,
             width: n,
             height: r
         }), null != s && (0, i.jsx)("div", {
-            className: S.qj,
+            className: N.qj,
             style: {
                 background: `linear-gradient(180deg, ${(0,h.cb)(s,.16)} 0%, ${(0,h.cb)(s,1)} 100%)`
             }
         }), (0, i.jsx)("div", {
-            className: S.qj
+            className: N.qj
         })]
     })
 }
@@ -93,14 +93,14 @@ let x = e => {
             name: v?.name
         }), b);
     return (0, i.jsxs)("div", {
-        className: S.MY,
+        className: N.MY,
         ref: n,
-        children: [(0, i.jsx)(N, {
+        children: [(0, i.jsx)(S, {
             guild: v,
             height: d,
             width: o
         }), (0, i.jsx)("div", {
-            className: S.FG,
+            className: N.FG,
             children: (() => {
                 if (null == A) return null;
                 switch (A.applicationStatus) {
@@ -127,7 +127,7 @@ let x = e => {
                 }
             })()
         }), (0, i.jsx)("div", {
-            className: S.T_
+            className: N.T_
         })]
     })
 }

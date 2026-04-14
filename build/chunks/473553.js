@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(654487),
     y = n(49999),
     v = n(165610),
-    j = n(985018),
-    R = n(528622);
+    R = n(985018),
+    j = n(528622);
 
 function O(e) {
     let {
@@ -59,22 +59,22 @@ function O(e) {
     }, [t.id]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: R.wx,
+            className: j.wx,
             onMouseEnter: () => m(!0),
             onMouseLeave: () => m(!1),
             children: [(0, i.jsxs)(s.BJc, {
-                className: R.P9,
+                className: j.P9,
                 direction: "horizontal",
                 align: "center",
                 gap: 8,
                 children: [(0, i.jsx)("div", {
-                    className: R.v0,
+                    className: j.v0,
                     ref: p,
                     children: (0, i.jsx)(S.A, {
                         quest: t,
                         questContent: _.uF.QUEST_ACTIVITY_HEADER,
                         sourceQuestContent: _.uF.RUNNING_ACTIVITY,
-                        className: R.Qf,
+                        className: j.Qf,
                         autoplay: A
                     })
                 }), (0, i.jsx)(o.YNO, {
@@ -95,7 +95,7 @@ function O(e) {
                     position: "bottom",
                     align: "center",
                     children: e => (0, i.jsx)(s.$nd, {
-                        text: j.intl.formatToPlainString(j.t.EAYZAr, {
+                        text: R.intl.formatToPlainString(R.t.EAYZAr, {
                             questName: t.config.messages.questName
                         }),
                         variant: "secondary",
@@ -105,34 +105,34 @@ function O(e) {
                     })
                 })]
             }), (0, i.jsxs)(s.BJc, {
-                className: R.Ek,
+                className: j.Ek,
                 direction: "horizontal",
                 align: "center",
                 gap: 16,
                 children: [(0, i.jsxs)("div", {
-                    className: R.L$,
+                    className: j.L$,
                     children: [(0, i.jsx)(s.EYj, {
                         variant: "text-sm/semibold",
                         color: "text-strong",
                         children: M
                     }), (0, i.jsxs)("div", {
-                        className: R.hr,
+                        className: j.hr,
                         children: [(0, i.jsx)("div", {
-                            className: R.SX,
+                            className: j.SX,
                             style: {
                                 width: `${D}%`
                             }
                         }), (0, i.jsxs)("div", {
-                            className: R.tu,
+                            className: j.tu,
                             style: {
                                 width: `${D}%`
                             },
                             children: [(0, i.jsx)("div", {
-                                className: R.SZ
+                                className: j.SZ
                             }), (0, i.jsx)("div", {
-                                className: R.SZ
+                                className: j.SZ
                             }), (0, i.jsx)("div", {
-                                className: R.SZ
+                                className: j.SZ
                             })]
                         })]
                     })]
@@ -143,7 +143,7 @@ function O(e) {
                     size: "sm"
                 }) : (0, i.jsx)(s.$nd, {
                     variant: "primary",
-                    text: j.intl.string(j.t.l7E81v),
+                    text: R.intl.string(R.t.l7E81v),
                     size: "sm",
                     onClick: P
                 })]

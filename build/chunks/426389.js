@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(219271),
     C = n(21119),
     T = n(287809),
-    S = n(943577),
-    N = n(954571),
+    N = n(943577),
+    S = n(954571),
     x = n(927813),
     v = n(279877),
     b = n(112273),
@@ -55,8 +55,8 @@ let w = 15 * x.A.Millis.MINUTE,
             currentActivities: _,
             voiceChannels: m
         } = t, g = A.length, p = h.length, E = _.length, I = m.length > 0, f = l.useCallback(() => {
-            let e = _.filter(e => e.game?.name != null && (0, N.isGameApplicationType)(e.game?.type)).map(e => e.game.name);
-            N.default.track(P.HAw.NOW_PLAYING_CARD_HOVERED, {
+            let e = _.filter(e => e.game?.name != null && (0, S.isGameApplicationType)(e.game?.type)).map(e => e.game.name);
+            S.default.track(P.HAw.NOW_PLAYING_CARD_HOVERED, {
                 num_users: g,
                 num_streams: p,
                 num_activities: E,
@@ -104,9 +104,9 @@ function k() {
         needsRefresh: n,
         fetching: r,
         currentUser: a
-    } = (0, d.cf)([S.A, C.A, T.default], () => ({
-        nowPlayingCards: S.A.nowPlayingCards,
-        loaded: S.A.loaded,
+    } = (0, d.cf)([N.A, C.A, T.default], () => ({
+        nowPlayingCards: N.A.nowPlayingCards,
+        loaded: N.A.loaded,
         needsRefresh: C.A.shouldFetch(),
         fetching: C.A.isFetching(),
         currentUser: T.default.getCurrentUser()
@@ -121,7 +121,7 @@ function k() {
     } = m.M.getConfig({
         location: "NowPlaying"
     }), {
-        questsByPartyId: N,
+        questsByPartyId: S,
         questIdsByPartyId: x
     } = l.useMemo(() => {
         let t = new Map,
@@ -149,7 +149,7 @@ function k() {
         f && 0 !== O.length && (0, A.yO)(O, _.uF.ACTIVITY_PANEL, "NowPlaying")
     }, [O, f, b]);
     let L = l.useMemo(() => {
-            if (!f) return N;
+            if (!f) return S;
             if (null == b) return new Map;
             let e = new Map;
             for (let [t, n] of x.entries()) {
@@ -158,7 +158,7 @@ function k() {
                 (0, p.Oh)(i) && i.shouldDeliver && null != l && e.set(t, l)
             }
             return e
-        }, [b, x, N, f, s]),
+        }, [b, x, S, f, s]),
         R = null;
     return t ? R = e.length > 0 ? e.map(e => {
         let {

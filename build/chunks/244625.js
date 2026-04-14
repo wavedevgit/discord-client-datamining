@@ -59,7 +59,7 @@ function I(e) {
             default:
                 return t.timestamp
         }
-    }, [t]), S = (0, a.bG)([A.A], () => A.A.getChannel(I), [I]), N = (0, s.Ay)(S), x = S?.guild_id ?? f, v = (0, a.bG)([h.A], () => null != x ? h.A.getGuild(x) : null, [x]), b = (0, a.bG)([_.default], () => null != C ? _.default.getUser(C) : null, [C]);
+    }, [t]), N = (0, a.bG)([A.A], () => A.A.getChannel(I), [I]), S = (0, s.Ay)(N), x = N?.guild_id ?? f, v = (0, a.bG)([h.A], () => null != x ? h.A.getGuild(x) : null, [x]), b = (0, a.bG)([_.default], () => null != C ? _.default.getUser(C) : null, [C]);
     return "unknown" === n ? null : (0, i.jsx)("div", {
         className: E.kL,
         children: (0, i.jsxs)("div", {
@@ -132,8 +132,8 @@ function I(e) {
                             children: e
                         })
                     });
-                    if (null != S && null != e) {
-                        let t = (0, o.gU)(S, v);
+                    if (null != N && null != e) {
+                        let t = (0, o.gU)(N, v);
                         return (0, i.jsxs)("div", {
                             className: E.VA,
                             children: [(0, i.jsx)("span", {
@@ -149,7 +149,7 @@ function I(e) {
                                     width: 16,
                                     height: 16,
                                     className: E.p
-                                }), N]
+                                }), S]
                             })]
                         })
                     }

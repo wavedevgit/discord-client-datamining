@@ -52,10 +52,10 @@ function O(e) {
         channelId: D,
         analyticsLocations: P,
         onCardClick: k,
-        onButtonClick: U
-    } = e, w = l.useRef(null), G = (0, d.bG)([p.A], () => (0, c.Mwr)(p.A.theme)), F = (0, d.bG)([h.A], () => h.A.useReducedMotion), {
+        onButtonClick: w
+    } = e, U = l.useRef(null), G = (0, d.bG)([p.A], () => (0, c.Mwr)(p.A.theme)), F = (0, d.bG)([h.A], () => h.A.useReducedMotion), {
         isHoveringOrFocusing: H
-    } = (0, A.A)(w), {
+    } = (0, A.A)(U), {
         guildId: B
     } = (0, x.nG)(a.applicationId), V = (0, d.bG)([m.A], () => m.A.getApplication(a.applicationId)), {
         primaryIconAsset: W,
@@ -143,7 +143,7 @@ function O(e) {
             analyticsLocations: P
         })
     }, [a.id, a.applicationId, s, P, k]), $ = l.useCallback(e => {
-        e.stopPropagation(), U?.(), (0, I.a)(a, {
+        e.stopPropagation(), w?.(), (0, I.a)(a, {
             isGift: !r,
             giftRecipient: s,
             giftingOrigin: N.vQ.GUILD_CHANNEL
@@ -151,7 +151,7 @@ function O(e) {
             analyticsLocations: P,
             guildId: B
         })
-    }, [a, s, r, P, B, U]);
+    }, [a, s, r, P, B, w]);
     return (0, i.jsx)(c.vN3, {
         children: (0, i.jsxs)(u.sqX, {
             onClick: q,
@@ -160,7 +160,7 @@ function O(e) {
                 [b.BN]: G,
                 [b.YF]: H
             }),
-            ref: w,
+            ref: U,
             "aria-label": a.name,
             children: [(0, i.jsx)(E.P, {
                 spec: j,

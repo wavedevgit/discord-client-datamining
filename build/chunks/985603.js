@@ -23,8 +23,8 @@ var l = n(835245),
     f = n(829203),
     C = n(121623),
     T = n(200330),
-    S = n(708281),
-    N = n(890687),
+    N = n(708281),
+    S = n(890687),
     x = n(976860),
     v = n(718446),
     b = n(858897),
@@ -183,7 +183,7 @@ let k = {
                 case w.XK.QUEST_HOME:
                     if (null != i) {
                         let e = new URLSearchParams;
-                        null != i.sort && e.set(N.L1.SORT, i.sort), null != i.filter && e.set(N.L1.FILTER, i.filter), null != i.tab && e.set(N.L1.TAB, i.tab), (0, x.pX)(U.BVt.QUEST_HOME, {
+                        null != i.sort && e.set(S.L1.SORT, i.sort), null != i.filter && e.set(S.L1.FILTER, i.filter), null != i.tab && e.set(S.L1.TAB, i.tab), (0, x.pX)(U.BVt.QUEST_HOME, {
                             hash: i.questId,
                             search: `?${e.toString()}`
                         }), G(i, (0, w.OE)(t))
@@ -192,7 +192,7 @@ let k = {
                 case w.XK.QUEST_PREVIEW_TOOL:
                     if (null != i) {
                         let e = new URLSearchParams;
-                        e.set(N.L1.TAB, N.NC.PREVIEW_TOOL), null != i.questId && e.set(N.L1.QUEST_ID, i.questId), (0, x.pX)(U.BVt.QUEST_HOME, {
+                        e.set(S.L1.TAB, S.NC.PREVIEW_TOOL), null != i.questId && e.set(S.L1.QUEST_ID, i.questId), (0, x.pX)(U.BVt.QUEST_HOME, {
                             search: `?${e.toString()}`
                         }), G(i, (0, w.OE)(t))
                     }
@@ -209,7 +209,7 @@ let k = {
                     if (null != a) return (0, T.openOAuth2ModalWithCreateGuildModal)(a), !0;
                     return !1;
                 case w.XK.ONE_TIME_LOGIN:
-                    if (null != i) return (0, S.N)({
+                    if (null != i) return (0, N.N)({
                         token: i.token
                     }), G(i, (0, w.OE)(t)), !0;
                     return !1;

@@ -1,6 +1,6 @@
 /** chunk id: 769022 params = (module,exports,require) **/
 n.d(t, {
-    A: () => j
+    A: () => R
 });
 var i = n(311907),
     l = n(713402),
@@ -138,7 +138,7 @@ class v extends i.Ay.Store {
         return f.get(e)
     }
 }
-let j = new v(s.h, {
+let R = new v(s.h, {
     VOICE_CHANNEL_SELECT: function(e) {
         let t = d.default.getCurrentUser()?.id,
             {

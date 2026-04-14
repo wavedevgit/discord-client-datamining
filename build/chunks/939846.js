@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(726249),
     C = n(367727),
     T = n(379848),
-    S = n(742589),
-    N = n(831062),
+    N = n(742589),
+    S = n(831062),
     x = n(378570),
     v = n(138298),
     b = n(940382),
@@ -110,7 +110,7 @@ function et() {
                 })]
             }) : null]
         }, "title"), [t, m, d]);
-    return (n.length !== t && N.A.increment({
+    return (n.length !== t && S.A.increment({
         name: o.K.MESSAGE_REQUEST_COUNT_DRIFT
     }), 0 === n.length) ? (0, i.jsx)(K.A, {
         section: $.zz.REQUESTS
@@ -225,7 +225,7 @@ let er = (0, _.A)(function(e) {
     (0, m.Ay)(() => {
         h.I(Q.BVt.MESSAGE_REQUESTS), (0, y.d)("message-requests"), M.default.track(Q.HAw.MESSAGE_REQUESTS_VIEWED, {
             num_message_requests: n
-        }), N.A.increment({
+        }), S.A.increment({
             name: o.K.MESSAGE_REQUEST_VIEW
         })
     });
@@ -257,19 +257,19 @@ let er = (0, _.A)(function(e) {
             }),
             children: [(0, i.jsx)(A.NPJ, {
                 theme: r,
-                children: e => (0, i.jsxs)(S.A, {
+                children: e => (0, i.jsxs)(N.A, {
                     className: e,
                     toolbar: !0,
-                    children: [(0, i.jsx)(S.A.Icon, {
+                    children: [(0, i.jsx)(N.A.Icon, {
                         icon: A.u6c,
                         "aria-hidden": !0
                     }), (0, i.jsx)(ei, {
                         targetElementRef: C,
-                        children: (0, i.jsx)(S.A.Title, {
+                        children: (0, i.jsx)(N.A.Title, {
                             ref: C,
                             children: Z.intl.string(Z.t.e7GWjQ)
                         })
-                    }), (0, i.jsx)(S.A.Divider, {}), (0, i.jsxs)(A.VQ0, {
+                    }), (0, i.jsx)(N.A.Divider, {}), (0, i.jsxs)(A.VQ0, {
                         "aria-label": Z.intl.string(Z.t.e7GWjQ),
                         selectedItem: T,
                         type: "top-pill",

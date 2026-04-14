@@ -22,12 +22,12 @@ var i = n(627968),
     f = n(652215),
     C = n(985018),
     T = n(173733);
-let S = {
+let N = {
         cozy: 0,
         default: 0,
         compact: 0
     },
-    N = {
+    S = {
         cozy: 36,
         default: 24,
         compact: 14
@@ -54,7 +54,7 @@ function v(e) {
         badgeType: O
     } = (0, E.ux)({
         isSelected: f
-    }), L = (0, m.isDesktop)(), R = (0, h.C)(), P = (0, m.isMac)() ? S[R] : L ? N[R] : x[R];
+    }), L = (0, m.isDesktop)(), R = (0, h.C)(), P = (0, m.isMac)() ? N[R] : L ? S[R] : x[R];
     return (0, i.jsxs)(u.BJc, {
         gap: 0,
         direction: "horizontal",

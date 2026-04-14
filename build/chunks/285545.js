@@ -30,8 +30,8 @@ function g(e) {
             homeSessionId: "gravity"
         })
     }, [C]);
-    let S = (0, l.bG)([d.A], () => d.A.isRefreshing(), []),
-        N = (0, l.bG)([d.A], () => d.A.isHydrating(), []),
+    let N = (0, l.bG)([d.A], () => d.A.isRefreshing(), []),
+        S = (0, l.bG)([d.A], () => d.A.isHydrating(), []),
         [x, v] = i.useState([]),
         {
             loadId: b,
@@ -53,10 +53,10 @@ function g(e) {
         }).pop(),
         L = (0, r.A)(O);
     i.useEffect(() => {
-        if (S || T || null == L || null == O || O === L) return;
+        if (N || T || null == L || null == O || O === L) return;
         let e = Date.now();
         e - y > m.N && (a.A.gravityScrollEvent(e), s.k.trackFeedFirstScrollStarted())
-    }, [S, y, L, O, b, T]);
+    }, [N, y, L, O, b, T]);
     let R = i.useCallback(e => {
             let {
                 viewableItems: t
@@ -200,7 +200,7 @@ function g(e) {
                 }
             }), I.length > 0 && I.forEach(t => {
                 (0, u.yx)(t) || e.push(t)
-            }), N && e.push({
+            }), S && e.push({
                 id: "bottomLoading",
                 timestamp: 0,
                 unread: !1,
@@ -211,14 +211,14 @@ function g(e) {
                 data: e,
                 stickyHeaderIndices: []
             }
-        }, [T, n, E, f, I, N, w]);
+        }, [T, n, E, f, I, S, w]);
     return {
         data: U,
         loading: T,
         version: C,
         visibleItemIds: x,
         endVisible: g,
-        isRefreshing: S,
+        isRefreshing: N,
         handleOnRefresh: M,
         stickyHeaderIndices: G,
         viewabilityConfigCallbackPairs: j

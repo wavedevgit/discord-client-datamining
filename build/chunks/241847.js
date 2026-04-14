@@ -1,6 +1,6 @@
 /** chunk id: 241847 params = (module,exports,require) **/
 n.d(t, {
-    A: () => w
+    A: () => U
 });
 var i = n(627968),
     l = n(64700),
@@ -263,7 +263,7 @@ function k(e) {
     })
 }
 
-function U(e) {
+function w(e) {
     return (0, g.k)({
         channelId: e.channelId
     }) ? (0, i.jsx)(D, {
@@ -276,8 +276,8 @@ function U(e) {
     })
 }
 
-function w(e) {
-    return (0, C.p)("RTCConnectionPopout") ? (0, i.jsx)(U, {
+function U(e) {
+    return (0, C.p)("RTCConnectionPopout") ? (0, i.jsx)(w, {
         ...e
     }) : (0, i.jsx)(k, {
         ...e

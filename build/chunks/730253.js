@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(181079),
     y = n(422258),
     v = n(668267),
-    j = n(93055),
-    R = n(5180),
+    R = n(93055),
+    j = n(5180),
     O = n(210082),
     L = n(780645),
     M = n(332396),
@@ -50,7 +50,7 @@ let H = {
 };
 
 function F(e) {
-    let t, F, W, K, Y, z, X, q, $, Q, J, Z, {
+    let t, F, W, K, Y, z, X, q, $, J, Q, Z, {
             shouldShowIntroPopover: ee,
             markIntroPopoverAsDismissed: et
         } = e,
@@ -58,7 +58,7 @@ function F(e) {
         {
             favoriteAdded: ei,
             clearFavoriteAdded: el
-        } = (0, j.CJ)(),
+        } = (0, R.CJ)(),
         es = l.useRef(null),
         {
             analyticsLocations: ea
@@ -77,7 +77,7 @@ function F(e) {
         eA = (0, a.bG)([N.A], () => N.A.getChannelId(D.YYv)),
         e_ = (0, a.bG)([C.A], () => C.A.getChannel(eA)),
         em = (0, E.A)(e => e.guildId),
-        ep = (0, R.ai)(em),
+        ep = (0, j.ai)(em),
         {
             badge: eg,
             unread: ef
@@ -91,10 +91,10 @@ function F(e) {
                 location: t
             } = e, n = (0, u.H)(t);
             return null != n && null != eh[n]
-        })), q = z.length > 0, $ = !1, Q = !1, J = !1, Z = !1, F ? ($ = !Y, Q = Y, J = W, Z = X) : (J = K, Z = q), (0, p.oi)({
+        })), q = z.length > 0, $ = !1, J = !1, Q = !1, Z = !1, F ? ($ = !Y, J = Y, Q = W, Z = X) : (Q = K, Z = q), (0, p.oi)({
             audio: $,
-            video: Q,
-            screenshare: J,
+            video: J,
+            screenshare: Q,
             liveStage: !1,
             isCurrentUserConnected: F,
             activity: Z
@@ -103,7 +103,7 @@ function F(e) {
         eI = l.useRef(!1),
         {
             hasAccess: eC
-        } = (0, j.TW)("FavoritesButton"),
+        } = (0, R.TW)("FavoritesButton"),
         eN = l.useCallback((e, t) => {
             eI.current = !0, et(e, t)
         }, [et]),

@@ -38,8 +38,8 @@ var i = n(567243),
     f = n(287809),
     C = n(977997),
     T = n(927813),
-    S = n(562153),
-    N = n(257120),
+    N = n(562153),
+    S = n(257120),
     x = n(998218),
     v = n(636401),
     b = n(639621),
@@ -53,7 +53,7 @@ let L = x.A.toURLSafe(window.GLOBAL_ENV.API_ENDPOINT)?.host ?? "localhost",
             n = t[t.length - 1];
         return /^\d+$/.test(n) ? e : t.slice(-2).join(".")
     }(),
-    P = RegExp(`^${N.A.escape("https://")}(?:[a-z]+\\.)?(${N.A.escape(R)}|discordapp.com|discord.com)$`),
+    P = RegExp(`^${S.A.escape("https://")}(?:[a-z]+\\.)?(${S.A.escape(R)}|discordapp.com|discord.com)$`),
     D = +T.A.Millis.MINUTE,
     j = {};
 
@@ -136,7 +136,7 @@ function V(e, t, n) {
     } = n, d = f.default.getUser(o);
     if (null == d) throw Error(`Invalid user id: ${o}`);
     return {
-        nick: S.Ay.getName(e, t, d),
+        nick: N.Ay.getName(e, t, d),
         mute: p.Ay.isLocalMute(d.id),
         volume: p.Ay.getLocalVolume(d.id),
         pan: p.Ay.getLocalPan(d.id),

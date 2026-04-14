@@ -26,12 +26,12 @@ let p = [],
                 var e;
                 return e = f.get(E), ((0, o.uJ)(e) ? null : Object.values(_.kL).find(t => t === e) ?? null) ?? _.kL.SUGGESTED
             }, [f]),
-            S = l.useMemo(() => (function(e) {
+            N = l.useMemo(() => (function(e) {
                 if ((0, o.uJ)(e)) return null;
                 let t = e.split(",").map(e => (0, _.WQ)(e)).filter(s.Vq);
                 return t.length > 0 ? t : null
             })(f.get(I)) ?? p, [f]),
-            N = l.useCallback(e => {
+            S = l.useCallback(e => {
                 C({
                     [E]: e
                 })
@@ -53,8 +53,8 @@ let p = [],
                 hasFetched: O
             } = (0, d.Qh)(d.NC.ALL, l.useMemo(() => ({
                 sortMethod: T,
-                filters: S
-            }), [T, S])),
+                filters: N
+            }), [T, N])),
             L = l.useCallback(() => {
                 x(p)
             }, [x]),
@@ -63,26 +63,26 @@ let p = [],
             D = (0, r.zy)(),
             j = (0, r.W6)();
         return l.useEffect(() => {
-            "" !== D.hash && null != R.current && null != P.current && (T !== R.current || S !== P.current) && j.replace({
+            "" !== D.hash && null != R.current && null != P.current && (T !== R.current || N !== P.current) && j.replace({
                 ...D,
                 hash: void 0
             })
-        }, [T, S, D, j]), l.useEffect(() => {
+        }, [T, N, D, j]), l.useEffect(() => {
             R.current = T
         }, [T]), l.useEffect(() => {
-            P.current = S
-        }, [S]), (0, d.$P)({
+            P.current = N
+        }, [N]), (0, d.$P)({
             selectedSortMethod: T,
-            selectedFilters: S,
+            selectedFilters: N,
             numQuestsVisible: v.length
         }), l.useImperativeHandle(t, () => ({
             resetSortingFiltering: () => {
-                L(), N(_.kL.SUGGESTED)
+                L(), S(_.kL.SUGGESTED)
             },
             scrollToQuest: e => {
                 n.current?.scrollToQuest(e)
             }
-        }), [L, N]), (0, i.jsxs)(i.Fragment, {
+        }), [L, S]), (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {
                 className: g.Mj,
                 children: [(0, i.jsx)(a.Heading, {
@@ -91,12 +91,12 @@ let p = [],
                 }), (0, i.jsxs)("div", {
                     className: g.Nf,
                     children: [(0, i.jsx)(u.A, {
-                        onChange: N,
+                        onChange: S,
                         optionClassName: g.Uq,
                         selectedSortMethod: T
                     }), (0, i.jsx)(c.A, {
                         onChange: x,
-                        selectedFilters: S
+                        selectedFilters: N
                     })]
                 })]
             }), (0, i.jsx)(A.A, {
@@ -105,7 +105,7 @@ let p = [],
                 excludedQuests: b,
                 isFetching: y,
                 hasFetched: O,
-                hasFiltersApplied: S.length > 0,
+                hasFiltersApplied: N.length > 0,
                 onClearFilters: L
             })]
         })

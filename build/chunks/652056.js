@@ -25,7 +25,7 @@ function p(e) {
         editStateId: l,
         guildId: p,
         groupListingId: A
-    } = (0, m.O)(), f = (0, a.bG)([u.A], () => u.A.getSubscriptionListing(l)), j = f?.id, N = (0, g.A)(p), E = s.useMemo(() => null != N && null != f && (N[f.role_id] ?? 0), [N, f]), T = 0 === E, C = null == j, I = f?.archived ?? !1, {
+    } = (0, m.O)(), f = (0, a.bG)([u.A], () => u.A.getSubscriptionListing(l)), j = f?.id, N = (0, g.A)(p), E = s.useMemo(() => null != N && null != f && (N[f.role_id] ?? 0), [N, f]), C = 0 === E, T = null == j, I = f?.archived ?? !1, {
         error: b,
         deleteSubscriptionListing: v,
         submitting: S
@@ -52,7 +52,7 @@ function p(e) {
                 description: h.intl.string(h.t.Y4KjUN),
                 children: (0, i.jsxs)(o.BJc, {
                     gap: 16,
-                    children: [!T && (0, i.jsx)(o.Text, {
+                    children: [!C && (0, i.jsx)(o.Text, {
                         variant: "text-sm/normal",
                         className: _.$,
                         children: h.intl.formatToPlainString(h.t.ABeonY, {
@@ -62,7 +62,7 @@ function p(e) {
                         variant: "critical-primary",
                         onClick: () => {
                             let e = async () => {
-                                (C || (r()(null != A, "group listing doesnt exist"), r()(null != j, "subscription listing doesnt exist"), await v(p, A, j))) && t?.()
+                                (T || (r()(null != A, "group listing doesnt exist"), r()(null != j, "subscription listing doesnt exist"), await v(p, A, j))) && t?.()
                             };
                             (0, o.mMO)(async () => {
                                 let {
@@ -91,7 +91,7 @@ function p(e) {
                             })
                         },
                         loading: S,
-                        disabled: !G || !T,
+                        disabled: !G || !C,
                         text: h.intl.string(h.t.GMtG6p)
                     })]
                 })

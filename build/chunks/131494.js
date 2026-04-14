@@ -60,7 +60,7 @@ function S(e) {
                 selectedVoiceChannelHasVideo: null != n && I.A.hasVideo(n)
             }
         }, [e, t]),
-        j = _.default.getId();
+        R = _.default.getId();
     return (0, l.cf)([E.A, m.A, a.Ay, u.A, A.A, g.A], () => {
         let l = E.A.getVoiceChannelId(),
             s = m.A.getChannel(l)?.guild_id === e,
@@ -84,7 +84,7 @@ function S(e) {
                 return null != t && g.A.can(c.Gk, t)
             }),
             T = s && (m.A.getChannel(l)?.isGuildStageVoice() ?? !1),
-            R = !!s && null != A.A.getActiveStreamForUser(j, e),
+            j = !!s && null != A.A.getActiveStreamForUser(R, e),
             O = (0, o.Mt)(A.A.getAllApplicationStreams()).some(t => t.guildId === e),
             L = s && v,
             M = (() => {
@@ -96,7 +96,7 @@ function S(e) {
                 return !1
             })(),
             D = a.Ay.getEmbeddedActivitiesForGuild(e).length > 0;
-        return s ? (d = !0, _ = n?.channel_id === l, p = T, f = L, x = R, I = D) : (d = b, _ = null != n, p = N, f = y, x = O, I = M), {
+        return s ? (d = !0, _ = n?.channel_id === l, p = T, f = L, x = j, I = D) : (d = b, _ = null != n, p = N, f = y, x = O, I = M), {
             audio: d,
             video: f,
             screenshare: x,
@@ -105,5 +105,5 @@ function S(e) {
             activity: I,
             isCurrentUserConnected: s || T
         }
-    }, [e, t, v, j, S, i, n, b, y])
+    }, [e, t, v, R, S, i, n, b, y])
 }

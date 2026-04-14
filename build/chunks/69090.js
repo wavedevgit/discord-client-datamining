@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(676608),
     N = n(657048),
     E = n(576705),
-    T = n(954571),
-    C = n(545868),
+    C = n(954571),
+    T = n(545868),
     I = n(642133),
     b = n(856644),
     v = n(359837),
@@ -48,11 +48,11 @@ function M(e) {
         query: u
     } = e, m = (0, d.bG)([I.A], () => I.A.getRoleMemberCount(n.id), [n.id]), g = (0, d.bG)([E.A], () => E.A.getHighestRole(n), [n]), h = u.trim();
     s.useEffect(() => {
-        (0, C.L)(n.id)
+        (0, T.L)(n.id)
     }, [n.id]);
     let _ = s.useRef(!1);
     s.useEffect(() => {
-        _.current || "" === u.trimStart() || (T.default.track(R.HAw.SEARCH_STARTED, {
+        _.current || "" === u.trimStart() || (C.default.track(R.HAw.SEARCH_STARTED, {
             search_type: "Roles"
         }), _.current = !0)
     }, [u]);
@@ -122,8 +122,8 @@ function U(e) {
         onDragReset: j,
         onDragComplete: N,
         disableHover: E,
-        disableDrag: T,
-        setEditRoleId: C,
+        disableDrag: C,
+        setEditRoleId: T,
         setSelectedSection: I
     } = e, b = (0, v.c)(l, d, t), S = null != b, [R, M] = s.useState(!1), k = s.useMemo(() => ({
         type: D,
@@ -177,7 +177,7 @@ function U(e) {
     });
 
     function W() {
-        C(t.id)
+        T(t.id)
     }
     return (0, i.jsxs)(m.DUT, {
         className: r()(G.xf, {
@@ -197,7 +197,7 @@ function U(e) {
         }),
         children: [(0, i.jsx)("div", {
             className: r()(G.co, L._M, {
-                [G.Y6]: S || T
+                [G.Y6]: S || C
             }),
             onMouseEnter: () => M(!0),
             onMouseLeave: () => M(!1),

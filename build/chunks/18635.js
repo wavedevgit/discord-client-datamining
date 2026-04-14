@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(544028),
     C = n(595623),
     T = n(912309),
-    S = n(662074),
-    N = n(265990),
+    N = n(662074),
+    S = n(265990),
     x = n(652215),
     v = n(204925),
     b = n(985018),
@@ -119,7 +119,7 @@ let L = function(e) {
             className: y.Xl,
             children: (0, i.jsx)(E.A, {})
         });
-    return k = R === x.m3P.ADD_FRIEND ? (0, i.jsx)(S.A, {}) : (0, i.jsx)(N.A, {
+    return k = R === x.m3P.ADD_FRIEND ? (0, i.jsx)(N.A, {}) : (0, i.jsx)(S.A, {
         titleId: U
     }), (0, i.jsxs)("main", {
         className: y.kL,

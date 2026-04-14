@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(871123),
     y = n(832163),
     v = n(453774),
-    j = n(533562),
-    R = n(568751),
+    R = n(533562),
+    j = n(568751),
     O = n(620406),
     L = n(84511),
     M = n(652215),
@@ -60,7 +60,7 @@ function B(e) {
         location: "social_layer_storefront_gifting_mini_shelf"
     });
     let H = (0, u.bG)([y.A], () => y.A.getDetectableIdsToApplicationIds()),
-        F = (0, j.W)(),
+        F = (0, R.W)(),
         [W] = (0, u.bG)([_.A], () => null != h.id ? [_.A.getParticipants(h.id), _.A.getParticipantsVersion(h.id)] : [
             [], 0
         ], [h.id], A.hS),
@@ -84,25 +84,25 @@ function B(e) {
         q = (0, v.v)(Y),
         {
             status: $,
-            recommendations: Q,
-            skusToUserAndReason: J
+            recommendations: J,
+            skusToUserAndReason: Q
         } = (0, E.XQ)({
             applicationIds: Y,
             numItems: 6,
             userIds: X
         }),
-        Z = "loading" === $ || 0 === Q.length,
-        ee = l.useMemo(() => Q.map(e => x.A.fromSKU(e)).filter(S.Vq), [Q]),
+        Z = "loading" === $ || 0 === J.length,
+        ee = l.useMemo(() => J.map(e => x.A.fromSKU(e)).filter(S.Vq), [J]),
         et = (0, d.A)(Z ? k : ee, V),
         en = l.useMemo(() => {
             let e = new Set(X),
                 {
                     hasWishlist: t,
                     hasPopular: n
-                } = (0, b.wH)(Q, J, e),
+                } = (0, b.wH)(J, Q, e),
                 l = t && n;
             return et.map(t => {
-                let n = Object.entries(J[t.skuId] ?? {}).filter(t => {
+                let n = Object.entries(Q[t.skuId] ?? {}).filter(t => {
                         let [n, i] = t;
                         return i === I.j.WISHLIST && e.has(n)
                     }).map(e => {
@@ -111,7 +111,7 @@ function B(e) {
                     }),
                     s = n.filter(e => e !== z),
                     a = X.filter(e => e !== z);
-                return B ? (0, i.jsx)(R.A, {
+                return B ? (0, i.jsx)(j.A, {
                     sku: t.sku,
                     source: n.length > 0 ? f.uS.WISHLIST : f.uS.POPULAR,
                     application: q[t.sku.applicationId],
@@ -130,14 +130,14 @@ function B(e) {
                     contextContainerClassName: G.RL
                 }, t.skuId)
             })
-        }, [z, X, Q, et, J, B, q, h.guild_id, h.id]);
+        }, [z, X, J, et, Q, B, q, h.guild_id, h.id]);
     return l.useEffect(() => {
-        0 !== Q.length && T.default.track(M.HAw.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
+        0 !== J.length && T.default.track(M.HAw.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
             guild_id: h.guild_id,
             channel_id: h.id,
-            sku_ids: Q.map(e => e.id)
+            sku_ids: J.map(e => e.id)
         })
-    }, [h.id, h.guild_id, Q]), (0, i.jsx)(m.A, {
+    }, [h.id, h.guild_id, J]), (0, i.jsx)(m.A, {
         children: (0, i.jsx)(c.lGe, {
             "aria-labelledby": P,
             modal: !1,

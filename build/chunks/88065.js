@@ -22,13 +22,13 @@ var i = n(735438),
     f = n(636401),
     C = n(90924),
     T = n(592653),
-    S = n(629471),
-    N = n(511776),
+    N = n(629471),
+    S = n(511776),
     x = n(901898),
     v = n(639621),
     b = n(613057),
     y = n(652215);
-let O = e => (0, S.A)(e).required().keys({
+let O = e => (0, N.A)(e).required().keys({
     channel_id: e.string().required()
 });
 
@@ -46,7 +46,7 @@ function L(e) {
         errorCode: y.Lw6.INVALID_CHANNEL
     }, `Invalid nsfw channel id: ${i.id}`)
 }
-let R = e => (0, S.A)(e).keys({
+let R = e => (0, N.A)(e).keys({
     channel_id: e.string().allow(null)
 });
 
@@ -63,7 +63,7 @@ function P(e) {
 let D = {
     [y.ZE4.GUILD_STATUS]: {
         scope: r.F.RPC,
-        validation: e => (0, S.A)(e).required().keys({
+        validation: e => (0, N.A)(e).required().keys({
             guild_id: e.string().required()
         }),
         handler(e) {
@@ -97,7 +97,7 @@ let D = {
         scope: {
             [b.sm.ANY]: [r.F.RPC, r.F.RPC_VOICE_READ]
         },
-        validation: e => (0, S.A)(e).required().keys({
+        validation: e => (0, N.A)(e).required().keys({
             channel_id: e.string().required()
         }),
         handler(e) {
@@ -130,7 +130,7 @@ let D = {
         scope: {
             [b.sm.ANY]: [r.F.RPC, r.F.RPC_VOICE_READ]
         },
-        validation: e => (0, S.A)(e).required().keys({
+        validation: e => (0, N.A)(e).required().keys({
             channel_id: e.string().required()
         }),
         handler(e) {
@@ -163,7 +163,7 @@ let D = {
         scope: {
             [b.sm.ANY]: [r.F.RPC, r.F.RPC_VOICE_READ]
         },
-        validation: e => (0, S.A)(e).required().keys({
+        validation: e => (0, N.A)(e).required().keys({
             channel_id: e.string().required()
         }),
         handler(e) {
@@ -379,7 +379,7 @@ let D = {
             let {
                 prevState: t,
                 dispatch: n
-            } = e, i = A.A.getStreamerActiveStreamMetadata(), r = i?.pid != null ? c.Ay.getGameForPID(i.pid) : null, a = r?.id != null ? d.A.getApplication(r.id) : null, s = null != a ? (0, N.A)(a) : null, o = i?.sourceName, u = {
+            } = e, i = A.A.getStreamerActiveStreamMetadata(), r = i?.pid != null ? c.Ay.getGameForPID(i.pid) : null, a = r?.id != null ? d.A.getApplication(r.id) : null, s = null != a ? (0, S.A)(a) : null, o = i?.sourceName, u = {
                 active: null != i,
                 pid: i?.pid ?? null,
                 application: (null != s) ?? null != o ? {

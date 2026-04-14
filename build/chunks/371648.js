@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(399263),
     P = n(287809),
     k = n(234320),
-    U = n(863439),
-    w = n(504136),
+    w = n(863439),
+    U = n(504136),
     G = n(326337),
     F = n(540385),
     H = n(830178),
@@ -68,8 +68,8 @@ let J = (0, r.animated)(d.fKU),
                 filterAfterTimestamp: O,
                 showingQuarantineBanner: D,
                 hideSummaries: P = !1,
-                jumpBarClassName: U,
-                typingGradient: w
+                jumpBarClassName: w,
+                typingGradient: U
             } = e,
             [H, q] = l.useState(b.A.isAtBottom(f.id) ?? !1),
             $ = (0, _.Ay)(f),
@@ -128,7 +128,7 @@ let J = (0, r.animated)(d.fKU),
                         animate: !A.A.useReducedMotion
                     }) : u.A.jumpToPresent(f.id, Z)
                 },
-                jumpBarClassName: U
+                jumpBarClassName: w
             });
         t = et.ref, n = l.useCallback(() => t.current?.scrollToBottom(), [t]), a = l.useCallback(() => t.current?.scrollPageUp({
             animate: !A.A.useReducedMotion
@@ -156,8 +156,8 @@ let J = (0, r.animated)(d.fKU),
                 let e = N.A.settings.appearance?.clientThemeSettings;
                 return e?.backgroundGradientPresetId != null || e?.customUserThemeSettings != null
             }),
-            eA = l.useMemo(() => w ? H ? Y.gA : Y.ru : Y.Zd, [w, H]),
-            eg = l.useMemo(() => w ? H ? Y.cz : Y.XF : Y.U6, [w, H]);
+            eA = l.useMemo(() => U ? H ? Y.gA : Y.ru : Y.Zd, [U, H]),
+            eg = l.useMemo(() => U ? H ? Y.cz : Y.XF : Y.U6, [U, H]);
         return (0, i.jsxs)(o.hD, {
             navigator: en,
             children: [null != eo && eo, (0, i.jsxs)("div", {
@@ -291,7 +291,7 @@ let J = (0, r.animated)(d.fKU),
                     }), Array.from(e)
                 }, [t]), (0, p.A)(n));
             (0, g.A)(i, e);
-            let I = l.useMemo(() => (0, w.A)({
+            let I = l.useMemo(() => (0, U.A)({
                 channel: e,
                 messages: i,
                 oldestUnreadMessageId: a,
@@ -308,7 +308,7 @@ let J = (0, r.animated)(d.fKU),
             }
         }(t);
         return (0, i.jsx)(I.Bs.Provider, {
-            value: (0, U.A)(k, u),
+            value: (0, w.A)(k, u),
             children: (0, i.jsx)(H.t, {
                 children: (0, i.jsx)(q, {
                     ...d,

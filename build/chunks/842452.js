@@ -1,6 +1,6 @@
 /** chunk id: 842452 params = (module,exports,require) **/
 n.d(t, {
-    A: () => R
+    A: () => j
 });
 var i = n(627968),
     l = n(64700),
@@ -28,13 +28,13 @@ var i = n(627968),
     b = n(142163),
     y = n(604418);
 let v = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
-    j = (0, o.animated)(h.BJc),
-    R = l.memo(function(e) {
+    R = (0, o.animated)(h.BJc),
+    j = l.memo(function(e) {
         var t;
         let n, s, o, {
                 folderNode: u,
                 setNodeRef: p,
-                selected: R,
+                selected: j,
                 expanded: O,
                 mediaState: L,
                 mentionCount: M = 0,
@@ -58,12 +58,12 @@ let v = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 name: q,
                 children: $
             } = u,
-            [Q, J] = l.useState(!1),
+            [J, Q] = l.useState(!1),
             [Z, ee] = l.useState(!1),
-            et = Q || Z,
+            et = J || Z,
             en = (0, _.qK)("FolderItem");
         l.useEffect(() => {
-            k && J(!1)
+            k && Q(!1)
         }, [k]);
         let [{
             dragging: ei
@@ -99,14 +99,14 @@ let v = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
         }), eh = l.useCallback(e => p?.(X, e), [p, X]), eA = (0, i.jsxs)(C.c, {
             children: [(0, i.jsx)(f.A, {
                 disabled: ei || O,
-                hovered: Q,
-                selected: R,
+                hovered: J,
+                selected: j,
                 unread: U,
                 className: y.Io
             }), (0, i.jsx)(N.A, {
                 text: er,
                 disabled: k,
-                selected: R,
+                selected: j,
                 disableWrapper: !0,
                 children: (0, i.jsx)("div", {
                     ref: P ? e => {
@@ -130,7 +130,7 @@ let v = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                         folderGroupId: ed,
                         onClick: V,
                         onContextMenu: H,
-                        onHoverChange: J,
+                        onHoverChange: Q,
                         onKeyDown: ea,
                         treeItemProps: eo,
                         folderButtonContent: K,
@@ -160,7 +160,7 @@ let v = (0, p.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 let {
                     key: l
                 } = n;
-                return t && (0, i.jsx)(j, {
+                return t && (0, i.jsx)(R, {
                     id: ed,
                     role: "group",
                     as: "ul",

@@ -19,14 +19,14 @@ let I = "ActivityTrackingStore",
     f = 30 * u.A.Millis.MINUTE,
     C = 5 * u.A.Millis.MINUTE,
     T = l.w.get(I) ?? {},
-    S = {},
-    N = !1;
+    N = {},
+    S = !1;
 
 function x(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
     t && v(e, !0);
-    let n = S[e.applicationId];
-    null != n && (n.stop(), delete S[e.applicationId]), delete T[e.applicationId], l.w.set(I, T)
+    let n = N[e.applicationId];
+    null != n && (n.stop(), delete N[e.applicationId]), delete T[e.applicationId], l.w.set(I, T)
 }
 
 function v(e) {
@@ -50,8 +50,8 @@ function v(e) {
         sessionId: d,
         mediaSessionId: c
     }), e.updatedAt = n;
-    let u = S[e.applicationId];
-    null == u && (u = S[e.applicationId] = new r.IX).start(f, () => v(e)), t || (T[e.applicationId] = e, l.w.set(I, T))
+    let u = N[e.applicationId];
+    null == u && (u = N[e.applicationId] = new r.IX).start(f, () => v(e)), t || (T[e.applicationId] = e, l.w.set(I, T))
 }
 
 function b() {
@@ -72,7 +72,7 @@ function b() {
 
 function y() {
     for (let e of Object.keys(T)) x(T[e]);
-    N = !1
+    S = !1
 }
 class O extends i.Ay.Store {
     static displayName = "ActivityTrackingStore";
@@ -86,9 +86,9 @@ class O extends i.Ay.Store {
 new O(a.h, {
     RUNNING_GAMES_CHANGE: () => b(),
     CONNECTION_OPEN: function() {
-        if (N) return !1;
+        if (S) return !1;
         for (let e of Object.keys(T)) v(T[e]);
-        b(!1), N = !0
+        b(!1), S = !0
     },
     CONNECTION_CLOSED: function(e) {
         let {

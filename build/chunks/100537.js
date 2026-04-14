@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(964404),
     C = n(709562),
     T = n(520006),
-    S = n(128286),
-    N = n(309010),
+    N = n(128286),
+    S = n(309010),
     x = n(625180),
     v = n(898879),
     b = n(293495),
@@ -43,9 +43,9 @@ function j(e) {
     } = e, n = (0, p.h)(t.applicationId), r = (0, u.A)(), {
         selectedChannelId: j,
         selectedVoiceChannelId: M
-    } = (0, s.cf)([N.A], () => ({
-        selectedChannelId: N.A.getChannelId(),
-        selectedVoiceChannelId: N.A.getVoiceChannelId()
+    } = (0, s.cf)([S.A], () => ({
+        selectedChannelId: S.A.getChannelId(),
+        selectedVoiceChannelId: S.A.getVoiceChannelId()
     })), w = (0, s.bG)([E.A], () => null != M && j === M && E.A.getChatOpen(M), [j, M]), U = (0, s.bG)([f.Ay], () => f.Ay.callChatSidebarWidth), G = (0, c.rdh)(o.A.modules.chat.RESIZE_HANDLE_WIDTH), k = l.useRef(null), V = l.useRef(null), [B, H] = l.useState({
         width: 0,
         height: 0
@@ -151,7 +151,7 @@ function j(e) {
                         iconComponent: c.oLl,
                         color: "disconnect"
                     })]
-                }), Q ? (0, i.jsx)(S.A, {
+                }), Q ? (0, i.jsx)(N.A, {
                     popoutOpen: !1,
                     onOpenPopout: () => {
                         (0, g.zV)(O.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, _.A)({

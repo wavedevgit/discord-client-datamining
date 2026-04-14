@@ -1,6 +1,6 @@
 /** chunk id: 415586 params = (module,exports,require) **/
 n.d(t, {
-    A: () => j
+    A: () => R
 });
 var i = n(627968),
     l = n(64700),
@@ -29,14 +29,14 @@ var i = n(627968),
     y = n(985018),
     v = n(200393);
 
-function j(e) {
+function R(e) {
     var t;
     let s, {
-            channelId: j,
-            baseChannelId: R,
+            channelId: R,
+            baseChannelId: j,
             channelViewSource: O = "Split View"
         } = e,
-        L = (0, r.bG)([x.A], () => x.A.getChannel(j)),
+        L = (0, r.bG)([x.A], () => x.A.getChannel(R)),
         M = (0, r.bG)([C.A], () => C.A.getGuild(L?.getGuildId())),
         D = (0, _.Ay)(L);
     t = L, s = (0, r.bG)([N.A], () => null != t && !a().isEmpty(N.A.getVoiceStatesForChannel(t.id))), l.useEffect(() => {
@@ -62,7 +62,7 @@ function j(e) {
         }, [L, O]), null == L || null == M) return null;
     let G = (0, i.jsx)(T.A, {
         channel: L,
-        baseChannelId: R
+        baseChannelId: j
     });
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(c.A, {
@@ -97,7 +97,7 @@ function j(e) {
                 channel: L,
                 guild: M,
                 chatInputType: p.oU.SIDEBAR
-            }, j)
+            }, R)
         })]
     })
 }

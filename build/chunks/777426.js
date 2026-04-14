@@ -22,9 +22,9 @@ var i = n(627968),
     f = n(45787),
     C = n(275759),
     T = n(233971),
-    S = n(652215);
+    N = n(652215);
 n(646363);
-var N = n(985018),
+var S = n(985018),
     x = n(664184);
 
 function v(e) {
@@ -52,12 +52,12 @@ function v(e) {
     } = (0, T.$)({
         giftRecipient: M,
         analyticsLocations: G,
-        analyticsLocation: S.ThZ.FRIEND_ANNIVERSARIES_ACTION_BUTTON,
+        analyticsLocation: N.ThZ.FRIEND_ANNIVERSARIES_ACTION_BUTTON,
         analyticsObject: {
-            page: S.liQ.FRIENDS_LIST,
-            section: S.JJy.FRIENDS_LIST_FRIEND_ROW,
-            object: S.ZSU.BUTTON_CTA,
-            objectType: S.AnalyticsObjectTypes.GIFT
+            page: N.liQ.FRIENDS_LIST,
+            section: N.JJy.FRIENDS_LIST_FRIEND_ROW,
+            object: N.ZSU.BUTTON_CTA,
+            objectType: N.AnalyticsObjectTypes.GIFT
         },
         location: "gift-intent-friend-row"
     });
@@ -75,7 +75,7 @@ function v(e) {
     let H = e => {
         e.stopPropagation();
         let t = p.A.getUserAffinity(M.id);
-        I.default.track(S.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
+        I.default.track(N.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
             gift_intent_type: U,
             affinity: t?.dmProbability,
             location_stack: G
@@ -114,7 +114,7 @@ function v(e) {
                         }), (0, i.jsx)(c.Text, {
                             variant: "text-xs/normal",
                             color: "text-subtle",
-                            children: N.intl.formatToPlainString(N.t.S3fdq7, {
+                            children: S.intl.formatToPlainString(S.t.S3fdq7, {
                                 numberOfYears: V
                             })
                         })]
@@ -128,9 +128,9 @@ function v(e) {
                     size: "sm",
                     variant: "secondary",
                     icon: k,
-                    "aria-label": N.intl.string(N.t.I61IsE),
+                    "aria-label": S.intl.string(S.t.I61IsE),
                     onClick: () => {
-                        I.default.track(S.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
+                        I.default.track(N.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
                             gift_intent_type: U,
                             cta_type: "send_message",
                             location_stack: G
@@ -147,9 +147,9 @@ function v(e) {
                     }
                 }), (0, i.jsx)(c.Button, {
                     size: "sm",
-                    text: N.intl.string(N.t.PEjaCx),
+                    text: S.intl.string(S.t.PEjaCx),
                     icon: c.okO,
-                    "aria-label": N.intl.string(N.t.PEjaCx),
+                    "aria-label": S.intl.string(S.t.PEjaCx),
                     onClick: H
                 })]
             })]

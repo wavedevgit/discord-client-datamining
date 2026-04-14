@@ -23,10 +23,10 @@ var i = n(627968),
     j = n(599941),
     N = n(652215),
     E = n(985018),
-    T = n(665552);
-let C = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 2196594, 4752414, 0xc75a38, 0xc74138, 12401e3, 0xc5579d, 5659039, 4092591, 5868359, 6586142, 8876063, 8484432, 9979976, 5269106, 3421236],
+    C = n(665552);
+let T = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 2196594, 4752414, 0xc75a38, 0xc74138, 12401e3, 0xc5579d, 5659039, 4092591, 5868359, 6586142, 8876063, 8484432, 9979976, 5269106, 3421236],
     I = /^(https?:\/\/)?(?:m\.|www\.)?(youtu\.be|youtube\.com)\/(embed\/|v\/|watch\?v=|watch\?.+&v=)?((\w|-){11})(?:\S+)?$/,
-    b = C[4],
+    b = T[4],
     v = e => {
         let {
             guild: t,
@@ -67,11 +67,11 @@ let C = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
                 children: [(0, i.jsx)(g.A, {
                     value: U,
                     className: r()({
-                        [T.r9]: w
+                        [C.r9]: w
                     })
                 }), (0, i.jsx)("div", {
                     "data-button-hoisted-classname-wrapper": !0,
-                    className: T.eZ,
+                    className: C.eZ,
                     children: (0, i.jsx)(m.Button, {
                         variant: "primary",
                         text: E.intl.string(E.t.CaOYqc),
@@ -83,23 +83,23 @@ let C = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
                 label: E.intl.string(E.t.W39uIL),
                 description: E.intl.string(E.t.B6XtE7),
                 children: (0, i.jsxs)("div", {
-                    className: T.xu,
+                    className: C.xu,
                     children: [(0, i.jsx)(m.Text, {
                         variant: "text-md/medium",
                         style: {
                             backgroundColor: `#${v.toString(16).padStart(6,"0")}`
                         },
-                        className: T.pB,
+                        className: C.pB,
                         children: E.intl.string(E.t.l6iM36)
                     }), (0, i.jsx)(m.skP, {
-                        colors: C,
+                        colors: T,
                         customColor: null,
                         defaultColor: b,
                         value: v,
                         onChange: e => S(e),
                         renderDefaultButton: () => null,
                         renderCustomButton: () => null,
-                        colorContainerClassName: T.jP,
+                        colorContainerClassName: C.jP,
                         disabled: w
                     })]
                 })
@@ -125,7 +125,7 @@ let C = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
                 })
             }), (0, i.jsx)(c.F, {
                 component: "div",
-                className: T.se,
+                className: C.se,
                 children: M && (0, i.jsx)(m.FQk, {
                     children: (0, i.jsx)(u.A, {
                         submitting: a,

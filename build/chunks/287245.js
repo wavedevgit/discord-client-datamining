@@ -91,7 +91,7 @@ let b = e => {
             channel: t,
             idle: n,
             showChat: s
-        } = e, A = l.useRef(new Set), [_, m] = l.useState([]), [g, f] = l.useState(0), C = l.useRef(null), T = l.useRef(!1), [y, v] = l.useState(!0), [j, R] = l.useState(""), [O, L] = l.useState((0, u.x7)(j));
+        } = e, A = l.useRef(new Set), [_, m] = l.useState([]), [g, f] = l.useState(0), C = l.useRef(null), T = l.useRef(!1), [y, v] = l.useState(!0), [R, j] = l.useState(""), [O, L] = l.useState((0, u.x7)(R));
         l.useEffect(() => {
             let e = A.current;
             return () => {
@@ -186,12 +186,12 @@ let b = e => {
                 })
             }), (0, i.jsx)(h.Ay, {
                 className: a()(S.CQ, {
-                    [S.N7]: n && 0 === j.length
+                    [S.N7]: n && 0 === R.length
                 }),
                 innerClassName: S.hF,
                 type: c.oU.HAVEN,
                 channel: t,
-                textValue: j,
+                textValue: R,
                 richValue: O,
                 placeholder: "Send message",
                 onFocus: () => v(!0),
@@ -200,7 +200,7 @@ let b = e => {
                 disabled: !s,
                 showValueWhenDisabled: !0,
                 onChange: (e, t, n) => {
-                    t !== j && (R(t), L(n))
+                    t !== R && (j(t), L(n))
                 },
                 onSubmit: async e => {
                     let {
@@ -214,7 +214,7 @@ let b = e => {
                     try {
                         return await d.A.sendMessage(t.id, l, !0, {
                             location: "Haven"
-                        }), R(""), L((0, u.x7)("")), {
+                        }), j(""), L((0, u.x7)("")), {
                             shouldClear: !0,
                             shouldRefocus: !1
                         }

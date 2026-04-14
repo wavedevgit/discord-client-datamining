@@ -28,7 +28,7 @@ function T() {
     l.h.wait(() => r.VN(e)), g.A.getRTCConnection()?.setPipOpen(!1), i = null
 }
 
-function S() {
+function N() {
     let e = g.A.getChannelId(),
         t = i === e;
     if (function() {
@@ -51,12 +51,12 @@ function S() {
         channel: n
     })), g.A.getRTCConnection()?.setPipOpen(!0), void(i = e))
 }
-class N extends a.A {
+class S extends a.A {
     _initialize() {
-        p.A.addChangeListener(S), E.A.addChangeListener(S), g.A.addChangeListener(S), I.A.addChangeListener(S), h.A.addChangeListener(S), u.A.addChangeListener(S), c.A.addChangeListener(S), _.Ay.addChangeListener(S), s.Ay.addChangeListener(S), o.A.addChangeListener(S)
+        p.A.addChangeListener(N), E.A.addChangeListener(N), g.A.addChangeListener(N), I.A.addChangeListener(N), h.A.addChangeListener(N), u.A.addChangeListener(N), c.A.addChangeListener(N), _.Ay.addChangeListener(N), s.Ay.addChangeListener(N), o.A.addChangeListener(N)
     }
     _terminate() {
-        p.A.removeChangeListener(S), E.A.removeChangeListener(S), g.A.removeChangeListener(S), I.A.removeChangeListener(S), h.A.removeChangeListener(S), u.A.removeChangeListener(S), c.A.removeChangeListener(S), _.Ay.removeChangeListener(S), s.Ay.removeChangeListener(S), o.A.removeChangeListener(S)
+        p.A.removeChangeListener(N), E.A.removeChangeListener(N), g.A.removeChangeListener(N), I.A.removeChangeListener(N), h.A.removeChangeListener(N), u.A.removeChangeListener(N), c.A.removeChangeListener(N), _.Ay.removeChangeListener(N), s.Ay.removeChangeListener(N), o.A.removeChangeListener(N)
     }
 }
-let x = new N
+let x = new S

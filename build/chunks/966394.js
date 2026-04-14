@@ -54,7 +54,7 @@ function f(e) {
             value: p,
             label: _.intl.string(_.t.u197b7)
         }), e
-    }, [N, l, f]), T = s.useCallback(e => {
+    }, [N, l, f]), C = s.useCallback(e => {
         j ? (0, x.E)(l, h, e !== p ? e : null) : g.A.updateEmbed(l, h, e !== p ? e : null)
     }, [l, h, j]);
     return (0, i.jsx)(a.l6P, {
@@ -62,7 +62,7 @@ function f(e) {
         description: n,
         options: E,
         value: f ?? void 0,
-        onSelectionChange: T,
+        onSelectionChange: C,
         selectionMode: "single",
         fullWidth: !0
     })

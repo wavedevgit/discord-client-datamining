@@ -53,9 +53,9 @@ let N = e => {
             }, !0, !0, e)
         })
     }, [t.id]);
-    let j = l.useMemo(() => null != S ? (0, g._)(Object.values(S), T) : null, [S, T]),
+    let R = l.useMemo(() => null != S ? (0, g._)(Object.values(S), T) : null, [S, T]),
         {
-            mostRecentQuery: R,
+            mostRecentQuery: j,
             searchFetching: O,
             searchResults: L
         } = (0, s.cf)([h.A], () => {
@@ -69,10 +69,10 @@ let N = e => {
                 searchResults: h.A.getSearchResults(t.id, e)
             }
         }),
-        [M, D] = l.useState(R),
-        U = "" !== R,
+        [M, D] = l.useState(j),
+        U = "" !== j,
         G = {
-            mostRecentQuery: R
+            mostRecentQuery: j
         },
         P = l.useRef(G);
     l.useEffect(() => {
@@ -116,18 +116,18 @@ let N = e => {
     return U ? (0, i.jsx)(f.A, {
         searchQuery: M,
         setSearchQuery: D,
-        mostRecentQuery: R,
+        mostRecentQuery: j,
         handleSearchKeyPress: B,
         handleClearSearch: V,
         handleCreateOrAddGuild: w,
         searchResults: L,
         searchFetching: O
-    }) : null == j && null == T ? (0, i.jsx)("div", {
+    }) : null == R && null == T ? (0, i.jsx)("div", {
         className: C.$$,
         children: (0, i.jsx)(a.y$y, {
             className: C.u1
         })
-    }) : j?.length === 0 && null == T ? (0, i.jsx)("div", {
+    }) : R?.length === 0 && null == T ? (0, i.jsx)("div", {
         className: C.$$,
         children: (0, i.jsx)(m.A, {
             guild: N,
@@ -144,7 +144,7 @@ let N = e => {
         handleSelectCategory: e => {
             u.uU(t.id, e)
         },
-        directoryEntries: j,
+        directoryEntries: R,
         categoryCounts: b,
         allEntriesCount: y,
         isLoading: v

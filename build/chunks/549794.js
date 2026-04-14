@@ -22,8 +22,8 @@ var i = n(420970),
     f = n(629471),
     C = n(613057),
     T = n(652215),
-    S = n(360469);
-let N = new Set([S.AM, S.eK]),
+    N = n(360469);
+let S = new Set([N.AM, N.eK]),
     x = {
         [T.e$_.OPEN_EXTERNAL_LINK]: {
             scope: {
@@ -99,7 +99,7 @@ let N = new Set([S.AM, S.eK]),
                 } = e;
                 (0, I.lG)(t.transport);
                 let i = (0, I.D2)(t.application);
-                if (!N.has(i)) throw new E.A({
+                if (!S.has(i)) throw new E.A({
                     errorCode: T.Lw6.UNAUTHORIZED_FOR_APPLICATION
                 }, "Command not available for this application");
                 {

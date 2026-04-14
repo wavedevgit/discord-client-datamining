@@ -30,8 +30,8 @@ let p = (0, h.A)(e => {
         state: f,
         guildId: C,
         channelId: T,
-        prompt: S,
-        disableGuildSelect: N,
+        prompt: N,
+        disableGuildSelect: S,
         disclosures: x,
         integrationType: v,
         pid: b,
@@ -107,8 +107,8 @@ let p = (0, h.A)(e => {
             permissions: u,
             guildId: C,
             channelId: T,
-            prompt: S,
-            disableGuildSelect: "boolean" == typeof N ? N : "true" === N,
+            prompt: N,
+            disableGuildSelect: "boolean" == typeof S ? S : "true" === S,
             integrationType: v,
             cancelCompletesFlow: !0
         }), {

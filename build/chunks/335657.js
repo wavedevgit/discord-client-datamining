@@ -24,14 +24,14 @@ function u(e, t, n) {
             shopHomeConfig: C,
             skipNumCategories: h
         }), [t, C, h]),
-        S = (0, i.useMemo)(() => !(0, s.gn)(p, T), [p, T]),
-        N = (0, c.n)(_, I ?? !1, u),
-        x = (0, i.useMemo)(() => !N && Date.now() - m < 6e5, [m, N]);
+        N = (0, i.useMemo)(() => !(0, s.gn)(p, T), [p, T]),
+        S = (0, c.n)(_, I ?? !1, u),
+        x = (0, i.useMemo)(() => !S && Date.now() - m < 6e5, [m, S]);
     return (0, i.useEffect)(() => {
         if (!A || I) return;
         let t = Date.now() - g < 6e5;
-        null != E && t || (S || !x || f) && (0, s.h$)(e, T, n)
-    }, [A, I, E, g, x, f, S, T, e, n]), {
+        null != E && t || (N || !x || f) && (0, s.h$)(e, T, n)
+    }, [A, I, E, g, x, f, N, T, e, n]), {
         isFetchingShopHome: I,
         fetchShopHomeError: E,
         shopBlocks: _,

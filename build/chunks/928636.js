@@ -1,6 +1,6 @@
 /** chunk id: 928636 params = (module,exports,require) **/
 n.d(t, {
-    A: () => eS
+    A: () => eN
 });
 var i, l = n(627968),
     r = n(64700),
@@ -21,8 +21,8 @@ var i, l = n(627968),
     f = n(908289),
     C = n(682261),
     T = n(672979),
-    S = n(90644),
-    N = n(960076),
+    N = n(90644),
+    S = n(960076),
     x = n(847177),
     v = n(359549),
     b = n(793574),
@@ -500,7 +500,7 @@ eT.Header = eC, eT.Body = e => {
                     let {
                         timestamps: e
                     } = t;
-                    return null == e || !(0, T.A)(t) || (0, S.A)(t) ? null : eu((0, C.A)(t) ? (0, l.jsx)(eA, {
+                    return null == e || !(0, T.A)(t) || (0, N.A)(t) ? null : eu((0, C.A)(t) ? (0, l.jsx)(eA, {
                         timestamps: e
                     }) : (0, l.jsx)(Y.Ay, {
                         start: e.start,
@@ -583,7 +583,7 @@ eT.Header = eC, eT.Body = e => {
             assets: u,
             application_id: A
         } = i;
-    return null != u && (0, N.A)(i) && (t = (0, l.jsx)(w.A, {
+    return null != u && (0, S.A)(i) && (t = (0, l.jsx)(w.A, {
         className: eo.E6,
         aspectRatio: 16 / 9,
         children: (0, l.jsxs)(_.DUT, {
@@ -740,4 +740,4 @@ eT.Header = eC, eT.Body = e => {
         })]
     })
 };
-let eS = eT
+let eN = eT

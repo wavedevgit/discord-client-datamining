@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(599941),
     N = n(11351),
     E = n(739455),
-    T = n(535876),
-    C = n(299824),
+    C = n(535876),
+    T = n(299824),
     I = n(859016),
     b = n(623529),
     v = n(328031),
@@ -134,7 +134,7 @@ function w(e) {
         } = (0, y.Tj)(),
         N = (0, f.X)(),
         v = (0, s.bG)([p.default], () => p.default.getCurrentUser()),
-        L = (0, T.A)(n.id),
+        L = (0, C.A)(n.id),
         P = null != n && (0, h.bM)(n, v);
     if (!N) return (0, i.jsx)(r.y$y, {});
     switch (x) {
@@ -174,7 +174,7 @@ function w(e) {
                     variant: "text-sm/normal",
                     children: D.intl.string(D.t.KyGv0k)
                 })]
-            }), (0, i.jsx)(C.A, {
+            }), (0, i.jsx)(T.A, {
                 guild: n
             }), c && (0, i.jsx)(U, {
                 application: o

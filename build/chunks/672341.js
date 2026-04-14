@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(927813),
     P = n(661191),
     k = n(326337),
-    U = n(375901),
-    w = n(857069),
+    w = n(375901),
+    U = n(857069),
     G = n(675171),
     F = n(806621),
     H = n(636922),
@@ -187,7 +187,7 @@ function en(e) {
                 message: e.content,
                 groupId: n,
                 flashKey: e.flashKey,
-                id: (0, U.j)(l.id, e.content.id),
+                id: (0, w.j)(l.id, e.content.id),
                 isLastItem: t >= el.length - 1,
                 renderContentOnly: eT || a
             }, e.content.id)
@@ -195,7 +195,7 @@ function en(e) {
     ey.push(...eb);
     let ej = el[el.length - 1];
     if (null != eh && ea.forEach((e, t) => {
-            let n = 0 === t && (0, w.l)(l, ej, new j.Ay({
+            let n = 0 === t && (0, U.l)(l, ej, new j.Ay({
                 type: Z.lAJ.DEFAULT,
                 author: eh
             }));

@@ -28,8 +28,8 @@ function C(e) {
         stream: n,
         channel: s
     } = e, [C, N] = l.useState(!1), T = (0, _.AO)(n), S = (0, r.bG)([p.A], () => p.A.getDetectableIdsToApplicationIds()), b = T?.id, y = null != b ? S[b] : null, v = (0, u.h)(y), {
-        isLoading: j,
-        hasApplicationWidgetOnUserProfile: R
+        isLoading: R,
+        hasApplicationWidgetOnUserProfile: j
     } = (0, c.A)(t.id, y, "social_layer_commerce_stream_header"), O = (0, r.bG)([f.default], () => f.default.getId()), L = l.useRef(null), [M, D] = (0, A.RF)(o.M.SLAYER_STOREFRONT_VC_GIFTING_STREAM_HEADER_NEW_BADGE, (0, h.c)(o.M.SLAYER_STOREFRONT_VC_GIFTING_STREAM_HEADER_NEW_BADGE), void 0, !0), U = M === o.M.SLAYER_STOREFRONT_VC_GIFTING_STREAM_HEADER_NEW_BADGE, G = l.useCallback(() => {
         N(!1)
     }, []), {
@@ -41,7 +41,7 @@ function C(e) {
         if (null == v || null == y) return {
             isAppIcon: !1
         };
-        if (R) {
+        if (j) {
             let e = v.getIconURL(m.iu.SMALL),
                 n = null != e,
                 l = n ? (0, i.jsx)("img", {
@@ -89,8 +89,8 @@ function C(e) {
                 onClose: G
             })
         }
-    }, [v, y, s, O, G, R, t.id]);
-    return j || null == B ? null : (0, i.jsx)(d.YNO, {
+    }, [v, y, s, O, G, j, t.id]);
+    return R || null == B ? null : (0, i.jsx)(d.YNO, {
         targetElementRef: L,
         shouldShow: C,
         animation: d.YNO.Animation.FADE,

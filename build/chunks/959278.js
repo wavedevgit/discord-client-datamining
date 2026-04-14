@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(772614),
     C = n(18422),
     T = n(761929),
-    S = n(458518),
-    N = n(107361),
+    N = n(458518),
+    S = n(107361),
     x = n(389405),
     v = n(549711),
     b = n(313961),
@@ -76,8 +76,8 @@ var i = n(627968),
     ef = n(334465),
     eC = n(976860),
     eT = n(97469),
-    eS = n(718446),
-    eN = n(734057),
+    eN = n(718446),
+    eS = n(734057),
     ex = n(650048),
     ev = n(696451),
     eb = n(71393),
@@ -159,9 +159,9 @@ let eB = (0, c.Fe)({
     eZ = e => {
         let {
             match: t
-        } = e, n = (0, S.o)(), r = (0, A.bG)([eN.A, ey.A], () => {
+        } = e, n = (0, N.o)(), r = (0, A.bG)([eS.A, ey.A], () => {
             let e = ey.A.getChannelId();
-            return eN.A.getChannel(e)
+            return eS.A.getChannel(e)
         }), {
             guildId: a,
             channelId: s,
@@ -191,9 +191,9 @@ let eB = (0, c.Fe)({
             C || (null != h && (0, eC.pX)(ej.BVt.CHANNEL(h.id, (0, eg.A)(h))), (0, ee.E)())
         }, [C, h]);
         let T = null != h,
-            N = l.useRef(null);
+            S = l.useRef(null);
         l.useEffect(() => {
-            T || null == a || N.current === a || (N.current = a, m.A.joinGuild(a, {
+            T || null == a || S.current === a || (S.current = a, m.A.joinGuild(a, {
                 lurker: !0,
                 autoNavigate: !1
             }).catch(() => {}))
@@ -378,12 +378,12 @@ let te = e => (0, i.jsx)(x.A, {
                         });
                     case "sessionManagement":
                         return (0, i.jsx)(o.rd, {
-                            to: (0, eS.settingsPathToRoute)(ek.od.SESSIONS)
+                            to: (0, eN.settingsPathToRoute)(ek.od.SESSIONS)
                         });
                     case "connections":
                         return (0, i.jsx)(o.rd, {
                             to: {
-                                pathname: (0, eS.settingsPathToRoute)(ek.od.CONNECTIONS),
+                                pathname: (0, eN.settingsPathToRoute)(ek.od.CONNECTIONS),
                                 search: e.location.search
                             }
                         });
@@ -393,11 +393,11 @@ let te = e => (0, i.jsx)(x.A, {
                         });
                     case "account-standing":
                         return (0, i.jsx)(o.rd, {
-                            to: (0, eS.settingsPathToRoute)(ek.od.ACCOUNT_ACCOUNT_STANDING)
+                            to: (0, eN.settingsPathToRoute)(ek.od.ACCOUNT_ACCOUNT_STANDING)
                         });
                     case "authorized-apps":
                         return (0, i.jsx)(o.rd, {
-                            to: (0, eS.settingsPathToRoute)(ek.od.AUTHORIZED_APPS)
+                            to: (0, eN.settingsPathToRoute)(ek.od.AUTHORIZED_APPS)
                         });
                     case "open-shop":
                         let {
@@ -412,7 +412,7 @@ let te = e => (0, i.jsx)(x.A, {
                     case "editProfile":
                         return (0, i.jsx)(o.rd, {
                             to: {
-                                pathname: (0, eS.settingsPathToRoute)(ek.od.PROFILE_CUSTOMIZATION)
+                                pathname: (0, eN.settingsPathToRoute)(ek.od.PROFILE_CUSTOMIZATION)
                             }
                         });
                     case "gift":
@@ -424,7 +424,7 @@ let te = e => (0, i.jsx)(x.A, {
                         });
                     case "connected-games":
                         return (0, i.jsx)(o.rd, {
-                            to: (0, eS.settingsPathToRoute)(ek.od.CONTENT_AND_SOCIAL_CONNECTED_GAMES)
+                            to: (0, eN.settingsPathToRoute)(ek.od.CONTENT_AND_SOCIAL_CONNECTED_GAMES)
                         });
                     case "boost":
                         let l = t.params.guildId;
@@ -433,7 +433,7 @@ let te = e => (0, i.jsx)(x.A, {
                         });
                     case "boost-settings":
                         return (0, i.jsx)(o.rd, {
-                            to: (0, eS.settingsPathToRoute)(ek.od.GUILD_BOOSTING)
+                            to: (0, eN.settingsPathToRoute)(ek.od.GUILD_BOOSTING)
                         });
                     default:
                         return (0, i.jsx)(o.rd, {
@@ -504,7 +504,7 @@ function ts(e) {
             orientation: T.R.HORIZONTAL_RIGHT,
             throttleDuration: 0
         }),
-        S = l.useCallback(() => {
+        N = l.useCallback(() => {
             D.useAppSidebarState.setState(e => ({
                 isOpen: !e.isOpen
             }))
@@ -512,7 +512,7 @@ function ts(e) {
     if (l.useLayoutEffect(() => {
             m && ta(76)
         }, [m]), r) return null;
-    let N = {
+    let S = {
         className: a()(eV.th, {
             [eV.Qd]: !t
         })
@@ -532,10 +532,10 @@ function ts(e) {
                 themeOverride: n
             }), !s && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)("div", {
-                    ...N,
+                    ...S,
                     children: (0, i.jsx)(eJ, {})
                 }), (0, i.jsx)(_.DUT, {
-                    onClick: S,
+                    onClick: N,
                     "aria-label": "Resize Sidebar",
                     className: eV.tq,
                     onMouseDown: C
@@ -589,7 +589,7 @@ function to() {
                     }), (0, i.jsx)("div", {
                         className: eV.MY,
                         "data-collapsed": !!p && E,
-                        children: (0, i.jsxs)(N.A.Provider, {
+                        children: (0, i.jsxs)(S.A.Provider, {
                             value: g,
                             children: [(0, i.jsxs)(o.dO, {
                                 children: [(0, i.jsx)(v.A, {

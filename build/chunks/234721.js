@@ -23,15 +23,15 @@ var i = n(627968),
     j = n(716610),
     N = n(652215),
     E = n(324580),
-    T = n(985018);
+    C = n(985018);
 
-function C(e) {
+function T(e) {
     let {
         pendingState: t,
         dirtyState: l,
         originalGuild: _,
         settingsGuild: A,
-        settingsMetadata: C,
+        settingsMetadata: T,
         settingsProfile: I
     } = e, b = A.id, [v, S] = s.useState(!1), [y, R] = s.useState(null), O = A.features.has(N.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), G = (0, g.H)({
         guildId: A.id
@@ -49,7 +49,7 @@ function C(e) {
                 throwErr: !0
             })
         } catch (e) {
-            throw "object" == typeof e && "message" in e ? R(e.message) : R(T.intl.formatToPlainString(T.t.aTVNes, {
+            throw "object" == typeof e && "message" in e ? R(e.message) : R(C.intl.formatToPlainString(C.t.aTVNes, {
                 statusPageURL: N.qF7.STATUS
             })), e
         }
@@ -62,7 +62,7 @@ function C(e) {
     }, [b]), U = s.useCallback(async (e, t, n) => {
         let i = t.length > 0 ? [{
             field_type: u.rX.TERMS,
-            label: T.intl.string(T.t["9suSIA"]),
+            label: C.intl.string(C.t["9suSIA"]),
             values: t,
             required: !0
         }] : [];
@@ -121,7 +121,7 @@ function C(e) {
                     try {
                         await (0, d.Oh)({
                             guildId: A.id,
-                            ...C
+                            ...T
                         })
                     } catch (e) {
                         throw R(new o.LG(e).getAnyErrorMessage()), e
@@ -129,15 +129,15 @@ function C(e) {
                 }
             })
         }
-    }, [t, D, A, l, M, U, I, k, _, C]), w = s.useCallback(() => (e => {
+    }, [t, D, A, l, M, U, I, k, _, T]), w = s.useCallback(() => (e => {
         if (t.joinType === f.J.INVITE || t.joinType === f.J.DISCOVERABLE) {
             let {
                 requireTerms: e,
                 termRules: n = []
             } = t;
-            if (n.map(e => e.value.trim()).filter(e => "" !== e).length < 1 && e) return void R(T.intl.string(T.t.TCHkcd))
+            if (n.map(e => e.value.trim()).filter(e => "" !== e).length < 1 && e) return void R(C.intl.string(C.t.TCHkcd))
         }
-        t.joinType !== f.J.APPLY || t.pendingVerificationFields?.some(e => (0, m.OP)(e)) ? e() : R(T.intl.string(T.t.HGVrI3))
+        t.joinType !== f.J.APPLY || t.pendingVerificationFields?.some(e => (0, m.OP)(e)) ? e() : R(C.intl.string(C.t.HGVrI3))
     })(() => {
         var e;
         return e = e => {
@@ -163,10 +163,10 @@ function C(e) {
                 onConfirm: e
             })
         }) : e())
-    }), [O, P, t, b, G]), B = t.joinType === f.J.DISCOVERABLE && t.settingsView === j.v.ELIGIBLE_DISABLED, F = null != A.description && C.primaryCategoryId !== E.ig && C.keywords.length > 0;
+    }), [O, P, t, b, G]), B = t.joinType === f.J.DISCOVERABLE && t.settingsView === j.v.ELIGIBLE_DISABLED, F = null != A.description && T.primaryCategoryId !== E.ig && T.keywords.length > 0;
     return (0, i.jsx)(r.A, {
-        message: B ? T.intl.string(T.t.V2G2Yr) : void 0,
-        onSaveText: B ? T.intl.string(T.t["qjtt/p"]) : void 0,
+        message: B ? C.intl.string(C.t.V2G2Yr) : void 0,
+        onSaveText: B ? C.intl.string(C.t["qjtt/p"]) : void 0,
         submitting: v,
         errorMessage: y,
         onReset: L,
@@ -202,9 +202,9 @@ function I() {
         }
     });
     return null == e || null == n ? null : e.joinType === f.J.DISCOVERABLE && e.settingsView === j.v.INELIGIBLE ? (0, i.jsx)(r.A, {
-        message: T.intl.string(T.t.TEXwRt),
+        message: C.intl.string(C.t.TEXwRt),
         onReset: () => h.A.init(n.id, N.BEX.ACCESS)
-    }) : (0, i.jsx)(C, {
+    }) : (0, i.jsx)(T, {
         pendingState: e,
         dirtyState: t,
         originalGuild: a,

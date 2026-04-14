@@ -22,8 +22,8 @@ var i = n(73153),
     f = n(123973),
     C = n(944775),
     T = n(616356),
-    S = n(430452),
-    N = n(383501),
+    N = n(430452),
+    S = n(383501),
     x = n(351906),
     v = n(532624),
     b = n(242286),
@@ -35,7 +35,7 @@ var i = n(73153),
 let D = new Map;
 
 function j(e, t, n, i) {
-    if (!N.A.isConnected()) return;
+    if (!S.A.isConnected()) return;
     let l = i.context ?? P.x.DEFAULT,
         r = D.get(l);
     null == r && (r = {
@@ -57,7 +57,7 @@ let M = {
     },
     [R.hCu.PUSH_TO_TALK]: {
         onTrigger(e, t) {
-            S.Ay.getMode(t.context) === R.TBI.PUSH_TO_TALK && (M[R.hCu.PUSH_TO_TALK].isPressed = e, j(e, !1, !1, t))
+            N.Ay.getMode(t.context) === R.TBI.PUSH_TO_TALK && (M[R.hCu.PUSH_TO_TALK].isPressed = e, j(e, !1, !1, t))
         },
         keyEvents: {
             keyup: !0,
@@ -67,7 +67,7 @@ let M = {
     },
     [R.hCu.PUSH_TO_TALK_PRIORITY]: {
         onTrigger(e, t) {
-            S.Ay.getMode() === R.TBI.PUSH_TO_TALK && (M[R.hCu.PUSH_TO_TALK_PRIORITY].isPressed = e, j(e, !0, !1, t))
+            N.Ay.getMode() === R.TBI.PUSH_TO_TALK && (M[R.hCu.PUSH_TO_TALK_PRIORITY].isPressed = e, j(e, !0, !1, t))
         },
         keyEvents: {
             keyup: !0,
@@ -77,7 +77,7 @@ let M = {
     },
     [R.hCu.VAD_PRIORITY]: {
         onTrigger(e, t) {
-            S.Ay.getMode() === R.TBI.VOICE_ACTIVITY && (M[R.hCu.VAD_PRIORITY].isPressed = e, j(e, !0, !0, t))
+            N.Ay.getMode() === R.TBI.VOICE_ACTIVITY && (M[R.hCu.VAD_PRIORITY].isPressed = e, j(e, !0, !0, t))
         },
         keyEvents: {
             keyup: !0,
@@ -87,7 +87,7 @@ let M = {
     },
     [R.hCu.PUSH_TO_MUTE]: {
         onTrigger(e) {
-            S.Ay.getMode() === R.TBI.VOICE_ACTIVITY && (M[R.hCu.PUSH_TO_MUTE].isPressed = e, l.A.setTemporarySelfMute(e))
+            N.Ay.getMode() === R.TBI.VOICE_ACTIVITY && (M[R.hCu.PUSH_TO_MUTE].isPressed = e, l.A.setTemporarySelfMute(e))
         },
         keyEvents: {
             keyup: !0,
@@ -124,7 +124,7 @@ let M = {
     },
     [R.hCu.TOGGLE_VOICE_MODE]: {
         onTrigger() {
-            let e = S.Ay.getMode() === R.TBI.PUSH_TO_TALK ? R.TBI.VOICE_ACTIVITY : R.TBI.PUSH_TO_TALK;
+            let e = N.Ay.getMode() === R.TBI.PUSH_TO_TALK ? R.TBI.VOICE_ACTIVITY : R.TBI.PUSH_TO_TALK;
             l.A.setMode(e)
         },
         keyEvents: {

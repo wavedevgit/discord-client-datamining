@@ -29,8 +29,8 @@ var i = n(627968),
     b = n(961350),
     y = n(71393),
     v = n(576705),
-    j = n(977997),
-    R = n(312006),
+    R = n(977997),
+    j = n(312006),
     O = n(704384),
     L = n(289105),
     M = n(652215),
@@ -103,9 +103,9 @@ let G = 16 / 9,
         } = (0, o.cf)([p.A], () => ({
             selectedParticipant: null != s ? p.A.getSelectedParticipant(s.id) : null,
             largeStream: null != s && p.A.getStageStreamSize(s.id)
-        })), R = l.useCallback((e, t) => {
+        })), j = l.useCallback((e, t) => {
             if (e.type === D.lp.STREAM && 0 === N.filter(t => (0, E._z)(t) === e.id && t.state !== M.XYD.ENDED).length) {
-                if (!(0, x.eo)(s, j.A, y.A, v.A, f.default)[0]) return;
+                if (!(0, x.eo)(s, R.A, y.A, v.A, f.default)[0]) return;
                 (0, h.A9)((0, E.Iy)(e.id), {
                     forceMultiple: t.shiftKey
                 })
@@ -122,7 +122,7 @@ let G = 16 / 9,
             className: U.V,
             inCall: !0,
             popoutType: A,
-            onClick: R,
+            onClick: j,
             onContextMenu: u,
             pulseSpeakingIndicator: !_.enabled,
             width: a,
@@ -141,7 +141,7 @@ let G = 16 / 9,
         a()(null != f, "Channel cannot be guildless");
         let {
             user: x
-        } = t, C = (0, o.bG)([p.A], () => p.A.getParticipant(l.id, t.id), [l.id, t.id]), T = (0, o.bG)([R.Ay], () => R.Ay.isModerator(x.id, l.id), [l.id, x.id]);
+        } = t, C = (0, o.bG)([p.A], () => p.A.getParticipant(l.id, t.id), [l.id, t.id]), T = (0, o.bG)([j.Ay], () => j.Ay.isModerator(x.id, l.id), [l.id, x.id]);
         if (null == C || C.type === D.lp.ACTIVITY) return null;
         let S = e => {
                 (0, m.x)({

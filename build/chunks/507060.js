@@ -26,12 +26,12 @@ let T = (0, _.Fe)({
         webpackId: 944771,
         name: "ComponentPlayground"
     }),
-    S = (0, _.Fe)({
+    N = (0, _.Fe)({
         createPromise: () => Promise.all([n.e("43600"), n.e("68587"), n.e("91872"), n.e("78888")]).then(n.bind(n, 667587)),
         webpackId: 667587,
         name: "ChannelSettings"
     }),
-    N = (0, _.Fe)({
+    S = (0, _.Fe)({
         createPromise: () => Promise.all([n.e("69839"), n.e("63757"), n.e("59275")]).then(n.bind(n, 737630)),
         webpackId: 737630,
         name: "CollectiblesShop"
@@ -42,9 +42,9 @@ let T = (0, _.Fe)({
         name: "GuildSettings"
     }),
     v = {
-        [I.zgK.CHANNEL_SETTINGS]: () => (0, i.jsx)(S, {}),
+        [I.zgK.CHANNEL_SETTINGS]: () => (0, i.jsx)(N, {}),
         [I.zgK.GUILD_SETTINGS]: () => (0, i.jsx)(x, {}),
-        [I.zgK.COLLECTIBLES_SHOP]: () => (0, i.jsx)(N, {}),
+        [I.zgK.COLLECTIBLES_SHOP]: () => (0, i.jsx)(S, {}),
         [I.zgK.COMPONENT_PLAYGROUND]: () => (0, i.jsx)(T, {})
     },
     b = "SHOWN",

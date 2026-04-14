@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(473145),
     N = n(740816),
     E = n(285732),
-    T = n(395405),
-    C = n(175471),
+    C = n(395405),
+    T = n(175471),
     I = n(652215),
     b = n(568065),
     v = n(985018),
@@ -137,7 +137,7 @@ let y = e => {
                     children: v.intl.string(v.t.BfF6ED)
                 })
             }];
-        return (0, i.jsx)(T.A, {
+        return (0, i.jsx)(C.A, {
             tiers: k,
             renderTier: e => {
                 var s;
@@ -145,14 +145,14 @@ let y = e => {
                         isAnimatedTo: p,
                         onSetRef: A,
                         tier: N,
-                        tiers: T,
+                        tiers: C,
                         tierIndex: y
                     } = e,
                     {
                         canCreateExpressions: k,
                         canManageGuildExpression: U
                     } = (0, h.ie)(t),
-                    P = T[y - 1],
+                    P = C[y - 1],
                     w = null != P ? (0, j.aG)(P.tier) : 0,
                     B = (0, j.aG)(N.tier, t),
                     F = (0, j.Cp)(N.tier),
@@ -206,12 +206,12 @@ let y = e => {
                     }
                 }) : K && (m = (0, i.jsx)(O, {
                     guild: t
-                })), (0, i.jsxs)(C.A, {
+                })), (0, i.jsxs)(T.A, {
                     subscriptionCount: L,
                     tier: N,
                     onSetRef: A,
                     isAnimatedTo: p,
-                    hasBottomMargin: y !== T.length - 1,
+                    hasBottomMargin: y !== C.length - 1,
                     withCardBody: !Y,
                     headerButton: m,
                     showHeaderLockStatus: es,

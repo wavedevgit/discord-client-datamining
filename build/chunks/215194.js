@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(89145),
     N = n(913443),
     E = n(474215),
-    T = n(561923),
-    C = n(652215),
+    C = n(561923),
+    T = n(652215),
     I = n(985018),
     b = n(978945);
 let v = function() {
@@ -33,7 +33,7 @@ let v = function() {
     } = (0, d.Ay)(o.A.GUILD_SETTINGS_PROFILE_PAGE), t = (0, l.bG)([h.A], () => h.A.getGuild(), []), n = t?.id, {
         fetchGuildProfile: v,
         fetchStatus: S
-    } = (0, u.u)(t?.id), y = (0, l.bG)([h.A], () => h.A.getGuildProfile(), []), R = (0, l.bG)([g.A], () => g.A.can(C.xBc.MANAGE_GUILD, t)), O = s.useCallback(e => {
+    } = (0, u.u)(t?.id), y = (0, l.bG)([h.A], () => h.A.getGuildProfile(), []), R = (0, l.bG)([g.A], () => g.A.can(T.xBc.MANAGE_GUILD, t)), O = s.useCallback(e => {
         null != n && (x.A.updateGuild({
             icon: e
         }), x.A.updateGuildProfile(n, {
@@ -106,7 +106,7 @@ let v = function() {
                     canManageGuild: R
                 }), (0, i.jsx)("div", {
                     className: b.yF
-                }), (0, i.jsx)(T.A, {
+                }), (0, i.jsx)(C.A, {
                     profile: y,
                     canManageGuild: R
                 })]

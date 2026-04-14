@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(726249),
     C = n(607470),
     T = n(826673),
-    S = n(239365),
-    N = n(178629),
+    N = n(239365),
+    S = n(178629),
     x = n(701508),
     v = n(979590),
     b = n(153527),
@@ -206,7 +206,7 @@ let ep = function(e) {
     }, [_, v]);
     let {
         onScroll: M
-    } = (0, N.G)(), B = V.A.getState().getUtmCurrentContext(), Y = (0, $.W)(e => e.registerAssetLoad), K = l.useRef(B);
+    } = (0, S.G)(), B = V.A.getState().getUtmCurrentContext(), Y = (0, $.W)(e => e.registerAssetLoad), K = l.useRef(B);
     l.useEffect(() => {
         K.current = B
     }), l.useEffect(() => {
@@ -252,7 +252,7 @@ let ep = function(e) {
     l.useEffect(() => {
         (0, h.I)(en.BVt.QUEST_HOME)
     }, []), l.useEffect(() => {
-        S.g.trigger()
+        N.g.trigger()
     }, []), l.useEffect(() => {
         if (null != C) return;
         let e = new URLSearchParams(n.search),

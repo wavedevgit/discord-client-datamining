@@ -22,7 +22,7 @@ var i = n(627968),
 function I(e) {
     let {
         eventId: t
-    } = e, n = (0, r.bG)([d.Ay], () => d.Ay.getGuildScheduledEvent(t), [t]), I = (0, r.bG)([g.A], () => g.A.getGuild(n?.guild_id), [n]), f = (0, r.bG)([m.A], () => m.A.getChannel(n?.channel_id), [n]), C = (0, u.nh)(t, null), T = null != n && (0, d.Fd)(n), S = null != n ? (0, _.G3)(n) : null, N = (0, A.A)(n?.guild_id, n?.id, S), x = C?.startTime.toISOString(), {
+    } = e, n = (0, r.bG)([d.Ay], () => d.Ay.getGuildScheduledEvent(t), [t]), I = (0, r.bG)([g.A], () => g.A.getGuild(n?.guild_id), [n]), f = (0, r.bG)([m.A], () => m.A.getChannel(n?.channel_id), [n]), C = (0, u.nh)(t, null), T = null != n && (0, d.Fd)(n), N = null != n ? (0, _.G3)(n) : null, S = (0, A.A)(n?.guild_id, n?.id, N), x = C?.startTime.toISOString(), {
         startDateTimeString: v
     } = l.useMemo(() => T ? {
         startDateTimeString: p.intl.string(p.t.TxqPQR)
@@ -62,7 +62,7 @@ function I(e) {
                     variant: "text-xs/normal",
                     color: "text-muted",
                     children: p.intl.format(p.t["+DLsD8"], {
-                        count: N
+                        count: S
                     })
                 })]
             }), (0, i.jsxs)("div", {

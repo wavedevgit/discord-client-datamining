@@ -32,15 +32,15 @@ function p(e) {
         d.A.closeChannelSidebar(c.fe), E && (0, o.iN)(p.id)
     }, [p.id, E]), {
         acceptMessageRequest: T,
-        isAcceptLoading: S,
-        isUserProfileLoading: N,
+        isAcceptLoading: N,
+        isUserProfileLoading: S,
         isOptimisticAccepted: x
     } = (0, A.t)({
         user: n,
         onAcceptSuccess: C,
         onRejectSuccess: f,
         onError: I
-    }), v = S || N, b = v || x;
+    }), v = N || S, b = v || x;
     return (0, i.jsxs)("div", {
         className: g.kL,
         children: [(0, i.jsx)(h.A, {

@@ -27,11 +27,11 @@ let _ = function(e) {
     } = (0, c.i)({
         showDot: _,
         notificationItem: n
-    }), S = (0, o.E)();
+    }), N = (0, o.E)();
     l.useEffect(() => () => {
-        S()
-    }, [S]);
-    let N = (0, r.bG)([a.A], () => a.A.hasNewContent(), []),
+        N()
+    }, [N]);
+    let S = (0, r.bG)([a.A], () => a.A.hasNewContent(), []),
         x = (0, r.bG)([a.A], () => a.A.isHydrating(), []),
         v = l.useMemo(() => T[0].onViewableItemsChanged, [T]),
         {
@@ -104,7 +104,7 @@ let _ = function(e) {
         })
     }) : (0, i.jsxs)("div", {
         className: h.k,
-        children: [N && !f && (0, i.jsx)("div", {
+        children: [S && !f && (0, i.jsx)("div", {
             style: {
                 position: "sticky",
                 top: 0,

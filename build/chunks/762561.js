@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(379654),
     y = n(946356),
     v = n(490752),
-    j = n(587168),
-    R = n(193738),
+    R = n(587168),
+    j = n(193738),
     O = n(615952),
     L = n(853397),
     M = n(159218),
@@ -55,9 +55,9 @@ function H(e) {
         channelId: H.id
     }), q = l.useRef(null), {
         isHoveringOrFocusing: $,
-        isHovering: Q
-    } = (0, _.A)(q), J = (0, x.fC)(), Z = (0, o.zhh)({
-        opacity: +(null != J.interactionType),
+        isHovering: J
+    } = (0, _.A)(q), Q = (0, x.fC)(), Z = (0, o.zhh)({
+        opacity: +(null != Q.interactionType),
         config: {
             duration: 150
         }
@@ -86,7 +86,7 @@ function H(e) {
             value: X,
             isLoaded: W?.isLoaded,
             children: (0, i.jsx)(x.Hl, {
-                value: J,
+                value: Q,
                 children: (0, i.jsxs)(y.A, {
                     ref: q,
                     user: t,
@@ -94,13 +94,13 @@ function H(e) {
                     themeType: w.d.SIDEBAR,
                     themeOverride: Y,
                     privateBanner: W?.private === !0 ? (0, i.jsx)(S.A, {}) : void 0,
-                    children: [null != J.interactionType && (0, i.jsx)(s.animated.div, {
+                    children: [null != Q.interactionType && (0, i.jsx)(s.animated.div, {
                         style: Z,
                         className: V.tB
                     }), (0, i.jsxs)(a.d_W, {
                         className: null != K ? V.It : void 0,
-                        children: [(0, i.jsxs)(j.A, {
-                            children: [(0, i.jsx)(R.A, {
+                        children: [(0, i.jsxs)(R.A, {
+                            children: [(0, i.jsx)(j.A, {
                                 user: t,
                                 themeType: w.d.SIDEBAR
                             }), (0, i.jsx)(O.A, {
@@ -138,7 +138,7 @@ function H(e) {
                             currentUser: n,
                             displayProfile: W,
                             channel: H,
-                            isHoveringOrFocusing: null == J.interactionType && $,
+                            isHoveringOrFocusing: null == Q.interactionType && $,
                             onOpenProfile: F ? void 0 : ee
                         }), et && (0, i.jsx)("div", {
                             className: V.sJ,
@@ -171,7 +171,7 @@ function H(e) {
                         handleOpenProfile: ee
                     }), W?.profileEffect != null && (0, i.jsx)(h.A, {
                         skuId: W?.profileEffect?.skuId,
-                        isHovering: Q
+                        isHovering: J
                     })]
                 })
             })

@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(414711),
     C = n(723690),
     T = n(652215),
-    S = n(985018),
-    N = n(211587);
+    N = n(985018),
+    S = n(211587);
 
 function x(e) {
     let {
@@ -50,22 +50,22 @@ function x(e) {
     }, [_]);
     return (0, i.jsxs)(i.Fragment, {
         children: [A && (0, i.jsx)("div", {
-            className: N.ou,
+            className: S.ou,
             children: (0, i.jsx)(s.LpS, {
                 color: a.A.unsafe_rawColors.BRAND_500.css,
-                text: S.intl.string(S.t.oMx98L)
+                text: N.intl.string(N.t.oMx98L)
             })
         }), (0, i.jsx)(I.A, {
             icon: s.A9s,
             actionType: I.A.ActionTypes.ACCEPT,
-            tooltip: S.intl.string(S.t.Zcibdf),
+            tooltip: N.intl.string(N.t.Zcibdf),
             onClick: g,
             shouldHighlight: o,
             loading: c
         }), (0, i.jsx)(I.A, {
             icon: s.PGe,
             actionType: I.A.ActionTypes.DENY,
-            tooltip: S.intl.string(S.t.xuio0C),
+            tooltip: N.intl.string(N.t.xuio0C),
             onClick: p,
             shouldHighlight: o
         })]
@@ -91,7 +91,7 @@ function v(e) {
     return (0, i.jsx)(I.A, {
         icon: s.PGe,
         actionType: I.A.ActionTypes.DENY,
-        tooltip: S.intl.string(S.t.eaq81S),
+        tooltip: N.intl.string(N.t.eaq81S),
         onClick: d,
         shouldHighlight: a
     })
@@ -103,9 +103,9 @@ function b(e) {
         applicationId: n,
         userTag: a,
         isProvisional: o
-    } = e, d = l.useMemo(() => t ? S.intl.string(S.t["Uv/eTx"]) : a, [t, a]), h = (0, r.bG)([c.A], () => null != n ? c.A.getApplication(n) : null);
+    } = e, d = l.useMemo(() => t ? N.intl.string(N.t["Uv/eTx"]) : a, [t, a]), h = (0, r.bG)([c.A], () => null != n ? c.A.getApplication(n) : null);
     return (0, i.jsxs)("div", {
-        className: N.P9,
+        className: S.P9,
         children: [!o && (0, i.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: "text-subtle",
@@ -141,14 +141,14 @@ function y(e) {
         status: l,
         showAccountIdentifier: !1,
         subText: d ? (0, i.jsxs)("div", {
-            className: N.Tl,
+            className: S.Tl,
             children: [(0, i.jsx)(s.Uzd, {
                 size: "sm",
                 color: a.A.colors.ICON_FEEDBACK_POSITIVE
             }), (0, i.jsx)(s.Text, {
                 variant: "text-sm/medium",
                 color: "text-muted",
-                children: S.intl.string(S.t.bgL68y)
+                children: N.intl.string(N.t.bgL68y)
             })]
         }) : (0, i.jsx)(b, {
             isGameRelationship: r,
@@ -173,7 +173,7 @@ function O(e) {
     } = (0, d.Ay)(), E = a === T.clD.OFFLINE ? T.clD.UNKNOWN : a, I = (0, r.bG)([_.A], () => _.A.getRelationshipType(t.id)), C = l.useCallback(() => (0, h.openUserProfileModal)({
         userId: t.id,
         sourceAnalyticsLocations: p
-    }), [p, t.id]), S = e => {
+    }), [p, t.id]), N = e => {
         e.stopPropagation(), g.default.track(T.HAw.FRIEND_REQUEST_ACCEPT_MESSAGE_CLICKED), o.A.openPrivateChannel({
             recipientIds: [t.id]
         })
@@ -184,7 +184,7 @@ function O(e) {
         analyticsLocations: p,
         onClick: C,
         children: e => (0, i.jsxs)("div", {
-            className: N.a4,
+            className: S.a4,
             children: [(0, i.jsx)(y, {
                 user: t,
                 hovered: e,
@@ -193,12 +193,12 @@ function O(e) {
                 applicationId: u,
                 isFriend: I === T.eA$.FRIEND
             }), (0, i.jsx)("div", {
-                className: N.o1,
+                className: S.o1,
                 children: I === T.eA$.FRIEND ? (0, i.jsx)(s.Button, {
                     text: "Message",
                     variant: "secondary",
                     icon: s.oyn,
-                    onClick: S
+                    onClick: N
                 }) : n === T.eA$.PENDING_INCOMING ? (0, i.jsx)(x, {
                     user: t,
                     applicationId: u,

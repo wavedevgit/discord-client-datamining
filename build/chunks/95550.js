@@ -38,8 +38,8 @@ var i = n(627968),
     D = n(734057),
     P = n(958590),
     k = n(584777),
-    U = n(383501),
-    w = n(222823),
+    w = n(383501),
+    U = n(222823),
     G = n(994500),
     F = n(351906),
     H = n(287809),
@@ -61,7 +61,7 @@ let et = (0, N.Ld)(),
         let {
             channel: t,
             onClose: n
-        } = e, l = (0, v.Ay)(t) ?? "", a = (0, c.bG)([w.Ay], () => w.Ay.lastMessageId(t.id) ?? t.id);
+        } = e, l = (0, v.Ay)(t) ?? "", a = (0, c.bG)([U.Ay], () => U.Ay.lastMessageId(t.id) ?? t.id);
         return (0, i.jsx)(u.DUT, {
             onClick: () => {
                 (0, R.uh)(Z.ME, t.id), n()
@@ -679,7 +679,7 @@ class el extends l.PureComponent {
     pushToExistingDM = (e, t) => {
         let n = this._searchCounter,
             i = (0, S.dI)(e),
-            l = U.A.getChannelId() === e.id;
+            l = w.A.getChannelId() === e.id;
         A.A.addRecipients(e.id, t, Z.ThZ.ADD_FRIENDS_TO_DM).then(n => {
             if (this.props.onComplete?.(n), l) {
                 if (e.isDM() && n !== e.id) return void m.A.call(n, !1, !0);

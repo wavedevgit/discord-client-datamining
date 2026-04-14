@@ -1,6 +1,6 @@
 /** chunk id: 83982 params = (module,exports,require) **/
 n.d(t, {
-    A: () => U,
+    A: () => w,
     s: () => k
 });
 var i = n(627968),
@@ -56,7 +56,7 @@ function k(e) {
     })
 }
 
-function U(e) {
+function w(e) {
     let {
         participant: t,
         channel: n,
@@ -66,8 +66,8 @@ function U(e) {
         popoutType: S,
         fit: j,
         onVideoResize: k,
-        blocked: U,
-        ignored: w,
+        blocked: w,
+        ignored: U,
         noVideoRender: G = !1,
         pulseSpeakingIndicator: F = !1,
         paused: H = !1
@@ -115,7 +115,7 @@ function U(e) {
         userId: W.id
     }, K) : (0, i.jsx)("div", {
         className: s()(O.Qs, {
-            [O.Kx]: U || w
+            [O.Kx]: w || U
         }),
         children: (0, i.jsx)(f.A, {
             "aria-label": Q,

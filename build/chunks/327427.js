@@ -1,7 +1,7 @@
 /** chunk id: 327427 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => T
+    A: () => C
 });
 var i = n(627968),
     s = n(397927),
@@ -66,9 +66,9 @@ let E = e => {
         currentPeriod: m,
         allPeriods: g,
         metrics: E
-    } = (0, c.A)(t, n), T = (0, u.w)(t), C = (0, d.gN)();
+    } = (0, c.A)(t, n), C = (0, u.w)(t), T = (0, d.gN)();
     return a ? (0, i.jsx)(s.y$y, {}) : (0, i.jsxs)(i.Fragment, {
-        children: [T && (0, i.jsxs)(i.Fragment, {
+        children: [C && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(l.A, {
                 children: A.intl.format(A.t["2raBCT"], {
                     insightsURL: p.X7G.DEVELOPER_PORTAL_GUILD_ANALYTICS_ROLE_SUBSCRIPTION(t)
@@ -118,7 +118,7 @@ let E = e => {
         }), (0, i.jsx)(s.nVY, {
             label: A.intl.string(A.t.O8cDAJ),
             className: f.gy,
-            disabled: C,
+            disabled: T,
             children: (0, i.jsx)(h.A, {
                 guildId: t,
                 application: n
@@ -134,7 +134,7 @@ let E = e => {
     })
 };
 
-function T(e) {
+function C(e) {
     return (0, i.jsx)(a.H, {
         guildId: e.guildId,
         children: (0, i.jsx)(E, {

@@ -29,8 +29,8 @@ function C(e) {
         onChannelContextMenu: n,
         quest: C
     } = e, T = (0, I.G)(), {
-        voiceChannels: S,
-        currentActivities: N,
+        voiceChannels: N,
+        currentActivities: S,
         partiedMembers: x,
         applicationStreams: v,
         guildContext: b
@@ -43,7 +43,7 @@ function C(e) {
     for (let {
             activity: e
         }
-        of(S.length > 0 && S.forEach(e => {
+        of(N.length > 0 && N.forEach(e => {
             let {
                 members: t,
                 channel: l,
@@ -85,7 +85,7 @@ function C(e) {
                 l.default.selectVoiceChannel(t.channelId), (0, r.Nl)(t)
             }
         }, `application-stream-${t.ownerId}`))
-    }), N.forEach((e, t) => {
+    }), S.forEach((e, t) => {
         let {
             activity: n,
             game: l,
@@ -94,7 +94,7 @@ function C(e) {
         } = e;
         if (null == n || null == n.type) return null;
         if (n.type === f.$pd.PLAYING)
-            if (N.length > 1 && !(0, a.A)(n) && null != l) L((0, i.jsx)(E.A.GameSection, {
+            if (S.length > 1 && !(0, a.A)(n) && null != l) L((0, i.jsx)(E.A.GameSection, {
                 icon: l.getIconURL(64),
                 name: l.name,
                 partySize: {
@@ -107,7 +107,7 @@ function C(e) {
             }, `game-${n.session_id??t}-${n.application_id??t}`));
             else if ((0, s.A)(n)) {
             let e = new Set(r.map(e => e.id)),
-                t = S.find(e => null != e)?.channel;
+                t = N.find(e => null != e)?.channel;
             null != t && L((0, i.jsx)(E.A.EmbeddedActivitySection, {
                 activity: n,
                 participants: e,
@@ -122,7 +122,7 @@ function C(e) {
             user: A
         }, `rich-presence-${n.session_id??t}-${A.id}`));
         else if ((0, c.A)(n)) {
-            let e = S.length > 0 && S[0].members.length > 1,
+            let e = N.length > 0 && N[0].members.length > 1,
                 l = r.length > 1;
             L((0, i.jsx)(E.A.TwitchSection, {
                 guildId: b?.id,

@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(710969),
     C = n(814793),
     T = n(73473),
-    S = n(270045),
-    N = n(201805),
+    N = n(270045),
+    S = n(201805),
     x = n(212614),
     v = n(79545),
     b = n(847641),
@@ -101,7 +101,7 @@ function M(e) {
             fromContent: h.uF.ACTIVITY_PANEL,
             questId: n.id
         })
-    }, [n.id, r]), F = (0, N.ix)({
+    }, [n.id, r]), F = (0, S.ix)({
         quest: n,
         questContent: h.uF.ACTIVITY_PANEL,
         sourceQuestContent: h.uF.ACTIVITY_PANEL
@@ -125,7 +125,7 @@ function M(e) {
             className: D.Wp,
             children: [Y ? (0, i.jsx)(j, {
                 quest: n
-            }) : (0, i.jsx)(b.A, {}), (0, i.jsx)(S.C, {
+            }) : (0, i.jsx)(b.A, {}), (0, i.jsx)(N.C, {
                 quest: n,
                 questContent: h.uF.ACTIVITY_PANEL,
                 shouldShowDisclosure: n.userStatus?.enrolledAt == null,

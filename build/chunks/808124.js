@@ -38,7 +38,7 @@ let N = e => {
                 N(!0)
             }, 2500)
         }, []);
-        let [y, v] = l.useState(.65), [j, R] = l.useState(.65), [O, L] = l.useState(.65), [M, D] = l.useState({
+        let [y, v] = l.useState(.65), [R, j] = l.useState(.65), [O, L] = l.useState(.65), [M, D] = l.useState({
             x: 0,
             y: 0
         }), [U, G] = l.useState(!1), [P, k] = l.useState(0), [w, B] = l.useState({
@@ -80,7 +80,7 @@ let N = e => {
                 o = i.y * t,
                 d = n.width / 2 - r,
                 c = n.height / 2 - o;
-            R(t), D({
+            j(t), D({
                 x: d,
                 y: c
             })
@@ -91,18 +91,18 @@ let N = e => {
         let $ = l.useCallback(e => {
             let t = X.current?.getBoundingClientRect();
             if (null == t) return;
-            let n = t.height / j,
-                i = t.width / j,
+            let n = t.height / R,
+                i = t.width / R,
                 l = {
-                    x: e.x / j,
-                    y: e.y / j
+                    x: e.x / R,
+                    y: e.y / R
                 },
-                s = e.y / j > 0,
-                a = e.x / j > 0,
+                s = e.y / R > 0,
+                a = e.x / R > 0,
                 r = l.y - n < -1536,
                 o = l.x - i < -2180;
             r || s || a || o || D(e)
-        }, [X, j]);
+        }, [X, R]);
         return (0, i.jsx)(o.vN3, {
             children: (0, i.jsxs)("div", {
                 ref: X,
@@ -117,8 +117,8 @@ let N = e => {
                             let n = Date.now(),
                                 i = X.current.getBoundingClientRect(),
                                 l = {
-                                    x: (e.pageX - i.x - M.x) / j,
-                                    y: (e.pageY - i.y - M.y) / j
+                                    x: (e.pageX - i.x - M.x) / R,
+                                    y: (e.pageY - i.y - M.y) / R
                                 };
                             !1 !== U && n - U > 250 && u.Ay.update(t.id, {
                                 position: l
@@ -139,7 +139,7 @@ let N = e => {
                 children: [(0, i.jsx)("div", {
                     className: C.VT,
                     style: {
-                        transform: `translate(${M.x}px, ${M.y}px) scale(${j}) `
+                        transform: `translate(${M.x}px, ${M.y}px) scale(${R}) `
                     },
                     children: (0, i.jsx)(m.A, {
                         roomSeats: h.seats,
@@ -190,7 +190,7 @@ let N = e => {
                             icon: o.V0_,
                             disabled: n,
                             onClick: e => {
-                                e.preventDefault(), e.stopPropagation(), q(j - .05)
+                                e.preventDefault(), e.stopPropagation(), q(R - .05)
                             }
                         }), (0, i.jsx)(o.K0, {
                             variant: "icon-only",
@@ -198,7 +198,7 @@ let N = e => {
                             icon: o.r1u,
                             disabled: n,
                             onClick: e => {
-                                e.preventDefault(), e.stopPropagation(), q(j + .05)
+                                e.preventDefault(), e.stopPropagation(), q(R + .05)
                             }
                         })]
                     })]

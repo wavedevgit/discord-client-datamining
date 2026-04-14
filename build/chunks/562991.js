@@ -26,35 +26,34 @@ function x(e) {
         connected: n,
         hovered: s,
         subtitle: x,
-        onClick: I,
-        showEmptyChannelTopic: C
-    } = e, N = (0, r.bG)([u.A], () => u.A.getChannelStatus(t)), {
-        enableHangoutWindow: T
+        onClick: I
+    } = e, C = (0, r.bG)([u.A], () => u.A.getChannelStatus(t)), {
+        enableHangoutWindow: N
     } = (0, h.Dm)({
         guildId: t.guild_id,
         location: "VoiceChannelStatus"
-    }), S = T && (0, A.lr)(t), b = null != N && N.length > 0, y = (0, c.Ay)(t, !0), v = null != x && x.length > 0;
+    }), T = N && (0, A.lr)(t), S = null != C && C.length > 0, b = (0, c.Ay)(t, !0), y = null != x && x.length > 0;
     if (l.useEffect(() => {
-            b && m.default.track(p.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
+            S && m.default.track(p.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
                 channel_id: t.id,
                 guild_id: t.guild_id
             })
-        }, [b, t.id, t.guild_id]), null == t.guild_id) return null;
-    let j = a()(f.Ui, n && y ? f.BI : null);
-    return b ? (0, i.jsx)(d.DUT, {
-        className: j,
-        onClick: y ? I : void 0,
+        }, [S, t.id, t.guild_id]), null == t.guild_id) return null;
+    let v = a()(f.Ui, n && b ? f.BI : null);
+    return S ? (0, i.jsx)(d.DUT, {
+        className: v,
+        onClick: b ? I : void 0,
         children: (0, i.jsx)(d.Text, {
             variant: "text-xs/medium",
             className: a()(f.qS, E.PT),
             children: (0, i.jsx)(o.A, {
-                children: _.A.parseVoiceChannelStatus(N, !0, {
+                children: _.A.parseVoiceChannelStatus(C, !0, {
                     channelId: t.id
                 })
             })
         })
-    }) : n && y && !S && (!v || s) && C ? (0, i.jsxs)(d.DUT, {
-        className: j,
+    }) : n && b && !T && (!y || s) ? (0, i.jsxs)(d.DUT, {
+        className: v,
         onClick: I,
         children: [(0, i.jsx)(d.Text, {
             variant: "text-xs/medium",
@@ -65,7 +64,7 @@ function x(e) {
             className: f.rD,
             size: "xxs"
         })]
-    }) : v ? (0, i.jsx)(o.A, {
+    }) : y ? (0, i.jsx)(o.A, {
         children: x
     }) : null
 }

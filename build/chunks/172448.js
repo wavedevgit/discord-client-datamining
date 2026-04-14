@@ -23,8 +23,8 @@ var r = n(397927),
     f = n(403362),
     C = n(723702),
     T = n(942614),
-    S = n(426620),
-    N = n(771016),
+    N = n(426620),
+    S = n(771016),
     x = n(994277),
     v = n(652215);
 n(436317);
@@ -42,21 +42,21 @@ class O extends s.A {
     }
     handleConnectionOpen() {
         var e;
-        let t, a = S.A.getType();
+        let t, a = N.A.getType();
         if (null == a) return;
         switch (a) {
-            case N.zY.INVITE_UNCLAIMED:
+            case S.zY.INVITE_UNCLAIMED:
                 h.A.flowStart(b.do.INVITE, b.ju.NUF_STARTED);
                 break;
-            case N.zY.ORGANIC_REGISTERED:
+            case S.zY.ORGANIC_REGISTERED:
                 h.A.flowStart(b.do.ORGANIC, b.ju.NUF_STARTED);
                 break;
-            case N.zY.MARKETING_UNCLAIMED:
+            case S.zY.MARKETING_UNCLAIMED:
                 h.A.flowStart(b.do.ORGANIC_MARKETING, b.ju.NUF_STARTED)
         }
         let s = !1,
             y = E.A.getGuildId();
-        if (a === N.zY.INVITE_UNCLAIMED) {
+        if (a === S.zY.INVITE_UNCLAIMED) {
             let e = p.A.getGuild(y);
             null != e && (0, u.Qd)(e) && (s = !0, (0, _.Fy)(e.id))
         }

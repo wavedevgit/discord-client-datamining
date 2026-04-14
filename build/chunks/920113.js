@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(567061),
     C = n(192380),
     T = n(652215),
-    S = n(985018),
-    N = n(43288),
+    N = n(985018),
+    S = n(43288),
     x = n(358943);
 let v = (0, u.A)(function(e) {
     let {
@@ -40,7 +40,7 @@ let v = (0, u.A)(function(e) {
         u = (0, o.bG)([E.A], () => E.A.isRefreshing()),
         v = l.useRef(null);
     (0, h.HU)({
-        location: S.intl.string(S.t["jnXV/V"])
+        location: N.intl.string(N.t["jnXV/V"])
     });
     let [b, y] = l.useState(!1);
     l.useEffect(() => {
@@ -64,9 +64,9 @@ let v = (0, u.A)(function(e) {
         R = l.useCallback(async e => {
             e.metaKey && L ? await (0, I.be)(T.ZSU.ACK_GRAVITY_REGENERATE_FEED_AND_CLEAR_READ_STATES_BUTTON) : await O()
         }, [O, L]),
-        P = b && L ? S.intl.string(S.t.YplSn2) : S.intl.string(S.t.wzzjk9);
+        P = b && L ? N.intl.string(N.t.YplSn2) : N.intl.string(N.t.wzzjk9);
     return n ? (0, i.jsxs)("div", {
-        className: a()(x.TE, N.kL),
+        className: a()(x.TE, S.kL),
         children: [(0, i.jsx)(d.NPJ, {
             theme: r,
             children: e => (0, i.jsxs)(_.A, {
@@ -82,17 +82,17 @@ let v = (0, u.A)(function(e) {
                     icon: d.gXB,
                     "aria-hidden": !0
                 }), (0, i.jsx)(_.A.Title, {
-                    children: S.intl.string(S.t["jnXV/V"])
+                    children: N.intl.string(N.t["jnXV/V"])
                 }), (0, i.jsx)(_.A.Title, {
                     children: (0, i.jsx)("p", {
-                        className: N.HH,
-                        children: S.intl.string(S.t.Ac2OZA)
+                        className: S.HH,
+                        children: N.intl.string(N.t.Ac2OZA)
                     })
                 })]
             })
         }), (0, i.jsx)("div", {
             ref: v,
-            className: a()(x.Qs, N.Qs),
+            className: a()(x.Qs, S.Qs),
             children: (0, i.jsx)(C.A, {
                 scrollContainerRef: v
             })

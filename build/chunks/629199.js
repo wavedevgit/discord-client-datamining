@@ -1,6 +1,6 @@
 /** chunk id: 629199 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => S
 });
 var i = n(627968);
 n(64700);
@@ -48,14 +48,14 @@ let T = e => {
             })]
         })
     },
-    S = g.Ay.getEnableHardwareAcceleration() ? a.JsQ : a.euF;
+    N = g.Ay.getEnableHardwareAcceleration() ? a.JsQ : a.euF;
 
-function N(e) {
+function S(e) {
     let {
         channel: t,
         otherUser: n,
         active: r
-    } = e, c = (0, l.bG)([o.A], () => o.A.useReducedMotion), g = (0, l.bG)([_.A], () => null == n ? null : _.A.getNickname(n.id)), E = !c && r, N = (0, p.j)(t), {
+    } = e, c = (0, l.bG)([o.A], () => o.A.useReducedMotion), g = (0, l.bG)([_.A], () => null == n ? null : _.A.getNickname(n.id)), E = !c && r, S = (0, p.j)(t), {
         avatarDecorationSrc: x
     } = (0, h.A)({
         user: n,
@@ -63,7 +63,7 @@ function N(e) {
         onlyAnimateOnHoverOrFocus: !0
     });
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(S, {
+        children: [(0, i.jsx)(N, {
             className: C.my,
             src: (0, u.Y)(t, 40, E),
             avatarDecoration: x,
@@ -84,7 +84,7 @@ function N(e) {
                     className: C.L7,
                     color: "text-muted",
                     variant: "text-xs/normal",
-                    children: N
+                    children: S
                 })]
             }), (0, i.jsx)(d.A, {
                 hoverText: (0, i.jsx)(I.A, {

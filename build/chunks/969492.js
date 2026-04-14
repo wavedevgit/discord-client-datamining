@@ -1,6 +1,6 @@
 /** chunk id: 969492 params = (module,exports,require) **/
 n.d(t, {
-    H: () => S,
+    H: () => N,
     L: () => T
 });
 var i, l = n(627968);
@@ -24,15 +24,15 @@ var r = n(989349),
     C = n(788868),
     T = ((i = {}).NONE = "none", i.CHURN_DISCOUNT = "churn_discount", i.PREMIUM_GROUP = "premium_group", i.PREMIUM_GROUP_TOOLTIP = "premium_group_tooltip", i.ORBS_UPSELL = "orbs_upsell", i.ORBS_INTRO = "orbs_intro", i.ORBS_DROP = "orbs_drop", i.TOOLTIP = "tooltip", i.MARKETING_MOMENT_POPOVER = "marketing_moment_popover", i.L_PREMIUM_SUB_TOOLTIP = "l_premium_sub_tooltip", i.L_UPSELL = "l_upsell", i.REVERSE_TRIAL = "reverse_trial", i.ORBS_MULTIPLIER = "orbs_multiplier", i);
 
-function S(e) {
+function N(e) {
     let {
         children: t,
         popoverType: n,
         targetElementRef: i,
         churnDiscountOffer: r,
         premiumSubscription: T,
-        receivesUpdatedUpsellPopover: S,
-        orbsRewardAmount: N,
+        receivesUpdatedUpsellPopover: N,
+        orbsRewardAmount: S,
         lastGrantedRewardAmount: x,
         dismissCoachMark: v,
         dismissOrbsDropPopover: b,
@@ -64,10 +64,10 @@ function S(e) {
                 children: t
             });
         case "orbs_upsell":
-            if (S) return (0, l.jsx)(g.A, {
+            if (N) return (0, l.jsx)(g.A, {
                 targetElementRef: i,
                 dismissPopover: v,
-                numOrbs: N,
+                numOrbs: S,
                 children: t
             });
             return (0, l.jsx)(m.A, {

@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(931991),
     N = n(796774),
     E = n(209932),
-    T = n(102597),
-    C = n(904054),
+    C = n(102597),
+    T = n(904054),
     I = n(496502),
     b = n(657331),
     v = n(71393),
@@ -168,13 +168,13 @@ function K(e) {
     s.useEffect(() => {
         (0, N.E7)()
     }, []);
-    let x = s.useMemo(() => l.reduce((e, t) => (e[t.soundId] = new Audio((0, T.A)(t.soundId)), e), {}), [l]),
+    let x = s.useMemo(() => l.reduce((e, t) => (e[t.soundId] = new Audio((0, C.A)(t.soundId)), e), {}), [l]),
         h = 0 === l.length && !r;
 
     function p(e) {
         o.current?.pause();
         let t = x[e.soundId];
-        null != t && (o.current = t, t.currentTime = 0, t.volume = (0, C.A)(e.volume), t.play())
+        null != t && (o.current = t, t.currentTime = 0, t.volume = (0, T.A)(e.volume), t.play())
     }
     if (s.useEffect(() => () => {
             o.current?.pause()
@@ -271,8 +271,8 @@ function Y(e) {
         emojiId: f,
         emojiName: E
     } = t, {
-        analyticsLocations: T
-    } = (0, A.Ay)(), C = (0, d.bG)([S.default], () => _ ?? S.default.getUser(p), [p, _]), {
+        analyticsLocations: C
+    } = (0, A.Ay)(), T = (0, d.bG)([S.default], () => _ ?? S.default.getUser(p), [p, _]), {
         canManageGuildExpression: v
     } = (0, j.nr)(o), y = s.useMemo(() => v(t), [t, v]), O = null != f || null != E, [G, D] = s.useState(!1), M = (0, I.v)(t, o.id);
     async function k() {
@@ -286,19 +286,19 @@ function Y(e) {
         }
     }
     s.useEffect(() => {
-        null == C && e();
+        null == T && e();
         async function e() {
             await (0, x.wz)(p)
         }
-    }, [C, p]);
+    }, [T, p]);
     let U = s.useCallback(() => {
-            null != C && (0, b.openUserProfileModal)({
-                userId: C.id,
+            null != T && (0, b.openUserProfileModal)({
+                userId: T.id,
                 guildId: o.id,
-                sourceAnalyticsLocations: T
+                sourceAnalyticsLocations: C
             })
-        }, [C, o.id, T]),
-        B = L.Ay.useUserTag(C);
+        }, [T, o.id, C]),
+        B = L.Ay.useUserTag(T);
     return (0, i.jsxs)("div", {
         className: r()(w.nM, {
             [w.vu]: l
@@ -326,14 +326,14 @@ function Y(e) {
                     className: w.Ns
                 })]
             })
-        }), null != C && (0, i.jsxs)(g.DUT, {
+        }), null != T && (0, i.jsxs)(g.DUT, {
             className: w.xp,
             onClick: U,
             children: [(0, i.jsx)(g.euF, {
                 "aria-label": B,
                 size: g._3J.SIZE_24,
                 className: w.Cp,
-                src: (0, R.ku)(C, !1, 24)
+                src: (0, R.ku)(T, !1, 24)
             }), (0, i.jsx)(g.Text, {
                 variant: "text-sm/normal",
                 lineClamp: 1,

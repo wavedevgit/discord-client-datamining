@@ -3,7 +3,7 @@
 let i, s, l;
 n.d(t, {
     A: () => K,
-    y: () => C
+    y: () => T
 });
 var r, a = n(735438),
     o = n.n(a),
@@ -21,8 +21,8 @@ var r, a = n(735438),
     j = n(488926),
     N = n(555337),
     E = n(652215),
-    T = n(178758),
-    C = ((r = {}).SOLID = "solid", r.GRADIENT = "gradient", r.HOLOGRAPHIC = "holographic", r);
+    C = n(178758),
+    T = ((r = {}).SOLID = "solid", r.GRADIENT = "gradient", r.HOLOGRAPHIC = "holographic", r);
 let I = new Set,
     b = E.XlH.CLOSED,
     v = !1,
@@ -72,14 +72,14 @@ function w(e, t) {
                 tertiary_color: null
             },
             gradient: {
-                primary_color: T.lO.primary_color,
-                secondary_color: T.lO.secondary_color,
+                primary_color: C.lO.primary_color,
+                secondary_color: C.lO.secondary_color,
                 tertiary_color: null
             },
             holographic: {
-                primary_color: T.jl.primary_color,
-                secondary_color: T.jl.secondary_color,
-                tertiary_color: T.jl.tertiary_color
+                primary_color: C.jl.primary_color,
+                secondary_color: C.jl.secondary_color,
+                tertiary_color: C.jl.tertiary_color
             }
         };
         null != t.colors && (s[n] = {

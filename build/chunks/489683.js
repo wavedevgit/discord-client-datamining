@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(827343),
     C = n(442433),
     T = n(951001),
-    S = n(707606),
-    N = n(155718),
+    N = n(707606),
+    S = n(155718),
     x = n(933958),
     v = n(967812),
     b = n(404522),
@@ -76,8 +76,8 @@ var i = n(627968),
     ef = n(702904),
     eC = n(471993),
     eT = n(442353),
-    eS = n(970636),
-    eN = n(616356),
+    eN = n(970636),
+    eS = n(616356),
     ex = n(961350),
     ev = n(734057),
     eb = n(71393),
@@ -218,19 +218,19 @@ function e0(e) {
         limit: g
     } = (0, eg.A)(t), C = l.useCallback(() => {
         (0, eI.A)()
-    }, []), T = (0, Q.Us)(), S = l.useCallback(e => {
+    }, []), T = (0, Q.Us)(), N = l.useCallback(e => {
         if (eO.Ay.isVideoEnabled() === e) return;
         let n = () => {
             f.A.setVideoEnabled(e), e && (0, J.pX)(eF.BVt.CHANNEL(t.getGuildId() ?? eF.ME, t.id))
         };
         (0, w.X)(o, w.O.CAMERA, e), e ? (0, eT.A)(n, T) : n()
-    }, [t, T, o]), N = A || n || h, {
+    }, [t, T, o]), S = A || n || h, {
         Component: v,
         play: b,
         events: y
     } = (0, m.K)(d.enabled ? "disable" : "enable");
-    return l.useEffect(() => () => b(), [d.enabled, b]), (0, i.jsx)(eS.r, {
-        onChange: S,
+    return l.useEffect(() => () => b(), [d.enabled, b]), (0, i.jsx)(eN.r, {
+        onChange: N,
         onCameraUnavailable: C,
         hasPermission: u,
         channelLimit: g,
@@ -248,7 +248,7 @@ function e0(e) {
             } = e, u = (0, i.jsx)(v, {
                 size: "md",
                 className: a()(e$.iA, {
-                    [e$.ij]: !N
+                    [e$.ij]: !S
                 }),
                 color: "currentColor"
             });
@@ -303,7 +303,7 @@ function e0(e) {
                             wrapperClassName: e$.x6,
                             fullWidth: !0,
                             focusProps: eQ,
-                            children: N ? u : (0, i.jsxs)(k.A, {
+                            children: S ? u : (0, i.jsxs)(k.A, {
                                 align: k.A.Align.CENTER,
                                 children: [u, ez.intl.string(ez.t.FlNoSV)]
                             })
@@ -327,7 +327,7 @@ function e1(e) {
     } = (0, c.cf)([x.Ay], () => ({
         userInActivity: null != x.Ay.getSelfEmbeddedActivityForChannel(t.id)
     })), m = (0, b.b)({
-        surface: N.YI.VOICE_LAUNCHER,
+        surface: S.YI.VOICE_LAUNCHER,
         skipFetchingShelf: !0
     }), g = d !== y.xy.CAN_LAUNCH, {
         Component: I,
@@ -413,7 +413,7 @@ function e7(e) {
             closePopout: n,
             isHovered: _
         })
-    }, [t, _]), S = l.useCallback(() => {
+    }, [t, _]), N = l.useCallback(() => {
         o(), _ ? m(!1) : m(!0), (0, w.X)(r, w.O.GIFTING), g === u.M.GAME_SHOP_RTC_GIFTING_NEW_BADGE && f(eW.i.TAKE_ACTION)
     }, [r, o, _, g, f]);
     return (0, i.jsx)(I.YNO, {
@@ -438,7 +438,7 @@ function e7(e) {
                 size: E.$n.Sizes.MEDIUM,
                 buttonRef: n,
                 ...A,
-                onClick: S,
+                onClick: N,
                 className: a()(e$.x6, e$.Sq),
                 innerClassName: e$.bk,
                 wrapperClassName: e$.x6,
@@ -470,21 +470,21 @@ function e6(e) {
             analyticsLocations: A
         } = (0, P.Ay)(),
         h = (0, c.bG)([eD.default], () => eD.default.getCurrentUser()),
-        m = (0, c.yK)([eN.A], () => eN.A.getAllActiveStreams()),
+        m = (0, c.yK)([eS.A], () => eS.A.getAllActiveStreams()),
         g = (0, ep.A)(n),
         f = n.getGuildId(),
         C = (0, c.cf)([x.Ay], () => null != x.Ay.getSelfEmbeddedActivityForChannel(n.id)),
         T = (0, er.Ay)(n),
-        S = l.useCallback(() => {
+        N = l.useCallback(() => {
             (0, eC.A)(f, n.id, A)
         }, [f, n.id, A]),
-        N = m.find(e => e.ownerId === h?.id),
+        S = m.find(e => e.ownerId === h?.id),
         v = (0, eE.T)(n, h, m);
-    t = null == N ? r ? S : ef.A : () => (0, K.A)(N);
-    let b = null != N || v.length > 0,
+    t = null == S ? r ? N : ef.A : () => (0, K.A)(S);
+    let b = null != S || v.length > 0,
         y = g ? ez.intl.string(ez.t.fjBNo1) : ez.intl.string(ez.t.uQn9B8),
         O = C || s || T,
-        L = null != N,
+        L = null != S,
         {
             Component: R,
             events: D,
@@ -509,7 +509,7 @@ function e6(e) {
                 currentUser: h,
                 activeStreams: m,
                 onClose: t,
-                handleGoLive: r ? S : ef.A,
+                handleGoLive: r ? N : ef.A,
                 onInteraction: (0, U.s)("ManageStreamsMenu", u, {
                     entrypoint: eY.GK.OTHER_BUTTON
                 })
@@ -531,11 +531,11 @@ function e6(e) {
                     buttonRef: d,
                     size: E.$n.Sizes.MEDIUM,
                     onClick: e => {
-                        (0, w.X)(u, w.O.STREAM, null == N), b ? n(e) : t()
+                        (0, w.X)(u, w.O.STREAM, null == S), b ? n(e) : t()
                     },
                     disabled: !g || o,
                     className: a()(e$.x6, e$.Sq, {
-                        [e$.rK]: null != N,
+                        [e$.rK]: null != S,
                         [e$.r9]: !g || o
                     }),
                     ...b ? r : null,
@@ -803,7 +803,7 @@ function e5(e) {
         })
     })
 }
-let e2 = (0, S.A)(function(e) {
+let e2 = (0, N.A)(function(e) {
     let t = (0, F.A)(),
         n = (0, c.bG)([H.default], () => H.default.getAwaitingRemoteSessionInfo()),
         r = (0, c.bG)([eD.default], () => eD.default.getCurrentUser()),
@@ -832,13 +832,13 @@ let e2 = (0, S.A)(function(e) {
         })),
         h = (0, c.bG)([eO.Ay, z.A], () => z.A.hasHotspot(eK._.VOICE_PANEL_INTRODUCTION) && (0, eG.mv)(r) && !eO.Ay.isInteractionRequired() && !o?.isGuildStageVoice()),
         _ = (0, c.bG)([ej.A], () => null != a && ej.A.hasVideo(a), [a]),
-        m = (0, c.bG)([eN.A], () => eN.A.getCurrentUserActiveStream()),
+        m = (0, c.bG)([eS.A], () => eS.A.getCurrentUserActiveStream()),
         g = (0, c.bG)([ey.A], () => ey.A.hasLayers()),
         p = (0, c.bG)([$.A], () => $.A.isViewingRoles(d)),
         E = (0, c.bG)([eL.A], () => p && !eL.A.can(eF.xBc.VIEW_CHANNEL, o), [p, o]),
         f = e_.vL.useSetting(),
-        [C, T, S] = (0, c.yK)([eM.Ay, es.A], () => o?.isGuildStageVoice() ? [es.A.getMutableParticipants(o.id, eo.ip.SPEAKER), es.A.getParticipantsVersion(o.id), null] : [null, null, null != o ? eM.Ay.getVoiceStatesForChannel(o) : null], [o]),
-        N = l.useMemo(() => C?.map(e => {
+        [C, T, N] = (0, c.yK)([eM.Ay, es.A], () => o?.isGuildStageVoice() ? [es.A.getMutableParticipants(o.id, eo.ip.SPEAKER), es.A.getParticipantsVersion(o.id), null] : [null, null, null != o ? eM.Ay.getVoiceStatesForChannel(o) : null], [o]),
+        S = l.useMemo(() => C?.map(e => {
             let {
                 user: t,
                 userNick: n,
@@ -849,7 +849,7 @@ let e2 = (0, S.A)(function(e) {
                 nick: n,
                 voiceState: i
             }
-        }) ?? S ?? [], [C, T, S]),
+        }) ?? N ?? [], [C, T, N]),
         [x, b] = l.useState(!1);
     l.useEffect(() => {
         (p || E) && b(!1)
@@ -881,7 +881,7 @@ let e2 = (0, S.A)(function(e) {
                 hasVideo: _,
                 selfStream: m,
                 hasLayers: g,
-                voiceStates: N,
+                voiceStates: S,
                 showVoiceStates: f,
                 shouldShowVoicePanelIntroduction: h,
                 showSocialLayerStorefrontGiftingButton: j && M && w,

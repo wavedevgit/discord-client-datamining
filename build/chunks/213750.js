@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(7584),
     C = n(486164),
     T = n(821589),
-    S = n(979286),
-    N = n(335657),
+    N = n(979286),
+    S = n(335657),
     x = n(252362),
     v = n(540063),
     b = n(870308),
@@ -55,7 +55,7 @@ let M = e => {
             noCache: e,
             includeUnpublished: t
         } = (0, y.A)();
-        return (0, N.y)(L.G2.HOME, {
+        return (0, S.y)(L.G2.HOME, {
             noCache: e,
             includeUnpublished: t
         }, void 0, !0), null
@@ -76,17 +76,17 @@ let M = e => {
             hoverGradientEnd: I,
             ...f
         } = e, C = (0, s.rm)("shop"), T = p.A.HOME_PAGE_SHOP_TAB, {
-            analyticsLocations: N
+            analyticsLocations: S
         } = (0, E.Ay)(T), [x, v] = l.useState(!1), b = l.useCallback(() => {
-            void 0 !== a && a(), void 0 !== o && (0, S.Cz)({
+            void 0 !== a && a(), void 0 !== o && (0, N.Cz)({
                 tab: o,
-                analyticsLocations: N,
+                analyticsLocations: S,
                 analyticsSource: T
-            }), v(!0), (0, S.Sw)({
+            }), v(!0), (0, N.Sw)({
                 analyticsSource: T,
-                analyticsLocations: N
+                analyticsLocations: S
             })
-        }, [T, N, a, v, o]), y = R.BVt.COLLECTIBLES_SHOP;
+        }, [T, S, a, v, o]), y = R.BVt.COLLECTIBLES_SHOP;
         return (0, i.jsxs)(i.Fragment, {
             children: [x && (0, i.jsx)(w, {}), (0, i.jsx)(m.z9, {
                 showHoverGradient: A ?? !1,

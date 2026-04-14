@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(203982),
     y = n(975571),
     v = n(793322),
-    j = n(174768),
-    R = n(586068),
+    R = n(174768),
+    j = n(586068),
     O = n(826050),
     L = n(652215),
     M = n(985018),
@@ -53,7 +53,7 @@ class G extends l.Component {
     };
     render() {
         let e = x.A.getGuild(this.props.channel.guild_id);
-        return (0, i.jsx)(R.c3, {
+        return (0, i.jsx)(j.c3, {
             ...this.props,
             children: (0, i.jsx)("div", {
                 className: D.MD,
@@ -89,7 +89,7 @@ let P = o.Ay.connectStores([C.Ay, f.A], e => {
         return {
             unread: E.default.hasUnread(t.id)
         }
-    })(R.OS),
+    })(j.OS),
     B = o.Ay.connectStores([C.Ay, I.A], e => {
         let {
             channel: t
@@ -98,7 +98,7 @@ let P = o.Ay.connectStores([C.Ay, f.A], e => {
             mentions: C.Ay.getMentionCount(t.id),
             status: n
         }
-    })(R.nG),
+    })(j.nG),
     V = o.Ay.connectStores([f.A, C.Ay, I.A], e => {
         let {
             user: t
@@ -108,7 +108,7 @@ let P = o.Ay.connectStores([C.Ay, f.A], e => {
             status: I.A.getStatus(t.id),
             isMobile: I.A.isMobileOnline(t.id)
         }
-    })(R.KJ);
+    })(j.KJ);
 
 function H(e, t, n) {
     return (0, i.jsx)(d.m, {
@@ -426,7 +426,7 @@ class F extends l.PureComponent {
         });
         switch (n.type) {
             case _.rD.HEADER:
-                return (0, i.jsx)(R.Y9, {
+                return (0, i.jsx)(j.Y9, {
                     children: n.record.text
                 }, `${n.type}-${n.record.id}`);
             case _.rD.TEXT_CHANNEL:
@@ -486,7 +486,7 @@ class F extends l.PureComponent {
                     score: s ? n.score : void 0
                 }, `${n.type}-${n.record.id}`);
             case _.rD.APPLICATION:
-                return (0, i.jsx)(R.lg, {
+                return (0, i.jsx)(j.lg, {
                     id: this.getRowId(t),
                     focused: l >= 0 && t === l,
                     onClick: () => this.selectResult(n),
@@ -495,7 +495,7 @@ class F extends l.PureComponent {
                     application: n.record
                 }, `${n.type}-${n.record.id}`);
             case _.rD.LINK:
-                return (0, i.jsx)(R.N_, {
+                return (0, i.jsx)(j.N_, {
                     focused: l >= 0 && t === l,
                     onClick: () => this.selectResult(n),
                     onMouseEnter: () => this.focusResult(n),
@@ -506,7 +506,7 @@ class F extends l.PureComponent {
                     id: this.getRowId(t)
                 }, `${n.type}-${n.record.id}`);
             case _.rD.IN_APP_NAVIGATION:
-                return (0, i.jsx)(R.vw, {
+                return (0, i.jsx)(j.vw, {
                     focused: l >= 0 && t === l,
                     onClick: () => this.selectResult(n),
                     onMouseEnter: () => this.focusResult(n),
@@ -562,7 +562,7 @@ class F extends l.PureComponent {
 }
 
 function W(e) {
-    let t = (0, o.cf)([j.A], () => j.A.getProps());
+    let t = (0, o.cf)([R.A], () => R.A.getProps());
     return (0, i.jsx)(F, {
         ...t,
         ...e

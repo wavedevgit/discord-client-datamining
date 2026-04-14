@@ -37,8 +37,8 @@ var i = n(627968),
     D = n(399849),
     P = n(275731),
     k = n(345812),
-    U = n(652215),
-    w = n(806931),
+    w = n(652215),
+    U = n(806931),
     G = n(731854),
     F = n(985018),
     H = n(633916);
@@ -56,7 +56,7 @@ function V(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [n || l ? null : (0, i.jsx)(P.A, {
             participant: t
-        }), l || null == c || c.state === U.XYD.ENDED || c.state === U.XYD.FAILED ? null : (0, i.jsx)(x.A, {
+        }), l || null == c || c.state === w.XYD.ENDED || c.state === w.XYD.FAILED ? null : (0, i.jsx)(x.A, {
             size: g.Ay.Sizes.SMALL,
             className: H.Ok,
             participant: t,
@@ -94,19 +94,19 @@ function W(e) {
         selected: n,
         isSelfStream: Y.id === W
     });
-    if ($?.state === U.XYD.ENDED) return (0, i.jsx)(M.A, {
+    if ($?.state === w.XYD.ENDED) return (0, i.jsx)(M.A, {
         selected: n,
         stream: $,
         width: x
     });
-    if (null != ei || $?.state === U.XYD.FAILED) return (0, i.jsx)(L.A, {
+    if (null != ei || $?.state === w.XYD.FAILED) return (0, i.jsx)(L.A, {
         avError: ei?.type,
         avErrorContext: ei,
         selected: n,
         stream: t.stream,
         width: x
     });
-    if (t.type === w.lp.HIDDEN_STREAM) return (0, i.jsx)(O.A, {
+    if (t.type === U.lp.HIDDEN_STREAM) return (0, i.jsx)(O.A, {
         selected: n,
         participant: t,
         width: x
@@ -119,7 +119,7 @@ function W(e) {
             streamId: J,
             videoComponent: V,
             fit: g,
-            paused: k || $?.state === U.XYD.PAUSED || ee,
+            paused: k || $?.state === w.XYD.PAUSED || ee,
             videoSpinnerContext: Q ? m.u.SELF_STREAM : m.u.REMOTE_STREAM,
             userId: Y.id,
             streamKey: t.id

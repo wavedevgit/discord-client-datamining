@@ -34,8 +34,8 @@ function v(e) {
         channel: t,
         isChannelSelected: n,
         isChannelCollapsed: v,
-        voiceStates: j,
-        enableConnectedUserLimit: R,
+        voiceStates: R,
+        enableConnectedUserLimit: j,
         enableActivities: O,
         isSubscriptionGated: L,
         needSubscriptionToAccess: M,
@@ -71,12 +71,12 @@ function v(e) {
         color: "text-muted",
         children: (0, a.Gub)(Y)
     });
-    let X = j?.length ?? 0;
-    return null != R && R && W ? (0, i.jsx)(N.A, {
+    let X = R?.length ?? 0;
+    return null != j && j && W ? (0, i.jsx)(N.A, {
         userCount: X,
         video: H || F,
         channel: t
-    }) : v && (0, f.t)(j) && z ? (0, i.jsx)(a.LpS, {
+    }) : v && (0, f.t)(R) && z ? (0, i.jsx)(a.LpS, {
         text: y.intl.string(y.t.dI3q4h),
         color: s.A.unsafe_rawColors.RED_400.css
     }) : null != V ? (0, i.jsx)(d.z, {

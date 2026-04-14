@@ -10,10 +10,10 @@ let a = (0, n(945810).mj)({
             enabled: !1
         },
         variations: {
-            1: {
+            0: {
                 enabled: !0
             },
-            2: {
+            1: {
                 enabled: !0
             }
         }

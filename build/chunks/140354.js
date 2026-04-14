@@ -29,15 +29,15 @@ function C(e) {
         ref: r,
         width: C,
         height: T
-    } = (0, d.Ay)(), S = l.useCallback(() => {
+    } = (0, d.Ay)(), N = l.useCallback(() => {
         null != t && null != n && ((0, g.sy)(t), (0, p.default)({
             guildId: t,
             returnChannelId: n
         }))
-    }, [t, n]), N = (0, s.bG)([h.A], () => h.A.getGuild(t)), x = l.useMemo(() => null == N ? null : _.Ay.getGuildSplashURL({
-        id: N.id,
-        splash: N.splash
-    }), [N]), v = (0, u.S)(x);
+    }, [t, n]), S = (0, s.bG)([h.A], () => h.A.getGuild(t)), x = l.useMemo(() => null == S ? null : _.Ay.getGuildSplashURL({
+        id: S.id,
+        splash: S.splash
+    }), [S]), v = (0, u.S)(x);
     return (0, i.jsxs)("div", {
         className: a()(I.kf, f.iW, {
             [f.Me]: null == x
@@ -73,7 +73,7 @@ function C(e) {
                 variant: "overlay-primary",
                 size: "md",
                 text: E.intl.string(E.t.VVFjAC),
-                onClick: S
+                onClick: N
             })]
         })]
     })

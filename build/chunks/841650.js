@@ -63,7 +63,7 @@ function E() {
     })
 }
 
-function T(e) {
+function C(e) {
     let {
         channelId: t
     } = e, n = (0, _.fE)(t), s = (0, _.fE)(n?.parent_id ?? p.dJq);
@@ -80,11 +80,11 @@ function T(e) {
     })
 }
 
-function C(e) {
+function T(e) {
     let {
         value: t
     } = e;
-    return null != t ? (0, i.jsx)(T, {
+    return null != t ? (0, i.jsx)(C, {
         channelId: t
     }) : (0, i.jsx)(E, {})
 }
@@ -98,10 +98,10 @@ function I(e) {
         omitChannelIds: f,
         "aria-labelledby": N,
         onChange: E
-    } = e, T = A.intl.string(A.t.d7YJMK), I = (0, a.bG)([g.A], () => g.A.getCategories(l), [l]), b = (0, _.fE)(r ?? p.dJq), v = s.useMemo(() => {
+    } = e, C = A.intl.string(A.t.d7YJMK), I = (0, a.bG)([g.A], () => g.A.getCategories(l), [l]), b = (0, _.fE)(r ?? p.dJq), v = s.useMemo(() => {
         let e = [{
                 value: null,
-                label: T
+                label: C
             }],
             t = !1;
         for (let n of I._categories)
@@ -116,7 +116,7 @@ function I(e) {
             value: r,
             label: (0, c.m1)(b, h.default, x.A)
         }), e
-    }, [T, r, b, I, f, u]);
+    }, [C, r, b, I, f, u]);
     return (0, i.jsx)(o.Pw, {
         label: t,
         placeholder: A.intl.string(A.t.r2ptsz),
@@ -135,10 +135,10 @@ function I(e) {
         },
         isSelected: e => null != r && j(e) === j(r),
         serialize: j,
-        renderOptionLabel: C,
+        renderOptionLabel: T,
         renderOptionValue: e => {
             let [t] = e;
-            return C(t)
+            return T(t)
         },
         "aria-labelledby": N,
         "data-migration-pending": !0

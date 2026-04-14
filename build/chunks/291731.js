@@ -21,14 +21,14 @@ let g = [],
     C = !1,
     T = null;
 
-function S() {
+function N() {
     if (i = null != (l = u.A.getChannel()) ? A.A.getGuild(l.guild_id) : null, g = null != l && null != i && h.A.can(m.xBc.MANAGE_WEBHOOKS, l) ? _.A.getWebhooksForChannel(i.id, l.id) : [], null != p) {
         let e = x(p.id);
         null != e && (p = e)
     }
     I = m.XlH.OPEN, f = {}, C = !1
 }
-let N = s().debounce(() => {
+let S = s().debounce(() => {
     C && ((null == p || s().isEqual(p, x(p.id))) && (C = !1), C || b.emitChange())
 }, 500);
 
@@ -77,8 +77,8 @@ class v extends o.Ay.Store {
     }
 }
 let b = new v(d.h, __OVERLAY__ ? {} : {
-        INTEGRATION_SETTINGS_INIT: S,
-        INTEGRATION_SETTINGS_SAVE_SUCCESS: S,
+        INTEGRATION_SETTINGS_INIT: N,
+        INTEGRATION_SETTINGS_SAVE_SUCCESS: N,
         CHANNEL_SETTINGS_SET_SECTION: function(e) {
             let {
                 section: t
@@ -87,7 +87,7 @@ let b = new v(d.h, __OVERLAY__ ? {} : {
             if (r = m.wLn.OVERVIEW, null == i) {
                 let e = u.A.getChannel(),
                     t = e?.getGuildId();
-                null != e && null != t && (c.A.fetchForChannel(t, e.id), E = !0), S()
+                null != e && null != t && (c.A.fetchForChannel(t, e.id), E = !0), N()
             }
         },
         INTEGRATION_SETTINGS_SET_SECTION: function(e) {
@@ -114,7 +114,7 @@ let b = new v(d.h, __OVERLAY__ ? {} : {
             if (null == p) return !1;
             p = {
                 ...p
-            }, null != t.name && p.name !== t.name && (p.name = t.name, C = !0), void 0 !== t.avatar && p.avatar !== t.avatar && (p.avatar = t.avatar, C = !0), null != t.channelId && p.channel_id !== t.channelId && (p.channel_id = t.channelId, C = !0), C && N()
+            }, null != t.name && p.name !== t.name && (p.name = t.name, C = !0), void 0 !== t.avatar && p.avatar !== t.avatar && (p.avatar = t.avatar, C = !0), null != t.channelId && p.channel_id !== t.channelId && (p.channel_id = t.channelId, C = !0), C && S()
         },
         CHANNEL_SETTINGS_CLOSE: function() {
             l = null, i = null, g = [], p = null, I = m.XlH.CLOSED
@@ -149,7 +149,7 @@ let b = new v(d.h, __OVERLAY__ ? {} : {
                     } = t;
                     if (n === e.id) return !0
                 }) && g.push(e);
-                g = [...g], N()
+                g = [...g], S()
             }
         },
         INTEGRATION_SETTINGS_SUBMITTING: function() {

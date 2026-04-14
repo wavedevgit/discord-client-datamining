@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(579473),
     C = n(590202),
     T = n(734736),
-    S = n(247455),
-    N = n(57718),
+    N = n(247455),
+    S = n(57718),
     x = n(652215),
     v = n(985018),
     b = n(864833);
@@ -99,7 +99,7 @@ let y = (0, l.memo)(function(e) {
                 })
             }), H ? (0, i.jsx)(T.A, {
                 className: b.Sl
-            }) : Y ? (0, i.jsx)(S.A, {
+            }) : Y ? (0, i.jsx)(N.A, {
                 className: b.Sl,
                 isAnimated: n,
                 questName: t.config.messages.questName
@@ -127,7 +127,7 @@ let y = (0, l.memo)(function(e) {
                 style: {
                     transform: `translateY(-${X}px)`
                 },
-                children: (0, i.jsx)(N.Ay, {
+                children: (0, i.jsx)(S.Ay, {
                     logotypeClassName: a()(b.wm, {
                         [b.A0]: $
                     }),

@@ -43,7 +43,7 @@ function b(e) {
         inPopout: s,
         handleClose: a,
         userParticipantCount: r
-    }) : r > 1 ? (0, i.jsx)(j, {
+    }) : r > 1 ? (0, i.jsx)(R, {
         channel: t,
         guild: n,
         width: l,
@@ -193,7 +193,7 @@ function v(e) {
     })
 }
 
-function j(e) {
+function R(e) {
     let {
         channel: t,
         guild: n,

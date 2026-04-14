@@ -23,8 +23,8 @@ var i = n(627968),
     f = n(558416),
     C = n(358832),
     T = n(663111),
-    S = n(851109),
-    N = n(667086),
+    N = n(851109),
+    S = n(667086),
     x = n(87001),
     v = n(52144),
     b = n(966597),
@@ -50,13 +50,13 @@ let k = (0, r.v)(() => ({
         let {
             notificationCenterVariant: e,
             entrypoint: t
-        } = (0, S.X8)({
+        } = (0, N.X8)({
             location: "AppTitleBar"
         }), {
             hasBugReporterAccess: n
         } = A.A.useConfig({
             location: "HeaderBar"
-        }), r = (0, s.bG)([D.A], () => D.A.isDeveloper), k = (0, R.Uk)("VoiceDareTitleBarButton"), V = (0, s.bG)([j.A, c.A], () => L.Q_.getSetting() && null != j.A.testModeApplicationId && null != c.A.getApplication(j.A.testModeApplicationId) && (0, u.A)(c.A.getApplication(j.A.testModeApplicationId))), B = null !== e && t === S.RK.TITLE_BAR_LEFT, H = null === e, {
+        }), r = (0, s.bG)([D.A], () => D.A.isDeveloper), k = (0, R.Uk)("VoiceDareTitleBarButton"), V = (0, s.bG)([j.A, c.A], () => L.Q_.getSetting() && null != j.A.testModeApplicationId && null != c.A.getApplication(j.A.testModeApplicationId) && (0, u.A)(c.A.getApplication(j.A.testModeApplicationId))), B = null !== e && t === N.RK.TITLE_BAR_LEFT, H = null === e, {
             enabled: F
         } = g.s.useConfig({
             location: "AppTitleBar"
@@ -92,7 +92,7 @@ let k = (0, r.v)(() => ({
                     leading: (0, i.jsxs)(i.Fragment, {
                         children: [z && (0, i.jsx)(_.A, {
                             firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === $ ? e : void 0
-                        }), B && (0, i.jsx)(N.A, {
+                        }), B && (0, i.jsx)(S.A, {
                             focusSectionProps: "NOTIFICATIONS_INBOX" === $ ? e : void 0
                         })]
                     }),

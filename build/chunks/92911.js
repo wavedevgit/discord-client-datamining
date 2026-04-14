@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(263063),
     N = n(714991),
     E = n(95035),
-    T = n(447696),
-    C = n(861410),
+    C = n(447696),
+    T = n(861410),
     I = n(734057),
     b = n(603349),
     v = n(954571),
@@ -48,8 +48,8 @@ let k = "WELCOME_CHANNEL",
             } = e,
             N = s.useRef(null),
             E = (0, u.bG)([I.A], () => I.A.getChannel(a.channel_id)),
-            T = (0, u.bG)([f.Ay], () => null != a.emoji_id ? f.Ay.getUsableCustomEmojiById(a.emoji_id) : null),
-            C = null != E && S.MJ(O.xBc.VIEW_CHANNEL, E),
+            C = (0, u.bG)([f.Ay], () => null != a.emoji_id ? f.Ay.getUsableCustomEmojiById(a.emoji_id) : null),
+            T = null != E && S.MJ(O.xBc.VIEW_CHANNEL, E),
             v = (0, A.gU)(E) ?? m.N$i,
             y = (0, p.Ay)(E, !1),
             R = () => {
@@ -89,10 +89,10 @@ let k = "WELCOME_CHANNEL",
             });
         return s.useLayoutEffect(() => (L(U(N)), () => {
             L(null), U(null)
-        }), [L, U]), t = C ? null != T || null != a.emoji_name ? (0, i.jsx)(x.A, {
-            emojiId: T?.id,
-            emojiName: null != T ? T.name : a.emoji_name,
-            animated: !!T?.animated
+        }), [L, U]), t = T ? null != C || null != a.emoji_name ? (0, i.jsx)(x.A, {
+            emojiId: C?.id,
+            emojiName: null != C ? C.name : a.emoji_name,
+            animated: !!C?.animated
         }) : (0, i.jsx)(v, {
             size: "md",
             color: "currentColor",
@@ -129,7 +129,7 @@ let k = "WELCOME_CHANNEL",
                     color: "text-strong",
                     children: a.description
                 }), (0, i.jsxs)(m.Text, {
-                    className: C ? void 0 : M.op,
+                    className: T ? void 0 : M.op,
                     variant: "text-xs/normal",
                     color: "text-default",
                     children: [(0, i.jsx)(v, {
@@ -137,7 +137,7 @@ let k = "WELCOME_CHANNEL",
                         size: "xxs",
                         color: "currentColor"
                     }), (0, i.jsx)("span", {
-                        children: C ? y : D.intl.string(D.t.zFuCsF)
+                        children: T ? y : D.intl.string(D.t.zFuCsF)
                     })]
                 })]
             }), (0, i.jsx)(m.K0, {
@@ -154,23 +154,23 @@ let k = "WELCOME_CHANNEL",
         } = e, {
             welcomeSettings: l,
             originalWelcomeSettings: r
-        } = (0, u.bG)([C.A], () => C.A.getSettingsProps()), a = (0, u.bG)([_.A], () => _.A.useReducedMotion), [d, c] = s.useState(null), [g, x] = s.useState(!1), [p, A] = s.useState(!1), {
+        } = (0, u.bG)([T.A], () => T.A.getSettingsProps()), a = (0, u.bG)([_.A], () => _.A.useReducedMotion), [d, c] = s.useState(null), [g, x] = s.useState(!1), [p, A] = s.useState(!1), {
             description: f,
             channels: I,
             enabled: S
         } = l, G = e => {
-            null == t || o()(e, r.channels) || ((0, T.i4)(t.id, {
+            null == t || o()(e, r.channels) || ((0, C.i4)(t.id, {
                 channels: e
             }), x(!0))
         }, k = e => {
-            null == t || e !== r.enabled && ((0, T.i4)(t.id, {
+            null == t || e !== r.enabled && ((0, C.i4)(t.id, {
                 enabled: e
             }), A(!a), x(!0))
         }, P = (e, t, n) => {
             if (null == I) return;
             let i = I.indexOf(e),
                 s = [...I];
-            null != t && t !== i && (s.splice(i, 1), s.splice(t, 0, e), (0, T.Xx)({
+            null != t && t !== i && (s.splice(i, 1), s.splice(t, 0, e), (0, C.Xx)({
                 channels: s
             })), n ? (G(s), c(null)) : c(t)
         }, w = s.useRef(!1);
@@ -192,7 +192,7 @@ let k = "WELCOME_CHANNEL",
                     is_enabled: S
                 })
             }
-        }, [g, I, f, S, t]), s.useEffect(() => () => (0, T.Vv)(), []);
+        }, [g, I, f, S, t]), s.useEffect(() => () => (0, C.Vv)(), []);
         let B = s.useCallback(() => {
             null != t && y.A.open(t.id, O.BEX.ONBOARDING)
         }, [t]);
@@ -266,12 +266,12 @@ let k = "WELCOME_CHANNEL",
                         children: (0, i.jsx)(m.fs1, {
                             placeholder: D.intl.string(D.t.qzZHaX),
                             onChange: e => {
-                                (0, T.Xx)({
+                                (0, C.Xx)({
                                     description: e
                                 })
                             },
                             onBlur: () => {
-                                null == t || f !== r.description && ((0, T.i4)(t.id, {
+                                null == t || f !== r.description && ((0, C.i4)(t.id, {
                                     description: f?.trim()
                                 }), x(!0))
                             },
@@ -295,9 +295,9 @@ let k = "WELCOME_CHANNEL",
                             welcomeChannel: e,
                             onEdit: e => {
                                 let t = [...I ?? []];
-                                null == e ? t.splice(n, 1) : t[n] = e, (0, T.Xx)({
+                                null == e ? t.splice(n, 1) : t[n] = e, (0, C.Xx)({
                                     channels: t
-                                }), G(t), 0 === t.length && S && ((0, T.Xx)({
+                                }), G(t), 0 === t.length && S && ((0, C.Xx)({
                                     enabled: !1
                                 }), k(!1))
                             },

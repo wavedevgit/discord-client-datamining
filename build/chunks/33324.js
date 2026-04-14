@@ -32,8 +32,8 @@ function I(e) {
         b = (0, h.A)(e.id),
         y = (0, c.jY)(e.id),
         v = (0, o.fw)(e.id),
-        j = [],
-        R = e.features.has(x.GuildFeatures.HUB),
+        R = [],
+        j = e.features.has(x.GuildFeatures.HUB),
         O = e.features.has(x.GuildFeatures.COMMUNITY),
         L = e.features.has(x.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY),
         M = (0, g.A)(e.id),
@@ -41,5 +41,5 @@ function I(e) {
         U = e.features.has(x.GuildFeatures.GAME_SERVERS),
         G = (0, p.N)("useGuildActionRows"),
         [P] = (0, a.kn)(D && G && !U ? [l.M.EMPTY_GAME_SERVER_TAB] : [], void 0, !0);
-    return R && j.push(E.n.GUILD_HUB_HEADER_OPTIONS), !y && T && b && null != S && S.length > 0 ? j.push(E.n.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && j.push(E.n.GUILD_PREMIUM_PROGRESS_BAR), !R && T && j.push(E.n.GUILD_HOME), t && j.push(E.n.GUILD_SCHEDULED_EVENTS), !R && O && j.push(E.n.CHANNELS_AND_ROLES), I && j.push(E.n.GUILD_ROLE_SUBSCRIPTIONS), C && j.push(E.n.GUILD_SHOP), N && j.push(E.n.GUILD_GAME_SHOP), (v && (O || L) || n && e.features.has(x.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && j.push(E.n.GUILD_MOD_DASH_MEMBER_SAFETY), M && j.push(E.n.GUILD_BOOSTS), D && (U ? j.push(E.n.GAME_SERVERS) : null != P && j.push(E.n.GAME_SERVERS_EMPTY)), j
+    return j && R.push(E.n.GUILD_HUB_HEADER_OPTIONS), !y && T && b && null != S && S.length > 0 ? R.push(E.n.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && R.push(E.n.GUILD_PREMIUM_PROGRESS_BAR), !j && T && R.push(E.n.GUILD_HOME), t && R.push(E.n.GUILD_SCHEDULED_EVENTS), !j && O && R.push(E.n.CHANNELS_AND_ROLES), I && R.push(E.n.GUILD_ROLE_SUBSCRIPTIONS), C && R.push(E.n.GUILD_SHOP), N && R.push(E.n.GUILD_GAME_SHOP), (v && (O || L) || n && e.features.has(x.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && R.push(E.n.GUILD_MOD_DASH_MEMBER_SAFETY), M && R.push(E.n.GUILD_BOOSTS), D && (U ? R.push(E.n.GAME_SERVERS) : null != P && R.push(E.n.GAME_SERVERS_EMPTY)), R
 }

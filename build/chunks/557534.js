@@ -3,7 +3,7 @@ n.d(t, {
     Ay: () => L,
     Jd: () => v,
     O6: () => y,
-    gQ: () => j,
+    gQ: () => R,
     h$: () => b
 });
 var i = n(627968),
@@ -65,7 +65,7 @@ function v(e) {
     })
 }
 
-function j(e) {
+function R(e) {
     let {
         channel: t,
         isDefaultChannel: s = !1,
@@ -73,21 +73,21 @@ function j(e) {
         tabIndex: u,
         forceShowButtons: _,
         hasChannelInfo: g = !1
-    } = e, I = (0, r.bG)([E.A], () => E.A.getGuild(t.getGuildId())), C = (0, r.bG)([m.A], () => m.A.getStageInstanceByChannel(t.id), [t.id]), b = (0, r.bG)([h.Ay], () => h.Ay.getActiveEventByChannel(t.id), [t.id]), y = (0, r.bG)([x.A], () => (0, A.K)(x.A, I, t, C)), v = (0, r.bG)([], () => t?.type === N.rbe.GUILD_VOICE ? T.intl.string(T.t["EE+P0H"]) : T.intl.string(T.t["0jeAXt"])), j = l.useRef(null);
+    } = e, I = (0, r.bG)([E.A], () => E.A.getGuild(t.getGuildId())), C = (0, r.bG)([m.A], () => m.A.getStageInstanceByChannel(t.id), [t.id]), b = (0, r.bG)([h.Ay], () => h.Ay.getActiveEventByChannel(t.id), [t.id]), y = (0, r.bG)([x.A], () => (0, A.K)(x.A, I, t, C)), v = (0, r.bG)([], () => t?.type === N.rbe.GUILD_VOICE ? T.intl.string(T.t["EE+P0H"]) : T.intl.string(T.t["0jeAXt"])), R = l.useRef(null);
     if (c || !y || t.isModeratorReportChannel() || t.isThread()) return null;
-    let R = (0, i.jsx)(d.Rvf, {
+    let j = (0, i.jsx)(d.Rvf, {
         size: "xs",
         className: S.gE,
         "aria-hidden": !0,
         color: "currentColor"
     });
-    return s && (R = (0, i.jsx)(p.A, {
-        childRef: j,
+    return s && (j = (0, i.jsx)(p.A, {
+        childRef: R,
         tutorialId: "instant-invite",
         position: "left",
         children: (0, i.jsx)("div", {
-            ref: j,
-            children: R
+            ref: R,
+            children: j
         })
     })), (0, i.jsx)(o.m, {
         asContainer: !0,
@@ -114,12 +114,12 @@ function j(e) {
             },
             tabIndex: u,
             "aria-label": v,
-            children: R
+            children: j
         })
     })
 }
 
-function R(e) {
+function j(e) {
     let {
         channel: t
     } = e;
@@ -174,12 +174,12 @@ class L extends l.PureComponent {
         })
     }
     renderInviteButton() {
-        return (0, i.jsx)(j, {
+        return (0, i.jsx)(R, {
             ...this.props
         })
     }
     renderRemoveSuggestionButton() {
-        return (0, i.jsx)(R, {
+        return (0, i.jsx)(j, {
             ...this.props
         })
     }

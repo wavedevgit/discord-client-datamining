@@ -26,16 +26,16 @@ function _(e) {
         isLightTheme: E
     } = e, I = `AnnouncementModalVariant1_${t}`, {
         onClose: f
-    } = m, C = _.button?.copy ?? A.intl.string(A.t.YScQSF), T = _.button?.buttonAction === r.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", S = (0, c.h)({
+    } = m, C = _.button?.copy ?? A.intl.string(A.t.YScQSF), T = _.button?.buttonAction === r.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", N = (0, c.h)({
         buttonAction: _.button?.buttonAction,
         analyticsLocations: g,
         analyticsLocation: p,
         onClose: f
-    }), N = (0, d.C)(_.helpArticle, _.helpArticleId), x = null != N ? () => (0, i.jsxs)(i.Fragment, {
+    }), S = (0, d.C)(_.helpArticle, _.helpArticleId), x = null != S ? () => (0, i.jsxs)(i.Fragment, {
         children: ["\xa0", (0, i.jsx)(s.MzZ, {
             className: h.$T,
-            href: N.url,
-            children: N.linkText
+            href: S.url,
+            children: S.linkText
         })]
     }) : void 0, v = (0, d.C)(_.disclaimer?.disclaimerHelpArticle, ""), b = null != v ? () => (0, i.jsxs)(i.Fragment, {
         children: ["\xa0", (0, i.jsx)(s.MzZ, {
@@ -82,7 +82,7 @@ function _(e) {
                         cta_type: T,
                         seconds_open: Math.round((Date.now() - e) / 1e3),
                         target: I
-                    }), S()
+                    }), N()
                 },
                 text: C,
                 icon: l.NitroWheelIcon

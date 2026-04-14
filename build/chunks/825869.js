@@ -30,15 +30,15 @@ function _(e) {
         rejectMessageRequest: f,
         isAcceptLoading: C,
         isRejectLoading: T,
-        isUserProfileLoading: S,
-        isOptimisticAccepted: N,
+        isUserProfileLoading: N,
+        isOptimisticAccepted: S,
         isOptimisticRejected: x
     } = (0, c.t)({
         user: n,
         onAcceptSuccess: E,
         onRejectSuccess: p,
         onError: g
-    }), v = C || T || S || N || x;
+    }), v = C || T || N || S || x;
     return (0, i.jsxs)("div", {
         className: h.kL,
         children: [(0, i.jsx)(u.A, {
@@ -71,7 +71,7 @@ function _(e) {
                         e.stopPropagation(), I(_.id)
                     },
                     disabled: v,
-                    loading: C || S || N
+                    loading: C || N || S
                 })
             })]
         })]

@@ -39,7 +39,7 @@ var i = n(627968),
 let P = `vc-gifting-${(0,a.A)()}`,
     k = Object.freeze([]);
 
-function U(e) {
+function w(e) {
     let {
         "aria-labelledby": t,
         children: n
@@ -56,7 +56,7 @@ function U(e) {
     })
 }
 
-function w(e) {
+function U(e) {
     let {
         application: t
     } = e;
@@ -213,7 +213,7 @@ function W(e) {
             onButtonClick: s
         }, e.id)
     }), [g, v, a.guild_id, a.id, y, t, S, j, h, s]);
-    return (0, i.jsx)(U, {
+    return (0, i.jsx)(w, {
         "aria-labelledby": P,
         children: (0, i.jsxs)("div", {
             className: D.kL,
@@ -231,7 +231,7 @@ function W(e) {
                         disableInteraction: !0,
                         embedded: !0
                     })
-                }) : (0, i.jsx)(w, {
+                }) : (0, i.jsx)(U, {
                     application: I
                 }), (0, i.jsx)(G, {
                     user: g,
@@ -263,7 +263,7 @@ function K(e) {
     let a = (0, o.bG)([x.default], () => x.default.getUser(t)),
         s = (0, o.bG)([m.A], () => m.A.getWidgets(t)?.find(e => V(e, n))),
         c = null == a || null == s;
-    return (0, i.jsx)(U, {
+    return (0, i.jsx)(w, {
         children: (0, i.jsx)("div", {
             className: D.kL,
             children: c ? (0, i.jsx)(r.y$y, {
@@ -336,7 +336,7 @@ function z(e) {
             }, e.id)
         })]
     }, [h, f, S, t, m, a.guild_id, a.id, I, u, s]);
-    return (0, i.jsx)(U, {
+    return (0, i.jsx)(w, {
         "aria-labelledby": P,
         children: (0, i.jsxs)("div", {
             className: D.kL,
@@ -344,7 +344,7 @@ function z(e) {
                 className: D.wx,
                 direction: "vertical",
                 gap: 12,
-                children: [(0, i.jsx)(w, {
+                children: [(0, i.jsx)(U, {
                     application: A
                 }), (0, i.jsx)(G, {
                     user: h,

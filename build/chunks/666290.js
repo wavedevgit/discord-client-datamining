@@ -29,7 +29,7 @@ function I(e) {
         priorityMembers: I,
         partiedMembers: f,
         guildContext: C
-    } = t, T = I[0], S = function(e) {
+    } = t, T = I[0], N = function(e) {
         let {
             priorityMembers: t,
             partiedMembers: n
@@ -55,7 +55,7 @@ function I(e) {
                 })
         }
     }(t), {
-        subtitle: N,
+        subtitle: S,
         icon: x
     } = function(e) {
         let {
@@ -197,8 +197,8 @@ function I(e) {
     return (0, i.jsx)(g.A.Header, {
         priorityUser: T,
         guildId: C?.id,
-        title: S,
-        subtitle: N,
+        title: N,
+        subtitle: S,
         icon: x,
         onSubtitleClick: v,
         onIconClick: v,

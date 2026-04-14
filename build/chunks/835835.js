@@ -186,8 +186,8 @@ function O(e) {
     }, "empty-state")) : (k = !1, P = [], o().each(n, e => {
         P.push(..._(e))
     }));
-    let U = null;
-    null != n && n.length > 0 && null != h && (U = r ? (0, i.jsx)("div", {
+    let w = null;
+    null != n && n.length > 0 && null != h && (w = r ? (0, i.jsx)("div", {
         className: y.sw,
         children: (0, i.jsx)(u.y$y, {})
     }, "loading-more-after") : a ? (0, i.jsx)("div", {
@@ -203,8 +203,8 @@ function O(e) {
         className: y.lJ,
         children: p()
     }));
-    let w = f?.(),
-        G = k && null != w ? (0, i.jsx)("div", {
+    let U = f?.(),
+        G = k && null != U ? (0, i.jsx)("div", {
             className: y.qr,
             children: (0, i.jsx)(A.A, {
                 style: {
@@ -212,7 +212,7 @@ function O(e) {
                     paddingTop: 10,
                     paddingBottom: 10
                 },
-                children: w
+                children: U
             })
         }) : null,
         F = {
@@ -247,7 +247,7 @@ function O(e) {
                             })
                         }
                     })
-                }), U]
+                }), w]
             }), G]
         })
     })

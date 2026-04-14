@@ -42,7 +42,7 @@ let p = l.memo(function(e) {
         wrapperRef: j,
         doZoom: R,
         clampPanOffset: M
-    } = l.useContext(m.e9), [L, O] = l.useState(null), [D, P] = l.useState(null), [k, U] = l.useState(0), [w, G] = l.useState(null), [F, H] = l.useState(null), [B, V] = l.useState(!1), W = l.useRef(new r.Ep), K = l.useRef(new r.Ep), z = l.useRef(null), Y = T > E, J = l.useCallback(e => {
+    } = l.useContext(m.e9), [L, O] = l.useState(null), [D, P] = l.useState(null), [k, w] = l.useState(0), [U, G] = l.useState(null), [F, H] = l.useState(null), [B, V] = l.useState(!1), W = l.useRef(new r.Ep), K = l.useRef(new r.Ep), z = l.useRef(null), Y = T > E, J = l.useCallback(e => {
         e.width > 0 && e.height > 0 && b(e.width / e.height), a?.(e)
     }, [a, b]), q = l.useCallback(e => {
         if (null == j.current) return m.qd;
@@ -55,18 +55,18 @@ let p = l.memo(function(e) {
         if (!Y || !g(e)) return;
         e.preventDefault(), e.stopPropagation();
         let t = q(e);
-        x(!0), P(t), O(t), U(Date.now()), H(t), G(S)
+        x(!0), P(t), O(t), w(Date.now()), H(t), G(S)
     }, [q, Y, S, x]), Z = l.useCallback(e => {
-        if ((f || Y) && _(), !C || !Y || null == F || null == w) return;
+        if ((f || Y) && _(), !C || !Y || null == F || null == U) return;
         e.preventDefault(), e.stopPropagation();
         let t = q(e),
             n = t.x - F.x,
             i = t.y - F.y;
         I(M({
-            x: w.x + n,
-            y: w.y + i
+            x: U.x + n,
+            y: U.y + i
         })), O(t)
-    }, [M, F, w, f, q, C, Y, _, I]), X = l.useCallback(e => {
+    }, [M, F, U, f, q, C, Y, _, I]), X = l.useCallback(e => {
         !C || g(e) || (e.preventDefault(), e.stopPropagation(), x(!1), H(null), G(null))
     }, [C, x]), Q = l.useCallback(e => {
         if (Y && null != D && null != L) {

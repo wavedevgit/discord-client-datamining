@@ -24,12 +24,12 @@ var i = n(627968),
     f = n(7832),
     C = n(654487),
     T = n(985018),
-    S = n(684027),
-    N = n(311401);
+    N = n(684027),
+    S = n(311401);
 
 function x() {
     return (0, i.jsx)("div", {
-        className: S.Np
+        className: N.Np
     })
 }
 
@@ -41,40 +41,40 @@ function v(e) {
     (0, E.A)(r, C.rE.QUEST_HOME_DESKTOP);
     let s = l.useMemo(() => (null != n ? (0, h.WV)(n) : null) ?? t, [n, t]);
     return null == n ? (0, i.jsxs)("div", {
-        className: S.Tv,
+        className: N.Tv,
         children: [(0, i.jsx)(x, {}), (0, i.jsx)("div", {
-            className: S.LO,
+            className: N.LO,
             children: (0, i.jsx)("img", {
-                className: S.LY,
+                className: N.LY,
                 src: t,
                 alt: ""
             })
         }), (0, i.jsx)("div", {
-            className: a()(S.LO, S.jx, S.hw),
+            className: a()(N.LO, N.jx, N.hw),
             children: (0, i.jsx)("img", {
-                className: S.LY,
+                className: N.LY,
                 src: t,
                 alt: ""
             })
         }), (0, i.jsx)("div", {
-            className: a()(S.LO, S.jx, S.Co),
+            className: a()(N.LO, N.jx, N.Co),
             children: (0, i.jsx)("img", {
-                className: S.LY,
+                className: N.LY,
                 src: t,
                 alt: ""
             })
         })]
     }) : (0, i.jsxs)("div", {
-        className: S.Tv,
+        className: N.Tv,
         children: [(0, i.jsx)(x, {}), (0, i.jsx)("div", {
-            className: S.LO,
+            className: N.LO,
             children: (0, i.jsx)(g.N, {
                 showImage: !1,
                 showVideo: !0,
                 assetRef: r,
                 imageAsset: {
                     alt: "",
-                    className: S.LY,
+                    className: N.LY,
                     asset: {
                         url: s,
                         mimetype: (0, h.vm)(s),
@@ -84,7 +84,7 @@ function v(e) {
                 },
                 videoAsset: {
                     alt: "",
-                    className: S.LY,
+                    className: N.LY,
                     asset: {
                         url: n,
                         mimetype: (0, h.vm)(n),
@@ -122,11 +122,11 @@ function b(e) {
                 children: [null != t.sponsorImage && (0, i.jsx)("img", {
                     src: t.sponsorImage,
                     alt: "",
-                    className: S.wm
+                    className: N.wm
                 }), (0, i.jsx)(d.Text, {
                     color: "text-strong",
                     variant: "text-sm/normal",
-                    className: S.yu,
+                    className: N.yu,
                     children: T.intl.string(T.t.OJjFi5)
                 })]
             }),
@@ -171,7 +171,7 @@ function b(e) {
 
 function y() {
     return (0, i.jsx)("div", {
-        className: a()(N.iE, N.FG, N.B3),
+        className: a()(S.iE, S.FG, S.B3),
         children: (0, i.jsx)(d.y$y, {})
     })
 }

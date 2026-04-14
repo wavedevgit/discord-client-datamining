@@ -1,6 +1,6 @@
 /** chunk id: 547798 params = (module,exports,require) **/
 n.d(t, {
-    A: () => k
+    A: () => I
 });
 var a = n(627968),
     i = n(64700),
@@ -13,52 +13,51 @@ var a = n(627968),
     u = n(73153),
     m = n(787880),
     h = n(142120),
-    x = n(69555),
-    p = n(237984),
-    g = n(43203),
-    f = n(349435),
-    v = n(674272),
-    _ = n(253932),
-    b = n(407186),
-    j = n(543924),
-    A = n(309010),
-    C = n(837921),
-    y = n(652215),
-    S = n(327337),
-    E = n(431804),
-    T = n(413269),
-    N = n(885106);
+    x = n(237984),
+    p = n(43203),
+    g = n(349435),
+    f = n(674272),
+    v = n(253932),
+    _ = n(407186),
+    b = n(543924),
+    j = n(309010),
+    A = n(837921),
+    C = n(652215),
+    y = n(327337),
+    S = n(431804),
+    E = n(413269),
+    T = n(885106);
 
-function I() {
+function N() {
     throw Error("Send help")
 }
 
-function k() {
-    let e = _.j0.useSetting(),
+function I() {
+    let e = v.j0.useSetting(),
         [t, s] = i.useState(!1);
     return t ? {} : (0, a.jsxs)(c.HOs, {
         children: [(0, a.jsx)("div", {
-            className: l()(T.N, N.SX),
-            children: (0, a.jsx)(j.M, {})
+            className: l()(E.N, T.SX),
+            children: (0, a.jsx)(b.M, {})
         }), (0, a.jsx)("div", {
-            className: l()(T.N, N.QB),
+            className: l()(E.N, T.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Launch Vibing Wumpus",
-                onClick: () => (0, v.A)({
-                    source: E.y.KEYBIND
+                onClick: () => (0, f.A)({
+                    source: S.y.KEYBIND
                 })
             })
         }), (0, a.jsx)("div", {
-            className: l()(T.N, N.QB),
+            className: l()(E.N, T.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Launch Safety Tools Modal",
                 onClick: () => {
                     let e;
-                    return e = A.A.getChannelId() ?? "21154681615024128", void(0, c.mMO)(async () => {
+                    return e = j.A.getChannelId() ?? "21154681615024128", void(0, c.mMO)(async () => {
                         let {
                             default: t
                         } = await Promise.all([n.e("45033"), n.e("46717"), n.e("64690")]).then(n.bind(n, 788099));
@@ -66,16 +65,16 @@ function k() {
                             otherUserId: "9876543210",
                             channelId: e,
                             warningId: "test-warning-id",
-                            warningType: f._j.INAPPROPRIATE_CONVERSATION_TIER_2,
+                            warningType: g._j.INAPPROPRIATE_CONVERSATION_TIER_2,
                             ...n
                         })
                     }, {
-                        modalKey: S.V
+                        modalKey: y.V
                     })
                 }
             })
         }), (0, a.jsx)("div", {
-            className: l()(T.N, N.QB),
+            className: l()(E.N, T.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -83,23 +82,15 @@ function k() {
                 onClick: () => (0, m.g)()
             })
         }), (0, a.jsx)("div", {
-            className: l()(T.N, N.QB),
+            className: l()(E.N, T.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Launch Accept Invite Modal",
-                onClick: () => (0, g.$)("fortnite", "DevTools Quick Actions")
+                onClick: () => (0, p.$)("fortnite", "DevTools Quick Actions")
             })
         }), (0, a.jsx)("div", {
-            className: l()(T.N, N.QB),
-            children: (0, a.jsx)(c.Button, {
-                variant: "primary",
-                size: "sm",
-                text: "Reset Hang Status State",
-                onClick: x.B7
-            })
-        }), (0, a.jsx)("div", {
-            className: l()(T.N, N.QB),
+            className: l()(E.N, T.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -107,7 +98,7 @@ function k() {
                 onClick: d.Oy
             })
         }), (0, a.jsx)("div", {
-            className: l()(T.N, N.QB),
+            className: l()(E.N, T.QB),
             children: (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -125,19 +116,19 @@ function k() {
                 }
             })
         }), (0, a.jsx)("div", {
-            className: l()(T.N, N.QB),
+            className: l()(E.N, T.QB),
             children: (0, a.jsx)(c.dOG, {
                 label: "Ignore profile speedbump disabled",
                 checked: e,
-                onChange: e => _.j0.updateSetting(e)
+                onChange: e => v.j0.updateSetting(e)
             })
         }), (0, a.jsxs)("div", {
-            className: l()(T.N, N.QB),
+            className: l()(E.N, T.QB),
             children: [(0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Open Overlay",
-                onClick: () => (0, p.o)()
+                onClick: () => (0, x.o)()
             }), (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -161,20 +152,20 @@ function k() {
                 variant: "primary",
                 size: "sm",
                 text: "Show TOTP Success",
-                onClick: () => (0, b.sy)(!0)
+                onClick: () => (0, _.sy)(!0)
             }), (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Trigger Suspicious Sessions Notifications",
                 onClick: () => {
                     o.Bo.post({
-                        url: y.Rsh.AUTH_SESSION_NOTIFICATIONS_DEBUG,
+                        url: C.Rsh.AUTH_SESSION_NOTIFICATIONS_DEBUG,
                         rejectWithError: !0
                     })
                 }
             })]
         }), (0, a.jsxs)("div", {
-            className: l()(T.N, N.QB),
+            className: l()(E.N, T.QB),
             children: [(0, a.jsx)(c.l6P, {
                 label: "Trigger native crash",
                 hideLabel: !0,
@@ -205,7 +196,7 @@ function k() {
                     value: 4,
                     id: "out_of_memory"
                 }],
-                onSelectionChange: e => null != e && C.Ay.crash(e)
+                onSelectionChange: e => null != e && A.Ay.crash(e)
             }), (0, a.jsx)(c.l6P, {
                 label: "Trigger JS crash",
                 hideLabel: !0,
@@ -228,7 +219,7 @@ function k() {
                     value: r.qQ.MainProcess,
                     id: "exception_in_main_process"
                 }],
-                onSelectionChange: e => null != e ? void C.Ay.triggerJSException(e) : void 0
+                onSelectionChange: e => null != e ? void A.Ay.triggerJSException(e) : void 0
             }), (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -238,7 +229,7 @@ function k() {
                 variant: "primary",
                 size: "sm",
                 text: "onClick Throw",
-                onClick: I
+                onClick: N
             })]
         })]
     })

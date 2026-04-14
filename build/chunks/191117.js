@@ -85,7 +85,7 @@ function j(e) {
         postjoinOnly: s,
         includeCount: l,
         singleColumn: r
-    } = e, c = (0, a.bG)([m.A], () => m.A.getGuild(t)), j = (0, a.bG)([x.A], () => x.A.editedOnboardingPrompts), N = j.filter(e => e.inOnboarding), E = j.filter(e => !0 !== e.inOnboarding), T = [...N.map(e => ({
+    } = e, c = (0, a.bG)([m.A], () => m.A.getGuild(t)), j = (0, a.bG)([x.A], () => x.A.editedOnboardingPrompts), N = j.filter(e => e.inOnboarding), E = j.filter(e => !0 !== e.inOnboarding), C = [...N.map(e => ({
         id: e.id,
         data: e
     })), {
@@ -95,10 +95,10 @@ function j(e) {
         id: e.id,
         data: e
     }))], {
-        handleDragStart: C,
+        handleDragStart: T,
         handleDragReset: I,
         handleDragComplete: b
-    } = (0, u.A)(T, e => {
+    } = (0, u.A)(C, e => {
         let t = e.findIndex(e => "separator" === e.id),
             n = e.slice(0, t).map(e => ({
                 ...e.data,
@@ -136,7 +136,7 @@ function j(e) {
                 singleColumn: r,
                 promptIndex: t,
                 dragIndex: t,
-                onPromptDragStart: C,
+                onPromptDragStart: T,
                 onPromptDragReset: I,
                 onPromptDragComplete: b
             }, e.id))]
@@ -150,7 +150,7 @@ function j(e) {
                 prompt: e,
                 promptIndex: t + N.length,
                 dragIndex: t + N.length + 1,
-                onPromptDragStart: C,
+                onPromptDragStart: T,
                 onPromptDragReset: I,
                 onPromptDragComplete: b
             }, e.id)), j.length < _.iD ? (0, i.jsxs)(o.DUT, {

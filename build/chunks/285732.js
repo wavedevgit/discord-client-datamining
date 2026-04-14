@@ -29,7 +29,7 @@ let _ = e => {
         } catch (e) {
             N(e.body.message), f(!1)
         }
-    }, T = u.Ay.useUserTag(_.user);
+    }, C = u.Ay.useUserTag(_.user);
     return (0, i.jsx)(a.m, {
         forceOpen: null != j,
         text: j,
@@ -61,7 +61,7 @@ let _ = e => {
                         }), (0, i.jsx)(o.Text, {
                             color: "text-default",
                             variant: "text-xs/normal",
-                            children: T
+                            children: C
                         })]
                     })]
                 }), p ? (0, i.jsxs)("div", {

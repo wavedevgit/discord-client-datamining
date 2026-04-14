@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(427262),
     C = n(22212),
     T = n(607272),
-    S = n(513297),
-    N = n(414711),
+    N = n(513297),
+    S = n(414711),
     x = n(187696),
     v = n(723690),
     b = n(652215),
@@ -78,7 +78,7 @@ function P(e) {
             cancelText: L.intl.string(L.t["ETE/oC"]),
             onConfirm: _
         })
-    }, [_, r, t]), g = (0, s.bG)([p.Ay], () => p.Ay.supports(O.O5.VIDEO)), E = t.isProvisional, S = r ? L.intl.string(L.t.RLcE6x) : L.intl.string(L.t.cvSt1J);
+    }, [_, r, t]), g = (0, s.bG)([p.Ay], () => p.Ay.supports(O.O5.VIDEO)), E = t.isProvisional, N = r ? L.intl.string(L.t.RLcE6x) : L.intl.string(L.t.cvSt1J);
     return (0, i.jsxs)(o.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "friend-row",
@@ -95,7 +95,7 @@ function P(e) {
             action: A
         }), (0, i.jsx)(o.Drp, {
             id: "remove-friend",
-            label: S,
+            label: N,
             action: m,
             color: "danger"
         })]
@@ -185,7 +185,7 @@ class D extends l.PureComponent {
             isMobile: s,
             isVR: d,
             isGameRelationship: c
-        }) : (0, i.jsx)(N.A, {
+        }) : (0, i.jsx)(S.A, {
             ref: this.peopleListItemRef,
             isFocused: t,
             isActive: I,
@@ -212,12 +212,12 @@ class D extends l.PureComponent {
                     showAccountIdentifier: !c && !e.isProvisional
                 }), (0, i.jsxs)("div", {
                     className: R.o1,
-                    children: [(0, i.jsx)(S.A, {
+                    children: [(0, i.jsx)(N.A, {
                         icon: o.oyn,
                         tooltip: L.intl.string(L.t["g33r/P"]),
                         onClick: this.handleMessageClick,
                         shouldHighlight: t
-                    }), (0, i.jsx)(S.A, {
+                    }), (0, i.jsx)(N.A, {
                         icon: o.FHP,
                         tooltip: L.intl.string(L.t["UKOtz+"]),
                         onClick: this.handleOpenActionsMenu,

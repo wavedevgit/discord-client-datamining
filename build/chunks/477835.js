@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(430452),
     C = n(234320),
     T = n(536432),
-    S = n(674168),
-    N = n(989799),
+    N = n(674168),
+    S = n(989799),
     x = n(652215),
     v = n(49999),
     b = n(985018),
@@ -86,11 +86,11 @@ function O(e) {
                     let {
                         closePopout: n
                     } = e;
-                    return (0, i.jsx)(N.A, {
+                    return (0, i.jsx)(S.A, {
                         guildId: w,
                         channel: t,
                         onClose: n,
-                        gridNotice: G === o.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, i.jsx)(S.m, {
+                        gridNotice: G === o.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, i.jsx)(N.m, {
                             onClose: n,
                             markAsDismissed: k
                         }),

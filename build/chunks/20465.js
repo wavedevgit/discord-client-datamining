@@ -1,6 +1,6 @@
 /** chunk id: 20465 params = (module,exports,require) **/
 n.d(t, {
-    A: () => R,
+    A: () => j,
     R: () => v
 });
 var i = n(627968),
@@ -30,7 +30,7 @@ var i = n(627968),
     y = n(424366);
 let v = 10 * N.A.Millis.SECOND;
 
-function j(e) {
+function R(e) {
     let {
         message: t
     } = e, {
@@ -50,8 +50,8 @@ function j(e) {
     }).content : null, {
         contentPlaceholder: S,
         renderedContent: v,
-        trailingIcon: j,
-        leadingIcon: R
+        trailingIcon: R,
+        leadingIcon: j
     } = (0, g.o)(t, T, n, s, y.BK, {
         trailingIconClass: y.sl,
         leadingIconClass: y.aG,
@@ -75,9 +75,9 @@ function j(e) {
             className: a()(y.kn, {
                 [y.mK]: t.mentioned
             }),
-            children: [null != L ? null : R, v ?? L ?? (0, i.jsx)("span", {
+            children: [null != L ? null : j, v ?? L ?? (0, i.jsx)("span", {
                 children: S
-            }), null != L ? null : j]
+            }), null != L ? null : R]
         }), (0, i.jsx)("img", {
             alt: "",
             src: r?.guildMemberAvatar != null && null != o ? (0, C.s7)({
@@ -90,7 +90,7 @@ function j(e) {
     })
 }
 
-function R(e) {
+function j(e) {
     let {
         channelId: t,
         className: n
@@ -202,7 +202,7 @@ function R(e) {
                 ref: e => f(t.message.id, null != e ? e.offsetHeight : null),
                 className: y.T_,
                 style: e,
-                children: (0, i.jsx)(j, {
+                children: (0, i.jsx)(R, {
                     message: t.message
                 })
             }))

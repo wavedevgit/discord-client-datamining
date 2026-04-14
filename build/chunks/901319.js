@@ -26,7 +26,7 @@ let h = function(e) {
         isEnabled: E,
         async scrollToStart() {},
         async scrollToEnd() {}
-    }), C = m !== u.m3P.ONLINE && m !== u.m3P.ALL, T = I || _ || C, S = l.useMemo(() => t.map((e, t) => 0 === e.length ? null : T ? (0, i.jsxs)("div", {
+    }), C = m !== u.m3P.ONLINE && m !== u.m3P.ALL, T = I || _ || C, N = l.useMemo(() => t.map((e, t) => 0 === e.length ? null : T ? (0, i.jsxs)("div", {
         children: [h(t), e.map(e => n(e, t)), p?.(t)]
     }, t) : (0, i.jsxs)(o.F, {
         transitionAppear: !1,
@@ -45,7 +45,7 @@ let h = function(e) {
                     ref: t,
                     className: A.e3,
                     ...n,
-                    children: [S, g]
+                    children: [N, g]
                 })
             }
         })

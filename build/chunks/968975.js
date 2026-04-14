@@ -33,8 +33,8 @@ function y(e) {
         profileOwner: n,
         onClick: y,
         wishlistId: v,
-        cardSize: j,
-        title: R
+        cardSize: R,
+        title: j
     } = e, {
         analyticsLocations: O
     } = (0, r.Ay)(), {
@@ -90,7 +90,7 @@ function y(e) {
                     onViewWishlist: y,
                     wishlistId: v,
                     showTypeTooltip: k,
-                    cardSize: j
+                    cardSize: R
                 }))) : (0, p.$)(s) && (l.add(s.skuProductLine), e.push((0, h.Z)(s, {
                     index: i,
                     moreCount: a ? t.length - D + 1 : void 0,
@@ -99,7 +99,7 @@ function y(e) {
                     onViewWishlist: y,
                     wishlistId: v,
                     showTypeTooltip: k,
-                    cardSize: j
+                    cardSize: R
                 })))
             }
             return 1 === P.length && (i = P[0]), {
@@ -107,7 +107,7 @@ function y(e) {
                 singleItem: i,
                 productLines: l
             }
-        }, [t, n, O, y, v, j, P, k, D]),
+        }, [t, n, O, y, v, R, P, k, D]),
         H = (0, E.A)({
             wishlistId: v ?? null,
             onAction: G,
@@ -146,7 +146,7 @@ function y(e) {
                 children: [(0, i.jsx)(a.Heading, {
                     variant: "text-sm/medium",
                     id: U,
-                    children: R ?? S.intl.string(S.t["7lZ31J"])
+                    children: j ?? S.intl.string(S.t["7lZ31J"])
                 }), M && t.length > D && (0, i.jsx)(a.QWc, {
                     variant: "secondary",
                     textVariant: "text-xs/normal",

@@ -13,12 +13,12 @@ var i = n(627968),
     c = n(531685),
     A = n(25639),
     h = n(677983);
-let E = "ease-in-out",
-    _ = [8, 16, 11, 13, 6],
-    f = Array.from({
+let f = "ease-in-out",
+    g = [8, 16, 11, 13, 6],
+    E = Array.from({
         length: 5
     }, (e, t) => t),
-    g = [2, 2, 5, 2, 2],
+    _ = [2, 2, 5, 2, 2],
     m = [3, 3, 10, 6, 3],
     I = [3, 3, 7, 12, 6],
     N = [3, 3, 5, 10, 16],
@@ -26,11 +26,11 @@ let E = "ease-in-out",
     T = [4, 6, 12, 9, 6],
     L = [6, 10, 9, 16, 8],
     x = 6.67 / 8,
-    S = "M16.5 18H16a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-.5v-.5a2.5 2.5 0 0 0-5 0v.5Zm3.5 0v-.5a1 1 0 1 0-2 0v.5h2Z",
-    b = `translate(${12.33-15*x}, ${1-15.5*x}) scale(${x})`;
+    b = "M16.5 18H16a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-.5v-.5a2.5 2.5 0 0 0-5 0v.5Zm3.5 0v-.5a1 1 0 1 0-2 0v.5h2Z",
+    S = `translate(${12.33-15*x}, ${1-15.5*x}) scale(${x})`;
 
 function v(e, t) {
-    let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : _,
+    let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : g,
         i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 2,
         l = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 16;
     for (let a = 0; a < 5; a++) {
@@ -49,7 +49,7 @@ let p = {
         firstState: "burst",
         transitionConfig: {
             durationMs: 180,
-            timingFunction: E
+            timingFunction: f
         },
         states: {
             burst: {
@@ -70,7 +70,7 @@ let p = {
         firstState: "introSilent",
         transitionConfig: {
             durationMs: 100,
-            timingFunction: E
+            timingFunction: f
         },
         states: {
             introSilent: {
@@ -85,7 +85,7 @@ let p = {
                 getNextState: () => "waveBuildCenter"
             },
             waveBuildCenter: {
-                getHeights: e => v(e, 3, g),
+                getHeights: e => v(e, 3, _),
                 getAnimationDelay: () => D(64, 128),
                 getStateDuration: () => D(32, 64),
                 getNextState: () => "waveBuildRight1"
@@ -138,7 +138,7 @@ let p = {
         firstState: "burst",
         transitionConfig: {
             durationMs: 120,
-            timingFunction: E
+            timingFunction: f
         },
         states: {
             burst: {
@@ -186,9 +186,9 @@ function G(e) {
     let t, n, a, {
             color: u = "currentColor",
             className: d,
-            animationStyle: E = A.s.GENTLE_AMBIENT,
-            iconSize: _ = 20,
-            locked: g = !1
+            animationStyle: f = A.s.GENTLE_AMBIENT,
+            iconSize: g = 20,
+            locked: _ = !1
         } = e,
         m = l.useId(),
         I = (0, o.bG)([c.A], () => c.A.isAppFocused()),
@@ -198,9 +198,9 @@ function G(e) {
         }, []),
         L = (0, s.K)(T, .15),
         x = l.useRef([, , , , , ].fill(0)),
-        v = p[E],
+        v = p[f],
         D = !I || !N,
-        G = (_ - 18) / 2,
+        G = (g - 18) / 2,
         j = D ? 0 : v.transitionConfig.durationMs,
         O = l.useRef(null),
         P = l.useMemo(() => ({
@@ -216,11 +216,11 @@ function G(e) {
         }), [P, u]),
         M = l.useMemo(() => ({
             left: G,
-            top: (_ - 16) / 2,
+            top: (g - 16) / 2,
             width: 18,
             height: 16,
             columnGap: 2
-        }), [_, G, 18]),
+        }), [g, G, 18]),
         R = l.useCallback(e => {
             let t = O.current;
             if (null == t) return;
@@ -288,42 +288,42 @@ function G(e) {
             i = !0, o()
         }
     }, [R, a, v, x]);
-    let k = g ? `url(#${m})` : void 0;
+    let k = _ ? `url(#${m})` : void 0;
     return (0, i.jsx)("span", {
         ref: L,
         className: r()(d, h.Aj),
         children: (0, i.jsxs)("svg", {
-            width: _,
-            height: _,
-            viewBox: `0 0 ${_} ${_}`,
+            width: g,
+            height: g,
+            viewBox: `0 0 ${g} ${g}`,
             fill: "none",
             children: [(0, i.jsx)(y, {
-                iconSize: _,
-                locked: g,
+                iconSize: g,
+                locked: _,
                 maskId: m
             }), (0, i.jsx)("g", {
                 mask: k,
                 children: (0, i.jsx)("foreignObject", {
                     x: 0,
                     y: 0,
-                    width: _,
-                    height: _,
+                    width: g,
+                    height: g,
                     children: (0, i.jsx)("div", {
                         className: h.FH,
                         children: (0, i.jsx)("div", {
                             ref: O,
                             className: h.Gb,
                             style: M,
-                            children: f.map(e => (0, i.jsx)("div", {
+                            children: E.map(e => (0, i.jsx)("div", {
                                 className: h.M0,
                                 style: F
                             }, e))
                         })
                     })
                 })
-            }), g && (0, i.jsx)("path", {
-                d: S,
-                transform: b,
+            }), _ && (0, i.jsx)("path", {
+                d: b,
+                transform: S,
                 fill: u,
                 fillRule: "evenodd",
                 clipRule: "evenodd"
@@ -359,7 +359,7 @@ function j(e) {
                 maskId: s
             }), (0, i.jsx)("g", {
                 mask: u,
-                children: _.map((e, n) => {
+                children: g.map((e, n) => {
                     let l = (a - e) / 2;
                     return (0, i.jsx)("rect", {
                         x: o + 4 * n,
@@ -371,8 +371,8 @@ function j(e) {
                     }, n)
                 })
             }), r && (0, i.jsx)("path", {
-                d: S,
-                transform: b,
+                d: b,
+                transform: S,
                 fill: t,
                 fillRule: "evenodd",
                 clipRule: "evenodd"
@@ -388,14 +388,14 @@ function O(e) {
         iconSize: a = 20,
         animationStyle: r = A.s.GENTLE_AMBIENT,
         locked: s = !1
-    } = e, c = (0, o.bG)([u.A], () => u.A.useReducedMotion), h = (0, o.bG)([d.A], () => d.A.isConnected()), [E, _] = l.useState(h);
+    } = e, c = (0, o.bG)([u.A], () => u.A.useReducedMotion), h = (0, o.bG)([d.A], () => d.A.isConnected()), [f, g] = l.useState(h);
     return (l.useEffect(() => {
         if (h) {
-            let e = setTimeout(() => _(!0), 800);
+            let e = setTimeout(() => g(!0), 800);
             return () => clearTimeout(e)
         }
-        _(!1)
-    }, [h]), c || E) ? (0, i.jsx)(j, {
+        g(!1)
+    }, [h]), c || f) ? (0, i.jsx)(j, {
         color: t,
         className: n,
         iconSize: a,

@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(95701),
     y = n(260509),
     v = n(734057),
-    j = n(256587),
-    R = n(71393),
+    R = n(256587),
+    j = n(71393),
     O = n(851109),
     L = n(706341),
     M = n(932883),
@@ -49,7 +49,7 @@ function V(e) {
         isSelected: r,
         isUnread: o,
         groupedMessages: h
-    } = e, A = n.type === P.rbe.UNKNOWN ? u.N$i : (0, m.gU)(n, null), p = (0, _.Ay)(n, !1), g = (0, d.bG)([R.A], () => R.A.getGuild(n.getGuildId())), {
+    } = e, A = n.type === P.rbe.UNKNOWN ? u.N$i : (0, m.gU)(n, null), p = (0, _.Ay)(n, !1), g = (0, d.bG)([j.A], () => j.A.getGuild(n.getGuildId())), {
         nick: E,
         colorString: x
     } = (0, f.Ay)(t), {
@@ -78,7 +78,7 @@ function V(e) {
         })
     });
     return (0, l.useEffect)(() => {
-        null != g && j.A.requestMember(g.id, t.author.id)
+        null != g && R.A.requestMember(g.id, t.author.id)
     }, [g, t.author.id]), (0, i.jsx)(u.vN3, {
         ...s,
         children: (0, i.jsxs)("div", {

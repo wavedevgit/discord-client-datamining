@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(858897),
     C = n(734057),
     T = n(962173),
-    S = n(134861),
-    N = n(498642),
+    N = n(134861),
+    S = n(498642),
     x = n(71393),
     v = n(189081),
     b = n(375492),
@@ -75,7 +75,7 @@ function H(e) {
         let {
             currentActivities: t
         } = e, n = l.useContext(w.AnalyticsContext);
-        return (0, r.yK)([P.default, v.A, C.A, x.A, N.A, O.A, L.A, D.A, y.A, b.A, R.A, u.Ay, E.A, M.A, S.A, p.Ay, j.A], () => {
+        return (0, r.yK)([P.default, v.A, C.A, x.A, S.A, O.A, L.A, D.A, y.A, b.A, R.A, u.Ay, E.A, M.A, N.A, p.Ay, j.A], () => {
             let e = P.default.getCurrentUser();
             return t.filter(e => !(0, m.A)(e.activity)).map(t => {
                 let {
@@ -95,7 +95,7 @@ function H(e) {
                         isEmbedded: !1,
                         ChannelStore: C.A,
                         GuildStore: x.A,
-                        GuildMemberCountStore: N.A,
+                        GuildMemberCountStore: S.A,
                         RelationshipStore: O.A,
                         SelectedChannelStore: L.A,
                         VoiceStateStore: D.A,
@@ -108,7 +108,7 @@ function H(e) {
                         LibraryApplicationStore: v.A,
                         LaunchableGameStore: E.A,
                         DispatchApplicationStore: M.A,
-                        ConnectedAppsStore: S.A,
+                        ConnectedAppsStore: N.A,
                         applicationId: l.id,
                         branchId: null != a ? a.branchId : null
                     }),

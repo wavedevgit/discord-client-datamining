@@ -1,7 +1,7 @@
 /** chunk id: 726862 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => T
+    A: () => C
 });
 var i = n(627968),
     s = n(64700),
@@ -26,14 +26,14 @@ let E = {
     optionErrors: []
 };
 
-function T(e) {
+function C(e) {
     let {
         guild: t,
         prompt: n,
         disableAutofocus: l,
         promptIndex: u,
         dragIndex: A,
-        includeCount: T,
+        includeCount: C,
         singleColumn: b,
         onPromptDragComplete: v,
         onPromptDragStart: S,
@@ -149,7 +149,7 @@ function T(e) {
                     placeholder: j.intl.string(j.t.QMCuCo),
                     maxLength: f.kq,
                     error: M.title
-                }), (0, i.jsx)(C, {
+                }), (0, i.jsx)(T, {
                     prompt: n,
                     guild: t
                 }), (0, i.jsx)(d.D0$, {
@@ -185,7 +185,7 @@ function T(e) {
                             required: e
                         }),
                         disabled: !n.inOnboarding,
-                        label: T ? j.intl.formatToPlainString(j.t["0re8T6"], {
+                        label: C ? j.intl.formatToPlainString(j.t["0re8T6"], {
                             count: V
                         }) : j.intl.string(j.t.Ur8Vrt)
                     }) : null]
@@ -218,7 +218,7 @@ function T(e) {
     })
 }
 
-function C(e) {
+function T(e) {
     let {
         prompt: t,
         guild: n

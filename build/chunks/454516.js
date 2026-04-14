@@ -23,24 +23,24 @@ var i = n(627968),
     j = n(660496),
     N = n(652215),
     E = n(985018),
-    T = n(8271);
-class C extends s.PureComponent {
+    C = n(8271);
+class T extends s.PureComponent {
     render() {
         let {
             user: e,
             guild: t
         } = this.props;
         return (0, i.jsxs)(o.DUT, {
-            className: T.KD,
+            className: C.KD,
             onClick: this.handleShowModal,
             onContextMenu: this.handleContextMenu,
             children: [(0, i.jsx)(o.euF, {
                 src: e.getAvatarURL(t?.id, 40),
                 "aria-label": e.username,
                 size: o._3J.SIZE_40,
-                className: T.pX
+                className: C.pX
             }), (0, i.jsxs)("div", {
-                className: T.Xh,
+                className: C.Xh,
                 children: [(0, i.jsx)(o.Text, {
                     variant: "text-md/semibold",
                     color: "text-strong",
@@ -95,12 +95,12 @@ let I = s.forwardRef(function(e, t) {
         return 60 * (null != t && null != n)
     }, [r, l]), d = s.useCallback(e => {
         if (null == r && 0 === e) return (0, i.jsx)(o.y$y, {
-            className: T.u1,
+            className: C.u1,
             type: o.y$y.Type.SPINNING_CIRCLE
         }, "spinner");
         let t = l[e],
             s = r?.get(t?.id ?? "");
-        if (null != t && null != s) return (0, i.jsx)(C, {
+        if (null != t && null != s) return (0, i.jsx)(T, {
             user: t,
             ban: s,
             guild: n
@@ -146,16 +146,16 @@ function b(e) {
             variant: "heading-lg/semibold",
             children: E.intl.string(E.t["7OY0gJ"])
         }), (0, i.jsx)("div", {
-            className: T.Vu,
+            className: C.Vu,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-sm/normal",
-                className: T.h_,
+                className: C.h_,
                 children: E.intl.format(E.t.JcZ36i, {
                     onModerationClick: u
                 })
             })
         }), (0, i.jsxs)("div", {
-            className: T.IA,
+            className: C.IA,
             children: [(0, i.jsx)(o.IWV, {
                 query: l ?? "",
                 placeholder: E.intl.string(E.t.MiqUmf),
@@ -165,7 +165,7 @@ function b(e) {
                 onClear: g
             }), (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
-                className: T.JU,
+                className: C.JU,
                 children: (0, i.jsx)(o.Button, {
                     variant: "primary",
                     text: E.intl.string(E.t["5h0QOP"]),
@@ -182,7 +182,7 @@ function v() {
     let {
         guild: e,
         searchQuery: t
-    } = (0, a.bG)([A.A], () => A.A.getProps(), [], l.isEqual), d = null != t && t.trim().length > 0, g = (0, u.A)(d), p = d !== g, [f] = (0, a.bG)([A.A], () => A.A.getBans(), [], _.D), j = f?.size ?? 0, C = (0, m.Ay)(), v = e?.id ?? N.dJq, S = s.useRef(null), y = s.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
+    } = (0, a.bG)([A.A], () => A.A.getProps(), [], l.isEqual), d = null != t && t.trim().length > 0, g = (0, u.A)(d), p = d !== g, [f] = (0, a.bG)([A.A], () => A.A.getBans(), [], _.D), j = f?.size ?? 0, T = (0, m.Ay)(), v = e?.id ?? N.dJq, S = s.useRef(null), y = s.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
         if (null == t || 0 === e.trim().length) return !1;
         let [
             [n], i
@@ -222,20 +222,20 @@ function v() {
     }, [U]);
     let F = s.useMemo(() => P[M.currentPage - 1] ?? [], [P, M.currentPage]);
     return null == e ? null : (0, i.jsxs)("div", {
-        className: T.kL,
+        className: C.kL,
         children: [(0, i.jsx)(b, {
             guildId: v,
             storedSearchQuery: t
         }), (0, i.jsxs)("div", {
-            className: T.gs,
+            className: C.gs,
             children: [!D && (0, i.jsx)(I, {
                 guild: e,
                 bans: f,
                 sortedBans: F,
                 ref: S
             }), !L && D && (0, i.jsxs)(o.ppr, {
-                theme: C,
-                className: T.p$,
+                theme: T,
+                className: C.p$,
                 children: [(0, i.jsx)(o.G8R, {
                     darkSrc: n(29093),
                     lightSrc: n(993507),
@@ -251,7 +251,7 @@ function v() {
             })]
         }), (0, i.jsx)("div", {
             children: (0, i.jsx)(o.mgR, {
-                className: T.JV,
+                className: C.JV,
                 totalCount: O.length + (L ? M.pageSize : 0),
                 pageSize: M.pageSize,
                 currentPage: M.currentPage,

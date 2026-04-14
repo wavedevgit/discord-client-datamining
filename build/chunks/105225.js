@@ -30,8 +30,8 @@ var i = n(627968),
     b = n(480890),
     y = n(379848),
     v = n(643501),
-    j = n(857253),
-    R = n(652896),
+    R = n(857253),
+    j = n(652896),
     O = n(880144),
     L = n(338771),
     M = n(508654),
@@ -52,8 +52,8 @@ var i = n(627968),
     X = n(905216),
     q = n(577062),
     $ = n(533978),
-    Q = n(958449),
-    J = n(970636),
+    J = n(958449),
+    Q = n(970636),
     Z = n(616356),
     ee = n(470710),
     et = n(430452),
@@ -158,7 +158,7 @@ function eI(e) {
                             } = e ?? {
                                 onClick: void 0
                             }, s = null != p;
-                            return (0, i.jsx)(Q.h, {
+                            return (0, i.jsx)(J.h, {
                                 ...l,
                                 centerButton: !0,
                                 disabled: o || !r,
@@ -215,7 +215,7 @@ let eN = l.memo(function(e) {
             ownerId: n
         } = e;
         return n !== t?.id
-    })), N = (0, M.Qs)(s.id), T = l.useRef(null), b = l.useCallback(() => o?.type === eg.lp.ACTIVITY && o.applicationId === a?.applicationId ? "ACTIVITY" : E ? "STREAM" : null != N ? "EVENT" : "CALL", [o, a?.applicationId, E, N]), [y, v] = l.useState(b()), j = (0, h.zhh)({
+    })), N = (0, M.Qs)(s.id), T = l.useRef(null), b = l.useCallback(() => o?.type === eg.lp.ACTIVITY && o.applicationId === a?.applicationId ? "ACTIVITY" : E ? "STREAM" : null != N ? "EVENT" : "CALL", [o, a?.applicationId, E, N]), [y, v] = l.useState(b()), R = (0, h.zhh)({
         opacity: A ? .2 : 1,
         transform: A && !u.enabled ? "scale(0.7)" : "scale(1)",
         config: {
@@ -233,9 +233,9 @@ let eN = l.memo(function(e) {
         b() !== y && p(!0)
     }, [y, b]);
     let O = l.useCallback(() => {
-        if (null != f)(0, m.vN)((0, R._z)(f));
+        if (null != f)(0, m.vN)((0, j._z)(f));
         else
-            for (let e of C)(0, m.vN)((0, R._z)(e))
+            for (let e of C)(0, m.vN)((0, j._z)(e))
     }, [C, f]);
     return (0, i.jsx)(h.YNO, {
         targetElementRef: T,
@@ -263,7 +263,7 @@ let eN = l.memo(function(e) {
                 isShown: u
             } = l;
             return (0, i.jsx)(d.animated.div, {
-                style: j,
+                style: R,
                 ref: T,
                 children: ((e, l) => {
                     let d = {
@@ -282,7 +282,7 @@ let eN = l.memo(function(e) {
                                 onPopoutClick: C.length > 0 ? l : null
                             });
                         case "STREAM":
-                            return (0, i.jsx)(Q.h, {
+                            return (0, i.jsx)(J.h, {
                                 ...d,
                                 hasPermission: !0,
                                 streamActive: !0,
@@ -337,7 +337,7 @@ function eT(e) {
     });
     return (0, i.jsxs)("div", {
         className: eE.iE,
-        children: [(0, i.jsx)(J.A, {
+        children: [(0, i.jsx)(Q.A, {
             enabled: !0,
             centerButton: !0,
             join: !0,
@@ -384,19 +384,19 @@ let eb = function(e) {
         enabled: S
     } = (0, el.A)(), b = (0, ea.A)(t), {
         suppress: y,
-        selfMute: R,
+        selfMute: j,
         mute: L
     } = (0, er.A)(t), {
         canGoLive: M
     } = (0, c.cf)([et.Ay], () => ({
         canGoLive: (0, O.A)(et.Ay)
-    })), D = (0, j.A)(), P = (0, c.bG)([v.default], () => null != v.default.getAwaitingRemoteSessionInfo()), k = null != D, H = (0, c.bG)([en.A], () => (D?.channelId ?? en.A.getVoiceChannelId()) === t.id), K = (0, B.A)({
+    })), D = (0, R.A)(), P = (0, c.bG)([v.default], () => null != v.default.getAwaitingRemoteSessionInfo()), k = null != D, H = (0, c.bG)([en.A], () => (D?.channelId ?? en.A.getVoiceChannelId()) === t.id), K = (0, B.A)({
         channelId: t.id
     }), Y = (0, w.i)({
         location: "center_control_tray"
     }), z = (0, c.bG)([g.Ay], () => g.Ay.getCurrentEmbeddedActivity()), {
         reachedLimit: X,
-        limit: Q
+        limit: J
     } = (0, es.A)(t), {
         analyticsLocations: Z
     } = (0, x.Ay)(E.A.VOICE_CONTROL_TRAY), ee = (0, V.Ay)(t), eo = l.useRef(null), eu = l.useRef(null), eA = (0, G.Us)();
@@ -451,7 +451,7 @@ let eb = function(e) {
                                 ref: eo,
                                 centerButton: !0,
                                 onPopoutClick: k ? null : n,
-                                selfMute: R,
+                                selfMute: j,
                                 serverMute: L,
                                 suppress: y,
                                 popoutOpen: l,
@@ -484,7 +484,7 @@ let eb = function(e) {
                             } = e, {
                                 isShown: l
                             } = t;
-                            return (0, i.jsx)(J.A, {
+                            return (0, i.jsx)(Q.A, {
                                 ref: eu,
                                 centerButton: !0,
                                 hasPermission: b,
@@ -493,7 +493,7 @@ let eb = function(e) {
                                 onChange: ex,
                                 onCameraUnavailable: eh.A,
                                 channelLimitReached: X,
-                                channelLimit: Q,
+                                channelLimit: J,
                                 popoutOpen: l,
                                 onPopoutClick: n
                             })

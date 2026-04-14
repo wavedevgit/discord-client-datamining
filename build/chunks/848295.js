@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(652176),
     C = n(954571),
     T = n(728458),
-    S = n(774774),
-    N = n(652215),
+    N = n(774774),
+    S = n(652215),
     x = n(49999),
     v = n(985018),
     b = n(442234);
@@ -146,10 +146,10 @@ function R(e) {
     }, [$, X, J, et, ei]), l.useEffect(() => () => {
         if ("video" === R.type || "embed" === R.type) {
             let [e, t] = eh();
-            C.default.track(N.HAw.CHANGE_LOG_VIDEO_PLAYED, {
+            C.default.track(S.HAw.CHANGE_LOG_VIDEO_PLAYED, {
                 change_log_id: k,
                 seconds_played: Math.round(e / 1e3)
-            }), C.default.track(N.HAw.CHANGE_LOG_VIDEO_UNMUTE, {
+            }), C.default.track(S.HAw.CHANGE_LOG_VIDEO_UNMUTE, {
                 change_log_id: k,
                 seconds_unmuted: Math.round(t / 1e3)
             })
@@ -157,10 +157,10 @@ function R(e) {
     }, [k, R.type]), l.useEffect(() => {
         (0, I.Vh)(c.M.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL);
         let e = Date.now();
-        return C.default.track(N.HAw.CHANGE_LOG_OPENED, {
+        return C.default.track(S.HAw.CHANGE_LOG_OPENED, {
             change_log_id: k
         }), () => {
-            C.default.track(N.HAw.CHANGE_LOG_CLOSED, {
+            C.default.track(S.HAw.CHANGE_LOG_CLOSED, {
                 change_log_id: k,
                 seconds_open: Math.round((Date.now() - e) / 1e3)
             }), (0, I.qr)(c.M.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, n, {
@@ -194,7 +194,7 @@ function R(e) {
                     src: R.src,
                     poster: R.poster,
                     onPlay: e => {
-                        C.default.track(N.HAw.CHANGE_LOG_VIDEO_INTERACTED, {
+                        C.default.track(S.HAw.CHANGE_LOG_VIDEO_INTERACTED, {
                             change_log_id: k
                         }), Q(Date.now()), en(!0), el(e.currentTarget.muted)
                     },
@@ -231,7 +231,7 @@ function R(e) {
                     renderImageComponent: f.LL,
                     renderLinkComponent: f.bU,
                     onPlay: () => {
-                        C.default.track(N.HAw.CHANGE_LOG_VIDEO_INTERACTED, {
+                        C.default.track(S.HAw.CHANGE_LOG_VIDEO_INTERACTED, {
                             change_log_id: k
                         })
                     }
@@ -239,9 +239,9 @@ function R(e) {
                     alt: "",
                     className: a()(b.Ki, P),
                     src: R.src
-                }) : null, null != M && "" !== M ? (0, i.jsx)(S.e4, {
+                }) : null, null != M && "" !== M ? (0, i.jsx)(N.e4, {
                     text: M,
-                    colorOptions: S.at.PREMIUM_TIER_2_WHITE_FILL,
+                    colorOptions: N.at.PREMIUM_TIER_2_WHITE_FILL,
                     className: b.ON
                 }) : null, (0, i.jsx)(A.Heading, {
                     variant: "display-md",

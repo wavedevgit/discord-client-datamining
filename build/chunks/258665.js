@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(860689),
     N = n(427262),
     E = n(820883),
-    T = n(276373),
-    C = n(438407),
+    C = n(276373),
+    T = n(438407),
     I = n(652215),
     b = n(985018),
     v = n(91404);
@@ -65,7 +65,7 @@ let y = s.forwardRef((e, t) => {
             theme: M
         } = e,
         k = s.useRef(null),
-        U = T.checkChangesToRender(l),
+        U = C.checkChangesToRender(l),
         P = v.headerDefault;
     h ? P = v.headerExpanded : U && (P = v.headerClickable);
     let w = l.timestampStart.calendar(),
@@ -90,7 +90,7 @@ let y = s.forwardRef((e, t) => {
                 "aria-expanded": h,
                 onClick: F,
                 ...e,
-                children: [(0, i.jsx)(C.H, {
+                children: [(0, i.jsx)(T.H, {
                     action: l.action,
                     actionType: l.actionType,
                     targetType: l.targetType
@@ -143,7 +143,7 @@ let y = s.forwardRef((e, t) => {
                                 options: s
                             } = l;
                             e = (0, j.fh)(n) ? n.name : n.toString();
-                            let r = T.getChangeTitle(l);
+                            let r = C.getChangeTitle(l);
                             return null != r ? (0, i.jsx)("div", {
                                 className: v.overflowEllipsis,
                                 children: b.intl.format(r, {
@@ -186,7 +186,7 @@ let y = s.forwardRef((e, t) => {
                 }) : null]
             }), h ? (0, i.jsx)("div", {
                 className: v.divider
-            }) : null, h && null != y ? (0, i.jsx)(C.r, {
+            }) : null, h && null != y ? (0, i.jsx)(T.r, {
                 log: l,
                 guild: y,
                 onContentClick: O

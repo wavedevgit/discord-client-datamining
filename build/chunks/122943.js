@@ -29,8 +29,8 @@ let T = l.memo(function(e) {
         error: r,
         message: T
     } = (0, g.I)(t), {
-        isBlocked: S,
-        isIgnored: N
+        isBlocked: N,
+        isIgnored: S
     } = (0, s.cf)([m.A], () => ({
         isBlocked: null != T && m.A.isBlockedForMessage(T),
         isIgnored: null != T && m.A.isIgnoredForMessage(T)
@@ -49,13 +49,13 @@ let T = l.memo(function(e) {
         children: I.intl.string(I.t.BZHld2)
     });
     else if (n)
-        if (null != T && S) y = (0, i.jsx)(o.Text, {
+        if (null != T && N) y = (0, i.jsx)(o.Text, {
             className: f.G4,
             variant: "text-sm/normal",
             color: "text-muted",
             children: I.intl.string(I.t["WPe+xL"])
         });
-        else if (null != T && N) y = (0, i.jsx)(o.Text, {
+        else if (null != T && S) y = (0, i.jsx)(o.Text, {
         className: f.G4,
         variant: "text-sm/normal",
         color: "text-muted",
@@ -65,7 +65,7 @@ let T = l.memo(function(e) {
         let {
             contentPlaceholder: e,
             renderedContent: t
-        } = (0, u.o)(T, b, S, N, a()(f.BK, C.tZ), {
+        } = (0, u.o)(T, b, N, S, a()(f.BK, C.tZ), {
             leadingIconClass: f.AF,
             trailingIconClass: f.AF,
             iconSize: E.eJ

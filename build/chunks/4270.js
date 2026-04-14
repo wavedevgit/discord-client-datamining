@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(790499),
     C = n(514426),
     T = n(977524),
-    S = n(687599),
-    N = n(652215),
+    N = n(687599),
+    S = n(652215),
     x = n(985018),
     v = n(69081);
 
@@ -49,7 +49,7 @@ function b() {
             R(t.map(e => e.channel.id))
         }, [t, R]);
     (0, c.Ay)(() => {
-        _.default.track(N.HAw.SPAM_MESSAGE_REQUESTS_VIEWED, {
+        _.default.track(S.HAw.SPAM_MESSAGE_REQUESTS_VIEWED, {
             num_spam_message_requests: n
         }), h.A.increment({
             name: o.K.SPAM_MESSAGE_REQUEST_VIEW
@@ -90,7 +90,7 @@ function b() {
             }) : null]
         }, "message-requests-spam-title"), [n, P, b]);
     return 0 === t.length ? (0, i.jsx)(C.A, {
-        section: S.zz.SPAM
+        section: N.zz.SPAM
     }) : (0, i.jsx)(s.hD, {
         navigator: y,
         children: (0, i.jsx)(s.PR, {

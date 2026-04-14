@@ -36,9 +36,9 @@ function b(e) {
         children: t,
         initialTab: n,
         guildId: s
-    } = e, a = (0, r.bG)([g.A], () => g.A.getGuild(s)), S = (0, r.bG)([_.A], () => _.A.isViewingServerShop(s)), b = (0, E.P)(a), y = (0, u.w)(s), v = a?.features.has(N.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE) === !0, j = (0, A.Oh)(a?.id), R = (0, h.Tq)(s)?.server_shop_tab_order, O = [], L = x.B.GUILD_SHOP_FULL_PREVIEW;
-    S || v && j ? (O.push(R === I.HA.PRODUCTS_FIRST ? x.B.GUILD_PRODUCTS : x.B.GUILD_ROLE_SUBSCRIPTIONS), O.push(R === I.HA.PRODUCTS_FIRST ? x.B.GUILD_ROLE_SUBSCRIPTIONS : x.B.GUILD_PRODUCTS), L = O[0]) : v && !j ? (O.push(x.B.GUILD_PRODUCTS), L = x.B.GUILD_PRODUCTS) : !v && j && (O.push(x.B.GUILD_ROLE_SUBSCRIPTIONS), L = x.B.GUILD_ROLE_SUBSCRIPTIONS, b && O.push(x.B.GUILD_PRODUCTS_PREVIEW)), n = n ?? L;
-    let [M, D] = l.useState(n), U = b && !(j && y) || M === x.B.GUILD_PRODUCTS_PREVIEW;
+    } = e, a = (0, r.bG)([g.A], () => g.A.getGuild(s)), S = (0, r.bG)([_.A], () => _.A.isViewingServerShop(s)), b = (0, E.P)(a), y = (0, u.w)(s), v = a?.features.has(N.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE) === !0, R = (0, A.Oh)(a?.id), j = (0, h.Tq)(s)?.server_shop_tab_order, O = [], L = x.B.GUILD_SHOP_FULL_PREVIEW;
+    S || v && R ? (O.push(j === I.HA.PRODUCTS_FIRST ? x.B.GUILD_PRODUCTS : x.B.GUILD_ROLE_SUBSCRIPTIONS), O.push(j === I.HA.PRODUCTS_FIRST ? x.B.GUILD_ROLE_SUBSCRIPTIONS : x.B.GUILD_PRODUCTS), L = O[0]) : v && !R ? (O.push(x.B.GUILD_PRODUCTS), L = x.B.GUILD_PRODUCTS) : !v && R && (O.push(x.B.GUILD_ROLE_SUBSCRIPTIONS), L = x.B.GUILD_ROLE_SUBSCRIPTIONS, b && O.push(x.B.GUILD_PRODUCTS_PREVIEW)), n = n ?? L;
+    let [M, D] = l.useState(n), U = b && !(R && y) || M === x.B.GUILD_PRODUCTS_PREVIEW;
     return l.useEffect(() => {
         D(n)
     }, [n]), (0, i.jsx)(T.Provider, {

@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(316506),
     N = n(631103),
     E = n(927573),
-    T = n(652215),
-    C = n(985018),
+    C = n(652215),
+    T = n(985018),
     I = n(584248),
     b = n(407759);
 
@@ -47,7 +47,7 @@ function v(e) {
         roles: m
     }), [r, t, m]), h = !a.aI(u, x);
     return (0, i.jsx)(d.m, {
-        text: h ? C.intl.string(C.t["IQ/6Sg"]) : null,
+        text: h ? T.intl.string(T.t["IQ/6Sg"]) : null,
         position: "top",
         children: (0, i.jsx)("div", {
             className: I.FS,
@@ -56,7 +56,7 @@ function v(e) {
                 textVariant: "text-sm/semibold",
                 onClick: () => (0, p.Y_)(n.id),
                 disabled: a.aI(n.permissions, _.x3) || h || l,
-                text: C.intl.string(C.t["UYq7+O"])
+                text: T.intl.string(T.t["UYq7+O"])
             })
         })
     })
@@ -75,7 +75,7 @@ function S(e) {
             className: I.wV
         }), (0, i.jsx)(c.Text, {
             variant: "text-sm/normal",
-            children: C.intl.string(C.t.DEBGqA)
+            children: T.intl.string(T.t.DEBGqA)
         })]
     });
 
@@ -85,7 +85,7 @@ function S(e) {
                 ...n,
                 permissions: a.TF(n.permissions, e)
             }
-        }) && C.intl.string(C.t["K+D+GF"]) : C.intl.string(C.t.nOtPMM)
+        }) && T.intl.string(T.t["K+D+GF"]) : T.intl.string(T.t.nOtPMM)
     }
     return (0, i.jsxs)("div", {
         className: I.eZ,
@@ -128,7 +128,7 @@ function y(e) {
         handleScroll: A
     } = (0, j.u)(), v = s.useRef(!1);
     return s.useEffect(() => {
-        v.current || "" === d.trimStart() || (x.default.track(T.HAw.SEARCH_STARTED, {
+        v.current || "" === d.trimStart() || (x.default.track(C.HAw.SEARCH_STARTED, {
             search_type: "Permissions"
         }), v.current = !0)
     }, [d]), (0, i.jsx)(c.GtU, {
@@ -160,8 +160,8 @@ function y(e) {
                         query: d,
                         onChange: u,
                         onClear: () => u(""),
-                        placeholder: C.intl.string(C.t.OLJAk3),
-                        "aria-label": C.intl.string(C.t.OLJAk3)
+                        placeholder: T.intl.string(T.t.OLJAk3),
+                        "aria-label": T.intl.string(T.t.OLJAk3)
                     })
                 })]
             }), (0, i.jsx)(S, {

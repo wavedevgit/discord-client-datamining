@@ -45,9 +45,9 @@ function x(e) {
     l.useEffect(() => {
         S.current = y
     });
-    let j = l.useRef(b),
+    let R = l.useRef(b),
         {
-            currentDocument: R,
+            currentDocument: j,
             rootNode: O
         } = l.useMemo(() => {
             let e = null != I && T ? I.document : document,
@@ -64,21 +64,21 @@ function x(e) {
             i !== e && (r.A.updateLayout(t.id, i, n), i === E.DUB.FULL_SCREEN && t.isPrivate() && p._.dispatch(E.jej.TEXTAREA_BLUR))
         }, [n, t]),
         U = l.useCallback(e => {
-            null == O || e === E.DUB.FULL_SCREEN && (D(e, j.current), (0, f.sP)(e => {
-                j.current = e
-            }, R))
-        }, [R, D, O]),
+            null == O || e === E.DUB.FULL_SCREEN && (D(e, R.current), (0, f.sP)(e => {
+                R.current = e
+            }, j))
+        }, [j, D, O]),
         G = l.useCallback(e => () => {
-            null != O && ((0, u.X)(N, u.O.FULL_SCREEN, e !== E.DUB.FULL_SCREEN), e !== E.DUB.FULL_SCREEN ? (j.current = e, D(e, E.DUB.FULL_SCREEN), (0, f.tl)(O)) : U(e))
+            null != O && ((0, u.X)(N, u.O.FULL_SCREEN, e !== E.DUB.FULL_SCREEN), e !== E.DUB.FULL_SCREEN ? (R.current = e, D(e, E.DUB.FULL_SCREEN), (0, f.tl)(O)) : U(e))
         }, [D, U, O, N]);
     l.useEffect(() => {
         let e = () => {
-            null != O && ((0, f._U)(O, R) || b !== E.DUB.FULL_SCREEN || G(b)())
+            null != O && ((0, f._U)(O, j) || b !== E.DUB.FULL_SCREEN || G(b)())
         };
-        return R.addEventListener(f.Wb, e), () => {
-            R.removeEventListener(f.Wb, e)
+        return j.addEventListener(f.Wb, e), () => {
+            j.removeEventListener(f.Wb, e)
         }
-    }, [R, b, G, O]);
+    }, [j, b, G, O]);
     let P = {
             channel: t,
             maybeLeaveFullScreen: U
@@ -98,8 +98,8 @@ function x(e) {
             T && (0, g.isMac)() || t(b)
         }
     }, [b, T]), l.useEffect(() => {
-        null != O && S.current === E._Of.VIDEO && y === E._Of.VOICE && (0, f.sP)(O, R)
-    }, [R, y, S, O]), l.useEffect(() => {
+        null != O && S.current === E._Of.VIDEO && y === E._Of.VOICE && (0, f.sP)(O, j)
+    }, [j, y, S, O]), l.useEffect(() => {
         !v && T && a.h.wait(() => h.close(E.MLl.CHANNEL_CALL_POPOUT))
     }, [v, T]), M) ? (0, i.jsx)(A.A, {
         themeable: !1,

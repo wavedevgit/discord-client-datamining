@@ -108,7 +108,7 @@ function A(e) {
         renderHeader: l,
         renderContent(e) {
             let t = n(e);
-            return (0, i.jsx)(T, {
+            return (0, i.jsx)(C, {
                 children: t
             })
         },
@@ -130,7 +130,7 @@ function f(e) {
         renderHeader: l,
         renderContent(e) {
             let t = n(e);
-            return (0, i.jsx)(C, {
+            return (0, i.jsx)(T, {
                 children: t
             })
         },
@@ -173,7 +173,7 @@ let N = e => {
             children: t
         })
     },
-    T = e => {
+    C = e => {
         let {
             children: t
         } = e;
@@ -181,7 +181,7 @@ let N = e => {
             children: (0, d.$g)(t ?? 0, u.Yri.USD)
         })
     },
-    C = e => {
+    T = e => {
         let {
             children: t
         } = e;

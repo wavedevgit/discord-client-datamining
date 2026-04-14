@@ -43,11 +43,11 @@ function N(e) {
         channel: t
     }), k = (0, a.bG)([m.A], () => m.A.isInProgress());
 
-    function U() {
+    function w() {
         (0, A.Tv)(t, void 0, "Plus Button")
     }
 
-    function w() {
+    function U() {
         g.default.track(x.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), L("/", (0, E.x7)("/"))
     }
 
@@ -210,7 +210,7 @@ function N(e) {
                             type: "icon",
                             icon: e.icon
                         },
-                        action: U
+                        action: w
                     }, "THREAD");
                 case C.v.SLASH_COMMAND:
                     return (0, i.jsx)(r.Drp, {
@@ -221,7 +221,7 @@ function N(e) {
                             type: "icon",
                             icon: e.icon
                         },
-                        action: w
+                        action: U
                     }, "SLASH_COMMAND");
                 case C.v.SCHEDULED_MESSAGE:
                     return (0, i.jsx)(r.Drp, {

@@ -24,8 +24,8 @@ var i, l = n(627968),
     f = n(576705),
     C = n(607567),
     T = n(954571),
-    S = n(403362),
-    N = n(707592),
+    N = n(403362),
+    S = n(707592),
     x = n(698441),
     v = n(935159),
     b = n(473019),
@@ -177,7 +177,7 @@ function F(e) {
         children: [(0, l.jsxs)("div", {
             className: k.fI,
             children: [(0, l.jsx)(d.DUT, {
-                onClick: () => (0, N.uR)({
+                onClick: () => (0, S.uR)({
                     eventId: t.id
                 }),
                 className: k.oP,
@@ -268,7 +268,7 @@ function W(e) {
     let {
         guildEvent: t
     } = e, n = r.useCallback(() => {
-        (0, N.uR)({
+        (0, S.uR)({
             eventId: t.id
         })
     }, [t]);
@@ -360,7 +360,7 @@ function $(e) {
             _ = G.intl.string(G.t.wBoE6L);
             break;
         default:
-            (0, S.xb)(i)
+            (0, N.xb)(i)
     }
     return null == a ? null : (0, l.jsxs)(l.Fragment, {
         children: [u.length > 0 ? (0, l.jsxs)("div", {

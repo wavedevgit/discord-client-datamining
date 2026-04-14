@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(756369),
     y = n(538355),
     v = n(522871),
-    j = n(715628),
-    R = n(752636),
+    R = n(715628),
+    j = n(752636),
     O = n(675722),
     L = n(268719),
     M = n(234957),
@@ -57,8 +57,8 @@ let w = l.memo(function e(t) {
         X = _.hD.useSetting(),
         q = _.rs.useSetting(),
         $ = _.kt.useSetting(),
-        Q = (0, c.S)((s.editedTimestamp ?? s.timestamp).valueOf()),
-        J = (0, u.A)(l?.id),
+        J = (0, c.S)((s.editedTimestamp ?? s.timestamp).valueOf()),
+        Q = (0, u.A)(l?.id),
         {
             disableReactionCreates: Z
         } = (0, N.A)(l),
@@ -68,8 +68,8 @@ let w = l.memo(function e(t) {
             hasBailedAst: en
         } = (0, y.A)(s, {
             hideSimpleEmbedContent: X && q,
-            allowList: Q,
-            allowHeading: Q,
+            allowList: J,
+            allowHeading: J,
             allowLinks: !0,
             previewLinkTarget: !0
         }),
@@ -104,7 +104,7 @@ let w = l.memo(function e(t) {
             [k._A]: t.isGroupStart
         }),
         childrenRepliedMessage: (0, M.A)(s, l, W, K, o),
-        childrenHeader: (0, R.A)({
+        childrenHeader: (0, j.A)({
             ...t,
             author: ei,
             guildId: l.guild_id
@@ -127,14 +127,14 @@ let w = l.memo(function e(t) {
             renderEmbeds: q,
             gifAutoPlay: $,
             poll: ec,
-            showListsAndHeaders: Q,
-            showMaskedLinks: Q,
-            shouldHideMediaOptions: J,
+            showListsAndHeaders: J,
+            showMaskedLinks: J,
+            shouldHideMediaOptions: Q,
             enabledContentHarmTypeFlags: eo,
             ctaButtonType: ed
         }),
         childrenExecutedCommand: (0, L.A)(s, l, o),
-        childrenMessageContent: (0, j.A)(t, ee),
+        childrenMessageContent: (0, R.A)(t, ee),
         childrenSystemMessage: (0, O.A)(t),
         onContextMenu: P,
         onClick: w,

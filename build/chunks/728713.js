@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(576705),
     N = n(792831),
     E = n(396816),
-    T = n(359837),
-    C = n(533448),
+    C = n(359837),
+    T = n(533448),
     I = n(316506),
     b = n(927573),
     v = n(652215),
@@ -45,9 +45,9 @@ function O(e) {
             onDragComplete: j,
             roleStyle: N
         } = e,
-        E = (0, T.c)(s, d, l),
-        C = (0, f.Oy)(l),
-        I = null == E && !C,
+        E = (0, C.c)(s, d, l),
+        T = (0, f.Oy)(l),
+        I = null == E && !T,
         b = l.tags?.guild_connections !== void 0,
         S = (0, A.X_)(s.id, l, l.colorStrings),
         [, O] = (0, a.i)({
@@ -117,12 +117,12 @@ function O(e) {
         clickableRef: e => {
             O(L(e?.ref ?? null))
         },
-        children: [t, null != E ? (0, i.jsx)(T.A, {
+        children: [t, null != E ? (0, i.jsx)(C.A, {
             className: y.s2,
             tooltipText: E
         }) : null, (0, i.jsx)(u.Text, {
             variant: "text-sm/medium",
-            color: C ? "text-strong" : "interactive-text-active",
+            color: T ? "text-strong" : "interactive-text-active",
             lineClamp: 1,
             children: l.name
         })]
@@ -136,13 +136,13 @@ function G(e) {
         setCurrentRoleId: l,
         setSelectedSection: a
     } = e, o = (0, d.bG)([E.A], () => E.A.roles), m = (0, d.bG)([j.A], () => j.A.getHighestRole(t)), _ = (0, d.bG)([h.A], () => h.A.roleStyle), [A, f] = s.useState(o.length), {
-        scrolledToTop: T,
+        scrolledToTop: C,
         handleScroll: v
     } = (0, I.u)(), {
         handleDragStart: R,
         handleDragReset: G,
         handleDragComplete: L
-    } = (0, C.A)(o), D = s.useRef(null), M = s.useCallback(e => {
+    } = (0, T.A)(o), D = s.useRef(null), M = s.useCallback(e => {
         let t = o.findIndex(t => t.id === e);
         D.current?.getScrollerNode()?.scrollTo({
             top: Math.max((t - 2) * 34, 0)
@@ -158,7 +158,7 @@ function G(e) {
             className: y.kL,
             children: [(0, i.jsxs)("div", {
                 className: r()(y.gn, {
-                    [y.P6]: !T
+                    [y.P6]: !C
                 }),
                 children: [(0, i.jsxs)(u.DUT, {
                     className: y.DD,

@@ -33,8 +33,8 @@ function b(e) {
             onFullscreenParticipant: b,
             participants: y,
             filteredParticipants: v,
-            popoutType: j,
-            inCall: R,
+            popoutType: R,
+            inCall: j,
             channel: O,
             selectedParticipant: L,
             showParticipants: M = !0,
@@ -53,21 +53,21 @@ function b(e) {
         X = L.type === I.lp.ACTIVITY,
         q = (0, c.A)(X ? L.applicationId : void 0),
         $ = !X && null != L.streamId,
-        Q = G <= 2 * S + 144,
-        J = M && !Q,
-        Z = (0, d.A)(J),
+        J = G <= 2 * S + 144,
+        Q = M && !J,
+        Z = (0, d.A)(Q),
         ee = P === x.DUB.MINIMUM || P === x.DUB.NORMAL,
-        et = !Q && (!ee || X),
+        et = !J && (!ee || X),
         en = (0, m.A)(et, 100),
         ei = ((0, d.A)(L.id) ?? L.id) !== L.id,
         el = 0;
-    (X || J) && (el += 72), X && !J && (et ? el += 48 : el += 8), J && (el += .5 * S + 8);
+    (X || Q) && (el += 72), X && !Q && (et ? el += 48 : el += 8), Q && (el += .5 * S + 8);
     let es = l.useMemo(() => X && q ? U / (G - 2 * el) : $ && null != V && V.width > 0 && V.height > 0 ? V.width / V.height : T, [$, V, X, U, G, el, q]),
         ea = G - 2 * el,
         er = X && q ? U : ea * es,
         eo = Math.floor(Math.min(U, er) / es),
         ed = G > U / es + 72 + S + 8;
-    t = J || X ? J ? -16 : -8 : 40 + Math.max(0, 72 - (G - eo) / 2);
+    t = Q || X ? Q ? -16 : -8 : 40 + Math.max(0, 72 - (G - eo) / 2);
     let ec = Math.max(0, 72 - (G - eo) / 2);
     l.useEffect(() => {
         let e = setTimeout(() => {
@@ -80,8 +80,8 @@ function b(e) {
     let eu = W || null == F,
         eh = eu ? "animate-never" : "animate-always",
         eA = (0, o.zhh)({
-            value: +!!J,
-            delay: ed || !J ? 0 : 100,
+            value: +!!Q,
+            delay: ed || !Q ? 0 : 100,
             config: {
                 ...r.config.stiff,
                 clamp: !0
@@ -93,7 +93,7 @@ function b(e) {
             }
         }, eh),
         e_ = (0, o.zhh)({
-            value: +!!J,
+            value: +!!Q,
             config: {
                 ...r.config.stiff,
                 clamp: !0
@@ -105,7 +105,7 @@ function b(e) {
                 ...r.config.stiff,
                 clamp: !0
             }
-        }, Z === J && e_.value.idle && !en || ei || eu ? "animate-never" : "animate-always"),
+        }, Z === Q && e_.value.idle && !en || ei || eu ? "animate-never" : "animate-always"),
         ep = (0, o.zhh)({
             value: t,
             config: {
@@ -133,7 +133,7 @@ function b(e) {
         ef = l.useCallback(e => {
             H(e), K(!1)
         }, []),
-        eE = J ? [] : (0, f.Cf)(y, L, B),
+        eE = Q ? [] : (0, f.Cf)(y, L, B),
         {
             visibleParticipants: ex,
             participantTileWidth: eI
@@ -179,8 +179,8 @@ function b(e) {
                                     onDoubleClick: b,
                                     onContextMenu: s,
                                     onVideoResize: ef,
-                                    inCall: R,
-                                    popoutType: j,
+                                    inCall: j,
+                                    popoutType: R,
                                     controlsBottom: ec
                                 })
                             }, a) : null
@@ -214,8 +214,8 @@ function b(e) {
                     participants: ex,
                     participantTileWidth: eI,
                     selectedParticipantId: L.id,
-                    inCall: R,
-                    popoutType: j,
+                    inCall: j,
+                    popoutType: R,
                     paused: Y || !M
                 })
             })]

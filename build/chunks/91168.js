@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(599167),
     N = n(7891),
     E = n(450510),
-    T = n(501255),
-    C = n(861410),
+    C = n(501255),
+    T = n(861410),
     I = n(433522),
     b = n(287809),
     v = n(203982),
@@ -79,7 +79,7 @@ let eN = {
     getSectionDefinition: function(e, t) {
         let eN = (0, _.$)(t.guild.id),
             eE = !1 === t.guild.features.has(ep.GuildFeatures.CREATOR_MONETIZABLE) && !1 === t.guild.features.has(ep.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL),
-            eT = eN && eE ? {
+            eC = eN && eE ? {
                 label: (0, i.jsx)("div", {
                     className: ej.vf,
                     children: ef.intl.string(ef.t.Tn7Koo)
@@ -92,7 +92,7 @@ let eN = {
                 }),
                 ariaLabel: ef.intl.string(ef.t["KzCF/6"])
             },
-            eC = t.guild.features.has(ep.GuildFeatures.COMMUNITY) && t.canViewGuildAnalytics;
+            eT = t.guild.features.has(ep.GuildFeatures.COMMUNITY) && t.canViewGuildAnalytics;
         switch (e) {
             case ep.BEX.PROFILE:
                 return {
@@ -147,7 +147,7 @@ let eN = {
                 };
             case ep.BEX.OFFICIAL_MESSAGES:
                 return {
-                    section: ep.BEX.OFFICIAL_MESSAGES, impressionName: s.ImpressionNames.GUILD_SETTINGS_OFFICIAL_MESSAGES, label: ef.intl.string(ef.t.xHEzFh), ariaLabel: ef.intl.string(ef.t.xHEzFh), element: ex.Ay, predicate: () => t.canManageGuild && (0, T.GP)(t.guild, "getSectionDefinition"), notice: {
+                    section: ep.BEX.OFFICIAL_MESSAGES, impressionName: s.ImpressionNames.GUILD_SETTINGS_OFFICIAL_MESSAGES, label: ef.intl.string(ef.t.xHEzFh), ariaLabel: ef.intl.string(ef.t.xHEzFh), element: ex.Ay, predicate: () => t.canManageGuild && (0, C.GP)(t.guild, "getSectionDefinition"), notice: {
                         stores: [R.A],
                         element: ex.wF
                     }
@@ -239,7 +239,7 @@ let eN = {
                 };
             case ep.BEX.ANALYTICS:
                 return {
-                    section: ep.BEX.ANALYTICS, impressionName: s.ImpressionNames.GUILD_SETTINGS_ANALYTICS, label: ef.intl.string(ef.t["0wWfUG"]), ariaLabel: ef.intl.string(ef.t["0wWfUG"]), element: L.A, predicate: () => eC
+                    section: ep.BEX.ANALYTICS, impressionName: s.ImpressionNames.GUILD_SETTINGS_ANALYTICS, label: ef.intl.string(ef.t["0wWfUG"]), ariaLabel: ef.intl.string(ef.t["0wWfUG"]), element: L.A, predicate: () => eT
                 };
             case ep.BEX.DISCOVERY_LANDING_PAGE:
                 return {
@@ -254,13 +254,13 @@ let eN = {
             case ep.BEX.COMMUNITY_WELCOME:
                 return {
                     section: ep.BEX.COMMUNITY_WELCOME, impressionName: s.ImpressionNames.GUILD_SETTINGS_COMMUNITY_WELCOME, label: ef.intl.string(ef.t["2rkmDr"]), ariaLabel: ef.intl.string(ef.t["2rkmDr"]), element: M.A, notice: {
-                        stores: [C.A],
+                        stores: [T.A],
                         element: I.A
                     }, predicate: () => t.canManageGuild && t.guild.features.has(ep.GuildFeatures.COMMUNITY) && !t.welcomeScreenEmpty && !t.guild.features.has(ep.GuildFeatures.GUILD_SERVER_GUIDE)
                 };
             case ep.BEX.ROLE_SUBSCRIPTIONS:
                 return {
-                    ...eT, section: ep.BEX.ROLE_SUBSCRIPTIONS, element: j.A, type: d.Py.CUSTOM, predicate: () => t.monetizationPredicate() && ((0, A.hA)(t.guild) || c.A.hasSeenCreatorOnboardingForGuild(t.guild.id)), newIndicatorDismissibleContentTypes: (0, f.aV)(t.guild) ? [l.M.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE] : null
+                    ...eC, section: ep.BEX.ROLE_SUBSCRIPTIONS, element: j.A, type: d.Py.CUSTOM, predicate: () => t.monetizationPredicate() && ((0, A.hA)(t.guild) || c.A.hasSeenCreatorOnboardingForGuild(t.guild.id)), newIndicatorDismissibleContentTypes: (0, f.aV)(t.guild) ? [l.M.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE] : null
                 };
             case ep.BEX.GUILD_PRODUCTS:
                 return {

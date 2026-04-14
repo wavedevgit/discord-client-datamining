@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(711950),
     C = n(701363),
     T = n(828100),
-    S = n(509963),
-    N = n(775602),
+    N = n(509963),
+    S = n(775602),
     x = n(924283),
     v = n(139286),
     b = n(213750),
@@ -93,7 +93,7 @@ let e_ = e => {
         let {
             selected: t,
             ...n
-        } = e, r = (0, d.rm)("friends"), a = (0, U.kX)(), s = (0, u.bG)([B.Ay], () => B.Ay.canShowFriendsTabBadge()), c = (0, u.bG)([N.A], () => N.A.useReducedMotion), {
+        } = e, r = (0, d.rm)("friends"), a = (0, U.kX)(), s = (0, u.bG)([B.Ay], () => B.Ay.canShowFriendsTabBadge()), c = (0, u.bG)([S.A], () => S.A.useReducedMotion), {
             enabled: h
         } = k.u.useConfig({
             location: "Friends Tab"
@@ -117,7 +117,7 @@ let e_ = e => {
                     tab_opened: e
                 })
             },
-            [S, b] = l.useState(!1),
+            [N, b] = l.useState(!1),
             y = () => {
                 b(!1)
             },
@@ -157,7 +157,7 @@ let e_ = e => {
                     wind: 0,
                     sprites: eo.uI,
                     spriteColors: eo._t,
-                    firing: S,
+                    firing: N,
                     confettiConfig: {
                         opacity: {
                             type: "static",
@@ -188,7 +188,7 @@ let e_ = e => {
             text: eu.intl.string(eu.t.cw57ar),
             ...l,
             ...r,
-            children: (0, i.jsx)(S.A, {
+            children: (0, i.jsx)(N.A, {
                 className: a()(eh.Qw, {
                     [eh.QI]: n
                 })
@@ -295,7 +295,7 @@ function eT(e) {
     }
     return e.startsWith(es.BVt.APPLICATION_STORE) ? e === es.BVt.APPLICATION_STORE ? es.liQ.STORE_DIRECTORY_HOME : e.startsWith(es.BVt.APPLICATION_STORE) ? es.liQ.STORE_DIRECTORY_BROWSE : es.liQ.STORE_LISTING : es.liQ.DM_CHANNEL
 }
-let eS = l.memo(function(e) {
+let eN = l.memo(function(e) {
     let {
         showLibrary: t,
         hasLibraryApplication: n,
@@ -308,10 +308,10 @@ let eS = l.memo(function(e) {
         shouldShowFamilyCenterRow: h,
         selectedChannelId: _,
         path: m
-    } = e, p = l.useRef(null), I = l.useRef(null), f = l.useRef(null), C = l.useRef(null), S = (0, R.c)("PrivateChannels"), N = null;
-    return d ? N = (0, i.jsx)(W.V, {
+    } = e, p = l.useRef(null), I = l.useRef(null), f = l.useRef(null), C = l.useRef(null), N = (0, R.c)("PrivateChannels"), S = null;
+    return d ? S = (0, i.jsx)(W.V, {
         targetElementRef: C
-    }) : u && (N = (0, i.jsx)(H.A, {
+    }) : u && (S = (0, i.jsx)(H.A, {
         targetElementRef: C
     })), (0, i.jsxs)("nav", {
         className: eh.AB,
@@ -345,7 +345,7 @@ let eS = l.memo(function(e) {
             listScrollerRef: f,
             children: [(0, i.jsx)(em, {
                 selected: null != m ? m === es.BVt.FRIENDS : r === es.BVt.FRIENDS
-            }, "friends"), S ? (0, i.jsx)(e_, {
+            }, "friends"), N ? (0, i.jsx)(e_, {
                 selected: null != m ? m === es.BVt.ICYMI : r === es.BVt.ICYMI
             }, "icymi") : null, n && t ? (0, i.jsx)(eg, {
                 selected: null == m ? null != r && r.startsWith(es.BVt.APPLICATION_LIBRARY) : m.startsWith(es.BVt.APPLICATION_LIBRARY),
@@ -364,7 +364,7 @@ let eS = l.memo(function(e) {
                             object: es.ZSU.NAVIGATION_LINK
                         }
                     }
-                }), N]
+                }), S]
             }, "nitro-tab-group") : null, (0, i.jsx)(b.i, {
                 selected: m === es.BVt.COLLECTIBLES_SHOP || r?.startsWith(es.BVt.COLLECTIBLES_SHOP),
                 listItemRef: I,
@@ -379,12 +379,12 @@ let eS = l.memo(function(e) {
                 selected: null != r && r.startsWith(es.BVt.FAMILY_CENTER) || null != m && m.startsWith(es.BVt.FAMILY_CENTER)
             }, "family-center") : null, (0, i.jsx)(z.A, {
                 selected: null == m ? null != r && r.startsWith(es.BVt.QUEST_HOME) : m === es.BVt.QUEST_HOME
-            }, "quests"), (0, i.jsx)(eN, {}, "section-divider-top")]
+            }, "quests"), (0, i.jsx)(eS, {}, "section-divider-top")]
         })]
     })
 });
 
-function eN() {
+function eS() {
     return (0, i.jsx)("div", {
         className: eh.ts
     })
@@ -423,8 +423,8 @@ function ex() {
             location: "Private Channels"
         });
     (0, y.Tc)() && (m && !I && E.push(A.M.REFERRAL_PROGRAM_POPOVER), p && E.push(A.M.RECURRING_3P_PROMOTION_POPOVER));
-    let [f] = (0, O.Cc)(m && I ? A.M.REFERRAL_PROGRAM_POPOVER_V2 : null, g ?? "", void 0, !0), [C, T] = (0, O.kn)(E, void 0, !0), S = null == f && C === A.M.RECURRING_3P_PROMOTION_POPOVER, N = I ? f === A.M.REFERRAL_PROGRAM_POPOVER_V2 : C === A.M.REFERRAL_PROGRAM_POPOVER, x = (0, j.H)(), v = (e = J.dm.useSetting(), t = (0, M.A)(), !0 === e && !0 === t);
-    return (0, i.jsx)(eS, {
+    let [f] = (0, O.Cc)(m && I ? A.M.REFERRAL_PROGRAM_POPOVER_V2 : null, g ?? "", void 0, !0), [C, T] = (0, O.kn)(E, void 0, !0), N = null == f && C === A.M.RECURRING_3P_PROMOTION_POPOVER, S = I ? f === A.M.REFERRAL_PROGRAM_POPOVER_V2 : C === A.M.REFERRAL_PROGRAM_POPOVER, x = (0, j.H)(), v = (e = J.dm.useSetting(), t = (0, M.A)(), !0 === e && !0 === t);
+    return (0, i.jsx)(eN, {
         theme: a,
         showLibrary: r,
         hasLibraryApplication: o,
@@ -432,8 +432,8 @@ function ex() {
         homeLink: n,
         premiumTabSelected: l,
         shouldShowNitroTab: _,
-        showReferralProgramPopover: N,
-        showRecurring3PPopover: S,
+        showReferralProgramPopover: S,
+        showRecurring3PPopover: N,
         shouldShowMessageRequestsRow: x,
         shouldShowFamilyCenterRow: v,
         selectedChannelId: c,

@@ -1,6 +1,6 @@
 /** chunk id: 301503 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => S
 });
 var i = n(627968),
     l = n(64700),
@@ -22,14 +22,14 @@ var i = n(627968),
     f = n(324580),
     C = n(488995),
     T = n(985018),
-    S = n(579528);
+    N = n(579528);
 
-function N() {
+function S() {
     let e = l.useRef((0, h.YP)()),
         {
             onScroll: t,
             scrollPosition: n,
-            resetScrollPosition: N
+            resetScrollPosition: S
         } = (0, a.G)(),
         {
             tabs: x,
@@ -82,13 +82,13 @@ function N() {
     return l.useEffect(() => {
         F.current.flushSeenGuilds(e.current)
     }, [y]), l.useEffect(() => {
-        N()
-    }, [v, N]), l.useEffect(() => {
+        S()
+    }, [v, S]), l.useEffect(() => {
         j || u.A.setState({
             scrollPosition: null
         })
     }, [j]), (0, i.jsxs)("div", {
-        className: S.kL,
+        className: N.kL,
         children: [(0, i.jsxs)(o.Ay, {
             variant: j ? o.Z5.RELATIVE : o.Z5.OVERLAY,
             children: [!j && (0, i.jsx)(o.ns, {
@@ -107,7 +107,7 @@ function N() {
             }), j && (0, i.jsx)(r.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
-                className: S.ov,
+                className: N.ov,
                 children: T.intl.format(T.t.zHdzqW, {
                     query: V
                 })

@@ -76,9 +76,9 @@ function L(e) {
         } = e,
         P = (0, o.bG)([E.A], () => null != D ? E.A.getGuild(D.getGuildId()) : null, [D]),
         k = null != P && v.default.extractTimestamp(P.id) < Date.now() - y.NOr,
-        U = (0, o.bG)([f.default], () => P?.ownerId === f.default.getId(), [P]),
+        w = (0, o.bG)([f.default], () => P?.ownerId === f.default.getId(), [P]),
         {
-            canInvite: w,
+            canInvite: U,
             canManageGuild: G,
             canMessage: F
         } = (0, A.Sk)(D, P),
@@ -207,7 +207,7 @@ function L(e) {
             })()
         }, [P?.id]), null == P) return null;
     let en = [];
-    k || (w && en.push((0, i.jsx)(r.A.div, {
+    k || (U && en.push((0, i.jsx)(r.A.div, {
         className: R.cW,
         style: $ ? {
             opacity: X[en.length]
@@ -263,7 +263,7 @@ function L(e) {
             onClick: q
         })
     }, "addapp")));
-    let ei = U ? j.intl.string(j.t["1ach9C"]) : j.intl.string(j.t["ezm+/j"]);
+    let ei = w ? j.intl.string(j.t["1ach9C"]) : j.intl.string(j.t["ezm+/j"]);
     k && (ei = j.intl.string(j.t["gwyU/J"]));
     let el = `${I.A.getArticleURL(y.MVz.GUILD_GETTING_STARTED)}?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm`;
     return (0, i.jsx)(N.Ay, {

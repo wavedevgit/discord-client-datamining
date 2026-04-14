@@ -30,12 +30,12 @@ function p(e) {
         } = (0, d.y)(e),
         C = I.length > 0,
         T = f && !e?.features.has(m.GuildFeatures.HUB),
-        S = (0, o.WG)(t);
+        N = (0, o.WG)(t);
     if (l.useEffect(() => {
             a.A.getGuildEventsForCurrentUser(t)
         }, [t]), n) return 0;
     if (i) return 1;
-    if (g || null != S) return 2;
+    if (g || null != N) return 2;
     if (p) return 3;
     if (E) return 4;
     else if (C) return 5;

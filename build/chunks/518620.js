@@ -37,21 +37,21 @@ let h = function(e) {
             section: t
         } = e;
         return h(t)
-    }, [h]), f = l.useCallback(e => null == g ? null : g(e.section), [g]), C = l.useCallback(e => null == g ? 0 : 48 * (null != g(e)), [g]), T = (0, s.bG)([d.A], () => d.A.keyboardModeEnabled), S = l.useRef(null), N = l.useCallback(() => new Promise(e => {
-        let t = S.current;
+    }, [h]), f = l.useCallback(e => null == g ? null : g(e.section), [g]), C = l.useCallback(e => null == g ? 0 : 48 * (null != g(e)), [g]), T = (0, s.bG)([d.A], () => d.A.keyboardModeEnabled), N = l.useRef(null), S = l.useCallback(() => new Promise(e => {
+        let t = N.current;
         if (null == t) return e();
         t.scrollToTop({
             callback: () => requestAnimationFrame(() => e())
         })
     }), []), x = l.useCallback(() => new Promise(e => {
-        let t = S.current;
+        let t = N.current;
         if (null == t) return e();
         t.scrollToBottom({
             callback: () => requestAnimationFrame(() => e())
         })
     }), []), v = l.useCallback(e => {
         let t = document.querySelector(e),
-            n = S.current;
+            n = N.current;
         null != t && null != n && n.scrollIntoViewNode({
             node: t,
             padding: 8,
@@ -60,7 +60,7 @@ let h = function(e) {
     }, []), b = (0, r.Ay)({
         id: "people-list",
         isEnabled: T,
-        scrollToStart: N,
+        scrollToStart: S,
         scrollToEnd: x,
         setFocus: v
     }), y = l.useMemo(() => t.map(e => e.length), [t]);
@@ -75,7 +75,7 @@ let h = function(e) {
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(o.Eie, {
                         ref: e => {
-                            S.current = e, t.current = e?.getScrollerNode() ?? null
+                            N.current = e, t.current = e?.getScrollerNode() ?? null
                         },
                         renderRow: p,
                         rowHeight: E,

@@ -22,8 +22,8 @@ var i = n(627968),
     f = n(416082),
     C = n(418616),
     T = n(599907),
-    S = n(652215),
-    N = n(867778);
+    N = n(652215),
+    S = n(867778);
 let x = Object.freeze({
         top: 0,
         bottom: 0,
@@ -37,9 +37,9 @@ let x = Object.freeze({
         right: 32
     }),
     b = {
-        page: S.liQ.GUILD_DISCOVERY,
-        object: S.ZSU.CARD,
-        section: S.JJy.DISCOVER_SEARCH
+        page: N.liQ.GUILD_DISCOVERY,
+        object: N.ZSU.CARD,
+        section: N.JJy.DISCOVER_SEARCH
     },
     y = o().throttle(h.Cf, 1e3, {
         leading: !1,
@@ -54,7 +54,7 @@ function O(e) {
     } = e, {
         guildIds: o,
         loading: h,
-        searchResultsQuery: S,
+        searchResultsQuery: N,
         loadMore: O,
         searchCategoryId: L
     } = (0, p.I)({
@@ -72,16 +72,16 @@ function O(e) {
     }, [M, H]), Y = (0, c.w)(F, [M, H]);
     l.useEffect(() => {
         j((0, g.YP)())
-    }, [S]), l.useEffect(() => {
+    }, [N]), l.useEffect(() => {
         y({
             loadId: t,
             searchId: D,
-            query: S,
+            query: N,
             guildResults: o.map(_.A.getGuild).filter(A.Vq),
             analyticsContext: P,
             categoryId: L
         })
-    }, [P, o, t, L, D, S]);
+    }, [P, o, t, L, D, N]);
     let W = l.useCallback(e => n(e, L), [n, L]),
         K = l.useMemo(() => h ? [o.length, 0] : [o.length], [o.length, h]),
         q = l.useCallback((e, n, l) => {
@@ -92,11 +92,11 @@ function O(e) {
                             paddingLeft: n.left,
                             width: n.width - 16
                         },
-                        className: a()(N.R_, {
-                            [N.Ze]: !M
+                        className: a()(S.R_, {
+                            [S.Ze]: !M
                         }),
                         children: [!M && (0, i.jsxs)("div", {
-                            className: N.eW,
+                            className: S.eW,
                             children: [(0, i.jsx)(I.A, {
                                 loadId: t
                             }), (0, i.jsx)(C.A, {
@@ -108,8 +108,8 @@ function O(e) {
                     }, l);
                 case 1:
                     return (0, i.jsx)(d.y$y, {
-                        className: a()(N.u1, {
-                            [N.qx]: M
+                        className: a()(S.u1, {
+                            [S.qx]: M
                         })
                     }, l)
             }
@@ -198,11 +198,11 @@ function O(e) {
         }), [O]),
         ee = M ? x : v;
     return (0, i.jsx)("div", {
-        className: N.kL,
+        className: S.kL,
         ref: Y,
         children: (0, i.jsx)(d.a0_, {
             ref: B,
-            className: N.kf,
+            className: S.kf,
             sections: K,
             columns: G,
             itemGutter: 16,
@@ -215,14 +215,14 @@ function O(e) {
             chunkSize: 24,
             onScroll: J,
             renderAccessory: e => M ? (0, i.jsx)("div", {
-                className: N.pz,
+                className: S.pz,
                 style: {
                     height: e
                 },
                 children: (0, i.jsxs)("div", {
-                    className: N.wp,
+                    className: S.wp,
                     children: [(0, i.jsx)("div", {
-                        className: N.jp,
+                        className: S.jp,
                         children: (0, i.jsx)(C.A, {
                             loadId: t
                         })
