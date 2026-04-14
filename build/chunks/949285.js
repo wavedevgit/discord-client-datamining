@@ -1,29 +1,29 @@
 /** chunk id: 949285 params = (module,exports,require) **/
-t.r(l), t.d(l, {
-    default: () => s
+r.r(t), r.d(t, {
+    default: () => l
 });
-var i = t(372684),
-    a = t(429195);
-class r {
+var i = r(372684),
+    s = r(429195);
+class a {
     emitSignal;
     constructor(e) {
         this.emitSignal = e
     }
     start() {
-        a.A.registerCallback(this.handleTrigger.bind(this))
+        s.A.registerCallback(this.handleTrigger.bind(this))
     }
     stop() {
-        a.A.unregisterCallback()
+        s.A.unregisterCallback()
     }
     getState() {
         return null
     }
-    handleTrigger(e, l) {
+    handleTrigger(e, t) {
         this.emitSignal({
             type: i.Gy.DISTRIBUTED,
             remoteTriggerUserId: e,
-            remoteTriggerClipId: l
+            remoteTriggerClipId: t
         })
     }
 }
-let s = e => new r(e)
+let l = e => new a(e)

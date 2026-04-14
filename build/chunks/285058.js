@@ -25,7 +25,7 @@ function x(e) {
         as: "li",
         direction: "horizontal",
         align: "center",
-        gap: 20,
+        gap: 16,
         children: [(0, i.jsx)("div", {
             className: _.FO,
             children: (0, i.jsx)(d.$, {
@@ -48,112 +48,152 @@ function x(e) {
         })]
     })
 }
-let h = function() {
+let h = function(e) {
     let {
-        guilds: e,
-        searchQuery: t,
-        setSearchQuery: n,
-        sortOrder: l,
-        setSortOrder: a,
-        hasActivityRestrictedGuilds: d,
-        onToggleAllActivityRestrictedGuilds: h,
-        onToggleActivityRestrictedGuild: A,
-        isActivityRestricted: p,
-        numActivityRestrictedGuilds: T,
-        numTotalGuilds: f
-    } = (0, c.M)(), S = (0, s.useId)();
+        notice: t
+    } = e, {
+        guilds: n,
+        searchQuery: l,
+        setSearchQuery: a,
+        sortOrder: d,
+        setSortOrder: h,
+        hasActivityRestrictedGuilds: A,
+        onToggleAllActivityRestrictedGuilds: p,
+        onToggleActivityRestrictedGuild: T,
+        isActivityRestricted: f,
+        numActivityRestrictedGuilds: S,
+        numTotalGuilds: E
+    } = (0, c.M)(), b = (0, s.useId)(), C = (0, s.useRef)(null), v = (0, s.useMemo)(() => [{
+        id: c.c.SERVER_ORDER,
+        label: g.intl.string(g.t.STMPJ2),
+        value: c.c.SERVER_ORDER
+    }, {
+        id: c.c.RECENTLY_JOINED,
+        label: g.intl.string(g.t.CbaapP),
+        value: c.c.RECENTLY_JOINED
+    }, {
+        id: c.c.ACTIVITY_SHARING_ON,
+        label: g.intl.string(m.default.ZI51JZ),
+        value: c.c.ACTIVITY_SHARING_ON
+    }, {
+        id: c.c.ACTIVITY_SHARING_OFF,
+        label: g.intl.string(m.default["+kxafn"]),
+        value: c.c.ACTIVITY_SHARING_OFF
+    }], []), N = v.find(e => e.value === d)?.label ?? "";
     return (0, i.jsxs)("div", {
         className: _.iE,
-        children: [(0, i.jsxs)("div", {
+        children: [t, (0, i.jsxs)("div", {
             className: _.N1,
             children: [(0, i.jsx)(r.IWV, {
-                query: t,
-                onChange: n,
+                query: l,
+                onChange: a,
                 onClear: () => {
                     o.default.track(u.HAw.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
                         interaction: "search_cleared",
-                        sort_order: l,
-                        activity_restricted_guild_count: T,
-                        total_guild_count: f
-                    }), n("")
+                        sort_order: d,
+                        activity_restricted_guild_count: S,
+                        total_guild_count: E
+                    }), a("")
                 },
                 onFocus: () => o.default.track(u.HAw.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
                     interaction: "search_focused",
-                    sort_order: l,
-                    activity_restricted_guild_count: T,
-                    total_guild_count: f
+                    sort_order: d,
+                    activity_restricted_guild_count: S,
+                    total_guild_count: E
                 }),
                 onBlur: () => o.default.track(u.HAw.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
                     interaction: "search_blurred",
-                    sort_order: l,
-                    activity_restricted_guild_count: T,
-                    total_guild_count: f
+                    sort_order: d,
+                    activity_restricted_guild_count: S,
+                    total_guild_count: E
                 }),
                 placeholder: g.intl.string(g.t["H+nRYw"]),
                 "aria-label": g.intl.string(g.t["5h0QOP"]),
                 inputProps: {
-                    "aria-controls": S,
+                    "aria-controls": b,
                     "aria-expanded": !0
                 }
-            }), e.length > 0 && (0, i.jsxs)("div", {
+            }), n.length > 0 && (0, i.jsxs)("div", {
                 className: _.gO,
-                children: [(0, i.jsx)(r.l6P, {
-                    label: g.intl.string(g.t.LxVjvJ),
-                    hideLabel: !0,
-                    options: [{
-                        id: c.c.SERVER_ORDER,
-                        label: g.intl.string(g.t.STMPJ2),
-                        value: c.c.SERVER_ORDER
-                    }, {
-                        id: c.c.RECENTLY_JOINED,
-                        label: g.intl.string(g.t.CbaapP),
-                        value: c.c.RECENTLY_JOINED
-                    }, {
-                        id: c.c.ACTIVITY_SHARING_ON,
-                        label: g.intl.string(m.default.ZI51JZ),
-                        value: c.c.ACTIVITY_SHARING_ON
-                    }, {
-                        id: c.c.ACTIVITY_SHARING_OFF,
-                        label: g.intl.string(m.default["+kxafn"]),
-                        value: c.c.ACTIVITY_SHARING_OFF
-                    }],
-                    onSelectionChange: e => {
-                        o.default.track(u.HAw.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
-                            interaction: "sort_order_changed",
-                            sort_order: e,
-                            activity_restricted_guild_count: T,
-                            total_guild_count: f
-                        }), a(e)
+                children: [(0, i.jsx)(r.YNO, {
+                    targetElementRef: C,
+                    position: "bottom",
+                    align: "left",
+                    renderPopout: e => {
+                        let {
+                            closePopout: t
+                        } = e;
+                        return (0, i.jsx)(r.W1t, {
+                            navId: "guild-sort-order-menu",
+                            onClose: t,
+                            "aria-label": g.intl.string(g.t.LxVjvJ),
+                            onSelect: t,
+                            children: (0, i.jsx)(r.rXV, {
+                                children: v.map(e => {
+                                    let {
+                                        id: t,
+                                        label: n,
+                                        value: s
+                                    } = e;
+                                    return (0, i.jsx)(r.iDA, {
+                                        id: t,
+                                        group: "sort-order",
+                                        label: n,
+                                        checked: d === s,
+                                        action: () => {
+                                            o.default.track(u.HAw.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
+                                                interaction: "sort_order_changed",
+                                                sort_order: s,
+                                                activity_restricted_guild_count: S,
+                                                total_guild_count: E
+                                            }), h(s)
+                                        }
+                                    }, t)
+                                })
+                            })
+                        })
                     },
-                    value: l,
-                    selectionMode: "single"
+                    children: e => (0, i.jsxs)(r.DUT, {
+                        ...e,
+                        innerRef: C,
+                        className: _.Ku,
+                        children: [(0, i.jsx)(r.Text, {
+                            variant: "text-sm/medium",
+                            color: "text-subtle",
+                            children: N
+                        }), (0, i.jsx)(r.abt, {
+                            size: "xs",
+                            color: r.LU0.colors.TEXT_SUBTLE
+                        })]
+                    })
                 }), (0, i.jsx)(r.QWc, {
                     variant: "primary",
-                    onClick: h,
-                    text: d ? g.intl.string(g.t["7lxcLO"]) : g.intl.string(g.t.zh6UEs)
+                    textVariant: "text-sm/medium",
+                    onClick: p,
+                    text: A ? g.intl.string(g.t["7lxcLO"]) : g.intl.string(g.t.zh6UEs)
                 })]
             })]
         }), (0, i.jsx)(r.AC4, {
             "aria-live": "polite",
             role: "region",
             children: g.intl.format(m.default.EvzDff, {
-                count: e.length
+                count: n.length
             })
         }), (0, i.jsxs)("ul", {
             className: _.X1,
-            id: S,
+            id: b,
             "aria-label": g.intl.string(g.t["7hB4kg"]),
-            children: [0 === e.length && (0, i.jsx)("div", {
+            children: [0 === n.length && (0, i.jsx)("div", {
                 className: _.pb,
                 children: (0, i.jsx)(r.Text, {
                     className: _.R$,
                     variant: "text-lg/medium",
                     children: g.intl.string(g.t["Xe+fJM"])
                 })
-            }), e.map(e => (0, i.jsx)(x, {
+            }), n.map(e => (0, i.jsx)(x, {
                 guild: e,
-                isActivityRestricted: p(e.id),
-                onToggleActivityRestrictedGuild: A
+                isActivityRestricted: f(e.id),
+                onToggleActivityRestrictedGuild: T
             }, e.id))]
         })]
     })

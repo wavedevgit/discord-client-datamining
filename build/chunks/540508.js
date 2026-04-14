@@ -11,23 +11,14 @@ var i = n(627968),
     d = n(439695);
 
 function c() {
-    let e = r.tz.useSetting();
-    return (0, i.jsxs)("div", {
-        className: d.QF,
-        children: [(0, i.jsxs)("div", {
-            className: d.v_,
-            children: [(0, i.jsx)(s.Heading, {
-                className: d.n7,
-                variant: "heading-md/medium",
-                color: "text-strong",
-                children: a.intl.string(a.t.TqdOvC)
-            }), !e && (0, i.jsx)("div", {
-                className: d.ZT,
-                children: (0, i.jsx)(s.wx6, {
-                    type: "warning",
-                    children: a.intl.string(o.default["xxI0/W"])
-                })
-            })]
-        }), (0, i.jsx)(l.A, {})]
+    let e = r.tz.useSetting() ? null : (0, i.jsx)("div", {
+        className: d.l,
+        children: (0, i.jsx)(s.wx6, {
+            type: "warning",
+            children: a.intl.string(o.default["xxI0/W"])
+        })
+    });
+    return (0, i.jsx)(l.A, {
+        notice: e
     })
 }
