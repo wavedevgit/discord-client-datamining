@@ -41,9 +41,9 @@ function I(e) {
     } = (0, a.cf)([_.Ay], () => ({
         canToggleDetection: null == O || _.Ay.isDetectionEnabled(O),
         isCurrentGameDetectionEnabled: _.Ay.isDetectionEnabled(R)
-    })), D = (0, a.bG)([_.Ay], () => _.Ay.getVisibleGame()), [G, M] = s.useState(!1), k = s.useMemo(() => (0, h.n1)(R) ? y ? R.gameName : b.intl.formatToPlainString(b.t.G6BGdx, {
+    })), D = (0, a.bG)([_.Ay], () => _.Ay.getVisibleGame()), [G, M] = s.useState(!1), U = s.useMemo(() => (0, h.n1)(R) ? y ? R.gameName : b.intl.formatToPlainString(b.t.G6BGdx, {
         subgameName: R.gameName
-    }) : R.name, [R, y]), [U, w] = s.useState(k ?? "???"), V = r()(v.tR, {
+    }) : R.name, [R, y]), [k, w] = s.useState(U ?? "???"), V = r()(v.tR, {
         [C.LO]: !l,
         [C.Rw]: l,
         [C.FB]: null != R && l,
@@ -59,10 +59,10 @@ function I(e) {
             return t => (0, i.jsx)(e, {
                 ...t,
                 title: b.intl.formatToPlainString(b.t.PZ4fKc, {
-                    platform: k
+                    platform: U
                 }),
                 subtitle: b.intl.formatToPlainString(b.t.ZIQbfb, {
-                    platform: k
+                    platform: U
                 }),
                 actions: [{
                     text: b.intl.string(b.t["ETE/oC"]),
@@ -89,7 +89,7 @@ function I(e) {
                     className: C.HS,
                     children: [(0, i.jsx)("div", {
                         className: C.mO,
-                        children: k
+                        children: U
                     }), (0, i.jsx)(d.m_, {
                         text: b.intl.string(b.t["4PJP5p"]),
                         children: (0, i.jsx)(x.A, {
@@ -108,9 +108,9 @@ function I(e) {
                     className: r()(C.mO, C.sr),
                     type: "text",
                     maxLength: 128,
-                    value: U,
+                    value: k,
                     onBlur: function() {
-                        R.name !== U && u.Ay.editName(R, U)
+                        R.name !== k && u.Ay.editName(R, k)
                     },
                     onKeyDown: function(e) {
                         e.key === E.dh.ENTER && (e.currentTarget.blur(), e.preventDefault())

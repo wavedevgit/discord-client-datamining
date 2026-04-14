@@ -37,8 +37,8 @@ var i = n(627968),
     D = n(351906),
     G = n(287809),
     M = n(954571),
-    k = n(486020),
-    U = n(975571),
+    U = n(486020),
+    k = n(975571),
     w = n(773669),
     V = n(630457),
     B = n(208039),
@@ -114,7 +114,7 @@ function q(e) {
         [R, L] = s.useState(A.metadataVisibility),
         [P, D] = s.useState(A.showActivity),
         [G, M] = s.useState(null),
-        [k, w] = s.useState(null),
+        [U, w] = s.useState(null),
         [V, X] = s.useState(!1),
         [q, Q] = s.useState([]),
         J = (0, S.ML)(A.type),
@@ -124,7 +124,7 @@ function q(e) {
     }, [A]);
     let ee = {
             inProgressVisibility: G,
-            inProgressMetadataVisibility: k
+            inProgressMetadataVisibility: U
         },
         et = s.useRef(ee);
     return s.useEffect(() => {
@@ -258,7 +258,7 @@ function q(e) {
                     variant: "text-xs/normal",
                     className: W.vt,
                     children: K.intl.format(K.t.Up2ni7, {
-                        helpdeskUrl: U.A.getArticleURL(z.MVz.CONNECTION_DETAILS)
+                        helpdeskUrl: k.A.getArticleURL(z.MVz.CONNECTION_DETAILS)
                     })
                 }, "label")], r = K.intl.string(K.t["LVh3/5"]);
             return l && (r = K.intl.string(K.t.i4jeWR)), n.push((0, i.jsx)("div", {
@@ -373,7 +373,7 @@ function J(e) {
         children: [function(e, t) {
             let {
                 application: n
-            } = t, s = k.Ay.getApplicationIconURL({
+            } = t, s = U.Ay.getApplicationIconURL({
                 id: n.id,
                 icon: n.icon
             });

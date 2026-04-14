@@ -48,8 +48,8 @@ function M() {
     let {
         pendingAvatar: s,
         pendingNickname: M,
-        pendingBanner: k,
-        pendingBio: U,
+        pendingBanner: U,
+        pendingBio: k,
         pendingPronouns: w,
         pendingThemeColors: V,
         errors: B
@@ -59,7 +59,7 @@ function M() {
     })), F = (0, S.V7)({
         userId: e.id,
         image: s
-    }), H = (0, d.EC)(n.id), z = (0, r.bG)([v.Ay], () => null == n.id ? null : v.Ay.getMember(n.id, e.id)), Y = (0, r.bG)([C.A], () => C.A.getGuildMemberProfile(e.id, n.id)), X = j.Ay.canUsePremiumProfileCustomization(e), K = (0, u.z5)(s, z?.avatar), W = (0, u.Ac)(k, Y?.banner), Z = (0, O.l)(V, Y?.themeColors), q = Y?.bio ?? "", Q = Y?.pronouns ?? "", J = (e, t, n) => {
+    }), H = (0, d.EC)(n.id), z = (0, r.bG)([v.Ay], () => null == n.id ? null : v.Ay.getMember(n.id, e.id)), Y = (0, r.bG)([C.A], () => C.A.getGuildMemberProfile(e.id, n.id)), X = j.Ay.canUsePremiumProfileCustomization(e), K = (0, u.z5)(s, z?.avatar), W = (0, u.Ac)(U, Y?.banner), Z = (0, O.l)(V, Y?.themeColors), q = Y?.bio ?? "", Q = Y?.pronouns ?? "", J = (e, t, n) => {
         n(e ?? (null != t ? null : void 0))
     };
     return (0, i.jsxs)("div", {
@@ -178,7 +178,7 @@ function M() {
                     bio: e
                 }),
                 errors: B?.bio ?? H?.bio,
-                pendingBio: U,
+                pendingBio: k,
                 currentBio: q,
                 disabled: !X
             }, "about")]

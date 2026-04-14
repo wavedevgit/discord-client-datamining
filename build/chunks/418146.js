@@ -1,6 +1,6 @@
 /** chunk id: 418146 params = (module,exports,require) **/
 n.d(t, {
-    u: () => U
+    u: () => k
 });
 var i = n(627968),
     s = n(935399),
@@ -99,7 +99,7 @@ function M() {
         })]
     }) : null
 }
-let k = (0, _.t_)(S.X.OVERLAY_PANEL, {
+let U = (0, _.t_)(S.X.OVERLAY_PANEL, {
         initialize: function() {
             return (0, v.Q)(), A.Ay.addChangeListener(v.Q), m.A.addChangeListener(v.Q), T.default.addChangeListener(v.Q), p.default.addChangeListener(v.Q), f.isPlatformEmbedded && (0, c.a2)(), () => {
                 A.Ay.removeChangeListener(v.Q), m.A.removeChangeListener(v.Q), T.default.removeChangeListener(v.Q), p.default.removeChangeListener(v.Q), f.isPlatformEmbedded && (0, c.e0)()
@@ -116,9 +116,9 @@ let k = (0, _.t_)(S.X.OVERLAY_PANEL, {
         },
         buildLayout: () => [N.u, I.X, y.D, j.h]
     }),
-    U = (0, _.i4)(S.X.OVERLAY_SIDEBAR_ITEM, {
+    k = (0, _.i4)(S.X.OVERLAY_SIDEBAR_ITEM, {
         useTitle: () => R.intl.string(R.t["9cb1Uz"]),
         icon: l.WindowTopOutlineIcon,
         usePredicate: C.b_,
-        buildLayout: () => [k]
+        buildLayout: () => [U]
     })

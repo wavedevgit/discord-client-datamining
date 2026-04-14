@@ -47,8 +47,8 @@ function L() {
             pendingPronouns: D,
             pendingAccentColor: G,
             pendingThemeColors: M,
-            pendingLegacyUsernameDisabled: k,
-            pendingPrimaryGuildId: U,
+            pendingLegacyUsernameDisabled: U,
+            pendingPrimaryGuildId: k,
             errors: w
         } = (0, r.cf)([v.A], () => {
             let e = v.A.getPendingChanges(),
@@ -142,13 +142,13 @@ function L() {
             currentBio: t?.bio ?? ""
         }, "bio"), Z.length > 0 && (0, i.jsx)(o.A, {
             availablePrimaryGuilds: Z,
-            pendingPrimaryGuildId: U,
+            pendingPrimaryGuildId: k,
             onChange: e => (0, C.p)({
                 primaryGuildId: e
             })
         }), null != X && (0, i.jsx)(x.A, {
             legacyUsername: X,
-            pendingLegacyUsernameDisabled: k
+            pendingLegacyUsernameDisabled: U
         }, "legacy_username")]
     })
 }

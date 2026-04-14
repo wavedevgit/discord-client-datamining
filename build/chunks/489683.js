@@ -457,7 +457,7 @@ function e7(e) {
     })
 }
 
-function e9(e) {
+function e6(e) {
     let t, {
             channel: n,
             canGoLive: r,
@@ -557,7 +557,7 @@ function e9(e) {
         }
     })
 }
-class e6 extends l.PureComponent {
+class e9 extends l.PureComponent {
     ref = l.createRef();
     krispButtonRef = l.createRef();
     handleChannelLinkClick = e => {
@@ -703,7 +703,7 @@ class e6 extends l.PureComponent {
                 channel: e,
                 enableActivities: c,
                 disabled: !A && u
-            }), (0, i.jsx)(e9, {
+            }), (0, i.jsx)(e6, {
                 channel: e,
                 canGoLive: t,
                 enableActivities: c,
@@ -870,7 +870,7 @@ let e2 = (0, S.A)(function(e) {
             children: [null != t || null != n ? (0, i.jsx)(Y.A, {
                 voiceState: t,
                 awaitingRemoteSessionInfo: n
-            }) : null, (0, i.jsx)(e6, {
+            }) : null, (0, i.jsx)(e9, {
                 ...e,
                 ...A,
                 ...s,

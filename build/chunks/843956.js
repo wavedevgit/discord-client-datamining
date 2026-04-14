@@ -17,5 +17,5 @@ var i = n(419954),
     x = n(985018);
 let h = (0, i.WI)(s.X.USER_SECTION, {
     useTitle: () => x.intl.string(x.t.cduTBL),
-    buildLayout: () => [r.J, c.T, u.v, m.T, a.J, ...(0, l.pC)("UserSection") ? [] : [_.$], d.z, g.e, o.r]
+    buildLayout: () => [r.J, c.T, u.v, ...(0, l.pC)("UserSection") ? [] : [m.T], a.J, ...(0, l.pC)("UserSection") ? [] : [_.$], d.z, g.e, o.r]
 })

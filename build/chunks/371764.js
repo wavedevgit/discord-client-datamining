@@ -1,6 +1,6 @@
 /** chunk id: 371764 params = (module,exports,require) **/
 n.d(t, {
-    x: () => f
+    x: () => x
 });
 var i = n(627968);
 n(64700);
@@ -14,18 +14,16 @@ var r = n(110259),
     u = n(212245),
     _ = n(688810),
     m = n(139286),
-    p = n(975571),
-    g = n(498470),
-    A = n(637706),
-    x = n(985018),
-    h = n(308785);
-let f = e => {
+    p = n(498470),
+    g = n(637706),
+    A = n(308785);
+let x = e => {
     let {
         componentId: t,
         promotionBannerMarketingComponentFields: n
     } = e, {
-        analyticsLocations: f
-    } = (0, _.Ay)(), b = (0, u.p)();
+        analyticsLocations: x
+    } = (0, _.Ay)(), h = (0, u.p)();
     (0, m.A)({
         type: r.ImpressionTypes.VIEW,
         name: r.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
@@ -34,23 +32,24 @@ let f = e => {
             component_id: t
         }
     });
-    let N = (0, g.h)({
+    let f = (0, p.h)({
             buttonAction: n.button?.buttonAction ?? c.dz.OPEN_TIER_2_PAYMENT_MODAL,
-            analyticsLocations: f,
-            analyticsLocation: b.location
+            analyticsLocations: x,
+            analyticsLocation: h.location
         }),
-        C = (0, A.a)(n.body);
+        b = (0, g.a)(n.body),
+        N = (0, g.C)(n.helpArticle, n.helpArticleId);
     return (0, i.jsxs)("div", {
-        className: h.kL,
+        className: A.kL,
         children: [(0, i.jsx)("div", {
-            className: h.LY,
+            className: A.LY,
             children: (0, i.jsx)("img", {
                 src: n.assetUrl,
-                className: h.ot,
+                className: A.ot,
                 alt: ""
             })
         }), (0, i.jsxs)("div", {
-            className: h.IH,
+            className: A.IH,
             children: [(0, i.jsx)(l.DZT, {
                 variant: "heading-md/semibold",
                 color: "text-strong",
@@ -58,21 +57,21 @@ let f = e => {
             }), (0, i.jsxs)(l.EYj, {
                 variant: "text-md/medium",
                 color: "text-subtle",
-                className: h.tb,
-                children: [C, "" !== n.helpArticleId && (0, i.jsxs)(i.Fragment, {
+                className: A.tb,
+                children: [b, null != N && (0, i.jsxs)(i.Fragment, {
                     children: ["\xa0", (0, i.jsx)(d.MzZ, {
-                        className: h.$T,
-                        href: p.A.getArticleURL(n.helpArticleId),
-                        children: x.intl.string(x.t["sBp+u0"])
+                        className: A.$T,
+                        href: N.url,
+                        children: N.linkText
                     })]
                 })]
             })]
         }), null != n.button && (0, i.jsx)("div", {
-            className: h.UD,
+            className: A.UD,
             children: (0, i.jsx)(o.$nd, {
                 variant: "expressive",
                 size: "md",
-                onClick: N,
+                onClick: f,
                 text: n.button.copy,
                 icon: s.NitroWheelIcon
             })

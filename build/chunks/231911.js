@@ -308,7 +308,7 @@ function M(e) {
     })
 }
 
-function k(e) {
+function U(e) {
     let {
         updateSettings: t
     } = e;
@@ -337,7 +337,7 @@ function k(e) {
     })
 }
 
-function U(e) {
+function k(e) {
     let {
         onChangePage: t
     } = e;
@@ -409,7 +409,7 @@ function V(e) {
         children: [(0, i.jsx)(P, {
             settings: l,
             updateSettings: u
-        }), (0, i.jsx)(U, {
+        }), (0, i.jsx)(k, {
             onChangePage: t
         }), (0, i.jsx)(G, {
             settings: l,
@@ -420,7 +420,7 @@ function V(e) {
         }), (0, i.jsx)(D, {
             settings: l,
             updateSettings: u
-        }), (0, i.jsx)(k, {
+        }), (0, i.jsx)(U, {
             updateSettings: u
         })]
     })

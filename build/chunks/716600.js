@@ -9,7 +9,7 @@ var l = n(934551),
     a = n(732955),
     s = n(397927),
     o = n(954571),
-    d = n(975571),
+    d = n(637706),
     c = n(498470),
     u = n(652215),
     A = n(985018),
@@ -31,27 +31,27 @@ function _(e) {
         analyticsLocations: g,
         analyticsLocation: p,
         onClose: f
-    }), N = "" !== _.helpArticleId ? () => (0, i.jsxs)(i.Fragment, {
+    }), N = (0, d.C)(_.helpArticle, _.helpArticleId), x = null != N ? () => (0, i.jsxs)(i.Fragment, {
         children: ["\xa0", (0, i.jsx)(s.MzZ, {
             className: h.$T,
-            href: d.A.getArticleURL(_.helpArticleId),
-            children: A.intl.string(A.t["sBp+u0"])
+            href: N.url,
+            children: N.linkText
         })]
-    }) : void 0, x = _.disclaimer?.disclaimerHelpArticle, v = x?.id != null && "" !== x.id ? () => (0, i.jsxs)(i.Fragment, {
+    }) : void 0, v = (0, d.C)(_.disclaimer?.disclaimerHelpArticle, ""), b = null != v ? () => (0, i.jsxs)(i.Fragment, {
         children: ["\xa0", (0, i.jsx)(s.MzZ, {
             className: h.$T,
-            href: d.A.getArticleURL(x.id),
-            children: "" !== x.linkText ? x.linkText : A.intl.string(A.t["sBp+u0"])
+            href: v.url,
+            children: v.linkText
         })]
-    }) : void 0, b = {
+    }) : void 0, y = {
         type: "video",
         src: E ? _.heroArtVideoLinkLightTheme : _.videoLink
     };
-    return null != _.heroArtVideoSubtitles && (b.subtitles = _.heroArtVideoSubtitles.map(e => ({
+    return null != _.heroArtVideoSubtitles && (y.subtitles = _.heroArtVideoSubtitles.map(e => ({
         locale: e.locale,
         src: e.link,
         isDefault: !1
-    }))), ("" !== _.heroArtImageLinkDarkTheme || "" !== _.heroArtImageLinkLightTheme) && (b = {
+    }))), ("" !== _.heroArtImageLinkDarkTheme || "" !== _.heroArtImageLinkLightTheme) && (y = {
         type: "image",
         src: E ? _.heroArtImageLinkLightTheme : _.heroArtImageLinkDarkTheme
     }), {
@@ -61,9 +61,9 @@ function _(e) {
         header: _.header,
         modalTopPill: _.modalTopPill,
         subHeader: _.subheader,
-        subHeaderExtra: N,
+        subHeaderExtra: x,
         body: _.body,
-        heroArt: b,
+        heroArt: y,
         featureCards: _.featureCards.map(e => ({
             header: e.header,
             subHeader: e.body,
@@ -89,6 +89,6 @@ function _(e) {
             })
         },
         disclaimer: _.disclaimer?.disclaimerText !== "" ? _.disclaimer?.disclaimerText : void 0,
-        disclaimerExtra: v
+        disclaimerExtra: b
     }
 }

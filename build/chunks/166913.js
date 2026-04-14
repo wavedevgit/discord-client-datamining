@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(227273),
     G = n(244778),
     M = n(788868),
-    k = n(652215),
-    U = n(985018),
+    U = n(652215),
+    k = n(985018),
     w = n(211003),
     V = n(419878),
     B = n(288894);
@@ -180,7 +180,7 @@ let F = e => {
             }), (0, i.jsx)(d.L, {
                 innerRef: n,
                 onChange: e => {
-                    e && !K && (T.default.track(k.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                    e && !K && (T.default.track(U.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                         location_stack: eo
                     }), W(!0))
                 },
@@ -193,7 +193,7 @@ let F = e => {
                 className: V.Kw,
                 width: 112,
                 height: 85,
-                alt: U.intl.string(U.t.X4IxWL)
+                alt: k.intl.string(k.t.X4IxWL)
             })]
         })
     }
