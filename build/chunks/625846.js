@@ -450,8 +450,8 @@ function eS(e) {
         getItemKey: e9,
         renderGridSection: e1,
         renderGridItem: e6,
-        getGridSectionHeight: e4,
-        getSectionProps: e8,
+        getGridSectionHeight: e8,
+        getSectionProps: e4,
         handleGridFocus: e7
     } = function(e) {
         let {
@@ -658,11 +658,11 @@ function eS(e) {
                         columns: ek,
                         sections: eG,
                         getItemKey: e9,
-                        getSectionHeight: e4,
+                        getSectionHeight: e8,
                         getItemHeight: tl,
                         renderSection: e1,
                         renderItem: e6,
-                        getSectionProps: e8,
+                        getSectionProps: e4,
                         onScroll: A ? e2 : void 0,
                         chunkSize: 350,
                         ...ts,

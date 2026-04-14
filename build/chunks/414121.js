@@ -9,7 +9,7 @@ var s, a = r(627968),
     o = r(64700),
     n = r(503698),
     i = r.n(n),
-    l = r(700923),
+    l = r(674174),
     c = r(788888),
     d = ((s = {}).SIZE_40 = "SIZE_40", s.SIZE_60 = "SIZE_60", s);
 let u = Object.freeze({

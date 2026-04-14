@@ -1,7 +1,7 @@
 /** chunk id: 362205 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => b
 });
 var r = n(627968),
     i = n(64700),
@@ -9,24 +9,23 @@ var r = n(627968),
     s = n.n(a),
     l = n(284009),
     o = n.n(l),
-    u = n(294426),
-    c = n(942381),
-    d = n(837381),
-    h = n(935399),
-    p = n(319354),
-    _ = n(397927),
-    m = n(775602),
-    f = n(253932),
-    g = n(894858),
-    y = n(272053),
-    v = n(397274),
-    S = n(189857),
-    E = n(674085),
-    x = n(188180),
-    A = n(890690),
-    N = n(480270);
+    u = n(445887),
+    c = n(837381),
+    d = n(935399),
+    h = n(319354),
+    p = n(397927),
+    _ = n(775602),
+    m = n(253932),
+    f = n(894858),
+    g = n(272053),
+    y = n(397274),
+    v = n(189857),
+    S = n(674085),
+    E = n(188180),
+    x = n(890690),
+    A = n(480270);
 
-function b(e) {
+function N(e) {
     let {
         category: t,
         onClick: n,
@@ -35,74 +34,61 @@ function b(e) {
     } = e, {
         useTitle: l,
         useSubnavLabel: u,
-        key: c
-    } = t, h = l?.(), p = u?.() ?? h;
-    return o()(null != p, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(d.tG, {
-        id: c,
-        children: e => (0, r.jsxs)(_.DUT, {
+        key: d
+    } = t, h = l?.(), _ = u?.() ?? h;
+    return o()(null != _, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(c.tG, {
+        id: d,
+        children: e => (0, r.jsxs)(p.DUT, {
             onClick: n,
-            className: s()(N.AS, {
-                [N.vu]: i
+            className: s()(A.AS, {
+                [A.vu]: i
             }),
             ...e,
-            children: [p, null != a && !i && (0, r.jsx)(E.A, {
+            children: [_, null != a && !i && (0, r.jsx)(S.A, {
                 badge: a
             })]
-        }, c)
+        }, d)
     })
 }
 
-function C(e) {
+function b(e) {
     let {
         active: t,
-        categories: n,
+        visibleCategories: n,
         visibleContent: a,
         dismissibleBadges: s
-    } = e, [l, o] = i.useState(() => {
-        let e = g.A.getField("currentCategoryKey"),
-            t = n.find(t => t.key === e);
-        return t?.key ?? n[0].key
-    }), [u, d] = i.useState(t);
-    i.useEffect(() => g.A.subscribe(e => {
-        let {
-            currentCategoryKey: t
-        } = e;
-        return t
-    }, e => {
-        let r = t ? n.find(t => t.key === e) : null;
-        null != r && (d(!0), o(r.key))
-    }, {
-        equalityFn: c.x,
-        fireImmediately: !0
-    }), [n, t]);
-    let h = i.useMemo(() => Math.max(n.findIndex(e => e.key === l), 0), [n, l]);
+    } = e, l = f.A.useField("currentCategoryKey") ?? n[0]?.key, [o, u] = i.useState(t);
+    i.useLayoutEffect(() => {
+        t && u(!0)
+    }, [t]);
+    let c = i.useMemo(() => Math.max(n.findIndex(e => e.key === l), 0), [n, l]);
     i.useEffect(() => {
         if (!t) {
-            let e = p.current;
+            let e = d.current;
             null != e && (e.style.height = `${e.scrollHeight}px`, window.getComputedStyle(e).height, e.style.height = "0", Promise.allSettled(e.getAnimations().map(e => e.finished)).then(() => {
-                d(!1)
+                u(!1)
             }))
         }
     }, [t]);
-    let p = i.useRef(null),
-        [_, m] = i.useState(t ? "auto" : "0");
-    return (0, A.u)(n, t), (0, r.jsx)("div", {
-        className: N.lK,
+    let d = i.useRef(null),
+        [h, p] = i.useState(t ? "auto" : "0");
+    return (0, x.u)(n, t), (0, r.jsx)("div", {
+        className: A.lK,
         style: {
-            height: _,
+            height: h,
             opacity: +!!t
         },
-        ref: p,
-        children: u && (0, r.jsx)(j, {
-            index: h,
+        ref: d,
+        children: o && (0, r.jsx)(C, {
+            index: c,
             activeKey: l,
             categories: n,
             visibleContent: a,
             dismissibleBadges: s,
             onMount: function() {
-                let e = p.current;
+                let e = d.current;
                 null != e && (e.style.height = `${e.scrollHeight}px`, Promise.all(e.getAnimations().map(e => e.finished)).then(() => {
-                    e.style.height = "auto", v.A.scrollSidebarNodeIntoView(e, {
+                    e.style.height = "auto", y.A.scrollSidebarNodeIntoView(e, {
                         animate: !0,
                         block: "nearest"
                     })
@@ -112,7 +98,7 @@ function C(e) {
     })
 }
 
-function j(e) {
+function C(e) {
     let {
         index: t,
         activeKey: n,
@@ -122,17 +108,17 @@ function j(e) {
         onMount: o
     } = e, {
         thumbRef: c,
-        trackRef: d,
-        thumbAnchorRef: g,
-        springs: v
+        trackRef: f,
+        thumbAnchorRef: y,
+        springs: S
     } = function(e) {
-        let t = f.Xi.useSetting(),
+        let t = m.Xi.useSetting(),
             n = i.useRef(null),
             r = i.useRef(null),
             a = i.useRef(null),
             s = i.useRef(!0),
             l = i.useRef(t),
-            [o, u] = (0, _.zhh)(() => ({
+            [o, u] = (0, p.zhh)(() => ({
                 y: 0,
                 height: 0,
                 config: {
@@ -146,7 +132,7 @@ function j(e) {
                 i = () => {
                     if (null == n.current || null == r.current || null == a.current) return;
                     let [i, c] = [n.current.getBoundingClientRect(), a.current.getBoundingClientRect()], d = i.width / 2, h = (c.y - i.y) / d, p = c.height / d;
-                    s.current || e || m.A.useReducedMotion ? (o.y.set(h), o.height.set(p)) : u({
+                    s.current || e || _.A.useReducedMotion ? (o.y.set(h), o.height.set(p)) : u({
                         y: h,
                         height: p
                     }), s.current = !1, l.current = t
@@ -164,34 +150,34 @@ function j(e) {
             springs: o
         }
     }(t);
-    return (0, h.Ay)(o), (0, r.jsxs)("div", {
-        className: N.o8,
+    return (0, d.Ay)(o), (0, r.jsxs)("div", {
+        className: A.o8,
         role: "list",
         style: {
             "--custom-nav-count": a.length,
             "--custom-nav-index": t,
             "--custom-nav-width": "2px",
-            "--custom-icon-size": `${p.E[x.V]}px`
+            "--custom-icon-size": `${h.E[E.V]}px`
         },
         children: [(0, r.jsx)("div", {
-            className: N.u4,
+            className: A.u4,
             "aria-hidden": "true",
-            ref: d,
+            ref: f,
             children: (0, r.jsx)(u.animated.div, {
-                className: N.FF,
-                style: v,
+                className: A.FF,
+                style: S,
                 ref: c
             })
         }), (0, r.jsx)("div", {
-            className: N.gu,
+            className: A.gu,
             "aria-hidden": "true",
-            ref: g
+            ref: y
         }), a.map(e => {
-            let t = (0, S.H)(e.key, s, l);
-            return (0, r.jsx)(b, {
+            let t = (0, v.H)(e.key, s, l);
+            return (0, r.jsx)(N, {
                 onClick: () => {
                     var t;
-                    return t = e.key, void y.A.navigate(t, {
+                    return t = e.key, void g.A.navigate(t, {
                         showNavigationMobile: !1
                     })
                 },

@@ -106,7 +106,7 @@ function S(e) {
         })
     } : t.onClick, E = null != _, x = i.useMemo(() => null != y && E ? (0, r.jsx)(f.A, {
         active: g,
-        categories: y,
+        visibleCategories: y,
         visibleContent: n,
         dismissibleBadges: a
     }) : null, [g, y, n, a, E]), A = s ? "li" : "div", N = i.useMemo(() => (0, p.H)(t.key, n, a), [t.key, n, a]);

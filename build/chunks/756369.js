@@ -1,8 +1,8 @@
 /** chunk id: 756369 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => e7,
+    Ay: () => e2,
     OC: () => e9,
-    iV: () => e2
+    iV: () => e7
 }), n(938796);
 var i = n(627968),
     a = n(64700),
@@ -127,7 +127,7 @@ let eZ = [eK.Auw.GIFV],
             className: eJ.jj
         }) : null
     };
-class e2 extends a.Component {
+class e7 extends a.Component {
     static defaultProps = {
         renderEmbeds: !0,
         compact: !1
@@ -744,7 +744,7 @@ class e2 extends a.Component {
     }
 }
 
-function e7(e) {
+function e2(e) {
     let {
         channel: t,
         message: n,
@@ -769,7 +769,7 @@ function e7(e) {
         isActiveChannelOrUnarchivableThread: E,
         isAutomodQuarantined: f
     }), j = (0, V.S)((n.editedTimestamp ?? n.timestamp).valueOf()), L = (0, Y.A)(t?.id), R = (0, X.A)(n), P = (0, S.P)(n), D = (0, eT.z)(t), k = (0, eI._f)(n.id, n.channel_id), O = (0, T._R)();
-    return (0, i.jsx)(e2, {
+    return (0, i.jsx)(e7, {
         canSuppressEmbeds: I,
         canDeleteAttachments: v,
         ...N,
@@ -805,7 +805,7 @@ let e9 = e => {
         disableComponentInteractivity: o = !0,
         ...d
     } = e, c = ed.X6.useSetting(), u = ed.hD.useSetting(), _ = ed.rs.useSetting(), m = ed.kt.useSetting(), h = (0, V.S)((t.editedTimestamp ?? t.timestamp).valueOf()), p = (0, Y.A)(n?.id), g = (0, S.P)(t), A = (0, eI._f)(t.id, t.channel_id), x = (0, X.A)(t);
-    return (0, i.jsx)(e2, {
+    return (0, i.jsx)(e7, {
         ...d,
         message: t,
         channel: n,
