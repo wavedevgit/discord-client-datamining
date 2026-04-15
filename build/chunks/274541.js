@@ -40,7 +40,7 @@ function D(e) {
         baseChannelId: D,
         channelViewSource: H = "Split View",
         isResourceChannelView: M
-    } = e, G = (0, s.bG)([I.A], () => I.A.getChannel(t)), B = (0, s.bG)([S.A], () => S.A.getGuild(G?.getGuildId())), k = (0, y.Ay)(G), P = (0, s.bG)([f.A], () => B?.id != null && f.A.isLurking(B.id), [B]), U = (0, m.A)(t), V = (0, s.bG)([x.h], () => x.h.getResourceForChannel(B?.id, t)?.title), F = (0, c.vL)(G), W = (0, j.IL)(G), q = i.useRef(!1);
+    } = e, G = (0, s.bG)([I.A], () => I.A.getChannel(t)), B = (0, s.bG)([S.A], () => S.A.getGuild(G?.getGuildId())), k = (0, y.Ay)(G), P = (0, s.bG)([f.A], () => B?.id != null && f.A.isLurking(B.id), [B]), U = (0, m.A)(t), V = (0, s.bG)([x.h], () => x.h.getResourceForChannel(B?.id, t)?.title), F = (0, c.vL)(G), W = (0, j.Uf)(G), q = i.useRef(!1);
     if (i.useEffect(() => {
             null == G || q.current || (q.current = !0, (0, o.zV)(T.HAw.CHANNEL_OPENED, {
                 ...(0, o.qL)(G.id),
@@ -59,9 +59,9 @@ function D(e) {
     }, "close")), F) ? (0, l.jsx)(b.A, {
         guild: B,
         channelId: G.id
-    }) : W ? (0, l.jsx)(v.A, {
+    }) : null != W ? (0, l.jsx)(v.A, {
         guild: B,
-        channelId: G.id
+        channelId: W
     }) : (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(d.A, {
             channel: G,

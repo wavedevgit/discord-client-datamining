@@ -52,22 +52,23 @@ function m(e, t, n) {
         C = e.type !== s.lAJ.DEFAULT || !v && "" !== e.content,
         N = (0, i.A)(e),
         E = !N && n?.hasTimestamp !== !1,
-        I = o(e, t),
-        _ = r(e),
-        b = N ? "" : `${c?_:I} ${l.lW}`;
+        I = e.hasFlag(s.pr7.IS_GUILD_OFFICIAL),
+        _ = o(e, t),
+        b = r(e),
+        S = N ? "" : `${c?b:_} ${l.lW}`;
     if (C) {
         let t = a(e);
-        b += ` ${t}`
+        S += ` ${t}`
     }
     if (x) {
         let t = d(e);
-        b += ` ${t}`
+        S += ` ${t}`
     }
     if (E) {
         let t = u(e);
-        b += ` ${l.l6} ${t}`
+        S += ` ${l.l6} ${t}`
     }
-    return b.trim()
+    return I && (S += ` ${l.zV}`), S.trim()
 }
 
 function g(e) {

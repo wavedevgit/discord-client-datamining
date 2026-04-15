@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(166532),
-    l = n(735305),
+var l = n(166532),
+    r = n(735305),
     a = n(721252),
     s = n(924076),
     o = n(984742),
@@ -21,12 +21,12 @@ function m(e) {
     return [{
         key: null,
         renderStep: e => (0, i.jsx)(d.A, {
-            initialStep: n ? r.pn.BENEFITS : r.pn.REVIEW,
+            initialStep: n ? l.pn.BENEFITS : l.pn.REVIEW,
             guildId: t,
             ...e
         })
     }, {
-        key: r.pn.BENEFITS,
+        key: l.pn.BENEFITS,
         renderStep: e => (0, i.jsx)(s.A, {
             ...e
         }),
@@ -34,19 +34,19 @@ function m(e) {
             useBreadcrumbLabel: () => u.intl.string(u.t["5LD2+B"])
         }
     }, {
-        key: r.pn.ADD_PAYMENT_STEPS,
-        renderStep: e => (0, i.jsx)(l.x, {
+        key: l.pn.ADD_PAYMENT_STEPS,
+        renderStep: e => (0, i.jsx)(r.x, {
             ...e,
-            breadcrumbSteps: [r.pn.ADD_PAYMENT_STEPS, r.pn.REVIEW, r.pn.CONFIRM]
+            breadcrumbSteps: [l.pn.ADD_PAYMENT_STEPS, l.pn.REVIEW, l.pn.CONFIRM]
         }),
         options: {
             renderHeader: !0
         }
     }, ...a.hh, {
-        key: r.pn.REVIEW,
+        key: l.pn.REVIEW,
         renderStep: e => (0, i.jsx)(c.A, {
             backButtonEligible: !!n || void 0,
-            prevStep: n ? r.pn.BENEFITS : void 0,
+            prevStep: n ? l.pn.BENEFITS : void 0,
             ...e
         }),
         options: {
@@ -54,7 +54,7 @@ function m(e) {
             useBreadcrumbLabel: () => u.intl.string(u.t.QBnNHq)
         }
     }, {
-        key: r.pn.CONFIRM,
+        key: l.pn.CONFIRM,
         renderStep: e => (0, i.jsx)(o.A, {
             showBenefits: !n,
             ...e

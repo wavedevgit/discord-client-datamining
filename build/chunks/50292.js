@@ -1,35 +1,35 @@
 /** chunk id: 50292 params = (module,exports,require) **/
 r.d(t, {
-    default: () => v
+    default: () => f
 }), r(323874), r(14289), r(35956);
-var i = r(627968),
-    a = r(158954),
+var a = r(627968),
+    i = r(158954),
     n = r(397927),
     o = r(793574),
     s = r(688810),
-    l = r(532794),
-    c = r(920050),
+    c = r(532794),
+    l = r(920050),
     p = r(553081),
     _ = r(976860),
     u = r(652215),
     d = r(788868),
     b = r(985018);
 
-function v(e) {
+function f(e) {
     let {
         onClose: t,
         multiplier: r,
-        eligibleToReceivePremiumRewards: v,
-        ...f
+        eligibleToReceivePremiumRewards: f,
+        ...h
     } = e, {
-        analyticsLocations: h
-    } = (0, s.Ay)(o.A.QUEST_ORB_MULTIPLIER_INFO_MODAL), k = v ? b.intl.format(b.t.NpUfej, {
+        analyticsLocations: v
+    } = (0, s.Ay)(o.A.QUEST_ORB_MULTIPLIER_INFO_MODAL), k = f ? b.intl.format(b.t.NpUfej, {
         bonusOrbMultiplier: r
     }) : b.intl.format(b.t["G5k+lZ"], {
         bonusOrbMultiplier: r
     });
-    return (0, i.jsx)(n.kpP, {
-        ...f,
+    return (0, a.jsx)(n.kpP, {
+        ...h,
         onClose: t,
         badge: {
             type: "beta",
@@ -40,12 +40,12 @@ function v(e) {
         subtitle: k,
         graphic: {
             type: "rive",
-            rive: a.E44,
+            rive: i.E44,
             props: {
                 artboard: "Torbs_Multiply"
             }
         },
-        actions: v ? [{
+        actions: f ? [{
             text: b.intl.string(b.t.cpT0Cq),
             variant: "secondary",
             onClick: t
@@ -55,7 +55,7 @@ function v(e) {
             onClick: () => {
                 let e = u.BVt.NITRO_HOME,
                     r = new URLSearchParams({
-                        [p.W]: c.QUEST_ORB_MULTIPLIER_CARD_ID
+                        [p.W]: l.QUEST_ORB_MULTIPLIER_CARD_ID
                     }).toString();
                 t(), (0, _.pX)(e.includes("?") ? `${e}&${r}` : `${e}?${r}`)
             }
@@ -70,9 +70,9 @@ function v(e) {
             variant: "expressive",
             icon: n.tvc,
             onClick: () => {
-                t(), (0, l.A)({
+                t(), (0, c.A)({
                     subscriptionTier: d.pe.TIER_2,
-                    analyticsLocations: h
+                    analyticsLocations: v
                 })
             }
         }]

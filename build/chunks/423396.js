@@ -171,10 +171,7 @@ let b = [{
                         disablePurchases: !0,
                         onClose: u,
                         onComplete: h,
-                        paymentContextOverrides: {
-                            selectedPlanId: E,
-                            setSelectedPlanId: C
-                        }
+                        paymentContextOverrides: {}
                     }), (0, a.jsx)(y, {})]
                 }) : (0, a.jsx)(c.k, {})
             },

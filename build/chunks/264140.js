@@ -486,9 +486,9 @@ class tl extends l.PureComponent {
         let {
             showCall: e,
             channelIsContentGated: t,
-            channelIsSpoilerGated: n
+            spoilerGatingChannelId: n
         } = this.props;
-        return !t && !n && e
+        return !t && null == n && e
     }
     renderCall() {
         let {
@@ -534,7 +534,7 @@ class tl extends l.PureComponent {
             guild: t,
             needSubscriptionToAccess: n,
             channelIsContentGated: l,
-            channelIsSpoilerGated: s,
+            spoilerGatingChannelId: s,
             inCall: a
         } = this.props;
         if (o()(null != e, "Missing channel in Channel.renderChat"), n) return (o()(null != t, "premium channels must exist within a guild"), e?.isRoleSubscriptionTemplatePreviewChannel()) ? (0, i.jsx)(J.A, {
@@ -550,9 +550,9 @@ class tl extends l.PureComponent {
             guild: t,
             channelId: e.id
         });
-        if (s) return (0, i.jsx)(eT.A, {
+        if (null != s) return (0, i.jsx)(eT.A, {
             guild: t,
-            channelId: e.id
+            channelId: s
         });
         if (e.isGuildVocal() || a && e.isVocalThread()) return null;
         if (e.isDirectory()) return o()(null != t, "directory channels must exist within a guild"), (0, i.jsx)(w.A, {
@@ -671,11 +671,11 @@ class tl extends l.PureComponent {
             guildSidebarState: s,
             width: a,
             channelIsContentGated: r,
-            channelIsSpoilerGated: o
+            spoilerGatingChannelId: o
         } = this.props;
         if (null == s && null == l) return null;
         if (n === e6.YvQ.SIDEBAR_CHAT && null != l) {
-            if (r || o) return null;
+            if (r || null != o) return null;
             switch (l.type) {
                 case eC.PE.CREATE_THREAD:
                     if (t?.isForumLikeChannel()) return null;
@@ -829,7 +829,7 @@ let ts = (0, x.A)(tl),
             er = (0, e$.Ay)(m, !0),
             eo = (0, h.bG)([j.A], () => null != m ? j.A.getSelectedParticipant(m.id) : null),
             ed = (0, y.vL)(m),
-            ec = (0, eN.IL)(m),
+            ec = (0, eN.Uf)(m),
             eu = null != m && r === m.id,
             ep = null != m && m.isGuildStageVoice();
         (0, b.A)({
@@ -889,7 +889,7 @@ let ts = (0, x.A)(tl),
             showActivityPanel: w,
             showFramePanel: z,
             channelIsContentGated: ed,
-            channelIsSpoilerGated: ec,
+            spoilerGatingChannelId: ec,
             isMobile: (0, h.bG)([eK.A], () => m?.type === e6.rbe.DM && eK.A.isMobileOnline(m.getRecipientId()), [m]),
             isUnavailable: (0, h.bG)([eF.A], () => m?.guild_id != null && eF.A.isUnavailable(m.guild_id), [m]),
             showRealNameModal: Z,

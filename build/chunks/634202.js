@@ -35,8 +35,8 @@ var l = n(627968),
     O = n(783419),
     w = n(652215),
     L = n(518477),
-    k = n(985018),
-    G = n(333901);
+    G = n(985018),
+    k = n(333901);
 
 function D(e) {
     let t, {
@@ -48,13 +48,13 @@ function D(e) {
     } = e;
     if (null != r) switch (s) {
         case O.so.LESS_THAN:
-            t = k.intl.format(k.t["2p7dA3"], {
+            t = G.intl.format(G.t["2p7dA3"], {
                 description: r,
                 count: Math.max(0, Number(a) - 1)
             });
             break;
         case O.so.GREATER_THAN:
-            t = k.intl.format(k.t["2p7dA3"], {
+            t = G.intl.format(G.t["2p7dA3"], {
                 description: r,
                 count: Math.max(0, Number(a) + 1)
             });
@@ -68,11 +68,11 @@ function D(e) {
         value: a
     });
     return null == t ? null : (0, l.jsxs)("div", {
-        className: G.wL,
+        className: k.wL,
         children: [(0, l.jsx)(h.A9s, {
             size: "md",
             color: "currentColor",
-            className: G.D$
+            className: k.D$
         }), (0, l.jsx)(h.Text, {
             variant: "text-xs/medium",
             color: "text-strong",
@@ -94,24 +94,24 @@ function U(e) {
                 d = u?.application,
                 g = d?.bot != null ? new I.A(d.bot) : null;
             return S.iC.includes(d?.id ?? "") ? t = (0, l.jsx)(R.A, {
-                className: G.AO,
+                className: k.AO,
                 color: i,
                 size: 16
             }) : null != g && (t = (0, l.jsx)(N.A, {
-                className: G.AO,
+                className: k.AO,
                 verified: g.isVerifiedBot()
             })), (0, l.jsxs)("div", {
-                className: G.sV,
+                className: k.sV,
                 children: [(0, l.jsxs)("div", {
-                    className: G.ei,
+                    className: k.ei,
                     children: [null != c ? (0, l.jsx)("img", {
                         src: (0, m.Mw)(n) ? c.icon.darkSVG : c.icon.lightSVG,
                         alt: "",
-                        className: G.j$
+                        className: k.j$
                     }) : null, null != g ? (0, l.jsx)(f.A, {
                         user: g,
                         size: h._3J.SIZE_20,
-                        className: G.j$
+                        className: k.j$
                     }) : null, (0, l.jsx)(h.Text, {
                         variant: "text-sm/medium",
                         color: "interactive-text-active",
@@ -157,32 +157,32 @@ function P(e) {
         })
     }, [r, o, c, d]);
     let m = (0, u.bG)([_.Ay], () => _.Ay.getSelfMember(d)?.roles.includes(o) ?? !1, [d, o]);
-    return t = 1 === a.length && 1 === a[0].length ? k.intl.string(k.t.jDym4E) : 1 === a.length ? k.intl.format(k.t["0eBj3x"], {}) : k.intl.format(k.t.D7uftB, {}), (0, l.jsxs)("div", {
-        className: G.SW,
+    return t = 1 === a.length && 1 === a[0].length ? G.intl.string(G.t.jDym4E) : 1 === a.length ? G.intl.format(G.t["0eBj3x"], {}) : G.intl.format(G.t.D7uftB, {}), (0, l.jsxs)("div", {
+        className: k.SW,
         children: [(0, l.jsx)("div", {
-            className: G.oT,
+            className: k.oT,
             children: (0, l.jsx)(h.Text, {
                 variant: "text-xs/normal",
                 color: "text-default",
-                className: G.Io,
+                className: k.Io,
                 children: t
             })
         }), (0, l.jsx)("div", {
-            className: G.jf,
+            className: k.jf,
             children: (0, l.jsx)(U, {
                 eligibilityStates: a.flat()
             })
         }), (0, l.jsxs)("div", {
-            className: G.UD,
+            className: k.UD,
             children: [m ? null : (0, l.jsx)(g.$n, {
-                className: G.wz,
+                className: k.wz,
                 onClick: n,
-                children: k.intl.string(k.t.T1t1WV)
+                children: G.intl.string(G.t.T1t1WV)
             }), (0, l.jsx)(g.$n, {
-                className: G.lQ,
+                className: k.lQ,
                 color: g.$n.Colors.PRIMARY,
                 onClick: s,
-                children: k.intl.string(k.t.hgKDnG)
+                children: G.intl.string(G.t.hgKDnG)
             })]
         })]
     })
@@ -235,19 +235,19 @@ function H(e) {
         align: "top",
         nudgeAlignIntoViewport: !0,
         children: e => (0, l.jsx)(d.m, {
-            text: k.intl.string(k.t.Wpsnar),
+            text: G.intl.string(G.t.Wpsnar),
             children: (0, l.jsxs)("div", {
                 ref: p,
-                className: G.qS,
+                className: k.qS,
                 ...e,
                 children: [(0, l.jsx)(y.A, {
-                    className: G.f7,
+                    className: k.f7,
                     size: 16,
                     color: c.colorString
                 }), (0, l.jsx)(h.Text, {
                     variant: "text-xs/bold",
                     color: "text-strong",
-                    className: G.S3,
+                    className: k.S3,
                     children: c.name
                 })]
             })

@@ -1,6 +1,6 @@
 /** chunk id: 957489 params = (module,exports,require) **/
 n.d(t, {
-    F: () => x
+    F: () => P
 });
 var l = n(627968),
     i = n(158954),
@@ -8,32 +8,37 @@ var l = n(627968),
     s = n(612669),
     a = n(672525),
     o = n(927578),
-    u = n(937008),
-    d = n(156312),
-    c = n(166532),
-    p = n(800471),
-    m = n(169801),
-    E = n(788868),
+    u = n(413748),
+    d = n(937008),
+    c = n(156312),
+    p = n(166532),
+    m = n(800471),
+    E = n(169801),
+    S = n(788868),
     _ = n(985018),
-    S = n(338042);
+    I = n(338042);
 
-function x(e) {
+function P(e) {
     let {
         handleStepChange: t,
         referralTrialOfferId: n
     } = e, {
         setSelectedSkuId: i,
-        activeSubscription: s,
-        startedPaymentFlowWithPaymentSourcesRef: a,
-        setSelectedPlanId: _,
-        priceOptions: S,
-        defaultPlanId: x,
+        setSelectedPlanId: s
+    } = (0, u.t)(e => ({
+        setSelectedSkuId: e.setSelectedSkuId,
+        setSelectedPlanId: e.setSelectedPlanId
+    })), {
+        activeSubscription: a,
+        startedPaymentFlowWithPaymentSourcesRef: _,
+        priceOptions: I,
+        defaultPlanId: P,
         hasPaymentSources: T
-    } = (0, d.P5)(), {
+    } = (0, c.P5)(), {
         isGift: A,
         claimableRewards: h
-    } = (0, u.Pv)(), g = A && null != h && h.length > 0, I = (0, r.V)(n);
-    return (0, l.jsx)(P, {
+    } = (0, d.Pv)(), g = A && null != h && h.length > 0, f = (0, r.V)(n);
+    return (0, l.jsx)(x, {
         selectSku: e => (function(e) {
             let {
                 activeSubscription: t,
@@ -47,35 +52,35 @@ function x(e) {
                 defaultPlanId: d
             } = e;
             l(n);
-            let _ = c.pn.PLAN_SELECT,
-                S = (0, o.aZ)(t);
-            S !== E.pe.TIER_1 && S !== E.pe.TIER_2 || n !== E.pe.TIER_0 || r || (_ = c.pn.WHAT_YOU_LOSE);
-            let x = (0, m.t)({
+            let c = p.pn.PLAN_SELECT,
+                _ = (0, o.aZ)(t);
+            _ !== S.pe.TIER_1 && _ !== S.pe.TIER_2 || n !== S.pe.TIER_0 || r || (c = p.pn.WHAT_YOU_LOSE);
+            let I = (0, E.t)({
                     userTrialOffer: s,
                     isGift: r,
                     skuId: n
                 }),
-                P = (0, p.vT)({
-                    isTrial: x,
+                P = (0, m.vT)({
+                    isTrial: I,
                     isGift: r,
                     selectedSkuId: n,
                     startedPaymentFlowWithPaymentSources: u
                 });
-            _ !== c.pn.WHAT_YOU_LOSE && P && (_ = c.pn.REVIEW, a((0, p.xT)(n, t, d))), i(_, {
+            c !== p.pn.WHAT_YOU_LOSE && P && (c = p.pn.REVIEW, a((0, m.xT)(n, t, d))), i(c, {
                 analyticsDataOverride: {
                     sku_id: n
                 }
             })
         })({
-            activeSubscription: s,
+            activeSubscription: a,
             newSkuId: e,
             setSelectedSkuId: i,
             handleStepChange: t,
             isGift: A,
-            userTrialOffer: I,
-            startedPaymentFlowWithPaymentSources: a.current,
-            setSelectedPlanId: _,
-            defaultPlanId: x
+            userTrialOffer: f,
+            startedPaymentFlowWithPaymentSources: _.current,
+            setSelectedPlanId: s,
+            defaultPlanId: P
         }),
         onSelectPremiumGroup: () => (function(e) {
             let {
@@ -84,24 +89,24 @@ function x(e) {
                 hasPaymentSources: l,
                 setSelectedSkuId: i
             } = e;
-            i((0, o.mH)(E.pe.TIER_2)), t(E.gD.PREMIUM_GROUP_MONTH), n(l ? c.pn.REVIEW : c.pn.ADD_PAYMENT_STEPS, {
+            i((0, o.mH)(S.pe.TIER_2)), t(S.gD.PREMIUM_GROUP_MONTH), n(l ? p.pn.REVIEW : p.pn.ADD_PAYMENT_STEPS, {
                 analyticsDataOverride: {
-                    sku_id: E.pe.TIER_2
+                    sku_id: S.pe.TIER_2
                 }
             })
         })({
-            setSelectedPlanId: _,
+            setSelectedPlanId: s,
             handleStepChange: t,
             hasPaymentSources: T,
             setSelectedSkuId: i
         }),
         isGift: A,
-        priceOptions: S,
+        priceOptions: I,
         showPromotionalGiftBanner: g
     })
 }
 
-function P(e) {
+function x(e) {
     let {
         selectSku: t,
         isGift: n,
@@ -117,7 +122,7 @@ function P(e) {
             title: _.intl.string(_.t["r+SebU"])
         }), c ? (0, l.jsx)(i.cwr, {
             children: (0, l.jsx)("div", {
-                className: S.eE,
+                className: I.eE,
                 children: (0, l.jsx)(a.yS, {
                     onSelectSku: e => t((0, o.mH)(e)),
                     onSelectPremiumGroup: d,
@@ -127,7 +132,7 @@ function P(e) {
             })
         }) : (0, l.jsx)(i.cwr, {
             children: (0, l.jsx)("div", {
-                className: S.a2,
+                className: I.a2,
                 children: (0, l.jsx)(a.Ay, {
                     onSelectSku: e => t((0, o.mH)(e)),
                     isGift: n,

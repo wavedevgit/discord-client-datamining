@@ -28,11 +28,11 @@ function g(e) {
     if (p || null == T) return (0, i.jsx)(a.y$y, {
         type: a.tVU.PULSING_ELLIPSIS
     });
-    let h = T.items[0];
-    if (null == h || !(0, c.T)(h)) return null;
-    let I = (0, l.A)({
-        legacyAssetId: h.asset,
-        skuId: h.skuId,
+    let I = T.items[0];
+    if (null == I || !(0, c.T)(I)) return null;
+    let h = (0, l.A)({
+        legacyAssetId: I.asset,
+        skuId: I.skuId,
         size: r,
         canAnimate: !g
     });
@@ -41,7 +41,7 @@ function g(e) {
         size: r,
         className: m,
         src: u ?? x?.getAvatarURL(void 0, (0, a.FT9)(r), !g),
-        avatarDecoration: I
+        avatarDecoration: h
     })
 }
 

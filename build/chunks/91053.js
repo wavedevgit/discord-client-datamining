@@ -1,6 +1,6 @@
 /** chunk id: 91053 params = (module,exports,require) **/
 n.d(t, {
-    Z: () => x
+    Z: () => I
 });
 var l = n(627968),
     i = n(64700),
@@ -14,10 +14,10 @@ var l = n(627968),
     p = n(166403),
     m = n(810498),
     E = n(683433),
-    _ = n(344159),
-    S = n(985018);
+    S = n(344159),
+    _ = n(985018);
 
-function x(e) {
+function I(e) {
     let {
         onStepChange: t,
         selectedPlanId: n,
@@ -26,39 +26,39 @@ function x(e) {
         showBackButton: c,
         planOptions: p,
         shouldRenderUpdatedPaymentModal: m = !1,
-        isTrial: _,
-        isNextDisabled: x = !1
+        isTrial: S,
+        isNextDisabled: I = !1
     } = e, {
-        paymentSources: T
-    } = (0, o.P5)(), A = (0, d.A)(), {
-        isGift: h,
-        claimableRewards: g
+        paymentSources: x
+    } = (0, o.P5)(), T = (0, d.A)(), {
+        isGift: A,
+        claimableRewards: h
     } = (0, a.Pv)();
-    r = r ?? T;
+    r = r ?? x;
     let {
-        variant: I,
+        variant: g,
         text: f,
         onClick: j,
         disabled: R
     } = P({
         onStepChange: t,
-        selectedPlanId: n = n ?? A?.id,
-        isGift: h,
-        claimableRewards: g,
+        selectedPlanId: n = n ?? T?.id,
+        isGift: A,
+        claimableRewards: h,
         paymentSources: r,
         shouldRenderUpdatedPaymentModal: m,
-        isTrial: _,
-        isNextDisabled: x
+        isTrial: S,
+        isNextDisabled: I
     }), M = i.useMemo(() => null != n && p.includes(n) ? [{
-        variant: I,
+        variant: g,
         text: f,
         onClick: j,
         disabled: R
     }] : [{
         variant: "primary",
-        text: S.intl.string(S.t.XqMe3N),
+        text: _.intl.string(_.t.XqMe3N),
         disabled: !0
-    }], [I, f, j, R, n, p]);
+    }], [g, f, j, R, n, p]);
     return (0, l.jsx)(s.H7u, {
         leading: c && null != u ? (0, l.jsx)(E.A, {
             onClick: u
@@ -76,15 +76,15 @@ let P = e => {
         shouldRenderUpdatedPaymentModal: a,
         isTrial: o,
         isNextDisabled: E = !1
-    } = e, x = (0, r.bG)([p.A], () => p.A.getPremiumTypeSubscription()), P = (0, d.A)(), T = (0, c.bB)(), {
-        hasEntitlements: A
-    } = (0, _.X)(n, l), h = null != x && null != x.paymentSourceId || Object.keys(s).length > 0 || A && !o;
-    var g = a ? S.intl.string(S.t.PDTjLN) : S.intl.string(S.t.XqMe3N),
-        I = u.pn.ADD_PAYMENT_STEPS;
-    return h && (I = u.pn.REVIEW), (0, m.px)(P, l, i) && T !== u.pn.SELECT_FREE_SKU && (I = u.pn.SELECT_FREE_SKU), {
+    } = e, I = (0, r.bG)([p.A], () => p.A.getPremiumTypeSubscription()), P = (0, d.A)(), x = (0, c.bB)(), {
+        hasEntitlements: T
+    } = (0, S.X)(n, l), A = null != I && null != I.paymentSourceId || Object.keys(s).length > 0 || T && !o;
+    var h = a ? _.intl.string(_.t.PDTjLN) : _.intl.string(_.t.XqMe3N),
+        g = u.pn.ADD_PAYMENT_STEPS;
+    return A && (g = u.pn.REVIEW), (0, m.px)(P, l, i) && x !== u.pn.SELECT_FREE_SKU && (g = u.pn.SELECT_FREE_SKU), {
         variant: "primary",
-        text: g,
-        onClick: () => t(I),
+        text: h,
+        onClick: () => t(g),
         disabled: E
     }
 }

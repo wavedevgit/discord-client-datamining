@@ -45,8 +45,8 @@ var i = n(627968),
     F = n(652215),
     W = n(654487),
     z = n(113273),
-    Y = n(782965),
-    X = n(471074),
+    X = n(782965),
+    Y = n(471074),
     K = n(985018),
     q = n(547807),
     Z = n(998663),
@@ -144,11 +144,11 @@ function el() {
             let e = em.userStatus?.completedAt != null;
             n = {
                 id: w.NITRO_CONTROL_QUEST_CARD_ID,
-                title: K.intl.string(e ? X.default.S4okiP : X.default.lvidGa),
-                description: K.intl.string(e ? X.default.JXidUB : X.default["VghrI/"]),
-                pillText: K.intl.string(X.default["3rpSiP"]),
+                title: K.intl.string(e ? Y.default.S4okiP : Y.default.lvidGa),
+                description: K.intl.string(e ? Y.default.JXidUB : Y.default["VghrI/"]),
+                pillText: K.intl.string(Y.default["3rpSiP"]),
                 primaryAsset: (0, l.Mw)(el) ? ea.A : er.A,
-                ctaText: K.intl.string(e ? X.default.QBfwzW : X.default["1Ng1ci"]),
+                ctaText: K.intl.string(e ? Y.default.QBfwzW : Y.default["1Ng1ci"]),
                 onCtaClick: ef
             }
         }
@@ -174,16 +174,16 @@ function el() {
                 })
             } : null, ec ? {
                 id: w.PREMIUM_GROUP_CARD_ID,
-                title: K.intl.string(Y.default.YkvksF),
+                title: K.intl.string(X.default.YkvksF),
                 description: (0, i.jsxs)(i.Fragment, {
-                    children: [K.intl.formatToPlainString(Y.default.JlyGQj, {
+                    children: [K.intl.formatToPlainString(X.default.JlyGQj, {
                         totalSeats: V.aw,
                         premiumGroupProductName: (0, V.DP)()
                     }), (0, i.jsx)("div", {
                         className: q.LF,
                         children: (0, i.jsx)(x.A, {
                             onClick: eb,
-                            children: K.intl.string(Y.default.yYyGJH)
+                            children: K.intl.string(X.default.yYyGJH)
                         })
                     })]
                 }),

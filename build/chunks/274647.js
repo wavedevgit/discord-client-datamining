@@ -1,7 +1,6 @@
 /** chunk id: 274647 params = (module,exports,require) **/
 e.exports = {
     kL: "container_f7398d",
-    DD: "title_f7398d",
     In: "applicationIcon_f7398d",
     p: "applicationWidget_f7398d",
     $4: "applicationWidgetOnly_f7398d",
@@ -11,5 +10,7 @@ e.exports = {
     Zp: "loadingApplicationWidgetPanel_f7398d",
     ps: "loadingApplicationWidgetOnlyPanel_f7398d",
     kc: "loadingFeaturePanelRecomendations_f7398d",
-    Ij: "rewardOfferNotice_f7398d"
+    Ij: "rewardOfferNotice_f7398d",
+    OQ: "ctaContainer_f7398d",
+    Ku: "ctaIcon_f7398d"
 }

@@ -241,10 +241,12 @@ async function z(e, t, n) {
         name: r,
         icon: a,
         coverImage: s,
-        flags: c
+        flags: c,
+        parentId: u
     } = i;
     e.application = {
         id: l,
+        parentId: u,
         name: r,
         icon: a,
         coverImage: s,

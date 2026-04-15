@@ -34,7 +34,7 @@ function c(e) {
             PaymentModal: n
         } = await Promise.resolve().then(i.bind(i, 546042)), {
             STEPS: d
-        } = await Promise.all([i.e("41353"), i.e("62175"), i.e("94212"), i.e("29716"), i.e("14704"), i.e("2824"), i.e("18759")]).then(i.bind(i, 674619));
+        } = await Promise.all([i.e("41353"), i.e("62175"), i.e("94212"), i.e("29716"), i.e("14704"), i.e("2824"), i.e("96538")]).then(i.bind(i, 674619));
         return i => {
             let {
                 onClose: N,

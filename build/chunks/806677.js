@@ -19,8 +19,8 @@ var r = t(627968),
     I = t(688810),
     C = t(937008),
     g = t(156312),
-    x = t(532794),
-    S = t(871123),
+    S = t(532794),
+    x = t(871123),
     k = t(177569),
     T = t(657331),
     b = t(18983),
@@ -210,7 +210,7 @@ function ee(e) {
         isLoading: d,
         totalUnownedWishlistItems: u,
         analyticsLocations: f
-    } = e, C = (0, j.GG)("gift_selection_modal_wishlist_section"), g = (0, B.tx)(i), x = 0 === u ? V.intl.string(V.t.BCi1gT) : u >= 12 ? V.intl.formatToPlainString(V.t.Y2RFOQ, {
+    } = e, C = (0, j.GG)("gift_selection_modal_wishlist_section"), g = (0, B.tx)(i), S = 0 === u ? V.intl.string(V.t.BCi1gT) : u >= 12 ? V.intl.formatToPlainString(V.t.Y2RFOQ, {
         username: g
     }) : V.intl.formatToPlainString(V.t.dIDKgi, {
         username: g
@@ -237,7 +237,7 @@ function ee(e) {
         let {
             item: i
         } = e;
-        return (0, S.bF)(i.sku)
+        return (0, x.bF)(i.sku)
     }), [s]);
     return (0, r.jsxs)("div", {
         ref: N,
@@ -248,7 +248,7 @@ function ee(e) {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
                 className: z.Uf,
-                children: x
+                children: S
             }), !C && (0, r.jsx)(m.QWc, {
                 variant: "secondary",
                 size: "sm",
@@ -298,7 +298,7 @@ function ei(e) {
     } = e, p = (0, v.tA)({
         isGift: !0,
         giftRecipient: i
-    }), h = (u ? l : 0) > 0 ? V.intl.string(V.t["7lZ31J"]) : V.intl.string(V.t.BCi1gT), [I, C] = a.useState("Nitro"), g = a.useRef(null), x = a.useRef(null), S = (0, _.bG)([f.A], () => f.A.useReducedMotion), k = a.useRef(!1), b = a.useCallback(e => {
+    }), h = (u ? l : 0) > 0 ? V.intl.string(V.t["7lZ31J"]) : V.intl.string(V.t.BCi1gT), [I, C] = a.useState("Nitro"), g = a.useRef(null), S = a.useRef(null), x = (0, _.bG)([f.A], () => f.A.useReducedMotion), k = a.useRef(!1), b = a.useCallback(e => {
         C(e), k.current = !0;
         let t = g.current;
         null != t && t.addEventListener("scrollend", () => {
@@ -307,16 +307,16 @@ function ei(e) {
             once: !0
         }), "Nitro" === e ? t?.scrollTo({
             top: 0,
-            behavior: S ? "auto" : "smooth"
-        }) : x.current?.scrollIntoView({
-            behavior: S ? "auto" : "smooth",
+            behavior: x ? "auto" : "smooth"
+        }) : S.current?.scrollIntoView({
+            behavior: x ? "auto" : "smooth",
             block: "start"
         }), R.default.track(U.HAw.GIFT_SELECTION_TAB_SELECTED, {
             gift_recipient_id: i.id,
             tab_name: e,
             location_stack: s
         })
-    }, [i.id, s, S]), w = a.useCallback(() => {
+    }, [i.id, s, x]), w = a.useCallback(() => {
         R.default.track(U.HAw.GIFT_SELECTION_SEE_WISHLIST_CTA_CLICKED, {
             gift_recipient_id: i.id,
             wishlist_item_count: l,
@@ -327,7 +327,7 @@ function ei(e) {
         })
     }, [i.id, l, s, t]);
     return a.useEffect(() => {
-        let e = x.current,
+        let e = S.current,
             i = g.current;
         if (null == e || null == i) return;
         let t = new IntersectionObserver(e => {
@@ -365,7 +365,7 @@ function ei(e) {
                     className: z.XP,
                     children: n
                 }), p && (0, r.jsx)("div", {
-                    ref: x,
+                    ref: S,
                     className: z.XP,
                     children: (0, r.jsx)(ee, {
                         giftRecipient: i,
@@ -434,7 +434,7 @@ function er(e) {
     } = (0, g.P5)(), {
         claimableRewards: p
     } = (0, C.Pv)(), f = null != p && p.length > 0, h = a.useCallback(e => {
-        (0, x.A)({
+        (0, S.A)({
             isGift: !0,
             giftRecipient: i,
             giftingOrigin: d,
@@ -456,7 +456,7 @@ function er(e) {
             location_stack: s
         }))
     }, [i, s]);
-    let S = (0, r.jsx)(J, {
+    let x = (0, r.jsx)(J, {
         onSelectSku: h,
         priceOptions: u,
         showPromotionalGiftBanner: f
@@ -473,7 +473,7 @@ function er(e) {
             }), null != i ? (0, r.jsx)(et, {
                 giftRecipient: i,
                 onClose: t,
-                nitroSection: S,
+                nitroSection: x,
                 analyticsLocations: s
             }) : (0, r.jsx)(m.HOs, {
                 className: z.XG,
@@ -481,7 +481,7 @@ function er(e) {
                     className: `${z.Qs} ${z.GP}`,
                     children: (0, r.jsx)("div", {
                         className: z.XP,
-                        children: S
+                        children: x
                     })
                 })
             })]

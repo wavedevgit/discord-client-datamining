@@ -25,14 +25,14 @@ function E() {
         } = (0, a.Pv)(),
         n = (0, o.T)(e?.asset),
         E = (0, o.T)(e?.backgroundAsset),
-        _ = e?.gradient,
-        S = null != _ && null != _.colors && _.colors.length >= 2 ? (0, d.K5)({
-            gradient: _.colors,
-            angle: _.angle ?? void 0
+        S = e?.gradient,
+        _ = null != S && null != S.colors && S.colors.length >= 2 ? (0, d.K5)({
+            gradient: S.colors,
+            angle: S.angle ?? void 0
         }) : void 0,
-        x = (0, d.gc)(E);
-    null != x && (x.backgroundSize = "cover, auto", x.backgroundPosition = "right center, 0% 0%");
-    let P = (0, d.x)(x, S);
+        I = (0, d.gc)(E);
+    null != I && (I.backgroundSize = "cover, auto", I.backgroundPosition = "right center, 0% 0%");
+    let P = (0, d.x)(I, _);
     return null == e || null == t ? null : (0, l.jsxs)("div", {
         className: m.qD,
         style: P,

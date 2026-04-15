@@ -22,14 +22,14 @@ var l = n(627968),
     f = n(385771),
     v = n(789069),
     I = n(429913),
-    j = n(409626),
-    A = n(692969),
+    A = n(409626),
+    j = n(692969),
     _ = n(207963),
     R = n(953756),
     C = n(647901),
     D = n(371068),
-    N = n(61266),
-    b = n(731068),
+    b = n(61266),
+    N = n(731068),
     P = n(619517),
     L = n(339580),
     O = n(961350),
@@ -48,10 +48,10 @@ function M(e) {
         user: n,
         widget: i,
         cta: s
-    } = e, c = (0, m.bG)([O.default], () => O.default.getId()) === n.id, o = (0, I.h)(i.applicationId), d = o?.getIconURL(16), g = (0, m.bG)([X.A], () => null != o ? X.A.getGameByApplication(o) : null), x = (0, A.A)({
+    } = e, c = (0, m.bG)([O.default], () => O.default.getId()) === n.id, o = (0, I.h)(i.applicationId), d = o?.getIconURL(16), g = (0, m.bG)([X.A], () => null != o ? X.A.getGameByApplication(o) : null), x = (0, j.A)({
         location: "UserProfileApplicationWidget",
         applicationId: g?.id,
-        source: j.Ob.UserProfile,
+        source: A.Ob.UserProfile,
         sourceUserId: n.id,
         trackEntryPointImpression: !0
     }), {
@@ -69,7 +69,7 @@ function M(e) {
         }), _({
             analyticsLocations: C
         }))
-    }, [v, f, _, t, i.applicationId, C]), N = null == s && E && !f && v, b = null == s && E && f && v && null != R && !R.scopes.includes(u.F.APPLICATION_IDENTITIES_WRITE) && !R.scopes.includes(u.F.SDK_SOCIAL_LAYER) && !R.scopes.includes(u.F.SDK_SOCIAL_LAYER_PRESENCE), P = (0, l.jsxs)(l.Fragment, {
+    }, [v, f, _, t, i.applicationId, C]), b = null == s && E && !f && v, N = null == s && E && f && v && null != R && !R.scopes.includes(u.F.APPLICATION_IDENTITIES_WRITE) && !R.scopes.includes(u.F.SDK_SOCIAL_LAYER) && !R.scopes.includes(u.F.SDK_SOCIAL_LAYER_PRESENCE), P = (0, l.jsxs)(l.Fragment, {
         children: [null != d ? (0, l.jsx)("img", {
             className: F.Z2,
             src: d,
@@ -97,8 +97,8 @@ function M(e) {
         game: g,
         openGameProfileModal: x,
         handleConnect: D,
-        showConnectCta: N,
-        showReconnectCta: b,
+        showConnectCta: b,
+        showReconnectCta: N,
         headerTitle: L
     }
 }
@@ -111,11 +111,12 @@ function U(e) {
         showConnectCta: i,
         showReconnectCta: s,
         handleConnect: c,
-        cta: o,
-        v2: u = !1
+        disableCTA: o,
+        cta: u,
+        v2: d = !1
     } = e;
-    return t ? (0, l.jsxs)("div", {
-        className: r()(F.qr, u && F.v2),
+    return !t || o ? null : (0, l.jsxs)("div", {
+        className: r()(F.qr, d && F.v2),
         children: [n || a || i || s ? null : (0, l.jsxs)("div", {
             className: F.o8,
             children: [(0, l.jsx)(p.Qfk, {
@@ -139,8 +140,8 @@ function U(e) {
                 text: w.intl.string(w.t.vD60Pv),
                 onClick: c
             })
-        }) : o]
-    }) : null
+        }) : u]
+    })
 }
 
 function H(e) {
@@ -476,7 +477,7 @@ function Z(e) {
     let {
         content: t
     } = e, n = a.useId(), i = (0, C.X)();
-    return null != t ? (0, l.jsx)(N.A, {
+    return null != t ? (0, l.jsx)(b.A, {
         type: g.I5.TEXT_DISPLAY,
         id: n,
         content: t,
@@ -581,14 +582,15 @@ function ea(e) {
     let i, s, c, o, u, {
             user: g,
             widget: h,
-            cta: T,
-            subtle: y = !1,
-            embedded: x = !1
+            disableCTA: T,
+            cta: y,
+            subtle: x = !1,
+            embedded: E = !1
         } = e,
-        E = M(e),
+        v = M(e),
         {
-            isLoading: v,
-            hasData: I,
+            isLoading: I,
+            hasData: A,
             components: j
         } = (t = g.id, n = h.applicationId, i = (0, f.A)(), s = (0, m.bG)([L.A], () => L.A.getUserIdentityByApplication(t, n)), c = (0, m.bG)([W.A], () => W.A.getApplicationWidgetConfig(n)), o = (0, m.bG)([L.A, W.A], () => null == L.A.getUserIdentities(t) || null == W.A.applicationWidgetConfigs), u = a.useMemo(() => {
             var e, t;
@@ -609,7 +611,7 @@ function ea(e) {
                     value: e.value
                 }] : e.type === d.f.MEDIA ? [e.name, {
                     type: "unfurled_media",
-                    media: (0, b.Uv)(e.value)
+                    media: (0, N.Uv)(e.value)
                 }] : (0, G.xb)(e)) ?? [], ...Object.entries({
                     username: e.profile?.username,
                     ...e.profile?.data?.primary
@@ -618,7 +620,7 @@ function ea(e) {
                     if ("object" == typeof n) {
                         if ("url" in n && "proxy_url" in n && "loading_state" in n) return [t, {
                             type: "unfurled_media",
-                            media: (0, b.Uv)(n)
+                            media: (0, N.Uv)(n)
                         }]
                     } else if ("string" == typeof n) return [t, {
                         type: "string",
@@ -669,16 +671,16 @@ function ea(e) {
         userId: g.id,
         widget: h,
         className: r()(F.Y5, {
-            [F.aK]: y,
-            [F.F9]: x
+            [F.aK]: x,
+            [F.F9]: E
         }),
-        headerTitle: E.headerTitle,
+        headerTitle: v.headerTitle,
         headerClassName: F.wx,
-        additionalManageWidgetMenuItems: null != E.game ? (0, l.jsx)(p.Drp, {
+        additionalManageWidgetMenuItems: null != v.game ? (0, l.jsx)(p.Drp, {
             id: "view-game-profile",
             label: "View Game Profile",
             icon: p._xR,
-            action: E.openGameProfileModal
+            action: v.openGameProfileModal
         }) : null,
         children: [(0, l.jsx)(el, {
             widget: h,
@@ -686,13 +688,14 @@ function ea(e) {
                 component: j
             })
         }), (0, l.jsx)(U, {
-            isCurrentUser: E.isCurrentUser,
-            isLoading: v,
-            hasData: I,
-            showConnectCta: E.showConnectCta,
-            showReconnectCta: E.showReconnectCta,
-            handleConnect: E.handleConnect,
-            cta: T
+            isCurrentUser: v.isCurrentUser,
+            isLoading: I,
+            hasData: A,
+            showConnectCta: v.showConnectCta,
+            showReconnectCta: v.showReconnectCta,
+            handleConnect: v.handleConnect,
+            disableCTA: T,
+            cta: y
         })]
     })
 }
@@ -701,42 +704,44 @@ function ei(e) {
     let {
         user: t,
         widget: n,
-        cta: a,
-        subtle: i = !1,
-        embedded: o = !1
-    } = e, u = M(e), d = (0, E.A)(t.id, n.applicationId), m = d.surfaceConfigs[c.m.WIDGET_TOP], g = d.surfaceConfigs[c.m.WIDGET_BOTTOM];
-    return null == m || null == g ? null : (0, l.jsxs)(k.A, {
+        disableCTA: a,
+        cta: i,
+        subtle: o = !1,
+        embedded: u = !1
+    } = e, d = M(e), m = (0, E.A)(t.id, n.applicationId), g = m.surfaceConfigs[c.m.WIDGET_TOP], h = m.surfaceConfigs[c.m.WIDGET_BOTTOM];
+    return null == g || null == h ? null : (0, l.jsxs)(k.A, {
         ...e,
         userId: t.id,
         widget: n,
         className: r()(F.Y5, F.v2, {
-            [F.aK]: i,
-            [F.F9]: o
+            [F.aK]: o,
+            [F.F9]: u
         }),
         headerClassName: F.vX,
-        additionalManageWidgetMenuItems: null != u.game ? (0, l.jsx)(p.Drp, {
+        additionalManageWidgetMenuItems: null != d.game ? (0, l.jsx)(p.Drp, {
             id: "view-game-profile",
             label: "View Game Profile",
             icon: p._xR,
-            action: u.openGameProfileModal
+            action: d.openGameProfileModal
         }) : null,
         children: [(0, l.jsx)(s.kH, {
-            ...d,
+            ...m,
             surface: c.m.WIDGET_TOP,
-            surfaceConfig: m,
-            header: u.headerTitle
+            surfaceConfig: g,
+            header: d.headerTitle
         }), (0, l.jsx)(p.cGx, {}), (0, l.jsx)(s.kH, {
-            ...d,
+            ...m,
             surface: c.m.WIDGET_BOTTOM,
-            surfaceConfig: g
+            surfaceConfig: h
         }), (0, l.jsx)(U, {
-            isCurrentUser: u.isCurrentUser,
-            isLoading: d.isLoading,
-            hasData: d.hasIdentity,
-            showConnectCta: u.showConnectCta,
-            showReconnectCta: u.showReconnectCta,
-            handleConnect: u.handleConnect,
-            cta: a,
+            isCurrentUser: d.isCurrentUser,
+            isLoading: m.isLoading,
+            hasData: m.hasIdentity,
+            showConnectCta: d.showConnectCta,
+            showReconnectCta: d.showReconnectCta,
+            handleConnect: d.handleConnect,
+            disableCTA: a,
+            cta: i,
             v2: !0
         })]
     })

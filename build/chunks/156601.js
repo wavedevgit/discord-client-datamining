@@ -22,8 +22,8 @@ let g = function(e) {
         isGift: g = !1,
         variant: T,
         priceOptions: p,
-        isApplicationHome: h,
-        enablePremiumBrandRefresh: I
+        isApplicationHome: I,
+        enablePremiumBrandRefresh: h
     } = e, f = (0, s.bG)([d.A], () => d.A.isLoadedForSKUs([t])), j = (0, l.qB)((0, c.Ay)());
     if (!f) return (0, i.jsx)(o.y$y, {
         type: o.y$y.Type.PULSING_ELLIPSIS,
@@ -31,7 +31,7 @@ let g = function(e) {
     });
     let A = d.A.getForSkuAndInterval((0, u.mH)(t), r),
         v = null != A ? (0, u.sS)(A, p, !1, g) : null;
-    if (I) {
+    if (h) {
         let e = r === m.WT.YEAR;
         return (0, i.jsxs)("div", {
             children: [(0, i.jsx)(o.Text, {
@@ -50,12 +50,12 @@ let g = function(e) {
         })
     }
     return (0, i.jsx)(o.Heading, {
-        color: h ? "none" : "always-white",
+        color: I ? "none" : "always-white",
         variant: T ?? "heading-md/medium",
         className: a()(x.SW, n),
         children: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("span", {
-                className: h ? void 0 : x.q9,
+                className: I ? void 0 : x.q9,
                 children: v
             }), " / ", (0, u.FJ)(r)]
         })

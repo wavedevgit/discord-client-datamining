@@ -1,6 +1,6 @@
 /** chunk id: 822426 params = (module,exports,require) **/
 n.d(t, {
-    K: () => E
+    K: () => S
 });
 var l = n(627968);
 n(64700);
@@ -9,33 +9,38 @@ var i = n(284009),
     s = n(397927),
     a = n(96304),
     o = n(927578),
-    u = n(937008),
-    d = n(156312),
-    c = n(166532),
-    p = n(800471),
-    m = n(985018);
+    u = n(413748),
+    d = n(937008),
+    c = n(156312),
+    p = n(166532),
+    m = n(800471),
+    E = n(985018);
 
-function E(e) {
+function S(e) {
     let {
         handleStepChange: t,
         handleClose: n
     } = e, {
-        activeSubscription: i,
-        selectedSkuId: E,
-        setSelectedPlanId: _,
-        startedPaymentFlowWithPaymentSourcesRef: S
-    } = (0, d.P5)(), {
-        isGift: x
-    } = (0, u.Pv)(), P = null != i ? (0, o.EL)(i) : null, T = null != P ? (0, o.RH)(P.planId) : null, A = null != P ? (0, o.m6)(P.planId) : null, h = (0, p.vT)({
+        selectedSkuId: i,
+        setSelectedPlanId: S
+    } = (0, u.t)(e => ({
+        selectedSkuId: e.selectedSkuId,
+        setSelectedPlanId: e.setSelectedPlanId
+    })), {
+        activeSubscription: _,
+        startedPaymentFlowWithPaymentSourcesRef: I
+    } = (0, c.P5)(), {
+        isGift: P
+    } = (0, d.Pv)(), x = null != _ ? (0, o.EL)(_) : null, T = null != x ? (0, o.RH)(x.planId) : null, A = null != x ? (0, o.m6)(x.planId) : null, h = (0, m.vT)({
         isTrial: !1,
-        isGift: x,
-        selectedSkuId: E,
-        startedPaymentFlowWithPaymentSources: S.current
+        isGift: P,
+        selectedSkuId: i,
+        startedPaymentFlowWithPaymentSources: I.current
     });
     return r()(null != A, "Expected premium type"), (0, l.jsx)(a.A, {
         premiumType: A,
-        titleText: m.intl.string(m.t["7VcWW0"]),
-        subtitleText: m.intl.format(m.t.Qk34Ik, {
+        titleText: E.intl.string(E.t["7VcWW0"]),
+        subtitleText: E.intl.format(E.t.Qk34Ik, {
             subscriptionName: T
         }),
         footer: (0, l.jsxs)(s.ButtonGroup, {
@@ -43,14 +48,14 @@ function E(e) {
             align: "center",
             children: [(0, l.jsx)(s.Button, {
                 variant: "primary",
-                text: m.intl.string(m.t["3PatSz"]),
+                text: E.intl.string(E.t["3PatSz"]),
                 onClick: () => {
-                    h ? (_((0, p.xT)(E, i)), t(c.pn.REVIEW)) : t(c.pn.PLAN_SELECT)
+                    h ? (S((0, m.xT)(i, _)), t(p.pn.REVIEW)) : t(p.pn.PLAN_SELECT)
                 }
             }), (0, l.jsx)(s.Button, {
                 variant: "secondary",
                 onClick: n,
-                text: m.intl.string(m.t.rzVN6j)
+                text: E.intl.string(E.t.rzVN6j)
             })]
         }),
         onClose: n,

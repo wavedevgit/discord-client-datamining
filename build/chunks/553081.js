@@ -63,8 +63,8 @@ let w = "perk",
                 location: "PremiumSubscriberHome"
             }),
             {
-                scrollTargetId: Y,
-                glowingSectionId: X,
+                scrollTargetId: X,
+                glowingSectionId: Y,
                 glowingPerkId: K,
                 scrollBlock: q,
                 scrollInline: Z
@@ -83,7 +83,7 @@ let w = "perk",
                     scrollBlock: "start"
                 } : {}
             }, [a.search]);
-        (0, O.z)(Y ?? "", null != Y, q, Z);
+        (0, O.z)(X ?? "", null != X, q, Z);
         let [Q, $] = r.useState(!1), J = (0, R.p)(), ee = r.useRef(null), [et, en] = r.useState(!1), ei = null != J && null != V && V.status === L.Dmq.CANCELED, er = (0, E.iU)(D.gD.PREMIUM_MONTH_TIER_2, J, V), ea = !et && ei, {
             analyticsLocations: es
         } = (0, m.Ay)(_.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [el, ec] = r.useState(!1);
@@ -111,7 +111,7 @@ let w = "perk",
                     }), (0, i.jsx)(S.A, {
                         glowingPerkId: K
                     }), (0, i.jsx)(j.A, {
-                        glowingSectionId: X
+                        glowingSectionId: Y
                     }), null != W && z && (0, i.jsx)(M.A, {
                         location: _.A.PREMIUM_MARKETING_NITRO_HOME_ORBS_SECTION
                     }), (0, i.jsx)(P.A, {

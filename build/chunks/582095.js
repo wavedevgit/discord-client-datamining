@@ -142,15 +142,17 @@ class y {
     handleActivityJoin = e => {
         let {
             applicationId: t,
-            secret: n,
-            intent: i,
-            embedded: l
+            parentApplicationId: n,
+            secret: i,
+            intent: l,
+            embedded: r
         } = e;
         if (0 === this.rpcServer.subscriptions.length) return;
-        let r = {
-            secret: n
+        let a = {
+            application_id: t,
+            secret: i
         };
-        l && (r.intent = i), this.rpcServer.dispatchToSubscriptions(S.ZE4.ACTIVITY_JOIN, e => e.socket.application.id === t, r), this.rpcServer.dispatchToSubscriptions(S.ZE4.GAME_JOIN, e => e.socket.application.id === t, r)
+        r && (a.intent = l), this.rpcServer.dispatchToSubscriptions(S.ZE4.ACTIVITY_JOIN, e => e.socket.application.id === t || null != n && e.socket.application.parentId === n, a), this.rpcServer.dispatchToSubscriptions(S.ZE4.GAME_JOIN, e => e.socket.application.id === t, a)
     };
     handleActivityLayoutModeUpdate = e => {
         let {

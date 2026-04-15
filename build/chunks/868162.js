@@ -29,7 +29,7 @@ let h = {
         id: null,
         justChanged: !1
     },
-    C = /\(([^)]+)\)/;
+    C = /\((.+)\)\s*$/;
 
 function T(e) {
     if ((0, c.getPlatform)() === c.PlatformTypes.WINDOWS) {

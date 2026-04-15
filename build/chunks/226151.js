@@ -47,7 +47,7 @@ function x(e) {
         checkoutFlow: f
     } = e, {
         analyticsLocations: j
-    } = (0, s.Ay)(x, l.A.PREMIUM_PAYMENT_MODAL), C = i.useMemo(() => (function() {
+    } = (0, s.Ay)(x, l.A.PREMIUM_PAYMENT_MODAL), k = i.useMemo(() => (function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
         return [u.kJ, ...e ? [p.K] : [], u.zK, ...u.hh, u.r2, u.zX]
     })(g), [g]);
@@ -55,7 +55,7 @@ function x(e) {
         value: j,
         children: (0, a.jsx)(r.PaymentContextProvider, {
             loadId: n,
-            stepConfigs: C,
+            stepConfigs: k,
             applicationId: t,
             skuIDs: [o],
             activeSubscription: null,

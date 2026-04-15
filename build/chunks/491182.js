@@ -44,7 +44,7 @@ let A = function(e) {
         onMouseEnter: M,
         onMouseLeave: O,
         ...w
-    } = e, L = (0, r.bG)([g.A], () => R?.guildId == null || R?.colorRoleId == null ? null : g.A.getRole(R.guildId, R.colorRoleId)), k = (0, m.jV)(R?.guildId, L) && (0, d.kz)(R), [G, D] = i.useState(!1), U = i.useCallback(e => {
+    } = e, L = (0, r.bG)([g.A], () => R?.guildId == null || R?.colorRoleId == null ? null : g.A.getRole(R.guildId, R.colorRoleId)), G = (0, m.jV)(R?.guildId, L) && (0, d.kz)(R), [k, D] = i.useState(!1), U = i.useCallback(e => {
         D(!0), M?.(e)
     }, [M]), P = i.useCallback(e => {
         D(!1), O?.(e)
@@ -52,14 +52,14 @@ let A = function(e) {
         location: "BaseMessage"
     }), V = (0, l.jsx)(o.C.Provider, {
         value: {
-            animate: G,
+            animate: k,
             setAnimate: D
         },
         children: (0, l.jsx)(u.vN3, {
             ...S,
             children: (0, l.jsxs)("div", {
                 className: a()(t, {
-                    [h.D7]: k,
+                    [h.D7]: G,
                     [h.e8]: H && R?.displayNameStyles != null && R?.guildId == null,
                     [h.iE]: !0,
                     [h.kl]: s,

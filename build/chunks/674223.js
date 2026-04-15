@@ -1,6 +1,6 @@
 /** chunk id: 674223 params = (module,exports,require) **/
 t.d(n, {
-    K: () => I
+    K: () => T
 });
 var a = t(627968),
     i = t(64700),
@@ -14,25 +14,26 @@ var a = t(627968),
     p = t(67480),
     h = t(328968),
     m = t(371794),
-    x = t(937008),
-    g = t(156312),
-    f = t(166532),
-    j = t(482132),
+    x = t(413748),
+    g = t(937008),
+    f = t(156312),
+    j = t(166532),
+    k = t(482132),
     C = t(788868),
-    k = t(985018),
+    I = t(985018),
     A = t(714092);
-let I = {
-    key: f.pn.GIFT_CUSTOMIZATION,
-    renderStep: e => (0, a.jsx)(b, {
+let T = {
+    key: j.pn.GIFT_CUSTOMIZATION,
+    renderStep: e => (0, a.jsx)(v, {
         ...e
     }),
     options: {
         modalSizeGetter: () => "xl",
-        useBreadcrumbLabel: () => k.intl.string(k.t["W685+b"])
+        useBreadcrumbLabel: () => I.intl.string(I.t["W685+b"])
     }
 };
 
-function T(e) {
+function b(e) {
     let {
         onStepChange: n,
         onBackClick: t,
@@ -41,12 +42,12 @@ function T(e) {
         loading: r = !1
     } = e, {
         hasPaymentSources: c
-    } = (0, g.P5)(), u = c ? f.pn.REVIEW : f.pn.ADD_PAYMENT_STEPS, p = i.useMemo(() => [{
+    } = (0, f.P5)(), u = c ? j.pn.REVIEW : j.pn.ADD_PAYMENT_STEPS, p = i.useMemo(() => [{
         variant: "primary",
         onClick: () => n(u),
         disabled: d,
         loading: r,
-        text: k.intl.string(k.t.XiOHRX)
+        text: I.intl.string(I.t.XiOHRX)
     }], [n, u, d, r]);
     return (0, a.jsx)(s.H7u, {
         actions: p,
@@ -56,7 +57,7 @@ function T(e) {
     })
 }
 
-function b(e) {
+function v(e) {
     let {
         handleStepChange: n,
         handleClose: t
@@ -64,29 +65,27 @@ function b(e) {
         customGiftMessage: i = "",
         setCustomGiftMessage: o,
         giftRecipient: f
-    } = (0, x.Pv)(), {
-        selectedSkuId: k
-    } = (0, g.P5)(), I = (0, l.bG)([u.default], () => u.default.getCurrentUser()), b = (0, l.bG)([p.A], () => null != k ? p.A.get(k) : null, [k]), v = (0, r.A)(), y = (0, l.bG)([h.A], () => null != k ? h.A.getForSKU(k) : null, [k]), _ = y?.headerBackground != null && b?.applicationId != null ? (0, m.YE)(b.applicationId, y.headerBackground, 256) : void 0, M = async (e, n) => {};
+    } = (0, g.Pv)(), j = (0, x.t)(e => e.selectedSkuId), I = (0, l.bG)([u.default], () => u.default.getCurrentUser()), T = (0, l.bG)([p.A], () => null != j ? p.A.get(j) : null, [j]), v = (0, r.A)(), y = (0, l.bG)([h.A], () => null != j ? h.A.getForSKU(j) : null, [j]), _ = y?.headerBackground != null && T?.applicationId != null ? (0, m.YE)(T.applicationId, y.headerBackground, 256) : void 0, M = async (e, n) => {};
     return (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)(j.dZ, {
+        children: [(0, a.jsx)(k.dZ, {
             children: (0, a.jsxs)("div", {
                 className: A.Du,
                 children: [(0, a.jsxs)("div", {
                     className: A.mT,
-                    children: [b?.name != null && (0, a.jsx)(s.Heading, {
+                    children: [T?.name != null && (0, a.jsx)(s.Heading, {
                         variant: "heading-lg/semibold",
                         color: "text-strong",
-                        children: b.name
+                        children: T.name
                     }), null != _ && (0, a.jsx)("img", {
                         src: _,
-                        alt: b?.name ?? "",
+                        alt: T?.name ?? "",
                         className: A.LC
                     })]
                 }), (0, a.jsxs)("div", {
                     className: A.Tc,
                     children: [(0, a.jsx)(d.A, {
                         recipients: v,
-                        selectedSkuId: k,
+                        selectedSkuId: j,
                         validateSelectedGift: M
                     }), (0, a.jsx)(c.A, {
                         onTextChange: e => o?.(e),
@@ -98,8 +97,8 @@ function b(e) {
                     })]
                 })]
             })
-        }), (0, a.jsx)(j.UX, {
-            children: (0, a.jsx)(T, {
+        }), (0, a.jsx)(k.UX, {
+            children: (0, a.jsx)(b, {
                 onStepChange: n,
                 onBackClick: t,
                 disabled: null == f || f.id === I?.id || i.length > C.Jo

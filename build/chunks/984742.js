@@ -1,10 +1,10 @@
 /** chunk id: 984742 params = (module,exports,require) **/
 n.d(t, {
-    A: () => j
+    A: () => A
 }), n(938796);
 var i = n(627968),
-    r = n(64700),
-    l = n(241524),
+    l = n(64700),
+    r = n(241524),
     a = n(775602),
     s = n(21161),
     o = n(163437),
@@ -17,13 +17,13 @@ var i = n(627968),
     x = n(482132),
     g = n(987616),
     h = n(921925),
-    b = n(376747),
-    A = n(985018);
+    S = n(376747),
+    b = n(985018);
 
-function j(e) {
+function A(e) {
     let t, n, {
-            showBenefits: j,
-            handleClose: S,
+            showBenefits: A,
+            handleClose: j,
             onSubscriptionConfirmation: v
         } = e,
         {
@@ -33,56 +33,56 @@ function j(e) {
             application: y
         } = (0, u.P5)(),
         E = (0, g.S3)(),
-        T = (0, l.A)(b.Y),
+        T = (0, r.A)(S.Y),
         {
-            createMultipleConfettiAt: P
-        } = r.useContext(s.x),
-        I = E?.name ?? "",
+            createMultipleConfettiAt: I
+        } = l.useContext(s.x),
+        P = E?.name ?? "",
         k = () => {
-            S(), v?.()
+            j(), v?.()
         },
         w = C === m.pn.CONFIRM,
         R = (0, o.bg)(E?.flags ?? 0),
-        D = null != N && N.benefits.length > 0 ? A.intl.formatToPlainString(A.t["+IQQVM"], {
+        D = null != N && N.benefits.length > 0 ? b.intl.formatToPlainString(b.t["+IQQVM"], {
             benefitCount: N.benefits.length
         }) : null;
-    return j ? T ? t = (0, i.jsx)(c.E, {
-        title: A.intl.format(A.t.ea6tZr, {
-            tierName: I
+    return A ? T ? t = (0, i.jsx)(c.E, {
+        title: b.intl.format(b.t.ea6tZr, {
+            tierName: P
         }),
-        subtitle: null != N && N.benefits.length > 0 ? A.intl.formatToPlainString(A.t.HNepft, {
+        subtitle: null != N && N.benefits.length > 0 ? b.intl.formatToPlainString(b.t.HNepft, {
             benefits: D
         }) : null,
         onConfirm: k,
-        confirmCta: A.intl.string(A.t.nlkywz)
+        confirmCta: b.intl.string(b.t.nlkywz)
     }) : (t = null != N && null != y ? (0, i.jsx)(d.Uf, {
         icon: N.thumbnail,
         storeListingBenefits: N.benefits,
         application: y,
-        title: A.intl.format(A.t["Q+qktS"], {
-            tier: I
+        title: b.intl.format(b.t["Q+qktS"], {
+            tier: P
         }),
-        subtitle: A.intl.string(A.t.ECKxXU),
-        description: R ? A.intl.format(A.t["MAtQk/"], {
+        subtitle: b.intl.string(b.t.ECKxXU),
+        description: R ? b.intl.format(b.t["MAtQk/"], {
             applicationName: y?.name
-        }) : A.intl.format(A.t.vHkMF4, {
-            tier: I
+        }) : b.intl.format(b.t.vHkMF4, {
+            tier: P
         })
     }) : (0, i.jsx)(f.A, {}), n = (0, i.jsx)(p.Ay, {
         onPrimary: k,
         primaryCTA: p.ti.CONTINUE,
-        primaryText: A.intl.string(A.t["JtWl+a"])
+        primaryText: b.intl.string(b.t["JtWl+a"])
     })) : t = T ? (0, i.jsx)(c.v, {
-        tierName: I,
+        tierName: P,
         onConfirm: k,
         subscription: _
     }) : (0, i.jsx)(d.XG, {
-        tierName: I,
+        tierName: P,
         onConfirm: k,
         subscription: _
-    }), r.useEffect(() => {
-        a.A.useReducedMotion && w && P(window.innerWidth / 2, window.innerHeight / 2)
-    }, [P, w]), (0, i.jsxs)(i.Fragment, {
+    }), l.useEffect(() => {
+        a.A.useReducedMotion && w && I(window.innerWidth / 2, window.innerHeight / 2)
+    }, [I, w]), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(x.dZ, {
             children: [(0, i.jsx)(h.A, {}), t]
         }), null != n && (0, i.jsx)(x.UX, {

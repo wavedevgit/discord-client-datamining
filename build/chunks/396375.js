@@ -1,47 +1,47 @@
 /** chunk id: 396375 params = (module,exports,require) **/
-r.d(t, {
+n.d(t, {
     A: () => u
 });
-var i = r(627968);
-r(64700);
-var n = r(582754),
-    a = r(421380),
-    s = r(736653),
-    l = r(234419),
-    o = r(725807),
-    c = r(145310),
-    d = r(871850);
+var i = n(627968);
+n(64700);
+var r = n(582754),
+    a = n(421380),
+    s = n(736653),
+    l = n(234419),
+    c = n(725807),
+    o = n(145310),
+    d = n(871850);
 let u = e => {
     let {
         textOptions: t,
-        subscriptionTier: r,
+        subscriptionTier: n,
         hasActivePromotion: u = !1,
-        isPersistentCTA: m = !1,
-        useShorterCTA: x = !1,
-        showGradient: g,
-        confirmationFooter: T,
-        color: p,
-        ...h
-    } = e, I = (0, s.Ay)(), {
+        isPersistentCTA: _ = !1,
+        useShorterCTA: m = !1,
+        showGradient: p,
+        confirmationFooter: g,
+        color: A,
+        ...x
+    } = e, h = (0, s.Ay)(), {
         buttonText: f,
-        marketingSubscriptionTierSkuId: j
-    } = (0, c.s)({
+        marketingSubscriptionTierSkuId: b
+    } = (0, o.s)({
         hasActivePromotion: u,
-        subscriptionTier: r,
-        useShorterCTA: x,
-        isPersistentCTA: m
-    }), A = (0, l.V)(), v = A?.subscription_trial, R = null != v && j === v.sku_id, _ = p ?? ((0, n.Mw)(I) ? a.XD.BRAND_INVERTED : a.XD.BRAND);
-    return (0, i.jsx)(o.A, {
-        color: _,
+        subscriptionTier: n,
+        useShorterCTA: m,
+        isPersistentCTA: _
+    }), N = (0, l.V)(), C = N?.subscription_trial, R = null != C && b === C.sku_id, v = A ?? ((0, r.Mw)(h) ? a.XD.BRAND_INVERTED : a.XD.BRAND);
+    return (0, i.jsx)(c.A, {
+        color: v,
         textOptions: {
             textOverride: f,
             textClassName: R ? d.A : void 0,
             ...t
         },
         onlyShineOnHover: !0,
-        subscriptionTier: j,
-        showGradient: g,
-        confirmationFooter: T,
-        ...h
+        subscriptionTier: b,
+        showGradient: p,
+        confirmationFooter: g,
+        ...x
     })
 }

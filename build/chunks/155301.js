@@ -1,57 +1,63 @@
 /** chunk id: 155301 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => p
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(459793),
+    l = n(64700),
+    r = n(459793),
     a = n(97352),
     s = n(927578),
-    o = n(937008),
-    d = n(156312),
-    c = n(534479),
-    u = n(615310);
+    o = n(413748),
+    d = n(937008),
+    c = n(156312),
+    u = n(534479),
+    m = n(615310);
 
-function m(e) {
+function p(e) {
     let {
         initialStep: t,
         initialPlanId: n,
-        guildId: m,
-        setAnalyticsData: p
+        guildId: p,
+        setAnalyticsData: f
     } = e, {
-        blockedPayments: f,
-        hasFetchedSubscriptions: x,
-        hasFetchedSubscriptionPlans: g,
-        currencyLoading: h,
-        selectedSkuId: b,
-        setSelectedSkuId: A,
-        setSelectedPlanId: j,
-        priceOptions: S,
-        setSubscriptionMetadataRequest: v,
-        displayCurrency: _
-    } = (0, d.P5)(), C = (0, u.l)(), {
-        isGift: N
-    } = (0, o.Pv)(), [y, E] = r.useState(!x || !g || h);
-    return (r.useEffect(() => {
-        E(!x || !g || h)
-    }, [h, g, x]), r.useEffect(() => {
-        null != m && v({
-            guild_id: m
+        selectedSkuId: x,
+        setSelectedSkuId: g,
+        setSelectedPlanId: h
+    } = (0, o.t)(e => ({
+        selectedSkuId: e.selectedSkuId,
+        setSelectedSkuId: e.setSelectedSkuId,
+        setSelectedPlanId: e.setSelectedPlanId
+    })), {
+        blockedPayments: S,
+        hasFetchedSubscriptions: b,
+        hasFetchedSubscriptionPlans: A,
+        currencyLoading: j,
+        priceOptions: v,
+        setSubscriptionMetadataRequest: _,
+        displayCurrency: C
+    } = (0, c.P5)(), N = (0, m.l)(), {
+        isGift: y
+    } = (0, d.Pv)(), [E, T] = l.useState(!b || !A || j);
+    return (l.useEffect(() => {
+        T(!b || !A || j)
+    }, [j, A, b]), l.useEffect(() => {
+        null != p && _({
+            guild_id: p
         })
-    }, [m, v]), r.useEffect(() => {
-        j(n);
+    }, [p, _]), l.useEffect(() => {
+        h(n);
         let e = null != n ? a.A.get(n) : null;
-        y || f || (p(t => {
-            let n = null != e ? (0, s.y8)(e.id, !1, N, {
-                paymentSourceId: S.paymentSourceId
+        E || S || (f(t => {
+            let n = null != e ? (0, s.y8)(e.id, !1, y, {
+                paymentSourceId: v.paymentSourceId
             }) : void 0;
             return {
                 ...t,
                 subscription_plan_id: e?.id,
                 price: n?.amount,
                 regular_price: e?.price,
-                currency: _
+                currency: C
             }
-        }), null != e && (A(e?.skuId), C(t)))
-    }, [f, n, N, y, S, _, b, p, j, A, C, t]), y) ? (0, i.jsx)(c.A, {}) : f ? (0, i.jsx)(l.oO, {}) : null
+        }), null != e && (g(e?.skuId), N(t)))
+    }, [S, n, y, E, v, C, x, f, h, g, N, t]), E) ? (0, i.jsx)(u.A, {}) : S ? (0, i.jsx)(r.oO, {}) : null
 }

@@ -31,10 +31,17 @@ function E(e) {
         direction: "horizontal",
         align: "center",
         gap: 4,
-        children: [null != N && (0, i.jsx)(N, {
-            size: "md",
-            color: o.LU0.colors.TEXT_DEFAULT
-        }), C]
+        className: g.$,
+        children: [null != N && (0, i.jsx)("span", {
+            className: g.P0,
+            children: (0, i.jsx)(N, {
+                size: "md",
+                color: o.LU0.colors.TEXT_DEFAULT
+            })
+        }), (0, i.jsx)("span", {
+            className: g.HA,
+            children: C
+        })]
     }) : p.intl.string(p.t["q38/ae"]), S = l.useCallback(e => {
         null != e && E(e.scrollHeight - e.clientHeight > 1)
     }, []), b = l.useCallback(() => {
