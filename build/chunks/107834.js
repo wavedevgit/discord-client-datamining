@@ -47,7 +47,7 @@ let v = a.Ay.connectStores([T.default], () => ({
                         children: [(0, i.jsx)(A.l, {
                             ref: T,
                             size: "sm",
-                            className: C.ij,
+                            variant: "secondary",
                             location: g.A.PREMIUM_WISHLIST_NITRO_MEMBER_HUB
                         }), (0, i.jsx)(h.A, {
                             variant: "secondary",

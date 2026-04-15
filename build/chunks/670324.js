@@ -5,6 +5,5 @@ e.exports = {
     ql: "homeWrapperNormal__0920e homeWrapper__0920e",
     xD: "headerBarV2LightBackground__0920e",
     lO: "headerBarV2DarkBackground__0920e",
-    fI: "headerToolbar__0920e",
-    ij: "wishlistButton__0920e"
+    fI: "headerToolbar__0920e"
 }
