@@ -7,15 +7,15 @@ var i = n(627968),
     a = n(775602),
     s = n(608416),
     l = n(307973),
-    c = n(968548),
-    o = n(180894);
+    o = n(968548),
+    c = n(180894);
 let d = e => {
     let {
         containerVisibilityPercentage: t
     } = e, n = (0, r.bG)([a.A], () => a.A.useReducedMotion);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            className: c.BI,
+            className: o.BI,
             children: (0, i.jsx)(s.Ay, {
                 scaleAnimationData: {
                     startScale: .9,
@@ -37,20 +37,20 @@ let d = e => {
                 },
                 animationSpeedScale: 2,
                 children: (0, i.jsx)("img", {
-                    src: o.A,
+                    src: c.A,
                     alt: "",
-                    className: c.Q
+                    className: o.Q
                 })
             })
         }), (0, i.jsx)(l.A, {
             isMotionReduced: n,
             containerVisibilityPercentage: t,
-            hammerContainerClassName: c.Gj,
-            keyContainerClassName: c.FV,
-            starContainerClassName: c.E1,
-            hammerAssetClassName: c.Wv,
-            keyAssetClassName: c.rs,
-            starAssetClassName: c.OY,
+            hammerContainerClassName: o.Gj,
+            keyContainerClassName: o.FV,
+            starContainerClassName: o.E1,
+            hammerAssetClassName: o.Wv,
+            keyAssetClassName: o.rs,
+            starAssetClassName: o.OY,
             animationSpeedScale: 2
         })]
     })

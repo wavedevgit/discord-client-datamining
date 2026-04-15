@@ -8,8 +8,8 @@ var r = n(582754),
     a = n(421380),
     s = n(736653),
     l = n(234419),
-    c = n(725807),
-    o = n(145310),
+    o = n(725807),
+    c = n(145310),
     d = n(871850);
 let u = e => {
     let {
@@ -21,27 +21,27 @@ let u = e => {
         showGradient: p,
         confirmationFooter: g,
         color: A,
-        ...x
+        ...f
     } = e, h = (0, s.Ay)(), {
-        buttonText: f,
-        marketingSubscriptionTierSkuId: b
-    } = (0, o.s)({
+        buttonText: b,
+        marketingSubscriptionTierSkuId: x
+    } = (0, c.s)({
         hasActivePromotion: u,
         subscriptionTier: n,
         useShorterCTA: m,
         isPersistentCTA: _
-    }), N = (0, l.V)(), C = N?.subscription_trial, R = null != C && b === C.sku_id, v = A ?? ((0, r.Mw)(h) ? a.XD.BRAND_INVERTED : a.XD.BRAND);
-    return (0, i.jsx)(c.A, {
+    }), C = (0, l.V)(), N = C?.subscription_trial, R = null != N && x === N.sku_id, v = A ?? ((0, r.Mw)(h) ? a.XD.BRAND_INVERTED : a.XD.BRAND);
+    return (0, i.jsx)(o.A, {
         color: v,
         textOptions: {
-            textOverride: f,
+            textOverride: b,
             textClassName: R ? d.A : void 0,
             ...t
         },
         onlyShineOnHover: !0,
-        subscriptionTier: b,
+        subscriptionTier: x,
         showGradient: p,
         confirmationFooter: g,
-        ...x
+        ...f
     })
 }

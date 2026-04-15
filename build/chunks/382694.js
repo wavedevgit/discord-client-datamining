@@ -7,20 +7,20 @@ var i = n(627968),
     a = n.n(r),
     s = n(397927),
     l = n(744064),
-    c = n(189024),
-    o = n(985018),
+    o = n(189024),
+    c = n(985018),
     d = n(494353);
 
 function u(e) {
     let {
         glowingPerkId: t = null
-    } = e, n = (0, c.A)();
+    } = e, n = (0, o.A)();
     return (0, i.jsxs)("div", {
         className: d.uW,
         children: [(0, i.jsx)(s.Heading, {
             variant: "display-sm",
             className: d.R_,
-            children: o.intl.string(o.t.Aw5DRm)
+            children: c.intl.string(c.t.Aw5DRm)
         }), (0, i.jsx)("div", {
             className: d.Ui,
             children: n.map((e, n) => {

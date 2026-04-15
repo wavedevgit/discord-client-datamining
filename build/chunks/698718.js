@@ -1,6 +1,6 @@
 /** chunk id: 698718 params = (module,exports,require) **/
 n.d(t, {
-    A: () => e5
+    A: () => e6
 }), n(938796);
 var i = n(627968),
     l = n(64700),
@@ -52,9 +52,9 @@ var i = n(627968),
     $ = n(129185),
     Z = n(513609),
     X = n(301169),
-    Q = n(751258),
-    ee = n(451909),
-    et = n(501255),
+    Q = n(521427),
+    ee = n(751258),
+    et = n(451909),
     en = n(195880),
     ei = n(926262),
     el = n(371648),
@@ -378,12 +378,12 @@ class e7 extends l.PureComponent {
                     shouldClear: !1,
                     shouldRefocus: !1
                 };
-            let x = (0, Q.S)(t, {
+            let x = (0, ee.S)(t, {
                 channel: h,
                 isEdit: !1
             });
             null != x && (null != x.content && (t = x.content), null != x.tts && (E = x.tts));
-            let S = ee.Ay.parse(h, t);
+            let S = et.Ay.parse(h, t);
             S.tts = S.tts || E, null != o && (S.content = "", S.components = o);
             let I = {
                 ...g.A.getSendMessageOptions({
@@ -824,7 +824,7 @@ class e3 extends l.PureComponent {
         }, `messages-${t.id}`)
     }
 }
-let e5 = l.memo(function(e) {
+let e6 = l.memo(function(e) {
     let {
         channel: t,
         guild: n,
@@ -837,7 +837,7 @@ let e5 = l.memo(function(e) {
         channel: t
     }), o = (0, eu.L)(eO.default.getCurrentUser(), t), [c] = (0, Y.c)(n?.id), d = (0, V.uZ)(n?.id), u = (0, h.bG)([eO.default], () => eO.default.getCurrentUser()), A = (0, h.bG)([ey.Ay], () => null != u && (ey.Ay.getMember(n?.id ?? e$.dJq, u?.id)?.isPending ?? !1)), g = (0, h.bG)([er.A], () => er.A.isEnabled()), p = (0, ed.A)(t.id), _ = (0, q.A)(t.id), E = (0, ep.D)(t.id), C = (0, h.bG)([eC.A], () => eC.A.getAlsoSendToChannel(t.id)), S = (0, h.bG)([eo.Ay, eI.default], () => eo.Ay.getUserCombo(eI.default.getId(), t.id)), I = (0, f.rj)(t), T = (0, f.aW)(t), v = I.length > 0 || t.rateLimitPerUser > 0 || null != S || null != T, {
         showLinkedLobbyApplicationLoadingIndicator: N
-    } = (0, eB.A)(t.linkedLobby), y = (0, H.A)("ChannelChat"), b = (0, ea.A)((0, et.GP)(n, "ChannelChat") ? n?.officialMessageColor ?? eZ.aj : null);
+    } = (0, eB.A)(t.linkedLobby), y = (0, H.A)("ChannelChat"), b = (0, ea.A)((0, Q.GP)(n, "ChannelChat") ? n?.officialMessageColor ?? eZ.aj : null);
     return (0, K.A)(t), (0, i.jsx)(e3, {
         channel: t,
         guildOfficialMessageStyle: b,

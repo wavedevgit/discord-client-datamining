@@ -7,8 +7,8 @@ var i = n(627968),
     a = n.n(r),
     s = n(608416),
     l = n(676440),
-    c = n(194225),
-    o = n(104400),
+    o = n(194225),
+    c = n(104400),
     d = n(737968),
     u = n(275869),
     _ = n(979250);
@@ -21,12 +21,12 @@ let m = e => {
         hammerContainerClassName: p,
         keyContainerClassName: g,
         starContainerClassName: A,
-        boltAssetClassName: x,
+        boltAssetClassName: f,
         carAssetClassName: h,
-        hammerAssetClassName: f,
-        keyAssetClassName: b,
-        starAssetClassName: N,
-        animationSpeedScale: C = 1,
+        hammerAssetClassName: b,
+        keyAssetClassName: x,
+        starAssetClassName: C,
+        animationSpeedScale: N = 1,
         blurScale: R = 1
     } = e;
     return (0, i.jsxs)(i.Fragment, {
@@ -56,10 +56,10 @@ let m = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: C,
+                animationSpeedScale: N,
                 children: (0, i.jsx)("img", {
-                    src: c.A,
-                    className: x,
+                    src: o.A,
+                    className: f,
                     alt: ""
                 })
             })
@@ -79,9 +79,9 @@ let m = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: C,
+                animationSpeedScale: N,
                 children: (0, i.jsx)("img", {
-                    src: o.A,
+                    src: c.A,
                     className: h,
                     alt: ""
                 })
@@ -102,10 +102,10 @@ let m = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: C,
+                animationSpeedScale: N,
                 children: (0, i.jsx)("img", {
                     src: d.A,
-                    className: f,
+                    className: b,
                     alt: ""
                 })
             })
@@ -135,10 +135,10 @@ let m = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: C,
+                animationSpeedScale: N,
                 children: (0, i.jsx)("img", {
                     src: u.A,
-                    className: b,
+                    className: x,
                     alt: ""
                 })
             })
@@ -168,10 +168,10 @@ let m = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: C,
+                animationSpeedScale: N,
                 children: (0, i.jsx)("img", {
                     src: _.A,
-                    className: N,
+                    className: C,
                     alt: ""
                 })
             })

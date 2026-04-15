@@ -22,7 +22,7 @@ function h(e) {
         null != t && (u[e] = {
             ...t,
             style: "GENTLE_AMBIENT"
-        }, _.emitChange()), delete d[e]
+        }, g.emitChange()), delete d[e]
     }, 2e3)
 }
 
@@ -31,10 +31,10 @@ function f() {
     d = {}, u = {}
 }
 
-function g() {
+function E() {
     return f(), !0
 }
-class E extends l.Ay.Store {
+class _ extends l.Ay.Store {
     static displayName = "VoiceChannelAnimationStateStore";
     initialize() {
         this.waitFor(s.A, r.A)
@@ -46,7 +46,7 @@ class E extends l.Ay.Store {
         return u[e]?.userCount ?? 0
     }
 }
-let _ = new E(a.h, {
+let g = new _(a.h, {
         VOICE_STATE_UPDATES: function(e) {
             let {
                 voiceStates: t
@@ -87,7 +87,7 @@ let _ = new E(a.h, {
             });
             return !0
         },
-        CONNECTION_OPEN: g,
-        LOGOUT: g
+        CONNECTION_OPEN: E,
+        LOGOUT: E
     }),
-    m = _
+    m = g

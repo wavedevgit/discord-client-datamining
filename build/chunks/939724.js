@@ -8,15 +8,15 @@ var r = n(503698),
     a = n.n(r),
     s = n(989349),
     l = n.n(s),
-    c = n(397927),
-    o = n(496431),
+    o = n(397927),
+    c = n(496431),
     d = n(985018),
     u = n(485697);
 let _ = e => {
     let {
         expiresAt: t,
         className: n
-    } = e, r = (0, o.A)(l()(t).toDate(), 1e3);
+    } = e, r = (0, c.A)(l()(t).toDate(), 1e3);
     if (null == r) return null;
     let {
         days: s,
@@ -38,7 +38,7 @@ let _ = e => {
     }];
     return (0, i.jsxs)("div", {
         className: a()(u.Xl, n),
-        children: [(0, i.jsx)(c.Text, {
+        children: [(0, i.jsx)(o.Text, {
             variant: "text-sm/semibold",
             color: "text-strong",
             children: d.intl.string(d.t["/ARFVE"])
@@ -53,20 +53,20 @@ let _ = e => {
                             className: u.kB,
                             children: [(0, i.jsx)("div", {
                                 className: u.B2,
-                                children: (0, i.jsx)(c.Text, {
+                                children: (0, i.jsx)(o.Text, {
                                     variant: "text-md/medium",
                                     color: "text-strong",
                                     children: r
                                 })
                             }), (0, i.jsx)("div", {
                                 className: u.B2,
-                                children: (0, i.jsx)(c.Text, {
+                                children: (0, i.jsx)(o.Text, {
                                     variant: "text-md/medium",
                                     color: "text-strong",
                                     children: a
                                 })
                             })]
-                        }), (0, i.jsx)(c.Text, {
+                        }), (0, i.jsx)(o.Text, {
                             variant: "text-xs/semibold",
                             color: "text-strong",
                             children: function(e) {
@@ -84,7 +84,7 @@ let _ = e => {
                                 }
                             }(e.unitType)
                         })]
-                    }, e.unitType), !t && (0, i.jsx)(c.Text, {
+                    }, e.unitType), !t && (0, i.jsx)(o.Text, {
                         className: u.cV,
                         variant: "text-lg/normal",
                         color: "text-strong",

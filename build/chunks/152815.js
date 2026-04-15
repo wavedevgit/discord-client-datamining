@@ -9,8 +9,8 @@ var r = n(158954),
     a = n(311907),
     s = n(397927),
     l = n(793574),
-    c = n(954571),
-    o = n(975571),
+    o = n(954571),
+    c = n(975571),
     d = n(597758),
     u = n(35587),
     _ = n(412260),
@@ -18,65 +18,65 @@ var r = n(158954),
     p = n(881373),
     g = n(125877),
     A = n(652215),
-    x = n(113273),
+    f = n(113273),
     h = n(985018),
-    f = n(276478);
-let b = {
+    b = n(276478);
+let x = {
         Logitech30P: {
-            title: x.default.jkdhZq,
+            title: f.default.jkdhZq,
             titleParams: {
                 discountPercent: p.aW
             },
-            body: x.default.Yl5ww1
+            body: f.default.Yl5ww1
         },
         "Logitech G": {
-            title: x.default.jkdhZq,
+            title: f.default.jkdhZq,
             titleParams: {
                 discountPercent: p.aW
             },
-            body: x.default.Yl5ww1
+            body: f.default.Yl5ww1
         },
         Logitech5PNI: {
-            title: x.default.zeBjoX,
+            title: f.default.zeBjoX,
             titleParams: {
                 discountPercent: p.y$
             },
-            body: x.default.fC4abC,
+            body: f.default.fC4abC,
             bodyParams: {
                 months: 6
             }
         },
         "Logitech 5%": {
-            title: x.default.zeBjoX,
+            title: f.default.zeBjoX,
             titleParams: {
                 discountPercent: p.y$
             },
-            body: x.default.fC4abC,
+            body: f.default.fC4abC,
             bodyParams: {
                 months: 6
             }
         },
         Logitech5PGS: {
-            title: x.default.ogcfac,
+            title: f.default.ogcfac,
             titleParams: {
                 discountPercent: p.K2
             }
         }
     },
-    N = {
+    C = {
         logitech: {
-            modalTitle: x.default["2I7nK+"],
+            modalTitle: f.default["2I7nK+"],
             modalSubtitle: {
-                message: x.default.W8jOD0,
+                message: f.default.W8jOD0,
                 values: {
-                    termsUrl: o.A.getArticleURL(A.MVz.LOGITECH_PROMOTION)
+                    termsUrl: c.A.getArticleURL(A.MVz.LOGITECH_PROMOTION)
                 }
             },
             landingUrl: "https://www.logitech.com/"
         }
     },
-    C = (e, t) => {
-        let n = b[e.outboundTitle];
+    N = (e, t) => {
+        let n = x[e.outboundTitle];
         return {
             id: e.id,
             partnerId: e.partnerId ?? "",
@@ -93,7 +93,7 @@ let b = {
             partnerId: t,
             transitionState: n,
             onClose: s
-        } = e, c = N[t], [o, d] = (0, a.yK)([_.A], () => {
+        } = e, o = C[t], [c, d] = (0, a.yK)([_.A], () => {
             let {
                 recurring: e,
                 oneTime: n
@@ -104,26 +104,26 @@ let b = {
             claimedOutboundPromotionCodeMap: A
         } = (0, u.y7)();
         if (!p) return (0, i.jsx)(r.y$y, {});
-        let b = c?.modalSubtitle != null ? h.intl.format(c.modalSubtitle.message, c.modalSubtitle.values) : void 0,
-            R = null == c ? t : h.intl.string(c.modalTitle);
+        let x = o?.modalSubtitle != null ? h.intl.format(o.modalSubtitle.message, o.modalSubtitle.values) : void 0,
+            R = null == o ? t : h.intl.string(o.modalTitle);
         return (0, i.jsx)(r.Modal, {
             title: R,
-            subtitle: b,
+            subtitle: x,
             actions: [],
             transitionState: n,
             onClose: s,
             children: (0, i.jsxs)("div", {
-                className: f.kL,
-                children: [o.length > 0 && (0, i.jsxs)(i.Fragment, {
+                className: b.kL,
+                children: [c.length > 0 && (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(r.EYj, {
                         variant: "text-md/medium",
                         color: "text-subtle",
-                        children: h.intl.string(x.default["9Y2p6p"])
+                        children: h.intl.string(f.default["9Y2p6p"])
                     }), (0, i.jsx)("div", {
-                        className: f.kR,
-                        children: o.map(e => (0, i.jsx)(m.wx, {
+                        className: b.kR,
+                        children: c.map(e => (0, i.jsx)(m.wx, {
                             recurrence: {
-                                ...C(e, A[e.id] ?? null),
+                                ...N(e, A[e.id] ?? null),
                                 asset: m.oL[e.partnerId ?? ""]?.asset ?? ""
                             },
                             showPartnerImage: !0,
@@ -132,15 +132,15 @@ let b = {
                         }, e.id))
                     })]
                 }), d.length > 0 && (0, i.jsxs)("div", {
-                    className: f.E7,
+                    className: b.E7,
                     children: [(0, i.jsx)(r.EYj, {
                         variant: "text-md/medium",
                         color: "text-subtle",
-                        children: h.intl.string(x.default.Wm58LR)
+                        children: h.intl.string(f.default.Wm58LR)
                     }), (0, i.jsx)("div", {
-                        className: f.kR,
+                        className: b.kR,
                         children: d.map(e => (0, i.jsx)(g.$, {
-                            promotion: C(e, A[e.id] ?? null),
+                            promotion: N(e, A[e.id] ?? null),
                             analyticsLocations: [l.A.THIRD_PARTY_PROMOTIONS_MODAL]
                         }, e.id))
                     })]
@@ -152,7 +152,7 @@ let b = {
         let {
             partnerId: t
         } = e;
-        c.default.track(A.HAw.THIRD_PARTY_PROMOTION_MODAL_OPENED, {
+        o.default.track(A.HAw.THIRD_PARTY_PROMOTION_MODAL_OPENED, {
             partner_id: t
         }), d.Ay.fetchActivePromotions(), (0, s.mMO)(async () => {
             let {

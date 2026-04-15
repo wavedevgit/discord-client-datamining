@@ -26,8 +26,8 @@ var i = n(627968),
     S = n(540999),
     I = n(580745),
     T = n(661191),
-    v = n(141468),
-    N = n(501255),
+    v = n(521427),
+    N = n(141468),
     y = n(375901),
     b = n(143413),
     j = n(763754),
@@ -121,7 +121,7 @@ function X(e) {
         viewingChannelId: x
     } = e, I = n.type === Y.lAJ.REPLY ? n.messageReference : void 0, {
         onFocus: T,
-        ...N
+        ...v
     } = (0, c.rm)(e.id ?? ""), {
         isFocused: y,
         handleFocus: R,
@@ -164,14 +164,14 @@ function X(e) {
             "aria-label": J.intl.string(J.t.k5WiPf),
             children: J.intl.string(J.t.k5WiPf)
         }), (0, i.jsx)(M.A, {
-            ...N,
+            ...v,
             id: t,
             compact: m,
             className: s()(A, {
                 [q.iU]: !0,
                 [q.HJ]: !m,
                 [q.mK]: n.mentioned,
-                [q.M1]: (0, v.ec)(n),
+                [q.M1]: (0, N.ec)(n),
                 [q.H4]: (0, b.A)(n),
                 [q._A]: n.id === _ || n.type === Y.lAJ.REPLY,
                 [q.wH]: el
@@ -316,7 +316,7 @@ let Q = l.memo(function(e) {
         }),
         eW = l.useRef(window),
         eK = null != eB,
-        ez = (0, N.Nd)(y.guild_id, y, "ChatMessage");
+        ez = (0, v.Nd)(y.guild_id, y, "ChatMessage");
     n = r.type === Y.lAJ.CUSTOM_GIFT ? "" : !eI && eK ? (0, G.A)(e, eM) : (0, B.A)(e, eM, eI);
     let eY = r.id === ee,
         eJ = (0, i.jsx)(u.vN3, {
@@ -348,7 +348,7 @@ let Q = l.memo(function(e) {
                         [q.iU]: !0,
                         [q.HJ]: !Z,
                         [q.mK]: r.mentioned,
-                        [q.M1]: (0, v.ec)(r),
+                        [q.M1]: (0, N.ec)(r),
                         [q.SH]: r.type === Y.lAJ.NITRO_NOTIFICATION,
                         [q.Sg]: r.hasFlag(Y.pr7.IS_GUILD_OFFICIAL) && ez,
                         [q.H4]: (0, b.A)(r),

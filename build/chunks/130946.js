@@ -8,8 +8,8 @@ n(64700);
 var a = n(503698),
     s = n.n(a),
     l = n(421380),
-    c = n(397927),
-    o = n(736653),
+    o = n(397927),
+    c = n(736653),
     d = n(793574),
     u = n(311364),
     _ = n(975571),
@@ -17,17 +17,17 @@ var a = n(503698),
     p = n(396375),
     g = n(788868),
     A = n(652215),
-    x = n(985018),
+    f = n(985018),
     h = n(488149),
-    f = n(137815),
-    b = n(967521),
-    N = n(767032),
-    C = n(990521),
+    b = n(137815),
+    x = n(967521),
+    C = n(767032),
+    N = n(990521),
     R = ((i = {}).SUBSCRIBER_HOME = "SUBSCRIBER_HOME", i.NITRO_SETTINGS = "SETTINGS", i.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", i);
 let v = function(e) {
     let {
         variant: t
-    } = e, n = (0, m.cg)(), i = (0, o.Ay)(), a = (0, c.Mwr)(i) ? l.XD.BRAND_INVERTED : l.XD.BRAND;
+    } = e, n = (0, m.cg)(), i = (0, c.Ay)(), a = (0, o.Mwr)(i) ? l.XD.BRAND_INVERTED : l.XD.BRAND;
     return n ? "APPLICATION_NITRO_HOME" === t ? (0, r.jsx)(() => (0, r.jsx)(u.Y, {
         newLocations: [d.A.PREMIUM_MARKETING_PAGE_BANNER],
         children: (0, r.jsxs)("div", {
@@ -39,28 +39,28 @@ let v = function(e) {
                 })
             }), (0, r.jsx)("div", {
                 className: s()(h.Fg, h.cj),
-                children: (0, r.jsx)(c.Text, {
+                children: (0, r.jsx)(o.Text, {
                     variant: "eyebrow",
                     color: "always-white",
-                    children: x.intl.string(x.t.OS9KPu)
+                    children: f.intl.string(f.t.OS9KPu)
                 })
             }), (0, r.jsxs)("div", {
                 className: h.IH,
-                children: [(0, r.jsx)(c.Heading, {
+                children: [(0, r.jsx)(o.Heading, {
                     className: h.U_,
                     variant: "heading-xxl/extrabold",
                     color: "text-strong",
-                    children: x.intl.string(x.t["+5UxML"])
-                }), (0, r.jsx)(c.Text, {
+                    children: f.intl.string(f.t["+5UxML"])
+                }), (0, r.jsx)(o.Text, {
                     className: h._M,
                     variant: "text-md/medium",
                     color: "text-subtle",
-                    children: x.intl.format(x.t["lVOH/p"], {
+                    children: f.intl.format(f.t["lVOH/p"], {
                         helpCenterLink: _.A.getArticleURL(A.MVz.SUMMER_BOGO_2025)
                     })
                 }), (0, r.jsx)(p.A, {
                     textOptions: {
-                        textOverride: x.intl.string(x.t.J61px0),
+                        textOverride: f.intl.string(f.t.J61px0),
                         textClassName: h.cZ
                     },
                     subscriptionTier: g.pe.TIER_2,
@@ -72,7 +72,7 @@ let v = function(e) {
                 className: h.ZS,
                 children: (0, r.jsx)("img", {
                     alt: "",
-                    src: b.A,
+                    src: x.A,
                     className: h.F$
                 })
             })]
@@ -85,26 +85,26 @@ let v = function(e) {
                 className: h.V9,
                 children: (0, r.jsx)("img", {
                     alt: "",
-                    src: N.A,
+                    src: C.A,
                     className: h.$V
                 })
             }), (0, r.jsxs)("div", {
                 className: h.l$,
-                children: [(0, r.jsx)(c.Heading, {
+                children: [(0, r.jsx)(o.Heading, {
                     className: h.U_,
                     variant: "heading-lg/extrabold",
                     color: "text-strong",
-                    children: x.intl.string(x.t["+5UxML"])
-                }), (0, r.jsx)(c.Text, {
+                    children: f.intl.string(f.t["+5UxML"])
+                }), (0, r.jsx)(o.Text, {
                     className: h._M,
                     variant: "text-sm/medium",
                     color: "text-subtle",
-                    children: x.intl.format(x.t["lVOH/p"], {
+                    children: f.intl.format(f.t["lVOH/p"], {
                         helpCenterLink: _.A.getArticleURL(A.MVz.SUMMER_BOGO_2025)
                     })
                 }), (0, r.jsx)(p.A, {
                     textOptions: {
-                        textOverride: x.intl.string(x.t.J61px0),
+                        textOverride: f.intl.string(f.t.J61px0),
                         textClassName: h.cZ
                     },
                     subscriptionTier: g.pe.TIER_2,
@@ -116,7 +116,7 @@ let v = function(e) {
                 className: h.m0,
                 children: (0, r.jsx)("img", {
                     alt: "",
-                    src: C.A,
+                    src: N.A,
                     className: h.$V
                 })
             })]
@@ -127,21 +127,21 @@ let v = function(e) {
             className: h.yk,
             children: (0, r.jsx)("img", {
                 alt: "",
-                src: f.A,
+                src: b.A,
                 className: h.$V
             })
         }), (0, r.jsxs)("div", {
             className: h.Ep,
-            children: [(0, r.jsx)(c.Heading, {
+            children: [(0, r.jsx)(o.Heading, {
                 className: h.U_,
                 variant: "heading-md/extrabold",
                 color: "text-strong",
-                children: x.intl.string(x.t["+5UxML"])
-            }), (0, r.jsx)(c.Text, {
+                children: f.intl.string(f.t["+5UxML"])
+            }), (0, r.jsx)(o.Text, {
                 className: h._M,
                 variant: "text-sm/medium",
                 color: "text-subtle",
-                children: x.intl.format(x.t["lVOH/p"], {
+                children: f.intl.format(f.t["lVOH/p"], {
                     helpCenterLink: _.A.getArticleURL(A.MVz.SUMMER_BOGO_2025)
                 })
             })]

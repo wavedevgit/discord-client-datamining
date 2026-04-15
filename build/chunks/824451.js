@@ -107,7 +107,8 @@ function I(e) {
             defaultColor: f.aj,
             colors: A._tK,
             value: t,
-            onChange: n
+            onChange: n,
+            allowBlackCustomColor: !0
         })]
     })
 }

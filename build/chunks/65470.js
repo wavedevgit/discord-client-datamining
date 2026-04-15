@@ -1,6 +1,6 @@
 /** chunk id: 65470 params = (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => o
 });
 var i = n(627968);
 n(64700);
@@ -8,12 +8,12 @@ var r = n(732955),
     a = n(397927),
     s = n(194509),
     l = n(783420);
-let c = e => {
+let o = e => {
     let {
         subscriptionTier: t,
         premiumModalAnalyticsLocation: n,
-        giftMessage: c,
-        onClick: o,
+        giftMessage: o,
+        onClick: c,
         buttonTextOverride: d,
         ...u
     } = e;
@@ -21,8 +21,8 @@ let c = e => {
         isGift: !0,
         subscriptionTier: t,
         premiumModalAnalyticsLocation: n,
-        giftMessage: c,
-        onClick: o,
+        giftMessage: o,
+        onClick: c,
         children: e => {
             let {
                 onClick: n

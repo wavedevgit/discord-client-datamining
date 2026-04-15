@@ -6,7 +6,7 @@ var r = n(627968),
     l = n(64700),
     a = n(503698),
     i = n.n(a),
-    s = n(445887),
+    s = n(407045),
     u = n(311907),
     o = n(876230),
     c = n(649658),
@@ -97,7 +97,7 @@ let w = {
         l.useLayoutEffect(() => {
             eq.current = performance.now()
         }, []);
-        let [e0, e1] = l.useState(K), [e6, e2] = l.useState(X), [e9, e4] = l.useState(!1), [e8, e7] = l.useState(!1), [e3, e5] = l.useState(!1), te = (0, u.bG)([f.A], () => f.A.useReducedMotion), tt = (0, l.useRef)(null), tn = (0, l.useRef)(null), tr = l.useRef(!0), [tl, ta] = l.useState(null), ti = l.useCallback((e, t) => {
+        let [e0, e1] = l.useState(K), [e6, e2] = l.useState(X), [e9, e4] = l.useState(!1), [e7, e8] = l.useState(!1), [e3, e5] = l.useState(!1), te = (0, u.bG)([f.A], () => f.A.useReducedMotion), tt = (0, l.useRef)(null), tn = (0, l.useRef)(null), tr = l.useRef(!0), [tl, ta] = l.useState(null), ti = l.useCallback((e, t) => {
             B?.(e, t)
         }, [B]), {
             isHlsActive: ts
@@ -263,11 +263,11 @@ let w = {
                 config: w
             }));
         l.useEffect(() => (tG({
-            captionHeightSpring: e8 && null != tu ? tB.current?.clientHeight ?? 0 : 0,
+            captionHeightSpring: e7 && null != tu ? tB.current?.clientHeight ?? 0 : 0,
             immediate: te
         }), () => {
             tU.stop()
-        }), [e8, tG, te, tu, tU]), l.useEffect(() => (tI({
+        }), [e7, tG, te, tu, tU]), l.useEffect(() => (tI({
             controlBarAnimSpring: tC || eK ? 1 : 0,
             immediate: te
         }), () => {
@@ -474,7 +474,7 @@ let w = {
                     }) : (0, r.jsx)(d.E$n, {
                         className: R.PK
                     })
-                }, eN), e8 && null != tu && !t$ && (0, r.jsx)(s.animated.div, {
+                }, eN), e7 && null != tu && !t$ && (0, r.jsx)(s.animated.div, {
                     className: R.o$,
                     ref: tB,
                     "data-testid": "discord-web-video-player-captions",
@@ -567,14 +567,14 @@ let w = {
                             volume: e0,
                             muted: e6,
                             transcriptEnabled: e9,
-                            captionEnabled: e8,
+                            captionEnabled: e7,
                             fullScreenEnabled: e3,
                             handlePlaybackBtnClick: tL,
                             handleTranscriptBtnClick: () => {
                                 e4(!e9)
                             },
                             handleCaptionBtnClick: () => {
-                                e7(!e8)
+                                e8(!e7)
                             },
                             handleFullScreenBtnClick: () => {
                                 let e = !e3,

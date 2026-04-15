@@ -1,13 +1,13 @@
 /** chunk id: 508480 params = (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => o
 });
 var i = n(627968),
     r = n(417597),
     a = n(775602),
     s = n(307973),
     l = n(674247);
-let c = () => {
+let o = () => {
     let e = (0, r.bG)([a.A], () => a.A.useReducedMotion);
     return (0, i.jsx)(s.A, {
         isMotionReduced: e,

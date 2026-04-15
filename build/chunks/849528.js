@@ -14,9 +14,9 @@ function l() {
     if (null == e || null == t || null == n) return null;
     let i = r()(),
         l = r()(n),
-        c = e.status === s.Wo.UPCOMING ? 0 : e.tenureReqNumMonths,
-        o = t.tenureReqNumMonths,
-        d = l.clone().add(c, "months"),
-        u = l.clone().add(o, "months").diff(d);
+        o = e.status === s.Wo.UPCOMING ? 0 : e.tenureReqNumMonths,
+        c = t.tenureReqNumMonths,
+        d = l.clone().add(o, "months"),
+        u = l.clone().add(c, "months").diff(d);
     return Math.max(0, Math.min(1, (i.diff(d) - 864e5) / u))
 }

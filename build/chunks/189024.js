@@ -7,8 +7,8 @@ var i = n(627968),
     a = n(367622),
     s = n(311907),
     l = n(582754),
-    c = n(397927),
-    o = n(157559),
+    o = n(397927),
+    c = n(157559),
     d = n(736653),
     u = n(975807),
     _ = n(793574),
@@ -16,42 +16,42 @@ var i = n(627968),
     p = n(562819),
     g = n(793943),
     A = n(259065),
-    x = n(95035),
+    f = n(95035),
     h = n(532794),
-    f = n(829219),
-    b = n(859703),
-    N = n(341915),
-    C = n(245853),
+    b = n(829219),
+    x = n(859703),
+    C = n(341915),
+    N = n(245853),
     R = n(890687),
     v = n(590202),
     E = n(976860),
-    j = n(591179),
-    I = n(462463),
-    T = n(780964),
-    y = n(358776),
-    P = n(858897),
-    S = n(166403),
-    M = n(975571),
+    I = n(591179),
+    T = n(462463),
+    j = n(780964),
+    S = n(358776),
+    M = n(858897),
+    P = n(166403),
+    y = n(975571),
     O = n(398523),
     D = n(881373),
     L = n(152815),
     U = n(612669),
     k = n(852218),
     B = n(161319),
-    w = n(920050),
-    G = n(9458),
-    H = n(788868),
-    V = n(88001),
-    F = n(652215),
-    W = n(654487),
-    z = n(113273),
-    X = n(782965),
-    Y = n(471074),
+    G = n(920050),
+    w = n(9458),
+    V = n(788868),
+    H = n(88001),
+    W = n(652215),
+    F = n(654487),
+    Y = n(113273),
+    z = n(782965),
+    X = n(471074),
     K = n(985018),
     q = n(547807),
     Z = n(998663),
-    Q = n(817577),
-    $ = n(419455),
+    $ = n(817577),
+    Q = n(419455),
     J = n(716925),
     ee = n(288604),
     et = n(223157),
@@ -64,56 +64,56 @@ var i = n(627968),
 function el() {
     let {
         analyticsLocations: e
-    } = (0, m.Ay)(_.A.PREMIUM_MARKETING_PERK_CARD), t = (0, j.X)("useWhatsNewPerkCards"), el = (0, d.Ay)(), ec = (0, U.O9)(), eo = (0, D.YS)({
+    } = (0, m.Ay)(_.A.PREMIUM_MARKETING_PERK_CARD), t = (0, I.X)("useWhatsNewPerkCards"), el = (0, d.Ay)(), eo = (0, U.O9)(), ec = (0, D.YS)({
         location: "useWhatsNewPerkCards"
     }).functionalityEnabled, ed = O.A.useConfig({
         location: "PremiumWhatsNewSection"
-    }).enabled, eu = (0, s.bG)([S.A], () => S.A.getPremiumTypeSubscription()), e_ = eu?.hasActiveTrial ?? !1, em = (0, s.bG)([b.A], () => [...b.A.quests.values()].find(e => e.config.features.includes(W.Li.NITRO_CONTROL_CTA)) ?? null), ep = (0, I.A)({
+    }).enabled, eu = (0, s.bG)([P.A], () => P.A.getPremiumTypeSubscription()), e_ = eu?.hasActiveTrial ?? !1, em = (0, s.bG)([x.A], () => [...x.A.quests.values()].find(e => e.config.features.includes(F.Li.NITRO_CONTROL_CTA)) ?? null), ep = (0, T.A)({
         analyticsLocations: e
     }), {
         launchInGameActivity: eg
     } = (0, R.zW)(em), eA = (0, r.useCallback)(() => {
-        (0, P.openUserSettings)(T.X.PROFILE_PANEL, {
+        (0, M.openUserSettings)(j.X.PROFILE_PANEL, {
             analyticsLocations: e
         }, () => (0, A.L)({
             analyticsLocations: e
         }))
-    }, [e]), ex = (0, r.useCallback)(() => {
-        (0, P.openUserSettings)(T.X.PROFILE_PANEL, {
+    }, [e]), ef = (0, r.useCallback)(() => {
+        (0, M.openUserSettings)(j.X.PROFILE_PANEL, {
             analyticsLocations: e
         }, () => (0, p.L)({
             analyticsLocations: e
         }))
     }, [e]), eh = (0, r.useCallback)(() => {
-        let e = (0, y.Ci)("openCustomAppSettings") ? T.X.DISPLAY_IN_APP_ICON_CATEGORY : T.X.APPEARANCE_IN_APP_ICON;
-        (0, P.openUserSettings)(e)
-    }, []), ef = (0, r.useCallback)(() => {
-        null != em && (em.userStatus?.enrolledAt == null ? (0, f.Oy)(em.id, {
-            questContent: N.uF.NITRO_HOME_PERK_CARD,
+        let e = (0, S.Ci)("openCustomAppSettings") ? j.X.DISPLAY_IN_APP_ICON_CATEGORY : j.X.APPEARANCE_IN_APP_ICON;
+        (0, M.openUserSettings)(e)
+    }, []), eb = (0, r.useCallback)(() => {
+        null != em && (em.userStatus?.enrolledAt == null ? (0, b.Oy)(em.id, {
+            questContent: C.uF.NITRO_HOME_PERK_CARD,
             questContentCTA: v.Cy.START_QUEST,
-            sourceQuestContent: N.uF.NITRO_HOME_PERK_CARD
+            sourceQuestContent: C.uF.NITRO_HOME_PERK_CARD
         }).then(e => {
             switch (e.type) {
-                case f.WM.SUCCESS:
+                case b.WM.SUCCESS:
                     eg();
                     break;
-                case f.WM.CAPTCHA_FAILED:
-                    o.A.show({
+                case b.WM.CAPTCHA_FAILED:
+                    c.A.show({
                         title: K.intl.string(K.t["/CidxO"]),
                         body: K.intl.string(K.t.HQdHg6)
                     });
                     break;
-                case f.WM.UNKNOWN_ERROR:
-                    o.A.show({
+                case b.WM.UNKNOWN_ERROR:
+                    c.A.show({
                         title: K.intl.string(K.t.R0RpRX),
                         body: K.intl.string(K.t.OXD41D)
                     })
             }
         }) : eg())
-    }, [em, eg]), eb = () => {
-        (0, u.A)(V.TE)
-    }, eN = (0, r.useCallback)(() => {
-        e_ ? (0, c.mMO)(async () => {
+    }, [em, eg]), ex = () => {
+        (0, u.A)(H.TE)
+    }, eC = (0, r.useCallback)(() => {
+        e_ ? (0, o.mMO)(async () => {
             let {
                 default: e
             } = await n.e("99709").then(n.bind(n, 516044));
@@ -121,16 +121,16 @@ function el() {
                 ...t
             })
         }) : (0, h.A)({
-            subscriptionTier: H.pe.TIER_2,
-            initialPlanId: H.gD.PREMIUM_GROUP_MONTH,
+            subscriptionTier: V.pe.TIER_2,
+            initialPlanId: V.gD.PREMIUM_GROUP_MONTH,
             analyticsLocations: e
         })
-    }, [e, e_]), eC = (0, G.A)(e), {
+    }, [e, e_]), eN = (0, w.A)(e), {
         shouldShowBonusOrbsUX: eR,
         multiplier: ev
-    } = (0, C.Dl)(W.rE.NITRO_HOME_MARKETING), {
+    } = (0, N.Dl)(F.rE.NITRO_HOME_MARKETING), {
         currentDate: eE,
-        nDaysInMonth: ej
+        nDaysInMonth: eI
     } = (0, r.useMemo)(() => {
         let e = new Date;
         return {
@@ -143,24 +143,24 @@ function el() {
         if (null != em) {
             let e = em.userStatus?.completedAt != null;
             n = {
-                id: w.NITRO_CONTROL_QUEST_CARD_ID,
-                title: K.intl.string(e ? Y.default.S4okiP : Y.default.lvidGa),
-                description: K.intl.string(e ? Y.default.JXidUB : Y.default["VghrI/"]),
-                pillText: K.intl.string(Y.default["3rpSiP"]),
+                id: G.NITRO_CONTROL_QUEST_CARD_ID,
+                title: K.intl.string(e ? X.default.S4okiP : X.default.lvidGa),
+                description: K.intl.string(e ? X.default.JXidUB : X.default["VghrI/"]),
+                pillText: K.intl.string(X.default["3rpSiP"]),
                 primaryAsset: (0, l.Mw)(el) ? ea.A : er.A,
-                ctaText: K.intl.string(e ? Y.default.QBfwzW : Y.default["1Ng1ci"]),
-                onCtaClick: ef
+                ctaText: K.intl.string(e ? X.default.QBfwzW : X.default["1Ng1ci"]),
+                onCtaClick: eb
             }
         }
-        let r = [n, eo ? {
-                id: w.LOGITECH_3PP_CARD_ID,
-                title: K.intl.string(z.default.OlObRa),
-                description: K.intl.format(z.default["/UNTlE"], {
+        let r = [n, ec ? {
+                id: G.LOGITECH_3PP_CARD_ID,
+                title: K.intl.string(Y.default.OlObRa),
+                description: K.intl.format(Y.default["/UNTlE"], {
                     discountPercent: D.aW,
-                    termsUrl: M.A.getArticleURL(F.MVz.LOGITECH_PROMOTION)
+                    termsUrl: y.A.getArticleURL(W.MVz.LOGITECH_PROMOTION)
                 }),
                 subscriptionRequired: !0,
-                progress: eE.getDate() / ej,
+                progress: eE.getDate() / eI,
                 ctaText: K.intl.string(K.t.w7s5Qr),
                 onCtaClick: () => (0, L.P)({
                     partnerId: k.XY
@@ -172,29 +172,29 @@ function el() {
                     src: et.A,
                     alt: "Logitech"
                 })
-            } : null, ec ? {
-                id: w.PREMIUM_GROUP_CARD_ID,
-                title: K.intl.string(X.default.YkvksF),
+            } : null, eo ? {
+                id: G.PREMIUM_GROUP_CARD_ID,
+                title: K.intl.string(z.default.YkvksF),
                 description: (0, i.jsxs)(i.Fragment, {
-                    children: [K.intl.formatToPlainString(X.default.JlyGQj, {
-                        totalSeats: V.aw,
-                        premiumGroupProductName: (0, V.DP)()
+                    children: [K.intl.formatToPlainString(z.default.JlyGQj, {
+                        totalSeats: H.aw,
+                        premiumGroupProductName: (0, H.DP)()
                     }), (0, i.jsx)("div", {
                         className: q.LF,
-                        children: (0, i.jsx)(x.A, {
-                            onClick: eb,
-                            children: K.intl.string(X.default.yYyGJH)
+                        children: (0, i.jsx)(f.A, {
+                            onClick: ex,
+                            children: K.intl.string(z.default.yYyGJH)
                         })
                     })]
                 }),
                 pillText: K.intl.string(K.t.oW0eUd),
-                primaryAsset: Q,
-                ctaIcon: c.tvc,
+                primaryAsset: $,
+                ctaIcon: o.tvc,
                 ctaIconPosition: "start",
                 ctaText: K.intl.string(K.t.IJI7yk),
-                onCtaClick: eN
+                onCtaClick: eC
             } : null, ed ? {
-                id: w.RECURRING_3P_PROMOTIONS_CARD_ID,
+                id: G.RECURRING_3P_PROMOTIONS_CARD_ID,
                 title: K.intl.string(K.t.m7PucM),
                 description: K.intl.format(K.t.zh1X7u, {}),
                 subscriptionRequired: !0,
@@ -204,7 +204,7 @@ function el() {
                     alt: "SteelSeries"
                 }),
                 backgroundAssetUrl: ei.A,
-                progress: eE.getDate() / ej,
+                progress: eE.getDate() / eI,
                 ctaText: K.intl.string(K.t.w7s5Qr),
                 onCtaClick: () => (0, B.u)({
                     analyticsLocations: e,
@@ -212,7 +212,7 @@ function el() {
                 }),
                 blurTint: "#2E213D"
             } : null, eR ? {
-                id: w.QUEST_ORB_MULTIPLIER_CARD_ID,
+                id: G.QUEST_ORB_MULTIPLIER_CARD_ID,
                 title: K.intl.string(K.t.F2MShO),
                 description: K.intl.format(K.t.NpUfej, {
                     bonusOrbMultiplier: ev
@@ -220,18 +220,18 @@ function el() {
                 pillText: K.intl.string(K.t.oW0eUd),
                 primaryAsset: J.A,
                 ctaText: K.intl.string(K.t.jVcuVY),
-                onCtaClick: () => (0, E.pX)(F.BVt.QUEST_HOME),
+                onCtaClick: () => (0, E.pX)(W.BVt.QUEST_HOME),
                 primaryAssetClassName: q.Nf
             } : null, {
-                id: w.DISPLAY_NAME_STYLES_CARD_ID,
+                id: G.DISPLAY_NAME_STYLES_CARD_ID,
                 title: K.intl.string(K.t.OLtTrt),
                 description: K.intl.string(K.t["di/pXR"]),
                 onCtaClick: t ? ep : eA,
                 ctaText: K.intl.string(K.t.jVcuVY),
-                primaryAsset: $.A,
+                primaryAsset: Q.A,
                 pillText: K.intl.string(K.t.y2b7CA)
             }, {
-                id: w.CLIENT_THEMES_CARD_ID,
+                id: G.CLIENT_THEMES_CARD_ID,
                 title: K.intl.string(K.t.acc6h6),
                 description: K.intl.formatToPlainString(K.t.WQazjs, {
                     themeCount: 20
@@ -242,7 +242,7 @@ function el() {
                     (0, g.nf)(g.HP.CUSTOM_THEME)
                 }
             }, {
-                id: w.PERMADECOS_CARD_ID,
+                id: G.PERMADECOS_CARD_ID,
                 title: K.intl.string(K.t.L14NZN),
                 description: K.intl.string(K.t.eCZkAI),
                 primaryAsset: (0, i.jsx)(a.u7P, {
@@ -250,9 +250,9 @@ function el() {
                     ariaHidden: !0
                 }),
                 ctaText: K.intl.string(K.t.jVcuVY),
-                onCtaClick: t ? ep : ex
+                onCtaClick: t ? ep : ef
             }, {
-                id: w.CUSTOM_APP_ICONS_CARD_ID,
+                id: G.CUSTOM_APP_ICONS_CARD_ID,
                 title: K.intl.string(K.t["GU+wqh"]),
                 description: K.intl.string(K.t["1uPk1Z"]),
                 primaryAsset: ee.A,
@@ -260,7 +260,7 @@ function el() {
                 onCtaClick: eh
             }],
             s = (r = r.filter(e => null != e))[0].featured,
-            o = s ? 5 : 6;
-        return r.splice(+!!s, 0, eC), r.length > o && r.splice(o, r.length - o), r
-    }, [eC, em, el, ef, ec, ed, eR, ev, ej, eE, e, eA, eh, ex, eN, ep, t, eo])
+            c = s ? 5 : 6;
+        return r.splice(+!!s, 0, eN), r.length > c && r.splice(c, r.length - c), r
+    }, [eN, em, el, eb, eo, ed, eR, ev, eI, eE, e, eA, eh, ef, eC, ep, t, ec])
 }

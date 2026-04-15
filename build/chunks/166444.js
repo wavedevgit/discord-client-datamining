@@ -17,18 +17,18 @@ var o = n(311907),
     A = n(25639),
     h = n(186369),
     f = n(571694),
-    g = n(148719),
-    E = n(47167),
-    _ = n(970812),
+    E = n(148719),
+    _ = n(47167),
+    g = n(970812),
     m = n(713654),
     I = n(945096),
     N = n(922301),
     C = n(750112),
-    T = n(93055),
-    L = n(584682),
+    L = n(93055),
+    T = n(584682),
     x = n(598104),
-    b = n(95035),
-    S = n(71393),
+    S = n(95035),
+    b = n(71393),
     v = n(290863),
     D = n(741961),
     p = n(287809),
@@ -111,14 +111,14 @@ let B = l.memo(function(e) {
             locked: a,
             hasActiveThreads: s,
             hasUsersInVoiceChannel: u
-        } = e, f = (0, o.bG)([S.A], () => S.A.getGuild(l.guild_id), [l.guild_id]), E = l.type === O.rbe.DM || l.type === O.rbe.GROUP_DM, I = (0, T.DZ)(), N = I && E, {
+        } = e, f = (0, o.bG)([b.A], () => b.A.getGuild(l.guild_id), [l.guild_id]), _ = l.type === O.rbe.DM || l.type === O.rbe.GROUP_DM, I = (0, L.DZ)(), N = I && _, {
             enableWaveformIcon: C
-        } = (0, h.b)(l.guild_id, "ChannelItemIcon"), L = (0, o.bG)([A.A], () => A.A.getAnimationStyle(l.id), [l.id]), x = l.type === O.rbe.GUILD_VOICE, b = null;
-        if (C && x && !a && u) b = (0, i.jsx)(_.A, {
+        } = (0, h.b)(l.guild_id, "ChannelItemIcon"), T = (0, o.bG)([A.A], () => A.A.getAnimationStyle(l.id), [l.id]), x = l.type === O.rbe.GUILD_VOICE, S = null;
+        if (C && x && !a && u) S = (0, i.jsx)(g.A, {
             color: "currentColor",
             className: r()(M.Kk, t),
-            animationStyle: L,
-            locked: (0, g.A)(l)
+            animationStyle: T,
+            locked: (0, E.A)(l)
         });
         else {
             let e = function(e, t, n, l, a) {
@@ -155,7 +155,7 @@ let B = l.memo(function(e) {
                 hasActiveThreads: s
             }, N, N);
             if (null == e) return null;
-            b = (0, i.jsx)(e, {
+            S = (0, i.jsx)(e, {
                 color: "currentColor",
                 className: r()(M.Kk, t)
             })
@@ -171,8 +171,8 @@ let B = l.memo(function(e) {
                 className: r()(M.zc, n),
                 children: I ? (0, i.jsx)("div", {
                     className: M.QO,
-                    children: b
-                }) : b
+                    children: S
+                }) : S
             })
         })
     }),
@@ -184,15 +184,15 @@ let B = l.memo(function(e) {
             selected: A,
             connected: h,
             unread: f,
-            locked: g,
-            hasActiveThreads: _,
+            locked: E,
+            hasActiveThreads: g,
             onClick: m,
             onMouseDown: I,
             onMouseUp: N,
             onContextMenu: C,
-            connectDragPreview: T,
+            connectDragPreview: L,
             className: x,
-            iconClassName: S,
+            iconClassName: b,
             subtitle: v,
             subtitleColor: D,
             channel: {
@@ -205,21 +205,21 @@ let B = l.memo(function(e) {
             guild: H,
             channelTypeOverride: K,
             forceInteractable: J,
-            mentionCount: Z,
-            resolvedUnreadSetting: V,
+            mentionCount: V,
+            resolvedUnreadSetting: Z,
             isFavoriteSuggestion: Y,
             hasActiveEvent: $ = !1,
             transitionExtras: q
-        } = e, X = V === P.e.ALL_MESSAGES || null != Z && Z > 0, Q = (0, o.bG)([y.A], () => Object.values(y.A.getVoiceStatesForChannel(n.id)).length > 0, [n.id]), {
+        } = e, X = Z === P.e.ALL_MESSAGES || null != V && V > 0, Q = (0, o.bG)([y.A], () => Object.values(y.A.getVoiceStatesForChannel(n.id)).length > 0, [n.id]), {
             role: ee,
             ...et
-        } = (0, s.rm)(n.id), en = l.useRef(null), ei = l.useRef(null), el = (0, L.A)(n);
+        } = (0, s.rm)(n.id), en = l.useRef(null), ei = l.useRef(null), el = (0, T.A)(n);
         null != el && j.A.getConfig({
             guildId: el,
             location: "channel_item"
         });
         let ea = O.BVt.CHANNEL(el, n.id),
-            er = (0, E.Ay)(n),
+            er = (0, _.Ay)(n),
             es = n.isGuildVocal(),
             eo = null != m || null != N || null != I || J,
             eu = (0, i.jsx)("div", {
@@ -227,7 +227,7 @@ let B = l.memo(function(e) {
                     [M.ow]: Y
                 }),
                 ref: ei,
-                children: (0, i.jsxs)(b.A, {
+                children: (0, i.jsxs)(S.A, {
                     role: es && !h ? "button" : "link",
                     href: es ? void 0 : ea,
                     target: "_blank",
@@ -244,12 +244,12 @@ let B = l.memo(function(e) {
                     children: [(0, i.jsxs)("div", {
                         className: M.Y5,
                         children: [(0, i.jsx)(B, {
-                            className: S,
+                            className: b,
                             channel: n,
                             guild: H,
                             hasUsersInVoiceChannel: Q,
-                            hasActiveThreads: _,
-                            locked: g
+                            hasActiveThreads: g,
+                            locked: E
                         }), (0, i.jsx)(u.A, {
                             className: r()(M.UU, {
                                 [M.NW]: $
@@ -289,7 +289,7 @@ let B = l.memo(function(e) {
                 className: r()(x, eo ? M.iE : M.IA, (() => {
                     if (A) return r()(F.rM, R.SELECTED);
                     if (h) return r()(F.rM, R.CONNECTED);
-                    if (g) return R.LOCKED;
+                    if (E) return R.LOCKED;
                     if (d) return R.MUTED;
                     if (f)
                         if (X) return R.UNREAD_IMPORTANT;
@@ -320,7 +320,7 @@ let B = l.memo(function(e) {
                 onMouseLeave: U,
                 children: [d || !f ? null : (0, i.jsx)("div", {
                     className: r()(M.gy, X ? M.WS : void 0)
-                }), T?.(eu) ?? eu]
+                }), L?.(eu) ?? eu]
             })
         })
     }) : null;
