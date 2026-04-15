@@ -4,9 +4,9 @@ s.d(t, {
     A: () => P
 });
 var n = s(627968),
-    r = s(64700),
-    l = s(503698),
-    a = s.n(l),
+    l = s(64700),
+    r = s(503698),
+    a = s.n(r),
     i = s(651162),
     o = s(554146),
     c = s(397927),
@@ -38,13 +38,13 @@ let B = e => {
         let {
             handleTransition: t,
             numVisibleItems: s,
-            isFetchingCategories: l,
+            isFetchingCategories: r,
             tab: c
         } = e, {
             noCache: d,
             includeUnpublished: _
-        } = (0, E.A)(), [x, O] = r.useState(!1), y = (0, g.uM)(), B = y?.sessionId ?? "";
-        r.useEffect(() => {
+        } = (0, E.A)(), [x, O] = l.useState(!1), y = (0, g.uM)(), B = y?.sessionId ?? "";
+        l.useEffect(() => {
             (0, p.z)({
                 sessionId: B,
                 checkpoint: p.t.SHOP_MOUNTED,
@@ -65,10 +65,10 @@ let B = e => {
         }, {
             sessionId: B,
             tab: c
-        }), w = r.useCallback(() => {
+        }), w = l.useCallback(() => {
             D()
         }, [D]);
-        return (r.useEffect(() => {
+        return (l.useEffect(() => {
             null != M || P || 0 === H.length || (0, p.z)({
                 sessionId: B,
                 checkpoint: p.t.SHOP_RENDERED,
@@ -97,7 +97,7 @@ let B = e => {
                 tab: c
             })]
         }) : (0, n.jsx)(n.Fragment, {
-            children: H.map((e, r) => ((e, r, d) => {
+            children: H.map((e, l) => ((e, l, d) => {
                 if (null == e) return null;
                 let _ = null,
                     g = !1;
@@ -121,10 +121,10 @@ let B = e => {
                         let h = e.sortedSkuIds;
                         _ = (0, n.jsx)(A.A, {
                             title: c === T.G2.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
-                            isLoading: l,
+                            isLoading: r,
                             numVisibleItems: s,
                             sortedSkuIds: h,
-                            buttonContainerClassName: r?.type === i.g.IMMERSIVE_BANNER ? R.w : void 0,
+                            buttonContainerClassName: l?.type === i.g.IMMERSIVE_BANNER ? R.w : void 0,
                             prioritizeUserDiscounts: c === T.G2.HOME,
                             tab: c,
                             orbsSupportedOnly: c === T.G2.ORBS
@@ -198,18 +198,18 @@ let B = e => {
                         children: _
                     })
                 }, d)
-            })(e, r > 0 ? H[r - 1] : null, r))
+            })(e, l > 0 ? H[l - 1] : null, l))
         })
     },
     P = e => {
         let {
             handleTransition: t,
             tab: s,
-            transitionState: l
-        } = e, a = r.useRef(null), {
+            transitionState: r
+        } = e, a = l.useRef(null), {
             handleScroll: i
-        } = (0, d.X)(a, s), o = (0, x.U)(), u = (0, g.uM)(), [m, h] = r.useState(T.md), [p, f] = r.useState(!1);
-        return r.useEffect(() => {
+        } = (0, d.X)(a, s), o = (0, x.U)(), u = (0, g.uM)(), [m, h] = l.useState(T.md), [p, f] = l.useState(!1);
+        return l.useEffect(() => {
             if (null != a.current) {
                 let e = () => {
                         if (null == a.current) return;
@@ -258,7 +258,7 @@ let B = e => {
                     })]
                 }), (0, n.jsx)(O.A, {
                     peaking: p,
-                    transitioning: l === T.Pf.OUT
+                    transitioning: r === T.Pf.OUT
                 })]
             })
         })

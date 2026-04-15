@@ -5,8 +5,8 @@ s.d(t, {
 });
 var n = s(627968);
 s(64700);
-var r = s(172218),
-    l = s(397927),
+var l = s(172218),
+    r = s(397927),
     a = s(854818),
     i = s(212407),
     o = s(815280),
@@ -16,7 +16,7 @@ let u = e => {
     let {
         immersiveBannerBlock: t,
         onVisibilityChange: s
-    } = e, u = (0, r.K)(e => {
+    } = e, u = (0, l.K)(e => {
         s?.(e)
     }, .33, null != s), {
         bannerUrl: _,
@@ -40,7 +40,7 @@ let u = e => {
                 children: [null != t.endTime ? (0, n.jsx)(a.e, {
                     endDate: t.endTime,
                     size: "lg"
-                }) : null, (0, n.jsx)(l.Heading, {
+                }) : null, (0, n.jsx)(r.Heading, {
                     variant: "heading-xxl/bold",
                     className: d.DD,
                     color: "text-strong",
@@ -48,12 +48,12 @@ let u = e => {
                         ...m
                     },
                     children: t.title
-                }), h || p ? (0, n.jsxs)(l.Text, {
+                }), h || p ? (0, n.jsxs)(r.Text, {
                     variant: "text-md/medium",
                     style: {
                         ...m
                     },
-                    children: [h && t.body, h && p && " ", p && (0, n.jsx)(l.MzZ, {
+                    children: [h && t.body, h && p && " ", p && (0, n.jsx)(r.MzZ, {
                         href: t.helpCenterUrl,
                         className: d.CU,
                         style: {

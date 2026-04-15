@@ -4,9 +4,9 @@ s.d(t, {
     A: () => L
 });
 var n = s(627968),
-    r = s(64700),
-    l = s(503698),
-    a = s.n(l),
+    l = s(64700),
+    r = s(503698),
+    a = s.n(r),
     i = s(397927),
     o = s(564322),
     c = s(287344),
@@ -31,12 +31,12 @@ function L(e) {
     let {
         tab: t,
         categories: s,
-        initialCategoryId: l,
+        initialCategoryId: r,
         showFilterInitially: a = !0,
         onUnmount: u
     } = e;
     (0, g.S)();
-    let _ = r.useRef(null),
+    let _ = l.useRef(null),
         {
             handleScroll: m
         } = (0, o.X)(_, t),
@@ -45,13 +45,13 @@ function L(e) {
             setCategoryRef: f,
             handleScrollToCategory: E
         } = (0, p.k0)(_.current),
-        [b, C] = r.useState(a),
-        [A, v] = r.useState(!1);
-    return r.useEffect(() => {
-        null != l && E(l)
-    }, [l, E]), r.useEffect(() => () => {
+        [b, C] = l.useState(a),
+        [A, v] = l.useState(!1);
+    return l.useEffect(() => {
+        null != r && E(r)
+    }, [r, E]), l.useEffect(() => () => {
         null != u && u()
-    }, []), r.useEffect(() => {
+    }, []), l.useEffect(() => {
         let e = () => {
             v(window.innerWidth < 1400)
         };
@@ -81,7 +81,7 @@ function L(e) {
                     scrollerRef: _,
                     categories: s,
                     setCategoryRef: f,
-                    initialCategoryId: l
+                    initialCategoryId: r
                 })
             }), b && !A && (0, n.jsx)("div", {
                 className: I.yF
@@ -96,16 +96,16 @@ let j = e => {
     let {
         isSmallScreen: t,
         filterBarOpen: s,
-        setFilterBarOpen: l,
+        setFilterBarOpen: r,
         tab: o,
         scrollerRef: c,
         categories: d,
         setCategoryRef: p,
         initialCategoryId: L
-    } = e, j = r.useRef(null), O = (0, g.v)(e => e.hasDefaultFilters()), k = (0, _.uM)(), {
+    } = e, j = l.useRef(null), O = (0, g.v)(e => e.hasDefaultFilters()), k = (0, _.uM)(), {
         handlePageChange: T,
         currentPage: y
-    } = (0, E.Z)(c), N = r.useCallback(e => {
+    } = (0, E.Z)(c), N = l.useCallback(e => {
         u.default.track(S.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: k?.sessionId,
             page_section: k?.pageSection,
@@ -115,8 +115,8 @@ let j = e => {
             cta_name: `catalog page ${e}`,
             page_type: "catalog"
         }), T(e)
-    }, [k, T]), R = r.useRef(null);
-    return r.useEffect(() => {
+    }, [k, T]), R = l.useRef(null);
+    return l.useEffect(() => {
         if (!t || !s) return;
         let e = e => {
             let t = e.target;
@@ -128,10 +128,10 @@ let j = e => {
                 page_size: k?.pageSize,
                 cta_name: "filter bar hide outside click",
                 page_type: "catalog"
-            }), l(!1))
+            }), r(!1))
         };
         return document.addEventListener("mousedown", e), () => document.removeEventListener("mousedown", e)
-    }, [t, s, l, k]), (0, n.jsx)("div", {
+    }, [t, s, r, k]), (0, n.jsx)("div", {
         className: I.en,
         children: (0, n.jsxs)("div", {
             className: I.pf,
@@ -163,7 +163,7 @@ let j = e => {
                                     page_size: k?.pageSize,
                                     cta_name: `filter bar ${e?"show":"hide"}`,
                                     page_type: "catalog"
-                                }), l(e)
+                                }), r(e)
                             },
                             variant: "secondary",
                             text: v.intl.string(s ? v.t.fYtm6f : v.t["TeTYE+"]),

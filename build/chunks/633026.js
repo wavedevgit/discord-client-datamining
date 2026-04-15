@@ -5,8 +5,8 @@ s.d(t, {
 });
 var n = s(627968);
 s(64700);
-var r = s(503698),
-    l = s.n(r),
+var l = s(503698),
+    r = s.n(l),
     a = s(172218),
     i = s(651162),
     o = s(311907),
@@ -34,7 +34,7 @@ let x = {
         let {
             isLoading: t = !1,
             heroBlock: s,
-            tab: r,
+            tab: l,
             onVisibilityChange: i
         } = e, g = (0, a.K)(e => {
             i?.(e)
@@ -53,7 +53,7 @@ let x = {
                 ref: g,
                 className: f.os,
                 children: [(0, n.jsx)("div", {
-                    className: l()(f.vK, {
+                    className: r()(f.vK, {
                         [f.no]: L
                     }),
                     style: null != j ? {
@@ -67,7 +67,7 @@ let x = {
                 }), (0, n.jsxs)("div", {
                     className: f.xX,
                     children: [(0, n.jsx)("div", {
-                        className: l()(f.bC, {
+                        className: r()(f.bC, {
                             [f.no]: L
                         }),
                         children: t ? (0, n.jsx)("div", {
@@ -99,7 +99,7 @@ let x = {
                     }), (0, n.jsx)(p.A, {
                         isBlockLoading: t,
                         heroBlock: s,
-                        tab: r
+                        tab: l
                     })]
                 })]
             })

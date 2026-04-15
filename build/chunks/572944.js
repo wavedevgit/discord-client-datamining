@@ -1,6 +1,6 @@
 /** chunk id: 572944 params = (module,exports,require) **/
 "use strict";
 s.d(t, {
-    g: () => r
+    g: () => l
 });
-var n, r = ((n = {}).HOME = "home", n.CATALOG = "catalog", n.ORBS = "orbs", n)
+var n, l = ((n = {}).HOME = "home", n.CATALOG = "catalog", n.ORBS = "orbs", n)

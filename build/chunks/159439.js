@@ -1,8 +1,8 @@
 /** chunk id: 159439 params = (module,exports,require) **/
 "use strict";
 s.d(t, {
-    U: () => l
+    U: () => r
 });
 var n = s(311907),
-    r = s(590180);
-let l = () => (0, n.bG)([r.A], () => r.A.isFetchingCategories)
+    l = s(590180);
+let r = () => (0, n.bG)([l.A], () => l.A.isFetchingCategories)

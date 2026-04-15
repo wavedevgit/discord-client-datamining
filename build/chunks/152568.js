@@ -4,9 +4,9 @@ s.d(t, {
     A: () => I
 });
 var n = s(627968),
-    r = s(64700),
-    l = s(503698),
-    a = s.n(l),
+    l = s(64700),
+    r = s(503698),
+    a = s.n(r),
     i = s(554146),
     o = s(230109),
     c = s(397927),
@@ -29,8 +29,8 @@ let I = e => {
     let {
         wideBannerBlock: t,
         tab: s
-    } = e, l = p.A.getCategoryByStoreListingId(t.categoryStoreListingId), I = r.useRef(null), L = r.useRef(null), [j, O] = r.useState(), [k, T] = r.useState(!1);
-    r.useEffect(() => {
+    } = e, r = p.A.getCategoryByStoreListingId(t.categoryStoreListingId), I = l.useRef(null), L = l.useRef(null), [j, O] = l.useState(), [k, T] = l.useState(!1);
+    l.useEffect(() => {
         let e = L.current;
         if (null == e) return;
         let t = () => {
@@ -40,7 +40,7 @@ let I = e => {
             e.onload = null
         }
     }, []);
-    let y = l?.skuId ?? "",
+    let y = r?.skuId ?? "",
         {
             handleCardVisibilityChange: N
         } = (0, f.Z)(y, "home", "marketing wide banner"),
@@ -52,7 +52,7 @@ let I = e => {
         M = null != t.ctaRoute && "" !== t.ctaRoute,
         H = !0 !== t.disableCta && (null != t.ctaText && "" !== t.ctaText || M),
         D = null != t.logoURL && "" !== t.logoURL,
-        w = r.useCallback(() => {
+        w = l.useCallback(() => {
             if (T(!0), t.isDismissible) {
                 let e = t.dismissibleContentVersion ?? 0;
                 (0, d.$l)(i.M.COLLECTIBLES_SHOP_WIDE_BANNER, e, {
@@ -60,7 +60,7 @@ let I = e => {
                 })
             }
         }, [t.isDismissible, t.dismissibleContentVersion]),
-        F = r.useCallback(e => {
+        F = l.useCallback(e => {
             g.default.track(b.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: R?.sessionId,
                 sku_id: y,
@@ -72,7 +72,7 @@ let I = e => {
                 cta_name: e
             })
         }, [R, y, s]),
-        G = r.useCallback(function() {
+        G = l.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
             if (F(e), null != t.ctaRoute && "" !== t.ctaRoute) {
                 let e = t.ctaRoute;

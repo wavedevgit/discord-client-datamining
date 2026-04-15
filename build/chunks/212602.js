@@ -4,9 +4,9 @@ s.d(t, {
     A: () => x
 });
 var n = s(627968),
-    r = s(64700),
-    l = s(503698),
-    a = s.n(l),
+    l = s(64700),
+    r = s(503698),
+    a = s.n(r),
     i = s(401864),
     o = s(124987),
     c = s(397927),
@@ -23,7 +23,7 @@ let x = () => {
         sort: e,
         onSetSort: t,
         hasRelevanceFilters: s
-    } = (0, _.v)(), l = (0, u.uM)(), x = (0, g.yB)("CollectiblesSortSelect"), E = s(), b = r.useMemo(() => m.QB.filter(e => e.sortType !== o.$.RELEVANCE || E), [E]), C = r.useCallback(e => {
+    } = (0, _.v)(), r = (0, u.uM)(), x = (0, g.yB)("CollectiblesSortSelect"), E = s(), b = l.useMemo(() => m.QB.filter(e => e.sortType !== o.$.RELEVANCE || E), [E]), C = l.useCallback(e => {
         let {
             sortType: t,
             sortDirection: s
@@ -49,7 +49,7 @@ let x = () => {
             value: "popularity",
             id: "popularity"
         }
-    }, []), A = r.useCallback(e => ({
+    }, []), A = l.useCallback(e => ({
         recent: {
             sortType: o.$.RECENCY,
             sortDirection: i.A.DESC
@@ -70,18 +70,18 @@ let x = () => {
             sortType: o.$.RELEVANCE,
             sortDirection: i.A.DESC
         }
-    })[e], []), S = r.useCallback(e => {
+    })[e], []), S = l.useCallback(e => {
         let s = C(A(e));
         d.default.track(h.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-            collectibles_shop_session_id: l?.sessionId,
-            page_section: l?.pageSection,
-            page_category: l?.pageCategory,
-            page_index: l?.pageIndex,
-            page_size: l?.pageSize,
+            collectibles_shop_session_id: r?.sessionId,
+            page_section: r?.pageSection,
+            page_category: r?.pageCategory,
+            page_index: r?.pageIndex,
+            page_size: r?.pageSize,
             cta_name: `sort by ${s.label.toLowerCase()}`,
             page_type: "catalog"
         }), t(A(e))
-    }, [l, C, A, t]), v = C(e);
+    }, [r, C, A, t]), v = C(e);
     return (0, n.jsx)("div", {
         className: a()(f.k, {
             [g.jP]: x

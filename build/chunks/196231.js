@@ -4,8 +4,8 @@ s.d(t, {
     S: () => h
 });
 var n = s(627968),
-    r = s(64700),
-    l = s(230109),
+    l = s(64700),
+    r = s(230109),
     a = s(397927),
     i = s(954571),
     o = s(440938),
@@ -29,10 +29,10 @@ let h = e => {
             handleCardVisibilityChange: b
         } = (0, d.Z)(E, "home", "marketing featured block"),
         C = (0, u.s4)(s, h, f),
-        A = r.useRef(null),
+        A = l.useRef(null),
         S = h?.bodyText,
         v = (0, o.uM)();
-    return (0, n.jsx)(l.L, {
+    return (0, n.jsx)(r.L, {
         innerRef: A,
         onChange: b,
         threshold: 0,

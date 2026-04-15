@@ -4,9 +4,9 @@ s.d(t, {
     A: () => f
 });
 var n = s(627968),
-    r = s(64700),
-    l = s(503698),
-    a = s.n(l),
+    l = s(64700),
+    r = s(503698),
+    a = s.n(r),
     i = s(417597),
     o = s(653887),
     c = s(775602),
@@ -21,11 +21,11 @@ var n = s(627968),
 function f(e) {
     let {
         category: t
-    } = e, s = (0, i.bG)([c.A], () => c.A.useReducedMotion), l = (0, i.bG)([u.A], () => u.A.isFocused()), {
+    } = e, s = (0, i.bG)([c.A], () => c.A.useReducedMotion), r = (0, i.bG)([u.A], () => u.A.isFocused()), {
         catalogBannerStatic: _,
         catalogBannerAnimated: f,
         catalogBannerRive: x
-    } = (0, m.MV)(t), E = r.useRef(null), b = null != x;
+    } = (0, m.MV)(t), E = l.useRef(null), b = null != x;
     return (0, n.jsxs)("div", {
         ref: E,
         className: a()(p.sW, {
@@ -46,7 +46,7 @@ function f(e) {
                 className: p.ze,
                 src: _,
                 alt: t.name
-            }), null != f && !s && l && (0, n.jsx)(d.A, {
+            }), null != f && !s && r && (0, n.jsx)(d.A, {
                 src: f,
                 className: p.tr,
                 autoPlay: !0,

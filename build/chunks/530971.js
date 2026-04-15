@@ -4,8 +4,8 @@ s.d(t, {
     A: () => A
 });
 var n = s(627968),
-    r = s(64700),
-    l = s(572944),
+    l = s(64700),
+    r = s(572944),
     a = s(311907),
     i = s(775602),
     o = s(287344),
@@ -34,27 +34,27 @@ function A(e) {
     } = e, p = S();
     v(p);
     let A = (0, a.bG)([i.A], () => i.A.useReducedMotion),
-        [I, L] = r.useState(void 0),
-        [j, O] = r.useState(!0),
-        k = r.useMemo(() => s.filter(e => !b.MS.some(t => {
+        [I, L] = l.useState(void 0),
+        [j, O] = l.useState(!0),
+        k = l.useMemo(() => s.filter(e => !b.MS.some(t => {
             let {
                 categorySkuId: s
             } = t;
             return s === e.skuId
         })), [s]),
         T = (0, o.f)("CollectiblesContent"),
-        y = r.useCallback(e => {
+        y = l.useCallback(e => {
             let {
                 sourceButton: t,
                 categorySkuId: s,
                 shouldAnimate: n,
-                isInternalShopDeeplink: r,
-                isOrbsExclusive: l
+                isInternalShopDeeplink: l,
+                isOrbsExclusive: r
             } = e;
             u(t, s);
             let a = n && !A,
-                i = l ? b.G2.ORBS : b.G2.CATALOG;
-            L(s), O(!r), c(i, a)
+                i = r ? b.G2.ORBS : b.G2.CATALOG;
+            L(s), O(!l), c(i, a)
         }, [A, c, u]),
         {
             searchError: N
@@ -64,11 +64,11 @@ function A(e) {
         errorMessage: p,
         errorOrigin: h.A.SHOP_PAGE
     }) : t === b.G2.HOME && T ? (0, n.jsx)(x.A, {
-        tab: l.g.HOME,
+        tab: r.g.HOME,
         transitionState: d,
         handleTransition: y
     }) : t === b.G2.ORBS && T ? (0, n.jsx)(x.A, {
-        tab: l.g.ORBS,
+        tab: r.g.ORBS,
         transitionState: d,
         handleTransition: y
     }) : C.includes(t) ? (0, n.jsx)(f.A, {
@@ -92,7 +92,7 @@ let S = () => (0, a.bG)([u.A, _.A], () => null != u.A.error ? `shop load fetch c
                 noCache: s,
                 includeUnpublished: n
             } = (0, p.A)();
-        r.useEffect(() => {
+        l.useEffect(() => {
             null != e && d.A.captureMessage(e, {
                 tags: {
                     isStaff: t?.isStaff()?.toString() ?? "unknown",

@@ -4,9 +4,9 @@ s.d(t, {
     A: () => j
 });
 var n = s(627968),
-    r = s(64700),
-    l = s(503698),
-    a = s.n(l),
+    l = s(64700),
+    r = s(503698),
+    a = s.n(r),
     i = s(641150),
     o = s(417597),
     c = s(397927),
@@ -34,7 +34,7 @@ function j(e) {
     let {
         isFetchingCategories: t,
         scrollerRef: s,
-        tab: l
+        tab: r
     } = e, j = (0, _.uM)(), O = j?.sessionId ?? "", {
         noCache: k,
         includeUnpublished: T
@@ -45,44 +45,44 @@ function j(e) {
         isFetchingResults: M
     } = (0, f.S)(), {
         itemTypeFilters: H
-    } = (0, p.v)(), D = 1 === H.size && H.has(i.q.BUNDLE), w = (0, o.yK)([g.A], () => g.A.getProductsBySkus(R)), F = r.useCallback(() => {
+    } = (0, p.v)(), D = 1 === H.size && H.has(i.q.BUNDLE), w = (0, o.yK)([g.A], () => g.A.getProductsBySkus(R)), F = l.useCallback(() => {
         s?.current?.scrollToTop({
             animate: !0
         })
     }, [s]), G = R?.join("");
-    r.useEffect(() => {
+    l.useEffect(() => {
         F()
     }, [G, F]);
     let U = (0, h.p)(),
-        V = r.useMemo(() => U(w), [U, w]);
-    r.useEffect(() => {
+        V = l.useMemo(() => U(w), [U, w]);
+    l.useEffect(() => {
         t || (0, x.z)({
             sessionId: O,
             checkpoint: x.t.SHOP_RENDERED,
-            tab: l,
+            tab: r,
             unpublishedCategoriesShown: T,
             cacheDisabled: k
         })
-    }, [O, T, k, t, l]);
-    let W = r.useRef(null),
+    }, [O, T, k, t, r]);
+    let W = l.useRef(null),
         {
             setQueryPageSize: z,
             setQueryPageOffset: K,
             queryPageSize: Y
         } = (0, p.v)(),
-        [$, Z] = r.useState(!1),
+        [$, Z] = l.useState(!1),
         q = t || M || null == N;
-    r.useEffect(() => {
+    l.useEffect(() => {
         q ? Z(!1) : V.length > 0 && Z(!0)
     }, [q, V.length]);
     let X = Y > 0 && !q && 0 === V.length;
-    r.useEffect(() => {
+    l.useEffect(() => {
         let e = new ResizeObserver(() => {
             null == W.current || z(Math.floor(5 * getComputedStyle(W.current).gridTemplateColumns.split(/\s+/).length))
         });
         if (null != W.current) return e.observe(W.current), () => e.disconnect()
     }, [z]);
-    let J = r.useCallback(e => {
+    let J = l.useCallback(e => {
         u.default.track(v.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: j?.sessionId,
             page_section: j?.pageSection,

@@ -4,9 +4,9 @@ s.d(t, {
     A: () => T
 });
 var n = s(627968),
-    r = s(64700),
-    l = s(503698),
-    a = s.n(l),
+    l = s(64700),
+    r = s(503698),
+    a = s.n(r),
     i = s(172218),
     o = s(696292),
     c = s(651162),
@@ -42,35 +42,35 @@ let k = {
         let {
             isLoading: t,
             handleTransition: s,
-            category: l,
+            category: r,
             heroBlock: T,
             tab: y,
             onVisibilityChange: N
         } = e, R = (0, i.K)(e => {
             N?.(e)
-        }, .1, null != N), B = r.useRef(null), P = (0, A.yB)("HeroBlock"), M = (0, d.bG)([p.default], () => p.default.getCurrentUser()), H = (0, x.uM)(), {
+        }, .1, null != N), B = l.useRef(null), P = (0, A.yB)("HeroBlock"), M = (0, d.bG)([p.default], () => p.default.getCurrentUser()), H = (0, x.uM)(), {
             analyticsLocations: D
-        } = (0, g.Ay)(_.A.COLLECTIBLES_SHOP_HERO), w = r.useMemo(() => null != T ? T : null == l ? k : {
-            rankedSkuIds: l.heroRanking ?? [],
-            name: l.name,
-            unpublishedAt: l.unpublishedAt,
-            categorySkuId: l.skuId,
-            summary: l.summary,
+        } = (0, g.Ay)(_.A.COLLECTIBLES_SHOP_HERO), w = l.useMemo(() => null != T ? T : null == r ? k : {
+            rankedSkuIds: r.heroRanking ?? [],
+            name: r.name,
+            unpublishedAt: r.unpublishedAt,
+            categorySkuId: r.skuId,
+            summary: r.summary,
             type: c.g.HERO,
-            categoryStoreListingId: l.storeListingId,
-            bannerDisplayConfig: l.heroBannerDisplayConfig,
-            logoDisplayConfig: l.heroLogoDisplayConfig,
-            heroLogoUrl: l.heroLogoUrl,
-            heroBannerUrl: l.heroBannerUrl,
-            heroBannerAnimatedUrl: l.heroBannerAnimatedUrl
-        }, [T, l]), {
+            categoryStoreListingId: r.storeListingId,
+            bannerDisplayConfig: r.heroBannerDisplayConfig,
+            logoDisplayConfig: r.heroLogoDisplayConfig,
+            heroLogoUrl: r.heroLogoUrl,
+            heroBannerUrl: r.heroBannerUrl,
+            heroBannerAnimatedUrl: r.heroBannerAnimatedUrl
+        }, [T, r]), {
             bannerDisplayConfig: F,
             logoDisplayConfig: G,
             heroLogo: U,
             heroBannerStatic: V,
             heroBannerAnimated: W,
             heroBannerRive: z
-        } = (0, b.Kk)(w), K = F?.responsive ?? !1, Y = F?.backgroundStyle, $ = null != z, Z = y === I.G2.ORBS, q = null != l && l.isOrbsExclusive, X = Z ? j.intl.string(j.t["1CdL8d"]) : j.intl.string(j.t.xYKa1T), J = () => {
+        } = (0, b.Kk)(w), K = F?.responsive ?? !1, Y = F?.backgroundStyle, $ = null != z, Z = y === I.G2.ORBS, q = null != r && r.isOrbsExclusive, X = Z ? j.intl.string(j.t["1CdL8d"]) : j.intl.string(j.t.xYKa1T), J = () => {
             Z ? ((0, h.Y)({
                 pageType: L.liQ.SHOP_ORBS_TAB,
                 sectionType: L.JJy.ORBS_SHOP_HERO_BLOCK,

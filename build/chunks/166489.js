@@ -1,10 +1,10 @@
 /** chunk id: 166489 params = (module,exports,require) **/
 "use strict";
 s.d(t, {
-    A: () => r
+    A: () => l
 });
 var n = s(627968);
-let r = () => (0, n.jsx)("div", {
+let l = () => (0, n.jsx)("div", {
     style: {
         background: "linear-gradient(rgba(39, 30, 173, 0.3), transparent)",
         width: "100%",

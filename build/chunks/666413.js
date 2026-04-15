@@ -4,20 +4,20 @@ s.d(t, {
     S: () => g
 });
 var n = s(627968),
-    r = s(64700),
-    l = s(503698),
-    a = s.n(l),
+    l = s(64700),
+    r = s(503698),
+    a = s.n(r),
     i = s(407045),
     o = s(607399),
     c = s(946015),
     d = s(397927),
     u = s(854818),
     _ = s(52264);
-let g = r.memo(function(e) {
+let g = l.memo(function(e) {
     let {
         countdownTimerBlock: t,
         isVisible: s
-    } = e, r = (0, d.zhh)({
+    } = e, l = (0, d.zhh)({
         transform: `translateX(-50%) ${s?"translateY(-75%)":"translateY(0%)"}`,
         opacity: +!!s,
         config: {
@@ -29,7 +29,7 @@ let g = r.memo(function(e) {
         className: a()([_.lP, o.Fr && _.yJ]),
         role: "status",
         style: {
-            ...r,
+            ...l,
             ...null != t.bannerUrl && "" !== t.bannerUrl && {
                 backgroundImage: `url(${t.bannerUrl})`,
                 backgroundSize: "cover",

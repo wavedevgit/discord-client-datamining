@@ -5,8 +5,8 @@ s.d(t, {
 });
 var n = s(627968);
 s(64700);
-var r = s(503698),
-    l = s.n(r),
+var l = s(503698),
+    r = s.n(l),
     a = s(424918),
     i = s(793574),
     o = s(688810),
@@ -21,7 +21,7 @@ let m = e => {
             featuredBlockRecord: s
         } = e;
         return (0, n.jsx)("div", {
-            className: l()(g.n9, g.YB),
+            className: r()(g.n9, g.YB),
             children: s?.subblocks.map((e, s) => e.type === a.u.CATEGORY ? (0, n.jsx)(c.R9, {
                 newValue: {
                     categoryPosition: 1,
@@ -44,20 +44,20 @@ let m = e => {
             categories: s
         } = e;
         if (null == s || s.length < 2) return null;
-        let [r, a] = s;
+        let [l, a] = s;
         return (0, n.jsx)("div", {
-            className: l()(g.n9, g.YB),
+            className: r()(g.n9, g.YB),
             children: (0, n.jsxs)(c.R9, {
                 newValue: {
                     categoryPosition: 1,
-                    pageCategory: null != r ? r.name : a?.name,
+                    pageCategory: null != l ? l.name : a?.name,
                     pageSection: "featured_block",
-                    tilePosition: +(null == r)
+                    tilePosition: +(null == l)
                 },
-                children: [null != r && (0, n.jsx)(u.S, {
-                    category: r,
+                children: [null != l && (0, n.jsx)(u.S, {
+                    category: l,
                     enablePreview: !0,
-                    badgeText: (0, d.HF)(r.unpublishedAt) ? _.intl.string(_.t["h/uBCR"]) : void 0,
+                    badgeText: (0, d.HF)(l.unpublishedAt) ? _.intl.string(_.t["h/uBCR"]) : void 0,
                     handleTransition: t
                 }), null != a && (0, n.jsx)(u.S, {
                     category: a,
@@ -71,20 +71,20 @@ let m = e => {
         let {
             isLoading: t,
             handleTransition: s,
-            categories: r,
+            categories: l,
             featuredBlockRecord: a
         } = e, {
             analyticsLocations: c
         } = (0, o.Ay)(i.A.COLLECTIBLES_SHOP_FEATURED_BLOCK);
         return t ? (0, n.jsxs)("div", {
-            className: l()(g.n9, g.YB),
+            className: r()(g.n9, g.YB),
             children: [(0, n.jsx)("div", {
-                className: l()(g.Jn, g.oT),
+                className: r()(g.Jn, g.oT),
                 children: (0, n.jsx)("div", {
                     className: g.uy
                 })
             }), (0, n.jsx)("div", {
-                className: l()(g.Jn, g.oT),
+                className: r()(g.Jn, g.oT),
                 children: (0, n.jsx)("div", {
                     className: g.uy
                 })
@@ -99,7 +99,7 @@ let m = e => {
         }) : (0, n.jsx)(o.f5, {
             value: c,
             children: (0, n.jsx)(h, {
-                categories: r,
+                categories: l,
                 handleTransition: s,
                 isLoading: !1
             })

@@ -4,8 +4,8 @@ s.d(t, {
     A: () => v
 });
 var n = s(627968),
-    r = s(64700),
-    l = s(172218),
+    l = s(64700),
+    r = s(172218),
     a = s(417597),
     i = s(397927),
     o = s(287809),
@@ -26,10 +26,10 @@ var n = s(627968),
 function A(e) {
     let {
         category: t
-    } = e, s = (0, a.bG)([o.default], () => o.default.getCurrentUser()), r = (0, _.X)(t.products), l = (0, u.p)()(r), i = (0, d.W)("CollectiblesCatalogContent");
-    return null == s || 0 === l.length ? null : (0, n.jsx)("div", {
+    } = e, s = (0, a.bG)([o.default], () => o.default.getCurrentUser()), l = (0, _.X)(t.products), r = (0, u.p)()(l), i = (0, d.W)("CollectiblesCatalogContent");
+    return null == s || 0 === r.length ? null : (0, n.jsx)("div", {
         className: C.vY,
-        children: l.map((e, t) => (0, n.jsx)(c.R9, {
+        children: r.map((e, t) => (0, n.jsx)(c.R9, {
             newValue: {
                 tilePosition: t
             },
@@ -45,7 +45,7 @@ function A(e) {
 function S(e) {
     let {
         category: t
-    } = e, [s, a] = r.useState(!1), i = (0, l.K)(e => {
+    } = e, [s, a] = l.useState(!1), i = (0, r.K)(e => {
         a(e)
     }, .15);
     return (0, n.jsxs)("div", {
@@ -63,19 +63,19 @@ function v(e) {
     let {
         categories: t,
         setCategoryRef: s,
-        currentPage: l,
+        currentPage: r,
         handlePageChange: a,
         initialCategoryId: o
     } = e, d = (0, c.uM)(), u = (0, x.U)(), _ = d?.sessionId ?? "", {
         noCache: m,
         includeUnpublished: p
-    } = (0, E.A)(), f = r.useMemo(() => t.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
+    } = (0, E.A)(), f = l.useMemo(() => t.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
         let {
             products: t
         } = e;
         return t.length > 0
-    }), [t]), A = r.useRef(void 0);
-    r.useEffect(() => {
+    }), [t]), A = l.useRef(void 0);
+    l.useEffect(() => {
         if (null == o || 0 === f.length) {
             A.current = void 0;
             return
@@ -84,13 +84,13 @@ function v(e) {
         let e = f.findIndex(e => e.skuId === o);
         if (-1 === e) return;
         let t = Math.floor(e / b.l5) + 1;
-        t !== l && a(t), A.current = o
-    }, [o, f, a, l]);
-    let v = r.useMemo(() => {
-        let e = (l - 1) * b.l5;
+        t !== r && a(t), A.current = o
+    }, [o, f, a, r]);
+    let v = l.useMemo(() => {
+        let e = (r - 1) * b.l5;
         return f.slice(e, e + b.l5)
-    }, [f, l]);
-    return (r.useEffect(() => {
+    }, [f, r]);
+    return (l.useEffect(() => {
         (0, g.z)({
             sessionId: _,
             checkpoint: g.t.SHOP_MOUNTED,
@@ -98,7 +98,7 @@ function v(e) {
             unpublishedCategoriesShown: p,
             cacheDisabled: m
         })
-    }, []), r.useEffect(() => {
+    }, []), l.useEffect(() => {
         u || 0 === v.length || (0, g.z)({
             sessionId: _,
             checkpoint: g.t.SHOP_RENDERED,
@@ -121,7 +121,7 @@ function v(e) {
         }, e.skuId)), (0, n.jsx)("div", {
             className: C.Ej,
             children: (0, n.jsx)(i.mgR, {
-                currentPage: l,
+                currentPage: r,
                 totalCount: f.length,
                 pageSize: b.l5,
                 onPageChange: a,

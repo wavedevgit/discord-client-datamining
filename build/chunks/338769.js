@@ -4,8 +4,8 @@ s.d(t, {
     V: () => g,
     Z: () => _
 });
-var n, r = s(64700),
-    l = s(311907),
+var n, l = s(64700),
+    r = s(311907),
     a = s(773669),
     i = s(248352),
     o = s(797490),
@@ -15,10 +15,10 @@ var n, r = s(64700),
     _ = ((n = {})[n.COUNTDOWN = 0] = "COUNTDOWN", n);
 
 function g(e, t) {
-    let s = (0, l.bG)([i.A], () => i.A.getUserDiscount(d.tU)),
-        n = (0, l.bG)([a.default], () => a.default.locale),
+    let s = (0, r.bG)([i.A], () => i.A.getUserDiscount(d.tU)),
+        n = (0, r.bG)([a.default], () => a.default.locale),
         _ = (0, o.$)(t);
-    if (r.useMemo(() => null != s && _ && e !== c.G2.ORBS, [s, _, e])) {
+    if (l.useMemo(() => null != s && _ && e !== c.G2.ORBS, [s, _, e])) {
         let e = null != s && null != s.expiresAt ? new Date(s.expiresAt).toLocaleDateString(n, {
             day: "numeric",
             month: "numeric"

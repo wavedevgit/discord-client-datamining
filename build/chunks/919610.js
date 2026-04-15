@@ -1,10 +1,10 @@
 /** chunk id: 919610 params = (module,exports,require) **/
 "use strict";
 s.d(t, {
-    Z: () => r
+    Z: () => l
 });
 var n = s(64700);
-let r = e => {
+let l = e => {
     let [t, s] = n.useState(1);
     return {
         currentPage: t,

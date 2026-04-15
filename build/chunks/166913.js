@@ -126,10 +126,8 @@ let F = e => {
                 className: r()(V.R3, {
                     [V.aZ]: ei
                 })
-            }), (0, i.jsxs)("div", {
-                className: r()({
-                    [V.n1]: ei
-                }),
+            }), ei && (0, i.jsxs)("div", {
+                className: V.n1,
                 children: [(0, i.jsx)(F, {
                     inOfferExperience: ei
                 }), el && (0, i.jsx)(O.l, {
@@ -145,22 +143,30 @@ let F = e => {
                 children: [null != ea && (0, i.jsx)(y.c, {
                     className: V.w$,
                     config: ea
-                }), (0, i.jsx)(d.L, {
-                    innerRef: t,
-                    onChange: e => z(e),
-                    threshold: 0,
-                    active: !0,
-                    children: (0, i.jsx)(v.Ay, {
-                        ref: t,
-                        subscriptionTier: ee,
-                        className: r()({
-                            [V.p7]: ei,
-                            [V.Pw]: ei,
-                            [V.AG]: es,
-                            [V.Cv]: null != Q
-                        }),
-                        isDarkMode: L
-                    })
+                }), (0, i.jsxs)("div", {
+                    className: V.iS,
+                    children: [el && !ei && (0, i.jsx)(O.l, {
+                        className: V.ij,
+                        size: "md",
+                        location: g.A.PREMIUM_WISHLIST_SETTINGS_HERO,
+                        forceDarkTheme: !0
+                    }), (0, i.jsx)(d.L, {
+                        innerRef: t,
+                        onChange: e => z(e),
+                        threshold: 0,
+                        active: !0,
+                        children: (0, i.jsx)(v.Ay, {
+                            ref: t,
+                            subscriptionTier: ee,
+                            className: r()({
+                                [V.p7]: ei,
+                                [V.Pw]: ei,
+                                [V.AG]: es,
+                                [V.Cv]: null != Q
+                            }),
+                            isDarkMode: L
+                        })
+                    })]
                 })]
             }), (0, i.jsx)(P.A, {}), ed, (0, i.jsx)(D.A, {
                 className: V.B_
