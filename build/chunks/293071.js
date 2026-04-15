@@ -16,9 +16,9 @@ function o(e) {
         ...t
     } = e, {
         user: o
-    } = t, [c, _] = (0, a.A)(o.id);
+    } = t, [c, u] = (0, a.A)(o.id);
     return c && !n ? (0, i.jsx)(s.A, {
-        onHide: _,
+        onHide: u,
         ...t
     }) : o.isNonUserBot() ? (0, i.jsx)(r.A, {
         ...t

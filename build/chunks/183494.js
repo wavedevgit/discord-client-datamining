@@ -53,8 +53,8 @@ function p(e) {
         hoveredAtX: $,
         maxSeekableX: O,
         isHovering: Q,
-        isDragging: _,
-        dragX: F,
+        isDragging: F,
+        dragX: _,
         isHoverBeyondMax: Y,
         handleClick: K,
         handleMouseDown: X,
@@ -93,14 +93,14 @@ function p(e) {
             })
         }
     }, [a, Z, W, E, v, H]);
-    let en = l.useRef(_);
+    let en = l.useRef(F);
     l.useLayoutEffect(() => {
         let e = en.current;
-        en.current = _, e && !_ && Z({
+        en.current = F, e && !F && Z({
             playbackPxSpring: null == W || Number.isNaN(W) ? 0 : W,
             immediate: !0
         })
-    }, [_, W, Z]), l.useEffect(() => {
+    }, [F, W, Z]), l.useEffect(() => {
         if (ee.current) {
             ee.current = !1;
             return
@@ -189,8 +189,8 @@ function p(e) {
                     playbackPxSpring: J,
                     animate: a,
                     playerState: E,
-                    isDragging: _,
-                    dragX: F,
+                    isDragging: F,
+                    dragX: _,
                     animatingIndex: P?.animatingIndex,
                     expansionSpring: P?.expansionSpring,
                     timelineWidth: H,
@@ -207,11 +207,11 @@ function p(e) {
                     left: null != $ ? `${$}px` : "auto"
                 },
                 children: V
-            }), (Q || R) && p && null != W && !eu(_ && null != F ? F : W) && (0, r.jsx)(s.animated.div, {
+            }), (Q || R) && p && null != W && !eu(F && null != _ ? _ : W) && (0, r.jsx)(s.animated.div, {
                 ref: q,
                 className: f.Ub,
                 style: {
-                    left: _ && null != F ? `${F}px` : J.to(e => `${e}px`)
+                    left: F && null != _ ? `${_}px` : J.to(e => `${e}px`)
                 }
             })]
         })

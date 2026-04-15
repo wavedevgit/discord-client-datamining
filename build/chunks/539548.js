@@ -11,16 +11,16 @@ var a = t(311907),
     d = t(461213),
     o = t(975571),
     c = t(622543),
-    _ = t(146655),
-    u = t(489379),
+    u = t(146655),
+    _ = t(489379),
     p = t(900179),
     A = t(837924),
     g = t(558628),
     f = t(842241),
     m = t(282797),
     h = t(518477),
-    I = t(652215),
-    x = t(985018),
+    x = t(652215),
+    I = t(985018),
     b = t(575877),
     v = t(643146);
 
@@ -34,10 +34,10 @@ function E(e) {
         live: y,
         recent: T,
         stream: N
-    } = (0, _.A)(n.id), {
+    } = (0, u.A)(n.id), {
         voiceChannel: S,
         voiceActivity: C
-    } = (0, u.A)({
+    } = (0, _.A)({
         userId: n.id,
         guildId: E
     }), R = (0, a.bG)([r.A], () => r.A.isFetchingUserOutbox(n.id)), P = n.id === t.id, L = (0, a.bG)([d.A, s.A], () => {
@@ -48,7 +48,7 @@ function E(e) {
         className: b.XG,
         fade: !0,
         children: [B ? (0, i.jsx)(p.A, {
-            "aria-label": x.intl.string(x.t.J6STd9),
+            "aria-label": I.intl.string(I.t.J6STd9),
             children: (0, i.jsxs)("ul", {
                 className: b.Ci,
                 children: [null != N && (0, i.jsx)("li", {
@@ -75,10 +75,10 @@ function E(e) {
                 })]
             })
         }) : null, U ? (0, i.jsx)(p.A, {
-            heading: x.intl.string(x.t.M0zgnT),
-            introText: P ? x.intl.format(x.t["4bk9Ak"], {
+            heading: I.intl.string(I.t.M0zgnT),
+            introText: P ? I.intl.format(I.t["4bk9Ak"], {
                 learnMoreHook: (e, n) => (0, i.jsx)(l.MzZ, {
-                    href: o.A.getArticleURL(I.MVz.ACTIVITY_STATUS_SETTINGS),
+                    href: o.A.getArticleURL(x.MVz.ACTIVITY_STATUS_SETTINGS),
                     children: e
                 }, n)
             }) : void 0,

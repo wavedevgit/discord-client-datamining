@@ -8,8 +8,8 @@ var i = n(627968),
     l = n.n(a),
     o = n(452282),
     s = n(967758),
-    u = n(369254),
-    d = n(358731),
+    d = n(369254),
+    u = n(358731),
     h = n(710096);
 let c = r.memo(function(e) {
     let {
@@ -27,10 +27,10 @@ let c = r.memo(function(e) {
         if (t.length > 1) {
             let e = t[(0, o.U3)(n - 1, t.length)],
                 i = t[(0, o.U3)(n + 1, t.length)];
-            (0, u.Z)(e, !0), t.length > 2 && (0, u.Z)(i, !0)
+            (0, d.Z)(e, !0), t.length > 2 && (0, d.Z)(i, !0)
         }
-    }, [n, t]), (0, i.jsx)(d.Ay, {
-        mode: d.nY.PINNED,
+    }, [n, t]), (0, i.jsx)(u.Ay, {
+        mode: u.nY.PINNED,
         children: e => (0, i.jsx)("div", {
             className: l()(h.k4, e),
             children: (0, i.jsx)("div", {

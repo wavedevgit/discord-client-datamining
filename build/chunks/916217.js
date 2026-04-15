@@ -10,16 +10,16 @@ var i = t(627968),
     d = t(351966),
     o = t(915089),
     c = t(713517),
-    _ = t(562153),
-    u = t(183555),
+    u = t(562153),
+    _ = t(183555),
     p = t(950191),
     A = t(718019),
     g = t(31432),
     f = t(915614),
     m = t(389996),
     h = t(743987),
-    I = t(900179),
-    x = t(946356),
+    x = t(900179),
+    I = t(946356),
     b = t(810396),
     v = t(35241),
     E = t(587168),
@@ -42,9 +42,9 @@ function P(e) {
         transitionState: k,
         onClose: B,
         sourceAnalyticsLocations: U = []
-    } = e, M = t === y.ME ? void 0 : t, G = (0, p.Ay)(n.id, M), F = _.Ay.getName(M, P, n), w = (0, o.GV)(), {
+    } = e, M = t === y.ME ? void 0 : t, G = (0, p.Ay)(n.id, M), F = u.Ay.getName(M, P, n), w = (0, o.GV)(), {
         analyticsLocations: V
-    } = (0, s.Ay)([...U, r.A.USER_PROFILE_MODAL]), H = (0, u.pb)({
+    } = (0, s.Ay)([...U, r.A.USER_PROFILE_MODAL]), H = (0, _.pb)({
         layout: "MODAL",
         userId: n.id,
         sourceSessionId: D,
@@ -55,7 +55,7 @@ function P(e) {
     }), W = a.useRef(null), z = (0, c.M)(W);
     return (0, i.jsx)(s.f5, {
         value: V,
-        children: (0, i.jsx)(u.of, {
+        children: (0, i.jsx)(_.of, {
             value: H,
             isLoaded: G?.isLoaded,
             children: (0, i.jsxs)(l.EOs, {
@@ -74,7 +74,7 @@ function P(e) {
                             })
                         })
                     }),
-                    children: (0, i.jsxs)(x.A, {
+                    children: (0, i.jsxs)(I.A, {
                         user: n,
                         displayProfile: G,
                         themeType: T.d.MODAL,
@@ -135,7 +135,7 @@ function P(e) {
                                         userId: n.id,
                                         userBio: G?.bio,
                                         setLineClamp: !1
-                                    }), (0, i.jsx)(I.A, {
+                                    }), (0, i.jsx)(x.A, {
                                         heading: N.intl.string(N.t["A//N4k"]),
                                         children: (0, i.jsx)(h.A, {
                                             userId: n.id,

@@ -10,8 +10,8 @@ var i = t(627968),
     d = t(713517),
     o = t(919395),
     c = t(84540),
-    _ = t(930349),
-    u = t(985018),
+    u = t(930349),
+    _ = t(985018),
     p = t(432856);
 
 function A(e) {
@@ -24,26 +24,26 @@ function A(e) {
     } = (0, l.Ay)(), f = null != t, m = a.useRef(null), {
         isHoveringOrFocusing: h
     } = (0, d.A)(m), {
-        guildNameplate: I,
-        pendingNameplate: x
+        guildNameplate: x,
+        pendingNameplate: I
     } = (0, o.rv)(n, t ?? void 0), b = (0, o.lw)({
-        pendingValue: x,
+        pendingValue: I,
         userValue: n.collectibles?.nameplate,
-        guildValue: I,
+        guildValue: x,
         guildId: t ?? void 0
-    }), v = void 0 !== x, E = f ? I : n.collectibles?.nameplate, j = a.useCallback(() => {
+    }), v = void 0 !== I, E = f ? x : n.collectibles?.nameplate, j = a.useCallback(() => {
         (0, s.p)({
             analyticsLocations: g,
             guildId: t ?? void 0,
             stackingBehavior: "stack"
         })
-    }, [g, t]), y = f && n.collectibles?.nameplate != null, T = null != b && (v ? null != x : null != E) ? {
+    }, [g, t]), y = f && n.collectibles?.nameplate != null, T = null != b && (v ? null != I : null != E) ? {
         onClick: () => (0, c.p)({
             guildId: t ?? void 0,
             nameplate: null
         }),
         type: y ? "reset" : "remove",
-        accessibleLabel: u.intl.string(y ? u.t.neYqhR : u.t["9zwziY"])
+        accessibleLabel: _.intl.string(y ? _.t.neYqhR : _.t["9zwziY"])
     } : void 0, N = (0, i.jsx)("div", {
         className: p.M,
         "aria-hidden": !0,
@@ -56,16 +56,16 @@ function A(e) {
     });
     return (0, i.jsx)("div", {
         ref: m,
-        children: null == b ? (0, i.jsx)(_.kL, {
+        children: null == b ? (0, i.jsx)(u.kL, {
             variant: "bar",
             onClick: j,
-            accessibleLabel: u.intl.string(u.t.BwdeM1),
+            accessibleLabel: _.intl.string(_.t.BwdeM1),
             disabled: A,
             children: N
-        }) : (0, i.jsx)(_.NW, {
+        }) : (0, i.jsx)(u.NW, {
             variant: "bar",
             onClick: j,
-            accessibleLabel: u.intl.string(u.t.BwdeM1),
+            accessibleLabel: _.intl.string(_.t.BwdeM1),
             deleteButtonConfig: T,
             disabled: A,
             children: N

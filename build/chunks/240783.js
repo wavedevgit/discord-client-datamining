@@ -1,6 +1,6 @@
 /** chunk id: 240783 params = (module,exports,require) **/
 t.d(n, {
-    A: () => x
+    A: () => I
 });
 var i = t(627968),
     a = t(64700),
@@ -10,8 +10,8 @@ var i = t(627968),
     d = t(183555),
     o = t(382120),
     c = t(128490),
-    _ = t(539548),
-    u = t(412775),
+    u = t(539548),
+    _ = t(412775),
     p = t(86404),
     A = t(738759),
     g = t(518477),
@@ -19,7 +19,7 @@ var i = t(627968),
     m = t(643146),
     h = t(843796);
 
-function I(e) {
+function x(e) {
     let {
         section: n,
         user: t,
@@ -29,7 +29,7 @@ function I(e) {
         channelId: s,
         onClose: d
     } = e;
-    return n === g.RP.ACTIVITY ? (0, i.jsx)(_.A, {
+    return n === g.RP.ACTIVITY ? (0, i.jsx)(u.A, {
         user: t,
         currentUser: a,
         guildId: r,
@@ -49,40 +49,40 @@ function I(e) {
         displayProfile: l,
         guildId: r,
         onClose: d
-    }) : (0, i.jsx)(u.A, {
+    }) : (0, i.jsx)(_.A, {
         user: t,
         displayProfile: l,
         onClose: d
     })
 }
 
-function x(e) {
+function I(e) {
     let {
         user: n,
         currentUser: t,
         displayProfile: o,
         guildId: c,
-        items: _,
-        initialSection: u = g.RP.USER_INFO,
+        items: u,
+        initialSection: _ = g.RP.USER_INFO,
         onClose: p
     } = e, {
         trackUserProfileAction: A
-    } = (0, d.NJ)(), x = (0, l.bG)([s.A], () => s.A.hidePersonalInformation), [b, v] = a.useState(() => _.find(e => {
+    } = (0, d.NJ)(), I = (0, l.bG)([s.A], () => s.A.hidePersonalInformation), [b, v] = a.useState(() => u.find(e => {
         let {
             section: n
         } = e;
-        return n === u
-    })?.section ?? _[0]?.section);
+        return n === _
+    })?.section ?? u[0]?.section);
     a.useEffect(() => {
-        null == _.find(e => e.section === b) && v(_[0].section)
-    }, [_, b]);
+        null == u.find(e => e.section === b) && v(u[0].section)
+    }, [u, b]);
     let E = a.useCallback(e => {
         A({
             action: "PRESS_SECTION",
             section: e
         }), v(e)
     }, [A]);
-    return x ? (0, i.jsx)("div", {
+    return I ? (0, i.jsx)("div", {
         className: h.kL,
         children: (0, i.jsxs)("div", {
             className: m.Ie,
@@ -100,7 +100,7 @@ function x(e) {
             type: "top",
             selectedItem: b,
             onItemSelect: E,
-            children: _.map(e => {
+            children: u.map(e => {
                 let {
                     section: n,
                     text: t
@@ -115,8 +115,8 @@ function x(e) {
                     })
                 }, n)
             })
-        }), (0, i.jsx)(I, {
-            items: _,
+        }), (0, i.jsx)(x, {
+            items: u,
             section: b,
             user: n,
             currentUser: t,

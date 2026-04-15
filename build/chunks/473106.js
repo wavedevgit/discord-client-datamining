@@ -117,8 +117,8 @@ let Y = {
                 isFetching: J,
                 error: X
             } = (0, M.W)(), {
-                isSubmitting: Z,
-                responseMessage: Q,
+                isSubmitting: Q,
+                responseMessage: Z,
                 redeemVirtualCurrency: ee
             } = (0, M.Q)(), [et, el] = n.useState(B.dJq), [ea, en] = n.useState(""), [er, ei] = n.useState(B.dJq);
             return (0, a.jsx)(x.f5, {
@@ -332,11 +332,11 @@ let Y = {
                             }), (0, a.jsx)(p.Button, {
                                 variant: "primary",
                                 text: "Redeem Virtual Currency for SKU",
-                                loading: Z,
+                                loading: Q,
                                 onClick: () => ee(et, (0, i.A)())
-                            }), null != Q && (0, a.jsx)(p.Text, {
+                            }), null != Z && (0, a.jsx)(p.Text, {
                                 variant: "text-sm/normal",
-                                children: Q
+                                children: Z
                             })]
                         }), (0, a.jsx)(p.cGx, {}), (0, a.jsxs)(p.nVY, {
                             label: "Creator Revenue",

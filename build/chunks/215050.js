@@ -8,17 +8,17 @@ var i = n(627968),
     l = n.n(a),
     o = n(397927),
     s = n(775602),
-    u = n(607470),
-    d = n(930125),
+    d = n(607470),
+    u = n(930125),
     h = n(282108),
     c = n(619517),
     m = n(644447),
     p = n(608214),
     g = n(838541),
     f = n(985018),
-    A = n(713737);
+    x = n(713737);
 
-function x(e) {
+function A(e) {
     return `media-view-scroll-thumbnail-${e}`
 }
 let y = r.memo(function(e) {
@@ -36,7 +36,7 @@ let y = r.memo(function(e) {
         }
         return null
     }(t);
-    return null == r && "VIDEO" === t.type ? (0, i.jsx)(u.A, {
+    return null == r && "VIDEO" === t.type ? (0, i.jsx)(d.A, {
         src: `${t.url}#t=1`,
         preload: "metadata",
         muted: !0,
@@ -46,12 +46,12 @@ let y = r.memo(function(e) {
             objectFit: "cover"
         }
     }) : null == r ? null : (0, h.qo)({
-        type: d.D.GenericMedia,
+        type: u.D.GenericMedia,
         media: t
     }, n) ? (0, i.jsx)(o.BJc, {
         align: "center",
         justify: "center",
-        className: A.cd,
+        className: x.cd,
         style: {
             width: 40,
             height: 40
@@ -80,41 +80,41 @@ function w(e) {
         items: t,
         currentIndex: n,
         onGalleryItemClick: a,
-        className: u,
-        enabledContentHarmTypeFlags: d
+        className: d,
+        enabledContentHarmTypeFlags: u
     } = e, h = r.useRef(null);
     return r.useLayoutEffect(() => {
-        let e = document.getElementById(x(n));
+        let e = document.getElementById(A(n));
         null != h.current && null != e && h.current.scrollIntoViewNode({
             node: e,
             animate: !s.A.useReducedMotion,
             padding: 20
         })
     }, [n]), (0, i.jsx)("div", {
-        className: l()(A.IL, u),
+        className: l()(x.IL, d),
         children: (0, i.jsx)(o.ChK, {
             orientation: "horizontal",
-            className: l()(A.nV, u),
+            className: l()(x.nV, d),
             ref: h,
             onClick: e => e.stopPropagation(),
             children: t.map((e, r) => {
                 let s = r === n,
-                    u = s ? f.t["qv/U5V"] : f.t.zviMAG;
+                    d = s ? f.t["qv/U5V"] : f.t.zviMAG;
                 return (0, i.jsx)(o.DUT, {
-                    id: x(r),
-                    className: l()(A.Qq, {
-                        [A.AD]: !s,
-                        [A.$1]: 0 === r,
-                        [A.HV]: r === t.length - 1
+                    id: A(r),
+                    className: l()(x.Qq, {
+                        [x.AD]: !s,
+                        [x.$1]: 0 === r,
+                        [x.HV]: r === t.length - 1
                     }),
-                    "aria-label": f.intl.formatToPlainString(u, {
+                    "aria-label": f.intl.formatToPlainString(d, {
                         pageNumber: r + 1,
                         totalPages: t.length
                     }),
                     onClick: () => a(r),
                     children: (0, i.jsx)(y, {
                         item: e,
-                        enabledContentHarmTypeFlags: d
+                        enabledContentHarmTypeFlags: u
                     })
                 }, r)
             })

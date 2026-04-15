@@ -61,8 +61,8 @@ class u {
             branch_name: this.mode.branchName,
             commit_date: this.mode.commitDate,
             timestamp: new Date().toISOString(),
-            build_number: "529475",
-            built_at: "1776289450470",
+            build_number: "529571",
+            built_at: "1776293796686",
             release_channel: n.y ?? "unknown",
             tags: this.getTags(),
             metrics: {

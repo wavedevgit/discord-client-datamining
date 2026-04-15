@@ -10,8 +10,8 @@ var i = t(627968),
     d = t(183555),
     o = t(913453),
     c = t(229187),
-    _ = t(657331),
-    u = t(503062),
+    u = t(657331),
+    _ = t(503062),
     p = t(985018),
     A = t(643146);
 
@@ -26,8 +26,8 @@ function g(e) {
     } = (0, o.A)(n), {
         analyticsLocations: h
     } = (0, s.Ay)(), {
-        context: I,
-        trackUserProfileAction: x
+        context: x,
+        trackUserProfileAction: I
     } = (0, d.NJ)(), b = (0, r.A)();
     return a.useEffect(() => {
         (0, c.A)(n.id, b)
@@ -51,17 +51,17 @@ function g(e) {
                 user: a,
                 status: l
             } = e;
-            return (0, i.jsx)(u.A, {
+            return (0, i.jsx)(_.A, {
                 user: a,
                 status: l,
                 guildId: t,
                 channelId: g,
                 onSelect: () => {
                     var e;
-                    f?.(), x({
+                    f?.(), I({
                         action: "PRESS_MUTUAL_FRIEND"
-                    }), e = a.id, (0, _.openUserProfileModal)({
-                        ...I,
+                    }), e = a.id, (0, u.openUserProfileModal)({
+                        ...x,
                         userId: e,
                         sourceAnalyticsLocations: h
                     })

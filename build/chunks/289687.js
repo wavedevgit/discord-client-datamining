@@ -22,25 +22,28 @@ let j = e => {
         guild: t,
         transitionState: l,
         onClose: s
-    } = e, [j, _] = i.useState(7), [f, p] = i.useState([]), b = (0, h._k)(t.id, j, f) ?? -1;
+    } = e, [j, _] = i.useState(7), [f, p] = i.useState([]), {
+        count: b,
+        isLoading: v
+    } = (0, h._k)(t.id, j, f);
     i.useEffect(() => {
         let e = e => {
             if (e.guildId !== t.id || !e.prune.isPreview) return;
             let l = e.prune.days,
                 n = e.prune.includeRoles,
                 i = Number(e.prune.pruneCount);
-            (0, h.nA)(e.guildId, l, n, i)
+            (0, h.nA)(e.guildId, l, n, i, e.prune.isFinished)
         };
         return d.h.subscribe("GUILD_PRUNE_UPDATE", e), () => {
             d.h.unsubscribe("GUILD_PRUNE_UPDATE", e)
         }
-    }, [t.id]), i.useEffect(() => {
-        -1 === b && c.A.updateEstimateV2(t.id, j, f)
+    }, [t.id, j, f]), i.useEffect(() => {
+        null == b && c.A.updateEstimateV2(t.id, j, f)
     }, [t.id, j, f, b]);
-    let v = i.useCallback(() => {
-            c.A.prune(t.id, j, f), s()
+    let A = i.useCallback(() => {
+            c.A.prune(t.id, j, f), s(), (0, h.yb)()
         }, [t.id, j, f, s]),
-        A = (0, r.yK)([x.A, m.A], () => {
+        V = (0, r.yK)([x.A, m.A], () => {
             let e = x.A.getHighestRole(t);
             return a()(m.A.getSortedRoles(t.id)).filter(l => !(0, u.Oy)(l) && x.A.isRoleHigher(t, e, l)).map(e => {
                 let {
@@ -62,7 +65,7 @@ let j = e => {
             variant: "secondary"
         }, {
             text: g.intl.string(g.t["2mIlKQ"]),
-            onClick: v
+            onClick: A
         }],
         onClose: async () => {
             await s()
@@ -95,15 +98,15 @@ let j = e => {
                     maxOptionsVisible: 10,
                     value: f,
                     onSelectionChange: e => p(e),
-                    options: A
+                    options: V
                 })
             }), (0, n.jsx)(o.Text, {
                 variant: "text-sm/normal",
-                children: f.length > 0 ? g.intl.format(g.t["5WxHHp"], {
-                    members: b,
+                children: f.length > 0 ? g.intl.format(v ? g.t.xSDcLk : g.t["5WxHHp"], {
+                    members: b ?? -1,
                     days: j
-                }) : g.intl.format(g.t.f13az9, {
-                    members: b,
+                }) : g.intl.format(v ? g.t["98cHOp"] : g.t.f13az9, {
+                    members: b ?? -1,
                     days: j
                 })
             })]

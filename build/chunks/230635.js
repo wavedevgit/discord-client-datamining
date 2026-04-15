@@ -1,6 +1,6 @@
 /** chunk id: 230635 params = (module,exports,require) **/
 t.d(n, {
-    A: () => b
+    A: () => v
 });
 var i = t(627968),
     a = t(64700),
@@ -10,65 +10,66 @@ var i = t(627968),
     d = t(601255),
     o = t(562819),
     c = t(713517),
-    _ = t(919395),
-    u = t(71393),
+    u = t(919395),
+    _ = t(71393),
     p = t(837921),
     A = t(84540),
     g = t(854627),
     f = t(930349),
     m = t(985018),
     h = t(987118);
-let I = p.Ay.getEnableHardwareAcceleration() ? r.JsQ : r.euF;
+let x = r._3J.SIZE_72,
+    I = p.Ay.getEnableHardwareAcceleration() ? r.JsQ : r.euF;
 
-function x(e) {
+function b(e) {
     let {
         user: n,
         guildId: t,
         avatarDecorationOverride: a,
         isEmpty: l,
-        isHovered: s,
-        disabled: d
+        isHovered: r,
+        disabled: s
     } = e, {
-        avatarDecorationSrc: o,
-        avatarSrc: c,
-        avatarPlaceholderSrc: _,
+        avatarDecorationSrc: d,
+        avatarSrc: o,
+        avatarPlaceholderSrc: c,
         eventHandlers: u
     } = (0, g.A)({
         userId: n.id,
         guildId: t,
-        size: r._3J.SIZE_56,
+        size: x,
         showPending: !0,
         avatarDecorationOverride: a,
-        animateOnHover: !s
+        animateOnHover: !r
     });
     return (0, i.jsx)(I, {
         className: l ? h.yT : void 0,
-        src: s ? c : _,
-        imageClassName: s && !d ? h.WG : void 0,
-        avatarDecoration: o,
-        size: r._3J.SIZE_56,
+        src: r ? o : c,
+        imageClassName: r && !s ? h.WG : void 0,
+        avatarDecoration: d,
+        size: x,
         "aria-hidden": !0,
         ...u
     })
 }
 
-function b(e) {
+function v(e) {
     let {
         user: n,
         guildId: t,
         disabled: r
     } = e, {
         analyticsLocations: p
-    } = (0, s.Ay)(), g = (0, l.bG)([u.A], () => null != t ? u.A.getGuild(t) : null), h = null != t, I = a.useRef(null), {
-        isHoveringOrFocusing: b
-    } = (0, c.A)(I), v = (0, _.a4)({
+    } = (0, s.Ay)(), g = (0, l.bG)([_.A], () => null != t ? _.A.getGuild(t) : null), h = null != t, x = a.useRef(null), {
+        isHoveringOrFocusing: I
+    } = (0, c.A)(x), v = (0, u.a4)({
         user: n
-    }), E = (0, _.a4)({
+    }), E = (0, u.a4)({
         user: n,
         guildId: t ?? void 0
     }), {
         pendingAvatarDecoration: j
-    } = (0, _.CP)(t ?? void 0), y = (0, d.A)((0, _.lw)({
+    } = (0, u.CP)(t ?? void 0), y = (0, d.A)((0, u.lw)({
         userValue: v,
         guildValue: E,
         pendingValue: j,
@@ -84,16 +85,16 @@ function b(e) {
         }),
         type: S ? "reset" : "remove",
         accessibleLabel: m.intl.string(S ? m.t.pJsnPf : m.t["2U4Bga"])
-    } : void 0, R = (0, i.jsx)(x, {
+    } : void 0, R = (0, i.jsx)(b, {
         user: n,
         guildId: t,
         avatarDecorationOverride: T ? y : void 0,
         isEmpty: null == y,
-        isHovered: null != y && b,
+        isHovered: null != y && I,
         disabled: r
     });
     return (0, i.jsx)("div", {
-        ref: I,
+        ref: x,
         children: null == y ? (0, i.jsx)(f.kL, {
             variant: "square",
             onClick: N,

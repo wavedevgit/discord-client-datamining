@@ -10,16 +10,16 @@ var i = t(627968),
     d = t(632738),
     o = t(994500),
     c = t(562153),
-    _ = t(183555),
-    u = t(672385),
+    u = t(183555),
+    _ = t(672385),
     p = t(950191),
     A = t(249790),
     g = t(946356),
     f = t(254828),
     m = t(783123),
     h = t(652215),
-    I = t(996988),
-    x = t(985018),
+    x = t(996988),
+    I = t(985018),
     b = t(255412);
 
 function v(e) {
@@ -34,7 +34,7 @@ function v(e) {
         sourceAnalyticsLocations: N = []
     } = e, S = t === h.ME ? void 0 : t, C = (0, a.bG)([o.A], () => o.A.isBlocked(n.id)), {
         analyticsLocations: R
-    } = (0, s.Ay)([...N, C ? r.A.BLOCKED_PROFILE_MODAL : r.A.IGNORED_PROFILE_MODAL]), P = (0, _.pb)({
+    } = (0, s.Ay)([...N, C ? r.A.BLOCKED_PROFILE_MODAL : r.A.IGNORED_PROFILE_MODAL]), P = (0, u.pb)({
         layout: "MODAL_V2",
         userId: n.id,
         guildId: S,
@@ -43,16 +43,16 @@ function v(e) {
         roleId: j
     }), L = [{
         icon: l.yr3,
-        description: x.intl.string(x.t.kcuWva)
+        description: I.intl.string(I.t.kcuWva)
     }, {
         icon: l.yr3,
-        description: x.intl.string(C ? x.t.QxrDY1 : x.t.W6fjkS)
-    }], O = (0, p.Ay)(n.id, S), D = c.Ay.getName(O?.guildId, v, n), k = x.intl.formatToPlainString(x.t.KRe1Fk, {
+        description: I.intl.string(C ? I.t.QxrDY1 : I.t.W6fjkS)
+    }], O = (0, p.Ay)(n.id, S), D = c.Ay.getName(O?.guildId, v, n), k = I.intl.formatToPlainString(I.t.KRe1Fk, {
         name: D
     });
     return (0, i.jsx)(s.f5, {
         value: R,
-        children: (0, i.jsx)(_.of, {
+        children: (0, i.jsx)(u.of, {
             value: P,
             isLoaded: O?.isLoaded,
             children: (0, i.jsx)(l.EOs, {
@@ -64,7 +64,7 @@ function v(e) {
                 children: (0, i.jsxs)(g.A, {
                     user: n,
                     displayProfile: O,
-                    themeType: I.d.MODAL_V2,
+                    themeType: x.d.MODAL_V2,
                     children: [(0, i.jsx)("div", {
                         className: b.Tp
                     }), (0, i.jsxs)("div", {
@@ -77,11 +77,11 @@ function v(e) {
                             children: [(0, i.jsx)(l.Heading, {
                                 variant: "heading-xl/bold",
                                 color: "text-default",
-                                children: x.intl.string(x.t.b33pLD)
+                                children: I.intl.string(I.t.b33pLD)
                             }), (0, i.jsx)(l.Text, {
                                 variant: "text-md/medium",
                                 color: "text-default",
-                                children: x.intl.format(C ? x.t.T7QiLn : x.t.MnEowy, {
+                                children: I.intl.format(C ? I.t.T7QiLn : I.t.MnEowy, {
                                     username: D
                                 })
                             })]
@@ -105,7 +105,7 @@ function v(e) {
                                 size: "md",
                                 isBlocked: C,
                                 onClick: () => {
-                                    T(), (0, u.Wn)({
+                                    T(), (0, _.Wn)({
                                         action: C ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                                         analyticsLocations: R,
                                         ...P
@@ -114,7 +114,7 @@ function v(e) {
                             }), (0, i.jsx)(f.A, {
                                 userId: n.id,
                                 onClick: () => {
-                                    T(), (0, u.Wn)({
+                                    T(), (0, _.Wn)({
                                         action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                                         analyticsLocations: R,
                                         ...P

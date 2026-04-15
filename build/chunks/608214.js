@@ -10,16 +10,16 @@ var i = n(627968),
     l = n(672477),
     o = n(275687),
     s = n(731068),
-    u = n(619517),
-    d = n(248643),
+    d = n(619517),
+    u = n(248643),
     h = n(803316),
     c = n(652176),
     m = n(644447),
     p = n(587481),
     g = n(998218),
     f = n(454290),
-    A = n(504149),
-    x = n(652215),
+    x = n(504149),
+    A = n(652215),
     y = n(176739);
 
 function w(e, t) {
@@ -41,8 +41,8 @@ function C(e) {
 let E = r.memo(function(e) {
     var t, n, r, s, w;
     let E, {
-            media: I,
-            obscured: v = !1,
+            media: v,
+            obscured: I = !1,
             maxWidth: j,
             maxHeight: M,
             onContextMenu: S
@@ -55,9 +55,9 @@ let E = r.memo(function(e) {
             alt: T,
             type: U,
             maxWidth: V,
-            maxHeight: D,
-            ...b
-        } = I,
+            maxHeight: b,
+            ...D
+        } = v,
         {
             zoomed: L
         } = (0, f.Q)(),
@@ -70,35 +70,35 @@ let E = r.memo(function(e) {
             if (e?.identifier?.type !== "attachment" || null == e.message) return null;
             let t = e.identifier.attachmentId,
                 n = e.message.attachments.find(e => e.id === t);
-            return null != n && (0, a.Lt)(n.flags ?? 0, x.sbO.IS_CLIP) ? n : null
-        }(I.sourceMetadata),
-        W = (t = L, n = P, r = _, s = I.contentType, w = I.originalContentType, t && g.A.isDiscordAssetUrl(n, s, w) ? (0, h.XW)(n, s, w) : (0, m.E)({
+            return null != n && (0, a.Lt)(n.flags ?? 0, A.sbO.IS_CLIP) ? n : null
+        }(v.sourceMetadata),
+        F = (t = L, n = P, r = _, s = v.contentType, w = v.originalContentType, t && g.A.isDiscordAssetUrl(n, s, w) ? (0, h.XW)(n, s, w) : (0, m.E)({
             proxyURL: r,
             url: n
         })),
-        F = null != N && 0 !== N && null != O && 0 !== O;
-    if ("VIDEO" === U && F && null != _) {
-        let e = I.poster ?? C(_);
+        W = null != N && 0 !== N && null != O && 0 !== O;
+    if ("VIDEO" === U && W && null != _) {
+        let e = v.poster ?? C(_);
         if (null == e) return null;
         if (null != k && R) return (0, i.jsx)(o.A, {
             attachment: k,
-            src: W,
+            src: F,
             posterUrl: e,
-            channelId: I.sourceMetadata?.message?.channel_id,
+            channelId: v.sourceMetadata?.message?.channel_id,
             maxWidth: j,
             maxHeight: M,
             active: !0,
-            autoPlay: I.autoPlay ?? !v,
-            autoMute: "function" == typeof I.autoMute ? I.autoMute() : I.autoMute ?? (0, p.uj)(),
+            autoPlay: v.autoPlay ?? !I,
+            autoMute: "function" == typeof v.autoMute ? v.autoMute() : v.autoMute ?? (0, p.uj)(),
             volume: (0, p.v1)(),
             onContextMenu: S,
             onVolumeChange: p.ls,
             onMutedChange: p.y5
         });
-        let t = I.renderLinkComponent ?? c.bU;
-        return (0, i.jsx)(d.A, {
-            ...b,
-            src: W,
+        let t = v.renderLinkComponent ?? c.bU;
+        return (0, i.jsx)(u.A, {
+            ...D,
+            src: F,
             width: N,
             height: O,
             maxWidth: j,
@@ -107,19 +107,19 @@ let E = r.memo(function(e) {
             naturalWidth: N,
             naturalHeight: O,
             volume: p.v1,
-            autoMute: I.autoMute ?? p.uj,
+            autoMute: v.autoMute ?? p.uj,
             onVolumeChange: p.ls,
             onMute: p.y5,
             renderLinkComponent: t,
-            autoPlay: I.autoPlay ?? !v,
+            autoPlay: v.autoPlay ?? !I,
             alt: T,
             onContextMenu: S,
             disableArrowKeySeek: !0
         })
     }
-    return "IMAGE" === U && (E = F ? (0, i.jsx)(u.Ay, {
-        ...b,
-        src: W,
+    return "IMAGE" === U && (E = W ? (0, i.jsx)(d.Ay, {
+        ...D,
+        src: F,
         width: N,
         height: O,
         maxWidth: j,
@@ -127,12 +127,12 @@ let E = r.memo(function(e) {
         useFullWidth: !0,
         shouldLink: !1,
         className: y.$_,
-        animated: !v && I.animated,
-        autoPlay: !v,
+        animated: !I && v.animated,
+        autoPlay: !I,
         alt: T,
         onContextMenu: S
     }) : (0, i.jsx)("img", {
-        src: W,
+        src: F,
         alt: T,
         onContextMenu: S,
         className: y.xx,
@@ -140,7 +140,7 @@ let E = r.memo(function(e) {
             maxWidth: j,
             maxHeight: M
         }
-    })), null != E ? (0, i.jsx)(A.A, {
+    })), null != E ? (0, i.jsx)(x.A, {
         children: E
     }) : null
 })

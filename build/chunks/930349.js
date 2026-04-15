@@ -19,7 +19,7 @@ function c() {
     })
 }
 
-function _(e) {
+function u(e) {
     let {
         icon: n,
         iconAlignment: t
@@ -38,7 +38,7 @@ function _(e) {
     })
 }
 
-function u(e) {
+function _(e) {
     let {
         onClick: n,
         type: t,
@@ -79,7 +79,7 @@ function A(e) {
         children: l,
         showOverlay: s = !1,
         overlayIcon: d,
-        overlayControls: u,
+        overlayControls: _,
         disabled: A = !1
     } = e;
     return (0, i.jsxs)(p, {
@@ -94,11 +94,11 @@ function A(e) {
             children: [(0, i.jsx)("div", {
                 className: o.content,
                 children: l
-            }), s && !A && (0, i.jsx)(c, {}), null != d && (0, i.jsx)(_, {
+            }), s && !A && (0, i.jsx)(c, {}), null != d && (0, i.jsx)(u, {
                 icon: d,
                 iconAlignment: "bar" === n ? "right" : "center"
             })]
-        }), !A && u]
+        }), !A && _]
     })
 }
 
@@ -119,7 +119,7 @@ function f(e) {
         ...t,
         overlayControls: null != n && (0, i.jsx)("div", {
             className: o.deleteButtonWrapper,
-            children: (0, i.jsx)(u, {
+            children: (0, i.jsx)(_, {
                 ...n
             })
         })
