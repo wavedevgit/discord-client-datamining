@@ -24,8 +24,8 @@ var i = n(627968),
     I = n(189081),
     N = n(67480),
     v = n(45938),
-    T = n(975571),
-    C = n(427262),
+    C = n(975571),
+    T = n(427262),
     j = n(161928),
     S = n(129851),
     y = n(229),
@@ -166,7 +166,7 @@ class L extends s.PureComponent {
             }), (0, i.jsx)(o.QWc, {
                 text: R.intl.string(R.t["/CjuXF"]),
                 textVariant: "text-sm/normal",
-                onClick: () => window.open(T.A.getArticleURL(b.MVz.GIFTING), "_blank")
+                onClick: () => window.open(C.A.getArticleURL(b.MVz.GIFTING), "_blank")
             })]
         })
     }
@@ -247,7 +247,7 @@ class L extends s.PureComponent {
                 }) : (0, i.jsx)(p.ME, {
                     className: O.QX,
                     children: R.intl.format(R.t.NYM08s, {
-                        userTag: C.Ay.getUserTag(t),
+                        userTag: T.Ay.getUserTag(t),
                         onLogoutClick: this.handleLogout
                     })
                 })]

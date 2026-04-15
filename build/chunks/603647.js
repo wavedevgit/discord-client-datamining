@@ -27,8 +27,8 @@ function N(e) {
     return I.some(t => e.startsWith(t))
 }
 let v = e => (i = e, e),
-    T = [A.BVt.VERIFY, A.BVt.VERIFY_HUB_EMAIL],
-    C = [A.BVt.GIFT_CARD_REDEEM];
+    C = [A.BVt.VERIFY, A.BVt.VERIFY_HUB_EMAIL],
+    T = [A.BVt.GIFT_CARD_REDEEM];
 
 function j(e) {
     let {
@@ -36,7 +36,7 @@ function j(e) {
     } = e, n = function() {
         let [e, t] = r.useState(!1), [n, s] = r.useState(!0), l = (0, o.bG)([p.A], () => p.A.hasLoadedExperiments);
         return ((0, d.A)(() => {}, 300), void 0 !== i) ? i : !n && l ? (e || t(!0), v("default")) : n ? v("default") : "loading"
-    }(), a = (0, l.zy)(), c = C.includes(a.pathname), u = T.includes(a.pathname);
+    }(), a = (0, l.zy)(), c = T.includes(a.pathname), u = C.includes(a.pathname);
     if (c) return t;
     switch (n) {
         case "default":

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     IK: () => v,
-    Kz: () => C
+    Kz: () => T
 });
 var i, s = n(627968),
     r = n(64700),
@@ -25,11 +25,11 @@ var i, s = n(627968),
     N = n(378613);
 a.Ay.initialize();
 var v = ((i = {}).SELECTION = "selection", i.DSA = "dsa", i.TIDA = "tida", i);
-let T = e => {
+let C = e => {
         let {
             transitionState: t,
             onClose: n
-        } = e, [i, v] = r.useState(!0), [C, j] = r.useState([]), [S, y] = r.useState(null), b = (0, a.bG)([p.default], () => p.default.isAuthenticated()), R = (0, a.bG)([u.A], () => u.A.hasLoadedExperiments), O = r.useCallback(() => {
+        } = e, [i, v] = r.useState(!0), [T, j] = r.useState([]), [S, y] = r.useState(null), b = (0, a.bG)([p.default], () => p.default.isAuthenticated()), R = (0, a.bG)([u.A], () => u.A.hasLoadedExperiments), O = r.useCallback(() => {
             (0, _.OY)().then(e => {
                 let {
                     body: {
@@ -50,8 +50,8 @@ let T = e => {
                 R || (await c.A.getLocationMetadata(), c.A.getExperiments())
             })()
         }, [R]);
-        let L = C.filter(e => e !== h.tY.MEDIA_TAKEDOWN),
-            w = C.includes(h.tY.MEDIA_TAKEDOWN),
+        let L = T.filter(e => e !== h.tY.MEDIA_TAKEDOWN),
+            w = T.includes(h.tY.MEDIA_TAKEDOWN),
             k = L.length > 0,
             D = k && w,
             B = i || !R;
@@ -59,7 +59,7 @@ let T = e => {
             B || k || w || n()
         }, [B, k, w, n]);
         let P = r.useCallback(() => {
-                (0, o.mMO)(() => Promise.resolve(e => (0, s.jsx)(T, {
+                (0, o.mMO)(() => Promise.resolve(e => (0, s.jsx)(C, {
                     ...e
                 })), {
                     dismissable: !1
@@ -159,8 +159,8 @@ let T = e => {
             })
         })
     },
-    C = () => (r.useEffect(() => {
-        (0, o.mMO)(() => Promise.resolve(e => (0, s.jsx)(T, {
+    T = () => (r.useEffect(() => {
+        (0, o.mMO)(() => Promise.resolve(e => (0, s.jsx)(C, {
             ...e
         })), {
             dismissable: !1

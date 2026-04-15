@@ -1,44 +1,44 @@
 /** chunk id: 723690 params = (module,exports,require) **/
-s.d(t, {
+i.d(t, {
     A: () => h
 });
-var i = s(627968);
-s(64700);
-var n = s(503698),
-    a = s.n(n),
-    r = s(311907),
-    l = s(297413),
-    u = s(966327),
-    o = s(994500);
-s(427262);
-var c = s(904625);
+var s = i(627968);
+i(64700);
+var n = i(503698),
+    a = i.n(n),
+    r = i(311907),
+    l = i(297413),
+    o = i(966327),
+    u = i(994500);
+i(427262);
+var c = i(904625);
 let h = function(e) {
     let {
         user: t,
-        hovered: s,
+        hovered: i,
         subText: n,
         showAccountIdentifier: h,
         status: d,
         isMobile: A,
-        isVR: I,
-        className: N
-    } = e, m = (0, r.bG)([o.A], () => o.A.getNickname(t.id));
-    return (0, i.jsxs)("div", {
-        className: a()(c.eF, N, {
-            [c.yo]: s
+        isVR: p,
+        className: m
+    } = e, N = (0, r.bG)([u.A], () => u.A.getNickname(t.id));
+    return (0, s.jsxs)("div", {
+        className: a()(c.eF, m, {
+            [c.yo]: i
         }),
-        children: [(0, i.jsx)(u.A, {
+        children: [(0, s.jsx)(o.A, {
             user: t,
             className: c.my,
-            animate: s,
+            animate: i,
             status: d,
             isMobile: A,
-            isVR: I
-        }), (0, i.jsxs)("div", {
+            isVR: p
+        }), (0, s.jsxs)("div", {
             className: c.Qq,
-            children: [(0, i.jsx)(l.A, {
+            children: [(0, s.jsx)(l.A, {
                 user: t,
-                nick: m,
+                nick: N,
                 botClass: c.AO,
                 className: a()(c.xK, {
                     [c.Nu]: t.hasUniqueUsername()
@@ -46,7 +46,7 @@ let h = function(e) {
                 usernameClass: c.Xh,
                 discriminatorClass: c.D2,
                 showAccountIdentifier: h
-            }), (0, i.jsx)("div", {
+            }), (0, s.jsx)("div", {
                 className: c.W$,
                 children: n
             })]

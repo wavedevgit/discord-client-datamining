@@ -43,14 +43,14 @@ function m(e, t) {
             m = null,
             A = null,
             f = null,
-            T = !0;
+            C = !0;
 
-        function C() {
+        function T() {
             if (null != o) return o;
             throw Error("No key pair set")
         }
         let j = () => {
-                T ? (T = !1, a.send(JSON.stringify({
+                C ? (C = !1, a.send(JSON.stringify({
                     op: "heartbeat"
                 }))) : (i("heartbeat timeout, reconnecting."), a.close(), v())
             },
@@ -61,7 +61,7 @@ function m(e, t) {
                 switch (o.op) {
                     case "nonce_proof": {
                         let e = o.encrypted_nonce,
-                            t = await u.A.decryptNonce(C(), e);
+                            t = await u.A.decryptNonce(T(), e);
                         i("computed nonce proof"), a.send(JSON.stringify({
                             op: "nonce_proof",
                             nonce: t
@@ -70,7 +70,7 @@ function m(e, t) {
                     }
                     case "pending_remote_init": {
                         I.succeed(), d._.dispatch(p.jej.WAVE_EMPHASIZE);
-                        let e = await u.A.publicKeyFingerprint(C());
+                        let e = await u.A.publicKeyFingerprint(T());
                         if (e !== o.fingerprint) throw Error(`bad fingerprint ${e} !== ${o.fingerprint}`);
                         i("handshake complete awaiting remote auth."), E({
                             step: _.b.PENDING_REMOTE_INIT,
@@ -102,7 +102,7 @@ function m(e, t) {
                     case "pending_ticket": {
                         d._.dispatch(p.jej.WAVE_EMPHASIZE), i("remote auth handshake started, awaiting ticket/cancel.");
                         let e = o.encrypted_user_payload,
-                            t = await (0, h.n7)(C(), e);
+                            t = await (0, h.n7)(T(), e);
                         E({
                             step: _.b.PENDING_TICKET,
                             user: t
@@ -121,7 +121,7 @@ function m(e, t) {
                         return
                     }
                     case "heartbeat_ack":
-                        T = !0;
+                        C = !0;
                         return;
                     default:
                         g.warn(n("received unsupported message"))

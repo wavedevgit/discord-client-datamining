@@ -24,8 +24,8 @@ var i = n(627968),
     I = n(49463),
     N = n(122906),
     v = n(121623),
-    T = n(850381),
-    C = n(21599),
+    C = n(850381),
+    T = n(21599),
     j = n(614986),
     S = n(957622),
     y = n(463347),
@@ -75,13 +75,13 @@ let er = (0, G.A)(Y.A),
     em = (0, G.A)(ee.A),
     eA = (0, G.A)(W.A),
     ef = (0, G.A)(E.A),
-    eE = (0, G.A)(T.A),
+    eE = (0, G.A)(C.A),
     ex = (0, G.A)(V.A),
     eI = (0, G.A)(H.A),
     eN = (0, G.A)(J.A),
     ev = (0, G.A)(Z.A),
-    eT = (0, G.A)(g.A),
-    eC = (0, G.A)(S.A);
+    eC = (0, G.A)(g.A),
+    eT = (0, G.A)(S.A);
 class ej extends s.PureComponent {
     state = {
         splash: null,
@@ -120,7 +120,7 @@ class ej extends s.PureComponent {
             isAuthenticated: n
         } = this.props;
         null != e && (!t && n && u.A.getExperiments(!0), k.default.track(ei.HAw.INVITE_OPENED, {
-            invite_code: (0, C.m0)(e),
+            invite_code: (0, T.m0)(e),
             load_time: U.A.getTimeSinceNavigationStart()
         }, {
             flush: !0
@@ -194,7 +194,7 @@ class ej extends s.PureComponent {
                 })
             }), (0, i.jsx)(m.A, {
                 path: ei.BVt.LOGIN_ONE_TIME,
-                render: e => (0, i.jsx)(eC, {
+                render: e => (0, i.jsx)(eT, {
                     ...e
                 })
             }), (0, i.jsx)(m.A, {
@@ -234,7 +234,7 @@ class ej extends s.PureComponent {
                         },
                         location: s,
                         transitionTo: r
-                    } = e, l = (0, C.fB)(t, s.search);
+                    } = e, l = (0, T.fB)(t, s.search);
                     return a.Fr || a.v1 ? (0, i.jsx)(ed, {
                         inviteKey: l,
                         transitionTo: r
@@ -347,7 +347,7 @@ class ej extends s.PureComponent {
                 })
             }), (0, i.jsx)(m.A, {
                 path: ei.BVt.ACCOUNT_REVERT(":token"),
-                render: e => (0, i.jsx)(eT, {
+                render: e => (0, i.jsx)(eC, {
                     ...e
                 })
             })]
@@ -358,7 +358,7 @@ let eS = c.Ay.connectStores([O.default, w.A, L.A, I.A, N.A], e => {
     let {
         match: t,
         location: n
-    } = e, i = t?.params?.inviteCode, s = null != i ? (0, C.fB)(i, n.search) : void 0, r = t?.params?.giftCode, l = t?.params?.guildTemplateCode;
+    } = e, i = t?.params?.inviteCode, s = null != i ? (0, T.fB)(i, n.search) : void 0, r = t?.params?.giftCode, l = t?.params?.guildTemplateCode;
     return {
         inviteKey: s,
         isAuthenticated: O.default.isAuthenticated(),

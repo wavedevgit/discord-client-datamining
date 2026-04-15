@@ -120,7 +120,7 @@ function k(e) {
                         }), (0, a.jsx)(_.A, {
                             size: 76,
                             percentComplete: X,
-                            percentCompleteText: s && !(0, g.Ic)(t) ? Z : void 0,
+                            overlayText: s && !(0, g.Ic)(t) ? Z : void 0,
                             children: (0, a.jsx)(j.A, {
                                 quest: t,
                                 questContent: n,

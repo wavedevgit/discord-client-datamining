@@ -1,77 +1,96 @@
 /** chunk id: 22212 params = (module,exports,require) **/
-s.d(t, {
-    Cf: () => l,
-    Jo: () => c,
-    WD: () => r,
+i.d(t, {
+    Cf: () => o,
+    Jo: () => h,
+    WD: () => l,
     X9: () => u,
-    lP: () => o,
-    xF: () => a
+    lP: () => c,
+    xF: () => r
 });
-var i = s(954571),
-    n = s(652215);
+var s = i(954571),
+    n = i(652215);
 
 function a(e) {
     let {
         targetUserId: t,
-        tab: s
+        tab: i,
+        actionType: a
     } = e;
-    i.default.track(n.HAw.FRIENDS_LIST_ITEM_CLICKED, {
+    s.default.track(n.HAw.FRIENDS_LIST_ITEM_ACTION, {
         target_user_id: t,
-        tab: s
+        tab: i,
+        action_type: a
     })
 }
 
 function r(e) {
     let {
         targetUserId: t,
-        tab: s
+        tab: i
     } = e;
-    i.default.track(n.HAw.FRIENDS_LIST_ITEM_MESSAGE_CLICKED, {
-        target_user_id: t,
-        tab: s
+    a({
+        targetUserId: t,
+        tab: i,
+        actionType: "row_clicked"
     })
 }
 
 function l(e) {
     let {
         targetUserId: t,
-        tab: s
+        tab: i
     } = e;
-    i.default.track(n.HAw.FRIENDS_LIST_ITEM_VIDEO_CALL_CLICKED, {
-        target_user_id: t,
-        tab: s
-    })
-}
-
-function u(e) {
-    let {
+    a({
         targetUserId: t,
-        tab: s
-    } = e;
-    i.default.track(n.HAw.FRIENDS_LIST_ITEM_VOICE_CALL_CLICKED, {
-        target_user_id: t,
-        tab: s
+        tab: i,
+        actionType: "message_clicked"
     })
 }
 
 function o(e) {
     let {
         targetUserId: t,
-        tab: s
+        tab: i
     } = e;
-    i.default.track(n.HAw.FRIENDS_LIST_ITEM_REMOVE_FRIEND_CLICKED, {
-        target_user_id: t,
-        tab: s
+    a({
+        targetUserId: t,
+        tab: i,
+        actionType: "video_call_clicked"
+    })
+}
+
+function u(e) {
+    let {
+        targetUserId: t,
+        tab: i
+    } = e;
+    a({
+        targetUserId: t,
+        tab: i,
+        actionType: "voice_call_clicked"
     })
 }
 
 function c(e) {
     let {
         targetUserId: t,
-        tab: s
+        tab: i
     } = e;
-    i.default.track(n.HAw.FRIENDS_LIST_ITEM_CONTEXT_MENU_INTERACTED, {
-        target_user_id: t,
-        tab: s
+    a({
+        targetUserId: t,
+        tab: i,
+        actionType: "remove_friend_clicked"
+    })
+}
+
+function h(e) {
+    let {
+        targetUserId: t,
+        tab: i
+    } = e;
+    a({
+        targetUserId: t,
+        tab: i,
+        actionType: "context_menu_interacted"
     })
 }

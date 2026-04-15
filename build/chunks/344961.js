@@ -24,16 +24,16 @@ var i = n(627968),
     I = n(985018),
     N = n(967824),
     v = n(885106);
-let T = n(906118);
+let C = n(906118);
 
-function C(e) {
+function T(e) {
     let {
         text: t = ""
     } = e, [n, r] = s.useState(!1);
     return s.useEffect(() => {
         let e = new Image;
-        e.src = T, e.onload = () => r(!0), e.onerror = () => r(!0)
-    }, [T]), s.useEffect(() => {
+        e.src = C, e.onload = () => r(!0), e.onerror = () => r(!0)
+    }, [C]), s.useEffect(() => {
         n && l.ORC.announce(I.intl.string(I.t.j2p125))
     }, [n]), (0, i.jsx)("div", {
         className: N.Ac,
@@ -45,7 +45,7 @@ function C(e) {
             }), (0, i.jsx)("div", {
                 className: N.R6,
                 children: (0, i.jsx)("img", {
-                    src: T,
+                    src: C,
                     alt: ""
                 })
             })]
@@ -86,7 +86,7 @@ function S(e) {
         case h.b.INITIALIZING:
         case h.b.PENDING_REMOTE_INIT:
             return (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(C, {
+                children: [(0, i.jsx)(T, {
                     text: t.step === h.b.PENDING_REMOTE_INIT ? `https://discord.com/ra/${t.fingerprint}` : ""
                 }), (0, i.jsx)(d.hE, {
                     className: v.QB,

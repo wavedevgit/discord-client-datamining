@@ -24,8 +24,8 @@ var i = n(627968),
     I = n(403362),
     N = n(860689),
     v = n(21599),
-    T = n(949155),
-    C = n(663572),
+    C = n(949155),
+    T = n(663572),
     j = n(439680),
     S = n(131929),
     y = n(66027),
@@ -113,7 +113,7 @@ function P(e) {
     let {
         invite: t
     } = e;
-    if (null == t || !(0, T.Fk)(t)) return null;
+    if (null == t || !(0, C.Fk)(t)) return null;
     let n = k(t);
     return (0, i.jsx)(B, {
         startAnimHeightPx: 0,
@@ -147,7 +147,7 @@ function G(e) {
                 n = null != e.traits && e.traits.filter(e => e.label.length > 0).length > 0,
                 i = null != e.gameApplicationIds && e.gameApplicationIds.length > 0;
             return t && (n || i)
-        }(o) && null != c && null != n && !(0, T.Fk)(n);
+        }(o) && null != c && null != n && !(0, C.Fk)(n);
     if (s.useEffect(() => {
             d && y.n.getConfig({
                 location: "AcceptInviteMobile.hasProfile"
@@ -160,7 +160,7 @@ function G(e) {
                 guild: c,
                 profile: o,
                 onAcceptInvite: e.onAcceptInvite
-            }) : (0, i.jsx)(C.A, {
+            }) : (0, i.jsx)(T.A, {
                 ...e,
                 invite: n
             });

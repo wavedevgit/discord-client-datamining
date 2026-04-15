@@ -1,21 +1,21 @@
 /** chunk id: 414711 params = (module,exports,require) **/
-s.d(t, {
-    A: () => m
+i.d(t, {
+    A: () => N
 });
-var i = s(627968),
-    n = s(64700),
-    a = s(503698),
-    r = s.n(a),
-    l = s(615300),
-    u = s(837381),
-    o = s(397927),
-    c = s(442433),
-    h = s(688810),
-    d = s(595623),
-    A = s(22212);
-s(646363);
-var I = s(904914);
-class N extends n.PureComponent {
+var s = i(627968),
+    n = i(64700),
+    a = i(503698),
+    r = i.n(a),
+    l = i(615300),
+    o = i(837381),
+    u = i(397927),
+    c = i(442433),
+    h = i(688810),
+    d = i(595623),
+    A = i(22212);
+i(646363);
+var p = i(904914);
+class m extends n.PureComponent {
     state = {
         height: new l.A.Value(this.props.height ?? 61),
         opacity: new l.A.Value(1),
@@ -44,13 +44,13 @@ class N extends n.PureComponent {
         let {
             isFocused: e,
             isActive: t,
-            onOtherHover: s
+            onOtherHover: i
         } = this.props, {
-            isContextMenuActive: i
+            isContextMenuActive: s
         } = this.state;
         this.setState({
             hovered: e
-        }), !e || t || i || s?.()
+        }), !e || t || s || i?.()
     };
     handleMouseLeave = () => {
         this.setState({
@@ -66,19 +66,19 @@ class N extends n.PureComponent {
         }), (0, c.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([s.e("97262"), s.e("32418"), s.e("77012")]).then(s.bind(s, 668569)), a = () => {
+            } = await Promise.all([i.e("97262"), i.e("32418"), i.e("77012")]).then(i.bind(i, 668569)), a = () => {
                 (0, A.Jo)({
                     targetUserId: t.id,
                     tab: d.Ay.getState().section
                 })
             };
-            return s => {
-                let r = (0, i.jsx)(e, {
-                    ...s,
+            return i => {
+                let r = (0, s.jsx)(e, {
+                    ...i,
                     user: t,
                     onInteraction: a
                 });
-                return null == n ? r : (0, i.jsx)(h.f5, {
+                return null == n ? r : (0, s.jsx)(h.f5, {
                     value: n,
                     children: r
                 })
@@ -95,7 +95,7 @@ class N extends n.PureComponent {
         let {
             height: e,
             opacity: t,
-            hovered: s,
+            hovered: i,
             isContextMenuActive: n
         } = this.state, {
             children: a,
@@ -103,26 +103,26 @@ class N extends n.PureComponent {
             onClick: h,
             isActive: d,
             className: A,
-            activeClassName: N,
-            noBorder: m
+            activeClassName: m,
+            noBorder: N
         } = this.props;
-        return (0, i.jsxs)(i.Fragment, {
-            children: [m ? null : (0, i.jsx)("div", {
-                className: r()(I.yF, {
-                    [I._]: d || n || s
+        return (0, s.jsxs)(s.Fragment, {
+            children: [N ? null : (0, s.jsx)("div", {
+                className: r()(p.yF, {
+                    [p._]: d || n || i
                 })
-            }), (0, i.jsx)(u.tG, {
+            }), (0, s.jsx)(o.tG, {
                 id: c.id,
-                children: u => (0, i.jsx)(o.vN3, {
+                children: o => (0, s.jsx)(u.vN3, {
                     offset: {
                         left: -8,
                         right: -8
                     },
-                    children: (0, i.jsx)(l.A.div, {
-                        className: r()(A, I.Vg, null != N ? {
-                            [N]: d || n
+                    children: (0, s.jsx)(l.A.div, {
+                        className: r()(A, p.Vg, null != m ? {
+                            [m]: d || n
                         } : null, {
-                            [I.vu]: d || n
+                            [p.vu]: d || n
                         }),
                         onContextMenu: e => this.handleContextMenu(e, c),
                         onMouseEnter: this.handleMouseEnter,
@@ -132,12 +132,12 @@ class N extends n.PureComponent {
                             height: e,
                             opacity: t
                         },
-                        ...u,
-                        children: a(s || d || n)
+                        ...o,
+                        children: a(i || d || n)
                     })
                 })
             })]
         })
     }
 }
-let m = N
+let N = m

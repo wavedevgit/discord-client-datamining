@@ -24,8 +24,8 @@ var i = n(627968),
     I = n(359438),
     N = n(383302),
     v = n(10088),
-    T = n(921037),
-    C = n(21599),
+    C = n(921037),
+    T = n(21599),
     j = n(942614),
     S = n(976860),
     y = n(210714),
@@ -277,7 +277,7 @@ function et(e) {
                 }), (0, y.d)("invite"), W.VP || B.A.launch("discord://" + F.BVt.INVITE(t), () => void 0), !l && k) {
                 let {
                     baseCode: e
-                } = (0, C.y$)(t);
+                } = (0, T.y$)(t);
                 (0, S.bG)(F.BVt.INVITE_LOGIN(e))
             }
         }), s.useEffect(() => {
@@ -299,7 +299,7 @@ function et(e) {
                     if (null != e) {
                         let i = (0, c.d)(e);
                         w.default.track(F.HAw.INVITE_LOGIN_SUCCESSFUL, {
-                            invite_code: (0, C.m0)(n),
+                            invite_code: (0, T.m0)(n),
                             guild_id: t?.guild?.id,
                             channel_id: t?.channel?.id,
                             inviter_id: t?.inviter?.id,
@@ -327,7 +327,7 @@ function et(e) {
                 }
             }, [t, i, _, h, l]), s.useEffect(() => {
                 null != t && r !== g && r === F.fAW.OPEN && w.default.track(F.HAw.INVITE_APP_INVOKED, {
-                    invite_code: (0, C.m0)(n),
+                    invite_code: (0, T.m0)(n),
                     guild_id: t.guild?.id,
                     channel_id: t.channel?.id,
                     inviter_id: t.inviter?.id,
@@ -373,7 +373,7 @@ function et(e) {
         error: P,
         handleAccept: er,
         handleDefaultTransition: el
-    }) : ea === F.elq.RESOLVED ? I && (0, o.Lt)(h.flags ?? 0, a.Q.IS_GUEST_INVITE) ? (p.Ay.openApp(h.code), u.u.set(T.B, h.code), (0, i.jsx)(X, {
+    }) : ea === F.elq.RESOLVED ? I && (0, o.Lt)(h.flags ?? 0, a.Q.IS_GUEST_INVITE) ? (p.Ay.openApp(h.code), u.u.set(C.B, h.code), (0, i.jsx)(X, {
         invite: h,
         onContinue: () => r(F.BVt.APP)
     })) : I || !W.VP ? (0, i.jsx)(Y, {

@@ -1,39 +1,39 @@
 /** chunk id: 513297 params = (module,exports,require) **/
-s.d(t, {
+i.d(t, {
     A: () => d
 });
-var i, n = s(627968);
-s(64700);
-var a = s(503698),
-    r = s.n(a),
-    l = s(990078),
-    u = s(397927),
-    o = s(196536),
-    c = ((i = c || {})[i.ACCEPT = 0] = "ACCEPT", i[i.DENY = 1] = "DENY", i[i.DEFAULT = 2] = "DEFAULT", i);
+var s, n = i(627968);
+i(64700);
+var a = i(503698),
+    r = i.n(a),
+    l = i(990078),
+    o = i(397927),
+    u = i(196536),
+    c = ((s = c || {})[s.ACCEPT = 0] = "ACCEPT", s[s.DENY = 1] = "DENY", s[s.DEFAULT = 2] = "DEFAULT", s);
 
 function h(e) {
     let {
         icon: t,
-        tooltip: s,
-        onClick: i,
+        tooltip: i,
+        onClick: s,
         actionType: a = 2,
         shouldHighlight: c,
         loading: h = !1
     } = e;
     return (0, n.jsx)(l.m, {
-        text: s,
-        children: (0, n.jsx)(u.DUT, {
+        text: i,
+        children: (0, n.jsx)(o.DUT, {
             tag: "div",
-            "aria-label": s,
-            onClick: h ? void 0 : i,
-            className: r()(o.hP, {
-                [o.Jj]: 0 === a,
-                [o.Bs]: 1 === a,
-                [o.Zt]: c,
-                [o.r9]: h
+            "aria-label": i,
+            onClick: h ? void 0 : s,
+            className: r()(u.hP, {
+                [u.Jj]: 0 === a,
+                [u.Bs]: 1 === a,
+                [u.Zt]: c,
+                [u.r9]: h
             }),
             children: (0, n.jsx)(t, {
-                className: o.Kk,
+                className: u.Kk,
                 color: "currentColor"
             })
         })

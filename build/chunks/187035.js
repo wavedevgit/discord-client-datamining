@@ -24,8 +24,8 @@ var i = n(627968),
     I = n(961350),
     N = n(650048),
     v = n(877062),
-    T = n(129851),
-    C = n(538796),
+    C = n(129851),
+    T = n(538796),
     j = n(229),
     S = n(652215),
     y = n(401755),
@@ -125,7 +125,7 @@ class D extends s.PureComponent {
                 return this.renderSpinner(L.intl.string(L.t["Z+hCVU"]));
             case y.QB.RESOLVED:
                 if (n || !O.VP) return this.renderAuthenticatedOrDownload();
-                if (this.props.login) return (0, i.jsx)(T.A, {
+                if (this.props.login) return (0, i.jsx)(C.A, {
                     guildTemplate: e,
                     transitionTo: s,
                     location: r
@@ -180,7 +180,7 @@ function P(e) {
             })
         })]
     });
-    return (0, i.jsx)(C.A, {
+    return (0, i.jsx)(T.A, {
         className: w.sL,
         children: () => [(0, i.jsx)(m.A, {
             guildTemplate: t

@@ -35,7 +35,7 @@ function w(e) {
         guildId: i
     } = e, {
         trackUserProfileEditSaved: s
-    } = (0, p.NJ)(), w = (0, d.bG)([u.A], () => u.A.useReducedMotion), [R, k] = l.useState(!1), [L, O] = l.useState(!1), {
+    } = (0, p.NJ)(), w = (0, d.bG)([u.A], () => u.A.useReducedMotion), [R, k] = l.useState(!1), [O, L] = l.useState(!1), {
         widgetsToSave: M,
         changedWidgets: _,
         removedWidgets: P,
@@ -75,7 +75,7 @@ function w(e) {
     }), B = l.useCallback(() => {
         j.A.clearPendingWidgets(), (0, A.XQ)()
     }, []), V = l.useCallback(async () => {
-        O(!0);
+        L(!0);
         let e = !0;
         if (F) try {
             if (null == i) {
@@ -140,7 +140,7 @@ function w(e) {
         } catch {
             e = !1
         }
-        e ? (0, c.x8)() : (0, E.XA)(b.jM.PROFILE_SAVE_GENERIC_FAILURE), O(!1)
+        e ? (0, c.x8)() : (0, E.XA)(b.jM.PROFILE_SAVE_GENERIC_FAILURE), L(!1)
     }, [F, U, M, _, P, s, i]);
     return l.useEffect(() => {
         let e = null;
@@ -174,13 +174,13 @@ function w(e) {
                     variant: "secondary",
                     text: y.intl.string(y.t.yBZMsQ),
                     onClick: B,
-                    disabled: !D || L
+                    disabled: !D || O
                 }), (0, n.jsx)(o.Button, {
                     size: "sm",
                     variant: "primary",
                     text: y.intl.string(y.t["R3BPH+"]),
                     onClick: V,
-                    loading: L,
+                    loading: O,
                     disabled: !W || !D
                 })]
             })]

@@ -25,8 +25,8 @@ var i = n(627968),
     I = n(235986),
     N = n(491509),
     v = n(895600),
-    T = n(720353),
-    C = n(559568),
+    C = n(720353),
+    T = n(559568),
     j = n(274303),
     S = n(13437),
     y = n(557722),
@@ -458,7 +458,7 @@ class J extends s.PureComponent {
                 className: e,
                 expanded: !0,
                 children: this.renderDefaultForm(!0)
-            }), t && (0, i.jsx)(C.A, {})]
+            }), t && (0, i.jsx)(T.A, {})]
         })
     }
     renderGuildTemplate(e) {
@@ -480,7 +480,7 @@ class J extends s.PureComponent {
             style: {
                 padding: 0
             },
-            children: (0, i.jsx)(T.t, {
+            children: (0, i.jsx)(C.t, {
                 mfaFinish: this.handleTokenSubmitMFA,
                 mfaChallenge: e,
                 onEarlyClose: () => {

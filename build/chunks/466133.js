@@ -23,23 +23,23 @@ r.Ay.initialize();
 let E = e => {
     let {
         location: t
-    } = e, n = (0, r.bG)([g.default], () => g.default.isAuthenticated()), E = (0, r.bG)([u.A], () => u.A.hasLoadedExperiments), x = (0, _.Jp)("RSL - Landing Page"), [I, N] = s.useState(!1), [v, T] = s.useState(A.intl.string(A.t["9exy+V"])), [C, j] = s.useState(!0), S = e => {
+    } = e, n = (0, r.bG)([g.default], () => g.default.isAuthenticated()), E = (0, r.bG)([u.A], () => u.A.hasLoadedExperiments), x = (0, _.Jp)("RSL - Landing Page"), [I, N] = s.useState(!1), [v, C] = s.useState(A.intl.string(A.t["9exy+V"])), [T, j] = s.useState(!0), S = e => {
         switch (e) {
             case m.t02.INVALID_FORM_BODY:
             case m.t02.DSA_RSL_REPORT_NOT_FOUND:
-                T(A.intl.string(A.t.bzXDfc));
+                C(A.intl.string(A.t.bzXDfc));
                 break;
             case m.t02.DSA_RSL_ALREADY_REQUESTED:
-                T(A.intl.string(A.t.rV00wq));
+                C(A.intl.string(A.t.rV00wq));
                 break;
             case m.t02.DSA_RSL_LIMITED_TIME:
-                T(A.intl.string(A.t["0dI29h"]));
+                C(A.intl.string(A.t["0dI29h"]));
                 break;
             case m.t02.DSA_RSL_REPORT_INELIGIBLE:
-                T(A.intl.string(A.t["RGa/Gb"]));
+                C(A.intl.string(A.t["RGa/Gb"]));
                 break;
             default:
-                T(A.intl.string(A.t["0QLzfv"]))
+                C(A.intl.string(A.t["0QLzfv"]))
         }
     };
     return s.useEffect(() => {
@@ -52,7 +52,7 @@ let E = e => {
         let e = async e => {
             try {
                 let t = null != e ? await (0, h.q)(e) : void 0;
-                null != t ? T(A.intl.string(A.t.e6mZMt)) : S(t.body?.code)
+                null != t ? C(A.intl.string(A.t.e6mZMt)) : S(t.body?.code)
             } catch (e) {
                 S(e.body?.code)
             } finally {
@@ -60,7 +60,7 @@ let E = e => {
             }
         };
         N(!0), e((0, c.A)(t)), (0, p.d)("report_second_look")
-    }, [t]), x && !C && (0, i.jsxs)(d.Ay, {
+    }, [t]), x && !T && (0, i.jsxs)(d.Ay, {
         children: [(0, i.jsx)(d.hE, {
             className: f.QB,
             children: v

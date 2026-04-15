@@ -16,13 +16,13 @@ var n = s(627968),
     m = s(770178),
     x = s(765548),
     h = s(697397),
-    C = s(859703),
-    g = s(341915),
-    p = s(245853),
-    A = s(890687),
-    S = s(971649),
-    f = s(792620),
-    v = s(753386),
+    g = s(859703),
+    A = s(341915),
+    C = s(245853),
+    p = s(890687),
+    v = s(971649),
+    S = s(792620),
+    f = s(753386),
     j = s(73473),
     N = s(839727),
     O = s(795068),
@@ -45,9 +45,9 @@ function b(e) {
         autoplay: o,
         videoSessionId: d,
         impressionRef: h,
-        parentModalOpenStartClockTime: C,
-        sourceQuestContent: g
-    } = e, j = (0, f.Yh)(i), b = (0, A.LS)(i), I = (0, S.go)(), {
+        parentModalOpenStartClockTime: g,
+        sourceQuestContent: A
+    } = e, j = (0, S.Yh)(i), b = (0, p.LS)(i), I = (0, v.go)(), {
         progressSec: Q,
         trackProgress: R
     } = (0, _.y)({
@@ -56,7 +56,7 @@ function b(e) {
         completedAt: i.userStatus?.completedAt
     }), [q, G] = l.useState(142), [U, H] = l.useState(!1), w = i.config.taskConfigV2?.tasks?.[u.n.WATCH_VIDEO];
     r()(null != w, "VideoQuestModal: videoTask must not be null");
-    let F = (0, v.eG)(w),
+    let F = (0, f.eG)(w),
         W = "portrait" === F,
         K = (0, x.A)(e => {
             G(e.target.offsetHeight)
@@ -65,19 +65,19 @@ function b(e) {
         z = i.config.features.includes(D.Li.FULL_EPISODE_VIDEO_QUEST),
         {
             enabled: B
-        } = p.jS.useConfig({
+        } = C.jS.useConfig({
             location: D.rE.VIDEO_MODAL
         }),
         J = B || z,
         X = (0, E.H)({
             quest: i,
             onClose: s,
-            sourceQuestContent: g,
+            sourceQuestContent: A,
             impressionId: I
         }),
         Z = l.useMemo(() => ({
             quest: i,
-            sourceQuestContent: g,
+            sourceQuestContent: A,
             videoSessionId: d,
             isPortrait: W,
             onClose: s,
@@ -86,7 +86,7 @@ function b(e) {
             setIsFullscreenEnabled: H,
             progressSec: Q,
             targetSec: j.targetSeconds
-        }), [i, g, d, W, s, U, J, H, Q, j.targetSeconds]);
+        }), [i, A, d, W, s, U, J, H, Q, j.targetSeconds]);
     return (0, n.jsx)(O.a.Provider, {
         value: Z,
         children: (0, n.jsx)("div", {
@@ -131,7 +131,7 @@ function b(e) {
                                 parentTransitionState: t,
                                 onOptimisticProgressUpdate: R,
                                 autoplay: o,
-                                performanceClockStartTime: C,
+                                performanceClockStartTime: g,
                                 orientation: F
                             }), W ? (0, n.jsxs)("div", {
                                 ref: Y,
@@ -178,14 +178,14 @@ function I(e) {
         autoplay: i,
         openStartClockTime: a,
         ...o
-    } = e, r = (0, d.bG)([C.A], () => C.A.getQuest(t)), u = (0, d.bG)([C.A], () => C.A.getQuestConfig(t)), c = s ?? r, m = null != s ? s.config : u, x = l.useMemo(() => null != m ? {
+    } = e, r = (0, d.bG)([g.A], () => g.A.getQuest(t)), u = (0, d.bG)([g.A], () => g.A.getQuestConfig(t)), c = s ?? r, m = null != s ? s.config : u, x = l.useMemo(() => null != m ? {
         questConfig: m
     } : null, [m]);
     return null != c && null != m && null != x ? (0, n.jsx)(O.l.Provider, {
         value: x,
         children: (0, n.jsx)(j.R, {
             questOrQuests: c,
-            questContent: g.uF.VIDEO_MODAL,
+            questContent: A.uF.VIDEO_MODAL,
             minViewTimeSeconds: h.bq,
             trackGuildAndChannelMetadata: !0,
             sourceQuestContent: o.sourceQuestContent,

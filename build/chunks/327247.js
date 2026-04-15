@@ -127,7 +127,7 @@ function D(e) {
                     }), (0, i.jsx)(v.A, {
                         size: 76,
                         percentComplete: J,
-                        percentCompleteText: l && !H ? Z : void 0,
+                        overlayText: l && !H ? Z : void 0,
                         children: (0, i.jsx)(S.A, {
                             quest: t,
                             questContent: n,

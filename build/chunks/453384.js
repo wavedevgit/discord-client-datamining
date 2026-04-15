@@ -17,8 +17,8 @@ let b = "var(--background-mod-strong)",
             percentComplete: r,
             size: a = 42,
             style: p = "default",
-            percentCompleteText: C,
-            percentCompleteTextVariant: v = "text-lg/medium",
+            overlayText: C,
+            overlayTextVariant: v = "text-lg/medium",
             children: m
         } = e, {
             strokeWidth: u

@@ -19,11 +19,11 @@ var p = n(985018),
     g = n(435115),
     m = n(885106);
 let A = () => {
-    let [e, t] = s.useState(""), [r, A] = s.useState(""), [f, E] = s.useState(!1), [x, I] = s.useState(!1), [N, v] = s.useState(null), [T, C] = s.useState(null), j = (0, a.bG)([u.A], () => u.A.getCountryCode()), S = j.code.split(" ")[0], y = async () => {
+    let [e, t] = s.useState(""), [r, A] = s.useState(""), [f, E] = s.useState(!1), [x, I] = s.useState(!1), [N, v] = s.useState(null), [C, T] = s.useState(null), j = (0, a.bG)([u.A], () => u.A.getCountryCode()), S = j.code.split(" ")[0], y = async () => {
         try {
             await c.A.resendCode(e)
         } catch (e) {
-            C(e.body.message)
+            T(e.body.message)
         }
     }, b = async () => {
         E(!0);
@@ -31,9 +31,9 @@ let A = () => {
             let {
                 token: t
             } = await c.A.verifyPhone(S + e, r);
-            v(null), C(null), I(!0), c.A.validatePhoneForSupport(t)
+            v(null), T(null), I(!0), c.A.validatePhoneForSupport(t)
         } catch (e) {
-            e.body.message ? (v(null), C(e.body.message)) : (v(e.body.phone), C(e.body.code))
+            e.body.message ? (v(null), T(e.body.message)) : (v(e.body.phone), T(e.body.code))
         } finally {
             E(!1)
         }
@@ -73,7 +73,7 @@ let A = () => {
                 value: r,
                 onChange: A,
                 maxLength: 6,
-                error: T
+                error: C
             }), (0, i.jsx)(o.QWc, {
                 text: p.intl.string(p.t["5b60gi"]),
                 onClick: y
