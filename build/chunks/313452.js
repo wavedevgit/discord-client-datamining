@@ -28,9 +28,9 @@ var i = n(627968),
     b = n(652215),
     y = n(537729),
     v = n(985018),
-    R = n(852259);
+    j = n(852259);
 
-function j(e) {
+function R(e) {
     e.stopPropagation()
 }
 
@@ -43,8 +43,8 @@ function O(e) {
     return (0, i.jsx)(u.DUT, {
         "aria-expanded": n,
         onClick: l,
-        className: a()(R.TP, {
-            [R.yZ]: !n
+        className: a()(j.TP, {
+            [j.yZ]: !n
         }),
         children: (0, i.jsxs)(u.BJc, {
             gap: 4,
@@ -53,11 +53,11 @@ function O(e) {
             children: [(0, i.jsx)(u.Heading, {
                 variant: "text-sm/medium",
                 color: "text-subtle",
-                className: R.P7,
+                className: j.P7,
                 children: (0, r.capitalize)(v.intl.string(S.v7[t]).toLowerCase())
             }), (0, i.jsx)(u.abt, {
                 size: "xxs",
-                className: R.ai
+                className: j.ai
             })]
         })
     })
@@ -69,7 +69,7 @@ function M() {
         analyticsLocations: e
     } = (0, _.Ay)(A.A.NOTIFICATIONS_INBOX);
     return (0, i.jsx)("div", {
-        className: R.y7,
+        className: j.y7,
         children: (0, i.jsxs)(u.BJc, {
             gap: 24,
             align: "center",
@@ -256,9 +256,9 @@ function D(e) {
         messagesByCategory: X,
         viewId: G
     }), (0, i.jsx)("div", {
-        className: a()(v, R.KQ),
-        onClick: j,
-        onDoubleClick: j,
+        className: a()(v, j.KQ),
+        onClick: R,
+        onDoubleClick: R,
         "aria-label": e["aria-label"],
         children: (0, i.jsx)(d.hD, {
             navigator: k,
@@ -272,7 +272,7 @@ function D(e) {
                         ref: e => {
                             P.current = e, t.current = e?.getScrollerNode() ?? null
                         },
-                        className: a()(R.m4, y),
+                        className: a()(j.m4, y),
                         onScroll: q,
                         fade: !0,
                         ...n,

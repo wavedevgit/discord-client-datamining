@@ -33,8 +33,8 @@ function S(e) {
         onContextMenu: b,
         channel: y,
         className: v,
-        inCall: R,
-        totalNumberOfParticipants: j,
+        inCall: j,
+        totalNumberOfParticipants: R,
         popoutType: O
     } = e, L = (0, m.Us)() === N.BRT.POPOUT, M = (0, r.bG)([f.A], () => f.A.getGuild(y.guild_id), [y.guild_id]), {
         dismissedActivityEntryPointTileChannel: D
@@ -66,7 +66,7 @@ function S(e) {
             onClick: n,
             onDoubleClick: S,
             onContextMenu: b,
-            inCall: R,
+            inCall: j,
             width: t,
             popoutType: O
         }, e.id));
@@ -74,7 +74,7 @@ function S(e) {
         type: s.ImpressionTypes.VIEW,
         name: s.ImpressionNames.CHANNEL_CALL_VIDEO_GRID_VIEW,
         properties: {
-            total_participants: j,
+            total_participants: R,
             can_invite: k,
             is_afk_channel: w,
             channel_user_limit: y.userLimit

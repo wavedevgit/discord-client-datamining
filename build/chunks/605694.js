@@ -21,8 +21,8 @@ var l = n(627968),
     v = n(531913),
     T = n(385771),
     j = n(789069),
-    E = n(429913),
-    A = n(409626),
+    A = n(429913),
+    E = n(409626),
     I = n(692969),
     N = n(207963),
     R = n(953756),
@@ -48,10 +48,10 @@ function M(e) {
         user: n,
         widget: a,
         cta: s
-    } = e, o = (0, m.bG)([L.default], () => L.default.getId()) === n.id, c = (0, E.h)(a.applicationId), u = c?.getIconURL(16), p = (0, m.bG)([O.A], () => null != c ? O.A.getGameByApplication(c) : null), y = (0, I.A)({
+    } = e, o = (0, m.bG)([L.default], () => L.default.getId()) === n.id, c = (0, A.h)(a.applicationId), u = c?.getIconURL(16), p = (0, m.bG)([O.A], () => null != c ? O.A.getGameByApplication(c) : null), y = (0, I.A)({
         location: "UserProfileApplicationWidget",
         applicationId: p?.id,
-        source: A.Ob.UserProfile,
+        source: E.Ob.UserProfile,
         sourceUserId: n.id,
         trackEntryPointImpression: !0
     }), {
@@ -589,8 +589,8 @@ function ei(e) {
         } = e,
         j = M(e),
         {
-            isLoading: E,
-            hasData: A,
+            isLoading: A,
+            hasData: E,
             components: I
         } = (t = p.id, n = g.applicationId, a = (0, T.A)(), s = (0, m.bG)([D.A], () => D.A.getUserIdentityByApplication(t, n)), o = (0, m.bG)([S.A], () => S.A.getApplicationWidgetConfig(n)), c = (0, m.bG)([D.A, S.A], () => null == D.A.getUserIdentities(t) || null == S.A.applicationWidgetConfigs), d = i.useMemo(() => {
             var e, t;
@@ -689,8 +689,8 @@ function ei(e) {
             })
         }), (0, l.jsx)(U, {
             isCurrentUser: j.isCurrentUser,
-            isLoading: E,
-            hasData: A,
+            isLoading: A,
+            hasData: E,
             showConnectCta: j.showConnectCta,
             showReconnectCta: j.showReconnectCta,
             handleConnect: j.handleConnect,

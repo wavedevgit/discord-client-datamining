@@ -1,6 +1,6 @@
 /** chunk id: 288531 params = (module,exports,require) **/
 n.d(t, {
-    A: () => M
+    A: () => D
 });
 var i = n(627968);
 n(64700);
@@ -60,7 +60,7 @@ function w(e) {
     })
 }
 
-function D(e) {
+function M(e) {
     let {
         quest: t,
         progressState: n,
@@ -89,13 +89,13 @@ function D(e) {
         })
     }, m.tooltipText)
 }
-let M = e => {
+let D = e => {
     let {
         quest: t,
         location: n,
         size: a,
         isFocused: v,
-        isQuestExpired: M,
+        isQuestExpired: D,
         isExpanded: k,
         isAnimating: O,
         contentPosition: U,
@@ -113,7 +113,7 @@ let M = e => {
         gameProfileSource: c.Ob.QuestEmbed
     }), Q = (0, r.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), K = p.t.useConfig({
         location: j.rE.QUEST_HOME_DESKTOP
-    }), X = (0, y.Pd)(t), J = (0, r.bG)([u.default], () => u.default.locale), Z = (0, A.Oq)(), $ = (0, A.SD)(t), ee = Z && $, et = M && !H, en = (0, E.vv)(t);
+    }), X = (0, y.Pd)(t), J = (0, r.bG)([u.default], () => u.default.locale), Z = (0, A.Oq)(), $ = (0, A.SD)(t), ee = Z && $, et = D && !H, en = (0, E.vv)(t);
     return (0, i.jsx)("div", {
         className: P.zr,
         children: (0, i.jsx)("div", {
@@ -134,7 +134,7 @@ let M = e => {
                     shouldShow: et,
                     children: (0, i.jsxs)("div", {
                         className: P.D9,
-                        children: [M && (0, i.jsx)("div", {
+                        children: [D && (0, i.jsx)("div", {
                             className: P.FL,
                             children: (0, i.jsx)(d.EpV, {
                                 color: d.LU0.colors.WHITE
@@ -160,7 +160,7 @@ let M = e => {
                         children: [(0, i.jsx)(d.Text, {
                             variant: "lg" === a ? "text-md/medium" : "sm" === a ? "text-sm/medium" : "text-xs/medium",
                             className: P.$p,
-                            children: M ? R.intl.formatToPlainString(R.t["ge+AJp"], {
+                            children: D ? R.intl.formatToPlainString(R.t["ge+AJp"], {
                                 questName: t.config.messages.questName
                             }) : q
                         }), $ && (0, i.jsx)(b.e, {
@@ -216,7 +216,7 @@ let M = e => {
                             }({
                                 quest: t,
                                 locale: J,
-                                isQuestExpired: M,
+                                isQuestExpired: D,
                                 collectibleQuestRewardDescription: Y,
                                 formattedCompletionDate: F
                             })
@@ -264,7 +264,7 @@ let M = e => {
                         analyticsCtxQuestContent: n,
                         analyticsCtxSourceQuestContent: B,
                         analyticsCtxQuestContentPosition: U
-                    }) : (0, i.jsx)(D, {
+                    }) : (0, i.jsx)(M, {
                         quest: t,
                         progressState: G,
                         questContent: n,

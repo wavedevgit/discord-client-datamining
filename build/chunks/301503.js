@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(397927),
-    a = n(178629),
+    a = n(397927),
+    r = n(178629),
     s = n(770472),
     o = n(737823),
     d = (n(153527), n(876622)),
@@ -30,7 +30,7 @@ function S() {
             onScroll: t,
             scrollPosition: n,
             resetScrollPosition: S
-        } = (0, a.G)(),
+        } = (0, r.G)(),
         {
             tabs: x,
             selectedTab: v,
@@ -94,17 +94,17 @@ function S() {
             children: [!j && (0, i.jsx)(o.ns, {
                 scrollPosition: n
             }), j ? (0, i.jsx)(o.XQ, {
-                icon: r.Zge,
+                icon: a.Zge,
                 onClick: P
             }) : (0, i.jsx)(o.T4, {
-                icon: r.RR9
+                icon: a.RR9
             }), !j && (0, i.jsx)(d.A, {
                 className: k,
                 tabs: H,
                 selectedTab: v,
                 onTabSelect: B,
                 onAvailableWidthChange: w
-            }), j && (0, i.jsx)(r.Heading, {
+            }), j && (0, i.jsx)(a.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
                 className: N.ov,

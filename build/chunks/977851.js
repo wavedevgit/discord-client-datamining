@@ -79,8 +79,8 @@ function T(e) {
         y = l.useRef(null),
         v = (0, o.bG)([u.A], () => u.A.getChatOpen(n), [n]),
         {
-            isShowing: R,
-            unreadCount: j,
+            isShowing: j,
+            unreadCount: R,
             mentionCount: O
         } = function(e) {
             let {
@@ -138,7 +138,7 @@ function T(e) {
     let k = [t = _ && b ? I.intl.string(I.t.DPgc5h) : v ? I.intl.string(I.t.nthdxB) : I.intl.string(I.t["5KxXrK"])];
     return O > 0 && k.push(I.intl.formatToPlainString(I.t["3l1GOx"], {
         mentionCount: O
-    })), j > 0 && k.push(I.intl.string(I.t.x5zAGZ)), (0, i.jsx)(E.A, {
+    })), R > 0 && k.push(I.intl.string(I.t.x5zAGZ)), (0, i.jsx)(E.A, {
         buttonRef: y,
         onClick: L,
         label: t,
@@ -146,7 +146,7 @@ function T(e) {
         iconComponent: M,
         tooltipPosition: "bottom",
         wrapperClassName: a()(s, null != r && {
-            [r]: R
+            [r]: j
         }),
         forceTooltipOpen: U,
         ...T

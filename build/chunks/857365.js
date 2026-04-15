@@ -4,25 +4,25 @@ n.d(t, {
 });
 var i = n(451988),
     l = n(73153),
-    r = n(272355),
-    a = n(961350),
+    a = n(272355),
+    r = n(961350),
     s = n(954571),
     o = n(927813),
     d = n(728458),
     c = n(881615),
     u = n(789999),
     A = n(652215);
-let h = a.default.getToken();
-class _ extends r.A {
+let h = r.default.getToken();
+class _ extends a.A {
     focusedOrForegrounded = (0, u.R)();
     heartbeatInterval = new i.IX;
     schedulerStarted = !1;
     lastHeartbeatTimestamp = 0;
     _initialize() {
-        this.focusedOrForegrounded = (0, u.R)(), a.default.addChangeListener(this.handleAuthenticationChange), l.h.subscribe("WINDOW_FOCUS", this.handleWindowFocus), l.h.subscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), l.h.subscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), l.h.subscribe("LOGIN_SUCCESS", this.handleLogin), l.h.subscribe("LOGOUT", this.handleLogout), this.scheduleHeartbeatTracking()
+        this.focusedOrForegrounded = (0, u.R)(), r.default.addChangeListener(this.handleAuthenticationChange), l.h.subscribe("WINDOW_FOCUS", this.handleWindowFocus), l.h.subscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), l.h.subscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), l.h.subscribe("LOGIN_SUCCESS", this.handleLogin), l.h.subscribe("LOGOUT", this.handleLogout), this.scheduleHeartbeatTracking()
     }
     _terminate() {
-        this.stopAnalyticHeartbeat(), a.default.removeChangeListener(this.handleAuthenticationChange), l.h.unsubscribe("WINDOW_FOCUS", this.handleWindowFocus), l.h.unsubscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), l.h.unsubscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), l.h.unsubscribe("LOGIN_SUCCESS", this.handleLogin), l.h.unsubscribe("LOGOUT", this.handleLogout)
+        this.stopAnalyticHeartbeat(), r.default.removeChangeListener(this.handleAuthenticationChange), l.h.unsubscribe("WINDOW_FOCUS", this.handleWindowFocus), l.h.unsubscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), l.h.unsubscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), l.h.unsubscribe("LOGIN_SUCCESS", this.handleLogin), l.h.unsubscribe("LOGOUT", this.handleLogout)
     }
     maybeStartHeartbeat = () => {
         this.heartbeatInterval.isStarted() || (this.trackHeartbeat(), this.heartbeatInterval.start(5 * o.A.Millis.MINUTE, this.trackHeartbeat))
@@ -48,10 +48,10 @@ class _ extends r.A {
                 i = n - e.lastHeartbeatTimestamp,
                 l = 5 * o.A.Millis.MINUTE;
             if (!t && e.lastHeartbeatTimestamp > 0 && i < l) return;
-            let r = (0, c.sN)();
+            let a = (0, c.sN)();
             s.default.track(A.HAw.CLIENT_AD_HEARTBEAT, {
-                client_ad_session_id: r.uuid,
-                client_heartbeat_initialization_timestamp: r.createdAtTimestamp,
+                client_ad_session_id: a.uuid,
+                client_heartbeat_initialization_timestamp: a.createdAtTimestamp,
                 client_heartbeat_version: 3
             }), e.lastHeartbeatTimestamp = n
         }
@@ -99,7 +99,7 @@ class _ extends r.A {
         this.focusedOrForegrounded = t === A.g6G.ACTIVE, this.scheduleHeartbeatTracking("APP_STATE_UPDATE")
     };
     handleAuthenticationChange = () => {
-        let e = a.default.getToken();
+        let e = r.default.getToken();
         h !== e && (h = e, (0, c.Db)(), this.stopAnalyticHeartbeat()), this.scheduleHeartbeatTracking()
     }
 }

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(311907),
-    a = n(397927),
+    a = n(311907),
+    r = n(397927),
     s = n(157559),
     o = n(229224),
     d = n(189252),
@@ -26,7 +26,7 @@ class m extends l.PureComponent {
         clicked: !1
     };
     handleDownloadApps() {
-        (0, a.qfG)(e => (0, i.jsx)(c.default, {
+        (0, r.qfG)(e => (0, i.jsx)(c.default, {
             source: "Links",
             ...e
         }))
@@ -51,14 +51,14 @@ class m extends l.PureComponent {
             t = "UPDATE_DOWNLOADED" === this.props.mode || "UPDATE_MANUALLY" === this.props.mode;
         return e || t ? (0, i.jsx)(d.A, {
             tooltip: e ? h.intl.string(h.t["zp9d/4"]) : h.intl.string(h.t.u18OXF),
-            color: a.LU0.unsafe_rawColors.GREEN_360.css,
+            color: r.LU0.unsafe_rawColors.GREEN_360.css,
             colorClass: e ? _.z : void 0,
             onClick: this.handleInstallDownload,
-            icon: a.s3U,
+            icon: r.s3U,
             disabled: e
         }) : null
     }
 }
-let g = r.Ay.connectStores([u.A], () => ({
+let g = a.Ay.connectStores([u.A], () => ({
     mode: u.A.getState()
 }))(m)

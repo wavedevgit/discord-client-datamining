@@ -32,8 +32,8 @@ function v(e) {
     let t, n, {
             onOpen: s,
             onClose: v,
-            children: R,
-            badgeState: j,
+            children: j,
+            badgeState: R,
             popoutPosition: O,
             popoutAlign: L,
             targetElementRef: M,
@@ -103,7 +103,7 @@ function v(e) {
                             component: (0, i.jsx)(C.A, {
                                 tab: w,
                                 setTab: B,
-                                badgeState: j,
+                                badgeState: R,
                                 closePopout: F
                             }),
                             children: w === d.Y2.FOR_YOU ? (0, i.jsx)(x.Ay, {}) : w === d.Y2.MENTIONS ? (0, i.jsx)(I.A, {
@@ -130,7 +130,7 @@ function v(e) {
                 let {
                     isShown: n
                 } = t;
-                return R(W, n, e, z)
+                return j(W, n, e, z)
             }
         })
     })

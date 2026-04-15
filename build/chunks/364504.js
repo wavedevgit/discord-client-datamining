@@ -23,10 +23,9 @@ function x(e) {
     let {
         profileUserId: t,
         handleOpenUserProfileModal: n,
-        markAsDismissed: d,
-        applicationIds: c
+        markAsDismissed: d
     } = e, {
-        analyticsLocations: x
+        analyticsLocations: c
     } = (0, l.Ay)([s.A.WISHLIST_ACCOUNT_POPOUT_UPSSELL]);
     return null == t ? null : (0, a.jsxs)(r.A, {
         heading: u.intl.string(u.t["vy/61K"]),
@@ -37,11 +36,10 @@ function x(e) {
         height: 560,
         children: [(0, a.jsx)(o.A, {
             userId: t,
-            analyticsLocations: x,
+            analyticsLocations: c,
             handleOpenUserProfileModal: n,
             numWishlistItemsToRecommend: 9,
-            className: m.KN,
-            applicationIds: c
+            className: m.KN
         }), (0, a.jsx)("div", {
             className: m.UD,
             children: (0, a.jsx)(i.$nd, {

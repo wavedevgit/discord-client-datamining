@@ -4,12 +4,12 @@ i.d(t, {
 });
 var n = i(627968);
 i(64700);
-var s = i(398590),
-    l = i(114212),
+var l = i(398590),
+    s = i(114212),
     a = i(345942),
     r = i(183555),
-    o = i(913453),
-    d = i(51943),
+    d = i(913453),
+    o = i(51943),
     c = i(782505),
     u = i(515054),
     g = i(499044);
@@ -23,7 +23,7 @@ function m(e) {
     } = (0, r.NJ)(), {
         mutualGuilds: h,
         isFetching: x
-    } = (0, o.A)(t);
+    } = (0, d.A)(t);
     return (0, n.jsx)(u.K, {
         className: g.XG,
         fade: !0,
@@ -31,28 +31,28 @@ function m(e) {
             length: 10
         }).map((e, t) => (0, n.jsxs)("div", {
             className: g.Y7,
-            children: [(0, n.jsx)(l.FQ, {
+            children: [(0, n.jsx)(s.FQ, {
                 width: 40,
                 opacity: .08
-            }), (0, n.jsx)(l.FQ, {
+            }), (0, n.jsx)(s.FQ, {
                 width: 135,
                 opacity: .08
             })]
         }, t)) : (null != h || x) && h?.length !== 0 ? h?.map(e => {
             let {
-                guild: l,
+                guild: s,
                 nick: r
             } = e;
-            return (0, n.jsx)(d.A, {
+            return (0, n.jsx)(o.A, {
                 user: t,
-                guild: l,
+                guild: s,
                 nick: r,
                 onSelect: () => {
                     m({
                         action: "PRESS_MUTUAL_GUILD"
-                    }), (0, a.u)(l.id), i(), (0, s.jH)()
+                    }), (0, a.u)(s.id), i(), (0, l.jH)()
                 }
-            }, l.id)
+            }, s.id)
         }) : (0, n.jsx)(c.jB, {})
     })
 }

@@ -1,10 +1,10 @@
 /** chunk id: 793319 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(179771),
     l = n(773669);
-let r = {
+let a = {
     [n(652215).e$_.USER_SETTINGS_GET_LOCALE]: {
         scope: i.F.IDENTIFY,
         handler: () => ({

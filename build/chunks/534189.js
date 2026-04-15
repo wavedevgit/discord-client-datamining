@@ -29,8 +29,8 @@ var l = n(934551),
     b = n(810396),
     y = n(243166),
     v = n(652215),
-    R = n(996988),
-    j = n(985018),
+    j = n(996988),
+    R = n(985018),
     O = n(733866);
 
 function L(e) {
@@ -62,7 +62,7 @@ function L(e) {
             onOpenProfile: U,
             tags: (0, i.jsx)(m.A, {
                 displayProfile: L,
-                themeType: R.d.SIDEBAR
+                themeType: j.d.SIDEBAR
             }),
             nicknameIcons: B ? null : (0, i.jsx)(y.A, {
                 userId: t.id,
@@ -90,7 +90,7 @@ function L(e) {
             })
         }), t.isProvisional && (0, i.jsx)(S.A.Overlay, {
             children: (0, i.jsx)(N.A, {
-                heading: j.intl.string(j.t.Iyka0U),
+                heading: R.intl.string(R.t.Iyka0U),
                 headingIcon: (0, i.jsx)(l.CircleErrorIcon, {
                     size: "xxs",
                     color: a.A.colors.TEXT_STRONG
@@ -107,7 +107,7 @@ function L(e) {
         }), (0, i.jsxs)(S.A.Overlay, {
             className: O.Lw,
             children: [!B && L?.bio != null && L?.bio !== "" && (0, i.jsx)(N.A, {
-                heading: j.intl.string(j.t.ZzAR2Y),
+                heading: R.intl.string(R.t.ZzAR2Y),
                 headingColor: "text-strong",
                 children: (0, i.jsx)(p.A, {
                     userId: t.id,
@@ -120,13 +120,13 @@ function L(e) {
                 commandIds: V.popularApplicationCommandIds,
                 channel: M
             }), w.length > 0 && (0, i.jsx)(N.A, {
-                heading: j.intl.string(j.t["Uv/eTx"]),
+                heading: R.intl.string(R.t["Uv/eTx"]),
                 headingColor: "text-strong",
                 children: (0, i.jsx)(f.A, {
                     applicationIds: w
                 })
             }), (0, i.jsx)(N.A, {
-                heading: t.bot ? j.intl.string(j.t["A//N4k"]) : j.intl.string(j.t.a6XYD9),
+                heading: t.bot ? R.intl.string(R.t["A//N4k"]) : R.intl.string(R.t.a6XYD9),
                 headingColor: "text-strong",
                 children: (0, i.jsx)(x.A, {
                     userId: t.id

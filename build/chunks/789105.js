@@ -4,24 +4,24 @@ n.d(t, {
 });
 var i = n(73153),
     l = n(272355),
-    r = n(422258);
+    a = n(422258);
 
-function a(e) {
+function r(e) {
     let {
         channel: {
             id: t
         }
     } = e;
-    (0, r.i_)(t, {
+    (0, a.i_)(t, {
         trackAnalytics: !1
     })
 }
 class s extends l.A {
     _initialize() {
-        i.h.subscribe("CHANNEL_DELETE", a)
+        i.h.subscribe("CHANNEL_DELETE", r)
     }
     _terminate() {
-        i.h.unsubscribe("CHANNEL_DELETE", a)
+        i.h.unsubscribe("CHANNEL_DELETE", r)
     }
 }
 let o = new s

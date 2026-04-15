@@ -8,8 +8,8 @@ var i = n(627968),
     l = n.n(a),
     o = n(397927),
     s = n(775602),
-    d = n(607470),
-    u = n(930125),
+    u = n(607470),
+    d = n(930125),
     h = n(282108),
     c = n(619517),
     m = n(644447),
@@ -36,7 +36,7 @@ let y = r.memo(function(e) {
         }
         return null
     }(t);
-    return null == r && "VIDEO" === t.type ? (0, i.jsx)(d.A, {
+    return null == r && "VIDEO" === t.type ? (0, i.jsx)(u.A, {
         src: `${t.url}#t=1`,
         preload: "metadata",
         muted: !0,
@@ -46,7 +46,7 @@ let y = r.memo(function(e) {
             objectFit: "cover"
         }
     }) : null == r ? null : (0, h.qo)({
-        type: u.D.GenericMedia,
+        type: d.D.GenericMedia,
         media: t
     }, n) ? (0, i.jsx)(o.BJc, {
         align: "center",
@@ -80,8 +80,8 @@ function w(e) {
         items: t,
         currentIndex: n,
         onGalleryItemClick: a,
-        className: d,
-        enabledContentHarmTypeFlags: u
+        className: u,
+        enabledContentHarmTypeFlags: d
     } = e, h = r.useRef(null);
     return r.useLayoutEffect(() => {
         let e = document.getElementById(x(n));
@@ -91,15 +91,15 @@ function w(e) {
             padding: 20
         })
     }, [n]), (0, i.jsx)("div", {
-        className: l()(A.IL, d),
+        className: l()(A.IL, u),
         children: (0, i.jsx)(o.ChK, {
             orientation: "horizontal",
-            className: l()(A.nV, d),
+            className: l()(A.nV, u),
             ref: h,
             onClick: e => e.stopPropagation(),
             children: t.map((e, r) => {
                 let s = r === n,
-                    d = s ? f.t["qv/U5V"] : f.t.zviMAG;
+                    u = s ? f.t["qv/U5V"] : f.t.zviMAG;
                 return (0, i.jsx)(o.DUT, {
                     id: x(r),
                     className: l()(A.Qq, {
@@ -107,14 +107,14 @@ function w(e) {
                         [A.$1]: 0 === r,
                         [A.HV]: r === t.length - 1
                     }),
-                    "aria-label": f.intl.formatToPlainString(d, {
+                    "aria-label": f.intl.formatToPlainString(u, {
                         pageNumber: r + 1,
                         totalPages: t.length
                     }),
                     onClick: () => a(r),
                     children: (0, i.jsx)(y, {
                         item: e,
-                        enabledContentHarmTypeFlags: u
+                        enabledContentHarmTypeFlags: d
                     })
                 }, r)
             })

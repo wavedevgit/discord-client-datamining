@@ -34,9 +34,9 @@ function T(e) {
         parentAnalyticsLocation: y
     } = (0, c.Ay)(), {
         Component: v,
-        play: R,
+        play: j,
         events: {
-            onMouseEnter: j,
+            onMouseEnter: R,
             onMouseLeave: O
         }
     } = (0, r.E)(), L = t.getGuildId(), {
@@ -68,7 +68,7 @@ function T(e) {
     }
 
     function Y() {
-        (0, u.X)(y, u.O.SOUNDBOARD), S === C.P.SOUNDBOARD ? (b?.(void 0), W()) : (null != S ? (R(), F()) : R(), b?.(C.P.SOUNDBOARD))
+        (0, u.X)(y, u.O.SOUNDBOARD), S === C.P.SOUNDBOARD ? (b?.(void 0), W()) : (null != S ? (j(), F()) : j(), b?.(C.P.SOUNDBOARD))
     }
     let z = l.useCallback(() => {
             null == S && b?.(C.P.SOUNDBOARD)
@@ -117,7 +117,7 @@ function T(e) {
             onContextMenu: K,
             onClick: Y,
             onMouseEnter: e => {
-                j(), "focus" !== e.type && F()
+                R(), "focus" !== e.type && F()
             },
             onMouseLeave: () => {
                 null == S && (W(), O())

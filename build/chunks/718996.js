@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(554146),
-    a = n(397927),
+    a = n(554146),
+    r = n(397927),
     s = n(345485),
     o = n(554154),
     d = n(527901),
@@ -17,19 +17,19 @@ function h(e) {
     let {
         renderPopout: t,
         renderGuildHeaderDropdownButton: n
-    } = e, r = l.useRef(null);
-    return (0, i.jsx)(a.YNO, {
-        targetElementRef: r,
+    } = e, a = l.useRef(null);
+    return (0, i.jsx)(r.YNO, {
+        targetElementRef: a,
         renderPopout: () => (0, i.jsx)("div", {
             onClick: e => e.stopPropagation(),
-            children: "function" == typeof t ? t(r) : t
+            children: "function" == typeof t ? t(a) : t
         }),
         position: "bottom",
         align: "center",
-        animation: a.YNO.Animation.TRANSLATE,
+        animation: r.YNO.Animation.TRANSLATE,
         shouldShow: !0,
         children: () => (0, i.jsx)("div", {
-            ref: r,
+            ref: a,
             children: n()
         })
     })
@@ -40,7 +40,7 @@ let _ = l.memo(function(e) {
         guild: n,
         renderGuildHeaderDropdownButton: l
     } = e, {
-        contentType: a,
+        contentType: r,
         data: _,
         markAsDismissed: m
     } = t, g = {
@@ -52,8 +52,8 @@ let _ = l.memo(function(e) {
     };
     return (0, i.jsx)(i.Fragment, {
         children: (() => {
-            switch (a) {
-                case r.M.GUILD_POWERUP_PERKS_COACHMARK:
+            switch (r) {
+                case a.M.GUILD_POWERUP_PERKS_COACHMARK:
                     return (0, i.jsx)(h, {
                         renderPopout: e => (0, i.jsx)(u.UB, {
                             guildId: n.id,
@@ -63,7 +63,7 @@ let _ = l.memo(function(e) {
                         }),
                         renderGuildHeaderDropdownButton: l
                     });
-                case r.M.GAME_SERVER_HOSTING_BATCH_RELEASE_V3_COACHMARK:
+                case a.M.GAME_SERVER_HOSTING_BATCH_RELEASE_V3_COACHMARK:
                     return (0, i.jsx)(h, {
                         renderPopout: e => (0, i.jsx)(u.YX, {
                             guildId: n.id,
@@ -73,7 +73,7 @@ let _ = l.memo(function(e) {
                         }),
                         renderGuildHeaderDropdownButton: l
                     });
-                case r.M.GAME_SERVER_PRICING_CHANGE_COACHMARK:
+                case a.M.GAME_SERVER_PRICING_CHANGE_COACHMARK:
                     return (0, i.jsx)(h, {
                         renderPopout: e => (0, i.jsx)(u.Ns, {
                             guildId: n.id,
@@ -83,7 +83,7 @@ let _ = l.memo(function(e) {
                         }),
                         renderGuildHeaderDropdownButton: l
                     });
-                case r.M.GAME_SERVER_HOSTING_NEW_PERK_AVAILABLE_COACHMARK:
+                case a.M.GAME_SERVER_HOSTING_NEW_PERK_AVAILABLE_COACHMARK:
                     return (0, i.jsx)(h, {
                         renderPopout: e => (0, i.jsx)(u.K8, {
                             guildId: n.id,
@@ -92,7 +92,7 @@ let _ = l.memo(function(e) {
                         }),
                         renderGuildHeaderDropdownButton: l
                     });
-                case r.M.BOOST_TO_UNLOCK_COACHMARK: {
+                case a.M.BOOST_TO_UNLOCK_COACHMARK: {
                     let e = _?.featuredPowerup;
                     if (null == e) return l();
                     return (0, i.jsx)(h, {
@@ -107,7 +107,7 @@ let _ = l.memo(function(e) {
                         renderGuildHeaderDropdownButton: l
                     })
                 }
-                case r.M.EXPIRING_POWERUP_COACHMARK: {
+                case a.M.EXPIRING_POWERUP_COACHMARK: {
                     let e = _?.featuredExpiringPowerup;
                     if (null == e) return l();
                     return (0, i.jsx)(h, {
@@ -122,7 +122,7 @@ let _ = l.memo(function(e) {
                         renderGuildHeaderDropdownButton: l
                     })
                 }
-                case r.M.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL:
+                case a.M.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL:
                     return (0, i.jsx)(h, {
                         renderPopout: e => (0, i.jsx)(s.A, {
                             guildId: n.id,
@@ -131,7 +131,7 @@ let _ = l.memo(function(e) {
                         }),
                         renderGuildHeaderDropdownButton: l
                     });
-                case r.M.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL:
+                case a.M.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL:
                     return (0, i.jsx)(h, {
                         renderPopout: e => (0, i.jsx)(A.A, {
                             guild: n,
@@ -140,14 +140,14 @@ let _ = l.memo(function(e) {
                         }),
                         renderGuildHeaderDropdownButton: l
                     });
-                case r.M.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP:
+                case a.M.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP:
                     return (0, i.jsx)(h, {
                         renderPopout: (0, i.jsx)(d.A, {
                             markAsDismissed: m
                         }),
                         renderGuildHeaderDropdownButton: l
                     });
-                case r.M.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL:
+                case a.M.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL:
                     return (0, i.jsx)(h, {
                         renderPopout: e => (0, i.jsx)(o.A, {
                             guildId: n.id,

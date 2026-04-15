@@ -1,6 +1,6 @@
 /** chunk id: 492498 params = (module,exports,require) **/
 n.d(t, {
-    A: () => j
+    A: () => R
 });
 var i = n(627968),
     l = n(64700),
@@ -34,7 +34,7 @@ let v = {
     }
 };
 
-function R(e, t, n) {
+function j(e, t, n) {
     let i = t ? I.Ay.guildFilter : null,
         l = t ? I.Ay.roleFilter : null,
         s = t ? I.Ay.everyoneFilter : null,
@@ -48,7 +48,7 @@ function R(e, t, n) {
     })
 }
 
-function j(e) {
+function R(e) {
     let {
         onJump: t
     } = e, n = (0, r.bG)([f.A, x.A], () => f.A.getChannel(x.A.getChannelId())), {
@@ -67,13 +67,13 @@ function j(e) {
         everyoneFilter: I.Ay.everyoneFilter
     })), C = (0, p.Sc)(), N = (0, u.A)(_), T = (0, u.A)(g), v = (0, u.A)(E);
     l.useEffect(() => {
-        I.Ay.hasLoadedEver ? (null != N && _ !== N || null != T && g !== T || null != v && E !== v) && R(n, !0) : R(n, !0)
+        I.Ay.hasLoadedEver ? (null != N && _ !== N || null != T && g !== T || null != v && E !== v) && j(n, !0) : j(n, !0)
     }, [N, _, T, g, v, E, n, !0]), (0, c.Ay)(() => {
-        s?.some(A.$r) && (d.A.clearMentions(), R(n, !0))
+        s?.some(A.$r) && (d.A.clearMentions(), j(n, !0))
     }), l.useEffect(() => () => {
         d.A.truncateMentions(S.Ue3)
     }, []);
-    let j = l.useCallback(() => null, []);
+    let R = l.useCallback(() => null, []);
     return (0, i.jsx)(m.Ay, {
         className: a()(y.sH, {
             [y.qC]: C
@@ -90,10 +90,10 @@ function j(e) {
         hasMore: o,
         analyticsName: "Recent Mentions",
         loadMore: function() {
-            R(n, !0, null != s && s.length > 0 ? s[s.length - 1].id : null)
+            j(n, !0, null != s && s.length > 0 ? s[s.length - 1].id : null)
         },
         canCloseAllMessages: !0,
-        renderHeader: j,
+        renderHeader: R,
         renderEmptyState: M,
         renderMessage: O,
         "aria-label": b.intl.string(b.t.jbV6MM),

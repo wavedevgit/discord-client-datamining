@@ -4,42 +4,42 @@ i.d(t, {
 });
 var n = i(627968);
 i(64700);
-var s = i(540185),
-    l = i(311907),
+var l = i(540185),
+    s = i(311907),
     a = i(961350),
     r = i(735321),
-    o = i(483558),
-    d = i(34442),
+    d = i(483558),
+    o = i(34442),
     c = i(253798),
     u = i(25530),
     g = i(155400),
     m = i(844206),
     h = i(557964),
     x = i(987140),
-    p = i(671924);
+    A = i(671924);
 
-function A(e) {
+function p(e) {
     let {
         widget: t,
         ...i
     } = e;
     switch (t.type) {
-        case s.x.FAVORITE_GAMES:
+        case l.x.FAVORITE_GAMES:
             return (0, n.jsx)(g.A, {
                 widget: t,
                 ...i
             });
-        case s.x.CURRENT_GAMES:
+        case l.x.CURRENT_GAMES:
             return (0, n.jsx)(u.A, {
                 widget: t,
                 ...i
             });
-        case s.x.WANT_TO_PLAY_GAMES:
+        case l.x.WANT_TO_PLAY_GAMES:
             return (0, n.jsx)(h.A, {
                 widget: t,
                 ...i
             });
-        case s.x.PLAYED_GAMES:
+        case l.x.PLAYED_GAMES:
             return (0, n.jsx)(m.A, {
                 widget: t,
                 ...i
@@ -53,23 +53,23 @@ function f(e) {
     let {
         widget: t,
         user: i,
-        disableInteraction: s,
+        disableInteraction: l,
         ...u
     } = e, {
         setExpanded: g
     } = (0, c.B)(), {
         shouldShowSuggestions: m,
         handleDismissSuggestions: h
-    } = (0, o.q)(t), f = (0, l.bG)([a.default], () => a.default.getId() === i.id), I = f && !s && m, j = (0, r.L)(t), v = (0, r.FM)(t, {
+    } = (0, d.q)(t), f = (0, s.bG)([a.default], () => a.default.getId() === i.id), I = f && !l && m, j = (0, r.L)(t), v = (0, r.FM)(t, {
         isCurrentUser: f
-    }), S = (0, r.uA)(t), b = 1 === (0, r.cv)(t.type);
-    return (0, n.jsx)(A, {
+    }), S = (0, r.uA)(t), E = 1 === (0, r.cv)(t.type);
+    return (0, n.jsx)(p, {
         widget: t,
         user: i,
-        disableInteraction: s,
+        disableInteraction: l,
         headerTitle: j,
         headerSubtitle: v,
-        headerActionButtons: f && !b ? [(0, n.jsx)(d.IU, {
+        headerActionButtons: f && !E ? [(0, n.jsx)(o.IU, {
             disabled: S,
             widgetType: t.type,
             widget: t,
@@ -79,7 +79,7 @@ function f(e) {
             userId: i.id,
             widgetType: t.type,
             onDismiss: h,
-            className: p.r
+            className: A.r
         }),
         ...u
     })

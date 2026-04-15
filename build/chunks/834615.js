@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(503698),
-    a = n.n(r),
+    a = n(503698),
+    r = n.n(a),
     s = n(311907),
     o = n(397927),
     d = n(409626),
@@ -37,13 +37,13 @@ var i = n(627968),
 function j(e) {
     let {
         quest: t
-    } = e, n = (0, g.S5)(t.config.expiresAt), l = (0, g.S5)(t.config.rewardsConfig.rewardsExpireAt), r = (0, s.bG)([c.A], () => c.A.getState().theme), a = (0, o.Mwr)(r) ? R.NJ8.DARK : R.NJ8.LIGHT, d = t.userStatus?.completedAt != null;
+    } = e, n = (0, g.S5)(t.config.expiresAt), l = (0, g.S5)(t.config.rewardsConfig.rewardsExpireAt), a = (0, s.bG)([c.A], () => c.A.getState().theme), r = (0, o.Mwr)(a) ? R.NJ8.DARK : R.NJ8.LIGHT, d = t.userStatus?.completedAt != null;
     return (0, i.jsxs)("div", {
         className: D.R_,
         children: [(0, i.jsx)("img", {
             className: D.tb,
             alt: "",
-            src: (0, p.tW)(t, p.fY.GAME_TILE, a).url
+            src: (0, p.tW)(t, p.fY.GAME_TILE, r).url
         }), (0, i.jsxs)("div", {
             className: D.UD,
             children: [(0, i.jsx)(o.Heading, {
@@ -69,7 +69,7 @@ function M(e) {
     let {
         nodeRef: t,
         quest: n
-    } = e, r = (0, E.Ut)(), c = (0, s.bG)([A.A], () => A.A.isEnrolling(n.id), [n]), [p, T] = l.useState(!1), R = l.useCallback(() => T(!0), []), M = l.useCallback(() => T(!1), []), {
+    } = e, a = (0, E.Ut)(), c = (0, s.bG)([A.A], () => A.A.isEnrolling(n.id), [n]), [p, T] = l.useState(!1), R = l.useCallback(() => T(!0), []), M = l.useCallback(() => T(!1), []), {
         launchInGameActivity: w
     } = (0, g.zW)(n), U = _.t.useConfig({
         location: L.rE.ACTIVITY_PANEL
@@ -82,7 +82,7 @@ function M(e) {
             sourceQuestContent: h.uF.ACTIVITY_PANEL
         }), (0, C.vA)(n) && w()
     }, [n, w]), B = l.useCallback(() => {
-        null != n && (r({
+        null != n && (a({
             questId: n.id,
             questContent: h.uF.ACTIVITY_PANEL,
             questContentCTA: I.Cy.TRACK_PROGRESS,
@@ -91,8 +91,8 @@ function M(e) {
             fromContent: h.uF.ACTIVITY_PANEL,
             questId: n.id
         }))
-    }, [n, r]), H = l.useCallback(() => {
-        r({
+    }, [n, a]), H = l.useCallback(() => {
+        a({
             questId: n.id,
             questContent: h.uF.ACTIVITY_PANEL,
             questContentCTA: I.Cy.LEARN_MORE,
@@ -101,7 +101,7 @@ function M(e) {
             fromContent: h.uF.ACTIVITY_PANEL,
             questId: n.id
         })
-    }, [n.id, r]), F = (0, S.ix)({
+    }, [n.id, a]), F = (0, S.ix)({
         quest: n,
         questContent: h.uF.ACTIVITY_PANEL,
         sourceQuestContent: h.uF.ACTIVITY_PANEL
@@ -112,7 +112,7 @@ function M(e) {
         ref: e => {
             t.current = e
         },
-        className: a()(D.iE, {
+        className: r()(D.iE, {
             [D.tJ]: Y
         }),
         onClick: k,

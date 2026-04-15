@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(503698),
-    a = n.n(r),
+    a = n(503698),
+    r = n.n(a),
     s = n(735438),
     o = n.n(s),
     d = n(397927),
@@ -50,7 +50,7 @@ function O(e) {
     let {
         loadId: t,
         onGuildCardSeen: n,
-        onGuildCardClick: r
+        onGuildCardClick: a
     } = e, {
         guildIds: o,
         loading: h,
@@ -92,7 +92,7 @@ function O(e) {
                             paddingLeft: n.left,
                             width: n.width - 16
                         },
-                        className: a()(S.R_, {
+                        className: r()(S.R_, {
                             [S.Ze]: !M
                         }),
                         children: [!M && (0, i.jsxs)("div", {
@@ -108,7 +108,7 @@ function O(e) {
                     }, l);
                 case 1:
                     return (0, i.jsx)(d.y$y, {
-                        className: a()(S.u1, {
+                        className: r()(S.u1, {
                             [S.qx]: M
                         })
                     }, l)
@@ -146,12 +146,12 @@ function O(e) {
             }
         }, []),
         X = l.useCallback(async (e, t, n, i) => {
-            await r(e, t, n, i);
+            await a(e, t, n, i);
             let l = B.current?.getScrollerState()?.scrollTop;
             null != l && m.A.setState({
                 scrollPosition: l
             })
-        }, [r]),
+        }, [a]),
         Z = l.useCallback((e, t, n, l) => {
             if (0 !== e) return null;
             {

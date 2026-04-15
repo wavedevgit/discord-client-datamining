@@ -107,7 +107,7 @@ function v(e) {
     })
 }
 
-function R() {
+function j() {
     return (0, i.jsx)(u.Gg5, {
         size: "custom",
         color: "currentColor",
@@ -117,7 +117,7 @@ function R() {
     })
 }
 
-function j(e) {
+function R(e) {
     let {
         guild: t
     } = e;
@@ -173,7 +173,7 @@ function L(e) {
                 children: [(0, i.jsx)(C.A, {
                     guild: s,
                     isBannerVisible: t
-                }), s.id === T.Vc && (0, i.jsx)(R, {}), (0, i.jsx)(j, {
+                }), s.id === T.Vc && (0, i.jsx)(j, {}), (0, i.jsx)(R, {
                     guild: s
                 })]
             }), (0, i.jsx)("div", {
@@ -214,8 +214,8 @@ let M = l.memo(function(e) {
         guild: C,
         guildBanner: T,
         animationOverlayHeight: S,
-        children: R,
-        headerClassName: j,
+        children: j,
+        headerClassName: R,
         communityInfoVisible: O,
         hasSubheader: M
     } = e, U = C.features.has(N.GuildFeatures.ANIMATED_BANNER), G = (0, _.A)(C), P = !G && (0, I.A)(C), k = !G && O, w = (0, x.VI)(T) && U && !m, [B, V] = l.useState(!1), H = l.useRef(!1), F = l.useRef(null), W = t ?? F, K = l.useRef(void 0), Y = f.kt.getSetting(), z = (0, d.bG)([g.A], () => g.A.theme);
@@ -252,7 +252,7 @@ let M = l.memo(function(e) {
                 onMouseDown: A,
                 onContextMenu: h,
                 children: [(0, i.jsxs)("header", {
-                    className: a()(b.wx, j, {
+                    className: a()(b.wx, R, {
                         [b.jD]: o.Fr
                     }),
                     children: [(0, i.jsx)("div", {
@@ -264,7 +264,7 @@ let M = l.memo(function(e) {
                             onContextMenu: h,
                             ariaControls: E,
                             ariaExpanded: p,
-                            children: R
+                            children: j
                         })
                     }), P && (0, i.jsx)(v, {
                         guild: C,

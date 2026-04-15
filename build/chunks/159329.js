@@ -4,7 +4,7 @@ n.d(t, {
 });
 var i = n(600975),
     l = n(250105);
-let r = (0, i.C)({
+let a = (0, i.C)({
         id: "2025-05_safety_flows",
         label: "Safety Flows",
         kind: "user",
@@ -19,7 +19,7 @@ let r = (0, i.C)({
             }
         }]
     }),
-    a = (0, l.Ay)({
+    r = (0, l.Ay)({
         name: "2026-04-safety-flows",
         kind: "user",
         defaultConfig: {
@@ -38,11 +38,11 @@ let r = (0, i.C)({
 function s(e) {
     let {
         location: t
-    } = e, n = r.getCurrentConfig({
+    } = e, n = a.getCurrentConfig({
         location: t
     }, {
         autoTrackExposure: !1
-    }).enabled, i = a.getConfig({
+    }).enabled, i = r.getConfig({
         location: t
     }).enabled;
     return n || i

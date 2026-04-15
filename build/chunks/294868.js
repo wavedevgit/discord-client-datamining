@@ -4,12 +4,12 @@ i.d(t, {
 });
 var n = i(627968);
 i(64700);
-var s = i(311907),
-    l = i(961350),
+var l = i(311907),
+    s = i(961350),
     a = i(823016),
     r = i(750492),
-    o = i(253798),
-    d = i(622249),
+    d = i(253798),
+    o = i(622249),
     c = i(742710),
     u = i(192),
     g = i(899149);
@@ -18,11 +18,11 @@ function m(e) {
     let {
         games: t,
         user: i,
-        widgetType: s,
-        ...l
+        widgetType: l,
+        ...s
     } = e, {
         registerItemRef: r,
-        manageFocusOnDelete: o
+        manageFocusOnDelete: d
     } = (0, a.r)();
     return (0, n.jsx)("ul", {
         className: g.h,
@@ -31,10 +31,10 @@ function m(e) {
                 index: t,
                 user: i,
                 game: e,
-                widgetType: s,
+                widgetType: l,
                 coverRef: r(e.applicationId),
-                onRemoveGame: o,
-                ...l
+                onRemoveGame: d,
+                ...s
             })
         }, e.applicationId))
     })
@@ -46,17 +46,17 @@ function h(e) {
         widgetType: i,
         disableInteraction: c,
         games: g
-    } = e, h = (0, s.bG)([l.default], () => l.default.getId() === t.id), {
+    } = e, h = (0, l.bG)([s.default], () => s.default.getId() === t.id), {
         getManageButtonForWidget: x
-    } = (0, u.r)(), p = x(i), {
-        expanded: A,
+    } = (0, u.r)(), A = x(i), {
+        expanded: p,
         setExpanded: f
-    } = (0, o.B)(), I = A ? g : g.slice(0, 2), j = g.length > 2, v = (0, n.jsxs)(n.Fragment, {
+    } = (0, d.B)(), I = p ? g : g.slice(0, 2), j = g.length > 2, v = (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(m, {
             ...e,
             games: I
-        }), j && (0, n.jsx)(d.A, {
-            expanded: A,
+        }), j && (0, n.jsx)(o.A, {
+            expanded: p,
             onClick: () => f(e => !e)
         })]
     });
@@ -65,7 +65,7 @@ function h(e) {
             widgetType: i,
             gameCount: g.length
         }), (0, n.jsx)(a.B, {
-            emptyListFallbackRef: p,
+            emptyListFallbackRef: A,
             children: v
         })]
     }) : v

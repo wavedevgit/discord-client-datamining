@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(164891),
     y = n(135635),
     v = n(696451),
-    R = n(71393),
-    j = n(958590),
+    j = n(71393),
+    R = n(958590),
     O = n(576705),
     L = n(290863),
     M = n(427262),
@@ -71,7 +71,7 @@ function V(e) {
         s?.(A.isHoveringOrFocusing)
     }, [s, A]);
     let g = l.useCallback(() => {
-        let e = R.A.getGuild(t.guild_id);
+        let e = j.A.getGuild(t.guild_id);
         o()(null != e, "VoiceInviteSuggestionsPopover must be used in context of a guild"), (0, h.mMO)(async () => {
             let {
                 default: l
@@ -132,7 +132,7 @@ function H(e) {
         isHoveringOrFocusing: E
     } = (0, N.A)(o), [x, I] = l.useState(null), {
         icon: b,
-        iconColor: R,
+        iconColor: j,
         tooltipText: D,
         disabled: k,
         shouldHideButton: V,
@@ -167,7 +167,7 @@ function H(e) {
     }, [H, k]), Z = l.useCallback(async () => {
         if (J) return;
         async function e() {
-            let e = j.A.getInvite(t.id, {}) ?? null;
+            let e = R.A.getInvite(t.id, {}) ?? null;
             if (null == e) {
                 if (!O.A.can(U.xBc.CREATE_INSTANT_INVITE, t)) return null;
                 try {
@@ -175,7 +175,7 @@ function H(e) {
                 } catch (e) {
                     return null
                 }
-                e = j.A.getInvite(t.id, {}) ?? null
+                e = R.A.getInvite(t.id, {}) ?? null
             }
             return e?.code ?? null
         }
@@ -279,7 +279,7 @@ function H(e) {
                 "aria-disabled": k,
                 children: (0, i.jsx)(b, {
                     size: "xxs",
-                    color: R,
+                    color: j,
                     className: P.Kk
                 })
             })

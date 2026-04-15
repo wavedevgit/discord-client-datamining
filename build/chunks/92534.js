@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(308368),
-    a = n(308528),
+    a = n(308368),
+    r = n(308528),
     s = n(442433),
     o = n(544420),
     d = n(49229),
@@ -26,7 +26,7 @@ function E(e) {
                     if (null == t.userId) return;
                     (async () => {
                         try {
-                            let e = await a.A.getOrEnsurePrivateChannel(t.userId);
+                            let e = await r.A.getOrEnsurePrivateChannel(t.userId);
                             c.default.selectPrivateChannel(e)
                         } catch {}
                     })();
@@ -86,7 +86,7 @@ function E(e) {
                     break;
                 case A.c.SEND_ACTIVITY_INVITE:
                     if (null == t.userId || null == t.activity) return;
-                    r.A.sendActivityInviteUser({
+                    a.A.sendActivityInviteUser({
                         type: m.xL.JOIN,
                         userId: t.userId,
                         activity: t.activity,
@@ -106,7 +106,7 @@ function E(e) {
                     break;
                 case A.c.ASK_TO_JOIN:
                     if (null == t.userId || null == t.activity) return;
-                    r.A.sendActivityInviteUser({
+                    a.A.sendActivityInviteUser({
                         type: m.xL.JOIN_REQUEST,
                         userId: t.userId,
                         activity: t.activity,
@@ -119,7 +119,7 @@ function E(e) {
                         n = t.userId;
                     (async () => {
                         try {
-                            let t = await a.A.getOrEnsurePrivateChannel(n);
+                            let t = await r.A.getOrEnsurePrivateChannel(n);
                             c.default.selectPrivateChannel(t);
                             let i = _.A.getChannel(t);
                             if (null == i) return;

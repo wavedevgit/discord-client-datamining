@@ -1,6 +1,6 @@
 /** chunk id: 504149 params = (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => d
 });
 var i = n(627968),
     r = n(64700),
@@ -9,27 +9,27 @@ var i = n(627968),
     o = n(700331),
     s = n(454290);
 
-function d(e) {
+function u(e) {
     let {
         width: t,
         height: n,
         offset: i,
         delta: r
-    } = e, a = t > window.innerWidth, l = n > window.innerHeight, o = (window.innerWidth - t) / 2 + i.x, s = (window.innerHeight - n) / 2 + i.y, d = (window.innerWidth + t) / 2 + i.x, u = (window.innerHeight + n) / 2 + i.y, {
+    } = e, a = t > window.innerWidth, l = n > window.innerHeight, o = (window.innerWidth - t) / 2 + i.x, s = (window.innerHeight - n) / 2 + i.y, u = (window.innerWidth + t) / 2 + i.x, d = (window.innerHeight + n) / 2 + i.y, {
         x: h,
         y: c
     } = i;
-    return a && (h += r.x, o + r.x > 0 && (h = (t - window.innerWidth) / 2), d + r.x < window.innerWidth && (h = (window.innerWidth - t) / 2)), l && (c += r.y, s + r.y > 0 && (c = (n - window.innerHeight) / 2), u + r.y < window.innerHeight && (c = (window.innerHeight - n) / 2)), {
+    return a && (h += r.x, o + r.x > 0 && (h = (t - window.innerWidth) / 2), u + r.x < window.innerWidth && (h = (window.innerWidth - t) / 2)), l && (c += r.y, s + r.y > 0 && (c = (n - window.innerHeight) / 2), d + r.y < window.innerHeight && (c = (window.innerHeight - n) / 2)), {
         x: h,
         y: c
     }
 }
-let u = r.memo(function(e) {
+let d = r.memo(function(e) {
     let {
         children: t
     } = e, {
         scale: n,
-        x: u,
+        x: d,
         y: h,
         setOffset: c,
         zoomed: m,
@@ -42,11 +42,11 @@ let u = r.memo(function(e) {
         x: 0,
         y: 0
     }), I = (e, t) => {
-        let i = d({
+        let i = u({
             width: x * n.goal,
             height: y * n.goal,
             offset: {
-                x: u.goal,
+                x: d.goal,
                 y: h.goal
             },
             delta: {
@@ -72,7 +72,7 @@ let u = r.memo(function(e) {
                     o.l.markActionPerformed(o.N.ZOOM_IN_IMAGE_PRESSED), p(!0);
                     let t = e.clientX - window.innerWidth / 2,
                         i = e.clientY - window.innerHeight / 2,
-                        r = d({
+                        r = u({
                             width: x * n.goal,
                             height: y * n.goal,
                             offset: {
@@ -95,7 +95,7 @@ let u = r.memo(function(e) {
         onClick: e => e.stopPropagation(),
         style: {
             scale: n,
-            x: u,
+            x: d,
             y: h,
             cursor: m ? "zoom-out" : "zoom-in"
         },

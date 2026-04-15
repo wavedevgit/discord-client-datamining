@@ -1,50 +1,19 @@
 /** chunk id: 447719 params = (module,exports,require) **/
 t.d(i, {
-    l7: () => c
+    l7: () => l
 });
 var r = t(64700),
-    n = t(178213),
-    a = t(594832),
-    s = t(721932),
-    l = t(985018);
-let o = {
-    FULL_WISHLIST: {
-        title: l.intl.string(l.t["7lZ31J"]),
-        getSubtitle: e => l.intl.formatToPlainString(l.t.BjEX38, {
-            username: e
-        }),
-        showIcons: !1
-    },
-    MIXED: {
-        title: l.intl.string(l.t.SK5rmi),
-        getSubtitle: e => l.intl.formatToPlainString(l.t.dIDKgi, {
-            username: e
-        }),
-        showIcons: !0
-    },
-    SHOP_ONLY: {
-        title: l.intl.string(l.t.SK5rmi),
-        getSubtitle: e => l.intl.formatToPlainString(l.t.wyMp1j, {
-            username: e
-        }),
-        showIcons: !1
-    },
-    SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_ONLY: {
-        title: l.intl.string(l.t.BCi1gT),
-        getSubtitle: e => l.intl.formatToPlainString(l.t.BjEX38, {
-            username: e
-        }),
-        showIcons: !1
-    }
-};
+    n = t(594832),
+    a = t(721932),
+    s = t(985018);
 
-function c(e) {
+function l(e) {
     let {
         totalUnownedWishlistItemCount: i,
         wishlistInDmLength: t,
-        displayItems: c,
-        recipientName: d
-    } = e, _ = (0, r.useMemo)(() => (function(e) {
+        displayItems: l,
+        recipientName: o
+    } = e, c = (0, r.useMemo)(() => (function(e) {
         let {
             totalUnownedWishlistItemCount: i,
             wishlistInDmLength: t,
@@ -55,37 +24,32 @@ function c(e) {
                 item: i,
                 source: t
             } = e;
-            return t === a.uS.POPULAR && (0, s.$)(i)
+            return t === n.uS.POPULAR && (0, a.$)(i)
         }) ? "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_ONLY" : "SHOP_ONLY"
     })({
         totalUnownedWishlistItemCount: i,
         wishlistInDmLength: t,
-        displayItems: c
-    }), [i, t, c]), u = (0, n.GG)("wishlist_banner_config");
+        displayItems: l
+    }), [i, t, l]);
     return (0, r.useMemo)(() => {
-        if (u) switch (_) {
+        switch (c) {
             case "FULL_WISHLIST":
                 return {
-                    title: l.intl.formatToPlainString(l.t["YcL/Vr"], {
-                        username: d
+                    title: s.intl.formatToPlainString(s.t["YcL/Vr"], {
+                        username: o
                     }), showIcons: !1
                 };
             case "MIXED":
                 return {
-                    title: l.intl.formatToPlainString(l.t.dIDKgi, {
-                        username: d
+                    title: s.intl.formatToPlainString(s.t.dIDKgi, {
+                        username: o
                     }), showIcons: !0
                 };
             default:
                 return {
-                    title: l.intl.string(l.t.BCi1gT), showIcons: !1
+                    title: s.intl.string(s.t.BCi1gT), showIcons: !1
                 }
         }
-        return {
-            title: o[_].title,
-            subtitle: o[_].getSubtitle(d),
-            showIcons: o[_].showIcons
-        }
-    }, [_, d, u])
+    }, [c, o])
 }
-l.intl.string(l.t["7lZ31J"]), l.intl.string(l.t.pWG4ze), l.intl.string(l.t.SK5rmi), l.intl.string(l.t.BCi1gT)
+s.intl.string(s.t["7lZ31J"]), s.intl.string(s.t.pWG4ze), s.intl.string(s.t.SK5rmi), s.intl.string(s.t.BCi1gT)

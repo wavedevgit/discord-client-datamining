@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(397927),
-    r = n(164203),
-    a = n(985018),
+    a = n(164203),
+    r = n(985018),
     s = n(446e3);
 let o = e => {
     let {
@@ -18,10 +18,10 @@ let o = e => {
             children: [(0, i.jsx)(l.Heading, {
                 className: s.R_,
                 variant: "heading-md/semibold",
-                children: a.intl.string(a.t.gWinpQ)
+                children: r.intl.string(r.t.gWinpQ)
             }), (0, i.jsx)("div", {
                 className: s.YT,
-                children: (0, i.jsx)(r.A, {
+                children: (0, i.jsx)(a.A, {
                     channelId: "preview-channel-id",
                     previewQuest: t,
                     isParticipatingOverride: !1

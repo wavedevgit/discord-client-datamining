@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(518477),
     y = n(985018),
     v = n(444239),
-    R = n(913110);
-let j = N.Z.SIZE_90;
+    j = n(913110);
+let R = N.Z.SIZE_90;
 
 function O(e) {
     let {
@@ -63,7 +63,7 @@ function O(e) {
     }, [_, t.id, s, t.productLine, p]), {
         label: T,
         icon: S,
-        isPromptingPurchase: R
+        isPromptingPurchase: j
     } = (0, x.h)({
         sku: t,
         wishlistOwner: n,
@@ -83,7 +83,7 @@ function O(e) {
                 disableRiveHover: h,
                 sku: t,
                 user: n,
-                spec: j,
+                spec: R,
                 cardStyle: a()(v.Nr, v.Q1, d),
                 skuPreviewStyle: a()(v.ho, c),
                 skuAssetClassName: O ? u : void 0,
@@ -93,8 +93,8 @@ function O(e) {
                 }),
                 onHoverOrFocusChange: L,
                 children: (0, i.jsx)(x.A, {
-                    spec: j,
-                    onClick: R ? N : C,
+                    spec: R,
+                    onClick: j ? N : C,
                     isHoveringOrFocusing: O,
                     label: T,
                     icon: S
@@ -232,7 +232,7 @@ function D(e) {
         analyticsLocations: s,
         onDetailsClick: r,
         onPurchaseClick: r,
-        skuPreviewStyle: R.MO,
+        skuPreviewStyle: j.MO,
         disableRiveHover: !0,
         singleCardInfo: o,
         ...a

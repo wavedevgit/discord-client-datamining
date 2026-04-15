@@ -5,29 +5,29 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(158954),
-    r = n(827734),
-    a = n(198488);
+    a = n(827734),
+    r = n(198488);
 
 function s(e) {
     let {
         imageSrc: t
     } = e;
     return (0, i.jsxs)("div", {
-        className: a.kL,
+        className: r.kL,
         children: [(0, i.jsx)("div", {
-            className: a.j3,
+            className: r.j3,
             children: (0, i.jsx)("img", {
-                className: a.Su,
+                className: r.Su,
                 src: t,
                 alt: ""
             })
         }), (0, i.jsx)("div", {
-            className: a.gm,
+            className: r.gm,
             children: (0, i.jsx)("div", {
-                className: a.WA,
+                className: r.WA,
                 children: (0, i.jsx)(l.j96, {
                     size: "sm",
-                    color: r.A.colors.TEXT_BRAND
+                    color: a.A.colors.TEXT_BRAND
                 })
             })
         })]

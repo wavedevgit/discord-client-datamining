@@ -4,15 +4,15 @@ n.d(t, {
     A: () => A
 });
 var l = n(626584),
-    r = n(111162),
-    a = n(84002),
+    a = n(111162),
+    r = n(84002),
     s = n(538665),
     o = n(546983),
     d = n(233959),
     c = n(652215);
 let u = new l.A("RPCServer:PostMessage"),
     A = (i = new s.A(o.j7, u, d.A, (e, t, n) => {
-        (r.default.isLoggingOverlayEvents || e.cmd !== c.e$_.OVERLAY) && t.info(`Socket Message: ${n.id}`, (0, a.A)(e))
+        (a.default.isLoggingOverlayEvents || e.cmd !== c.e$_.OVERLAY) && t.info(`Socket Message: ${n.id}`, (0, r.A)(e))
     }), window.addEventListener("message", e => {
         if (window === e.source) return;
         if (null == e.source || null == e.source.postMessage) return void u.error("Unknown event source");

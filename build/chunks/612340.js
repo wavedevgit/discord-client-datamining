@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(780964),
-    a = n(858897),
+    a = n(780964),
+    r = n(858897),
     s = n(926466),
     o = n(652215),
     d = n(985018),
@@ -14,7 +14,7 @@ class u extends l.PureComponent {
     render() {
         return (0, i.jsx)(s.A, {
             guild: this.props.guild,
-            onClick: () => (0, a.openUserSettings)(r.X.ACCOUNT_PANEL),
+            onClick: () => (0, r.openUserSettings)(a.X.ACCOUNT_PANEL),
             message: d.intl.format(d.t["oCd+at"], {}),
             cta: d.intl.string(d.t["8dCrV9"]),
             trackingSource: o.kZU.GUILD_MFA_WARNING,

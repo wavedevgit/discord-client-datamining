@@ -48,7 +48,7 @@ let g = e => {
             triggerRef: u
         } = e, f = (0, o.A)(null, () => {
             t && n()
-        }, u), E = (0, d.n)(e => e.globalMute), x = (0, d.n)(e => e.setGlobalMute), I = (0, d.n)(e => e.genre), C = (0, d.n)(e => e.setGenre), N = (0, d.n)(e => e.songIndex), T = (0, d.n)(e => e.playRadio), S = (0, d.n)(e => e.setPlayRadio), b = (0, d.n)(e => e.playPrevSong), y = (0, d.n)(e => e.playNextSong), v = (0, a.bG)([c.A], () => c.A.assets), R = (0, A.A)(I, N), j = !E && T;
+        }, u), E = (0, d.n)(e => e.globalMute), x = (0, d.n)(e => e.setGlobalMute), I = (0, d.n)(e => e.genre), C = (0, d.n)(e => e.setGenre), N = (0, d.n)(e => e.songIndex), T = (0, d.n)(e => e.playRadio), S = (0, d.n)(e => e.setPlayRadio), b = (0, d.n)(e => e.playPrevSong), y = (0, d.n)(e => e.playNextSong), v = (0, a.bG)([c.A], () => c.A.assets), j = (0, A.A)(I, N), R = !E && T;
         return (0, i.jsxs)("div", {
             ref: f,
             className: s()(p.ZR, {
@@ -68,15 +68,15 @@ let g = e => {
                 align: "center",
                 gap: 0,
                 className: p.om,
-                children: [null != R && (0, i.jsxs)(r.BJc, {
+                children: [null != j && (0, i.jsxs)(r.BJc, {
                     children: [(0, i.jsx)(r.Text, {
                         variant: "text-sm/semibold",
-                        children: R.song
+                        children: j.song
                     }), (0, i.jsx)(r.Text, {
                         variant: "text-sm/normal",
                         color: "text-subtle",
                         children: m.intl.format(_.default.i22p4p, {
-                            artist: R.artist
+                            artist: j.artist
                         })
                     })]
                 }), (0, i.jsxs)(r.BJc, {
@@ -125,8 +125,8 @@ let g = e => {
                             children: (0, i.jsxs)("div", {
                                 className: s()(p.BW, {
                                     [p.wH]: e === I,
-                                    [p.he]: j,
-                                    [p.Ft]: !j
+                                    [p.he]: R,
+                                    [p.Ft]: !R
                                 }),
                                 children: [(0, i.jsx)("div", {
                                     className: p.Om

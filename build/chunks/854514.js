@@ -6,8 +6,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(503698),
-    a = n.n(r),
+    a = n(503698),
+    r = n.n(a),
     s = n(323889),
     o = n(311907),
     d = n(397927),
@@ -37,8 +37,8 @@ function v(e) {
     let {
         heroImage: t,
         heroVideo: n
-    } = e, r = l.useRef(null);
-    (0, E.A)(r, C.rE.QUEST_HOME_DESKTOP);
+    } = e, a = l.useRef(null);
+    (0, E.A)(a, C.rE.QUEST_HOME_DESKTOP);
     let s = l.useMemo(() => (null != n ? (0, h.WV)(n) : null) ?? t, [n, t]);
     return null == n ? (0, i.jsxs)("div", {
         className: N.Tv,
@@ -50,14 +50,14 @@ function v(e) {
                 alt: ""
             })
         }), (0, i.jsx)("div", {
-            className: a()(N.LO, N.jx, N.hw),
+            className: r()(N.LO, N.jx, N.hw),
             children: (0, i.jsx)("img", {
                 className: N.LY,
                 src: t,
                 alt: ""
             })
         }), (0, i.jsx)("div", {
-            className: a()(N.LO, N.jx, N.Co),
+            className: r()(N.LO, N.jx, N.Co),
             children: (0, i.jsx)("img", {
                 className: N.LY,
                 src: t,
@@ -71,7 +71,7 @@ function v(e) {
             children: (0, i.jsx)(g.N, {
                 showImage: !1,
                 showVideo: !0,
-                assetRef: r,
+                assetRef: a,
                 imageAsset: {
                     alt: "",
                     className: N.LY,
@@ -101,13 +101,13 @@ function b(e) {
     let {
         hero: t,
         onQuestCtaClick: n
-    } = e, r = (0, o.bG)([u.A], () => u.A.quests), {
-        dismissQuestHomeHeroContent: a
+    } = e, a = (0, o.bG)([u.A], () => u.A.quests), {
+        dismissQuestHomeHeroContent: r
     } = (0, f.I)();
     l.useEffect(() => {
-        a()
-    }, [a]);
-    let h = l.useMemo(() => t.questIds?.find(e => r.has(e)), [r, t.questIds]);
+        r()
+    }, [r]);
+    let h = l.useMemo(() => t.questIds?.find(e => a.has(e)), [a, t.questIds]);
     return (0, i.jsx)(p.R, {
         adContentId: t.id,
         adCreativeType: s.p.QUEST_HOME_HERO,
@@ -171,7 +171,7 @@ function b(e) {
 
 function y() {
     return (0, i.jsx)("div", {
-        className: a()(S.iE, S.FG, S.B3),
+        className: r()(S.iE, S.FG, S.B3),
         children: (0, i.jsx)(d.y$y, {})
     })
 }

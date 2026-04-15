@@ -4,12 +4,12 @@ i.d(t, {
     dE: () => x
 });
 var n = i(627968),
-    s = i(64700),
-    l = i(896170),
+    l = i(64700),
+    s = i(896170),
     a = i(397927),
     r = i(383329),
-    o = i(183555),
-    d = i(735321),
+    d = i(183555),
+    o = i(735321),
     c = i(958338),
     u = i(985018),
     g = i(201669);
@@ -21,62 +21,62 @@ function m(e) {
         onAddGame: m,
         children: h,
         ...x
-    } = e, p = s.useMemo(() => new Set(i.games.map(e => e.applicationId)), [i.games]), {
-        trackUserProfileEditAction: A
-    } = (0, o.NJ)(), [f, I] = s.useState(""), j = s.useRef(""), {
+    } = e, A = l.useMemo(() => new Set(i.games.map(e => e.applicationId)), [i.games]), {
+        trackUserProfileEditAction: p
+    } = (0, d.NJ)(), [f, I] = l.useState(""), j = l.useRef(""), {
         options: v,
         matchSorterOptions: S
     } = (0, r.R)(), {
-        applicationIds: b,
-        onAddGame: y
-    } = (0, c.S)(t), E = s.useCallback(e => {
-        (0, d.ew)({
+        applicationIds: E,
+        onAddGame: b
+    } = (0, c.S)(t), T = l.useCallback(e => {
+        (0, o.ew)({
             widgetType: t,
             game: {
                 applicationId: e
             }
-        }), a.ORC.announce(u.intl.string(u.t.q0U3DE)), A({
+        }), a.ORC.announce(u.intl.string(u.t.q0U3DE)), p({
             action: "GAME_ADDED",
             gameId: e,
             widgetEdited: t
-        }), b.includes(e) && y(e), m?.()
-    }, [t, A, m, b, y]), T = s.useMemo(() => {
+        }), E.includes(e) && b(e), m?.()
+    }, [t, p, m, E, b]), y = l.useMemo(() => {
         let e = new Map(v.map(e => [String(e.value), {
                 id: String(e.value),
                 value: String(e.value),
                 label: e.label,
-                disabled: p.has(e.value)
+                disabled: A.has(e.value)
             }])),
-            t = b.map(t => e.get(t)).filter(e => null != e && !e.disabled),
+            t = E.map(t => e.get(t)).filter(e => null != e && !e.disabled),
             i = [...e.values()].filter(e => !t.includes(e));
         return [...t, ...i]
-    }, [v, p, b]), C = s.useMemo(() => ({
+    }, [v, A, E]), C = l.useMemo(() => ({
         ...S,
-        threshold: l.Ht.rankings.CONTAINS,
+        threshold: s.Ht.rankings.CONTAINS,
         keys: ["label"]
-    }), [S]), w = s.useCallback(e => "" === e.trim() ? T.length : (0, l.Ht)(T, e, C).length, [T, C]), N = s.useCallback(e => {
+    }), [S]), N = l.useCallback(e => "" === e.trim() ? y.length : (0, s.Ht)(y, e, C).length, [y, C]), w = l.useCallback(e => {
         let i = e.target.value;
-        "" === f.trim() && "" !== i.trim() && A({
+        "" === f.trim() && "" !== i.trim() && p({
             action: "GAME_SEARCH_SESSION_STARTED",
             widgetEdited: t,
             numCharacters: i.trim().length,
-            numResults: w(i)
+            numResults: N(i)
         }), I(i), j.current = i
-    }, [f, A, t, w]);
+    }, [f, p, t, N]);
     return (0, n.jsx)(a.YNO, {
         ...x,
         onRequestOpen: () => {
-            A({
+            p({
                 action: "PRESS_ADD_GAME",
                 widgetEdited: t
             }), I(""), j.current = ""
         },
         onRequestClose: () => {
-            A({
+            p({
                 action: "GAME_SEARCH_SESSION_ENDED",
                 widgetEdited: t,
                 numCharacters: j.current.trim().length,
-                numResults: w(j.current)
+                numResults: N(j.current)
             })
         },
         renderPopout: e => {
@@ -90,16 +90,16 @@ function m(e) {
                     selectionMode: "single",
                     value: null,
                     onSelectionChange: e => {
-                        null != e && (E(e), t())
+                        null != e && (T(e), t())
                     },
-                    options: T,
+                    options: y,
                     matchSorterOptions: C,
                     children: [(0, n.jsx)(a.a32, {
                         label: u.intl.string(u.t["5h0QOP"]),
                         hideLabel: !0,
                         placeholder: u.intl.string(u.t["5h0QOP"]),
                         autoFocus: !0,
-                        onQueryChange: N
+                        onQueryChange: w
                     }), (0, n.jsx)(a.X2W, {
                         maxVisibleItems: 7
                     })]
@@ -114,14 +114,14 @@ function h(e) {
     let {
         disabled: t,
         ...i
-    } = e, l = s.useRef(null);
+    } = e, s = l.useRef(null);
     return (0, n.jsx)(m, {
-        targetElementRef: l,
+        targetElementRef: s,
         position: "bottom",
         align: "center",
         ...i,
         children: e => (0, n.jsx)(a.Button, {
-            buttonRef: l,
+            buttonRef: s,
             variant: "secondary",
             size: "sm",
             icon: a.j96,
@@ -133,7 +133,7 @@ function h(e) {
 }
 
 function x(e) {
-    let t = s.useRef(null);
+    let t = l.useRef(null);
     return (0, n.jsx)(m, {
         targetElementRef: t,
         position: "right",

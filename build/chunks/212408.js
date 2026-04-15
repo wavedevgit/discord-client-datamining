@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(990078),
-    r = n(985018),
-    a = n(304463);
+    a = n(985018),
+    r = n(304463);
 let s = Math.ceil(2 * Math.PI * 20),
     o = e => {
         let t, n, o, d, {
@@ -16,26 +16,26 @@ let s = Math.ceil(2 * Math.PI * 20),
             A = Math.max(0, Math.min(1, u / c)),
             h = `${Math.floor(100*A)}%`;
         return (0, i.jsx)(l.m, {
-            text: r.intl.formatToPlainString(r.t["2eoRMh"], {
+            text: a.intl.formatToPlainString(a.t["2eoRMh"], {
                 used: h
             }),
             children: (0, i.jsxs)("div", {
-                className: a.iE,
+                className: r.iE,
                 role: "progressbar",
-                "aria-label": r.intl.formatToPlainString(r.t["2eoRMh"], {
+                "aria-label": a.intl.formatToPlainString(a.t["2eoRMh"], {
                     used: h
                 }),
                 children: [(0, i.jsxs)("svg", {
                     viewBox: "25 25 50 50",
-                    className: a.JW,
+                    className: r.JW,
                     "aria-hidden": !0,
                     children: [(0, i.jsx)("circle", {
-                        className: a.Tp,
+                        className: r.Tp,
                         cx: "50",
                         cy: "50",
                         r: 20
                     }), (0, i.jsx)("circle", {
-                        className: a.CU,
+                        className: r.CU,
                         cx: "50",
                         cy: "50",
                         r: 20,
@@ -43,7 +43,7 @@ let s = Math.ceil(2 * Math.PI * 20),
                         strokeDasharray: (d = Math.floor(s * A), `${d}, ${s}`)
                     })]
                 }), (0, i.jsx)("aside", {
-                    className: a.Y3,
+                    className: r.Y3,
                     "aria-hidden": !0,
                     children: h
                 })]

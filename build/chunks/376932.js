@@ -1,65 +1,60 @@
 /** chunk id: 376932 params = (module,exports,require) **/
 i.d(t, {
-    A: () => j
+    A: () => I
 });
 var n = i(627968),
-    s = i(64700),
-    l = i(503698),
-    a = i.n(l),
+    l = i(64700),
+    s = i(503698),
+    a = i.n(s),
     r = i(158954),
-    o = i(311907),
-    d = i(554146),
+    d = i(311907),
+    o = i(554146),
     c = i(932001),
-    u = i(178213),
-    g = i(770983),
-    m = i(927813),
-    h = i(622543),
-    x = i(49999),
-    p = i(985018),
+    u = i(770983),
+    g = i(927813),
+    m = i(622543),
+    h = i(49999),
+    x = i(985018),
     A = i(970901);
-let f = 90 * m.A.Millis.DAY,
-    I = 90 * m.A.Millis.DAY;
+let p = 90 * g.A.Millis.DAY,
+    f = 90 * g.A.Millis.DAY;
 
-function j(e) {
+function I(e) {
     let {
         user: t,
         wishlist: i,
-        hasFetchedWishlist: l = !1,
-        analyticsLocations: m,
-        className: j,
-        applicationIds: v
-    } = e, S = (0, u.GG)("social_layer_wishlist_recommendations_on_profile"), b = (i?.items.length ?? 0) > 0, [y, E] = s.useState(!1);
-    !l || b || y || E(!0);
-    let T = (0, o.bG)([h.A], () => null != i ? new Date(h.A.getWishlistSettings(t.id, i.id)?.updated_at ?? 0).valueOf() : 0),
-        [C, w] = (0, c.Wl)(d.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS, {
-            showAfterTimestamp: T + I,
-            cooldownDurationMs: f
+        hasFetchedWishlist: s = !1,
+        analyticsLocations: g,
+        className: I
+    } = e, j = (i?.items.length ?? 0) > 0, [v, S] = l.useState(!1);
+    !s || j || v || S(!0);
+    let E = (0, d.bG)([m.A], () => null != i ? new Date(m.A.getWishlistSettings(t.id, i.id)?.updated_at ?? 0).valueOf() : 0),
+        [b, T] = (0, c.Wl)(o.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS, {
+            showAfterTimestamp: E + f,
+            cooldownDurationMs: p
         }, void 0, !0),
-        N = C === d.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS;
-    return l && (!b || N || y) ? (0, n.jsxs)("div", {
-        className: a()(A.kL, j),
+        y = b === o.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS;
+    return s && (!j || y || v) ? (0, n.jsxs)("div", {
+        className: a()(A.kL, I),
         children: [(0, n.jsxs)("div", {
             className: A.wx,
             children: [(0, n.jsx)(r.EYj, {
                 variant: "text-xs/normal",
                 color: "text-subtle",
-                children: p.intl.string(p.t["+GB8Kt"])
-            }), b && (0, n.jsx)(r.JnF, {
+                children: x.intl.string(x.t["+GB8Kt"])
+            }), j && (0, n.jsx)(r.JnF, {
                 size: "xs",
                 onClick: () => {
-                    E(!1), w(x.i.USER_DISMISS)
+                    S(!1), T(h.i.USER_DISMISS)
                 }
             })]
-        }), (0, n.jsx)(g.A, {
+        }), (0, n.jsx)(u.A, {
             userId: t.id,
-            applicationIds: v,
             wishlist: i,
-            className: a()(A.Vg, {
-                [A.e6]: S
-            }),
-            analyticsLocations: m,
+            className: a()(A.Vg, A.e6),
+            analyticsLocations: g,
             numWishlistItemsToRecommend: 15,
-            maxWishlistItemsToShow: S ? 8 : 6
+            maxWishlistItemsToShow: 8
         })]
     }) : null
 }

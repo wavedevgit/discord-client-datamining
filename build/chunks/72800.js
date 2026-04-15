@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(503698),
-    a = n.n(r),
+    a = n(503698),
+    r = n.n(a),
     s = n(417597),
     o = n(932001),
     d = n(967198),
@@ -17,12 +17,12 @@ let h = l.memo(function(e) {
         state: t,
         markAsDismissed: n
     } = e, {
-        name: r,
+        name: a,
         guildId: s,
         boundingRect: o
-    } = t, d = l.useMemo(() => null, [r, s, n]);
+    } = t, d = l.useMemo(() => null, [a, s, n]);
     return null == d ? null : (0, i.jsx)("div", {
-        className: a()(A.UX, (null == o || o.y < 0) && A.R),
+        className: r()(A.UX, (null == o || o.y < 0) && A.R),
         style: null == o ? {} : {
             top: o.top,
             left: o.right - o.x
@@ -46,11 +46,11 @@ function _() {
             return t
         }), u.m.SIDEBAR);
     if (null == n) return null;
-    let r = t[n];
-    return null == r ? null : (0, i.jsx)("div", {
+    let a = t[n];
+    return null == a ? null : (0, i.jsx)("div", {
         className: A.kL,
         children: (0, i.jsx)(h, {
-            state: r,
+            state: a,
             markAsDismissed: l
         })
     })

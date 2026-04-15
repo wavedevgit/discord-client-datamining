@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(157550),
     y = n(97469),
     v = n(734057),
-    R = n(290863),
-    j = n(645959),
+    j = n(290863),
+    R = n(645959),
     O = n(701363),
     L = n(652215),
     M = n(985018),
@@ -241,7 +241,7 @@ class G extends l.Component {
             o = t.some(e => (0, f.A)(e)),
             d = {
                 num_users_visible: a.length,
-                num_users_visible_with_mobile_indicator: r.filter(e => null != e && R.A.isMobileOnline(e)).length
+                num_users_visible_with_mobile_indicator: r.filter(e => null != e && j.A.isMobileOnline(e)).length
             };
         this.hasReportedAnalytics = !0, m.Ay.trackWithMetadata(L.HAw.DM_LIST_VIEWED, {
             ...d,
@@ -373,15 +373,15 @@ let P = e => {
         theme: s,
         children: a,
         listScrollerRef: c
-    } = e, h = l.Children.count(a), m = v.A.getMutablePrivateChannels(), g = (0, S.uX)(m), f = (0, d.yK)([j.default, T.A, b.A], () => {
-        let e = j.default.getPrivateChannelIds();
+    } = e, h = l.Children.count(a), m = v.A.getMutablePrivateChannels(), g = (0, S.uX)(m), f = (0, d.yK)([R.default, T.A, b.A], () => {
+        let e = R.default.getPrivateChannelIds();
         return (0, S.eh)(e, [T.A, b.A])
     });
     (0, C.P)(I._);
     let {
         analyticsLocations: E
     } = (0, p.Ay)(_.A.CONTACTS_LIST), N = (0, y.NC)(), {
-        keyboardModeEnabled: R,
+        keyboardModeEnabled: j,
         version: O
     } = (0, d.cf)([A.A, v.A], () => ({
         keyboardModeEnabled: A.A.keyboardModeEnabled,
@@ -413,7 +413,7 @@ let P = e => {
         })
     }), [M]), k = (0, x.GV)(), w = (0, o.Ay)({
         id: `private-channels-${k}`,
-        isEnabled: R,
+        isEnabled: j,
         scrollToStart: U,
         scrollToEnd: P,
         defaultFocused: (h + 1).toString(),

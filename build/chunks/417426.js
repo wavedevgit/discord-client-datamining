@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(562465),
     l = n(319400),
-    r = n(73153),
-    a = n(449054),
+    a = n(73153),
+    r = n(449054),
     s = n(965660),
     o = n(324580),
     d = n(652215);
@@ -18,7 +18,7 @@ let c = {
             limit: A,
             withCounts: h
         } = t;
-        r.h.dispatch({
+        a.h.dispatch({
             type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_START",
             query: e,
             categoryId: n,
@@ -39,7 +39,7 @@ let c = {
                     rejectWithError: !1
                 }),
                 l = t.body.guilds.map(s.uk),
-                a = t.body.total_count;
+                r = t.body.total_count;
             if (h) {
                 let n = [];
                 t.body.categories?.slice(0, 8).forEach(e => {
@@ -48,32 +48,32 @@ let c = {
                         count: i
                     } = e;
                     n.push([Number(t), i])
-                }), r.h.dispatch({
+                }), a.h.dispatch({
                     type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_COUNT_SUCCESS",
                     query: e,
                     categoryCounts: n
                 })
             }
-            r.h.dispatch({
+            a.h.dispatch({
                 type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_SUCCESS",
                 query: e,
                 categoryId: n,
                 languageCode: c,
                 guilds: l,
-                total: a
+                total: r
             })
         } catch (i) {
             let t = new l.LG(i);
-            a.jb({
+            r.jb({
                 categoryId: n,
                 error: t,
                 willRequestRetry: !1,
                 isRequestRetry: !1
-            }), h && r.h.dispatch({
+            }), h && a.h.dispatch({
                 type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_COUNT_SUCCESS",
                 query: e,
                 categoryCounts: []
-            }), r.h.dispatch({
+            }), a.h.dispatch({
                 type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_FAILURE",
                 query: e,
                 categoryId: n,
@@ -83,13 +83,13 @@ let c = {
         }
     },
     clearSearchResults: function(e) {
-        r.h.dispatch({
+        a.h.dispatch({
             type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_CLEAR",
             ignoreQueries: e?.ignoreQueries ?? []
         })
     },
     resetSearchLayout: function() {
-        r.h.dispatch({
+        a.h.dispatch({
             type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_LAYOUT_RESET"
         })
     }

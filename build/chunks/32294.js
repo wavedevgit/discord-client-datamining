@@ -4,8 +4,8 @@ n.d(t, {
     A: () => x
 });
 var l = n(73153),
-    r = n(31728),
-    a = n(272355),
+    a = n(31728),
+    r = n(272355),
     s = n(933958),
     o = n(313961),
     d = n(652896),
@@ -25,7 +25,7 @@ var l = n(73153),
 function T() {
     let e = i;
     if (null == e || !m.A.isOpen(e)) return !1;
-    l.h.wait(() => r.VN(e)), g.A.getRTCConnection()?.setPipOpen(!1), i = null
+    l.h.wait(() => a.VN(e)), g.A.getRTCConnection()?.setPipOpen(!1), i = null
 }
 
 function N() {
@@ -47,11 +47,11 @@ function N() {
         }()) return T();
     if (t || T(), null == e) return !1;
     let n = A.A.getChannel(e);
-    return !(null == n || m.A.isOpen(e)) && (l.h.wait(() => r.ho(n.id, f.o1q.VIDEO, {
+    return !(null == n || m.A.isOpen(e)) && (l.h.wait(() => a.ho(n.id, f.o1q.VIDEO, {
         channel: n
     })), g.A.getRTCConnection()?.setPipOpen(!0), void(i = e))
 }
-class S extends a.A {
+class S extends r.A {
     _initialize() {
         p.A.addChangeListener(N), E.A.addChangeListener(N), g.A.addChangeListener(N), I.A.addChangeListener(N), h.A.addChangeListener(N), u.A.addChangeListener(N), c.A.addChangeListener(N), _.Ay.addChangeListener(N), s.Ay.addChangeListener(N), o.A.addChangeListener(N)
     }

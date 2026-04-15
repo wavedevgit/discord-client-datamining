@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     l = n(64700),
-    r = n(311907),
-    a = n(397927),
+    a = n(311907),
+    r = n(397927),
     s = n(308368),
     o = n(544420),
     d = n(956793),
@@ -53,7 +53,7 @@ function H(e) {
                 activity: t
             } = e;
             return (0, h.A)(t)
-        }), l = (0, r.bG)([T.A], () => T.A.getAccounts().some(e => e.type === c.A.get(k.fg2.XBOX).type)), s = t.filter(e => {
+        }), l = (0, a.bG)([T.A], () => T.A.getAccounts().some(e => e.type === c.A.get(k.fg2.XBOX).type)), s = t.filter(e => {
             let {
                 activity: t
             } = e;
@@ -64,7 +64,7 @@ function H(e) {
             } = e;
             return (0, _.Ay)(t)
         });
-        return n || l || !o || d ? null : (0, i.jsx)(a.Drp, {
+        return n || l || !o || d ? null : (0, i.jsx)(r.Drp, {
             id: "xbox-connect",
             action: () => (0, f.openUserSettings)(I.X.CONNECTIONS_PANEL),
             label: V.intl.formatToPlainString(V.t.XWSHTb, {
@@ -75,19 +75,19 @@ function H(e) {
         let {
             currentActivities: t
         } = e, n = l.useContext(w.AnalyticsContext);
-        return (0, r.yK)([P.default, v.A, C.A, x.A, S.A, O.A, L.A, D.A, y.A, b.A, R.A, u.Ay, E.A, M.A, N.A, p.Ay, j.A], () => {
+        return (0, a.yK)([P.default, v.A, C.A, x.A, S.A, O.A, L.A, D.A, y.A, b.A, R.A, u.Ay, E.A, M.A, N.A, p.Ay, j.A], () => {
             let e = P.default.getCurrentUser();
             return t.filter(e => !(0, m.A)(e.activity)).map(t => {
                 let {
                     activity: i,
                     game: l,
-                    activityUser: r
-                } = t, a = v.A.getActiveLibraryApplication(l.id);
+                    activityUser: a
+                } = t, r = v.A.getActiveLibraryApplication(l.id);
                 return {
                     ...t,
-                    libraryApplication: a,
+                    libraryApplication: r,
                     activityJoinability: (0, A.A)({
-                        user: r,
+                        user: a,
                         activity: i,
                         application: l,
                         channelId: null,
@@ -110,7 +110,7 @@ function H(e) {
                         DispatchApplicationStore: M.A,
                         ConnectedAppsStore: N.A,
                         applicationId: l.id,
-                        branchId: null != a ? a.branchId : null
+                        branchId: null != r ? r.branchId : null
                     }),
                     isJoining: j.A.getState(l.id, k.xL.JOIN) === k.eAD.LOADING,
                     isLaunching: E.A.launchingGames.has(l.id),
@@ -128,18 +128,18 @@ function H(e) {
             let {
                 activity: n,
                 activityUser: l,
-                game: r,
+                game: a,
                 activityJoinability: c,
                 isJoining: u
             } = e;
             if (null == n) return null;
-            if (c === A.o.JOINED) return (0, i.jsx)(a.Drp, {
+            if (c === A.o.JOINED) return (0, i.jsx)(r.Drp, {
                 id: `joined-game-${n.session_id}`,
                 label: V.intl.string(V.t.KC26NR),
                 subtext: n.name,
                 disabled: !0
             });
-            if (c === A.o.CAN_JOIN) return (0, i.jsx)(a.Drp, {
+            if (c === A.o.CAN_JOIN) return (0, i.jsx)(r.Drp, {
                 id: `join-game-${n.session_id}`,
                 label: u ? V.intl.string(V.t.bf6Ci7) : V.intl.string(V.t.VJlc0S),
                 subtext: n.name,
@@ -148,7 +148,7 @@ function H(e) {
                     o.Ay.join({
                         userId: l.id,
                         sessionId: n.session_id,
-                        applicationId: r.id,
+                        applicationId: a.id,
                         channelId: null,
                         messageId: null,
                         source: k.ThZ.USER_ACTIVITY_ACTIONS
@@ -166,7 +166,7 @@ function H(e) {
                     });
                     null != e && d.default.selectPrivateChannel(e.id)
                 }
-                return (0, i.jsx)(a.Drp, {
+                return (0, i.jsx)(r.Drp, {
                     id: `join-${n.session_id}`,
                     label: t ? V.intl.formatToPlainString(V.t.wFAvxM, {
                         name: l.toString()
@@ -180,7 +180,7 @@ function H(e) {
             let {
                 activity: n,
                 game: l,
-                libraryApplication: r,
+                libraryApplication: a,
                 location: s,
                 canPlay: o,
                 isRunning: d,
@@ -192,10 +192,10 @@ function H(e) {
             }) : c ? V.intl.formatToPlainString(V.t.WtSQwG, {
                 name: l.name
             }) : void 0;
-            return (0, i.jsx)(a.Drp, {
+            return (0, i.jsx)(r.Drp, {
                 id: `play-${n.session_id}`,
                 action: function() {
-                    (0, G.playApplication)(l.id, r, {
+                    (0, G.playApplication)(l.id, a, {
                         analyticsParams: {
                             location: {
                                 ...s,

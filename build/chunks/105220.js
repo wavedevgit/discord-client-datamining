@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(284009),
-    a = n.n(r),
+    a = n(284009),
+    r = n.n(a),
     s = n(397927),
     o = n(143991),
     d = n(942857),
@@ -34,7 +34,7 @@ let N = l.memo(function() {
             let {
                 current: l
             } = t;
-            a()(null != l, "Shakeable is shaken when not mounted"), l.shake(n, i)
+            r()(null != l, "Shakeable is shaken when not mounted"), l.shake(n, i)
         }, []);
     return l.useEffect(() => (u.A.setLayout(c.Ay), u.A.enable(), () => u.A.disable()), []), l.useEffect(() => (E._.subscribe(C.jej.SHAKE_APP, n), () => {
         E._.unsubscribe(C.jej.SHAKE_APP, n)

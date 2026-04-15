@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(503698),
-    a = n.n(r),
+    a = n(503698),
+    r = n.n(a),
     s = n(397927),
     o = n(73153),
     d = n(944791),
@@ -61,7 +61,7 @@ class C extends l.PureComponent {
                 currentRoute: E.BVt.APPLICATION_LIBRARY,
                 renderToolbar: this.renderToolbar
             }), e ? null : t, (0, i.jsxs)(s.GtU, {
-                className: a()(f.k, f.X),
+                className: r()(f.k, f.X),
                 ref: this._scrollerRef,
                 children: [e ? t : null, (0, i.jsx)(A.A, {
                     section: E.JJy.LIBRARY_APPLICATION_LIST,

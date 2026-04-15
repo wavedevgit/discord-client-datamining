@@ -1,6 +1,6 @@
 /** chunk id: 597351 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
 var i = n(627968);
 n(64700);
@@ -10,13 +10,13 @@ var r = n(503698),
     o = n(397927),
     s = n(922118);
 
-function d(e) {
+function u(e) {
     let {
         onClick: t,
         icon: n,
         tooltip: r,
-        className: d
-    } = e, u = n({
+        className: u
+    } = e, d = n({
         color: "currentColor",
         size: "custom",
         width: 20,
@@ -30,10 +30,10 @@ function d(e) {
                 t(e)
             },
             "aria-label": r,
-            className: a()(s.x, d),
+            className: a()(s.x, u),
             children: (0, i.jsx)("div", {
                 className: s.h,
-                children: u
+                children: d
             })
         })
     })

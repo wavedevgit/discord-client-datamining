@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(963702),
     y = n(652215),
     v = n(985018),
-    R = n(677510);
-let j = {
+    j = n(677510);
+let R = {
     offset: {
         left: 4,
         right: -12
@@ -49,7 +49,7 @@ function L() {
         s = l.useRef(null),
         a = (0, A.A)("scheduled-messages", s);
     return n ? (0, i.jsx)(h.y$y, {
-        className: R.k$
+        className: j.k$
     }) : 0 === t.length ? (0, i.jsx)(b.A, {
         Icon: h.O4,
         header: v.intl.string(v.t.aJQZfZ),
@@ -93,7 +93,7 @@ function M(e) {
                 scheduledMessages: l
             }] = e;
             return (0, i.jsxs)("div", {
-                className: R.WG,
+                className: j.WG,
                 children: [(0, i.jsx)(S.A, {
                     channel: n,
                     gotoChannel: () => (0, m.pX)(y.BVt.CHANNEL(n.getGuildId(), n.id)),
@@ -165,27 +165,27 @@ let D = l.memo(function(e) {
         })
     }, [t]);
     return (0, i.jsx)("div", {
-        className: a()(R.zC, {
-            [R._4]: d,
-            [R.j3]: !d
+        className: a()(j.zC, {
+            [j._4]: d,
+            [j.j3]: !d
         }),
         children: s ? (0, i.jsx)(h.y$y, {
-            className: R.$5
+            className: j.$5
         }) : (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(h.Text, {
                 variant: "text-xs/semibold",
                 color: d ? "text-feedback-critical" : "text-feedback-positive",
-                className: R.Rq,
+                className: j.Rq,
                 children: u
             }), (0, i.jsxs)("div", {
-                className: R.Pd,
+                className: j.Pd,
                 children: [(0, i.jsx)(_.A, {
                     message: r,
                     channel: n,
-                    className: R.iU,
+                    className: j.iU,
                     compact: x.hH.getSetting(),
                     animateAvatar: !1,
-                    focusProps: j
+                    focusProps: R
                 }, r.id), (0, i.jsxs)(c.e2v, {
                     size: "sm",
                     children: [(0, i.jsx)(c.K0, {

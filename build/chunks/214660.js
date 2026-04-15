@@ -33,12 +33,12 @@ let C = e => {
         notPhoneVerified: T,
         newAccount: S,
         newMember: b
-    } = (0, r.bG)([_.A], () => _.A.getCheck(i), [i]), y = 0 === t ? f.intl.string(f.t["6zY8BI"]) : null, v = null, R = null;
-    return (0 === t && (C ? (v = f.intl.string(f.t.IRxUlG), R = f.intl.string(f.t.fiNVin)) : T ? (v = f.intl.string(f.t.vW8iUF), R = f.intl.string(f.t["50gfOv"])) : N ? (v = f.intl.string(f.t.vdSOpz), R = f.intl.string(f.t.lm1UKt)) : b ? (v = f.intl.formatToPlainString(f.t.v1ktYb, {
+    } = (0, r.bG)([_.A], () => _.A.getCheck(i), [i]), y = 0 === t ? f.intl.string(f.t["6zY8BI"]) : null, v = null, j = null;
+    return (0 === t && (C ? (v = f.intl.string(f.t.IRxUlG), j = f.intl.string(f.t.fiNVin)) : T ? (v = f.intl.string(f.t.vW8iUF), j = f.intl.string(f.t["50gfOv"])) : N ? (v = f.intl.string(f.t.vdSOpz), j = f.intl.string(f.t.lm1UKt)) : b ? (v = f.intl.formatToPlainString(f.t.v1ktYb, {
         min: p.$8o.MEMBER_AGE
-    }), R = f.intl.string(f.t.BddRzS)) : S && (v = f.intl.formatToPlainString(f.t.sncw41, {
+    }), j = f.intl.string(f.t.BddRzS)) : S && (v = f.intl.formatToPlainString(f.t.sncw41, {
         min: p.$8o.ACCOUNT_AGE
-    }), R = f.intl.string(f.t.BddRzS))), null == y || null == v) ? null : (0, l.jsxs)(d.lGe, {
+    }), j = f.intl.string(f.t.BddRzS))), null == y || null == v) ? null : (0, l.jsxs)(d.lGe, {
         className: a()(x.popover, E.kL),
         "aria-labelledby": I,
         children: [(0, l.jsx)("img", {
@@ -57,12 +57,12 @@ let C = e => {
                 children: v
             }), (0, l.jsxs)("div", {
                 className: E.UD,
-                children: [null != R ? (0, l.jsx)("div", {
+                children: [null != j ? (0, l.jsx)("div", {
                     "data-button-hoisted-classname-wrapper": !0,
                     className: E.FS,
                     children: (0, l.jsx)(d.Button, {
                         variant: "primary",
-                        text: R,
+                        text: j,
                         onClick: () => {
                             C ? u.R() : T ? (0, d.mMO)(async () => {
                                 let {

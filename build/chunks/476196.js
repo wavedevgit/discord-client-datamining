@@ -4,12 +4,12 @@ n.d(t, {
 });
 var i = n(735438),
     l = n.n(i),
-    r = n(626584),
-    a = n(617617),
+    a = n(626584),
+    r = n(617617),
     s = n(961350),
     o = n(723176),
     d = n(989950);
-let c = new r.A("UserSettingsProto");
+let c = new a.A("UserSettingsProto");
 class u {
     actions = {
         CONNECTION_OPEN: () => this.throttledOnChange(),
@@ -30,13 +30,13 @@ class u {
         let e = s.default.getId(),
             t = d.A.database(e);
         t?.transaction(e => {
-            let t = a.A.computeState(),
+            let t = r.A.computeState(),
                 n = o.A.userSettingsTransaction(e);
             for (let e in t) n.put({
                 id: Number(e),
                 value: t[e]
             });
-            let i = a.A.settings.versions?.dataVersion ?? -1;
+            let i = r.A.settings.versions?.dataVersion ?? -1;
             o.A.nonGuildVersionsTransaction(e).put({
                 id: "user_settings_version",
                 version: i

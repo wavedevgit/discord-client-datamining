@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(179771),
-    r = n(397927),
-    a = n(827343),
+    a = n(397927),
+    r = n(827343),
     s = n(401843),
     o = n(793574),
     d = n(15285),
@@ -27,7 +27,7 @@ let f = {
         },
         handler() {
             let e = h.Ay.isVideoEnabled();
-            null != (0, p.A)() && (e ? a.A.setVideoEnabled(!1) : (0, u.A)(() => a.A.setVideoEnabled(!0), I.BRT.APP))
+            null != (0, p.A)() && (e ? r.A.setVideoEnabled(!1) : (0, u.A)(() => r.A.setVideoEnabled(!0), I.BRT.APP))
         }
     },
     [I.e$_.TOGGLE_SCREENSHARE]: {
@@ -42,14 +42,14 @@ let f = {
                 args: {
                     pid: t
                 }
-            } = e, l = A.A.getCurrentUserActiveStream(), a = A.A.getStreamerActiveStreamMetadata(), u = (0, c.A)(d.Ay, _.A), h = (0, p.A)();
-            null != h && (null != t && null != a && a.pid !== t && (0, m.isWindows)() ? (0, s.XI)(h.guild_id, h.id, {
+            } = e, l = A.A.getCurrentUserActiveStream(), r = A.A.getStreamerActiveStreamMetadata(), u = (0, c.A)(d.Ay, _.A), h = (0, p.A)();
+            null != h && (null != t && null != r && r.pid !== t && (0, m.isWindows)() ? (0, s.XI)(h.guild_id, h.id, {
                 pid: t
             }) : null != l ? (0, s.nO)(!1) : null != t && (0, m.isWindows)() ? (0, s.XI)(h.guild_id, h.id, {
                 pid: t
             }) : null != u ? (0, s.XI)(h.guild_id, h.id, {
                 pid: u.pid
-            }) : (0, r.mMO)(async () => {
+            }) : (0, a.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("96811").then(n.bind(n, 648230));

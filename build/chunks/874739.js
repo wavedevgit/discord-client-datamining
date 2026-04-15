@@ -33,8 +33,8 @@ let I = (0, a.A)(e => {
         channel: b,
         hasConnectPermission: y,
         className: v,
-        inCall: R,
-        showParticipants: j = !0,
+        inCall: j,
+        showParticipants: R = !0,
         width: O,
         height: L,
         idle: M,
@@ -51,12 +51,12 @@ let I = (0, a.A)(e => {
     if (G?.channelId === b.id) return (0, i.jsx)(_.A, {
         height: L
     });
-    if (b?.isGuildVocalOrThread() && !R) return (0, i.jsx)(A.A, {
+    if (b?.isGuildVocalOrThread() && !j) return (0, i.jsx)(A.A, {
         channel: b,
         participants: t,
         hasConnectPermission: y
     });
-    if (n = R ? n : t, C === f.DUB.HAVEN) return (0, i.jsx)(u.A, {
+    if (n = j ? n : t, C === f.DUB.HAVEN) return (0, i.jsx)(u.A, {
         participants: n,
         channel: b,
         idle: M
@@ -88,7 +88,7 @@ let I = (0, a.A)(e => {
                 onClick: N,
                 onDoubleClick: S,
                 onContextMenu: T,
-                inCall: R,
+                inCall: j,
                 popoutType: U
             })
         })
@@ -106,8 +106,8 @@ let I = (0, a.A)(e => {
         height: L,
         width: O,
         layout: C,
-        inCall: R,
+        inCall: j,
         channel: b,
-        showParticipants: j
+        showParticipants: R
     })
 })

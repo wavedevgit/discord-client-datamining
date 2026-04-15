@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(311907),
-    a = n(397927),
+    a = n(311907),
+    r = n(397927),
     s = n(747550),
     o = n(282026),
     d = n(997590),
@@ -16,7 +16,7 @@ var i = n(627968),
 let _ = function(e) {
     let {
         loadId: t
-    } = e, n = o.A.useField("categoryId"), _ = (0, r.bG)([d.A], () => d.A.getCategoryName(n)), m = l.useCallback(() => {
+    } = e, n = o.A.useField("categoryId"), _ = (0, a.bG)([d.A], () => d.A.getCategoryName(n)), m = l.useCallback(() => {
         o.A.setState({
             categoryId: c.Iq
         }), s.A.loadCategoryResults({
@@ -36,11 +36,11 @@ let _ = function(e) {
             alt: "",
             src: h,
             className: A.Sl
-        }), (0, i.jsx)(a.Heading, {
+        }), (0, i.jsx)(r.Heading, {
             variant: "heading-xl/semibold",
             className: A.wx,
             children: g
-        }), (0, i.jsx)(a.Text, {
+        }), (0, i.jsx)(r.Text, {
             variant: "text-md/normal",
             color: "text-default",
             children: p

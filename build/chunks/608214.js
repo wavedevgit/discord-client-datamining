@@ -10,8 +10,8 @@ var i = n(627968),
     l = n(672477),
     o = n(275687),
     s = n(731068),
-    d = n(619517),
-    u = n(248643),
+    u = n(619517),
+    d = n(248643),
     h = n(803316),
     c = n(652176),
     m = n(644447),
@@ -44,8 +44,8 @@ let E = r.memo(function(e) {
             media: I,
             obscured: v = !1,
             maxWidth: j,
-            maxHeight: S,
-            onContextMenu: M
+            maxHeight: M,
+            onContextMenu: S
         } = e,
         {
             width: N,
@@ -86,23 +86,23 @@ let E = r.memo(function(e) {
             posterUrl: e,
             channelId: I.sourceMetadata?.message?.channel_id,
             maxWidth: j,
-            maxHeight: S,
+            maxHeight: M,
             active: !0,
             autoPlay: I.autoPlay ?? !v,
             autoMute: "function" == typeof I.autoMute ? I.autoMute() : I.autoMute ?? (0, p.uj)(),
             volume: (0, p.v1)(),
-            onContextMenu: M,
+            onContextMenu: S,
             onVolumeChange: p.ls,
             onMutedChange: p.y5
         });
         let t = I.renderLinkComponent ?? c.bU;
-        return (0, i.jsx)(u.A, {
+        return (0, i.jsx)(d.A, {
             ...b,
             src: W,
             width: N,
             height: O,
             maxWidth: j,
-            maxHeight: S,
+            maxHeight: M,
             poster: e,
             naturalWidth: N,
             naturalHeight: O,
@@ -113,32 +113,32 @@ let E = r.memo(function(e) {
             renderLinkComponent: t,
             autoPlay: I.autoPlay ?? !v,
             alt: T,
-            onContextMenu: M,
+            onContextMenu: S,
             disableArrowKeySeek: !0
         })
     }
-    return "IMAGE" === U && (E = F ? (0, i.jsx)(d.Ay, {
+    return "IMAGE" === U && (E = F ? (0, i.jsx)(u.Ay, {
         ...b,
         src: W,
         width: N,
         height: O,
         maxWidth: j,
-        maxHeight: S,
+        maxHeight: M,
         useFullWidth: !0,
         shouldLink: !1,
         className: y.$_,
         animated: !v && I.animated,
         autoPlay: !v,
         alt: T,
-        onContextMenu: M
+        onContextMenu: S
     }) : (0, i.jsx)("img", {
         src: W,
         alt: T,
-        onContextMenu: M,
+        onContextMenu: S,
         className: y.xx,
         style: {
             maxWidth: j,
-            maxHeight: S
+            maxHeight: M
         }
     })), null != E ? (0, i.jsx)(A.A, {
         children: E

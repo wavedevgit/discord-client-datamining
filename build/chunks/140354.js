@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(503698),
-    a = n.n(r),
+    a = n(503698),
+    r = n.n(a),
     s = n(311907),
     o = n(397927),
     d = n(765671),
@@ -26,7 +26,7 @@ function C(e) {
         guildId: t,
         channelId: n
     } = e, {
-        ref: r,
+        ref: a,
         width: C,
         height: T
     } = (0, d.Ay)(), N = l.useCallback(() => {
@@ -39,10 +39,10 @@ function C(e) {
         splash: S.splash
     }), [S]), v = (0, u.S)(x);
     return (0, i.jsxs)("div", {
-        className: a()(I.kf, f.iW, {
+        className: r()(I.kf, f.iW, {
             [f.Me]: null == x
         }),
-        ref: r,
+        ref: a,
         children: [null != x ? (0, i.jsx)(c.A, {
             className: f.xX,
             src: x,
@@ -57,7 +57,7 @@ function C(e) {
         }), null != x && (0, i.jsx)("div", {
             className: f.D7
         }), (0, i.jsxs)("div", {
-            className: a()(I.Cj, I.Vw),
+            className: r()(I.Cj, I.Vw),
             children: [(0, i.jsxs)("div", {
                 className: I.wx,
                 children: [(0, i.jsx)(o.Heading, {

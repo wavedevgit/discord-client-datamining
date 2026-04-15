@@ -4,14 +4,14 @@ n.d(t, {
 });
 var i = n(73153),
     l = n(587895),
-    r = n(25171),
-    a = n(651743);
+    a = n(25171),
+    r = n(651743);
 
 function s(e) {
     let t, n, {
         gameId: s
     } = e;
-    t = a.A.launchableGames[s], (null != (n = l.A.getApplication(s)) ? r.A.isLaunchable(n) : r.A.isGameLaunchable(s)).then(e => {
+    t = r.A.launchableGames[s], (null != (n = l.A.getApplication(s)) ? a.A.isLaunchable(n) : a.A.isGameLaunchable(s)).then(e => {
         e !== t && i.h.dispatch({
             type: "GAME_LAUNCHABLE_UPDATE",
             gameId: s,

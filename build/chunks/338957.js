@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(179771),
     l = n(260509),
-    r = n(71393),
-    a = n(636401),
+    a = n(71393),
+    r = n(636401),
     s = n(629471),
     o = n(652215);
 let d = {
@@ -24,12 +24,12 @@ let d = {
                     timeout: s = 0
                 }
             } = e;
-            return n.storeWait(t, () => r.A.getGuild(i), s).catch(() => {
-                throw new a.A({
+            return n.storeWait(t, () => a.A.getGuild(i), s).catch(() => {
+                throw new r.A({
                     errorCode: o.Lw6.GET_GUILD_TIMED_OUT
                 }, "Request to get guild timed out.")
             }).then(e => {
-                if (null == e) throw new a.A({
+                if (null == e) throw new r.A({
                     errorCode: o.Lw6.INVALID_GUILD
                 }, `Invalid guild id: ${i}`);
                 return {
@@ -45,7 +45,7 @@ let d = {
     [o.e$_.GET_GUILDS]: {
         scope: i.F.RPC,
         handler: () => ({
-            guilds: r.A.getGuildsArray().map(e => ({
+            guilds: a.A.getGuildsArray().map(e => ({
                 id: e.id,
                 name: e.name,
                 icon_url: (0, l.Iv)(e, 128) ?? null

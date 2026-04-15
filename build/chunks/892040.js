@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(397927),
-    r = n(985018),
-    a = n(874628);
+    a = n(985018),
+    r = n(874628);
 
 function s(e) {
     let {
@@ -15,9 +15,9 @@ function s(e) {
         guild: s
     } = e;
     return (0, i.jsxs)("div", {
-        className: a.EL,
+        className: r.EL,
         children: [(0, i.jsx)("div", {
-            className: a.P0,
+            className: r.P0,
             children: (0, i.jsx)(l.pun, {
                 size: "md",
                 color: l.LU0.colors.INTERACTIVE_TEXT_ACTIVE
@@ -25,23 +25,23 @@ function s(e) {
         }), (0, i.jsx)(l.Heading, {
             variant: "heading-lg/semibold",
             color: "text-strong",
-            children: null != s ? r.intl.formatToPlainString(r.t.f5Jaw7, {
+            children: null != s ? a.intl.formatToPlainString(a.t.f5Jaw7, {
                 guildName: s.name
-            }) : r.intl.string(r.t["0sTyEb"])
+            }) : a.intl.string(a.t["0sTyEb"])
         }), (0, i.jsxs)("div", {
-            className: a.rn,
+            className: r.rn,
             children: [(0, i.jsx)(l.Button, {
                 fullWidth: !0,
                 onClick: n,
                 variant: "secondary",
                 size: "md",
-                text: r.intl.string(r.t.h3aGmv)
+                text: a.intl.string(a.t.h3aGmv)
             }), (0, i.jsx)(l.Button, {
                 fullWidth: !0,
                 onClick: t,
                 variant: "critical-primary",
                 size: "md",
-                text: r.intl.string(r.t.OQFlFD)
+                text: a.intl.string(a.t.OQFlFD)
             })]
         })]
     })

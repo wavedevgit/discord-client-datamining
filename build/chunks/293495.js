@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(73153),
     l = n(31728),
-    r = n(272355),
-    a = n(227042),
+    a = n(272355),
+    r = n(227042),
     s = n(869146),
     o = n(186111),
     d = n(334463),
@@ -35,7 +35,7 @@ function _() {
 
 function m() {
     let e;
-    if ((0, a.A)({
+    if ((0, r.A)({
             LayerStore: o.A,
             PopoutWindowStore: s.A
         })) {
@@ -44,7 +44,7 @@ function m() {
     }
     null != (e = (void 0) ?? A) && d.A.isOpen(e) && i.h.wait(() => l.WU(e))
 }
-class g extends r.A {
+class g extends a.A {
     _initialize() {
         c.A.addChangeListener(_), o.A.addChangeListener(m)
     }

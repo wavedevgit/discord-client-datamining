@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(311907),
-    r = n(854378),
-    a = n(10088),
+    a = n(854378),
+    r = n(10088),
     s = n(723702),
     o = n(652215),
     d = n(985018),
@@ -16,7 +16,7 @@ let u = n(843020);
 function A(e) {
     let {
         children: t
-    } = e, n = (0, l.bG)([a.A], () => a.A.getHighestState());
+    } = e, n = (0, l.bG)([r.A], () => r.A.getHighestState());
     return (0, s.isDesktop)() || n !== o.fAW.OPENING ? (0, s.isDesktop)() || n !== o.fAW.OPEN ? t : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("img", {
             className: c.Lq,
@@ -24,11 +24,11 @@ function A(e) {
             alt: ""
         }), (0, i.jsx)("div", {
             className: c.kL,
-            children: (0, i.jsxs)(r.Ay, {
-                children: [(0, i.jsx)(r.hE, {
+            children: (0, i.jsxs)(a.Ay, {
+                children: [(0, i.jsx)(a.hE, {
                     className: c.Ns,
                     children: d.intl.string(d.t.csrAMJ)
-                }), (0, i.jsx)(r.tK, {
+                }), (0, i.jsx)(a.tK, {
                     children: d.intl.string(d.t.ghBJz9)
                 })]
             })
@@ -40,10 +40,10 @@ function A(e) {
             alt: ""
         }), (0, i.jsx)("div", {
             className: c.kL,
-            children: (0, i.jsxs)(r.Ay, {
-                children: [(0, i.jsx)(r.hE, {
+            children: (0, i.jsxs)(a.Ay, {
+                children: [(0, i.jsx)(a.hE, {
                     children: d.intl.string(d.t["Z+hCVU"])
-                }), (0, i.jsx)(r.CK, {})]
+                }), (0, i.jsx)(a.CK, {})]
             })
         })]
     })

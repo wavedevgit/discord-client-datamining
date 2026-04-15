@@ -1,7 +1,7 @@
 /** chunk id: 792205 params = (module,exports,require) **/
 n.d(t, {
-    E: () => r,
-    f: () => a
+    E: () => a,
+    f: () => r
 });
-var i, l, r = ((i = {}).INPUT = "INPUT", i.OUTPUT = "OUTPUT", i.INPUT_AND_OUTPUT = "INPUT_AND_OUTPUT", i),
-    a = ((l = {}).INPUT = "INPUT", l.OUTPUT = "OUTPUT", l.INPUT_AND_OUTPUT = "INPUT_AND_OUTPUT", l)
+var i, l, a = ((i = {}).INPUT = "INPUT", i.OUTPUT = "OUTPUT", i.INPUT_AND_OUTPUT = "INPUT_AND_OUTPUT", i),
+    r = ((l = {}).INPUT = "INPUT", l.OUTPUT = "OUTPUT", l.INPUT_AND_OUTPUT = "INPUT_AND_OUTPUT", l)

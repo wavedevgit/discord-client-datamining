@@ -96,7 +96,7 @@ function p(e) {
         s || b(!0), E?.(!0)
     }, [s, E]), v = l.useCallback(() => {
         s || b(!1), E?.(!1)
-    }, [s, E]), R = n || null == a ? null : (0, u.oi)(a), j = !n && r > 0 ? (0, u.wN)(r, d ? o.LU0.colors.BACKGROUND_MOD_STRONG.css : o.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) : null;
+    }, [s, E]), j = n || null == a ? null : (0, u.oi)(a), R = !n && r > 0 ? (0, u.wN)(r, d ? o.LU0.colors.BACKGROUND_MOD_STRONG.css : o.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) : null;
     return (0, i.jsx)(o.vN3, {
         children: (0, i.jsxs)(o.DUT, {
             className: A.H3,
@@ -123,8 +123,8 @@ function p(e) {
             }), (0, i.jsx)(o.Qk9, {
                 "aria-hidden": !0,
                 isFolder: !0,
-                upperBadge: R,
-                lowerBadge: j,
+                upperBadge: j,
+                lowerBadge: R,
                 lowerBadgeSize: {
                     width: (0, o.o6S)(r)
                 },

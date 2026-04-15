@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(64700),
     l = n(311907),
-    r = n(919796),
-    a = n(4106),
+    a = n(919796),
+    r = n(4106),
     s = n(105971),
     o = n(800319),
     d = n(883344),
@@ -51,11 +51,11 @@ function g(e) {
             } = e;
             return t.id
         }).pop(),
-        L = (0, r.A)(O);
+        L = (0, a.A)(O);
     i.useEffect(() => {
         if (N || T || null == L || null == O || O === L) return;
         let e = Date.now();
-        e - y > m.N && (a.A.gravityScrollEvent(e), s.k.trackFeedFirstScrollStarted())
+        e - y > m.N && (r.A.gravityScrollEvent(e), s.k.trackFeedFirstScrollStarted())
     }, [N, y, L, O, b, T]);
     let R = i.useCallback(e => {
             let {
@@ -74,7 +74,7 @@ function g(e) {
                     timestamp: l++
                 })
             }
-            n.length > 0 && a.A.ackGravityItems(n, !0), s.k.trackItemShortImpression(t, i.map(e => ({
+            n.length > 0 && r.A.ackGravityItems(n, !0), s.k.trackItemShortImpression(t, i.map(e => ({
                 id: e.id,
                 type: (0, c.xG)(e)
             })), C)
@@ -88,7 +88,7 @@ function g(e) {
             s.k.trackItemLongImpression(t, n.map(e => ({
                 id: e.id,
                 type: (0, c.xG)(e)
-            })), C), a.A.triggerItemsLongImpression(t.filter(e => {
+            })), C), r.A.triggerItemsLongImpression(t.filter(e => {
                 let {
                     item: t
                 } = e;
@@ -113,7 +113,7 @@ function g(e) {
             let {
                 viewableItems: t
             } = e;
-            a.A.startItemsDwell(t.filter(e => {
+            r.A.startItemsDwell(t.filter(e => {
                 let {
                     item: t
                 } = e;
@@ -157,7 +157,7 @@ function g(e) {
             onViewableItemsChanged: D
         }], [R, P, D]);
     i.useEffect(() => {
-        a.A.openICYMITab()
+        r.A.openICYMITab()
     }, []);
     let M = (0, h.E)(t),
         w = (0, _.n)(),

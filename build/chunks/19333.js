@@ -28,7 +28,7 @@ function T(e) {
         buttonRef: i,
         additionalMenuItems: r
     } = e, s = (0, g.L)(t), o = (0, m.GV)();
-    return (0, l.jsx)(E, {
+    return (0, l.jsx)(A, {
         targetRef: i,
         widget: t,
         additionalMenuItems: r,
@@ -88,7 +88,7 @@ let j = e => {
             children: t
         })
     },
-    E = e => {
+    A = e => {
         let {
             children: t,
             widget: i,
@@ -106,7 +106,7 @@ let j = e => {
             }(0, c.mMO)(async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("95320"), n.e("10117"), n.e("62371"), n.e("23016"), n.e("35526")]).then(n.bind(n, 380035));
+                } = await Promise.all([n.e("10117"), n.e("35843"), n.e("62371"), n.e("23016"), n.e("35526")]).then(n.bind(n, 380035));
                 return t => (0, l.jsx)(e, {
                     ...t,
                     userId: h.default.getId(),

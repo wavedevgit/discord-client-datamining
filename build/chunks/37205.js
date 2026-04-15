@@ -33,8 +33,8 @@ var i = n(627968),
     R = n(95701),
     P = n(734057),
     w = n(696451),
-    D = n(71393),
-    M = n(576705),
+    M = n(71393),
+    D = n(576705),
     k = n(607567),
     O = n(954571),
     U = n(860689),
@@ -60,9 +60,9 @@ function Q(e) {
     null == H && null != t.guild && (H = U.DY(t.guild));
     let Q = null != t.channel ? (0, R.OY)(t.channel) : null;
     o()(null != H, "Voice Invite Embed must be used in context of a guild."), o()(null != Q, "Voice Invite Embed must be able to resolve an invite channel.");
-    let X = (0, _.bG)([M.A, P.A], () => {
+    let X = (0, _.bG)([D.A, P.A], () => {
             let e = P.A.getChannel(Q.id);
-            return null == e || M.A.canBasicChannel(W.hVb.VIEW_CHANNEL, e)
+            return null == e || D.A.canBasicChannel(W.hVb.VIEW_CHANNEL, e)
         }, [Q.id]),
         Z = (0, _.bG)([k.Ay], () => X ? k.Ay.getVoiceStatesForChannelAlt(Q.id, H.id) : [], [Q.id, H.id, X]),
         {
@@ -89,7 +89,7 @@ function Q(e) {
             author: l.author,
             voiceStates: Z
         }),
-        et = (0, _.bG)([D.A], () => null != D.A.getGuild(H.id), [H.id]),
+        et = (0, _.bG)([M.A], () => null != M.A.getGuild(H.id), [H.id]),
         en = (0, _.bG)([w.Ay], () => y.A.canAcceptInvite([w.Ay], t), [t]),
         ei = t.state === W.elq.ACCEPTING,
         {

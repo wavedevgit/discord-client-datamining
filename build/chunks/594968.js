@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(311907),
-    a = n(827734),
+    a = n(311907),
+    r = n(827734),
     s = n(397927),
     o = n(308528),
     d = n(688810),
@@ -29,7 +29,7 @@ function x(e) {
     let {
         user: t,
         applicationId: n,
-        isGameRelationship: r,
+        isGameRelationship: a,
         active: o,
         onAcceptFriendRequest: d
     } = e, [c, u] = l.useState(!1), A = m.default.getCurrentUser()?.isStaff() && t?.isStaff(), {
@@ -38,7 +38,7 @@ function x(e) {
     } = (0, E.I)({
         userId: t.id,
         applicationId: n,
-        isGameRelationship: r,
+        isGameRelationship: a,
         location: "Friends",
         onFinally: () => {
             u(!1)
@@ -52,7 +52,7 @@ function x(e) {
         children: [A && (0, i.jsx)("div", {
             className: S.ou,
             children: (0, i.jsx)(s.LpS, {
-                color: a.A.unsafe_rawColors.BRAND_500.css,
+                color: r.A.unsafe_rawColors.BRAND_500.css,
                 text: N.intl.string(N.t.oMx98L)
             })
         }), (0, i.jsx)(I.A, {
@@ -76,14 +76,14 @@ function v(e) {
     let {
         userId: t,
         applicationId: n,
-        isGameRelationship: r,
-        active: a
+        isGameRelationship: a,
+        active: r
     } = e, {
         cancelFriendRequest: o
     } = (0, E.I)({
         userId: t,
         applicationId: n,
-        isGameRelationship: r,
+        isGameRelationship: a,
         location: "Friends"
     }), d = l.useCallback(e => {
         e.stopPropagation(), o()
@@ -93,7 +93,7 @@ function v(e) {
         actionType: I.A.ActionTypes.DENY,
         tooltip: N.intl.string(N.t.eaq81S),
         onClick: d,
-        shouldHighlight: a
+        shouldHighlight: r
     })
 }
 
@@ -101,9 +101,9 @@ function b(e) {
     let {
         isGameRelationship: t,
         applicationId: n,
-        userTag: a,
+        userTag: r,
         isProvisional: o
-    } = e, d = l.useMemo(() => t ? N.intl.string(N.t["Uv/eTx"]) : a, [t, a]), h = (0, r.bG)([c.A], () => null != n ? c.A.getApplication(n) : null);
+    } = e, d = l.useMemo(() => t ? N.intl.string(N.t["Uv/eTx"]) : r, [t, r]), h = (0, a.bG)([c.A], () => null != n ? c.A.getApplication(n) : null);
     return (0, i.jsxs)("div", {
         className: S.P9,
         children: [!o && (0, i.jsx)(s.Text, {
@@ -131,7 +131,7 @@ function y(e) {
         user: t,
         hovered: n,
         status: l,
-        isGameRelationship: r,
+        isGameRelationship: a,
         applicationId: o,
         isFriend: d
     } = e, c = p.Ay.useUserTag(t);
@@ -144,14 +144,14 @@ function y(e) {
             className: S.Tl,
             children: [(0, i.jsx)(s.Uzd, {
                 size: "sm",
-                color: a.A.colors.ICON_FEEDBACK_POSITIVE
+                color: r.A.colors.ICON_FEEDBACK_POSITIVE
             }), (0, i.jsx)(s.Text, {
                 variant: "text-sm/medium",
                 color: "text-muted",
                 children: N.intl.string(N.t.bgL68y)
             })]
         }) : (0, i.jsx)(b, {
-            isGameRelationship: r,
+            isGameRelationship: a,
             isProvisional: t.isProvisional,
             applicationId: o,
             userTag: c
@@ -163,14 +163,14 @@ function O(e) {
     let {
         user: t,
         type: n,
-        status: a,
+        status: r,
         isFocused: c,
         applicationId: u,
         isGameRelationship: A,
         onAcceptFriendRequest: m
     } = e, {
         analyticsLocations: p
-    } = (0, d.Ay)(), E = a === T.clD.OFFLINE ? T.clD.UNKNOWN : a, I = (0, r.bG)([_.A], () => _.A.getRelationshipType(t.id)), C = l.useCallback(() => (0, h.openUserProfileModal)({
+    } = (0, d.Ay)(), E = r === T.clD.OFFLINE ? T.clD.UNKNOWN : r, I = (0, a.bG)([_.A], () => _.A.getRelationshipType(t.id)), C = l.useCallback(() => (0, h.openUserProfileModal)({
         userId: t.id,
         sourceAnalyticsLocations: p
     }), [p, t.id]), N = e => {

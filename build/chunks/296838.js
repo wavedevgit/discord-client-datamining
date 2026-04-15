@@ -58,7 +58,7 @@ function v(e) {
     })
 }
 
-function R() {
+function j() {
     let e = l.useMemo(() => c()((0, m.Bx)()).groupBy(e => e.group).value(), []);
     return (0, i.jsx)("div", {
         className: T.Io,
@@ -97,7 +97,7 @@ function R() {
         })
     })
 }
-class j extends l.PureComponent {
+class R extends l.PureComponent {
     state = {
         UP: !1,
         DOWN: !1,
@@ -248,7 +248,7 @@ class j extends l.PureComponent {
                 ref: this.scrollerRef,
                 fade: !0,
                 children: (0, i.jsx)(_.Fmo, {
-                    children: (0, i.jsx)(R, {})
+                    children: (0, i.jsx)(j, {})
                 })
             })]
         })
@@ -306,7 +306,7 @@ function L(e) {
                     handleDemonClose: function() {
                         d(!1), setTimeout(n, 500)
                     }
-                }, "raging-demo") : (0, i.jsx)(j, {
+                }, "raging-demo") : (0, i.jsx)(R, {
                     content: c,
                     keyboardModeEnabled: u,
                     activateRagingDemon: function() {

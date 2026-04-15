@@ -30,8 +30,8 @@ var i = n(627968),
     b = n(282978),
     y = n(95655),
     v = n(565265),
-    R = n(742589),
-    j = n(849205),
+    j = n(742589),
+    R = n(849205),
     O = n(652215),
     L = n(49999),
     M = n(985018),
@@ -144,7 +144,7 @@ function G(e) {
     });
     switch (t.type) {
         case O.rbe.DM:
-            return (0, i.jsx)(j.A, {
+            return (0, i.jsx)(R.A, {
                 level: E,
                 channel: t,
                 handleClick: d,
@@ -165,14 +165,14 @@ function G(e) {
         case O.rbe.GUILD_MEDIA:
             return null != t.linkedLobby ? (0, i.jsxs)(U, {
                 channel: t,
-                children: [w(g, t.type === O.rbe.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(R.A.Title, {
+                children: [w(g, t.type === O.rbe.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
                     level: E,
                     onContextMenu: u,
                     onClick: d,
                     children: x
                 })]
             }) : (0, i.jsxs)(l.Fragment, {
-                children: [w(g, t.type === O.rbe.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(R.A.Title, {
+                children: [w(g, t.type === O.rbe.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
                     level: E,
                     onContextMenu: u,
                     onClick: d,
@@ -181,7 +181,7 @@ function G(e) {
             });
         case O.rbe.GUILD_VOICE:
             return (0, i.jsxs)(l.Fragment, {
-                children: [w(g, M.intl.string(M.t.BVZqJl)), (0, i.jsx)(R.A.Title, {
+                children: [w(g, M.intl.string(M.t.BVZqJl)), (0, i.jsx)(j.A.Title, {
                     level: E,
                     onContextMenu: u,
                     onClick: d,
@@ -190,7 +190,7 @@ function G(e) {
             });
         case O.rbe.GUILD_STAGE_VOICE:
             return (0, i.jsxs)(l.Fragment, {
-                children: [w(g, M.intl.string(M.t.EErMzA)), (0, i.jsx)(R.A.Title, {
+                children: [w(g, M.intl.string(M.t.EErMzA)), (0, i.jsx)(j.A.Title, {
                     level: E,
                     onContextMenu: u,
                     onClick: d,
@@ -204,18 +204,18 @@ function G(e) {
             if (!o && null != s) {
                 let e = (0, _.gU)(s, r);
                 C = (0, i.jsxs)(l.Fragment, {
-                    children: [w(e, M.intl.string(M.t.Pnajj0)), (0, i.jsx)(R.A.Title, {
+                    children: [w(e, M.intl.string(M.t.Pnajj0)), (0, i.jsx)(j.A.Title, {
                         level: E,
                         onContextMenu: m,
                         onClick: h,
                         className: a()(D.rg, D.or),
                         children: (0, A.m1)(s, N.default, I.A)
-                    }), (0, i.jsx)(R.A.Caret, {})]
+                    }), (0, i.jsx)(j.A.Caret, {})]
                 })
             }
             let T = s?.type != null && O.kvI.GUILD_THREADS_ONLY.has(s.type);
             return (0, i.jsxs)(l.Fragment, {
-                children: [C, w(T ? null : g, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(R.A.Title, {
+                children: [C, w(T ? null : g, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(j.A.Title, {
                     level: E,
                     onContextMenu: u,
                     onClick: d,
@@ -230,10 +230,10 @@ function G(e) {
                 guildName: n
             }) : n;
             return (0, i.jsxs)(l.Fragment, {
-                children: [null !== g ? (0, i.jsx)(R.A.ChannelIcon, {
+                children: [null !== g ? (0, i.jsx)(j.A.ChannelIcon, {
                     icon: g,
                     "aria-hidden": !0
-                }) : null, (0, i.jsxs)(R.A.Title, {
+                }) : null, (0, i.jsxs)(j.A.Title, {
                     level: E,
                     onContextMenu: u,
                     onClick: d,
@@ -289,7 +289,7 @@ function k(e, t) {
 
 function w(e, t) {
     return (0, i.jsxs)(i.Fragment, {
-        children: [null !== e && (0, i.jsx)(R.A.ChannelIcon, {
+        children: [null !== e && (0, i.jsx)(j.A.ChannelIcon, {
             icon: e,
             "aria-hidden": !0
         }), (0, i.jsx)(c.AC4, {
@@ -314,7 +314,7 @@ function B(e) {
                 (0, f.uh)(t.id, n.id)
             },
             className: D.ED,
-            children: ["left" === s && (0, i.jsx)(R.A.Caret, {
+            children: ["left" === s && (0, i.jsx)(j.A.Caret, {
                 direction: "left"
             }), (0, i.jsx)("div", {
                 ref: u,
@@ -324,7 +324,7 @@ function B(e) {
                     className: D.gL,
                     active: !0
                 })
-            }), "right" === s && (0, i.jsx)(R.A.Caret, {
+            }), "right" === s && (0, i.jsx)(j.A.Caret, {
                 direction: "right"
             })]
         })

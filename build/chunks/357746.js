@@ -58,8 +58,8 @@ let N = {
             selected: s
         } = e, T = (0, m.Ay)(t), S = l.useCallback(() => {
             (0, A.Zm)(t), (0, p.A)(t, d.A.GUILD_POWERUPS_CHANNEL_LIST_ROW), T?.popout?.markAsDismissed(f.i.INDIRECT_ACTION)
-        }, [t, T]), b = l.useRef(null), y = (0, o.red)(o.DXt), v = (0, r.bG)([h.A], () => h.A.hasLayers()), R = (0, u.xr)(e => e.fullScreenLayers.length > 0), j = y || v || R, O = l.useCallback(() => {
-            if (T?.popout == null || j) return null;
+        }, [t, T]), b = l.useRef(null), y = (0, o.red)(o.DXt), v = (0, r.bG)([h.A], () => h.A.hasLayers()), j = (0, u.xr)(e => e.fullScreenLayers.length > 0), R = y || v || j, O = l.useCallback(() => {
+            if (T?.popout == null || R) return null;
             switch (T?.popout?.type) {
                 case _.o.LEVEL_REACHED:
                     return (0, i.jsx)(g.HW, {
@@ -119,7 +119,7 @@ let N = {
                 default:
                     return (0, i.jsx)("div", {})
             }
-        }, [t, T?.popout, b, j]), [L, M] = l.useState(null);
+        }, [t, T?.popout, b, R]), [L, M] = l.useState(null);
         l.useEffect(() => {
             T?.popout == null && M(null)
         }, [T?.popout]);

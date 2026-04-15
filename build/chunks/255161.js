@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(311907),
     l = n(73153),
-    r = n(576705),
-    a = n(652215);
+    a = n(576705),
+    r = n(652215);
 
 function s() {
     return !0
@@ -13,10 +13,10 @@ function s() {
 class o extends i.Ay.Store {
     static displayName = "InviteNoticeStore";
     initialize() {
-        this.waitFor(r.A), this.syncWith([r.A], s)
+        this.waitFor(a.A), this.syncWith([a.A], s)
     }
     channelNoticePredicate(e, t) {
-        return Date.now() - t >= a.D2K && r.A.can(a.xBc.ADMINISTRATOR, e)
+        return Date.now() - t >= r.D2K && a.A.can(r.xBc.ADMINISTRATOR, e)
     }
 }
 let d = new o(l.h)

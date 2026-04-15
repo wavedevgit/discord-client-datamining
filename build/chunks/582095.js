@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(311907),
     l = n(73153),
-    r = n(663278),
-    a = n(859703),
+    a = n(663278),
+    r = n(859703),
     s = n(792620),
     o = n(734057),
     d = n(696451),
@@ -129,14 +129,14 @@ class y {
             message: n,
             icon: i,
             title: l,
-            body: r
+            body: a
         } = e;
         0 !== this.rpcServer.subscriptions.length && this.rpcServer.dispatchToSubscriptions(S.ZE4.NOTIFICATION_CREATE, {}, {
             channel_id: t,
             message: (0, C.Yj)(n),
             icon_url: null != i ? (0, C.hk)(i) : null,
             title: l,
-            body: r
+            body: a
         })
     };
     handleActivityJoin = e => {
@@ -145,14 +145,14 @@ class y {
             parentApplicationId: n,
             secret: i,
             intent: l,
-            embedded: r
+            embedded: a
         } = e;
         if (0 === this.rpcServer.subscriptions.length) return;
-        let a = {
+        let r = {
             application_id: t,
             secret: i
         };
-        r && (a.intent = l), this.rpcServer.dispatchToSubscriptions(S.ZE4.ACTIVITY_JOIN, e => e.socket.application.id === t || null != n && e.socket.application.parentId === n, a), this.rpcServer.dispatchToSubscriptions(S.ZE4.GAME_JOIN, e => e.socket.application.id === t, a)
+        a && (r.intent = l), this.rpcServer.dispatchToSubscriptions(S.ZE4.ACTIVITY_JOIN, e => e.socket.application.id === t || null != n && e.socket.application.parentId === n, r), this.rpcServer.dispatchToSubscriptions(S.ZE4.GAME_JOIN, e => e.socket.application.id === t, r)
     };
     handleActivityLayoutModeUpdate = e => {
         let {
@@ -180,10 +180,10 @@ class y {
         this.rpcServer.dispatchToSubscriptions(S.ZE4.ACTIVITY_PIP_MODE_UPDATE, e => e.socket.application.id === t, {
             is_pip_mode: l
         });
-        let r = {
+        let a = {
             layout_mode: i
         };
-        this.rpcServer.dispatchToSubscriptions(S.ZE4.ACTIVITY_LAYOUT_MODE_UPDATE, e => e.socket.application.id === t, r), this.rpcServer.dispatchToSubscriptions(S.ZE4.FRAME_LAYOUT_MODE_UPDATE, e => e.socket.application.id === t, r)
+        this.rpcServer.dispatchToSubscriptions(S.ZE4.ACTIVITY_LAYOUT_MODE_UPDATE, e => e.socket.application.id === t, a), this.rpcServer.dispatchToSubscriptions(S.ZE4.FRAME_LAYOUT_MODE_UPDATE, e => e.socket.application.id === t, a)
     };
     handleThermalStateChange = e => {
         let {
@@ -191,7 +191,7 @@ class y {
         } = e;
         if (0 === this.rpcServer.subscriptions.length || null == t) return;
         let n = {
-            thermal_state: (0, r.zw)()
+            thermal_state: (0, a.zw)()
         };
         this.rpcServer.dispatchToSubscriptions(S.ZE4.THERMAL_STATE_UPDATE, e => e.socket.application.id === t, n)
     };
@@ -219,17 +219,17 @@ class y {
             activity: l
         } = n;
         if (null == i || null == l || null == l.party_id) return;
-        let r = g.default.getUser(n.author?.id);
-        if (null == r) return;
-        let a = g.default.getCurrentUser();
-        if (null == a || r.id === a.id) return;
-        let s = l.type === S.xL.JOIN_REQUEST ? A.A.getApplicationActivity(a.id, i.id) : A.A.getApplicationActivity(r.id, i.id);
+        let a = g.default.getUser(n.author?.id);
+        if (null == a) return;
+        let r = g.default.getCurrentUser();
+        if (null == r || a.id === r.id) return;
+        let s = l.type === S.xL.JOIN_REQUEST ? A.A.getApplicationActivity(r.id, i.id) : A.A.getApplicationActivity(a.id, i.id);
         if (null == s || null == s.party || s.party.id !== l.party_id) return;
         let o = s.application_id;
         switch (l.type) {
             case S.xL.JOIN:
                 this.rpcServer.dispatchToSubscriptions(S.ZE4.ACTIVITY_INVITE, e => e.socket.application.id === o, {
-                    user: (0, N.A)(r),
+                    user: (0, N.A)(a),
                     activity: s,
                     type: l.type,
                     channel_id: t,
@@ -238,7 +238,7 @@ class y {
                 break;
             case S.xL.JOIN_REQUEST:
                 this.rpcServer.dispatchToSubscriptions(S.ZE4.ACTIVITY_JOIN_REQUEST, e => e.socket.application.id === o, {
-                    user: (0, N.A)(r),
+                    user: (0, N.A)(a),
                     activity: s,
                     type: l.type,
                     channel_id: t,
@@ -385,7 +385,7 @@ class y {
         } = e;
         if (0 === this.rpcServer.subscriptions.length) return;
         let n = t.questId,
-            i = a.A.getQuest(n);
+            i = r.A.getQuest(n);
         if (null == i) return;
         let l = (0, s.TP)(i);
         null != l && this.rpcServer.dispatchToSubscriptions(S.ZE4.QUEST_ENROLLMENT_STATUS_UPDATE, e => e.socket.application.id === l && e.args?.quest_id === n, {

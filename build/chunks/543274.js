@@ -33,7 +33,7 @@ function y(e) {
         idle: n,
         whichPopoutIsOpen: y,
         setWhichPopoutIsOpen: v
-    } = e, R = (0, s.bG)([c.Ay], () => c.Ay.isLaunchingActivity()), j = (0, h.et)(t.id), O = (0, h.dL)(j), L = j !== h.xy.CAN_LAUNCH || R, {
+    } = e, j = (0, s.bG)([c.Ay], () => c.Ay.isLaunchingActivity()), R = (0, h.et)(t.id), O = (0, h.dL)(R), L = R !== h.xy.CAN_LAUNCH || j, {
         isHovered: M,
         setIsHovered: D,
         onMouseEnter: U,

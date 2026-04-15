@@ -8,8 +8,8 @@ var i = n(627968),
     l = n.n(a),
     o = n(311907),
     s = n(776231),
-    d = n(664111),
-    u = n(734057),
+    u = n(664111),
+    d = n(734057),
     h = n(67281),
     c = n(256034);
 
@@ -22,74 +22,83 @@ function m(e) {
         autoPlay: p,
         src: g,
         embed: f = !1,
-        maxWidth: A,
-        maxHeight: x,
-        channelId: y,
-        showParticipants: w = !0,
-        volume: C,
-        autoMute: E,
-        onVolumeChange: I,
-        onMutedChange: v,
-        onClick: j,
-        onContextMenu: S
-    } = e, M = t.width ?? 0, N = t.height ?? 0, O = (0, o.bG)([u.A], () => u.A.getBasicChannel(y)?.guild_id, [y]), P = M > 0 && N > 0 ? Math.min((A ?? 1 / 0) / M, (x ?? 1 / 0) / N, 1) : 1, _ = Math.round(M * P), T = Math.round(N * P), U = (0, s.AE)({
-        src: n,
-        width: _,
-        height: T
-    }), [V, D] = r.useState(!1), b = r.useCallback(e => {
-        let {
-            playerState: n,
-            isControlBarExpanded: r
-        } = e;
-        return (0, i.jsx)(h.A, {
-            createdAt: null != t.clip_created_at ? Date.parse(t.clip_created_at) : void 0,
-            participantIds: w ? t.clip_participants?.map(e => {
-                let {
-                    id: t
-                } = e;
-                return t
-            }) ?? [] : [],
-            applicationId: t.application?.id,
-            title: t.title,
-            guildId: O,
-            playerState: n,
-            isControlBarExpanded: r,
-            isFullScreen: V
-        })
-    }, [t, O, V, w]);
+        fillContainer: A = !1,
+        minWidth: x = 500,
+        maxWidth: y = 1 / 0,
+        maxHeight: w = 1 / 0,
+        channelId: C,
+        showParticipants: E = !0,
+        volume: I,
+        autoMute: v,
+        onVolumeChange: j,
+        onMutedChange: M,
+        onClick: S,
+        onContextMenu: N
+    } = e, O = t.width ?? 0, P = t.height ?? 0, _ = (0, o.bG)([d.A], () => d.A.getBasicChannel(C)?.guild_id, [C]), T = O > 0 && P > 0 ? O / P : 16 / 9, U = Math.min(O > 0 ? O : x, y), V = U / T;
+    V > w && (U = (V = w) * T), U < x && (V = (U = x) / T);
+    let D = Math.round(Math.min(U, y)),
+        b = Math.round(Math.min(V, w)),
+        L = O > 0 && P > 0 ? Math.min(D / O, b / P, 1) : 1,
+        R = (0, s.AE)({
+            src: n,
+            width: Math.round(O * L),
+            height: Math.round(P * L)
+        }),
+        [k, W] = r.useState(!1),
+        F = r.useCallback(e => {
+            let {
+                playerState: n,
+                isControlBarExpanded: r
+            } = e;
+            return (0, i.jsx)(h.A, {
+                createdAt: null != t.clip_created_at ? Date.parse(t.clip_created_at) : void 0,
+                participantIds: E ? t.clip_participants?.map(e => {
+                    let {
+                        id: t
+                    } = e;
+                    return t
+                }) ?? [] : [],
+                applicationId: t.application?.id,
+                title: t.title,
+                guildId: _,
+                playerState: n,
+                isControlBarExpanded: r,
+                isFullScreen: k
+            })
+        }, [t, _, k, E]);
     return (0, i.jsx)("div", {
-        className: l()(c.k, a),
+        className: l()(c.k, {
+            [c.H]: A
+        }, a),
         onClick: e => e.stopPropagation(),
         onKeyUp: f ? e => e.stopPropagation() : void 0,
         onKeyDown: f ? e => e.stopPropagation() : void 0,
-        onContextMenu: S,
-        style: {
-            aspectRatio: `${M} / ${N}`,
-            maxHeight: x,
-            width: f ? void 0 : _,
-            height: f ? void 0 : T
+        onContextMenu: N,
+        style: A ? void 0 : {
+            width: D,
+            height: b
         },
-        children: (0, i.jsx)(d.A, {
+        children: (0, i.jsx)(u.A, {
             crossOrigin: null,
             src: g,
             downloadUrl: t.url,
             downloadContentType: t.content_type,
-            poster: U,
+            poster: R,
             posterPlaceholder: t.placeholder,
             posterPlaceholderVersion: t.placeholder_version,
             active: m,
             autoplay: p,
-            initialVolume: C,
-            initialMuted: E,
-            onVolumeChange: I,
-            onMutedChange: v,
-            orientation: M >= N ? "landscape" : "portrait",
+            initialVolume: I,
+            initialMuted: v,
+            onVolumeChange: j,
+            onMutedChange: M,
+            orientation: "landscape",
             loadingSpinnerPosition: "center",
-            renderPersistentOverlay: b,
+            renderPersistentOverlay: F,
             targetTimeSec: 1 / 0,
             parentTransitionState: null,
-            onFullscreenChange: D,
-            onClick: j
+            onFullscreenChange: W,
+            onClick: S
         })
     })
 }

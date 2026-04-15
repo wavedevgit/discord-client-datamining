@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(397927),
-    r = n(51183),
-    a = n(74034);
+    a = n(51183),
+    r = n(74034);
 
 function s(e) {
     let {
@@ -25,14 +25,14 @@ function s(e) {
         o = null != s.id || s.name.length > 0,
         d = null != n.status && n.status.length > 0;
     return (0, i.jsx)("div", {
-        className: a.kL,
+        className: r.kL,
         children: (0, i.jsx)("div", {
-            className: a.Nr,
+            className: r.Nr,
             children: (0, i.jsxs)("div", {
-                className: a.Qs,
+                className: r.Qs,
                 children: [o && (0, i.jsx)("div", {
-                    className: a.qq,
-                    children: (0, i.jsx)(r.A, {
+                    className: r.qq,
+                    children: (0, i.jsx)(a.A, {
                         emoji: s,
                         animate: !0,
                         hideTooltip: !1
@@ -40,7 +40,7 @@ function s(e) {
                 }), d && (0, i.jsx)(l.Text, {
                     variant: "text-md/normal",
                     color: "text-strong",
-                    className: a.qS,
+                    className: r.qS,
                     children: n.status
                 })]
             })

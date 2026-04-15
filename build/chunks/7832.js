@@ -4,15 +4,15 @@ n.d(t, {
 });
 var i = n(64700),
     l = n(323889),
-    r = n(311907),
-    a = n(605180),
+    a = n(311907),
+    r = n(605180),
     s = n(829219),
     o = n(859703);
 
 function d() {
-    let e = (0, r.bG)([o.A], () => o.A.getQuestHomeHero()),
+    let e = (0, a.bG)([o.A], () => o.A.getQuestHomeHero()),
         t = e?.id,
-        n = (0, r.bG)([a.A], () => null != t && a.A.hasSeen(l.p.QUEST_HOME_HERO, t), [t]);
+        n = (0, a.bG)([r.A], () => null != t && r.A.hasSeen(l.p.QUEST_HOME_HERO, t), [t]);
     return {
         shouldShowQuestHomeHeroContent: e?.questHomeEntrypoint != null && !n,
         dismissQuestHomeHeroContent: i.useCallback(() => {

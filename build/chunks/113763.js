@@ -1,14 +1,14 @@
 /** chunk id: 113763 params = (module,exports,require) **/
 i.d(t, {
-    A: () => p
+    A: () => A
 });
 var n = i(627968),
-    s = i(64700),
-    l = i(163126),
+    l = i(64700),
+    s = i(163126),
     a = i(688810),
     r = i(114212),
-    o = i(183555),
-    d = i(913453),
+    d = i(183555),
+    o = i(913453),
     c = i(229187),
     u = i(657331),
     g = i(503062),
@@ -16,24 +16,24 @@ var n = i(627968),
     h = i(515054),
     x = i(499044);
 
-function p(e) {
+function A(e) {
     let {
         user: t,
         guildId: i,
-        channelId: p,
-        onClose: A
+        channelId: A,
+        onClose: p
     } = e, {
         analyticsLocations: f
     } = (0, a.Ay)(), {
         context: I,
         trackUserProfileAction: j
-    } = (0, o.NJ)(), {
+    } = (0, d.NJ)(), {
         mutualFriends: v,
         mutualFriendsCount: S
-    } = (0, d.A)(t), b = (0, l.A)();
-    return s.useEffect(() => {
-        (0, c.A)(t.id, b)
-    }, [t.id, b]), (0, n.jsx)(h.K, {
+    } = (0, o.A)(t), E = (0, s.A)();
+    return l.useEffect(() => {
+        (0, c.A)(t.id, E)
+    }, [t.id, E]), (0, n.jsx)(h.K, {
         className: x.XG,
         children: null == v ? Array.from({
             length: S ?? 10
@@ -49,20 +49,20 @@ function p(e) {
         }, t)) : 0 === v.length ? (0, n.jsx)(m.IA, {}) : v.map(e => {
             let {
                 key: t,
-                user: s,
-                status: l
+                user: l,
+                status: s
             } = e;
             return (0, n.jsx)(g.A, {
-                user: s,
-                status: l,
+                user: l,
+                status: s,
                 guildId: i,
-                channelId: p,
+                channelId: A,
                 onSelect: () => {
-                    A?.(), j({
+                    p?.(), j({
                         action: "PRESS_MUTUAL_FRIEND"
                     }), (0, u.openUserProfileModal)({
                         ...I,
-                        userId: s.id,
+                        userId: l.id,
                         sourceAnalyticsLocations: f
                     })
                 }

@@ -6,8 +6,8 @@ var i = n(64700);
 
 function l(e, t, n) {
     let l = i.useRef(null),
-        r = i.useRef(new Map),
-        a = i.useRef(new Set),
+        a = i.useRef(new Map),
+        r = i.useRef(new Set),
         s = i.useRef(t),
         o = i.useRef(e);
     return i.useEffect(() => {
@@ -16,10 +16,10 @@ function l(e, t, n) {
         let t = !1;
         if (e.forEach(e => {
                 let n = e.target.getAttribute("data-item-id");
-                null != n && (e.isIntersecting && e.intersectionRatio >= .5 ? a.current.has(n) || (a.current.add(n), t = !0) : a.current.has(n) && (a.current.delete(n), t = !0))
+                null != n && (e.isIntersecting && e.intersectionRatio >= .5 ? r.current.has(n) || (r.current.add(n), t = !0) : r.current.has(n) && (r.current.delete(n), t = !0))
             }), t) {
             let e = o.current,
-                t = Array.from(a.current).map(t => {
+                t = Array.from(r.current).map(t => {
                     let n = e.findIndex(e => e.id === t);
                     return n >= 0 ? {
                         index: n,
@@ -38,10 +38,10 @@ function l(e, t, n) {
         l.current?.disconnect()
     }), [n]), {
         registerItemRef: i.useCallback((e, t) => {
-            if (null != t) r.current.set(e, t), null != l.current && l.current.observe(t);
+            if (null != t) a.current.set(e, t), null != l.current && l.current.observe(t);
             else {
-                let t = r.current.get(e);
-                null != t && (l.current?.unobserve(t), r.current.delete(e))
+                let t = a.current.get(e);
+                null != t && (l.current?.unobserve(t), a.current.delete(e))
             }
         }, [])
     }

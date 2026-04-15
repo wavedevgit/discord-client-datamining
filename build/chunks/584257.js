@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(73153),
     l = n(272355),
-    r = n(961350),
-    a = n(414736),
+    a = n(961350),
+    r = n(414736),
     s = n(874486),
     o = n(927018),
     d = n(3137),
@@ -22,7 +22,7 @@ class A extends l.A {
         let {
             settings: t
         } = e;
-        t.enabled ? (0, a._)(o.sn.ENABLE_POGGERMODE) : !1 === t.enabled && (0, a._)(o.sn.DISABLE_POGGERMODE), Object.keys(t).some(e => e.startsWith("confetti")) && (0, a._)(o.sn.CUSTOMIZE_CONFETTI)
+        t.enabled ? (0, r._)(o.sn.ENABLE_POGGERMODE) : !1 === t.enabled && (0, r._)(o.sn.DISABLE_POGGERMODE), Object.keys(t).some(e => e.startsWith("confetti")) && (0, r._)(o.sn.CUSTOMIZE_CONFETTI)
     };
     handleMessageCreate = e => {
         let {
@@ -34,8 +34,8 @@ class A extends l.A {
             }
         } = e;
         if (!d.A.isEnabled()) return !1;
-        let A = r.default.getId();
-        if (l?.find(e => e.id === A) != null ? (0, a._)(o.sn.PING_ME) : (l?.length ?? 0) > 0 && n?.id === A && (0, a._)(o.sn.PING_SOMEONE), !(0, c.gN)(n?.id, A, i, u)) return !1;
+        let A = a.default.getId();
+        if (l?.find(e => e.id === A) != null ? (0, r._)(o.sn.PING_ME) : (l?.length ?? 0) > 0 && n?.id === A && (0, r._)(o.sn.PING_SOMEONE), !(0, c.gN)(n?.id, A, i, u)) return !1;
         let {
             combo: h
         } = c.Ay.getMostRecentMessageCombo(t) ?? {};
@@ -44,7 +44,7 @@ class A extends l.A {
             if (null != s.A.getUnlocked(e)) return;
             let t = (0, o.vM)(e),
                 n = t?.checkUnlock;
-            null == n || !1 !== n(h) && (0, a._)(e)
+            null == n || !1 !== n(h) && (0, r._)(e)
         })
     }
 }

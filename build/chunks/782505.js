@@ -1,25 +1,25 @@
 /** chunk id: 782505 params = (module,exports,require) **/
 i.d(t, {
     IA: () => S,
-    jB: () => b,
-    qv: () => T,
-    zf: () => y
+    jB: () => E,
+    qv: () => y,
+    zf: () => b
 });
 var n = i(627968),
-    s = i(64700),
-    l = i(735438),
+    l = i(64700),
+    s = i(735438),
     a = i(397927),
     r = i(308528),
-    o = i(736653),
-    d = i(573648),
+    d = i(736653),
+    o = i(573648),
     c = i(780964),
     u = i(858897),
     g = i(562153),
     m = i(993401),
     h = i(652215),
     x = i(985018),
-    p = i(160514);
-let A = [() => x.intl.string(x.t.madJdE), () => x.intl.string(x.t.NYmfoP), () => x.intl.string(x.t.R2PaCg), () => x.intl.string(x.t.laSR8h), () => x.intl.string(x.t.DnsJE8)],
+    A = i(160514);
+let p = [() => x.intl.string(x.t.madJdE), () => x.intl.string(x.t.NYmfoP), () => x.intl.string(x.t.R2PaCg), () => x.intl.string(x.t.laSR8h), () => x.intl.string(x.t.DnsJE8)],
     f = [() => x.intl.string(x.t.nFSbeE), () => x.intl.string(x.t.gTcxOz), () => x.intl.string(x.t["8T0wYj"]), () => x.intl.string(x.t.BIHl1g), () => x.intl.string(x.t["jhBm0+"])],
     I = [() => x.intl.string(x.t.AyMGXA), () => x.intl.string(x.t.aAFW7V), e => x.intl.formatToPlainString(x.t.h2g0cM, {
         name: e
@@ -30,12 +30,12 @@ function v(e) {
     let {
         heading: t,
         bodyText: i,
-        children: s
+        children: l
     } = e;
     return (0, n.jsxs)("div", {
-        className: p.Ie,
+        className: A.Ie,
         children: [(0, n.jsxs)("div", {
-            className: p.FS,
+            className: A.FS,
             children: [(0, n.jsx)(a.Heading, {
                 variant: "heading-md/medium",
                 color: "text-strong",
@@ -45,91 +45,91 @@ function v(e) {
                 color: "text-default",
                 children: i
             })]
-        }), s]
+        }), l]
     })
 }
 
 function S() {
     let e = x.intl.string(x.t.RnD2yZ),
-        [t] = s.useState(() => ((0, l.sample)(A) ?? A[0])());
+        [t] = l.useState(() => ((0, s.sample)(p) ?? p[0])());
     return (0, n.jsx)(v, {
         heading: e,
         bodyText: t
     })
 }
 
-function b() {
+function E() {
     let e = x.intl.string(x.t.bFgqYJ),
-        [t] = s.useState(() => ((0, l.sample)(f) ?? f[0])());
+        [t] = l.useState(() => ((0, s.sample)(f) ?? f[0])());
     return (0, n.jsx)(v, {
         heading: e,
         bodyText: t
     })
 }
 
-function y(e) {
+function b(e) {
     let {
         user: t,
         guildId: i,
-        channelId: o,
-        onClose: d
-    } = e, c = g.Ay.getName(i, o, t), u = x.intl.formatToPlainString(x.t.sjSitP, {
+        channelId: d,
+        onClose: o
+    } = e, c = g.Ay.getName(i, d, t), u = x.intl.formatToPlainString(x.t.sjSitP, {
         name: c
-    }), [h] = s.useState(() => ((0, l.sample)(I) ?? I[0])(c)), A = s.useCallback(() => {
+    }), [h] = l.useState(() => ((0, s.sample)(I) ?? I[0])(c)), p = l.useCallback(() => {
         r.A.openPrivateChannel({
             recipientIds: t.id
-        }), d?.()
-    }, [t.id, d]);
+        }), o?.()
+    }, [t.id, o]);
     return (0, n.jsx)(v, {
         heading: u,
         bodyText: h,
         children: (0, n.jsx)("div", {
-            className: p.v0,
+            className: A.v0,
             children: (0, n.jsx)(m.FD, {
                 icon: a.oyn,
                 text: x.intl.string(x.t["g33r/P"]),
-                onClick: A
+                onClick: p
             })
         })
     })
 }
 
-function E() {
-    let e = (0, o.Ay)();
+function T() {
+    let e = (0, d.Ay)();
     return (0, n.jsx)("div", {
-        className: p.HU,
+        className: A.HU,
         children: j.map((t, i) => {
-            let s = d.A.get(t);
-            if (null == s) return null;
-            let l = (0, a.Mwr)(e) ? s.icon.darkPNG : s.icon.lightPNG;
+            let l = o.A.get(t);
+            if (null == l) return null;
+            let s = (0, a.Mwr)(e) ? l.icon.darkPNG : l.icon.lightPNG;
             return (0, n.jsx)("img", {
-                src: l,
-                alt: s.name,
-                className: p.gj
+                src: s,
+                alt: l.name,
+                className: A.gj
             }, i)
         })
     })
 }
 
-function T(e) {
+function y(e) {
     let {
         onClose: t
-    } = e, i = s.useCallback(() => {
+    } = e, i = l.useCallback(() => {
         t?.(), (0, u.openUserSettings)(c.X.CONNECTIONS_PANEL)
-    }, [t]), l = s.useCallback(() => {
+    }, [t]), s = l.useCallback(() => {
         t?.(), (0, u.openUserSettings)(c.X.CONTENT_AND_SOCIAL_CONNECTED_GAMES_TAB)
     }, [t]);
     return (0, n.jsxs)(v, {
         heading: x.intl.string(x.t.VB6LWY),
         bodyText: x.intl.string(x.t.KpjsU9),
-        children: [(0, n.jsx)(E, {}), (0, n.jsxs)("div", {
-            className: p.v0,
+        children: [(0, n.jsx)(T, {}), (0, n.jsxs)("div", {
+            className: A.v0,
             children: [(0, n.jsx)(m.FD, {
                 text: x.intl.string(x.t["/Hl24U"]),
                 onClick: i
             }), (0, n.jsx)(m.FD, {
                 text: x.intl.string(x.t.GTCx0p),
-                onClick: l
+                onClick: s
             })]
         })]
     })

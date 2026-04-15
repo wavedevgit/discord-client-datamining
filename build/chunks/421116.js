@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(873263),
+    r = n.n(l),
+    a = n(873263),
     o = n(311907),
     d = n(230109),
     c = n(397927),
@@ -15,8 +15,8 @@ var i = n(627968),
     g = n(688810),
     _ = n(726649),
     x = n(611924),
-    A = n(649032),
-    h = n(26508),
+    h = n(649032),
+    A = n(26508),
     p = n(166403),
     T = n(954571),
     f = n(927578),
@@ -24,22 +24,22 @@ var i = n(627968),
     E = n(994763),
     b = n(130946),
     C = n(501007),
-    N = n(817267),
-    v = n(736455),
+    v = n(817267),
+    N = n(736455),
     I = n(400292),
     j = n(536195),
     y = n(388116),
     O = n(577174),
     R = n(127493),
-    P = n(23003),
-    L = n(16019),
+    L = n(23003),
+    P = n(16019),
     D = n(768229),
     G = n(788868),
     M = n(652215),
-    k = n(818348),
-    U = n(352989);
+    U = n(818348),
+    k = n(352989);
 let w = () => {
-    let e = (0, r.zy)();
+    let e = (0, a.zy)();
     (0, x.P)(_.b);
     let t = s.useRef(null),
         n = s.useRef(null),
@@ -62,68 +62,68 @@ let w = () => {
     s.useEffect(() => {
         Z(!0)
     }, []);
-    let en = (0, h.DK)(A.W.NITRO, "PremiumMarketingHome"),
+    let en = (0, A.DK)(h.W.NITRO, "PremiumMarketingHome"),
         ei = s.useMemo(() => !!en && "orbs" === new URLSearchParams(e.search).get("section"), [e.search, en]);
-    (0, E.z)(P.NI.ORB_REWARDS, ei);
-    let es = [v.k.HOME, v.k.WHATS_NEW, v.k.BEST_OF_NITRO, v.k.PLANS, v.k.COMPARE],
+    (0, E.z)(L.NI.ORB_REWARDS, ei);
+    let es = [N.k.HOME, N.k.WHATS_NEW, N.k.BEST_OF_NITRO, N.k.PLANS, N.k.COMPARE],
         {
             navBarSections: el,
-            activeSectionId: ea
+            activeSectionId: er
         } = (0, D.o)(es),
         {
-            home: er,
+            home: ea,
             whatsNew: eo,
             bestOfNitro: ed,
             plans: ec,
             compare: eu
         } = el,
         em = (0, i.jsxs)("div", {
-            className: a()(U.kL, U.Gd, U.iI, {
-                [U.Hq]: !B
+            className: r()(k.kL, k.Gd, k.iI, {
+                [k.Hq]: !B
             }),
             "data-cy": "tier-0-marketing-page",
-            children: [(0, i.jsx)(N.A, {
-                className: U.yH
+            children: [(0, i.jsx)(v.A, {
+                className: k.yH
             }), (0, i.jsx)(O.A, {
                 navBarSections: el,
-                activeSectionId: ea
+                activeSectionId: er
             }), (0, i.jsxs)("div", {
-                className: U.Qr,
+                className: k.Qr,
                 children: [(0, i.jsx)("div", {
-                    className: U.qY,
-                    ref: er.ref,
+                    className: k.qY,
+                    ref: ea.ref,
                     children: (0, i.jsx)(d.L, {
                         innerRef: l,
                         onChange: e => H(e),
                         threshold: 0,
                         active: !0,
-                        children: (0, i.jsx)(L.A, {
+                        children: (0, i.jsx)(P.A, {
                             ref: l,
                             subscriptionTier: $,
                             isEligibleForBogoPromotion: ee
                         })
                     })
                 }), ee && (0, i.jsx)("div", {
-                    className: U.Hz,
+                    className: k.Hz,
                     children: (0, i.jsx)(b.A, {
                         variant: b.c.APPLICATION_NITRO_HOME
                     })
                 }), (0, i.jsx)("div", {
-                    className: U.So,
+                    className: k.So,
                     ref: eo.ref,
                     children: (0, i.jsx)(R.Ct, {
                         shouldLoadVideo: W,
                         isReducedMotion: B
                     })
                 }), (0, i.jsx)("div", {
-                    className: U.KQ,
+                    className: k.KQ,
                     ref: ed.ref,
                     children: (0, i.jsx)(R.oO, {
                         shouldLoadVideo: W,
                         isReducedMotion: B
                     })
                 }), (0, i.jsx)("div", {
-                    className: U.s5,
+                    className: k.s5,
                     ref: ec.ref,
                     children: (0, i.jsx)(d.L, {
                         innerRef: n,
@@ -135,7 +135,7 @@ let w = () => {
                         })
                     })
                 }), (0, i.jsx)("div", {
-                    className: U.aC,
+                    className: k.aC,
                     ref: eu.ref,
                     children: (0, i.jsx)(j.A, {})
                 })]
@@ -148,7 +148,7 @@ let w = () => {
                 },
                 children: (0, i.jsx)("div", {
                     ref: w,
-                    className: U._Z
+                    className: k._Z
                 })
             }), (0, i.jsx)(y.A, {
                 ref: V
@@ -156,14 +156,14 @@ let w = () => {
                 isVisible: !F && !z && W,
                 subscriptionTier: $,
                 isEligibleForBogoPromotion: ee
-            }), (0, i.jsx)(N.A, {
-                className: U.MF
+            }), (0, i.jsx)(v.A, {
+                className: k.MF
             })]
         });
     return (0, i.jsx)(c.NPJ, {
-        theme: k.NJ.DARKER,
+        theme: U.NJ.DARKER,
         children: e => (0, i.jsx)(c.GtU, {
-            className: a()(U.XG, e),
+            className: r()(k.XG, e),
             ref: t,
             children: em
         })

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(284009),
-    r = n.n(l),
-    a = n(765379),
+    a = n.n(l),
+    r = n(765379),
     s = n(90644),
     o = n(61330),
     d = n(609425),
@@ -38,19 +38,19 @@ function I(e) {
                 user: t
             } = e;
             return t.id
-        })), l = n.filter(e => !i.has(e.id)), r = _.Ay.getName(t[0].user), a = null != t[1] ? _.Ay.getName(t[1].user) : null != l[0] ? _.Ay.getName(l[0]) : null;
+        })), l = n.filter(e => !i.has(e.id)), a = _.Ay.getName(t[0].user), r = null != t[1] ? _.Ay.getName(t[1].user) : null != l[0] ? _.Ay.getName(l[0]) : null;
         switch (n.length) {
             case 1:
-                return r;
+                return a;
             case 2:
                 return E.intl.format(E.t.t1DyC1, {
-                    user1: r,
-                    user2: a
+                    user1: a,
+                    user2: r
                 });
             default:
                 return E.intl.format(E.t["5CSEcJ"], {
-                    user1: r,
-                    user2: a,
+                    user1: a,
+                    user2: r,
                     extras: n.length - 2
                 })
         }
@@ -66,7 +66,7 @@ function I(e) {
         } = e, u = t.length, A = l.length - u, _ = c[0], I = _?.activity, f = _?.startedPlayingTime, C = {
             name: I?.name ?? ""
         };
-        if ((0, a.A)(I) && null != I) return {
+        if ((0, r.A)(I) && null != I) return {
             subtitle: (0, i.jsx)(h.Ay, {
                 start: f,
                 location: h.Ay.Locations.ACTIVITY_FEED_NEW,
@@ -167,7 +167,7 @@ function I(e) {
                 game: n,
                 startedPlayingTime: l
             } = e;
-            return r()(null != t, "Activity was null somehow"), {
+            return a()(null != t, "Activity was null somehow"), {
                 subtitle: (0, i.jsx)(h.Ay, {
                     start: l,
                     location: h.Ay.Locations.ACTIVITY_FEED_NEW,

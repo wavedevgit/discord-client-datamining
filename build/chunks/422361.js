@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(51758),
     y = n(721592),
     v = n(508654),
-    R = n(214660),
-    j = n(303333),
+    j = n(214660),
+    R = n(303333),
     O = n(159426),
     L = n(824865),
     M = n(378570),
@@ -220,7 +220,7 @@ class ei extends Y.Ay {
             voiceStates: n,
             collapsed: l
         } = this.props;
-        return !(null != n && n.length > 0) || l ? null : (0, i.jsx)(j.A, {
+        return !(null != n && n.length > 0) || l ? null : (0, i.jsx)(R.A, {
             channel: e,
             isConnected: t
         })
@@ -234,8 +234,8 @@ class ei extends Y.Ay {
             popoutToShow: l,
             shouldShowGuildVerificationPopout: s
         } = this.state;
-        return s ? (0, i.jsx)(R.A, {
-            type: R.H.VOICE,
+        return s ? (0, i.jsx)(j.A, {
+            type: j.H.VOICE,
             guildId: e.guild_id,
             closePopout: this.closeGuildVerificationPopout
         }) : t || n ? null : "history" === l && this.getVoiceStatesCount() > 0 ? (0, i.jsx)(X.A, {
@@ -310,8 +310,8 @@ class ei extends Y.Ay {
             isFavoriteSuggestion: b,
             withGuildIcon: y,
             hasStartTime: v,
-            shouldHighlightChannel: R,
-            shouldUseAnimatedWaveform: j,
+            shouldHighlightChannel: j,
+            shouldUseAnimatedWaveform: R,
             voiceStates: O
         } = this.props, {
             shouldShowGuildVerificationPopout: L
@@ -320,16 +320,16 @@ class ei extends Y.Ay {
         } = (0, U.NH)({
             guildId: e.guild_id,
             location: "VoiceChannel"
-        }), G = R || j, P = (0, i.jsxs)("li", {
+        }), G = j || R, P = (0, i.jsxs)("li", {
             ref: this.ref,
             className: a()(this.getModeClass(), {
                 [en.r9]: this.isDisabled(),
-                [en.fy]: R
+                [en.fy]: j
             }),
             "data-dnd-name": (0, I.m1)(e, F.default, V.A),
             children: [M && this.getVoiceStatesCount() > 0 && (0, i.jsx)($.A, {
                 channel: e
-            }), R && (0, i.jsxs)(i.Fragment, {
+            }), j && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)("div", {
                     className: en.UQ
                 }), (0, i.jsx)("div", {
@@ -430,8 +430,8 @@ function es(e) {
     }), A = (0, r.bG)([W.A], () => W.A.hasVideo(n.id)), _ = (0, m.Ay)(n), p = (0, I.Ay)(n), E = (0, v.Qs)(n.id), x = (0, r.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
         isSubscriptionGated: C,
         needSubscriptionToAccess: N
-    } = (0, y.A)(n.id), S = (0, T.A)(), b = (0, r.bG)([H.Ay], () => H.Ay.isFavorite(t.id, n.id)), R = e.connected || S?.channelId === n.id, {
-        enableOpenTIVForPing: j
+    } = (0, y.A)(n.id), S = (0, T.A)(), b = (0, r.bG)([H.Ay], () => H.Ay.isFavorite(t.id, n.id)), j = e.connected || S?.channelId === n.id, {
+        enableOpenTIVForPing: R
     } = O.m.useExperiment({
         guildId: n.guild_id,
         location: "VoiceChannel"
@@ -449,7 +449,7 @@ function es(e) {
         needSubscriptionToAccess: N,
         enableConnectedUserLimit: !0,
         enableActivities: !0
-    }), F = R && null == V;
+    }), F = j && null == V;
     return (0, i.jsx)(el, {
         channelName: p,
         embeddedApps: _,
@@ -461,12 +461,12 @@ function es(e) {
         ...c,
         ...h,
         ...e,
-        connected: R,
+        connected: j,
         isFavoriteSuggestion: s && !b,
         forceShowButtons: F,
         channelInfo: V,
         resolvedUnreadSetting: u,
-        enableOpenTIVForPing: j,
+        enableOpenTIVForPing: R,
         hasChannelInfo: null != V,
         hasStartTime: x,
         shouldHighlightChannel: U,

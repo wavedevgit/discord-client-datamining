@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(179771),
     l = n(827343),
-    r = n(430452),
-    a = n(287809),
+    a = n(430452),
+    r = n(287809),
     s = n(636401),
     o = n(629471),
     d = n(546983),
@@ -33,19 +33,19 @@ let A = {
                     volume: i,
                     mute: o
                 }
-            } = e, d = a.default.getCurrentUser();
-            if (null == a.default.getUser(t) || d?.id === t) throw new s.A({
+            } = e, d = r.default.getCurrentUser();
+            if (null == r.default.getUser(t) || d?.id === t) throw new s.A({
                 errorCode: u.Lw6.INVALID_USER
             }, `Invalid user id: ${t}`);
             if (null != n && l.A.setLocalPan(t, n.left, n.right), null != i && l.A.setLocalVolume(t, i), null != o) {
-                let e = r.Ay.isLocalMute(t);
+                let e = a.Ay.isLocalMute(t);
                 (e && !o || !e && o) && l.A.toggleLocalMute(t)
             }
             return {
                 user_id: t,
-                pan: r.Ay.getLocalPan(t),
-                volume: r.Ay.getLocalVolume(t),
-                mute: r.Ay.isLocalMute(t)
+                pan: a.Ay.getLocalPan(t),
+                volume: a.Ay.getLocalVolume(t),
+                mute: a.Ay.isLocalMute(t)
             }
         }
     },
@@ -61,11 +61,11 @@ let A = {
         },
         validation: e => (0, o.A)(e).required().keys({
             input: (0, o.A)(e).keys({
-                device_id: e.string().valid(Object.keys(r.Ay.getInputDevices())),
+                device_id: e.string().valid(Object.keys(a.Ay.getInputDevices())),
                 volume: e.number().min(0).max(100)
             }),
             output: (0, o.A)(e).keys({
-                device_id: e.string().valid(Object.keys(r.Ay.getOutputDevices())),
+                device_id: e.string().valid(Object.keys(a.Ay.getOutputDevices())),
                 volume: e.number().min(0).max(200)
             }),
             mode: (0, o.A)(e).keys({
@@ -93,7 +93,7 @@ let A = {
                     input: t,
                     output: n,
                     mode: i,
-                    automatic_gain_control: a,
+                    automatic_gain_control: r,
                     echo_cancellation: s,
                     noise_suppression: o,
                     qos: c,
@@ -103,16 +103,16 @@ let A = {
                 }
             } = e;
             if (t && (null != t.device_id && l.A.setInputDevice(t.device_id), null != t.volume && l.A.setInputVolume(t.volume)), n && (null != n.device_id && l.A.setOutputDevice(n.device_id), null != n.volume && l.A.setOutputVolume(n.volume)), i) {
-                let e = r.Ay.getMode(),
-                    t = r.Ay.getModeOptions();
+                let e = a.Ay.getMode(),
+                    t = a.Ay.getModeOptions();
                 null != i.type && (e = i.type), null != i.auto_threshold && (t.autoThreshold = i.auto_threshold), null != i.threshold && (t.threshold = i.threshold), null != i.shortcut && (t.shortcut = i.shortcut.map(e => [e.type, e.code])), null != i.delay && (t.delay = i.delay), l.A.setMode(e, t)
             }
-            if (null != a && l.A.setAutomaticGainControl(a), null != s && l.A.setEchoCancellation(s), null != o && l.A.setNoiseSuppression(o), null != c && l.A.setQoS(c), null != u && l.A.setSilenceWarning(u), null != A) {
-                let e = r.Ay.isSelfDeaf();
+            if (null != r && l.A.setAutomaticGainControl(r), null != s && l.A.setEchoCancellation(s), null != o && l.A.setNoiseSuppression(o), null != c && l.A.setQoS(c), null != u && l.A.setSilenceWarning(u), null != A) {
+                let e = a.Ay.isSelfDeaf();
                 (e && !A || !e && A) && l.A.toggleSelfDeaf()
             }
             if (null != h) {
-                let e = r.Ay.isSelfMute();
+                let e = a.Ay.isSelfMute();
                 (e && !h || !e && h) && l.A.toggleSelfMute()
             }
             return (0, d.l6)()

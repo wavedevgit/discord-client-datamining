@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(397927),
-    a = n(686956),
+    a = n(397927),
+    r = n(686956),
     s = n(292455),
     o = n(701508),
     d = n(979590),
@@ -34,7 +34,7 @@ let p = function(e) {
             children: (0, i.jsx)(s.A, {})
         }), (0, i.jsxs)(d.A, {
             children: [n.length > 0 ? (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(r.Heading, {
+                children: [(0, i.jsx)(a.Heading, {
                     className: m.G,
                     variant: "heading-lg/semibold",
                     color: "text-strong",
@@ -43,7 +43,7 @@ let p = function(e) {
                     className: m.Q,
                     children: [p.map(e => (0, i.jsx)(h.nO, {
                         guild: e,
-                        onClick: () => a.A.transitionToGuildSync(e.id)
+                        onClick: () => r.A.transitionToGuildSync(e.id)
                     }, e.id)), (0, i.jsx)(u.A, {
                         hasHub: !0
                     })]
@@ -57,12 +57,12 @@ let p = function(e) {
                 className: g.yF
             }), (0, i.jsxs)("div", {
                 className: g.ed,
-                children: [(0, i.jsxs)(r.Text, {
+                children: [(0, i.jsxs)(a.Text, {
                     className: g.Qq,
                     variant: "text-sm/medium",
                     color: "text-default",
                     children: [_.intl.string(_.t.O1k9XX), " "]
-                }), (0, i.jsx)(r.Text, {
+                }), (0, i.jsx)(a.Text, {
                     className: g.Qq,
                     variant: "text-sm/medium",
                     color: "text-default",

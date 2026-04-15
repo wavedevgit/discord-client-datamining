@@ -1,6 +1,6 @@
 /** chunk id: 327247 params = (module,exports,require) **/
 n.d(t, {
-    x: () => M
+    x: () => D
 });
 var i = n(627968),
     a = n(64700),
@@ -33,16 +33,16 @@ var i = n(627968),
     R = n(985018),
     P = n(376936),
     w = n(582251);
-let D = async () => await n.e("40119").then(n.t.bind(n, 718698, 19));
+let M = async () => await n.e("40119").then(n.t.bind(n, 718698, 19));
 
-function M(e) {
+function D(e) {
     let {
         quest: t,
         location: n,
         isInteracting: l,
         contentPosition: I,
         sourceQuestContent: b
-    } = e, M = a.useRef(null), {
+    } = e, D = a.useRef(null), {
         ref: U,
         scrollHeight: B
     } = (0, o.wR)(), G = 104 !== B, {
@@ -57,7 +57,7 @@ function M(e) {
     }), H = (0, C.Ic)(t), V = (0, A.In)(t), q = (0, E.mq)(t.config), W = (0, E.mH)(t.config), z = t.userStatus?.enrolledAt != null, Y = t.userStatus?.completedAt != null, Q = t.userStatus?.claimedAt != null, K = (0, E.ks)(t.config), X = (0, E._Z)(t.config), {
         completedRatio: J,
         completedRatioDisplay: Z
-    } = (0, A.O9)(t), $ = (0, g.gj)(t, b, _.Ob.QuestEmbed, M), ee = (0, y.Pd)(t), et = a.useMemo(() => Q && K ? R.intl.format(R.t["8Op4c4"], {
+    } = (0, A.O9)(t), $ = (0, g.gj)(t, b, _.Ob.QuestEmbed, D), ee = (0, y.Pd)(t), et = a.useMemo(() => Q && K ? R.intl.format(R.t["8Op4c4"], {
         balanceHook: () => (0, i.jsxs)(k, {
             questId: t.id,
             children: [(0, i.jsx)(m.A, {
@@ -106,7 +106,7 @@ function M(e) {
     });
     return (0, i.jsxs)("div", {
         className: w.kL,
-        ref: M,
+        ref: D,
         children: [(0, i.jsxs)(r.animated.div, {
             style: {
                 maxHeight: F.to([0, 1], [104, (B ?? 0) + 12])
@@ -119,7 +119,7 @@ function M(e) {
                 }), z ? (0, i.jsxs)("div", {
                     className: w.Tr,
                     children: [Y && (0, i.jsx)(d.akl, {
-                        importData: D,
+                        importData: M,
                         className: w.t_,
                         loop: !1,
                         autoplay: !1,

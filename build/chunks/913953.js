@@ -4,13 +4,13 @@ n.d(t, {
 });
 var i = n(73153),
     l = n(92077),
-    r = n(961350),
-    a = n(144914);
+    a = n(961350),
+    r = n(144914);
 
 function s() {
-    if (!(0, a.S)()) return;
-    let e = r.default.getToken(),
-        t = r.default.getId();
+    if (!(0, r.S)()) return;
+    let e = a.default.getToken(),
+        t = a.default.getId();
     if (null == e) throw Error("missing user token");
     l.Ts(e, t)
 }

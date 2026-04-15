@@ -40,7 +40,7 @@ function y(e) {
         P = (0, d.bG)([A.A], () => null != n && null != n.target_user ? A.A.getActiveStreamForUser(n.target_user.id, L) : null, [n, L]),
         w = (0, d.bG)([A.A], () => null != n && null != n.target_user ? A.A.getStreamForUser(n.target_user.id, L) : null, [n, L]),
         {
-            analyticsLocations: D
+            analyticsLocations: M
         } = (0, _.Ay)(u.A.INVITE_EMBED);
     (0, m.A)({
         name: r.ImpressionNames.INVITE_EMBED,
@@ -52,10 +52,10 @@ function y(e) {
             invite_instance_id: (0, h._U)(n.code, S.id),
             invite_channel_type: n.channel?.type,
             embed_type: "streaming_invite",
-            location_stack: D
+            location_stack: M
         }
     });
-    let M = null != n && n.target_type === v.yV.STREAM && null != n.target_user && null != P,
+    let D = null != n && n.target_type === v.yV.STREAM && null != n.target_user && null != P,
         k = null != n && null != w && null != n.channel && null != n.guild && w.channelId === n.channel.id && w.guildId === n.guild.id;
     s()(null != n, "Invite cannot be null");
     let {
@@ -67,14 +67,14 @@ function y(e) {
         G = n.state === I.elq.ACCEPTING,
         F = a.useCallback(() => {
             let e = "noop";
-            M ? (N(), e = "transition") : (j(), e = "accept"), (0, c.he)({
+            D ? (N(), e = "transition") : (j(), e = "accept"), (0, c.he)({
                 invite: n,
                 action: e,
                 inviter_id: S.author.id,
                 invite_message_id: S.id,
                 invite_instance_id: (0, h._U)(n.code, S.id)
-            }, D)
-        }, [n, S, D, M, N, j]),
+            }, M)
+        }, [n, S, M, D, N, j]),
         H = null != y;
     if (null == y) {
         if (null == n.guild) return (0, i.jsx)(E.A, {});
@@ -82,12 +82,12 @@ function y(e) {
     }
     let V = null != n.channel ? (0, g.OY)(n.channel) : null,
         q = C.Ay.getName(U),
-        W = M || !k && H,
+        W = D || !k && H,
         z = b.intl.string(b.t.I6JG46),
         Y = "active";
     H && !k ? (t = B ? b.intl.string(b.t.oBLoZJ) : b.intl.formatToPlainString(b.t["0QJmA+"], {
         name: q
-    }), z = b.intl.string(b.t.Wdi5E1)) : (Y = "active", M && (z = b.intl.string(b.t.Q1W99y), Y = "secondary"), t = B ? b.intl.string(b.t["4hyaHu"]) : b.intl.formatToPlainString(b.t.QmlLEq, {
+    }), z = b.intl.string(b.t.Wdi5E1)) : (Y = "active", D && (z = b.intl.string(b.t.Q1W99y), Y = "secondary"), t = B ? b.intl.string(b.t["4hyaHu"]) : b.intl.formatToPlainString(b.t.QmlLEq, {
         name: q
     }));
     let Q = R === y.id && null != V ? (0, i.jsx)(p.A.Channel, {

@@ -42,9 +42,9 @@ let p = l.memo(function(e) {
         mentionCount: I.map(e => c.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
         isMentionLowImportance: I.every(e => c.default.getIsMentionLowImportance(e)),
         unread: I.some(e => c.default.hasUnread(e))
-    })), R = l.useCallback(() => {
+    })), j = l.useCallback(() => {
         r.A.toggleGuildFolderExpand(g)
-    }, [g]), j = l.useCallback(e => {
+    }, [g]), R = l.useCallback(e => {
         (0, a.L3)(e, async () => {
             let {
                 default: e
@@ -68,7 +68,7 @@ let p = l.memo(function(e) {
         unread: v,
         mediaState: S,
         defaultFolderName: T,
-        onExpandCollapse: R,
-        onContextMenu: j
+        onExpandCollapse: j,
+        onContextMenu: R
     })
 })

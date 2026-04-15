@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(379654),
     y = n(946356),
     v = n(490752),
-    R = n(587168),
-    j = n(193738),
+    j = n(587168),
+    R = n(193738),
     O = n(615952),
     L = n(853397),
     M = n(159218),
@@ -99,8 +99,8 @@ function H(e) {
                         className: V.tB
                     }), (0, i.jsxs)(a.d_W, {
                         className: null != K ? V.It : void 0,
-                        children: [(0, i.jsxs)(R.A, {
-                            children: [(0, i.jsx)(j.A, {
+                        children: [(0, i.jsxs)(j.A, {
+                            children: [(0, i.jsx)(R.A, {
                                 user: t,
                                 themeType: w.d.SIDEBAR
                             }), (0, i.jsx)(O.A, {

@@ -1,16 +1,16 @@
 /** chunk id: 48128 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var i = n(562465),
     l = n(73153),
-    r = n(652215);
-let a = {
+    a = n(652215);
+let r = {
     fetch() {
         l.h.dispatch({
             type: "UNCLAIMED_GAMES_FETCH"
         }), i.Bo.get({
-            url: r.Rsh.UNCLAIMED_GAMES,
+            url: a.Rsh.UNCLAIMED_GAMES,
             oldFormErrors: !0,
             rejectWithError: !1
         }).then(e => {

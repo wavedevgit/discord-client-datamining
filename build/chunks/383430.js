@@ -3,12 +3,12 @@ i.d(t, {
     A: () => u
 });
 var n = i(627968),
-    s = i(64700),
-    l = i(397927),
+    l = i(64700),
+    s = i(397927),
     a = i(429913),
     r = i(486020),
-    o = i(403362),
-    d = i(985018),
+    d = i(403362),
+    o = i(985018),
     c = i(688369);
 
 function u(e) {
@@ -19,12 +19,12 @@ function u(e) {
         handleOpenGameShop: g,
         handleAddNitroToWishlist: m,
         socialLayerStorefrontApplicationIds: h
-    } = e, x = s.useRef(null), [p, A] = s.useState(!1), f = function(e) {
+    } = e, x = l.useRef(null), [A, p] = l.useState(!1), f = function(e) {
         let {
             applications: t,
             handleOpenGameShop: i
         } = e;
-        return s.useMemo(() => t.filter(o.Vq).map(e => {
+        return l.useMemo(() => t.filter(d.Vq).map(e => {
             let t = r.Ay.getApplicationIconURL({
                 id: e.id,
                 icon: e.icon,
@@ -32,20 +32,20 @@ function u(e) {
             });
             return {
                 id: `browse-social-layer-storefront-${e.id}`,
-                label: d.intl.formatToPlainString(d.t["HDT/rg"], {
+                label: o.intl.formatToPlainString(o.t["HDT/rg"], {
                     applicationName: e.name
                 }),
                 iconLeft: null != t ? () => (0, n.jsx)("img", {
                     className: c.I,
                     src: t,
                     alt: ""
-                }) : l.U1X,
+                }) : s.U1X,
                 leadingAccessory: null != t ? {
                     type: "image",
                     src: t
                 } : {
                     type: "icon",
-                    icon: l.U1X
+                    icon: s.U1X
                 },
                 action: () => i?.(e.id)
             }
@@ -53,65 +53,65 @@ function u(e) {
     }({
         applications: (0, a.A)(h),
         handleOpenGameShop: g
-    }), I = s.useMemo(() => (0, n.jsxs)(l.rXV, {
-        children: [null != u && (0, n.jsx)(l.Drp, {
+    }), I = l.useMemo(() => (0, n.jsxs)(s.rXV, {
+        children: [null != u && (0, n.jsx)(s.Drp, {
             id: "browse-collectibles-shop",
-            label: d.intl.string(d.t["5upuqx"]),
-            iconLeft: l.U1X,
+            label: o.intl.string(o.t["5upuqx"]),
+            iconLeft: s.U1X,
             leadingAccessory: {
                 type: "icon",
-                icon: l.U1X
+                icon: s.U1X
             },
             action: u
-        }), null != m && (0, n.jsx)(l.Drp, {
+        }), null != m && (0, n.jsx)(s.Drp, {
             id: "add-nitro-to-wishlist",
-            label: d.intl.string(d.t.lG6a5x),
-            iconLeft: l.tvc,
+            label: o.intl.string(o.t.lG6a5x),
+            iconLeft: s.tvc,
             leadingAccessory: {
                 type: "icon",
-                icon: l.tvc
+                icon: s.tvc
             },
             action: m
         }), null != g && f.map(e => {
             let {
                 id: t,
                 label: i,
-                iconLeft: s,
+                iconLeft: l,
                 leadingAccessory: a,
                 action: r
             } = e;
-            return (0, n.jsx)(l.Drp, {
+            return (0, n.jsx)(s.Drp, {
                 id: t,
                 label: i,
-                iconLeft: s,
+                iconLeft: l,
                 leadingAccessory: a,
                 action: r
             }, t)
         })]
     }), [u, g, m, f]);
-    return (0, n.jsx)(l.YNO, {
+    return (0, n.jsx)(s.YNO, {
         targetElementRef: x,
         position: "bottom",
-        onRequestOpen: () => A(!0),
-        onRequestClose: () => A(!1),
+        onRequestOpen: () => p(!0),
+        onRequestClose: () => p(!1),
         renderPopout: e => {
             let {
                 closePopout: t
             } = e;
-            return (0, n.jsx)(l.W1t, {
+            return (0, n.jsx)(s.W1t, {
                 "data-menu-migrated": !0,
                 navId: "wishlist-overflow-menu",
                 onSelect: void 0,
                 onClose: t,
-                "aria-label": d.intl.string(d.t.GdNkvG),
+                "aria-label": o.intl.string(o.t.GdNkvG),
                 children: I
             })
         },
-        children: e => (0, n.jsx)(l.Button, {
+        children: e => (0, n.jsx)(s.Button, {
             buttonRef: x,
             variant: i,
             size: "sm",
-            icon: p ? l.PGe : l.abt,
+            icon: A ? s.PGe : s.abt,
             iconPosition: "end",
             text: t,
             ...e

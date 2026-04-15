@@ -5,16 +5,16 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(397927),
-    r = n(985018),
-    a = n(872146);
+    a = n(985018),
+    r = n(872146);
 let s = e => {
     let {
         hasHub: t
     } = e;
     return (0, i.jsxs)("div", {
-        className: a.kL,
+        className: r.kL,
         children: [(0, i.jsx)("div", {
-            className: a.zc,
+            className: r.zc,
             children: (0, i.jsx)(l.Pfh, {
                 size: "md",
                 color: l.LU0.colors.WHITE.css
@@ -22,15 +22,15 @@ let s = e => {
         }), (0, i.jsx)(l.Text, {
             color: "text-strong",
             variant: "text-lg/semibold",
-            className: a.wx,
-            children: t ? r.intl.string(r.t.hsSHh8) : r.intl.string(r.t.Wf6iij)
+            className: r.wx,
+            children: t ? a.intl.string(a.t.hsSHh8) : a.intl.string(a.t.Wf6iij)
         }), (0, i.jsx)(l.Text, {
             color: "text-default",
             variant: "text-sm/normal",
-            className: a.__invalid_description,
-            children: t ? r.intl.string(r.t.FZ2J3Y) : r.intl.string(r.t.TvHcv6)
+            className: r.__invalid_description,
+            children: t ? a.intl.string(a.t.FZ2J3Y) : a.intl.string(a.t.TvHcv6)
         }), (0, i.jsx)("div", {
-            className: a.rQ
+            className: r.rQ
         }), (0, i.jsx)(l.Button, {
             fullWidth: !0,
             variant: t ? "secondary" : "active",
@@ -42,7 +42,7 @@ let s = e => {
                     ...t
                 })
             }),
-            text: t ? r.intl.string(r.t.IyjHD9) : r.intl.string(r.t["KU/aN4"])
+            text: t ? a.intl.string(a.t.IyjHD9) : a.intl.string(a.t["KU/aN4"])
         })]
     })
 }

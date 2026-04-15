@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(287809),
     l = n(486020),
-    r = n(515718),
-    a = n(636401),
+    a = n(515718),
+    r = n(636401),
     s = n(629471),
     o = n(613057),
     d = n(652215);
@@ -33,14 +33,14 @@ let c = {
                     t = l.Ay.getUserAvatarURL(e, !1, c, o);
                     let n = window.GLOBAL_ENV.CDN_HOST;
                     null != n && -1 !== t.indexOf(n) && (t += "&_=")
-                } else throw new a.A({
+                } else throw new r.A({
                     errorCode: d.Lw6.INVALID_USER
                 }, `Invalid user id: ${s}`)
             }
-            if (null == t) throw new a.A({
+            if (null == t) throw new r.A({
                 errorCode: d.Lw6.INVALID_COMMAND
             }, "No valid type.");
-            return fetch(t).then(e => e.blob()).then(e => (0, r.We)(e)).then(e => ({
+            return fetch(t).then(e => e.blob()).then(e => (0, a.We)(e)).then(e => ({
                 data_url: e
             }))
         }

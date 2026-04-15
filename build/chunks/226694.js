@@ -1,6 +1,6 @@
 /** chunk id: 226694 params = (module,exports,require) **/
 n.d(t, {
-    A: () => R,
+    A: () => j,
     s: () => y
 });
 var i = n(627968),
@@ -110,7 +110,7 @@ function v(e) {
         })
     })
 }
-let R = l.memo(function(e) {
+let j = l.memo(function(e) {
     let {
         entry: t
     } = e, [s, a] = l.useState(!1), o = null != (0, r.bG)([f.A], () => f.A.getGuild(t.guildId)), A = async () => {

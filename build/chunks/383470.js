@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     l = n(64700),
-    r = n(397927),
-    a = n(292455),
+    a = n(397927),
+    r = n(292455),
     s = n(701508),
     o = n(979590),
     d = n(783531),
@@ -43,9 +43,9 @@ function m(e) {
         children: [(0, i.jsx)(s.A, {
             title: E,
             description: I,
-            children: (0, i.jsx)(a.A, {})
+            children: (0, i.jsx)(r.A, {})
         }), (0, i.jsxs)(o.A, {
-            children: [(0, i.jsx)(r.Heading, {
+            children: [(0, i.jsx)(a.Heading, {
                 className: h.G,
                 variant: "heading-lg/semibold",
                 color: "text-strong",

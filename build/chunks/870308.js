@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(64700),
     l = n(379197),
-    r = n(488430),
-    a = n(311907),
+    a = n(488430),
+    r = n(311907),
     s = n(554146),
     o = n(397927),
     d = n(932001),
@@ -14,12 +14,12 @@ var i = n(64700),
     A = n(158216),
     h = n(49999);
 let _ = () => {
-    let e = (0, a.bG)([c.A], () => c.A.getMarketingBySurface(l.R.DESKTOP_SHOP_BUTTON)),
+    let e = (0, r.bG)([c.A], () => c.A.getMarketingBySurface(l.R.DESKTOP_SHOP_BUTTON)),
         t = !(0, o.ueM)(),
         [n, _] = (0, d.RF)(t ? s.M.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, e?.version ?? 0, void 0, !0),
         m = (0, u.bv)(e),
         g = null != n ? ((e, t) => {
-            if (t?.type === r.G.COACHMARK) {
+            if (t?.type === a.G.COACHMARK) {
                 let e = t.refTargetBackground;
                 return {
                     type: A.FF.COACHMARK,
@@ -36,7 +36,7 @@ let _ = () => {
                     }
                 }
             }
-            return t?.type === r.G.TAB_TOOLTIP ? {
+            return t?.type === a.G.TAB_TOOLTIP ? {
                 type: A.FF.TAB_TOOLTIP,
                 title: () => t.title,
                 body: () => t.body,

@@ -35,8 +35,8 @@ var i = n(627968),
     R = n(643612),
     P = n(613760),
     w = n(229527),
-    D = n(870136),
-    M = n(33525),
+    M = n(870136),
+    D = n(33525),
     k = n(484724),
     O = n(71755),
     U = n(21599),
@@ -89,8 +89,8 @@ var i = n(627968),
     eR = n(341645),
     eP = n(986350),
     ew = n(439401),
-    eD = n(466802),
-    eM = n(990560),
+    eM = n(466802),
+    eD = n(990560),
     ek = n(266620),
     eO = n(860227),
     eU = n(564107),
@@ -216,7 +216,7 @@ class e7 extends a.Component {
                 code: a,
                 url: l
             } = t;
-            if (n === v.I.INVITE) return this.shouldRenderInvite(a) ? (0, i.jsx)(eM.A, {
+            if (n === v.I.INVITE) return this.shouldRenderInvite(a) ? (0, i.jsx)(eD.A, {
                 code: a,
                 message: e,
                 getAcceptInviteContext: this.getAcceptInviteContext
@@ -248,7 +248,7 @@ class e7 extends a.Component {
                     customId: n,
                     linkId: s
                 }, a)
-            } else if (n === v.I.GUILD_PRODUCT) return (0, i.jsx)(M.A, {
+            } else if (n === v.I.GUILD_PRODUCT) return (0, i.jsx)(D.A, {
                 code: a
             }, a);
             else if (n === v.I.SERVER_SHOP) return (0, i.jsx)(b.A, {
@@ -283,7 +283,6 @@ class e7 extends a.Component {
             }, a);
             else if (n === v.I.COLLECTIBLES_SHOP) return null;
             else if (n === v.I.EXPERIMENT) return null;
-            else if (n === v.I.GORILLA_DEEP_LINK) return null;
             else throw Error(`Unknown coded link type: ${n}`)
         })
     }
@@ -298,7 +297,7 @@ class e7 extends a.Component {
         } = e, o = ep.default.getCurrentUser();
         return null != o && t.length > 0 ? t.map(e => (0, i.jsx)("div", {
             className: eJ.zv,
-            children: (0, i.jsx)(eD.A, {
+            children: (0, i.jsx)(eM.A, {
                 code: e,
                 author: n,
                 channelId: a,
@@ -759,7 +758,7 @@ function e9(e) {
     } = (0, d.cf)([eh.A], () => ({
         canAddNewReactions: h && eh.A.can(eK.xBc.ADD_REACTIONS, t),
         canManageMessages: eh.A.can(eK.xBc.MANAGE_MESSAGES, t)
-    }), [h, t]), f = (0, w.ix)(t.guild_id), [, C] = (0, D.c)(t.guild_id), E = (0, er.Id)(t), I = (s === n.author.id || x) && n.author.id !== eK.oIV && !1 !== a && !(0, o.Lt)(n.flags, eK.pr7.EPHEMERAL) && E && (0, ey.A)(n) >= 1, v = s === n.author.id && E && !l, b = n.author.id === s, y = n.isFirstMessageInForumPost(t), N = (0, eN.A)({
+    }), [h, t]), f = (0, w.ix)(t.guild_id), [, C] = (0, M.c)(t.guild_id), E = (0, er.Id)(t), I = (s === n.author.id || x) && n.author.id !== eK.oIV && !1 !== a && !(0, o.Lt)(n.flags, eK.pr7.EPHEMERAL) && E && (0, ey.A)(n) >= 1, v = s === n.author.id && E && !l, b = n.author.id === s, y = n.isFirstMessageInForumPost(t), N = (0, eN.A)({
         channel: t,
         canChat: h,
         renderReactions: _,
@@ -768,14 +767,14 @@ function e9(e) {
         communicationDisabled: C,
         isActiveChannelOrUnarchivableThread: E,
         isAutomodQuarantined: f
-    }), j = (0, V.S)((n.editedTimestamp ?? n.timestamp).valueOf()), L = (0, Y.A)(t?.id), R = (0, X.A)(n), P = (0, S.P)(n), M = (0, eT.z)(t), k = (0, eI._f)(n.id, n.channel_id), O = (0, T._R)();
+    }), j = (0, V.S)((n.editedTimestamp ?? n.timestamp).valueOf()), L = (0, Y.A)(t?.id), R = (0, X.A)(n), P = (0, S.P)(n), D = (0, eT.z)(t), k = (0, eI._f)(n.id, n.channel_id), O = (0, T._R)();
     return (0, i.jsx)(e7, {
         canSuppressEmbeds: I,
         canDeleteAttachments: v,
         ...N,
         disableReactionReads: !!y || N.disableReactionReads,
         ...e,
-        hasSpoilerEmbeds: e.hasSpoilerEmbeds && M,
+        hasSpoilerEmbeds: e.hasSpoilerEmbeds && D,
         hasBailedAst: e.hasBailedAst,
         isLurking: p && h,
         isPendingMember: g && h,

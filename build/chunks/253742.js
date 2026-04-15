@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     l = n(64700),
-    r = n(503698),
-    a = n.n(r),
+    a = n(503698),
+    r = n.n(a),
     s = n(311907),
     o = n(990078),
     d = n(397927),
@@ -61,7 +61,7 @@ let y = {
 function L(e) {
     let t = l.useRef(null),
         {
-            parentAnalyticsLocation: r
+            parentAnalyticsLocation: a
         } = (0, m.Ay)(),
         {
             channel: A,
@@ -90,12 +90,12 @@ function L(e) {
                 deaf: n,
                 serverMute: i,
                 mute: l,
-                localMute: r
+                localMute: a
             } = e;
             if (t) return O.serverDeaf;
             if (n) return O.deaf;
             if (i) return O.serverMute;
-            if (r) return O.localMute;
+            if (a) return O.localMute;
             if (l) return O.mute
         }({
             serverDeaf: D,
@@ -157,7 +157,7 @@ function L(e) {
             children: (0, i.jsx)(d.DUT, {
                 innerRef: t,
                 onClick: t => {
-                    e.onClick(t), (0, g.X)(r, g.O.VOICE_USER)
+                    e.onClick(t), (0, g.X)(a, g.O.VOICE_USER)
                 },
                 className: b.H,
                 onContextMenu: F,
@@ -172,7 +172,7 @@ function L(e) {
                             ...W
                         },
                         children: null != k ? (0, i.jsx)(k, {
-                            className: a()(b.tr, {
+                            className: r()(b.tr, {
                                 [b.qE]: V
                             }),
                             color: "currentColor",
@@ -189,22 +189,22 @@ function R(e) {
     let {
         voiceStates: t,
         channel: n,
-        className: r
+        className: a
     } = e, [c, u] = l.useState(!1), _ = (0, s.bG)([C.default], () => C.default.getId()), {
         containerRef: m,
         maxVisibleAvatars: g
     } = function(e) {
         let [t, n] = l.useState(7), i = (0, h.A)(() => {
-            let t = r?.current;
+            let t = a?.current;
             if (null == t) return;
             let i = Math.floor((t.offsetWidth + 4) / 28);
             n(Math.max(1, e > i ? i - 1 : i))
-        }), r = (0, A.w)(i, [e], {
+        }), a = (0, A.w)(i, [e], {
             fireOnMount: !0,
             fireOnDepsChange: !0
         });
         return {
-            containerRef: r,
+            containerRef: a,
             maxVisibleAvatars: t
         }
     }(t.length - 1), [p, E] = function(e, t, n) {
@@ -228,28 +228,28 @@ function R(e) {
         })
     }), N = E && c ? t : p;
     return N.length <= 0 ? null : (0, i.jsx)(d.IpV, {
-        className: a()(b.XG, r),
+        className: r()(b.XG, a),
         fade: !0,
         children: (0, i.jsxs)("div", {
             ref: m,
-            className: a()(b.Xk, !c && b.yZ),
+            className: r()(b.Xk, !c && b.yZ),
             role: "group",
             "aria-label": v.intl.string(v.t["/ZgaVU"]),
             children: [N.map(e => {
                 let {
                     user: t,
                     nick: l,
-                    voiceState: r
+                    voiceState: a
                 } = e;
                 return t.id !== _ ? (0, i.jsx)(L, {
                     channel: n,
                     user: t,
                     nick: l,
-                    mute: r.isVoiceMuted(),
-                    deaf: r.isVoiceDeafened(),
-                    video: r.selfVideo,
-                    serverMute: r.mute,
-                    serverDeaf: r.deaf
+                    mute: a.isVoiceMuted(),
+                    deaf: a.isVoiceDeafened(),
+                    video: a.selfVideo,
+                    serverMute: a.mute,
+                    serverDeaf: a.deaf
                 }, t.id) : null
             }), E ? T : null]
         })

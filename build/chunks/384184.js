@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(731738),
-    a = n(397927),
+    a = n(731738),
+    r = n(397927),
     s = n(831062),
     o = n(378570),
     d = n(138298),
@@ -23,8 +23,8 @@ function p(e) {
         user: n,
         channel: p
     } = e, E = (0, u.r)(), I = l.useCallback(() => {
-        (0, a.showToast)((0, a.createToast)(m.intl.string(m.t.pIQ3h4), a.ToastType.FAILURE)), s.A.increment({
-            name: r.K.SPAM_MESSAGE_REQUEST_ERROR_VIEW
+        (0, r.showToast)((0, r.createToast)(m.intl.string(m.t.pIQ3h4), r.ToastType.FAILURE)), s.A.increment({
+            name: a.K.SPAM_MESSAGE_REQUEST_ERROR_VIEW
         })
     }, []), f = l.useCallback(() => {
         d.A.closeChannelSidebar(c.fe)
@@ -49,7 +49,7 @@ function p(e) {
             active: t
         }), (0, i.jsxs)("div", {
             className: g.o1,
-            children: [(0, i.jsx)(a.Button, {
+            children: [(0, i.jsx)(r.Button, {
                 variant: "secondary",
                 size: "sm",
                 text: m.intl.string(m.t.vicfl6),

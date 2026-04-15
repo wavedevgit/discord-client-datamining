@@ -33,8 +33,8 @@ var i = n(627968),
     R = n(56739),
     P = n(954571),
     w = n(45938),
-    D = n(927578),
-    M = n(615396),
+    M = n(927578),
+    D = n(615396),
     k = n(427262),
     O = n(937266),
     U = n(652215),
@@ -190,7 +190,7 @@ class q extends a.Component {
             libraryApplication: t,
             currentUser: n,
             isSelfGift: a
-        } = this.props, l = !e.isSubscription && null != t || !e.isSelfRedeemable && a || e.isExistingPremiumSubscriptionDisallowed && (0, D.TW)(n), s = e.redeemed || l || e.isClaimed || !n.verified, r = e.redeemed ? G.intl.string(G.t.BTihou) : null != e.giftStyle ? G.intl.string(G.t.TiZFqX) : G.intl.string(G.t.bUvv1f);
+        } = this.props, l = !e.isSubscription && null != t || !e.isSelfRedeemable && a || e.isExistingPremiumSubscriptionDisallowed && (0, M.TW)(n), s = e.redeemed || l || e.isClaimed || !n.verified, r = e.redeemed ? G.intl.string(G.t.BTihou) : null != e.giftStyle ? G.intl.string(G.t.TiZFqX) : G.intl.string(G.t.bUvv1f);
         return (0, i.jsx)("div", {
             className: (0, g.hU)(e) ? F.UQ : void 0,
             children: (0, i.jsx)(c.Button, {
@@ -384,7 +384,7 @@ let W = (0, m.A)((0, _.A)(q)),
                 resolved: S.A.getIsResolved(t),
                 resolveErrorCode: e?.code ?? null
             }
-        }), r = (0, d.bG)([j.default], () => null != a && null != a.userId ? j.default.getUser(a.userId) : null), o = (0, d.bG)([L.A], () => null != a ? L.A.get(a.skuId) : null), c = (0, d.bG)([N.A], () => null != o && a?.entitlementBranches != null ? w.YI(a.entitlementBranches, o, N.A) : null), u = (0, p.h)(o?.applicationId), _ = (0, M.zz)(a?.subscriptionPlanId), m = (0, d.bG)([y.default], () => null != a ? y.default.getId() === a.userId : y.default.getId() === n.id);
+        }), r = (0, d.bG)([j.default], () => null != a && null != a.userId ? j.default.getUser(a.userId) : null), o = (0, d.bG)([L.A], () => null != a ? L.A.get(a.skuId) : null), c = (0, d.bG)([N.A], () => null != o && a?.entitlementBranches != null ? w.YI(a.entitlementBranches, o, N.A) : null), u = (0, p.h)(o?.applicationId), _ = (0, D.zz)(a?.subscriptionPlanId), m = (0, d.bG)([y.default], () => null != a ? y.default.getId() === a.userId : y.default.getId() === n.id);
         return (0, i.jsx)(W, {
             ...e,
             skuApplication: u,

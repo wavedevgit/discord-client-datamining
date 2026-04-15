@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(735438),
-    a = n.n(r),
+    a = n(735438),
+    r = n.n(a),
     s = n(311907),
     o = n(442433),
     d = n(504337),
@@ -66,10 +66,10 @@ let I = s.Ay.connectStores([c.A, h.default, A.A, u.A], () => {
     let e, t, n = c.A.getSyncingWith(),
         i = c.A.getActivity(),
         l = h.default.getCurrentUser(),
-        r = [];
-    return null != n ? (e = h.default.getUser(n.userId), t = n.partyId) : null != i && null != i.party && null != i.party.id && (e = l, t = i.party.id), null != t && (r = a()(Array.from(u.A.getParty(t) ?? [])).map(e => h.default.getUser(e)).filter(_.Vq).orderBy([t => null == e || e.id === t.id, e => A.A.isFriend(e.id)], ["desc", "desc"]).value()), {
+        a = [];
+    return null != n ? (e = h.default.getUser(n.userId), t = n.partyId) : null != i && null != i.party && null != i.party.id && (e = l, t = i.party.id), null != t && (a = r()(Array.from(u.A.getParty(t) ?? [])).map(e => h.default.getUser(e)).filter(_.Vq).orderBy([t => null == e || e.id === t.id, e => A.A.isFriend(e.id)], ["desc", "desc"]).value()), {
         currentUser: l,
         host: e,
-        party: r
+        party: a
     }
 })(E)

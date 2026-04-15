@@ -33,8 +33,8 @@ var i = n(627968),
     R = n(877044),
     P = n(878831),
     w = n(652215),
-    D = n(768349),
-    M = n(985018),
+    M = n(768349),
+    D = n(985018),
     k = n(772234);
 
 function O(e) {
@@ -89,7 +89,7 @@ function O(e) {
         }
     }).filter(C.Vq), [o]);
     if (!(null != n || c.length > 0)) return null;
-    let u = null != n ? (0, y.C)(n) : M.intl.string(M.t["4dGUP0"]);
+    let u = null != n ? (0, y.C)(n) : D.intl.string(D.t["4dGUP0"]);
     return (0, i.jsxs)("div", {
         className: k.qr,
         children: [(0, i.jsx)("div", {
@@ -150,7 +150,7 @@ function U(e) {
         children: [(0, i.jsx)(d.Y3C, {
             size: "xxs",
             color: "currentColor"
-        }), M.intl.string(M.t.TsWCdW)]
+        }), D.intl.string(D.t.TsWCdW)]
     }) : null, [en]), ea = a.useMemo(() => (0, i.jsxs)(d.Text, {
         variant: "text-xs/normal",
         className: k.dS,
@@ -188,7 +188,7 @@ function U(e) {
             n = !0,
             i = !1;
         ed ? e = {
-            label: M.intl.string(M.t.VJlc0S),
+            label: D.intl.string(D.t.VJlc0S),
             trackingArea: h.kY.JOIN,
             submitting: ep,
             onClick: () => {
@@ -216,7 +216,7 @@ function U(e) {
                 })
             }
         } : eh && K ? (e = {
-            label: M.intl.string(M.t.lw71Nf),
+            label: D.intl.string(D.t.lw71Nf),
             trackingArea: h.kY.CONNECT_ACCOUNT,
             onClick: () => {
                 X({
@@ -224,13 +224,13 @@ function U(e) {
                 })
             }
         }, n = !1) : eu ? (e = {
-            label: M.intl.string(M.t.VJlc0S),
+            label: D.intl.string(D.t.VJlc0S),
             trackingArea: h.kY.SYNC,
             onClick: () => {
                 null != V && _.OH(V, t.author.id)
             }
         }, n = !1) : e_ ? e = {
-            label: M.intl.string(M.t["hC/Zey"]),
+            label: D.intl.string(D.t["hC/Zey"]),
             trackingArea: h.kY.INVITE,
             onClick: () => {
                 null != V && c.A.sendActivityInvite({
@@ -241,16 +241,16 @@ function U(e) {
                 })
             },
             disabled: t.author.id === y,
-            disabledReason: t.author.id === y ? M.intl.string(M.t.IBl8ID) : void 0
+            disabledReason: t.author.id === y ? D.intl.string(D.t.IBl8ID) : void 0
         } : em ? e = {
-            label: M.intl.string(M.t.KC26NR),
+            label: D.intl.string(D.t.KC26NR),
             trackingArea: h.kY.PLAY,
             onClick: () => {},
             disabled: !0
         } : null != U && (e = U, n = !1);
         let a = [];
         return null != e && (a.push(e), Q && n && (a.push({
-            label: M.intl.string(M.t.lw71Nf),
+            label: D.intl.string(D.t.lw71Nf),
             trackingArea: h.kY.CONNECT_ACCOUNT,
             onClick: () => {
                 X({
@@ -285,7 +285,7 @@ function U(e) {
             onClickContent: G,
             trackingConfig: {
                 id: n.id,
-                linkType: D.J.RICH_PRESENCE_INVITE,
+                linkType: M.J.RICH_PRESENCE_INVITE,
                 onView: H,
                 referrerId: t.author.id,
                 guildId: r.guild_id,

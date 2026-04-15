@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(835245),
-    a = n(607399),
+    a = n(835245),
+    r = n(607399),
     s = n(732955),
     o = n(397927),
     d = n(642277),
@@ -18,7 +18,7 @@ var i = n(627968),
 function m(e) {
     let {
         applicationId: t
-    } = e, [m, g] = l.useState(null), [p, E] = l.useState(!1), I = l.useRef(!1), f = !c.isPlatformEmbedded && !a.Fr, C = l.useMemo(() => (0, r.A)(), []);
+    } = e, [m, g] = l.useState(null), [p, E] = l.useState(!1), I = l.useRef(!1), f = !c.isPlatformEmbedded && !r.Fr, C = l.useMemo(() => (0, a.A)(), []);
     if (l.useEffect(() => {
             f && !0 !== I.current ? (Promise.resolve().then(n.bind(n, 129014)).then(e => {
                 let {

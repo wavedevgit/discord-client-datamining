@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(179771),
     l = n(827343),
-    r = n(140175),
-    a = n(430452),
+    a = n(140175),
+    r = n(430452),
     s = n(350535),
     o = n(636401),
     d = n(629471),
@@ -37,14 +37,14 @@ let _ = {
                 args: {
                     input_mode: n,
                     self_mute: i,
-                    self_deaf: r
+                    self_deaf: a
                 }
             } = e, o = h(t);
             null != n && l.A.setMode(n.type, {
                 shortcut: (0, s.OH)(n.shortcut)
-            }, o), null != i && i !== a.Ay.isSelfMute(o) && l.A.toggleSelfMute({
+            }, o), null != i && i !== r.Ay.isSelfMute(o) && l.A.toggleSelfMute({
                 context: o
-            }), null != r && r !== a.Ay.isSelfDeaf(o) && l.A.toggleSelfDeaf({
+            }), null != a && a !== r.Ay.isSelfDeaf(o) && l.A.toggleSelfDeaf({
                 context: o
             })
         }
@@ -62,10 +62,10 @@ let _ = {
                 args: {
                     user_id: n,
                     mute: i,
-                    volume: r
+                    volume: a
                 }
             } = e, s = h(t);
-            null != i && i !== a.Ay.isLocalMute(n, s) && l.A.toggleLocalMute(n, s), null != r && l.A.setLocalVolume(n, r, s)
+            null != i && i !== r.Ay.isLocalMute(n, s) && l.A.toggleLocalMute(n, s), null != a && l.A.setLocalVolume(n, a, s)
         }
     },
     [u.e$_.PUSH_TO_TALK]: {
@@ -81,7 +81,7 @@ let _ = {
                     active: t
                 }
             } = e;
-            a.Ay.getMode(A.x.DEFAULT) === u.TBI.PUSH_TO_TALK && (0, r.N)(t)
+            r.Ay.getMode(A.x.DEFAULT) === u.TBI.PUSH_TO_TALK && (0, a.N)(t)
         }
     }
 }

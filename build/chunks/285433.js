@@ -36,10 +36,10 @@ let v = e => {
         contentPosition: N,
         toggleExpanded: j,
         sourceQuestContent: L
-    } = e, [R, P] = a.useState(null), [w, D] = a.useState(null), M = (0, _.A)(e => {
+    } = e, [R, P] = a.useState(null), [w, M] = a.useState(null), D = (0, _.A)(e => {
         let t = e.target;
-        P(t.offsetWidth), D(t.scrollWidth)
-    }), k = (0, u.w)(M), O = l === m.uF.QUESTS_EMBED, U = n.userStatus?.completedAt != null, B = (0, h.S5)(n.config.expiresAt), G = (0, h.S5)(n.config.rewardsConfig.rewardsExpireAt), F = a.useMemo(() => null != n.config.cosponsorMetadata, [n]), H = (0, i.jsx)(A.Ay, {
+        P(t.offsetWidth), M(t.scrollWidth)
+    }), k = (0, u.w)(D), O = l === m.uF.QUESTS_EMBED, U = n.userStatus?.completedAt != null, B = (0, h.S5)(n.config.expiresAt), G = (0, h.S5)(n.config.rewardsConfig.rewardsExpireAt), F = a.useMemo(() => null != n.config.cosponsorMetadata, [n]), H = (0, i.jsx)(A.Ay, {
         className: I.Iu,
         logotypeClassName: F ? I.qN : void 0,
         gameTileSize: A.LU.MEDIUM,

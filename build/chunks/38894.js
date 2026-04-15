@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(311907),
-    a = n(533129),
+    a = n(311907),
+    r = n(533129),
     s = n(403362),
     o = n(670412),
     d = n(351022),
@@ -18,10 +18,10 @@ function _(e) {
     let {
         onScroll: t,
         onGuildCardSeen: n,
-        onGuildCardClick: a
-    } = e, s = (0, r.bG)([d.A], () => d.A.getGuildIds({
+        onGuildCardClick: r
+    } = e, s = (0, a.bG)([d.A], () => d.A.getGuildIds({
         categoryId: h.Iq
-    }) ?? h.VX), c = (0, r.bG)([d.A], () => d.A.getIsFetching({
+    }) ?? h.VX), c = (0, a.bG)([d.A], () => d.A.getIsFetching({
         categoryId: h.Iq
     }) ?? !0);
     return l.useEffect(() => {
@@ -32,7 +32,7 @@ function _(e) {
         loading: c,
         onScroll: t,
         onGuildCardSeen: n,
-        onGuildCardClick: a
+        onGuildCardClick: r
     })
 }
 
@@ -40,11 +40,11 @@ function m(e) {
     let {
         tab: t,
         onScroll: n,
-        onGuildCardSeen: a,
+        onGuildCardSeen: r,
         onGuildCardClick: s
-    } = e, A = (0, c.Ub)(t), _ = (0, r.bG)([d.A], () => d.A.getGuildIds({
+    } = e, A = (0, c.Ub)(t), _ = (0, a.bG)([d.A], () => d.A.getGuildIds({
         categoryId: A
-    }) ?? h.VX), m = (0, r.bG)([d.A], () => d.A.getIsFetching({
+    }) ?? h.VX), m = (0, a.bG)([d.A], () => d.A.getIsFetching({
         categoryId: A
     }) ?? !0);
     return l.useEffect(() => {
@@ -56,7 +56,7 @@ function m(e) {
         guildIds: _,
         loading: m,
         onScroll: n,
-        onGuildCardSeen: a,
+        onGuildCardSeen: r,
         onGuildCardClick: s
     })
 }
@@ -65,12 +65,12 @@ function g(e) {
     let {
         selectedTab: t,
         onScroll: n,
-        onGuildCardSeen: r,
+        onGuildCardSeen: a,
         onGuildCardClick: o
     } = e;
     switch (l.useEffect(() => {
             let e = (0, c.Ub)(t);
-            (0, a.np)({
+            (0, r.np)({
                 selectedCategoryId: e
             })
         }, [t]), t) {
@@ -79,7 +79,7 @@ function g(e) {
                 tab: t,
                 onScroll: n,
                 onGuildCardClick: o,
-                onGuildCardSeen: r
+                onGuildCardSeen: a
             });
         case h.o.GAMING:
         case h.o.MUSIC:
@@ -90,7 +90,7 @@ function g(e) {
                 tab: t,
                 onScroll: n,
                 onGuildCardClick: o,
-                onGuildCardSeen: r
+                onGuildCardSeen: a
             }, t);
         case h.o.HUBS:
             return (0, i.jsx)(A.A, {

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     l = n(64700),
-    r = n(503698),
-    a = n.n(r),
+    a = n(503698),
+    r = n.n(a),
     s = n(735438),
     o = n.n(s),
     d = n(311907),
@@ -127,12 +127,12 @@ class y extends l.PureComponent {
             hide: i,
             problems: l
         } = this.state, {
-            connected: r,
-            soundpack: a
-        } = this.props, s = r && n && !i && !l;
-        e.soundpack !== a && (this._connectedSound = this.createSound()), e.connected !== r || s ? (r && (0, E.D)(), r && null != this.videoRef && c.w.get(x.wqg) && this._connectedSound.play(), this.setState({
+            connected: a,
+            soundpack: r
+        } = this.props, s = a && n && !i && !l;
+        e.soundpack !== r && (this._connectedSound = this.createSound()), e.connected !== a || s ? (a && (0, E.D)(), a && null != this.videoRef && c.w.get(x.wqg) && this._connectedSound.play(), this.setState({
             problems: !1,
-            hide: r
+            hide: a
         })) : t.hide !== i ? (i ? this.clearProblemsTimeout() : this.setProblemsTimeout(), this.setState({
             shouldRender: !0
         }), setTimeout(() => this.setState({
@@ -168,8 +168,8 @@ class y extends l.PureComponent {
         if (!this.state.shouldRender) return null;
         {
             let l = this._loadingText,
-                r = null;
-            return null != this._eventLoadingText && (l = this._eventLoadingText), null != t && (l = t.name, r = t.incident_updates[0].body), (0, i.jsxs)("div", {
+                a = null;
+            return null != this._eventLoadingText && (l = this._eventLoadingText), null != t && (l = t.name, a = t.incident_updates[0].body), (0, i.jsxs)("div", {
                 className: b.kL,
                 "data-fade": n,
                 style: {
@@ -183,7 +183,7 @@ class y extends l.PureComponent {
                         loop: !e,
                         setRef: this.setVideoRef,
                         onReady: this.handleReady,
-                        className: a()(b.bE, this.state.ready ? b.Gc : "")
+                        className: r()(b.bE, this.state.ready ? b.Gc : "")
                     }), (0, i.jsxs)("div", {
                         className: b.Qq,
                         children: [null != t ? null : (0, i.jsx)("div", {
@@ -194,11 +194,11 @@ class y extends l.PureComponent {
                             children: l
                         }), (0, i.jsx)("div", {
                             className: b.rf,
-                            children: r
+                            children: a
                         })]
                     })]
                 }), (0, i.jsxs)("div", {
-                    className: a()(b.Bk, {
+                    className: r()(b.Bk, {
                         [b.ly]: this.state.problems
                     }),
                     children: [(0, i.jsx)("div", {
@@ -239,12 +239,12 @@ let O = d.Ay.connectStores([_.A, f.A, p.A, h.A], () => ({
         isTryingToConnect: t,
         connected: n,
         incident: l,
-        soundpack: r,
-        reducedMotion: a
+        soundpack: a,
+        reducedMotion: r
     } = e;
     return t ? (0, i.jsx)(y, {
-        reducedMotion: a,
-        soundpack: r,
+        reducedMotion: r,
+        soundpack: a,
         connected: n,
         incident: l
     }) : null

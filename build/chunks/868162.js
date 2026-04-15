@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(735438),
     l = n.n(i),
-    r = n(311907),
-    a = n(73153),
+    a = n(311907),
+    r = n(73153),
     s = n(827343),
     o = n(617617),
     d = n(430452),
@@ -48,7 +48,7 @@ function N(e, t, n) {
         type: u.E.INPUT_AND_OUTPUT
     } : e
 }
-class S extends r.Ay.DeviceSettingsStore {
+class S extends a.Ay.DeviceSettingsStore {
     static displayName = "ConnectedDeviceStore";
     static persistKey = "ConnectedDeviceStore";
     static migrations = [e => null == e.ignoredDevices ? {
@@ -80,7 +80,7 @@ class S extends r.Ay.DeviceSettingsStore {
         return f
     }
 }
-let x = new S(a.h, {
+let x = new S(r.h, {
     MEDIA_ENGINE_DEVICES: function(e) {
         let {
             inputDevices: t,
@@ -92,27 +92,27 @@ let x = new S(a.h, {
                 t !== I.id && (I.justChanged = !0), I.id = t
             }
         });
-        let r = {};
+        let a = {};
         if (f.justChanged = !1, n.forEach(e => {
-                if (r[T(e)] = e.id, e.id === A.dx) {
+                if (a[T(e)] = e.id, e.id === A.dx) {
                     let t = e.originalId ?? e.originalName;
                     t !== f.id && (f.justChanged = !0), f.id = t
                 }
             }), !m) {
-            g = i, p = r, m = !0;
+            g = i, p = a, m = !0;
             return
         }
-        let a = Object.keys(g),
+        let r = Object.keys(g),
             s = Object.keys(i),
             o = Object.keys(p),
-            d = Object.keys(r),
-            c = l().difference(a, s),
+            d = Object.keys(a),
+            c = l().difference(r, s),
             h = l().difference(o, d);
-        return c.length > 0 || h.length > 0 ? E = {} : (l().difference(s, a).forEach(e => {
+        return c.length > 0 || h.length > 0 ? E = {} : (l().difference(s, r).forEach(e => {
             E[e] = N(E[e], e, u.E.INPUT)
         }), l().difference(d, o).forEach(e => {
             E[e] = N(E[e], e, u.E.OUTPUT)
-        })), !(l().isEqual(a, s) && l().isEqual(o, d)) && (g = i, p = r, !0)
+        })), !(l().isEqual(r, s) && l().isEqual(o, d)) && (g = i, p = a, !0)
     },
     CONNECTED_DEVICE_SWITCH: function(e) {
         let {
@@ -122,13 +122,13 @@ let x = new S(a.h, {
         } = e;
         if (n === u.f.INPUT || n === u.f.INPUT_AND_OUTPUT) {
             let e = g[t];
-            null != e && a.h.wait(() => s.A.setInputDevice(e, {
+            null != e && r.h.wait(() => s.A.setInputDevice(e, {
                 location: i
             }))
         }
         if (n === u.f.OUTPUT || n === u.f.INPUT_AND_OUTPUT) {
             let e = p[t];
-            a.h.wait(() => s.A.setOutputDevice(e, {
+            r.h.wait(() => s.A.setOutputDevice(e, {
                 location: i
             }))
         }

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(397244),
-    r = n(714114),
-    a = n(729551),
+    a = n(714114),
+    r = n(729551),
     s = n(427262),
     o = n(985018),
     d = n(170995);
@@ -20,7 +20,7 @@ let c = function(e) {
         userIgnored: h
     } = e, {
         voiceChannel: _
-    } = (0, r.A)({
+    } = (0, a.A)({
         userId: A?.id
     });
     return h ? (0, i.jsx)("div", {
@@ -31,7 +31,7 @@ let c = function(e) {
         status: u,
         applicationStream: c,
         voiceChannel: _
-    }) ? (0, i.jsx)(a.A, {
+    }) ? (0, i.jsx)(r.A, {
         textClassName: d.q,
         activities: n,
         applicationStream: c,

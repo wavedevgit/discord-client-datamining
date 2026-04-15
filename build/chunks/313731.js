@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(735438),
     l = n.n(i),
-    r = n(636401),
-    a = n(652215);
+    a = n(636401),
+    r = n(652215);
 class s {
     transport;
     version;
@@ -27,8 +27,8 @@ class s {
         this.transport = e, this.version = t, this.encoding = n, this.checkRpcVersion(t)
     }
     checkRpcVersion(e) {
-        if (null == e || e > a.dL4 || e < 1) throw new r.A({
-            closeCode: a.YI$.INVALID_VERSION
+        if (null == e || e > r.dL4 || e < 1) throw new a.A({
+            closeCode: r.YI$.INVALID_VERSION
         }, `Invalid Version: ${e}`)
     }
 }

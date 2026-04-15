@@ -28,9 +28,9 @@ var i = n(627968),
     b = n(195007),
     y = n(806931),
     v = n(985018),
-    R = n(435745);
+    j = n(435745);
 
-function j(e) {
+function R(e) {
     let {
         channelId: t,
         guildId: n
@@ -39,7 +39,7 @@ function j(e) {
         return a()(N.A.getSpeakers()).map(e => T.A.getParticipant(t, e)).filter(e => null != e && e.type === y.lp.USER && e.speaking && !(0, p.Ay)(e)).sortBy(t => -N.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
     });
     return 0 === l.length ? null : (0, i.jsx)("div", {
-        className: R.$U,
+        className: j.$U,
         children: l.map(e => (0, i.jsx)(o.m, {
             position: "bottom",
             text: v.intl.formatToPlainString(v.t.JjdizN, {
@@ -78,23 +78,23 @@ function O(e) {
     }, "stream-participants")) : v?.type === y.lp.ACTIVITY && null != s && M.push((0, i.jsx)(S.A, {
         channel: t,
         focusedParticipant: v
-    }, "activity-participants"))), N && M.push((0, i.jsx)(j, {
+    }, "activity-participants"))), N && M.push((0, i.jsx)(R, {
         channelId: C,
         guildId: t.guild_id
     }, "current-speaker")), M.push((0, i.jsx)(A.A, {
-        className: R.x6,
+        className: j.x6,
         channelId: C
     }, "clips-enabled-indicator")), v?.type === y.lp.STREAM && (M.push((0, i.jsx)(g.A, {
-        className: R.x6,
+        className: j.x6,
         participant: v
     }, "warning")), M.push((0, i.jsx)(_.A, {
         size: h.Ay.Sizes.LARGE,
-        className: R.x6,
+        className: j.x6,
         participant: v,
         showQuality: !0,
         premiumIndicator: !1
     }, "live-indicator"))), v?.type === y.lp.USER && M.push((0, i.jsx)(f.A, {
-        className: R.x6,
+        className: j.x6,
         userId: v.id
     }, "video-warning")), N && M.push((0, i.jsx)(d.YNO, {
         targetElementRef: o,
@@ -114,12 +114,12 @@ function O(e) {
                 isActive: n,
                 count: O,
                 key: "call-members",
-                className: R.x6
+                className: j.x6
             })
         }
     }, "call-members-popout")), L && M.push((0, i.jsx)(x.V, {
         channelId: t.id,
-        className: R.x6,
+        className: j.x6,
         disabled: n
     }, "chat-spacer")), (0, i.jsx)(u.f5, {
         value: p,

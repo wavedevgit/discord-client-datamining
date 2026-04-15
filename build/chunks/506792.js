@@ -33,7 +33,7 @@ let E = (0, d.a)(function(e) {
     } = e, b = (0, r.bG)([u.A, h.Ay], () => {
         let e = h.Ay.getDirectoryChannelIds(t.id);
         return 0 === e.length ? null : u.A.getChannel(e[0])
-    }), y = (0, r.bG)([u.A], () => u.A.getChannel(b?.parent_id)), v = s === b?.id, R = (0, c.Ay)(b), j = (0, r.bG)([A.A], () => null != y ? A.A.can(p.xBc.MANAGE_CHANNELS, y) : null != t && A.A.can(p.xBc.MANAGE_CHANNELS, t)), O = l.useCallback(e => {
+    }), y = (0, r.bG)([u.A], () => u.A.getChannel(b?.parent_id)), v = s === b?.id, j = (0, c.Ay)(b), R = (0, r.bG)([A.A], () => null != y ? A.A.can(p.xBc.MANAGE_CHANNELS, y) : null != t && A.A.can(p.xBc.MANAGE_CHANNELS, t)), O = l.useCallback(e => {
         null != b && (0, o.L3)(e, async () => {
             let {
                 default: e
@@ -52,7 +52,7 @@ let E = (0, d.a)(function(e) {
                 [f.r9]: M,
                 [f.wH]: v
             }),
-            "data-dnd-name": R,
+            "data-dnd-name": j,
             children: (0, i.jsxs)(m.Ay, {
                 className: f.Ki,
                 channel: b,
@@ -71,5 +71,5 @@ let E = (0, d.a)(function(e) {
                 })]
             })
         });
-    return j && (D = T(N(D))), D
+    return R && (D = T(N(D))), D
 })

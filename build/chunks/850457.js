@@ -151,7 +151,7 @@ function v(e) {
     })
 }
 
-function R(e) {
+function j(e) {
     let {
         event: t,
         guildId: n,
@@ -168,7 +168,7 @@ function R(e) {
     }) : null
 }
 
-function j(e) {
+function R(e) {
     let {
         channel: t
     } = e, n = (0, c.H)(t), l = (0, d.Ay)(t);
@@ -216,7 +216,7 @@ function O(e) {
         className: b.kL,
         onMouseEnter: a,
         onMouseLeave: o,
-        children: ["voice_channel" === n ? (0, i.jsx)(j, {
+        children: ["voice_channel" === n ? (0, i.jsx)(R, {
             channel: t
         }) : null, (0, i.jsx)(r.HOs, {
             children: (0, i.jsxs)("div", {
@@ -230,7 +230,7 @@ function O(e) {
                     })
                 }), (0, i.jsx)("ol", {
                     className: b.Gz,
-                    children: d.map(e => (0, i.jsx)(R, {
+                    children: d.map(e => (0, i.jsx)(j, {
                         event: e,
                         guildId: t.guild_id,
                         channelId: t.id

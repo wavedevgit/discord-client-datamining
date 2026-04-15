@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(429604),
     y = n(9905),
     v = n(717607),
-    R = n(457404),
-    j = n(652215),
+    j = n(457404),
+    R = n(652215),
     O = n(985018),
     L = n(174720),
     M = n(213398),
@@ -131,7 +131,7 @@ let w = l.memo(function(e) {
                         sourceAnalyticsLocations: o
                     }) : await (0, u.A)(i)
                 }
-                f.default.track(j.HAw.NOTIFICATION_CENTER_ACTION, {
+                f.default.track(R.HAw.NOTIFICATION_CENTER_ACTION, {
                     action_type: C.e1.CLICKED,
                     notification_center_id: t.id,
                     item_type: t.type,
@@ -194,7 +194,7 @@ let w = l.memo(function(e) {
                         children: (0, N.jb)(E.default.extractTimestamp(t.id))
                     }), m]
                 })]
-            }), p ? null : (0, i.jsx)(R.e, {
+            }), p ? null : (0, i.jsx)(j.e, {
                 item: t
             })]
         })

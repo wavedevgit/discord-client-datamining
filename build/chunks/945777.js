@@ -1,6 +1,6 @@
 /** chunk id: 945777 params = (module,exports,require) **/
 n.d(t, {
-    A: () => R,
+    A: () => j,
     S: () => v
 });
 var i = n(627968),
@@ -97,7 +97,7 @@ let b = l.memo(function(e) {
     v = () => (0, i.jsx)("div", {
         className: S.j8
     }),
-    R = l.memo(function(e) {
+    j = l.memo(function(e) {
         let {
             participant: t,
             channel: s
@@ -106,7 +106,7 @@ let b = l.memo(function(e) {
             blocked: u
         } = t, C = s.getGuildId(), N = x.default.getId(), {
             newestAnalyticsLocation: b
-        } = (0, m.Ay)(_.A.AUDIENCE_TILE), v = (0, f.Us)(), R = (0, c.bG)([I.Ay], () => null != C && I.Ay.getMember(C, r.id)?.premiumSince != null, [C, r.id]), j = l.useRef(null);
+        } = (0, m.Ay)(_.A.AUDIENCE_TILE), v = (0, f.Us)(), j = (0, c.bG)([I.Ay], () => null != C && I.Ay.getMember(C, r.id)?.premiumSince != null, [C, r.id]), R = l.useRef(null);
         o()(null != C, "Channel cannot be guildless");
         let O = l.useCallback(e => {
             (0, p.x)({
@@ -139,16 +139,16 @@ let b = l.memo(function(e) {
             })
         }, [r, N, v, C, s, b]);
         return (0, i.jsx)(E.A, {
-            targetElementRef: j,
+            targetElementRef: R,
             user: r,
             guildId: s.guild_id,
             channelId: s.id,
             clickTrap: !0,
             children: e => (0, i.jsx)(h.DUT, {
-                innerRef: j,
+                innerRef: R,
                 className: a()(S.iA, {
-                    [S.wP]: R || u,
-                    [S.fP]: R && u
+                    [S.wP]: j || u,
+                    [S.fP]: j && u
                 }),
                 onContextMenu: O,
                 ...e,
@@ -156,7 +156,7 @@ let b = l.memo(function(e) {
                     participant: t,
                     guildId: C,
                     channel: s,
-                    isPremium: R
+                    isPremium: j
                 })
             })
         })

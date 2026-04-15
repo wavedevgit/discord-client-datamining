@@ -2,8 +2,8 @@
 n(321073);
 var i = n(311907),
     l = n(73153),
-    r = n(253932),
-    a = n(461213),
+    a = n(253932),
+    r = n(461213),
     s = n(927813),
     o = n(652215);
 let d = [],
@@ -16,7 +16,7 @@ class A extends i.Ay.PersistedStore {
     static displayName = "HabitualDNDStore";
     static persistKey = "habitualDND";
     initialize(e) {
-        this.waitFor(a.A), null != e && Array.isArray(e.sessionStartsWithDND) && (d = e.sessionStartsWithDND)
+        this.waitFor(r.A), null != e && Array.isArray(e.sessionStartsWithDND) && (d = e.sessionStartsWithDND)
     }
     showNagBar() {
         return c
@@ -28,13 +28,13 @@ class A extends i.Ay.PersistedStore {
     }
     getTemp() {
         return {
-            x: r.CY.getSetting()
+            x: a.CY.getSetting()
         }
     }
 }
 new A(l.h, {
     POST_CONNECTION_OPEN: function() {
-        a.A.getStatus() === o.clD.DND && "0" === r.CY.getSetting() ? (d.push(Date.now()), d = d.filter(e => e > Date.now() - 5 * s.A.Millis.DAY), u() && setTimeout(() => {
+        r.A.getStatus() === o.clD.DND && "0" === a.CY.getSetting() ? (d.push(Date.now()), d = d.filter(e => e > Date.now() - 5 * s.A.Millis.DAY), u() && setTimeout(() => {
             l.h.dispatch({
                 type: "HABITUAL_DND_CLEAR"
             })

@@ -31,8 +31,7 @@ function d(e) {
             return null == d ? null : i === s.M.WISHLIST_USER_PROFILE_ACCOUNT_POPOUT_UPSELL ? (0, a.jsx)(o.A, {
                 profileUserId: t?.userId,
                 handleOpenUserProfileModal: n,
-                markAsDismissed: l,
-                applicationIds: c
+                markAsDismissed: l
             }) : null
         }
     })

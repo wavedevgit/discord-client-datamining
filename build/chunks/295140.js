@@ -5,27 +5,27 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(367622),
-    r = n(397927),
-    a = n(990965);
+    a = n(397927),
+    r = n(990965);
 
 function s(e) {
     let {
         orbsCount: t
     } = e;
     return (0, i.jsxs)("div", {
-        className: a.kL,
+        className: r.kL,
         children: [(0, i.jsx)("div", {
-            className: a.dy,
+            className: r.dy,
             children: (0, i.jsx)(l.GhN, {
                 alt: "",
                 "aria-hidden": !0,
                 width: 36,
                 height: 36
             })
-        }), (0, i.jsx)(r.Text, {
+        }), (0, i.jsx)(a.Text, {
             variant: "display-lg",
             color: "text-strong",
-            className: a.Uq,
+            className: r.Uq,
             children: t
         })]
     })

@@ -30,8 +30,8 @@ var _ = n(952790),
     b = n(394953),
     y = n(628325),
     v = n(524628),
-    R = n(81435),
-    j = n(313452),
+    j = n(81435),
+    R = n(313452),
     O = n(849077),
     L = n(652215),
     M = n(985018),
@@ -68,7 +68,7 @@ function P(e) {
         guildId: e.guildId,
         ReadStateStore_: E.Ay,
         GuildStore_: g.A
-    }) || (0, b.zo)(e, S.A.selectedItemInfo))), R = l.useCallback(e => {
+    }) || (0, b.zo)(e, S.A.selectedItemInfo))), j = l.useCallback(e => {
         s !== O.Io.BOOKMARKS && C.A.loadMoreInbox({
             viewId: n,
             loadingTrigger: e
@@ -81,8 +81,8 @@ function P(e) {
         canLoadMore: S.A.canLoadMore({})
     }));
     l.useEffect(() => {
-            P && !M && R(O.VA.ON_OPEN)
-        }, [P, M, R]),
+            P && !M && j(O.VA.ON_OPEN)
+        }, [P, M, j]),
         function(e) {
             let {
                 unreadChannelIds: t
@@ -190,7 +190,7 @@ function P(e) {
                 hideBanner: !M || s !== O.Io.ALL
             }), z && (0, i.jsx)(c.hKd, {
                 size: 8
-            }), (0, i.jsx)(j.A, {
+            }), (0, i.jsx)(R.A, {
                 className: D.cl,
                 renderMessageGroup: V,
                 messages: s === O.Io.BOOKMARKS ? F : W,
@@ -198,7 +198,7 @@ function P(e) {
                 listName: "notifications-inbox",
                 renderLoadingState: B,
                 ignoreGrouping: s === O.Io.BOOKMARKS,
-                loadMore: R
+                loadMore: j
             })]
         })
     })
@@ -226,7 +226,7 @@ function B() {
 }
 
 function V(e, t) {
-    return (0, i.jsx)(R.A, {
+    return (0, i.jsx)(j.A, {
         message: e[0],
         groupedMessages: e.slice(1),
         isUnread: t

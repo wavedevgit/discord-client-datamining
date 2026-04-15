@@ -4,8 +4,8 @@ i.d(t, {
 });
 var n = i(627968);
 i(64700);
-var s = i(435546),
-    l = i(466853),
+var l = i(435546),
+    s = i(466853),
     a = i(742710);
 
 function r(e) {
@@ -13,23 +13,23 @@ function r(e) {
         user: t,
         widget: i,
         guildId: r,
-        channelId: o,
-        disableInteraction: d,
+        channelId: d,
+        disableInteraction: o,
         ...c
     } = e, u = i.games[0];
-    return (0, n.jsx)(l.A, {
+    return (0, n.jsx)(s.A, {
         userId: t.id,
         widget: i,
-        disableInteraction: d,
+        disableInteraction: o,
         ...c,
         children: null != u ? (0, n.jsx)(a.A, {
             user: t,
             widgetType: i.type,
             game: u,
             guildId: r,
-            channelId: o,
-            disableInteraction: d
-        }) : (0, n.jsx)(s.A, {
+            channelId: d,
+            disableInteraction: o
+        }) : (0, n.jsx)(l.A, {
             widget: i
         })
     })

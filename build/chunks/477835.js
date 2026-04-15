@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(503698),
-    a = n.n(r),
+    a = n(503698),
+    r = n.n(a),
     s = n(417597),
     o = n(554146),
     d = n(621956),
@@ -32,7 +32,7 @@ var i = n(627968),
 function O(e) {
     let {
         channel: t,
-        ...r
+        ...a
     } = e, O = l.useRef(null), {
         mute: L,
         suppress: R
@@ -102,7 +102,7 @@ function O(e) {
                     children: (0, i.jsx)(u.$n, {
                         "data-migration-pending": !0,
                         ...e,
-                        className: a()(y.x6, y.Sq, {
+                        className: r()(y.x6, y.Sq, {
                             [y.W4]: j,
                             [y.r9]: D
                         }),
@@ -113,15 +113,15 @@ function O(e) {
                             null != G && G !== o.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && k(v.i.UNKNOWN), M(!j), Y(), (0, g.X)(B, g.O.SOUNDBOARD)
                         },
                         onMouseEnter: e => {
-                            r.onMouseEnter?.(e), W()
+                            a.onMouseEnter?.(e), W()
                         },
                         onMouseLeave: e => {
-                            r.onMouseLeave?.(e), K()
+                            a.onMouseLeave?.(e), K()
                         },
                         onContextMenu: H,
                         fullWidth: !0,
                         size: u.$n.Sizes.MEDIUM,
-                        ...r,
+                        ...a,
                         children: (0, i.jsx)(F, {
                             className: y.iA,
                             size: "sm",

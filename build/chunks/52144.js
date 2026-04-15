@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(311907),
-    a = n(397927),
+    a = n(311907),
+    r = n(397927),
     s = n(189252),
     o = n(851580),
     d = n(222823),
@@ -19,7 +19,7 @@ function _(e) {
         onOpen: t,
         onClose: n,
         "data-jump-section": _
-    } = e, m = (0, r.bG)([c.default], () => c.default.getCurrentUser()), g = l.useRef(null), p = (0, r.bG)([d.Ay], () => m?.id != null && d.Ay.getMentionCount(m.id, A.P.NOTIFICATION_CENTER) > 0);
+    } = e, m = (0, a.bG)([c.default], () => c.default.getCurrentUser()), g = l.useRef(null), p = (0, a.bG)([d.Ay], () => m?.id != null && d.Ay.getMentionCount(m.id, A.P.NOTIFICATION_CENTER) > 0);
     return (0, i.jsx)(u.C, {
         targetElementRef: g,
         onOpen: t,
@@ -32,7 +32,7 @@ function _(e) {
         children: (e, t, n, l) => (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(s.A, {
                 ...n,
-                icon: a.K$s,
+                icon: r.K$s,
                 tooltip: h.intl.string(h.t.GSmTKJ),
                 onClick: e,
                 showBadge: p || l,

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(877624),
-    r = n(397927),
-    a = n(73153),
+    a = n(397927),
+    r = n(73153),
     s = n(272355),
     o = n(835095),
     d = n(287809),
@@ -22,10 +22,10 @@ var l = n(877624),
 let I = "PremiumServerDriveAnnouncementModal";
 class f extends s.A {
     _initialize() {
-        a.h.subscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), a.h.subscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), a.h.subscribe("ACTIVE_PROMOTIONS_FETCH_SUCCESS", this.handleActivePromotionsFetchSuccess), a.h.subscribe("BILLING_USER_OFFER_FETCH_SUCCESS", this.handleUserOfferFetchSuccess), a.h.subscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate)
+        r.h.subscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), r.h.subscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), r.h.subscribe("ACTIVE_PROMOTIONS_FETCH_SUCCESS", this.handleActivePromotionsFetchSuccess), r.h.subscribe("BILLING_USER_OFFER_FETCH_SUCCESS", this.handleUserOfferFetchSuccess), r.h.subscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate)
     }
     _terminate() {
-        a.h.unsubscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), a.h.unsubscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), a.h.unsubscribe("ACTIVE_PROMOTIONS_FETCH_SUCCESS", this.handleActivePromotionsFetchSuccess), a.h.unsubscribe("BILLING_USER_OFFER_FETCH_SUCCESS", this.handleUserOfferFetchSuccess), a.h.unsubscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate)
+        r.h.unsubscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), r.h.unsubscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), r.h.unsubscribe("ACTIVE_PROMOTIONS_FETCH_SUCCESS", this.handleActivePromotionsFetchSuccess), r.h.unsubscribe("BILLING_USER_OFFER_FETCH_SUCCESS", this.handleUserOfferFetchSuccess), r.h.unsubscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate)
     }
     maybeShowAnnouncementModalFromPromotions = e => {
         for (let t of e)
@@ -56,14 +56,14 @@ class f extends s.A {
         } = e;
         u.P.isDisallowPopupsSet() || t.source_type !== E.GD.REVERSE_TRIAL || (0, h.al)()
     };
-    maybeOpenServerDriveAnnouncementModal = async (e, t, l, a) => {
-        if ((0, r.kBI)(I)) return !1;
+    maybeOpenServerDriveAnnouncementModal = async (e, t, l, r) => {
+        if ((0, a.kBI)(I)) return !1;
         let s = (0, p.H)({
             promotionId: t,
             content: l,
-            isPreview: a
+            isPreview: r
         });
-        if (null != s) return (!1 !== a || s?.contentIdentifier !== "summer_bogo_content" || !!await (0, g.C)()) && ((0, r.mMO)(async () => {
+        if (null != s) return (!1 !== r || s?.contentIdentifier !== "summer_bogo_content" || !!await (0, g.C)()) && ((0, a.mMO)(async () => {
             let {
                 default: l
             } = await Promise.resolve().then(n.bind(n, 979080));

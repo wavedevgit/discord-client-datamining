@@ -1,16 +1,16 @@
 /** chunk id: 352670 params = (module,exports,require) **/
 n.d(t, {
-    Y: () => a
+    Y: () => r
 }), n(323874), n(14289), n(35956);
 var i = n(64700),
     l = n(873263),
-    r = n(458518);
+    a = n(458518);
 
-function a() {
-    let e = (0, r.o)(),
+function r() {
+    let e = (0, a.o)(),
         t = (0, l.W6)(),
         n = i.useRef(null),
-        a = i.useCallback(i => {
+        r = i.useCallback(i => {
             let l = new URLSearchParams(n.current ?? e);
             for (let [e, t] of Object.entries(i)) null == t ? l.delete(e) : l.set(e, t);
             n.current = l, t.replace({
@@ -19,5 +19,5 @@ function a() {
                 n.current = null
             })
         }, [e, t]);
-    return [e, a]
+    return [e, r]
 }

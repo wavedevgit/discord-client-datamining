@@ -9,8 +9,8 @@ var i = n(627968),
     l = n.n(a),
     o = n(615300),
     s = n(456412),
-    d = n(750357);
-let u = {
+    u = n(750357);
+let d = {
         tension: 7,
         friction: 5,
         overshootClamping: !0
@@ -43,7 +43,7 @@ class m extends r.Component {
             width: a
         } = this.props, l = c(i, r.length), s = c(e.currentIndex, r.length);
         (l !== s || r.length !== e.items.length) && this.updateAnimatedIndex(l, s), a !== e.width ? this.animatedAlignmentOffset.setValue(this.getAlignmentOffset(t)) : n && (t !== e.align || l !== s) && o.A.spring(this.animatedAlignmentOffset, {
-            ...u,
+            ...d,
             toValue: this.getAlignmentOffset(t)
         }).start()
     }
@@ -93,7 +93,7 @@ class m extends r.Component {
             edgeItems: r
         } = this.props;
         r > 0 && (0 === e && t === i.length - 1 ? n.setValue(-1) : 0 === t && e === i.length - 1 && i.length > 2 && n.setValue(i.length)), o.A.spring(n, {
-            ...u,
+            ...d,
             toValue: e
         }).start()
     }
@@ -124,9 +124,9 @@ class m extends r.Component {
             className: r
         } = this.props;
         return (0, i.jsx)("div", {
-            className: l()(d.T7, d.R9, r),
+            className: l()(u.T7, u.R9, r),
             children: (0, i.jsx)("div", {
-                className: d.SF,
+                className: u.SF,
                 style: {
                     width: n.width,
                     height: n.height
@@ -145,22 +145,22 @@ class m extends r.Component {
             items: a,
             itemSize: l,
             edgeItems: s,
-            gutter: u
+            gutter: d
         } = this.props, {
             margin: h,
             width: c
         } = l, m = this.getCarouselTranslate(), p = this.getItemStyle(), g = (s > 0 ? [...a.slice(-s), ...a, ...a.slice(0, s)] : a).map((e, t) => (0, i.jsx)("div", {
             style: p,
-            className: d.AS,
+            className: u.AS,
             children: r(e, t - s, this.interpolateValueForItem(t - s))
         }, t));
         return (0, i.jsx)(o.A.div, {
-            className: d.Dk,
+            className: u.Dk,
             style: {
                 opacity: n,
                 left: o.A.add(e.interpolate({
                     inputRange: [0, 1],
-                    outputRange: [-m, -h - c - m - u * (a.length - 1)]
+                    outputRange: [-m, -h - c - m - d * (a.length - 1)]
                 }), t)
             },
             children: g
@@ -175,7 +175,7 @@ class m extends r.Component {
         if (e.length <= 0) throw Error("Carousel has no items");
         return 1 === e.length ? this.renderSingleItem() : (0, i.jsx)("div", {
             className: l()({
-                [d.R9]: n
+                [u.R9]: n
             }, t),
             children: this.renderCarouselItems()
         })

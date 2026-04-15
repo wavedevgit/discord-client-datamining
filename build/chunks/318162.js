@@ -31,18 +31,18 @@ function T(e) {
         onHide: T
     } = e, S = (0, m.Ay)(t.id), b = (0, o.Ay)(), y = (0, a.bG)([u.A], () => u.A.isBlocked(t.id)), {
         analyticsLocations: v
-    } = (0, c.Ay)(y ? d.A.BLOCKED_PROFILE_PANEL : d.A.IGNORED_PROFILE_PANEL), R = (0, A.pb)({
+    } = (0, c.Ay)(y ? d.A.BLOCKED_PROFILE_PANEL : d.A.IGNORED_PROFILE_PANEL), j = (0, A.pb)({
         layout: "SIDEBAR",
         userId: t.id,
         channelId: n.id
-    }), j = l.useRef(null);
+    }), R = l.useRef(null);
     return (0, i.jsx)(c.f5, {
         value: v,
         children: (0, i.jsx)(A.of, {
-            value: R,
+            value: j,
             isLoaded: S?.isLoaded,
             children: (0, i.jsx)(g.A, {
-                ref: j,
+                ref: R,
                 user: t,
                 displayProfile: S,
                 themeType: x.d.SIDEBAR,
@@ -78,7 +78,7 @@ function T(e) {
                                         T(), (0, _.Wn)({
                                             action: y ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                                             analyticsLocations: v,
-                                            ...R
+                                            ...j
                                         })
                                     }
                                 }), (0, i.jsx)(f.A, {
@@ -87,7 +87,7 @@ function T(e) {
                                         T(), (0, _.Wn)({
                                             action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                                             analyticsLocations: v,
-                                            ...R
+                                            ...j
                                         })
                                     }
                                 })]

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(397927),
-    r = n(890687),
-    a = n(150574),
+    a = n(890687),
+    r = n(150574),
     s = n(91973),
     o = n(200784);
 
@@ -16,14 +16,14 @@ function d(e) {
     } = e, {
         claimedQuests: n,
         isFetchingClaimedQuests: d
-    } = (0, r.Iq)();
+    } = (0, a.Iq)();
     return d && 0 === n.length ? (0, i.jsx)(l.y$y, {
         className: o.u
     }) : 0 === n.length ? (0, i.jsx)(s.A, {
-        onClick: () => t(r.NC.ALL)
+        onClick: () => t(a.NC.ALL)
     }) : (0, i.jsx)("div", {
         className: o.U,
-        children: [...n].sort((e, t) => (t.userStatus?.claimedAt ?? "").localeCompare(e.userStatus?.claimedAt ?? "")).map(e => (0, i.jsx)(a.A, {
+        children: [...n].sort((e, t) => (t.userStatus?.claimedAt ?? "").localeCompare(e.userStatus?.claimedAt ?? "")).map(e => (0, i.jsx)(r.A, {
             quest: e
         }, e.id))
     })

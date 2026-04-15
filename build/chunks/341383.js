@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(73153),
     l = n(827343),
-    r = n(684013),
-    a = n(956793),
+    a = n(684013),
+    r = n(956793),
     s = n(401843),
     o = n(55619),
     d = n(87203),
@@ -37,14 +37,14 @@ let D = new Map;
 function j(e, t, n, i) {
     if (!S.A.isConnected()) return;
     let l = i.context ?? P.x.DEFAULT,
-        r = D.get(l);
-    null == r && (r = {
+        a = D.get(l);
+    null == a && (a = {
         held: new Set,
         priorityHeld: new Set
-    }, D.set(l, r)), n || (e ? r.held.add(i.id) : r.held.delete(i.id)), t && (e ? r.priorityHeld.add(i.id) : r.priorityHeld.delete(i.id));
-    let a = r.held.size > 0,
-        s = r.priorityHeld.size > 0;
-    (0, E.N)(a, s)
+    }, D.set(l, a)), n || (e ? a.held.add(i.id) : a.held.delete(i.id)), t && (e ? a.priorityHeld.add(i.id) : a.priorityHeld.delete(i.id));
+    let r = a.held.size > 0,
+        s = a.priorityHeld.size > 0;
+    (0, E.N)(r, s)
 }
 let M = {
     [R.hCu.TOGGLE_PRIORITY_SPEAKER]: {
@@ -143,7 +143,7 @@ let M = {
         onTrigger(e, t) {
             if (!(0, v.DV)(t.shortcut)) return;
             let n = (0, L.A)();
-            null != n && r.A.setInputLocked(!y.default.isLocked(n), n)
+            null != n && a.A.setInputLocked(!y.default.isLocked(n), n)
         },
         keyEvents: {
             keyup: !0,
@@ -154,7 +154,7 @@ let M = {
         onTrigger() {
             let e = b.default.getFocusedPID(),
                 t = null != e;
-            null != e && t && y.default.isPinned(R.uss.TEXT) && y.default.isLocked(e) && b.default.isReady(e) && r.A.activateRegion(R.ajI.TEXT_WIDGET)
+            null != e && t && y.default.isPinned(R.uss.TEXT) && y.default.isLocked(e) && b.default.isReady(e) && a.A.activateRegion(R.ajI.TEXT_WIDGET)
         },
         keyEvents: {
             keyup: !0,
@@ -255,7 +255,7 @@ let M = {
                     channelId: n
                 }
             } = t;
-            null != n && a.default.selectVoiceChannel(n)
+            null != n && r.default.selectVoiceChannel(n)
         },
         keyEvents: {
             keyup: !0,
@@ -266,7 +266,7 @@ let M = {
     },
     [R.hCu.DISCONNECT_FROM_VOICE_CHANNEL]: {
         onTrigger() {
-            a.default.selectVoiceChannel(null)
+            r.default.selectVoiceChannel(null)
         },
         keyEvents: {
             keyup: !0,

@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(977997),
     y = n(954571),
     v = n(329554),
-    R = n(652215),
-    j = n(699976),
+    j = n(652215),
+    R = n(699976),
     O = n(510495),
     L = n(442078);
 
@@ -62,7 +62,7 @@ function M(e) {
         J = Y.length + k.length > 0,
         Q = $ || J;
     return (l.useEffect(() => {
-        Q && y.default.track(R.HAw.OPEN_POPOUT, {
+        Q && y.default.track(j.HAw.OPEN_POPOUT, {
             type: "Voice User Activities",
             channel_id: t.id,
             other_user_id: n.id
@@ -103,7 +103,7 @@ function M(e) {
                     guildId: t.guild_id,
                     channelId: t.id,
                     numWishlistItems: 2,
-                    cardSpec: j.Z.SIZE_110
+                    cardSpec: R.Z.SIZE_110
                 })]
             }, `${e.application_id}-with-gifting-breadcrumb`) : (0, i.jsx)(v.A, {
                 presenceActivity: e,

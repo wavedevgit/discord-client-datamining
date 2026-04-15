@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(311907),
-    a = n(933958),
+    a = n(311907),
+    r = n(933958),
     s = n(969151),
     o = n(91242),
     d = n(643501),
@@ -30,12 +30,12 @@ var i = n(627968),
 function b(e, t, n, i) {
     l.useEffect(() => {
         let l = t(),
-            a = new r.ru(e, () => {
+            r = new a.ru(e, () => {
                 let e = t(),
-                    r = n(l, e);
-                null == r || I.A.isSoundDisabled(r) || (0, u.Ak)(r, i ?? .4), l = e
+                    a = n(l, e);
+                null == a || I.A.isSoundDisabled(a) || (0, u.Ak)(a, i ?? .4), l = e
             });
-        return a.attach("useSound"), () => a.detach()
+        return r.attach("useSound"), () => r.detach()
     })
 }
 
@@ -51,11 +51,11 @@ function y() {
             inVoiceChannel: n,
             selfMute: i,
             selfDeaf: l,
-            audioPermissionReady: r,
-            shouldSkipMuteUnmuteSound: a
+            audioPermissionReady: a,
+            shouldSkipMuteUnmuteSound: r
         } = t;
         if (e.selfDeaf !== l) return l ? "deafen" : "undeafen";
-        if (r && (n || e.audioPermissionReady) && e.selfMute !== i) return a ? void E.Ay.notifyMuteUnmuteSoundWasSkipped() : i ? "mute" : "unmute"
+        if (a && (n || e.audioPermissionReady) && e.selfMute !== i) return r ? void E.Ay.notifyMuteUnmuteSoundWasSkipped() : i ? "mute" : "unmute"
     }), null
 }
 
@@ -69,9 +69,9 @@ function O() {
             inVoiceChannel: i
         } = t, {
             videoEnabled: l,
-            inVoiceChannel: r
+            inVoiceChannel: a
         } = e;
-        if (l !== n && r && i) return n ? "camera_on" : "camera_off"
+        if (l !== n && a && i) return n ? "camera_on" : "camera_off"
     }), null
 }
 
@@ -95,15 +95,15 @@ function L() {
             channelType: n,
             connected: i,
             connectHasStarted: l,
-            awaitingRemote: r,
-            connectedRemote: a
+            awaitingRemote: a,
+            connectedRemote: r
         } = t, s = e.channelType, o = e.connectedRemote, d = e.connected;
-        if (!e.connectHasStarted && l || a && !o) {
+        if (!e.connectHasStarted && l || r && !o) {
             if (null != n && h.Do.has(n)) return;
             return "user_join"
         }
         if (d && !i) {
-            if (r || a || null != s && h.Do.has(s)) return;
+            if (a || r || null != s && h.Do.has(s)) return;
             return "disconnect"
         }
     }), null
@@ -158,21 +158,21 @@ function w() {
         let e, t, n = C.A.getVoiceChannelId(),
             i = m.default.getId(),
             l = [],
-            r = null,
-            a = 0,
+            a = null,
+            r = 0,
             s = _.A.getAllActiveStreams();
         if (null != n) {
             let i = g.A.getChannel(n);
             null != i && (e = i.type, t = S.Ay.countVoiceStatesForChannel(i.id) - !!N.A.isInChannel(i.id), l = _.A.getAllApplicationStreamsForChannel(i.id).map(e => e.ownerId))
         }
         let o = null;
-        return o = 1 === s.length ? s[0] : _.A.getCurrentUserActiveStream(), o?.state === v.XYD.CONNECTING && (o = null), null != o && (r = (0, c._z)(o), a = _.A.getViewerIds(r).filter(e => e !== i).length), {
+        return o = 1 === s.length ? s[0] : _.A.getCurrentUserActiveStream(), o?.state === v.XYD.CONNECTING && (o = null), null != o && (a = (0, c._z)(o), r = _.A.getViewerIds(a).filter(e => e !== i).length), {
             channelType: e,
             voiceChannelId: n,
             voiceChannelUserCount: t,
             streamingUserIds: l,
-            singleActiveStreamKey: r,
-            singleActiveStreamViewerCount: a,
+            singleActiveStreamKey: a,
+            singleActiveStreamViewerCount: r,
             currentUserId: i,
             allActiveStreams: s
         }
@@ -181,8 +181,8 @@ function w() {
             channelType: n,
             voiceChannelId: i,
             voiceChannelUserCount: l,
-            streamingUserIds: r,
-            singleActiveStreamKey: a,
+            streamingUserIds: a,
+            singleActiveStreamKey: r,
             singleActiveStreamViewerCount: s,
             currentUserId: o
         } = t;
@@ -194,10 +194,10 @@ function w() {
                 let i = p.A.getGuild(n);
                 return null != i && i.afkChannelId === t.id
             }(i) || null != n && h.Do.has(n)) return;
-        let d = null != a && e.singleActiveStreamKey === a,
-            c = r.some(t => !e.streamingUserIds.includes(t)),
+        let d = null != r && e.singleActiveStreamKey === r,
+            c = a.some(t => !e.streamingUserIds.includes(t)),
             u = e.allActiveStreams.map(e => e.ownerId),
-            A = e.streamingUserIds.some(e => !r.includes(e) && (e === o || u.includes(e)));
+            A = e.streamingUserIds.some(e => !a.includes(e) && (e === o || u.includes(e)));
         if (c) return "stream_started";
         if (A) return "stream_ended";
         if (e.singleActiveStreamViewerCount <= 25 && d && s > e.singleActiveStreamViewerCount) return "stream_user_joined";
@@ -208,21 +208,21 @@ function w() {
 }
 
 function U() {
-    return b([C.A, a.Ay, o.A, m.default], () => {
+    return b([C.A, r.Ay, o.A, m.default], () => {
         let e = C.A.getVoiceChannelId(),
             t = C.A.getChannelId(),
-            n = a.Ay.getConnectedActivityLocation(),
+            n = r.Ay.getConnectedActivityLocation(),
             i = (0, s.H)(n),
             l = m.default.getId(),
-            r = (0, x.Vq)(t) ? a.Ay.getEmbeddedActivitiesForChannel(t) : a.Am,
-            d = (0, x.Vq)(e) ? a.Ay.getEmbeddedActivitiesForChannel(e) : a.Am,
-            c = (0, x.Vq)(i) ? a.Ay.getEmbeddedActivitiesForChannel(i) : a.Am,
-            u = (0, x.Vq)(n) ? a.Ay.getSelfEmbeddedActivityForLocation(n) : null;
+            a = (0, x.Vq)(t) ? r.Ay.getEmbeddedActivitiesForChannel(t) : r.Am,
+            d = (0, x.Vq)(e) ? r.Ay.getEmbeddedActivitiesForChannel(e) : r.Am,
+            c = (0, x.Vq)(i) ? r.Ay.getEmbeddedActivitiesForChannel(i) : r.Am,
+            u = (0, x.Vq)(n) ? r.Ay.getSelfEmbeddedActivityForLocation(n) : null;
         return {
             connectedActivityLocation: n,
             voiceChannelId: e,
             currentUserId: l,
-            channelActivities: r,
+            channelActivities: a,
             connectedChannelActivities: c,
             userConnectedActivity: u,
             voiceChannelActivities: d,
@@ -232,8 +232,8 @@ function U() {
         let n, {
                 connectedActivityLocation: i,
                 voiceChannelId: l,
-                currentUserId: r,
-                channelActivities: a,
+                currentUserId: a,
+                channelActivities: r,
                 connectedChannelActivities: s,
                 userConnectedActivity: o,
                 voiceChannelActivities: d,
@@ -241,12 +241,12 @@ function U() {
             } = t,
             u = d.some(e => e.applicationId === o?.applicationId && e.launchId === o.launchId);
         if ((0, x.Vq)(l)) {
-            let t = e.voiceChannelActivities.find(e => e.userIds.has(r)),
-                i = d.find(e => e.userIds.has(r));
+            let t = e.voiceChannelActivities.find(e => e.userIds.has(a)),
+                i = d.find(e => e.userIds.has(a));
             e.voiceChannelActivities.length < d.length && (0, x.Vq)(e.voiceChannelId) && (n = "activity_launch"), void 0 === i && (0, x.Vq)(t) && (n = "activity_end"), void 0 === t && (0, x.Vq)(i) && i.userIds.size > 1 && (n = "activity_user_join"), (0, x.Vq)(i) && (0, x.Vq)(t) && (i.userIds.size > t.userIds.size && (n = "activity_user_join"), i.userIds.size < t.userIds.size && (n = "activity_user_left"))
         }
         if (!u) {
-            e.connectedChannelActivities.length < s.length && e.channelActivities.length < a.length && (n = "activity_launch");
+            e.connectedChannelActivities.length < s.length && e.channelActivities.length < r.length && (n = "activity_launch");
             let t = e.userConnectedActivity;
             null == o && (0, x.Vq)(t) && (n = "activity_end"), (0, x.Vq)(o) && (0, x.Vq)(t) && (o.userIds.size > t.userIds.size && (n = "activity_user_join"), o.userIds.size < t.userIds.size && (n = "activity_user_left"))
         }

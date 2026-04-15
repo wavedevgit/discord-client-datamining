@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(397927),
-    a = n(308528),
+    a = n(397927),
+    r = n(308528),
     s = n(58149),
     o = n(231608),
     d = n(954571),
@@ -27,10 +27,10 @@ function A(e) {
         }),
         m = 1 === A.length && 1 === n.length,
         g = n.length - A.length > 0;
-    return (m || t) && !g && 0 !== _.length ? (0, i.jsx)(r.Drp, {
+    return (m || t) && !g && 0 !== _.length ? (0, i.jsx)(a.Drp, {
         id: "message",
         action: function() {
-            a.A.openPrivateChannel({
+            r.A.openPrivateChannel({
                 recipientIds: _
             }).then(t => s.Ay.trackWithMetadata(c.HAw.ACTIVITY_FEED_DM_VISITED, {
                 source: {

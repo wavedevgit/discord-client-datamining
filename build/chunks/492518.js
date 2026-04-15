@@ -1,11 +1,11 @@
 /** chunk id: 492518 params = (module,exports,require) **/
-i.d(t, {
-    k: () => n
+n.d(t, {
+    k: () => l
 });
-var r = i(627968),
-    l = i(397927);
-let n = () => (0, r.jsx)("div", {
-    children: (0, r.jsx)(l.y$y, {
-        type: l.tVU.SPINNING_CIRCLE
+var r = n(627968),
+    i = n(397927);
+let l = () => (0, r.jsx)("div", {
+    children: (0, r.jsx)(i.y$y, {
+        type: i.tVU.SPINNING_CIRCLE
     })
 })

@@ -8,6 +8,6 @@ function l(e) {
     let {
         currentActivities: t,
         isSpotifyActivity: n
-    } = e, l = t[0], r = (0, i.A)(l?.activity, l?.activityUser);
-    return n ? r : null
+    } = e, l = t[0], a = (0, i.A)(l?.activity, l?.activityUser);
+    return n ? a : null
 }

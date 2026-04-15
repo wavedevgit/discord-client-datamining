@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(855446),
     y = n(652215),
     v = n(985018),
-    R = n(690076);
-let j = r.K.APP_LAUNCHER_IN_VOICE_BANNER,
+    j = n(690076);
+let R = r.K.APP_LAUNCHER_IN_VOICE_BANNER,
     O = `vc-activities-${(0,s.A)()}`;
 
 function L(e) {
@@ -43,16 +43,16 @@ function L(e) {
             voiceBannerCollection: x
         } = (t = (0, d.bG)([C.default], () => C.default.onlyShowPreviewAppCollections) ? a.W.PREVIEW : a.W.ACTIVE, l.useEffect(() => {
             (0, g.An)({
-                surface: j,
+                surface: R,
                 activeState: t
             })
         }, [t]), {
             fetchState: (0, d.bG)([f.A], () => f.A.getFetchState({
-                surface: j,
+                surface: R,
                 activeState: t
             })),
             voiceBannerCollection: (0, d.bG)([f.A], () => f.A.getCollections({
-                surface: j,
+                surface: R,
                 activeState: t
             }))[0]
         }),
@@ -76,7 +76,7 @@ function L(e) {
         hash: N.image_hash,
         containerWidth: 584
     })), (0, i.jsxs)(c.DUT, {
-        className: R.V8,
+        className: j.V8,
         innerRef: T,
         onClick: () => {
             h(), (0, m.A)({
@@ -94,9 +94,9 @@ function L(e) {
         children: [(0, i.jsx)("img", {
             alt: N.description,
             src: n,
-            className: R.W_
+            className: j.W_
         }), (0, i.jsx)("div", {
-            className: R.LV
+            className: j.LV
         })]
     }))
 }
@@ -125,7 +125,7 @@ let M = l.forwardRef(function(e, t) {
     let E = (0, x.Us)(),
         {
             analyticsLocations: C,
-            newestAnalyticsLocation: j
+            newestAnalyticsLocation: R
         } = (0, h.Ay)(u.A.ACTIVITIES_MINI_SHELF),
         M = E === y.BRT.POPOUT,
         D = (n = s.getGuildId(), (0, S.A)({
@@ -144,9 +144,9 @@ let M = l.forwardRef(function(e, t) {
                     type: "contextless"
                 },
                 openInPopout: M,
-                analyticsLocation: j
+                analyticsLocation: R
             }), d(), A()
-        }, [s, j, A, d, M]),
+        }, [s, R, A, d, M]),
         G = l.useCallback(e => {
             o(), N.default.track(y.HAw.ACTIVITIES_MINI_SHELF_HOVERED, {
                 channel_id: s.id,
@@ -169,23 +169,23 @@ let M = l.forwardRef(function(e, t) {
                         })
                     })
                 }), (0, i.jsxs)("div", {
-                    className: R.kL,
+                    className: j.kL,
                     onMouseEnter: G,
                     onMouseLeave: d,
                     children: [(0, i.jsxs)("div", {
-                        className: R.gn,
+                        className: j.gn,
                         children: [(0, i.jsxs)("div", {
-                            className: R.gH,
+                            className: j.gH,
                             children: [(0, i.jsx)(c.k9F, {
                                 size: "md",
-                                className: R.ch,
+                                className: j.ch,
                                 color: "var(--interactive-text-active)"
                             }), (0, i.jsx)(c.Text, {
                                 variant: "eyebrow",
                                 children: v.intl.string(v.t.f3Cz25)
                             })]
                         }), (0, i.jsxs)(c.DUT, {
-                            className: R.hc,
+                            className: j.hc,
                             onClick: U,
                             children: [(0, i.jsx)(c.Text, {
                                 variant: "eyebrow",
@@ -195,7 +195,7 @@ let M = l.forwardRef(function(e, t) {
                                 width: 12,
                                 height: 12,
                                 color: "var(--interactive-text-active)",
-                                className: R.O6
+                                className: j.O6
                             })]
                         })]
                     }), (0, i.jsx)(L, {
@@ -205,7 +205,7 @@ let M = l.forwardRef(function(e, t) {
                             A(), r()
                         }
                     }), (0, i.jsx)("div", {
-                        className: R.ht,
+                        className: j.ht,
                         children: D.map(e => (0, i.jsx)(b.C, {
                             context: {
                                 channel: s,
@@ -216,7 +216,7 @@ let M = l.forwardRef(function(e, t) {
                                 r(), A()
                             },
                             aspectRatio: b.C.AspectRatio.THIRTEEN_BY_ELEVEN,
-                            animatedDivClass: R.KU,
+                            animatedDivClass: j.KU,
                             commandOrigin: p.iw.MINI_SHELF
                         }, e.application.id))
                     })]

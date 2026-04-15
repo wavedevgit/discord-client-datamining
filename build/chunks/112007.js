@@ -34,10 +34,10 @@ function N(e) {
             onAcceptInstantInvite: R,
             guild: P,
             invite: w,
-            message: D,
-            currentUserId: M
+            message: M,
+            currentUserId: D
         } = e,
-        k = M === D.author.id,
+        k = D === M.author.id,
         {
             channel: O,
             approximate_member_count: U,
@@ -62,7 +62,7 @@ function N(e) {
             invite_code: w.code,
             invite_guild_id: w.guild?.id,
             invite_channel_id: O?.id,
-            invite_instance_id: (0, x._U)(w.code, D.id),
+            invite_instance_id: (0, x._U)(w.code, M.id),
             invite_channel_type: O?.type,
             embed_type: "guild_invite",
             location_stack: K
@@ -75,11 +75,11 @@ function N(e) {
         H ? (L(), e = "transition") : (R(), e = "accept"), (0, u.he)({
             invite: w,
             action: e,
-            inviter_id: D.author.id,
-            invite_message_id: D.id,
-            invite_instance_id: (0, x._U)(w.code, D.id)
+            inviter_id: M.author.id,
+            invite_message_id: M.id,
+            invite_instance_id: (0, x._U)(w.code, M.id)
         }, K)
-    }, [w, D, K, H, L, R]);
+    }, [w, M, K, H, L, R]);
     if (null == P) {
         if (null == w.guild) return (0, i.jsx)(b.A, {});
         (P = I.DY(w.guild)).premiumTier = w.guild.premium_tier ?? T.TVA.NONE

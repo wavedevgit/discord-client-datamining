@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(900848),
     y = n(550591),
     v = n(65611),
-    R = n(652215),
-    j = n(788868),
+    j = n(652215),
+    R = n(788868),
     O = n(235079),
     L = n(985018),
     M = n(146842);
@@ -53,18 +53,18 @@ function U(e) {
         badge: a,
         link: u,
         showProgressBadge: A
-    } = e, [_, g] = l.useState(!1), [f, E] = l.useState(!1), [x, I] = l.useState(null), [C, N] = l.useState(0), T = (0, s.Vd)("home"), j = (0, h.fy)().activePanel === h.HP.APP_ICON, U = () => {
+    } = e, [_, g] = l.useState(!1), [f, E] = l.useState(!1), [x, I] = l.useState(null), [C, N] = l.useState(0), T = (0, s.Vd)("home"), R = (0, h.fy)().activePanel === h.HP.APP_ICON, U = () => {
         I(null), N(0), clearTimeout(x)
     };
     if (null == n) return null;
     let G = L.intl.string(L.t.YUU0RF);
-    f && (G = r.w.get(R.wqg) ? L.intl.string(L.t["nkq1l+"]) : L.intl.string(L.t.Be8Q5E));
+    f && (G = r.w.get(j.wqg) ? L.intl.string(L.t["nkq1l+"]) : L.intl.string(L.t.Be8Q5E));
     let P = null;
     !t && A && (P = (0, i.jsx)(d.A, {
         className: M.Cp,
         determineOwnVisibility: !1
     }));
-    let k = t || _ || j,
+    let k = t || _ || R,
         w = (0, i.jsx)(o.Qk9, {
             selected: !0,
             lowerBadge: a > 0 ? (0, v.wN)(a) : null,
@@ -78,8 +78,8 @@ function U(e) {
                 onClick: () => {
                     if (!__OVERLAY__ && (null != x && clearTimeout(x), I(setTimeout(U, 500)), N(C + 1), 15 === C)) {
                         U();
-                        let e = !r.w.get(R.wqg);
-                        r.w.set(R.wqg, e), e && r.w.set(O.L, !0), e ? (0, m.Ak)("discodo") : (0, m.Ak)("user_leave"), E(!0), setTimeout(() => {
+                        let e = !r.w.get(j.wqg);
+                        r.w.set(j.wqg, e), e && r.w.set(O.L, !0), e ? (0, m.Ak)("discodo") : (0, m.Ak)("user_leave"), E(!0), setTimeout(() => {
                             E(!1)
                         }, 1e3)
                     }
@@ -93,9 +93,9 @@ function U(e) {
                     pathname: u,
                     state: {
                         analyticsSource: {
-                            page: R.liQ.GUILD_CHANNEL,
-                            section: R.JJy.NAVIGATION,
-                            object: R.ZSU.BUTTON_HOME
+                            page: j.liQ.GUILD_CHANNEL,
+                            section: j.JJy.NAVIGATION,
+                            object: j.ZSU.BUTTON_HOME
                         }
                     }
                 },
@@ -136,7 +136,7 @@ function G() {
             return i > 0 && i < 100
         }),
         n = (0, _.kX)(),
-        l = Object.keys(j.TP),
+        l = Object.keys(R.TP),
         s = (0, u.A)(),
         {
             unviewedTrialCount: r,
@@ -145,16 +145,16 @@ function G() {
             unviewedTrialCount: E.A.getUnacknowledgedOffers(l).length,
             unviewedDiscountCount: E.A.getUnacknowledgedDiscountOffers().length
         })),
-        c = s.fractionalState === j.xc.NONE ? r + o : 0,
+        c = s.fractionalState === R.xc.NONE ? r + o : 0,
         h = (0, a.bG)([f.default], () => f.default.getCurrentUser()),
         m = (0, A.W)(),
         p = n + c + m,
         S = p === c && c > 0 && n + m === 0,
         b = x.A.getHomeLink();
-    return S && (b = R.BVt.APPLICATION_STORE), (0, i.jsx)(U, {
+    return S && (b = j.BVt.APPLICATION_STORE), (0, i.jsx)(U, {
         selected: e,
         user: h,
-        selectedChannelId: g.A.getChannelId(R.ME),
+        selectedChannelId: g.A.getChannelId(j.ME),
         badge: p,
         link: b,
         showProgressBadge: t

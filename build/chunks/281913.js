@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(139033),
     l = n(73153),
-    r = n(272355),
-    a = n(985018);
-class s extends r.A {
+    a = n(272355),
+    r = n(985018);
+class s extends a.A {
     _initialize() {
         l.h.subscribe("POGGERMODE_TEMPORARILY_DISABLED", this.handlePoggermodeTemporarilyDisabled)
     }
@@ -15,8 +15,8 @@ class s extends r.A {
     }
     handlePoggermodeTemporarilyDisabled() {
         (0, i.A)({
-            title: a.intl.string(a.t.wDQgnX),
-            subtitle: a.intl.string(a.t.OJklbS)
+            title: r.intl.string(r.t.wDQgnX),
+            subtitle: r.intl.string(r.t.OJklbS)
         })
     }
 }

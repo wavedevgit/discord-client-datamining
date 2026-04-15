@@ -1,124 +1,124 @@
 /** chunk id: 672564 params = (module,exports,require) **/
 i.d(t, {
-    J: () => w
+    J: () => N
 });
 var n = i(627968),
-    s = i(64700),
-    l = i(503698),
-    a = i.n(l),
+    l = i(64700),
+    s = i(503698),
+    a = i.n(s),
     r = i(575593),
-    o = i(397927),
-    d = i(793574),
+    d = i(397927),
+    o = i(793574),
     c = i(688810),
     u = i(183555),
     g = i(661492),
     m = i(808247),
     h = i(146423),
     x = i(460442),
-    p = i(699976),
-    A = i(652215),
+    A = i(699976),
+    p = i(652215),
     f = i(518477),
     I = i(985018),
     j = i(353787),
     v = i(913110);
-let S = p.Z.SIZE_90;
+let S = A.Z.SIZE_90;
 
-function b(e) {
+function E(e) {
     let {
         sku: t,
         wishlistOwner: i,
-        style: l,
+        style: s,
         skuPreviewStyle: r,
-        setIsHoveringOrFocusing: o,
-        onClick: d,
+        setIsHoveringOrFocusing: d,
+        onClick: o,
         "aria-label": c,
         wishlistId: g,
         children: m
     } = e, {
         trackUserProfileWishlistAction: x
-    } = (0, u.NJ)(), p = s.useCallback(() => {
+    } = (0, u.NJ)(), A = l.useCallback(() => {
         x({
             wishlistId: g,
             action: f.Mq.WISHLIST_ITEM_CLICKED,
             skuId: t.id,
             productLines: new Set([t.productLine])
-        }), d()
-    }, [d, t.id, t.productLine, x, g]);
+        }), o()
+    }, [o, t.id, t.productLine, x, g]);
     return (0, n.jsx)(h.A, {
         sku: t,
         user: i,
         spec: S,
-        cardStyle: a()(j.Nr, l),
+        cardStyle: a()(j.Nr, s),
         skuPreviewStyle: a()(j.ev, r),
-        onHoverOrFocusChange: o,
-        onClick: p,
+        onHoverOrFocusChange: d,
+        onClick: A,
         "aria-label": c,
         children: m
     })
 }
 
-function y(e) {
+function b(e) {
     let {
         sku: t,
         analyticsLocations: i,
-        isHoveringOrFocusing: l,
+        isHoveringOrFocusing: s,
         handleOpenUserProfileModal: r,
-        skuPreviewStyle: d,
+        skuPreviewStyle: o,
         wishlistOwner: c,
         ...u
-    } = e, [h, p] = s.useState(!1), A = s.useCallback(async () => {
+    } = e, [h, A] = l.useState(!1), p = l.useCallback(async () => {
         if (!h) {
-            p(!0);
+            A(!0);
             try {
                 await m.A.addSkuToWishlist(t.id, i), r?.({
                     tabSection: f.RP.WISHLIST
                 })
             } catch (e) {
-                (0, o.showToast)((0, o.createToast)(I.intl.string(I.t.F8FvUy), o.ToastType.FAILURE)), o.ORC.announce(I.intl.string(I.t.F8FvUy))
+                (0, d.showToast)((0, d.createToast)(I.intl.string(I.t.F8FvUy), d.ToastType.FAILURE)), d.ORC.announce(I.intl.string(I.t.F8FvUy))
             } finally {
-                p(!1)
+                A(!1)
             }
         }
-    }, [t, i, h, r]), v = s.useMemo(() => a()({
-        [j.zW]: l || h
-    }, d), [l, h, d]);
-    return (0, n.jsx)(b, {
+    }, [t, i, h, r]), v = l.useMemo(() => a()({
+        [j.zW]: s || h
+    }, o), [s, h, o]);
+    return (0, n.jsx)(E, {
         "aria-label": I.intl.formatToPlainString(I.t.xRjJBe, {
             productName: (0, g.TC)(t)
         }),
         sku: t,
         wishlistOwner: c,
         skuPreviewStyle: v,
-        onClick: A,
-        isHoveringOrFocusing: l,
+        onClick: p,
+        isHoveringOrFocusing: s,
         ...u,
         children: (0, n.jsx)(x.oU, {
-            isHoveringOrFocusing: l,
+            isHoveringOrFocusing: s,
             loading: h
         })
-    })
-}
-
-function E(e) {
-    let {
-        sku: t,
-        analyticsLocations: i,
-        ...s
-    } = e, {
-        analyticsLocations: l
-    } = (0, c.Ay)(...i ?? [], d.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD);
-    return (0, n.jsx)(y, {
-        sku: t,
-        analyticsLocations: l,
-        ...s
     })
 }
 
 function T(e) {
     let {
         sku: t,
+        analyticsLocations: i,
+        ...l
+    } = e, {
+        analyticsLocations: s
+    } = (0, c.Ay)(...i ?? [], o.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD);
+    return (0, n.jsx)(b, {
+        sku: t,
+        analyticsLocations: s,
+        ...l
+    })
+}
+
+function y(e) {
+    let {
+        sku: t,
         ...i
-    } = e, l = s.useMemo(() => {
+    } = e, s = l.useMemo(() => {
         switch (t?.tenantMetadata?.collectibles?.type) {
             case r.R.PROFILE_EFFECT:
             case r.R.NAMEPLATE:
@@ -129,9 +129,9 @@ function T(e) {
                 return a()(j.ML, j.ZY)
         }
     }, [t?.tenantMetadata?.collectibles?.type]);
-    return (0, n.jsx)(y, {
+    return (0, n.jsx)(b, {
         sku: t,
-        skuPreviewStyle: l,
+        skuPreviewStyle: s,
         ...i
     })
 }
@@ -141,37 +141,37 @@ function C(e) {
         sku: t,
         ...i
     } = e;
-    return (0, n.jsx)(y, {
+    return (0, n.jsx)(b, {
         sku: t,
         skuPreviewStyle: v.MO,
         ...i
     })
 }
 
-function w(e) {
+function N(e) {
     let {
         sku: t,
         ...i
-    } = e, [l, a] = s.useState(!1);
+    } = e, [s, a] = l.useState(!1);
     switch (t.productLine) {
-        case A.EZt.SOCIAL_LAYER_GAME_ITEM:
-            return (0, n.jsx)(E, {
-                sku: t,
-                isHoveringOrFocusing: l,
-                setIsHoveringOrFocusing: a,
-                ...i
-            });
-        case A.EZt.COLLECTIBLES:
+        case p.EZt.SOCIAL_LAYER_GAME_ITEM:
             return (0, n.jsx)(T, {
                 sku: t,
-                isHoveringOrFocusing: l,
+                isHoveringOrFocusing: s,
                 setIsHoveringOrFocusing: a,
                 ...i
             });
-        case A.EZt.PREMIUM:
+        case p.EZt.COLLECTIBLES:
+            return (0, n.jsx)(y, {
+                sku: t,
+                isHoveringOrFocusing: s,
+                setIsHoveringOrFocusing: a,
+                ...i
+            });
+        case p.EZt.PREMIUM:
             return (0, n.jsx)(C, {
                 sku: t,
-                isHoveringOrFocusing: l,
+                isHoveringOrFocusing: s,
                 setIsHoveringOrFocusing: a,
                 ...i
             });

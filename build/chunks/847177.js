@@ -4,28 +4,28 @@ n.d(t, {
 });
 var i = n(440594),
     l = n(765379),
-    r = n(960076),
-    a = n(652215),
+    a = n(960076),
+    r = n(652215),
     s = n(985018);
 
 function o(e, t) {
-    if (null != e && e.type === a.$pd.CUSTOM_STATUS) return null != e.state ? e.state.trim() : null;
-    if (null != t) return null == e || e.type !== a.$pd.PLAYING ? s.intl.string(s.t.eXan7B) : e.name;
+    if (null != e && e.type === r.$pd.CUSTOM_STATUS) return null != e.state ? e.state.trim() : null;
+    if (null != t) return null == e || e.type !== r.$pd.PLAYING ? s.intl.string(s.t.eXan7B) : e.name;
     if (null == e || null == e.name) return null;
-    if ((0, r.A)(e)) return null != e.details && "" !== e.details ? e.details : e.name;
+    if ((0, a.A)(e)) return null != e.details && "" !== e.details ? e.details : e.name;
     if ((0, l.A)(e)) return (0, i.A)(e.name);
     var n = e.type,
         o = e.name;
     switch (n) {
-        case a.$pd.LISTENING:
-        case a.$pd.WATCHING:
-        case a.$pd.COMPETING:
-        case a.$pd.STREAMING:
+        case r.$pd.LISTENING:
+        case r.$pd.WATCHING:
+        case r.$pd.COMPETING:
+        case r.$pd.STREAMING:
             return o;
-        case a.$pd.CUSTOM_STATUS:
-        case a.$pd.HANG_STATUS:
+        case r.$pd.CUSTOM_STATUS:
+        case r.$pd.HANG_STATUS:
             return null;
-        case a.$pd.PLAYING:
+        case r.$pd.PLAYING:
         default:
             return o
     }
@@ -42,7 +42,7 @@ function d(e, t) {
                 activity: e,
                 activityText: n
             };
-            e?.type === a.$pd.CUSTOM_STATUS && null != e.emoji && (i = e)
+            e?.type === r.$pd.CUSTOM_STATUS && null != e.emoji && (i = e)
         }
         return i?.emoji != null ? {
             activity: i,

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(397927),
-    r = n(537729),
-    a = n(985018),
+    a = n(537729),
+    r = n(985018),
     s = n(873998);
 
 function o() {
@@ -20,12 +20,12 @@ function o() {
                 variant: "heading-xxl/normal",
                 color: "text-strong",
                 className: s.R_,
-                children: a.intl.string(r.default["VAK+h9"])
+                children: r.intl.string(a.default["VAK+h9"])
             }), (0, i.jsx)(l.Text, {
                 variant: "text-lg/normal",
                 color: "text-muted",
                 className: s.Qq,
-                children: a.intl.string(r.default.dcpdhC)
+                children: r.intl.string(a.default.dcpdhC)
             })]
         })
     })

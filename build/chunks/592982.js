@@ -34,8 +34,8 @@ function T(e) {
         onInteraction: b
     } = e, y = (0, o.Us)(), {
         id: v,
-        type: R
-    } = T, j = (0, l.bG)([c.A], () => c.A.getGuild(T.guild_id), [T.guild_id]), O = (0, l.bG)([u.A], () => u.A.getSelectedParticipant(v)), L = O?.type === I.lp.STREAM ? O.stream : null, M = (0, l.bG)([a.A], () => O?.type === I.lp.ACTIVITY ? a.A.getApplication(O.applicationId) : void 0), D = (0, _.A)(v), U = (0, E.A)(v), G = (0, p.A)(T, j, L?.ownerId, M?.id), P = (0, A.A)(v), k = (0, x.A)(), w = (0, d.RQ)(v), B = (0, d.dA)(v), V = (0, f.A)(L, y), H = (0, g.A)(M, v), F = (0, m.A)(), W = (0, r.A)(T), K = (0, h.f)(v);
+        type: j
+    } = T, R = (0, l.bG)([c.A], () => c.A.getGuild(T.guild_id), [T.guild_id]), O = (0, l.bG)([u.A], () => u.A.getSelectedParticipant(v)), L = O?.type === I.lp.STREAM ? O.stream : null, M = (0, l.bG)([a.A], () => O?.type === I.lp.ACTIVITY ? a.A.getApplication(O.applicationId) : void 0), D = (0, _.A)(v), U = (0, E.A)(v), G = (0, p.A)(T, R, L?.ownerId, M?.id), P = (0, A.A)(v), k = (0, x.A)(), w = (0, d.RQ)(v), B = (0, d.dA)(v), V = (0, f.A)(L, y), H = (0, g.A)(M, v), F = (0, m.A)(), W = (0, r.A)(T), K = (0, h.f)(v);
     return (0, i.jsxs)(s.W1t, {
         "data-menu-migrated": !0,
         onClose: t,
@@ -44,9 +44,9 @@ function T(e) {
         navId: "more-settings-context",
         "aria-label": N.intl.string(N.t.FTLzdR),
         children: [(0, i.jsx)(s.rXV, {
-            children: R !== C.rbe.GUILD_STAGE_VOICE ? G : null
+            children: j !== C.rbe.GUILD_STAGE_VOICE ? G : null
         }), (0, i.jsxs)(s.rXV, {
-            children: [R === C.rbe.GUILD_STAGE_VOICE ? w : null, R === C.rbe.GUILD_STAGE_VOICE ? B : null, S || R === C.rbe.GUILD_STAGE_VOICE ? null : P, F, R !== C.rbe.GUILD_STAGE_VOICE ? D : null, R === C.rbe.GUILD_STAGE_VOICE || R === C.rbe.GUILD_VOICE ? U : null]
+            children: [j === C.rbe.GUILD_STAGE_VOICE ? w : null, j === C.rbe.GUILD_STAGE_VOICE ? B : null, S || j === C.rbe.GUILD_STAGE_VOICE ? null : P, F, j !== C.rbe.GUILD_STAGE_VOICE ? D : null, j === C.rbe.GUILD_STAGE_VOICE || j === C.rbe.GUILD_VOICE ? U : null]
         }), (0, i.jsx)(s.rXV, {
             children: W
         }), (0, i.jsxs)(s.rXV, {

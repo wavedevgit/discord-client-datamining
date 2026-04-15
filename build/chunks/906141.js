@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(756369),
     y = n(538355),
     v = n(522871),
-    R = n(715628),
-    j = n(752636),
+    j = n(715628),
+    R = n(752636),
     O = n(675722),
     L = n(268719),
     M = n(234957),
@@ -104,7 +104,7 @@ let w = l.memo(function e(t) {
             [k._A]: t.isGroupStart
         }),
         childrenRepliedMessage: (0, M.A)(s, l, W, K, o),
-        childrenHeader: (0, j.A)({
+        childrenHeader: (0, R.A)({
             ...t,
             author: ei,
             guildId: l.guild_id
@@ -134,7 +134,7 @@ let w = l.memo(function e(t) {
             ctaButtonType: ed
         }),
         childrenExecutedCommand: (0, L.A)(s, l, o),
-        childrenMessageContent: (0, R.A)(t, ee),
+        childrenMessageContent: (0, j.A)(t, ee),
         childrenSystemMessage: (0, O.A)(t),
         onContextMenu: P,
         onClick: w,

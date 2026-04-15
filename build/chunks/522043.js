@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(397927),
-    r = n(241124),
-    a = n(947926),
+    a = n(241124),
+    r = n(947926),
     s = n(717695),
     o = n(985018),
     d = n(446e3),
@@ -30,10 +30,10 @@ let A = function(e) {
                     children: (0, i.jsx)("div", {
                         className: u.C3,
                         children: (0, i.jsx)(s.A, {
-                            children: (0, i.jsx)(r.jY, {
+                            children: (0, i.jsx)(a.jY, {
                                 source: "preview",
                                 questId: t.id,
-                                children: (0, i.jsx)(a.Y, {
+                                children: (0, i.jsx)(r.Y, {
                                     quest: t
                                 })
                             })

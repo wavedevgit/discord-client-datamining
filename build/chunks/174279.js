@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(735438),
-    a = n.n(r),
+    a = n(735438),
+    r = n.n(a),
     s = n(311907),
     o = n(397927),
     d = n(157559),
@@ -36,8 +36,8 @@ function P(e) {
     let {
         user: t,
         applicationId: n,
-        isGameRelationship: r,
-        onSelect: a
+        isGameRelationship: a,
+        onSelect: r
     } = e, A = l.useCallback(() => {
         (0, C.X9)({
             targetUserId: t.id,
@@ -58,11 +58,11 @@ function P(e) {
     }, [t.id]), _ = l.useCallback(() => {
         T.A.removeFriend({
             userId: t.id,
-            applicationId: r ? n : null,
+            applicationId: a ? n : null,
             location: "Friends"
         })
-    }, [n, r, t.id]), m = l.useCallback(() => {
-        let e = r ? L.intl.string(L.t.RLcE6x) : L.intl.string(L.t.cvSt1J);
+    }, [n, a, t.id]), m = l.useCallback(() => {
+        let e = a ? L.intl.string(L.t.RLcE6x) : L.intl.string(L.t.cvSt1J);
         (0, C.lP)({
             targetUserId: t.id,
             tab: I.Ay.getState().section
@@ -78,13 +78,13 @@ function P(e) {
             cancelText: L.intl.string(L.t["ETE/oC"]),
             onConfirm: _
         })
-    }, [_, r, t]), g = (0, s.bG)([p.Ay], () => p.Ay.supports(O.O5.VIDEO)), E = t.isProvisional, N = r ? L.intl.string(L.t.RLcE6x) : L.intl.string(L.t.cvSt1J);
+    }, [_, a, t]), g = (0, s.bG)([p.Ay], () => p.Ay.supports(O.O5.VIDEO)), E = t.isProvisional, N = a ? L.intl.string(L.t.RLcE6x) : L.intl.string(L.t.cvSt1J);
     return (0, i.jsxs)(o.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "friend-row",
         "aria-label": L.intl.string(L.t.liqwPJ),
         onClose: u.Z_,
-        onSelect: a,
+        onSelect: r,
         children: [!E && g ? (0, i.jsx)(o.Drp, {
             id: "start-video-call",
             label: L.intl.string(L.t.oCqlGG),
@@ -115,7 +115,7 @@ class D extends l.PureComponent {
     openPrivateChannel = () => {
         let {
             user: e
-        } = this.props, t = a().find(g.A.getMutablePrivateChannels(), t => t.type === b.rbe.DM && t.getRecipientId() === e.id);
+        } = this.props, t = r().find(g.A.getMutablePrivateChannels(), t => t.type === b.rbe.DM && t.getRecipientId() === e.id);
         null != t ? (0, m.pX)(b.BVt.CHANNEL(b.ME, t.id)) : c.A.openPrivateChannel({
             recipientIds: e.id
         })
@@ -159,8 +159,8 @@ class D extends l.PureComponent {
             isFocused: t,
             analyticsLocations: n,
             activities: l,
-            applicationStream: r,
-            status: a,
+            applicationStream: a,
+            status: r,
             isMobile: s,
             isVR: d,
             isGameRelationship: c,
@@ -179,9 +179,9 @@ class D extends l.PureComponent {
             onOtherHover: () => I ? null : (0, u.Z_)(),
             onClick: this.handleRowClick,
             giftIntentType: m,
-            status: a,
+            status: r,
             activities: l,
-            applicationStream: r,
+            applicationStream: a,
             isMobile: s,
             isVR: d,
             isGameRelationship: c
@@ -197,14 +197,14 @@ class D extends l.PureComponent {
                 className: R.a4,
                 children: [(0, i.jsx)(v.A, {
                     user: e,
-                    status: a,
+                    status: r,
                     isMobile: s,
                     isVR: d,
                     subText: (0, i.jsx)(x.A, {
                         hovered: t,
                         activities: l,
-                        applicationStream: r,
-                        status: a,
+                        applicationStream: a,
+                        status: r,
                         user: e,
                         userIgnored: E.A.isIgnored(e.id)
                     }),

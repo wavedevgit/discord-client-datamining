@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(334595),
     l = n(837921),
-    r = n(90924),
-    a = n(629471);
+    a = n(90924),
+    r = n(629471);
 let s = {
     [n(652215).e$_.ENCOURAGE_HW_ACCELERATION]: {
-        validation: e => (0, a.A)(e),
+        validation: e => (0, r.A)(e),
         handler(e) {
             let {
                 socket: t
             } = e;
-            (0, r.lG)(t.transport);
+            (0, a.lG)(t.transport);
             let n = t.application.id;
             if (null != n) return (0, i.A)(n), {
                 enabled: l.Ay.getEnableHardwareAcceleration()

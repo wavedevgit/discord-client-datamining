@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(311907),
-    a = n(397927),
+    a = n(311907),
+    r = n(397927),
     s = n(773669),
     o = n(417426),
     d = n(747550),
@@ -18,7 +18,7 @@ var i = n(627968),
 function m(e) {
     let {
         loadId: t
-    } = e, n = (0, r.bG)([s.default], () => (0, u.Kv)([s.default])), m = c.A.useField("languageCode"), g = l.useCallback(e => {
+    } = e, n = (0, a.bG)([s.default], () => (0, u.Kv)([s.default])), m = c.A.useField("languageCode"), g = l.useCallback(e => {
         c.A.setState({
             languageCode: e
         });
@@ -38,7 +38,7 @@ function m(e) {
     })), []);
     return (0, i.jsx)("div", {
         className: _.k,
-        children: (0, i.jsx)(a.ZiE, {
+        children: (0, i.jsx)(r.ZiE, {
             selectionMode: "single",
             label: h.intl.string(h.t.Ng5cTK),
             hideLabel: !0,

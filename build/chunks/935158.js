@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(926466),
-    r = n(997509),
-    a = n(320426),
+    a = n(997509),
+    r = n(320426),
     s = n(652215),
     o = n(985018),
     d = n(693248);
@@ -14,7 +14,7 @@ var l = n(926466),
 function c(e) {
     let {
         guild: t
-    } = e, n = () => a.A.dismissNotice(t.id);
+    } = e, n = () => r.A.dismissNotice(t.id);
     return (0, i.jsx)(l.A, {
         guild: t,
         onDismissed: n,
@@ -23,7 +23,7 @@ function c(e) {
         type: s.n5X.COMMANDS_MIGRATION,
         image: d,
         onClick: () => {
-            n(), r.A.open(t.id, s.BEX.INTEGRATIONS)
+            n(), a.A.open(t.id, s.BEX.INTEGRATIONS)
         },
         imageMarginTop: 15,
         imageMarginX: 22

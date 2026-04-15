@@ -1,6 +1,6 @@
 /** chunk id: 332396 params = (module,exports,require) **/
 n.d(t, {
-    A: () => R
+    A: () => j
 }), n(321073);
 var i = n(627968),
     l = n(64700),
@@ -71,8 +71,8 @@ function y() {
         }, [t]),
         y = (0, d.yK)([f.default], () => T.map(e => f.default.getUser(e)), [T]),
         v = (0, d.yK)([f.default], () => c.map(e => f.default.getUser(e)), [c]),
-        R = b(u.HKD, s.filter(e => !c.includes(e.id) && !T.includes(e.id))),
-        j = 0 === a.length ? null : (0, i.jsxs)("div", {
+        j = b(u.HKD, s.filter(e => !c.includes(e.id) && !T.includes(e.id))),
+        R = 0 === a.length ? null : (0, i.jsxs)("div", {
             className: S.nM,
             children: [(0, i.jsx)(u.qux, {
                 size: "lg",
@@ -98,7 +98,7 @@ function y() {
         O = b(u.Fzq, v.filter(e => null != e && !T.includes(e.id))),
         L = b(u.k9F, y);
     return (0, i.jsxs)(i.Fragment, {
-        children: [j, R, O, L]
+        children: [R, j, O, L]
     })
 }
 
@@ -114,7 +114,7 @@ function v() {
     })
 }
 
-function R(e) {
+function j(e) {
     let {
         "aria-label": t = !1,
         children: n

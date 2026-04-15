@@ -1,7 +1,7 @@
 /** chunk id: 412484 params = (module,exports,require) **/
 n.d(t, {
     Ay: () => b,
-    NH: () => R,
+    NH: () => j,
     T: () => v
 });
 var i = n(627968),
@@ -32,8 +32,8 @@ function b(e) {
     var t, n, s, r, E, b;
     let {
         onJump: v,
-        showTutorial: R,
-        setSeenTutorial: j,
+        showTutorial: j,
+        setSeenTutorial: R,
         closePopout: O
     } = e, L = l.useRef(null), [M, D] = (0, C.Ay)(L), {
         loadState: U,
@@ -105,8 +105,8 @@ function b(e) {
                     ...n,
                     onScroll: U === C.mJ.Done ? void 0 : P,
                     className: a()(S.XG, `group-spacing-${k}`),
-                    children: [R ? (0, i.jsx)(y, {
-                        setSeenTutorial: j
+                    children: [j ? (0, i.jsx)(y, {
+                        setSeenTutorial: R
                     }) : null, (0, I.A)(G, D, v), U === C.mJ.Done ? null : (0, i.jsx)(u.y$y, {
                         className: S.u1
                     })]
@@ -159,6 +159,6 @@ function v() {
         tip: T.intl.string(T.t.cvcKzX)
     })
 }
-let R = () => (0, i.jsx)(E.A, {
+let j = () => (0, i.jsx)(E.A, {
     onClick: () => g._.dispatch(N.jej.INBOX_MARK_ALL_UNREADS_READ)
 })

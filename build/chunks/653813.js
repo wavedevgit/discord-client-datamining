@@ -1,6 +1,6 @@
 /** chunk id: 653813 params = (module,exports,require) **/
 t.d(i, {
-    default: () => h
+    default: () => f
 });
 var r = t(627968),
     n = t(64700),
@@ -20,20 +20,20 @@ function p(e) {
         onClose: t,
         transitionState: s,
         analyticsLocations: p,
-        analyticsLocation: h,
-        analyticsObject: f,
+        analyticsLocation: f,
+        analyticsObject: h,
         giftMessage: g
     } = e, {
         priceOptions: I
-    } = (0, l.P5)(), b = n.useCallback(e => {
+    } = (0, l.P5)(), C = n.useCallback(e => {
         (0, o.A)({
             isGift: !0,
             giftRecipient: i,
             subscriptionTier: e,
             giftingOrigin: d.vQ.DM_CHANNEL,
             analyticsLocations: p ?? [],
-            analyticsLocation: h,
-            analyticsObject: f ?? {
+            analyticsLocation: f,
+            analyticsObject: h ?? {
                 page: _.liQ.DM_CHANNEL,
                 section: _.JJy.CHANNEL_TEXT_AREA,
                 object: _.ZSU.BUTTON_ICON,
@@ -41,7 +41,7 @@ function p(e) {
             },
             giftMessage: g
         }), t()
-    }, [i, p, h, f, g, t]);
+    }, [i, p, f, h, g, t]);
     return (0, r.jsxs)(a.EOs, {
         transitionState: s,
         size: a.rIJ.DYNAMIC,
@@ -66,7 +66,7 @@ function p(e) {
             className: m.S3,
             "data-migration-pending": !0,
             children: (0, r.jsx)(c.A, {
-                onSelectSku: b,
+                onSelectSku: C,
                 giftRecipient: i,
                 priceOptions: I,
                 onWishlistItemClick: t
@@ -75,7 +75,7 @@ function p(e) {
     })
 }
 
-function h(e) {
+function f(e) {
     let {
         giftRecipient: i,
         onClose: t,

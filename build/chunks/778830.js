@@ -4,19 +4,19 @@ n.d(t, {
     A: () => d
 });
 var l = n(148803),
-    r = n(73153),
-    a = n(272355),
+    a = n(73153),
+    r = n(272355),
     s = n(979286);
 {
     let e = n(154323).A;
     i = () => e.get("shop_include_unpublished")
 }
-class o extends a.A {
+class o extends r.A {
     _initialize() {
-        r.h.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
+        a.h.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
     }
     _terminate() {
-        r.h.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
+        a.h.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
     }
     handlePostConnectionOpen() {
         let e = i();

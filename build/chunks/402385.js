@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(203982),
     y = n(58736),
     v = n(652215),
-    R = n(360469),
-    j = n(49999),
+    j = n(360469),
+    R = n(49999),
     O = n(731854),
     L = n(985018);
 class M extends l.PureComponent {
@@ -94,14 +94,14 @@ class M extends l.PureComponent {
                         targetElementRef: this.iconRef,
                         title: L.intl.string(L.t.HOPqzR),
                         body: L.intl.format(L.t.xAW71b, {
-                            helpdeskUrl: R.DY
+                            helpdeskUrl: j.DY
                         }),
                         position: "bottom",
                         align: "center",
                         caretConfig: {
                             align: "center"
                         },
-                        onRequestClose: () => n(j.i.USER_DISMISS)
+                        onRequestClose: () => n(R.i.USER_DISMISS)
                     }) : null
                 }
             })]
@@ -130,7 +130,7 @@ class M extends l.PureComponent {
             dismissibleContentTypes: i
         } = this.props;
         if (i.includes(a.M.ACTIVITY_GDM_CALL_TOOLTIP) && (0, _.Dr)(a.M.ACTIVITY_GDM_CALL_TOOLTIP, {
-                dismissAction: j.i.AUTO
+                dismissAction: R.i.AUTO
             }), t);
         else if (n) return this.handleJoinCall(!1);
         else return this.handleStartCall(e, !1)
@@ -164,8 +164,8 @@ function D(e) {
     } = (0, s.cf)([N.A], () => ({
         notFriend: t.type === v.rbe.DM && null != _ && !N.A.isFriend(_),
         isBlocked: t.type === v.rbe.DM && null != _ && N.A.isBlocked(_)
-    })), E = (0, s.bG)([T.default], () => T.default.getUser(_)), C = (0, g.Us)(), b = [], y = (0, h.A)(t.id), R = (0, s.bG)([I.A], () => I.A.hasLayers());
-    return (y && !R && b.push(a.M.ACTIVITY_GDM_CALL_TOOLTIP), n || E?.bot) ? null : (0, i.jsx)(M, {
+    })), E = (0, s.bG)([T.default], () => T.default.getUser(_)), C = (0, g.Us)(), b = [], y = (0, h.A)(t.id), j = (0, s.bG)([I.A], () => I.A.hasLayers());
+    return (y && !j && b.push(a.M.ACTIVITY_GDM_CALL_TOOLTIP), n || E?.bot) ? null : (0, i.jsx)(M, {
         channel: t,
         mode: l,
         inCall: r,

@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(747524),
     y = n(996988),
     v = n(985018),
-    R = n(374146),
-    j = n(733866);
+    j = n(374146),
+    R = n(733866);
 
 function O(e) {
     let {
@@ -68,7 +68,7 @@ function O(e) {
                             user: t
                         })
                     }), (0, i.jsxs)("div", {
-                        className: R.wx,
+                        className: j.wx,
                         children: [(0, i.jsx)(f.A, {
                             user: t,
                             displayProfile: L,
@@ -82,7 +82,7 @@ function O(e) {
                             onOpenProfile: O ? void 0 : w
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: j.rf,
+                        className: R.rf,
                         children: [(0, i.jsx)(N.A, {
                             user: t,
                             guildId: n.guild_id,
@@ -94,7 +94,7 @@ function O(e) {
                                 themeType: y.d.SIDEBAR
                             })
                         }), (0, i.jsxs)(C.A.Overlay, {
-                            className: j.Lw,
+                            className: R.Lw,
                             children: [(0, i.jsx)(I.A, {
                                 heading: v.intl.string(v.t.ZzAR2Y),
                                 headingColor: "text-strong",

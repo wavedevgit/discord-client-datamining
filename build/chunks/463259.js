@@ -1,7 +1,7 @@
 /** chunk id: 463259 params = (module,exports,require) **/
 n.d(t, {
     A: () => M,
-    u: () => w
+    u: () => G
 });
 var i = n(627968),
     a = n(64700),
@@ -26,17 +26,17 @@ var i = n(627968),
     j = n(605694),
     T = n(357541),
     b = n(236599),
-    C = n(192),
-    N = n(128988),
-    k = n(795755),
-    S = n(53977),
+    N = n(192),
+    C = n(128988),
+    S = n(795755),
+    k = n(53977),
     O = n(982599),
-    L = n(515054),
-    P = n(266713),
-    R = n(985018),
-    D = n(882612);
+    D = n(515054),
+    L = n(266713),
+    P = n(985018),
+    R = n(882612);
 
-function w(e) {
+function G(e) {
     let {
         widget: t,
         ...n
@@ -44,22 +44,22 @@ function w(e) {
     return t instanceof I.R ? (0, i.jsx)(j.A, {
         widget: t,
         ...n
-    }) : t instanceof A.Yy ? (0, i.jsx)(k.A, {
+    }) : t instanceof A.Yy ? (0, i.jsx)(S.A, {
         widget: t,
         ...n
     }) : null
 }
 
-function G() {
+function w() {
     return (0, i.jsxs)("div", {
-        className: D.mJ,
+        className: R.mJ,
         children: [(0, i.jsx)(o.mir, {
             size: "xs"
         }), (0, i.jsx)(o.Text, {
-            "aria-label": R.intl.string(R.t["7blcz6"]),
+            "aria-label": P.intl.string(P.t["7blcz6"]),
             variant: "text-xs/normal",
             color: "text-muted",
-            children: R.intl.string(R.t["7blcz6"])
+            children: P.intl.string(P.t["7blcz6"])
         })]
     })
 }
@@ -113,12 +113,12 @@ function U(e) {
             s.current && (s.current = !1, l())
         }, [l])
     })(t.id, T);
-    let N = () => (0, i.jsxs)(i.Fragment, {
+    let C = () => (0, i.jsxs)(i.Fragment, {
         children: [o && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(b.A, {
-                className: D.cG
-            }), d && (0, i.jsx)(G, {}), _ && (0, i.jsx)(y, {})]
-        }), s.map((e, a) => (0, i.jsx)(w, {
+                className: R.cG
+            }), d && (0, i.jsx)(w, {}), _ && (0, i.jsx)(y, {})]
+        }), s.map((e, a) => (0, i.jsx)(G, {
             widget: e,
             user: t,
             guildId: n,
@@ -127,11 +127,11 @@ function U(e) {
         }, e.getUniqueKey()))]
     });
     if (E)
-        if (_) return (0, i.jsx)(S.A, {});
-        else return (0, i.jsx)(P.A, {});
-    return o ? (0, i.jsx)(C.D, {
-        children: N()
-    }) : N()
+        if (_) return (0, i.jsx)(k.A, {});
+        else return (0, i.jsx)(L.A, {});
+    return o ? (0, i.jsx)(N.D, {
+        children: C()
+    }) : C()
 }
 
 function M(e) {
@@ -143,14 +143,14 @@ function M(e) {
         containerRef: l
     });
     let r = (0, O.k)(t.id);
-    return (0, i.jsxs)(L.K, {
+    return (0, i.jsxs)(D.K, {
         "data-scroller": !0,
         scrollerRef: l,
-        className: s()(D.XG, {
-            [D.az]: r
+        className: s()(R.XG, {
+            [R.az]: r
         }),
         fade: !0,
-        children: [(0, i.jsx)(N.A, {
+        children: [(0, i.jsx)(C.A, {
             scrollerRef: l
         }), (0, i.jsx)(U, {
             user: t,

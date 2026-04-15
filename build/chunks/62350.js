@@ -33,8 +33,8 @@ var i = n(627968),
     R = n(860689),
     P = n(168428),
     w = n(652215),
-    D = n(768349),
-    M = n(172799),
+    M = n(768349),
+    D = n(172799),
     k = n(985018),
     O = n(478879);
 
@@ -131,7 +131,7 @@ function G(e) {
             target_type: g,
             target_application: A
         } = l;
-    o()(g === M.yV.EMBEDDED_APPLICATION && null != A, "invalid application invite");
+    o()(g === D.yV.EMBEDDED_APPLICATION && null != A, "invalid application invite");
     let x = a.useCallback(() => {
             j.default.track(w.HAw.EMBEDDED_APPLICATION_INVITE_EMBED_VIEWED, {
                 application_id: A.id,
@@ -148,7 +148,7 @@ function G(e) {
             return A.id === t
         })),
         L = T.A.getChannel(l.channel?.id),
-        D = (0, d.bG)([S.A], () => null != L && S.A.can(w.xBc.USE_EMBEDDED_ACTIVITIES, L), [L]),
+        M = (0, d.bG)([S.A], () => null != L && S.A.can(w.xBc.USE_EMBEDDED_ACTIVITIES, L), [L]),
         {
             analyticsLocations: O
         } = (0, p.Ay)(h.A.INVITE_EMBED),
@@ -174,8 +174,8 @@ function G(e) {
         f = (0, R.DY)(l.guild)
     }
     t = V ? I ? k.intl.string(k.t.DPfdsq) : v ? k.intl.string(k.t.sqe0hj) : k.intl.string(k.t.RscU7I) : k.intl.string(k.t["2BP08E"]);
-    let q = V && !D || V && I;
-    return (D || (n = k.intl.string(k.t.hHGrWz)), null == l.code || "" === l.code || null == C) ? null : (0, i.jsx)(p.f5, {
+    let q = V && !M || V && I;
+    return (M || (n = k.intl.string(k.t.hHGrWz)), null == l.code || "" === l.code || null == C) ? null : (0, i.jsx)(p.f5, {
         value: O,
         children: (0, i.jsx)(F, {
             app: C,
@@ -258,7 +258,7 @@ function F(e) {
         onClickContent: y,
         trackingConfig: {
             id: t.id,
-            linkType: D.J.ACTIVITY_INVITE,
+            linkType: M.J.ACTIVITY_INVITE,
             onView: I,
             guildId: r.id,
             channelId: s?.id,

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     l = n(64700),
-    r = n(735438),
-    a = n.n(r),
+    a = n(735438),
+    r = n.n(a),
     s = n(311907),
     o = n(397927),
     d = n(711950),
@@ -57,12 +57,12 @@ function U(e) {
     let {
         section: t,
         showSpamCta: n
-    } = e, r = l.useMemo(() => n ? w : t !== L.m3P.PENDING ? M : void 0, [n, t]);
+    } = e, a = l.useMemo(() => n ? w : t !== L.m3P.PENDING ? M : void 0, [n, t]);
     return (0, i.jsx)("div", {
         className: D.y7,
         children: (0, i.jsx)(S.A, {
             type: t,
-            onClick: r
+            onClick: a
         }, t)
     })
 }
@@ -72,7 +72,7 @@ let G = function(e) {
     } = e, {
         analyticsLocations: n
     } = (0, h.Ay)(A.A.FRIENDS_LIST), {
-        rows: r,
+        rows: a,
         section: d
     } = (0, s.cf)([f.Ay], () => f.Ay.getState()), M = (0, s.bG)([C.A], () => C.A.isFocused()), {
         relationshipCount: G,
@@ -100,23 +100,23 @@ let G = function(e) {
     }), K = (0, m.p)(A.A.FRIENDS_LIST), [q, z] = l.useState(!1), $ = l.useCallback((e, t) => {
         let {
             key: l,
-            ...r
+            ...a
         } = e;
         switch (d) {
             case L.m3P.PENDING:
                 return (0, i.jsx)(x.A, {
-                    ...r,
+                    ...a,
                     isFocused: M,
                     onAcceptFriendRequest: () => F(e)
                 }, l);
             case L.m3P.SUGGESTIONS:
                 return (0, i.jsx)(O.A, {
-                    ...r,
+                    ...a,
                     isFocused: M
                 }, l);
             case L.m3P.ALL:
                 return (0, i.jsx)(N.A, {
-                    ...r,
+                    ...a,
                     isFocused: M,
                     analyticsLocations: n,
                     sectionIndex: t,
@@ -125,7 +125,7 @@ let G = function(e) {
             case L.m3P.ONLINE:
             default:
                 return (0, i.jsx)(N.A, {
-                    ...r,
+                    ...a,
                     isFocused: M,
                     analyticsLocations: n
                 }, l)
@@ -140,10 +140,10 @@ let G = function(e) {
             ...Y,
             [d]: ""
         })
-    }, [Y, d]), Z = l.useMemo(() => d === L.m3P.PENDING && (r.filter(L.m3P.SPAM).length > 0 || r.filter(L.m3P.PENDING_IGNORED).length > 0), [r, d]), J = l.useMemo(() => {
-        let e = r.filter(d, Y[d]);
-        return V && d === L.m3P.PENDING && "" === Y[d] && (e = a()([...e, ...B]).uniqBy("key").sortBy(e => e.nickname?.toLowerCase() ?? e.user?.globalName?.toLowerCase() ?? e.usernameLower).value()), e
-    }, [B, V, r, Y, d]), ee = d === L.m3P.PENDING, et = l.useMemo(() => {
+    }, [Y, d]), Z = l.useMemo(() => d === L.m3P.PENDING && (a.filter(L.m3P.SPAM).length > 0 || a.filter(L.m3P.PENDING_IGNORED).length > 0), [a, d]), J = l.useMemo(() => {
+        let e = a.filter(d, Y[d]);
+        return V && d === L.m3P.PENDING && "" === Y[d] && (e = r()([...e, ...B]).uniqBy("key").sortBy(e => e.nickname?.toLowerCase() ?? e.user?.globalName?.toLowerCase() ?? e.usernameLower).value()), e
+    }, [B, V, a, Y, d]), ee = d === L.m3P.PENDING, et = l.useMemo(() => {
         if (!ee) return j;
         let e = [];
         return J.forEach(t => {
@@ -176,8 +176,8 @@ let G = function(e) {
             }
         }, [J, d, q, K]),
         el = l.useMemo(() => J.filter(e => e.type === L.eA$.PENDING_INCOMING).length, [J]),
-        er = d === L.m3P.PENDING && el > 0 && el >= 5,
-        ea = l.useCallback(e => {
+        ea = d === L.m3P.PENDING && el > 0 && el >= 5,
+        er = l.useCallback(e => {
             e.stopPropagation(), c.A.confirmClearPendingRelationships(el)
         }, [el]),
         es = l.useCallback(() => {
@@ -220,11 +220,11 @@ let G = function(e) {
                 children: [(0, i.jsx)(y.A, {
                     id: t,
                     title: l
-                }), er && (0, i.jsx)("div", {
+                }), ea && (0, i.jsx)("div", {
                     className: D.mt,
                     children: (0, i.jsx)(o.QWc, {
                         text: P.intl.string(P.t.O8k7O4),
-                        onClick: ea,
+                        onClick: er,
                         "aria-label": P.intl.string(P.t.O8k7O4),
                         textVariant: "text-sm/medium"
                     })
@@ -236,7 +236,7 @@ let G = function(e) {
                     title: l
                 })
             }, l)
-        }, [ei, d, t, er, ea]),
+        }, [ei, d, t, ea, er]),
         ed = l.useCallback(e => d === L.m3P.ALL && 0 === e && K && en > p.ZD ? (0, i.jsx)("div", {
             className: D.Nf,
             children: (0, i.jsx)(o.Button, {

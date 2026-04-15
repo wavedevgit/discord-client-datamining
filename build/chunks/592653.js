@@ -6,8 +6,8 @@ n.d(t, {
 });
 var i = n(735438),
     l = n.n(i),
-    r = n(933958),
-    a = n(969151),
+    a = n(933958),
+    r = n(969151),
     s = n(287809),
     o = n(403362),
     d = n(562153),
@@ -15,12 +15,12 @@ var i = n(735438),
     u = n(613057);
 
 function A() {
-    let e = r.Ay.getCurrentEmbeddedActivity();
+    let e = a.Ay.getCurrentEmbeddedActivity();
     if (null == e) return {
         participants: []
     };
-    let t = (0, a.D)(e.location),
-        n = (0, a.H)(e.location);
+    let t = (0, r.D)(e.location),
+        n = (0, r.H)(e.location);
     return {
         participants: Array.from(e.userIds, e => {
             let i = s.default.getUser(e);

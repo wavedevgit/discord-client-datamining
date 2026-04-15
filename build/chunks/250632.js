@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(503698),
-    r = n.n(l),
-    a = n(235986),
+    a = n.n(l),
+    r = n(235986),
     s = n(957358),
     o = n(505806),
     d = n(985018),
@@ -24,12 +24,12 @@ let u = function(e) {
         children: (e, o, A) => {
             var h;
             return (0, i.jsx)("div", {
-                className: r()(c.dm, n),
-                children: (0, i.jsxs)(a.A, {
-                    align: a.A.Align.CENTER,
-                    children: [(0, i.jsxs)(a.A, {
+                className: a()(c.dm, n),
+                children: (0, i.jsxs)(r.A, {
+                    align: r.A.Align.CENTER,
+                    children: [(0, i.jsxs)(r.A, {
                         className: c.Qq,
-                        direction: a.A.Direction.VERTICAL,
+                        direction: r.A.Direction.VERTICAL,
                         children: [(0, i.jsx)("div", {
                             className: c.DD,
                             children: t

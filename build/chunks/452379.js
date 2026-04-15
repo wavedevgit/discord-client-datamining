@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(735438),
     l = n.n(i),
-    r = n(73153),
-    a = n(510595),
+    a = n(73153),
+    r = n(510595),
     s = n(35177),
     o = n(405892),
     d = n(594061),
@@ -13,7 +13,7 @@ var i = n(735438),
     u = n(355097);
 let A = {
     init() {
-        o.A[u.oD.PRELOADED_USER_SETTINGS] = s.A, o.A[u.oD.FRECENCY_AND_FAVORITES_SETTINGS] = a.A, r.h.subscribe("CONNECTION_OPEN", h), r.h.subscribe("USER_SETTINGS_PROTO_ENQUEUE_UPDATE", _), r.h.subscribe("USER_SETTINGS_PROTO_LOAD_IF_NECESSARY", m), r.h.subscribe("APP_STATE_UPDATE", g)
+        o.A[u.oD.PRELOADED_USER_SETTINGS] = s.A, o.A[u.oD.FRECENCY_AND_FAVORITES_SETTINGS] = r.A, a.h.subscribe("CONNECTION_OPEN", h), a.h.subscribe("USER_SETTINGS_PROTO_ENQUEUE_UPDATE", _), a.h.subscribe("USER_SETTINGS_PROTO_LOAD_IF_NECESSARY", m), a.h.subscribe("APP_STATE_UPDATE", g)
     }
 };
 

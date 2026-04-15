@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(73153),
     l = n(272355),
-    r = n(688796),
-    a = n(207803),
+    a = n(688796),
+    r = n(207803),
     s = n(84540),
     o = n(287809),
     d = n(927578),
@@ -26,7 +26,7 @@ class A extends l.A {
                 guildId: i,
                 isTryItOut: l
             } = e;
-            if (l) return void(0, a.e$)(t);
+            if (l) return void(0, r.e$)(t);
             let A = o.default.getCurrentUser();
             if (d.Ay.canUseAnimatedAvatar(A) || "image/gif" !== n.type) {
                 (0, s.p)({
@@ -35,7 +35,7 @@ class A extends l.A {
                 }), (0, c.WU)("set");
                 return
             }
-            null != A && (0, r.G)({
+            null != A && (0, a.G)({
                 uploadType: u.HL.AVATAR
             })
         })(e) : e.uploadType === u.HL.BANNER ? (e => {
@@ -44,13 +44,13 @@ class A extends l.A {
                 guildId: n,
                 isTryItOut: i
             } = e, l = t.imageUri;
-            if (i) return void(0, a.xe)(l);
+            if (i) return void(0, r.xe)(l);
             let c = o.default.getCurrentUser(),
                 A = d.Ay.canUsePremiumProfileCustomization(c);
             d.Ay.canUsePremiumProfileCustomization(c) ? (0, s.p)({
                 guildId: n,
                 banner: l
-            }) : null == c || A || (0, r.G)({
+            }) : null == c || A || (0, a.G)({
                 uploadType: u.HL.BANNER
             })
         })(e) : void 0

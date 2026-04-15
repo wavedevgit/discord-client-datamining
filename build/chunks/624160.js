@@ -73,33 +73,33 @@ function b(e) {
             trackUserProfileEditAction: b
         } = e,
         {
-            placeholder: C,
-            getAriaLabel: N,
-            icon: k
+            placeholder: N,
+            getAriaLabel: C,
+            icon: S
         } = T[n.type],
-        S = n.type === r.x.APPLICATION,
-        O = S ? n.applicationId : void 0,
-        L = (0, m.h)(O),
+        k = n.type === r.x.APPLICATION,
+        O = k ? n.applicationId : void 0,
+        D = (0, m.h)(O),
         {
-            hasAlreadyLinked: P,
-            canStartAuthorization: R,
-            startAuthorization: D
-        } = (0, u.RD)(L),
+            hasAlreadyLinked: L,
+            canStartAuthorization: P,
+            startAuthorization: R
+        } = (0, u.RD)(D),
         {
-            analyticsLocations: w
+            analyticsLocations: G
         } = (0, d.Ay)(c.A.USER_PROFILE_APPLICATION_WIDGET),
-        G = g.G.useConfig({
+        w = g.G.useConfig({
             location: "UserProfileWidgetOptionAddButton"
         }),
-        y = S && !P && R && G.enabled,
+        y = k && !L && P && w.enabled,
         U = a.useCallback(() => {
             if (!x) {
                 if (y) {
-                    G.autoAdd && ((0, p.Y5)(n), b({
+                    w.autoAdd && ((0, p.Y5)(n), b({
                         action: "WIDGET_ADDED",
                         ...n.getProfileEditAnalyticsOptions()
-                    }), (0, I.XA)(E.jM.WIDGET_ADDED), l?.()), D({
-                        analyticsLocations: w
+                    }), (0, I.XA)(E.jM.WIDGET_ADDED), l?.()), R({
+                        analyticsLocations: G
                     });
                     return
                 }(0, p.Y5)(n), b({
@@ -107,20 +107,20 @@ function b(e) {
                     ...n.getProfileEditAnalyticsOptions()
                 }), (0, I.XA)(E.jM.WIDGET_ADDED), l?.()
             }
-        }, [x, y, G, n, b, l, D, w]),
-        M = k?.(n),
+        }, [x, y, w, n, b, l, R, G]),
+        M = S?.(n),
         F = y ? o.qYV : o.U1e;
     return (0, i.jsxs)("div", {
         className: j.LG,
         children: [(0, i.jsxs)(o.DUT, {
             className: s()(j.PH, "small" === _ && j.PG, x && j.Lq),
             onClick: U,
-            "aria-label": y && null != L ? v.intl.formatToPlainString(v.t.ATS0FK, {
-                applicationName: L.name
-            }) : N(n),
+            "aria-label": y && null != D ? v.intl.formatToPlainString(v.t.ATS0FK, {
+                applicationName: D.name
+            }) : C(n),
             "aria-busy": x,
             children: [(() => {
-                let e = C(n);
+                let e = N(n);
                 switch (e.variant) {
                     case "details":
                         return (0, i.jsx)(A.E, {
@@ -163,7 +163,7 @@ function b(e) {
                     }) : null]
                 })]
             })]
-        }), "application-widget" === (t = C(n)).variant ? (0, i.jsx)(h.R, {
+        }), "application-widget" === (t = N(n)).variant ? (0, i.jsx)(h.R, {
             applicationId: t.applicationId,
             size: _
         }) : null]

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(342494),
-    r = n(997509),
-    a = n(652215),
+    a = n(997509),
+    r = n(652215),
     s = n(49999),
     o = n(985018),
     d = n(279688);
@@ -29,7 +29,7 @@ function c(e) {
             text: o.intl.string(o.t["9l+df7"]),
             variant: "primary",
             onClick: e => {
-                r.A.open(t.id, a.BEX.DISCOVERY_LANDING_PAGE)
+                a.A.open(t.id, r.BEX.DISCOVERY_LANDING_PAGE)
             }
         }],
         onRequestClose: () => n(s.i.USER_DISMISS),

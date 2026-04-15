@@ -46,9 +46,9 @@ function C(e) {
         embeddedActivitiesManager: m.A,
         assetNames: E,
         commandOrigin: C
-    }), [y, v] = s.useState(!1), R = s.useCallback(() => {
+    }), [y, v] = s.useState(!1), j = s.useCallback(() => {
         v(!0)
-    }, [v]), j = s.useCallback(() => {
+    }, [v]), R = s.useCallback(() => {
         v(!1)
     }, [v]), O = s.useMemo(() => (0, l.jsx)("div", {
         className: f.Gz,
@@ -91,10 +91,10 @@ function C(e) {
     }, [S]);
     return (0, l.jsx)(c.DUT, {
         onClick: N,
-        onFocus: R,
-        onBlur: j,
-        onMouseEnter: R,
-        onMouseLeave: j,
+        onFocus: j,
+        onBlur: R,
+        onMouseEnter: j,
+        onMouseLeave: R,
         className: f.XA,
         children: (0, l.jsx)(c.c7X, {
             config: x,

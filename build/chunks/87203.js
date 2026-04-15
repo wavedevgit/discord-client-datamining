@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(827343),
     l = n(168943),
-    r = n(63995),
-    a = n(69407),
+    a = n(63995),
+    r = n(69407),
     s = n(96566),
     o = n(405018),
     d = n(222692),
@@ -31,7 +31,7 @@ function p() {
     } = (0, o.M)(E);
     if (!f) {
         if (E.isGuildStageVoice()) {
-            let e = r.A.getMutableParticipants(E.id, a.ip.SPEAKER),
+            let e = a.A.getMutableParticipants(E.id, r.ip.SPEAKER),
                 t = e?.find(e => {
                     let {
                         user: t

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(503698),
-    a = n.n(r),
+    a = n(503698),
+    r = n.n(a),
     s = n(407045),
     o = n(837381),
     d = n(158954),
@@ -34,7 +34,7 @@ let L = Math.ceil(Math.sqrt(115200)),
     P = function(e) {
         let {
             selected: t
-        } = e, n = (0, o.rm)("quests"), r = l.useRef(null), {
+        } = e, n = (0, o.rm)("quests"), a = l.useRef(null), {
             shouldShowPopover: P,
             shouldShowGradientAndBadge: D,
             dismissOnboardingContent: j
@@ -42,16 +42,16 @@ let L = Math.ceil(Math.sqrt(115200)),
             let e = (0, A.useHasAnyModalOpen)(),
                 t = (0, c.bG)([f.A], () => f.A.quests.size > 0),
                 n = (0, c.bG)([I.default], () => I.default.getCurrentUser()),
-                [i, r] = (0, E.kn)(!e && t && null != n ? [u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING] : [], b.m.PRIVATE_CHANNELS_LIST, !0),
-                a = l.useCallback(() => {
-                    r(b.i.TAKE_ACTION)
-                }, [r]),
+                [i, a] = (0, E.kn)(!e && t && null != n ? [u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING] : [], b.m.PRIVATE_CHANNELS_LIST, !0),
+                r = l.useCallback(() => {
+                    a(b.i.TAKE_ACTION)
+                }, [a]),
                 s = i === u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING,
                 o = (0, p.JZ)(u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING);
             return {
                 shouldShowPopover: s,
                 shouldShowGradientAndBadge: t && !o,
-                dismissOnboardingContent: a
+                dismissOnboardingContent: r
             }
         }(), {
             shouldShowQuestHomeHeroContent: M,
@@ -128,11 +128,11 @@ let L = Math.ceil(Math.sqrt(115200)),
                 i = U?.questHomeEntrypoint?.radialGradient?.start,
                 l = U?.questHomeEntrypoint?.radialGradient?.end;
             M && (null != t && null != n && (e["--custom-quest-home-hero-linear-gradient-start"] = t, e["--custom-quest-home-hero-linear-gradient-end"] = n), null != i && null != l && (e["--custom-quest-home-hero-radial-gradient-start"] = i, e["--custom-quest-home-hero-radial-gradient-end"] = l));
-            let r = null != i && null != l,
-                a = null != t && null != n;
+            let a = null != i && null != l,
+                r = null != t && null != n;
             return {
                 inlineCssProperties: e,
-                shouldShowQuestHomeHeroGradient: M && (r || a)
+                shouldShowQuestHomeHeroGradient: M && (a || r)
             }
         }, [M, U]), en = (0, i.jsx)("div", {
             className: O.iE,
@@ -144,13 +144,13 @@ let L = Math.ceil(Math.sqrt(115200)),
             style: ee,
             children: (0, i.jsxs)(m.z9, {
                 showHoverGradient: !1,
-                className: a()({
+                className: r()({
                     [O.VU]: X || et,
                     [O.jR]: X,
                     [O.XO]: M
                 }),
                 icon: _.r2v,
-                listItemRef: r,
+                listItemRef: a,
                 onClick: G,
                 route: v.BVt.QUEST_HOME,
                 selected: t,
@@ -207,7 +207,7 @@ let L = Math.ceil(Math.sqrt(115200)),
                 asContainer: !0,
                 children: en
             }) : en, Z && (0, i.jsx)(S.A, {
-                targetElementRef: r,
+                targetElementRef: a,
                 onNavigateToQuestHome: G,
                 onRender: K,
                 onRequestClose: j

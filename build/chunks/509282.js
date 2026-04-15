@@ -95,7 +95,7 @@ function P(e) {
             })
         })
     };
-    return (0, i.jsx)(D, {
+    return (0, i.jsx)(M, {
         appName: c.name,
         title: N.intl.formatToPlainString(N.t.XDRjs5, {
             appName: c.name
@@ -159,8 +159,8 @@ function w(e) {
         initialSubscribeForGuild: x
     });
     if (!E || null == A || null == c) return null;
-    let M = c.type === y.Puh.SUBSCRIPTION,
-        k = !!M && (0, m.bg)(c.flags),
+    let D = c.type === y.Puh.SUBSCRIPTION,
+        k = !!D && (0, m.bg)(c.flags),
         O = () => {
             (0, o.mMO)(async () => {
                 let {
@@ -176,8 +176,8 @@ function w(e) {
         },
         U = () => {
             (0, o.mMO)(async () => {
-                let e = M ? (await Promise.resolve().then(n.bind(n, 168393))).SubscriptionDetailsModal : null,
-                    t = M ? null : (await Promise.resolve().then(n.bind(n, 963179))).ItemDetailsModal;
+                let e = D ? (await Promise.resolve().then(n.bind(n, 168393))).SubscriptionDetailsModal : null,
+                    t = D ? null : (await Promise.resolve().then(n.bind(n, 963179))).ItemDetailsModal;
                 return n => {
                     let a = () => {
                         n.onClose(), O()
@@ -200,7 +200,7 @@ function w(e) {
                 }
             })
         },
-        B = M ? k ? (0, i.jsxs)(i.Fragment, {
+        B = D ? k ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.nys, {
                 size: "custom",
                 width: 12,
@@ -221,7 +221,7 @@ function w(e) {
             area: "purchase_button"
         })
     };
-    return (0, i.jsx)(D, {
+    return (0, i.jsx)(M, {
         appName: A.name,
         title: c.name,
         description: B,
@@ -249,7 +249,7 @@ function w(e) {
                     })
                 },
                 text: N.intl.string(N.t.DXYfjO)
-            }), M ? null != _ ? (0, i.jsx)(T.rc, {
+            }), D ? null != _ ? (0, i.jsx)(T.rc, {
                 onClick: P,
                 appId: A.id,
                 subscriptionType: k ? "user" : "guild",
@@ -272,7 +272,7 @@ function w(e) {
     })
 }
 
-function D(e) {
+function M(e) {
     let {
         appName: t,
         title: n,

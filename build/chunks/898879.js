@@ -4,15 +4,15 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(311907),
-    a = n(73153),
+    a = n(311907),
+    r = n(73153),
     s = n(31728),
     o = n(203982),
     d = n(91242),
     c = n(165610),
     u = n(652215);
 let A = (e, t) => {
-    a.h.wait(() => {
+    r.h.wait(() => {
         (0, s.I_)(e, t)
     })
 };
@@ -21,9 +21,9 @@ function h(e) {
     let {
         embedId: t,
         className: n,
-        style: a,
+        style: r,
         currentWindow: s
-    } = e, h = (0, r.bG)([d.A], () => d.A.getConnectedFrame()), _ = (0, r.bG)([d.A], () => d.A.getFrameLayoutMode()), m = null != h && _ === c.y.FOCUSED ? window : s ?? window, g = l.useRef(null), p = l.useCallback(() => {
+    } = e, h = (0, a.bG)([d.A], () => d.A.getConnectedFrame()), _ = (0, a.bG)([d.A], () => d.A.getFrameLayoutMode()), m = null != h && _ === c.y.FOCUSED ? window : s ?? window, g = l.useRef(null), p = l.useCallback(() => {
         null == g.current || A(t, g.current.getBoundingClientRect())
     }, [t]);
     l.useLayoutEffect(() => {
@@ -48,6 +48,6 @@ function h(e) {
     }, [t]), (0, i.jsx)("div", {
         ref: g,
         className: n,
-        style: a
+        style: r
     })
 }

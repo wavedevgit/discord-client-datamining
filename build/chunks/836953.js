@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     l = n(64700),
-    r = n(311907),
-    a = n(587895),
+    a = n(311907),
+    r = n(587895),
     s = n(926466),
     o = n(997509),
     d = n(143582),
@@ -21,10 +21,10 @@ function _(e) {
         _ = (0, c.$s)(n),
         m = () => (0, d.Hc)(n.id),
         g = l.useMemo(() => new Set(_.map(e => e.applicationId)), [_]),
-        p = (0, r.yK)([a.A], () => {
+        p = (0, a.yK)([r.A], () => {
             let e = [];
             for (let t of g) {
-                let n = a.A.getApplication(t);
+                let n = r.A.getApplication(t);
                 null != n && e.push(n)
             }
             return e

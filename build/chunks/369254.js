@@ -9,8 +9,8 @@ var i = n(627968),
     l = n.n(a),
     o = n(397927),
     s = n(930125),
-    d = n(338717),
-    u = n(282108),
+    u = n(338717),
+    d = n(282108),
     h = n(776231),
     c = n(302031),
     m = n(644447),
@@ -26,27 +26,27 @@ var i = n(627968),
     I = n(608214),
     v = n(652215),
     j = n(985018),
-    S = n(108661);
+    M = n(108661);
 
-function M(e) {
+function S(e) {
     let {
         children: t,
         isObscured: n,
         src: a
-    } = e, [o, s] = r.useState(!1), u = r.useCallback(() => {
+    } = e, [o, s] = r.useState(!1), d = r.useCallback(() => {
         s(e => !e)
     }, []);
     return n ? (0, i.jsx)(c.Bs.Provider, {
         value: o,
         children: (0, i.jsx)(c.Ay, {
             type: c.Ay.Types.ATTACHMENT,
-            reason: d.Oc.EXPLICIT_CONTENT,
+            reason: u.Oc.EXPLICIT_CONTENT,
             obscured: !0,
             isSingleMosaicItem: !0,
-            onToggleObscurity: u,
+            onToggleObscurity: d,
             children: e => (0, i.jsx)("div", {
-                className: l()(S.JT, {
-                    [S.Qr]: e
+                className: l()(M.JT, {
+                    [M.Qr]: e
                 }),
                 children: t(e)
             })
@@ -77,7 +77,7 @@ function O(e) {
         items: t,
         onIndexChange: n,
         startIndex: a = 0,
-        enabledContentHarmTypeFlags: d = 0,
+        enabledContentHarmTypeFlags: u = 0,
         shouldHideMediaOptions: h = !1
     } = e, [c, m] = r.useState(a), g = r.useRef(a), {
         zoomed: x,
@@ -94,10 +94,10 @@ function O(e) {
         }
     }, [O, N]);
     let P = t[c],
-        _ = (0, u.qo)({
+        _ = (0, d.qo)({
             type: s.D.GenericMedia,
             media: P
-        }, d),
+        }, u),
         T = h ? e => {
             e.stopPropagation(), e.preventDefault()
         } : () => f.l.markActionPerformed(f.N.CONTEXT_MENU_OPENED),
@@ -111,20 +111,20 @@ function O(e) {
                     },
                     icon: o.Zge,
                     tooltip: j.intl.string(j.t.vgfxaA),
-                    className: l()(S.vi, e)
+                    className: l()(M.vi, e)
                 }), (0, i.jsx)(E.A, {
                     onClick: e => {
                         e.stopPropagation(), p._.dispatch(v.jej.MODAL_CAROUSEL_NEXT)
                     },
                     icon: o.KS6,
                     tooltip: j.intl.string(j.t.XiOHRX),
-                    className: l()(S.f8, e)
+                    className: l()(M.f8, e)
                 })]
             }) : void 0
         }), (0, i.jsx)(y.A, {
             items: t,
             currentIndex: c,
-            children: (e, t) => (0, i.jsx)(M, {
+            children: (e, t) => (0, i.jsx)(S, {
                 isObscured: !x && _,
                 src: P.url,
                 children: n => (0, i.jsx)(I.Ay, {
@@ -141,7 +141,7 @@ function O(e) {
                 currentIndex: c,
                 onGalleryItemClick: O,
                 className: e,
-                enabledContentHarmTypeFlags: d
+                enabledContentHarmTypeFlags: u
             })
         })]
     })

@@ -1,87 +1,85 @@
 /** chunk id: 128988 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => m
 });
 var i = n(627968),
     a = n(64700),
     l = n(688807),
     s = n(311907),
     r = n(397927),
-    o = n(178213),
-    c = n(86638),
-    d = n(287809),
-    u = n(788593),
-    g = n(742710),
-    _ = n(463259),
-    m = n(18983),
-    f = n(563919);
+    o = n(86638),
+    c = n(287809),
+    d = n(788593),
+    u = n(742710),
+    g = n(463259),
+    _ = n(563919);
 
-function x(e) {
+function m(e) {
     let {
         scrollerRef: t
-    } = e, n = (0, o.GG)("user_profile_drag_preview_layer"), {
-        isDragging: x,
-        item: p,
-        sourceClientOffset: I
+    } = e, {
+        isDragging: n,
+        item: m,
+        sourceClientOffset: f
     } = (0, l.V)(e => ({
         isDragging: e.isDragging(),
         item: e.getItem(),
         sourceClientOffset: e.getSourceClientOffset()
-    })), A = (0, s.bG)([d.default], () => d.default.getCurrentUser()), h = (0, r.VUy)(), E = a.useMemo(() => null == A || null == p ? null : function(e, t, n) {
+    })), x = (0, s.bG)([c.default], () => c.default.getCurrentUser()), p = (0, r.VUy)(), I = a.useMemo(() => null == x || null == m ? null : function(e, t) {
         let {
-            id: a,
-            itemType: l,
-            itemPreviewProps: s
+            id: n,
+            itemType: a,
+            itemPreviewProps: l
         } = e;
-        if ("WIDGET" === l && s?.widget != null) {
+        if ("WIDGET" === a && l?.widget != null) {
             let {
                 widget: e,
                 getWidth: n
-            } = s, a = n?.() ?? 432;
+            } = l, a = n?.() ?? 432;
             return (0, i.jsx)("div", {
-                className: f.dt,
+                className: _.dt,
                 style: {
                     width: a
                 },
-                children: (0, i.jsx)(_.u, {
+                children: (0, i.jsx)(g.u, {
                     widget: e,
                     user: t,
                     disableInteraction: !0
                 })
             })
         }
-        if ("GAME_COVER" === l && s?.gameName != null) {
+        if ("GAME_COVER" === a && l?.gameName != null) {
             let {
                 imageSrc: e,
-                gameName: n,
-                getWidth: l
-            } = s, r = l?.() ?? 90;
+                gameName: a,
+                getWidth: s
+            } = l, r = s?.() ?? 90;
             return (0, i.jsx)("div", {
                 style: {
                     width: r
                 },
-                children: (0, i.jsx)(u.A, {
-                    className: f.XJ,
+                children: (0, i.jsx)(d.A, {
+                    className: _.XJ,
                     imageSrc: e,
-                    gameName: n,
-                    applicationId: a,
+                    gameName: a,
+                    applicationId: n,
                     userId: t?.id,
                     disableInteraction: !0
                 })
             })
         }
-        if ("GAME_DETAILS_CARD" === l && s?.game != null && s?.widgetType != null) {
+        if ("GAME_DETAILS_CARD" === a && l?.game != null && l?.widgetType != null) {
             let {
                 game: e,
                 widgetType: n,
                 getWidth: a
-            } = s, l = a?.() ?? 400;
+            } = l, s = a?.() ?? 400;
             return (0, i.jsx)("div", {
-                className: f.xB,
+                className: _.xB,
                 style: {
-                    width: l
+                    width: s
                 },
-                children: (0, i.jsx)(g.A, {
+                children: (0, i.jsx)(u.A, {
                     user: t,
                     widgetType: n,
                     game: e,
@@ -89,57 +87,49 @@ function x(e) {
                 })
             })
         }
-        if ("WISHLIST_ITEM" === l && s?.item != null) {
+        if ("WISHLIST_ITEM" === a && l?.item != null) {
             let {
                 item: e
-            } = s;
+            } = l;
             return (0, i.jsx)("div", {
-                className: f.Xm,
-                children: n ? (0, i.jsx)(c.A, {
+                className: _.Xm,
+                children: (0, i.jsx)(o.A, {
                     item: e,
                     wishlistOwner: t,
                     wishlistId: null,
-                    isDragging: !0
-                }) : (0, i.jsx)(m.A, {
-                    item: e,
-                    profileOwner: t,
-                    wishlistId: null,
-                    isOwner: !1,
-                    showOverlayButton: !1,
-                    showIcons: !1,
                     isDragging: !0
                 })
             })
         }
         return null
-    }(p, A, n), [p, A, n]), v = a.useRef(null), j = a.useCallback(() => {
+    }(m, x), [m, x]), A = a.useRef(null), h = a.useCallback(() => {
         if (null == t.current) return;
         let e = t.current.getBoundingClientRect();
-        v.current = {
+        A.current = {
             x: e.left,
             y: e.top
         }
     }, [t]);
     if (a.useEffect(() => {
-            if (!x) {
-                v.current = null;
+            if (!n) {
+                A.current = null;
                 return
             }
-            null == v.current && j()
-        }, [x, j]), !0 !== x || null == I || null == E) return null;
-    null == v.current && j();
+            null == A.current && h()
+        }, [n, h]), !0 !== n || null == f || null == I) return null;
+    null == A.current && h();
     let {
-        x: T,
-        y: b
-    } = v.current ?? {
+        x: E,
+        y: v
+    } = A.current ?? {
         x: 0,
         y: 0
-    }, C = I.x - T - 60 * !!h, N = I.y - b;
+    }, j = f.x - E - 60 * !!p, T = f.y - v;
     return (0, i.jsx)("div", {
-        className: f.kL,
+        className: _.kL,
         style: {
-            transform: `translate3d(${C}px, ${N}px, 0)`
+            transform: `translate3d(${j}px, ${T}px, 0)`
         },
-        children: E
+        children: I
     })
 }

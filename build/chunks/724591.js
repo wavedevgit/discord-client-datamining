@@ -1,6 +1,6 @@
 /** chunk id: 724591 params = (module,exports,require) **/
 n.d(t, {
-    A: () => R
+    A: () => j
 });
 var i = n(627968),
     l = n(64700),
@@ -28,11 +28,11 @@ var i = n(627968),
     b = n(49999),
     y = n(985018),
     v = n(567431);
-let R = l.memo(function(e) {
+let j = l.memo(function(e) {
     let {
         guild: t,
         selected: s
-    } = e, R = l.useRef(null), j = l.useRef(null), O = (0, c.useHasAnyModalOpen)(), L = (0, r.bG)([I.A], () => I.A.hasLayers()), M = (0, _.xr)(e => e.fullScreenLayers.length > 0);
+    } = e, j = l.useRef(null), R = l.useRef(null), O = (0, c.useHasAnyModalOpen)(), L = (0, r.bG)([I.A], () => I.A.hasLayers()), M = (0, _.xr)(e => e.fullScreenLayers.length > 0);
     l.useEffect(() => {
         (0, p.Kh)(t.id)
     }, [t.id]);
@@ -71,11 +71,11 @@ let R = l.memo(function(e) {
             })
         }, [t]),
         Y = l.useCallback(() => {
-            R.current?.onMouseEnter(null, 500)
-        }, [R]),
+            j.current?.onMouseEnter(null, 500)
+        }, [j]),
         z = l.useCallback((e, n, l, r) => (0, i.jsx)(T.G, {
             innerClassName: e,
-            ref: j,
+            ref: R,
             id: `game-shop-${t.id}`,
             renderIcon: e => (0, i.jsx)(u.U1X, {
                 size: "custom",
@@ -114,7 +114,7 @@ let R = l.memo(function(e) {
             onActionMouseDown: F,
             onRender: Y,
             onRequestClose: W,
-            targetElementRef: j,
+            targetElementRef: R,
             skuImageDetails: q,
             title: y.intl.string(y.t["7PvvS9"]),
             body: y.intl.formatToPlainString(y.t["9J4h1a"], {
@@ -123,7 +123,7 @@ let R = l.memo(function(e) {
         }) : null, [V, U, H, F, Y, W, q]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(x.A, {
-            ref: R,
+            ref: j,
             children: z
         }), !O && !L && !M && X()]
     })

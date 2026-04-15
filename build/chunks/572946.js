@@ -5,15 +5,15 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(397927),
-    r = n(587895),
-    a = n(851907);
+    a = n(587895),
+    r = n(851907);
 
 function s(e) {
     let {
         applicationId: t,
         channelId: s,
         mediaUrl: o
-    } = e, d = r.A.getApplication(t), c = null != (0, a.Ay)({
+    } = e, d = a.A.getApplication(t), c = null != (0, r.Ay)({
         application: d,
         channelId: s
     }) ? l.KX8 : l.SYi;

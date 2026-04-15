@@ -1,14 +1,14 @@
 /** chunk id: 663278 params = (module,exports,require) **/
 n.d(t, {
-    MW: () => a,
+    MW: () => r,
     zw: () => s
 });
 var i, l = n(723702),
-    r = n(655087),
-    a = ((i = {})[i.UNHANDLED = -1] = "UNHANDLED", i[i.NOMINAL = 0] = "NOMINAL", i[i.FAIR = 1] = "FAIR", i[i.SERIOUS = 2] = "SERIOUS", i[i.CRITICAL = 3] = "CRITICAL", i);
+    a = n(655087),
+    r = ((i = {})[i.UNHANDLED = -1] = "UNHANDLED", i[i.NOMINAL = 0] = "NOMINAL", i[i.FAIR = 1] = "FAIR", i[i.SERIOUS = 2] = "SERIOUS", i[i.CRITICAL = 3] = "CRITICAL", i);
 
 function s() {
-    var e = r.A.getRawThermalState();
+    var e = a.A.getRawThermalState();
     if (null == e) return -1;
     if ((0, l.isIOS)()) return e;
     if (!(0, l.isAndroid)()) return -1;

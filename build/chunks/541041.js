@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(311907),
-    a = n(926466),
+    a = n(311907),
+    r = n(926466),
     s = n(509536),
     o = n(498642),
     d = n(652215),
@@ -31,7 +31,7 @@ class h extends l.PureComponent {
             memberCount: t,
             markAsDismissed: n
         } = this.props;
-        return (0, i.jsx)(a.A, {
+        return (0, i.jsx)(r.A, {
             guild: e,
             onDismissed: () => n(c.i.UNKNOWN),
             onClick: this.handleButtonClick,
@@ -44,7 +44,7 @@ class h extends l.PureComponent {
         })
     }
 }
-let _ = r.Ay.connectStores([o.A], e => {
+let _ = a.Ay.connectStores([o.A], e => {
     let {
         guild: t
     } = e;

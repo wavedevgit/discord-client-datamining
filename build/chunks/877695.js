@@ -35,8 +35,8 @@ function N(e) {
         message: l,
         onTransitionToInviteChannel: c,
         onAcceptInstantInvite: g
-    } = e, x = a.useRef(null), [N, L] = a.useState(!0), [R, P] = a.useState(!1), w = t.state === T.elq.ACCEPTING, D = (0, o.bG)([u.A], () => u.A.useReducedMotion), {
-        analyticsLocations: M
+    } = e, x = a.useRef(null), [N, L] = a.useState(!0), [R, P] = a.useState(!1), w = t.state === T.elq.ACCEPTING, M = (0, o.bG)([u.A], () => u.A.useReducedMotion), {
+        analyticsLocations: D
     } = (0, m.Ay)(_.A.INVITE_EMBED);
     (0, h.A)({
         name: r.ImpressionNames.INVITE_EMBED,
@@ -48,7 +48,7 @@ function N(e) {
             invite_instance_id: (0, E._U)(t.code, l.id),
             invite_channel_type: t.channel?.type,
             embed_type: "guild_invite_v2",
-            location_stack: M
+            location_stack: D
         }
     }), a.useLayoutEffect(() => {
         P((x.current?.clientHeight ?? 0) > 292)
@@ -62,8 +62,8 @@ function N(e) {
         }, [N, R]),
         B = a.useMemo(() => R && x.current?.clientHeight != null ? {
             height: N ? 292 : x.current.clientHeight + 36 + 48,
-            transition: D ? void 0 : "height 0.2s ease"
-        } : {}, [N, R, D]);
+            transition: M ? void 0 : "height 0.2s ease"
+        } : {}, [N, R, M]);
     return null == k ? (0, i.jsx)(b.A, {}) : (0, i.jsxs)(d.sqX, {
         className: s()(S.Gg, {
             [S.vk]: R && N

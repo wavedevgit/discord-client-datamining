@@ -72,7 +72,7 @@ function S(e) {
         o = a.useCallback(() => !l || n ? null : (0, i.jsx)(c.m, {
             text: b.intl.string(b.t["/fgfWh"]),
             children: (0, i.jsxs)("div", {
-                className: T.M,
+                className: T.MV,
                 children: [(0, i.jsx)(u.xgA, {
                     size: "xs",
                     color: "currentColor"
@@ -89,8 +89,11 @@ function S(e) {
         src: t.url,
         posterUrl: h.toString(),
         channelId: e.message.channel_id,
-        className: s()(T.m, e.className),
+        className: s()(T.m0, e.className, {
+            [T.g$]: n
+        }),
         embed: !0,
+        fillContainer: !e.isSingleMosaicItem,
         onClick: e.onClick ?? void 0,
         onContextMenu: e.onContextMenu ?? void 0,
         maxWidth: e.maxWidth,

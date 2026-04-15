@@ -1,6 +1,6 @@
 /** chunk id: 466853 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => E
 });
 var l = n(627968),
     i = n(64700),
@@ -22,7 +22,7 @@ var l = n(627968),
     T = n(985018),
     j = n(133178);
 
-function E(e) {
+function A(e) {
     let {
         index: t,
         widget: n,
@@ -40,7 +40,7 @@ function E(e) {
     let x = i.useMemo(() => n.id ?? (0, c.Ld)(), [n.id]),
         {
             isDragging: y,
-            dragSourcePosition: E
+            dragSourcePosition: A
         } = (0, g.gY)({
             dragRef: d,
             dropRef: u,
@@ -55,9 +55,9 @@ function E(e) {
             onReorder: m.R_,
             onEnd: () => p(n.type)
         }),
-        A = null != E,
-        I = A && t < E,
-        N = A && t > E;
+        E = null != A,
+        I = E && t < A,
+        N = E && t > A;
     return (0, l.jsxs)("div", {
         ref: u,
         className: r()(j.wX, {
@@ -77,7 +77,7 @@ function E(e) {
     })
 }
 
-function A(e) {
+function E(e) {
     let {
         userId: t,
         widget: n,
@@ -87,7 +87,7 @@ function A(e) {
         index: f,
         trailingContent: v,
         headerTitle: T,
-        headerSubtitle: A,
+        headerSubtitle: E,
         headerActionButtons: I,
         headerClassName: N,
         additionalManageWidgetMenuItems: R
@@ -106,7 +106,7 @@ function A(e) {
                 userId: t,
                 headingId: _,
                 title: T,
-                subtitle: A,
+                subtitle: E,
                 actionButtons: I,
                 widget: n,
                 disableInteraction: m,
@@ -118,7 +118,7 @@ function A(e) {
     return (0, l.jsx)("section", {
         ref: D,
         "aria-labelledby": _,
-        children: O ? (0, l.jsx)(E, {
+        children: O ? (0, l.jsx)(A, {
             index: f ?? 0,
             widget: n,
             getWidth: () => C.current?.offsetWidth,

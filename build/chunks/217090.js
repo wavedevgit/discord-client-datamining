@@ -4,26 +4,26 @@ n.d(t, {
 });
 var i = n(735438),
     l = n.n(i),
-    r = n(179771),
-    a = n(613057),
+    a = n(179771),
+    r = n(613057),
     s = n(652215);
 
 function o(e, t) {
     return {
         [s.ZE4.VOICE_SETTINGS_UPDATE]: {
             scope: {
-                [a.sm.ANY]: [r.F.RPC, r.F.RPC_VOICE_READ]
+                [r.sm.ANY]: [a.F.RPC, a.F.RPC_VOICE_READ]
             },
             handler: () => t => {
                 let {
                     prevState: n,
                     dispatch: i
-                } = t, r = e();
-                return l().isEqual(r, n) || i(r), r
+                } = t, a = e();
+                return l().isEqual(a, n) || i(a), a
             }
         },
         [s.ZE4.VOICE_SETTINGS_UPDATE_2]: {
-            scope: a.hj,
+            scope: r.hj,
             handler(e) {
                 let {
                     socket: n
@@ -31,11 +31,11 @@ function o(e, t) {
                 return e => {
                     let {
                         prevState: i,
-                        dispatch: r
+                        dispatch: a
                     } = e;
                     if (null == n.application.id) return i;
-                    let a = t(n.application.id);
-                    return l().isEqual(a, i) || r(a), a
+                    let r = t(n.application.id);
+                    return l().isEqual(r, i) || a(r), r
                 }
             }
         }

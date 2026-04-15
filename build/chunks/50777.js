@@ -1,6 +1,6 @@
 /** chunk id: 50777 params = (module,exports,require) **/
 n.d(t, {
-    A: () => D
+    A: () => M
 });
 var i = n(627968),
     a = n(64700),
@@ -84,15 +84,15 @@ function w(e) {
     })
 }
 
-function D(e) {
+function M(e) {
     let {
         guildId: t,
         skuId: n,
         channel: l
-    } = e, s = (0, o.bG)([C.A], () => C.A.isFetchingForSKU(n)), D = (0, A.A)({
+    } = e, s = (0, o.bG)([C.A], () => C.A.isFetchingForSKU(n)), M = (0, A.A)({
         skuId: n,
         location: "SocialLayerStorefrontProductDetailsEmbed"
-    }), M = D?.applicationId, k = (0, o.bG)([m.A], () => null != M && m.A.isFetchingApplication(M)), O = (0, o.bG)([m.A], () => null != M && m.A.didFetchingApplicationFail(M)), U = (0, p.h)(M), B = (0, b.b)({
+    }), D = M?.applicationId, k = (0, o.bG)([m.A], () => null != D && m.A.isFetchingApplication(D)), O = (0, o.bG)([m.A], () => null != D && m.A.didFetchingApplicationFail(D)), U = (0, p.h)(D), B = (0, b.b)({
         location: "product_details_embed"
     }), {
         analyticsLocations: G
@@ -103,50 +103,50 @@ function D(e) {
         {
             primaryIconAsset: V,
             primaryIconLabel: q
-        } = a.useMemo(() => (0, E.Cv)(D, M), [D, M]),
+        } = a.useMemo(() => (0, E.Cv)(M, D), [M, D]),
         {
             normalPrice: W,
             discountedPrice: z,
             discountPercent: Y
         } = (0, g.ou)({
-            sku: D,
+            sku: M,
             priceSetAssignmentPurchaseType: L.lid.DEFAULT
         });
     a.useEffect(() => {
         null == t || null == n || C.A.isFetchingForSKU(n) || (0, I.qf)(t, n)
     }, [t, n]);
     let Q = a.useCallback(e => {
-            e.stopPropagation(), D?.applicationId != null && (0, T.R)({
+            e.stopPropagation(), M?.applicationId != null && (0, T.R)({
                 skuId: n,
-                applicationId: D.applicationId,
+                applicationId: M.applicationId,
                 isStorefront: !1,
                 analyticsLocations: G
             })
-        }, [n, D, G]),
+        }, [n, M, G]),
         K = a.useCallback(() => {
-            null != D && H && (0, y.a)(D, {
+            null != M && H && (0, y.a)(M, {
                 isGift: !1
             }, {
                 analyticsLocations: [u.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED_PURCHASE_BUTTON],
                 guildId: t
             })
-        }, [D, t, H]),
+        }, [M, t, H]),
         X = a.useCallback(() => {
-            null != D && (0, y.a)(D, {
+            null != M && (0, y.a)(M, {
                 isGift: !0,
                 giftRecipient: F ?? void 0
             }, {
                 analyticsLocations: [u.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED_GIFT_BUTTON]
             })
-        }, [D, F]),
-        J = null != M && null == U && !O;
-    if ((s || k || J) && (null == D || null == U)) return (0, i.jsx)("div", {
+        }, [M, F]),
+        J = null != D && null == U && !O;
+    if ((s || k || J) && (null == M || null == U)) return (0, i.jsx)("div", {
         className: P.kL,
         children: (0, i.jsx)(c.y$y, {
             className: P.u1
         })
     });
-    if (null == D || null == U || !(0, h.A)(U) || U.guildId !== t) return null;
+    if (null == M || null == U || !(0, h.A)(U) || U.guildId !== t) return null;
     let Z = z ?? W;
     return (0, i.jsxs)("div", {
         className: P.kL,
@@ -169,10 +169,10 @@ function D(e) {
                     }), (0, i.jsx)(c.Text, {
                         variant: "text-md/medium",
                         lineClamp: 1,
-                        children: D.name
+                        children: M.name
                     })]
                 }), (0, i.jsx)(w, {
-                    sku: D,
+                    sku: M,
                     normalPrice: W,
                     discountedPrice: z,
                     discountPercent: Y

@@ -28,15 +28,15 @@ function N(e) {
         user: t,
         stream: n,
         channel: s
-    } = e, [N, T] = l.useState(!1), S = (0, m.AO)(n), b = (0, r.bG)([g.A], () => g.A.getDetectableIdsToApplicationIds()), y = S?.id, v = null != y ? b[y] : null, R = (0, h.h)(v), {
-        isLoading: j,
+    } = e, [N, T] = l.useState(!1), S = (0, m.AO)(n), b = (0, r.bG)([g.A], () => g.A.getDetectableIdsToApplicationIds()), y = S?.id, v = null != y ? b[y] : null, j = (0, h.h)(v), {
+        isLoading: R,
         applicationWidgetConfig: O,
         hasApplicationWidgetOnUserProfile: L
     } = (0, u.A)(t.id, v, "social_layer_commerce_stream_header"), M = (0, r.bG)([E.default], () => E.default.getId()), D = l.useRef(null), [U, G] = (0, _.RF)(o.M.SLAYER_STOREFRONT_VC_GIFTING_STREAM_HEADER_NEW_BADGE, (0, A.c)(o.M.SLAYER_STOREFRONT_VC_GIFTING_STREAM_HEADER_NEW_BADGE), void 0, !0), P = U === o.M.SLAYER_STOREFRONT_VC_GIFTING_STREAM_HEADER_NEW_BADGE, {
         hasAlreadyLinked: k,
         canStartAuthorization: w,
         fetched: B
-    } = (0, c.RD)(M === t.id ? R : null), V = M === t.id && w && !B, H = l.useCallback(() => {
+    } = (0, c.RD)(M === t.id ? j : null), V = M === t.id && w && !B, H = l.useCallback(() => {
         T(!1)
     }, []), F = null != O && (k || w), {
         isAppIcon: W,
@@ -44,11 +44,11 @@ function N(e) {
         text: Y,
         renderPopout: z
     } = l.useMemo(() => {
-        if (null == R || null == v) return {
+        if (null == j || null == v) return {
             isAppIcon: !1
         };
         if (L || F) {
-            let e = R.getIconURL(p.iu.SMALL),
+            let e = j.getIconURL(p.iu.SMALL),
                 n = null != e,
                 l = n ? (0, i.jsx)("img", {
                     className: C.Kk,
@@ -95,8 +95,8 @@ function N(e) {
                 onClose: H
             })
         }
-    }, [R, v, L, F, M, t.id, s, H]);
-    return j || V || null == z ? null : (0, i.jsx)(d.YNO, {
+    }, [j, v, L, F, M, t.id, s, H]);
+    return R || V || null == z ? null : (0, i.jsx)(d.YNO, {
         targetElementRef: D,
         shouldShow: N,
         animation: d.YNO.Animation.FADE,

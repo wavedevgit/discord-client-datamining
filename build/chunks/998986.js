@@ -1,6 +1,6 @@
 /** chunk id: 998986 params = (module,exports,require) **/
 n.d(t, {
-    A: () => R
+    A: () => j
 });
 var i = n(627968);
 n(64700);
@@ -34,7 +34,7 @@ function v(e) {
         guildId: t,
         selected: n,
         handleClick: l
-    } = e, c = (0, g.w)(t), _ = (0, a.bG)([x.A], () => x.A.getGuild(t)), T = _?.features.has(N.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) === !0, v = "false" === o.w.get(S.bJ, "false"), R = (0, a.bG)([u.A], () => u.A.useReducedMotion);
+    } = e, c = (0, g.w)(t), _ = (0, a.bG)([x.A], () => x.A.getGuild(t)), T = _?.features.has(N.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) === !0, v = "false" === o.w.get(S.bJ, "false"), j = (0, a.bG)([u.A], () => u.A.useReducedMotion);
     return (0, i.jsx)(C.G, {
         id: `shop-${t}`,
         className: s()(y.A2, {
@@ -52,7 +52,7 @@ function v(e) {
         onClick: l,
         trailing: (0, i.jsxs)("div", {
             className: y.ai,
-            children: [R ? (0, i.jsx)(d.LpS, {
+            children: [j ? (0, i.jsx)(d.LpS, {
                 color: d.LU0.unsafe_rawColors.BRAND_260.css,
                 text: b.intl.string(b.t.y2b7CA),
                 className: y.Ad
@@ -78,7 +78,7 @@ function v(e) {
     })
 }
 
-function R(e) {
+function j(e) {
     let {
         guild: t,
         selected: l

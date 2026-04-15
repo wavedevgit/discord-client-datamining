@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    r = n(311907),
-    a = n(397927),
+    a = n(311907),
+    r = n(397927),
     s = n(73153),
     o = n(189252),
     d = n(994500),
@@ -14,7 +14,7 @@ var i = n(627968),
     A = n(985018);
 
 function h() {
-    let e = (0, r.bG)([d.A], () => d.A.getPendingCount() > 0);
+    let e = (0, a.bG)([d.A], () => d.A.getPendingCount() > 0);
     return l.useEffect(() => {
         s.h.dispatch({
             type: "FRIENDS_LIST_POPOUT_MOUNTED"
@@ -22,11 +22,11 @@ function h() {
     }, []), (0, i.jsx)(u.l, {
         popoutPosition: "bottom",
         popoutAlign: "left",
-        children: (t, n, l, r) => (0, i.jsx)(o.A, {
+        children: (t, n, l, a) => (0, i.jsx)(o.A, {
             ...l,
-            ref: r,
+            ref: a,
             onClick: t,
-            icon: a.$yI,
+            icon: r.$yI,
             tooltip: A.intl.string(A.t.TdEu5X),
             showBadge: e,
             selected: n
