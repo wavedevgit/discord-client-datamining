@@ -1,6 +1,6 @@
 /** chunk id: 751304 params = (module,exports,require) **/
 r.d(t, {
-    A: () => B
+    A: () => H
 });
 var n = r(627968),
     l = r(64700),
@@ -17,8 +17,8 @@ var n = r(627968),
     m = r(713517),
     x = r(440938),
     g = r(161918),
-    A = r(320447),
-    h = r(597783),
+    h = r(320447),
+    A = r(597783),
     I = r(777829),
     v = r(859587),
     _ = r(918838),
@@ -35,15 +35,15 @@ var n = r(627968),
     N = r(935094),
     L = r(758836),
     V = r(551497);
-let H = l.memo(function(e) {
+let B = l.memo(function(e) {
         let {
             product: t,
             hideWishlistButton: r,
             hideProductName: i,
             hideVariantSwitcher: a,
             hidePrice: p,
-            hidePrimaryCTA: H,
-            hideSecondaryCTA: B,
+            hidePrimaryCTA: B,
+            hideSecondaryCTA: H,
             badgeOverride: w,
             skipLimitedTimeCheck: U,
             onClickCard: D,
@@ -67,32 +67,32 @@ let H = l.memo(function(e) {
             handleLeaving: en
         } = (0, N.f)(t), el = (0, P.gZ)() ?? $, {
             enabled: ei
-        } = (0, A.P)("ProductCard"), es = (0, g.Mk)(), ea = es?.tab, eo = (0, x.uM)(), eu = l.useMemo(() => (0, P.UU)(t, ea, eo), [t, ea, eo]), ec = (0, T.s7)(t), ed = l.useRef(null), {
+        } = (0, h.P)("ProductCard"), es = (0, g.Mk)(), ea = es?.tab, eo = (0, x.uM)(), eu = l.useMemo(() => (0, P.UU)(t, ea, eo), [t, ea, eo]), ec = (0, T.s7)(t), ed = l.useRef(null), {
             isHoveringOrFocusing: ep
         } = (0, m.A)(ed), ek = (0, _.U)(t), eC = (0, o.A)(ed, ek), {
             handleCardVisibilityChange: em
-        } = (0, h.Z)(t.skuId, ea === L.G2.CATALOG ? "full" : ea), ex = (0, P.ql)(t, k.A.COLLECTIBLES_SHOP_CARD, eu), {
+        } = (0, A.Z)(t.skuId, ea === L.G2.CATALOG ? "full" : ea), ex = (0, P.ql)(t, k.A.COLLECTIBLES_SHOP_CARD, eu), {
             analyticsLocations: eg
-        } = (0, C.Ay)(), eA = (0, I.f)({
+        } = (0, C.Ay)(), eh = (0, I.f)({
             product: t,
             analyticsLocations: eg
-        }), eh = l.useCallback(e => {
-            null != D ? D(e) : (eA(L.sH.OPEN_DETAILS), ex(e))
-        }, [eA, D, ex]);
+        }), eA = l.useCallback(e => {
+            null != D ? D(e) : (eh(L.sH.OPEN_DETAILS), ex(e))
+        }, [eh, D, ex]);
         (0, v.x)(ep, t);
         let {
             enabled: eI
-        } = (0, A.P)("ProductCard"), ev = t.type === u.R.BUNDLE && eI && t.previewAssets?.fgStatic != null, e_ = t.type === u.R.VARIANTS_GROUP && !a, eT = l.useMemo(() => ({
+        } = (0, h.P)("ProductCard"), ev = t.type === u.R.BUNDLE && eI && t.previewAssets?.fgStatic != null, e_ = t.type === u.R.VARIANTS_GROUP && !a, eT = l.useMemo(() => ({
             maxVariantsToShow: 4,
             onClick: ex
-        }), [ex]), ef = t.type === u.R.BUNDLE && ei && !ee, eE = !H || !B, ey = !(p && i) || e_, ej = ey || eE, eb = eE || e_;
+        }), [ex]), ef = t.type === u.R.BUNDLE && ei && !ee, eE = !B || !H, ey = !(p && i) || e_, ej = ey || eE, eb = eE || e_;
         return (0, n.jsx)(c.L, {
             innerRef: ed,
             onChange: em,
             threshold: 0,
             children: (0, n.jsx)(d.sqX, {
                 ref: eC,
-                onClick: eh,
+                onClick: eA,
                 "aria-label": ec,
                 className: s()(Z, V.ty, {
                     [V.yo]: ep
@@ -131,7 +131,7 @@ let H = l.memo(function(e) {
                         }), !r && (0, n.jsx)(O.A, {
                             skuId: t.skuId,
                             isCardHovered: ep,
-                            onTrackClick: eA
+                            onTrackClick: eh
                         })]
                     }), ej && (0, n.jsxs)(n.Fragment, {
                         children: [(0, n.jsx)("div", {
@@ -161,7 +161,7 @@ let H = l.memo(function(e) {
                                     onVariantEnter: er,
                                     onVariantExit: en,
                                     overflowProps: eT,
-                                    onTrackClick: eA
+                                    onTrackClick: eh
                                 })]
                             }), eE && (0, n.jsx)("div", {
                                 className: V.Vs,
@@ -169,22 +169,22 @@ let H = l.memo(function(e) {
                                     wrap: !1,
                                     className: V.Ld,
                                     fullWidth: !0,
-                                    children: [!H && (0, n.jsx)(b.A, {
+                                    children: [!B && (0, n.jsx)(b.A, {
                                         skuId: t.skuId,
                                         cardRef: ed,
                                         onClick: M,
                                         text: Y,
                                         prioritizedCurrency: el,
                                         onClickAnalytics: eu,
-                                        onTrackClick: eA
-                                    }), !B && (0, n.jsx)(R.A, {
+                                        onTrackClick: eh
+                                    }), !H && (0, n.jsx)(R.A, {
                                         skuId: t.skuId,
                                         cardRef: ed,
                                         onClick: W,
                                         icon: Q,
                                         prioritizedCurrency: el,
                                         onClickAnalytics: eu,
-                                        onTrackClick: eA
+                                        onTrackClick: eh
                                     })]
                                 })
                             })]
@@ -194,7 +194,7 @@ let H = l.memo(function(e) {
             })
         })
     }),
-    B = e => {
+    H = e => {
         let {
             skuId: t,
             ...r
@@ -203,7 +203,7 @@ let H = l.memo(function(e) {
         }));
         return null == l ? null : (0, n.jsx)(x.R9, {
             newValue: i,
-            children: (0, n.jsx)(H, {
+            children: (0, n.jsx)(B, {
                 product: l,
                 ...r
             })

@@ -28,7 +28,7 @@ let c = e => {
                 product: t,
                 isPremiumUser: a
             }) ?? void 0,
-            isOrbExclusive: !!l && (0, i.Ab)(t)
+            isOrbExclusive: (0, i.Ab)(t)
         }
     },
     u = e => {

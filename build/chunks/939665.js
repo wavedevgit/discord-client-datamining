@@ -51,7 +51,7 @@ function W(e) {
         subscriptionTier: a,
         trialId: W,
         handleClose: K
-    } = e, z = (0, j.t)(e => e.selectedSkuId), {
+    } = e, z = (0, j.t4)(e => e.selectedSkuId), {
         activeSubscription: V,
         defaultPlanId: q,
         priceOptions: Y,

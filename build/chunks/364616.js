@@ -17,8 +17,8 @@ var n = r(627968),
     m = r(466459),
     x = r(623373),
     g = r(561769),
-    A = r(758836),
-    h = r(985018),
+    h = r(758836),
+    A = r(985018),
     I = r(356529);
 let v = e => {
         let {
@@ -31,8 +31,8 @@ let v = e => {
             onTrackClick: C
         } = e, m = (0, k.Q)(t), {
             shownVariants: g,
-            totalVariants: A,
-            hasOverflow: h
+            totalVariants: h,
+            hasOverflow: A
         } = l.useMemo(() => {
             let e = d?.maxVariantsToShow;
             return (0, x.B1)(t) ? null == e || e >= t.variants.length ? {
@@ -73,11 +73,11 @@ let v = e => {
                             isSelected: t === m,
                             onVariantEnter: () => r(t),
                             onVariantExit: i,
-                            zIndex: A - Math.abs(m - t),
+                            zIndex: h - Math.abs(m - t),
                             onVariantClick: v,
                             onTrackClick: C
-                        }, e.variantValue)), null != d && h && (0, n.jsx)(f, {
-                            zIndex: m >= d.maxVariantsToShow - 1 ? A + 1 : 0,
+                        }, e.variantValue)), null != d && A && (0, n.jsx)(f, {
+                            zIndex: m >= d.maxVariantsToShow - 1 ? h + 1 : 0,
                             isSelected: m >= d.maxVariantsToShow - 1,
                             onOverflowClick: d.onClick,
                             onTrackClick: C,
@@ -104,10 +104,10 @@ let v = e => {
         } = (0, a.rm)(`shop-variants-group-${t.storeListingId}-${t.variantLabel}`), {
             isPurchased: v
         } = (0, m.h)(t), _ = l.useCallback(e => {
-            C?.(A.sH.VARIANT_CLICK, r), o(e, r), x()
+            C?.(h.sH.VARIANT_CLICK, r), o(e, r), x()
         }, [o, x, r, C]);
         return (0, n.jsx)(d.m, {
-            text: h.intl.string(h.t["6cfuDj"]),
+            text: A.intl.string(A.t["6cfuDj"]),
             shouldShow: v,
             children: (0, n.jsx)(u.DUT, {
                 "aria-label": t.variantLabel,
@@ -150,10 +150,10 @@ let v = e => {
             onFocus: d,
             ...p
         } = (0, a.rm)(`shop-variants-group-${o}-overflow`), k = l.useCallback(e => {
-            e.stopPropagation(), c?.(A.sH.VARIANT_CLICK_MORE), i(e), d()
+            e.stopPropagation(), c?.(h.sH.VARIANT_CLICK_MORE), i(e), d()
         }, [i, d, c]);
         return (0, n.jsx)(u.DUT, {
-            "aria-label": h.intl.string(h.t["+0zcgs"]),
+            "aria-label": A.intl.string(A.t["+0zcgs"]),
             onClick: k,
             className: s()(I.bP, I.V3, {
                 [I.wH]: r

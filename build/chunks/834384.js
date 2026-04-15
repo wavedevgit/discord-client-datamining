@@ -18,8 +18,8 @@ var l = r(417597),
     m = r(4227),
     x = r(298072),
     g = r(993408),
-    A = r(640634),
-    h = r(450481),
+    h = r(640634),
+    A = r(450481),
     I = r(740076),
     v = r(466459),
     _ = r(623373),
@@ -115,7 +115,7 @@ let O = e => {
             fullWidth: !0
         })
     },
-    H = e => {
+    B = e => {
         let {
             skuId: t,
             onClick: r,
@@ -130,7 +130,7 @@ let O = e => {
             fullWidth: !0
         })
     },
-    B = e => {
+    H = e => {
         let {
             product: t,
             isClaimPremiumProductDisabled: r,
@@ -168,7 +168,7 @@ let O = e => {
             text: a,
             onClickAnalytics: o,
             onTrackClick: u
-        } = e, p = (0, A.l)("collectibles_shop_product_card");
+        } = e, p = (0, h.l)("collectibles_shop_product_card");
         return (0, n.jsx)(i.Button, {
             variant: "primary",
             text: a ?? P.intl.format(p ? P.t.JC15qj : P.t.lOtBOI, {
@@ -228,7 +228,7 @@ let O = e => {
             prioritizedCurrency: c,
             onClickAnalytics: d,
             onTrackClick: C
-        } = e, x = (0, l.bG)([p.default], () => p.default.getCurrentUser()), A = k.Ay.canUseCollectibles(x), {
+        } = e, x = (0, l.bG)([p.default], () => p.default.getCurrentUser()), h = k.Ay.canUseCollectibles(x), {
             isPurchased: _,
             isPartiallyOwnedBundle: f
         } = (0, v.h)(t), j = (0, g.G0)(t), b = (0, g.tt)(t), {
@@ -240,46 +240,47 @@ let O = e => {
         }), S = (0, E.V_)(t), D = null != S, {
             shouldCheckoutWithOrbs: M,
             hasSufficientOrbs: W,
-            checkoutEligiblePrices: G
+            checkoutEligiblePrices: G,
+            isOrbExclusive: F
         } = (0, y.F)({
             product: t,
-            isPremiumUser: A,
+            isPremiumUser: h,
             prioritizedCurrency: c,
             hasDiscountOffer: D
         }), {
-            analyticsLocations: F
-        } = (0, a.Ay)(s.A.COLLECTIBLES_SHOP_CARD), z = (0, T.ql)(t, s.A.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, d), [K, Y] = (0, l.yK)([m.A], () => [m.A.isClaiming === t.skuId, null != m.A.isClaiming && m.A.isClaiming !== t.skuId]), {
-            handleUseNow: Q,
-            isApplying: q
-        } = (0, h.p)({
+            analyticsLocations: z
+        } = (0, a.Ay)(s.A.COLLECTIBLES_SHOP_CARD), K = (0, T.ql)(t, s.A.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, d), [Y, Q] = (0, l.yK)([m.A], () => [m.A.isClaiming === t.skuId, null != m.A.isClaiming && m.A.isClaiming !== t.skuId]), {
+            handleUseNow: q,
+            isApplying: X
+        } = (0, A.p)({
             product: t
         });
-        if (null != o) return (0, n.jsx)(H, {
+        if (null != o) return (0, n.jsx)(B, {
             onClick: o,
             skuId: t.skuId,
             text: u
         });
-        if (j && !A && !b) return (0, n.jsx)(N, {
-            isClaimPremiumProductDisabled: Y,
+        if (j && !h && !b) return (0, n.jsx)(N, {
+            isClaimPremiumProductDisabled: Q,
             text: u,
             onTrackClick: C
         });
         if (!P || R) return (0, n.jsx)(L, {
-            handlePreviewButtonClick: z,
+            handlePreviewButtonClick: K,
             text: u,
             onTrackClick: C
         });
         if (_) return (0, n.jsx)(V, {
-            handleUseNow: Q,
-            isApplying: q,
+            handleUseNow: q,
+            isApplying: X,
             text: u,
             onTrackClick: C
         });
-        if (j) return (0, n.jsx)(B, {
+        if (j) return (0, n.jsx)(H, {
             product: t,
-            isClaimPremiumProductDisabled: Y,
-            isClaiming: K,
-            analyticsLocations: F,
+            isClaimPremiumProductDisabled: Q,
+            isClaiming: Y,
+            analyticsLocations: z,
             text: u,
             onClickAnalytics: d,
             onTrackClick: C
@@ -287,7 +288,7 @@ let O = e => {
         if (M && W) return (0, n.jsx)(w, {
             product: t,
             checkoutEligiblePrices: G,
-            analyticsLocations: F,
+            analyticsLocations: z,
             selectedVariantIndex: i,
             text: u,
             onClickAnalytics: d,
@@ -295,20 +296,24 @@ let O = e => {
         });
         if (M && !W)
             if (G.length > 1) return (0, n.jsx)(U, {
-                handlePreviewButtonClick: z,
+                handlePreviewButtonClick: K,
                 text: u,
                 onTrackClick: C
             });
             else return (0, n.jsx)(L, {
-                handlePreviewButtonClick: z,
+                handlePreviewButtonClick: K,
                 text: u,
                 onTrackClick: C
             });
-        return (0, n.jsx)(O, {
+        return F ? (0, n.jsx)(L, {
+            handlePreviewButtonClick: K,
+            text: u,
+            onTrackClick: C
+        }) : (0, n.jsx)(O, {
             product: t,
             cardRef: r,
-            isPremiumUser: A,
-            analyticsLocations: F,
+            isPremiumUser: h,
+            analyticsLocations: z,
             selectedVariantIndex: i,
             hasDiscountOffer: D,
             discountOfferAmount: S,

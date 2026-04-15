@@ -1,6 +1,6 @@
 /** chunk id: 878112 params = (module,exports,require) **/
 r.d(t, {
-    A: () => A
+    A: () => h
 });
 var n = r(627968),
     l = r(64700),
@@ -17,12 +17,12 @@ var n = r(627968),
     m = r(652215),
     x = r(788868),
     g = r(985018);
-let A = e => {
+let h = e => {
     let {
         product: t,
         primary: r,
-        selectedVariantIndex: A,
-        returnRef: h,
+        selectedVariantIndex: h,
+        returnRef: A,
         onSuccess: I,
         tooltipDelay: v,
         fullWidth: _ = !1,
@@ -44,13 +44,13 @@ let A = e => {
         }), E?.(C.sH.SEND_AS_GIFT), (0, u.A)({
             skuId: (0, k.Y)({
                 product: t,
-                selectedVariantIndex: A
+                selectedVariantIndex: h
             }),
             isGift: !0,
             giftRecipient: T,
             giftingOrigin: f,
             analyticsLocations: y,
-            returnRef: h,
+            returnRef: A,
             onClose: null != I ? e => {
                 e && I()
             } : void 0

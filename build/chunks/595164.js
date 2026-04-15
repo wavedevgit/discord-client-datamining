@@ -17,14 +17,14 @@ var i = t(627968),
     x = t(688810),
     f = t(531260),
     h = t(404374),
-    S = t(156312),
+    S = t(413748),
     g = t(543767),
     b = t(881489),
     I = t(477421),
     P = t(234419),
-    E = t(163538),
-    y = t(363476),
-    A = t(156962),
+    y = t(163538),
+    A = t(363476),
+    E = t(156962),
     v = t(72140),
     C = t(773669),
     N = t(287809),
@@ -327,59 +327,54 @@ function J(e) {
                 existingAvailableSlots: F,
                 priceOptions: Y
             } = e,
-            {
-                setInvoicePreview: K
-            } = (0, S.P5)(),
-            z = (0, E.A)(),
-            J = t.interval,
-            $ = t.intervalCount,
-            Q = (0, c.bG)([j.A], () => j.A.getForSkuAndInterval((0, R.mH)(k.pe.GUILD), J, $)),
-            X = (0, c.bG)([N.default], () => N.default.getCurrentUser()),
-            Z = (0, f.A)({
+            K = (0, y.A)(),
+            z = t.interval,
+            J = t.intervalCount,
+            $ = (0, c.bG)([j.A], () => j.A.getForSkuAndInterval((0, R.mH)(k.pe.GUILD), z, J)),
+            Q = (0, c.bG)([N.default], () => N.default.getCurrentUser()),
+            X = (0, f.A)({
                 forceFetch: !1
             });
-        o()(null != Q, "Missing guildBoostingSubscriptionPlan");
-        let ee = [{
-                planId: Q.id,
+        o()(null != $, "Missing guildBoostingSubscriptionPlan");
+        let Z = [{
+                planId: $.id,
                 quantity: 1
             }],
-            en = u?.items.find(e => e.planId === k.gD.PREMIUM_MONTH_TIER_2 || e.planId === k.gD.PREMIUM_YEAR_TIER_2);
-        null != en && ee.push(en);
-        let et = u?.items.find(e => e.planId === k.gD.PREMIUM_MONTH_GUILD || e.planId === k.gD.PREMIUM_YEAR_GUILD),
-            ei = null == z || !k.uJ.has(z) || null == et,
+            ee = u?.items.find(e => e.planId === k.gD.PREMIUM_MONTH_TIER_2 || e.planId === k.gD.PREMIUM_YEAR_TIER_2);
+        null != ee && Z.push(ee);
+        let en = u?.items.find(e => e.planId === k.gD.PREMIUM_MONTH_GUILD || e.planId === k.gD.PREMIUM_YEAR_GUILD),
+            et = null == K || !k.uJ.has(K) || null == en,
             {
-                analyticsLocations: el
+                analyticsLocations: ei
             } = (0, x.Ay)(),
-            [er, es] = (0, g.Kq)({
+            [el, er] = (0, g.Kq)({
                 subscriptionId: u?.id,
-                items: ee,
+                items: Z,
                 renewal: !0,
                 paymentSourceId: u?.paymentSourceId,
                 currency: Y.currency,
-                preventFetch: ei,
-                analyticsLocations: el,
+                preventFetch: et,
+                analyticsLocations: ei,
                 analyticsLocation: _.A.GUILD_BOOSTING_PLAN_SELECT
             });
-        l.useEffect(() => {
-            K(er)
-        }, [er, K]);
-        let ea = !ei && null == er && null == es;
+        (0, S.F0)(el);
+        let es = !et && null == el && null == er;
         l.useLayoutEffect(() => {
-            a(ea)
-        }, [ea, a]);
-        let eo = (0, P.V)()?.subscription_trial?.sku_id === k.pe.TIER_2,
-            ec = R.Ay.hasBoostDiscount(X),
-            eu = ec && null != u && R.Ay.isPremiumAtLeast(R.Ay.getPremiumType(u.planId), k.PremiumTypes.TIER_1),
-            ed = er?.findInvoiceItemByPlanId(Q.id),
-            ep = null != ed ? {
-                amount: ed.amount,
+            a(es)
+        }, [es, a]);
+        let ea = (0, P.V)()?.subscription_trial?.sku_id === k.pe.TIER_2,
+            eo = R.Ay.hasBoostDiscount(Q),
+            ec = eo && null != u && R.Ay.isPremiumAtLeast(R.Ay.getPremiumType(u.planId), k.PremiumTypes.TIER_1),
+            eu = el?.findInvoiceItemByPlanId($.id),
+            ed = null != eu ? {
+                amount: eu.amount,
                 tax: 0,
                 taxInclusive: !0,
-                currency: er.currency
-            } : R.Ay.getPrice(Q.id, ec, !1, Y),
-            em = r * ep.amount,
-            e_ = (0, b.ds)() && ec && null != u,
-            ex = function(e) {
+                currency: el.currency
+            } : R.Ay.getPrice($.id, eo, !1, Y),
+            ep = r * ed.amount,
+            em = (0, b.ds)() && eo && null != u,
+            e_ = function(e) {
                 let n, {
                     existingAvailableSlotsCount: t,
                     fractionalPremiumState: i,
@@ -394,56 +389,56 @@ function J(e) {
                 }
             }({
                 existingAvailableSlotsCount: F.length,
-                fractionalPremiumState: Z.fractionalState,
-                isReverseTrial: e_,
-                hasDiscountUpsell: eu,
-                withTrialOfferCopyVariant: eo
+                fractionalPremiumState: X.fractionalState,
+                isReverseTrial: em,
+                hasDiscountUpsell: ec,
+                withTrialOfferCopyVariant: ea
             });
-        "discount" === ex.upsellVariant ? (o()(null != u, "Missing premiumSubscription for discount upsell variant"), n = G.intl.format(G.t.hf6YOY, {
+        "discount" === e_.upsellVariant ? (o()(null != u, "Missing premiumSubscription for discount upsell variant"), n = G.intl.format(G.t.hf6YOY, {
             planName: R.Ay.getTierDisplayNameByPlanId(u.planId)
-        })) : n = G.intl.format("upsell_trial" === ex.upsellVariant ? G.t.ba1L74 : G.t.fkffDT, {
+        })) : n = G.intl.format("upsell_trial" === e_.upsellVariant ? G.t.ba1L74 : G.t.fkffDT, {
             onPremiumSubscriptionClick: d,
             discountPercentage: (0, L.l9)(C.default.locale, k.oX / 100),
             freeSubscriptionCount: k.M4
         });
-        let ef = F.filter(e => (0, T.I5)(e)).length,
-            eh = (0, R.J$)(Y.paymentSourceId),
+        let ex = F.filter(e => (0, T.I5)(e)).length,
+            ef = (0, R.J$)(Y.paymentSourceId),
             {
-                ipCountryCode: eS
+                ipCountryCode: eh
             } = (0, I.A)(),
-            eg = "HR" === eS && ep.currency === O.Yr.EUR,
-            eb = e_ && null != u ? (0, i.jsx)(U.Ak, {
+            eS = "HR" === eh && ed.currency === O.Yr.EUR,
+            eg = em && null != u ? (0, i.jsx)(U.Ak, {
                 text: (0, U.zT)(u.currentPeriodEnd)
             }) : (0, i.jsx)("div", {
                 className: s()(W.hA, W.G3),
                 children: G.intl.string(G.t.jNY1FO)
             }),
-            eI = e_ && null != u ? (0, i.jsx)(U.Ak, {
+            eb = em && null != u ? (0, i.jsx)(U.Ak, {
                 text: (0, U.zT)(u.currentPeriodEnd),
                 className: W.jk
             }) : (0, i.jsx)("div", {
                 className: B._X,
                 children: G.intl.string(G.t.jNY1FO)
             }),
-            eP = ex.showExistingSlotNotice ? (0, i.jsx)(q, {
+            eI = e_.showExistingSlotNotice ? (0, i.jsx)(q, {
                 existingAvailableSlots: F,
-                canceledCount: ef,
+                canceledCount: ex,
                 premiumSubscription: u
             }) : null,
-            eE = ex.showFractionalPremiumBanner ? (0, i.jsx)(A.vi, {
-                fractionalPremiumInfo: Z
+            eP = e_.showFractionalPremiumBanner ? (0, i.jsx)(E.vi, {
+                fractionalPremiumInfo: X
             }) : null,
-            ey = eh ? function(e) {
+            ey = ef ? function(e) {
                 let {
                     intervalType: n,
                     intervalCount: t = 1
                 } = e;
                 return n === k.WT.YEAR ? G.intl.string(G.t.YDpAzZ) : n === k.WT.MONTH && 1 === t ? G.intl.string(G.t["6ZR3By"]) : null
             }({
-                intervalType: J,
-                intervalCount: $
+                intervalType: z,
+                intervalCount: J
             }) ?? G.intl.string(G.t.K9Bmze) : G.intl.string(G.t.K9Bmze),
-            eA = ea ? (0, i.jsx)(p.y$y, {}) : eh ? (0, D.$g)(ep.amount, ep.currency) : function(e) {
+            eA = es ? (0, i.jsx)(p.y$y, {}) : ef ? (0, D.$g)(ed.amount, ed.currency) : function(e) {
                 let {
                     amount: n,
                     currency: t,
@@ -458,53 +453,53 @@ function J(e) {
                     price: r
                 }) : null
             }({
-                intervalType: J,
-                intervalCount: $,
-                amount: ep.amount,
-                currency: ep.currency
+                intervalType: z,
+                intervalCount: J,
+                amount: ed.amount,
+                currency: ed.currency
             }),
-            ev = ea ? (0, i.jsx)(p.y$y, {}) : (0, i.jsx)(y.A, {
-                price: em,
-                currency: ep.currency,
-                intervalType: J,
-                intervalCount: $,
-                isPrepaidPaymentSource: eh
+            eE = es ? (0, i.jsx)(p.y$y, {}) : (0, i.jsx)(A.A, {
+                price: ep,
+                currency: ed.currency,
+                intervalType: z,
+                intervalCount: J,
+                isPrepaidPaymentSource: ef
             }),
-            eC = ea ? (0, i.jsx)(p.y$y, {}) : (0, D.$g)(em, ep.currency),
-            eN = [],
-            ej = [];
-        if (eg) {
+            ev = es ? (0, i.jsx)(p.y$y, {}) : (0, D.$g)(ep, ed.currency),
+            eC = [],
+            eN = [];
+        if (eS) {
             let e = (0, i.jsx)(m.A, {
                 message: G.intl.formatToPlainString(G.t["9hnZoK"], {
-                    kunaPriceWithCurrency: (0, D.$g)(7.5345 * em, O.Yr.HRK)
+                    kunaPriceWithCurrency: (0, D.$g)(7.5345 * ep, O.Yr.HRK)
                 })
             }, "hrk-warning");
-            eN.push(e), ej.push(e)
+            eC.push(e), eN.push(e)
         }
-        let eT = G.intl.format(G.t.Om31w8, {
+        let ej = G.intl.format(G.t.Om31w8, {
             documentationLink: M.A.getArticleURL(w.MVz.LOCALIZED_PRICING)
         });
-        return eN.push((0, i.jsx)(m.A, {
-            message: eT
-        }, "localized-pricing")), ej.push((0, i.jsx)(V, {
-            message: eT
+        return eC.push((0, i.jsx)(m.A, {
+            message: ej
+        }, "localized-pricing")), eN.push((0, i.jsx)(V, {
+            message: ej
         }, "localized-pricing")), {
-            isLoading: ea,
+            isLoading: es,
             planLabel: ey,
             planPriceContent: eA,
-            subtotalContent: ev,
-            refreshSubtotalContent: eC,
-            legacyDescriptionContent: eb,
-            refreshDescriptionContent: eI,
-            existingSlotNotice: eP,
-            fractionalBanner: eE,
-            legacyPricingNotes: eN,
-            refreshPricingNotes: ej,
-            discountCallout: "reverse_trial" === ex.upsellVariant ? (0, i.jsx)(v.G, {}) : (0, i.jsx)(v.A, {
+            subtotalContent: eE,
+            refreshSubtotalContent: ev,
+            legacyDescriptionContent: eg,
+            refreshDescriptionContent: eb,
+            existingSlotNotice: eI,
+            fractionalBanner: eP,
+            legacyPricingNotes: eC,
+            refreshPricingNotes: eN,
+            discountCallout: "reverse_trial" === e_.upsellVariant ? (0, i.jsx)(v.G, {}) : (0, i.jsx)(v.A, {
                 text: n,
                 color: h.k0.PREMIUM_TIER_2
             }),
-            refreshDiscountCallout: "reverse_trial" === ex.upsellVariant ? (0, i.jsx)(v.G, {}) : (0, i.jsx)(H, {
+            refreshDiscountCallout: "reverse_trial" === e_.upsellVariant ? (0, i.jsx)(v.G, {}) : (0, i.jsx)(H, {
                 text: n
             })
         }

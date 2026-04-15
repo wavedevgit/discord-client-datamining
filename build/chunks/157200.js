@@ -24,14 +24,14 @@ let m = e => {
             icon: m,
             prioritizedCurrency: x,
             onClickAnalytics: g,
-            onTrackClick: A
-        } = e, h = (0, a.Mk)(), I = h?.tab, v = (0, s.uM)(), _ = (0, p.X)(t, x), T = (0, d.ql)(t, i.A.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, g);
+            onTrackClick: h
+        } = e, A = (0, a.Mk)(), I = A?.tab, v = (0, s.uM)(), _ = (0, p.X)(t, x), T = (0, d.ql)(t, i.A.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, g);
         return null != u || null != m ? (0, n.jsx)(l.K0, {
             variant: "primary",
             "aria-label": C.intl.string(C.t.SKNnqq),
             icon: m ?? l.bMW,
             onClick: e => {
-                e.stopPropagation(), null != u ? u(t.skuId) : (A?.(k.sH.OPEN_DETAILS), T(e))
+                e.stopPropagation(), null != u ? u(t.skuId) : (h?.(k.sH.OPEN_DETAILS), T(e))
             }
         }) : _ ? (0, n.jsx)(s.R9, {
             newValue: {
@@ -43,7 +43,7 @@ let m = e => {
                 selectedVariantIndex: r,
                 returnRef: o,
                 tooltipDelay: 250,
-                onTrackClick: A
+                onTrackClick: h
             })
         }) : null
     },

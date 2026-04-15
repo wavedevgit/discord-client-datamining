@@ -18,8 +18,8 @@ var l = r(503698),
     m = r(561769),
     x = r(525723),
     g = r(57020),
-    A = r(985018),
-    h = r(766706);
+    h = r(985018),
+    A = r(766706);
 let I = e => {
         let {
             product: t,
@@ -42,23 +42,23 @@ let I = e => {
         let P = null;
         switch (R) {
             case m.AW.LIMITED_TIME:
-                P = null != f ? f > 1 ? A.intl.formatToPlainString(A.t.Io7ozn, {
+                P = null != f ? f > 1 ? h.intl.formatToPlainString(h.t.Io7ozn, {
                     days: f
-                }) : A.intl.string(A.t.Bc13HF) : A.intl.string(A.t["h/uBCR"]);
+                }) : h.intl.string(h.t.Bc13HF) : h.intl.string(h.t["h/uBCR"]);
                 break;
             case m.AW.NEW:
-                P = A.intl.string(A.t.y2b7CA);
+                P = h.intl.string(h.t.y2b7CA);
                 break;
             case m.AW.NITRO_EXCLUSIVE:
-                P = A.intl.string(A.t.X3Ekj8);
+                P = h.intl.string(h.t.X3Ekj8);
                 break;
             case m.AW.ORBS_EXCLUSIVE:
-                P = A.intl.string(A.t["0TmQRG"])
+                P = h.intl.string(h.t["0TmQRG"])
         }
         return (0, n.jsx)(a.LpS, {
             text: P,
             disableColor: !0,
-            className: i()(d, h.$)
+            className: i()(d, A.$)
         })
     },
     v = e => {

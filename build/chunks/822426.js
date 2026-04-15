@@ -23,7 +23,7 @@ function S(e) {
     } = e, {
         selectedSkuId: i,
         setSelectedPlanId: S
-    } = (0, u.t)(e => ({
+    } = (0, u.t4)(e => ({
         selectedSkuId: e.selectedSkuId,
         setSelectedPlanId: e.setSelectedPlanId
     })), {

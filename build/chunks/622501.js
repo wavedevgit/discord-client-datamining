@@ -22,41 +22,41 @@ var i = t(627968),
     b = t(580630),
     I = t(652215),
     P = t(788868),
-    E = t(985018),
-    y = t(747114);
+    y = t(985018),
+    A = t(747114);
 
-function A(e) {
+function E(e) {
     let {
         shouldUpsellFromNoneTier: n
     } = e, t = (0, a.bG)([f.default], () => f.default.locale);
     return (0, i.jsxs)("div", {
-        className: y.mH,
+        className: A.mH,
         children: [(0, i.jsx)(x.A, {
             icon: c._Jp,
-            iconClassName: y.pl,
-            description: E.intl.formatToPlainString(E.t.sQBgs2, {
+            iconClassName: A.pl,
+            description: y.intl.formatToPlainString(y.t.sQBgs2, {
                 numFreeGuildSubscriptions: P.M4
             }),
             color: c.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK.css
         }), (0, i.jsx)(x.A, {
             icon: c._Jp,
-            iconClassName: y.pl,
-            description: E.intl.formatToPlainString(E.t["1A6vXi"], {
+            iconClassName: A.pl,
+            description: y.intl.formatToPlainString(y.t["1A6vXi"], {
                 percent: (0, S.l9)(t, P.oX / 100)
             }),
             color: c.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK.css
         }), n ? (0, i.jsx)(x.A, {
             icon: c.nm2,
-            iconClassName: y.zO,
-            description: E.intl.string(E.t.Z9b2x2)
+            iconClassName: A.zO,
+            description: y.intl.string(y.t.Z9b2x2)
         }) : null, (0, i.jsx)(x.A, {
             icon: c.Fzq,
-            iconClassName: y.Kg,
-            description: E.intl.string(E.t["8dqG5E"])
+            iconClassName: A.Kg,
+            description: y.intl.string(y.t["8dqG5E"])
         }), (0, i.jsx)(x.A, {
             icon: c.JMY,
-            iconClassName: y.$z,
-            description: E.intl.string(E.t.cBorIy)
+            iconClassName: A.$z,
+            description: y.intl.string(y.t.cBorIy)
         })]
     })
 }
@@ -84,20 +84,20 @@ function v(e) {
         children: [(0, i.jsx)(c.s_y, {
             "data-migration-pending": !0,
             onClick: t,
-            className: y.b
+            className: A.b
         }), (0, i.jsxs)(c.cwr, {
             children: [D && (0, i.jsx)(_.Vq, {
-                className: y.Fg
+                className: A.Fg
             }), (0, i.jsx)("div", {
-                className: s()(y.Tn, {
-                    [y.NH]: D
+                className: s()(A.Tn, {
+                    [A.NH]: D
                 })
             }), (0, i.jsx)("div", {
-                className: y.G3,
-                children: null != R ? E.intl.string(E.t.AoSzEr) : E.intl.format(E.t["7vePZb"], {
+                className: A.G3,
+                children: null != R ? y.intl.string(y.t.AoSzEr) : y.intl.format(y.t["7vePZb"], {
                     monthlyPrice: M
                 })
-            }), (0, i.jsx)(A, {
+            }), (0, i.jsx)(E, {
                 shouldUpsellFromNoneTier: j
             })]
         }), (0, i.jsx)(o.jlY, {
@@ -107,7 +107,7 @@ function v(e) {
                 justify: "space-between",
                 fullWidth: !0,
                 children: [(0, i.jsx)(c.QWc, {
-                    text: E.intl.string(E.t["13/7kX"]),
+                    text: y.intl.string(y.t["13/7kX"]),
                     onClick: r,
                     variant: "secondary"
                 }), (0, i.jsxs)(c.BJc, {
@@ -115,12 +115,12 @@ function v(e) {
                     align: "center",
                     fullWidth: !1,
                     children: [(0, i.jsx)(c.QWc, {
-                        text: E.intl.string(E.t["SI/adm"]),
+                        text: y.intl.string(y.t["SI/adm"]),
                         onClick: a,
                         variant: "secondary"
                     }), (0, i.jsx)(c.Button, {
                         variant: "active",
-                        text: null != R ? E.intl.string(E.t["Gd/XHF"]) : E.intl.string(E.t.p2moip),
+                        text: null != R ? y.intl.string(y.t["Gd/XHF"]) : y.intl.string(y.t.p2moip),
                         type: "submit",
                         onClick: () => {
                             t(), (0, p.A)({

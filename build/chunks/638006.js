@@ -17,8 +17,8 @@ var n = r(627968),
     m = r(623373),
     x = r(561769),
     g = r(846957),
-    A = r(929283),
-    h = r(245068),
+    h = r(929283),
+    A = r(245068),
     I = r(761365),
     v = r(550674),
     _ = r(797877);
@@ -61,7 +61,7 @@ let T = e => {
                     hideBackground: !0
                 });
             case s.R.AVATAR_DECORATION:
-                return (0, n.jsx)(A.i, {
+                return (0, n.jsx)(h.i, {
                     item: a,
                     user: l,
                     isHighlighted: r,
@@ -74,7 +74,7 @@ let T = e => {
                     isHighlighted: r
                 });
             case s.R.BUNDLE:
-                return (0, n.jsx)(h.X, {
+                return (0, n.jsx)(A.X, {
                     product: t,
                     user: l,
                     isHighlighted: r

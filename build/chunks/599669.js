@@ -24,9 +24,9 @@ var i = t(627968),
     b = t(270537),
     I = t(241989),
     P = t(958340),
-    E = t(826469),
-    y = t(156312),
-    A = t(534479),
+    y = t(826469),
+    A = t(413748),
+    E = t(534479),
     v = t(908419),
     C = t(888751),
     N = t(216641),
@@ -276,56 +276,51 @@ function Z(e) {
         let n, {
                 guildId: t,
                 priceOptions: i,
-                currentPremiumSubscription: r,
-                premiumSubscriptionPlan: a,
-                newAdditionalPlans: c
+                currentPremiumSubscription: l,
+                premiumSubscriptionPlan: r,
+                newAdditionalPlans: a
             } = e,
-            u = (0, o.bG)([U.A, P.A], () => {
+            c = (0, o.bG)([U.A, P.A], () => {
                 let e = U.A.getGuild(t);
                 return null != e ? e : P.A.isGuildFetching(t) ? null : P.A.getGuild(t)
             }, [t]),
-            d = a.interval,
-            p = a.intervalCount,
-            x = (0, o.bG)([O.A], () => O.A.getForSkuAndInterval((0, G.mH)(F.pe.GUILD), d, p));
-        s()(null != x, "Missing guildBoostingSubscriptionPlan");
-        let f = (0, G.J$)(i.paymentSourceId),
-            h = (0, M.ds)(),
-            {
-                setInvoicePreview: S
-            } = (0, y.P5)(),
-            g = i.paymentSourceId;
-        n = null != r ? (0, G.Om)(r, c[0].quantity, c[0].planId) : c;
+            u = r.interval,
+            d = r.intervalCount,
+            p = (0, o.bG)([O.A], () => O.A.getForSkuAndInterval((0, G.mH)(F.pe.GUILD), u, d));
+        s()(null != p, "Missing guildBoostingSubscriptionPlan");
+        let x = (0, G.J$)(i.paymentSourceId),
+            f = (0, M.ds)(),
+            h = i.paymentSourceId;
+        n = null != l ? (0, G.Om)(l, a[0].quantity, a[0].planId) : a;
         let {
-            analyticsLocations: b
-        } = (0, _.Ay)(), [I] = (0, j.Kq)({
-            subscriptionId: r?.id,
+            analyticsLocations: S
+        } = (0, _.Ay)(), [g] = (0, j.Kq)({
+            subscriptionId: l?.id,
             items: n,
             renewal: !1,
             applyEntitlements: !0,
-            paymentSourceId: g,
+            paymentSourceId: h,
             currency: i.currency,
-            analyticsLocations: b,
+            analyticsLocations: S,
             analyticsLocation: m.A.GUILD_BOOSTING_REVIEW_PRORATED
-        }), [E] = (0, j.Kq)({
-            subscriptionId: r?.id,
+        }), [b] = (0, j.Kq)({
+            subscriptionId: l?.id,
             items: n,
             renewal: !0,
-            paymentSourceId: g,
+            paymentSourceId: h,
             currency: i.currency,
-            analyticsLocations: b,
+            analyticsLocations: S,
             analyticsLocation: m.A.GUILD_BOOSTING_REVIEW_RENEWAL
         });
-        return l.useEffect(() => {
-            S(I)
-        }, [S, I]), {
-            guild: u ?? null,
-            guildBoostingSubscriptionPlan: x,
-            isPrepaid: f,
-            isReverseTrial: h,
-            paymentSourceId: g,
-            proratedInvoicePreview: I,
-            renewalInvoicePreview: E,
-            isSubscriptionUpdate: null != r
+        return (0, A.F0)(g), {
+            guild: c ?? null,
+            guildBoostingSubscriptionPlan: p,
+            isPrepaid: x,
+            isReverseTrial: f,
+            paymentSourceId: h,
+            proratedInvoicePreview: g,
+            renewalInvoicePreview: b,
+            isSubscriptionUpdate: null != l
         }
     }({
         guildId: n,
@@ -343,7 +338,7 @@ function Z(e) {
         renewalInvoicePreview: es
     } = Z, ea = l.useMemo(() => {
         let e = er?.checkoutContext;
-        return null == e || null == e.payment_sources ? [] : e.payment_sources.map(E.A.createFromCheckoutContext)
+        return null == e || null == e.payment_sources ? [] : e.payment_sources.map(y.A.createFromCheckoutContext)
     }, [er?.checkoutContext]), {
         dropdownPaymentSources: eo,
         giftCardsEnabled: ec,
@@ -357,7 +352,7 @@ function Z(e) {
         subscriptionPaymentSourceId: d,
         itemAmount: er?.total
     }), em = (0, o.bG)([w.A], () => w.A.hidePersonalInformation);
-    if (null == er || null == es || null == en) return J ? (0, i.jsx)(f.Ed, {}) : (0, i.jsx)(A.A, {});
+    if (null == er || null == es || null == en) return J ? (0, i.jsx)(f.Ed, {}) : (0, i.jsx)(E.A, {});
     let e_ = (0, i.jsx)(X, {
             isSubscriptionUpdate: ee,
             premiumSubscription: u,
@@ -456,17 +451,17 @@ function Z(e) {
                 b = (0, j.sL)(x) * h,
                 I = (0, B.$g)(b, i.currency),
                 P = (0, B.CE)(I, d, m),
-                E = (0, B.$g)(i.total, i.currency) + (i.currency !== Y.Yr.USD ? "*" : ""),
-                y = i.subtotal - b - g,
-                A = x.discounts.map(e => {
+                y = (0, B.$g)(i.total, i.currency) + (i.currency !== Y.Yr.USD ? "*" : ""),
+                A = i.subtotal - b - g,
+                E = x.discounts.map(e => {
                     let n = e.amount / x.quantity;
                     return {
                         ...e,
                         amount: n * h
                     }
                 }),
-                v = A.find(e => e.type === p.iS.SUBSCRIPTION_PLAN),
-                C = A.find(e => e.type === p.iS.ENTITLEMENT),
+                v = E.find(e => e.type === p.iS.SUBSCRIPTION_PLAN),
+                C = E.find(e => e.type === p.iS.ENTITLEMENT),
                 N = x.subscriptionPlanPrice * h;
             return {
                 addedQuantity: h,
@@ -476,10 +471,10 @@ function Z(e) {
                 formattedGuildBoostPrice: I,
                 formattedGuildBoostRate: P,
                 formattedOriginalAmountGuildBoostRate: (0, B.CE)((0, B.$g)(N, i.currency), d, m),
-                formattedTotal: E,
+                formattedTotal: y,
                 basePlanAdjustment: g,
                 basePlanInvoiceItems: S,
-                guildBoostingAdjustment: y,
+                guildBoostingAdjustment: A,
                 subscriptionDiscount: v,
                 entitlementDiscount: C,
                 originalAmount: N,

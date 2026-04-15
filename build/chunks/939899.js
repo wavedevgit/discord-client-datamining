@@ -1,7 +1,7 @@
 /** chunk id: 939899 params = (module,exports,require) **/
 n.d(t, {
     A: () => T,
-    R: () => b
+    R: () => N
 });
 var i = n(627968),
     a = n(64700),
@@ -103,7 +103,7 @@ function T(e) {
     })
 }
 
-function b(e) {
+function N(e) {
     let {
         applicationId: t,
         size: n = "default"

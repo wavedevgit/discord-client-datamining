@@ -17,8 +17,8 @@ var n = r(627968),
     m = r(561769),
     x = r(525723),
     g = r(57020),
-    A = r(985018),
-    h = r(413908);
+    h = r(985018),
+    A = r(413908);
 let I = e => {
         let {
             product: t,
@@ -42,27 +42,27 @@ let I = e => {
             variant: "text-md/medium",
             color: "text-muted",
             lineClamp: 1,
-            children: A.intl.string(A.t.wu4gyV)
+            children: h.intl.string(h.t.wu4gyV)
         }) : v ? (0, n.jsx)(s.Text, {
             variant: "text-md/medium",
             color: "text-muted",
             lineClamp: 1,
-            children: A.intl.string(A.t.BEjTij)
+            children: h.intl.string(h.t.BEjTij)
         }) : I && !R ? (0, n.jsx)(s.Text, {
             variant: "text-md/medium",
             color: "text-muted",
             lineClamp: 1,
-            children: A.intl.string(A.t["6cfuDj"])
+            children: h.intl.string(h.t["6cfuDj"])
         }) : T ? (0, n.jsx)(s.Text, {
             variant: "text-md/bold",
             color: "text-strong",
             lineClamp: 1,
-            children: A.intl.string(A.t.nBtvYB)
+            children: h.intl.string(h.t.nBtvYB)
         }) : _ ? (0, n.jsx)(s.Text, {
             variant: "text-md/bold",
             color: "text-strong",
             lineClamp: 1,
-            children: A.intl.string(A.t.rt69oo)
+            children: h.intl.string(h.t.rt69oo)
         }) : 0 === y.length ? null : (0, n.jsx)(C.x, {
             priceAmount: y[0].amount,
             priceCurrency: y[0].currency,
@@ -70,7 +70,7 @@ let I = e => {
             nitroIconType: k ? "default" : void 0,
             nitroIconSize: "sm",
             discountOfferAmount: E,
-            className: b && !j ? h.c : void 0,
+            className: b && !j ? A.c : void 0,
             variant: "text-md/bold"
         })
     },

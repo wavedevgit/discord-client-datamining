@@ -65,7 +65,7 @@ function v(e) {
         customGiftMessage: i = "",
         setCustomGiftMessage: o,
         giftRecipient: f
-    } = (0, g.Pv)(), j = (0, x.t)(e => e.selectedSkuId), I = (0, l.bG)([u.default], () => u.default.getCurrentUser()), T = (0, l.bG)([p.A], () => null != j ? p.A.get(j) : null, [j]), v = (0, r.A)(), y = (0, l.bG)([h.A], () => null != j ? h.A.getForSKU(j) : null, [j]), _ = y?.headerBackground != null && T?.applicationId != null ? (0, m.YE)(T.applicationId, y.headerBackground, 256) : void 0, M = async (e, n) => {};
+    } = (0, g.Pv)(), j = (0, x.t4)(e => e.selectedSkuId), I = (0, l.bG)([u.default], () => u.default.getCurrentUser()), T = (0, l.bG)([p.A], () => null != j ? p.A.get(j) : null, [j]), v = (0, r.A)(), y = (0, l.bG)([h.A], () => null != j ? h.A.getForSKU(j) : null, [j]), _ = y?.headerBackground != null && T?.applicationId != null ? (0, m.YE)(T.applicationId, y.headerBackground, 256) : void 0, M = async (e, n) => {};
     return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(k.dZ, {
             children: (0, a.jsxs)("div", {
