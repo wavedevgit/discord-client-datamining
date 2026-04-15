@@ -1,31 +1,41 @@
 /** chunk id: 922529 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
 var i = n(627968),
     l = n(64700),
     a = n(503698),
     s = n.n(a),
-    r = n(813516),
-    o = n(480972);
-let c = l.forwardRef(function(e, t) {
+    r = n(837381),
+    o = n(813516),
+    c = n(480972);
+let d = l.forwardRef(function(e, t) {
         let {
             className: n,
             isBeforeGroup: l = !1,
-            ...a
+            itemId: a,
+            ...d
         } = e, {
-            children: c
-        } = a;
-        return (0, i.jsx)(r.A, {
-            ...a,
+            children: u
+        } = d, {
+            role: h,
+            onFocus: m,
+            ...A
+        } = (0, r.rm)(a ?? "");
+        return (0, i.jsx)(o.A, {
+            ...d,
+            ...null != a ? {
+                ...A,
+                onFocus: m
+            } : void 0,
             ref: t,
             role: "separator",
-            "aria-label": "string" == typeof c ? c : void 0,
+            "aria-label": "string" == typeof u ? u : void 0,
             className: s()(n, {
-                [o.yF]: !0,
-                [o.ov]: null != c,
-                [o.rd]: l
+                [c.yF]: !0,
+                [c.ov]: null != u,
+                [c.rd]: l
             })
         })
     }),
-    d = l.memo(c)
+    u = l.memo(d)

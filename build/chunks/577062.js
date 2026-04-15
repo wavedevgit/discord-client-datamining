@@ -1,6 +1,6 @@
 /** chunk id: 577062 params = (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => h
 });
 var i = n(627968),
     l = n(64700),
@@ -9,41 +9,43 @@ var i = n(627968),
     r = n(688810),
     o = n(980923),
     d = n(384059),
-    c = n(709562);
+    c = n(709562),
+    u = n(985018);
 
-function u(e) {
+function h(e) {
     let {
         selfMute: t,
         serverMute: n,
-        suppress: u,
-        centerButton: h = !1,
-        awaitingRemote: A,
-        onMouseEnter: _,
-        onMouseLeave: m,
-        onClick: p,
-        ...g
+        suppress: h,
+        centerButton: A = !1,
+        awaitingRemote: _,
+        onMouseEnter: m,
+        onMouseLeave: p,
+        onClick: g,
+        ...f
     } = e, {
-        parentAnalyticsLocation: f
-    } = (0, r.Ay)(), E = t || n || u, x = h ? c.l : c.A, I = (0, o.A)(t, n, u, A), {
-        events: C,
-        play: N,
-        Component: T
-    } = (0, s.L)(E ? "unmute" : "mute"), S = n || u ? a.O1p : T;
-    return l.useEffect(() => () => N(), [N, E]), (0, i.jsx)(x, {
-        iconComponent: S,
+        parentAnalyticsLocation: E
+    } = (0, r.Ay)(), x = t || n || h, I = A ? c.l : c.A, C = (0, o.A)(t, n, h, _), {
+        events: N,
+        play: T,
+        Component: S
+    } = (0, s.L)(x ? "unmute" : "mute"), b = n || h ? a.O1p : S;
+    return l.useEffect(() => () => T(), [T, x]), (0, i.jsx)(I, {
+        ...f,
+        iconComponent: b,
         isTrayButton: !0,
-        caretColor: E ? "red" : "primaryDark",
-        color: E ? "red" : void 0,
-        label: I,
+        caretColor: x ? "red" : "primaryDark",
+        caretAriaLabel: u.intl.string(u.t["+ybWO4"]),
+        color: x ? "red" : void 0,
+        label: C,
         onMouseEnter: e => {
-            _?.(e), C.onMouseEnter()
+            m?.(e), N.onMouseEnter()
         },
         onMouseLeave: e => {
-            m?.(e), C.onMouseLeave()
+            p?.(e), N.onMouseLeave()
         },
         onClick: e => {
-            p?.(e), (0, d.X)(f, d.O.MIC, t)
-        },
-        ...g
+            g?.(e), (0, d.X)(E, d.O.MIC, t)
+        }
     })
 }

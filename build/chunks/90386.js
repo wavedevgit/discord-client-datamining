@@ -7,8 +7,8 @@ var s = _(627968),
     i = _(397927),
     a = _(954376),
     n = _(287809),
-    A = _(562153),
-    r = _(985018),
+    r = _(562153),
+    A = _(985018),
     l = _(627534);
 let o = (e, t) => {
         if (1 === e.length) {
@@ -29,19 +29,19 @@ let o = (e, t) => {
             c = e => (0, s.jsx)(i.Text, {
                 variant: "text-md/semibold",
                 className: l.Xh,
-                children: A.Ay.getName(_, a, e)
+                children: r.Ay.getName(_, a, e)
             });
-        return t >= 4 ? r.intl.format(r.t.qfo6KR, {
+        return t >= 4 ? A.intl.format(A.t.qfo6KR, {
             usernameHook1: () => c(o[0]),
             usernameHook2: () => c(o[1]),
             numberOfOtherUsers: t - e.length
-        }) : 3 === t ? r.intl.format(r.t["67ZE+9"], {
+        }) : 3 === t ? A.intl.format(A.t["67ZE+9"], {
             usernameHook1: () => c(o[0]),
             usernameHook2: () => c(o[1])
-        }) : 2 === t ? r.intl.format(r.t.veV4IN, {
+        }) : 2 === t ? A.intl.format(A.t.veV4IN, {
             usernameHook1: () => c(o[0]),
             usernameHook2: () => c(o[1])
-        }) : r.intl.format(r.t["4WHCtq"], {
+        }) : A.intl.format(A.t["4WHCtq"], {
             usernameHook: () => c(o[0])
         })
     }

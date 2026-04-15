@@ -156,6 +156,7 @@ function en(e) {
                     isUnread: n,
                     isBeforeGroup: null == e.content && ee(el[t + 1]),
                     id: n ? $.q4 : void 0,
+                    itemId: null != e.content ? `divider-${e.contentKey??t}` : void 0,
                     children: e.content
                 }, `divider-${e.contentKey??e.unreadId??t}`)
             }

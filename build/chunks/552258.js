@@ -6,8 +6,8 @@ var s = _(627968),
     i = _(64700),
     a = _(110259),
     n = _(311907),
-    A = _(397927),
-    r = _(956793),
+    r = _(397927),
+    A = _(956793),
     l = _(964486),
     o = _(734057),
     c = _(994500),
@@ -38,7 +38,7 @@ function f(e) {
         }, {
             icon: (0, s.jsx)("div", {
                 className: g.K,
-                children: (0, s.jsx)(A.id, {})
+                children: (0, s.jsx)(r.id, {})
             }),
             text: C.intl.string(C.t["+4O9nX"]),
             className: g.n
@@ -58,7 +58,7 @@ function f(e) {
             })
         },
         onDismissAndLeave: () => {
-            G.current = !0, O(), r.default.disconnect(), d.default.track(N.HAw.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
+            G.current = !0, O(), A.default.disconnect(), d.default.track(N.HAw.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
                 action: L.Qi.CLICK_TO_LEAVE,
                 channel_id: t,
                 blocked_user_ids: m ? [_] : [],

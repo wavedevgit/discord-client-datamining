@@ -6,8 +6,8 @@ var s = _(627968),
     i = _(64700),
     a = _(503698),
     n = _.n(a),
-    A = _(158954),
-    r = _(397927),
+    r = _(158954),
+    A = _(397927),
     l = _(922529),
     o = _(977393),
     c = _(117816);
@@ -24,7 +24,7 @@ function I(e) {
         transitionState: h,
         impression: L
     } = e;
-    return (0, s.jsx)(A.ExpressiveModal, {
+    return (0, s.jsx)(r.ExpressiveModal, {
         transitionState: h,
         onClose: () => (I(), Promise.resolve()),
         trackingProps: {
@@ -49,7 +49,7 @@ function I(e) {
             children: a.map((e, t) => (0, s.jsxs)(i.Fragment, {
                 children: [(0, s.jsxs)("div", {
                     className: n()(o.lj, e.className),
-                    children: [e.icon, (0, s.jsx)(r.Text, {
+                    children: [e.icon, (0, s.jsx)(A.Text, {
                         variant: "text-md/medium",
                         children: e.text
                     })]
