@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(780057),
     A = n(747926),
     g = n(954571),
-    p = n(203982),
-    _ = n(453771),
+    _ = n(203982),
+    p = n(453771),
     f = n(518960),
     E = n(408018),
     C = n(447155),
@@ -76,9 +76,9 @@ function N(e) {
             n = "txt",
             i = "",
             l = M.match(v);
-        null != l && (i = l[1], n = l[2], e = l[3], i += l[4]), (0, f.R)([(0, _.VE)(new Blob([e], {
+        null != l && (i = l[1], n = l[2], e = l[3], i += l[4]), (0, f.R)([(0, p.VE)(new Blob([e], {
             type: "text/plain"
-        }), `message.${n}`, "text/plain")], t, R), p._.dispatchToLastSubscribed(x.jej.CLEAR_TEXT), "" !== i && p._.dispatchToLastSubscribed(x.jej.INSERT_TEXT, {
+        }), `message.${n}`, "text/plain")], t, R), _._.dispatchToLastSubscribed(x.jej.CLEAR_TEXT), "" !== i && _._.dispatchToLastSubscribed(x.jej.INSERT_TEXT, {
             plainText: i
         })
     }

@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(954571),
     A = n(957565),
     g = n(975571),
-    p = n(917592),
-    _ = n(652215),
+    _ = n(917592),
+    p = n(652215),
     f = n(731854),
     E = n(985018),
     C = n(375993);
@@ -41,7 +41,7 @@ let x = () => {
 
 function S(e) {
     (0, l.useEffect)(() => {
-        m.default.track(_.HAw.OPEN_POPOUT, {
+        m.default.track(p.HAw.OPEN_POPOUT, {
             type: "RTC Connection"
         })
     }, []);
@@ -70,7 +70,7 @@ function S(e) {
                     }), (0, i.jsx)("div", {
                         className: C.xB,
                         children: (0, i.jsx)("strong", {
-                            children: p.A.getShortHostname(t)
+                            children: _.A.getShortHostname(t)
                         })
                     })]
                 }), (0, i.jsx)("div", {
@@ -105,24 +105,24 @@ function S(e) {
         } = e,
         A = u.Q_.getSetting(),
         S = {
-            [_.S7L.AWAITING_ENDPOINT]: E.intl.format(E.t.Eu2vUR, {
-                url: _.qF7.STATUS
+            [p.S7L.AWAITING_ENDPOINT]: E.intl.format(E.t.Eu2vUR, {
+                url: p.qF7.STATUS
             }),
-            [_.S7L.CONNECTING]: E.intl.string(E.t["y+E8aD"]),
-            [_.S7L.AUTHENTICATING]: E.intl.string(E.t["5lGIZH"]),
-            [_.S7L.DISCONNECTED]: E.intl.string(E.t.fOX25I),
-            [_.S7L.RTC_CONNECTING]: E.intl.string(E.t.b5Ubd5),
-            [_.S7L.ICE_CHECKING]: E.intl.format(E.t.SyoYUb, {
-                url: g.A.getArticleURL(_.MVz.VOICE_CONNECTION_ERRORS)
+            [p.S7L.CONNECTING]: E.intl.string(E.t["y+E8aD"]),
+            [p.S7L.AUTHENTICATING]: E.intl.string(E.t["5lGIZH"]),
+            [p.S7L.DISCONNECTED]: E.intl.string(E.t.fOX25I),
+            [p.S7L.RTC_CONNECTING]: E.intl.string(E.t.b5Ubd5),
+            [p.S7L.ICE_CHECKING]: E.intl.format(E.t.SyoYUb, {
+                url: g.A.getArticleURL(p.MVz.VOICE_CONNECTION_ERRORS)
             }),
-            [_.S7L.DTLS_CONNECTING]: E.intl.format(E.t.SyoYUb, {
-                url: g.A.getArticleURL(_.MVz.VOICE_CONNECTION_ERRORS)
+            [p.S7L.DTLS_CONNECTING]: E.intl.format(E.t.SyoYUb, {
+                url: g.A.getArticleURL(p.MVz.VOICE_CONNECTION_ERRORS)
             }),
-            [_.S7L.RTC_CONNECTED]: n,
-            [_.S7L.NO_ROUTE]: E.intl.format(E.t["2tgQnk"], {
-                url: g.A.getArticleURL(_.MVz.VOICE_CONNECTION_ERRORS)
+            [p.S7L.RTC_CONNECTED]: n,
+            [p.S7L.NO_ROUTE]: E.intl.format(E.t["2tgQnk"], {
+                url: g.A.getArticleURL(p.MVz.VOICE_CONNECTION_ERRORS)
             }),
-            [_.S7L.RTC_DISCONNECTED]: E.intl.string(E.t.fOX25I)
+            [p.S7L.RTC_DISCONNECTED]: E.intl.string(E.t.fOX25I)
         } [a];
     return (0, i.jsxs)(i.Fragment, {
         children: ["function" == typeof S ? S() : (0, i.jsx)("p", {
@@ -160,7 +160,7 @@ function S(e) {
                 })]
             }), !A && !__OVERLAY__ && (0, i.jsx)(o.MzZ, {
                 className: C.Ce,
-                href: g.A.getArticleURL(_.MVz.VOICE_VIDEO_TROUBLESHOOTING),
+                href: g.A.getArticleURL(p.MVz.VOICE_VIDEO_TROUBLESHOOTING),
                 children: E.intl.string(E.t.hvVgAZ)
             })]
         })]

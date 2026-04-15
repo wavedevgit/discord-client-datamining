@@ -19,8 +19,8 @@ function m(e) {
         m = (0, i.bG)([s.A], () => null != t && s.A.isLurking(t), [t]),
         A = (0, i.bG)([o.Ay], () => null != t && o.Ay.isCurrentUserGuest(t), [t]),
         g = (0, i.bG)([d.A], () => n && d.A.can(h.xBc.ADD_REACTIONS, e), [n, e]),
-        p = (0, l.ix)(t),
-        [, _] = (0, a.c)(t),
+        _ = (0, l.ix)(t),
+        [, p] = (0, a.c)(t),
         f = (0, r.Id)(e);
     return null == e ? {
         disableReactionReads: !0,
@@ -36,9 +36,9 @@ function m(e) {
             renderReactions: !0,
             canAddNewReactions: g,
             isLurking: m,
-            communicationDisabled: _,
+            communicationDisabled: p,
             isActiveChannelOrUnarchivableThread: f,
-            isAutomodQuarantined: p
+            isAutomodQuarantined: _
         }),
         isLurking: m,
         isGuest: A,

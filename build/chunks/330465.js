@@ -70,8 +70,8 @@ let P = l.memo(function(e) {
         isMentionLowImportance: K,
         contextMenu: Y = G,
         draggable: z = !1,
-        sorting: X = !1,
-        preloadOnClick: q = !0,
+        sorting: q = !1,
+        preloadOnClick: X = !0,
         guildJoinRequestStatus: $,
         height: J,
         "aria-setsize": Q,
@@ -105,7 +105,7 @@ let P = l.memo(function(e) {
         }),
         er = (0, d.Vd)(ee ?? L.dJq, null != et ? 2 : 1),
         [eo, ed] = l.useState(!1),
-        ec = !X && eo,
+        ec = !q && eo,
         [eu, eh] = l.useState(!1),
         [eA, e_] = l.useState(!1),
         [em] = l.useState(() => new h.J_(70, () => e_(!0))),
@@ -119,10 +119,10 @@ let P = l.memo(function(e) {
             })
         }, [ee, P]),
         ef = l.useCallback(() => {
-            if (null != P || null == k || F || !q) return;
+            if (null != P || null == k || F || !X) return;
             let e = (0, g.W)(k.id);
             null != e && _.A.preload(k.id, e)
-        }, [P, k, F, q]),
+        }, [P, k, F, X]),
         eE = (0, u.bG)([I.Ay], () => I.Ay.isCurrentUserGuest(ee)),
         ex = l.useCallback(e => {
             null == k || eE || Y(e, k)
@@ -135,11 +135,11 @@ let P = l.memo(function(e) {
         }, [em]);
 
     function eN() {
-        X || ed(!0)
+        q || ed(!0)
     }
 
     function eT() {
-        X || ed(!1)
+        q || ed(!1)
     }
     let eS = l.useCallback(e => {
             n?.(ee, e)
@@ -219,7 +219,7 @@ let P = l.memo(function(e) {
             },
             "data-drop-hovering": eA,
             className: a()(D.rN, {
-                [D.p9]: X,
+                [D.p9]: q,
                 [D.oR]: eA,
                 [D.wH]: eA || B
             }),
@@ -235,7 +235,7 @@ let P = l.memo(function(e) {
                 scale: null == J ? 1 : J
             },
             className: a()(D.rN, {
-                [D.p9]: X,
+                [D.p9]: q,
                 [D.oR]: eA,
                 [D.wH]: eA || B
             }),
@@ -257,7 +257,7 @@ let P = l.memo(function(e) {
             className: D.Io
         }), (0, i.jsx)(v.A, {
             guild: k,
-            disabled: X,
+            disabled: q,
             isDragging: es,
             children: es ? eO : eL
         }), z ? (0, i.jsx)(y.Ay, {

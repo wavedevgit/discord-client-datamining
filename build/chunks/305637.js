@@ -1,6 +1,6 @@
 /** chunk id: 305637 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var i = n(627968);
 n(64700);
@@ -16,13 +16,13 @@ var l = n(311907),
     m = n(734057),
     A = n(203982),
     g = n(652215),
-    p = n(985018);
+    _ = n(985018);
 
-function _(e) {
+function p(e) {
     let {
         isCurrentUser: t,
         applicationStream: n,
-        onAction: _
+        onAction: p
     } = e, {
         activeStream: f,
         watchingOtherStream: E
@@ -35,13 +35,13 @@ function _(e) {
             return t !== n.ownerId
         }).length > 0
     })), C = (0, l.bG)([m.A], () => m.A.getChannel(n?.channelId)), [x, S] = (0, d.zP)(C), I = (0, u.aL)(), T = null != f && null != n && f.state !== g.XYD.ENDED && f.ownerId === n.ownerId, v = e => {
-        null != n && (_?.(), o.default.selectVoiceChannel(n.channelId), T || (0, c.Nl)(n, {
+        null != n && (p?.(), o.default.selectVoiceChannel(n.channelId), T || (0, c.Nl)(n, {
             forceMultiple: e
         }), I.dispatch(g.jej.POPOUT_CLOSE), A._.dispatch(g.jej.MODAL_CLOSE), r.A.popAll())
     };
     if (null == n) return null;
     let N = (0, d.CT)(S);
-    return t ? N = p.intl.string(p.t.XvBdeT) : T && (N = p.intl.string(p.t["JH1SJ+"])), (0, i.jsxs)(i.Fragment, {
+    return t ? N = _.intl.string(_.t.XvBdeT) : T && (N = _.intl.string(_.t["JH1SJ+"])), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(s.Button, {
             size: "sm",
             variant: T ? "secondary" : "active",
@@ -51,12 +51,12 @@ function _(e) {
             onClick: () => v(!1),
             fullWidth: !0
         }), E && !T ? (0, i.jsx)(a.m, {
-            text: p.intl.string(p.t.wCrzut),
+            text: _.intl.string(_.t.wCrzut),
             children: (0, i.jsx)(s.K0, {
                 variant: "secondary",
                 size: "sm",
                 icon: s.vAm,
-                "aria-label": p.intl.string(p.t.wCrzut),
+                "aria-label": _.intl.string(_.t.wCrzut),
                 onClick: () => {
                     v(!0)
                 }

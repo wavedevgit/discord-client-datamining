@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(544028),
     A = n(966833),
     g = n(222823),
-    p = n(985018);
-let _ = [];
+    _ = n(985018);
+let p = [];
 
 function f(e) {
     let {
@@ -28,7 +28,7 @@ function f(e) {
     } = (0, a.cf)([A.A], () => {
         let e = A.A.getPins(t.id);
         return {
-            items: e?.items ?? _,
+            items: e?.items ?? p,
             state: e?.state ?? A.e.LOADING
         }
     }), x = l.useMemo(() => E.map(e => e.message), [E]), S = (0, a.bG)([g.Ay], () => g.Ay.hasUnreadPins(t.id));
@@ -49,7 +49,7 @@ function f(e) {
         }, [t.id, E]),
         v = (0, a.bG)([m.A], () => (0, s.qB)(m.A.theme));
     return (0, i.jsx)(r.lGe, {
-        "aria-label": p.intl.string(p.t["mp1N/2"]),
+        "aria-label": _.intl.string(_.t["mp1N/2"]),
         children: (0, i.jsx)(h.Ay, {
             channel: t,
             onFetch: I,
@@ -59,7 +59,7 @@ function f(e) {
             analyticsName: "Channel Pins",
             renderEmptyState: function() {
                 if (E.length > 0) return;
-                let e = p.intl.string(t.isPrivate() ? p.t.rhqcbJ : p.t.fmyaWJ),
+                let e = _.intl.string(t.isPrivate() ? _.t.rhqcbJ : _.t.fmyaWJ),
                     l = v ? n(395236) : n(90367);
                 return (0, i.jsx)(h.u9, {
                     msg: e,
@@ -68,7 +68,7 @@ function f(e) {
             },
             renderHeader: () => (0, i.jsx)(h.Y9, {
                 icon: r.tsw,
-                title: p.intl.string(p.t["mp1N/2"])
+                title: _.intl.string(_.t["mp1N/2"])
             }),
             onCloseMessage: function(e, n) {
                 null != e && (n.shiftKey ? o.A.unpinMessage(t, e.id) : u.A.confirmUnpin(t, e))
@@ -76,10 +76,10 @@ function f(e) {
             onJump: f,
             loadMore: T,
             getProTip: function() {
-                return t.isPrivate() ? p.intl.string(p.t["3dLGAs"]) : p.intl.string(p.t.KTbRcg)
+                return t.isPrivate() ? _.intl.string(_.t["3dLGAs"]) : _.intl.string(_.t.KTbRcg)
             },
             listName: "pins",
-            closeAriaLabel: p.intl.string(p.t["Bse+F/"])
+            closeAriaLabel: _.intl.string(_.t["Bse+F/"])
         })
     })
 }

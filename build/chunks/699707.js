@@ -50,24 +50,24 @@ function b(e) {
         F = (0, d.A)(V),
         [W, K] = l.useState(!0),
         [Y, z] = l.useState(!1),
-        X = L.type === I.lp.ACTIVITY,
-        q = (0, c.A)(X ? L.applicationId : void 0),
-        $ = !X && null != L.streamId,
+        q = L.type === I.lp.ACTIVITY,
+        X = (0, c.A)(q ? L.applicationId : void 0),
+        $ = !q && null != L.streamId,
         J = G <= 2 * S + 144,
         Q = M && !J,
         Z = (0, d.A)(Q),
         ee = P === x.DUB.MINIMUM || P === x.DUB.NORMAL,
-        et = !J && (!ee || X),
+        et = !J && (!ee || q),
         en = (0, m.A)(et, 100),
         ei = ((0, d.A)(L.id) ?? L.id) !== L.id,
         el = 0;
-    (X || Q) && (el += 72), X && !Q && (et ? el += 48 : el += 8), Q && (el += .5 * S + 8);
-    let es = l.useMemo(() => X && q ? U / (G - 2 * el) : $ && null != V && V.width > 0 && V.height > 0 ? V.width / V.height : T, [$, V, X, U, G, el, q]),
+    (q || Q) && (el += 72), q && !Q && (et ? el += 48 : el += 8), Q && (el += .5 * S + 8);
+    let es = l.useMemo(() => q && X ? U / (G - 2 * el) : $ && null != V && V.width > 0 && V.height > 0 ? V.width / V.height : T, [$, V, q, U, G, el, X]),
         ea = G - 2 * el,
-        er = X && q ? U : ea * es,
+        er = q && X ? U : ea * es,
         eo = Math.floor(Math.min(U, er) / es),
         ed = G > U / es + 72 + S + 8;
-    t = Q || X ? Q ? -16 : -8 : 40 + Math.max(0, 72 - (G - eo) / 2);
+    t = Q || q ? Q ? -16 : -8 : 40 + Math.max(0, 72 - (G - eo) / 2);
     let ec = Math.max(0, 72 - (G - eo) / 2);
     l.useEffect(() => {
         let e = setTimeout(() => {

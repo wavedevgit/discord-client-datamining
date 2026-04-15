@@ -1,13 +1,13 @@
 /** chunk id: 151119 params = (module,exports,require) **/
-n.d(t, {
-    S: () => a
+i.d(e, {
+    S: () => n
 });
-var i = n(311907),
-    l = n(349435),
-    s = n(338510);
+var s = i(311907),
+    _ = i(349435),
+    l = i(338510);
 
-function a(e) {
-    let t = (0, s.u)(e),
-        n = (0, i.bG)([l.Ay], () => l.Ay.hasShownInitialTooltipForChannel(e));
-    return null != t && !n
+function n(t) {
+    let e = (0, l.u)(t),
+        i = (0, s.bG)([_.Ay], () => _.Ay.hasShownInitialTooltipForChannel(t));
+    return null != e && !i
 }

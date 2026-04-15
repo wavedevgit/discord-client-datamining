@@ -2,11 +2,11 @@
 n.d(t, {
     A: () => o
 });
-var a = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(397927),
-    i = n(573435),
-    r = n(486020),
+var a = n(397927),
+    r = n(573435),
+    i = n(486020),
     s = n(985018),
     d = n(90360);
 let o = e => {
@@ -16,32 +16,32 @@ let o = e => {
         id: n,
         icon: o,
         name: c
-    } = t, u = r.Ay.getGuildIconURL({
+    } = t, u = i.Ay.getGuildIconURL({
         id: n,
         icon: o,
         size: 32
     }) ?? void 0;
-    return (0, a.jsxs)("div", {
+    return (0, l.jsxs)("div", {
         className: d.kL,
-        children: [(0, a.jsx)(l.Heading, {
+        children: [(0, l.jsx)(a.Heading, {
             className: d.wx,
             variant: "heading-sm/semibold",
             children: s.intl.string(s.t.nTe4HC)
-        }), (0, a.jsx)("div", {
+        }), (0, l.jsx)("div", {
             className: d.bo,
-            children: (0, a.jsxs)("div", {
+            children: (0, l.jsxs)("div", {
                 className: d.OA,
-                children: [(0, a.jsx)(i.Ay, {
-                    mask: i.Ay.Masks.SQUIRCLE,
+                children: [(0, l.jsx)(r.Ay, {
+                    mask: r.Ay.Masks.SQUIRCLE,
                     width: 32,
                     height: 32,
                     className: d.$d,
-                    children: (0, a.jsx)("img", {
+                    children: (0, l.jsx)("img", {
                         src: u,
                         alt: "",
                         className: d.$f
                     })
-                }), (0, a.jsx)(l.Text, {
+                }), (0, l.jsx)(a.Text, {
                     color: "text-default",
                     variant: "text-sm/normal",
                     children: c

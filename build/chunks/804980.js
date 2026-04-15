@@ -16,8 +16,8 @@ var i = n(627968),
     m = n(878549),
     A = n(969151),
     g = n(550151),
-    p = n(902439),
-    _ = n(283488),
+    _ = n(902439),
+    p = n(283488),
     f = n(732637),
     E = n(315206),
     C = n(104171),
@@ -70,9 +70,9 @@ function w(e) {
         application: n,
         channel: a,
         width: o
-    } = e, A = o > 400 ? 2 : +(o > 300), [p] = o > 400 ? [c._3J.SIZE_56, 56] : o > 300 ? [c._3J.SIZE_32, 32] : [c._3J.SIZE_24, 24], _ = (0, r.yK)([R.default, b.default], () => Array.from(t).map(e => (0, m.S)(e, b.default) ? null : R.default.getUser(e.userId)).filter(M.Vq)), f = (0, r.bG)([u.Ay], () => u.Ay.getEmbeddedActivitiesForChannel(a.id).find(e => e.applicationId === n.id) ?? u.Ay.getEmbeddedActivitiesForStartingChannel(a.id).find(e => e.applicationId === n.id)), {
+    } = e, A = o > 400 ? 2 : +(o > 300), [_] = o > 400 ? [c._3J.SIZE_56, 56] : o > 300 ? [c._3J.SIZE_32, 32] : [c._3J.SIZE_24, 24], p = (0, r.yK)([R.default, b.default], () => Array.from(t).map(e => (0, m.S)(e, b.default) ? null : R.default.getUser(e.userId)).filter(M.Vq)), f = (0, r.bG)([u.Ay], () => u.Ay.getEmbeddedActivitiesForChannel(a.id).find(e => e.applicationId === n.id) ?? u.Ay.getEmbeddedActivitiesForStartingChannel(a.id).find(e => e.applicationId === n.id)), {
         analyticsLocations: E
-    } = (0, T.Ay)(), C = (0, d.p)(), x = L.Ay.getName(a.getGuildId(), a.id, _?.[0]), S = (0, g.vG)({
+    } = (0, T.Ay)(), C = (0, d.p)(), x = L.Ay.getName(a.getGuildId(), a.id, p?.[0]), S = (0, g.vG)({
         userId: R.default.getCurrentUser()?.id,
         channelId: a.id,
         application: n
@@ -89,19 +89,19 @@ function w(e) {
     return (0, i.jsxs)("div", {
         className: D.Yi,
         children: [(0, i.jsx)(k, {
-            avatarSize: p,
+            avatarSize: _,
             guildId: I,
             channelId: a.id,
-            users: _
+            users: p
         }), (0, i.jsx)(c.Text, {
             className: s()(D.m_, {
                 [D.EX]: 0 === A,
                 [D.Y]: 1 === A
             }),
             variant: "text-sm/normal",
-            children: _.length > 1 ? O.intl.formatToPlainString(O.t.cpe6CK, {
+            children: p.length > 1 ? O.intl.formatToPlainString(O.t.cpe6CK, {
                 username: x,
-                count: _.length - 1
+                count: p.length - 1
             }) : O.intl.formatToPlainString(O.t["7Uuia2"], {
                 username: x
             })
@@ -144,9 +144,9 @@ function U(e) {
         analyticsLocations: c
     } = (0, T.Ay)(I.A.ACTIVITY_TILE), {
         applicationId: d
-    } = t, u = (0, p.A)(), h = null != u && (0, A.H)(u.location) === o.id && u.applicationId === d, [m] = (0, N.A)([d]), {
+    } = t, u = (0, _.A)(), h = null != u && (0, A.H)(u.location) === o.id && u.applicationId === d, [m] = (0, N.A)([d]), {
         url: g
-    } = (0, _.A)({
+    } = (0, p.A)({
         applicationId: d,
         names: P,
         size: 1024

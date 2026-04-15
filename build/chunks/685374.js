@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(71393),
     A = n(954571),
     g = n(147036),
-    p = n(845202),
-    _ = n(86944),
+    _ = n(845202),
+    p = n(86944),
     f = n(737045),
     E = n(652215),
     C = n(985018),
@@ -50,7 +50,7 @@ function I(e) {
         roles: M,
         members: L,
         getRichTag: O
-    } = (0, _.K)(t, n, n.accessPermissions, E), D = p.A.useSections({
+    } = (0, p.K)(t, n, n.accessPermissions, E), D = _.A.useSections({
         roles: M,
         members: L
     }), P = h && 0 === Object.keys(I).length;
@@ -72,7 +72,7 @@ function I(e) {
         }
     }
     let w = (0, u.ke)(n.type) ? r.I$d : r.trU;
-    return (0, i.jsx)(p.A.Provider, {
+    return (0, i.jsx)(_.A.Provider, {
         listRef: j,
         query: E,
         setQuery: S,
@@ -100,7 +100,7 @@ function I(e) {
                     className: x.h_,
                     variant: "text-sm/normal",
                     children: C.intl.string(C.t.f7VbhF)
-                }), (0, i.jsx)(p.A.SearchBox, {
+                }), (0, i.jsx)(_.A.SearchBox, {
                     placeholderText: C.intl.string(C.t.iezLLn)
                 }), (0, i.jsx)(r.Text, {
                     className: x.W$,
@@ -115,10 +115,10 @@ function I(e) {
             }),
             listProps: {
                 ref: j,
-                sectionHeight: p.A.SECTION_HEIGHT,
-                renderSection: p.A.renderSection,
-                rowHeight: p.A.ROW_HEIGHT,
-                renderRow: p.A.renderRow,
+                sectionHeight: _.A.SECTION_HEIGHT,
+                renderSection: _.A.renderSection,
+                rowHeight: _.A.ROW_HEIGHT,
+                renderRow: _.A.renderRow,
                 sections: D
             },
             actions: P ? [{

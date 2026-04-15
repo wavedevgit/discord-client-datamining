@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(994500),
     A = n(638075),
     g = n(465364),
-    p = n(763754),
-    _ = n(448368),
+    _ = n(763754),
+    p = n(448368),
     f = n(535421),
     E = n(112758),
     C = n(652215),
@@ -32,7 +32,7 @@ let S = l.memo(function(e) {
         setPopout: N,
         isReplySpineClickable: y,
         showReplySpine: b
-    } = e, j = n.state === h.a.LOADED ? n.message : void 0, R = (0, p.X4)(j), M = (0, c.S)((t.editedTimestamp ?? t.timestamp).valueOf()), L = l.useMemo(() => {
+    } = e, j = n.state === h.a.LOADED ? n.message : void 0, R = (0, _.X4)(j), M = (0, c.S)((t.editedTimestamp ?? t.timestamp).valueOf()), L = l.useMemo(() => {
         if (null == j) return null;
         let e = (0, r.A)(j);
         if (e.type === C.lAJ.USER_JOIN) return (0, s.$)(x.intl.formatToParts(A.A.getSystemMessageUserJoin(e.id), {
@@ -86,8 +86,8 @@ let S = l.memo(function(e) {
             referencedUsernameProfile: !1,
             referencedAvatarProfile: !1
         })
-    }, [N]), F = (0, p.X4)(t);
-    return (0, i.jsx)(_.A, {
+    }, [N]), F = (0, _.X4)(t);
+    return (0, i.jsx)(p.A, {
         repliedAuthor: R,
         baseMessage: t,
         channel: S,

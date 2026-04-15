@@ -2,11 +2,11 @@
 n.d(t, {
     A: () => m
 });
-var a = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(503698),
-    i = n.n(l),
-    r = n(311907),
+var a = n(503698),
+    r = n.n(a),
+    i = n(311907),
     s = n(397927),
     d = n(865116),
     o = n(147925),
@@ -16,24 +16,24 @@ let _ = e => {
         let {
             child: t,
             onClick: n,
-            nodeMap: l
-        } = e, [_, m] = t, p = (0, r.bG)([d.Ay], () => d.Ay.get("iar_show_report_sub_type_labels")), h = l[m], x = h?.report_type;
-        return (0, a.jsxs)(s.DUT, {
-            className: i()(u.Zm, c.lD),
+            nodeMap: a
+        } = e, [_, m] = t, p = (0, i.bG)([d.Ay], () => d.Ay.get("iar_show_report_sub_type_labels")), g = a[m], h = g?.report_type;
+        return (0, l.jsxs)(s.DUT, {
+            className: r()(u.Zm, c.lD),
             onClick: () => n(t),
-            children: [(0, a.jsxs)("div", {
+            children: [(0, l.jsxs)("div", {
                 className: u.OH,
-                children: [(0, a.jsx)(s.Text, {
+                children: [(0, l.jsx)(s.Text, {
                     className: u.ix,
                     variant: "text-md/normal",
                     children: _
-                }), p && null != x && (0, a.jsx)(s.Text, {
+                }), p && null != h && (0, l.jsx)(s.Text, {
                     className: u.Z$,
                     variant: "text-xs/normal",
                     color: "text-muted",
-                    children: x
+                    children: h
                 })]
-            }), (0, a.jsx)(o.A, {
+            }), (0, l.jsx)(o.A, {
                 className: u._2,
                 direction: o.A.Directions.RIGHT
             })]
@@ -45,19 +45,19 @@ let _ = e => {
                 children: t
             },
             onSelectChild: n,
-            nodeMap: l
+            nodeMap: a
         } = e;
         if (null == t || 0 === t.length) return null;
-        let i = t.map(e => {
-            let [t, i] = e;
-            return (0, a.jsx)(_, {
+        let r = t.map(e => {
+            let [t, r] = e;
+            return (0, l.jsx)(_, {
                 child: e,
                 onClick: n,
-                nodeMap: l
-            }, `${t}+${i}`)
+                nodeMap: a
+            }, `${t}+${r}`)
         });
-        return (0, a.jsx)("div", {
+        return (0, l.jsx)("div", {
             className: c.E8,
-            children: i
+            children: r
         })
     }

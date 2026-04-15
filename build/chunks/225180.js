@@ -1,18 +1,18 @@
 /** chunk id: 225180 params = (module,exports,require) **/
-n.d(t, {
-    A: () => a
+s.d(a, {
+    A: () => m
 });
-var i = n(311907),
-    l = n(760751),
-    s = n(486020);
+var i = s(311907),
+    c = s(760751),
+    d = s(486020);
 
-function a(e, t) {
-    let n = (0, i.bG)([l.A], () => l.A.getDetectableGame(e ?? ""));
-    if (null == n) return;
-    let a = "cover" === t ? n.cover_image_hash : n.icon;
-    return s.Ay.getApplicationIconURL({
-        id: n.id,
-        icon: a,
+function m(e, a) {
+    let s = (0, i.bG)([c.A], () => c.A.getDetectableGame(e ?? ""));
+    if (null == s) return;
+    let m = "cover" === a ? s.cover_image_hash : s.icon;
+    return d.Ay.getApplicationIconURL({
+        id: s.id,
+        icon: m,
         keepAspectRatio: !0
     })
 }

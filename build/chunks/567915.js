@@ -1,20 +1,20 @@
 /** chunk id: 567915 params = (module,exports,require) **/
-n.d(l, {
+l.d(n, {
     A: () => s
 });
-var t = n(64700),
-    i = n(576622);
+var i = l(64700),
+    t = l(576622);
 
 function s(e) {
     let {
-        userId: l,
-        initialGuildId: n
-    } = e, [s, a] = t.useState(n), [r, o] = t.useState(n), d = t.useRef(r), c = t.useCallback(e => {
+        userId: n,
+        initialGuildId: l
+    } = e, [s, a] = i.useState(l), [r, o] = i.useState(l), d = i.useRef(r), c = i.useCallback(e => {
         a(e ?? void 0)
     }, []);
-    return t.useEffect(() => {
+    return i.useEffect(() => {
         let e = !1;
-        return (0, i.A)(l, void 0, {
+        return (0, t.A)(n, void 0, {
             type: "modal",
             guildId: s,
             withMutualFriendsCount: !0,
@@ -27,7 +27,7 @@ function s(e) {
         }), () => {
             e = !0
         }
-    }, [s, l]), {
+    }, [s, n]), {
         guildId: r,
         pendingGuildId: s,
         isLoading: s !== r,

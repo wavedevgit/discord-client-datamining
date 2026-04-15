@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(765548),
     A = n(775602),
     g = n(821720),
-    p = n(429913),
-    _ = n(47167),
+    _ = n(429913),
+    p = n(47167),
     f = n(17447),
     E = n(736339),
     C = n(354328),
@@ -53,7 +53,7 @@ let J = (0, r.animated)(d.fKU),
         let n, a, r, {
                 className: h,
                 messageGroupSpacing: g,
-                scrollerClassName: p,
+                scrollerClassName: _,
                 channel: f,
                 messages: E,
                 unreadCount: C,
@@ -72,7 +72,7 @@ let J = (0, r.animated)(d.fKU),
                 typingGradient: U
             } = e,
             [H, q] = l.useState(b.A.isAtBottom(f.id) ?? !1),
-            $ = (0, _.Ay)(f),
+            $ = (0, p.Ay)(f),
             Z = (0, G.I)(I, R),
             X = I ? Z : Math.round(.87 * Z),
             Q = Math.max(1, Math.round(X / 30 * 8)),
@@ -165,7 +165,7 @@ let J = (0, r.animated)(d.fKU),
                 children: [null == eo && ea, (0, i.jsxs)(J, {
                     ref: eh,
                     customTheme: !0,
-                    className: s()(p, Y.XG, em ? eg : void 0),
+                    className: s()(_, Y.XG, em ? eg : void 0),
                     contentClassName: Y.gT,
                     onResize: et.handleResize,
                     onScroll: et.handleScroll,
@@ -213,7 +213,7 @@ let J = (0, r.animated)(d.fKU),
         } = e, {
             canManageMessages: u,
             permissionVersion: m,
-            canChat: _
+            canChat: p
         } = function(e) {
             let t = e.getGuildId(),
                 n = (0, c.bG)([R.A], () => null == t || R.A.canChatInGuild(t), [t]),
@@ -283,13 +283,13 @@ let J = (0, r.animated)(d.fKU),
                 u = (0, c.yK)([T.A], () => o && d ? T.A.summaries(e.id) ?? [] : [], [o, e.id, d]),
                 m = (0, c.bG)([T.A], () => o ? T.A.selectedSummary(e.id) : null, [o, e.id]),
                 A = (0, f.f)("message_stream"),
-                _ = (0, c.bG)([E.A], () => A ? E.A.getSelectedConversation(e.id) : null, [A, e.id]),
+                p = (0, c.bG)([E.A], () => A ? E.A.getSelectedConversation(e.id) : null, [A, e.id]),
                 S = (t = i, n = l.useMemo(() => {
                     let e = new Set;
                     return t.forEach(t => {
                         null != t.applicationId && null == t.application && e.add(t.applicationId)
                     }), Array.from(e)
-                }, [t]), (0, p.A)(n));
+                }, [t]), (0, _.A)(n));
             (0, g.A)(i, e);
             let I = l.useMemo(() => (0, U.A)({
                 channel: e,
@@ -298,8 +298,8 @@ let J = (0, r.animated)(d.fKU),
                 treatSpam: s && !r,
                 summaries: u,
                 selectedSummary: m,
-                selectedConversation: _
-            }), [i, e, a, s, u, m, _, S, r]);
+                selectedConversation: p
+            }), [i, e, a, s, u, m, p, S, r]);
             return {
                 messages: i,
                 channelStream: I,
@@ -322,7 +322,7 @@ let J = (0, r.animated)(d.fKU),
                     uploads: (0, c.bG)([D.A], () => D.A.getFiles(t.id), [t]),
                     unreadCount: (0, c.bG)([O.Ay], () => O.Ay.getUnreadCount(t.id), [t]),
                     hasUnreads: null != V,
-                    canChat: _,
+                    canChat: p,
                     editingMessageId: W,
                     fontSize: N,
                     keyboardModeEnabled: G,

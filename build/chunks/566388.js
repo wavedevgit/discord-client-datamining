@@ -48,8 +48,8 @@ var i = n(627968),
     K = n(707251),
     Y = n(357819),
     z = n(717965),
-    X = n(696842),
-    q = n(895903),
+    q = n(696842),
+    X = n(895903),
     $ = n(542372),
     J = n(533233),
     Q = n(652215),
@@ -107,7 +107,7 @@ function es(e) {
     let {
         channel: t
     } = e, n = (0, I.Us)(), l = (0, o.bG)([D.A], () => D.A.can(Q.xBc.CREATE_INSTANT_INVITE, t)), s = (0, o.bG)([M.A], () => M.A.getGuild(t.guild_id)), a = (0, o.bG)([V.A], () => V.A.getStageInstanceByChannel(t.id)), r = l || a?.invite_code != null;
-    return null != s && r ? (0, i.jsx)(X.A, {
+    return null != s && r ? (0, i.jsx)(q.A, {
         size: "md",
         channel: t,
         appContext: n,
@@ -151,7 +151,7 @@ function ea(e) {
     (0, H.vI)(n);
     let P = (0, o.bG)([L.A], () => L.A.getToastsEnabled(n.id)),
         V = (0, J.A)(n) ? null != v ? "84px" : "124px" : null != v ? "0px" : "48px";
-    return G && (V = "0px"), t = G ? (0, i.jsx)(q.A, {
+    return G && (V = "0px"), t = G ? (0, i.jsx)(X.A, {
         channel: n,
         onContinueClick: () => {
             (0, H.ek)(!1), N || (0, k.cy)(n)

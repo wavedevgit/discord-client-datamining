@@ -77,11 +77,11 @@ function B(e) {
                 } return [Array.from(e).sort(), Array.from(t).sort()]
         }, [W, H, F], w),
         z = (0, u.bG)([C.default], () => C.default.getId()),
-        X = l.useMemo(() => {
+        q = l.useMemo(() => {
             let e = W.map(e => (0, D.Xw)(e) || (0, D.Ay)(e) ? e.user.id : null).filter(S.Vq);
             return (0, r.uniq)([...K, ...e])
         }, [W, K]),
-        q = (0, v.v)(Y),
+        X = (0, v.v)(Y),
         {
             status: $,
             recommendations: J,
@@ -89,13 +89,13 @@ function B(e) {
         } = (0, E.XQ)({
             applicationIds: Y,
             numItems: 6,
-            userIds: X
+            userIds: q
         }),
         Z = "loading" === $ || 0 === J.length,
         ee = l.useMemo(() => J.map(e => x.A.fromSKU(e)).filter(S.Vq), [J]),
         et = (0, d.A)(Z ? k : ee, V),
         en = l.useMemo(() => {
-            let e = new Set(X),
+            let e = new Set(q),
                 {
                     hasWishlist: t,
                     hasPopular: n
@@ -110,11 +110,11 @@ function B(e) {
                         return t
                     }),
                     s = n.filter(e => e !== z),
-                    a = X.filter(e => e !== z);
+                    a = q.filter(e => e !== z);
                 return B ? (0, i.jsx)(j.A, {
                     sku: t.sku,
                     source: n.length > 0 ? f.uS.WISHLIST : f.uS.POPULAR,
-                    application: q[t.sku.applicationId],
+                    application: X[t.sku.applicationId],
                     guildId: h.guild_id,
                     channelId: h.id,
                     showIcons: l,
@@ -124,13 +124,13 @@ function B(e) {
                     variant: n.length > 0 ? O.$.WISHLIST : O.$.POPULAR,
                     wishlistItem: t,
                     userIdsForRecommendation: n,
-                    userIdsForGifting: X,
+                    userIdsForGifting: q,
                     guildId: h.guild_id,
                     channelId: h.id,
                     contextContainerClassName: G.RL
                 }, t.skuId)
             })
-        }, [z, X, J, et, Q, B, q, h.guild_id, h.id]);
+        }, [z, q, J, et, Q, B, X, h.guild_id, h.id]);
     return l.useEffect(() => {
         0 !== J.length && T.default.track(M.HAw.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
             guild_id: h.guild_id,
@@ -157,7 +157,7 @@ function B(e) {
                             variant: "text-sm/medium",
                             color: "text-subtle",
                             children: U.intl.format(U.t["+SqhBF"], {
-                                applicationName: Object.values(q).length > 0 ? Object.values(q)[0]?.name ?? U.intl.string(U.t["/1hhto"]) : U.intl.string(U.t["/1hhto"])
+                                applicationName: Object.values(X).length > 0 ? Object.values(X)[0]?.name ?? U.intl.string(U.t["/1hhto"]) : U.intl.string(U.t["/1hhto"])
                             })
                         })]
                     })

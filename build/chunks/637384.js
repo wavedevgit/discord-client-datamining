@@ -16,8 +16,8 @@ var l = n(503698),
     m = n(798505),
     A = n(670455),
     g = n(381941),
-    p = n(985018),
-    _ = n(950067);
+    _ = n(985018),
+    p = n(950067);
 
 function f(e) {
     let {
@@ -50,25 +50,25 @@ function f(e) {
     }, "animate-always");
     return (0, i.jsx)(i.Fragment, {
         children: c((e, t) => t ? (0, i.jsx)("div", {
-            className: _.RD,
+            className: p.RD,
             children: (0, i.jsxs)(s.animated.div, {
                 style: e,
-                className: _.GK,
+                className: p.GK,
                 children: [(0, i.jsx)(o.Text, {
                     variant: "text-xs/medium",
                     color: "interactive-text-default",
-                    children: p.intl.string(p.t["5ZsiE9"])
+                    children: _.intl.string(_.t["5ZsiE9"])
                 }), (0, i.jsx)(o.DUT, {
                     onClick: e => a(e, A.P0.GOOD),
                     children: (0, i.jsx)(u.A, {
-                        className: _.O1,
+                        className: p.O1,
                         width: 12,
                         height: 12
                     })
                 }), (0, i.jsx)(o.DUT, {
                     onClick: e => a(e, A.P0.BAD),
                     children: (0, i.jsx)(d.A, {
-                        className: _.O1,
+                        className: p.O1,
                         width: 12,
                         height: 12
                     })
@@ -92,7 +92,7 @@ function E(e) {
         children: [(0, i.jsx)(o.Kck, {
             size: "xs",
             color: "currentColor",
-            className: _.cR
+            className: p.cR
         }), n.content]
     }) : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(f, {
@@ -101,11 +101,11 @@ function E(e) {
         }), (0, i.jsx)(o.Kck, {
             size: "xs",
             color: "currentColor",
-            className: _.Jq
+            className: p.Jq
         })]
     }), (0, i.jsx)(c.A, {
-        className: a()(_.aK, m ? _.Ke : _.hO),
-        contentClassName: m ? _.Ew : _.rD,
+        className: a()(p.aK, m ? p.Ke : p.hO),
+        contentClassName: m ? p.Ew : p.rD,
         isUnread: u,
         id: u ? g.q4 : void 0,
         children: t

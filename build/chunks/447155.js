@@ -22,8 +22,8 @@ function m(e) {
         hasClips: m,
         channel: A,
         activities: g,
-        newClipsCount: p,
-        canPostPolls: _,
+        newClipsCount: _,
+        canPostPolls: p,
         appContext: f,
         canSendScheduledMessages: E,
         canSummarizeThreads: C
@@ -40,13 +40,13 @@ function m(e) {
         type: "CLIPS",
         icon: a.xgA,
         display: u.intl.string(u.t.o034cv),
-        badgeVal: p,
+        badgeVal: _,
         badgeColor: l.A.colors.BACKGROUND_BRAND.css
     }), n && x.push({
         type: "CREATE_THREAD",
         icon: a.G_k,
         display: u.intl.string(u.t.rBIGBL)
-    }), _ && x.push({
+    }), p && x.push({
         type: "POLL",
         icon: a.YRe,
         display: u.intl.string(u.t.Flr51u)

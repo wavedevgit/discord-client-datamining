@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(741961),
     A = n(682174),
     g = n(928830),
-    p = n(3137),
-    _ = n(559908),
+    _ = n(3137),
+    p = n(559908),
     f = n(103640),
     E = n(924177),
     C = n(985018),
@@ -25,7 +25,7 @@ let S = l.memo(function(e) {
         let {
             channelId: t,
             width: n
-        } = e, a = (0, o.bG)([u.A], () => u.A.useReducedMotion), s = (0, o.bG)([_.Ay], () => _.Ay.getMostRecentMessageCombo(t), [t]), [d, h] = l.useState(!1);
+        } = e, a = (0, o.bG)([u.A], () => u.A.useReducedMotion), s = (0, o.bG)([p.Ay], () => p.Ay.getMostRecentMessageCombo(t), [t]), [d, h] = l.useState(!1);
         l.useEffect(() => {
             if (s?.displayed) return;
             h(!1), setImmediate(() => {
@@ -119,7 +119,7 @@ let S = l.memo(function(e) {
     T = l.memo(function(e) {
         let {
             channelId: t
-        } = e, n = (0, o.bG)([h.default], () => h.default.getId()), a = (0, o.bG)([m.A], () => m.A.isTyping(t, n), [t, n]), s = (0, o.bG)([p.A], () => p.A.isEnabled()), u = (0, o.bG)([_.Ay], () => _.Ay.isComboing(n, t), [t, n]), {
+        } = e, n = (0, o.bG)([h.default], () => h.default.getId()), a = (0, o.bG)([m.A], () => m.A.isTyping(t, n), [t, n]), s = (0, o.bG)([_.A], () => _.A.isEnabled()), u = (0, o.bG)([p.Ay], () => p.Ay.isComboing(n, t), [t, n]), {
             ref: A,
             width: g = 0
         } = (0, d.Ay)(), [f, C] = l.useState(!1), T = (0, E.A)(t), v = s && u && a;

@@ -2,33 +2,33 @@
 n.d(t, {
     A: () => o
 });
-var a = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(735438),
-    i = n(397927),
-    r = n(985018),
+var a = n(735438),
+    r = n(397927),
+    i = n(985018),
     s = n(190192),
     d = n(899925);
 let o = e => {
-    let t = (0, l.flatMap)(e.history, e => {
+    let t = (0, a.flatMap)(e.history, e => {
         let {
             destination: [t],
             multiSelect: n
-        } = e, a = [null, null], l = Object.values(n?.state ?? {});
-        return l.length > 0 && (a[0] = l.join(", ")), "" !== t && (a[1] = t), a
+        } = e, l = [null, null], a = Object.values(n?.state ?? {});
+        return a.length > 0 && (l[0] = a.join(", ")), "" !== t && (l[1] = t), l
     }).filter(e => null != e);
-    return 0 === t.length ? null : (0, a.jsxs)("div", {
+    return 0 === t.length ? null : (0, l.jsxs)("div", {
         className: d.kL,
-        children: [(0, a.jsx)(i.Heading, {
+        children: [(0, l.jsx)(r.Heading, {
             className: d.MR,
             color: "text-default",
             variant: "heading-sm/semibold",
-            children: e.isModeratorReport ? r.intl.string(s.default["6mx/DP"]) : r.intl.string(r.t["+3V9Tp"])
-        }), t.map((e, t) => (0, a.jsxs)("div", {
+            children: e.isModeratorReport ? i.intl.string(s.default["6mx/DP"]) : i.intl.string(i.t["+3V9Tp"])
+        }), t.map((e, t) => (0, l.jsxs)("div", {
             className: d.P,
-            children: [(0, a.jsx)("div", {
+            children: [(0, l.jsx)("div", {
                 className: d.RL
-            }), (0, a.jsx)(i.Text, {
+            }), (0, l.jsx)(r.Text, {
                 variant: "text-md/normal",
                 className: d.b,
                 children: e

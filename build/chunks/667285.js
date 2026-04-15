@@ -1,6 +1,6 @@
 /** chunk id: 667285 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var i = n(627968);
 n(64700);
@@ -17,15 +17,15 @@ var l = n(311907),
     A = n(559868),
     g = n(985018);
 
-function p(e) {
+function _(e) {
     let {
         channel: t,
-        children: p
-    } = e, _ = (0, l.bG)([c.A], () => c.A.isBlocked(t.getRecipientId()));
+        children: _
+    } = e, p = (0, l.bG)([c.A], () => c.A.isBlocked(t.getRecipientId()));
     (0, r.A)(t.id);
     let f = (0, o.A)(t.id),
         E = t.isSystemDM(),
-        C = _ && !E && !t.isMultiUserDM(),
+        C = p && !E && !t.isMultiUserDM(),
         x = {};
     if (E) {
         let e = f ? g.intl.string(g.t["+KSnWX"]) : g.intl.string(g.t.hvVgAZ);
@@ -44,6 +44,6 @@ function p(e) {
     });
     return (0, i.jsx)(h.A, {
         ...x,
-        children: p
+        children: _
     })
 }

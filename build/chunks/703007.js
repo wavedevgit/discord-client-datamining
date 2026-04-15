@@ -22,13 +22,13 @@ function c(e) {
         multiple: m = !1,
         disabled: A = !1,
         submitting: g = !1,
-        ...p
+        ..._
     } = e;
     return (0, i.jsx)(r.vN3, {
         within: !0,
         children: (0, i.jsxs)("div", {
             className: a()(n, (0, s.WS)({
-                ...p,
+                ..._,
                 submitting: g,
                 disabled: A
             })),

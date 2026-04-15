@@ -19,10 +19,10 @@ function m(e) {
         m = (0, l.bG)([c.A], () => c.A.getChangelog(t ?? "", n), [t, n]),
         A = (0, u.A)(e),
         g = i.useRef(A ? Date.now() : null),
-        p = (0, l.bG)([r.Ay], () => r.Ay.getUnreadCount(e), [e]),
-        _ = i.useRef(p);
+        _ = (0, l.bG)([r.Ay], () => r.Ay.getUnreadCount(e), [e]),
+        p = i.useRef(_);
     i.useEffect(() => {
-        _.current = p
+        p.current = _
     }), i.useEffect(() => {
         g.current = Date.now()
     }, [A]), i.useEffect(() => {
@@ -30,7 +30,7 @@ function m(e) {
     }, [t, n, A]), i.useEffect(() => {
         A && null != m && o.default.track(h.HAw.CHANGE_LOG_OPENED, {
             change_log_id: `${m.date}:${m.revision}`,
-            unread_count: _.current
+            unread_count: p.current
         })
     }, [A, m]), i.useEffect(() => {
         let e = g.current;
@@ -38,7 +38,7 @@ function m(e) {
             A && null != m && null != e && (o.default.track(h.HAw.CHANGE_LOG_CLOSED, {
                 seconds_open: Math.round((Date.now() - e) / 1e3),
                 change_log_id: `${m.date}:${m.revision}`,
-                unread_count: _.current
+                unread_count: p.current
             }), g.current = 0)
         }
     }, [A, m])

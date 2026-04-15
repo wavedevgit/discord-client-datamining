@@ -228,7 +228,7 @@ let M = l.memo(function(e) {
     }, [w, n, Y]), l.useEffect(() => {
         H.current = n
     }, [n]);
-    let X = () => {
+    let q = () => {
         let {
             renderBanner: t,
             guildBanner: n
@@ -239,12 +239,12 @@ let M = l.memo(function(e) {
         theme: z,
         children: e => (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {
-                "data-has-banner": X(),
+                "data-has-banner": q(),
                 "data-banner-visible": n,
                 ref: W,
                 className: a()(r, {
                     [b.kL]: !0,
-                    [b.r9]: X(),
+                    [b.r9]: q(),
                     [b.Pi]: n,
                     [e]: !1,
                     [b.Iv]: k || M && P
@@ -280,7 +280,7 @@ let M = l.memo(function(e) {
                 }) : null, (0, i.jsx)(D, {
                     controller: s
                 })]
-            }), w && X() ? (0, i.jsx)("div", {
+            }), w && q() ? (0, i.jsx)("div", {
                 className: b.rt,
                 onMouseEnter: () => {
                     V(!0), clearTimeout(K.current)

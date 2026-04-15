@@ -73,9 +73,9 @@ function T(e) {
     let z = l.useCallback(() => {
             null == S && b?.(C.P.SOUNDBOARD)
         }, [S, b]),
-        X = l.useRef(null);
+        q = l.useRef(null);
     return (0, i.jsx)(o.Y, {
-        targetElementRef: X,
+        targetElementRef: q,
         shouldShow: V && (S === C.P.SOUNDBOARD || null == S) || S === C.P.SOUNDBOARD,
         animation: o.Y.Animation.FADE,
         animationPosition: "top",
@@ -108,7 +108,7 @@ function T(e) {
             })
         },
         children: () => (0, i.jsx)(I.l, {
-            ref: X,
+            ref: q,
             isTrayButton: !0,
             themeable: T,
             label: M ? N.intl.string(N.t["Ox4/zU"]) : D ? N.intl.string(N.t["+YBKYI"]) : U ? N.intl.string(N.t.X1lQli) : void 0,

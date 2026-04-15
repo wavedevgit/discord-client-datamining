@@ -1,47 +1,47 @@
 /** chunk id: 812299 params = (module,exports,require) **/
 n.d(t, {
-    k: () => o,
-    y: () => d
+    k: () => d,
+    y: () => o
 });
-var i = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(709066),
-    s = n(455207),
-    a = n(943667),
-    r = n(767283);
-
-function o(e) {
-    let t, {
-        message: n,
-        channel: i,
-        user: r,
-        isRepliedMessage: o
-    } = e;
-    return n?.isSystemDM() ? t = l.A.Types.SYSTEM_DM : null != n && (0, a.A)(n) ? t = (0, s.MZ)(n) ? l.A.Types.OFFICIAL : l.A.Types.SERVER : r?.bot ? t = l.A.Types.BOT : null != i && i.isForumPost() && i.ownerId === r?.id && !o && (t = l.A.Types.ORIGINAL_POSTER), t
-}
+var a = n(709066),
+    r = n(455207),
+    i = n(943667),
+    s = n(767283);
 
 function d(e) {
+    let t, {
+        message: n,
+        channel: l,
+        user: s,
+        isRepliedMessage: d
+    } = e;
+    return n?.isSystemDM() ? t = a.A.Types.SYSTEM_DM : null != n && (0, i.A)(n) ? t = (0, r.MZ)(n) ? a.A.Types.OFFICIAL : a.A.Types.SERVER : s?.bot ? t = a.A.Types.BOT : null != l && l.isForumPost() && l.ownerId === s?.id && !d && (t = a.A.Types.ORIGINAL_POSTER), t
+}
+
+function o(e) {
     let {
         message: t,
         channel: n,
-        user: s,
-        compact: a,
-        isRepliedMessage: d,
+        user: r,
+        compact: i,
+        isRepliedMessage: o,
         hideIcon: c = !1,
         children: u
-    } = e, h = o({
+    } = e, _ = d({
         message: t,
         channel: n,
-        user: s,
-        compact: a,
-        isRepliedMessage: d,
+        user: r,
+        compact: i,
+        isRepliedMessage: o,
         hideIcon: c,
         children: u
     });
-    return null == h ? null : (0, i.jsx)(l.A, {
-        className: a ? r.jW : r.RQ,
-        type: h,
-        verified: s?.isVerifiedBot(),
+    return null == _ ? null : (0, l.jsx)(a.A, {
+        className: i ? s.jW : s.RQ,
+        type: _,
+        verified: r?.isVerifiedBot(),
         hideIcon: c,
         useRemSizes: !0,
         children: u

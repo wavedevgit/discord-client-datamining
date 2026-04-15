@@ -48,8 +48,8 @@ var f = n(483270),
     K = n(872363),
     Y = n(211059),
     z = n(547015),
-    X = n(561446),
-    q = n(300233),
+    q = n(561446),
+    X = n(300233),
     $ = n(721592),
     J = n(403363),
     Q = n(397036),
@@ -102,8 +102,8 @@ var f = n(483270),
     eK = n(290863),
     eY = n(383501),
     ez = n(309010),
-    eX = n(287809),
-    eq = n(977997),
+    eq = n(287809),
+    eX = n(977997),
     e$ = n(47167),
     eJ = n(698718),
     eQ = n(812771),
@@ -219,7 +219,7 @@ class tl extends l.PureComponent {
     }
     openDMContextMenu(e, t) {
         o()(null != t, "Missing channel in Channel.openDMContextMenu");
-        let l = eX.default.getUser(t.getRecipientId());
+        let l = eq.default.getUser(t.getRecipientId());
         o()(null != l, "Missing user in Channel.openDMContextMenu"), (0, g.L3)(e, async () => {
             let {
                 default: e
@@ -236,7 +236,7 @@ class tl extends l.PureComponent {
         let {
             channel: e
         } = this.props;
-        return e?.hasFlag(e7.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL) ? (0, i.jsx)(X.A, {
+        return e?.hasFlag(e7.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL) ? (0, i.jsx)(q.A, {
             channelId: e.id,
             showTrailingDivider: !0
         }) : null
@@ -539,7 +539,7 @@ class tl extends l.PureComponent {
         } = this.props;
         if (o()(null != e, "Missing channel in Channel.renderChat"), n) return (o()(null != t, "premium channels must exist within a guild"), e?.isRoleSubscriptionTemplatePreviewChannel()) ? (0, i.jsx)(J.A, {
             guildId: t.id
-        }) : (0, i.jsx)(q.H, {
+        }) : (0, i.jsx)(X.H, {
             guildId: t.id,
             children: (0, i.jsx)(Q.A, {
                 channelId: e.id,
@@ -803,18 +803,18 @@ let ts = (0, x.A)(tl),
         let P = (0, h.bG)([N.Ay], () => N.Ay.getCurrentEmbeddedActivity()),
             k = (0, h.bG)([N.Ay], () => N.Ay.getActivityPanelMode()),
             w = null != P && !(0, S.A)(m?.id) && k === e2.Gd.PANEL,
-            H = (0, h.bG)([eq.A], () => null != m && m.isVocalThread() && !c().isEmpty(eq.A.getVoiceStatesForChannel(m.id)), [m]),
+            H = (0, h.bG)([eX.A], () => null != m && m.isVocalThread() && !c().isEmpty(eX.A.getVoiceStatesForChannel(m.id)), [m]),
             K = null != m && m.isPrivate() && !w && v,
             Y = m?.isGuildVocal() || K || H,
             z = (0, h.bG)([F.A], () => F.A.getFrameLayoutMode() === e8.y.FOCUSED),
             {
-                welcomeModalChannelId: X
+                welcomeModalChannelId: q
             } = (0, u.zy)(),
-            q = (0, h.bG)([e_.A], () => null != m && e_.A.isLurking(m.guild_id), [m]),
-            J = (0, h.bG)([ek.A], () => ek.A.hasSeen(m?.guild_id, q), [m, q]),
+            X = (0, h.bG)([e_.A], () => null != m && e_.A.isLurking(m.guild_id), [m]),
+            J = (0, h.bG)([ek.A], () => ek.A.hasSeen(m?.guild_id, X), [m, X]),
             Q = (0, h.bG)([j.A, N.Ay], () => null != N.Ay.getConnectedActivityLocation() && N.Ay.getActivityPanelMode() === e2.Gd.PANEL ? N.Ay.getFocusedLayout() === e2.E8.NO_CHAT ? e6.DUB.NO_CHAT : e6.DUB.NORMAL : null != a ? j.A.getLayout(a) : e6.DUB.NORMAL, [a]),
             Z = (0, eh.A)(x?.id),
-            ee = (0, ew.A)(X, x?.id),
+            ee = (0, ew.A)(q, x?.id),
             {
                 section: et,
                 channelSidebarState: en
@@ -879,7 +879,7 @@ let ts = (0, x.A)(tl),
             voiceChannel: g,
             layout: Q,
             needSubscriptionToAccess: T,
-            isLurking: q,
+            isLurking: X,
             hasModalOpen: eb,
             section: et,
             channelSidebarState: en,
@@ -895,8 +895,8 @@ let ts = (0, x.A)(tl),
             showRealNameModal: Z,
             showWelcomeModal: !J && ee,
             showFollowButton: m?.type === e6.rbe.GUILD_ANNOUNCEMENT && x?.features.has(e6.GuildFeatures.NEWS) || !1,
-            ...(0, h.cf)([eq.A], () => ({
-                hasVideo: null != m && eq.A.hasVideo(m.id)
+            ...(0, h.cf)([eX.A], () => ({
+                hasVideo: null != m && eX.A.hasVideo(m.id)
             }), [m]),
             inCall: eu,
             selectedParticipant: eo,

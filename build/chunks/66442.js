@@ -16,8 +16,8 @@ var i = n(627968),
     m = n(688810),
     A = n(571694),
     g = n(47167),
-    p = n(734057),
-    _ = n(954571),
+    _ = n(734057),
+    p = n(954571),
     f = n(396787),
     E = n(652215),
     C = n(985018),
@@ -34,8 +34,8 @@ function S(e) {
         className: d,
         allowRemovingIcon: u = !0
     } = e, g = void 0 !== n ? n : t?.icon != null ? (0, A.Y)(t, 120) : null, {
-        analyticsLocations: p
-    } = (0, m.Ay)(r, h.A.GROUP_DM_ICON_EDITOR), _ = o ? 32 : 64;
+        analyticsLocations: _
+    } = (0, m.Ay)(r, h.A.GROUP_DM_ICON_EDITOR), p = o ? 32 : 64;
     return (0, i.jsxs)("div", {
         className: s()(x.r2, d),
         children: [(0, i.jsxs)(c.DUT, {
@@ -43,7 +43,7 @@ function S(e) {
                 [x.ud]: o
             }),
             "aria-label": C.intl.string(C.t["0qPSMV"]),
-            onClick: () => (0, f.F5)(l, p),
+            onClick: () => (0, f.F5)(l, _),
             children: [null != g ? (0, i.jsx)("img", {
                 src: g,
                 alt: "",
@@ -52,8 +52,8 @@ function S(e) {
                 className: x.Pz,
                 children: (0, i.jsx)(c.nFg, {
                     size: "custom",
-                    width: _,
-                    height: _,
+                    width: p,
+                    height: p,
                     color: "currentColor"
                 })
             }), (0, i.jsx)("div", {
@@ -83,7 +83,7 @@ let I = function(e) {
         setHasPendingChanges: s,
         closeOrShowDiscardChangesAlert: A,
         location: I
-    } = e, T = (0, o.bG)([p.A], () => p.A.getChannel(t)), v = T?.name, N = (0, g.e5)(T), [y, b] = l.useState(v ?? ""), [j, R] = l.useState(void 0), M = void 0 !== j, {
+    } = e, T = (0, o.bG)([_.A], () => _.A.getChannel(t)), v = T?.name, N = (0, g.e5)(T), [y, b] = l.useState(v ?? ""), [j, R] = l.useState(void 0), M = void 0 !== j, {
         analyticsLocations: L
     } = (0, m.Ay)(I, h.A.GROUP_DM_EDIT_MODAL), O = {
         channel_id: t,
@@ -95,11 +95,11 @@ let I = function(e) {
     };
     return (l.useEffect(() => {
         s(y !== v || M)
-    }, [y, v, M, s]), (0, u.Ay)(() => (_.default.track(E.HAw.GDM_EDIT_INTERACTED, {
+    }, [y, v, M, s]), (0, u.Ay)(() => (p.default.track(E.HAw.GDM_EDIT_INTERACTED, {
         ...O,
         action: "opened"
     }), () => {
-        _.default.track(E.HAw.GDM_EDIT_INTERACTED, {
+        p.default.track(E.HAw.GDM_EDIT_INTERACTED, {
             ...O,
             action: "dismissed"
         })
@@ -110,7 +110,7 @@ let I = function(e) {
                 e.preventDefault();
                 let i = y !== v,
                     l = void 0 !== j;
-                if (_.default.track(E.HAw.GDM_EDIT_INTERACTED, {
+                if (p.default.track(E.HAw.GDM_EDIT_INTERACTED, {
                         ...O,
                         action: "saved",
                         new_name_set: "" !== y,

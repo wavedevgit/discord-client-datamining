@@ -2,34 +2,34 @@
 n.d(t, {
     A: () => d
 });
-var a = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(397927),
-    i = n(263063),
-    r = n(985018),
+var a = n(397927),
+    r = n(263063),
+    i = n(985018),
     s = n(415392);
 let d = e => {
     let {
         guild: t
     } = e;
-    return (0, a.jsxs)("div", {
+    return (0, l.jsxs)("div", {
         className: s.kL,
-        children: [(0, a.jsx)(l.Heading, {
+        children: [(0, l.jsx)(a.Heading, {
             className: s.wx,
             variant: "heading-sm/semibold",
-            children: r.intl.string(r.t["0ox7Hq"])
-        }), (0, a.jsx)("div", {
+            children: i.intl.string(i.t["0ox7Hq"])
+        }), (0, l.jsx)("div", {
             className: s.bo,
-            children: (0, a.jsxs)("div", {
+            children: (0, l.jsxs)("div", {
                 className: s.OA,
-                children: [(0, a.jsx)("div", {
+                children: [(0, l.jsx)("div", {
                     className: s.$f,
-                    children: (0, a.jsx)(i.Ay, {
+                    children: (0, l.jsx)(r.Ay, {
                         guild: t,
-                        size: i.Ay.Sizes.LARGE
+                        size: r.Ay.Sizes.LARGE
                     })
-                }), (0, a.jsx)("div", {
-                    children: (0, a.jsx)(l.Text, {
+                }), (0, l.jsx)("div", {
+                    children: (0, l.jsx)(a.Text, {
                         variant: "text-md/semibold",
                         color: "text-strong",
                         children: t.name

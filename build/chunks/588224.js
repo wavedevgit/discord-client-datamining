@@ -54,7 +54,7 @@ let k = l.memo(e => {
         } = e;
         return t.has(m)
     }), [m, s.id]), w = (0, h.A)(null != k ? [k.applicationId] : []), B = (0, x.Ay)(m, s.guild_id)[0], V = (0, u.YY)(B?.application_id).data ?? void 0, [H, F] = (0, r.yK)([T.A], () => [T.A.getStreamForUser(m, s.getGuildId()), T.A.getActiveStreamForUser(m, s.getGuildId())], [s, m]), W = (0, r.bG)([R.A], () => R.A.getSessionById(a)), K = L.Ay.useName(l), Y = (0, r.bG)([O.A], () => O.A.getVoicePlatformForChannel(s.id, m), [s.id, m]), z = (0, I.uy)(s.id, m), {
-        enableVCStatusIcons: X
+        enableVCStatusIcons: q
     } = E.m.useExperiment({
         guildId: s.guild_id,
         location: "VoiceUsers"
@@ -83,7 +83,7 @@ let k = l.memo(e => {
             isWatching: null != F && F.state !== U.XYD.ENDED,
             isGuest: M,
             isSelf: p,
-            application: X && B?.session_id != null ? V : void 0
+            application: q && B?.session_id != null ? V : void 0
         })
     })
 });
@@ -141,7 +141,7 @@ let w = [],
             }), Array.from(e)
         });
         (0, h.A)(z);
-        let X = (() => {
+        let q = (() => {
             if (null == L || 0 === L.length) return null;
             let e = c && L.length > u + 1 ? L.slice(0, u) : L,
                 t = A.A.getGuildRingingUsers(s.id),
@@ -185,13 +185,13 @@ let w = [],
                 onClose: V
             }, "voice-invite-suggestions-button")), l
         })();
-        return null == X && null == T ? null : (0, i.jsxs)(C.Wr, {
+        return null == q && null == T ? null : (0, i.jsxs)(C.Wr, {
             className: a()(x, P.p_, {
                 [P.yZ]: c,
                 [P.lY]: E,
                 [P.fT]: b
             }),
             collapsed: c,
-            children: [X, T]
+            children: [q, T]
         })
     }

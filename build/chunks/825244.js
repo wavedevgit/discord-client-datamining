@@ -16,8 +16,8 @@ var i = n(627968),
     m = n(58149),
     A = n(668446),
     g = n(997509),
-    p = n(794967),
-    _ = n(595818),
+    _ = n(794967),
+    p = n(595818),
     f = n(961350),
     E = n(71393),
     C = n(287809),
@@ -123,7 +123,7 @@ function L(e) {
             m.Ay.trackWithMetadata(y.HAw.SERVER_SETUP_CTA_CLICKED, {
                 setup_type: b.XT.CHANNEL_WELCOME,
                 action: b.AG.PERSONALIZE_SERVER
-            }), null != P && g.A.open(P.id, (0, _.x)(), {
+            }), null != P && g.A.open(P.id, (0, p.x)(), {
                 section: y.JJy.CHANNEL_WELCOME_CTA
             })
         }, [P]), {
@@ -201,7 +201,7 @@ function L(e) {
     if (l.useEffect(() => {
             (async () => {
                 try {
-                    let e = await (0, p.c)(P?.id ?? y.dJq);
+                    let e = await (0, _.c)(P?.id ?? y.dJq);
                     ee(e.map(e => e.id))
                 } catch {}
             })()

@@ -6,8 +6,8 @@ var i = t(627968),
     a = t(311907),
     l = t(397927),
     r = t(793574),
-    d = t(688810),
-    s = t(632738),
+    s = t(688810),
+    d = t(632738),
     o = t(994500),
     c = t(562153),
     _ = t(183555),
@@ -15,8 +15,8 @@ var i = t(627968),
     p = t(950191),
     A = t(249790),
     g = t(946356),
-    m = t(254828),
-    f = t(783123),
+    f = t(254828),
+    m = t(783123),
     h = t(652215),
     I = t(996988),
     x = t(985018),
@@ -28,19 +28,19 @@ function v(e) {
         guildId: t,
         channelId: v,
         messageId: E,
-        roleId: y,
-        transitionState: j,
+        roleId: j,
+        transitionState: y,
         onHide: T,
         sourceAnalyticsLocations: N = []
     } = e, S = t === h.ME ? void 0 : t, C = (0, a.bG)([o.A], () => o.A.isBlocked(n.id)), {
         analyticsLocations: R
-    } = (0, d.Ay)([...N, C ? r.A.BLOCKED_PROFILE_MODAL : r.A.IGNORED_PROFILE_MODAL]), P = (0, _.pb)({
+    } = (0, s.Ay)([...N, C ? r.A.BLOCKED_PROFILE_MODAL : r.A.IGNORED_PROFILE_MODAL]), P = (0, _.pb)({
         layout: "MODAL_V2",
         userId: n.id,
         guildId: S,
         channelId: v,
         messageId: E,
-        roleId: y
+        roleId: j
     }), L = [{
         icon: l.yr3,
         description: x.intl.string(x.t.kcuWva)
@@ -50,14 +50,14 @@ function v(e) {
     }], O = (0, p.Ay)(n.id, S), D = c.Ay.getName(O?.guildId, v, n), k = x.intl.formatToPlainString(x.t.KRe1Fk, {
         name: D
     });
-    return (0, i.jsx)(d.f5, {
+    return (0, i.jsx)(s.f5, {
         value: R,
         children: (0, i.jsx)(_.of, {
             value: P,
             isLoaded: O?.isLoaded,
             children: (0, i.jsx)(l.EOs, {
                 "data-migration-pending": !0,
-                transitionState: j,
+                transitionState: y,
                 className: b.zr,
                 "aria-label": k,
                 parentComponent: "RestrictedUserProfileModalV2",
@@ -92,7 +92,7 @@ function v(e) {
                                     icon: t,
                                     description: a
                                 } = e;
-                                return (0, i.jsx)(s.PQ, {
+                                return (0, i.jsx)(d.PQ, {
                                     icon: t,
                                     title: a,
                                     titleVariant: "text-md/normal",
@@ -101,7 +101,7 @@ function v(e) {
                             })
                         }), (0, i.jsxs)(l.BJc, {
                             align: "center",
-                            children: [(0, i.jsx)(f.A, {
+                            children: [(0, i.jsx)(m.A, {
                                 size: "md",
                                 isBlocked: C,
                                 onClick: () => {
@@ -111,7 +111,7 @@ function v(e) {
                                         ...P
                                     })
                                 }
-                            }), (0, i.jsx)(m.A, {
+                            }), (0, i.jsx)(f.A, {
                                 userId: n.id,
                                 onClick: () => {
                                     T(), (0, u.Wn)({

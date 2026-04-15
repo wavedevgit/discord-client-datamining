@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(961350),
     A = n(320501),
     g = n(287809),
-    p = n(954571),
-    _ = n(427262),
+    _ = n(954571),
+    p = n(427262),
     f = n(143413),
     E = n(652215),
     C = n(985018),
@@ -32,11 +32,11 @@ function I(e) {
     }, []);
     let I = (0, r.bG)([A.A, m.default], () => !!s()(A.A.getMessages(t.id).toArray()).reverse().find(e => e.author.id !== m.default.getId() && e.state === E.cmJ.SENT && !(0, f.A)(e))),
         T = (0, r.bG)([g.default], () => g.default.getUser(t.isPrivate() ? t.getRecipientId() : null)),
-        v = _.Ay.useName(T) ?? C.intl.string(C.t.y1Wu2f),
+        v = p.Ay.useName(T) ?? C.intl.string(C.t.y1Wu2f),
         N = (0, r.bG)([u.A], () => u.A.getStickerById(S)),
         y = l.useCallback(async () => {
             if (null == n || "" === n) try {
-                await c.A.sendGreetMessage(t.id, S), p.default.track(E.HAw.DM_EMPTY_ACTION, {
+                await c.A.sendGreetMessage(t.id, S), _.default.track(E.HAw.DM_EMPTY_ACTION, {
                     channel_id: t.id,
                     channel_type: t.type,
                     source: "Wave",

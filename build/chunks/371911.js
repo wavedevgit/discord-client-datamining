@@ -77,10 +77,10 @@ function v(e) {
     l.useEffect(() => {
         w !== d.Y2.BOOKMARKS || K || Y || B(d.Y2.MENTIONS), w === d.Y2.GAME_INVITES && B(d.Y2.MENTIONS)
     });
-    let X = l.useCallback(e => {
+    let q = l.useCallback(e => {
             e.shiftKey || F()
         }, [F]),
-        q = (0, p.Sc)();
+        X = (0, p.Sc)();
     return (0, i.jsx)(h.f5, {
         value: G,
         children: (0, i.jsx)(c.YNO, {
@@ -97,7 +97,7 @@ function v(e) {
                     className: U,
                     children: (0, i.jsx)("div", {
                         className: a()(y.k, {
-                            [y.q]: q
+                            [y.q]: X
                         }),
                         children: (0, i.jsx)(c.Fmo, {
                             component: (0, i.jsx)(C.A, {
@@ -107,13 +107,13 @@ function v(e) {
                                 closePopout: F
                             }),
                             children: w === d.Y2.FOR_YOU ? (0, i.jsx)(x.Ay, {}) : w === d.Y2.MENTIONS ? (0, i.jsx)(I.A, {
-                                onJump: X
+                                onJump: q
                             }) : K && Y && w === d.Y2.BOOKMARKS ? (0, i.jsx)(m.J, {
                                 closePopout: F
                             }) : w === d.Y2.SCHEDULED ? (0, i.jsx)(N.w, {}) : (0, i.jsx)(r.tH, {
                                 fallback: (0, i.jsx)(T.T, {}),
                                 children: (0, i.jsx)(T.Ay, {
-                                    onJump: X,
+                                    onJump: q,
                                     showTutorial: V,
                                     setSeenTutorial: H,
                                     closePopout: F

@@ -56,9 +56,9 @@ function M(e) {
         z = (0, f.m)({
             location: "voice_channel_activities"
         }),
-        X = (0, r.bG)([g.A], () => g.A.getDetectableIdsToApplicationIds()),
-        q = (0, h.r9)() && (0, h.UK)(t.id),
-        $ = null != B && !q,
+        q = (0, r.bG)([g.A], () => g.A.getDetectableIdsToApplicationIds()),
+        X = (0, h.r9)() && (0, h.UK)(t.id),
+        $ = null != B && !X,
         J = Y.length + k.length > 0,
         Q = $ || J;
     return (l.useEffect(() => {
@@ -69,7 +69,7 @@ function M(e) {
         })
     }, [Q, t.id, n.id]), Q) ? (0, i.jsxs)(o.HOs, {
         className: a()(L.popover, O.kL),
-        children: [null == B || null == D || q ? null : (0, i.jsx)(p.P, {
+        children: [null == B || null == D || X ? null : (0, i.jsx)(p.P, {
             stream: B,
             activeStream: V,
             streamActivity: K,
@@ -88,7 +88,7 @@ function M(e) {
             onAction: s
         }, e.application.id)), Y.map(e => {
             let a = e.application_id;
-            return (null != w && (a = w), z && null != a && null != X[a]) ? (0, i.jsxs)(l.Fragment, {
+            return (null != w && (a = w), z && null != a && null != q[a]) ? (0, i.jsxs)(l.Fragment, {
                 children: [(0, i.jsx)(v.A, {
                     presenceActivity: e,
                     channel: t,

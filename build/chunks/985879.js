@@ -2,24 +2,24 @@
 n.d(t, {
     A: () => d
 });
-var a = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(397927),
-    i = n(46054),
-    r = n(861662);
-let s = i.A.reactParserFor({
-        ...i.A.defaultRules,
-        link: r.B
+var a = n(397927),
+    r = n(46054),
+    i = n(861662);
+let s = r.A.reactParserFor({
+        ...r.A.defaultRules,
+        link: i.B
     }),
     d = e => {
         let {
             element: t
         } = e, {
             body: n,
-            notice_type: i
+            notice_type: r
         } = t.data;
-        return (0, a.jsx)(l.wx6, {
-            type: i,
+        return (0, l.jsx)(a.wx6, {
+            type: r,
             children: s(n)
         })
     }

@@ -7,8 +7,8 @@ t(64700);
 var a = t(158954),
     l = t(311907),
     r = t(397927),
-    d = t(973925),
-    s = t(622543),
+    s = t(973925),
+    d = t(622543),
     o = t(985018),
     c = t(763683);
 
@@ -44,11 +44,11 @@ function _(e) {
 function u(e) {
     let {
         user: n
-    } = e, t = (0, l.bG)([s.A], () => s.A.getUserProfile(n.id)?.application), {
+    } = e, t = (0, l.bG)([d.A], () => d.A.getUserProfile(n.id)?.application), {
         hasMessageContent: u,
         hasGuildPresences: p,
         hasGuildMembers: A
-    } = (0, d.Z)(t);
+    } = (0, s.Z)(t);
     return (0, i.jsxs)(a.IpV, {
         fade: !0,
         className: c.XG,

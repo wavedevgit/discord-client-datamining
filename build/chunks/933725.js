@@ -1,28 +1,28 @@
 /** chunk id: 933725 params = (module,exports,require) **/
-t.d(n, {
-    m: () => d
+n.d(t, {
+    m: () => s
 });
-var i = t(562465),
-    a = t(73153),
-    l = t(287809),
-    r = t(652215);
-async function d(e, n) {
+var l = n(562465),
+    a = n(73153),
+    r = n(287809),
+    i = n(652215);
+async function s(e, t) {
     try {
-        let t = await i.Bo.put({
-            url: r.Rsh.USER_SET_GUILD_IDENTITY,
+        let n = await l.Bo.put({
+            url: i.Rsh.USER_SET_GUILD_IDENTITY,
             body: {
                 identity_guild_id: e,
-                identity_enabled: n
+                identity_enabled: t
             },
             rejectWithError: !1
         });
-        return t.ok && a.h.dispatch({
+        return n.ok && a.h.dispatch({
             type: "CURRENT_USER_UPDATE",
             user: {
-                ...l.default.getCurrentUser(),
-                ...t.body
+                ...r.default.getCurrentUser(),
+                ...n.body
             }
-        }), t
+        }), n
     } catch (e) {
         return e
     }

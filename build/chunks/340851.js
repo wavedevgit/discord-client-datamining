@@ -95,8 +95,8 @@ let G = (0, A.J)(function(e) {
         disconnected: K,
         connectUserDragSource: Y,
         canDrag: z,
-        isStreaming: X,
-        isWatching: q,
+        isStreaming: q,
+        isWatching: X,
         isGuest: $,
         priority: J,
         showPreview: Q,
@@ -119,14 +119,14 @@ let G = (0, A.J)(function(e) {
         clearTimeout(eu.current)
     }, []);
     let em = () => {
-            if (!X || !(0, x.eo)(A, v.A, S.A, b.A, g.default)[0]) return;
+            if (!q || !(0, x.eo)(A, v.A, S.A, b.A, g.default)[0]) return;
             let e = {
                 streamType: O.U4.GUILD,
                 ownerId: s.id,
                 channelId: A.id,
                 guildId: A.guild_id
             };
-            T.default.getId() !== s.id && u.default.selectVoiceChannel(A.id), q ? ((0, I.A)(e), d.A.selectParticipant(e.channelId, (0, E._z)(e))) : (0, h.Nl)(e), Z?.(s.id)
+            T.default.getId() !== s.id && u.default.selectVoiceChannel(A.id), X ? ((0, I.A)(e), d.A.selectParticipant(e.channelId, (0, E._z)(e))) : (0, h.Nl)(e), Z?.(s.id)
         },
         ep = e => {
             (0, c.L3)(e, async () => {
@@ -171,7 +171,7 @@ let G = (0, A.J)(function(e) {
                         mute: D,
                         localMute: U,
                         localVideoDisabled: G,
-                        isStreaming: X,
+                        isStreaming: q,
                         isGuest: $,
                         video: k,
                         priority: J,
@@ -211,7 +211,7 @@ let G = (0, A.J)(function(e) {
                             channel: A,
                             user: s,
                             onAction: e_,
-                            onWatchStream: X ? em : void 0
+                            onWatchStream: q ? em : void 0
                         }),
                         shouldShow: ee && !ed,
                         onRequestClose: eA,

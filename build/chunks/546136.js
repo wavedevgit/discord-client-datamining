@@ -1,168 +1,173 @@
 /** chunk id: 546136 params = (module,exports,require) **/
-n.d(l, {
-    Ay: () => N,
-    _T: () => v,
+l.d(n, {
+    Ay: () => y,
+    _T: () => I,
     oA: () => j
 });
-var t = n(627968);
-n(64700);
-var i = n(503698),
-    s = n.n(i),
-    a = n(397927),
-    r = n(927578),
-    o = n(487233),
-    d = n(230635),
-    c = n(473219),
-    u = n(542454),
-    m = n(338003),
-    p = n(642737),
-    x = n(23722),
-    A = n(985018),
-    g = n(266603);
-let f = "profile-modal-editing-panel",
-    h = "profile-modal-editing-panel-heading";
+var i = l(627968);
+l(64700);
+var t = l(503698),
+    s = l.n(t),
+    a = l(397927),
+    r = l(927578),
+    o = l(487233),
+    d = l(230635),
+    c = l(336289),
+    u = l(473219),
+    m = l(542454),
+    p = l(338003),
+    x = l(642737),
+    A = l(23722),
+    g = l(985018),
+    f = l(266603);
+let h = "profile-modal-editing-panel",
+    v = "profile-modal-editing-panel-heading";
 
 function j(e) {
     let {
-        onClick: l,
-        className: n,
-        innerRef: i
+        onClick: n,
+        className: l,
+        innerRef: t
     } = e;
-    return (0, t.jsx)(a.DUT, {
-        innerRef: i,
-        "aria-label": A.intl.string(A.t.N8XQDE),
+    return (0, i.jsx)(a.DUT, {
+        innerRef: t,
+        "aria-label": g.intl.string(g.t.N8XQDE),
         "aria-expanded": !1,
-        "aria-controls": f,
-        className: s()(g.eg, n),
-        onClick: l,
+        "aria-controls": h,
+        className: s()(f.eg, l),
+        onClick: n,
         focusProps: {
             offset: {
                 right: 6
             }
         },
-        children: (0, t.jsx)(a.NDp, {
+        children: (0, i.jsx)(a.NDp, {
             size: "sm",
             color: a.LU0.colors.ICON_STRONG
         })
     })
 }
 
-function v(e) {
+function I(e) {
     let {
-        onClick: l,
-        className: n,
-        buttonRef: i
+        onClick: n,
+        className: l,
+        buttonRef: t
     } = e;
-    return (0, t.jsx)("div", {
-        className: n,
-        children: (0, t.jsx)(a.K0, {
-            buttonRef: i,
-            "aria-label": A.intl.string(A.t.N8XQDE),
+    return (0, i.jsx)("div", {
+        className: l,
+        children: (0, i.jsx)(a.K0, {
+            buttonRef: t,
+            "aria-label": g.intl.string(g.t.N8XQDE),
             "aria-expanded": !1,
-            "aria-controls": f,
+            "aria-controls": h,
             icon: a.NDp,
-            onClick: l,
+            onClick: n,
             variant: "secondary",
             size: "sm"
         })
     })
 }
 
-function I(e) {
+function N(e) {
     let {
-        onClick: l,
-        innerRef: n
+        onClick: n,
+        innerRef: l
     } = e;
-    return (0, t.jsxs)(a.DUT, {
-        innerRef: n,
-        className: g.cS,
-        "aria-label": A.intl.string(A.t.X6NklS),
-        onClick: l,
-        "aria-controls": f,
+    return (0, i.jsxs)(a.DUT, {
+        innerRef: l,
+        className: f.cS,
+        "aria-label": g.intl.string(g.t.X6NklS),
+        onClick: n,
+        "aria-controls": h,
         "aria-expanded": !0,
-        children: [(0, t.jsx)(a._BQ, {
+        children: [(0, i.jsx)(a._BQ, {
             size: "md",
             color: "currentColor"
-        }), (0, t.jsx)(a._BQ, {
+        }), (0, i.jsx)(a._BQ, {
             size: "md",
             color: "currentColor"
         })]
     })
 }
 
-function N(e) {
+function y(e) {
     let {
-        user: l,
-        selectedGuildId: n,
-        onSelectGuildId: i,
+        user: n,
+        selectedGuildId: l,
+        onSelectGuildId: t,
         isLoading: j = !1,
-        onClose: v,
-        className: N,
-        collapseButtonRef: y
-    } = e, C = (0, x.A)(i), E = null != n, T = r.Ay.canUsePremiumProfileCustomization(l);
-    return (0, t.jsxs)("aside", {
-        id: f,
-        "aria-labelledby": h,
-        className: s()(g.nd, N),
+        onClose: I,
+        className: y,
+        collapseButtonRef: C
+    } = e, b = (0, A.A)(t), E = null != l, T = r.Ay.canUsePremiumProfileCustomization(n);
+    return (0, i.jsxs)("aside", {
+        id: h,
+        "aria-labelledby": v,
+        className: s()(f.nd, y),
         "aria-busy": j,
-        children: [(0, t.jsx)(a.AC4, {
-            children: (0, t.jsx)(a.H, {
-                id: h,
-                children: A.intl.string(A.t["L+ch00"])
+        children: [(0, i.jsx)(a.AC4, {
+            children: (0, i.jsx)(a.H, {
+                id: v,
+                children: g.intl.string(g.t["L+ch00"])
             })
-        }), (0, t.jsxs)("div", {
-            className: g.wx,
-            children: [(0, t.jsx)(I, {
-                innerRef: y,
-                onClick: v
-            }), (0, t.jsx)(p.A, {
-                selectedGuildId: n ?? null,
-                onChange: C,
+        }), (0, i.jsxs)("div", {
+            className: f.wx,
+            children: [(0, i.jsx)(N, {
+                innerRef: C,
+                onClick: I
+            }), (0, i.jsx)(x.A, {
+                selectedGuildId: l ?? null,
+                onChange: b,
                 loading: j
             })]
-        }), (0, t.jsx)(a.Fmo, {
-            children: (0, t.jsxs)(a.HOs, {
-                className: g.XG,
+        }), (0, i.jsx)(a.Fmo, {
+            children: (0, i.jsxs)(a.HOs, {
+                className: f.XG,
                 fade: !0,
-                children: [(0, t.jsxs)("div", {
-                    className: g.Os,
-                    children: [(0, t.jsx)(a.Heading, {
+                children: [(0, i.jsxs)("div", {
+                    className: f.Os,
+                    children: [(0, i.jsx)(a.Heading, {
                         variant: "text-sm/medium",
-                        className: g.AM,
-                        children: A.intl.string(A.t.x5CoXR)
-                    }), (0, t.jsx)(c.A, {
-                        user: l,
-                        guildId: n,
+                        className: f.AM,
+                        children: g.intl.string(g.t.x5CoXR)
+                    }), (0, i.jsx)(u.A, {
+                        user: n,
+                        guildId: l,
                         disabled: j || E && !T
                     })]
-                }), (0, t.jsxs)("div", {
-                    className: g.Os,
-                    children: [(0, t.jsx)(a.Heading, {
+                }), (0, i.jsxs)("div", {
+                    className: f.Os,
+                    children: [(0, i.jsx)(a.Heading, {
                         variant: "text-sm/medium",
-                        className: g.AM,
-                        children: A.intl.string(A.t["50Nwpc"])
-                    }), (0, t.jsx)(o.A, {
-                        user: l,
-                        guildId: n,
+                        className: f.AM,
+                        children: g.intl.string(g.t["50Nwpc"])
+                    }), (0, i.jsx)(o.A, {
+                        user: n,
+                        guildId: l,
                         disabled: j || E && !T
-                    }), (0, t.jsx)(d.A, {
-                        user: l,
-                        guildId: n,
+                    }), (0, i.jsx)(d.A, {
+                        user: n,
+                        guildId: l,
                         disabled: j || E && !T
                     })]
-                }), T && (0, t.jsxs)("div", {
-                    className: g.Os,
-                    children: [(0, t.jsx)(a.Heading, {
+                }), T && (0, i.jsxs)("div", {
+                    className: f.Os,
+                    children: [(0, i.jsx)(a.Heading, {
                         variant: "text-sm/medium",
-                        className: g.AM,
-                        children: A.intl.string(A.t.Zenogr)
-                    }), (0, t.jsx)(u.A, {
-                        user: l,
-                        guildId: n,
+                        className: f.AM,
+                        children: g.intl.string(g.t.Zenogr)
+                    }), (0, i.jsx)(m.A, {
+                        user: n,
+                        guildId: l,
+                        disabled: j
+                    }), (0, i.jsx)(c.A, {
+                        userId: n.id,
+                        guildId: l,
                         disabled: j
                     })]
                 })]
             })
-        }), !T && (0, t.jsx)(m.O, {})]
+        }), !T && (0, i.jsx)(p.O, {})]
     })
 }

@@ -1,31 +1,31 @@
 /** chunk id: 629747 params = (module,exports,require) **/
-n.d(l, {
+l.d(n, {
     A: () => o
 });
-var t = n(627968);
-n(64700);
-var i = n(397927),
-    s = n(915614),
-    a = n(985018),
-    r = n(65958);
+var i = l(627968);
+l(64700);
+var t = l(397927),
+    s = l(915614),
+    a = l(985018),
+    r = l(65958);
 
 function o(e) {
-    let l = () => {};
-    return (0, t.jsxs)("div", {
+    let n = () => {};
+    return (0, i.jsxs)("div", {
         className: r.kL,
-        onClick: l,
-        children: [(0, t.jsx)(s.A, {
+        onClick: n,
+        children: [(0, i.jsx)(s.A, {
             ...e,
             className: r.Pr
-        }), (0, t.jsx)("div", {
+        }), (0, i.jsx)("div", {
             className: r.r9,
-            children: (0, t.jsx)(i.K0, {
+            children: (0, i.jsx)(t.K0, {
                 variant: "overlay-secondary",
                 size: "sm",
-                icon: i.R2l,
+                icon: t.R2l,
                 "aria-label": a.intl.string(a.t.FzU73A),
                 onClick: e => {
-                    e.stopPropagation(), l()
+                    e.stopPropagation(), n()
                 }
             })
         })]

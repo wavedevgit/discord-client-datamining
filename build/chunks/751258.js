@@ -1,6 +1,6 @@
 /** chunk id: 751258 params = (module,exports,require) **/
 n.d(t, {
-    S: () => _
+    S: () => p
 });
 var i = n(791332),
     l = n.n(i),
@@ -95,22 +95,22 @@ let A = /\\([*?+/])/g,
         }
     };
 
-function p(e, t, n, i) {
+function _(e, t, n, i) {
     return r.Ay.trackWithMetadata(m.HAw.SLASH_COMMAND_USED, {
         command: e
     }), t.action(n, i)
 }
 
-function _(e, t) {
+function p(e, t) {
     for (let n in g) {
         let i = g[n];
         if (null != i.match) {
-            if (i.match.regex?.test(e)) return p(n, i, e, t);
+            if (i.match.regex?.test(e)) return _(n, i, e, t);
             continue
         }
         if (u.D_.getSetting() && "/" === e[0]) {
             let l = e.split(" ");
-            if (n === l[0].slice(1) && null != i.action) return p(n, i, l.slice(1).join(" "), t)
+            if (n === l[0].slice(1) && null != i.action) return _(n, i, l.slice(1).join(" "), t)
         }
     }
 }

@@ -174,7 +174,7 @@ function P(e) {
         filterStyle: Y
     } = (0, I.X8)({
         location: "NotificationsInboxSidebar"
-    }), z = Y === I.yF.DROPDOWN && s !== O.Io.ALL, X = (0, O.Yw)(s);
+    }), z = Y === I.yF.DROPDOWN && s !== O.Io.ALL, q = (0, O.Yw)(s);
     return (0, i.jsx)("nav", {
         className: a()(D.kL, {
             [D.Yu]: t
@@ -183,7 +183,7 @@ function P(e) {
             forceLevel: 1,
             component: (0, i.jsx)(_.Ay, {
                 hasSubheader: !0,
-                guild: X,
+                guild: q,
                 ...G
             }),
             children: [s === O.Io.ALL && (0, i.jsx)(H, {

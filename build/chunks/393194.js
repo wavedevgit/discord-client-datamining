@@ -20,19 +20,19 @@ function A(e) {
         channel: t
     } = e, n = (0, o.kt)(t), {
         firstMessage: A
-    } = (0, l.cf)([c.A], () => c.A.getMessage(t.id)), g = new Set((0, o.zt)(t, n)), p = (0, r.gU)(t) ?? a.oyn, _ = (0, s.Ay)(t);
+    } = (0, l.cf)([c.A], () => c.A.getMessage(t.id)), g = new Set((0, o.zt)(t, n)), _ = (0, r.gU)(t) ?? a.oyn, p = (0, s.Ay)(t);
     return (0, i.jsxs)(u.Ay, {
         channelId: t.id,
         className: m.kL,
         children: [(0, i.jsx)("div", {
             className: m.P0,
-            children: (0, i.jsx)(p, {
+            children: (0, i.jsx)(_, {
                 className: m.Kk,
                 strokeWidth: 1.75
             })
         }), (0, i.jsx)(u.cr, {
             className: m.wx,
-            children: _
+            children: p
         }), null == A && (0, i.jsx)(a.Text, {
             variant: "text-md/normal",
             color: "text-default",

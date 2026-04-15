@@ -2,25 +2,25 @@
 n.d(t, {
     X: () => s
 });
-var r = n(64700),
-    l = n(311907),
-    i = n(77468),
-    a = n(962173);
+var l = n(64700),
+    i = n(311907),
+    a = n(77468),
+    r = n(962173);
 
 function s(e) {
-    let t = (0, l.bG)([a.A], () => null != e ? a.A.getAccount(null, e) : null),
-        n = (0, l.bG)([a.A], () => a.A.isFetching()),
+    let t = (0, i.bG)([r.A], () => null != e ? r.A.getAccount(null, e) : null),
+        n = (0, i.bG)([r.A], () => r.A.isFetching()),
         s = null != t && !t.revoked;
     return {
         loading: n,
         hasConnection: s,
         canConnect: null != e,
-        startConnection: r.useCallback(async t => {
+        startConnection: l.useCallback(async t => {
             if (null == e) return {
                 success: !1
             };
             try {
-                let n = await i.A.authorize(e, {
+                let n = await a.A.authorize(e, {
                     location: t ?? "Account Linking"
                 });
                 if (n.ok && n.body?.url != null) return {

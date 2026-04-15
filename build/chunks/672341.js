@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(718468),
     A = n(655377),
     g = n(816144),
-    p = n(928764),
-    _ = n(640708),
+    _ = n(928764),
+    p = n(640708),
     f = n(265869),
     E = n(715757),
     C = n(378570),
@@ -107,8 +107,8 @@ function en(e) {
         em = () => es.isInitialized() || m.ready,
         eA = (0, F.r)(l),
         eg = m.length > 0 && m.first()?.isFirstMessageInForumPost(l),
-        ep = (0, o.cI)(l),
-        e_ = (0, a.bG)([N.A], () => N.A.shouldShowTopicsBar() && !ed),
+        e_ = (0, o.cI)(l),
+        ep = (0, a.bG)([N.A], () => N.A.shouldShowTopicsBar() && !ed),
         ef = (0, T.l)(l.id),
         eE = (0, S.j)(l.id, X.Rx),
         eC = (0, u.E)(l.id),
@@ -132,7 +132,7 @@ function en(e) {
             });
             return null
         }(l, ef ?? eE ?? eC),
-        eI = l.isForumPost() && !eg ? (0, i.jsx)(p.A, {
+        eI = l.isForumPost() && !eg ? (0, i.jsx)(_.A, {
             postId: l.id
         }) : null,
         eT = (0, f.A)(l.id),
@@ -160,7 +160,7 @@ function en(e) {
                     children: e.content
                 }, `divider-${e.contentKey??e.unreadId??t}`)
             }
-            if (e.type === Z.TZK.FORUM_POST_ACTION_BAR) return (0, i.jsx)(p.A, {
+            if (e.type === Z.TZK.FORUM_POST_ACTION_BAR) return (0, i.jsx)(_.A, {
                 parentChannelId: l.parent_id,
                 postId: l.id,
                 isLastItem: t + 1 === el.length,
@@ -234,23 +234,23 @@ function en(e) {
         let e, n, a = R.Ay.getOldestUnreadTimestamp(l.id),
             r = 0 !== a ? a : P.default.extractTimestamp(l.id),
             c = (0, O.ro)(new Date, new Date(r));
-        if (R.Ay.isEstimated(l.id) ? (e = c ? Q.t.wvtbbG : Q.t.tHqbtg, n = Q.t.vaPWFe) : (e = c ? Q.t["BctFH/"] : Q.t["3wXb9P"], n = Q.t["4H8ldG"]), ep && (0, o.Kc)(l) && ex.includes(q.i.SUMMARIES)) {
+        if (R.Ay.isEstimated(l.id) ? (e = c ? Q.t.wvtbbG : Q.t.tHqbtg, n = Q.t.vaPWFe) : (e = c ? Q.t["BctFH/"] : Q.t["3wXb9P"], n = Q.t["4H8ldG"]), e_ && (0, o.Kc)(l) && ex.includes(q.i.SUMMARIES)) {
             let a = R.Ay.ackMessageId(l.id),
                 c = (0, y.L)(l.id, R.Ay.getOldestUnreadMessageId(l.id));
             if ((0, d.zV)(Z.HAw.SUMMARIES_UNREAD_BAR_VIEWED, {
                     num_unread_summaries: c,
                     num_unread_messages: H,
                     last_ack_message_id: a,
-                    summaries_enabled_by_user: e_,
+                    summaries_enabled_by_user: ep,
                     summaries_enabled_for_channel: (0, o.pk)(l)
                 }), (0, o.pk)(l)) {
-                let a = e_ ? Q.intl.format(n, {
+                let a = ep ? Q.intl.format(n, {
                     count: H
                 }) : Q.intl.format(e, {
                     count: H,
                     timestamp: r
                 });
-                if (e_) {
+                if (ep) {
                     let e = c > 0 ? (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(s.Text, {
                             variant: "text-sm/medium",
@@ -258,7 +258,7 @@ function en(e) {
                             children: Q.intl.format(n, {
                                 count: H
                             })
-                        }), (0, i.jsx)(_.A, {
+                        }), (0, i.jsx)(p.A, {
                             style: {
                                 paddingLeft: 8,
                                 paddingRight: 8
@@ -296,7 +296,7 @@ function en(e) {
                                 children: Q.intl.format(n, {
                                     count: H
                                 })
-                            }), (0, i.jsx)(_.A, {
+                            }), (0, i.jsx)(p.A, {
                                 style: {
                                     paddingLeft: 8,
                                     paddingRight: 8
@@ -330,7 +330,7 @@ function en(e) {
             channelId: l.id
         }))
     }
-    if (null == t && (0, o.pk)(l) && e_ && ex.includes(q.i.SUMMARIES) && (t = (0, i.jsx)(K.UK, {
+    if (null == t && (0, o.pk)(l) && ep && ex.includes(q.i.SUMMARIES) && (t = (0, i.jsx)(K.UK, {
             channel: l,
             scrollManager: es
         })), m.error) n = (0, i.jsx)(K.Ez, {

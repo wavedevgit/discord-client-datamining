@@ -17,8 +17,8 @@ function h(e) {
             channel: m,
             messages: A,
             oldestUnreadMessageId: g,
-            treatSpam: p,
-            summaries: _,
+            treatSpam: _,
+            summaries: p,
             selectedSummary: f,
             selectedConversation: E
         } = e,
@@ -29,19 +29,19 @@ function h(e) {
     return A.forEach(e => {
         var a, T;
         let v, N;
-        if (null != _ && _.length > 0) {
+        if (null != p && p.length > 0) {
             let t = r.default.extractTimestamp(e.id);
-            for (let e = 0; e < _?.length; e++) {
-                if (null == _[e]) continue;
-                let n = r.default.extractTimestamp(_[e].startId),
-                    i = r.default.extractTimestamp(_[e].endId);
+            for (let e = 0; e < p?.length; e++) {
+                if (null == p[e]) continue;
+                let n = r.default.extractTimestamp(p[e].startId),
+                    i = r.default.extractTimestamp(p[e].endId);
                 if (t >= n && t <= i) {
-                    if (I === _[e].id) break;
+                    if (I === p[e].id) break;
                     C.push({
                         type: u.TZK.DIVIDER,
-                        content: _[e].topic,
-                        contentKey: _[e].id
-                    }), I = _[e].id;
+                        content: p[e].topic,
+                        contentKey: p[e].id
+                    }), I = p[e].id;
                     break
                 }
             }
@@ -63,7 +63,7 @@ function h(e) {
             else if (t.ignored) return u.TZK.MESSAGE_GROUP_IGNORED;
             else if ((0, c.iJ)(e) && n) return u.TZK.MESSAGE_GROUP_SPAMMER;
             return null
-        }(m, e, R && p);
+        }(m, e, R && _);
         (null !== M && ([j, b] = (N = a = b, null == a || a.type !== M ? (v = {
             type: M,
             content: [],

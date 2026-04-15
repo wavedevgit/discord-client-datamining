@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(274372),
     A = n(572164),
     g = n(157207),
-    p = n(794905),
-    _ = n(450510),
+    _ = n(794905),
+    p = n(450510),
     f = n(267102),
     E = n(969632),
     C = n(566908),
@@ -51,7 +51,7 @@ let U = l.memo(function(e) {
         location: "ChannelAttachButton"
     }), {
         onShareClick: X
-    } = (0, p.A)(a.id), Q = (0, r.bG)([_.HP], () => _.HP.hasHotspot(_._2.CLIPS_CHANNEL_ATTACH_REMINDER)), ee = (0, o.red)(e => (0, o.fDT)(e, P.nm)), et = (0, r.bG)([v.A], () => v.A.hasLayers()), en = (0, r.bG)([m.A], () => m.A.hasClips()), [ei, el] = l.useState(null), ea = (0, h.sw)() && (z || en), es = a.isPrivate(), er = (0, r.bG)([N.A], () => es || N.A.can(D.xBc.ATTACH_FILES, a) && N.A.can(D.xBc.SEND_MESSAGES, a)), eo = (0, d.A)(Y);
+    } = (0, _.A)(a.id), Q = (0, r.bG)([p.HP], () => p.HP.hasHotspot(p._2.CLIPS_CHANNEL_ATTACH_REMINDER)), ee = (0, o.red)(e => (0, o.fDT)(e, P.nm)), et = (0, r.bG)([v.A], () => v.A.hasLayers()), en = (0, r.bG)([m.A], () => m.A.hasClips()), [ei, el] = l.useState(null), ea = (0, h.sw)() && (z || en), es = a.isPrivate(), er = (0, r.bG)([N.A], () => es || N.A.can(D.xBc.ATTACH_FILES, a) && N.A.can(D.xBc.SEND_MESSAGES, a)), eo = (0, d.A)(Y);
 
     function ec() {
         (0, o.mMO)(async () => {
@@ -86,8 +86,8 @@ let U = l.memo(function(e) {
         em = (0, E.I7)(a ?? void 0),
         eA = (0, C.Sc)(),
         eg = (0, u.b)(),
-        ep = J?.length ?? 0,
-        e_ = (0, O.A)({
+        e_ = J?.length ?? 0,
+        ep = (0, O.A)({
             canAttachFiles: er,
             canStartThreads: ed || eu,
             useSlate: eh,
@@ -95,13 +95,13 @@ let U = l.memo(function(e) {
             canUseApplicationCommands: !H,
             channel: a,
             activities: $,
-            newClipsCount: ep,
+            newClipsCount: e_,
             canPostPolls: em,
             appContext: B,
             canSendScheduledMessages: eA,
             canSummarizeThreads: eg
         });
-    if (0 === e_.length) return null;
+    if (0 === ep.length) return null;
     let ef = (0, i.jsx)(o.pa$, {
             size: "refresh_sm",
             color: "currentColor",
@@ -132,7 +132,7 @@ let U = l.memo(function(e) {
                         return (0, i.jsx)(L.A, {
                             ...e,
                             onClose: () => el(null),
-                            options: e_,
+                            options: ep,
                             channel: a,
                             onFileUpload: () => V.current?.activateUploadDialogue(),
                             draftType: U,

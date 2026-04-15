@@ -1,11 +1,11 @@
 /** chunk id: 65290 params = (module,exports,require) **/
-n.d(l, {
+l.d(n, {
     A: () => s
-}), n(938796);
-var t = n(311907),
-    i = n(622543);
+}), l(938796);
+var i = l(311907),
+    t = l(622543);
 
 function s(e) {
-    let l = (0, t.bG)([i.A], () => i.A.getUserProfile(e.id));
-    return l?.bio === "" && l?.pronouns === "" && l?.banner === void 0 && l?.accentColor === void 0 && l?.banner === void 0 && e.flags === e.publicFlags && (l?.badges == null || l?.badges?.length === 0)
+    let n = (0, i.bG)([t.A], () => t.A.getUserProfile(e.id));
+    return n?.bio === "" && n?.pronouns === "" && n?.banner === void 0 && n?.accentColor === void 0 && n?.banner === void 0 && e.flags === e.publicFlags && (n?.badges == null || n?.badges?.length === 0)
 }

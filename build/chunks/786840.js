@@ -23,7 +23,7 @@ function g(e) {
         fingerprintBase64: n,
         chunkSize: 5,
         desiredLength: 30
-    }), p = l.useCallback(() => {
+    }), _ = l.useCallback(() => {
         (0, o.k0)({
             channelId: t
         })
@@ -53,7 +53,7 @@ function g(e) {
             }), null != g && (0, i.jsx)(h.c, {
                 chunks: g,
                 color: s.LU0.colors.INTERACTIVE_TEXT_DEFAULT.css,
-                onCopy: p
+                onCopy: _
             })]
         }), (0, i.jsx)(u.O, {
             className: A.aY,

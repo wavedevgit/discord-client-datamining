@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(927813),
     A = n(960850),
     g = n(652215),
-    p = n(985018),
-    _ = n(730034);
+    _ = n(985018),
+    p = n(730034);
 
 function f(e) {
     let t, {
@@ -47,22 +47,22 @@ function f(e) {
             let n = `${e.seconds()}`.padStart(2, "0");
             t = `${e.minutes()}:${n}`
         }
-    } else t = r ? p.intl.string(p.t["8+NidX"]) : p.intl.string(p.t.Icu3bf);
+    } else t = r ? _.intl.string(_.t["8+NidX"]) : _.intl.string(_.t.Icu3bf);
     let C = (0, i.jsxs)(c.Text, {
-        className: _.rk,
+        className: p.rk,
         variant: "text-xs/medium",
         color: A ? "text-feedback-critical" : "text-muted",
         tabularNumbers: !0,
         children: [(0, i.jsx)(c.xbX, {
             size: "xxs",
             color: "currentColor",
-            className: _.Eq
+            className: p.Eq
         }), t]
     });
     return (0, i.jsx)(o.m, {
         text: E,
         children: (0, i.jsx)("div", {
-            className: _.ns,
+            className: p.ns,
             children: C
         })
     })

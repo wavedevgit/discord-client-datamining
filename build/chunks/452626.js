@@ -22,8 +22,8 @@ function r(e) {
         label: m,
         tooltip: A,
         loading: g,
-        disabled: p,
-        onClick: _
+        disabled: _,
+        onClick: p
     } = (0, s._B)(t, n, r);
     return (0, i.jsx)(l.m, {
         text: A,
@@ -34,9 +34,9 @@ function r(e) {
             text: m,
             fullWidth: d,
             onClick: () => {
-                u?.(), _()
+                u?.(), p()
             },
-            disabled: p,
+            disabled: _,
             loading: g,
             ...h
         })

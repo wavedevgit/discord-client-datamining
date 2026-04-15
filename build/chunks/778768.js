@@ -159,10 +159,10 @@ function H(e) {
             activityStatusIcon: null == e ? void 0 : (0, f.f)(e)
         }
     }, [K]), {
-        voiceChannel: X
+        voiceChannel: q
     } = (0, p.A)({
         userId: n.id
-    }), q = (0, C.Ay)(X), $ = (0, h.S31)(h.clD.ONLINE), J = "success" === x || "sending" === x, Q = l.useCallback(e => {
+    }), X = (0, C.Ay)(q), $ = (0, h.S31)(h.clD.ONLINE), J = "success" === x || "sending" === x, Q = l.useCallback(e => {
         e.stopPropagation(), k || H()
     }, [H, k]), Z = l.useCallback(async () => {
         if (J) return;
@@ -207,7 +207,7 @@ function H(e) {
         el = G.intl.string(G.t.jYnGPG),
         es = F !== h.clD.OFFLINE ? F : void 0,
         ea = null != Y.text,
-        er = null != X && null != q;
+        er = null != q && null != X;
     return (0, i.jsxs)(h.DUT, {
         innerRef: o,
         tag: "li",
@@ -238,7 +238,7 @@ function H(e) {
                 children: [er ? (0, i.jsx)(S.A, {
                     size: "custom",
                     color: $,
-                    channel: X,
+                    channel: q,
                     className: P.RI
                 }) : null != z ? (0, i.jsx)(g.A, {
                     icon: z,
@@ -247,7 +247,7 @@ function H(e) {
                     variant: "text-xs/medium",
                     color: "text-status-online",
                     lineClamp: 1,
-                    children: er ? q : Y.text
+                    children: er ? X : Y.text
                 })]
             })]
         }), "sending" === x && (0, i.jsx)("div", {

@@ -1,6 +1,6 @@
 /** chunk id: 294323 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var i = n(64700),
     l = n(311907),
@@ -16,8 +16,8 @@ var i = n(64700),
     A = n(369374),
     g = n(188951);
 
-function p(e, t, n) {
-    var p, _, f, E;
+function _(e, t, n) {
+    var _, p, f, E;
     let C, x, {
             enabled: S
         } = A.A.useConfig({
@@ -30,14 +30,14 @@ function p(e, t, n) {
             } = (0, c.FY)();
             return null == e ? [!1, null] : [n, t?.find(t => t.applicationId === e) ?? null]
         }(S ? null : t),
-        T = (p = S ? t : null, (0, g.A)(null != p ? [p] : []), (0, l.yK)([m.A], () => {
-            if (null == p) return [!1, null];
-            let e = m.A.getConfig(p) ?? null,
-                t = m.A.getFetchState(p);
+        T = (_ = S ? t : null, (0, g.A)(null != _ ? [_] : []), (0, l.yK)([m.A], () => {
+            if (null == _) return [!1, null];
+            let e = m.A.getConfig(_) ?? null,
+                t = m.A.getFetchState(_);
             return [t === m.e.NOT_FETCHED || t === m.e.FETCHING, e]
-        }, [p])),
+        }, [_])),
         [v, N] = S ? T : I,
-        [y, b] = (_ = null != N ? t : null, C = (0, s.h)(_), [(0, l.bG)([a.A], () => null != _ && a.A.isFetchingApplication(_), [_]), C ?? null]),
+        [y, b] = (p = null != N ? t : null, C = (0, s.h)(p), [(0, l.bG)([a.A], () => null != p && a.A.isFetchingApplication(p), [p]), C ?? null]),
         [j, R] = (f = null != b ? e : null, E = null != b ? t : null, x = (0, l.bG)([o.A], () => null != f && o.A.getFetchState(f) === o.e.NOT_FETCHED, [f]), i.useEffect(() => {
             x && null != f && r.A.fetchUserApplicationIdentitiesWithProfiles(f)
         }, [x, f]), (0, l.yK)([o.A], () => {

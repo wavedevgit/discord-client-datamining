@@ -74,8 +74,8 @@ function B(e) {
         } = e,
         z = Y.id,
         {
-            voiceUsersToShow: X,
-            stageSpeakers: q,
+            voiceUsersToShow: q,
+            stageSpeakers: X,
             numStageListeners: $,
             streamUsersToShow: J,
             embeddedActivitiesUsers: Q
@@ -128,8 +128,8 @@ function B(e) {
             embeddedActivitiesUsers: l.useMemo(() => (0, y.L)(I, H, "GuildTooltip - embeddedActivitiesUsers"), [I, H]),
             hasActivity: g.length > 0 || G.length > 0 || V.length > 0 || I.length > 0
         }),
-        Z = k(u.HKD, X, z),
-        ee = 0 === q.length ? null : (0, i.jsxs)("div", {
+        Z = k(u.HKD, q, z),
+        ee = 0 === X.length ? null : (0, i.jsxs)("div", {
             className: P.nM,
             children: [(0, i.jsx)(u.qux, {
                 size: "lg",
@@ -137,7 +137,7 @@ function B(e) {
                 className: P.RI
             }), (0, i.jsx)(A.Ay, {
                 guildId: z,
-                users: q,
+                users: X,
                 max: 3
             }), (0, i.jsxs)("div", {
                 className: P.GZ,

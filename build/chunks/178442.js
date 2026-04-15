@@ -15,12 +15,12 @@ var i = n(627968),
     m = n(167155),
     A = n(652215),
     g = n(750593);
-let p = {
+let _ = {
         [A.vkP.CONNECTED]: g.nf,
         [A.vkP.CONNECTING]: g._6,
         [A.vkP.ERROR]: g.Il
     },
-    _ = {
+    p = {
         [A.bFR.FINE]: g.LP,
         [A.bFR.AVERAGE]: g.mq,
         [A.bFR.BAD]: g.yA,
@@ -68,7 +68,7 @@ function C(e) {
     return (0, i.jsxs)("div", {
         className: g.pe,
         children: [(0, i.jsx)("div", {
-            className: s()(g.yH, _[t], f),
+            className: s()(g.yH, p[t], f),
             ref: v,
             children: (0, i.jsx)(o.YNO, {
                 targetElementRef: v,
@@ -101,7 +101,7 @@ function C(e) {
                                     text: j,
                                     textVariant: I,
                                     hasVideo: T,
-                                    className: p[b],
+                                    className: _[b],
                                     hasConnectedChannel: null != x
                                 })
                             }), S ? C : null]

@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(397927),
     A = n(212245),
     g = n(688810),
-    p = n(402216),
-    _ = n(287809),
+    _ = n(402216),
+    p = n(287809),
     f = n(954571),
     E = n(927578),
     C = n(650338),
@@ -82,7 +82,7 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
             {
                 location: P
             } = (0, A.p)(),
-            k = (0, c.bG)([_.default], () => _.default.getCurrentUser()),
+            k = (0, c.bG)([p.default], () => p.default.getCurrentUser()),
             w = o && !E.Ay.isPremium(k, I.PremiumTypes.TIER_1) && !E.Ay.canStreamQuality(E.Ay.StreamQuality.MID, k),
             U = l.useCallback(() => {
                 w && D && (0, m.mMO)(async () => {
@@ -108,7 +108,7 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
             position: "bottom",
             children: (0, i.jsxs)(m.DUT, {
                 onClick: U,
-                className: s()(v.t5, N, p.u1[h], O ? v.Y5 : v.Lc, {
+                className: s()(v.t5, N, _.u1[h], O ? v.Y5 : v.Lc, {
                     [v.vk]: w && D
                 }),
                 children: [D ? (0, i.jsx)(m.tvc, {
@@ -129,7 +129,7 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                 [v.Dc]: D && R
             }),
             color: d.A.unsafe_rawColors.PRIMARY_500.css,
-            shape: p.u1[h]
+            shape: _.u1[h]
         })
     },
     P = e => {
@@ -142,7 +142,7 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
             premiumIndicator: d
         } = e, [u, h] = l.useState(!1), A = (0, C.N5)(t), {
             reducedMotion: g
-        } = l.useContext(m.CZY), _ = n && null != A, f = (0, m.pnh)(_, {
+        } = l.useContext(m.CZY), p = n && null != A, f = (0, m.pnh)(p, {
             enter: {
                 from: g.enabled ? j : y,
                 to: g.enabled ? R : b
@@ -150,7 +150,7 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
             leave: g.enabled ? j : y,
             config: O
         }, "animate-always"), E = (0, m.zhh)({
-            to: _ ? L : M,
+            to: p ? L : M,
             config: O
         }, "animate-always");
         return (e => {
@@ -177,10 +177,10 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                 }) : null), (0, i.jsx)(r.animated.div, {
                     style: E,
                     className: v.Ok,
-                    children: (0, i.jsx)(p.Ay, {
-                        look: p.gv.RED,
+                    children: (0, i.jsx)(_.Ay, {
+                        look: _.gv.RED,
                         size: o,
-                        shape: _ ? m.EGs.ROUND_RIGHT : m.EGs.ROUND
+                        shape: p ? m.EGs.ROUND_RIGHT : m.EGs.ROUND
                     })
                 })]
             })

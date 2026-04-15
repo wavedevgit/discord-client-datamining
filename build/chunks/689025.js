@@ -48,8 +48,8 @@ var W = n(652215),
     K = n(349828),
     Y = n(985018),
     z = n(928409),
-    X = n(822294);
-class q extends B.Ay {
+    q = n(822294);
+class X extends B.Ay {
     channelItemRef = l.createRef();
     state = {
         shouldShowGuildVerificationPopout: !1
@@ -228,7 +228,7 @@ class q extends B.Ay {
                         ref: this.channelItemRef,
                         className: z.Ki,
                         iconClassName: a()({
-                            [X.G]: null != _
+                            [q.G]: null != _
                         }),
                         channel: e,
                         selected: !C && t,
@@ -261,7 +261,7 @@ class q extends B.Ay {
         return A && (T = o(T)), h && (T = s(r(T))), T
     }
 }
-let $ = (0, A.a)((0, _.F)(q));
+let $ = (0, A.a)((0, _.F)(X));
 
 function J(e) {
     let {

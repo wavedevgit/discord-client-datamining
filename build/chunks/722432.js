@@ -48,7 +48,7 @@ function u(e) {
         scrollToStart: h,
         scrollToEnd: u,
         onNavigateNextAtEnd: A
-    }), p = i.useCallback(e => {
+    }), _ = i.useCallback(e => {
         let {
             atEnd: t = !1
         } = e;
@@ -56,6 +56,6 @@ function u(e) {
     }, [g]);
     return (0, s.Vo)({
         event: d.jej.FOCUS_MESSAGES,
-        handler: p
+        handler: _
     }), g
 }

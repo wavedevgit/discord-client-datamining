@@ -71,9 +71,9 @@ function v(e) {
         color: "text-muted",
         children: (0, a.Gub)(Y)
     });
-    let X = R?.length ?? 0;
+    let q = R?.length ?? 0;
     return null != j && j && W ? (0, i.jsx)(N.A, {
-        userCount: X,
+        userCount: q,
         video: H || F,
         channel: t
     }) : v && (0, f.t)(R) && z ? (0, i.jsx)(a.LpS, {

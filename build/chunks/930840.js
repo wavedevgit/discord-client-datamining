@@ -18,17 +18,17 @@ function h(e) {
         className: n,
         onCopy: a,
         ...h
-    } = e, m = l.useMemo(() => t?.join(" "), [t]), [A, g] = l.useState(!1), p = l.useCallback(() => {
+    } = e, m = l.useMemo(() => t?.join(" "), [t]), [A, g] = l.useState(!1), _ = l.useCallback(() => {
         (0, c.C)(m, () => {
             g(!0), a?.()
         })
-    }, [a, m]), _ = A ? o.yr3 : o.TdU;
+    }, [a, m]), p = A ? o.yr3 : o.TdU;
     return (0, i.jsx)(o.DUT, {
         className: s()(u.k, n),
-        onClick: p,
+        onClick: _,
         children: (0, i.jsx)(r.m, {
             text: A ? d.intl.string(d.t.t5VZ88) : d.intl.string(d.t.OpuAlK),
-            children: (0, i.jsx)(_, {
+            children: (0, i.jsx)(p, {
                 ...h,
                 size: "xxs",
                 color: A ? o.LU0.colors.TEXT_FEEDBACK_POSITIVE : o.LU0.colors.INTERACTIVE_TEXT_DEFAULT

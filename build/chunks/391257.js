@@ -1,6 +1,6 @@
 /** chunk id: 391257 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var i = n(627968);
 n(64700);
@@ -17,10 +17,10 @@ var l = n(311907),
     A = n(542992),
     g = n(782691);
 
-function p(e) {
+function _(e) {
     let {
         channel: t
-    } = e, n = (0, r.Ay)(t, !0), p = (0, l.bG)([d.A], () => d.A.can(h.xBc.MANAGE_CHANNELS, t) && c.bk.has(t.type));
+    } = e, n = (0, r.Ay)(t, !0), _ = (0, l.bG)([d.A], () => d.A.can(h.xBc.MANAGE_CHANNELS, t) && c.bk.has(t.type));
     return (0, i.jsxs)(u.Ay, {
         channelId: t.id,
         children: [(0, i.jsx)(u.WK, {
@@ -37,7 +37,7 @@ function p(e) {
                     channelId: t.id
                 })
             })
-        }), p ? (0, i.jsx)("div", {
+        }), _ ? (0, i.jsx)("div", {
             className: A.U,
             children: (0, i.jsx)(a.Button, {
                 size: "sm",

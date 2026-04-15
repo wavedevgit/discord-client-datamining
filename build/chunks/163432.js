@@ -2,7 +2,7 @@
 n.d(t, {
     Ay: () => f,
     Vp: () => m,
-    i4: () => _
+    i4: () => p
 }), n(321073);
 var i = n(627968),
     l = n(64700),
@@ -18,12 +18,12 @@ let m = 112,
     A = 16 / 9 * 112 + 8,
     g = 10 * o.A.Millis.SECOND;
 
-function p(e) {
+function _(e) {
     let t = r.default.getId();
     return e.type === u.lp.USER && e.user.id === t && e.voiceState?.selfVideo
 }
 
-function _(e, t) {
+function p(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
             tileWidth: A,
             tileMinWidth: 124,
@@ -39,7 +39,7 @@ function _(e, t) {
             cropSelfVideo: h,
             version: m
         } = n,
-        [_, f] = l.useState(Date.now());
+        [p, f] = l.useState(Date.now());
     l.useEffect(() => {
         let e = setTimeout(() => {
             f(Date.now())
@@ -69,8 +69,8 @@ function _(e, t) {
                     }
                 })(e, n)),
                 [m, A] = (0, a.partition)(l, u.Xw),
-                _ = m.findIndex(p),
-                f = null; - 1 !== _ && (f = m[_], m.splice(_, 1));
+                p = m.findIndex(_),
+                f = null; - 1 !== p && (f = m[p], m.splice(p, 1));
             let C = null == f || h ? e : e - i - o,
                 x = Math.max(0, Math.min(Math.floor((C - o) / (r + o)), d, t.length)),
                 S = Math.min((C - o) / x - o, i),
@@ -98,7 +98,7 @@ function _(e, t) {
                 visibleParticipants: b,
                 participantTileWidth: S
             }
-        }, [e, t, _, m, h, d, o, r, i]);
+        }, [e, t, p, m, h, d, o, r, i]);
     return {
         visibleParticipants: C,
         participantTileWidth: x
@@ -122,7 +122,7 @@ function f(e) {
         className: h.zr,
         children: t.map(e => {
             if (null == e) return null;
-            let t = p(e);
+            let t = _(e);
             return (0, i.jsx)("div", {
                 className: h.eP,
                 style: t ? {

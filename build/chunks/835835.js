@@ -17,8 +17,8 @@ var i = n(627968),
     m = n(928039),
     A = n(12351),
     g = n(976860),
-    p = n(734057),
-    _ = n(320501),
+    _ = n(734057),
+    p = n(320501),
     f = n(576705),
     E = n(519057),
     C = n(531685),
@@ -145,8 +145,8 @@ function O(e) {
         loading: r,
         loadMore: h,
         renderHeader: g,
-        renderEmptyState: p,
-        renderItem: _,
+        renderEmptyState: _,
+        renderItem: p,
         getProTip: f,
         scrollerClassName: I,
         className: T,
@@ -182,9 +182,9 @@ function O(e) {
         className: s()(y.zC, y.k$),
         children: (0, i.jsx)(u.y$y, {})
     }, "spinner")] : 0 === n.length ? P.push((0, i.jsx)(l.Fragment, {
-        children: p()
+        children: _()
     }, "empty-state")) : (k = !1, P = [], o().each(n, e => {
-        P.push(..._(e))
+        P.push(...p(e))
     }));
     let w = null;
     null != n && n.length > 0 && null != h && (w = r ? (0, i.jsx)("div", {
@@ -201,7 +201,7 @@ function O(e) {
         })
     }) : (0, i.jsx)("div", {
         className: y.lJ,
-        children: p()
+        children: _()
     }));
     let U = f?.(),
         G = k && null != U ? (0, i.jsx)("div", {
@@ -273,8 +273,8 @@ function D(e) {
         onCloseMessage: N,
         listName: b,
         closeAriaLabel: j
-    } = e, R = (0, d.bG)([_.A], () => {
-        let e = null != a ? _.A.getMessages(a.id) : null;
+    } = e, R = (0, d.bG)([p.A], () => {
+        let e = null != a ? p.A.getMessages(a.id) : null;
         return null != e && null != e.jumpTargetId && e.loadingMore && null == e.get(e.jumpTargetId)
     });
 
@@ -283,7 +283,7 @@ function D(e) {
             let {
                 id: i,
                 channel_id: l
-            } = e, a = p.A.getChannel(l);
+            } = e, a = _.A.getChannel(l);
             null != a && (h.A.trackJump(l, i, t), (0, g.pX)(v.BVt.CHANNEL(a.getGuildId(), l, i))), u?.(n)
         };
         (0, I.A)(e, i) && !R && i()

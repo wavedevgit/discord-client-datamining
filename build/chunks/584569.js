@@ -15,8 +15,8 @@ var i = n(311907),
     m = n(977997),
     A = n(607567),
     g = n(652215),
-    p = n(806931);
-let _ = new s.A,
+    _ = n(806931);
+let p = new s.A,
     f = new s.A,
     E = new Set;
 
@@ -26,9 +26,9 @@ function C(e, t, n) {
             channelId: n
         }),
         l = (0, A.RQ)(i, t ?? g.ME, e.id);
-    _.set(e.id, l);
+    p.set(e.id, l);
     let a = {
-        type: p.lp.USER,
+        type: _.lp.USER,
         user: e,
         id: e.id,
         streamId: null,
@@ -47,7 +47,7 @@ function C(e, t, n) {
 }
 
 function x(e) {
-    let t = _.delete(e),
+    let t = p.delete(e),
         n = f.delete(e),
         i = E.delete(e);
     return t || n || i
@@ -66,7 +66,7 @@ function S() {
 }
 
 function I() {
-    _.clear(), f.clear(), E.clear()
+    p.clear(), f.clear(), E.clear()
 }
 class T extends i.Ay.Store {
     static displayName = "RTCConnectionDesyncStore";
@@ -74,13 +74,13 @@ class T extends i.Ay.Store {
         this.waitFor(m.A, h.default, d.A, u.A), this.syncWith([h.default], S)
     }
     get desyncedVoiceStatesCount() {
-        return _.size()
+        return p.size()
     }
     getDesyncedUserIds() {
-        return _.keys()
+        return p.keys()
     }
     getDesyncedVoiceStates() {
-        return _.values()
+        return p.values()
     }
     getDesyncedParticipants() {
         return f.values()

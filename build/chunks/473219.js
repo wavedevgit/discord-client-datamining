@@ -6,8 +6,8 @@ var i = t(627968),
     a = t(64700),
     l = t(688810),
     r = t(512213),
-    d = t(637193),
-    s = t(713517),
+    s = t(637193),
+    d = t(713517),
     o = t(919395),
     c = t(84540),
     _ = t(930349),
@@ -21,9 +21,9 @@ function A(e) {
         disabled: A
     } = e, {
         analyticsLocations: g
-    } = (0, l.Ay)(), m = null != t, f = a.useRef(null), {
+    } = (0, l.Ay)(), f = null != t, m = a.useRef(null), {
         isHoveringOrFocusing: h
-    } = (0, s.A)(f), {
+    } = (0, d.A)(m), {
         guildNameplate: I,
         pendingNameplate: x
     } = (0, o.rv)(n, t ?? void 0), b = (0, o.lw)({
@@ -31,19 +31,19 @@ function A(e) {
         userValue: n.collectibles?.nameplate,
         guildValue: I,
         guildId: t ?? void 0
-    }), v = void 0 !== x, E = m ? I : n.collectibles?.nameplate, y = a.useCallback(() => {
-        (0, d.p)({
+    }), v = void 0 !== x, E = f ? I : n.collectibles?.nameplate, j = a.useCallback(() => {
+        (0, s.p)({
             analyticsLocations: g,
             guildId: t ?? void 0,
             stackingBehavior: "stack"
         })
-    }, [g, t]), j = m && n.collectibles?.nameplate != null, T = null != b && (v ? null != x : null != E) ? {
+    }, [g, t]), y = f && n.collectibles?.nameplate != null, T = null != b && (v ? null != x : null != E) ? {
         onClick: () => (0, c.p)({
             guildId: t ?? void 0,
             nameplate: null
         }),
-        type: j ? "reset" : "remove",
-        accessibleLabel: u.intl.string(j ? u.t.neYqhR : u.t["9zwziY"])
+        type: y ? "reset" : "remove",
+        accessibleLabel: u.intl.string(y ? u.t.neYqhR : u.t["9zwziY"])
     } : void 0, N = (0, i.jsx)("div", {
         className: p.M,
         "aria-hidden": !0,
@@ -55,16 +55,16 @@ function A(e) {
         })
     });
     return (0, i.jsx)("div", {
-        ref: f,
+        ref: m,
         children: null == b ? (0, i.jsx)(_.kL, {
             variant: "bar",
-            onClick: y,
+            onClick: j,
             accessibleLabel: u.intl.string(u.t.BwdeM1),
             disabled: A,
             children: N
         }) : (0, i.jsx)(_.NW, {
             variant: "bar",
-            onClick: y,
+            onClick: j,
             accessibleLabel: u.intl.string(u.t.BwdeM1),
             deleteButtonConfig: T,
             disabled: A,

@@ -47,8 +47,8 @@ var i = n(627968),
     K = n(15285),
     Y = n(769015),
     z = n(334074),
-    X = n(279250),
-    q = n(880144),
+    q = n(279250),
+    X = n(880144),
     $ = n(277680),
     J = n(118277),
     Q = n(905552),
@@ -634,7 +634,7 @@ let eH = (0, I.A)(function(e) {
     let {
         guildId: t,
         ...n
-    } = e, s = (0, u.bG)([er.default], () => er.default.getId()), a = (0, u.bG)([K.Ay, eg.A], () => (0, Q.A)(K.Ay, eg.A)), r = (0, u.bG)([K.Ay], () => K.Ay.getDebugRunningGame()), o = (0, u.bG)([em.A, eo.A], () => eo.A.getChannel(em.A.getVoiceChannelId())), d = (0, u.bG)([b.Ay], () => b.Ay.getConnectedActivityChannelId()), h = (0, u.bG)([eo.A], () => eo.A.getChannel(d)), A = (0, u.bG)([ec.A], () => ec.A.getGuild(h?.guild_id)), [_, m] = (0, u.yK)([ea.A], () => [ea.A.getCurrentUserActiveStream(), ea.A.getStreamerActiveStreamMetadata()]), p = (0, u.bG)([N.A], () => N.A.useReducedMotion), g = (0, u.bG)([b.Ay], () => b.Ay.getCurrentEmbeddedActivity()), f = (0, u.bG)([H.A], () => H.A.getConnectedFrame()), E = (0, u.bG)([ec.A, eh.A], () => null == o || X.vz(o, ec.A, eh.A, !1)), [x] = (0, D.A)([(null != m && null != m.id ? m.id : null != a && null != a.id ? a.id : null != g ? g.applicationId : null != f ? f.applicationId : void 0) ?? ""]), I = (0, u.bG)([b.Ay], () => b.Ay.getCurrentEmbeddedActivity()), S = (0, y.u)() && null != I && (0, T.f)(), v = (0, u.bG)([eu.Ay], () => (0, q.A)(eu.Ay) && (0, ex.isWindows)()), j = (0, u.bG)([eA.A], () => null != s ? eA.A.findActivity(s, e => e.type === eb.$pd.PLAYING) : null), O = null != _ && _.ownerId === s && _.state !== eb.XYD.ENDED, M = (0, u.bG)([ep.default, e_.A], () => null != h ? (0, P.m1)(h, ep.default, e_.A) : void 0), U = (0, en.A)(), [G, k] = l.useState(!1), w = (0, u.bG)([et.A], () => et.A.getWindowOpen(eb.MLl.ACTIVITY_POPOUT)), {
+    } = e, s = (0, u.bG)([er.default], () => er.default.getId()), a = (0, u.bG)([K.Ay, eg.A], () => (0, Q.A)(K.Ay, eg.A)), r = (0, u.bG)([K.Ay], () => K.Ay.getDebugRunningGame()), o = (0, u.bG)([em.A, eo.A], () => eo.A.getChannel(em.A.getVoiceChannelId())), d = (0, u.bG)([b.Ay], () => b.Ay.getConnectedActivityChannelId()), h = (0, u.bG)([eo.A], () => eo.A.getChannel(d)), A = (0, u.bG)([ec.A], () => ec.A.getGuild(h?.guild_id)), [_, m] = (0, u.yK)([ea.A], () => [ea.A.getCurrentUserActiveStream(), ea.A.getStreamerActiveStreamMetadata()]), p = (0, u.bG)([N.A], () => N.A.useReducedMotion), g = (0, u.bG)([b.Ay], () => b.Ay.getCurrentEmbeddedActivity()), f = (0, u.bG)([H.A], () => H.A.getConnectedFrame()), E = (0, u.bG)([ec.A, eh.A], () => null == o || q.vz(o, ec.A, eh.A, !1)), [x] = (0, D.A)([(null != m && null != m.id ? m.id : null != a && null != a.id ? a.id : null != g ? g.applicationId : null != f ? f.applicationId : void 0) ?? ""]), I = (0, u.bG)([b.Ay], () => b.Ay.getCurrentEmbeddedActivity()), S = (0, y.u)() && null != I && (0, T.f)(), v = (0, u.bG)([eu.Ay], () => (0, X.A)(eu.Ay) && (0, ex.isWindows)()), j = (0, u.bG)([eA.A], () => null != s ? eA.A.findActivity(s, e => e.type === eb.$pd.PLAYING) : null), O = null != _ && _.ownerId === s && _.state !== eb.XYD.ENDED, M = (0, u.bG)([ep.default, e_.A], () => null != h ? (0, P.m1)(h, ep.default, e_.A) : void 0), U = (0, en.A)(), [G, k] = l.useState(!1), w = (0, u.bG)([et.A], () => et.A.getWindowOpen(eb.MLl.ACTIVITY_POPOUT)), {
         parentAnalyticsLocation: B,
         analyticsLocations: V
     } = (0, R.Ay)(), {

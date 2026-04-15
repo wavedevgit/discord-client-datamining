@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(713654),
     A = n(967144),
     g = n(342296),
-    p = n(696451),
-    _ = n(287809),
+    _ = n(696451),
+    p = n(287809),
     f = n(427262),
     E = n(314307),
     C = n(652215),
@@ -29,7 +29,7 @@ function I(e) {
         channel: a
     } = e, h = l.useRef(null), {
         analyticsLocations: m
-    } = (0, u.Ay)(d.A.USERNAME), E = (0, r.bG)([_.default], () => _.default.getUser(t)), C = (0, r.bG)([p.Ay], () => null != t ? p.Ay.getMember(a.guild_id, t) : null), x = (0, A.gn)(a.guild_id, t ?? void 0, C?.colorStrings ?? null);
+    } = (0, u.Ay)(d.A.USERNAME), E = (0, r.bG)([p.default], () => p.default.getUser(t)), C = (0, r.bG)([_.Ay], () => null != t ? _.Ay.getMember(a.guild_id, t) : null), x = (0, A.gn)(a.guild_id, t ?? void 0, C?.colorStrings ?? null);
 
     function I(e) {
         if (null == E) return null;

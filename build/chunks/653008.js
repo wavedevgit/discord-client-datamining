@@ -19,8 +19,8 @@ let m = l.memo(function(e) {
         compact: m = !1,
         interactionUsernameProfile: A,
         interactionAvatarProfile: g,
-        interactionData: p,
-        referencedUsernameProfile: _,
+        interactionData: _,
+        referencedUsernameProfile: p,
         referencedAvatarProfile: f,
         setPopout: E
     } = e, {
@@ -29,7 +29,7 @@ let m = l.memo(function(e) {
     } = (0, a.cf)([c.A], () => ({
         isInteractionUserBlocked: c.A.isBlockedForMessage(t),
         isInteractionUserIgnored: c.A.isIgnoredForMessage(t)
-    }), [t]), S = (0, a.bG)([o.A], () => o.A.getMessageByReference(t?.messageReference)), I = (0, u.r4)(t.interaction?.user.id, n.id), T = (0, u.T0)(t.interaction, n, A, E), v = (0, u.Yq)(g, E), N = (0, r.Am)(t), y = N?.type === s.G4.APPLICATION_COMMAND ? N.target_user?.id : void 0, b = (0, u.r4)(y, n.id), j = (0, u.I)(y, n, _, E), R = (0, u.Ge)(f, E), M = (0, u.U_)(p, E), L = l.useCallback(() => {
+    }), [t]), S = (0, a.bG)([o.A], () => o.A.getMessageByReference(t?.messageReference)), I = (0, u.r4)(t.interaction?.user.id, n.id), T = (0, u.T0)(t.interaction, n, A, E), v = (0, u.Yq)(g, E), N = (0, r.Am)(t), y = N?.type === s.G4.APPLICATION_COMMAND ? N.target_user?.id : void 0, b = (0, u.r4)(y, n.id), j = (0, u.I)(y, n, p, E), R = (0, u.Ge)(f, E), M = (0, u.U_)(_, E), L = l.useCallback(() => {
         E({
             interactionUsernameProfile: !1,
             interactionAvatarProfile: !1,
@@ -43,12 +43,12 @@ let m = l.memo(function(e) {
         compact: m,
         setPopout: E,
         referencedAvatarProfile: f,
-        referencedUsernameProfile: _,
+        referencedUsernameProfile: p,
         replyReference: t.messageReference,
         replyMessage: S,
         isReplySpineClickable: !1,
         showReplySpine: !1
-    }), [n, m, t, f, S, _, E]);
+    }), [n, m, t, f, S, p, E]);
     return (0, i.jsx)(d.A, {
         message: t,
         channel: n,
@@ -57,9 +57,9 @@ let m = l.memo(function(e) {
         isInteractionUserIgnored: x,
         showAvatarPopout: g,
         showUsernamePopout: A,
-        showDataPopout: p,
+        showDataPopout: _,
         showTargetAvatarPopout: f,
-        showTargetUsernamePopout: _,
+        showTargetUsernamePopout: p,
         onClickAvatar: v,
         onClickUsername: T,
         onClickCommand: M,

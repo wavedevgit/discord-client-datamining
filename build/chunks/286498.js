@@ -22,8 +22,8 @@ function g(e) {
         row: n,
         hideDiscriminator: l,
         comparator: g,
-        selected: p,
-        checked: _,
+        selected: _,
+        checked: p,
         disabled: f = !1,
         onClick: E,
         onMouseEnter: C,
@@ -43,14 +43,14 @@ function g(e) {
         },
         ...T,
         role: "option",
-        "aria-selected": _,
+        "aria-selected": p,
         "aria-disabled": f,
         "aria-setsize": x,
         "aria-posinset": S,
         children: (0, i.jsxs)(u.A, {
             align: u.A.Align.CENTER,
             className: a()(A.Bc, {
-                [A.oz]: p
+                [A.oz]: _
             }),
             children: [(0, i.jsx)(d.A, {
                 user: t,
@@ -75,7 +75,7 @@ function g(e) {
                     })
                 })]
             }), (0, i.jsx)(o.P7L, {
-                checked: _,
+                checked: p,
                 disabled: f
             })]
         })

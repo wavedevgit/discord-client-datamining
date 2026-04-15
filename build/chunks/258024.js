@@ -15,8 +15,8 @@ var i = n(64700),
     m = n(863922),
     A = n(72314),
     g = n(661191),
-    p = n(326337),
-    _ = n(371741),
+    _ = n(326337),
+    p = n(371741),
     f = n(420819),
     E = n(381941),
     C = n(652215);
@@ -112,7 +112,7 @@ class I {
                     id: n
                 }
             } = this.props;
-        return null == t ? null : (0, _.Av)(t, n, e)
+        return null == t ? null : (0, p.Av)(t, n, e)
     }
     isScrolledToBottom() {
         let {
@@ -443,7 +443,7 @@ class I {
                 channelId: e.props.channel.id,
                 before: t,
                 after: n,
-                limit: Math.min(C.EMb, 2 * (0, p.h)("scrollManager.loadMore")),
+                limit: Math.min(C.EMb, 2 * (0, _.h)("scrollManager.loadMore")),
                 truncate: !0
             })
         }
@@ -469,7 +469,7 @@ class I {
                 messages: t,
                 channel: n
             } = this.props;
-        if (t.hasMoreAfter) o.A.jumpToPresent(n.id, (0, p.h)("scrollManager.jumpToPresent")), (0, h.uh)(n.getGuildId() ?? C.ME, n.id);
+        if (t.hasMoreAfter) o.A.jumpToPresent(n.id, (0, _.h)("scrollManager.jumpToPresent")), (0, h.uh)(n.getGuildId() ?? C.ME, n.id);
         else this.scrollTo(Number.MAX_SAFE_INTEGER, e, () => {
             this.jumping = !1, this.handleScroll()
         })

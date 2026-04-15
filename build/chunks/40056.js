@@ -1,6 +1,6 @@
 /** chunk id: 40056 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => _,
+    Ay: () => p,
     e9: () => A,
     qd: () => m
 });
@@ -55,13 +55,13 @@ let m = {
             share_application_id: l
         })
     }, 2e3),
-    p = l.memo(function(e) {
+    _ = l.memo(function(e) {
         let {
             streamKey: t,
             minZoom: n = 1,
             maxZoom: o = 5,
             children: c
-        } = e, [d, u] = l.useState(n), [h, p] = l.useState(!1), [_, f] = l.useState(!1), [E, C] = l.useState(!1), [x, S] = l.useState(!1), [I, T] = l.useState(16 / 9), [v, N] = l.useState({
+        } = e, [d, u] = l.useState(n), [h, _] = l.useState(!1), [p, f] = l.useState(!1), [E, C] = l.useState(!1), [x, S] = l.useState(!1), [I, T] = l.useState(16 / 9), [v, N] = l.useState({
             x: 0,
             y: 0
         }), y = l.useRef(null), b = l.useRef(null);
@@ -83,13 +83,13 @@ let m = {
             R = l.useCallback((e, i, l) => {
                 let r = (0, a.clamp)(e, n, o);
                 if (null == i || r === d) return;
-                p(!0);
+                _(!0);
                 let c = r / d;
                 N(e => j({
                     x: (e.x - i.x) * c + i.x,
                     y: (e.y - i.y) * c + i.y
                 }, r)), u(r), g(r, l, t), null == b.current && (b.current = new s.Ep), b.current.start(2e3, () => {
-                    p(!1)
+                    _(!1)
                 })
             }, [j, o, n, t, d]),
             M = l.useMemo(() => ({
@@ -99,8 +99,8 @@ let m = {
                 maxZoom: o,
                 setZoomLevel: u,
                 isZooming: h,
-                setIsZooming: p,
-                isDragging: _,
+                setIsZooming: _,
+                isDragging: p,
                 setIsDragging: f,
                 isWheeling: E,
                 setIsWheeling: C,
@@ -113,15 +113,15 @@ let m = {
                 setPanOffset: N,
                 wrapperRef: y,
                 clampPanOffset: j
-            }), [j, R, _, x, E, h, o, n, v, I, d]);
+            }), [j, R, p, x, E, h, o, n, v, I, d]);
         return (0, i.jsx)(A.Provider, {
             value: M,
             children: c
         })
     });
 
-function _(e) {
-    return e.enableZoom ? (0, i.jsx)(p, {
+function p(e) {
+    return e.enableZoom ? (0, i.jsx)(_, {
         ...e
     }) : e.children
 }

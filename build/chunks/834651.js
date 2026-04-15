@@ -1,6 +1,6 @@
 /** chunk id: 834651 params = (module,exports,require) **/
 n.d(t, {
-    j: () => p
+    j: () => _
 });
 var i = n(627968);
 n(64700);
@@ -17,14 +17,14 @@ var l = n(311907),
     A = n(985018),
     g = n(597204);
 
-function p(e) {
+function _(e) {
     let {
         guild: t,
         disabledUntil: n
-    } = e, [p, _] = (0, u.n)(t.id), f = (0, l.bG)([c.Ay, o.default], () => c.Ay.getMember(t.id, o.default.getId()), [t.id]);
+    } = e, [_, p] = (0, u.n)(t.id), f = (0, l.bG)([c.Ay, o.default], () => c.Ay.getMember(t.id, o.default.getId()), [t.id]);
     return (0, d.X)(f), (0, i.jsxs)("div", {
-        children: [p ? (0, i.jsx)(h.A, {
-            onClose: () => _(t.id),
+        children: [_ ? (0, i.jsx)(h.A, {
+            onClose: () => p(t.id),
             guildName: t.name
         }) : null, (0, i.jsx)(r._, {
             bannerIcon: (0, i.jsx)(a.gQi, {

@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(765671),
     A = n(304072),
     g = n(390395),
-    p = n(659195),
-    _ = n(505527),
+    _ = n(659195),
+    p = n(505527),
     f = n(467073),
     E = n(960538),
     C = n(898280),
@@ -151,7 +151,7 @@ function V(e) {
                         isLurking: X,
                         isPendingMember: Q,
                         emoji: en,
-                        type: _.v.NORMAL,
+                        type: p.v.NORMAL,
                         hideCount: !0,
                         count: 0,
                         me: !1,
@@ -229,7 +229,7 @@ function V(e) {
                     })
                 })]
             })]
-        }), ei && (0, i.jsx)(p.A, {
+        }), ei && (0, i.jsx)(_.A, {
             threadId: t
         }), (0, i.jsx)(C.A, {
             channel: Y,

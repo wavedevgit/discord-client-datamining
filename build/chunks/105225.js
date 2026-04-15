@@ -49,8 +49,8 @@ var i = n(627968),
     K = n(710801),
     Y = n(496841),
     z = n(383831),
-    X = n(905216),
-    q = n(577062),
+    q = n(905216),
+    X = n(577062),
     $ = n(533978),
     J = n(958449),
     Q = n(970636),
@@ -294,7 +294,7 @@ let eN = l.memo(function(e) {
                                 isSelfStream: !1
                             });
                         case "CALL":
-                            return (0, i.jsx)(X.A, {
+                            return (0, i.jsx)(q.A, {
                                 ...d,
                                 color: "disconnect",
                                 onClick: () => {
@@ -395,7 +395,7 @@ let eb = function(e) {
     }), Y = (0, w.i)({
         location: "center_control_tray"
     }), z = (0, c.bG)([g.Ay], () => g.Ay.getCurrentEmbeddedActivity()), {
-        reachedLimit: X,
+        reachedLimit: q,
         limit: J
     } = (0, es.A)(t), {
         analyticsLocations: Z
@@ -447,7 +447,7 @@ let eb = function(e) {
                             } = e, {
                                 isShown: l
                             } = t;
-                            return (0, i.jsx)(q.A, {
+                            return (0, i.jsx)(X.A, {
                                 ref: eo,
                                 centerButton: !0,
                                 onPopoutClick: k ? null : n,
@@ -492,7 +492,7 @@ let eb = function(e) {
                                 cameraUnavailable: I,
                                 onChange: ex,
                                 onCameraUnavailable: eh.A,
-                                channelLimitReached: X,
+                                channelLimitReached: q,
                                 channelLimit: J,
                                 popoutOpen: l,
                                 onPopoutClick: n

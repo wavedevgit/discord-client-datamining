@@ -23,8 +23,8 @@ let A = () => n.e("15423").then(n.t.bind(n, 155147, 19)).then(e => {
         let {
             channel: t,
             isLastItem: n
-        } = e, l = (0, a.bG)([r.A], () => r.A.useReducedMotion), g = (0, a.bG)([d.A], () => d.A.can(u.xBc.SEND_MESSAGES_IN_THREADS, t)), p = (0, o.s5)(t), _ = (0, a.bG)([c.default], () => c.default.getId());
-        return n ? g && !p && t.ownerId !== _ ? (0, i.jsxs)("div", {
+        } = e, l = (0, a.bG)([r.A], () => r.A.useReducedMotion), g = (0, a.bG)([d.A], () => d.A.can(u.xBc.SEND_MESSAGES_IN_THREADS, t)), _ = (0, o.s5)(t), p = (0, a.bG)([c.default], () => c.default.getId());
+        return n ? g && !_ && t.ownerId !== p ? (0, i.jsxs)("div", {
             className: m.aP,
             children: [(0, i.jsx)(s.akl, {
                 importData: A,

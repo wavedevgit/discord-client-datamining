@@ -1,11 +1,11 @@
 /** chunk id: 133134 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => g
 });
-var a = n(627968),
-    l = n(64700),
-    i = n(311907),
-    r = n(49229),
+var l = n(627968),
+    a = n(64700),
+    r = n(311907),
+    i = n(49229),
     s = n(58149),
     d = n(662502),
     o = n(632738),
@@ -14,30 +14,30 @@ var a = n(627968),
     _ = n(562153),
     m = n(652215),
     p = n(985018);
-let h = e => {
+let g = e => {
     let {
         user: t,
         channelId: n,
-        reportId: h,
-        reportType: x
-    } = e, g = (0, i.bG)([u.A], () => u.A.isBlocked(t.id), [t.id]), A = (0, i.bG)([c.A], () => c.A.getChannel(n), [n]), v = l.useMemo(() => _.Ay.getName(A?.guild_id, A?.id, t), [A, t]), b = l.useCallback(() => {
+        reportId: g,
+        reportType: h
+    } = e, x = (0, r.bG)([u.A], () => u.A.isBlocked(t.id), [t.id]), A = (0, r.bG)([c.A], () => c.A.getChannel(n), [n]), v = a.useMemo(() => _.Ay.getName(A?.guild_id, A?.id, t), [A, t]), f = a.useCallback(() => {
         s.Ay.trackWithMetadata(m.HAw.IAR_BLOCK_USER_BUTTON_CLICKED, {
             other_user_id: t.id,
-            report_id: h
-        }), r.A.blockUser(t.id, {
+            report_id: g
+        }), i.A.blockUser(t.id, {
             location: "ReportMenuBlockUser-iOS"
         }).then(() => {
             d.A.showBlockSuccessToast(t.id, n)
         })
-    }, [t, h, n]);
-    return (0, a.jsx)(o.PQ, {
+    }, [t, g, n]);
+    return (0, l.jsx)(o.PQ, {
         title: p.intl.formatToPlainString(p.t["Q1o/f3"], {
             username: v
         }),
         description: p.intl.string(p.t.G08MKu),
-        buttonText: g ? p.intl.string(p.t.ot2tSp) : p.intl.string(p.t["l+7PZY"]),
-        buttonDisabled: g,
-        onButtonPress: b,
-        buttonVariant: "application" === x.name && g ? "secondary" : "critical-primary"
+        buttonText: x ? p.intl.string(p.t.ot2tSp) : p.intl.string(p.t["l+7PZY"]),
+        buttonDisabled: x,
+        onButtonPress: f,
+        buttonVariant: "application" === h.name && x ? "secondary" : "critical-primary"
     })
 }

@@ -276,15 +276,15 @@ let B = [],
                     searchQuery: b.A.getSearchResultsQuery(r)
                 })
             }, [n, t, a, u]),
-            X = l.useCallback(e => {
+            q = l.useCallback(e => {
                 (0, y.kq)({
                     searchContext: t,
                     searchRequestAnalyticsId: a,
                     newPageIndex: e
                 }), N(e)
             }, [N, t, a]),
-            q = Math.floor(n.offset / L.T_y),
-            $ = W && q >= F,
+            X = Math.floor(n.offset / L.T_y),
+            $ = W && X >= F,
             J = F + 1,
             Q = (0, r.yK)([b.A], () => {
                 if (0 !== n.offset) return B;
@@ -341,7 +341,7 @@ let B = [],
                     renderEmbeds: s,
                     onClick: z,
                     onScrollTo: V,
-                    onPageChange: X,
+                    onPageChange: q,
                     paginationTotalCount: W ? H : void 0,
                     renderPageWrapper: K,
                     onBlockedResultsClick: R,

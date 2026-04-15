@@ -1,6 +1,6 @@
 /** chunk id: 659195 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var i = n(627968),
     l = n(64700),
@@ -15,20 +15,20 @@ var i = n(627968),
     m = n(209100),
     A = n(652215),
     g = n(985018),
-    p = n(691292);
+    _ = n(691292);
 
-function _(e) {
+function p(e) {
     let {
         threadId: t
-    } = e, n = (0, a.bG)([o.A], () => o.A.getChannel(t)), _ = (0, a.bG)([o.A], () => o.A.getChannel(n?.parent_id)), f = l.useCallback(() => {
-        null != n && null != _ && ((0, r.zV)(A.HAw.MEDIA_POST_SHARE_PROMPT_CLICKED, {
+    } = e, n = (0, a.bG)([o.A], () => o.A.getChannel(t)), p = (0, a.bG)([o.A], () => o.A.getChannel(n?.parent_id)), f = l.useCallback(() => {
+        null != n && null != p && ((0, r.zV)(A.HAw.MEDIA_POST_SHARE_PROMPT_CLICKED, {
             media_post_id: n.id
-        }), (0, d.C)((0, c.af)(n, _)))
-    }, [n, _]);
+        }), (0, d.C)((0, c.af)(n, p)))
+    }, [n, p]);
     return (0, i.jsxs)("div", {
-        className: p.BQ,
+        className: _.BQ,
         children: [(0, i.jsx)(m.A, {}), (0, i.jsxs)("div", {
-            className: p.BB,
+            className: _.BB,
             children: [(0, i.jsx)(s.Text, {
                 variant: "text-md/semibold",
                 color: "text-strong",
@@ -48,7 +48,7 @@ function _(e) {
                 onClick: f
             })]
         }), (0, i.jsx)(s.DUT, {
-            className: p.b,
+            className: _.b,
             onClick: () => {
                 (0, h.sF)(t)
             },

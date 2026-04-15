@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(435183),
     A = n(155718),
     g = n(47167),
-    p = n(685374),
-    _ = n(569989),
+    _ = n(685374),
+    p = n(569989),
     f = n(997509),
     E = n(46054),
     C = n(34457),
@@ -140,7 +140,7 @@ function O(e) {
                     onClick: () => {
                         f.A.open(t.guild_id, j.BEX.MEMBERS), f.A.selectRole(e.id)
                     }
-                }, e.id) : (0, i.jsx)(_.A, {
+                }, e.id) : (0, i.jsx)(p.A, {
                     className: s()(M.JC, {
                         [M.HV]: n === w.length - 1
                     }),
@@ -150,7 +150,7 @@ function O(e) {
                 }, e.id)
             })]
         }), n ? (0, i.jsx)(h.aFV, {
-            renderModal: e => (0, i.jsx)(p.default, {
+            renderModal: e => (0, i.jsx)(_.default, {
                 ...e,
                 onClose: () => (F(), e.onClose()),
                 channelId: t.id

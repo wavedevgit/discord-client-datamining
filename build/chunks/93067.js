@@ -1,6 +1,6 @@
 /** chunk id: 93067 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var i = n(627968),
     l = n(64700),
@@ -16,12 +16,12 @@ var i = n(627968),
     A = n(985018),
     g = n(361354);
 
-function p(e) {
+function _(e) {
     let {
         errorMessage: t,
         className: n,
         avError: a
-    } = e, p = l.useRef(null), _ = "", {
+    } = e, _ = l.useRef(null), p = "", {
         text: f,
         node: E
     } = function(e) {
@@ -45,7 +45,7 @@ function p(e) {
             }) : l
         }
     }(a);
-    _ = null != f ? `${t} ${f}` : t;
+    p = null != f ? `${t} ${f}` : t;
     let [C] = l.useState(new r.Ep), [x, S] = l.useState(!1), [I, T] = l.useState(!1), v = l.useCallback(() => {
         C.start(250, () => {
             S(!1)
@@ -71,20 +71,20 @@ function p(e) {
                 })]
             })
         }),
-        targetElementRef: p,
+        targetElementRef: _,
         shouldShow: I || x,
         position: "bottom",
         children: e => (0, i.jsx)(h.A, {
             children: (0, i.jsx)(o.vN3, {
                 children: (0, i.jsx)("div", {
-                    ref: p,
+                    ref: _,
                     tabIndex: 0,
                     onMouseEnter: N,
                     onMouseLeave: v,
                     onFocus: y,
                     onBlur: b,
                     className: s()(n, g.zr),
-                    "aria-label": _,
+                    "aria-label": p,
                     ...e,
                     children: (0, i.jsx)(o.EpV, {
                         size: "custom",

@@ -30,12 +30,12 @@ function o(e) {
             value: A(e.value)
         })) : e.dataPoints;
     c.setPoints(g), n?.updateEndDate();
-    let p = {
+    let _ = {
         width: e.width,
         height: e.height
     };
     return (0, i.jsx)("canvas", {
-        style: p,
+        style: _,
         width: e.width,
         height: e.height,
         ref: t

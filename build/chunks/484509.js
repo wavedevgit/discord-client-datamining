@@ -1,23 +1,23 @@
 /** chunk id: 484509 params = (module,exports,require) **/
-n.d(l, {
+l.d(n, {
     A: () => d
 });
-var t = n(64700),
-    i = n(311907),
-    s = n(573648),
-    a = n(681819),
-    r = n(622543);
+var i = l(64700),
+    t = l(311907),
+    s = l(573648),
+    a = l(681819),
+    r = l(622543);
 let o = [];
 
 function d(e) {
-    let l = (0, a.dq)({
+    let n = (0, a.dq)({
             forUserProfile: !0
         }),
-        n = (0, i.bG)([r.A], () => r.A.getUserProfile(e));
-    return (0, t.useMemo)(() => n?.connectedAccounts == null ? o : n.connectedAccounts.filter(e => {
+        l = (0, t.bG)([r.A], () => r.A.getUserProfile(e));
+    return (0, i.useMemo)(() => l?.connectedAccounts == null ? o : l.connectedAccounts.filter(e => {
         let {
-            type: n
-        } = e, t = s.A.get(n);
-        return null != t && s.A.isSupported(n) && l(t)
-    }), [n?.connectedAccounts, l])
+            type: l
+        } = e, i = s.A.get(l);
+        return null != i && s.A.isSupported(l) && n(i)
+    }), [l?.connectedAccounts, n])
 }

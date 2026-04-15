@@ -20,27 +20,27 @@ function m(e) {
         snapshot: m
     } = e, {
         moderatorReport: A
-    } = m, g = A?.reported_user_id, p = (0, a.bG)([r.default], () => null != g ? r.default.getUser(g) : null), _ = (0, a.bG)([s.A], () => s.A.getGuild(t.guild_id));
+    } = m, g = A?.reported_user_id, _ = (0, a.bG)([r.default], () => null != g ? r.default.getUser(g) : null), p = (0, a.bG)([s.A], () => s.A.getGuild(t.guild_id));
     (0, o.ml)(n);
     let f = (0, c.A)({
             channel: t,
-            user: p,
-            guild: _
+            user: _,
+            guild: p
         }),
         E = (0, u.A)({
             channel: t,
-            user: p,
-            guild: _
+            user: _,
+            guild: p
         }),
         C = [(0, d.A)({
             channel: t,
             message: n,
-            user: p,
-            guild: _
+            user: _,
+            guild: p
         }), f, E, (0, h.A)({
             channel: t,
-            user: p,
-            guild: _
+            user: _,
+            guild: p
         })].filter(e => null != e);
     return t.isModeratorReportChannel() && 0 !== C.length ? (0, i.jsx)(i.Fragment, {
         children: C.map((e, t) => (0, i.jsx)(l.Fragment, {

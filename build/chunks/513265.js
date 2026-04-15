@@ -1,24 +1,24 @@
 /** chunk id: 513265 params = (module,exports,require) **/
-n.d(l, {
+l.d(n, {
     A: () => h
 });
-var t = n(627968),
-    i = n(64700),
-    s = n(503698),
-    a = n.n(s),
-    r = n(407045),
-    o = n(311907),
-    d = n(397927),
-    c = n(775602),
-    u = n(606758),
-    m = n(518477),
-    p = n(985018),
-    x = n(439510),
-    A = n(886981);
+var i = l(627968),
+    t = l(64700),
+    s = l(503698),
+    a = l.n(s),
+    r = l(407045),
+    o = l(311907),
+    d = l(397927),
+    c = l(775602),
+    u = l(606758),
+    m = l(518477),
+    p = l(985018),
+    x = l(439510),
+    A = l(886981);
 let g = {
         [m.jM.WIDGET_ADDED]: {
             message: p.intl.string(p.t.fFP1Uy),
-            icon: (0, t.jsx)(d.A9s, {
+            icon: (0, i.jsx)(d.A9s, {
                 size: "sm",
                 color: d.LU0.colors.STATUS_POSITIVE.css
             }),
@@ -26,7 +26,7 @@ let g = {
         },
         [m.jM.WIDGET_REMOVED]: {
             message: p.intl.string(p.t.zzsK7h),
-            icon: (0, t.jsx)(d.A9s, {
+            icon: (0, i.jsx)(d.A9s, {
                 size: "sm",
                 color: d.LU0.colors.STATUS_POSITIVE.css
             }),
@@ -34,7 +34,7 @@ let g = {
         },
         [m.jM.PROFILE_SAVE_GENERIC_FAILURE]: {
             message: p.intl.string(p.t["84MExs"]),
-            icon: (0, t.jsx)(d.d$L, {
+            icon: (0, i.jsx)(d.d$L, {
                 size: "sm",
                 color: d.LU0.colors.ICON_FEEDBACK_CRITICAL
             }),
@@ -43,7 +43,7 @@ let g = {
         },
         [m.jM.SOMETHING_WENT_WRONG]: {
             message: p.intl.string(p.t.F8FvUy),
-            icon: (0, t.jsx)(d.d$L, {
+            icon: (0, i.jsx)(d.d$L, {
                 size: "sm",
                 color: d.LU0.colors.ICON_FEEDBACK_CRITICAL
             }),
@@ -53,31 +53,31 @@ let g = {
     },
     f = e => {
         let {
-            message: l,
-            icon: n,
-            type: i
+            message: n,
+            icon: l,
+            type: t
         } = e;
-        return (0, t.jsxs)("div", {
+        return (0, i.jsxs)("div", {
             className: a()(A.oR, x.oR),
-            "data-type": i,
-            children: [(0, t.jsx)("div", {
+            "data-type": t,
+            children: [(0, i.jsx)("div", {
                 className: x.RC,
-                children: n
-            }), (0, t.jsx)(d.Text, {
+                children: l
+            }), (0, i.jsx)(d.Text, {
                 color: "text-strong",
                 variant: "text-sm/semibold",
-                children: l
+                children: n
             })]
         })
     },
     h = e => {
         let {
-            className: l
-        } = e, n = (0, u.fu)(), s = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, p] = i.useState(!1), [A, h] = i.useState(null);
-        i.useEffect(() => {
-            null !== n ? (p(!0), h(g[n]), d.ORC.announce(g[n].message)) : p(!1)
-        }, [n]);
-        let j = (0, d.pnh)(m, {
+            className: n
+        } = e, l = (0, u.fu)(), s = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, p] = t.useState(!1), [A, h] = t.useState(null);
+        t.useEffect(() => {
+            null !== l ? (p(!0), h(g[l]), d.ORC.announce(g[l].message)) : p(!1)
+        }, [l]);
+        let v = (0, d.pnh)(m, {
             from: {
                 transform: s ? "translateY(0)" : "translateY(-12px)",
                 opacity: 0
@@ -97,18 +97,18 @@ let g = {
                 clamp: !0
             }
         }, "animate-always");
-        return i.useEffect(() => () => (0, u.XA)(null), []), i.useEffect(() => {
+        return t.useEffect(() => () => (0, u.XA)(null), []), t.useEffect(() => {
             if (m) {
                 let e = setTimeout(() => {
                     (0, u.XA)(null)
                 }, 2e3);
                 return () => clearTimeout(e)
             }
-        }, [m]), (0, t.jsx)(t.Fragment, {
-            children: j((e, n) => n && null !== A && (0, t.jsx)(r.animated.div, {
-                className: a()(l, x.Jt),
+        }, [m]), (0, i.jsx)(i.Fragment, {
+            children: v((e, l) => l && null !== A && (0, i.jsx)(r.animated.div, {
+                className: a()(n, x.Jt),
                 style: e,
-                children: (0, t.jsx)(f, {
+                children: (0, i.jsx)(f, {
                     ...A
                 })
             }))

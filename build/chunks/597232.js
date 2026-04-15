@@ -32,7 +32,7 @@ function g(e) {
     })
 }
 
-function p(e) {
+function _(e) {
     let {
         userId: t,
         showingBanner: n
@@ -51,7 +51,7 @@ function p(e) {
     })
 }
 
-function _(e) {
+function p(e) {
     let {
         userId: t
     } = e;
@@ -86,11 +86,11 @@ function E(e) {
         channel: t,
         user: n,
         showingBanner: r
-    } = e, p = (0, l.bG)([c.A], () => c.A.getOriginApplicationId(n.id), [n.id]), {
-        acceptFriendRequest: _
+    } = e, _ = (0, l.bG)([c.A], () => c.A.getOriginApplicationId(n.id), [n.id]), {
+        acceptFriendRequest: p
     } = (0, o.I)({
         userId: n.id,
-        applicationId: p,
+        applicationId: _,
         isGameRelationship: !1,
         location: h.liQ.DM_CHANNEL
     });
@@ -106,7 +106,7 @@ function E(e) {
             size: "sm",
             children: [(0, i.jsx)(a.Button, {
                 variant: "primary",
-                onClick: _,
+                onClick: p,
                 text: m.intl.string(m.t["+WbSn5"])
             }), (0, i.jsx)(a.Button, {
                 variant: "secondary",
@@ -140,13 +140,13 @@ function C(e) {
     });
     switch (o) {
         case h.eA$.NONE:
-            s.bot || (t = (0, i.jsx)(p, {
+            s.bot || (t = (0, i.jsx)(_, {
                 userId: s.id,
                 showingBanner: r
             }));
             break;
         case h.eA$.FRIEND:
-            t = (0, i.jsx)(_, {
+            t = (0, i.jsx)(p, {
                 userId: s.id
             });
             break;

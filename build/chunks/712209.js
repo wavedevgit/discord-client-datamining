@@ -1,6 +1,6 @@
 /** chunk id: 712209 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => q,
+    Ay: () => X,
     mJ: () => V,
     sz: () => H,
     xB: () => B
@@ -357,7 +357,7 @@ function Y(e, t, n, i) {
             if (L.Ay.getMentionCount(t) > 0) return L.Ay.getIsMentionLowImportance(t) ? 3 : 2;
             if (null != n) {
                 let e = P.default.extractTimestamp(n);
-                if (Date.now() - e > X) return 8;
+                if (Date.now() - e > q) return 8;
                 if (Date.now() - e > z) return 6
             }
             if (i.isThread()) {
@@ -384,9 +384,9 @@ function Y(e, t, n, i) {
     })
 }
 let z = 2 * U.A.Millis.DAY,
-    X = 10 * U.A.Millis.DAY;
+    q = 10 * U.A.Millis.DAY;
 
-function q(e) {
+function X(e) {
     let [t, n] = s.useState(() => new F(K(), e)), [i, l] = s.useState(!1), a = s.useRef(Date.now()), [r, o] = s.useState(() => K());
     s.useEffect(() => {
         let e = e => o(e);

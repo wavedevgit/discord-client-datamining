@@ -4,8 +4,8 @@ n.d(t, {
     UF: () => d,
     bG: () => p
 });
-var i = n(311907),
-    a = n(652896),
+var a = n(311907),
+    i = n(652896),
     l = n(961350),
     s = n(383501),
     r = n(707890),
@@ -16,10 +16,10 @@ function d(e) {
     let {
         userId: t,
         channelId: n
-    } = e, a = (0, o.k)({
+    } = e, i = (0, o.k)({
         channelId: n
     });
-    return (0, i.bG)([r.A, l.default, s.A], () => null != t && a && s.A.isUserConnected(t) && l.default.getId() !== t && r.A.isUserVerified(t), [a, t])
+    return (0, a.bG)([r.A, l.default, s.A], () => null != t && i && s.A.isUserConnected(t) && l.default.getId() !== t && r.A.isUserVerified(t), [i, t])
 }
 
 function u(e) {
@@ -29,12 +29,12 @@ function u(e) {
     } = e, s = (0, o.k)({
         channelId: n
     }), d = (0, c.w)(t);
-    return (0, i.bG)([r.A, l.default], () => {
+    return (0, a.bG)([r.A, l.default], () => {
         if (!s || d || null == t) return !1;
         let e = l.default.getId(),
             {
                 ownerId: n
-            } = (0, a.Iy)(t);
+            } = (0, i.Iy)(t);
         return n !== e && r.A.isStreamVerified(t)
     }, [d, s, t])
 }
@@ -44,6 +44,6 @@ function p(e) {
         channelId: t
     } = e, n = (0, o.k)({
         channelId: t
-    }), a = (0, c.c)();
-    return (0, i.bG)([r.A], () => !!n && !a && r.A.isCallVerified(), [a, n])
+    }), i = (0, c.c)();
+    return (0, a.bG)([r.A], () => !!n && !i && r.A.isCallVerified(), [i, n])
 }

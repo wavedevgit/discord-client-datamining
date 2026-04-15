@@ -47,7 +47,7 @@ let N = e => {
         }), [V, H] = l.useState({
             x: 0,
             y: 0
-        }), [F, W] = l.useState(!1), K = l.useRef(null), [Y, z] = l.useState(null), X = (0, c.w)(e => {
+        }), [F, W] = l.useState(!1), K = l.useRef(null), [Y, z] = l.useState(null), q = (0, c.w)(e => {
             let {
                 contentRect: t,
                 target: n
@@ -64,9 +64,9 @@ let N = e => {
                     y: e.top - i.top
                 })
             }
-        }), q = l.useCallback(e => {
+        }), X = l.useCallback(e => {
             let t = Math.max(e, y),
-                n = X.current?.getBoundingClientRect();
+                n = q.current?.getBoundingClientRect();
             if (null == n) return;
             let i = {
                     x: 1156,
@@ -84,12 +84,12 @@ let N = e => {
                 x: d,
                 y: c
             })
-        }, [X, y]);
+        }, [q, y]);
         l.useEffect(() => {
-            q(O)
-        }, [O, q]);
+            X(O)
+        }, [O, X]);
         let $ = l.useCallback(e => {
-            let t = X.current?.getBoundingClientRect();
+            let t = q.current?.getBoundingClientRect();
             if (null == t) return;
             let n = t.height / R,
                 i = t.width / R,
@@ -102,20 +102,20 @@ let N = e => {
                 r = l.y - n < -1536,
                 o = l.x - i < -2180;
             r || s || a || o || D(e)
-        }, [X, R]);
+        }, [q, R]);
         return (0, i.jsx)(o.vN3, {
             children: (0, i.jsxs)("div", {
-                ref: X,
+                ref: q,
                 className: a()(C.km, s),
                 onClick: () => {
                     k(0)
                 },
                 onMouseDown: () => G(Date.now()),
                 onMouseUp: e => {
-                    if (null != X.current) {
+                    if (null != q.current) {
                         if (P < 2) {
                             let n = Date.now(),
-                                i = X.current.getBoundingClientRect(),
+                                i = q.current.getBoundingClientRect(),
                                 l = {
                                     x: (e.pageX - i.x - M.x) / R,
                                     y: (e.pageY - i.y - M.y) / R
@@ -190,7 +190,7 @@ let N = e => {
                             icon: o.V0_,
                             disabled: n,
                             onClick: e => {
-                                e.preventDefault(), e.stopPropagation(), q(R - .05)
+                                e.preventDefault(), e.stopPropagation(), X(R - .05)
                             }
                         }), (0, i.jsx)(o.K0, {
                             variant: "icon-only",
@@ -198,7 +198,7 @@ let N = e => {
                             icon: o.r1u,
                             disabled: n,
                             onClick: e => {
-                                e.preventDefault(), e.stopPropagation(), q(R + .05)
+                                e.preventDefault(), e.stopPropagation(), X(R + .05)
                             }
                         })]
                     })]

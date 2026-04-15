@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(544231),
     A = n(349435),
     g = n(665909),
-    p = n(576045),
-    _ = n(327337),
+    _ = n(576045),
+    p = n(327337),
     f = n(652215),
     E = n(985018);
 
@@ -65,9 +65,9 @@ function x(e) {
         isBlocked: h.A.isBlocked(S)
     }), [S]), T = l.useCallback(() => {
         (0, m.xi)(t, [x])
-    }, [t, x]), v = (0, _.eT)(), N = l.useCallback(e => () => {
+    }, [t, x]), v = (0, p.eT)(), N = l.useCallback(e => () => {
         o.A.blockUser(S, {
-            location: _.Rx
+            location: p.Rx
         }).then(() => {
             T()
         }), (0, g._$)({
@@ -150,7 +150,7 @@ function x(e) {
                 })
             })
         };
-    return (0, i.jsx)(p.N, {
+    return (0, i.jsx)(_.N, {
         channelId: t,
         warningId: x,
         senderId: S,

@@ -20,7 +20,7 @@ function A(e) {
         scheduledMessage: t,
         transitionState: n,
         onClose: a
-    } = e, A = s()(t.sendAtTimestamp.substring(0, 200)), [g, p] = l.useState(A), [_, f] = l.useState(!1), E = async () => {
+    } = e, A = s()(t.sendAtTimestamp.substring(0, 200)), [g, _] = l.useState(A), [p, f] = l.useState(!1), E = async () => {
         f(!0);
         try {
             await (0, c.Eg)(t.scheduledMessageId, g.toISOString()), (0, u.kb)(), (0, o.OoC)(m)
@@ -43,11 +43,11 @@ function A(e) {
             variant: "primary",
             text: h.intl.string(h.t.VZANAD),
             onClick: E,
-            loading: _
+            loading: p
         }],
         children: (0, i.jsx)(d.A, {
             defaultValue: A,
-            onChange: p
+            onChange: _
         })
     })
 }

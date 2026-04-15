@@ -15,8 +15,8 @@ var i = n(311907),
     m = n(652215);
 let A = new Map,
     g = new Map,
-    p = !1,
-    _ = null;
+    _ = !1,
+    p = null;
 
 function f() {
     return c.A.getAllActiveStreamKeys().reduce((e, t) => {
@@ -35,8 +35,8 @@ function E() {
         if (t !== i && !0 !== A.get(i)) {
             n = !1;
             break
-        } let i = n !== p;
-    return p = n, i
+        } let i = n !== _;
+    return _ = n, i
 }
 
 function C(e) {
@@ -60,7 +60,7 @@ function C(e) {
 }
 
 function x() {
-    A.clear(), g.clear(), p = !1
+    A.clear(), g.clear(), _ = !1
 }
 class S extends i.Ay.Store {
     static displayName = "SecureFramesVerifiedStore";
@@ -68,7 +68,7 @@ class S extends i.Ay.Store {
         this.waitFor(r.default, o.A, c.A, u.A, h.A)
     }
     isCallVerified() {
-        return p
+        return _
     }
     isStreamVerified(e) {
         return g.get(e)
@@ -83,8 +83,8 @@ let I = new S(a.h, {
         let {
             channelId: t
         } = e;
-        if (t === _) return !1;
-        _ = t, x()
+        if (t === p) return !1;
+        p = t, x()
     },
     RTC_CONNECTION_STATE: function(e) {
         let {

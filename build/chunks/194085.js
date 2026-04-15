@@ -22,8 +22,8 @@ let d = l.forwardRef(function(e, t) {
         onTooltipShow: m,
         onTooltipHide: A,
         disabled: g,
-        dangerous: p,
-        separator: _,
+        dangerous: _,
+        separator: p,
         buttonClassName: f,
         children: E,
         ...C
@@ -43,7 +43,7 @@ let d = l.forwardRef(function(e, t) {
                 },
                 "aria-label": l ?? n,
                 disabled: g,
-                dangerous: p,
+                dangerous: _,
                 ...C,
                 children: [null != d ? (0, i.jsx)(d, {
                     className: c.Kk,
@@ -53,7 +53,7 @@ let d = l.forwardRef(function(e, t) {
                     className: s()(c.Kk, c.IO),
                     children: E
                 }) : null]
-            }), _ && (0, i.jsx)(o.wv, {})]
+            }), p && (0, i.jsx)(o.wv, {})]
         })
     })
 });

@@ -19,8 +19,8 @@ function g(e) {
     let {
         onClose: t,
         onConfirm: g,
-        onCancel: p,
-        channel: _,
+        onCancel: _,
+        channel: p,
         analyticsType: f,
         popoutText: E,
         animation: C
@@ -28,15 +28,15 @@ function g(e) {
     l.useEffect(() => {
         d.default.track(u.HAw.OPEN_POPOUT, {
             type: f,
-            ...(0, o.dI)(_)
+            ...(0, o.dI)(p)
         })
-    }, [f, _]);
+    }, [f, p]);
     let x = l.useCallback(() => {
             g?.(), t()
         }, [g, t]),
         S = l.useCallback(() => {
-            p?.(), t()
-        }, [p, t]),
+            _?.(), t()
+        }, [_, t]),
         I = l.useRef(null);
     return l.useEffect(() => {
         let e, t = c.A.theme,

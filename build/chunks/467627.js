@@ -47,8 +47,8 @@ var i = n(627968),
     K = n(987344),
     Y = n(750448),
     z = n(845211),
-    X = n(941604),
-    q = n(246884),
+    q = n(941604),
+    X = n(246884),
     $ = n(497140),
     J = n(34247),
     Q = n(850729),
@@ -224,10 +224,10 @@ function eh(e) {
             "aria-label": ea.intl.string(ea.t["7hB4kg"]),
             gap: "xs",
             children: o.map((e, t) => s(e, t, o.length))
-        }), d, (0, i.jsx)(ee.A, {}), l ? null : (0, i.jsx)(q.A, {
+        }), d, (0, i.jsx)(ee.A, {}), l ? null : (0, i.jsx)(X.A, {
             disableTooltip: a.length > 0,
             lastTargetNode: o[o.length - 1]
-        }), l ? null : t, n ? null : (0, i.jsx)(X.A, {})]
+        }), l ? null : t, n ? null : (0, i.jsx)(q.A, {})]
     })
 }
 
@@ -247,25 +247,25 @@ function eA(e) {
     } = (0, F.A)(), S = l.useRef(!1), [b] = l.useState(() => new m.Ep), y = l.useRef(null), R = l.useRef(null), {
         ref: j,
         ...G
-    } = (0, c.$y)(), P = (0, f.R7z)(), [w, B] = l.useState(!1), z = (0, f.rdh)(p.A.modules.guildbar.AVATAR_SIZE), X = (0, f.rdh)(p.A.space.SPACE_XS), q = (0, v.A)("GuildsBar"), {
+    } = (0, c.$y)(), P = (0, f.R7z)(), [w, B] = l.useState(!1), z = (0, f.rdh)(p.A.modules.guildbar.AVATAR_SIZE), q = (0, f.rdh)(p.A.space.SPACE_XS), X = (0, v.A)("GuildsBar"), {
         pathname: $
     } = (0, d.zy)(), {
         entrypoint: Q
     } = (0, L.X8)({
         location: "GuildsBar"
-    }), ee = +!!q + +(Q === L.RK.SERVER_RAIL_TOP), ei = l.useMemo(() => {
-        let e, t, n = (e = z + X, {
+    }), ee = +!!X + +(Q === L.RK.SERVER_RAIL_TOP), ei = l.useMemo(() => {
+        let e, t, n = (e = z + q, {
             iconSize: z,
             iconTotalSize: e,
             badgeVisibleBuffer: e - 16,
-            separatorSize: t = 2 + X,
+            separatorSize: t = 2 + q,
             heightBeforeGuilds: eo + t + ee * e,
             bottomInset: 16
         });
         return new ec(o, B, es.tEg, () => {
             y.current?.calculateState(), R.current?.calculateState()
         }, n)
-    }, [z, X, o, ee]);
+    }, [z, q, o, ee]);
     l.useEffect(() => (ei.setResizeObserver(), () => {
         ei.clearResizeObserver()
     }), [ei]), l.useEffect(() => {

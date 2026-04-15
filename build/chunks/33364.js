@@ -21,8 +21,8 @@ function h(e) {
         isReportable: A,
         isLoaded: g
     } = (0, d.R)(t, n.id, h), {
-        channelId: p
-    } = (0, c.N)(), _ = t.id === p, f = !a.Fr && !_, E = l.useCallback(() => {
+        channelId: _
+    } = (0, c.N)(), p = t.id === _, f = !a.Fr && !p, E = l.useCallback(() => {
         null != m && (0, o.b8)(m, () => {
             r.A.closePrivateChannel(t.id, f)
         })

@@ -15,8 +15,8 @@ var i, l = n(627968),
     m = n(397927),
     A = n(492684),
     g = n(736653),
-    p = n(573648),
-    _ = n(47167),
+    _ = n(573648),
+    p = n(47167),
     f = n(235986),
     E = n(573435),
     C = n(769015),
@@ -70,7 +70,7 @@ function Y(e) {
         activity: t
     });
     if (null == i) return null;
-    let a = p.A.get(i);
+    let a = _.A.get(i);
     return (0, l.jsx)("img", {
         alt: "",
         src: (0, h.qB)(n) ? a.icon.lightSVG : a.icon.darkSVG,
@@ -110,7 +110,7 @@ class J extends a.PureComponent {
         switch (r.type) {
             case H.$pd.STREAMING:
                 t = B.intl.formatToPlainString(B.t.Dzgz4u, {
-                    platform: [H.fg2.TWITCH, H.fg2.YOUTUBE].includes(o.toLowerCase()) ? o : p.A.get(H.fg2.TWITCH).name
+                    platform: [H.fg2.TWITCH, H.fg2.YOUTUBE].includes(o.toLowerCase()) ? o : _.A.get(H.fg2.TWITCH).name
                 });
                 break;
             case H.$pd.LISTENING:
@@ -153,7 +153,7 @@ class J extends a.PureComponent {
             className: V.assets,
             children: (0, l.jsx)("img", {
                 alt: "",
-                src: p.A.get(H.fg2.XBOX).icon.customPNG,
+                src: _.A.get(H.fg2.XBOX).icon.customPNG,
                 className: r()(this.getTypeClass("assetsLargeImage", "Xbox"))
             })
         })
@@ -351,7 +351,7 @@ class J extends a.PureComponent {
                     color: "currentColor"
                 }), (0, l.jsx)(m.Text, {
                     variant: "text-xs/normal",
-                    children: (0, _.m1)(i, j.default, b.A)
+                    children: (0, p.m1)(i, j.default, b.A)
                 })]
             })]
         }) : null
@@ -453,12 +453,12 @@ class J extends a.PureComponent {
         }
         let A = this.renderName(c),
             g = this.renderDetails(c),
-            p = this.renderState(c, a),
-            _ = this.renderTimePlayed(c),
+            _ = this.renderState(c, a),
+            p = this.renderTimePlayed(c),
             E = this.renderChannelDetails(c),
             C = null != n ? n() : null,
             x = this.renderTimeBar(c),
-            S = ![e, A, g, p, _, x, C].some(e => null != e);
+            S = ![e, A, g, _, p, x, C].some(e => null != e);
         return (0, l.jsxs)("div", {
             className: r()(this.getTypeClass("activity"), i),
             children: [this.renderHeader(S), (0, l.jsx)("div", {
@@ -472,7 +472,7 @@ class J extends a.PureComponent {
                             onClick: null != o ? e => {
                                 o(e), s?.()
                             } : void 0,
-                            children: [A, g, p, _]
+                            children: [A, g, _, p]
                         }), E, u ? null : x, d ? C : null]
                     })]
                 })

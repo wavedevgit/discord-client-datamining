@@ -1,6 +1,6 @@
 /** chunk id: 857341 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var i = n(627968),
     l = n(64700),
@@ -17,14 +17,14 @@ var m = n(985018),
     A = n(97262),
     g = n(804674);
 
-function p(e) {
+function _(e) {
     let {
         channelId: t
-    } = e, n = (0, a.bG)([r.A], () => r.A.getSecureFramesState()?.epochAuthenticator), p = (0, u.z)({
+    } = e, n = (0, a.bG)([r.A], () => r.A.getSecureFramesState()?.epochAuthenticator), _ = (0, u.z)({
         fingerprintBase64: n,
         chunkSize: 5,
         desiredLength: 30
-    }), [_, f] = l.useState(!1), E = l.useMemo(() => p?.join(" "), [p]), C = l.useCallback(() => {
+    }), [p, f] = l.useState(!1), E = l.useMemo(() => _?.join(" "), [_]), C = l.useCallback(() => {
         null != E && (0, o.C)(E, () => {
             f(!0), (0, c.k0)({
                 channelId: t
@@ -46,15 +46,15 @@ function p(e) {
         }), (0, i.jsx)("div", {
             className: g.on,
             children: (0, i.jsx)(h.j, {
-                chunks: p,
+                chunks: _,
                 columns: 3,
                 className: g.lu
             })
-        }), null != p && (0, i.jsxs)(s.DUT, {
+        }), null != _ && (0, i.jsxs)(s.DUT, {
             className: A.n2,
             onClick: C,
             children: [(0, i.jsx)("div", {
-                className: _ ? A.Dx : A.t6,
+                className: p ? A.Dx : A.t6,
                 children: (0, i.jsx)(s.Button, {
                     icon: s.TdU,
                     text: m.intl.string(m.t.OpuAlK),
@@ -63,7 +63,7 @@ function p(e) {
                     fullWidth: !0
                 })
             }), (0, i.jsx)("div", {
-                className: _ ? A.t6 : A.Dx,
+                className: p ? A.t6 : A.Dx,
                 children: (0, i.jsx)(s.Button, {
                     icon: s.yr3,
                     text: m.intl.string(m.t.t5VZ88),

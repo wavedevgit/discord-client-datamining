@@ -22,14 +22,14 @@ function A(e) {
             showingBanner: g
         } = e,
         {
-            channelId: p
+            channelId: _
         } = (0, s.N)(),
-        _ = (0, l.bG)([a.A], () => null != p && a.A.isSpam(p), [p]),
+        p = (0, l.bG)([a.A], () => null != _ && a.A.isSpam(_), [_]),
         f = (0, l.bG)([r.A], () => r.A.getRelationshipType(A.id), [A.id]),
-        E = n.id === p,
+        E = n.id === _,
         C = !0 === A.bot,
         x = m.n;
-    return _ || E ? t = (0, i.jsx)(u.A, {
+    return p || E ? t = (0, i.jsx)(u.A, {
         channel: n,
         user: A
     }) : C ? t = (0, i.jsx)(o.A, {

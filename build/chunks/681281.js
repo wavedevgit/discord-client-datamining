@@ -127,7 +127,7 @@ function B(e) {
         inCall: c,
         isChatOpen: m,
         exitFullScreen: p
-    } = e, g = (0, b.BF)({
+    } = e, g = (0, b.B)({
         location: "channel_call_header_toolbar"
     }), {
         focusedParticipant: f

@@ -47,8 +47,8 @@ var i = n(627968),
     K = n(147036),
     Y = n(557534),
     z = n(68437),
-    X = n(166444),
-    q = n(850457),
+    q = n(166444),
+    X = n(850457),
     $ = n(469178),
     J = n(562991),
     Q = n(588224);
@@ -238,7 +238,7 @@ class ei extends Y.Ay {
             type: R.H.VOICE,
             guildId: e.guild_id,
             closePopout: this.closeGuildVerificationPopout
-        }) : t || n ? null : "history" === l && this.getVoiceStatesCount() > 0 ? (0, i.jsx)(q.A, {
+        }) : t || n ? null : "history" === l && this.getVoiceStatesCount() > 0 ? (0, i.jsx)(X.A, {
             channel: e,
             source: "voice_channel",
             onMouseEnter: this.handleMouseEnter,
@@ -347,7 +347,7 @@ class ei extends Y.Ay {
                     shouldShow: L || "history" === this.state.popoutToShow && !(u || h),
                     children: () => (0, i.jsx)(d.m, {
                         text: this.getTooltipText(),
-                        children: (0, i.jsxs)(X.Ay, {
+                        children: (0, i.jsxs)(q.Ay, {
                             ref: this.channelItemRef,
                             className: en.Ki,
                             iconClassName: a()({

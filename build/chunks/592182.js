@@ -16,8 +16,8 @@ var l = n(503698),
     m = n(352306),
     A = n(829203),
     g = n(267102),
-    p = n(159426),
-    _ = n(25528),
+    _ = n(159426),
+    p = n(25528),
     f = n(655724),
     E = n(82149),
     C = n(657331),
@@ -80,12 +80,12 @@ let B = e => {
             return r()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
         }), z = V === y.O.STREAM_PREVIEW || null != s, Y = (0, T.A)(t), J = Y || z ? h.A.Direction.HORIZONTAL : h.A.Direction.VERTICAL, q = (0, o.bG)([x.A], () => null != A ? x.A.getChannel(A) : null, [A]), {
             enableRequestToStream: $
-        } = p.m.useExperiment({
+        } = _.m.useExperiment({
             guildId: m ?? q?.guild_id,
             location: "UserActivityActions"
         }, {
             autoTrackExposure: !1
-        }), Z = null != q && $ && (0, _.F9)(t), X = (0, N.A)("voice_channel_activity_actions", t?.application_id);
+        }), Z = null != q && $ && (0, p.F9)(t), X = (0, N.A)("voice_channel_activity_actions", t?.application_id);
         if (t?.application_id === G.L8) return t = {
             ...t,
             buttons: [F.intl.string(F.t.E4kW5O)]

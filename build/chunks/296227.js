@@ -2,26 +2,26 @@
 n.d(t, {
     A: () => m
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(503698),
-    a = n.n(i),
+var l = n(627968),
+    i = n(64700),
+    a = n(503698),
+    r = n.n(a),
     s = n(397927),
     o = n(442433),
-    d = n(928658),
-    c = n(985018),
+    c = n(928658),
+    d = n(985018),
     u = n(832493);
 
 function m(e) {
     let {
         widget: t,
         userId: n,
-        className: i,
+        className: a,
         menuItems: m
-    } = e, h = l.useRef(null), x = () => {
-        (0, d.GJ)(n, t)
+    } = e, h = i.useRef(null), p = () => {
+        (0, c.GJ)(n, t)
     };
-    return (0, r.jsx)(s.YNO, {
+    return (0, l.jsx)(s.YNO, {
         targetElementRef: h,
         align: "top",
         position: "right",
@@ -30,19 +30,19 @@ function m(e) {
             let {
                 closePopout: t
             } = e;
-            return (0, r.jsx)(s.W1t, {
+            return (0, l.jsx)(s.W1t, {
                 "data-menu-migrated": !0,
                 navId: "user-profile-widget-context-menu",
                 onClose: () => {
                     (0, o.Z_)(), t()
                 },
                 onSelect: () => {},
-                "aria-label": c.intl.string(c.t.xpSHSk),
-                children: (0, r.jsxs)(s.rXV, {
-                    children: [m, (0, r.jsx)(s.Drp, {
+                "aria-label": d.intl.string(d.t.xpSHSk),
+                children: (0, l.jsxs)(s.rXV, {
+                    children: [m, (0, l.jsx)(s.Drp, {
                         id: "flag-widget",
-                        label: c.intl.string(c.t.D4GvHE),
-                        action: x,
+                        label: d.intl.string(d.t.D4GvHE),
+                        action: p,
                         color: "danger",
                         icon: s.iFK,
                         leadingAccessory: {
@@ -53,12 +53,12 @@ function m(e) {
                 })
             })
         },
-        children: e => (0, r.jsx)(s.DUT, {
+        children: e => (0, l.jsx)(s.DUT, {
             ...e,
             innerRef: h,
-            "aria-label": c.intl.string(c.t.xpSHSk),
-            className: a()(u.x, i),
-            children: (0, r.jsx)(s.jNK, {
+            "aria-label": d.intl.string(d.t.xpSHSk),
+            className: r()(u.x, a),
+            children: (0, l.jsx)(s.jNK, {
                 size: "sm",
                 color: "currentColor"
             })

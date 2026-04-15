@@ -16,8 +16,8 @@ var l = n(311907),
     m = n(844944),
     A = n(513461),
     g = n(123393),
-    p = n(652215),
-    _ = n(985018),
+    _ = n(652215),
+    p = n(985018),
     f = n(130921);
 
 function E(e) {
@@ -35,7 +35,7 @@ function E(e) {
             t = d.A.getGuild(e?.guildId);
         return {
             joinRequest: e,
-            isModmin: null != t && u.A.can(p.xBc.KICK_MEMBERS, t),
+            isModmin: null != t && u.A.can(_.xBc.KICK_MEMBERS, t),
             guildId: t?.id,
             maxMembers: t?.maxMembers
         }
@@ -47,12 +47,12 @@ function E(e) {
     return null != x && x.applicationStatus === A.B5.SUBMITTED && S ? (0, i.jsxs)("div", {
         className: f.U,
         children: [(0, i.jsx)(a.m, {
-            text: _.intl.string(_.t.cdPGbE),
+            text: p.intl.string(p.t.cdPGbE),
             shouldShow: N,
             children: (0, i.jsx)(s.Button, {
                 variant: "active",
                 size: "sm",
-                text: _.intl.string(_.t.BzjDQJ),
+                text: p.intl.string(p.t.BzjDQJ),
                 loading: j,
                 onClick: y,
                 disabled: N
@@ -60,7 +60,7 @@ function E(e) {
         }), (0, i.jsx)(s.Button, {
             variant: "critical-primary",
             size: "sm",
-            text: _.intl.string(_.t.hDtbsz),
+            text: p.intl.string(p.t.hDtbsz),
             onClick: b,
             disabled: j || x.applicationStatus !== A.B5.SUBMITTED
         }), n && (0, i.jsx)(s.Button, {
@@ -72,7 +72,7 @@ function E(e) {
             },
             variant: "secondary",
             size: "sm",
-            text: _.intl.string(_.t.iXAna6)
+            text: p.intl.string(p.t.iXAna6)
         }), E && (0, i.jsx)(r.Ay.Divider, {})]
     }) : null
 }

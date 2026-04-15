@@ -1,106 +1,106 @@
 /** chunk id: 767379 params = (module,exports,require) **/
-n.d(t, {
-    default: () => T
+i.d(t, {
+    default: () => v
 });
-var a = n(627968),
-    i = n(64700),
-    s = n(835245),
-    l = n(158954),
-    r = n(554146),
-    o = n(397927),
-    d = n(932001),
-    c = n(632738),
-    u = n(627575),
-    m = n(393033),
-    h = n(105428),
-    x = n(975571),
-    p = n(935649),
-    g = n(847599),
-    f = n(295972),
-    v = n(36149),
-    _ = n(807734),
-    b = n(652215),
-    j = n(239093),
-    A = n(542391),
-    C = n(985018),
-    y = n(774992),
-    S = n(700129);
+var n = i(627968),
+    l = i(64700),
+    r = i(835245),
+    a = i(158954),
+    s = i(554146),
+    o = i(397927),
+    c = i(932001),
+    E = i(632738),
+    u = i(627575),
+    d = i(393033),
+    _ = i(105428),
+    A = i(975571),
+    f = i(935649),
+    m = i(847599),
+    g = i(295972),
+    R = i(36149),
+    L = i(807734),
+    S = i(652215),
+    p = i(239093),
+    x = i(542391),
+    h = i(985018),
+    T = i(774992),
+    O = i(700129);
 
-function E(e) {
+function I(e) {
     let {
         modalSessionId: t,
-        entryPoint: n
+        entryPoint: i
     } = e;
-    return (0, m.W$)() ? (0, a.jsx)(o.Text, {
+    return (0, d.W$)() ? (0, n.jsx)(o.Text, {
         variant: "text-xs/medium",
-        children: C.intl.format(A.default.htWh1G, {
+        children: h.intl.format(x.default.htWh1G, {
             handleOnHelpUrlHook: () => {
-                p.A.openUrl(j.d$.LEARN_MORE_UU_APPEAL_LINK), (0, g.St)(t, g.WU.EXPRESSIVE_PRIMARY, g._7.LEARN_MORE)
+                f.A.openUrl(p.d$.LEARN_MORE_UU_APPEAL_LINK), (0, m.St)(t, m.WU.EXPRESSIVE_PRIMARY, m._7.LEARN_MORE)
             }
         })
-    }) : n === g.q1.SAFETY_FLOWS ? (0, a.jsx)(o.QWc, {
+    }) : i === m.q1.SAFETY_FLOWS ? (0, n.jsx)(o.QWc, {
         size: "sm",
         textVariant: "text-sm/medium",
-        text: C.intl.string(C.t["2jxGer"]),
+        text: h.intl.string(h.t["2jxGer"]),
         onClick: () => {
-            (0, g.St)(t, g.WU.EXPRESSIVE_PRIMARY, g._7.LOG_OUT), (0, u.k)("age_verification_get_started_modal")
+            (0, m.St)(t, m.WU.EXPRESSIVE_PRIMARY, m._7.LOG_OUT), (0, u.k)("age_verification_get_started_modal")
         }
     }) : null
 }
-let T = function(e) {
+let v = function(e) {
     let {
         transitionState: t,
-        entryPoint: n,
+        entryPoint: i,
         onClose: u,
-        onComplete: j,
-        dismissable: T,
-        classificationId: N
-    } = e, [I, k] = i.useState(r.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), O = i.useRef(I), [R, w] = (0, d.kn)([I], void 0, !0), D = i.useMemo(() => (0, s.A)(), []), M = i.useRef(!1), P = (0, m.W$)();
-    i.useEffect(() => {
-        O.current = R
-    }, [R]);
+        onComplete: p,
+        dismissable: v,
+        classificationId: C
+    } = e, [M, G] = l.useState(s.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), P = l.useRef(M), [W, V] = (0, c.kn)([M], void 0, !0), b = l.useMemo(() => (0, r.A)(), []), k = l.useRef(!1), U = (0, d.W$)();
+    l.useEffect(() => {
+        P.current = W
+    }, [W]);
     let {
-        loading: L,
-        ageVerificationMethods: U
-    } = (0, _.A)({
+        loading: j,
+        ageVerificationMethods: D
+    } = (0, L.A)({
         onClose: () => {
-            j?.(), u()
+            p?.(), u()
         },
         onMethodClick: () => {
-            k(r.M.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
+            G(s.M.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
         },
-        classificationId: N
+        classificationId: C
     });
-    return i.useLayoutEffect(() => () => {
-        if (M.current) return;
-        let e = O.current;
-        null != e && (M.current = !0, h.A.maybeOpenAgeVerificationUserFeedback({
+    return l.useLayoutEffect(() => () => {
+        if (k.current) return;
+        let e = P.current;
+        null != e && (k.current = !0, _.A.maybeOpenAgeVerificationUserFeedback({
             location: "age_verification_get_started_modal",
             visibleContent: e
         }))
-    }, []), i.useEffect(() => {
-        (0, g.Bs)(D, g.WU.EXPRESSIVE_PRIMARY, n)
-    }, [D, n]), (0, a.jsx)(l.ExpressiveModal, {
+    }, []), l.useEffect(() => {
+        (0, m.Bs)(b, m.WU.EXPRESSIVE_PRIMARY, i)
+    }, [b, i]), (0, n.jsx)(a.ExpressiveModal, {
         transitionState: t,
         onClose: u,
         gradientColor: "blue",
-        dismissable: T,
+        dismissable: v,
         graphic: {
             type: "image",
-            src: S.A
+            src: O.A
         },
-        title: (0, v.ST)(n),
-        subtitle: (0, v.mK)(n, () => {
-            p.A.openUrl(x.A.getArticleURL(b.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, g.St)(D, g.WU.EXPRESSIVE_PRIMARY, g._7.LEARN_MORE)
-        }, P),
-        actionBarInput: (0, a.jsx)(E, {
-            modalSessionId: D,
-            entryPoint: n
+        title: (0, R.ST)(i),
+        subtitle: (0, R.mK)(i, () => {
+            f.A.openUrl(A.A.getArticleURL(S.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, m.St)(b, m.WU.EXPRESSIVE_PRIMARY, m._7.LEARN_MORE)
+        }, U),
+        actionBarInput: (0, n.jsx)(I, {
+            modalSessionId: b,
+            entryPoint: i
         }),
-        children: (0, a.jsxs)(o.BJc, {
+        children: (0, n.jsxs)(o.BJc, {
             direction: "vertical",
             gap: 16,
-            children: [(0, a.jsxs)(o.BJc, {
+            children: [(0, n.jsxs)(o.BJc, {
                 fullWidth: !1,
                 direction: "horizontal",
                 gap: 8,
@@ -111,46 +111,46 @@ let T = function(e) {
                     right: 12
                 },
                 align: "center",
-                className: y.W,
-                children: [(0, a.jsx)(o.mir, {
+                className: T.W,
+                children: [(0, n.jsx)(o.mir, {
                     size: "lg",
                     color: "currentColor"
-                }), (0, a.jsx)(o.Text, {
+                }), (0, n.jsx)(o.Text, {
                     variant: "text-sm/medium",
                     color: "text-feedback-info",
-                    children: C.intl.string(A.default.ar3a3q)
+                    children: h.intl.string(x.default.ar3a3q)
                 })]
-            }), null == U || 0 === U.length ? (0, a.jsxs)(o.BJc, {
+            }), null == D || 0 === D.length ? (0, n.jsxs)(o.BJc, {
                 direction: "vertical",
                 align: "center",
                 gap: 16,
-                children: [(0, a.jsx)(o.Text, {
+                children: [(0, n.jsx)(o.Text, {
                     variant: "text-xs/medium",
                     color: "text-subtle",
-                    children: C.intl.string(A.default.cR6336)
-                }), (0, a.jsx)(o.Button, {
+                    children: h.intl.string(x.default.cR6336)
+                }), (0, n.jsx)(o.Button, {
                     variant: "primary",
                     size: "sm",
-                    text: C.intl.string(A.default.hDvmYP),
+                    text: h.intl.string(x.default.hDvmYP),
                     onClick: () => {
-                        (0, f.DJ)()
+                        (0, g.DJ)()
                     }
                 })]
-            }) : (0, a.jsx)(o.BJc, {
+            }) : (0, n.jsx)(o.BJc, {
                 direction: "vertical",
                 gap: 8,
-                children: U.map(e => {
+                children: D.map(e => {
                     let {
                         title: t,
-                        description: n,
-                        onClick: i
+                        description: i,
+                        onClick: l
                     } = e;
-                    return (0, a.jsx)(c.PQ, {
+                    return (0, n.jsx)(E.PQ, {
                         variant: "clickable",
                         title: t,
-                        description: n,
-                        buttonDisabled: L,
-                        onButtonPress: () => i(D)
+                        description: i,
+                        buttonDisabled: j,
+                        onButtonPress: () => l(b)
                     }, t)
                 })
             })]

@@ -1,6 +1,6 @@
 /** chunk id: 901690 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var i = n(627968),
     l = n(64700),
@@ -18,15 +18,15 @@ var i = n(627968),
 function g(e) {
     return (1 & e.buttons) == 1
 }
-let p = l.memo(function(e) {
+let _ = l.memo(function(e) {
     let {
         ...t
     } = e, {
         streamId: n,
         onResize: a,
-        wrapperClassName: p
+        wrapperClassName: _
     } = t, {
-        onActive: _
+        onActive: p
     } = l.useContext(d.k3), {
         enabled: f,
         minZoom: E,
@@ -57,7 +57,7 @@ let p = l.memo(function(e) {
         let t = q(e);
         x(!0), P(t), O(t), w(Date.now()), H(t), G(S)
     }, [q, Y, S, x]), Z = l.useCallback(e => {
-        if ((f || Y) && _(), !C || !Y || null == F || null == U) return;
+        if ((f || Y) && p(), !C || !Y || null == F || null == U) return;
         e.preventDefault(), e.stopPropagation();
         let t = q(e),
             n = t.x - F.x,
@@ -66,7 +66,7 @@ let p = l.memo(function(e) {
             x: U.x + n,
             y: U.y + i
         })), O(t)
-    }, [M, F, U, f, q, C, Y, _, I]), X = l.useCallback(e => {
+    }, [M, F, U, f, q, C, Y, p, I]), X = l.useCallback(e => {
         !C || g(e) || (e.preventDefault(), e.stopPropagation(), x(!1), H(null), G(null))
     }, [C, x]), Q = l.useCallback(e => {
         if (Y && null != D && null != L) {
@@ -82,10 +82,10 @@ let p = l.memo(function(e) {
     }, [Y, D, k, L]), ee = l.useCallback(() => {
         x(!1), H(null), G(null)
     }, [x]), et = l.useCallback(e => {
-        f && (N(!0), R(T - e.deltaY / 100, q(e), "wheel"), _(), W.current.start(100, () => {
+        f && (N(!0), R(T - e.deltaY / 100, q(e), "wheel"), p(), W.current.start(100, () => {
             N(!1)
         }))
-    }, [f, R, T, q, _, N]);
+    }, [f, R, T, q, p, N]);
     (0, o.i4)(j, l.useCallback(e => {
         let {
             width: t,
@@ -135,7 +135,7 @@ let p = l.memo(function(e) {
     }, [M, C, B, v, y, S, T]);
     return (0, i.jsx)("div", {
         ref: j,
-        className: s()(A.iE, p, {
+        className: s()(A.iE, _, {
             [A.rc]: f && Y,
             [A.d$]: C
         }),

@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(798286),
     A = n(83942),
     g = n(259374),
-    p = n(730986),
-    _ = n(786840),
+    _ = n(730986),
+    p = n(786840),
     f = n(763845),
     E = n(857341),
     C = n(843057),
@@ -67,7 +67,7 @@ function j(e) {
         connectionTypeText: n,
         closePopout: l
     } = e, a = y(t);
-    return (0, i.jsx)(p.Q, {
+    return (0, i.jsx)(_.Q, {
         ...a,
         closePopout: l,
         connectionTypeText: n
@@ -91,7 +91,7 @@ function M(e) {
         closePopout: t,
         connectionTypeText: n
     } = e, l = N();
-    return (0, i.jsx)(p.Q, {
+    return (0, i.jsx)(_.Q, {
         ...l,
         closePopout: t,
         connectionTypeText: n
@@ -203,7 +203,7 @@ function P(e) {
                         ...e
                     });
                 case x.Rj.RTC_SECURE_FRAMES:
-                    return (0, i.jsx)(_.A, {
+                    return (0, i.jsx)(p.A, {
                         channelId: e.channelId
                     })
             }

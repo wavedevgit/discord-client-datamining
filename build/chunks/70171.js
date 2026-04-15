@@ -15,10 +15,10 @@ var i = n(627968),
     m = n(652896),
     A = n(750506),
     g = n(172914);
-let p = {
+let _ = {
         visibility: "hidden"
     },
-    _ = {
+    p = {
         precision: 1e-4,
         duration: 300
     },
@@ -43,9 +43,9 @@ function C(e) {
         (0, u.MI)(I)
     }, [I]);
     let y = e => {
-            if (n !== c.N.NO_POPOUT) return p;
+            if (n !== c.N.NO_POPOUT) return _;
             let t = S?.getBoundingClientRect();
-            if (N.current = t, e.timestamp !== T || null == t) return p;
+            if (N.current = t, e.timestamp !== T || null == t) return _;
             let {
                 top: i,
                 left: l
@@ -67,7 +67,7 @@ function C(e) {
             enter: {
                 opacity: 0
             },
-            config: _
+            config: p
         }, "animate-always"),
         R = (0, l.useRef)(null),
         M = (0, o.pnh)(v, {
@@ -78,9 +78,9 @@ function C(e) {
                 visibility: "hidden",
                 opacity: 1,
                 ...C.enabled ? y(e) : (() => {
-                    if (n !== c.N.NO_POPOUT) return p;
+                    if (n !== c.N.NO_POPOUT) return _;
                     let e = x.current?.getBoundingClientRect();
-                    return null == e ? p : {
+                    return null == e ? _ : {
                         width: e.width,
                         height: e.height,
                         top: e.top,

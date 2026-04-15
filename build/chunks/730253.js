@@ -50,7 +50,7 @@ let H = {
 };
 
 function F(e) {
-    let t, F, W, K, Y, z, X, q, $, J, Q, Z, {
+    let t, F, W, K, Y, z, q, X, $, J, Q, Z, {
             shouldShowIntroPopover: ee,
             markIntroPopoverAsDismissed: et
         } = e,
@@ -86,12 +86,12 @@ function F(e) {
             if (!F) return !1;
             let e = I.A.getCurrentUserActiveStream();
             return null != e && null != eh[e.channelId]
-        }), K = (0, a.bG)([I.A], () => I.A.getAllApplicationStreams().some(e => null != eh[e.channelId])), Y = (0, a.bG)([T.A], () => F && null != t && T.A.hasVideo(t), [F, t]), z = (0, a.yK)([c.Ay], () => S.default.keys(eh).reduce((e, t) => (e.push(...c.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), X = (0, a.bG)([c.Ay], () => Array.from(c.Ay.getSelfEmbeddedActivities().values()).some(e => {
+        }), K = (0, a.bG)([I.A], () => I.A.getAllApplicationStreams().some(e => null != eh[e.channelId])), Y = (0, a.bG)([T.A], () => F && null != t && T.A.hasVideo(t), [F, t]), z = (0, a.yK)([c.Ay], () => S.default.keys(eh).reduce((e, t) => (e.push(...c.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), q = (0, a.bG)([c.Ay], () => Array.from(c.Ay.getSelfEmbeddedActivities().values()).some(e => {
             let {
                 location: t
             } = e, n = (0, u.H)(t);
             return null != n && null != eh[n]
-        })), q = z.length > 0, $ = !1, J = !1, Q = !1, Z = !1, F ? ($ = !Y, J = Y, Q = W, Z = X) : (Q = K, Z = q), (0, p.oi)({
+        })), X = z.length > 0, $ = !1, J = !1, Q = !1, Z = !1, F ? ($ = !Y, J = Y, Q = W, Z = q) : (Q = K, Z = X), (0, p.oi)({
             audio: $,
             video: J,
             screenshare: Q,

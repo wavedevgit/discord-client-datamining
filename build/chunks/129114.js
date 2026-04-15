@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(533406),
     A = n(788868),
     g = n(699976),
-    p = n(985018);
-let _ = g.Z.SIZE_90;
+    _ = n(985018);
+let p = g.Z.SIZE_90;
 
 function f(e) {
     let {
@@ -63,25 +63,25 @@ function f(e) {
     return (0, i.jsxs)(r.A, {
         sku: t,
         user: n,
-        spec: _,
+        spec: p,
         onClick: b,
-        "aria-label": p.intl.formatToPlainString(p.t.ZBB4Ty, {
+        "aria-label": _.intl.formatToPlainString(_.t.ZBB4Ty, {
             productName: (0, a.TC)(t)
         }),
         onHoverOrFocusChange: N,
         children: [(0, i.jsx)(c.A, {
-            spec: _,
+            spec: p,
             onClick: j,
             isHoveringOrFocusing: v,
             label: R,
             icon: M
         }), (0, i.jsx)(o.A, {
-            spec: _,
+            spec: p,
             sku: t,
             isCardHovered: v,
             location: "SocialLayerGiftingVoicePanelSkuItemCard",
             replacedElement: E && !g && f === s.uS.WISHLIST ? (0, i.jsx)(d.n, {
-                spec: _,
+                spec: p,
                 user: n,
                 guildId: C ?? void 0,
                 channelId: x ?? void 0

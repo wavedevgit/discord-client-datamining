@@ -1,6 +1,6 @@
 /** chunk id: 123902 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p,
+    A: () => _,
     V: () => h
 });
 var i, l = n(627968),
@@ -25,15 +25,15 @@ function g(e) {
     return Math.round(e / d.K) * d.K
 }
 
-function p(e) {
+function _(e) {
     let {
         notchBackground: t,
         progress: n,
         size: i = "md",
         gradientStart: s = o.A.unsafe_rawColors.YELLOW_260.css,
         gradientEnd: h = o.A.unsafe_rawColors.GREEN_360.css,
-        className: p,
-        notchClassName: _,
+        className: _,
+        notchClassName: p,
         children: f
     } = e, E = A[i], {
         ref: C,
@@ -54,7 +54,7 @@ function p(e) {
             height: E
         },
         children: [(0, l.jsxs)("div", {
-            className: r()(u.kL, p),
+            className: r()(u.kL, _),
             style: T,
             children: [(0, l.jsx)("div", {
                 className: u.qB,
@@ -62,7 +62,7 @@ function p(e) {
             }), 0 !== S && (0, l.jsx)(d.A, {
                 width: S,
                 height: E,
-                className: r()(u.DR, m[t], _)
+                className: r()(u.DR, m[t], p)
             })]
         }), f]
     })

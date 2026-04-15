@@ -47,8 +47,8 @@ var i = n(627968),
     K = n(326567),
     Y = n(964404),
     z = n(105225),
-    X = n(874739),
-    q = n(461782),
+    q = n(874739),
+    X = n(461782),
     $ = n(447404),
     J = n(401685),
     Q = n(20465),
@@ -591,7 +591,7 @@ class ew extends l.PureComponent {
             screenMessage: this.screenMessage,
             disableGradients: !l || f,
             idle: !_ && l && !f && e.idle,
-            children: l && this.popoutOpen && !this.inPopout ? null : (0, i.jsx)(X.A, {
+            children: l && this.popoutOpen && !this.inPopout ? null : (0, i.jsx)(q.A, {
                 ref: this._contentRef,
                 inCall: l,
                 channel: u,
@@ -648,7 +648,7 @@ class ew extends l.PureComponent {
                     ref: e => {
                         this._callContainerRef.current = e, this.props.callContainerRef.current = e
                     },
-                    children: (0, i.jsx)(q.Ay, {
+                    children: (0, i.jsx)(X.Ay, {
                         timeout: 2e3,
                         children: e => this.renderContent(e)
                     })
@@ -719,8 +719,8 @@ let eB = function(e) {
     } = (0, c.cf)([er.A], () => ({
         selectedStream: null != w ? er.A.getActiveStreamForStreamKey(w.id) : null
     }), [w]), K = (0, c.bG)([eu.A], () => eu.A.getGuild(t.getGuildId())), z = (0, c.bG)([eo.default], () => eo.default.getId()), {
-        popoutWindow: X,
-        popoutWindowAlwaysOnTop: q
+        popoutWindow: q,
+        popoutWindowAlwaysOnTop: X
     } = (0, c.cf)([F.A], () => ({
         popoutWindow: F.A.getWindow(eM.MLl.CHANNEL_CALL_POPOUT),
         popoutWindowAlwaysOnTop: F.A.getIsAlwaysOnTop(eM.MLl.CHANNEL_CALL_POPOUT)
@@ -776,8 +776,8 @@ let eB = function(e) {
                         participantsOpen: P,
                         renderExternalHeader: n,
                         appContext: f,
-                        popoutWindow: X,
-                        popoutWindowAlwaysOnTop: q,
+                        popoutWindow: q,
+                        popoutWindowAlwaysOnTop: X,
                         selectedStream: W,
                         mode: L,
                         inCall: S,

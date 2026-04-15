@@ -2,45 +2,45 @@
 n.d(t, {
     A: () => u
 });
-var r = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(503698),
-    i = n.n(l),
-    a = n(311907),
+var i = n(503698),
+    a = n.n(i),
+    r = n(311907),
     s = n(397927),
     o = n(961350),
-    d = n(296227),
-    c = n(848152);
+    c = n(296227),
+    d = n(848152);
 
 function u(e) {
     let {
         userId: t,
         headingId: n,
-        widget: l,
-        disableInteraction: a = !1,
+        widget: i,
+        disableInteraction: r = !1,
         title: o,
-        subtitle: d,
+        subtitle: c,
         actionButtons: u = [],
         className: h
     } = e;
-    return (0, r.jsxs)("div", {
-        className: i()(c.U1, h),
-        children: [(0, r.jsxs)("div", {
-            className: c.DD,
-            children: [(0, r.jsx)(s.Heading, {
+    return (0, l.jsxs)("div", {
+        className: a()(d.U1, h),
+        children: [(0, l.jsxs)("div", {
+            className: d.DD,
+            children: [(0, l.jsx)(s.Heading, {
                 variant: "heading-sm/medium",
                 color: "text-default",
                 id: n,
                 children: o
-            }), null != d && (0, r.jsx)(s.Text, {
+            }), null != c && (0, l.jsx)(s.Text, {
                 variant: "text-xs/normal",
                 color: "text-subtle",
-                children: d
+                children: c
             })]
-        }), (0, r.jsx)(m, {
-            widget: l,
+        }), (0, l.jsx)(m, {
+            widget: i,
             actionButtons: u,
-            disabledInteraction: a,
+            disabledInteraction: r,
             userId: t
         })]
     })
@@ -50,18 +50,18 @@ function m(e) {
     let {
         widget: t,
         actionButtons: n,
-        disabledInteraction: l,
-        userId: i
-    } = e, s = (0, a.bG)([o.default], () => o.default.getId());
-    return l ? null : null != n && n.length > 0 ? (0, r.jsx)("div", {
-        className: c.o1,
+        disabledInteraction: i,
+        userId: a
+    } = e, s = (0, r.bG)([o.default], () => o.default.getId());
+    return i ? null : null != n && n.length > 0 ? (0, l.jsx)("div", {
+        className: d.o1,
         children: n
-    }) : s !== i ? (0, r.jsx)("div", {
-        className: c.o1,
-        children: (0, r.jsx)(d.A, {
+    }) : s !== a ? (0, l.jsx)("div", {
+        className: d.o1,
+        children: (0, l.jsx)(c.A, {
             widget: t,
-            userId: i,
-            className: c.AQ
+            userId: a,
+            className: d.AQ
         })
     }) : null
 }

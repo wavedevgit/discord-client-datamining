@@ -2,29 +2,29 @@
 n.d(t, {
     A: () => s
 });
-var a = n(873298),
-    l = n(632119),
-    i = n(17372),
-    r = n(985018);
+var l = n(873298),
+    a = n(632119),
+    r = n(17372),
+    i = n(985018);
 let s = {
-    getTitle: () => r.intl.string(r.t["Gtck/t"]),
-    getDisabledTitle: () => r.intl.string(r.t.E6UmXa),
-    getDescription: () => r.intl.string(r.t.jcRSp6),
-    eligibleReportSubtypes: [i.TS.SUB_CSAM, i.TS.SUB_LOLI, i.TS.SUB_NCP, i.TS.SUB_SEXUALLY_DEGRADING_CONTENT, i.TS.SUB_UNSOLICITED_PORN],
-    onApply: () => (0, l.Jz)(function() {
+    getTitle: () => i.intl.string(i.t["Gtck/t"]),
+    getDisabledTitle: () => i.intl.string(i.t.E6UmXa),
+    getDescription: () => i.intl.string(i.t.jcRSp6),
+    eligibleReportSubtypes: [r.TS.SUB_CSAM, r.TS.SUB_LOLI, r.TS.SUB_NCP, r.TS.SUB_SEXUALLY_DEGRADING_CONTENT, r.TS.SUB_UNSOLICITED_PORN],
+    onApply: () => (0, a.Jz)(function() {
         let {
             explicitContentGuilds: e,
             explicitContentFriendDm: t,
             explicitContentNonFriendDm: n
-        } = (0, l.C$)(), i = {};
-        return e === a.TO.SHOW && (i.explicitContentGuilds = a.TO.BLUR), t === a.TO.SHOW && (i.explicitContentFriendDm = a.TO.BLUR), n === a.TO.SHOW && (i.explicitContentNonFriendDm = a.TO.BLUR), i
+        } = (0, a.C$)(), r = {};
+        return e === l.TO.SHOW && (r.explicitContentGuilds = l.TO.BLUR), t === l.TO.SHOW && (r.explicitContentFriendDm = l.TO.BLUR), n === l.TO.SHOW && (r.explicitContentNonFriendDm = l.TO.BLUR), r
     }()),
     predicate: () => {
         let {
             explicitContentGuilds: e,
             explicitContentFriendDm: t,
             explicitContentNonFriendDm: n
-        } = (0, l.C$)();
-        return e === a.TO.SHOW || t === a.TO.SHOW || n === a.TO.SHOW
+        } = (0, a.C$)();
+        return e === l.TO.SHOW || t === l.TO.SHOW || n === l.TO.SHOW
     }
 }

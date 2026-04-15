@@ -2,10 +2,10 @@
 n.d(t, {
     A: () => o
 });
-var a = n(627968),
-    l = n(64700),
-    i = n(397927),
-    r = n(46054),
+var l = n(627968),
+    a = n(64700),
+    r = n(397927),
+    i = n(46054),
     s = n(861662),
     d = n(684994);
 
@@ -18,17 +18,17 @@ function o(e) {
                 is_localized: o
             }
         }
-    } = e, c = l.useMemo(() => r.A.reactParserFor({
-        ...r.A.defaultRules,
+    } = e, c = a.useMemo(() => i.A.reactParserFor({
+        ...i.A.defaultRules,
         link: s.B
     }), []);
-    return o && (null != t || null != n) ? (0, a.jsxs)("div", {
-        children: [null != t && (0, a.jsx)(i.Heading, {
+    return o && (null != t || null != n) ? (0, l.jsxs)("div", {
+        children: [null != t && (0, l.jsx)(r.Heading, {
             variant: "heading-sm/semibold",
             color: "text-default",
             className: d.w,
             children: t
-        }), null != n && (0, a.jsx)(i.Text, {
+        }), null != n && (0, l.jsx)(r.Text, {
             variant: "text-md/normal",
             color: "text-subtle",
             className: d.r,

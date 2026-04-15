@@ -1,15 +1,15 @@
 /** chunk id: 486678 params = (module,exports,require) **/
-n.d(l, {
+l.d(n, {
     A: () => m
 });
-var t = n(311907),
-    i = n(397927),
-    s = n(919395),
-    a = n(101058),
-    r = n(836602),
-    o = n(996988),
-    d = n(985253);
-let c = (0, i.FT9)(d.T[o.d.MODAL_V2].avatarSize),
+var i = l(311907),
+    t = l(397927),
+    s = l(919395),
+    a = l(101058),
+    r = l(836602),
+    o = l(996988),
+    d = l(985253);
+let c = (0, t.FT9)(d.T[o.d.MODAL_V2].avatarSize),
     u = {
         pendingThemeColors: void 0,
         avatarDecorationOverride: void 0,
@@ -18,29 +18,29 @@ let c = (0, i.FT9)(d.T[o.d.MODAL_V2].avatarSize),
 
 function m(e) {
     let {
-        user: l,
-        guildId: n,
-        allowEditingInModal: i
+        user: n,
+        guildId: l,
+        allowEditingInModal: t
     } = e;
-    return (0, t.cf)([r.A], () => {
-        if (!i) return u;
+    return (0, i.cf)([r.A], () => {
+        if (!t) return u;
         let {
             pendingThemeColors: e,
-            pendingAvatarDecoration: t,
+            pendingAvatarDecoration: i,
             pendingAvatar: o
-        } = r.A.getPendingChanges(n);
+        } = r.A.getPendingChanges(l);
         return {
             pendingThemeColors: e,
-            avatarDecorationOverride: void 0 === t ? void 0 : (0, s.lw)({
-                userValue: l.avatarDecoration,
-                pendingValue: t,
-                guildId: n
+            avatarDecorationOverride: void 0 === i ? void 0 : (0, s.lw)({
+                userValue: n.avatarDecoration,
+                pendingValue: i,
+                guildId: l
             }),
             avatarOverride: (0, a.V7)({
-                userId: l.id,
+                userId: n.id,
                 image: o,
                 size: c
             })
         }
-    }, [l, n, i])
+    }, [n, l, t])
 }

@@ -85,7 +85,7 @@ let K = w.Ay.getEnableHardwareAcceleration(),
         }, [t.guild_id]), z = (0, E.r)({
             user: g,
             guildId: t.guild_id
-        }), [X, q] = l.useState(!1);
+        }), [q, X] = l.useState(!1);
         if (null == g) return null;
         let $ = A?.premiumSince;
         return (0, i.jsx)(b.A, {
@@ -96,8 +96,8 @@ let K = w.Ay.getEnableHardwareAcceleration(),
             position: u.Fr ? "window_center" : "left",
             spacing: 16,
             onShiftClick: W,
-            shouldShow: X,
-            onRequestClose: () => q(!1),
+            shouldShow: q,
+            onRequestClose: () => X(!1),
             children: e => {
                 let {
                     onClick: n,
@@ -120,7 +120,7 @@ let K = w.Ay.getEnableHardwareAcceleration(),
                     channel: t,
                     guildId: t.guild_id,
                     isMobile: N,
-                    selected: X,
+                    selected: q,
                     applicationStream: D,
                     premiumSince: null == $ ? null : new Date($),
                     onClickPremiumGuildIcon: Y,
@@ -129,17 +129,17 @@ let K = w.Ay.getEnableHardwareAcceleration(),
                     isOwner: w,
                     nameplate: z,
                     onClick: e => {
-                        e.shiftKey ? W?.() : q(e => !e)
+                        e.shiftKey ? W?.() : X(e => !e)
                     },
                     onMouseDown: e => {
-                        X ? e.stopPropagation() : l?.(e)
+                        q ? e.stopPropagation() : l?.(e)
                     },
                     ...s
                 })
             }
         })
     }),
-    X = l.memo(function(e) {
+    q = l.memo(function(e) {
         let {
             id: t,
             label: n,
@@ -170,7 +170,7 @@ let K = w.Ay.getEnableHardwareAcceleration(),
             })]
         })
     }),
-    q = l.memo(function(e) {
+    X = l.memo(function(e) {
         let {
             channel: t
         } = e;
@@ -277,7 +277,7 @@ function $(e) {
                             let {
                                 section: t
                             } = e, n = N[t];
-                            return (0, i.jsx)(X, {
+                            return (0, i.jsx)(q, {
                                 id: n.id,
                                 label: n.label,
                                 count: n.userIds.length,
@@ -301,7 +301,7 @@ function $(e) {
                             }, l[n])
                         },
                         footerHeight: e => 80 * (N[e] === S && E.type === V.rbe.PRIVATE_THREAD),
-                        renderFooter: e => N[e.section] === S ? (0, i.jsx)(q, {
+                        renderFooter: e => N[e.section] === S ? (0, i.jsx)(X, {
                             channel: E
                         }, "footer") : null,
                         innerAriaLabel: H.intl.string(H.t["9Oq93m"]),

@@ -24,8 +24,8 @@ function h(e) {
         r.A.closeChannelSidebar(o.fe)
     }, []), {
         acceptMessageRequest: g,
-        rejectMessageRequest: p,
-        isAcceptLoading: _,
+        rejectMessageRequest: _,
+        isAcceptLoading: p,
         isRejectLoading: f,
         isOptimisticAccepted: E,
         isOptimisticRejected: C
@@ -34,19 +34,19 @@ function h(e) {
         onError: h,
         onAcceptSuccess: A,
         onRejectSuccess: m
-    }), x = _ || f || E || C;
+    }), x = p || f || E || C;
     return (0, i.jsxs)(a.ButtonGroup, {
         size: "sm",
         children: [(0, i.jsx)(a.Button, {
             variant: "primary",
             disabled: x,
             onClick: () => g(t.id),
-            loading: _,
+            loading: p,
             text: u.intl.string(u.t.Kz8Pwr)
         }), (0, i.jsx)(a.Button, {
             variant: "secondary",
             disabled: x,
-            onClick: () => p(t.id),
+            onClick: () => _(t.id),
             loading: f,
             text: u.intl.string(u.t.B2nygW)
         }), (0, i.jsx)(d.A, {

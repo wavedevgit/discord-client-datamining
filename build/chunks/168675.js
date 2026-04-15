@@ -64,9 +64,9 @@ function z(e) {
                 children: [(0, i.jsx)(A.A, {
                     channel: s,
                     draftType: R.C.FirstThreadMessage
-                }), (0, i.jsx)(X, {
-                    parentChannelId: t
                 }), (0, i.jsx)(q, {
+                    parentChannelId: t
+                }), (0, i.jsx)(X, {
                     parentChannel: s,
                     parentMessageId: n,
                     location: l
@@ -76,7 +76,7 @@ function z(e) {
     })
 }
 
-function X(e) {
+function q(e) {
     let {
         parentChannelId: t
     } = e, n = l.useCallback(() => {
@@ -110,7 +110,7 @@ function X(e) {
     })
 }
 
-function q(e) {
+function X(e) {
     let t, {
             parentChannel: n,
             parentMessageId: s,

@@ -1,8 +1,7 @@
 /** chunk id: 535296 params = (module,exports,require) **/
 n.d(t, {
-    Vp: () => Z,
-    Z: () => Q,
-    fd: () => X
+    V: () => $,
+    Z: () => Z
 });
 var i = n(627968),
     l = n(64700),
@@ -17,8 +16,8 @@ var i = n(627968),
     m = n(201718),
     A = n(672385),
     g = n(633075),
-    p = n(622543),
-    _ = n(735321),
+    _ = n(622543),
+    p = n(735321),
     f = n(657331),
     E = n(606758),
     C = n(605694),
@@ -177,11 +176,7 @@ function q(e, t) {
     return e.id === t.id
 }
 
-function $(e, t) {
-    return e instanceof g.R && e.applicationId === t
-}
-
-function Z(e) {
+function $(e) {
     let {
         userId: t,
         applicationId: n,
@@ -195,7 +190,7 @@ function Z(e) {
         analyticsLocations: x
     } = (0, d.Ay)(c.A.SLAYER_STOREFRONT_VC_GIFTING_PANEL), T = (0, o.bG)([y.default], () => y.default.getUser(t)), b = l.useMemo(() => new g.R({
         applicationId: n
-    }), [n]), j = (0, o.bG)([p.A], () => p.A.getWidgets(t)?.find(e => $(e, n))), R = (0, o.bG)([N.default], () => N.default.getId()), M = t === R, O = function(e) {
+    }), [n]), j = (0, o.bG)([_.A], () => _.A.getWidgets(t)?.find(e => e instanceof g.R && e.applicationId === n)), R = (0, o.bG)([N.default], () => N.default.getId()), M = t === R, O = function(e) {
         let {
             currentUserId: t,
             applicationId: n,
@@ -204,7 +199,7 @@ function Z(e) {
             isTargetingCurrentUser: o
         } = e, {
             isLoading: m,
-            application: p,
+            application: _,
             applicationWidgetConfig: C,
             hasApplicationWidgetOnUserProfile: x
         } = (0, h.A)(t, n, a), {
@@ -212,7 +207,7 @@ function Z(e) {
             hasAlreadyLinked: I,
             canStartAuthorization: T,
             startAuthorization: v
-        } = (0, u.RD)(p), {
+        } = (0, u.RD)(_), {
             analyticsLocations: N
         } = (0, d.Ay)(c.A.SLAYER_STOREFRONT_VC_GIFTING_PANEL), y = l.useCallback(() => {
             T && v({
@@ -226,7 +221,7 @@ function Z(e) {
             let e = new g.R({
                 applicationId: n
             });
-            (0, _.Y5)(e), (0, A.un)({
+            (0, p.Y5)(e), (0, A.un)({
                 action: "WIDGET_ADDED",
                 ...e.getProfileEditAnalyticsOptions()
             }), setTimeout(() => (0, E.XA)(G.jM.WIDGET_ADDED), 700)
@@ -243,7 +238,7 @@ function Z(e) {
                     onClick: y
                 })
             })
-        }) : I && !x && null != p ? (0, i.jsx)("div", {
+        }) : I && !x && null != _ ? (0, i.jsx)("div", {
             className: H.OQ,
             children: (0, i.jsx)(r.EYj, {
                 variant: "text-xs/normal",
@@ -252,7 +247,7 @@ function Z(e) {
                         className: H.Ku,
                         size: "xs"
                     }),
-                    applicationName: p.name,
+                    applicationName: _.name,
                     onClick: b
                 })
             })
@@ -273,7 +268,7 @@ function Z(e) {
         applicationId: n,
         channel: a,
         numItems: 8
-    }), Z = "loading" === w || 0 === U.length || null == T, X = l.useMemo(() => null == T || 0 === U.length ? [] : (U.length > 8 ? U.slice(0, 8) : U).map(e => {
+    }), $ = "loading" === w || 0 === U.length || null == T, Z = l.useMemo(() => null == T || 0 === U.length ? [] : (U.length > 8 ? U.slice(0, 8) : U).map(e => {
         let n = (V[e.id] ?? {})[t] === v.j.WISHLIST;
         return (0, i.jsx)(k.A, {
             sku: e,
@@ -313,11 +308,11 @@ function Z(e) {
                     user: T,
                     isGift: !M
                 })]
-            }), Z ? (0, i.jsx)(r.y$y, {
+            }), $ ? (0, i.jsx)(r.y$y, {
                 className: H.Zp
             }) : (0, i.jsx)("div", {
                 className: H.HV,
-                children: X
+                children: Z
             }), (0, i.jsx)(Y, {
                 application: P,
                 onClose: s
@@ -329,37 +324,7 @@ function Z(e) {
     })
 }
 
-function X(e) {
-    let {
-        userId: t,
-        applicationId: n,
-        channel: l
-    } = e;
-    (0, m.P)(t);
-    let a = (0, o.bG)([y.default], () => y.default.getUser(t)),
-        s = (0, o.bG)([p.A], () => p.A.getWidgets(t)?.find(e => $(e, n))),
-        c = null == a || null == s;
-    return (0, i.jsx)(W, {
-        children: (0, i.jsx)("div", {
-            className: H.kL,
-            children: c ? (0, i.jsx)(r.y$y, {
-                className: H.ps
-            }) : (0, i.jsx)("div", {
-                className: H.$4,
-                children: (0, i.jsx)(C.A, {
-                    user: a,
-                    widget: s,
-                    guildId: l.guild_id,
-                    channelId: l.id,
-                    disableInteraction: !0,
-                    embedded: !0
-                })
-            })
-        })
-    })
-}
-
-function Q(e) {
+function Z(e) {
     let {
         userId: t,
         applicationId: n,
@@ -373,18 +338,18 @@ function Q(e) {
         analyticsLocations: u
     } = (0, d.Ay)(c.A.SLAYER_STOREFRONT_VC_GIFTING_PANEL), h = (0, o.bG)([y.default], () => y.default.getUser(t)), m = t === (0, o.bG)([N.default], () => N.default.getId()), A = (0, L.A)(n), {
         status: g,
-        recommendations: p,
-        skusToUserAndReason: _,
+        recommendations: _,
+        skusToUserAndReason: p,
         hasBothSources: f
     } = J({
         userId: t,
         applicationId: n,
         channel: a,
         numItems: 8
-    }), E = "loading" === g || 0 === p.length || null == h, [C, x] = l.useMemo(() => {
-        if (null == h || 0 === p.length) return [null, []];
-        let e = p.length > 7 ? p.slice(0, 7) : p,
-            n = (_[e[0].id] ?? {})[t] === v.j.WISHLIST;
+    }), E = "loading" === g || 0 === _.length || null == h, [C, x] = l.useMemo(() => {
+        if (null == h || 0 === _.length) return [null, []];
+        let e = _.length > 7 ? _.slice(0, 7) : _,
+            n = (p[e[0].id] ?? {})[t] === v.j.WISHLIST;
         return [(0, i.jsx)(P.A, {
             sku: e[0],
             targetUser: h,
@@ -397,7 +362,7 @@ function Q(e) {
             onCardClick: s,
             onButtonClick: s
         }), e.slice(1).map(e => {
-            let n = (_[e.id] ?? {})[t] === v.j.WISHLIST;
+            let n = (p[e.id] ?? {})[t] === v.j.WISHLIST;
             return (0, i.jsx)(k.A, {
                 sku: e,
                 targetUser: h,
@@ -411,7 +376,7 @@ function Q(e) {
                 onButtonClick: s
             }, e.id)
         })]
-    }, [h, p, _, t, m, a.guild_id, a.id, f, u, s]);
+    }, [h, _, p, t, m, a.guild_id, a.id, f, u, s]);
     return (0, i.jsx)(W, {
         "aria-labelledby": B,
         children: (0, i.jsxs)("div", {

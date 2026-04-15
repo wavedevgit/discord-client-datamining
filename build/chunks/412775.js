@@ -1,14 +1,14 @@
 /** chunk id: 412775 params = (module,exports,require) **/
 t.d(n, {
-    A: () => y
+    A: () => j
 });
 var i = t(627968);
 t(64700);
 var a = t(311907),
     l = t(397927),
     r = t(821269),
-    d = t(437774),
-    s = t(773669),
+    s = t(437774),
+    d = t(773669),
     o = t(967198),
     c = t(351906),
     _ = t(183555),
@@ -16,8 +16,8 @@ var a = t(311907),
     p = t(484509),
     A = t(389996),
     g = t(46937),
-    m = t(361311),
-    f = t(743987),
+    f = t(361311),
+    m = t(743987),
     h = t(900179),
     I = t(280645),
     x = t(928223),
@@ -25,16 +25,16 @@ var a = t(311907),
     v = t(985018),
     E = t(824860);
 
-function y(e) {
+function j(e) {
     let {
         user: n,
         displayProfile: t,
-        onClose: y
+        onClose: j
     } = e, {
-        trackUserProfileAction: j
+        trackUserProfileAction: y
     } = (0, _.NJ)(), T = (0, a.bG)([o.A], () => o.A.getGuildId()), N = (0, r.q)({
         userId: n.id
-    }), S = (0, a.bG)([c.A], () => c.A.hidePersonalInformation), C = (0, a.bG)([s.default], () => s.default.locale), R = (0, p.A)(n.id), P = (0, u.A)(n.id);
+    }), S = (0, a.bG)([c.A], () => c.A.hidePersonalInformation), C = (0, a.bG)([d.default], () => d.default.locale), R = (0, p.A)(n.id), P = (0, u.A)(n.id);
     return (0, i.jsxs)(l.IpV, {
         fade: !0,
         className: E.XG,
@@ -51,17 +51,17 @@ function y(e) {
                 color: l.LU0.colors.TEXT_STRONG
             }),
             headingColor: "text-default",
-            children: (0, i.jsx)(d.T, {
+            children: (0, i.jsx)(s.T, {
                 userId: n.id
             })
         }), N.length > 0 && (0, i.jsx)(h.A, {
             heading: v.intl.string(v.t["Uv/eTx"]),
-            children: (0, i.jsx)(m.A, {
+            children: (0, i.jsx)(f.A, {
                 applicationIds: N
             })
         }), (0, i.jsx)(h.A, {
             heading: v.intl.string(v.t.a6XYD9),
-            children: (0, i.jsx)(f.A, {
+            children: (0, i.jsx)(m.A, {
                 userId: n.id,
                 guildId: t?.guildId,
                 tooltipDelay: b.In
@@ -82,9 +82,9 @@ function y(e) {
                 applicationRoleConnection: e,
                 locale: C,
                 onApplicationClicked: () => {
-                    j({
+                    y({
                         action: "PRESS_APP_CONNECTION"
-                    }), y()
+                    }), j()
                 },
                 selectedGuildId: T ?? void 0
             }, e.application.id))

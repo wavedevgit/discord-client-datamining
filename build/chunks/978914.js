@@ -45,12 +45,12 @@ function A(e) {
 }
 async function g() {
     try {
-        for (; !l().isEmpty(h);) await p()
+        for (; !l().isEmpty(h);) await _()
     } finally {
         m = null
     }
 }
-async function p() {
+async function _() {
     let e = Array.from(h).slice(0, 25);
     try {
         let t = await s.Bo.get({

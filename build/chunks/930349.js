@@ -1,6 +1,6 @@
 /** chunk id: 930349 params = (module,exports,require) **/
 t.d(n, {
-    NW: () => m,
+    NW: () => f,
     Yt: () => p,
     kL: () => g
 });
@@ -9,8 +9,8 @@ t(64700);
 var a = t(503698),
     l = t.n(a),
     r = t(158954),
-    d = t(990078),
-    s = t(985018),
+    s = t(990078),
+    d = t(985018),
     o = t(967024);
 
 function c() {
@@ -43,8 +43,8 @@ function u(e) {
         onClick: n,
         type: t,
         accessibleLabel: a
-    } = e, l = "remove" === t ? s.intl.string(s.t.N86XcP) : s.intl.string(s.t.wgIPss);
-    return (0, i.jsx)(d.m, {
+    } = e, l = "remove" === t ? d.intl.string(d.t.N86XcP) : d.intl.string(d.t.wgIPss);
+    return (0, i.jsx)(s.m, {
         text: l,
         ariaHidden: !0,
         children: (0, i.jsx)(r.K0, {
@@ -77,8 +77,8 @@ function A(e) {
         onClick: t,
         accessibleLabel: a,
         children: l,
-        showOverlay: d = !1,
-        overlayIcon: s,
+        showOverlay: s = !1,
+        overlayIcon: d,
         overlayControls: u,
         disabled: A = !1
     } = e;
@@ -94,8 +94,8 @@ function A(e) {
             children: [(0, i.jsx)("div", {
                 className: o.content,
                 children: l
-            }), d && !A && (0, i.jsx)(c, {}), null != s && (0, i.jsx)(_, {
-                icon: s,
+            }), s && !A && (0, i.jsx)(c, {}), null != d && (0, i.jsx)(_, {
+                icon: d,
                 iconAlignment: "bar" === n ? "right" : "center"
             })]
         }), !A && u]
@@ -110,7 +110,7 @@ function g(e) {
     })
 }
 
-function m(e) {
+function f(e) {
     let {
         deleteButtonConfig: n,
         ...t

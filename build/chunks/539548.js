@@ -7,8 +7,8 @@ t(64700);
 var a = t(311907),
     l = t(397927),
     r = t(517164),
-    d = t(290863),
-    s = t(461213),
+    s = t(290863),
+    d = t(461213),
     o = t(975571),
     c = t(622543),
     _ = t(146655),
@@ -16,8 +16,8 @@ var a = t(311907),
     p = t(900179),
     A = t(837924),
     g = t(558628),
-    m = t(842241),
-    f = t(282797),
+    f = t(842241),
+    m = t(282797),
     h = t(518477),
     I = t(652215),
     x = t(985018),
@@ -29,9 +29,9 @@ function E(e) {
         user: n,
         currentUser: t,
         guildId: E,
-        onClose: y
+        onClose: j
     } = e, {
-        live: j,
+        live: y,
         recent: T,
         stream: N
     } = (0, _.A)(n.id), {
@@ -40,41 +40,41 @@ function E(e) {
     } = (0, u.A)({
         userId: n.id,
         guildId: E
-    }), R = (0, a.bG)([r.A], () => r.A.isFetchingUserOutbox(n.id)), P = n.id === t.id, L = (0, a.bG)([s.A, d.A], () => {
-        let e = P ? s.A.getStatus() : d.A.getStatus(n.id);
+    }), R = (0, a.bG)([r.A], () => r.A.isFetchingUserOutbox(n.id)), P = n.id === t.id, L = (0, a.bG)([d.A, s.A], () => {
+        let e = P ? d.A.getStatus() : s.A.getStatus(n.id);
         return e === l.clD.OFFLINE || e === l.clD.INVISIBLE
-    }), O = (0, a.bG)([c.A], () => c.A.getUserProfile(n.id)?.private === !0), D = j.length > 0 || null != N, k = !O && null == N && null == C && null != S, U = !L && (D || k), B = T.length > 0;
-    return U || B || !R ? (0, i.jsxs)(l.IpV, {
+    }), O = (0, a.bG)([c.A], () => c.A.getUserProfile(n.id)?.private === !0), D = y.length > 0 || null != N, k = !O && null == N && null == C && null != S, B = !L && (D || k), U = T.length > 0;
+    return B || U || !R ? (0, i.jsxs)(l.IpV, {
         className: b.XG,
         fade: !0,
-        children: [U ? (0, i.jsx)(p.A, {
+        children: [B ? (0, i.jsx)(p.A, {
             "aria-label": x.intl.string(x.t.J6STd9),
             children: (0, i.jsxs)("ul", {
                 className: b.Ci,
                 children: [null != N && (0, i.jsx)("li", {
-                    children: (0, i.jsx)(m.A, {
+                    children: (0, i.jsx)(f.A, {
                         user: n,
                         currentUser: t,
                         stream: N,
-                        onClose: y
+                        onClose: j
                     })
-                }), j.map((e, a) => (0, i.jsx)("li", {
+                }), y.map((e, a) => (0, i.jsx)("li", {
                     children: (0, i.jsx)(A.A, {
                         user: n,
                         currentUser: t,
                         activity: e,
-                        onClose: y
+                        onClose: j
                     })
                 }, `live-${a}`)), k && (0, i.jsx)("li", {
-                    children: (0, i.jsx)(f.A, {
+                    children: (0, i.jsx)(m.A, {
                         user: n,
                         currentUser: t,
                         voiceChannel: S,
-                        onClose: y
+                        onClose: j
                     })
                 })]
             })
-        }) : null, B ? (0, i.jsx)(p.A, {
+        }) : null, U ? (0, i.jsx)(p.A, {
             heading: x.intl.string(x.t.M0zgnT),
             introText: P ? x.intl.format(x.t["4bk9Ak"], {
                 learnMoreHook: (e, n) => (0, i.jsx)(l.MzZ, {
@@ -89,7 +89,7 @@ function E(e) {
                     children: (0, i.jsx)(g.A, {
                         user: n,
                         entry: e,
-                        onClose: y
+                        onClose: j
                     })
                 }, e.id))
             })

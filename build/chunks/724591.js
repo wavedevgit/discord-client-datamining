@@ -100,7 +100,7 @@ let R = l.memo(function(e) {
                 }), r]
             })
         }), [t.id, s, F, H, K, k]),
-        X = l.useMemo(() => {
+        q = l.useMemo(() => {
             if (null == U) return;
             let e = null != U.assetId ? N.A.toURLSafe((0, C.YE)(U.applicationId, U.assetId, 128, "webp")) : void 0,
                 t = null != U.backgroundImageAssetId ? N.A.toURLSafe((0, C.YE)(U.applicationId, U.backgroundImageAssetId, 128, "webp")) : void 0;
@@ -109,22 +109,22 @@ let R = l.memo(function(e) {
                 backgroundImageUrl: t
             }
         }, [U]),
-        q = l.useCallback(() => V ? (0, i.jsx)(E.A, {
+        X = l.useCallback(() => V ? (0, i.jsx)(E.A, {
             onActionClick: H,
             onActionMouseDown: F,
             onRender: Y,
             onRequestClose: W,
             targetElementRef: j,
-            skuImageDetails: X,
+            skuImageDetails: q,
             title: y.intl.string(y.t["7PvvS9"]),
             body: y.intl.formatToPlainString(y.t["9J4h1a"], {
                 applicationName: U.applicationName
             })
-        }) : null, [V, U, H, F, Y, W, X]);
+        }) : null, [V, U, H, F, Y, W, q]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(x.A, {
             ref: R,
             children: z
-        }), !O && !L && !M && q()]
+        }), !O && !L && !M && X()]
     })
 })

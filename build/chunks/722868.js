@@ -1,23 +1,23 @@
 /** chunk id: 722868 params = (module,exports,require) **/
-n.d(l, {
+l.d(n, {
     A: () => x
 });
-var t = n(627968),
-    i = n(311907),
-    s = n(397927),
-    a = n(688810),
-    r = n(287809),
-    o = n(562153),
-    d = n(183555),
-    c = n(591179),
-    u = n(657331),
-    m = n(950191),
-    p = n(985018);
+var i = l(627968),
+    t = l(311907),
+    s = l(397927),
+    a = l(688810),
+    r = l(287809),
+    o = l(562153),
+    d = l(183555),
+    c = l(591179),
+    u = l(657331),
+    m = l(950191),
+    p = l(985018);
 
 function x(e) {
     let {
-        user: l,
-        guildId: n,
+        user: n,
+        guildId: l,
         channelId: x,
         displayProfile: A,
         onClose: g
@@ -25,44 +25,44 @@ function x(e) {
         analyticsLocations: f,
         sourceAnalyticsLocations: h
     } = (0, a.Ay)(), {
-        context: j,
-        trackUserProfileAction: v
-    } = (0, d.NJ)(), I = (0, m.Ay)(l.id, n), N = (0, i.bG)([r.default], () => r.default.getCurrentUser()?.id === l.id), y = (0, c.X)("useViewUserProfileModalItem");
-    return N && y || I?.guildId == null ? null : A?.guildId == null || A?.private ? A?.guildId != null ? null : (0, t.jsx)(s.Drp, {
+        context: v,
+        trackUserProfileAction: j
+    } = (0, d.NJ)(), I = (0, m.Ay)(n.id, l), N = (0, t.bG)([r.default], () => r.default.getCurrentUser()?.id === n.id), y = (0, c.X)("useViewUserProfileModalItem");
+    return N && y || I?.guildId == null ? null : A?.guildId == null || A?.private ? A?.guildId != null ? null : (0, i.jsx)(s.Drp, {
         id: "view-server-profile",
         label: p.intl.string(p.t.DisZzB),
         subtext: p.intl.formatToPlainString(p.t["mn/nW2"], {
-            displayName: o.Ay.getName(n, x, l)
+            displayName: o.Ay.getName(l, x, n)
         }),
         action: () => {
             g?.(), (0, u.openUserProfileModal)({
-                userId: l.id,
-                ...j,
-                guildId: n,
+                userId: n.id,
+                ...v,
+                guildId: l,
                 sourceAnalyticsLocations: h
-            }), v({
+            }), j({
                 action: "PRESS_VIEW_SERVER_PROFILE",
                 analyticsLocations: f,
-                ...j
+                ...v
             })
         }
-    }) : (0, t.jsx)(s.Drp, {
+    }) : (0, i.jsx)(s.Drp, {
         id: "view-main-profile",
         label: p.intl.string(p.t.GISTta),
         subtext: p.intl.formatToPlainString(p.t["mn/nW2"], {
-            displayName: o.Ay.getName(void 0, void 0, l)
+            displayName: o.Ay.getName(void 0, void 0, n)
         }),
         action: () => {
             g?.(), (0, u.openUserProfileModal)({
-                userId: l.id,
-                ...j,
+                userId: n.id,
+                ...v,
                 guildId: void 0,
-                originGuildId: n,
+                originGuildId: l,
                 sourceAnalyticsLocations: h
-            }), v({
+            }), j({
                 action: "PRESS_VIEW_MAIN_PROFILE",
                 analyticsLocations: f,
-                ...j
+                ...v
             })
         }
     })

@@ -1,6 +1,6 @@
 /** chunk id: 732637 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var i = n(627968),
     l = n(64700),
@@ -15,28 +15,28 @@ var i = n(627968),
     m = n(902439),
     A = n(5867),
     g = n(652215);
-let p = (e, t) => {
+let _ = (e, t) => {
     s.h.wait(() => {
         (0, r.I_)(e, t)
     })
 };
 
-function _(e) {
+function p(e) {
     let t, {
             embedId: n,
             className: s,
             style: r
         } = e,
-        _ = (0, a.bG)([o.A], () => o.A.getWindow(g.MLl.CHANNEL_CALL_POPOUT)),
+        p = (0, a.bG)([o.A], () => o.A.getWindow(g.MLl.CHANNEL_CALL_POPOUT)),
         f = (0, m.A)(),
         E = (0, a.bG)([d.Ay], () => d.Ay.getActivityPanelMode());
-    t = null == f || (0, h.A)((0, u.H)(f.location)) || E !== A.Gd.PANEL ? _?.window ?? window : window;
+    t = null == f || (0, h.A)((0, u.H)(f.location)) || E !== A.Gd.PANEL ? p?.window ?? window : window;
     let C = l.useRef(null),
         x = l.useMemo(() => {
             let e = null;
             return () => {
                 null == e && (e = t.requestAnimationFrame(() => {
-                    p(n, C.current?.getBoundingClientRect() ?? null), e = null
+                    _(n, C.current?.getBoundingClientRect() ?? null), e = null
                 }))
             }
         }, [n, t]);
@@ -50,7 +50,7 @@ function _(e) {
         x();
         let i = new t.ResizeObserver(x);
         return i.observe(e), () => {
-            i.disconnect(), p(n, null)
+            i.disconnect(), _(n, null)
         }
     }, [n, x]), (0, i.jsx)("div", {
         ref: C,

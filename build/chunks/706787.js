@@ -1,6 +1,6 @@
 /** chunk id: 706787 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var i = n(627968),
     l = n(64700),
@@ -15,15 +15,15 @@ var i = n(627968),
 let m = 6 * d.A.Millis.SECOND,
     A = 2 * d.A.Millis.SECOND,
     g = 2 * d.A.Millis.SECOND,
-    p = e => `scale(${1- -(e/120)}) rotate(${e}deg)`;
+    _ = e => `scale(${1- -(e/120)}) rotate(${e}deg)`;
 
-function _(e) {
+function p(e) {
     let {
         userId: t,
         voiceChannelEffect: n,
         onComplete: d
     } = e, {
-        emoji: _,
+        emoji: p,
         sentAt: f
     } = n, E = (0, s.bG)([c.A], () => c.A.useReducedMotion), [C, x] = l.useState(!0), S = !E, I = (0, r.pnh)(C, {
         from: {
@@ -57,13 +57,13 @@ function _(e) {
         return t && (0, i.jsx)(a.animated.div, {
             className: h._,
             style: {
-                transform: n.to(p)
+                transform: n.to(_)
             },
             children: (0, i.jsx)(o.A, {
                 className: h.F,
-                emojiId: _.id,
-                emojiName: _.name,
-                animated: _.animated ?? !1
+                emojiId: p.id,
+                emojiName: p.name,
+                animated: p.animated ?? !1
             })
         })
     })

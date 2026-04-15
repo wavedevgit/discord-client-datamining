@@ -157,13 +157,13 @@ function D(e) {
             p._.unsubscribe(b.jej.SCROLL_PAGE_DOWN, t), p._.unsubscribe(b.jej.SCROLL_PAGE_UP, e)
         }
     }, []);
-    let X = l.useCallback(() => {
+    let q = l.useCallback(() => {
             let e = P.current?.getScrollerState();
             if (null == e) return;
             let t = .5 * e.offsetHeight;
             e.scrollHeight - (e.scrollTop + e.offsetHeight) <= t && r?.(S.VA.USER_SCROLL)
         }, [r]),
-        q = l.useMemo(() => {
+        X = l.useMemo(() => {
             let e = {
                     [S.Ur.UNREAD]: [],
                     [S.Ur.TODAY]: [],
@@ -198,7 +198,7 @@ function D(e) {
         Q = l.useMemo(() => {
             let e = [];
             return J ? e.push(A()) : $ ? e.push((0, i.jsx)(M, {}, "empty-state")) : U ? (e.push(...s.map(e => _([e], !0))), e.push(...n.map(e => _([e], !1)))) : o().each(L, t => {
-                0 !== q[t].length && (e.push((0, i.jsx)(O, {
+                0 !== X[t].length && (e.push((0, i.jsx)(O, {
                     group: t,
                     isOpen: K[t],
                     toggleOpenedState: () => {
@@ -209,15 +209,15 @@ function D(e) {
                             viewId: G
                         })
                     }
-                }, t)), K[t] && e.push(...q[t].map(e => _(e, t === S.Ur.UNREAD))))
+                }, t)), K[t] && e.push(...X[t].map(e => _(e, t === S.Ur.UNREAD))))
             }), e
-        }, [n, s, A, K, Y, q, U, _, $, J, G]),
+        }, [n, s, A, K, Y, X, U, _, $, J, G]),
         Z = Q[Q.length - 1],
         ee = l.isValidElement(Z) && Z.type === O,
         et = (0, N.S)(e => e.setInboxReadState);
     l.useEffect(() => {
-        J || et(0 === q.UNREAD.length)
-    }, [q, J, et]);
+        J || et(0 === X.UNREAD.length)
+    }, [X, J, et]);
     let en = (n.length > 0 || s.length > 0) && null != r && V;
     ! function(e) {
         let {
@@ -230,14 +230,14 @@ function D(e) {
             t || i.current || (a(s), i.current = !0)
         }, [a, s, t])
     }({
-        messagesByCategory: q,
+        messagesByCategory: X,
         loadingInitial: W
     });
     let ei = l.useCallback(() => {
-        let e = L.filter(e => K[e]).reduce((e, t) => e + q[t].length, 0),
+        let e = L.filter(e => K[e]).reduce((e, t) => e + X[t].length, 0),
             t = P.current?.getScrollerState();
         return null == t ? 0 : Math.max(0, Math.ceil(t.offsetHeight / 64) - e)
-    }, [K, q]);
+    }, [K, X]);
     l.useEffect(() => {
         J || V || 0 >= ei() || (!ee || z) && r?.(S.VA.FILL_SCROLLER)
     }, [ei, r, J, V, ee, z]);
@@ -253,7 +253,7 @@ function D(e) {
         entrypoint: w,
         messages: n,
         unreadMessages: s,
-        messagesByCategory: q,
+        messagesByCategory: X,
         viewId: G
     }), (0, i.jsx)("div", {
         className: a()(v, R.KQ),
@@ -273,7 +273,7 @@ function D(e) {
                             P.current = e, t.current = e?.getScrollerNode() ?? null
                         },
                         className: a()(R.m4, y),
-                        onScroll: X,
+                        onScroll: q,
                         fade: !0,
                         ...n,
                         children: [Q, en && !ee ? el : null]

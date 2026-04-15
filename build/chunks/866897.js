@@ -15,8 +15,8 @@ var i = n(64700),
     m = n(253932),
     A = n(961350),
     g = n(734057),
-    p = n(580745),
-    _ = n(834942),
+    _ = n(580745),
+    p = n(834942),
     f = n(320501),
     E = n(576705),
     C = n(957565),
@@ -56,7 +56,7 @@ let j = function(e, t, n) {
                 break;
             case "+":
                 (i || O) && function(e) {
-                    let t = null == e.guild_id || _.A.canChatInGuild(e.guild_id),
+                    let t = null == e.guild_id || p.A.canChatInGuild(e.guild_id),
                         n = m.jW.getSetting(),
                         {
                             disableReactionCreates: i
@@ -96,7 +96,7 @@ let j = function(e, t, n) {
                 R && (n.preventDefault(), (0, y.cl)(P, D));
                 break;
             case "escape":
-                p.A.isEditing(P.id, D.id) ? l.A.endEditMessage(P.id) : x._.dispatch(b.jej.TEXTAREA_FOCUS)
+                _.A.isEditing(P.id, D.id) ? l.A.endEditMessage(P.id) : x._.dispatch(b.jej.TEXTAREA_FOCUS)
         }
     }, [e, t])
 }

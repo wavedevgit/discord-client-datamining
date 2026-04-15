@@ -22,11 +22,11 @@ let d = [],
     },
     A = [],
     g = 10 * o.A.Millis.SECOND,
-    p = (0, l.debounce)(() => {
+    _ = (0, l.debounce)(() => {
         let e = (0, c.fr)(h);
         s.OR.announce(e, "polite"), h = []
     }, 500);
-class _ extends a.Ay.Store {
+class p extends a.Ay.Store {
     static displayName = "VoiceChannelEffectsStore";
     get recentlyUsedEmojis() {
         return d
@@ -41,7 +41,7 @@ class _ extends a.Ay.Store {
         return u[e]
     }
 }
-let f = new _(r.h, {
+let f = new p(r.h, {
     VOICE_CHANNEL_EFFECT_CLEAR: e => {
         let {
             userId: t
@@ -67,7 +67,7 @@ let f = new _(r.h, {
         }, h = [...h, {
             emojiName: t.name,
             userId: n
-        }], p())
+        }], _())
     },
     VOICE_CHANNEL_EFFECT_SENT_LOCAL: () => {
         let e = new Date;

@@ -19,8 +19,8 @@ let u = function(e) {
         buttonIcon: m,
         buttonSubmitting: A,
         onButtonClick: g,
-        imageSrc: p,
-        animationSrc: _,
+        imageSrc: _,
+        animationSrc: p,
         secondaryButtonText: f,
         onSecondaryButtonClick: E,
         children: C,
@@ -32,12 +32,12 @@ let u = function(e) {
         children: l.Children.only(C)
     });
     let T = null;
-    return null != p ? T = (0, i.jsx)("img", {
+    return null != _ ? T = (0, i.jsx)("img", {
         alt: "",
-        src: p,
+        src: _,
         className: d.Sl
-    }) : null != _ && (T = (0, i.jsx)(r.akl, {
-        importData: _,
+    }) : null != p && (T = (0, i.jsx)(r.akl, {
+        importData: p,
         shouldAnimate: !x,
         className: d.lY
     })), (0, i.jsxs)("div", {

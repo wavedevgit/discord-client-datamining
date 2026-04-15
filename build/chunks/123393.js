@@ -13,21 +13,21 @@ var i = n(627968),
     u = n(985018);
 
 function h(e, t, h, m) {
-    let [A, g] = l.useState(!1), p = (0, a.bG)([o.A], () => o.A.getChannel(m)), _ = l.useCallback(() => {
+    let [A, g] = l.useState(!1), _ = (0, a.bG)([o.A], () => o.A.getChannel(m)), p = l.useCallback(() => {
         (0, s.showToast)((0, s.createToast)(u.intl.string(u.t.R0RpRX), s.ToastType.FAILURE))
     }, []), f = l.useCallback(async () => {
         if (!A && null != e && null != t && null != h) {
-            if (null != p) return void r.default.selectPrivateChannel(p.id);
+            if (null != _) return void r.default.selectPrivateChannel(_.id);
             g(!0);
             try {
                 await c.A.createOrEnterJoinRequestInterview(h)
             } catch {
-                _()
+                p()
             } finally {
                 g(!1)
             }
         }
-    }, [e, h, p, _, A, t]);
+    }, [e, h, _, p, A, t]);
     return {
         approveRequest: async () => {
             if (!A && null != e && null != t && null != h) {
@@ -35,7 +35,7 @@ function h(e, t, h, m) {
                 try {
                     await c.A.updateGuildJoinRequest(e, t, h, d.B5.APPROVED)
                 } catch {
-                    _()
+                    p()
                 } finally {
                     g(!1)
                 }
@@ -51,7 +51,7 @@ function h(e, t, h, m) {
                     guildId: e,
                     userId: t,
                     guildJoinRequestId: h,
-                    onError: _
+                    onError: p
                 })
             })
         },

@@ -1,6 +1,6 @@
 /** chunk id: 530804 params = (module,exports,require) **/
 n.d(t, {
-    $n: () => _,
+    $n: () => p,
     uy: () => E,
     vp: () => f
 }), n(321073);
@@ -17,14 +17,14 @@ var i = n(64700),
     m = n(383501),
     A = n(287809),
     g = n(977997),
-    p = n(403362);
+    _ = n(403362);
 
-function _(e, t) {
+function p(e, t) {
     let n = (0, a.bG)([h.A, m.A], () => e === m.A.getChannelId() ? h.A.getDesyncedVoiceStates() : null),
         s = (0, a.yK)([r.A], () => null == e ? [] : [...r.A.getGuildRingingUsers(e)]),
-        c = (0, a.yK)([A.default], () => s.map(e => A.default.getUser(e)).filter(p.Vq)),
+        c = (0, a.yK)([A.default], () => s.map(e => A.default.getUser(e)).filter(_.Vq)),
         g = (0, a.bG)([d.A], () => d.A.getBasicChannel(e)),
-        _ = i.useMemo(() => c.map(e => ({
+        p = i.useMemo(() => c.map(e => ({
             voiceState: new o.A(e.id),
             user: e,
             member: g?.guild_id != null ? u.Ay.getMember(g?.guild_id, e.id) : null,
@@ -52,7 +52,7 @@ function _(e, t) {
                 return t
             }), 0, e)
         }), i
-    })(n, t, _), [n, t, _])
+    })(n, t, p), [n, t, p])
 }
 
 function f(e, t) {

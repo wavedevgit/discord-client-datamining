@@ -25,16 +25,16 @@ function c(e) {
             groupId: A,
             compact: g = !1
         },
-        messageWindow: p
-    } = e, _ = h.state === r.cmJ.SENDING, f = h.id === A, E = (0, l.Lt)(h.flags, r.pr7.EPHEMERAL), C = h.state === r.cmJ.SEND_FAILED;
-    return _ || E && !C ? null : (0, i.jsx)(s.A, {
+        messageWindow: _
+    } = e, p = h.state === r.cmJ.SENDING, f = h.id === A, E = (0, l.Lt)(h.flags, r.pr7.EPHEMERAL), C = h.state === r.cmJ.SEND_FAILED;
+    return p || E && !C ? null : (0, i.jsx)(s.A, {
         className: o.Uo,
         innerClassName: o.Mc,
         isHeader: !g && f && !(0, a.A)(h),
         isReply: !g && h.type === r.lAJ.REPLY && null != h.messageReference,
         channel: m,
         message: h,
-        messageWindow: p,
+        messageWindow: _,
         setPopout: t,
         showEmojiPicker: n,
         showEmojiBurstPicker: c,

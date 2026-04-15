@@ -17,8 +17,8 @@ var i = n(627968),
     m = n(807884),
     A = n(93474),
     g = n(201275),
-    p = n(384231),
-    _ = n(853145),
+    _ = n(384231),
+    p = n(853145),
     f = n(9842),
     E = n(976860),
     C = n(253932),
@@ -72,7 +72,7 @@ function Z(e) {
     } = (0, c.rm)(e.id ?? ""), h = (0, d.bG)([f.A], () => f.A.getMessageByReference(l)), {
         popouts: m,
         setPopout: A
-    } = (0, P.A)(n.id, z.Fd), g = (0, j.Ay)(n), p = (0, L.fF)(n), _ = (0, L.ZD)(n);
+    } = (0, P.A)(n.id, z.Fd), g = (0, j.Ay)(n), _ = (0, L.fF)(n), p = (0, L.ZD)(n);
     return n.type === Y.lAJ.THREAD_STARTER_MESSAGE && null != h && h.state === f.a.LOADED ? (0, i.jsx)(X, {
         ...e,
         viewingChannelId: n.channel_id,
@@ -97,8 +97,8 @@ function Z(e) {
         }),
         childrenSystemMessage: (0, K.A)(e),
         childrenMessageContent: null,
-        "aria-labelledby": p,
-        "aria-describedby": _,
+        "aria-labelledby": _,
+        "aria-describedby": p,
         hasThread: !1,
         author: g
     })
@@ -117,7 +117,7 @@ function X(e) {
         },
         compact: m = !1,
         className: A,
-        groupId: _,
+        groupId: p,
         viewingChannelId: x
     } = e, I = n.type === Y.lAJ.REPLY ? n.messageReference : void 0, {
         onFocus: T,
@@ -130,12 +130,12 @@ function X(e) {
         popouts: G,
         selected: F,
         setPopout: V
-    } = (0, P.A)(n.id, z.Fd), $ = C.hD.useSetting(), Z = C.rs.useSetting(), X = (0, d.bG)([f.A], () => f.A.getMessageByReference(I)), Q = (0, p.S)((n.editedTimestamp ?? n.timestamp).valueOf()), {
+    } = (0, P.A)(n.id, z.Fd), $ = C.hD.useSetting(), Z = C.rs.useSetting(), X = (0, d.bG)([f.A], () => f.A.getMessageByReference(I)), Q = (0, _.S)((n.editedTimestamp ?? n.timestamp).valueOf()), {
         handleMouseEnter: ee,
         handleMouseLeave: et,
         isHovered: en
     } = (0, O.yp)({
-        groupId: _,
+        groupId: p,
         message: n,
         defaultValue: F
     }), ei = (0, d.bG)([h.A], () => h.A.keyboardModeEnabled), el = F || ei && y, ea = el || en, es = (0, d.bG)([S.A], () => S.A.isDeveloper), {
@@ -152,7 +152,7 @@ function X(e) {
         allowDevLinks: es,
         previewLinkTarget: !0,
         viewingChannelId: x
-    }), ed = (0, D.A)(a, r, ei), eu = (0, j.Ay)(n), eh = (0, L.fF)(n, _), em = (0, L.ZD)(n), eA = (0, B.A)(e, er, !1), eg = l.useCallback(() => (0, E.uh)(o, r, a), [o, r, a]), ep = (0, g.$7)({
+    }), ed = (0, D.A)(a, r, ei), eu = (0, j.Ay)(n), eh = (0, L.fF)(n, p), em = (0, L.ZD)(n), eA = (0, B.A)(e, er, !1), eg = l.useCallback(() => (0, E.uh)(o, r, a), [o, r, a]), e_ = (0, g.$7)({
         guildId: o,
         roleId: eu.iconRoleId
     });
@@ -173,7 +173,7 @@ function X(e) {
                 [q.mK]: n.mentioned,
                 [q.M1]: (0, N.ec)(n),
                 [q.H4]: (0, b.A)(n),
-                [q._A]: n.id === _ || n.type === Y.lAJ.REPLY,
+                [q._A]: n.id === p || n.type === Y.lAJ.REPLY,
                 [q.wH]: el
             }),
             zalgo: !0,
@@ -196,7 +196,7 @@ function X(e) {
                 replyReference: I,
                 author: eu,
                 repliedMessage: X,
-                roleIcon: ep
+                roleIcon: e_
             }),
             childrenAccessories: (0, U.A)({
                 channelMessageProps: e,
@@ -256,14 +256,14 @@ let Q = l.memo(function(e) {
             handleMouseEnter: em,
             handleMouseLeave: eA,
             hasHovered: eg,
-            isHovered: ep
+            isHovered: e_
         } = (0, O.yp)({
             groupId: ee,
             message: r,
             defaultValue: ec
         }),
         {
-            isFocused: e_,
+            isFocused: ep,
             hasFocused: ef,
             handleFocus: eE,
             handleBlur: eC
@@ -276,11 +276,11 @@ let Q = l.memo(function(e) {
         }, [eC, eA]),
         eI = (0, d.bG)([I.A], () => I.A.isEditing($, E), [$, E]),
         eT = (0, d.bG)([h.A], () => h.A.keyboardModeEnabled),
-        ev = ec || eI || eT && e_,
-        eN = ev || ep,
+        ev = ec || eI || eT && ep,
+        eN = ev || e_,
         ey = (0, d.bG)([x.A], () => r.hasFlag(Y.pr7.HAS_THREAD) && x.A.getChannel(T.default.castMessageIdAsChannelId(r.id))),
         eb = r.isFirstMessageInForumPost(y),
-        ej = (0, p.S)((r.editedTimestamp ?? r.timestamp).valueOf()),
+        ej = (0, _.S)((r.editedTimestamp ?? r.timestamp).valueOf()),
         eR = (0, d.bG)([S.A], () => S.A.isDeveloper),
         {
             content: eM,
@@ -298,7 +298,7 @@ let Q = l.memo(function(e) {
         }),
         eD = (0, D.A)(E, $, eT),
         eP = (0, j.Ay)(r),
-        ek = (0, d.bG)([_.A], () => _.A.getPendingReply($)),
+        ek = (0, d.bG)([p.A], () => p.A.getPendingReply($)),
         ew = (t = l.useRef(Q), l.useEffect(() => {
             t.current = Q ?? t.current
         }), Q ?? t.current),
@@ -391,7 +391,7 @@ let Q = l.memo(function(e) {
                         buttonProps: e,
                         setPopout: ed,
                         messagePopouts: eo,
-                        isFocused: ep || e_,
+                        isFocused: e_ || ep,
                         messageWindow: eW.current
                     }) : void 0,
                     childrenSystemMessage: (0, K.A)(e),

@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(657331),
     A = n(287809),
     g = n(486020),
-    p = n(403362),
-    _ = n(518477),
+    _ = n(403362),
+    p = n(518477),
     f = n(985018),
     E = n(604545);
 
@@ -56,7 +56,7 @@ function C(e) {
                 height: 24,
                 children: s
             }, l.id)
-        }).filter(p.Vq)
+        }).filter(_.Vq)
     }, [C]);
     return null == C || 0 === C.length ? (0, i.jsx)("div", {
         className: s()(E.kL, a ? E.yF : null),
@@ -73,7 +73,7 @@ function C(e) {
             (0, m.openUserProfileModal)({
                 userId: t,
                 channelId: n,
-                tabSection: _.RP.MUTUAL_GUILDS,
+                tabSection: p.RP.MUTUAL_GUILDS,
                 sourceAnalyticsLocations: [c.A.DM_CHANNEL]
             })
         },

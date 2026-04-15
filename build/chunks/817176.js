@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(587895),
     A = n(713517),
     g = n(993046),
-    p = n(544028),
-    _ = n(594832),
+    _ = n(544028),
+    p = n(594832),
     f = n(121700),
     E = n(627001),
     C = n(754804),
@@ -53,7 +53,7 @@ function O(e) {
         analyticsLocations: P,
         onCardClick: k,
         onButtonClick: w
-    } = e, U = l.useRef(null), G = (0, d.bG)([p.A], () => (0, c.Mwr)(p.A.theme)), F = (0, d.bG)([h.A], () => h.A.useReducedMotion), {
+    } = e, U = l.useRef(null), G = (0, d.bG)([_.A], () => (0, c.Mwr)(_.A.theme)), F = (0, d.bG)([h.A], () => h.A.useReducedMotion), {
         isHoveringOrFocusing: H
     } = (0, A.A)(U), {
         guildId: B
@@ -170,7 +170,7 @@ function O(e) {
                 sku: a,
                 isCardHovered: H,
                 location: "SocialLayerGiftingVoicePanelFeaturedSkuItemCard",
-                replacedElement: M && !r && R === _.uS.WISHLIST ? (0, i.jsx)(C.n, {
+                replacedElement: M && !r && R === p.uS.WISHLIST ? (0, i.jsx)(C.n, {
                     spec: j,
                     user: s,
                     guildId: O ?? void 0,

@@ -47,8 +47,8 @@ var i = n(627968),
     K = n(993838),
     Y = n(849736),
     z = n(776781),
-    X = n(233993),
-    q = n(312006),
+    q = n(233993),
+    X = n(312006),
     $ = n(446600),
     J = n(96566),
     Q = n(302884),
@@ -159,7 +159,7 @@ function e_(e) {
         canManageGuildEvent: d
     } = (0, b.nr)(t), c = (0, s.bG)([$.A], () => $.A.getStageInstanceByChannel(t.id), [t.id]), u = (0, s.bG)([C.Ay], () => C.Ay.getGuildScheduledEvent(c?.guild_scheduled_event_id)), {
         suppress: _
-    } = (0, j.A)(t), m = B.default.getId(), [p] = (0, ea.A)(t), g = q.Ay.isModerator(m, t.id), x = (0, z.Ni)(t.id), I = d(u), {
+    } = (0, j.A)(t), m = B.default.getId(), [p] = (0, ea.A)(t), g = X.Ay.isModerator(m, t.id), x = (0, z.Ni)(t.id), I = d(u), {
         parentAnalyticsLocation: N
     } = (0, A.Ay)(), T = l.useRef(null), y = () => (function(e) {
         let {
@@ -287,9 +287,9 @@ let eg = l.memo(function(e) {
         reachedLimit: T
     } = (0, v.A)(t), S = (0, s.bG)([W.default], () => W.default.getCurrentUser()), b = (0, s.bG)([V.Ay], () => (0, I.A)(V.Ay)), D = (0, s.bG)([F.A], () => F.A.getVoiceChannelId() === t.id, [t.id]), G = (0, s.bG)([_.A], () => _.A.getStreamParticipants(t.id)[0], [t.id]), P = (0, J.qT)(t.id), B = N > 0, H = T && !P || null != G && G.user.id !== S?.id, K = (0, E.s)("AudioDeviceMenu", n, {
         entrypoint: er.GK.CARET
-    }), Y = l.useRef(null), X = l.useRef(null);
+    }), Y = l.useRef(null), q = l.useRef(null);
     if (null == S) return null;
-    let q = (0, i.jsx)(r.YNO, {
+    let X = (0, i.jsx)(r.YNO, {
         targetElementRef: Y,
         renderPopout: e => {
             let {
@@ -335,7 +335,7 @@ let eg = l.memo(function(e) {
         children: [D && !a ? (0, i.jsxs)("div", {
             className: ed.qi,
             children: [(0, i.jsx)(r.YNO, {
-                targetElementRef: X,
+                targetElementRef: q,
                 renderPopout: e => {
                     let {
                         closePopout: t
@@ -365,7 +365,7 @@ let eg = l.memo(function(e) {
                         isShown: l
                     } = t;
                     return (0, i.jsx)(k.A, {
-                        ref: X,
+                        ref: q,
                         centerButton: !0,
                         onPopoutClick: n,
                         selfMute: o,
@@ -376,7 +376,7 @@ let eg = l.memo(function(e) {
                         awaitingRemote: u
                     })
                 }
-            }), B && q]
+            }), B && X]
         }) : null, (0, i.jsxs)("div", {
             className: ed.qi,
             children: [D && !a && B ? (0, i.jsx)(O.rP, {
@@ -423,7 +423,7 @@ let eE = l.memo(function(e) {
     let {
         channel: t,
         isOnStartStageScreen: n
-    } = e, l = (0, ei.A)(t.id), a = (0, z.Ni)(t.id), r = (0, s.bG)([H.A], () => H.A.can(X.QY, t), [t]), o = (0, el.zU)(), d = (0, es.A)(t.id), c = (0, s.bG)([_.A], () => null != t ? _.A.getSelectedParticipant(t.id) : null), u = !d && null == c;
+    } = e, l = (0, ei.A)(t.id), a = (0, z.Ni)(t.id), r = (0, s.bG)([H.A], () => H.A.can(q.QY, t), [t]), o = (0, el.zU)(), d = (0, es.A)(t.id), c = (0, s.bG)([_.A], () => null != t ? _.A.getSelectedParticipant(t.id) : null), u = !d && null == c;
     return n ? (0, i.jsx)(ef, {
         channel: t
     }) : l || a ? (0, i.jsxs)("div", {

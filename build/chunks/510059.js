@@ -1,76 +1,76 @@
 /** chunk id: 510059 params = (module,exports,require) **/
-n.d(l, {
+l.d(n, {
     A: () => C
 });
-var t = n(627968);
-n(64700);
-var i = n(503698),
-    s = n.n(i),
-    a = n(311907),
-    r = n(990078),
-    o = n(397927),
-    d = n(573648),
-    c = n(58149),
-    u = n(681819),
-    m = n(370480),
-    p = n(169869),
-    x = n(773669),
-    A = n(486020),
-    g = n(307600),
-    f = n(652215),
-    h = n(783419),
-    j = n(985018),
-    v = n(622376);
+var i = l(627968);
+l(64700);
+var t = l(503698),
+    s = l.n(t),
+    a = l(311907),
+    r = l(990078),
+    o = l(397927),
+    d = l(573648),
+    c = l(58149),
+    u = l(681819),
+    m = l(370480),
+    p = l(169869),
+    x = l(773669),
+    A = l(486020),
+    g = l(307600),
+    f = l(652215),
+    h = l(783419),
+    v = l(985018),
+    j = l(622376);
 
 function I(e) {
     let {
-        account: l,
-        locale: n,
-        userId: i
-    } = e, s = l.metadata ?? {}, a = (0, m.An)(s[h.pK.CREATED_AT], n), x = d.A.get((0, u.ML)(l.type));
-    return (0, t.jsx)(y, {
+        account: n,
+        locale: l,
+        userId: t
+    } = e, s = n.metadata ?? {}, a = (0, m.An)(s[h.pK.CREATED_AT], l), x = d.A.get((0, u.ML)(n.type));
+    return (0, i.jsx)(y, {
         renderAccountName: () => {
-            let e = x?.getPlatformUserUrl?.(l);
-            return null == e ? (0, t.jsx)(r.m, {
+            let e = x?.getPlatformUserUrl?.(n);
+            return null == e ? (0, i.jsx)(r.m, {
                 overflowOnly: !0,
-                text: l.name,
-                children: (0, t.jsx)(o.Text, {
+                text: n.name,
+                children: (0, i.jsx)(o.Text, {
                     variant: "text-sm/normal",
-                    className: v.GW,
-                    children: l.name
+                    className: j.GW,
+                    children: n.name
                 })
-            }) : (0, t.jsx)(o.MzZ, {
+            }) : (0, i.jsx)(o.MzZ, {
                 href: e,
-                className: v.Y2,
+                className: j.Y2,
                 useDefaultUnderlineStyles: !1,
-                "aria-label": x?.name != null ? `${x.name}, ${l.name}, ${j.intl.string(j.t.q5jLJB)}` : `${l.name}, ${j.intl.string(j.t.q5jLJB)}`,
-                onClick: n => {
+                "aria-label": x?.name != null ? `${x.name}, ${n.name}, ${v.intl.string(v.t.q5jLJB)}` : `${n.name}, ${v.intl.string(v.t.q5jLJB)}`,
+                onClick: l => {
                     (0, c.zV)(f.HAw.CONNECTED_ACCOUNT_VIEWED, {
-                        platform_type: l.type,
-                        other_user_id: i
+                        platform_type: n.type,
+                        other_user_id: t
                     }), (0, g.h)({
                         href: e,
                         trusted: x?.type !== f.fg2.DOMAIN
-                    }, n)
+                    }, l)
                 },
-                children: (0, t.jsxs)("div", {
-                    className: v.vi,
-                    children: [(0, t.jsx)(r.m, {
+                children: (0, i.jsxs)("div", {
+                    className: j.vi,
+                    children: [(0, i.jsx)(r.m, {
                         overflowOnly: !0,
-                        text: l.name,
-                        children: (0, t.jsx)(o.Text, {
+                        text: n.name,
+                        children: (0, i.jsx)(o.Text, {
                             variant: "text-sm/normal",
-                            className: v.GW,
-                            children: l.name
+                            className: j.GW,
+                            children: n.name
                         })
-                    }), (0, t.jsx)(o.I9m, {
+                    }), (0, i.jsx)(o.I9m, {
                         size: "xs",
                         color: "currentColor"
                     })]
                 })
             })
         },
-        renderMetadata: () => l.type === f.fg2.REDDIT ? (0, p.xE)(s) : l.type === f.fg2.STEAM ? (0, p.dy)(s) : l.type === f.fg2.BLUESKY || l.type === f.fg2.MASTODON || l.type === f.fg2.TWITTER ? (0, p.ED)(s) : l.type === f.fg2.PAYPAL ? (0, p.gZ)(s) : l.type === f.fg2.EBAY ? (0, p.ub)(s) : l.type === f.fg2.TIKTOK ? (0, p.HU)(s) : null,
+        renderMetadata: () => n.type === f.fg2.REDDIT ? (0, p.xE)(s) : n.type === f.fg2.STEAM ? (0, p.dy)(s) : n.type === f.fg2.BLUESKY || n.type === f.fg2.MASTODON || n.type === f.fg2.TWITTER ? (0, p.ED)(s) : n.type === f.fg2.PAYPAL ? (0, p.gZ)(s) : n.type === f.fg2.EBAY ? (0, p.ub)(s) : n.type === f.fg2.TIKTOK ? (0, p.HU)(s) : null,
         platformIcon: x?.icon.lightPNG,
         platformName: x?.name,
         createdAtDate: a
@@ -79,29 +79,29 @@ function I(e) {
 
 function N(e) {
     let {
-        identityWithApplication: l
+        identityWithApplication: n
     } = e, {
-        identity: n,
-        application: i
-    } = l;
-    if (null == n.profile || null == n.profile.username || null == i) return null;
+        identity: l,
+        application: t
+    } = n;
+    if (null == l.profile || null == l.profile.username || null == t) return null;
     let s = A.Ay.getApplicationIconURL({
-        id: i.id,
-        icon: i.icon
+        id: t.id,
+        icon: t.icon
     });
-    return (0, t.jsx)(y, {
-        renderAccountName: () => (0, t.jsx)(r.m, {
+    return (0, i.jsx)(y, {
+        renderAccountName: () => (0, i.jsx)(r.m, {
             overflowOnly: !0,
-            text: n.profile.username,
-            children: (0, t.jsx)(o.Text, {
+            text: l.profile.username,
+            children: (0, i.jsx)(o.Text, {
                 variant: "text-sm/normal",
-                className: v.GW,
-                children: n.profile.username
+                className: j.GW,
+                children: l.profile.username
             })
         }),
         renderMetadata: () => null,
         platformIcon: s,
-        platformName: i.name,
+        platformName: t.name,
         createdAtDate: void 0,
         applyIconBorderRadius: !0
     })
@@ -109,39 +109,39 @@ function N(e) {
 
 function y(e) {
     let {
-        renderAccountName: l,
-        renderMetadata: n,
-        platformName: i,
+        renderAccountName: n,
+        renderMetadata: l,
+        platformName: t,
         platformIcon: a,
         createdAtDate: d,
         applyIconBorderRadius: c = !1
     } = e;
-    return (0, t.jsxs)("li", {
-        className: v.FI,
-        children: [(0, t.jsx)(r.m, {
-            __unsupportedReactNodeAsText: i,
-            children: (0, t.jsx)("div", {
-                className: v.k_,
-                children: (0, t.jsx)("img", {
-                    alt: j.intl.formatToPlainString(j.t.rtm15P, {
-                        name: i
+    return (0, i.jsxs)("li", {
+        className: j.FI,
+        children: [(0, i.jsx)(r.m, {
+            __unsupportedReactNodeAsText: t,
+            children: (0, i.jsx)("div", {
+                className: j.k_,
+                children: (0, i.jsx)("img", {
+                    alt: v.intl.formatToPlainString(v.t.rtm15P, {
+                        name: t
                     }),
-                    className: s()(v.tV, c ? v.sN : null),
+                    className: s()(j.tV, c ? j.sN : null),
                     src: a
                 })
             })
-        }), (0, t.jsxs)("div", {
-            className: v.Hd,
-            children: [(0, t.jsxs)("div", {
-                children: [l(), null != d && (0, t.jsx)(o.Text, {
+        }), (0, i.jsxs)("div", {
+            className: j.Hd,
+            children: [(0, i.jsxs)("div", {
+                children: [n(), null != d && (0, i.jsx)(o.Text, {
                     variant: "text-xs/normal",
-                    children: j.intl.format(j.t["9rfonh"], {
+                    children: v.intl.format(v.t["9rfonh"], {
                         date: d
                     })
                 })]
-            }), (0, t.jsx)("div", {
-                className: v.yu,
-                children: n()
+            }), (0, i.jsx)("div", {
+                className: j.yu,
+                children: l()
             })]
         })]
     })
@@ -149,18 +149,18 @@ function y(e) {
 
 function C(e) {
     let {
-        connections: l,
-        applicationIdentities: n,
-        userId: i,
+        connections: n,
+        applicationIdentities: l,
+        userId: t,
         className: r
     } = e, o = (0, a.bG)([x.default], () => x.default.locale);
-    return 0 === l.length && 0 === n.length ? null : (0, t.jsxs)("ul", {
-        className: s()(v.kL, r),
-        children: [l.map(e => (0, t.jsx)(I, {
+    return 0 === n.length && 0 === l.length ? null : (0, i.jsxs)("ul", {
+        className: s()(j.kL, r),
+        children: [n.map(e => (0, i.jsx)(I, {
             account: e,
-            userId: i,
+            userId: t,
             locale: o
-        }, `${e.type}:${e.id}`)), n?.map(e => (0, t.jsx)(N, {
+        }, `${e.type}:${e.id}`)), l?.map(e => (0, i.jsx)(N, {
             identityWithApplication: e
         }, e.identity.application_id))]
     })

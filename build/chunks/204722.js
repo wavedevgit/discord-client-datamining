@@ -141,11 +141,11 @@ let Y = l.memo(function(e) {
         }, []), l.useEffect(() => {
             ee && (eT(!1), null != eC.current && (clearTimeout(eC.current), eC.current = null))
         }, [ee]);
-        let eS = el?.guildId == null || null == D ? null : (0, i.jsx)(q, {
+        let eS = el?.guildId == null || null == D ? null : (0, i.jsx)(X, {
                 guildId: el.guildId,
                 applicationId: el.id
             }),
-            eb = eh ? (0, i.jsx)(X, {
+            eb = eh ? (0, i.jsx)(q, {
                 tooltipText: H.intl.formatToPlainString(F.default.YhnUVO, {
                     gameName: eE
                 }),
@@ -170,7 +170,7 @@ let Y = l.memo(function(e) {
                         onClose: () => n(V.i.USER_DISMISS)
                     })
                 }
-            }) : eA ? (0, i.jsx)(X, {
+            }) : eA ? (0, i.jsx)(q, {
                 tooltipText: H.intl.formatToPlainString(F.default.lwwiHE, {
                     gameName: eE
                 }),
@@ -284,7 +284,7 @@ let Y = l.memo(function(e) {
         })
     });
 
-function X(e) {
+function q(e) {
     let {
         tooltipText: t,
         onClick: n,
@@ -330,7 +330,7 @@ function X(e) {
     })
 }
 
-function q(e) {
+function X(e) {
     let {
         applicationId: t,
         guildId: n

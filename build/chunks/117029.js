@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(430452),
     A = n(40056),
     g = n(985018),
-    p = n(695292),
-    _ = n(688046);
+    _ = n(695292),
+    p = n(688046);
 
 function f(e) {
     e.preventDefault(), e.stopPropagation()
@@ -109,8 +109,8 @@ let C = l.memo(function(e) {
     return ((0, u.l0)(() => {
         Q.current?.stop()
     }), I && null != n) ? (0, i.jsxs)("div", {
-        className: s()(_.ne, {
-            [_.Ge]: L || H
+        className: s()(p.ne, {
+            [p.Ge]: L || H
         }),
         onMouseEnter: B,
         onMouseLeave: V,
@@ -121,25 +121,25 @@ let C = l.memo(function(e) {
             onMouseLeave: V,
             children: (0, i.jsxs)("div", {
                 ref: F,
-                className: _.Wc,
+                className: p.Wc,
                 style: W,
                 onMouseDown: z,
                 onMouseMove: Y,
                 onMouseUp: J,
                 children: [(0, i.jsx)(q, {
-                    className: s()(_.BZ, {
-                        [p.mirror]: t
+                    className: s()(p.BZ, {
+                        [_.mirror]: t
                     }),
                     streamId: n,
                     paused: a,
                     reportContainerResized: !1
                 }), (0, i.jsx)("div", {
-                    className: _.xq,
+                    className: p.xq,
                     style: $
                 })]
             })
         }), (0, i.jsxs)("div", {
-            className: _.xu,
+            className: p.xu,
             children: [(L || H) && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(c.m_, {
                     text: g.intl.string(g.t.M6Cmwy),

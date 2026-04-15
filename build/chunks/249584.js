@@ -7,8 +7,8 @@ n.d(t, {
     Ns: () => Z,
     UB: () => Y,
     YX: () => Q,
-    bo: () => X,
-    jz: () => q,
+    bo: () => q,
+    jz: () => X,
     lw: () => z,
     mn: () => $
 });
@@ -160,7 +160,7 @@ function z(e) {
     })
 }
 
-function X(e) {
+function q(e) {
     let {
         guildId: t,
         powerups: n,
@@ -242,7 +242,7 @@ function X(e) {
     }) : null
 }
 
-function q(e) {
+function X(e) {
     let {
         guildId: t,
         type: n,

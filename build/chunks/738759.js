@@ -7,8 +7,8 @@ t(64700);
 var a = t(397927),
     l = t(398590),
     r = t(345942),
-    d = t(183555),
-    s = t(913453),
+    s = t(183555),
+    d = t(913453),
     o = t(51943),
     c = t(985018),
     _ = t(643146);
@@ -19,10 +19,10 @@ function u(e) {
         onClose: t
     } = e, {
         trackUserProfileAction: u
-    } = (0, d.NJ)(), {
+    } = (0, s.NJ)(), {
         mutualGuilds: p,
         isFetching: A
-    } = (0, s.A)(n);
+    } = (0, d.A)(n);
     return (0, i.jsx)(a.IpV, {
         className: _.DK,
         fade: !0,
@@ -32,12 +32,12 @@ function u(e) {
         }) : (null != p || A) && p?.length !== 0 ? p?.map(e => {
             let {
                 guild: a,
-                nick: d
+                nick: s
             } = e;
             return (0, i.jsx)(o.A, {
                 user: n,
                 guild: a,
-                nick: d,
+                nick: s,
                 onSelect: () => {
                     var e;
                     u({

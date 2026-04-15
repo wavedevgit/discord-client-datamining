@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(543465),
     A = n(954571),
     g = n(33364),
-    p = n(652215),
-    _ = n(985018);
+    _ = n(652215),
+    p = n(985018);
 
 function f(e) {
     let {
@@ -24,7 +24,7 @@ function f(e) {
     } = e, l = (0, a.bG)([m.Ay], () => m.Ay.isChannelMuted(null, t.id));
     return (0, i.jsx)(r.Button, {
         variant: l ? "secondary" : "critical-primary",
-        text: l ? _.intl.string(_.t.YqAjXy) : _.intl.string(_.t.w4m945),
+        text: l ? p.intl.string(p.t.YqAjXy) : p.intl.string(p.t.w4m945),
         onClick: function() {
             (0, r.mMO)(async () => {
                 let {
@@ -56,26 +56,26 @@ function E(e) {
     }
     return (0, i.jsx)(r.Button, {
         variant: "secondary",
-        text: _.intl.string(_.t["5S3sQF"]),
+        text: p.intl.string(p.t["5S3sQF"]),
         onClick: () => {
             (0, r.qfG)(e => (0, i.jsx)(s.aFV, {
-                title: _.intl.string(_.t["DT39A+"]),
-                subtitle: _.intl.formatToPlainString(_.t.QWGvxA, {
+                title: p.intl.string(p.t["DT39A+"]),
+                subtitle: p.intl.formatToPlainString(p.t.QWGvxA, {
                     applicationName: n.name
                 }),
                 actions: [{
-                    text: _.intl.string(_.t["ETE/oC"]),
+                    text: p.intl.string(p.t["ETE/oC"]),
                     variant: "secondary",
                     onClick: e.onClose
                 }, {
-                    text: _.intl.string(_.t.xUqheM),
+                    text: p.intl.string(p.t.xUqheM),
                     variant: "critical-primary",
                     onClick: () => {
                         h(), e.onClose()
                     }
                 }],
                 ...e
-            })), A.default.track(p.HAw.APP_MANAGE_CTA_CLICKED, {
+            })), A.default.track(_.HAw.APP_MANAGE_CTA_CLICKED, {
                 application_id: n.id,
                 channel_id: t.id,
                 channel_type: t.type
@@ -88,7 +88,7 @@ function C(e) {
     let {
         channel: t,
         user: n
-    } = e, s = (0, u.A)(n?.id ?? p.dJq), {
+    } = e, s = (0, u.A)(n?.id ?? _.dJq), {
         authorizedAppToken: c,
         authorizedAppsFetchState: d
     } = (0, a.cf)([h.default], () => ({

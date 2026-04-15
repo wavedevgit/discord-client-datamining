@@ -21,8 +21,8 @@ function m(e) {
         onSelect: m,
         navId: A,
         label: g,
-        location: p,
-        includeGuildMute: _
+        location: _,
+        includeGuildMute: p
     } = e, f = (0, r.b)(t), E = (0, o.A0)(t), C = (0, l.bG)([h.A], () => h.A.getGuild(t.guild_id)), x = (0, c.A)(C), S = (0, d.os)("ChannelNotificationSettingsPopoutMenu") && u.B4.has(t.type);
     return (0, i.jsxs)(a.W1t, {
         "data-menu-migrated": !0,
@@ -31,8 +31,8 @@ function m(e) {
         "aria-label": g,
         onSelect: m,
         children: [(0, i.jsx)(a.rXV, {
-            children: (0, s.A)(t, p)
-        }), _ ? (0, i.jsx)(a.rXV, {
+            children: (0, s.A)(t, _)
+        }), p ? (0, i.jsx)(a.rXV, {
             children: x
         }) : null, S ? E : (0, i.jsx)(a.rXV, {
             children: f

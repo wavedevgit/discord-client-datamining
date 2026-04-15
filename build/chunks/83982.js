@@ -16,8 +16,8 @@ var i = n(627968),
     m = n(520698),
     A = n(164617),
     g = n(958713),
-    p = n(525505),
-    _ = n(550946),
+    _ = n(525505),
+    p = n(550946),
     f = n(991701),
     E = n(401901),
     C = n(869146),
@@ -75,7 +75,7 @@ function w(e) {
         user: W,
         streamId: K,
         speaking: z
-    } = t, Y = W.id === V, J = (0, y.Ay)(t), q = (0, r.bG)([v.A], () => v.A.isFocused()), $ = (0, r.bG)([C.A], () => C.A.getWindowFocused(R.MLl.CHANNEL_CALL_POPOUT)), Z = (0, r.bG)([T.Ay], () => null != W.id && T.Ay.isLocalVideoDisabled(W.id, (0, m.A)(t.type)), [W.id, t.type]), X = (0, _.A)(n.guild_id, W.id), Q = N.Ay.getName(n.getGuildId(), n.id, W) + (X ? ` ${L.intl.string(L.t["pFO/Ph"])}` : ""), ee = z && ($ || q), et = o < 124 ? P : D, {
+    } = t, Y = W.id === V, J = (0, y.Ay)(t), q = (0, r.bG)([v.A], () => v.A.isFocused()), $ = (0, r.bG)([C.A], () => C.A.getWindowFocused(R.MLl.CHANNEL_CALL_POPOUT)), Z = (0, r.bG)([T.Ay], () => null != W.id && T.Ay.isLocalVideoDisabled(W.id, (0, m.A)(t.type)), [W.id, t.type]), X = (0, p.A)(n.guild_id, W.id), Q = N.Ay.getName(n.getGuildId(), n.id, W) + (X ? ` ${L.intl.string(L.t["pFO/Ph"])}` : ""), ee = z && ($ || q), et = o < 124 ? P : D, {
         avatarSrc: en,
         avatarDecorationSrc: ei
     } = (0, x.A)({
@@ -83,7 +83,7 @@ function w(e) {
         guildId: n.guild_id,
         size: et,
         animateOnHover: !ee
-    }), el = (0, r.bG)([h.A], () => h.A.getSelectedParticipant(n.id)), ea = (0, p.A)(M.x.DEFAULT, t.user.id), es = (0, g.A)(t.user.id), er = {
+    }), el = (0, r.bG)([h.A], () => h.A.getSelectedParticipant(n.id)), ea = (0, _.A)(M.x.DEFAULT, t.user.id), es = (0, g.A)(t.user.id), er = {
         channel: n,
         selectedParticipant: el,
         user: W

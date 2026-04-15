@@ -2,8 +2,8 @@
 n.d(t, {
     A: () => h
 });
-var i = n(627968),
-    a = n(64700),
+var a = n(627968),
+    i = n(64700),
     l = n(503698),
     s = n.n(l),
     r = n(451988),
@@ -15,12 +15,12 @@ function d(e) {
         percentage: t,
         isSingleLine: n
     } = e;
-    return (0, i.jsx)("div", {
+    return (0, a.jsx)("div", {
         className: s()({
             [o.M0]: n,
             [o.Sg]: !n
         }),
-        children: (0, i.jsx)("div", {
+        children: (0, a.jsx)("div", {
             className: o.qT,
             style: {
                 width: `${100*Math.max(Math.min(t,1),0)}%`
@@ -37,10 +37,10 @@ function p(e) {
     let {
         time: t,
         padLargestUnit: n
-    } = e, i = Math.floor(t) % 60, a = Math.floor(t / 60) % 60, l = Math.floor(t / 3600);
-    return 0 === l ? n ? `${u(a)}:${u(i)}` : `${a}:${u(i)}` : n ? `${u(l)}:${u(a)}:${u(i)}` : `${l}:${u(a)}:${u(i)}`
+    } = e, a = Math.floor(t) % 60, i = Math.floor(t / 60) % 60, l = Math.floor(t / 3600);
+    return 0 === l ? n ? `${u(i)}:${u(a)}` : `${i}:${u(a)}` : n ? `${u(l)}:${u(i)}:${u(a)}` : `${l}:${u(i)}:${u(a)}`
 }
-class m extends a.PureComponent {
+class m extends i.PureComponent {
     static defaultProps = {
         themed: !1
     };
@@ -63,50 +63,50 @@ class m extends a.PureComponent {
             start: e,
             end: t,
             className: n,
-            themed: a,
+            themed: i,
             singleLine: l = !1
         } = this.props, {
             now: r
         } = this.state, u = (t - e) / 1e3, m = Math.max(Math.min((r - e) / 1e3, u), 0);
-        return l ? (0, i.jsxs)("div", {
+        return l ? (0, a.jsxs)("div", {
             className: s()(n, {
-                [o.Sp]: a
+                [o.Sp]: i
             }, o.Od),
-            children: [(0, i.jsx)("div", {
+            children: [(0, a.jsx)("div", {
                 className: o.Iq,
                 children: p({
                     time: m,
                     padLargestUnit: !0
                 })
-            }), (0, i.jsx)("div", {
+            }), (0, a.jsx)("div", {
                 className: o.h7,
-                children: (0, i.jsx)(d, {
+                children: (0, a.jsx)(d, {
                     percentage: m / u,
                     isSingleLine: !0
                 })
-            }), (0, i.jsx)("div", {
+            }), (0, a.jsx)("div", {
                 className: o.EL,
                 children: p({
                     time: u,
                     padLargestUnit: !0
                 })
             })]
-        }) : (0, i.jsxs)("div", {
+        }) : (0, a.jsxs)("div", {
             className: s()(n, {
-                [o.Sp]: a
+                [o.Sp]: i
             }),
-            children: [(0, i.jsx)(d, {
+            children: [(0, a.jsx)(d, {
                 percentage: m / u,
                 isSingleLine: !1
-            }), (0, i.jsxs)(c.A, {
-                children: [(0, i.jsx)(c.A.Child, {
+            }), (0, a.jsxs)(c.A, {
+                children: [(0, a.jsx)(c.A.Child, {
                     grow: 1,
                     className: o.n_,
                     children: p({
                         time: m,
                         padLargestUnit: !1
                     })
-                }), (0, i.jsx)(c.A.Child, {
+                }), (0, a.jsx)(c.A.Child, {
                     grow: 0,
                     className: o.EL,
                     children: p({

@@ -30,17 +30,17 @@ function d(e) {
             return m += c * d, m += u * d, m += (e - 1) * h * d, e
         }),
         g = A.map((e, t) => t),
-        p = [];
-    for (; p.length < l;) {
+        _ = [];
+    for (; _.length < l;) {
         let e = {
             width: s().random(140, 400),
             height: s().random(100, 320)
         };
-        p.push([g.splice(s().random(0, g.length - 1), 1)[0], e]), m += e.height + r.VF * d
+        _.push([g.splice(s().random(0, g.length - 1), 1)[0], e]), m += e.height + r.VF * d
     }
     return {
         messages: A,
-        attachmentSpecs: p,
+        attachmentSpecs: _,
         totalHeight: m,
         groupSpacing: c
     }

@@ -17,8 +17,8 @@ var i = n(627968),
     m = n(387755),
     A = n(308528),
     g = n(711950),
-    p = n(846293),
-    _ = n(888906),
+    _ = n(846293),
+    p = n(888906),
     f = n(49229),
     E = n(684136),
     C = n(964486),
@@ -145,7 +145,7 @@ class el extends l.PureComponent {
         let {
             channel: e
         } = this.props;
-        h.h.wait(() => _.A.open(e?.id));
+        h.h.wait(() => p.A.open(e?.id));
         let t = (0, S.dI)(e);
         B.default.track(Z.HAw.OPEN_POPOUT, {
             ...t,
@@ -157,7 +157,7 @@ class el extends l.PureComponent {
         }, 0)
     }
     componentWillUnmount() {
-        W._.unsubscribe(Z.jej.SCROLL_PAGE_UP, this.scrollPageUp), W._.unsubscribe(Z.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), null != this.copyTimeout && clearTimeout(this.copyTimeout), h.h.wait(() => _.A.close())
+        W._.unsubscribe(Z.jej.SCROLL_PAGE_UP, this.scrollPageUp), W._.unsubscribe(Z.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), null != this.copyTimeout && clearTimeout(this.copyTimeout), h.h.wait(() => p.A.close())
     }
     scrollPageUp = () => {
         this.scrollerRef.current?.scrollPageUp({
@@ -187,7 +187,7 @@ class el extends l.PureComponent {
         let t = (0, J.i)({
             location: "5326c5_1"
         });
-        p.Ay.createInvite(e.id, {
+        _.Ay.createInvite(e.id, {
             max_age: t
         }, Z.PE1.GROUP_DM)
     }
@@ -555,21 +555,21 @@ class el extends l.PureComponent {
         e?.focus()
     };
     focusResult = e => {
-        _.A.select(e)
+        p.A.select(e)
     };
     handleSelect = e => {
         let {
             results: t,
             channel: n
         } = this.props;
-        if (null == e) _.A.clear(n?.id);
+        if (null == e) p.A.clear(n?.id);
         else if (null != t) {
             let n = t[e];
             this.handleClick(n.user.id)
         }
     };
     handleSelectionChange = e => {
-        _.A.select(e);
+        p.A.select(e);
         let t = this.scrollerRef.current;
         null != t && t.scrollToIndex({
             section: 0,
@@ -581,7 +581,7 @@ class el extends l.PureComponent {
         let {
             channel: t
         } = this.props, n = (0, S.dI)(t);
-        _.A.search(e, t?.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
+        p.A.search(e, t?.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
             B.default.track(Z.HAw.SEARCH_USER_LIST_STARTED, {
                 ...n,
                 entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
@@ -592,11 +592,11 @@ class el extends l.PureComponent {
     };
     handleRemoveTag = e => {
         let t = Array.from(this.props.selectedUsers);
-        _.A.removeUser(t[e])
+        p.A.removeUser(t[e])
     };
     handleRemoveUser = e => {
         e.forEach(e => {
-            _.A.removeUser(e)
+            p.A.removeUser(e)
         }), this.forceFocus()
     };
     handleClick = e => {
@@ -605,7 +605,7 @@ class el extends l.PureComponent {
             query: n,
             channel: i
         } = this.props;
-        t.has(e) ? _.A.removeUser(e) : this.getRemaining() > 0 && (_.A.addUser(e), n.length > 0 && _.A.clear(i?.id)), this.forceFocus()
+        t.has(e) ? p.A.removeUser(e) : this.getRemaining() > 0 && (p.A.addUser(e), n.length > 0 && p.A.clear(i?.id)), this.forceFocus()
     };
     handleAddFriendNavigation = () => {
         g.A.transitionToSection(Z.m3P.ADD_FRIEND, {

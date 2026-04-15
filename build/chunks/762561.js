@@ -49,14 +49,14 @@ function H(e) {
         channel: H
     } = e, F = __OVERLAY__, W = (0, E.Ay)(t.id), K = (0, A.A)(W?.profileFrame?.skuId, "UserProfileSidebar"), Y = (0, d.Ay)(), {
         analyticsLocations: z
-    } = (0, u.Ay)(c.A.USER_PROFILE_SIDEBAR), X = (0, g.pb)({
+    } = (0, u.Ay)(c.A.USER_PROFILE_SIDEBAR), q = (0, g.pb)({
         layout: "SIDEBAR",
         userId: t.id,
         channelId: H.id
-    }), q = l.useRef(null), {
+    }), X = l.useRef(null), {
         isHoveringOrFocusing: $,
         isHovering: J
-    } = (0, _.A)(q), Q = (0, x.fC)(), Z = (0, o.zhh)({
+    } = (0, _.A)(X), Q = (0, x.fC)(), Z = (0, o.zhh)({
         opacity: +(null != Q.interactionType),
         config: {
             duration: 150
@@ -65,7 +65,7 @@ function H(e) {
         (0, I.openUserProfileModal)({
             sourceAnalyticsLocations: z,
             hideRestrictedProfile: !0,
-            ...X,
+            ...q,
             ...e
         })
     }, et = W?.widgets != null && W.widgets.length > 0, {
@@ -83,12 +83,12 @@ function H(e) {
     return (0, i.jsx)(u.f5, {
         value: z,
         children: (0, i.jsx)(g.of, {
-            value: X,
+            value: q,
             isLoaded: W?.isLoaded,
             children: (0, i.jsx)(x.Hl, {
                 value: Q,
                 children: (0, i.jsxs)(y.A, {
-                    ref: q,
+                    ref: X,
                     user: t,
                     displayProfile: W,
                     themeType: w.d.SIDEBAR,
@@ -165,7 +165,7 @@ function H(e) {
                             channelId: H.id
                         })]
                     }), !F && (0, i.jsx)(U.A, {
-                        context: X,
+                        context: q,
                         analyticsLocations: z,
                         profileFrame: K,
                         handleOpenProfile: ee

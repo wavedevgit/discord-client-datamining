@@ -2,22 +2,22 @@
 n.d(t, {
     A: () => s
 });
-var r = n(64700),
-    l = n(172218),
-    i = n(521741),
-    a = n(633075);
+var l = n(64700),
+    i = n(172218),
+    a = n(521741),
+    r = n(633075);
 
 function s(e) {
     let {
         widget: t,
         onAction: n
-    } = e, [s, o] = (0, r.useState)(!1), d = t instanceof a.R ? t.applicationId : null, {
-        fetched: c
-    } = (0, i.U)(d), u = (0, r.useCallback)(e => {
+    } = e, [s, o] = (0, l.useState)(!1), c = t instanceof r.R ? t.applicationId : null, {
+        fetched: d
+    } = (0, a.U)(c), u = (0, l.useCallback)(e => {
         e && (n({
             action: "VIEW_WIDGET",
             ...t.getProfileAnalyticsOptions()
         }), o(!0))
     }, [n, t]);
-    return (0, l.K)(u, void 0, !s && (null == d || c))
+    return (0, i.K)(u, void 0, !s && (null == c || d))
 }

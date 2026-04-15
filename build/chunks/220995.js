@@ -77,7 +77,7 @@ function b(e) {
                 })
             })
         }, [G, t]),
-        [z, X] = (0, u.zhh)(() => ({
+        [z, q] = (0, u.zhh)(() => ({
             from: {
                 height: "0px"
             },
@@ -90,17 +90,17 @@ function b(e) {
                 clamp: !0
             }
         })),
-        q = l.useCallback(e => {
-            k(!0), X({
+        X = l.useCallback(e => {
+            k(!0), q({
                 to: {
                     height: "0px"
                 },
                 onRest: () => K(e)
             })
-        }, [X, K]),
-        $ = l.useCallback(() => (null != j.current && clearTimeout(j.current), j.current = setTimeout(() => q("timeout"), 1e4), M(e => e + 1), () => {
+        }, [q, K]),
+        $ = l.useCallback(() => (null != j.current && clearTimeout(j.current), j.current = setTimeout(() => X("timeout"), 1e4), M(e => e + 1), () => {
             null != j.current && clearTimeout(j.current)
-        }), [q]),
+        }), [X]),
         J = l.useCallback(() => (null != O.current && clearTimeout(O.current), O.current = setTimeout(() => {
             R(!1)
         }, 150), () => {
@@ -192,7 +192,7 @@ function b(e) {
                             children: B ? (0, i.jsx)(u.DUT, {
                                 className: N.VN,
                                 onClick: e => {
-                                    e.stopPropagation(), q("user_explicit")
+                                    e.stopPropagation(), X("user_explicit")
                                 },
                                 "aria-label": C.intl.string(C.t.cpT0Cq),
                                 children: (0, i.jsx)(u.PGe, {

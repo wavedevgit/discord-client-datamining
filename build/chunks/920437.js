@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(686956),
     A = n(775602),
     g = n(315982),
-    p = n(563729),
-    _ = n(624458),
+    _ = n(563729),
+    p = n(624458),
     f = n(821124),
     E = n(202384),
     C = n(513461),
@@ -90,7 +90,7 @@ class K extends l.PureComponent {
             subtitle: V.intl.string(V.t["13tjTU"]),
             variant: "primary",
             confirmText: V.intl.string(V.t["cY+Oob"]),
-            onConfirm: () => _.A.removeGuildJoinRequest(e.id)
+            onConfirm: () => p.A.removeGuildJoinRequest(e.id)
         })
     };
     handleViewApplicationRejection = () => {
@@ -203,7 +203,7 @@ class K extends l.PureComponent {
         } = this.props, n = t?.applicationStatus === C.B5.APPROVED;
         if (null == e || null == t || !n || (0, f.NK)(t)) return null;
         let l = () => {
-            _.A.ackUserGuildJoinRequest(e.id, t.joinRequestId)
+            p.A.ackUserGuildJoinRequest(e.id, t.joinRequestId)
         };
         return (0, i.jsx)(d.aFV, {
             renderModal: t => (0, i.jsx)(I.A, {
@@ -230,8 +230,8 @@ class K extends l.PureComponent {
             canSendMessages: m,
             channelFollowingUsersSeen: A,
             showLurkerModeUpsellPopout: g,
-            showMemberVerificationModal: p,
-            useReducedMotion: _,
+            showMemberVerificationModal: _,
+            useReducedMotion: p,
             isStaff: f,
             guildJoinRequest: E,
             showLinkedLobbyApplicationLoadingIndicator: x,
@@ -242,7 +242,7 @@ class K extends l.PureComponent {
             shouldShowLurkerModeSuccessPopout: v
         } = this.state, N = {
             theme: u,
-            useReducedMotion: _
+            useReducedMotion: p
         };
         if (e && !m && null != I) null != I.gameIconUrl && (N.imageSrc = I.gameIconUrl), N.message = V.intl.format(V.t["qxH/YE"], {
             gameName: I.gameName
@@ -255,8 +255,8 @@ class K extends l.PureComponent {
                 })
             }
             N.buttonText = V.intl.string(V.t["3aOv+h"]), N.onButtonClick = this.handleFollowAnnouncement, t && (N.onSecondaryButtonClick = this.handleJoinServer, N.secondaryButtonText = V.intl.string(V.t.RLch70))
-        } else if (n) N.message = V.intl.string(V.t["Eg3/c9"]), N.buttonText = V.intl.string(V.t.fiNVin), N.onButtonClick = p ? this.handleShowMemberVerification : this.handleClaimAccount;
-        else if (p) switch (E?.applicationStatus) {
+        } else if (n) N.message = V.intl.string(V.t["Eg3/c9"]), N.buttonText = V.intl.string(V.t.fiNVin), N.onButtonClick = _ ? this.handleShowMemberVerification : this.handleClaimAccount;
+        else if (_) switch (E?.applicationStatus) {
             case C.B5.SUBMITTED:
                 N.message = V.intl.string(V.t["5iLvSx"]), N.subtitle = V.intl.string(V.t.FdsK4h), N.buttonText = V.intl.string(V.t.mqtdmQ), N.onButtonClick = this.handleCancelApplication;
                 break;
@@ -310,17 +310,17 @@ function z(e) {
     let {
         channel: t,
         children: n
-    } = e, l = t.getGuildId(), a = (0, r.bG)([O.A], () => O.A.getGuild(l)), s = (0, r.bG)([D.A], () => D.A.getCheck(l)), o = t.type === F.rbe.GUILD_ANNOUNCEMENT && null != a && a.features.has(F.GuildFeatures.NEWS), c = (0, r.bG)([M.A], () => o ? M.A.getFollowerStatsForChannel(t.id) : null), d = (0, r.bG)([v.A], () => v.A.isLurking(l)), u = (0, r.bG)([k.default], () => k.default.getCurrentUser()), h = u?.isStaff() ?? !1, m = (0, r.bG)([L.Ay], () => null != u && (L.Ay.getMember(l, u.id)?.isPending ?? !1)), g = !!(0, x.Qd)(a), _ = (0, r.bG)([T.A], () => T.A.shouldShowPopout(l)), f = (0, r.bG)([P.A], () => P.A.can(F.xBc.SEND_MESSAGES, t)), E = (0, r.bG)([S.A], () => S.A.getRequest(l)), {
+    } = e, l = t.getGuildId(), a = (0, r.bG)([O.A], () => O.A.getGuild(l)), s = (0, r.bG)([D.A], () => D.A.getCheck(l)), o = t.type === F.rbe.GUILD_ANNOUNCEMENT && null != a && a.features.has(F.GuildFeatures.NEWS), c = (0, r.bG)([M.A], () => o ? M.A.getFollowerStatsForChannel(t.id) : null), d = (0, r.bG)([v.A], () => v.A.isLurking(l)), u = (0, r.bG)([k.default], () => k.default.getCurrentUser()), h = u?.isStaff() ?? !1, m = (0, r.bG)([L.Ay], () => null != u && (L.Ay.getMember(l, u.id)?.isPending ?? !1)), g = !!(0, x.Qd)(a), p = (0, r.bG)([T.A], () => T.A.shouldShowPopout(l)), f = (0, r.bG)([P.A], () => P.A.can(F.xBc.SEND_MESSAGES, t)), E = (0, r.bG)([S.A], () => S.A.getRequest(l)), {
         showLinkedLobbyApplicationLoadingIndicator: I,
         requiredLinkedLobbyApplication: N
-    } = (0, U.A)(t.linkedLobby), y = (0, p.A)({
+    } = (0, U.A)(t.linkedLobby), y = (0, _.A)({
         channelId: t.id
     }), b = {
         ...s,
         guild: a,
         isLurking: d,
         isFollowable: o,
-        shouldShowLurkerModeSuccessPopout: _,
+        shouldShowLurkerModeSuccessPopout: p,
         showLurkerModeUpsellPopout: d && null != a && w.MJ(F.xBc.SEND_MESSAGES, t),
         theme: R.A.theme,
         canSendMessages: f,
