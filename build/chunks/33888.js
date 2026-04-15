@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(835517),
     h = n(997509),
     _ = n(652215),
-    p = n(282435),
-    A = n(985018),
+    A = n(282435),
+    p = n(985018),
     f = n(685873);
 
 function j(e) {
@@ -34,11 +34,11 @@ function j(e) {
     });
     return (0, i.jsx)(o.m, {
         asContainer: !0,
-        text: A.intl.string(A.t.W4Nd7Q),
+        text: p.intl.string(p.t.W4Nd7Q),
         children: (0, i.jsx)(d.DUT, {
             "aria-disabled": !n,
             tabIndex: n ? 0 : -1,
-            "aria-label": A.intl.string(A.t.W4Nd7Q),
+            "aria-label": p.intl.string(p.t.W4Nd7Q),
             onClick: n ? s : void 0,
             style: {
                 background: (0, c.n6)(u)
@@ -123,7 +123,7 @@ function E(e) {
         })
     }, [x]), C = s.useCallback(e => (!g || null == t.customBanner) && e === t.brandColorPrimary, [t, g]);
     return (0, i.jsx)(d.D0$, {
-        label: A.intl.string(A.t.BSVog8),
+        label: p.intl.string(p.t.BSVog8),
         children: (0, i.jsxs)("div", {
             className: f.Vg,
             children: [(0, i.jsx)(j, {
@@ -131,7 +131,7 @@ function E(e) {
                 canManageGuild: l,
                 handleClick: E(null),
                 hasCustomBanner: g && null != t.customBanner
-            }), p.aA.map(e => {
+            }), A.aA.map(e => {
                 let {
                     name: t,
                     color: n

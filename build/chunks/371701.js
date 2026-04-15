@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(555337),
     h = n(250627),
     _ = n(839837),
-    p = n(89791),
-    A = n(985018);
+    A = n(89791),
+    p = n(985018);
 
 function f(e) {
     let {
@@ -39,30 +39,30 @@ function j(e) {
         children: [(0, i.jsx)(d.A, {
             revenue: n.metrics.revenue,
             revenueTrend: n.metrics.revenuePctChange,
-            summaryMetricLabel: A.intl.string(A.t.R3PCmW),
+            summaryMetricLabel: p.intl.string(p.t.R3PCmW),
             summaryMetricValue: n.metrics.paymentsCount ?? "-",
             summaryMetricTrend: n.metrics.paymentsCountChange ?? 0,
             summaryMetricTrendIsPercent: !1,
-            children: (0, i.jsx)(p.A, {
+            children: (0, i.jsx)(A.A, {
                 guildId: t,
                 earningsData: n
             })
         }), (0, i.jsx)(l.D0$, {
-            label: A.intl.string(A.t["+5Rmhl"]),
+            label: p.intl.string(p.t["+5Rmhl"]),
             children: (0, i.jsx)(o.A, {
                 ListingIdLabel: f,
                 payoutsByPeriod: n.payoutsByPeriod,
                 team: n.application?.team
             })
         }), (0, i.jsx)(l.D0$, {
-            label: A.intl.string(A.t.O8cDAJ),
+            label: p.intl.string(p.t.O8cDAJ),
             disabled: a,
             children: (0, i.jsx)(m.A, {
                 guildId: t,
                 application: n.application
             })
         }), (0, i.jsx)(l.D0$, {
-            label: A.intl.string(A.t["0n7R2X"]),
+            label: p.intl.string(p.t["0n7R2X"]),
             children: (0, i.jsx)(g.A, {
                 guildId: t,
                 allPeriods: n.payoutsByPeriod

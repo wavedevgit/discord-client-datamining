@@ -1,7 +1,7 @@
 /** chunk id: 561108 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
+    A: () => p
 });
 var i = n(627968);
 n(64700);
@@ -18,23 +18,23 @@ var s = n(503698),
     x = n(863694),
     h = n(992711),
     _ = n(985018),
-    p = n(980993);
+    A = n(980993);
 
-function A(e) {
+function p(e) {
     let {
         guild: t,
         scrollToQuestions: n
     } = e, s = (0, r.bG)([x.A], () => x.A.editedDefaultChannelIds), l = (0, m.$)(t.id, s).filter(e => e.isCategory() || (0, c.S)(e.guild_id, e.id));
     return (0, i.jsxs)("div", {
-        className: p.kL,
+        className: A.kL,
         children: [(0, i.jsx)("div", {
-            className: p.wx,
+            className: A.wx,
             children: (0, i.jsx)(h.A, {
                 guildId: t.id,
                 scrollToQuestions: n
             })
         }), (0, i.jsxs)("div", {
-            className: p.o5,
+            className: A.o5,
             children: [(0, i.jsx)(N, {}), 0 === l.length && (0, i.jsx)(f, {}), (0, i.jsx)(j, {
                 channels: l
             })]
@@ -44,15 +44,15 @@ function A(e) {
 
 function f() {
     return (0, i.jsxs)("div", {
-        className: p.p$,
+        className: A.p$,
         children: [(0, i.jsx)("div", {
-            className: p.AI,
+            className: A.AI,
             children: (0, i.jsx)(a.N$i, {
                 size: "md",
                 color: "currentColor"
             })
         }), (0, i.jsx)(a.Text, {
-            className: p.HA,
+            className: A.HA,
             variant: "text-md/normal",
             color: "text-muted",
             children: _.intl.string(_.t.Qj6O91)
@@ -75,7 +75,7 @@ function j(e) {
 
 function N() {
     return (0, i.jsx)("div", {
-        className: p.yF
+        className: A.yF
     })
 }
 
@@ -84,9 +84,9 @@ function E(e) {
         channel: t
     } = e, n = (0, o.Ay)(t);
     return (0, i.jsxs)("div", {
-        className: p.L1,
+        className: A.L1,
         children: [(0, i.jsx)(g.A, {
-            className: p.OW,
+            className: A.OW,
             width: 12,
             height: 12,
             direction: g.A.Directions.DOWN
@@ -104,20 +104,20 @@ function C(e) {
         channel: t
     } = e, n = (0, o.Ay)(t), s = (0, u.sZ)(t), r = (0, d.gU)(t) ?? a.N$i;
     return (0, i.jsxs)("div", {
-        className: p.Ix,
+        className: A.Ix,
         children: [(0, i.jsx)(r, {
-            className: p.p,
+            className: A.p,
             size: "xs",
             color: "currentColor"
         }), (0, i.jsx)(a.Text, {
-            className: p.HA,
+            className: A.HA,
             variant: "text-md/normal",
             color: "text-muted",
             lineClamp: 1,
             children: n
         }), (0, i.jsx)("div", {
             className: l()({
-                [p.al]: s
+                [A.al]: s
             })
         })]
     })

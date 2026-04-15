@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(824953),
     u = n(147925),
     m = n(486020),
-    g = n(447066),
-    x = n(652215),
+    x = n(447066),
+    g = n(652215),
     h = n(985018),
     p = n(874144);
 
@@ -30,7 +30,7 @@ function A(e) {
         return null != (e = t.avatar) && /^data:/.test(e) ? e : (0, m.ku)({
             id: t.id,
             avatar: e,
-            discriminator: x.h3J
+            discriminator: g.h3J
         })
     }, [t]), N = l.useCallback(() => {
         (0, a.A)({
@@ -116,7 +116,7 @@ function A(e) {
                     direction: "horizontal",
                     justify: "space-between",
                     align: "center",
-                    children: [(0, i.jsx)(g.A, {
+                    children: [(0, i.jsx)(x.A, {
                         name: t.name,
                         imageSrc: j,
                         details: v

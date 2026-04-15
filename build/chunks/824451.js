@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(537174),
     h = n(997509),
     _ = n(555337),
-    p = n(657421),
-    A = n(652215),
+    A = n(657421),
+    p = n(652215),
     f = n(381941),
     j = n(985018),
     N = n(908328),
@@ -105,7 +105,7 @@ function I(e) {
             children: j.intl.string(j.t["2uQ6wZ"])
         }), (0, i.jsx)(m.default, {
             defaultColor: f.aj,
-            colors: A._tK,
+            colors: p._tK,
             value: t,
             onChange: n,
             allowBlackCustomColor: !0
@@ -141,14 +141,14 @@ function v(e) {
     let {
         guildId: t,
         color: n
-    } = e, s = (0, p.A)(j.intl.string(j.t.Mi9Kbe)), l = {
+    } = e, s = (0, A.A)(j.intl.string(j.t.Mi9Kbe)), l = {
         nick: s.author.username,
         guildId: t,
         authorId: s.author.id,
         colorRoleId: void 0,
         colorStrings: null,
         colorString: null
-    }, r = [A.NJ8.DARK, A.NJ8.DARKER, A.NJ8.MIDNIGHT, A.NJ8.LIGHT];
+    }, r = [p.NJ8.DARK, p.NJ8.DARKER, p.NJ8.MIDNIGHT, p.NJ8.LIGHT];
     return (0, i.jsx)(d.M1G, {
         children: (0, i.jsxs)(d.BJc, {
             gap: 8,

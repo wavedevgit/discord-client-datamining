@@ -19,8 +19,8 @@ function c(e) {
         imageSrc: c,
         iconBackgroundColor: u,
         iconClassName: m,
-        iconWrapperClassName: g,
-        details: x,
+        iconWrapperClassName: x,
+        details: g,
         detailsClassName: h,
         isHeader: p,
         isPremium: A,
@@ -51,7 +51,7 @@ function c(e) {
                 className: s()(d.P0, a),
                 children: r
             })
-        }(l, c, u, m, g) : null, (0, i.jsxs)(r.BJc, {
+        }(l, c, u, m, x) : null, (0, i.jsxs)(r.BJc, {
             justify: "center",
             children: [function(e) {
                 let {
@@ -61,7 +61,7 @@ function c(e) {
                     detailsClassName: c,
                     isHeader: u,
                     isPremium: m
-                } = e, g = l?.map((e, t) => {
+                } = e, x = l?.map((e, t) => {
                     let {
                         icon: n,
                         text: l
@@ -99,13 +99,13 @@ function c(e) {
                         children: n
                     }) : null, (0, i.jsx)(r.BJc, {
                         direction: "horizontal",
-                        children: g
+                        children: x
                     })]
                 })
             }({
                 name: t,
                 description: n,
-                details: x,
+                details: g,
                 detailsClassName: h,
                 isHeader: p,
                 isPremium: A

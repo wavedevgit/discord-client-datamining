@@ -19,10 +19,10 @@ function d() {
             return 0 !== i ? i : e.untranslatedName.localeCompare(t.untranslatedName)
         }), [d]),
         m = i.useMemo(() => t.startsWith("/") ? u.filter(e => e.type === a.kc.CHAT) : u, [t, u]),
-        g = i.useMemo(() => t.startsWith("/") ? t.substring(1) : t, [t]);
+        x = i.useMemo(() => t.startsWith("/") ? t.substring(1) : t, [t]);
     return {
         query: t,
-        results: i.useMemo(() => (0, r.I)(m, c, g), [m, g]),
+        results: i.useMemo(() => (0, r.I)(m, c, x), [m, x]),
         setQuery: n,
         unfilteredCount: e.length
     }

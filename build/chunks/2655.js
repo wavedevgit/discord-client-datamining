@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(392054),
     u = n(168186),
     m = n(495273),
-    g = n(696451),
-    x = n(317525),
+    x = n(696451),
+    g = n(317525),
     h = n(71393),
     p = n(576705),
     A = n(542580),
@@ -38,9 +38,9 @@ function S(e) {
         originalApplicationPermissions: w,
         originalCommandPermissions: k,
         selectedPermissionCount: R
-    } = e, L = (0, o.bG)([b.A], () => null == s ? null : b.A.getCommand(s), [s]), M = L?.defaultMemberPermissions != null, G = (0, o.bG)([h.A, g.Ay, p.A], () => {
+    } = e, L = (0, o.bG)([b.A], () => null == s ? null : b.A.getCommand(s), [s]), M = L?.defaultMemberPermissions != null, G = (0, o.bG)([h.A, x.Ay, p.A], () => {
         let e = h.A.getGuild(f),
-            t = g.Ay.getSelfMember(f);
+            t = x.Ay.getSelfMember(f);
         return null != e && null != t && (0, u.zl)({
             PermissionStore: p.A,
             guild: e,
@@ -56,7 +56,7 @@ function S(e) {
         return [e, t]
     }, [S]), B = l.useCallback(e => {
         let t = h.A.getGuild(f),
-            n = g.Ay.getSelfMember(f);
+            n = x.Ay.getSelfMember(f);
         return null != t && null != n && (null != s ? (0, u.zl)({
             PermissionStore: p.A,
             guild: t,
@@ -79,7 +79,7 @@ function S(e) {
                 let t = e.id;
                 if (n = N.Q.REMOVE_ROLE, (0, m.N8)(f, t)) i = "@everyone";
                 else {
-                    let e = x.A.getRole(f, t);
+                    let e = g.A.getRole(f, t);
                     i = null != e ? e.name : "role"
                 }
             }
@@ -87,7 +87,7 @@ function S(e) {
             let t = Object.values(e)[0].id;
             if (n = N.Q.DENY_ROLE, (0, m.N8)(f, t)) i = "@everyone";
             else {
-                let e = x.A.getRole(f, t);
+                let e = g.A.getRole(f, t);
                 i = null != e ? e.name : "role"
             }
         }(0, N.A)(n, i)

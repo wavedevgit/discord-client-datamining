@@ -5,7 +5,7 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    l = n(969528),
+    l = n(407045),
     r = n(827734),
     a = n(397927),
     o = n(627794),
@@ -19,12 +19,12 @@ function x(e) {
     let {
         guildId: t,
         triggerType: n
-    } = e, x = s.useMemo(() => () => (0, o._I)(t, n), [t, n]), [h] = s.useState(x), [_, p] = s.useState(!1), {
-        editingRule: A,
+    } = e, x = s.useMemo(() => () => (0, o._I)(t, n), [t, n]), [h] = s.useState(x), [_, A] = s.useState(!1), {
+        editingRule: p,
         createNewEditingRule: f
     } = (0, c.U)(), {
         getDefaultRuleName: j
-    } = d.i$[n], N = !(0, o.wC)(A) && A?.triggerType === n, [E, C] = s.useState(N ? A : h), T = (0, a.zhh)({
+    } = d.i$[n], N = !(0, o.wC)(p) && p?.triggerType === n, [E, C] = s.useState(N ? p : h), T = (0, a.zhh)({
         opacity: +!N,
         pointerEvents: N ? "none" : "all",
         config: {
@@ -39,13 +39,13 @@ function x(e) {
             clamp: !0
         },
         onStart: () => {
-            C(N ? A : h)
+            C(N ? p : h)
         },
         onRest: () => {
-            C(N ? A : h), p(N)
+            C(N ? p : h), A(N)
         }
     });
-    return null == A || N ? (0, i.jsxs)("div", {
+    return null == p || N ? (0, i.jsxs)("div", {
         className: g.$F,
         style: {
             height: N ? "auto" : "60px"

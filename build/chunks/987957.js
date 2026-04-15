@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(374084),
     h = n(111487),
     _ = n(734057),
-    p = n(71393),
-    A = n(486020),
+    A = n(71393),
+    p = n(486020),
     f = n(132514),
     j = n(985018),
     N = n(927548);
@@ -32,10 +32,10 @@ let E = function(e) {
         onDragStart: I,
         onDragComplete: b,
         onDragReset: v
-    } = e, S = (0, a.bG)([_.A], () => _.A.getChannel(l.channelId)), y = (0, a.bG)([p.A], () => p.A.getGuild(t)), R = (0, a.bG)([f.A], () => f.A.getPendingData()[l.channelId]), O = (0, c.Ay)(S), {
+    } = e, S = (0, a.bG)([_.A], () => _.A.getChannel(l.channelId)), y = (0, a.bG)([A.A], () => A.A.getGuild(t)), R = (0, a.bG)([f.A], () => f.A.getPendingData()[l.channelId]), O = (0, c.Ay)(S), {
         customEmoji: G,
         unicodeEmoji: L
-    } = (0, g.A)(l.emoji?.id, l.emoji?.name), D = null == l.emoji || null != G || null != L, M = A.Ay.getNewMemberActionIconURL({
+    } = (0, g.A)(l.emoji?.id, l.emoji?.name), D = null == l.emoji || null != G || null != L, M = p.Ay.getNewMemberActionIconURL({
         channelId: l.channelId,
         icon: l.icon
     }), k = null != R ? R.iconData : M, U = null;

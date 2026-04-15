@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(637248),
     h = n(418448),
     _ = n(561321),
-    p = n(82566),
-    A = n(652215),
+    A = n(82566),
+    p = n(652215),
     f = n(985018),
     j = n(392165);
 
@@ -96,7 +96,7 @@ let E = s.memo(function() {
             isFirstChannel: x,
             isLastChannel: N,
             tooltipDirection: T = "right"
-        } = e, I = (0, u.Ay)(t), b = (0, _.Rg)(t.id, s.id), v = (0, _.eK)(t.id, s.id), S = (0, _.v)(t.id, s.id), y = (0, _.fS)(l.id, s.id), R = null != (0, p.A)(l).find(e => e.id === t.id);
+        } = e, I = (0, u.Ay)(t), b = (0, _.Rg)(t.id, s.id), v = (0, _.eK)(t.id, s.id), S = (0, _.v)(t.id, s.id), y = (0, _.fS)(l.id, s.id), R = null != (0, A.A)(l).find(e => e.id === t.id);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.m, {
                 asContainer: !0,
@@ -179,7 +179,7 @@ let E = s.memo(function() {
                             variant: "secondary",
                             text: f.intl.string(f.t.zA9d1J),
                             icon: d.XAi,
-                            onClick: A.tEg
+                            onClick: p.tEg
                         })
                     })]
                 })

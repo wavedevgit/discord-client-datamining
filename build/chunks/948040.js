@@ -16,34 +16,34 @@ function u(e) {
         applicationIcon: t,
         applicationName: u,
         canNavigate: m,
-        command: g,
-        guildId: x
-    } = e, h = l.useMemo(() => 0 !== Object.keys(g.permissions ?? {}).length, [g.permissions]), p = l.useCallback(() => {
-        null != g && m() && (0, s.mMO)(async () => {
+        command: x,
+        guildId: g
+    } = e, h = l.useMemo(() => 0 !== Object.keys(x.permissions ?? {}).length, [x.permissions]), p = l.useCallback(() => {
+        null != x && m() && (0, s.mMO)(async () => {
             let {
                 default: e
             } = await n.e("15946").then(n.bind(n, 326993));
             return n => (0, i.jsx)(e, {
                 applicationIcon: t,
-                applicationId: g.applicationId,
+                applicationId: x.applicationId,
                 applicationName: u,
-                command: g,
-                guildId: x,
+                command: x,
+                guildId: g,
                 ...n
             })
         })
-    }, [t, u, m, g, x]), A = l.useCallback(e => {
+    }, [t, u, m, x, g]), A = l.useCallback(e => {
         (0, a.L3)(e, async () => {
             let {
                 default: e
             } = await n.e("15687").then(n.bind(n, 646938));
             return t => (0, i.jsx)(e, {
                 ...t,
-                id: g.id,
+                id: x.id,
                 label: d.intl.string(d.t.oJ1Muw)
             })
         })
-    }, [g]), b = g.type === r.kc.CHAT ? s.kC9 : s.ueQ, f = (0, o.p6)(g.type, g.displayName);
+    }, [x]), b = x.type === r.kc.CHAT ? s.kC9 : s.ueQ, f = (0, o.p6)(x.type, x.displayName);
     return (0, i.jsxs)(s.DUT, {
         onClick: p,
         className: c.AS,

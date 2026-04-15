@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(508675),
     h = n(7584),
     _ = n(808728),
-    p = n(841650),
-    A = n(307731),
+    A = n(841650),
+    p = n(307731),
     f = n(985018),
     j = n(339884);
 
@@ -28,12 +28,12 @@ function N(e) {
         guildId: t,
         emojiData: n,
         onSelectEmoji: l
-    } = e, r = s.useRef(null), a = (0, o.bG)([x.Ay], () => null != n.id ? x.Ay.getCustomEmojiById(n.id) : void 0), u = (0, o.bG)([_.Ay], () => _.Ay.getDefaultChannel(t)), p = s.useCallback(e => {
+    } = e, r = s.useRef(null), a = (0, o.bG)([x.Ay], () => null != n.id ? x.Ay.getCustomEmojiById(n.id) : void 0), u = (0, o.bG)([_.Ay], () => _.Ay.getDefaultChannel(t)), A = s.useCallback(e => {
         let {
             closePopout: t
         } = e;
         return (0, i.jsx)(g.A, {
-            pickerIntention: A.EmojiIntention.GUILD_ROLE_BENEFIT_EMOJI,
+            pickerIntention: p.EmojiIntention.GUILD_ROLE_BENEFIT_EMOJI,
             channel: u,
             closePopout: t,
             onNavigateAway: t,
@@ -63,7 +63,7 @@ function N(e) {
         targetElementRef: r,
         animation: d.YNO.Animation.NONE,
         position: "top",
-        renderPopout: p,
+        renderPopout: A,
         children: (e, t) => {
             let {
                 isShown: n
@@ -98,16 +98,16 @@ function E(e) {
         onDelete: m,
         transitionState: g,
         onClose: x
-    } = e, h = (0, u.GV)(), [_, p] = s.useState(n?.description ?? ""), [A, j] = s.useState(() => ({
+    } = e, h = (0, u.GV)(), [_, A] = s.useState(n?.description ?? ""), [p, j] = s.useState(() => ({
         id: n?.emoji_id,
         name: n?.emoji_name
-    })), E = o && "" !== _ && (null != A.id || null != A.name);
+    })), E = o && "" !== _ && (null != p.id || null != p.name);
 
     function C(e) {
         e.preventDefault(), E && (c({
             description: _,
-            emojiId: A.id,
-            emojiName: A.name
+            emojiId: p.id,
+            emojiName: p.name
         }), x())
     }
     let T = [{
@@ -142,13 +142,13 @@ function E(e) {
                     value: _,
                     rows: 1,
                     autosize: !0,
-                    onChange: p,
+                    onChange: A,
                     "aria-labelledby": h
                 }), (0, i.jsx)(a.D0$, {
                     label: f.intl.string(f.t.sMOuuS),
                     children: (0, i.jsx)(N, {
                         guildId: t,
-                        emojiData: A,
+                        emojiData: p,
                         onSelectEmoji: j
                     })
                 })]
@@ -171,7 +171,7 @@ function C(e) {
         children: [(0, i.jsx)(d.po8, {
             messageType: d.YCn.WARNING,
             children: f.intl.string(f.t.xunxCo)
-        }), (0, i.jsx)(p.A, {
+        }), (0, i.jsx)(A.A, {
             label: f.intl.string(f.t.GK18KJ),
             guildId: t,
             value: g,

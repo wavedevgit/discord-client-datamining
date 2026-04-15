@@ -1,8 +1,8 @@
 /** chunk id: 828709 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p,
-    B: () => A
+    A: () => A,
+    B: () => p
 });
 var i = n(627968);
 n(64700);
@@ -20,18 +20,18 @@ var s = n(503698),
     h = n(985018),
     _ = n(465706);
 
-function p(e) {
+function A(e) {
     let {
         guild: t,
         prompt: s,
         singleColumn: r,
         promptIndex: d,
-        option: p,
-        hasError: A,
+        option: A,
+        hasError: p,
         onDragStart: f,
         onDragComplete: j,
         onDragReset: N
-    } = e, E = null, C = a().findIndex(s.options, e => e.id === p.id), {
+    } = e, E = null, C = a().findIndex(s.options, e => e.id === A.id), {
         drag: T,
         dragSourcePosition: I,
         drop: b,
@@ -39,17 +39,17 @@ function p(e) {
     } = (0, c.A)({
         type: `ONBOARDING_PROMPT_OPTION_CARD-${s.id}`,
         index: C,
-        optionId: p.id,
+        optionId: A.id,
         onDragStart: f,
         onDragComplete: j,
         onDragReset: N
     }), {
         customEmoji: S,
         unicodeEmoji: y
-    } = (0, u.A)(p.emoji?.id, p.emoji?.name);
-    return (0, x.hv)(p.emoji) || null != S || null != y || (E = h.intl.string(h.t["61wfmh"])), (0, i.jsxs)(o.DUT, {
+    } = (0, u.A)(A.emoji?.id, A.emoji?.name);
+    return (0, x.hv)(A.emoji) || null != S || null != y || (E = h.intl.string(h.t["61wfmh"])), (0, i.jsxs)(o.DUT, {
         className: l()(_.we, {
-            [_.JD]: A || null != E,
+            [_.JD]: p || null != E,
             [_.A]: null != I && C < I,
             [_.Ze]: null != I && C > I,
             [_.h7]: r
@@ -62,16 +62,16 @@ function p(e) {
                 ...n,
                 guild: t,
                 prompt: s,
-                option: p,
+                option: A,
                 index: d,
                 onSave: e => {
                     (0, g.NF)(t, s.id, {
-                        options: s.options.map(t => t.id === p.id ? e : t)
+                        options: s.options.map(t => t.id === A.id ? e : t)
                     })
                 },
                 onDelete: () => {
                     (0, g.NF)(t, s.id, {
-                        options: s.options.filter(e => e.id !== p.id)
+                        options: s.options.filter(e => e.id !== A.id)
                     })
                 }
             })
@@ -93,8 +93,8 @@ function p(e) {
             children: [(0, i.jsx)("div", {
                 className: _.Zg,
                 children: (0, i.jsx)(m.A, {
-                    emojiId: p.emoji?.id,
-                    emojiName: p.emoji?.name,
+                    emojiId: A.emoji?.id,
+                    emojiName: A.emoji?.name,
                     defaultComponent: null
                 })
             }), (0, i.jsxs)("div", {
@@ -103,12 +103,12 @@ function p(e) {
                     variant: "text-md/medium",
                     color: "text-strong",
                     lineClamp: 1,
-                    children: p.title
-                }), "" !== p.description && (0, i.jsx)(o.Text, {
+                    children: A.title
+                }), "" !== A.description && (0, i.jsx)(o.Text, {
                     className: _.h_,
                     variant: "text-xs/normal",
                     color: "text-default",
-                    children: p.description
+                    children: A.description
                 })]
             })]
         }), null != E && (0, i.jsx)(o.Text, {
@@ -119,7 +119,7 @@ function p(e) {
     })
 }
 
-function A(e) {
+function p(e) {
     let {
         guild: t,
         prompt: s,

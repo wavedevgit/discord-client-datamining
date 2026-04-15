@@ -32,7 +32,7 @@ function m(e) {
         }),
         ref: o,
         ...d,
-        children: u.map(e => (0, i.jsx)(g, {
+        children: u.map(e => (0, i.jsx)(x, {
             isSelected: n === e,
             itemValue: e,
             onClick: () => m(e)
@@ -40,12 +40,12 @@ function m(e) {
     })
 }
 
-function g(e) {
+function x(e) {
     let {
         isSelected: t,
         itemValue: n,
         onClick: l
-    } = e, s = n ? c.cw : c.Xg, u = n ? o.A9s : o.PGe, m = n ? d.intl.string(d.t.RzDfSk) : d.intl.string(d.t["6639O5"]), g = (0, r.Gx)({
+    } = e, s = n ? c.cw : c.Xg, u = n ? o.A9s : o.PGe, m = n ? d.intl.string(d.t.RzDfSk) : d.intl.string(d.t["6639O5"]), x = (0, r.Gx)({
         isSelected: t,
         label: m
     });
@@ -54,7 +54,7 @@ function g(e) {
             [c.wH]: t
         }),
         onClick: l,
-        ...g,
+        ...x,
         children: (0, i.jsx)(u, {
             size: "xs",
             color: "currentColor"

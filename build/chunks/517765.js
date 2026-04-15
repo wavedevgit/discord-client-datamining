@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(397927),
     u = n(58149),
     m = n(264322),
-    g = n(607940),
-    x = n(427157),
+    x = n(607940),
+    g = n(427157),
     h = n(954571),
     p = n(447066),
     A = n(320426),
@@ -81,7 +81,7 @@ function j(e) {
                 align: "center"
             }
         }) : null,
-        W = (0, o.yK)([g.A], () => null != C && null != O ? g.A.getApplicationEntitlementsForGuild(C.application.id, O) ?? [] : []),
+        W = (0, o.yK)([x.A], () => null != C && null != O ? x.A.getApplicationEntitlementsForGuild(C.application.id, O) ?? [] : []),
         H = (0, m.ON)(O, !0),
         V = C?.application != null && Object.keys(H.result?.sections[C.application.id]?.commands ?? {}).length > 0,
         z = (0, i.jsxs)(c.BJc, {
@@ -106,7 +106,7 @@ function j(e) {
                         } = e;
                     return null != l.bot && s?.scopes?.includes(r.F.BOT) && n.push({
                         id: "bot",
-                        label: new x.A(l.bot).isVerifiedBot() ? f.intl.string(f.t.xxcTGy) : f.intl.string(f.t.AOdOYr),
+                        label: new g.A(l.bot).isVerifiedBot() ? f.intl.string(f.t.xxcTGy) : f.intl.string(f.t.AOdOYr),
                         icon: c.CnV
                     }), a.length > 0 && n.push({
                         id: "webhooks",

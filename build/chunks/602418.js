@@ -18,28 +18,28 @@ function u(e) {
         canNavigate: u,
         guildId: m
     } = e, {
-        results: g,
-        query: x,
+        results: x,
+        query: g,
         setQuery: h,
         unfilteredCount: p
     } = (0, a._)();
-    return null != g && p > 0 ? (0, i.jsx)(o.A, {
+    return null != x && p > 0 ? (0, i.jsx)(o.A, {
         bar: (0, i.jsx)(s.IWV, {
             size: "sm",
-            query: x,
+            query: g,
             onChange: h,
             onClear: () => h("")
         }),
         inModal: !1,
         title: d.intl.string(d.t["0hKkS+"]),
-        children: g.map((e, a) => (0, i.jsxs)(l.Fragment, {
+        children: x.map((e, a) => (0, i.jsxs)(l.Fragment, {
             children: [(0, i.jsx)(r.A, {
                 applicationIcon: t,
                 applicationName: n,
                 canNavigate: u,
                 command: e,
                 guildId: m
-            }), a < g.length - 1 ? (0, i.jsx)(s.cGx, {}) : null]
+            }), a < x.length - 1 ? (0, i.jsx)(s.cGx, {}) : null]
         }, e.id))
     }) : (0, i.jsx)(s.ZpM, {
         className: c.a,

@@ -17,22 +17,22 @@ function d(e) {
         everyoneRole: d,
         otherRoles: c,
         setSelectedSection: u
-    } = e, [m, g] = s.useState(""), [x, h] = s.useState(o.p4), _ = m.trim(), p = s.useMemo(() => c.filter(e => (0, l.Vh)(e, _)), [c, _]), A = s.useCallback(() => (0, i.jsx)(a.A, {
+    } = e, [m, g] = s.useState(""), [x, h] = s.useState(o.p4), _ = m.trim(), A = s.useMemo(() => c.filter(e => (0, l.Vh)(e, _)), [c, _]), p = s.useCallback(() => (0, i.jsx)(a.A, {
         guild: n,
         everyoneRole: d,
-        filteredRoles: p,
+        filteredRoles: A,
         setEditRoleId: t,
         query: m,
         setQuery: g,
         setHeaderHeight: h
-    }, "header"), [n, d, p, t, m]);
+    }, "header"), [n, d, A, t, m]);
     return (0, i.jsx)(r.A, {
         setEditRoleId: t,
         guild: n,
         everyoneRole: d,
         otherRoles: c,
         setSelectedSection: u,
-        renderHeader: A,
+        renderHeader: p,
         headerHeight: x,
         query: m
     })

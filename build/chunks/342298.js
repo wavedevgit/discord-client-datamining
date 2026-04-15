@@ -13,8 +13,8 @@ var i = n(627968),
     c = n(240248),
     u = n(946274),
     m = n(652215),
-    g = n(985018),
-    x = n(950879);
+    x = n(985018),
+    g = n(950879);
 
 function h(e) {
     let {
@@ -24,7 +24,7 @@ function h(e) {
     return (0, i.jsx)(d.NPJ, {
         theme: m.NJ8.LIGHT,
         children: e => (0, i.jsx)("div", {
-            className: a()(x.XD, t, e),
+            className: a()(g.XD, t, e),
             children: n
         })
     })
@@ -73,41 +73,41 @@ class p extends l.PureComponent {
         if (null != (e = null != s && /^data:/.test(s) ? s : p(s)) ? t = `url("${e}")` : null != o && (n = (0, i.jsx)(d.Heading, {
                 variant: "heading-xxl/normal",
                 color: "always-white",
-                className: x.nX,
+                className: g.nX,
                 children: (0, c.oN)(o)
             })), A) return (0, i.jsx)("div", {
-            className: a()(x.WY, x.r9, j),
+            className: a()(g.WY, g.r9, j),
             children: (0, i.jsxs)("div", {
-                className: a()(x.Yp, N),
+                className: a()(g.Yp, N),
                 style: {
                     ...I,
                     backgroundImage: t
                 },
                 children: [n, _ && (0, i.jsx)("div", {
-                    className: a()(x.XD, x.$N, v),
+                    className: a()(g.XD, g.$N, v),
                     children: C
                 })]
             })
         });
         null != s ? l = (0, i.jsx)(d.MzZ, {
-            className: x.DT,
+            className: g.DT,
             onClick: this.handleRemove,
-            children: g.intl.string(g.t.N86XcP)
+            children: x.intl.string(x.t.N86XcP)
         }) : E || (l = (0, i.jsx)("small", {
-            className: x.UZ,
-            children: g.intl.format(g.t.AH4c7Y, {
+            className: g.UZ,
+            children: x.intl.format(x.t.AH4c7Y, {
                 size: m.eQT
             })
         }));
-        let R = k ?? r ?? g.intl.string(g.t["Ge+941"]);
+        let R = k ?? r ?? x.intl.string(x.t["Ge+941"]);
         return (0, i.jsxs)("div", {
-            className: a()(x.WY, j),
+            className: a()(g.WY, j),
             children: [(0, i.jsx)(d.vN3, {
                 within: !0,
                 children: (0, i.jsxs)("div", {
-                    className: f ? a()(x.U1, T) : void 0,
+                    className: f ? a()(g.U1, T) : void 0,
                     children: [(0, i.jsxs)("div", {
-                        className: a()(x.Yp, N),
+                        className: a()(g.Yp, N),
                         style: {
                             ...I,
                             backgroundImage: t
@@ -116,20 +116,20 @@ class p extends l.PureComponent {
                             "aria-hidden": !0,
                             children: n
                         }), null != w ? (0, i.jsx)(d.DUT, {
-                            className: x.c4,
+                            className: g.c4,
                             "aria-label": R,
                             onClick: w
                         }) : (0, i.jsx)(u.Ay, {
                             ref: this.inputRef,
                             onChange: b,
-                            className: x.c4,
+                            className: g.c4,
                             "aria-label": R,
                             tabIndex: 0,
                             maxFileSizeBytes: y,
                             onFileSizeError: O
                         })]
                     }), null != r && (0, i.jsx)("div", {
-                        className: x.$J,
+                        className: g.$J,
                         "aria-hidden": "true",
                         children: r
                     }), f && (0, i.jsx)(h, {

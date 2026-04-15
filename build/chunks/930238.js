@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(582754),
     u = n(397927),
     m = n(398590),
-    g = n(736653),
-    x = n(573648),
+    x = n(736653),
+    g = n(573648),
     h = n(429913),
     p = n(882997),
     A = n(235986),
@@ -79,11 +79,11 @@ function W(e) {
             onManageApplication: eo,
             onManageLobbiesLinked: ed
         } = e,
-        ec = (0, g.Ay)(),
+        ec = (0, x.Ay)(),
         [eu, em] = l.useState(""),
         {
-            isFetchingConnections: eg,
-            accounts: ex
+            isFetchingConnections: ex,
+            accounts: eg
         } = (0, d.cf)([N.A], () => ({
             isFetchingConnections: N.A.isFetching(),
             accounts: N.A.getAccounts()
@@ -113,18 +113,18 @@ function W(e) {
             showTwitchCard: eT,
             showYoutubeCard: eC
         } = l.useMemo(() => {
-            if (eg || !ep) return {
+            if (ex || !ep) return {
                 showTwitchCard: !1,
                 showYoutubeCard: !1
             };
             let e = Z?.features.has(k.GuildFeatures.COMMUNITY),
-                t = ex.filter(e => e.type === k.fg2.TWITCH).length > 0,
-                n = ex.filter(e => e.type === k.fg2.YOUTUBE).length > 0;
+                t = eg.filter(e => e.type === k.fg2.TWITCH).length > 0,
+                n = eg.filter(e => e.type === k.fg2.YOUTUBE).length > 0;
             return {
                 showTwitchCard: e_ > 0 || !t && e,
                 showYoutubeCard: ej > 0 || !n && e
             }
-        }, [eg, ep, Z, ex, e_, ej]),
+        }, [ex, ep, Z, eg, e_, ej]),
         eE = Object.values($).length,
         eI = l.useMemo(() => {
             let e = eE > 100 ? U : o();
@@ -295,7 +295,7 @@ function W(e) {
                 count: r
             })
         }]
-    }, "channels-syncing"))), eT && eU.push((F = x.A.get(k.fg2.TWITCH), e_ > 0 ? (z = (0, i.jsx)(u.uhT, {
+    }, "channels-syncing"))), eT && eU.push((F = g.A.get(k.fg2.TWITCH), e_ > 0 ? (z = (0, i.jsx)(u.uhT, {
         size: "xs"
     }), H = L.intl.formatToPlainString(L.t.FFpnT8, {
         count: eN
@@ -314,7 +314,7 @@ function W(e) {
         details: [{
             text: H
         }]
-    }, "integrations-twitch"))), eC && eU.push((Q = x.A.get(k.fg2.YOUTUBE), ej > 0 ? (J = (0, i.jsx)(u.uhT, {
+    }, "integrations-twitch"))), eC && eU.push((Q = g.A.get(k.fg2.YOUTUBE), ej > 0 ? (J = (0, i.jsx)(u.uhT, {
         size: "xs"
     }), Y = L.intl.formatToPlainString(L.t.b2g5vC, {
         count: ev
@@ -344,7 +344,7 @@ function W(e) {
             })
         }), (0, i.jsx)(u.cGx, {
             className: M.yF
-        }), ei || eg || null == Z ? (0, i.jsx)(u.y$y, {
+        }), ei || ex || null == Z ? (0, i.jsx)(u.y$y, {
             className: M.__invalid_spinner,
             type: u.y$y.Type.SPINNING_CIRCLE
         }) : (0, i.jsxs)(i.Fragment, {

@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(914191),
     h = n(803064),
     _ = n(213351),
-    p = n(429526),
-    A = n(758023),
+    A = n(429526),
+    p = n(758023),
     f = n(985018),
     j = n(927548),
     N = n(87906),
@@ -59,7 +59,7 @@ function I(e) {
                 })
             }), (0, i.jsx)("div", {
                 className: j.uW,
-                children: (0, i.jsx)(A.A, {
+                children: (0, i.jsx)(p.A, {
                     guildId: t.id
                 })
             }), (0, i.jsx)("div", {
@@ -119,7 +119,7 @@ function I(e) {
                 })]
             }), (0, i.jsxs)("div", {
                 className: j.uW,
-                children: [(0, i.jsx)(p.A, {
+                children: [(0, i.jsx)(A.A, {
                     guildId: t.id
                 }), (0, i.jsx)(_.A, {
                     guildId: t.id

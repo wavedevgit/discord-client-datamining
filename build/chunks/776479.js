@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(825453),
     u = n(602418),
     m = n(2655),
-    g = n(985018),
-    x = n(362262);
+    x = n(985018),
+    g = n(362262);
 
 function h(e) {
     let {
@@ -29,11 +29,11 @@ function h(e) {
                 size: "md",
                 color: "currentColor"
             }),
-            title: g.intl.string(g.t.RGoJNN)
+            title: x.intl.string(x.t.RGoJNN)
         }), (0, i.jsx)(a.Text, {
             color: "text-muted",
             variant: "text-sm/normal",
-            children: g.intl.string(g.t.sCkD3Z)
+            children: x.intl.string(x.t.sCkD3Z)
         }), (0, i.jsx)(p, {
             guildId: c,
             applicationId: t.id
@@ -56,7 +56,7 @@ function p(e) {
         selectedPermissionCount: a
     } = (0, c.A)(n, t);
     return (0, i.jsx)("div", {
-        className: x.zi,
+        className: g.zi,
         children: (0, i.jsx)(m.A, {
             applicationId: t,
             guildId: n,

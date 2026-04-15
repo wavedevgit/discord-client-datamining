@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(397927),
     u = n(686956),
     m = n(58149),
-    g = n(392054),
-    x = n(168186),
+    x = n(392054),
+    g = n(168186),
     h = n(320426),
     p = n(381616),
     A = n(961350),
@@ -45,13 +45,13 @@ function k(e) {
     let A = (0, r.bG)([b.A], () => b.A.getSortedRoles(s)),
         [j, I] = l.useState(new Set),
         S = l.useMemo(() => {
-            let e = (0, x.Ap)(s),
+            let e = (0, g.Ap)(s),
                 t = A.toReversed().reduce((e, t, n) => (e[t.id] = n, e), {});
             return Object.values(d).filter(e => e.canRead).sort((n, i) => {
                 let l = n.type - i.type;
                 if (0 !== l) return l;
                 switch (n.type) {
-                    case g.RA.USER:
+                    case x.RA.USER:
                         return function(e, t, n) {
                             let i = Number(e.canWrite) - Number(t.canWrite);
                             if (0 !== i) return i;
@@ -64,11 +64,11 @@ function k(e) {
                             }
                             return v.default.compare(e.id, t.id)
                         }(n, i, s);
-                    case g.RA.ROLE:
+                    case x.RA.ROLE:
                         if (n.id === s) return -1;
                         if (i.id === s) return 1;
                         return t[n.id] > t[i.id] ? -1 : 1;
-                    case g.RA.CHANNEL:
+                    case x.RA.CHANNEL:
                         if (n.id === e) return -1;
                         if (i.id === e) return 1;
                         let a = Number(n.canWrite) - Number(i.canWrite);
@@ -90,7 +90,7 @@ function k(e) {
             }, [])
         }, [n, d]);
     l.useEffect(() => {
-        let e = Object.values(d).filter(e => e.type === g.RA.USER && !e.canRead && !j.has(e.id)).map(e => e.id);
+        let e = Object.values(d).filter(e => e.type === x.RA.USER && !e.canRead && !j.has(e.id)).map(e => e.id);
         0 !== e.length && (u.A.requestMembersById(s, e, !1), I(t => new Set([...t, ...e])))
     }, [s, d, j, I]);
     let k = (0, r.bG)([C.A], () => C.A.getApplicationId()),
@@ -126,11 +126,11 @@ function R(e) {
             canShowMigrationTooltip: p,
             hasAccessToMutatePermissions: b
         } = e,
-        f = c.id === n.id || c.id === (0, x.Ap)(n.id),
+        f = c.id === n.id || c.id === (0, g.Ap)(n.id),
         _ = u?.application?.bot?.username,
         N = !c.canWrite || !b,
         v = A.default.getId();
-    b ? c.canWrite || (c.type === g.RA.USER ? t = c.id === v ? O.intl.string(O.t["1VF/0x"]) : O.intl.string(O.t.P1GnEd) : c.type === g.RA.ROLE && (t = O.intl.string(O.t.mcAijf))) : t = null != s ? O.intl.string(O.t.tybdas) : O.intl.string(O.t["z2hjk/"]);
+    b ? c.canWrite || (c.type === x.RA.USER ? t = c.id === v ? O.intl.string(O.t["1VF/0x"]) : O.intl.string(O.t.P1GnEd) : c.type === x.RA.ROLE && (t = O.intl.string(O.t.mcAijf))) : t = null != s ? O.intl.string(O.t.tybdas) : O.intl.string(O.t["z2hjk/"]);
     let T = p && null != u && c.id === n.id && void 0 !== _ && !c.permission;
     l.useEffect(() => {
         T && j.default.track(y.HAw.COMMANDS_MIGRATION_TOOLTIP_VIEWED, {

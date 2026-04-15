@@ -1,7 +1,7 @@
 /** chunk id: 520761 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -17,12 +17,12 @@ var i = n(627968),
     x = n(132514),
     h = n(985018),
     _ = n(927548);
-let p = function(e) {
+let A = function(e) {
     let {
         guildId: t,
         resourceChannel: l,
-        index: p,
-        onDragComplete: A,
+        index: A,
+        onDragComplete: p,
         onDragStart: f,
         onDragReset: j
     } = e, {
@@ -44,9 +44,9 @@ let p = function(e) {
         } = (0, d.A)({
             type: "RESOURCE_CHANNEL",
             optionId: l.channelId,
-            index: p,
+            index: A,
             onDragStart: f,
-            onDragComplete: A,
+            onDragComplete: p,
             onDragReset: j
         }),
         G = s.useCallback(e => {
@@ -75,8 +75,8 @@ let p = function(e) {
         className: _.l5,
         children: [(0, i.jsxs)("div", {
             className: r()(_.Km, {
-                [_.A]: null != y && p < y,
-                [_.Ze]: null != y && p > y,
+                [_.A]: null != y && A < y,
+                [_.Ze]: null != y && A > y,
                 [_._t]: null != I
             }),
             ref: e => {

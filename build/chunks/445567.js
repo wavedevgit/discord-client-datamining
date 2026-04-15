@@ -21,7 +21,7 @@ function _(e) {
     let {
         guild: t,
         canManageGuild: n
-    } = e, _ = t.features.has(c.GuildFeatures.BANNER), p = t.features.has(c.GuildFeatures.ANIMATED_BANNER), A = _ && n, {
+    } = e, _ = t.features.has(c.GuildFeatures.BANNER), A = t.features.has(c.GuildFeatures.ANIMATED_BANNER), p = _ && n, {
         analyticsLocations: f
     } = (0, r.Ay)(), j = s.useCallback((e, n) => {
         (0, d.fI)(t, f, e, n)
@@ -38,8 +38,8 @@ function _(e) {
         makeURL: e => null != e ? o.Ay.getGuildBannerURL({
             id: t.id,
             banner: e
-        }, p) : null,
-        disabled: !A,
+        }, A) : null,
+        disabled: !p,
         onChange: j,
         hint: x.intl.string(x.t.uPvxqJ),
         onOpenImageSelectModal: () => (0, d.Nn)({
@@ -58,7 +58,7 @@ function _(e) {
             },
             analyticsLocations: f
         }),
-        enabled: A
+        enabled: p
     });
     return _ ? E : (0, i.jsx)(l.DUT, {
         "aria-hidden": !0,

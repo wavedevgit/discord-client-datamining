@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(990078),
     u = n(397927),
     m = n(442433),
-    g = n(392054),
-    x = n(168186),
+    x = n(392054),
+    g = n(168186),
     h = n(47167),
     p = n(713654),
     A = n(201275),
@@ -51,7 +51,7 @@ function y(e) {
         })
     }, [s]);
     switch (a) {
-        case g.RA.CHANNEL:
+        case x.RA.CHANNEL:
             return (0, i.jsx)(O, {
                 guild: t,
                 id: s,
@@ -59,7 +59,7 @@ function y(e) {
                 lockTooltipText: d,
                 openEntryContextMenu: u
             });
-        case g.RA.ROLE:
+        case x.RA.ROLE:
             return (0, i.jsx)(w, {
                 guild: t,
                 id: s,
@@ -67,7 +67,7 @@ function y(e) {
                 lockTooltipText: d,
                 openEntryContextMenu: u
             });
-        case g.RA.USER:
+        case x.RA.USER:
             return (0, i.jsx)(k, {
                 guild: t,
                 id: s,
@@ -85,9 +85,9 @@ function O(e) {
         isLocked: s,
         lockTooltipText: r,
         openEntryContextMenu: o
-    } = e, c = (0, x.Ap)(t.id), {
+    } = e, c = (0, g.Ap)(t.id), {
         icon: m,
-        name: g,
+        name: x,
         categoryName: A
     } = (0, d.cf)([f.A, T.default, N.A], () => {
         if (c === n) return {
@@ -104,7 +104,7 @@ function O(e) {
     }, [c, t, n]), b = l.useCallback(e => {
         n !== c && o(e)
     }, [c, n, o]);
-    return null == m || null == g ? null : (0, i.jsxs)("div", {
+    return null == m || null == x ? null : (0, i.jsxs)("div", {
         onContextMenu: b,
         className: S.Cv,
         children: [(0, i.jsx)(m, {
@@ -117,7 +117,7 @@ function O(e) {
             className: S.S3,
             color: "text-strong",
             variant: "text-md/normal",
-            children: g
+            children: x
         }), null != A ? (0, i.jsxs)(u.Text, {
             className: S.Tc,
             variant: "text-sm/normal",
@@ -134,11 +134,11 @@ function w(e) {
         id: s,
         isLocked: r,
         lockTooltipText: o
-    } = e, c = (0, d.bG)([j.A], () => j.A.getRole(t.id, s)), g = (0, A.$7)({
+    } = e, c = (0, d.bG)([j.A], () => j.A.getRole(t.id, s)), x = (0, A.$7)({
         guildId: t.id,
         roleId: s,
         size: 24
-    }), x = l.useCallback(e => {
+    }), g = l.useCallback(e => {
         null != t && null != c && (0, m.L3)(e, async () => {
             let {
                 default: e
@@ -151,11 +151,11 @@ function w(e) {
         })
     }, [t, c]);
     return c?.name == null ? null : (0, i.jsxs)("div", {
-        onContextMenu: x,
+        onContextMenu: g,
         className: S.Cv,
-        children: [null != g ? (0, i.jsx)(b.A, {
+        children: [null != x ? (0, i.jsx)(b.A, {
             className: a()(S.__invalid_icon, S.Sl),
-            ...g
+            ...x
         }) : (0, i.jsx)(u.iTF, {
             size: "custom",
             width: 23,

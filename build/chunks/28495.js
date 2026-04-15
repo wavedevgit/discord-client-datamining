@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(398590),
     h = n(736653),
     _ = n(775602),
-    p = n(793574),
-    A = n(268218),
+    A = n(793574),
+    p = n(268218),
     f = n(379848),
     j = n(201275),
     N = n(20851),
@@ -46,7 +46,7 @@ var i = n(627968),
     V = n(407759),
     z = n(598227),
     W = n(406853);
-let K = (0, A.Fe)({
+let K = (0, p.Fe)({
         createPromise: () => n.e("66147").then(n.bind(n, 48736)),
         webpackId: 48736
     }),
@@ -79,7 +79,7 @@ function J(e) {
         selectedStyle: s,
         disabled: l,
         shouldShowUpsell: a
-    } = e, o = (0, R.$)(B.intl.string(B.t.Mi9Kbe)), c = (0, h.Ay)(), _ = (0, j.qE)(n, t), A = {
+    } = e, o = (0, R.$)(B.intl.string(B.t.Mi9Kbe)), c = (0, h.Ay)(), _ = (0, j.qE)(n, t), p = {
         dark: {
             src: z,
             name: t.name
@@ -91,7 +91,7 @@ function J(e) {
     };
 
     function C() {
-        (0, T.A)(n, p.A.GUILD_POWERUPS_GUILD_SETTINGS_ROLE_EDIT), (0, x.jH)()
+        (0, T.A)(n, A.A.GUILD_POWERUPS_GUILD_SETTINGS_ROLE_EDIT), (0, x.jH)()
     }
     return (0, i.jsx)(f.Ay, {
         contentTypes: [u.M.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE],
@@ -132,7 +132,7 @@ function J(e) {
                                         },
                                         message: o,
                                         preview: !0,
-                                        roleIcon: _ ?? ((0, m.qB)(c) ? A.light : A.dark),
+                                        roleIcon: _ ?? ((0, m.qB)(c) ? p.light : p.dark),
                                         isGroupStart: !0,
                                         disableInteraction: !0,
                                         previewGuildId: n
@@ -313,9 +313,9 @@ function ee(e) {
         setSelectedSection: l
     } = e, a = (0, C.jV)(t.id, n), o = (0, c.bG)([y.A], () => y.A.getRoleStyleData(n.id)), d = !a, u = null != o && a ? o.currentStyle : y.y.SOLID, m = (0, b.Oy)(n), x = s || m, h = (0, c.bG)([v.A], () => v.A.canImpersonateRole(t, n)), {
         headerHeight: _,
-        headerRef: p
+        headerRef: A
     } = (0, O.A)(0), {
-        scrolledToTop: A,
+        scrolledToTop: p,
         handleScroll: f
     } = (0, L.u)();
     return (0, i.jsx)(g.GtU, {
@@ -328,9 +328,9 @@ function ee(e) {
             className: V.Q,
             children: [(0, i.jsx)("div", {
                 className: r()(V.wx, V.ln, {
-                    [V.l6]: !A
+                    [V.l6]: !p
                 }),
-                ref: p,
+                ref: A,
                 children: (0, i.jsx)(L.A, {
                     guild: t,
                     role: n,

@@ -22,7 +22,7 @@ function u(e) {
         clearable: x = !0
     } = e, h = (0, l.yK)([o.A], () => o.A.getPrimaryCategories()), _ = s.useCallback(e => {
         (0, a.GX)(u, e ?? d.ig)
-    }, [u]), p = s.useMemo(() => h.map(e => {
+    }, [u]), A = s.useMemo(() => h.map(e => {
         let {
             categoryId: t,
             name: n
@@ -39,9 +39,9 @@ function u(e) {
         label: t,
         description: n,
         placeholder: c.intl.string(c.t.XqMe3N),
-        options: p,
+        options: A,
         onSelectionChange: _,
         disabled: g,
         clearable: x
-    }, p.length)
+    }, A.length)
 }

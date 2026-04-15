@@ -14,7 +14,7 @@ var s = n(503698),
     u = ((i = {}).DENY = "DENY", i.PASSTHROUGH = "PASSTHROUGH", i.ALLOW = "ALLOW", i);
 let m = Object.keys(u);
 
-function g(e) {
+function x(e) {
     let {
         value: t = "PASSTHROUGH",
         onChange: n,
@@ -36,7 +36,7 @@ function g(e) {
         ref: d,
         id: o,
         ...u,
-        children: m.map(e => (0, l.jsx)(x, {
+        children: m.map(e => (0, l.jsx)(g, {
             type: e,
             isSelected: t === e,
             onSelect: e => {
@@ -46,7 +46,7 @@ function g(e) {
     })
 }
 
-function x(e) {
+function g(e) {
     let t, n, i, {
         type: s,
         onSelect: u,
@@ -62,7 +62,7 @@ function x(e) {
         default:
             i = d.intl.string(d.t.ujC3ZS), t = o.Fb4, n = c.le
     }
-    let g = (0, r.Gx)({
+    let x = (0, r.Gx)({
         isSelected: m,
         label: i
     });
@@ -71,12 +71,12 @@ function x(e) {
             [c.wH]: m
         }),
         onClick: () => u(s),
-        ...g,
+        ...x,
         children: (0, l.jsx)(t, {
             color: "currentColor",
             size: "xs"
         })
     })
 }
-g.Types = u;
-let h = g
+x.Types = u;
+let h = x

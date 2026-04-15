@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(652215),
     u = n(985018),
     m = n(802864),
-    g = n(734087),
-    x = n(609621);
+    x = n(734087),
+    g = n(609621);
 
 function h(e) {
     var t;
@@ -39,7 +39,7 @@ function h(e) {
             selectableWebhookChannels: A,
             errors: b,
             canNavigate: f
-        }) : (t = () => open(o.A.getArticleURL(c.MVz.CHANNEL_FOLLOWING)), n = (0, l.Mw)(_) ? g : x, (0, i.jsxs)(r.A, {
+        }) : (t = () => open(o.A.getArticleURL(c.MVz.CHANNEL_FOLLOWING)), n = (0, l.Mw)(_) ? x : g, (0, i.jsxs)(r.A, {
             direction: r.A.Direction.VERTICAL,
             align: r.A.Align.CENTER,
             children: [(0, i.jsx)("img", {

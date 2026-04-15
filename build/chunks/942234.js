@@ -1,6 +1,6 @@
 /** chunk id: 942234 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => x
 });
 var i = n(627968),
     l = n(64700),
@@ -51,18 +51,18 @@ class m extends l.PureComponent {
             permissions: a,
             locked: d,
             permissionRender: u
-        } = this.props, m = u?.(s), g = !!(d || m), x = "string" == typeof m && "" !== m ? r.KTN : void 0, h = null == a ? (0, i.jsx)(c.A, {
+        } = this.props, m = u?.(s), x = !!(d || m), g = "string" == typeof m && "" !== m ? r.KTN : void 0, h = null == a ? (0, i.jsx)(c.A, {
             label: n,
             description: (0, o.Nk)(l),
-            icon: x,
-            disabled: g,
+            icon: g,
+            disabled: x,
             value: this.getOverwriteValue(s),
             onChange: e => this.handleChange(s, e)
         }, String(s)) : (0, i.jsx)(r.dOG, {
             label: n,
             description: (0, o.Nk)(l),
-            icon: x,
-            disabled: g,
+            icon: g,
+            disabled: x,
             checked: this.getPermissionValue(s, a),
             onChange: e => this.handleChange(s, e)
         }, String(s));
@@ -92,4 +92,4 @@ class m extends l.PureComponent {
         })
     }
 }
-let g = m
+let x = m

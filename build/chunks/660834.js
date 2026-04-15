@@ -1,9 +1,9 @@
 /** chunk id: 660834 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => A,
+    Ay: () => p,
     N8: () => _,
-    Q$: () => p
+    Q$: () => A
 });
 var i = n(627968);
 n(64700);
@@ -31,7 +31,7 @@ function _() {
     null != e && (h(e) ? (c.A.close(), (0, o.aZ)(e.id)) : c.A.open(e.id, m.BEX.MEMBERS))
 }
 
-function p() {
+function A() {
     let e = h((0, l.bG)([u.A], () => u.A.getProps().guild, []));
     return (0, i.jsxs)("div", {
         className: x.q,
@@ -45,7 +45,7 @@ function p() {
     })
 }
 
-function A() {
+function p() {
     let {
         guild: e
     } = (0, l.bG)([u.A], () => u.A.getProps(), [], s.isEqual), t = e?.id ?? m.dJq;

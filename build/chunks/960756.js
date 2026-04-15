@@ -21,9 +21,9 @@ var i = n(627968),
     x = n(259866),
     h = n(539916),
     _ = n(985018),
-    p = n(637879);
+    A = n(637879);
 
-function A(e) {
+function p(e) {
     let t, {
         title: n,
         description: s,
@@ -39,11 +39,11 @@ function A(e) {
                 children: [(0, i.jsx)(r.A9s, {
                     size: "xs",
                     color: "currentColor",
-                    className: p.AI
+                    className: A.AI
                 }), (0, i.jsx)(r.Text, {
                     variant: "text-xs/semibold",
                     color: "status-positive",
-                    className: p.qS,
+                    className: A.qS,
                     children: _.intl.string(_.t.rPnzRf)
                 })]
             });
@@ -53,11 +53,11 @@ function A(e) {
                 children: [(0, i.jsx)(r.EpV, {
                     size: "xs",
                     color: "currentColor",
-                    className: p.$e
+                    className: A.$e
                 }), (0, i.jsx)(r.Text, {
                     variant: "text-xs/semibold",
                     color: "status-warning",
-                    className: p.qS,
+                    className: A.qS,
                     children: _.intl.string(_.t["yTa+di"])
                 })]
             });
@@ -67,24 +67,24 @@ function A(e) {
                 children: [(0, i.jsx)(r.EpV, {
                     size: "xs",
                     color: "currentColor",
-                    className: p.OR
+                    className: A.OR
                 }), (0, i.jsx)(r.Text, {
                     variant: "text-xs/semibold",
                     color: "text-feedback-critical",
-                    className: p.qS,
+                    className: A.qS,
                     children: _.intl.string(_.t.EkokLy)
                 })]
             })
     }
     return (0, i.jsxs)("div", {
-        className: p.jB,
+        className: A.jB,
         children: [(0, i.jsxs)("div", {
-            className: p.jA,
+            className: A.jA,
             children: [(0, i.jsx)("div", {
-                className: p.zc,
+                className: A.zc,
                 children: l
             }), (0, i.jsxs)("div", {
-                className: p.FE,
+                className: A.FE,
                 children: [(0, i.jsx)(r.Heading, {
                     variant: "heading-md/semibold",
                     children: n
@@ -95,9 +95,9 @@ function A(e) {
                 })]
             })]
         }), (0, i.jsxs)("div", {
-            className: p.Ib,
+            className: A.Ib,
             children: [t, c, (0, i.jsx)("div", {
-                className: p.lO,
+                className: A.lO,
                 children: a ? (0, i.jsx)(r.Button, {
                     size: "sm",
                     variant: "secondary",
@@ -142,13 +142,13 @@ function N(e) {
     }) : _.intl.formatToPlainString(_.t.vPwmA0, {
         numChattableChannels: h.Kd
     });
-    return (0, i.jsx)(A, {
+    return (0, i.jsx)(p, {
         title: C ? _.intl.string(_.t.YZookV) : _.intl.string(_.t["4GSygh"]),
         description: T,
         icon: (0, i.jsx)(r.N$i, {
             size: "md",
             color: "currentColor",
-            className: p.p
+            className: A.p
         }),
         hasStarted: j > 0 || C,
         status: N || E ? d ? "none" : "good" : "required",
@@ -162,7 +162,7 @@ function E(e) {
         onEdit: n,
         disableGoodStatus: s
     } = e, d = (0, l.yK)([a.A], () => a.A.getDefaultChannelIds(t)), c = (0, l.yK)([a.A], () => a.A.getOnboardingPrompts(t)), u = c.length, [m, g] = (0, o.Lx)(t, c, d), x = m.length, h = m.length + g.length, f = x / h * 100, j = (0, l.bG)([a.A], () => a.A.isAdvancedMode(t)), N = u > 0, E = "none";
-    return N && (f >= 85 && !s ? E = "good" : f < 85 && (E = "warning")), (0, i.jsx)(A, {
+    return N && (f >= 85 && !s ? E = "good" : f < 85 && (E = "warning")), (0, i.jsx)(p, {
         title: j ? _.intl.string(_.t.AGjtFv) : _.intl.string(_.t.dqCzoT),
         description: _.intl.format(_.t.iuNisr, {
             numChannels: x,
@@ -177,7 +177,7 @@ function E(e) {
         icon: (0, i.jsx)(r.$yI, {
             size: "md",
             color: "currentColor",
-            className: p.p
+            className: A.p
         }),
         hasStarted: N,
         status: E,
@@ -198,19 +198,19 @@ function C(e) {
     x ? j || (E = _.intl.string(_.t.wHOoyE)) : E = _.intl.string(_.t.wXFbgZ);
     let C = null;
     return j && g && (C = (0, i.jsx)("div", {
-        className: p.WW,
+        className: A.WW,
         children: (0, i.jsx)(r.dOG, {
             checked: h,
             onChange: f,
             disabled: !x
         })
-    })), (0, i.jsx)(A, {
+    })), (0, i.jsx)(p, {
         title: _.intl.string(_.t.mRHqsj),
         description: E,
         icon: (0, i.jsx)(r.Zf8, {
             size: "md",
             color: "currentColor",
-            className: p.p
+            className: A.p
         }),
         hasStarted: j,
         status: N,
@@ -239,13 +239,13 @@ function T(e) {
     let m = d ? _.intl.format(_.t["9swnQZ"], {
         count: o.length
     }) : _.intl.string(_.t["3d3Cd5"]);
-    return (0, i.jsx)(A, {
+    return (0, i.jsx)(p, {
         title: _.intl.string(_.t.oL60eW),
         description: m,
         icon: (0, i.jsx)(r.qYV, {
             size: "md",
             color: "currentColor",
-            className: p.p
+            className: A.p
         }),
         hasStarted: d,
         status: u,

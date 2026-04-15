@@ -1,7 +1,7 @@
 /** chunk id: 423418 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    u: () => A
+    u: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -17,12 +17,12 @@ var i = n(627968),
     x = n(911144),
     h = n(652215),
     _ = n(985018),
-    p = n(109399);
+    A = n(109399);
 
-function A(e) {
+function p(e) {
     let {
         guild: t
-    } = e, n = s.useRef(null), A = (0, l.bG)([o.A], () => o.A.hideInstantInvites);
+    } = e, n = s.useRef(null), p = (0, l.bG)([o.A], () => o.A.hideInstantInvites);
     (0, c.A)(n, h.nd0.BOOST_PERKS_VANITY_URL);
     let {
         vanityURLCode: f,
@@ -39,19 +39,19 @@ function A(e) {
     })), T = t?.id;
     return (s.useEffect(() => {
         null == T || C || (0, u.Je)(T)
-    }, [C, T]), null == t) ? null : A ? (0, i.jsx)(a.A, {}) : (0, i.jsxs)("div", {
+    }, [C, T]), null == t) ? null : p ? (0, i.jsx)(a.A, {}) : (0, i.jsxs)("div", {
         ref: n,
         children: [(0, i.jsxs)(r.Heading, {
             variant: "heading-md/medium",
             color: "text-strong",
-            className: p.D,
+            className: A.D,
             children: [_.intl.string(_.t["5XZKy/"]), (0, i.jsx)(g.rV, {
                 guild: t
             })]
         }), (0, i.jsx)(r.Text, {
             variant: "text-sm/medium",
             color: "text-subtle",
-            className: p.h,
+            className: A.h,
             children: _.intl.format(_.t.koklFG, {
                 helpCenterArticle: d.A.getArticleURL(h.MVz.GUILD_VANITY_URL)
             })

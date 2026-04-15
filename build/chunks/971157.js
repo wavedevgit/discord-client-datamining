@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(235986),
     u = n(997509),
     m = n(776479),
-    g = n(389996),
-    x = n(576705),
+    x = n(389996),
+    g = n(576705),
     h = n(486020),
     p = n(661191),
     A = n(427262),
@@ -64,7 +64,7 @@ function E(e) {
         application: I,
         integration: S,
         webhooks: y
-    } = n, [O, w] = (0, r.yK)([x.A], () => [x.A.can(N.xBc.MANAGE_ROLES, t), null == I.bot || x.A.canManageUser(N.xBc.MANAGE_GUILD, I.bot.id, t)], [I.bot, t]), k = (0, r.bG)([x.A], () => x.A.can(N.xBc.MANAGE_WEBHOOKS, t), [t]), R = l.useCallback(() => {
+    } = n, [O, w] = (0, r.yK)([g.A], () => [g.A.can(N.xBc.MANAGE_ROLES, t), null == I.bot || g.A.canManageUser(N.xBc.MANAGE_GUILD, I.bot.id, t)], [I.bot, t]), k = (0, r.bG)([g.A], () => g.A.can(N.xBc.MANAGE_WEBHOOKS, t), [t]), R = l.useCallback(() => {
         E() && (0, o.qfG)(e => (0, i.jsx)(C, {
             guild: t,
             application: I,
@@ -106,7 +106,7 @@ function E(e) {
             }),
             details: L,
             isHeader: !0
-        }), I?.description != null ? (0, i.jsx)(g.A, {
+        }), I?.description != null ? (0, i.jsx)(x.A, {
             userBio: I.description,
             className: T.ux
         }) : null, O ? (0, i.jsx)(m.A, {

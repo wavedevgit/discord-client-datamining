@@ -29,8 +29,8 @@ function a(e) {
             null == n ? d() : o(n.optionId)
         }
     }), [{
-        dragSourcePosition: g
-    }, x] = (0, s.H)({
+        dragSourcePosition: x
+    }, g] = (0, s.H)({
         accept: t,
         canDrop: () => !0,
         collect: e => {
@@ -47,8 +47,8 @@ function a(e) {
     });
     return {
         drag: m,
-        dragSourcePosition: g,
-        drop: x,
+        dragSourcePosition: x,
+        drop: g,
         setIsDraggable: u
     }
 }

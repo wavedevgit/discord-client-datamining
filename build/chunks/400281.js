@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(565447),
     h = n(346076),
     _ = n(720281),
-    p = n(853922),
-    A = n(496268);
+    A = n(853922),
+    p = n(496268);
 
 function f(e) {
     let {
@@ -30,29 +30,29 @@ function f(e) {
         } = e;
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(r.cGx, {
-                className: A.ts
+                className: p.ts
             }), t]
         })
     }, l = (0, i.jsx)(s, {
         children: (0, i.jsx)(h.A, {})
-    }, p.u.HOW_IT_WORKS), a = (0, i.jsx)(s, {
+    }, A.u.HOW_IT_WORKS), a = (0, i.jsx)(s, {
         children: (0, i.jsx)(g.A, {})
-    }, p.u.BENEFITS);
+    }, A.u.BENEFITS);
     return null != n || t?.sections == null ? (0, i.jsxs)(i.Fragment, {
         children: [l, a]
     }) : (0, i.jsx)(i.Fragment, {
         children: t.sections.map(e => {
             switch (e.type) {
-                case p.u.HOW_IT_WORKS:
+                case A.u.HOW_IT_WORKS:
                     return l;
-                case p.u.BENEFITS:
+                case A.u.BENEFITS:
                     return a;
-                case p.u.OTHER_CREATORS:
+                case A.u.OTHER_CREATORS:
                     return (0, i.jsx)(s, {
                         children: (0, i.jsx)(x.A, {
                             highlightedCreators: e.creators
                         })
-                    }, p.u.OTHER_CREATORS)
+                    }, A.u.OTHER_CREATORS)
             }
         })
     })
@@ -65,7 +65,7 @@ function j(e) {
         eligibilityLoading: g,
         eligibilityError: x,
         eligibility: h
-    } = n, p = (0, d.s)(h), {
+    } = n, A = (0, d.s)(h), {
         isLoading: j,
         error: N,
         creatorMonetizationOnboardingMarketing: E
@@ -79,7 +79,7 @@ function j(e) {
             guild_id: t.id,
             is_owner: n.isGuildOwner,
             is_eligible: n.eligibleForMonetization,
-            ineligible_reasons: p
+            ineligible_reasons: A
         }
     }, {
         disableTrack: null == t.id || null == h
@@ -89,7 +89,7 @@ function j(e) {
         type: "critical",
         children: x.message
     }) : (0, i.jsxs)("div", {
-        className: A.kL,
+        className: p.kL,
         children: [(0, i.jsx)(m.A, {
             guild: t,
             monetizationEligibility: n

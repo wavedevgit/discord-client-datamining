@@ -12,8 +12,8 @@ var i = n(64700),
     c = n(71393),
     u = n(576705),
     m = n(287809),
-    g = n(488926),
-    x = n(633334),
+    x = n(488926),
+    g = n(633334),
     h = n(652215);
 
 function p(e) {
@@ -28,7 +28,7 @@ function p(e) {
             for (let n of l) {
                 let i = p[n.userId];
                 if (null == i || i.bot) continue;
-                let l = i.id !== t.ownerId && !g.$3({
+                let l = i.id !== t.ownerId && !x.$3({
                     permission: h.xBc.ADMINISTRATOR,
                     user: i,
                     context: t
@@ -63,8 +63,8 @@ function p(e) {
             let n = (t = v).startsWith("@") ? t.substr(1) : t,
                 i = v.startsWith("@") ? N.filter(t => t.id === e) : N;
             return {
-                members: (0, x.I)(_, A, n),
-                roles: (0, x.I)(i, b, n)
+                members: (0, g.I)(_, A, n),
+                roles: (0, g.I)(i, b, n)
             }
         }, [e, _, v, N]);
     return {

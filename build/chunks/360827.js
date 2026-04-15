@@ -18,8 +18,8 @@ var i = n(627968),
     x = n(555337),
     h = n(863694),
     _ = n(527678),
-    p = n(923121),
-    A = n(352821),
+    A = n(923121),
+    p = n(352821),
     f = n(107795),
     j = n(655943),
     N = n(259866),
@@ -34,7 +34,7 @@ function S(e) {
     let {
         guildId: t,
         prompts: n
-    } = e, r = (0, l.bG)([h.A], () => h.A.editedDefaultChannelIds), [c, x] = (0, u.Lx)(t, n, [...r]), _ = c.length, p = c.length + x.length, A = _ / p * 100, f = Math.max(Math.ceil(85 * p / 100) - _, 0), [j, N] = s.useState(!1), E = j ? a.abt : a.tN5;
+    } = e, r = (0, l.bG)([h.A], () => h.A.editedDefaultChannelIds), [c, x] = (0, u.Lx)(t, n, [...r]), _ = c.length, A = c.length + x.length, p = _ / A * 100, f = Math.max(Math.ceil(85 * A / 100) - _, 0), [j, N] = s.useState(!1), E = j ? a.abt : a.tN5;
     return (0, i.jsxs)("div", {
         className: v.Kf,
         children: [(0, i.jsxs)(a.DUT, {
@@ -42,7 +42,7 @@ function S(e) {
             onClick: () => N(!j),
             children: [(0, i.jsxs)("div", {
                 className: v.Vn,
-                children: [A <= 85 && (0, i.jsx)(a.EpV, {
+                children: [p <= 85 && (0, i.jsx)(a.EpV, {
                     size: "xs",
                     color: "currentColor",
                     className: v.$e
@@ -51,15 +51,15 @@ function S(e) {
                     variant: "text-xs/medium",
                     color: "text-muted",
                     children: b.intl.format(b.t.nMVKCX, {
-                        numChannelsMissing: p - _
+                        numChannelsMissing: A - _
                     })
                 })]
             }), (0, i.jsxs)("div", {
                 className: v.L$,
                 children: [(0, i.jsx)(a.iCB, {
                     className: v.gH,
-                    foregroundColor: A > 85 ? "var(--status-positive)" : "var(--status-warning)",
-                    percent: A
+                    foregroundColor: p > 85 ? "var(--status-positive)" : "var(--status-warning)",
+                    percent: p
                 }), (0, i.jsx)(E, {
                     size: "md",
                     color: "currentColor",
@@ -138,7 +138,7 @@ function R(e) {
                 let e = m.current;
                 null != e && (0, f.dm)(e, {
                     ignoreDefaultPrompt: !0
-                }).then(() => (0, p.fH)(e.id)).catch(() => {})
+                }).then(() => (0, A.fH)(e.id)).catch(() => {})
             }
         }, [n]), null == t) return null;
     let g = async () => {
@@ -197,16 +197,16 @@ function R(e) {
 function O() {
     let e = (0, l.bG)([x.A], () => x.A.getGuild()),
         t = (0, l.bG)([j.A], () => j.A.submitting),
-        n = (0, l.bG)([A.A], () => A.A.isSubmitting()),
-        s = (0, l.bG)([A.A], () => A.A.hasChanges());
+        n = (0, l.bG)([p.A], () => p.A.isSubmitting()),
+        s = (0, l.bG)([p.A], () => p.A.hasChanges());
     return null == e ? null : (0, i.jsx)(r.A, {
         onSave: async () => {
             try {
-                await (0, f.dm)(e), s && await (0, p.q3)(e.id)
+                await (0, f.dm)(e), s && await (0, A.q3)(e.id)
             } catch {}
         },
         onReset: () => {
-            (0, f.P3)(), s && (0, p.p2)()
+            (0, f.P3)(), s && (0, A.p2)()
         },
         submitting: t || s && n,
         onSaveText: b.intl.string(b.t["R3BPH+"])

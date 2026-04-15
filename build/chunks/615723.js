@@ -1,6 +1,6 @@
 /** chunk id: 615723 params = (module,exports,require) **/
 n.d(t, {
-    Q: () => g
+    Q: () => x
 }), n(321073), n(667532);
 var i = n(64700),
     l = n(168186),
@@ -13,7 +13,7 @@ var i = n(64700),
     u = n(652215),
     m = n(985018);
 
-function g(e) {
+function x(e) {
     let t = i.useMemo(() => {
             let t = a.Ay.getChannels(e),
                 n = [...t[a.I6]];
@@ -29,21 +29,21 @@ function g(e) {
                 canManage: !0
             }), i
         }, [e]),
-        [n, g] = i.useState(""),
+        [n, x] = i.useState(""),
         h = i.useMemo(() => {
             var e;
             let i = (e = n).startsWith("#") ? e.substr(1) : e;
-            return (0, c.I)(t, x, i)
+            return (0, c.I)(t, g, i)
         }, [t, n]);
     return {
         query: n,
         results: h,
-        setQuery: g,
+        setQuery: x,
         unfilteredCount: t.length
     }
 }
 
-function x(e) {
+function g(e) {
     return {
         id: e.id,
         names: [e.name]

@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(736653),
     u = n(235986),
     m = n(975571),
-    g = n(267001),
-    x = n(652215),
+    x = n(267001),
+    g = n(652215),
     h = n(985018),
     p = n(660356),
     A = n(734087),
@@ -45,7 +45,7 @@ function f(e) {
                     body: t,
                     status: n
                 } = e;
-                return t && t.code === x.t02.TOO_MANY_WEBHOOKS ? r.A.show({
+                return t && t.code === g.t02.TOO_MANY_WEBHOOKS ? r.A.show({
                     title: h.intl.string(h.t.cCqsca),
                     body: h.intl.string(h.t["w+QZoX"])
                 }) : 429 === n ? r.A.show({
@@ -67,8 +67,8 @@ function f(e) {
         children: [(0, i.jsx)(a.Text, {
             variant: "text-sm/normal",
             children: h.intl.format(h.t.WL0d0e, {
-                helpdeskArticle: m.A.getArticleURL(x.MVz.WEBHOOKS),
-                developersArticle: x.X7G.API_DOCS_WEBHOOKS
+                helpdeskArticle: m.A.getArticleURL(g.MVz.WEBHOOKS),
+                developersArticle: g.X7G.API_DOCS_WEBHOOKS
             })
         }), (0, i.jsx)(a.cGx, {
             className: p.zN
@@ -83,7 +83,7 @@ function f(e) {
                     disabled: !R,
                     onClick: k
                 })
-            }), (0, i.jsx)(g.A, {
+            }), (0, i.jsx)(x.A, {
                 webhooks: j,
                 editedWebhook: N,
                 selectableWebhookChannels: v,

@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(397927),
     h = n(47167),
     _ = n(808728),
-    p = n(994500),
-    A = n(287809),
+    A = n(994500),
+    p = n(287809),
     f = n(975571),
     j = n(661191),
     N = n(997509),
@@ -228,7 +228,7 @@ let S = e => {
                         return null != t ? (0, i.jsxs)(x.Text, {
                             color: "text-muted",
                             variant: "text-sm/normal",
-                            children: [(0, h.m1)(t, A.default, p.A, !0), ": ", n.join(", ")]
+                            children: [(0, h.m1)(t, p.default, A.A, !0), ": ", n.join(", ")]
                         }, t.id) : null
                     })
                 }) : null, R?.name != null ? (0, i.jsx)(x.Text, {

@@ -19,9 +19,9 @@ function x() {
     let {
         editStateId: e,
         guildId: t
-    } = (0, r.O)(), [, x] = a.$7(e, t), [h, _] = a.xR(e, t), p = a.It(e, t);
+    } = (0, r.O)(), [, x] = a.$7(e, t), [h, _] = a.xR(e, t), A = a.It(e, t);
 
-    function A() {
+    function p() {
         (0, s.mMO)(async () => {
             let {
                 default: e
@@ -63,13 +63,13 @@ function x() {
                     direction: "horizontal",
                     gap: 16,
                     children: [(0, i.jsx)(u.A, {
-                        role: p,
+                        role: A,
                         "aria-label": m.intl.string(m.t.mD1oGB),
-                        onClick: A,
+                        onClick: p,
                         disabled: f
                     }), (0, i.jsx)(s.Button, {
                         variant: "secondary",
-                        onClick: A,
+                        onClick: p,
                         disabled: f,
                         text: m.intl.string(m.t.mD1oGB)
                     })]
@@ -80,12 +80,12 @@ function x() {
                     "aria-hidden": !0,
                     children: [(0, i.jsx)(d.A, {
                         guildId: t,
-                        role: p,
+                        role: A,
                         className: g.z,
                         theme: "light"
                     }), (0, i.jsx)(d.A, {
                         guildId: t,
-                        role: p,
+                        role: A,
                         className: g.z,
                         theme: "dark"
                     })]

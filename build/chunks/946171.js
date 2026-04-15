@@ -18,8 +18,8 @@ var l = n(311907),
     x = n(310345),
     h = n(764548),
     _ = n(268075),
-    p = n(458907),
-    A = n(719175),
+    A = n(458907),
+    p = n(719175),
     f = n(366846),
     j = n(716610),
     N = n(927573),
@@ -167,7 +167,7 @@ function v(e) {
                 children: C.intl.string(C.t.CE5Gya)
             }), (0, i.jsx)("div", {
                 className: T.wF,
-                children: (0, i.jsx)(p.T, {
+                children: (0, i.jsx)(A.T, {
                     guildId: t.id,
                     guildMetadata: n
                 })
@@ -184,7 +184,7 @@ function v(e) {
                 children: C.intl.string(C.t["4jnzla"])
             }), (0, i.jsx)("div", {
                 className: T.wF,
-                children: (0, i.jsx)(A.A, {
+                children: (0, i.jsx)(p.A, {
                     guild: t,
                     guildMetadata: n
                 })
@@ -221,7 +221,7 @@ function S(e) {
             disabled: t,
             tooltipText: t ? C.intl.string(C.t.Xx7XeB) : void 0
         }
-    }), [n.keywords, n.primaryCategoryId, h]), p = c ?? u, A = s.useMemo(() => n.keywords.map(e => ({
+    }), [n.keywords, n.primaryCategoryId, h]), A = c ?? u, p = s.useMemo(() => n.keywords.map(e => ({
         id: e,
         label: e
     })), [n.keywords]);
@@ -233,18 +233,18 @@ function S(e) {
                 label: C.intl.string(C.t["0PJZXj"]),
                 description: C.intl.string(C.t.ztiTDH),
                 tagsLabel: C.intl.string(C.t["0PJZXj"]),
-                tags: A,
+                tags: p,
                 onRemoveTag: g,
                 onAddTag: h,
                 onAddTagError: m,
                 maxTags: N.Qy,
                 maxTaxLength: N.Ug,
                 placeholder: n.keywords.length < 1 ? C.intl.string(C.t.EL4Lhs) : void 0
-            }), null != p ? (0, i.jsx)(r.Text, {
+            }), null != A ? (0, i.jsx)(r.Text, {
                 color: "text-feedback-critical",
                 variant: "text-sm/normal",
                 className: T.z3,
-                children: p
+                children: A
             }) : null]
         }), _.length > 0 ? (0, i.jsxs)("div", {
             children: [(0, i.jsx)(r.Heading, {

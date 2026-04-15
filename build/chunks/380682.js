@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(130771),
     h = n(260509),
     _ = n(317525),
-    p = n(287809),
-    A = n(403362),
+    A = n(287809),
+    p = n(403362),
     f = n(300233),
     j = n(599941),
     N = n(11351),
@@ -133,7 +133,7 @@ function w(e) {
             setCurrentTab: j
         } = (0, y.Tj)(),
         N = (0, f.X)(),
-        v = (0, s.bG)([p.default], () => p.default.getCurrentUser()),
+        v = (0, s.bG)([A.default], () => A.default.getCurrentUser()),
         L = (0, C.A)(n.id),
         P = null != n && (0, h.bM)(n, v);
     if (!N) return (0, i.jsx)(r.y$y, {});
@@ -159,7 +159,7 @@ function w(e) {
             });
             break;
         default:
-            (0, A.xb)(x)
+            (0, p.xb)(x)
     }
     return (0, i.jsxs)("div", {
         className: M.kL,

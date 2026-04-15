@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(624507),
     u = n(784309),
     m = n(652215),
-    g = n(985018),
-    x = n(204714);
+    x = n(985018),
+    g = n(204714);
 
 function h(e) {
     let {
@@ -42,7 +42,7 @@ function h(e) {
         b() && (e === p?.id ? a.A.stopEditingWebhook() : a.A.startEditingWebhook(e))
     }, [b, p]);
     return (0, i.jsx)("div", {
-        className: x.__invalid_list,
+        className: g.__invalid_list,
         children: _.map(e => {
             let {
                 channel: t,
@@ -61,10 +61,10 @@ function h(e) {
                 return (0, i.jsxs)("div", {
                     children: [(0, i.jsx)(s.Text, {
                         variant: "text-md/medium",
-                        className: x.x,
-                        children: g.intl.format(g.t.TKDIZg, {
+                        className: g.x,
+                        children: x.intl.format(x.t.TKDIZg, {
                             channelHook: () => (0, i.jsx)("span", {
-                                className: x.H,
+                                className: g.H,
                                 children: (0, r.m1)(t, d.default, o.A, !0)
                             }, t.id)
                         })

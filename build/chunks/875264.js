@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(83257),
     u = n(882997),
     m = n(235986),
-    g = n(143582),
-    x = n(607940),
+    x = n(143582),
+    g = n(607940),
     h = n(808728),
     p = n(576705),
     A = n(203982),
@@ -104,7 +104,7 @@ let y = l.memo(function(e) {
                 null != V && (V in J || V in q) || d.A.setSection(C.wLn.OVERVIEW)
         }
     }, [q, J, Q, V, t, L]), l.useEffect(() => {
-        s?.id == null || x.A.getEntitlementsForGuildFetchState(s.id) === x.e.NOT_FETCHED && g.f5(s.id)
+        s?.id == null || g.A.getEntitlementsForGuildFetchState(s.id) === g.e.NOT_FETCHED && x.f5(s.id)
     }, [s?.id]), l.useEffect(() => () => {
         d.A.setSection(C.wLn.OVERVIEW, null)
     }, []);

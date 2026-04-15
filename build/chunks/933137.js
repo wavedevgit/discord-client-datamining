@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(818191),
     h = n(564864),
     _ = n(915417),
-    p = n(147988),
-    A = n(366846),
+    A = n(147988),
+    p = n(366846),
     f = n(306846),
     j = n(493781),
     N = n(894222),
@@ -38,7 +38,7 @@ function I(e) {
     }, [n]);
     switch (t.joinType) {
         case N.J.INVITE:
-            return (0, i.jsx)(A.D, {
+            return (0, i.jsx)(p.D, {
                 requireTerms: t.requireTerms,
                 rules: t.termRules
             });
@@ -47,7 +47,7 @@ function I(e) {
                 pendingFields: t.pendingVerificationFields
             });
         case N.J.DISCOVERABLE:
-            return (0, i.jsx)(p.t, {
+            return (0, i.jsx)(A.t, {
                 fetchDiscoveryData: l,
                 settingsView: t.settingsView,
                 requireTerms: t.requireTerms,

@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(599941),
     h = n(695825),
     _ = n(11351),
-    p = n(922975),
-    A = n(822525),
+    A = n(922975),
+    p = n(822525),
     f = n(2242),
     j = n(652215),
     N = n(985018),
@@ -35,7 +35,7 @@ function T(e) {
         addNewEditStateId: I,
         addNewEditStateFromTemplate: b,
         removeEditStateId: v
-    } = p.d0(h, t, {
+    } = A.d0(h, t, {
         includeSoftDeleted: !0
     }), [S, y] = s.useState({}), R = s.useMemo(() => {
         let e = T.map(e => S[e] ?? e);
@@ -55,13 +55,13 @@ function T(e) {
         }, {
             modalKey: C
         }) : I()
-    }, [t, b, I, l, O]), L = p.Zw(R), D = s.useCallback(() => R.forEach(p.Ts), [R]), M = (0, _.gN)(), k = (0, o.bG)([m.A], () => m.A.getProps().subsection);
+    }, [t, b, I, l, O]), L = A.Zw(R), D = s.useCallback(() => R.forEach(A.Ts), [R]), M = (0, _.gN)(), k = (0, o.bG)([m.A], () => m.A.getProps().subsection);
     return s.useEffect(() => (k === j.nd0.ROLE_SUBSCRIPTION_TIER_TEMPLATE && G(), () => {
         (0, u.OoC)(C)
     }), [k, G]), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
             className: E.B2,
-            children: [R.map(e => (0, i.jsx)(A.A, {
+            children: [R.map(e => (0, i.jsx)(p.A, {
                 guildId: t,
                 initialEditStateId: e,
                 allSubscriptionListings: f,

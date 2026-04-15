@@ -23,8 +23,8 @@ function h(e) {
         triggerType: n,
         guildId: h,
         toggled: _,
-        onToggleAction: p
-    } = e, A = e => () => p(e), f = (0, d.x)(t.type, t, n), j = t.metadata?.durationSeconds, N = null != j ? (0, m.getFriendlyDurationString)(j) : null, E = (0, s.bG)([o.A, a.A], () => o.A.can(u.xBc.MODERATE_MEMBERS, a.A.getGuild(h)), [h]);
+        onToggleAction: A
+    } = e, p = e => () => A(e), f = (0, d.x)(t.type, t, n), j = t.metadata?.durationSeconds, N = null != j ? (0, m.getFriendlyDurationString)(j) : null, E = (0, s.bG)([o.A, a.A], () => o.A.can(u.xBc.MODERATE_MEMBERS, a.A.getGuild(h)), [h]);
     if (null == f) return null;
     let {
         headerText: C,
@@ -57,7 +57,7 @@ function h(e) {
                 }) : g.intl.format(g.t.mvHxze, {
                     friendlyDurationString: N
                 }), E && (0, i.jsx)(r.DUT, {
-                    onClick: A(!0),
+                    onClick: p(!0),
                     className: x._2,
                     tag: "span",
                     role: "link",
@@ -70,7 +70,7 @@ function h(e) {
             shouldShow: !E,
             children: (0, i.jsx)("div", {
                 children: (0, i.jsx)(r.DUT, {
-                    onClick: E ? A(!1) : void 0,
+                    onClick: E ? p(!1) : void 0,
                     children: (0, i.jsx)(r.P7L, {
                         checked: _,
                         disabled: !E

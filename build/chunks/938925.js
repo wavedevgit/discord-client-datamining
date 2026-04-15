@@ -7,7 +7,7 @@ var i = n(627968),
     s = n(64700),
     l = n(503698),
     r = n.n(l),
-    a = n(969528),
+    a = n(407045),
     o = n(827734),
     d = n(397927),
     c = n(147925),
@@ -43,7 +43,7 @@ function g(e) {
         buttonLabel: l,
         buttonCallback: r,
         disabled: o
-    } = e, [g, x] = s.useState(!1), h = n.flatMap(e => e.items.map(e => e.completed)), _ = h.filter(e => e).length / h.length, p = (0, d.zhh)({
+    } = e, [g, x] = s.useState(!1), h = n.flatMap(e => e.items.map(e => e.completed)), _ = h.filter(e => e).length / h.length, A = (0, d.zhh)({
         width: `${100*_}%`
     });
     return (0, i.jsxs)("div", {
@@ -63,7 +63,7 @@ function g(e) {
             className: u.ux,
             children: (0, i.jsx)(a.animated.div, {
                 className: u.zZ,
-                style: p
+                style: A
             })
         }), !g && n.map((e, t) => {
             let {

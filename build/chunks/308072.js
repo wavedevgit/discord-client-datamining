@@ -28,7 +28,7 @@ function g(e) {
         if (null == e) return;
         let t = u.A.toURLSafe(e);
         return null == t ? e : (t.searchParams.set("size", "256"), t.toString())
-    }, [x]), p = (0, o.bG)([c.A], () => c.A.getDetectableGame(t)?.name ?? ""), A = s.useCallback(() => {
+    }, [x]), A = (0, o.bG)([c.A], () => c.A.getDetectableGame(t)?.name ?? ""), p = s.useCallback(() => {
         l?.(t)
     }, [t, l]), f = s.useMemo(() => h ? null : null == _ ? (0, i.jsx)("div", {
         className: m.gP,
@@ -37,9 +37,9 @@ function g(e) {
         })
     }) : (0, i.jsx)("img", {
         className: m.Su,
-        alt: p,
+        alt: A,
         src: _
-    }), [_, h, p]);
+    }), [_, h, A]);
     return (0, i.jsxs)("div", {
         className: r()(m.id, {
             [m.rX]: !n,
@@ -48,7 +48,7 @@ function g(e) {
         children: [(0, i.jsxs)(a.DUT, {
             "aria-disabled": g,
             tabIndex: g ? -1 : 0,
-            onClick: g ? void 0 : A,
+            onClick: g ? void 0 : p,
             className: r()(m.a8, {
                 [m.AL]: h,
                 [m.r9]: g
@@ -63,7 +63,7 @@ function g(e) {
             className: m.mO,
             variant: "text-xs/medium",
             color: "text-strong",
-            children: p
+            children: A
         })]
     })
 }

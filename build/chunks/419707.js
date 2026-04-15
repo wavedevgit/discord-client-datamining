@@ -7,7 +7,7 @@ var i = n(627968),
     s = n(64700),
     l = n(503698),
     r = n.n(l),
-    a = n(969528),
+    a = n(407045),
     o = n(397927),
     d = n(765671),
     c = n(985018),
@@ -21,7 +21,7 @@ let m = s.memo(function(e) {
         onExpand: g,
         disableAnimation: x,
         disableBackground: h
-    } = e, [_, p] = s.useState(!0), [A, f] = s.useState(!1), {
+    } = e, [_, A] = s.useState(!0), [p, f] = s.useState(!1), {
         ref: j,
         height: N = 0
     } = (0, d.Ay)(), {
@@ -44,7 +44,7 @@ let m = s.memo(function(e) {
         f(!1), I(l)
     }, [l]), s.useLayoutEffect(() => {
         let e = setTimeout(() => {
-            p(!1)
+            A(!1)
         }, 100);
         return () => clearTimeout(e)
     }, []), (0, i.jsx)(o.DUT, {
@@ -54,7 +54,7 @@ let m = s.memo(function(e) {
         }),
         children: (0, i.jsxs)(a.animated.div, {
             className: r()(u.N0, {
-                [u.Mm]: l && A
+                [u.Mm]: l && p
             }),
             style: b,
             children: [(0, i.jsx)(o.DUT, {

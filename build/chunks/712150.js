@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(997509),
     h = n(743981),
     _ = n(577957),
-    p = n(985018),
-    A = n(791633);
+    A = n(985018),
+    p = n(791633);
 
 function f(e) {
     let {
@@ -32,8 +32,8 @@ function f(e) {
     });
     return (0, i.jsx)(c.DUT, {
         ...a,
-        className: r()(A.Uh, {
-            [A.fT]: s
+        className: r()(p.Uh, {
+            [p.fT]: s
         }),
         onClick: l,
         children: (0, i.jsx)(g.J, {
@@ -58,7 +58,7 @@ function j(e) {
         handleChange: x
     } = e, _ = (0, d.Gx)({
         isSelected: l,
-        label: p.intl.formatToPlainString(p.t.hr4D2X, {
+        label: A.intl.formatToPlainString(A.t.hr4D2X, {
             primaryColor: n,
             secondaryColor: s
         })
@@ -89,8 +89,8 @@ function j(e) {
             onClick: () => {
                 u(e => !e)
             },
-            className: r()(A.Uh, {
-                [A.fT]: l
+            className: r()(p.Uh, {
+                [p.fT]: l
             }),
             children: (0, i.jsx)(c.dDg, {
                 size: "custom",
@@ -106,7 +106,7 @@ function N(e) {
         badge: t,
         isSelected: n,
         onClick: s
-    } = e, l = p.intl.string(_.default["4lP3/H"]), a = (0, d.Gx)({
+    } = e, l = A.intl.string(_.default["4lP3/H"]), a = (0, d.Gx)({
         isSelected: n,
         label: l
     });
@@ -115,8 +115,8 @@ function N(e) {
         "aria-label": l,
         children: (0, i.jsxs)(c.DUT, {
             ...a,
-            className: r()(A.Uh, A.lM, {
-                [A.fT]: n
+            className: r()(p.Uh, p.lM, {
+                [p.fT]: n
             }),
             onClick: s,
             children: [(0, i.jsx)(g.J, {
@@ -124,7 +124,7 @@ function N(e) {
                 width: 32,
                 height: 32
             }), (0, i.jsx)("div", {
-                className: A.i0,
+                className: p.i0,
                 children: (0, i.jsx)(c.fNY, {
                     size: "custom",
                     width: 12,
@@ -154,13 +154,13 @@ let E = function(e) {
     return (0, i.jsxs)("div", {
         className: t,
         children: [(0, i.jsx)(c.D0$, {
-            label: p.intl.string(_.default.zSbMdX),
+            label: A.intl.string(_.default.zSbMdX),
             id: g,
             children: e => (0, i.jsxs)("div", {
                 ...I,
                 id: e.controlId,
                 "aria-describedby": E,
-                className: A.p3,
+                className: p.p3,
                 children: [h.Ub.map(e => (0, i.jsx)(f, {
                     palette: e,
                     badge: l,
@@ -188,7 +188,7 @@ let E = function(e) {
             })
         }), (0, i.jsx)(c.AC4, {
             id: E,
-            children: p.intl.string(p.t.ovbW0Z)
+            children: A.intl.string(A.t.ovbW0Z)
         })]
     })
 }

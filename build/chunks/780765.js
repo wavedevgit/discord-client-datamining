@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(667244),
     u = n(125744),
     m = n(311907),
-    g = n(139033),
-    x = n(314116),
+    x = n(139033),
+    g = n(314116),
     h = n(990078),
     p = n(397927),
     A = n(282956),
@@ -54,14 +54,14 @@ function L(e) {
             if (!s.syncing)
                 if (W || s.expire_behavior !== d.F.KICK) {
                     let e = s.expire_behavior === d.F.REMOVE_ROLE ? w.intl.string(w.t["6kpw4i"]) : w.intl.string(w.t.fQUQIJ);
-                    (0, x.A)({
+                    (0, g.A)({
                         title: w.intl.string(w.t.emx3lN),
                         subtitle: s.type === u.s.YOUTUBE ? w.intl.string(w.t.anKQWU) : w.intl.string(w.t["BW/xtn"]),
                         confirmText: e,
                         onConfirm: () => G(s),
                         variant: "critical"
                     })
-                } else(0, g.A)({
+                } else(0, x.A)({
                     title: w.intl.string(w.t.emx3lN),
                     subtitle: s.type === u.s.YOUTUBE ? w.intl.string(w.t.pDCiEf) : w.intl.string(w.t.sQqHFk)
                 })

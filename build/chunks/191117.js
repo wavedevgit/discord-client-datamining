@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(655943),
     h = n(726862),
     _ = n(539916),
-    p = n(985018),
-    A = n(851824);
+    A = n(985018),
+    p = n(851824);
 
 function f(e) {
     let {
@@ -44,35 +44,35 @@ function f(e) {
         h(f(E))
     }, [h, f, E]), (0, i.jsxs)("div", {
         ref: E,
-        className: r()(A.fY, {
-            [A.A]: null != j && m < j,
-            [A.Ze]: null != j && m > j
+        className: r()(p.fY, {
+            [p.A]: null != j && m < j,
+            [p.Ze]: null != j && m > j
         }),
         children: [!l && u.length < _.D1 ? (0, i.jsxs)(o.DUT, {
-            className: A.Wz,
+            className: p.Wz,
             onClick: () => (0, g.WC)(t, [...d, (0, _.a5)(!0)], !1),
             children: [(0, i.jsx)(o.U1e, {
                 size: "custom",
                 color: "currentColor",
-                className: A.WW,
+                className: p.WW,
                 width: 20,
                 height: 20
             }), (0, i.jsx)(o.Text, {
                 variant: "text-md/medium",
                 color: "text-brand",
-                children: p.intl.string(p.t.ujFquz)
+                children: A.intl.string(A.t.ujFquz)
             })]
         }) : null, n ? null : (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
-                className: A.yF
+                className: p.yF
             }), (0, i.jsx)(o.Heading, {
                 variant: "heading-md/bold",
-                children: p.intl.string(p.t.tjrGcb)
+                children: A.intl.string(A.t.tjrGcb)
             }), (0, i.jsx)(o.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
-                className: A.VA,
-                children: p.intl.string(p.t.XFa6Q8)
+                className: p.VA,
+                children: A.intl.string(A.t.XFa6Q8)
             })]
         })]
     })
@@ -110,8 +110,8 @@ function j(e) {
                 required: !1
             }));
         n.length > _.D1 ? d.A.show({
-            title: p.intl.string(p.t.Cxtq5x),
-            body: p.intl.formatToPlainString(p.t["pkbZ+U"], {
+            title: A.intl.string(A.t.Cxtq5x),
+            body: A.intl.formatToPlainString(A.t["pkbZ+U"], {
                 numQuestions: _.D1
             })
         }) : (0, g.WC)(c, [...n, ...i])
@@ -121,12 +121,12 @@ function j(e) {
             children: [n ? null : (0, i.jsxs)("div", {
                 children: [(0, i.jsx)(o.Heading, {
                     variant: "heading-md/bold",
-                    children: p.intl.string(p.t["24Qm4M"])
+                    children: A.intl.string(A.t["24Qm4M"])
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    className: A.VA,
-                    children: p.intl.string(p.t.QvCcYe)
+                    className: p.VA,
+                    children: A.intl.string(A.t.QvCcYe)
                 })]
             }), N.map((e, t) => (0, i.jsx)(h.A, {
                 guild: c,
@@ -154,18 +154,18 @@ function j(e) {
                 onPromptDragReset: I,
                 onPromptDragComplete: b
             }, e.id)), j.length < _.iD ? (0, i.jsxs)(o.DUT, {
-                className: A.Wz,
+                className: p.Wz,
                 onClick: () => (0, g.WC)(c, [...j, (0, _.a5)(!1)], !1),
                 children: [(0, i.jsx)(o.U1e, {
                     size: "custom",
                     color: "currentColor",
-                    className: A.WW,
+                    className: p.WW,
                     width: 20,
                     height: 20
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-md/medium",
                     color: "text-brand",
-                    children: p.intl.string(p.t.ujFquz)
+                    children: A.intl.string(A.t.ujFquz)
                 })]
             }) : null]
         })]

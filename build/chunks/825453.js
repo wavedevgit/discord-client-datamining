@@ -12,8 +12,8 @@ var i = n(64700),
     c = n(392054),
     u = n(168186),
     m = n(734057),
-    g = n(317525),
-    x = n(71393),
+    x = n(317525),
+    g = n(71393),
     h = n(576705),
     p = n(287809),
     A = n(403362),
@@ -57,7 +57,7 @@ function j(e, t, n) {
         originalApplicationPermissions: a,
         originalCommandPermissions: j,
         editedTargetPermissions: function(e, t) {
-            let n = (0, o.bG)([x.A], () => x.A.getGuild(e), [e]);
+            let n = (0, o.bG)([g.A], () => g.A.getGuild(e), [e]);
             s()(null != n, "guild must be present to be editing its integration settings");
             let l = (0, o.bG)([h.A], () => h.A.getHighestRole(n), [n]),
                 a = (0, o.bG)([p.default], () => p.default.getCurrentUser()?.id);
@@ -79,7 +79,7 @@ function j(e, t, n) {
                     }
                 }, [t]),
                 j = (0, o.cf)([m.A], () => Object.fromEntries(d.map(m.A.getChannel).filter(A.Vq).map(e => [e.id, e])), [d]),
-                N = (0, o.cf)([g.A], () => Object.fromEntries(b.map(t => g.A.getRole(e, t)).filter(A.Vq).map(e => [e.id, e])), [b, e]),
+                N = (0, o.cf)([x.A], () => Object.fromEntries(b.map(t => x.A.getRole(e, t)).filter(A.Vq).map(e => [e.id, e])), [b, e]),
                 v = (0, o.cf)([p.default], () => Object.fromEntries(f.map(p.default.getUser).filter(A.Vq).map(e => [e.id, e])), [f]);
             return i.useMemo(() => {
                 let e = n.id,

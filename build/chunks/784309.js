@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(435371),
     u = n(397927),
     m = n(157559),
-    g = n(282956),
-    x = n(824953),
+    x = n(282956),
+    g = n(824953),
     h = n(235986),
     p = n(342298),
     A = n(427157),
@@ -63,7 +63,7 @@ function S(e) {
                 confirmText: C.intl.string(C.t["W+K1Fs"]),
                 cancelText: C.intl.string(C.t.xNhj0O),
                 onConfirm: () => {
-                    x.A.delete(n.guild_id, n.id).catch(e => {
+                    g.A.delete(n.guild_id, n.id).catch(e => {
                         let {
                             status: t
                         } = e;
@@ -110,7 +110,7 @@ function S(e) {
                     children: [(0, i.jsx)(p.A, {
                         image: s.avatar,
                         onChange: e => {
-                            g.A.updateWebhook({
+                            x.A.updateWebhook({
                                 avatar: e
                             })
                         },
@@ -133,7 +133,7 @@ function S(e) {
                             label: C.intl.string(C.t.ukdxuo),
                             value: s.name,
                             onChange: e => {
-                                g.A.updateWebhook({
+                                x.A.updateWebhook({
                                     name: e
                                 })
                             },
@@ -159,7 +159,7 @@ function S(e) {
                                     }
                                 },
                                 onSelectionChange: e => {
-                                    g.A.updateWebhook({
+                                    x.A.updateWebhook({
                                         channelId: e
                                     })
                                 },

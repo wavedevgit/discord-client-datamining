@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(583047),
     h = n(501381),
     _ = n(652215),
-    p = n(985018),
-    A = n(875776);
+    A = n(985018),
+    p = n(875776);
 let f = {
     id: "0",
     name: "",
@@ -71,40 +71,40 @@ function j(e) {
         children: [(0, i.jsx)(r.DZT, {
             variant: "heading-md/semibold",
             color: "text-strong",
-            children: p.intl.string(p.t.AHJddL)
+            children: A.intl.string(A.t.AHJddL)
         }), (0, i.jsx)(r.EYj, {
             tag: "p",
             variant: "text-sm/medium",
             color: "text-subtle",
-            className: A.nB,
-            children: p.intl.string(p.t.Z7TCtd)
+            className: p.nB,
+            children: A.intl.string(A.t.Z7TCtd)
         }), (0, i.jsx)(h.o, {
             guildId: n.id
         }), (0, i.jsx)("div", {
-            className: A.Zd,
+            className: p.Zd,
             children: null != y ? (0, i.jsx)(x.a, {
                 guild: n,
                 formFields: y
             }) : (0, i.jsx)(o.y$y, {})
         }), (0, i.jsx)("div", {
-            className: A.yF
+            className: p.yF
         }), (0, i.jsxs)("div", {
-            className: A.Im,
+            className: p.Im,
             children: [(0, i.jsxs)("div", {
-                className: A.fi,
+                className: p.fi,
                 children: [(0, i.jsx)(o.dOG, {
-                    label: p.intl.string(p.t["N/0232"]),
+                    label: A.intl.string(A.t["N/0232"]),
                     checked: I,
                     onChange: v,
                     disabled: T
                 }), (0, i.jsx)(r.EYj, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    children: p.intl.string(p.t["3TSZYK"])
+                    children: A.intl.string(A.t["3TSZYK"])
                 }), T && (0, i.jsx)(r.EYj, {
                     variant: "text-xs/normal",
                     color: "text-muted",
-                    children: p.intl.format(p.t.Bk0VOi, {
+                    children: A.intl.format(A.t.Bk0VOi, {
                         profileLink: (e, t) => (0, i.jsx)(o.MzZ, {
                             onClick: S,
                             children: e
@@ -112,18 +112,18 @@ function j(e) {
                     })
                 })]
             }), (0, i.jsx)("div", {
-                className: A.fi,
+                className: p.fi,
                 children: (0, i.jsxs)("div", {
-                    className: A.cK,
+                    className: p.cK,
                     children: [(0, i.jsx)("div", {
-                        className: A.D7
+                        className: p.D7
                     }), (0, i.jsx)(u.Ay, {
-                        className: A.VH,
+                        className: p.VH,
                         profile: b,
                         CTAOverride: (0, i.jsx)(r.$nd, {
                             variant: "active",
                             size: "sm",
-                            text: p.intl.string(p.t["7XdMW2"]),
+                            text: A.intl.string(A.t["7XdMW2"]),
                             fullWidth: !0
                         }),
                         disableGuildNameClick: !0

@@ -52,7 +52,7 @@ function p(e) {
                 }) : l.type === _.fg2.XBOX ? (0, s.mMO)(async () => {
                     let {
                         default: t
-                    } = await Promise.all([n.e("48159"), n.e("67670")]).then(n.bind(n, 188072));
+                    } = await Promise.all([n.e("14946"), n.e("67670")]).then(n.bind(n, 188072));
                     return n => (0, i.jsx)(t, {
                         ...n,
                         channel: e

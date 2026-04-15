@@ -28,7 +28,7 @@ function g() {
         submitting: x,
         errors: h,
         hasChanges: _
-    } = (0, l.cf)([o.A], () => o.A.getProps()), p = s.useMemo(() => null != n ? (0, u.z)(n?.code) : (0, m.$s)(h), [h, n]), A = s.useCallback(async () => {
+    } = (0, l.cf)([o.A], () => o.A.getProps()), A = s.useMemo(() => null != n ? (0, u.z)(n?.code) : (0, m.$s)(h), [h, n]), p = s.useCallback(async () => {
         if (null != g && (t && await (0, d.zf)(g.id, e, {
                 throwErr: !0
             }), _)) {
@@ -46,8 +46,8 @@ function g() {
     }, [g]);
     return (0, i.jsx)(r.A, {
         submitting: x,
-        errorMessage: p,
-        onSave: A,
+        errorMessage: A,
+        onSave: p,
         onReset: f
     })
 }

@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(595738),
     u = n(709066),
     m = n(235986),
-    g = n(376092),
-    x = n(427157),
+    x = n(376092),
+    g = n(427157),
     h = n(696451),
     p = n(317525),
     A = n(486020),
@@ -26,7 +26,7 @@ function _(e) {
         applicationIntegration: n
     } = e, {
         application: _
-    } = n, j = null != _.bot ? new x.A(_.bot) : null, N = (0, a.bG)([h.Ay], () => null != j ? h.Ay.getMember(t.id, j.id) : null, [j, t]), v = (0, a.bG)([p.A], () => p.A.getEveryoneRole(t)), T = (0, a.yK)([p.A], () => p.A.getManyRoles(t.id, N?.roles ?? [])), C = j?.id;
+    } = n, j = null != _.bot ? new g.A(_.bot) : null, N = (0, a.bG)([h.Ay], () => null != j ? h.Ay.getMember(t.id, j.id) : null, [j, t]), v = (0, a.bG)([p.A], () => p.A.getEveryoneRole(t)), T = (0, a.yK)([p.A], () => p.A.getManyRoles(t.id, N?.roles ?? [])), C = j?.id;
     l.useEffect(() => {
         null != C && o.A.requestMembersById(t.id, C)
     }, [t.id, C]);
@@ -63,7 +63,7 @@ function _(e) {
             }), function(e, t, n, l) {
                 let a = [],
                     o = [];
-                for (let e of g.Q) s.zy(l, e) ? a.push(e) : o.push(e);
+                for (let e of x.Q) s.zy(l, e) ? a.push(e) : o.push(e);
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(r.cGx, {
                         className: f.yF

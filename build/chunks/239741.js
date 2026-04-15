@@ -5,7 +5,7 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    l = n(969528),
+    l = n(407045),
     r = n(311907),
     a = n(827734),
     o = n(73939),
@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(203982),
     h = n(555337),
     _ = n(418448),
-    p = n(527678),
-    A = n(199940),
+    A = n(527678),
+    p = n(199940),
     f = n(132514),
     j = n(107795),
     N = n(655943),
@@ -101,7 +101,7 @@ function D(e) {
                 });
                 else if (L === C.Hy.HOME_SETTINGS) {
                     let e = f.A.getSettings();
-                    await (0, A.W5)(t.id, e)
+                    await (0, p.W5)(t.id, e)
                 }
             } catch {
                 return !1
@@ -113,14 +113,14 @@ function D(e) {
                 step: C.Hy[L],
                 back: !1,
                 skip: !M
-            }), (0, p.Ay)((0, C.ql)(L)), await X() && (0, p._k)(h, L)
+            }), (0, A.Ay)((0, C.ql)(L)), await X() && (0, A._k)(h, L)
         }, Z = async () => {
             g.default.track(R.HAw.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, {
                 ...(0, m.H$)(h),
                 step: C.Hy[L],
                 back: !0,
                 skip: !1
-            }), await X() && (0, p.kP)(h, L)
+            }), await X() && (0, A.kP)(h, L)
         }, q = null;
     P && (L === C.Hy.SAFETY_CHECK ? q = (0, i.jsx)(I.Et, {}) : L === C.Hy.DEFAULT_CHANNELS ? q = (0, i.jsx)(I.hz, {}) : L === C.Hy.CUSTOMIZATION_QUESTIONS ? q = (0, i.jsx)(I.yP, {}) : L === C.Hy.HOME_SETTINGS && (q = (0, i.jsx)(I.QS, {})));
     let Q = (0, i.jsx)("div", {

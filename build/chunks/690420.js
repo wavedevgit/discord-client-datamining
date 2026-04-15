@@ -23,12 +23,12 @@ let m = s.memo(function(e) {
         createNewEditingRule: h,
         setEditingRule: _
     } = (0, a.U)(), {
-        isLoading: p
-    } = (0, a.S)(), [A] = s.useState(() => !(0, l.wC)(t)), f = x?.id === t.id || n, j = (0, r.R)(t?.id), N = f && null != x ? x : t, E = s.useMemo(() => (0, o.cT)(t.name), [t?.name]), C = s.useCallback(() => {
+        isLoading: A
+    } = (0, a.S)(), [p] = s.useState(() => !(0, l.wC)(t)), f = x?.id === t.id || n, j = (0, r.R)(t?.id), N = f && null != x ? x : t, E = s.useMemo(() => (0, o.cT)(t.name), [t?.name]), C = s.useCallback(() => {
         h(t.guildId, t.triggerType)
     }, [t.guildId, t.triggerType, h]), T = s.useCallback(e => {
-        p || _(e, !0)
-    }, [p, _]);
+        A || _(e, !0)
+    }, [A, _]);
     s.useEffect(() => {
         m && _(t, !0)
     }, [m, t, _]);
@@ -40,7 +40,7 @@ let m = s.memo(function(e) {
     return (0, i.jsx)(c.A, {
         renderHeader: (0, i.jsx)(u.A, {
             rule: N,
-            forceSetup: A && !f && !j,
+            forceSetup: p && !f && !j,
             triggerType: t.triggerType,
             isEditMode: f,
             isDefaultRule: j,
@@ -52,7 +52,7 @@ let m = s.memo(function(e) {
         onExpand: I,
         children: f && (0, i.jsx)(d.A, {
             rule: N,
-            isLoading: p,
+            isLoading: A,
             onChangeRule: T
         })
     })

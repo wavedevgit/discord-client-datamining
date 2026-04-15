@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(403362),
     h = n(863694),
     _ = n(107795),
-    p = n(655943),
-    A = n(828709),
+    A = n(655943),
+    p = n(828709),
     f = n(539916),
     j = n(985018),
     N = n(686991);
@@ -32,7 +32,7 @@ function C(e) {
         prompt: n,
         disableAutofocus: l,
         promptIndex: u,
-        dragIndex: A,
+        dragIndex: p,
         includeCount: C,
         singleColumn: b,
         onPromptDragComplete: v,
@@ -45,12 +45,12 @@ function C(e) {
         setIsDraggable: D
     } = (0, c.A)({
         type: "ONBOARDING_PROMPT_CARD",
-        index: A,
+        index: p,
         optionId: n.id,
         onDragStart: S,
         onDragComplete: v,
         onDragReset: y
-    }), M = (0, a.cf)([p.A], () => p.A.errors[u] ?? E), [k, U] = s.useState(!1), [P, w] = s.useState(!1), B = M.options ?? M.optionErrors.filter(x.Vq)[0], F = M.config, H = n.options.length >= f.Bu, V = (0, m.G4)(t.id, Array.from(R), [n]).length - R.size, z = s.useRef(null), W = s.useRef(u);
+    }), M = (0, a.cf)([A.A], () => A.A.errors[u] ?? E), [k, U] = s.useState(!1), [P, w] = s.useState(!1), B = M.options ?? M.optionErrors.filter(x.Vq)[0], F = M.config, H = n.options.length >= f.Bu, V = (0, m.G4)(t.id, Array.from(R), [n]).length - R.size, z = s.useRef(null), W = s.useRef(u);
     return (s.useEffect(() => {
         W.current = u
     }), s.useLayoutEffect(() => {
@@ -268,7 +268,7 @@ function I(e) {
     }));
     return (0, i.jsxs)("div", {
         className: N.fF,
-        children: [n.options.map((e, c) => (0, i.jsx)(A.A, {
+        children: [n.options.map((e, c) => (0, i.jsx)(p.A, {
             guild: t,
             prompt: n,
             promptIndex: s,
@@ -278,7 +278,7 @@ function I(e) {
             onDragComplete: d,
             onDragReset: o,
             hasError: null != r.optionErrors[c]
-        }, e.id)), n.options.length < f.fs ? (0, i.jsx)(A.B, {
+        }, e.id)), n.options.length < f.fs ? (0, i.jsx)(p.B, {
             guild: t,
             prompt: n,
             promptIndex: s,

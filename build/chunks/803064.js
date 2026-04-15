@@ -17,8 +17,8 @@ var i = n(627968),
     x = n(874864),
     h = n(339984),
     _ = n(478644),
-    p = n(985018),
-    A = n(927548);
+    A = n(985018),
+    p = n(927548);
 let f = function(e) {
     let {
         guild: t
@@ -70,37 +70,37 @@ let f = function(e) {
         }) : null,
         disabled: !f,
         onChange: j,
-        hint: p.intl.string(p.t.NyXznh),
+        hint: A.intl.string(A.t.NyXznh),
         enabled: f,
         maxFileSizeBytes: _.j
     });
     return f ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: A.bV,
+            className: p.bV,
             children: [(0, i.jsx)(l.Heading, {
-                className: A.wx,
+                className: p.wx,
                 variant: "heading-lg/extrabold",
-                children: p.intl.string(p.t.BBj1nY)
+                children: A.intl.string(A.t.BBj1nY)
             }), (0, i.jsx)(a.A, {
-                className: A.ts,
+                className: p.ts,
                 guild: t,
                 guildFeature: g.GuildFeatures.BANNER,
                 onClick: N
             })]
         }), (0, i.jsxs)("div", {
-            className: A.uW,
+            className: p.uW,
             children: [(0, i.jsxs)("div", {
-                className: A.uc,
+                className: p.uc,
                 children: [(0, i.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    children: p.intl.string(p.t.Vwintv)
+                    children: A.intl.string(A.t.Vwintv)
                 }), (0, i.jsx)("div", {
-                    className: A.au,
+                    className: p.au,
                     children: (0, i.jsx)(c.A, {
                         onChange: j,
                         maxFileSizeBytes: _.j,
-                        text: p.intl.string(p.t.yG2pUi),
+                        text: A.intl.string(A.t.yG2pUi),
                         size: "md",
                         variant: "primary"
                     })
@@ -111,30 +111,30 @@ let f = function(e) {
         })]
     }) : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: A.bV,
+            className: p.bV,
             children: [(0, i.jsx)(l.Heading, {
-                className: A.wx,
+                className: p.wx,
                 variant: "heading-lg/extrabold",
-                children: p.intl.string(p.t.BBj1nY)
+                children: A.intl.string(A.t.BBj1nY)
             }), (0, i.jsx)(a.A, {
-                className: A.ts,
+                className: p.ts,
                 guild: t,
                 guildFeature: g.GuildFeatures.BANNER,
                 onClick: N
             })]
         }), (0, i.jsxs)("div", {
-            className: A.uW,
+            className: p.uW,
             children: [(0, i.jsxs)("div", {
-                className: A.uc,
+                className: p.uc,
                 children: [(0, i.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    className: A.tb,
-                    children: p.intl.string(p.t.Vwintv)
+                    className: p.tb,
+                    children: A.intl.string(A.t.Vwintv)
                 }), (0, i.jsx)(l.Button, {
                     variant: "expressive",
                     icon: l._Jp,
-                    text: p.intl.string(p.t["+7XY31"]),
+                    text: A.intl.string(A.t["+7XY31"]),
                     onClick: N
                 })]
             }), (0, i.jsx)("div", {

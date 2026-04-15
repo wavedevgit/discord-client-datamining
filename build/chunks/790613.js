@@ -17,13 +17,13 @@ function m(e) {
         integrations: t,
         editedIntegration: n,
         guild: m,
-        platformType: g,
-        labelText: x,
+        platformType: x,
+        labelText: g,
         descriptionText: h,
         helpText: p,
         errors: A,
         canNavigate: b
-    } = e, f = r.A.get(g), _ = l.useCallback(async e => {
+    } = e, f = r.A.get(x), _ = l.useCallback(async e => {
         b() && (await o.A.enableIntegration(m.id, e.type, e.id), a.A.startEditingIntegration(e.id))
     }, [b, m.id]), j = l.useCallback(e => {
         b() && (e.id === n?.id && a.A.stopEditingIntegration(), o.A.disableIntegration(m.id, e.id))
@@ -32,7 +32,7 @@ function m(e) {
     }, [b, n]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.A, {
-            name: x,
+            name: g,
             icon: f?.icon.whiteSVG,
             iconBackgroundColor: f?.color,
             iconClassName: u.tV,

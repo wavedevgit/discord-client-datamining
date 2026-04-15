@@ -24,10 +24,10 @@ function m(e) {
         publishedOnly: !1
     }), {
         allowSelfRemoveMonetization: _
-    } = (0, r.nq)(t), p = m.filter(e => {
+    } = (0, r.nq)(t), A = m.filter(e => {
         let t = Object.values(e.ppgs ?? {})[0];
         return t?.status === c.U1.OPEN || t?.status === c.U1.PAYOUT_DEFERRED
-    }), A = x.length > 0, f = h.length > 0, j = p.length > 0;
+    }), p = x.length > 0, f = h.length > 0, j = A.length > 0;
     return null == g ? null : (0, i.jsxs)("div", {
         children: [(0, i.jsx)(l.Text, {
             variant: "text-sm/normal",
@@ -39,7 +39,7 @@ function m(e) {
         }), (0, i.jsx)(l.Button, {
             variant: "critical-primary",
             text: u.intl.string(u.t.FrOFSo),
-            disabled: !_ || A || f || j,
+            disabled: !_ || p || f || j,
             onClick: () => {
                 (0, l.mMO)(async () => {
                     let {

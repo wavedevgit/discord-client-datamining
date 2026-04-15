@@ -15,7 +15,7 @@ function u(e) {
     let {
         roles: t,
         guildId: u
-    } = e, m = t[0] ?? null, g = t.length - 1, x = l.useMemo(() => new Intl.NumberFormat(d.intl.currentLocale).format(g), [g]), h = l.useCallback(e => {
+    } = e, m = t[0] ?? null, x = t.length - 1, g = l.useMemo(() => new Intl.NumberFormat(d.intl.currentLocale).format(x), [x]), h = l.useCallback(e => {
         e.stopPropagation(), (0, r.L3)(e, async () => {
             let {
                 default: e
@@ -31,7 +31,7 @@ function u(e) {
             className: c.Bc,
             role: m,
             guildId: u
-        }), g > 0 && (0, i.jsx)(a.DUT, {
+        }), x > 0 && (0, i.jsx)(a.DUT, {
             className: c.yt,
             onClick: h,
             children: (0, i.jsx)(s.m, {
@@ -39,7 +39,7 @@ function u(e) {
                 children: (0, i.jsxs)(a.Text, {
                     variant: "text-xs/medium",
                     color: "text-strong",
-                    children: ["+", x]
+                    children: ["+", g]
                 })
             })
         })]

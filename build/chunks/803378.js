@@ -11,10 +11,10 @@ let c = {},
     u = {},
     m = !1;
 
-function g() {
+function x() {
     i = void 0, c = {}, u = {}, l = void 0, s = void 0, m = !1
 }
-class x extends a.Ay.Store {
+class g extends a.Ay.Store {
     static displayName = "IntegrationPermissionStore";
     getApplicationPermissions() {
         return c
@@ -38,8 +38,8 @@ class x extends a.Ay.Store {
         return i
     }
 }
-let h = new x(r.h, {
-    LOGOUT: g,
+let h = new g(r.h, {
+    LOGOUT: x,
     INTEGRATION_PERMISSION_SETTINGS_APPLICATION_PERMISSIONS_FETCH_FAILURE: function(e) {
         let {
             applicationId: t
@@ -47,12 +47,12 @@ let h = new x(r.h, {
         if (t !== i) return !1;
         m = !0
     },
-    INTEGRATION_PERMISSION_SETTINGS_CLEAR: g,
+    INTEGRATION_PERMISSION_SETTINGS_CLEAR: x,
     INTEGRATION_PERMISSION_SETTINGS_INIT: function(e) {
         let {
             applicationId: t
         } = e;
-        g(), i = t
+        x(), i = t
     },
     INTEGRATION_PERMISSION_SETTINGS_COMMAND_UPDATE: function(e) {
         let {
