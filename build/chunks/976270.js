@@ -7,8 +7,8 @@ t(64700);
 var a = t(397927),
     l = t(630054),
     r = t(793574),
-    s = t(688810),
-    d = t(915089),
+    d = t(688810),
+    s = t(915089),
     o = t(562153),
     c = t(183555),
     _ = t(950191),
@@ -17,9 +17,9 @@ var a = t(397927),
     A = t(718019),
     g = t(31432),
     m = t(915614),
-    h = t(559506),
-    I = t(946356),
-    f = t(810396),
+    f = t(559506),
+    h = t(946356),
+    I = t(810396),
     x = t(570314),
     b = t(490752),
     v = t(571077),
@@ -49,9 +49,9 @@ function O(e) {
         transitionState: w,
         onClose: V,
         sourceAnalyticsLocations: H = []
-    } = e, W = O === C.ME ? void 0 : O, z = (0, _.Ay)(n.id, W), Y = o.Ay.getName(W, k, n), X = (0, d.GV)(), {
+    } = e, W = O === C.ME ? void 0 : O, z = (0, _.Ay)(n.id, W), Y = o.Ay.getName(W, k, n), X = (0, s.GV)(), {
         analyticsLocations: K
-    } = (0, s.Ay)([...H, r.A.USER_PROFILE_MODAL]), Q = (0, c.pb)({
+    } = (0, d.Ay)([...H, r.A.USER_PROFILE_MODAL]), Q = (0, c.pb)({
         layout: "MODAL",
         userId: n.id,
         sourceSessionId: G,
@@ -66,7 +66,7 @@ function O(e) {
         displayProfile: z,
         onClose: V
     });
-    return (0, i.jsx)(s.f5, {
+    return (0, i.jsx)(d.f5, {
         value: K,
         children: (0, i.jsx)(c.of, {
             value: Q,
@@ -89,7 +89,7 @@ function O(e) {
                                 })
                             })
                         }),
-                        children: (0, i.jsxs)(I.A, {
+                        children: (0, i.jsxs)(h.A, {
                             user: n,
                             displayProfile: z,
                             themeType: R.d.MODAL,
@@ -142,12 +142,12 @@ function O(e) {
                                         })]
                                     })]
                                 })]
-                            }), (0, i.jsx)(h.A, {
+                            }), (0, i.jsx)(f.A, {
                                 userId: n.id,
                                 className: L.Fd
                             }), (0, i.jsxs)("div", {
                                 className: L.rf,
-                                children: [(0, i.jsx)(f.A, {
+                                children: [(0, i.jsx)(I.A, {
                                     className: L.Xh,
                                     user: n,
                                     guildId: W,

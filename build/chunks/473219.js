@@ -1,74 +1,74 @@
 /** chunk id: 473219 params = (module,exports,require) **/
-l.d(t, {
-    A: () => h
+t.d(n, {
+    A: () => A
 });
-var a = l(627968),
-    n = l(64700),
-    r = l(688810),
-    i = l(512213),
-    o = l(637193),
-    s = l(713517),
-    d = l(919395),
-    c = l(84540),
-    u = l(930349),
-    p = l(985018),
-    m = l(432856);
+var i = t(627968),
+    a = t(64700),
+    l = t(688810),
+    r = t(512213),
+    d = t(637193),
+    s = t(713517),
+    o = t(919395),
+    c = t(84540),
+    _ = t(930349),
+    u = t(985018),
+    p = t(432856);
 
-function h(e) {
+function A(e) {
     let {
-        user: t,
-        guildId: l,
-        disabled: h
+        user: n,
+        guildId: t,
+        disabled: A
     } = e, {
-        analyticsLocations: x
-    } = (0, r.Ay)(), b = null != l, y = n.useRef(null), {
-        isHoveringOrFocusing: f
-    } = (0, s.A)(y), {
-        guildNameplate: g,
-        pendingNameplate: v
-    } = (0, d.rv)(t, l ?? void 0), _ = (0, d.lw)({
-        pendingValue: v,
-        userValue: t.collectibles?.nameplate,
-        guildValue: g,
-        guildId: l ?? void 0
-    }), E = void 0 !== v, C = b ? g : t.collectibles?.nameplate, j = n.useCallback(() => {
-        (0, o.p)({
-            analyticsLocations: x,
-            guildId: l ?? void 0,
+        analyticsLocations: g
+    } = (0, l.Ay)(), m = null != t, f = a.useRef(null), {
+        isHoveringOrFocusing: h
+    } = (0, s.A)(f), {
+        guildNameplate: I,
+        pendingNameplate: x
+    } = (0, o.rv)(n, t ?? void 0), b = (0, o.lw)({
+        pendingValue: x,
+        userValue: n.collectibles?.nameplate,
+        guildValue: I,
+        guildId: t ?? void 0
+    }), v = void 0 !== x, E = m ? I : n.collectibles?.nameplate, y = a.useCallback(() => {
+        (0, d.p)({
+            analyticsLocations: g,
+            guildId: t ?? void 0,
             stackingBehavior: "stack"
         })
-    }, [x, l]), S = b && t.collectibles?.nameplate != null, T = null != _ && (E ? null != v : null != C) ? {
+    }, [g, t]), j = m && n.collectibles?.nameplate != null, T = null != b && (v ? null != x : null != E) ? {
         onClick: () => (0, c.p)({
-            guildId: l ?? void 0,
+            guildId: t ?? void 0,
             nameplate: null
         }),
-        type: S ? "reset" : "remove",
-        accessibleLabel: p.intl.string(S ? p.t.neYqhR : p.t["9zwziY"])
-    } : void 0, A = (0, a.jsx)("div", {
-        className: m.M,
+        type: j ? "reset" : "remove",
+        accessibleLabel: u.intl.string(j ? u.t.neYqhR : u.t["9zwziY"])
+    } : void 0, N = (0, i.jsx)("div", {
+        className: p.M,
         "aria-hidden": !0,
-        children: (0, a.jsx)(i.A, {
-            user: t,
-            guildId: l ?? void 0,
-            nameplate: _,
-            showPlaceholderUser: null == _ || !f || h
+        children: (0, i.jsx)(r.A, {
+            user: n,
+            guildId: t ?? void 0,
+            nameplate: b,
+            showPlaceholderUser: null == b || !h || A
         })
     });
-    return (0, a.jsx)("div", {
-        ref: y,
-        children: null == _ ? (0, a.jsx)(u.kL, {
+    return (0, i.jsx)("div", {
+        ref: f,
+        children: null == b ? (0, i.jsx)(_.kL, {
             variant: "bar",
-            onClick: j,
-            accessibleLabel: p.intl.string(p.t.BwdeM1),
-            disabled: h,
-            children: A
-        }) : (0, a.jsx)(u.NW, {
+            onClick: y,
+            accessibleLabel: u.intl.string(u.t.BwdeM1),
+            disabled: A,
+            children: N
+        }) : (0, i.jsx)(_.NW, {
             variant: "bar",
-            onClick: j,
-            accessibleLabel: p.intl.string(p.t.BwdeM1),
+            onClick: y,
+            accessibleLabel: u.intl.string(u.t.BwdeM1),
             deleteButtonConfig: T,
-            disabled: h,
-            children: A
+            disabled: A,
+            children: N
         })
     })
 }

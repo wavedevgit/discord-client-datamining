@@ -6,8 +6,8 @@ var i = t(627968),
     a = t(64700),
     l = t(397927),
     r = t(793574),
-    s = t(688810),
-    d = t(351966),
+    d = t(688810),
+    s = t(351966),
     o = t(915089),
     c = t(713517),
     _ = t(562153),
@@ -16,9 +16,9 @@ var i = t(627968),
     A = t(718019),
     g = t(31432),
     m = t(915614),
-    h = t(389996),
-    I = t(743987),
-    f = t(900179),
+    f = t(389996),
+    h = t(743987),
+    I = t(900179),
     x = t(946356),
     b = t(810396),
     v = t(35241),
@@ -44,7 +44,7 @@ function P(e) {
         sourceAnalyticsLocations: B = []
     } = e, G = t === j.ME ? void 0 : t, M = (0, p.Ay)(n.id, G), F = _.Ay.getName(G, P, n), w = (0, o.GV)(), {
         analyticsLocations: V
-    } = (0, s.Ay)([...B, r.A.USER_PROFILE_MODAL]), H = (0, u.pb)({
+    } = (0, d.Ay)([...B, r.A.USER_PROFILE_MODAL]), H = (0, u.pb)({
         layout: "MODAL",
         userId: n.id,
         sourceSessionId: D,
@@ -53,7 +53,7 @@ function P(e) {
         messageId: L,
         roleId: O
     }), W = a.useRef(null), z = (0, c.M)(W);
-    return (0, i.jsx)(s.f5, {
+    return (0, i.jsx)(d.f5, {
         value: V,
         children: (0, i.jsx)(u.of, {
             value: H,
@@ -131,13 +131,13 @@ function P(e) {
                                 }), (0, i.jsxs)(l.IpV, {
                                     fade: !0,
                                     className: C.XG,
-                                    children: [(0, i.jsx)(h.E, {
+                                    children: [(0, i.jsx)(f.E, {
                                         userId: n.id,
                                         userBio: M?.bio,
                                         setLineClamp: !1
-                                    }), (0, i.jsx)(f.A, {
+                                    }), (0, i.jsx)(I.A, {
                                         heading: N.intl.string(N.t["A//N4k"]),
-                                        children: (0, i.jsx)(I.A, {
+                                        children: (0, i.jsx)(h.A, {
                                             userId: n.id,
                                             guildId: G,
                                             tooltipDelay: y.In
@@ -147,7 +147,7 @@ function P(e) {
                             })]
                         })]
                     })
-                }), M?.profileEffect != null && (0, i.jsx)(d.A, {
+                }), M?.profileEffect != null && (0, i.jsx)(s.A, {
                     skuId: M?.profileEffect?.skuId,
                     isHovering: z
                 })]

@@ -6,8 +6,8 @@ var i = t(627968),
     a = t(311907),
     l = t(397927),
     r = t(793574),
-    s = t(688810),
-    d = t(632738),
+    d = t(688810),
+    s = t(632738),
     o = t(994500),
     c = t(562153),
     _ = t(183555),
@@ -16,9 +16,9 @@ var i = t(627968),
     A = t(249790),
     g = t(946356),
     m = t(254828),
-    h = t(783123),
-    I = t(652215),
-    f = t(996988),
+    f = t(783123),
+    h = t(652215),
+    I = t(996988),
     x = t(985018),
     b = t(255412);
 
@@ -32,9 +32,9 @@ function v(e) {
         transitionState: j,
         onHide: T,
         sourceAnalyticsLocations: N = []
-    } = e, S = t === I.ME ? void 0 : t, C = (0, a.bG)([o.A], () => o.A.isBlocked(n.id)), {
+    } = e, S = t === h.ME ? void 0 : t, C = (0, a.bG)([o.A], () => o.A.isBlocked(n.id)), {
         analyticsLocations: R
-    } = (0, s.Ay)([...N, C ? r.A.BLOCKED_PROFILE_MODAL : r.A.IGNORED_PROFILE_MODAL]), P = (0, _.pb)({
+    } = (0, d.Ay)([...N, C ? r.A.BLOCKED_PROFILE_MODAL : r.A.IGNORED_PROFILE_MODAL]), P = (0, _.pb)({
         layout: "MODAL_V2",
         userId: n.id,
         guildId: S,
@@ -50,7 +50,7 @@ function v(e) {
     }], O = (0, p.Ay)(n.id, S), D = c.Ay.getName(O?.guildId, v, n), k = x.intl.formatToPlainString(x.t.KRe1Fk, {
         name: D
     });
-    return (0, i.jsx)(s.f5, {
+    return (0, i.jsx)(d.f5, {
         value: R,
         children: (0, i.jsx)(_.of, {
             value: P,
@@ -64,7 +64,7 @@ function v(e) {
                 children: (0, i.jsxs)(g.A, {
                     user: n,
                     displayProfile: O,
-                    themeType: f.d.MODAL_V2,
+                    themeType: I.d.MODAL_V2,
                     children: [(0, i.jsx)("div", {
                         className: b.Tp
                     }), (0, i.jsxs)("div", {
@@ -92,7 +92,7 @@ function v(e) {
                                     icon: t,
                                     description: a
                                 } = e;
-                                return (0, i.jsx)(d.PQ, {
+                                return (0, i.jsx)(s.PQ, {
                                     icon: t,
                                     title: a,
                                     titleVariant: "text-md/normal",
@@ -101,7 +101,7 @@ function v(e) {
                             })
                         }), (0, i.jsxs)(l.BJc, {
                             align: "center",
-                            children: [(0, i.jsx)(h.A, {
+                            children: [(0, i.jsx)(f.A, {
                                 size: "md",
                                 isBlocked: C,
                                 onClick: () => {

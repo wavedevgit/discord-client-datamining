@@ -1,13 +1,13 @@
 /** chunk id: 371843 params = (module,exports,require) **/
 t.d(n, {
-    A: () => s
+    A: () => d
 });
 var i = t(913453),
     a = t(186272),
     l = t(518477),
     r = t(985018);
 
-function s(e) {
+function d(e) {
     let {
         mutualGuilds: n
     } = (0, i.A)(e), t = n?.length;

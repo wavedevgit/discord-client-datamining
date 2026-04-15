@@ -1,76 +1,76 @@
 /** chunk id: 487233 params = (module,exports,require) **/
-l.d(t, {
-    A: () => y
+t.d(n, {
+    A: () => f
 });
-var a = l(627968);
-l(64700);
-var n = l(311907),
-    r = l(397927),
-    i = l(688810),
-    o = l(919395),
-    s = l(385612),
-    d = l(101058),
-    c = l(696451),
-    u = l(84540),
-    p = l(836602),
-    m = l(854627),
-    h = l(930349),
-    x = l(339984),
-    b = l(985018);
+var i = t(627968);
+t(64700);
+var a = t(311907),
+    l = t(397927),
+    r = t(688810),
+    d = t(919395),
+    s = t(385612),
+    o = t(101058),
+    c = t(696451),
+    _ = t(84540),
+    u = t(836602),
+    p = t(854627),
+    A = t(930349),
+    g = t(339984),
+    m = t(985018);
 
-function y(e) {
+function f(e) {
     let {
-        user: t,
-        guildId: l,
-        disabled: y
+        user: n,
+        guildId: t,
+        disabled: f
     } = e, {
-        newestAnalyticsLocation: f
-    } = (0, i.Ay)(), g = null != l, v = (0, n.bG)([c.Ay], () => null != l ? c.Ay.getMember(l, t.id) : null), _ = (0, n.bG)([p.A], () => p.A.getPendingChanges(l ?? void 0).pendingAvatar), E = (0, d.V7)({
-        userId: t.id,
-        image: _
+        newestAnalyticsLocation: h
+    } = (0, r.Ay)(), I = null != t, x = (0, a.bG)([c.Ay], () => null != t ? c.Ay.getMember(t, n.id) : null), b = (0, a.bG)([u.A], () => u.A.getPendingChanges(t ?? void 0).pendingAvatar), v = (0, o.V7)({
+        userId: n.id,
+        image: b
     }), {
-        avatarSrc: C
-    } = (0, m.A)({
-        userId: t.id,
-        guildId: l,
-        avatarOverride: E,
-        size: r._3J.SIZE_56
-    }), j = g ? v?.avatar : t.avatar, S = null != t.avatar, T = g && v?.avatar != null, A = null != _, P = null === _, k = (0, o.z5)(_, j), I = g && S, R = () => (0, s.XD)({
-        uploadType: x.HL.AVATAR,
-        analyticsSource: f,
-        guildId: l ?? void 0,
+        avatarSrc: E
+    } = (0, p.A)({
+        userId: n.id,
+        guildId: t,
+        avatarOverride: v,
+        size: l._3J.SIZE_56
+    }), y = I ? x?.avatar : n.avatar, j = null != n.avatar, T = I && x?.avatar != null, N = null != b, S = null === b, C = (0, d.z5)(b, y), R = I && j, P = () => (0, s.XD)({
+        uploadType: g.HL.AVATAR,
+        analyticsSource: h,
+        guildId: t ?? void 0,
         stackingBehavior: "stack"
     });
-    if (!(P ? g && S : A || T || S)) return (0, a.jsx)(h.kL, {
+    if (!(S ? I && j : N || T || j)) return (0, i.jsx)(A.kL, {
         variant: "square",
-        onClick: R,
-        accessibleLabel: b.intl.string(b.t["4OynCD"]),
-        disabled: y,
-        children: (0, a.jsx)(r.euF, {
-            src: C,
-            size: r._3J.SIZE_56,
+        onClick: P,
+        accessibleLabel: m.intl.string(m.t["4OynCD"]),
+        disabled: f,
+        children: (0, i.jsx)(l.euF, {
+            src: E,
+            size: l._3J.SIZE_56,
             "aria-hidden": !0
         })
     });
-    let N = k ? {
+    let L = C ? {
         onClick: () => {
-            (0, u.p)({
-                guildId: l ?? void 0,
+            (0, _.p)({
+                guildId: t ?? void 0,
                 avatar: null
-            }), (0, o.WU)(I ? "reset" : "remove")
+            }), (0, d.WU)(R ? "reset" : "remove")
         },
-        type: I ? "reset" : "remove",
-        accessibleLabel: b.intl.string(I ? b.t.Y0mxy1 : b.t.twB3fz)
+        type: R ? "reset" : "remove",
+        accessibleLabel: m.intl.string(R ? m.t.Y0mxy1 : m.t.twB3fz)
     } : void 0;
-    return (0, a.jsx)(h.NW, {
+    return (0, i.jsx)(A.NW, {
         variant: "square",
-        onClick: R,
-        accessibleLabel: b.intl.string(b.t["4OynCD"]),
-        deleteButtonConfig: N,
-        disabled: y,
-        children: (0, a.jsx)(r.euF, {
-            src: C,
-            size: r._3J.SIZE_56,
+        onClick: P,
+        accessibleLabel: m.intl.string(m.t["4OynCD"]),
+        deleteButtonConfig: L,
+        disabled: f,
+        children: (0, i.jsx)(l.euF, {
+            src: E,
+            size: l._3J.SIZE_56,
             "aria-hidden": !0
         })
     })
