@@ -1,19 +1,22 @@
 /** chunk id: 385327 params = (module,exports,require) **/
 n.d(t, {
-    Es: () => r,
-    c7: () => s
+    Es: () => s,
+    c7: () => o
 });
 var i = n(554146),
     l = n(826673),
-    a = n(398523);
-let r = () => {
+    a = n(871239),
+    r = n(398523);
+let s = () => {
         (0, l.Dr)(i.M.RECURRING_3P_PROMOTION_POPOVER)
     },
-    s = () => {
+    o = () => {
         let {
             enabled: e
-        } = a.A.useConfig({
+        } = r.A.useConfig({
             location: "useIsRecurring3PPopoverShowable"
-        }), t = (0, l.k8)(i.M.RECURRING_3P_PROMOTION_POPOVER);
-        return e && !1 === t
+        }), t = (0, a.l)({
+            location: "useIsRecurring3PPopoverShowable"
+        }), n = (0, l.k8)(i.M.RECURRING_3P_PROMOTION_POPOVER);
+        return e && t && !1 === n
     }

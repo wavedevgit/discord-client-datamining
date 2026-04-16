@@ -24,9 +24,9 @@ var i = n(627968),
     I = n(961350),
     N = n(650048),
     v = n(877062),
-    C = n(129851),
-    T = n(538796),
-    j = n(229),
+    T = n(129851),
+    j = n(538796),
+    C = n(229),
     S = n(652215),
     y = n(401755),
     b = n(771016),
@@ -34,9 +34,9 @@ var i = n(627968),
     O = n(396574),
     L = n(985018),
     w = n(94654),
-    D = n(818050);
+    k = n(818050);
 c.Ay.initialize();
-class k extends s.PureComponent {
+class D extends s.PureComponent {
     componentDidMount() {
         (0, E.d)("guildTemplate"), O.VP || v.A.launch("discord://" + S.BVt.GUILD_TEMPLATE(this.props.code), () => void 0)
     }
@@ -52,14 +52,14 @@ class k extends s.PureComponent {
     };
     renderButton(e, t) {
         return O.VP ? (0, i.jsx)("div", {
-            className: D.eT,
+            className: k.eT,
             children: (0, i.jsx)(d.Button, {
                 text: e,
                 fullWidth: !0,
                 onClick: t
             })
         }) : (0, i.jsx)(u.KE, {
-            className: D.eT
+            className: k.eT
         })
     }
     renderSpinner(e) {
@@ -72,7 +72,7 @@ class k extends s.PureComponent {
     renderInvalidGuildTemplate() {
         return (0, i.jsxs)(u.Ay, {
             children: [(0, i.jsx)(u.hE, {
-                className: l()(D.Ot, D.QB),
+                className: l()(k.Ot, k.QB),
                 children: L.intl.string(L.t.C7ZRNw)
             }), (0, i.jsx)(u.tK, {
                 children: L.intl.string(L.t.A6MwXE)
@@ -82,7 +82,7 @@ class k extends s.PureComponent {
     renderAppOpened() {
         return (0, i.jsxs)(u.Ay, {
             children: [(0, i.jsx)(u.hE, {
-                className: D.QB,
+                className: k.QB,
                 children: L.intl.string(L.t.csrAMJ)
             }), (0, i.jsx)(u.tK, {
                 children: L.intl.string(L.t["m1+IBn"])
@@ -125,12 +125,12 @@ class k extends s.PureComponent {
                 return this.renderSpinner(L.intl.string(L.t["Z+hCVU"]));
             case y.QB.RESOLVED:
                 if (n || !O.VP) return this.renderAuthenticatedOrDownload();
-                if (this.props.login) return (0, i.jsx)(C.A, {
+                if (this.props.login) return (0, i.jsx)(T.A, {
                     guildTemplate: e,
                     transitionTo: s,
                     location: r
                 });
-                return (0, i.jsx)(j.A, {
+                return (0, i.jsx)(C.A, {
                     guildTemplate: e,
                     transitionTo: s,
                     location: r,
@@ -153,7 +153,7 @@ function U(e) {
         authenticated: (0, c.bG)([I.default], () => I.default.isAuthenticated()),
         defaultRoute: (0, c.bG)([N.A], () => N.A.defaultRoute)
     };
-    return (0, i.jsx)(k, {
+    return (0, i.jsx)(D, {
         ...e,
         ...t
     })
@@ -180,7 +180,7 @@ function P(e) {
             })
         })]
     });
-    return (0, i.jsx)(T.A, {
+    return (0, i.jsx)(j.A, {
         className: w.sL,
         children: () => [(0, i.jsx)(m.A, {
             guildTemplate: t

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     IK: () => v,
-    Kz: () => T
+    Kz: () => j
 });
 var i, s = n(627968),
     r = n(64700),
@@ -25,20 +25,20 @@ var i, s = n(627968),
     N = n(725925);
 a.Ay.initialize();
 var v = ((i = {}).SELECTION = "selection", i.DSA = "dsa", i.TIDA = "tida", i);
-let C = e => {
+let T = e => {
         let {
             transitionState: t,
             onClose: n
-        } = e, [i, v] = r.useState(!0), [T, j] = r.useState([]), [S, y] = r.useState(null), b = (0, a.bG)([p.default], () => p.default.isAuthenticated()), R = (0, a.bG)([u.A], () => u.A.hasLoadedExperiments), O = r.useCallback(() => {
+        } = e, [i, v] = r.useState(!0), [j, C] = r.useState([]), [S, y] = r.useState(null), b = (0, a.bG)([p.default], () => p.default.isAuthenticated()), R = (0, a.bG)([u.A], () => u.A.hasLoadedExperiments), O = r.useCallback(() => {
             (0, _.OY)().then(e => {
                 let {
                     body: {
                         capabilities: t
                     }
                 } = e;
-                v(!1), j(t)
+                v(!1), C(t)
             }).catch(() => {
-                v(!1), j([])
+                v(!1), C([])
             })
         }, []);
         r.useEffect(() => {
@@ -50,16 +50,16 @@ let C = e => {
                 R || (await c.A.getLocationMetadata(), c.A.getExperiments())
             })()
         }, [R]);
-        let L = T.filter(e => e !== h.tY.MEDIA_TAKEDOWN),
-            w = T.includes(h.tY.MEDIA_TAKEDOWN),
-            D = L.length > 0,
-            k = D && w,
+        let L = j.filter(e => e !== h.tY.MEDIA_TAKEDOWN),
+            w = j.includes(h.tY.MEDIA_TAKEDOWN),
+            k = L.length > 0,
+            D = k && w,
             U = i || !R;
         r.useEffect(() => {
-            U || D || w || n()
-        }, [U, D, w, n]);
+            U || k || w || n()
+        }, [U, k, w, n]);
         let P = r.useCallback(() => {
-                (0, o.mMO)(() => Promise.resolve(e => (0, s.jsx)(C, {
+                (0, o.mMO)(() => Promise.resolve(e => (0, s.jsx)(T, {
                     ...e
                 })), {
                     dismissable: !1
@@ -69,8 +69,8 @@ let C = e => {
                 "selection" !== t && "selection" !== e ? y("selection") : y(e)
             }, []),
             G = r.useMemo(() => (0, m.i)(h.tY.MEDIA_TAKEDOWN, P), [P]),
-            M = S ?? (k ? "selection" : D ? "dsa" : "tida");
-        if (U || !D && !w) return (0, s.jsx)(l.Modal, {
+            M = S ?? (D ? "selection" : k ? "dsa" : "tida");
+        if (U || !k && !w) return (0, s.jsx)(l.Modal, {
             title: "",
             actions: [],
             transitionState: t,
@@ -86,8 +86,8 @@ let C = e => {
                 children: (0, s.jsx)(o.y$y, {})
             })
         });
-        if (!k) {
-            if (D) return (0, s.jsx)(l.Modal, {
+        if (!D) {
+            if (k) return (0, s.jsx)(l.Modal, {
                 title: I.intl.string(I.t.Z11w18),
                 subtitle: I.intl.format(I.t["532l+q"], {
                     supportURL: g.A.getArticleURL(x.MVz.COPYRIGHT_AND_IP_POLICY)
@@ -159,8 +159,8 @@ let C = e => {
             })
         })
     },
-    T = () => (r.useEffect(() => {
-        (0, o.mMO)(() => Promise.resolve(e => (0, s.jsx)(C, {
+    j = () => (r.useEffect(() => {
+        (0, o.mMO)(() => Promise.resolve(e => (0, s.jsx)(T, {
             ...e
         })), {
             dismissable: !1

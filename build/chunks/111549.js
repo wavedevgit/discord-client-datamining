@@ -24,9 +24,9 @@ var i = n(627968),
     I = n(359438),
     N = n(383302),
     v = n(10088),
-    C = n(921037),
-    T = n(21599),
-    j = n(942614),
+    T = n(921037),
+    j = n(21599),
+    C = n(942614),
     S = n(976860),
     y = n(210714),
     b = n(961350),
@@ -34,8 +34,8 @@ var i = n(627968),
     O = n(71393),
     L = n(299091),
     w = n(954571),
-    D = n(975571),
-    k = n(4274),
+    k = n(975571),
+    D = n(4274),
     U = n(877062),
     P = n(890698),
     B = n(129851),
@@ -205,7 +205,7 @@ function Z(e) {
                 size: "sm",
                 textVariant: "text-sm/medium",
                 text: H.intl.string(H.t.urIwn4),
-                onClick: () => window.open(D.A.getArticleURL(M.MVz.INVALID_INVITES), "_blank")
+                onClick: () => window.open(k.A.getArticleURL(M.MVz.INVALID_INVITES), "_blank")
             })
         })]
     })
@@ -231,7 +231,7 @@ function et(e) {
         location: n,
         transitionTo: r,
         login: l
-    } = e, h = (0, d.bG)([L.A], () => L.A.getInvite(t)), x = (0, d.bG)([v.A], () => v.A.getState(t)), I = (0, d.bG)([b.default], () => b.default.isAuthenticated()), N = (0, d.bG)([R.A], () => R.A.defaultRoute), D = (0, d.bG)([f.A], () => f.A.isUnderageAnonymous()), [P, K] = s.useState(null), [q, et] = s.useState(!1);
+    } = e, h = (0, d.bG)([L.A], () => L.A.getInvite(t)), x = (0, d.bG)([v.A], () => v.A.getState(t)), I = (0, d.bG)([b.default], () => b.default.isAuthenticated()), N = (0, d.bG)([R.A], () => R.A.defaultRoute), k = (0, d.bG)([f.A], () => f.A.isUnderageAnonymous()), [P, K] = s.useState(null), [q, et] = s.useState(!1);
     s.useLayoutEffect(() => {
         (x === M.fAW.OPEN || h?.state === M.elq.APP_OPENED) && et(!0)
     }, [h?.state, x]);
@@ -250,7 +250,7 @@ function et(e) {
                 }
             }).catch(e => {
                 if (e instanceof g.Wl || e instanceof g.LG) {
-                    let t = (0, k.s)(e.code);
+                    let t = (0, D.s)(e.code);
                     K({
                         code: e.code,
                         message: t
@@ -274,10 +274,10 @@ function et(e) {
                     invite_code: t
                 }, {
                     flush: !0
-                }), (0, y.d)("invite"), W.VP || U.A.launch("discord://" + M.BVt.INVITE(t), () => void 0), !l && D) {
+                }), (0, y.d)("invite"), W.VP || U.A.launch("discord://" + M.BVt.INVITE(t), () => void 0), !l && k) {
                 let {
                     baseCode: e
-                } = (0, T.y$)(t);
+                } = (0, j.y$)(t);
                 (0, S.bG)(M.BVt.INVITE_LOGIN(e))
             }
         }), s.useEffect(() => {
@@ -299,7 +299,7 @@ function et(e) {
                     if (null != e) {
                         let i = (0, c.d)(e);
                         w.default.track(M.HAw.INVITE_LOGIN_SUCCESSFUL, {
-                            invite_code: (0, T.m0)(n),
+                            invite_code: (0, j.m0)(n),
                             guild_id: t?.guild?.id,
                             channel_id: t?.channel?.id,
                             inviter_id: t?.inviter?.id,
@@ -319,7 +319,7 @@ function et(e) {
                         channel: e
                     } = t;
                     if (null != e)
-                        if ((0, j.C)(V.zY.INVITE_UNCLAIMED), null != t.guild) {
+                        if ((0, C.C)(V.zY.INVITE_UNCLAIMED), null != t.guild) {
                             let e = (0, o.Lt)(t.flags ?? 0, a.Q.IS_APPLICATION_BYPASS),
                                 n = t.guild.features?.includes(M.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.guild.features?.includes(M.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
                             !e && n ? h(M.BVt.GUILD_MEMBER_VERIFICATION(t.guild.id)) : h(M.BVt.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code))
@@ -327,7 +327,7 @@ function et(e) {
                 }
             }, [t, i, _, h, l]), s.useEffect(() => {
                 null != t && r !== g && r === M.fAW.OPEN && w.default.track(M.HAw.INVITE_APP_INVOKED, {
-                    invite_code: (0, T.m0)(n),
+                    invite_code: (0, j.m0)(n),
                     guild_id: t.guild?.id,
                     channel_id: t.channel?.id,
                     inviter_id: t.inviter?.id,
@@ -373,7 +373,7 @@ function et(e) {
         error: P,
         handleAccept: er,
         handleDefaultTransition: el
-    }) : ea === M.elq.RESOLVED ? I && (0, o.Lt)(h.flags ?? 0, a.Q.IS_GUEST_INVITE) ? (p.Ay.openApp(h.code), u.u.set(C.B, h.code), (0, i.jsx)(X, {
+    }) : ea === M.elq.RESOLVED ? I && (0, o.Lt)(h.flags ?? 0, a.Q.IS_GUEST_INVITE) ? (p.Ay.openApp(h.code), u.u.set(T.B, h.code), (0, i.jsx)(X, {
         invite: h,
         onContinue: () => r(M.BVt.APP)
     })) : I || !W.VP ? (0, i.jsx)(Y, {

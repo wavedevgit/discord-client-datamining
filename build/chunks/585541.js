@@ -25,19 +25,19 @@ function f(e) {
         setSlide: r,
         ready: f,
         token: E
-    } = e, [x, I] = s.useState(!1), [N, v] = s.useState(null), [C, T] = s.useState(null), [j, S] = s.useState(""), y = s.useRef(null);
+    } = e, [x, I] = s.useState(!1), [N, v] = s.useState(null), [T, j] = s.useState(null), [C, S] = s.useState(""), y = s.useRef(null);
     return s.useEffect(() => {
         f && y.current?.focus()
     }, [f]), (0, i.jsxs)("div", {
         children: [(0, i.jsx)(d._V, {
-            src: null == C ? n(79418) : n(579656),
+            src: null == T ? n(79418) : n(579656),
             className: l()(A.SX, A.Ot)
         }), (0, i.jsx)(d.hE, {
             children: g.intl.string(g.t.IfBQ56)
-        }), null != C && "" !== C ? (0, i.jsx)(o.Text, {
+        }), null != T && "" !== T ? (0, i.jsx)(o.Text, {
             variant: "text-sm/normal",
             color: "text-feedback-critical",
-            children: C
+            children: T
         }) : null, (0, i.jsxs)(d.eB, {
             className: l()(A.SX, A.QX),
             children: [(0, i.jsx)(d.pd, {
@@ -46,7 +46,7 @@ function f(e) {
                 label: g.intl.string(g.t["8dM4FO"]),
                 setRef: y,
                 className: A.SX,
-                value: j,
+                value: C,
                 onChange: S,
                 error: N,
                 autoComplete: "new-password",
@@ -59,15 +59,15 @@ function f(e) {
                     fullWidth: !0,
                     onClick: () => {
                         if (!x) {
-                            if (0 === j.length) {
+                            if (0 === C.length) {
                                 v(g.intl.string(g.t.R98xD5)), u._.dispatch(p.jej.WAVE_EMPHASIZE);
                                 return
                             }
-                            return null != C && T(null), null != N && v(null), t(""), I(!0), h.A.post({
+                            return null != T && j(null), null != N && v(null), t(""), I(!0), h.A.post({
                                 url: p.Rsh.ACCOUNT_REVERT,
                                 body: {
                                     token: E,
-                                    password: j
+                                    password: C
                                 },
                                 trackedActionData: {
                                     event: a.NetworkActionNames.ACCOUNT_REVERT
@@ -81,12 +81,12 @@ function f(e) {
                                 } = e;
                                 S(""), t(n), r(_.k.SUCCESS)
                             }).catch(e => {
-                                if (e instanceof Error) T(g.intl.formatToPlainString(g.t.aTVNes, {
+                                if (e instanceof Error) j(g.intl.formatToPlainString(g.t.aTVNes, {
                                     statusPageURL: p.qF7.STATUS
                                 }));
                                 else {
                                     let t = new c.A(e);
-                                    t.hasFieldErrors() ? v(t.getAnyErrorMessage()) : T((function(e) {
+                                    t.hasFieldErrors() ? v(t.getAnyErrorMessage()) : j((function(e) {
                                         switch (e) {
                                             case p.t02.ACCOUNT_REVERT_INVALID_TOKEN:
                                                 return g.intl.string(g.t["11zzGR"]);

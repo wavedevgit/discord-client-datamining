@@ -8,8 +8,8 @@ var r = n(503698),
     i = n.n(r),
     s = n(993408),
     l = n(506742),
-    o = n(219103),
-    c = n(469215);
+    c = n(219103),
+    o = n(469215);
 
 function d(e) {
     let {
@@ -31,8 +31,8 @@ function d(e) {
         showDefaultPriceOnly: f
     } = h;
     if (f) return (0, a.jsx)("div", {
-        className: i()(c.kG, d),
-        children: (0, a.jsx)(o.x, {
+        className: i()(o.kG, d),
+        children: (0, a.jsx)(c.x, {
             priceAmount: x.amount,
             priceCurrency: x.currency
         })
@@ -43,16 +43,16 @@ function d(e) {
         finalPrice: A
     } = h;
     return (0, a.jsxs)("div", {
-        className: i()(c.kG, d),
+        className: i()(o.kG, d),
         children: [m ? null : (0, a.jsx)(l.a, {
             price: v,
-            className: c.q9
-        }), (0, a.jsx)(o.x, {
+            className: o.q9
+        }), (0, a.jsx)(c.x, {
             priceAmount: A.amount,
             priceCurrency: A.currency,
             discount: r,
             className: i()({
-                [c.q9]: null == u
+                [o.q9]: null == u
             }),
             nitroIconType: g ? p : void 0,
             nitroIconSize: _,

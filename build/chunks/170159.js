@@ -24,9 +24,9 @@ var i = n(627968),
     I = n(189081),
     N = n(67480),
     v = n(45938),
-    C = n(975571),
-    T = n(427262),
-    j = n(161928),
+    T = n(975571),
+    j = n(427262),
+    C = n(161928),
     S = n(129851),
     y = n(229),
     b = n(652215),
@@ -166,7 +166,7 @@ class L extends s.PureComponent {
             }), (0, i.jsx)(o.QWc, {
                 text: R.intl.string(R.t["/CjuXF"]),
                 textVariant: "text-sm/normal",
-                onClick: () => window.open(C.A.getArticleURL(b.MVz.GIFTING), "_blank")
+                onClick: () => window.open(T.A.getArticleURL(b.MVz.GIFTING), "_blank")
             })]
         })
     }
@@ -226,12 +226,12 @@ class L extends s.PureComponent {
         let {
             transitionTo: s
         } = this.props, r = this.getErrorMessage(e);
-        return (0, i.jsx)(D, {
+        return (0, i.jsx)(k, {
             sku: n,
             giftCodeCode: e.code,
             transitionTo: s,
             children: (0, i.jsxs)(p.Ay, {
-                children: [(0, i.jsx)(j.A, {
+                children: [(0, i.jsx)(C.A, {
                     giftCode: e
                 }), (0, i.jsx)("div", {
                     className: O.eT,
@@ -247,7 +247,7 @@ class L extends s.PureComponent {
                 }) : (0, i.jsx)(p.ME, {
                     className: O.QX,
                     children: R.intl.format(R.t.NYM08s, {
-                        userTag: T.Ay.getUserTag(t),
+                        userTag: j.Ay.getUserTag(t),
                         onLogoutClick: this.handleLogout
                     })
                 })]
@@ -308,7 +308,7 @@ let w = a.Ay.connectStores([x.A, I.A, f.default, N.A, E.A, g.A], e => {
             nativeAppState: g.A.getState(t)
         }
     })(L),
-    D = e => {
+    k = e => {
         let {
             sku: t,
             children: n,

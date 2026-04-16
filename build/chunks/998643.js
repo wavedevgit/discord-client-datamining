@@ -24,9 +24,9 @@ var i = n(627968),
     I = n(49463),
     N = n(122906),
     v = n(121623),
-    C = n(850381),
-    T = n(21599),
-    j = n(614986),
+    T = n(850381),
+    j = n(21599),
+    C = n(614986),
     S = n(957622),
     y = n(463347),
     b = n(210714),
@@ -34,8 +34,8 @@ var i = n(627968),
     O = n(961350),
     L = n(30793),
     w = n(299091),
-    D = n(954571),
-    k = n(139675),
+    k = n(954571),
+    D = n(139675),
     U = n(612181),
     P = n(486020),
     B = n(952072),
@@ -66,7 +66,7 @@ let er = (0, G.A)(Y.A),
     ea = (0, G.A)(q.A),
     eo = (0, G.A)(z.A),
     ec = (0, G.A)(K.A),
-    ed = (0, G.A)(j.A),
+    ed = (0, G.A)(C.A),
     eu = (0, G.A)($.A),
     eh = (0, G.A)(et.A),
     e_ = (0, G.A)(F.A),
@@ -75,14 +75,14 @@ let er = (0, G.A)(Y.A),
     em = (0, G.A)(ee.A),
     eA = (0, G.A)(W.A),
     ef = (0, G.A)(E.A),
-    eE = (0, G.A)(C.A),
+    eE = (0, G.A)(T.A),
     ex = (0, G.A)(V.A),
     eI = (0, G.A)(H.A),
     eN = (0, G.A)(J.A),
     ev = (0, G.A)(Z.A),
-    eC = (0, G.A)(g.A),
-    eT = (0, G.A)(S.A);
-class ej extends s.PureComponent {
+    eT = (0, G.A)(g.A),
+    ej = (0, G.A)(S.A);
+class eC extends s.PureComponent {
     state = {
         splash: null,
         redirectTo: null,
@@ -103,7 +103,7 @@ class ej extends s.PureComponent {
                 guild: e,
                 target_application: t
             } = n;
-            null != t ? null != s && (a = (0, k.uD)(t.id, s, 1024)) : null != e && "string" == typeof e.splash && (a = P.Ay.getGuildSplashURL({
+            null != t ? null != s && (a = (0, D.uD)(t.id, s, 1024)) : null != e && "string" == typeof e.splash && (a = P.Ay.getGuildSplashURL({
                 id: e.id,
                 splash: e.splash
             }))
@@ -119,8 +119,8 @@ class ej extends s.PureComponent {
             hasLoadedExperiments: t,
             isAuthenticated: n
         } = this.props;
-        null != e && (!t && n && u.A.getExperiments(!0), D.default.track(ei.HAw.INVITE_OPENED, {
-            invite_code: (0, T.m0)(e),
+        null != e && (!t && n && u.A.getExperiments(!0), k.default.track(ei.HAw.INVITE_OPENED, {
+            invite_code: (0, j.m0)(e),
             load_time: B.A.getTimeSinceNavigationStart()
         }, {
             flush: !0
@@ -140,7 +140,7 @@ class ej extends s.PureComponent {
             let {
                 target_application: t
             } = e;
-            null != t && (0, k.RG)(t.id, ["embedded_splash"]).then(e => {
+            null != t && (0, D.RG)(t.id, ["embedded_splash"]).then(e => {
                 let [t] = e;
                 return this.setState({
                     backgroundId: t
@@ -162,7 +162,7 @@ class ej extends s.PureComponent {
         let {
             guildTemplateCode: e
         } = this.props;
-        null != e && (D.default.track(ei.HAw.GUILD_TEMPLATE_OPENED, {
+        null != e && (k.default.track(ei.HAw.GUILD_TEMPLATE_OPENED, {
             guild_template_code: e,
             load_time: B.A.getTimeSinceNavigationStart()
         }, {
@@ -194,7 +194,7 @@ class ej extends s.PureComponent {
                 })
             }), (0, i.jsx)(m.A, {
                 path: ei.BVt.LOGIN_ONE_TIME,
-                render: e => (0, i.jsx)(eT, {
+                render: e => (0, i.jsx)(ej, {
                     ...e
                 })
             }), (0, i.jsx)(m.A, {
@@ -234,7 +234,7 @@ class ej extends s.PureComponent {
                         },
                         location: s,
                         transitionTo: r
-                    } = e, l = (0, T.fB)(t, s.search);
+                    } = e, l = (0, j.fB)(t, s.search);
                     return a.Fr || a.v1 ? (0, i.jsx)(ed, {
                         inviteKey: l,
                         transitionTo: r
@@ -347,7 +347,7 @@ class ej extends s.PureComponent {
                 })
             }), (0, i.jsx)(m.A, {
                 path: ei.BVt.ACCOUNT_REVERT(":token"),
-                render: e => (0, i.jsx)(eC, {
+                render: e => (0, i.jsx)(eT, {
                     ...e
                 })
             })]
@@ -358,7 +358,7 @@ let eS = c.Ay.connectStores([O.default, w.A, L.A, I.A, N.A], e => {
     let {
         match: t,
         location: n
-    } = e, i = t?.params?.inviteCode, s = null != i ? (0, T.fB)(i, n.search) : void 0, r = t?.params?.giftCode, l = t?.params?.guildTemplateCode;
+    } = e, i = t?.params?.inviteCode, s = null != i ? (0, j.fB)(i, n.search) : void 0, r = t?.params?.giftCode, l = t?.params?.guildTemplateCode;
     return {
         inviteKey: s,
         isAuthenticated: O.default.isAuthenticated(),
@@ -369,4 +369,4 @@ let eS = c.Ay.connectStores([O.default, w.A, L.A, I.A, N.A], e => {
         guildTemplate: null != l ? N.A.getGuildTemplate(l) : null,
         hasLoadedExperiments: I.A.hasLoadedExperiments
     }
-})(ej)
+})(eC)

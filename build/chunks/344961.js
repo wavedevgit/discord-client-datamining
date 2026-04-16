@@ -24,16 +24,16 @@ var i = n(627968),
     I = n(985018),
     N = n(611008),
     v = n(818050);
-let C = n(906118);
+let T = n(906118);
 
-function T(e) {
+function j(e) {
     let {
         text: t = ""
     } = e, [n, r] = s.useState(!1);
     return s.useEffect(() => {
         let e = new Image;
-        e.src = C, e.onload = () => r(!0), e.onerror = () => r(!0)
-    }, [C]), s.useEffect(() => {
+        e.src = T, e.onload = () => r(!0), e.onerror = () => r(!0)
+    }, [T]), s.useEffect(() => {
         n && l.ORC.announce(I.intl.string(I.t.j2p125))
     }, [n]), (0, i.jsx)("div", {
         className: N.Ac,
@@ -45,7 +45,7 @@ function T(e) {
             }), (0, i.jsx)("div", {
                 className: N.R6,
                 children: (0, i.jsx)("img", {
-                    src: C,
+                    src: T,
                     alt: ""
                 })
             })]
@@ -61,7 +61,7 @@ function T(e) {
         })
     })
 }
-let j = e => {
+let C = e => {
     let {
         className: t,
         children: n
@@ -86,12 +86,12 @@ function S(e) {
         case h.b.INITIALIZING:
         case h.b.PENDING_REMOTE_INIT:
             return (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(T, {
+                children: [(0, i.jsx)(j, {
                     text: t.step === h.b.PENDING_REMOTE_INIT ? `https://discord.com/ra/${t.fingerprint}` : ""
                 }), (0, i.jsx)(d.hE, {
                     className: v.QB,
                     children: I.intl.string(I.t.UPiHaL)
-                }), null != s ? (0, i.jsx)(j, {
+                }), null != s ? (0, i.jsx)(C, {
                     children: s
                 }) : (0, i.jsx)(d.tK, {
                     children: I.intl.format(I.t["Qq+A6i"], {})

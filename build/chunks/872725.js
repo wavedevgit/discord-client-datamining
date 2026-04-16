@@ -42,12 +42,12 @@ let h = {
             glowAmount: j = 8,
             blurAmount: v = 30,
             hueRotate: A = 0,
-            isReducedMotion: E,
-            onMouseEnter: N
+            isReducedMotion: N,
+            onMouseEnter: E
         } = e, P = l.useRef(null), D = l.useRef(null), {
             status: y,
             buffer: I
-        } = (0, c.CE)(R ? i.A : null), T = l.useContext(d.C), S = E ?? T.reducedMotion.enabled, w = {
+        } = (0, c.CE)(R ? i.A : null), T = l.useContext(d.C), S = N ?? T.reducedMotion.enabled, w = {
             "--custom-glow-amount": `${j}px`,
             "--custom-blur-amount": `${v}px`,
             "--custom-hue-rotate": `${A}deg`,
@@ -59,7 +59,7 @@ let h = {
             tabIndex: s,
             className: a()(m.k, C),
             style: w,
-            onMouseEnter: N,
+            onMouseEnter: E,
             children: [R && y !== c.BW.Loading && (0, r.jsx)(o.w, {
                 buffer: I,
                 artboard: f,

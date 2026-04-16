@@ -25,9 +25,9 @@ var i = n(627968),
     I = n(235986),
     N = n(491509),
     v = n(895600),
-    C = n(720353),
-    T = n(559568),
-    j = n(274303),
+    T = n(720353),
+    j = n(559568),
+    C = n(274303),
     S = n(13437),
     y = n(557722),
     b = n(148864),
@@ -35,8 +35,8 @@ var i = n(627968),
     O = n(976860),
     L = n(913612),
     w = n(210714),
-    D = n(933924),
-    k = n(961350),
+    k = n(933924),
+    D = n(961350),
     U = n(115036),
     P = n(650048),
     B = n(954571),
@@ -107,7 +107,7 @@ class J extends s.PureComponent {
             source: (0, O.PR)()
         }, {
             flush: !0
-        }), t || (0, D.a)({
+        }), t || (0, k.a)({
             abortController: this.state.conditionalMediationAbortController,
             loginSource: this.loginSource,
             giftCodeSKUId: this.giftCodeSKUId
@@ -183,7 +183,7 @@ class J extends s.PureComponent {
             let e = window.location.protocol + window.GLOBAL_ENV.API_ENDPOINT + K.Rsh.SSO,
                 t = {
                     ...s,
-                    token: k.default.getToken()
+                    token: D.default.getToken()
                 };
             window.location = `${e}?${(0,a.stringify)(t)}`
         }
@@ -458,7 +458,7 @@ class J extends s.PureComponent {
                 className: e,
                 expanded: !0,
                 children: this.renderDefaultForm(!0)
-            }), t && (0, i.jsx)(T.A, {})]
+            }), t && (0, i.jsx)(j.A, {})]
         })
     }
     renderGuildTemplate(e) {
@@ -480,7 +480,7 @@ class J extends s.PureComponent {
             style: {
                 padding: 0
             },
-            children: (0, i.jsx)(C.t, {
+            children: (0, i.jsx)(T.t, {
                 mfaFinish: this.handleTokenSubmitMFA,
                 mfaChallenge: e,
                 onEarlyClose: () => {
@@ -737,16 +737,16 @@ class J extends s.PureComponent {
 }
 let $ = function(e) {
     (0, L.K)();
-    let t = (0, d.cf)([U.A, P.A, k.default, j.A, b.A], () => ({
-        authenticated: k.default.isAuthenticated(),
+    let t = (0, d.cf)([U.A, P.A, D.default, C.A, b.A], () => ({
+        authenticated: D.default.isAuthenticated(),
         handoffAvailable: U.A.isHandoffAvailable(),
         user: U.A.user,
-        loginStatus: k.default.getLoginStatus(),
-        mfaTicket: k.default.getMFATicket(),
-        mfaMethods: k.default.getMFAMethods(),
+        loginStatus: D.default.getLoginStatus(),
+        mfaTicket: D.default.getMFATicket(),
+        mfaMethods: D.default.getMFAMethods(),
         defaultRoute: P.A.defaultRoute,
         country: b.A.getCountryCode(),
-        hasLoggedInAccounts: j.A.getHasLoggedInAccounts()
+        hasLoggedInAccounts: C.A.getHasLoggedInAccounts()
     }));
     return (0, i.jsx)(J, {
         ...e,

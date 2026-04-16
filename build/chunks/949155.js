@@ -3,7 +3,7 @@
 n.d(t, {
     B_: () => N,
     FC: () => E,
-    Fk: () => T,
+    Fk: () => j,
     IK: () => y,
     PX: () => v,
     TZ: () => R,
@@ -37,16 +37,16 @@ let E = 100,
     I = e => e.target_type === p.yV.STREAM && null != e.target_user,
     N = e => e.channel?.type === g.rbe.GROUP_DM,
     v = e => null == e.channel && null == e.guild && null != e.inviter,
-    C = e => e.state === g.elq.ACCEPTED,
-    T = e => {
+    T = e => e.state === g.elq.ACCEPTED,
+    j = e => {
         let {
             guild_scheduled_event: t
         } = e;
         return null != t
     },
-    j = e => {
+    C = e => {
         let t;
-        return !T(e) && (!!v(e) || null != e.inviter && !C(e) && (t = x(e), !((t?.memberCount ?? 0) > E)))
+        return !j(e) && (!!v(e) || null != e.inviter && !T(e) && (t = x(e), !((t?.memberCount ?? 0) > E)))
     },
     S = e => {
         let {
@@ -76,7 +76,7 @@ function y(e) {
         textClassName: n,
         className: s
     } = e, r = x(t);
-    return null == r || j(t) || t?.guild?.id === m.TA ? null : (0, i.jsx)(o.R1, {
+    return null == r || C(t) || t?.guild?.id === m.TA ? null : (0, i.jsx)(o.R1, {
         className: l()(f.He, s),
         online: r.onlineCount,
         total: r.memberCount,
@@ -89,12 +89,12 @@ function b(e) {
     let {
         invite: t,
         showBigUserIcon: n
-    } = e, r = s.useMemo(() => n ? null : I(t) && null != t.target_user ? h.Ay.getUserAvatarURL(t.target_user) : j(t) && null != t.inviter ? h.Ay.getUserAvatarURL(t.inviter) : null, [t, n]), l = A.intl.string(A.t["3rE1P8"]);
+    } = e, r = s.useMemo(() => n ? null : I(t) && null != t.target_user ? h.Ay.getUserAvatarURL(t.target_user) : C(t) && null != t.inviter ? h.Ay.getUserAvatarURL(t.inviter) : null, [t, n]), l = A.intl.string(A.t["3rE1P8"]);
     return N(t) ? l = t.channel?.name != null && t.inviter?.username != null ? A.intl.format(A.t.Lu4h18, {
         username: t.inviter.username
     }) : A.intl.string(A.t.OsdY8B) : I(t) && null != t.target_user ? l = A.intl.formatToPlainString(A.t.x2L32Q, {
         username: t.target_user.username
-    }) : C(t) ? l = A.intl.string(A.t["FDsl+J"]) : j(t) && null != t.inviter && (l = A.intl.format(A.t.spU2mI, {
+    }) : T(t) ? l = A.intl.string(A.t["FDsl+J"]) : C(t) && null != t.inviter && (l = A.intl.format(A.t.spU2mI, {
         username: _.Ay.getFormattedName(t.inviter)
     })), (0, i.jsxs)("div", {
         className: f.JB,

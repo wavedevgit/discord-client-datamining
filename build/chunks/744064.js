@@ -28,8 +28,8 @@ let v = e => {
         title: n,
         description: s,
         caption: v,
-        pillText: E,
-        primaryAsset: N,
+        pillText: N,
+        primaryAsset: E,
         primaryAssetClassName: P,
         backgroundAssetUrl: D,
         progress: y,
@@ -95,22 +95,22 @@ let v = e => {
                 backgroundOrigin: "padding-box",
                 backgroundClip: "padding-box"
             },
-            children: [!(0, i.isEmpty)(E) && (0, r.jsx)(u.Text, {
+            children: [!(0, i.isEmpty)(N) && (0, r.jsx)(u.Text, {
                 variant: "text-xs/bold",
                 color: "badge-expressive-text-default",
                 className: j.Io,
-                children: E
+                children: N
             }), (0, r.jsxs)("div", {
                 className: j.qh,
                 children: [U && (0, r.jsx)("div", {
                     className: j.gW,
                     "aria-hidden": "true",
                     children: (0, r.jsx)(A, {
-                        asset: N,
+                        asset: E,
                         className: P
                     })
                 }), (0, r.jsx)(A, {
-                    asset: N,
+                    asset: E,
                     className: P
                 })]
             }), (0, r.jsxs)("div", {

@@ -24,8 +24,8 @@ var r = n(627968),
     j = n(94264),
     v = n(652215),
     A = n(758836),
-    E = n(901123),
-    N = n(490285),
+    N = n(901123),
+    E = n(490285),
     P = n(985018),
     D = n(787413),
     y = n(909340),
@@ -58,27 +58,27 @@ let w = e => {
                 if (null == l || l < 0) return null;
                 return {
                     displayTotalLifetimeRewards: null != s, displayProgressBar: !0, actionButton: (0, r.jsx)(d.$nd, {
-                        text: P.intl.string(N.default.BxjHiu),
+                        text: P.intl.string(E.default.BxjHiu),
                         variant: t ? "overlay-primary" : "secondary",
                         onClick: () => {
-                            (0, R.WD)(n), (0, p.pX)(E.BV.COLLECTIBLES_SHOP_WITH_TAB(A.G2.ORBS))
+                            (0, R.WD)(n), (0, p.pX)(N.BV.COLLECTIBLES_SHOP_WITH_TAB(A.G2.ORBS))
                         }
-                    }), headerText: P.intl.format(N.default.BxLJQL, {
+                    }), headerText: P.intl.format(E.default.BxLJQL, {
                         days: Math.max(1, l),
                         orbsCount: e.reward_amount
-                    }), subheaderText: P.intl.format(N.default.tUV1vV, {
+                    }), subheaderText: P.intl.format(E.default.tUV1vV, {
                         helpdeskArticle: () => S(n)
                     })
                 };
             case x.L.PAYMENT_PROCESSING:
                 return {
                     displayTotalLifetimeRewards: !1, displayProgressBar: !1, actionButton: (0, r.jsx)(d.$nd, {
-                        text: P.intl.string(N.default.KVCfnE),
+                        text: P.intl.string(E.default.KVCfnE),
                         variant: t ? "overlay-primary" : "secondary",
                         onClick: () => {
                             (0, R.CC)(n), (0, g.openUserSettings)(_.X.BILLING_PANEL)
                         }
-                    }), headerText: P.intl.string(N.default.uuZJXR), subheaderText: P.intl.format(N.default.dkeEV7, {
+                    }), headerText: P.intl.string(E.default.uuZJXR), subheaderText: P.intl.format(E.default.dkeEV7, {
                         helpdeskArticle: () => S(n)
                     })
                 };
@@ -89,39 +89,39 @@ let w = e => {
                         children: e => (0, r.jsx)("span", {
                             className: e,
                             children: (0, r.jsx)(d.$nd, {
-                                text: P.intl.string(N.default.KVCfnE),
+                                text: P.intl.string(E.default.KVCfnE),
                                 variant: "critical-secondary",
                                 onClick: () => {
                                     (0, R.ue)(n), (0, g.openUserSettings)(_.X.BILLING_PANEL)
                                 }
                             })
                         })
-                    }), headerText: P.intl.string(N.default["+O9Asn"]), subheaderText: P.intl.format(N.default.nWKEBZ, {
+                    }), headerText: P.intl.string(E.default["+O9Asn"]), subheaderText: P.intl.format(E.default.nWKEBZ, {
                         helpdeskArticle: () => S(n)
                     })
                 };
             case x.L.PROGRAM_ROLLBACK:
                 return {
                     displayTotalLifetimeRewards: null != s, displayProgressBar: null != l, actionButton: (0, r.jsx)(d.$nd, {
-                        text: P.intl.string(N.default["wLAd/+"]),
+                        text: P.intl.string(E.default["wLAd/+"]),
                         variant: t ? "overlay-primary" : "secondary",
                         onClick: () => {
-                            (0, R.WD)(n), (0, p.pX)(E.BV.COLLECTIBLES_SHOP_WITH_TAB(A.G2.ORBS))
+                            (0, R.WD)(n), (0, p.pX)(N.BV.COLLECTIBLES_SHOP_WITH_TAB(A.G2.ORBS))
                         }
-                    }), headerText: P.intl.string(N.default.zF0HnJ), subheaderText: P.intl.format(N.default["5tzNTa"], {
+                    }), headerText: P.intl.string(E.default.zF0HnJ), subheaderText: P.intl.format(E.default["5tzNTa"], {
                         helpdeskArticle: () => S(n)
                     })
                 };
             case x.L.PREMIUM_CHURNING:
                 return {
                     displayTotalLifetimeRewards: null != s, displayProgressBar: null != l, actionButton: (0, r.jsx)(d.$nd, {
-                        text: P.intl.string(N.default.FToh6D),
+                        text: P.intl.string(E.default.FToh6D),
                         variant: t ? "overlay-primary" : "secondary",
                         icon: d.tvc,
                         onClick: () => {
                             (0, R.Jv)(n), (0, g.openUserSettings)(_.X.SUBSCRIPTIONS_PANEL)
                         }
-                    }), headerText: P.intl.string(N.default.ISnOet), subheaderText: P.intl.format(N.default["vjaRZ/"], {
+                    }), headerText: P.intl.string(E.default.ISnOet), subheaderText: P.intl.format(E.default["vjaRZ/"], {
                         helpdeskArticle: () => S(n)
                     })
                 };
@@ -183,7 +183,7 @@ let w = e => {
                     children: [(0, r.jsx)(d.EYj, {
                         variant: "text-md/medium",
                         className: D.G3,
-                        children: P.intl.string(N.default["/1mWUn"])
+                        children: P.intl.string(E.default["/1mWUn"])
                     }), (0, r.jsx)(d.Cp8, {
                         size: "sm",
                         color: "currentColor"

@@ -34,7 +34,6 @@ function d(e) {
         location: t
     });
     return {
-        marketingEnabled: n,
         functionalityEnabled: n
     }
 }

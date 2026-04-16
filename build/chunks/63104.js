@@ -25,10 +25,10 @@ function m(e) {
         forcedIconColor: s,
         className: o,
         iconClassName: m
-    } = e, [A, f] = (0, a.yK)([d.A], () => [d.A.desaturateUserColors, d.A.saturation]), E = (0, c.rdh)(_).hex(), x = t ?? E, I = (0, l.$k)((0, l.LX)(x), !1, A ? f : null), N = (0, c.rdh)(p).hex(), v = (0, c.rdh)(g).hex(), C = null != s ? s : (0, u.j)({
+    } = e, [A, f] = (0, a.yK)([d.A], () => [d.A.desaturateUserColors, d.A.saturation]), E = (0, c.rdh)(_).hex(), x = t ?? E, I = (0, l.$k)((0, l.LX)(x), !1, A ? f : null), N = (0, c.rdh)(p).hex(), v = (0, c.rdh)(g).hex(), T = null != s ? s : (0, u.j)({
         backgroundColor: x,
         colors: [N, v]
-    }), T = n / 8;
+    }), j = n / 8;
     return (0, i.jsx)("div", {
         style: {
             background: I,
@@ -40,12 +40,12 @@ function m(e) {
         className: o,
         children: (0, i.jsx)(c.qYV, {
             size: "custom",
-            color: C,
+            color: T,
             className: r()(h.w, m),
-            width: n - 2 * T,
-            height: n - 2 * T,
+            width: n - 2 * j,
+            height: n - 2 * j,
             style: {
-                margin: T
+                margin: j
             }
         })
     })

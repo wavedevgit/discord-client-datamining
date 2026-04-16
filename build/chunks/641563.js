@@ -7,8 +7,8 @@ var a = n(627968),
     i = n(397927),
     s = n(688810),
     l = n(532794),
-    o = n(758836),
-    c = n(788868),
+    c = n(758836),
+    o = n(788868),
     d = n(447806);
 let u = e => {
     let {
@@ -21,8 +21,8 @@ let u = e => {
         className: d.F,
         innerRef: m,
         onClick: () => {
-            n?.(o.sH.SUBSCRIBE_NOW), (0, l.A)({
-                subscriptionTier: c.pe.TIER_2,
+            n?.(c.sH.SUBSCRIBE_NOW), (0, l.A)({
+                subscriptionTier: o.pe.TIER_2,
                 analyticsLocations: u,
                 returnRef: m
             })

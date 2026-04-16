@@ -15,7 +15,7 @@ n.r(t), n.d(t, {
     PERMADECOS_CARD_ID: () => x,
     PREMIUM_GROUP_CARD_ID: () => C,
     PROFILES_CARD_ID: () => p,
-    QUEST_ORB_MULTIPLIER_CARD_ID: () => E,
+    QUEST_ORB_MULTIPLIER_CARD_ID: () => N,
     RECURRING_3P_PROMOTIONS_CARD_ID: () => _,
     SERVER_BOOSTS_CARD_ID: () => g,
     SPECIAL_MEMBER_PRICING_CARD_ID: () => f,
@@ -46,4 +46,4 @@ let r = "badge",
     j = "tenureBadge",
     v = "videoBackgrounds",
     A = "logitech3PP",
-    E = "orbMultiplier"
+    N = "orbMultiplier"

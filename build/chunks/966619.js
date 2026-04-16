@@ -13,17 +13,17 @@ function l(e) {
         productSkuIds: n,
         analyticsLocations: l
     } = e, {
-        cardId: o,
-        sessionId: c
+        cardId: c,
+        sessionId: o
     } = (0, i.uM)() ?? {};
     return a.useCallback(e => {
         r.default.track(s.HAw.SHOP_PRODUCT_DETAIL_PAGE_CLICKED, {
             sku_id: t,
             cta: e,
-            shop_session_id: c,
-            card_id: o,
+            shop_session_id: o,
+            card_id: c,
             product_sku_ids: n,
             location_stack: l
         })
-    }, [t, l, o, n, c])
+    }, [t, l, c, n, o])
 }

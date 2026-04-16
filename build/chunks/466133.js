@@ -23,36 +23,36 @@ r.Ay.initialize();
 let E = e => {
     let {
         location: t
-    } = e, n = (0, r.bG)([g.default], () => g.default.isAuthenticated()), E = (0, r.bG)([u.A], () => u.A.hasLoadedExperiments), x = (0, _.Jp)("RSL - Landing Page"), [I, N] = s.useState(!1), [v, C] = s.useState(A.intl.string(A.t["9exy+V"])), [T, j] = s.useState(!0), S = e => {
+    } = e, n = (0, r.bG)([g.default], () => g.default.isAuthenticated()), E = (0, r.bG)([u.A], () => u.A.hasLoadedExperiments), x = (0, _.Jp)("RSL - Landing Page"), [I, N] = s.useState(!1), [v, T] = s.useState(A.intl.string(A.t["9exy+V"])), [j, C] = s.useState(!0), S = e => {
         switch (e) {
             case m.t02.INVALID_FORM_BODY:
             case m.t02.DSA_RSL_REPORT_NOT_FOUND:
-                C(A.intl.string(A.t.bzXDfc));
+                T(A.intl.string(A.t.bzXDfc));
                 break;
             case m.t02.DSA_RSL_ALREADY_REQUESTED:
-                C(A.intl.string(A.t.rV00wq));
+                T(A.intl.string(A.t.rV00wq));
                 break;
             case m.t02.DSA_RSL_LIMITED_TIME:
-                C(A.intl.string(A.t["0dI29h"]));
+                T(A.intl.string(A.t["0dI29h"]));
                 break;
             case m.t02.DSA_RSL_REPORT_INELIGIBLE:
-                C(A.intl.string(A.t["RGa/Gb"]));
+                T(A.intl.string(A.t["RGa/Gb"]));
                 break;
             default:
-                C(A.intl.string(A.t["0QLzfv"]))
+                T(A.intl.string(A.t["0QLzfv"]))
         }
     };
     return s.useEffect(() => {
-        n ? (j(!0), o.rQ({
+        n ? (C(!0), o.rQ({
             withAnalyticsToken: !0
-        }).then(() => j(!1)).catch(() => j(!1))) : j(!1)
+        }).then(() => C(!1)).catch(() => C(!1))) : C(!1)
     }, [n]), s.useEffect(() => {
         E || x || a.A.getExperiments()
     }, [E, x]), s.useEffect(() => {
         let e = async e => {
             try {
                 let t = null != e ? await (0, h.q)(e) : void 0;
-                null != t ? C(A.intl.string(A.t.e6mZMt)) : S(t.body?.code)
+                null != t ? T(A.intl.string(A.t.e6mZMt)) : S(t.body?.code)
             } catch (e) {
                 S(e.body?.code)
             } finally {
@@ -60,7 +60,7 @@ let E = e => {
             }
         };
         N(!0), e((0, c.A)(t)), (0, p.d)("report_second_look")
-    }, [t]), x && !T && (0, i.jsxs)(d.Ay, {
+    }, [t]), x && !j && (0, i.jsxs)(d.Ay, {
         children: [(0, i.jsx)(d.hE, {
             className: f.QB,
             children: v

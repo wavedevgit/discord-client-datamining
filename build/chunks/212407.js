@@ -1,11 +1,11 @@
 /** chunk id: 212407 params = (module,exports,require) **/
 n.d(t, {
-    Kk: () => o,
+    Kk: () => c,
     MV: () => d,
     U1: () => u,
     bv: () => m,
     qY: () => p,
-    s4: () => c,
+    s4: () => o,
     w$: () => _
 });
 var a = n(64700),
@@ -13,18 +13,18 @@ var a = n(64700),
     i = n(719986),
     s = n(940622),
     l = n(559474);
-let o = e => {
+let c = e => {
         let t = (0, s.mb)(l.RN.HERO_LOGO),
             n = (0, s.mb)(l.RN.HERO_BANNER_STATIC),
             r = (0, s.mb)(l.RN.HERO_BANNER_ANIMATED),
-            o = (0, s.mb)(l.RN.HERO_BANNER_RIVE),
-            c = (0, s.JE)(e => e.heroLogoMaxHeight),
+            c = (0, s.mb)(l.RN.HERO_BANNER_RIVE),
+            o = (0, s.JE)(e => e.heroLogoMaxHeight),
             d = (0, s.JE)(e => e.heroResponsive);
         return a.useMemo(() => {
-            let a, s = null != n || null != r || null != o || null != t,
+            let a, s = null != n || null != r || null != c || null != t,
                 l = null != n && null == r;
-            return a = s ? null != t && null != c ? i.M.fromServer({
-                desktop_max_height: c
+            return a = s ? null != t && null != o ? i.M.fromServer({
+                desktop_max_height: o
             }) : void 0 : e.logoDisplayConfig, {
                 bannerDisplayConfig: s ? d ? i.M.fromServer({
                     responsive: !0
@@ -33,11 +33,11 @@ let o = e => {
                 heroLogo: t ?? e.heroLogoUrl,
                 heroBannerStatic: n ?? e.heroBannerUrl,
                 heroBannerAnimated: l ? void 0 : r ?? e.heroBannerAnimatedUrl,
-                heroBannerRive: o ?? e.heroRiveUrl
+                heroBannerRive: c ?? e.heroRiveUrl
             }
-        }, [t, n, r, o, e, c, d])
+        }, [t, n, r, c, e, o, d])
     },
-    c = (e, t, n) => {
+    o = (e, t, n) => {
         let a = (0, s.mb)(l.RN.FEATURED_BLOCK);
         return (n ? a : null) ?? t?.assetUrl ?? e?.featuredBlockUrl
     },
@@ -56,8 +56,8 @@ let o = e => {
         let t = (0, s.mb)(l.RN.SHOP_BUTTON_BG_HOVER),
             n = (0, s.mb)(l.RN.SHOP_BUTTON_BG_HOVER_DARK),
             i = (0, s.mb)(l.RN.SHOP_BUTTON_BG_HOVER_LIGHT),
-            o = (0, s.mb)(l.RN.SHOP_BUTTON_BG_RESTING),
-            c = (0, s.mb)(l.RN.SHOP_BUTTON_BG_RESTING_DARK),
+            c = (0, s.mb)(l.RN.SHOP_BUTTON_BG_RESTING),
+            o = (0, s.mb)(l.RN.SHOP_BUTTON_BG_RESTING_DARK),
             d = (0, s.mb)(l.RN.SHOP_BUTTON_BG_RESTING_LIGHT);
         return a.useMemo(() => {
             if (e?.type === r.G.COACHMARK) return {};
@@ -67,10 +67,10 @@ let o = e => {
             return {
                 buttonBGHoverDark: n ?? t ?? l?.dark,
                 buttonBGHoverLight: i ?? t ?? l?.light,
-                buttonBGRestingDark: c ?? o ?? s?.dark,
-                buttonBGRestingLight: d ?? o ?? s?.light
+                buttonBGRestingDark: o ?? c ?? s?.dark,
+                buttonBGRestingLight: d ?? c ?? s?.light
             }
-        }, [t, n, i, o, c, d, e])
+        }, [t, n, i, c, o, d, e])
     },
     p = e => ({
         bannerUrl: e.bannerUrl,

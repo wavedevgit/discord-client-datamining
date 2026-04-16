@@ -49,11 +49,11 @@ function p(t) {
     return (0, n.jsx)(l.aFV, {
         onClose: e,
         title: m.intl.string(m.t.CbdZR3),
-        actions: [{
+        actions: [...S?.email != null ? [{
             text: m.intl.string(m.t.N86XcP),
             onClick: v,
             variant: "critical-secondary"
-        }, {
+        }] : [], {
             text: m.intl.string(m.t.bt75uw),
             onClick: g,
             variant: "primary"

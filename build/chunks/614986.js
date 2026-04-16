@@ -24,9 +24,9 @@ var i = n(627968),
     I = n(403362),
     N = n(860689),
     v = n(21599),
-    C = n(949155),
-    T = n(663572),
-    j = n(439680),
+    T = n(949155),
+    j = n(663572),
+    C = n(439680),
     S = n(131929),
     y = n(66027),
     b = n(172799),
@@ -41,7 +41,7 @@ function w() {
     })
 }
 
-function D(e) {
+function k(e) {
     let t = e?.state == null && e?.channel == null;
     if (null == e || null == e.state || t) return 0;
     let n = e.state;
@@ -64,7 +64,7 @@ function D(e) {
     }
 }
 
-function k(e) {
+function D(e) {
     let {
         invite: t,
         onAcceptInvite: n
@@ -113,8 +113,8 @@ function P(e) {
     let {
         invite: t
     } = e;
-    if (null == t || !(0, C.Fk)(t)) return null;
-    let n = D(t);
+    if (null == t || !(0, T.Fk)(t)) return null;
+    let n = k(t);
     return (0, i.jsx)(U, {
         startAnimHeightPx: 0,
         sectionClassName: L.ui,
@@ -133,7 +133,7 @@ function G(e) {
     let t, {
             invite: n
         } = e,
-        r = D(n),
+        r = k(n),
         {
             enabled: a
         } = y.n.useConfig({
@@ -147,7 +147,7 @@ function G(e) {
                 n = null != e.traits && e.traits.filter(e => e.label.length > 0).length > 0,
                 i = null != e.gameApplicationIds && e.gameApplicationIds.length > 0;
             return t && (n || i)
-        }(o) && null != c && null != n && !(0, C.Fk)(n);
+        }(o) && null != c && null != n && !(0, T.Fk)(n);
     if (s.useEffect(() => {
             d && y.n.getConfig({
                 location: "AcceptInviteMobile.hasProfile"
@@ -155,18 +155,18 @@ function G(e) {
         }, [d]), null == n) t = (0, i.jsx)(w, {});
     else switch (r) {
         case 1:
-            t = d ? (0, i.jsx)(j.A, {
+            t = d ? (0, i.jsx)(C.A, {
                 invite: n,
                 guild: c,
                 profile: o,
                 onAcceptInvite: e.onAcceptInvite
-            }) : (0, i.jsx)(T.A, {
+            }) : (0, i.jsx)(j.A, {
                 ...e,
                 invite: n
             });
             break;
         case 2:
-            t = (0, i.jsx)(k, {
+            t = (0, i.jsx)(D, {
                 ...e,
                 invite: n
             });
