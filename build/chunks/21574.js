@@ -1,6 +1,6 @@
 /** chunk id: 21574 params = (module,exports,require) **/
 n.d(t, {
-    z: () => m
+    z: () => u
 });
 var i = n(311907),
     s = n(955572),
@@ -8,14 +8,13 @@ var i = n(311907),
     r = n(419954),
     a = n(975571),
     o = n(780964),
-    d = n(358776),
-    c = n(652215),
-    u = n(985018);
-let m = (0, r.zD)(o.X.REDUCED_MOTION, {
-    useTitle: () => u.intl.string(u.t.b3XBzg),
-    useSubtitle: (0, d.Ci)("Motion") ? () => u.intl.format(u.t.XqvxJc, {
-        helpdeskArticle: a.A.getArticleURL(c.MVz.REDUCED_MOTION)
-    }) : void 0,
+    d = n(652215),
+    c = n(985018);
+let u = (0, r.zD)(o.X.REDUCED_MOTION, {
+    useTitle: () => c.intl.string(c.t.b3XBzg),
+    useSubtitle: () => c.intl.format(c.t.XqvxJc, {
+        helpdeskArticle: a.A.getArticleURL(d.MVz.REDUCED_MOTION)
+    }),
     useValue: () => (0, i.bG)([l.A], () => l.A.useReducedMotion),
     setValue: e => (0, s.qz)(e ? "reduce" : "no-preference")
 })

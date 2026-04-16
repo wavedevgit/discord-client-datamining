@@ -1,6 +1,6 @@
 /** chunk id: 949302 params = (module,exports,require) **/
 n.d(t, {
-    A: () => R,
+    A: () => O,
     e: () => j
 }), n(321073);
 var i = n(627968),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(826673),
     m = n(932001),
     p = n(40185),
-    E = n(552736),
-    S = n(422936),
+    S = n(552736),
+    E = n(422936),
     _ = n(234419),
     g = n(412260),
     x = n(852218),
@@ -31,24 +31,24 @@ var i = n(627968),
 function j() {
     let e, t = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
         n = (0, _.V)(),
-        r = (0, S.O)(),
+        r = (0, E.O)(),
         l = (0, p.cg)(),
-        c = null != (0, E.A)(),
+        c = null != (0, S.A)(),
         d = l || c,
         u = n?.trial_id === C.Dw,
         b = [];
     d && b.push(a.M.BOGO_2025_NITRO_TAB_BADGE);
-    let [j, R] = (0, m.kn)(b, void 0, !0), O = (0, o.bG)([g.A], () => {
+    let [j, O] = (0, m.kn)(b, void 0, !0), R = (0, o.bG)([g.A], () => {
         let e = g.A.getPromotionByTypeAndKey(x.pt.MARKETING_MOMENT, x.zw);
         return null == e || e.endDate < new Date ? null : e
-    }), [I, P] = (0, m.Cc)(null != O ? a.M.PREMIUM_MARKETING_MOMENT_USER_SETTINGS_OFFER_BADGE : null, O?.id ?? "", void 0, !0);
+    }), [I, P] = (0, m.Cc)(null != R ? a.M.PREMIUM_MARKETING_MOMENT_USER_SETTINGS_OFFER_BADGE : null, R?.id ?? "", void 0, !0);
     return s.useEffect(() => {
-        !0 === t && (j === a.M.BOGO_2025_NITRO_TAB_BADGE && R(A.i.AUTO_DISMISS), null != I && P(A.i.AUTO_DISMISS))
-    }, [R, P, t, j, I]), null != O ? e = (0, i.jsx)(N.A, {
+        !0 === t && (j === a.M.BOGO_2025_NITRO_TAB_BADGE && O(A.i.AUTO_DISMISS), null != I && P(A.i.AUTO_DISMISS))
+    }, [O, P, t, j, I]), null != R ? e = (0, i.jsx)(N.A, {
         componentId: "nitro-settings-offer-badge",
         badgeCopy: T.intl.string(T.t.OS9KPu),
         acknowledgedBadgeCopy: T.intl.string(T.t.OS9KPu),
-        isDismissed: (0, h.u$)(a.M.PREMIUM_MARKETING_MOMENT_USER_SETTINGS_OFFER_BADGE, O.id).isDismissed
+        isDismissed: (0, h.u$)(a.M.PREMIUM_MARKETING_MOMENT_USER_SETTINGS_OFFER_BADGE, R.id).isDismissed
     }) : d ? e = (0, i.jsx)(f.A, {}) : null != r ? e = (0, i.jsx)(v.fY, {
         isTabSelected: t,
         userDiscount: r,
@@ -59,7 +59,7 @@ function j() {
     })), e
 }
 
-function R(e) {
+function O(e) {
     let {
         decoration: t,
         label: n,

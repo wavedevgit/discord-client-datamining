@@ -1,7 +1,7 @@
 /** chunk id: 549404 params = (module,exports,require) **/
 "use strict";
 n.d(e, {
-    default: () => x
+    default: () => b
 });
 var r = n(627968),
     i = n(64700),
@@ -15,12 +15,12 @@ var r = n(627968),
     f = n(900686),
     p = n(358776),
     h = n(917136),
-    m = n(976910),
-    S = n(665671),
-    g = n(670492),
-    w = n(287809),
-    y = n(975571),
-    C = n(652215),
+    g = n(976910),
+    m = n(665671),
+    S = n(670492),
+    C = n(287809),
+    w = n(975571),
+    y = n(652215),
     A = n(985018),
     E = n(893709);
 let v = t => {
@@ -83,17 +83,17 @@ class _ extends i.PureComponent {
         })
     }
     handleAddPasskey = () => {
-        this.props.onClose(), (0, p.pC)("MFAEnableSuccess") ? (0, S.A)() : h.Mn()
+        this.props.onClose(), (0, p.pC)("MFAEnableSuccess") ? (0, m.A)() : h.Mn()
     };
     renderPasskeyCTASection() {
-        return m.A.hasCredentials ? null : (0, r.jsxs)(v, {
+        return g.A.hasCredentials ? null : (0, r.jsxs)(v, {
             label: A.intl.string(A.t.xMDCHa),
             text: A.intl.string(A.t.okgGTu),
             children: [(0, r.jsx)(d.Text, {
                 variant: "text-md/normal",
                 className: E.gt,
                 children: A.intl.format(A.t.OeGXVv, {
-                    learnMoreLink: y.A.getArticleURL(C.MVz.SETTING_UP_TWO_FACTOR)
+                    learnMoreLink: w.A.getArticleURL(y.MVz.SETTING_UP_TWO_FACTOR)
                 })
             }), (0, r.jsx)(d.Button, {
                 variant: "active",
@@ -153,11 +153,11 @@ class _ extends i.PureComponent {
 ${t}`
     }
 }
-let x = l.Ay.connectStores([w.default, g.A], () => {
-    let t = w.default.getCurrentUser();
+let b = l.Ay.connectStores([C.default, S.A], () => {
+    let t = C.default.getCurrentUser();
     return a()(null != t, "MFAEnableSuccess: currentUser cannot be undefined"), {
         currentUser: t,
-        backupCodes: g.A.getBackupCodes(),
-        hasSeenBackupPrompt: g.A.hasSeenBackupPrompt
+        backupCodes: S.A.getBackupCodes(),
+        hasSeenBackupPrompt: S.A.hasSeenBackupPrompt
     }
 })(_)

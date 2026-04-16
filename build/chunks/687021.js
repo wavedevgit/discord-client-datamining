@@ -1,7 +1,7 @@
 /** chunk id: 687021 params = (module,exports,require) **/
 a.d(t, {
-    A: () => A,
-    v: () => h
+    A: () => h,
+    v: () => A
 }), a(667532);
 var s = a(627968),
     r = a(64700),
@@ -18,7 +18,7 @@ var s = a(627968),
     f = a(985018),
     g = a(379464);
 
-function A(e) {
+function h(e) {
     let {
         guildId: t,
         className: a,
@@ -32,7 +32,7 @@ function A(e) {
         title: f.intl.string(f.t.ref7Ki),
         hideDivider: n,
         forcedDivider: !0,
-        children: (0, s.jsx)(h, {
+        children: (0, s.jsx)(A, {
             guildId: t,
             onChange: l,
             renderOptionSuffix: o,
@@ -41,40 +41,40 @@ function A(e) {
     })
 }
 
-function h(e) {
+function A(e) {
     let {
         guildId: t,
         globalOption: a,
         onChange: n,
         renderOptionSuffix: i
-    } = e, c = (0, l.bG)([u.A], () => u.A.showNotice()), A = (0, l.bG)([m.Ay], () => m.Ay.getFlattenedGuildIds()), h = (0, l.bG)([p.A], () => p.A.getGuilds()), R = r.useMemo(() => {
-        let e = A.map(e => {
-            let t = h[e];
+    } = e, c = (0, l.bG)([u.A], () => u.A.showNotice()), h = (0, l.bG)([m.Ay], () => m.Ay.getFlattenedGuildIds()), A = (0, l.bG)([p.A], () => p.A.getGuilds()), x = r.useMemo(() => {
+        let e = h.map(e => {
+            let t = A[e];
             return null == t ? null : {
                 label: t.name,
                 value: t.id
             }
         }).filter(b.Vq);
         return null != a && e.unshift(a), e
-    }, [A, h, a]), x = r.useCallback(e => {
+    }, [h, A, a]), R = r.useCallback(e => {
         let t = e?.label === a?.label && e?.value === a?.value;
         return null == e || "" === e.value || t ? null : (0, s.jsx)(d.Ay, {
             className: g.c,
-            guild: h[e.value],
+            guild: A[e.value],
             size: d.Ay.Sizes.SMOL,
             active: !0
         })
-    }, [h, a]);
+    }, [A, a]);
     return (0, s.jsx)(o.p, {
         isDisabled: c,
         onChange: e => {
             if ("" === e || e === a?.value) return void n(null);
-            let t = h[e];
+            let t = A[e];
             null != t && n(t)
         },
         value: t,
-        options: R,
-        renderOptionPrefix: x,
+        options: x,
+        renderOptionPrefix: R,
         renderOptionSuffix: i,
         placeholder: f.intl.string(f.t["kMgj+e"]),
         "data-migration-pending": !0

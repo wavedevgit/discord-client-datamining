@@ -31,8 +31,8 @@ var r = n(503698),
     j = n(371764),
     S = n(130946),
     M = n(103411),
-    P = n(534217),
-    y = n(65470),
+    y = n(534217),
+    P = n(65470),
     O = n(792656),
     D = n(511484),
     L = n(939724),
@@ -125,7 +125,7 @@ let X = e => {
             promotionBannerMarketingComponentFields: v.properties.properties.marketingPageBanner
         }) : r ? M = (0, i.jsx)(S.A, {
             variant: S.c.SUBSCRIBER_HOME
-        }) : l ? M = (0, i.jsx)(B.A, {}) : c && (M = (0, i.jsx)(P.S, {}));
+        }) : l ? M = (0, i.jsx)(B.A, {}) : c && (M = (0, i.jsx)(y.S, {}));
         let k = (0, o.bG)([h.A], () => h.A.getPremiumTypeSubscription()),
             w = null != k && k.status === F.Dmq.CANCELED && null != b,
             K = (0, I.V)(),
@@ -196,7 +196,7 @@ let X = e => {
                                 })
                             })
                         }
-                    }), (0, i.jsx)(y.A, {
+                    }), (0, i.jsx)(P.A, {
                         variant: ee || w ? "secondary" : "expressive",
                         size: "md",
                         buttonTextOverride: Y.intl.string(Y.t["3KomGa"])

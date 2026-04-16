@@ -38,32 +38,32 @@ let m = r.forwardRef(function(e, t) {
         className: b,
         errors: f,
         disabled: g = !1,
-        hideDivider: A = !1,
-        showBorder: h = !1,
-        borderType: R,
-        hasBackground: x = !1,
+        hideDivider: h = !1,
+        showBorder: A = !1,
+        borderType: x,
+        hasBackground: R = !1,
         forcedDivider: v = !1,
-        showPremiumIcon: E = !1
+        showPremiumIcon: y = !1
     } = e;
     return (0, s.jsx)("div", {
         className: i()(u.fz, b, {
             [u.r9]: g,
-            [u.Ai]: A,
-            [u.Ac]: h,
+            [u.Ai]: h,
+            [u.Ac]: A,
             [u.Cx]: v
         }),
         ref: t,
         children: (0, s.jsxs)(c.A, {
             className: u.D6,
             backgroundClassName: u.fr,
-            isShown: h,
-            type: R,
-            hasBackground: x,
+            isShown: A,
+            type: x,
+            hasBackground: R,
             children: [(0, s.jsxs)(l.zEo, {
                 className: u.DD,
                 id: n,
                 "data-migration-pending": !0,
-                children: [a, E && (0, s.jsx)(d.A, {
+                children: [a, y && (0, s.jsx)(d.A, {
                     size: "xs"
                 }), r]
             }), null != o ? (0, s.jsx)(l.ayl, {

@@ -1,12 +1,10 @@
-/** chunk id: 358776, original params: e,t,n (module,exports,require) **/
-"use strict";
+/** chunk id: 358776 params = (module,exports,require) **/
 n.d(t, {
-    WJ: () => o,
-    dk: () => a
+    _A: () => s,
+    pC: () => l
 });
-var r = n(945810);
-let i = (0, r.mj)({
-        name: "2025-12-user-settings-redesign-3",
+let i = (0, n(945810).mj)({
+        name: "2026-02-user-settings-redesign-4b",
         kind: "user",
         defaultConfig: {
             enabled: !1
@@ -20,38 +18,9 @@ let i = (0, r.mj)({
             }
         }
     }),
-    a = e => i.useConfig({
+    s = e => i.useConfig({
         location: e
     }).enabled,
-    o = e => i.getConfig({
+    l = e => i.getConfig({
         location: e
-    }).enabled;
-(0, r.mj)({
-    name: "2026-02-user-settings-redesign-4a",
-    kind: "user",
-    defaultConfig: {
-        enabled: !1
-    },
-    variations: {
-        0: {
-            enabled: !1
-        },
-        1: {
-            enabled: !0
-        }
-    }
-}), (0, r.mj)({
-    name: "2026-02-user-settings-redesign-4b",
-    kind: "user",
-    defaultConfig: {
-        enabled: !1
-    },
-    variations: {
-        0: {
-            enabled: !1
-        },
-        1: {
-            enabled: !0
-        }
-    }
-})
+    }).enabled

@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(234419),
     m = n(915516),
     p = n(788868),
-    E = n(985018),
-    S = n(386667);
+    S = n(985018),
+    E = n(386667);
 
 function _(e) {
     let {
@@ -31,15 +31,15 @@ function _(e) {
     } = e, _ = s.useMemo(() => Date.parse(n), [n]), g = (0, c.A)(_, 6e4);
     if (Object.values(g).every(e => 0 === e)) return null;
     let x = (0, i.jsxs)("div", {
-        className: l()(S.Fg, S.C8, u, {
-            [S.WO]: t
+        className: l()(E.Fg, E.C8, u, {
+            [E.WO]: t
         }),
         children: [(0, i.jsx)(a.O4, {
             size: "custom",
             width: 16,
             height: 16,
             color: "currentColor",
-            className: S._q
+            className: E._q
         }), (0, i.jsx)(a.Text, {
             variant: "eyebrow",
             color: "text-strong",
@@ -48,9 +48,9 @@ function _(e) {
     });
     return p ? x : (0, i.jsx)(o.m, {
         text: null != h ? h : (0, d.uN)(g, {
-            days: E.t.qVGNkU,
-            hours: E.t.wyg9a9,
-            minutes: E.t.IzmIlV
+            days: S.t.qVGNkU,
+            hours: S.t.wyg9a9,
+            minutes: S.t.IzmIlV
         }),
         position: null != m ? m : "top",
         children: x
@@ -80,12 +80,12 @@ function x(e) {
         isTabSelected: t,
         userDiscount: n,
         includesAmountOff: s
-    } = e, r = E.intl.formatToPlainString(E.t.iiLbvu, {
+    } = e, r = S.intl.formatToPlainString(S.t.iiLbvu, {
         percent: n.discount.amount
     }), l = (0, m.__)(n);
     return (0, i.jsx)(f, {
         isTabSelected: t,
-        badgeCopy: s ? r : E.intl.string(E.t["/DTtr6"]),
+        badgeCopy: s ? r : S.intl.string(S.t["/DTtr6"]),
         offerExpiresAt: n.expires_at,
         tooltipTextOverride: l,
         tooltipPosition: "right"
@@ -109,10 +109,10 @@ function f(e) {
         tooltipPosition: o,
         hideTooltip: c
     }) : (0, i.jsx)("div", {
-        className: l()(S.Fg, S.AT),
+        className: l()(E.Fg, E.AT),
         children: (0, i.jsx)(a.Text, {
             variant: "eyebrow",
-            className: S.md,
+            className: E.md,
             children: n
         })
     })

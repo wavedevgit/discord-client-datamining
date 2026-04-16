@@ -1,6 +1,6 @@
 /** chunk id: 917448 params = (module,exports,require) **/
 n.d(t, {
-    w: () => g
+    w: () => m
 });
 var i = n(311907),
     s = n(955572),
@@ -9,16 +9,15 @@ var i = n(311907),
     a = n(259065),
     o = n(419954),
     d = n(780964),
-    c = n(358776),
-    u = n(985018),
-    m = n(864386);
-let g = (0, o.zD)(d.X.DISPLAY_NAME_STYLES, {
-    useTitle: () => u.intl.string(m.default["2gFUEw"]),
+    c = n(985018),
+    u = n(864386);
+let m = (0, o.zD)(d.X.DISPLAY_NAME_STYLES, {
+    useTitle: () => c.intl.string(u.default["2gFUEw"]),
     useSubtitle: () => {
         let {
             analyticsLocations: e
-        } = (0, r.Ay)(), t = (0, c.bp)("DisplayNameStyles");
-        return u.intl.format(t ? m.default.aEax6P : m.default.L8U56h, {
+        } = (0, r.Ay)();
+        return c.intl.format(u.default.aEax6P, {
             onClickOpenModal() {
                 (0, a.L)({
                     analyticsLocations: e

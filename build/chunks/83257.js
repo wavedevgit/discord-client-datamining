@@ -17,8 +17,8 @@ var i = n(627968),
     h = n(728458),
     m = n(820284),
     p = n(361739),
-    E = n(652215),
-    S = n(985018),
+    S = n(652215),
+    E = n(985018),
     _ = n(999026);
 let g = Object.freeze({
         shouldPreventNavigation: !1,
@@ -40,7 +40,7 @@ function v(e) {
         name: t?.impressionName,
         properties: t?.impressionProperties
     });
-    let l = t?.element ?? E.FXj,
+    let l = t?.element ?? S.FXj,
         a = t?.elementProps ?? {};
     return (0, i.jsx)(m.A, {
         section: t.section,
@@ -58,7 +58,7 @@ class A extends s.PureComponent {
     scrollerRef = s.createRef();
     state = {
         ...g,
-        sidebarOpen: this.props.section !== E.nc_.SUBSCRIPTIONS && this.props.section !== E.nc_.PROFILE_CUSTOMIZATION
+        sidebarOpen: this.props.section !== S.nc_.SUBSCRIPTIONS && this.props.section !== S.nc_.PROFILE_CUSTOMIZATION
     };
     componentDidMount() {
         this.getPredicateSections().forEach(e => {
@@ -98,10 +98,10 @@ class A extends s.PureComponent {
         } = this.props, {
             notice: t
         } = this.getPredicateSections().find(t => e === t.section) ?? {};
-        return null != t && t.stores.some(e => e.showNotice() && !(null != e.canCloseEarly && e.canCloseEarly())) ? (u._.dispatch(E.jej.SHAKE_APP, {
+        return null != t && t.stores.some(e => e.showNotice() && !(null != e.canCloseEarly && e.canCloseEarly())) ? (u._.dispatch(S.jej.SHAKE_APP, {
             duration: 300,
             intensity: this._intensity
-        }), this._intensity = Math.min(this._intensity + N, f), u._.dispatch(E.jej.EMPHASIZE_NOTICE), !1) : (this._intensity = x, !0)
+        }), this._intensity = Math.min(this._intensity + N, f), u._.dispatch(S.jej.EMPHASIZE_NOTICE), !1) : (this._intensity = x, !0)
     }
     handleSetSection = e => {
         let {
@@ -156,11 +156,11 @@ class A extends s.PureComponent {
             color: "text-muted",
             children: e.decoration
         }) : null != n && p?.includes(n) && !t ? x = m ?? (0, i.jsx)(l.LpS, {
-            text: S.intl.string(S.t.y2b7CA)
+            text: E.intl.string(E.t.y2b7CA)
         }) : null != u ? x = u : null != g && g > 0 && (x = (0, i.jsx)(l.hVq, {
             count: g
         }));
-        let f = s === E.nc_.PREMIUM ? (0, i.jsx)(d.A, {
+        let f = s === S.nc_.PREMIUM ? (0, i.jsx)(d.A, {
             label: r,
             isSelected: t,
             decoration: x
@@ -203,7 +203,7 @@ class A extends s.PureComponent {
                             case p.Fq.DIVIDER:
                                 return (0, i.jsx)(l.VQ0.Separator, {}, t);
                             case p.Fq.CUSTOM:
-                                let n = e.element ?? E.FXj;
+                                let n = e.element ?? S.FXj;
                                 return (0, i.jsx)(n, {}, t);
                             default:
                                 return this.renderSettingsSectionTabBarItem(e, r === e.section, s)

@@ -2,8 +2,7 @@
 n.d(t, {
     Ix: () => k,
     J3: () => P,
-    Q3: () => V,
-    mx: () => B
+    mx: () => V
 });
 var i = n(627968),
     s = n(64700),
@@ -147,13 +146,8 @@ function w() {
         })]
     })
 }
-let V = () => (0, l.bG)([g.A], () => g.A.isPreview) ? null : (0, i.jsx)(o.Button, {
-    variant: "primary",
-    text: R.intl.string(R.t.qYXrkX),
-    onClick: P
-});
 
-function B(e) {
+function V(e) {
     let {
         size: t
     } = e;

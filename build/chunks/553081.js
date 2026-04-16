@@ -31,8 +31,8 @@ var i = n(627968),
     j = n(518491),
     S = n(965591),
     M = n(495022),
-    P = n(382694),
-    y = n(235365),
+    y = n(382694),
+    P = n(235365),
     O = n(994763),
     D = n(788868),
     L = n(652215),
@@ -107,11 +107,11 @@ let G = "perk",
                             userDiscountOffer: J,
                             discountedPrice: er
                         })
-                    }), (0, i.jsx)(P.A, {
+                    }), (0, i.jsx)(y.A, {
                         glowingPerkId: K
                     }), (0, i.jsx)(I.A, {
                         glowingSectionId: X
-                    }), null != F && Y && (0, i.jsx)(y.A, {
+                    }), null != F && Y && (0, i.jsx)(P.A, {
                         location: _.A.PREMIUM_MARKETING_NITRO_HOME_ORBS_SECTION
                     }), (0, i.jsx)(M.A, {
                         glowingPerkId: K
