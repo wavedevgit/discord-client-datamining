@@ -3,28 +3,28 @@ n.d(t, {
     A: () => s
 });
 var i = n(562465),
-    l = n(73153),
-    r = n(652215);
+    r = n(73153),
+    l = n(652215);
 let s = {
     async fetch() {
         try {
             let e = await i.Bo.get({
-                url: r.Rsh.FRIEND_SUGGESTIONS,
+                url: l.Rsh.FRIEND_SUGGESTIONS,
                 rejectWithError: !0
             });
-            l.h.dispatch({
+            r.h.dispatch({
                 type: "LOAD_FRIEND_SUGGESTIONS_SUCCESS",
                 suggestions: e.body
             })
         } catch (e) {
-            l.h.dispatch({
+            r.h.dispatch({
                 type: "LOAD_FRIEND_SUGGESTIONS_FAILURE"
             })
         }
     },
     ignore(e) {
         i.Bo.del({
-            url: r.Rsh.FRIEND_SUGGESTION(e),
+            url: l.Rsh.FRIEND_SUGGESTION(e),
             rejectWithError: !0
         })
     }

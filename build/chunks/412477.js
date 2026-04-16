@@ -3,20 +3,20 @@ n.d(t, {
     g: () => d
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(503698),
-    s = n.n(r),
+    r = n(64700),
+    l = n(503698),
+    s = n.n(l),
     a = n(990078),
     o = n(397927),
     u = n(369826);
-let d = l.memo(function(e) {
+let d = r.memo(function(e) {
     let {
         emptyText: t,
         icon: n,
-        absolute: l = !1
+        absolute: r = !1
     } = e;
     return (0, i.jsx)("div", {
-        className: s()(u.TP, l && u.ys),
+        className: s()(u.TP, r && u.ys),
         children: (0, i.jsx)(a.m, {
             text: t,
             children: (0, i.jsx)("div", {

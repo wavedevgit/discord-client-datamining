@@ -1,56 +1,56 @@
 /** chunk id: 77555 params = (module,exports,require) **/
 a.d(t, {
-    z: () => c
+    z: () => A
 });
-var n = a(627968),
-    r = a(64700),
+var s = a(627968),
+    n = a(64700),
     l = a(837381),
-    s = a(397927),
-    o = a(928039),
-    i = a(61916);
+    r = a(397927),
+    i = a(928039),
+    _ = a(61916);
 
-function c(e) {
+function A(e) {
     let {
         rowData: t,
         message: a,
-        originChannel: c,
-        selectedDestinations: u,
-        handleToggleDestination: d,
-        disableSelection: _,
-        rowClassName: h,
-        ...p
+        originChannel: A,
+        selectedDestinations: o,
+        handleToggleDestination: u,
+        disableSelection: c,
+        rowClassName: d,
+        ...h
     } = e, {
-        sections: f,
-        sectionHeight: g,
+        sections: I,
+        sectionHeight: E,
         renderRow: C,
-        rowHeight: b
-    } = (0, i.s)({
+        rowHeight: L
+    } = (0, _.s)({
         rowData: t,
         message: a,
-        originChannel: c,
-        selectedDestinations: u,
-        handleToggleDestination: d,
-        disableSelection: _,
-        rowClassName: h
-    }), m = r.useRef(null), x = (0, o.A)("forward-modal", m);
-    return (0, n.jsx)(l.hD, {
-        navigator: x,
-        children: (0, n.jsx)(l.PR, {
+        originChannel: A,
+        selectedDestinations: o,
+        handleToggleDestination: u,
+        disableSelection: c,
+        rowClassName: d
+    }), N = n.useRef(null), b = (0, i.A)("forward-modal", N);
+    return (0, s.jsx)(l.hD, {
+        navigator: b,
+        children: (0, s.jsx)(l.PR, {
             children: e => {
                 let {
                     ref: t,
                     ...a
                 } = e;
-                return (0, n.jsx)(s.OZj, {
+                return (0, s.jsx)(r.OZj, {
                     ref: e => {
-                        m.current = e, t.current = e?.getScrollerNode() ?? null
+                        N.current = e, t.current = e?.getScrollerNode() ?? null
                     },
                     ...a,
-                    ...p,
-                    sections: f,
-                    sectionHeight: g,
+                    ...h,
+                    sections: I,
+                    sectionHeight: E,
                     renderRow: C,
-                    rowHeight: b
+                    rowHeight: L
                 })
             }
         })

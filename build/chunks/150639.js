@@ -31,8 +31,8 @@ let _ = e => ({
             isEmojiAnimated: v,
             label: I,
             required: A,
-            errorMessage: S
-        } = e, N = (0, a.cf)([c.A, m.Ay], () => Object.fromEntries(m.Ay.getFlattenedGuildIds().map(e => c.A.getGuild(e)).filter(h.Vq).map(e => [e.id, e]))), p = (0, a.cf)([s.Ay], () => Object.fromEntries(Object.entries(N).map(e => {
+            errorMessage: N
+        } = e, S = (0, a.cf)([c.A, m.Ay], () => Object.fromEntries(m.Ay.getFlattenedGuildIds().map(e => c.A.getGuild(e)).filter(h.Vq).map(e => [e.id, e]))), p = (0, a.cf)([s.Ay], () => Object.fromEntries(Object.entries(S).map(e => {
             let [t, l] = e;
             return [t, function(e) {
                 let {
@@ -46,7 +46,7 @@ let _ = e => ({
                 emojis: s.Ay.getGuildEmoji(t),
                 isEmojiAnimated: v
             })]
-        })), [N, v]), O = i.useMemo(() => Object.values(N).filter(b).map(_), [N]), C = i.useCallback(e => {
+        })), [S, v]), O = i.useMemo(() => Object.values(S).filter(b).map(_), [S]), C = i.useCallback(e => {
             let {
                 value: t,
                 label: l,
@@ -59,7 +59,7 @@ let _ = e => ({
                 disabled: i,
                 leading: (e => {
                     if (null == e.value) return null;
-                    let t = N[e.value];
+                    let t = S[e.value];
                     return null == t ? null : (0, n.jsx)(u.Ay, {
                         guild: t,
                         size: u.Ay.Sizes.SMALLER,
@@ -70,14 +70,14 @@ let _ = e => ({
                     count: p[e.value]
                 })
             }
-        }, [p, N]);
+        }, [p, S]);
         return i.useEffect(() => {
             O.length < 1 ? d(x.j.NO_PERMISSIONS) : null != l && (p?.[l] ?? 0) < 1 ? d(j.t02.TOO_MANY_EMOJI) : d(null)
         }, [O, t, d, l, p]), (0, n.jsx)(r.l6P, {
             label: I,
             required: A,
             selectionMode: "single",
-            errorMessage: S,
+            errorMessage: N,
             onSelectionChange: t,
             options: O,
             formatOption: C,

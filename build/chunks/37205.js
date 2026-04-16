@@ -73,12 +73,12 @@ function Q(e) {
                 currentUserId: t,
                 author: n,
                 voiceStates: i
-            } = e, a = n.id === t, l = i.length > 0, s = i.length;
+            } = e, a = n.id === t, l = i.length > 0, s = i.some(e => e.user?.id === n.id), r = i.length - !!s;
             return l ? {
                 label: a ? z.intl.format(z.t["2RWMFV"], {
-                    othersCount: s
+                    othersCount: r
                 }) : z.intl.format(z.t.Da7tZx, {
-                    othersCount: s
+                    othersCount: r
                 })
             } : {
                 label: a ? z.intl.string(z.t.DVDvCD) : z.intl.string(z.t.TY77rq),

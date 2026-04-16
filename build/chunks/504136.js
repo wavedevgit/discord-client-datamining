@@ -84,20 +84,20 @@ function h(e) {
             content: L.message,
             groupId: L.message.id
         });
-        let D = b?.type === u.TZK.MESSAGE ? h : b;
-        (0, o.l)(m, D, e) && (n = e.id);
-        let O = {
+        let O = b?.type === u.TZK.MESSAGE ? h : b;
+        (0, o.l)(m, O, e) && (n = e.id);
+        let D = {
             type: e.type === u.lAJ.THREAD_STARTER_MESSAGE ? u.TZK.THREAD_STARTER_MESSAGE : u.TZK.MESSAGE,
             content: e,
             groupId: n
         };
-        n === e.id && (h = O);
+        n === e.id && (h = D);
         let {
             jumpSequenceId: P,
-            jumpFlash: k,
-            jumpTargetId: w
+            jumpFlash: w,
+            jumpTargetId: U
         } = A;
-        k && e.id === w && null != P && (O.flashKey = P), A.jumpTargetId === e.id && (O.jumpTarget = !0), null != f && e.id === f.startId && f.count > 1 && C.push({
+        w && e.id === U && null != P && (D.flashKey = P), A.jumpTargetId === e.id && (D.jumpTarget = !0), null != f && e.id === f.startId && f.count > 1 && C.push({
             type: u.TZK.DIVIDER,
             content: f.topic,
             contentKey: f.startId,
@@ -107,7 +107,7 @@ function h(e) {
             content: (0, l.u)(E),
             contentKey: `conv-start-${E.id}`,
             isConversationDivider: !0
-        }), null !== j ? (j.content.push(O), O.jumpTarget && (j.hasJumpTarget = !0)) : C.push(O), e.isFirstMessageInForumPost(m) && C.push({
+        }), null !== j ? (j.content.push(D), D.jumpTarget && (j.hasJumpTarget = !0)) : C.push(D), e.isFirstMessageInForumPost(m) && C.push({
             type: u.TZK.FORUM_POST_ACTION_BAR
         }), null != L && "after" === L.position && C.push({
             type: u.TZK.MESSAGE,

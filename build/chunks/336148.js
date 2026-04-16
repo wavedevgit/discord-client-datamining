@@ -4,8 +4,8 @@ n.d(t, {
     X6: () => c
 });
 var i = n(311907),
-    l = n(680049),
-    r = n(827734),
+    r = n(680049),
+    l = n(827734),
     s = n(21119),
     a = n(994500),
     o = n(741961),
@@ -27,35 +27,35 @@ function h(e) {
     return (0, i.bG)([o.A, u.default, a.A, s.A], () => {
         if (null == e) return null;
         switch (function(e, t) {
-                let [n, i, l, r] = t;
+                let [n, i, r, l] = t;
                 if (null == e) return "NONE";
                 let s = function(e, t, n) {
-                    let [i] = n, l = i.getTypingUsers(e.id);
-                    for (let e in l)
+                    let [i] = n, r = i.getTypingUsers(e.id);
+                    for (let e in r)
                         if (e !== t) return e;
                     return null
                 }(e, i.getCurrentUser()?.id ?? null, [n]);
                 return null == s ? "NONE" : function(e, t) {
                     let [n, i] = t;
                     if (n.isFriend(e)) return "FRIEND";
-                    let l = i.getUserAffinity(e),
-                        r = l?.communicationProbability ?? 0;
-                    return r >= d.u.HIGH_AFFINITY_MINIMUM ? "HIGH_AFFINITY" : r > 0 ? "LOW_AFFINITY" : "NONE"
-                }(s, [l, r])
+                    let r = i.getUserAffinity(e),
+                        l = r?.communicationProbability ?? 0;
+                    return l >= d.u.HIGH_AFFINITY_MINIMUM ? "HIGH_AFFINITY" : l > 0 ? "LOW_AFFINITY" : "NONE"
+                }(s, [r, l])
             }(e, [o.A, u.default, a.A, s.A])) {
             case "FRIEND":
-                return r.A.colors.STATUS_ONLINE.resolve({
-                    theme: l.NJ.DARK,
+                return l.A.colors.STATUS_ONLINE.resolve({
+                    theme: r.NJ.DARK,
                     saturation: 1
                 }).hex();
             case "HIGH_AFFINITY":
-                return r.A.colors.STATUS_ONLINE.resolve({
-                    theme: l.NJ.DARK,
+                return l.A.colors.STATUS_ONLINE.resolve({
+                    theme: r.NJ.DARK,
                     saturation: .7
                 }).hex();
             case "LOW_AFFINITY":
-                return r.A.colors.STATUS_ONLINE.resolve({
-                    theme: l.NJ.DARK,
+                return l.A.colors.STATUS_ONLINE.resolve({
+                    theme: r.NJ.DARK,
                     saturation: .4
                 }).hex();
             default:

@@ -32,12 +32,12 @@ var i = n(627968),
     R = n(85109),
     M = n(406704),
     L = n(253932),
-    D = n(961350),
-    O = n(580745),
+    O = n(961350),
+    D = n(580745),
     P = n(71393),
-    k = n(834942),
-    w = n(576705),
-    U = n(954571),
+    w = n(834942),
+    U = n(576705),
+    k = n(954571),
     G = n(957565),
     F = n(690521),
     H = n(403362),
@@ -160,7 +160,7 @@ function es(e) {
         canViewThread: v,
         canForward: N,
         canManageOfficialMessages: y,
-        isGuildOfficial: O,
+        isGuildOfficial: D,
         isExpanded: F,
         showMoreUtilities: H,
         showEmojiPicker: Z,
@@ -181,15 +181,15 @@ function es(e) {
             isFocused: o
         } = e, {
             author: u
-        } = n, h = (0, d.bG)([P.A], () => P.A.getGuild(t.guild_id), [t.guild_id]), m = (0, d.bG)([D.default], () => D.default.getId()), _ = (0, M.Id)(t), p = (0, M.s5)(t), {
+        } = n, h = (0, d.bG)([P.A], () => P.A.getGuild(t.guild_id), [t.guild_id]), m = (0, d.bG)([O.default], () => O.default.getId()), _ = (0, M.Id)(t), p = (0, M.s5)(t), {
             firstMessage: f
-        } = (0, d.bG)([E.A], () => E.A.getMessage(t.id), [t.id]), x = L.jW.useSetting(), S = L.Q_.useSetting(), I = (0, d.bG)([k.A], () => null == t.guild_id || k.A.canChatInGuild(t.guild_id), [t]), {
+        } = (0, d.bG)([E.A], () => E.A.getMessage(t.id), [t.id]), x = L.jW.useSetting(), S = L.Q_.useSetting(), I = (0, d.bG)([w.A], () => null == t.guild_id || w.A.canChatInGuild(t.guild_id), [t]), {
             canManageMessages: v,
             canAddNewReactions: N
-        } = (0, d.cf)([w.A], () => ({
-            canAddNewReactions: I && w.A.can(X.xBc.ADD_REACTIONS, t),
-            canManageMessages: w.A.can(X.xBc.MANAGE_MESSAGES, t)
-        }), [t, I]), y = (0, b.u)(t, n), O = (0, M.n)(t, n), U = (0, M.R)(n), F = (0, d.bG)([T.A], () => null != t.guild_id && T.A.isLurking(t.guild_id), [t]), H = u.id === m, J = (v || n.canDeleteOwnMessage(m)) && _ && !X.MRS.UNDELETABLE.has(n.type);
+        } = (0, d.cf)([U.A], () => ({
+            canAddNewReactions: I && U.A.can(X.xBc.ADD_REACTIONS, t),
+            canManageMessages: U.A.can(X.xBc.MANAGE_MESSAGES, t)
+        }), [t, I]), y = (0, b.u)(t, n), D = (0, M.n)(t, n), k = (0, M.R)(n), F = (0, d.bG)([T.A], () => null != t.guild_id && T.A.isLurking(t.guild_id), [t]), H = u.id === m, J = (v || n.canDeleteOwnMessage(m)) && _ && !X.MRS.UNDELETABLE.has(n.type);
         n.type === X.lAJ.AUTO_MODERATION_ACTION && (J = J && v), t.isModeratorReportChannel() && (J = J && n.id !== f?.id && !(0, z.A)(n));
         let q = (0, B.ul)(n),
             $ = (0, K.A)(n, t),
@@ -206,7 +206,7 @@ function es(e) {
             }),
             ee = t.type === X.rbe.GUILD_ANNOUNCEMENT && null != h && h.features.has(X.GuildFeatures.NEWS) && (H || v) && (0, g.A)(n),
             et = t.getGuildId(),
-            en = null != et && n.type === X.lAJ.USER_JOIN && w.A.canWithPartialContext(X.xBc.MANAGE_GUILD, {
+            en = null != et && n.type === X.lAJ.USER_JOIN && U.A.canWithPartialContext(X.xBc.MANAGE_GUILD, {
                 guildId: et
             }),
             ei = (0, C.m)(n),
@@ -228,8 +228,8 @@ function es(e) {
             canDelete: J,
             canReport: q,
             canReply: y,
-            canStartThread: O,
-            canViewThread: U,
+            canStartThread: D,
+            canViewThread: k,
             canForward: ei,
             canManageOfficialMessages: el,
             isGuildOfficial: ea,
@@ -248,7 +248,7 @@ function es(e) {
             isFocused: o
         }
     }(e), er = l.useRef(null), eo = l.useCallback(() => {
-        H || U.default.track(X.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
+        H || k.default.track(X.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
             message_id: n.id,
             channel: n.channel_id,
             location: "expanding_buttons"
@@ -330,9 +330,9 @@ function es(e) {
             icon: u.ysw,
             onClick: () => (0, q.mF)(t, n)
         }, "view-thread") : null, y ? (0, i.jsx)(J.qv, {
-            label: O ? ee.intl.string(ee.t["2km5Gf"]) : ee.intl.string(ee.t["lE/PG3"]),
-            icon: O ? u.$pZ : u.LV2,
-            onClick: () => h.A.patchMessageGuildOfficial(t.id, n.id, !O)
+            label: D ? ee.intl.string(ee.t["2km5Gf"]) : ee.intl.string(ee.t["lE/PG3"]),
+            icon: D ? u.$pZ : u.LV2,
+            onClick: () => h.A.patchMessageGuildOfficial(t.id, n.id, !D)
         }, "guild-official") : null, _ ? (0, i.jsx)(J.qv, {
             label: eh ? ee.intl.string(ee.t["1kWJAr"]) : ee.intl.string(ee.t.MFGE51),
             icon: u.koX,
@@ -465,7 +465,7 @@ let ed = l.memo(function(e) {
         message: n,
         isHeader: l,
         isReply: a
-    } = e, r = (0, d.bG)([O.A], () => O.A.isEditing(t.id, n.id), [t.id, n.id]), o = function(e) {
+    } = e, r = (0, d.bG)([D.A], () => D.A.isEditing(t.id, n.id), [t.id, n.id]), o = function(e) {
         let {
             channel: t,
             message: n

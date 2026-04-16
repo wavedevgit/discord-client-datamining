@@ -3,9 +3,9 @@ n.d(t, {
     A: () => E
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(503698),
-    s = n.n(r),
+    r = n(64700),
+    l = n(503698),
+    s = n.n(l),
     a = n(311907),
     o = n(990078),
     u = n(397927),
@@ -22,38 +22,38 @@ function E(e) {
     let {
         locked: t,
         pinned: n,
-        anchorLeft: r
+        anchorLeft: l
     } = e, E = (0, a.bG)([h.A], () => h.A.getSocket()), p = (0, a.bG)([f.A], () => f.A.isGPUBoosted());
     (0, c.ZX)();
     let _ = (0, a.bG)([g.A], () => g.A.getWindow(A.f)),
         [S, x] = (0, c.DQ)(E),
         {
             currentFPS: T,
-            averageFrameTime: N,
-            timeSinceLastDrop: C,
+            averageFrameTime: C,
+            timeSinceLastDrop: N,
             onResetFrameData: v,
             droppedFramesRef: y,
             renderedFrameCount: M,
-            bufferFramecountRef: R,
-            frameCheckerEffect: D
+            bufferFramecountRef: b,
+            frameCheckerEffect: R
         } = (0, c.Dj)(!0, S, !0),
-        [b, O, w] = (0, c.F5)(E),
-        [j, U] = (0, c.km)(b, D, _),
-        L = performance.now() - x.current < c.Jc,
-        k = O(N, R.current);
+        [D, O, w] = (0, c.F5)(E),
+        [j, k] = (0, c.km)(D, R, _),
+        U = performance.now() - x.current < c.Jc,
+        L = O(C, b.current);
     (0, d.Ay)(() => (j(), () => {
-        U()
+        k()
     }));
-    let G = l.useCallback(() => {
+    let G = r.useCallback(() => {
             v(), w(), j()
         }, [v, w, j]),
-        [P, F] = l.useState(!0),
-        [V, z] = l.useState(!0),
-        [H, Y] = l.useState(!0),
-        [W, B] = l.useState(!0),
-        [Z, X] = l.useState(!0);
+        [P, F] = r.useState(!0),
+        [V, z] = r.useState(!0),
+        [H, Y] = r.useState(!0),
+        [W, B] = r.useState(!0),
+        [Z, X] = r.useState(!0);
     return t && !n ? null : (0, i.jsxs)("div", {
-        className: s()(I.st, !r && I.Hk),
+        className: s()(I.st, !l && I.Hk),
         children: [(P || !t) && (0, i.jsxs)("div", {
             className: I.PG,
             children: [!t && (0, i.jsx)("div", {
@@ -88,8 +88,8 @@ function E(e) {
                 children: ["Frame Times:", " ", (0, i.jsxs)(u.Text, {
                     tag: "span",
                     variant: "code",
-                    color: N > 1.1 * c.L6 ? "text-feedback-warning" : "text-strong",
-                    children: [N.toFixed(2), "ms"]
+                    color: C > 1.1 * c.L6 ? "text-feedback-warning" : "text-strong",
+                    children: [C.toFixed(2), "ms"]
                 })]
             })]
         }), (H || !t) && (0, i.jsxs)("div", {
@@ -107,7 +107,7 @@ function E(e) {
                 children: ["Dropped Frames:", " ", (0, i.jsx)(u.Text, {
                     tag: "span",
                     variant: "code",
-                    color: C < 2 ? "text-feedback-critical" : C < 5 ? "text-feedback-warning" : "text-strong",
+                    color: N < 2 ? "text-feedback-critical" : N < 5 ? "text-feedback-warning" : "text-strong",
                     children: y.current
                 }), (0, i.jsxs)(u.Text, {
                     tag: "span",
@@ -155,13 +155,13 @@ function E(e) {
                         children: ["Idle Frame Delta:", " ", (0, i.jsxs)(u.Text, {
                             tag: "span",
                             variant: "code",
-                            color: k > 1 ? "text-feedback-critical" : "text-strong",
-                            children: [k.toFixed(2), "ms"]
+                            color: L > 1 ? "text-feedback-critical" : "text-strong",
+                            children: [L.toFixed(2), "ms"]
                         })]
                     })
                 })
             })]
-        }), L && (0, i.jsx)(o.m, {
+        }), U && (0, i.jsx)(o.m, {
             position: "left",
             text: "We don't track frames while the app is in the background, because requestAnimationFrame doesn't fire in the background",
             children: (0, i.jsx)("span", {

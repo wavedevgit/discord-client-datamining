@@ -297,10 +297,10 @@ let eB = (0, c.Fe)({
         ...e
     }),
     e1 = () => (0, i.jsx)(V.A, {}),
-    e7 = e => (0, i.jsx)(e6, {
+    e7 = e => (0, i.jsx)(e9, {
         ...e
     }),
-    e6 = e => {
+    e9 = e => {
         let {
             channelId: t,
             messageId: n
@@ -314,7 +314,7 @@ let eB = (0, c.Fe)({
             })
         }, [t, n]), null == t) ? (0, i.jsx)(er.A, {}) : e0(e)
     },
-    e9 = e => {
+    e6 = e => {
         let {
             match: t
         } = e;
@@ -730,7 +730,7 @@ function to() {
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
                                     path: ej.BVt.GUILD_MEMBER_VERIFICATION(eI.pv.guildId()),
-                                    render: e9,
+                                    render: e6,
                                     impressionName: d.ImpressionNames.GUILD_MEMBER_VERIFICATION,
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {

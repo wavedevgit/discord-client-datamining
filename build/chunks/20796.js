@@ -3,8 +3,8 @@ n.d(t, {
     B: () => f
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(808380),
+    r = n(64700),
+    l = n(808380),
     s = n(397927),
     a = n(429913),
     o = n(263577),
@@ -14,17 +14,17 @@ var i = n(627968),
     h = n(243612),
     g = n(70191);
 let m = {
-    [r.Y.XBOX]: c.A,
-    [r.Y.PLAYSTATION]: d.A
+    [l.Y.XBOX]: c.A,
+    [l.Y.PLAYSTATION]: d.A
 };
 
 function f(e) {
     let {
         activities: t,
         gameProfileEntry: n,
-        gameIconSize: r,
+        gameIconSize: l,
         platformIconSizePx: d
-    } = e, c = (0, h.b4)(), f = l.useMemo(() => {
+    } = e, c = (0, h.b4)(), f = r.useMemo(() => {
         let e = t.find(g.A);
         if (null != c) {
             let n = c.altId ?? c.id;
@@ -36,26 +36,26 @@ function f(e) {
         let {
             gameProfileEntry: t,
             gameApplication: n,
-            gameIconSize: l,
-            platformIconSizePx: r
+            gameIconSize: r,
+            platformIconSizePx: l
         } = e, a = t?.extra?.platform, d = null != a ? m[a] : null, c = null != d ? (0, i.jsx)(d, {
-            width: r,
-            height: r,
+            width: l,
+            height: l,
             color: s.LU0.colors.INTERACTIVE_ICON_DEFAULT
-        }) : null, h = n?.getIconURL(r), g = null != h ? (0, i.jsx)(o.V, {
+        }) : null, h = n?.getIconURL(l), g = null != h ? (0, i.jsx)(o.V, {
             src: h,
             alt: n?.name,
-            size: r
+            size: l
         }) : null;
         return (0, i.jsx)(u.A, {
             game: n,
-            size: l,
+            size: r,
             unknownGameIconFallback: c ?? g
         })
     }({
         gameProfileEntry: n,
         gameApplication: A,
-        gameIconSize: r,
+        gameIconSize: l,
         platformIconSizePx: d
     })
 }

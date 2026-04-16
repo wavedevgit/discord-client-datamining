@@ -34,12 +34,12 @@ var i = n(627968),
     R = n(245748),
     M = n(491182),
     L = n(860227),
-    D = n(112758),
-    O = n(516287),
+    O = n(112758),
+    D = n(516287),
     P = n(866897),
-    k = n(754459),
-    w = n(538355),
-    U = n(522871),
+    w = n(754459),
+    U = n(538355),
+    k = n(522871),
     G = n(699352),
     F = n(426153),
     H = n(444529),
@@ -73,7 +73,7 @@ function X(e) {
     } = (0, c.rm)(e.id ?? ""), h = (0, d.bG)([f.A], () => f.A.getMessageByReference(l)), {
         popouts: m,
         setPopout: A
-    } = (0, k.A)(n.id, Y.Fd), g = (0, j.Ay)(n), _ = (0, L.fF)(n), p = (0, L.ZD)(n);
+    } = (0, w.A)(n.id, Y.Fd), g = (0, j.Ay)(n), _ = (0, L.fF)(n), p = (0, L.ZD)(n);
     return n.type === J.lAJ.THREAD_STARTER_MESSAGE && null != h && h.state === f.a.LOADED ? (0, i.jsx)(Q, {
         ...e,
         viewingChannelId: n.channel_id,
@@ -126,16 +126,16 @@ function Q(e) {
     } = (0, c.rm)(e.id ?? ""), {
         isFocused: y,
         handleFocus: R,
-        handleBlur: U
-    } = (0, D.G8)(T), {
+        handleBlur: k
+    } = (0, O.G8)(T), {
         popouts: F,
         selected: H,
         setPopout: W
-    } = (0, k.A)(n.id, Y.Fd), Z = C.hD.useSetting(), X = C.rs.useSetting(), Q = (0, d.bG)([f.A], () => f.A.getMessageByReference(I)), ee = (0, _.S)((n.editedTimestamp ?? n.timestamp).valueOf()), {
+    } = (0, w.A)(n.id, Y.Fd), Z = C.hD.useSetting(), X = C.rs.useSetting(), Q = (0, d.bG)([f.A], () => f.A.getMessageByReference(I)), ee = (0, _.S)((n.editedTimestamp ?? n.timestamp).valueOf()), {
         handleMouseEnter: et,
         handleMouseLeave: en,
         isHovered: ei
-    } = (0, D.yp)({
+    } = (0, O.yp)({
         groupId: p,
         message: n,
         defaultValue: H
@@ -143,7 +143,7 @@ function Q(e) {
         content: eo,
         hasSpoilerEmbeds: ec,
         hasBailedAst: ed
-    } = (0, w.A)(n, {
+    } = (0, U.A)(n, {
         hideSimpleEmbedContent: Z && X,
         formatInline: !1,
         allowList: ee,
@@ -152,7 +152,7 @@ function Q(e) {
         allowDevLinks: er,
         previewLinkTarget: !0,
         viewingChannelId: x
-    }), eu = (0, P.A)(a, r, el), eh = (0, j.Ay)(n), em = (0, L.fF)(n, p), eA = (0, L.ZD)(n), eg = (0, i.jsx)(O.x, {
+    }), eu = (0, P.A)(a, r, el), eh = (0, j.Ay)(n), em = (0, L.fF)(n, p), eA = (0, L.ZD)(n), eg = (0, i.jsx)(D.x, {
         value: es,
         children: (0, V.A)(e, eo, !1)
     }), e_ = l.useCallback(() => (0, E.uh)(o, r, a), [o, r, a]), ep = (0, g.$7)({
@@ -182,7 +182,7 @@ function Q(e) {
             zalgo: !0,
             onKeyDown: eu,
             onFocus: R,
-            onBlur: U,
+            onBlur: k,
             childrenRepliedMessage: n.type === J.lAJ.REPLY && (0, K.A)({
                 ...e,
                 setPopout: W,
@@ -252,15 +252,15 @@ let ee = l.memo(function(e) {
             popouts: ec,
             selected: ed,
             setPopout: eu
-        } = (0, k.A)(r.id, Y.Fd),
-        eh = (0, D.VL)(r, y, eu),
-        em = (0, D.ri)(r, y),
+        } = (0, w.A)(r.id, Y.Fd),
+        eh = (0, O.VL)(r, y, eu),
+        em = (0, O.ri)(r, y),
         {
             handleMouseEnter: eA,
             handleMouseLeave: eg,
             hasHovered: e_,
             isHovered: ep
-        } = (0, D.yp)({
+        } = (0, O.yp)({
             groupId: et,
             message: r,
             defaultValue: ed
@@ -270,7 +270,7 @@ let ee = l.memo(function(e) {
             hasFocused: eE,
             handleFocus: eC,
             handleBlur: ex
-        } = (0, D.G8)(el),
+        } = (0, O.G8)(el),
         eS = l.useCallback(e => {
             eC(e), eA(e)
         }, [eC, eA]),
@@ -287,9 +287,9 @@ let ee = l.memo(function(e) {
         eM = (0, d.bG)([S.A], () => S.A.isDeveloper),
         {
             content: eL,
-            hasSpoilerEmbeds: eD,
-            hasBailedAst: eO
-        } = (0, w.A)(r, {
+            hasSpoilerEmbeds: eO,
+            hasBailedAst: eD
+        } = (0, U.A)(r, {
             hideSimpleEmbedContent: es && er,
             formatInline: !1,
             allowList: ej || eR,
@@ -299,27 +299,27 @@ let ee = l.memo(function(e) {
             previewLinkTarget: !0
         }),
         eP = (0, P.A)(E, Z, ev),
-        ek = (0, j.Ay)(r),
-        ew = (0, d.bG)([p.A], () => p.A.getPendingReply(Z)),
-        eU = (t = l.useRef(ee), l.useEffect(() => {
+        ew = (0, j.Ay)(r),
+        eU = (0, d.bG)([p.A], () => p.A.getPendingReply(Z)),
+        ek = (t = l.useRef(ee), l.useEffect(() => {
             t.current = ee ?? t.current
         }), ee ?? t.current),
         eG = (0, g.$7)({
             guildId: y.guild_id,
-            roleId: ek.iconRoleId
+            roleId: ew.iconRoleId
         }),
         eF = (0, m.A)(Z, E)?.color ?? null,
         eH = (0, L.fF)(r, et),
         eB = (0, L.ZD)(r),
         eV = (0, d.bG)([A.A], () => A.A.getMessage(E), [E]),
-        eW = (0, U.A)({
+        eW = (0, k.A)({
             message: r,
             channel: y
         }),
         eK = l.useRef(window),
         ez = null != eV,
         eY = (0, v.Nd)(y.guild_id, y, "ChatMessage");
-    n = r.type === J.lAJ.CUSTOM_GIFT ? "" : !eT && ez ? (0, F.A)(e, eL) : (0, V.A)(e, eL, eT), n = (0, i.jsx)(O.x, {
+    n = r.type === J.lAJ.CUSTOM_GIFT ? "" : !eT && ez ? (0, F.A)(e, eL) : (0, V.A)(e, eL, eT), n = (0, i.jsx)(D.x, {
         value: ey,
         children: n
     });
@@ -359,7 +359,7 @@ let ee = l.memo(function(e) {
                         [$.H4]: (0, b.A)(r),
                         [$._A]: !en && (eJ || r.type === J.lAJ.REPLY),
                         [$.wH]: eN,
-                        [$.$n]: ew?.message.id === r.id,
+                        [$.$n]: eU?.message.id === r.id,
                         [$.$w]: r.isCommandType() && r.state === J.cmJ.SENDING,
                         [$.DX]: ez
                     }),
@@ -379,14 +379,14 @@ let ee = l.memo(function(e) {
                         setPopout: eu,
                         messagePopouts: ec,
                         replyReference: ei,
-                        author: ek,
+                        author: ew,
                         repliedMessage: eo,
                         roleIcon: eG
                     }),
                     childrenAccessories: (0, G.A)({
                         channelMessageProps: e,
-                        hasSpoilerEmbeds: eD,
-                        hasBailedAst: eO,
+                        hasSpoilerEmbeds: eO,
+                        hasBailedAst: eD,
                         handleContextMenu: eh,
                         isInteracting: ey,
                         isAutomodBlockedMessage: ez,
@@ -409,12 +409,12 @@ let ee = l.memo(function(e) {
                     messageRef: e => {
                         eW.current = e, eK.current = e?.ownerDocument?.defaultView ?? window
                     },
-                    author: ek
+                    author: ew
                 })
             })
         });
-    return null != eU ? (0, i.jsx)(R.A, {
-        flashKey: eU,
+    return null != ek ? (0, i.jsx)(R.A, {
+        flashKey: ek,
         className: s()({
             [$.bB]: !0,
             [$._A]: !X && r.id === et

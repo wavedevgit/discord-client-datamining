@@ -1,7 +1,7 @@
 /** chunk id: 584777 params = (module,exports,require) **/
 let i;
 n.d(t, {
-    A: () => w
+    A: () => U
 }), n(321073);
 var l = n(311907),
     a = n(73153),
@@ -108,7 +108,7 @@ function R(e) {
             comparator: i
         })
     }
-    x = n, k.emitChange()
+    x = n, w.emitChange()
 }
 
 function M() {
@@ -120,12 +120,12 @@ function L(e) {
     f = !0, b(), i = M(), T = null, N("")
 }
 
-function D(e) {
+function O(e) {
     if (e.key !== p.TLS) return !1;
-    O()
+    D()
 }
 
-function O() {
+function D() {
     null != i && (i.destroy(), i = null), v()
 }
 class P extends l.Ay.Store {
@@ -155,7 +155,7 @@ class P extends l.Ay.Store {
         }
     }
 }
-let k = new P(a.h, {
+let w = new P(a.h, {
         CONNECTION_OPEN: function() {
             v()
         },
@@ -173,9 +173,9 @@ let k = new P(a.h, {
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
             f = !0, b(), i = M(), T = e.channelId, N("")
         },
-        MODAL_POP: D,
-        HIDE_ACTION_SHEET: D,
-        PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: O,
+        MODAL_POP: O,
+        HIDE_ACTION_SHEET: O,
+        PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: D,
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_QUERY: function(e) {
             T = e.channelId, N(e.query)
         },
@@ -195,4 +195,4 @@ let k = new P(a.h, {
             I.delete(t), I = new Set(I)
         }
     }),
-    w = k
+    U = w

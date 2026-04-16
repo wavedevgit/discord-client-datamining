@@ -3,8 +3,8 @@ n.d(t, {
     x: () => a
 });
 var i = n(141468),
-    l = n(383233),
-    r = n(222823),
+    r = n(383233),
+    l = n(222823),
     s = n(661191);
 class a {
     localNeeded = !0;
@@ -14,7 +14,7 @@ class a {
     }
     messageGeneration(e, t) {
         let n = this.messages.get(e);
-        return null == n ? -1 / 0 : n.generation !== t && null != n.message && n.message.id === r.Ay.lastMessageId(e) ? (this.messages.set(e, {
+        return null == n ? -1 / 0 : n.generation !== t && null != n.message && n.message.id === l.Ay.lastMessageId(e) ? (this.messages.set(e, {
             ...n,
             generation: t
         }), t) : n.generation
@@ -25,7 +25,7 @@ class a {
     }
     messageRecord(e) {
         let t = this.messages.get(e);
-        return null == t || null == t.message || t.message instanceof l.Ay || (t.message = (0, i.rh)(t.message)), t?.message ?? null
+        return null == t || null == t.message || t.message instanceof r.Ay || (t.message = (0, i.rh)(t.message)), t?.message ?? null
     }
     has(e) {
         return this.messages.has(e)
@@ -37,9 +37,9 @@ class a {
         })
     }
     putNew(e, t, n) {
-        var i, l;
-        let r = this.messages.get(e);
-        null != t && (i = t.id, null == (l = r?.message?.id) || s.default.compare(i, l) > 0) && this.put(e, t, n)
+        var i, r;
+        let l = this.messages.get(e);
+        null != t && (i = t.id, null == (r = l?.message?.id) || s.default.compare(i, r) > 0) && this.put(e, t, n)
     }
     putMany(e, t) {
         for (let n of e) this.put(n.channel_id, n, t)
@@ -49,10 +49,10 @@ class a {
         let t = e.channel_id,
             n = this.messages.get(t);
         if (n?.message?.id !== e.id) return;
-        let r = n.message instanceof l.Ay ? (0, i.IU)(n.message, e) : (0, i.SP)(n.message, e);
+        let l = n.message instanceof r.Ay ? (0, i.IU)(n.message, e) : (0, i.SP)(n.message, e);
         this.messages.set(t, {
             ...n,
-            message: r
+            message: l
         })
     }
     delete(e) {

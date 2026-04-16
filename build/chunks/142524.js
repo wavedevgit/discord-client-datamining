@@ -3,9 +3,9 @@ n.d(t, {
     A: () => T
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(503698),
-    s = n.n(r),
+    r = n(64700),
+    l = n(503698),
+    s = n.n(l),
     a = n(311907),
     o = n(80682),
     u = n(643501),
@@ -21,7 +21,7 @@ var i = n(627968),
     p = n(727353),
     _ = n(652215),
     S = n(378219);
-class x extends l.PureComponent {
+class x extends r.PureComponent {
     componentDidMount() {
         let {
             user: e,
@@ -41,8 +41,8 @@ class x extends l.PureComponent {
             activity: e,
             user: t,
             stream: n,
-            previewIsOpen: l,
-            onAction: r,
+            previewIsOpen: r,
+            onAction: l,
             hideTip: a,
             onWatch: o,
             activeStream: u,
@@ -53,7 +53,7 @@ class x extends l.PureComponent {
         } = this.props;
         return null == n ? null : (0, i.jsx)("div", {
             className: s()(S.yt, {
-                [S.P0]: l
+                [S.P0]: r
             }),
             children: (0, i.jsx)(p.Z, {
                 stream: n,
@@ -65,7 +65,7 @@ class x extends l.PureComponent {
                 canWatch: c ?? !1,
                 unavailableReason: h,
                 onWatchStream: o,
-                onAction: r,
+                onAction: l,
                 hideTip: a
             })
         })
@@ -76,12 +76,12 @@ function T(e) {
     let {
         user: t,
         channel: n,
-        ...r
-    } = e, [s, A] = (0, a.yK)([f.A, h.A, g.A, u.default], () => (0, I.eo)(n, f.A, h.A, g.A, u.default)), p = (0, a.bG)([d.A], () => d.A.getStreamForUser(t.id, n.getGuildId())), _ = (0, a.bG)([d.A], () => d.A.getActiveStreamForApplicationStream(p)), S = (0, a.bG)([c.default], () => c.default.getId()), T = (0, E.AO)(p), N = (0, a.bG)([m.A], () => (0, E.nr)(p, m.A)), C = l.useMemo(() => ({
+        ...l
+    } = e, [s, A] = (0, a.yK)([f.A, h.A, g.A, u.default], () => (0, I.eo)(n, f.A, h.A, g.A, u.default)), p = (0, a.bG)([d.A], () => d.A.getStreamForUser(t.id, n.getGuildId())), _ = (0, a.bG)([d.A], () => d.A.getActiveStreamForApplicationStream(p)), S = (0, a.bG)([c.default], () => c.default.getId()), T = (0, E.AO)(p), C = (0, a.bG)([m.A], () => (0, E.nr)(p, m.A)), N = r.useMemo(() => ({
         [n.guild_id]: [t.id]
     }), [n.guild_id, t.id]);
-    return (0, o.Eq)(C, "StreamPreviewPopout"), (0, i.jsx)(x, {
-        ...r,
+    return (0, o.Eq)(N, "StreamPreviewPopout"), (0, i.jsx)(x, {
+        ...l,
         canWatch: s,
         unavailableReason: A,
         user: t,
@@ -89,7 +89,7 @@ function T(e) {
         stream: p,
         activeStream: _,
         currentUserId: S,
-        activity: N,
+        activity: C,
         channel: n
     })
 }

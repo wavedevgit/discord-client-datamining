@@ -3,8 +3,8 @@ n.d(t, {
     A: () => I
 });
 var i = n(735438),
-    l = n.n(i),
-    r = n(311907),
+    r = n.n(i),
+    l = n(311907),
     s = n(73153),
     a = n(427157),
     o = n(287809),
@@ -19,13 +19,13 @@ function f(e) {
     let t = null != e.contact_names && e.contact_names.length >= 2 ? e.contact_names.slice(0, 2) : [];
     return {
         key: e.suggested_user.id,
-        name: l().first(e.reasons)?.name,
+        name: r().first(e.reasons)?.name,
         user: new a.A(e.suggested_user),
         mutualFriendsCount: e.mutual_friends_count,
         contactNames: t
     }
 }
-class A extends r.Ay.Store {
+class A extends l.Ay.Store {
     static displayName = "FriendSuggestionStore";
     initialize() {
         this.waitFor(o.default)
@@ -60,7 +60,7 @@ let I = new A(s.h, {
     },
     LOAD_FRIEND_SUGGESTIONS_SUCCESS: function(e) {
         var t;
-        g = !1, t = e.suggestions, c = l().chain(t).map(e => f(e)).keyBy(e => e.key).value(), h = l().keys(c).length
+        g = !1, t = e.suggestions, c = r().chain(t).map(e => f(e)).keyBy(e => e.key).value(), h = r().keys(c).length
     },
     LOAD_FRIEND_SUGGESTIONS_FAILURE: function() {
         g = !1, c = {}

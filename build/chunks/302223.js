@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(503698),
-    r = n.n(l),
+var r = n(503698),
+    l = n.n(r),
     s = n(51183),
     a = n(729688);
 
@@ -13,7 +13,7 @@ function o(e) {
     let {
         activity: t,
         className: n,
-        emojiClassName: l,
+        emojiClassName: r,
         textClassName: o,
         placeholderText: u,
         soloEmojiClassName: d,
@@ -27,10 +27,10 @@ function o(e) {
         emoji: f
     } = t, A = null != t.state && "" !== t.state ? t.state : u;
     return (0, i.jsxs)("div", {
-        className: r()(a.__invalid_container, n),
+        className: l()(a.__invalid_container, n),
         children: [g || null == f ? null : (0, i.jsx)(s.A, {
             emoji: f,
-            className: r()(a.Z, l, null != d ? {
+            className: l()(a.Z, r, null != d ? {
                 [d]: null == A || "" === A
             } : null),
             animate: c,

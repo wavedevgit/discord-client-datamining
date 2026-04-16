@@ -3,9 +3,9 @@ n.d(t, {
     A: () => f
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(503698),
-    s = n.n(r),
+    r = n(64700),
+    l = n(503698),
+    s = n.n(l),
     a = n(812729),
     o = n.n(a),
     u = n(407045),
@@ -24,26 +24,26 @@ function f(e) {
     let {
         locked: t,
         pinned: n
-    } = e, [r, a] = l.useState(0), [f, A] = l.useState(0), [I, E] = l.useState(0), p = l.useRef(0), [_, S] = l.useState(0), {
+    } = e, [l, a] = r.useState(0), [f, A] = r.useState(0), [I, E] = r.useState(0), p = r.useRef(0), [_, S] = r.useState(0), {
         timeToLiveMs: x,
         reappearTimeMs: T
     } = c.Ay.useState(e => ({
         timeToLiveMs: e.timeToLiveMs,
         reappearTimeMs: e.reappearTimeMs
-    }), o()), N = {
+    }), o()), C = {
         timeToLiveMs: x,
         reappearTimeMs: T
-    }, C = l.useRef(N);
-    l.useEffect(() => {
-        C.current = N
-    }), l.useEffect(() => (p.current = setInterval(() => {
+    }, N = r.useRef(C);
+    r.useEffect(() => {
+        N.current = C
+    }), r.useEffect(() => (p.current = setInterval(() => {
         let e = Date.now();
         A(e), E(t => {
             if (0 === t) return e;
             let n = e - t,
-                i = C.current.timeToLiveMs,
-                l = i + C.current.reappearTimeMs;
-            return n > i ? t + l : t
+                i = N.current.timeToLiveMs,
+                r = i + N.current.reappearTimeMs;
+            return n > i ? t + r : t
         })
     }, 100), () => {
         clearInterval(p.current)
@@ -51,7 +51,7 @@ function f(e) {
     let v = () => {
             a(Date.now()), S(e => e + 1)
         },
-        y = r > 0 && f - r < 1e3,
+        y = l > 0 && f - l < 1e3,
         M = (0, d.pnh)(I > 0 && I < f && f - I < x, {
             from: {
                 opacity: 0
@@ -64,10 +64,10 @@ function f(e) {
             },
             config: m
         }),
-        [R, D] = l.useState(!1);
-    if (l.useEffect(() => {
-            _ > 10 && D(!0)
-        }, [_]), R) throw Error("ClickZoneDebugWidget crashed, too many clicks");
+        [b, R] = r.useState(!1);
+    if (r.useEffect(() => {
+            _ > 10 && R(!0)
+        }, [_]), b) throw Error("ClickZoneDebugWidget crashed, too many clicks");
     return t && !n ? null : (0, i.jsx)(i.Fragment, {
         children: M((e, t) => t && (0, i.jsx)(u.animated.div, {
             style: e,

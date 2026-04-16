@@ -1,6 +1,6 @@
 /** chunk id: 835835 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => O,
+    Ay: () => D,
     Y9: () => j,
     u9: () => R
 }), n(321073);
@@ -137,7 +137,7 @@ let L = d.Ay.connectStores([f.A], e => {
     }
 })(M);
 
-function D(e) {
+function O(e) {
     let {
         analyticsName: t,
         items: n,
@@ -151,7 +151,7 @@ function D(e) {
         scrollerClassName: I,
         className: T,
         listName: j
-    } = e, R = l.useRef(null), M = (0, m.A)(j, R), L = (0, d.bG)([E.Ay], () => E.Ay.hasNotice()), D = (0, d.bG)([C.A], () => C.A.windowSize());
+    } = e, R = l.useRef(null), M = (0, m.A)(j, R), L = (0, d.bG)([E.Ay], () => E.Ay.hasNotice()), O = (0, d.bG)([C.A], () => C.A.windowSize());
     l.useEffect(() => {
         x.default.track(v.HAw.OPEN_POPOUT, {
             type: t
@@ -172,22 +172,22 @@ function D(e) {
             S._.unsubscribe(v.jej.SCROLL_PAGE_DOWN, t), S._.unsubscribe(v.jej.SCROLL_PAGE_UP, e)
         }
     }, []);
-    let O = l.useCallback(() => {
+    let D = l.useCallback(() => {
             let e = R.current?.getScrollerState();
             null != e && e.scrollHeight - e.scrollTop - e.offsetHeight < 250 && a && !r && h?.()
         }, [a, h, r]),
         P = [],
-        k = !0;
+        w = !0;
     null == n || r && 0 === n.length ? P = [(0, i.jsx)("div", {
         className: s()(y.zC, y.k$),
         children: (0, i.jsx)(u.y$y, {})
     }, "spinner")] : 0 === n.length ? P.push((0, i.jsx)(l.Fragment, {
         children: _()
-    }, "empty-state")) : (k = !1, P = [], o().each(n, e => {
+    }, "empty-state")) : (w = !1, P = [], o().each(n, e => {
         P.push(...p(e))
     }));
-    let w = null;
-    null != n && n.length > 0 && null != h && (w = r ? (0, i.jsx)("div", {
+    let U = null;
+    null != n && n.length > 0 && null != h && (U = r ? (0, i.jsx)("div", {
         className: y.sw,
         children: (0, i.jsx)(u.y$y, {})
     }, "loading-more-after") : a ? (0, i.jsx)("div", {
@@ -203,8 +203,8 @@ function D(e) {
         className: y.lJ,
         children: _()
     }));
-    let U = f?.(),
-        G = k && null != U ? (0, i.jsx)("div", {
+    let k = f?.(),
+        G = w && null != k ? (0, i.jsx)("div", {
             className: y.qr,
             children: (0, i.jsx)(A.A, {
                 style: {
@@ -212,11 +212,11 @@ function D(e) {
                     paddingTop: 10,
                     paddingBottom: 10
                 },
-                children: U
+                children: k
             })
         }) : null,
         F = {
-            maxHeight: D.height - 43 - 25 - 48
+            maxHeight: O.height - 43 - 25 - 48
         };
     L && (F.maxHeight -= 40);
     let H = null != h && a;
@@ -230,7 +230,7 @@ function D(e) {
             component: g(),
             children: [(0, i.jsxs)(u.T7Y, {
                 className: I ?? y.m4,
-                onScroll: H ? O : void 0,
+                onScroll: H ? D : void 0,
                 ref: R,
                 children: [(0, i.jsx)(c.hD, {
                     navigator: M,
@@ -247,13 +247,13 @@ function D(e) {
                             })
                         }
                     })
-                }), w]
+                }), U]
             }), G]
         })
     })
 }
 
-function O(e) {
+function D(e) {
     let {
         analyticsName: t,
         onFetch: n,
@@ -291,14 +291,14 @@ function O(e) {
     l.useEffect(() => {
         n(a)
     }, [a, n]);
-    let O = l.useMemo(() => s?.map(e => ({
+    let D = l.useMemo(() => s?.map(e => ({
         message: e,
         channel: a
     })), [s, a]);
-    return (0, i.jsx)(D, {
+    return (0, i.jsx)(O, {
         className: S,
         scrollerClassName: x,
-        items: O,
+        items: D,
         loading: o,
         analyticsName: t,
         renderEmptyState: f,

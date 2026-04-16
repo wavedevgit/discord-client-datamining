@@ -21,8 +21,8 @@ var r = s(627968),
     j = s(723702),
     v = s(290805),
     A = s(830012),
-    S = s(905552),
-    y = s(688465),
+    y = s(905552),
+    S = s(688465),
     C = s(207975),
     b = s(502075),
     w = s(765682),
@@ -31,7 +31,7 @@ var r = s(627968),
     N = s(495163);
 
 function O(e, t, s, r) {
-    let i = (0, j.isWindows)() ? (0, S.A)(h.Ay, _.A) : null,
+    let i = (0, j.isWindows)() ? (0, y.A)(h.Ay, _.A) : null,
         n = h.Ay.getRunningGames(),
         l = s?.split(":")[1],
         a = e.id.split(":")[1];
@@ -117,16 +117,16 @@ function M(e) {
         sourceType: a,
         fetchingSources: _,
         selectedSource: g,
-        discordSourceId: S,
+        discordSourceId: y,
         hasPermission: b
-    }] = (0, y.tS)(), I = (0, d.bG)([h.Ay], () => h.Ay.getRunningGames()), T = (0, d.cf)([h.Ay], () => {
+    }] = (0, S.tS)(), I = (0, d.bG)([h.Ay], () => h.Ay.getRunningGames()), T = (0, d.cf)([h.Ay], () => {
         let e = h.Ay.getCandidateGames(),
             t = {};
         for (let s of e) null != s.windowHandle && (t[s.windowHandle] = s.exeName);
         return t
     }), M = (0, d.bG)([m.A], () => m.A.quests), G = (0, C.A)(M, I, s);
     i.useEffect(() => ((0, x.a2)(), x.e0), []);
-    let L = i.useMemo(() => [...s].sort((e, t) => O(t, G?.source.id, S, T) - O(e, G?.source.id, S, T)), [G, s, S, T]);
+    let L = i.useMemo(() => [...s].sort((e, t) => O(t, G?.source.id, y, T) - O(e, G?.source.id, y, T)), [G, s, y, T]);
     if (_) {
         if (!1 === b) {
             let e = !1;

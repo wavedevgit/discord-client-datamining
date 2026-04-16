@@ -33,7 +33,7 @@ let d = s.memo(function(e) {
                 height: 1
             }
         }), (0, i.jsxs)(l.BJc, {
-            gap: "md",
+            gap: "xs",
             children: [null != h && (0, i.jsx)(o.A, {
                 notice: h
             }), u.map(e => (0, i.jsx)(r.A, {

@@ -6,15 +6,15 @@ var i = n(627968),
     l = n(64700),
     r = n(311907),
     a = n(241524),
-    s = n(163437),
-    o = n(490744),
-    d = n(594508),
-    c = n(71393),
-    u = n(156312),
-    m = n(166532),
-    p = n(19311),
-    f = n(482132),
-    x = n(987616),
+    s = n(427675),
+    o = n(163437),
+    d = n(490744),
+    c = n(594508),
+    u = n(71393),
+    m = n(156312),
+    p = n(166532),
+    f = n(19311),
+    x = n(482132),
     g = n(376747),
     h = n(985018);
 
@@ -26,12 +26,12 @@ function S(e) {
         subscriptionMetadataRequest: S,
         selectedStoreListing: b,
         application: A
-    } = (0, u.P5)(), j = (0, x.S3)(), v = (0, a.A)(g.Y), _ = (0, r.bG)([c.A], () => c.A.getGuild(S?.guild_id)), C = l.useCallback(() => t(m.pn.REVIEW), [t]);
+    } = (0, m.P5)(), j = (0, s.S3)(), v = (0, a.A)(g.Y), _ = (0, r.bG)([u.A], () => u.A.getGuild(S?.guild_id)), C = l.useCallback(() => t(p.pn.REVIEW), [t]);
     if (null == j) return null;
-    let N = (0, s.bg)(j.flags);
+    let N = (0, o.bg)(j.flags);
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(f.dZ, {
-            children: v ? (0, i.jsx)(d.E, {
+        children: [(0, i.jsx)(x.dZ, {
+            children: v ? (0, i.jsx)(c.E, {
                 confirmCta: h.intl.string(h.t.PBHFSq),
                 onConfirm: C,
                 onCancel: n,
@@ -42,7 +42,7 @@ function S(e) {
                     guildName: _?.name
                 }),
                 showOpenDiscord: !1
-            }) : (0, i.jsx)(o.Uf, {
+            }) : (0, i.jsx)(d.Uf, {
                 icon: b?.thumbnail,
                 storeListingBenefits: b?.benefits,
                 application: A ?? void 0,
@@ -54,12 +54,12 @@ function S(e) {
                     applicationName: A?.name
                 }) : h.intl.string(h.t.n1Pu8C)
             })
-        }), !v && (0, i.jsx)(f.UX, {
-            children: (0, i.jsx)(p.Ay, {
+        }), !v && (0, i.jsx)(x.UX, {
+            children: (0, i.jsx)(f.Ay, {
                 onBack: n,
                 backText: h.intl.string(h.t.TQBY1J),
                 onPrimary: C,
-                primaryCTA: p.ti.CONTINUE,
+                primaryCTA: f.ti.CONTINUE,
                 primaryText: h.intl.string(h.t["gZhF+3"])
             })
         })]

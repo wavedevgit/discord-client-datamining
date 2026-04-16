@@ -1,10 +1,10 @@
 /** chunk id: 621956 params = (module,exports,require) **/
 n.d(t, {
-    E: () => r
+    E: () => a
 });
 var i = n(627968),
-    l = n(64700),
-    a = n(744682);
+    r = n(64700),
+    l = n(744682);
 let s = {
         all: {
             name: "all",
@@ -12,18 +12,18 @@ let s = {
             duration: 66
         }
     },
-    r = () => {
-        let e = l.useRef(null),
-            t = l.useCallback(() => {
+    a = () => {
+        let e = r.useRef(null),
+            t = r.useCallback(() => {
                 null != e.current && e.current.play("all")
             }, []),
-            r = l.useCallback(() => {
+            a = r.useCallback(() => {
                 null != e.current && e.current.play("all")
             }, []),
-            o = l.useCallback(() => {
+            o = r.useCallback(() => {
                 null != e.current && e.current.stopIfPlaying("all")
             }, []),
-            c = l.useCallback(t => (0, i.jsx)(a.P, {
+            u = r.useCallback(t => (0, i.jsx)(l.P, {
                 ...t,
                 src: () => n.e("5506").then(n.t.bind(n, 429286, 19)),
                 ref: e,
@@ -32,12 +32,12 @@ let s = {
         return {
             events: {
                 onClick: t,
-                onMouseEnter: r,
+                onMouseEnter: a,
                 onMouseLeave: o
             },
             play: t,
-            getDuration: l.useCallback(() => e.current?.getDuration(), []),
-            getCurrentFrame: l.useCallback(() => e.current?.getCurrentFrame() ?? null, []),
-            Component: c
+            getDuration: r.useCallback(() => e.current?.getDuration(), []),
+            getCurrentFrame: r.useCallback(() => e.current?.getCurrentFrame() ?? null, []),
+            Component: u
         }
     }

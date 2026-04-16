@@ -3,8 +3,8 @@ n.d(t, {
     A: () => E
 });
 var i = n(735438),
-    l = n.n(i),
-    r = n(562465),
+    r = n.n(i),
+    l = n(562465),
     s = n(73153),
     a = n(439372),
     o = n(723176),
@@ -38,7 +38,7 @@ class I extends a.A {
     addWant(e) {
         h.A.getBasicChannel(e)
     }
-    remoteTick = l().debounce((() => {
+    remoteTick = r().debounce((() => {
         var e = this;
         return async function() {
             let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0;
@@ -84,7 +84,7 @@ class I extends a.A {
         let t = e.nextWants(30);
         return 0 === t.length ? Promise.resolve() : e.try(t, async () => {
             A.verbose(`fetching dm previews (via: http, channel_ids: ${t.join(", ")})`);
-            let e = (await r.Bo.post({
+            let e = (await l.Bo.post({
                 url: f.Rsh.MESSAGE_PREVIEWS,
                 body: {
                     channel_ids: t

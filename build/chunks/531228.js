@@ -1,7 +1,7 @@
 /** chunk id: 531228 params = (module,exports,require) **/
 "use strict";
 r.d(t, {
-    A: () => b
+    A: () => f
 });
 var a = r(1139),
     n = r(106526),
@@ -15,7 +15,7 @@ function u(e) {
     var t = Object.getOwnPropertyNames(e).length;
     return "".concat(t, " ").concat(1 !== t ? "keys" : "key")
 }
-var f = function(e) {
+var b = function(e) {
     var t = e.data,
         r = (0, n.A)(e, l);
     return o.createElement(c.A, (0, a.A)({}, r, {
@@ -26,8 +26,8 @@ var f = function(e) {
         expandable: Object.getOwnPropertyNames(t).length > 0
     }))
 };
-f.propTypes = {
+b.propTypes = {
     data: i().object,
     nodeType: i().string.isRequired
 };
-let b = f
+let f = b

@@ -3,8 +3,8 @@ n.d(t, {
     t: () => P
 }), n(321073);
 var i = n(627968),
-    l = n(64700),
-    r = n(735438),
+    r = n(64700),
+    l = n(735438),
     s = n(837381),
     a = n(311907),
     o = n(397927),
@@ -23,23 +23,23 @@ var i = n(627968),
     S = n(403362),
     x = n(996439),
     T = n(810412),
-    N = n(914853),
-    C = n(179917),
+    C = n(914853),
+    N = n(179917),
     v = n(419072),
     y = n(437331),
     M = n(91868),
-    R = n(554932),
-    D = n(406595),
-    b = n(557404),
+    b = n(554932),
+    R = n(406595),
+    D = n(557404),
     O = n(652215),
     w = n(499214),
     j = n(985018),
-    U = n(894564);
+    k = n(894564);
 
-function L(e) {
+function U(e) {
     return Array.from(e).sort()
 }
-let k = (0, r.throttle)(e => {
+let L = (0, l.throttle)(e => {
         (0, T.Y)(O.uss.FRIENDS, {
             locked: _.default.isInstanceLocked(),
             shownUserIds: e.shownUserIds,
@@ -60,8 +60,8 @@ let k = (0, r.throttle)(e => {
             if (t.isDM()) {
                 let e = t.getRecipientId(),
                     i = E.default.getUser(e),
-                    l = I.A.getNickname(e);
-                n.push(i?.username, i?.globalName, l)
+                    r = I.A.getNickname(e);
+                n.push(i?.username, i?.globalName, r)
             } else if (t.isMultiUserDM())
                 for (let e of t.recipients ?? []) {
                     let t = E.default.getUser(e),
@@ -79,8 +79,8 @@ function P() {
             onPrimaryAction: t,
             onContextMenu: n
         } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-        [r, d] = l.useState(""),
-        c = r.trim().toLowerCase(),
+        [l, d] = r.useState(""),
+        c = l.trim().toLowerCase(),
         f = (e = (0, g.Dz)(), (0, a.yK)([p.default, m.A], () => {
             let t = [];
             for (let e of p.default.getPrivateChannelIds()) {
@@ -93,27 +93,27 @@ function P() {
             for (let n of e) t.push(n);
             return t
         }, [e])),
-        [I, E] = l.useState([]);
-    (0, h.RT)(r, f, E, G);
-    let _ = l.useRef(null),
+        [I, E] = r.useState([]);
+    (0, h.RT)(l, f, E, G);
+    let _ = r.useRef(null),
         S = (0, u.A)("friends-widget-messages", _),
-        [O, P] = (0, a.bG)([D.A], () => D.A.getFavoriteTargetIdsForTab(N.x.MESSAGES), [], x.D),
+        [O, P] = (0, a.bG)([R.A], () => R.A.getFavoriteTargetIdsForTab(C.x.MESSAGES), [], x.D),
         [F, V] = (0, a.bG)([M.A], () => {
-            let [e, t] = M.A.getRows(M.Y.ACTIVE_NOW), [n] = M.A.getRows(M.Y.DMS), [i] = M.A.getRows(M.Y.RECENT_TEXT), l = n.slice(0, 5), r = i.slice(0, 8);
+            let [e, t] = M.A.getRows(M.Y.ACTIVE_NOW), [n] = M.A.getRows(M.Y.DMS), [i] = M.A.getRows(M.Y.RECENT_TEXT), r = n.slice(0, 5), l = i.slice(0, 8);
             return [{
                 activeNowRows: e.slice(0, 8),
-                dmRows: l,
-                recentTextRows: r
+                dmRows: r,
+                recentTextRows: l
             }, t]
         }, [], x.D),
-        z = (0, a.bG)([v.A], () => v.A.getCollapsedSectionOverridesForTab(N.x.MESSAGES), []),
-        H = l.useCallback(e => {
-            (0, R.G)({
-                tab: N.x.MESSAGES,
+        z = (0, a.bG)([v.A], () => v.A.getCollapsedSectionOverridesForTab(C.x.MESSAGES), []),
+        H = r.useCallback(e => {
+            (0, b.G)({
+                tab: C.x.MESSAGES,
                 sectionKey: e
             })
         }, []),
-        Y = l.useMemo(() => {
+        Y = r.useMemo(() => {
             let e = new Set;
             for (let t of O) e.add(t);
             for (let t of F.dmRows) e.add(t.channelId);
@@ -128,15 +128,15 @@ function P() {
             for (let t of Y) {
                 let n = A.Ay.hasUnread(t),
                     i = A.Ay.getMentionCount(t),
-                    l = A.Ay.getIsMentionLowImportance(t),
-                    r = i > 0 && !l;
-                (n || r) && e.add(t)
+                    r = A.Ay.getIsMentionLowImportance(t),
+                    l = i > 0 && !r;
+                (n || l) && e.add(t)
             }
             return {
                 unreadOrMentionChannels: e
             }
         }, [Y]),
-        B = l.useMemo(() => {
+        B = r.useMemo(() => {
             let e = e => !0 === z[e],
                 t = e => W.has(e),
                 n = [];
@@ -174,32 +174,32 @@ function P() {
             }
             if (F.dmRows.length > 0) {
                 let i = F.dmRows.map(e => e.channelId),
-                    l = e("DMS") ? i.filter(t) : i;
+                    r = e("DMS") ? i.filter(t) : i;
                 n.push({
                     kind: "DMS",
                     key: "DMS",
                     title: j.intl.string(j.t.YUU0RF),
                     count: i.length,
-                    channelIds: l,
-                    length: Math.max(l.length, 1)
+                    channelIds: r,
+                    length: Math.max(r.length, 1)
                 })
             }
             if (F.recentTextRows.length > 0) {
                 let i = F.recentTextRows.map(e => e.channelId),
-                    l = e("TEXT_CHANNELS") ? i.filter(t) : i;
+                    r = e("TEXT_CHANNELS") ? i.filter(t) : i;
                 n.push({
                     kind: "TEXT_CHANNELS",
                     key: "TEXT_CHANNELS",
                     title: j.intl.string(w.default.uC6Lhg),
                     count: i.length,
-                    channelIds: l,
-                    length: Math.max(l.length, 1)
+                    channelIds: r,
+                    length: Math.max(r.length, 1)
                 })
             }
             return n
         }, [z, W, c, O, F.activeNowRows, F.dmRows, F.recentTextRows, P, I, V]),
-        Z = l.useMemo(() => B.map(e => e.length), [B]),
-        X = l.useCallback(e => {
+        Z = r.useMemo(() => B.map(e => e.length), [B]),
+        X = r.useCallback(e => {
             let t = B.findIndex(e => "FAVORITES" === e.kind);
             if (-1 === t) {
                 for (let t = 0; t < B.length; t += 1) {
@@ -218,14 +218,14 @@ function P() {
                 row: i
             } : null
         }, [B]),
-        K = l.useCallback(() => {
+        K = r.useCallback(() => {
             let e = B.findIndex(e => "FAVORITES" === e.kind);
             return -1 === e ? null : {
                 section: e,
                 row: void 0
             }
         }, [B]);
-    (0, b.$)({
+    (0, D.$)({
         scrollerRef: _,
         favoriteTargetIds: O,
         getScrollTargetForTargetId: e => X(e),
@@ -267,60 +267,60 @@ function P() {
         })($), [$]),
         Q = (0, T.Dk)(() => q, [q]),
         ee = (0, T.Dk)(() => J, [J]);
-    l.useEffect(() => {
-        (0 !== Q.size || 0 !== ee.size) && k({
-            shownUserIds: L(Q),
-            contentInventoryIds: L(ee)
+    r.useEffect(() => {
+        (0 !== Q.size || 0 !== ee.size) && L({
+            shownUserIds: U(Q),
+            contentInventoryIds: U(ee)
         })
     }, [Q, ee]);
-    let et = l.useCallback(e => B[e], [B]),
-        en = l.useCallback(e => {
+    let et = r.useCallback(e => B[e], [B]),
+        en = r.useCallback(e => {
             let {
                 section: t
             } = e, n = et(t);
             if (null == n) return null;
-            let l = "SEARCH_RESULTS" !== n.kind,
-                r = l && !0 === z[n.key];
+            let r = "SEARCH_RESULTS" !== n.kind,
+                l = r && !0 === z[n.key];
             return (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(o.AC4, {
                     children: n.title
-                }), (0, i.jsx)(C.I, {
+                }), (0, i.jsx)(N.I, {
                     title: n.title,
                     count: n.count,
-                    isCollapsed: r,
-                    canCollapse: l,
+                    isCollapsed: l,
+                    canCollapse: r,
                     onToggle: () => H(n.key)
                 })]
             })
         }, [z, et, H]),
-        ei = l.useCallback(e => {
-            let l = et(e.section);
-            if (null == l) return null;
-            let r = l.channelIds[e.row];
+        ei = r.useCallback(e => {
+            let r = et(e.section);
             if (null == r) return null;
-            let s = `${l.key}:${e.row}`;
+            let l = r.channelIds[e.row];
+            if (null == l) return null;
+            let s = `${r.key}:${e.row}`;
             return (0, i.jsx)(y.V, {
-                channelId: r,
+                channelId: l,
                 listItemId: s,
-                shouldHighlightIfRecentlyAdded: "FAVORITES" === l.kind,
+                shouldHighlightIfRecentlyAdded: "FAVORITES" === r.kind,
                 onPrimaryAction: t,
                 onContextMenu: n
             }, s)
         }, [et, n, t]),
-        el = l.useCallback(() => 40, []),
-        er = l.useCallback((e, t) => {
+        er = r.useCallback(() => 40, []),
+        el = r.useCallback((e, t) => {
             let n = et(e);
             return null == n ? 50 : 50 * (null != n.channelIds[t])
         }, [et]),
-        es = l.useCallback(e => {
+        es = r.useCallback(e => {
             d(e), _.current?.scrollToTop()
         }, []);
     return (0, i.jsxs)("div", {
-        className: U.kL,
+        className: k.kL,
         children: [(0, i.jsx)("div", {
-            className: U.MT,
+            className: k.MT,
             children: (0, i.jsx)(o.IWV, {
-                query: r,
+                query: l,
                 onChange: es,
                 onClear: () => d(""),
                 placeholder: j.intl.string(w.default["xB/0Z9"]),
@@ -333,7 +333,7 @@ function P() {
                     let {
                         ref: t,
                         role: n,
-                        ...l
+                        ...r
                     } = e;
                     return (0, i.jsx)(o.skg, {
                         children: e => (0, i.jsx)(o.B8B, {
@@ -342,15 +342,15 @@ function P() {
                             ref: e => {
                                 _.current = e, t.current = e?.getScrollerNode() ?? null
                             },
-                            className: U.p_,
-                            sectionHeight: el,
-                            rowHeight: er,
+                            className: k.p_,
+                            sectionHeight: er,
+                            rowHeight: el,
                             sidebarHeight: 0,
                             renderSection: en,
                             renderRow: ei,
                             sections: Z,
                             paddingBottom: 8,
-                            ...l,
+                            ...r,
                             ...e
                         })
                     })

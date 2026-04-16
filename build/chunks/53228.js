@@ -11,13 +11,13 @@ function i(e) {
         message: t,
         channel: n,
         forwardOptions: i
-    } = e, r = i?.onlyAttachmentIds, o = i?.onlyEmbedIndices, u = t.messageSnapshots[0]?.message ?? t, c = u.attachments;
-    null != r ? c = u.attachments.filter(e => r.includes(e.id)) : null != o && (c = []);
-    let d = [];
-    return (0, l.bG)([a.A], () => null != n && !(0, s.fS)(n, a.A) && (0, s.ax)(t)) || (d = u.embeds, null != o ? d = u.embeds.filter((e, t) => o.includes(t)) : null != r && (d = [])), (null != o || "" === u.content && d.length > 0) && (u = u.set("content", d.map(e => e.url).join("\n"))), "" === u.content && u.embeds[0]?.rawDescription != null && (u = u.set("content", u.embeds[0].rawDescription)), {
+    } = e, r = i?.onlyAttachmentIds, u = i?.onlyEmbedIndices, o = t.messageSnapshots[0]?.message ?? t, c = o.attachments;
+    null != r ? c = o.attachments.filter(e => r.includes(e.id)) : null != u && (c = []);
+    let A = [];
+    return (0, l.bG)([a.A], () => null != n && !(0, s.fS)(n, a.A) && (0, s.ax)(t)) || (A = o.embeds, null != u ? A = o.embeds.filter((e, t) => u.includes(t)) : null != r && (A = [])), (null != u || "" === o.content && A.length > 0) && (o = o.set("content", A.map(e => e.url).join("\n"))), "" === o.content && o.embeds[0]?.rawDescription != null && (o = o.set("content", o.embeds[0].rawDescription)), {
         attachments: c,
-        embeds: d,
-        hasContent: "" !== u.content && null == r,
-        contentMessage: u
+        embeds: A,
+        hasContent: "" !== o.content && null == r,
+        contentMessage: o
     }
 }

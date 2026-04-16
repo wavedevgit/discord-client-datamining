@@ -1,7 +1,7 @@
 /** chunk id: 804980 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => U,
-    LN: () => k
+    Ay: () => k,
+    LN: () => w
 });
 var i = n(627968),
     l = n(64700),
@@ -33,11 +33,11 @@ var i = n(627968),
     R = n(287809),
     M = n(403362),
     L = n(562153),
-    D = n(985018),
-    O = n(301094);
+    O = n(985018),
+    D = n(301094);
 let P = ["embedded_background"];
 
-function k(e) {
+function w(e) {
     let {
         avatarSize: t,
         guildId: n,
@@ -57,14 +57,14 @@ function k(e) {
                 children: (0, i.jsx)("img", {
                     src: e.getAvatarURL(n, r),
                     alt: t,
-                    className: O.my
+                    className: D.my
                 }, e.id)
             }, e.id)
         }
     })
 }
 
-function w(e) {
+function U(e) {
     let {
         participants: t,
         application: n,
@@ -87,35 +87,35 @@ function w(e) {
         launchingComponentId: N
     });
     return (0, i.jsxs)("div", {
-        className: O.Yi,
-        children: [(0, i.jsx)(k, {
+        className: D.Yi,
+        children: [(0, i.jsx)(w, {
             avatarSize: _,
             guildId: I,
             channelId: a.id,
             users: p
         }), (0, i.jsx)(c.Text, {
-            className: s()(O.m_, {
-                [O.EX]: 0 === A,
-                [O.Y]: 1 === A
+            className: s()(D.m_, {
+                [D.EX]: 0 === A,
+                [D.Y]: 1 === A
             }),
             variant: "text-sm/normal",
-            children: p.length > 1 ? D.intl.formatToPlainString(D.t.cpe6CK, {
+            children: p.length > 1 ? O.intl.formatToPlainString(O.t.cpe6CK, {
                 username: x,
                 count: p.length - 1
-            }) : D.intl.formatToPlainString(D.t["7Uuia2"], {
+            }) : O.intl.formatToPlainString(O.t["7Uuia2"], {
                 username: x
             })
         }), (0, i.jsx)(c.Text, {
-            className: s()(O.wx, {
-                [O.EX]: 0 === A,
-                [O.Y]: 1 === A
+            className: s()(D.wx, {
+                [D.EX]: 0 === A,
+                [D.Y]: 1 === A
             }),
             variant: "text-sm/normal",
             children: n.name
         }), (0, i.jsx)("div", {
-            className: O.Uo,
+            className: D.Uo,
             children: S ? (0, i.jsx)(c.Button, {
-                text: D.intl.string(D.t["4i2vj+"]),
+                text: O.intl.string(O.t["4i2vj+"]),
                 onClick: function(e) {
                     e.stopPropagation(), null != f && (0, h.A)({
                         applicationId: f.applicationId,
@@ -133,7 +133,7 @@ function w(e) {
     })
 }
 
-function U(e) {
+function k(e) {
     let {
         participant: t,
         width: n,
@@ -162,21 +162,21 @@ function U(e) {
     }, [C, u, R]), (0, i.jsx)(T.f5, {
         value: c,
         children: (0, i.jsxs)("div", {
-            className: O.kL,
+            className: D.kL,
             children: [C && null != u && (0, i.jsx)(f.A, {
-                className: O.pU,
+                className: D.pU,
                 embedId: (0, x.A)(u.location.id, d)
             }), v && null != m && null != g && "" !== g ? (0, i.jsx)("img", {
-                className: O.j0,
+                className: D.j0,
                 alt: m.name,
                 src: g
-            }) : null, b && null != m && (0, i.jsx)(w, {
+            }) : null, b && null != m && (0, i.jsx)(U, {
                 width: n,
                 channel: o,
                 participants: t.participants,
                 application: m
             }), s || v ? null : (0, i.jsx)("div", {
-                className: O.OB
+                className: D.OB
             })]
         })
     })

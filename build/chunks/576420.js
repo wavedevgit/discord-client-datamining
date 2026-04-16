@@ -2,13 +2,13 @@
 n.d(t, {
     A2: () => a,
     Ay: () => o,
-    WS: () => r
+    WS: () => l
 });
 var i = n(839214),
-    l = n(914853);
-let r = 1e3,
+    r = n(914853);
+let l = 1e3,
     s = (0, i.D)((e, t) => ({
-        activeTab: l.x.FRIENDS,
+        activeTab: r.x.FRIENDS,
         recentlyAddedFavoriteTimestampMsByKey: {},
         setActiveTab: n => {
             t().activeTab !== n && e({

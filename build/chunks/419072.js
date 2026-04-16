@@ -3,27 +3,27 @@ n.d(t, {
     A: () => m
 });
 var i = n(311907),
-    l = n(73153),
-    r = n(914853),
+    r = n(73153),
+    l = n(914853),
     s = n(956753);
-let a = new Set(Object.values(r.x)),
+let a = new Set(Object.values(l.x)),
     o = {
-        [r.x.FRIENDS]: {
+        [l.x.FRIENDS]: {
             FAVORITES: !0,
             FRIEND_REQUESTS: !0,
             OFFLINE: !0
         },
-        [r.x.MESSAGES]: {
+        [l.x.MESSAGES]: {
             FAVORITES: !0
         },
-        [r.x.VOICE]: {}
+        [l.x.VOICE]: {}
     },
     u = {
         ...o
     };
 
 function d(e, t) {
-    return !!(e === r.x.FRIENDS && t.startsWith("GROUP:")) || o[e]?.[t] === !0
+    return !!(e === l.x.FRIENDS && t.startsWith("GROUP:")) || o[e]?.[t] === !0
 }
 
 function c() {
@@ -46,7 +46,7 @@ class h extends i.Ay.Store {
     }
 }
 let g = e => (0, s.v$)(e, "FriendsWidgetCollapsibleStore"),
-    m = new h(l.h, __OVERLAY__ ? {} : {
+    m = new h(r.h, __OVERLAY__ ? {} : {
         OVERLAY_FRIENDS_WIDGET_TOGGLE_SECTION_COLLAPSED: g(function(e) {
             let t = e.tab;
             if (!a.has(t)) return !1;
@@ -57,11 +57,11 @@ let g = e => (0, s.v$)(e, "FriendsWidgetCollapsibleStore"),
             }(e.sectionKey);
             if (null == n) return !1;
             let i = u[t] ?? {},
-                l = i[n],
-                r = d(t, n),
+                r = i[n],
+                l = d(t, n),
                 s = {
                     ...i,
-                    [n]: !(l ?? r)
+                    [n]: !(r ?? l)
                 };
             return u = {
                 ...u,

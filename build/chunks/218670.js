@@ -3,9 +3,9 @@ n.d(t, {
     A: () => p
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(503698),
-    s = n.n(r),
+    r = n(64700),
+    l = n(503698),
+    s = n.n(l),
     a = n(311907),
     o = n(397927),
     u = n(55619),
@@ -17,7 +17,7 @@ var i = n(627968),
     f = n(652215),
     A = n(985018),
     I = n(423005);
-let E = l.memo(function() {
+let E = r.memo(function() {
     let e = (0, a.bG)([h.A], () => h.A.enabled),
         t = (0, g.Mn)("StreamerModeNotice");
     return e && t ? (0, i.jsxs)(o.$Td, {
@@ -40,7 +40,7 @@ let E = l.memo(function() {
 function p(e) {
     let {
         locked: t
-    } = e, n = (0, a.bG)([c.A], () => c.A.getVoiceChannelId()), l = (0, a.bG)([d.A], () => d.A.getChannel(n)), r = null != l;
+    } = e, n = (0, a.bG)([c.A], () => c.A.getVoiceChannelId()), r = (0, a.bG)([d.A], () => d.A.getChannel(n)), l = null != r;
     return (0, i.jsxs)("div", {
         className: s()({
             [I.KE]: !0,
@@ -51,35 +51,35 @@ function p(e) {
             children: [(0, i.jsxs)("div", {
                 className: I.qi,
                 children: [(0, i.jsx)(m.pp, {
-                    voiceChannel: l,
+                    voiceChannel: r,
                     locked: t
                 }), (0, i.jsx)(m.Yb, {
-                    voiceChannel: l,
+                    voiceChannel: r,
                     locked: t
                 }), (0, i.jsx)(m.GF, {
-                    voiceChannel: l,
+                    voiceChannel: r,
                     locked: t
                 })]
             }), (0, i.jsxs)("div", {
                 className: I.qi,
                 children: [(0, i.jsx)(m.un, {
-                    voiceChannel: l,
+                    voiceChannel: r,
                     locked: t
                 }), (0, i.jsx)(m.sm, {
-                    voiceChannel: l,
+                    voiceChannel: r,
                     locked: t
                 })]
             }), (0, i.jsx)("div", {
-                className: s()(I.qi, r && I.SV),
+                className: s()(I.qi, l && I.SV),
                 children: (0, i.jsx)(m.NO, {
-                    voiceChannel: l,
+                    voiceChannel: r,
                     locked: t
                 })
             })]
-        }), r && (0, i.jsx)("div", {
+        }), l && (0, i.jsx)("div", {
             className: I.Pm,
             children: (0, i.jsx)(m.LK, {
-                voiceChannel: l,
+                voiceChannel: r,
                 locked: t
             })
         })]

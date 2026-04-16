@@ -258,7 +258,7 @@ let ef = e => {
         case "SPOTIFY":
             t = (0, l.jsx)(ee.A, {
                 className: eo.nr,
-                color: A.A.unsafe_rawColors.SPOTIFY.css
+                color: A.A.unsafe_rawColors.PLATFORM_SPOTIFY.css
             });
             break;
         case "MULTIPLE":
@@ -559,7 +559,7 @@ eT.Header = eC, eT.Body = e => {
                     })
                 }), d ? null : (0, l.jsx)(ee.A, {
                     className: eo.rp,
-                    color: A.A.unsafe_rawColors.SPOTIFY.css
+                    color: A.A.unsafe_rawColors.PLATFORM_SPOTIFY.css
                 })]
             }) : (0, l.jsx)("div", {}), (0, l.jsxs)("div", {
                 children: [null != n ? ec(n) : null, null != i ? eu(i.replace(/; /g, ", ")) : null]

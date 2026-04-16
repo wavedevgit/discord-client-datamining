@@ -1,19 +1,18 @@
 /** chunk id: 715587 params = (module,exports,require) **/
 s.d(t, {
-    A: () => c
+    A: () => o
 });
 var r = s(627968),
     i = s(64700),
-    n = s(505312),
-    l = s(397927),
-    a = s(744086),
-    o = s(985018);
+    n = s(397927),
+    l = s(744086),
+    a = s(985018);
 
-function c(e) {
+function o(e) {
     let {
         align: t = "left"
-    } = e, s = i.useRef(null), c = (0, n.w)();
-    return (0, r.jsx)(l.YNO, {
+    } = e, s = i.useRef(null);
+    return (0, r.jsx)(n.YNO, {
         targetElementRef: s,
         position: "top",
         align: t,
@@ -21,19 +20,26 @@ function c(e) {
             let {
                 closePopout: t
             } = e;
-            return (0, r.jsx)(a.Ay, {
+            return (0, r.jsx)(l.Ay, {
                 onClose: t,
                 onSelect: void 0
             })
         },
-        children: e => (0, r.jsx)(l.K0, {
+        children: e => (0, r.jsx)(n.K0, {
             buttonRef: s,
             size: "md",
             variant: "secondary",
-            icon: c.Component,
-            "aria-label": o.intl.string(o.t["+1H47t"]),
-            ...e,
-            ...c.events
+            icon: {
+                type: "rive",
+                asset: n.MX_,
+                riveProps: {
+                    dataBinding: {
+                        fill: "currentColor"
+                    }
+                }
+            },
+            "aria-label": a.intl.string(a.t["+1H47t"]),
+            ...e
         })
     })
 }

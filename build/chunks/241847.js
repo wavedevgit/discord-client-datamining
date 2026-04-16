@@ -1,6 +1,6 @@
 /** chunk id: 241847 params = (module,exports,require) **/
 n.d(t, {
-    A: () => U
+    A: () => k
 });
 var i = n(627968),
     l = n(64700),
@@ -117,7 +117,7 @@ function L(e) {
     })
 }
 
-function D(e) {
+function O(e) {
     let {
         channelId: t,
         isOverlay: n,
@@ -136,7 +136,7 @@ function D(e) {
     })
 }
 
-function O(e) {
+function D(e) {
     let [t, n] = l.useState(x.Rj.RTC_DEBUG_PANEL), a = (0, c.GV)(), r = [{
         id: x.Rj.RTC_DEBUG_PANEL,
         content: (0, i.jsx)(L, {
@@ -199,7 +199,7 @@ function P(e) {
         d = l.useMemo(() => {
             switch (n) {
                 case x.Rj.RTC_DEBUG_PANEL:
-                    return (0, i.jsx)(D, {
+                    return (0, i.jsx)(O, {
                         ...e
                     });
                 case x.Rj.RTC_SECURE_FRAMES:
@@ -247,7 +247,7 @@ function P(e) {
     })
 }
 
-function k(e) {
+function w(e) {
     return (0, g.k)({
         channelId: e.channelId
     }) ? (0, i.jsx)(P, {
@@ -256,17 +256,17 @@ function k(e) {
         className: I.L3,
         children: (0, i.jsx)("section", {
             className: I.J8,
-            children: (0, i.jsx)(D, {
+            children: (0, i.jsx)(O, {
                 ...e
             })
         })
     })
 }
 
-function w(e) {
+function U(e) {
     return (0, g.k)({
         channelId: e.channelId
-    }) ? (0, i.jsx)(O, {
+    }) ? (0, i.jsx)(D, {
         ...e
     }) : (0, i.jsx)("div", {
         className: s()(v.popover, T.L3),
@@ -276,10 +276,10 @@ function w(e) {
     })
 }
 
-function U(e) {
-    return (0, C.p)("RTCConnectionPopout") ? (0, i.jsx)(w, {
+function k(e) {
+    return (0, C.p)("RTCConnectionPopout") ? (0, i.jsx)(U, {
         ...e
-    }) : (0, i.jsx)(k, {
+    }) : (0, i.jsx)(w, {
         ...e
     })
 }

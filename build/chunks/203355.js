@@ -33,12 +33,12 @@ var i = n(627968),
     R = n(70171),
     M = n(566331),
     L = n(768088),
-    D = n(256195),
-    O = n(399849),
+    O = n(256195),
+    D = n(399849),
     P = n(275731),
-    k = n(345812),
-    w = n(652215),
-    U = n(806931),
+    w = n(345812),
+    U = n(652215),
+    k = n(806931),
     G = n(731854),
     F = n(985018),
     H = n(391308);
@@ -52,11 +52,11 @@ function V(e) {
         idle: a,
         width: s,
         premiumIndicator: o
-    } = e, c = (0, r.bG)([T.A], () => T.A.getActiveStreamForUser(t.user.id, t.stream.guildId)), d = (0, k.VE)(s);
+    } = e, c = (0, r.bG)([T.A], () => T.A.getActiveStreamForUser(t.user.id, t.stream.guildId)), d = (0, w.VE)(s);
     return (0, i.jsxs)(i.Fragment, {
         children: [n || l ? null : (0, i.jsx)(P.A, {
             participant: t
-        }), l || null == c || c.state === w.XYD.ENDED || c.state === w.XYD.FAILED ? null : (0, i.jsx)(x.A, {
+        }), l || null == c || c.state === U.XYD.ENDED || c.state === U.XYD.FAILED ? null : (0, i.jsx)(x.A, {
             size: g.Ay.Sizes.SMALL,
             className: H.Ok,
             participant: t,
@@ -76,7 +76,7 @@ function W(e) {
         popoutType: _,
         width: x,
         wrapperClassName: P,
-        paused: k = !1
+        paused: w = !1
     } = e, V = y.Ay.getVideoComponent(), W = (0, r.bG)([v.default], () => v.default.getId()), K = (0, f.A)(), {
         stream: z,
         user: Y,
@@ -88,25 +88,25 @@ function W(e) {
     let ei = (0, p.u)(G.x.STREAM, t.user.id);
     if (l.useEffect(() => {
             B.info(`Stream Tile State - activeStream: ${null!=$} | selected: ${n} | Video: ${null!=V} | MediaEngine: ${y.Ay.supports(G.O5.VIDEO)}`)
-        }, [V, $, n]), K) return (0, i.jsx)(O.A, {
+        }, [V, $, n]), K) return (0, i.jsx)(D.A, {
         stream: t.stream,
         isSmall: en,
         selected: n,
         isSelfStream: Y.id === W
     });
-    if ($?.state === w.XYD.ENDED) return (0, i.jsx)(M.A, {
+    if ($?.state === U.XYD.ENDED) return (0, i.jsx)(M.A, {
         selected: n,
         stream: $,
         width: x
     });
-    if (null != ei || $?.state === w.XYD.FAILED) return (0, i.jsx)(L.A, {
+    if (null != ei || $?.state === U.XYD.FAILED) return (0, i.jsx)(L.A, {
         avError: ei?.type,
         avErrorContext: ei,
         selected: n,
         stream: t.stream,
         width: x
     });
-    if (t.type === U.lp.HIDDEN_STREAM) return (0, i.jsx)(D.A, {
+    if (t.type === k.lp.HIDDEN_STREAM) return (0, i.jsx)(O.A, {
         selected: n,
         participant: t,
         width: x
@@ -119,7 +119,7 @@ function W(e) {
             streamId: J,
             videoComponent: V,
             fit: g,
-            paused: k || $?.state === w.XYD.PAUSED || ee,
+            paused: w || $?.state === U.XYD.PAUSED || ee,
             videoSpinnerContext: Q ? m.u.SELF_STREAM : m.u.REMOTE_STREAM,
             userId: Y.id,
             streamKey: t.id

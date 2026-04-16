@@ -3,8 +3,8 @@ n.d(t, {
     t: () => o
 });
 var i = n(64700),
-    l = n(810412),
-    r = n(914853),
+    r = n(810412),
+    l = n(914853),
     s = n(509295),
     a = n(406595);
 
@@ -22,11 +22,11 @@ function o(e) {
             tab: t,
             targetId: n,
             isFavorite: !i
-        }), (0, l.YX)(u, {
-            type: l.Z5.FAVORITE,
-            value: i ? l.IP.REMOVED_FROM_FAVORITES : l.IP.ADDED_TO_FAVORITES,
+        }), (0, r.YX)(u, {
+            type: r.Z5.FAVORITE,
+            value: i ? r.IP.REMOVED_FROM_FAVORITES : r.IP.ADDED_TO_FAVORITES,
             secondaryValue: t,
-            userId: t === r.x.FRIENDS ? n : void 0
+            userId: t === l.x.FRIENDS ? n : void 0
         })
     }, [o, t, n, u])
 }

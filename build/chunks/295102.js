@@ -3,8 +3,8 @@ n.d(t, {
     A: () => T
 });
 var i = n(627968),
-    l = n(442433),
-    r = n(383501),
+    r = n(442433),
+    l = n(383501),
     s = n(1193),
     a = n(589051),
     o = n(547463),
@@ -30,8 +30,8 @@ let T = {
             let {
                 widget: t,
                 locked: n,
-                size: l,
-                padding: r,
+                size: r,
+                padding: l,
                 borderWidth: s,
                 showEmpty: a
             } = e;
@@ -39,10 +39,10 @@ let T = {
                 id: t.id,
                 locked: n,
                 widget: t,
-                height: "auto" === l.height ? 0 : l.height - 2 * r - 2 * s,
-                width: "auto" === l.width ? 0 : l.width - 2 * r - 2 * s,
+                height: "auto" === r.height ? 0 : r.height - 2 * l - 2 * s,
+                width: "auto" === r.width ? 0 : r.width - 2 * l - 2 * s,
                 showEmpty: a,
-                padding: r,
+                padding: l,
                 borderWidth: s
             }) : null
         },
@@ -52,7 +52,7 @@ let T = {
         renderButtons: e => (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(p.CS, {
                 onClick: t => {
-                    (0, g.cv)(e) && (0, l.L3)(t, async () => {
+                    (0, g.cv)(e) && (0, r.L3)(t, async () => {
                         let {
                             default: t
                         } = await n.e("78238").then(n.bind(n, 440173));
@@ -75,18 +75,18 @@ let T = {
             let {
                 widget: t,
                 anchorLeft: n,
-                locked: l,
-                showEmpty: r
+                locked: r,
+                showEmpty: l
             } = e;
             return (0, g.ZO)(t) ? (0, i.jsx)(E.Ay, {
                 anchorLeft: n,
                 id: t.id,
-                locked: l,
+                locked: r,
                 pinned: t.pinned,
                 widget: S.uss.VOICE_V3,
                 maxDisplayedVoiceStates: t.meta.voiceStatesMaxShown ?? 8,
                 isPreviewingInGame: !1,
-                showEmpty: r
+                showEmpty: l
             }) : null
         },
         renderTitle: () => (0, i.jsx)(p.Pl, {
@@ -95,7 +95,7 @@ let T = {
         renderButtons: e => (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(p.CS, {
                 onClick: e => {
-                    (0, l.L3)(e, async () => {
+                    (0, r.L3)(e, async () => {
                         let {
                             default: e
                         } = await n.e("34901").then(n.bind(n, 51444));
@@ -128,7 +128,7 @@ let T = {
         renderButtons: e => (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(p.CS, {
                 onClick: e => {
-                    (0, l.L3)(e, async () => {
+                    (0, r.L3)(e, async () => {
                         let {
                             default: e
                         } = await n.e("49170").then(n.bind(n, 508457));
@@ -148,11 +148,11 @@ let T = {
             let {
                 widget: t,
                 locked: n,
-                anchorLeft: l
+                anchorLeft: r
             } = e;
             return (0, i.jsx)(m.A, {
                 id: t.id,
-                anchorLeft: l,
+                anchorLeft: r,
                 locked: n,
                 pinned: t.pinned
             })
@@ -171,8 +171,8 @@ let T = {
             let {
                 widget: t,
                 locked: n,
-                size: l,
-                dragStart: r,
+                size: r,
+                dragStart: l,
                 anchorTop: s,
                 anchorLeft: a,
                 showEmpty: o,
@@ -184,12 +184,12 @@ let T = {
                 locked: n,
                 pinned: t.pinned,
                 opacity: t.opacity,
-                size: l,
+                size: r,
                 anchorTop: s,
                 anchorLeft: a,
                 widget: t,
                 isPreviewingInGame: !1,
-                dragStart: r,
+                dragStart: l,
                 horizontal: t.meta.horizontal ?? !1,
                 padding: u,
                 borderWidth: d,
@@ -203,7 +203,7 @@ let T = {
         renderButtons: e => (0, g.dO)(e) ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(p.CS, {
                 onClick: t => {
-                    (0, g.dO)(e) && (0, l.L3)(t, async () => {
+                    (0, g.dO)(e) && (0, r.L3)(t, async () => {
                         let {
                             default: t
                         } = await n.e("21289").then(n.bind(n, 543824));
@@ -238,10 +238,10 @@ let T = {
             let {
                 locked: t,
                 showEmpty: n,
-                widget: l
+                widget: r
             } = e;
             return (0, i.jsx)(_.A, {
-                pinned: l.pinned,
+                pinned: r.pinned,
                 locked: t,
                 showEmpty: n
             })
@@ -252,7 +252,7 @@ let T = {
         renderButtons: e => (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(p.CS, {
                 onClick: e => {
-                    (0, l.L3)(e, async () => {
+                    (0, r.L3)(e, async () => {
                         let {
                             default: e
                         } = await n.e("51607").then(n.bind(n, 320490));
@@ -304,12 +304,12 @@ let T = {
             let {
                 locked: t,
                 dragStart: n,
-                dragging: l
+                dragging: r
             } = e;
             return (0, i.jsx)(A.A, {
                 locked: t,
                 dragStart: n,
-                dragging: l
+                dragging: r
             })
         },
         renderTitle: () => (0, i.jsx)(p.Pl, {
@@ -318,16 +318,16 @@ let T = {
         renderButtons: () => null,
         predicate: () => (0, a.NI)("WidgetRenderConfig").hasChat,
         containerRenderGate: {
-            stores: [r.A, s.A],
+            stores: [l.A, s.A],
             shouldRender(e) {
                 let {
                     locked: t
                 } = e;
                 if (t) return !1;
-                let n = r.A.getChannelId() ?? null,
+                let n = l.A.getChannelId() ?? null,
                     [i] = s.A.getSessionEntries(),
-                    l = i.length > 0;
-                return null != n || l
+                    r = i.length > 0;
+                return null != n || r
             }
         }
     }

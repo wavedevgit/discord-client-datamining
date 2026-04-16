@@ -1,6 +1,6 @@
 /** chunk id: 592182 params = (module,exports,require) **/
 n.d(t, {
-    A: () => k
+    A: () => w
 });
 var i = n(627968);
 n(64700);
@@ -33,29 +33,29 @@ var l = n(503698),
     R = n(329151),
     M = n(738080),
     L = n(648246),
-    D = n(305637),
-    O = n(652215),
+    O = n(305637),
+    D = n(652215),
     P = n(708727);
-let k = (0, d.A)(e => {
+let w = (0, d.A)(e => {
     let {
         activity: t,
         embeddedActivity: n,
         user: l,
         applicationStream: s,
         className: d,
-        guildId: k,
-        channelId: w,
-        source: U,
+        guildId: w,
+        channelId: U,
+        source: k,
         buttonVariant: G,
         type: F,
         onAction: H
     } = e, B = (0, o.bG)([f.default], () => {
         let e = f.default.getCurrentUser();
         return r()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-    }), V = F === I.O.STREAM_PREVIEW || null != s, W = (0, C.A)(t), K = W || V ? h.A.Direction.HORIZONTAL : h.A.Direction.VERTICAL, z = (0, o.bG)([p.A], () => null != w ? p.A.getChannel(w) : null, [w]), {
+    }), V = F === I.O.STREAM_PREVIEW || null != s, W = (0, C.A)(t), K = W || V ? h.A.Direction.HORIZONTAL : h.A.Direction.VERTICAL, z = (0, o.bG)([p.A], () => null != U ? p.A.getChannel(U) : null, [U]), {
         enableRequestToStream: Y
     } = m.m.useExperiment({
-        guildId: k ?? z?.guild_id,
+        guildId: w ?? z?.guild_id,
         location: "UserActivityActions"
     }, {
         autoTrackExposure: !1
@@ -69,14 +69,14 @@ let k = (0, d.A)(e => {
         children: (() => {
             if (!(0, E.Ay)(t)) {
                 if ((0, x.A)(t)) return (0, i.jsx)(T.A, {
-                    platform: u.A.get(O.fg2.XBOX),
+                    platform: u.A.get(D.fg2.XBOX),
                     variant: G,
                     onAction: H,
                     icon: c.YWd
                 });
-                if (t?.platform === O.yTV.PS4 || t?.platform === O.yTV.PS5) return (0, i.jsx)(T.A, {
+                if (t?.platform === D.yTV.PS4 || t?.platform === D.yTV.PS5) return (0, i.jsx)(T.A, {
                     variant: G,
-                    platform: u.A.get(O.fg2.PLAYSTATION),
+                    platform: u.A.get(D.fg2.PLAYSTATION),
                     onAction: H,
                     icon: c.Xj
                 })
@@ -89,15 +89,15 @@ let k = (0, d.A)(e => {
                 let e = (0, i.jsx)(M.A, {
                         activity: t,
                         user: l,
-                        guildId: k,
-                        channelId: w,
-                        source: U,
+                        guildId: w,
+                        channelId: U,
+                        source: k,
                         onAction: H
                     }),
                     n = (0, i.jsx)(R.A, {
                         activity: t,
                         user: l,
-                        source: U,
+                        source: k,
                         onAction: H
                     });
                 return (0, i.jsxs)(c.ButtonGroup, {
@@ -115,7 +115,7 @@ let k = (0, d.A)(e => {
                     onAction: H
                 })
             }
-            return V ? (0, i.jsx)(D.A, {
+            return V ? (0, i.jsx)(O.A, {
                 isCurrentUser: B.id === l.id,
                 applicationStream: s,
                 onAction: H

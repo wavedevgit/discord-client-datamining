@@ -26,10 +26,10 @@ var i = t(627968),
     A = t(742810),
     E = t(584160),
     v = t(169797),
-    C = t(357669),
-    N = t(832286),
-    j = t(958340),
-    T = t(413748),
+    C = t(94420),
+    N = t(357669),
+    j = t(832286),
+    T = t(958340),
     M = t(156312),
     L = t(166532),
     R = t(566980),
@@ -134,14 +134,14 @@ function eh(e) {
             startingFractionalPremiumEndsAtRef: ej,
             customCheckoutFlow: eT
         } = (0, M.P5)(),
-        eM = (0, T.sw)(),
+        eM = (0, C.sw)(),
         eL = (0, o.bG)([z.A], () => z.A.hasFetchedSubscriptions()),
         eR = null != eC ? eC.paymentSourceId : null,
         eD = (0, o.bG)([K.A], () => null != eC ? (0, X.c9)(eC.planId) : null),
         eU = (0, o.bG)([K.A], () => null == eC || null != K.A.get(eC.planId)),
         ew = (0, o.bG)([K.A], () => null == eD ? K.A.get(ep) : eD),
         ek = l.useRef((0, J.D$)(Y.A.boostSlots)).current,
-        eO = (0, o.bG)([j.A], () => null != eb ? j.A.getGuild(eb) : void 0, [eb]),
+        eO = (0, o.bG)([T.A], () => null != eb ? T.A.getGuild(eb) : void 0, [eb]),
         eG = (0, o.bG)([H.A], () => H.A.defaultPaymentSourceId),
         eB = (0, W._V)(null != eR ? eR : eL ? eG : null),
         {
@@ -160,28 +160,28 @@ function eh(e) {
         [eX, eZ] = l.useState(eP - ek.length),
         {
             hasAcceptedTerms: e0,
-            setHasAcceptedTerms: e8
+            setHasAcceptedTerms: e9
         } = (0, M.P5)(),
-        e9 = (0, o.bG)([V.A], () => V.A.popupCallbackCalled),
+        e8 = (0, o.bG)([V.A], () => V.A.popupCallbackCalled),
         e6 = (0, g.Y)(),
-        e1 = l.useMemo(() => null != eC && eU && e6 ? (0, k.v)(eC, eX) : [{
+        e4 = l.useMemo(() => null != eC && eU && e6 ? (0, k.v)(eC, eX) : [{
             planId: eo.gD.PREMIUM_MONTH_GUILD,
             quantity: eX
         }], [eC, eU, eX, e6]),
-        e4 = l.useMemo(() => (0, U.A)(), []),
-        [e5, e3] = (0, m.A)(() => [e4 ?? (0, a.A)(), Date.now()]),
+        e5 = l.useMemo(() => (0, U.A)(), []),
+        [e1, e3] = (0, m.A)(() => [e5 ?? (0, a.A)(), Date.now()]),
         {
             analyticsLocations: e7
         } = (0, h.Ay)(eh, f.A.GUILD_BOOST_PURCHASE_MODAL),
-        e2 = l.useMemo(() => e1.find(e => {
+        e2 = l.useMemo(() => e4.find(e => {
             let {
                 planId: n
             } = e;
             return eo.pW.has(n)
-        })?.planId ?? eo.gD.PREMIUM_MONTH_GUILD, [e1]),
+        })?.planId ?? eo.gD.PREMIUM_MONTH_GUILD, [e4]),
         ne = (0, o.bG)([K.A], () => K.A.get(e2)?.skuId, [e2]),
         nn = l.useMemo(() => ({
-            load_id: e5,
+            load_id: e1,
             payment_type: ec.fr[ec.VV.SUBSCRIPTION],
             sku_id: eo.pe.GUILD,
             subscription_type: ea.rzx.PREMIUM,
@@ -191,7 +191,7 @@ function eh(e) {
             source: eg,
             location_stack: e7,
             checkout_flow: I.CL.GUILD_BOOST_CHECKOUT
-        }), [e5, eS, e7, eg, eX, e2]);
+        }), [e1, eS, e7, eg, eX, e2]);
     l.useEffect(() => {
         (0, Q.c_)(eY)
     }, [eY]);
@@ -231,7 +231,7 @@ function eh(e) {
             setPurchaseError: a
         } = na.current;
         (async () => {
-            if (!0 === e9) try {
+            if (!0 === e8) try {
                 if (null == V.A.redirectedPaymentId) return;
                 await (0, S.tn)(V.A.redirectedPaymentId), i(L.pn.CONFIRM), nd(R.h.COMPLETED), null != t && await ex(t, null != ev), l?.()
             } catch (t) {
@@ -246,8 +246,8 @@ function eh(e) {
                 s(!1), (0, S.bl)()
             }
         })()
-    }, [e9, ev]), (0, _.Ay)(() => {
-        z.A.hasFetchedSubscriptions() || (0, S.hP)(), null == eb || null != F.A.getGuild(eb) || null != j.A.getGuild(eb) || j.A.isGuildFetching(eb) || (0, N.y)(eb), (0, C.b)({
+    }, [e8, ev]), (0, _.Ay)(() => {
+        z.A.hasFetchedSubscriptions() || (0, S.hP)(), null == eb || null != F.A.getGuild(eb) || null != T.A.getGuild(eb) || T.A.isGuildFetching(eb) || (0, j.y)(eb), (0, N.b)({
             ...nn,
             guild_id: eb,
             application_id: eE,
@@ -379,7 +379,7 @@ function eh(e) {
                             paymentGatewayName: ec.qm[eC.paymentGateway]
                         })
                     }), e]
-                }) : !j.A.isGuildFetching(eb) && c && (e = (0, i.jsxs)(i.Fragment, {
+                }) : !T.A.isGuildFetching(eb) && c && (e = (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(u.po8, {
                         messageType: u.YCn.ERROR,
                         className: ed.MR,
@@ -431,8 +431,8 @@ function eh(e) {
                     currentPremiumSubscription: eC,
                     premiumSubscriptionPaymentSourceId: eR,
                     premiumSubscriptionPlan: ew,
-                    newAdditionalPlans: e1,
-                    onPurchaseTermsChange: e8,
+                    newAdditionalPlans: e4,
+                    onPurchaseTermsChange: e9,
                     legalTermsNodeRef: nf,
                     hasLegalTermsFlash: nh,
                     setPaymentSourceId: eK,
@@ -441,7 +441,7 @@ function eh(e) {
                     }
                 }), t = L.pn.PLAN_SELECT;
                 let _ = async () => {
-                    s()(null != e1, "Missing newAdditionalPlans");
+                    s()(null != e4, "Missing newAdditionalPlans");
                     let e = (0, D.W)(eW, eY);
                     eF(null);
                     try {
@@ -451,7 +451,7 @@ function eh(e) {
                                 currency: eM.currency
                             },
                             t = a.currency ?? eM.currency,
-                            i = (0, $.U8)(eC, e1, t.toLowerCase(), a.paymentSourceId);
+                            i = (0, $.U8)(eC, e4, t.toLowerCase(), a.paymentSourceId);
                         if (q.default.track(ea.HAw.PAYMENT_FLOW_COMPLETED, {
                                 ...nn,
                                 duration_ms: Date.now() - e3,
@@ -461,7 +461,7 @@ function eh(e) {
                         if (null == eC || null == eD) {
                             s()(null != e, "Missing paymentSource");
                             let l = await (0, S.Ky)({
-                                items: e1,
+                                items: e4,
                                 paymentSource: e,
                                 currency: t,
                                 expectedInvoicePrice: n,
@@ -470,7 +470,7 @@ function eh(e) {
                             if (l.redirectConfirmation) return void nN(null != l.redirectURL)
                         } else {
                             let l = {
-                                items: (0, $.aE)(eC, e1)
+                                items: (0, $.aE)(eC, e4)
                             };
                             l.currency = eC.currency ?? t, l.paymentSource = null != eR ? eW[eR] : void 0, null == l.paymentSource && (s()(null != e, "Missing paymentSource"), l.paymentSource = e, l.currency = t);
                             let r = await (0, S.nV)(eC, l, n, i, e7);

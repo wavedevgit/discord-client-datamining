@@ -3,16 +3,16 @@ n.d(t, {
     i: () => o
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(503698),
-    s = n.n(r),
+    r = n(64700),
+    l = n(503698),
+    s = n.n(l),
     a = n(943223);
 
 function o(e) {
     let {
         size: t,
         lowerBadge: n,
-        lowerBadgeSize: r = {
+        lowerBadgeSize: l = {
             width: 16,
             height: 16
         },
@@ -21,7 +21,7 @@ function o(e) {
         innerClassName: d,
         rounded: c = !0,
         "aria-hidden": h
-    } = e, g = null != n, m = l.useId(), f = `${m}-lower_badge_masks`, A = `${m}-shape_mask`, I = `${m}-stroke_mask`, E = r?.width != null ? r.width : 16, p = r?.height != null ? r.height : 16, _ = {
+    } = e, g = null != n, m = r.useId(), f = `${m}-lower_badge_masks`, A = `${m}-shape_mask`, I = `${m}-stroke_mask`, E = l?.width != null ? l.width : 16, p = l?.height != null ? l.height : 16, _ = {
         width: t + 8,
         height: t + 8,
         x: -4,

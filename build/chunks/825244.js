@@ -71,17 +71,17 @@ function M(e) {
 }
 
 function L(e) {
-    let t, a, h, x, L, D, {
-            channel: O
+    let t, a, h, x, L, O, {
+            channel: D
         } = e,
-        P = (0, o.bG)([E.A], () => null != O ? E.A.getGuild(O.getGuildId()) : null, [O]),
-        k = null != P && v.default.extractTimestamp(P.id) < Date.now() - y.NOr,
-        w = (0, o.bG)([f.default], () => P?.ownerId === f.default.getId(), [P]),
+        P = (0, o.bG)([E.A], () => null != D ? E.A.getGuild(D.getGuildId()) : null, [D]),
+        w = null != P && v.default.extractTimestamp(P.id) < Date.now() - y.NOr,
+        U = (0, o.bG)([f.default], () => P?.ownerId === f.default.getId(), [P]),
         {
-            canInvite: U,
+            canInvite: k,
             canManageGuild: G,
             canMessage: F
-        } = (0, A.Sk)(O, P),
+        } = (0, A.Sk)(D, P),
         H = (0, o.bG)([C.default], () => C.default.getCurrentUser()?.desktop === !0 || C.default.getCurrentUser()?.mobile === !0),
         {
             guildPopulated: B,
@@ -164,27 +164,27 @@ function L(e) {
         {
             titleAnimatedStyle: Z,
             opacities: X
-        } = (x = (0, u.A)(() => new r.A.Value(0)), L = (0, u.A)(() => new r.A.Value(0)), D = (0, u.A)(() => [new r.A.Value(0), new r.A.Value(0), new r.A.Value(0), new r.A.Value(0)]), l.useEffect(() => {
+        } = (x = (0, u.A)(() => new r.A.Value(0)), L = (0, u.A)(() => new r.A.Value(0)), O = (0, u.A)(() => [new r.A.Value(0), new r.A.Value(0), new r.A.Value(0), new r.A.Value(0)]), l.useEffect(() => {
             r.A.stagger(300, [r.A.parallel([r.A.timing(L, {
                 toValue: 1,
                 duration: 450
             }), r.A.timing(x, {
                 toValue: 1,
                 duration: 450
-            })]), r.A.stagger(100, [r.A.timing(D[0], {
+            })]), r.A.stagger(100, [r.A.timing(O[0], {
                 toValue: 1,
                 duration: 300
-            }), r.A.timing(D[1], {
+            }), r.A.timing(O[1], {
                 toValue: 1,
                 duration: 300
-            }), r.A.timing(D[2], {
+            }), r.A.timing(O[2], {
                 toValue: 1,
                 duration: 300
-            }), r.A.timing(D[3], {
+            }), r.A.timing(O[3], {
                 toValue: 1,
                 duration: 300
             })])]).start()
-        }, [L, x, D]), {
+        }, [L, x, O]), {
             titleAnimatedStyle: $ ? {
                 transform: [{
                     translateY: x.interpolate({
@@ -194,7 +194,7 @@ function L(e) {
                 }],
                 opacity: L
             } : {},
-            opacities: D
+            opacities: O
         }),
         [Q, ee] = l.useState([]),
         et = Q.length > 0;
@@ -207,7 +207,7 @@ function L(e) {
             })()
         }, [P?.id]), null == P) return null;
     let en = [];
-    k || (U && en.push((0, i.jsx)(r.A.div, {
+    w || (k && en.push((0, i.jsx)(r.A.div, {
         className: R.cW,
         style: $ ? {
             opacity: X[en.length]
@@ -263,11 +263,11 @@ function L(e) {
             onClick: q
         })
     }, "addapp")));
-    let ei = w ? j.intl.string(j.t["1ach9C"]) : j.intl.string(j.t["ezm+/j"]);
-    k && (ei = j.intl.string(j.t["gwyU/J"]));
+    let ei = U ? j.intl.string(j.t["1ach9C"]) : j.intl.string(j.t["ezm+/j"]);
+    w && (ei = j.intl.string(j.t["gwyU/J"]));
     let el = `${I.A.getArticleURL(y.MVz.GUILD_GETTING_STARTED)}?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm`;
     return (0, i.jsx)(N.Ay, {
-        channelId: O.id,
+        channelId: D.id,
         children: (0, i.jsx)("div", {
             className: R.kL,
             children: (0, i.jsxs)("div", {

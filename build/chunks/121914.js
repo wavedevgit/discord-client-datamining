@@ -1,10 +1,10 @@
 /** chunk id: 121914 params = (module,exports,require) **/
 n.d(t, {
-    _: () => b,
+    _: () => D,
     g: () => O
 });
-var i, l = n(627968),
-    r = n(64700),
+var i, r = n(627968),
+    l = n(64700),
     s = n(503698),
     a = n.n(s),
     o = n(311907),
@@ -23,21 +23,21 @@ var i, l = n(627968),
     S = n(1193),
     x = n(145567),
     T = n(922611),
-    N = n(651813),
-    C = n(919843),
+    C = n(651813),
+    N = n(919843),
     v = n(534765),
     y = n(34307),
     M = n(652215),
-    R = n(985018),
-    D = n(95231),
-    b = ((i = {}).DEFAULT = "DEFAULT", i.CHANNEL_TYPE = "CHANNEL_TYPE", i);
-let O = r.memo(function(e) {
+    b = n(985018),
+    R = n(95231),
+    D = ((i = {}).DEFAULT = "DEFAULT", i.CHANNEL_TYPE = "CHANNEL_TYPE", i);
+let O = l.memo(function(e) {
     let {
         channelId: t,
         selectedVoiceChannelId: n,
         iconVariant: i = "DEFAULT"
-    } = e, s = null != n && t === n, b = (0, o.bG)([S.A], () => S.A.getSelectedChannelId() === t, [t]), O = (0, o.bG)([S.A], () => S.A.getVoiceChatMinimized()), w = (0, d.rdh)(d.LU0.colors.ICON_STATUS_ONLINE), j = (0, o.bG)([E.A], () => !!s && !!(E.A.isAnyoneElseSpeaking() || E.A.isCurrentUserSpeaking()), [s]), [U, L] = r.useState(!1), {
-        mentionCount: k,
+    } = e, s = null != n && t === n, D = (0, o.bG)([S.A], () => S.A.getSelectedChannelId() === t, [t]), O = (0, o.bG)([S.A], () => S.A.getVoiceChatMinimized()), w = (0, d.rdh)(d.LU0.colors.ICON_STATUS_ONLINE), j = (0, o.bG)([E.A], () => !!s && !!(E.A.isAnyoneElseSpeaking() || E.A.isCurrentUserSpeaking()), [s]), [k, U] = l.useState(!1), {
+        mentionCount: L,
         isMentionLowImportance: G
     } = (0, o.cf)([A.Ay], () => null != t ? {
         mentionCount: A.Ay.getMentionCount(t),
@@ -53,7 +53,7 @@ let O = r.memo(function(e) {
     } = (0, o.cf)([m.A, f.A, _.default, I.A], () => {
         let e = m.A.getChannel(t) ?? null;
         if (null == e) return {
-            label: R.intl.string(R.t.zLZPmk),
+            label: b.intl.string(b.t.zLZPmk),
             user: null,
             guild: null,
             channel: null
@@ -61,13 +61,13 @@ let O = r.memo(function(e) {
         let n = (0, c.m1)(e, _.default, I.A);
         return {
             label: n,
-            user: (0, N.j)(e, _.default),
-            guild: (0, N.P)(e, f.A),
+            user: (0, C.j)(e, _.default),
+            guild: (0, C.P)(e, f.A),
             channel: e
         }
     }, [t]);
-    r.useEffect(() => {
-        null == z && (0, C.b)(t)
+    l.useEffect(() => {
+        null == z && (0, N.b)(t)
     }, [z, t]);
     let H = (0, o.bG)([p.A, _.default], () => {
             if (null == z) return !1;
@@ -81,8 +81,8 @@ let O = r.memo(function(e) {
             let e = z?.id;
             return null != e && A.Ay.hasUnread(e)
         }, [z]),
-        W = (0, l.jsx)("div", {
-            className: D.St,
+        W = (0, r.jsx)("div", {
+            className: R.St,
             children: (() => {
                 let e = z?.isPrivate() ?? !1;
                 if ("CHANNEL_TYPE" === i && !e) {
@@ -95,27 +95,27 @@ let O = r.memo(function(e) {
                         i = w.rgba({
                             opacity: .85
                         }),
-                        r = w.rgba({
+                        l = w.rgba({
                             opacity: .45
                         });
-                    return t && (n.boxShadow = `0 0 0 2px rgba(${i}), 0 0 12px 2px rgba(${r})`), (0, l.jsx)("div", {
-                        className: a()(D.s, b && D.lJ),
+                    return t && (n.boxShadow = `0 0 0 2px rgba(${i}), 0 0 12px 2px rgba(${l})`), (0, r.jsx)("div", {
+                        className: a()(R.s, D && R.lJ),
                         style: n,
-                        children: (0, l.jsx)(e, {
-                            className: D.Yc,
+                        children: (0, r.jsx)(e, {
+                            className: R.Yc,
                             size: "sm",
-                            color: b ? d.LU0.colors.WHITE : d.LU0.colors.ICON_STATUS_ONLINE
+                            color: D ? d.LU0.colors.WHITE : d.LU0.colors.ICON_STATUS_ONLINE
                         })
                     })
                 }
-                return (0, l.jsx)(T.g, {
+                return (0, r.jsx)(T.g, {
                     channel: z,
                     user: F,
                     guild: V,
-                    isSelected: b,
+                    isSelected: D,
                     size: T.c.SIZE_40,
                     isTyping: H,
-                    mentionCount: k,
+                    mentionCount: L,
                     isMentionLowImportance: G
                 })
             })()
@@ -132,21 +132,21 @@ let O = r.memo(function(e) {
         q = (() => {
             if (null == z || Z) return null;
             let e = (0, h.gU)(z, V);
-            return e ??= d.oyn, (0, l.jsx)(e, {
+            return e ??= d.oyn, (0, r.jsx)(e, {
                 size: "sm",
                 color: d.LU0.colors.INTERACTIVE_ICON_DEFAULT
             })
         })();
-    return null == z ? (0, l.jsx)("div", {
-        className: D.R
-    }) : (0, l.jsx)(u.u, {
+    return null == z ? (0, r.jsx)("div", {
+        className: R.R
+    }) : (0, r.jsx)(u.u, {
         title: K,
         body: $,
         asset: q,
         assetSize: 20,
         "aria-label": P,
-        children: (0, l.jsxs)(d.DUT, {
-            className: D.pc,
+        children: (0, r.jsxs)(d.DUT, {
+            className: R.pc,
             onClick: () => {
                 s && (0, x.S$)({
                     minimized: !1
@@ -162,13 +162,13 @@ let O = r.memo(function(e) {
                 })
             },
             onContextMenu: B,
-            onMouseEnter: () => L(!0),
-            onMouseLeave: () => L(!1),
-            children: [W, (0, l.jsx)("div", {
-                className: D.vT,
-                children: (0, l.jsx)(g.A, {
-                    selected: b,
-                    hovered: U,
+            onMouseEnter: () => U(!0),
+            onMouseLeave: () => U(!1),
+            children: [W, (0, r.jsx)("div", {
+                className: R.vT,
+                children: (0, r.jsx)(g.A, {
+                    selected: D,
+                    hovered: k,
                     unread: Y
                 })
             })]

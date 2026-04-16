@@ -1,6 +1,6 @@
 /** chunk id: 817176 params = (module,exports,require) **/
 n.d(t, {
-    A: () => D
+    A: () => O
 });
 var i = n(627968),
     l = n(64700),
@@ -40,7 +40,7 @@ let j = Object.freeze({
     M = s()("#000000").alpha(0).hex(),
     L = `linear-gradient(to top, ${R} 30%, ${M} 80%)`;
 
-function D(e) {
+function O(e) {
     var t, n;
     let {
         sku: a,
@@ -48,14 +48,14 @@ function D(e) {
         isTargetingCurrentUser: r,
         source: R,
         showIcons: M,
-        guildId: D,
-        channelId: O,
+        guildId: O,
+        channelId: D,
         analyticsLocations: P,
-        onCardClick: k,
-        onButtonClick: w
-    } = e, U = l.useRef(null), G = (0, d.bG)([_.A], () => (0, c.Mwr)(_.A.theme)), F = (0, d.bG)([h.A], () => h.A.useReducedMotion), {
+        onCardClick: w,
+        onButtonClick: U
+    } = e, k = l.useRef(null), G = (0, d.bG)([_.A], () => (0, c.Mwr)(_.A.theme)), F = (0, d.bG)([h.A], () => h.A.useReducedMotion), {
         isHoveringOrFocusing: H
-    } = (0, A.A)(U), {
+    } = (0, A.A)(k), {
         guildId: B
     } = (0, x.nG)(a.applicationId), V = (0, d.bG)([m.A], () => m.A.getApplication(a.applicationId)), {
         primaryIconAsset: W,
@@ -134,7 +134,7 @@ function D(e) {
         sku: a,
         priceSetAssignmentPurchaseType: r ? v.lid.DEFAULT : v.lid.GIFT
     }), q = l.useCallback(e => {
-        e.stopPropagation(), k?.(), (0, S.R)({
+        e.stopPropagation(), w?.(), (0, S.R)({
             skuId: a.id,
             applicationId: a.applicationId,
             isStorefront: !1,
@@ -142,8 +142,8 @@ function D(e) {
             giftingOrigin: N.vQ.GUILD_CHANNEL,
             analyticsLocations: P
         })
-    }, [a.id, a.applicationId, s, P, k]), $ = l.useCallback(e => {
-        e.stopPropagation(), w?.(), (0, I.a)(a, {
+    }, [a.id, a.applicationId, s, P, w]), $ = l.useCallback(e => {
+        e.stopPropagation(), U?.(), (0, I.a)(a, {
             isGift: !r,
             giftRecipient: s,
             giftingOrigin: N.vQ.GUILD_CHANNEL
@@ -151,7 +151,7 @@ function D(e) {
             analyticsLocations: P,
             guildId: B
         })
-    }, [a, s, r, P, B, w]);
+    }, [a, s, r, P, B, U]);
     return (0, i.jsx)(c.vN3, {
         children: (0, i.jsxs)(u.sqX, {
             onClick: q,
@@ -160,7 +160,7 @@ function D(e) {
                 [b.BN]: G,
                 [b.YF]: H
             }),
-            ref: U,
+            ref: k,
             "aria-label": a.name,
             children: [(0, i.jsx)(E.P, {
                 spec: j,
@@ -173,8 +173,8 @@ function D(e) {
                 replacedElement: M && !r && R === p.uS.WISHLIST ? (0, i.jsx)(C.n, {
                     spec: j,
                     user: s,
-                    guildId: D ?? void 0,
-                    channelId: O ?? void 0
+                    guildId: O ?? void 0,
+                    channelId: D ?? void 0
                 }) : null
             }), (0, i.jsx)(T.e, {
                 shape: "custom",

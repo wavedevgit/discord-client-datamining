@@ -49,12 +49,12 @@ function I(e) {
     } = e, [E, S] = l.useState(""), [I, T] = l.useState({}), [v, N] = l.useState(!1), [y, b] = l.useState(null), j = l.useRef(null), R = (0, d.Ay)(n), {
         roles: M,
         members: L,
-        getRichTag: D
-    } = (0, p.K)(t, n, n.accessPermissions, E), O = _.A.useSections({
+        getRichTag: O
+    } = (0, p.K)(t, n, n.accessPermissions, E), D = _.A.useSections({
         roles: M,
         members: L
     }), P = h && 0 === Object.keys(I).length;
-    async function k() {
+    async function w() {
         if (null == n || 0 === Object.keys(I).length) return void s();
         N(!0);
         try {
@@ -71,7 +71,7 @@ function I(e) {
             N(!1), b(e)
         }
     }
-    let w = (0, u.ke)(n.type) ? r.I$d : r.trU;
+    let U = (0, u.ke)(n.type) ? r.I$d : r.trU;
     return (0, i.jsx)(_.A.Provider, {
         listRef: j,
         query: E,
@@ -80,7 +80,7 @@ function I(e) {
         setPendingAdditions: T,
         roles: M,
         members: L,
-        getRichTag: D,
+        getRichTag: O,
         children: (0, i.jsx)(a.Modal, {
             ...A,
             title: C.intl.string(C.t.dMJ3Y6),
@@ -90,7 +90,7 @@ function I(e) {
                     className: x.HA,
                     variant: "text-lg/normal",
                     color: "text-default",
-                    children: [(0, i.jsx)(w, {
+                    children: [(0, i.jsx)(U, {
                         className: x.p,
                         size: "sm",
                         color: "currentColor"
@@ -119,7 +119,7 @@ function I(e) {
                 renderSection: _.A.renderSection,
                 rowHeight: _.A.ROW_HEIGHT,
                 renderRow: _.A.renderRow,
-                sections: O
+                sections: D
             },
             actions: P ? [{
                 variant: "secondary",
@@ -132,7 +132,7 @@ function I(e) {
             }, {
                 variant: "primary",
                 text: C.intl.string(C.t.i4jeWR),
-                onClick: k,
+                onClick: w,
                 loading: v
             }]
         })

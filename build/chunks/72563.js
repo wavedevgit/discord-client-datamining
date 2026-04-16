@@ -1,17 +1,17 @@
 /** chunk id: 72563 params = (module,exports,require) **/
-l.d(t, {
-    i: () => c
+s.d(t, {
+    i: () => d
 });
-var n = l(64700),
-    s = l(311907),
-    r = l(287809),
-    a = l(403362),
-    i = l(427262),
-    u = l(985018);
+var i = s(64700),
+    l = s(311907),
+    n = s(287809),
+    a = s(403362),
+    r = s(427262),
+    u = s(985018);
 
-function c(e) {
-    let t = (0, s.yK)([r.default], () => e.recipients.map(e => r.default.getUser(e)).filter(a.Vq).map(e => i.Ay.getName(e)));
-    return n.useMemo(() => {
+function d(e) {
+    let t = (0, l.yK)([n.default], () => e.recipients.map(e => n.default.getUser(e)).filter(a.Vq).map(e => r.Ay.getName(e)));
+    return i.useMemo(() => {
         if ("" === e.name) return null;
         if (0 === t.length) return null;
         if (1 === t.length) return u.intl.formatToPlainString(u.t["J+Wpst"], {
@@ -26,12 +26,12 @@ function c(e) {
             second: t[1],
             third: t[2]
         });
-        let l = t.length - 3;
+        let s = t.length - 3;
         return u.intl.formatToPlainString(u.t.VYfueb, {
             first: t[0],
             second: t[1],
             third: t[2],
-            count: l
+            count: s
         })
     }, [e, t])
 }

@@ -11,12 +11,12 @@ var a = r(1139),
     c = r(865977),
     l = r(761847),
     u = r(416886),
-    f = r(64700),
-    b = r(223108),
-    d = r.n(b),
+    b = r(64700),
+    f = r(223108),
+    d = r.n(f),
     h = r(708906),
     p = function(e) {
-        (0, i.A)(b, e);
+        (0, i.A)(f, e);
         var t, r = (t = function() {
             if ("u" < typeof Reflect || !Reflect.construct || Reflect.construct.sham) return !1;
             if ("function" == typeof Proxy) return !0;
@@ -26,13 +26,13 @@ var a = r(1139),
                 return !1
             }
         }(), function() {
-            var e, r = (0, l.A)(b);
+            var e, r = (0, l.A)(f);
             return e = t ? Reflect.construct(r, arguments, (0, l.A)(this).constructor) : r.apply(this, arguments), (0, c.A)(this, e)
         });
 
-        function b(e) {
+        function f(e) {
             var t;
-            return (0, n.A)(this, b), t = r.call(this, e), (0, u.A)((0, s.A)(t), "handleClick", function() {
+            return (0, n.A)(this, f), t = r.call(this, e), (0, u.A)((0, s.A)(t), "handleClick", function() {
                 t.setState({
                     expanded: !t.state.expanded
                 })
@@ -40,7 +40,7 @@ var a = r(1139),
                 expanded: !1
             }, t
         }
-        return (0, o.A)(b, [{
+        return (0, o.A)(f, [{
             key: "render",
             value: function() {
                 var e = this.props,
@@ -49,9 +49,9 @@ var a = r(1139),
                     n = e.to,
                     o = e.renderChildNodes,
                     s = e.nodeType;
-                return this.state.expanded ? f.createElement("div", t("itemRange", this.state.expanded), o(this.props, r, n)) : f.createElement("div", (0, a.A)({}, t("itemRange", this.state.expanded), {
+                return this.state.expanded ? b.createElement("div", t("itemRange", this.state.expanded), o(this.props, r, n)) : b.createElement("div", (0, a.A)({}, t("itemRange", this.state.expanded), {
                     onClick: this.handleClick
-                }), f.createElement(h.A, {
+                }), b.createElement(h.A, {
                     nodeType: s,
                     styling: t,
                     expanded: !1,
@@ -59,8 +59,8 @@ var a = r(1139),
                     arrowStyle: "double"
                 }), "".concat(r, " ... ").concat(n))
             }
-        }]), b
-    }(f.Component);
+        }]), f
+    }(b.Component);
 (0, u.A)(p, "propTypes", {
     styling: d().func.isRequired,
     from: d().number.isRequired,

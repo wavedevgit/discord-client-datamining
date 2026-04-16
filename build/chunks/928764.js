@@ -32,12 +32,12 @@ var i = n(627968),
     R = n(734057),
     M = n(147036),
     L = n(957565),
-    D = n(435470),
-    O = n(473503),
+    O = n(435470),
+    D = n(473503),
     P = n(853742),
-    k = n(652215),
-    w = n(985018),
-    U = n(221314),
+    w = n(652215),
+    U = n(985018),
+    k = n(221314),
     G = n(189971),
     F = n(347353),
     H = n(518229);
@@ -53,7 +53,7 @@ function B(e) {
     return s ? (0, i.jsx)(d.Button, {
         size: "sm",
         variant: "secondary",
-        text: a ? w.intl.string(U.default["2Y4vkk"]) : w.intl.string(U.default.YIbR4r),
+        text: a ? U.intl.string(k.default["2Y4vkk"]) : U.intl.string(k.default.YIbR4r),
         onClick: () => {
             !0 === o.w.get(N.f) ? u() : (0, d.mMO)(async () => {
                 let {
@@ -87,14 +87,14 @@ function V(e) {
     } = e, {
         ref: I,
         width: T
-    } = (0, m.Ay)(), [N, U] = l.useState(3), [V, W] = l.useState(!n), [K, z] = (0, A.A)(!1, 2e3), Y = (0, r.bG)([R.A], () => R.A.getChannel(t), [t]), {
+    } = (0, m.Ay)(), [N, k] = l.useState(3), [V, W] = l.useState(!n), [K, z] = (0, A.A)(!1, 2e3), Y = (0, r.bG)([R.A], () => R.A.getChannel(t), [t]), {
         firstMessage: J
-    } = (0, O.OA)(Y), q = (0, r.bG)([b.A], () => b.A.hasJoined(t)), {
+    } = (0, D.OA)(Y), q = (0, r.bG)([b.A], () => b.A.hasJoined(t)), {
         disableReactionUpdates: $,
         disableReactionCreates: Z,
         isLurking: X,
         isPendingMember: Q
-    } = (0, f.A)(Y), ee = (0, v.W1)(Y), et = (0, r.bG)([R.A], () => R.A.getChannel(o)), en = (0, D.Ck)(et), ei = (0, r.bG)([g.A], () => g.A.shouldDisplayPrompt(t) && !0 === n, [t, n]), el = l.useCallback(e => {
+    } = (0, f.A)(Y), ee = (0, v.W1)(Y), et = (0, r.bG)([R.A], () => R.A.getChannel(o)), en = (0, O.Ck)(et), ei = (0, r.bG)([g.A], () => g.A.shouldDisplayPrompt(t) && !0 === n, [t, n]), el = l.useCallback(e => {
         let t = e[0];
         if (null != t && n) {
             let e = t.intersectionRect,
@@ -114,14 +114,14 @@ function V(e) {
     });
     let [ea, es] = l.useState(!0);
     if (l.useEffect(() => {
-            null == T || (U(Math.floor((T - 280) / 58)), es(!1))
+            null == T || (k(Math.floor((T - 280) / 58)), es(!1))
         }, [T]), null == Y || null == J) return null;
     let er = J.reactions.length > 0,
         eo = () => {
             (0, P.jC)({
                 postId: Y.id,
                 location: {
-                    section: k.JJy.CHANNEL_HEADER
+                    section: w.JJy.CHANNEL_HEADER
                 }
             }), (0, L.C)((0, M.af)(Y, et), () => z(!0))
         },
@@ -179,40 +179,40 @@ function V(e) {
                         [G.w$]: !er
                     }),
                     isForumToolbar: !0,
-                    children: !er && w.intl.string(w.t.xpOyTO)
+                    children: !er && U.intl.string(U.t.xpOyTO)
                 })]
             }), (0, i.jsxs)("div", {
                 className: G.Uo,
                 children: [ee ? (0, i.jsx)(B, {
                     channel: Y
                 }) : !X && (0, i.jsx)(c.m, {
-                    text: w.intl.string(w.t.F7oeDv),
+                    text: U.intl.string(U.t.F7oeDv),
                     children: (0, i.jsx)(d.Button, {
                         icon: ec,
                         size: "sm",
                         variant: "secondary",
-                        text: q ? w.intl.string(w.t["7OkUzs"]) : w.intl.string(w.t["3aOv+h"]),
+                        text: q ? U.intl.string(U.t["7OkUzs"]) : U.intl.string(U.t["3aOv+h"]),
                         onClick: () => {
                             q ? j.A.leaveThread(Y, "Forum Toolbar") : j.A.joinThread(Y, "Forum Toolbar")
                         }
                     })
                 }), (0, i.jsx)(c.m, {
-                    text: w.intl.string(w.t.WqhZss),
+                    text: U.intl.string(U.t.WqhZss),
                     children: K ? (0, i.jsx)(d.Button, {
                         icon: d.A9s,
                         size: "sm",
                         variant: "secondary",
                         onClick: eo,
-                        text: w.intl.string(w.t.t5VZ88)
+                        text: U.intl.string(U.t.t5VZ88)
                     }) : (0, i.jsx)(d.K0, {
                         icon: d.qYV,
                         size: "sm",
                         variant: "secondary",
                         onClick: eo,
-                        "aria-label": w.intl.string(w.t.WqhZss)
+                        "aria-label": U.intl.string(U.t.WqhZss)
                     })
                 }), !n && (0, i.jsx)(c.m, {
-                    text: w.intl.string(w.t.nFP4oa),
+                    text: U.intl.string(U.t.nFP4oa),
                     children: (0, i.jsx)(d.K0, {
                         icon: d.Dl6,
                         size: "sm",
@@ -225,7 +225,7 @@ function V(e) {
                                 jumpType: h.US.INSTANT
                             })
                         },
-                        "aria-label": w.intl.string(w.t.nFP4oa)
+                        "aria-label": U.intl.string(U.t.nFP4oa)
                     })
                 })]
             })]

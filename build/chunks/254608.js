@@ -1,20 +1,20 @@
 /** chunk id: 254608 params = (module,exports,require) **/
 a.d(t, {
-    l: () => i
+    l: () => _
 });
-var n = a(627968),
-    r = a(64700),
+var s = a(627968),
+    n = a(64700),
     l = a(397927),
-    s = a(457417),
-    o = a(985018);
-let i = () => {
+    r = a(457417),
+    i = a(985018);
+let _ = () => {
     let {
         searchText: e,
         updateSearchText: t
-    } = (0, s.Vw)(), a = r.useRef(null);
-    return (0, r.useEffect)(() => {
+    } = (0, r.Vw)(), a = n.useRef(null);
+    return (0, n.useEffect)(() => {
         null !== a.current && "" === e && a.current.focus()
-    }, [e, a]), (0, n.jsx)(l.IWV, {
+    }, [e, a]), (0, s.jsx)(l.IWV, {
         ref: a,
         query: e,
         onChange: e => {
@@ -23,8 +23,8 @@ let i = () => {
         onClear: () => {
             t("")
         },
-        placeholder: o.intl.string(o.t["5h0QOP"]),
-        "aria-label": o.intl.string(o.t["5h0QOP"]),
+        placeholder: i.intl.string(i.t["5h0QOP"]),
+        "aria-label": i.intl.string(i.t["5h0QOP"]),
         autoFocus: !0
     })
 }

@@ -38,35 +38,35 @@ function N(e) {
         renderInputProfiles: R = !1,
         renderOutputDevices: M = !1,
         renderOutputVolume: L = !1,
-        renderInputDevices: D = !1,
-        renderInputVolume: O = !1,
+        renderInputDevices: O = !1,
+        renderInputVolume: D = !1,
         maybeRenderInputMeter: P = !1,
-        renderSettingsButton: k = !1
+        renderSettingsButton: w = !1
     } = e, {
-        analyticsLocations: w
+        analyticsLocations: U
     } = (0, d.Ay)();
     (0, u.A)({
         type: l.ImpressionTypes.MENU,
         name: l.ImpressionNames.AUDIO_DEVICE_MENU,
         properties: {
-            location_stack: w
+            location_stack: U
         }
     });
-    let U = (0, C.A)(t),
+    let k = (0, C.A)(t),
         G = (0, h.H)({
             deviceType: I.oh.AUDIO_INPUT,
-            analyticsLocations: w,
+            analyticsLocations: U,
             asSubmenu: !0
         }),
         F = (0, h.H)({
             deviceType: I.oh.AUDIO_OUTPUT,
-            analyticsLocations: w,
+            analyticsLocations: U,
             asSubmenu: !0
         }),
         H = (0, a.bG)([_.Ay], () => _.Ay.getActiveInputProfile()),
-        B = (0, A.A)(w),
-        V = (0, m.A)(w),
-        W = (0, g.A)(w),
+        B = (0, A.A)(U),
+        V = (0, m.A)(U),
+        W = (0, g.A)(U),
         K = s.x.DEFAULT,
         z = _.Ay.isSelfDeaf(K),
         Y = (0, a.bG)([_.Ay], () => _.Ay.getMode()),
@@ -90,9 +90,9 @@ function N(e) {
             "aria-label": T.intl.string(T.t.ZR1Ss6),
             className: v.MK,
             children: [(0, i.jsxs)(r.rXV, {
-                children: [D && G, R && B, M && F]
+                children: [O && G, R && B, M && F]
             }), (0, i.jsxs)(r.rXV, {
-                children: [O && V, P && $ && (0, i.jsx)(r.aK1, {
+                children: [D && V, P && $ && (0, i.jsx)(r.aK1, {
                     id: "input-device-meter",
                     interactive: !1,
                     control: () => (0, i.jsx)(E.A, {
@@ -111,7 +111,7 @@ function N(e) {
                     id: "input-mode",
                     label: T.intl.string(T.t.Q8gkVL),
                     action: () => o.A.setMode(J, void 0, void 0, {
-                        analyticsLocations: w
+                        analyticsLocations: U
                     }),
                     disabled: H === S.m.STUDIO
                 }) : null, j && (0, i.jsx)(r.sLh, {
@@ -122,7 +122,7 @@ function N(e) {
                         location: "AudioDeviceMenu"
                     }),
                     checked: z
-                }, "self-deafen"), k && U]
+                }, "self-deafen"), w && k]
             })]
         })
     })

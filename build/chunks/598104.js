@@ -1,36 +1,36 @@
 /** chunk id: 598104 params = (module,exports,require) **/
-a.d(t, {
-    A: () => c
+n.d(t, {
+    A: () => u
 });
-var s = a(627968),
-    n = a(64700),
-    i = a(397927),
-    l = a(571694),
-    r = a(954376);
-let c = n.memo(function(e) {
+var l = n(627968),
+    a = n(64700),
+    s = n(397927),
+    i = n(571694),
+    r = n(954376);
+let u = a.memo(function(e) {
     let {
         channel: t,
-        size: a,
-        facepileSizeOverride: n,
-        isTyping: c,
+        size: n,
+        facepileSizeOverride: a,
+        isTyping: u,
         status: o,
-        className: d,
-        animated: _ = !1,
-        ...h
+        className: c,
+        animated: A = !1,
+        ...d
     } = e;
-    return t.recipients.length >= 2 && null == t.icon ? (0, s.jsx)(r.A, {
-        "aria-label": h["aria-label"],
-        "aria-hidden": h["aria-hidden"],
-        className: d,
+    return t.recipients.length >= 2 && null == t.icon ? (0, l.jsx)(r.A, {
+        "aria-label": d["aria-label"],
+        "aria-hidden": d["aria-hidden"],
+        className: c,
         recipients: t.recipients,
-        size: n ?? a,
-        isTyping: c,
+        size: a ?? n,
+        isTyping: u,
         status: o
-    }) : (0, s.jsx)(i.euF, {
-        "aria-hidden": h["aria-hidden"],
-        "aria-label": h["aria-label"],
-        className: d,
-        size: a,
-        src: (0, l.Y)(t, 80, _)
+    }) : (0, l.jsx)(s.euF, {
+        "aria-hidden": d["aria-hidden"],
+        "aria-label": d["aria-label"],
+        className: c,
+        size: n,
+        src: (0, i.Y)(t, 80, A)
     })
 })

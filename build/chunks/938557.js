@@ -1,6 +1,6 @@
 /** chunk id: 938557 params = (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => u
 });
 var l = n(734057),
     a = n(71393),
@@ -18,7 +18,7 @@ function r(e) {
     })
 }
 
-function o(e, t) {
+function u(e, t) {
     if (!s.default.getCurrentUser()?.isStaff()) return !1;
     let n = l.A.getChannel(e.channel_id);
     return null != n && !!r(n) && t.some(e => {

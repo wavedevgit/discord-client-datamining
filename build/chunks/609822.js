@@ -1,7 +1,7 @@
 /** chunk id: 609822 params = (module,exports,require) **/
 "use strict";
 r.d(t, {
-    A: () => b
+    A: () => f
 });
 var a = r(1139),
     n = r(106526),
@@ -14,7 +14,7 @@ var a = r(1139),
 function u(e) {
     return "".concat(e.length, " ").concat(1 !== e.length ? "items" : "item")
 }
-var f = function(e) {
+var b = function(e) {
     var t = e.data,
         r = (0, n.A)(e, l);
     return o.createElement(c.A, (0, a.A)({}, r, {
@@ -25,7 +25,7 @@ var f = function(e) {
         expandable: t.length > 0
     }))
 };
-f.propTypes = {
+b.propTypes = {
     data: i().array
 };
-let b = f
+let f = b

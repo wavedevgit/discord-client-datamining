@@ -1,38 +1,38 @@
 /** chunk id: 567951 params = (module,exports,require) **/
 a.d(t, {
-    y: () => d
+    y: () => u
 });
-var n = a(627968);
+var s = a(627968);
 a(64700);
-var r = a(158954),
+var n = a(158954),
     l = a(457417),
-    s = a(199029),
-    o = a(254608),
-    i = a(137508),
-    c = a(693227),
-    u = a(985018);
-let d = e => {
+    r = a(199029),
+    i = a(254608),
+    _ = a(137508),
+    A = a(693227),
+    o = a(985018);
+let u = e => {
     let {
         transitionState: t,
         onClose: a
     } = e, {
-        send: d,
-        sending: _,
-        canSend: h
+        send: u,
+        sending: c,
+        canSend: d
     } = (0, l.Vw)();
-    return (0, n.jsx)(r.Modal, {
-        title: u.intl.string(c.default.zgFs8C),
+    return (0, s.jsx)(n.Modal, {
+        title: o.intl.string(A.default.zgFs8C),
         actions: [{
             variant: "primary",
-            text: u.intl.string(u.t.TXNS7S),
-            onClick: d,
-            loading: _,
-            disabled: !h()
+            text: o.intl.string(o.t.TXNS7S),
+            onClick: u,
+            loading: c,
+            disabled: !d()
         }],
         transitionState: t,
         onClose: a,
-        input: (0, n.jsx)(o.l, {}),
-        actionBarInput: (0, n.jsx)(i.t, {}),
-        children: (0, n.jsx)(s.o, {})
+        input: (0, s.jsx)(i.l, {}),
+        actionBarInput: (0, s.jsx)(_.t, {}),
+        children: (0, s.jsx)(r.o, {})
     })
 }

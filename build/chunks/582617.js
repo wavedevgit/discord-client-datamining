@@ -40,10 +40,10 @@ let b = new m.A("ImageEditor"),
             bottom: 0,
             left: 0,
             right: 0
-        }), [F, H] = i.useState(0), [z, U] = i.useState({
+        }), [F, H] = i.useState(0), [z, W] = i.useState({
             x: 0,
             y: 0
-        }), [W, J] = i.useState(!1), {
+        }), [U, J] = i.useState(!1), {
             isGIF: P,
             isWebP: B,
             isCheckingAnimation: K,
@@ -67,11 +67,11 @@ let b = new m.A("ImageEditor"),
             })
         }, [y, F, L, k]);
         i.useEffect(() => {
-            null == T || K || G(S(T, M, $))
+            null == T || K || G(N(T, M, $))
         }, [T, M, $, K]);
         let et = i.useCallback(e => {
                 if (null == T) return;
-                let t = S(T, e, $);
+                let t = N(T, e, $);
                 w(e), G(t), ee(), V?.()
             }, [T, ee, $, V]),
             el = i.useCallback(() => {
@@ -79,7 +79,7 @@ let b = new m.A("ImageEditor"),
                 let e = (F + 90) % 360,
                     t = T.height,
                     l = T.width,
-                    n = S({
+                    n = N({
                         width: t,
                         height: l
                     }, M, $);
@@ -111,7 +111,7 @@ let b = new m.A("ImageEditor"),
                 X.current?.moveGrabber(.025)
             }, []),
             es = i.useCallback(e => {
-                U({
+                W({
                     x: e.clientX - p.current.x,
                     y: e.clientY - p.current.y
                 }), J(!0)
@@ -125,14 +125,14 @@ let b = new m.A("ImageEditor"),
                 x: t,
                 y: l
             } = p.current;
-            W && (e.clientX !== t || e.clientY !== l) && (ee({
+            U && (e.clientX !== t || e.clientY !== l) && (ee({
                 x: t = e.clientX - z.x,
                 y: l = e.clientY - z.y
             }), V?.())
-        }, [W, z, ee, V]);
+        }, [U, z, ee, V]);
         i.useEffect(() => {
-            if (W) return window.addEventListener("mousemove", eu), () => window.removeEventListener("mousemove", eu)
-        }, [eu, W]);
+            if (U) return window.addEventListener("mousemove", eu), () => window.removeEventListener("mousemove", eu)
+        }, [eu, U]);
         let eo = i.useRef(null),
             ec = i.useCallback(async () => {
                 let e;
@@ -145,7 +145,7 @@ let b = new m.A("ImageEditor"),
                     },
                     a = null;
                 if (null != eo.current && (eo.current(), eo.current = null), $) try {
-                    let t = N({
+                    let t = S({
                             file: l,
                             image: n,
                             cropDimensions: E,
@@ -183,8 +183,8 @@ let b = new m.A("ImageEditor"),
                 }
             }, [l, F, $, Y, K, m, T, M, r, k]);
         i.useEffect(() => {
-            W || ec()
-        }, [ec, O, F, T, W, M, q, k]);
+            U || ec()
+        }, [ec, O, F, T, U, M, q, k]);
         let ed = i.useCallback(() => {
                 if (null == y.current) return;
                 let e = y.current.naturalWidth,
@@ -194,7 +194,7 @@ let b = new m.A("ImageEditor"),
                     height: t
                 }), H(0), D(!1);
                 let l = Math.min(Math.max(e, t) / Math.min(e, t), 4);
-                w(l), Q(l), Z.current += 1, G(S({
+                w(l), Q(l), Z.current += 1, G(N({
                     width: e,
                     height: t
                 }, l, $)), ee({
@@ -209,7 +209,7 @@ let b = new m.A("ImageEditor"),
             reset: ed
         })), (0, n.jsxs)("div", {
             className: a()(_.j0, {
-                [_.Id]: W
+                [_.Id]: U
             }),
             style: {
                 "--custom-image-editor-size": "288px"
@@ -356,7 +356,7 @@ let b = new m.A("ImageEditor"),
         }
     };
 
-function S(e, t, l) {
+function N(e, t, l) {
     let {
         width: n,
         height: i
@@ -373,7 +373,7 @@ function S(e, t, l) {
         right: r
     }
 }
-let N = (e, t, l) => {
+let S = (e, t, l) => {
     let {
         height: n,
         width: i

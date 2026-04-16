@@ -76,12 +76,12 @@ let S = l.memo(function(e) {
         }
         return null
     }, [j, R, S, M]), {
-        isReplyAuthorBlocked: D,
-        isReplyAuthorIgnored: O
+        isReplyAuthorBlocked: O,
+        isReplyAuthorIgnored: D
     } = (0, a.cf)([m.A], () => ({
         isReplyAuthorBlocked: null != j && m.A.isBlockedForMessage(j),
         isReplyAuthorIgnored: null != j && m.A.isIgnoredForMessage(j)
-    }), [j]), P = (0, E.r4)(j?.author.id, S.id), k = (0, E.Ck)(t, j), w = (0, E.H9)(j, S, T, N), U = (0, E.Ge)(v, N), G = l.useCallback(() => {
+    }), [j]), P = (0, E.r4)(j?.author.id, S.id), w = (0, E.Ck)(t, j), U = (0, E.H9)(j, S, T, N), k = (0, E.Ge)(v, N), G = l.useCallback(() => {
         N({
             referencedUsernameProfile: !1,
             referencedAvatarProfile: !1
@@ -95,14 +95,14 @@ let S = l.memo(function(e) {
         referencedMessage: n,
         content: L,
         compact: I,
-        isReplyAuthorBlocked: D,
-        isReplyAuthorIgnored: O,
+        isReplyAuthorBlocked: O,
+        isReplyAuthorIgnored: D,
         showAvatarPopout: v,
         showUsernamePopout: T,
         renderPopout: f.A,
-        onClickAvatar: U,
-        onClickUsername: w,
-        onClickReply: k,
+        onClickAvatar: k,
+        onClickUsername: U,
+        onClickReply: w,
         onContextMenu: P,
         onPopoutRequestClose: G,
         isReplySpineClickable: y,

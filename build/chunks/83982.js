@@ -1,7 +1,7 @@
 /** chunk id: 83982 params = (module,exports,require) **/
 n.d(t, {
-    A: () => w,
-    s: () => k
+    A: () => U,
+    s: () => w
 });
 var i = n(627968),
     l = n(64700),
@@ -33,11 +33,11 @@ var i = n(627968),
     R = n(652215),
     M = n(731854),
     L = n(985018),
-    D = n(391308);
-let O = c._3J.SIZE_80,
+    O = n(391308);
+let D = c._3J.SIZE_80,
     P = c._3J.SIZE_40;
 
-function k(e) {
+function w(e) {
     let {
         channelId: t,
         participant: n
@@ -46,7 +46,7 @@ function k(e) {
         text: L.intl.string(L.t.HFwRpk),
         position: "bottom",
         children: (0, i.jsx)("div", {
-            className: D.bG,
+            className: O.bG,
             children: (0, i.jsx)(c.EpV, {
                 color: c.LU0.colors.STATUS_WARNING_BACKGROUND
             })
@@ -56,7 +56,7 @@ function k(e) {
     })
 }
 
-function w(e) {
+function U(e) {
     let {
         participant: t,
         channel: n,
@@ -65,9 +65,9 @@ function w(e) {
         selected: c,
         popoutType: S,
         fit: j,
-        onVideoResize: k,
-        blocked: w,
-        ignored: U,
+        onVideoResize: w,
+        blocked: U,
+        ignored: k,
         noVideoRender: G = !1,
         pulseSpeakingIndicator: F = !1,
         paused: H = !1
@@ -75,7 +75,7 @@ function w(e) {
         user: W,
         streamId: K,
         speaking: z
-    } = t, Y = W.id === V, J = (0, y.Ay)(t), q = (0, r.bG)([v.A], () => v.A.isFocused()), $ = (0, r.bG)([C.A], () => C.A.getWindowFocused(R.MLl.CHANNEL_CALL_POPOUT)), Z = (0, r.bG)([T.Ay], () => null != W.id && T.Ay.isLocalVideoDisabled(W.id, (0, m.A)(t.type)), [W.id, t.type]), X = (0, p.A)(n.guild_id, W.id), Q = N.Ay.getName(n.getGuildId(), n.id, W) + (X ? ` ${L.intl.string(L.t["pFO/Ph"])}` : ""), ee = z && ($ || q), et = o < 124 ? P : O, {
+    } = t, Y = W.id === V, J = (0, y.Ay)(t), q = (0, r.bG)([v.A], () => v.A.isFocused()), $ = (0, r.bG)([C.A], () => C.A.getWindowFocused(R.MLl.CHANNEL_CALL_POPOUT)), Z = (0, r.bG)([T.Ay], () => null != W.id && T.Ay.isLocalVideoDisabled(W.id, (0, m.A)(t.type)), [W.id, t.type]), X = (0, p.A)(n.guild_id, W.id), Q = N.Ay.getName(n.getGuildId(), n.id, W) + (X ? ` ${L.intl.string(L.t["pFO/Ph"])}` : ""), ee = z && ($ || q), et = o < 124 ? P : D, {
         avatarSrc: en,
         avatarDecorationSrc: ei
     } = (0, x.A)({
@@ -103,9 +103,9 @@ function w(e) {
         width: o,
         selected: c
     }) : (0, i.jsx)(E.A, {
-        onResize: k,
-        wrapperClassName: S !== A.N.CALL_TILE ? D.tN : void 0,
-        className: D.Qs,
+        onResize: w,
+        wrapperClassName: S !== A.N.CALL_TILE ? O.tN : void 0,
+        className: O.Qs,
         mirror: Y,
         streamId: K,
         videoComponent: B,
@@ -114,8 +114,8 @@ function w(e) {
         paused: H,
         userId: W.id
     }, K) : (0, i.jsx)("div", {
-        className: s()(D.Qs, {
-            [D.Kx]: w || U
+        className: s()(O.Qs, {
+            [O.Kx]: U || k
         }),
         children: (0, i.jsx)(f.A, {
             "aria-label": Q,

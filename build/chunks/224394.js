@@ -193,7 +193,7 @@ let T = [{
                     })
                 }, {
                     icon: c.Uy2,
-                    color: o.A.unsafe_rawColors.PARTNER.css,
+                    color: o.A.unsafe_rawColors.PLATFORM_PARTNER.css,
                     header: A.intl.string(A.t["0rJl9y"]),
                     body: A.intl.format(A.t.XsCNky, {
                         infoHook: () => (0, i.jsx)(d.m, {

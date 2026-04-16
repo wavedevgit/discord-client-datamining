@@ -1,6 +1,6 @@
 /** chunk id: 688465 params = (module,exports,require) **/
 s.d(t, {
-    KL: () => y,
+    KL: () => S,
     tS: () => b,
     yB: () => C
 });
@@ -44,7 +44,7 @@ let j = {
         throw Error("Using uninitialized GoLiveModalContextDispatch")
     });
 
-function S(e, t) {
+function y(e, t) {
     switch (t.type) {
         case "set_mute_audio":
             return {
@@ -121,7 +121,7 @@ function S(e, t) {
     }
 }
 
-function y(e) {
+function S(e) {
     let {
         dispatch: t,
         state: s,
@@ -150,16 +150,16 @@ function C(e, t, s) {
     } = (0, c.cf)([h.A], () => h.A.getState());
     r && (l = _.jQ.PRESET_AUTO);
     let A = (0, c.bG)([x.Ay], () => x.Ay.getInputDeviceId()),
-        y = f.uh.useSetting() ?? !1,
+        S = f.uh.useSetting() ?? !1,
         C = f.wv.useSetting() ?? !1;
     l in _.jQ && (l !== _.jQ.PRESET_AUTO || n) || (l = _.jQ.PRESET_VIDEO), (0, m.A)(_.jQ.PRESET_CUSTOM, a, o, t, s) || (a = _.on.RESOLUTION_720, o = _.kn.FPS_30);
-    let [b, w] = i.useReducer(S, {
+    let [b, w] = i.useReducer(y, {
         ...j,
         muteStreamAudio: !v,
         preset: l,
         resolution: a,
         fps: o,
-        hidePreview: y,
+        hidePreview: S,
         notifyFriends: C,
         selectedSource: e,
         nativeSourceType: x.Ay.getUseGamescopeCapture() ? "gamescope" : "",

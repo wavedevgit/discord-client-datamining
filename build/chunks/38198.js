@@ -36,23 +36,23 @@ function N(e) {
         draftType: R,
         editorTextContent: M,
         setValue: L,
-        openClips: D
+        openClips: O
     } = e, {
-        analyticsLocations: O
+        analyticsLocations: D
     } = (0, c.Ay)(), P = (0, u.s)({
         channel: t
-    }), k = (0, a.bG)([m.A], () => m.A.isInProgress());
+    }), w = (0, a.bG)([m.A], () => m.A.isInProgress());
 
-    function w() {
+    function U() {
         (0, A.Tv)(t, void 0, "Plus Button")
     }
 
-    function U() {
+    function k() {
         g.default.track(x.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), L("/", (0, E.x7)("/"))
     }
 
     function G() {
-        D()
+        O()
     }
 
     function F() {
@@ -159,7 +159,7 @@ function N(e) {
                                 channelId: t.id,
                                 type: x.xL.JOIN,
                                 activity: n,
-                                location: O[O.length - 1]
+                                location: D[D.length - 1]
                             })
                         }
                     }, "play");
@@ -178,7 +178,7 @@ function N(e) {
                                 channelId: t.id,
                                 type: x.xL.LISTEN,
                                 activity: n,
-                                location: O[O.length - 1]
+                                location: D[D.length - 1]
                             })
                         }
                     }, "listen");
@@ -197,7 +197,7 @@ function N(e) {
                                 channelId: t.id,
                                 type: x.xL.WATCH,
                                 activity: n,
-                                location: O[O.length - 1]
+                                location: D[D.length - 1]
                             })
                         }
                     }, "watch");
@@ -210,7 +210,7 @@ function N(e) {
                             type: "icon",
                             icon: e.icon
                         },
-                        action: w
+                        action: U
                     }, "THREAD");
                 case C.v.SLASH_COMMAND:
                     return (0, i.jsx)(r.Drp, {
@@ -221,7 +221,7 @@ function N(e) {
                             type: "icon",
                             icon: e.icon
                         },
-                        action: U
+                        action: k
                     }, "SLASH_COMMAND");
                 case C.v.SCHEDULED_MESSAGE:
                     return (0, i.jsx)(r.Drp, {
@@ -247,9 +247,9 @@ function N(e) {
                             icon: e.icon
                         },
                         action: () => h.A.summarizeThread(t),
-                        loading: k,
-                        disabled: k,
-                        children: k ? null : (0, i.jsxs)(i.Fragment, {
+                        loading: w,
+                        disabled: w,
+                        children: w ? null : (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsx)(r.Drp, {
                                 id: "summarize_thread_for_everyone",
                                 label: T.intl.string(T.t.eCzSdd),
