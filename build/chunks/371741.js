@@ -34,8 +34,8 @@ var i = n(627968),
     R = n(245748),
     M = n(491182),
     L = n(860227),
-    O = n(112758),
-    D = n(516287),
+    D = n(112758),
+    O = n(516287),
     P = n(866897),
     k = n(754459),
     w = n(538355),
@@ -127,7 +127,7 @@ function Q(e) {
         isFocused: y,
         handleFocus: R,
         handleBlur: U
-    } = (0, O.G8)(T), {
+    } = (0, D.G8)(T), {
         popouts: F,
         selected: H,
         setPopout: W
@@ -135,7 +135,7 @@ function Q(e) {
         handleMouseEnter: et,
         handleMouseLeave: en,
         isHovered: ei
-    } = (0, O.yp)({
+    } = (0, D.yp)({
         groupId: p,
         message: n,
         defaultValue: H
@@ -152,7 +152,7 @@ function Q(e) {
         allowDevLinks: er,
         previewLinkTarget: !0,
         viewingChannelId: x
-    }), eu = (0, P.A)(a, r, el), eh = (0, j.Ay)(n), em = (0, L.fF)(n, p), eA = (0, L.ZD)(n), eg = (0, i.jsx)(D.x, {
+    }), eu = (0, P.A)(a, r, el), eh = (0, j.Ay)(n), em = (0, L.fF)(n, p), eA = (0, L.ZD)(n), eg = (0, i.jsx)(O.x, {
         value: es,
         children: (0, V.A)(e, eo, !1)
     }), e_ = l.useCallback(() => (0, E.uh)(o, r, a), [o, r, a]), ep = (0, g.$7)({
@@ -253,14 +253,14 @@ let ee = l.memo(function(e) {
             selected: ed,
             setPopout: eu
         } = (0, k.A)(r.id, Y.Fd),
-        eh = (0, O.VL)(r, y, eu),
-        em = (0, O.ri)(r, y),
+        eh = (0, D.VL)(r, y, eu),
+        em = (0, D.ri)(r, y),
         {
             handleMouseEnter: eA,
             handleMouseLeave: eg,
             hasHovered: e_,
             isHovered: ep
-        } = (0, O.yp)({
+        } = (0, D.yp)({
             groupId: et,
             message: r,
             defaultValue: ed
@@ -270,7 +270,7 @@ let ee = l.memo(function(e) {
             hasFocused: eE,
             handleFocus: eC,
             handleBlur: ex
-        } = (0, O.G8)(el),
+        } = (0, D.G8)(el),
         eS = l.useCallback(e => {
             eC(e), eA(e)
         }, [eC, eA]),
@@ -287,8 +287,8 @@ let ee = l.memo(function(e) {
         eM = (0, d.bG)([S.A], () => S.A.isDeveloper),
         {
             content: eL,
-            hasSpoilerEmbeds: eO,
-            hasBailedAst: eD
+            hasSpoilerEmbeds: eD,
+            hasBailedAst: eO
         } = (0, w.A)(r, {
             hideSimpleEmbedContent: es && er,
             formatInline: !1,
@@ -319,7 +319,7 @@ let ee = l.memo(function(e) {
         eK = l.useRef(window),
         ez = null != eV,
         eY = (0, v.Nd)(y.guild_id, y, "ChatMessage");
-    n = r.type === J.lAJ.CUSTOM_GIFT ? "" : !eT && ez ? (0, F.A)(e, eL) : (0, V.A)(e, eL, eT), n = (0, i.jsx)(D.x, {
+    n = r.type === J.lAJ.CUSTOM_GIFT ? "" : !eT && ez ? (0, F.A)(e, eL) : (0, V.A)(e, eL, eT), n = (0, i.jsx)(O.x, {
         value: ey,
         children: n
     });
@@ -385,8 +385,8 @@ let ee = l.memo(function(e) {
                     }),
                     childrenAccessories: (0, G.A)({
                         channelMessageProps: e,
-                        hasSpoilerEmbeds: eO,
-                        hasBailedAst: eD,
+                        hasSpoilerEmbeds: eD,
+                        hasBailedAst: eO,
                         handleContextMenu: eh,
                         isInteracting: ey,
                         isAutomodBlockedMessage: ez,

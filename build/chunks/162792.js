@@ -76,8 +76,8 @@ let S = l.memo(function(e) {
         }
         return null
     }, [j, R, S, M]), {
-        isReplyAuthorBlocked: O,
-        isReplyAuthorIgnored: D
+        isReplyAuthorBlocked: D,
+        isReplyAuthorIgnored: O
     } = (0, a.cf)([m.A], () => ({
         isReplyAuthorBlocked: null != j && m.A.isBlockedForMessage(j),
         isReplyAuthorIgnored: null != j && m.A.isIgnoredForMessage(j)
@@ -95,8 +95,8 @@ let S = l.memo(function(e) {
         referencedMessage: n,
         content: L,
         compact: I,
-        isReplyAuthorBlocked: O,
-        isReplyAuthorIgnored: D,
+        isReplyAuthorBlocked: D,
+        isReplyAuthorIgnored: O,
         showAvatarPopout: v,
         showUsernamePopout: T,
         renderPopout: f.A,

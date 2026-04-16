@@ -349,7 +349,7 @@ function q(e) {
             children: A.integrations.map(e => (0, i.jsx)(Z, {
                 integration: e
             }, e.id))
-        }) : void 0]
+        }) : void 0, null]
     })
 }
 

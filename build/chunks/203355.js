@@ -33,8 +33,8 @@ var i = n(627968),
     R = n(70171),
     M = n(566331),
     L = n(768088),
-    O = n(256195),
-    D = n(399849),
+    D = n(256195),
+    O = n(399849),
     P = n(275731),
     k = n(345812),
     w = n(652215),
@@ -88,7 +88,7 @@ function W(e) {
     let ei = (0, p.u)(G.x.STREAM, t.user.id);
     if (l.useEffect(() => {
             B.info(`Stream Tile State - activeStream: ${null!=$} | selected: ${n} | Video: ${null!=V} | MediaEngine: ${y.Ay.supports(G.O5.VIDEO)}`)
-        }, [V, $, n]), K) return (0, i.jsx)(D.A, {
+        }, [V, $, n]), K) return (0, i.jsx)(O.A, {
         stream: t.stream,
         isSmall: en,
         selected: n,
@@ -106,7 +106,7 @@ function W(e) {
         stream: t.stream,
         width: x
     });
-    if (t.type === U.lp.HIDDEN_STREAM) return (0, i.jsx)(O.A, {
+    if (t.type === U.lp.HIDDEN_STREAM) return (0, i.jsx)(D.A, {
         selected: n,
         participant: t,
         width: x

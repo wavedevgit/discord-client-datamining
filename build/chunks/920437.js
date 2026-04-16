@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(544028),
     M = n(560010),
     L = n(696451),
-    O = n(71393),
-    D = n(834942),
+    D = n(71393),
+    O = n(834942),
     P = n(576705),
     k = n(287809),
     w = n(488926),
@@ -310,7 +310,7 @@ function z(e) {
     let {
         channel: t,
         children: n
-    } = e, l = t.getGuildId(), a = (0, r.bG)([O.A], () => O.A.getGuild(l)), s = (0, r.bG)([D.A], () => D.A.getCheck(l)), o = t.type === F.rbe.GUILD_ANNOUNCEMENT && null != a && a.features.has(F.GuildFeatures.NEWS), c = (0, r.bG)([M.A], () => o ? M.A.getFollowerStatsForChannel(t.id) : null), d = (0, r.bG)([v.A], () => v.A.isLurking(l)), u = (0, r.bG)([k.default], () => k.default.getCurrentUser()), h = u?.isStaff() ?? !1, m = (0, r.bG)([L.Ay], () => null != u && (L.Ay.getMember(l, u.id)?.isPending ?? !1)), g = !!(0, x.Qd)(a), p = (0, r.bG)([T.A], () => T.A.shouldShowPopout(l)), f = (0, r.bG)([P.A], () => P.A.can(F.xBc.SEND_MESSAGES, t)), E = (0, r.bG)([S.A], () => S.A.getRequest(l)), {
+    } = e, l = t.getGuildId(), a = (0, r.bG)([D.A], () => D.A.getGuild(l)), s = (0, r.bG)([O.A], () => O.A.getCheck(l)), o = t.type === F.rbe.GUILD_ANNOUNCEMENT && null != a && a.features.has(F.GuildFeatures.NEWS), c = (0, r.bG)([M.A], () => o ? M.A.getFollowerStatsForChannel(t.id) : null), d = (0, r.bG)([v.A], () => v.A.isLurking(l)), u = (0, r.bG)([k.default], () => k.default.getCurrentUser()), h = u?.isStaff() ?? !1, m = (0, r.bG)([L.Ay], () => null != u && (L.Ay.getMember(l, u.id)?.isPending ?? !1)), g = !!(0, x.Qd)(a), p = (0, r.bG)([T.A], () => T.A.shouldShowPopout(l)), f = (0, r.bG)([P.A], () => P.A.can(F.xBc.SEND_MESSAGES, t)), E = (0, r.bG)([S.A], () => S.A.getRequest(l)), {
         showLinkedLobbyApplicationLoadingIndicator: I,
         requiredLinkedLobbyApplication: N
     } = (0, U.A)(t.linkedLobby), y = (0, _.A)({

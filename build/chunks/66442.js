@@ -85,7 +85,7 @@ let I = function(e) {
         location: I
     } = e, T = (0, o.bG)([_.A], () => _.A.getChannel(t)), v = T?.name, N = (0, g.e5)(T), [y, b] = l.useState(v ?? ""), [j, R] = l.useState(void 0), M = void 0 !== j, {
         analyticsLocations: L
-    } = (0, m.Ay)(I, h.A.GROUP_DM_EDIT_MODAL), O = {
+    } = (0, m.Ay)(I, h.A.GROUP_DM_EDIT_MODAL), D = {
         channel_id: t,
         channel_type: T?.type,
         location: I,
@@ -96,11 +96,11 @@ let I = function(e) {
     return (l.useEffect(() => {
         s(y !== v || M)
     }, [y, v, M, s]), (0, u.Ay)(() => (p.default.track(E.HAw.GDM_EDIT_INTERACTED, {
-        ...O,
+        ...D,
         action: "opened"
     }), () => {
         p.default.track(E.HAw.GDM_EDIT_INTERACTED, {
-            ...O,
+            ...D,
             action: "dismissed"
         })
     })), null == T) ? null : (0, i.jsx)(m.f5, {
@@ -111,7 +111,7 @@ let I = function(e) {
                 let i = y !== v,
                     l = void 0 !== j;
                 if (p.default.track(E.HAw.GDM_EDIT_INTERACTED, {
-                        ...O,
+                        ...D,
                         action: "saved",
                         new_name_set: "" !== y,
                         new_icon_set: (l ? j : T?.icon) != null,

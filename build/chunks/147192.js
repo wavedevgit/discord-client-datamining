@@ -1,8 +1,8 @@
 /** chunk id: 147192 params = (module,exports,require) **/
 n.d(t, {
     Ay: () => P,
-    aW: () => D,
-    rj: () => O
+    aW: () => O,
+    rj: () => D
 }), n(321073);
 var i = n(627968),
     l = n(64700),
@@ -154,13 +154,13 @@ function L(e) {
     })
 }
 
-function O(e) {
+function D(e) {
     let t = (0, c.bG)([x.A], () => x.A.getTypingUsers(e.id)),
         n = (0, c.bG)([S.default], () => S.default.getCurrentUser());
     return o()(t).keys().filter(e => e !== n?.id).reject(e => E.A.isBlockedOrIgnored(e)).map(e => S.default.getUser(e)).filter(v.Vq).map(t => N.Ay.getName(e.guild_id, e.id, t)).value()
 }
 
-function D(e) {
+function O(e) {
     let t = (0, c.bG)([C.A], () => C.A.findActivity(e => null != e.application_id));
     return (0, c.bG)([p.A, g.A, E.A, f.A], () => (0, A.A)({
         channel: e,
@@ -177,11 +177,11 @@ function P(e) {
         channel: t,
         isThreadCreation: n = !1,
         ...l
-    } = e, a = O(t), s = {
+    } = e, a = D(t), s = {
         ...l,
         baseTextColor: (0, u.rdh)(d.A.colors.INTERACTIVE_TEXT_DEFAULT).hex(),
         activeTextColor: (0, u.rdh)(d.A.colors.INTERACTIVE_TEXT_DEFAULT).hex(),
-        activityInviteEducationActivity: D(t),
+        activityInviteEducationActivity: O(t),
         typingUsers: n ? [] : a,
         isFocused: (0, c.bG)([I.A], () => I.A.isFocused()),
         guildId: t.guild_id,

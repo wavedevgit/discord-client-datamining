@@ -36,9 +36,9 @@ function N(e) {
         draftType: R,
         editorTextContent: M,
         setValue: L,
-        openClips: O
+        openClips: D
     } = e, {
-        analyticsLocations: D
+        analyticsLocations: O
     } = (0, c.Ay)(), P = (0, u.s)({
         channel: t
     }), k = (0, a.bG)([m.A], () => m.A.isInProgress());
@@ -52,7 +52,7 @@ function N(e) {
     }
 
     function G() {
-        O()
+        D()
     }
 
     function F() {
@@ -159,7 +159,7 @@ function N(e) {
                                 channelId: t.id,
                                 type: x.xL.JOIN,
                                 activity: n,
-                                location: D[D.length - 1]
+                                location: O[O.length - 1]
                             })
                         }
                     }, "play");
@@ -178,7 +178,7 @@ function N(e) {
                                 channelId: t.id,
                                 type: x.xL.LISTEN,
                                 activity: n,
-                                location: D[D.length - 1]
+                                location: O[O.length - 1]
                             })
                         }
                     }, "listen");
@@ -197,7 +197,7 @@ function N(e) {
                                 channelId: t.id,
                                 type: x.xL.WATCH,
                                 activity: n,
-                                location: D[D.length - 1]
+                                location: O[O.length - 1]
                             })
                         }
                     }, "watch");

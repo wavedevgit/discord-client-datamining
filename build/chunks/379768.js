@@ -1,6 +1,6 @@
 /** chunk id: 379768 params = (module,exports,require) **/
 n.d(t, {
-    A: () => O
+    A: () => D
 });
 var i = n(627968),
     l = n(64700),
@@ -33,11 +33,11 @@ var i = n(627968),
     M = n(516757),
     L = n(992595);
 
-function O(e) {
+function D(e) {
     let {
         channel: t
-    } = e, [n, a] = l.useState(!1), r = (0, g.Ay)(t, !0), O = t.guild_id, D = (0, d.bG)([x.A], () => null != O ? x.A.getSortedRoles(O) : void 0), P = (0, d.bG)([T.default, S.A], () => T.default.getUser(S.A.getGuild(O)?.ownerId)), k = l.useMemo(() => null != D ? D.filter(e => !(0, C.Oy)(e)) : [], [D]), w = l.useMemo(() => o()(k).filter(e => {
-        if (null == O) return !1;
+    } = e, [n, a] = l.useState(!1), r = (0, g.Ay)(t, !0), D = t.guild_id, O = (0, d.bG)([x.A], () => null != D ? x.A.getSortedRoles(D) : void 0), P = (0, d.bG)([T.default, S.A], () => T.default.getUser(S.A.getGuild(D)?.ownerId)), k = l.useMemo(() => null != O ? O.filter(e => !(0, C.Oy)(e)) : [], [O]), w = l.useMemo(() => o()(k).filter(e => {
+        if (null == D) return !1;
         let n = v.aH({
             forceRoles: {
                 [e.id]: e
@@ -45,7 +45,7 @@ function O(e) {
             context: t
         });
         return c.X8(n, c.kg(j.xBc.ADMINISTRATOR, j.xBc.VIEW_CHANNEL))
-    }).value(), [t, O, k]), U = (0, d.yK)([T.default], () => {
+    }).value(), [t, D, k]), U = (0, d.yK)([T.default], () => {
         let e = {};
         for (let n of (null != P && (e[P.id] = P), Object.values(t.permissionOverwrites))) {
             if (n.type !== A.r2.MEMBER || null != e[n.id]) continue;

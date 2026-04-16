@@ -46,7 +46,7 @@ function S(e) {
         L = l.useCallback(() => {
             y.onMouseLeave(), R(!1)
         }, [y]),
-        O = !n.isMultiUserDM() && I?.displayNameStyles != null;
+        D = !n.isMultiUserDM() && I?.displayNameStyles != null;
     return (0, i.jsxs)(E.Ay, {
         channelId: n.id,
         onMouseEnter: M,
@@ -67,7 +67,7 @@ function S(e) {
             src: (0, d.Y)(n, 80, t),
             avatarDecoration: N
         })), (0, i.jsx)(E.cr, {
-            children: O ? (0, i.jsx)(m.A, {
+            children: D ? (0, i.jsx)(m.A, {
                 userName: v,
                 displayNameStyles: I?.displayNameStyles,
                 effectDisplayType: j ? h.G.ANIMATED : h.G.STATIC,

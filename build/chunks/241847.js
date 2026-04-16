@@ -117,7 +117,7 @@ function L(e) {
     })
 }
 
-function O(e) {
+function D(e) {
     let {
         channelId: t,
         isOverlay: n,
@@ -136,7 +136,7 @@ function O(e) {
     })
 }
 
-function D(e) {
+function O(e) {
     let [t, n] = l.useState(x.Rj.RTC_DEBUG_PANEL), a = (0, c.GV)(), r = [{
         id: x.Rj.RTC_DEBUG_PANEL,
         content: (0, i.jsx)(L, {
@@ -199,7 +199,7 @@ function P(e) {
         d = l.useMemo(() => {
             switch (n) {
                 case x.Rj.RTC_DEBUG_PANEL:
-                    return (0, i.jsx)(O, {
+                    return (0, i.jsx)(D, {
                         ...e
                     });
                 case x.Rj.RTC_SECURE_FRAMES:
@@ -256,7 +256,7 @@ function k(e) {
         className: I.L3,
         children: (0, i.jsx)("section", {
             className: I.J8,
-            children: (0, i.jsx)(O, {
+            children: (0, i.jsx)(D, {
                 ...e
             })
         })
@@ -266,7 +266,7 @@ function k(e) {
 function w(e) {
     return (0, g.k)({
         channelId: e.channelId
-    }) ? (0, i.jsx)(D, {
+    }) ? (0, i.jsx)(O, {
         ...e
     }) : (0, i.jsx)("div", {
         className: s()(v.popover, T.L3),

@@ -45,8 +45,8 @@ let C = l.memo(function(e) {
         setIsSlidering: R,
         doZoom: M,
         isZooming: L,
-        videoAspectRatio: O,
-        wrapperRef: D,
+        videoAspectRatio: D,
+        wrapperRef: O,
         panOffset: P,
         setPanOffset: k,
         clampPanOffset: w
@@ -55,23 +55,23 @@ let C = l.memo(function(e) {
     }, [x]), V = l.useCallback(() => {
         G(!1), S("interact")
     }, [S]), W = l.useMemo(() => {
-        let e = 120 * Math.min(O, 32 / 9);
+        let e = 120 * Math.min(D, 32 / 9);
         return {
             "--custom-zoom-minimap-width": `${e}px`,
             "--custom-zoom-minimap-height": "120px"
         }
-    }, [O]), K = l.useCallback(e => {
-        if (null == F.current || null == D.current) return;
+    }, [D]), K = l.useCallback(e => {
+        if (null == F.current || null == O.current) return;
         let t = F.current.getBoundingClientRect(),
-            n = D.current.clientWidth,
-            i = D.current.clientHeight,
+            n = O.current.clientWidth,
+            i = O.current.clientHeight,
             l = e.x - t.left,
             a = e.y - t.top;
         k(w({
             x: (.5 - l / t.width) * n * T,
             y: (.5 - a / t.height) * i * T
         }))
-    }, [w, T, D, k]), z = l.useCallback(e => {
+    }, [w, T, O, k]), z = l.useCallback(e => {
         E(e) && (e.preventDefault(), e.stopPropagation(), G(!0), K({
             x: e.clientX,
             y: e.clientY
@@ -84,8 +84,8 @@ let C = l.memo(function(e) {
     }, [U, K]), J = l.useCallback(e => {
         !U || E(e) || (e.preventDefault(), e.stopPropagation(), G(!1))
     }, [U]), q = m.Ay.getVideoComponent(), $ = l.useMemo(() => {
-        let e = null != D.current ? D.current.clientWidth : 1,
-            t = null != D.current ? D.current.clientHeight : 1,
+        let e = null != O.current ? O.current.clientWidth : 1,
+            t = null != O.current ? O.current.clientHeight : 1,
             n = 1 / T,
             i = 1 / T,
             l = .5 - P.x / (e * T),
@@ -97,7 +97,7 @@ let C = l.memo(function(e) {
             "--custom-zoom-indicator-height": `${100*i}%`,
             "--custom-zoom-indicator-transition": y || U || b || j ? "none" : "top 0.1s ease-out, left 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out"
         }
-    }, [y, U, b, j, P, T, D]), Z = l.useCallback(e => {
+    }, [y, U, b, j, P, T, O]), Z = l.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), M(T - .25, A.qd, "button")
     }, [M, T]), X = l.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), M(T + .25, A.qd, "button")

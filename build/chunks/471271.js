@@ -60,7 +60,7 @@ function p(e) {
         } finally {
             S(!1)
         }
-    }, [j, l, p]), O = i.useCallback(async e => {
+    }, [j, l, p]), D = i.useCallback(async e => {
         if (j) return;
         if (null != t && null == o.A.getMutualGuilds(t.id)) {
             T(!0);
@@ -95,7 +95,7 @@ function p(e) {
                 })
             }
         })
-    }, [R, j, t]), D = i.useCallback((e, t, n) => {
+    }, [R, j, t]), O = i.useCallback((e, t, n) => {
         let i = (i, l) => {
                 l && d.WY.updateSetting(i), i && null != t && (0, r.tJ)(t), R(e.id), u.default.track(_.HAw.MESSAGE_REQUEST_ACTION, {
                     action: g.LD.ACCEPT_HAM_CONFIRMATION_PROMPT,
@@ -117,10 +117,10 @@ function p(e) {
         }) : i(l)
     }, [R]);
     return {
-        acceptMessageRequest: f ? O : R,
+        acceptMessageRequest: f ? D : R,
         rejectMessageRequest: M,
         rejectAll: L,
-        markAsNotSpam: D,
+        markAsNotSpam: O,
         isAcceptLoading: E,
         isRejectLoading: x,
         isUserProfileLoading: I,

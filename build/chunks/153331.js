@@ -32,8 +32,8 @@ var i, l = n(627968),
     R = n(139675),
     M = n(486020),
     L = n(821589),
-    O = n(682261),
-    D = n(672979),
+    D = n(682261),
+    O = n(672979),
     P = n(90644),
     k = n(61330),
     w = n(960076),
@@ -254,7 +254,7 @@ class J extends a.PureComponent {
             application: i,
             activityGuild: a
         } = this.props;
-        return null != e.assets || (0, O.A)(e) || e.type !== H.$pd.PLAYING || "ActivityFeed" === n || t.bot ? null : null == i && null != a ? (0, l.jsx)("div", {
+        return null != e.assets || (0, D.A)(e) || e.type !== H.$pd.PLAYING || "ActivityFeed" === n || t.bot ? null : null == i && null != a ? (0, l.jsx)("div", {
             className: r()(V.gameIcon, V.screenshareIcon)
         }) : (0, l.jsx)(C.A, {
             className: V.gameIcon,
@@ -273,7 +273,7 @@ class J extends a.PureComponent {
             type: s
         } = e;
         if (s === H.$pd.CUSTOM_STATUS) return null;
-        let o = (0, D.A)(e),
+        let o = (0, O.A)(e),
             c = e.name,
             d = c;
         return (o && null != n ? d = (0, l.jsx)("span", {
@@ -298,7 +298,7 @@ class J extends a.PureComponent {
             a = n,
             s = n;
         if (e.type === H.$pd.CUSTOM_STATUS) a = i;
-        else if (!(0, D.A)(e))
+        else if (!(0, O.A)(e))
             if (a = i, s = i, (0, P.A)(e) && null != i) {
                 let t = (t, n) => (0, l.jsx)(N.A, {
                     artists: i,
@@ -360,11 +360,11 @@ class J extends a.PureComponent {
         let {
             activityGuild: t
         } = this.props;
-        if (!(0, D.A)(e) || (0, P.A)(e)) return null;
+        if (!(0, O.A)(e) || (0, P.A)(e)) return null;
         let {
             timestamps: n
         } = e;
-        return null == n ? null : (0, O.A)(e) ? (0, l.jsx)(z, {
+        return null == n ? null : (0, D.A)(e) ? (0, l.jsx)(z, {
             timestamps: n
         }) : (0, l.jsx)(v.Ay, {
             start: n.start,
@@ -398,7 +398,7 @@ class J extends a.PureComponent {
             } = e,
             r = i,
             o = i;
-        if (!(0, D.A)(e) && (r = s?.large_text, o = s?.large_text, (0, P.A)(e) && null != r)) {
+        if (!(0, O.A)(e) && (r = s?.large_text, o = s?.large_text, (0, P.A)(e) && null != r)) {
             let t = (t, n) => null != e.sync_id && null != o ? (0, l.jsx)(m.MzZ, {
                 className: V.bodyLink,
                 onClick: this.handleOpenSpotifyAlbum,

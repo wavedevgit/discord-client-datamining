@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(135621),
     M = n(406704),
     L = n(253932),
-    O = n(31717),
-    D = n(638128),
+    D = n(31717),
+    O = n(638128),
     P = n(522602),
     k = n(515718),
     w = n(723702),
@@ -122,12 +122,12 @@ let X = l.memo(l.forwardRef(function(e, t) {
         disabled: eR,
         canAttachFiles: eM,
         canEveryoneSendMessages: eL
-    } = (0, V.Sk)(y, b, ey, p), eO = !L.D_.useSetting() && !(0, w.isAndroidWeb)() && null != window.ResizeObserver, eD = !eO || !b.commands?.enabled || !j || "/" !== a, eP = (0, R.A)(), {
+    } = (0, V.Sk)(y, b, ey, p), eD = !L.D_.useSetting() && !(0, w.isAndroidWeb)() && null != window.ResizeObserver, eO = !eD || !b.commands?.enabled || !j || "/" !== a, eP = (0, R.A)(), {
         fontSize: ek
     } = (0, u.cf)([f.A], () => ({
         fontSize: f.A.fontSize,
         isSubmitButtonEnabled: f.A.isSubmitButtonEnabled
-    })), ew = (0, u.bG)([D.A], () => D.A.isEnabled()), eU = (0, M.n)(y);
+    })), ew = (0, u.bG)([O.A], () => O.A.isEnabled()), eU = (0, M.n)(y);
     (0, V.N_)(b, eR, y.id);
     let {
         eventEmitter: eG,
@@ -156,7 +156,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
             content: e.value,
             id: "82744"
         });
-        let l = P.A.getUploads(y.id, O.C.ChannelMessage),
+        let l = P.A.getUploads(y.id, D.C.ChannelMessage),
             a = l.filter(e => (e.isImage || e.isVideo) && e.filename !== ef?.name),
             s = l.filter(e => !e.isImage && !e.isVideo && e.filename !== ef?.name),
             r = a.map(e => Z(`attachment://${e.filename}`, e.description, e.spoiler));
@@ -196,10 +196,10 @@ let X = l.memo(l.forwardRef(function(e, t) {
         handleTab: e$,
         handleEnter: eZ,
         handleMoveSelection: eX
-    } = (n = l.useCallback(() => !!(!eD && eI.current?.onTabOrEnter(!1)) || eW.current?.onTabOrEnter(!1) || !1, [eD]), {
+    } = (n = l.useCallback(() => !!(!eO && eI.current?.onTabOrEnter(!1)) || eW.current?.onTabOrEnter(!1) || !1, [eO]), {
         handleTab: n,
-        handleEnter: l.useCallback(() => !!(!eD && eI.current?.onTabOrEnter(!0)) || eW.current?.onTabOrEnter(!1) || !1, [eD]),
-        handleMoveSelection: l.useCallback(e => !!(!eD && eI.current?.onMoveSelection(e)) || eW.current?.onMoveSelection(e) || !1, [eD])
+        handleEnter: l.useCallback(() => !!(!eO && eI.current?.onTabOrEnter(!0)) || eW.current?.onTabOrEnter(!1) || !1, [eO]),
+        handleMoveSelection: l.useCallback(e => !!(!eO && eI.current?.onMoveSelection(e)) || eW.current?.onMoveSelection(e) || !1, [eO])
     }), {
         expressionPickerView: eQ,
         shouldHideExpressionPicker: e0,
@@ -244,7 +244,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
         if (null == ef) return;
         let e = P.A.getUploads(y.id, b.drafts.type),
             t = e.find(e => e.filename === ef.name)?.id;
-        null != t && g.A.remove(y.id, t, O.C.ChannelMessage), (0, I.x)(y.id, {
+        null != t && g.A.remove(y.id, t, D.C.ChannelMessage), (0, I.x)(y.id, {
             heroFile: null
         })
     }, [y.id, ef, b.drafts.type]);
@@ -299,7 +299,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                         ref: eT,
                                         id: h,
                                         focused: j,
-                                        useSlate: eO,
+                                        useSlate: eD,
                                         textValue: a,
                                         richValue: r,
                                         disabled: eR,
@@ -417,7 +417,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                     channel: y,
                     canMentionRoles: ea,
                     canMentionChannels: es,
-                    useNewSlashCommands: eO,
+                    useNewSlashCommands: eD,
                     canOnlyUseTextCommands: !1,
                     canSendStickers: !0,
                     textValue: a,
@@ -533,7 +533,7 @@ function et(e) {
         color: "transparent",
         look: "blank",
         onChange: e => {
-            (0, U.R)(e.currentTarget.files, t, O.C.ChannelMessage, {
+            (0, U.R)(e.currentTarget.files, t, D.C.ChannelMessage, {
                 requireConfirm: !0,
                 origin: "file_picker"
             }), e.currentTarget.value = null
@@ -564,7 +564,7 @@ function en(e) {
         g.A.addFile({
             file: a,
             channelId: t.id,
-            draftType: O.C.ChannelMessage
+            draftType: D.C.ChannelMessage
         }), n(l)
     }, [o, c] = l.useState(!1), u = l.useCallback(() => {
         c(!0)

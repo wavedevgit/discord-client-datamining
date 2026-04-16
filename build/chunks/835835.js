@@ -1,6 +1,6 @@
 /** chunk id: 835835 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => D,
+    Ay: () => O,
     Y9: () => j,
     u9: () => R
 }), n(321073);
@@ -137,7 +137,7 @@ let L = d.Ay.connectStores([f.A], e => {
     }
 })(M);
 
-function O(e) {
+function D(e) {
     let {
         analyticsName: t,
         items: n,
@@ -151,7 +151,7 @@ function O(e) {
         scrollerClassName: I,
         className: T,
         listName: j
-    } = e, R = l.useRef(null), M = (0, m.A)(j, R), L = (0, d.bG)([E.Ay], () => E.Ay.hasNotice()), O = (0, d.bG)([C.A], () => C.A.windowSize());
+    } = e, R = l.useRef(null), M = (0, m.A)(j, R), L = (0, d.bG)([E.Ay], () => E.Ay.hasNotice()), D = (0, d.bG)([C.A], () => C.A.windowSize());
     l.useEffect(() => {
         x.default.track(v.HAw.OPEN_POPOUT, {
             type: t
@@ -172,7 +172,7 @@ function O(e) {
             S._.unsubscribe(v.jej.SCROLL_PAGE_DOWN, t), S._.unsubscribe(v.jej.SCROLL_PAGE_UP, e)
         }
     }, []);
-    let D = l.useCallback(() => {
+    let O = l.useCallback(() => {
             let e = R.current?.getScrollerState();
             null != e && e.scrollHeight - e.scrollTop - e.offsetHeight < 250 && a && !r && h?.()
         }, [a, h, r]),
@@ -216,7 +216,7 @@ function O(e) {
             })
         }) : null,
         F = {
-            maxHeight: O.height - 43 - 25 - 48
+            maxHeight: D.height - 43 - 25 - 48
         };
     L && (F.maxHeight -= 40);
     let H = null != h && a;
@@ -230,7 +230,7 @@ function O(e) {
             component: g(),
             children: [(0, i.jsxs)(u.T7Y, {
                 className: I ?? y.m4,
-                onScroll: H ? D : void 0,
+                onScroll: H ? O : void 0,
                 ref: R,
                 children: [(0, i.jsx)(c.hD, {
                     navigator: M,
@@ -253,7 +253,7 @@ function O(e) {
     })
 }
 
-function D(e) {
+function O(e) {
     let {
         analyticsName: t,
         onFetch: n,
@@ -291,14 +291,14 @@ function D(e) {
     l.useEffect(() => {
         n(a)
     }, [a, n]);
-    let D = l.useMemo(() => s?.map(e => ({
+    let O = l.useMemo(() => s?.map(e => ({
         message: e,
         channel: a
     })), [s, a]);
-    return (0, i.jsx)(O, {
+    return (0, i.jsx)(D, {
         className: S,
         scrollerClassName: x,
-        items: D,
+        items: O,
         loading: o,
         analyticsName: t,
         renderEmptyState: f,

@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(392054),
     M = n(168186),
     L = n(545152),
-    O = n(972995),
-    D = n(355622),
+    D = n(972995),
+    O = n(355622),
     P = n(408018),
     k = n(223938),
     w = n(811501),
@@ -86,8 +86,8 @@ var i = n(627968),
     eR = n(994500),
     eM = n(309010),
     eL = n(522602),
-    eO = n(287809),
-    eD = n(954571),
+    eD = n(287809),
+    eO = n(954571),
     eP = n(147036),
     ek = n(234320),
     ew = n(203982),
@@ -157,7 +157,7 @@ class e3 extends l.PureComponent {
             let e = ev.A.getDraft(n.id, ev.C.ChannelMessage);
             e !== i && this.setState((0, P.ur)(e))
         }
-        t.textValue.length < e$.uvi && i.length >= e$.uvi && eD.default.track(e$.HAw.MESSAGE_LENGTH_LIMIT_REACHED, {})
+        t.textValue.length < e$.uvi && i.length >= e$.uvi && eO.default.track(e$.HAw.MESSAGE_LENGTH_LIMIT_REACHED, {})
     }
     draftDidChange = (() => {
         var e = this;
@@ -307,7 +307,7 @@ class e3 extends l.PureComponent {
             if (null == e || e === R.iw.CHAT) {
                 let {
                     isAuthorized: e
-                } = await (0, O.q)({
+                } = await (0, D.q)({
                     applicationId: l.applicationId,
                     channel: h,
                     commandIntegrationTypes: l.integration_types
@@ -322,7 +322,7 @@ class e3 extends l.PureComponent {
                     sectionName: n
                 } = (0, eK.bV)(l) ?? {}, i = e === R.iw.APPLICATION_LAUNCHER ? T.A.lastShownEntrypoint() : v.s4.TEXT, {
                     isAuthorized: a
-                } = await (0, O.q)({
+                } = await (0, D.q)({
                     applicationId: l.applicationId,
                     channel: h,
                     commandIntegrationTypes: l.integration_types,
@@ -506,7 +506,7 @@ class e3 extends l.PureComponent {
             placeholder: d,
             accessibilityLabel: u,
             pendingReply: r,
-            type: D.oU.CREATE_ANNOUNCEMENT_POST,
+            type: O.oU.CREATE_ANNOUNCEMENT_POST,
             onChange: this.handleTextareaChange,
             onSubmit: this.handleSendMessage,
             onResize: a,
@@ -634,12 +634,12 @@ class e7 extends l.PureComponent {
         } = this.props;
         if (t) switch (e.which) {
             case e$.Ks6.ARROW_LEFT:
-                n === D.oU.SIDEBAR && ew._.dispatch(e$.jej.FOCUS_CHANNEL_TEXT_AREA, {
+                n === O.oU.SIDEBAR && ew._.dispatch(e$.jej.FOCUS_CHANNEL_TEXT_AREA, {
                     channelId: eM.A.getChannelId()
                 });
                 return;
             case e$.Ks6.ARROW_RIGHT:
-                n === D.oU.NORMAL && ew._.dispatch(e$.jej.FOCUS_CHANNEL_TEXT_AREA, {
+                n === O.oU.NORMAL && ew._.dispatch(e$.jej.FOCUS_CHANNEL_TEXT_AREA, {
                     channelId: eT.Ay.getCurrentSidebarChannelId(i.id)
                 })
         }
@@ -705,7 +705,7 @@ class e7 extends l.PureComponent {
                 textAreaFocused: y,
                 textAreaHighlighted: b
             } = this.state,
-            j = c === D.oU.SIDEBAR;
+            j = c === O.oU.SIDEBAR;
         e = j && t.type === e$.rbe.GUILD_VOICE ? eX.t.pnnyFZ : j && t.type === e$.rbe.GUILD_STAGE_VOICE ? eX.t.YInSkq : d.k.THREADS.has(t.type) ? eX.t["OkzL+Q"] : eX.t.UbNmGc;
         let R = (0, i.jsx)("div", {
                 className: eQ.li,
@@ -743,7 +743,7 @@ class e7 extends l.PureComponent {
                 })
             }),
             L = v ? R : M,
-            O = (0, eV.m1)(t, eO.default, eR.A);
+            D = (0, eV.m1)(t, eD.default, eR.A);
         return (0, i.jsx)(E.A, {
             page: (0, eP.DJ)(this.props.channel),
             children: (0, i.jsx)(Z.di, {
@@ -766,7 +766,7 @@ class e7 extends l.PureComponent {
                             isSidebar: j,
                             className: eQ.q2,
                             "aria-label": eX.intl.formatToPlainString(e, {
-                                channelName: O
+                                channelName: D
                             }),
                             onMouseDown: this.handleChatInteract,
                             onKeyDown: this.handleKeyDown,
@@ -780,7 +780,7 @@ class e7 extends l.PureComponent {
                                 component: (0, i.jsx)(m.AC4, {
                                     children: (0, i.jsx)(m.H, {
                                         children: eX.intl.format(eX.t.eTzKkx, {
-                                            channelName: O
+                                            channelName: D
                                         })
                                     })
                                 }),
@@ -790,7 +790,7 @@ class e7 extends l.PureComponent {
                                     filterAfterTimestamp: g,
                                     showingQuarantineBanner: A,
                                     typingGradient: T,
-                                    hideSummaries: c === D.oU.OVERLAY
+                                    hideSummaries: c === O.oU.OVERLAY
                                 }), x ? null : this.renderMessageBanner({
                                     channel: t,
                                     showQuarantinedUserBanner: A,
@@ -835,7 +835,7 @@ let e5 = l.memo(function(e) {
         accessibilityLabel: r
     } = (0, eW.A)({
         channel: t
-    }), o = (0, eu.L)(eO.default.getCurrentUser(), t), [c] = (0, Y.c)(n?.id), d = (0, V.uZ)(n?.id), u = (0, h.bG)([eO.default], () => eO.default.getCurrentUser()), A = (0, h.bG)([ey.Ay], () => null != u && (ey.Ay.getMember(n?.id ?? e$.dJq, u?.id)?.isPending ?? !1)), g = (0, h.bG)([er.A], () => er.A.isEnabled()), _ = (0, ed.A)(t.id), p = (0, q.A)(t.id), E = (0, e_.D)(t.id), C = (0, h.bG)([eC.A], () => eC.A.getAlsoSendToChannel(t.id)), S = (0, h.bG)([eo.Ay, eI.default], () => eo.Ay.getUserCombo(eI.default.getId(), t.id)), I = (0, f.rj)(t), T = (0, f.aW)(t), v = I.length > 0 || t.rateLimitPerUser > 0 || null != S || null != T, {
+    }), o = (0, eu.L)(eD.default.getCurrentUser(), t), [c] = (0, Y.c)(n?.id), d = (0, V.uZ)(n?.id), u = (0, h.bG)([eD.default], () => eD.default.getCurrentUser()), A = (0, h.bG)([ey.Ay], () => null != u && (ey.Ay.getMember(n?.id ?? e$.dJq, u?.id)?.isPending ?? !1)), g = (0, h.bG)([er.A], () => er.A.isEnabled()), _ = (0, ed.A)(t.id), p = (0, q.A)(t.id), E = (0, e_.D)(t.id), C = (0, h.bG)([eC.A], () => eC.A.getAlsoSendToChannel(t.id)), S = (0, h.bG)([eo.Ay, eI.default], () => eo.Ay.getUserCombo(eI.default.getId(), t.id)), I = (0, f.rj)(t), T = (0, f.aW)(t), v = I.length > 0 || t.rateLimitPerUser > 0 || null != S || null != T, {
         showLinkedLobbyApplicationLoadingIndicator: N
     } = (0, eB.A)(t.linkedLobby), y = (0, H.A)("ChannelChat"), b = (0, ea.A)((0, Q.GP)(n, "ChannelChat") ? n?.officialMessageColor ?? eZ.aj : null);
     return (0, K.A)(t), (0, i.jsx)(e7, {

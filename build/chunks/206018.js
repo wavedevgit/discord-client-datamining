@@ -38,8 +38,8 @@ function N(e) {
         renderInputProfiles: R = !1,
         renderOutputDevices: M = !1,
         renderOutputVolume: L = !1,
-        renderInputDevices: O = !1,
-        renderInputVolume: D = !1,
+        renderInputDevices: D = !1,
+        renderInputVolume: O = !1,
         maybeRenderInputMeter: P = !1,
         renderSettingsButton: k = !1
     } = e, {
@@ -90,9 +90,9 @@ function N(e) {
             "aria-label": T.intl.string(T.t.ZR1Ss6),
             className: v.MK,
             children: [(0, i.jsxs)(r.rXV, {
-                children: [O && G, R && B, M && F]
+                children: [D && G, R && B, M && F]
             }), (0, i.jsxs)(r.rXV, {
-                children: [D && V, P && $ && (0, i.jsx)(r.aK1, {
+                children: [O && V, P && $ && (0, i.jsx)(r.aK1, {
                     id: "input-device-meter",
                     interactive: !1,
                     control: () => (0, i.jsx)(E.A, {

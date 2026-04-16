@@ -33,8 +33,8 @@ var i = n(627968),
     R = n(287809),
     M = n(403362),
     L = n(562153),
-    O = n(985018),
-    D = n(301094);
+    D = n(985018),
+    O = n(301094);
 let P = ["embedded_background"];
 
 function k(e) {
@@ -57,7 +57,7 @@ function k(e) {
                 children: (0, i.jsx)("img", {
                     src: e.getAvatarURL(n, r),
                     alt: t,
-                    className: D.my
+                    className: O.my
                 }, e.id)
             }, e.id)
         }
@@ -87,35 +87,35 @@ function w(e) {
         launchingComponentId: N
     });
     return (0, i.jsxs)("div", {
-        className: D.Yi,
+        className: O.Yi,
         children: [(0, i.jsx)(k, {
             avatarSize: _,
             guildId: I,
             channelId: a.id,
             users: p
         }), (0, i.jsx)(c.Text, {
-            className: s()(D.m_, {
-                [D.EX]: 0 === A,
-                [D.Y]: 1 === A
+            className: s()(O.m_, {
+                [O.EX]: 0 === A,
+                [O.Y]: 1 === A
             }),
             variant: "text-sm/normal",
-            children: p.length > 1 ? O.intl.formatToPlainString(O.t.cpe6CK, {
+            children: p.length > 1 ? D.intl.formatToPlainString(D.t.cpe6CK, {
                 username: x,
                 count: p.length - 1
-            }) : O.intl.formatToPlainString(O.t["7Uuia2"], {
+            }) : D.intl.formatToPlainString(D.t["7Uuia2"], {
                 username: x
             })
         }), (0, i.jsx)(c.Text, {
-            className: s()(D.wx, {
-                [D.EX]: 0 === A,
-                [D.Y]: 1 === A
+            className: s()(O.wx, {
+                [O.EX]: 0 === A,
+                [O.Y]: 1 === A
             }),
             variant: "text-sm/normal",
             children: n.name
         }), (0, i.jsx)("div", {
-            className: D.Uo,
+            className: O.Uo,
             children: S ? (0, i.jsx)(c.Button, {
-                text: O.intl.string(O.t["4i2vj+"]),
+                text: D.intl.string(D.t["4i2vj+"]),
                 onClick: function(e) {
                     e.stopPropagation(), null != f && (0, h.A)({
                         applicationId: f.applicationId,
@@ -162,12 +162,12 @@ function U(e) {
     }, [C, u, R]), (0, i.jsx)(T.f5, {
         value: c,
         children: (0, i.jsxs)("div", {
-            className: D.kL,
+            className: O.kL,
             children: [C && null != u && (0, i.jsx)(f.A, {
-                className: D.pU,
+                className: O.pU,
                 embedId: (0, x.A)(u.location.id, d)
             }), v && null != m && null != g && "" !== g ? (0, i.jsx)("img", {
-                className: D.j0,
+                className: O.j0,
                 alt: m.name,
                 src: g
             }) : null, b && null != m && (0, i.jsx)(w, {
@@ -176,7 +176,7 @@ function U(e) {
                 participants: t.participants,
                 application: m
             }), s || v ? null : (0, i.jsx)("div", {
-                className: D.OB
+                className: O.OB
             })]
         })
     })

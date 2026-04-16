@@ -34,8 +34,8 @@ var i = n(627968),
     R = n(976860),
     M = n(219271),
     L = n(21119),
-    O = n(95701),
-    D = n(734057),
+    D = n(95701),
+    O = n(734057),
     P = n(958590),
     k = n(584777),
     w = n(383501),
@@ -87,7 +87,7 @@ let et = (0, N.Ld)(),
             onConfirm: t,
             channelIds: n,
             ...l
-        } = e, a = (0, c.yK)([D.A], () => Array.from(n).map(D.A.getChannel), [n]);
+        } = e, a = (0, c.yK)([O.A], () => Array.from(n).map(O.A.getChannel), [n]);
         return (0, i.jsx)(o.Modal, {
             title: Q.intl.string(Q.t.uFHxNd),
             subtitle: Q.intl.string(Q.t.rIsSqE),
@@ -891,7 +891,7 @@ function ed(e) {
 
 function eu(e) {
     let t = eh(e);
-    return new Set((0, a.chain)(D.A.getMutablePrivateChannels()).values().filter(e => (0, O.MK)(e.type)).filter(e => eh(e.recipients) === t).map(e => e.id).value())
+    return new Set((0, a.chain)(O.A.getMutablePrivateChannels()).values().filter(e => (0, D.MK)(e.type)).filter(e => eh(e.recipients) === t).map(e => e.id).value())
 }
 
 function eh(e) {

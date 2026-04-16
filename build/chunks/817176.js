@@ -1,6 +1,6 @@
 /** chunk id: 817176 params = (module,exports,require) **/
 n.d(t, {
-    A: () => O
+    A: () => D
 });
 var i = n(627968),
     l = n(64700),
@@ -40,7 +40,7 @@ let j = Object.freeze({
     M = s()("#000000").alpha(0).hex(),
     L = `linear-gradient(to top, ${R} 30%, ${M} 80%)`;
 
-function O(e) {
+function D(e) {
     var t, n;
     let {
         sku: a,
@@ -48,8 +48,8 @@ function O(e) {
         isTargetingCurrentUser: r,
         source: R,
         showIcons: M,
-        guildId: O,
-        channelId: D,
+        guildId: D,
+        channelId: O,
         analyticsLocations: P,
         onCardClick: k,
         onButtonClick: w
@@ -173,8 +173,8 @@ function O(e) {
                 replacedElement: M && !r && R === p.uS.WISHLIST ? (0, i.jsx)(C.n, {
                     spec: j,
                     user: s,
-                    guildId: O ?? void 0,
-                    channelId: D ?? void 0
+                    guildId: D ?? void 0,
+                    channelId: O ?? void 0
                 }) : null
             }), (0, i.jsx)(T.e, {
                 shape: "custom",

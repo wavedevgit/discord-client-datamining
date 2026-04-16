@@ -46,19 +46,19 @@ function _(e, t, n) {
             let e = o.A.getUserIdentityByApplication(f, E) ?? null;
             return [(o.A.isFetchingUser(f) || o.A.getFetchState(f) === o.e.NOT_FETCHED) && null == e, e]
         }, [f, E])),
-        [L, O] = function(e) {
+        [L, D] = function(e) {
             let [t, n] = (0, l.yK)([u.A], () => null != e ? [u.A.isFetchingProfile(e), u.A.getUserProfile(e) ?? null] : [!1, null], [e]), a = null != e && !t && null == n;
             return i.useEffect(() => {
                 a && null != e && (0, h.A)(e)
             }, [a, e]), [(t || a) && null == n, n]
         }(j ? e : null),
-        D = v || y || R || L;
+        O = v || y || R || L;
     return i.useMemo(() => ({
         isV2: S,
-        isLoading: D,
+        isLoading: O,
         application: b,
         applicationWidgetConfig: N,
         userApplicationIdentity: M,
-        profileApplicationWidget: O?.widgets?.find(e => null != t && e instanceof d.R && e.applicationId === t) ?? null
-    }), [b, t, N, M, D, S, O])
+        profileApplicationWidget: D?.widgets?.find(e => null != t && e instanceof d.R && e.applicationId === t) ?? null
+    }), [b, t, N, M, O, S, D])
 }

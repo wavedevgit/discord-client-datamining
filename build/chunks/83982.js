@@ -33,8 +33,8 @@ var i = n(627968),
     R = n(652215),
     M = n(731854),
     L = n(985018),
-    O = n(391308);
-let D = c._3J.SIZE_80,
+    D = n(391308);
+let O = c._3J.SIZE_80,
     P = c._3J.SIZE_40;
 
 function k(e) {
@@ -46,7 +46,7 @@ function k(e) {
         text: L.intl.string(L.t.HFwRpk),
         position: "bottom",
         children: (0, i.jsx)("div", {
-            className: O.bG,
+            className: D.bG,
             children: (0, i.jsx)(c.EpV, {
                 color: c.LU0.colors.STATUS_WARNING_BACKGROUND
             })
@@ -75,7 +75,7 @@ function w(e) {
         user: W,
         streamId: K,
         speaking: z
-    } = t, Y = W.id === V, J = (0, y.Ay)(t), q = (0, r.bG)([v.A], () => v.A.isFocused()), $ = (0, r.bG)([C.A], () => C.A.getWindowFocused(R.MLl.CHANNEL_CALL_POPOUT)), Z = (0, r.bG)([T.Ay], () => null != W.id && T.Ay.isLocalVideoDisabled(W.id, (0, m.A)(t.type)), [W.id, t.type]), X = (0, p.A)(n.guild_id, W.id), Q = N.Ay.getName(n.getGuildId(), n.id, W) + (X ? ` ${L.intl.string(L.t["pFO/Ph"])}` : ""), ee = z && ($ || q), et = o < 124 ? P : D, {
+    } = t, Y = W.id === V, J = (0, y.Ay)(t), q = (0, r.bG)([v.A], () => v.A.isFocused()), $ = (0, r.bG)([C.A], () => C.A.getWindowFocused(R.MLl.CHANNEL_CALL_POPOUT)), Z = (0, r.bG)([T.Ay], () => null != W.id && T.Ay.isLocalVideoDisabled(W.id, (0, m.A)(t.type)), [W.id, t.type]), X = (0, p.A)(n.guild_id, W.id), Q = N.Ay.getName(n.getGuildId(), n.id, W) + (X ? ` ${L.intl.string(L.t["pFO/Ph"])}` : ""), ee = z && ($ || q), et = o < 124 ? P : O, {
         avatarSrc: en,
         avatarDecorationSrc: ei
     } = (0, x.A)({
@@ -104,8 +104,8 @@ function w(e) {
         selected: c
     }) : (0, i.jsx)(E.A, {
         onResize: k,
-        wrapperClassName: S !== A.N.CALL_TILE ? O.tN : void 0,
-        className: O.Qs,
+        wrapperClassName: S !== A.N.CALL_TILE ? D.tN : void 0,
+        className: D.Qs,
         mirror: Y,
         streamId: K,
         videoComponent: B,
@@ -114,8 +114,8 @@ function w(e) {
         paused: H,
         userId: W.id
     }, K) : (0, i.jsx)("div", {
-        className: s()(O.Qs, {
-            [O.Kx]: w || U
+        className: s()(D.Qs, {
+            [D.Kx]: w || U
         }),
         children: (0, i.jsx)(f.A, {
             "aria-label": Q,

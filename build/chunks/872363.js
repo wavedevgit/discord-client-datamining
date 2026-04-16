@@ -46,13 +46,13 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
     L = {
         borderRadius: `0px ${N}px ${N}px 0px`
     },
-    O = {
+    D = {
         mass: 1,
         tension: 500,
         friction: 18,
         clamp: !0
     },
-    D = e => {
+    O = e => {
         let t, a, {
                 participant: r,
                 isUpsellEnabled: o,
@@ -67,7 +67,7 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
             {
                 analyticsLocations: L
             } = (0, g.Ay)(),
-            O = null != (0, x.A)(r);
+            D = null != (0, x.A)(r);
         try {
             t = (0, C.HB)(M)
         } catch (e) {
@@ -78,14 +78,14 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
         } catch (e) {
             a = !1
         }
-        let D = t || a,
+        let O = t || a,
             {
                 location: P
             } = (0, A.p)(),
             k = (0, c.bG)([p.default], () => p.default.getCurrentUser()),
             w = o && !E.Ay.isPremium(k, I.PremiumTypes.TIER_1) && !E.Ay.canStreamQuality(E.Ay.StreamQuality.MID, k),
             U = l.useCallback(() => {
-                w && D && (0, m.mMO)(async () => {
+                w && O && (0, m.mMO)(async () => {
                     let {
                         default: e
                     } = await n.e("18630").then(n.bind(n, 826789));
@@ -94,24 +94,24 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                         analyticsSource: P
                     })
                 })
-            }, [w, D, P]);
+            }, [w, O, P]);
         if (l.useEffect(() => {
-                !y && D && (f.default.track(S.HAw.PREMIUM_UPSELL_VIEWED, {
+                !y && O && (f.default.track(S.HAw.PREMIUM_UPSELL_VIEWED, {
                     type: I.e.STREAM_QUALITY_INDICATOR,
                     has_premium_stream_fps: t,
                     has_premium_stream_resolution: a,
                     location_stack: L
                 }), b(!0))
-            }, [t, a, D, y, b, L]), null == M) return null;
+            }, [t, a, O, y, b, L]), null == M) return null;
         let G = (0, i.jsx)(u.m, {
-            text: O ? T.intl.string(T.t.q8TiVt) : D ? T.intl.string(T.t.IHgpEn) : T.intl.string(T.t.vLb0VW),
+            text: D ? T.intl.string(T.t.q8TiVt) : O ? T.intl.string(T.t.IHgpEn) : T.intl.string(T.t.vLb0VW),
             position: "bottom",
             children: (0, i.jsxs)(m.DUT, {
                 onClick: U,
-                className: s()(v.t5, N, _.u1[h], O ? v.Y5 : v.Lc, {
-                    [v.vk]: w && D
+                className: s()(v.t5, N, _.u1[h], D ? v.Y5 : v.Lc, {
+                    [v.vk]: w && O
                 }),
-                children: [D ? (0, i.jsx)(m.tvc, {
+                children: [O ? (0, i.jsx)(m.tvc, {
                     size: "md",
                     color: "currentColor",
                     className: v.fY
@@ -126,7 +126,7 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
         return (0, i.jsx)(m.LpS, {
             text: G,
             className: s()(j, v.AA, {
-                [v.Dc]: D && R
+                [v.Dc]: O && R
             }),
             color: d.A.unsafe_rawColors.PRIMARY_500.css,
             shape: _.u1[h]
@@ -148,10 +148,10 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                 to: g.enabled ? R : b
             },
             leave: g.enabled ? j : y,
-            config: O
+            config: D
         }, "animate-always"), E = (0, m.zhh)({
             to: p ? L : M,
-            config: O
+            config: D
         }, "animate-always");
         return (e => {
             let {
@@ -163,7 +163,7 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                 ...l,
                 children: [f((e, n) => n ? (0, i.jsx)(r.animated.div, {
                     style: e,
-                    children: (0, i.jsx)(D, {
+                    children: (0, i.jsx)(O, {
                         className: v.LZ,
                         participant: t,
                         size: o,

@@ -33,8 +33,8 @@ var l = n(503698),
     R = n(329151),
     M = n(738080),
     L = n(648246),
-    O = n(305637),
-    D = n(652215),
+    D = n(305637),
+    O = n(652215),
     P = n(708727);
 let k = (0, d.A)(e => {
     let {
@@ -69,14 +69,14 @@ let k = (0, d.A)(e => {
         children: (() => {
             if (!(0, E.Ay)(t)) {
                 if ((0, x.A)(t)) return (0, i.jsx)(T.A, {
-                    platform: u.A.get(D.fg2.XBOX),
+                    platform: u.A.get(O.fg2.XBOX),
                     variant: G,
                     onAction: H,
                     icon: c.YWd
                 });
-                if (t?.platform === D.yTV.PS4 || t?.platform === D.yTV.PS5) return (0, i.jsx)(T.A, {
+                if (t?.platform === O.yTV.PS4 || t?.platform === O.yTV.PS5) return (0, i.jsx)(T.A, {
                     variant: G,
-                    platform: u.A.get(D.fg2.PLAYSTATION),
+                    platform: u.A.get(O.fg2.PLAYSTATION),
                     onAction: H,
                     icon: c.Xj
                 })
@@ -115,7 +115,7 @@ let k = (0, d.A)(e => {
                     onAction: H
                 })
             }
-            return V ? (0, i.jsx)(O.A, {
+            return V ? (0, i.jsx)(D.A, {
                 isCurrentUser: B.id === l.id,
                 applicationStream: s,
                 onAction: H

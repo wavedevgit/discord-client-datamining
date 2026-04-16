@@ -49,8 +49,8 @@ function I(e) {
     } = e, [E, S] = l.useState(""), [I, T] = l.useState({}), [v, N] = l.useState(!1), [y, b] = l.useState(null), j = l.useRef(null), R = (0, d.Ay)(n), {
         roles: M,
         members: L,
-        getRichTag: O
-    } = (0, p.K)(t, n, n.accessPermissions, E), D = _.A.useSections({
+        getRichTag: D
+    } = (0, p.K)(t, n, n.accessPermissions, E), O = _.A.useSections({
         roles: M,
         members: L
     }), P = h && 0 === Object.keys(I).length;
@@ -80,7 +80,7 @@ function I(e) {
         setPendingAdditions: T,
         roles: M,
         members: L,
-        getRichTag: O,
+        getRichTag: D,
         children: (0, i.jsx)(a.Modal, {
             ...A,
             title: C.intl.string(C.t.dMJ3Y6),
@@ -119,7 +119,7 @@ function I(e) {
                 renderSection: _.A.renderSection,
                 rowHeight: _.A.ROW_HEIGHT,
                 renderRow: _.A.renderRow,
-                sections: D
+                sections: O
             },
             actions: P ? [{
                 variant: "secondary",

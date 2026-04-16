@@ -120,12 +120,12 @@ function L(e) {
     f = !0, b(), i = M(), T = null, N("")
 }
 
-function O(e) {
+function D(e) {
     if (e.key !== p.TLS) return !1;
-    D()
+    O()
 }
 
-function D() {
+function O() {
     null != i && (i.destroy(), i = null), v()
 }
 class P extends l.Ay.Store {
@@ -173,9 +173,9 @@ let k = new P(a.h, {
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
             f = !0, b(), i = M(), T = e.channelId, N("")
         },
-        MODAL_POP: O,
-        HIDE_ACTION_SHEET: O,
-        PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: D,
+        MODAL_POP: D,
+        HIDE_ACTION_SHEET: D,
+        PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: O,
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_QUERY: function(e) {
             T = e.channelId, N(e.query)
         },
