@@ -1,18 +1,17 @@
 /** chunk id: 288224 params = (module,exports,require) **/
-"use strict";
-n.d(t, {
-    X: () => s
+l.d(t, {
+    X: () => i
 });
-var i = n(73153);
+var n = l(73153);
 
-function s(e) {
+function i(e) {
     let {
         emojiId: t,
-        userImage: n
+        userImage: l
     } = e;
-    i.h.dispatch({
+    n.h.dispatch({
         type: "EMOJI_CACHE_RAW_EMOJI_ASSET",
         emojiId: t,
-        userImage: n
+        userImage: l
     })
 }

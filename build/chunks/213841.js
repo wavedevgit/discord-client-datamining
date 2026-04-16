@@ -179,16 +179,16 @@ var U = T ? function(e, t, r) {
             for (var r = -1, a = e ? e.length : 0; ++r < a && !1 !== t(e[r], r, e););
         }(l, function(e) {
             var t = "_." + e[0];
-            n & e[1] && !((a ? a.length : 0) && function(e, t, r) {
+            n & e[1] && !((a ? a.length : 0) && function(e, t) {
                 if (t != t) {
-                    for (var a = e.length, n = -1; ++n < a;)
-                        if (k(e[n], n, e)) return n;
+                    for (var r = e.length, a = -1; ++a < r;)
+                        if (k(e[a], a, e)) return a;
                     return -1
                 }
-                for (var o = -1, s = e.length; ++o < s;)
-                    if (e[o] === t) return o;
+                for (var n = -1, o = e.length; ++n < o;)
+                    if (e[n] === t) return n;
                 return -1
-            }(a, t, 0) > -1) && a.push(t)
+            }(a, t) > -1) && a.push(t)
         }), i = a.sort()).length) - 1, i[u] = (c > 1 ? "& " : "") + i[u], i = i.join(c > 2 ? ", " : " "), h.replace(f, "{\n/* [wrapped with " + i + "] */\n")), function() {
             return o
         })

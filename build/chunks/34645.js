@@ -64,7 +64,7 @@ var i = t(627968),
     eo = t(788868),
     ec = t(818348),
     eu = t(985018),
-    ed = t(953248);
+    ed = t(898640);
 let ep = eo.gD.NONE_MONTH,
     em = [L.pn.PLAN_SELECT, L.pn.REVIEW, L.pn.CONFIRM],
     e_ = [L.pn.PLAN_SELECT, L.pn.ADD_PAYMENT_STEPS, L.pn.REVIEW, L.pn.CONFIRM];
@@ -164,21 +164,21 @@ function eh(e) {
         } = (0, M.P5)(),
         e9 = (0, o.bG)([V.A], () => V.A.popupCallbackCalled),
         e6 = (0, g.Y)(),
-        e7 = l.useMemo(() => null != eC && eU && e6 ? (0, k.v)(eC, eX) : [{
+        e1 = l.useMemo(() => null != eC && eU && e6 ? (0, k.v)(eC, eX) : [{
             planId: eo.gD.PREMIUM_MONTH_GUILD,
             quantity: eX
         }], [eC, eU, eX, e6]),
         e4 = l.useMemo(() => (0, U.A)(), []),
-        [e5, e1] = (0, m.A)(() => [e4 ?? (0, a.A)(), Date.now()]),
+        [e5, e3] = (0, m.A)(() => [e4 ?? (0, a.A)(), Date.now()]),
         {
-            analyticsLocations: e3
+            analyticsLocations: e7
         } = (0, h.Ay)(eh, f.A.GUILD_BOOST_PURCHASE_MODAL),
-        e2 = l.useMemo(() => e7.find(e => {
+        e2 = l.useMemo(() => e1.find(e => {
             let {
                 planId: n
             } = e;
             return eo.pW.has(n)
-        })?.planId ?? eo.gD.PREMIUM_MONTH_GUILD, [e7]),
+        })?.planId ?? eo.gD.PREMIUM_MONTH_GUILD, [e1]),
         ne = (0, o.bG)([K.A], () => K.A.get(e2)?.skuId, [e2]),
         nn = l.useMemo(() => ({
             load_id: e5,
@@ -189,9 +189,9 @@ function eh(e) {
             quantity: eX,
             location: eS,
             source: eg,
-            location_stack: e3,
+            location_stack: e7,
             checkout_flow: I.CL.GUILD_BOOST_CHECKOUT
-        }), [e5, eS, e3, eg, eX, e2]);
+        }), [e5, eS, e7, eg, eX, e2]);
     l.useEffect(() => {
         (0, Q.c_)(eY)
     }, [eY]);
@@ -203,13 +203,13 @@ function eh(e) {
             from_step: null != n ? n : nt,
             to_step: e === L.pn.ADD_PAYMENT_STEPS ? L.pn.PAYMENT_TYPE : e,
             step_duration_ms: t - nl,
-            flow_duration_ms: t - e1,
+            flow_duration_ms: t - e3,
             guild_id: eb,
             application_id: eE
         })
-    }, [eF, nn, nt, nl, e1, eb, eE]), ns = {
+    }, [eF, nn, nt, nl, e3, eb, eE]), ns = {
         baseAnalyticsData: nn,
-        flowStartTime: e1,
+        flowStartTime: e3,
         guildId: eb,
         handleStepChange: nr,
         onSubscribeComplete: eI,
@@ -302,7 +302,7 @@ function eh(e) {
                 from_step: n,
                 to_step: t,
                 step_duration_ms: i - nl,
-                flow_duration_ms: i - e1,
+                flow_duration_ms: i - e3,
                 guild_id: eb
             })
         },
@@ -431,7 +431,7 @@ function eh(e) {
                     currentPremiumSubscription: eC,
                     premiumSubscriptionPaymentSourceId: eR,
                     premiumSubscriptionPlan: ew,
-                    newAdditionalPlans: e7,
+                    newAdditionalPlans: e1,
                     onPurchaseTermsChange: e8,
                     legalTermsNodeRef: nf,
                     hasLegalTermsFlash: nh,
@@ -441,7 +441,7 @@ function eh(e) {
                     }
                 }), t = L.pn.PLAN_SELECT;
                 let _ = async () => {
-                    s()(null != e7, "Missing newAdditionalPlans");
+                    s()(null != e1, "Missing newAdditionalPlans");
                     let e = (0, D.W)(eW, eY);
                     eF(null);
                     try {
@@ -451,17 +451,17 @@ function eh(e) {
                                 currency: eM.currency
                             },
                             t = a.currency ?? eM.currency,
-                            i = (0, $.U8)(eC, e7, t.toLowerCase(), a.paymentSourceId);
+                            i = (0, $.U8)(eC, e1, t.toLowerCase(), a.paymentSourceId);
                         if (q.default.track(ea.HAw.PAYMENT_FLOW_COMPLETED, {
                                 ...nn,
-                                duration_ms: Date.now() - e1,
+                                duration_ms: Date.now() - e3,
                                 guild_id: eb,
                                 application_id: eE
                             }), nC) return;
                         if (null == eC || null == eD) {
                             s()(null != e, "Missing paymentSource");
                             let l = await (0, S.Ky)({
-                                items: e7,
+                                items: e1,
                                 paymentSource: e,
                                 currency: t,
                                 expectedInvoicePrice: n,
@@ -470,10 +470,10 @@ function eh(e) {
                             if (l.redirectConfirmation) return void nN(null != l.redirectURL)
                         } else {
                             let l = {
-                                items: (0, $.aE)(eC, e7)
+                                items: (0, $.aE)(eC, e1)
                             };
                             l.currency = eC.currency ?? t, l.paymentSource = null != eR ? eW[eR] : void 0, null == l.paymentSource && (s()(null != e, "Missing paymentSource"), l.paymentSource = e, l.currency = t);
-                            let r = await (0, S.nV)(eC, l, n, i, e3);
+                            let r = await (0, S.nV)(eC, l, n, i, e7);
                             if (r.redirectConfirmation) return void nN(null != r.redirectURL)
                         }
                         null == ev && nr(L.pn.CONFIRM), nd(R.h.COMPLETED), null != eb && await ex(eb, null != ev), null != ev && n_(), eI?.()
@@ -483,7 +483,7 @@ function eh(e) {
                             payment_error_code: n?.code,
                             payment_gateway: null != e ? e.type === ea.hes.CARD ? ea.kM_.STRIPE : ea.kM_.BRAINTREE : null,
                             payment_source_id: eY,
-                            duration_ms: Date.now() - e1
+                            duration_ms: Date.now() - e3
                         })
                     } finally {
                         nC || eV(!1)

@@ -1,15 +1,15 @@
 /** chunk id: 11531 params = (module,exports,require) **/
 n.d(e, {
-    J: () => l
+    J: () => a
 });
 var i = n(353640),
-    a = n(121894);
-let l = (0, i.v)(t => ({
+    l = n(121894);
+let a = (0, i.v)(t => ({
     favoriteAdded: !1,
-    notifyFavoriteAdded: () => (0, a.r)(() => t({
+    notifyFavoriteAdded: () => (0, l.r)(() => t({
         favoriteAdded: !0
     })),
-    clearFavoriteAdded: () => (0, a.r)(() => t({
+    clearFavoriteAdded: () => (0, l.r)(() => t({
         favoriteAdded: !1
     }))
 }))

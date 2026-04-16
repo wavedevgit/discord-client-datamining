@@ -27,7 +27,7 @@ var i = n(627968),
     v = n(652215),
     N = n(788868),
     y = n(985018),
-    b = n(906269);
+    b = n(789901);
 let j = Object.freeze({
         size: 0,
         iconSize: 20,

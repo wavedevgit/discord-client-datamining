@@ -20,7 +20,7 @@ var i = n(627968),
     E = n(834757),
     p = n(727353),
     _ = n(652215),
-    S = n(864667);
+    S = n(378219);
 class x extends l.PureComponent {
     componentDidMount() {
         let {

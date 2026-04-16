@@ -13,9 +13,9 @@ var i = n(200921),
 let u = (0, l.eA)(a.X.ACCOUNT_SESSIONS_NESTED_PANEL, {
     buildLayout: () => [d.C],
     usePredicate: () => (0, o._A)("AccountSessionsNestedPanel"),
-    initialize: () => ((0, i.GY)(), () => {
-        (0, i.ZQ)()
-    }),
+    initialize: () => {
+        (0, i.GY)()
+    },
     useTrailingDecoration: () => ({
         type: r.sw.TEXT,
         useText: () => {
@@ -25,7 +25,7 @@ let u = (0, l.eA)(a.X.ACCOUNT_SESSIONS_NESTED_PANEL, {
             } = (0, s.r)(), n = t.length + +(null != e);
             return n > 0 ? c.intl.formatToPlainString(c.t.G7zwOk, {
                 count: n
-            }) : null
+            }) : c.intl.string(c.t.MKDeyL)
         }
     })
 })

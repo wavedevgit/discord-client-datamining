@@ -25,7 +25,7 @@ var l = n(627968),
     C = n(988794),
     T = n(652215),
     y = n(985018),
-    b = n(430322);
+    b = n(723074);
 let I = e => {
         let {
             guildId: t,
@@ -198,7 +198,7 @@ function _(e) {
                 A(C.Ps.STAGE_INSTANCE), (0, d.mMO)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("93142"), n.e("18496"), n.e("64233"), n.e("58112")]).then(n.bind(n, 409200));
+                    } = await Promise.all([n.e("93142"), n.e("18496"), n.e("64233"), n.e("96288")]).then(n.bind(n, 409200));
                     return n => (0, l.jsx)(e, {
                         ...n,
                         channelType: T.rbe.GUILD_STAGE_VOICE,

@@ -63,7 +63,7 @@ var l = n(627968),
     es = n(837921),
     ei = n(652215),
     er = n(985018),
-    ea = n(107852);
+    ea = n(330076);
 let eo = es.Ay.getEnableHardwareAcceleration() ? g.JsQ : g.euF,
     eu = {
         offset: {
@@ -333,7 +333,7 @@ function e_(e) {
         }) : (0, S.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("54595")]).then(n.bind(n, 385913));
+            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("44607")]).then(n.bind(n, 385913));
             return n => (0, l.jsx)(e, {
                 ...n,
                 user: a,
@@ -367,14 +367,14 @@ function e_(e) {
                 ...t
             })
         })
-    }, e3 = (0, l.jsx)(q.A, {
+    }, e7 = (0, l.jsx)(q.A, {
         userName: ez,
         displayNameStyles: a?.displayNameStyles,
         effectDisplayType: es || i || eN ? B.G.ANIMATED : B.G.PLAIN,
         loop: es,
         boldFontOpacity: .9
-    }), e7 = ew ? (0, l.jsxs)(l.Fragment, {
-        children: [e3, (0, l.jsx)(K.Ay, {
+    }), e3 = ew ? (0, l.jsxs)(l.Fragment, {
+        children: [e7, (0, l.jsx)(K.Ay, {
             primaryGuild: a?.primaryGuild,
             userId: a?.id,
             inline: !0,
@@ -383,16 +383,16 @@ function e_(e) {
                 [ea.Y_]: eB
             })
         })]
-    }) : e3, e5 = s.useRef(null), e6 = (0, k.W)({
+    }) : e7, e6 = s.useRef(null), e4 = (0, k.W)({
         location: "PrivateChannel"
     }) && a?.displayNameStyles != null, {
         isIncomingCall: e8,
-        isOngoingCall: e4
+        isOngoingCall: e5
     } = (0, b.A)(t.id), te = [(0, U.Ay)({
         channel: t,
         unread: eq,
         isIncomingCall: e8,
-        isOngoingCall: e4
+        isOngoingCall: e5
     }), (0, U.r2)({
         channel: t,
         muted: eQ,
@@ -406,7 +406,7 @@ function e_(e) {
         location: "PrivateChannel"
     }), ti = (0, f.A)(() => {
         let e = eU.current?.getBoundingClientRect() ?? null,
-            t = e5.current?.getBoundingClientRect() ?? null;
+            t = e6.current?.getBoundingClientRect() ?? null;
         if (null == t || null == e || e.width + 44 - t.width <= 0) return void eL({
             maskImage: "none"
         });
@@ -455,12 +455,12 @@ function e_(e) {
                         nameplate: eW ? J : void 0,
                         selected: i,
                         hovered: es,
-                        content: e5,
+                        content: e6,
                         placement: P.u.CHANNEL
                     }), (0, l.jsx)("div", {
                         className: ea.lU,
                         ref: eU,
-                        children: e7
+                        children: e3
                     }), (0, l.jsx)(u.N_, {
                         style: ey,
                         innerRef: ep,
@@ -469,7 +469,7 @@ function e_(e) {
                         "aria-label": te,
                         ...s,
                         children: (0, l.jsx)(j.A, {
-                            ref: e5,
+                            ref: e6,
                             avatar: (() => {
                                 let e = g._3J.SIZE_32;
                                 if (t.isMultiUserDM())
@@ -529,16 +529,16 @@ function e_(e) {
                             }) : null,
                             name: (0, l.jsx)(T.A, {
                                 className: r()(ea.uN, {
-                                    [ea.e8]: e6
+                                    [ea.e8]: e4
                                 }),
-                                children: e7
+                                children: e3
                             }),
                             decorators: t.isSystemDM() ? (0, l.jsx)(M.A, {
                                 className: ea.G$,
                                 type: M.A.Types.SYSTEM_DM,
                                 verified: !0
                             }) : null,
-                            withDisplayNameStyles: e6
+                            withDisplayNameStyles: e4
                         })
                     }), (0, l.jsxs)("div", {
                         className: r()(ea._q, {

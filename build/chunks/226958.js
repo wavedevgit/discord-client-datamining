@@ -27,7 +27,7 @@ function u(e) {
             (0, d.mMO)(async () => {
                 let {
                     default: i
-                } = await n.e("70215").then(n.bind(n, 400954));
+                } = await n.e("92596").then(n.bind(n, 400954));
                 return n => (0, t.jsx)(i, {
                     guildId: e.id,
                     ...n

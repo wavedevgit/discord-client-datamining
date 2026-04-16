@@ -1,0 +1,18 @@
+/** chunk id: 935824 params = (module,exports,require) **/
+e.exports = {
+    kL: "container__955a3",
+    KY: "withoutTopBorder__955a3",
+    BW: "bannerAsset__955a3",
+    rZ: "redirectNoticeBannerAsset__955a3",
+    Gj: "redirectNoticeBannerContainer__955a3",
+    kj: "redirectNoticeContainer__955a3",
+    Qs: "content__955a3",
+    HR: "contentWithExtraPadding__955a3",
+    Tv: "heroBackground__955a3",
+    nz: "heroGradient__955a3",
+    Fe: "heroBannerAsset__955a3",
+    lJ: "heroBackgroundOrbs__955a3",
+    ZZ: "heroGradientOrbs__955a3",
+    H4: "heroBannerAssetOrbs__955a3",
+    Q8: "heroBannerAssetDefault__955a3"
+}

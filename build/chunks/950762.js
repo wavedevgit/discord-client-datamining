@@ -1,11 +1,10 @@
 /** chunk id: 950762 params = (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => l
+l.d(t, {
+    A: () => r
 });
-var i = n(315069),
-    s = n(427157);
-class l extends i.A {
+var n = l(315069),
+    i = l(427157);
+class r extends n.A {
     id;
     name;
     managed;
@@ -15,6 +14,6 @@ class l extends i.A {
     animated;
     available;
     constructor(e) {
-        super(), this.id = e.id, this.name = e.name, this.managed = e.managed, this.roles = e.roles, this.requiredColons = e.requiredColons, this.user = new s.A(e.user), this.animated = e.animated, this.available = e.available
+        super(), this.id = e.id, this.name = e.name, this.managed = e.managed, this.roles = e.roles, this.requiredColons = e.requiredColons, this.user = new i.A(e.user), this.animated = e.animated, this.available = e.available
     }
 }

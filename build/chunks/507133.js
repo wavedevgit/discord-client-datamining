@@ -8,13 +8,13 @@ var i = n(627968),
     r = n(442433),
     s = n(297413),
     o = n(235986),
-    d = n(706226);
+    d = n(883202);
 class c extends l.PureComponent {
     handleContextMenu(e, t) {
         (0, r.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("32418"), n.e("77012")]).then(n.bind(n, 668569));
+            } = await Promise.all([n.e("97262"), n.e("32418"), n.e("22880")]).then(n.bind(n, 668569));
             return n => (0, i.jsx)(e, {
                 ...n,
                 user: t

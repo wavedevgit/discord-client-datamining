@@ -7,7 +7,7 @@ var n = a(627968),
     l = a(77555),
     s = a(151054),
     o = a(457417),
-    i = a(642036);
+    i = a(305604);
 let c = () => {
     let {
         selectedDestinations: e,

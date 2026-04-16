@@ -53,12 +53,12 @@ function C(e) {
                 guild: a,
                 channel: l,
                 members: t,
-                partySize: function(e, t) {
-                    let n = e.length;
+                partySize: function(e) {
+                    let t = e.length;
                     return {
-                        knownSize: n,
+                        knownSize: t,
                         unknownSize: 0,
-                        totalSize: n + 0
+                        totalSize: t + 0
                     }
                 }(t),
                 onChannelContextMenu: n

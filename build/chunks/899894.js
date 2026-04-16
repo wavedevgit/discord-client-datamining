@@ -10,7 +10,7 @@ var a = n(989349),
     r = n(397927),
     o = n(239093),
     d = n(985018),
-    c = n(547485);
+    c = n(89453);
 
 function u(e) {
     if (null == e.message.embeds || null == e.message.embeds[0].fields) return null;
@@ -24,7 +24,7 @@ function u(e) {
             (0, r.mMO)(async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("83518"), n.e("9407"), n.e("73940")]).then(n.bind(n, 956450));
+                } = await Promise.all([n.e("83518"), n.e("9407"), n.e("93992")]).then(n.bind(n, 956450));
                 return t => (0, i.jsx)(e, {
                     classificationId: u,
                     source: o.XN.SystemDM,

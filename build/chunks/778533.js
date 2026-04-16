@@ -1,6 +1,6 @@
 /** chunk id: 778533 params = (module,exports,require) **/
 s.d(t, {
-    A: () => S
+    A: () => f
 });
 var n = s(627968),
     l = s(64700),
@@ -9,39 +9,39 @@ var n = s(627968),
     o = s(435371),
     r = s(397927),
     u = s(713517),
-    d = s(240248),
-    c = s(341915),
+    c = s(240248),
+    d = s(341915),
     m = s(890687),
     x = s(590202),
-    h = s(971649),
-    g = s(781121),
+    g = s(971649),
+    h = s(781121),
     A = s(201257),
     C = s(985018),
-    p = s(597052),
-    v = s(246878);
+    p = s(503820),
+    S = s(834926);
 
-function S() {
+function f() {
     let {
         quest: e,
         sourceQuestContent: t,
         isPortrait: s,
         onClose: i
-    } = l.useContext(A.VideoQuestModalContext), S = (0, h.go)(), f = (0, m.LS)(e), j = l.useRef(null), {
+    } = l.useContext(A.VideoQuestModalContext), f = (0, g.go)(), v = (0, m.LS)(e), j = l.useRef(null), {
         isHoveringOrFocusing: N
-    } = (0, u.A)(j), O = (0, g.H)({
+    } = (0, u.A)(j), O = (0, h.H)({
         quest: e,
         onClose: i,
         sourceQuestContent: t,
-        impressionId: S
-    }), E = e.config.ctaConfig.subtitle, _ = void 0 !== E && !(0, d.uJ)(E);
+        impressionId: f
+    }), E = e.config.ctaConfig.subtitle, _ = void 0 !== E && !(0, c.uJ)(E);
     return (0, n.jsx)(o.m_, {
         text: C.intl.string(C.t.EuHF34),
         children: (0, n.jsx)(r.DUT, {
-            onClick: () => O(c.uF.VIDEO_MODAL, x.Cy.OPEN_GAME_LINK),
+            onClick: () => O(d.uF.VIDEO_MODAL, x.Cy.OPEN_GAME_LINK),
             className: p._S,
             children: (0, n.jsxs)("div", {
-                className: a()(v.hA, p.t8, {
-                    [p.Mc]: f
+                className: a()(S.hA, p.t8, {
+                    [p.Mc]: v
                 }),
                 ref: j,
                 children: [(0, n.jsx)("div", {

@@ -12,7 +12,7 @@ var s = n(397927),
     o = n(438842),
     c = n(652215),
     d = n(985018),
-    u = n(500577);
+    u = n(888849);
 
 function h(e) {
     let {
@@ -22,8 +22,8 @@ function h(e) {
         onAcceptInvite: _
     } = e, {
         gamesToDisplay: p,
-        lastGameToDisplay: m,
-        remainingGames: g
+        lastGameToDisplay: g,
+        remainingGames: m
     } = (0, a.A)(h), A = function(e) {
         let {
             state: t
@@ -64,8 +64,8 @@ function h(e) {
                         children: f
                     }), (0, i.jsx)(o.A, {
                         gamesToDisplay: p,
-                        lastGameToDisplay: m,
-                        remainingGames: g,
+                        lastGameToDisplay: g,
+                        remainingGames: m,
                         activity: h.gameActivity
                     })]
                 })]

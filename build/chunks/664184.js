@@ -1,8 +1,5 @@
 /** chunk id: 664184 params = (module,exports,require) **/
 e.exports = {
-    a4: "listItemContents_fc004c",
-    Z$: "friendAnniversaryRow_fc004c",
-    o1: "actions_fc004c",
-    K3: "anniversarySubtext_fc004c",
-    Cv: "userInfoCentered_fc004c"
+    O: "graphicSection_a2cab2",
+    Q: "headerCentered_a2cab2"
 }

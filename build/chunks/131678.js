@@ -1,33 +1,6 @@
 /** chunk id: 131678 params = (module,exports,require) **/
-n.d(t, {
-    j: () => u
-});
-var i = n(627968);
-n(64700);
-var s = n(554146),
-    l = n(882997),
-    a = n(975571),
-    r = n(107005),
-    o = n(652215),
-    d = n(985018),
-    c = n(729632);
-let u = () => {
-    let e = a.A.getArticleURL(o.MVz.PS_CONNECTION);
-    return (0, i.jsx)(r.Z, {
-        title: d.intl.string(d.t.v20wwm),
-        body: d.intl.format(d.t.lTZBit, {
-            help_article: e
-        }),
-        img: (0, i.jsx)("img", {
-            src: c,
-            width: "82",
-            height: "auto",
-            alt: ""
-        }),
-        newIndicatorDismissibleContent: s.M.PS_ONE_WAY_RECONNECT,
-        onClick: () => (0, l.A)({
-            platformType: o.fg2.PLAYSTATION,
-            location: "PS two way upsell"
-        })
-    })
+e.exports = {
+    nM: "row__6e3d6",
+    Kk: "icon__6e3d6",
+    Xh: "username__6e3d6"
 }

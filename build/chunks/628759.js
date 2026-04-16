@@ -2,12 +2,12 @@
 function o(r, e) {
     var t = "u" > typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
     if (!t) {
-        if (Array.isArray(r) || (t = function(r, e) {
+        if (Array.isArray(r) || (t = function(r) {
                 if (r) {
                     if ("string" == typeof r) return a(r, void 0);
-                    var t = Object.prototype.toString.call(r).slice(8, -1);
-                    if ("Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t) return Array.from(r);
-                    if ("Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t)) return a(r, void 0)
+                    var e = Object.prototype.toString.call(r).slice(8, -1);
+                    if ("Object" === e && r.constructor && (e = r.constructor.name), "Map" === e || "Set" === e) return Array.from(r);
+                    if ("Arguments" === e || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(e)) return a(r, void 0)
                 }
             }(r)) || e && r && "number" == typeof r.length) {
             t && (r = t);

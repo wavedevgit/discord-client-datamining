@@ -16,7 +16,7 @@ var s = a(627968),
     u = a(396574),
     I = a(563853),
     k = a(855522),
-    h = a(552628);
+    h = a(775684);
 let p = A.sE.MAIN_NAVIGATION_MENU;
 class m extends l.PureComponent {
     state = {

@@ -6,8 +6,8 @@ var r = n(64700),
     l = n(621466),
     a = n(158954),
     i = n(61491),
-    s = n(770178),
-    u = n(765548),
+    u = n(770178),
+    s = n(765548),
     o = n(650583);
 
 function c(e) {
@@ -28,16 +28,16 @@ function c(e) {
             "aria-label": "Progress Bar"
         };
         return null != h && "number" == typeof h && (e["aria-valuenow"] = h, e["aria-valuemin"] = 0, e["aria-valuemax"] = 100, e["aria-label"] = T.PERCENT_COMPLETE(Math.round(h))), e
-    }, [h, T]), j = r.useMemo(() => null == x || null == c ? null : (0, i.DX)(c, m, x), [x, c, m]), P = (0, u.A)(e => {
+    }, [h, T]), P = r.useMemo(() => null == x || null == c ? null : (0, i.DX)(c, m, x), [x, c, m]), j = (0, s.A)(e => {
         E(e.contentRect)
-    }), D = (0, s.w)(P), M = e => {
+    }), D = (0, u.w)(j), M = e => {
         if (null != D.current) {
             let t = D.current.getBoundingClientRect(),
                 n = e.clientX - t.left,
                 r = null != c ? c / m * t.width : null;
             w(null != r && n > r), v(n)
         }
-    }, k = r.useRef(!1), I = r.useRef(null), B = (0, u.A)((e, t) => {
+    }, k = r.useRef(!1), I = r.useRef(null), B = (0, s.A)((e, t) => {
         if (null == f) return;
         let n = e - t.left,
             r = (0, i.hc)(n, t, m);
@@ -87,7 +87,7 @@ function c(e) {
         },
         handleKeyDown: U,
         hoveredAtX: b,
-        maxSeekableX: j,
+        maxSeekableX: P,
         isHovering: g,
         isDragging: S,
         dragX: A,

@@ -1098,12 +1098,12 @@ var eQ = new B({
         }
     },
     base: D,
-    fromBase: e => (function(e, t) {
-        var r;
-        let a = 116 * ((r = e[1]) > eX ? Math.cbrt(r) : (eJ * r + 16) / 116) - 16;
-        if (0 === a) return [0, 0, 0];
-        let n = eH(e, eK);
-        return [Z(n.h), n.C, a]
+    fromBase: e => (function(e) {
+        var t;
+        let r = 116 * ((t = e[1]) > eX ? Math.cbrt(t) : (eJ * t + 16) / 116) - 16;
+        if (0 === r) return [0, 0, 0];
+        let a = eH(e, eK);
+        return [Z(a.h), a.C, r]
     })(e),
     toBase: e => (function(e, t) {
         let [r, a, n] = e, o = [], s = 0;

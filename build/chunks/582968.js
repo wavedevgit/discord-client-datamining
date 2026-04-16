@@ -5,7 +5,7 @@ n.d(t, {
 var i = n(627968),
     l = n(503698),
     a = n.n(l),
-    s = n(67471);
+    s = n(495359);
 
 function r() {
     return (0, i.jsxs)("div", {

@@ -74,7 +74,7 @@ var i = n(627968),
     eA = n(652215),
     ep = n(124759),
     ef = n(985018),
-    ej = n(610696);
+    ej = n(486072);
 let eN = {
     getSectionDefinition: function(e, t) {
         let eN = (0, _.$)(t.guild.id),

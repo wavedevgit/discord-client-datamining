@@ -1,25 +1,25 @@
 /** chunk id: 93055 params = (module,exports,require) **/
 n.d(e, {
-    Af: () => _,
+    Af: () => A,
     CJ: () => E,
     DZ: () => p,
     Rm: () => v,
     TW: () => h,
     e4: () => b,
-    m_: () => A
+    m_: () => _
 }), n(321073);
 var i = n(311907),
-    a = n(873298);
+    l = n(873298);
 n(734057);
-var l = n(967198),
+var a = n(967198),
     r = n(287809),
     o = n(474090);
 n(661191);
 var d = n(181079),
     u = n(379587),
     s = n(11531),
-    c = n(5180),
-    f = n(788868);
+    f = n(5180),
+    c = n(788868);
 
 function h(t) {
     let {
@@ -27,19 +27,19 @@ function h(t) {
         hasHigherPrivileges: n
     } = (0, u.m)({
         location: t
-    }), a = (0, i.bG)([r.default], () => r.default.getCurrentUser()), l = o.Ay.isPremiumExactly(a, f.PremiumTypes.TIER_2);
+    }), l = (0, i.bG)([r.default], () => r.default.getCurrentUser()), a = o.Ay.isPremiumExactly(l, c.PremiumTypes.TIER_2);
     return {
-        hasAccess: e && l,
+        hasAccess: e && a,
         isExperimentEnabled: e,
         hasHigherPrivileges: n
     }
 }
 
-function _(t) {
+function A(t) {
     return (0, i.bG)([d.A], () => d.A.getFavorite(t))
 }
 
-function A() {
+function _() {
     let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : d.A.getFavoriteChannels(),
         e = [{
             id: null,
@@ -47,7 +47,7 @@ function A() {
         }];
     for (let n in t) {
         let i = t[n];
-        i.type === a.Ip.CATEGORY && e.push({
+        i.type === l.Ip.CATEGORY && e.push({
             id: i.id,
             name: i.nickname ?? ""
         })
@@ -56,21 +56,21 @@ function A() {
 }
 
 function v() {
-    return (0, i.bG)([d.A], () => A(d.A.getFavoriteChannels()))
+    return (0, i.bG)([d.A], () => _(d.A.getFavoriteChannels()))
 }
 
 function p() {
-    let t = (0, i.bG)([l.A], () => l.A.getGuildId());
-    return (0, c.ai)(t)
+    let t = (0, i.bG)([a.A], () => a.A.getGuildId());
+    return (0, f.ai)(t)
 }
 
 function b(t, e) {
     let n = p(),
         {
-            hasAccess: a
+            hasAccess: l
         } = h(e),
-        l = (0, i.bG)([d.A], () => null != t && (d.A.isFavorite(t.id) || t.isThread() && d.A.isFavorite(t.parent_id)), [t]);
-    return n && (!a || !l || t?.isCategory()) ? null : t ?? null
+        a = (0, i.bG)([d.A], () => null != t && (d.A.isFavorite(t.id) || t.isThread() && d.A.isFavorite(t.parent_id)), [t]);
+    return n && (!l || !a || t?.isCategory()) ? null : t ?? null
 }
 
 function E() {

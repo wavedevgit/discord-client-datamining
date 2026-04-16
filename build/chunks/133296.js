@@ -1,12 +1,12 @@
 /** chunk id: 133296 params = (module,exports,require) **/
-a.d(t, {
+n.d(t, {
     A: () => r
 });
-var s = a(627968),
-    n = a(64700),
-    i = a(451988);
-class l extends n.Component {
-    timer = new i.IX;
+var i = n(627968),
+    a = n(64700),
+    l = n(451988);
+class s extends a.Component {
+    timer = new l.IX;
     state = {
         hovered: !1
     };
@@ -23,25 +23,25 @@ class l extends n.Component {
         let {
             pauseOnHover: e,
             disable: t
-        } = this.props, a = this.state.hovered && e;
-        t || a || this.startTimer()
+        } = this.props, n = this.state.hovered && e;
+        t || n || this.startTimer()
     }
     componentWillUnmount() {
         this.stopTimer()
     }
     componentDidUpdate(e, t) {
         let {
-            props: a
-        } = this, s = (e, t) => !e.disable && !(t.hovered && e.pauseOnHover), n = s(a, this.state), i = s(e, t);
-        n && !i || e.interval !== a.interval ? this.startTimer() : !n && i && this.stopTimer()
+            props: n
+        } = this, i = (e, t) => !e.disable && !(t.hovered && e.pauseOnHover), a = i(n, this.state), l = i(e, t);
+        a && !l || e.interval !== n.interval ? this.startTimer() : !a && l && this.stopTimer()
     }
     startTimer() {
         let {
             interval: e,
             onInterval: t,
-            disable: a
+            disable: n
         } = this.props;
-        a || this.timer.start(e, () => {
+        n || this.timer.start(e, () => {
             t()
         })
     }
@@ -62,18 +62,18 @@ class l extends n.Component {
         let {
             children: e,
             className: t,
-            disable: a
-        } = this.props, n = a ? null : {
+            disable: n
+        } = this.props, a = n ? null : {
             onMouseEnter: this.handlePause,
             onFocus: this.handlePause,
             onMouseLeave: this.handleResume,
             onBlur: this.handleResume
         };
-        return (0, s.jsx)("div", {
-            ...n,
+        return (0, i.jsx)("div", {
+            ...a,
             className: t,
             children: e
         })
     }
 }
-let r = l
+let r = s

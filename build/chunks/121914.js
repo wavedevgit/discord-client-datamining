@@ -29,7 +29,7 @@ var i, l = n(627968),
     y = n(34307),
     M = n(652215),
     R = n(985018),
-    D = n(129839),
+    D = n(95231),
     b = ((i = {}).DEFAULT = "DEFAULT", i.CHANNEL_TYPE = "CHANNEL_TYPE", i);
 let O = r.memo(function(e) {
     let {

@@ -1,6 +1,10 @@
-/** chunk id: 940480, original params: e,t,i (module,exports,require) **/
+/** chunk id: 940480 params = (module,exports,require) **/
 e.exports = {
-    Fx: "itemIcon_d9866f",
-    Be: "itemIconHeart_d9866f",
-    rY: "itemIconShop_d9866f"
+    wx: "header__9f397",
+    Q6: "channelPrompt__9f397",
+    b: "closeButton__9f397",
+    J5: "guildName__9f397",
+    DD: "title__9f397",
+    VA: "subtitle__9f397",
+    SZ: "skipButton__9f397"
 }

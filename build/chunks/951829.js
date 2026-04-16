@@ -1,5 +1,5 @@
 /** chunk id: 951829 params = (module,exports,require) **/
 n.d(e, {
-    f: () => l
+    f: () => r
 });
-var i, l = ((i = {})[i.STREAM = 0] = "STREAM", i[i.VIDEO = 1] = "VIDEO", i)
+var i, r = ((i = {})[i.STREAM = 0] = "STREAM", i[i.VIDEO = 1] = "VIDEO", i)

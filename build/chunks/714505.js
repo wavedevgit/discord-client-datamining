@@ -1,7 +1,7 @@
 /** chunk id: 714505 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => m
 });
 var i = n(284009),
     s = n.n(i),
@@ -15,9 +15,9 @@ var i = n(284009),
     h = n(650048),
     _ = n(954571),
     p = n(877062),
-    m = n(652215);
+    g = n(652215);
 
-function g(e) {
+function m(e) {
     let t = function(e) {
             let t = l().os?.family;
             if ("Android" === t || "iOS" === t) {
@@ -32,7 +32,7 @@ function g(e) {
             return "discord://"
         }(e),
         n = (0, o.X7)(t);
-    null != n && _.default.track(m.HAw.DEEP_LINK_CLICKED, {
+    null != n && _.default.track(g.HAw.DEEP_LINK_CLICKED, {
         fingerprint: (0, c.v)(n.fingerprint),
         attempt_id: n.attemptId,
         source: n.utmSource

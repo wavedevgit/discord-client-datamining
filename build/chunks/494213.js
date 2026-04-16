@@ -1,5 +1,8 @@
 /** chunk id: 494213 params = (module,exports,require) **/
 e.exports = {
-    j: "chip__3bb21",
-    v: "clickable__3bb21"
+    FV: "mainTableContainer__09a38",
+    A0: "horizatonalScroller__09a38",
+    NQ: "loaderContainer__09a38",
+    b0: "loaderBar__09a38",
+    gZ: "loadingBar__09a38"
 }

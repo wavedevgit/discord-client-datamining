@@ -1,2 +1,6 @@
 /** chunk id: 22877 params = (module,exports,require) **/
-i.exports = JSON.parse('{"XJ4UpB":["Promijeni sliku"],"XV4qT6":["Ukloni sliku"],"CLSbjS":["Prijavi sliku"],"1OwLy1":["Više"],"HkszWk":["Odaberi GIF"],"5VL9Ju":["Odaberi između nedavno prenesenih slika na serveru."],"aBnIyR":["Odaberi sliku"],"SQb1dl":["Pronađi nadahnuće"],"2THN2i":["Ideje koje će te pokrenuti."],"dDID2M":["Nedavne slike"],"9Xxm0y":["Pristupi svojim nedavnim prijenosima."],"zetfRy":["Nedavni prijenosi"],"+y6KsI":["Postavi sliku kako bi drugi znali što se događa."],"yyPbqI":["Dodaj što smjeraš"],"BIdpHb":["Dolazi uskoro"],"bjP2Do":["Prenesi sliku"],"NGcIOF":["Postavi ugođaj"]}')
+"use strict";
+e.exports = {
+    eR: "backNotice__84419",
+    b: "closeButton__84419"
+}

@@ -22,8 +22,8 @@ var n = r(627968),
     F = r(427262),
     v = r(974175),
     C = r(731854),
-    b = r(314452),
-    E = r(885106);
+    b = r(41604),
+    E = r(818050);
 let x = {
     [C.r8.NO_OVERRIDE]: "None",
     [C.r8.LOW]: "Low Quality Stream",
@@ -73,34 +73,34 @@ function S(e) {
         }),
         $ = Math.min(parseInt(k, 10), t.length - 1),
         q = t[$],
-        U = function(e, t, r, a, i) {
-            let l, o = [];
+        U = function(e, t, r, a) {
+            let i, l = [];
             for (let t of Object.keys(e).sort((e, t) => {
                     let r = R[e],
                         n = R[t];
                     return r !== n ? void 0 === r ? 1 : void 0 === n ? -1 : r - n : A.iA[e] !== A.iA[t] ? A.iA[e] ? 1 : -1 : e > t ? 1 : -1
                 })) {
-                let r = e[t];
-                v.R[t] || void 0 === r || o.push((0, n.jsx)(v.q7, {
-                    section: a,
+                let a = e[t];
+                v.R[t] || void 0 === a || l.push((0, n.jsx)(v.q7, {
+                    section: r,
                     label: t,
-                    value: r
+                    value: a
                 }, t))
             }
             return (0, n.jsxs)("div", {
                 className: E.C2,
-                children: ["video" === e.type && null != r && null != a && null != i && (null != (l = i.get(r, a, e.ssrc)) ? (0, n.jsx)("div", {
+                children: ["video" === e.type && null != t && null != r && null != a && (null != (i = a.get(t, r, e.ssrc)) ? (0, n.jsx)("div", {
                     className: s()(b.tN, E.C2),
                     children: (0, n.jsx)(p.A, {
-                        streamId: l,
+                        streamId: i,
                         videoComponent: y.Ay.getMediaEngine().Video,
                         paused: !1,
                         videoSpinnerContext: c.u.REPLAY_VIDEO_STREAM,
-                        userId: a
+                        userId: r
                     })
-                }) : null), D(o)]
+                }) : null), D(l)]
             }, `${e.type} + ${e.ssrc}`)
-        }(q, 0, i, S, j),
+        }(q, i, S, j),
         H = P && "video" === q.type && null != i && null != S && null != j && r === C.x.DEFAULT && (0, n.jsx)(m.A, {
             className: E.SX,
             children: (0, n.jsx)(m.A.Child, {

@@ -10,8 +10,8 @@ var a = n(627968),
     o = n(397927),
     d = n(234560),
     c = n(613912),
-    u = n(310086),
-    m = n(491801);
+    u = n(505206),
+    m = n(642153);
 let h = [{
         id: "virtual-currency",
         name: "Virtual Current (Orb) Components"

@@ -1,12 +1,7 @@
 /** chunk id: 364488 params = (module,exports,require) **/
+"use strict";
 e.exports = {
-    GU: "blockedUsersContainer__4c084",
-    Zd: "form__4c084",
-    kz: "formItem__4c084",
-    BD: "channelSelectionFormItem__4c084",
-    HA: "channelName__4c084",
-    Qw: "channelSelection__4c084",
-    $e: "warning__4c084",
-    Qy: "notificationToggle__4c084",
-    XI: "ageVerificationNotice__4c084"
+    ci: "chooseAccountAuthBox_df9c06",
+    PK: "chooseAccountHelpText_df9c06",
+    o1: "actions_df9c06"
 }

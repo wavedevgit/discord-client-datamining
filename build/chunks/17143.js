@@ -22,7 +22,7 @@ var i = n(627968),
     E = n(954571),
     C = n(652215),
     x = n(985018),
-    S = n(163014);
+    S = n(32854);
 class I extends l.PureComponent {
     _initTimeout = new u.Ep;
     _silenceTimeout = new u.Ep;

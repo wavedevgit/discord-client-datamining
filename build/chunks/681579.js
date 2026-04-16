@@ -1,17 +1,17 @@
 /** chunk id: 681579 params = (module,exports,require) **/
 n.d(t, {
-    B: () => a,
-    t: () => s
+    B: () => s,
+    t: () => a
 });
 var l = n(73153),
     i = n(219271);
 
-function s(e) {
+function a(e) {
     let {
         omitUserIds: t,
         guild: n,
-        channel: s,
-        applicationId: a,
+        channel: a,
+        applicationId: s,
         inviteTargetType: r
     } = e;
     return (0, i.u)().then(() => {
@@ -19,14 +19,14 @@ function s(e) {
             type: "LOAD_INVITE_SUGGESTIONS",
             omitUserIds: t ?? new Set,
             guild: n,
-            channel: s,
-            applicationId: a,
+            channel: a,
+            applicationId: s,
             inviteTargetType: r
         })
     })
 }
 
-function a(e) {
+function s(e) {
     l.h.dispatch({
         type: "INVITE_SUGGESTIONS_SEARCH",
         query: e

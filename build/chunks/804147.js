@@ -4,10 +4,10 @@ n.d(t, {
 });
 var r = n(627968),
     s = n(64700),
-    i = n(697397),
-    a = n(721092),
-    l = n(795068),
-    u = n(590358);
+    a = n(697397),
+    l = n(721092),
+    i = n(795068),
+    u = n(924838);
 
 function o(e) {
     let {
@@ -18,45 +18,45 @@ function o(e) {
         interactionEnabled: d,
         isQuestCompleted: E,
         backgroundColor: m,
-        preloadedBuffers: _,
-        durationSec: f,
-        maxSeekableTime: p,
-        playerState: S,
+        preloadedBuffers: f,
+        durationSec: _,
+        maxSeekableTime: S,
+        playerState: p,
         onClick: v,
-        onScrubBack: h,
-        onScrubForward: g,
+        onScrubBack: g,
+        onScrubForward: h,
         "data-testid": A
     } = e, {
         quest: C,
         sourceQuestContent: x,
-        useNewProgressBarStyling: D
-    } = s.useContext(l.a), {
-        questConfig: T
-    } = s.useContext(l.l), I = (0, a.A)({
+        useNewProgressBarStyling: T
+    } = s.useContext(i.a), {
+        questConfig: D
+    } = s.useContext(i.l), I = (0, l.A)({
         targetSec: t,
         quest: C,
         sourceQuestContent: x,
-        questConfig: T,
+        questConfig: D,
         onIndicatorClick: v
     });
-    return (0, r.jsx)(i.uI, {
+    return (0, r.jsx)(a.uI, {
         isFullyVisible: n,
         percent: o,
         animate: c,
         interactionEnabled: d,
-        playerState: S,
+        playerState: p,
         backgroundColor: m,
-        preloadedBuffers: _,
-        durationSec: f,
-        maxSeekableTime: p,
-        segmentBorderRadius: D ? 99 : 8,
-        progressClassName: !E && D ? u.q : u.c,
-        timelineHeightPx: D ? 4 : 2,
-        hoverTimelineHeightPx: D ? void 0 : 4,
-        initialTimelineHeightPx: D ? 4 : 2,
+        preloadedBuffers: f,
+        durationSec: _,
+        maxSeekableTime: S,
+        segmentBorderRadius: T ? 99 : 8,
+        progressClassName: !E && T ? u.q : u.c,
+        timelineHeightPx: T ? 4 : 2,
+        hoverTimelineHeightPx: T ? void 0 : 4,
+        initialTimelineHeightPx: T ? 4 : 2,
         onClick: v,
-        onScrubBack: h,
-        onScrubForward: g,
+        onScrubBack: g,
+        onScrubForward: h,
         indicatorConfig: I,
         "data-testid": A
     })

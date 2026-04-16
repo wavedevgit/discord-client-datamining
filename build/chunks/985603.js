@@ -82,7 +82,7 @@ let U = {
             return R.Ay.focus(), (0, r.mMO)(async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("7726"), n.e("49040")]).then(n.bind(n, 72715));
+                } = await Promise.all([n.e("7726"), n.e("94700")]).then(n.bind(n, 72715));
                 return t => (0, i.jsx)(e, {
                     ...t,
                     guildTemplate: l

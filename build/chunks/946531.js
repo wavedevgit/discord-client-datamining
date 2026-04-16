@@ -19,7 +19,7 @@ let g = (0, o.Tf)(c.X.SMS_AUTH_DISABLE_BUTTON, {
         return null == n ? null : m.intl.format(e ? m.t["xDBk/I"] : m.t.bnKdnl, {
             phone: e ? n : n.slice(-4),
             toggleButton: () => (0, i.jsx)(l.QWc, {
-                text: e ? m.intl.string(m.t.fgq1gs) : m.intl.string(m.t.XJuakA),
+                text: e ? m.intl.string(m.t.fgq1gs) : m.intl.string(m.t.dcztdU),
                 onClick: () => t(!e)
             })
         })

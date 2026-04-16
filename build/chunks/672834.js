@@ -419,7 +419,7 @@ let ey = Object.freeze({
                 (0, a.mMO)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("34160"), n.e("95725")]).then(n.bind(n, 126768));
+                    } = await Promise.all([n.e("34160"), n.e("70141")]).then(n.bind(n, 126768));
                     return t => (0, i.jsx)(e, {
                         channel: s,
                         ...t

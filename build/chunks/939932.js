@@ -141,33 +141,33 @@ function b(e) {
                             this.currentType = e;
                             var t, r = function(e) {
                                     if (Array.isArray(e)) return e
-                                }(t = m(e, this.handler, this.manager)) || function(e, t) {
-                                    var r, n, o = null == e ? null : "u" > typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
-                                    if (null != o) {
-                                        var i = [],
-                                            a = !0,
-                                            s = !1;
+                                }(t = m(e, this.handler, this.manager)) || function(e) {
+                                    var t, r, n = null == e ? null : "u" > typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
+                                    if (null != n) {
+                                        var o = [],
+                                            i = !0,
+                                            a = !1;
                                         try {
-                                            for (o = o.call(e); !(a = (r = o.next()).done) && (i.push(r.value), 2 !== i.length); a = !0);
+                                            for (n = n.call(e); !(i = (t = n.next()).done) && (o.push(t.value), 2 !== o.length); i = !0);
                                         } catch (e) {
-                                            s = !0, n = e
+                                            a = !0, r = e
                                         } finally {
                                             try {
-                                                a || null == o.return || o.return()
+                                                i || null == n.return || n.return()
                                             } finally {
-                                                if (s) throw n
+                                                if (a) throw r
                                             }
                                         }
-                                        return i
+                                        return o
                                     }
-                                }(t, 2) || function(e, t) {
+                                }(t) || function(e) {
                                     if (e) {
                                         if ("string" == typeof e) return h(e, 2);
-                                        var r = Object.prototype.toString.call(e).slice(8, -1);
-                                        if ("Object" === r && e.constructor && (r = e.constructor.name), "Map" === r || "Set" === r) return Array.from(e);
-                                        if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return h(e, 2)
+                                        var t = Object.prototype.toString.call(e).slice(8, -1);
+                                        if ("Object" === t && e.constructor && (t = e.constructor.name), "Map" === t || "Set" === t) return Array.from(e);
+                                        if ("Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t)) return h(e, 2)
                                     }
-                                }(t, 2) || function() {
+                                }(t) || function() {
                                     throw TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                                 }(),
                                 n = r[0],

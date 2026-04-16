@@ -19,8 +19,8 @@ var s = n(503698),
     p = n(652215),
     g = n(53516),
     f = n(985018),
-    E = n(609657),
-    x = n(442078),
+    E = n(725673),
+    x = n(824078),
     I = ((i = {})[i.VOICE = 0] = "VOICE", i);
 let C = e => {
     let {
@@ -67,7 +67,7 @@ let C = e => {
                             C ? u.R() : T ? (0, d.mMO)(async () => {
                                 let {
                                     default: e
-                                } = await Promise.all([n.e("84704"), n.e("5966")]).then(n.bind(n, 615715));
+                                } = await Promise.all([n.e("84704"), n.e("16398")]).then(n.bind(n, 615715));
                                 return t => (0, l.jsx)(e, {
                                     reason: A.d.GUILD_PHONE_REQUIRED,
                                     ...t

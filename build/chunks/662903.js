@@ -1,16 +1,16 @@
 /** chunk id: 662903 params = (module,exports,require) **/
 n.d(t, {
     Ay: () => o,
-    Bu: () => u,
-    OJ: () => s,
+    Bu: () => s,
+    OJ: () => u,
     XY: () => i
 });
 var r = n(64700),
     l = n(771253),
     a = n(876230);
 let i = 8e5,
-    s = 20,
-    u = 30;
+    u = 20,
+    s = 30;
 
 function o(e, t) {
     let {
@@ -32,8 +32,8 @@ function o(e, t) {
         if (!x || null == n || null == e.current) return;
         let t = e.current,
             r = new l.Ay({
-                backBufferLength: s,
-                maxBufferLength: u,
+                backBufferLength: u,
+                maxBufferLength: s,
                 startPosition: f.current,
                 startFragPrefetch: !0,
                 startLevel: -1

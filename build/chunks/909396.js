@@ -120,7 +120,7 @@ let t = new URL(s(235991), s.b),
             wasm: o
         },
         asm: {
-            module: () => s.e("86933").then(s.bind(s, 977716)),
+            module: () => s.e("9314").then(s.bind(s, 977716)),
             wasm: m
         },
         awk: {

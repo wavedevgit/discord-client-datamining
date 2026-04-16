@@ -9,7 +9,7 @@ var n = l(503698),
     i = l.n(n),
     a = l(567243),
     s = l(985018),
-    o = l(340488);
+    o = l(191704);
 let d = ["sessionshare.sp-int.playstation.com", "session-share.playstation.com"],
     c = ["PlayStation"];
 

@@ -15,9 +15,9 @@ var i = n(627968),
     h = n(854378),
     _ = n(976860),
     p = n(210714),
-    m = n(652215),
-    g = n(985018),
-    A = n(885106);
+    g = n(652215),
+    m = n(985018),
+    A = n(818050);
 
 function f(e) {
     let {
@@ -27,9 +27,9 @@ function f(e) {
 
     function E() {
         return "Android" === l().os.family || "iOS" === l().os.family ? null : (0, i.jsx)(o.Button, {
-            text: g.intl.string(g.t.dKhVQN),
+            text: m.intl.string(m.t.dKhVQN),
             fullWidth: !0,
-            onClick: () => r(m.BVt.LOGIN, {
+            onClick: () => r(g.BVt.LOGIN, {
                 source: "authorizeIPAdress"
             })
         })
@@ -51,10 +51,10 @@ function f(e) {
             className: A.SX
         }), (0, i.jsx)(h.hE, {
             className: A.QB,
-            children: g.intl.string(g.t["f/54az"])
+            children: m.intl.string(m.t["f/54az"])
         }), (0, i.jsx)(h.tK, {
             className: A.C2,
-            children: g.intl.string(g.t.i3ehMr)
+            children: m.intl.string(m.t.i3ehMr)
         }), E()]
     }) : "succeeded" === a ? (0, i.jsxs)(h.Ay, {
         children: [(0, i.jsx)("img", {
@@ -63,14 +63,14 @@ function f(e) {
             className: A.SX
         }), (0, i.jsx)(h.hE, {
             className: A.QB,
-            children: g.intl.string(g.t.iG0SlK)
+            children: m.intl.string(m.t.iG0SlK)
         }), (0, i.jsx)(h.tK, {
             className: A.C2,
-            children: g.intl.string(g.t["Elv+qt"])
+            children: m.intl.string(m.t["Elv+qt"])
         }), E()]
     }) : (0, i.jsxs)(h.Ay, {
         children: [(0, i.jsx)(h.CK, {}), (0, i.jsx)(h.hE, {
-            children: g.intl.string(g.t["9exy+V"])
+            children: m.intl.string(m.t["9exy+V"])
         })]
     })
 }

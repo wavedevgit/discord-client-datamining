@@ -25,7 +25,7 @@ var i = t(503698),
     C = t(806931),
     _ = t(49999),
     T = t(985018),
-    v = t(938821);
+    v = t(295573);
 
 function N(e, n) {
     let t = (0, d.bG)([E.A], () => E.A.getVoiceChannelId()),

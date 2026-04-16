@@ -4,8 +4,8 @@ n.d(t, {
 });
 var l = n(627968),
     i = n(311907),
-    s = n(435371),
-    a = n(397927),
+    a = n(435371),
+    s = n(397927),
     r = n(309010),
     o = n(562153),
     d = n(135635),
@@ -28,10 +28,10 @@ function c(e) {
         channel: n,
         location: c
     });
-    return !g || m ? null : (0, l.jsx)(s.m_, {
+    return !g || m ? null : (0, l.jsx)(a.m_, {
         text: p,
         children: (0, l.jsx)("div", {
-            children: (0, l.jsx)(a.K0, {
+            children: (0, l.jsx)(s.K0, {
                 variant: "icon-only",
                 icon: () => (0, l.jsx)(A, {
                     size: "sm",

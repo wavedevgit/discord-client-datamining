@@ -1,12 +1,12 @@
 /** chunk id: 708051 params = (module,exports,require) **/
 n.d(t, {
     I: () => v,
-    p: () => y
+    p: () => f
 }), n(938796);
 var l = n(627968),
     i = n(64700),
-    s = n(821418),
-    a = n(665260),
+    a = n(821418),
+    s = n(665260),
     r = n(311907),
     o = n(421380),
     d = n(397927),
@@ -19,7 +19,7 @@ var l = n(627968),
     p = n(172799),
     I = n(652215),
     m = n(985018),
-    S = n(465892);
+    S = n(640852);
 let v = r.Ay.connectStores([g.A], () => ({
         hideValue: g.A.hideInstantInvites
     }))(e => {
@@ -27,19 +27,19 @@ let v = r.Ay.connectStores([g.A], () => ({
             value: t,
             autoFocus: n,
             hideValue: i,
-            onCopy: s,
-            disabled: a
+            onCopy: a,
+            disabled: s
         } = e;
         return (0, l.jsx)(u.A, {
             value: t,
             hideMessage: i ? m.intl.string(m.t["6HzNgZ"]) : null,
             buttonColor: o.$n.Colors.BRAND,
-            onCopy: s,
+            onCopy: a,
             autoFocus: n,
-            disabled: a
+            disabled: s
         })
     }),
-    y = e => {
+    f = e => {
         let {
             guild: t,
             noInvitesAvailable: n,
@@ -47,8 +47,8 @@ let v = r.Ay.connectStores([g.A], () => ({
             onClose: o,
             modalState: u,
             isApplicationBypassToggleEnabled: g,
-            setInviteFlags: y,
-            copyValue: f,
+            setInviteFlags: f,
+            copyValue: y,
             changePage: E,
             inviteChannel: _,
             source: T,
@@ -76,13 +76,13 @@ let v = r.Ay.connectStores([g.A], () => ({
         return (0, l.jsxs)(d.BJc, {
             gap: 16,
             children: [(0, l.jsx)(v, {
-                value: f,
+                value: y,
                 autoFocus: r,
                 onCopy: w,
                 disabled: b
             }), g && (0, l.jsx)(d.dOG, {
-                checked: (0, a.Lt)(V, s.Q.IS_APPLICATION_BYPASS),
-                onChange: e => y((0, a.lA)(V, s.Q.IS_APPLICATION_BYPASS, e)),
+                checked: (0, s.Lt)(V, a.Q.IS_APPLICATION_BYPASS),
+                onChange: e => f((0, s.lA)(V, a.Q.IS_APPLICATION_BYPASS, e)),
                 disabled: b,
                 label: m.intl.string(m.t["1i1bUl"]),
                 description: m.intl.string(m.t["jvd/LF"])

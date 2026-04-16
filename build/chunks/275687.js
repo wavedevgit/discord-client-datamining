@@ -1,57 +1,57 @@
 /** chunk id: 275687 params = (module,exports,require) **/
-n.d(t, {
+a.d(t, {
     A: () => m
 });
-var i = n(627968),
-    r = n(64700),
-    a = n(503698),
-    l = n.n(a),
-    o = n(311907),
-    s = n(776231),
-    d = n(664111),
-    u = n(734057),
-    h = n(67281),
-    c = n(256034);
+var n = a(627968),
+    o = a(64700),
+    i = a(503698),
+    r = a.n(i),
+    c = a(311907),
+    l = a(776231),
+    s = a(664111),
+    _ = a(734057),
+    d = a(67281),
+    u = a(581874);
 
 function m(e) {
     let {
         attachment: t,
-        posterUrl: n,
-        className: a,
+        posterUrl: a,
+        className: i,
         active: m = !1,
         autoPlay: p,
-        src: g,
-        embed: f = !1,
-        fillContainer: x = !1,
-        minWidth: A = 500,
-        maxWidth: y = 1 / 0,
-        maxHeight: w = 1 / 0,
-        channelId: C,
-        showTextContent: E = y >= 250,
+        src: b,
+        embed: C = !1,
+        fillContainer: f = !1,
+        minWidth: g = 500,
+        maxWidth: h = 1 / 0,
+        maxHeight: I = 1 / 0,
+        channelId: A,
+        showTextContent: T = h >= 250,
         showParticipants: v = !0,
-        volume: I,
-        autoMute: j,
-        onVolumeChange: M,
-        onMutedChange: S,
-        onClick: N,
+        volume: y,
+        autoMute: S,
+        onVolumeChange: E,
+        onMutedChange: x,
+        onClick: M,
         onContextMenu: O
-    } = e, P = t.width ?? 0, _ = t.height ?? 0, T = (0, o.bG)([u.A], () => u.A.getBasicChannel(C)?.guild_id, [C]), U = P > 0 && _ > 0 ? P / _ : 16 / 9, V = Math.min(P > 0 ? P : A, y), b = V / U;
-    b > w && (V = (b = w) * U), V < A && (b = (V = A) / U);
-    let D = Math.round(Math.min(V, y)),
-        L = Math.round(Math.min(b, w)),
-        R = P > 0 && _ > 0 ? Math.min(D / P, L / _, 1) : 1,
-        k = (0, s.AE)({
-            src: n,
-            width: Math.round(P * R),
-            height: Math.round(_ * R)
+    } = e, P = t.width ?? 0, N = t.height ?? 0, w = (0, c.bG)([_.A], () => _.A.getBasicChannel(A)?.guild_id, [A]), B = P > 0 && N > 0 ? P / N : 16 / 9, R = Math.min(P > 0 ? P : g, h), G = R / B;
+    G > I && (R = (G = I) * B), R < g && (G = (R = g) / B);
+    let D = Math.round(Math.min(R, h)),
+        L = Math.round(Math.min(G, I)),
+        k = P > 0 && N > 0 ? Math.min(D / P, L / N, 1) : 1,
+        j = (0, l.AE)({
+            src: a,
+            width: Math.round(P * k),
+            height: Math.round(N * k)
         }),
-        [F, W] = r.useState(!1),
-        H = r.useCallback(e => {
+        [F, U] = o.useState(!1),
+        H = o.useCallback(e => {
             let {
-                playerState: n,
-                isControlBarExpanded: r
+                playerState: a,
+                isControlBarExpanded: o
             } = e;
-            return (0, i.jsx)(h.A, {
+            return (0, n.jsx)(d.A, {
                 createdAt: null != t.clip_created_at ? Date.parse(t.clip_created_at) : void 0,
                 participantIds: v ? t.clip_participants?.map(e => {
                     let {
@@ -61,47 +61,47 @@ function m(e) {
                 }) ?? [] : [],
                 applicationId: t.application?.id,
                 title: t.title,
-                guildId: T,
-                playerState: n,
-                isControlBarExpanded: r,
+                guildId: w,
+                playerState: a,
+                isControlBarExpanded: o,
                 isFullScreen: F,
-                showTextContent: E
+                showTextContent: T
             })
-        }, [t, T, F, v, E]);
-    return (0, i.jsx)("div", {
-        className: l()(c.k, {
-            [c.H]: x
-        }, a),
+        }, [t, w, F, v, T]);
+    return (0, n.jsx)("div", {
+        className: r()(u.k, {
+            [u.H]: f
+        }, i),
         onClick: e => e.stopPropagation(),
-        onKeyUp: f ? e => e.stopPropagation() : void 0,
-        onKeyDown: f ? e => e.stopPropagation() : void 0,
+        onKeyUp: C ? e => e.stopPropagation() : void 0,
+        onKeyDown: C ? e => e.stopPropagation() : void 0,
         onContextMenu: O,
-        style: x ? void 0 : {
+        style: f ? void 0 : {
             width: D,
             height: L
         },
-        children: (0, i.jsx)(d.A, {
+        children: (0, n.jsx)(s.A, {
             crossOrigin: null,
-            src: g,
+            src: b,
             downloadUrl: t.url,
             downloadContentType: t.content_type,
-            poster: k,
+            poster: j,
             posterPlaceholder: t.placeholder,
             posterPlaceholderVersion: t.placeholder_version,
             active: m,
             autoplay: p,
-            initialVolume: I,
-            initialMuted: j,
-            onVolumeChange: M,
-            onMutedChange: S,
+            initialVolume: y,
+            initialMuted: S,
+            onVolumeChange: E,
+            onMutedChange: x,
             orientation: "landscape",
             loadingSpinnerPosition: "center",
             renderPersistentOverlay: H,
             targetTimeSec: 1 / 0,
             parentTransitionState: null,
-            onFullscreenChange: W,
-            onClick: N,
-            objectFit: x ? "cover" : void 0
+            onFullscreenChange: U,
+            onClick: M,
+            objectFit: f ? "cover" : void 0
         })
     })
 }

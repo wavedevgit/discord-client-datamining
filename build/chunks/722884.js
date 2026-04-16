@@ -13,7 +13,7 @@ function a(e) {
     (0, l.mMO)(async () => {
         let {
             default: e
-        } = await n.e("85221").then(n.bind(n, 318532));
+        } = await n.e("29983").then(n.bind(n, 318532));
         return n => (0, i.jsx)(e, {
             channel: t,
             ...n

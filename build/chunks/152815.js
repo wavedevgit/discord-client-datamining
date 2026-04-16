@@ -18,9 +18,9 @@ var r = n(158954),
     p = n(881373),
     g = n(125877),
     A = n(652215),
-    f = n(113273),
+    f = n(962995),
     h = n(985018),
-    b = n(276478);
+    b = n(75662);
 let x = {
         Logitech30P: {
             title: f.default.jkdhZq,

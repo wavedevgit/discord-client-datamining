@@ -13,7 +13,7 @@ var n = a(607399),
     o = a(837921),
     d = a(58736),
     _ = a(746080),
-    h = a(374850);
+    h = a(546930);
 async function u(e) {
     if (!e && (0, c.isMac)() && c.isPlatformEmbedded) {
         let e = await window.DiscordNative.app.getDefaultDoubleClickAction();

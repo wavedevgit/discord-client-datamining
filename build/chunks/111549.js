@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(397927),
     _ = n(73153),
     p = n(846293),
-    m = n(198982),
-    g = n(964486),
+    g = n(198982),
+    m = n(964486),
     A = n(475743),
     f = n(17841),
     E = n(829691),
@@ -34,19 +34,19 @@ var i = n(627968),
     O = n(71393),
     L = n(299091),
     w = n(954571),
-    k = n(975571),
-    B = n(4274),
-    D = n(877062),
+    D = n(975571),
+    k = n(4274),
+    U = n(877062),
     P = n(890698),
-    U = n(129851),
+    B = n(129851),
     G = n(229),
-    F = n(652215);
+    M = n(652215);
 n(436317);
-var M = n(172799),
+var F = n(172799),
     V = n(771016),
     W = n(396574),
     H = n(985018),
-    K = n(885106);
+    K = n(818050);
 d.Ay.initialize();
 let z = "register",
     Q = "login";
@@ -114,7 +114,7 @@ function X(e) {
                 children: (0, i.jsx)(h.Button, {
                     text: H.intl.string(H.t.UQvCf7),
                     onClick: () => {
-                        w.default.track(F.HAw.INVITE_CTA_CLICKED, {
+                        w.default.track(M.HAw.INVITE_CTA_CLICKED, {
                             action: "open_app",
                             invite_code: t.code,
                             guild_id: t.guild?.id
@@ -128,7 +128,7 @@ function X(e) {
                 children: (0, i.jsx)(h.Button, {
                     text: H.intl.string(H.t["2ixEBi"]),
                     onClick: () => {
-                        w.default.track(F.HAw.INVITE_CTA_CLICKED, {
+                        w.default.track(M.HAw.INVITE_CTA_CLICKED, {
                             action: "continue_in_browser",
                             invite_code: t.code,
                             guild_id: t.guild?.id
@@ -169,7 +169,7 @@ function $(e) {
             children: [(0, i.jsx)(P.A, {
                 invite: t,
                 error: n?.message
-            }), n?.code === F.t02.INVALID_CANNOT_FRIEND_SELF ? (0, i.jsx)(q, {
+            }), n?.code === M.t02.INVALID_CANNOT_FRIEND_SELF ? (0, i.jsx)(q, {
                 invite: t,
                 message: H.intl.string(H.t.fIv16B),
                 onClick: r
@@ -205,7 +205,7 @@ function Z(e) {
                 size: "sm",
                 textVariant: "text-sm/medium",
                 text: H.intl.string(H.t.urIwn4),
-                onClick: () => window.open(k.A.getArticleURL(F.MVz.INVALID_INVITES), "_blank")
+                onClick: () => window.open(D.A.getArticleURL(M.MVz.INVALID_INVITES), "_blank")
             })
         })]
     })
@@ -231,26 +231,26 @@ function et(e) {
         location: n,
         transitionTo: r,
         login: l
-    } = e, h = (0, d.bG)([L.A], () => L.A.getInvite(t)), x = (0, d.bG)([v.A], () => v.A.getState(t)), I = (0, d.bG)([b.default], () => b.default.isAuthenticated()), N = (0, d.bG)([R.A], () => R.A.defaultRoute), k = (0, d.bG)([f.A], () => f.A.isUnderageAnonymous()), [P, K] = s.useState(null), [q, et] = s.useState(!1);
+    } = e, h = (0, d.bG)([L.A], () => L.A.getInvite(t)), x = (0, d.bG)([v.A], () => v.A.getState(t)), I = (0, d.bG)([b.default], () => b.default.isAuthenticated()), N = (0, d.bG)([R.A], () => R.A.defaultRoute), D = (0, d.bG)([f.A], () => f.A.isUnderageAnonymous()), [P, K] = s.useState(null), [q, et] = s.useState(!1);
     s.useLayoutEffect(() => {
-        (x === F.fAW.OPEN || h?.state === F.elq.APP_OPENED) && et(!0)
+        (x === M.fAW.OPEN || h?.state === M.elq.APP_OPENED) && et(!0)
     }, [h?.state, x]);
     let en = l ? Q : z,
         ei = s.useCallback(e => p.Ay.getInviteContext(e, h), [h]),
         es = s.useCallback(e => {
-            null != h && (null != h.channel || e?.channel != null) && (h.guild?.id != null ? r(F.BVt.APP_WITH_INVITE_AND_GUILD_ONBOARDING(h.code)) : p.Ay.transitionToInvite(e ?? h, r))
+            null != h && (null != h.channel || e?.channel != null) && (h.guild?.id != null ? r(M.BVt.APP_WITH_INVITE_AND_GUILD_ONBOARDING(h.code)) : p.Ay.transitionToInvite(e ?? h, r))
         }, [h, r]),
         er = s.useCallback(() => {
             K(null), p.Ay.acceptInvite({
                 inviteKey: t,
-                context: ei(F.S3d.INVITE),
+                context: ei(M.S3d.INVITE),
                 skipOnboarding: !0,
                 callback: e => {
                     (0, E.v)(e), null != e.channel && p.Ay.openApp(t, e.channel.id)
                 }
             }).catch(e => {
-                if (e instanceof m.Wl || e instanceof m.LG) {
-                    let t = (0, B.s)(e.code);
+                if (e instanceof g.Wl || e instanceof g.LG) {
+                    let t = (0, k.s)(e.code);
                     K({
                         code: e.code,
                         message: t
@@ -264,24 +264,24 @@ function et(e) {
         el = s.useCallback(() => {
             r(N)
         }, [N, r]);
-    if ((0, g.Ay)(() => {
+    if ((0, m.Ay)(() => {
             let e = b.default.getAnalyticsToken();
             if (null != e && _.h.dispatch({
                     type: "SET_ANALYTICS_TOKEN",
                     analyticsToken: e,
                     userId: b.default.getId()
-                }), w.default.track(F.HAw.INVITE_VIEWED, {
+                }), w.default.track(M.HAw.INVITE_VIEWED, {
                     invite_code: t
                 }, {
                     flush: !0
-                }), (0, y.d)("invite"), W.VP || D.A.launch("discord://" + F.BVt.INVITE(t), () => void 0), !l && k) {
+                }), (0, y.d)("invite"), W.VP || U.A.launch("discord://" + M.BVt.INVITE(t), () => void 0), !l && D) {
                 let {
                     baseCode: e
                 } = (0, T.y$)(t);
-                (0, S.bG)(F.BVt.INVITE_LOGIN(e))
+                (0, S.bG)(M.BVt.INVITE_LOGIN(e))
             }
         }), s.useEffect(() => {
-            h?.state === F.elq.APP_NOT_OPENED && es()
+            h?.state === M.elq.APP_NOT_OPENED && es()
         }, [h?.state, es]), function(e) {
             let {
                 invite: t,
@@ -292,13 +292,13 @@ function et(e) {
                 getAcceptInviteContext: d,
                 handleContinue: u,
                 transitionTo: h
-            } = e, _ = (0, A.A)(i), m = (0, A.A)(r);
+            } = e, _ = (0, A.A)(i), g = (0, A.A)(r);
             s.useEffect(() => {
                 if (l === Q && i && !1 === _) {
                     let e = b.default.getFingerprint();
                     if (null != e) {
                         let i = (0, c.d)(e);
-                        w.default.track(F.HAw.INVITE_LOGIN_SUCCESSFUL, {
+                        w.default.track(M.HAw.INVITE_LOGIN_SUCCESSFUL, {
                             invite_code: (0, T.m0)(n),
                             guild_id: t?.guild?.id,
                             channel_id: t?.channel?.id,
@@ -308,7 +308,7 @@ function et(e) {
                     }
                     p.Ay.acceptInvite({
                         inviteKey: n,
-                        context: d(F.S3d.INVITE),
+                        context: d(M.S3d.INVITE),
                         skipOnboarding: !0,
                         callback: u
                     })
@@ -321,21 +321,21 @@ function et(e) {
                     if (null != e)
                         if ((0, j.C)(V.zY.INVITE_UNCLAIMED), null != t.guild) {
                             let e = (0, o.Lt)(t.flags ?? 0, a.Q.IS_APPLICATION_BYPASS),
-                                n = t.guild.features?.includes(F.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.guild.features?.includes(F.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
-                            !e && n ? h(F.BVt.GUILD_MEMBER_VERIFICATION(t.guild.id)) : h(F.BVt.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code))
+                                n = t.guild.features?.includes(M.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.guild.features?.includes(M.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+                            !e && n ? h(M.BVt.GUILD_MEMBER_VERIFICATION(t.guild.id)) : h(M.BVt.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code))
                         } else p.Ay.transitionToInvite(t, h)
                 }
             }, [t, i, _, h, l]), s.useEffect(() => {
-                null != t && r !== m && r === F.fAW.OPEN && w.default.track(F.HAw.INVITE_APP_INVOKED, {
+                null != t && r !== g && r === M.fAW.OPEN && w.default.track(M.HAw.INVITE_APP_INVOKED, {
                     invite_code: (0, T.m0)(n),
                     guild_id: t.guild?.id,
                     channel_id: t.channel?.id,
                     inviter_id: t.inviter?.id,
                     user_is_member: null != t.guild && null != O.A.getGuild(t.guild.id),
                     size_total: t.approximate_member_count,
-                    invite_type: null != t.type ? M.Xd[t.type] : void 0
+                    invite_type: null != t.type ? F.Xd[t.type] : void 0
                 })
-            }, [t, r, m, n])
+            }, [t, r, g, n])
         }({
             invite: h,
             inviteKey: t,
@@ -346,47 +346,47 @@ function et(e) {
             handleContinue: es,
             transitionTo: r
         }), null == h) return null;
-    if (q || x === F.fAW.OPEN || h.state === F.elq.APP_OPENED) return (0, i.jsx)(X, {
+    if (q || x === M.fAW.OPEN || h.state === M.elq.APP_OPENED) return (0, i.jsx)(X, {
         invite: h,
         onContinue: es
     });
     let {
         state: ea
     } = h;
-    if (ea === F.elq.APP_NOT_OPENED) return (0, i.jsx)(ee, {
+    if (ea === M.elq.APP_NOT_OPENED) return (0, i.jsx)(ee, {
         handleDefaultTransition: el
     });
-    if ([F.elq.RESOLVING, F.elq.ACCEPTING, F.elq.APP_OPENING].includes(ea)) {
-        let e = ea === F.elq.ACCEPTING ? H.intl.string(H.t["6wsY16"]) : (F.elq.RESOLVING, H.intl.string(H.t["Z+hCVU"]));
+    if ([M.elq.RESOLVING, M.elq.ACCEPTING, M.elq.APP_OPENING].includes(ea)) {
+        let e = ea === M.elq.ACCEPTING ? H.intl.string(H.t["6wsY16"]) : (M.elq.RESOLVING, H.intl.string(H.t["Z+hCVU"]));
         return (0, i.jsx)(J, {
             title: e
         })
     }
-    return ea === F.elq.EXPIRED ? (0, i.jsx)(Z, {
+    return ea === M.elq.EXPIRED ? (0, i.jsx)(Z, {
         banned: !1,
         handleDefaultTransition: el
-    }) : ea === F.elq.BANNED ? (0, i.jsx)(Z, {
+    }) : ea === M.elq.BANNED ? (0, i.jsx)(Z, {
         banned: !0,
         handleDefaultTransition: el
-    }) : ea === F.elq.ERROR ? (0, i.jsx)($, {
+    }) : ea === M.elq.ERROR ? (0, i.jsx)($, {
         invite: h,
         error: P,
         handleAccept: er,
         handleDefaultTransition: el
-    }) : ea === F.elq.RESOLVED ? I && (0, o.Lt)(h.flags ?? 0, a.Q.IS_GUEST_INVITE) ? (p.Ay.openApp(h.code), u.u.set(C.B, h.code), (0, i.jsx)(X, {
+    }) : ea === M.elq.RESOLVED ? I && (0, o.Lt)(h.flags ?? 0, a.Q.IS_GUEST_INVITE) ? (p.Ay.openApp(h.code), u.u.set(C.B, h.code), (0, i.jsx)(X, {
         invite: h,
-        onContinue: () => r(F.BVt.APP)
+        onContinue: () => r(M.BVt.APP)
     })) : I || !W.VP ? (0, i.jsx)(Y, {
         invite: h,
         handleAccept: er
-    }) : en === Q ? (0, i.jsx)(U.A, {
+    }) : en === Q ? (0, i.jsx)(B.A, {
         invite: h,
         transitionTo: r,
         location: n
     }) : (0, i.jsx)(G.A, {
         invite: h,
         onLoginStart: () => {
-            w.default.track(F.HAw.INVITE_LOGIN, {
+            w.default.track(M.HAw.INVITE_LOGIN, {
                 invite_code: h?.code,
                 guild_id: h?.guild?.id,
                 channel_id: h?.channel?.id,

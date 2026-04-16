@@ -1,12 +1,12 @@
 /** chunk id: 644447 params = (module,exports,require) **/
-n.d(t, {
-    E: () => i
+a.d(t, {
+    E: () => n
 });
 
-function i(e) {
+function n(e) {
     let {
         proxyURL: t,
-        url: n
+        url: a
     } = e;
-    return null != t && "" !== t ? t : n
+    return null != t && "" !== t ? t : a
 }

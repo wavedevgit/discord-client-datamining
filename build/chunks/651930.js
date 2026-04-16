@@ -22,7 +22,7 @@ var a = n(627968),
     y = n(21241),
     x = n(652215),
     A = n(985018),
-    b = n(819355);
+    b = n(247947);
 let N = l.memo(function(e) {
         let {
             game: t

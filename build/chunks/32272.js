@@ -6,7 +6,7 @@ var t = a(627968),
     o = a(64700),
     n = a(508382),
     i = a(158954),
-    s = a(695384);
+    s = a(481224);
 let r = {
     title: "FloatingLayer",
     stories: [{

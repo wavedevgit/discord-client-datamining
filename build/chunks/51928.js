@@ -6,7 +6,7 @@ var i = n(627968),
     s = n(397927),
     l = n(652215),
     r = n(985018),
-    a = n(936981);
+    a = n(22917);
 
 function o() {
     return (0, i.jsx)(s.ZpM, {

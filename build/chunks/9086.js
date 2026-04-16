@@ -10,7 +10,7 @@ var n = a(627968),
     o = a(307600),
     c = a(652215),
     d = a(985018),
-    u = a(942643);
+    u = a(169795);
 let m = r.A.getArticleURL(c.MVz.BOT_DATA_ACCESS);
 
 function h(e) {

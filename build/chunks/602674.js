@@ -1,10 +1,10 @@
 /** chunk id: 602674 params = (module,exports,require) **/
 n.d(t, {
-    v: () => r
+    v: () => i
 });
 let a = null;
 
-function r() {
+function i() {
     if (null == a) try {
         a = new AudioContext
     } catch (e) {}

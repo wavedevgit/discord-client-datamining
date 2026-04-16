@@ -6,7 +6,7 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(985018),
-    r = n(752660);
+    r = n(581796);
 let a = function(e) {
     let {
         hasGuildBoostSlots: t,

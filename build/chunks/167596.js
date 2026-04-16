@@ -4,13 +4,13 @@ n.d(t, {
 });
 var l = n(627968),
     i = n(64700),
-    s = n(821418),
-    a = n(665260),
+    a = n(821418),
+    s = n(665260),
     r = n(397927),
     o = n(735547),
     d = n(652215),
     u = n(985018),
-    c = n(214381);
+    c = n(938365);
 let g = o.Ay.getMaxUsesOptions;
 
 function h(e) {
@@ -25,8 +25,8 @@ function h(e) {
         onSelectMaxUses: m,
         isGuestInviteCreationToggleEnabled: S,
         inviteFlags: v,
-        onSetInviteFlags: y,
-        isRoleAssignmentEnabled: f,
+        onSetInviteFlags: f,
+        isRoleAssignmentEnabled: y,
         assignableRoles: E,
         selectedRoleIds: _,
         onToggleRole: T
@@ -83,7 +83,7 @@ function h(e) {
             value: N?.value,
             onSelectionChange: m,
             selectionMode: "single"
-        }), f && E.length > 0 && (0, l.jsx)(r.ZiE, {
+        }), y && E.length > 0 && (0, l.jsx)(r.ZiE, {
             label: u.intl.string(u.t.rPYJxL),
             placeholder: u.intl.string(u.t["/djIh7"]),
             options: b,
@@ -99,8 +99,8 @@ function h(e) {
             label: u.intl.string(u.t["wE+9dr"]),
             disabled: _.size > 0
         }), S && (0, l.jsx)(r.dOG, {
-            checked: (0, a.Lt)(v, s.Q.IS_GUEST_INVITE),
-            onChange: e => y((0, a.lA)(v, s.Q.IS_GUEST_INVITE, e)),
+            checked: (0, s.Lt)(v, a.Q.IS_GUEST_INVITE),
+            onChange: e => f((0, s.lA)(v, a.Q.IS_GUEST_INVITE, e)),
             description: u.intl.string(u.t["/FeTK6"]),
             label: u.intl.string(u.t.siexRS)
         })]

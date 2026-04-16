@@ -47,8 +47,8 @@ n(281405);
 var W = n(652215),
     K = n(349828),
     Y = n(985018),
-    z = n(928409),
-    q = n(822294);
+    z = n(907305),
+    q = n(582630);
 class X extends B.Ay {
     channelItemRef = l.createRef();
     state = {

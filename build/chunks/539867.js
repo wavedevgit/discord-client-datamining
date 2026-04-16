@@ -1,21 +1,21 @@
 /** chunk id: 539867 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => l,
-    KI: () => i,
-    _4: () => a
+    Ay: () => i,
+    KI: () => a,
+    _4: () => l
 });
 var r = n(64700),
     s = n(876230);
-let i = 4e3,
-    a = 2e3;
+let a = 4e3,
+    l = 2e3;
 
-function l(e) {
+function i(e) {
     let {
         getCurrentVideoTime: t,
         onAnalytics: n,
-        emitIntervalMs: i,
-        minSegmentDurationMs: a
-    } = e, [l, u] = r.useState(null), [o, c] = r.useState(!1), [d, E] = r.useState(!1), [m, _] = r.useState(!1), f = (0, r.useRef)(null), p = (0, r.useRef)(Date.now()), S = (0, r.useRef)(!1), v = (0, r.useCallback)(e => {
+        emitIntervalMs: a,
+        minSegmentDurationMs: l
+    } = e, [i, u] = r.useState(null), [o, c] = r.useState(!1), [d, E] = r.useState(!1), [m, f] = r.useState(!1), _ = (0, r.useRef)(null), S = (0, r.useRef)(Date.now()), p = (0, r.useRef)(!1), v = (0, r.useCallback)(e => {
         e.segmentEndSec < e.segmentStartSec || n({
             start_time: e.startTimeMs,
             end_time: e.endTimeMs,
@@ -24,7 +24,7 @@ function l(e) {
             segment_end_sec: e.segmentEndSec,
             segment_duration_sec: e.segmentEndSec - e.segmentStartSec
         })
-    }, [n]), h = (0, r.useCallback)(() => {
+    }, [n]), g = (0, r.useCallback)(() => {
         let e = t();
         if (null != e && d && m) {
             let t = Date.now();
@@ -33,14 +33,14 @@ function l(e) {
                 endTimeMs: t,
                 segmentStartSec: e,
                 segmentEndSec: e
-            }), S.current = !0
+            }), p.current = !0
         }
-    }, [t, d, m]), g = (0, r.useCallback)(() => {
+    }, [t, d, m]), h = (0, r.useCallback)(() => {
         let e = t();
-        if (null == e || null == l) return;
+        if (null == e || null == i) return;
         let n = Date.now();
-        n - p.current < i || e - l.segmentStartSec < a / 1e3 || (v({
-            ...l,
+        n - S.current < a || e - i.segmentStartSec < l / 1e3 || (v({
+            ...i,
             endTimeMs: n,
             segmentEndSec: e
         }), u({
@@ -48,41 +48,41 @@ function l(e) {
             endTimeMs: n,
             segmentStartSec: e,
             segmentEndSec: e
-        }), p.current = n)
-    }, [l, v, i, a, t]);
+        }), S.current = n)
+    }, [i, v, a, l, t]);
     (0, r.useEffect)(() => {
-        d && m || (u(null), S.current = !1)
+        d && m || (u(null), p.current = !1)
     }, [d, m]), (0, r.useEffect)(() => {
-        if (o && d && m) S.current || h(), f.current = window.setInterval(() => {
-            g()
+        if (o && d && m) p.current || g(), _.current = window.setInterval(() => {
+            h()
         }, 200);
         else {
             let e = t();
-            if (null != l && null != e) {
+            if (null != i && null != e) {
                 let t = Date.now();
-                e - l.segmentStartSec > .2 && v({
-                    ...l,
+                e - i.segmentStartSec > .2 && v({
+                    ...i,
                     endTimeMs: t,
                     segmentEndSec: e
                 })
             }
-            u(null), S.current = !1, null != f.current && (clearInterval(f.current), f.current = null)
+            u(null), p.current = !1, null != _.current && (clearInterval(_.current), _.current = null)
         }
         return () => {
-            null != f.current && (clearInterval(f.current), f.current = null)
+            null != _.current && (clearInterval(_.current), _.current = null)
         }
-    }, [o, d, m, l, g, v, h, t]);
+    }, [o, d, m, i, h, v, g, t]);
     let A = (0, r.useCallback)(() => {
             let e = t();
-            if (null != l && null != e) {
+            if (null != i && null != e) {
                 let t = Date.now();
-                e - l.segmentStartSec > .2 && v({
-                    ...l,
+                e - i.segmentStartSec > .2 && v({
+                    ...i,
                     endTimeMs: t,
                     segmentEndSec: e
-                }), u(null), S.current = !1
+                }), u(null), p.current = !1
             }
-        }, [l, v, t]),
+        }, [i, v, t]),
         C = (0, r.useRef)(A);
     C.current = A;
     let x = (0, r.useCallback)((e, t) => {
@@ -95,14 +95,14 @@ function l(e) {
                     C.current(), c(!1)
             }
         }, []),
-        D = (0, r.useCallback)(e => {
+        T = (0, r.useCallback)(e => {
             E(!0)
         }, []);
     return {
         handlePlayerStateChange: x,
-        handleLoadEnd: D,
+        handleLoadEnd: T,
         handleFirstFrame: (0, r.useCallback)(e => {
-            _(!0)
+            f(!0)
         }, []),
         handleSeek: (0, r.useCallback)(() => {
             C.current()

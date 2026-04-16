@@ -1,7 +1,7 @@
 /** chunk id: 787610 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    H: () => g
+    H: () => m
 });
 var i = n(64700),
     s = n(158390),
@@ -15,32 +15,32 @@ var i = n(64700),
     h = n(442767),
     _ = n(525711),
     p = n(652215);
-let m = new o.A("useAuthWebsocket");
+let g = new o.A("useAuthWebsocket");
 
-function g(e, t) {
-    let [n, o] = i.useState(0), [g, A] = i.useState(!1), [f, E] = i.useState({
+function m(e, t) {
+    let [n, o] = i.useState(0), [m, A] = i.useState(!1), [f, E] = i.useState({
         step: _.b.INITIALIZING
     }), x = i.useRef(null), I = i.useMemo(() => new s.A(1500, 3e4), []), N = (0, a.A)(() => {
         E({
             step: _.b.INITIALIZING
-        }), t ? o(e => e + 1) : (m.info("document is not visible, will defer reconnection when document becomes visible."), A(!0))
+        }), t ? o(e => e + 1) : (g.info("document is not visible, will defer reconnection when document becomes visible."), A(!0))
     }), v = i.useCallback(() => {
-        m.error("Could not complete Remote Auth login, trying to restart with a new Remote Auth session."), E({
+        g.error("Could not complete Remote Auth login, trying to restart with a new Remote Auth session."), E({
             step: _.b.INITIALIZING
         }), I.pending || I.fail(N)
     }, [N, I]);
     return i.useEffect(() => {
-        t && g && f.step === _.b.INITIALIZING && (m.info("reconnecting, now that document is visible"), A(!1), o(e => e + 1))
-    }, [f, t, g, A]), i.useEffect(() => {
+        t && m && f.step === _.b.INITIALIZING && (g.info("reconnecting, now that document is visible"), A(!1), o(e => e + 1))
+    }, [f, t, m, A]), i.useEffect(() => {
         let t = Date.now(),
             n = e => `[${Date.now()-t}ms] ${e}`,
-            i = e => m.info(n(e)),
+            i = e => g.info(n(e)),
             s = `${window.GLOBAL_ENV.REMOTE_AUTH_ENDPOINT}/?v=2`;
         s.startsWith("//") && (s = `wss:${s}`);
         let a = (0, c.A)(s);
-        m.info(`[0ms] connecting to ${s}`);
+        g.info(`[0ms] connecting to ${s}`);
         let o = null,
-            g = null,
+            m = null,
             A = null,
             f = null,
             C = !0;
@@ -124,14 +124,14 @@ function g(e, t) {
                         C = !0;
                         return;
                     default:
-                        m.warn(n("received unsupported message"))
+                        g.warn(n("received unsupported message"))
                 }
             }, y = async () => {
-                o = await u.A.generateRsaKeyPair(), g = await u.A.serializePublicKey(o);
+                o = await u.A.generateRsaKeyPair(), m = await u.A.serializePublicKey(o);
                 let e = await u.A.publicKeyFingerprint(o);
                 i(`connected, handshaking with fingerprint: ${e}`), a.send(JSON.stringify({
                     op: "init",
-                    encoded_public_key: g
+                    encoded_public_key: m
                 })), x.current = o
             }, b = e => {
                 i(`disconnected, code: ${e.code} ${e.reason}`), v()

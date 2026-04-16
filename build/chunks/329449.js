@@ -20,7 +20,7 @@ var i = n(627968),
     f = n(103640),
     E = n(924177),
     C = n(985018),
-    x = n(228596);
+    x = n(51940);
 let S = l.memo(function(e) {
         let {
             channelId: t,

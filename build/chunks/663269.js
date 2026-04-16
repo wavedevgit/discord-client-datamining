@@ -4,8 +4,8 @@ n.d(t, {
 }), n(938796);
 var l = n(627968),
     i = n(189213),
-    s = n(167596),
-    a = n(985018);
+    a = n(167596),
+    s = n(985018);
 let r = e => {
     let {
         handleDone: t,
@@ -25,32 +25,32 @@ let r = e => {
     } = e, {
         maxAgeOptions: S,
         maxAge: v,
-        maxUses: y,
-        temporary: f,
+        maxUses: f,
+        temporary: y,
         flags: E,
         roleIds: _
     } = n;
     return (0, l.jsx)(i.Modal, {
         transitionState: x,
         onClose: A,
-        title: a.intl.string(a.t.Atdlyu),
+        title: s.intl.string(s.t.Atdlyu),
         actions: [{
             variant: "secondary",
-            text: a.intl.string(a.t["ETE/oC"]),
+            text: s.intl.string(s.t["ETE/oC"]),
             onClick: t
         }, {
             variant: "primary",
-            text: a.intl.string(a.t.pz1lRG),
+            text: s.intl.string(s.t.pz1lRG),
             onClick: () => {
                 o(), t()
             }
         }],
-        children: (0, l.jsx)(s.A, {
+        children: (0, l.jsx)(a.A, {
             shouldHideTemporaryInviteToggle: r,
             maxAgeOptions: S,
             maxAge: v,
-            maxUses: y,
-            temporary: f,
+            maxUses: f,
+            temporary: y,
             onToggleTemporary: d,
             onSelectMaxAge: u,
             onSelectMaxUses: c,

@@ -1,29 +1,29 @@
 /** chunk id: 485394 params = (module,exports,require) **/
 t.d(n, {
-    Ay: () => p,
-    K7: () => b
+    Ay: () => m,
+    K7: () => h
 });
 var a = t(311907),
     i = t(855687),
     r = t(446600),
-    c = t(734057),
-    l = t(808728),
-    o = t(71393),
-    _ = t(576705),
-    s = t(488926),
+    o = t(734057),
+    s = t(808728),
+    l = t(71393),
+    c = t(576705),
+    _ = t(488926),
     d = t(698441),
     u = t(988794),
-    x = t(652215);
+    p = t(652215);
 
-function b(e) {
-    let [n, t, a, b] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [l.Ay, c.A, o.A, r.A];
+function h(e) {
+    let [n, t, a, h] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [s.Ay, o.A, l.A, r.A];
     if ((0, d.AZ)(e)) return !1;
     let {
-        guild_id: p,
-        channel_id: m
-    } = e, h = e.entity_type === u.Ps.EXTERNAL ? n.getDefaultChannel(e.guild_id) : t.getChannel(m), g = a.getGuild(p), v = b.getStageInstanceByChannel(m);
-    return !!(0, i.K)(_.A, g, h, v) && null != h && function(e) {
-        let [n] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [c.A], {
+        guild_id: m,
+        channel_id: x
+    } = e, b = e.entity_type === u.Ps.EXTERNAL ? n.getDefaultChannel(e.guild_id) : t.getChannel(x), g = a.getGuild(m), C = h.getStageInstanceByChannel(x);
+    return !!(0, i.K)(c.A, g, b, C) && null != b && function(e) {
+        let [n] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [o.A], {
             entityType: t,
             channelId: a
         } = "entity_type" in e ? {
@@ -32,10 +32,10 @@ function b(e) {
         } : e;
         if (t === u.Ps.EXTERNAL) return !0;
         let i = n.getChannel(a);
-        return null != i && s.MJ(x.xBc.VIEW_CHANNEL, i)
+        return null != i && _.MJ(p.xBc.VIEW_CHANNEL, i)
     }(e, [t])
 }
 
-function p(e) {
-    return (0, a.bG)([l.Ay, c.A, o.A, r.A], () => b(e, [l.Ay, c.A, o.A, r.A]), [e])
+function m(e) {
+    return (0, a.bG)([s.Ay, o.A, l.A, r.A], () => h(e, [s.Ay, o.A, l.A, r.A]), [e])
 }

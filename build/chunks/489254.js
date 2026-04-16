@@ -1,8 +1,8 @@
 /** chunk id: 489254 params = (module,exports,require) **/
-t.d(n, {
-    n: () => l
+n.d(t, {
+    n: () => s
 });
-let i = (0, t(250105).Ay)({
+let i = (0, n(250105).Ay)({
     name: "2026-04-boosting-pre-checkout-modal-refresh",
     kind: "user",
     defaultConfig: {
@@ -18,7 +18,7 @@ let i = (0, t(250105).Ay)({
     }
 });
 
-function l(e) {
+function s(e) {
     return i.useConfig({
         location: e
     }).enabled

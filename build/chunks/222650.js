@@ -11,7 +11,7 @@ var s = n(990078),
     a = n(31457),
     o = n(53516),
     d = n(985018),
-    c = n(404467);
+    c = n(397251);
 
 function u() {
     return (0, r.jsx)(a.ZK, {
@@ -51,7 +51,7 @@ function _(e) {
                 (0, i.mMO)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("84704"), n.e("5966")]).then(n.bind(n, 615715));
+                    } = await Promise.all([n.e("84704"), n.e("16398")]).then(n.bind(n, 615715));
                     return t => (0, r.jsx)(e, {
                         reason: l.d.GUILD_PHONE_REQUIRED,
                         ...t

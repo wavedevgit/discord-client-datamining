@@ -200,7 +200,7 @@ let V = {
             } else(0, r.mMO)(async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("43600"), n.e("12629")]).then(n.bind(n, 234355));
+                } = await Promise.all([n.e("43600"), n.e("88785")]).then(n.bind(n, 234355));
                 return t => (0, i.jsx)(e, {
                     ...t,
                     guild: s,

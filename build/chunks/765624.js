@@ -1,7 +1,7 @@
 /** chunk id: 765624 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -12,13 +12,13 @@ var i = n(627968),
     c = n(319060),
     d = n(397927),
     u = n(240248),
-    h = n(540433);
+    h = n(115617);
 let _ = (0, u.xI)(c.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
     p = {
         friction: 10,
         tension: 130
     },
-    m = function(e) {
+    g = function(e) {
         return class extends s.Component {
             timeout;
             anim = new a.A.Value(0);

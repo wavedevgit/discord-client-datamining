@@ -15,7 +15,7 @@ let r = {
                 }).enabled) {
                 let {
                     default: e
-                } = await Promise.all([n.e("20115"), n.e("72370")]).then(n.bind(n, 939006));
+                } = await Promise.all([n.e("20115"), n.e("1378")]).then(n.bind(n, 939006));
                 return t => (0, i.jsx)(e, {
                     ...t
                 })

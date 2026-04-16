@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(110782),
     _ = n(803306),
     p = n(854378),
-    m = n(10088),
-    g = n(871123),
+    g = n(10088),
+    m = n(871123),
     A = n(210714),
     f = n(961350),
     E = n(650048),
@@ -31,7 +31,7 @@ var i = n(627968),
     y = n(229),
     b = n(652215),
     R = n(985018),
-    O = n(885106);
+    O = n(818050);
 a.Ay.initialize();
 class L extends s.PureComponent {
     state = {
@@ -226,7 +226,7 @@ class L extends s.PureComponent {
         let {
             transitionTo: s
         } = this.props, r = this.getErrorMessage(e);
-        return (0, i.jsx)(k, {
+        return (0, i.jsx)(D, {
             sku: n,
             giftCodeCode: e.code,
             transitionTo: s,
@@ -292,7 +292,7 @@ class L extends s.PureComponent {
         return null
     }
 }
-let w = a.Ay.connectStores([x.A, I.A, f.default, N.A, E.A, m.A], e => {
+let w = a.Ay.connectStores([x.A, I.A, f.default, N.A, E.A, g.A], e => {
         let t = e.match.params.giftCode,
             n = x.A.get(t),
             i = null != n ? N.A.get(n.skuId) : null;
@@ -305,16 +305,16 @@ let w = a.Ay.connectStores([x.A, I.A, f.default, N.A, E.A, m.A], e => {
             isResolved: x.A.getIsResolved(t),
             isAccepting: x.A.getIsAccepting(t),
             libraryApplicationsFetched: I.A.fetched,
-            nativeAppState: m.A.getState(t)
+            nativeAppState: g.A.getState(t)
         }
     })(L),
-    k = e => {
+    D = e => {
         let {
             sku: t,
             children: n,
             giftCodeCode: r,
             transitionTo: l
-        } = e, a = (0, g.bF)(t);
+        } = e, a = (0, m.bF)(t);
         return (s.useEffect(() => {
             null != r && a && l(b.BVt.APP_WITH_GIFT_CODE(r))
         }, [a, r, l]), a) ? (0, i.jsxs)(p.Ay, {

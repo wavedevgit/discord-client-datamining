@@ -22,10 +22,10 @@ var i = n(627968),
     h = n(486020),
     _ = n(427262),
     p = n(172799),
-    m = n(652215),
-    g = n(330936),
+    g = n(652215),
+    m = n(330936),
     A = n(985018),
-    f = n(307058);
+    f = n(82210);
 let E = 100,
     x = e => {
         let t = {
@@ -35,9 +35,9 @@ let E = 100,
         return 0 === t.memberCount && 0 === t.memberCount ? null : t
     },
     I = e => e.target_type === p.yV.STREAM && null != e.target_user,
-    N = e => e.channel?.type === m.rbe.GROUP_DM,
+    N = e => e.channel?.type === g.rbe.GROUP_DM,
     v = e => null == e.channel && null == e.guild && null != e.inviter,
-    C = e => e.state === m.elq.ACCEPTED,
+    C = e => e.state === g.elq.ACCEPTED,
     T = e => {
         let {
             guild_scheduled_event: t
@@ -76,7 +76,7 @@ function y(e) {
         textClassName: n,
         className: s
     } = e, r = x(t);
-    return null == r || j(t) || t?.guild?.id === g.TA ? null : (0, i.jsx)(o.R1, {
+    return null == r || j(t) || t?.guild?.id === m.TA ? null : (0, i.jsx)(o.R1, {
         className: l()(f.He, s),
         online: r.onlineCount,
         total: r.memberCount,
@@ -119,7 +119,7 @@ function R(e) {
             application: h,
             showBigUserIcon: p
         } = e,
-        m = (0, c.Ay)(d);
+        g = (0, c.Ay)(d);
     if (null != l) p && null == h && (t = (0, i.jsx)(o.$v, {
         guild: l,
         size: o.$v.Sizes.SMALL
@@ -143,7 +143,7 @@ function R(e) {
     else if (null != d) {
         if (null == r) throw Error("no inviter in group DM invite");
         let e = _.Ay.getFormattedName(r);
-        null != m && "" !== m ? (n = m, null != d.icon && (t = (0, i.jsx)(o.F4, {
+        null != g && "" !== g ? (n = g, null != d.icon && (t = (0, i.jsx)(o.F4, {
             channel: d,
             size: a._3J.SIZE_32
         }))) : n = e

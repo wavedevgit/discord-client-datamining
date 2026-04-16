@@ -15,19 +15,19 @@ var i = n(627968),
     h = n(242874),
     _ = n(75825),
     p = n(287809),
-    m = n(97352),
-    g = n(67480),
+    g = n(97352),
+    m = n(67480),
     A = n(615396),
     f = n(652215),
     E = n(788868),
     x = n(985018),
-    I = n(1205),
-    N = n(435115),
-    v = n(885106);
-let C = a.Ay.connectStores([g.A, c.A, m.A, p.default], e => {
+    I = n(402693),
+    N = n(653307),
+    v = n(818050);
+let C = a.Ay.connectStores([m.A, c.A, g.A, p.default], e => {
     let {
         giftCode: t
-    } = e, n = g.A.get(t.skuId), {
+    } = e, n = m.A.get(t.skuId), {
         subscriptionPlanId: i
     } = t;
     return {
@@ -44,10 +44,10 @@ let C = a.Ay.connectStores([g.A, c.A, m.A, p.default], e => {
         sku: a,
         application: c,
         subscriptionPlan: p
-    } = e, m = null == r ? x.intl.string(x.t.lTGZAl) : x.intl.formatToPlainString(x.t.TjWdPc, {
+    } = e, g = null == r ? x.intl.string(x.t.lTGZAl) : x.intl.formatToPlainString(x.t.TjWdPc, {
         username: r.username
-    }), g = a.name;
-    return null != p && (g = x.intl.formatToPlainString(p.interval === E.WT.MONTH ? x.t.CTpcCZ : x.t["rgPWG/"], {
+    }), m = a.name;
+    return null != p && (m = x.intl.formatToPlainString(p.interval === E.WT.MONTH ? x.t.CTpcCZ : x.t["rgPWG/"], {
         skuName: a.name,
         intervalCount: p.intervalCount
     })), (0, i.jsxs)(s.Fragment, {
@@ -67,7 +67,7 @@ let C = a.Ay.connectStores([g.A, c.A, m.A, p.default], e => {
             })]
         }) : (0, i.jsxs)(s.Fragment, {
             children: [(0, i.jsx)(d.tK, {
-                children: m
+                children: g
             }), (0, i.jsxs)(d.hE, {
                 className: l()(v.Ot, N.tR),
                 children: [a.productLine !== f.EZt.COLLECTIBLES && (0, i.jsx)(u.A, {
@@ -75,7 +75,7 @@ let C = a.Ay.connectStores([g.A, c.A, m.A, p.default], e => {
                     className: I.I,
                     game: c,
                     skuId: a.id
-                }), g]
+                }), m]
             })]
         })]
     })

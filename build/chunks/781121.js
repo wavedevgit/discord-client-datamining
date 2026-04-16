@@ -4,9 +4,9 @@ n.d(t, {
 });
 var r = n(64700),
     s = n(397927),
-    i = n(975571),
-    a = n(651892),
-    l = n(901406),
+    a = n(975571),
+    l = n(651892),
+    i = n(901406),
     u = n(545986),
     o = n(654487),
     c = n(652215);
@@ -19,11 +19,11 @@ function d(e) {
         impressionId: E
     } = e;
     return r.useCallback(async (e, r) => {
-        if (t.id === o.Fw) return void window.open(i.A.getArticleURL(c.MVz.VIRTUAL_CURRENCY_LEARN_MORE));
+        if (t.id === o.Fw) return void window.open(a.A.getArticleURL(c.MVz.VIRTUAL_CURRENCY_LEARN_MORE));
         if (null != n) {
-            let e = (0, a.Jx)(t.config);
+            let e = (0, l.Jx)(t.config);
             await (0, u.f7)(e) && (n(), (0, s.s7G)())
-        }(0, l.pu)(t, {
+        }(0, i.pu)(t, {
             content: e,
             ctaContent: r,
             impressionId: E,

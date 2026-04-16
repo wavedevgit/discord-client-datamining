@@ -15,9 +15,9 @@ var a = n(627968),
     m = n(355609),
     x = n(843095),
     f = n(800007),
-    g = n(799435),
+    g = n(576709),
     v = n(985018),
-    j = n(641784);
+    j = n(452123);
 let h = {
     ...f.ZN,
     initialStep: f.HS.SERVER_SETTINGS

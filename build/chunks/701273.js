@@ -1,7 +1,7 @@
 /** chunk id: 701273 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => m
 });
 var i = n(481613),
     s = n.n(i),
@@ -15,7 +15,7 @@ var i = n(481613),
     h = n(954571),
     _ = n(877062),
     p = n(652215);
-async function m(e) {
+async function g(e) {
     let t = s().os?.family;
     if ("Android" === t || "iOS" === t) {
         let t = d.default.getFingerprint() ?? d.default.getId(),
@@ -31,8 +31,8 @@ async function m(e) {
     }
     return "discord://"
 }
-async function g(e) {
-    let t = await m(e),
+async function m(e) {
+    let t = await g(e),
         n = (0, l.X7)(t);
     null != n && h.default.track(p.HAw.DEEP_LINK_CLICKED, {
         fingerprint: (0, a.v)(n.fingerprint),

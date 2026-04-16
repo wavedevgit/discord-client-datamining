@@ -1,15 +1,15 @@
 /** chunk id: 475777 params = (module,exports,require) **/
-l.d(t, {
-    A: () => r
+t.d(e, {
+    A: () => a
 });
-var e = l(531335),
-    i = l(652215);
+var l = t(531335),
+    r = t(652215);
 
-function r(n, t, l) {
-    return (0, e.A)({
-        guild: t,
+function a(n, e, t) {
+    return (0, l.A)({
+        guild: e,
         channel: n,
-        stageInstance: l,
-        source: i.PE1.CONTEXT_MENU
+        stageInstance: t,
+        source: r.PE1.CONTEXT_MENU
     })
 }

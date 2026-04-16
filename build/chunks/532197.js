@@ -7,7 +7,7 @@ var s = a(627968),
     i = a(503698),
     l = a.n(i),
     r = a(397927),
-    c = a(721988);
+    c = a(590900);
 let o = {
         UP: "up",
         RIGHT: "right",

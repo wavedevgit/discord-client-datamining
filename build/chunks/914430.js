@@ -1,20 +1,20 @@
 /** chunk id: 914430 params = (module,exports,require) **/
 n.d(e, {
     Al: () => o,
-    Gv: () => a,
-    fh: () => l,
+    Gv: () => l,
+    fh: () => a,
     rZ: () => r
 });
 var i = n(73153);
 
-function a(t) {
+function l(t) {
     i.h.dispatch({
         type: "CATEGORY_COLLAPSE",
         id: t
     })
 }
 
-function l(t) {
+function a(t) {
     i.h.dispatch({
         type: "CATEGORY_EXPAND",
         id: t

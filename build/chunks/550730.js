@@ -16,7 +16,7 @@ var a = n(627968),
     x = n(816866),
     p = n(87558),
     g = n(918550),
-    f = n(525221);
+    f = n(314485);
 let v = "Make sure you're only uploading text files!",
     _ = e => {
         let {

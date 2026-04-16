@@ -12,7 +12,7 @@ var a = n(627968),
     c = n(522055),
     u = n(71393),
     m = n(967198),
-    h = n(895010);
+    h = n(661202);
 
 function x() {
     let e = (0, l.bG)([m.A], () => m.A.getGuildId()),

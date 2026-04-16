@@ -15,7 +15,7 @@ var i = n(627968),
     m = n(631576),
     g = n(148355),
     x = n(985018),
-    h = n(629599);
+    h = n(129711);
 let _ = e => {
     let {
         className: t,
@@ -72,7 +72,7 @@ let _ = e => {
                             (0, o.mMO)(async () => {
                                 let {
                                     default: e
-                                } = await Promise.all([n.e("29143"), n.e("96637")]).then(n.bind(n, 445002));
+                                } = await Promise.all([n.e("29143"), n.e("40361")]).then(n.bind(n, 445002));
                                 return t => (0, i.jsx)(e, {
                                     sticker: _,
                                     guildId: _.guild_id,

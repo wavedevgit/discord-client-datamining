@@ -1,0 +1,20 @@
+/** chunk id: 468489 params = (module,exports,require) **/
+e.exports = {
+    f3: "cardsArea__250d5",
+    zI: "cardBody__250d5",
+    cG: "mainCard__250d5",
+    GT: "mainCardBody__250d5 cardBody__250d5",
+    _v: "mainCardImageContainer__250d5",
+    fk: "mainCardImage__250d5",
+    IU: "smallCard__250d5",
+    s4: "smallCardBody__250d5 cardBody__250d5",
+    eZ: "smallCardImageContainer__250d5",
+    v: "smallCardImage__250d5",
+    KX: "mainTitle__250d5",
+    _N: "smallTitle__250d5",
+    h_: "description__250d5",
+    My: "mainDescription__250d5",
+    Gd: "smallDescription__250d5",
+    ov: "metadataRow__250d5",
+    a5: "reactionInfo__250d5"
+}

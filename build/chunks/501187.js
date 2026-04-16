@@ -16,8 +16,8 @@ var s = n(607399),
     h = n(877062),
     _ = n(652215),
     p = n(985018),
-    m = n(541858),
-    g = n(604880);
+    g = n(611346),
+    m = n(604880);
 
 function A(e) {
     let {
@@ -26,24 +26,24 @@ function A(e) {
         errorReason: A
     } = e;
     return n ? (0, i.jsxs)("div", {
-        className: m.MY,
+        className: g.MY,
         children: [(0, i.jsx)("div", {
-            className: m.r$,
+            className: g.r$,
             children: (0, i.jsx)("img", {
-                src: g,
+                src: m,
                 alt: ""
             })
         }), (0, i.jsxs)("div", {
-            className: m.Qs,
+            className: g.Qs,
             children: [(0, i.jsx)(a.DeQ, {
                 alt: ""
             }), (0, i.jsx)(o.Heading, {
                 variant: "heading-lg/semibold",
-                className: m.ky,
+                className: g.ky,
                 children: p.intl.string(p.t.RtCSr1)
             }), (0, i.jsx)(o.Text, {
                 variant: "text-md/normal",
-                className: m.G3,
+                className: g.G3,
                 children: p.intl.string(p.t["S+YjYJ"])
             }), (0, i.jsx)(o.Button, {
                 variant: "primary",
@@ -57,24 +57,24 @@ function A(e) {
             })]
         })]
     }) : (0, i.jsxs)("div", {
-        className: m.MY,
+        className: g.MY,
         children: [(0, i.jsx)("div", {
-            className: m.r$,
+            className: g.r$,
             children: (0, i.jsx)("img", {
-                src: g,
+                src: m,
                 alt: ""
             })
         }), (0, i.jsxs)("div", {
-            className: m.Qs,
+            className: g.Qs,
             children: [(0, i.jsx)(a.DeQ, {
                 alt: ""
             }), (0, i.jsx)(o.Heading, {
                 variant: "heading-lg/semibold",
-                className: m.ky,
+                className: g.ky,
                 children: p.intl.string(p.t["9h/0Rl"])
             }), (0, i.jsx)(o.Text, {
                 variant: "text-md/normal",
-                className: m.G3,
+                className: g.G3,
                 children: p.intl.string(p.t.Wgm7Om)
             }), (0, i.jsx)(o.Button, {
                 variant: "primary",

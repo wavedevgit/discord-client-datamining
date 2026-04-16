@@ -15,10 +15,10 @@ var s = n(627968),
     h = n(942156),
     _ = n(574094),
     p = n(49463),
-    m = n(976860),
-    g = n(426660),
+    g = n(976860),
+    m = n(426660),
     A = n(652215),
-    f = n(339086);
+    f = n(476958);
 let E = n(843020),
     x = n(545044),
     I = [A.BVt.LOGIN, A.BVt.LOGIN_HANDOFF, A.BVt.LOGIN_ONE_TIME, A.BVt.REGISTER, A.BVt.INVITE(""), A.BVt.GIFT_CODE(""), A.BVt.GUILD_TEMPLATE_LOGIN(""), A.BVt.GUILD_TEMPLATE(""), A.BVt.DISABLE_EMAIL_NOTIFICATIONS, A.BVt.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS, A.BVt.BILLING_PREMIUM_SUBSCRIBE, A.BVt.BILLING_PAYMENT_SOURCES_CREATE, A.BVt.BILLING_PAYMENTS, A.BVt.BILLING_PREMIUM_SWITCH_PLAN, A.BVt.BILLING_GUILD_SUBSCRIPTIONS_PURCHASE, A.BVt.GIFT_CARD_REDEEM, A.BVt.VERIFY, A.BVt.VERIFY_HUB_EMAIL, A.BVt.REJECT_IP, A.BVt.REJECT_MFA, A.BVt.AUTHORIZE_IP, A.BVt.AUTHORIZE_PAYMENT, A.BVt.RESET, A.BVt.HANDOFF, A.BVt.REPORT, A.BVt.REPORT_SECOND_LOOK, A.BVt.ACCOUNT_REVERT("")];
@@ -41,7 +41,7 @@ function j(e) {
     switch (n) {
         case "default":
             return (0, s.jsxs)(s.Fragment, {
-                children: [u ? (0, s.jsx)(g.A, {}) : (0, s.jsx)("img", {
+                children: [u ? (0, s.jsx)(m.A, {}) : (0, s.jsx)("img", {
                     className: f.xX,
                     src: E,
                     alt: ""
@@ -74,14 +74,14 @@ class S extends r.Component {
         window.removeEventListener("resize", this.handleResize)
     }
     mobileTransitionTo(e, t) {
-        if (N(e))(0, m.pX)(e, t);
+        if (N(e))(0, g.pX)(e, t);
         else {
             let n = null != t && null != t.search ? t.search : null;
             window.location = null == n ? e : `${e}?${n}`
         }
     }
     mobileReplaceWith(e) {
-        N(e) ? (0, m.bG)(e) : window.location = e
+        N(e) ? (0, g.bG)(e) : window.location = e
     }
     renderDefault() {
         let {
@@ -89,8 +89,8 @@ class S extends r.Component {
         } = this.props, t = (0, s.jsx)(u.A, {
             component: r.Fragment,
             children: r.Children.map(this.props.children, e => r.cloneElement(e, {
-                transitionTo: m.pX,
-                replaceWith: m.bG
+                transitionTo: g.pX,
+                replaceWith: g.bG
             }))
         });
         return (0, s.jsx)("div", {

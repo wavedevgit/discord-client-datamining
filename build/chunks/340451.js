@@ -15,16 +15,16 @@ var i = n(627968),
     h = n(210714),
     _ = n(954571),
     p = n(652215),
-    m = n(985018);
+    g = n(985018);
 
-function g(e) {
+function m(e) {
     n.g.location.assign(e)
 }
 
 function A(e) {
     let {
         location: t,
-        transitionTo: n = g
+        transitionTo: n = m
     } = e, [r, A] = s.useState("submitting"), f = s.useRef(void 0);
     (0, o.Ay)(() => {
         (0, h.d)("verify_email");
@@ -49,20 +49,20 @@ function A(e) {
             }), (0, u.A)("verify_email")
         }, []);
     return "failed" === r ? (0, i.jsx)(d.A, {
-        title: m.intl.string(m.t["PCgG3+"]),
-        subtitle: m.intl.string(m.t.tQpeA3),
-        buttonText: m.intl.string(m.t.dKhVQN),
+        title: g.intl.string(g.t["PCgG3+"]),
+        subtitle: g.intl.string(g.t.tQpeA3),
+        buttonText: g.intl.string(g.t.dKhVQN),
         onButtonClick: E
     }) : "succeeded" === r ? (0, i.jsx)(d.A, {
-        title: m.intl.string(m.t["dAfGb+"]),
-        buttonText: m.intl.string(m.t["uJWIj/"]),
+        title: g.intl.string(g.t["dAfGb+"]),
+        buttonText: g.intl.string(g.t["uJWIj/"]),
         onButtonClick: x,
         image: (0, i.jsx)(l.bqQ, {
-            alt: m.intl.string(m.t["dAfGb+"])
+            alt: g.intl.string(g.t["dAfGb+"])
         })
     }) : (0, i.jsx)(d.A, {
-        title: m.intl.string(m.t["0c8+5n"]),
-        subtitle: m.intl.string(m.t.ULTCBE),
+        title: g.intl.string(g.t["0c8+5n"]),
+        subtitle: g.intl.string(g.t.ULTCBE),
         loading: !0
     })
 }

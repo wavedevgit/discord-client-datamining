@@ -15,14 +15,14 @@ var i, s = n(627968),
     h = n(17372),
     _ = n(369053),
     p = n(961350),
-    m = n(975571),
-    g = n(204173),
+    g = n(975571),
+    m = n(204173),
     A = n(19992),
     f = n(501334),
     E = n(759788),
     x = n(652215),
     I = n(985018),
-    N = n(378613);
+    N = n(725925);
 a.Ay.initialize();
 var v = ((i = {}).SELECTION = "selection", i.DSA = "dsa", i.TIDA = "tida", i);
 let C = e => {
@@ -52,12 +52,12 @@ let C = e => {
         }, [R]);
         let L = T.filter(e => e !== h.tY.MEDIA_TAKEDOWN),
             w = T.includes(h.tY.MEDIA_TAKEDOWN),
-            k = L.length > 0,
-            B = k && w,
-            D = i || !R;
+            D = L.length > 0,
+            k = D && w,
+            U = i || !R;
         r.useEffect(() => {
-            D || k || w || n()
-        }, [D, k, w, n]);
+            U || D || w || n()
+        }, [U, D, w, n]);
         let P = r.useCallback(() => {
                 (0, o.mMO)(() => Promise.resolve(e => (0, s.jsx)(C, {
                     ...e
@@ -65,12 +65,12 @@ let C = e => {
                     dismissable: !1
                 })
             }, []),
-            U = r.useCallback((e, t) => {
+            B = r.useCallback((e, t) => {
                 "selection" !== t && "selection" !== e ? y("selection") : y(e)
             }, []),
-            G = r.useMemo(() => (0, g.i)(h.tY.MEDIA_TAKEDOWN, P), [P]),
-            F = S ?? (B ? "selection" : k ? "dsa" : "tida");
-        if (D || !k && !w) return (0, s.jsx)(l.Modal, {
+            G = r.useMemo(() => (0, m.i)(h.tY.MEDIA_TAKEDOWN, P), [P]),
+            M = S ?? (k ? "selection" : D ? "dsa" : "tida");
+        if (U || !D && !w) return (0, s.jsx)(l.Modal, {
             title: "",
             actions: [],
             transitionState: t,
@@ -86,11 +86,11 @@ let C = e => {
                 children: (0, s.jsx)(o.y$y, {})
             })
         });
-        if (!B) {
-            if (k) return (0, s.jsx)(l.Modal, {
+        if (!k) {
+            if (D) return (0, s.jsx)(l.Modal, {
                 title: I.intl.string(I.t.Z11w18),
                 subtitle: I.intl.format(I.t["532l+q"], {
-                    supportURL: m.A.getArticleURL(x.MVz.COPYRIGHT_AND_IP_POLICY)
+                    supportURL: g.A.getArticleURL(x.MVz.COPYRIGHT_AND_IP_POLICY)
                 }),
                 actions: [],
                 transitionState: t,
@@ -114,7 +114,7 @@ let C = e => {
                 children: (0, s.jsx)(E.K, {})
             })
         }
-        let M = [{
+        let F = [{
             stepKey: "selection",
             modalProps: {
                 title: I.intl.string(I.t.Z11w18)
@@ -125,7 +125,7 @@ let C = e => {
             modalProps: {
                 title: I.intl.string(I.t.Z11w18),
                 subtitle: I.intl.format(I.t["532l+q"], {
-                    supportURL: m.A.getArticleURL(x.MVz.COPYRIGHT_AND_IP_POLICY)
+                    supportURL: g.A.getArticleURL(x.MVz.COPYRIGHT_AND_IP_POLICY)
                 })
             },
             body: (0, s.jsx)(A.c, {
@@ -148,11 +148,11 @@ let C = e => {
                 selection: N.a,
                 dsa: N.q,
                 tida: void 0
-            } [F],
+            } [M],
             children: (0, s.jsx)(o.t04, {
-                steps: M,
-                currentStepKey: F,
-                onStepChange: U,
+                steps: F,
+                currentStepKey: M,
+                onStepChange: B,
                 onClose: n,
                 transitionState: t,
                 dismissable: !1

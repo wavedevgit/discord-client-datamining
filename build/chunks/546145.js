@@ -2,10 +2,10 @@
 n.d(t, {
     A: () => r
 });
-var l = n(287809),
-    a = n(622543);
+var a = n(287809),
+    i = n(622543);
 
 function r(e) {
-    let t = l.default.getCurrentUser();
-    return null == t ? null : null != e ? a.A.getGuildMemberProfile(t.id, e) : a.A.getUserProfile(t.id)
+    let t = a.default.getCurrentUser();
+    return null == t ? null : null != e ? i.A.getGuildMemberProfile(t.id, e) : i.A.getUserProfile(t.id)
 }

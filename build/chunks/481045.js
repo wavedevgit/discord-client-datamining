@@ -13,9 +13,9 @@ var l = i(627968),
     o = i(115063),
     u = i(365258),
     m = i(704037),
-    x = i(634411),
+    x = i(395277),
     h = i(985018),
-    j = i(830910);
+    j = i(141710);
 let T = () => {
     (0, c.openUserSettings)(r.X.ACTIVITY_PRIVACY_PANEL)
 };

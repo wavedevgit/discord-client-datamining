@@ -24,9 +24,9 @@ var i = n(627968),
     N = n(29086),
     E = n(652215),
     C = n(743981),
-    T = n(577957),
+    T = n(661023),
     I = n(985018),
-    b = n(791633);
+    b = n(644961);
 let v = function() {
     (0, I.useSyncMessages)(T.messagesLoader);
     let e = (0, r.bG)([h.A], () => h.A.getGuild()),

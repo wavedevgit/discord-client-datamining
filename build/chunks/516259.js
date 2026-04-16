@@ -1,76 +1,76 @@
 /** chunk id: 516259 params = (module,exports,require) **/
-s.d(t, {
-    default: () => k
-}), s(321073);
-var i = s(627968),
-    n = s(64700),
-    o = s(110259),
-    a = s(732955),
-    l = s(397927),
-    r = s(311907),
-    c = s(49229),
-    d = s(688810),
-    u = s(513297),
-    p = s(414711),
-    m = s(723690),
-    h = s(657331),
-    A = s(595623),
-    b = s(652215),
-    g = s(985018),
-    _ = s(464908);
+i.d(t, {
+    default: () => x
+}), i(321073);
+var s = i(627968),
+    a = i(64700),
+    n = i(110259),
+    o = i(732955),
+    c = i(397927),
+    r = i(311907),
+    l = i(49229),
+    _ = i(688810),
+    d = i(513297),
+    u = i(414711),
+    p = i(723690),
+    m = i(657331),
+    h = i(595623),
+    g = i(652215),
+    b = i(985018),
+    f = i(452732);
 
-function N(e) {
+function A(e) {
     let {
         user: t,
-        status: s,
-        ignoredUser: n
+        status: i,
+        ignoredUser: a
     } = e, {
-        analyticsLocations: o
-    } = (0, d.Ay)(), a = e => {
-        e.stopPropagation(), c.A.cancelFriendRequest(t.id, {
+        analyticsLocations: n
+    } = (0, _.Ay)(), o = e => {
+        e.stopPropagation(), l.A.cancelFriendRequest(t.id, {
             location: "Spam requests modal"
         })
     }, r = e => {
-        e.stopPropagation(), c.A.addRelationship({
+        e.stopPropagation(), l.A.addRelationship({
             userId: t.id,
             context: {
                 location: "Spam requests modal"
             }
         })
-    }, A = s === b.clD.OFFLINE ? b.clD.UNKNOWN : s, N = n ? g.intl.string(g.t.pO68Oz) : g.intl.string(g.t["gp+Ytz"]);
-    return (0, i.jsx)("div", {
-        className: _.Bi,
-        children: (0, i.jsx)(p.A, {
+    }, h = i === g.clD.OFFLINE ? g.clD.UNKNOWN : i, A = a ? b.intl.string(b.t.pO68Oz) : b.intl.string(b.t["gp+Ytz"]);
+    return (0, s.jsx)("div", {
+        className: f.Bi,
+        children: (0, s.jsx)(u.A, {
             isFocused: !1,
             user: t,
-            className: _.Aw,
-            activeClassName: _.vu,
+            className: f.Aw,
+            activeClassName: f.vu,
             noBorder: !0,
-            onClick: () => (0, h.openUserProfileModal)({
+            onClick: () => (0, m.openUserProfileModal)({
                 userId: t.id,
-                sourceAnalyticsLocations: o
+                sourceAnalyticsLocations: n
             }),
-            children: e => (0, i.jsxs)("div", {
-                className: _.a4,
-                children: [(0, i.jsx)(m.A, {
+            children: e => (0, s.jsxs)("div", {
+                className: f.a4,
+                children: [(0, s.jsx)(p.A, {
                     user: t,
                     hovered: e,
-                    status: A,
-                    subText: N,
-                    className: _.eF
-                }), (0, i.jsxs)("div", {
-                    className: _.o1,
-                    children: [(0, i.jsx)(u.A, {
-                        icon: l.A9s,
-                        actionType: u.A.ActionTypes.ACCEPT,
-                        tooltip: g.intl.string(g.t.Zcibdf),
+                    status: h,
+                    subText: A,
+                    className: f.eF
+                }), (0, s.jsxs)("div", {
+                    className: f.o1,
+                    children: [(0, s.jsx)(d.A, {
+                        icon: c.A9s,
+                        actionType: d.A.ActionTypes.ACCEPT,
+                        tooltip: b.intl.string(b.t.Zcibdf),
                         onClick: r,
                         shouldHighlight: e
-                    }), (0, i.jsx)(u.A, {
-                        icon: l.PGe,
-                        actionType: u.A.ActionTypes.DENY,
-                        tooltip: g.intl.string(g.t.xuio0C),
-                        onClick: a,
+                    }), (0, s.jsx)(d.A, {
+                        icon: c.PGe,
+                        actionType: d.A.ActionTypes.DENY,
+                        tooltip: b.intl.string(b.t.xuio0C),
+                        onClick: o,
                         shouldHighlight: e
                     })]
                 })]
@@ -79,46 +79,46 @@ function N(e) {
     })
 }
 
-function k(e) {
+function x(e) {
     let {
         transitionState: t,
-        onClose: s
+        onClose: i
     } = e, {
-        rows: l
-    } = (0, r.cf)([A.Ay], () => A.Ay.getState()), d = l.filter(b.m3P.PENDING_IGNORED), u = l.filter(b.m3P.SPAM), p = u.length + d.length;
-    n.useEffect(() => {
-        0 === p && s()
-    }, [p, s]);
-    let m = n.useCallback(() => {
-            c.A.clearPendingSpamAndIgnored(), s()
-        }, [s]),
-        h = n.useMemo(() => {
+        rows: c
+    } = (0, r.cf)([h.Ay], () => h.Ay.getState()), _ = c.filter(g.m3P.PENDING_IGNORED), d = c.filter(g.m3P.SPAM), u = d.length + _.length;
+    a.useEffect(() => {
+        0 === u && i()
+    }, [u, i]);
+    let p = a.useCallback(() => {
+            l.A.clearPendingSpamAndIgnored(), i()
+        }, [i]),
+        m = a.useMemo(() => {
             let e = [];
-            return p > 1 && e.push({
-                text: g.intl.string(g.t.O8k7O4),
-                onClick: m,
+            return u > 1 && e.push({
+                text: b.intl.string(b.t.O8k7O4),
+                onClick: p,
                 variant: "secondary"
             }), e
-        }, [m, p]);
-    return (0, i.jsx)(a.aFV, {
-        title: g.intl.string(g.t.kaYqnm),
-        subtitle: g.intl.string(g.t.tRxb4H),
-        actions: h,
+        }, [p, u]);
+    return (0, s.jsx)(o.aFV, {
+        title: b.intl.string(b.t.kaYqnm),
+        subtitle: b.intl.string(b.t.tRxb4H),
+        actions: m,
         trackingProps: {
             impression: {
-                impressionName: o.ImpressionNames.FRIEND_REQUESTS_SPAM_INBOX
+                impressionName: n.ImpressionNames.FRIEND_REQUESTS_SPAM_INBOX
             }
         },
-        onClose: s,
+        onClose: i,
         transitionState: t,
-        children: (0, i.jsxs)("div", {
-            className: _.jE,
-            children: [d.map(e => (0, n.createElement)(N, {
+        children: (0, s.jsxs)("div", {
+            className: f.jE,
+            children: [_.map(e => (0, a.createElement)(A, {
                 ...e,
                 isFocused: !1,
                 key: e.key,
                 ignoredUser: !0
-            })), u.map(e => (0, n.createElement)(N, {
+            })), d.map(e => (0, a.createElement)(A, {
                 ...e,
                 isFocused: !1,
                 key: e.key

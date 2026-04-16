@@ -1,35 +1,35 @@
 /** chunk id: 104473 params = (module,exports,require) **/
-n.d(t, {
+a.d(t, {
     AZ: () => f
 });
-var a = n(627968),
-    r = n(64700),
-    o = n(407045),
-    i = n(397927),
-    l = n(664111),
-    s = n(831056),
-    c = n(784018);
-let d = "https://cdn.discordapp.com/assets/og_img_discord_home.png";
+var n = a(627968),
+    o = a(64700),
+    r = a(407045),
+    i = a(397927),
+    l = a(664111),
+    s = a(831056),
+    d = a(784018);
+let c = "https://cdn.discordapp.com/assets/og_img_discord_home.png";
 
 function u(e) {
     let {
         orientation: t,
-        thumbnailUrl: n,
-        onReplay: r
+        thumbnailUrl: a,
+        onReplay: o
     } = e;
-    return (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)(s.nY, {
-            url: n
-        }), (0, a.jsx)(s.KP, {}), (0, a.jsxs)(s.zj, {
+    return (0, n.jsxs)(n.Fragment, {
+        children: [(0, n.jsx)(s.nY, {
+            url: a
+        }), (0, n.jsx)(s.KP, {}), (0, n.jsxs)(s.zj, {
             orientation: t,
-            children: [(0, a.jsx)(s.Kb, {
-                url: n,
+            children: [(0, n.jsx)(s.Kb, {
+                url: a,
                 orientation: t
-            }), (0, a.jsx)(s.lx, {
+            }), (0, n.jsx)(s.lx, {
                 title: "Watch Again",
                 subtitle: "Replay this video",
                 ctaBtnLabel: "Replay",
-                onCTAClick: r,
+                onCTAClick: o,
                 orientation: t
             })]
         })]
@@ -39,27 +39,37 @@ function u(e) {
 function p(e) {
     let {
         orientation: t,
-        autoplay: n,
-        maxSeekableTimeSec: r,
-        videoUrl: o,
+        autoplay: a,
+        maxSeekableTimeSec: o,
+        videoUrl: r,
         poster: s,
         showEndScreen: p,
         active: m,
-        autoHideVolumeSlider: b
+        autoHideVolumeSlider: b,
+        sizing: _
     } = e;
-    return (0, a.jsx)("div", {
-        style: {
+    return (0, n.jsx)("div", {
+        style: "video" === _ ? {
             width: "landscape" === t ? "640px" : "360px",
             height: "landscape" === t ? "360px" : "640px",
             margin: "0 auto"
+        } : {
+            display: "flex",
+            flexDirection: "column",
+            width: "portrait" === t ? "400px" : "100%",
+            maxWidth: "portrait" === t ? void 0 : "800px",
+            height: "portrait" === t ? "700px" : "500px",
+            backgroundColor: "#1e1f22",
+            borderRadius: "8px",
+            overflow: "hidden"
         },
-        children: (0, a.jsx)(l.A, {
-            src: o,
+        children: (0, n.jsx)(l.A, {
+            src: r,
             poster: s,
             active: m,
-            autoplay: n,
+            autoplay: a,
             orientation: t,
-            maxSeekableTimeSec: r > 0 ? r : void 0,
+            maxSeekableTimeSec: o > 0 ? o : void 0,
             autoHideVolumeSlider: b,
             parentTransitionState: i.ip4.ENTERED,
             targetTimeSec: 1 / 0,
@@ -68,15 +78,15 @@ function p(e) {
             onProgressUpdate: () => {},
             onEnded: () => {},
             onError: () => {},
-            transcriptText: o === c.Im ? c.LI : c.pQ,
+            transcriptText: r === d.Im ? d.LI : d.pQ,
             renderEndScreen: p ? e => {
                 let {
-                    replay: n
+                    replay: a
                 } = e;
-                return (0, a.jsx)(u, {
+                return (0, n.jsx)(u, {
                     orientation: t,
-                    thumbnailUrl: d,
-                    onReplay: n
+                    thumbnailUrl: c,
+                    onReplay: a
                 })
             } : void 0
         }, String(m))
@@ -108,12 +118,12 @@ let m = {
         videoUrl: {
             label: "Video URL",
             type: "text",
-            defaultValue: c.kz
+            defaultValue: d.kz
         },
         poster: {
             label: "Poster URL",
             type: "text",
-            defaultValue: d
+            defaultValue: c
         },
         showEndScreen: {
             label: "Show End Screen",
@@ -129,6 +139,18 @@ let m = {
             label: "Auto-hide Volume Slider",
             type: "boolean",
             defaultValue: !1
+        },
+        sizing: {
+            label: "Container sizing",
+            type: "select",
+            options: [{
+                label: "Modal context (800\xd7500)",
+                value: "modal"
+            }, {
+                label: "Video size (640\xd7360 / 360\xd7640)",
+                value: "video"
+            }],
+            defaultValue: "modal"
         }
     },
     b = {
@@ -155,7 +177,7 @@ let m = {
             }
         }
     },
-    S = {
+    g = {
         name: "HLS",
         id: "hls-video-generic",
         component: p,
@@ -167,60 +189,60 @@ let m = {
             },
             videoUrl: {
                 ...m.videoUrl,
-                defaultValue: c.Im
+                defaultValue: d.Im
             }
         }
     },
-    g = {
+    v = {
         tension: 500,
         friction: 30,
         clamp: !0
     },
     f = {
         title: "Discord Video Player (Generic)",
-        stories: [b, _, S, {
+        stories: [b, _, g, {
             name: "Timeline Indicators",
             id: "timeline-indicators-generic",
             component: function(e) {
                 let {
                     orientation: t,
-                    autoplay: n,
+                    autoplay: a,
                     maxSeekableTimeSec: s,
-                    videoUrl: c,
-                    indicatorTimeSec: d
+                    videoUrl: d,
+                    indicatorTimeSec: c
                 } = e, u = function(e) {
-                    let [t, n] = r.useState(null), [l, s] = r.useState(null), c = r.useRef(null), [{
-                        expansion: d
+                    let [t, a] = o.useState(null), [l, s] = o.useState(null), d = o.useRef(null), [{
+                        expansion: c
                     }, u] = (0, i.zhh)(() => ({
                         expansion: 0,
-                        config: g,
+                        config: v,
                         onRest: () => {
-                            null == c.current && s(null)
+                            null == d.current && s(null)
                         }
-                    })), p = r.useCallback(e => {
-                        c.current = e, null != e ? (s(e), u({
+                    })), p = o.useCallback(e => {
+                        d.current = e, null != e ? (s(e), u({
                             expansion: 4
                         })) : u({
                             expansion: 0
-                        }), n(e)
-                    }, [u]), m = r.useMemo(() => [{
+                        }), a(e)
+                    }, [u]), m = o.useMemo(() => [{
                         index: 0,
                         timeSec: e,
                         widthPx: 32,
                         gapPx: 4
-                    }], [e]), b = r.useCallback((e, t) => {
-                        let n = l === e.index;
-                        return (0, a.jsx)(o.animated.div, {
+                    }], [e]), b = o.useCallback((e, t) => {
+                        let a = l === e.index;
+                        return (0, n.jsx)(r.animated.div, {
                             "data-testid": "timeline-indicator",
                             onMouseEnter: () => p(e.index),
                             onMouseLeave: () => p(null),
                             style: {
                                 position: "absolute",
-                                left: n ? d.to(t => e.leftPx - t) : e.leftPx,
+                                left: a ? c.to(t => e.leftPx - t) : e.leftPx,
                                 top: "50%",
                                 transform: "translateY(-50%)",
-                                width: n ? d.to(e => `${32+2*e}px`) : 32,
-                                height: n ? d.to(e => `${32+2*e}px`) : 32,
+                                width: a ? c.to(e => `${32+2*e}px`) : 32,
+                                height: a ? c.to(e => `${32+2*e}px`) : 32,
                                 boxSizing: "border-box",
                                 borderRadius: "50%",
                                 backgroundColor: "#3ba55c",
@@ -231,30 +253,30 @@ let m = {
                                 cursor: "pointer",
                                 zIndex: 1
                             },
-                            children: (0, a.jsx)(i.Text, {
+                            children: (0, n.jsx)(i.Text, {
                                 variant: "text-xs/semibold",
                                 color: "always-white",
                                 children: "R"
                             })
                         }, `indicator-${e.index}`)
-                    }, [p, l, d]);
+                    }, [p, l, c]);
                     return {
                         indicators: m,
                         animatingIndex: l,
-                        expansionSpring: d,
+                        expansionSpring: c,
                         hoverExpansionPx: 4,
                         renderIndicator: b
                     }
-                }(d);
-                return (0, a.jsx)("div", {
+                }(c);
+                return (0, n.jsx)("div", {
                     style: {
                         width: "landscape" === t ? "640px" : "360px",
                         height: "landscape" === t ? "360px" : "640px",
                         margin: "0 auto"
                     },
-                    children: (0, a.jsx)(l.A, {
-                        src: c,
-                        autoplay: n,
+                    children: (0, n.jsx)(l.A, {
+                        src: d,
+                        autoplay: a,
                         orientation: t,
                         maxSeekableTimeSec: s > 0 ? s : void 0,
                         parentTransitionState: i.ip4.ENTERED,

@@ -6,10 +6,10 @@ n.d(t, {
 });
 var l = n(417597),
     i = n(600975),
-    s = n(71393),
-    a = n(735547),
+    a = n(71393),
+    s = n(735547),
     r = n(652215);
-let o = a.Ay.INVITE_OPTIONS_7_DAYS.value,
+let o = s.Ay.INVITE_OPTIONS_7_DAYS.value,
     d = (0, i.C)({
         kind: "guild",
         id: "2025-08_default_invite_expiration_guild",
@@ -39,16 +39,28 @@ let o = a.Ay.INVITE_OPTIONS_7_DAYS.value,
     }),
     u = (0, i.C)({
         kind: "guild",
-        id: "2026-04_default_invite_expiration_guild_web",
+        id: "2026-05_default_invite_expiration_guild_web",
         label: "Default Invite Expiration Guild Web",
         defaultConfig: {
             defaultMaxAge: 604800
         },
         treatments: [{
             id: 1,
+            label: "14 days",
+            config: {
+                defaultMaxAge: 1209600
+            }
+        }, {
+            id: 2,
             label: "30 days",
             config: {
                 defaultMaxAge: 2592e3
+            }
+        }, {
+            id: 3,
+            label: "60 days",
+            config: {
+                defaultMaxAge: 5184e3
             }
         }]
     });
@@ -63,13 +75,13 @@ function c(e) {
     }), g = u.useExperiment({
         guildId: i,
         location: n
-    }), h = c?.defaultMaxAge !== o ? c : g, A = (0, l.bG)([s.A], () => s.A.getGuild(t));
+    }), h = c?.defaultMaxAge !== o ? c : g, A = (0, l.bG)([a.A], () => a.A.getGuild(t));
     return null == t ? null : function(e) {
         let {
             guild: t,
             experimentConfig: n
         } = e;
-        if (t?.features.has(r.GuildFeatures.HUB)) return a.Ay.INVITE_OPTIONS_FOREVER.value;
+        if (t?.features.has(r.GuildFeatures.HUB)) return s.Ay.INVITE_OPTIONS_FOREVER.value;
         if (null != n) return n.defaultMaxAge ?? o;
         let l = t?.id ?? r.dJq,
             i = d.getCurrentConfig({
@@ -93,11 +105,11 @@ function g(e) {
     } = e, l = t ?? r.dJq, i = d.useExperiment({
         guildId: l,
         location: n
-    }), s = u.useExperiment({
+    }), a = u.useExperiment({
         guildId: l,
         location: n
-    }), c = i?.defaultMaxAge !== o ? i : s;
-    return a.Ay.getMaxAgeOptions({
+    }), c = i?.defaultMaxAge !== o ? i : a;
+    return s.Ay.getMaxAgeOptions({
         includeExperimentalValues: [c?.defaultMaxAge]
     })
 }

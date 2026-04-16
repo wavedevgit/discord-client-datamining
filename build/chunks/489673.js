@@ -1,31 +1,31 @@
 /** chunk id: 489673 params = (module,exports,require) **/
-t.d(n, {
-    A: () => s
+n.d(t, {
+    A: () => u
 });
-var a = t(627968);
-t(64700);
-var i = t(503698),
-    r = t.n(i),
-    c = t(985018),
-    l = t(532476),
-    o = t(346554),
-    _ = t(301444);
+var l = n(627968);
+n(64700);
+var i = n(503698),
+    r = n.n(i),
+    _ = n(985018),
+    a = n(821612),
+    c = n(346554),
+    s = n(301444);
 
-function s(e) {
+function u(e) {
     let {
-        className: n,
-        children: t
+        className: t,
+        children: n
     } = e;
-    return (0, a.jsxs)("div", {
-        className: r()(l.kL, n),
-        children: [(0, a.jsx)("img", {
-            alt: c.intl.string(c.t.VoB8Oc),
-            src: _,
-            className: r()(l.ot, l.Q_)
-        }), t, (0, a.jsx)("img", {
-            alt: c.intl.string(c.t.VoB8Oc),
-            src: o,
-            className: r()(l.ot, l.st)
+    return (0, l.jsxs)("div", {
+        className: r()(a.kL, t),
+        children: [(0, l.jsx)("img", {
+            alt: _.intl.string(_.t.VoB8Oc),
+            src: s,
+            className: r()(a.ot, a.Q_)
+        }), n, (0, l.jsx)("img", {
+            alt: _.intl.string(_.t.VoB8Oc),
+            src: c,
+            className: r()(a.ot, a.st)
         })]
     })
 }

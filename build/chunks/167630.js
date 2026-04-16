@@ -10,7 +10,7 @@ var i = n(627968),
     a = n(427080),
     o = n(515115),
     c = n(988794),
-    d = n(863487);
+    d = n(478799);
 
 function u(e) {
     let {
@@ -20,10 +20,10 @@ function u(e) {
     } = e, h = t.entity_type === c.Ps.EXTERNAL, _ = s.useCallback(e => (0, a.GI)(t, u)(e), [t, u]), p = (0, o.L)(t, n);
     if (null == p) return null;
     let {
-        IconComponent: m,
-        locationName: g
+        IconComponent: g,
+        locationName: m
     } = p, A = (0, i.jsxs)(i.Fragment, {
-        children: [null != m && (0, i.jsx)(m, {
+        children: [null != g && (0, i.jsx)(g, {
             size: "custom",
             color: "currentColor",
             width: 20,
@@ -33,7 +33,7 @@ function u(e) {
             color: "text-default",
             variant: "text-sm/normal",
             className: d.fN,
-            children: (0, l.l)(g, !0)
+            children: (0, l.l)(m, !0)
         })]
     });
     return (0, i.jsx)("div", {

@@ -36,12 +36,12 @@ let h = function(e) {
         } : (0, d.vA)(e) ? () => {
             a()
         } : null
-    }(t, h, p, a.o.VIDEO.has(n) ? r.Cy.WATCH_VIDEO : (0, d.vA)(t) ? r.Cy.START_QUEST : r.Cy.ACCEPT_QUEST), f = (0, u.Oz)(t), C = function(e, t, n) {
-        if ((0, o.K$)(t)) return m.intl.string(m.t.IsH2Sp);
-        if ((0, o.IO)(t)) return (0, c.WM)(n);
-        if ((0, d.vA)(t)) return (0, o.Ov)(t) ? m.intl.string(m.t.CkUzLd) : (0, o.vl)(t) ? t.config.features.includes(_.Li.CLOUD_GAMING_ACTIVITY) ? m.intl.string(m.t["+qoymD"]) : m.intl.string(m.t.E4kW5O) : m.intl.string(m.t.l7E81v);
+    }(t, h, p, a.o.VIDEO.has(n) ? r.Cy.WATCH_VIDEO : (0, d.vA)(t) ? r.Cy.START_QUEST : r.Cy.ACCEPT_QUEST), f = (0, u.Oz)(t), C = function(e, t) {
+        if ((0, o.K$)(e)) return m.intl.string(m.t.IsH2Sp);
+        if ((0, o.IO)(e)) return (0, c.WM)(t);
+        if ((0, d.vA)(e)) return (0, o.Ov)(e) ? m.intl.string(m.t.CkUzLd) : (0, o.vl)(e) ? e.config.features.includes(_.Li.CLOUD_GAMING_ACTIVITY) ? m.intl.string(m.t["+qoymD"]) : m.intl.string(m.t.E4kW5O) : m.intl.string(m.t.l7E81v);
         return m.intl.string(m.t["9KoPyB"])
-    }(0, t, A);
+    }(t, A);
     return null == x ? (0, i.jsx)(l.Button, {
         size: g,
         variant: "secondary",

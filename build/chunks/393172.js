@@ -39,7 +39,7 @@ n(392164);
 var U = n(652215),
     L = n(731854),
     k = n(985018),
-    G = n(901245);
+    G = n(458509);
 let P = e => {
     let t = (e ?? 0) % R.A.DEFAULT_AVATARS.length;
     return R.A.DEFAULT_AVATARS[t]

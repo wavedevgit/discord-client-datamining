@@ -1,6 +1,6 @@
 /** chunk id: 489683 params = (module,exports,require) **/
 n.d(t, {
-    A: () => e2
+    A: () => e3
 });
 var i = n(627968),
     l = n(64700),
@@ -102,7 +102,7 @@ var i = n(627968),
     eK = n(897513),
     eq = n(509381),
     ez = n(985018),
-    e$ = n(470534);
+    e$ = n(395766);
 let eQ = {
     offset: {
         left: -1,
@@ -457,7 +457,7 @@ function e7(e) {
     })
 }
 
-function e9(e) {
+function e6(e) {
     let t, {
             channel: n,
             canGoLive: a,
@@ -557,7 +557,7 @@ function e9(e) {
         }
     })
 }
-class e6 extends l.PureComponent {
+class e9 extends l.PureComponent {
     ref = l.createRef();
     krispButtonRef = l.createRef();
     handleChannelLinkClick = e => {
@@ -703,7 +703,7 @@ class e6 extends l.PureComponent {
                 channel: e,
                 enableActivities: c,
                 disabled: !A && u
-            }), (0, i.jsx)(e9, {
+            }), (0, i.jsx)(e6, {
                 channel: e,
                 canGoLive: t,
                 enableActivities: c,
@@ -803,7 +803,7 @@ function e5(e) {
         })
     })
 }
-let e2 = (0, N.A)(function(e) {
+let e3 = (0, N.A)(function(e) {
     let t = (0, F.A)(),
         n = (0, c.bG)([H.default], () => H.default.getAwaitingRemoteSessionInfo()),
         a = (0, c.bG)([eD.default], () => eD.default.getCurrentUser()),
@@ -870,7 +870,7 @@ let e2 = (0, N.A)(function(e) {
             children: [null != t || null != n ? (0, i.jsx)(Y.A, {
                 voiceState: t,
                 awaitingRemoteSessionInfo: n
-            }) : null, (0, i.jsx)(e6, {
+            }) : null, (0, i.jsx)(e9, {
                 ...e,
                 ...A,
                 ...s,

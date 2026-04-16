@@ -12,7 +12,7 @@ var i = n(64700),
     c = n(962173),
     u = n(652215),
     m = n(985018),
-    g = n(873494);
+    g = n(452832);
 let _ = [u.fg2.LEAGUE_OF_LEGENDS, u.fg2.RIOT_GAMES];
 
 function x() {

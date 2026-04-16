@@ -1,7 +1,7 @@
 /** chunk id: 906564 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => g,
+    Ay: () => m,
     pG: () => A
 });
 var i = n(989349),
@@ -16,9 +16,9 @@ var i = n(989349),
     h = n(499785),
     _ = n(569717),
     p = n(652215),
-    m = n(204925);
+    g = n(204925);
 
-function g(e) {
+function m(e) {
     let {
         invite: t = null,
         giftCodeSKUId: n = null,
@@ -36,7 +36,7 @@ function A(e) {
         email: t,
         phoneToken: n,
         username: i,
-        globalName: g,
+        globalName: m,
         consent: A,
         password: f,
         guildTemplateCode: E,
@@ -51,8 +51,8 @@ function A(e) {
         }), null != x) {
         let e;
         (0, _.A)(x, p.JJy.REGISTER), u.default.track(p.HAw.AGE_GATE_ACTION, {
-            source: m.w_.REGISTER,
-            action: m.AM.AGE_GATE_SUBMITTED
+            source: g.w_.REGISTER,
+            action: g.AM.AGE_GATE_SUBMITTED
         }), (e = s()().diff(x, "years")) < 13 || u.default.track(p.HAw.USER_AGE_SUBMITTED, {
             age_bucket: e >= 13 && e <= 17 ? "13-17" : e >= 18 && e <= 22 ? "18-22" : "23+"
         })
@@ -63,7 +63,7 @@ function A(e) {
             fingerprint: d.default.getFingerprint(),
             email: t,
             username: i,
-            global_name: g,
+            global_name: m,
             password: f,
             invite: I,
             consent: A,
@@ -89,13 +89,13 @@ function A(e) {
             type: "REGISTER_SUCCESS",
             token: e.body.token
         }), u.default.track(p.HAw.AGE_GATE_ACTION, {
-            source: m.w_.REGISTER,
-            action: m.AM.AGE_GATE_SUCCESS
+            source: g.w_.REGISTER,
+            action: g.AM.AGE_GATE_SUCCESS
         })
     }, e => {
         if (e instanceof c.CaptchaCancelError) throw e;
         let t = new a.A(e);
-        throw null != t.getFieldErrors("date_of_birth") && o.Xv(m.w_.REGISTER), u.default.track(p.HAw.REGISTER_SUBMIT_ERRORED, {
+        throw null != t.getFieldErrors("date_of_birth") && o.Xv(g.w_.REGISTER), u.default.track(p.HAw.REGISTER_SUBMIT_ERRORED, {
             is_unique_username_registration: !0,
             email_error_reason: t.getFirstFieldErrorMessage("email"),
             phone_error_reason: t.getFirstFieldErrorMessage("phone_token"),

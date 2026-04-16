@@ -37,56 +37,56 @@ function o(e, t, r) {
             u = [],
             f = !0,
             b = "function" == typeof t.set,
-            d = function(e, t) {
-                var r = "u" > typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
-                if (!r) {
-                    if (Array.isArray(e) || (r = function(e, t) {
+            d = function(e) {
+                var t = "u" > typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
+                if (!t) {
+                    if (Array.isArray(e) || (t = function(e) {
                             if (e) {
                                 if ("string" == typeof e) return n(e, void 0);
-                                var r = Object.prototype.toString.call(e).slice(8, -1);
-                                if ("Object" === r && e.constructor && (r = e.constructor.name), "Map" === r || "Set" === r) return Array.from(e);
-                                if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return n(e, void 0)
+                                var t = Object.prototype.toString.call(e).slice(8, -1);
+                                if ("Object" === t && e.constructor && (t = e.constructor.name), "Map" === t || "Set" === t) return Array.from(e);
+                                if ("Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t)) return n(e, void 0)
                             }
                         }(e))) {
-                        r && (e = r);
-                        var a = 0,
-                            o = function() {};
+                        t && (e = t);
+                        var r = 0,
+                            a = function() {};
                         return {
-                            s: o,
+                            s: a,
                             n: function() {
-                                return a >= e.length ? {
+                                return r >= e.length ? {
                                     done: !0
                                 } : {
                                     done: !1,
-                                    value: e[a++]
+                                    value: e[r++]
                                 }
                             },
                             e: function(e) {
                                 throw e
                             },
-                            f: o
+                            f: a
                         }
                     }
                     throw TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                 }
-                var s, i = !0,
-                    c = !1;
+                var o, s = !0,
+                    i = !1;
                 return {
                     s: function() {
-                        r = r.call(e)
+                        t = t.call(e)
                     },
                     n: function() {
-                        var e = r.next();
-                        return i = e.done, e
+                        var e = t.next();
+                        return s = e.done, e
                     },
                     e: function(e) {
-                        c = !0, s = e
+                        i = !0, o = e
                     },
                     f: function() {
                         try {
-                            i || null == r.return || r.return()
+                            s || null == t.return || t.return()
                         } finally {
-                            if (c) throw s
+                            if (i) throw o
                         }
                     }
                 }

@@ -10,14 +10,14 @@ var r = n(627968),
     l = n(64700),
     a = n(503698),
     i = n.n(a),
-    s = n(407045),
-    u = n(827734),
+    u = n(407045),
+    s = n(827734),
     o = n(876230),
     c = n(61491),
     d = n(435371),
     m = n(397927),
     f = n(985018),
-    h = n(246878);
+    h = n(834926);
 let p = "-:--",
     x = 1500,
     E = {
@@ -90,10 +90,10 @@ let y = l.forwardRef(function(e, t) {
         "aria-disabled": p,
         "data-testid": C,
         innerRef: t,
-        children: (0, r.jsx)(s.animated.div, {
+        children: (0, r.jsx)(u.animated.div, {
             className: h.K5,
             style: {
-                opacity: (0, s.to)([l.to({
+                opacity: (0, u.to)([l.to({
                     range: [0, 1],
                     output: [0, 1]
                 })], e => `${a?e:Math.pow(e,8)}`),
@@ -104,7 +104,7 @@ let y = l.forwardRef(function(e, t) {
             },
             children: (0, r.jsx)(n, {
                 size: v[S],
-                color: !0 !== p ? u.A.colors.WHITE : u.A.colors.TEXT_MUTED,
+                color: !0 !== p ? s.A.colors.WHITE : s.A.colors.TEXT_MUTED,
                 className: i()(h.jk, {
                     [h.x2]: f,
                     [h.Wr]: !p

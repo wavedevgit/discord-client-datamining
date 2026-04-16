@@ -15,7 +15,7 @@ var i = a(627968),
     p = a(4274),
     f = a(652215),
     E = a(985018),
-    A = a(730340);
+    A = a(488020);
 let N = (n = window.GLOBAL_ENV.INVITE_HOST, s = "", null == n && (n = location.host, s = f.BVt.INVITE("")), `${location.protocol}//${n}${s}/`);
 
 function h(e) {

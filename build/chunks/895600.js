@@ -8,7 +8,7 @@ var n = s(854378),
     i = s(651539),
     l = s(768397),
     a = s(401755),
-    d = s(208699);
+    d = s(521099);
 let c = {
     [a.IZ.CLASSROOM]: s(749576),
     [a.IZ.LOCAL_COMMUNITIES]: s(409682),

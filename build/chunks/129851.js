@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(397927),
     _ = n(73153),
     p = n(830215),
-    m = n(6981),
-    g = n(574052),
+    g = n(6981),
+    m = n(351671),
     A = n(15552),
     f = n(212640),
     E = n(854378),
@@ -35,22 +35,22 @@ var i = n(627968),
     O = n(976860),
     L = n(913612),
     w = n(210714),
-    k = n(933924),
-    B = n(961350),
-    D = n(115036),
+    D = n(933924),
+    k = n(961350),
+    U = n(115036),
     P = n(650048),
-    U = n(954571),
+    B = n(954571),
     G = n(203982),
-    F = n(723702),
-    M = n(161928),
+    M = n(723702),
+    F = n(161928),
     V = n(890698),
     W = n(344961),
     H = n(538796),
     K = n(652215),
     z = n(401755),
     Q = n(985018),
-    q = n(534754),
-    Y = n(885106);
+    q = n(379154),
+    Y = n(818050);
 
 function X() {
     return (0, i.jsx)(E.Ay, {
@@ -99,7 +99,7 @@ class J extends s.PureComponent {
             invite: i,
             location: s
         } = this.props;
-        e && !t ? (0, m.ST)() : t && this.loginOrSSO(t, s, !0), U.default.track(K.HAw.LOGIN_VIEWED, {
+        e && !t ? (0, g.ST)() : t && this.loginOrSSO(t, s, !0), B.default.track(K.HAw.LOGIN_VIEWED, {
             location: null != i ? "Invite Login Page" : "Non-Invite Login Page",
             login_source: this.loginSource,
             authenticated: t,
@@ -107,7 +107,7 @@ class J extends s.PureComponent {
             source: (0, O.PR)()
         }, {
             flush: !0
-        }), t || (0, k.a)({
+        }), t || (0, D.a)({
             abortController: this.state.conditionalMediationAbortController,
             loginSource: this.loginSource,
             giftCodeSKUId: this.giftCodeSKUId
@@ -140,7 +140,7 @@ class J extends s.PureComponent {
             else if (null != n.channel) return "dm_invite";
             else if (null != n.inviter) return "friend_invite"
         }
-        return null != s ? (0, g.Q)(s) : null
+        return null != s ? (0, m.Q)(s) : null
     }
     get giftCodeSKUId() {
         let {
@@ -160,7 +160,7 @@ class J extends s.PureComponent {
     handleAuthSuccess = e => {
         this.setState({
             errors: {}
-        }), U.default.track(K.HAw.LOGIN_SUCCESSFUL, {
+        }), B.default.track(K.HAw.LOGIN_SUCCESSFUL, {
             source: K.mdB.QR_CODE,
             login_source: this.loginSource,
             gift_code_sku_id: this.giftCodeSKUId,
@@ -183,7 +183,7 @@ class J extends s.PureComponent {
             let e = window.location.protocol + window.GLOBAL_ENV.API_ENDPOINT + K.Rsh.SSO,
                 t = {
                     ...s,
-                    token: B.default.getToken()
+                    token: k.default.getToken()
                 };
             window.location = `${e}?${(0,a.stringify)(t)}`
         }
@@ -343,14 +343,14 @@ class J extends s.PureComponent {
             children: (0, i.jsx)(V.A, {
                 invite: n
             })
-        }) : null != s ? (0, i.jsx)(M.A, {
+        }) : null != s ? (0, i.jsx)(F.A, {
             giftCode: s
         }) : (0, i.jsxs)("div", {
             className: q.wx,
             children: [(0, i.jsx)(E.hE, {
                 className: Y.QB,
                 children: Q.intl.string(Q.t["7fNJgA"])
-            }, "title"), !1 === (0, F.isAndroidWeb)() ? (0, i.jsx)(E.tK, {
+            }, "title"), !1 === (0, M.isAndroidWeb)() ? (0, i.jsx)(E.tK, {
                 children: Q.intl.string(Q.t.euS7r4)
             }, "subtitle") : null]
         }), (0, i.jsxs)(I.A, {
@@ -737,13 +737,13 @@ class J extends s.PureComponent {
 }
 let $ = function(e) {
     (0, L.K)();
-    let t = (0, d.cf)([D.A, P.A, B.default, j.A, b.A], () => ({
-        authenticated: B.default.isAuthenticated(),
-        handoffAvailable: D.A.isHandoffAvailable(),
-        user: D.A.user,
-        loginStatus: B.default.getLoginStatus(),
-        mfaTicket: B.default.getMFATicket(),
-        mfaMethods: B.default.getMFAMethods(),
+    let t = (0, d.cf)([U.A, P.A, k.default, j.A, b.A], () => ({
+        authenticated: k.default.isAuthenticated(),
+        handoffAvailable: U.A.isHandoffAvailable(),
+        user: U.A.user,
+        loginStatus: k.default.getLoginStatus(),
+        mfaTicket: k.default.getMFATicket(),
+        mfaMethods: k.default.getMFAMethods(),
         defaultRoute: P.A.defaultRoute,
         country: b.A.getCountryCode(),
         hasLoggedInAccounts: j.A.getHasLoggedInAccounts()

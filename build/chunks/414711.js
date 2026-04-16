@@ -14,7 +14,7 @@ var s = i(627968),
     d = i(595623),
     A = i(22212);
 i(646363);
-var p = i(904914);
+var p = i(272828);
 class m extends n.PureComponent {
     state = {
         height: new l.A.Value(this.props.height ?? 61),
@@ -66,7 +66,7 @@ class m extends n.PureComponent {
         }), (0, c.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([i.e("97262"), i.e("32418"), i.e("77012")]).then(i.bind(i, 668569)), a = () => {
+            } = await Promise.all([i.e("97262"), i.e("32418"), i.e("22880")]).then(i.bind(i, 668569)), a = () => {
                 (0, A.Jo)({
                     targetUserId: t.id,
                     tab: d.Ay.getState().section

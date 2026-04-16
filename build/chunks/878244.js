@@ -34,8 +34,8 @@ var s = t(627968),
     H = t(652215),
     M = t(788868),
     j = t(985018),
-    v = t(367625),
-    G = t(913110);
+    v = t(224601),
+    G = t(997990);
 let P = M.vQ.DM_CHANNEL_WISHLIST,
     b = R.Z.SIZE_133;
 

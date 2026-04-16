@@ -1,7 +1,7 @@
 /** chunk id: 795068 params = (module,exports,require) **/
 n.d(t, {
     a: () => s,
-    l: () => i
+    l: () => a
 });
 var r = n(64700);
 let s = r.createContext({
@@ -16,6 +16,6 @@ let s = r.createContext({
         progressSec: 0,
         targetSec: 0
     }),
-    i = r.createContext({
+    a = r.createContext({
         questConfig: null
     })

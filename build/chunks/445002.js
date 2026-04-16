@@ -25,7 +25,7 @@ var l = i(627968),
     S = i(823894),
     N = i(652215),
     v = i(985018),
-    C = i(432019);
+    C = i(557155);
 let I = new Set(["application/json", "image/png", "image/apng", "image/gif", "image/jpeg", "image/jpg"]),
     k = [{
         name: "Sticker file",

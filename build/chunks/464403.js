@@ -111,8 +111,8 @@ var r, a, o = n(664326),
     e2 = n.n(e1),
     e4 = n(207110),
     e8 = n.n(e4),
-    e3 = n(804998),
-    e6 = n.n(e3),
+    e6 = n(804998),
+    e3 = n.n(e6),
     e5 = n(954785),
     e9 = n.n(e5),
     e7 = n(291056),
@@ -125,7 +125,7 @@ var r, a, o = n(664326),
     ti = n.n(to),
     ts = n(987516),
     tl = n.n(ts),
-    tc = n(542900),
+    tc = n(320519),
     tu = n.n(tc),
     td = n(442160),
     tp = n.n(td),
@@ -1004,13 +1004,13 @@ function t8(e, t) {
     return nt(n.__H, t) ? (n.__V = e(), n.i = t, n.__h = e, n.__V) : n.__
 }
 
-function t3(e, t) {
+function t6(e, t) {
     return tH = 8, t8(function() {
         return e
     }, t)
 }
 
-function t6(e) {
+function t3(e) {
     var t = tj.context[e.__c],
         n = tJ(tV++, 9);
     return n.c = e, t ? (null == n.__ && (n.__ = !0, t.sub(tj)), t.props.value) : e.__
@@ -1163,11 +1163,11 @@ var ns = function() {
     });
 
 function nc() {
-    return t6(nl)
+    return t3(nl)
 }
-var nu = function(e) {
-    (0, eo.A)(r, el.uA);
-    var t, n = (t = function() {
+var nu = function() {
+    (0, eo.A)(n, el.uA);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -1176,34 +1176,34 @@ var nu = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        var e, t;
-        (0, k.A)(this, r);
+    function n() {
+        var e, r;
+        (0, k.A)(this, n);
         for (var a = arguments.length, o = Array(a), i = 0; i < a; i++) o[i] = arguments[i];
-        return t = n.call.apply(n, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(t), "onClick", function(e) {
-            e.preventDefault(), t.props.disabled || t.props.onClick(e, {
-                complete: t.complete
+        return r = t.call.apply(t, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(r), "onClick", function(e) {
+            e.preventDefault(), r.props.disabled || r.props.onClick(e, {
+                complete: r.complete
             })
-        }), (0, w.A)((0, ea.A)(t), "complete", function() {
+        }), (0, w.A)((0, ea.A)(r), "complete", function() {
             var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1e3;
-            t.setState({
+            r.setState({
                 completed: !0
             }), eu()(function() {
-                t.setState({
+                r.setState({
                     completed: !1
                 })
             }, e)
-        }), t
+        }), r
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "render",
         value: function(e, t) {
             var n, r, a = e.classNameModifiers,
@@ -1256,7 +1256,7 @@ var nu = function(e) {
                 onClick: this.onClick
             }, g, "loading" !== u && "redirect" !== u && this.props.children)
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(nu, "defaultProps", {
     status: "default",
@@ -1363,9 +1363,9 @@ function nA(e) {
     IMPLEMENTATION_ERROR: "IMPLEMENTATION_ERROR",
     ERROR: "ERROR"
 });
-var n_ = function(e) {
-        (0, eo.A)(r, tD);
-        var t, n = (t = function() {
+var n_ = function() {
+        (0, eo.A)(n, tD);
+        var e, t = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -1374,17 +1374,17 @@ var n_ = function(e) {
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(r);
-            if (t) {
+            var t, r = (0, es.A)(n);
+            if (e) {
                 var a = (0, es.A)(this).constructor;
-                e = en()(n, arguments, a)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(r, arguments, a)
+            } else t = r.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function r(e) {
-            var t, a, o, i, s, l, c, u, d, p;
-            return (0, k.A)(this, r), p = n.call(this, e), (0, w.A)((0, ea.A)(p), "componentRef", void 0), (0, w.A)((0, ea.A)(p), "elementRef", void 0), (0, w.A)((0, ea.A)(p), "handleError", function(e) {
+        function n(e) {
+            var r, a, o, i, s, l, c, u, d, p;
+            return (0, k.A)(this, n), p = t.call(this, e), (0, w.A)((0, ea.A)(p), "componentRef", void 0), (0, w.A)((0, ea.A)(p), "elementRef", void 0), (0, w.A)((0, ea.A)(p), "handleError", function(e) {
                 p.setElementStatus("ready"), p.props.onError && p.props.onError(e, p.elementRef)
             }), (0, w.A)((0, ea.A)(p), "handleAdditionalDetails", function(e) {
                 return p.props.onAdditionalDetails ? p.props.onAdditionalDetails(e, p.elementRef) : p.props.session && p.submitAdditionalDetails(e.data), e
@@ -1420,9 +1420,9 @@ var n_ = function(e) {
                     secondaryAmount: p.props.secondaryAmount,
                     onClick: p.submit
                 }))
-            }), p.submit = F()(t = p.submit).call(t, (0, ea.A)(p)), p.setState = F()(a = p.setState).call(a, (0, ea.A)(p)), p.onValid = F()(o = p.onValid).call(o, (0, ea.A)(p)), p.onComplete = F()(i = p.onComplete).call(i, (0, ea.A)(p)), p.onSubmit = F()(s = p.onSubmit).call(s, (0, ea.A)(p)), p.handleAction = F()(l = p.handleAction).call(l, (0, ea.A)(p)), p.handleOrder = F()(c = p.handleOrder).call(c, (0, ea.A)(p)), p.handleResponse = F()(u = p.handleResponse).call(u, (0, ea.A)(p)), p.setElementStatus = F()(d = p.setElementStatus).call(d, (0, ea.A)(p)), p.elementRef = e && e.elementRef || (0, ea.A)(p), p
+            }), p.submit = F()(r = p.submit).call(r, (0, ea.A)(p)), p.setState = F()(a = p.setState).call(a, (0, ea.A)(p)), p.onValid = F()(o = p.onValid).call(o, (0, ea.A)(p)), p.onComplete = F()(i = p.onComplete).call(i, (0, ea.A)(p)), p.onSubmit = F()(s = p.onSubmit).call(s, (0, ea.A)(p)), p.handleAction = F()(l = p.handleAction).call(l, (0, ea.A)(p)), p.handleOrder = F()(c = p.handleOrder).call(c, (0, ea.A)(p)), p.handleResponse = F()(u = p.handleResponse).call(u, (0, ea.A)(p)), p.setElementStatus = F()(d = p.setElementStatus).call(d, (0, ea.A)(p)), p.elementRef = e && e.elementRef || (0, ea.A)(p), p
         }
-        return (0, C.A)(r, [{
+        return (0, C.A)(n, [{
             key: "setState",
             value: function(e) {
                 this.state = nA(nA({}, this.state), e), this.onChange()
@@ -1558,11 +1558,11 @@ var n_ = function(e) {
             get: function() {
                 return this.props.type || this.constructor.type
             }
-        }]), r
+        }]), n
     }(),
-    nk = function(e) {
-        (0, eo.A)(r, el.uA);
-        var t, n = (t = function() {
+    nk = function() {
+        (0, eo.A)(n, el.uA);
+        var e, t = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -1571,21 +1571,21 @@ var n_ = function(e) {
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(r);
-            if (t) {
+            var t, r = (0, es.A)(n);
+            if (e) {
                 var a = (0, es.A)(this).constructor;
-                e = en()(n, arguments, a)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(r, arguments, a)
+            } else t = r.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function r() {
-            var e, t;
-            (0, k.A)(this, r);
+        function n() {
+            var e, r;
+            (0, k.A)(this, n);
             for (var a = arguments.length, o = Array(a), i = 0; i < a; i++) o[i] = arguments[i];
-            return t = n.call.apply(n, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(t), "iframeEl", void 0), t
+            return r = t.call.apply(t, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(r), "iframeEl", void 0), r
         }
-        return (0, C.A)(r, [{
+        return (0, C.A)(n, [{
             key: "iframeOnLoad",
             value: function() {
                 this.props.callback && "function" == typeof this.props.callback && this.props.callback(this.iframeEl.contentWindow)
@@ -1641,7 +1641,7 @@ var n_ = function(e) {
                     "min-height": s
                 })
             }
-        }]), r
+        }]), n
     }();
 (0, w.A)(nk, "defaultProps", {
     width: "0",
@@ -1711,9 +1711,9 @@ var nC = function(e, t, n) {
             c = o[4];
         return i && s && l ? M()(t = M()(n = M()(r = "".concat(i, ":")).call(r, s)).call(n, l)).call(t, c ? ":".concat(c) : "") : null
     },
-    nR = function(e) {
-        (0, eo.A)(r, el.uA);
-        var t, n = (t = function() {
+    nR = function() {
+        (0, eo.A)(n, el.uA);
+        var e, t = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -1722,19 +1722,19 @@ var nC = function(e, t, n) {
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(r);
-            if (t) {
+            var t, r = (0, es.A)(n);
+            if (e) {
                 var a = (0, es.A)(this).constructor;
-                e = en()(n, arguments, a)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(r, arguments, a)
+            } else t = r.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function r(e) {
-            var t;
-            return (0, k.A)(this, r), t = n.call(this, e), (0, w.A)((0, ea.A)(t), "postMessageDomain", void 0), (0, w.A)((0, ea.A)(t), "processMessageHandler", void 0), (0, w.A)((0, ea.A)(t), "deviceFingerPrintPromise", void 0), t.postMessageDomain = nP(t.props.loadingContext) || t.props.loadingContext, t
+        function n(e) {
+            var r;
+            return (0, k.A)(this, n), r = t.call(this, e), (0, w.A)((0, ea.A)(r), "postMessageDomain", void 0), (0, w.A)((0, ea.A)(r), "processMessageHandler", void 0), (0, w.A)((0, ea.A)(r), "deviceFingerPrintPromise", void 0), r.postMessageDomain = nP(r.props.loadingContext) || r.props.loadingContext, r
         }
-        return (0, C.A)(r, [{
+        return (0, C.A)(n, [{
             key: "getDfpPromise",
             value: function() {
                 var e = this;
@@ -1765,11 +1765,11 @@ var nC = function(e, t, n) {
                     title: "devicefingerprinting iframe"
                 }))
             }
-        }]), r
+        }]), n
     }(),
-    nF = function(e) {
-        (0, eo.A)(r, el.uA);
-        var t, n = (t = function() {
+    nF = function() {
+        (0, eo.A)(n, el.uA);
+        var e, t = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -1778,22 +1778,22 @@ var nC = function(e, t, n) {
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(r);
-            if (t) {
+            var t, r = (0, es.A)(n);
+            if (e) {
                 var a = (0, es.A)(this).constructor;
-                e = en()(n, arguments, a)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(r, arguments, a)
+            } else t = r.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function r(e) {
-            var t, a, o;
-            return (0, k.A)(this, r), t = n.call(this, e), e.clientKey && (t.state = {
+        function n(e) {
+            var r, a, o;
+            return (0, k.A)(this, n), r = t.call(this, e), e.clientKey && (r.state = {
                 status: "retrievingFingerPrint",
-                dfpURL: M()(a = M()(o = "".concat(t.props.loadingContext, "assets/html/")).call(o, e.clientKey, "/dfp.")).call(a, "1.0.0", ".html")
-            }), t
+                dfpURL: M()(a = M()(o = "".concat(r.props.loadingContext, "assets/html/")).call(o, e.clientKey, "/dfp.")).call(a, "1.0.0", ".html")
+            }), r
         }
-        return (0, C.A)(r, [{
+        return (0, C.A)(n, [{
             key: "setStatusComplete",
             value: function(e) {
                 var t = this;
@@ -1832,7 +1832,7 @@ var nC = function(e, t, n) {
                     }
                 })) : null
             }
-        }]), r
+        }]), n
     }();
 (0, w.A)(nF, "defaultProps", {
     onComplete: function() {},
@@ -1875,9 +1875,9 @@ function nI(e) {
     }
     return e
 }
-var nM = function(e) {
-    (0, eo.A)(r, tD);
-    var t, n = (t = function() {
+var nM = function() {
+    (0, eo.A)(n, tD);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -1886,38 +1886,38 @@ var nM = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r(e) {
-        (0, k.A)(this, r), t = n.call(this, e), (0, w.A)((0, ea.A)(t), "nodeRiskContainer", null), (0, w.A)((0, ea.A)(t), "onComplete", function(e) {
-            var n, r = nI(nI({}, t.state.data), {}, ((0, w.A)(n = {}, e.type, e.value), (0, w.A)(n, "persistentCookie", e.persistentCookie), (0, w.A)(n, "components", e.components), n));
-            t.setState({
-                data: r,
+    function n(e) {
+        (0, k.A)(this, n), r = t.call(this, e), (0, w.A)((0, ea.A)(r), "nodeRiskContainer", null), (0, w.A)((0, ea.A)(r), "onComplete", function(e) {
+            var t, n = nI(nI({}, r.state.data), {}, ((0, w.A)(t = {}, e.type, e.value), (0, w.A)(t, "persistentCookie", e.persistentCookie), (0, w.A)(t, "components", e.components), t));
+            r.setState({
+                data: n,
                 isValid: !0
-            }), t.props.risk.onComplete(t.data), t.cleanUp()
-        }), (0, w.A)((0, ea.A)(t), "onError", function(e) {
-            t.props.risk.onError(e), t.cleanUp()
-        }), (0, w.A)((0, ea.A)(t), "cleanUp", function() {
-            t.nodeRiskContainer && t.nodeRiskContainer.parentNode && t.nodeRiskContainer.parentNode.removeChild(t.nodeRiskContainer)
+            }), r.props.risk.onComplete(r.data), r.cleanUp()
+        }), (0, w.A)((0, ea.A)(r), "onError", function(e) {
+            r.props.risk.onError(e), r.cleanUp()
+        }), (0, w.A)((0, ea.A)(r), "cleanUp", function() {
+            r.nodeRiskContainer && r.nodeRiskContainer.parentNode && r.nodeRiskContainer.parentNode.removeChild(r.nodeRiskContainer)
         });
-        var t, a = (0, w.A)({}, nw, null);
-        return t.setState({
+        var r, a = (0, w.A)({}, nw, null);
+        return r.setState({
             data: a
-        }), !0 === t.props.risk.enabled && (document.querySelector(t.props.risk.node) ? (t.nodeRiskContainer = document.createElement("div"), document.querySelector(t.props.risk.node).appendChild(t.nodeRiskContainer), t.mount(t.nodeRiskContainer)) : t.onError({
+        }), !0 === r.props.risk.enabled && (document.querySelector(r.props.risk.node) ? (r.nodeRiskContainer = document.createElement("div"), document.querySelector(r.props.risk.node).appendChild(r.nodeRiskContainer), r.mount(r.nodeRiskContainer)) : r.onError({
             message: "RiskModule node was not found"
-        })), t
+        })), r
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
             return nI(nI({}, e), {}, {
-                risk: nI(nI({}, r.defaultProps.risk), e.risk)
+                risk: nI(nI({}, n.defaultProps.risk), e.risk)
             })
         }
     }, {
@@ -1950,7 +1950,7 @@ var nM = function(e) {
                 onError: this.onError
             }))
         }
-    }]), r
+    }]), n
 }();
 
 function nT(e) {
@@ -1975,7 +1975,7 @@ function nT(e) {
 
 function nB() {
     var e = nc().resources;
-    return t3(function(t) {
+    return t6(function(t) {
         return null == e ? void 0 : e.getImage(t)
     }, [])
 }(0, w.A)(nM, "type", "risk"), (0, w.A)(nM, "defaultProps", {
@@ -2023,8 +2023,8 @@ var nX, n0, n1 = ["bcmc"],
     n2 = "required",
     n4 = "optional",
     n8 = "hidden",
-    n3 = "data-cse",
-    n6 = "data-info",
+    n6 = "data-cse",
+    n3 = "data-info",
     n5 = "data-uid",
     n9 = ["accel", "pulse", "star", "nyce"],
     n7 = {
@@ -2120,13 +2120,13 @@ var rA = function(e) {
         T = I[0],
         B = I[1];
     null != k && O(!!k), null != _ && B(!!_);
-    var D = t3(function(e) {
+    var D = t6(function(e) {
             O(!0), null == y || y(e)
         }, [y]),
-        L = t3(function(e) {
+        L = t6(function(e) {
             O(!1), null == f || f(e), null == m || m(e)
         }, [f, m]),
-        V = t3(function() {
+        V = t6(function() {
             return (0, el.h)(el.FK, null, "string" == typeof d && (0, el.h)("span", {
                 className: ep()({
                     "adyen-checkout__label__text": !0,
@@ -2139,7 +2139,7 @@ var rA = function(e) {
                 className: "adyen-checkout__helper-text"
             }, s))
         }, [d, i]),
-        j = t3(function() {
+        j = t6(function() {
             var e, n, r;
             return (0, el.h)(el.FK, null, (0, el.h)("div", {
                 className: ep()(M()(e = ["adyen-checkout__input-wrapper"]).call(e, (0, H.A)(J()(l).call(l, function(e) {
@@ -2180,7 +2180,7 @@ var rA = function(e) {
                 "aria-hidden": N ? null : "true"
             }), i && "string" == typeof i && i.length ? i : null))
         }, [t, i, c, u, D, L]),
-        U = t3(function(e) {
+        U = t6(function(e) {
             var t = e.onFocusField,
                 n = e.focused,
                 r = e.filled,
@@ -2673,47 +2673,47 @@ function rj(e) {
                 return e && m.valid[t]
             }, !0)
         }, [m.schema, m.valid]),
-        g = t3(function() {
+        g = t6(function() {
             y({
                 type: "validateForm",
                 selectedSchema: arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null
             })
         }, []),
-        b = t3(function(e, t) {
+        b = t6(function(e, t) {
             return y({
                 type: "setErrors",
                 key: e,
                 value: t
             })
         }, []),
-        A = t3(function(e, t) {
+        A = t6(function(e, t) {
             return y({
                 type: "setValid",
                 key: e,
                 value: t
             })
         }, []),
-        _ = t3(function(e, t) {
+        _ = t6(function(e, t) {
             return y({
                 type: "setData",
                 key: e,
                 value: t
             })
         }, []),
-        k = t3(function(e) {
+        k = t6(function(e) {
             return y({
                 type: "setSchema",
                 schema: e,
                 defaultData: i
             })
         }, [m.schema]),
-        C = t3(function(e) {
+        C = t6(function(e) {
             return y({
                 type: "mergeForm",
                 formValue: e
             })
         }, []),
-        S = t3(function(e) {
+        S = t6(function(e) {
             return y({
                 type: "setFieldProblems",
                 fieldProblems: e
@@ -2768,20 +2768,20 @@ function rK(e) {
     t1(function() {
         null == n || n(f.current)
     }, [f.current, n]), Object.prototype.hasOwnProperty.call(r, "onChange") && console.error("Error: Form fields that rely on InputBase may not have an onChange property");
-    var m = t3(function(e) {
+    var m = t6(function(e) {
             r.onInput(e)
         }, [r.onInput]),
-        y = t3(function(e) {
+        y = t6(function(e) {
             null != r && r.onKeyPress && r.onKeyPress(e)
         }, [null == r ? void 0 : r.onKeyPress]),
-        v = t3(function(e) {
+        v = t6(function(e) {
             null != r && r.onKeyUp && r.onKeyUp(e)
         }, [null == r ? void 0 : r.onKeyUp]),
-        g = t3(function(e) {
+        g = t6(function(e) {
             var t, n, a;
             null == r || null == (t = r.onBlurHandler) || t.call(r, e), r.trimOnBlur && (e.target.value = eP()(a = e.target.value).call(a)), null == r || null == (n = r.onBlur) || n.call(r, e)
         }, [r.onBlur, r.onBlurHandler]),
-        b = t3(function(e) {
+        b = t6(function(e) {
             var t;
             null == r || null == (t = r.onFocusHandler) || t.call(r, e)
         }, [r.onFocusHandler]),
@@ -3073,7 +3073,7 @@ var r8 = function(e) {
     })
 };
 
-function r3(e) {
+function r6(e) {
     var t = e.items,
         n = e.name,
         r = e.onChange,
@@ -3107,7 +3107,7 @@ function r3(e) {
     }))
 }
 
-function r6(e) {
+function r3(e) {
     var t = t8(rJ, []);
     return (0, el.h)(rK, (0, er.A)({}, e, t ? {
         type: "date"
@@ -3155,7 +3155,7 @@ function ae(e) {
     }
     return e
 }
-r3.defaultProps = {
+r6.defaultProps = {
     onChange: function() {},
     items: []
 };
@@ -3245,7 +3245,7 @@ function ai(e) {
         classNameModifiers: ["gender"],
         name: "gender",
         useLabelElement: !1
-    }, (0, el.h)(r3, {
+    }, (0, el.h)(r6, {
         name: b("gender"),
         value: f.gender,
         items: [{
@@ -3266,7 +3266,7 @@ function ai(e) {
         helper: u ? null : s.get("dateOfBirth.format"),
         name: "dateOfBirth",
         i18n: s
-    }, (0, el.h)(r6, {
+    }, (0, el.h)(r3, {
         name: b("dateOfBirth"),
         value: f.dateOfBirth,
         classNameModifiers: ["dateOfBirth"],
@@ -4145,13 +4145,13 @@ function a8(e, t) {
     }
 }
 
-function a3(e, t) {
+function a6(e, t) {
     return a4(a2(a2({}, e), {}, {
         method: "POST"
     }), t)
 }
 
-function a6(e, t, n) {
+function a3(e, t, n) {
     var r;
     return a4(a2(a2({}, {
         loadingContext: t,
@@ -4547,7 +4547,7 @@ function ou(e) {
         g = y[1],
         b = i.getPlaceholderKeyForField("stateOrProvince", o);
     return t2(function() {
-        o && i.countryHasDataset(o) ? a6("states/".concat(o), u, c.locale).then(function(e) {
+        o && i.countryHasDataset(o) ? a3("states/".concat(o), u, c.locale).then(function(e) {
             f(e && e.length ? e : []), g(!0)
         }).catch(function() {
             f([]), g(!0)
@@ -4593,7 +4593,7 @@ function od(e) {
         A = b[0],
         _ = b[1];
     return t2(function() {
-        a6("countries", c, l.locale).then(function(e) {
+        a3("countries", c, l.locale).then(function(e) {
             var t = n.length ? P()(e).call(e, function(e) {
                 return E()(n).call(n, e.id)
             }) : e;
@@ -4805,7 +4805,7 @@ function ov(e) {
         b = g[0],
         A = g[1],
         _ = nc().i18n,
-        k = t3((t = (0, o.A)(s().mark(function e(t) {
+        k = t6((t = (0, o.A)(s().mark(function e(t) {
             return s().wrap(function(e) {
                 for (;;) switch (e.prev = e.next) {
                     case 0:
@@ -5646,9 +5646,9 @@ var oU = {
         errorMessage: "sepaDirectDebit.ibanField.invalid",
         error: "sepaDirectDebit.ibanField.invalid"
     },
-    oK = function(e) {
-        (0, eo.A)(r, el.uA);
-        var t, n = (t = function() {
+    oK = function() {
+        (0, eo.A)(n, el.uA);
+        var e, t = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -5657,17 +5657,17 @@ var oU = {
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(r);
-            if (t) {
+            var t, r = (0, es.A)(n);
+            if (e) {
                 var a = (0, es.A)(this).constructor;
-                e = en()(n, arguments, a)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(r, arguments, a)
+            } else t = r.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function r(e) {
-            var t, a, o, i;
-            if ((0, k.A)(this, r), i = n.call(this, e), (0, w.A)((0, ea.A)(i), "ibanNumber", void 0), (0, w.A)((0, ea.A)(i), "setData", function(e, t, n) {
+        function n(e) {
+            var r, a, o, i;
+            if ((0, k.A)(this, n), i = t.call(this, e), (0, w.A)((0, ea.A)(i), "ibanNumber", void 0), (0, w.A)((0, ea.A)(i), "setData", function(e, t, n) {
                     i.setState(function(n) {
                         return {
                             data: oj(oj({}, n.data), {}, (0, w.A)({}, e, t))
@@ -5736,7 +5736,7 @@ var oU = {
                 }), i.state = {
                     status: "ready",
                     data: {
-                        ownerName: (null == e || null == (t = e.data) ? void 0 : t.ownerName) || "",
+                        ownerName: (null == e || null == (r = e.data) ? void 0 : r.ownerName) || "",
                         ibanNumber: (null == e || null == (a = e.data) ? void 0 : a.ibanNumber) || "",
                         countryCode: (null == e || null == (o = e.data) ? void 0 : o.countryCode) || ""
                     },
@@ -5759,7 +5759,7 @@ var oU = {
             }
             return i
         }
-        return (0, C.A)(r, [{
+        return (0, C.A)(n, [{
             key: "setStatus",
             value: function(e) {
                 this.setState({
@@ -5847,7 +5847,7 @@ var oU = {
                     status: this.state.status
                 }))
             }
-        }]), r
+        }]), n
     }();
 
 function oH(e, t) {
@@ -6014,7 +6014,7 @@ var o4 = function() {
     },
     o8 = ["companyDetails", "personalDetails", "bankAccount", "billingAddress", "deliveryAddress"];
 
-function o3(e, t) {
+function o6(e, t) {
     var n = c()(e);
     if (d()) {
         var r = d()(e);
@@ -6025,12 +6025,12 @@ function o3(e, t) {
     return n
 }
 
-function o6(e) {
+function o3(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n, r, a = null != arguments[t] ? arguments[t] : {};
-        t % 2 ? N()(n = o3(Object(a), !0)).call(n, function(t) {
+        t % 2 ? N()(n = o6(Object(a), !0)).call(n, function(t) {
             (0, w.A)(e, t, a[t])
-        }) : m() ? v()(e, m()(a)) : N()(r = o3(Object(a))).call(r, function(t) {
+        }) : m() ? v()(e, m()(a)) : N()(r = o6(Object(a))).call(r, function(t) {
             b()(e, t, h()(a, t))
         })
     }
@@ -6049,7 +6049,7 @@ function o9(e) {
         i = t4({});
     c()(i.current).length || null == (n = e.setComponentRef) || n.call(e, i.current);
     var s = t4(!1),
-        l = t6(o$),
+        l = t3(o$),
         u = l.setSRMessagesFromObjects,
         d = l.setSRMessagesFromStrings,
         p = l.clearSRPanel,
@@ -6074,7 +6074,7 @@ function o9(e) {
             return !g[e]
         }),
         x = "editable" === a.deliveryAddress && "hidden" !== a.billingAddress,
-        R = tX(o6(o6({}, e.data), C && {
+        R = tX(o3(o3({}, e.data), C && {
             consentCheckbox: !1
         })),
         F = (0, K.A)(R, 2),
@@ -6099,7 +6099,7 @@ function o9(e) {
     i.current.showValidation = function() {
         s.current = !0, N()(oN).call(oN, function(e) {
             k[e].current && k[e].current.showValidation()
-        }), L(o6({}, C && {
+        }), L(o3({}, C && {
             consentCheckbox: O.consentCheckbox ? null : o5
         }))
     }, i.current.setStatus = Y;
@@ -6127,7 +6127,7 @@ function o9(e) {
                     o = r[1];
                 return o && (e[M()(n = "".concat(S)).call(n, a)] = o), e
             }, {}) : null,
-            L = o6(o6(o6(o6(o6(o6({}, "object" === (0, A.A)(N) && N), "object" === (0, A.A)(x) && x), "object" === (0, A.A)(R) && R), "object" === (0, A.A)(F) && F), "object" === (0, A.A)(B) && B), T),
+            L = o3(o3(o3(o3(o3(o3({}, "object" === (0, A.A)(N) && N), "object" === (0, A.A)(x) && x), "object" === (0, A.A)(R) && R), "object" === (0, A.A)(F) && F), "object" === (0, A.A)(B) && B), T),
             V = null != (a = e.personalDetailsRequiredFields) ? a : ao,
             j = P()(ao).call(ao, function(e) {
                 return null == V ? void 0 : E()(V).call(V, e)
@@ -6167,11 +6167,11 @@ function o9(e) {
     var en = function(e) {
         return function(t) {
             I(function(n) {
-                return o6(o6({}, n), {}, (0, w.A)({}, e, t.data))
+                return o3(o3({}, n), {}, (0, w.A)({}, e, t.data))
             }), q(function(n) {
-                return o6(o6({}, n), {}, (0, w.A)({}, e, t.isValid))
+                return o3(o3({}, n), {}, (0, w.A)({}, e, t.isValid))
             }), L(function(n) {
-                return o6(o6({}, n), {}, (0, w.A)({}, e, t.errors))
+                return o3(o3({}, n), {}, (0, w.A)({}, e, t.errors))
             })
         }
     };
@@ -6217,7 +6217,7 @@ function o9(e) {
         name: "separateDeliveryAddress",
         onChange: function() {
             b(function(e) {
-                return o6(o6({}, e), {}, {
+                return o3(o3({}, e), {}, {
                     deliveryAddress: !g.deliveryAddress
                 })
             })
@@ -6237,15 +6237,15 @@ function o9(e) {
         onChange: function(e) {
             var t = e.target.checked;
             I(function(e) {
-                return o6(o6({}, e), {}, {
+                return o3(o3({}, e), {}, {
                     consentCheckbox: t
                 })
             }), q(function(e) {
-                return o6(o6({}, e), {}, {
+                return o3(o3({}, e), {}, {
                     consentCheckbox: t
                 })
             }), L(function(e) {
-                return o6(o6({}, e), {}, {
+                return o3(o3({}, e), {}, {
                     consentCheckbox: !t
                 })
             })
@@ -6257,9 +6257,9 @@ function o9(e) {
         label: o.get("confirmPurchase")
     }))
 }
-var o7 = function(e) {
-        (0, eo.A)(r, el.uA);
-        var t, n = (t = function() {
+var o7 = function() {
+        (0, eo.A)(n, el.uA);
+        var e, t = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -6268,23 +6268,23 @@ var o7 = function(e) {
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(r);
-            if (t) {
+            var t, r = (0, es.A)(n);
+            if (e) {
                 var a = (0, es.A)(this).constructor;
-                e = en()(n, arguments, a)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(r, arguments, a)
+            } else t = r.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function r() {
-            var e, t;
-            (0, k.A)(this, r);
+        function n() {
+            var e, r;
+            (0, k.A)(this, n);
             for (var a = arguments.length, o = Array(a), i = 0; i < a; i++) o[i] = arguments[i];
-            return t = n.call.apply(n, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(t), "state", {
+            return r = t.call.apply(t, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(r), "state", {
                 loaded: !1
-            }), t
+            }), r
         }
-        return (0, C.A)(r, [{
+        return (0, C.A)(n, [{
             key: "componentDidMount",
             value: function() {
                 var e = this;
@@ -6309,7 +6309,7 @@ var o7 = function(e) {
                     }
                 }, (0, el.v2)(t)) : null
             }
-        }]), r
+        }]), n
     }(),
     ie = Object.prototype.toString;
 
@@ -6385,9 +6385,9 @@ function ic(e) {
     }
     return e
 }
-var iu = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var iu = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -6396,18 +6396,18 @@ var iu = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "isValid",
         get: function() {
             return !!this.state.isValid
@@ -6415,16 +6415,16 @@ var iu = function(e) {
     }, {
         key: "formatProps",
         value: function(e) {
-            var t, n = e.countryCode || (null == (t = e.data) || null == (t = t.billingAddress) ? void 0 : t.countryCode);
+            var t, r = e.countryCode || (null == (t = e.data) || null == (t = t.billingAddress) ? void 0 : t.countryCode);
             return ic(ic({}, e), {}, {
-                allowedCountries: [n],
-                visibility: ic(ic({}, r.defaultProps.visibility), e.visibility),
+                allowedCountries: [r],
+                visibility: ic(ic({}, n.defaultProps.visibility), e.visibility),
                 data: ic(ic({}, e.data), {}, {
                     billingAddress: ic(ic({}, e.data.billingAddress), {}, {
-                        country: n
+                        country: r
                     }),
                     deliveryAddress: ic(ic({}, e.data.deliveryAddress), {}, {
-                        country: n
+                        country: r
                     })
                 })
             })
@@ -6472,7 +6472,7 @@ var iu = function(e) {
                 payButton: this.payButton
             }))))
         }
-    }]), r
+    }]), n
 }();
 
 function id(e) {
@@ -6532,9 +6532,9 @@ function im(e) {
     }
     return e
 }
-var iy = function(e) {
-    (0, eo.A)(r, iu);
-    var t, n = (t = function() {
+var iy = function() {
+    (0, eo.A)(n, iu);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -6543,29 +6543,29 @@ var iy = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
-            var t, n, a, o;
-            return im(im({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e)), {}, {
+            var t, r, a, o;
+            return im(im({}, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e)), {}, {
                 allowedCountries: e.countryCode ? [e.countryCode] : ip,
                 consentCheckboxLabel: (0, el.h)(id, {
-                    url: (n = e.countryCode, "en" === (null == (a = null == (t = e.i18n) ? void 0 : t.locale) ? void 0 : em()(o = a.toLowerCase()).call(o, 0, 2)) ? "https://www.afterpay.nl/en/algemeen/pay-with-afterpay/payment-conditions" : "be" === (null == n ? void 0 : n.toLowerCase()) ? "https://www.afterpay.be/be/footer/betalen-met-afterpay/betalingsvoorwaarden" : "https://www.afterpay.nl/nl/algemeen/betalen-met-afterpay/betalingsvoorwaarden")
+                    url: (r = e.countryCode, "en" === (null == (a = null == (t = e.i18n) ? void 0 : t.locale) ? void 0 : em()(o = a.toLowerCase()).call(o, 0, 2)) ? "https://www.afterpay.nl/en/algemeen/pay-with-afterpay/payment-conditions" : "be" === (null == r ? void 0 : r.toLowerCase()) ? "https://www.afterpay.be/be/footer/betalen-met-afterpay/betalingsvoorwaarden" : "https://www.afterpay.nl/nl/algemeen/betalen-met-afterpay/betalingsvoorwaarden")
                 })
             })
         }
-    }]), r
+    }]), n
 }();
 
 function iv(e, t) {
@@ -6590,9 +6590,9 @@ function ig(e) {
     }
     return e
 }(0, w.A)(iy, "type", "afterpay_default");
-var ib = function(e) {
-    (0, eo.A)(r, iu);
-    var t, n = (t = function() {
+var ib = function() {
+    (0, eo.A)(n, iu);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -6601,28 +6601,28 @@ var ib = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
-            return ig(ig({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e)), {}, {
+            return ig(ig({}, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e)), {}, {
                 allowedCountries: e.countryCode ? [e.countryCode] : ip,
                 consentCheckboxLabel: (0, el.h)(id, {
                     url: "https://www.afterpay.nl/nl/algemeen/zakelijke-partners/betalingsvoorwaarden-zakelijk"
                 })
             })
         }
-    }]), r
+    }]), n
 }();
 
 function iA() {
@@ -6690,7 +6690,7 @@ function iS(e) {
 
 function iN(e, t, n) {
     var r;
-    return a3({
+    return a6({
         loadingContext: e,
         path: M()(r = "".concat("v1/AmazonPayUtility/getCheckoutDetails", "?clientKey=")).call(r, t)
     }, n)
@@ -6788,7 +6788,7 @@ function iR(e) {
         }))
     }, t1(function() {
         var t, n = e.clientKey;
-        a3({
+        a6({
             loadingContext: g,
             path: M()(t = "".concat("v1/AmazonPayUtility/signString", "?clientKey=")).call(t, n)
         }, {
@@ -6841,7 +6841,7 @@ function iO(e) {
             publicKeyId: c,
             recurringMetadata: d,
             region: u
-        }, a3({
+        }, a6({
             loadingContext: a,
             path: M()(r = "".concat("v1/AmazonPayUtility/updateCheckoutSession", "?clientKey=")).call(r, s)
         }, n)).then(function(e) {
@@ -6888,7 +6888,7 @@ var iI = (0, C.A)(function e(t) {
             if (n.script = o.querySelector('script[src="'.concat(n.src, '"]')), n.script && n.script.getAttribute("data-script-loaded")) e();
             else {
                 if (n.script) return n.script.addEventListener("load", r), void n.script.addEventListener("error", a);
-                n.script = document.createElement("script"), e6()(n.script, n.attributes), e6()(n.script.dataset, n.dataAttributes), n.script.src = n.src, n.script.async = !0, n.script.addEventListener("load", r), n.script.addEventListener("error", a), o.appendChild(n.script)
+                n.script = document.createElement("script"), e3()(n.script, n.attributes), e3()(n.script.dataset, n.dataAttributes), n.script.src = n.src, n.script.async = !0, n.script.addEventListener("load", r), n.script.addEventListener("error", a), o.appendChild(n.script)
             }
         })
     }), (0, w.A)(this, "remove", function() {
@@ -6988,9 +6988,9 @@ function iD(e) {
     }
     return e
 }
-var iL = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var iL = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -6999,18 +6999,18 @@ var iL = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
             return iD(iD({}, e), {}, {
@@ -7026,7 +7026,7 @@ var iL = function(e) {
             var e = this.props.amazonCheckoutSessionId;
             return {
                 paymentMethod: iD({
-                    type: r.type
+                    type: n.type
                 }, e && {
                     checkoutSessionId: e
                 }),
@@ -7108,7 +7108,7 @@ var iL = function(e) {
                 }
             }, this.props)))
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(iL, "type", "amazonpay"), (0, w.A)(iL, "defaultProps", iT);
 var iV = {
@@ -7132,9 +7132,9 @@ var iV = {
         "apple-pay-button--type-tip": "ApplePayButton-module_apple-pay-button--type-tip__bdzGK",
         "apple-pay-button--type-top-up": "ApplePayButton-module_apple-pay-button--type-top-up__Eb3qR"
     },
-    ij = function(e) {
-        (0, eo.A)(r, el.uA);
-        var t, n = (t = function() {
+    ij = function() {
+        (0, eo.A)(n, el.uA);
+        var e, t = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -7143,18 +7143,18 @@ var iV = {
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(r);
-            if (t) {
+            var t, r = (0, es.A)(n);
+            if (e) {
                 var a = (0, es.A)(this).constructor;
-                e = en()(n, arguments, a)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(r, arguments, a)
+            } else t = r.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function r() {
-            return (0, k.A)(this, r), n.apply(this, arguments)
+        function n() {
+            return (0, k.A)(this, n), t.apply(this, arguments)
         }
-        return (0, C.A)(r, [{
+        return (0, C.A)(n, [{
             key: "render",
             value: function(e) {
                 var t = e.buttonColor,
@@ -7167,7 +7167,7 @@ var iV = {
                     onClick: this.props.onClick
                 })
             }
-        }]), r
+        }]), n
     }();
 
 function iU(e, t) {
@@ -7343,9 +7343,9 @@ function iG(e) {
     }
     return e
 }
-var i$ = function(e) {
-    (0, eo.A)(a, n_);
-    var t, n, r = (t = function() {
+var i$ = function() {
+    (0, eo.A)(r, n_);
+    var e, t, n = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -7354,31 +7354,31 @@ var i$ = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(a);
-        if (t) {
-            var r = (0, es.A)(this).constructor;
-            e = en()(n, arguments, r)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+        var t, n = (0, es.A)(r);
+        if (e) {
+            var a = (0, es.A)(this).constructor;
+            t = en()(n, arguments, a)
+        } else t = n.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function a(e) {
-        var t, n, o, i;
-        return (0, k.A)(this, a), (i = r.call(this, e)).startSession = F()(t = i.startSession).call(t, (0, ea.A)(i)), i.submit = F()(n = i.submit).call(n, (0, ea.A)(i)), i.validateMerchant = F()(o = i.validateMerchant).call(o, (0, ea.A)(i)), i
+    function r(e) {
+        var t, a, o, i;
+        return (0, k.A)(this, r), (i = n.call(this, e)).startSession = F()(t = i.startSession).call(t, (0, ea.A)(i)), i.submit = F()(a = i.submit).call(a, (0, ea.A)(i)), i.validateMerchant = F()(o = i.validateMerchant).call(o, (0, ea.A)(i)), i
     }
-    return (0, C.A)(a, [{
+    return (0, C.A)(r, [{
         key: "formatProps",
         value: function(e) {
-            var t, n, r, a, o = e.version || function(e) {
-                    for (var t = [], n = 14; n > 0; n--) t.push(n);
+            var t, n, r, a, o = e.version || function() {
+                    for (var e = [], t = 14; t > 0; t--) e.push(t);
                     try {
-                        return L()(t).call(t, function(e) {
+                        return L()(e).call(e, function(e) {
                             return e && window.ApplePaySession && ApplePaySession.supportsVersion(e)
                         })
                     } catch (e) {
                         return console.warn(e), null
                     }
-                }(0),
+                }(),
                 i = null != (t = e.brands) && t.length ? (r = e.brands, a = {
                     mc: "masterCard",
                     amex: "amex",
@@ -7408,7 +7408,7 @@ var i$ = function(e) {
         value: function() {
             return {
                 paymentMethod: iG({
-                    type: a.type
+                    type: r.type
                 }, this.state)
             }
         }
@@ -7422,7 +7422,7 @@ var i$ = function(e) {
         value: function(e) {
             var t = this,
                 n = this.props,
-                r = n.version,
+                a = n.version,
                 o = n.onValidateMerchant,
                 i = n.onPaymentMethodSelected,
                 s = n.onShippingMethodSelected,
@@ -7430,7 +7430,7 @@ var i$ = function(e) {
                 c = new iK(iz(iG({
                     companyName: this.props.configuration.merchantName
                 }, this.props)), {
-                    version: r,
+                    version: a,
                     onError: function(e) {
                         t.handleError(new nv("ERROR", "ApplePay - Something went wrong on ApplePayService", {
                             cause: e
@@ -7445,11 +7445,11 @@ var i$ = function(e) {
                     onShippingMethodSelected: s,
                     onShippingContactSelected: l,
                     onValidateMerchant: o || this.validateMerchant,
-                    onPaymentAuthorized: function(n, r, o) {
+                    onPaymentAuthorized: function(n, a, o) {
                         var i;
                         null != o && null != (i = o.payment) && null != (i = i.token) && i.paymentData && t.setState({
                             applePayToken: btoa(j()(o.payment.token.paymentData))
-                        }), (0, ey.A)((0, es.A)(a.prototype), "submit", t).call(t), e(n, r, o)
+                        }), (0, ey.A)((0, es.A)(r.prototype), "submit", t).call(t), e(n, a, o)
                     }
                 });
             return new(B())(function(e, n) {
@@ -7462,7 +7462,7 @@ var i$ = function(e) {
         }
     }, {
         key: "validateMerchant",
-        value: (n = (0, o.A)(s().mark(function e(t, n) {
+        value: (t = (0, o.A)(s().mark(function e(t, n) {
             var r, a, o, i, l, c, u, d, p, h, f, m, y;
             return s().wrap(function(e) {
                 for (;;) switch (e.prev = e.next) {
@@ -7475,7 +7475,7 @@ var i$ = function(e) {
                             domainName: a,
                             initiative: u,
                             merchantIdentifier: p
-                        }, e.prev = 6, e.next = 9, a3(h, f);
+                        }, e.prev = 6, e.next = 9, a6(h, f);
                     case 9:
                         m = e.sent, (y = nO.decode(m.data)) || n("Could not decode Apple Pay session"), t(JSON.parse(y)), e.next = 19;
                         break;
@@ -7488,8 +7488,8 @@ var i$ = function(e) {
             }, e, this, [
                 [6, 16]
             ])
-        })), function(e, t) {
-            return n.apply(this, arguments)
+        })), function(e, n) {
+            return t.apply(this, arguments)
         })
     }, {
         key: "isValid",
@@ -7521,7 +7521,7 @@ var i$ = function(e) {
                 }
             }) : null
         }
-    }]), a
+    }]), r
 }();
 
 function iY(e, t) {
@@ -7618,9 +7618,9 @@ function i1(e) {
     }
     return e
 }
-var i2 = function(e) {
-    (0, eo.A)(r, iu);
-    var t, n = (t = function() {
+var i2 = function() {
+    (0, eo.A)(n, iu);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -7629,21 +7629,21 @@ var i2 = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
-            return i1(i1({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, i1(i1({}, e), {
+            return i1(i1({}, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, i1(i1({}, e), {
                 visibility: {
                     deliveryAddress: "hidden",
                     companyDetails: "hidden"
@@ -7655,7 +7655,7 @@ var i2 = function(e) {
                 billingAddressSpecification: iX
             })
         }
-    }]), r
+    }]), n
 }();
 
 function i4(e) {
@@ -7688,7 +7688,7 @@ var i8 = function(e) {
         r = e.selectedIssuerId,
         a = e.onChange,
         o = nc().i18n,
-        i = t3(function(e) {
+        i = t6(function(e) {
             var t = e.currentTarget.value;
             b()(e.target, "value", {
                 value: t
@@ -7708,7 +7708,7 @@ var i8 = function(e) {
     }))
 };
 
-function i3(e) {
+function i6(e) {
     var t, n = e.label,
         r = e.classNames,
         a = nc().i18n;
@@ -7716,7 +7716,7 @@ function i3(e) {
         className: ep().apply(void 0, M()(t = ["adyen-checkout__content-separator"]).call(t, (0, H.A)(void 0 === r ? [] : r)))
     }, a.get(void 0 === n ? "qrCodeOrApp" : n))
 }
-var i6 = function(e) {
+var i3 = function(e) {
     var t, n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     try {
         t = new(e9())(e)
@@ -7731,7 +7731,7 @@ function i5(e) {
         n = e.urls,
         r = "string" == typeof t,
         a = eg()(n).call(n, function(e) {
-            return "string" == typeof e && i6(e)
+            return "string" == typeof e && i3(e)
         });
     return r && a ? (0, el.h)("span", {
         className: "adyen-checkout-disclaimer__label"
@@ -7807,14 +7807,14 @@ function sa(e) {
         R = (0, K.A)(P, 2),
         F = R[0],
         O = R[1],
-        I = t6(o$),
+        I = t3(o$),
         T = I.setSRMessagesFromObjects,
         B = I.shouldMoveFocusSR,
         D = null == T ? void 0 : T({});
     this.setStatus = function(e) {
         x(e)
     };
-    var L = t3(function(e) {
+    var L = t6(function(e) {
         return function(t) {
             O(e), d("issuer")(t)
         }
@@ -7855,7 +7855,7 @@ function sa(e) {
         selectedIssuerId: F === sr.ButtonGroup ? f.issuer : null,
         items: V,
         onChange: L(sr.ButtonGroup)
-    }), (0, el.h)(i3, null)), (0, el.h)(rA, {
+    }), (0, el.h)(i6, null)), (0, el.h)(rA, {
         errorMessage: (t = g.issuer) && t.errorMessage ? c.get(t.errorMessage) : !!t,
         classNameModifiers: ["issuer-list"],
         name: "issuer"
@@ -7983,9 +7983,9 @@ function sp(e) {
     }
     return e
 }
-var sh = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var sh = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -7994,31 +7994,31 @@ var sh = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r(e) {
-        var t;
-        if ((0, k.A)(this, r), (t = n.call(this, e)).props.showImage) {
+    function n(e) {
+        var r;
+        if ((0, k.A)(this, n), (r = t.call(this, e)).props.showImage) {
             var a, o = si({
-                loadingContext: t.props.loadingContext
-            }, t.constructor.type, function(e) {
-                return t.resources.getImage(e)
+                loadingContext: r.props.loadingContext
+            }, r.constructor.type, function(e) {
+                return r.resources.getImage(e)
             });
-            t.props.issuers = J()(a = t.props.issuers).call(a, function(e) {
+            r.props.issuers = J()(a = r.props.issuers).call(a, function(e) {
                 return sp(sp({}, e), {}, {
                     icon: o(e.id)
                 })
             })
         }
-        return t
+        return r
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
             var t, n = e.details && e.details.length && (L()(t = e.details).call(t, function(e) {
@@ -8088,7 +8088,7 @@ var sh = function(e) {
                 }
             })))
         }
-    }]), r
+    }]), n
 }();
 
 function sf(e, t) {
@@ -8121,9 +8121,9 @@ function sm(e) {
     showPaymentMethodItemImages: !1,
     showPayButton: !0
 });
-var sy = function(e) {
-    (0, eo.A)(r, sh);
-    var t, n = (t = function() {
+var sy = function() {
+    (0, eo.A)(n, sh);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -8132,25 +8132,25 @@ var sy = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
-            return sm(sm({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e)), {}, {
+            return sm(sm({}, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e)), {}, {
                 showImage: !1
             })
         }
-    }]), r
+    }]), n
 }();
 
 function sv(e, t) {
@@ -8175,9 +8175,9 @@ function sg(e) {
     }
     return e
 }(0, w.A)(sy, "type", "billdesk_online");
-var sb = function(e) {
-    (0, eo.A)(r, sh);
-    var t, n = (t = function() {
+var sb = function() {
+    (0, eo.A)(n, sh);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -8186,26 +8186,26 @@ var sb = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
-            return sg(sg({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e)), {}, {
+            return sg(sg({}, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e)), {}, {
                 showImage: !1,
                 placeholder: "issuerList.wallet.placeholder"
             })
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(sb, "type", "billdesk_wallet");
 var sA, s_, sk, sC, sw, sS = function(e, t) {
@@ -8688,9 +8688,9 @@ function s0(e) {
     }
     return e
 }
-var s1 = function(e) {
-    (0, eo.A)(r, sq);
-    var t, n = (t = function() {
+var s1 = function() {
+    (0, eo.A)(n, sq);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -8699,16 +8699,16 @@ var s1 = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r(e, t) {
-        (0, k.A)(this, r), a = n.call(this);
+    function n(e, r) {
+        (0, k.A)(this, n), a = t.call(this);
         var a, o = ["fieldType", "iframeSrc", "cvcPolicy", "expiryDatePolicy", "loadingContext", "holderEl"],
             i = s$(o).from(e);
         a.sfConfig = s0(s0(s0({}, a.sfConfig), i), {}, {
@@ -8719,9 +8719,9 @@ var s1 = function(e) {
             if (!window.crypto) return 0x100000000 * Math.random() | 0;
             var e = new Uint32Array(1);
             return window.crypto.getRandomValues(e), e[0]
-        }(), a.isEncrypted = !1, a.hasError = !1, a.errorType = "", (0, ei.A)(a, a.init(t))
+        }(), a.isEncrypted = !1, a.hasError = !1, a.errorType = "", (0, ei.A)(a, a.init(r))
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "init",
         value: function(e) {
             var t, n, r, a, o, i, s, l, c, u, d, p, h, f, m, y, v, g, b, A, _, k, C, S, N, x = (t = this.sfConfig, n = this.fieldType, i = E()(r = ["ach", "giftcard"]).call(r, t.txVariant) ? t.txVariant : "creditCard", s = e.get(M()(a = "".concat(i, ".")).call(a, n, ".aria.iframeTitle")), l = e.get(M()(o = "".concat(i, ".")).call(o, n, ".aria.label")), c = e.locale, u = oW({
@@ -8973,11 +8973,11 @@ var s1 = function(e) {
         set: function(e) {
             this._postMessageListener = F()(e).call(e, this)
         }
-    }]), r
+    }]), n
 }();
 
 function s2() {
-    this.encryptedAttrName = n3;
+    this.encryptedAttrName = n6;
     var e = oY(this.props.rootNode, "[".concat(this.encryptedAttrName, "]"));
     return this.config.isCreditCardType ? (this.isSingleBrandedCard = !1, this.securityCode = "", this.createCardSecuredFields(e, n2, n2)) : this.createNonCardSecuredFields(e), e.length
 }
@@ -9012,12 +9012,12 @@ function s8() {
     }))).apply(this, arguments)
 }
 
-function s3(e, t, n) {
-    return s6.apply(this, arguments)
+function s6(e, t, n) {
+    return s3.apply(this, arguments)
 }
 
-function s6() {
-    return (s6 = (0, o.A)(s().mark(function e(t, n, r) {
+function s3() {
+    return (s3 = (0, o.A)(s().mark(function e(t, n, r) {
         var a, o, i, l, c, u = this;
         return s().wrap(function(e) {
             for (;;) switch (e.prev = e.next) {
@@ -9062,7 +9062,7 @@ function s5(e, t, n) {
         i === nU && (r.state.hasSeparateDateFields = !0);
         var s = new s1({
             fieldType: i,
-            extraFieldData: oZ(e, n6),
+            extraFieldData: oZ(e, n3),
             uid: oZ(e, n5),
             cvcPolicy: t,
             holderEl: e,
@@ -9598,9 +9598,9 @@ function lC() {
 var lw = function() {
         sR("".concat(arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "You cannot use secured fields", " - they are not yet configured. Use the 'onConfigSuccess' callback to know when this has happened."))
     },
-    lS = function(e) {
-        (0, eo.A)(r, sN);
-        var t, n = (t = function() {
+    lS = function() {
+        (0, eo.A)(n, sN);
+        var e, t = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -9609,19 +9609,19 @@ var lw = function() {
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(r);
-            if (t) {
+            var t, r = (0, es.A)(n);
+            if (e) {
                 var a = (0, es.A)(this).constructor;
-                e = en()(n, arguments, a)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(r, arguments, a)
+            } else t = r.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function r(e) {
-            (0, k.A)(this, r), (t = n.call(this, e)).state = {
-                type: t.props.type,
-                brand: "card" !== t.props.type ? {
-                    brand: t.props.type,
+        function n(e) {
+            (0, k.A)(this, n), (r = t.call(this, e)).state = {
+                type: r.props.type,
+                brand: "card" !== r.props.type ? {
+                    brand: r.props.type,
                     cvcPolicy: "required"
                 } : {
                     brand: null,
@@ -9639,15 +9639,15 @@ var lw = function() {
                 securedFields: {},
                 isKCP: !1
             };
-            var t, a = {
-                csfState: t.state,
-                csfConfig: t.config,
-                csfProps: t.props,
-                csfCallbacks: t.callbacks
+            var r, a = {
+                csfState: r.state,
+                csfConfig: r.config,
+                csfProps: r.props,
+                csfCallbacks: r.callbacks
             };
-            return t.configHandler = sF, t.callbacksHandler = sE, t.validateForm = ii(l_, a), t.isConfigured = ii(lA, a, t.validateForm), t.handleIframeConfigFeedback = ii(lb, a, t.isConfigured), t.processBrand = ii(lf, a), t.handleValidation = sT, t.handleEncryption = sL, t.createSecuredFields = s2, t.createNonCardSecuredFields = s4, t.createCardSecuredFields = s3, t.setupSecuredField = s5, t.postMessageToAllIframes = ii(lh, a), t.setFocusOnFrame = ii(lp, a), t.handleFocus = ii(lg, a), t.handleIOSTouchEvents = lt, t.touchendListener = F()(s7).call(s7, (0, ea.A)(t)), t.destroyTouchendListener = ln, t.touchstartListener = F()(le).call(le, (0, ea.A)(t)), t.destroyTouchstartListener = lr, t.handleSFShiftTab = li, t.handleShiftTab = lo, t.destroySecuredFields = lC, t.processAutoComplete = ii(ly, a), t.handleBinValue = ii(lk, a), t.handleBrandFromBinLookup = ld, t.sendBrandToCardSF = lc, t.sendExpiryDatePolicyToSF = lu, t.init(), t
+            return r.configHandler = sF, r.callbacksHandler = sE, r.validateForm = ii(l_, a), r.isConfigured = ii(lA, a, r.validateForm), r.handleIframeConfigFeedback = ii(lb, a, r.isConfigured), r.processBrand = ii(lf, a), r.handleValidation = sT, r.handleEncryption = sL, r.createSecuredFields = s2, r.createNonCardSecuredFields = s4, r.createCardSecuredFields = s6, r.setupSecuredField = s5, r.postMessageToAllIframes = ii(lh, a), r.setFocusOnFrame = ii(lp, a), r.handleFocus = ii(lg, a), r.handleIOSTouchEvents = lt, r.touchendListener = F()(s7).call(s7, (0, ea.A)(r)), r.destroyTouchendListener = ln, r.touchstartListener = F()(le).call(le, (0, ea.A)(r)), r.destroyTouchstartListener = lr, r.handleSFShiftTab = li, r.handleShiftTab = lo, r.destroySecuredFields = lC, r.processAutoComplete = ii(ly, a), r.handleBinValue = ii(lk, a), r.handleBrandFromBinLookup = ld, r.sendBrandToCardSF = lc, r.sendExpiryDatePolicyToSF = lu, r.init(), r
         }
-        return (0, C.A)(r, [{
+        return (0, C.A)(n, [{
             key: "init",
             value: function() {
                 this.configHandler(this.props), this.callbacksHandler(this.props.callbacks);
@@ -9715,7 +9715,7 @@ var lw = function() {
                     }
                 }
             }
-        }]), r
+        }]), n
     }();
 
 function lN(e, t) {
@@ -9925,9 +9925,9 @@ function lK(e) {
     }
     return e
 }
-var lH = function(e) {
-    (0, eo.A)(r, el.uA);
-    var t, n = (t = function() {
+var lH = function() {
+    (0, eo.A)(n, el.uA);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -9936,17 +9936,17 @@ var lH = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r(e) {
-        var t, a, o, i, s, l, c;
-        return (0, k.A)(this, r), c = n.call(this, e), (0, w.A)((0, ea.A)(c), "csfLoadFailTimeout", void 0), (0, w.A)((0, ea.A)(c), "csfLoadFailTimeoutMS", void 0), (0, w.A)((0, ea.A)(c), "csfConfigFailTimeout", void 0), (0, w.A)((0, ea.A)(c), "csfConfigFailTimeoutMS", void 0), (0, w.A)((0, ea.A)(c), "numCharsInField", void 0), (0, w.A)((0, ea.A)(c), "rootNode", void 0), (0, w.A)((0, ea.A)(c), "numDateFields", void 0), (0, w.A)((0, ea.A)(c), "csf", void 0), (0, w.A)((0, ea.A)(c), "handleOnLoad", void 0), (0, w.A)((0, ea.A)(c), "handleOnConfigSuccess", void 0), (0, w.A)((0, ea.A)(c), "handleOnFieldValid", void 0), (0, w.A)((0, ea.A)(c), "handleOnAllValid", void 0), (0, w.A)((0, ea.A)(c), "handleOnBrand", void 0), (0, w.A)((0, ea.A)(c), "handleFocus", void 0), (0, w.A)((0, ea.A)(c), "handleOnError", void 0), (0, w.A)((0, ea.A)(c), "handleOnAutoComplete", void 0), (0, w.A)((0, ea.A)(c), "handleOnNoDataRequired", void 0), (0, w.A)((0, ea.A)(c), "handleOnTouchstartIOS", void 0), (0, w.A)((0, ea.A)(c), "state", void 0), (0, w.A)((0, ea.A)(c), "props", void 0), (0, w.A)((0, ea.A)(c), "issuingCountryCode", void 0), (0, w.A)((0, ea.A)(c), "setRootNode", function(e) {
+    function n(e) {
+        var r, a, o, i, s, l, c;
+        return (0, k.A)(this, n), c = t.call(this, e), (0, w.A)((0, ea.A)(c), "csfLoadFailTimeout", void 0), (0, w.A)((0, ea.A)(c), "csfLoadFailTimeoutMS", void 0), (0, w.A)((0, ea.A)(c), "csfConfigFailTimeout", void 0), (0, w.A)((0, ea.A)(c), "csfConfigFailTimeoutMS", void 0), (0, w.A)((0, ea.A)(c), "numCharsInField", void 0), (0, w.A)((0, ea.A)(c), "rootNode", void 0), (0, w.A)((0, ea.A)(c), "numDateFields", void 0), (0, w.A)((0, ea.A)(c), "csf", void 0), (0, w.A)((0, ea.A)(c), "handleOnLoad", void 0), (0, w.A)((0, ea.A)(c), "handleOnConfigSuccess", void 0), (0, w.A)((0, ea.A)(c), "handleOnFieldValid", void 0), (0, w.A)((0, ea.A)(c), "handleOnAllValid", void 0), (0, w.A)((0, ea.A)(c), "handleOnBrand", void 0), (0, w.A)((0, ea.A)(c), "handleFocus", void 0), (0, w.A)((0, ea.A)(c), "handleOnError", void 0), (0, w.A)((0, ea.A)(c), "handleOnAutoComplete", void 0), (0, w.A)((0, ea.A)(c), "handleOnNoDataRequired", void 0), (0, w.A)((0, ea.A)(c), "handleOnTouchstartIOS", void 0), (0, w.A)((0, ea.A)(c), "state", void 0), (0, w.A)((0, ea.A)(c), "props", void 0), (0, w.A)((0, ea.A)(c), "issuingCountryCode", void 0), (0, w.A)((0, ea.A)(c), "setRootNode", function(e) {
             c.rootNode = e
         }), c.state = {
             status: "loading",
@@ -9958,9 +9958,9 @@ var lH = function(e) {
             expiryDatePolicy: n2,
             isSfpValid: !1,
             hasKoreanFields: e.hasKoreanFields
-        }, c.csfLoadFailTimeout = null, c.csfLoadFailTimeoutMS = 3e4, c.csfConfigFailTimeout = null, c.csfConfigFailTimeoutMS = 15e3, c.numCharsInField = {}, c.handleOnLoad = F()(lB).call(lB, (0, ea.A)(c)), c.handleOnConfigSuccess = F()(lD).call(lD, (0, ea.A)(c)), c.handleOnFieldValid = F()(lT).call(lT, (0, ea.A)(c)), c.handleOnAllValid = F()(lI).call(lI, (0, ea.A)(c)), c.handleOnBrand = F()(lL).call(lL, (0, ea.A)(c)), c.handleFocus = F()(lE).call(lE, (0, ea.A)(c)), c.handleOnError = F()(lV).call(lV, (0, ea.A)(c)), c.handleOnNoDataRequired = F()(lj).call(lj, (0, ea.A)(c)), c.handleOnAutoComplete = F()(lM).call(lM, (0, ea.A)(c)), c.handleOnTouchstartIOS = F()(lU).call(lU, (0, ea.A)(c)), c.processBinLookupResponse = F()(t = c.processBinLookupResponse).call(t, (0, ea.A)(c)), c.setFocusOn = F()(a = c.setFocusOn).call(a, (0, ea.A)(c)), c.updateStyles = F()(o = c.updateStyles).call(o, (0, ea.A)(c)), c.handleUnsupportedCard = F()(i = c.handleUnsupportedCard).call(i, (0, ea.A)(c)), c.showValidation = F()(s = c.showValidation).call(s, (0, ea.A)(c)), c.destroy = F()(l = c.destroy).call(l, (0, ea.A)(c)), c
+        }, c.csfLoadFailTimeout = null, c.csfLoadFailTimeoutMS = 3e4, c.csfConfigFailTimeout = null, c.csfConfigFailTimeoutMS = 15e3, c.numCharsInField = {}, c.handleOnLoad = F()(lB).call(lB, (0, ea.A)(c)), c.handleOnConfigSuccess = F()(lD).call(lD, (0, ea.A)(c)), c.handleOnFieldValid = F()(lT).call(lT, (0, ea.A)(c)), c.handleOnAllValid = F()(lI).call(lI, (0, ea.A)(c)), c.handleOnBrand = F()(lL).call(lL, (0, ea.A)(c)), c.handleFocus = F()(lE).call(lE, (0, ea.A)(c)), c.handleOnError = F()(lV).call(lV, (0, ea.A)(c)), c.handleOnNoDataRequired = F()(lj).call(lj, (0, ea.A)(c)), c.handleOnAutoComplete = F()(lM).call(lM, (0, ea.A)(c)), c.handleOnTouchstartIOS = F()(lU).call(lU, (0, ea.A)(c)), c.processBinLookupResponse = F()(r = c.processBinLookupResponse).call(r, (0, ea.A)(c)), c.setFocusOn = F()(a = c.setFocusOn).call(a, (0, ea.A)(c)), c.updateStyles = F()(o = c.updateStyles).call(o, (0, ea.A)(c)), c.handleUnsupportedCard = F()(i = c.handleUnsupportedCard).call(i, (0, ea.A)(c)), c.showValidation = F()(s = c.showValidation).call(s, (0, ea.A)(c)), c.destroy = F()(l = c.destroy).call(l, (0, ea.A)(c)), c
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "componentDidMount",
         value: function() {
             var e, t, n = this;
@@ -10162,7 +10162,7 @@ var lH = function(e) {
                 setFocusOn: this.setFocusOn
             }, t)
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(lH, "defaultProps", {
     type: "card",
@@ -10376,15 +10376,15 @@ function l2(e, t, n) {
 }
 var l4 = "holderName",
     l8 = "socialSecurityNumber",
-    l3 = [nL, nV, nq],
-    l6 = [l4, nL, nV, nq],
+    l6 = [nL, nV, nq],
+    l3 = [l4, nL, nV, nq],
     l5 = [nL, nV, nq, l4],
     l9 = ["taxNumber", nK],
-    l7 = M()(l3).call(l3, l9),
-    ce = M()(l6).call(l6, l9),
+    l7 = M()(l6).call(l6, l9),
+    ce = M()(l3).call(l3, l9),
     ct = M()(l5).call(l5, l9),
-    cn = M()(l3).call(l3, [l8]),
-    cr = M()(l6).call(l6, [l8]),
+    cn = M()(l6).call(l6, [l8]),
+    cr = M()(l3).call(l3, [l8]),
     ca = M()(l5).call(l5, [l8]),
     co = function(e, t) {
         return t({
@@ -10526,7 +10526,7 @@ var cu = {
 };
 
 function cd(e) {
-    var t, n = ((0, w.A)(t = {}, n3, e.encryptedFieldType), (0, w.A)(t, n6, e["data-info"]), (0, w.A)(t, n5, e.uniqueId), (0, w.A)(t, "className", e.className), t);
+    var t, n = ((0, w.A)(t = {}, n6, e.encryptedFieldType), (0, w.A)(t, n3, e["data-info"]), (0, w.A)(t, n5, e.uniqueId), (0, w.A)(t, "className", e.className), t);
     return (0, el.h)("span", n, e.children)
 }
 var cp = function(e, t) {
@@ -10717,7 +10717,7 @@ function cv(e) {
     }, b ? (0, el.h)(nT, {
         classNameModifiers: ["revolving-plan"],
         label: ""
-    }, (0, el.h)(r3, {
+    }, (0, el.h)(r6, {
         items: [{
             id: "onetime",
             name: "installments.oneTime"
@@ -11327,7 +11327,7 @@ var cB = function(e) {
     var t, n, r, a, o, i, s = t4(null),
         l = t4(!1),
         u = nB(),
-        d = t6(o$),
+        d = t3(o$),
         p = d.setSRMessagesFromObjects,
         h = d.setSRMessagesFromStrings,
         f = d.clearSRPanel,
@@ -11424,10 +11424,10 @@ var cB = function(e) {
         e2 = (0, K.A)(e1, 2),
         e4 = e2[0],
         e8 = e2[1],
-        e3 = tX(null),
-        e6 = (0, K.A)(e3, 2),
-        e5 = e6[0],
-        e9 = e6[1],
+        e6 = tX(null),
+        e3 = (0, K.A)(e6, 2),
+        e5 = e3[0],
+        e9 = e3[1],
         e7 = rj({
             schema: [],
             defaultData: e.data,
@@ -11460,16 +11460,16 @@ var cB = function(e) {
                     o = void 0 === a ? null : a,
                     i = e.billingAddressRequiredFields,
                     s = void 0 === i ? null : i,
-                    l = l3,
+                    l = l6,
                     c = t.hasHolderName && t.holderNameRequired;
-                if (c && (l = t.positionHolderNameOnTop ? l6 : l5), n && (l = l7, c && (l = t.positionHolderNameOnTop ? ce : ct)), r && (l = cn, c && (l = t.positionHolderNameOnTop ? cr : ca)), o) {
+                if (c && (l = t.positionHolderNameOnTop ? l3 : l5), n && (l = l7, c && (l = t.positionHolderNameOnTop ? ce : ct)), r && (l = cn, c && (l = t.positionHolderNameOnTop ? cr : ca)), o) {
                     var u, d = P()(u = eJ()(o).call(o, 2)).call(u, function(e) {
                             return "number" != typeof e
                         }),
                         p = d;
                     s && (p = P()(d).call(d, function(e) {
                         return E()(s).call(s, e)
-                    })), l = M()(l3).call(l3, p), c && (l = t.positionHolderNameOnTop ? M()(l6).call(l6, p) : M()(l5).call(l5, p))
+                    })), l = M()(l6).call(l6, p), c && (l = t.positionHolderNameOnTop ? M()(l3).call(l3, p) : M()(l5).call(l5, p))
                 }
                 return l
             }(cT({
@@ -11481,7 +11481,7 @@ var cB = function(e) {
                 billingAddressRequiredFields: e.billingAddressRequiredFields
             }))
         },
-        tg = t3(function(e) {
+        tg = t6(function(e) {
             e9("webInternalElement" !== e.fieldType ? e.fieldType : e.name)
         }, []),
         tb = function(e) {
@@ -11492,56 +11492,56 @@ var cB = function(e) {
                 var e, t = e$()(r).call(r, function(e) {
                         return e === nL
                     }),
-                    n = function(e, t) {
-                        var n = void 0 !== eB() && ta()(e) || e["@@iterator"];
-                        if (!n) {
-                            if (ew()(e) || (n = function(e, t) {
+                    n = function(e) {
+                        var t = void 0 !== eB() && ta()(e) || e["@@iterator"];
+                        if (!t) {
+                            if (ew()(e) || (t = function(e) {
                                     if (e) {
                                         if ("string" == typeof e) return cO(e, void 0);
-                                        var n, r = em()(n = Object.prototype.toString.call(e)).call(n, 8, -1);
-                                        if ("Object" === r && e.constructor && (r = e.constructor.name), "Map" === r || "Set" === r) return tn()(e);
-                                        if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return cO(e, void 0)
+                                        var t, n = em()(t = Object.prototype.toString.call(e)).call(t, 8, -1);
+                                        if ("Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n) return tn()(e);
+                                        if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return cO(e, void 0)
                                     }
                                 }(e))) {
-                                n && (e = n);
-                                var r = 0,
-                                    a = function() {};
+                                t && (e = t);
+                                var n = 0,
+                                    r = function() {};
                                 return {
-                                    s: a,
+                                    s: r,
                                     n: function() {
-                                        return r >= e.length ? {
+                                        return n >= e.length ? {
                                             done: !0
                                         } : {
                                             done: !1,
-                                            value: e[r++]
+                                            value: e[n++]
                                         }
                                     },
                                     e: function(e) {
                                         throw e
                                     },
-                                    f: a
+                                    f: r
                                 }
                             }
                             throw TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                         }
-                        var o, i = !0,
-                            s = !1;
+                        var a, o = !0,
+                            i = !1;
                         return {
                             s: function() {
-                                n = n.call(e)
+                                t = t.call(e)
                             },
                             n: function() {
-                                var e = n.next();
-                                return i = e.done, e
+                                var e = t.next();
+                                return o = e.done, e
                             },
                             e: function(e) {
-                                s = !0, o = e
+                                i = !0, a = e
                             },
                             f: function() {
                                 try {
-                                    i || null == n.return || n.return()
+                                    o || null == t.return || t.return()
                                 } finally {
-                                    if (s) throw o
+                                    if (i) throw a
                                 }
                             }
                         }
@@ -11783,7 +11783,7 @@ cB.defaultProps = lW;
 var cL = function(e) {
         var t = null;
         return function(n) {
-            !1 !== e.props.doBinLookup && (n.encryptedBin && e.props.clientKey ? (t = n.uuid, a3({
+            !1 !== e.props.doBinLookup && (n.encryptedBin && e.props.clientKey ? (t = n.uuid, a6({
                 loadingContext: e.props.loadingContext,
                 path: "v3/bin/binLookup?token=".concat(e.props.clientKey)
             }, {
@@ -12070,9 +12070,9 @@ var cK = {
         email: "EMAIL",
         telephoneNumber: "MOBILE_NUMBER"
     },
-    cH = function(e) {
-        (0, eo.A)(l, cj);
-        var t, n, r, a, i = (t = function() {
+    cH = function() {
+        (0, eo.A)(i, cj);
+        var e, t, n, r, a = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -12081,19 +12081,19 @@ var cK = {
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(l);
-            if (t) {
+            var t, n = (0, es.A)(i);
+            if (e) {
                 var r = (0, es.A)(this).constructor;
-                e = en()(n, arguments, r)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(n, arguments, r)
+            } else t = n.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function l(e, t) {
+        function i(e, t) {
             var n, r;
-            return (0, k.A)(this, l), r = i.call(this, E()(n = e.toLowerCase()).call(n, "live") ? "https://assets.secure.checkout.visa.com/checkout-widget/resources/js/src-i-adapter/visa-sdk.js?v2" : "https://sandbox-assets.secure.checkout.visa.com/checkout-widget/resources/js/src-i-adapter/visa-sdk.js?v2", t), (0, w.A)((0, ea.A)(r), "schemeName", "visa"), r
+            return (0, k.A)(this, i), r = a.call(this, E()(n = e.toLowerCase()).call(n, "live") ? "https://assets.secure.checkout.visa.com/checkout-widget/resources/js/src-i-adapter/visa-sdk.js?v2" : "https://sandbox-assets.secure.checkout.visa.com/checkout-widget/resources/js/src-i-adapter/visa-sdk.js?v2", t), (0, w.A)((0, ea.A)(r), "schemeName", "visa"), r
         }
-        return (0, C.A)(l, [{
+        return (0, C.A)(i, [{
             key: "isSdkIsAvailableOnWindow",
             value: function() {
                 var e;
@@ -12106,7 +12106,7 @@ var cK = {
             }
         }, {
             key: "init",
-            value: (a = (0, o.A)(s().mark(function e(t, n) {
+            value: (r = (0, o.A)(s().mark(function e(t, n) {
                 var r;
                 return s().wrap(function(e) {
                     for (var a, o, i, s;;) switch (e.prev = e.next) {
@@ -12131,11 +12131,11 @@ var cK = {
                     }
                 }, e, this)
             })), function(e, t) {
-                return a.apply(this, arguments)
+                return r.apply(this, arguments)
             })
         }, {
             key: "identityLookup",
-            value: (r = (0, o.A)(s().mark(function e(t) {
+            value: (n = (0, o.A)(s().mark(function e(t) {
                 var n, r, a, o;
                 return s().wrap(function(e) {
                     for (;;) switch (e.prev = e.next) {
@@ -12156,11 +12156,11 @@ var cK = {
                     [1, 9]
                 ])
             })), function(e) {
-                return r.apply(this, arguments)
+                return n.apply(this, arguments)
             })
         }, {
             key: "completeIdentityValidation",
-            value: (n = (0, o.A)(s().mark(function e(t) {
+            value: (t = (0, o.A)(s().mark(function e(t) {
                 var n;
                 return s().wrap(function(e) {
                     for (;;) switch (e.prev = e.next) {
@@ -12178,9 +12178,9 @@ var cK = {
                     [0, 7]
                 ])
             })), function(e) {
-                return n.apply(this, arguments)
+                return t.apply(this, arguments)
             })
-        }]), l
+        }]), i
     }();
 
 function cz(e, t) {
@@ -12209,9 +12209,9 @@ var cG = {
         email: "EMAIL_ADDRESS",
         telephoneNumber: "MOBILE_PHONE_NUMBER"
     },
-    c$ = function(e) {
-        (0, eo.A)(l, cj);
-        var t, n, r, a, i = (t = function() {
+    c$ = function() {
+        (0, eo.A)(i, cj);
+        var e, t, n, r, a = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -12220,19 +12220,19 @@ var cG = {
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(l);
-            if (t) {
+            var t, n = (0, es.A)(i);
+            if (e) {
                 var r = (0, es.A)(this).constructor;
-                e = en()(n, arguments, r)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(n, arguments, r)
+            } else t = n.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function l(e, t) {
+        function i(e, t) {
             var n, r;
-            return (0, k.A)(this, l), r = i.call(this, E()(n = e.toLowerCase()).call(n, "live") ? "https://src.mastercard.com/sdk/srcsdk.mastercard.js" : "https://sandbox.src.mastercard.com/sdk/srcsdk.mastercard.js", t), (0, w.A)((0, ea.A)(r), "schemeName", "mc"), r
+            return (0, k.A)(this, i), r = a.call(this, E()(n = e.toLowerCase()).call(n, "live") ? "https://src.mastercard.com/sdk/srcsdk.mastercard.js" : "https://sandbox.src.mastercard.com/sdk/srcsdk.mastercard.js", t), (0, w.A)((0, ea.A)(r), "schemeName", "mc"), r
         }
-        return (0, C.A)(l, [{
+        return (0, C.A)(i, [{
             key: "isSdkIsAvailableOnWindow",
             value: function() {
                 return !!window.SRCSDK_MASTERCARD
@@ -12244,7 +12244,7 @@ var cG = {
             }
         }, {
             key: "init",
-            value: (a = (0, o.A)(s().mark(function e(t, n) {
+            value: (r = (0, o.A)(s().mark(function e(t, n) {
                 var r;
                 return s().wrap(function(e) {
                     for (var a, o, i, s;;) switch (e.prev = e.next) {
@@ -12273,11 +12273,11 @@ var cG = {
                     }
                 }, e, this)
             })), function(e, t) {
-                return a.apply(this, arguments)
+                return r.apply(this, arguments)
             })
         }, {
             key: "identityLookup",
-            value: (r = (0, o.A)(s().mark(function e(t) {
+            value: (n = (0, o.A)(s().mark(function e(t) {
                 var n, r, a, o;
                 return s().wrap(function(e) {
                     for (;;) switch (e.prev = e.next) {
@@ -12300,11 +12300,11 @@ var cG = {
                     [1, 9]
                 ])
             })), function(e) {
-                return r.apply(this, arguments)
+                return n.apply(this, arguments)
             })
         }, {
             key: "completeIdentityValidation",
-            value: (n = (0, o.A)(s().mark(function e(t) {
+            value: (t = (0, o.A)(s().mark(function e(t) {
                 var n;
                 return s().wrap(function(e) {
                     for (;;) switch (e.prev = e.next) {
@@ -12324,9 +12324,9 @@ var cG = {
                     [0, 7]
                 ])
             })), function(e) {
-                return n.apply(this, arguments)
+                return t.apply(this, arguments)
             })
-        }]), l
+        }]), i
     }(),
     cY = function(e) {
         return "fulfilled" === e.status
@@ -12438,10 +12438,10 @@ function c8(e, t) {
     return new Date(t.dateOfCardLastUsed).getTime() - new Date(e.dateOfCardLastUsed).getTime()
 }
 
-function c3(e, t) {
+function c6(e, t) {
     return t.isExpired ? e.expiredCards.push(t) : e.availableCards.push(t), e
 }
-var c6 = function(e) {
+var c3 = function(e) {
     (0, eo.A)(r, e);
     var t, n = (t = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
@@ -12554,7 +12554,7 @@ var ut = function() {
                         this.setState(c7.NotAvailable), e.next = 37;
                         break;
                     case 32:
-                        e.prev = 32, e.t0 = e.catch(1), e.t0 instanceof cV && console.warn("Error at ClickToPayService # init: ".concat(e.t0.toString())), e.t0 instanceof c6 ? (console.warn(e.t0.toString()), null == (i = this.onTimeout) || i.call(this, e.t0)) : console.warn(e.t0), this.setState(c7.NotAvailable);
+                        e.prev = 32, e.t0 = e.catch(1), e.t0 instanceof cV && console.warn("Error at ClickToPayService # init: ".concat(e.t0.toString())), e.t0 instanceof c3 ? (console.warn(e.t0.toString()), null == (i = this.onTimeout) || i.call(this, e.t0)) : console.warn(e.t0), this.setState(c7.NotAvailable);
                     case 37:
                     case "end":
                         return e.stop()
@@ -12725,7 +12725,7 @@ var ut = function() {
                                         identityValue: n,
                                         type: "email"
                                     })
-                                }, 5e3, new c6("ClickToPayService - Timeout during identityLookup() of the scheme '".concat(a.schemeName, "'")));
+                                }, 5e3, new c3("ClickToPayService - Timeout during identityLookup() of the scheme '".concat(a.schemeName, "'")));
                                 return o.then(function(t) {
                                     t.consumerPresent && !r.validationSchemeSdk && (r.setSdkForPerformingShopperIdentityValidation(a), e({
                                         isEnrolled: !0
@@ -12779,7 +12779,7 @@ var ut = function() {
                                 })).call(a, function(e) {
                                     return !!e
                                 });
-                                l = (s = $()(o = $()(u).call(u, c4, [])).call(o, c3, {
+                                l = (s = $()(o = $()(u).call(u, c4, [])).call(o, c6, {
                                     availableCards: [],
                                     expiredCards: []
                                 })).availableCards, c = s.expiredCards, n.shopperCards = M()(i = []).call(i, (0, H.A)(e2()(l).call(l, c8)), (0, H.A)(e2()(c).call(c, c8))), e()
@@ -12804,7 +12804,7 @@ var ut = function() {
                             var r, a = J()(r = t.sdks).call(r, function(t) {
                                 var r = ue(function() {
                                     return t.isRecognized()
-                                }, 5e3, new c6("ClickToPayService - Timeout during isRecognized() of the scheme '".concat(t.schemeName, "'")));
+                                }, 5e3, new c3("ClickToPayService - Timeout during isRecognized() of the scheme '".concat(t.schemeName, "'")));
                                 return r.then(function(t) {
                                     return t.recognized && e(t)
                                 }).catch(function(e) {
@@ -12836,7 +12836,7 @@ var ut = function() {
                             var t = r.schemesConfig[e.schemeName];
                             return ue(function() {
                                 return e.init(t, r.srciTransactionId)
-                            }, 5e3, new c6("ClickToPayService - Timeout during init() of the scheme '".concat(e.schemeName, "'")))
+                            }, 5e3, new c3("ClickToPayService - Timeout during init() of the scheme '".concat(e.schemeName, "'")))
                         }), e.next = 3, B().all(n);
                     case 3:
                     case "end":
@@ -12962,11 +12962,11 @@ var uo = function(e, t) {
                 return k(e)
             })
         }, [g]);
-        var I = t3(function() {
+        var I = t6(function() {
                 var e;
                 E.current || (null == (e = d.onReady) || e.call(d), E.current = !0)
             }, [d.onReady]),
-            M = t3((t = (0, o.A)(s().mark(function e(t) {
+            M = t6((t = (0, o.A)(s().mark(function e(t) {
                 return s().wrap(function(e) {
                     for (;;) switch (e.prev = e.next) {
                         case 0:
@@ -12979,7 +12979,7 @@ var uo = function(e, t) {
             })), function(e) {
                 return t.apply(this, arguments)
             }), [g]),
-            T = t3((0, o.A)(s().mark(function e() {
+            T = t6((0, o.A)(s().mark(function e() {
                 var t;
                 return s().wrap(function(e) {
                     for (;;) switch (e.prev = e.next) {
@@ -12993,7 +12993,7 @@ var uo = function(e, t) {
                     }
                 }, e)
             })), [g]),
-            B = t3((n = (0, o.A)(s().mark(function e(t) {
+            B = t6((n = (0, o.A)(s().mark(function e(t) {
                 return s().wrap(function(e) {
                     for (;;) switch (e.prev = e.next) {
                         case 0:
@@ -13008,7 +13008,7 @@ var uo = function(e, t) {
             })), function(e) {
                 return n.apply(this, arguments)
             }), [g]),
-            D = t3((r = (0, o.A)(s().mark(function e(t) {
+            D = t6((r = (0, o.A)(s().mark(function e(t) {
                 return s().wrap(function(e) {
                     for (;;) switch (e.prev = e.next) {
                         case 0:
@@ -13023,7 +13023,7 @@ var uo = function(e, t) {
             })), function(e) {
                 return r.apply(this, arguments)
             }), [g]),
-            L = t3((0, o.A)(s().mark(function e() {
+            L = t6((0, o.A)(s().mark(function e() {
                 return s().wrap(function(e) {
                     for (;;) switch (e.prev = e.next) {
                         case 0:
@@ -13061,7 +13061,7 @@ var uo = function(e, t) {
     };
 
 function uc() {
-    return t6(us)
+    return t3(us)
 }
 var uu = {
         otp: {
@@ -13110,7 +13110,7 @@ var uu = {
                     return clearTimeout(e)
                 }
         }, [h]);
-        var v = t3((t = (0, o.A)(s().mark(function e(t) {
+        var v = t6((t = (0, o.A)(s().mark(function e(t) {
             return s().wrap(function(e) {
                 for (;;) switch (e.prev = e.next) {
                     case 0:
@@ -13178,7 +13178,7 @@ var uu = {
             _ = (0, K.A)(A, 2),
             k = _[0],
             C = _[1],
-            w = t3(function() {
+            w = t6(function() {
                 C(!0), u()
             }, [u]);
         t1(function() {
@@ -13188,17 +13188,17 @@ var uu = {
         }, [g, n]), t1(function() {
             m.current.validateInput = w, e.onSetInputHandlers(m.current)
         }, [w, e.onSetInputHandlers]);
-        var S = t3(function() {
+        var S = t6(function() {
                 f("otp", ""), i(null), n || g.focus(), e.onResendCode()
             }, [e.onResendCode, g, n]),
-            N = t3(function(e) {
+            N = t6(function(e) {
                 var n = t.get("ctp.errors.".concat(e));
                 n && i(n)
             }, [t]),
-            x = t3(function(t) {
+            x = t6(function(t) {
                 "Enter" === t.key && e.onPressEnter()
             }, [e.onPressEnter]),
-            P = t3(function(e) {
+            P = t6(function(e) {
                 "Enter" === e.key && e.preventDefault()
             }, []);
         return t1(function() {
@@ -13289,10 +13289,10 @@ var uu = {
                     }
             }
         }, [n, r, o]);
-        var y = t3(function() {
+        var y = t6(function() {
                 f.focus(), m()
             }, [m, f]),
-            v = t3(function(e) {
+            v = t6(function(e) {
                 p && e.target instanceof HTMLElement && !u.contains(e.target) && y()
             }, [y, p, u]);
         return t1(function() {
@@ -13413,10 +13413,10 @@ var ub = function(e) {
             i = nB()({
                 imageFolder: "components/"
             })("info"),
-            s = t3(function() {
+            s = t6(function() {
                 r(!1)
             }, []),
-            l = t3(function() {
+            l = t6(function() {
                 r(!0)
             }, []);
         return (0, el.h)(el.FK, null, (0, el.h)("button", {
@@ -13514,18 +13514,18 @@ var uC = function(e) {
             O = (0, K.A)(F, 2),
             E = O[0],
             I = O[1],
-            M = t3(function(e) {
+            M = t6(function(e) {
                 R(e)
             }, []),
-            T = t3(function(e) {
+            T = t6(function(e) {
                 var t = e.data,
                     n = e.isValid;
                 h(t.otp), v(n)
             }, []),
-            B = t3(function() {
+            B = t6(function() {
                 S(null)
             }, []),
-            D = t3((0, o.A)(s().mark(function e() {
+            D = t6((0, o.A)(s().mark(function e() {
                 return s().wrap(function(e) {
                     for (;;) switch (e.prev = e.next) {
                         case 0:
@@ -13682,7 +13682,7 @@ var uR = function(e) {
         t1(function() {
             (0 === l.length || C) && (null == t || t())
         }, [t, C, l]);
-        var P = t3((0, o.A)(s().mark(function e() {
+        var P = t6((0, o.A)(s().mark(function e() {
                 var t, n;
                 return s().wrap(function(e) {
                     for (;;) switch (e.prev = e.next) {
@@ -13707,7 +13707,7 @@ var uR = function(e) {
                     [2, 12]
                 ])
             })), [c, v]),
-            R = t3(function(e) {
+            R = t6(function(e) {
                 g(e)
             }, []),
             F = N && "loading" === d && (null == v ? void 0 : v.isDcfPopupEmbedded);
@@ -13793,7 +13793,7 @@ var uR = function(e) {
             d = (0, K.A)(u, 2),
             p = d[0],
             h = d[1],
-            f = t3(function() {
+            f = t6(function() {
                 h(!0), o()
             }, [o]);
         t1(function() {
@@ -13801,10 +13801,10 @@ var uR = function(e) {
         }, [a.shopperLogin]), t1(function() {
             c.current.validateInput = f, e.onSetInputHandlers(c.current)
         }, [f, e.onSetInputHandlers]);
-        var m = t3(function(t) {
+        var m = t6(function(t) {
                 "Enter" === t.key && e.onPressEnter()
             }, [e.onPressEnter]),
-            y = t3(function(e) {
+            y = t6(function(e) {
                 "Enter" === e.key && e.preventDefault()
             }, []);
         return t1(function() {
@@ -13858,15 +13858,15 @@ var uR = function(e) {
             S = (0, K.A)(w, 2),
             N = S[0],
             x = S[1],
-            P = t3(function(e) {
+            P = t6(function(e) {
                 x(e)
             }, []),
-            R = t3(function(e) {
+            R = t6(function(e) {
                 var t, n = e.data,
                     a = e.isValid;
                 d(n.shopperLogin), m(a), (null == n || null == (t = n.shopperLogin) ? void 0 : t.length) > 0 && r(!0)
             }, []),
-            F = t3((0, o.A)(s().mark(function e() {
+            F = t6((0, o.A)(s().mark(function e() {
                 return s().wrap(function(e) {
                     for (;;) switch (e.prev = e.next) {
                         case 0:
@@ -13894,7 +13894,7 @@ var uR = function(e) {
                             e.next = 25;
                             break;
                         case 19:
-                            e.prev = 19, e.t0 = e.catch(5), e.t0 instanceof cV && console.warn("CtP - Login error: ".concat(e.t0.toString())), e.t0 instanceof c6 && console.warn(e.t0.toString()), b(null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.reason), C(!1);
+                            e.prev = 19, e.t0 = e.catch(5), e.t0 instanceof cV && console.warn("CtP - Login error: ".concat(e.t0.toString())), e.t0 instanceof c3 && console.warn(e.t0.toString()), b(null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.reason), C(!1);
                         case 25:
                         case "end":
                             return e.stop()
@@ -13979,12 +13979,12 @@ var uR = function(e) {
                 l === c7.NotAvailable && (i(!0), u(!1))
             }
         }, [l, p]);
-        var h = t3(function() {
+        var h = t6(function() {
             i(!0), u(!1)
         }, []);
         return l === c7.NotAvailable ? t() : l === c7.Loading || l === c7.ShopperIdentified ? (0, el.h)(uM, null) : (0, el.h)(el.FK, null, (0, el.h)(uM, {
             onDisplayCardComponent: h
-        }), (0, el.h)(i3, {
+        }), (0, el.h)(i6, {
             classNames: ["adyen-checkout-ctp__separator"],
             label: n.get("ctp.separatorText")
         }), o ? t(!c) : (0, el.h)(nu, {
@@ -14039,9 +14039,9 @@ function uV(e) {
     }
     return e
 }
-var uj = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var uj = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -14050,32 +14050,32 @@ var uj = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r(e) {
-        var t, a;
-        return (0, k.A)(this, r), t = n.call(this, e), (0, w.A)((0, ea.A)(t), "clickToPayService", void 0), (0, w.A)((0, ea.A)(t), "clickToPayRef", null), (0, w.A)((0, ea.A)(t), "setClickToPayRef", function(e) {
-            t.clickToPayRef = e
-        }), (0, w.A)((0, ea.A)(t), "onBrand", function(e) {
-            t.eventEmitter.emit("brand", uV(uV({}, e), {}, {
+    function n(e) {
+        var r, a;
+        return (0, k.A)(this, n), r = t.call(this, e), (0, w.A)((0, ea.A)(r), "clickToPayService", void 0), (0, w.A)((0, ea.A)(r), "clickToPayRef", null), (0, w.A)((0, ea.A)(r), "setClickToPayRef", function(e) {
+            r.clickToPayRef = e
+        }), (0, w.A)((0, ea.A)(r), "onBrand", function(e) {
+            r.eventEmitter.emit("brand", uV(uV({}, e), {}, {
                 brand: "card" === e.brand ? null : e.brand
-            })), t.props.onBrand && t.props.onBrand(e)
-        }), (0, w.A)((0, ea.A)(t), "handleClickToPaySubmit", function(e) {
-            t.setState({
+            })), r.props.onBrand && r.props.onBrand(e)
+        }), (0, w.A)((0, ea.A)(r), "handleClickToPaySubmit", function(e) {
+            r.setState({
                 data: uV({}, e),
                 valid: {},
                 errors: {},
                 isValid: !0
-            }), t.submit()
-        }), (0, w.A)((0, ea.A)(t), "onBinValue", cL((0, ea.A)(t))), e._disableClickToPay || (t.clickToPayService = ua(t.props.configuration, t.props.clickToPayConfiguration, t.props.environment), null == (a = t.clickToPayService) || a.initialize()), t
+            }), r.submit()
+        }), (0, w.A)((0, ea.A)(r), "onBinValue", cL((0, ea.A)(r))), e._disableClickToPay || (r.clickToPayService = ua(r.props.configuration, r.props.clickToPayConfiguration, r.props.environment), null == (a = r.clickToPayService) || a.initialize()), r
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "setStatus",
         value: function(e, t) {
             var n, r;
@@ -14110,10 +14110,10 @@ var uj = function(e) {
         key: "formatData",
         value: function() {
             var e, t = this.state.selectedBrandValue || this.props.brand,
-                n = this.props.enableStoreDetails && void 0 !== this.state.storePaymentMethod;
+                r = this.props.enableStoreDetails && void 0 !== this.state.storePaymentMethod;
             return uV(uV(uV(uV(uV({
                 paymentMethod: uV(uV(uV(uV({
-                    type: r.type
+                    type: n.type
                 }, this.state.data), this.props.storedPaymentMethodId && {
                     storedPaymentMethodId: this.props.storedPaymentMethodId
                 }), t && {
@@ -14125,7 +14125,7 @@ var uj = function(e) {
                 billingAddress: this.state.billingAddress
             }), this.state.socialSecurityNumber && {
                 socialSecurityNumber: this.state.socialSecurityNumber
-            }), n && {
+            }), r && {
                 storePaymentMethod: !!this.state.storePaymentMethod
             }), ("revolving" === (null == (e = this.state.installments) ? void 0 : e.plan) || (null == e ? void 0 : e.value) > 1) && {
                 installments: this.state.installments
@@ -14200,12 +14200,12 @@ var uj = function(e) {
     }, {
         key: "displayName",
         get: function() {
-            return this.props.storedPaymentMethodId ? "•••• ".concat(this.props.lastFour) : this.props.name || r.type
+            return this.props.storedPaymentMethodId ? "•••• ".concat(this.props.lastFour) : this.props.name || n.type
         }
     }, {
         key: "accessibleName",
         get: function() {
-            return (this.props.name || r.type) + (this.props.storedPaymentMethodId ? " " + this.props.i18n.get("creditCard.storedCard.description.ariaLabel").replace("%@", this.props.lastFour) : "")
+            return (this.props.name || n.type) + (this.props.storedPaymentMethodId ? " " + this.props.i18n.get("creditCard.storedCard.description.ariaLabel").replace("%@", this.props.lastFour) : "")
         }
     }, {
         key: "browserInfo",
@@ -14253,7 +14253,7 @@ var uj = function(e) {
                 return e.renderCardInput(t)
             })))
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(uj, "type", "scheme"), (0, w.A)(uj, "defaultProps", {
     onBinLookup: function() {},
@@ -14304,7 +14304,7 @@ function uH(e) {
         v = y[0],
         g = y[1];
     this.setStatus = h;
-    var b = t3((0, o.A)(s().mark(function e() {
+    var b = t6((0, o.A)(s().mark(function e() {
         return s().wrap(function(e) {
             for (;;) switch (e.prev = e.next) {
                 case 0:
@@ -14605,9 +14605,9 @@ function uQ(e) {
     }
     return e
 }
-var uZ = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var uZ = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -14616,35 +14616,35 @@ var uZ = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r(e) {
-        var t, a, o, i, s;
-        return (0, k.A)(this, r), s = n.call(this, e), (0, w.A)((0, ea.A)(s), "cashAppService", void 0), (0, w.A)((0, ea.A)(s), "submit", function() {
+    function n(e) {
+        var r, a, o, i, s;
+        return (0, k.A)(this, n), s = t.call(this, e), (0, w.A)((0, ea.A)(s), "cashAppService", void 0), (0, w.A)((0, ea.A)(s), "submit", function() {
             var e = s.props,
                 t = e.onClick;
-            if (e.storedPaymentMethodId)(0, ey.A)((o = (0, ea.A)(s), (0, es.A)(r.prototype)), "submit", o).call(o);
+            if (e.storedPaymentMethodId)(0, ey.A)((o = (0, ea.A)(s), (0, es.A)(n.prototype)), "submit", o).call(o);
             else {
-                var n = !1;
+                var r = !1;
                 new(B())(function(e, n) {
                     return t({
                         resolve: e,
                         reject: n
                     })
                 }).catch(function() {
-                    throw n = !0, Error("onClick rejected")
+                    throw r = !0, Error("onClick rejected")
                 }).then(function() {
                     return s.cashAppService.createCustomerRequest()
                 }).then(function() {
                     s.cashAppService.begin()
                 }).catch(function(e) {
-                    n || s.handleError(e)
+                    r || s.handleError(e)
                 })
             }
         }), (0, w.A)((0, ea.A)(s), "handleOnChangeStoreDetails", function(e) {
@@ -14661,20 +14661,20 @@ var uZ = function(e) {
                 valid: {},
                 errors: {},
                 isValid: !0
-            }), (0, ey.A)((i = (0, ea.A)(s), (0, es.A)(r.prototype)), "submit", i).call(i)
+            }), (0, ey.A)((i = (0, ea.A)(s), (0, es.A)(n.prototype)), "submit", i).call(i)
         }), s.props.enableStoreDetails && s.props.storePaymentMethod && console.warn("CashAppPay: enableStoreDetails AND storePaymentMethod configuration properties should not be used together. That can lead to undesired behavior."), s.props.storedPaymentMethodId ? (0, ei.A)(s) : (s.cashAppService = new uG(new u$, {
             storePaymentMethod: s.props.storePaymentMethod,
             useCashAppButtonUi: s.props.showPayButton,
             environment: s.props.environment,
             amount: s.props.amount,
             redirectURL: s.props.redirectURL,
-            clientId: null == (t = s.props.configuration) ? void 0 : t.clientId,
+            clientId: null == (r = s.props.configuration) ? void 0 : r.clientId,
             scopeId: null == (a = s.props.configuration) ? void 0 : a.scopeId,
             button: s.props.button,
             referenceId: s.props.referenceId
         }), s)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
             var t;
@@ -14687,7 +14687,7 @@ var uZ = function(e) {
         value: function() {
             var e = this.state.data || {},
                 t = e.shopperWantsToStore,
-                n = e.grantId,
+                r = e.grantId,
                 a = e.onFileGrantId,
                 o = e.cashTag,
                 i = e.customerId,
@@ -14697,16 +14697,16 @@ var uZ = function(e) {
                 u = this.props.enableStoreDetails || !this.props.session && l;
             if (c) return {
                 paymentMethod: {
-                    type: r.type,
+                    type: n.type,
                     storedPaymentMethodId: c
                 }
             };
             var d = a && o;
             return uQ({
                 paymentMethod: uQ(uQ(uQ({
-                    type: r.type
-                }, n && {
-                    grantId: n
+                    type: n.type
+                }, r && {
+                    grantId: r
                 }), i && {
                     customerId: i
                 }), d && {
@@ -14764,7 +14764,7 @@ var uZ = function(e) {
                 onAuthorize: this.handleAuthorize
             }))
         }
-    }]), r
+    }]), n
 }();
 
 function uJ(e, t) {
@@ -14796,9 +14796,9 @@ function uX(e) {
     enableStoreDetails: !1,
     storePaymentMethod: !1
 });
-var u0 = function(e) {
-    (0, eo.A)(a, n_);
-    var t, n, r = (t = function() {
+var u0 = function() {
+    (0, eo.A)(r, n_);
+    var e, t, n = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -14807,37 +14807,37 @@ var u0 = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(a);
-        if (t) {
-            var r = (0, es.A)(this).constructor;
-            e = en()(n, arguments, r)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+        var t, n = (0, es.A)(r);
+        if (e) {
+            var a = (0, es.A)(this).constructor;
+            t = en()(n, arguments, a)
+        } else t = n.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function a(e) {
-        var t, n;
-        return (0, k.A)(this, a), n = r.call(this, e), (0, w.A)((0, ea.A)(n), "clickToPayService", void 0), (0, w.A)((0, ea.A)(n), "ctpConfiguration", void 0), (0, w.A)((0, ea.A)(n), "handleClickToPaySubmit", function(e) {
-            n.setState({
+    function r(e) {
+        var t, a;
+        return (0, k.A)(this, r), a = n.call(this, e), (0, w.A)((0, ea.A)(a), "clickToPayService", void 0), (0, w.A)((0, ea.A)(a), "ctpConfiguration", void 0), (0, w.A)((0, ea.A)(a), "handleClickToPaySubmit", function(e) {
+            a.setState({
                 data: uX({}, e),
                 valid: {},
                 errors: {},
                 isValid: !0
-            }), n.submit()
-        }), n.ctpConfiguration = {
-            shopperEmail: n.props.shopperEmail,
-            telephoneNumber: n.props.telephoneNumber,
-            merchantDisplayName: n.props.merchantDisplayName,
-            locale: n.props.locale,
-            onReady: n.props.onReady,
-            onTimeout: n.props.onTimeout
-        }, n.clickToPayService = ua(n.props.configuration, n.ctpConfiguration, n.props.environment), null == (t = n.clickToPayService) || t.initialize().catch(function(e) {
-            n.handleError(new nv("ERROR", e.toString(), {
+            }), a.submit()
+        }), a.ctpConfiguration = {
+            shopperEmail: a.props.shopperEmail,
+            telephoneNumber: a.props.telephoneNumber,
+            merchantDisplayName: a.props.merchantDisplayName,
+            locale: a.props.locale,
+            onReady: a.props.onReady,
+            onTimeout: a.props.onTimeout
+        }, a.clickToPayService = ua(a.props.configuration, a.ctpConfiguration, a.props.environment), null == (t = a.clickToPayService) || t.initialize().catch(function(e) {
+            a.handleError(new nv("ERROR", e.toString(), {
                 cause: e
             }))
-        }), n.clickToPayService || console.warn("ClickToPay not initialized - Likely the payment method is not configured or its configuration is missing"), n
+        }), a.clickToPayService || console.warn("ClickToPay not initialized - Likely the payment method is not configured or its configuration is missing"), a
     }
-    return (0, C.A)(a, [{
+    return (0, C.A)(r, [{
         key: "isValid",
         get: function() {
             return !0
@@ -14852,17 +14852,17 @@ var u0 = function(e) {
         value: function() {
             var e, t = this.state.data,
                 n = t.srcScheme,
-                r = t.srcCorrelationId,
+                a = t.srcCorrelationId,
                 o = t.srcTokenReference,
                 i = t.srcCheckoutPayload,
                 s = t.srcDigitalCardId;
             return {
                 paymentMethod: uX(uX(uX(uX(uX({
-                    type: a.type
+                    type: r.type
                 }, n && {
                     srcScheme: n
-                }), r && {
-                    srcCorrelationId: r
+                }), a && {
+                    srcCorrelationId: a
                 }), o && {
                     srcTokenReference: o
                 }), i && {
@@ -14887,7 +14887,7 @@ var u0 = function(e) {
         }
     }, {
         key: "isAvailable",
-        value: (n = (0, o.A)(s().mark(function e() {
+        value: (t = (0, o.A)(s().mark(function e() {
             var t = this;
             return s().wrap(function(e) {
                 for (;;) switch (e.prev = e.next) {
@@ -14915,7 +14915,7 @@ var u0 = function(e) {
                 }
             }, e, this)
         })), function() {
-            return n.apply(this, arguments)
+            return t.apply(this, arguments)
         })
     }, {
         key: "render",
@@ -14935,7 +14935,7 @@ var u0 = function(e) {
                 onError: this.handleError
             }, (0, el.h)(uM, null)))
         }
-    }]), a
+    }]), r
 }();
 
 function u1(e, t) {
@@ -14960,9 +14960,9 @@ function u2(e) {
     }
     return e
 }(0, w.A)(u0, "type", "clicktopay");
-var u4 = function(e) {
-    (0, eo.A)(r, uj);
-    var t, n = (t = function() {
+var u4 = function() {
+    (0, eo.A)(n, uj);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -14971,35 +14971,35 @@ var u4 = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r(e) {
-        var t;
-        return (0, k.A)(this, r), t = n.call(this, e), (0, w.A)((0, ea.A)(t), "onBrand", function(e) {
-            t.props.onBrand && t.props.onBrand(e)
-        }), t
+    function n(e) {
+        var r;
+        return (0, k.A)(this, n), r = t.call(this, e), (0, w.A)((0, ea.A)(r), "onBrand", function(e) {
+            r.props.onBrand && r.props.onBrand(e)
+        }), r
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatData",
         value: function() {
-            var e = (0, ey.A)((0, es.A)(r.prototype), "formatData", this).call(this);
+            var e = (0, ey.A)((0, es.A)(n.prototype), "formatData", this).call(this);
             return e.paymentMethod.type = this.constructor.type, e
         }
     }, {
         key: "formatProps",
         value: function(e) {
-            return u2(u2({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e)), {}, {
+            return u2(u2({}, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e)), {}, {
                 type: "bcmc",
                 cvcPolicy: n8
             })
         }
-    }]), r
+    }]), n
 }();
 
 function u8(e) {
@@ -15034,7 +15034,7 @@ function u8(e) {
     }, n, (void 0 === s ? "" : s) && " ›")))
 }
 
-function u3(e) {
+function u6(e) {
     var t = e.url;
     return (0, el.h)("div", {
         className: "adyen-checkout__campaign"
@@ -15047,7 +15047,7 @@ function u3(e) {
 }(0, w.A)(u4, "type", "bcmc"), (0, w.A)(u4, "defaultProps", u2(u2({}, uj.defaultProps), {}, {
     brands: ["bcmc", "maestro", "visa"]
 }));
-var u6 = function(e) {
+var u3 = function(e) {
     var t = e.options,
         n = void 0 === t ? [] : t,
         r = e.name,
@@ -15129,7 +15129,7 @@ function u7(e) {
     this.setStatus = function(e) {
         h(e)
     };
-    var k = t3(function(e, t) {
+    var k = t6(function(e, t) {
         return s.amount(e, t)
     }, [s]);
     return t1(function() {
@@ -15161,11 +15161,11 @@ function u7(e) {
         className: "adyen-checkout__status__text"
     }, s.get("thanksForYourSupport"))) : (0, el.h)("div", {
         className: "adyen-checkout__adyen-giving"
-    }, (0, el.h)(u3, e), (0, el.h)("div", {
+    }, (0, el.h)(u6, e), (0, el.h)("div", {
         className: "adyen-checkout__adyen-giving-actions"
     }, (0, el.h)("div", {
         className: "adyen-checkout__amounts"
-    }, (0, el.h)(u6, {
+    }, (0, el.h)(u3, {
         options: J()(t = Q()(n)).call(t, function(e) {
             return {
                 value: e,
@@ -15244,9 +15244,9 @@ u7.defaultProps = {
     amounts: {},
     showCancelButton: !0
 };
-var dn = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var dn = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -15255,21 +15255,21 @@ var dn = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r(e) {
-        var t, a;
-        return (0, k.A)(this, r), a = n.call(this, e), (0, w.A)((0, ea.A)(a), "handleRef", function(e) {
+    function n(e) {
+        var r, a;
+        return (0, k.A)(this, n), a = t.call(this, e), (0, w.A)((0, ea.A)(a), "handleRef", function(e) {
             a.componentRef = e
-        }), a.donate = F()(t = a.donate).call(t, (0, ea.A)(a)), a
+        }), a.donate = F()(r = a.donate).call(r, (0, ea.A)(a)), a
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "data",
         get: function() {
             return this.state.data
@@ -15307,7 +15307,7 @@ var dn = function(e) {
                 onDonate: this.donate
             })))
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(dn, "type", "donation"), (0, w.A)(dn, "defaultProps", {
     onCancel: function() {},
@@ -15327,9 +15327,9 @@ function da(e, t) {
     }
     return n
 }
-var di = function(e) {
-    (0, eo.A)(r, el.uA);
-    var t, n = (t = function() {
+var di = function() {
+    (0, eo.A)(n, el.uA);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -15338,21 +15338,21 @@ var di = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        var e, t;
-        (0, k.A)(this, r);
+    function n() {
+        var e, r;
+        (0, k.A)(this, n);
         for (var a = arguments.length, o = Array(a), i = 0; i < a; i++) o[i] = arguments[i];
-        return t = n.call.apply(n, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(t), "postForm", void 0), t
+        return r = t.call.apply(t, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(r), "postForm", void 0), r
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "componentDidMount",
         value: function() {
             var e = this;
@@ -15406,7 +15406,7 @@ var di = function(e) {
                 })
             })) : null
         }
-    }]), r
+    }]), n
 }();
 
 function ds(e, t) {
@@ -15436,9 +15436,9 @@ function dl(e) {
     },
     method: "GET"
 });
-var dc = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var dc = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -15447,18 +15447,18 @@ var dc = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
             return dl(dl({}, e), {}, {
@@ -15500,7 +15500,7 @@ var dc = function(e) {
                 }
             }))) : null
         }
-    }]), r
+    }]), n
 }();
 
 function du(e, t) {
@@ -15528,9 +15528,9 @@ function dd(e) {
     type: dc.type,
     showPayButton: !0
 });
-var dp = function(e) {
-    (0, eo.A)(r, dc);
-    var t, n = (t = function() {
+var dp = function() {
+    (0, eo.A)(n, dc);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -15539,18 +15539,18 @@ var dp = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
             var t;
@@ -15563,7 +15563,7 @@ var dp = function(e) {
         value: function() {
             return {
                 paymentMethod: {
-                    type: r.type
+                    type: n.type
                 }
             }
         }
@@ -15589,7 +15589,7 @@ var dp = function(e) {
                 }
             }))) : null
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(dp, "type", "giropay");
 var dh = ["amount", "countryCode", "totalPriceStatus"],
@@ -15754,9 +15754,9 @@ var dg = ["en", "ar", "bg", "ca", "cs", "da", "de", "el", "es", "et", "fi", "fr"
             }
         }]), t
     }(),
-    dA = function(e) {
-        (0, eo.A)(r, el.uA);
-        var t, n = (t = function() {
+    dA = function() {
+        (0, eo.A)(n, el.uA);
+        var e, t = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -15765,25 +15765,25 @@ var dg = ["en", "ar", "bg", "ca", "cs", "da", "de", "el", "es", "et", "fi", "fr"
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(r);
-            if (t) {
+            var t, r = (0, es.A)(n);
+            if (e) {
                 var a = (0, es.A)(this).constructor;
-                e = en()(n, arguments, a)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(r, arguments, a)
+            } else t = r.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function r() {
-            var e, t;
-            (0, k.A)(this, r);
+        function n() {
+            var e, r;
+            (0, k.A)(this, n);
             for (var a = arguments.length, o = Array(a), i = 0; i < a; i++) o[i] = arguments[i];
-            return t = n.call.apply(n, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(t), "paywithgoogleWrapper", void 0), (0, w.A)((0, ea.A)(t), "clicked", !1), (0, w.A)((0, ea.A)(t), "handleClick", function(e) {
-                e.preventDefault(), e.stopPropagation(), t.clicked || (t.props.onClick(e), t.clicked = !0, eu()(function() {
-                    t.clicked = !1
+            return r = t.call.apply(t, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(r), "paywithgoogleWrapper", void 0), (0, w.A)((0, ea.A)(r), "clicked", !1), (0, w.A)((0, ea.A)(r), "handleClick", function(e) {
+                e.preventDefault(), e.stopPropagation(), r.clicked || (r.props.onClick(e), r.clicked = !0, eu()(function() {
+                    r.clicked = !1
                 }, 300))
-            }), t
+            }), r
         }
-        return (0, C.A)(r, [{
+        return (0, C.A)(n, [{
             key: "componentDidMount",
             value: function() {
                 var e = this,
@@ -15817,7 +15817,7 @@ var dg = ["en", "ar", "bg", "ca", "cs", "da", "de", "el", "es", "et", "fi", "fr"
                     }
                 })
             }
-        }]), r
+        }]), n
     }();
 
 function d_(e, t) {
@@ -15846,9 +15846,9 @@ function dk(e) {
     buttonType: "long",
     buttonSizeMode: "static"
 });
-var dC = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var dC = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -15857,21 +15857,21 @@ var dC = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        var e, t, a;
-        (0, k.A)(this, r);
+    function n() {
+        var e, r, a;
+        (0, k.A)(this, n);
         for (var o = arguments.length, i = Array(o), s = 0; s < o; s++) i[s] = arguments[s];
-        return a = n.call.apply(n, M()(e = [this]).call(e, i)), (0, w.A)((0, ea.A)(a), "googlePay", new db(a.props)), (0, w.A)((0, ea.A)(a), "submit", function() {
+        return a = t.call.apply(t, M()(e = [this]).call(e, i)), (0, w.A)((0, ea.A)(a), "googlePay", new db(a.props)), (0, w.A)((0, ea.A)(a), "submit", function() {
             var e = a.props.onAuthorized,
-                n = void 0 === e ? function() {} : e;
+                t = void 0 === e ? function() {} : e;
             return new(B())(function(e, t) {
                 return a.props.onClick(e, t)
             }).then(function() {
@@ -15880,7 +15880,7 @@ var dC = function(e) {
                 return a.setState({
                     googlePayToken: e.paymentMethodData.tokenizationData.token,
                     googlePayCardNetwork: e.paymentMethodData.info.cardNetwork
-                }), (0, ey.A)((t = (0, ea.A)(a), (0, es.A)(r.prototype)), "submit", t).call(t), n(e)
+                }), (0, ey.A)((r = (0, ea.A)(a), (0, es.A)(n.prototype)), "submit", r).call(r), t(e)
             }).catch(function(e) {
                 "CANCELED" === e.statusCode ? a.handleError(new nv("CANCEL", e.toString(), {
                     cause: e
@@ -15902,7 +15902,7 @@ var dC = function(e) {
             return a.googlePay.prefetchPaymentData(a.props)
         }), a
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
             var t, n, r, a, o, i, s = null != (t = e.brands) && t.length ? (o = e.brands, i = {
@@ -15933,7 +15933,7 @@ var dC = function(e) {
             var e;
             return {
                 paymentMethod: dk({
-                    type: null != (e = this.props.type) ? e : r.type
+                    type: null != (e = this.props.type) ? e : n.type
                 }, this.state),
                 browserInfo: this.browserInfo
             }
@@ -15967,7 +15967,7 @@ var dC = function(e) {
                 onClick: this.submit
             }) : null
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(dC, "type", "paywithgoogle"), (0, w.A)(dC, "defaultProps", {
     environment: "TEST",
@@ -16007,9 +16007,9 @@ var dC = function(e) {
     shippingOptionParameters: void 0,
     paymentMethods: []
 });
-var dw = function(e) {
-    (0, eo.A)(r, sh);
-    var t, n = (t = function() {
+var dw = function() {
+    (0, eo.A)(n, sh);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -16018,18 +16018,18 @@ var dw = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r)
+    return (0, C.A)(n)
 }();
 (0, w.A)(dw, "type", "entercash");
 var dS = {
@@ -16249,9 +16249,9 @@ function dI(e) {
     }
     return e
 }
-var dM = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var dM = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -16260,18 +16260,18 @@ var dM = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "isValid",
         get: function() {
             return !this.props.personalDetailsRequired || !!this.state.isValid
@@ -16281,7 +16281,7 @@ var dM = function(e) {
         value: function() {
             return dI(dI({}, this.state.data), {}, {
                 paymentMethod: {
-                    type: this.props.type || r.type
+                    type: this.props.type || n.type
                 }
             })
         }
@@ -16310,7 +16310,7 @@ var dM = function(e) {
                 payButton: this.payButton
             })))
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(dM, "type", "econtext"), (0, w.A)(dM, "defaultProps", {
     personalDetailsRequired: !0,
@@ -16340,9 +16340,9 @@ function dD(e) {
     }
     return e
 }
-var dL = function(e) {
-    (0, eo.A)(r, iu);
-    var t, n = (t = function() {
+var dL = function() {
+    (0, eo.A)(n, iu);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -16351,25 +16351,25 @@ var dL = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
-            return dD(dD({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e)), {}, {
+            return dD(dD({}, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e)), {}, {
                 allowedCountries: e.countryCode ? [e.countryCode] : dT
             })
         }
-    }]), r
+    }]), n
 }();
 
 function dV(e, t) {
@@ -16394,9 +16394,9 @@ function dj(e) {
     }
     return e
 }(0, w.A)(dL, "type", "facilypay_3x");
-var dU = function(e) {
-    (0, eo.A)(r, iu);
-    var t, n = (t = function() {
+var dU = function() {
+    (0, eo.A)(n, iu);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -16405,25 +16405,25 @@ var dU = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
-            return dj(dj({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e)), {}, {
+            return dj(dj({}, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e)), {}, {
                 allowedCountries: e.countryCode ? [e.countryCode] : dT
             })
         }
-    }]), r
+    }]), n
 }();
 
 function dq(e, t) {
@@ -16448,9 +16448,9 @@ function dK(e) {
     }
     return e
 }(0, w.A)(dU, "type", "facilypay_4x");
-var dH = function(e) {
-    (0, eo.A)(r, iu);
-    var t, n = (t = function() {
+var dH = function() {
+    (0, eo.A)(n, iu);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -16459,25 +16459,25 @@ var dH = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
-            return dK(dK({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e)), {}, {
+            return dK(dK({}, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e)), {}, {
                 allowedCountries: e.countryCode ? [e.countryCode] : dT
             })
         }
-    }]), r
+    }]), n
 }();
 
 function dz(e, t) {
@@ -16502,9 +16502,9 @@ function dW(e) {
     }
     return e
 }(0, w.A)(dH, "type", "facilypay_6x");
-var dG = function(e) {
-    (0, eo.A)(r, iu);
-    var t, n = (t = function() {
+var dG = function() {
+    (0, eo.A)(n, iu);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -16513,25 +16513,25 @@ var dG = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
-            return dW(dW({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e)), {}, {
+            return dW(dW({}, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e)), {}, {
                 allowedCountries: e.countryCode ? [e.countryCode] : dT
             })
         }
-    }]), r
+    }]), n
 }();
 
 function d$(e, t) {
@@ -16556,9 +16556,9 @@ function dY(e) {
     }
     return e
 }(0, w.A)(dG, "type", "facilypay_10x");
-var dQ = function(e) {
-    (0, eo.A)(r, iu);
-    var t, n = (t = function() {
+var dQ = function() {
+    (0, eo.A)(n, iu);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -16567,30 +16567,30 @@ var dQ = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
-            return dY(dY({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e)), {}, {
+            return dY(dY({}, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e)), {}, {
                 allowedCountries: e.countryCode ? [e.countryCode] : dT
             })
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(dQ, "type", "facilypay_12x");
-var dZ = function(e) {
-    (0, eo.A)(r, sh);
-    var t, n = (t = function() {
+var dZ = function() {
+    (0, eo.A)(n, sh);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -16599,18 +16599,18 @@ var dZ = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r)
+    return (0, C.A)(n)
 }();
 (0, w.A)(dZ, "type", "ideal");
 var dJ = ["black", "white"],
@@ -16684,7 +16684,7 @@ var d2 = function(e) {
     },
     d8 = ["onInit", "onApprove", "onClick", "onCancel", "onError", "onShippingChange", "onSubmit", "isProcessingPayment", "paypalRef", "style"];
 
-function d3(e, t) {
+function d6(e, t) {
     var n = c()(e);
     if (d()) {
         var r = d()(e);
@@ -16695,12 +16695,12 @@ function d3(e, t) {
     return n
 }
 
-function d6(e) {
+function d3(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n, r, a = null != arguments[t] ? arguments[t] : {};
-        t % 2 ? N()(n = d3(Object(a), !0)).call(n, function(t) {
+        t % 2 ? N()(n = d6(Object(a), !0)).call(n, function(t) {
             (0, w.A)(e, t, a[t])
-        }) : m() ? v()(e, m()(a)) : N()(r = d3(Object(a))).call(r, function(t) {
+        }) : m() ? v()(e, m()(a)) : N()(r = d6(Object(a))).call(r, function(t) {
             b()(e, t, h()(a, t))
         })
     }
@@ -16726,7 +16726,7 @@ function d5(e) {
         v = t4(null),
         g = t4(null),
         b = function(e, t) {
-            var c = d6(d6(d6(d6({}, f && {
+            var c = d3(d3(d3(d3({}, f && {
                     createBillingAgreement: l
                 }), !f && {
                     createOrder: l
@@ -16813,7 +16813,7 @@ function pt(e) {
         u = l[0],
         d = l[1];
     this.setStatus = d;
-    var p = t3(function(e, n) {
+    var p = t6(function(e, n) {
             d("processing"), t(e, n)
         }, [t]),
         h = function() {
@@ -16914,9 +16914,9 @@ function ps(e) {
     }
     return e
 }
-var pl = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var pl = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -16925,17 +16925,17 @@ var pl = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r(e) {
-        var t, a;
-        return (0, k.A)(this, r), a = n.call(this, e), (0, w.A)((0, ea.A)(a), "paymentData", null), (0, w.A)((0, ea.A)(a), "resolve", null), (0, w.A)((0, ea.A)(a), "reject", null), (0, w.A)((0, ea.A)(a), "submit", function() {
+    function n(e) {
+        var r, a;
+        return (0, k.A)(this, n), a = t.call(this, e), (0, w.A)((0, ea.A)(a), "paymentData", null), (0, w.A)((0, ea.A)(a), "resolve", null), (0, w.A)((0, ea.A)(a), "reject", null), (0, w.A)((0, ea.A)(a), "submit", function() {
             a.handleError(new nv("IMPLEMENTATION_ERROR", "Calling submit() is not supported for this payment method"))
         }), (0, w.A)((0, ea.A)(a), "handleAction", function(e) {
             return a.updateWithAction(e)
@@ -17000,9 +17000,9 @@ var pl = function(e) {
                 }))
             });
             a.handleAdditionalDetails(r)
-        }), a.handleSubmit = F()(t = a.handleSubmit).call(t, (0, ea.A)(a)), a
+        }), a.handleSubmit = F()(r = a.handleSubmit).call(r, (0, ea.A)(a)), a
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
             var t, n = e.configuration,
@@ -17024,8 +17024,8 @@ var pl = function(e) {
             var e = this.props.isExpress;
             return {
                 paymentMethod: {
-                    type: r.type,
-                    subtype: e ? "express" : r.subtype
+                    type: n.type,
+                    subtype: e ? "express" : n.subtype
                 }
             }
         }
@@ -17050,7 +17050,7 @@ var pl = function(e) {
         key: "handleSubmit",
         value: function() {
             var e = this;
-            return (0, ey.A)((0, es.A)(r.prototype), "submit", this).call(this), new(B())(function(t, n) {
+            return (0, ey.A)((0, es.A)(n.prototype), "submit", this).call(this), new(B())(function(t, n) {
                 e.resolve = t, e.reject = n
             })
         }
@@ -17078,7 +17078,7 @@ var pl = function(e) {
                 onSubmit: this.handleSubmit
             }))) : null
         }
-    }]), r
+    }]), n
 }();
 
 function pc(e, t) {
@@ -17364,9 +17364,9 @@ function pA(e) {
     }
     return e
 }
-var p_ = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var p_ = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -17375,18 +17375,18 @@ var p_ = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "isValid",
         get: function() {
             return !!this.state.isValid
@@ -17405,7 +17405,7 @@ var p_ = function(e) {
         value: function() {
             return {
                 paymentMethod: {
-                    type: r.type,
+                    type: n.type,
                     "qiwiwallet.telephoneNumberPrefix": this.state.data ? this.state.data.phonePrefix : "",
                     "qiwiwallet.telephoneNumber": this.state.data ? this.state.data.phoneNumber : ""
                 }
@@ -17430,7 +17430,7 @@ var p_ = function(e) {
                 payButton: this.payButton
             })))
         }
-    }]), r
+    }]), n
 }();
 
 function pk(e, t) {
@@ -17600,9 +17600,9 @@ function px(e) {
     }
     return e
 }
-var pP = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var pP = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -17611,21 +17611,21 @@ var pP = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        var e, t;
-        (0, k.A)(this, r);
+    function n() {
+        var e, r;
+        (0, k.A)(this, n);
         for (var a = arguments.length, o = Array(a), i = 0; i < a; i++) o[i] = arguments[i];
-        return t = n.call.apply(n, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(t), "onBinValue", cL((0, ea.A)(t))), t
+        return r = t.call.apply(t, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(r), "onBinValue", cL((0, ea.A)(r))), r
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
             return px(px({}, e), {}, {
@@ -17638,7 +17638,7 @@ var pP = function(e) {
             var e = this.state.selectedBrandValue || this.props.brand;
             return {
                 paymentMethod: px(px({
-                    type: r.type
+                    type: n.type
                 }, this.state.data), e && {
                     brand: e
                 }),
@@ -17720,7 +17720,7 @@ var pP = function(e) {
                 resources: this.resources
             })))
         }
-    }]), r
+    }]), n
 }();
 
 function pR(e, t) {
@@ -17736,9 +17736,9 @@ function pR(e, t) {
     onBinLookup: function() {},
     brandsConfiguration: {}
 });
-var pF = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var pF = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -17747,18 +17747,18 @@ var pF = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
             return function(e) {
@@ -17780,7 +17780,7 @@ var pF = function(e) {
         value: function() {
             return {
                 paymentMethod: {
-                    type: r.type,
+                    type: n.type,
                     iban: this.state.data.ibanNumber,
                     ownerName: this.state.data.ownerName
                 }
@@ -17809,14 +17809,14 @@ var pF = function(e) {
                 payButton: this.payButton
             })))
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(pF, "type", "sepadirectdebit"), (0, w.A)(pF, "defaultProps", {
     showFormInstruction: !0
 });
-var pO = function(e) {
-        (0, eo.A)(r, el.uA);
-        var t, n = (t = function() {
+var pO = function() {
+        (0, eo.A)(n, el.uA);
+        var e, t = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -17825,21 +17825,21 @@ var pO = function(e) {
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(r);
-            if (t) {
+            var t, r = (0, es.A)(n);
+            if (e) {
                 var a = (0, es.A)(this).constructor;
-                e = en()(n, arguments, a)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(r, arguments, a)
+            } else t = r.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function r() {
-            var e, t;
-            (0, k.A)(this, r);
+        function n() {
+            var e, r;
+            (0, k.A)(this, n);
             for (var a = arguments.length, o = Array(a), i = 0; i < a; i++) o[i] = arguments[i];
-            return t = n.call.apply(n, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(t), "formEl", void 0), t
+            return r = t.call.apply(t, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(r), "formEl", void 0), r
         }
-        return (0, C.A)(r, [{
+        return (0, C.A)(n, [{
             key: "componentDidMount",
             value: function() {
                 this.formEl.submit()
@@ -17870,7 +17870,7 @@ var pO = function(e) {
                     value: i
                 }))
             }
-        }]), r
+        }]), n
     }(),
     pE = {
         result: {
@@ -17938,9 +17938,9 @@ var pO = function(e) {
     pq = ["elementRef"],
     pK = ["createFromAction", "onAdditionalDetails"],
     pH = "threeDSIframe",
-    pz = function(e) {
-        (0, eo.A)(r, el.uA);
-        var t, n = (t = function() {
+    pz = function() {
+        (0, eo.A)(n, el.uA);
+        var e, t = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -17949,29 +17949,29 @@ var pO = function(e) {
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(r);
-            if (t) {
+            var t, r = (0, es.A)(n);
+            if (e) {
                 var a = (0, es.A)(this).constructor;
-                e = en()(n, arguments, a)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(r, arguments, a)
+            } else t = r.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function r(e) {
-            (0, k.A)(this, r), t = n.call(this, e), (0, w.A)((0, ea.A)(t), "processMessageHandler", void 0), (0, w.A)((0, ea.A)(t), "challengePromise", void 0), (0, w.A)((0, ea.A)(t), "iframeCallback", function() {
-                t.setState({
+        function n(e) {
+            (0, k.A)(this, n), r = t.call(this, e), (0, w.A)((0, ea.A)(r), "processMessageHandler", void 0), (0, w.A)((0, ea.A)(r), "challengePromise", void 0), (0, w.A)((0, ea.A)(r), "iframeCallback", function() {
+                r.setState({
                     status: "iframeLoaded"
-                }), t.props.onActionHandled({
+                }), r.props.onActionHandled({
                     componentType: "3DS2Challenge",
                     actionDescription: "challenge-iframe-loaded"
                 })
             });
-            var t, a = pU(j()(t.props.cReqData));
-            return t.state = {
+            var r, a = pU(j()(r.props.cReqData));
+            return r.state = {
                 base64URLencodedData: a
-            }, t
+            }, r
         }
-        return (0, C.A)(r, [{
+        return (0, C.A)(n, [{
             key: "get3DS2ChallengePromise",
             value: function() {
                 var e = this;
@@ -18020,11 +18020,11 @@ var pO = function(e) {
                     inputValue: o
                 }))
             }
-        }]), r
+        }]), n
     }(),
-    pW = function(e) {
-        (0, eo.A)(r, el.uA);
-        var t, n = (t = function() {
+    pW = function() {
+        (0, eo.A)(n, el.uA);
+        var e, t = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -18033,20 +18033,20 @@ var pO = function(e) {
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(r);
-            if (t) {
+            var t, r = (0, es.A)(n);
+            if (e) {
                 var a = (0, es.A)(this).constructor;
-                e = en()(n, arguments, a)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(r, arguments, a)
+            } else t = r.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function r(e) {
-            var t;
-            if ((0, k.A)(this, r), (t = n.call(this, e)).props.token) {
+        function n(e) {
+            var r;
+            if ((0, k.A)(this, n), (r = t.call(this, e)).props.token) {
                 var a, o, i, s, l, c, u, d, p, h, f = (o = (a = {
-                        token: t.props.token,
-                        size: t.props.challengeWindowSize || t.props.size
+                        token: r.props.token,
+                        size: r.props.challengeWindowSize || r.props.size
                     }).token, i = a.size, l = (s = pB(o)).acsTransID, c = s.acsURL, u = s.messageVersion, d = s.threeDSNotificationURL, p = s.threeDSServerTransID, h = nP(d), {
                         acsURL: c,
                         cReqData: {
@@ -18063,21 +18063,21 @@ var pO = function(e) {
                     y = m.acsTransID,
                     v = m.messageVersion,
                     g = m.threeDSServerTransID;
-                if (!(f.acsURL && y && v && g)) return t.setStatusError({
+                if (!(f.acsURL && y && v && g)) return r.setStatusError({
                     errorInfo: "Challenge Data missing one or more of the following properties (acsURL | acsTransID | messageVersion | threeDSServerTransID)",
                     errorObj: f
-                }), (0, ei.A)(t);
-                t.state = {
+                }), (0, ei.A)(r);
+                r.state = {
                     status: "retrievingChallengeToken",
                     challengeData: f,
                     errorInfo: null
                 }
-            } else t.setStatusError({
+            } else r.setStatusError({
                 errorInfo: "Missing challengeToken parameter"
             });
-            return t
+            return r
         }
-        return (0, C.A)(r, [{
+        return (0, C.A)(n, [{
             key: "setStatusComplete",
             value: function(e) {
                 var t = this;
@@ -18151,16 +18151,16 @@ var pO = function(e) {
                     className: "adyen-checkout__status__text"
                 }, this.state.errorInfo ? this.state.errorInfo : this.props.i18n.get("error.message.unknown"))) : null
             }
-        }]), r
+        }]), n
     }();
 (0, w.A)(pW, "defaultProps", {
     onComplete: function() {},
     onError: function() {},
     onActionHandled: function() {}
 });
-var pG = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var pG = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -18169,21 +18169,21 @@ var pG = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "onComplete",
         value: function(e) {
-            e && (0, ey.A)((0, es.A)(r.prototype), "onComplete", this).call(this, e), this.unmount()
+            e && (0, ey.A)((0, es.A)(n.prototype), "onComplete", this).call(this, e), this.unmount()
         }
     }, {
         key: "render",
@@ -18199,7 +18199,7 @@ var pG = function(e) {
                 onComplete: this.onComplete
             }))
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(pG, "type", "threeDS2Challenge"), (0, w.A)(pG, "defaultProps", {
     dataKey: "threeDSResult",
@@ -18207,9 +18207,9 @@ var pG = function(e) {
     type: "ChallengeShopper"
 });
 var p$ = "threeDSMethodIframe",
-    pY = function(e) {
-        (0, eo.A)(r, el.uA);
-        var t, n = (t = function() {
+    pY = function() {
+        (0, eo.A)(n, el.uA);
+        var e, t = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -18218,27 +18218,27 @@ var p$ = "threeDSMethodIframe",
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(r);
-            if (t) {
+            var t, r = (0, es.A)(n);
+            if (e) {
                 var a = (0, es.A)(this).constructor;
-                e = en()(n, arguments, a)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(r, arguments, a)
+            } else t = r.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function r(e) {
-            (0, k.A)(this, r), t = n.call(this, e), (0, w.A)((0, ea.A)(t), "processMessageHandler", void 0), (0, w.A)((0, ea.A)(t), "fingerPrintPromise", void 0);
-            var t, a = t.props,
+        function n(e) {
+            (0, k.A)(this, n), r = t.call(this, e), (0, w.A)((0, ea.A)(r), "processMessageHandler", void 0), (0, w.A)((0, ea.A)(r), "fingerPrintPromise", void 0);
+            var r, a = r.props,
                 o = a.threeDSServerTransID,
                 i = a.threeDSMethodNotificationURL;
-            return t.state = {
+            return r.state = {
                 base64URLencodedData: pU(j()({
                     threeDSServerTransID: o,
                     threeDSMethodNotificationURL: i
                 }))
-            }, t
+            }, r
         }
-        return (0, C.A)(r, [{
+        return (0, C.A)(n, [{
             key: "get3DS2MethodPromise",
             value: function() {
                 var e = this;
@@ -18289,14 +18289,14 @@ var p$ = "threeDSMethodIframe",
                     inputValue: a
                 })))
             }
-        }]), r
+        }]), n
     }();
 (0, w.A)(pY, "defaultProps", {
     showSpinner: !0
 });
-var pQ = function(e) {
-    (0, eo.A)(r, el.uA);
-    var t, n = (t = function() {
+var pQ = function() {
+    (0, eo.A)(n, el.uA);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -18305,25 +18305,25 @@ var pQ = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r(e) {
-        (0, k.A)(this, r);
-        var t, a, o, i, s, l, c, u, d = (u = n.call(this, e)).props,
+    function n(e) {
+        (0, k.A)(this, n);
+        var r, a, o, i, s, l, c, u, d = (u = t.call(this, e)).props,
             p = d.token,
             h = d.notificationURL;
         return p ? u.state = {
             status: "init",
-            fingerPrintData: (a = (t = {
+            fingerPrintData: (a = (r = {
                 token: p,
                 notificationURL: h
-            }).token, o = t.notificationURL, s = (i = pB(a)).threeDSMethodNotificationURL, l = i.threeDSMethodUrl, c = o || s, {
+            }).token, o = r.notificationURL, s = (i = pB(a)).threeDSMethodNotificationURL, l = i.threeDSMethodUrl, c = o || s, {
                 threeDSServerTransID: i.threeDSServerTransID,
                 threeDSMethodURL: l,
                 threeDSMethodNotificationURL: c,
@@ -18336,7 +18336,7 @@ var pQ = function(e) {
             message: "Missing fingerprintToken parameter"
         })), u
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "componentDidMount",
         value: function() {
             this.state.fingerPrintData && this.state.fingerPrintData.threeDSMethodURL ? this.setState({
@@ -18384,7 +18384,7 @@ var pQ = function(e) {
                 onActionHandled: a
             })) : null
         }
-    }]), r
+    }]), n
 }();
 
 function pZ(e, t) {
@@ -18401,7 +18401,7 @@ function pZ(e, t) {
 function pJ(e) {
     var t = this,
         n = e.data;
-    a3({
+    a6({
         path: "v1/submitThreeDS2Fingerprint?token=".concat(this.props.clientKey),
         loadingContext: this.props.loadingContext,
         errorLevel: "fatal"
@@ -18441,9 +18441,9 @@ function pJ(e) {
     showSpinner: !0,
     onActionHandled: function() {}
 });
-var pX = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var pX = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -18452,24 +18452,24 @@ var pX = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        var e, t;
-        (0, k.A)(this, r);
+    function n() {
+        var e, r;
+        (0, k.A)(this, n);
         for (var a = arguments.length, o = Array(a), i = 0; i < a; i++) o[i] = arguments[i];
-        return t = n.call.apply(n, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(t), "callSubmit3DS2Fingerprint", F()(pJ).call(pJ, (0, ea.A)(t))), t
+        return r = t.call.apply(t, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(r), "callSubmit3DS2Fingerprint", F()(pJ).call(pJ, (0, ea.A)(r))), r
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "onComplete",
         value: function(e) {
-            (0, ey.A)((0, es.A)(r.prototype), "onComplete", this).call(this, e), this.unmount()
+            (0, ey.A)((0, es.A)(n.prototype), "onComplete", this).call(this, e), this.unmount()
         }
     }, {
         key: "render",
@@ -18477,11 +18477,11 @@ var pX = function(e) {
             return ir(this.props.paymentData) ? (0, el.h)(pQ, (0, er.A)({}, this.props, {
                 onComplete: this.props.useOriginalFlow ? this.onComplete : this.callSubmit3DS2Fingerprint
             })) : (this.props.onError({
-                errorCode: r.defaultProps.dataKey,
+                errorCode: n.defaultProps.dataKey,
                 message: "No paymentData received. Fingerprinting cannot proceed"
             }), null)
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(pX, "type", "threeDS2Fingerprint"), (0, w.A)(pX, "defaultProps", {
     dataKey: "fingerprintResult",
@@ -18583,7 +18583,7 @@ var p0 = function(e) {
     }(),
     p4 = function(e) {
         var t = nc().i18n,
-            n = t6(o$).srPanel,
+            n = t3(o$).srPanel,
             r = t4(null);
         t1(function() {
             return r.current = new p2({
@@ -18610,7 +18610,7 @@ var p0 = function(e) {
         }
     };
 
-function p3(e) {
+function p6(e) {
     var t = e.minutesFromNow,
         n = e.onTick,
         r = void 0 === n ? function() {} : n,
@@ -18657,9 +18657,9 @@ function p3(e) {
     }, d.seconds))
 }
 
-function p6(e, t, n) {
+function p3(e, t, n) {
     if (!e || !t) throw Error("Could not check the payment status");
-    return a3({
+    return a6({
         loadingContext: n,
         path: "services/PaymentInitiation/v1/status?clientKey=".concat(t)
     }, {
@@ -18736,7 +18736,7 @@ var p7 = function(e) {
         }
     },
     ht = function(e) {
-        var t = t6(o$).srPanel;
+        var t = t3(o$).srPanel;
         t1(function() {
             return t.setAriaProps({
                     "aria-relevant": "additions text"
@@ -18750,9 +18750,9 @@ var p7 = function(e) {
             t.setMessages(e)
         }, [e])
     },
-    hn = function(e) {
-        (0, eo.A)(r, el.uA);
-        var t, n = (t = function() {
+    hn = function() {
+        (0, eo.A)(n, el.uA);
+        var e, t = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -18761,66 +18761,66 @@ var p7 = function(e) {
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(r);
-            if (t) {
+            var t, r = (0, es.A)(n);
+            if (e) {
                 var a = (0, es.A)(this).constructor;
-                e = en()(n, arguments, a)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(r, arguments, a)
+            } else t = r.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function r(e) {
-            var t;
-            return (0, k.A)(this, r), t = n.call(this, e), (0, w.A)((0, ea.A)(t), "interval", void 0), (0, w.A)((0, ea.A)(t), "statusInterval", function() {
-                t.checkStatus(), t.setState({
-                    timePassed: t.state.timePassed + t.props.delay
-                }), t.state.timePassed >= t.props.throttleTime && t.setState({
-                    delay: t.props.throttledInterval
+        function n(e) {
+            var r;
+            return (0, k.A)(this, n), r = t.call(this, e), (0, w.A)((0, ea.A)(r), "interval", void 0), (0, w.A)((0, ea.A)(r), "statusInterval", function() {
+                r.checkStatus(), r.setState({
+                    timePassed: r.state.timePassed + r.props.delay
+                }), r.state.timePassed >= r.props.throttleTime && r.setState({
+                    delay: r.props.throttledInterval
                 })
-            }), (0, w.A)((0, ea.A)(t), "redirectToApp", function(e) {
+            }), (0, w.A)((0, ea.A)(r), "redirectToApp", function(e) {
                 window.location.assign(e)
-            }), (0, w.A)((0, ea.A)(t), "onTick", function(e) {
-                t.setState({
+            }), (0, w.A)((0, ea.A)(r), "onTick", function(e) {
+                r.setState({
                     percentage: e.percentage
                 })
-            }), (0, w.A)((0, ea.A)(t), "onTimeUp", function() {
-                t.setState({
+            }), (0, w.A)((0, ea.A)(r), "onTimeUp", function() {
+                r.setState({
                     expired: !0
-                }), clearInterval(t.interval), t.props.onError(new nv("ERROR", "Payment Expired"))
-            }), (0, w.A)((0, ea.A)(t), "onComplete", function(e) {
-                clearInterval(t.interval), t.setState({
+                }), clearInterval(r.interval), r.props.onError(new nv("ERROR", "Payment Expired"))
+            }), (0, w.A)((0, ea.A)(r), "onComplete", function(e) {
+                clearInterval(r.interval), r.setState({
                     completed: !0,
                     loading: !1
                 });
-                var n = {
+                var t = {
                     data: {
                         details: {
                             payload: e.props.payload
                         },
-                        paymentData: t.props.paymentData
+                        paymentData: r.props.paymentData
                     }
                 };
-                t.props.onComplete(n, (0, ea.A)(t))
-            }), (0, w.A)((0, ea.A)(t), "onError", function(e) {
-                if (clearInterval(t.interval), t.setState({
+                r.props.onComplete(t, (0, ea.A)(r))
+            }), (0, w.A)((0, ea.A)(r), "onError", function(e) {
+                if (clearInterval(r.interval), r.setState({
                         expired: !0,
                         loading: !1
                     }), e.props.payload) {
-                    var n = {
+                    var t = {
                         data: {
                             details: {
                                 payload: e.props.payload
                             },
-                            paymentData: t.props.paymentData
+                            paymentData: r.props.paymentData
                         }
                     };
-                    t.props.onComplete(n, (0, ea.A)(t))
+                    r.props.onComplete(t, (0, ea.A)(r))
                 }
-                var r = new nv("ERROR", "error result with no payload in response");
-                return t.props.onError(r)
-            }), (0, w.A)((0, ea.A)(t), "checkStatus", function() {
-                var e = t.props;
-                return p6(e.paymentData, e.clientKey, e.loadingContext).then(he).catch(function(e) {
+                var n = new nv("ERROR", "error result with no payload in response");
+                return r.props.onError(n)
+            }), (0, w.A)((0, ea.A)(r), "checkStatus", function() {
+                var e = r.props;
+                return p3(e.paymentData, e.clientKey, e.loadingContext).then(he).catch(function(e) {
                     return {
                         type: "network-error",
                         props: e
@@ -18828,19 +18828,19 @@ var p7 = function(e) {
                 }).then(function(e) {
                     switch (e.type) {
                         case "success":
-                            t.onComplete(e);
+                            r.onComplete(e);
                             break;
                         case "error":
-                            t.onError(e);
+                            r.onError(e);
                             break;
                         default:
-                            t.setState({
+                            r.setState({
                                 loading: !1
                             })
                     }
                     return e
                 })
-            }), t.state = {
+            }), r.state = {
                 buttonStatus: "default",
                 completed: !1,
                 delay: e.delay,
@@ -18848,9 +18848,9 @@ var p7 = function(e) {
                 loading: !0,
                 percentage: 100,
                 timePassed: 0
-            }, t
+            }, r
         }
-        return (0, C.A)(r, [{
+        return (0, C.A)(n, [{
             key: "componentDidMount",
             value: function() {
                 this.interval = tl()(this.statusInterval, this.state.delay)
@@ -18944,7 +18944,7 @@ var p7 = function(e) {
                     }
                 })), (0, el.h)("div", {
                     className: "adyen-checkout__qr-loader__countdown"
-                }, w[0], "\xa0", (0, el.h)(p3, {
+                }, w[0], "\xa0", (0, el.h)(p6, {
                     minutesFromNow: d,
                     onTick: this.onTick,
                     onCompleted: this.onTimeUp
@@ -18965,7 +18965,7 @@ var p7 = function(e) {
                     label: g.get("button.copy")
                 })), l && (0, el.h)("div", {
                     className: "adyen-checkout__qr-loader__app-link"
-                }, (0, el.h)(i3, null), (0, el.h)(nu, {
+                }, (0, el.h)(i6, null), (0, el.h)(nu, {
                     classNameModifiers: ["qr-loader"],
                     onClick: function() {
                         return i.redirectToApp(l)
@@ -18973,7 +18973,7 @@ var p7 = function(e) {
                     label: g.get("openApp")
                 })))
             }
-        }]), r
+        }]), n
     }();
 
 function hr(e, t) {
@@ -18995,9 +18995,9 @@ function hr(e, t) {
     throttledInterval: 1e4,
     introduction: "wechatpay.scanqrcode"
 });
-var ha = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var ha = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -19006,18 +19006,18 @@ var ha = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatData",
         value: function() {
             return {
@@ -19083,7 +19083,7 @@ var ha = function(e) {
                 }
             })) : null
         }
-    }]), r
+    }]), n
 }();
 
 function ho(e, t) {
@@ -19103,9 +19103,9 @@ function ho(e, t) {
     onComplete: function() {},
     onActionHandled: function() {}
 });
-var hi = function(e) {
-    (0, eo.A)(r, ha);
-    var t, n = (t = function() {
+var hi = function() {
+    (0, eo.A)(n, ha);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -19114,18 +19114,18 @@ var hi = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
             return function(e) {
@@ -19141,9 +19141,9 @@ var hi = function(e) {
             }({
                 delay: 2e3,
                 countdownTime: 15
-            }, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e))
+            }, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e))
         }
-    }]), r
+    }]), n
 }();
 
 function hs(e, t) {
@@ -19156,9 +19156,9 @@ function hs(e, t) {
     }
     return n
 }(0, w.A)(hi, "type", "wechatpayQR");
-var hl = function(e) {
-    (0, eo.A)(r, ha);
-    var t, n = (t = function() {
+var hl = function() {
+    (0, eo.A)(n, ha);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -19167,18 +19167,18 @@ var hl = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
             return function(e) {
@@ -19194,9 +19194,9 @@ var hl = function(e) {
             }({
                 delay: 2e3,
                 countdownTime: 3
-            }, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e))
+            }, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e))
         }
-    }]), r
+    }]), n
 }();
 
 function hc(e, t) {
@@ -19209,9 +19209,9 @@ function hc(e, t) {
     }
     return n
 }(0, w.A)(hl, "type", "paynow");
-var hu = function(e) {
-    (0, eo.A)(r, ha);
-    var t, n = (t = function() {
+var hu = function() {
+    (0, eo.A)(n, ha);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -19220,18 +19220,18 @@ var hu = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
             return function(e) {
@@ -19248,14 +19248,14 @@ var hu = function(e) {
                 delay: 2e3,
                 countdownTime: 15,
                 buttonLabel: window.matchMedia("(max-width: 768px)").matches && /Android|iPhone|iPod/.test(navigator.userAgent) ? "openApp" : "generateQRCode"
-            }, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e))
+            }, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e))
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(hu, "type", "bcmc_mobile");
-var hd = function(e) {
-    (0, eo.A)(r, sh);
-    var t, n = (t = function() {
+var hd = function() {
+    (0, eo.A)(n, sh);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -19264,23 +19264,23 @@ var hd = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r)
+    return (0, C.A)(n)
 }();
 (0, w.A)(hd, "type", "molpay_ebanking_fpx_MY");
-var hp = function(e) {
-    (0, eo.A)(r, sh);
-    var t, n = (t = function() {
+var hp = function() {
+    (0, eo.A)(n, sh);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -19289,23 +19289,23 @@ var hp = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r)
+    return (0, C.A)(n)
 }();
 (0, w.A)(hp, "type", "molpay_ebanking_TH");
-var hh = function(e) {
-    (0, eo.A)(r, sh);
-    var t, n = (t = function() {
+var hh = function() {
+    (0, eo.A)(n, sh);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -19314,18 +19314,18 @@ var hh = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r)
+    return (0, C.A)(n)
 }();
 
 function hf(e, t) {
@@ -19487,9 +19487,9 @@ function hb(e) {
     items: [],
     onChange: function() {}
 };
-var hA = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var hA = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -19498,18 +19498,18 @@ var hA = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "isValid",
         get: function() {
             return !!this.state.isValid
@@ -19519,14 +19519,14 @@ var hA = function(e) {
         value: function() {
             var e = this.state.data,
                 t = e.issuer,
-                n = e.shopperEmail;
-            return hb(hb({}, n && {
-                shopperEmail: n
+                r = e.shopperEmail;
+            return hb(hb({}, r && {
+                shopperEmail: r
             }), {}, {
                 paymentMethod: hb(hb({}, t && {
                     issuer: t
                 }), {}, {
-                    type: this.props.type || r.type
+                    type: this.props.type || n.type
                 })
             })
         }
@@ -19564,7 +19564,7 @@ var hA = function(e) {
                 payButton: this.payButton
             })))
         }
-    }]), r
+    }]), n
 }();
 
 function h_(e) {
@@ -19646,9 +19646,9 @@ function hw(e) {
     }
     return e
 }
-var hS = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var hS = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -19657,18 +19657,18 @@ var hS = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "isValid",
         get: function() {
             return !!this.state.isValid
@@ -19678,7 +19678,7 @@ var hS = function(e) {
         value: function() {
             return hw(hw({}, this.state.data), {}, {
                 paymentMethod: {
-                    type: this.props.type || r.type
+                    type: this.props.type || n.type
                 }
             })
         }
@@ -19707,7 +19707,7 @@ var hS = function(e) {
                 payButton: this.payButton
             })))
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(hS, "type", "doku"), (0, w.A)(hS, "defaultProps", {
     showFormInstruction: !0
@@ -19993,9 +19993,9 @@ function hT(e) {
     }
     return e
 }
-var hB = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var hB = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -20004,23 +20004,23 @@ var hB = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        var e, t;
-        (0, k.A)(this, r);
+    function n() {
+        var e, r;
+        (0, k.A)(this, n);
         for (var a = arguments.length, o = Array(a), i = 0; i < a; i++) o[i] = arguments[i];
-        return t = n.call.apply(n, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(t), "handleRef", function(e) {
-            t.componentRef = e
-        }), t
+        return r = t.call.apply(t, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(r), "handleRef", function(e) {
+            r.componentRef = e
+        }), r
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "isValid",
         get: function() {
             return !!this.state.isValid
@@ -20030,7 +20030,7 @@ var hB = function(e) {
         value: function() {
             var e = this.state.data,
                 t = void 0 === e ? {} : e,
-                n = t.billingAddress,
+                r = t.billingAddress,
                 a = t.shopperEmail,
                 o = t.firstName,
                 i = t.lastName,
@@ -20038,10 +20038,10 @@ var hB = function(e) {
                 l = void 0 === s ? "" : s;
             return hT(hT(hT(hT({
                 paymentMethod: {
-                    type: this.props.type || r.type
+                    type: this.props.type || n.type
                 }
-            }, n && {
-                billingAddress: n
+            }, r && {
+                billingAddress: r
             }), a && {
                 shopperEmail: a
             }), o && i && {
@@ -20071,7 +20071,7 @@ var hB = function(e) {
                 payButton: this.payButton
             })))
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(hB, "type", "boletobancario");
 var hD = function(e) {
@@ -20132,9 +20132,9 @@ function hV(e) {
     }
     return e
 }
-var hj = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var hj = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -20143,23 +20143,23 @@ var hj = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        var e, t;
-        (0, k.A)(this, r);
+    function n() {
+        var e, r;
+        (0, k.A)(this, n);
         for (var a = arguments.length, o = Array(a), i = 0; i < a; i++) o[i] = arguments[i];
-        return t = n.call.apply(n, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(t), "handleRef", function(e) {
-            t.componentRef = e
-        }), t
+        return r = t.call.apply(t, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(r), "handleRef", function(e) {
+            r.componentRef = e
+        }), r
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "isValid",
         get: function() {
             return !0
@@ -20169,7 +20169,7 @@ var hj = function(e) {
         value: function() {
             return {
                 paymentMethod: {
-                    type: this.props.type || r.type
+                    type: this.props.type || n.type
                 }
             }
         }
@@ -20189,7 +20189,7 @@ var hj = function(e) {
                 onClick: this.submit
             })))
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(hj, "type", "oxxo"), (0, w.A)(hj, "defaultProps", {
     showPayButton: !1,
@@ -20250,9 +20250,9 @@ function hK(e) {
     }
     return e
 }
-var hH = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var hH = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -20261,23 +20261,23 @@ var hH = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        var e, t;
-        (0, k.A)(this, r);
+    function n() {
+        var e, r;
+        (0, k.A)(this, n);
         for (var a = arguments.length, o = Array(a), i = 0; i < a; i++) o[i] = arguments[i];
-        return t = n.call.apply(n, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(t), "handleRef", function(e) {
-            t.componentRef = e
-        }), t
+        return r = t.call.apply(t, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(r), "handleRef", function(e) {
+            r.componentRef = e
+        }), r
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "isValid",
         get: function() {
             return !0
@@ -20294,7 +20294,7 @@ var hH = function(e) {
         value: function() {
             return {
                 paymentMethod: {
-                    type: this.props.type || r.type
+                    type: this.props.type || n.type
                 }
             }
         }
@@ -20322,14 +20322,14 @@ var hH = function(e) {
                 }
             })) : null
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(hH, "type", "multibanco"), (0, w.A)(hH, "defaultProps", {
     showPayButton: !0
 });
-var hz = function(e) {
-    (0, eo.A)(r, sh);
-    var t, n = (t = function() {
+var hz = function() {
+    (0, eo.A)(n, sh);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -20338,18 +20338,18 @@ var hz = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r)
+    return (0, C.A)(n)
 }();
 
 function hW(e, t) {
@@ -20374,9 +20374,9 @@ function hG(e) {
     }
     return e
 }(0, w.A)(hz, "type", "dotpay");
-var h$ = function(e) {
-    (0, eo.A)(r, sh);
-    var t, n = (t = function() {
+var h$ = function() {
+    (0, eo.A)(n, sh);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -20385,25 +20385,25 @@ var h$ = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
-            return hG(hG({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e)), {}, {
+            return hG(hG({}, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e)), {}, {
                 showImage: !1
             })
         }
-    }]), r
+    }]), n
 }();
 
 function hY(e) {
@@ -20520,9 +20520,9 @@ var hJ = function(e) {
             })
         }))
     },
-    h0 = function(e) {
-        (0, eo.A)(r, el.uA);
-        var t, n = (t = function() {
+    h0 = function() {
+        (0, eo.A)(n, el.uA);
+        var e, t = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -20531,46 +20531,46 @@ var hJ = function(e) {
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(r);
-            if (t) {
+            var t, r = (0, es.A)(n);
+            if (e) {
                 var a = (0, es.A)(this).constructor;
-                e = en()(n, arguments, a)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(r, arguments, a)
+            } else t = r.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function r() {
-            var e, t;
-            (0, k.A)(this, r);
+        function n() {
+            var e, r;
+            (0, k.A)(this, n);
             for (var a = arguments.length, o = Array(a), i = 0; i < a; i++) o[i] = arguments[i];
-            return t = n.call.apply(n, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(t), "state", {
+            return r = t.call.apply(t, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(r), "state", {
                 status: "ready",
                 data: {},
                 balance: null,
                 transactionLimit: null,
                 focusedElement: !1,
                 isValid: !1
-            }), (0, w.A)((0, ea.A)(t), "sfp", void 0), (0, w.A)((0, ea.A)(t), "onChange", function(e) {
-                t.props.onChange({
+            }), (0, w.A)((0, ea.A)(r), "sfp", void 0), (0, w.A)((0, ea.A)(r), "onChange", function(e) {
+                r.props.onChange({
                     data: e.data,
                     isValid: e.isSfpValid
                 })
-            }), (0, w.A)((0, ea.A)(t), "showValidation", function() {
-                t.sfp.showValidation()
-            }), (0, w.A)((0, ea.A)(t), "handleFocus", function(e) {
-                t.setState({
+            }), (0, w.A)((0, ea.A)(r), "showValidation", function() {
+                r.sfp.showValidation()
+            }), (0, w.A)((0, ea.A)(r), "handleFocus", function(e) {
+                r.setState({
                     focusedElement: e.currentFocusObject
-                }), !0 === e.focus ? t.props.onFocus(e) : t.props.onBlur(e)
-            }), (0, w.A)((0, ea.A)(t), "setBalance", function(e) {
-                var n = e.balance,
-                    r = e.transactionLimit;
-                t.setState({
-                    balance: n,
-                    transactionLimit: r
+                }), !0 === e.focus ? r.props.onFocus(e) : r.props.onBlur(e)
+            }), (0, w.A)((0, ea.A)(r), "setBalance", function(e) {
+                var t = e.balance,
+                    n = e.transactionLimit;
+                r.setState({
+                    balance: t,
+                    transactionLimit: n
                 })
-            }), t
+            }), r
         }
-        return (0, C.A)(r, [{
+        return (0, C.A)(n, [{
             key: "setStatus",
             value: function(e) {
                 this.setState({
@@ -20635,7 +20635,7 @@ var hJ = function(e) {
                     label: s.get("applyGiftcard")
                 }))
             }
-        }]), r
+        }]), n
     }();
 
 function h1(e, t) {
@@ -20678,9 +20678,9 @@ function h2(e) {
         })))
     }
 });
-var h4 = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var h4 = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -20689,59 +20689,59 @@ var h4 = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        var e, t;
-        (0, k.A)(this, r);
+    function n() {
+        var e, r;
+        (0, k.A)(this, n);
         for (var a = arguments.length, o = Array(a), i = 0; i < a; i++) o[i] = arguments[i];
-        return t = n.call.apply(n, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(t), "handleBalanceCheck", function(e) {
-            return t.props.onBalanceCheck ? new(B())(function(n, r) {
-                t.props.onBalanceCheck(n, r, e)
-            }) : t.props.session ? t.props.session.checkBalance(e) : void 0
-        }), (0, w.A)((0, ea.A)(t), "onOrderRequest", function(e) {
-            return t.props.onOrderRequest ? new(B())(function(n, r) {
-                t.props.onOrderRequest(n, r, e)
-            }) : t.props.session ? t.props.session.createOrder() : void 0
-        }), (0, w.A)((0, ea.A)(t), "handleOrder", function(e) {
-            var n = e.order;
-            if (t.updateParent({
-                    order: n
-                }), t.props.session && t.props.onOrderCreated) return t.props.onOrderCreated(n)
-        }), (0, w.A)((0, ea.A)(t), "onBalanceCheck", function() {
-            return t.props.session || t.props.onBalanceCheck ? t.isValid ? (t.setStatus("loading"), void t.handleBalanceCheck(t.formatData()).then(function(e) {
-                var n, r = e.balance,
+        return r = t.call.apply(t, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(r), "handleBalanceCheck", function(e) {
+            return r.props.onBalanceCheck ? new(B())(function(t, n) {
+                r.props.onBalanceCheck(t, n, e)
+            }) : r.props.session ? r.props.session.checkBalance(e) : void 0
+        }), (0, w.A)((0, ea.A)(r), "onOrderRequest", function(e) {
+            return r.props.onOrderRequest ? new(B())(function(t, n) {
+                r.props.onOrderRequest(t, n, e)
+            }) : r.props.session ? r.props.session.createOrder() : void 0
+        }), (0, w.A)((0, ea.A)(r), "handleOrder", function(e) {
+            var t = e.order;
+            if (r.updateParent({
+                    order: t
+                }), r.props.session && r.props.onOrderCreated) return r.props.onOrderCreated(t)
+        }), (0, w.A)((0, ea.A)(r), "onBalanceCheck", function() {
+            return r.props.session || r.props.onBalanceCheck ? r.isValid ? (r.setStatus("loading"), void r.handleBalanceCheck(r.formatData()).then(function(e) {
+                var t, n = e.balance,
                     a = e.transactionLimit,
                     o = void 0 === a ? {} : a;
-                if (!r) throw Error("card-error");
-                if ((null == r ? void 0 : r.currency) !== (null == (n = t.props.amount) ? void 0 : n.currency)) throw Error("currency-error");
-                if ((null == r ? void 0 : r.value) <= 0) throw Error("no-balance");
-                if (t.componentRef.setBalance({
-                        balance: r,
+                if (!n) throw Error("card-error");
+                if ((null == n ? void 0 : n.currency) !== (null == (t = r.props.amount) ? void 0 : t.currency)) throw Error("currency-error");
+                if ((null == n ? void 0 : n.value) <= 0) throw Error("no-balance");
+                if (r.componentRef.setBalance({
+                        balance: n,
                         transactionLimit: o
-                    }), t.props.amount.value > r.value || t.props.amount.value > o.value) return t.props.order ? t.submit() : t.onOrderRequest(t.data).then(function(e) {
-                    t.setState({
+                    }), r.props.amount.value > n.value || r.props.amount.value > o.value) return r.props.order ? r.submit() : r.onOrderRequest(r.data).then(function(e) {
+                    r.setState({
                         order: {
                             orderData: e.orderData,
                             pspReference: e.pspReference
                         }
-                    }), t.submit()
+                    }), r.submit()
                 });
-                t.props.onRequiringConfirmation && t.props.onRequiringConfirmation()
+                r.props.onRequiringConfirmation && r.props.onRequiringConfirmation()
             }).catch(function(e) {
-                t.setStatus((null == e ? void 0 : e.message) || "error"), t.props.onError && t.handleError(new nv("ERROR", e))
-            })) : (t.showValidation(), !1) : t.submit()
-        }), (0, w.A)((0, ea.A)(t), "payButton", function(e) {
+                r.setStatus((null == e ? void 0 : e.message) || "error"), r.props.onError && r.handleError(new nv("ERROR", e))
+            })) : (r.showValidation(), !1) : r.submit()
+        }), (0, w.A)((0, ea.A)(r), "payButton", function(e) {
             return (0, el.h)(nm, e)
-        }), t
+        }), r
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
             return h2(h2({}, null == e ? void 0 : e.configuration), e)
@@ -20800,14 +20800,14 @@ var h4 = function(e) {
                 payButton: this.payButton
             })))
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(h4, "type", "giftcard"), (0, w.A)(h4, "defaultProps", {
     brandsConfiguration: {}
 });
-var h8 = function(e) {
-    (0, eo.A)(r, dc);
-    var t, n = (t = function() {
+var h8 = function() {
+    (0, eo.A)(n, dc);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -20816,21 +20816,21 @@ var h8 = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r)
+    return (0, C.A)(n)
 }();
 
-function h3(e, t) {
+function h6(e, t) {
     var n = c()(e);
     if (d()) {
         var r = d()(e);
@@ -20841,12 +20841,12 @@ function h3(e, t) {
     return n
 }
 
-function h6(e) {
+function h3(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n, r, a = null != arguments[t] ? arguments[t] : {};
-        t % 2 ? N()(n = h3(Object(a), !0)).call(n, function(t) {
+        t % 2 ? N()(n = h6(Object(a), !0)).call(n, function(t) {
             (0, w.A)(e, t, a[t])
-        }) : m() ? v()(e, m()(a)) : N()(r = h3(Object(a))).call(r, function(t) {
+        }) : m() ? v()(e, m()(a)) : N()(r = h6(Object(a))).call(r, function(t) {
             b()(e, t, h()(a, t))
         })
     }
@@ -20856,9 +20856,9 @@ function h6(e) {
     showPayButton: !0,
     name: "Vipps"
 });
-var h5 = function(e) {
-    (0, eo.A)(r, sh);
-    var t, n = (t = function() {
+var h5 = function() {
+    (0, eo.A)(n, sh);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -20867,25 +20867,25 @@ var h5 = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
-            return h6(h6({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e)), {}, {
+            return h3(h3({}, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e)), {}, {
                 showImage: !1
             })
         }
-    }]), r
+    }]), n
 }();
 
 function h9(e, t) {
@@ -20910,9 +20910,9 @@ function h7(e) {
     }
     return e
 }(0, w.A)(h5, "type", "payu_IN_cashcard");
-var fe = function(e) {
-    (0, eo.A)(r, sh);
-    var t, n = (t = function() {
+var fe = function() {
+    (0, eo.A)(n, sh);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -20921,25 +20921,25 @@ var fe = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
-            return h7(h7({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e)), {}, {
+            return h7(h7({}, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e)), {}, {
                 showImage: !1
             })
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(fe, "type", "payu_IN_nb");
 var ft = ["AT", "CH", "DE", "NL"];
@@ -20966,9 +20966,9 @@ function fr(e) {
     }
     return e
 }
-var fa = function(e) {
-    (0, eo.A)(r, iu);
-    var t, n = (t = function() {
+var fa = function() {
+    (0, eo.A)(n, iu);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -20977,25 +20977,25 @@ var fa = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
-            return fr(fr({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e)), {}, {
+            return fr(fr({}, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e)), {}, {
                 allowedCountries: e.countryCode ? [e.countryCode] : ft
             })
         }
-    }]), r
+    }]), n
 }();
 
 function fo(e, t) {
@@ -21008,9 +21008,9 @@ function fo(e, t) {
     }
     return n
 }(0, w.A)(fa, "type", "ratepay");
-var fi = function(e) {
-    (0, eo.A)(r, ha);
-    var t, n = (t = function() {
+var fi = function() {
+    (0, eo.A)(n, ha);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -21019,18 +21019,18 @@ var fi = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
             return function(e) {
@@ -21047,9 +21047,9 @@ var fi = function(e) {
                 delay: 2e3,
                 countdownTime: 3,
                 instructions: "swish.pendingMessage"
-            }, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e))
+            }, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e))
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(fi, "type", "swish");
 var fs = function(e) {
@@ -21177,9 +21177,9 @@ var fs = function(e) {
             })
         }, n))
     },
-    fm = function(e) {
-        (0, eo.A)(r, el.uA);
-        var t, n = (t = function() {
+    fm = function() {
+        (0, eo.A)(n, el.uA);
+        var e, t = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -21188,33 +21188,33 @@ var fs = function(e) {
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(r);
-            if (t) {
+            var t, r = (0, es.A)(n);
+            if (e) {
                 var a = (0, es.A)(this).constructor;
-                e = en()(n, arguments, a)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(r, arguments, a)
+            } else t = r.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function r() {
-            var e, t;
-            (0, k.A)(this, r);
+        function n() {
+            var e, r;
+            (0, k.A)(this, n);
             for (var a = arguments.length, o = Array(a), i = 0; i < a; i++) o[i] = arguments[i];
-            return t = n.call.apply(n, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(t), "state", {
+            return r = t.call.apply(t, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(r), "state", {
                 showDisableStoredPaymentMethodConfirmation: !1,
                 activeBrand: null
-            }), (0, w.A)((0, ea.A)(t), "toggleDisableConfirmation", function() {
-                t.setState({
-                    showDisableStoredPaymentMethodConfirmation: !t.state.showDisableStoredPaymentMethodConfirmation
+            }), (0, w.A)((0, ea.A)(r), "toggleDisableConfirmation", function() {
+                r.setState({
+                    showDisableStoredPaymentMethodConfirmation: !r.state.showDisableStoredPaymentMethodConfirmation
                 })
-            }), (0, w.A)((0, ea.A)(t), "onDisableStoredPaymentMethod", function() {
-                t.props.onDisableStoredPaymentMethod(t.props.paymentMethod), t.toggleDisableConfirmation()
-            }), (0, w.A)((0, ea.A)(t), "handleOnListItemClick", function() {
-                var e = t.props;
+            }), (0, w.A)((0, ea.A)(r), "onDisableStoredPaymentMethod", function() {
+                r.props.onDisableStoredPaymentMethod(r.props.paymentMethod), r.toggleDisableConfirmation()
+            }), (0, w.A)((0, ea.A)(r), "handleOnListItemClick", function() {
+                var e = r.props;
                 (0, e.onSelect)(e.paymentMethod)
-            }), t
+            }), r
         }
-        return (0, C.A)(r, [{
+        return (0, C.A)(n, [{
             key: "componentDidMount",
             value: function() {
                 var e = this;
@@ -21307,7 +21307,7 @@ var fs = function(e) {
                     isLoaded: s
                 })))
             }
-        }]), r
+        }]), n
     }();
 (0, w.A)(fm, "defaultProps", {
     paymentMethod: null,
@@ -21369,7 +21369,7 @@ function fv(e) {
         return (0, el.h)("li", {
             key: e.type
         }, e.render())
-    })), (0, el.h)(i3, {
+    })), (0, el.h)(i6, {
         label: n.get("orPayWith")
     }))
 }
@@ -21396,9 +21396,9 @@ function fb(e) {
     }
     return e
 }
-var fA = function(e) {
-    (0, eo.A)(r, el.uA);
-    var t, n = (t = function() {
+var fA = function() {
+    (0, eo.A)(n, el.uA);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -21407,18 +21407,18 @@ var fA = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "componentDidMount",
         value: function() {
             if (this.props.paymentMethods[0]) {
@@ -21476,7 +21476,7 @@ var fA = function(e) {
                 })
             })))
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(fA, "defaultProps", {
     instantPaymentMethods: [],
@@ -21550,9 +21550,9 @@ function fw(e) {
     }
     return e
 }
-var fS = function(e) {
-        (0, eo.A)(r, el.uA);
-        var t, n = (t = function() {
+var fS = function() {
+        (0, eo.A)(n, el.uA);
+        var e, t = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -21561,19 +21561,19 @@ var fS = function(e) {
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(r);
-            if (t) {
+            var t, r = (0, es.A)(n);
+            if (e) {
                 var a = (0, es.A)(this).constructor;
-                e = en()(n, arguments, a)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(r, arguments, a)
+            } else t = r.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function r() {
-            var e, t;
-            (0, k.A)(this, r);
+        function n() {
+            var e, r;
+            (0, k.A)(this, n);
             for (var a = arguments.length, o = Array(a), i = 0; i < a; i++) o[i] = arguments[i];
-            return t = n.call.apply(n, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(t), "state", {
+            return r = t.call.apply(t, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(r), "state", {
                 elements: [],
                 instantPaymentElements: [],
                 orderStatus: null,
@@ -21584,98 +21584,98 @@ var fS = function(e) {
                 },
                 activePaymentMethod: null,
                 cachedPaymentMethods: {}
-            }), (0, w.A)((0, ea.A)(t), "prepareDropinData", function() {
-                var e, n = t.props,
-                    r = n.order,
-                    a = n.clientKey,
-                    o = n.loadingContext,
-                    i = t.props.onCreateElements(),
+            }), (0, w.A)((0, ea.A)(r), "prepareDropinData", function() {
+                var e, t = r.props,
+                    n = t.order,
+                    a = t.clientKey,
+                    o = t.loadingContext,
+                    i = r.props.onCreateElements(),
                     s = (0, K.A)(i, 3),
                     l = s[0],
                     c = s[1],
                     u = s[2],
-                    d = r ? (e = {
+                    d = n ? (e = {
                         clientKey: a,
                         loadingContext: o
-                    }, a3({
+                    }, a6({
                         path: "v1/order/status?clientKey=".concat(e.clientKey),
                         loadingContext: e.loadingContext
                     }, {
-                        orderData: r.orderData
+                        orderData: n.orderData
                     })) : null;
                 B().all([l, c, u, d]).then(function(e) {
-                    var n, r = (0, K.A)(e, 4),
-                        a = r[0],
-                        o = r[1],
-                        i = r[2],
-                        s = r[3];
-                    t.setState({
+                    var t, n = (0, K.A)(e, 4),
+                        a = n[0],
+                        o = n[1],
+                        i = n[2],
+                        s = n[3];
+                    r.setState({
                         instantPaymentElements: i,
-                        elements: M()(n = []).call(n, (0, H.A)(a), (0, H.A)(o)),
+                        elements: M()(t = []).call(t, (0, H.A)(a), (0, H.A)(o)),
                         orderStatus: s
-                    }), t.setStatus("ready"), t.props.modules.analytics && t.props.modules.analytics.send({
-                        containerWidth: t.base && t.base.offsetWidth,
+                    }), r.setStatus("ready"), r.props.modules.analytics && r.props.modules.analytics.send({
+                        containerWidth: r.base && r.base.offsetWidth,
                         paymentMethods: J()(o).call(o, function(e) {
                             return e.props.type
                         }),
                         component: "dropin",
                         flavor: "dropin"
                     })
-                }), t.onOrderCancel = t.getOnOrderCancel()
-            }), (0, w.A)((0, ea.A)(t), "setStatus", function(e) {
-                var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-                t.setState({
+                }), r.onOrderCancel = r.getOnOrderCancel()
+            }), (0, w.A)((0, ea.A)(r), "setStatus", function(e) {
+                var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+                r.setState({
                     status: {
                         type: e,
-                        props: n
+                        props: t
                     }
                 })
-            }), (0, w.A)((0, ea.A)(t), "setActivePaymentMethod", function(e) {
-                t.setState(function(t) {
+            }), (0, w.A)((0, ea.A)(r), "setActivePaymentMethod", function(e) {
+                r.setState(function(t) {
                     return {
                         activePaymentMethod: e,
                         cachedPaymentMethods: fw(fw({}, t.cachedPaymentMethods), {}, (0, w.A)({}, e._id, !0))
                     }
                 })
-            }), (0, w.A)((0, ea.A)(t), "handleOnSelectPaymentMethod", function(e) {
-                var n = t.state.activePaymentMethod;
-                t.setActivePaymentMethod(e), (n && n._id !== e._id || !n) && t.props.onSelect(e)
-            }), (0, w.A)((0, ea.A)(t), "handleDisableStoredPaymentMethod", function(e) {
-                t.setState({
+            }), (0, w.A)((0, ea.A)(r), "handleOnSelectPaymentMethod", function(e) {
+                var t = r.state.activePaymentMethod;
+                r.setActivePaymentMethod(e), (t && t._id !== e._id || !t) && r.props.onSelect(e)
+            }), (0, w.A)((0, ea.A)(r), "handleDisableStoredPaymentMethod", function(e) {
+                r.setState({
                     isDisabling: !0
-                }), new(B())(function(n, r) {
-                    return t.props.onDisableStoredPaymentMethod(e.props.storedPaymentMethodId, n, r)
+                }), new(B())(function(t, n) {
+                    return r.props.onDisableStoredPaymentMethod(e.props.storedPaymentMethodId, t, n)
                 }).then(function() {
-                    t.setState(function(t) {
+                    r.setState(function(t) {
                         var n;
                         return {
                             elements: P()(n = t.elements).call(n, function(t) {
                                 return t._id !== e._id
                             })
                         }
-                    }), t.setState({
+                    }), r.setState({
                         isDisabling: !1
                     })
                 }).catch(function() {
-                    t.setState({
+                    r.setState({
                         isDisabling: !1
                     })
                 })
-            }), (0, w.A)((0, ea.A)(t), "getOnOrderCancel", function() {
-                return t.props.onOrderCancel ? function(e) {
-                    t.props.onOrderCancel(e)
-                } : t.props.session ? function(e) {
-                    return t.props.session.cancelOrder(e).then(function() {
-                        return t.props._parentInstance.update({
+            }), (0, w.A)((0, ea.A)(r), "getOnOrderCancel", function() {
+                return r.props.onOrderCancel ? function(e) {
+                    r.props.onOrderCancel(e)
+                } : r.props.session ? function(e) {
+                    return r.props.session.cancelOrder(e).then(function() {
+                        return r.props._parentInstance.update({
                             order: null
                         })
                     }).catch(function(e) {
-                        return t.setStatus((null == e ? void 0 : e.message) || "error")
+                        return r.setStatus((null == e ? void 0 : e.message) || "error")
                     })
                 } : null
-            }), (0, w.A)((0, ea.A)(t), "onOrderCancel", void 0), t
+            }), (0, w.A)((0, ea.A)(r), "onOrderCancel", void 0), r
         }
-        return (0, C.A)(r, [{
+        return (0, C.A)(n, [{
             key: "componentDidMount",
             value: function() {
                 this.prepareDropinData()
@@ -21734,7 +21734,7 @@ var fS = function(e) {
                         }))
                 }
             }
-        }]), r
+        }]), n
     }(),
     fN = ["androidpay", "samsungpay", "clicktopay"],
     fx = function(e) {
@@ -21840,9 +21840,9 @@ function fB(e) {
     return e
 }
 var fD = ["paywithgoogle", "googlepay", "applepay"],
-    fL = function(e) {
-        (0, eo.A)(r, n_);
-        var t, n = (t = function() {
+    fL = function() {
+        (0, eo.A)(n, n_);
+        var e, t = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -21851,17 +21851,17 @@ var fD = ["paywithgoogle", "googlepay", "applepay"],
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(r);
-            if (t) {
+            var t, r = (0, es.A)(n);
+            if (e) {
                 var a = (0, es.A)(this).constructor;
-                e = en()(n, arguments, a)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(r, arguments, a)
+            } else t = r.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function r(e) {
-            var t, a, o;
-            return (0, k.A)(this, r), o = n.call(this, e), (0, w.A)((0, ea.A)(o), "dropinRef", null), (0, w.A)((0, ea.A)(o), "componentFromAction", void 0), (0, w.A)((0, ea.A)(o), "handleCreate", function() {
+        function n(e) {
+            var r, a, o;
+            return (0, k.A)(this, n), o = t.call(this, e), (0, w.A)((0, ea.A)(o), "dropinRef", null), (0, w.A)((0, ea.A)(o), "componentFromAction", void 0), (0, w.A)((0, ea.A)(o), "handleCreate", function() {
                 var e, t = o.props,
                     n = t.paymentMethods,
                     r = t.storedPaymentMethods,
@@ -21896,12 +21896,12 @@ var fD = ["paywithgoogle", "googlepay", "applepay"],
                 o.updateParent({
                     order: t
                 })
-            }), o.submit = F()(t = o.submit).call(t, (0, ea.A)(o)), o.handleAction = F()(a = o.handleAction).call(a, (0, ea.A)(o)), o
+            }), o.submit = F()(r = o.submit).call(r, (0, ea.A)(o)), o.handleAction = F()(a = o.handleAction).call(a, (0, ea.A)(o)), o
         }
-        return (0, C.A)(r, [{
+        return (0, C.A)(n, [{
             key: "formatProps",
             value: function(e) {
-                var t, n, a = P()(t = tn()(new(tp())(e.instantPaymentTypes))).call(t, function(e) {
+                var t, r, a = P()(t = tn()(new(tp())(e.instantPaymentTypes))).call(t, function(e) {
                         return E()(fD).call(fD, e)
                     }),
                     o = $()(a).call(a, function(t, n) {
@@ -21910,11 +21910,11 @@ var fD = ["paywithgoogle", "googlepay", "applepay"],
                         });
                         return o ? M()(a = []).call(a, (0, H.A)(t), [o]) : t
                     }, []),
-                    i = P()(n = e.paymentMethods).call(n, function(e) {
+                    i = P()(r = e.paymentMethods).call(r, function(e) {
                         var t = e.type;
                         return !E()(a).call(a, t)
                     });
-                return fB(fB({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e)), {}, {
+                return fB(fB({}, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e)), {}, {
                     instantPaymentTypes: a,
                     instantPaymentMethods: o,
                     paymentMethods: i
@@ -21956,13 +21956,13 @@ var fD = ["paywithgoogle", "googlepay", "applepay"],
         }, {
             key: "handleAction",
             value: function(e) {
-                var t, n, a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+                var t, r, a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
                 if (!e || !e.type) {
                     if (ng(e, "action") && ng(e, "resultCode")) throw Error('handleAction::Invalid Action - the passed action object itself has an "action" property and a "resultCode": have you passed in the whole response object by mistake?');
                     throw Error('handleAction::Invalid Action - the passed action object does not have a "type" property')
                 }
                 if ("redirect" !== e.type && null != (t = this.activePaymentMethod) && t.updateWithAction) return this.activePaymentMethod.updateWithAction(e);
-                this.elementRef instanceof r && (a = fB(fB({}, null == (n = this.elementRef.activePaymentMethod) ? void 0 : n.props), a));
+                this.elementRef instanceof n && (a = fB(fB({}, null == (r = this.elementRef.activePaymentMethod) ? void 0 : r.props), a));
                 var o = this._parentInstance.createFromAction(e, fB(fB({}, a), {}, {
                     elementRef: this.elementRef,
                     onAdditionalDetails: this.handleAdditionalDetails,
@@ -21996,7 +21996,7 @@ var fD = ["paywithgoogle", "googlepay", "applepay"],
                     }
                 }))))
             }
-        }]), r
+        }]), n
     }();
 (0, w.A)(fL, "type", "dropin"), (0, w.A)(fL, "defaultProps", {
     isDropin: !0,
@@ -22331,9 +22331,9 @@ function fY(e) {
     }
     return e
 }
-var fQ = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var fQ = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -22342,18 +22342,18 @@ var fQ = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
             var t;
@@ -22365,15 +22365,15 @@ var fQ = function(e) {
         key: "formatData",
         value: function() {
             var e, t = !!this.props.storedPaymentMethodId,
-                n = fY(fY({
-                    type: r.type
+                r = fY(fY({
+                    type: n.type
                 }, this.state.data), {}, {
                     ownerName: null == (e = this.state.data) ? void 0 : e.holderName
                 }, t && {
                     storedPaymentMethodId: this.props.storedPaymentMethodId
                 });
-            return delete n.holderName, fY(fY({
-                paymentMethod: n
+            return delete r.holderName, fY(fY({
+                paymentMethod: r
             }, this.state.billingAddress && {
                 billingAddress: this.state.billingAddress
             }), this.state.storePaymentMethod && {
@@ -22431,7 +22431,7 @@ var fQ = function(e) {
                 resources: this.resources
             })))
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(fQ, "type", "ach");
 var fZ = /\b(2\d{1}|(9(3|6|2|1)))\d{7}\b/,
@@ -22520,7 +22520,7 @@ function f4(e) {
             var e = document.querySelector(".adyen-checkout-phone-input--new [uniqueid]");
             return e ? e.getAttribute("uniqueid") : null
         },
-        A = t3(function(t) {
+        A = t6(function(t) {
             if (m[t]) {
                 var n = "phoneNumber" === t ? "phoneNumberErrorKey" : "phonePrefixErrorKey",
                     r = e[n] ? e[n] : m[t].errorMessage;
@@ -22610,7 +22610,7 @@ function f8(e) {
             loadingContext: y,
             handleError: e.onError
         }).allowedCountries, r = t.loadingContext, a = t.handleError, o = tX("loading"), s = (i = (0, K.A)(o, 2))[0], l = i[1], c = tX([]), d = (u = (0, K.A)(c, 2))[0], p = u[1], t2(function() {
-            a6("phonenumbers", r).then(function(e) {
+            a3("phonenumbers", r).then(function(e) {
                 var t = n.length ? P()(e).call(e, function(e) {
                     return E()(n).call(n, e.id)
                 }) : e;
@@ -22666,9 +22666,9 @@ f4.defaultProps = {
     phoneNumberKey: "mobileNumber",
     phoneNumberErrorKey: "mobileNumber.invalid"
 };
-var f3 = ["message"];
+var f6 = ["message"];
 
-function f6(e, t) {
+function f3(e, t) {
     var n = c()(e);
     if (d()) {
         var r = d()(e);
@@ -22682,9 +22682,9 @@ function f6(e, t) {
 function f5(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n, r, a = null != arguments[t] ? arguments[t] : {};
-        t % 2 ? N()(n = f6(Object(a), !0)).call(n, function(t) {
+        t % 2 ? N()(n = f3(Object(a), !0)).call(n, function(t) {
             (0, w.A)(e, t, a[t])
-        }) : m() ? v()(e, m()(a)) : N()(r = f6(Object(a))).call(r, function(t) {
+        }) : m() ? v()(e, m()(a)) : N()(r = f3(Object(a))).call(r, function(t) {
             b()(e, t, h()(a, t))
         })
     }
@@ -22739,9 +22739,9 @@ function f9(e) {
             k || (e.onActionHandled({
                 componentType: e.type,
                 actionDescription: "polling-started"
-            }), C(!0)), p6(t, r, o).then(he).catch(function(e) {
+            }), C(!0)), p3(t, r, o).then(he).catch(function(e) {
                 var t = e.message,
-                    n = (0, _.A)(e, f3);
+                    n = (0, _.A)(e, f6);
                 return {
                     type: "network-error",
                     props: f5(f5({}, t && {
@@ -22857,7 +22857,7 @@ function f9(e) {
         }
     })), (0, el.h)("div", {
         className: "adyen-checkout__await__countdown"
-    }, G[0], "\xa0", (0, el.h)(p3, {
+    }, G[0], "\xa0", (0, el.h)(p6, {
         minutesFromNow: e.countdownTime,
         onTick: function(e) {
             O(e.percentage)
@@ -22867,7 +22867,7 @@ function f9(e) {
         }
     }), "\xa0", G[1])), e.url && (0, el.h)("div", {
         className: "adyen-checkout__await__app-link"
-    }, (0, el.h)(i3, null), (0, el.h)(nu, {
+    }, (0, el.h)(i6, null), (0, el.h)(nu, {
         classNameModifiers: ["await"],
         onClick: function() {
             var t;
@@ -22911,9 +22911,9 @@ f9.defaultProps = {
     classNameModifiers: [],
     url: null
 };
-var mt = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var mt = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -22922,18 +22922,18 @@ var mt = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
             var t = e.data,
@@ -22956,7 +22956,7 @@ var mt = function(e) {
             var e;
             return {
                 paymentMethod: me({
-                    type: r.type
+                    type: n.type
                 }, (null == (e = this.state.data) ? void 0 : e.phoneNumber) && {
                     telephoneNumber: this.state.data.phonePrefix + this.state.data.phoneNumber
                 })
@@ -23014,7 +23014,7 @@ var mt = function(e) {
                 payButton: this.payButton
             })))
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(mt, "type", "mbway");
 var mn = function(e) {
@@ -23116,9 +23116,9 @@ mr.defaultProps = {
         blikCode: ""
     }
 };
-var mi = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var mi = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -23127,24 +23127,24 @@ var mi = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatData",
         value: function() {
             var e, t = !!this.props.storedPaymentMethodId;
             return {
                 paymentMethod: mo(mo({
-                    type: r.type
+                    type: n.type
                 }, !t && {
                     blikCode: null == (e = this.state) || null == (e = e.data) ? void 0 : e.blikCode
                 }), t && {
@@ -23207,7 +23207,7 @@ var mi = function(e) {
                 payButton: this.payButton
             })))
         }
-    }]), r
+    }]), n
 }();
 
 function ms(e) {
@@ -23292,9 +23292,9 @@ function mc(e, t) {
     }
     return n
 }(0, w.A)(mi, "type", "blik");
-var mu = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var mu = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -23303,26 +23303,26 @@ var mu = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        var e, t;
-        (0, k.A)(this, r);
+    function n() {
+        var e, r;
+        (0, k.A)(this, n);
         for (var a = arguments.length, o = Array(a), i = 0; i < a; i++) o[i] = arguments[i];
-        return t = n.call.apply(n, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(t), "state", {
-            isValid: !t.props.showEmailAddress,
+        return r = t.call.apply(t, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(r), "state", {
+            isValid: !r.props.showEmailAddress,
             data: {}
-        }), (0, w.A)((0, ea.A)(t), "handleRef", function(e) {
-            t.componentRef = e
-        }), t
+        }), (0, w.A)((0, ea.A)(r), "handleRef", function(e) {
+            r.componentRef = e
+        }), r
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "isValid",
         get: function() {
             return !!this.state.isValid
@@ -23343,7 +23343,7 @@ var mu = function(e) {
                 return e
             }({
                 paymentMethod: {
-                    type: r.type
+                    type: n.type
                 }
             }, e && {
                 shopperEmail: e
@@ -23372,7 +23372,7 @@ var mu = function(e) {
                 payButton: this.payButton
             })))
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(mu, "type", "bankTransfer_IBAN"), (0, w.A)(mu, "defaultProps", {
     showPayButton: !0,
@@ -23402,9 +23402,9 @@ function mh(e) {
     }
     return e
 }
-var mf = function(e) {
-    (0, eo.A)(r, iu);
-    var t, n = (t = function() {
+var mf = function() {
+    (0, eo.A)(n, iu);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -23413,26 +23413,26 @@ var mf = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
-            return mh(mh({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e)), {}, {
+            return mh(mh({}, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e)), {}, {
                 allowedCountries: md,
                 personalDetailsRequiredFields: ["firstName", "lastName", "telephoneNumber", "shopperEmail"]
             })
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(mf, "type", "affirm");
 var mm = {
@@ -23537,9 +23537,9 @@ function mb(e) {
     }
     return e
 }
-var mA = function(e) {
-    (0, eo.A)(r, ha);
-    var t, n = (t = function() {
+var mA = function() {
+    (0, eo.A)(n, ha);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -23548,18 +23548,18 @@ var mA = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "isValid",
         get: function() {
             return !!this.state.isValid
@@ -23570,7 +23570,7 @@ var mA = function(e) {
             return mb({
                 copyBtn: !0,
                 introduction: "pix.instructions"
-            }, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e))
+            }, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e))
         }
     }, {
         key: "formatData",
@@ -23614,7 +23614,7 @@ var mA = function(e) {
                 payButton: this.payButton
             })))
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(mA, "type", "pix"), (0, w.A)(mA, "defaultProps", mb({
     showPayButton: !1,
@@ -23876,9 +23876,9 @@ function mF(e) {
     }
     return e
 }
-var mO = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var mO = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -23887,37 +23887,37 @@ var mO = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        var e, t;
-        (0, k.A)(this, r);
+    function n() {
+        var e, r;
+        (0, k.A)(this, n);
         for (var a = arguments.length, o = Array(a), i = 0; i < a; i++) o[i] = arguments[i];
-        return t = n.call.apply(n, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(t), "payButton", function(e) {
+        return r = t.call.apply(t, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(r), "payButton", function(e) {
             return (0, el.h)(nm, (0, er.A)({
-                amount: t.props.amount,
-                onClick: t.submit
+                amount: r.props.amount,
+                onClick: r.submit
             }, e))
-        }), t
+        }), r
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatData",
         value: function() {
-            var e, t, n, a;
+            var e, t, r, a;
             return mF({
                 paymentMethod: mF(mF(mF({
-                    type: r.type
+                    type: n.type
                 }, (null == (e = this.state.data) ? void 0 : e.holderName) && {
                     holderName: this.state.data.holderName
                 }), (null == (t = this.state.data) ? void 0 : t.bankAccountNumber) && {
                     bankAccountNumber: this.state.data.bankAccountNumber
-                }), (null == (n = this.state.data) ? void 0 : n.bankLocationId) && {
+                }), (null == (r = this.state.data) ? void 0 : r.bankLocationId) && {
                     bankLocationId: this.state.data.bankLocationId
                 })
             }, (null == (a = this.state.data) ? void 0 : a.shopperEmail) && {
@@ -23954,14 +23954,14 @@ var mO = function(e) {
                 onSubmit: this.submit
             })))
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(mO, "type", "directdebit_GB"), (0, w.A)(mO, "defaultProps", {
     showFormInstruction: !0
 });
-var mE = function(e) {
-        (0, eo.A)(r, n_);
-        var t, n = (t = function() {
+var mE = function() {
+        (0, eo.A)(n, n_);
+        var e, t = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -23970,18 +23970,18 @@ var mE = function(e) {
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(r);
-            if (t) {
+            var t, r = (0, es.A)(n);
+            if (e) {
                 var a = (0, es.A)(this).constructor;
-                e = en()(n, arguments, a)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(r, arguments, a)
+            } else t = r.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function r() {
-            return (0, k.A)(this, r), n.apply(this, arguments)
+        function n() {
+            return (0, k.A)(this, n), t.apply(this, arguments)
         }
-        return (0, C.A)(r, [{
+        return (0, C.A)(n, [{
             key: "data",
             get: function() {
                 return this.state.data
@@ -24004,11 +24004,11 @@ var mE = function(e) {
                     onChange: this.setState
                 }, !1)))
             }
-        }]), r
+        }]), n
     }(),
-    mI = function(e) {
-        (0, eo.A)(r, n_);
-        var t, n = (t = function() {
+    mI = function() {
+        (0, eo.A)(n, n_);
+        var e, t = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -24017,18 +24017,18 @@ var mE = function(e) {
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(r);
-            if (t) {
+            var t, r = (0, es.A)(n);
+            if (e) {
                 var a = (0, es.A)(this).constructor;
-                e = en()(n, arguments, a)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(r, arguments, a)
+            } else t = r.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function r() {
-            return (0, k.A)(this, r), n.apply(this, arguments)
+        function n() {
+            return (0, k.A)(this, n), t.apply(this, arguments)
         }
-        return (0, C.A)(r, [{
+        return (0, C.A)(n, [{
             key: "data",
             get: function() {
                 return this.state.data
@@ -24051,7 +24051,7 @@ var mE = function(e) {
                     onChange: this.setState
                 }, !1)))
             }
-        }]), r
+        }]), n
     }();
 (0, w.A)(mI, "defaultProps", {
     showFormInstruction: !0
@@ -24183,9 +24183,9 @@ function mV(e, t) {
     }
     return n
 }
-var mj = function(e) {
-    (0, eo.A)(r, n_);
-    var t, n = (t = function() {
+var mj = function() {
+    (0, eo.A)(n, n_);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -24194,24 +24194,24 @@ var mj = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r(e) {
-        var t, a, o, i, s;
-        return (0, k.A)(this, r), s = n.call(this, e), (0, w.A)((0, ea.A)(s), "payButton", function(e) {
+    function n(e) {
+        var r, a, o, i, s;
+        return (0, k.A)(this, n), s = t.call(this, e), (0, w.A)((0, ea.A)(s), "payButton", function(e) {
             return (0, el.h)(nm, (0, er.A)({
                 amount: s.props.amount,
                 onClick: s.submit
             }, e))
-        }), s.onComplete = F()(t = s.onComplete).call(t, (0, ea.A)(s)), s.updateWithAction = F()(a = s.updateWithAction).call(a, (0, ea.A)(s)), s.submit = F()(o = s.submit).call(o, (0, ea.A)(s)), s.onLoaded = F()(i = s.onLoaded).call(i, (0, ea.A)(s)), s
+        }), s.onComplete = F()(r = s.onComplete).call(r, (0, ea.A)(s)), s.updateWithAction = F()(a = s.updateWithAction).call(a, (0, ea.A)(s)), s.submit = F()(o = s.submit).call(o, (0, ea.A)(s)), s.onLoaded = F()(i = s.onLoaded).call(i, (0, ea.A)(s)), s
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "isValid",
         get: function() {
             return !0
@@ -24269,14 +24269,14 @@ var mj = function(e) {
                 onLoaded: this.onLoaded
             })))
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(mj, "type", "klarna"), (0, w.A)(mj, "defaultProps", {
     useKlarnaWidget: !1
 });
-var mU = function(e) {
-    (0, eo.A)(r, dc);
-    var t, n = (t = function() {
+var mU = function() {
+    (0, eo.A)(n, dc);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -24285,26 +24285,26 @@ var mU = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        var e, t;
-        (0, k.A)(this, r);
+    function n() {
+        var e, r;
+        (0, k.A)(this, n);
         for (var a = arguments.length, o = Array(a), i = 0; i < a; i++) o[i] = arguments[i];
-        return t = n.call.apply(n, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(t), "payButton", function(e) {
+        return r = t.call.apply(t, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(r), "payButton", function(e) {
             return (0, el.h)(nm, (0, er.A)({}, e, {
-                label: t.payButtonLabel(),
-                onClick: t.submit
+                label: r.payButtonLabel(),
+                onClick: r.submit
             }))
-        }), t
+        }), r
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "displayName",
         get: function() {
             var e, t = this.props,
@@ -24322,7 +24322,7 @@ var mU = function(e) {
                 o = t.name;
             return a ? np(n, r) : M()(e = "".concat(n.get("continueTo"), " ")).call(e, o)
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(mU, "type", "twint"), (0, w.A)(mU, "defaultProps", {
     type: mU.type,
@@ -24414,9 +24414,9 @@ function mG(e) {
     }
     return e
 }
-var m$ = function(e) {
-    (0, eo.A)(r, h4);
-    var t, n = (t = function() {
+var m$ = function() {
+    (0, eo.A)(n, h4);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -24425,22 +24425,22 @@ var m$ = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r(e) {
-        return (0, k.A)(this, r), n.call(this, mG(mG({}, e), {}, {
+    function n(e) {
+        return (0, k.A)(this, n), t.call(this, mG(mG({}, e), {}, {
             pinRequired: !0,
             expiryDateRequired: !0,
             fieldsLayoutComponent: mz
         }))
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
             return mG({
@@ -24462,7 +24462,7 @@ var m$ = function(e) {
                 }
             }
         }
-    }]), r
+    }]), n
 }();
 
 function mY(e, t) {
@@ -24487,9 +24487,9 @@ function mQ(e) {
     }
     return e
 }(0, w.A)(m$, "type", "mealVoucher_FR");
-var mZ = function(e) {
-    (0, eo.A)(r, sh);
-    var t, n = (t = function() {
+var mZ = function() {
+    (0, eo.A)(n, sh);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -24498,28 +24498,28 @@ var mZ = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
-            return mQ(mQ({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e)), {}, {
+            return mQ(mQ({}, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e)), {}, {
                 showImage: !1
             })
         }
     }, {
         key: "formatData",
         value: function() {
-            return mQ(mQ({}, (0, ey.A)((0, es.A)(r.prototype), "formatData", this).call(this)), {}, {
+            return mQ(mQ({}, (0, ey.A)((0, es.A)(n.prototype), "formatData", this).call(this)), {}, {
                 browserInfo: this.browserInfo
             })
         }
@@ -24528,7 +24528,7 @@ var mZ = function(e) {
         get: function() {
             return iA()
         }
-    }]), r
+    }]), n
 }();
 
 function mJ(e, t) {
@@ -24553,9 +24553,9 @@ function mX(e) {
     }
     return e
 }(0, w.A)(mZ, "type", "onlinebanking_IN");
-var m0 = function(e) {
-    (0, eo.A)(r, sh);
-    var t, n = (t = function() {
+var m0 = function() {
+    (0, eo.A)(n, sh);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -24564,20 +24564,20 @@ var m0 = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r(e) {
-        return (0, k.A)(this, r), n.call(this, mX(mX({}, e), {}, {
-            termsAndConditions: r.termsAndConditions
+    function n(e) {
+        return (0, k.A)(this, n), t.call(this, mX(mX({}, e), {}, {
+            termsAndConditions: n.termsAndConditions
         }))
     }
-    return (0, C.A)(r)
+    return (0, C.A)(n)
 }();
 
 function m1(e, t) {
@@ -24608,9 +24608,9 @@ function m2(e) {
     translationKey: "onlineBankingPL.termsAndConditions",
     urls: [m0.disclaimerUrlsMap.regulation, m0.disclaimerUrlsMap.obligation]
 });
-var m4 = function(e) {
-    (0, eo.A)(r, iu);
-    var t, n = (t = function() {
+var m4 = function() {
+    (0, eo.A)(n, iu);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -24619,21 +24619,21 @@ var m4 = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
-            return m2(m2({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, m2(m2({}, e), {
+            return m2(m2({}, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, m2(m2({}, e), {
                 visibility: {
                     bankAccount: "editable"
                 }
@@ -24641,7 +24641,7 @@ var m4 = function(e) {
                 allowedCountries: e.countryCode ? [e.countryCode] : ft
             })
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(m4, "type", "ratepay_directdebit");
 var m8 = {
@@ -24660,7 +24660,7 @@ var m8 = {
             modes: ["blur"]
         }
     },
-    m3 = function(e) {
+    m6 = function(e) {
         var t = rj({
                 schema: ["virtualPaymentAddress"],
                 defaultData: e.data,
@@ -24675,7 +24675,7 @@ var m8 = {
             l = t4({
                 validateInput: null
             }),
-            c = t3(function() {
+            c = t6(function() {
                 r()
             }, [r]);
         return t1(function() {
@@ -24703,7 +24703,7 @@ var m8 = {
         }))
     };
 
-function m6(e) {
+function m3(e) {
     var t, n = e.classNameModifiers,
         r = e.selectedValue,
         a = e.disabled,
@@ -24771,15 +24771,15 @@ function m7(e) {
     }, this.showValidation = function() {
         u.validateInput()
     };
-    var A = t3(function(e) {
+    var A = t6(function(e) {
             d(e)
         }, []),
-        _ = t3(function(e) {
+        _ = t6(function(e) {
             b(e), r(e)
         }, [r]);
     return (0, el.h)(el.FK, null, (0, el.h)("p", {
         className: "adyen-checkout_upi-mode-selection-text"
-    }, i.get("upi.modeSelection")), (0, el.h)(m6, {
+    }, i.get("upi.modeSelection")), (0, el.h)(m3, {
         onChange: _,
         selectedValue: g,
         disabled: "loading" === f,
@@ -24805,7 +24805,7 @@ function m7(e) {
         id: m9.AreaId.VPA,
         "aria-labelledby": m9.ButtonId.VPA,
         role: "region"
-    }, (0, el.h)(m3, {
+    }, (0, el.h)(m6, {
         disabled: "loading" === f,
         onChange: n,
         onSetInputHandlers: A
@@ -24836,9 +24836,9 @@ function ye(e, t) {
     return n
 }
 var yt = ((a = yt || {}).UpiCollect = "upi_collect", a.UpiQr = "upi_qr", a),
-    yn = function(e) {
-        (0, eo.A)(r, n_);
-        var t, n = (t = function() {
+    yn = function() {
+        (0, eo.A)(n, n_);
+        var e, t = (e = function() {
             if ("u" < typeof Reflect || !en() || en().sham) return !1;
             if ("function" == typeof Proxy) return !0;
             try {
@@ -24847,28 +24847,28 @@ var yt = ((a = yt || {}).UpiCollect = "upi_collect", a.UpiQr = "upi_qr", a),
                 return !1
             }
         }(), function() {
-            var e, n = (0, es.A)(r);
-            if (t) {
+            var t, r = (0, es.A)(n);
+            if (e) {
                 var a = (0, es.A)(this).constructor;
-                e = en()(n, arguments, a)
-            } else e = n.apply(this, arguments);
-            return (0, ei.A)(this, e)
+                t = en()(r, arguments, a)
+            } else t = r.apply(this, arguments);
+            return (0, ei.A)(this, t)
         });
 
-        function r() {
-            var e, t;
-            (0, k.A)(this, r);
+        function n() {
+            var e, r;
+            (0, k.A)(this, n);
             for (var a = arguments.length, o = Array(a), i = 0; i < a; i++) o[i] = arguments[i];
-            return t = n.call.apply(n, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(t), "useQrCodeVariant", void 0), (0, w.A)((0, ea.A)(t), "onUpdateMode", function(e) {
-                e === m5.QrCode ? (t.useQrCodeVariant = !0, t.setState({
+            return r = t.call.apply(t, M()(e = [this]).call(e, o)), (0, w.A)((0, ea.A)(r), "useQrCodeVariant", void 0), (0, w.A)((0, ea.A)(r), "onUpdateMode", function(e) {
+                e === m5.QrCode ? (r.useQrCodeVariant = !0, r.setState({
                     data: {},
                     valid: {},
                     errors: {},
                     isValid: !0
-                })) : t.useQrCodeVariant = !1
-            }), t
+                })) : r.useQrCodeVariant = !1
+            }), r
         }
-        return (0, C.A)(r, [{
+        return (0, C.A)(n, [{
             key: "isValid",
             get: function() {
                 return this.useQrCodeVariant || !!this.state.isValid
@@ -24956,7 +24956,7 @@ var yt = ((a = yt || {}).UpiCollect = "upi_collect", a.UpiQr = "upi_qr", a),
                     srPanel: this.props.modules.srPanel
                 }, this.renderContent(e)))
             }
-        }]), r
+        }]), n
     }();
 
 function yr(e, t) {
@@ -24983,9 +24983,9 @@ function ya(e) {
 }(0, w.A)(yn, "type", "upi"), (0, w.A)(yn, "defaultProps", {
     defaultMode: m5.Vpa
 });
-var yo = function(e) {
-    (0, eo.A)(r, sh);
-    var t, n = (t = function() {
+var yo = function() {
+    (0, eo.A)(n, sh);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -24994,28 +24994,28 @@ var yo = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
-            return ya(ya({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e)), {}, {
+            return ya(ya({}, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e)), {}, {
                 showImage: !1
             })
         }
     }, {
         key: "formatData",
         value: function() {
-            return ya(ya({}, (0, ey.A)((0, es.A)(r.prototype), "formatData", this).call(this)), {}, {
+            return ya(ya({}, (0, ey.A)((0, es.A)(n.prototype), "formatData", this).call(this)), {}, {
                 browserInfo: this.browserInfo
             })
         }
@@ -25024,7 +25024,7 @@ var yo = function(e) {
         get: function() {
             return iA()
         }
-    }]), r
+    }]), n
 }();
 
 function yi(e, t) {
@@ -25049,9 +25049,9 @@ function ys(e) {
     }
     return e
 }(0, w.A)(yo, "type", "wallet_IN");
-var yl = function(e) {
-    (0, eo.A)(r, sh);
-    var t, n = (t = function() {
+var yl = function() {
+    (0, eo.A)(n, sh);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -25060,23 +25060,23 @@ var yl = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
-            return ys(ys({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e)), {}, {
+            return ys(ys({}, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e)), {}, {
                 showImage: !1,
-                termsAndConditions: r.termsAndConditions
+                termsAndConditions: n.termsAndConditions
             })
         }
     }, {
@@ -25085,7 +25085,7 @@ var yl = function(e) {
             var e;
             return null != (e = this.props.icon) ? e : this.resources.getImage()("bankTransfer_IBAN")
         }
-    }]), r
+    }]), n
 }();
 
 function yc(e, t) {
@@ -25113,9 +25113,9 @@ function yu(e) {
     translationKey: "onlineBanking.termsAndConditions",
     urls: ["https://static.payu.com/sites/terms/files/payu_privacy_policy_cs.pdf"]
 });
-var yd = function(e) {
-    (0, eo.A)(r, sh);
-    var t, n = (t = function() {
+var yd = function() {
+    (0, eo.A)(n, sh);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -25124,23 +25124,23 @@ var yd = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
-            return yu(yu({}, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e)), {}, {
+            return yu(yu({}, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e)), {}, {
                 showImage: !1,
-                termsAndConditions: r.termsAndConditions
+                termsAndConditions: n.termsAndConditions
             })
         }
     }, {
@@ -25149,7 +25149,7 @@ var yd = function(e) {
             var e;
             return null != (e = this.props.icon) ? e : this.resources.getImage()("bankTransfer_IBAN")
         }
-    }]), r
+    }]), n
 }();
 
 function yp(e, t) {
@@ -25177,9 +25177,9 @@ function yh(e) {
     translationKey: "onlineBanking.termsAndConditions",
     urls: ["https://static.payu.com/sites/terms/files/payu_privacy_policy_sk.pdf"]
 });
-var yf = function(e) {
-    (0, eo.A)(r, sh);
-    var t, n = (t = function() {
+var yf = function() {
+    (0, eo.A)(n, sh);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -25188,20 +25188,20 @@ var yf = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r(e) {
-        return (0, k.A)(this, r), n.call(this, yh(yh({}, e), {}, {
+    function n(e) {
+        return (0, k.A)(this, n), t.call(this, yh(yh({}, e), {}, {
             showPaymentMethodItemImages: !0
         }))
     }
-    return (0, C.A)(r)
+    return (0, C.A)(n)
 }();
 
 function ym(e, t) {
@@ -25214,9 +25214,9 @@ function ym(e, t) {
     }
     return n
 }(0, w.A)(yf, "type", "paybybank");
-var yy = function(e) {
-    (0, eo.A)(r, ha);
-    var t, n = (t = function() {
+var yy = function() {
+    (0, eo.A)(n, ha);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -25225,18 +25225,18 @@ var yy = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
             return function(e) {
@@ -25252,9 +25252,9 @@ var yy = function(e) {
             }({
                 delay: 2e3,
                 countdownTime: 1.5
-            }, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e))
+            }, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e))
         }
-    }]), r
+    }]), n
 }();
 
 function yv(e, t) {
@@ -25267,9 +25267,9 @@ function yv(e, t) {
     }
     return n
 }(0, w.A)(yy, "type", "promptpay");
-var yg = function(e) {
-    (0, eo.A)(r, ha);
-    var t, n = (t = function() {
+var yg = function() {
+    (0, eo.A)(n, ha);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -25278,18 +25278,18 @@ var yg = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "formatProps",
         value: function(e) {
             return function(e) {
@@ -25305,14 +25305,14 @@ var yg = function(e) {
             }({
                 delay: 2e3,
                 countdownTime: 1.5
-            }, (0, ey.A)((0, es.A)(r.prototype), "formatProps", this).call(this, e))
+            }, (0, ey.A)((0, es.A)(n.prototype), "formatProps", this).call(this, e))
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(yg, "type", "duitnow");
-var yb = function(e) {
-    (0, eo.A)(r, dc);
-    var t, n = (t = function() {
+var yb = function() {
+    (0, eo.A)(n, dc);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -25321,18 +25321,18 @@ var yb = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r() {
-        return (0, k.A)(this, r), n.apply(this, arguments)
+    function n() {
+        return (0, k.A)(this, n), t.apply(this, arguments)
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "displayName",
         get: function() {
             return this.props.name || this.constructor.type
@@ -25360,7 +25360,7 @@ var yb = function(e) {
                 }
             })))
         }
-    }]), r
+    }]), n
 }();
 
 function yA(e, t) {
@@ -25802,7 +25802,7 @@ var yj = function() {
                 if (null == e || !e.id) return !1;
                 var t = eA()() - 9e5;
                 return e.timestamp > t
-            }(n) ? t = a3(o, {
+            }(n) ? t = a6(o, {
                 experiments: a
             }).then(function(t) {
                 if (t.id) return e.set({
@@ -25893,7 +25893,7 @@ var yW = function() {
             amount: l
         }, function(e) {
             var t, n;
-            return r.clientKey ? a3({
+            return r.clientKey ? a6({
                 errorLevel: "silent",
                 loadingContext: r.loadingContext,
                 path: "v2/analytics/log?clientKey=".concat(r.clientKey)
@@ -26089,7 +26089,7 @@ var y0 = function() {
                     orderData: e.order.orderData,
                     pspReference: e.order.pspReference
                 }
-            } : {}), a3({
+            } : {}), a6({
                 loadingContext: this.loadingContext,
                 path: r,
                 errorLevel: "fatal",
@@ -26124,7 +26124,7 @@ var y0 = function() {
                 return e
             }({
                 sessionData: this.data
-            }, e), a3({
+            }, e), a6({
                 loadingContext: this.loadingContext,
                 path: r,
                 errorLevel: "fatal"
@@ -26148,7 +26148,7 @@ var y0 = function() {
                 return e
             }({
                 sessionData: this.data
-            }, e), a3({
+            }, e), a6({
                 loadingContext: this.loadingContext,
                 path: r,
                 errorLevel: "fatal"
@@ -26172,7 +26172,7 @@ var y0 = function() {
                 return e
             }({
                 sessionData: this.data
-            }, e), a3({
+            }, e), a6({
                 loadingContext: this.loadingContext,
                 path: r,
                 errorLevel: "fatal"
@@ -26186,7 +26186,7 @@ var y0 = function() {
             var e, t, n, r, a = this;
             return (n = M()(e = M()(t = "".concat("v1", "/sessions/")).call(t, this.id, "/orders?clientKey=")).call(e, this.clientKey), r = {
                 sessionData: this.data
-            }, a3({
+            }, a6({
                 loadingContext: this.loadingContext,
                 path: n,
                 errorLevel: "fatal"
@@ -26201,7 +26201,7 @@ var y0 = function() {
             return (t = e.order, a = M()(n = M()(r = "".concat("v1", "/sessions/")).call(r, this.id, "/orders/cancel?clientKey=")).call(n, this.clientKey), o = {
                 sessionData: this.data,
                 order: t
-            }, a3({
+            }, a6({
                 loadingContext: this.loadingContext,
                 path: a,
                 errorLevel: "fatal"
@@ -26271,9 +26271,9 @@ function y4(e) {
     }
     return e
 }
-var y8 = function(e) {
-    (0, eo.A)(r, tD);
-    var t, n = (t = function() {
+var y8 = function() {
+    (0, eo.A)(n, tD);
+    var e, t = (e = function() {
         if ("u" < typeof Reflect || !en() || en().sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -26282,31 +26282,31 @@ var y8 = function(e) {
             return !1
         }
     }(), function() {
-        var e, n = (0, es.A)(r);
-        if (t) {
+        var t, r = (0, es.A)(n);
+        if (e) {
             var a = (0, es.A)(this).constructor;
-            e = en()(n, arguments, a)
-        } else e = n.apply(this, arguments);
-        return (0, ei.A)(this, e)
+            t = en()(r, arguments, a)
+        } else t = r.apply(this, arguments);
+        return (0, ei.A)(this, t)
     });
 
-    function r(e) {
-        var t, a;
-        if ((0, k.A)(this, r), a = n.call(this, e), (0, w.A)((0, ea.A)(a), "srPanelContainer", null), (0, w.A)((0, ea.A)(a), "id", void 0), (0, w.A)((0, ea.A)(a), "showPanel", void 0), (0, w.A)((0, ea.A)(a), "_enabled", void 0), (0, w.A)((0, ea.A)(a), "_moveFocus", void 0), (0, w.A)((0, ea.A)(a), "componentRef", void 0), (0, w.A)((0, ea.A)(a), "setComponentRef", function(e) {
+    function n(e) {
+        var r, a;
+        if ((0, k.A)(this, n), a = t.call(this, e), (0, w.A)((0, ea.A)(a), "srPanelContainer", null), (0, w.A)((0, ea.A)(a), "id", void 0), (0, w.A)((0, ea.A)(a), "showPanel", void 0), (0, w.A)((0, ea.A)(a), "_enabled", void 0), (0, w.A)((0, ea.A)(a), "_moveFocus", void 0), (0, w.A)((0, ea.A)(a), "componentRef", void 0), (0, w.A)((0, ea.A)(a), "setComponentRef", function(e) {
                 a.componentRef = e
             }), (0, w.A)((0, ea.A)(a), "setMessages", function(e) {
                 if (a.props.enabled) {
                     var t = null;
                     e && (t = ew()(e) ? e : [e]), a.componentRef.setMessages(t)
                 }
-            }), a.id = a.props.id, a.showPanel = !1, a._enabled = !1, a._moveFocus = null == (t = a.props.moveFocus) || t, a.props.enabled) {
+            }), a.id = a.props.id, a.showPanel = !1, a._enabled = !1, a._moveFocus = null == (r = a.props.moveFocus) || r, a.props.enabled) {
             if (a._enabled = !0, !document.querySelector(a.props.node)) throw Error("Component could not mount. Root node was not found.");
             var o = document.getElementById(a.id);
             o && document.querySelector(a.props.node).removeChild(o), a.srPanelContainer = document.createElement("div"), a.srPanelContainer.className = "sr-panel-holder", a.srPanelContainer.id = a.id, document.querySelector(a.props.node).appendChild(a.srPanelContainer), a.mount(a.srPanelContainer)
         }
         return a
     }
-    return (0, C.A)(r, [{
+    return (0, C.A)(n, [{
         key: "enabled",
         get: function() {
             return this._enabled
@@ -26339,7 +26339,7 @@ var y8 = function(e) {
                 setComponentRef: this.setComponentRef
             })) : null
         }
-    }]), r
+    }]), n
 }();
 (0, w.A)(y8, "type", "srPanel"), (0, w.A)(y8, "defaultProps", {
     enabled: !0,
@@ -26352,9 +26352,9 @@ var y8 = function(e) {
         "aria-atomic": "true"
     }
 });
-var y3 = ["amount", "shopperLocale", "paymentMethods"];
+var y6 = ["amount", "shopperLocale", "paymentMethods"];
 
-function y6(e, t) {
+function y3(e, t) {
     var n = c()(e);
     if (d()) {
         var r = d()(e);
@@ -26368,9 +26368,9 @@ function y6(e, t) {
 function y5(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n, r, a = null != arguments[t] ? arguments[t] : {};
-        t % 2 ? N()(n = y6(Object(a), !0)).call(n, function(t) {
+        t % 2 ? N()(n = y3(Object(a), !0)).call(n, function(t) {
             (0, w.A)(e, t, a[t])
-        }) : m() ? v()(e, m()(a)) : N()(r = y6(Object(a))).call(r, function(t) {
+        }) : m() ? v()(e, m()(a)) : N()(r = y3(Object(a))).call(r, function(t) {
             b()(e, t, h()(a, t))
         })
     }
@@ -26428,7 +26428,7 @@ var y9 = function() {
                 var n = t.amount,
                     r = t.shopperLocale,
                     a = t.paymentMethods,
-                    o = (0, _.A)(t, y3);
+                    o = (0, _.A)(t, y6);
                 return e.setOptions(y5(y5({}, o), {}, {
                     amount: e.options.order ? e.options.order.remainingAmount : n,
                     locale: e.options.locale || r

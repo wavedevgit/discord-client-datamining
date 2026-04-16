@@ -8,7 +8,7 @@ var d = s(627968),
     i = s(685073),
     l = s(534400),
     n = s(743981),
-    r = s(889343);
+    r = s(518255);
 let b = c.memo(function(a) {
     let {
         guildId: e,

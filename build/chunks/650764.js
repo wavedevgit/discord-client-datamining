@@ -1,9 +1,9 @@
 /** chunk id: 650764 params = (module,exports,require) **/
-n.d(e, {
-    u: () => l
+n.d(t, {
+    u: () => i
 });
-var i = n(85526);
+var a = n(85526);
 
-function l(t) {
-    return i.fromByteArray(t)
+function i(e) {
+    return a.fromByteArray(e)
 }

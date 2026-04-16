@@ -354,43 +354,43 @@ function Q(e, t, r) {
             var d = W(e, c - 12);
             (b = 0x6064b50 == W(e, d)) && (u = l = W(e, d + 32), f = W(e, d + 48))
         }
-        for (var h = t && t.filter, p = 0; p < u; ++p) ! function(t) {
-            var r = J(e, f, b),
-                c = r[0],
-                u = r[1],
-                d = r[2],
-                p = r[3],
-                m = r[4],
-                g = r[5],
-                y = g + 30 + U(e, g + 26) + U(e, g + 28);
-            f = m;
-            var v = function(e, t) {
-                e ? (n(), i(e, null)) : (t && (s[p] = t), --l || i(null, s))
+        for (var h = t && t.filter, p = 0; p < u; ++p) ! function() {
+            var t = J(e, f, b),
+                r = t[0],
+                c = t[1],
+                u = t[2],
+                d = t[3],
+                p = t[4],
+                m = t[5],
+                g = m + 30 + U(e, m + 26) + U(e, m + 28);
+            f = p;
+            var y = function(e, t) {
+                e ? (n(), i(e, null)) : (t && (s[d] = t), --l || i(null, s))
             };
             if (!h || h({
-                    name: p,
-                    size: u,
-                    originalSize: d,
-                    compression: c
+                    name: d,
+                    size: c,
+                    originalSize: u,
+                    compression: r
                 }))
-                if (c)
-                    if (8 == c) {
-                        var w, M, A = e.subarray(y, y + u);
-                        if (u < 32e4) try {
-                            v(null, H(A, {
-                                out: new o(d)
+                if (r)
+                    if (8 == r) {
+                        var v, w, M = e.subarray(g, g + c);
+                        if (c < 32e4) try {
+                            y(null, H(M, {
+                                out: new o(u)
                             }))
                         } catch (e) {
-                            v(e, null)
-                        } else a.push((w = {
-                            size: d
-                        }, (M = v) || (M = w, w = {}), "function" != typeof M && S(7), $(A, w, [F], function(e) {
+                            y(e, null)
+                        } else a.push((v = {
+                            size: u
+                        }, (w = y) || (w = v, v = {}), "function" != typeof w && S(7), $(M, v, [F], function(e) {
                             return z(H(e.data[0], q(e.data[1])))
-                        }, 1, M)))
-                    } else v(S(14, "unknown compression type " + c, 1), null);
-            else v(null, _(e, y, y + u));
-            else v(null, null)
-        }(0)
+                        }, 1, w)))
+                    } else y(S(14, "unknown compression type " + r, 1), null);
+            else y(null, _(e, g, g + c));
+            else y(null, null)
+        }()
     } else i(null, {});
     return n
 }

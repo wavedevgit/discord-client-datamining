@@ -33,8 +33,8 @@ var i = n(627968),
     R = n(652215),
     P = n(788868),
     w = n(985018),
-    M = n(865112),
-    D = n(260268);
+    M = n(631144),
+    D = n(979132);
 
 function k(e) {
     b.default.track(R.HAw.PREMIUM_PROMOTION_OPENED, {

@@ -7,7 +7,7 @@ l(64700);
 var n = l(503698),
     i = l.n(n),
     a = l(567243),
-    s = l(560856);
+    s = l(472840);
 let o = RegExp("^music\\.amazon\\.(?:com|co\\.uk|de|co\\.jp|es|fr|it|com\\.au|in|ca|com\\.mx|com\\.br)");
 
 function d(e) {

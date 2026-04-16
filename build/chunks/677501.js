@@ -1,8 +1,8 @@
 /** chunk id: 677501 params = (module,exports,require) **/
-i.d(t, {
-    sf: () => n
+n.d(t, {
+    sf: () => a
 });
 
-function n() {
+function a() {
     return Promise.resolve(!1)
 }

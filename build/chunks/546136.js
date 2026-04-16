@@ -19,7 +19,7 @@ var i = l(503698),
     A = l(642737),
     x = l(23722),
     g = l(985018),
-    f = l(266603);
+    f = l(809467);
 let h = "profile-modal-editing-panel",
     v = "profile-modal-editing-panel-heading";
 

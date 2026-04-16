@@ -1,20 +1,20 @@
 /** chunk id: 551262 params = (module,exports,require) **/
-a.d(t, {
-    A: () => s
+i.d(e, {
+    A: () => r
 });
-var n = a(627968);
-a(64700);
-var i = a(397927);
-let s = e => {
+var a = i(627968);
+i(64700);
+var n = i(397927);
+let r = t => {
     let {
-        open: t,
-        className: a,
-        ...s
-    } = e, l = t ? i.PGe : i.abt;
-    return (0, n.jsx)(l, {
-        className: a,
+        open: e,
+        className: i,
+        ...r
+    } = t, s = e ? n.PGe : n.abt;
+    return (0, a.jsx)(s, {
+        className: i,
         size: "sm",
         color: "currentColor",
-        ...s
+        ...r
     })
 }

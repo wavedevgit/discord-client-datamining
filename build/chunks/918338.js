@@ -1,47 +1,47 @@
 /** chunk id: 918338 params = (module,exports,require) **/
-n.d(e, {
-    A: () => m
+n.d(t, {
+    A: () => _
 });
 var i = n(627968),
-    s = n(64700),
-    a = n(503698),
-    r = n.n(a),
-    l = n(579473),
-    d = n(415441),
-    o = n(516226),
+    a = n(64700),
+    l = n(503698),
+    s = n.n(l),
+    r = n(579473),
+    o = n(415441),
+    d = n(516226),
     c = n(985018),
-    u = n(403987);
+    u = n(989475);
 
-function m(t) {
+function _(e) {
     let {
-        quest: e,
+        quest: t,
         isInteracting: n,
-        hideAssets: a,
-        imageSize: m,
-        containerClassName: h,
-        imageClassName: x,
-        assetRef: f
-    } = t, g = s.useMemo(() => (0, l.tW)(e, l.fY.HERO_IMAGE), [e]), C = s.useMemo(() => (0, l.tW)(e, l.fY.HERO_VIDEO), [e]), {
-        onAssetLoadComplete: b
-    } = s.useContext(o.M);
+        hideAssets: l,
+        imageSize: _,
+        containerClassName: m,
+        imageClassName: h,
+        assetRef: p
+    } = e, g = a.useMemo(() => (0, r.tW)(t, r.fY.HERO_IMAGE), [t]), A = a.useMemo(() => (0, r.tW)(t, r.fY.HERO_VIDEO), [t]), {
+        onAssetLoadComplete: x
+    } = a.useContext(d.M);
     return (0, i.jsx)("div", {
-        className: r()(u.l1, h),
-        children: !a && (0, i.jsx)(d.N, {
+        className: s()(u.l1, m),
+        children: !l && (0, i.jsx)(o.N, {
             imageAsset: null != g ? {
                 asset: g,
                 assetId: "QuestTileBanner",
                 alt: c.intl.string(c.t.jnijWz),
-                className: r()(u.LO, x)
+                className: s()(u.LO, h)
             } : void 0,
-            videoAsset: null != C ? {
-                asset: C,
+            videoAsset: null != A ? {
+                asset: A,
                 assetId: "QuestTileBanner_heroAnimated",
                 className: u.G9
             } : void 0,
             showVideo: n,
-            imageSize: m,
-            onLoadComplete: b,
-            assetRef: f
+            imageSize: _,
+            onLoadComplete: x,
+            assetRef: p
         })
     })
 }

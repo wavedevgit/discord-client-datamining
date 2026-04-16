@@ -22,7 +22,7 @@ function d(e, t) {
             }, 0);
             let _ = async () => {
                 await (0, o.TP)(e, h)
-            }, p = async t => await (0, o.G_)(e, h, t), m = n => {
+            }, p = async t => await (0, o.G_)(e, h, t), g = n => {
                 d = !0, setTimeout(() => {
                     d = !1
                 }, 0);
@@ -37,7 +37,7 @@ function d(e, t) {
                     ...t,
                     onFormSubmit: p,
                     onResend: _,
-                    onSuccess: m,
+                    onSuccess: g,
                     headerText: c.intl.string(c.t.H3Q7U8),
                     confirmButtonText: c.intl.string(c.t["13ofGu"]),
                     impression: {

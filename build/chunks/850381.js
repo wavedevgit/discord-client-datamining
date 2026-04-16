@@ -1,7 +1,7 @@
 /** chunk id: 850381 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => m
 });
 var i = n(627968),
     s = n(64700),
@@ -15,12 +15,12 @@ var i = n(627968),
     h = n(341371),
     _ = n(714505),
     p = n(652215),
-    m = n(985018);
+    g = n(985018);
 
-function g(e) {
+function m(e) {
     let {
         location: t
-    } = e, [n, g] = s.useState(!1), {
+    } = e, [n, m] = s.useState(!1), {
         verifySuccess: A,
         verifyErrors: f,
         redirectGuildId: E
@@ -30,28 +30,28 @@ function g(e) {
         a.A.verify(e), (0, u.d)("verify_hub_email")
     }, [t]);
     let x = () => {
-        (0, _.A)(E), g(!0)
+        (0, _.A)(E), m(!0)
     };
     return n ? (0, i.jsx)(c.A, {
-        title: m.intl.string(m.t.csrAMJ),
-        subtitle: m.intl.string(m.t["m1+IBn"]),
-        buttonText: m.intl.string(m.t.fIv16B),
+        title: g.intl.string(g.t.csrAMJ),
+        subtitle: g.intl.string(g.t["m1+IBn"]),
+        buttonText: g.intl.string(g.t.fIv16B),
         onButtonClick: () => (0, d.pX)(p.BVt.CHANNEL(E))
     }) : A ? (0, i.jsx)(c.A, {
-        title: m.intl.string(m.t["dAfGb+"]),
-        buttonText: m.intl.string(m.t["uJWIj/"]),
+        title: g.intl.string(g.t["dAfGb+"]),
+        buttonText: g.intl.string(g.t["uJWIj/"]),
         onButtonClick: x,
         image: (0, i.jsx)(l.bqQ, {
-            alt: m.intl.string(m.t["dAfGb+"])
+            alt: g.intl.string(g.t["dAfGb+"])
         })
     }) : null != f ? (0, i.jsx)(c.A, {
-        title: m.intl.string(m.t["PCgG3+"]),
-        subtitle: m.intl.string(m.t.tQpeA3),
-        buttonText: m.intl.string(m.t["uJWIj/"]),
+        title: g.intl.string(g.t["PCgG3+"]),
+        subtitle: g.intl.string(g.t.tQpeA3),
+        buttonText: g.intl.string(g.t["uJWIj/"]),
         onButtonClick: x
     }) : (0, i.jsx)(c.A, {
-        title: m.intl.string(m.t["0c8+5n"]),
-        subtitle: m.intl.string(m.t.ULTCBE),
+        title: g.intl.string(g.t["0c8+5n"]),
+        subtitle: g.intl.string(g.t.ULTCBE),
         loading: !0
     })
 }

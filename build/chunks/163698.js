@@ -1,7 +1,7 @@
 /** chunk id: 163698 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var i = n(627968);
 n(64700);
@@ -13,8 +13,8 @@ var s = n(503698),
     c = n(524832),
     d = n(652215),
     u = n(985018),
-    h = n(651068),
-    _ = n(885106);
+    h = n(22079),
+    _ = n(818050);
 
 function p(e) {
     let {
@@ -30,7 +30,7 @@ function p(e) {
     })
 }
 
-function m(e) {
+function g(e) {
     let {
         setSlide: t,
         transitionTo: s

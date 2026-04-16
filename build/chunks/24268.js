@@ -16,8 +16,8 @@ var a = n(627968),
     x = n(760716),
     p = n(652215),
     g = n(115093),
-    f = n(310086),
-    v = n(521807);
+    f = n(505206),
+    v = n(11039);
 let _ = window.GLOBAL_ENV.RELEASE_CHANNEL === g.B.STAGING ? "1438571444891025408" : "1346069614634864772";
 
 function b() {

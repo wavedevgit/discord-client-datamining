@@ -11,7 +11,7 @@ var s = n(889137),
     a = n(975169),
     o = n(794696),
     c = n(985018),
-    d = n(135622);
+    d = n(731286);
 
 function u(e) {
     let t, {
@@ -21,9 +21,9 @@ function u(e) {
             isUsernameFocused: _,
             onClickSuggestion: p
         } = e,
-        m = (0, a.i)(n, !0, !0),
-        g = n.length > 0;
-    return t = g ? (0, s.YW)(m).with({
+        g = (0, a.i)(n, !0, !0),
+        m = n.length > 0;
+    return t = m ? (0, s.YW)(g).with({
         type: l.q.ERROR,
         message: s.P.select()
     }, e => (0, i.jsx)(r.Text, {
@@ -53,7 +53,7 @@ function u(e) {
         color: "text-default",
         children: c.intl.string(c.t.z7c4bP)
     }), (0, i.jsx)(o.A, {
-        show: g && m?.type === l.q.ERROR || _,
+        show: m && g?.type === l.q.ERROR || _,
         top: -12,
         bottom: 20,
         children: t

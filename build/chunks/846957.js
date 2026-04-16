@@ -6,7 +6,7 @@ var n = r(627968),
     l = r(503698),
     i = r.n(l),
     s = r(132198),
-    a = r(594452);
+    a = r(68644);
 let o = e => {
     let {
         product: t,

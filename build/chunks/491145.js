@@ -20,7 +20,7 @@ var i = n(64700),
     b = n(652215),
     N = n(788868),
     p = n(985018),
-    A = n(471074);
+    A = n(365720);
 let j = {
     rewardSkuIds: [],
     promotionEndDate: null

@@ -30,7 +30,7 @@ var i = n(627968),
     v = n(652215),
     R = n(806931),
     j = n(985018),
-    O = n(325486);
+    O = n(909598);
 let L = `vc-gifting-${(0,a.A)()}`,
     M = Object.freeze([]);
 

@@ -10,7 +10,7 @@ var r, i = n(627968),
     o = n(397927),
     u = n(650583),
     c = n(985018),
-    d = n(669068);
+    d = n(820988);
 let h = Object.freeze({
     SMALL: d.EX,
     MEDIUM: d.Y,

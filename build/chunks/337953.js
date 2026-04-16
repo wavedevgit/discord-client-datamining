@@ -6,8 +6,8 @@ var r = n(627968),
     l = n(64700),
     a = n(503698),
     i = n.n(a),
-    s = n(407045),
-    u = n(311907),
+    u = n(407045),
+    s = n(311907),
     o = n(827734),
     c = n(876230),
     d = n(106236),
@@ -19,9 +19,9 @@ var r = n(627968),
     E = n(710434),
     b = n(634156),
     v = n(652215),
-    g = n(354361),
+    g = n(445563),
     y = n(985018),
-    S = n(246878);
+    S = n(834926);
 
 function C(e) {
     let {
@@ -35,8 +35,8 @@ function C(e) {
         hideSkipButtons: w,
         size: T,
         downloadUrl: L,
-        downloadContentType: j,
-        autoFocus: P = !1,
+        downloadContentType: P,
+        autoFocus: j = !1,
         keyDownHandlerRef: D,
         volume: M,
         muted: k,
@@ -53,7 +53,7 @@ function C(e) {
         handleControlBarPendingInteraction: K,
         onVolumeChange: X,
         onMutedChange: z
-    } = e, V = (0, u.bG)([f.A], () => f.A.useReducedMotion), W = (0, u.bG)([f.A], () => f.A.keyboardModeEnabled), [H, J] = l.useState(k ? 0 : M), [Z, q] = l.useState(!1), [ee, et] = l.useState(!1), [{
+    } = e, V = (0, s.bG)([f.A], () => f.A.useReducedMotion), W = (0, s.bG)([f.A], () => f.A.keyboardModeEnabled), [H, J] = l.useState(k ? 0 : M), [Z, q] = l.useState(!1), [ee, et] = l.useState(!1), [{
         volumeAnimSpring: en
     }, er] = (0, m.zhh)(() => ({
         from: {
@@ -66,20 +66,20 @@ function C(e) {
         }
     })), el = l.useRef(null), ea = l.useCallback(() => {
         if (null == L) return;
-        let e = j?.split("/");
+        let e = P?.split("/");
         h.default.track(v.HAw.MEDIA_DOWNLOAD_BUTTON_TAPPED, {
             attachment_type: e?.[0],
             attachment_subtype: e?.[1]
         }), window.open(L, "_blank")
-    }, [L, j]), ei = l.useCallback(e => {
+    }, [L, P]), ei = l.useCallback(e => {
         null != t.current && (e !== t.current.volume && (t.current.volume = e), e !== H && J(e))
-    }, [t, H]), es = l.useCallback(() => {
+    }, [t, H]), eu = l.useCallback(() => {
         if (null != t.current)
             if (0 === H) {
                 let e = 0 === M ? .3 : M;
                 ei(e), z(!1), X(e)
             } else X(H), ei(0), z(!0)
-    }, [t, H, ei, M, z, X]), eu = () => {
+    }, [t, H, ei, M, z, X]), es = () => {
         q(!0)
     }, eo = () => {
         q(!1)
@@ -104,12 +104,12 @@ function C(e) {
                 Q();
                 break;
             case c.TJ.MUTE:
-                es()
+                eu()
         }
-    }, [O, Q, G, F, _, es, W]);
+    }, [O, Q, G, F, _, eu, W]);
     l.useEffect(() => {
-        P && null != el.current && el.current.focus()
-    }, [P]), l.useEffect(() => (null != D && (D.current = ec), () => {
+        j && null != el.current && el.current.focus()
+    }, [j]), l.useEffect(() => (null != D && (D.current = ec), () => {
         null != D && (D.current = null)
     }), [ec, D]), l.useEffect(() => (er({
         volumeAnimSpring: !Y || ee || Z ? 1 : 0,
@@ -161,18 +161,18 @@ function C(e) {
                     "data-testid": "discord-web-video-player-seek-forward-btn"
                 })]
             })]
-        }), (0, r.jsxs)(s.animated.div, {
+        }), (0, r.jsxs)(u.animated.div, {
             className: i()(S.X3, S.L1),
             style: {
-                opacity: (0, s.to)([a.to({
+                opacity: (0, u.to)([a.to({
                     range: [0, 1],
                     output: [0, 1]
                 })], e => `${C?e:Math.pow(e,8)}`)
             },
             children: [(0, r.jsxs)("div", {
-                onMouseEnter: eu,
+                onMouseEnter: es,
                 onMouseLeave: eo,
-                onFocus: eu,
+                onFocus: es,
                 onBlur: eo,
                 className: S.RD,
                 "data-testid": "discord-web-video-player-volume-control",
@@ -180,21 +180,21 @@ function C(e) {
                     iconComponent: ed,
                     animationTime: a,
                     visible: C,
-                    onClick: es,
+                    onClick: eu,
                     ariaLabel: y.intl.string(g.default.XiLvuG),
                     tooltipLabel: y.intl.string(g.default.XiLvuG),
                     shortcut: c.TJ.MUTE,
                     buttonSize: p.AU[T],
                     "data-testid": "discord-web-video-player-volume-btn"
-                }), (0, r.jsx)(s.animated.div, {
+                }), (0, r.jsx)(u.animated.div, {
                     className: S.MQ,
                     "data-testid": "discord-web-video-player-volume-slider",
                     style: {
-                        opacity: (0, s.to)([en.to({
+                        opacity: (0, u.to)([en.to({
                             range: [0, 1],
                             output: [0, 1]
                         })], e => `${C?e:Math.pow(e,8)}`),
-                        width: (0, s.to)([en.to({
+                        width: (0, u.to)([en.to({
                             range: [0, 1],
                             output: [0, 100]
                         })], e => `${e}px`)

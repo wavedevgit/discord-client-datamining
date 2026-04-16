@@ -4,22 +4,22 @@ n.d(t, {
 });
 var r = n(627968),
     s = n(64700),
-    i = n(158954),
-    a = n(697397),
-    l = n(475815),
+    a = n(158954),
+    l = n(697397),
+    i = n(475815),
     u = n(341915),
     o = n(245853),
     c = n(579473),
     d = n(590202),
     E = n(971649),
     m = n(651892),
-    _ = n(73473),
-    f = n(795068),
-    p = n(54291),
-    S = n(781121),
+    f = n(73473),
+    _ = n(795068),
+    S = n(54291),
+    p = n(781121),
     v = n(654487),
-    h = n(985018),
-    g = n(246878);
+    g = n(985018),
+    h = n(834926);
 
 function A(e) {
     let {
@@ -29,76 +29,76 @@ function A(e) {
     } = e, {
         onClose: C,
         sourceQuestContent: x,
-        quest: D,
-        isFullscreenEnabled: T
-    } = s.useContext(f.a), I = (0, E.go)(), y = (0, S.H)({
-        quest: D,
+        quest: T,
+        isFullscreenEnabled: D
+    } = s.useContext(_.a), I = (0, E.go)(), b = (0, p.H)({
+        quest: T,
         onClose: C,
         sourceQuestContent: x,
         impressionId: I
-    }), R = s.useCallback(e => {
-        if (T) {
-            let e = (0, l.qf)(t.current?.parentNode, t.current);
-            null != e && (0, l.sP)(e)
+    }), y = s.useCallback(e => {
+        if (D) {
+            let e = (0, i.qf)(t.current?.parentNode, t.current);
+            null != e && (0, i.sP)(e)
         }
-        n(e, d.Cy.LEARN_MORE), y(e, d.Cy.OPEN_GAME_LINK)
-    }, [T, t, y, n]), {
-        title: b,
-        subtitle: N
+        n(e, d.Cy.LEARN_MORE), b(e, d.Cy.OPEN_GAME_LINK)
+    }, [D, t, b, n]), {
+        title: O,
+        subtitle: R
     } = {
-        title: (0, m.wr)(D),
-        subtitle: D.config.ctaConfig.subtitle ?? h.intl.string(h.t.mxaHfx)
+        title: (0, m.wr)(T),
+        subtitle: T.config.ctaConfig.subtitle ?? g.intl.string(g.t.mxaHfx)
     }, {
-        enabled: O
+        enabled: L
     } = o.uK.useConfig({
         location: v.rE.VIDEO_MODAL
-    }), L = s.useMemo(() => (0, c.tW)(D, c.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1)?.url ?? null, [D]);
-    return O ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(a.nY, {
-            url: L
-        }), (0, r.jsx)(a.KP, {}), (0, r.jsxs)(a.zj, {
+    }), k = s.useMemo(() => (0, c.tW)(T, c.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1)?.url ?? null, [T]);
+    return L ? (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(l.nY, {
+            url: k
+        }), (0, r.jsx)(l.KP, {}), (0, r.jsxs)(l.zj, {
             orientation: A,
-            children: [null != L && (0, r.jsx)(_.R, {
-                questOrQuests: D,
+            children: [null != k && (0, r.jsx)(f.R, {
+                questOrQuests: T,
                 questContent: u.uF.VIDEO_MODAL_END_CARD,
                 sourceQuestContent: x,
-                children: e => (0, r.jsx)(a.Kb, {
+                children: e => (0, r.jsx)(l.Kb, {
                     ref: t => {
                         e.current = t
                     },
-                    url: L,
+                    url: k,
                     orientation: A
                 })
-            }), (0, r.jsx)(a.lx, {
-                title: b,
-                subtitle: N,
-                ctaBtnLabel: D.config.ctaConfig.buttonLabel,
-                ctaIcon: i.KS6,
-                onCTAClick: () => R(u.uF.VIDEO_MODAL),
+            }), (0, r.jsx)(l.lx, {
+                title: O,
+                subtitle: R,
+                ctaBtnLabel: T.config.ctaConfig.buttonLabel,
+                ctaIcon: a.KS6,
+                onCTAClick: () => y(u.uF.VIDEO_MODAL),
                 orientation: A
             })]
         })]
     }) : (0, r.jsxs)(r.Fragment, {
-        children: [null != L && (0, r.jsx)(_.R, {
-            questOrQuests: D,
+        children: [null != k && (0, r.jsx)(f.R, {
+            questOrQuests: T,
             questContent: u.uF.VIDEO_MODAL_END_CARD,
             sourceQuestContent: x,
-            children: e => (0, r.jsx)(a.pK, {
+            children: e => (0, r.jsx)(l.pK, {
                 ref: t => {
                     e.current = t
                 },
-                url: L
+                url: k
             })
         }), (0, r.jsx)("div", {
-            className: g.MT,
+            className: h.MT,
             "data-testid": "discord-web-video-player-end-screen"
-        }), (0, r.jsx)(a.OH, {
-            title: b,
-            subtitle: N,
-            icon: i.KS6,
-            className: g.mT,
-            onClick: () => R(u.uF.VIDEO_MODAL),
-            divider: (0, r.jsx)(p.A, {
+        }), (0, r.jsx)(l.OH, {
+            title: O,
+            subtitle: R,
+            icon: a.KS6,
+            className: h.mT,
+            onClick: () => y(u.uF.VIDEO_MODAL),
+            divider: (0, r.jsx)(S.A, {
                 color: "#747783"
             })
         })]

@@ -1,32 +1,32 @@
 /** chunk id: 252452 params = (module,exports,require) **/
-E.d(t, {
+n.d(t, {
     A: () => i
 });
-var e = E(73153);
+var a = n(73153);
 let i = {
     close() {
-        e.h.dispatch({
+        a.h.dispatch({
             type: "USER_SETTINGS_MODAL_CLOSE"
         })
     },
-    setSection(_) {
+    setSection(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
-            E = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
-        e.h.dispatch({
+            n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
+        a.h.dispatch({
             type: "USER_SETTINGS_MODAL_SET_SECTION",
-            section: _,
+            section: e,
             subsection: t,
-            ...E
+            ...n
         })
     },
-    clearSubsection(_) {
-        e.h.dispatch({
+    clearSubsection(e) {
+        a.h.dispatch({
             type: "USER_SETTINGS_MODAL_CLEAR_SUBSECTION",
-            forSection: _
+            forSection: e
         })
     },
     clearLocation() {
-        e.h.dispatch({
+        a.h.dispatch({
             type: "USER_SETTINGS_MODAL_CLEAR_LOCATION"
         })
     }

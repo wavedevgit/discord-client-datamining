@@ -9,7 +9,7 @@ var i = n(627968),
     l = n.n(a),
     o = n(615300),
     s = n(456412),
-    d = n(750357);
+    d = n(831077);
 let u = {
         tension: 7,
         friction: 5,

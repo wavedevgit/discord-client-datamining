@@ -7,7 +7,7 @@ var i = n(627968),
     l = n(397927),
     s = n(475743),
     r = n(362490),
-    o = n(610604),
+    o = n(311350),
     d = n(985018);
 let c = "in-game-auth-check-modal";
 

@@ -1,6 +1,6 @@
 /** chunk id: 404865 params = (module,exports,require) **/
 s.d(t, {
-    A: () => d
+    A: () => c
 });
 var n = s(627968),
     l = s(64700),
@@ -10,7 +10,7 @@ var n = s(627968),
     r = s(651892),
     u = s(201257);
 
-function d(e) {
+function c(e) {
     let {
         handlePrimaryCtaClick: t
     } = e, {

@@ -50,7 +50,7 @@ let C = l().throttle(function(e, t) {
                 } else if ("object" == typeof _ && p(_.resourceId, _.type)) return b !== c.A.getGuildId() && (0, E.i)(b, d.Ay.getDefaultChannel(b)?.id), (0, s.mMO)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("51354"), n.e("7453"), n.e("85408")]).then(n.bind(n, 926956));
+                    } = await Promise.all([n.e("51354"), n.e("7453"), n.e("71532")]).then(n.bind(n, 926956));
                     return t => (0, i.jsx)(e, {
                         ...t,
                         guildId: b

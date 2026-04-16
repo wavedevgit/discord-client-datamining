@@ -143,17 +143,17 @@ let ee = new Set([o.M.PREMIUM_WISHLIST_COACHMARK]),
         (0, _.Tc)() && (ex && eX.push(o.M.RECURRING_3P_PROMOTION_POPOVER), eg && eX.push(o.M.BOGO_2025_NITRO_TAB_BADGE));
         let [eJ, e0] = (0, g.kn)(eX, void 0, !0);
         ek && eZ.push(o.M.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK), eE && (eL || eR ? eZ.push(o.M.PREMIUM_GROUP_POPOVER_UPSELL_V2) : eZ.push(o.M.PREMIUM_GROUP_POPOVER)), eD && eZ.push(o.M.PREMIUM_ORBS_UPSELL_POPOVER), eG && eZ.push(o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER), eH && eZ.push(o.M.L_3PP_NITRO_TOOLTIP), eF && eZ.push(o.M.L_3PP_NON_NITRO_POPOVER), eV && eZ.push(o.M.PREMIUM_WISHLIST_COACHMARK);
-        let [e1, e7] = (0, g.kn)(eZ, void 0, !0), e9 = (0, U.c)(r.C.PREMIUM_TAB), e6 = (0, U.c)(r.C.PREMIUM_TAB_TOOLTIP), e5 = (0, U.c)(r.C.PREMIUM_TAB_POPOVER), [e2, e3] = (0, g.Cc)(null != e9 && "premiumTab" === e9.properties.properties.oneofKind ? o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, e9?.promotionId ?? "", void 0, !0), [e4, e8] = (0, g.Cc)(null != e5 && "premiumTabPopover" === e5.properties.properties.oneofKind ? o.M.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL : null, e5?.promotionId ?? "", void 0, !0), [te, tt] = (0, g.Cc)(eU ? o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER : null, ej ?? "", void 0, !0), tn = null != e6 && "premiumTabTooltip" === e6.properties.properties.oneofKind && e2 === o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, ti = eH && e1 === o.M.L_3PP_NITRO_TOOLTIP, tl = eF && e1 === o.M.L_3PP_NON_NITRO_POPOVER;
+        let [e1, e7] = (0, g.kn)(eZ, void 0, !0), e6 = (0, U.c)(r.C.PREMIUM_TAB), e9 = (0, U.c)(r.C.PREMIUM_TAB_TOOLTIP), e5 = (0, U.c)(r.C.PREMIUM_TAB_POPOVER), [e3, e2] = (0, g.Cc)(null != e6 && "premiumTab" === e6.properties.properties.oneofKind ? o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, e6?.promotionId ?? "", void 0, !0), [e4, e8] = (0, g.Cc)(null != e5 && "premiumTabPopover" === e5.properties.properties.oneofKind ? o.M.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL : null, e5?.promotionId ?? "", void 0, !0), [te, tt] = (0, g.Cc)(eU ? o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER : null, ej ?? "", void 0, !0), tn = null != e9 && "premiumTabTooltip" === e9.properties.properties.oneofKind && e3 === o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, ti = eH && e1 === o.M.L_3PP_NITRO_TOOLTIP, tl = eF && e1 === o.M.L_3PP_NON_NITRO_POPOVER;
         if (l.useEffect(() => {
-                !0 === x && (null != eJ && e0(Z.i.AUTO_DISMISS), null == e1 || ee.has(e1) || e7(Z.i.AUTO_DISMISS), null != e2 && e3(Z.i.AUTO_DISMISS), null != te && tt(Z.i.AUTO_DISMISS), null != e4 && e8(Z.i.AUTO_DISMISS), ef && eC(Z.i.AUTO_DISMISS))
-            }, [e0, x, eJ, e7, e1, e2, e3, te, tt, e4, e8, ef, eC]), !et({
+                !0 === x && (null != eJ && e0(Z.i.AUTO_DISMISS), null == e1 || ee.has(e1) || e7(Z.i.AUTO_DISMISS), null != e3 && e2(Z.i.AUTO_DISMISS), null != te && tt(Z.i.AUTO_DISMISS), null != e4 && e8(Z.i.AUTO_DISMISS), ef && eC(Z.i.AUTO_DISMISS))
+            }, [e0, x, eJ, e7, e1, e3, e2, te, tt, e4, e8, ef, eC]), !et({
                 selected: x
             })) return null;
         let ta = () => {
             ez === o.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL && e$(Z.i.TAKE_ACTION), N.default.track(X.HAw.NITRO_TAB_VISITED, {
                 badge_decorator: n,
                 has_premium: ed
-            }), null != eJ && e0(Z.i.USER_DISMISS), null != e2 && e3(Z.i.USER_DISMISS), (e1 === o.M.PREMIUM_GROUP_POPOVER || e1 === o.M.PREMIUM_GROUP_POPOVER_UPSELL_V2) && e7(Z.i.USER_DISMISS), e1 === o.M.L_3PP_NITRO_TOOLTIP && e7(Z.i.USER_DISMISS), e1 === o.M.L_3PP_NON_NITRO_POPOVER && e7(Z.i.USER_DISMISS), ef && eC(Z.i.USER_DISMISS)
+            }), null != eJ && e0(Z.i.USER_DISMISS), null != e3 && e2(Z.i.USER_DISMISS), (e1 === o.M.PREMIUM_GROUP_POPOVER || e1 === o.M.PREMIUM_GROUP_POPOVER_UPSELL_V2) && e7(Z.i.USER_DISMISS), e1 === o.M.L_3PP_NITRO_TOOLTIP && e7(Z.i.USER_DISMISS), e1 === o.M.L_3PP_NON_NITRO_POPOVER && e7(Z.i.USER_DISMISS), ef && eC(Z.i.USER_DISMISS)
         };
         eY === Q.xc.NONE || em || (n = 7, t = (0, i.jsx)(R.A, {
             className: "",
@@ -168,11 +168,11 @@ let ee = new Set([o.M.PREMIUM_WISHLIST_COACHMARK]),
             type: "new",
             variant: "expressive"
         }), n = 10;
-        else if (null != e9 && "premiumTab" === e9.properties.properties.oneofKind) t = (0, i.jsx)(B.A, {
-            componentId: e9.id,
-            badgeCopy: e9.properties.properties.premiumTab.badgeLabel,
-            acknowledgedBadgeCopy: e9.properties.properties.premiumTab.acknowledgedBadgeLabel,
-            isDismissed: (0, m.u$)(o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, e9?.promotionId ?? "").isDismissed
+        else if (null != e6 && "premiumTab" === e6.properties.properties.oneofKind) t = (0, i.jsx)(B.A, {
+            componentId: e6.id,
+            badgeCopy: e6.properties.properties.premiumTab.badgeLabel,
+            acknowledgedBadgeCopy: e6.properties.properties.premiumTab.acknowledgedBadgeLabel,
+            isDismissed: (0, m.u$)(o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, e6?.promotionId ?? "").isDismissed
         }), n = 9;
         else if (eg) t = (0, i.jsx)(V.A, {}), n = 0;
         else if (ep) {

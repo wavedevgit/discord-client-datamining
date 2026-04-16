@@ -1,62 +1,61 @@
 /** chunk id: 291812 params = (module,exports,require) **/
-"use strict";
-n.d(t, {
-    Ay: () => x,
-    _A: () => f,
-    sP: () => p
+t.d(a, {
+    Ay: () => O,
+    _A: () => N,
+    sP: () => m
 });
-var l = n(627968),
-    i = n(64700),
-    s = n(503698),
-    a = n.n(s),
-    r = n(877413),
-    o = n.n(r),
-    u = n(52133),
-    c = n(860227),
-    d = n(861986),
-    m = n(652215),
-    g = n(985018),
-    h = n(767283),
-    A = n(782691);
+var n = t(627968),
+    r = t(64700),
+    s = t(503698),
+    o = t.n(s),
+    c = t(877413),
+    _ = t.n(c),
+    i = t(52133),
+    l = t(860227),
+    d = t(861986),
+    C = t(652215),
+    E = t(985018),
+    A = t(334211),
+    u = t(992595);
 
-function f(e, t) {
-    return e.type === m.lAJ.VOICE_HANGOUT_INVITE ? "" : e.hasFlag(m.pr7.SOURCE_MESSAGE_DELETED) ? g.intl.string(g.t.JOtgSw) : t
+function N(e, a) {
+    return e.type === C.lAJ.VOICE_HANGOUT_INVITE ? "" : e.hasFlag(C.pr7.SOURCE_MESSAGE_DELETED) ? E.intl.string(E.t.JOtgSw) : a
 }
 
-function p(e, t) {
+function m(e, a) {
     let {
+        message: t
+    } = a, {
         message: n
-    } = t, {
-        message: l
     } = e;
-    return (0, u.A)(e, t, ["message"]) && n.content === l.content && n.state === l.state && n.editedTimestamp?.toString() === l.editedTimestamp?.toString()
+    return (0, i.A)(e, a, ["message"]) && t.content === n.content && t.state === n.state && t.editedTimestamp?.toString() === n.editedTimestamp?.toString()
 }
-let x = i.memo(function(e) {
+let O = r.memo(function(e) {
     let {
-        className: t,
-        message: n,
+        className: a,
+        message: t,
         children: s,
-        content: r,
-        onUpdate: u,
-        contentRef: g,
-        compact: p
-    } = e, x = n.state === m.cmJ.SEND_FAILED, v = n.state === m.cmJ.SENDING, C = n.isCommandType(), N = n.editedTimestamp?.toString(), E = i.useRef(!1);
-    return i.useLayoutEffect(() => {
-        E.current ? null != u && u() : E.current = !0
-    }, [u, n.content, r, N, s]), (0, l.jsxs)("div", {
-        id: (0, c.CJ)(n),
-        ref: g,
-        className: a()(t, A.PT, {
-            [h.BK]: !0,
-            [h.Tn]: v && !C,
-            [h.nB]: "rtl" === o()(n.content),
-            [h.Ix]: x,
-            [h.w3]: n.isUnsupported
+        content: c,
+        onUpdate: i,
+        contentRef: E,
+        compact: m
+    } = e, O = t.state === C.cmJ.SEND_FAILED, T = t.state === C.cmJ.SENDING, I = t.isCommandType(), R = t.editedTimestamp?.toString(), p = r.useRef(!1);
+    return r.useLayoutEffect(() => {
+        p.current ? null != i && i() : p.current = !0
+    }, [i, t.content, c, R, s]), (0, n.jsxs)("div", {
+        id: (0, l.CJ)(t),
+        ref: E,
+        className: o()(a, u.PT, {
+            [A.BK]: !0,
+            [A.Tn]: T && !I,
+            [A.nB]: "rtl" === _()(t.content),
+            [A.Ix]: O,
+            [A.w3]: t.isUnsupported
         }),
-        children: [s ?? f(n, r), (0, l.jsx)(d.A, {
-            message: n,
-            compact: p,
+        children: [s ?? N(t, c), (0, n.jsx)(d.A, {
+            message: t,
+            compact: m,
             location: d.O.WITH_CONTENT
         })]
     })
-}, p)
+}, m)

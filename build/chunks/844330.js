@@ -1,82 +1,82 @@
 /** chunk id: 844330 params = (module,exports,require) **/
-t.d(a, {
+n.d(t, {
     A: () => c
 });
-var n = t(627968),
-    _ = t(64700),
-    r = t(503698),
-    i = t.n(r),
-    o = t(397927),
-    l = t(147925),
-    s = t(485965);
+var a = n(627968),
+    i = n(64700),
+    s = n(503698),
+    l = n.n(s),
+    r = n(397927),
+    o = n(147925),
+    d = n(214205);
 
 function c(e) {
     let {
-        icon: a,
-        title: t,
-        subtitle: r,
+        icon: t,
+        title: n,
+        subtitle: s,
         children: c,
-        className: p,
-        isExpanded: d,
-        onExpandedChange: u,
-        defaultExpanded: f = !1,
-        onOpen: x,
-        maxHeight: m
-    } = e, [b, g] = _.useState(f), h = _.useRef(null), [C, v] = _.useState(null), I = void 0 !== d, S = I ? d : b;
-    _.useEffect(() => {
-        S && null != h.current && v(h.current.scrollHeight)
-    }, [S, c]);
-    let j = _.useCallback(() => {
-            let e = !S;
-            I || g(e), u?.(e), e && null != x && x()
-        }, [S, I, u, x]),
-        k = _.useMemo(() => {
-            if (S) {
-                if (null != m) return {
-                    maxHeight: "number" == typeof m ? `${m}px` : m
+        className: u,
+        isExpanded: m,
+        onExpandedChange: h,
+        defaultExpanded: x = !1,
+        onOpen: p,
+        maxHeight: g
+    } = e, [f, v] = i.useState(x), _ = i.useRef(null), [b, j] = i.useState(null), A = void 0 !== m, C = A ? m : f;
+    i.useEffect(() => {
+        C && null != _.current && j(_.current.scrollHeight)
+    }, [C, c]);
+    let y = i.useCallback(() => {
+            let e = !C;
+            A || v(e), h?.(e), e && null != p && p()
+        }, [C, A, h, p]),
+        S = i.useMemo(() => {
+            if (C) {
+                if (null != g) return {
+                    maxHeight: "number" == typeof g ? `${g}px` : g
                 };
-                if (null != C) return {
-                    maxHeight: `${C}px`
+                if (null != b) return {
+                    maxHeight: `${b}px`
                 }
             }
-        }, [m, S, C]);
-    return (0, n.jsxs)("div", {
-        className: i()(s.Yt, p, {
-            [s.Sg]: S
+        }, [g, C, b]);
+    return (0, a.jsxs)("div", {
+        className: l()(d.Yt, u, {
+            [d.Sg]: C
         }),
-        children: [(0, n.jsxs)(o.DUT, {
-            className: s.wx,
-            onClick: j,
-            children: [null != a && (0, n.jsx)("div", {
-                className: s.Y5,
-                children: a
-            }), (0, n.jsxs)("div", {
-                className: s.DD,
-                children: [(0, n.jsx)(o.Text, {
+        children: [(0, a.jsxs)(r.DUT, {
+            className: d.wx,
+            onClick: y,
+            children: [null != t && (0, a.jsx)("div", {
+                className: d.Y5,
+                children: t
+            }), (0, a.jsxs)("div", {
+                className: d.DD,
+                children: [(0, a.jsx)(r.Text, {
                     variant: "text-sm/medium",
                     color: "text-default",
-                    children: t
-                }), null != r && "" !== r && (0, n.jsx)(o.Text, {
+                    children: n
+                }), null != s && "" !== s && (0, a.jsx)(r.Text, {
                     variant: "text-xs/medium",
                     color: "text-subtle",
-                    children: r
+                    children: s
                 })]
-            }), (0, n.jsx)("div", {
-                className: i()(s.OW, {
-                    [s.Sg]: S
+            }), (0, a.jsx)("div", {
+                className: l()(d.OW, {
+                    [d.Sg]: C
                 }),
-                children: (0, n.jsx)(l.A, {
+                children: (0, a.jsx)(o.A, {
                     width: 20,
                     height: 20,
-                    direction: l.A.Directions.RIGHT
+                    direction: o.A.Directions.RIGHT
                 })
             })]
-        }), (0, n.jsx)("div", {
-            ref: h,
-            className: i()(s.Qs, {
-                [s.Sg]: S
+        }), (0, a.jsx)("div", {
+            ref: _,
+            className: l()(d.Qs, {
+                [d.Sg]: C
             }),
-            style: k,
+            style: S,
             children: c
         })]
     })

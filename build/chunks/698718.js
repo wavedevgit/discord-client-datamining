@@ -1,6 +1,6 @@
 /** chunk id: 698718 params = (module,exports,require) **/
 n.d(t, {
-    A: () => e6
+    A: () => e5
 }), n(938796);
 var i = n(627968),
     l = n(64700),
@@ -106,7 +106,7 @@ var i = n(627968),
     e$ = n(652215),
     eZ = n(381941),
     eX = n(985018),
-    eQ = n(358943);
+    eQ = n(964623);
 
 function e0(e) {
     e.preventDefault()
@@ -125,12 +125,12 @@ function e2(e) {
         ...n
     })
 }
-let e9 = l.forwardRef((e, t) => (0, i.jsx)(e7, {
+let e9 = l.forwardRef((e, t) => (0, i.jsx)(e3, {
     ...e,
     ref: t
 }));
 e9.displayName = "ChannelTextAreaForm";
-class e7 extends l.PureComponent {
+class e3 extends l.PureComponent {
     focusEditor() {
         this.editorRef?.focus()
     }
@@ -569,7 +569,7 @@ class e7 extends l.PureComponent {
         })
     }
 }
-class e3 extends l.PureComponent {
+class e7 extends l.PureComponent {
     static getDerivedStateFromProps(e, t) {
         let {
             channel: n
@@ -824,7 +824,7 @@ class e3 extends l.PureComponent {
         }, `messages-${t.id}`)
     }
 }
-let e6 = l.memo(function(e) {
+let e5 = l.memo(function(e) {
     let {
         channel: t,
         guild: n,
@@ -838,7 +838,7 @@ let e6 = l.memo(function(e) {
     }), o = (0, eu.L)(eO.default.getCurrentUser(), t), [c] = (0, Y.c)(n?.id), d = (0, V.uZ)(n?.id), u = (0, h.bG)([eO.default], () => eO.default.getCurrentUser()), A = (0, h.bG)([ey.Ay], () => null != u && (ey.Ay.getMember(n?.id ?? e$.dJq, u?.id)?.isPending ?? !1)), g = (0, h.bG)([er.A], () => er.A.isEnabled()), _ = (0, ed.A)(t.id), p = (0, q.A)(t.id), E = (0, e_.D)(t.id), C = (0, h.bG)([eC.A], () => eC.A.getAlsoSendToChannel(t.id)), S = (0, h.bG)([eo.Ay, eI.default], () => eo.Ay.getUserCombo(eI.default.getId(), t.id)), I = (0, f.rj)(t), T = (0, f.aW)(t), v = I.length > 0 || t.rateLimitPerUser > 0 || null != S || null != T, {
         showLinkedLobbyApplicationLoadingIndicator: N
     } = (0, eB.A)(t.linkedLobby), y = (0, H.A)("ChannelChat"), b = (0, ea.A)((0, Q.GP)(n, "ChannelChat") ? n?.officialMessageColor ?? eZ.aj : null);
-    return (0, K.A)(t), (0, i.jsx)(e3, {
+    return (0, K.A)(t), (0, i.jsx)(e7, {
         channel: t,
         guildOfficialMessageStyle: b,
         isEditing: null != (0, h.bG)([eN.A], () => eN.A.getEditingMessageId(t.id)),

@@ -1,5 +1,5 @@
 /** chunk id: 535820 params = (module,exports,require) **/
-let l, i, s, a, r, o;
+let l, i, a, s, r, o;
 n.d(t, {
     A: () => N
 });
@@ -15,8 +15,8 @@ var d = n(311907),
     m = n(652215),
     S = n(172799);
 let v = new Set,
-    y = [],
-    f = new Map,
+    f = [],
+    y = new Map,
     E = {
         numFriends: 0,
         numDms: 0,
@@ -26,9 +26,9 @@ let v = new Set,
 
 function _(e) {
     let t = new Set,
-        n = a?.type === m.rbe.GUILD_VOICE,
+        n = s?.type === m.rbe.GUILD_VOICE,
         l = null;
-    null == s || o === S.yV.EMBEDDED_APPLICATION || n || (l = s.id);
+    null == a || o === S.yV.EMBEDDED_APPLICATION || n || (l = a.id);
     let i = (0, A.oW)(v, l);
     for (let e of (null == i || I.A.isBlockedOrIgnored(i.id) || t.add(i.id), g.A.getUserAffinities())) t.add(e.otherUserId);
     let r = new Set;
@@ -44,8 +44,8 @@ function _(e) {
 }
 
 function T(e) {
-    y = e, f = new Map, e.forEach((e, t) => {
-        f.set(e, {
+    f = e, y = new Map, e.forEach((e, t) => {
+        y.set(e, {
             index: t
         })
     })
@@ -56,7 +56,7 @@ class C extends d.Ay.Store {
         this.waitFor(x.A, p.A, c.A, I.A, g.A)
     }
     getInviteSuggestionRows() {
-        return y
+        return f
     }
     getTotalSuggestionsCount() {
         return l
@@ -65,12 +65,12 @@ class C extends d.Ay.Store {
         return E
     }
     getSelectedInviteMetadata(e) {
-        let t = f.get(e),
+        let t = y.get(e),
             n = g.A.getUserAffinities().map(e => e.otherUserId);
         if (null != t) return {
             rowNum: t.index,
             isAffinitySuggestion: e.isSuggested,
-            numTotal: y.length,
+            numTotal: f.length,
             numAffinityConnections: n.length,
             isFiltered: i
         }
@@ -85,8 +85,8 @@ let N = new C(u.h, {
             applicationId: u,
             inviteTargetType: c
         } = e;
-        s = null != d ? n : null, a = d, r = u, o = c, v = new Set([...t, ...I.A.getBlockedOrIgnoredIDs(), ...(0, A.Uo)({
-            channel: a,
+        a = null != d ? n : null, s = d, r = u, o = c, v = new Set([...t, ...I.A.getBlockedOrIgnoredIDs(), ...(0, A.Uo)({
+            channel: s,
             applicationId: r,
             inviteTargetType: c
         })]), i = !1;
@@ -94,7 +94,7 @@ let N = new C(u.h, {
             rows: g,
             counts: h
         } = _("");
-        T(g), E = h, l = y.length
+        T(g), E = h, l = f.length
     },
     INVITE_SUGGESTIONS_SEARCH: function(e) {
         let {

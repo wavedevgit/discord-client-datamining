@@ -6,18 +6,18 @@ var a = t(64700),
     i = t(198982);
 
 function r(e, n) {
-    let [t, r] = a.useState(!1), [c, l] = a.useState(null);
+    let [t, r] = a.useState(!1), [o, s] = a.useState(null);
     return [async () => {
-        r(!0), l(null);
+        r(!0), s(null);
         try {
             let n = await e();
-            return r(!1), l(null), n
+            return r(!1), s(null), n
         } catch (t) {
             let e = new i.LG(t);
-            return n?.(e), l(e), r(!1), null
+            return n?.(e), s(e), r(!1), null
         }
     }, {
         loading: t,
-        error: c
+        error: o
     }]
 }

@@ -26,7 +26,7 @@ var l = n(627968),
     R = n(221950),
     C = n(11541),
     L = n(985018),
-    D = n(312942);
+    D = n(334046);
 let f = r.memo(function() {
         return (0, l.jsx)(o.m, {
             "data-pending-richtooltip-migration": !0,

@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(46054),
     u = n(742589),
     h = n(985018),
-    A = n(170028),
-    _ = n(782691);
+    A = n(221308),
+    _ = n(992595);
 
 function m(e) {
     return e.matches("a") || "highlight" === e.className || e.className.includes("mention") || e.className.includes("roleMention") || e.className.includes("emojiContainer")
@@ -43,7 +43,7 @@ class p extends l.Component {
         (0, d.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("17425"), n.e("60782")]).then(n.bind(n, 340968));
+            } = await Promise.all([n.e("17425"), n.e("2200")]).then(n.bind(n, 340968));
             return n => (0, i.jsx)(e, {
                 ...n,
                 channel: t,

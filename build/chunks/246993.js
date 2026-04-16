@@ -10,8 +10,8 @@ var a = n(627968),
     o = n(209390),
     d = n(734057),
     c = n(303054),
-    u = n(709968),
-    m = n(310086);
+    u = n(907360),
+    m = n(505206);
 let h = [{
     key: "channel",
     cellClassName: u._w,

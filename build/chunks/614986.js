@@ -1,7 +1,7 @@
 /** chunk id: 614986 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => M
+    A: () => F
 });
 var i = n(627968),
     s = n(64700),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(765671),
     _ = n(854378),
     p = n(9994),
-    m = n(210714),
-    g = n(961350),
+    g = n(210714),
+    m = n(961350),
     A = n(71393),
     f = n(299091),
     E = n(954571),
@@ -32,7 +32,7 @@ var i = n(627968),
     b = n(172799),
     R = n(652215),
     O = n(985018),
-    L = n(500577);
+    L = n(888849);
 
 function w() {
     return (0, i.jsx)("div", {
@@ -41,7 +41,7 @@ function w() {
     })
 }
 
-function k(e) {
+function D(e) {
     let t = e?.state == null && e?.channel == null;
     if (null == e || null == e.state || t) return 0;
     let n = e.state;
@@ -64,7 +64,7 @@ function k(e) {
     }
 }
 
-function B(e) {
+function k(e) {
     let {
         invite: t,
         onAcceptInvite: n
@@ -80,7 +80,7 @@ function B(e) {
     })
 }
 
-function D(e) {
+function U(e) {
     let {
         children: t,
         cardChildren: n,
@@ -114,8 +114,8 @@ function P(e) {
         invite: t
     } = e;
     if (null == t || !(0, C.Fk)(t)) return null;
-    let n = k(t);
-    return (0, i.jsx)(D, {
+    let n = D(t);
+    return (0, i.jsx)(U, {
         startAnimHeightPx: 0,
         sectionClassName: L.ui,
         children: 1 === n ? (0, i.jsx)(S.s, {
@@ -123,7 +123,7 @@ function P(e) {
         }) : null
     })
 }
-let U = {
+let B = {
     1: L._r,
     2: L.Gm,
     0: L.Kt
@@ -133,7 +133,7 @@ function G(e) {
     let t, {
             invite: n
         } = e,
-        r = k(n),
+        r = D(n),
         {
             enabled: a
         } = y.n.useConfig({
@@ -166,7 +166,7 @@ function G(e) {
             });
             break;
         case 2:
-            t = (0, i.jsx)(B, {
+            t = (0, i.jsx)(k, {
                 ...e,
                 invite: n
             });
@@ -175,15 +175,15 @@ function G(e) {
             t = (0, i.jsx)(w, {})
     }
     let u = 1 === r && d ? L.c4 : L.qF;
-    return (0, i.jsx)(D, {
+    return (0, i.jsx)(U, {
         startAnimHeightPx: 200,
-        sectionClassName: U[r],
+        sectionClassName: B[r],
         inviteCardClassName: u,
         children: t
     })
 }
 
-function F(e) {
+function M(e) {
     let {
         invite: t,
         onAcceptInvite: n
@@ -211,23 +211,23 @@ function F(e) {
     })
 }
 
-function M(e) {
+function F(e) {
     let {
         inviteKey: t,
         transitionTo: n
     } = e, r = (0, a.bG)([f.A], () => f.A.getInvite(t));
     return s.useEffect(() => {
-        let e = g.default.getAnalyticsToken();
+        let e = m.default.getAnalyticsToken();
         null != e && c.h.dispatch({
             type: "SET_ANALYTICS_TOKEN",
             analyticsToken: e,
-            userId: g.default.getId()
-        }), (0, m.d)("invite_mobile"), E.default.track(R.HAw.INVITE_VIEWED, {
+            userId: m.default.getId()
+        }), (0, g.d)("invite_mobile"), E.default.track(R.HAw.INVITE_VIEWED, {
             invite_code: t
         }, {
             flush: !0
         })
-    }, []), (0, i.jsx)(F, {
+    }, []), (0, i.jsx)(M, {
         invite: r,
         onAcceptInvite: e => {
             let n, i, s, l;
@@ -239,7 +239,7 @@ function M(e) {
                 invite_type: null != r && r?.type != null ? b.Xd[r?.type] : void 0,
                 user_is_member: null != r && null != r.guild && null != A.A.getGuild(r.guild.id),
                 size_total: r?.approximate_member_count
-            }), n = null != r && r.state !== R.elq.EXPIRED && r.state !== R.elq.BANNED ? t : void 0, s = null != (i = g.default.getFingerprint()) ? i : g.default.getId(), l = null != r && r?.type != null ? Number(r?.type) : void 0, d.Ay.openApp(n, void 0, s, void 0, l)
+            }), n = null != r && r.state !== R.elq.EXPIRED && r.state !== R.elq.BANNED ? t : void 0, s = null != (i = m.default.getFingerprint()) ? i : m.default.getId(), l = null != r && r?.type != null ? Number(r?.type) : void 0, d.Ay.openApp(n, void 0, s, void 0, l)
         },
         transitionTo: n
     })
