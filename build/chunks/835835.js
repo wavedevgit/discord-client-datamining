@@ -1,13 +1,13 @@
 /** chunk id: 835835 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => D,
+    Ay: () => O,
     Y9: () => j,
     u9: () => R
 }), n(321073);
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(735438),
     o = n.n(r),
     c = n(837381),
@@ -38,10 +38,10 @@ let j = e => {
             title: t,
             icon: n,
             children: l,
-            className: a
+            className: s
         } = e;
         return (0, i.jsxs)("div", {
-            className: s()(a, y.wx),
+            className: a()(s, y.wx),
             children: [(0, i.jsxs)("div", {
                 className: y.gn,
                 children: [null != n ? (0, i.jsx)(n, {
@@ -108,7 +108,7 @@ class M extends l.PureComponent {
             canCloseAllMessages: t,
             canManageMessages: n,
             channel: l,
-            closeAriaLabel: a
+            closeAriaLabel: s
         } = this.props;
         return null != e && (t || n || null != l && l.isPrivate()) ? (0, i.jsx)("div", {
             className: y.UD,
@@ -116,7 +116,7 @@ class M extends l.PureComponent {
                 icon: u.PGe,
                 size: "sm",
                 variant: "secondary",
-                "aria-label": a ?? N.intl.string(N.t.cpT0Cq),
+                "aria-label": s ?? N.intl.string(N.t.cpT0Cq),
                 onClick: this.handleClickClose
             })
         }) : null
@@ -137,11 +137,11 @@ let L = d.Ay.connectStores([f.A], e => {
     }
 })(M);
 
-function O(e) {
+function D(e) {
     let {
         analyticsName: t,
         items: n,
-        hasMore: a,
+        hasMore: s,
         loading: r,
         loadMore: h,
         renderHeader: g,
@@ -151,7 +151,7 @@ function O(e) {
         scrollerClassName: I,
         className: T,
         listName: j
-    } = e, R = l.useRef(null), M = (0, m.A)(j, R), L = (0, d.bG)([E.Ay], () => E.Ay.hasNotice()), O = (0, d.bG)([C.A], () => C.A.windowSize());
+    } = e, R = l.useRef(null), M = (0, m.A)(j, R), L = (0, d.bG)([E.Ay], () => E.Ay.hasNotice()), D = (0, d.bG)([C.A], () => C.A.windowSize());
     l.useEffect(() => {
         x.default.track(v.HAw.OPEN_POPOUT, {
             type: t
@@ -172,14 +172,14 @@ function O(e) {
             S._.unsubscribe(v.jej.SCROLL_PAGE_DOWN, t), S._.unsubscribe(v.jej.SCROLL_PAGE_UP, e)
         }
     }, []);
-    let D = l.useCallback(() => {
+    let O = l.useCallback(() => {
             let e = R.current?.getScrollerState();
-            null != e && e.scrollHeight - e.scrollTop - e.offsetHeight < 250 && a && !r && h?.()
-        }, [a, h, r]),
+            null != e && e.scrollHeight - e.scrollTop - e.offsetHeight < 250 && s && !r && h?.()
+        }, [s, h, r]),
         P = [],
         w = !0;
     null == n || r && 0 === n.length ? P = [(0, i.jsx)("div", {
-        className: s()(y.zC, y.k$),
+        className: a()(y.zC, y.k$),
         children: (0, i.jsx)(u.y$y, {})
     }, "spinner")] : 0 === n.length ? P.push((0, i.jsx)(l.Fragment, {
         children: _()
@@ -190,7 +190,7 @@ function O(e) {
     null != n && n.length > 0 && null != h && (U = r ? (0, i.jsx)("div", {
         className: y.sw,
         children: (0, i.jsx)(u.y$y, {})
-    }, "loading-more-after") : a ? (0, i.jsx)("div", {
+    }, "loading-more-after") : s ? (0, i.jsx)("div", {
         className: y.u9,
         children: (0, i.jsx)(u.Button, {
             variant: "secondary",
@@ -216,12 +216,12 @@ function O(e) {
             })
         }) : null,
         F = {
-            maxHeight: O.height - 43 - 25 - 48
+            maxHeight: D.height - 43 - 25 - 48
         };
     L && (F.maxHeight -= 40);
-    let H = null != h && a;
+    let H = null != h && s;
     return (0, i.jsx)("div", {
-        className: s()(y.KQ, T ?? y.G6),
+        className: a()(y.KQ, T ?? y.G6),
         style: F,
         onClick: b,
         onDoubleClick: b,
@@ -230,7 +230,7 @@ function O(e) {
             component: g(),
             children: [(0, i.jsxs)(u.T7Y, {
                 className: I ?? y.m4,
-                onScroll: H ? D : void 0,
+                onScroll: H ? O : void 0,
                 ref: R,
                 children: [(0, i.jsx)(c.hD, {
                     navigator: M,
@@ -253,12 +253,12 @@ function O(e) {
     })
 }
 
-function D(e) {
+function O(e) {
     let {
         analyticsName: t,
         onFetch: n,
-        channel: a,
-        messages: s,
+        channel: s,
+        messages: a,
         hasMore: r,
         loading: o,
         loadMore: c,
@@ -274,7 +274,7 @@ function D(e) {
         listName: b,
         closeAriaLabel: j
     } = e, R = (0, d.bG)([p.A], () => {
-        let e = null != a ? p.A.getMessages(a.id) : null;
+        let e = null != s ? p.A.getMessages(s.id) : null;
         return null != e && null != e.jumpTargetId && e.loadingMore && null == e.get(e.jumpTargetId)
     });
 
@@ -283,22 +283,22 @@ function D(e) {
             let {
                 id: i,
                 channel_id: l
-            } = e, a = _.A.getChannel(l);
-            null != a && (h.A.trackJump(l, i, t), (0, g.pX)(v.BVt.CHANNEL(a.getGuildId(), l, i))), u?.(n)
+            } = e, s = _.A.getChannel(l);
+            null != s && (h.A.trackJump(l, i, t), (0, g.pX)(v.BVt.CHANNEL(s.getGuildId(), l, i))), u?.(n)
         };
         (0, I.A)(e, i) && !R && i()
     }
     l.useEffect(() => {
-        n(a)
-    }, [a, n]);
-    let D = l.useMemo(() => s?.map(e => ({
+        n(s)
+    }, [s, n]);
+    let O = l.useMemo(() => a?.map(e => ({
         message: e,
-        channel: a
-    })), [s, a]);
-    return (0, i.jsx)(O, {
+        channel: s
+    })), [a, s]);
+    return (0, i.jsx)(D, {
         className: S,
         scrollerClassName: x,
-        items: D,
+        items: O,
         loading: o,
         analyticsName: t,
         renderEmptyState: f,
@@ -321,7 +321,7 @@ function D(e) {
                     message: t,
                     channel: n
                 }), (0, i.jsx)(L, {
-                    channel: a,
+                    channel: s,
                     message: t,
                     jumping: R,
                     canCloseAllMessages: m,

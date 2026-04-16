@@ -53,8 +53,8 @@ function N(e) {
     }), a.useLayoutEffect(() => {
         P((x.current?.clientHeight ?? 0) > 292)
     }, [P]);
-    let k = (0, p.oO)(t),
-        O = a.useCallback(() => {
+    let O = (0, p.oO)(t),
+        k = a.useCallback(() => {
             !R || N && L(!1)
         }, [N, R]),
         U = a.useCallback(() => {
@@ -64,25 +64,25 @@ function N(e) {
             height: N ? 292 : x.current.clientHeight + 36 + 48,
             transition: M ? void 0 : "height 0.2s ease"
         } : {}, [N, R, M]);
-    return null == k ? (0, i.jsx)(b.A, {}) : (0, i.jsxs)(d.sqX, {
+    return null == O ? (0, i.jsx)(b.A, {}) : (0, i.jsxs)(d.sqX, {
         className: s()(S.Gg, {
             [S.vk]: R && N
         }),
-        onClick: O,
+        onClick: k,
         style: B,
         "aria-label": y.intl.string(y.t.dcl9MQ),
         children: [(0, i.jsxs)("div", {
             className: S.uY,
             ref: x,
             children: [(0, i.jsx)(C.J$, {
-                profile: k,
+                profile: O,
                 className: S.vK
             }), (0, i.jsx)(C.CG, {
-                profile: k
+                profile: O
             }), (0, i.jsx)(f.A, {
-                profile: k
+                profile: O
             }), (0, i.jsx)(A.P, {
-                profile: k,
+                profile: O,
                 className: S.rb
             }), (0, i.jsx)(v.A, {
                 guild: null != t.guild ? (0, I.DY)(t.guild) : null,
@@ -112,7 +112,7 @@ function N(e) {
                     className: S.UD,
                     children: (0, i.jsx)(j, {
                         invite: t,
-                        profile: k,
+                        profile: O,
                         isMemberOfGuild: n,
                         message: l,
                         submitting: w,

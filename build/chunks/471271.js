@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(64700),
     l = n(424266),
-    a = n.n(l),
-    s = n(198982),
+    s = n.n(l),
+    a = n(198982),
     r = n(928658),
     o = n(622543),
     c = n(576622),
@@ -29,7 +29,7 @@ function p(e) {
             try {
                 await (0, h.RK)(e), N(!0), n?.()
             } catch (t) {
-                let e = new s.LG(t);
+                let e = new a.LG(t);
                 p?.(e)
             } finally {
                 C(!1)
@@ -41,7 +41,7 @@ function p(e) {
             try {
                 await (0, h.UK)(e), b(!0), l?.()
             } catch (t) {
-                let e = new s.LG(t);
+                let e = new a.LG(t);
                 p?.(e)
             } finally {
                 S(!1)
@@ -50,17 +50,17 @@ function p(e) {
     }, [j, l, p]), L = i.useCallback(async e => {
         if (j) return;
         S(!0);
-        let t = a()(e, 50);
+        let t = s()(e, 50);
         try {
             for (let e of t) await (0, h.ST)(e);
             b(!0), l?.()
         } catch (t) {
-            let e = new s.LG(t);
+            let e = new a.LG(t);
             p?.(e)
         } finally {
             S(!1)
         }
-    }, [j, l, p]), O = i.useCallback(async e => {
+    }, [j, l, p]), D = i.useCallback(async e => {
         if (j) return;
         if (null != t && null == o.A.getMutualGuilds(t.id)) {
             T(!0);
@@ -95,7 +95,7 @@ function p(e) {
                 })
             }
         })
-    }, [R, j, t]), D = i.useCallback((e, t, n) => {
+    }, [R, j, t]), O = i.useCallback((e, t, n) => {
         let i = (i, l) => {
                 l && d.WY.updateSetting(i), i && null != t && (0, r.tJ)(t), R(e.id), u.default.track(_.HAw.MESSAGE_REQUEST_ACTION, {
                     action: g.LD.ACCEPT_HAM_CONFIRMATION_PROMPT,
@@ -117,10 +117,10 @@ function p(e) {
         }) : i(l)
     }, [R]);
     return {
-        acceptMessageRequest: f ? O : R,
+        acceptMessageRequest: f ? D : R,
         rejectMessageRequest: M,
         rejectAll: L,
-        markAsNotSpam: D,
+        markAsNotSpam: O,
         isAcceptLoading: E,
         isRejectLoading: x,
         isUserProfileLoading: I,

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(989349),
-    s = n.n(a),
+    s = n(989349),
+    a = n.n(s),
     r = n(158954),
     o = n(397927),
     c = n(151282),
@@ -19,8 +19,8 @@ function A(e) {
     let {
         scheduledMessage: t,
         transitionState: n,
-        onClose: a
-    } = e, A = s()(t.sendAtTimestamp.substring(0, 200)), [g, _] = l.useState(A), [p, f] = l.useState(!1), E = async () => {
+        onClose: s
+    } = e, A = a()(t.sendAtTimestamp.substring(0, 200)), [g, _] = l.useState(A), [p, f] = l.useState(!1), E = async () => {
         f(!0);
         try {
             await (0, c.Eg)(t.scheduledMessageId, g.toISOString()), (0, u.kb)(), (0, o.OoC)(m)
@@ -34,11 +34,11 @@ function A(e) {
         transitionState: n,
         size: "md",
         title: h.intl.string(h.t.jbdHj3),
-        onClose: a,
+        onClose: s,
         actions: [{
             variant: "secondary",
             text: h.intl.string(h.t["ETE/oC"]),
-            onClick: a
+            onClick: s
         }, {
             variant: "primary",
             text: h.intl.string(h.t.VZANAD),

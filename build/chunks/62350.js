@@ -35,8 +35,8 @@ var i = n(627968),
     w = n(652215),
     M = n(768349),
     D = n(172799),
-    k = n(985018),
-    O = n(718223);
+    O = n(985018),
+    k = n(718223);
 
 function U(e) {
     let {
@@ -45,31 +45,31 @@ function U(e) {
         textColor: a
     } = e, l = [];
     return null != n && n > 0 && l.push((0, i.jsxs)("div", {
-        className: O.MY,
+        className: k.MY,
         children: [(0, i.jsx)("i", {
-            className: O.QD
+            className: k.QD
         }), (0, i.jsx)(u.Text, {
             variant: "text-xs/normal",
-            className: O.U9,
+            className: k.U9,
             color: a,
-            children: k.intl.format(k.t["LC+S+m"], {
+            children: O.intl.format(O.t["LC+S+m"], {
                 membersOnline: n
             })
         })]
     }, "onlineCount")), null != t && l.push((0, i.jsxs)("div", {
-        className: O.MY,
+        className: k.MY,
         children: [(0, i.jsx)("i", {
-            className: O.o6
+            className: k.o6
         }), (0, i.jsx)(u.Text, {
             variant: "text-xs/normal",
-            className: O.U9,
+            className: k.U9,
             color: a,
-            children: k.intl.format(k.t.zRl6XR, {
+            children: O.intl.format(O.t.zRl6XR, {
                 count: t
             })
         })]
     }, "memberCount")), (0, i.jsx)("div", {
-        className: O.rc,
+        className: k.rc,
         children: l
     })
 }
@@ -84,18 +84,18 @@ function B(e) {
     if (null != t && null != n) {
         let e = (0, v.gU)(t, n);
         return (0, i.jsxs)("div", {
-            className: s()(O.Ix, {
-                [O.v6]: a
+            className: s()(k.Ix, {
+                [k.v6]: a
             }),
             children: [null != e ? (0, i.jsx)(e, {
-                className: O.p,
+                className: k.p,
                 size: "xs",
                 color: "currentColor"
             }) : null, (0, i.jsx)(c.A, {
                 children: (0, i.jsx)(u.Text, {
                     variant: "text-xs/normal",
                     color: l,
-                    children: k.intl.format(k.t["dc+LW4"], {
+                    children: O.intl.format(O.t["dc+LW4"], {
                         channelName: r ?? "",
                         serverName: n.name
                     })
@@ -104,14 +104,14 @@ function B(e) {
         })
     }
     return null != n ? (0, i.jsx)("div", {
-        className: s()(O.Ix, {
-            [O.v6]: a
+        className: s()(k.Ix, {
+            [k.v6]: a
         }),
         children: (0, i.jsx)(c.A, {
             children: (0, i.jsx)(u.Text, {
                 variant: "text-xs/normal",
                 color: l,
-                children: k.intl.format(k.t.u0vaDE, {
+                children: O.intl.format(O.t.u0vaDE, {
                     guildName: n.name
                 })
             })
@@ -150,7 +150,7 @@ function G(e) {
         L = T.A.getChannel(l.channel?.id),
         M = (0, d.bG)([S.A], () => null != L && S.A.can(w.xBc.USE_EMBEDDED_ACTIVITIES, L), [L]),
         {
-            analyticsLocations: O
+            analyticsLocations: k
         } = (0, p.Ay)(h.A.INVITE_EMBED),
         U = (0, d.yK)([m.Ay], () => null != L ? m.Ay.getEmbeddedActivitiesForChannel(L.id).filter(e => e.applicationId === A.id).flatMap(e => Array.from(e.userIds)) : [], [L, A.id]),
         B = (0, d.yK)([N.default], () => U.map(e => N.default.getUser(e)).filter(e => null != e), [U]),
@@ -161,22 +161,22 @@ function G(e) {
                 inviter_id: s.author.id,
                 invite_message_id: s.id,
                 invite_instance_id: (0, b._U)(l.code, s.id)
-            }, O), _.Ay.acceptInviteAndTransitionToInviteChannel({
+            }, k), _.Ay.acceptInviteAndTransitionToInviteChannel({
                 inviteKey: l.code,
                 context: r("Invite Button Embed", l.code),
-                analyticsLocations: O
+                analyticsLocations: k
             })
-        }, [l, s, O, r]),
+        }, [l, s, k, r]),
         H = l.state === w.elq.ACCEPTING,
         V = null != f;
     if (null == f) {
         if (null == l.guild) return (0, i.jsx)(P.A, {});
         f = (0, R.DY)(l.guild)
     }
-    t = V ? I ? k.intl.string(k.t.DPfdsq) : v ? k.intl.string(k.t.sqe0hj) : k.intl.string(k.t.RscU7I) : k.intl.string(k.t["2BP08E"]);
+    t = V ? I ? O.intl.string(O.t.DPfdsq) : v ? O.intl.string(O.t.sqe0hj) : O.intl.string(O.t.RscU7I) : O.intl.string(O.t["2BP08E"]);
     let q = V && !M || V && I;
-    return (M || (n = k.intl.string(k.t.hHGrWz)), null == l.code || "" === l.code || null == C) ? null : (0, i.jsx)(p.f5, {
-        value: O,
+    return (M || (n = O.intl.string(O.t.hHGrWz)), null == l.code || "" === l.code || null == C) ? null : (0, i.jsx)(p.f5, {
+        value: k,
         children: (0, i.jsx)(F, {
             app: C,
             activityUsers: B,
@@ -231,12 +231,12 @@ function F(e) {
     }], [m, l, _, h, p, E]);
     return (0, i.jsx)(g.h, {
         header: t.name,
-        title: k.intl.string(k.t["7vb6nw"]),
+        title: O.intl.string(O.t["7vb6nw"]),
         iconSrc: T,
         ...S,
         onClickBanner: y,
         info: (0, i.jsxs)("div", {
-            className: O.QR,
+            className: k.QR,
             children: [(0, i.jsx)(B, {
                 channel: s,
                 guild: r,
@@ -245,7 +245,7 @@ function F(e) {
             }), l ? N > 0 && (0, i.jsx)(A.$, {
                 activityUsers: n,
                 guildId: r.id,
-                activityText: k.intl.formatToPlainString(k.t.yJj035, {
+                activityText: O.intl.formatToPlainString(O.t.yJj035, {
                     count: N
                 })
             }) : (0, i.jsx)(U, {

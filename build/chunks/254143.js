@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(311907),
-    s = n(421380),
+    s = n(311907),
+    a = n(421380),
     r = n(397927),
     o = n(686956),
     c = n(964486),
@@ -21,7 +21,7 @@ function _(e) {
         channel: t,
         user: _,
         guild: p
-    } = e, f = (0, a.bG)([h.A], () => null != _ && h.A.isUserBanned(_.id)), E = null != _ && null == f, [C, x] = l.useState(E), S = (0, a.bG)([u.A], () => null != _ && null != p && (0, d.fJ)(_, p, [u.A]));
+    } = e, f = (0, s.bG)([h.A], () => null != _ && h.A.isUserBanned(_.id)), E = null != _ && null == f, [C, x] = l.useState(E), S = (0, s.bG)([u.A], () => null != _ && null != p && (0, d.fJ)(_, p, [u.A]));
     if ((0, c.Ay)(() => {
             E && o.A.searchGuildBans(t.guild_id, void 0, [_?.id]).finally(() => x(!1))
         }), !S) return null;
@@ -45,6 +45,6 @@ function _(e) {
         },
         disabled: !0 === f || C,
         submitting: C,
-        color: s.$n.Colors.RED
+        color: a.$n.Colors.RED
     }, T)
 }

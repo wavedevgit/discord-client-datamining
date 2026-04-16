@@ -1,11 +1,11 @@
 /** chunk id: 496231 params = (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => a
 });
 var i = n(311907),
     l = n(622543),
-    a = n(652215);
+    s = n(652215);
 
-function s(e) {
-    return (0, i.bG)([l.A], () => null !== e ? l.A.getUserProfile(e ?? a.dJq)?.application : void 0) ?? void 0
+function a(e) {
+    return (0, i.bG)([l.A], () => null !== e ? l.A.getUserProfile(e ?? s.dJq)?.application : void 0) ?? void 0
 }

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(311907),
     o = n(397927),
     c = n(442433),
@@ -26,10 +26,10 @@ var i = n(627968),
 function I(e) {
     let {
         userId: t,
-        channel: a
+        channel: s
     } = e, h = l.useRef(null), {
         analyticsLocations: m
-    } = (0, u.Ay)(d.A.USERNAME), E = (0, r.bG)([p.default], () => p.default.getUser(t)), C = (0, r.bG)([_.Ay], () => null != t ? _.Ay.getMember(a.guild_id, t) : null), x = (0, A.gn)(a.guild_id, t ?? void 0, C?.colorStrings ?? null);
+    } = (0, u.Ay)(d.A.USERNAME), E = (0, r.bG)([p.default], () => p.default.getUser(t)), C = (0, r.bG)([_.Ay], () => null != t ? _.Ay.getMember(s.guild_id, t) : null), x = (0, A.gn)(s.guild_id, t ?? void 0, C?.colorStrings ?? null);
 
     function I(e) {
         if (null == E) return null;
@@ -40,23 +40,23 @@ function I(e) {
             return t => (0, i.jsx)(e, {
                 ...t,
                 user: E,
-                guildId: a.guild_id,
-                channel: a
+                guildId: s.guild_id,
+                channel: s
             })
         })
     }
     let T = C?.nick ?? f.Ay.getName(E) ?? "???",
         v = C?.colorString;
     return null == E ? (0, i.jsx)("span", {
-        className: s()(S.eM, S.sL),
+        className: a()(S.eM, S.sL),
         children: T
     }) : (0, i.jsx)(u.f5, {
         value: m,
         children: (0, i.jsx)(g.A, {
             targetElementRef: h,
             user: E,
-            guildId: a.guild_id,
-            channelId: a.id,
+            guildId: s.guild_id,
+            channelId: s.id,
             roleId: C?.colorRoleId,
             clickTrap: !0,
             children: e => (0, i.jsx)(o.DUT, {

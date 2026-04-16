@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(311907),
-    s = n(554146),
+    s = n(311907),
+    a = n(554146),
     r = n(397927),
     o = n(308368),
     c = n(688810),
@@ -36,12 +36,12 @@ function N(e) {
         draftType: R,
         editorTextContent: M,
         setValue: L,
-        openClips: O
+        openClips: D
     } = e, {
-        analyticsLocations: D
+        analyticsLocations: O
     } = (0, c.Ay)(), P = (0, u.s)({
         channel: t
-    }), w = (0, a.bG)([m.A], () => m.A.isInProgress());
+    }), w = (0, s.bG)([m.A], () => m.A.isInProgress());
 
     function U() {
         (0, A.Tv)(t, void 0, "Plus Button")
@@ -52,11 +52,11 @@ function N(e) {
     }
 
     function G() {
-        O()
+        D()
     }
 
     function F() {
-        (0, d.Dr)(s.M.POLLS_CHAT_INPUT_COACHMARK, {
+        (0, d.Dr)(a.M.POLLS_CHAT_INPUT_COACHMARK, {
             dismissAction: S.i.TAKE_ACTION
         }), (0, r.mMO)(async () => {
             let {
@@ -159,7 +159,7 @@ function N(e) {
                                 channelId: t.id,
                                 type: x.xL.JOIN,
                                 activity: n,
-                                location: D[D.length - 1]
+                                location: O[O.length - 1]
                             })
                         }
                     }, "play");
@@ -178,7 +178,7 @@ function N(e) {
                                 channelId: t.id,
                                 type: x.xL.LISTEN,
                                 activity: n,
-                                location: D[D.length - 1]
+                                location: O[O.length - 1]
                             })
                         }
                     }, "listen");
@@ -197,7 +197,7 @@ function N(e) {
                                 channelId: t.id,
                                 type: x.xL.WATCH,
                                 activity: n,
-                                location: D[D.length - 1]
+                                location: O[O.length - 1]
                             })
                         }
                     }, "watch");

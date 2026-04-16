@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(284009),
-    s = n.n(a),
+    s = n(284009),
+    a = n.n(s),
     r = n(311907),
     o = n(139033),
     c = n(314116),
@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(544028),
     M = n(560010),
     L = n(696451),
-    O = n(71393),
-    D = n(834942),
+    D = n(71393),
+    O = n(834942),
     P = n(576705),
     w = n(287809),
     U = n(488926),
@@ -76,7 +76,7 @@ class K extends l.PureComponent {
         } = e, {
             guild: n
         } = this.props;
-        return s()(null != n, "This guildID cannot be null"), (0, i.jsx)(N.A, {
+        return a()(null != n, "This guildID cannot be null"), (0, i.jsx)(N.A, {
             onClose: t,
             guild: n
         })
@@ -190,7 +190,7 @@ class K extends l.PureComponent {
         let {
             guild: e
         } = this.props;
-        return s()(null != e, "GuildVerification.renderLurkerModeUpsellPopout - guild cannot be undefined"), (0, i.jsx)(y.A, {
+        return a()(null != e, "GuildVerification.renderLurkerModeUpsellPopout - guild cannot be undefined"), (0, i.jsx)(y.A, {
             type: y.w.CHAT,
             guild: e,
             closePopout: this.closeLurkerModeUpsellPopout
@@ -220,8 +220,8 @@ class K extends l.PureComponent {
             isLurking: t,
             notClaimed: n,
             notPhoneVerified: l,
-            notEmailVerified: a,
-            newMember: s,
+            notEmailVerified: s,
+            newMember: a,
             memberDeadline: r,
             newAccount: o,
             accountDeadline: c,
@@ -265,7 +265,7 @@ class K extends l.PureComponent {
                 break;
             default:
                 N.message = V.intl.string(V.t.rEBKvg), N.buttonText = V.intl.string(V.t["r8/DT+"]), N.buttonVariant = "primary", N.onButtonClick = this.handleShowMemberVerification
-        } else x || null == S ? l && !f ? (N.message = V.intl.string(V.t["2dThMM"]), N.buttonText = V.intl.string(V.t["50gfOv"]), N.onButtonClick = this.handleVerifyPhone) : a ? (N.message = V.intl.string(V.t.FkGPS5), N.buttonText = V.intl.string(V.t.lm1UKt), N.onButtonClick = this.handleResendVerification) : s ? (N.message = V.intl.formatToPlainString(V.t.IH7RMF, {
+        } else x || null == S ? l && !f ? (N.message = V.intl.string(V.t["2dThMM"]), N.buttonText = V.intl.string(V.t["50gfOv"]), N.onButtonClick = this.handleVerifyPhone) : s ? (N.message = V.intl.string(V.t.FkGPS5), N.buttonText = V.intl.string(V.t.lm1UKt), N.onButtonClick = this.handleResendVerification) : a ? (N.message = V.intl.formatToPlainString(V.t.IH7RMF, {
             min: F.$8o.MEMBER_AGE
         }), N.countdown = r) : o && (N.message = V.intl.formatToPlainString(V.t["2JA2GH"], {
             min: F.$8o.ACCOUNT_AGE
@@ -310,18 +310,18 @@ function z(e) {
     let {
         channel: t,
         children: n
-    } = e, l = t.getGuildId(), a = (0, r.bG)([O.A], () => O.A.getGuild(l)), s = (0, r.bG)([D.A], () => D.A.getCheck(l)), o = t.type === F.rbe.GUILD_ANNOUNCEMENT && null != a && a.features.has(F.GuildFeatures.NEWS), c = (0, r.bG)([M.A], () => o ? M.A.getFollowerStatsForChannel(t.id) : null), d = (0, r.bG)([v.A], () => v.A.isLurking(l)), u = (0, r.bG)([w.default], () => w.default.getCurrentUser()), h = u?.isStaff() ?? !1, m = (0, r.bG)([L.Ay], () => null != u && (L.Ay.getMember(l, u.id)?.isPending ?? !1)), g = !!(0, x.Qd)(a), p = (0, r.bG)([T.A], () => T.A.shouldShowPopout(l)), f = (0, r.bG)([P.A], () => P.A.can(F.xBc.SEND_MESSAGES, t)), E = (0, r.bG)([S.A], () => S.A.getRequest(l)), {
+    } = e, l = t.getGuildId(), s = (0, r.bG)([D.A], () => D.A.getGuild(l)), a = (0, r.bG)([O.A], () => O.A.getCheck(l)), o = t.type === F.rbe.GUILD_ANNOUNCEMENT && null != s && s.features.has(F.GuildFeatures.NEWS), c = (0, r.bG)([M.A], () => o ? M.A.getFollowerStatsForChannel(t.id) : null), d = (0, r.bG)([v.A], () => v.A.isLurking(l)), u = (0, r.bG)([w.default], () => w.default.getCurrentUser()), h = u?.isStaff() ?? !1, m = (0, r.bG)([L.Ay], () => null != u && (L.Ay.getMember(l, u.id)?.isPending ?? !1)), g = !!(0, x.Qd)(s), p = (0, r.bG)([T.A], () => T.A.shouldShowPopout(l)), f = (0, r.bG)([P.A], () => P.A.can(F.xBc.SEND_MESSAGES, t)), E = (0, r.bG)([S.A], () => S.A.getRequest(l)), {
         showLinkedLobbyApplicationLoadingIndicator: I,
         requiredLinkedLobbyApplication: N
     } = (0, k.A)(t.linkedLobby), y = (0, _.A)({
         channelId: t.id
     }), b = {
-        ...s,
-        guild: a,
+        ...a,
+        guild: s,
         isLurking: d,
         isFollowable: o,
         shouldShowLurkerModeSuccessPopout: p,
-        showLurkerModeUpsellPopout: d && null != a && U.MJ(F.xBc.SEND_MESSAGES, t),
+        showLurkerModeUpsellPopout: d && null != s && U.MJ(F.xBc.SEND_MESSAGES, t),
         theme: R.A.theme,
         canSendMessages: f,
         channelFollowingUsersSeen: null != c ? c.usersSeenEver : null,

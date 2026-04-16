@@ -1,23 +1,23 @@
 /** chunk id: 682174 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => s
 });
 var i = n(627968);
 n(64700);
 var l = n(953727);
 
-function a(e) {
+function s(e) {
     let {
         width: t = 20,
         height: n = 20,
-        className: a,
-        ...s
+        className: s,
+        ...a
     } = e;
     return (0, i.jsx)("svg", {
         width: t,
         height: n,
-        className: a,
-        ...(0, l.A)(s),
+        className: s,
+        ...(0, l.A)(a),
         viewBox: "0 0 20 20",
         children: (0, i.jsxs)("g", {
             clipPath: "url(#clip0_198_5469)",

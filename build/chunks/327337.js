@@ -7,13 +7,13 @@ n.d(t, {
     V: () => c,
     cb: () => d,
     eT: () => u,
-    jR: () => s,
-    x7: () => a
+    jR: () => a,
+    x7: () => s
 });
 var i = n(985018);
 let l = "SAFETY_WARNING_BANNER_WEB",
-    a = "https://www.crisistextline.org/",
-    s = "https://nofiltr.org/resources-hub/",
+    s = "https://www.crisistextline.org/",
+    a = "https://nofiltr.org/resources-hub/",
     r = "https://discord.findahelpline.com/",
     o = "InappropriateConversationModal-web",
     c = "PRIVATE_DM_SAFETY_TOOLS_MODAL",

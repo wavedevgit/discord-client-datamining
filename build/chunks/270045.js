@@ -41,8 +41,8 @@ function j(e) {
             handleComplete: w,
             handleProgress: M,
             handleResetDismissibilityClick: D,
-            handleResetStatusClick: k,
-            handleOverrideDeliveryClick: O
+            handleResetStatusClick: O,
+            handleOverrideDeliveryClick: k
         } = (0, p.j$)(e.quest.id),
         U = (0, p.do)({
             quest: e.quest,
@@ -68,8 +68,8 @@ function j(e) {
             id: "delivery",
             label: "Show in Quest Bar",
             checked: t?.id === e.quest.id,
-            action: O
-        }), [O, e.quest.id, t?.id]),
+            action: k
+        }), [k, e.quest.id, t?.id]),
         q = a.useCallback(() => {
             (0, d.pX)(y.BVt.QUEST_PREVIEW_TOOL_2(e.quest.id))
         }, [e.quest.id]),
@@ -160,7 +160,7 @@ function j(e) {
                 id: "enrollment",
                 label: N.intl.string(N.t.taqkwK),
                 action: () => {
-                    k(), F()
+                    O(), F()
                 }
             }), (0, i.jsx)(s.Drp, {
                 id: "progress",

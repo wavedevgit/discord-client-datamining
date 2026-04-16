@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(503698),
-    a = n.n(l),
-    s = n(311907),
+    s = n.n(l),
+    a = n(311907),
     r = n(397927),
     o = n(302959),
     c = n(592182),
@@ -39,7 +39,7 @@ function S(e) {
         showHeader: N = !1,
         hideTip: y = !1,
         className: b
-    } = e, j = (0, s.bG)([d.A], () => {
+    } = e, j = (0, a.bG)([d.A], () => {
         if (null != u) {
             if (null != u.id) return d.A.getApplication(u.id);
             else if (null != u.name) return d.A.getApplicationByName(u.name)
@@ -121,7 +121,7 @@ function S(e) {
     return (0, i.jsx)("div", {
         className: C.yt,
         children: (0, i.jsx)("div", {
-            className: a()(x.popover, C.Rh, b),
+            className: s()(x.popover, C.Rh, b),
             children: M
         })
     })
@@ -140,9 +140,9 @@ function I(e) {
         onAction: S,
         showHeader: I = !1,
         wrapperClassName: T
-    } = e, v = (0, s.bG)([g.A], () => g.A.getChannel(t.channelId));
+    } = e, v = (0, a.bG)([g.A], () => g.A.getChannel(t.channelId));
     return null == v ? null : (0, i.jsxs)("div", {
-        className: a()(C.yt, T),
+        className: s()(C.yt, T),
         children: [I && (0, i.jsxs)("div", {
             className: C.mg,
             children: [(0, i.jsx)(r.Text, {

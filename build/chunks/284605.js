@@ -37,7 +37,7 @@ function E(e) {
         showOpaqueBackground: j = !1
     } = e, L = (0, a.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, a.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, s.R)(t, 600), w = (0, g.z)(t), M = (0, _.BB)(L), {
         shouldHideGuildPurchaseEntryPoints: D
-    } = (0, o.MH)(n), k = (0, g.X)(t), O = (0, x.A)({
+    } = (0, o.MH)(n), O = (0, g.X)(t), k = (0, x.A)({
         guildId: n,
         guildProductListingId: t.id,
         sourceAnalyticsLocations: E
@@ -76,10 +76,10 @@ function E(e) {
         imageUrl: P,
         name: t.name,
         description: t.description,
-        formattedPrice: k,
+        formattedPrice: O,
         role: R,
         ctaComponent: (0, i.jsx)(l.$nd, {
-            ...O
+            ...k
         }),
         productType: w,
         shouldShowFullDescriptionButton: I,

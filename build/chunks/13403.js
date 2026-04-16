@@ -37,8 +37,8 @@ function w(e) {
     var t, n;
     let w, M, {
             analyticsLocations: D,
-            application: k,
-            channel: O,
+            application: O,
+            channel: k,
             currentUserId: U,
             currentUserPresenceActivity: B,
             hideParty: G,
@@ -47,7 +47,7 @@ function w(e) {
             partyStatusElement: V,
             presenceActivity: q
         } = e,
-        W = (0, d.Ag)(k),
+        W = (0, d.Ag)(O),
         {
             iconSrc: z,
             name: Y
@@ -63,16 +63,16 @@ function w(e) {
                 }),
                 name: e.activity?.name_override ?? t.name
             }
-        }(F, k),
+        }(F, O),
         Q = (0, N.I)({
             messageId: F.id,
             presenceActivity: q,
-            application: k
+            application: O
         }) ?? void 0,
         {
             openGameProfileModal: K,
             launchableAppId: X
-        } = (t = k.id, n = F.author.id, w = (0, f.d)(t), M = (0, l.bG)([m.A, C.A], () => {
+        } = (t = O.id, n = F.author.id, w = (0, f.d)(t), M = (0, l.bG)([m.A, C.A], () => {
             let e = m.A.getApplication(t);
             return null != e ? C.A.getGameByApplication(e) : null
         }, [t]), {
@@ -86,7 +86,7 @@ function w(e) {
             launchableAppId: w
         }),
         J = (0, S.A)({
-            application: k,
+            application: O,
             analyticsLocations: D
         }),
         Z = a.useMemo(() => {
@@ -97,7 +97,7 @@ function w(e) {
                 onClick: J
             }
         }, [J]),
-        $ = (0, p.F)(k),
+        $ = (0, p.F)(O),
         ee = a.useMemo(() => null != K ? K : null != $ && W ? $ : void 0, [W, K, $]),
         et = c.A.useConfig({
             location: "RichPresenceGameActivityInviteEmbed"
@@ -106,12 +106,12 @@ function w(e) {
             canStartAuthorization: en,
             hasAlreadyLinked: ei,
             startAuthorization: ea
-        } = (0, _.RD)(k),
+        } = (0, _.RD)(O),
         el = (0, u.z)(ea, ei),
-        es = !(0, T.A)(q, F, k.id),
+        es = !(0, T.A)(q, F, O.id),
         er = (0, b.n$)(Y, F.activity?.type, es),
         eo = a.useRef(null),
-        ed = (0, l.bG)([E.A], () => E.A.getMessages(O.id)),
+        ed = (0, l.bG)([E.A], () => E.A.getMessages(k.id)),
         ec = () => {
             let e = [];
             return (0, y.G)(F.id, ed) && en && !ei && et.enabled && e.push(s.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, i.jsx)(g.Ay, {
@@ -126,11 +126,11 @@ function w(e) {
                             type: "dynamic",
                             component: o.Z86.ACCOUNT_LINK_DISPLAY,
                             props: {
-                                application: k
+                                application: O
                             }
                         },
                         title: P.intl.formatToPlainString(P.t["lo6H6+"], {
-                            gameName: k.name
+                            gameName: O.name
                         }),
                         body: P.intl.string(P.t.qYAzOp),
                         targetElementRef: eo,
@@ -146,9 +146,9 @@ function w(e) {
         };
     return es ? (0, i.jsx)(j.A, {
         message: F,
-        application: k,
+        application: O,
         applicationName: Y,
-        channel: O,
+        channel: k,
         header: er,
         currentUserId: U,
         launchableAppId: X,
@@ -166,9 +166,9 @@ function w(e) {
         renderAccountLinkUpsell: ec
     }) : (0, i.jsx)(L.A, {
         message: F,
-        application: k,
+        application: O,
         applicationName: Y,
-        channel: O,
+        channel: k,
         header: er,
         currentUserId: U,
         launchableAppId: X,

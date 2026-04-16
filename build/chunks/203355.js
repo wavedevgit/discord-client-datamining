@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(311907),
     o = n(435371),
     c = n(397927),
@@ -33,8 +33,8 @@ var i = n(627968),
     R = n(70171),
     M = n(566331),
     L = n(768088),
-    O = n(256195),
-    D = n(399849),
+    D = n(256195),
+    O = n(399849),
     P = n(275731),
     w = n(345812),
     U = n(652215),
@@ -49,10 +49,10 @@ function V(e) {
         participant: t,
         selected: n,
         focused: l,
-        idle: a,
-        width: s,
+        idle: s,
+        width: a,
         premiumIndicator: o
-    } = e, c = (0, r.bG)([T.A], () => T.A.getActiveStreamForUser(t.user.id, t.stream.guildId)), d = (0, w.VE)(s);
+    } = e, c = (0, r.bG)([T.A], () => T.A.getActiveStreamForUser(t.user.id, t.stream.guildId)), d = (0, w.VE)(a);
     return (0, i.jsxs)(i.Fragment, {
         children: [n || l ? null : (0, i.jsx)(P.A, {
             participant: t
@@ -60,7 +60,7 @@ function V(e) {
             size: g.Ay.Sizes.SMALL,
             className: H.Ok,
             participant: t,
-            showQuality: !d && !a,
+            showQuality: !d && !s,
             isUpsellEnabled: !1,
             premiumIndicator: o
         })]
@@ -71,7 +71,7 @@ function W(e) {
     let {
         participant: t,
         selected: n,
-        onVideoResize: a,
+        onVideoResize: s,
         fit: g,
         popoutType: _,
         width: x,
@@ -88,7 +88,7 @@ function W(e) {
     let ei = (0, p.u)(G.x.STREAM, t.user.id);
     if (l.useEffect(() => {
             B.info(`Stream Tile State - activeStream: ${null!=$} | selected: ${n} | Video: ${null!=V} | MediaEngine: ${y.Ay.supports(G.O5.VIDEO)}`)
-        }, [V, $, n]), K) return (0, i.jsx)(D.A, {
+        }, [V, $, n]), K) return (0, i.jsx)(O.A, {
         stream: t.stream,
         isSmall: en,
         selected: n,
@@ -106,15 +106,15 @@ function W(e) {
         stream: t.stream,
         width: x
     });
-    if (t.type === k.lp.HIDDEN_STREAM) return (0, i.jsx)(O.A, {
+    if (t.type === k.lp.HIDDEN_STREAM) return (0, i.jsx)(D.A, {
         selected: n,
         participant: t,
         width: x
     });
     if (null != $ && !n && null != V && y.Ay.supports(G.O5.VIDEO)) return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(S.A, {
-            onResize: a,
-            wrapperClassName: s()(_ !== A.N.CALL_TILE ? H.tN : void 0, P),
+            onResize: s,
+            wrapperClassName: a()(_ !== A.N.CALL_TILE ? H.tN : void 0, P),
             className: H.Qs,
             streamId: J,
             videoComponent: V,
@@ -132,13 +132,13 @@ function W(e) {
         })]
     });
     else return (0, i.jsxs)("div", {
-        className: s()(H.Qs, H.Rh, {
+        className: a()(H.Qs, H.Rh, {
             [H.EX]: en
         }),
         children: [(0, i.jsx)(C.A, {
             noImage: !0,
             noText: !0,
-            className: s()(H.HL, {
+            className: a()(H.HL, {
                 [H.gH]: null == $
             }),
             stream: t.stream
@@ -151,7 +151,7 @@ function W(e) {
                     text: x < 175 ? F.intl.string(F.t.I6JG46) : F.intl.string(F.t["7Xq/nV"])
                 })
             }), Z ? (0, i.jsx)("div", {
-                className: s()(H.lO, H.EU),
+                className: a()(H.lO, H.EU),
                 children: (0, i.jsx)(o.m_, {
                     text: F.intl.string(F.t.wCrzut),
                     children: (0, i.jsx)(c.K0, {

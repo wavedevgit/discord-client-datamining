@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(311907),
     o = n(265872),
     c = n(990078),
@@ -24,7 +24,7 @@ var i = n(627968),
 function C(e) {
     let t, {
             applicationId: n,
-            hideApplicationName: a
+            hideApplicationName: s
         } = e,
         o = (0, m.A)({
             location: "SocialLayerCommerceGameDetailsButton",
@@ -56,12 +56,12 @@ function C(e) {
     return (0, i.jsx)(c.m, {
         text: C,
         children: (0, i.jsxs)(d.DUT, {
-            className: s()(E.dY, E.ac, {
-                [E.M7]: a
+            className: a()(E.dY, E.ac, {
+                [E.M7]: s
             }),
             onClick: o,
             "aria-label": C,
-            children: [p(), !a && (0, i.jsx)(d.Text, {
+            children: [p(), !s && (0, i.jsx)(d.Text, {
                 variant: "text-sm/normal",
                 className: E.Wk,
                 children: f.intl.format(f.t.Sq9xJ7, {
@@ -76,7 +76,7 @@ function x(e) {
     let {
         userId: t,
         applicationId: n,
-        channel: a,
+        channel: s,
         hideWhenInactive: r,
         idle: u
     } = e, [h, m] = l.useState(!1), g = l.useRef(null), _ = l.useCallback(() => m(!0), []), C = l.useCallback(() => m(!1), []), x = f.intl.string(f.t["wg/30i"]);
@@ -93,7 +93,7 @@ function x(e) {
             children: e => (0, i.jsx)(A.Z, {
                 className: e,
                 userId: t,
-                channel: a,
+                channel: s,
                 applicationId: n,
                 onClose: C
             })
@@ -104,7 +104,7 @@ function x(e) {
                 text: x,
                 shouldShow: !h && void 0,
                 children: (0, i.jsx)("div", {
-                    className: s()(E.V7, {
+                    className: a()(E.V7, {
                         [E.kl]: r,
                         [E.N7]: u
                     }),

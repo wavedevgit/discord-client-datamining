@@ -1,6 +1,6 @@
 /** chunk id: 182912 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => g
 });
 var i = n(627968),
     a = n(64700),
@@ -9,31 +9,30 @@ var i = n(627968),
     r = n(407045),
     o = n(435371),
     d = n(397927),
-    c = n(713517),
-    u = n(696451),
-    _ = n(486020),
-    m = n(562153),
-    h = n(836629),
-    p = n(531657);
-let g = {
+    c = n(696451),
+    u = n(486020),
+    _ = n(562153),
+    m = n(836629),
+    h = n(531657);
+let p = {
     mass: 1,
     tension: 170,
     friction: 26
 };
 
-function A(e) {
+function g(e) {
     let {
         className: t,
         guildId: n,
         channelId: l,
-        members: c,
-        ref: h,
-        motion: A
-    } = e, f = c.length > 4, C = f ? c.slice(0, 3) : c, E = f ? c.length - 4 + 1 : 0, I = Math.min(f ? C.length + 1 : C.length, 4), v = (A?.percentX ?? 0) * 6, b = (A?.percentY ?? 0) * 6, T = 1 + (A?.proximity ?? 0) / 2 * .08, [y, S] = (0, d.zhh)(() => ({
+        members: m,
+        ref: g,
+        motion: x
+    } = e, f = m.length > 4, C = f ? m.slice(0, 3) : m, E = f ? m.length - 4 + 1 : 0, I = Math.min(f ? C.length + 1 : C.length, 4), v = (x?.percentX ?? 0) * 6, b = (x?.percentY ?? 0) * 6, T = 1 + (x?.proximity ?? 0) / 2 * .08, [y, S] = (0, d.zhh)(() => ({
         x: 0,
         y: 0,
         scale: 1,
-        config: g
+        config: p
     }));
     return a.useEffect(() => {
         S({
@@ -42,22 +41,22 @@ function A(e) {
             scale: T
         })
     }, [v, b, T, S]), (0, i.jsxs)(r.animated.div, {
-        ref: h,
-        className: s()(p.gg, t),
+        ref: g,
+        className: s()(h.gg, t),
         "data-count": I,
         "aria-hidden": !0,
         style: {
             transform: (0, r.to)([y.x, y.y, y.scale], (e, t, n) => `translate3d(${e}px, ${t}px, 0) scale(${n})`)
         },
         children: [C.map((e, t) => (0, i.jsx)("div", {
-            className: p.my,
+            className: h.my,
             children: (0, i.jsx)(o.m_, {
-                text: m.Ay.getName(n, l, e),
+                text: _.Ay.getName(n, l, e),
                 children: (0, i.jsx)(d.euF, {
                     src: function(e, t, n) {
-                        let i = u.Ay.getMember(t, e.id);
+                        let i = c.Ay.getMember(t, e.id);
                         if (null != i) {
-                            let e = (0, _.xT)(i);
+                            let e = (0, u.xT)(i);
                             if (null != e) return e
                         }
                         return e.getAvatarURL(t, n)
@@ -66,38 +65,41 @@ function A(e) {
                     "aria-hidden": !0
                 })
             })
-        }, e.id)), f && (0, i.jsx)(x, {
+        }, e.id)), f && (0, i.jsx)(A, {
             guildId: n,
             channelId: l,
-            members: c,
+            members: m,
             count: E
         }, "overflow")]
     })
 }
 
-function x(e) {
+function A(e) {
     let {
         guildId: t,
         channelId: n,
-        members: l,
-        count: r
-    } = e, o = a.useRef(null), {
-        isHoveringOrFocusing: u
-    } = (0, c.A)(o);
-    return (0, i.jsx)(h.$, {
-        targetElementRef: o,
+        members: a,
+        count: l
+    } = e, {
+        triggerRef: r,
+        shouldShow: o,
+        onPopoutHoverOrFocus: c
+    } = (0, m.o)();
+    return (0, i.jsx)(m.$, {
+        targetElementRef: r,
         guildId: t,
         channelId: n,
-        users: l,
-        shouldShow: u,
+        users: a,
+        shouldShow: o,
+        onHoverOrFocus: c,
         children: e => (0, i.jsx)("div", {
-            className: s()(p.my, p.k2),
-            ref: o,
+            className: s()(h.my, h.k2),
+            ref: r,
             ...e,
             children: (0, i.jsx)(d.Text, {
                 variant: "text-sm/semibold",
                 color: "text-default",
-                children: r > 99 ? ">99" : `+${r}`
+                children: l > 99 ? ">99" : `+${l}`
             })
         })
     })

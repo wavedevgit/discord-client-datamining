@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(451988),
-    s = n(985018);
+    s = n(451988),
+    a = n(985018);
 
 function r(e) {
     return `${e}`.length < 13 ? 1e3 * e : e
@@ -15,7 +15,7 @@ function o(e) {
     return class extends l.PureComponent {
         _interval;
         constructor(e) {
-            super(e), this._interval = new a.IX, this.state = {
+            super(e), this._interval = new s.IX, this.state = {
                 ...this.getUpdatedTime()
             }
         }
@@ -56,15 +56,15 @@ function o(e) {
             let {
                 timestamps: t,
                 ...n
-            } = this.props, l = this.renderTime(this.state.hours, !0), a = this.renderTime(this.state.minutes), r = this.renderTime(this.state.seconds), o = -1 === l ? `${a}:${r}` : `${l}:${a}:${r}`;
+            } = this.props, l = this.renderTime(this.state.hours, !0), s = this.renderTime(this.state.minutes), r = this.renderTime(this.state.seconds), o = -1 === l ? `${s}:${r}` : `${l}:${s}:${r}`;
             return null != t.end ? (0, i.jsx)(e, {
                 ...n,
-                message: s.intl.formatToPlainString(s.t["I/J7vI"], {
+                message: a.intl.formatToPlainString(a.t["I/J7vI"], {
                     duration: o
                 })
             }) : null != t.start ? (0, i.jsx)(e, {
                 ...n,
-                message: s.intl.formatToPlainString(s.t.M9Fexd, {
+                message: a.intl.formatToPlainString(a.t.M9Fexd, {
                     duration: o
                 })
             }) : null

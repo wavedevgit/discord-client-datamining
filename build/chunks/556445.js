@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(990078),
-    a = n(397927),
-    s = n(562153),
+    s = n(397927),
+    a = n(562153),
     r = n(353411);
 
 function o(e) {
@@ -25,11 +25,11 @@ function o(e) {
         loading: _,
         disabled: p,
         onClick: f
-    } = (0, r.J$)(t, n, d, s.Ay.getNickname(c, o, n));
+    } = (0, r.J$)(t, n, d, a.Ay.getNickname(c, o, n));
     return (0, i.jsx)(l.m, {
         text: g,
-        children: (0, i.jsx)(a.K0, {
-            icon: a.J2m,
+        children: (0, i.jsx)(s.K0, {
+            icon: s.J2m,
             size: u,
             variant: h,
             onClick: () => {

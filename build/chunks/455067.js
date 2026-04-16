@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(311907),
-    a = n(397927),
-    s = n(263063),
+    s = n(397927),
+    a = n(263063),
     r = n(513461),
     o = n(654265),
     c = n(561446),
@@ -26,17 +26,17 @@ function A(e) {
             className: m.Ov,
             children: [null != n && (0, i.jsxs)("div", {
                 className: m.yB,
-                children: [(0, i.jsx)(s.Ay, {
+                children: [(0, i.jsx)(a.Ay, {
                     guild: n,
                     active: !0,
-                    size: s.Ay.Sizes.SMOL,
+                    size: a.Ay.Sizes.SMOL,
                     className: m.$f
-                }), (0, i.jsx)(a.Heading, {
+                }), (0, i.jsx)(s.Heading, {
                     variant: "heading-sm/semibold",
                     color: "text-strong",
                     children: n.name
                 })]
-            }), null != o && (0, i.jsx)(a.Heading, {
+            }), null != o && (0, i.jsx)(s.Heading, {
                 variant: "heading-xl/semibold",
                 color: "text-strong",
                 children: h.intl.format(h.t.jDV3i6, {
@@ -50,11 +50,11 @@ function A(e) {
                     className: m.g2
                 }), (0, i.jsxs)("div", {
                     className: m.fs,
-                    children: [(0, i.jsx)(a.Text, {
+                    children: [(0, i.jsx)(s.Text, {
                         variant: "text-xs/semibold",
                         color: "text-muted",
                         children: e.label
-                    }), (0, i.jsx)(a.Text, {
+                    }), (0, i.jsx)(s.Text, {
                         variant: "text-md/medium",
                         color: "text-strong",
                         children: t
@@ -71,7 +71,7 @@ function g(e) {
     } = e, {
         loading: n,
         joinRequest: l,
-        joinRequestGuild: s
+        joinRequestGuild: a
     } = (0, o.A)(t.id);
     return (0, i.jsx)(u.Ay, {
         channelId: t.id,
@@ -80,13 +80,13 @@ function g(e) {
             className: m.KJ,
             children: [(0, i.jsx)("div", {
                 children: (0, i.jsx)(A, {
-                    guild: s,
+                    guild: a,
                     joinRequest: l
                 })
             }), (0, i.jsx)(c.A, {
                 channelId: t.id,
                 showProfile: !0
             })]
-        }) : n ? (0, i.jsx)(a.y$y, {}) : null
+        }) : n ? (0, i.jsx)(s.y$y, {}) : null
     })
 }

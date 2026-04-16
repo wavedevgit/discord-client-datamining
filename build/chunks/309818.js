@@ -64,10 +64,10 @@ function b(e) {
     let M = I.intl.string(I.t.XpeFYr),
         D = "active";
     R && (M = I.intl.string(I.t.cEnaWx), D = "secondary");
-    let k = I.intl.string(I.t["3p3/BK"]);
-    return S && (k = I.intl.string(I.t.qmtuXE)), (0, i.jsxs)(h.A, {
+    let O = I.intl.string(I.t["3p3/BK"]);
+    return S && (O = I.intl.string(I.t.qmtuXE)), (0, i.jsxs)(h.A, {
         children: [(0, i.jsx)(h.A.Header, {
-            text: k
+            text: O
         }), (0, i.jsxs)(h.A.Body, {
             children: [(0, i.jsxs)("div", {
                 className: v.iH,

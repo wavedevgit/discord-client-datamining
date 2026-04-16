@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(735438),
     o = n.n(r),
     c = n(311907),
@@ -69,8 +69,8 @@ class I extends l.PureComponent {
             inputVolume: n,
             outputDeviceName: i,
             outputVolume: l,
-            inputMode: a,
-            vadAutoThreshold: s,
+            inputMode: s,
+            vadAutoThreshold: a,
             vadThreshold: r,
             location: o,
             isDeafened: c
@@ -84,8 +84,8 @@ class I extends l.PureComponent {
             input_device_volume: n,
             output_device_name: i,
             output_device_volume: l,
-            input_mode: a,
-            input_sensitivity_is_automatic: s,
+            input_mode: s,
+            input_sensitivity_is_automatic: a,
             input_sensitivity_threshold: Math.round(r),
             location: o
         })
@@ -129,7 +129,7 @@ class I extends l.PureComponent {
             title: t,
             description: n,
             notchBackground: l,
-            buttonTest: a = "",
+            buttonTest: s = "",
             buttonStop: r = "",
             buttonVariant: o = "secondary",
             size: c = "sm",
@@ -145,15 +145,15 @@ class I extends l.PureComponent {
             isDetectingInput: I
         } = this.state, T = e && !E ? x.intl.string(x.t["9viE2A"]) : null;
         E && e && !d && this._micTestStop();
-        let v = r.length >= a.length ? r : a;
+        let v = r.length >= s.length ? r : s;
         return (0, i.jsxs)("div", {
-            className: s()(S.kL, p),
+            className: a()(S.kL, p),
             children: [(0, i.jsx)(m.D0$, {
                 label: t ?? void 0,
                 hideLabel: g,
                 description: g ? null : n,
                 children: (0, i.jsxs)("div", {
-                    className: s()(S.ak, {
+                    className: a()(S.ak, {
                         [S.mi]: g,
                         [S.EX]: "sm" === c
                     }),
@@ -178,7 +178,7 @@ class I extends l.PureComponent {
                                 children: (0, i.jsx)(m.Button, {
                                     size: c,
                                     variant: o,
-                                    text: E ? r : a,
+                                    text: E ? r : s,
                                     onClick: this.handleToggleMicTest,
                                     fullWidth: !0
                                 })
@@ -208,8 +208,8 @@ function T(e) {
         inputDevice: t,
         outputDevice: n,
         threshold: l,
-        autoThreshold: a,
-        inputVolume: s,
+        autoThreshold: s,
+        inputVolume: a,
         outputVolume: r,
         inputMode: d,
         isDeafened: u
@@ -224,22 +224,22 @@ function T(e) {
             }),
             i = p.Ay.getOutputDeviceId(),
             l = p.Ay.getOutputDevices(),
-            a = o().find(l, e => {
+            s = o().find(l, e => {
                 let {
                     id: t
                 } = e;
                 return t === i
             }),
             {
-                threshold: s,
+                threshold: a,
                 autoThreshold: r
             } = p.Ay.getModeOptions(),
             c = p.Ay.getInputVolume(),
             d = p.Ay.getOutputVolume();
         return {
             inputDevice: n,
-            outputDevice: a,
-            threshold: s,
+            outputDevice: s,
+            threshold: a,
             autoThreshold: r,
             inputVolume: c,
             outputVolume: d,
@@ -252,12 +252,12 @@ function T(e) {
     } = (0, g.Ay)();
     return (0, i.jsx)(I, {
         isVoiceConnected: h,
-        inputVolume: s,
+        inputVolume: a,
         outputVolume: r,
         inputMode: d,
         isDeafened: u,
         vadThreshold: l,
-        vadAutoThreshold: a,
+        vadAutoThreshold: s,
         inputDeviceName: t?.name ?? "",
         outputDeviceName: n?.name ?? "",
         measureButtonRef: m,

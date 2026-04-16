@@ -58,7 +58,7 @@ function D(e) {
         completedRatio: J,
         completedRatioDisplay: Z
     } = (0, A.O9)(t), $ = (0, g.gj)(t, b, _.Ob.QuestEmbed, D), ee = (0, y.Pd)(t), et = a.useMemo(() => Q && K ? R.intl.format(R.t["8Op4c4"], {
-        balanceHook: () => (0, i.jsxs)(k, {
+        balanceHook: () => (0, i.jsxs)(O, {
             questId: t.id,
             children: [(0, i.jsx)(m.A, {
                 shouldUseThemeColor: !0,
@@ -66,11 +66,11 @@ function D(e) {
                 customSize: 14
             }), X]
         }, t.id)
-    }) : Q ? (0, i.jsx)(k, {
+    }) : Q ? (0, i.jsx)(O, {
         questId: t.id,
         children: q
     }) : K ? R.intl.format(R.t.ro1sze, {
-        balanceHook: () => (0, i.jsxs)(k, {
+        balanceHook: () => (0, i.jsxs)(O, {
             questId: t.id,
             children: [(0, i.jsx)(m.A, {
                 shouldUseThemeColor: !0,
@@ -79,7 +79,7 @@ function D(e) {
             }), X]
         }, t.id)
     }) : R.intl.format(R.t["0IUT4Y"], {
-        rewardWithArticleHook: () => (0, i.jsx)(k, {
+        rewardWithArticleHook: () => (0, i.jsx)(O, {
             questId: t.id,
             children: W
         }, t.id)
@@ -199,7 +199,7 @@ function D(e) {
                     analyticsCtxQuestContent: n,
                     analyticsCtxSourceQuestContent: b,
                     analyticsCtxQuestContentPosition: I
-                }) : (0, i.jsx)(O, {
+                }) : (0, i.jsx)(k, {
                     quest: t,
                     progressState: V,
                     questContent: n,
@@ -210,7 +210,7 @@ function D(e) {
         })]
     })
 }
-let k = a.memo(function(e) {
+let O = a.memo(function(e) {
     let {
         questId: t,
         children: n
@@ -224,7 +224,7 @@ let k = a.memo(function(e) {
     }, `${t}_reward`)
 });
 
-function O(e) {
+function k(e) {
     let {
         quest: t,
         progressState: n,

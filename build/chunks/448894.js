@@ -56,13 +56,13 @@ function y(e) {
         }
     });
     let D = null != n && n.target_type === v.yV.STREAM && null != n.target_user && null != P,
-        k = null != n && null != w && null != n.channel && null != n.guild && w.channelId === n.channel.id && w.guildId === n.guild.id;
+        O = null != n && null != w && null != n.channel && null != n.guild && w.channelId === n.channel.id && w.guildId === n.guild.id;
     s()(null != n, "Invite cannot be null");
     let {
-        target_type: O,
+        target_type: k,
         target_user: U
     } = n;
-    s()(O === v.yV.STREAM && null != U, "invalid streaming invite");
+    s()(k === v.yV.STREAM && null != U, "invalid streaming invite");
     let B = l === U.id,
         G = n.state === I.elq.ACCEPTING,
         F = a.useCallback(() => {
@@ -82,10 +82,10 @@ function y(e) {
     }
     let V = null != n.channel ? (0, g.OY)(n.channel) : null,
         q = C.Ay.getName(U),
-        W = D || !k && H,
+        W = D || !O && H,
         z = b.intl.string(b.t.I6JG46),
         Y = "active";
-    H && !k ? (t = B ? b.intl.string(b.t.oBLoZJ) : b.intl.formatToPlainString(b.t["0QJmA+"], {
+    H && !O ? (t = B ? b.intl.string(b.t.oBLoZJ) : b.intl.formatToPlainString(b.t["0QJmA+"], {
         name: q
     }), z = b.intl.string(b.t.Wdi5E1)) : (Y = "active", D && (z = b.intl.string(b.t.Q1W99y), Y = "secondary"), t = B ? b.intl.string(b.t["4hyaHu"]) : b.intl.formatToPlainString(b.t.QmlLEq, {
         name: q
@@ -103,10 +103,10 @@ function y(e) {
                 className: T.iH,
                 children: [(0, i.jsx)(p.A.Icon, {
                     guild: y,
-                    onClick: H && k ? F : void 0
+                    onClick: H && O ? F : void 0
                 }), (0, i.jsx)(p.A.Info, {
                     title: t,
-                    onClick: H && k ? F : void 0,
+                    onClick: H && O ? F : void 0,
                     children: Q
                 })]
             }), (0, i.jsx)(o.$nd, {

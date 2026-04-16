@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(205693),
-    s = n(397927),
+    s = n(205693),
+    a = n(397927),
     r = n(233545),
     o = n(229659),
     c = n(253932),
@@ -36,7 +36,7 @@ let C = function(e) {
             var e;
             e = () => {
                 n(!0), setTimeout(() => n(!1), 2e3)
-            }, d.Ay.getMediaEngine().once(a.bg.ConnectionStats, t => {
+            }, d.Ay.getMediaEngine().once(s.bg.ConnectionStats, t => {
                 let n = JSON.stringify(Object.values(_.x).map(e => {
                     let n = t.filter(t => {
                         let {
@@ -63,7 +63,7 @@ let C = function(e) {
             let {
                 hostname: t,
                 averagePing: n,
-                lastPing: a,
+                lastPing: s,
                 outboundLossRate: r
             } = e, d = c.Q_.getSetting();
             return (0, i.jsxs)(l.Fragment, {
@@ -75,7 +75,7 @@ let C = function(e) {
                             width: 258,
                             height: 80
                         })
-                    }), (0, i.jsx)(s.Text, {
+                    }), (0, i.jsx)(a.Text, {
                         variant: "text-sm/bold",
                         color: "text-default",
                         className: f.VU,
@@ -85,21 +85,21 @@ let C = function(e) {
                     className: f.ew,
                     children: (0, i.jsxs)("div", {
                         className: f.zS,
-                        children: [(0, i.jsx)(s.Text, {
+                        children: [(0, i.jsx)(a.Text, {
                             variant: "text-xs/normal",
                             color: "text-default",
                             className: f.VU,
                             children: p.intl.format(p.t["X58/lN"], {
                                 averagePing: n.toFixed(0)
                             })
-                        }), null != a ? (0, i.jsx)(s.Text, {
+                        }), null != s ? (0, i.jsx)(a.Text, {
                             variant: "text-xs/normal",
                             color: "text-default",
                             className: f.VU,
                             children: p.intl.format(p.t["6iv2TF"], {
-                                lastPing: a.toFixed(0)
+                                lastPing: s.toFixed(0)
                             })
-                        }) : null, null != r ? (0, i.jsx)(s.Text, {
+                        }) : null, null != r ? (0, i.jsx)(a.Text, {
                             variant: "text-xs/normal",
                             color: "text-default",
                             className: f.VU,
@@ -108,7 +108,7 @@ let C = function(e) {
                             })
                         }) : null]
                     })
-                }), (0, i.jsx)(s.Text, {
+                }), (0, i.jsx)(a.Text, {
                     variant: "text-xs/normal",
                     color: "text-muted",
                     children: S
@@ -142,7 +142,7 @@ let C = function(e) {
         } [T];
     return (0, i.jsxs)("div", {
         className: f.kL,
-        children: ["function" == typeof y ? y() : (0, i.jsx)(s.Text, {
+        children: ["function" == typeof y ? y() : (0, i.jsx)(a.Text, {
             tag: "p",
             variant: "text-sm/normal",
             color: "text-muted",
@@ -152,20 +152,20 @@ let C = function(e) {
                 className: E.me
             }), (0, i.jsxs)("div", {
                 className: f.pw,
-                children: [(0, i.jsx)(s.Button, {
-                    icon: s.Q5O,
+                children: [(0, i.jsx)(a.Button, {
+                    icon: a.Q5O,
                     text: p.intl.string(p.t.KBoWg9),
                     variant: "secondary",
                     size: "sm",
                     fullWidth: !0,
                     onClick: C
-                }), (0, i.jsxs)(s.DUT, {
+                }), (0, i.jsxs)(a.DUT, {
                     className: `${E.n2} ${f.n2}`,
                     onClick: x,
                     children: [(0, i.jsx)("div", {
                         className: t ? E.Dx : E.t6,
-                        children: (0, i.jsx)(s.Button, {
-                            icon: s.TdU,
+                        children: (0, i.jsx)(a.Button, {
+                            icon: a.TdU,
                             text: p.intl.string(p.t["XEb+Sj"]),
                             variant: "secondary",
                             size: "sm",
@@ -173,8 +173,8 @@ let C = function(e) {
                         })
                     }), (0, i.jsx)("div", {
                         className: t ? E.t6 : E.Dx,
-                        children: (0, i.jsx)(s.Button, {
-                            icon: s.yr3,
+                        children: (0, i.jsx)(a.Button, {
+                            icon: a.yr3,
                             text: p.intl.string(p.t.t5VZ88),
                             variant: "secondary",
                             size: "sm",
@@ -183,13 +183,13 @@ let C = function(e) {
                     })]
                 })]
             })]
-        }), (0, i.jsxs)(s.ZpM, {
-            type: s.ZpM.Types.SUCCESS,
+        }), (0, i.jsxs)(a.ZpM, {
+            type: a.ZpM.Types.SUCCESS,
             className: E.g4,
-            children: [(0, i.jsx)(s.XAi, {
+            children: [(0, i.jsx)(a.XAi, {
                 size: "xxs",
-                color: s.LU0.colors.TEXT_FEEDBACK_POSITIVE.css
-            }), (0, i.jsx)(s.Text, {
+                color: a.LU0.colors.TEXT_FEEDBACK_POSITIVE.css
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-xs/medium",
                 color: "text-feedback-positive",
                 children: v
@@ -197,7 +197,7 @@ let C = function(e) {
         }), !N && !__OVERLAY__ && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("hr", {
                 className: E.me
-            }), (0, i.jsx)(s.MzZ, {
+            }), (0, i.jsx)(a.MzZ, {
                 className: f.CU,
                 href: m.A.getArticleURL(g.MVz.VOICE_VIDEO_TROUBLESHOOTING),
                 children: p.intl.string(p.t.hvVgAZ)

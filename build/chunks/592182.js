@@ -5,9 +5,9 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(503698),
-    a = n.n(l),
-    s = n(284009),
-    r = n.n(s),
+    s = n.n(l),
+    a = n(284009),
+    r = n.n(a),
     o = n(311907),
     c = n(397927),
     d = n(707606),
@@ -33,15 +33,15 @@ var l = n(503698),
     R = n(329151),
     M = n(738080),
     L = n(648246),
-    O = n(305637),
-    D = n(652215),
+    D = n(305637),
+    O = n(652215),
     P = n(708727);
 let w = (0, d.A)(e => {
     let {
         activity: t,
         embeddedActivity: n,
         user: l,
-        applicationStream: s,
+        applicationStream: a,
         className: d,
         guildId: w,
         channelId: U,
@@ -52,7 +52,7 @@ let w = (0, d.A)(e => {
     } = e, B = (0, o.bG)([f.default], () => {
         let e = f.default.getCurrentUser();
         return r()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-    }), V = F === I.O.STREAM_PREVIEW || null != s, W = (0, C.A)(t), K = W || V ? h.A.Direction.HORIZONTAL : h.A.Direction.VERTICAL, z = (0, o.bG)([p.A], () => null != U ? p.A.getChannel(U) : null, [U]), {
+    }), V = F === I.O.STREAM_PREVIEW || null != a, W = (0, C.A)(t), K = W || V ? h.A.Direction.HORIZONTAL : h.A.Direction.VERTICAL, z = (0, o.bG)([p.A], () => null != U ? p.A.getChannel(U) : null, [U]), {
         enableRequestToStream: Y
     } = m.m.useExperiment({
         guildId: w ?? z?.guild_id,
@@ -65,18 +65,18 @@ let w = (0, d.A)(e => {
         align: h.A.Align.STRETCH,
         direction: K,
         wrap: $ ? h.A.Wrap.WRAP : h.A.Wrap.NO_WRAP,
-        className: a()(d, P.jx, $ ? P.Vd : P.xM),
+        className: s()(d, P.jx, $ ? P.Vd : P.xM),
         children: (() => {
             if (!(0, E.Ay)(t)) {
                 if ((0, x.A)(t)) return (0, i.jsx)(T.A, {
-                    platform: u.A.get(D.fg2.XBOX),
+                    platform: u.A.get(O.fg2.XBOX),
                     variant: G,
                     onAction: H,
                     icon: c.YWd
                 });
-                if (t?.platform === D.yTV.PS4 || t?.platform === D.yTV.PS5) return (0, i.jsx)(T.A, {
+                if (t?.platform === O.yTV.PS4 || t?.platform === O.yTV.PS5) return (0, i.jsx)(T.A, {
                     variant: G,
-                    platform: u.A.get(D.fg2.PLAYSTATION),
+                    platform: u.A.get(O.fg2.PLAYSTATION),
                     onAction: H,
                     icon: c.Xj
                 })
@@ -115,9 +115,9 @@ let w = (0, d.A)(e => {
                     onAction: H
                 })
             }
-            return V ? (0, i.jsx)(O.A, {
+            return V ? (0, i.jsx)(D.A, {
                 isCurrentUser: B.id === l.id,
-                applicationStream: s,
+                applicationStream: a,
                 onAction: H
             }) : (0, i.jsxs)(i.Fragment, {
                 children: [J && (0, i.jsx)(g.B, {

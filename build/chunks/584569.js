@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(311907),
     l = n(205693),
-    a = n(73153),
-    s = n(194862),
+    s = n(73153),
+    a = n(194862),
     r = n(259464),
     o = n(288737),
     c = n(562153),
@@ -16,8 +16,8 @@ var i = n(311907),
     A = n(607567),
     g = n(652215),
     _ = n(806931);
-let p = new s.A,
-    f = new s.A,
+let p = new a.A,
+    f = new a.A,
     E = new Set;
 
 function C(e, t, n) {
@@ -27,7 +27,7 @@ function C(e, t, n) {
         }),
         l = (0, A.RQ)(i, t ?? g.ME, e.id);
     p.set(e.id, l);
-    let a = {
+    let s = {
         type: _.lp.USER,
         user: e,
         id: e.id,
@@ -43,7 +43,7 @@ function C(e, t, n) {
         localVideoDisabled: !1,
         isPoppedOut: !1
     };
-    f.set(e.id, a)
+    f.set(e.id, s)
 }
 
 function x(e) {
@@ -86,7 +86,7 @@ class T extends i.Ay.Store {
         return f.values()
     }
 }
-let v = new T(a.h, {
+let v = new T(s.h, {
     CONNECTION_OPEN: function() {
         I()
     },
@@ -116,9 +116,9 @@ let v = new T(a.h, {
             userIds: t,
             guildId: n,
             channelId: i,
-            context: a
+            context: s
         } = e;
-        return a === l.x.DEFAULT && t.reduce((e, t) => {
+        return s === l.x.DEFAULT && t.reduce((e, t) => {
             if (null != m.A.getVoiceStateForChannel(i, t)) return e;
             let l = h.default.getUser(t);
             return null == l ? (E.add(t), e) : (C(l, n, i), !0)

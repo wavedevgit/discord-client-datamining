@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(64700),
     l = n(205693),
-    a = n(451988),
-    s = n(684339),
+    s = n(451988),
+    a = n(684339),
     r = n(808180),
     o = n(927813),
     c = n(37965);
@@ -19,7 +19,7 @@ function u(e) {
         streamKey: u,
         loading: h,
         paused: m = !1
-    } = e, A = i.useRef(new a.Ep), g = o === s.u.SELF_STREAM || o === s.u.REMOTE_STREAM ? l.x.STREAM : l.x.DEFAULT;
+    } = e, A = i.useRef(new s.Ep), g = o === a.u.SELF_STREAM || o === a.u.REMOTE_STREAM ? l.x.STREAM : l.x.DEFAULT;
     return i.useEffect(() => {
         if (!h || m || !r.X.isIncomingVideoEnabled()) return;
         let e = A.current;

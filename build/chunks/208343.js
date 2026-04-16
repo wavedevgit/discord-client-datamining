@@ -1,14 +1,14 @@
 /** chunk id: 208343 params = (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => a
 });
 var i = n(311907),
     l = n(531685),
-    a = n(3137);
+    s = n(3137);
 
-function s(e) {
+function a(e) {
     let t = (0, i.bG)([l.A], () => l.A.isFocused());
-    return (0, i.bG)([a.A], () => a.A.isEnabled({
+    return (0, i.bG)([s.A], () => s.A.isEnabled({
         shakeLocation: e
-    }) && t ? a.A.shakeIntensity : 0)
+    }) && t ? s.A.shakeIntensity : 0)
 }

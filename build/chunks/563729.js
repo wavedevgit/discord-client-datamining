@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(64700),
     l = n(311907),
-    a = n(311043),
-    s = n(486020),
+    s = n(311043),
+    a = n(486020),
     r = n(60465),
     o = n(409626),
     c = n(422069),
@@ -23,13 +23,13 @@ function u(e) {
             source: o.Ob.AnnouncementChannelReturn,
             initialScrollOffset: n.initialScrollOffset
         })
-    }, [n]), h = (0, l.bG)([a.A], () => n?.gameId != null ? a.A.getGame(n.gameId) : null);
+    }, [n]), h = (0, l.bG)([s.A], () => n?.gameId != null ? s.A.getGame(n.gameId) : null);
     i.useEffect(() => {
         if (h?.id != null) return () => r.A.clearGameProfilePendingReturn(h.id)
     }, [h?.id]);
     let m = h?.name;
     if (null == h || null == m) return null;
-    let A = h?.iconHash != null && "" !== h.iconHash ? s.Ay.getGameAssetURL({
+    let A = h?.iconHash != null && "" !== h.iconHash ? a.Ay.getGameAssetURL({
         id: h.id,
         hash: h.iconHash,
         size: d.eQT

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(503698),
-    a = n.n(l),
-    s = n(397927),
+    s = n.n(l),
+    a = n(397927),
     r = n(430345);
 
 function o(e) {
@@ -40,12 +40,12 @@ function c(e) {
             if ("numbered" === d && null != h)
                 if (u) return (0, i.jsx)("div", {
                     className: r.ai,
-                    children: (0, i.jsx)(s.rOg, {
+                    children: (0, i.jsx)(a.rOg, {
                         color: "green",
-                        className: a()(r.Kk, o)
+                        className: s()(r.Kk, o)
                     })
                 });
-                else return (0, i.jsx)(s.Heading, {
+                else return (0, i.jsx)(a.Heading, {
                     variant: "heading-md/semibold",
                     color: "text-brand",
                     className: r.ai,
@@ -55,22 +55,22 @@ function c(e) {
                 className: r.zc,
                 children: (0, i.jsx)(t, {
                     color: c ?? "currentColor",
-                    className: a()(r.Kk, o)
+                    className: s()(r.Kk, o)
                 })
             })
         })(), (0, i.jsxs)("div", {
             className: r.FS,
-            children: [(0, i.jsx)(s.Text, {
+            children: [(0, i.jsx)(a.Text, {
                 variant: "text-md/semibold",
                 color: "text-strong",
-                className: a()({
+                className: s()({
                     [r.VA]: u
                 }),
                 children: n
-            }), null != l && (0, i.jsx)(s.Text, {
+            }), null != l && (0, i.jsx)(a.Text, {
                 variant: "text-xs/medium",
                 color: "text-subtle",
-                className: a()({
+                className: s()({
                     [r.VA]: u
                 }),
                 children: l

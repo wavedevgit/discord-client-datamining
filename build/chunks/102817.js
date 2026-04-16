@@ -1,26 +1,26 @@
 /** chunk id: 102817 params = (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => a
 });
 var i = n(627968);
 n(64700);
 var l = n(990078),
-    a = n(397927);
+    s = n(397927);
 
-function s(e) {
+function a(e) {
     let {
         text: t,
         icon: n,
-        onClick: s,
+        onClick: a,
         disabled: r,
         submitting: o
     } = e;
     return (0, i.jsx)(l.m, {
         __unsupportedReactNodeAsText: t ?? void 0,
-        children: (0, i.jsx)(a.K0, {
+        children: (0, i.jsx)(s.K0, {
             icon: n,
             variant: "secondary",
-            onClick: s,
+            onClick: a,
             disabled: r,
             loading: o,
             "aria-label": t,

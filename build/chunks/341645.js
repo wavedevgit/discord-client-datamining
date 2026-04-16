@@ -35,8 +35,8 @@ var i = n(627968),
     w = n(218394),
     M = n(255345),
     D = n(652215),
-    k = n(360469),
-    O = n(768349),
+    O = n(360469),
+    k = n(768349),
     U = n(985018),
     B = n(212242);
 let G = a.memo(e => {
@@ -87,7 +87,7 @@ let F = a.memo(function(e) {
         K = Q?.details,
         X = a.useMemo(() => {
             let e = new b.Ay(n);
-            return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = k.Gl), e
+            return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = O.Gl), e
         }, [n]),
         J = (0, p.vG)({
             userId: H,
@@ -204,7 +204,7 @@ let F = a.memo(function(e) {
         onClickContent: ea,
         trackingConfig: {
             id: n.id,
-            linkType: O.J.ACTIVITY_INSTANCE,
+            linkType: k.J.ACTIVITY_INSTANCE,
             guildId: o,
             channelId: l,
             messageId: u.id,

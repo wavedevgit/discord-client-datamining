@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(311907),
     o = n(397927),
     c = n(793574),
@@ -24,7 +24,7 @@ function C(e) {
     let {
         userId: t,
         channelId: n,
-        showDivider: a = !1
+        showDivider: s = !1
     } = e, C = (0, r.bG)([u.A], () => u.A.getMutualGuilds(t), [t]), x = A.default.getUser(t);
     l.useEffect(() => {
         null == C && null != x && (0, h.A)(t, x.getAvatarURL(null, 80), {
@@ -38,36 +38,36 @@ function C(e) {
         return e.map((e, n) => {
             let {
                 guild: l
-            } = e, a = g.Ay.getGuildIconURL({
+            } = e, s = g.Ay.getGuildIconURL({
                 id: l.id,
                 icon: l.icon,
                 size: 24
             });
-            if (null == a) return null;
-            let s = (0, i.jsx)("img", {
-                src: a,
+            if (null == s) return null;
+            let a = (0, i.jsx)("img", {
+                src: s,
                 alt: "",
                 className: E.my
             }, l.id);
-            return n === t ? s : (0, i.jsx)(d.Ay, {
+            return n === t ? a : (0, i.jsx)(d.Ay, {
                 className: E.cp,
                 mask: d.Ay.Masks.VOICE_USER_SUMMARY_ITEM,
                 width: 24,
                 height: 24,
-                children: s
+                children: a
             }, l.id)
         }).filter(_.Vq)
     }, [C]);
     return null == C || 0 === C.length ? (0, i.jsx)("div", {
-        className: s()(E.kL, a ? E.yF : null),
+        className: a()(E.kL, s ? E.yF : null),
         children: (0, i.jsx)(o.Text, {
             color: "text-default",
             variant: "text-sm/normal",
             children: f.intl.string(f.t.zjVh8h)
         })
     }) : (0, i.jsxs)(o.DUT, {
-        className: s()(E.kL, E.vk, {
-            [E.yF]: a
+        className: a()(E.kL, E.vk, {
+            [E.yF]: s
         }),
         onClick: () => {
             (0, m.openUserProfileModal)({

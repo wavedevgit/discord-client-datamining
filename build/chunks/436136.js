@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(397927),
-    a = n(989095),
-    s = n(868048),
+    s = n(989095),
+    a = n(868048),
     r = n(355097),
     o = n(985018),
     c = n(927933);
@@ -18,7 +18,7 @@ function d(e) {
     } = e;
     return (0, i.jsxs)("div", {
         className: c.l,
-        children: [(0, i.jsx)(a.A, {
+        children: [(0, i.jsx)(s.A, {
             id: t.id
         }), (0, i.jsx)("div", {
             className: c.p,
@@ -32,7 +32,7 @@ function d(e) {
             icon: l.ejX,
             size: "sm",
             onClick: () => {
-                (0, s.A)(t.guild_id, t.id, r.vv.UNREADS_ONLY_MENTIONS), n()
+                (0, a.A)(t.guild_id, t.id, r.vv.UNREADS_ONLY_MENTIONS), n()
             }
         })]
     })

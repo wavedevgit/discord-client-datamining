@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(311907),
-    a = n(397927),
-    s = n(351001),
+    s = n(397927),
+    a = n(351001),
     r = n(696451),
     o = n(576705),
     c = n(102817),
@@ -17,15 +17,15 @@ function h(e) {
         channel: t,
         user: h,
         guild: m
-    } = e, A = (0, l.bG)([o.A], () => null != h && null != m && (0, s.KX)(h, m, [o.A])), g = (0, l.bG)([r.Ay], () => null == h || null == r.Ay.getMember(t.guild_id, h.id));
+    } = e, A = (0, l.bG)([o.A], () => null != h && null != m && (0, a.KX)(h, m, [o.A])), g = (0, l.bG)([r.Ay], () => null == h || null == r.Ay.getMember(t.guild_id, h.id));
     if (!A) return null;
     let _ = g ? u.intl.string(d.default.Ux67nW) : u.intl.string(d.default["snp/lJ"]),
         p = `kick-user-${h?.id}`;
     return (0, i.jsx)(c.A, {
         text: _,
-        icon: a.Nxw,
+        icon: s.Nxw,
         onClick: () => {
-            null != h && (0, a.mMO)(async () => {
+            null != h && (0, s.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("62624").then(n.bind(n, 324785));

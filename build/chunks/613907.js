@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(735438),
-    s = n.n(a),
+    s = n(735438),
+    a = n.n(s),
     r = n(311907),
     o = n(397927),
     c = n(843472),
@@ -26,11 +26,11 @@ let S = "749054660769218631";
 function I(e) {
     let {
         channel: t
-    } = e, [n, a] = l.useState("");
+    } = e, [n, s] = l.useState("");
     l.useEffect(() => {
         (0, d.zk)("847199849233514549", !0)
     }, []);
-    let I = (0, r.bG)([A.A, m.default], () => !!s()(A.A.getMessages(t.id).toArray()).reverse().find(e => e.author.id !== m.default.getId() && e.state === E.cmJ.SENT && !(0, f.A)(e))),
+    let I = (0, r.bG)([A.A, m.default], () => !!a()(A.A.getMessages(t.id).toArray()).reverse().find(e => e.author.id !== m.default.getId() && e.state === E.cmJ.SENT && !(0, f.A)(e))),
         T = (0, r.bG)([g.default], () => g.default.getUser(t.isPrivate() ? t.getRecipientId() : null)),
         v = p.Ay.useName(T) ?? C.intl.string(C.t.y1Wu2f),
         N = (0, r.bG)([u.A], () => u.A.getStickerById(S)),
@@ -43,7 +43,7 @@ function I(e) {
                     type: "Send wave"
                 })
             } catch (e) {
-                e.ok || 429 !== e.status || a(C.intl.string(C.t.Whhv4w))
+                e.ok || 429 !== e.status || s(C.intl.string(C.t.Whhv4w))
             }
         }, [t.id, t.type, n]),
         b = C.intl.formatToPlainString(C.t.m0zYbV, {

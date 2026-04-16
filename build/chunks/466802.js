@@ -35,8 +35,8 @@ var i = n(627968),
     w = n(45938),
     M = n(927578),
     D = n(615396),
-    k = n(427262),
-    O = n(937266),
+    O = n(427262),
+    k = n(937266),
     U = n(652215),
     B = n(788868),
     G = n(985018),
@@ -215,7 +215,7 @@ class q extends a.Component {
             sku: i
         } = this.props;
         return this.isCustomGiftMessage() && !n ? G.intl.formatToPlainString(G.t.t1SOId, {
-            recipientDisplayName: k.Ay.getName(t)
+            recipientDisplayName: O.Ay.getName(t)
         }) : null == i ? null : e.isSubscription ? n ? G.intl.string(G.t["2PJ1NP"]) : G.intl.string(G.t.hrnGng) : n ? G.intl.string(G.t.QLEMld) : G.intl.string(G.t.W4DBcy)
     }
     renderBody(e) {
@@ -249,11 +249,11 @@ class q extends a.Component {
         });
         if (e.isExistingPremiumSubscriptionDisallowed) return G.intl.string(G.t.UCIU9y);
         if (e.hasMultipleCopies) return null != a ? e.isSubscription ? G.intl.format(G.t.l3VxgG, {
-            username: k.Ay.getUserTag(a),
+            username: O.Ay.getUserTag(a),
             maxUses: e.maxUses,
             skuName: r
         }) : G.intl.format(G.t["9cYrw5"], {
-            username: k.Ay.getUserTag(a),
+            username: O.Ay.getUserTag(a),
             totalCopies: e.maxUses,
             skuName: r
         }) : e.isSubscription ? G.intl.formatToPlainString(G.t.svrO3W, {
@@ -268,7 +268,7 @@ class q extends a.Component {
             if (null != a) {
                 let e = l.interval === B.WT.MONTH ? G.t["/RDIEA"] : G.t["3CX6Ev"];
                 return G.intl.format(e, {
-                    username: k.Ay.getUserTag(a),
+                    username: O.Ay.getUserTag(a),
                     skuName: r,
                     intervalCount: l.intervalCount
                 })
@@ -280,7 +280,7 @@ class q extends a.Component {
             })
         }
         return null != a ? G.intl.format(G.t["3HsdQ/"], {
-            username: k.Ay.getUserTag(a)
+            username: O.Ay.getUserTag(a)
         }) : G.intl.string(G.t.Jdnjjj)
     }
     renderCustomGiftBox = e => {
@@ -325,7 +325,7 @@ class q extends a.Component {
         } = this.props;
         if (null == e) return null;
         let a = null != e.giftStyle && !(0, I.bF)(n);
-        return (0, i.jsx)(O.k, {
+        return (0, i.jsx)(k.k, {
             skuId: e.skuId,
             onEmbedClick: this.handleEmbedClick,
             analyticsSection: U.JJy.GIFT_CODE_EMBED,
@@ -344,7 +344,7 @@ class q extends a.Component {
             width: a,
             isSelfGift: l
         } = this.props;
-        if (null != e && null != e.promotion) return (0, i.jsx)(O.k, {
+        if (null != e && null != e.promotion) return (0, i.jsx)(k.k, {
             skuId: e.skuId,
             onEmbedClick: this.handleClaimPromotion,
             analyticsSection: U.JJy.GIFT_CODE_EMBED,

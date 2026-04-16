@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(110259),
-    a = n(311907),
-    s = n(205693),
+    s = n(311907),
+    a = n(205693),
     r = n(397927),
     o = n(827343),
     c = n(820284),
@@ -38,8 +38,8 @@ function N(e) {
         renderInputProfiles: R = !1,
         renderOutputDevices: M = !1,
         renderOutputVolume: L = !1,
-        renderInputDevices: O = !1,
-        renderInputVolume: D = !1,
+        renderInputDevices: D = !1,
+        renderInputVolume: O = !1,
         maybeRenderInputMeter: P = !1,
         renderSettingsButton: w = !1
     } = e, {
@@ -63,21 +63,21 @@ function N(e) {
             analyticsLocations: U,
             asSubmenu: !0
         }),
-        H = (0, a.bG)([_.Ay], () => _.Ay.getActiveInputProfile()),
+        H = (0, s.bG)([_.Ay], () => _.Ay.getActiveInputProfile()),
         B = (0, A.A)(U),
         V = (0, m.A)(U),
         W = (0, g.A)(U),
-        K = s.x.DEFAULT,
+        K = a.x.DEFAULT,
         z = _.Ay.isSelfDeaf(K),
-        Y = (0, a.bG)([_.Ay], () => _.Ay.getMode()),
+        Y = (0, s.bG)([_.Ay], () => _.Ay.getMode()),
         J = Y === x.TBI.VOICE_ACTIVITY ? x.TBI.PUSH_TO_TALK : x.TBI.VOICE_ACTIVITY,
-        q = (0, a.bG)([_.Ay, f.Ay], () => {
+        q = (0, s.bG)([_.Ay, f.Ay], () => {
             let e = _.Ay.getModeOptions().shortcut?.length > 0,
                 t = null != f.Ay.getKeybindForAction(x.hCu.PUSH_TO_TALK, !1, !0),
                 n = null != f.Ay.getKeybindForAction(x.hCu.PUSH_TO_TALK_PRIORITY, !1, !0);
             return e || t || n
         }),
-        $ = (0, a.bG)([p.A], () => null != p.A.getChannelId());
+        $ = (0, s.bG)([p.A], () => null != p.A.getChannelId());
     return (0, i.jsx)(c.A, {
         object: x.ZSU.CONTEXT_MENU,
         children: (0, i.jsxs)(r.W1t, {
@@ -90,9 +90,9 @@ function N(e) {
             "aria-label": T.intl.string(T.t.ZR1Ss6),
             className: v.MK,
             children: [(0, i.jsxs)(r.rXV, {
-                children: [O && G, R && B, M && F]
+                children: [D && G, R && B, M && F]
             }), (0, i.jsxs)(r.rXV, {
-                children: [D && V, P && $ && (0, i.jsx)(r.aK1, {
+                children: [O && V, P && $ && (0, i.jsx)(r.aK1, {
                     id: "input-device-meter",
                     interactive: !1,
                     control: () => (0, i.jsx)(E.A, {

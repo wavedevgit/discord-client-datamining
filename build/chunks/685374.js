@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     l = n(64700),
-    a = n(158954),
-    s = n(311907),
+    s = n(158954),
+    a = n(311907),
     r = n(397927),
     o = n(702805),
     c = n(198982),
@@ -26,14 +26,14 @@ function S(e) {
     let {
         channelId: t,
         ...n
-    } = e, a = (0, s.bG)([h.A], () => h.A.getChannel(t), [t]), r = (0, s.bG)([m.A], () => m.A.getGuild(a?.getGuildId()));
+    } = e, s = (0, a.bG)([h.A], () => h.A.getChannel(t), [t]), r = (0, a.bG)([m.A], () => m.A.getGuild(s?.getGuildId()));
     return (l.useEffect(() => {
         A.default.track(E.HAw.OPEN_MODAL, {
             type: "Grant Channel Access"
         })
-    }, []), null == a || null == r) ? null : (0, i.jsx)(I, {
+    }, []), null == s || null == r) ? null : (0, i.jsx)(I, {
         guild: r,
-        channel: a,
+        channel: s,
         ...n
     })
 }
@@ -42,20 +42,20 @@ function I(e) {
     let {
         guild: t,
         channel: n,
-        onClose: s,
+        onClose: a,
         newChannel: h,
         inSettings: m,
         ...A
     } = e, [E, S] = l.useState(""), [I, T] = l.useState({}), [v, N] = l.useState(!1), [y, b] = l.useState(null), j = l.useRef(null), R = (0, d.Ay)(n), {
         roles: M,
         members: L,
-        getRichTag: O
-    } = (0, p.K)(t, n, n.accessPermissions, E), D = _.A.useSections({
+        getRichTag: D
+    } = (0, p.K)(t, n, n.accessPermissions, E), O = _.A.useSections({
         roles: M,
         members: L
     }), P = h && 0 === Object.keys(I).length;
     async function w() {
-        if (null == n || 0 === Object.keys(I).length) return void s();
+        if (null == n || 0 === Object.keys(I).length) return void a();
         N(!0);
         try {
             var e, t, i;
@@ -65,7 +65,7 @@ function I(e) {
                     row: n
                 } = t;
                 null != n.id && "" !== n.id && (n.rowType === f.T6.ROLE ? l.push((0, g.we)(n.id, e.type)) : n.rowType === f.T6.MEMBER && l.push((0, g.n3)(n.id, e.type)))
-            }), (0, o.R$)(e.id, l, i)), s(), N(!1)
+            }), (0, o.R$)(e.id, l, i)), a(), N(!1)
         } catch (t) {
             let e = new c.LG(t);
             N(!1), b(e)
@@ -80,11 +80,11 @@ function I(e) {
         setPendingAdditions: T,
         roles: M,
         members: L,
-        getRichTag: O,
-        children: (0, i.jsx)(a.Modal, {
+        getRichTag: D,
+        children: (0, i.jsx)(s.Modal, {
             ...A,
             title: C.intl.string(C.t.dMJ3Y6),
-            onClose: s,
+            onClose: a,
             input: (0, i.jsxs)("div", {
                 children: [(0, i.jsxs)(r.Text, {
                     className: x.HA,
@@ -119,16 +119,16 @@ function I(e) {
                 renderSection: _.A.renderSection,
                 rowHeight: _.A.ROW_HEIGHT,
                 renderRow: _.A.renderRow,
-                sections: D
+                sections: O
             },
             actions: P ? [{
                 variant: "secondary",
                 text: C.intl.string(C.t.u46sxe),
-                onClick: s
+                onClick: a
             }] : [{
                 variant: "secondary",
                 text: C.intl.string(C.t["ETE/oC"]),
-                onClick: s
+                onClick: a
             }, {
                 variant: "primary",
                 text: C.intl.string(C.t.i4jeWR),

@@ -1,14 +1,14 @@
 /** chunk id: 813503 params = (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => a
 });
 var i = n(761640),
     l = n(309010),
-    a = n(746080);
+    s = n(746080);
 
-function s(e) {
+function a(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l.A,
         n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : i.Ay,
-        s = e.guild_id;
-    return t.getChannelId(s) === a.VV.GUILD_HOME && n.getCurrentSidebarChannelId(a.VV.GUILD_HOME) === e.id
+        a = e.guild_id;
+    return t.getChannelId(a) === s.VV.GUILD_HOME && n.getCurrentSidebarChannelId(s.VV.GUILD_HOME) === e.id
 }

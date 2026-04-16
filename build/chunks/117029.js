@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(735438),
     o = n(451988),
     c = n(435371),
@@ -29,7 +29,7 @@ let C = l.memo(function(e) {
     let {
         mirror: t = !1,
         streamId: n,
-        paused: a
+        paused: s
     } = e, {
         onActive: C,
         onPreventIdle: x,
@@ -45,8 +45,8 @@ let C = l.memo(function(e) {
         setIsSlidering: R,
         doZoom: M,
         isZooming: L,
-        videoAspectRatio: O,
-        wrapperRef: D,
+        videoAspectRatio: D,
+        wrapperRef: O,
         panOffset: P,
         setPanOffset: w,
         clampPanOffset: U
@@ -55,23 +55,23 @@ let C = l.memo(function(e) {
     }, [x]), V = l.useCallback(() => {
         G(!1), S("interact")
     }, [S]), W = l.useMemo(() => {
-        let e = 120 * Math.min(O, 32 / 9);
+        let e = 120 * Math.min(D, 32 / 9);
         return {
             "--custom-zoom-minimap-width": `${e}px`,
             "--custom-zoom-minimap-height": "120px"
         }
-    }, [O]), K = l.useCallback(e => {
-        if (null == F.current || null == D.current) return;
+    }, [D]), K = l.useCallback(e => {
+        if (null == F.current || null == O.current) return;
         let t = F.current.getBoundingClientRect(),
-            n = D.current.clientWidth,
-            i = D.current.clientHeight,
+            n = O.current.clientWidth,
+            i = O.current.clientHeight,
             l = e.x - t.left,
-            a = e.y - t.top;
+            s = e.y - t.top;
         w(U({
             x: (.5 - l / t.width) * n * T,
-            y: (.5 - a / t.height) * i * T
+            y: (.5 - s / t.height) * i * T
         }))
-    }, [U, T, D, w]), z = l.useCallback(e => {
+    }, [U, T, O, w]), z = l.useCallback(e => {
         E(e) && (e.preventDefault(), e.stopPropagation(), G(!0), K({
             x: e.clientX,
             y: e.clientY
@@ -84,20 +84,20 @@ let C = l.memo(function(e) {
     }, [k, K]), J = l.useCallback(e => {
         !k || E(e) || (e.preventDefault(), e.stopPropagation(), G(!1))
     }, [k]), q = m.Ay.getVideoComponent(), $ = l.useMemo(() => {
-        let e = null != D.current ? D.current.clientWidth : 1,
-            t = null != D.current ? D.current.clientHeight : 1,
+        let e = null != O.current ? O.current.clientWidth : 1,
+            t = null != O.current ? O.current.clientHeight : 1,
             n = 1 / T,
             i = 1 / T,
             l = .5 - P.x / (e * T),
-            a = .5 - P.y / (t * T);
+            s = .5 - P.y / (t * T);
         return {
             "--custom-zoom-indicator-left": `${100*(0,r.clamp)(l-n/2,0,1-n)}%`,
-            "--custom-zoom-indicator-top": `${100*(0,r.clamp)(a-i/2,0,1-i)}%`,
+            "--custom-zoom-indicator-top": `${100*(0,r.clamp)(s-i/2,0,1-i)}%`,
             "--custom-zoom-indicator-width": `${100*n}%`,
             "--custom-zoom-indicator-height": `${100*i}%`,
             "--custom-zoom-indicator-transition": y || k || b || j ? "none" : "top 0.1s ease-out, left 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out"
         }
-    }, [y, k, b, j, P, T, D]), Z = l.useCallback(e => {
+    }, [y, k, b, j, P, T, O]), Z = l.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), M(T - .25, A.qd, "button")
     }, [M, T]), X = l.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), M(T + .25, A.qd, "button")
@@ -109,7 +109,7 @@ let C = l.memo(function(e) {
     return ((0, u.l0)(() => {
         Q.current?.stop()
     }), I && null != n) ? (0, i.jsxs)("div", {
-        className: s()(p.ne, {
+        className: a()(p.ne, {
             [p.Ge]: L || H
         }),
         onMouseEnter: B,
@@ -127,11 +127,11 @@ let C = l.memo(function(e) {
                 onMouseMove: Y,
                 onMouseUp: J,
                 children: [(0, i.jsx)(q, {
-                    className: s()(p.BZ, {
+                    className: a()(p.BZ, {
                         [_.mirror]: t
                     }),
                     streamId: n,
-                    paused: a,
+                    paused: s,
                     reportContainerResized: !1
                 }), (0, i.jsx)("div", {
                     className: p.xq,

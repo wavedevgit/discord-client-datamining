@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(451988),
     o = n(765671),
     c = n(964486),
@@ -23,7 +23,7 @@ let _ = l.memo(function(e) {
         ...t
     } = e, {
         streamId: n,
-        onResize: a,
+        onResize: s,
         wrapperClassName: _
     } = t, {
         onActive: p
@@ -42,9 +42,9 @@ let _ = l.memo(function(e) {
         wrapperRef: j,
         doZoom: R,
         clampPanOffset: M
-    } = l.useContext(m.e9), [L, O] = l.useState(null), [D, P] = l.useState(null), [w, U] = l.useState(0), [k, G] = l.useState(null), [F, H] = l.useState(null), [B, V] = l.useState(!1), W = l.useRef(new r.Ep), K = l.useRef(new r.Ep), z = l.useRef(null), Y = T > E, J = l.useCallback(e => {
-        e.width > 0 && e.height > 0 && b(e.width / e.height), a?.(e)
-    }, [a, b]), q = l.useCallback(e => {
+    } = l.useContext(m.e9), [L, D] = l.useState(null), [O, P] = l.useState(null), [w, U] = l.useState(0), [k, G] = l.useState(null), [F, H] = l.useState(null), [B, V] = l.useState(!1), W = l.useRef(new r.Ep), K = l.useRef(new r.Ep), z = l.useRef(null), Y = T > E, J = l.useCallback(e => {
+        e.width > 0 && e.height > 0 && b(e.width / e.height), s?.(e)
+    }, [s, b]), q = l.useCallback(e => {
         if (null == j.current) return m.qd;
         let t = j.current.getBoundingClientRect();
         return {
@@ -55,7 +55,7 @@ let _ = l.memo(function(e) {
         if (!Y || !g(e)) return;
         e.preventDefault(), e.stopPropagation();
         let t = q(e);
-        x(!0), P(t), O(t), U(Date.now()), H(t), G(S)
+        x(!0), P(t), D(t), U(Date.now()), H(t), G(S)
     }, [q, Y, S, x]), Z = l.useCallback(e => {
         if ((f || Y) && p(), !C || !Y || null == F || null == k) return;
         e.preventDefault(), e.stopPropagation();
@@ -65,21 +65,21 @@ let _ = l.memo(function(e) {
         I(M({
             x: k.x + n,
             y: k.y + i
-        })), O(t)
+        })), D(t)
     }, [M, F, k, f, q, C, Y, p, I]), X = l.useCallback(e => {
         !C || g(e) || (e.preventDefault(), e.stopPropagation(), x(!1), H(null), G(null))
     }, [C, x]), Q = l.useCallback(e => {
-        if (Y && null != D && null != L) {
+        if (Y && null != O && null != L) {
             let {
                 x: t,
                 y: n
-            } = D, {
+            } = O, {
                 x: i,
                 y: l
             } = L;
             (Math.sqrt((i - t) ** 2 + (l - n) ** 2) > .01 || Date.now() - w >= 500) && (e.preventDefault(), e.stopPropagation())
         }
-    }, [Y, D, w, L]), ee = l.useCallback(() => {
+    }, [Y, O, w, L]), ee = l.useCallback(() => {
         x(!1), H(null), G(null)
     }, [x]), et = l.useCallback(e => {
         f && (N(!0), R(T - e.deltaY / 100, q(e), "wheel"), p(), W.current.start(100, () => {
@@ -102,16 +102,16 @@ let _ = l.memo(function(e) {
         }
         let {
             width: l,
-            height: a
+            height: s
         } = i;
-        1 > Math.abs(t - l) && 1 > Math.abs(n - a) || (V(!0), I(e => {
+        1 > Math.abs(t - l) && 1 > Math.abs(n - s) || (V(!0), I(e => {
             let i = l * (T - 1) / 2,
-                s = a * (T - 1) / 2,
+                a = s * (T - 1) / 2,
                 r = t * (T - 1) / 2,
                 o = n * (T - 1) / 2;
             return M({
                 x: (0 !== i ? e.x / i : 0) * r,
-                y: (0 !== s ? e.y / s : 0) * o
+                y: (0 !== a ? e.y / a : 0) * o
             })
         }), z.current = {
             width: t,
@@ -135,7 +135,7 @@ let _ = l.memo(function(e) {
     }, [M, C, B, v, y, S, T]);
     return (0, i.jsx)("div", {
         ref: j,
-        className: s()(A.iE, _, {
+        className: a()(A.iE, _, {
             [A.rc]: f && Y,
             [A.d$]: C
         }),
@@ -146,7 +146,7 @@ let _ = l.memo(function(e) {
         onWheel: et,
         onClick: Q,
         children: null != n && (0, i.jsx)("div", {
-            className: s()(A.j, A.L2),
+            className: a()(A.j, A.L2),
             style: en,
             children: (0, i.jsx)(h.A, {
                 ...t,

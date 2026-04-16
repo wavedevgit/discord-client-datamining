@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(158954),
-    a = n(311907),
-    s = n(990078),
+    s = n(311907),
+    a = n(990078),
     r = n(309010),
     o = n(235052),
     c = n(783198),
@@ -17,7 +17,7 @@ function u(e) {
         channel: n,
         onAction: u,
         variant: h = "primary"
-    } = e, m = (0, o.u)(t, n, "useRequestToStreamButton"), A = (0, a.bG)([r.A], () => r.A.getVoiceChannelId() === n.id, [n.id]);
+    } = e, m = (0, o.u)(t, n, "useRequestToStreamButton"), A = (0, s.bG)([r.A], () => r.A.getVoiceChannelId() === n.id, [n.id]);
     if (null == m) return null;
     let g = (0, i.jsx)(l.$nd, {
         text: d.intl.string(c.default.DKHhec),
@@ -29,7 +29,7 @@ function u(e) {
         fullWidth: !0,
         disabled: !A
     });
-    return A ? g : (0, i.jsx)(s.m, {
+    return A ? g : (0, i.jsx)(a.m, {
         position: "top",
         text: d.intl.string(c.default.qRXats),
         asContainer: !0,

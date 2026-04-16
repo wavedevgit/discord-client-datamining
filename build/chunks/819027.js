@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(397927),
-    a = n(688810),
-    s = n(474397),
+    s = n(688810),
+    a = n(474397),
     r = n(780964),
     o = n(858897),
     c = n(652215),
@@ -15,7 +15,7 @@ var l = n(397927),
 function u(e) {
     let {
         analyticsLocations: t
-    } = (0, a.Ay)();
+    } = (0, s.Ay)();
     return (0, i.jsx)(l.Drp, {
         id: "voice-settings",
         label: d.intl.string(d.t.NiTd0e),
@@ -23,7 +23,7 @@ function u(e) {
             (0, o.openUserSettings)(r.X.VOICE_CATEGORY, {
                 analyticsLocations: t,
                 appContext: e
-            }), (0, s.A)(e, e === c.BRT.POPOUT)
+            }), (0, a.A)(e, e === c.BRT.POPOUT)
         },
         icon: l.Zes,
         leadingAccessory: {

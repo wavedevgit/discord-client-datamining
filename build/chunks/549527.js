@@ -35,8 +35,8 @@ var i = n(627968),
     w = n(309010),
     M = n(287809),
     D = n(954571),
-    k = n(709634),
-    O = n(652215),
+    O = n(709634),
+    k = n(652215),
     U = n(381941),
     B = n(167684);
 
@@ -56,7 +56,7 @@ function G(e) {
             channelId: e.id,
             baseChannelId: i,
             guildId: e.guild_id
-        }), (0, b.iN)(i), D.default.track(O.HAw.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
+        }), (0, b.iN)(i), D.default.track(k.HAw.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
             moderator_report_id: t.channel_id,
             destination_channel_id: i,
             destination_message_id: t.id
@@ -116,7 +116,7 @@ function F(e) {
         }
     }(t, l);
     return (0, i.jsx)(g.A, {
-        childrenExecutedCommand: (0, i.jsx)(k.A, {
+        childrenExecutedCommand: (0, i.jsx)(O.A, {
             reportingUserId: s,
             guildId: l.guild_id,
             channel: l,

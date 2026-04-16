@@ -4,8 +4,8 @@ n.d(t, {
     A: () => U
 }), n(321073);
 var l = n(311907),
-    a = n(73153),
-    s = n(450827),
+    s = n(73153),
+    a = n(450827),
     r = n(49463),
     o = n(21119),
     c = n(95701),
@@ -49,13 +49,13 @@ function y() {
     }
     let n = null != e ? e.recipients : [];
     if (null != i) {
-        let e, t, l, a = _.default.getCurrentUser(),
-            s = a?.isStaff() ?? !1;
+        let e, t, l, s = _.default.getCurrentUser(),
+            a = s?.isStaff() ?? !1;
         i.setQuery({
             query: E,
             filters: {
                 friends: !0,
-                staff: s,
+                staff: a,
                 provisional: !1
             },
             blacklist: n,
@@ -67,9 +67,9 @@ function y() {
             })), l = {}, e.forEach(e => {
                 let n = A.A.getScoreWithoutFetchingLatest(e.id),
                     i = e.getRecipientId(),
-                    a = .2 * !!g.A.isFriend(i),
-                    s = .1 * (null != h.A.getDMFromUserId(i));
-                l[i] = 1 + n / t + a + s
+                    s = .2 * !!g.A.isFriend(i),
+                    a = .1 * (null != h.A.getDMFromUserId(i));
+                l[i] = 1 + n / t + s + a
             }), l)
         })
     }
@@ -112,7 +112,7 @@ function R(e) {
 }
 
 function M() {
-    return null != i && (i.destroy(), i = null), s.A.getUserSearchContext(R, 1e3)
+    return null != i && (i.destroy(), i = null), a.A.getUserSearchContext(R, 1e3)
 }
 
 function L(e) {
@@ -120,12 +120,12 @@ function L(e) {
     f = !0, b(), i = M(), T = null, N("")
 }
 
-function O(e) {
+function D(e) {
     if (e.key !== p.TLS) return !1;
-    D()
+    O()
 }
 
-function D() {
+function O() {
     null != i && (i.destroy(), i = null), v()
 }
 class P extends l.Ay.Store {
@@ -155,7 +155,7 @@ class P extends l.Ay.Store {
         }
     }
 }
-let w = new P(a.h, {
+let w = new P(s.h, {
         CONNECTION_OPEN: function() {
             v()
         },
@@ -173,9 +173,9 @@ let w = new P(a.h, {
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
             f = !0, b(), i = M(), T = e.channelId, N("")
         },
-        MODAL_POP: O,
-        HIDE_ACTION_SHEET: O,
-        PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: D,
+        MODAL_POP: D,
+        HIDE_ACTION_SHEET: D,
+        PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: O,
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_QUERY: function(e) {
             T = e.channelId, N(e.query)
         },

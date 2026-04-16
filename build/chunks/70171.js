@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(407045),
-    s = n(311907),
+    s = n(407045),
+    a = n(311907),
     r = n(582754),
     o = n(397927),
     c = n(164617),
@@ -38,7 +38,7 @@ function C(e) {
         popoutType: n
     } = e, {
         reducedMotion: C
-    } = l.useContext(r.CZ), x = (0, l.useRef)(null), S = h.K.getState().clipsButtonRef, I = (0, m._z)(t), T = (0, s.bG)([d.A], () => d.A.getActiveAnimation()), v = (0, s.yK)([d.A], () => d.A.getStreamClipAnimations(I)), N = (0, l.useRef)(void 0);
+    } = l.useContext(r.CZ), x = (0, l.useRef)(null), S = h.K.getState().clipsButtonRef, I = (0, m._z)(t), T = (0, a.bG)([d.A], () => d.A.getActiveAnimation()), v = (0, a.yK)([d.A], () => d.A.getStreamClipAnimations(I)), N = (0, l.useRef)(void 0);
     l.useEffect(() => () => {
         (0, u.MI)(I)
     }, [I]);
@@ -111,17 +111,17 @@ function C(e) {
                 null != t.item && null != v.find(e => e.timestamp === t.item.timestamp) && (0, u.MI)(I, t.item.timestamp)
             }
         }, "animate-always");
-    return (0, a.useChain)([b, R], [0, .1], 3e3), (0, i.jsxs)(i.Fragment, {
+    return (0, s.useChain)([b, R], [0, .1], 3e3), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             className: g.R,
             ref: x
-        }), j((e, t) => null != t && (0, i.jsx)(a.animated.div, {
+        }), j((e, t) => null != t && (0, i.jsx)(s.animated.div, {
             className: g.w5,
             style: e
         })), (0, i.jsx)(A.Ay, {
             children: (0, i.jsx)("div", {
                 className: g.R,
-                children: M((e, t, n, l) => t?.thumbnail != null && (0, i.jsx)(a.animated.img, {
+                children: M((e, t, n, l) => t?.thumbnail != null && (0, i.jsx)(s.animated.img, {
                     src: t.thumbnail,
                     className: g.yI,
                     style: e

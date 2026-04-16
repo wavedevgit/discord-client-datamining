@@ -92,7 +92,7 @@ function M(e) {
     } = e, s = (0, o.bG)([C.A], () => C.A.isFetchingForSKU(n)), M = (0, A.A)({
         skuId: n,
         location: "SocialLayerStorefrontProductDetailsEmbed"
-    }), D = M?.applicationId, k = (0, o.bG)([m.A], () => null != D && m.A.isFetchingApplication(D)), O = (0, o.bG)([m.A], () => null != D && m.A.didFetchingApplicationFail(D)), U = (0, p.h)(D), B = (0, b.b)({
+    }), D = M?.applicationId, O = (0, o.bG)([m.A], () => null != D && m.A.isFetchingApplication(D)), k = (0, o.bG)([m.A], () => null != D && m.A.didFetchingApplicationFail(D)), U = (0, p.h)(D), B = (0, b.b)({
         location: "product_details_embed"
     }), {
         analyticsLocations: G
@@ -139,8 +139,8 @@ function M(e) {
                 analyticsLocations: [u.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED_GIFT_BUTTON]
             })
         }, [M, F]),
-        J = null != D && null == U && !O;
-    if ((s || k || J) && (null == M || null == U)) return (0, i.jsx)("div", {
+        J = null != D && null == U && !k;
+    if ((s || O || J) && (null == M || null == U)) return (0, i.jsx)("div", {
         className: P.kL,
         children: (0, i.jsx)(c.y$y, {
             className: P.u1

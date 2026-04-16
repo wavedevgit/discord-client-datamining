@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(675171),
-    s = n(750580),
+    s = n(675171),
+    a = n(750580),
     r = n(436136),
     o = n(228098),
     c = n(157259),
@@ -15,10 +15,10 @@ let h = l.memo(function(e) {
     let {
         channel: t,
         narrow: n
-    } = e, l = (0, o.A)(t), h = (0, a.A)(), {
+    } = e, l = (0, o.A)(t), h = (0, s.A)(), {
         showUnreadsNotice: m,
         clearUnreadsNotice: A
-    } = (0, s.A)(t);
+    } = (0, a.A)(t);
     return t.isArchivedLockedThread() ? (0, i.jsx)(d.p, {
         channel: t,
         narrow: n

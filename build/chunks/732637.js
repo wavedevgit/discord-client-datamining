@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(311907),
-    s = n(73153),
+    s = n(311907),
+    a = n(73153),
     r = n(31728),
     o = n(869146),
     c = n(203982),
@@ -16,7 +16,7 @@ var i = n(627968),
     A = n(5867),
     g = n(652215);
 let _ = (e, t) => {
-    s.h.wait(() => {
+    a.h.wait(() => {
         (0, r.I_)(e, t)
     })
 };
@@ -24,12 +24,12 @@ let _ = (e, t) => {
 function p(e) {
     let t, {
             embedId: n,
-            className: s,
+            className: a,
             style: r
         } = e,
-        p = (0, a.bG)([o.A], () => o.A.getWindow(g.MLl.CHANNEL_CALL_POPOUT)),
+        p = (0, s.bG)([o.A], () => o.A.getWindow(g.MLl.CHANNEL_CALL_POPOUT)),
         f = (0, m.A)(),
-        E = (0, a.bG)([d.Ay], () => d.Ay.getActivityPanelMode());
+        E = (0, s.bG)([d.Ay], () => d.Ay.getActivityPanelMode());
     t = null == f || (0, h.A)((0, u.H)(f.location)) || E !== A.Gd.PANEL ? p?.window ?? window : window;
     let C = l.useRef(null),
         x = l.useMemo(() => {
@@ -55,6 +55,6 @@ function p(e) {
     }, [n, x]), (0, i.jsx)("div", {
         ref: C,
         style: r,
-        className: s
+        className: a
     })
 }

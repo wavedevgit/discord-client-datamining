@@ -7,11 +7,11 @@ function l(e) {
     return e <= 124
 }
 
-function a(e) {
+function s(e) {
     return e <= 160
 }
 n.d(t, {
-    DO: () => a,
+    DO: () => s,
     VE: () => i,
     Yb: () => l
 })

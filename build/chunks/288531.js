@@ -96,15 +96,15 @@ let D = e => {
         size: a,
         isFocused: v,
         isQuestExpired: D,
-        isExpanded: k,
-        isAnimating: O,
+        isExpanded: O,
+        isAnimating: k,
         contentPosition: U,
         sourceQuestContent: B
     } = e, G = (0, A.In)(t), F = (0, A.S5)(t.userStatus?.completedAt, {
         year: "numeric",
         month: "long",
         day: "numeric"
-    }), H = G >= A.F3.COMPLETED, V = k || O, q = (0, g.wT)(t, j.rE.QUESTS_CARD, n, B), W = (0, x.Ut)(), z = (0, A.fc)(t), Y = (0, g.mU)({
+    }), H = G >= A.F3.COMPLETED, V = O || k, q = (0, g.wT)(t, j.rE.QUESTS_CARD, n, B), W = (0, x.Ut)(), z = (0, A.fc)(t), Y = (0, g.mU)({
         quest: t,
         taskDetails: z,
         location: j.rE.QUESTS_CARD,

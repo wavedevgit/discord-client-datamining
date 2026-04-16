@@ -37,14 +37,14 @@ function N(e) {
             message: M,
             currentUserId: D
         } = e,
-        k = D === M.author.id,
+        O = D === M.author.id,
         {
-            channel: O,
+            channel: k,
             approximate_member_count: U,
             approximate_presence_count: B
         } = w,
         G = w.state === T.elq.ACCEPTING,
-        F = null != O ? (0, C.OY)(O) : null,
+        F = null != k ? (0, C.OY)(k) : null,
         H = null != P,
         V = null != F,
         q = null != F && F.isGuildStageVoice(),
@@ -61,9 +61,9 @@ function N(e) {
         properties: {
             invite_code: w.code,
             invite_guild_id: w.guild?.id,
-            invite_channel_id: O?.id,
+            invite_channel_id: k?.id,
             invite_instance_id: (0, x._U)(w.code, M.id),
-            invite_channel_type: O?.type,
+            invite_channel_type: k?.type,
             embed_type: "guild_invite",
             location_stack: K
         }
@@ -86,7 +86,7 @@ function N(e) {
     }
     let ei = (0, v.l)({
         isVoiceChannel: z,
-        isOwnInvite: k,
+        isOwnInvite: O,
         isGuest: W,
         isHubGuild: Y,
         isStage: q,

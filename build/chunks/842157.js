@@ -35,9 +35,9 @@ var i = n(627968),
     w = n(652215),
     M = n(768349),
     D = n(985018),
-    k = n(193018);
+    O = n(193018);
 
-function O(e) {
+function k(e) {
     let {
         presenceActivity: t,
         remoteJoinPlatform: n,
@@ -91,17 +91,17 @@ function O(e) {
     if (!(null != n || c.length > 0)) return null;
     let u = null != n ? (0, y.C)(n) : D.intl.string(D.t["4dGUP0"]);
     return (0, i.jsxs)("div", {
-        className: k.qr,
+        className: O.qr,
         children: [(0, i.jsx)("div", {
-            className: k.E6,
+            className: O.E6,
             children: c.map((e, t) => (0, i.jsx)("div", {
-                className: k.F2,
+                className: O.F2,
                 children: e
             }, t))
         }), (0, i.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: "currentColor",
-            className: k.kB,
+            className: O.kB,
             children: u
         })]
     })
@@ -133,7 +133,7 @@ function U(e) {
         accountLinkButtonRef: J,
         renderAccountLinkUpsell: Z
     } = e, $ = V?.timestamps?.start ?? V?.created_at, ee = a.useMemo(() => null != $ ? (0, i.jsxs)("div", {
-        className: k.Ym,
+        className: O.Ym,
         children: [(0, i.jsx)(d._xR, {
             size: "xxs",
             color: "currentColor"
@@ -153,7 +153,7 @@ function U(e) {
         }), D.intl.string(D.t.TsWCdW)]
     }) : null, [en]), ea = a.useMemo(() => (0, i.jsxs)(d.Text, {
         variant: "text-xs/normal",
-        className: k.dS,
+        className: O.dS,
         color: "none",
         lineClamp: 2,
         children: [et ? (0, E.YC)(t, s, r, y, !1) : ee, et ? null : ei]
@@ -166,7 +166,7 @@ function U(e) {
             children: e
         })
     }, [V?.details]), es = a.useMemo(() => (0, i.jsxs)("div", {
-        className: k.pq,
+        className: O.pq,
         children: [el, ea, W || et ? null : z]
     }), [ea, W, et, z, el]), er = !!L, eo = (0, A.e)(n), {
         canJoin: ed,
@@ -266,7 +266,7 @@ function U(e) {
         }
     }, [ed, eu, e_, em, U, t.author.id, t.id, V, r.id, r.guild_id, Y, ec, y, ep, Q, X, J, K, eh]), ex = eg.some(e => e.trackingArea === h.kY.CLOUD_PLAY);
     (0, P.A)(ex, Y);
-    let ef = a.useMemo(() => em ? null : (0, i.jsx)(O, {
+    let ef = a.useMemo(() => em ? null : (0, i.jsx)(k, {
         presenceActivity: V,
         remoteJoinPlatform: ec,
         isGameLaunchable: er

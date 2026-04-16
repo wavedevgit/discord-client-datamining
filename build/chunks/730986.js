@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(205693),
     o = n(397927),
     c = n(233545),
@@ -55,7 +55,7 @@ function S(e) {
             let {
                 hostname: t,
                 averagePing: n,
-                lastPing: a,
+                lastPing: s,
                 outboundLossRate: r
             } = e, o = u.Q_.getSetting();
             return (0, i.jsxs)(l.Fragment, {
@@ -78,10 +78,10 @@ function S(e) {
                     children: E.intl.format(E.t["X58/lN"], {
                         averagePing: n.toFixed(0)
                     })
-                }), null != a ? (0, i.jsx)("div", {
+                }), null != s ? (0, i.jsx)("div", {
                     className: C.xB,
                     children: E.intl.format(E.t["6iv2TF"], {
-                        lastPing: a.toFixed(0)
+                        lastPing: s.toFixed(0)
                     })
                 }) : null, null != r ? (0, i.jsx)("div", {
                     className: C.xB,
@@ -89,7 +89,7 @@ function S(e) {
                         outboundLossRate: r.toFixed(1)
                     })
                 }) : null, (0, i.jsxs)("div", {
-                    className: s()(C.xB, C.xJ),
+                    className: a()(C.xB, C.xJ),
                     children: [null == r ? E.intl.formatToPlainString(E.t.vggaMt, {
                         badPing: 250
                     }) : null, null != r ? E.intl.formatToPlainString(E.t["3pFz1P"], {
@@ -100,7 +100,7 @@ function S(e) {
             })
         }, [e]),
         {
-            connectionState: a,
+            connectionState: s,
             connectionTypeText: r
         } = e,
         A = u.Q_.getSetting(),
@@ -123,17 +123,17 @@ function S(e) {
                 url: g.A.getArticleURL(p.MVz.VOICE_CONNECTION_ERRORS)
             }),
             [p.S7L.RTC_DISCONNECTED]: E.intl.string(E.t.fOX25I)
-        } [a];
+        } [s];
     return (0, i.jsxs)(i.Fragment, {
         children: ["function" == typeof S ? S() : (0, i.jsx)("p", {
-            className: s()(C.xB, C.xJ),
+            className: a()(C.xB, C.xJ),
             children: S
         }), (0, i.jsx)("hr", {
             className: C.me
         }), (0, i.jsxs)("div", {
             className: C.Vf,
             children: [(0, i.jsxs)("span", {
-                className: s()(C.uO, C.ro),
+                className: a()(C.uO, C.ro),
                 children: [(0, i.jsx)(o.XAi, {
                     size: "xxs",
                     color: o.LU0.colors.TEXT_FEEDBACK_POSITIVE.css,
@@ -141,7 +141,7 @@ function S(e) {
                 }), r]
             }), A && h.Ay.supports(f.O5.DIAGNOSTICS) && !__OVERLAY__ && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsxs)(o.MzZ, {
-                    className: s()(C.Ce, C.ro),
+                    className: a()(C.Ce, C.ro),
                     onClick: t,
                     children: [E.intl.string(E.t.KBoWg9), (0, i.jsx)(o.tfB, {
                         size: "xxs",
@@ -149,7 +149,7 @@ function S(e) {
                         className: C.__invalid_icon
                     })]
                 }), (0, i.jsxs)(o.MzZ, {
-                    className: s()(C.d3, C.ro),
+                    className: a()(C.d3, C.ro),
                     onClick: x,
                     title: "Copy to clipboard",
                     children: [E.intl.string(E.t["XEb+Sj"]), (0, i.jsx)(o.TdU, {

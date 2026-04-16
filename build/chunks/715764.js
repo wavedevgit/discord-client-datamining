@@ -25,6 +25,6 @@ function a(e) {
 }
 
 function s() {
-    return (0, l.jsx)("p", {})
+    return "\n"
 }
 t(64700)

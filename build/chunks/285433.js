@@ -39,18 +39,18 @@ let v = e => {
     } = e, [R, P] = a.useState(null), [w, M] = a.useState(null), D = (0, _.A)(e => {
         let t = e.target;
         P(t.offsetWidth), M(t.scrollWidth)
-    }), k = (0, u.w)(D), O = l === m.uF.QUESTS_EMBED, U = n.userStatus?.completedAt != null, B = (0, h.S5)(n.config.expiresAt), G = (0, h.S5)(n.config.rewardsConfig.rewardsExpireAt), F = a.useMemo(() => null != n.config.cosponsorMetadata, [n]), H = (0, i.jsx)(A.Ay, {
+    }), O = (0, u.w)(D), k = l === m.uF.QUESTS_EMBED, U = n.userStatus?.completedAt != null, B = (0, h.S5)(n.config.expiresAt), G = (0, h.S5)(n.config.rewardsConfig.rewardsExpireAt), F = a.useMemo(() => null != n.config.cosponsorMetadata, [n]), H = (0, i.jsx)(A.Ay, {
         className: I.Iu,
         logotypeClassName: F ? I.qN : void 0,
         gameTileSize: A.LU.MEDIUM,
         quest: n,
         separatorSpacing: A.C8.MEDIUM,
         theme: C.NJ.DARK,
-        withGameTile: !O || null == n.config.cosponsorMetadata
+        withGameTile: !k || null == n.config.cosponsorMetadata
     });
     return (0, i.jsxs)("div", {
         className: s()(I.nw, {
-            [I.Gg]: O,
+            [I.Gg]: k,
             [I.e5]: "xs" === v
         }),
         "aria-label": E.intl.string(E.t.dcl9MQ),
@@ -68,11 +68,11 @@ let v = e => {
             "aria-expanded": y,
             children: [(0, i.jsx)(r.animated.div, {
                 className: s()(I.VW, {
-                    [I.eX]: O
+                    [I.eX]: k
                 }),
                 children: (0, i.jsx)(r.animated.div, {
                     className: s()(I.Yu, {
-                        [I.Gg]: O
+                        [I.Gg]: k
                     }),
                     style: {
                         opacity: (0, f.a)(b.to({
@@ -86,7 +86,7 @@ let v = e => {
                         className: I.uA,
                         children: [(0, i.jsxs)("div", {
                             className: I._V,
-                            children: [H, O ? null : (0, i.jsx)(x.A, {
+                            children: [H, k ? null : (0, i.jsx)(x.A, {
                                 color: "always-white"
                             })]
                         }), (0, i.jsxs)("div", {
@@ -95,7 +95,7 @@ let v = e => {
                                 __unsupportedReactNodeAsText: n.config.messages.questName,
                                 shouldShow: null != R && null != w && R < w,
                                 children: (0, i.jsx)(c.Heading, {
-                                    ref: k,
+                                    ref: O,
                                     variant: "lg" === v ? "heading-xxl/bold" : "sm" === v ? "heading-xl/bold" : "heading-lg/bold",
                                     className: I.R_,
                                     color: "always-white",
@@ -127,7 +127,7 @@ let v = e => {
                     quest: n,
                     questContentPosition: N,
                     shouldShowDisclosure: !0,
-                    showShareLink: !t && O,
+                    showShareLink: !t && k,
                     sourceQuestContent: L,
                     children: e => (0, i.jsx)(r.animated.div, {
                         style: {

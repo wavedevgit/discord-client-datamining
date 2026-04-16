@@ -1,11 +1,11 @@
 /** chunk id: 817176 params = (module,exports,require) **/
 n.d(t, {
-    A: () => O
+    A: () => D
 });
 var i = n(627968),
     l = n(64700),
-    a = n(310784),
-    s = n.n(a),
+    s = n(310784),
+    a = n.n(s),
     r = n(503698),
     o = n.n(r),
     c = n(158954),
@@ -36,20 +36,20 @@ let j = Object.freeze({
         avatarSize: u._3J.SIZE_24,
         wishlistButtonSize: "md"
     }),
-    R = s()("#000000").darken(1.5).alpha(.9).hex(),
-    M = s()("#000000").alpha(0).hex(),
+    R = a()("#000000").darken(1.5).alpha(.9).hex(),
+    M = a()("#000000").alpha(0).hex(),
     L = `linear-gradient(to top, ${R} 30%, ${M} 80%)`;
 
-function O(e) {
+function D(e) {
     var t, n;
     let {
-        sku: a,
-        targetUser: s,
+        sku: s,
+        targetUser: a,
         isTargetingCurrentUser: r,
         source: R,
         showIcons: M,
-        guildId: O,
-        channelId: D,
+        guildId: D,
+        channelId: O,
         analyticsLocations: P,
         onCardClick: w,
         onButtonClick: U
@@ -57,10 +57,10 @@ function O(e) {
         isHoveringOrFocusing: H
     } = (0, A.A)(k), {
         guildId: B
-    } = (0, x.nG)(a.applicationId), V = (0, d.bG)([m.A], () => m.A.getApplication(a.applicationId)), {
+    } = (0, x.nG)(s.applicationId), V = (0, d.bG)([m.A], () => m.A.getApplication(s.applicationId)), {
         primaryIconAsset: W,
         primaryIconLabel: K
-    } = l.useMemo(() => (0, x.Cv)(a, a.applicationId), [a]), {
+    } = l.useMemo(() => (0, x.Cv)(s, s.applicationId), [s]), {
         priceComponent: z,
         extendedHeight: Y,
         displayPrice: J
@@ -69,13 +69,13 @@ function O(e) {
             sku: t,
             priceSetAssignmentPurchaseType: n
         } = e, {
-            normalPrice: a,
-            discountedPrice: s,
+            normalPrice: s,
+            discountedPrice: a,
             discountPercent: r
         } = (0, g.ou)({
             sku: t,
             priceSetAssignmentPurchaseType: n
-        }), o = s ?? a, d = l.useMemo(() => null != t && null != t.orbsReward && t.orbsReward > 0 ? (0, i.jsx)("div", {
+        }), o = a ?? s, d = l.useMemo(() => null != t && null != t.orbsReward && t.orbsReward > 0 ? (0, i.jsx)("div", {
             className: b.pt,
             children: (0, i.jsx)(u.Text, {
                 variant: "text-sm/semibold",
@@ -93,21 +93,21 @@ function O(e) {
             priceComponent: null,
             extendedHeight: !1,
             displayPrice: o
-        } : null != r && null != s ? {
+        } : null != r && null != a ? {
             priceComponent: (0, i.jsxs)("div", {
                 children: [(0, i.jsxs)("div", {
                     className: b.p6,
-                    children: [null != a && (0, i.jsx)(u.Text, {
+                    children: [null != s && (0, i.jsx)(u.Text, {
                         className: b.of,
                         variant: "text-md/medium",
                         color: "text-muted",
                         lineClamp: 1,
-                        children: a
+                        children: s
                     }), (0, i.jsx)(u.Text, {
                         variant: "text-md/bold",
                         color: "always-white",
                         lineClamp: 1,
-                        children: s
+                        children: a
                     }), (0, i.jsxs)(u.Text, {
                         variant: "text-md/bold",
                         color: "text-feedback-positive",
@@ -124,34 +124,34 @@ function O(e) {
                     variant: "text-md/bold",
                     color: "always-white",
                     lineClamp: 1,
-                    children: a
+                    children: s
                 }), d]
             }),
             extendedHeight: !1,
             displayPrice: o
         }
     }({
-        sku: a,
+        sku: s,
         priceSetAssignmentPurchaseType: r ? v.lid.DEFAULT : v.lid.GIFT
     }), q = l.useCallback(e => {
         e.stopPropagation(), w?.(), (0, S.R)({
-            skuId: a.id,
-            applicationId: a.applicationId,
+            skuId: s.id,
+            applicationId: s.applicationId,
             isStorefront: !1,
-            giftRecipient: s,
+            giftRecipient: a,
             giftingOrigin: N.vQ.GUILD_CHANNEL,
             analyticsLocations: P
         })
-    }, [a.id, a.applicationId, s, P, w]), $ = l.useCallback(e => {
-        e.stopPropagation(), U?.(), (0, I.a)(a, {
+    }, [s.id, s.applicationId, a, P, w]), $ = l.useCallback(e => {
+        e.stopPropagation(), U?.(), (0, I.a)(s, {
             isGift: !r,
-            giftRecipient: s,
+            giftRecipient: a,
             giftingOrigin: N.vQ.GUILD_CHANNEL
         }, {
             analyticsLocations: P,
             guildId: B
         })
-    }, [a, s, r, P, B, U]);
+    }, [s, a, r, P, B, U]);
     return (0, i.jsx)(c.vN3, {
         children: (0, i.jsxs)(u.sqX, {
             onClick: q,
@@ -161,24 +161,24 @@ function O(e) {
                 [b.YF]: H
             }),
             ref: k,
-            "aria-label": a.name,
+            "aria-label": s.name,
             children: [(0, i.jsx)(E.P, {
                 spec: j,
                 application: V
             }), (0, i.jsx)(f.A, {
                 spec: j,
-                sku: a,
+                sku: s,
                 isCardHovered: H,
                 location: "SocialLayerGiftingVoicePanelFeaturedSkuItemCard",
                 replacedElement: M && !r && R === p.uS.WISHLIST ? (0, i.jsx)(C.n, {
                     spec: j,
-                    user: s,
-                    guildId: O ?? void 0,
-                    channelId: D ?? void 0
+                    user: a,
+                    guildId: D ?? void 0,
+                    channelId: O ?? void 0
                 }) : null
             }), (0, i.jsx)(T.e, {
                 shape: "custom",
-                sku: a,
+                sku: s,
                 containerClassName: b.Vl,
                 foregroundImageClassName: b.wP,
                 backgroundImageClassName: b.GC
@@ -202,7 +202,7 @@ function O(e) {
                         color: "always-white",
                         variant: "text-md/medium",
                         lineClamp: 1,
-                        children: a.name
+                        children: s.name
                     })]
                 }), (0, i.jsx)("div", {
                     className: b.iQ,

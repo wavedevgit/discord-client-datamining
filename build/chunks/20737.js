@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(311907),
     o = n(397927),
     c = n(817363),
@@ -32,26 +32,26 @@ var i = n(627968),
     R = n(518960),
     M = n(545428),
     L = n(38198),
-    O = n(447155),
-    D = n(652215),
+    D = n(447155),
+    O = n(652215),
     P = n(696016),
     w = n(985018),
     U = n(644268);
 let k = l.memo(function(e) {
     let {
         className: t,
-        channel: a,
+        channel: s,
         draftType: k,
         editorTextContent: G,
         setValue: F,
         canOnlyUseTextCommands: H
-    } = e, B = (0, f.Us)(), V = l.useRef(null), W = l.useRef(null), K = (0, r.bG)([y.A], () => y.A.getActivities()), z = (0, A.Et)(), Y = (0, r.bG)([m.A], () => m.A.getLastClipsSession()), J = (0, r.yK)([m.A], () => m.A.getNewClipIds()), q = (0, r.bG)([I.Ay], () => null == I.Ay.getCurrentSidebarChannelId(a.id)), $ = (0, r.yK)([T.A], () => a.type === D.rbe.DM ? K.filter(e => !T.A.getParty(e.party?.id)?.has(a.getRecipientId())) : K, [K, a]), {
+    } = e, B = (0, f.Us)(), V = l.useRef(null), W = l.useRef(null), K = (0, r.bG)([y.A], () => y.A.getActivities()), z = (0, A.Et)(), Y = (0, r.bG)([m.A], () => m.A.getLastClipsSession()), J = (0, r.yK)([m.A], () => m.A.getNewClipIds()), q = (0, r.bG)([I.Ay], () => null == I.Ay.getCurrentSidebarChannelId(s.id)), $ = (0, r.yK)([T.A], () => s.type === O.rbe.DM ? K.filter(e => !T.A.getParty(e.party?.id)?.has(s.getRecipientId())) : K, [K, s]), {
         showClipsHeaderEntrypoint: Z
     } = h.L_.useConfig({
         location: "ChannelAttachButton"
     }), {
         onShareClick: X
-    } = (0, _.A)(a.id), Q = (0, r.bG)([p.HP], () => p.HP.hasHotspot(p._2.CLIPS_CHANNEL_ATTACH_REMINDER)), ee = (0, o.red)(e => (0, o.fDT)(e, P.nm)), et = (0, r.bG)([v.A], () => v.A.hasLayers()), en = (0, r.bG)([m.A], () => m.A.hasClips()), [ei, el] = l.useState(null), ea = (0, h.sw)() && (z || en), es = a.isPrivate(), er = (0, r.bG)([N.A], () => es || N.A.can(D.xBc.ATTACH_FILES, a) && N.A.can(D.xBc.SEND_MESSAGES, a)), eo = (0, d.A)(Y);
+    } = (0, _.A)(s.id), Q = (0, r.bG)([p.HP], () => p.HP.hasHotspot(p._2.CLIPS_CHANNEL_ATTACH_REMINDER)), ee = (0, o.red)(e => (0, o.fDT)(e, P.nm)), et = (0, r.bG)([v.A], () => v.A.hasLayers()), en = (0, r.bG)([m.A], () => m.A.hasClips()), [ei, el] = l.useState(null), es = (0, h.sw)() && (z || en), ea = s.isPrivate(), er = (0, r.bG)([N.A], () => ea || N.A.can(O.xBc.ATTACH_FILES, s) && N.A.can(O.xBc.SEND_MESSAGES, s)), eo = (0, d.A)(Y);
 
     function ec() {
         (0, o.mMO)(async () => {
@@ -60,7 +60,7 @@ let k = l.memo(function(e) {
             } = await Promise.all([n.e("42784"), n.e("90333")]).then(n.bind(n, 543428));
             return t => (0, i.jsx)(e, {
                 ...t,
-                channelId: a.id,
+                channelId: s.id,
                 onClipClick: e => X({
                     clips: [e]
                 })
@@ -74,26 +74,26 @@ let k = l.memo(function(e) {
             let {
                 channelId: t
             } = e;
-            t === a.id && V.current?.activateUploadDialogue()
+            t === s.id && V.current?.activateUploadDialogue()
         };
-        return b._.subscribe(D.jej.UPLOAD_FILE, e), () => {
-            b._.unsubscribe(D.jej.UPLOAD_FILE, e)
+        return b._.subscribe(O.jej.UPLOAD_FILE, e), () => {
+            b._.unsubscribe(O.jej.UPLOAD_FILE, e)
         }
     });
-    let ed = (0, x.n)(a),
-        eu = (0, x.Tb)(a),
+    let ed = (0, x.n)(s),
+        eu = (0, x.Tb)(s),
         eh = !S.D_.useSetting() && !(0, j.isAndroidWeb)() && null != window.ResizeObserver,
-        em = (0, E.I7)(a ?? void 0),
+        em = (0, E.I7)(s ?? void 0),
         eA = (0, C.Sc)(),
         eg = (0, u.b)(),
         e_ = J?.length ?? 0,
-        ep = (0, O.A)({
+        ep = (0, D.A)({
             canAttachFiles: er,
             canStartThreads: ed || eu,
             useSlate: eh,
-            hasClips: ea,
+            hasClips: es,
             canUseApplicationCommands: !H,
-            channel: a,
+            channel: s,
             activities: $,
             newClipsCount: e_,
             canPostPolls: em,
@@ -133,7 +133,7 @@ let k = l.memo(function(e) {
                             ...e,
                             onClose: () => el(null),
                             options: ep,
-                            channel: a,
+                            channel: s,
                             onFileUpload: () => V.current?.activateUploadDialogue(),
                             draftType: k,
                             editorTextContent: G,
@@ -146,7 +146,7 @@ let k = l.memo(function(e) {
             },
             children: e => (0, i.jsx)(M.A, {
                 ref: W,
-                className: s()(U.g$, t),
+                className: a()(U.g$, t),
                 childClassName: U.wh,
                 isActive: !1,
                 "aria-label": w.intl.string(w.t.d56gCa),
@@ -163,12 +163,12 @@ let k = l.memo(function(e) {
                 ref: V,
                 onChange: e => {
                     var t, n;
-                    t = e.currentTarget.files, null != (n = e.currentTarget.err) && "ETOOLARGE" === n.code ? (0, R.V)(a, []) : (0, R.R)(t, a, k, {
+                    t = e.currentTarget.files, null != (n = e.currentTarget.err) && "ETOOLARGE" === n.code ? (0, R.V)(s, []) : (0, R.R)(t, s, k, {
                         requireConfirm: !0,
                         origin: "file_picker"
-                    }), b._.dispatchToLastSubscribed(D.jej.TEXTAREA_FOCUS), e.currentTarget.value = ""
+                    }), b._.dispatchToLastSubscribed(O.jej.TEXTAREA_FOCUS), e.currentTarget.value = ""
                 },
-                multiple: a.rateLimitPerUser <= 0,
+                multiple: s.rateLimitPerUser <= 0,
                 tabIndex: -1,
                 "aria-hidden": !0
             })

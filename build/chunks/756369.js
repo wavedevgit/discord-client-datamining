@@ -37,8 +37,8 @@ var i = n(627968),
     w = n(229527),
     M = n(870136),
     D = n(33525),
-    k = n(484724),
-    O = n(71755),
+    O = n(484724),
+    k = n(71755),
     U = n(21599),
     B = n(178879),
     G = n(118331),
@@ -91,8 +91,8 @@ var i = n(627968),
     ew = n(439401),
     eM = n(466802),
     eD = n(990560),
-    ek = n(266620),
-    eO = n(860227),
+    eO = n(266620),
+    ek = n(860227),
     eU = n(564107),
     eB = n(763899),
     eG = n(652176),
@@ -221,10 +221,10 @@ class e7 extends a.Component {
                 message: e,
                 getAcceptInviteContext: this.getAcceptInviteContext
             }, a) : null;
-            if (n === v.I.TEMPLATE) return (0, i.jsx)(O.A, {
+            if (n === v.I.TEMPLATE) return (0, i.jsx)(k.A, {
                 code: a
             }, a);
-            if (n === v.I.EVENT) return (0, i.jsx)(k.A, {
+            if (n === v.I.EVENT) return (0, i.jsx)(O.A, {
                 code: a
             }, a);
             if (n === v.I.CHANNEL_LINK) return (0, i.jsx)(ej.A, {
@@ -375,12 +375,12 @@ class e7 extends a.Component {
                     onContextMenu: null != s ? e => {
                         e.stopPropagation(), e.preventDefault(), s(e, r)
                     } : void 0,
-                    renderAudioComponent: A ? ek.SX : ek.Nj,
-                    renderImageComponent: ek.Cr,
-                    renderVideoComponent: ek.I1,
-                    renderPlaintextFilePreview: ek.R6,
-                    renderGenericFileComponent: ek.UB,
-                    renderMosaicItemFooter: ek.YE,
+                    renderAudioComponent: A ? eO.SX : eO.Nj,
+                    renderImageComponent: eO.Cr,
+                    renderVideoComponent: eO.I1,
+                    renderPlaintextFilePreview: eO.R6,
+                    renderGenericFileComponent: eO.UB,
+                    renderMosaicItemFooter: eO.YE,
                     onPlay: (e, n, a) => {
                         eA.default.track(eK.HAw.MEDIA_ATTACHMENT_PLAYBACK_STARTED, {
                             guild_id: t.guild_id,
@@ -736,7 +736,7 @@ class e7 extends a.Component {
             showRemoveAttachmentModal: r
         } = this.state, o = this.renderEditedTag(t, a), d = this.renderCodedLinks(t), c = this.renderGiftCodes(t), u = this.renderAttachments(t), _ = this.renderCtaButton(), m = this.renderEmbeds(t), h = this.renderActivityInvite(t), p = this.renderReactions(t), g = this.renderPublishBump(t), A = this.renderEphemeralAccessories(t), x = this.renderStickersAccessories(t), f = this.renderThreadAccessories(t), C = this.renderComponentAccessories(t), E = this.renderThreadRoleMentionWarning(t), I = this.renderEmbeddedApplicationInstanceEmbed(t), v = this.renderInteractionPremiumUpsell(t), b = this.renderMediaPostEmbeds(t), T = this.renderSafetyPolicyNotice(t), y = this.renderSafetySystemNotification(t), S = this.renderMediaObscureNotice(t), N = this.renderPoll(t, n), j = this.renderForwardedMessage(t), L = this.renderReportedMessage(t), R = this.renderShareClientTheme(t);
         return null == d && null == u && null == m && null == h && null == p && null == c && null == g && null == A && null == x && null == f && null == C && null == I && null == E && null == b && null == T && null != v && null == N && null == j && null == L && null == R ? null : (0, i.jsxs)("div", {
-            id: (0, eO.XL)(t),
+            id: (0, ek.XL)(t),
             className: s()(e, eJ.kL),
             children: [L, j, E, N, R, d, c, b, u, _, m, S, h, x, C, I, v, o, p, g, A, l && this.renderSuppressConfirmModal(), r && this.renderRemoveAttachmentConfirmModal(), f, T, y]
         })
@@ -767,7 +767,7 @@ function e9(e) {
         communicationDisabled: C,
         isActiveChannelOrUnarchivableThread: E,
         isAutomodQuarantined: f
-    }), j = (0, V.S)((n.editedTimestamp ?? n.timestamp).valueOf()), L = (0, Y.A)(t?.id), R = (0, X.A)(n), P = (0, S.P)(n), D = (0, eT.z)(t), k = (0, eI._f)(n.id, n.channel_id), O = (0, T._R)();
+    }), j = (0, V.S)((n.editedTimestamp ?? n.timestamp).valueOf()), L = (0, Y.A)(t?.id), R = (0, X.A)(n), P = (0, S.P)(n), D = (0, eT.z)(t), O = (0, eI._f)(n.id, n.channel_id), k = (0, T._R)();
     return (0, i.jsx)(e7, {
         canSuppressEmbeds: I,
         canDeleteAttachments: v,
@@ -789,8 +789,8 @@ function e9(e) {
         showMaskedLinks: j,
         shouldHideMediaOptions: L,
         enabledContentHarmTypeFlags: P,
-        ctaButtonType: k,
-        shouldAgeVerify: O
+        ctaButtonType: O,
+        shouldAgeVerify: k
     })
 }
 let e2 = e => {
