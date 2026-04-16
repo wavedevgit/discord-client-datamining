@@ -93,6 +93,7 @@ function h(e) {
                             return (0, l.jsx)(d.A, {
                                 userId: t,
                                 guildId: n,
+                                onClose: h,
                                 onNavigate: f,
                                 className: S
                             });

@@ -20,7 +20,10 @@ var r = n(503698),
     I = n(985018),
     N = n(954531);
 
-function h() {
+function h(e) {
+    let {
+        onClose: t
+    } = e;
     return (0, l.jsxs)("div", {
         className: N.wx,
         children: [(0, l.jsxs)("div", {
@@ -32,7 +35,10 @@ function h() {
                 variant: "heading-md/semibold",
                 children: I.intl.string(I.t.cf5lgh)
             })]
-        }), (0, l.jsx)("div", {
+        }), (0, l.jsx)(s.DUT, {
+            onClick: e => {
+                e.stopPropagation(), t()
+            },
             children: (0, l.jsx)(s.e7I, {
                 shortcut: "esc",
                 keyClassName: N.Wb,
@@ -48,26 +54,29 @@ function m(e) {
         guildId: n,
         location: r,
         className: u,
-        onNavigate: I
-    } = e, m = (0, i.bG)([E.default], () => E.default.getUser(t), [t]), S = (0, i.bG)([o.Ay], () => o.Ay.getMember(n, t), [n, t]);
-    return null == m || null == S ? null : (0, l.jsxs)("div", {
+        onClose: I,
+        onNavigate: m
+    } = e, S = (0, i.bG)([E.default], () => E.default.getUser(t), [t]), G = (0, i.bG)([o.Ay], () => o.Ay.getMember(n, t), [n, t]);
+    return null == S || null == G ? null : (0, l.jsxs)("div", {
         className: a()(N.kL, u),
-        children: [(0, l.jsx)(h, {}), (0, l.jsxs)(s.HOs, {
+        children: [(0, l.jsx)(h, {
+            onClose: I
+        }), (0, l.jsxs)(s.HOs, {
             className: N.WH,
             children: [(0, l.jsx)(g.A, {
-                member: S
+                member: G
             }), (0, l.jsx)(T.A, {
                 userId: t,
                 guildId: n
             }), (0, l.jsx)(A.A, {
-                member: S,
-                onNavigate: I
+                member: G,
+                onNavigate: m
             }), (0, l.jsx)(_.A, {
-                member: S
+                member: G
             }), (0, l.jsx)(c.A, {
-                member: S
+                member: G
             }), (0, l.jsx)(d.A, {
-                member: S
+                member: G
             })]
         })]
     })

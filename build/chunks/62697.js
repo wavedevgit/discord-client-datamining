@@ -31,10 +31,15 @@ function E(e) {
                     children: i.intl.string(i.t["13/7kX"])
                 })]
             })
-        }), (0, l.jsx)(r.e7I, {
-            shortcut: "esc",
-            keyClassName: s.Wb,
-            className: s.ti
+        }), (0, l.jsx)(r.DUT, {
+            onClick: e => {
+                e.stopPropagation(), t?.(n)
+            },
+            children: (0, l.jsx)(r.e7I, {
+                shortcut: "esc",
+                keyClassName: s.Wb,
+                className: s.ti
+            })
         })]
     })
 }
