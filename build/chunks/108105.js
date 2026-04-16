@@ -91,65 +91,64 @@ function J(e) {
         shouldShowShopLink: s,
         giftRecipient: i,
         giftingOrigin: r,
-        onClose: o,
-        trackPDPClick: u,
-        analyticsLocations: _
-    } = e, m = t?.id, p = (0, R.b)({
+        trackPDPClick: o,
+        analyticsLocations: u
+    } = e, _ = t?.id, m = (0, R.b)({
         location: "product_details_modal"
-    }), g = (0, c.bG)([y.A], () => null != m ? y.A.getNormalizedSKUEligibility(m) : void 0, [m]), x = (0, U.B)(), b = (0, O.R)({
+    }), p = (0, c.bG)([y.A], () => null != _ ? y.A.getNormalizedSKUEligibility(_) : void 0, [_]), g = (0, U.B)(), x = (0, O.R)({
         location: "product_details_modal"
-    }), v = (0, C.JL)({
+    }), b = (0, C.JL)({
         sku: t,
         priceSetAssignmentPurchaseType: q.lid.DEFAULT
     });
     (0, A.W)({
-        disableFetch: !b
+        disableFetch: !x
     });
-    let E = (0, f.h)(t?.applicationId),
-        j = l.useCallback(() => {
-            null != t && null != n && (u(W.Jq.BUY_BUTTON), (0, D.a)(t, {
+    let v = (0, f.h)(t?.applicationId),
+        E = l.useCallback(() => {
+            null != t && null != n && (o(W.Jq.BUY_BUTTON), (0, D.a)(t, {
                 isGift: !1
             }, {
-                analyticsLocations: [..._, h.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_PURCHASE_BUTTON],
+                analyticsLocations: [...u, h.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_PURCHASE_BUTTON],
                 guildId: n
             }))
-        }, [t, u, n, _]),
-        N = l.useCallback(() => {
+        }, [t, o, n, u]),
+        j = l.useCallback(() => {
             null != n && (0, w.X)({
                 guildId: n
             })
         }, [n]),
-        S = l.useCallback(() => {
-            null != n && (u(W.Jq.VISIT_SHOP), (0, w.default)({
+        N = l.useCallback(() => {
+            null != n && (o(W.Jq.VISIT_SHOP), (0, d.s7G)(), (0, w.default)({
                 guildId: n
-            }), o())
-        }, [n, o, u]),
-        I = l.useCallback(() => {
-            null != t && (u(W.Jq.GIFT_BUTTON), (0, D.a)(t, {
+            }))
+        }, [n, o]),
+        S = l.useCallback(() => {
+            null != t && (o(W.Jq.GIFT_BUTTON), (0, D.a)(t, {
                 isGift: !0,
                 giftRecipient: i,
                 giftingOrigin: r
             }, {
-                analyticsLocations: [..._, h.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_GIFT_BUTTON]
+                analyticsLocations: [...u, h.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_GIFT_BUTTON]
             }))
-        }, [t, u, i, r, _]),
-        k = l.useCallback(() => {
-            if (null == t || null == E || !b) return;
-            u(W.Jq.BUY_WITH_ORBS_BUTTON);
-            let e = [..._, h.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_PURCHASE_BUTTON];
+        }, [t, o, i, r, u]),
+        I = l.useCallback(() => {
+            if (null == t || null == v || !x) return;
+            o(W.Jq.BUY_WITH_ORBS_BUTTON);
+            let e = [...u, h.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_PURCHASE_BUTTON];
             (0, T.B4)({
                 skuId: t.id,
                 applicationId: t.applicationId,
                 onCheckoutSuccess: () => {
                     (0, B.j)(), (0, L.n)({
                         sku: t,
-                        application: E,
+                        application: v,
                         analyticsLocations: e
                     })
                 },
                 analyticsLocations: e
             })
-        }, [t, u, _, E, b]);
+        }, [t, o, u, v, x]);
     return null == t ? null : (0, a.jsxs)("div", {
         className: V.wt,
         children: [t.exclusive && (0, a.jsx)("div", {
@@ -168,31 +167,31 @@ function J(e) {
             })]
         }), (0, a.jsxs)("div", {
             className: V.sj,
-            children: [p && (0, a.jsx)(H.V, {}), (0, a.jsx)($, {
+            children: [m && (0, a.jsx)(H.V, {}), (0, a.jsx)($, {
                 sku: t
             }), null != t.orbsReward && t.orbsReward > 0 && (0, a.jsx)(ee, {
-                timeRemaining: x ?? void 0,
+                timeRemaining: g ?? void 0,
                 text: X.intl.format(X.t.d3njXi, {
                     orbCount: t.orbsReward
                 })
             })]
         }), (0, a.jsxs)("div", {
             className: V.NC,
-            children: [!g && (0, a.jsx)(d.Text, {
+            children: [!p && (0, a.jsx)(d.Text, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
                 children: X.intl.string(X.t.IqlPbQ)
-            }), g && (0, a.jsx)(d.Button, {
+            }), p && (0, a.jsx)(d.Button, {
                 variant: "primary",
-                onClick: j,
+                onClick: E,
                 text: X.intl.string(X.t.boqtTA),
                 fullWidth: !0
-            }), b && g && null != v && (0, a.jsx)(d.Button, {
+            }), x && p && null != b && (0, a.jsx)(d.Button, {
                 icon: d.Cp8,
                 variant: "secondary",
-                onClick: k,
+                onClick: I,
                 text: X.intl.format(X.t.lOtBOI, {
-                    orbPrice: v.amount,
+                    orbPrice: b.amount,
                     orbIconHook: () => (0, a.jsx)(d.Cp8, {
                         size: "xs",
                         color: "currentColor"
@@ -205,14 +204,14 @@ function J(e) {
                 children: [s ? (0, a.jsx)(d.Button, {
                     icon: d.U1X,
                     variant: "secondary",
-                    onMouseDown: N,
-                    onClick: S,
+                    onMouseDown: j,
+                    onClick: N,
                     text: X.intl.string(X.t["2QW9nR"]),
                     fullWidth: !0
                 }) : null, (0, a.jsx)(d.Button, {
                     icon: d.okO,
                     variant: "secondary",
-                    onClick: I,
+                    onClick: S,
                     text: X.intl.string(X.t.QAZA5f),
                     fullWidth: !0
                 })]
@@ -409,7 +408,6 @@ function Z(e) {
                     shouldShowShopLink: !u,
                     giftRecipient: h?.id !== U ? h : void 0,
                     giftingOrigin: h?.id !== U ? f : void 0,
-                    onClose: T,
                     trackPDPClick: et,
                     analyticsLocations: R
                 })]
