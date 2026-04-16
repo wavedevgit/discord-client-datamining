@@ -133,7 +133,7 @@ function v(e) {
     })
 }
 
-function N(e) {
+function I(e) {
     let {
         guildId: t,
         hash: l,
@@ -156,7 +156,7 @@ function N(e) {
     })
 }
 
-function I(e) {
+function N(e) {
     let {
         guildId: t,
         hashes: l,
@@ -166,14 +166,9 @@ function I(e) {
         children: [(0, s.jsx)(r.Text, {
             variant: "text-sm/semibold",
             children: _.intl.string(b.default.dDID2M)
-        }), (0, s.jsx)(r.Text, {
-            variant: "text-xs/normal",
-            color: "text-muted",
-            className: j.u2,
-            children: _.intl.string(b.default["9Xxm0y"])
         }), (0, s.jsx)("div", {
             className: j.si,
-            children: l.slice(0, 9).map(e => (0, s.jsx)(N, {
+            children: l.slice(0, 9).map(e => (0, s.jsx)(I, {
                 guildId: t,
                 hash: e,
                 onSelect: n
@@ -190,7 +185,7 @@ function A(e) {
     } = e, [d, g] = n.useState("HOME"), [h, x] = n.useState(null), {
         recentImageHashes: p,
         isLoading: C
-    } = (0, f.A)(a.guild_id), N = n.useCallback(async e => {
+    } = (0, f.A)(a.guild_id), I = n.useCallback(async e => {
         x(null);
         try {
             await (0, o.Hd)(a.id, e), l()
@@ -206,8 +201,8 @@ function A(e) {
         }
     }, [a.id, l]), k = n.useCallback(e => {
         let t = e.gifSrc ?? e.src ?? e.url;
-        null != t && N(t)
-    }, [N]), S = null != h ? (0, s.jsx)(r.wx6, {
+        null != t && I(t)
+    }, [I]), S = null != h ? (0, s.jsx)(r.wx6, {
         type: "critical",
         children: h
     }) : null;
@@ -222,7 +217,7 @@ function A(e) {
             className: j.n3,
             children: [S, (0, s.jsx)(m.A, {
                 guildId: a.guild_id,
-                onSelect: N
+                onSelect: I
             })]
         })]
     }) : "GIF_PICKER" === d ? (0, s.jsxs)(i.dWK, {
@@ -266,12 +261,12 @@ function A(e) {
             }), C ? (0, s.jsx)("div", {
                 className: j.g4,
                 children: (0, s.jsx)(r.y$y, {})
-            }) : p.length > 0 ? (0, s.jsx)(I, {
+            }) : p.length > 0 ? (0, s.jsx)(N, {
                 guildId: a.guild_id,
                 hashes: p,
                 onSelect: A
             }) : (0, s.jsx)(v, {
-                onSelect: N
+                onSelect: I
             })]
         })
     })
