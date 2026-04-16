@@ -3,9 +3,9 @@ a.d(t, {
     A: () => h
 });
 var n = a(627968),
-    s = a(64700),
-    i = a(284009),
-    l = a.n(i),
+    i = a(64700),
+    s = a(284009),
+    l = a.n(s),
     r = a(311907),
     o = a(827734),
     c = a(421380),
@@ -23,28 +23,28 @@ function h(e) {
     let {
         onComplete: t,
         onClose: a
-    } = e, [i, h] = s.useState(null), [b, x] = s.useState(null), [T, C] = s.useState(!1), j = (0, r.bG)([m.default], () => m.default.getCurrentUser()), D = s.useRef(null);
-    async function I(e) {
-        e.preventDefault(), l()(null != i, "Cannot submit null birthday."), C(!0);
+    } = e, [s, h] = i.useState(null), [b, x] = i.useState(null), [T, g] = i.useState(!1), j = (0, r.bG)([m.default], () => m.default.getCurrentUser()), C = i.useRef(null);
+    async function D(e) {
+        e.preventDefault(), l()(null != s, "Cannot submit null birthday."), g(!0);
         try {
-            await d.n7(i, E.w_.NEW_USER_FLOW), t()
+            await d.n7(s, E.w_.NEW_USER_FLOW), t()
         } catch (e) {
             null != e.body && null != e.body.date_of_birth ? (d.Xv(E.w_.NEW_USER_FLOW), d.$2(E.w_.NEW_USER_FLOW), a()) : e?.body?.username != null ? x(A.intl.string(A.t["TGg/2k"])) : x(e?.body.message)
         }
-        C(!1)
+        g(!1)
     }
-    s.useEffect(() => {
+    i.useEffect(() => {
         null != j && null != j.nsfwAllowed && t()
     }, [j, t]);
-    let g = s.useCallback(e => {
+    let I = i.useCallback(e => {
             h(e)
         }, [h]),
-        y = s.useCallback(() => {
-            D.current?.focus()
-        }, [D]);
+        y = i.useCallback(() => {
+            C.current?.focus()
+        }, [C]);
     return null == j ? null : (0, n.jsxs)("form", {
         className: N.Qs,
-        onSubmit: I,
+        onSubmit: D,
         children: [(0, n.jsx)(_.pVd, {
             size: "custom",
             width: 56,
@@ -70,10 +70,10 @@ function h(e) {
                 wrapperClassName: N.kz,
                 label: A.intl.string(A.t.rhBeKe),
                 name: "birthday",
-                onChange: g,
+                onChange: I,
                 onPopulated: y,
                 error: b,
-                value: i
+                value: s
             })
         }), (0, n.jsx)("div", {
             className: N.qr,
@@ -81,11 +81,11 @@ function h(e) {
                 className: N._o,
                 children: (0, n.jsx)(c.$n, {
                     "data-migration-pending": !0,
-                    buttonRef: D,
+                    buttonRef: C,
                     type: "submit",
                     size: c.$n.Sizes.LARGE,
                     submitting: T,
-                    disabled: null == i,
+                    disabled: null == s,
                     fullWidth: !0,
                     children: A.intl.string(A.t.PDTjLN)
                 })

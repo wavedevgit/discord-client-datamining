@@ -4,8 +4,8 @@ a.d(t, {
 });
 var n = a(627968);
 a(64700);
-var s = a(503698),
-    i = a.n(s),
+var i = a(503698),
+    s = a.n(i),
     l = a(397927),
     r = a(985018),
     o = a(153260);
@@ -25,7 +25,7 @@ function c(e) {
         }), (0, n.jsx)(l.Heading, {
             variant: "heading-lg/bold",
             color: "always-white",
-            className: i()(o.DD, o.VA),
+            className: s()(o.DD, o.VA),
             children: r.intl.string(r.t.xv5g7B)
         }), (0, n.jsx)(l.Button, {
             variant: "overlay-primary",

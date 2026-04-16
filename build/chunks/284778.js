@@ -11,9 +11,9 @@ var l = n(627968),
     u = n(287809),
     c = n(954571),
     d = n(975571),
-    _ = n(955437),
-    p = n(201505),
-    A = n(204925),
+    A = n(955437),
+    _ = n(201505),
+    p = n(204925),
     f = n(652215),
     E = n(315290),
     m = n(985018);
@@ -22,7 +22,7 @@ function T(e) {
     let {
         transitionState: t,
         onClose: n
-    } = e, [T, N] = r.useState(null), [y, g] = r.useState(null), [h, G] = r.useState(!1), S = r.useRef(null), w = (0, i.bG)([u.default], () => u.default.getCurrentUser()), C = r.useRef(null);
+    } = e, [T, g] = r.useState(null), [N, y] = r.useState(null), [h, G] = r.useState(!1), S = r.useRef(null), w = (0, i.bG)([u.default], () => u.default.getCurrentUser()), C = r.useRef(null);
     r.useEffect(() => {
         s.A.flowStep(E.do.ANY, E.Ot.AGE_GATE), c.default.track(f.HAw.OPEN_MODAL, {
             type: "Claim Age Gate"
@@ -34,13 +34,13 @@ function T(e) {
         if (e.preventDefault(), null != T) {
             G(!0);
             try {
-                await _.n7(T, f.JJy.CLAIM_ACCOUNT_MODAL)
+                await A.n7(T, f.JJy.CLAIM_ACCOUNT_MODAL)
             } catch (e) {
-                null != e.body && null != e.body.date_of_birth ? (s.A.flowStep(E.do.ANY, E.Ot.AGE_GATE_UNDERAGE), _.Xv(A.w_.CLAIM_ACCOUNT), _.$2(A.w_.CLAIM_ACCOUNT), n()) : e?.body?.username != null ? g(m.intl.string(m.t["TGg/2k"])) : g(e?.body.message)
+                null != e.body && null != e.body.date_of_birth ? (s.A.flowStep(E.do.ANY, E.Ot.AGE_GATE_UNDERAGE), A.Xv(p.w_.CLAIM_ACCOUNT), A.$2(p.w_.CLAIM_ACCOUNT), n()) : e?.body?.username != null ? y(m.intl.string(m.t["TGg/2k"])) : y(e?.body.message)
             }
             G(!1)
         }
-    }, O = r.useCallback(() => {
+    }, U = r.useCallback(() => {
         C.current?.focus()
     }, [C]);
     return (0, l.jsx)("form", {
@@ -66,14 +66,14 @@ function T(e) {
                     }
                 }
             },
-            children: (0, l.jsx)(p.A, {
+            children: (0, l.jsx)(_.A, {
                 required: !0,
                 autoFocus: !0,
                 label: m.intl.string(m.t.rhBeKe),
                 name: "birthday",
-                onChange: e => N(e),
-                onPopulated: O,
-                error: y,
+                onChange: e => g(e),
+                onPopulated: U,
+                error: N,
                 value: T,
                 ref: S
             })

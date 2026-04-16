@@ -154,8 +154,6 @@ let E = s.forwardRef(function(e, t) {
                             },
                             maxVisibleItems: 6,
                             autoFocus: D === e,
-                            onOpen: () => v?.(`${j}_${t}`),
-                            onClose: () => T?.(`${j}_${t}`),
                             "data-migration-pending": !0
                         })
                     })
@@ -178,8 +176,6 @@ let E = s.forwardRef(function(e, t) {
                             },
                             maxVisibleItems: 6,
                             autoFocus: D === e,
-                            onOpen: () => v?.(`${j}_${t}`),
-                            onClose: () => T?.(`${j}_${t}`),
                             "data-migration-pending": !0
                         })
                     })
@@ -202,8 +198,6 @@ let E = s.forwardRef(function(e, t) {
                             },
                             maxVisibleItems: 6,
                             autoFocus: D === e,
-                            onOpen: () => v?.(`${j}_${t}`),
-                            onClose: () => T?.(`${j}_${t}`),
                             "data-migration-pending": !0
                         })
                     })
@@ -226,6 +220,12 @@ let E = s.forwardRef(function(e, t) {
                     return (0, i.jsx)("div", {
                         tabIndex: t + 1,
                         className: h[n],
+                        onFocus: e => {
+                            e.currentTarget.contains(e.relatedTarget) || v?.(`${j}_${n}`)
+                        },
+                        onBlur: e => {
+                            e.currentTarget.contains(e.relatedTarget) || T?.(`${j}_${n}`)
+                        },
                         children: s
                     }, n)
                 })
