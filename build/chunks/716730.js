@@ -57,8 +57,8 @@ function E(e) {
         mentionCount: T
     })), N > 0 && y.push(g.intl.string(g.t.x5zAGZ));
     let v = (0, a.bG)([_.Ay], () => _.Ay.getFocusedLayout()),
-        j = T > 0 ? T : N,
-        R = j > 0;
+        R = T > 0 ? T : N,
+        j = R > 0;
     return (0, i.jsxs)("div", {
         className: f.iE,
         children: [(0, i.jsx)(d.l, {
@@ -72,9 +72,9 @@ function E(e) {
             themeable: !0,
             className: n,
             ...E
-        }), R ? (0, i.jsx)(o.A, {
+        }), j ? (0, i.jsx)(o.A, {
             hasMentions: T > 0,
-            truncatedCount: j > 99 ? "99+" : j,
+            truncatedCount: R > 99 ? "99+" : R,
             className: f.qS
         }) : null]
     })

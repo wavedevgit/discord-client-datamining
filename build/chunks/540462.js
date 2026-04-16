@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(933958),
     y = n(47294),
     v = n(793574),
-    j = n(58149),
-    R = n(688810),
+    R = n(58149),
+    j = n(688810),
     O = n(139286),
     L = n(587895),
     M = n(235986),
@@ -82,8 +82,8 @@ var i = n(627968),
     eb = n(518530),
     ey = n(681281),
     ev = n(587837),
-    ej = n(675853),
-    eR = n(384059),
+    eR = n(675853),
+    ej = n(384059),
     eO = n(480890),
     eL = n(806931),
     eM = n(652215),
@@ -130,7 +130,7 @@ function ek(e) {
                 direction: h,
                 className: eU.jZ,
                 onClick: () => {
-                    (0, eR.X)(v.A.VOICE_CONTROL_TRAY, eR.O.CHAT, A), r()
+                    (0, ej.X)(v.A.VOICE_CONTROL_TRAY, ej.O.CHAT, A), r()
                 }
             })
         }) : null]
@@ -157,7 +157,7 @@ class ew extends l.PureComponent {
         } = this.props;
         this.currentDocument.addEventListener(eI.Wb, this.handleFullScreenChange), ep.default.track(eM.HAw.VIDEO_LAYOUT_TOGGLED, {
             video_layout: this.inPopout ? "popout" : t,
-            ...(0, j.QS)(e.id)
+            ...(0, R.QS)(e.id)
         })
     }
     componentWillUnmount() {
@@ -410,7 +410,7 @@ class ew extends l.PureComponent {
         })
     };
     handleStayOnTop = e => {
-        (0, eR.X)(v.A.VOICE_CONTROL_TRAY, eR.O.STAY_ON_TOP, e), H.setAlwaysOnTop(eM.MLl.CHANNEL_CALL_POPOUT, e)
+        (0, ej.X)(v.A.VOICE_CONTROL_TRAY, ej.O.STAY_ON_TOP, e), H.setAlwaysOnTop(eM.MLl.CHANNEL_CALL_POPOUT, e)
     };
     handleClosePopout = () => {
         H.close(eM.MLl.CHANNEL_CALL_POPOUT)
@@ -493,10 +493,10 @@ class ew extends l.PureComponent {
                 popoutOpen: this.popoutOpen,
                 className: eU.iq,
                 onOpenPopout: () => {
-                    (0, eR.X)(v.A.VOICE_CONTROL_TRAY, eR.O.POPOUT, !0), this.handleOpenPopout()
+                    (0, ej.X)(v.A.VOICE_CONTROL_TRAY, ej.O.POPOUT, !0), this.handleOpenPopout()
                 },
                 onClosePopout: () => {
-                    (0, eR.X)(v.A.VOICE_CONTROL_TRAY, eR.O.POPOUT, !1), this.handleClosePopout()
+                    (0, ej.X)(v.A.VOICE_CONTROL_TRAY, ej.O.POPOUT, !1), this.handleClosePopout()
                 }
             }) : null, r ? (0, i.jsx)(et.A, {
                 themeable: c,
@@ -504,7 +504,7 @@ class ew extends l.PureComponent {
                 guestWindow: e,
                 className: eU.iq,
                 onClick: () => {
-                    (0, eR.X)(v.A.VOICE_CONTROL_TRAY, eR.O.FULL_SCREEN, this.props.layout !== eM.DUB.FULL_SCREEN), this.handleFullScreen()
+                    (0, ej.X)(v.A.VOICE_CONTROL_TRAY, ej.O.FULL_SCREEN, this.props.layout !== eM.DUB.FULL_SCREEN), this.handleFullScreen()
                 }
             }) : null]
         })
@@ -528,7 +528,7 @@ class ew extends l.PureComponent {
             channel: e,
             callContainerDimensions: t
         } = this.props;
-        return (0, i.jsx)(ej.Ay, {
+        return (0, i.jsx)(eR.Ay, {
             children: (0, i.jsx)(ea.A, {
                 callHeight: t.height,
                 channelId: e.id
@@ -691,7 +691,7 @@ let eB = function(e) {
         ref: g
     } = (0, I.Ay)(), f = (0, V.Us)(), N = (0, G.A)(), S = (0, c.bG)([eA.A], () => (N?.channelId ?? eA.A.getVoiceChannelId()) === t.id), {
         participants: y,
-        filteredParticipants: j,
+        filteredParticipants: R,
         participantsVersion: O,
         mode: L,
         layout: M,
@@ -745,7 +745,7 @@ let eB = function(e) {
     let el = (0, D.mB)(u.M.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK),
         {
             analyticsLocations: es
-        } = (0, R.Ay)(v.A.CHANNEL_CALL),
+        } = (0, j.Ay)(v.A.CHANNEL_CALL),
         ea = o - 550,
         ec = b.Ay.getEmbeddedActivitiesForChannel(t.id),
         {
@@ -763,12 +763,12 @@ let eB = function(e) {
     let {
         theme: ep
     } = (0, A.wRf)();
-    return (0, i.jsx)(R.f5, {
+    return (0, i.jsx)(j.f5, {
         value: es,
         children: (0, i.jsx)(x.A, {
             page: eM.liQ.CHANNEL_CALL,
             children: (0, i.jsx)(eS.qh, {
-                children: (0, i.jsxs)(ej.CB, {
+                children: (0, i.jsxs)(eR.CB, {
                     children: [(0, i.jsx)(ew, {
                         channel: t,
                         guild: K,
@@ -782,7 +782,7 @@ let eB = function(e) {
                         mode: L,
                         inCall: S,
                         participants: y,
-                        filteredParticipants: j,
+                        filteredParticipants: R,
                         participantsVersion: O,
                         layout: M,
                         chatOpen: k,
@@ -810,7 +810,7 @@ let eB = function(e) {
                         canPopout: a,
                         popoutType: r,
                         canUseHaven: e_
-                    }), !t.isPrivate() && (0, i.jsx)(ej.wQ, {}), (0, i.jsx)(eS.WD, {})]
+                    }), !t.isPrivate() && (0, i.jsx)(eR.wQ, {}), (0, i.jsx)(eS.WD, {})]
                 })
             })
         })

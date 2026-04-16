@@ -33,8 +33,8 @@ function b(e) {
             onFullscreenParticipant: b,
             participants: y,
             filteredParticipants: v,
-            popoutType: j,
-            inCall: R,
+            popoutType: R,
+            inCall: j,
             channel: O,
             selectedParticipant: L,
             showParticipants: M = !0,
@@ -179,8 +179,8 @@ function b(e) {
                                     onDoubleClick: b,
                                     onContextMenu: s,
                                     onVideoResize: ef,
-                                    inCall: R,
-                                    popoutType: j,
+                                    inCall: j,
+                                    popoutType: R,
                                     controlsBottom: ec
                                 })
                             }, a) : null
@@ -214,8 +214,8 @@ function b(e) {
                     participants: ex,
                     participantTileWidth: eI,
                     selectedParticipantId: L.id,
-                    inCall: R,
-                    popoutType: j,
+                    inCall: j,
+                    popoutType: R,
                     paused: Y || !M
                 })
             })]

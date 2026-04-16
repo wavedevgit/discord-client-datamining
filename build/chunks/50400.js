@@ -28,21 +28,21 @@ var i = n(627968),
     b = n(652215),
     y = n(985018),
     v = n(355593);
-let j = {
+let R = {
     friction: 28,
     tension: 600
 };
 
-function R(e) {
+function j(e) {
     switch (e) {
         case "height":
         case "opacity":
             return {
-                duration: 150, ...j
+                duration: 150, ...R
             };
         case "scale":
             return {
-                ...j
+                ...R
             };
         default:
             throw Error(`DirectMessage: getSpringConfigs() - Invalid spring ${String(e)}`)
@@ -62,7 +62,7 @@ class O extends l.PureComponent {
             scale: 0,
             height: 0,
             opacity: 0,
-            config: R
+            config: j
         })
     };
     componentWillEnter(e) {
@@ -74,7 +74,7 @@ class O extends l.PureComponent {
             height: 1,
             opacity: 1,
             scale: 1,
-            config: R
+            config: j
         }).start().then(() => this.setState({
             animating: !1
         }))
@@ -88,7 +88,7 @@ class O extends l.PureComponent {
             scale: 1,
             opacity: 1,
             height: 1,
-            config: R
+            config: j
         }).start().then(e)
     }
     componentWillLeave(e) {
@@ -102,7 +102,7 @@ class O extends l.PureComponent {
             height: 0,
             opacity: 0,
             scale: 0,
-            config: R
+            config: j
         }).start().then(e))
     }
     componentWillUnmount() {
@@ -243,7 +243,7 @@ let L = l.forwardRef(function(e, t) {
         y = !1,
         v = !1;
     (N || E) && (y = h === b._Of.VOICE, v = h === b._Of.VIDEO);
-    let j = (0, o.rdh)(o.LU0.modules.guildbar.AVATAR_SIZE);
+    let R = (0, o.rdh)(o.LU0.modules.guildbar.AVATAR_SIZE);
     return (0, i.jsx)(O, {
         ...e,
         ref: t,
@@ -257,7 +257,7 @@ let L = l.forwardRef(function(e, t) {
         isCurrentUserInThisDMCall: N,
         isIncomingCall: T,
         isOngoingCall: S,
-        size: j,
+        size: R,
         treeItemProps: s
     })
 })

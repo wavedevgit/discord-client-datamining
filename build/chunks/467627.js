@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(932001),
     y = n(93055),
     v = n(832275),
-    j = n(730253),
-    R = n(633965),
+    R = n(730253),
+    j = n(633965),
     O = n(857071),
     L = n(851109),
     M = n(397938),
@@ -77,7 +77,7 @@ class ec {
     timeout = new m.Ep;
     observer;
     constructor(e, t, n, i, l) {
-        this.guildsTree = e, this.setScrolling = t, this.setIsScrolledToBottom = n, this.onScroll = i, this.sizes = l, (0, R.u9)(this.getVisibleGuildIds)
+        this.guildsTree = e, this.setScrolling = t, this.setIsScrolledToBottom = n, this.onScroll = i, this.sizes = l, (0, j.u9)(this.getVisibleGuildIds)
     }
     setResizeObserver = () => {
         let e = this.scrollerRef.current?.getScrollerNode();
@@ -192,7 +192,7 @@ function eu(e) {
             location: "GuildsBar"
         });
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(Q.C, {}), N === L.RK.SERVER_RAIL_TOP && (0, i.jsx)(M.A, {}), a ? (0, i.jsx)(j.A, {
+        children: [(0, i.jsx)(Q.C, {}), N === L.RK.SERVER_RAIL_TOP && (0, i.jsx)(M.A, {}), a ? (0, i.jsx)(R.A, {
             shouldShowIntroPopover: f,
             markIntroPopoverAsDismissed: _
         }) : null, !t && (0, i.jsx)(z.A, {}), C.map(e => (0, i.jsx)(el.A, {
@@ -244,8 +244,8 @@ function eA(e) {
         isSorting: g,
         startSorting: E,
         stopSorting: I
-    } = (0, F.A)(), S = l.useRef(!1), [b] = l.useState(() => new m.Ep), y = l.useRef(null), j = l.useRef(null), {
-        ref: R,
+    } = (0, F.A)(), S = l.useRef(!1), [b] = l.useState(() => new m.Ep), y = l.useRef(null), R = l.useRef(null), {
+        ref: j,
         ...G
     } = (0, c.$y)(), P = (0, f.R7z)(), [w, B] = l.useState(!1), z = (0, f.rdh)(p.A.modules.guildbar.AVATAR_SIZE), q = (0, f.rdh)(p.A.space.SPACE_XS), X = (0, v.A)("GuildsBar"), {
         pathname: $
@@ -263,14 +263,14 @@ function eA(e) {
             bottomInset: 16
         });
         return new ec(o, B, es.tEg, () => {
-            y.current?.calculateState(), j.current?.calculateState()
+            y.current?.calculateState(), R.current?.calculateState()
         }, n)
     }, [z, q, o, ee]);
     l.useEffect(() => (ei.setResizeObserver(), () => {
         ei.clearResizeObserver()
     }), [ei]), l.useEffect(() => {
         let e = () => {
-            y.current?.calculateState(), j.current?.calculateState()
+            y.current?.calculateState(), R.current?.calculateState()
         };
         return k.default.addChangeListener(e), () => k.default.removeChangeListener(e)
     }, []);
@@ -359,7 +359,7 @@ function eA(e) {
                     className: er.Xl,
                     barClassName: er.Sh
                 }), (0, i.jsx)("ul", {
-                    ref: R,
+                    ref: j,
                     ...G,
                     ...P,
                     role: "tree",
@@ -396,7 +396,7 @@ function eA(e) {
                     })
                 }), (0, i.jsx)(Y.A, {
                     reverse: !0,
-                    ref: j,
+                    ref: R,
                     isVisible: ei.isItemVisible,
                     onJumpTo: ei.handleJumpToGuild,
                     className: a()(er.LZ, {

@@ -21,8 +21,8 @@ var n = t(627968),
     C = t(697474),
     j = t(378058),
     p = t(486020),
-    I = t(405269),
-    E = t(403362),
+    E = t(405269),
+    I = t(403362),
     v = t(860227),
     M = t(291812),
     S = t(943220),
@@ -78,8 +78,8 @@ function O(e, s, t, a, l, r) {
     let o, m, u, A, C = (0, g.A)(e),
         {
             trailingIconClass: p,
-            leadingIconClass: I,
-            iconSize: E
+            leadingIconClass: E,
+            iconSize: I
         } = r,
         v = null == s || "" === s || Array.isArray(s) && 0 === s.length,
         S = (0, j.o6)(C).length > 0,
@@ -89,9 +89,9 @@ function O(e, s, t, a, l, r) {
         D = C.type === f.lAJ.POLL_RESULT;
     return (0, h.A)(e) && (A = (0, n.jsx)(x.A, {
         size: "custom",
-        className: I,
-        width: E,
-        height: E
+        className: E,
+        width: I,
+        height: I
     })), t ? o = k.intl.string(k.t.XAkOo2) : a ? o = k.intl.string(k.t["G7p6v/"]) : C.type === f.lAJ.CHANNEL_PINNED_MESSAGE ? o = k.intl.string(k.t.sCfDDl) : C.type === f.lAJ.EMOJI_ADDED ? m = (0, n.jsx)(d.HN, {
         message: C,
         rendered: s
@@ -102,8 +102,8 @@ function O(e, s, t, a, l, r) {
         size: "custom",
         color: "currentColor",
         className: p,
-        width: E,
-        height: E
+        width: I,
+        height: I
     })) : m = (0, n.jsx)(M.Ay, {
         message: C,
         content: s,
@@ -113,26 +113,26 @@ function O(e, s, t, a, l, r) {
         size: "custom",
         color: "currentColor",
         className: p,
-        width: E,
-        height: E
+        width: I,
+        height: I
     }) : T ? u = (0, n.jsx)(c.kC9, {
         size: "custom",
         color: "currentColor",
         className: p,
-        width: E,
-        height: E
+        width: I,
+        height: I
     }) : _ ? u = (0, n.jsx)(c.cNw, {
         size: "custom",
         color: "currentColor",
         className: p,
-        width: 19 / 24 * E,
-        height: E
+        width: 19 / 24 * I,
+        height: I
     }) : (C.attachments.length > 0 || C.embeds.length > 0) && !D && (u = (0, n.jsx)(c.xfq, {
         size: "custom",
         color: "currentColor",
         className: p,
-        width: E,
-        height: E
+        width: I,
+        height: I
     })), {
         contentPlaceholder: o,
         renderedContent: m,
@@ -167,7 +167,7 @@ function P(e) {
                 onPopoutRequestClose: C
             } = e, {
                 analyticsLocations: j
-            } = (0, u.Ay)(m.A.AVATAR), I = a.useRef(null);
+            } = (0, u.Ay)(m.A.AVATAR), E = a.useRef(null);
             if (o || l.state !== A.a.LOADED || d) return t === f.lAJ.CONTEXT_MENU_COMMAND ? (0, n.jsx)("div", {
                 className: L.Do,
                 children: (0, n.jsx)(c.oyn, {
@@ -193,7 +193,7 @@ function P(e) {
                 height: _.eJ,
                 size: "custom"
             });
-            let E = () => {
+            let I = () => {
                 var e, s;
                 return e = l.message.author, s = r.guild_id, (0, n.jsx)("img", {
                     alt: "",
@@ -208,22 +208,22 @@ function P(e) {
                         [L.mf]: !0,
                         [L.vk]: null != x
                     }),
-                    ref: I
+                    ref: E
                 })
             };
             return null != s && null != g ? (0, n.jsx)(u.f5, {
                 value: j,
                 children: (0, n.jsx)(c.YNO, {
-                    targetElementRef: I,
+                    targetElementRef: E,
                     renderPopout: s,
                     shouldShow: g,
                     position: "right",
                     onRequestClose: C,
-                    children: E
+                    children: I
                 })
             }) : (0, n.jsx)(u.f5, {
                 value: j,
-                children: E()
+                children: I()
             })
         }(e, M, r.type),
         U = function(e, s) {
@@ -304,10 +304,10 @@ function P(e) {
                         })
                     });
                 default:
-                    (0, E.xb)(l)
+                    (0, I.xb)(l)
             }
         }(e, N, R),
-        b = a.useMemo(() => e.compact ? (0, T.A)((0, I.i$)(o()(), "LT")) : null, [e.compact]);
+        b = a.useMemo(() => e.compact ? (0, T.A)((0, E.i$)(o()(), "LT")) : null, [e.compact]);
     null != t && null != l && (s = k.intl.formatToPlainString(k.t.RhbQ2K, {
         author: l?.nick,
         repliedAuthor: t?.nick

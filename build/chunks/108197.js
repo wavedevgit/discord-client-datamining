@@ -1,6 +1,6 @@
 /** chunk id: 108197 params = (module,exports,require) **/
 n.d(t, {
-    A: () => j
+    A: () => R
 });
 var i = n(627968),
     l = n(64700),
@@ -94,13 +94,13 @@ function v(e) {
             })
     }
 }
-let j = l.memo(function(e) {
+let R = l.memo(function(e) {
     let {
         thread: t,
         isSelectedChannel: s,
         isSelectedVoice: y,
-        isLast: j,
-        withGuildIcon: R
+        isLast: R,
+        withGuildIcon: j
     } = e, O = (0, o.bG)([f.Ay], () => f.Ay.getVoiceStatesForChannel(t), [t]), L = (0, o.bG)([g.A], () => g.A.hasVideo(t.id)), {
         unread: M,
         mentionCount: D,
@@ -141,9 +141,9 @@ let j = l.memo(function(e) {
             [S.wH]: s
         }),
         children: [(0, i.jsx)(v, {
-            withGuildIcon: R
-        }), j ? null : (0, i.jsx)(v, {
-            withGuildIcon: R,
+            withGuildIcon: j
+        }), R ? null : (0, i.jsx)(v, {
+            withGuildIcon: j,
             inverted: !0,
             style: {
                 transform: "rotateX(180deg) translateY(-9px)"
@@ -161,7 +161,7 @@ let j = l.memo(function(e) {
                     [b.J1]: s,
                     [b.F4]: !s && G,
                     [b.V2]: !G && !s && M,
-                    [b.lY]: R
+                    [b.lY]: j
                 }),
                 onMouseDown: k,
                 onContextMenu: w,

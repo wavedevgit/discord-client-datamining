@@ -2,8 +2,8 @@
 l.d(n, {
     A: () => u
 });
-var i = l(627968),
-    t = l(64700),
+var t = l(627968),
+    i = l(64700),
     s = l(317097),
     a = l(397927),
     r = l(930349),
@@ -17,10 +17,10 @@ function c(e) {
         disabled: r,
         ariaLabel: o,
         onSelect: c
-    } = e, u = t.useRef(null), m = (0, s.Hl)(n);
-    return (0, i.jsx)(a.YNO, {
+    } = e, u = i.useRef(null), m = (0, s.Hl)(n);
+    return (0, t.jsx)(a.YNO, {
         targetElementRef: u,
-        renderPopout: e => (0, i.jsx)(a.VNw, {
+        renderPopout: e => (0, t.jsx)(a.VNw, {
             ...e,
             value: n,
             onChange: c,
@@ -32,7 +32,7 @@ function c(e) {
                 onClick: n,
                 ...l
             } = e;
-            return (0, i.jsx)(a.DUT, {
+            return (0, t.jsx)(a.DUT, {
                 ...l,
                 innerRef: u,
                 className: d.Dh,
@@ -40,7 +40,7 @@ function c(e) {
                 "aria-label": o,
                 "aria-disabled": r,
                 tabIndex: r ? -1 : 0,
-                children: (0, i.jsx)("div", {
+                children: (0, t.jsx)("div", {
                     className: d.Hy,
                     style: {
                         backgroundColor: m
@@ -55,30 +55,30 @@ function u(e) {
     let {
         primaryColor: n,
         secondaryColor: l,
-        onSelectPrimaryColor: t,
+        onSelectPrimaryColor: i,
         onSelectSecondaryColor: a,
         suggestedColors: u,
         disabled: m = !1
-    } = e, p = (0, s.Hl)(n), x = (0, s.Hl)(l), A = `linear-gradient(to bottom, ${p}, ${x})`, g = o.intl.formatToPlainString(o.t.FquTfm, {
+    } = e, p = (0, s.Hl)(n), A = (0, s.Hl)(l), x = `linear-gradient(to bottom, ${p}, ${A})`, g = o.intl.formatToPlainString(o.t.FquTfm, {
         colorLabel: p
     }), f = o.intl.formatToPlainString(o.t.xOnm4z, {
-        colorLabel: x
+        colorLabel: A
     });
-    return (0, i.jsx)(r.Yt, {
+    return (0, t.jsx)(r.Yt, {
         variant: "square",
         disabled: m,
-        children: (0, i.jsxs)("div", {
+        children: (0, t.jsxs)("div", {
             className: d.D7,
             style: {
-                background: A
+                background: x
             },
-            children: [(0, i.jsx)(c, {
+            children: [(0, t.jsx)(c, {
                 color: n,
                 suggestedColors: u,
                 ariaLabel: g,
-                onSelect: t,
+                onSelect: i,
                 disabled: m
-            }), (0, i.jsx)(c, {
+            }), (0, t.jsx)(c, {
                 color: l,
                 suggestedColors: u,
                 ariaLabel: f,

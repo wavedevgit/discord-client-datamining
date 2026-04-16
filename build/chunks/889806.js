@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(696451),
     y = n(71393),
     v = n(576705),
-    j = n(383501),
-    R = n(222823),
+    R = n(383501),
+    j = n(222823),
     O = n(994500),
     L = n(543465),
     M = n(287809),
@@ -199,9 +199,9 @@ class H extends U.Ay {
             enableActivities: b,
             showMenuItemPopover: y,
             markMenuItemPopoverAsDismissed: v,
-            channelItemRef: j,
-            isSuggestedSection: R
-        } = this.props, L = j ?? this.channelItemRef, D = !y && o, U = !y && b && null != T && T.length > 0, G = (0, f.M)(I), k = (0, i.jsxs)("li", {
+            channelItemRef: R,
+            isSuggestedSection: j
+        } = this.props, L = R ?? this.channelItemRef, D = !y && o, U = !y && b && null != T && T.length > 0, G = (0, f.M)(I), k = (0, i.jsxs)("li", {
             className: a()(this.getClassName(), {
                 [V.r9]: this.isDisabled(),
                 [V.wH]: n
@@ -234,7 +234,7 @@ class H extends U.Ay {
                     isFavoriteSuggestion: x,
                     channelTypeOverride: C ? w.rbe.GUILD_TEXT : void 0,
                     resolvedUnreadSetting: S,
-                    transitionExtras: R ? {
+                    transitionExtras: j ? {
                         source: N.A.CHANNEL_LIST_SUGGESTED_SECTION
                     } : void 0,
                     "aria-label": (0, p.Ay)({
@@ -270,10 +270,10 @@ function W(e) {
     } = e, {
         hasActiveThreads: u,
         hasMoreActiveThreads: h
-    } = (0, T.NR)(t), p = (0, o.cf)([R.Ay], () => ({
-        unread: R.Ay.hasUnread(t.id),
-        ackMessageId: R.Ay.ackMessageId(t.id),
-        isLowImportanceMention: R.Ay.getIsMentionLowImportance(t.id)
+    } = (0, T.NR)(t), p = (0, o.cf)([j.Ay], () => ({
+        unread: j.Ay.hasUnread(t.id),
+        ackMessageId: j.Ay.ackMessageId(t.id),
+        isLowImportanceMention: j.Ay.getIsMentionLowImportance(t.id)
     })), g = (0, o.bG)([L.Ay], () => L.Ay.resolveUnreadSetting(t)), f = (0, o.cf)([S.A, v.A], () => {
         let e = S.A.getChannel(t.parent_id);
         return {
@@ -305,7 +305,7 @@ function W(e) {
         channelType: t.type,
         isPopoverAllowed: n.id !== B.Vc
     });
-    return (0, o.bG)([j.A, b.Ay], () => j.A.getChannelId() !== t.id && b.Ay.isCurrentUserGuest(t.getGuildId())) ? null : (0, i.jsx)(F, {
+    return (0, o.bG)([R.A, b.Ay], () => R.A.getChannelId() !== t.id && b.Ay.isCurrentUserGuest(t.getGuildId())) ? null : (0, i.jsx)(F, {
         ...p,
         ...f,
         ...e,

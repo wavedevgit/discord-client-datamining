@@ -29,8 +29,8 @@ var l = n(503698),
     b = n(724759),
     y = n(123973),
     v = n(241756),
-    j = n(313961),
-    R = n(532622),
+    R = n(313961),
+    j = n(532622),
     O = n(546871),
     L = n(416528),
     M = n(136523),
@@ -131,14 +131,14 @@ function B(e) {
         location: "channel_call_header_toolbar"
     }), {
         focusedParticipant: f
-    } = (0, a.cf)([j.A], () => ({
-        focusedParticipant: j.A.getSelectedParticipant(t.id),
-        participantsOpen: j.A.getParticipantsOpen(t.id)
+    } = (0, a.cf)([R.A], () => ({
+        focusedParticipant: R.A.getSelectedParticipant(t.id),
+        participantsOpen: R.A.getParticipantsOpen(t.id)
     }), [t.id]), I = (0, A.Ay)(t), y = (0, _.gU)(t), [v] = (0, u.A)(f?.type === D.lp.ACTIVITY ? [f.applicationId] : []), O = U.intl.string(U.t.BVZqJl);
     t.isDM() ? O = U.intl.string(U.t.jN2DfZ) : t.isGroupDM() && (O = U.intl.string(U.t["e5y+gm"]));
     let k = (0, a.bG)([h.A], () => h.A.getChannelStatus(t)),
         B = t.isGuildVoice() && c && null != k && k.length > 0,
-        V = (0, R.Ay)(t),
+        V = (0, j.Ay)(t),
         H = B ? (0, i.jsx)(r.m, {
             asContainer: !0,
             text: U.intl.string(U.t.Mgpxiw),

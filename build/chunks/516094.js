@@ -319,22 +319,22 @@ let M = function(e) {
         pause: M,
         subscribe: D,
         seek: O
-    } = (0, C.T)(), P = c(), U = a.useRef(null), [G, V] = a.useState(!1), [H, z] = a.useState(null), $ = a.useRef(null), _ = a.useRef(null), [K, B] = a.useState(!1), [F, Y] = a.useState(null);
+    } = (0, C.T)(), P = c(), U = a.useRef(null), [G, V] = a.useState(!1), [z, H] = a.useState(null), $ = a.useRef(null), _ = a.useRef(null), [K, B] = a.useState(!1), [F, X] = a.useState(null);
     a.useEffect(() => D({
         onPlay: () => {
-            z(null), B(!1)
+            H(null), B(!1)
         }
     }), [D]);
     let {
-        ref: X,
+        ref: Y,
         width: Q = 0,
         height: q = 0
     } = (0, h.Ay)(), W = (0, d.bG)([f.A], () => f.A.windowSize());
     a.useMemo(() => {
         W.width, W.height;
-        let e = X.current;
-        null != e && Y(e.getBoundingClientRect())
-    }, [W.width, W.height, Q, X, o]);
+        let e = Y.current;
+        null != e && X(e.getBoundingClientRect())
+    }, [W.width, W.height, Q, Y, o]);
     let Z = a.useRef(null),
         J = a.useRef({}),
         ee = a.useCallback((e, t) => {
@@ -342,9 +342,9 @@ let M = function(e) {
             if (null == F) return null;
             let l = ((0, r.clamp)(e, F.left, F.right) - F.left) / F.width * m,
                 n = (0, r.clamp)(l, 0, m),
-                a = H;
-            null == a && t && (a = n <= g ? "start" : n >= v ? "end" : "playhead", x && (M(), B(!0)), z(a)), "start" === a ? S(n) : "end" === a ? w(n) : "playhead" === a && O((0, r.clamp)(n, g, v))
-        }, [m, F, H, g, v, x, M, S, w, O]),
+                a = z;
+            null == a && t && (a = n <= g ? "start" : n >= v ? "end" : "playhead", x && (M(), B(!0)), H(a)), "start" === a ? S(n) : "end" === a ? w(n) : "playhead" === a && O((0, r.clamp)(n, g, v))
+        }, [m, F, z, g, v, x, M, S, w, O]),
         et = a.useCallback(e => {
             if (null == m) return;
             let t = (0, b.A)(m, e.shiftKey),
@@ -378,13 +378,13 @@ let M = function(e) {
             ee(e.clientX, !1)
         }, [ee]),
         ei = a.useCallback(() => {
-            K && L(), B(!1), z(null)
+            K && L(), B(!1), H(null)
         }, [K, L]);
     a.useEffect(() => (document.addEventListener("mousemove", ea), document.addEventListener("mouseup", ei), () => {
         document.removeEventListener("mousemove", ea), document.removeEventListener("mouseup", ei)
     }), [ea, ei]), a.useEffect(() => {
         !async function() {
-            let e = X.current,
+            let e = Y.current,
                 t = U.current;
             if (null == e || null == t || !G) return;
             e.height = q, e.width = Q;
@@ -413,7 +413,7 @@ let M = function(e) {
                 }, t.currentTime = n / Q * m * e
             })
         }()
-    }, [Q, q, X, m, Z, G]);
+    }, [Q, q, Y, m, Z, G]);
     let es = P - g,
         er = a.useCallback(() => {
             O(Math.max(g, P - 10))
@@ -485,7 +485,7 @@ let M = function(e) {
                 className: E.PH,
                 children: (0, n.jsxs)("div", {
                     className: s()(E.IO, {
-                        [E.Dg]: null != H
+                        [E.Dg]: null != z
                     }),
                     onMouseDown: en,
                     children: [(0, n.jsx)("canvas", {
@@ -493,7 +493,7 @@ let M = function(e) {
                         ref: Z
                     }), (0, n.jsx)("canvas", {
                         className: E.Ay,
-                        ref: X
+                        ref: Y
                     }), (0, n.jsx)(u.vN3, {
                         children: (0, n.jsx)("div", {
                             tabIndex: 0,
@@ -519,7 +519,7 @@ let M = function(e) {
                         children: [(0, n.jsx)(u.vN3, {
                             children: (0, n.jsx)("button", {
                                 className: s()(E.uI, {
-                                    [E.cB]: "start" === H
+                                    [E.cB]: "start" === z
                                 }),
                                 onMouseDown: en,
                                 onKeyDown: et,
@@ -537,7 +537,7 @@ let M = function(e) {
                         }), (0, n.jsx)(u.vN3, {
                             children: (0, n.jsx)("button", {
                                 className: s()(E.H1, {
-                                    [E.cB]: "end" === H
+                                    [E.cB]: "end" === z
                                 }),
                                 onMouseDown: en,
                                 onKeyDown: el,

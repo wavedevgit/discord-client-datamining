@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(342296),
     y = n(616356),
     v = n(696451),
-    j = n(317525),
-    R = n(290863),
+    R = n(317525),
+    j = n(290863),
     O = n(461213),
     L = n(741961),
     M = n(287809),
@@ -52,7 +52,7 @@ let K = w.Ay.getEnableHardwareAcceleration(),
             sectionId: s,
             userId: a,
             guildOwnerId: r
-        } = e, o = l.useRef(null), c = (0, h.bG)([L.A], () => L.A.isTyping(t.id, a)), A = (0, h.bG)([v.Ay], () => v.Ay.getMember(t.guild_id, a)), p = (0, h.bG)([j.A], () => A?.colorRoleId != null ? j.A.getRole(t.guild_id, A.colorRoleId)?.name : void 0, [t.guild_id, A]), g = (0, h.bG)([M.default], () => M.default.getUser(a)), f = (0, h.bG)([M.default], () => M.default.getCurrentUser()), x = g?.id === f?.id, C = (0, h.bG)([R.A, O.A], () => x ? O.A.getStatus() : R.A.getStatus(a, t.guild_id)), N = (0, h.bG)([R.A], () => R.A.isMobileOnline(a)), T = (0, h.yK)([R.A, O.A], () => x ? O.A.getActivities() : R.A.getActivities(a, t.guild_id)), D = (0, h.bG)([y.A], () => y.A.getAnyStreamForUser(a)), U = (0, d.rm)(a), P = (0, h.bG)([S.A], () => S.A.canUserViewChannel(t.id, s, a)), w = g?.id != null && g.id === r, F = l.useCallback(e => {
+        } = e, o = l.useRef(null), c = (0, h.bG)([L.A], () => L.A.isTyping(t.id, a)), A = (0, h.bG)([v.Ay], () => v.Ay.getMember(t.guild_id, a)), p = (0, h.bG)([R.A], () => A?.colorRoleId != null ? R.A.getRole(t.guild_id, A.colorRoleId)?.name : void 0, [t.guild_id, A]), g = (0, h.bG)([M.default], () => M.default.getUser(a)), f = (0, h.bG)([M.default], () => M.default.getCurrentUser()), x = g?.id === f?.id, C = (0, h.bG)([j.A, O.A], () => x ? O.A.getStatus() : j.A.getStatus(a, t.guild_id)), N = (0, h.bG)([j.A], () => j.A.isMobileOnline(a)), T = (0, h.yK)([j.A, O.A], () => x ? O.A.getActivities() : j.A.getActivities(a, t.guild_id)), D = (0, h.bG)([y.A], () => y.A.getAnyStreamForUser(a)), U = (0, d.rm)(a), P = (0, h.bG)([S.A], () => S.A.canUserViewChannel(t.id, s, a)), w = g?.id != null && g.id === r, F = l.useCallback(e => {
             null != g && (0, _.L3)(e, async () => {
                 let {
                     default: e
@@ -259,8 +259,8 @@ function $(e) {
         }, [E.guild_id, E.id, E.type]), v) return (0, i.jsx)(J, {
         channel: E
     });
-    let j = o().omit(b.containerProps, ["ref"]),
-        R = P.wT(x);
+    let R = o().omit(b.containerProps, ["ref"]),
+        j = P.wT(x);
     return (0, i.jsx)(f.f5, {
         value: C,
         children: (0, i.jsx)(d.hD, {
@@ -297,7 +297,7 @@ function $(e) {
                                 channel: E,
                                 sectionId: s,
                                 userId: l[n],
-                                guildOwnerId: R
+                                guildOwnerId: j
                             }, l[n])
                         },
                         footerHeight: e => 80 * (N[e] === S && E.type === V.rbe.PRIVATE_THREAD),
@@ -308,7 +308,7 @@ function $(e) {
                         innerTag: "ul",
                         sections: N.map(e => e.userIds.length),
                         fade: !0,
-                        ...j,
+                        ...R,
                         ...e
                     }, I)
                 })

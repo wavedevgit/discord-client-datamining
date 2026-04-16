@@ -29,8 +29,8 @@ var i = n(627968),
     b = n(397400),
     y = n(488803),
     v = n(44621),
-    j = n(823748),
-    R = n(997692),
+    R = n(823748),
+    j = n(997692),
     O = n(201805),
     L = n(453774),
     M = n(44724),
@@ -76,7 +76,7 @@ let Y = l.memo(function(e) {
             enabled: ea
         } = v._.useConfig({
             location: "activity-panel"
-        }), er = (0, j.Bp)("activity-panel"), eo = (0, y.C$)(r ?? void 0, "activity-panel"), ed = (0, o.bG)([G.A], () => G.A.hasConsented(B.YAq.PERSONALIZATION)), ec = (0, j.TF)(g?.id, {
+        }), er = (0, R.Bp)("activity-panel"), eo = (0, y.C$)(r ?? void 0, "activity-panel"), ed = (0, o.bG)([G.A], () => G.A.hasConsented(B.YAq.PERSONALIZATION)), ec = (0, R.TF)(g?.id, {
             shouldFetch: er || eo
         }), eu = ea && ed && ec, eh = eu && er, eA = eu && eo, e_ = l.useCallback(() => {
             a()(null != M, "Received null activity"), k.default.track(B.HAw.ACTIVITY_PANEL_BUTTON_CLICKED, {
@@ -160,7 +160,7 @@ let Y = l.memo(function(e) {
                         markAsDismissed: n,
                         markBadgeAsDismissed: l
                     } = e;
-                    return (0, i.jsx)(R.C, {
+                    return (0, i.jsx)(j.C, {
                         gameName: eE,
                         runningGameId: g?.id,
                         targetElementRef: t,
@@ -185,7 +185,7 @@ let Y = l.memo(function(e) {
                         markAsDismissed: n,
                         markBadgeAsDismissed: l
                     } = e;
-                    return (0, i.jsx)(R.D, {
+                    return (0, i.jsx)(j.D, {
                         gameName: eE,
                         runningGameId: g?.id,
                         targetElementRef: t,
@@ -222,12 +222,12 @@ let Y = l.memo(function(e) {
                 onClick: e_,
                 icon: u.DpX
             }) : null,
-            ej = null == C ? null : (0, i.jsx)(w.A, {
+            eR = null == C ? null : (0, i.jsx)(w.A, {
                 tooltipText: H.intl.string(H.t["R/FK4A"]),
                 onClick: em(C.applicationId, C.location),
                 icon: u.oLl
             }),
-            eR = null == O ? null : (0, i.jsx)(w.A, {
+            ej = null == O ? null : (0, i.jsx)(w.A, {
                 tooltipText: H.intl.string(H.t["R/FK4A"]),
                 onClick: ep(O.applicationId),
                 icon: u.oLl
@@ -259,9 +259,9 @@ let Y = l.memo(function(e) {
                     eT(!1), null != eC.current && (clearTimeout(eC.current), eC.current = null)
                 }
             });
-        return null == ey && null == ev && null == ej && null == eR && null == eL && null == eS && null == eb ? null : (0, i.jsxs)("div", {
+        return null == ey && null == ev && null == eR && null == ej && null == eL && null == eS && null == eb ? null : (0, i.jsxs)("div", {
             className: W.o1,
-            children: [eS ?? eL ?? ev, eb, ey, ej ?? eR ?? eO, eM]
+            children: [eS ?? eL ?? ev, eb, ey, eR ?? ej ?? eO, eM]
         })
     }),
     z = l.forwardRef(function(e, t) {

@@ -6,8 +6,8 @@ var i = t(627968),
     a = t(64700),
     l = t(397927),
     r = t(163126),
-    s = t(688810),
-    d = t(183555),
+    d = t(688810),
+    s = t(183555),
     o = t(913453),
     c = t(229187),
     u = t(657331),
@@ -22,22 +22,22 @@ function g(e) {
         channelId: g,
         onClose: f
     } = e, {
-        mutualFriends: m
+        mutualFriends: h
     } = (0, o.A)(n), {
-        analyticsLocations: h
-    } = (0, s.Ay)(), {
+        analyticsLocations: m
+    } = (0, d.Ay)(), {
         context: x,
         trackUserProfileAction: I
-    } = (0, d.NJ)(), b = (0, r.A)();
+    } = (0, s.NJ)(), b = (0, r.A)();
     return a.useEffect(() => {
         (0, c.A)(n.id, b)
     }, [n.id, b]), (0, i.jsx)(l.IpV, {
         className: A.DK,
         fade: !0,
-        children: null == m ? (0, i.jsx)("div", {
+        children: null == h ? (0, i.jsx)("div", {
             className: A.Ie,
             children: (0, i.jsx)(l.y$y, {})
-        }) : 0 === m.length ? (0, i.jsxs)("div", {
+        }) : 0 === h.length ? (0, i.jsxs)("div", {
             className: A.Ie,
             children: [(0, i.jsx)("div", {
                 className: A.on
@@ -45,7 +45,7 @@ function g(e) {
                 className: A.BI,
                 children: p.intl.string(p.t["/5p4gx"])
             })]
-        }) : m.map(e => {
+        }) : h.map(e => {
             let {
                 key: n,
                 user: a,
@@ -63,7 +63,7 @@ function g(e) {
                     }), e = a.id, (0, u.openUserProfileModal)({
                         ...x,
                         userId: e,
-                        sourceAnalyticsLocations: h
+                        sourceAnalyticsLocations: m
                     })
                 }
             }, n)

@@ -7,8 +7,8 @@ t(64700);
 var a = t(311907),
     l = t(397927),
     r = t(517164),
-    s = t(290863),
-    d = t(461213),
+    d = t(290863),
+    s = t(461213),
     o = t(975571),
     c = t(622543),
     u = t(146655),
@@ -17,8 +17,8 @@ var a = t(311907),
     A = t(837924),
     g = t(558628),
     f = t(842241),
-    m = t(282797),
-    h = t(518477),
+    h = t(282797),
+    m = t(518477),
     x = t(652215),
     I = t(985018),
     b = t(575877),
@@ -33,17 +33,17 @@ function E(e) {
     } = e, {
         live: y,
         recent: T,
-        stream: N
+        stream: S
     } = (0, u.A)(n.id), {
-        voiceChannel: S,
+        voiceChannel: N,
         voiceActivity: C
     } = (0, _.A)({
         userId: n.id,
         guildId: E
-    }), R = (0, a.bG)([r.A], () => r.A.isFetchingUserOutbox(n.id)), P = n.id === t.id, L = (0, a.bG)([d.A, s.A], () => {
-        let e = P ? d.A.getStatus() : s.A.getStatus(n.id);
+    }), R = (0, a.bG)([r.A], () => r.A.isFetchingUserOutbox(n.id)), P = n.id === t.id, L = (0, a.bG)([s.A, d.A], () => {
+        let e = P ? s.A.getStatus() : d.A.getStatus(n.id);
         return e === l.clD.OFFLINE || e === l.clD.INVISIBLE
-    }), O = (0, a.bG)([c.A], () => c.A.getUserProfile(n.id)?.private === !0), D = y.length > 0 || null != N, k = !O && null == N && null == C && null != S, B = !L && (D || k), U = T.length > 0;
+    }), O = (0, a.bG)([c.A], () => c.A.getUserProfile(n.id)?.private === !0), D = y.length > 0 || null != S, k = !O && null == S && null == C && null != N, B = !L && (D || k), U = T.length > 0;
     return B || U || !R ? (0, i.jsxs)(l.IpV, {
         className: b.XG,
         fade: !0,
@@ -51,11 +51,11 @@ function E(e) {
             "aria-label": I.intl.string(I.t.J6STd9),
             children: (0, i.jsxs)("ul", {
                 className: b.Ci,
-                children: [null != N && (0, i.jsx)("li", {
+                children: [null != S && (0, i.jsx)("li", {
                     children: (0, i.jsx)(f.A, {
                         user: n,
                         currentUser: t,
-                        stream: N,
+                        stream: S,
                         onClose: j
                     })
                 }), y.map((e, a) => (0, i.jsx)("li", {
@@ -66,10 +66,10 @@ function E(e) {
                         onClose: j
                     })
                 }, `live-${a}`)), k && (0, i.jsx)("li", {
-                    children: (0, i.jsx)(m.A, {
+                    children: (0, i.jsx)(h.A, {
                         user: n,
                         currentUser: t,
-                        voiceChannel: S,
+                        voiceChannel: N,
                         onClose: j
                     })
                 })]
@@ -82,7 +82,7 @@ function E(e) {
                     children: e
                 }, n)
             }) : void 0,
-            scrollTargetId: h.bk.RECENT_ACTIVITY,
+            scrollTargetId: m.bk.RECENT_ACTIVITY,
             children: (0, i.jsx)("ul", {
                 className: b.Ci,
                 children: T.map(e => (0, i.jsx)("li", {

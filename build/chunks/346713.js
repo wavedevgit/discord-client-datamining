@@ -2,12 +2,12 @@
 l.d(n, {
     A: () => r
 });
-var i = l(64700),
-    t = l(311907),
+var t = l(64700),
+    i = l(311907),
     s = l(622543);
 let a = [];
 
 function r(e) {
-    let n = (0, t.bG)([s.A], () => s.A.getUserProfile(e));
-    return (0, i.useMemo)(() => n?.applicationRoleConnections == null ? a : n.applicationRoleConnections, [n?.applicationRoleConnections])
+    let n = (0, i.bG)([s.A], () => s.A.getUserProfile(e));
+    return (0, t.useMemo)(() => n?.applicationRoleConnections == null ? a : n.applicationRoleConnections, [n?.applicationRoleConnections])
 }

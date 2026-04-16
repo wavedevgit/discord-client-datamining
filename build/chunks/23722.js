@@ -2,18 +2,18 @@
 l.d(n, {
     A: () => a
 });
-var i = l(64700),
-    t = l(207803),
+var t = l(64700),
+    i = l(207803),
     s = l(485745);
 
 function a(e) {
     let n = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
         l = (0, s.A)(),
-        a = i.useRef(e);
-    return i.useLayoutEffect(() => {
+        a = t.useRef(e);
+    return t.useLayoutEffect(() => {
         a.current = e
-    }), i.useCallback(function() {
-        for (var e = arguments.length, i = Array(e), s = 0; s < e; s++) i[s] = arguments[s];
-        n && l ? (0, t.VQ)() : a.current(...i)
+    }), t.useCallback(function() {
+        for (var e = arguments.length, t = Array(e), s = 0; s < e; s++) t[s] = arguments[s];
+        n && l ? (0, i.VQ)() : a.current(...t)
     }, [n, l])
 }

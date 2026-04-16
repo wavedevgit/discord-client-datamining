@@ -2,8 +2,8 @@
 l.d(n, {
     A: () => p
 });
-var i = l(627968),
-    t = l(64700),
+var t = l(627968),
+    i = l(64700),
     s = l(397927),
     a = l(688810),
     r = l(233971),
@@ -19,8 +19,8 @@ function p(e) {
         onClose: l
     } = e, {
         analyticsLocations: p
-    } = (0, a.Ay)(), x = (0, o.j)("UserProfileGiftButton"), {
-        openGiftModal: A
+    } = (0, a.Ay)(), A = (0, o.j)("UserProfileGiftButton"), {
+        openGiftModal: x
     } = (0, r.$)({
         giftRecipient: n,
         analyticsLocations: p,
@@ -31,10 +31,10 @@ function p(e) {
             objectType: u.AnalyticsObjectTypes.GIFT
         },
         location: "user-profile-gift-button"
-    }), g = t.useCallback(() => {
-        A(), l?.()
-    }, [A, l]);
-    return x ? (0, i.jsx)(d.q3, {
+    }), g = i.useCallback(() => {
+        x(), l?.()
+    }, [x, l]);
+    return A ? (0, t.jsx)(d.q3, {
         action: c.pt.GIFT,
         icon: s.okO,
         tooltipText: m.intl.string(m.t.PEjaCx),

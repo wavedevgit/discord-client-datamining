@@ -2,9 +2,9 @@
 l.d(n, {
     A: () => u
 });
-var i = l(627968);
+var t = l(627968);
 l(64700);
-var t = l(347805),
+var i = l(347805),
     s = l(183555),
     a = l(716804),
     r = l(83013),
@@ -18,10 +18,10 @@ function u(e) {
     } = e, l = (0, a.g)(), {
         trackUserProfileAction: u
     } = (0, s.NJ)();
-    return (0, i.jsx)(r.A, {
+    return (0, t.jsx)(r.A, {
         heading: d.intl.string(d.t["mQKv+v"]),
         scrollTargetId: o.bk.NOTE,
-        children: (0, i.jsx)(t.A, {
+        children: (0, t.jsx)(i.A, {
             userId: n,
             className: c.N,
             autoFocus: l === o.bk.NOTE,

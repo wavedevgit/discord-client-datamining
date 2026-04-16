@@ -42,7 +42,7 @@ function T(e) {
     }), {
         badge: y,
         badgeDimensions: v,
-        unreadChannelsCount: j
+        unreadChannelsCount: R
     } = function(e) {
         let {
             notificationCenterVariant: t
@@ -75,7 +75,7 @@ function T(e) {
             unreadChannelsCount: n.length,
             badgeDimensions: a
         }
-    }(S), R = b === m.U5.LEGACY ? o.K$s : o.XFE, O = (0, a.bG)([A.A], () => A.A.getChannelId()), L = l.useMemo(() => {
+    }(S), j = b === m.U5.LEGACY ? o.K$s : o.XFE, O = (0, a.bG)([A.A], () => A.A.getChannelId()), L = l.useMemo(() => {
         if (b === m.U5.SIDEBAR) return x.BVt.CHANNEL(x.gNP, O)
     }, [b, O]);
     return (0, i.jsxs)(c.c, {
@@ -83,7 +83,7 @@ function T(e) {
         children: [(0, i.jsx)(d.A, {
             selected: S && b === m.U5.SIDEBAR,
             hovered: f && b === m.U5.SIDEBAR,
-            unread: j > 0,
+            unread: R > 0,
             className: C.Io,
             disabled: b === m.U5.LEGACY
         }), (0, i.jsx)(E.A, {
@@ -99,7 +99,7 @@ function T(e) {
                     selected: S || f,
                     onMouseEnter: () => I(!0),
                     onMouseLeave: () => I(!1),
-                    children: (0, i.jsx)(R, {
+                    children: (0, i.jsx)(j, {
                         size: "custom",
                         color: "currentColor",
                         className: C.iZ,

@@ -2,12 +2,12 @@
 l.d(n, {
     A: () => s
 });
-var i = l(562465),
-    t = l(652215);
+var t = l(562465),
+    i = l(652215);
 let s = {
     updateNote(e, n) {
-        i.Bo.put({
-            url: t.Rsh.NOTE(e),
+        t.Bo.put({
+            url: i.Rsh.NOTE(e),
             body: {
                 note: n
             },

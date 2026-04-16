@@ -1,8 +1,8 @@
 /** chunk id: 823142 params = (module,exports,require) **/
 n.d(t, {
     AV: () => O,
-    Ay: () => j,
-    P4: () => R,
+    Ay: () => R,
+    P4: () => j,
     kD: () => L,
     sM: () => M
 });
@@ -42,8 +42,8 @@ let v = l.memo(function(e) {
                 disableManageChannels: C,
                 position: N,
                 sortingPosition: v,
-                hideIcon: j,
-                children: R
+                hideIcon: R,
+                children: j
             } = e,
             O = (0, o.bG)([I.Ay], () => I.Ay.isChannelMuted(s.getGuildId(), s.id)),
             L = (0, o.bG)([f.A], () => f.A.isCollapsed(s.id)),
@@ -126,7 +126,7 @@ let v = l.memo(function(e) {
                                 children: (0, i.jsx)(d.A, {
                                     children: D
                                 })
-                            }), j ? null : (0, i.jsx)(h.abt, {
+                            }), R ? null : (0, i.jsx)(h.abt, {
                                 size: "md",
                                 color: "currentColor",
                                 className: b.Kk
@@ -151,12 +151,12 @@ let v = l.memo(function(e) {
                             }) : null
                         })]
                     })
-                }), R]
+                }), j]
             });
         return null != m && null != u ? m(u(F)) : F
     }),
-    j = (0, m.a)(v),
-    R = l.memo(function(e) {
+    R = (0, m.a)(v),
+    j = l.memo(function(e) {
         let {
             name: t,
             onDismiss: n,

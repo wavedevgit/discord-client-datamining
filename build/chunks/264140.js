@@ -29,8 +29,8 @@ var f = n(483270),
     b = n(480720),
     y = n(323073),
     v = n(793574),
-    j = n(568598),
-    R = n(313961),
+    R = n(568598),
+    j = n(313961),
     O = n(164617),
     L = n(540462),
     M = n(355622),
@@ -83,8 +83,8 @@ var f = n(483270),
     eb = n(566388),
     ey = n(168675),
     ev = n(170428),
-    ej = n(494208),
-    eR = n(933057),
+    eR = n(494208),
+    ej = n(933057),
     eO = n(328808),
     eL = n(415586),
     eM = n(210714),
@@ -310,11 +310,11 @@ class tl extends l.PureComponent {
             case e6.rbe.PUBLIC_THREAD:
                 e.isModeratorReportChannel() && r.push((0, i.jsx)(ev.A, {
                     channel: e
-                })), null == t || t.isForumLikeChannel() || r.push((0, i.jsx)(ej.A, {
+                })), null == t || t.isForumLikeChannel() || r.push((0, i.jsx)(eR.A, {
                     channel: t
                 }, "browser")), e.isVocalThread() && r.push((0, i.jsx)(ec.A, {
                     channel: e
-                }, "thread-call")), r.push((0, i.jsx)(eR.A, {
+                }, "thread-call")), r.push((0, i.jsx)(ej.A, {
                     channel: e
                 }, "notifications")), r.push((0, i.jsx)(en.A, {
                     channel: e
@@ -328,7 +328,7 @@ class tl extends l.PureComponent {
                 break;
             case e6.rbe.GUILD_ANNOUNCEMENT:
             case e6.rbe.GUILD_TEXT:
-                r.push((0, i.jsx)(ej.A, {
+                r.push((0, i.jsx)(eR.A, {
                     channel: e
                 }, "browser")), n || r.push((0, i.jsx)(et.A, {
                     channel: e
@@ -789,13 +789,13 @@ let ts = (0, x.A)(tl),
             providedChannel: t
         } = e, [n, s] = l.useState(null), a = (0, h.bG)([ez.A], () => ez.A.getChannelId()), r = (0, h.bG)([ez.A], () => ez.A.getVoiceChannelId()), o = (0, h.bG)([eV.A], () => t ?? eV.A.getChannel(a), [a, t]), d = (0, V.DZ)(), m = (0, V.e4)(o, "ConnectedChannel"), g = (0, h.bG)([eV.A], () => eV.A.getChannel(r), [r]), f = m?.parent_id, E = (0, h.bG)([eV.A], () => eV.A.getChannel(f), [f]), x = (0, h.bG)([eW.A], () => eW.A.getGuild(m?.guild_id), [m]), {
             needSubscriptionToAccess: T
-        } = (0, $.A)(m?.id ?? void 0), v = (0, h.bG)([R.A], () => {
-            let e = null != a ? R.A.getParticipants(a) : [],
-                t = null != a ? R.A.getActivityParticipants(a) : [];
+        } = (0, $.A)(m?.id ?? void 0), v = (0, h.bG)([j.A], () => {
+            let e = null != a ? j.A.getParticipants(a) : [],
+                t = null != a ? j.A.getActivityParticipants(a) : [];
             return e.length - t.length > 0
         }, [a]), O = (0, W.A)(), L = (0, h.bG)([ez.A], () => (O?.channelId ?? ez.A.getVoiceChannelId()) === m?.id), M = (0, h.bG)([N.Ay], () => null != m ? N.Ay.getSelfEmbeddedActivityForChannel(m.id) : null, [m]), D = (0, h.bG)([eY.A], () => eY.A.isConnected()), U = (0, C.A)(D), G = D && !1 === U;
         l.useEffect(() => {
-            L && G && null != M && null != m && p.A.selectParticipant(m.id, (0, j.Qt)({
+            L && G && null != M && null != m && p.A.selectParticipant(m.id, (0, R.Qt)({
                 applicationId: M.applicationId,
                 instanceId: M.compositeInstanceId
             }))
@@ -812,7 +812,7 @@ let ts = (0, x.A)(tl),
             } = (0, u.zy)(),
             X = (0, h.bG)([e_.A], () => null != m && e_.A.isLurking(m.guild_id), [m]),
             J = (0, h.bG)([ek.A], () => ek.A.hasSeen(m?.guild_id, X), [m, X]),
-            Q = (0, h.bG)([R.A, N.Ay], () => null != N.Ay.getConnectedActivityLocation() && N.Ay.getActivityPanelMode() === e2.Gd.PANEL ? N.Ay.getFocusedLayout() === e2.E8.NO_CHAT ? e6.DUB.NO_CHAT : e6.DUB.NORMAL : null != a ? R.A.getLayout(a) : e6.DUB.NORMAL, [a]),
+            Q = (0, h.bG)([j.A, N.Ay], () => null != N.Ay.getConnectedActivityLocation() && N.Ay.getActivityPanelMode() === e2.Gd.PANEL ? N.Ay.getFocusedLayout() === e2.E8.NO_CHAT ? e6.DUB.NO_CHAT : e6.DUB.NORMAL : null != a ? j.A.getLayout(a) : e6.DUB.NORMAL, [a]),
             Z = (0, eh.A)(x?.id),
             ee = (0, ew.A)(q, x?.id),
             {
@@ -827,7 +827,7 @@ let ts = (0, x.A)(tl),
             es = (0, em.lI)(),
             ea = (0, e$.Ay)(m),
             er = (0, e$.Ay)(m, !0),
-            eo = (0, h.bG)([R.A], () => null != m ? R.A.getSelectedParticipant(m.id) : null),
+            eo = (0, h.bG)([j.A], () => null != m ? j.A.getSelectedParticipant(m.id) : null),
             ed = (0, y.vL)(m),
             ec = (0, eN.Uf)(m),
             eu = null != m && r === m.id,

@@ -27,13 +27,13 @@ function N(e) {
     let {
         guild: t,
         selected: N
-    } = e, T = (0, h.A)(t), S = (0, c.JZ)(a.M.CHANNEL_BROWSER_NEW_BADGE_NUX), b = (0, s.yK)([A.A], () => Array.from(A.A.getNewChannelIds(t.id)).filter(e => A.A.shouldIndicateNewChannel(t.id, e))), y = (0, s.bG)([m.Ay], () => m.Ay.hasUnread(t.id, I.P.GUILD_ONBOARDING_QUESTION)), v = b.length > g.rR, j = (0, s.bG)([u.A, m.Ay], () => {
+    } = e, T = (0, h.A)(t), S = (0, c.JZ)(a.M.CHANNEL_BROWSER_NEW_BADGE_NUX), b = (0, s.yK)([A.A], () => Array.from(A.A.getNewChannelIds(t.id)).filter(e => A.A.shouldIndicateNewChannel(t.id, e))), y = (0, s.bG)([m.Ay], () => m.Ay.hasUnread(t.id, I.P.GUILD_ONBOARDING_QUESTION)), v = b.length > g.rR, R = (0, s.bG)([u.A, m.Ay], () => {
         let e = u.A.lastFetchedAt(t.id),
             n = m.Ay.lastMessageId(t.id, I.P.GUILD_ONBOARDING_QUESTION);
         if (null == n) return !1;
         let i = p.default.extractTimestamp(n);
         return null != e && e > i
-    }), R = l.useCallback(() => {
+    }), j = l.useCallback(() => {
         (0, _.pX)(E.BVt.CHANNEL(t.id, T ? x.VV.CUSTOMIZE_COMMUNITY : x.VV.CHANNEL_BROWSER))
     }, [t.id, T]), O = l.useCallback(e => {
         (0, d.L3)(e, async () => {
@@ -46,7 +46,7 @@ function N(e) {
             })
         })
     }, [t]), L = null;
-    return S && !y && !v || N || j || (L = (0, i.jsx)(o.LpS, {
+    return S && !y && !v || N || R || (L = (0, i.jsx)(o.LpS, {
         color: r.A.colors.BADGE_BACKGROUND_BRAND.css,
         text: C.intl.string(C.t.y2b7CA)
     })), (0, i.jsx)(f.G, {
@@ -58,7 +58,7 @@ function N(e) {
         }),
         text: T ? C.intl.string(C.t.h9mGOP) : C.intl.string(C.t.et6wav),
         selected: N,
-        onClick: R,
+        onClick: j,
         onContextMenu: O,
         trailing: L
     })

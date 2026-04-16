@@ -53,12 +53,12 @@ function m(e) {
             soundboardAudioEnabled: G
         } = L,
         V = a.useRef(null),
-        H = a.useRef(S),
-        [z, $] = a.useState(E),
+        z = a.useRef(S),
+        [H, $] = a.useState(E),
         [_, K] = a.useState(!1),
         [B, F] = a.useState(!1),
-        Y = a.useRef(new Set),
-        X = a.useRef(!1),
+        X = a.useRef(new Set),
+        Y = a.useRef(!1),
         [Q, q] = a.useState(null),
         [W, Z] = a.useState(null),
         [J, ee] = a.useState(null),
@@ -151,15 +151,15 @@ function m(e) {
             e()
         }
     }, [m, w, A, v]), a.useEffect(() => {
-        z > 0 && O <= 0 && E <= 0 && M(e => ({
+        H > 0 && O <= 0 && E <= 0 && M(e => ({
             ...e,
-            cropEnd: z
+            cropEnd: H
         }))
-    }, [z, O, E]);
+    }, [H, O, E]);
     let eo = a.useMemo(() => O - D, [D, O]),
-        ec = a.useCallback(e => (Y.current.add(e), () => {
-            Y.current.delete(e)
-        }), [Y]),
+        ec = a.useCallback(e => (X.current.add(e), () => {
+            X.current.delete(e)
+        }), [X]),
         {
             setCropStart: eu,
             setCropEnd: em,
@@ -173,12 +173,12 @@ function m(e) {
         }, [O, M, V]), {
             setCropStart: j,
             setCropEnd: a.useCallback(e => {
-                let t = (0, i.clamp)(e, D + 1, z);
+                let t = (0, i.clamp)(e, D + 1, H);
                 M(e => ({
                     ...e,
                     cropEnd: t
                 })), V?.current?.seek(t)
-            }, [D, z, M, V]),
+            }, [D, H, M, V]),
             setCrop: a.useCallback((e, t) => {
                 M(l => ({
                     ...l,
@@ -204,16 +204,16 @@ function m(e) {
         });
     (0, s.A)(() => {
         let e = V.current?.videoElement;
-        if (null == e || !X.current) return;
+        if (null == e || !Y.current) return;
         let t = e.currentTime;
-        H.current !== t && (H.current = t, Y.current.forEach(e => e.onTimeUpdate?.(t))), N.current?.style.setProperty("--custom-video-progress", `${t/e.duration*100}%`)
+        z.current !== t && (z.current = t, X.current.forEach(e => e.onTimeUpdate?.(t))), N.current?.style.setProperty("--custom-video-progress", `${t/e.duration*100}%`)
     }), a.useEffect(() => {
         if (null == Q) return;
         let e = () => {
-                K(!0), Y.current.forEach(e => e.onPlay?.())
+                K(!0), X.current.forEach(e => e.onPlay?.())
             },
             t = () => {
-                K(!1), Y.current.forEach(e => e.onPause?.())
+                K(!1), X.current.forEach(e => e.onPause?.())
             },
             l = () => {
                 $(Q.duration)
@@ -222,12 +222,12 @@ function m(e) {
                 F(!0), $(Q.duration), V?.current?.seek(S)
             },
             a = () => {
-                X.current = !0
+                Y.current = !0
             };
         return Q.addEventListener("play", e), Q.addEventListener("pause", t), Q.addEventListener("durationchange", l), Q.addEventListener("loadedmetadata", n), Q.addEventListener("seeked", a), Q.duration > 0 && $(Q.duration), Q.readyState >= 1 && (F(!0), V?.current?.seek(S)), K(!Q.paused), () => {
             Q.removeEventListener("play", e), Q.removeEventListener("pause", t), Q.removeEventListener("durationchange", l), Q.removeEventListener("loadedmetadata", n), Q.removeEventListener("seeked", a)
         }
-    }, [Q, S, V, Y, K, F, $, X]);
+    }, [Q, S, V, X, K, F, $, Y]);
     let eg = a.useCallback(e => {
             M(t => ({
                 ...t,
@@ -259,21 +259,21 @@ function m(e) {
             }))
         }, []),
         ey = a.useMemo(() => function() {
-            let [e, t] = a.useState(H.current);
+            let [e, t] = a.useState(z.current);
             return a.useEffect(() => {
                 let e = {
                     onTimeUpdate: e => {
                         t(e)
                     }
                 };
-                return Y.current.add(e), () => {
-                    Y.current.delete(e)
+                return X.current.add(e), () => {
+                    X.current.delete(e)
                 }
             }, []), e
-        }, [H, Y]),
+        }, [z, X]),
         eN = a.useMemo(() => ({
             useCurrentTime: ey,
-            duration: z,
+            duration: H,
             isPlaying: _,
             isLoaded: B,
             cropStart: D,
@@ -303,7 +303,7 @@ function m(e) {
             isTemporary: R,
             audioURL: J,
             setIsTemporary: ev
-        }), [ey, z, _, B, D, O, eo, eu, em, eh, ep, ex, ef, J, ec, es, W, et, en, U, ej, P, eb, G, eC, ei, T, eg, R, ev]);
+        }), [ey, H, _, B, D, O, eo, eu, em, eh, ep, ex, ef, J, ec, es, W, et, en, U, ej, P, eb, G, eC, ei, T, eg, R, ev]);
     return (0, n.jsx)(u.Provider, {
         value: eN,
         children: C

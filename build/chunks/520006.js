@@ -67,8 +67,8 @@ function E(e) {
         look: b,
         size: y,
         buttonText: v,
-        color: j,
-        ...R
+        color: R,
+        ...j
     } = e, O = (0, u.Us)(), {
         parentAnalyticsLocation: L
     } = (0, d.Ay)(), M = l?.getGuildId(), D = (0, a.bG)([h.A], () => null != M ? h.A.getGuild(M) : null, [M]), U = (0, a.bG)([A.A], () => null != t ? A.A.getApplicationActivity(t) : void 0), G = null == t || N ? r.DpX : r.dCJ, P = g.intl.string(g.t["6F9ivu"]);
@@ -82,7 +82,7 @@ function E(e) {
         look: b,
         size: y,
         buttonText: v,
-        color: j ?? void 0
+        color: R ?? void 0
     }) : null != D && null != l && _.A.can(p.xBc.CREATE_INSTANT_INVITE, l) ? (0, i.jsx)(m.A, {
         onClick: () => {
             s()(null != D, "guild cannot be null"), s()(null != l, "channel cannot be null"), null != L && (0, c.X)(L, c.O.INVITE), f({
@@ -102,8 +102,8 @@ function E(e) {
         iconClassName: S,
         look: b,
         size: y,
-        color: j,
+        color: R,
         buttonText: v,
-        ...R
+        ...j
     }) : null
 }

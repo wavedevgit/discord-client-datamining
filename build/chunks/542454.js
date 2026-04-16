@@ -2,8 +2,8 @@
 l.d(n, {
     A: () => f
 });
-var i = l(627968),
-    t = l(64700),
+var t = l(627968),
+    i = l(64700),
     s = l(33851),
     a = l.n(s),
     r = l(311907),
@@ -13,8 +13,8 @@ var i = l(627968),
     u = l(101058),
     m = l(84540),
     p = l(836602),
-    x = l(950191),
-    A = l(101928),
+    A = l(950191),
+    x = l(101928),
     g = l(548612);
 
 function f(e) {
@@ -22,7 +22,7 @@ function f(e) {
         user: n,
         guildId: l,
         disabled: s = !1
-    } = e, f = (0, x.Ay)(n.id, l), {
+    } = e, f = (0, A.Ay)(n.id, l), {
         pendingThemeColors: h,
         pendingAvatar: v
     } = (0, r.cf)([p.A], () => {
@@ -37,20 +37,20 @@ function f(e) {
     }), {
         primaryColor: I,
         secondaryColor: N
-    } = (0, A.A)({
+    } = (0, x.A)({
         user: n,
         displayProfile: f,
         pendingThemeColors: h,
         pendingAvatarSrc: j ?? void 0,
         isPreview: !0
-    }), y = (0, d.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), C = null != j ? j : n.getAvatarURL(l ?? void 0, 80), b = (0, c.rh)(C, y, !1), E = t.useCallback(e => {
+    }), y = (0, d.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), C = null != j ? j : n.getAvatarURL(l ?? void 0, 80), b = (0, c.rh)(C, y, !1), E = i.useCallback(e => {
         let n = a()(e, f?.themeColors);
         (0, m.p)({
             guildId: l ?? void 0,
             themeColors: n ? void 0 : e
         })
     }, [f?.themeColors, l]);
-    return null == I || null == N ? null : (0, i.jsx)(g.A, {
+    return null == I || null == N ? null : (0, t.jsx)(g.A, {
         primaryColor: I,
         secondaryColor: N,
         onSelectPrimaryColor: e => {

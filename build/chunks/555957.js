@@ -51,10 +51,10 @@ let V = function(e) {
         selectedClipIds: M,
         toggleClipSelection: T,
         isMultiSelectMode: R
-    } = a.useContext(D.$), [P, V] = a.useState(!1), $ = a.useRef(null), K = (0, o.A)(t.editMetadata?.start ?? 0), B = M.has(t.id), F = t.type === w.nQ.SCREENSHOT, Y = (0, v.Ay)(j), X = "" === t.applicationName && null != Y && "" !== Y ? Y : t.applicationName, Q = (0, E.Fe)(new Date(I.default.extractTimestamp(t.id))), q = a.useMemo(() => {
+    } = a.useContext(D.$), [P, V] = a.useState(!1), $ = a.useRef(null), K = (0, o.A)(t.editMetadata?.start ?? 0), B = M.has(t.id), F = t.type === w.nQ.SCREENSHOT, X = (0, v.Ay)(j), Y = "" === t.applicationName && null != X && "" !== X ? X : t.applicationName, Q = (0, E.Fe)(new Date(I.default.extractTimestamp(t.id))), q = a.useMemo(() => {
         let e = [];
-        return t.type === w.nQ.VOICE_CLIP ? (N?.name != null && e.push(N.name), null != Y && e.push(Y)) : ("" !== X && null != X && e.push(X), t.activity?.state != null && "" !== t.activity.state && e.push(t.activity.state), t.activity?.details != null && "" !== t.activity.details && e.push(t.activity.details)), e.join(" › ")
-    }, [X, N?.name, Y, t.activity?.state, t.activity?.details, t.type]), W = a.useCallback(() => {
+        return t.type === w.nQ.VOICE_CLIP ? (N?.name != null && e.push(N.name), null != X && e.push(X)) : ("" !== Y && null != Y && e.push(Y), t.activity?.state != null && "" !== t.activity.state && e.push(t.activity.state), t.activity?.details != null && "" !== t.activity.details && e.push(t.activity.details)), e.join(" › ")
+    }, [Y, N?.name, X, t.activity?.state, t.activity?.details, t.type]), W = a.useCallback(() => {
         let e = $.current;
         null != e && (e.pause(), e.src = "")
     }, []), Z = a.useCallback(() => {
@@ -122,7 +122,7 @@ let V = function(e) {
             onFocus: Z,
             onMouseOver: Z,
             onMouseLeave: J,
-            children: [(0, n.jsx)(H, {
+            children: [(0, n.jsx)(z, {
                 clip: t,
                 isNew: r,
                 videoRef: $,
@@ -134,7 +134,7 @@ let V = function(e) {
                     clip: t
                 }), (0, n.jsxs)("div", {
                     className: G.i0,
-                    children: [(0, n.jsx)(z, {
+                    children: [(0, n.jsx)(H, {
                         clip: t
                     }), (0, n.jsx)(h.Text, {
                         className: G.xD,
@@ -166,7 +166,7 @@ let V = function(e) {
     })
 };
 
-function H(e) {
+function z(e) {
     let {
         clip: t,
         isNew: l,
@@ -293,7 +293,7 @@ function H(e) {
     })
 }
 
-function z(e) {
+function H(e) {
     let {
         clip: t
     } = e, l = (0, R.h)(t), a = "" !== l;

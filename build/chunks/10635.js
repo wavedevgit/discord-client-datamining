@@ -28,36 +28,39 @@ var i = n(627968),
     b = n(747524),
     y = n(996988),
     v = n(985018),
-    j = n(374146),
-    R = n(733866);
+    R = n(374146),
+    j = n(733866);
 
 function O(e) {
     let {
         user: t,
         channel: n
-    } = e, O = __OVERLAY__ || !(0, d.A)(t.id), L = (0, _.Ay)(t.id), M = (0, a.Ay)(), {
-        analyticsLocations: D
-    } = (0, o.Ay)(r.A.USER_PROFILE_SIDEBAR), U = (0, A.pb)({
+    } = e, O = __OVERLAY__ || !(0, d.A)(t.id), L = (0, _.Ay)(t.id), M = (0, a.Ay)(), D = l.useRef(Date.now()), {
+        analyticsLocations: U
+    } = (0, o.Ay)(r.A.USER_PROFILE_SIDEBAR), G = (0, A.pb)({
         layout: "SIDEBAR",
         userId: t.id,
         channelId: n.id
-    }), G = l.useRef(null), {
-        isHoveringOrFocusing: P,
-        isHovering: k
-    } = (0, u.A)(G), w = () => {
+    }), P = l.useRef(null), {
+        isHoveringOrFocusing: k,
+        isHovering: w
+    } = (0, u.A)(P), B = () => {
         (0, m.openUserProfileModal)({
-            sourceAnalyticsLocations: D,
+            sourceAnalyticsLocations: U,
             hideRestrictedProfile: !0,
-            ...U
+            ...G
         })
     };
     return (0, i.jsx)(o.f5, {
-        value: D,
+        value: U,
         children: (0, i.jsx)(A.of, {
-            value: U,
+            value: G,
+            openedAt: D.current,
+            fetchStartedAt: L?.fetchStartedAt,
+            fetchEndedAt: L?.fetchEndedAt,
             isLoaded: L?.isLoaded,
             children: (0, i.jsxs)(C.A, {
-                ref: G,
+                ref: P,
                 user: t,
                 displayProfile: L,
                 themeType: y.d.SIDEBAR,
@@ -68,33 +71,33 @@ function O(e) {
                             user: t
                         })
                     }), (0, i.jsxs)("div", {
-                        className: j.wx,
+                        className: R.wx,
                         children: [(0, i.jsx)(f.A, {
                             user: t,
                             displayProfile: L,
                             themeType: y.d.SIDEBAR,
-                            animateOnHoverOrFocusOnly: !P
+                            animateOnHoverOrFocusOnly: !k
                         }), (0, i.jsx)(p.A, {
                             user: t,
                             displayProfile: L,
                             channelId: n.id,
                             themeType: y.d.SIDEBAR,
-                            onOpenProfile: O ? void 0 : w
+                            onOpenProfile: O ? void 0 : B
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: R.rf,
+                        className: j.rf,
                         children: [(0, i.jsx)(N.A, {
                             user: t,
                             guildId: n.guild_id,
                             nickname: h.Ay.getName(null, n.id, t),
                             pronouns: L?.pronouns,
-                            onOpenProfile: O ? void 0 : w,
+                            onOpenProfile: O ? void 0 : B,
                             tags: (0, i.jsx)(g.A, {
                                 displayProfile: L,
                                 themeType: y.d.SIDEBAR
                             })
                         }), (0, i.jsxs)(C.A.Overlay, {
-                            className: R.Lw,
+                            className: j.Lw,
                             children: [(0, i.jsx)(I.A, {
                                 heading: v.intl.string(v.t.ZzAR2Y),
                                 headingColor: "text-strong",
@@ -102,7 +105,7 @@ function O(e) {
                                     userBio: L?.bio,
                                     userId: t.id,
                                     animateOnHoverOrFocusOnly: !0,
-                                    isHoveringOrFocusing: P
+                                    isHoveringOrFocusing: k
                                 })
                             }), (0, i.jsx)(I.A, {
                                 heading: v.intl.string(v.t["A//N4k"]),
@@ -114,12 +117,12 @@ function O(e) {
                         })]
                     })]
                 }), !O && (0, i.jsx)(b.A, {
-                    handleOpenProfile: w,
-                    analyticsLocations: D,
-                    context: U
+                    handleOpenProfile: B,
+                    analyticsLocations: U,
+                    context: G
                 }), L?.profileEffect != null && (0, i.jsx)(c.A, {
                     skuId: L?.profileEffect?.skuId,
-                    isHovering: k
+                    isHovering: w
                 })]
             })
         })

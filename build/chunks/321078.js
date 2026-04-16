@@ -13,10 +13,10 @@ function r(e) {
         } = n,
         {
             isLoading: r,
-            data: s
+            data: d
         } = (0, a.P)(e);
     return {
         isLoading: r,
-        filteredAppIdentities: i.useMemo(() => (s ?? []).filter(e => l.JW.includes(e.application_id) && null != e.profile && null != e.profile.username && (!0 === e.profile.connection_visible || t)), [s, t])
+        filteredAppIdentities: i.useMemo(() => (d ?? []).filter(e => l.JW.includes(e.application_id) && null != e.profile && null != e.profile.username && (!0 === e.profile.connection_visible || t)), [d, t])
     }
 }

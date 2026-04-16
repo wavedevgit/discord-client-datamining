@@ -150,18 +150,19 @@ function eL(e) {
                 withMutualFriends: !1,
                 guildId: void 0
             }),
-            renderPopout: e => {
+            renderPopout: (e, t) => {
                 let {
-                    closePopout: t,
-                    setPopoutRef: n
+                    closePopout: n,
+                    setPopoutRef: i
                 } = e;
                 return (0, a.jsx)(K.A, {
                     currentUser: o,
                     highlightBadge: y,
+                    openedAt: t,
                     onClose: () => {
-                        t?.()
+                        n?.()
                     },
-                    setPopoutRef: n,
+                    setPopoutRef: i,
                     className: eO.dI
                 })
             },

@@ -30,9 +30,9 @@ var i = n(627968),
     b = n(576705),
     y = n(287809),
     v = n(977997),
-    j = n(376696);
+    R = n(376696);
 n(281405);
-var R = n(544105),
+var j = n(544105),
     O = n(502075),
     L = n(985018),
     M = n(437942);
@@ -164,7 +164,7 @@ let G = (0, A.J)(function(e) {
                 onRequestClose: () => ec(!1),
                 children: e => {
                     let n, l;
-                    return n = R.hv.has(et ?? ""), l = {
+                    return n = j.hv.has(et ?? ""), l = {
                         user: s,
                         speaking: W,
                         disconnected: K,
@@ -207,7 +207,7 @@ let G = (0, A.J)(function(e) {
                     }) : (0, i.jsx)(o.YNO, {
                         targetElementRef: eo,
                         position: "right",
-                        renderPopout: () => (0, i.jsx)(j.A, {
+                        renderPopout: () => (0, i.jsx)(R.A, {
                             channel: A,
                             user: s,
                             onAction: e_,

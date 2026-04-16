@@ -73,7 +73,7 @@ function h(e) {
         if (null == p) return;
         let e = E.find(e => e.guildId === p);
         return e?.name
-    }, [p, E]), V = a.useMemo(() => h ?? void 0, [h]), H = a.useMemo(() => null != x ? String(x) : void 0, [x]);
+    }, [p, E]), V = a.useMemo(() => h ?? void 0, [h]), z = a.useMemo(() => null != x ? String(x) : void 0, [x]);
     return (0, n.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "clips-filters-context",
@@ -169,7 +169,7 @@ function h(e) {
             }), k.length > 0 && (0, n.jsxs)(r.Drp, {
                 id: "years",
                 label: m.intl.string(m.t.w9zd68),
-                subtext: H,
+                subtext: z,
                 children: [(0, n.jsx)(r.iDA, {
                     id: "year-all",
                     group: "year",

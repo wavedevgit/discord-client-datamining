@@ -1,6 +1,6 @@
 /** chunk id: 823471 params = (module,exports,require) **/
 n.d(t, {
-    A: () => R
+    A: () => j
 });
 var i = n(627968),
     l = n(64700),
@@ -46,7 +46,7 @@ function v(e) {
         autoInvert: !1,
         onRequestClose: () => a(!1),
         renderPopout: function(e) {
-            return (0, i.jsx)(j, {
+            return (0, i.jsx)(R, {
                 ...e,
                 channel: t
             })
@@ -68,12 +68,12 @@ function v(e) {
     })
 }
 
-function j(e) {
+function R(e) {
     let {
         channel: t,
         closePopout: n,
         onSelect: l
-    } = e, E = (0, d.A)(t, "Sidebar Overflow"), x = (0, u.A)(t), N = (0, m.A)(t), T = (0, p.A)(t), S = (0, a.A)(t), v = (0, c.A)(t), j = (0, _.A)(t.id), R = (0, A.A)(t), O = (0, o.A)(t), L = (0, r.A)(t), M = (0, f.A)({
+    } = e, E = (0, d.A)(t, "Sidebar Overflow"), x = (0, u.A)(t), N = (0, m.A)(t), T = (0, p.A)(t), S = (0, a.A)(t), v = (0, c.A)(t), R = (0, _.A)(t.id), j = (0, A.A)(t), O = (0, o.A)(t), L = (0, r.A)(t), M = (0, f.A)({
         id: t.id,
         label: y.intl.string(y.t.DQ797g)
     }), D = (0, g.A)(t), U = (0, h.A)(t);
@@ -96,7 +96,7 @@ function j(e) {
         }), (0, i.jsxs)(s.rXV, {
             children: [N, T]
         }), (0, i.jsxs)(s.rXV, {
-            children: [R, x, j, U]
+            children: [j, x, R, U]
         }), (0, i.jsxs)(s.rXV, {
             children: [(0, i.jsx)(s.Drp, {
                 id: "search",
@@ -133,7 +133,7 @@ function j(e) {
     })
 }
 
-function R(e) {
+function j(e) {
     let {
         channel: t,
         baseChannelId: n

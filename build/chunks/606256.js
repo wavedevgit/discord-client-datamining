@@ -30,7 +30,7 @@ let A = l.forwardRef(function(e, t) {
         onMouseEnter: T,
         onMouseLeave: S,
         onMouseDown: b
-    } = e, y = (0, r.Vd)(n), [v, j] = l.useState(!1), R = "string" == typeof p && null == C ? p : C;
+    } = e, y = (0, r.Vd)(n), [v, R] = l.useState(!1), j = "string" == typeof p && null == C ? p : C;
     return (0, i.jsxs)(c.c, {
         children: [x ? (0, i.jsx)("div", {
             className: h.Io,
@@ -49,17 +49,17 @@ let A = l.forwardRef(function(e, t) {
                 children: (0, i.jsx)(o.DUT, {
                     innerRef: t,
                     onMouseEnter: () => {
-                        T?.(), j(!0)
+                        T?.(), R(!0)
                     },
                     onMouseLeave: () => {
-                        S?.(), j(!1)
+                        S?.(), R(!1)
                     },
                     onMouseDown: b,
                     className: a()(h.oZ, I, {
                         [h.wH]: m || v
                     }),
                     onClick: s,
-                    "aria-label": R,
+                    "aria-label": j,
                     "aria-selected": m,
                     onContextMenu: A,
                     focusProps: {

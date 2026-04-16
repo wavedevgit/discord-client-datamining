@@ -43,14 +43,14 @@ function M(e) {
         applicationAudioEnabled: U,
         setApplicationAudioEnabled: G,
         soundboardAudioEnabled: V,
-        setSoundboardAudioEnabled: H,
-        pause: z,
+        setSoundboardAudioEnabled: z,
+        pause: H,
         clipName: $,
         setClipName: _,
         isTemporary: K,
         setIsTemporary: B
-    } = (0, k.T)(), F = (0, o.h)(t.applicationId), Y = (0, i.bG)([C.A], () => C.A.isClipExporting(t.id)), {
-        onShareClick: X
+    } = (0, k.T)(), F = (0, o.h)(t.applicationId), X = (0, i.bG)([C.A], () => C.A.isClipExporting(t.id)), {
+        onShareClick: Y
     } = (0, E.A)(M), Q = (0, i.bG)([x.A], () => x.A.isDeveloper), q = (0, A.h)(t), W = a.useCallback(async () => {
         await (0, N.w7)(t.id), B(!1)
     }, [t.id, B]), Z = (0, i.yK)([g.default], () => t.users.map(g.default.getUser).filter(j.Vq)), J = a.useMemo(() => new Date(b.default.extractTimestamp(t.id)), [t.id]), ee = (0, i.bG)([f.A], () => t.version >= 3 && null != t.guildId ? f.A.getGuild(t.guildId) : null), et = (0, i.bG)([p.A], () => t.version >= 3 && null != t.channelId ? p.A.getChannel(t.channelId) : null), el = (0, c.Ay)(et), en = null != et ? (0, u.gU)(et, ee) : null;
@@ -126,7 +126,7 @@ function M(e) {
                     }), (0, n.jsx)(r.Ad5, {
                         label: w.intl.string(w.t["8K7Ges"]),
                         checked: V,
-                        onChange: H
+                        onChange: z
                     })]
                 }), (0, n.jsx)(r.D0$, {
                     label: w.intl.string(w.t.g8pDeY),
@@ -209,22 +209,22 @@ function M(e) {
                 direction: "horizontal",
                 fullWidth: !0,
                 children: [(0, n.jsx)(r.Button, {
-                    loading: Y,
-                    disabled: Y,
+                    loading: X,
+                    disabled: X,
                     variant: "primary",
                     icon: r.liv,
                     iconPosition: "start",
-                    onClick: () => X({
+                    onClick: () => Y({
                         clips: [D()]
                     }),
                     text: w.intl.string(w.t.RDE0Sc)
                 }), (0, n.jsx)(r.K0, {
                     "aria-label": w.intl.string(w.t.PdRCRg),
-                    loading: Y,
-                    disabled: Y,
+                    loading: X,
+                    disabled: X,
                     variant: "secondary",
                     onClick: function(e) {
-                        z(), (0, d.L3)(e, async () => {
+                        H(), (0, d.L3)(e, async () => {
                             let {
                                 default: e
                             } = await l.e("80628").then(l.bind(l, 183903));

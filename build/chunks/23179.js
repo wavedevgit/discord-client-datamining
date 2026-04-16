@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(65600),
     y = n(145331),
     v = n(976966),
-    j = n(159083),
-    R = n(229374),
+    R = n(159083),
+    j = n(229374),
     O = n(310420),
     L = n(652215),
     M = n(670455),
@@ -143,14 +143,14 @@ function w(e) {
     if (x) {
         let e = (0, f.Y7)(r);
         return (0, i.jsxs)(P, {
-            children: [(0, i.jsx)(j.A, {}), (0, i.jsx)("div", {
+            children: [(0, i.jsx)(R.A, {}), (0, i.jsx)("div", {
                 className: (U.pZ, U.Jy),
                 children: e
             })]
         })
     }
     if (E) return null;
-    if (g > 0) return (0, i.jsx)(R.A, {
+    if (g > 0) return (0, i.jsx)(j.A, {
         search: s,
         messages: t,
         onClick: d,
@@ -196,8 +196,8 @@ let B = [],
             onSearchModeChange: I,
             onPageChange: N,
             searchMode: T,
-            onBlockedResultsClick: j,
-            searchResultsQuery: R,
+            onBlockedResultsClick: R,
+            searchResultsQuery: j,
             selectedChannelId: O
         } = e, M = l.useRef(null), G = l.useCallback(() => {
             C.A.cleanUpSearchState(t)
@@ -344,9 +344,9 @@ let B = [],
                     onPageChange: q,
                     paginationTotalCount: W ? H : void 0,
                     renderPageWrapper: K,
-                    onBlockedResultsClick: j,
+                    onBlockedResultsClick: R,
                     searchRequestAnalyticsId: a,
-                    searchResultsQuery: R
+                    searchResultsQuery: j
                 })]
             }), (0, i.jsx)(k, {
                 searchContext: t,
@@ -411,13 +411,13 @@ function H(e) {
     }, [d.isSearching, t]), y = (0, r.bG)([b.A], () => {
         let e = (0, f.bS)(t);
         return b.A.getSearchResultsQuery(e)
-    }), v = l.useCallback(e => I.A.setShowBlockedResults(t, e), [t]), j = l.useDeferredValue(h), R = l.useDeferredValue(d), O = l.useDeferredValue(c);
+    }), v = l.useCallback(e => I.A.setShowBlockedResults(t, e), [t]), R = l.useDeferredValue(h), j = l.useDeferredValue(d), O = l.useDeferredValue(c);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(V, {
             searchContext: t,
-            search: R,
+            search: j,
             searchRequestAnalyticsId: O,
-            messages: j,
+            messages: R,
             ignoreCount: m,
             blockCount: p,
             renderEmbeds: _.rs.useSetting(),
@@ -432,13 +432,13 @@ function H(e) {
         }), (0, i.jsx)(G, {
             searchContext: t,
             searchRequestAnalyticsId: O,
-            messages: j,
-            searchOffset: R.offset,
+            messages: R,
+            searchOffset: j.offset,
             searchLimit: L.T_y,
-            searchHasError: R.hasError,
-            searchTotalResults: R.totalResults,
-            searchIsIndexing: R.isHistoricalIndexing,
-            isSearching: R.isSearching
+            searchHasError: j.hasError,
+            searchTotalResults: j.totalResults,
+            searchIsIndexing: j.isHistoricalIndexing,
+            isSearching: j.isSearching
         })]
     })
 }

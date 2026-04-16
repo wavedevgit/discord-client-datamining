@@ -478,7 +478,6 @@ let eu = i.memo(function(e) {
             content: s
         } = (0, E.A)(i, {
             hideSimpleEmbedContent: !0,
-            isInteracting: !1,
             formatInline: !1,
             allowList: !0,
             allowHeading: !0,

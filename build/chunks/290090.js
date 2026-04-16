@@ -2,9 +2,9 @@
 l.d(n, {
     A: () => c
 });
-var i = l(627968);
+var t = l(627968);
 l(64700);
-var t = l(397927),
+var i = l(397927),
     s = l(688810),
     a = l(979286),
     r = l(23722),
@@ -24,9 +24,9 @@ function c(e) {
             analyticsSource: u
         }), n?.()
     });
-    return (0, i.jsx)(o.q3, {
+    return (0, t.jsx)(o.q3, {
         action: "VISIT_SHOP",
-        icon: t.U1X,
+        icon: i.U1X,
         tooltipText: d.intl.string(d.t.b2d0N0),
         onClick: m,
         ...l

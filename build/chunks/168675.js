@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(631576),
     y = n(253932),
     v = n(734057),
-    j = n(31717),
-    R = n(320501),
+    R = n(31717),
+    j = n(320501),
     O = n(576705),
     L = n(522602),
     M = n(234320),
@@ -63,7 +63,7 @@ function z(e) {
                 className: W.kL,
                 children: [(0, i.jsx)(A.A, {
                     channel: s,
-                    draftType: j.C.FirstThreadMessage
+                    draftType: R.C.FirstThreadMessage
                 }), (0, i.jsx)(q, {
                     parentChannelId: t
                 }), (0, i.jsx)(X, {
@@ -80,9 +80,9 @@ function q(e) {
     let {
         parentChannelId: t
     } = e, n = l.useCallback(() => {
-        let e = j.A.getThreadSettings(t),
-            n = j.A.getDraft(t, j.C.FirstThreadMessage).trim(),
-            i = L.A.getUploads(t, j.C.FirstThreadMessage);
+        let e = R.A.getThreadSettings(t),
+            n = R.A.getDraft(t, R.C.FirstThreadMessage).trim(),
+            i = L.A.getUploads(t, R.C.FirstThreadMessage);
         e?.name != null && e?.name !== "" || 0 !== n.length || 0 !== i.length ? u.A.show({
             title: F.intl.string(F.t["6kDZh1"]),
             body: F.intl.string(F.t.NgS9jX),
@@ -125,7 +125,7 @@ function X(e) {
             setThreadSettings: p,
             updateThreadSettings: g
         } = function(e, t) {
-            let n = (0, r.bG)([j.A], () => j.A.getThreadSettings(e.id) ?? {}, [e.id]),
+            let n = (0, r.bG)([R.A], () => R.A.getThreadSettings(e.id) ?? {}, [e.id]),
                 [i, s] = l.useState(n),
                 a = l.useCallback(n => {
                     s(e => ({
@@ -149,11 +149,11 @@ function X(e) {
             let [n, i] = l.useState((0, f.N3)());
             return l.useEffect(() => {
                 function n(n) {
-                    let l = j.A.getDraft(e.id, j.C.FirstThreadMessage);
-                    (0 === l.length || !0 === n) && i((0, f.ur)(l)), t(j.A.getThreadSettings(e.id) ?? {})
+                    let l = R.A.getDraft(e.id, R.C.FirstThreadMessage);
+                    (0 === l.length || !0 === n) && i((0, f.ur)(l)), t(R.A.getThreadSettings(e.id) ?? {})
                 }
-                return n(!0), j.A.addChangeListener(n), () => {
-                    j.A.removeChangeListener(n)
+                return n(!0), R.A.addChangeListener(n), () => {
+                    R.A.removeChangeListener(n)
                 }
             }, [e.id, t]), {
                 textAreaState: n,
@@ -174,7 +174,7 @@ function X(e) {
         }),
         {
             nameError: v,
-            messageError: R,
+            messageError: j,
             submit: O,
             submitting: U
         } = function(e) {
@@ -203,7 +203,7 @@ function X(e) {
                         shouldClear: !1,
                         shouldRefocus: !1
                     };
-                    _(!0), null == e && (e = a.textValue), e = e.trim(), (null == l || 0 === l.length) && (l = S.A.getStickerPreview(t.id, Y.drafts.type)?.map(e => e.id)), (null == s || 0 === s.length) && (s = L.A.getUploads(t.id, j.C.FirstThreadMessage));
+                    _(!0), null == e && (e = a.textValue), e = e.trim(), (null == l || 0 === l.length) && (l = S.A.getStickerPreview(t.id, Y.drafts.type)?.map(e => e.id)), (null == s || 0 === s.length) && (s = L.A.getUploads(t.id, R.C.FirstThreadMessage));
                     let r = (i.name ?? "").trim(),
                         d = (o || null == n) && 0 === r.length,
                         u = "" === e && (null == l || 0 === l.length) && 0 === s.length;
@@ -302,7 +302,7 @@ function X(e) {
                         textAreaState: E,
                         setTextAreaState: x,
                         submit: O,
-                        error: R
+                        error: j
                     }), (0, i.jsx)(h.Ay, {
                         channel: n,
                         isThreadCreation: !0,
@@ -381,7 +381,7 @@ function Q(e) {
         submit: u,
         error: h
     } = e, [A, _] = l.useState(!0), m = l.useCallback(() => _(!0), []), p = l.useCallback(() => _(!1), []), g = l.useCallback((e, n, i) => {
-        d.A.saveDraft(t.id, n, j.C.FirstThreadMessage), s(e => ("" !== n && e.textValue !== n ? c.A.startTyping(t.id) : "" === n && c.A.stopTyping(t.id), {
+        d.A.saveDraft(t.id, n, R.C.FirstThreadMessage), s(e => ("" !== n && e.textValue !== n ? c.A.startTyping(t.id) : "" === n && c.A.stopTyping(t.id), {
             textValue: n,
             richValue: i
         }))
@@ -438,7 +438,7 @@ function Z(e) {
     let {
         parentChannel: t,
         parentMessageId: n
-    } = e, l = (0, r.bG)([R.A], () => null == n ? null : R.A.getMessage(t.id, n)), s = y.hH.useSetting();
+    } = e, l = (0, r.bG)([j.A], () => null == n ? null : j.A.getMessage(t.id, n)), s = y.hH.useSetting();
     return null != l ? (0, i.jsx)(T.A, {
         className: W.IL,
         message: l,

@@ -3,8 +3,8 @@ l.d(n, {
     e: () => u,
     l: () => m
 });
-var i = l(627968),
-    t = l(64700),
+var t = l(627968),
+    i = l(64700),
     s = l(397927),
     a = l(308528),
     r = l(993401),
@@ -15,7 +15,7 @@ function c(e) {
     let {
         userId: n,
         onClose: l
-    } = e, i = t.useCallback(() => {
+    } = e, t = i.useCallback(() => {
         a.A.openPrivateChannel({
             recipientIds: n
         }), l?.(), (0, s.s7G)()
@@ -23,7 +23,7 @@ function c(e) {
     return {
         action: o.pt.SEND_MESSAGE,
         icon: s.oyn,
-        onClick: i,
+        onClick: t,
         text: d.intl.string(d.t.zROXEV)
     }
 }
@@ -32,14 +32,14 @@ function u(e) {
     let {
         userId: n,
         onClose: l,
-        variant: t = "primary",
+        variant: i = "primary",
         ...s
     } = e, a = c({
         userId: n,
         onClose: l
     });
-    return (0, i.jsx)(r.FD, {
-        variant: t,
+    return (0, t.jsx)(r.FD, {
+        variant: i,
         ...a,
         ...s
     })
@@ -49,7 +49,7 @@ function m(e) {
     let {
         userId: n,
         onClose: l,
-        variant: t = "primary",
+        variant: i = "primary",
         ...s
     } = e, {
         text: a,
@@ -58,10 +58,10 @@ function m(e) {
         userId: n,
         onClose: l
     });
-    return (0, i.jsx)(r.q3, {
+    return (0, t.jsx)(r.q3, {
         tooltipText: a,
         "aria-label": a,
-        variant: t,
+        variant: i,
         ...o,
         ...s
     })

@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(837921),
     y = n(652215),
     v = n(985018),
-    j = n(922936);
-let R = [],
+    R = n(922936);
+let j = [],
     O = b.Ay.getEnableHardwareAcceleration();
 
 function L(e) {
@@ -38,7 +38,7 @@ function L(e) {
         channel: r,
         status: u,
         activities: h
-    } = e, A = (0, a.bG)([x.A], () => null != x.A.getTypingUsers(r.id)[t.id]), p = (0, a.bG)([I.default], () => I.default.getCurrentUser()), C = (0, a.bG)([f.A], () => f.A.isMobileOnline(t.id)), T = (0, a.bG)([E.A], () => E.A.getNickname(t.id)), b = (0, _.A)(t.id), j = l.useRef(null), R = e => {
+    } = e, A = (0, a.bG)([x.A], () => null != x.A.getTypingUsers(r.id)[t.id]), p = (0, a.bG)([I.default], () => I.default.getCurrentUser()), C = (0, a.bG)([f.A], () => f.A.isMobileOnline(t.id)), T = (0, a.bG)([E.A], () => E.A.getNickname(t.id)), b = (0, _.A)(t.id), R = l.useRef(null), j = e => {
         (0, o.L3)(e, async () => {
             let {
                 default: e
@@ -62,7 +62,7 @@ function L(e) {
         user: t
     }), [D, U] = l.useState(!1);
     return (0, i.jsx)(g.A, {
-        targetElementRef: j,
+        targetElementRef: R,
         user: t,
         channelId: r.id,
         position: s.Fr ? "window_center" : "left",
@@ -77,7 +77,7 @@ function L(e) {
                 ...s
             } = e;
             return (0, i.jsx)(c.A, {
-                ref: j,
+                ref: R,
                 user: t,
                 currentUser: p,
                 isOwner: t.id === r.ownerId,
@@ -88,7 +88,7 @@ function L(e) {
                 activities: h,
                 applicationStream: b,
                 channel: r,
-                onContextMenu: R,
+                onContextMenu: j,
                 selected: D,
                 isMobile: C,
                 nick: T,
@@ -127,10 +127,10 @@ function D(e) {
             n = {};
         for (let t of e) E.A.isFriend(t.id) || t.id === I.default.getCurrentUser()?.id ? n[t.id] = {
             status: f.A.getStatus(t.id) ?? y.clD.OFFLINE,
-            activities: f.A.getActivities(t.id) ?? R
+            activities: f.A.getActivities(t.id) ?? j
         } : n[t.id] = {
             status: y.clD.OFFLINE,
-            activities: R
+            activities: j
         };
         let i = [];
         for (let t of e) {
@@ -156,14 +156,14 @@ function D(e) {
     return (0, i.jsx)(h.f5, {
         value: o,
         children: (0, i.jsx)("div", {
-            className: j.kL,
+            className: R.kL,
             children: (0, i.jsx)("aside", {
-                className: j.yg,
+                className: R.yg,
                 children: (0, i.jsxs)(r.HOs, {
-                    className: j.ol,
+                    className: R.ol,
                     fade: !0,
                     children: [(0, i.jsxs)(p.A, {
-                        className: j.lL,
+                        className: R.lL,
                         children: [`${v.intl.string(v.t["9Oq93m"])}—${d.length} `, c && (0, i.jsx)(A.A, {
                             type: A.A.Types.STAFF_ONLY_DM
                         })]

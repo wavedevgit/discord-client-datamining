@@ -6,8 +6,8 @@ var i = t(627968),
     a = t(64700),
     l = t(311907),
     r = t(397927),
-    s = t(351906),
-    d = t(183555),
+    d = t(351906),
+    s = t(183555),
     o = t(382120),
     c = t(128490),
     u = t(539548),
@@ -16,8 +16,8 @@ var i = t(627968),
     A = t(738759),
     g = t(518477),
     f = t(985018),
-    m = t(643146),
-    h = t(843796);
+    h = t(643146),
+    m = t(843796);
 
 function x(e) {
     let {
@@ -26,33 +26,33 @@ function x(e) {
         currentUser: a,
         displayProfile: l,
         guildId: r,
-        channelId: s,
-        onClose: d
+        channelId: d,
+        onClose: s
     } = e;
     return n === g.RP.ACTIVITY ? (0, i.jsx)(u.A, {
         user: t,
         currentUser: a,
         guildId: r,
-        onClose: d
+        onClose: s
     }) : n === g.RP.MUTUAL_FRIENDS ? (0, i.jsx)(p.A, {
         user: t,
         guildId: r,
-        channelId: s,
-        onClose: d
+        channelId: d,
+        onClose: s
     }) : n === g.RP.MUTUAL_GUILDS ? (0, i.jsx)(A.A, {
         user: t,
-        onClose: d
+        onClose: s
     }) : n === g.RP.BOT_DATA_ACCESS ? (0, i.jsx)(o.A, {
         user: t
     }) : n === g.RP.BOT_INFO ? (0, i.jsx)(c.A, {
         user: t,
         displayProfile: l,
         guildId: r,
-        onClose: d
+        onClose: s
     }) : (0, i.jsx)(_.A, {
         user: t,
         displayProfile: l,
-        onClose: d
+        onClose: s
     })
 }
 
@@ -67,7 +67,7 @@ function I(e) {
         onClose: p
     } = e, {
         trackUserProfileAction: A
-    } = (0, d.NJ)(), I = (0, l.bG)([s.A], () => s.A.hidePersonalInformation), [b, v] = a.useState(() => u.find(e => {
+    } = (0, s.NJ)(), I = (0, l.bG)([d.A], () => d.A.hidePersonalInformation), [b, v] = a.useState(() => u.find(e => {
         let {
             section: n
         } = e;
@@ -83,20 +83,20 @@ function I(e) {
         }), v(e)
     }, [A]);
     return I ? (0, i.jsx)("div", {
-        className: h.kL,
+        className: m.kL,
         children: (0, i.jsxs)("div", {
-            className: m.Ie,
+            className: h.Ie,
             children: [(0, i.jsx)("div", {
-                className: m.hB
+                className: h.hB
             }), (0, i.jsx)("div", {
-                className: m.BI,
+                className: h.BI,
                 children: f.intl.string(f.t.Br1ls3)
             })]
         })
     }) : (0, i.jsxs)("div", {
-        className: h.kL,
+        className: m.kL,
         children: [(0, i.jsx)(r.VQ0, {
-            className: h.$H,
+            className: m.$H,
             type: "top",
             selectedItem: b,
             onItemSelect: E,
@@ -106,7 +106,7 @@ function I(e) {
                     text: t
                 } = e;
                 return (0, i.jsx)(r.VQ0.Item, {
-                    className: h.YU,
+                    className: m.YU,
                     id: n,
                     "aria-label": t,
                     children: (0, i.jsx)(r.Text, {

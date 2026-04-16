@@ -41,9 +41,9 @@ let x = (0, a.A)(e => {
         b = (0, d.uy)(a.id),
         y = (0, d.zy)(a.id, c.ip.AUDIENCE),
         v = (0, s.bG)([o.A], () => null != N ? o.A.getParticipant(a.id, N) : null),
-        j = (0, d.E5)(a.id, c.ip.SPEAKER),
-        R = j.filter(E),
-        O = null != j.find(e => e.type === c.wY.STREAM),
+        R = (0, d.E5)(a.id, c.ip.SPEAKER),
+        j = R.filter(E),
+        O = null != R.find(e => e.type === c.wY.STREAM),
         L = Math.floor((x - 32) / 102),
         M = x < 424 ? 1 : x < 624 ? 2 : x < 824 || S ? 3 : 4,
         D = {
@@ -77,7 +77,7 @@ let x = (0, a.A)(e => {
                 className: f.wx,
                 onClick: () => W(!F),
                 collapsed: F,
-                speakers: R,
+                speakers: j,
                 channel: a,
                 isStreamLive: O
             }, `speaker-header-${t}`) : 2 === t ? 0 === y ? null : (0, i.jsx)(m.A, {

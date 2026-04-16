@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(568751),
     y = n(84511),
     v = n(652215),
-    j = n(806931),
-    R = n(985018),
+    R = n(806931),
+    j = n(985018),
     O = n(325486);
 let L = `vc-gifting-${(0,a.A)()}`,
     M = Object.freeze([]);
@@ -61,7 +61,7 @@ function U(e) {
             let e = new Set,
                 t = new Set;
             for (let n of (null != k && t.add(k), w))
-                if ((0, j.Xw)(n) || (0, j.Ay)(n)) {
+                if ((0, R.Xw)(n) || (0, R.Ay)(n)) {
                     for (let i of E.A.getActivities(n.user.id))
                         if (null != i.application_id && null != P[i.application_id]) {
                             e.add(n.user.id), t.add(P[i.application_id]);
@@ -71,7 +71,7 @@ function U(e) {
         }, [w, P, k], D),
         H = (0, d.bG)([f.default], () => f.default.getId()),
         F = l.useMemo(() => {
-            let e = w.map(e => (0, j.Xw)(e) || (0, j.Ay)(e) ? e.user.id : null).filter(I.Vq);
+            let e = w.map(e => (0, R.Xw)(e) || (0, R.Ay)(e) ? e.user.id : null).filter(I.Vq);
             return (0, s.uniq)([...B, ...e])
         }, [w, B]),
         W = (0, T.v)(V),
@@ -136,12 +136,12 @@ function U(e) {
                             className: O.DD,
                             variant: "text-lg/bold",
                             color: "text-strong",
-                            children: R.intl.string(R.t.xLP3bi)
+                            children: j.intl.string(j.t.xLP3bi)
                         }), (0, i.jsx)(o.EYj, {
                             variant: "text-sm/medium",
                             color: "text-subtle",
-                            children: R.intl.format(R.t["+SqhBF"], {
-                                applicationName: Object.values(W).length > 0 ? Object.values(W)[0]?.name ?? R.intl.string(R.t["/1hhto"]) : R.intl.string(R.t["/1hhto"])
+                            children: j.intl.format(j.t["+SqhBF"], {
+                                applicationName: Object.values(W).length > 0 ? Object.values(W)[0]?.name ?? j.intl.string(j.t["/1hhto"]) : j.intl.string(j.t["/1hhto"])
                             })
                         })]
                     })

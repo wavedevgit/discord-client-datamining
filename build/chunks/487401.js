@@ -29,8 +29,8 @@ var i = n(627968),
     b = n(357746),
     y = n(816288),
     v = n(455234),
-    j = n(649247),
-    R = n(787541),
+    R = n(649247),
+    j = n(787541),
     O = n(482361),
     L = n(591346),
     M = n(769022),
@@ -713,14 +713,14 @@ class em extends l.PureComponent {
         let {
             guildChannels: e
         } = this.props, t = e.getFirstVoiceChannel();
-        if (null == t) return void R.X8("voice-conversations");
+        if (null == t) return void j.X8("voice-conversations");
         let n = this._list;
         if (null != n)
             for (let {
                     section: e,
                     row: i
                 }
-                of this.getSectionRowsFromChannel(t.id)) n.isItemVisible(e, i) || R.X8("voice-conversations")
+                of this.getSectionRowsFromChannel(t.id)) n.isItemVisible(e, i) || j.X8("voice-conversations")
     };
     render() {
         let {
@@ -791,7 +791,7 @@ let ep = e => {
     l.useEffect(() => {
         null != n && S(n)
     }, [n, S]);
-    let b = (0, j.A)(t);
+    let b = (0, R.A)(t);
     return (0, i.jsx)(_.f5, {
         value: c,
         children: (0, i.jsx)(u.A, {

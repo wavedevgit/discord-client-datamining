@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(776781),
     y = n(233993),
     v = n(446600),
-    j = n(608900),
-    R = n(533233),
+    R = n(608900),
+    j = n(533233),
     O = n(652215),
     L = n(788868),
     M = n(985018),
@@ -52,7 +52,7 @@ function U(e) {
             className: a()(D.x6, {
                 [D.vc]: d
             }),
-            children: (0, i.jsx)(j.A, {
+            children: (0, i.jsx)(R.A, {
                 toggleRequestToSpeakSidebar: () => {
                     d && c.A.updateChatOpen(t.id, !1), (0, _.X)(o, _.O.OPEN_REQUEST_TO_SPEAK_SIDEBAR), n()
                 },
@@ -78,7 +78,7 @@ function G(e) {
         channel: t,
         toggleRequestToSpeakSidebar: n,
         showRequestToSpeakSidebar: s
-    } = e, u = (0, m.Ay)(t), h = (0, r.bG)([v.A], () => v.A.getStageInstanceByChannel(t.id)), A = (0, T.uy)(t.id), _ = (0, T.zy)(t.id, S.ip.AUDIENCE), p = (0, r.bG)([I.A], () => I.A.getGuild(t.guild_id), [t.guild_id]), x = p?.maxStageVideoChannelUsers ?? 0, b = null != p && p.features.has(O.GuildFeatures.COMMUNITY) ? x < O.p2C : p?.premiumTier !== O.TVA.TIER_3 && x <= O.nyz, j = (0, R.A)(t), G = (0, r.bG)([C.A], () => C.A.can(y.QY, t)), k = () => {
+    } = e, u = (0, m.Ay)(t), h = (0, r.bG)([v.A], () => v.A.getStageInstanceByChannel(t.id)), A = (0, T.uy)(t.id), _ = (0, T.zy)(t.id, S.ip.AUDIENCE), p = (0, r.bG)([I.A], () => I.A.getGuild(t.guild_id), [t.guild_id]), x = p?.maxStageVideoChannelUsers ?? 0, b = null != p && p.features.has(O.GuildFeatures.COMMUNITY) ? x < O.p2C : p?.premiumTier !== O.TVA.TIER_3 && x <= O.nyz, R = (0, j.A)(t), G = (0, r.bG)([C.A], () => C.A.can(y.QY, t)), k = () => {
         c.A.updateStageVideoLimitBoostUpsellDismissed(t.id, !0), N.default.track(O.HAw.BOOSTING_UPSELL_CLICKED, {
             guild_id: t.guild_id,
             type: L.e.VIDEO_STAGE_LIMIT,
@@ -100,13 +100,13 @@ function G(e) {
             channel: n,
             speakerCount: i
         } = B.current;
-        j && N.default.track(O.HAw.BOOSTING_UPSELL_VIEWED, {
+        R && N.default.track(O.HAw.BOOSTING_UPSELL_VIEWED, {
             guild_id: n.guild_id,
             type: L.e.VIDEO_STAGE_LIMIT,
             is_moderator: e,
             listener_count: i + t
         })
-    }, [j]);
+    }, [R]);
     let V = (0, i.jsx)(d.NPJ, {
         theme: O.NJ8.DARK,
         children: e => (0, i.jsxs)(f.Ay, {
@@ -156,7 +156,7 @@ function G(e) {
             })]
         })
     });
-    return j ? (0, i.jsxs)("div", {
+    return R ? (0, i.jsxs)("div", {
         children: [V, (0, i.jsxs)("div", {
             className: D.bp,
             children: [(0, i.jsx)(P, {}), (0, i.jsxs)("div", {

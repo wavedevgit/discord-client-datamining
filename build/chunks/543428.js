@@ -48,17 +48,17 @@ function k(e) {
         allClips: O
     } = (0, y.a)(), {
         onShareClick: P
-    } = (0, v.A)(t), U = (0, r.bG)([p.A], () => p.A.getExportingClipIds().length > 0), [G, V] = a.useState("gallery"), [H, z] = a.useState(null), $ = (0, r.bG)([p.A], () => null != H ? p.A.getClipById(H) : null, [H]), _ = a.useRef(G);
+    } = (0, v.A)(t), U = (0, r.bG)([p.A], () => p.A.getExportingClipIds().length > 0), [G, V] = a.useState("gallery"), [z, H] = a.useState(null), $ = (0, r.bG)([p.A], () => null != z ? p.A.getClipById(z) : null, [z]), _ = a.useRef(G);
     _.current = G;
-    let [K, B] = a.useState(c.ip4.HIDDEN), F = a.useRef(null), Y = (0, C.P)(e => e.selectedGameId), X = a.useMemo(() => null == Y || "favorites" === Y ? null : T.find(e => e.applicationId === Y) ?? null, [Y, T]), Q = a.useMemo(() => "favorites" === Y ? D : X?.filteredClips ?? R, [Y, X, R, D]), q = a.useMemo(() => "favorites" === Y ? N.intl.string(N.t["9rlCk1"]) : X?.name ?? N.intl.string(N.t.dPVrEv), [Y, X]), W = a.useCallback(e => {
+    let [K, B] = a.useState(c.ip4.HIDDEN), F = a.useRef(null), X = (0, C.P)(e => e.selectedGameId), Y = a.useMemo(() => null == X || "favorites" === X ? null : T.find(e => e.applicationId === X) ?? null, [X, T]), Q = a.useMemo(() => "favorites" === X ? D : Y?.filteredClips ?? R, [X, Y, R, D]), q = a.useMemo(() => "favorites" === X ? N.intl.string(N.t["9rlCk1"]) : Y?.name ?? N.intl.string(N.t.dPVrEv), [X, Y]), W = a.useCallback(e => {
         M(t => {
             let l = new Set(t);
             return l.has(e) ? l.delete(e) : l.add(e), l
         })
     }, []), Z = a.useCallback(e => {
-        z(e.id), V("editing"), u.A.useReducedMotion && B(c.ip4.ENTERED)
+        H(e.id), V("editing"), u.A.useReducedMotion && B(c.ip4.ENTERED)
     }, []), J = a.useCallback(() => {
-        u.A.useReducedMotion && z(null), V("gallery")
+        u.A.useReducedMotion && H(null), V("gallery")
     }, []);
     a.useEffect(() => {
         let e = e => {
@@ -171,7 +171,7 @@ function k(e) {
                         className: s()(A.jN, "editing" === G && A.vu),
                         "aria-hidden": "editing" !== G,
                         onTransitionEnd: () => {
-                            "gallery" === G ? (z(null), B(c.ip4.HIDDEN)) : "editing" === G && B(c.ip4.ENTERED)
+                            "gallery" === G ? (H(null), B(c.ip4.HIDDEN)) : "editing" === G && B(c.ip4.ENTERED)
                         },
                         children: null != $ && (0, n.jsxs)(g.p, {
                             clip: $,

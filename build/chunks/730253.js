@@ -28,8 +28,8 @@ var i = n(627968),
     b = n(181079),
     y = n(422258),
     v = n(668267),
-    j = n(93055),
-    R = n(5180),
+    R = n(93055),
+    j = n(5180),
     O = n(210082),
     L = n(780645),
     M = n(332396),
@@ -58,7 +58,7 @@ function F(e) {
         {
             favoriteAdded: ei,
             clearFavoriteAdded: el
-        } = (0, j.CJ)(),
+        } = (0, R.CJ)(),
         es = l.useRef(null),
         {
             analyticsLocations: ea
@@ -77,7 +77,7 @@ function F(e) {
         eA = (0, a.bG)([N.A], () => N.A.getChannelId(D.YYv)),
         e_ = (0, a.bG)([C.A], () => C.A.getChannel(eA)),
         em = (0, E.A)(e => e.guildId),
-        ep = (0, R.ai)(em),
+        ep = (0, j.ai)(em),
         {
             badge: eg,
             unread: ef
@@ -103,7 +103,7 @@ function F(e) {
         eI = l.useRef(!1),
         {
             hasAccess: eC
-        } = (0, j.TW)("FavoritesButton"),
+        } = (0, R.TW)("FavoritesButton"),
         eN = l.useCallback((e, t) => {
             eI.current = !0, et(e, t)
         }, [et]),

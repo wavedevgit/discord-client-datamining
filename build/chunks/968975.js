@@ -56,11 +56,11 @@ function I(e) {
             }
             return e
         }, [t]),
-        j = (0, l.useMemo)(() => new Set(v.map(e => e.skuProductLine)), [v]),
-        R = (0, m.A)({
+        R = (0, l.useMemo)(() => new Set(v.map(e => e.skuProductLine)), [v]),
+        j = (0, m.A)({
             wishlistId: C ?? null,
             onAction: y,
-            productLines: j
+            productLines: R
         }),
         O = (0, l.useMemo)(() => v.map((e, l) => null == e.sku ? null : (0, i.jsx)(h.A, {
             sku: e.sku,
@@ -76,7 +76,7 @@ function I(e) {
     return 0 === O.length ? null : (0, i.jsx)("section", {
         "aria-labelledby": b,
         children: (0, i.jsxs)(p.A.Overlay, {
-            ref: R,
+            ref: j,
             className: x.kL,
             children: [(0, i.jsxs)("div", {
                 className: x.wx,
@@ -94,7 +94,7 @@ function I(e) {
                 children: [(0, i.jsx)("div", {
                     className: x.vY,
                     children: O
-                }), !D && j.has(g.EZt.SOCIAL_LAYER_GAME_ITEM) && (0, i.jsx)(c.A, {
+                }), !D && R.has(g.EZt.SOCIAL_LAYER_GAME_ITEM) && (0, i.jsx)(c.A, {
                     location: "user_profile_sidebar_wishlist_breadcrumb",
                     className: x.EK,
                     onDismiss: () => M(f.i.USER_DISMISS)
