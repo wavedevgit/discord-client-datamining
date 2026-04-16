@@ -78,7 +78,7 @@ function y(t) {
         })
     }, [x]);
     async function v() {
-        null != g && (m(!0), await (0, d.g)({
+        null != g && (h.current?.pause(), m(!0), await (0, d.g)({
             analyticsLocations: j,
             analyticsLocation: {
                 page: A.liQ.PREMIUM_GUILD_USER_MODAL,

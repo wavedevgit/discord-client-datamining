@@ -20,10 +20,10 @@ function u(e) {
     } = e, h = t.entity_type === c.Ps.EXTERNAL, _ = s.useCallback(e => (0, a.GI)(t, u)(e), [t, u]), p = (0, o.L)(t, n);
     if (null == p) return null;
     let {
-        IconComponent: g,
-        locationName: m
+        IconComponent: m,
+        locationName: g
     } = p, A = (0, i.jsxs)(i.Fragment, {
-        children: [null != g && (0, i.jsx)(g, {
+        children: [null != m && (0, i.jsx)(m, {
             size: "custom",
             color: "currentColor",
             width: 20,
@@ -33,7 +33,7 @@ function u(e) {
             color: "text-default",
             variant: "text-sm/normal",
             className: d.fN,
-            children: (0, l.l)(m, !0)
+            children: (0, l.l)(g, !0)
         })]
     });
     return (0, i.jsx)("div", {

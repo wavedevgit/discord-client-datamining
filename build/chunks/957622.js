@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(954571),
     _ = n(723702),
     p = n(877062),
-    g = n(501187),
-    m = n(652215),
+    m = n(501187),
+    g = n(652215),
     A = n(613057),
     f = n(985018);
 let E = e => {
@@ -50,15 +50,15 @@ let E = e => {
             location: a
         } = e, x = (0, r.parse)(a.search).token, [I, N] = s.useState("loading"), v = s.useRef(!1), C = s.useCallback(async e => {
             try {
-                h.default.track(m.HAw.ONE_TIME_LOGIN_ATTEMPTED, {
+                h.default.track(g.HAw.ONE_TIME_LOGIN_ATTEMPTED, {
                     source: "web_page"
-                }), await o.A.oneTimeLogin(e), N("login_success"), h.default.track(m.HAw.LOGIN_SUCCESSFUL, {
+                }), await o.A.oneTimeLogin(e), N("login_success"), h.default.track(g.HAw.LOGIN_SUCCESSFUL, {
                     source: "web_page",
                     login_method: "one_time_login"
-                }), n.g.location.assign(m.BVt.APP)
+                }), n.g.location.assign(g.BVt.APP)
             } catch (t) {
                 let e = t instanceof Error ? t.message : "Unknown error";
-                h.default.track(m.HAw.ONE_TIME_LOGIN_ERROR, {
+                h.default.track(g.HAw.ONE_TIME_LOGIN_ERROR, {
                     source: "web_page",
                     error_reason: "api_error",
                     error_message: e
@@ -68,7 +68,7 @@ let E = e => {
             let t = u.default.getFingerprint() ?? u.default.getId(),
                 n = `discord://login/one-time?token=${encodeURIComponent(e)}`;
             p.A.launch(n, e => {
-                e ? (h.default.track(m.HAw.DEEP_LINK_CLICKED, {
+                e ? (h.default.track(g.HAw.DEEP_LINK_CLICKED, {
                     source: "web_page",
                     destination: "discord://login/one-time",
                     deep_link_provider: "protocol",
@@ -82,7 +82,7 @@ let E = e => {
                 let {
                     default: s
                 } = n;
-                s.request(m.e$_.DEEP_LINK, {
+                s.request(g.e$_.DEEP_LINK, {
                     type: A.XK.ONE_TIME_LOGIN,
                     params: {
                         token: e,
@@ -90,7 +90,7 @@ let E = e => {
                         installationId: i
                     }
                 }).then(n => {
-                    n ? (h.default.track(m.HAw.DEEP_LINK_CLICKED, {
+                    n ? (h.default.track(g.HAw.DEEP_LINK_CLICKED, {
                         source: "web_page",
                         destination: "one_time_login_modal",
                         deep_link_provider: "rpc",
@@ -104,13 +104,13 @@ let E = e => {
         if (s.useEffect(() => {
                 let e = null != x && "string" == typeof x,
                     t = l.Fr ? "mobile" : l.v1 ? "tablet" : (0, _.isDesktop)() ? "desktop_app" : "web";
-                if (h.default.track(m.HAw.ONE_TIME_LOGIN_PAGE_VIEWED, {
+                if (h.default.track(g.HAw.ONE_TIME_LOGIN_PAGE_VIEWED, {
                         has_token: e,
                         device_type: t
                     }), !e) return void N("error");
                 if (l.Fr || l.v1) {
                     let e = h.default.getSuperProperties()?.os;
-                    h.default.track(m.HAw.ONE_TIME_LOGIN_APP_DETECTION_ATTEMPTED, {
+                    h.default.track(g.HAw.ONE_TIME_LOGIN_APP_DETECTION_ATTEMPTED, {
                         detection_type: "mobile_ui_shown",
                         device_type: t,
                         platform: e
@@ -119,7 +119,7 @@ let E = e => {
                 }(0, _.isDesktop)() ? C(x): v.current || (v.current = !0, N("rpc_attempting"), j(x))
             }, [x, a, C, j]), l.Fr || l.v1) {
             let e = null == x || "string" != typeof x ? "missing_token" : "invalid_token";
-            return (0, i.jsx)(g.W, {
+            return (0, i.jsx)(m.W, {
                 token: x,
                 hasError: "error" === I,
                 errorReason: e
@@ -131,7 +131,7 @@ let E = e => {
             subtitle: f.intl.string(f.t["5/lR0g"]),
             buttonText: f.intl.string(f.t["2ixEBi"]),
             buttonOnClick: () => {
-                h.default.track(m.HAw.ONE_TIME_LOGIN_CONTINUE_IN_BROWSER_CLICKED, {
+                h.default.track(g.HAw.ONE_TIME_LOGIN_CONTINUE_IN_BROWSER_CLICKED, {
                     previous_status: I
                 }), C(x)
             }
@@ -149,9 +149,9 @@ let E = e => {
                 subtitle: f.intl.string(f.t["S+YjYJ"]),
                 buttonText: f.intl.string(f.t.j3cG2p),
                 buttonOnClick: () => {
-                    h.default.track(m.HAw.ONE_TIME_LOGIN_BACK_TO_LOGIN_CLICKED, {
+                    h.default.track(g.HAw.ONE_TIME_LOGIN_BACK_TO_LOGIN_CLICKED, {
                         error_reason: e
-                    }), (0, d.pX)(m.BVt.LOGIN)
+                    }), (0, d.pX)(g.BVt.LOGIN)
                 }
             })
         }

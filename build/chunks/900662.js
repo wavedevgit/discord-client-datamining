@@ -1,8 +1,8 @@
 /** chunk id: 900662 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => m,
-    N: () => g
+    A: () => g,
+    N: () => m
 });
 var i = n(627968);
 n(64700);
@@ -18,7 +18,7 @@ var s = n(503698),
     _ = n(435115),
     p = n(885106);
 
-function g(e) {
+function m(e) {
     let {
         text: t,
         buttonCta: s,
@@ -70,7 +70,7 @@ function g(e) {
     })
 }
 
-function m(e) {
+function g(e) {
     let {
         text: t,
         buttonCta: n,
@@ -79,7 +79,7 @@ function m(e) {
     } = e;
     return (0, i.jsx)(o.Ay, {
         theme: s,
-        children: (0, i.jsx)(g, {
+        children: (0, i.jsx)(m, {
             text: t,
             buttonCta: n,
             onClick: r

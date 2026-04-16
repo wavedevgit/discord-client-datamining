@@ -1,7 +1,7 @@
 /** chunk id: 131929 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g,
+    A: () => m,
     s: () => p
 });
 var i = n(627968);
@@ -100,7 +100,7 @@ function p(e) {
     })
 }
 
-function g(e) {
+function m(e) {
     let {
         invite: t,
         channel: n,

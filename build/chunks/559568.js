@@ -15,14 +15,14 @@ var i = n(627968),
     h = n(830215),
     _ = n(961350),
     p = n(954571),
-    g = n(927813),
-    m = n(104798),
+    m = n(927813),
+    g = n(104798),
     A = n(652215),
     f = n(985018),
     E = n(909879);
 let x = "mweb_handoff_nonce",
     I = "mweb_handoff_nonce_expiration",
-    N = +g.A.Millis.MINUTE,
+    N = +m.A.Millis.MINUTE,
     v = new Set(["nonce_missing", "nonce_expired", "handoff_exchange"]),
     C = new Set(["deep_link_failed"]),
     T = () => {
@@ -34,14 +34,14 @@ let x = "mweb_handoff_nonce",
                 fingerprint: t,
                 handoff_token: n
             } = (0, r.parse)(window.location.search),
-            g = Array.isArray(t) ? t.length > 1 ? t[0] : null : t,
-            j = g ?? (null !== e ? e : void 0);
+            m = Array.isArray(t) ? t.length > 1 ? t[0] : null : t,
+            j = m ?? (null !== e ? e : void 0);
         s.useEffect(() => {
-            null !== g && e !== g && u.h.dispatch({
+            null !== m && e !== m && u.h.dispatch({
                 type: "FINGERPRINT",
-                fingerprint: g
+                fingerprint: m
             })
-        }, [g, e]);
+        }, [m, e]);
         let [S, y] = s.useState(null), b = s.useCallback(e => {
             y(e), p.default.track(A.HAw.MOBILE_WEB_HANDOFF_FAILURE, {
                 reason: e,
@@ -97,7 +97,7 @@ let x = "mweb_handoff_nonce",
                 variant: "overlay-primary",
                 text: f.intl.string(f.t.NcC759),
                 onClick: () => {
-                    let e = m.A.generateNonce();
+                    let e = g.A.generateNonce();
                     c.w.set(x, e), c.w.set(I, Date.now() + N);
                     let t = new URL(A.J$u),
                         n = new URLSearchParams(window.location.search);

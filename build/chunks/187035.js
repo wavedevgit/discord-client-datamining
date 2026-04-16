@@ -1,7 +1,7 @@
 /** chunk id: 187035 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => B
+    A: () => D
 });
 var i = n(627968),
     s = n(64700),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(10088),
     _ = n(122906),
     p = n(225858),
-    g = n(121623),
-    m = n(895600),
+    m = n(121623),
+    g = n(895600),
     A = n(768397),
     f = n(942614),
     E = n(210714),
@@ -36,12 +36,12 @@ var i = n(627968),
     w = n(379790),
     k = n(885106);
 c.Ay.initialize();
-class D extends s.PureComponent {
+class B extends s.PureComponent {
     componentDidMount() {
         (0, E.d)("guildTemplate"), O.VP || v.A.launch("discord://" + S.BVt.GUILD_TEMPLATE(this.props.code), () => void 0)
     }
     componentDidUpdate(e) {
-        this.props.code !== e.code && g.A.resolveGuildTemplate(this.props.code)
+        this.props.code !== e.code && m.A.resolveGuildTemplate(this.props.code)
     }
     handleContinue = () => {
         let {
@@ -146,14 +146,14 @@ class D extends s.PureComponent {
     }
 }
 
-function B(e) {
+function D(e) {
     let t = {
         guildTemplate: (0, c.bG)([_.A], () => _.A.getGuildTemplate(e.code)),
         nativeAppState: (0, c.bG)([h.A], () => h.A.getState(e.code)),
         authenticated: (0, c.bG)([I.default], () => I.default.isAuthenticated()),
         defaultRoute: (0, c.bG)([N.A], () => N.A.defaultRoute)
     };
-    return (0, i.jsx)(D, {
+    return (0, i.jsx)(B, {
         ...e,
         ...t
     })
@@ -182,7 +182,7 @@ function P(e) {
     });
     return (0, i.jsx)(T.A, {
         className: w.sL,
-        children: () => [(0, i.jsx)(m.A, {
+        children: () => [(0, i.jsx)(g.A, {
             guildTemplate: t
         }, "template"), (0, i.jsx)("div", {
             className: w.KJ,

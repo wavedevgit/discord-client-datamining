@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(718446),
     _ = n(427157),
     p = n(650048),
-    g = n(652215),
-    m = n(431144),
+    m = n(652215),
+    g = n(431144),
     A = n(355097),
     f = n(985018),
     E = n(885106);
@@ -35,7 +35,7 @@ class x extends s.PureComponent {
         let e = (0, c.A)(this.props.location),
             t = (0, r.parse)(this.props.location.search);
         a.Bo.post({
-            url: g.Rsh.DISABLE_EMAIL_NOTIFICATIONS,
+            url: m.Rsh.DISABLE_EMAIL_NOTIFICATIONS,
             body: {
                 token: e,
                 pixel_uuid: t.hash,
@@ -105,7 +105,7 @@ class x extends s.PureComponent {
             category: s
         } = this.state;
         if (null != s) {
-            let e = m.px.find(e => e.category === s);
+            let e = g.px.find(e => e.category === s);
             if (null != e) return this.renderCategorySuccess(s, e.label())
         }
         return (0, i.jsxs)(d.Ay, {

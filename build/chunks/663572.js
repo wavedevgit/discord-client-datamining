@@ -23,11 +23,11 @@ function p(e) {
         disableUser: p = !1
     } = e;
     if (null == t) return null;
-    let g = null != t.guild ? (0, o.DY)(t.guild) : null,
-        m = null != t.channel ? (0, l.OY)(t.channel) : null,
+    let m = null != t.guild ? (0, o.DY)(t.guild) : null,
+        g = null != t.channel ? (0, l.OY)(t.channel) : null,
         A = null != t.target_application ? new r.Ay(t.target_application) : null,
         f = p || null == t.inviter ? null : new a.A(t.inviter),
-        E = !(null != t.approximate_member_count && t.approximate_member_count > c.FC || null != g && g.features.has(u.GuildFeatures.COMMUNITY)) && null != f && (0, c.B_)(t),
+        E = !(null != t.approximate_member_count && t.approximate_member_count > c.FC || null != m && m.features.has(u.GuildFeatures.COMMUNITY)) && null != f && (0, c.B_)(t),
         x = (e => {
             let {
                 state: t
@@ -43,20 +43,20 @@ function p(e) {
         I = {
             invite: t,
             user: f,
-            guild: g,
-            channel: m,
+            guild: m,
+            channel: g,
             application: A
         };
     return (0, c.Fk)(t) ? (0, i.jsx)(d.A, {
         invite: t,
-        channel: m,
+        channel: g,
         isSubmitting: x,
         onAcceptInvite: n
     }) : (0, i.jsxs)("div", {
         className: _.kL,
         children: [(0, i.jsx)(c.zN, {
             application: A,
-            guild: g,
+            guild: m,
             user: E || (0, c.PX)(t) ? f : null
         }), (0, c.PX)(t) ? null : (0, i.jsx)(c.ji, {
             ...I,

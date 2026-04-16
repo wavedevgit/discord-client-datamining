@@ -11,8 +11,8 @@ e.exports = function(e, t, n, o) {
         var _ = a(t[c]),
             p = n;
         if (c != u) {
-            var g = h[_];
-            void 0 === (p = o ? o(g, _, h) : void 0) && (p = l(g) ? g : r(t[c + 1]) ? [] : {})
+            var m = h[_];
+            void 0 === (p = o ? o(m, _, h) : void 0) && (p = l(m) ? m : r(t[c + 1]) ? [] : {})
         }
         i(h, _, p), h = h[_]
     }

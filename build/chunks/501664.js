@@ -1,20 +1,20 @@
 /** chunk id: 501664 params = (module,exports,require) **/
-a.d(t, {
+n.d(t, {
     A: () => d
 });
-var n = a(627968);
-a(64700);
-var r = a(503698),
-    i = a.n(r),
-    s = a(993408),
-    l = a(506742),
-    o = a(219103),
-    c = a(137935);
+var a = n(627968);
+n(64700);
+var r = n(503698),
+    i = n.n(r),
+    s = n(993408),
+    l = n(506742),
+    o = n(219103),
+    c = n(137935);
 
 function d(e) {
     let {
         product: t,
-        isPremiumUser: a,
+        isPremiumUser: n,
         discount: r,
         className: d,
         discountOfferAmount: u,
@@ -22,7 +22,7 @@ function d(e) {
         nitroIconType: p,
         nitroIconSize: _ = "md"
     } = e, h = (0, s.WD)(t, {
-        isPremiumUser: a,
+        isPremiumUser: n,
         discount: r
     });
     if (null == h) return null;
@@ -30,9 +30,9 @@ function d(e) {
         defaultPrice: x,
         showDefaultPriceOnly: f
     } = h;
-    if (f) return (0, n.jsx)("div", {
+    if (f) return (0, a.jsx)("div", {
         className: i()(c.kG, d),
-        children: (0, n.jsx)(o.x, {
+        children: (0, a.jsx)(o.x, {
             priceAmount: x.amount,
             priceCurrency: x.currency
         })
@@ -42,12 +42,12 @@ function d(e) {
         originalPrice: v,
         finalPrice: A
     } = h;
-    return (0, n.jsxs)("div", {
+    return (0, a.jsxs)("div", {
         className: i()(c.kG, d),
-        children: [m ? null : (0, n.jsx)(l.a, {
+        children: [m ? null : (0, a.jsx)(l.a, {
             price: v,
             className: c.q9
-        }), (0, n.jsx)(o.x, {
+        }), (0, a.jsx)(o.x, {
             priceAmount: A.amount,
             priceCurrency: A.currency,
             discount: r,

@@ -22,8 +22,8 @@ function h(e) {
         onAcceptInvite: _
     } = e, {
         gamesToDisplay: p,
-        lastGameToDisplay: g,
-        remainingGames: m
+        lastGameToDisplay: m,
+        remainingGames: g
     } = (0, a.A)(h), A = function(e) {
         let {
             state: t
@@ -64,8 +64,8 @@ function h(e) {
                         children: f
                     }), (0, i.jsx)(o.A, {
                         gamesToDisplay: p,
-                        lastGameToDisplay: g,
-                        remainingGames: m,
+                        lastGameToDisplay: m,
+                        remainingGames: g,
                         activity: h.gameActivity
                     })]
                 })]

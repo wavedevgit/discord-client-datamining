@@ -23,7 +23,7 @@ function p(e) {
         name: n,
         onNameChange: s,
         onNameFocus: p,
-        onNameBlur: g
+        onNameBlur: m
     } = e;
     return (0, i.jsxs)(c.Ay, {
         className: t,
@@ -41,7 +41,7 @@ function p(e) {
                     placeholder: u.intl.string(u.t["09Q8yp"]),
                     onChange: s,
                     onFocus: p,
-                    onBlur: g
+                    onBlur: m
                 })
             }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",

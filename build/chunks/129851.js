@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(397927),
     _ = n(73153),
     p = n(830215),
-    g = n(6981),
-    m = n(574052),
+    m = n(6981),
+    g = n(574052),
     A = n(15552),
     f = n(212640),
     E = n(854378),
@@ -36,8 +36,8 @@ var i = n(627968),
     L = n(913612),
     w = n(210714),
     k = n(933924),
-    D = n(961350),
-    B = n(115036),
+    B = n(961350),
+    D = n(115036),
     P = n(650048),
     U = n(954571),
     G = n(203982),
@@ -99,7 +99,7 @@ class J extends s.PureComponent {
             invite: i,
             location: s
         } = this.props;
-        e && !t ? (0, g.ST)() : t && this.loginOrSSO(t, s, !0), U.default.track(K.HAw.LOGIN_VIEWED, {
+        e && !t ? (0, m.ST)() : t && this.loginOrSSO(t, s, !0), U.default.track(K.HAw.LOGIN_VIEWED, {
             location: null != i ? "Invite Login Page" : "Non-Invite Login Page",
             login_source: this.loginSource,
             authenticated: t,
@@ -140,7 +140,7 @@ class J extends s.PureComponent {
             else if (null != n.channel) return "dm_invite";
             else if (null != n.inviter) return "friend_invite"
         }
-        return null != s ? (0, m.Q)(s) : null
+        return null != s ? (0, g.Q)(s) : null
     }
     get giftCodeSKUId() {
         let {
@@ -183,7 +183,7 @@ class J extends s.PureComponent {
             let e = window.location.protocol + window.GLOBAL_ENV.API_ENDPOINT + K.Rsh.SSO,
                 t = {
                     ...s,
-                    token: D.default.getToken()
+                    token: B.default.getToken()
                 };
             window.location = `${e}?${(0,a.stringify)(t)}`
         }
@@ -737,13 +737,13 @@ class J extends s.PureComponent {
 }
 let $ = function(e) {
     (0, L.K)();
-    let t = (0, d.cf)([B.A, P.A, D.default, j.A, b.A], () => ({
-        authenticated: D.default.isAuthenticated(),
-        handoffAvailable: B.A.isHandoffAvailable(),
-        user: B.A.user,
-        loginStatus: D.default.getLoginStatus(),
-        mfaTicket: D.default.getMFATicket(),
-        mfaMethods: D.default.getMFAMethods(),
+    let t = (0, d.cf)([D.A, P.A, B.default, j.A, b.A], () => ({
+        authenticated: B.default.isAuthenticated(),
+        handoffAvailable: D.A.isHandoffAvailable(),
+        user: D.A.user,
+        loginStatus: B.default.getLoginStatus(),
+        mfaTicket: B.default.getMFATicket(),
+        mfaMethods: B.default.getMFAMethods(),
         defaultRoute: P.A.defaultRoute,
         country: b.A.getCountryCode(),
         hasLoggedInAccounts: j.A.getHasLoggedInAccounts()

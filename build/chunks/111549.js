@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(397927),
     _ = n(73153),
     p = n(846293),
-    g = n(198982),
-    m = n(964486),
+    m = n(198982),
+    g = n(964486),
     A = n(475743),
     f = n(17841),
     E = n(829691),
@@ -35,8 +35,8 @@ var i = n(627968),
     L = n(299091),
     w = n(954571),
     k = n(975571),
-    D = n(4274),
-    B = n(877062),
+    B = n(4274),
+    D = n(877062),
     P = n(890698),
     U = n(129851),
     G = n(229),
@@ -249,8 +249,8 @@ function et(e) {
                     (0, E.v)(e), null != e.channel && p.Ay.openApp(t, e.channel.id)
                 }
             }).catch(e => {
-                if (e instanceof g.Wl || e instanceof g.LG) {
-                    let t = (0, D.s)(e.code);
+                if (e instanceof m.Wl || e instanceof m.LG) {
+                    let t = (0, B.s)(e.code);
                     K({
                         code: e.code,
                         message: t
@@ -264,7 +264,7 @@ function et(e) {
         el = s.useCallback(() => {
             r(N)
         }, [N, r]);
-    if ((0, m.Ay)(() => {
+    if ((0, g.Ay)(() => {
             let e = b.default.getAnalyticsToken();
             if (null != e && _.h.dispatch({
                     type: "SET_ANALYTICS_TOKEN",
@@ -274,7 +274,7 @@ function et(e) {
                     invite_code: t
                 }, {
                     flush: !0
-                }), (0, y.d)("invite"), W.VP || B.A.launch("discord://" + F.BVt.INVITE(t), () => void 0), !l && k) {
+                }), (0, y.d)("invite"), W.VP || D.A.launch("discord://" + F.BVt.INVITE(t), () => void 0), !l && k) {
                 let {
                     baseCode: e
                 } = (0, T.y$)(t);
@@ -292,7 +292,7 @@ function et(e) {
                 getAcceptInviteContext: d,
                 handleContinue: u,
                 transitionTo: h
-            } = e, _ = (0, A.A)(i), g = (0, A.A)(r);
+            } = e, _ = (0, A.A)(i), m = (0, A.A)(r);
             s.useEffect(() => {
                 if (l === Q && i && !1 === _) {
                     let e = b.default.getFingerprint();
@@ -326,7 +326,7 @@ function et(e) {
                         } else p.Ay.transitionToInvite(t, h)
                 }
             }, [t, i, _, h, l]), s.useEffect(() => {
-                null != t && r !== g && r === F.fAW.OPEN && w.default.track(F.HAw.INVITE_APP_INVOKED, {
+                null != t && r !== m && r === F.fAW.OPEN && w.default.track(F.HAw.INVITE_APP_INVOKED, {
                     invite_code: (0, T.m0)(n),
                     guild_id: t.guild?.id,
                     channel_id: t.channel?.id,
@@ -335,7 +335,7 @@ function et(e) {
                     size_total: t.approximate_member_count,
                     invite_type: null != t.type ? M.Xd[t.type] : void 0
                 })
-            }, [t, r, g, n])
+            }, [t, r, m, n])
         }({
             invite: h,
             inviteKey: t,

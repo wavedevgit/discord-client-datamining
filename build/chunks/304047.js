@@ -1,7 +1,7 @@
 /** chunk id: 304047 params = (module,exports,require) **/
 n.d(t, {
-    M: () => x,
-    X: () => C
+    M: () => C,
+    X: () => E
 });
 var i = n(627968),
     l = n(64700),
@@ -21,49 +21,19 @@ var i = n(627968),
     f = n(633916);
 
 function E(e) {
-    let {
-        applicationName: t,
-        applicationIcon: n,
-        tooltipText: l,
-        shouldShowTooltip: a,
-        onClick: r,
-        "aria-expanded": o,
-        "aria-haspopup": u
-    } = e;
-    return (0, i.jsx)(c.m, {
-        text: l,
-        shouldShow: a,
-        children: (0, i.jsxs)(d.DUT, {
-            className: s()(f.dY, f.ac),
-            onClick: r,
-            "aria-label": l,
-            "aria-expanded": o,
-            "aria-haspopup": u,
-            children: [n(), null != t && (0, i.jsx)(d.Text, {
-                variant: "text-sm/normal",
-                className: f.Wk,
-                children: p.intl.format(p.t.Sq9xJ7, {
-                    game: t
-                })
-            })]
-        })
-    })
-}
-
-function C(e) {
     let t, {
             applicationId: n,
             hideApplicationName: a
         } = e,
-        s = (0, m.A)({
+        o = (0, m.A)({
             location: "SocialLayerCommerceGameDetailsButton",
             applicationId: n,
             source: h.Ob.CallTile,
             trackEntryPointImpression: !0
         }),
         {
-            name: o,
-            icon: c
+            name: A,
+            icon: E
         } = (t = (0, r.bG)([u.A], () => u.A.getApplication(n)), l.useMemo(() => {
             if (null == t) return null;
             let e = t.getIconURL(_.iu.SMALL);
@@ -80,15 +50,28 @@ function C(e) {
                 })
             }
         }, [t]) ?? {});
-    return null == s || null == c ? null : (0, i.jsx)(E, {
-        applicationName: a ? void 0 : o,
-        applicationIcon: c,
-        tooltipText: p.intl.string(p.t.ajHoOr),
-        onClick: s
+    if (null == o || null == E) return null;
+    let C = p.intl.string(p.t.ajHoOr);
+    return (0, i.jsx)(c.m, {
+        text: C,
+        children: (0, i.jsxs)(d.DUT, {
+            className: s()(f.dY, f.ac, {
+                [f.M7]: a
+            }),
+            onClick: o,
+            "aria-label": C,
+            children: [E(), !a && (0, i.jsx)(d.Text, {
+                variant: "text-sm/normal",
+                className: f.Wk,
+                children: p.intl.format(p.t.Sq9xJ7, {
+                    game: A
+                })
+            })]
+        })
     })
 }
 
-function x(e) {
+function C(e) {
     let {
         userId: t,
         applicationId: n,

@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(525711),
     _ = n(787610),
     p = n(293731),
-    g = n(961350),
-    m = n(723702),
+    m = n(961350),
+    g = n(723702),
     A = n(427262),
     f = n(837921),
     E = n(652215),
@@ -103,7 +103,7 @@ function S(e) {
                         textVariant: "text-sm/normal",
                         onClick: () => {
                             let e;
-                            return e = m.isPlatformEmbedded && f.Ay.supportsFeature(E.BYE.WEBAUTHN) ? f.Ay.webAuthnAuthenticate : p.J, void a.A.authenticatePasswordless({
+                            return e = g.isPlatformEmbedded && f.Ay.supportsFeature(E.BYE.WEBAUTHN) ? f.Ay.webAuthnAuthenticate : p.J, void a.A.authenticatePasswordless({
                                 authenticateFunc: e,
                                 conditionalMediationAbortController: r
                             }).catch(() => {})
@@ -152,7 +152,7 @@ function y(e) {
     let {
         onAuthenticateSuccess: t,
         conditionalMediationAbortController: n
-    } = e, s = (0, r.bG)([g.default], () => g.default.getIsPasswordlessActive()), a = (0, c.A)(), {
+    } = e, s = (0, r.bG)([m.default], () => m.default.getIsPasswordlessActive()), a = (0, c.A)(), {
         state: o,
         cancel: d
     } = (0, _.H)(t, a), u = function(e) {

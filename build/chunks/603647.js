@@ -15,8 +15,8 @@ var s = n(627968),
     h = n(942156),
     _ = n(574094),
     p = n(49463),
-    g = n(976860),
-    m = n(426660),
+    m = n(976860),
+    g = n(426660),
     A = n(652215),
     f = n(339086);
 let E = n(843020),
@@ -41,7 +41,7 @@ function j(e) {
     switch (n) {
         case "default":
             return (0, s.jsxs)(s.Fragment, {
-                children: [u ? (0, s.jsx)(m.A, {}) : (0, s.jsx)("img", {
+                children: [u ? (0, s.jsx)(g.A, {}) : (0, s.jsx)("img", {
                     className: f.xX,
                     src: E,
                     alt: ""
@@ -74,14 +74,14 @@ class S extends r.Component {
         window.removeEventListener("resize", this.handleResize)
     }
     mobileTransitionTo(e, t) {
-        if (N(e))(0, g.pX)(e, t);
+        if (N(e))(0, m.pX)(e, t);
         else {
             let n = null != t && null != t.search ? t.search : null;
             window.location = null == n ? e : `${e}?${n}`
         }
     }
     mobileReplaceWith(e) {
-        N(e) ? (0, g.bG)(e) : window.location = e
+        N(e) ? (0, m.bG)(e) : window.location = e
     }
     renderDefault() {
         let {
@@ -89,8 +89,8 @@ class S extends r.Component {
         } = this.props, t = (0, s.jsx)(u.A, {
             component: r.Fragment,
             children: r.Children.map(this.props.children, e => r.cloneElement(e, {
-                transitionTo: g.pX,
-                replaceWith: g.bG
+                transitionTo: m.pX,
+                replaceWith: m.bG
             }))
         });
         return (0, s.jsx)("div", {

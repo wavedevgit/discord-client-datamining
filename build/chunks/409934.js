@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(396681),
     _ = n(854378),
     p = n(652215),
-    g = n(985018),
-    m = n(885106);
+    m = n(985018),
+    g = n(885106);
 l.Ay.initialize();
 class A extends s.PureComponent {
     static defaultProps = {
@@ -69,23 +69,23 @@ class A extends s.PureComponent {
         } = this.state;
         return (0, i.jsxs)(_.Ay, {
             children: [(0, i.jsx)(_.hE, {
-                className: m.QB,
-                children: g.intl.string(g.t.Z33eiP)
+                className: g.QB,
+                children: m.intl.string(m.t.Z33eiP)
             }), (0, i.jsx)(_.tK, {
-                children: g.intl.format(g.t.NRWtfC, {
+                children: m.intl.format(m.t.NRWtfC, {
                     guildName: n.name
                 })
             }), (0, i.jsx)("div", {
-                className: m.eT,
+                className: g.eT,
                 children: (0, i.jsx)(o.Button, {
-                    text: g.intl.string(g.t.fIv16B),
+                    text: m.intl.string(m.t.fIv16B),
                     fullWidth: !0,
                     onClick: () => t(e)
                 })
             }), (0, i.jsx)("div", {
-                className: m.Ot,
+                className: g.Ot,
                 children: (0, i.jsx)(o.QWc, {
-                    text: g.intl.string(g.t["cGmT/J"]),
+                    text: m.intl.string(m.t["cGmT/J"]),
                     onClick: () => {
                         t(p.BVt.USER_GUILD_NOTIFICATION_SETTINGS(n.id))
                     }
@@ -101,16 +101,16 @@ class A extends s.PureComponent {
         return (0, i.jsxs)(_.Ay, {
             children: [(0, i.jsx)(_._V, {
                 src: n(37772),
-                className: m.SX
+                className: g.SX
             }), (0, i.jsx)(_.hE, {
-                className: m.QB,
-                children: g.intl.string(g.t.ox9hIS)
+                className: g.QB,
+                children: m.intl.string(m.t.ox9hIS)
             }), (0, i.jsx)(_.tK, {
-                children: g.intl.string(g.t["/dcuR5"])
+                children: m.intl.string(m.t["/dcuR5"])
             }), (0, i.jsx)("div", {
-                className: m.eT,
+                className: g.eT,
                 children: (0, i.jsx)(o.Button, {
-                    text: g.intl.string(g.t.fIv16B),
+                    text: m.intl.string(m.t.fIv16B),
                     fullWidth: !0,
                     onClick: () => t(e)
                 })

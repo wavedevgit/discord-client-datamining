@@ -31,23 +31,23 @@ function N(e) {
     } = e, [N, T] = l.useState(!1), S = (0, m.AO)(n), b = (0, r.bG)([g.A], () => g.A.getDetectableIdsToApplicationIds()), y = S?.id, v = null != y ? b[y] : null, R = (0, h.h)(v), {
         isLoading: j,
         applicationWidgetConfig: O,
-        hasApplicationWidgetOnUserProfile: L
+        profileApplicationWidget: L
     } = (0, u.A)(t.id, v, "social_layer_commerce_stream_header"), M = (0, r.bG)([E.default], () => E.default.getId()), D = l.useRef(null), [U, G] = (0, _.RF)(o.M.SLAYER_STOREFRONT_VC_GIFTING_STREAM_HEADER_NEW_BADGE, (0, A.c)(o.M.SLAYER_STOREFRONT_VC_GIFTING_STREAM_HEADER_NEW_BADGE), void 0, !0), P = U === o.M.SLAYER_STOREFRONT_VC_GIFTING_STREAM_HEADER_NEW_BADGE, {
         hasAlreadyLinked: k,
         canStartAuthorization: w,
         fetched: B
     } = (0, c.RD)(M === t.id ? R : null), V = M === t.id && w && !B, H = l.useCallback(() => {
         T(!1)
-    }, []), F = null != O && (k || w), {
-        isAppIcon: W,
-        icon: K,
-        text: Y,
-        renderPopout: z
+    }, []), F = null != L, W = null != O && (k || w), {
+        isAppIcon: K,
+        icon: Y,
+        text: z,
+        renderPopout: q
     } = l.useMemo(() => {
         if (null == R || null == v) return {
             isAppIcon: !1
         };
-        if (L || F) {
+        if (F || W) {
             let e = R.getIconURL(p.iu.SMALL),
                 n = null != e,
                 l = n ? (0, i.jsx)("img", {
@@ -95,8 +95,8 @@ function N(e) {
                 onClose: H
             })
         }
-    }, [R, v, L, F, M, t.id, s, H]);
-    return j || V || null == z ? null : (0, i.jsx)(d.YNO, {
+    }, [R, v, F, W, M, t.id, s, H]);
+    return j || V || null == q ? null : (0, i.jsx)(d.YNO, {
         targetElementRef: D,
         shouldShow: N,
         animation: d.YNO.Animation.FADE,
@@ -104,7 +104,7 @@ function N(e) {
         align: "center",
         spacing: 8,
         onRequestClose: H,
-        renderPopout: z,
+        renderPopout: q,
         children: () => (0, i.jsxs)("div", {
             className: C.kL,
             ref: D,
@@ -115,16 +115,16 @@ function N(e) {
                 },
                 "aria-expanded": N,
                 "aria-haspopup": "dialog",
-                children: [null != K && (0, i.jsx)("div", {
+                children: [null != Y && (0, i.jsx)("div", {
                     className: a()(C.zc, {
-                        [C.RT]: W
+                        [C.RT]: K
                     }),
-                    children: K
+                    children: Y
                 }), (0, i.jsx)(d.Text, {
                     variant: "text-sm/normal",
                     color: "text-strong",
                     lineClamp: 1,
-                    children: Y
+                    children: z
                 })]
             }), P && (0, i.jsx)(d.Exy, {
                 type: "new",

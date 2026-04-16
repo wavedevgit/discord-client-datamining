@@ -15,15 +15,15 @@ var i = n(627968),
     h = n(334465),
     _ = n(976860),
     p = n(961350),
-    g = n(129851),
-    m = n(652215),
+    m = n(129851),
+    g = n(652215),
     A = n(746080);
 
 function f(e) {
     let t = s.useCallback(t => {
             let n;
             (n = (0, h.B)(t, {
-                path: m.BVt.CHANNEL(u.pv.guildId(), u.pv.channelId())
+                path: g.BVt.CHANNEL(u.pv.guildId(), u.pv.channelId())
             }), +(n?.params?.channelId !== A.VV.ROLE_SUBSCRIPTIONS)) ? (e.transitionTo ?? _.pX)(t) : _.bG(t)
         }, [e.transitionTo]),
         {
@@ -72,7 +72,7 @@ function f(e) {
                 })
             }
         }
-    }), I || f === m.aUe.LOGGING_IN) ? (0, i.jsx)(g.Z, {}) : (0, i.jsx)(g.A, {
+    }), I || f === g.aUe.LOGGING_IN) ? (0, i.jsx)(m.Z, {}) : (0, i.jsx)(m.A, {
         ...e,
         transitionTo: t
     })

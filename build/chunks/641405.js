@@ -1,25 +1,25 @@
 /** chunk id: 641405 params = (module,exports,require) **/
-a.d(t, {
+n.d(t, {
     A: () => o
 });
-var n = a(627968),
-    r = a(397927),
-    i = a(450481),
-    s = a(758836),
-    l = a(985018);
+var a = n(627968),
+    r = n(397927),
+    i = n(450481),
+    s = n(758836),
+    l = n(985018);
 let o = e => {
     let {
         product: t,
-        onSuccess: a,
+        onSuccess: n,
         onTrackClick: o
     } = e, {
         handleUseNow: c,
         isApplying: d
     } = (0, i.p)({
         product: t,
-        onSuccess: a
+        onSuccess: n
     });
-    return (0, n.jsx)(r.Button, {
+    return (0, a.jsx)(r.Button, {
         variant: "primary",
         onClick: () => {
             o?.(s.sH.USE_NOW), c()

@@ -219,7 +219,7 @@ function X(e) {
             isLoading: c,
             application: d,
             applicationWidgetConfig: g,
-            hasApplicationWidgetOnUserProfile: f
+            profileApplicationWidget: f
         } = (0, A.A)(t, n, a), {
             fetched: S,
             hasAlreadyLinked: I,
@@ -256,7 +256,7 @@ function X(e) {
                     onClick: y
                 })
             })
-        }) : I && !f && null != d ? (0, i.jsx)("div", {
+        }) : I && null == f && null != d ? (0, i.jsx)("div", {
             className: V.OQ,
             children: (0, i.jsx)(o.EYj, {
                 variant: "text-xs/normal",
@@ -315,7 +315,7 @@ function X(e) {
                     guildId: a.guild_id,
                     channelId: a.id,
                     disableInteraction: !0,
-                    disableCTA: !0,
+                    disableCTA: null != L,
                     embedded: !0
                 }), L]
             }) : (0, i.jsx)(Y, {

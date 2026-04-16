@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(869038),
     _ = n(846293),
     p = n(526423),
-    g = n(745399),
-    m = n(549711),
+    m = n(745399),
+    g = n(549711),
     A = n(829691),
     f = n(212640),
     E = n(409934),
@@ -35,8 +35,8 @@ var i = n(627968),
     L = n(30793),
     w = n(299091),
     k = n(954571),
-    D = n(139675),
-    B = n(612181),
+    B = n(139675),
+    D = n(612181),
     P = n(486020),
     U = n(952072),
     G = n(765624),
@@ -71,8 +71,8 @@ let er = (0, G.A)(Y.A),
     eh = (0, G.A)(et.A),
     e_ = (0, G.A)(M.A),
     ep = (0, G.A)(en.A),
-    eg = (0, G.A)(x.A),
-    em = (0, G.A)(ee.A),
+    em = (0, G.A)(x.A),
+    eg = (0, G.A)(ee.A),
     eA = (0, G.A)(W.A),
     ef = (0, G.A)(E.A),
     eE = (0, G.A)(C.A),
@@ -80,7 +80,7 @@ let er = (0, G.A)(Y.A),
     eI = (0, G.A)(H.A),
     eN = (0, G.A)(J.A),
     ev = (0, G.A)(Z.A),
-    eC = (0, G.A)(g.A),
+    eC = (0, G.A)(m.A),
     eT = (0, G.A)(S.A);
 class ej extends s.PureComponent {
     state = {
@@ -97,13 +97,13 @@ class ej extends s.PureComponent {
         } = t, l = (0, r.parse)(i.search).redirect_to ?? null;
         (null == l || "" === l || l.startsWith(ei.BVt.ME) || !(0, o.e)(l) && !(0, f.RZ)(l)) && (l = null);
         let a = null;
-        if (null == n) a = (0, B.u8)(l);
+        if (null == n) a = (0, D.u8)(l);
         else if (n?.state === ei.elq.RESOLVED) {
             let {
                 guild: e,
                 target_application: t
             } = n;
-            null != t ? null != s && (a = (0, D.uD)(t.id, s, 1024)) : null != e && "string" == typeof e.splash && (a = P.Ay.getGuildSplashURL({
+            null != t ? null != s && (a = (0, B.uD)(t.id, s, 1024)) : null != e && "string" == typeof e.splash && (a = P.Ay.getGuildSplashURL({
                 id: e.id,
                 splash: e.splash
             }))
@@ -140,7 +140,7 @@ class ej extends s.PureComponent {
             let {
                 target_application: t
             } = e;
-            null != t && (0, D.RG)(t.id, ["embedded_splash"]).then(e => {
+            null != t && (0, B.RG)(t.id, ["embedded_splash"]).then(e => {
                 let [t] = e;
                 return this.setState({
                     backgroundId: t
@@ -186,43 +186,43 @@ class ej extends s.PureComponent {
         } = this.props;
         return (0, i.jsxs)(F.A, {
             splash: e,
-            children: [(0, i.jsx)(m.A, {
+            children: [(0, i.jsx)(g.A, {
                 path: ei.BVt.LOGIN_HANDOFF,
                 render: e => (0, i.jsx)(el, {
                     ...e,
                     redirectTo: t
                 })
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 path: ei.BVt.LOGIN_ONE_TIME,
                 render: e => (0, i.jsx)(eT, {
                     ...e
                 })
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 impressionName: l.ImpressionNames.USER_LOGIN,
                 path: ei.BVt.LOGIN,
                 render: e => (0, i.jsx)(er, {
                     ...e,
                     redirectTo: t
                 })
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 impressionName: l.ImpressionNames.USER_REGISTRATION,
                 path: ei.BVt.REGISTER,
                 render: e => (0, i.jsx)(eu, {
                     ...e,
                     redirectTo: t
                 })
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 path: ei.BVt.GIFT_CODE_LOGIN(":giftCode"),
                 render: e => (0, i.jsx)(ec, {
                     login: !0,
                     ...e
                 })
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 path: ei.BVt.GIFT_CODE(":giftCode"),
                 render: e => (0, i.jsx)(ec, {
                     ...e
                 })
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 path: [ei.BVt.INVITE_LOGIN(":inviteCode"), ei.BVt.INVITE(":inviteCode")],
                 render: e => {
                     let {
@@ -245,7 +245,7 @@ class ej extends s.PureComponent {
                         login: n === ei.BVt.INVITE_LOGIN(":inviteCode")
                     }, l)
                 }
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 path: [ei.BVt.GUILD_TEMPLATE_LOGIN(":guildTemplateCode"), ei.BVt.GUILD_TEMPLATE(":guildTemplateCode")],
                 render: e => {
                     let {
@@ -267,85 +267,85 @@ class ej extends s.PureComponent {
                         login: n === ei.BVt.GUILD_TEMPLATE_LOGIN(":guildTemplateCode")
                     })
                 }
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 path: ei.BVt.VERIFY,
                 render: e => (0, i.jsx)(ep, {
                     ...e
                 })
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 path: ei.BVt.VERIFY_HUB_EMAIL,
                 render: e => (0, i.jsx)(eE, {
                     ...e
                 })
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 path: ei.BVt.VERIFY_REQUEST,
-                render: e => (0, i.jsx)(eg, {
+                render: e => (0, i.jsx)(em, {
                     ...e
                 })
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 path: ei.BVt.DISABLE_EMAIL_NOTIFICATIONS,
                 render: e => (0, i.jsx)(eA, {
                     ...e
                 })
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 path: ei.BVt.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
                 render: e => (0, i.jsx)(ef, {
                     ...e
                 })
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 path: ei.BVt.AUTHORIZE_IP,
                 render: e => (0, i.jsx)(eh, {
                     ...e
                 })
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 path: ei.BVt.REJECT_IP,
-                render: e => (0, i.jsx)(em, {
+                render: e => (0, i.jsx)(eg, {
                     source: ei.BVt.REJECT_IP,
                     ...e
                 })
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 path: ei.BVt.REJECT_MFA,
-                render: e => (0, i.jsx)(em, {
+                render: e => (0, i.jsx)(eg, {
                     source: ei.BVt.REJECT_MFA,
                     ...e
                 })
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 path: ei.BVt.AUTHORIZE_PAYMENT,
                 render: e => (0, i.jsx)(e_, {
                     ...e
                 })
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 path: ei.BVt.RESET,
-                render: e => (0, i.jsx)(em, {
+                render: e => (0, i.jsx)(eg, {
                     source: ei.BVt.RESET,
                     ...e
                 })
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 path: ei.BVt.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
                 render: e => (0, i.jsx)(eN, {
                     ...e
                 })
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 path: ei.BVt.CHANNELS_GAME_SHOP(y.pv.guildId(), ":pageIndex", ":skuId", ":slug?"),
                 render: e => (0, i.jsx)(eI, {
                     ...e
                 })
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 path: ei.BVt.CHANNEL(y.pv.guildId(), y.pv.channelId({
                     optional: !0
                 }), ":messageId?"),
                 render: e => (0, i.jsx)(ex, {
                     ...e
                 })
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 path: ei.BVt.REPORT,
                 render: () => (0, i.jsx)(R.Kz, {})
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 path: ei.BVt.REPORT_SECOND_LOOK,
                 render: e => (0, i.jsx)(ev, {
                     ...e
                 })
-            }), (0, i.jsx)(m.A, {
+            }), (0, i.jsx)(g.A, {
                 path: ei.BVt.ACCOUNT_REVERT(":token"),
                 render: e => (0, i.jsx)(eC, {
                     ...e

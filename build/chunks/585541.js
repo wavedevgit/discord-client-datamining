@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(499785),
     _ = n(524832),
     p = n(652215),
-    g = n(985018),
-    m = n(651068),
+    m = n(985018),
+    g = n(651068),
     A = n(885106);
 
 function f(e) {
@@ -33,7 +33,7 @@ function f(e) {
             src: null == C ? n(79418) : n(579656),
             className: l()(A.SX, A.Ot)
         }), (0, i.jsx)(d.hE, {
-            children: g.intl.string(g.t.IfBQ56)
+            children: m.intl.string(m.t.IfBQ56)
         }), null != C && "" !== C ? (0, i.jsx)(o.Text, {
             variant: "text-sm/normal",
             color: "text-feedback-critical",
@@ -43,7 +43,7 @@ function f(e) {
             children: [(0, i.jsx)(d.pd, {
                 name: "password",
                 type: "password",
-                label: g.intl.string(g.t["8dM4FO"]),
+                label: m.intl.string(m.t["8dM4FO"]),
                 setRef: y,
                 className: A.SX,
                 value: j,
@@ -51,16 +51,16 @@ function f(e) {
                 error: N,
                 autoComplete: "new-password",
                 maxLength: 72,
-                placeholder: g.intl.string(g.t["yY/PXY"])
+                placeholder: m.intl.string(m.t["yY/PXY"])
             }), (0, i.jsx)("div", {
                 className: A.Ot,
                 children: (0, i.jsx)(o.Button, {
-                    text: g.intl.string(g.t.ezv91b),
+                    text: m.intl.string(m.t.ezv91b),
                     fullWidth: !0,
                     onClick: () => {
                         if (!x) {
                             if (0 === j.length) {
-                                v(g.intl.string(g.t.R98xD5)), u._.dispatch(p.jej.WAVE_EMPHASIZE);
+                                v(m.intl.string(m.t.R98xD5)), u._.dispatch(p.jej.WAVE_EMPHASIZE);
                                 return
                             }
                             return null != C && T(null), null != N && v(null), t(""), I(!0), h.A.post({
@@ -81,7 +81,7 @@ function f(e) {
                                 } = e;
                                 S(""), t(n), r(_.k.SUCCESS)
                             }).catch(e => {
-                                if (e instanceof Error) T(g.intl.formatToPlainString(g.t.aTVNes, {
+                                if (e instanceof Error) T(m.intl.formatToPlainString(m.t.aTVNes, {
                                     statusPageURL: p.qF7.STATUS
                                 }));
                                 else {
@@ -89,13 +89,13 @@ function f(e) {
                                     t.hasFieldErrors() ? v(t.getAnyErrorMessage()) : T((function(e) {
                                         switch (e) {
                                             case p.t02.ACCOUNT_REVERT_INVALID_TOKEN:
-                                                return g.intl.string(g.t["11zzGR"]);
+                                                return m.intl.string(m.t["11zzGR"]);
                                             case p.t02.ACCOUNT_REVERT_EMAIL_ALREADY_TAKEN:
-                                                return g.intl.string(g.t["6qmgaI"]);
+                                                return m.intl.string(m.t["6qmgaI"]);
                                             case p.t02.ACCOUNT_REVERT_ACCOUNT_NOT_FOUND:
-                                                return g.intl.string(g.t.bChnKs);
+                                                return m.intl.string(m.t.bChnKs);
                                             default:
-                                                return g.intl.format(g.t.aTVNes, {
+                                                return m.intl.format(m.t.aTVNes, {
                                                     statusPageURL: p.qF7.STATUS
                                                 })
                                         }
@@ -112,9 +112,9 @@ function f(e) {
                 })
             })]
         }), (0, i.jsx)("div", {
-            className: m.UD,
+            className: g.UD,
             children: (0, i.jsx)(o.Button, {
-                text: g.intl.string(g.t.rzxnQ8),
+                text: m.intl.string(m.t.rzxnQ8),
                 variant: "secondary",
                 fullWidth: !0,
                 onClick: () => {

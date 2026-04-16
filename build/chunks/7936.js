@@ -16,8 +16,8 @@ var i = n(627968),
     _ = n(854378);
 n(53516);
 var p = n(985018),
-    g = n(435115),
-    m = n(885106);
+    m = n(435115),
+    g = n(885106);
 let A = () => {
     let [e, t] = s.useState(""), [r, A] = s.useState(""), [f, E] = s.useState(!1), [x, I] = s.useState(!1), [N, v] = s.useState(null), [C, T] = s.useState(null), j = (0, a.bG)([u.A], () => u.A.getCountryCode()), S = j.code.split(" ")[0], y = async () => {
         try {
@@ -41,11 +41,11 @@ let A = () => {
         children: [(0, i.jsx)(_._V, {
             src: n(142041)
         }), (0, i.jsxs)(_.hE, {
-            className: l()(m.QX, g.Uu, g.wq, g.Hu),
+            className: l()(g.QX, m.Uu, m.wq, m.Hu),
             children: [p.intl.string(p.t.WWzQta), (0, i.jsx)(o.yr3, {
                 size: "md",
                 color: "currentColor",
-                className: m.oY
+                className: g.oY
             })]
         })]
     });
@@ -53,10 +53,10 @@ let A = () => {
         children: [(0, i.jsx)(_.hE, {
             children: p.intl.string(p.t.o4JNrO)
         }), (0, i.jsx)(_.tK, {
-            className: m.Ot,
+            className: g.Ot,
             children: p.intl.string(p.t.y0tVbq)
         }), (0, i.jsxs)(_.eB, {
-            className: m.QX,
+            className: g.QX,
             children: [(0, i.jsx)(h.A, {
                 label: p.intl.string(p.t["eJnn0+"]),
                 alpha2: j.alpha2,
@@ -68,7 +68,7 @@ let A = () => {
                 forceMode: d.Pd.PHONE,
                 error: N
             }), (0, i.jsx)(_.pd, {
-                className: m.QX,
+                className: g.QX,
                 label: p.intl.string(p.t.OdzNbm),
                 value: r,
                 onChange: A,
@@ -78,7 +78,7 @@ let A = () => {
                 text: p.intl.string(p.t["5b60gi"]),
                 onClick: y
             }), (0, i.jsx)("div", {
-                className: m.QX,
+                className: g.QX,
                 children: (0, i.jsx)(o.Button, {
                     text: p.intl.string(p.t.i4jeWR),
                     fullWidth: !0,

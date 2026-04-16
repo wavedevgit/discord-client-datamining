@@ -15,8 +15,8 @@ var i, s = n(627968),
     h = n(427157),
     _ = n(961350),
     p = n(351906),
-    g = n(287809),
-    m = n(954571),
+    m = n(287809),
+    g = n(954571),
     A = n(427262),
     f = n(429707),
     E = n(274303),
@@ -35,8 +35,8 @@ function T(e) {
         currentUser: r,
         hidePrivateData: l,
         isAuthenticated: x
-    } = (0, o.cf)([g.default, p.A, _.default], () => ({
-        currentUser: g.default.getCurrentUser(),
+    } = (0, o.cf)([m.default, p.A, _.default], () => ({
+        currentUser: m.default.getCurrentUser(),
         hidePrivateData: p.A.hidePersonalInformation,
         isAuthenticated: _.default.isAuthenticated()
     })), C = new h.A(n), T = x && r?.id === C.id, j = n.tokenStatus === E.U.INVALID, S = l || C.hasUniqueUsername() ? null : `#${C.discriminator}`, y = null;
@@ -84,7 +84,7 @@ function T(e) {
                     variant: "secondary",
                     text: j ? N.intl.string(N.t["DSN+hw"]) : t,
                     onClick: function() {
-                        j ? i(0, n.id) : (m.default.track(I.HAw.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
+                        j ? i(0, n.id) : (g.default.track(I.HAw.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
                             location: {
                                 section: I.JJy.MANAGE_ACCOUNTS_MODAL
                             }
@@ -110,7 +110,7 @@ function T(e) {
                                         let e;
                                         d.A.logout("multi_accounts_list", null, n.id).finally(() => {
                                             f.At(n.id)
-                                        }), e = {}, null != r ? e.section = I.JJy.MANAGE_ACCOUNTS_MODAL : e.page = I.S3d.LOGIN, m.default.track(I.HAw.MULTI_ACCOUNT_ACCOUNT_REMOVE, {
+                                        }), e = {}, null != r ? e.section = I.JJy.MANAGE_ACCOUNTS_MODAL : e.page = I.S3d.LOGIN, g.default.track(I.HAw.MULTI_ACCOUNT_ACCOUNT_REMOVE, {
                                             location: e
                                         }), i(2, n.id), null != t && t()
                                     },

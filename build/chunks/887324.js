@@ -15,8 +15,8 @@ var i, s = n(627968),
     h = n(17372),
     _ = n(369053),
     p = n(961350),
-    g = n(975571),
-    m = n(204173),
+    m = n(975571),
+    g = n(204173),
     A = n(19992),
     f = n(501334),
     E = n(759788),
@@ -53,11 +53,11 @@ let C = e => {
         let L = T.filter(e => e !== h.tY.MEDIA_TAKEDOWN),
             w = T.includes(h.tY.MEDIA_TAKEDOWN),
             k = L.length > 0,
-            D = k && w,
-            B = i || !R;
+            B = k && w,
+            D = i || !R;
         r.useEffect(() => {
-            B || k || w || n()
-        }, [B, k, w, n]);
+            D || k || w || n()
+        }, [D, k, w, n]);
         let P = r.useCallback(() => {
                 (0, o.mMO)(() => Promise.resolve(e => (0, s.jsx)(C, {
                     ...e
@@ -68,9 +68,9 @@ let C = e => {
             U = r.useCallback((e, t) => {
                 "selection" !== t && "selection" !== e ? y("selection") : y(e)
             }, []),
-            G = r.useMemo(() => (0, m.i)(h.tY.MEDIA_TAKEDOWN, P), [P]),
-            F = S ?? (D ? "selection" : k ? "dsa" : "tida");
-        if (B || !k && !w) return (0, s.jsx)(l.Modal, {
+            G = r.useMemo(() => (0, g.i)(h.tY.MEDIA_TAKEDOWN, P), [P]),
+            F = S ?? (B ? "selection" : k ? "dsa" : "tida");
+        if (D || !k && !w) return (0, s.jsx)(l.Modal, {
             title: "",
             actions: [],
             transitionState: t,
@@ -86,11 +86,11 @@ let C = e => {
                 children: (0, s.jsx)(o.y$y, {})
             })
         });
-        if (!D) {
+        if (!B) {
             if (k) return (0, s.jsx)(l.Modal, {
                 title: I.intl.string(I.t.Z11w18),
                 subtitle: I.intl.format(I.t["532l+q"], {
-                    supportURL: g.A.getArticleURL(x.MVz.COPYRIGHT_AND_IP_POLICY)
+                    supportURL: m.A.getArticleURL(x.MVz.COPYRIGHT_AND_IP_POLICY)
                 }),
                 actions: [],
                 transitionState: t,
@@ -125,7 +125,7 @@ let C = e => {
             modalProps: {
                 title: I.intl.string(I.t.Z11w18),
                 subtitle: I.intl.format(I.t["532l+q"], {
-                    supportURL: g.A.getArticleURL(x.MVz.COPYRIGHT_AND_IP_POLICY)
+                    supportURL: m.A.getArticleURL(x.MVz.COPYRIGHT_AND_IP_POLICY)
                 })
             },
             body: (0, s.jsx)(A.c, {
