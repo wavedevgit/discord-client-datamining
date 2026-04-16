@@ -16,15 +16,15 @@ var r = n(158954),
     x = n(800007),
     _ = n(799435),
     g = n(985018),
-    f = n(111526);
+    h = n(111526);
 
-function h(e) {
+function f(e) {
     let {
         step: t,
         setFooterNode: n
     } = (0, m.bv)(), i = (0, o.U)("GameServerSetupModal"), {
         title: d,
-        subtitle: h
+        subtitle: f
     } = function(e) {
         switch (e) {
             case x.HS.SELECT_GAME:
@@ -42,15 +42,15 @@ function h(e) {
         size: "lg",
         children: [(0, l.jsx)(r.rQ0, {
             title: d,
-            subtitle: h
+            subtitle: f
         }), i && (0, l.jsx)("div", {
-            className: f.M,
+            className: h.M,
             children: (0, l.jsx)(s.A, {
                 look: s.k.WARNING,
                 children: g.intl.format(_.default.XzXjK2, {})
             })
         }), (0, l.jsx)(a.IpV, {
-            className: f.j,
+            className: h.j,
             style: {
                 width: x.ST
             },
@@ -84,7 +84,7 @@ function j(e) {
         value: t,
         children: (0, l.jsx)(m.mf, {
             ...e,
-            children: (0, l.jsx)(h, {
+            children: (0, l.jsx)(f, {
                 ...e
             })
         })

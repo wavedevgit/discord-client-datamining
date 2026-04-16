@@ -91,14 +91,14 @@ function V() {
     }), O = e, R = t, !0)
 }
 
-function j(e) {
+function H(e) {
     let {
         id: t
     } = e, n = h.A.getChannel(t);
     return null == n ? G.clearGuildId(t) : G.clearGuildId(n.guild_id)
 }
 
-function H(e) {
+function j(e) {
     let {
         guildId: t
     } = e;
@@ -159,9 +159,9 @@ let W = new F(s.h, {
     BULK_CLEAR_RECENTS: P,
     CACHE_LOADED_LAZY: U,
     CATEGORY_COLLAPSE_ALL: P,
-    CATEGORY_COLLAPSE: j,
+    CATEGORY_COLLAPSE: H,
     CATEGORY_EXPAND_ALL: P,
-    CATEGORY_EXPAND: j,
+    CATEGORY_EXPAND: H,
     CHANNEL_ACK: M,
     CHANNEL_COLLAPSE: function(e) {
         let {
@@ -312,8 +312,8 @@ let W = new F(s.h, {
             null != n[e].guildRecentsDismissedAt && (i = G.updateRecentsCategory(e) || i)
         }), i
     },
-    VOICE_CATEGORY_COLLAPSE: H,
-    VOICE_CATEGORY_EXPAND: H,
+    VOICE_CATEGORY_COLLAPSE: j,
+    VOICE_CATEGORY_EXPAND: j,
     VOICE_CHANNEL_SELECT: V,
     VOICE_CHANNEL_STATUS_UPDATE: function(e) {
         return G.nonPositionalChannelIdUpdate(e.id)
