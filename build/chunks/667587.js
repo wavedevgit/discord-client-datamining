@@ -1,7 +1,7 @@
 /** chunk id: 667587 params = (module,exports,require) **/
 "use strict";
 n.r(t), n.d(t, {
-    default: () => P
+    default: () => U
 });
 var l = n(627968),
     i = n(64700),
@@ -16,8 +16,8 @@ var l = n(627968),
     g = n(47167),
     m = n(713654),
     x = n(414618),
-    p = n(526132),
-    A = n(97469),
+    A = n(526132),
+    p = n(97469),
     f = n(406704),
     C = n(544028),
     b = n(95701),
@@ -78,8 +78,8 @@ class B extends i.PureComponent {
             category: s,
             canManageRoles: r,
             canManageChannels: h,
-            canDeleteChannels: p,
-            canManageWebhooks: A,
+            canDeleteChannels: A,
+            canManageWebhooks: p,
             canUnlinkChannel: f
         } = this.props;
         return null == i ? null : (0, l.jsx)(c.Ay, {
@@ -97,13 +97,13 @@ class B extends i.PureComponent {
                     canDeleteChannels: r,
                     canManageWebhooks: c,
                     canUnlinkChannel: h
-                } = e, p = (0, m.gU)(t), {
-                    GUILD_CATEGORY: A
-                } = O.rbe, f = b.Le.has(t.type), C = t.type === A ? G.intl.string(G.t.ifbXnL) : f ? t.isForumPost() ? G.intl.string(G.t.nEOg1N) : G.intl.string(G.t.H7vTe2) : G.intl.string(G.t["8D8Rsb"]);
+                } = e, A = (0, m.gU)(t), {
+                    GUILD_CATEGORY: p
+                } = O.rbe, f = b.Le.has(t.type), C = t.type === p ? G.intl.string(G.t.ifbXnL) : f ? t.isForumPost() ? G.intl.string(G.t.nEOg1N) : G.intl.string(G.t.H7vTe2) : G.intl.string(G.t["8D8Rsb"]);
                 return [{
                     section: u.Fq.HEADER,
                     label: null != t ? (0, l.jsxs)(l.Fragment, {
-                        children: [null != p ? (0, l.jsx)(p, {
+                        children: [null != A ? (0, l.jsx)(A, {
                             size: "xxs",
                             color: "currentColor",
                             className: k.p
@@ -140,7 +140,7 @@ class B extends i.PureComponent {
                     label: G.intl.string(G.t["9F90ic"]),
                     element: R.A,
                     type: u.Py.CUSTOM,
-                    predicate: () => t.type !== A && s && !f && !t.isModeratorReportChannel()
+                    predicate: () => t.type !== p && s && !f && !t.isModeratorReportChannel()
                 }, {
                     section: O.p_A.INTEGRATIONS,
                     label: G.intl.string(G.t.s69NLF),
@@ -176,19 +176,19 @@ class B extends i.PureComponent {
                 category: s,
                 canManageRoles: r,
                 canManageChannels: h,
-                canDeleteChannels: p,
-                canManageWebhooks: A,
+                canDeleteChannels: A,
+                canManageWebhooks: p,
                 canUnlinkChannel: f
             })
         })
     }
 }
 
-function P() {
+function U() {
     let {
         channel: e,
         analyticsLocation: t
-    } = (0, s.cf)([v.A], () => v.A.getProps()), n = (0, s.bG)([v.A], () => v.A.getFormState()), i = (0, s.bG)([v.A], () => v.A.getSection()), a = (0, s.bG)([C.A], () => C.A.theme), r = (0, A.NC)(), o = (0, f.NI)(e), d = (0, f.H_)(e), {
+    } = (0, s.cf)([v.A], () => v.A.getProps()), n = (0, s.bG)([v.A], () => v.A.getFormState()), i = (0, s.bG)([v.A], () => v.A.getSection()), a = (0, s.bG)([C.A], () => C.A.theme), r = (0, p.NC)(), o = (0, f.NI)(e), d = (0, f.H_)(e), {
         canManageChannels: c,
         canManageRoles: u,
         canManageWebhooks: h,
@@ -197,7 +197,7 @@ function P() {
         canManageChannels: y.A.can(O.xBc.MANAGE_CHANNELS, e),
         canManageRoles: null != e && y.A.can(O.xBc.MANAGE_ROLES, e),
         canManageWebhooks: null != e && y.A.can(O.xBc.MANAGE_WEBHOOKS, e),
-        canUnlinkChannel: (0, p.n)(e, y.A)
+        canUnlinkChannel: (0, A.n)(e, y.A)
     })), m = (0, s.bG)([_.A], () => _.A.getChannel(e?.parent_id));
     return (0, l.jsx)(B, {
         channel: e,

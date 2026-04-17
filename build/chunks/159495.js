@@ -17,8 +17,8 @@ var l = n(627968),
     g = n(582754),
     m = n(397927),
     x = n(157559),
-    p = n(308528),
-    A = n(702805),
+    A = n(308528),
+    p = n(702805),
     f = n(442433),
     C = n(508384),
     b = n(155718),
@@ -40,8 +40,8 @@ var l = n(627968),
     k = n(695184),
     D = n(975571),
     B = n(562153),
-    P = n(558393),
-    U = n(488926),
+    U = n(558393),
+    P = n(488926),
     V = n(427262),
     H = n(786033),
     F = n(13948),
@@ -54,7 +54,7 @@ let Z = u.Ay.connectStores([S.A, I.A], () => {
     return {
         submitting: S.A.formState === Y.XlH.SUBMITTING,
         onReset() {
-            (0, A.Ts)()
+            (0, p.Ts)()
         },
         onSave() {
             if (null == e) return;
@@ -62,7 +62,7 @@ let Z = u.Ay.connectStores([S.A, I.A], () => {
                 let n = S.A.getPermissionOverwrite(t);
                 return null != n && e.push(n), e
             }, []);
-            (0, A.R$)(e.id, t)
+            (0, p.R$)(e.id, t)
         }
     }
 })(h.A);
@@ -99,7 +99,7 @@ function Q(e) {
                     allow: i,
                     deny: s
                 }
-            }))(0, A.LA)(n, t.id, i, s);
+            }))(0, p.LA)(n, t.id, i, s);
         else {
             let e;
             if (t.type === b.r2.MEMBER) {
@@ -117,7 +117,7 @@ function Q(e) {
     }, h = e => {
         let t = w.A.can(Y.xBc.ADMINISTRATOR, i) || w.A.can(Y.xBc.MANAGE_ROLES, n, void 0, void 0, !0);
         return n.isGuildStageVoice() && y.Zq.has(e) ? W.intl.string(W.t.bTS5lf) : !((!d.aI(e, Y.xBc.MANAGE_ROLES) || t) && (null == e || w.A.can(e, i) || t)) && W.intl.string(W.t.nOtPMM)
-    }, g = t.id === a, f = n.isForumLikeChannel() && d.zy(t.deny, Y.xBc.SEND_MESSAGES), C = d.zy(t.deny, Y.xBc.SEND_MESSAGES), j = d.zy(t.deny, Y.xBc.READ_MESSAGE_HISTORY), N = P.A.generateChannelPermissionSpec(a, n, g, {
+    }, g = t.id === a, f = n.isForumLikeChannel() && d.zy(t.deny, Y.xBc.SEND_MESSAGES), C = d.zy(t.deny, Y.xBc.SEND_MESSAGES), j = d.zy(t.deny, Y.xBc.READ_MESSAGE_HISTORY), N = U.A.generateChannelPermissionSpec(a, n, g, {
         createPostsDisabled: f,
         sendMessagesDisabled: C,
         readMessageHistoryDisabled: j
@@ -144,7 +144,7 @@ function Q(e) {
                         name: e
                     }),
                     cancelText: W.intl.string(W.t["ETE/oC"]),
-                    onConfirm: () => p.A.clearPermissionOverwrite(r, t.id)
+                    onConfirm: () => A.A.clearPermissionOverwrite(r, t.id)
                 })
             }
         })]
@@ -302,7 +302,7 @@ function K() {
                                 name: a
                             }),
                             cancelText: W.intl.string(W.t["ETE/oC"]),
-                            onConfirm: () => p.A.clearPermissionOverwrite(s.id, e)
+                            onConfirm: () => A.A.clearPermissionOverwrite(s.id, e)
                         })
                     }
                 })
@@ -310,14 +310,14 @@ function K() {
         }, [s, c]);
     if (null == c || null == h || null == s || null == a) return null;
     let M = (e, t) => {
-        p.A.updatePermissionOverwrite(s.id, {
+        A.A.updatePermissionOverwrite(s.id, {
             id: e,
             type: t,
-            allow: U.x3,
-            deny: U.x3
-        }).then(() => (0, A.G9)(e))
+            allow: P.x3,
+            deny: P.x3
+        }).then(() => (0, p.G9)(e))
     };
-    null != a && null == a[c.id] && (a[c.id] = U.xT(c.id));
+    null != a && null == a[c.id] && (a[c.id] = P.xT(c.id));
     let w = h.filter(e => a[e.id]?.type === b.r2.ROLE).map(e => (0, l.jsx)(C.A, {
             theme: y,
             roleStyle: E,
@@ -365,7 +365,7 @@ function K() {
         className: J.uA,
         scrollable: !0,
         children: (0, l.jsxs)(m.VQ0, {
-            onItemSelect: A.G9,
+            onItemSelect: p.G9,
             selectedItem: r,
             orientation: "vertical",
             children: [(e = (0, g.Mw)(y) ? n(546716) : n(233497), (0, l.jsx)(m.YNO, {

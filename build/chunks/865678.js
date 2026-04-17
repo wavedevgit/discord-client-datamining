@@ -1,7 +1,7 @@
 /** chunk id: 865678 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => eA,
+    A: () => ep,
     w: () => em
 }), n(938796), n(667532);
 var l = n(627968),
@@ -17,8 +17,8 @@ var l = n(627968),
     g = n(582754),
     m = n(397927),
     x = n(73153),
-    p = n(435183),
-    A = n(534963),
+    A = n(435183),
+    p = n(534963),
     f = n(820284),
     C = n(432371),
     b = n(323073),
@@ -40,8 +40,8 @@ var l = n(627968),
     k = n(474078),
     D = n(71397),
     B = n(544028),
-    P = n(95701),
-    U = n(260509),
+    U = n(95701),
+    P = n(260509),
     V = n(961350),
     H = n(863036),
     F = n(71393),
@@ -91,7 +91,7 @@ let eo = (0, T.Ld)(),
             channel: e,
             submitting: t,
             onReset() {
-                null != e && (0, p.Ts)(e.id)
+                null != e && (0, A.Ts)(e.id)
             },
             onSave() {
                 if (null == e) return;
@@ -110,7 +110,7 @@ let eo = (0, T.Ld)(),
                     template: h,
                     rtcRegion: g,
                     videoQualityMode: m,
-                    defaultReactionEmoji: A,
+                    defaultReactionEmoji: p,
                     availableTags: f,
                     defaultSortOrder: C,
                     defaultForumLayout: b,
@@ -121,7 +121,7 @@ let eo = (0, T.Ld)(),
                     errors: {
                         name: es.intl.string(es.t.uXA573)
                     }
-                }) : (0, p.RT)(e.id, {
+                }) : (0, A.RT)(e.id, {
                     name: t,
                     type: n,
                     topic: l,
@@ -138,7 +138,7 @@ let eo = (0, T.Ld)(),
                     template: h,
                     rtcRegion: g,
                     videoQualityMode: m,
-                    defaultReactionEmoji: A,
+                    defaultReactionEmoji: p,
                     availableTags: f,
                     defaultSortOrder: C,
                     defaultForumLayout: b,
@@ -189,20 +189,12 @@ function ex(e) {
                 ref: a,
                 active: n,
                 className: ea.Z8,
-                tabIndex: 0,
-                focusProps: {
-                    offset: {
-                        top: 10,
-                        bottom: 10,
-                        left: -4,
-                        right: 10
-                    }
-                }
+                tabIndex: 0
             })
         }
     })
 }
-class ep extends i.PureComponent {
+class eA extends i.PureComponent {
     defaultReactionButtonRef = i.createRef();
     nameInputRef = i.createRef();
     cursorPosition = 0;
@@ -210,7 +202,7 @@ class ep extends i.PureComponent {
     channelTopicTextAreaGuildId = void 0;
     getChannelTopicTextAreaChannel(e) {
         let t = e ?? void 0;
-        return (null == this.channelTopicTextAreaChannel || this.channelTopicTextAreaGuildId !== t) && (this.channelTopicTextAreaGuildId = t, this.channelTopicTextAreaChannel = (0, P.createChannelRecord)({
+        return (null == this.channelTopicTextAreaChannel || this.channelTopicTextAreaGuildId !== t) && (this.channelTopicTextAreaGuildId = t, this.channelTopicTextAreaChannel = (0, U.createChannelRecord)({
             id: "1",
             type: et.rbe.DM,
             guild_id: t
@@ -227,7 +219,7 @@ class ep extends i.PureComponent {
         }
     }
     componentDidMount() {
-        null == this.props.regions && null != this.props.guild && A.A.fetchRegions(this.props.guild.id)
+        null == this.props.regions && null != this.props.guild && p.A.fetchRegions(this.props.guild.id)
     }
     componentDidUpdate(e) {
         let t = this.props.channel?.topic ?? "";
@@ -262,14 +254,14 @@ class ep extends i.PureComponent {
                 canManageThread: h,
                 guild: g,
                 isForumPost: x,
-                isOwner: p,
-                showSpoilerChannelSetting: A
+                isOwner: A,
+                showSpoilerChannelSetting: p
             } = this.props,
-            C = P.Le.has(e.type),
+            C = U.Le.has(e.type),
             j = e.isForumLikeChannel(),
             v = j && e.availableTags?.every(e => e.moderated),
             y = J.default.getCurrentUser()?.isStaff() === !0,
-            T = P.IY.has(e.type) ? (0, l.jsx)(m.D0$, {
+            T = U.IY.has(e.type) ? (0, l.jsx)(m.D0$, {
                 label: j ? es.intl.string(es.t.yR6HwZ) : es.intl.string(es.t.X8jMDh),
                 children: (0, l.jsx)(_.Ay, {
                     className: a()(ea.zm, {
@@ -435,7 +427,7 @@ class ep extends i.PureComponent {
                 channel: e,
                 onChange: this.handleChangeSlowmode
             }),
-            H = P.nb.has(e.type) ? j ? (0, l.jsxs)(l.Fragment, {
+            H = U.nb.has(e.type) ? j ? (0, l.jsxs)(l.Fragment, {
                 children: [(0, l.jsx)(m.cGx, {}), (0, l.jsxs)(m.nVY, {
                     label: es.intl.string(es.t.O1c02q),
                     children: [V, (0, l.jsx)(m.Apm, {
@@ -472,7 +464,7 @@ class ep extends i.PureComponent {
                 })
             }) : null,
             W = (0, b.Gc)(e),
-            z = null != g && (0, U.wh)(g),
+            z = null != g && (0, P.wh)(g),
             Z = "none";
         W ? Z = "nsfw" : e.isSpoilerChannel() && (Z = "spoiler");
         let X = [{
@@ -488,7 +480,7 @@ class ep extends i.PureComponent {
                 name: es.intl.string(es.t.Es25Yf),
                 desc: es.intl.string(es.t["9eUgwR"])
             }],
-            q = A && P.LE.has(e.type) ? (0, l.jsxs)(m.BJc, {
+            q = p && U.LE.has(e.type) ? (0, l.jsxs)(m.BJc, {
                 gap: 4,
                 padding: {
                     top: 8,
@@ -504,7 +496,7 @@ class ep extends i.PureComponent {
                     messageType: m.YCn.WARNING,
                     children: es.intl.string(es.t.EvavKG)
                 }) : null]
-            }) : P.LE.has(e.type) ? (0, l.jsxs)(m.BJc, {
+            }) : U.LE.has(e.type) ? (0, l.jsxs)(m.BJc, {
                 gap: 4,
                 children: [(0, l.jsx)(m.dOG, {
                     label: es.intl.string(es.t.Es25Yf),
@@ -517,7 +509,7 @@ class ep extends i.PureComponent {
                     children: es.intl.string(es.t.l6uSVa)
                 }) : null]
             }) : null,
-            el = P.xR.has(e.type) && null != g && g.features.has(et.GuildFeatures.NEWS) && e.id !== g?.rulesChannelId && e.id !== g?.publicUpdatesChannelId ? (0, l.jsxs)(m.BJc, {
+            el = U.xR.has(e.type) && null != g && g.features.has(et.GuildFeatures.NEWS) && e.id !== g?.rulesChannelId && e.id !== g?.publicUpdatesChannelId ? (0, l.jsxs)(m.BJc, {
                 gap: 4,
                 children: [(0, l.jsx)(m.dOG, {
                     label: es.intl.string(es.t.Au2b7m),
@@ -532,7 +524,7 @@ class ep extends i.PureComponent {
                     children: es.intl.string(es.t["2Ab4Id"])
                 })]
             }) : null,
-            er = P.wE.has(e.type) ? (0, l.jsx)(f.A, {
+            er = U.wE.has(e.type) ? (0, l.jsx)(f.A, {
                 page: et.liQ.CHANNEL_SETTINGS,
                 children: (0, l.jsx)(D.A, {
                     isDisabled: !s,
@@ -559,7 +551,7 @@ class ep extends i.PureComponent {
                 disabled: !s
             }) : null;
         e.type === et.rbe.GUILD_CATEGORY ? (i = es.intl.string(es.t.OCAkGP), n = "category-name") : e.isForumPost() ? (i = es.intl.string(es.t.uyVrTN), n = "post-title") : C ? (i = es.intl.string(es.t.j3XWjD), n = "thread-name") : (i = es.intl.string(es.t.PVbHDl), n = "channel-name");
-        let eg = p ? c : s;
+        let eg = A ? c : s;
         return (0, l.jsxs)(m.BJc, {
             gap: 24,
             children: [(0, l.jsx)(m.ksK, {
@@ -616,7 +608,7 @@ class ep extends i.PureComponent {
         let {
             channel: e
         } = this.props;
-        return null != e && null != e.guild_id && P.k.has(e.type) && (e.isGuildVocal() || G.io.getCurrentConfig({
+        return null != e && null != e.guild_id && U.k.has(e.type) && (e.isGuildVocal() || G.io.getCurrentConfig({
             guildId: e.guild_id,
             location: "9b50bd_1"
         }).enabled)
@@ -751,7 +743,7 @@ class ep extends i.PureComponent {
         } = this.props;
         if (null == t) return null;
         let n = (0, c.lA)(t.flags, en.lx.REQUIRE_TAG, e);
-        (0, p.fy)({
+        (0, A.fy)({
             flags: n
         })
     };
@@ -762,7 +754,7 @@ class ep extends i.PureComponent {
         if (null == t) return;
         t.isThread() ? e = (0, k.A)(e, !1) : et.kvI.LIMITED_CHANNEL_NAME.has(t.type) && (e = (0, z.an)(e));
         let n = this.nameInputRef.current?.selectionStart ?? 0;
-        (0, p.fy)({
+        (0, A.fy)({
             name: e
         }), setTimeout(() => {
             this.nameInputRef.current?.setSelectionRange(n, n)
@@ -775,7 +767,7 @@ class ep extends i.PureComponent {
         } = this.props;
         if (e?.isThread() && null != t) {
             let e = (0, k.A)(t, !0);
-            e !== t && (0, p.fy)({
+            e !== t && (0, A.fy)({
                 name: e
             })
         }
@@ -786,7 +778,7 @@ class ep extends i.PureComponent {
             l = t?.selectionEnd ?? 0,
             i = this.props.channelName,
             s = i?.substring(0, n) + e + i?.substring(l);
-        (0, p.fy)({
+        (0, A.fy)({
             name: s
         }), setTimeout(() => {
             let l = n + e.length;
@@ -794,7 +786,7 @@ class ep extends i.PureComponent {
         }, 0)
     };
     handleChangeTopic = e => {
-        (0, p.fy)({
+        (0, A.fy)({
             topic: M.Ay.translateInlineEmojiToSurrogates(e)
         })
     };
@@ -813,7 +805,7 @@ class ep extends i.PureComponent {
         })
     }
     handleChangeTemplate = e => {
-        (0, p.fy)({
+        (0, A.fy)({
             template: M.Ay.translateInlineEmojiToSurrogates(e)
         })
     };
@@ -825,7 +817,7 @@ class ep extends i.PureComponent {
             emojiId: void 0,
             emojiName: e.optionallyDiverseSequence
         };
-        (0, p.fy)({
+        (0, A.fy)({
             defaultReactionEmoji: t
         })
     };
@@ -834,7 +826,7 @@ class ep extends i.PureComponent {
             channel: t
         } = this.props;
         if (null == t) return null;
-        (0, p.fy)({
+        (0, A.fy)({
             defaultForumLayout: e
         }), this.props.handleSetDefaultLayout(e)
     };
@@ -843,7 +835,7 @@ class ep extends i.PureComponent {
             channel: t
         } = this.props;
         if (null == t) return null;
-        (0, p.fy)({
+        (0, A.fy)({
             defaultSortOrder: e
         })
     };
@@ -852,17 +844,17 @@ class ep extends i.PureComponent {
             channel: t
         } = this.props;
         if (null == t) return null;
-        (0, p.fy)({
+        (0, A.fy)({
             defaultTagSetting: e
         })
     };
     handleChangeBitrate = e => {
-        (0, p.fy)({
+        (0, A.fy)({
             bitrate: 1e3 * Math.round(e / 1e3)
         })
     };
     handleUserLimitChange = e => {
-        (0, p.fy)({
+        (0, A.fy)({
             userLimit: Math.round(e)
         })
     };
@@ -872,13 +864,13 @@ class ep extends i.PureComponent {
         } = this.props;
         if (null == t) return null;
         let n = (0, c.lA)(t.flags, en.lx.IS_SPOILER_CHANNEL, "spoiler" === e);
-        (0, p.fy)({
+        (0, A.fy)({
             nsfw: "nsfw" === e,
             flags: n
         })
     };
     handleNSFWChange = e => {
-        (0, p.fy)({
+        (0, A.fy)({
             nsfw: e
         })
     };
@@ -888,47 +880,47 @@ class ep extends i.PureComponent {
         } = this.props;
         if (null == t) return null;
         let n = (0, c.lA)(t.flags, en.lx.ACTIVE_CHANNELS_REMOVED, !e);
-        (0, p.fy)({
+        (0, A.fy)({
             flags: n
         })
     };
     handleNewsChange = e => {
-        (0, p.fy)({
+        (0, A.fy)({
             type: e ? et.rbe.GUILD_ANNOUNCEMENT : et.rbe.GUILD_TEXT
         })
     };
     handleChangeSlowmode = e => {
-        (0, p.fy)({
+        (0, A.fy)({
             rateLimitPerUser: e
         })
     };
     handleChangeThreadMessageSlowmode = e => {
-        (0, p.fy)({
+        (0, A.fy)({
             defaultThreadRateLimitPerUser: e
         })
     };
     handleChangeDefaultAutoArchiveDuration = e => {
-        (0, p.fy)({
+        (0, A.fy)({
             defaultAutoArchiveDuration: e
         })
     };
     handleRegionChange = e => {
-        (0, p.fy)({
+        (0, A.fy)({
             rtcRegion: e === eg ? null : e
         })
     };
     handleVideoQualityModeChange = e => {
-        (0, p.fy)({
+        (0, A.fy)({
             videoQualityMode: e
         })
     };
     handleAutoArchiveDurationChanged = e => {
-        (0, p.fy)({
+        (0, A.fy)({
             autoArchiveDuration: e
         })
     };
     handleInvitableChanged = e => {
-        (0, p.fy)({
+        (0, A.fy)({
             invitable: e
         })
     };
@@ -938,7 +930,7 @@ class ep extends i.PureComponent {
         } = this.props;
         if (null == t) return null;
         let n = (0, c.lA)(t.flags, en.lx.SUMMARIES_DISABLED, !e);
-        (0, p.fy)({
+        (0, A.fy)({
             flags: n
         })
     };
@@ -948,13 +940,13 @@ class ep extends i.PureComponent {
         } = this.props;
         if (null == t) return null;
         let n = (0, c.lA)(t.flags, en.lx.HIDE_MEDIA_DOWNLOAD_OPTIONS, !e);
-        (0, p.fy)({
+        (0, A.fy)({
             flags: n
         })
     }
 }
 
-function eA() {
+function ep() {
     let {
         errors: e,
         channel: t,
@@ -966,15 +958,15 @@ function eA() {
     } = (0, u.cf)([Y.A], () => ({
         canManageChannels: Y.A.can(et.xBc.MANAGE_CHANNELS, t),
         canSendMessages: Y.A.can(et.xBc.SEND_MESSAGES, t)
-    })), m = (0, j.Ay)(t), x = V.default.getId(), p = (0, R.p)(), A = t?.id, f = (0, C.cI)(t, !1, !0), b = q.A.useExperiment({
+    })), m = (0, j.Ay)(t), x = V.default.getId(), A = (0, R.p)(), p = t?.id, f = (0, C.cI)(t, !1, !0), b = q.A.useExperiment({
         guildId: t?.guild_id,
         location: "ChannelSettingsOverview"
     }, {
         autoTrackExposure: !0
     }).enabled, N = i.useCallback(e => {
-        null != A && p.getState().setLayoutType(A, e)
-    }, [A, p]);
-    return (0, l.jsx)(ep, {
+        null != p && A.getState().setLayoutType(p, e)
+    }, [p, A]);
+    return (0, l.jsx)(eA, {
         errors: e,
         channel: t,
         channelName: m,

@@ -17,8 +17,8 @@ var i = n(503698),
     g = n(155718),
     m = n(709066),
     x = n(63104),
-    p = n(60868),
-    A = n(894328),
+    A = n(60868),
+    p = n(894328),
     f = n(997509),
     C = n(776781),
     b = n(233993),
@@ -41,7 +41,7 @@ var i = n(503698),
     D = n(985018),
     B = n(497903);
 
-function P(e) {
+function U(e) {
     let {
         channel: t,
         roles: n,
@@ -53,73 +53,73 @@ function P(e) {
         className: B.xz,
         sections: [n.length, i.length],
         renderRow: function(e) {
-            let p, A, f, {
+            let A, p, f, {
                     section: b,
                     row: j
                 } = e,
                 N = !1;
             switch (b) {
                 case O.oO.ROLES:
-                    f = (A = n[j]).rowType === O.T6.ROLE && A.tags?.guild_connections === null ? (0, l.jsx)(x.A, {
+                    f = (p = n[j]).rowType === O.T6.ROLE && p.tags?.guild_connections === null ? (0, l.jsx)(x.A, {
                         className: B.a,
-                        color: A.colorString,
+                        color: p.colorString,
                         size: 20
                     }) : (0, l.jsx)(o.iTF, {
                         size: "custom",
                         className: B.a,
-                        color: A.colorString,
+                        color: p.colorString,
                         height: 20
-                    }), p = (0, l.jsxs)(l.Fragment, {
+                    }), A = (0, l.jsxs)(l.Fragment, {
                         children: [f, (0, l.jsx)(o.Text, {
                             variant: "text-sm/normal",
-                            color: A.disabled ? "text-muted" : "text-default",
-                            children: A.name
+                            color: p.disabled ? "text-muted" : "text-default",
+                            children: p.name
                         })]
-                    }), N = A.disabled;
+                    }), N = p.disabled;
                     break;
                 case O.oO.MEMBERS:
-                    A = i[j], p = (0, l.jsxs)(l.Fragment, {
+                    p = i[j], A = (0, l.jsxs)(l.Fragment, {
                         children: [(0, l.jsx)(o.euF, {
-                            src: A.avatarURL,
+                            src: p.avatarURL,
                             size: o._3J.SIZE_20,
                             "aria-hidden": !0
                         }), (0, l.jsx)(o.Text, {
                             variant: "text-sm/normal",
-                            children: A.name
-                        }), A.bot && (0, l.jsx)(m.A, {
-                            verified: A.verifiedBot
+                            children: p.name
+                        }), p.bot && (0, l.jsx)(m.A, {
+                            verified: p.verifiedBot
                         }), (0, l.jsx)(o.Text, {
                             color: "text-muted",
                             className: B.Gq,
                             variant: "text-xs/normal",
-                            children: A.username
+                            children: p.username
                         })]
-                    }), N = A.disabled;
+                    }), N = p.disabled;
                     break;
                 default:
-                    A = null
+                    p = null
             }
-            if (null == A) return null;
-            let v = !N && null == a && null != A.id;
+            if (null == p) return null;
+            let v = !N && null == a && null != p.id;
             return (0, l.jsxs)("div", {
                 className: B.TL,
                 role: "listitem",
                 children: [(0, l.jsx)("div", {
                     className: B.z7,
-                    children: p
+                    children: A
                 }), (0, l.jsxs)("div", {
                     className: B.z7,
                     children: [(0, l.jsx)(o.Text, {
                         color: "text-muted",
                         variant: "text-xs/normal",
-                        children: M.vV(A.rowType)
-                    }), A.rowType !== O.T6.EMPTY_STATE && (0, l.jsx)(r.m, {
+                        children: M.vV(p.rowType)
+                    }), p.rowType !== O.T6.EMPTY_STATE && (0, l.jsx)(r.m, {
                         asContainer: !0,
-                        text: a ?? u(A.rowType, A.disabled),
+                        text: a ?? u(p.rowType, p.disabled),
                         children: (0, l.jsx)(o.DUT, {
                             onClick: () => {
                                 var e, n, l;
-                                return v && null != A && (e = A.id, n = A.name, l = A.rowType, void d.A.show({
+                                return v && null != p && (e = p.id, n = p.name, l = p.rowType, void d.A.show({
                                     title: D.intl.string(D.t.GuPYQB),
                                     body: D.intl.format(D.t.xERCnZ, {
                                         name: n
@@ -146,7 +146,7 @@ function P(e) {
                         })
                     })]
                 })]
-            }, A.id)
+            }, p.id)
         },
         rowHeight: 40,
         renderSection: function(e) {
@@ -169,7 +169,7 @@ function P(e) {
     })
 }
 
-function U(e) {
+function P(e) {
     let {
         guild: t,
         channel: i,
@@ -216,7 +216,7 @@ function U(e) {
                         disabled: !g
                     })
                 })]
-            }), (0, l.jsx)(P, {
+            }), (0, l.jsx)(U, {
                 channel: i,
                 roles: u,
                 members: h,
@@ -238,7 +238,7 @@ function V(e) {
     async function m() {
         let e = i.accessPermissions,
             s = E.default.getCurrentUser();
-        r || null == await (0, A.D)(t.id, i.id) ? (M.uB(i, e, r), r || null == s || u || M.tP(i, e)) : (0, o.mMO)(async () => {
+        r || null == await (0, p.D)(t.id, i.id) ? (M.uB(i, e, r), r || null == s || u || M.tP(i, e)) : (0, o.mMO)(async () => {
             let {
                 Modal: e
             } = await Promise.resolve().then(n.bind(n, 158954));
@@ -317,7 +317,7 @@ function V(e) {
                             })
                         }
                     })]
-                }), (0, l.jsx)(P, {
+                }), (0, l.jsx)(U, {
                     channel: i,
                     roles: d,
                     members: c,
@@ -423,14 +423,14 @@ let F = a.Ay.connectStores([N.A, T.A, v.Ay, y.A, _.A], () => {
                             } = i, t = {
                                 ...i.permissionOverwrites
                             };
-                            null != e && null == t[e] && (t[e] = I.xT(e)), await (0, p.n)(s, t[e].deny, t[e].allow) && (0, u.RT)(s.id, {
+                            null != e && null == t[e] && (t[e] = I.xT(e)), await (0, A.n)(s, t[e].deny, t[e].allow) && (0, u.RT)(s.id, {
                                 permissionOverwrites: Object.values(t)
                             })
                         }
                     })
                 })
             }
-        }) : null, s.isGuildStageVoice() ? (0, l.jsx)(U, {
+        }) : null, s.isGuildStageVoice() ? (0, l.jsx)(P, {
             guild: d,
             channel: s,
             permissionUpdates: g

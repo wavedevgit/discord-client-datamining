@@ -17,8 +17,8 @@ var l = n(627968),
     m = n(376310);
 n(253913);
 var x = n(652215),
-    p = n(985018),
-    A = n(231935);
+    A = n(985018),
+    p = n(231935);
 
 function f(e) {
     let {
@@ -57,7 +57,7 @@ function f(e) {
         })
     });
     return (0, l.jsxs)("div", {
-        className: A._A,
+        className: p._A,
         children: [m ? t.availableTags.map(e => (0, l.jsx)(C, {
             tag: e,
             availableTags: t.availableTags,
@@ -68,19 +68,19 @@ function f(e) {
             onDragStart: j
         }, e.id)) : null, m ? (0, l.jsx)(d.DUT, {
             onClick: f,
-            className: a()(A.JE, {
-                [A.r9]: !s || u
+            className: a()(p.JE, {
+                [p.r9]: !s || u
             }),
             children: (0, l.jsx)(d.j96, {
                 size: "custom",
-                "aria-label": p.intl.string(p.t["/jubeD"]),
+                "aria-label": A.intl.string(A.t["/jubeD"]),
                 color: o.A.unsafe_rawColors.WHITE.css,
                 width: 20,
                 height: 20
             })
         }) : (0, l.jsx)(d.Button, {
             variant: "primary",
-            text: p.intl.string(p.t["/jubeD"]),
+            text: A.intl.string(A.t["/jubeD"]),
             disabled: !s,
             onClick: f
         })]
@@ -110,9 +110,9 @@ function C(e) {
         onDragReset: d
     });
     return (0, l.jsx)("div", {
-        className: a()(A.kL, {
-            [A.A]: null != g && c < g,
-            [A.Ze]: null != g && c > g
+        className: a()(p.kL, {
+            [p.A]: null != g && c < g,
+            [p.Ze]: null != g && c > g
         }),
         ref: e => {
             h(x(e))
@@ -122,7 +122,7 @@ function C(e) {
         children: (0, l.jsx)(m.A, {
             tag: t,
             disabled: !i,
-            ariaLabel: p.intl.formatToPlainString(p.t.jhSvB9, {
+            ariaLabel: A.intl.formatToPlainString(A.t.jhSvB9, {
                 name: t.name
             }),
             onClick: i ? () => s(t) : void 0

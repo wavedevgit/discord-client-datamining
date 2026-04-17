@@ -1,7 +1,7 @@
 /** chunk id: 508384 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => A
 });
 var l = n(627968),
     i = n(64700),
@@ -48,7 +48,7 @@ function x(e) {
     }) : null
 }
 
-function p(e) {
+function A(e) {
     let {
         color: t,
         id: i,
@@ -56,8 +56,8 @@ function p(e) {
         guild: a,
         children: c,
         isDragging: u,
-        selectedItem: p,
-        onItemSelect: A,
+        selectedItem: A,
+        onItemSelect: p,
         itemType: f,
         locked: C,
         lockTooltip: b,
@@ -72,8 +72,8 @@ function p(e) {
     }) : (0, l.jsx)(d.VQ0.Item, {
         className: m.JC,
         id: i,
-        selectedItem: p,
-        onItemSelect: A,
+        selectedItem: A,
+        onItemSelect: p,
         itemType: f,
         "aria-label": null != b ? `${y}, ${b}` : y,
         onContextMenu: _,
