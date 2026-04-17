@@ -1,14 +1,14 @@
 /** chunk id: 704400 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => s
 });
 var i = n(627968);
 n(64700);
 var a = n(397927),
     l = n(985018),
-    s = n(987773);
+    r = n(987773);
 
-function r(e) {
+function s(e) {
     let {
         message: t
     } = e;
@@ -25,13 +25,13 @@ function r(e) {
                 })
             })
         },
-        className: s.L,
+        className: r.L,
         children: [(0, i.jsx)(a.mir, {
             size: "xs",
             color: "currentColor"
         }), (0, i.jsx)(a.Text, {
             variant: "text-xs/normal",
-            className: s.m,
+            className: r.m,
             children: l.intl.string(l.t["2aXnfa"])
         })]
     })

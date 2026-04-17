@@ -5,16 +5,16 @@ n.d(t, {
 var i = n(665260),
     a = n(574381),
     l = n(134861),
-    s = n(528767),
-    r = n(182892),
+    r = n(528767),
+    s = n(182892),
     o = n(652215);
 
 function d(e) {
     if (null == e) return null;
     let t = e.application_id;
     if (null == t || !(0, i.Lt)(e.flags ?? 0, o.jUm.SUPPORTS_REMOTE_ACTIVITY_ACTION_JOIN)) return null;
-    let n = s.A.getRemoteApplicationActivity(t);
-    return null == n || (0, r.e)(n) || null != n.application_id && (l.A.isConnected(n.application_id) || function(e) {
+    let n = r.A.getRemoteApplicationActivity(t);
+    return null == n || (0, s.e)(n) || null != n.application_id && (l.A.isConnected(n.application_id) || function(e) {
         let {
             platform: t
         } = e;

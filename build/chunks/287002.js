@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var a = n(417597),
     l = n(397927),
-    s = n(104217),
-    r = n(135598),
+    r = n(104217),
+    s = n(135598),
     o = n(390248),
     d = n(900819),
     c = n(279547),
@@ -25,13 +25,13 @@ function m(e) {
         isReportFalsePositiveLoading: f
     } = (0, c.d)({
         onSuccess: () => {
-            (0, u.o)(h), s.A.disableFalsePositiveButton(t, n)
+            (0, u.o)(h), r.A.disableFalsePositiveButton(t, n)
         },
         onError: () => {
             (0, l.showToast)((0, l.createToast)(_.intl.string(_.t.R0RpRX), l.ToastType.FAILURE))
         },
         report: () => {
-            (0, r.wV)(t, n, g, A)
+            (0, s.wV)(t, n, g, A)
         }
     });
     return p.attachments.length > 0 || h(), (0, i.jsx)(u.k, {

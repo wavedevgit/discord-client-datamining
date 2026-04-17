@@ -1,116 +1,116 @@
 /** chunk id: 636184 params = (module,exports,require) **/
-s.d(t, {
-    h: () => j
+n.d(t, {
+    h: () => v
 });
-var i = s(627968),
-    a = s(64700),
-    n = s(503698),
-    l = s.n(n),
-    r = s(158954),
-    c = s(311907),
-    o = s(582754),
-    d = s(397927),
-    u = s(308528),
-    A = s(854627),
-    m = s(779733),
-    h = s(954571),
-    R = s(975571),
-    f = s(427262),
-    g = s(326084),
-    x = s(851746),
-    E = s(652215),
-    p = s(985018),
-    _ = s(494025),
-    S = s(299148);
-let T = e => {
+var i = n(627968),
+    r = n(64700),
+    a = n(503698),
+    s = n.n(a),
+    l = n(158954),
+    o = n(311907),
+    c = n(582754),
+    d = n(397927),
+    u = n(308528),
+    _ = n(854627),
+    m = n(779733),
+    p = n(954571),
+    A = n(975571),
+    g = n(427262),
+    f = n(326084),
+    h = n(851746),
+    b = n(652215),
+    x = n(985018),
+    R = n(494025),
+    C = n(299148);
+let N = e => {
         let {
             recipient: t,
-            status: s,
-            onClose: a
+            status: n,
+            onClose: r
         } = e, {
-            avatarSrc: n,
-            eventHandlers: r
-        } = (0, A.A)({
+            avatarSrc: a,
+            eventHandlers: l
+        } = (0, _.A)({
             userId: t?.id,
             size: d._3J.SIZE_56
-        }), c = f.Ay.getName(t), o = s === g.o.FAIL;
+        }), o = g.Ay.getName(t), c = n === f.o.FAIL;
         return (0, i.jsxs)("div", {
-            className: _.w4,
+            className: R.w4,
             children: [(0, i.jsx)(d.euF, {
-                imageClassName: l()({
-                    [_.jN]: o
+                imageClassName: s()({
+                    [R.jN]: c
                 }),
-                src: n,
-                "aria-label": c,
+                src: a,
+                "aria-label": o,
                 size: d._3J.SIZE_32,
-                ...r
-            }), o ? (0, i.jsxs)(i.Fragment, {
+                ...l
+            }), c ? (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(d.Text, {
-                    className: _.E0,
+                    className: R.E0,
                     variant: "text-md/medium",
                     color: "text-strong",
-                    children: c
+                    children: o
                 }), (0, i.jsx)(d.Text, {
                     variant: "text-md/medium",
-                    className: _.nT,
+                    className: R.nT,
                     color: "text-strong",
-                    children: p.intl.format(p.t.RO3T4B, {
-                        userName: c
+                    children: x.intl.format(x.t.RO3T4B, {
+                        userName: o
                     })
                 })]
             }) : (0, i.jsx)(d.Text, {
                 variant: "text-md/medium",
-                className: _.Pm,
+                className: R.Pm,
                 color: "text-strong",
-                children: c
+                children: o
             }), (0, i.jsx)(d.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: p.intl.string(p.t["g33r/P"]),
+                text: x.intl.string(x.t["g33r/P"]),
                 icon: d.oyn,
                 onClick: () => {
                     var e;
                     return e = t.id, void((0, m.default)(), u.A.openPrivateChannel({
                         recipientIds: e
-                    }), a())
+                    }), r())
                 }
             })]
         })
     },
-    j = e => {
+    v = e => {
         let {
             transitionState: t,
-            results: s,
-            onClose: n,
-            isReminderConfirmation: l
-        } = e, u = (0, c.bG)([x.A], () => x.A.getReferralsRemaining());
-        h.default.track(E.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
+            results: n,
+            onClose: a,
+            isReminderConfirmation: s
+        } = e, u = (0, o.bG)([h.A], () => h.A.getReferralsRemaining());
+        p.default.track(b.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
         let {
-            reducedMotion: A
-        } = a.useContext(o.CZ);
-        return null === u ? (0, i.jsx)(d.y$y, {}) : (0, i.jsx)(r.ExpressiveModal, {
-            graphic: A.enabled ? {
-                src: S.A,
+            reducedMotion: _
+        } = r.useContext(c.CZ);
+        return null === u ? (0, i.jsx)(d.y$y, {}) : (0, i.jsx)(l.ExpressiveModal, {
+            graphic: _.enabled ? {
+                src: C.A,
                 type: "image"
             } : {
                 rive: d.lBW,
                 type: "rive"
             },
             gradientColor: "nitro-pink",
-            title: 0 === s.filter(e => e.status === g.o.SUCCESS).length ? p.intl.string(p.t["7VBEue"]) : !0 === l ? p.intl.string(p.t.GP5lbq) : p.intl.string(p.t.tKCltd),
-            subtitle: !0 === l ? p.intl.format(p.t["4gJJfD"], {
-                helpdeskArticle: R.A.getArticleURL(E.MVz.REFERRAL_PROGRAM)
-            }) : p.intl.format(p.t.AwGSWl, {
-                helpdeskArticle: R.A.getArticleURL(E.MVz.REFERRAL_PROGRAM)
+            title: 0 === n.filter(e => e.status === f.o.SUCCESS).length ? x.intl.string(x.t["7VBEue"]) : !0 === s ? x.intl.string(x.t.GP5lbq) : x.intl.string(x.t.tKCltd),
+            subtitle: !0 === s ? x.intl.format(x.t["4gJJfD"], {
+                helpdeskArticle: A.A.getArticleURL(b.MVz.REFERRAL_PROGRAM)
+            }) : x.intl.format(x.t.AwGSWl, {
+                helpdeskArticle: A.A.getArticleURL(b.MVz.REFERRAL_PROGRAM)
             }),
-            onClose: n,
+            onClose: a,
             transitionState: t,
             children: (0, i.jsx)("div", {
-                className: _.Hz,
-                children: s.map(e => (0, i.jsx)(T, {
+                className: R.Hz,
+                children: n.map(e => (0, i.jsx)(N, {
                     recipient: e.recipient,
                     status: e.status,
-                    onClose: n
+                    onClose: a
                 }, e.recipient.id))
             })
         })

@@ -10,8 +10,8 @@ var i = n(627968);
 n(64700);
 var r = n(397927),
     s = n(888675),
-    a = n(985018),
-    l = n(123030);
+    l = n(985018),
+    a = n(123030);
 
 function o(e) {
     let {
@@ -23,8 +23,8 @@ function o(e) {
         icon: n(290388),
         timestamp: t.timestamp,
         compact: r,
-        contentClassName: l.B,
-        children: a.intl.format(a.t.bYdG3f, {
+        contentClassName: a.B,
+        children: l.intl.format(l.t.bYdG3f, {
             onClick: o
         })
     })
@@ -39,8 +39,8 @@ function c(e) {
         icon: n(222548),
         timestamp: t.timestamp,
         compact: r,
-        contentClassName: l.B,
-        children: a.intl.string(a.t.tu6tOR)
+        contentClassName: a.B,
+        children: l.intl.string(l.t.tu6tOR)
     })
 }
 
@@ -55,12 +55,12 @@ function u(e) {
             width: 20,
             height: 20,
             color: "currentColor",
-            className: l.Q
+            className: a.Q
         }),
         timestamp: t.timestamp,
         compact: n,
-        contentClassName: l.B,
-        children: a.intl.string(a.t.vzfXql)
+        contentClassName: a.B,
+        children: l.intl.string(l.t.vzfXql)
     })
 }
 
@@ -75,11 +75,11 @@ function d(e) {
             width: 20,
             height: 20,
             color: "currentColor",
-            className: l.Q
+            className: a.Q
         }),
         timestamp: t.timestamp,
         compact: n,
-        contentClassName: l.B,
-        children: a.intl.string(a.t["/TfvyR"])
+        contentClassName: a.B,
+        children: l.intl.string(l.t["/TfvyR"])
     })
 }

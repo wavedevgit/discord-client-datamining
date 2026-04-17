@@ -1,22 +1,22 @@
 /** chunk id: 335759 params = (module,exports,require) **/
 n.d(t, {
-    Q: () => s,
-    w: () => r
+    Q: () => r,
+    w: () => s
 });
 var i = n(562465),
     a = n(198982),
     l = n(652215);
-async function s(e) {
+async function r(e) {
     let {
         channelId: t,
         messageId: n,
-        answerIds: s
+        answerIds: r
     } = e;
     try {
         await i.Bo.put({
             url: l.Rsh.POLL_ANSWERS(t, n),
             body: {
-                answer_ids: s
+                answer_ids: r
             },
             rejectWithError: !1
         })
@@ -24,7 +24,7 @@ async function s(e) {
         throw new a.LG(e)
     }
 }
-async function r(e) {
+async function s(e) {
     let {
         channelId: t,
         messageId: n

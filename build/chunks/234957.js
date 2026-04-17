@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     r = n(64700),
     s = n(311907),
-    a = n(9842),
-    l = n(994500),
+    l = n(9842),
+    a = n(994500),
     o = n(465364),
     c = n(763754),
     u = n(448368),
@@ -18,14 +18,14 @@ let _ = r.memo(function(e) {
         channel: n,
         referencedMessage: d,
         compact: _ = !1
-    } = e, E = d.state === a.a.LOADED ? d.message : void 0, A = r.useMemo(() => E?.content != null && "" !== E.content ? (0, o.Ay)(E, {
+    } = e, E = d.state === l.a.LOADED ? d.message : void 0, A = r.useMemo(() => E?.content != null && "" !== E.content ? (0, o.Ay)(E, {
         formatInline: !0
     }).content : null, [E]), {
         isReplyAuthorBlocked: m,
         isReplyAuthorIgnored: I
-    } = (0, s.cf)([l.A], () => ({
-        isReplyAuthorBlocked: null != E && l.A.isBlockedForMessage(E),
-        isReplyAuthorIgnored: null != E && l.A.isIgnoredForMessage(E)
+    } = (0, s.cf)([a.A], () => ({
+        isReplyAuthorBlocked: null != E && a.A.isBlockedForMessage(E),
+        isReplyAuthorIgnored: null != E && a.A.isIgnoredForMessage(E)
     }), [E]), T = (0, c.X4)(E), N = (0, c.X4)(t);
     return (0, i.jsx)(u.A, {
         repliedAuthor: T,

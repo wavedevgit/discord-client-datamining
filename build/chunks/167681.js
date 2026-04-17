@@ -7,13 +7,13 @@ n.d(t, {
 var i = n(843472),
     r = n(287809),
     s = n(954571),
-    a = n(661191),
-    l = n(21181),
+    l = n(661191),
+    a = n(21181),
     o = n(652215);
 let c = e => {
         let t = r.default.getCurrentUser()?.id,
-            n = ((null != t ? a.default.extractTimestamp(t) : 0) + a.default.extractTimestamp(e)) % l.I.length;
-        return l.I[n]
+            n = ((null != t ? l.default.extractTimestamp(t) : 0) + l.default.extractTimestamp(e)) % a.I.length;
+        return a.I[n]
     },
     u = (e, t, n) => {
         i.A.sendGreetMessage(e.id, n, i.A.getSendMessageOptionsForReply({

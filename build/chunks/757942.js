@@ -16,12 +16,12 @@ var r = n(735438),
     A = n(203982),
     E = n(265422),
     I = n(652215),
-    h = n(790782);
+    g = n(790782);
 
-function g(e, t) {
+function h(e, t) {
     return [{
         resourceId: e,
-        type: h.P.GUILD_EVENT
+        type: g.P.GUILD_EVENT
     }, ...e === I.ME ? _.default.getPrivateChannelIds() : (0, o.A)(e, {
         withVoiceChannels: t,
         withCurrentVoiceChannel: !0
@@ -30,23 +30,23 @@ function g(e, t) {
 let C = l().throttle(function(e, t) {
     var r;
     let l, o, _, {
-            channelPredicate: h = () => !0,
+            channelPredicate: g = () => !0,
             guildPredicate: C = () => !0,
             guildFeaturePredicate: p = () => !1,
-            ensureChatIsVisible: T = () => !1,
-            withVoiceChannels: S = !1
+            ensureChatIsVisible: S = () => !1,
+            withVoiceChannels: T = !1
         } = t,
         b = a.A.getState().guildId ?? I.ME,
-        f = a.A.getState().channelId,
-        N = (r = b, o = (l = [I.ME, ...u.Ay.getFlattenedGuildIds()]).indexOf(r), e > 0 ? l.slice(o).concat(l.slice(0, o), r) : (l.splice(o, 0, r), l.slice(o + 1).concat(l.slice(0, o + 1)))),
-        m = e > 0 ? 0 : N.length - 1,
-        L = g(b, S),
-        O = L.indexOf(f) + e;
+        N = a.A.getState().channelId,
+        m = (r = b, o = (l = [I.ME, ...u.Ay.getFlattenedGuildIds()]).indexOf(r), e > 0 ? l.slice(o).concat(l.slice(0, o), r) : (l.splice(o, 0, r), l.slice(o + 1).concat(l.slice(0, o + 1)))),
+        L = e > 0 ? 0 : m.length - 1,
+        f = h(b, T),
+        O = f.indexOf(N) + e;
     for (; null != b && "" !== b;) {
-        if (_ = L[O], C(b))
+        if (_ = f[O], C(b))
             for (; null != _ && "" !== _;) {
                 if ("string" == typeof _) {
-                    if (h(b, _)) return (0, E.i)(b, _, !1, T(b, _))
+                    if (g(b, _)) return (0, E.i)(b, _, !1, S(b, _))
                 } else if ("object" == typeof _ && p(_.resourceId, _.type)) return b !== c.A.getGuildId() && (0, E.i)(b, d.Ay.getDefaultChannel(b)?.id), (0, s.mMO)(async () => {
                     let {
                         default: e
@@ -56,10 +56,10 @@ let C = l().throttle(function(e, t) {
                         guildId: b
                     })
                 });
-                O += e, _ = L[O]
+                O += e, _ = f[O]
             }
-        if (m += e, null == (b = N[m]) || "" === b) break;
-        L = g(b, S), O = e < 0 ? L.length - 1 : 0
+        if (L += e, null == (b = m[L]) || "" === b) break;
+        f = h(b, T), O = e < 0 ? f.length - 1 : 0
     }
     A._.dispatch(I.jej.SHAKE_APP, {
         duration: 200,

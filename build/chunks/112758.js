@@ -1,6 +1,6 @@
 /** chunk id: 112758 params = (module,exports,require) **/
 n.d(t, {
-    Am: () => k,
+    Am: () => O,
     Ck: () => F,
     G8: () => G,
     Ge: () => P,
@@ -8,7 +8,7 @@ n.d(t, {
     I: () => j,
     Jo: () => R,
     T0: () => N,
-    UY: () => O,
+    UY: () => k,
     U_: () => H,
     VL: () => M,
     Yq: () => w,
@@ -20,8 +20,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(621466),
-    s = n(665260),
-    r = n(442433),
+    r = n(665260),
+    s = n(442433),
     o = n(843472),
     d = n(414798),
     c = n(267102),
@@ -53,10 +53,10 @@ function T(e, t, n) {
         if (null == a) return;
         if (i.preventDefault(), i.stopPropagation(), !i.shiftKey) return void n();
         let l = `@${f.Ay.getUserTag(a,{decoration:"never"})}`,
-            s = `<@${e}>`;
+            r = `<@${e}>`;
         A._.dispatchToLastSubscribed(v.jej.INSERT_TEXT, {
             plainText: l,
-            rawText: s
+            rawText: r
         }), d.A.startTyping(t)
     }, [e, t, n])
 }
@@ -105,7 +105,7 @@ function M(e, t, l, o) {
     } = t, {
         id: u,
         flags: p
-    } = e, A = (0, s.Lt)(p, v.pr7.EPHEMERAL), f = (0, c.Us)();
+    } = e, A = (0, r.Lt)(p, v.pr7.EPHEMERAL), f = (0, c.Us)();
     return a.useCallback((e, t) => {
         if (A) return;
         if (!x.isPlatformEmbedded) {
@@ -115,21 +115,21 @@ function M(e, t, l, o) {
             if (null != n && !n.isCollapsed && (n.focusNode === e.target || t.contains(n.focusNode))) return
         }
         let a = _.A.getChannel(d),
-            s = h.A.getMessage(d, u),
+            r = h.A.getMessage(d, u),
             c = m.A.isEditing(d, u);
-        null == a || null == s || c || (g.default.track(v.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
+        null == a || null == r || c || (g.default.track(v.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
             message_id: u,
             channel: d,
             location: "right_click"
         }), l({
             contextMenu: !0
-        }), (0, r.L3)(e, async () => {
+        }), (0, s.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("3795"), n.e("21393"), n.e("91139"), n.e("532"), n.e("64879"), n.e("95207"), n.e("1636"), n.e("75733")]).then(n.bind(n, 547983));
+            } = await Promise.all([n.e("3795"), n.e("56403"), n.e("84560"), n.e("91139"), n.e("74507"), n.e("64879"), n.e("15135"), n.e("1636"), n.e("65689")]).then(n.bind(n, 547983));
             return n => (0, i.jsx)(e, {
                 ...n,
-                message: s,
+                message: r,
                 channel: a,
                 mediaItem: t,
                 shouldHideMediaOptions: o
@@ -151,7 +151,7 @@ function D(e, t) {
     }, [e, t])
 }
 
-function O(e, t, n) {
+function k(e, t, n) {
     return a.useCallback(i => {
         let a = p.default.getUser(e),
             l = _.A.getChannel(t);
@@ -163,7 +163,7 @@ function O(e, t, n) {
     }, [e, t, n])
 }
 
-function k(e, t) {
+function O(e, t) {
     return a.useCallback(n => {
         let i = p.default.getUser(e),
             a = _.A.getChannel(t);
@@ -187,16 +187,16 @@ function B(e) {
         groupId: t,
         message: n,
         defaultValue: i
-    } = e, l = n.author.id, s = `${t}:${l}`, r = a.useRef(i), [o, d] = a.useState(i);
-    r.current = o || r.current;
+    } = e, l = n.author.id, r = `${t}:${l}`, s = a.useRef(i), [o, d] = a.useState(i);
+    s.current = o || s.current;
     let c = a.useCallback(() => {
-            (0, u.cE)(), o || (A._.dispatchKeyed(v.zOV.ANIMATE_CHAT_AVATAR, s, !0), d(!0))
-        }, [o, s]),
+            (0, u.cE)(), o || (A._.dispatchKeyed(v.zOV.ANIMATE_CHAT_AVATAR, r, !0), d(!0))
+        }, [o, r]),
         _ = a.useCallback(() => {
-            A._.dispatchKeyed(v.zOV.ANIMATE_CHAT_AVATAR, s, !1), d(!1)
-        }, [s]);
+            A._.dispatchKeyed(v.zOV.ANIMATE_CHAT_AVATAR, r, !1), d(!1)
+        }, [r]);
     return {
-        hasHovered: r.current,
+        hasHovered: s.current,
         isHovered: o,
         handleMouseEnter: c,
         handleMouseLeave: _
@@ -204,18 +204,18 @@ function B(e) {
 }
 
 function G(e, t) {
-    let [n, i] = a.useState(!1), [s, r] = a.useState(!1);
+    let [n, i] = a.useState(!1), [r, s] = a.useState(!1);
     return {
         handleFocus: a.useCallback(t => {
             let n = (0, l.BF)(t)?.activeElement ?? null;
-            (t.target === t.currentTarget || t.currentTarget.contains(n)) && (r(!0), i(!0)), null != e && e(t)
+            (t.target === t.currentTarget || t.currentTarget.contains(n)) && (s(!0), i(!0)), null != e && e(t)
         }, [e]),
         handleBlur: a.useCallback(e => {
             let n = (0, l.BF)(e)?.activeElement ?? null;
             e.target !== e.currentTarget && e.currentTarget.contains(n) || i(!1), null != t && t(e)
         }, [t]),
         isFocused: n,
-        hasFocused: s
+        hasFocused: r
     }
 }
 

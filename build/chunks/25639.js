@@ -1,71 +1,71 @@
 /** chunk id: 25639 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m,
-    s: () => o
+    A: () => f,
+    s: () => u
 });
 var i, l = n(311907),
     a = n(73153),
-    r = n(967198),
-    s = n(977997),
-    o = ((i = {}).GENTLE_AMBIENT = "GENTLE_AMBIENT", i.GENTLE_AMBIENT_WITH_INTRO = "GENTLE_AMBIENT_WITH_INTRO", i.HIGH_CONTRAST = "HIGH_CONTRAST", i);
-let u = {},
-    d = {},
-    c = null;
+    s = n(967198),
+    r = n(977997),
+    u = ((i = {}).GENTLE_AMBIENT = "GENTLE_AMBIENT", i.GENTLE_AMBIENT_WITH_INTRO = "GENTLE_AMBIENT_WITH_INTRO", i.HIGH_CONTRAST = "HIGH_CONTRAST", i);
+let o = {},
+    c = {},
+    d = null;
 
 function A(e) {
-    null != d[e] && (clearTimeout(d[e]), delete d[e])
+    null != c[e] && (clearTimeout(c[e]), delete c[e])
 }
 
 function h(e) {
-    A(e), d[e] = setTimeout(() => {
-        let t = u[e];
-        null != t && (u[e] = {
+    A(e), c[e] = setTimeout(() => {
+        let t = o[e];
+        null != t && (o[e] = {
             ...t,
             style: "GENTLE_AMBIENT"
-        }, g.emitChange()), delete d[e]
+        }, m.emitChange()), delete c[e]
     }, 2e3)
 }
 
-function f() {
-    for (let e of Object.keys(d)) clearTimeout(d[e]);
-    d = {}, u = {}
+function E() {
+    for (let e of Object.keys(c)) clearTimeout(c[e]);
+    c = {}, o = {}
 }
 
-function E() {
-    return f(), !0
+function _() {
+    return E(), !0
 }
-class _ extends l.Ay.Store {
+class g extends l.Ay.Store {
     static displayName = "VoiceChannelAnimationStateStore";
     initialize() {
-        this.waitFor(s.A, r.A)
+        this.waitFor(r.A, s.A)
     }
     getAnimationStyle(e) {
-        return u[e]?.style ?? "GENTLE_AMBIENT"
+        return o[e]?.style ?? "GENTLE_AMBIENT"
     }
     getUserCount(e) {
-        return u[e]?.userCount ?? 0
+        return o[e]?.userCount ?? 0
     }
 }
-let g = new _(a.h, {
+let m = new g(a.h, {
         VOICE_STATE_UPDATES: function(e) {
             let {
                 voiceStates: t
-            } = e, n = r.A.getGuildId();
-            n !== c && null != n && (c = n);
+            } = e, n = s.A.getGuildId();
+            n !== d && null != n && (d = n);
             let i = {};
             for (let e of t) e.guildId === n && (null != e.oldChannelId && (i[e.oldChannelId] = (i[e.oldChannelId] ?? 0) - 1), null != e.channelId && (i[e.channelId] = (i[e.channelId] ?? 0) + 1));
             let l = !1;
             for (let [e, t] of Object.entries(i))(function(e, t) {
-                let n = u[e],
+                let n = o[e],
                     i = n?.userCount ?? 0,
                     l = Math.max(0, i + t);
-                return 0 === i && l > 0 ? (u[e] = {
+                return 0 === i && l > 0 ? (o[e] = {
                     style: "GENTLE_AMBIENT_WITH_INTRO",
                     userCount: l
-                }, h(e), !0) : i > 0 && l > i ? (u[e] = {
+                }, h(e), !0) : i > 0 && l > i ? (o[e] = {
                     style: "HIGH_CONTRAST",
                     userCount: l
-                }, h(e), !0) : 0 === l ? (A(e), delete u[e], !0) : null != n && l !== i && (u[e] = {
+                }, h(e), !0) : 0 === l ? (A(e), delete o[e], !0) : null != n && l !== i && (o[e] = {
                     ...n,
                     userCount: l
                 }, !0)
@@ -76,18 +76,18 @@ let g = new _(a.h, {
             let {
                 guildId: t
             } = e;
-            if (t === c || null == t) return !1;
-            c = t, f();
-            let n = s.A.getVoiceStates(t),
+            if (t === d || null == t) return !1;
+            d = t, E();
+            let n = r.A.getVoiceStates(t),
                 i = {};
             for (let e of Object.values(n)) null != e.channelId && (i[e.channelId] = (i[e.channelId] ?? 0) + 1);
-            for (let [e, t] of Object.entries(i)) t > 0 && (u[e] = {
+            for (let [e, t] of Object.entries(i)) t > 0 && (o[e] = {
                 style: "GENTLE_AMBIENT",
                 userCount: t
             });
             return !0
         },
-        CONNECTION_OPEN: E,
-        LOGOUT: E
+        CONNECTION_OPEN: _,
+        LOGOUT: _
     }),
-    m = g
+    f = m

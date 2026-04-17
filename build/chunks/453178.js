@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(503698),
     l = n.n(a),
-    s = n(311907),
-    r = n(52133),
+    r = n(311907),
+    s = n(52133),
     o = n(397927),
     d = n(402216),
     c = n(450149),
@@ -26,10 +26,10 @@ function A(e) {
     } = e, {
         activeStream: x,
         channel: f
-    } = (0, s.bG)([h.A, p.A], () => ({
+    } = (0, r.bG)([h.A, p.A], () => ({
         activeStream: h.A.getActiveStreamForApplicationStream(t),
         channel: p.A.getChannel(t.channelId)
-    }), [t], r.A), {
+    }), [t], s.A), {
         previewUrl: C,
         isLoading: E
     } = (0, c.A)(t.guildId, t.channelId, t.ownerId), [I, v] = (0, u.zP)(f);

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(412703),
     l = n(397927),
-    s = n(890687),
-    r = n(590202),
+    r = n(890687),
+    s = n(590202),
     o = n(792620),
     d = n(814793),
     c = n(753386),
@@ -20,10 +20,10 @@ let h = function(e) {
         analyticsCtxQuestContent: h,
         analyticsCtxSourceQuestContent: p,
         size: g
-    } = e, A = (0, s.fc)(t), x = function(e, t, n, i) {
+    } = e, A = (0, r.fc)(t), x = function(e, t, n, i) {
         let {
             launchInGameActivity: a
-        } = (0, s.zW)(e);
+        } = (0, r.zW)(e);
         return (0, o.K$)(e) ? () => {
             (0, u.Fy)(e)
         } : (0, o.IO)(e) ? () => {
@@ -36,7 +36,7 @@ let h = function(e) {
         } : (0, d.vA)(e) ? () => {
             a()
         } : null
-    }(t, h, p, a.o.VIDEO.has(n) ? r.Cy.WATCH_VIDEO : (0, d.vA)(t) ? r.Cy.START_QUEST : r.Cy.ACCEPT_QUEST), f = (0, u.Oz)(t), C = function(e, t) {
+    }(t, h, p, a.o.VIDEO.has(n) ? s.Cy.WATCH_VIDEO : (0, d.vA)(t) ? s.Cy.START_QUEST : s.Cy.ACCEPT_QUEST), f = (0, u.Oz)(t), C = function(e, t) {
         if ((0, o.K$)(e)) return m.intl.string(m.t.IsH2Sp);
         if ((0, o.IO)(e)) return (0, c.WM)(t);
         if ((0, d.vA)(e)) return (0, o.Ov)(e) ? m.intl.string(m.t.CkUzLd) : (0, o.vl)(e) ? e.config.features.includes(_.Li.CLOUD_GAMING_ACTIVITY) ? m.intl.string(m.t["+qoymD"]) : m.intl.string(m.t.E4kW5O) : m.intl.string(m.t.l7E81v);

@@ -7,8 +7,8 @@ var a = n(627968);
 n(64700);
 var i = n(989349),
     r = n.n(i),
-    o = n(311907),
-    c = n(397927),
+    c = n(311907),
+    o = n(397927),
     _ = n(832712),
     l = n(995102),
     s = n(145408),
@@ -21,19 +21,19 @@ function m(e, t) {
         {
             muted: i,
             muteConfig: m
-        } = (0, o.cf)([d.Ay], () => ({
+        } = (0, c.cf)([d.Ay], () => ({
             muted: null != n ? d.Ay.isMuted(n) : void 0,
             muteConfig: null != n ? d.Ay.getMuteConfig(n) : void 0
         }), [n]),
         g = (0, s.M)(m);
-    return null == n ? null : i ? (0, a.jsx)(c.Drp, {
+    return null == n ? null : i ? (0, a.jsx)(o.Drp, {
         id: "unmute-guild",
         label: b.intl.string(b.t.De0BTC),
         subtext: g,
         action: () => _.A.updateGuildNotificationSettings(n, {
             muted: !1
         }, u.fd.Unmuted)
-    }) : (0, a.jsx)(c.Drp, {
+    }) : (0, a.jsx)(o.Drp, {
         id: "mute-guild",
         label: b.intl.string(b.t.vRzp7P),
         action: () => _.A.updateGuildNotificationSettings(n, {
@@ -42,11 +42,11 @@ function m(e, t) {
         children: (0, l.g)().map(e => {
             let {
                 value: i,
-                label: o
+                label: c
             } = e;
-            return (0, a.jsx)(c.Drp, {
+            return (0, a.jsx)(o.Drp, {
                 id: `${i}`,
-                label: o,
+                label: c,
                 action: () => (function(e) {
                     if (null == n) return;
                     let a = e > 0 ? r()().add(e, "second").toISOString() : null;

@@ -41,8 +41,8 @@ let m = r.forwardRef(function(e, t) {
         hideDivider: h = !1,
         showBorder: A = !1,
         borderType: x,
-        hasBackground: R = !1,
-        forcedDivider: v = !1,
+        hasBackground: v = !1,
+        forcedDivider: R = !1,
         showPremiumIcon: y = !1
     } = e;
     return (0, s.jsx)("div", {
@@ -50,7 +50,7 @@ let m = r.forwardRef(function(e, t) {
             [u.r9]: g,
             [u.Ai]: h,
             [u.Ac]: A,
-            [u.Cx]: v
+            [u.Cx]: R
         }),
         ref: t,
         children: (0, s.jsxs)(c.A, {
@@ -58,7 +58,7 @@ let m = r.forwardRef(function(e, t) {
             backgroundClassName: u.fr,
             isShown: A,
             type: x,
-            hasBackground: R,
+            hasBackground: v,
             children: [(0, s.jsxs)(l.zEo, {
                 className: u.DD,
                 id: n,

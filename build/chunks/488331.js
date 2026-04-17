@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var a = n(793574),
     l = n(688810),
-    s = n(735991),
-    r = n(485724),
+    r = n(735991),
+    s = n(485724),
     o = n(429913),
     d = n(246097),
     c = n(96440),
@@ -22,7 +22,7 @@ function _(e) {
         message: h
     } = e, {
         analyticsLocations: p
-    } = (0, l.Ay)(a.A.ACTIVITY_BOOKMARK), [g] = (0, o.A)([t]), A = null != g && (0, s.Ag)(g), {
+    } = (0, l.Ay)(a.A.ACTIVITY_BOOKMARK), [g] = (0, o.A)([t]), A = null != g && (0, r.Ag)(g), {
         data: x,
         error: f
     } = (0, d.K)(g?.id, m);
@@ -37,7 +37,7 @@ function _(e) {
         })
     }) : (0, i.jsx)(l.f5, {
         value: p,
-        children: (0, i.jsx)(r.W, {
+        children: (0, i.jsx)(s.W, {
             app: g,
             linkType: u.J.ACTIVITY,
             activityCustomId: n,

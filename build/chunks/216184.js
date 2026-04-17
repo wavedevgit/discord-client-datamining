@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(635377),
     a = n.n(i),
     l = n(311907),
-    s = n(73153);
-let r = new(a())({
+    r = n(73153);
+let s = new(a())({
     max: 500
 });
 class o extends l.Ay.Store {
@@ -15,16 +15,16 @@ class o extends l.Ay.Store {
         let {
             messageId: t
         } = e;
-        return r.get(t)
+        return s.get(t)
     }
 }
-let d = new o(s.h, {
+let d = new o(r.h, {
     SET_MESSAGE_ACTIVITY_INVITE_COVER_IMAGE_URL: function(e) {
         let {
             messageId: t,
             coverImageURL: n
         } = e;
-        if (r.get(t) === n) return !1;
-        r.set(t, n)
+        if (s.get(t) === n) return !1;
+        s.set(t, n)
     }
 })

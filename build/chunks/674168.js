@@ -16,8 +16,8 @@ var r = n(311907),
     A = n(927578),
     E = n(652215),
     I = n(49999),
-    h = n(788868),
-    g = n(985018),
+    g = n(788868),
+    h = n(985018),
     C = n(871425);
 
 function p(e) {
@@ -25,7 +25,7 @@ function p(e) {
     let {
         onClose: n,
         markAsDismissed: p
-    } = e, T = (0, r.bG)([_.default], () => _.default.getCurrentUser()), S = (t = T?.premiumType) === h.PremiumTypes.TIER_2 ? g.intl.string(g.t.jqO5Qn) : null == t ? g.intl.string(g.t.f2qjw5) : g.intl.string(g.t.SblICW), b = A.Ay.canUseCustomCallSounds(T);
+    } = e, S = (0, r.bG)([_.default], () => _.default.getCurrentUser()), T = (t = S?.premiumType) === g.PremiumTypes.TIER_2 ? h.intl.string(h.t.jqO5Qn) : null == t ? h.intl.string(h.t.f2qjw5) : h.intl.string(h.t.SblICW), b = A.Ay.canUseCustomCallSounds(S);
     return (0, i.jsxs)(d.A, {
         isShown: !0,
         type: d.i.PREMIUM,
@@ -34,7 +34,7 @@ function p(e) {
         children: [null != p ? (0, i.jsx)(o.DUT, {
             className: C.VN,
             onClick: () => p?.(I.i.DISMISS),
-            "aria-label": g.intl.string(g.t.cpT0Cq),
+            "aria-label": h.intl.string(h.t.cpT0Cq),
             children: (0, i.jsx)(o.PGe, {
                 size: "xs",
                 color: "currentColor",
@@ -48,22 +48,22 @@ function p(e) {
                 className: C.ax
             }), (0, i.jsx)(o.Heading, {
                 variant: "heading-sm/bold",
-                children: g.intl.string(g.t.dTbAxx)
+                children: h.intl.string(h.t.dTbAxx)
             })]
         }), (0, i.jsx)(l.E, {
             variant: "text-sm/normal",
-            children: S
+            children: T
         }), b ? (0, i.jsx)(o.Button, {
             onClick: function() {
                 (0, u.openUserSettings)(c.X.SOUNDBOARD_CATEGORY), n?.(), p?.(I.i.PRIMARY)
             },
-            text: g.intl.string(g.t.RzWDqY),
+            text: h.intl.string(h.t.RzWDqY),
             fullWidth: !0
         }) : (0, i.jsx)(a.A, {
             textOptions: {
-                textOverride: g.intl.string(g.t.pj0XBN)
+                textOverride: h.intl.string(h.t.pj0XBN)
             },
-            subscriptionTier: h.pe.TIER_2,
+            subscriptionTier: g.pe.TIER_2,
             premiumModalAnalyticsLocation: {
                 section: E.JJy.SOUNDBOARD_SOUND_PICKER,
                 object: E.ZSU.BUTTON_CTA

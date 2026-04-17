@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var a = n(397927),
     l = n(287809),
-    s = n(166403),
-    r = n(203982),
+    r = n(166403),
+    s = n(203982),
     o = n(927578),
     d = n(598653),
     c = n(788868),
@@ -31,13 +31,13 @@ function _(e) {
             emojiName: h?.emoji?.name,
             soundId: h?.sound?.id,
             onComplete: (e, t) => {
-                g = e, t && (p = t, e.isSubscription && null == s.A.getPremiumSubscription(!1) && (0, d.o)(!0))
+                g = e, t && (p = t, e.isSubscription && null == r.A.getPremiumSubscription(!1) && (0, d.o)(!0))
             },
             ...n
         })
     }, {
         onCloseCallback: () => {
-            p && null != g && !x && g.isSubscription && g?.subscriptionPlan?.premiumSubscriptionType === c.PremiumTypes.TIER_2 && r._.dispatch(u.jej.PREMIUM_SUBSCRIPTION_CREATED)
+            p && null != g && !x && g.isSubscription && g?.subscriptionPlan?.premiumSubscriptionType === c.PremiumTypes.TIER_2 && s._.dispatch(u.jej.PREMIUM_SUBSCRIPTION_CREATED)
         }
     })
 }

@@ -1,13 +1,13 @@
 /** chunk id: 147351 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => f
 });
 var i = n(627968),
     r = n(64700),
     s = n(311907),
-    a = n(732955),
-    l = n(843472),
+    l = n(732955),
+    a = n(843472),
     o = n(355622),
     c = n(148355),
     u = n(406704),
@@ -60,7 +60,7 @@ function p(e) {
                 message: n,
                 sticker: i
             } = e;
-            l.A.sendGreetMessage(t.id, i.id, l.A.getSendMessageOptionsForReply({
+            a.A.sendGreetMessage(t.id, i.id, a.A.getSendMessageOptionsForReply({
                 channel: t,
                 message: n,
                 shouldMention: !0,
@@ -86,7 +86,7 @@ function p(e) {
             eventProperties: E
         }))
     }, [n, s, m, _, E]);
-    return (0, i.jsx)(a.$nd, {
+    return (0, i.jsx)(l.$nd, {
         icon: {
             type: "sticker",
             asset: m,
@@ -98,13 +98,13 @@ function p(e) {
     })
 }
 
-function C(e) {
+function f(e) {
     let {
         channel: t,
         message: n,
         buttonLabels: r,
-        stickers: a,
-        event: l,
+        stickers: l,
+        event: a,
         eventProperties: o
     } = e, c = E.default.getCurrentUser(), A = function(e) {
         let {
@@ -117,9 +117,9 @@ function C(e) {
             if (null == i || null == e) return !1;
             let r = (0, u.UJ)(t),
                 s = _.A.can(T.xBc.SEND_MESSAGES, t),
-                a = d.Ay.getMember(e, i.id)?.isPending,
-                l = n.author.bot;
-            return s && !r && !a && !l
+                l = d.Ay.getMember(e, i.id)?.isPending,
+                a = n.author.bot;
+            return s && !r && !l && !a
         })
     }({
         channel: t,
@@ -133,8 +133,8 @@ function C(e) {
             channel: t,
             message: n,
             buttonLabels: r,
-            stickers: a,
-            event: l,
+            stickers: l,
+            event: a,
             eventProperties: o
         })
     }) : null

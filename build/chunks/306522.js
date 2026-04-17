@@ -2,28 +2,28 @@
 n.d(t, {
     Oo: () => o,
     P0: () => u,
-    Qm: () => r,
+    Qm: () => s,
     bq: () => c,
     oG: () => d
 });
 var i = n(562465),
     a = n(198982),
     l = n(371794),
-    s = n(652215);
-let r = async (e, t, n) => {
+    r = n(652215);
+let s = async (e, t, n) => {
     let {
         priceTier: l,
-        imageName: r,
+        imageName: s,
         createNewRole: o,
         unlinkRole: d,
         ...c
     } = n;
     try {
         return (await i.Bo.patch({
-            url: s.Rsh.GUILD_PRODUCT_LISTINGS(e, t),
+            url: r.Rsh.GUILD_PRODUCT_LISTINGS(e, t),
             body: {
                 ...c,
-                image_name: r,
+                image_name: s,
                 price_tier: l,
                 create_new_role: o,
                 unlink_role: d
@@ -36,7 +36,7 @@ let r = async (e, t, n) => {
 }, o = async (e, t) => {
     try {
         await i.Bo.del({
-            url: s.Rsh.GUILD_PRODUCT_LISTINGS(e, t),
+            url: r.Rsh.GUILD_PRODUCT_LISTINGS(e, t),
             rejectWithError: !1
         })
     } catch (e) {
@@ -45,7 +45,7 @@ let r = async (e, t, n) => {
 }, d = async e => {
     try {
         return (await (0, l.aP)({
-            url: s.Rsh.GUILD_PRODUCT_LISTINGS(e),
+            url: r.Rsh.GUILD_PRODUCT_LISTINGS(e),
             rejectWithError: !1
         })).body.listings
     } catch (e) {
@@ -54,7 +54,7 @@ let r = async (e, t, n) => {
 }, c = async (e, t) => {
     try {
         return (await (0, l.aP)({
-            url: s.Rsh.GUILD_PRODUCT_LISTINGS(e, t),
+            url: r.Rsh.GUILD_PRODUCT_LISTINGS(e, t),
             rejectWithError: !1
         })).body
     } catch (e) {
@@ -68,7 +68,7 @@ let r = async (e, t, n) => {
     } = e;
     try {
         return (await i.Bo.post({
-            url: s.Rsh.GUILD_PRODUCT_ATTACHMENT_DOWNLOAD(t, n, l),
+            url: r.Rsh.GUILD_PRODUCT_ATTACHMENT_DOWNLOAD(t, n, l),
             rejectWithError: !1
         })).body
     } catch (e) {

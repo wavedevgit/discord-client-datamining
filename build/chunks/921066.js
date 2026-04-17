@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i, r = n(627968),
     s = n(64700),
-    a = n(311907),
-    l = n(473193),
+    l = n(311907),
+    a = n(473193),
     o = n(397927),
     c = n(775602),
     u = n(793574),
@@ -20,8 +20,8 @@ var i, r = n(627968),
     N = n(652215),
     g = n(985018),
     p = n(448643),
-    C = n(274993),
-    f = n(218924);
+    f = n(274993),
+    C = n(218924);
 
 function h(e) {
     let t = (0, A.A)(e);
@@ -45,7 +45,7 @@ function S(e) {
         className: t,
         children: (0, r.jsx)("img", {
             className: p.fj,
-            src: n ? C.A : f.A,
+            src: n ? f.A : C.A,
             alt: "",
             "aria-hidden": !0
         })
@@ -114,16 +114,16 @@ function M(e) {
             usernameHook: A,
             showCta: m
         } = e,
-        C = (t = (0, a.bG)([c.A], () => c.A.useReducedMotion), u = (i || (i = n.t(s, 2))).useContext(l.C)?.animate ?? !1, !t && u),
-        f = (0, I.Ay)(d),
-        M = A(f),
+        f = (t = (0, l.bG)([c.A], () => c.A.useReducedMotion), u = (i || (i = n.t(s, 2))).useContext(a.C)?.animate ?? !1, !t && u),
+        C = (0, I.Ay)(d),
+        M = A(C),
         D = d.hasFlag(N.pr7.IS_FIRST_BOOSTER),
         U = h(_?.id),
         P = D ? g.intl.format(g.t["/1IQGD"], {
-            username: f.nick,
+            username: C.nick,
             usernameHook: M
         }) : g.intl.format(g.t.SbSWvY, {
-            username: f.nick,
+            username: C.nick,
             usernameHook: M,
             numSubscriptions: (0, E.A)(d)
         }),
@@ -137,7 +137,7 @@ function M(e) {
             className: p.kL,
             children: [(0, r.jsx)(S, {
                 className: p.rc,
-                animate: C
+                animate: f
             }), (0, r.jsx)(R, {
                 title: P,
                 body: L

@@ -1,41 +1,41 @@
 /** chunk id: 626262 params = (module,exports,require) **/
-n.d(e, {
-    $: () => h,
-    D: () => C
+n.d(t, {
+    $: () => C,
+    D: () => I
 });
 var i = n(627968),
     l = n(64700),
-    r = n(989349),
-    s = n.n(r),
-    a = n(554146),
+    s = n(989349),
+    a = n.n(s),
+    r = n(554146),
     o = n(135099),
-    c = n(380786),
-    d = n(916768),
+    d = n(380786),
+    c = n(916768),
     u = n(617108),
-    E = n(745299),
-    _ = n(816733),
-    T = n(927578),
-    A = n(160761),
-    I = n(49999),
-    N = n(652215),
-    R = n(788868),
-    p = n(985018),
-    O = n(452832);
+    h = n(745299),
+    A = n(816733),
+    _ = n(927578),
+    m = n(160761),
+    p = n(49999),
+    g = n(652215),
+    f = n(788868),
+    E = n(985018),
+    x = n(452832);
 
-function C(t) {
-    switch (t) {
-        case N.kqX.PREMIUM_TIER_2_TRIAL_ENDING:
-            let e = _.A.getAlmostExpiringTrialOffersForReminder([R.pe.TIER_2]);
+function I(e) {
+    switch (e) {
+        case g.kqX.PREMIUM_TIER_2_TRIAL_ENDING:
+            let t = A.A.getAlmostExpiringTrialOffersForReminder([f.pe.TIER_2]);
             return {
-                cooldownDurationMs: (0, T.e1)(e[0])
+                cooldownDurationMs: (0, _.e1)(t[0])
             };
-        case N.kqX.PREMIUM_TIER_2_DISCOUNT_ENDING:
-            let n = _.A.getAlmostExpiringDiscountOffersForReminder([R.pe.TIER_2]);
+        case g.kqX.PREMIUM_TIER_2_DISCOUNT_ENDING:
+            let n = A.A.getAlmostExpiringDiscountOffersForReminder([f.pe.TIER_2]);
             return {
-                cooldownDurationMs: (0, T.e1)(n[0])
+                cooldownDurationMs: (0, _.e1)(n[0])
             };
-        case N.kqX.RIOT_MIGRATION:
-        case N.kqX.RIOT_CONNECTION_DEPRECATION_ADMIN:
+        case g.kqX.RIOT_MIGRATION:
+        case g.kqX.RIOT_CONNECTION_DEPRECATION_ADMIN:
             return {
                 cooldownDurationMs: 6048e5
             };
@@ -45,35 +45,35 @@ function C(t) {
             }
     }
 }
-let h = t => {
+let C = e => {
     let {
-        dismissibleContent: e,
+        dismissibleContent: t,
         noticeType: n
-    } = t, r = l.useMemo(() => C(n), [n]), _ = s()().add(5, "days").toDate(), [T, h] = (0, A.Bo)(e, r, I.m.NOTICE_BAR);
-    if (null == T) return null;
-    switch (T) {
-        case a.M.NAGBAR_NOTICE_OFFER_EXPIRING:
-            if (n === N.kqX.PREMIUM_TIER_2_TRIAL_ENDING) return (0, i.jsx)(E.A, {
+    } = e, s = l.useMemo(() => I(n), [n]), A = a()().add(5, "days").toDate(), [_, C] = (0, m.Bo)(t, s, p.m.NOTICE_BAR);
+    if (null == _) return null;
+    switch (_) {
+        case r.M.NAGBAR_NOTICE_OFFER_EXPIRING:
+            if (n === g.kqX.PREMIUM_TIER_2_TRIAL_ENDING) return (0, i.jsx)(h.A, {
                 dismissCurrentNotice: () => {
-                    h(I.i.USER_DISMISS), (0, d.w)(_)
+                    C(p.i.USER_DISMISS), (0, c.w)(A)
                 },
-                subscriptionTier: R.pe.TIER_2
+                subscriptionTier: f.pe.TIER_2
             });
-            if (n === N.kqX.PREMIUM_TIER_2_DISCOUNT_ENDING) return (0, i.jsx)(u.A, {
+            if (n === g.kqX.PREMIUM_TIER_2_DISCOUNT_ENDING) return (0, i.jsx)(u.A, {
                 dismissCurrentNotice: () => {
-                    h(I.i.USER_DISMISS), (0, d.w)(_)
+                    C(p.i.USER_DISMISS), (0, c.w)(A)
                 },
-                subscriptionTier: R.pe.TIER_2
+                subscriptionTier: f.pe.TIER_2
             });
             break;
-        case a.M.RIOT_CONNECTION_DEPRECATION:
+        case r.M.RIOT_CONNECTION_DEPRECATION:
             return (0, i.jsx)(o.A, {
-                markAsDismissed: h,
-                applicationName: p.intl.string(O.default["1S6oAo"])
+                markAsDismissed: C,
+                applicationName: E.intl.string(x.default["1S6oAo"])
             });
-        case a.M.RIOT_CONNECTION_DEPRECATION_ADMIN:
-            return (0, i.jsx)(c.A, {
-                markAsDismissed: () => h(I.i.USER_DISMISS)
+        case r.M.RIOT_CONNECTION_DEPRECATION_ADMIN:
+            return (0, i.jsx)(d.A, {
+                markAsDismissed: () => C(p.i.USER_DISMISS)
             })
     }
 }

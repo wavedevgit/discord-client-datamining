@@ -1,82 +1,82 @@
 /** chunk id: 81400 params = (module,exports,require) **/
-n.d(e, {
-    EC: () => O,
-    j8: () => C,
-    uZ: () => p
+n.d(t, {
+    EC: () => x,
+    j8: () => I,
+    uZ: () => E
 }), n(938796);
 var i = n(64700),
     l = n(417597),
-    r = n(159001),
-    s = n(507553),
-    a = n(591179),
+    s = n(159001),
+    a = n(507553),
+    r = n(591179),
     o = n(780964),
-    c = n(961350),
-    d = n(696451),
+    d = n(961350),
+    c = n(696451),
     u = n(71393),
-    E = n(576705),
-    _ = n(967198),
-    T = n(229527),
-    A = n(652215),
-    I = n(340837),
-    N = n(355097),
-    R = n(985018);
+    h = n(576705),
+    A = n(967198),
+    _ = n(229527),
+    m = n(652215),
+    p = n(340837),
+    g = n(355097),
+    f = n(985018);
 
-function p(t) {
-    return (0, l.bG)([c.default, d.Ay], () => {
-        if (null == t) return !1;
-        let e = c.default.getId();
-        return (0, T.TR)(d.Ay.getMember(t, e))
-    }, [t])
+function E(e) {
+    return (0, l.bG)([d.default, c.Ay], () => {
+        if (null == e) return !1;
+        let t = d.default.getId();
+        return (0, _.TR)(c.Ay.getMember(e, t))
+    }, [e])
 }
 
-function O(t) {
-    return (0, l.cf)([c.default, d.Ay, _.A, u.A], () => {
-        let e = {
+function x(e) {
+    return (0, l.cf)([d.default, c.Ay, A.A, u.A], () => {
+        let t = {
                 nick: void 0,
                 bio: void 0
             },
-            n = _.A.getGuildId(),
-            i = t ?? n,
+            n = A.A.getGuildId(),
+            i = e ?? n,
             l = u.A.getGuild(i);
-        if (null == l || null == i) return e;
-        let r = c.default.getId(),
-            s = d.Ay.getMember(i, r),
-            a = (0, T.wR)(s?.flags);
-        return 0 === a.size || (a.has(I.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) && (null == t ? e.nick = [R.intl.formatToPlainString(R.t.WBUh3O, {
+        if (null == l || null == i) return t;
+        let s = d.default.getId(),
+            a = c.Ay.getMember(i, s),
+            r = (0, _.wR)(a?.flags);
+        return 0 === r.size || (r.has(p.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) && (null == e ? t.nick = [f.intl.formatToPlainString(f.t.WBUh3O, {
             guildName: l.name ?? ""
-        })] : e.nick = [R.intl.string(R.t.EPZCrM)]), a.has(I.D.AUTOMOD_QUARANTINED_BIO) && (e.bio = [R.intl.string(R.t.dZh1vz)])), e
-    }, [t])
+        })] : t.nick = [f.intl.string(f.t.EPZCrM)]), r.has(p.D.AUTOMOD_QUARANTINED_BIO) && (t.bio = [f.intl.string(f.t.dZh1vz)])), t
+    }, [e])
 }
 
-function C(t) {
+function I(e) {
     let {
-        guildId: e,
-        scrollPosition: d,
-        analyticsLocations: _
-    } = t, T = (0, l.bG)([u.A], () => u.A.getGuild(e), [e]), I = (0, l.bG)([E.A], () => null != T && E.A.can(A.xBc.CHANGE_NICKNAME, T), [T]), R = (0, a.X)("AutomodQuarantineUtils");
+        guildId: t,
+        scrollPosition: c,
+        analyticsLocations: A
+    } = e, _ = (0, l.bG)([u.A], () => u.A.getGuild(t), [t]), p = (0, l.bG)([h.A], () => null != _ && h.A.can(m.xBc.CHANGE_NICKNAME, _), [_]), f = (0, r.X)("AutomodQuarantineUtils");
     return [i.useCallback(() => {
-        if (null == T) return;
-        A.nc_.PROFILE_CUSTOMIZATION;
-        let t = N.Eq.GUILD;
-        if (I ? (0, r.V2)(T.id) : t = N.Eq.USER_PROFILE, R) {
+        if (null == _) return;
+        m.nc_.PROFILE_CUSTOMIZATION;
+        let e = g.Eq.GUILD;
+        if (p ? (0, s.V2)(_.id) : e = g.Eq.USER_PROFILE, f) {
             let {
-                openUserProfileModal: t
+                openUserProfileModal: e
             } = n(657331);
-            t({
-                userId: c.default.getId(),
-                guildId: T.id,
-                sourceAnalyticsLocations: _
+            e({
+                userId: d.default.getId(),
+                guildId: _.id,
+                sourceAnalyticsLocations: A
             })
         } else {
             let {
-                openUserSettings: e
+                openUserSettings: t
             } = n(858897);
-            s.A.setState({
-                subsection: t,
-                scrollPosition: d
-            }), e(o.X.PROFILE_PANEL, {
-                analyticsLocations: _
+            a.A.setState({
+                subsection: e,
+                scrollPosition: c
+            }), t(o.X.PROFILE_PANEL, {
+                analyticsLocations: A
             })
         }
-    }, [I, d, _, T, R]), I]
+    }, [p, c, A, _, f]), p]
 }

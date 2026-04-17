@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var r = n(397927),
     s = n(429913),
-    a = n(763754),
-    l = n(447215),
+    l = n(763754),
+    a = n(447215),
     o = n(888675),
     c = n(985018),
     u = n(111417);
@@ -18,7 +18,7 @@ function d(e) {
         message: t,
         channel: n,
         compact: d
-    } = e, _ = (0, a.Ay)(t), E = (0, l.P)({
+    } = e, _ = (0, l.Ay)(t), E = (0, a.P)({
         user: t.author,
         channelId: n.id,
         guildId: n.guild_id,

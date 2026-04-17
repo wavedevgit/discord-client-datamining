@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var a = n(503698),
     l = n.n(a),
-    s = n(835245),
-    r = n(397927),
+    r = n(835245),
+    s = n(397927),
     o = n(954571),
     d = n(18437),
     c = n(590202),
@@ -26,7 +26,7 @@ function A(e) {
     } = e;
     return (0, i.jsx)("div", {
         className: p.UD,
-        children: (0, i.jsx)(r.Button, {
+        children: (0, i.jsx)(s.Button, {
             fullWidth: a,
             variant: "primary",
             onClick: () => {
@@ -34,7 +34,7 @@ function A(e) {
                     fromContent: n
                 }), o.default.track(m.HAw.QUEST_CONTENT_CLICKED, {
                     quest_id: t,
-                    click_id: (0, s.A)(),
+                    click_id: (0, r.A)(),
                     cta_name: c.Cy.VIEW_QUESTS,
                     is_targeted: !1,
                     ...(0, c.fF)(n)
@@ -50,7 +50,7 @@ function x(e) {
         questId: t,
         fallbackReason: n,
         bodyText: a,
-        questContent: s
+        questContent: r
     } = e, {
         containerRef: o,
         size: c
@@ -65,18 +65,18 @@ function x(e) {
         }),
         children: [(0, i.jsxs)("div", {
             className: p.hQ,
-            children: [(0, i.jsx)(r.Heading, {
+            children: [(0, i.jsx)(s.Heading, {
                 variant: "lg" === c ? "heading-xl/bold" : "heading-lg/bold",
                 color: "text-strong",
                 children: h.intl.string(h.t.vnP31W)
-            }), (0, i.jsx)(r.Text, {
+            }), (0, i.jsx)(s.Text, {
                 variant: "lg" === c ? "text-sm/medium" : "text-xs/medium",
                 color: "text-default",
                 className: p.__invalid_mobileWebCopy,
                 children: a
             }), (0, i.jsx)(A, {
                 questId: t,
-                questContent: s,
+                questContent: r,
                 fullWidth: "lg" !== c
             })]
         }), (0, i.jsx)("div", {

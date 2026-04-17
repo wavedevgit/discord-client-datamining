@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var r = n(503698),
     s = n.n(r),
-    a = n(763754),
-    l = n(491182),
+    l = n(763754),
+    a = n(491182),
     o = n(291812),
     c = n(643204),
     u = n(818855);
@@ -24,14 +24,14 @@ function d(e) {
         hideTimestamp: A = !1,
         withFooter: m = !1,
         ...I
-    } = e, T = (0, a.Ay)(t);
+    } = e, T = (0, l.Ay)(t);
     return (0, i.jsx)("div", {
         className: s()({
             [u.Ym]: m
         }, u.gD, {
             [u.oE]: _
         }, d),
-        children: (0, i.jsx)(l.A, {
+        children: (0, i.jsx)(a.A, {
             ...I,
             className: s()(u.zC, {
                 [u.oE]: _

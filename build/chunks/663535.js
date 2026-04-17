@@ -29,7 +29,7 @@ let j = n.memo(function(e) {
         onContextMenu: e => (0, i.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([s.e("94989"), s.e("1798")]).then(s.bind(s, 44536));
+            } = await Promise.all([s.e("95834"), s.e("94989"), s.e("9")]).then(s.bind(s, 44536));
             return t => (0, l.jsx)(e, {
                 ...t,
                 channel: d

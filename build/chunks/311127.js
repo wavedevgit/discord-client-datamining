@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     r = n(64700),
     s = n(136722),
-    a = n(158954),
-    l = n(311907),
+    l = n(158954),
+    a = n(311907),
     o = n(397927),
     c = n(260509),
     u = n(34457),
@@ -21,19 +21,19 @@ var i = n(627968),
     N = n(164956),
     g = n(209700),
     p = n(652215),
-    C = n(985018),
-    f = n(59742);
+    f = n(985018),
+    C = n(59742);
 
 function h(e) {
     let {
         guildId: t
-    } = e, n = (0, l.bG)([A.default], () => A.default.getCurrentUser()), h = (0, l.bG)([E.A], () => E.A.getGuild(t)), R = (0, l.bG)([_.A], () => _.A.getRolesSnapshot(t)), x = (0, l.bG)([_.A], () => _.A.getSortedRoles(t)), {
+    } = e, n = (0, a.bG)([A.default], () => A.default.getCurrentUser()), h = (0, a.bG)([E.A], () => E.A.getGuild(t)), R = (0, a.bG)([_.A], () => _.A.getRolesSnapshot(t)), x = (0, a.bG)([_.A], () => _.A.getSortedRoles(t)), {
         impersonateType: O,
         viewingRoles: M
-    } = (0, l.cf)([N.A], () => ({
+    } = (0, a.cf)([N.A], () => ({
         impersonateType: N.A.getImpersonateType(t),
         viewingRoles: N.A.getViewingRoles(t)
-    })), D = O === g._.SERVER_SHOP, U = (0, l.bG)([d.Ay], () => null != n ? d.Ay.getTrueMember(t, n.id) : null), P = null != h ? R[(0, c.af)(h)] : null, [L, v] = r.useState(() => {
+    })), D = O === g._.SERVER_SHOP, U = (0, a.bG)([d.Ay], () => null != n ? d.Ay.getTrueMember(t, n.id) : null), P = null != h ? R[(0, c.af)(h)] : null, [L, v] = r.useState(() => {
         let e = null == M ? [] : I.default.keys(M);
         return null != P && e.push(P.id), e
     }), y = r.useRef(h);
@@ -77,7 +77,7 @@ function h(e) {
         forceRoles: G,
         context: h
     }), s.kg(p.xBc.MANAGE_GUILD, p.xBc.MANAGE_ROLES)) || (0, c.bM)(h, n)) ? (0, i.jsx)("div", {
-        className: f.kL,
+        className: C.kL,
         children: (0, i.jsxs)(o.iS7, {
             selectionMode: "multiple",
             options: j,
@@ -88,16 +88,16 @@ function h(e) {
             children: [(0, i.jsx)(o.a32, {
                 hideTags: !0,
                 autoFocus: !0,
-                placeholder: C.intl.string(C.t.Sojqsr)
+                placeholder: f.intl.string(f.t.Sojqsr)
             }), (0, i.jsx)(o.X2W, {
-                renderListItem: e => (0, i.jsx)(a.c$x, {
+                renderListItem: e => (0, i.jsx)(l.c$x, {
                     ...e
                 })
             })]
         })
     }) : (0, i.jsx)(o.Text, {
         variant: "text-md/medium",
-        children: C.intl.string(C.t.MNSTbY)
+        children: f.intl.string(f.t.MNSTbY)
     })
 }
 

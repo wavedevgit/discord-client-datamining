@@ -6,8 +6,8 @@ n.d(t, {
 });
 var i, a, l = n(627968);
 n(64700);
-var s = n(503698),
-    r = n.n(s),
+var r = n(503698),
+    s = n.n(r),
     o = n(407045),
     d = n(827734),
     c = n(582754),
@@ -25,7 +25,7 @@ let f = function(e) {
         logotypeClassName: n,
         gameTileSize: i = 24,
         quest: a,
-        separatorSpacing: s = 2,
+        separatorSpacing: r = 2,
         theme: A = p.NJ8.DARK,
         withCosponsor: x = !0,
         withGameTile: f = !0,
@@ -33,7 +33,7 @@ let f = function(e) {
         onLoadComplete: E
     } = e, I = (0, c.Mw)(A) ? p.NJ8.DARK : p.NJ8.LIGHT, v = (0, _.a5)(a.id, I), b = x && null != a.config.cosponsorMetadata && null != v;
     return (0, l.jsxs)("div", {
-        className: r()(g.Iu, t),
+        className: s()(g.Iu, t),
         children: [f && (0, l.jsx)(h.Sn, {
             id: "QuestPartnerBranding_gameTile",
             children: e => (0, l.jsx)("img", {
@@ -59,7 +59,7 @@ let f = function(e) {
             id: "QuestPartnerBranding_gameLogotype",
             children: e => (0, l.jsx)(o.animated.img, {
                 ref: e,
-                className: r()(g.lW, n, {
+                className: s()(g.lW, n, {
                     [g.TO]: b
                 }),
                 style: C,
@@ -71,7 +71,7 @@ let f = function(e) {
             children: [(0, l.jsx)("div", {
                 className: g.ub,
                 style: {
-                    margin: `0 ${s}px`
+                    margin: `0 ${r}px`
                 },
                 children: (0, l.jsx)(u.aoi, {
                     className: g.JB,
@@ -81,7 +81,7 @@ let f = function(e) {
                 id: "QuestPartnerBranding_cosponsorLogotype",
                 children: e => (0, l.jsx)(o.animated.img, {
                     ref: e,
-                    className: r()(g.lW, g.TO, n),
+                    className: s()(g.lW, g.TO, n),
                     style: C,
                     alt: a.config.cosponsorMetadata?.name ?? "",
                     src: v.url,

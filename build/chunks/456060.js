@@ -9,31 +9,31 @@ n.d(t, {
 var i = n(287809),
     a = n(562153),
     l = n(652215),
-    s = n(985018),
-    r = n(783198);
+    r = n(985018),
+    s = n(783198);
 
 function o(e, t, n) {
     switch (t) {
         case l.xL.LISTEN:
-            return s.intl.formatToPlainString(s.t["/8czH4"], {
+            return r.intl.formatToPlainString(r.t["/8czH4"], {
                 name: e
             });
         case l.xL.WATCH:
-            return s.intl.formatToPlainString(s.t.BBJXVk, {
+            return r.intl.formatToPlainString(r.t.BBJXVk, {
                 name: e
             });
         case l.xL.JOIN:
-            return n ? void 0 : s.intl.string(s.t.pkq6Vq);
+            return n ? void 0 : r.intl.string(r.t.pkq6Vq);
         case l.xL.STREAM_REQUEST:
-            return s.intl.string(r.default.DKHhec);
+            return r.intl.string(s.default.DKHhec);
         case l.xL.JOIN_REQUEST:
         default:
-            return s.intl.string(s.t.Ckxb6j)
+            return r.intl.string(r.t.Ckxb6j)
     }
 }
 
 function d(e, t, n) {
-    return e.author.id === n ? s.intl.string(r.default["8B3U5O"]) : s.intl.formatToPlainString(r.default["d/qbC0"], {
+    return e.author.id === n ? r.intl.string(s.default["8B3U5O"]) : r.intl.formatToPlainString(s.default["d/qbC0"], {
         username: (0, a.mG)(t.guild_id, t.id, e.author)
     })
 }
@@ -42,24 +42,24 @@ function c(e, t, n, a, l) {
     if (e.author.id === a) {
         if (n.isPrivate()) {
             let e = i.default.getUser(n.getRecipientId());
-            if (null != e) return l ? s.intl.formatToPlainString(s.t.JddpN2, {
+            if (null != e) return l ? r.intl.formatToPlainString(r.t.JddpN2, {
                 username: e.globalName,
                 appName: t
-            }) : s.intl.formatToPlainString(s.t.gYVkSW, {
+            }) : r.intl.formatToPlainString(r.t.gYVkSW, {
                 username: e.globalName,
                 appName: t
             })
         }
-        return l ? s.intl.formatToPlainString(s.t["2N1kNS"], {
+        return l ? r.intl.formatToPlainString(r.t["2N1kNS"], {
             appName: t
-        }) : s.intl.formatToPlainString(s.t.IA6uDV, {
+        }) : r.intl.formatToPlainString(r.t.IA6uDV, {
             appName: t
         })
     }
-    return l ? s.intl.formatToPlainString(s.t.XE8axA, {
+    return l ? r.intl.formatToPlainString(r.t.XE8axA, {
         username: e.author.globalName,
         appName: t
-    }) : s.intl.formatToPlainString(s.t.hgcjOn, {
+    }) : r.intl.formatToPlainString(r.t.hgcjOn, {
         username: e.author.globalName,
         appName: t
     })
@@ -70,7 +70,7 @@ function u(e, t, n, i, a) {
         case l.xL.LISTEN:
         case l.xL.WATCH:
         case l.xL.JOIN:
-            return s.intl.string(a ? s.t.x1UXGR : s.t["Ek+51n"]);
+            return r.intl.string(a ? r.t.x1UXGR : r.t["Ek+51n"]);
         case l.xL.STREAM_REQUEST:
             return d(e, n, i);
         case l.xL.JOIN_REQUEST:
@@ -85,15 +85,15 @@ function _(e) {
         maxPartySize: n,
         partySize: i
     } = e;
-    return t === l.xL.STREAM_REQUEST ? "" : t === l.xL.LISTEN ? n > 0 ? s.intl.formatToPlainString(s.t.Zogoou, {
+    return t === l.xL.STREAM_REQUEST ? "" : t === l.xL.LISTEN ? n > 0 ? r.intl.formatToPlainString(r.t.Zogoou, {
         partySize: i,
         maxPartySize: n
-    }) : s.intl.formatToPlainString(s.t.UGei0j, {
+    }) : r.intl.formatToPlainString(r.t.UGei0j, {
         partySize: i
-    }) : n > 0 ? s.intl.formatToPlainString(s.t.gLu7NU, {
+    }) : n > 0 ? r.intl.formatToPlainString(r.t.gLu7NU, {
         partySize: i,
         maxPartySize: n
-    }) : s.intl.formatToPlainString(s.t["65JnWC"], {
+    }) : r.intl.formatToPlainString(r.t["65JnWC"], {
         partySize: i
     })
 }

@@ -6,9 +6,9 @@ n.d(t, {
 var i = n(627968),
     r = n(64700),
     s = n(503698),
-    a = n.n(s),
-    l = n(989349),
-    o = n.n(l),
+    l = n.n(s),
+    a = n(989349),
+    o = n.n(a),
     c = n(837381),
     u = n(311907),
     d = n(827734),
@@ -21,8 +21,8 @@ var i = n(627968),
     N = n(785823),
     g = n(449585),
     p = n(137207),
-    C = n(22007),
-    f = n(378570),
+    f = n(22007),
+    C = n(378570),
     h = n(589022),
     S = n(576705),
     R = n(287809),
@@ -51,23 +51,23 @@ function X(e, t) {
         selected: i,
         setPopout: s
     } = (0, b.A)(e.id, G.Fd), {
-        usernameProfile: a,
-        avatarProfile: l
-    } = n, o = (0, y.r4)(e.author.id, t.id), c = (0, y.UY)(e.author.id, t.id, e.id), u = (0, y.m)(e, t, a, s);
+        usernameProfile: l,
+        avatarProfile: a
+    } = n, o = (0, y.r4)(e.author.id, t.id), c = (0, y.UY)(e.author.id, t.id, e.id), u = (0, y.m)(e, t, l, s);
     return {
         selected: i,
         onContextMenu: o,
         onContextMenuModerateUser: c,
         onClickUsername: u,
-        onClickAvatar: (0, y.Jo)(l, s),
+        onClickAvatar: (0, y.Jo)(a, s),
         onPopoutRequestClose: r.useCallback(() => s({
             usernameProfile: !1,
             avatarProfile: !1,
             referencedUsernameProfile: !1
         }), [s]),
         renderPopout: v.A,
-        showAvatarPopout: l,
-        showUsernamePopout: a
+        showAvatarPopout: a,
+        showUsernamePopout: l
     }
 }
 
@@ -90,7 +90,7 @@ function K(e) {
         compact: r
     } = e;
     return (0, i.jsx)("div", {
-        className: a()(V.xQ, n, {
+        className: l()(V.xQ, n, {
             [V.oE]: r
         }),
         children: t
@@ -103,7 +103,7 @@ function Y(e) {
         className: n
     } = e;
     return (0, i.jsx)("div", {
-        className: a()(V.A3, n),
+        className: l()(V.A3, n),
         children: t
     })
 }
@@ -120,7 +120,7 @@ function W(e) {
             return (0, i.jsx)(E.A9s, {
                 size: "xs",
                 color: "currentColor",
-                className: a()(V.yr, V.r0)
+                className: l()(V.yr, V.r0)
             });
         case T.G.SUBMIT_FEEDBACK:
             return (0, i.jsx)(E.iFK, {
@@ -196,8 +196,8 @@ let Q = r.memo(function(e) {
             message: n,
             channel: r,
             embedChannel: s,
-            compact: a,
-            interactionUserId: l
+            compact: l,
+            interactionUserId: a
         } = e,
         o = X(n, r),
         c = q(r, n.author),
@@ -207,10 +207,10 @@ let Q = r.memo(function(e) {
             channel: r,
             author: u,
             guildId: r?.guild_id,
-            compact: a,
+            compact: l,
             ...o
         }, c),
-        _ = R.default.getUser(l),
+        _ = R.default.getUser(a),
         A = X(n, r),
         m = q(r, _, R.default.getCurrentUser());
     if (null != _) {
@@ -220,7 +220,7 @@ let Q = r.memo(function(e) {
                 channel: r,
                 author: e,
                 guildId: r?.guild_id,
-                compact: a,
+                compact: l,
                 ...A
             }, m);
         t = () => i
@@ -246,7 +246,7 @@ function Z(e) {
         id: t,
         compact: n,
         message: s,
-        channel: l
+        channel: a
     } = e, {
         avatarSrc: o,
         eventHandlers: {
@@ -260,7 +260,7 @@ function Z(e) {
         isFocused: O,
         handleFocus: D,
         handleBlur: U
-    } = (0, y.G8)(R), v = (0, u.bG)([m.A], () => m.A.keyboardModeEnabled), b = (0, u.bG)([S.A], () => S.A.can(F.xBc.MANAGE_MESSAGES, l), [l]), {
+    } = (0, y.G8)(R), v = (0, u.bG)([m.A], () => m.A.keyboardModeEnabled), b = (0, u.bG)([S.A], () => S.A.can(F.xBc.MANAGE_MESSAGES, a), [a]), {
         ruleName: G,
         embedChannel: q,
         decisionId: W,
@@ -273,27 +273,27 @@ function Z(e) {
         alertActionsExecution: ei,
         quarantineType: er,
         interactionUserId: es
-    } = (0, N.Ay)(s), ea = r.useMemo(() => (0, M.Tz)($, J, l.id), [$, J, l]), {
-        selected: el,
+    } = (0, N.Ay)(s), el = r.useMemo(() => (0, M.Tz)($, J, a.id), [$, J, a]), {
+        selected: ea,
         ...eo
-    } = X(s, l), ec = r.useCallback(() => {
-        (0, g.w2)(s.id, $, W, l)
-    }, [s.id, $, W, l]), eu = r.useCallback(e => {
-        null != ee && null != q && (e.stopPropagation(), e.preventDefault(), (0, C.A)(F.BVt.CHANNEL(q?.guild_id, q?.id, ee)))
+    } = X(s, a), ec = r.useCallback(() => {
+        (0, g.w2)(s.id, $, W, a)
+    }, [s.id, $, W, a]), eu = r.useCallback(e => {
+        null != ee && null != q && (e.stopPropagation(), e.preventDefault(), (0, f.A)(F.BVt.CHANNEL(q?.guild_id, q?.id, ee)))
     }, [q, ee]), ed = r.useCallback(e => {
         null != q && (A.default.selectChannel({
             guildId: q.guild_id,
             channelId: e,
             messageId: s.id
-        }), (0, f.iN)(e))
+        }), (0, C.iN)(e))
     }, [s, q]), e_ = r.useCallback(() => {
-        (0, p.E5)(s.id, l, T.G.DELETE_USER_MESSAGE)
-    }, [l, s.id]), eE = (0, B.getFriendlyDurationString)(Number(et)), eA = null != en, em = b && null != ee && (null == ei || !ei.actions.hasOwnProperty(T.G.DELETE_USER_MESSAGE)), eI = s.embeds.length > 0 ? s.embeds[0].fields.find(e => "channel_id" === e.rawName)?.rawValue : null, eT = null != eI;
+        (0, p.E5)(s.id, a, T.G.DELETE_USER_MESSAGE)
+    }, [a, s.id]), eE = (0, B.getFriendlyDurationString)(Number(et)), eA = null != en, em = b && null != ee && (null == ei || !ei.actions.hasOwnProperty(T.G.DELETE_USER_MESSAGE)), eI = s.embeds.length > 0 ? s.embeds[0].fields.find(e => "channel_id" === e.rawName)?.rawValue : null, eT = null != eI;
     return (0, i.jsx)("div", {
         onMouseEnter: _,
         onMouseLeave: h,
         children: (0, i.jsx)(j.A, {
-            className: a()(V.rs, {
+            className: l()(V.rs, {
                 [V.oE]: n
             }),
             iconNode: n ? null : (0, i.jsx)(k.l, {
@@ -302,13 +302,13 @@ function Z(e) {
             iconContainerClassName: V.zc,
             compact: n,
             children: (0, i.jsxs)("div", {
-                className: a()(V.Qs, {
+                className: l()(V.Qs, {
                     [V.oE]: n
                 }),
                 children: [(0, i.jsx)(L.ix, {
                     message: s,
                     messageClassname: V.he,
-                    className: a()(V.QV, V.he, {
+                    className: l()(V.QV, V.he, {
                         [V.oE]: n
                     }),
                     username: (0, i.jsxs)("div", {
@@ -324,7 +324,7 @@ function Z(e) {
                             className: V.Al
                         }), (0, i.jsx)(Q, {
                             message: s,
-                            channel: l,
+                            channel: a,
                             embedChannel: q,
                             compact: n,
                             interactionUserId: es
@@ -333,20 +333,20 @@ function Z(e) {
                     compact: n,
                     showTimestamp: !0
                 }), (0, i.jsx)("div", {
-                    className: a()(V.BK, {
+                    className: l()(V.BK, {
                         [V.oE]: n
                     }),
                     children: (0, i.jsx)(P.A, {
                         ...x,
                         message: s,
                         channel: q,
-                        content: ea,
+                        content: el,
                         compact: n,
                         withFooter: !0,
                         hideTimestamp: !0,
-                        className: a()(V.gD, {
+                        className: l()(V.gD, {
                             [V.oE]: n,
-                            [V.wH]: el || v && O,
+                            [V.wH]: ea || v && O,
                             [V.JD]: null != ee && null != q
                         }),
                         childrenAccessories: (0, i.jsxs)(i.Fragment, {
@@ -361,7 +361,7 @@ function Z(e) {
                                             keyword: Z
                                         })
                                     }), (0, i.jsx)("div", {
-                                        className: a()(V.Om, V.Gx)
+                                        className: l()(V.Om, V.Gx)
                                     })]
                                 }), null != G && (0, i.jsx)(E.Text, {
                                     variant: "text-xs/medium",
@@ -372,7 +372,7 @@ function Z(e) {
                                     })
                                 }), null != eE && (0, i.jsxs)(i.Fragment, {
                                     children: [(0, i.jsx)("div", {
-                                        className: a()(V.Om, V.Gx)
+                                        className: l()(V.Om, V.Gx)
                                     }), (0, i.jsx)(E.Text, {
                                         variant: "text-xs/medium",
                                         color: "text-muted",
@@ -384,7 +384,7 @@ function Z(e) {
                                     })]
                                 }), null != er && (0, i.jsxs)(i.Fragment, {
                                     children: [(0, i.jsx)("div", {
-                                        className: a()(V.Om, V.Gx)
+                                        className: l()(V.Om, V.Gx)
                                     }), (0, i.jsx)(E.Text, {
                                         variant: "text-xs/medium",
                                         color: "text-muted",
@@ -413,7 +413,7 @@ function Z(e) {
                 }), (0, i.jsx)(K, {
                     compact: n,
                     children: (0, i.jsxs)("div", {
-                        className: a()(V.Y4, V.UD, {
+                        className: l()(V.Y4, V.UD, {
                             [V.oE]: n
                         }),
                         children: [(0, i.jsxs)("div", {
@@ -470,7 +470,7 @@ function Z(e) {
                             })]
                         }) : null, null != ei ? (0, i.jsx)(z, {
                             alertActionsExecution: ei,
-                            guildId: l.guild_id
+                            guildId: a.guild_id
                         }) : null]
                     })
                 })]

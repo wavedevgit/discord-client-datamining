@@ -1,76 +1,76 @@
 /** chunk id: 135099 params = (module,exports,require) **/
-n.d(e, {
+n.d(t, {
     A: () => S
 });
 var i = n(627968),
     l = n(64700),
-    r = n(503698),
-    s = n.n(r),
-    a = n(311907),
+    s = n(503698),
+    a = n.n(s),
+    r = n(311907),
     o = n(554146),
-    c = n(397927),
-    d = n(736653),
+    d = n(397927),
+    c = n(736653),
     u = n(573648),
-    E = n(793574),
-    _ = n(688810),
-    T = n(429913),
-    A = n(826673),
-    I = n(780964),
-    N = n(858897),
-    R = n(962173),
-    p = n(362490),
-    O = n(652215),
-    C = n(49999),
-    h = n(452832),
-    m = n(985018),
-    g = n(448759);
-let S = 21552 == n.j ? t => {
+    h = n(793574),
+    A = n(688810),
+    _ = n(429913),
+    m = n(826673),
+    p = n(780964),
+    g = n(858897),
+    f = n(962173),
+    E = n(362490),
+    x = n(652215),
+    I = n(49999),
+    C = n(452832),
+    N = n(985018),
+    T = n(448759);
+let S = e => {
     let {
-        markAsDismissed: e,
+        markAsDismissed: t,
         applicationName: n
-    } = t, r = [O.fg2.LEAGUE_OF_LEGENDS, O.fg2.RIOT_GAMES], S = (0, a.bG)([R.A], () => R.A.getAccounts().find(t => r.includes(t.type))?.type), y = (0, d.Ay)(), M = null != S ? u.A.get(S) : null, P = M?.replacedBy, D = (0, T.h)(P);
-    n = n ?? D?.name;
+    } = e, s = [x.fg2.LEAGUE_OF_LEGENDS, x.fg2.RIOT_GAMES], S = (0, r.bG)([f.A], () => f.A.getAccounts().find(e => s.includes(e.type))?.type), b = (0, c.Ay)(), y = null != S ? u.A.get(S) : null, v = y?.replacedBy, R = (0, _.h)(v);
+    n = n ?? R?.name;
     let {
-        startAuthorization: x,
-        canStartAuthorization: U,
-        hasAlreadyLinked: f,
-        fetched: j
-    } = (0, p.RD)(D), {
-        analyticsLocations: k
-    } = (0, _.Ay)(E.A.NOTICE);
+        startAuthorization: j,
+        canStartAuthorization: O,
+        hasAlreadyLinked: L,
+        fetched: M
+    } = (0, E.RD)(R), {
+        analyticsLocations: D
+    } = (0, A.Ay)(h.A.NOTICE);
     if (l.useEffect(() => {
-            f && j && ((0, A.Dr)(o.M.RIOT_CONNECTION_DEPRECATION_DISABLE), e(C.i.INDIRECT_ACTION))
-        }, [f, j, e]), null == D || !U || !j || f) return null;
-    let L = u.A.get(O.fg2.RIOT_GAMES);
-    return (0, i.jsxs)(c.$Td, {
-        color: c.Hv$.WARNING,
-        children: [(0, i.jsx)(c.PMB, {
-            noticeType: O.kqX.RIOT_MIGRATION,
+            L && M && ((0, m.Dr)(o.M.RIOT_CONNECTION_DEPRECATION_DISABLE), t(I.i.INDIRECT_ACTION))
+        }, [L, M, t]), null == R || !O || !M || L) return null;
+    let U = u.A.get(x.fg2.RIOT_GAMES);
+    return (0, i.jsxs)(d.$Td, {
+        color: d.Hv$.WARNING,
+        children: [(0, i.jsx)(d.PMB, {
+            noticeType: x.kqX.RIOT_MIGRATION,
             onClick: () => {
-                (0, A.Dr)(o.M.RIOT_CONNECTION_DEPRECATION_DISABLE), e(C.i.USER_DISMISS)
+                (0, m.Dr)(o.M.RIOT_CONNECTION_DEPRECATION_DISABLE), t(I.i.USER_DISMISS)
             }
         }), (0, i.jsx)("img", {
-            src: "light" === y ? L?.icon.blackSVG : L?.icon.whiteSVG,
-            alt: m.intl.string(h.default["1S6oAo"]),
-            className: s()(g.tV, g._R)
-        }), m.intl.format(h.default.YnnXb6, {
-            connectionName: M?.name,
+            src: "light" === b ? U?.icon.blackSVG : U?.icon.whiteSVG,
+            alt: N.intl.string(C.default["1S6oAo"]),
+            className: a()(T.tV, T._R)
+        }), N.intl.format(C.default.YnnXb6, {
+            connectionName: y?.name,
             applicationName: n
-        }), (0, i.jsx)(c.Z_L, {
+        }), (0, i.jsx)(d.Z_L, {
             onClick: () => {
-                (0, A.Dr)(o.M.RIOT_CONNECTION_DEPRECATION_DISABLE), e(C.i.TAKE_ACTION), (0, N.openUserSettings)(I.X.CONNECTIONS_PANEL), setTimeout(() => x({
-                    analyticsLocations: k
+                (0, m.Dr)(o.M.RIOT_CONNECTION_DEPRECATION_DISABLE), t(I.i.TAKE_ACTION), (0, g.openUserSettings)(p.X.CONNECTIONS_PANEL), setTimeout(() => j({
+                    analyticsLocations: D
                 }), 0)
             },
-            className: g.HE,
-            noticeType: O.kqX.RIOT_MIGRATION,
-            children: m.intl.string(h.default.ZeOhh9)
-        }), (0, i.jsx)(c.zr9, {
+            className: T.HE,
+            noticeType: x.kqX.RIOT_MIGRATION,
+            children: N.intl.string(C.default.ZeOhh9)
+        }), (0, i.jsx)(d.zr9, {
             onClick: () => {
-                e(C.i.USER_DISMISS)
+                t(I.i.USER_DISMISS)
             },
-            className: g.wX,
-            children: m.intl.string(h.default["MVB/Ab"])
+            className: T.wX,
+            children: N.intl.string(C.default["MVB/Ab"])
         })]
     })
-} : null
+}

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(732955),
     l = n(424151),
-    s = n(79545),
-    r = n(941775),
+    r = n(79545),
+    s = n(941775),
     o = n(561393),
     d = n(593587),
     c = n(220514),
@@ -22,7 +22,7 @@ let m = function(e) {
         analyticsCtxQuestContentPosition: g,
         analyticsCtxQuestContentRowIndex: A,
         size: x = "md"
-    } = e, f = (0, s.Pd)(t);
+    } = e, f = (0, r.Pd)(t);
     if (0 === Object.keys(t.config.taskConfigV2.tasks).length) return (0, i.jsx)(a.$nd, {
         variant: "primary",
         fullWidth: !0,
@@ -31,7 +31,7 @@ let m = function(e) {
     });
     let C = Object.values(t.config.taskConfigV2.tasks)[0];
     switch (f) {
-        case s.UA.UNENROLLED:
+        case r.UA.UNENROLLED:
             return (0, i.jsx)(u.A, {
                 quest: t,
                 taskType: C.type,
@@ -42,7 +42,7 @@ let m = function(e) {
                 analyticsCtxQuestContentPosition: g,
                 analyticsCtxQuestContentRowIndex: A
             });
-        case s.UA.ENROLLED:
+        case r.UA.ENROLLED:
             return (0, i.jsx)(o.A, {
                 quest: t,
                 taskType: C.type,
@@ -53,7 +53,7 @@ let m = function(e) {
                 analyticsCtxQuestContentRowIndex: A,
                 surface: n
             });
-        case s.UA.INCOMPLETE:
+        case r.UA.INCOMPLETE:
             return (0, i.jsx)(c.A, {
                 quest: t,
                 taskType: C.type,
@@ -64,9 +64,9 @@ let m = function(e) {
                 analyticsCtxQuestContentRowIndex: A,
                 surface: n
             });
-        case s.UA.EXPIRED_CLAIMABLE:
-        case s.UA.COMPLETED:
-            return (0, i.jsx)(r.A, {
+        case r.UA.EXPIRED_CLAIMABLE:
+        case r.UA.COMPLETED:
+            return (0, i.jsx)(s.A, {
                 quest: t,
                 size: x,
                 analyticsCtxQuestContent: h,
@@ -74,7 +74,7 @@ let m = function(e) {
                 analyticsCtxQuestContentPosition: g,
                 analyticsCtxQuestContentRowIndex: A
             });
-        case s.UA.CLAIMED:
+        case r.UA.CLAIMED:
             return (0, i.jsx)(l.A, {
                 quest: t,
                 size: x,
@@ -83,7 +83,7 @@ let m = function(e) {
                 analyticsCtxQuestContentPosition: g,
                 analyticsCtxQuestContentRowIndex: A
             });
-        case s.UA.EXPIRED:
+        case r.UA.EXPIRED:
             return (0, i.jsx)(d.A, {
                 quest: t,
                 size: x

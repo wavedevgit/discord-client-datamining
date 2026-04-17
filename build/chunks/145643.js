@@ -6,22 +6,22 @@ n.d(t, {
 var i = n(311907),
     r = n(73153),
     s = n(71393);
-let a = new Map;
-class l extends i.Ay.Store {
+let l = new Map;
+class a extends i.Ay.Store {
     static displayName = "GuildRoleConnectionsConfigurationStore";
     initialize() {
         this.waitFor(s.A)
     }
     getGuildRoleConnectionsConfiguration(e) {
-        return a.get(e)
+        return l.get(e)
     }
 }
-let o = new l(r.h, {
+let o = new a(r.h, {
     GUILD_ROLE_CONNECTIONS_CONFIGURATIONS_FETCH_SUCCESS: e => {
         let {
             roleId: t,
             roleConnectionConfigurations: n
         } = e;
-        a.set(t, n)
+        l.set(t, n)
     }
 })

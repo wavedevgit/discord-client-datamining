@@ -1,78 +1,78 @@
 /** chunk id: 50292 params = (module,exports,require) **/
-r.d(t, {
-    default: () => f
-}), r(323874), r(14289), r(35956);
-var a = r(627968),
-    i = r(158954),
-    n = r(397927),
-    o = r(793574),
-    s = r(688810),
-    c = r(532794),
-    l = r(920050),
-    p = r(553081),
-    _ = r(976860),
-    u = r(652215),
-    d = r(788868),
-    b = r(985018);
+l.d(t, {
+    default: () => g
+}), l(323874), l(14289), l(35956);
+var n = l(627968),
+    r = l(158954),
+    i = l(397927),
+    s = l(793574),
+    u = l(688810),
+    a = l(532794),
+    c = l(920050),
+    o = l(553081),
+    d = l(976860),
+    p = l(652215),
+    m = l(788868),
+    f = l(985018);
 
-function f(e) {
+function g(e) {
     let {
         onClose: t,
-        multiplier: r,
-        eligibleToReceivePremiumRewards: f,
-        ...h
+        multiplier: l,
+        eligibleToReceivePremiumRewards: g,
+        ...A
     } = e, {
-        analyticsLocations: v
-    } = (0, s.Ay)(o.A.QUEST_ORB_MULTIPLIER_INFO_MODAL), k = f ? b.intl.format(b.t.NpUfej, {
-        bonusOrbMultiplier: r
-    }) : b.intl.format(b.t["G5k+lZ"], {
-        bonusOrbMultiplier: r
+        analyticsLocations: _
+    } = (0, u.Ay)(s.A.QUEST_ORB_MULTIPLIER_INFO_MODAL), E = g ? f.intl.format(f.t.NpUfej, {
+        bonusOrbMultiplier: l
+    }) : f.intl.format(f.t["G5k+lZ"], {
+        bonusOrbMultiplier: l
     });
-    return (0, a.jsx)(n.kpP, {
-        ...h,
+    return (0, n.jsx)(i.kpP, {
+        ...A,
         onClose: t,
         badge: {
             type: "beta",
             variant: "expressive"
         },
         gradientColor: "nitro-pink",
-        title: b.intl.string(b.t.F2MShO),
-        subtitle: k,
+        title: f.intl.string(f.t.F2MShO),
+        subtitle: E,
         graphic: {
             type: "rive",
-            rive: i.E44,
+            rive: r.E44,
             props: {
                 artboard: "Torbs_Multiply"
             }
         },
-        actions: f ? [{
-            text: b.intl.string(b.t.cpT0Cq),
+        actions: g ? [{
+            text: f.intl.string(f.t.cpT0Cq),
             variant: "secondary",
             onClick: t
         }, {
-            text: b.intl.string(b.t.hvVgAZ),
+            text: f.intl.string(f.t.hvVgAZ),
             variant: "primary",
             onClick: () => {
-                let e = u.BVt.NITRO_HOME,
-                    r = new URLSearchParams({
-                        [p.W]: l.QUEST_ORB_MULTIPLIER_CARD_ID
+                let e = p.BVt.NITRO_HOME,
+                    l = new URLSearchParams({
+                        [o.WU]: c.QUEST_ORB_MULTIPLIER_CARD_ID
                     }).toString();
-                t(), (0, _.pX)(e.includes("?") ? `${e}&${r}` : `${e}?${r}`)
+                t(), (0, d.pX)(e.includes("?") ? `${e}&${l}` : `${e}?${l}`)
             }
         }] : [{
-            text: b.intl.string(b.t.PcTCB7),
+            text: f.intl.string(f.t.PcTCB7),
             variant: "secondary",
             onClick: () => {
-                t(), (0, _.pX)(u.BVt.NITRO_HOME)
+                t(), (0, d.pX)(p.BVt.NITRO_HOME)
             }
         }, {
-            text: b.intl.string(b.t.pj0XBN),
+            text: f.intl.string(f.t.pj0XBN),
             variant: "expressive",
-            icon: n.tvc,
+            icon: i.tvc,
             onClick: () => {
-                t(), (0, c.A)({
-                    subscriptionTier: d.pe.TIER_2,
-                    analyticsLocations: v
+                t(), (0, a.A)({
+                    subscriptionTier: m.pe.TIER_2,
+                    analyticsLocations: _
                 })
             }
         }]

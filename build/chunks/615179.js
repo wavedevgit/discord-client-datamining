@@ -8,8 +8,8 @@ n.d(t, {
 var i = n(627968),
     r = n(64700),
     s = n(311907),
-    a = n(447215),
-    l = n(888675),
+    l = n(447215),
+    a = n(888675),
     o = n(976860),
     c = n(961350),
     u = n(696451),
@@ -20,8 +20,8 @@ let A = (e, t) => {
     let {
         joinRequest: n,
         joinRequestGuild: i
-    } = (0, _.A)(t.id), l = (0, s.bG)([d.default], () => d.default.getUser(n?.userId)), E = (0, a.P)({
-        user: l,
+    } = (0, _.A)(t.id), a = (0, s.bG)([d.default], () => d.default.getUser(n?.userId)), E = (0, l.P)({
+        user: a,
         channelId: t.id,
         guildId: t.guild_id,
         messageId: e.id
@@ -42,12 +42,12 @@ function m(e) {
         channel: r,
         compact: s
     } = e, {
-        guild: a,
+        guild: l,
         joinRequest: o,
         usernameHook: c,
         guildNameClick: u
-    } = A(t, r), d = o?.user?.username, _ = a?.name;
-    return (0, i.jsx)(l.A, {
+    } = A(t, r), d = o?.user?.username, _ = l?.name;
+    return (0, i.jsx)(a.A, {
         icon: n(617184),
         timestamp: t.timestamp,
         compact: s,
@@ -66,12 +66,12 @@ function I(e) {
         channel: r,
         compact: s
     } = e, {
-        guild: a,
+        guild: l,
         joinRequest: o,
         usernameHook: c,
         guildNameClick: u
-    } = A(t, r), d = o?.user?.username, _ = a?.name;
-    return (0, i.jsx)(l.A, {
+    } = A(t, r), d = o?.user?.username, _ = l?.name;
+    return (0, i.jsx)(a.A, {
         icon: n(884797),
         timestamp: t.timestamp,
         compact: s,
@@ -90,12 +90,12 @@ function T(e) {
         channel: r,
         compact: s
     } = e, {
-        guild: a,
+        guild: l,
         joinRequest: o,
         usernameHook: c,
         guildNameClick: u
-    } = A(t, r), d = o?.user?.username, _ = a?.name;
-    return (0, i.jsx)(l.A, {
+    } = A(t, r), d = o?.user?.username, _ = l?.name;
+    return (0, i.jsx)(a.A, {
         icon: n(884797),
         timestamp: t.timestamp,
         compact: s,

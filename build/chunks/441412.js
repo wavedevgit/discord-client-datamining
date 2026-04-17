@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var r = n(397927),
     s = n(843472),
-    a = n(763754),
-    l = n(888675),
+    l = n(763754),
+    a = n(888675),
     o = n(985018);
 
 function c(e) {
@@ -17,7 +17,7 @@ function c(e) {
         usernameHook: n,
         onClickPins: c,
         compact: u
-    } = e, d = (0, a.Ay)(t), _ = d.nick, E = n(d), A = () => {
+    } = e, d = (0, l.Ay)(t), _ = d.nick, E = n(d), A = () => {
         if (null == t.messageReference) return;
         let {
             channel_id: e,
@@ -34,7 +34,7 @@ function c(e) {
             color: "currentColor"
         })
     };
-    return (0, i.jsx)(l.A, {
+    return (0, i.jsx)(a.A, {
         ...m,
         timestamp: t.timestamp,
         compact: u,

@@ -6,18 +6,18 @@ n.d(t, {
 var i = n(64700),
     r = n(311907),
     s = n(71393),
-    a = n(576705),
-    l = n(661191),
+    l = n(576705),
+    a = n(661191),
     o = n(624458),
     c = n(844944),
     u = n(212455),
     d = n(652215);
 
 function _(e) {
-    let [t, n] = i.useState(!1), [_, E] = i.useState(!1), A = l.default.cast(e), {
+    let [t, n] = i.useState(!1), [_, E] = i.useState(!1), A = a.default.cast(e), {
         joinRequest: m,
         guild: I
-    } = (0, r.cf)([c.A, u.A, s.A, a.A], () => {
+    } = (0, r.cf)([c.A, u.A, s.A, l.A], () => {
         let e = c.A.getRequest(A);
         if (null == e) return {
             joinRequest: null,
@@ -27,7 +27,7 @@ function _(e) {
         let t = s.A.getGuild(e.guildId) ?? u.A.getJoinRequestGuild(e.guildId);
         return {
             joinRequest: e,
-            isModmin: null != t && a.A.can(d.xBc.KICK_MEMBERS, t),
+            isModmin: null != t && l.A.can(d.xBc.KICK_MEMBERS, t),
             guild: t
         }
     });

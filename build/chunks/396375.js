@@ -1,47 +1,47 @@
 /** chunk id: 396375 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => u
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var a = n(582754),
-    l = n(421380),
-    i = n(736653),
-    s = n(234419),
-    u = n(725807),
-    d = n(145310),
-    c = n(943386);
-let m = e => {
+var r = n(582754),
+    a = n(421380),
+    s = n(736653),
+    l = n(234419),
+    o = n(725807),
+    c = n(145310),
+    d = n(943386);
+let u = e => {
     let {
         textOptions: t,
         subscriptionTier: n,
-        hasActivePromotion: m = !1,
-        isPersistentCTA: o = !1,
-        useShorterCTA: E = !1,
-        showGradient: _,
-        confirmationFooter: p,
-        color: N,
-        ...T
-    } = e, x = (0, i.Ay)(), {
-        buttonText: g,
-        marketingSubscriptionTierSkuId: A
-    } = (0, d.s)({
-        hasActivePromotion: m,
+        hasActivePromotion: u = !1,
+        isPersistentCTA: _ = !1,
+        useShorterCTA: m = !1,
+        showGradient: p,
+        confirmationFooter: A,
+        color: g,
+        ...f
+    } = e, h = (0, s.Ay)(), {
+        buttonText: b,
+        marketingSubscriptionTierSkuId: x
+    } = (0, c.s)({
+        hasActivePromotion: u,
         subscriptionTier: n,
-        useShorterCTA: E,
-        isPersistentCTA: o
-    }), h = (0, s.V)(), f = h?.subscription_trial, b = null != f && A === f.sku_id, M = N ?? ((0, a.Mw)(x) ? l.XD.BRAND_INVERTED : l.XD.BRAND);
-    return (0, r.jsx)(u.A, {
-        color: M,
+        useShorterCTA: m,
+        isPersistentCTA: _
+    }), R = (0, l.V)(), C = R?.subscription_trial, N = null != C && x === C.sku_id, v = g ?? ((0, r.Mw)(h) ? a.XD.BRAND_INVERTED : a.XD.BRAND);
+    return (0, i.jsx)(o.A, {
+        color: v,
         textOptions: {
-            textOverride: g,
-            textClassName: b ? c.A : void 0,
+            textOverride: b,
+            textClassName: N ? d.A : void 0,
             ...t
         },
         onlyShineOnHover: !0,
-        subscriptionTier: A,
-        showGradient: _,
-        confirmationFooter: p,
-        ...T
+        subscriptionTier: x,
+        showGradient: p,
+        confirmationFooter: A,
+        ...f
     })
 }

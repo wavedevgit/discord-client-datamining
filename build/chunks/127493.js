@@ -62,11 +62,12 @@ function g(e) {
     })
 }
 let _ = s.memo(function(e) {
-        let {
-            whatsNewBoxes: t
-        } = (0, c.Ay)();
-        return (0, o.l)("premium_marketing_bento"), (0, i.jsx)(g, {
-            boxLayout: t,
+        let t = (0, o.l)("premium_marketing_bento"),
+            {
+                whatsNewBoxes: n
+            } = (0, c.Ay)(t);
+        return (0, i.jsx)(g, {
+            boxLayout: n,
             title: u.intl.string(u.t.LRmNAl),
             startLeftAligned: !0,
             highlightBento: null,

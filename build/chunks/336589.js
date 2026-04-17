@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     r = n(64700),
     s = n(311907),
-    a = n(732955),
-    l = n(355622),
+    l = n(732955),
+    a = n(355622),
     o = n(148355),
     c = n(406704),
     u = n(696451),
@@ -25,7 +25,7 @@ let g = e => {
             message: n
         } = e, s = (0, m.dv)(n.id), c = r.useCallback(() => {
             (0, A.i)({
-                type: l.oU.FORM,
+                type: a.oU.FORM,
                 content: "",
                 channel: t
             }).then(e => {
@@ -37,7 +37,7 @@ let g = e => {
         }, [t, n, s]);
         return (0, i.jsx)("div", {
             className: N.T,
-            children: (0, i.jsx)(a.$nd, {
+            children: (0, i.jsx)(l.$nd, {
                 icon: {
                     type: "sticker",
                     asset: s,
@@ -53,17 +53,17 @@ let g = e => {
         let {
             message: t,
             channel: n
-        } = e, r = n.getGuildId(), a = (0, s.bG)([E.default, _.A, d.A, u.Ay], () => {
+        } = e, r = n.getGuildId(), l = (0, s.bG)([E.default, _.A, d.A, u.Ay], () => {
             let e = E.default.getCurrentUser(),
                 i = (0, c.UJ)(n),
                 s = _.A.can(I.xBc.SEND_MESSAGES, n),
-                a = null != r && null != e && u.Ay.getMember(r, e.id)?.isPending,
-                l = t.author.bot,
+                l = null != r && null != e && u.Ay.getMember(r, e.id)?.isPending,
+                a = t.author.bot,
                 o = d.A.getGuild(r),
                 A = null != o && (o.systemChannelFlags & I.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
-            return s && !i && !a && !l && A
+            return s && !i && !l && !a && A
         });
-        return null != r && a ? (0, i.jsx)(g, {
+        return null != r && l ? (0, i.jsx)(g, {
             message: t,
             channel: n
         }) : null

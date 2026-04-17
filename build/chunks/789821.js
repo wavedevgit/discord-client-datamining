@@ -3,19 +3,19 @@
 n.d(t, {
     HR: () => o,
     Mv: () => c,
-    Uq: () => l,
-    c_: () => a,
+    Uq: () => a,
+    c_: () => l,
     ir: () => u
 });
 let i = /[\t\n,]/g,
     r = /\s{2,}/g,
     s = /[*"']/g;
 
-function a(e) {
+function l(e) {
     return e.split(i).map(e => e.replace(r, " ").trim()).filter(e => e.length > 0)
 }
 
-function l(e) {
+function a(e) {
     return Array.from(new Set(e))
 }
 

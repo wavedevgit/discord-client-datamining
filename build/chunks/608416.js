@@ -1,7 +1,7 @@
 /** chunk id: 608416 params = (module,exports,require) **/
 n.d(t, {
     $G: () => d,
-    Ay: () => g,
+    Ay: () => A,
     MN: () => p,
     Mp: () => u,
     XN: () => _,
@@ -17,7 +17,7 @@ let d = 3e3,
     _ = 6e3;
 var m = ((i = {}).SINE = "sine", i.COSINE = "cosine", i),
     p = ((r = {}).UP = "up", r.DOWN = "down", r);
-let g = e => {
+let A = e => {
     let {
         blurAnimationData: t,
         scaleAnimationData: n,
@@ -40,12 +40,12 @@ let g = e => {
         loop: !0
     } : {
         y: 0
-    }), g = i?.path === "sine" ? Math.sin : Math.cos, [A, f] = (0, s.useState)(1), h = (0, o.zhh)(null != n ? {
+    }), A = i?.path === "sine" ? Math.sin : Math.cos, [g, f] = (0, s.useState)(1), h = (0, o.zhh)(null != n ? {
         from: {
-            scale: A > 0 ? n.startScale : n.endScale
+            scale: g > 0 ? n.startScale : n.endScale
         },
         to: {
-            scale: A > 0 ? n.endScale : n.startScale
+            scale: g > 0 ? n.endScale : n.startScale
         },
         config: {
             duration: n.duration * _
@@ -53,7 +53,7 @@ let g = e => {
         onRest: () => f(e => -1 * e)
     } : {
         scale: 1
-    }), [b, x] = (0, s.useState)(1), C = (0, o.zhh)(null != t ? {
+    }), [b, x] = (0, s.useState)(1), R = (0, o.zhh)(null != t ? {
         from: {
             blur: b > 0 ? t.startBlurRadius : t.endBlurRadius
         },
@@ -66,21 +66,21 @@ let g = e => {
         onRest: () => x(e => -1 * e)
     } : {
         blur: 0
-    }), N = (0, s.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), [R, v] = (0, s.useState)(0), [E, I] = (0, s.useState)(1), T = (0, o.zhh)({
-        xOffset: R,
+    }), C = (0, s.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), [N, v] = (0, s.useState)(0), [E, T] = (0, s.useState)(1), j = (0, o.zhh)({
+        xOffset: N,
         config: {
             tension: 10,
             friction: 10,
-            duration: N
+            duration: C
         }
     });
     return ((0, c.A)(() => {
-        v(E * (.5 * Math.random() * 5 + 2.5)), I(e => -1 * e)
-    }, N), u) ? m : (0, a.jsx)(l.animated.div, {
+        v(E * (.5 * Math.random() * 5 + 2.5)), T(e => -1 * e)
+    }, C), u) ? m : (0, a.jsx)(l.animated.div, {
         style: {
             transform: p.y?.to(e => {
                 if (null == i) return "translateY(0px)";
-                let t = g(e * Math.PI * 2) * i.range,
+                let t = A(e * Math.PI * 2) * i.range,
                     n = 0;
                 if (null != r) {
                     let e = r.range * (1 - r.containerVisibilityPercentage);
@@ -88,9 +88,9 @@ let g = e => {
                 }
                 return `translateY(${t+n}px)`
             }),
-            translateX: d ? T.xOffset.to(e => `${e}px`) : 0,
+            translateX: d ? j.xOffset.to(e => `${e}px`) : 0,
             scale: h.scale,
-            filter: C.blur?.to(e => `blur(${e}px)`),
+            filter: R.blur?.to(e => `blur(${e}px)`),
             opacity: null != r && r.changeOpacity ? r.containerVisibilityPercentage : 1
         },
         children: m

@@ -1,48 +1,49 @@
 /** chunk id: 532423 params = (module,exports,require) **/
-n.d(e, {
-    A: () => T
+n.d(t, {
+    A: () => _
 });
 var i = n(627968),
     l = n(64700),
-    r = n(877624),
-    s = n(554146),
-    a = n(367727),
+    s = n(877624),
+    a = n(554146),
+    r = n(367727),
     o = n(954571),
-    c = n(549996),
-    d = n(498470),
+    d = n(549996),
+    c = n(498470),
     u = n(635995),
-    E = n(652215),
-    _ = n(49999);
+    h = n(652215),
+    A = n(49999);
 
-function T() {
-    let t = (0, c.c)(r.C.NAGBAR),
-        e = t?.properties.properties.oneofKind === "nagbar" ? t.properties.properties.nagbar : null,
-        n = t?.promotionId,
-        T = l.useCallback(() => {
-            null != n && (0, a.qr)(s.M.PREMIUM_MARKETING_MOMENT_NAGBAR_UPSELL, n, {
-                dismissAction: _.i.USER_DISMISS
+function _() {
+    let e = (0, d.c)(s.C.NAGBAR),
+        t = e?.properties.properties.oneofKind === "nagbar" ? e.properties.properties.nagbar : null,
+        n = e?.promotionId,
+        _ = l.useCallback(() => {
+            null != n && (0, r.qr)(a.M.PREMIUM_MARKETING_MOMENT_NAGBAR_UPSELL, n, {
+                dismissAction: A.i.USER_DISMISS
             })
         }, [n]),
-        A = l.useCallback(() => {
-            o.default.track(E.HAw.APP_NOTICE_CLOSED, {
-                notice_type: E.kqX.PREMIUM_MARKETING_NAGBAR
-            }), T()
-        }, [T]);
-    if (null == e) return null;
-    let I = (0, d.h)({
-        buttonAction: e.ctaAction,
-        onClose: T
+        m = l.useCallback(() => {
+            o.default.track(h.HAw.APP_NOTICE_CLOSED, {
+                notice_type: h.kqX.PREMIUM_MARKETING_NAGBAR
+            }), _()
+        }, [_]);
+    if (null == t) return null;
+    let p = (0, c.h)({
+        buttonAction: t.ctaAction,
+        deeplinkSection: t.deeplinkSection,
+        onClose: _
     });
     return (0, i.jsxs)(u.T0, {
-        onClick: A,
+        onClick: m,
         children: [(0, i.jsx)(u.In, {
-            children: e.body
-        }), "" !== e.ctaLabel && (0, i.jsx)(u.fY, {
-            text: e.ctaLabel,
+            children: t.body
+        }), "" !== t.ctaLabel && (0, i.jsx)(u.fY, {
+            text: t.ctaLabel,
             onClick: () => {
-                o.default.track(E.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
-                    notice_type: E.kqX.PREMIUM_MARKETING_NAGBAR
-                }), I()
+                o.default.track(h.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
+                    notice_type: h.kqX.PREMIUM_MARKETING_NAGBAR
+                }), p()
             }
         })]
     })

@@ -28,6 +28,7 @@ function _(e) {
         onClose: f
     } = m, C = _.button?.copy ?? A.intl.string(A.t.YScQSF), T = _.button?.buttonAction === a.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", N = (0, c.h)({
         buttonAction: _.button?.buttonAction,
+        deeplinkSection: _.button?.deeplinkSection,
         analyticsLocations: g,
         analyticsLocation: p,
         onClose: f

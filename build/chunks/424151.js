@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(397927),
     l = n(92246),
-    s = n(201805),
-    r = n(985018);
+    r = n(201805),
+    s = n(985018);
 let o = function(e) {
     let {
         quest: t,
@@ -15,13 +15,13 @@ let o = function(e) {
         analyticsCtxQuestContentPosition: d,
         analyticsCtxQuestContentRowIndex: c,
         size: u
-    } = e, _ = (0, s.ix)({
+    } = e, _ = (0, r.ix)({
         quest: t,
         questContent: n,
         questContentPosition: d,
         questContentRowIndex: c,
         sourceQuestContent: o
-    }), m = (0, l.r7)(t.config) ? r.intl.string(r.t.bAGFz3) : r.intl.string(r.t.vTgCWx);
+    }), m = (0, l.r7)(t.config) ? s.intl.string(s.t.bAGFz3) : s.intl.string(s.t.vTgCWx);
     return (0, i.jsx)(a.Button, {
         variant: "primary",
         fullWidth: !0,

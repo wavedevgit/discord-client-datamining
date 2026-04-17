@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(284009),
-    s = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    s = n(311907),
     o = n(397927),
     d = n(241524),
     c = n(289397),
@@ -52,7 +52,7 @@ function S(e) {
     let {
         coverImageAsset: t,
         isPreview: n = !1
-    } = e, a = h.kt.useSetting(), l = (0, f.j)() && a, [s, r] = (0, m.A)(t, l), o = l ? (0, i.jsx)(u.A, {
+    } = e, a = h.kt.useSetting(), l = (0, f.j)() && a, [r, s] = (0, m.A)(t, l), o = l ? (0, i.jsx)(u.A, {
         autoPlay: !0,
         loop: !0,
         className: T.N4,
@@ -65,10 +65,10 @@ function S(e) {
         className: T.N4
     });
     return (0, i.jsx)("div", {
-        ref: s,
+        ref: r,
         className: T.El,
-        children: null == r || n ? o : (0, i.jsx)("img", {
-            src: r,
+        children: null == s || n ? o : (0, i.jsx)("img", {
+            src: s,
             alt: "",
             className: T.N4
         })
@@ -82,9 +82,9 @@ function N(e) {
     } = e, l = t.id, {
         nickname: u,
         nickcolor: m
-    } = (0, r.cf)([p.Ay, g.default], () => {
+    } = (0, s.cf)([p.Ay, g.default], () => {
         let e = g.default.getCurrentUser();
-        s()(null != e, "user cannot be null");
+        r()(null != e, "user cannot be null");
         let t = p.Ay.getMember(l, e.id);
         return {
             nickname: t?.nick ?? x.Ay.getName(e),

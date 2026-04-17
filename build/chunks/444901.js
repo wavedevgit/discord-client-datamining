@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(503698),
-    s = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    s = n(311907),
     o = n(397927),
     d = n(544420),
     c = n(572211),
@@ -30,7 +30,7 @@ function b(e) {
         applicationName: n,
         iconSrc: a,
         channel: l,
-        currentUserId: r,
+        currentUserId: s,
         viewAction: d
     } = e, c = (0, m.Ay)(t), u = (0, h.P)({
         user: t.author,
@@ -40,7 +40,7 @@ function b(e) {
     })(c);
     return (0, i.jsx)(p.A, {
         compact: !1,
-        children: E.intl.format(r === t.author.id ? E.t.anvg2q : E.t.AxVbYF, {
+        children: E.intl.format(s === t.author.id ? E.t.anvg2q : E.t.AxVbYF, {
             username: c.nick,
             usernameHook: u,
             applicationHook: () => {
@@ -51,7 +51,7 @@ function b(e) {
                     children: [(0, i.jsx)("img", {
                         alt: E.intl.string(E.t["2B/phM"]),
                         src: a,
-                        className: s()(v.Gt, _.M.XSMALL)
+                        className: r()(v.Gt, _.M.XSMALL)
                     }), (0, i.jsx)(o.Text, {
                         variant: "text-sm/semibold",
                         color: "text-muted",
@@ -68,7 +68,7 @@ function T(e) {
         message: t,
         application: n,
         applicationName: l,
-        channel: s,
+        channel: r,
         header: _,
         currentUserId: m,
         launchableAppId: h,
@@ -81,17 +81,26 @@ function T(e) {
         presenceActivity: j,
         analyticsLocations: L,
         showAuthButton: R,
-        startAuthorization: P,
-        accountLinkButtonRef: w,
-        renderAccountLinkUpsell: M
-    } = e, D = (0, r.bG)([g.A], () => g.A.getMessages(s.id)), {
+        requireAccountLink: P,
+        startAuthorization: w,
+        accountLinkButtonRef: M,
+        renderAccountLinkUpsell: D
+    } = e, k = (0, s.bG)([g.A], () => g.A.getMessages(r.id)), {
         actions: O,
-        hasAccountLinkButton: k
+        hasAccountLinkButton: U
     } = a.useMemo(() => {
         let e = [],
             i = !0,
             a = !1;
-        if (null != h ? e = [{
+        if (P && null != h ? (e = [{
+                label: E.intl.string(E.t.lw71Nf),
+                trackingArea: u.kY.CONNECT_ACCOUNT,
+                onClick: () => {
+                    w({
+                        analyticsLocations: L
+                    })
+                }
+            }], i = !1) : null != h ? e = [{
                 label: E.intl.string(E.t["s+J8Dl"]),
                 trackingArea: u.kY.PLAY,
                 isDeadEnd: !0,
@@ -102,7 +111,7 @@ function T(e) {
                     })
                 }
             }] : null != v && (e = [v], i = !1), e.length > 0)
-            if (!(0, x.p)(t.id, D, n.id, j)) return {
+            if (!(0, x.p)(t.id, k, n.id, j)) return {
                 actions: [],
                 hasAccountLinkButton: !1
             };
@@ -110,33 +119,33 @@ function T(e) {
                 label: E.intl.string(E.t.lw71Nf),
                 trackingArea: u.kY.CONNECT_ACCOUNT,
                 onClick: () => {
-                    P({
+                    w({
                         analyticsLocations: L
                     })
                 },
                 icon: o.A5T,
                 iconButton: !0,
-                buttonRef: w
+                buttonRef: M
             }), a = !0);
         return {
             actions: e,
             hasAccountLinkButton: a
         }
-    }, [p, h, v, D, j, n.id, t.id, R, P, L, w]), U = O.some(e => e.trackingArea === u.kY.CLOUD_PLAY);
-    (0, f.A)(U, L);
-    let B = O.length > 0,
-        G = a.useMemo(() => (0, i.jsx)(o.Text, {
+    }, [P, p, h, v, k, j, n.id, t.id, R, w, L, M]), B = O.some(e => e.trackingArea === u.kY.CLOUD_PLAY);
+    (0, f.A)(B, L);
+    let G = O.length > 0,
+        F = a.useMemo(() => (0, i.jsx)(o.Text, {
             variant: "text-xs/medium",
             className: I.h_,
             color: "none",
             lineClamp: 3,
-            children: (0, A.BE)(t, l, s, m, B)
-        }), [t, l, s, m, B]);
+            children: (0, A.BE)(t, l, r, m, G)
+        }), [t, l, r, m, G]);
     return 0 === O.length ? (0, i.jsx)(b, {
         message: t,
         applicationName: l,
         iconSrc: S,
-        channel: s,
+        channel: r,
         currentUserId: m,
         viewAction: y
     }) : (0, i.jsxs)(i.Fragment, {
@@ -147,7 +156,7 @@ function T(e) {
             onClickBanner: y,
             bannerAspectRatio: c.u.ACTIVITY,
             iconSrc: S ?? void 0,
-            info: G,
+            info: F,
             actions: O,
             primaryActionFirst: !0,
             onClickContent: y,
@@ -156,11 +165,11 @@ function T(e) {
                 linkType: C.J.RICH_PRESENCE_INVITE,
                 onView: N,
                 referrerId: t.author.id,
-                guildId: s.guild_id,
+                guildId: r.guild_id,
                 channelId: t.channel_id,
                 messageId: t.id,
                 isDeadEnd: !0
             }
-        }), k ? M() : null]
+        }), U ? D() : null]
     })
 }

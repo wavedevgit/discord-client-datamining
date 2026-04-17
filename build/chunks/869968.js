@@ -6,28 +6,28 @@ n.d(t, {
 var i = n(311907),
     r = n(73153);
 let s = !1,
-    a = !1,
-    l = !1;
+    l = !1,
+    a = !1;
 class o extends i.Ay.Store {
     static displayName = "CheckoutRecoveryStore";
     getIsTargeted() {
-        return l
+        return a
     }
     shouldFetchCheckoutRecovery() {
-        return !s && !a
+        return !s && !l
     }
 }
 let c = new o(r.h, {
     CHECKOUT_RECOVERY_STATUS_FETCH_SUCCESS: function(e) {
-        a = !0, s = !1, l = e.isTargeted
+        l = !0, s = !1, a = e.isTargeted
     },
     CHECKOUT_RECOVERY_STATUS_FETCH_FAILURE: function() {
-        a = !0, s = !1
+        l = !0, s = !1
     },
     CHECKOUT_RECOVERY_STATUS_FETCH: function() {
         s = !0
     },
     LOGOUT: function() {
-        s = !1, a = !1, l = !1
+        s = !1, l = !1, a = !1
     }
 })

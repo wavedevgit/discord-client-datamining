@@ -1,12 +1,12 @@
 /** chunk id: 116011 params = (module,exports,require) **/
 n.d(t, {
-    oL: () => N,
-    wx: () => I
+    oL: () => E,
+    wx: () => y
 });
-var r = n(627968),
-    l = n(64700),
-    s = n(158954),
-    a = n(311907),
+var s = n(627968),
+    r = n(64700),
+    a = n(158954),
+    l = n(311907),
     i = n(397927),
     d = n(914410),
     o = n(544028),
@@ -16,17 +16,17 @@ var r = n(627968),
     h = n(728458),
     x = n(881373),
     C = n(264779),
-    p = n(852218),
-    _ = n(699443),
+    _ = n(852218),
+    p = n(699443),
     g = n(652215),
     f = n(962995),
-    b = n(985018),
-    R = n(75662),
+    R = n(985018),
+    b = n(75662),
     j = n(870378),
     v = n(208556),
-    A = n(8496);
-let N = {
-        [p.XY]: {
+    N = n(8496);
+let E = {
+        [_.XY]: {
             title: f.default.LsJ9hj,
             titleParams: {
                 discountPercent: x.aW
@@ -35,47 +35,47 @@ let N = {
             bodyWithExpiration: f.default["6KjkUa"],
             redemptionURL: "https://www.logitech.com/",
             logos: {
-                dark: (0, r.jsx)(l.Fragment, {}, "logitech-logo-dark"),
-                light: (0, r.jsx)(l.Fragment, {}, "logitech-logo-light")
+                dark: (0, s.jsx)(r.Fragment, {}, "logitech-logo-dark"),
+                light: (0, s.jsx)(r.Fragment, {}, "logitech-logo-light")
             },
             asset: v.A
         },
-        [p.KS]: {
-            title: b.t.sfGgOG,
-            body: b.t.igiSKe,
-            bodyWithExpiration: b.t.w8CXUl,
+        [_.KS]: {
+            title: R.t.sfGgOG,
+            body: R.t.igiSKe,
+            bodyWithExpiration: R.t.w8CXUl,
             redemptionURL: "https://steelseries.com/",
             logos: {
-                dark: (0, r.jsx)(_.a1, {}),
-                light: (0, r.jsx)(_.Gn, {})
+                dark: (0, s.jsx)(p.a1, {}),
+                light: (0, s.jsx)(p.Gn, {})
             },
-            asset: A.A
+            asset: N.A
         },
-        [p.Cs]: {
-            title: b.t["9N8obd"],
-            body: b.t["34g+Z3"],
-            bodyWithExpiration: b.t.rqmpXc,
+        [_.Cs]: {
+            title: R.t["9N8obd"],
+            body: R.t["34g+Z3"],
+            bodyWithExpiration: R.t.rqmpXc,
             redemptionURL: "https://www.kontrolfreek.com/",
             logos: {
-                dark: (0, r.jsx)(_.WF, {}),
-                light: (0, r.jsx)(_.s, {})
+                dark: (0, s.jsx)(p.WF, {}),
+                light: (0, s.jsx)(p.s, {})
             },
             asset: j.A
         }
     },
-    E = () => {
+    A = () => {
         let e = (0, u.N5)(),
             t = (0, u.P6)();
-        return (0, r.jsxs)("div", {
-            className: `${R.G9} ${R.sQ}`,
-            children: [(0, r.jsx)(s.EYj, {
+        return (0, s.jsxs)("div", {
+            className: `${b.G9} ${b.sQ}`,
+            children: [(0, s.jsx)(a.EYj, {
                 variant: "text-sm/normal",
                 color: "text-muted",
-                className: R.kT,
-                children: b.intl.format(f.default["65EEvD"], {
+                className: b.kT,
+                children: R.intl.format(f.default["65EEvD"], {
                     days: t
                 })
-            }), (0, r.jsx)(d.Ay, {
+            }), (0, s.jsx)(d.Ay, {
                 progress: e,
                 variant: d.qP.UNSET,
                 override: {
@@ -87,27 +87,27 @@ let N = {
             })]
         })
     },
-    P = e => {
+    D = e => {
         let {
             children: t
         } = e;
-        return (0, r.jsx)("div", {
-            className: R.oP,
-            children: (0, r.jsx)("div", {
-                className: R.t0,
+        return (0, s.jsx)("div", {
+            className: b.oP,
+            children: (0, s.jsx)("div", {
+                className: b.t0,
                 children: t
             })
         })
     },
-    D = e => {
+    P = e => {
         let {
             recurrence: t
-        } = e, n = (0, r.jsx)(s.rOg, {
+        } = e, n = (0, s.jsx)(a.rOg, {
             color: i.LU0.colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT
-        }), a = (0, r.jsx)("span", {
-            className: R.nP,
-            children: (0, r.jsx)(s.K0, {
-                icon: s.TdU,
+        }), l = (0, s.jsx)("span", {
+            className: b.nP,
+            children: (0, s.jsx)(a.K0, {
+                icon: a.TdU,
                 size: "sm",
                 variant: "icon-only",
                 "aria-label": "",
@@ -115,22 +115,22 @@ let N = {
                     navigator.clipboard.writeText(t.code), o(n)
                 }
             })
-        }), [d, o] = l.useState(() => a);
-        if (null != t.code) return (0, r.jsx)("div", {
-            className: R.oP,
-            children: (0, r.jsxs)("div", {
-                className: R.t0,
-                children: [(0, r.jsx)("div", {
-                    className: R.cD,
-                    children: (0, r.jsx)(s.EYj, {
+        }), [d, o] = r.useState(() => l);
+        if (null != t.code) return (0, s.jsx)("div", {
+            className: b.oP,
+            children: (0, s.jsxs)("div", {
+                className: b.t0,
+                children: [(0, s.jsx)("div", {
+                    className: b.cD,
+                    children: (0, s.jsx)(a.EYj, {
                         variant: "text-md/medium",
                         color: "text-strong",
                         children: t.code
                     })
-                }), d, (0, r.jsx)(s.$nd, {
+                }), d, (0, s.jsx)(a.$nd, {
                     variant: "secondary",
                     size: "sm",
-                    text: b.intl.formatToPlainString(b.t.DF68t7, {
+                    text: R.intl.formatToPlainString(R.t.DF68t7, {
                         redemptionURL: t.redemptionURL
                     }),
                     onClick: () => {
@@ -140,38 +140,38 @@ let N = {
             })
         })
     },
-    y = e => {
+    I = e => {
         let {
             recurrence: t,
             canBeClaimed: n,
-            hasClaimError: l,
-            setCode: a,
+            hasClaimError: r,
+            setCode: l,
             setHasClaimError: i,
             className: d,
             analyticsLocations: o = []
         } = e;
-        return n ? l ? (0, r.jsx)("div", {
+        return n ? r ? (0, s.jsx)("div", {
             className: d,
-            children: (0, r.jsx)(s.$nd, {
-                icon: s.EpV,
+            children: (0, s.jsx)(a.$nd, {
+                icon: a.EpV,
                 variant: "critical-secondary",
                 size: "sm",
                 disabled: !0,
-                text: b.intl.string(b.t["8LKchl"])
+                text: R.intl.string(R.t["8LKchl"])
             })
-        }) : (0, r.jsx)("div", {
+        }) : (0, s.jsx)("div", {
             className: d,
-            children: (0, r.jsx)(s.$nd, {
-                icon: s.XAi,
+            children: (0, s.jsx)(a.$nd, {
+                icon: a.XAi,
                 variant: "secondary",
                 size: "sm",
-                text: b.intl.string(b.t.vwASIl),
+                text: R.intl.string(R.t.vwASIl),
                 onClick: () => {
                     (0, C.kd)({
                         promotionId: t.id,
                         analyticsLocations: o
                     }).then(e => {
-                        a(e.code)
+                        l(e.code)
                     }).catch(e => {
                         i(!0), h.A.captureException(e)
                     })
@@ -179,7 +179,7 @@ let N = {
             })
         }) : null
     },
-    I = e => {
+    y = e => {
         var t;
         let n, d, {
                 recurrence: c,
@@ -187,66 +187,66 @@ let N = {
                 showPartnerLogo: h = !1,
                 showPartnerImage: x = !1,
                 titleVariant: C = "primary",
-                displayCTAInDedicatedFooter: _ = !1,
+                displayCTAInDedicatedFooter: p = !1,
                 analyticsLocations: f = []
             } = e,
-            [j, v] = l.useState(c.code),
-            [A, I] = l.useState(!1),
-            T = (t = c.partnerId, n = (0, a.bG)([o.A], () => (0, s.Mwr)(o.A.theme)), null == (d = N[t]) ? null : n ? d.logos.dark : d.logos.light),
-            S = null == j;
-        return (0, r.jsxs)("div", {
-            className: R.lA,
-            children: [(0, r.jsxs)("div", {
-                className: R.LV,
-                children: [(0, r.jsxs)("div", {
-                    className: R.JN,
-                    children: [h && T, (0, r.jsxs)("div", {
-                        className: null != u ? `${R.yO} ${u}` : R.yO,
-                        children: [(0, r.jsx)(s.DZT, {
+            [j, v] = r.useState(c.code),
+            [N, y] = r.useState(!1),
+            T = (t = c.partnerId, n = (0, l.bG)([o.A], () => (0, a.Mwr)(o.A.theme)), null == (d = E[t]) ? null : n ? d.logos.dark : d.logos.light),
+            w = null == j;
+        return (0, s.jsxs)("div", {
+            className: b.lA,
+            children: [(0, s.jsxs)("div", {
+                className: b.LV,
+                children: [(0, s.jsxs)("div", {
+                    className: b.JN,
+                    children: [h && T, (0, s.jsxs)("div", {
+                        className: null != u ? `${b.yO} ${u}` : b.yO,
+                        children: [(0, s.jsx)(a.DZT, {
                             variant: "secondary" === C ? "heading-md/semibold" : "heading-lg/semibold",
                             color: "text-strong",
                             children: c.title
-                        }), (0, r.jsx)(s.DZT, {
+                        }), (0, s.jsx)(a.DZT, {
                             variant: "heading-sm/medium",
                             color: "text-subtle",
-                            children: A ? b.intl.format(b.t.i2EuFO, {
+                            children: N ? R.intl.format(R.t.i2EuFO, {
                                 helpdeskArticle: m.A.getArticleURL(g.MVz.RECURRING_PROMOTION)
-                            }) : S ? c.body : null != c.bodyWithExpiration ? b.intl.format(c.bodyWithExpiration, {
+                            }) : w ? c.body : null != c.bodyWithExpiration ? R.intl.format(c.bodyWithExpiration, {
                                 date: c.endDate
                             }) : c.body
                         })]
-                    }), !_ && (0, r.jsx)(y, {
+                    }), !p && (0, s.jsx)(I, {
                         recurrence: c,
-                        canBeClaimed: S,
-                        hasClaimError: A,
+                        canBeClaimed: w,
+                        hasClaimError: N,
                         setCode: v,
-                        setHasClaimError: I,
+                        setHasClaimError: y,
                         analyticsLocations: f
                     })]
-                }), x && (0, r.jsx)("div", {
-                    className: R.R4,
-                    children: (0, r.jsx)(i._V3, {
+                }), x && (0, s.jsx)("div", {
+                    className: b.R4,
+                    children: (0, s.jsx)(i._V3, {
                         src: c.asset ?? "",
-                        className: R.Ys,
-                        imageClassName: c.partnerId === p.XY ? R.Cy : void 0,
+                        className: b.Ys,
+                        imageClassName: c.partnerId === _.XY ? b.Cy : void 0,
                         width: 100,
                         height: 100,
                         zoomable: !1
                     })
                 })]
-            }), _ && (0, r.jsx)(E, {}), null != j && (0, r.jsx)(D, {
+            }), p && (0, s.jsx)(A, {}), null != j && (0, s.jsx)(P, {
                 recurrence: {
                     ...c,
                     code: j
                 }
-            }), _ && null == j && (0, r.jsx)(P, {
-                children: (0, r.jsx)(y, {
+            }), p && null == j && (0, s.jsx)(D, {
+                children: (0, s.jsx)(I, {
                     recurrence: c,
-                    canBeClaimed: S,
-                    hasClaimError: A,
+                    canBeClaimed: w,
+                    hasClaimError: N,
                     setCode: v,
-                    setHasClaimError: I,
-                    className: R.qx,
+                    setHasClaimError: y,
+                    className: b.qx,
                     analyticsLocations: f
                 })
             })]

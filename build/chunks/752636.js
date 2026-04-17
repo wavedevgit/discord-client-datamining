@@ -5,15 +5,15 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(143413),
-    s = n(643204);
-let r = a.memo(s.Ay);
+    r = n(643204);
+let s = a.memo(r.Ay);
 
 function o(e) {
     let {
         message: t,
         channel: n,
         author: a,
-        compact: s,
+        compact: r,
         animateAvatar: o,
         guildId: d,
         isGroupStart: c = !0,
@@ -22,12 +22,12 @@ function o(e) {
         hideGuildTag: m,
         preview: h
     } = e;
-    return !(0, l.A)(t) && (c || s) ? (0, i.jsx)(r, {
+    return !(0, l.A)(t) && (c || r) ? (0, i.jsx)(s, {
         message: t,
         channel: n,
         author: a,
         guildId: d,
-        compact: s,
+        compact: r,
         animate: o,
         roleIcon: u,
         hideTimestamp: _,

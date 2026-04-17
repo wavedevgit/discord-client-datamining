@@ -23,7 +23,7 @@ let _ = e => {
         hours: _,
         minutes: m,
         seconds: p
-    } = r, g = [{
+    } = r, A = [{
         unitValue: s,
         unitType: "days"
     }, {
@@ -44,7 +44,7 @@ let _ = e => {
             children: d.intl.string(d.t["/ARFVE"])
         }), (0, i.jsx)("div", {
             className: u.$R,
-            children: g.map((e, t) => (function(e, t) {
+            children: A.map((e, t) => (function(e, t) {
                 let n, [r, a] = 1 === (n = e.unitValue.toString()).length ? ["0", n[0]] : [n[0], n[1]];
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)("div", {
@@ -91,7 +91,7 @@ let _ = e => {
                         children: ":"
                     })]
                 })
-            })(e, t === g.length - 1))
+            })(e, t === A.length - 1))
         })]
     })
 }

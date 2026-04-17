@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var a = n(311907),
     l = n(397927),
-    s = n(456060),
-    r = n(793574),
+    r = n(456060),
+    s = n(793574),
     o = n(688810),
     d = n(572211),
     c = n(354287),
@@ -47,19 +47,19 @@ function b(e) {
         if (t === T.id) return !0;
         let n = p.A.getGameByApplication(T);
         return null != n && t === n.id
-    })), M = (0, a.bG)([h.A], () => h.A.getCurrentUserActiveStream()), D = (0, a.bG)([g.A], () => g.A.getChannelId()), O = f.default.extractTimestamp(b.id) + C.M < Date.now(), k = (0, i.jsx)(i.Fragment, {
-        children: (0, s.Wf)(b, y, t)
+    })), M = (0, a.bG)([h.A], () => h.A.getCurrentUserActiveStream()), D = (0, a.bG)([g.A], () => g.A.getChannelId()), k = f.default.extractTimestamp(b.id) + C.M < Date.now(), O = (0, i.jsx)(i.Fragment, {
+        children: (0, r.Wf)(b, y, t)
     }), {
         analyticsLocations: U
-    } = (0, o.Ay)(S, r.A.REQUEST_TO_STREAM_INVITE_EMBED), B = v.intl.string(I.default["5+172e"]), G = !1;
-    return O ? (B = v.intl.string(I.default.u4QmWl), G = !0) : null != M ? (B = v.intl.string(I.default.P0wwmM), G = !0) : D !== y.id ? (B = v.intl.string(I.default.qRXats), G = !0) : null == w && (B = v.intl.string(I.default["43zohO"]), G = !0), (0, i.jsx)(d.h, {
+    } = (0, o.Ay)(S, s.A.REQUEST_TO_STREAM_INVITE_EMBED), B = v.intl.string(I.default["5+172e"]), G = !1;
+    return k ? (B = v.intl.string(I.default.u4QmWl), G = !0) : null != M ? (B = v.intl.string(I.default.P0wwmM), G = !0) : D !== y.id ? (B = v.intl.string(I.default.qRXats), G = !0) : null == w && (B = v.intl.string(I.default["43zohO"]), G = !0), (0, i.jsx)(d.h, {
         header: v.intl.string(I.default.nAyuPp),
         title: T.name,
         staticBannerSrc: j,
         videoBannerSrc: L,
         bannerAspectRatio: R,
         iconSrc: P ?? void 0,
-        info: k,
+        info: O,
         actions: b.author.id === t ? [] : [{
             label: B,
             trackingArea: c.kY.STREAM,
@@ -83,7 +83,7 @@ function b(e) {
             channelId: y.id,
             messageId: b.id,
             onView: N,
-            isDeadEnd: O
+            isDeadEnd: k
         }
     })
 }

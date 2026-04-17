@@ -1,6 +1,6 @@
 /** chunk id: 452075 params = (module,exports,require) **/
 n.d(t, {
-    e: () => g
+    e: () => f
 }), n(321073);
 var r = n(64700),
     i = n(311907),
@@ -30,18 +30,18 @@ function h(e) {
     }
 }
 
-function f(e, t) {
+function g(e, t) {
     return e.keyCode === t.keyCode && e.shiftKey === t.shiftKey && e.metaKey === t.metaKey && e.altKey === t.altKey && e.ctrlKey === t.ctrlKey
 }
 
-function g() {
+function f() {
     let e = (0, c.A)(),
         t = (0, i.bG)([s.A], () => s.A.getTargetPID(), []),
         n = (0, i.bG)([l.Ay], () => {
             let e = l.Ay.getOverlayKeybind();
             return null != e ? e.shortcut : []
         }, []),
-        g = (0, i.bG)([u.A], () => u.A.isInputLocked(t), [t]),
+        f = (0, i.bG)([u.A], () => u.A.isInputLocked(t), [t]),
         m = (0, i.bG)([a.A], () => {
             let t = (0, d.Q2)(e);
             return a.A.isVisible(t) && a.A.isFocused(t)
@@ -49,10 +49,10 @@ function g() {
         y = r.useRef([]),
         p = r.useMemo(() => (0, o.pi)(n).map(e => h(e)), [n]),
         v = r.useMemo(() => n.length > 0, [n]),
-        _ = !g && v && m;
+        _ = !f && v && m;
     r.useEffect(() => {
         y.current = []
-    }, [g, p]), r.useEffect(() => {
+    }, [f, p]), r.useEffect(() => {
         if (!_) {
             y.current = [];
             return
@@ -60,19 +60,19 @@ function g() {
         let t = e => {
                 let t = h(e),
                     n = y.current,
-                    r = n.some(e => f(e, t)),
+                    r = n.some(e => g(e, t)),
                     i = function(e) {
                         let t = e.key.toLowerCase();
                         for (let e of A)
                             if (t.includes(e)) return !0;
                         return !1
                     }(e);
-                r || i || n.push(t), 0 !== p.length && n.length === p.length && p.every(e => n.some(t => f(e, t))) && (e.preventDefault(), e.stopPropagation())
+                r || i || n.push(t), 0 !== p.length && n.length === p.length && p.every(e => n.some(t => g(e, t))) && (e.preventDefault(), e.stopPropagation())
             },
             n = e => {
                 let t = h(e),
                     n = y.current,
-                    r = n.findIndex(e => f(e, t));
+                    r = n.findIndex(e => g(e, t));
                 r > -1 && n.splice(r, 1)
             };
         return e.addEventListener("keydown", t, !0), e.addEventListener("keyup", n, !0), () => {

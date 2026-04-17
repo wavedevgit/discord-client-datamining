@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(503698),
-    s = n.n(l),
-    r = n(407045),
+    r = n.n(l),
+    s = n(407045),
     o = n(435371),
     d = n(397927),
     c = n(696451),
@@ -40,13 +40,13 @@ function g(e) {
             y: b,
             scale: T
         })
-    }, [v, b, T, S]), (0, i.jsxs)(r.animated.div, {
+    }, [v, b, T, S]), (0, i.jsxs)(s.animated.div, {
         ref: g,
-        className: s()(h.gg, t),
+        className: r()(h.gg, t),
         "data-count": I,
         "aria-hidden": !0,
         style: {
-            transform: (0, r.to)([y.x, y.y, y.scale], (e, t, n) => `translate3d(${e}px, ${t}px, 0) scale(${n})`)
+            transform: (0, s.to)([y.x, y.y, y.scale], (e, t, n) => `translate3d(${e}px, ${t}px, 0) scale(${n})`)
         },
         children: [C.map((e, t) => (0, i.jsx)("div", {
             className: h.my,
@@ -81,20 +81,20 @@ function A(e) {
         members: a,
         count: l
     } = e, {
-        triggerRef: r,
+        triggerRef: s,
         shouldShow: o,
         onPopoutHoverOrFocus: c
     } = (0, m.o)();
     return (0, i.jsx)(m.$, {
-        targetElementRef: r,
+        targetElementRef: s,
         guildId: t,
         channelId: n,
         users: a,
         shouldShow: o,
         onHoverOrFocus: c,
         children: e => (0, i.jsx)("div", {
-            className: s()(h.my, h.k2),
-            ref: r,
+            className: r()(h.my, h.k2),
+            ref: s,
             ...e,
             children: (0, i.jsx)(d.Text, {
                 variant: "text-sm/semibold",

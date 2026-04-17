@@ -1,13 +1,13 @@
 /** chunk id: 93474 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => f
 });
 var i = n(311907),
     r = n(73153),
     s = n(884384),
-    a = n(141468),
-    l = n(734057),
+    l = n(141468),
+    a = n(734057),
     o = n(320501),
     c = n(661191),
     u = n(753738),
@@ -38,7 +38,7 @@ function g(e) {
     let {
         channelId: t,
         messages: n
-    } = e, i = l.A.getChannel(t)?.getGuildId();
+    } = e, i = a.A.getChannel(t)?.getGuildId();
     if (null == i) return !1;
     let r = I[i],
         s = n.reduce((e, t) => t.type === _.lAJ.AUTO_MODERATION_ACTION && t.embeds?.some(e => {
@@ -53,7 +53,7 @@ class p extends i.Ay.PersistedStore {
     static displayName = "GuildAutomodMessageStore";
     static persistKey = "GuildAutomodMessages";
     initialize(e) {
-        this.waitFor(l.A, o.A), null != e && (E = e.automodFailedMessages, m = e.mentionRaidDetectionByGuild)
+        this.waitFor(a.A, o.A), null != e && (E = e.automodFailedMessages, m = e.mentionRaidDetectionByGuild)
     }
     getState() {
         return {
@@ -75,7 +75,7 @@ class p extends i.Ay.PersistedStore {
         return I[e] ?? null
     }
 }
-let C = new p(r.h, {
+let f = new p(r.h, {
     CONNECTION_OPEN: function(e) {
         return 0 !== Object.keys(E).length && (E = {}, A++, !0)
     },
@@ -87,7 +87,7 @@ let C = new p(r.h, {
             message: n
         } = e;
         if (null == t || n.type !== _.lAJ.AUTO_MODERATION_ACTION) return !1;
-        let i = (0, a.rh)(n);
+        let i = (0, l.rh)(n);
         return !!(0, d.ER)(i) && !!(0, d.de)(i) && (I[t] = i.id, !0)
     },
     MESSAGE_SEND_FAILED_AUTOMOD: N,

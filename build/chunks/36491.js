@@ -2,14 +2,14 @@
 n.d(t, {
     L4: () => d,
     O0: () => o,
-    sF: () => r
+    sF: () => s
 });
 var i = n(562465),
     a = n(73153),
     l = n(198982),
-    s = n(652215);
+    r = n(652215);
 
-function r(e) {
+function s(e) {
     a.h.dispatch({
         type: "DISMISS_MEDIA_POST_SHARE_PROMPT",
         threadId: e
@@ -22,7 +22,7 @@ async function o(e) {
     });
     try {
         let t = (await i.Bo.get({
-            url: s.Rsh.MEDIA_POST_RESHARE_GET_PREVIEW(e),
+            url: r.Rsh.MEDIA_POST_RESHARE_GET_PREVIEW(e),
             rejectWithError: !0
         })).body;
         a.h.dispatch({
@@ -40,7 +40,7 @@ async function o(e) {
 async function d(e) {
     try {
         return (await i.Bo.post({
-            url: s.Rsh.UNFURL_EMBED_URLS,
+            url: r.Rsh.UNFURL_EMBED_URLS,
             body: {
                 urls: e
             },

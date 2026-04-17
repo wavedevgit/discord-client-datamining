@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(503698),
-    s = n.n(l),
-    r = n(407045),
+    r = n.n(l),
+    s = n(407045),
     o = n(827734),
     d = n(990078),
     c = n(397927),
@@ -39,18 +39,18 @@ let v = e => {
     } = e, [R, P] = a.useState(null), [w, M] = a.useState(null), D = (0, _.A)(e => {
         let t = e.target;
         P(t.offsetWidth), M(t.scrollWidth)
-    }), O = (0, u.w)(D), k = l === m.uF.QUESTS_EMBED, U = n.userStatus?.completedAt != null, B = (0, h.S5)(n.config.expiresAt), G = (0, h.S5)(n.config.rewardsConfig.rewardsExpireAt), F = a.useMemo(() => null != n.config.cosponsorMetadata, [n]), H = (0, i.jsx)(A.Ay, {
+    }), k = (0, u.w)(D), O = l === m.uF.QUESTS_EMBED, U = n.userStatus?.completedAt != null, B = (0, h.S5)(n.config.expiresAt), G = (0, h.S5)(n.config.rewardsConfig.rewardsExpireAt), F = a.useMemo(() => null != n.config.cosponsorMetadata, [n]), H = (0, i.jsx)(A.Ay, {
         className: I.Iu,
         logotypeClassName: F ? I.qN : void 0,
         gameTileSize: A.LU.MEDIUM,
         quest: n,
         separatorSpacing: A.C8.MEDIUM,
         theme: C.NJ.DARK,
-        withGameTile: !k || null == n.config.cosponsorMetadata
+        withGameTile: !O || null == n.config.cosponsorMetadata
     });
     return (0, i.jsxs)("div", {
-        className: s()(I.nw, {
-            [I.Gg]: k,
+        className: r()(I.nw, {
+            [I.Gg]: O,
             [I.e5]: "xs" === v
         }),
         "aria-label": E.intl.string(E.t.dcl9MQ),
@@ -66,13 +66,13 @@ let v = e => {
         }), (0, i.jsxs)("div", {
             className: I.wx,
             "aria-expanded": y,
-            children: [(0, i.jsx)(r.animated.div, {
-                className: s()(I.VW, {
-                    [I.eX]: k
+            children: [(0, i.jsx)(s.animated.div, {
+                className: r()(I.VW, {
+                    [I.eX]: O
                 }),
-                children: (0, i.jsx)(r.animated.div, {
-                    className: s()(I.Yu, {
-                        [I.Gg]: k
+                children: (0, i.jsx)(s.animated.div, {
+                    className: r()(I.Yu, {
+                        [I.Gg]: O
                     }),
                     style: {
                         opacity: (0, f.a)(b.to({
@@ -86,7 +86,7 @@ let v = e => {
                         className: I.uA,
                         children: [(0, i.jsxs)("div", {
                             className: I._V,
-                            children: [H, k ? null : (0, i.jsx)(x.A, {
+                            children: [H, O ? null : (0, i.jsx)(x.A, {
                                 color: "always-white"
                             })]
                         }), (0, i.jsxs)("div", {
@@ -95,7 +95,7 @@ let v = e => {
                                 __unsupportedReactNodeAsText: n.config.messages.questName,
                                 shouldShow: null != R && null != w && R < w,
                                 children: (0, i.jsx)(c.Heading, {
-                                    ref: O,
+                                    ref: k,
                                     variant: "lg" === v ? "heading-xxl/bold" : "sm" === v ? "heading-xl/bold" : "heading-lg/bold",
                                     className: I.R_,
                                     color: "always-white",
@@ -117,7 +117,7 @@ let v = e => {
                         })]
                     })
                 })
-            }), (0, i.jsx)(r.animated.div, {
+            }), (0, i.jsx)(s.animated.div, {
                 className: I._q,
                 style: {
                     top: 20
@@ -127,9 +127,9 @@ let v = e => {
                     quest: n,
                     questContentPosition: N,
                     shouldShowDisclosure: !0,
-                    showShareLink: !t && k,
+                    showShareLink: !t && O,
                     sourceQuestContent: L,
-                    children: e => (0, i.jsx)(r.animated.div, {
+                    children: e => (0, i.jsx)(s.animated.div, {
                         style: {
                             opacity: (0, f.a)(b),
                             visibility: T || y ? "inherit" : "hidden"

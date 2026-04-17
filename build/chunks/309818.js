@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(284009),
-    s = n.n(l),
-    r = n(158954),
+    r = n.n(l),
+    s = n(158954),
     o = n(311907),
     d = n(846293),
     c = n(793574),
@@ -35,7 +35,7 @@ function b(e) {
         S = b === l.author.id,
         N = n.state === E.elq.ACCEPTING,
         j = (0, o.bG)([g.A], () => null != n.channel ? g.A.getChannel(n.channel.id) : null, [n]);
-    s()(null == j || j.isPrivate(), "must be a private channel");
+    r()(null == j || j.isPrivate(), "must be a private channel");
     let {
         analyticsLocations: L
     } = (0, u.Ay)(c.A.INVITE_EMBED), R = null != j, P = a.useCallback(() => {
@@ -64,10 +64,10 @@ function b(e) {
     let M = I.intl.string(I.t.XpeFYr),
         D = "active";
     R && (M = I.intl.string(I.t.cEnaWx), D = "secondary");
-    let O = I.intl.string(I.t["3p3/BK"]);
-    return S && (O = I.intl.string(I.t.qmtuXE)), (0, i.jsxs)(h.A, {
+    let k = I.intl.string(I.t["3p3/BK"]);
+    return S && (k = I.intl.string(I.t.qmtuXE)), (0, i.jsxs)(h.A, {
         children: [(0, i.jsx)(h.A.Header, {
-            text: O
+            text: k
         }), (0, i.jsxs)(h.A.Body, {
             children: [(0, i.jsxs)("div", {
                 className: v.iH,
@@ -81,7 +81,7 @@ function b(e) {
                         members: t.length
                     })
                 })]
-            }), (0, i.jsx)(r.$nd, {
+            }), (0, i.jsx)(s.$nd, {
                 onClick: P,
                 loading: N,
                 disabled: R,

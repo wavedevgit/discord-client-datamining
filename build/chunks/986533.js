@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var r = n(503698),
     s = n.n(r),
-    a = n(397927),
-    l = n(709066),
+    l = n(397927),
+    a = n(709066),
     o = n(763754),
     c = n(643204),
     u = n(809115),
@@ -29,7 +29,7 @@ function I(e) {
             onMouseEnter: g,
             onMouseLeave: p
         }
-    } = (0, u.a)(!0), C = "" !== t.content ? new Date(t.content).toLocaleString(A.intl.currentLocale, {
+    } = (0, u.a)(!0), f = "" !== t.content ? new Date(t.content).toLocaleString(A.intl.currentLocale, {
         hour: "numeric",
         minute: "2-digit",
         month: "2-digit",
@@ -60,13 +60,13 @@ function I(e) {
                     }),
                     username: (0, i.jsxs)("div", {
                         className: m.he,
-                        children: [(0, i.jsx)(a.Text, {
+                        children: [(0, i.jsx)(l.Text, {
                             variant: "text-md/normal",
                             color: "text-brand",
                             tag: "span",
                             className: m.Xh,
                             children: A.intl.string(A.t.hG1StD)
-                        }), (0, i.jsx)(l.A, {
+                        }), (0, i.jsx)(a.A, {
                             type: E.nu.SYSTEM_DM,
                             className: m.Al
                         })]
@@ -80,7 +80,7 @@ function I(e) {
                     children: t.type === _.lAJ.GUILD_INCIDENT_ALERT_MODE_ENABLED ? A.intl.format(A.t["+m8eD7"], {
                         username: I.nick,
                         usernameHook: T,
-                        time: C
+                        time: f
                     }) : A.intl.format(A.t["BHeke+"], {
                         username: I.nick,
                         usernameHook: T

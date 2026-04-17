@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var r = n(397927),
     s = n(47167),
-    a = n(402216),
-    l = n(763754),
+    l = n(402216),
+    a = n(763754),
     o = n(888675),
     c = n(985018);
 
@@ -20,7 +20,7 @@ function u(e) {
         onJoinStream: d,
         usernameHook: _,
         compact: E
-    } = e, A = (0, l.Ay)(t), m = (0, s.Ay)(n), I = t.call?.duration, T = _(A), N = c.intl.format(c.t.FKXvaI, {
+    } = e, A = (0, a.Ay)(t), m = (0, s.Ay)(n), I = t.call?.duration, T = _(A), N = c.intl.format(c.t.FKXvaI, {
         username: A.nick,
         activityName: null != u ? u.name : "unknown",
         onJoinStream: d,
@@ -37,8 +37,8 @@ function u(e) {
             color: "currentColor",
             width: 20,
             height: 20
-        }) : (0, i.jsx)(a.Ay, {
-            size: a.Ay.Sizes.SMALL
+        }) : (0, i.jsx)(l.Ay, {
+            size: l.Ay.Sizes.SMALL
         }),
         timestamp: t.timestamp,
         compact: E,

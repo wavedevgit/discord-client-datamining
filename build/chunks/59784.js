@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(448761),
     r = n(311907),
     s = n(73153),
-    a = n(661191),
-    l = n(677185),
+    l = n(661191),
+    a = n(677185),
     o = n(88001),
     c = n(652215);
 let u = new Map,
@@ -28,13 +28,13 @@ function A(e) {
 function m(e) {
     if (e.type !== i.l.PREMIUM_GROUP_INVITE) return !1;
     let t = e.content;
-    if (null == t || "" === t || !a.default.isProbablyAValidSnowflake(t)) return !1;
+    if (null == t || "" === t || !l.default.isProbablyAValidSnowflake(t)) return !1;
     let n = u.get(t);
     return (null == n || n.state === o.xI.UNKNOWN) && (u.set(t, {
         state: o.xI.FETCHING,
         invite: null,
         errorStatus: null
-    }), s.h.wait(() => (0, l.el)(t).catch(c.FXj)), !0)
+    }), s.h.wait(() => (0, a.el)(t).catch(c.FXj)), !0)
 }
 class I extends r.Ay.Store {
     static displayName = "PremiumGroupInviteStore";

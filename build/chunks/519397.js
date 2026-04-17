@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(311907),
-    s = n(80682),
-    r = n(465364),
+    r = n(80682),
+    s = n(465364),
     o = n(448368),
     d = n(943220),
     c = n(994500),
@@ -26,8 +26,8 @@ function m(e) {
     }), [t]), p = a.useMemo(() => ({
         [n.guild_id]: [t.author.id]
     }), [n.guild_id, t.author.id]);
-    (0, s.Eq)(p, "ThreadMessageAccessoryMessage");
-    let g = a.useMemo(() => null != t.content && "" !== t.content ? (0, r.Ay)(t, {
+    (0, r.Eq)(p, "ThreadMessageAccessoryMessage");
+    let g = a.useMemo(() => null != t.content && "" !== t.content ? (0, s.Ay)(t, {
         formatInline: !0
     }).content : null, [t]);
     return (0, i.jsxs)("div", {
@@ -45,8 +45,8 @@ function m(e) {
             children: function(e, t, n, a) {
                 let {
                     contentPlaceholder: l,
-                    renderedContent: s,
-                    leadingIcon: r,
+                    renderedContent: r,
+                    leadingIcon: s,
                     trailingIcon: d
                 } = (0, o.o)(e, t, n, a, _.tP, {
                     trailingIconClass: _._v,
@@ -54,7 +54,7 @@ function m(e) {
                     iconSize: u.eJ
                 });
                 return (0, i.jsxs)(i.Fragment, {
-                    children: [r, s ?? (0, i.jsx)("span", {
+                    children: [s, r ?? (0, i.jsx)("span", {
                         className: _.dp,
                         children: l
                     }), d]

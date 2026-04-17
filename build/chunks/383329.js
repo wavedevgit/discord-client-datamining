@@ -4,20 +4,20 @@ n.d(t, {
     R: () => d
 });
 var a = n(64700),
-    r = n(735438),
-    i = n.n(r),
+    i = n(735438),
+    r = n.n(i),
     c = n(311907),
-    s = n(735321),
-    o = n(760751),
+    o = n(735321),
+    _ = n(760751),
     l = n(282435);
 
-function _(e) {
+function s(e) {
     return l.Bf.get(e) ?? 0
 }
 
 function d() {
-    let e = (0, c.bG)([o.A], () => o.A.games),
-        t = a.useMemo(() => i()(e).filter(e => (0, s.XX)(e)).map(e => ({
+    let e = (0, c.bG)([_.A], () => _.A.games),
+        t = a.useMemo(() => r()(e).filter(e => (0, o.XX)(e)).map(e => ({
             id: e.id,
             value: e.id,
             label: e.name
@@ -25,9 +25,9 @@ function d() {
             let {
                 value: t
             } = e;
-            return _(t)
+            return s(t)
         }).reverse().value(), [e]),
-        n = a.useCallback((e, t) => _(t.item.value) - _(e.item.value), []);
+        n = a.useCallback((e, t) => s(t.item.value) - s(e.item.value), []);
     return {
         options: t,
         matchSorterOptions: a.useMemo(() => ({

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     r = n(64700),
     s = n(503698),
-    a = n.n(s),
-    l = n(311907),
+    l = n.n(s),
+    a = n(311907),
     o = n(397927),
     c = n(155718),
     u = n(688810),
@@ -21,9 +21,9 @@ var i = n(627968),
     N = n(71393),
     g = n(994500),
     p = n(287809),
-    C = n(763754);
+    f = n(763754);
 n(827669);
-var f = n(985018),
+var C = n(985018),
     h = n(993560);
 let S = {
         tag: "span",
@@ -31,7 +31,7 @@ let S = {
         color: "text-default"
     },
     R = {
-        className: a()("mention", h.lE)
+        className: l()("mention", h.lE)
     };
 
 function x(e) {
@@ -45,7 +45,7 @@ let O = r.memo(function(e) {
     let t, {
             channel: n,
             messageId: s,
-            interactionData: a
+            interactionData: l
         } = e,
         {
             analyticsLocations: O
@@ -53,22 +53,22 @@ let O = r.memo(function(e) {
         {
             onCopy: M,
             copyRef: D
-        } = (0, _.A)(n, a?.application_command?.id),
-        U = (0, l.bG)([N.A], () => N.A.getGuild(n.guild_id), [n.guild_id]);
+        } = (0, _.A)(n, l?.application_command?.id),
+        U = (0, a.bG)([N.A], () => N.A.getGuild(n.guild_id), [n.guild_id]);
     if (r.useEffect(() => {
-            (null == a || a.type === c.kc.CHAT && void 0 === a.application_command) && E.S7(n.id, s)
-        }, [n.id, s, a]), null == a) t = (0, i.jsx)(o.y$y, {
+            (null == l || l.type === c.kc.CHAT && void 0 === l.application_command) && E.S7(n.id, s)
+        }, [n.id, s, l]), null == l) t = (0, i.jsx)(o.y$y, {
         type: o.y$y.Type.SPINNING_CIRCLE,
         className: h.u1
     });
     else {
         let e = [],
-            l = Object.fromEntries((a.application_command?.options ?? []).map(e => [e.name, e]));
-        for (let t of a.options ?? []) e = e.concat(function e(t) {
+            a = Object.fromEntries((l.application_command?.options ?? []).map(e => [e.name, e]));
+        for (let t of l.options ?? []) e = e.concat(function e(t) {
             let n, {
                     option: s,
-                    channel: a,
-                    guild: l,
+                    channel: l,
+                    guild: a,
                     messageId: u,
                     parentOptionKey: _,
                     commandOptionSpec: E,
@@ -85,8 +85,8 @@ let O = r.memo(function(e) {
                     n = Object.fromEntries((E?.options ?? [])?.map(e => [e.name, e]));
                 for (let i of s.options ?? []) t = t.concat(e({
                     option: i,
-                    channel: a,
-                    guild: l,
+                    channel: l,
+                    guild: a,
                     messageId: u,
                     parentOptionKey: h,
                     commandOptionSpec: n[i.name],
@@ -100,13 +100,13 @@ let O = r.memo(function(e) {
                     let e = s.value.toString(),
                         t = p.default.getUser(e);
                     if (null != t) {
-                        let e = (0, C.FT)(t, a);
+                        let e = (0, f.FT)(t, l);
                         n = (0, i.jsxs)(A.A, {
                             ...R,
                             onClick: () => (0, m.openUserProfileModal)({
                                 userId: t.id,
-                                guildId: a.guild_id,
-                                channelId: a.id,
+                                guildId: l.guild_id,
+                                channelId: l.id,
                                 messageId: u,
                                 sourceAnalyticsLocations: N
                             }),
@@ -126,7 +126,7 @@ let O = r.memo(function(e) {
                 }
                 case c.n4.ROLE: {
                     let e = s.value.toString(),
-                        t = null != l ? T.A.getRole(l.id, e) : void 0;
+                        t = null != a ? T.A.getRole(a.id, e) : void 0;
                     null != t && (n = (0, i.jsxs)(A.A, {
                         ...R,
                         children: ["@", t.name]
@@ -135,19 +135,19 @@ let O = r.memo(function(e) {
                 }
                 case c.n4.MENTIONABLE: {
                     let e = s.value.toString(),
-                        t = null != l ? T.A.getRole(l.id, e) : void 0;
+                        t = null != a ? T.A.getRole(a.id, e) : void 0;
                     if (null != t) n = (0, i.jsxs)(A.A, {
                         children: ["@", t.name]
                     });
                     else {
                         let t = p.default.getUser(e);
                         if (null != t) {
-                            let e = (0, C.FT)(t, a);
+                            let e = (0, f.FT)(t, l);
                             n = (0, i.jsxs)(A.A, {
                                 ...R,
                                 onClick: () => (0, m.openUserProfileModal)({
                                     userId: t.id,
-                                    guildId: a.guild_id,
+                                    guildId: l.guild_id,
                                     sourceAnalyticsLocations: N
                                 }),
                                 children: ["@", e.nick]
@@ -157,7 +157,7 @@ let O = r.memo(function(e) {
                     break
                 }
                 case c.n4.ATTACHMENT:
-                    n = x(f.intl.string(f.t.nONJVc));
+                    n = x(C.intl.string(C.t.nONJVc));
                     break;
                 default: {
                     let e = E?.choices?.find(e => e.value === s.value);
@@ -176,13 +176,13 @@ let O = r.memo(function(e) {
             guild: U,
             messageId: s,
             parentOptionKey: null,
-            commandOptionSpec: l[t.name],
+            commandOptionSpec: a[t.name],
             sourceAnalyticsLocations: O
         }));
         t = (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)(o.Text, {
                 ...S,
-                children: ["/", a.application_command?.name_localized ?? a.name]
+                children: ["/", l.application_command?.name_localized ?? l.name]
             }), e]
         })
     }
@@ -190,7 +190,7 @@ let O = r.memo(function(e) {
         className: h.kL,
         onCopy: e => {
             let t = window?.getSelection()?.toString() ?? "";
-            t.startsWith("/") && t.endsWith("\n") && M(e, a)
+            t.startsWith("/") && t.endsWith("\n") && M(e, l)
         },
         children: [(0, i.jsx)("div", {
             className: h.YL,

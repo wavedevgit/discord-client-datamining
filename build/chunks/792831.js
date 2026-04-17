@@ -1,57 +1,57 @@
 /** chunk id: 792831 params = (module,exports,require) **/
-l.d(t, {
-    A: () => T
+n.d(t, {
+    A: () => u
 });
-var a, n = l(627968);
-l(64700);
-var s = l(503698),
-    r = l.n(s),
-    i = l(953727),
-    c = l(89406),
-    o = ((a = {}).LEFT = "LEFT", a.RIGHT = "RIGHT", a.UP = "UP", a.DOWN = "DOWN", a.UP_LEFT = "UP_LEFT", a.DOWN_RIGHT = "DOWN_RIGHT", a);
-let u = e => {
+var i, l = n(627968);
+n(64700);
+var s = n(503698),
+    a = n.n(s),
+    r = n(953727),
+    o = n(89406),
+    d = ((i = {}).LEFT = "LEFT", i.RIGHT = "RIGHT", i.UP = "UP", i.DOWN = "DOWN", i.UP_LEFT = "UP_LEFT", i.DOWN_RIGHT = "DOWN_RIGHT", i);
+let c = e => {
     let {
         width: t = 24,
-        height: l = 24,
-        color: a = "currentColor",
+        height: n = 24,
+        color: i = "currentColor",
         direction: s,
-        foreground: o,
-        className: u,
-        title: T,
-        ...d
+        foreground: d,
+        className: c,
+        title: u,
+        ...h
     } = e;
-    return (0, n.jsxs)("svg", {
-        ...(0, i.A)(d),
+    return (0, l.jsxs)("svg", {
+        ...(0, r.A)(h),
         width: t,
-        height: l,
-        className: r()(u, function(e) {
+        height: n,
+        className: a()(c, function(e) {
             switch (e) {
                 case "LEFT":
-                    return c.kb;
+                    return o.kb;
                 case "RIGHT":
-                    return c.pG;
+                    return o.pG;
                 case "UP":
                     return null;
                 case "DOWN":
-                    return c.TR;
+                    return o.TR;
                 case "UP_LEFT":
-                    return c.l0;
+                    return o.l0;
                 case "DOWN_RIGHT":
-                    return c.Nu;
+                    return o.Nu;
                 default:
                     throw Error(`Invalid Direction ${e}`)
             }
         }(s)),
         viewBox: "0 0 24 24",
-        children: [null != T ? (0, n.jsx)("title", {
-            children: T
-        }) : null, (0, n.jsx)("polygon", {
-            className: o,
-            fill: a,
+        children: [null != u ? (0, l.jsx)("title", {
+            children: u
+        }) : null, (0, l.jsx)("polygon", {
+            className: d,
+            fill: i,
             fillRule: "nonzero",
             points: "13 20 11 20 11 8 5.5 13.5 4.08 12.08 12 4.16 19.92 12.08 18.5 13.5 13 8"
         })]
     })
 };
-u.Directions = o;
-let T = u
+c.Directions = d;
+let u = c

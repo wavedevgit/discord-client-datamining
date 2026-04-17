@@ -1,14 +1,14 @@
 /** chunk id: 912702 params = (module,exports,require) **/
 n.d(t, {
-    GI: () => s,
+    GI: () => r,
     Oo: () => d,
     Qm: () => o,
-    py: () => r
+    py: () => s
 });
 var i = n(73153),
     a = n(198982),
     l = n(306522);
-let s = async e => {
+let r = async e => {
     i.h.dispatch({
         type: "GUILD_PRODUCTS_FETCH",
         guildId: e
@@ -26,7 +26,7 @@ let s = async e => {
             guildId: e
         })
     }
-}, r = async (e, t) => {
+}, s = async (e, t) => {
     i.h.dispatch({
         type: "GUILD_PRODUCT_FETCH",
         productId: t

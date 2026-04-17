@@ -6,15 +6,15 @@ n.d(t, {
 var i = n(311907),
     r = n(506774),
     s = n(73153),
-    a = n(785796);
-let l = "MaintenanceStore",
+    l = n(785796);
+let a = "MaintenanceStore",
     o = null,
     c = null,
     u = null;
 class d extends i.Ay.Store {
     static displayName = "MaintenanceStore";
     initialize() {
-        u = r.w.get(l)
+        u = r.w.get(a)
     }
     getIncident() {
         return o
@@ -26,7 +26,7 @@ class d extends i.Ay.Store {
 }
 let _ = new d(s.h, {
     CONNECTION_OPEN: function() {
-        o = null, a.A.checkScheduledMaintenances()
+        o = null, l.A.checkScheduledMaintenances()
     },
     STATUS_PAGE_INCIDENT: function(e) {
         o = e.incident
@@ -36,6 +36,6 @@ let _ = new d(s.h, {
     },
     STATUS_PAGE_SCHEDULED_MAINTENANCE_ACK: function() {
         if (null == c) return !1;
-        u = c.id, r.w.set(l, u)
+        u = c.id, r.w.set(a, u)
     }
 })

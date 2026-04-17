@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(503698),
-    s = n.n(l),
-    r = n(407045),
+    r = n.n(l),
+    s = n(407045),
     o = n(397927),
     d = n(398025),
     c = n(419367),
@@ -45,14 +45,14 @@ let _ = "var(--background-mod-strong)",
             },
             children: [(0, i.jsxs)("div", {
                 className: u.vW,
-                children: [g, (0, i.jsxs)(r.animated.div, {
+                children: [g, (0, i.jsxs)(s.animated.div, {
                     style: {
                         opacity: (0, d.a)(v),
                         inset: A
                     },
-                    className: s()(u.rD, u.qk),
+                    className: r()(u.rD, u.qk),
                     children: [(0, i.jsx)("div", {
-                        className: s()(u.rD, u.LU)
+                        className: r()(u.rD, u.LU)
                     }), (0, i.jsx)(o.Text, {
                         variant: p,
                         color: "text-strong",

@@ -4,11 +4,11 @@ n.d(t, {
     AR: () => A,
     JJ: () => m,
     KU: () => d,
-    PZ: () => C,
+    PZ: () => f,
     X3: () => p,
     ZG: () => E,
     _I: () => I,
-    nl: () => f,
+    nl: () => C,
     r3: () => _,
     uV: () => N,
     wC: () => g,
@@ -17,8 +17,8 @@ n.d(t, {
 var i = n(168186),
     r = n(961350),
     s = n(372598),
-    a = n(753738),
-    l = n(928348),
+    l = n(753738),
+    a = n(928348),
     o = n(53594),
     c = n(411335),
     u = n(985018);
@@ -31,7 +31,7 @@ let d = e => e?.triggerType === c.uh.KEYWORD,
 function I(e, t) {
     let n = o.i$[t],
         i = (0, o.kT)(t, e),
-        a = {
+        l = {
             id: `${e}-${t}-new-rule`,
             name: n.getDefaultRuleName(),
             guildId: e,
@@ -45,9 +45,9 @@ function I(e, t) {
             exemptChannels: new Set,
             exemptRoles: new Set
         };
-    if (g(a)) throw Error(u.intl.string(u.t["A/nX8D"]));
-    let c = (0, l.p3)(e, t);
-    return c > 0 && (a.name += ` ${c+1}`), a
+    if (g(l)) throw Error(u.intl.string(u.t["A/nX8D"]));
+    let c = (0, a.p3)(e, t);
+    return c > 0 && (l.name += ` ${c+1}`), l
 }
 
 function T(e, t) {
@@ -55,7 +55,7 @@ function T(e, t) {
         limit: t
     }));
     e.forEach(e => {
-        if (e.length > c.kS || e.length < c.Ku) throw new a.lH(u.intl.formatToPlainString(u.t.rbRvGe, {
+        if (e.length > c.kS || e.length < c.Ku) throw new l.lH(u.intl.formatToPlainString(u.t.rbRvGe, {
             keyword: e,
             max: c.kS,
             min: c.Ku
@@ -73,7 +73,7 @@ function N(e) {
             limit: c.qm
         }));
         n.forEach(e => {
-            if (e.length > c.$5 || e.length < c.zs) throw new a.Nr(u.intl.formatToPlainString(u.t.WR0m9w, {
+            if (e.length > c.$5 || e.length < c.zs) throw new l.Nr(u.intl.formatToPlainString(u.t.WR0m9w, {
                 regex: e,
                 max: c.$5,
                 min: c.zs
@@ -98,7 +98,7 @@ function p(e) {
     }
 }
 
-function C(e) {
+function f(e) {
     switch (e) {
         case c.AH.BLOCK_MESSAGE:
             return u.intl.string(u.t.d1ab8n);
@@ -113,7 +113,7 @@ function C(e) {
     }
 }
 
-function f(e) {
+function C(e) {
     switch (e) {
         case c.uh.KEYWORD:
             return u.intl.string(u.t.ffR2cM);

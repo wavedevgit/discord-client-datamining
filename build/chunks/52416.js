@@ -25,6 +25,7 @@ function A(e) {
             variant: "expressive",
             onClick: (0, o.h)({
                 buttonAction: _.button.buttonAction,
+                deeplinkSection: _.button.deeplinkSection,
                 onClose: () => A(u.i.USER_DISMISS)
             }),
             icon: r.tvc

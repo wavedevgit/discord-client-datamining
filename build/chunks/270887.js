@@ -15,8 +15,8 @@ var i = n(735438),
     A = n(967198),
     E = n(711014),
     I = n(287809),
-    h = n(619921),
-    g = n(265422),
+    g = n(619921),
+    h = n(265422),
     C = n(652215);
 let p = r().throttle(function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1,
@@ -39,8 +39,8 @@ let p = r().throttle(function() {
             favoritesGuildXPEnabled: n,
             isMenuItemDCSelected: i,
             isIntroDCDismissed: r
-        }) || (p += e), -3 === p && (p = t.length - 1), p >= t.length || -2 === p) return void(0, g.a)(h.A.getHomeLink());
-    let T = -1 === p ? C.YYv : t[p],
-        S = _.A.getChannelId(T);
-    (0, g.i)(T, S === T ? null : S, !1)
+        }) || (p += e), -3 === p && (p = t.length - 1), p >= t.length || -2 === p) return void(0, h.a)(g.A.getHomeLink());
+    let S = -1 === p ? C.YYv : t[p],
+        T = _.A.getChannelId(S);
+    (0, h.i)(S, T === S ? null : T, !1)
 }, C.ugG)

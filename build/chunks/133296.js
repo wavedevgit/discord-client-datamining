@@ -1,11 +1,11 @@
 /** chunk id: 133296 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => s
 });
 var i = n(627968),
     a = n(64700),
     l = n(451988);
-class s extends a.Component {
+class r extends a.Component {
     timer = new l.IX;
     state = {
         hovered: !1
@@ -76,4 +76,4 @@ class s extends a.Component {
         })
     }
 }
-let r = s
+let s = r

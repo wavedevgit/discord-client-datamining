@@ -8,14 +8,14 @@ var i = n(627968);
 n(64700);
 var a = n(503698),
     l = n.n(a),
-    s = n(622413),
-    r = n(528241);
+    r = n(622413),
+    s = n(528241);
 let o = 660,
-    d = e => (0, i.jsx)(s.A, {
+    d = e => (0, i.jsx)(r.A, {
         ...e,
         className: l()(e.className, {
-            [r.sN]: !e.isHorizontal,
-            [r.wO]: e.isHorizontal
+            [s.sN]: !e.isHorizontal,
+            [s.wO]: e.isHorizontal
         })
     }),
     c = e => {
@@ -25,19 +25,19 @@ let o = 660,
         return (0, i.jsx)(d, {
             ...e,
             media: () => (0, i.jsx)("div", {
-                className: r.FR,
+                className: s.FR,
                 children: (0, i.jsx)("div", {
-                    className: l()(r.Wv, {
-                        [r._n]: t
+                    className: l()(s.Wv, {
+                        [s._n]: t
                     }),
                     children: (0, i.jsx)("div", {
-                        className: r.h$
+                        className: s.h$
                     })
                 })
             }),
             title: () => (0, i.jsx)("div", {
-                className: l()(r.GE, {
-                    [r.E9]: t
+                className: l()(s.GE, {
+                    [s.E9]: t
                 })
             })
         })

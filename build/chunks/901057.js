@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var r = n(311907),
     s = n(990078),
-    a = n(397927),
-    l = n(367513),
+    l = n(397927),
+    a = n(367513),
     o = n(956793),
     c = n(47167),
     u = n(332173),
@@ -27,8 +27,8 @@ function p(e) {
         channel: t,
         onClick: n,
         beforeTransition: p,
-        className: C,
-        openChatWithoutConnecting: f
+        className: f,
+        openChatWithoutConnecting: C
     } = e, h = (0, r.bG)([I.default, m.A], () => null == t ? "" : (0, c.m1)(t, I.default, m.A), [t]);
     return (0, i.jsx)(s.m, {
         "data-pending-richtooltip-migration": !0,
@@ -36,9 +36,9 @@ function p(e) {
         position: "top",
         children: (0, i.jsx)(u.A, {
             role: "link",
-            className: C,
+            className: f,
             onClick: e => {
-                e.stopPropagation(), null != n ? n() : (null != p && p(), (0, a.s7G)(), function(e, t) {
+                e.stopPropagation(), null != n ? n() : (null != p && p(), (0, l.s7G)(), function(e, t) {
                     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
                     if (null == e || null == t) return;
                     let i = A.A.getGuild(e);
@@ -48,13 +48,13 @@ function p(e) {
                     let r = E.A.getChannel(t);
                     if (null != r && (0, _.ay)(r.type)) {
                         if (n) {
-                            l.A.updateChatOpen(r.id, !0), (0, d.pX)(g.BVt.CHANNEL(e, t));
+                            a.A.updateChatOpen(r.id, !0), (0, d.pX)(g.BVt.CHANNEL(e, t));
                             return
                         }
                         o.default.selectVoiceChannel(r.id);
                         return
                     }(0, d.pX)(g.BVt.CHANNEL(e, t))
-                }(t?.guild_id, t?.id, f))
+                }(t?.guild_id, t?.id, C))
             },
             iconType: (0, T.QG)(t),
             children: h

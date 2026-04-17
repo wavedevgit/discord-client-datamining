@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     r = n(64700),
     s = n(417597),
-    a = n(451988),
-    l = n(397927),
+    l = n(451988),
+    a = n(397927),
     o = n(775602),
     c = n(21161),
     u = n(67414),
@@ -48,7 +48,7 @@ function m(e) {
         let t = null,
             n = new IntersectionObserver(i => {
                 let [r] = i;
-                r.intersectionRatio < .5 || (n.disconnect(), (t = new a.J_(1e3, () => {
+                r.intersectionRatio < .5 || (n.disconnect(), (t = new l.J_(1e3, () => {
                     let t = e.getBoundingClientRect(),
                         n = g({
                             confettiSize: 8
@@ -64,7 +64,7 @@ function m(e) {
     }, [N, T, I, g]), (0, i.jsx)(_.A, {
         contentClassName: A.o9,
         iconContainerClassName: A.zc,
-        iconNode: (0, i.jsx)(l.XFE, {
+        iconNode: (0, i.jsx)(a.XFE, {
             colorClass: A.Kk
         }),
         children: (0, i.jsx)(u.A, {

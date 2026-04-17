@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var r = n(192308),
     s = n(397927),
-    a = n(294454),
-    l = n(118517),
+    l = n(294454),
+    a = n(118517),
     o = n(734057),
     c = n(31717),
     u = n(320501),
@@ -24,14 +24,14 @@ async function g(e, t) {
     let {
         channelId: g,
         analyticsLocations: p,
-        messageReference: C
-    } = t, f = o.A.getChannel(g);
-    if (null != f) {
-        if (null != C) {
-            let e = u.A.getMessage(C.channel_id, C.message_id);
-            null != e && (0, l.Yf)({
+        messageReference: f
+    } = t, C = o.A.getChannel(g);
+    if (null != C) {
+        if (null != f) {
+            let e = u.A.getMessage(f.channel_id, f.message_id);
+            null != e && (0, a.Yf)({
                 message: e,
-                channel: f,
+                channel: C,
                 shouldMention: !1,
                 showMentionToggle: !1
             })
@@ -58,13 +58,13 @@ async function g(e, t) {
                 }
                 d.default.track(N.HAw.CLIP_SHARED, {
                     location_stack: p,
-                    guild_id: f.guild_id,
-                    channel_id: f.id,
-                    channel_type: f.type,
+                    guild_id: C.guild_id,
+                    channel_id: C.id,
+                    channel_type: C.type,
                     application_id: i.applicationId,
                     clip_id: i.id
                 })
-            }(0, E.R)(t, f, c.C.ChannelMessage, {
+            }(0, E.R)(t, C, c.C.ChannelMessage, {
                 filesMetadata: n,
                 origin: "unknown:clip_share"
             }), r.closeAllModals()
@@ -82,6 +82,6 @@ async function g(e, t) {
         })
     }, {
         stackingBehavior: "stack",
-        modalKey: a.aU
+        modalKey: l.aU
     })
 }

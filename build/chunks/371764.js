@@ -15,8 +15,8 @@ var r = n(110259),
     _ = n(688810),
     m = n(139286),
     p = n(498470),
-    g = n(637706),
-    A = n(975841);
+    A = n(637706),
+    g = n(975841);
 let f = e => {
     let {
         componentId: t,
@@ -34,22 +34,23 @@ let f = e => {
     });
     let b = (0, p.h)({
             buttonAction: n.button?.buttonAction ?? o.dz.OPEN_TIER_2_PAYMENT_MODAL,
+            deeplinkSection: n.button?.deeplinkSection,
             analyticsLocations: f,
             analyticsLocation: h.location
         }),
-        x = (0, g.a)(n.body),
-        C = (0, g.C)(n.helpArticle, n.helpArticleId);
+        x = (0, A.a)(n.body),
+        R = (0, A.C)(n.helpArticle, n.helpArticleId);
     return (0, i.jsxs)("div", {
-        className: A.kL,
+        className: g.kL,
         children: [(0, i.jsx)("div", {
-            className: A.LY,
+            className: g.LY,
             children: (0, i.jsx)("img", {
                 src: n.assetUrl,
-                className: A.ot,
+                className: g.ot,
                 alt: ""
             })
         }), (0, i.jsxs)("div", {
-            className: A.IH,
+            className: g.IH,
             children: [(0, i.jsx)(l.DZT, {
                 variant: "heading-md/semibold",
                 color: "text-strong",
@@ -57,17 +58,17 @@ let f = e => {
             }), (0, i.jsxs)(l.EYj, {
                 variant: "text-md/medium",
                 color: "text-subtle",
-                className: A.tb,
-                children: [x, null != C && (0, i.jsxs)(i.Fragment, {
+                className: g.tb,
+                children: [x, null != R && (0, i.jsxs)(i.Fragment, {
                     children: ["\xa0", (0, i.jsx)(d.MzZ, {
-                        className: A.$T,
-                        href: C.url,
-                        children: C.linkText
+                        className: g.$T,
+                        href: R.url,
+                        children: R.linkText
                     })]
                 })]
             })]
         }), null != n.button && (0, i.jsx)("div", {
-            className: A.UD,
+            className: g.UD,
             children: (0, i.jsx)(c.$nd, {
                 variant: "expressive",
                 size: "md",

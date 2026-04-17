@@ -1,60 +1,60 @@
 /** chunk id: 984870 params = (module,exports,require) **/
-n.d(e, {
-    T: () => O
+n.d(t, {
+    T: () => x
 });
 var i = n(627968),
     l = n(64700),
-    r = n(311907),
-    s = n(554146),
-    a = n(397927),
+    s = n(311907),
+    a = n(554146),
+    r = n(397927),
     o = n(264779),
-    c = n(597758),
-    d = n(780964),
+    d = n(597758),
+    c = n(780964),
     u = n(858897),
-    E = n(287809),
-    _ = n(954571),
-    T = n(927578),
-    A = n(379848),
-    I = n(49999),
-    N = n(652215),
-    R = n(985018),
-    p = n(946319);
-let O = t => {
+    h = n(287809),
+    A = n(954571),
+    _ = n(927578),
+    m = n(379848),
+    p = n(49999),
+    g = n(652215),
+    f = n(985018),
+    E = n(946319);
+let x = e => {
     let {
-        dismissibleContent: e
-    } = t, n = (0, o.Cp)(), O = (0, r.bG)([E.default], () => !T.Ay.isPremium(E.default.getCurrentUser())), C = l.useCallback(() => {
-        _.default.track(N.HAw.OUTBOUND_PROMOTION_NOTICE_CLICKED), (0, u.openUserSettings)(d.X.GIFT_PANEL), c.Ay.dismissOutboundPromotionNotice()
+        dismissibleContent: t
+    } = e, n = (0, o.Cp)(), x = (0, s.bG)([h.default], () => !_.Ay.isPremium(h.default.getCurrentUser())), I = l.useCallback(() => {
+        A.default.track(g.HAw.OUTBOUND_PROMOTION_NOTICE_CLICKED), (0, u.openUserSettings)(c.X.GIFT_PANEL), d.Ay.dismissOutboundPromotionNotice()
     }, []);
-    return null == n ? null : (0, i.jsx)(A.YS, {
-        contentType: e,
+    return null == n ? null : (0, i.jsx)(m.YS, {
+        contentType: t,
         newSnowflakeId: n,
         timeRecurringConfig: {
             cooldownDurationMs: 0
         },
-        groupName: I.m.NOTICE_BAR,
+        groupName: p.m.NOTICE_BAR,
         bypassAutoDismiss: !0,
-        children: t => {
+        children: e => {
             let {
-                visibleContent: e,
+                visibleContent: t,
                 markAsDismissed: n
-            } = t;
-            if (e === s.M.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return (0, i.jsxs)(a.$Td, {
-                color: a.Hv$.PREMIUM_TIER_2,
-                children: [(0, i.jsx)(a.PMB, {
-                    noticeType: N.kqX.OUTBOUND_PROMOTION,
+            } = e;
+            if (t === a.M.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return (0, i.jsxs)(r.$Td, {
+                color: r.Hv$.PREMIUM_TIER_2,
+                children: [(0, i.jsx)(r.PMB, {
+                    noticeType: g.kqX.OUTBOUND_PROMOTION,
                     onClick: () => {
-                        c.Ay.dismissOutboundPromotionNotice(), null !== n && n(I.i.USER_DISMISS)
+                        d.Ay.dismissOutboundPromotionNotice(), null !== n && n(p.i.USER_DISMISS)
                     }
-                }), (0, i.jsx)(a.tvc, {
+                }), (0, i.jsx)(r.tvc, {
                     size: "md",
                     color: "currentColor",
-                    className: p.P
-                }), O ? R.intl.string(R.t["5JMiOo"]) : R.intl.string(R.t["Pzh+G2"]), (0, i.jsx)(a.Z_L, {
-                    noticeType: N.kqX.OUTBOUND_PROMOTION,
+                    className: E.P
+                }), x ? f.intl.string(f.t["5JMiOo"]) : f.intl.string(f.t["Pzh+G2"]), (0, i.jsx)(r.Z_L, {
+                    noticeType: g.kqX.OUTBOUND_PROMOTION,
                     onClick: () => {
-                        C(), null !== n && n(I.i.TAKE_ACTION)
+                        I(), null !== n && n(p.i.TAKE_ACTION)
                     },
-                    children: R.intl.string(R.t.jVcuVY)
+                    children: f.intl.string(f.t.jVcuVY)
                 })]
             })
         }

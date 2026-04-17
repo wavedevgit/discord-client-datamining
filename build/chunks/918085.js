@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(503698),
-    s = n.n(l),
-    r = n(714384),
+    r = n.n(l),
+    s = n(714384),
     o = n(740916),
     d = n(191931),
     c = n(886352),
@@ -33,18 +33,18 @@ class f extends a.PureComponent {
             renderCustomActions: n,
             isMouseOver: a,
             showBuyInline: l
-        } = this.props, s = (l || !t.requiresPayment) && !e;
+        } = this.props, r = (l || !t.requiresPayment) && !e;
         return null != n ? n() : (0, i.jsxs)("div", {
             className: x.ED,
             children: [(0, i.jsx)(o.A, {
                 type: o.A.Types.DIRECTORY_TILE,
                 sku: t,
                 inLibrary: e,
-                className: s && a ? x.ae : x.Ek
-            }), (0, i.jsx)(r.E, {
+                className: r && a ? x.ae : x.Ek
+            }), (0, i.jsx)(s.E, {
                 systems: [A.uje.WINDOWS],
                 className: x.iD
-            }), s ? (0, i.jsx)("div", {
+            }), r ? (0, i.jsx)("div", {
                 children: "deprecated!"
             }) : null]
         })
@@ -55,36 +55,36 @@ class f extends a.PureComponent {
             muted: t,
             showMediaPlaceholder: n,
             onToggleMute: l,
-            sku: r,
+            sku: s,
             isHorizontal: o,
             storeListing: p
         } = this.props;
-        return (0, _.bF)(r) ? (0, i.jsx)(m.e, {
-            sku: r,
+        return (0, _.bF)(s) ? (0, i.jsx)(m.e, {
+            sku: s,
             shape: "custom",
             containerClassName: x.A$,
             backgroundImageClassName: x.iZ,
             foregroundImageClassName: x.O7
         }) : (0, i.jsxs)(a.Fragment, {
             children: [(0, i.jsx)(u.A, {
-                className: s()(x.H1, {
+                className: r()(x.H1, {
                     [x.ZC]: o
                 }),
-                video: null != p.previewVideo ? (0, h.YE)(r.applicationId, p.previewVideo) : void 0,
-                image: null != p.thumbnail ? (0, h.YE)(r.applicationId, p.thumbnail, 600) : void 0,
-                title: r.name,
+                video: null != p.previewVideo ? (0, h.YE)(s.applicationId, p.previewVideo) : void 0,
+                image: null != p.thumbnail ? (0, h.YE)(s.applicationId, p.thumbnail, 600) : void 0,
+                title: s.name,
                 playing: e,
                 muted: t,
                 placeholder: n,
                 onToggleMute: l,
                 splashClassName: x.ZI,
                 splashPlaceholderClassName: x.NB
-            }), r.exclusive ? (0, i.jsx)(c.A, {
-                className: s()(x.LJ, {
+            }), s.exclusive ? (0, i.jsx)(c.A, {
+                className: r()(x.LJ, {
                     [x.V9]: e
                 })
-            }) : r.isTheGameAwardsWinner ? (0, i.jsx)(d.A, {
-                className: s()(x.LJ, {
+            }) : s.isTheGameAwardsWinner ? (0, i.jsx)(d.A, {
+                className: r()(x.LJ, {
                     [x.V9]: e
                 })
             }) : null]
@@ -97,14 +97,14 @@ class f extends a.PureComponent {
             isHorizontal: n,
             className: a,
             renderCustomTagline: l,
-            renderCustomTitle: s,
-            renderCustomMedia: r,
+            renderCustomTitle: r,
+            renderCustomMedia: s,
             isEmbed: o
         } = this.props, d = o ? p.ug : g.A;
         return (0, i.jsx)(d, {
             className: a,
-            renderMedia: null != r ? r : this.renderMedia,
-            renderTitle: null != s ? s : () => e.name,
+            renderMedia: null != s ? s : this.renderMedia,
+            renderTitle: null != r ? r : () => e.name,
             renderTagline: null != l ? l : () => t.tagline,
             renderActions: this.renderActions,
             isHorizontal: n

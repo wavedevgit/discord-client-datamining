@@ -4,18 +4,18 @@ n.d(t, {
     A: () => c
 });
 var a = n(64700),
-    r = n(933725),
-    i = n(849841);
+    i = n(933725),
+    r = n(849841);
 
 function c(e, t) {
-    let [n, c] = a.useState(!1), s = a.useCallback(async () => {
-        null != e && (c(!0), await (0, r.m)(e, !0), c(!1)), t?.()
-    }, [e, t]), o = (0, i.A)(e);
+    let [n, c] = a.useState(!1), o = a.useCallback(async () => {
+        null != e && (c(!0), await (0, i.m)(e, !0), c(!1)), t?.()
+    }, [e, t]), _ = (0, r.A)(e);
     return {
         isAdopting: n,
-        onAdoptTag: s,
+        onAdoptTag: o,
         onEditProfile: a.useCallback(() => {
-            t?.(), o()
-        }, [o, t])
+            t?.(), _()
+        }, [_, t])
     }
 }

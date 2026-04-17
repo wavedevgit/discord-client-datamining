@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var r = n(503698),
     s = n.n(r),
-    a = n(397927),
-    l = n(709066),
+    l = n(397927),
+    a = n(709066),
     o = n(763754),
     c = n(643204),
     u = n(809115),
@@ -53,13 +53,13 @@ function m(e) {
                     }),
                     username: (0, i.jsxs)("div", {
                         className: A.he,
-                        children: [(0, i.jsx)(a.Text, {
+                        children: [(0, i.jsx)(l.Text, {
                             variant: "text-md/normal",
                             color: "text-brand",
                             tag: "span",
                             className: A.Xh,
                             children: E.intl.string(E.t.hG1StD)
-                        }), (0, i.jsx)(l.A, {
+                        }), (0, i.jsx)(a.A, {
                             type: _.nu.SYSTEM_DM,
                             className: A.Al
                         })]

@@ -1,5 +1,5 @@
 /** chunk id: 750128 params = (module,exports,require) **/
-let i, a, l, s, r;
+let i, a, l, r, s;
 n.d(t, {
     A: () => f,
     Z: () => A
@@ -21,19 +21,19 @@ class x extends u.Ay.Store {
 }
 let f = new x(_.h, {
     LOGOUT: function() {
-        return i = null, a = null, l = null, s = null, r = null, !0
+        return i = null, a = null, l = null, r = null, s = null, !0
     },
     INTERACTION_MODAL_CREATE: function(e) {
         let {
             nonce: t
         } = e;
-        return t === r && (m.A.deleteMessage(s, l, !0), l = null, s = null, r = null), !1
+        return t === s && (m.A.deleteMessage(r, l, !0), l = null, r = null, s = null), !1
     },
     INTERACTION_IFRAME_MODAL_CREATE: function(e) {
         let {
             nonce: t
         } = e;
-        return t === r && (m.A.deleteMessage(s, l, !0), l = null, s = null, r = null), !1
+        return t === s && (m.A.deleteMessage(r, l, !0), l = null, r = null, s = null), !1
     },
     INTERACTION_QUEUE: function(e) {
         let {
@@ -44,7 +44,7 @@ let f = new x(_.h, {
         } = e;
         switch (o.interactionType) {
             case h.G4.APPLICATION_COMMAND:
-                return l = t, s = o.channelId, r = n, !1;
+                return l = t, r = o.channelId, s = n, !1;
             case h.G4.MODAL_SUBMIT:
                 c()(null == i || 1 === a || 2 === a, "cannot submit multiple modals at once"), i = n, a = 0;
                 let u = e => {

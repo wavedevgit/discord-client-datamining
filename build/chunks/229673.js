@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var r = n(934551),
     s = n(429913),
-    a = n(769015),
-    l = n(975571),
+    l = n(769015),
+    a = n(975571),
     o = n(763754),
     c = n(447215),
     u = n(888675),
@@ -37,13 +37,13 @@ function A(e) {
         gameName: N.name,
         gameIconHook: e => (0, i.jsxs)("span", {
             className: E.Y_,
-            children: [(0, i.jsx)(a.A, {
+            children: [(0, i.jsx)(l.A, {
                 game: N,
-                size: a.M.XXSMALL,
+                size: l.M.XXSMALL,
                 className: E.p4
             }), " ", e]
         }),
-        helpdeskArticle: l.A.getArticleURL(d.MVz.SOCIAL_LAYER_CONNECTIONS)
+        helpdeskArticle: a.A.getArticleURL(d.MVz.SOCIAL_LAYER_CONNECTIONS)
     });
     return (0, i.jsx)(u.A, {
         iconNode: (0, i.jsx)(r.GameControllerIcon, {

@@ -1,9 +1,9 @@
 /** chunk id: 801796 params = (module,exports,require) **/
 n.d(t, {
     BD: () => p,
-    US: () => g,
-    X8: () => T,
-    mH: () => h
+    US: () => h,
+    X8: () => S,
+    mH: () => g
 });
 var i = n(757942),
     r = n(455234),
@@ -24,7 +24,7 @@ let A = (e, t) => {
         let n = o.A.getChannel(t);
         return null != n && !!u.kvI.GUILD_VOCAL.has(n.type) && (a.Ay.getMentionCount(t) > 0 || d.A.getVoiceChannelId() === t && a.Ay.getUnreadCount(t) > 0)
     },
-    h = {
+    g = {
         binds: ["alt+shift+down"],
         comboKeysBindGlobal: !0,
         action() {
@@ -38,7 +38,7 @@ let A = (e, t) => {
             }), !1
         }
     },
-    g = {
+    h = {
         binds: ["alt+shift+up"],
         comboKeysBindGlobal: !0,
         action() {
@@ -62,7 +62,7 @@ let A = (e, t) => {
             withVoiceChannels: !0
         }), !1)
     },
-    T = {
+    S = {
         binds: ["mod+shift+alt+up"],
         comboKeysBindGlobal: !0,
         action: () => ((0, i.A)(-1, {

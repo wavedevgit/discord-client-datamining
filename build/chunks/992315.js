@@ -13,11 +13,6 @@ function o(e) {
             location: "bento_box"
         }).functionalityEnabled,
         a = (0, i.O9)(),
-        o = (0, r.DK)(s.W.NITRO, "useBentoBoxes"),
-        d = [...t ? [l.NI.THREE_P_PROMOTIONS] : [], ...e ? [l.NI.ORB_MULTIPLIER] : [], ...a ? [l.NI.PREMIUM_GROUP] : [], ...o ? [l.NI.ORB_REWARDS] : []];
-    if (d.length > 0) {
-        let [e, t = l.NI.SERVER_PROFILES] = d;
-        return [e, t, l.NI.REFERRAL_PROGRAM]
-    }
-    return [l.NI.DISPLAY_NAME_STYLES, l.NI.CUSTOM_THEMES, l.NI.REFERRAL_PROGRAM]
+        o = (0, r.DK)(s.W.NITRO, "useBentoBoxes");
+    return [...t ? [l.NI.THREE_P_PROMOTIONS] : [], ...e ? [l.NI.ORB_MULTIPLIER] : [], ...a ? [l.NI.PREMIUM_GROUP] : [], ...o ? [l.NI.ORB_REWARDS] : [], l.NI.DISPLAY_NAME_STYLES, l.NI.CUSTOM_THEMES, l.NI.SERVER_PROFILES, l.NI.REFERRAL_PROGRAM]
 }

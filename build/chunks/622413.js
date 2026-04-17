@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var a = n(503698),
     l = n.n(a),
-    s = n(397927),
-    r = n(842990);
+    r = n(397927),
+    s = n(842990);
 let o = e => {
     let {
         renderTitle: t,
@@ -18,24 +18,24 @@ let o = e => {
         isHorizontal: c = !1
     } = e;
     return (0, i.jsxs)("div", {
-        className: l()(r.Vs, {
-            [r.ZQ]: c
+        className: l()(s.Vs, {
+            [s.ZQ]: c
         }, d),
         children: [null != o && (0, i.jsx)("div", {
-            className: l()(r.$_, {
-                [r.rO]: c
+            className: l()(s.$_, {
+                [s.rO]: c
             }),
             children: o?.()
         }), (0, i.jsxs)("div", {
-            className: r.h_,
-            children: [(0, i.jsx)(s.H, {
-                className: r.DD,
+            className: s.h_,
+            children: [(0, i.jsx)(r.H, {
+                className: s.DD,
                 children: t?.()
             }), (0, i.jsx)("div", {
-                className: r.dS,
+                className: s.dS,
                 children: n?.()
             }), (0, i.jsx)("div", {
-                className: r.o1,
+                className: s.o1,
                 children: a?.()
             })]
         })]

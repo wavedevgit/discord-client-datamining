@@ -10,8 +10,8 @@ n.d(t, {
 var i = n(989349),
     r = n.n(i),
     s = n(877624),
-    a = n(311907),
-    l = n(531417),
+    l = n(311907),
+    a = n(531417),
     o = n(554146),
     c = n(506774),
     u = n(73153),
@@ -25,8 +25,8 @@ var i = n(989349),
     N = n(367727),
     g = n(626262),
     p = n(487329),
-    C = n(161518),
-    f = n(49463),
+    f = n(161518),
+    C = n(49463),
     h = n(15285),
     S = n(142120),
     R = n(652896),
@@ -64,8 +64,8 @@ var i = n(989349),
     ei = n(71393),
     er = n(430452),
     es = n(803224),
-    ea = n(576705),
-    el = n(362790),
+    el = n(576705),
+    ea = n(362790),
     eo = n(383501),
     ec = n(309010),
     eu = n(967198),
@@ -79,8 +79,8 @@ var i = n(989349),
     eN = n(166403),
     eg = n(816733),
     ep = n(469778),
-    eC = n(147964),
-    ef = n(488926),
+    ef = n(147964),
+    eC = n(488926),
     eh = n(723702),
     eS = n(927578),
     eR = n(837921),
@@ -254,10 +254,10 @@ let ez = {
         predicate: () => null != eo.A.getLastSessionVoiceChannelId()
     },
     [eD.kqX.NO_INPUT_DETECTED]: {
-        predicate: () => C.A.hasActiveErrorOfType(p.iy.NO_AUDIO_INPUT_DETECTED)
+        predicate: () => f.A.hasActiveErrorOfType(p.iy.NO_AUDIO_INPUT_DETECTED)
     },
     [eD.kqX.NO_INPUT_DEVICES_DETECTED]: {
-        predicate: () => C.A.hasActiveErrorOfType(p.iy.NO_INPUT_DEVICES)
+        predicate: () => f.A.hasActiveErrorOfType(p.iy.NO_INPUT_DEVICES)
     },
     [eD.kqX.HARDWARE_MUTE]: {
         predicate: () => eo.A.isConnected() && er.Ay.isHardwareMute() && er.Ay.isHardwareMuteNoticeEnabled() && !X.Ay.disableHardwareMuteSilenceAlert,
@@ -310,7 +310,7 @@ let ez = {
         predicate: () => (0, b.So)()
     },
     [eD.kqX.CORRUPT_INSTALLATION]: {
-        predicate: () => eh.isPlatformEmbedded && (!l.A.supported() || eM.A.isCorruptInstallation())
+        predicate: () => eh.isPlatformEmbedded && (!a.A.supported() || eM.A.isCorruptInstallation())
     },
     [eD.kqX.VIDEO_UNSUPPORTED_BROWSER]: {
         predicate: e => {
@@ -444,8 +444,8 @@ let ez = {
             let {
                 premiumSubscription: t,
                 currentUser: n
-            } = e, i = null != t ? r()(t.currentPeriodEnd).diff(r()().startOf("day"), "days") : 0, s = t?.canceledAt != null && t?.status === eD.Dmq.CANCELED && 1 >= r()().diff(r()(t.canceledAt), "days"), a = null != t && r()(t.currentPeriodEnd).isBefore(r()()), l = null != t && t.status === eD.Dmq.CANCELED && !a && i <= 7 && i >= 0 && (0, eS.YE)(n, eU.PremiumTypes.TIER_2) && !s && !n.hasFreePremium() && !t.isPurchasedExternally;
-            return !eW(eD.kqX.PREMIUM_UNCANCEL) && l
+            } = e, i = null != t ? r()(t.currentPeriodEnd).diff(r()().startOf("day"), "days") : 0, s = t?.canceledAt != null && t?.status === eD.Dmq.CANCELED && 1 >= r()().diff(r()(t.canceledAt), "days"), l = null != t && r()(t.currentPeriodEnd).isBefore(r()()), a = null != t && t.status === eD.Dmq.CANCELED && !l && i <= 7 && i >= 0 && (0, eS.YE)(n, eU.PremiumTypes.TIER_2) && !s && !n.hasFreePremium() && !t.isPurchasedExternally;
+            return !eW(eD.kqX.PREMIUM_UNCANCEL) && a
         },
         metadata: e => {
             let {
@@ -463,13 +463,13 @@ let ez = {
             let {
                 premiumSubscription: t,
                 currentUser: n
-            } = e, i = null != t ? r()(t.currentPeriodEnd).diff(r()().startOf("day"), "days") : 0, s = null != t ? r()(t.currentPeriodEnd).diff(r()(t.currentPeriodStart).startOf("day"), "days") : 0, a = null != t && r()(t.currentPeriodEnd).isBefore(r()()), l = ep.A.applicationIdsFetched.has(eU.tv), o = ep.A.getForApplication(eU.tv), c = null != t ? (0, eS.EL)(t) : null, u = null != c ? eS.Ay.getSkuIdForPlan(c.planId) : null, d = null != o && null != c && Array.from(o).filter(e => {
+            } = e, i = null != t ? r()(t.currentPeriodEnd).diff(r()().startOf("day"), "days") : 0, s = null != t ? r()(t.currentPeriodEnd).diff(r()(t.currentPeriodStart).startOf("day"), "days") : 0, l = null != t && r()(t.currentPeriodEnd).isBefore(r()()), a = ep.A.applicationIdsFetched.has(eU.tv), o = ep.A.getForApplication(eU.tv), c = null != t ? (0, eS.EL)(t) : null, u = null != c ? eS.Ay.getSkuIdForPlan(c.planId) : null, d = null != o && null != c && Array.from(o).filter(e => {
                 let {
                     skuId: t,
                     consumed: n
                 } = e;
                 return !n && t === u
-            }).length > 0, _ = null != t && i <= (s > 14 ? 7 : 2) && i >= 0 && t.status !== eD.Dmq.PAST_DUE && !a && l && !d && null === t.paymentSourceId && !n.hasFreePremium() && !t.isPurchasedExternally;
+            }).length > 0, _ = null != t && i <= (s > 14 ? 7 : 2) && i >= 0 && t.status !== eD.Dmq.PAST_DUE && !l && a && !d && null === t.paymentSourceId && !n.hasFreePremium() && !t.isPurchasedExternally;
             return !eW(eD.kqX.PREMIUM_MISSING_PAYMENT) && _
         },
         metadata: e => {
@@ -488,8 +488,8 @@ let ez = {
             let {
                 premiumSubscription: t,
                 currentUser: n
-            } = e, i = null != t && null != t.paymentSourceId ? eT.A.getPaymentSource(t.paymentSourceId) : null, s = null != t && r()(t.currentPeriodEnd).isBefore(r()()), a = null != t && t.status === eD.Dmq.PAST_DUE && !s && null != i && i.invalid && !n.hasFreePremium() && !t.isPurchasedExternally;
-            return !eW(eD.kqX.PREMIUM_PAST_DUE_INVALID_PAYMENT) && a
+            } = e, i = null != t && null != t.paymentSourceId ? eT.A.getPaymentSource(t.paymentSourceId) : null, s = null != t && r()(t.currentPeriodEnd).isBefore(r()()), l = null != t && t.status === eD.Dmq.PAST_DUE && !s && null != i && i.invalid && !n.hasFreePremium() && !t.isPurchasedExternally;
+            return !eW(eD.kqX.PREMIUM_PAST_DUE_INVALID_PAYMENT) && l
         },
         metadata: e => {
             let {
@@ -518,10 +518,10 @@ let ez = {
         }
     },
     [eD.kqX.APPLICATION_TEST_MODE]: {
-        predicate: () => null != eC.A.testModeApplicationId,
+        predicate: () => null != ef.A.testModeApplicationId,
         metadata: () => {
-            if (null == eC.A.testModeApplicationId) return {};
-            let e = eC.A.testModeApplicationId,
+            if (null == ef.A.testModeApplicationId) return {};
+            let e = ef.A.testModeApplicationId,
                 t = m.A.getApplication(e);
             return {
                 applicationName: null != t ? t.name : e,
@@ -537,8 +537,8 @@ let ez = {
             let {
                 premiumSubscription: t,
                 currentUser: n
-            } = e, i = null != t && r()(t.currentPeriodEnd).isBefore(r()()), s = null != t && null != t.paymentSourceId ? eT.A.getPaymentSource(t.paymentSourceId) : null, a = null != s && eL.AD.has(s.type), l = null != t && t.status === eD.Dmq.PAST_DUE && !i && a && !n.hasFreePremium() && !t.isPurchasedExternally;
-            return !eW(eD.kqX.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT) && l
+            } = e, i = null != t && r()(t.currentPeriodEnd).isBefore(r()()), s = null != t && null != t.paymentSourceId ? eT.A.getPaymentSource(t.paymentSourceId) : null, l = null != s && eL.AD.has(s.type), a = null != t && t.status === eD.Dmq.PAST_DUE && !i && l && !n.hasFreePremium() && !t.isPurchasedExternally;
+            return !eW(eD.kqX.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT) && a
         },
         metadata: e => {
             let {
@@ -664,7 +664,7 @@ let ez = {
                     location: "NoticeStore"
                 }).enabled || eW(eD.kqX.RIOT_CONNECTION_DEPRECATION_ADMIN) || (0, T.k8)(o.M.RIOT_CONNECTION_DEPRECATION_ADMIN_DISABLE)) return !1;
             let i = null != n ? ei.A.getGuild(n) : null,
-                r = (0, ef.$3)({
+                r = (0, eC.$3)({
                     permission: eD.xBc.ADMINISTRATOR,
                     user: t,
                     context: i
@@ -713,10 +713,10 @@ function eQ() {
 function eZ() {
     return e_.A.enabled || delete eH[eD.kqX.STREAMER_MODE], eQ()
 }
-class e$ extends a.Ay.Store {
+class e$ extends l.Ay.Store {
     static displayName = "NoticeStore";
     initialize() {
-        this.syncWith([C.A, eE.Ay, el.A, ee.A, eu.A, k.A, eg.A, z.default, $.A, q.A, O.A, F.A, W.A, h.Ay, Y.A, C.A, I.A], eQ), this.waitFor(C.A, m.A, W.A, J.default, z.default, Q.A, Z.A, L.A, $.A, ee.A, ex.A, eO.A, eM.A, ep.A, f.A, S.A, D.A, O.A, et.Ay, I.A, en.A, ei.A, U.A, P.A, er.Ay, es.A, eT.A, ea.A, el.A, k.A, F.A, eo.A, h.Ay, ec.A, eu.A, B.A, ed.A, e_.A, v.A, eN.A, eE.Ay, eC.A, X.Ay, eg.A, eA.A, q.A, em.default, eI.A, Y.A)
+        this.syncWith([f.A, eE.Ay, ea.A, ee.A, eu.A, k.A, eg.A, z.default, $.A, q.A, O.A, F.A, W.A, h.Ay, Y.A, f.A, I.A], eQ), this.waitFor(f.A, m.A, W.A, J.default, z.default, Q.A, Z.A, L.A, $.A, ee.A, ex.A, eO.A, eM.A, ep.A, C.A, S.A, D.A, O.A, et.Ay, I.A, en.A, ei.A, U.A, P.A, er.Ay, es.A, eT.A, el.A, ea.A, k.A, F.A, eo.A, h.Ay, ec.A, eu.A, B.A, ed.A, e_.A, v.A, eN.A, eE.Ay, ef.A, X.Ay, eg.A, eA.A, q.A, em.default, eI.A, Y.A)
     }
     hasNotice() {
         return null != eV && null != eV.type

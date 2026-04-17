@@ -11,8 +11,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(503698),
-    s = n.n(l),
-    r = n(665260),
+    r = n.n(l),
+    s = n(665260),
     o = n(311907),
     d = n(571356),
     c = n(990078),
@@ -46,7 +46,7 @@ function y(e) {
         placeholderVersion: t.placeholder_version,
         contentType: t.content_type,
         originalContentType: t.original_content_type,
-        srcIsAnimated: (0, r.Lt)(t.flags ?? 0, v.sbO.IS_ANIMATED),
+        srcIsAnimated: (0, s.Lt)(t.flags ?? 0, v.sbO.IS_ANIMATED),
         sourceMetadata: {
             message: e.message,
             identifier: {
@@ -68,7 +68,7 @@ function S(e) {
         } = _.Q.useConfig({
             location: "VideoComponentForMessageAttachment"
         }),
-        l = (0, r.Lt)(t.flags ?? 0, v.sbO.IS_CLIP),
+        l = (0, s.Lt)(t.flags ?? 0, v.sbO.IS_CLIP),
         o = a.useCallback(() => !l || n ? null : (0, i.jsx)(c.m, {
             text: b.intl.string(b.t["/fgfWh"]),
             children: (0, i.jsxs)("div", {
@@ -90,7 +90,7 @@ function S(e) {
             src: t.url,
             posterUrl: h.toString(),
             channelId: e.message.channel_id,
-            className: s()(T.m0, e.className, {
+            className: r()(T.m0, e.className, {
                 [T.g$]: n
             }),
             embed: !0,
@@ -110,7 +110,7 @@ function S(e) {
         src: t.url,
         placeholder: t.placeholder,
         placeholderVersion: t.placeholder_version,
-        srcIsAnimated: (0, r.Lt)(t.flags ?? 0, v.sbO.IS_ANIMATED),
+        srcIsAnimated: (0, s.Lt)(t.flags ?? 0, v.sbO.IS_ANIMATED),
         renderOverlayContent: o,
         sourceMetadata: {
             message: e.message,
@@ -138,9 +138,9 @@ function j(e) {
     let {
         message: t,
         item: n
-    } = e, i = n.originalItem, l = (0, p.dx)(p.k0.VOICE_MESSAGE, i.id), s = a.useCallback((e, n, a) => {
+    } = e, i = n.originalItem, l = (0, p.dx)(p.k0.VOICE_MESSAGE, i.id), r = a.useCallback((e, n, a) => {
         (0, g.wQ)(t.id, i.duration_secs ?? null, n, t.author.id)
-    }, [t, i.duration_secs]), r = a.useCallback((e, n) => {
+    }, [t, i.duration_secs]), s = a.useCallback((e, n) => {
         (0, g.dP)(t.id, i.duration_secs ?? null, e, t.author.id, n)
     }, [t, i.duration_secs]), o = a.useCallback(e => {
         (0, g._O)(t.id, e?.message ?? null)
@@ -152,8 +152,8 @@ function j(e) {
         src: i.url,
         durationSecs: i.duration_secs,
         waveform: i.waveform,
-        onPlay: s,
-        onPause: r,
+        onPlay: r,
+        onPause: s,
         onError: o,
         playbackCacheKey: l
     })
@@ -197,14 +197,14 @@ function w(e) {
         attachment: t,
         message: n
     } = e, a = n.channel_id, l = (0, o.bG)([A.A], () => A.A.getBasicChannel(a)?.guild_id), {
-        clip_created_at: s,
-        clip_participants: r,
+        clip_created_at: r,
+        clip_participants: s,
         title: d,
         application: c
     } = t;
     return (0, i.jsx)(h.A, {
-        createdAt: null != s ? Date.parse(s) : void 0,
-        participantIds: r?.map(e => {
+        createdAt: null != r ? Date.parse(r) : void 0,
+        participantIds: s?.map(e => {
             let {
                 id: t
             } = e;

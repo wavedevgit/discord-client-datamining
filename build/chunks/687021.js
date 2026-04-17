@@ -56,7 +56,7 @@ function A(e) {
             }
         }).filter(b.Vq);
         return null != a && e.unshift(a), e
-    }, [h, A, a]), R = r.useCallback(e => {
+    }, [h, A, a]), v = r.useCallback(e => {
         let t = e?.label === a?.label && e?.value === a?.value;
         return null == e || "" === e.value || t ? null : (0, s.jsx)(d.Ay, {
             className: g.c,
@@ -74,7 +74,7 @@ function A(e) {
         },
         value: t,
         options: x,
-        renderOptionPrefix: R,
+        renderOptionPrefix: v,
         renderOptionSuffix: i,
         placeholder: f.intl.string(f.t["kMgj+e"]),
         "data-migration-pending": !0

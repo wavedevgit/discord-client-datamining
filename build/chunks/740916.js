@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i, a = n(627968),
     l = n(64700),
-    s = n(503698),
-    r = n.n(s),
+    r = n(503698),
+    s = n.n(r),
     o = n(397927),
     d = n(360560),
     c = n(985018),
@@ -16,7 +16,7 @@ let m = e => {
             className: t
         } = e;
         return (0, a.jsxs)("div", {
-            className: r()(u.nM, t),
+            className: s()(u.nM, t),
             children: [(0, a.jsx)(o._z, {
                 size: "md",
                 color: "currentColor",
@@ -30,7 +30,7 @@ let m = e => {
             className: n
         } = e;
         return (0, a.jsxs)("div", {
-            className: r()(u.nM, n),
+            className: s()(u.nM, n),
             children: [(0, a.jsx)(o.tvc, {
                 size: "md",
                 color: "currentColor",
@@ -44,7 +44,7 @@ let m = e => {
             className: n
         } = e;
         return (0, a.jsx)("div", {
-            className: r()(u.EQ, n),
+            className: s()(u.EQ, n),
             children: t.getDisplaySalePercentage()
         })
     },
@@ -54,7 +54,7 @@ let m = e => {
             className: n
         } = e;
         return (0, a.jsx)("div", {
-            className: r()(u.I8, n),
+            className: s()(u.I8, n),
             children: (0, d.A)(t, !1)
         })
     },
@@ -74,7 +74,7 @@ let m = e => {
             className: n
         } = e;
         return (0, a.jsxs)("div", {
-            className: r()(u.nM, n),
+            className: s()(u.nM, n),
             children: [(0, a.jsx)(p, {
                 sku: t
             }), (0, a.jsx)(g, {
@@ -117,25 +117,25 @@ class C extends l.PureComponent {
         switch (e) {
             case 5:
                 return (0, a.jsx)(f, {
-                    className: r()(t, n)
+                    className: s()(t, n)
                 });
             case 1:
                 return (0, a.jsx)(m, {
-                    className: r()(t, n)
+                    className: s()(t, n)
                 });
             case 3:
                 return (0, a.jsx)(h, {
                     sku: i,
-                    className: r()(t, n)
+                    className: s()(t, n)
                 });
             case 2:
                 return (0, a.jsx)(x, {
                     sku: i,
-                    className: r()(t, n)
+                    className: s()(t, n)
                 });
             default:
                 return (0, a.jsx)(A, {
-                    className: r()(t, n),
+                    className: s()(t, n),
                     sku: i
                 })
         }
@@ -153,16 +153,16 @@ class C extends l.PureComponent {
             case 3:
                 return (0, a.jsx)(h, {
                     sku: n,
-                    className: r()(u.OB, t)
+                    className: s()(u.OB, t)
                 });
             case 2:
                 return (0, a.jsx)(x, {
                     sku: n,
-                    className: r()(u.dk, t)
+                    className: s()(u.dk, t)
                 });
             default:
                 return (0, a.jsx)(A, {
-                    className: r()(u.dk, t),
+                    className: s()(u.dk, t),
                     sku: n
                 })
         }
@@ -196,7 +196,7 @@ class C extends l.PureComponent {
                 })
         }
         return (0, a.jsx)("div", {
-            className: r()(u.IH, n),
+            className: s()(u.IH, n),
             children: t
         })
     }

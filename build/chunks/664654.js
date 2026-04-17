@@ -1,25 +1,25 @@
 /** chunk id: 664654 params = (module,exports,require) **/
-s.d(t, {
-    J: () => o,
-    Z: () => c
+n.d(t, {
+    J: () => c,
+    Z: () => o
 });
-var i = s(64700),
-    a = s(311907),
-    n = s(803306),
-    l = s(287809),
-    r = s(851746);
-let c = 3;
+var i = n(64700),
+    r = n(311907),
+    a = n(803306),
+    s = n(287809),
+    l = n(851746);
+let o = 3;
 
-function o() {
-    let e = (0, a.yK)([r.A], () => r.A.getSentUserIds()),
-        t = (0, a.yK)([l.default], () => e.map(e => l.default.getUser(e)).filter(e => null != e));
+function c() {
+    let e = (0, r.yK)([l.A], () => l.A.getSentUserIds()),
+        t = (0, r.yK)([s.default], () => e.map(e => s.default.getUser(e)).filter(e => null != e));
     return i.useEffect(() => {
         e.forEach(e => {
-            (0, n.wz)(e)
+            (0, a.wz)(e)
         })
     }, [e]), {
         referralSentUsers: t,
-        hasSentAllReferrals: e.length === c,
-        refreshAt: (0, a.bG)([r.A], () => r.A.getRefreshAt())
+        hasSentAllReferrals: e.length === o,
+        refreshAt: (0, r.bG)([l.A], () => l.A.getRefreshAt())
     }
 }

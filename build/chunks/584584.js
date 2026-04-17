@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(735438),
     r = n.n(i),
     s = n(311907),
-    a = n(506774),
-    l = n(73153),
+    l = n(506774),
+    a = n(73153),
     o = n(339048),
     c = n(830382),
     u = n(627363),
@@ -22,7 +22,7 @@ let T = "DetectedOffPlatformPremiumPerksStore",
     g = {},
     p = [];
 
-function C() {
+function f() {
     let e = !1;
     for (let {
             skuId: t,
@@ -47,29 +47,29 @@ function C() {
     }
     return e
 }
-class f extends s.Ay.Store {
+class C extends s.Ay.Store {
     static displayName = "DetectedOffPlatformPremiumPerksStore";
     initialize() {
-        this.waitFor(d.A, A.A, _.Ay, m.A, E.default), p = a.w.get(T) ?? p
+        this.waitFor(d.A, A.A, _.Ay, m.A, E.default), p = l.w.get(T) ?? p
     }
     getDetectedOffPlatformPremiumPerks() {
         return r().values(N)
     }
 }
-let h = new f(l.h, {
+let h = new C(a.h, {
     LOGOUT: function() {
         N = {}, g = {}
     },
-    SKU_FETCH_SUCCESS: C,
-    ENTITLEMENT_FETCH_APPLICATION_SUCCESS: C,
-    ENTITLEMENT_CREATE: C,
-    APPLICATION_FETCH_SUCCESS: C,
+    SKU_FETCH_SUCCESS: f,
+    ENTITLEMENT_FETCH_APPLICATION_SUCCESS: f,
+    ENTITLEMENT_CREATE: f,
+    APPLICATION_FETCH_SUCCESS: f,
     DETECTED_OFF_PLATFORM_PREMIUM_PERKS_DISMISS: function(e) {
         let {
             skuId: t
         } = e;
         if (delete N[t], p.includes(t)) return !1;
-        p.push(t), a.w.set(T, p)
+        p.push(t), l.w.set(T, p)
     },
     RUNNING_GAMES_CHANGE: function() {
         let e = !1;
@@ -87,6 +87,6 @@ let h = new f(l.h, {
                     skuId: n,
                     applicationId: i
                 }, e = !0);
-        return e && C(), e
+        return e && f(), e
     }
 })

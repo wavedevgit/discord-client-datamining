@@ -1,39 +1,39 @@
 /** chunk id: 479026 params = (module,exports,require) **/
-i.d(t, {
-    e: () => d
+n.d(t, {
+    e: () => u
 });
-var n = i(64700),
-    r = i(793574),
-    l = i(590180),
-    o = i(315949),
-    u = i(572595),
-    s = i(57020),
-    a = i(976860),
-    c = i(901123);
+var i = n(64700),
+    l = n(793574),
+    s = n(590180),
+    a = n(315949),
+    r = n(572595),
+    o = n(57020),
+    d = n(976860),
+    c = n(901123);
 
-function d(e) {
+function u(e) {
     let {
         sku: t,
-        analyticsLocations: i,
-        analyticsSource: d = r.A.USER_PROFILE_WISHLIST,
-        giftRecipient: C,
-        giftingOrigin: p
+        analyticsLocations: n,
+        analyticsSource: u = l.A.USER_PROFILE_WISHLIST,
+        giftRecipient: h,
+        giftingOrigin: A
     } = e;
-    return (0, o.A)(), n.useCallback(() => {
-        let e = l.A.getProduct(t.id),
-            n = l.A.getCategoryForProduct(t.id);
-        null == e || null == n ? (0, a.pX)(`${c.BV.COLLECTIBLES_SHOP}#itemSkuId=${t.id}`) : (0, u.t)({
+    return (0, a.A)(), i.useCallback(() => {
+        let e = s.A.getProduct(t.id),
+            i = s.A.getCategoryForProduct(t.id);
+        null == e || null == i ? (0, d.pX)(`${c.BV.COLLECTIBLES_SHOP}#itemSkuId=${t.id}`) : (0, r.t)({
             product: e,
-            category: n,
-            shouldCheckoutWithOrbs: (0, s.A)({
+            category: i,
+            shouldCheckoutWithOrbs: (0, o.A)({
                 product: e
             }),
-            analyticsLocations: i ?? [],
-            analyticsSource: d,
+            analyticsLocations: n ?? [],
+            analyticsSource: u,
             returnRef: void 0,
             tab: void 0,
-            giftRecipient: C,
-            giftingOrigin: p
+            giftRecipient: h,
+            giftingOrigin: A
         })
-    }, [i, d, C, p, t.id])
+    }, [n, u, h, A, t.id])
 }

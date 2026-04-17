@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(503698),
-    s = n.n(l),
-    r = n(508602),
+    r = n.n(l),
+    s = n(508602),
     o = n(158954),
     d = n(630054),
     c = n(607470),
@@ -34,7 +34,7 @@ let A = e => {
             embed: t
         } = e;
         if (!h.Tj.has(t.type)) return null;
-        let n = void 0 !== t.video && t.type !== r.A.GIFV ? t.video.url : t.thumbnail?.url ?? t.image?.url;
+        let n = void 0 !== t.video && t.type !== s.A.GIFV ? t.video.url : t.thumbnail?.url ?? t.image?.url;
         return null == n ? null : (0, i.jsx)(f, {
             url: n
         })
@@ -47,11 +47,11 @@ let A = e => {
         return (0, i.jsx)("div", {
             className: g.il,
             children: a ? (0, i.jsx)(c.A, {
-                className: s()(g.Ki, g.$_),
+                className: r()(g.Ki, g.$_),
                 controls: !0,
                 src: t
             }) : (0, i.jsx)("img", {
-                className: s()(g.Sl, g.$_),
+                className: r()(g.Sl, g.$_),
                 src: t,
                 alt: n
             })
@@ -70,8 +70,8 @@ function E(e) {
         channelId: t,
         messageId: n,
         isReportFalsePositiveLoading: l,
-        analyticsContext: s,
-        attachmentPreview: r,
+        analyticsContext: r,
+        attachmentPreview: s,
         embedPreview: d,
         onConfirmPress: c,
         transitionState: u,
@@ -81,24 +81,24 @@ function E(e) {
             action: m.rY.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL,
             channelId: t,
             messageId: n,
-            context: s
+            context: r
         }), _()
-    }, [t, n, s, _]), g = a.useCallback(() => {
+    }, [t, n, r, _]), g = a.useCallback(() => {
         c?.(), (0, m.hv)({
             action: m.rY.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM,
             channelId: t,
             messageId: n,
-            context: s
+            context: r
         })
-    }, [t, n, s, c]);
+    }, [t, n, r, c]);
     return a.useEffect(() => {
         (0, m.hv)({
             action: m.rY.EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED,
             channelId: t,
             messageId: n,
-            context: s
+            context: r
         })
-    }, [t, n, s]), (0, i.jsxs)(o.Modal, {
+    }, [t, n, r]), (0, i.jsxs)(o.Modal, {
         transitionState: u,
         onClose: _,
         title: p.intl.string(p.t.TPpVkI),
@@ -114,8 +114,8 @@ function E(e) {
             loading: l,
             disabled: l
         }],
-        children: [null != r && (0, i.jsx)(A, {
-            attachment: r
+        children: [null != s && (0, i.jsx)(A, {
+            attachment: s
         }), null != d && (0, i.jsx)(x, {
             embed: d
         })]

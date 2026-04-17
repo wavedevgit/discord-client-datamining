@@ -6,17 +6,17 @@ var i = n(627968);
 n(64700);
 var a = n(503698),
     l = n.n(a),
-    s = n(985018),
-    r = n(111758);
+    r = n(985018),
+    s = n(111758);
 let o = e => {
     let {
         className: t
     } = e;
     return (0, i.jsx)("div", {
-        className: l()(r.T, t),
+        className: l()(s.T, t),
         children: (0, i.jsx)("span", {
-            className: r.Q,
-            children: s.intl.string(s.t["14lP0W"])
+            className: s.Q,
+            children: r.intl.string(r.t["14lP0W"])
         })
     })
 }

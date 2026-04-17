@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     r = n(64700),
     s = n(311907),
-    a = n(554146),
-    l = n(397927),
+    l = n(554146),
+    a = n(397927),
     o = n(155718),
     c = n(775602),
     u = n(793574),
@@ -21,8 +21,8 @@ var i = n(627968),
     N = n(652215),
     g = n(49999),
     p = n(985018),
-    C = n(853513),
-    f = n(829687),
+    f = n(853513),
+    C = n(829687),
     h = n(274993),
     S = n(218924);
 
@@ -31,36 +31,36 @@ function R(e) {
         title: t,
         body: n,
         guild: r,
-        analyticsLocations: a
+        analyticsLocations: l
     } = e, o = (0, s.bG)([c.A], () => c.A.useReducedMotion);
     return (0, i.jsxs)("div", {
-        className: f.kL,
+        className: C.kL,
         children: [(0, i.jsx)("div", {
-            className: f.ZS,
+            className: C.ZS,
             children: (0, i.jsx)("img", {
-                className: f.Sl,
+                className: C.Sl,
                 src: o ? S.A : h.A,
                 alt: "Boost gem"
             })
         }), (0, i.jsxs)("div", {
-            className: f.Qs,
-            children: [(0, i.jsx)(l.Heading, {
+            className: C.Qs,
+            children: [(0, i.jsx)(a.Heading, {
                 variant: "heading-md/semibold",
                 style: {
                     marginTop: 0,
                     marginBottom: "var(--space-4)"
                 },
                 children: t
-            }), (0, i.jsx)(l.Text, {
+            }), (0, i.jsx)(a.Text, {
                 color: "text-muted",
-                className: f.rf,
+                className: C.rf,
                 variant: "text-sm/medium",
                 children: n
             })]
         }), (0, i.jsx)("div", {
             children: (0, i.jsx)(E.A, {
                 guild: r,
-                analyticsLocations: a,
+                analyticsLocations: l,
                 analyticsLocation: {
                     page: N.liQ.GUILD_CHANNEL,
                     section: N.JJy.CHANNEL_TEXT_AREA
@@ -75,16 +75,16 @@ function x(e) {
         guild: t
     } = e;
     r.useEffect(() => {
-        (0, d.uh)(a.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
+        (0, d.uh)(l.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
             dismissAction: g.i.AUTO_DISMISS,
             guildId: t.id
         })
     }, [t.id]);
     let n = (0, A.A)(t.id);
     return (0, i.jsx)(R, {
-        title: p.intl.string(C.default.qGDEON),
-        body: p.intl.format(C.default["s+HTdX"], {
-            viewAllPerks: e => (0, i.jsx)(l.DUT, {
+        title: p.intl.string(f.default.qGDEON),
+        body: p.intl.format(f.default["s+HTdX"], {
+            viewAllPerks: e => (0, i.jsx)(a.DUT, {
                 tag: "a",
                 role: "link",
                 onClick: () => {
@@ -118,16 +118,16 @@ function M(e) {
     let {
         boostingPrompt: t,
         channel: n
-    } = e, r = n.guild_id, a = (0, s.bG)([I.A], () => I.A.getGuild(r), [r]);
-    return null == a ? null : (0, i.jsx)(T.A, {
-        contentClassName: f.FG,
-        iconContainerClassName: f.zc,
-        iconNode: (0, i.jsx)(l.XFE, {
-            colorClass: f.Kk
+    } = e, r = n.guild_id, l = (0, s.bG)([I.A], () => I.A.getGuild(r), [r]);
+    return null == l ? null : (0, i.jsx)(T.A, {
+        contentClassName: C.FG,
+        iconContainerClassName: C.zc,
+        iconNode: (0, i.jsx)(a.XFE, {
+            colorClass: C.Kk
         }),
         children: (0, i.jsx)(O, {
             boostingPrompt: t,
-            guild: a
+            guild: l
         })
     })
 }

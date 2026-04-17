@@ -8,8 +8,8 @@ n.d(t, {
 var a = n(665260),
     i = n(311907),
     r = n(544743),
-    o = n(543465),
-    c = n(661191),
+    c = n(543465),
+    o = n(661191),
     _ = n(652215),
     l = n(355097),
     s = n(985018);
@@ -49,13 +49,13 @@ let u = {
 
 function b(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : u;
-    return c.default.keys(e).filter(n => {
+    return o.default.keys(e).filter(n => {
         let i = e[n].message_notifications !== _.orn.NULL,
-            o = a.Lt(e[n].flags ?? 0, l.vv.UNREADS_ALL_MESSAGES) || a.Lt(e[n].flags ?? 0, l.vv.UNREADS_ONLY_MENTIONS);
-        return !t.ignoreUnreadSetting && o || !t.ignoreNotificationSetting && i || !t.ignoreMute && (0, r.tG)(e[n])
+            c = a.Lt(e[n].flags ?? 0, l.vv.UNREADS_ALL_MESSAGES) || a.Lt(e[n].flags ?? 0, l.vv.UNREADS_ONLY_MENTIONS);
+        return !t.ignoreUnreadSetting && c || !t.ignoreNotificationSetting && i || !t.ignoreMute && (0, r.tG)(e[n])
     })
 }
 
 function m(e) {
-    return (0, i.bG)([o.Ay], () => o.Ay.useNewNotifications)
+    return (0, i.bG)([c.Ay], () => c.Ay.useNewNotifications)
 }

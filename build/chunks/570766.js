@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var a = n(503698),
     l = n.n(a),
-    s = n(126031),
-    r = n(397927),
+    r = n(126031),
+    s = n(397927),
     o = n(438437),
     d = n(306417),
     c = n(985018),
@@ -21,13 +21,13 @@ function _(e) {
     } = e;
     return (0, i.jsxs)("div", {
         className: u.AA,
-        children: [t && (0, i.jsx)(s.s, {
+        children: [t && (0, i.jsx)(r.s, {
             children: c.intl.string(c.t["8DAM+5"])
-        }), (0, i.jsxs)(r.Text, {
+        }), (0, i.jsxs)(s.Text, {
             variant: "text-md/semibold",
             color: "none",
             children: [a, "%"]
-        }), (0, i.jsx)(r.Text, {
+        }), (0, i.jsx)(s.Text, {
             variant: "text-xs/semibold",
             color: "none",
             children: n
@@ -40,24 +40,24 @@ function m(e) {
         answer: t,
         isExpired: n,
         myAvatarUrl: a,
-        canShowVoteCounts: s
-    } = e, r = !0 === t.isSelected, o = !0 === t.didSelfVote, c = !0 === t.isVictor;
+        canShowVoteCounts: r
+    } = e, s = !0 === t.isSelected, o = !0 === t.didSelfVote, c = !0 === t.isVictor;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.Dt, {
             attachmentClassName: l()(u.oh, {
-                [u.Wx]: s
+                [u.Wx]: r
             }),
             emojiClassName: u.Zg,
             media: t.pollMedia,
             fallback: (0, i.jsx)("div", {
                 className: l()(u.oh, u.nb)
             })
-        }), r && (0, i.jsx)(d.Vx, {
+        }), s && (0, i.jsx)(d.Vx, {
             size: 40,
             isVictor: c,
             isExpired: n,
             className: u.Dt
-        }), s && (0, i.jsxs)(i.Fragment, {
+        }), r && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(_, {
                 didSelfVote: o,
                 percentage: t.votesPercentage,
@@ -78,8 +78,8 @@ function h(e) {
         isExpired: t,
         myAvatarUrl: n,
         answersInteraction: a,
-        canShowVoteCounts: s,
-        ...r
+        canShowVoteCounts: r,
+        ...s
     } = e;
     return (0, i.jsx)(d.Fh, {
         className: u.ry,
@@ -93,8 +93,8 @@ function h(e) {
             isExpired: t,
             myAvatarUrl: n,
             answersInteraction: a,
-            canShowVoteCounts: s
+            canShowVoteCounts: r
         }),
-        ...r
+        ...s
     })
 }

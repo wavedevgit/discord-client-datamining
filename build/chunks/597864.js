@@ -1,19 +1,19 @@
 /** chunk id: 597864 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    B: () => a
+    B: () => l
 });
 var i = n(627968);
 n(64700);
 var r = n(397927),
     s = n(793361);
 
-function a(e) {
+function l(e) {
     let {
         choiceId: t,
         choice: n,
-        isSelected: a,
-        onSelectionChange: l,
+        isSelected: l,
+        onSelectionChange: a,
         inputType: o,
         textInputValue: c,
         onTextInputChange: u
@@ -23,19 +23,19 @@ function a(e) {
         children: [(0, i.jsxs)(r.DUT, {
             className: s.d,
             onClick: () => {
-                l(t)
+                a(t)
             },
             role: o,
-            "aria-checked": a,
+            "aria-checked": l,
             "aria-labelledby": _,
             children: [(0, i.jsx)("div", {
                 className: s.jl,
                 children: "radio" === o ? (0, i.jsx)(r.TN6, {
                     disabled: !1,
-                    checked: a
+                    checked: l
                 }) : (0, i.jsx)(r.P7L, {
                     disabled: !1,
-                    checked: a
+                    checked: l
                 })
             }), (0, i.jsx)(r.Text, {
                 id: _,
@@ -52,9 +52,9 @@ function a(e) {
             children: (0, i.jsx)(r.ksK, {
                 value: c ?? "",
                 onChange: e => {
-                    a || l(t), u?.(t, e)
+                    l || a(t), u?.(t, e)
                 },
-                disabled: !a
+                disabled: !l
             })
         })]
     })

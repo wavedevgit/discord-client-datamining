@@ -13,8 +13,8 @@ var r = n(627968),
     c = n(243612),
     A = n(582240),
     h = n(295102),
-    f = n(545807),
-    g = n(644434);
+    g = n(545807),
+    f = n(644434);
 
 function m(e) {
     return e.widget.id
@@ -31,8 +31,8 @@ let p = [],
     v = i.memo(function(e) {
         let {
             className: t
-        } = e, n = (0, f.A)(), A = (0, l.bG)([s.A], () => s.A.windowSize((0, u.Q2)(n))), v = (0, l.bG)([o.A, d.A], () => {
-            let e = o.A.getLayout(g.G);
+        } = e, n = (0, g.A)(), A = (0, l.bG)([s.A], () => s.A.windowSize((0, u.Q2)(n))), v = (0, l.bG)([o.A, d.A], () => {
+            let e = o.A.getLayout(f.G);
             if (null == e) return p;
             let t = [];
             for (let n of e.widgets) {

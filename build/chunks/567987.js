@@ -59,7 +59,7 @@ function I(e) {
                             return (0, a.L3)(i, async () => {
                                 let {
                                     default: e
-                                } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("19960")]).then(n.bind(n, 385913));
+                                } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("97579")]).then(n.bind(n, 385913));
                                 return n => (0, r.jsx)(e, {
                                     ...n,
                                     showChannelCallItems: !0,

@@ -16,8 +16,8 @@ var i = n(627968),
     p = n(718676),
     _ = n(71393),
     m = n(287809),
-    A = n(652215),
-    x = n(73510),
+    x = n(652215),
+    A = n(73510),
     f = n(985018),
     E = n(404111);
 let b = e => {
@@ -55,7 +55,7 @@ let b = e => {
                 commandTypes: [n]
             },
             options: {
-                limit: x.YC,
+                limit: A.YC,
                 includeFrecency: !k,
                 scoreMethod: k ? d.M.COMMAND_OR_APPLICATION : void 0
             },
@@ -202,13 +202,13 @@ let b = e => {
                     let {
                         section: t
                     } = e;
-                    return t.id === x.Ik.FRECENCY
+                    return t.id === A.Ik.FRECENCY
                 }),
                 n = D.filter(e => {
                     let {
                         section: t
                     } = e;
-                    return t.id !== x.Ik.FRECENCY
+                    return t.id !== A.Ik.FRECENCY
                 });
             t = (0, i.jsxs)(i.Fragment, {
                 children: [U, null != e && V(e), (0, i.jsx)(o.rXV, {
@@ -221,7 +221,7 @@ let b = e => {
             children: [t, (0, i.jsx)(o.bXX, {}, "separator"), v]
         }))
     }
-    if (!A.kvI.TEXTUAL.has(b.type))
+    if (!x.kvI.TEXTUAL.has(b.type))
         if (null == v) return null;
         else t = v;
     return (0, i.jsx)(o.Drp, {

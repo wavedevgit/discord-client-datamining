@@ -1,5 +1,4 @@
 /** chunk id: 334211 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     iE: "wrapper_c19a55",
     oE: "compact_c19a55",
@@ -61,7 +60,7 @@ e.exports = {
     YQ: "timestampInline_c19a55",
     CC: "alt_c19a55",
     ET: "timestampVisibleOnHover_c19a55",
-    IW: "usernameColorOnName_c19a55 " + n(757854).WY,
+    IW: "usernameColorOnName_c19a55 " + a(757854).WY,
     TK: "headerText_c19a55",
     yF: "hasRoleIcon_c19a55",
     hB: "hasBadges_c19a55",

@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var r = n(311907),
     s = n(397927),
-    a = n(793574),
-    l = n(73028),
+    l = n(793574),
+    a = n(73028),
     o = n(734057),
     c = n(763754),
     u = n(888675),
@@ -43,7 +43,7 @@ function _(e) {
                 color: "text-link",
                 children: d.intl.string(d.t["5Q9+/L"])
             }, `edit-group-button-${t.id}`),
-            onEditGroup: () => (0, l.U)(t.channel_id, a.A.GROUP_DM_SYSTEM_MESSAGE_NAME)
+            onEditGroup: () => (0, a.U)(t.channel_id, l.A.GROUP_DM_SYSTEM_MESSAGE_NAME)
         }) : d.intl.format(E ? d.t.SOQ4hJ : d.t.oItgEw, {
             username: A.nick,
             usernameHook: m,

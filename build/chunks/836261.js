@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(311907),
     l = n(421380),
-    s = n(397927),
-    r = n(775602),
+    r = n(397927),
+    s = n(775602),
     o = n(178540),
     d = n(341915),
     c = n(890687),
@@ -24,10 +24,10 @@ function C(e) {
     let {
         quest: t,
         analyticsCtxQuestContent: n,
-        analyticsCtxSourceQuestContent: s,
+        analyticsCtxSourceQuestContent: r,
         analyticsCtxQuestContentPosition: d,
         analyticsCtxQuestContentRowIndex: m
-    } = e, h = (0, u.Ut)(), p = (0, a.bG)([r.A], () => r.A.useReducedMotion), A = (0, g.Xf)({
+    } = e, h = (0, u.Ut)(), p = (0, a.bG)([s.A], () => s.A.useReducedMotion), A = (0, g.Xf)({
         useReducedMotion: p
     }), C = (0, o.O)(e => e.setErrorHints), {
         startingConsoleQuest: E,
@@ -41,7 +41,7 @@ function C(e) {
                 questContentCTA: _.Cy.DEFIBRILLATOR,
                 questContentPosition: d,
                 questContentRowIndex: m,
-                sourceQuestContent: s
+                sourceQuestContent: r
             })
         },
         afterRequest: e => {
@@ -67,19 +67,19 @@ function E(e) {
         surface: n,
         analyticsCtxQuestContent: a,
         analyticsCtxSourceQuestContent: l,
-        analyticsCtxQuestContentPosition: r,
+        analyticsCtxQuestContentPosition: s,
         analyticsCtxQuestContentRowIndex: o,
         size: u
     } = e, p = (0, c.RR)({
         quest: t
     }), g = (0, m.vU)()?.getId(), f = (0, c.Vn)(t), E = (0, c.fc)(t), [I, v, b] = (0, c.Qo)(t, E);
-    return f || I === d.X0.DESKTOP ? (0, i.jsx)(s.Button, {
+    return f || I === d.X0.DESKTOP ? (0, i.jsx)(r.Button, {
         variant: "secondary",
         size: u,
         disabled: !0,
         text: x.intl.string(x.t["9KoPyB"]),
         fullWidth: !0
-    }) : p && n === A.V3.QUEST_HOME_TILE_FOOTER ? (0, i.jsx)(s.Button, {
+    }) : p && n === A.V3.QUEST_HOME_TILE_FOOTER ? (0, i.jsx)(r.Button, {
         size: u,
         variant: "secondary",
         onClick: () => {
@@ -88,7 +88,7 @@ function E(e) {
             }, {
                 content: a,
                 ctaContent: _.Cy.CONNECT_CONSOLE,
-                position: r,
+                position: s,
                 rowIndex: o,
                 impressionId: g,
                 sourceQuestContent: l
@@ -100,7 +100,7 @@ function E(e) {
         quest: t,
         analyticsCtxQuestContent: a,
         analyticsCtxSourceQuestContent: l,
-        analyticsCtxQuestContentPosition: r,
+        analyticsCtxQuestContentPosition: s,
         analyticsCtxQuestContentRowIndex: o
     })
 }
@@ -110,7 +110,7 @@ let I = function(e) {
         surface: n,
         analyticsCtxQuestContent: a,
         analyticsCtxSourceQuestContent: l,
-        analyticsCtxQuestContentPosition: r,
+        analyticsCtxQuestContentPosition: s,
         analyticsCtxQuestContentRowIndex: o,
         size: d
     } = e;
@@ -120,11 +120,11 @@ let I = function(e) {
         size: d,
         analyticsCtxQuestContent: a,
         analyticsCtxSourceQuestContent: l,
-        analyticsCtxQuestContentPosition: r,
+        analyticsCtxQuestContentPosition: s,
         analyticsCtxQuestContentRowIndex: o
     });
     let c = x.intl.string(x.t["9KoPyB"]);
-    return (0, i.jsx)(s.Button, {
+    return (0, i.jsx)(r.Button, {
         size: d,
         variant: "secondary",
         disabled: !0,

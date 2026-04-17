@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(64700),
     r = n(688810),
     s = n(399925),
-    a = n(74847),
-    l = n(602902);
+    l = n(74847),
+    a = n(602902);
 let o = e => {
     let {
         analyticsLocations: t
@@ -20,10 +20,10 @@ let o = e => {
                 messageReference: o
             } = n;
             if (0 === i.length) return;
-            let c = (0, a.t)(e);
+            let c = (0, l.t)(e);
             (0, s.H1)(i.map(e => e.id));
             try {
-                await (0, l.K)(i, {
+                await (0, a.K)(i, {
                     channelId: c ? e : void 0,
                     analyticsLocations: t,
                     messageReference: o

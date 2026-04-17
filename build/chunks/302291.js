@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(627968),
     r = n(64700),
     s = n(397927),
-    a = n(763754),
-    l = n(447215),
+    l = n(763754),
+    a = n(447215),
     o = n(888675),
     c = n(342296),
     u = n(486020),
@@ -17,7 +17,7 @@ var i = n(627968),
 
 function E(e, t) {
     let n = r.useRef(null);
-    return r.useCallback(r => (a, l) => {
+    return r.useCallback(r => (l, a) => {
         let o = u.Ay.getApplicationIconURL({
                 id: r.id,
                 icon: r.icon,
@@ -27,7 +27,7 @@ function E(e, t) {
             {
                 bot: d
             } = r;
-        return null == d ? a : (0, i.jsx)(c.A, {
+        return null == d ? l : (0, i.jsx)(c.A, {
             targetElementRef: n,
             userId: d.id,
             avatarUrl: o,
@@ -38,9 +38,9 @@ function E(e, t) {
             children: e => (0, i.jsx)(s.MzZ, {
                 ...e,
                 ref: n,
-                children: a
+                children: l
             })
-        }, l)
+        }, a)
     }, [e, t.id])
 }
 
@@ -49,7 +49,7 @@ function A(e) {
         message: t,
         channel: r,
         compact: s
-    } = e, c = (0, a.Ay)(t), u = t.application, A = (0, l.P)({
+    } = e, c = (0, l.Ay)(t), u = t.application, A = (0, a.P)({
         user: t.author,
         channelId: r.id,
         guildId: r.guild_id,
@@ -73,7 +73,7 @@ function m(e) {
         message: t,
         channel: r,
         compact: s
-    } = e, c = (0, a.Ay)(t), u = t.application, A = (0, l.P)({
+    } = e, c = (0, l.Ay)(t), u = t.application, A = (0, a.P)({
         user: t.author,
         channelId: r.id,
         guildId: r.guild_id,

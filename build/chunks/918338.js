@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(503698),
-    s = n.n(l),
-    r = n(579473),
+    r = n.n(l),
+    s = n(579473),
     o = n(415441),
     d = n(516226),
     c = n(985018),
@@ -21,17 +21,17 @@ function _(e) {
         containerClassName: m,
         imageClassName: h,
         assetRef: p
-    } = e, g = a.useMemo(() => (0, r.tW)(t, r.fY.HERO_IMAGE), [t]), A = a.useMemo(() => (0, r.tW)(t, r.fY.HERO_VIDEO), [t]), {
+    } = e, g = a.useMemo(() => (0, s.tW)(t, s.fY.HERO_IMAGE), [t]), A = a.useMemo(() => (0, s.tW)(t, s.fY.HERO_VIDEO), [t]), {
         onAssetLoadComplete: x
     } = a.useContext(d.M);
     return (0, i.jsx)("div", {
-        className: s()(u.l1, m),
+        className: r()(u.l1, m),
         children: !l && (0, i.jsx)(o.N, {
             imageAsset: null != g ? {
                 asset: g,
                 assetId: "QuestTileBanner",
                 alt: c.intl.string(c.t.jnijWz),
-                className: s()(u.LO, h)
+                className: r()(u.LO, h)
             } : void 0,
             videoAsset: null != A ? {
                 asset: A,

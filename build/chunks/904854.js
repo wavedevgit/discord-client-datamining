@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     r = n(64700),
     s = n(158954),
-    a = n(311907),
-    l = n(397927),
+    l = n(311907),
+    a = n(397927),
     o = n(802341),
     c = n(538451),
     u = n(734057),
@@ -26,9 +26,9 @@ function g(e) {
         guildId: n,
         channelId: r
     } = e;
-    return (0, i.jsx)(l.lGe, {
+    return (0, i.jsx)(a.lGe, {
         className: N.XM,
-        children: (0, i.jsx)(l.HOs, {
+        children: (0, i.jsx)(a.HOs, {
             className: N.XG,
             children: (0, i.jsx)("div", {
                 children: t.map(e => (0, i.jsx)(c.A, {
@@ -47,7 +47,7 @@ function p(e) {
         message: t,
         channel: n,
         compact: c
-    } = e, d = (0, E.A)(t), p = (0, _.X7)(t), C = t.messageReference?.channel_id, f = (0, a.bG)([u.A], () => u.A.getChannel(C)), h = function(e, t, n, s, a, c) {
+    } = e, d = (0, E.A)(t), p = (0, _.X7)(t), f = t.messageReference?.channel_id, C = (0, l.bG)([u.A], () => u.A.getChannel(f)), h = function(e, t, n, s, l, c) {
         let u = (0, m.P)({
                 user: n,
                 channelId: t.id,
@@ -68,23 +68,23 @@ function p(e) {
             }),
             E = (0, A.Ay)(e),
             [I, p] = s,
-            C = (0, A.d8)(I, t),
-            f = (0, A.d8)(p, t),
+            f = (0, A.d8)(I, t),
+            C = (0, A.d8)(p, t),
             h = function(e, t) {
                 let n = r.useRef(null),
-                    [s, a] = r.useState(!1),
+                    [s, l] = r.useState(!1),
                     o = r.useCallback(n => (0, i.jsx)(g, {
                         users: n,
                         guildId: e,
                         channelId: t
                     }), [e, t]);
-                return r.useCallback(e => (t, r) => (0, i.jsx)(l.YNO, {
+                return r.useCallback(e => (t, r) => (0, i.jsx)(a.YNO, {
                     targetElementRef: n,
                     renderPopout: () => o(e),
                     shouldShow: s,
                     position: "bottom",
-                    onRequestClose: () => a(!1),
-                    children: e => (0, i.jsx)(l.DUT, {
+                    onRequestClose: () => l(!1),
+                    children: e => (0, i.jsx)(a.DUT, {
                         ...e,
                         tag: "a",
                         style: {
@@ -92,7 +92,7 @@ function p(e) {
                         },
                         innerRef: n,
                         onClick: () => {
-                            a(e => !e)
+                            l(e => !e)
                         },
                         children: t
                     })
@@ -101,12 +101,12 @@ function p(e) {
             S = r.useCallback((e, t) => null == c ? e : (0, i.jsx)(o.T, {
                 channel: c,
                 childWrapperClassName: N.c6,
-                children: (0, i.jsx)(l.DUT, {
+                children: (0, i.jsx)(a.DUT, {
                     tag: "a",
                     children: e
                 })
             }, t), [c]);
-        return null == a ? T.intl.format(T.t["eX6e/3"], {
+        return null == l ? T.intl.format(T.t["eX6e/3"], {
             username: E.nick,
             usernameHook: u(E),
             channelHook: S
@@ -114,27 +114,27 @@ function p(e) {
             userCount: s.length + 1,
             username: E.nick,
             usernameHook: u(E),
-            username2: C.nick,
-            username2Hook: d(C),
-            username3: f.nick,
-            username3Hook: _(f),
+            username2: f.nick,
+            username2Hook: d(f),
+            username3: C.nick,
+            username3Hook: _(C),
             otherCount: s.length - 1,
             othersHook: h([n, ...s]),
-            duration: a
+            duration: l
         })
-    }(t, n, t.author, p, d, f), S = r.useMemo(() => {
+    }(t, n, t.author, p, d, C), S = r.useMemo(() => {
         let e = (0, i.jsx)(s.HKD, {
             size: "md",
-            color: l.LU0.colors.STATUS_POSITIVE
+            color: a.LU0.colors.STATUS_POSITIVE
         });
-        return null == f || null != d ? e : (0, i.jsx)(o.T, {
-            channel: f,
+        return null == C || null != d ? e : (0, i.jsx)(o.T, {
+            channel: C,
             children: (0, i.jsx)(s.HKD, {
                 size: "md",
-                color: l.LU0.colors.STATUS_POSITIVE
+                color: a.LU0.colors.STATUS_POSITIVE
             })
         })
-    }, [f, d]);
+    }, [C, d]);
     return (0, i.jsx)(I.A, {
         iconNode: S,
         iconContainerClassName: N.zc,

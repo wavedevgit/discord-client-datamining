@@ -11,8 +11,8 @@ n.d(t, {
 var i = n(311907),
     r = n(554146),
     s = n(826673),
-    a = n(367727),
-    l = n(927813),
+    l = n(367727),
+    a = n(927813),
     o = n(661191),
     c = n(851746),
     u = n(894374),
@@ -21,7 +21,7 @@ var i = n(311907),
     E = n(985018);
 
 function A(e) {
-    let t = (e - Date.now()) / l.A.Millis.HOUR;
+    let t = (e - Date.now()) / a.A.Millis.HOUR;
     return t > 24 ? E.intl.formatToPlainString(E.t["g9s+dA"], {
         numDays: Math.floor(t / 24)
     }) : t >= 1 ? E.intl.formatToPlainString(E.t.k9v33y, {
@@ -46,15 +46,15 @@ let m = () => (0, s.k8)(r.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
         return n && i && s >= r
     },
     N = e => {
-        null != e ? (0, a.qr)(r.M.REFERRAL_PROGRAM_POPOVER_V2, e, {
+        null != e ? (0, l.qr)(r.M.REFERRAL_PROGRAM_POPOVER_V2, e, {
             dismissAction: _.i.INDIRECT_ACTION
         }) : (0, s.Dr)(r.M.REFERRAL_PROGRAM_POPOVER)
     },
     g = () => {
         let e, t = (0, d.m)(!1),
             n = (0, i.bG)([c.A], () => c.A.getReferralsRemaining()),
-            a = (0, i.bG)([c.A], () => c.A.getReminderStateId());
+            l = (0, i.bG)([c.A], () => c.A.getReminderStateId());
         return e = (0, u.A)({
             location: "ReferralProgramUtils"
-        }) ? null != a && !(0, s.u$)(r.M.REFERRAL_PROGRAM_POPOVER_V2, a).isDismissed : !(0, s.k8)(r.M.REFERRAL_PROGRAM_POPOVER), t && e && null != n && n > 0
+        }) ? null != l && !(0, s.u$)(r.M.REFERRAL_PROGRAM_POPOVER_V2, l).isDismissed : !(0, s.k8)(r.M.REFERRAL_PROGRAM_POPOVER), t && e && null != n && n > 0
     }

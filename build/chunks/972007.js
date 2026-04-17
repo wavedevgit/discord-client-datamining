@@ -1,71 +1,71 @@
 /** chunk id: 972007 params = (module,exports,require) **/
-s.d(t, {
+n.d(t, {
     i: () => d
-}), s(321073);
-var i = s(64700),
-    a = s(284009),
-    n = s.n(a),
-    l = s(311907),
-    r = s(803306),
-    c = s(326084),
-    o = s(851746);
+}), n(321073);
+var i = n(64700),
+    r = n(284009),
+    a = n.n(r),
+    s = n(311907),
+    l = n(803306),
+    o = n(326084),
+    c = n(851746);
 let d = e => {
     let {
         searchQuery: t,
-        selectedUsers: s,
-        limit: a
-    } = e, d = (0, l.bG)([o.A], () => o.A.getRecipientStatus()), u = (0, l.bG)([o.A], () => o.A.getReferralsRemaining()), [A, m] = i.useState(0), [h, R] = i.useState([]), [f, g] = i.useState(!1), [x, E] = i.useState(!1), [p, _] = i.useState(new Map);
-    n()(null != u, "Referrals remaining should not be null");
-    let S = async (e, i) => {
-        if (!f && !x && null != e && 0 !== u) try {
-            g(!0);
-            let a = [...p.values()];
+        selectedUsers: n,
+        limit: r
+    } = e, d = (0, s.bG)([c.A], () => c.A.getRecipientStatus()), u = (0, s.bG)([c.A], () => c.A.getReferralsRemaining()), [_, m] = i.useState(0), [p, A] = i.useState([]), [g, f] = i.useState(!1), [h, b] = i.useState(!1), [x, R] = i.useState(new Map);
+    a()(null != u, "Referrals remaining should not be null");
+    let C = async (e, i) => {
+        if (!g && !h && null != e && 0 !== u) try {
+            f(!0);
+            let r = [...x.values()];
             for (let [e, t] of d)
-                if (t === c.aK.PENDING && !p.has(e)) {
-                    let t = await (0, r.wz)(e);
-                    a.push(t)
-                } let n = await (0, c.P7)(e, t, i);
-            R(t => {
-                a = a.filter(e => !s.has(e.id));
-                let i = new Set(a.map(e => e.id)),
-                    l = n.users.filter(e => !s.has(e.id) && !i.has(e.id));
-                return 0 === e ? [...s.values(), ...a.values(), ...l] : [...t, ...l]
-            }), _(e => {
+                if (t === o.aK.PENDING && !x.has(e)) {
+                    let t = await (0, l.wz)(e);
+                    r.push(t)
+                } let a = await (0, o.P7)(e, t, i);
+            A(t => {
+                r = r.filter(e => !n.has(e.id));
+                let i = new Set(r.map(e => e.id)),
+                    s = a.users.filter(e => !n.has(e.id) && !i.has(e.id));
+                return 0 === e ? [...n.values(), ...r.values(), ...s] : [...t, ...s]
+            }), R(e => {
                 let t = new Map(e);
-                for (let e of a) t.set(e.id, e);
+                for (let e of r) t.set(e.id, e);
                 return t
-            }), m(n.nextIndex)
+            }), m(a.nextIndex)
         } catch (e) {
-            E(!0)
+            b(!0)
         } finally {
-            g(!1)
+            f(!1)
         }
-    }, T = {
-        limit: a,
-        getNextRows: S,
+    }, N = {
+        limit: r,
+        getNextRows: C,
         getLocalReferrals: async () => {
             let e = new Map;
-            for (let [t, s] of d)
-                if (s === c.aK.PENDING && !p.has(t)) {
-                    let s = await (0, r.wz)(t);
-                    e.set(s.id, s)
-                } _(e), R(Array.from(e.values()))
+            for (let [t, n] of d)
+                if (n === o.aK.PENDING && !x.has(t)) {
+                    let n = await (0, l.wz)(t);
+                    e.set(n.id, n)
+                } R(e), A(Array.from(e.values()))
         }
-    }, j = i.useRef(T);
+    }, v = i.useRef(N);
     return i.useEffect(() => {
-        j.current = T
+        v.current = N
     }), i.useEffect(() => {
         let {
             getNextRows: e,
             limit: t,
-            getLocalReferrals: s
-        } = j.current;
-        u > 0 ? e(0, t) : s()
+            getLocalReferrals: n
+        } = v.current;
+        u > 0 ? e(0, t) : n()
     }, [t, u]), {
-        eligibleUsers: h,
-        fetchUsers: () => S(A, a),
-        hasError: x,
-        isFetching: f,
-        resendUsers: p
+        eligibleUsers: p,
+        fetchUsers: () => C(_, r),
+        hasError: h,
+        isFetching: g,
+        resendUsers: x
     }
 }

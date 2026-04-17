@@ -1,13 +1,13 @@
 /** chunk id: 379114 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => f
 });
 var i = n(627968),
     r = n(64700),
     s = n(397927),
-    a = n(793574),
-    l = n(688810),
+    l = n(793574),
+    a = n(688810),
     o = n(763754),
     c = n(447215),
     u = n(888675),
@@ -67,7 +67,7 @@ function p(e) {
     })
 }
 
-function C(e) {
+function f(e) {
     let {
         channel: t,
         message: s,
@@ -84,7 +84,7 @@ function C(e) {
             messageId: i.id
         })(t), {
             analyticsLocations: u
-        } = (0, l.Ay)(a.A.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE), E = i.roleSubscriptionData, A = r.useCallback(() => {
+        } = (0, a.Ay)(l.A.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE), E = i.roleSubscriptionData, A = r.useCallback(() => {
             (0, d.pX)(m.BVt.CHANNEL(s, I.VV.ROLE_SUBSCRIPTIONS), {
                 sourceLocationStack: u
             }), E?.role_subscription_listing_id != null && (0, _.xH)(s, n.id, i.id, E.role_subscription_listing_id)

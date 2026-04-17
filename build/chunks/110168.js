@@ -1,13 +1,13 @@
 /** chunk id: 110168 params = (module,exports,require) **/
 n.d(t, {
-    r: () => s
+    r: () => r
 });
 var i = n(627968);
 n(64700);
 var a = n(397927),
     l = n(746350);
 
-function s(e) {
+function r(e) {
     let {
         text: t,
         id: n

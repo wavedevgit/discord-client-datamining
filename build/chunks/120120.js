@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var r = n(417597),
     s = n(397927),
-    a = n(775602),
-    l = n(763754),
+    l = n(775602),
+    a = n(763754),
     o = n(447215),
     c = n(888675),
     u = n(976860),
@@ -21,8 +21,8 @@ function m(e) {
     let {
         guildId: t,
         user: n,
-        username: l
-    } = e, o = (0, r.bG)([a.A], () => !a.A.useReducedMotion), c = n.getAvatarURL(t, 56, o), u = (0, i.jsx)("img", {
+        username: a
+    } = e, o = (0, r.bG)([l.A], () => !l.A.useReducedMotion), c = n.getAvatarURL(t, 56, o), u = (0, i.jsx)("img", {
         src: c,
         className: A.dj,
         alt: ""
@@ -31,7 +31,7 @@ function m(e) {
         className: A.uE,
         role: "img",
         "aria-label": E.intl.formatToPlainString(E.t["utf8+W"], {
-            username: l
+            username: a
         }),
         children: [(0, i.jsx)(d.A, {
             avatar: u
@@ -41,7 +41,7 @@ function m(e) {
             color: "status-positive-text",
             variant: "heading-xl/medium",
             children: E.intl.format(E.t["52BAtC"], {
-                username: l,
+                username: a,
                 usernameHook: (e, t) => (0, i.jsx)(s.Text, {
                     tag: "span",
                     color: "status-positive-text",
@@ -59,13 +59,13 @@ function I(e) {
         channel: t,
         message: r,
         compact: s
-    } = e, a = (0, l.Ay)(r), d = (0, o.P)({
+    } = e, l = (0, a.Ay)(r), d = (0, o.P)({
         user: r.author,
         channelId: t.id,
         guildId: t.guild_id,
         messageId: r.id
-    })(a), A = E.intl.format(E.t.TQs67g, {
-        username: a.nick,
+    })(l), A = E.intl.format(E.t.TQs67g, {
+        username: l.nick,
         usernameHook: d,
         productName: r.purchaseNotification?.guild_product_purchase?.product_name ?? "",
         handleProductListingClick: () => {
@@ -79,7 +79,7 @@ function I(e) {
             compact: s,
             children: A
         }), (0, i.jsx)(m, {
-            username: a.nick,
+            username: l.nick,
             guildId: t.guild_id,
             user: r.author
         })]

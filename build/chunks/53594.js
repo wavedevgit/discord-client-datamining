@@ -11,8 +11,8 @@ n.d(t, {
     yT: () => _
 }), n(938796);
 var i, r, s = n(64700),
-    a = n(928108),
-    l = n(979816),
+    l = n(928108),
+    a = n(979816),
     o = n(411335),
     c = n(985018),
     u = ((i = {}).NEW = "new", i.RECOMMENDED = "recommended", i.BETA = "beta", i.ALPHA = "alpha", i);
@@ -98,14 +98,14 @@ function I(e, t) {
         eventType: i,
         triggerType: r,
         actions: s
-    } = e, a = d[r];
-    if (t.filter(e => n !== e.id && e.triggerType === r).length > a.perGuildMaxCount) throw Error(`You have exceeded the maximum number of rules of type ${r}`);
-    if (s.some(e => !a.availableActionTypes.has(e.type))) throw Error("You have provided an action that is not available for this trigger type");
-    if (i !== a.eventType) throw Error("You have provided an event type that is not available for this trigger type")
+    } = e, l = d[r];
+    if (t.filter(e => n !== e.id && e.triggerType === r).length > l.perGuildMaxCount) throw Error(`You have exceeded the maximum number of rules of type ${r}`);
+    if (s.some(e => !l.availableActionTypes.has(e.type))) throw Error("You have provided an action that is not available for this trigger type");
+    if (i !== l.eventType) throw Error("You have provided an event type that is not available for this trigger type")
 }
 
 function T(e) {
-    let t = (0, l.XO)(e);
+    let t = (0, a.XO)(e);
     return s.useMemo(() => Object.keys(E).reduce((e, n) => {
         let i = E[n].filter(e => e.type !== o.uh.SERVER_POLICY && (e.type !== o.uh.USER_PROFILE || !!t) && e.perGuildMaxCount > 0).map(e => e.type);
         return e[n] = i, e
@@ -116,7 +116,7 @@ function T(e) {
 }
 
 function N(e, t) {
-    let n = (0, a.p)(t);
+    let n = (0, l.p)(t);
     switch (e) {
         case o.uh.DEFAULT_KEYWORD_LIST:
             return {

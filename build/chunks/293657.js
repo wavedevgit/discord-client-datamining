@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var r = n(397927),
     s = n(763754),
-    a = n(888675),
-    l = n(985018),
+    l = n(888675),
+    a = n(985018),
     o = n(554655);
 
 function c(e) {
@@ -16,11 +16,11 @@ function c(e) {
         message: t,
         compact: n,
         usernameHook: c
-    } = e, u = (0, s.Ay)(t), d = c(u), _ = l.intl.format(l.t["dKW5C+"], {
+    } = e, u = (0, s.Ay)(t), d = c(u), _ = a.intl.format(a.t["dKW5C+"], {
         username: u.nick,
         usernameHook: d
     });
-    return (0, i.jsx)(a.A, {
+    return (0, i.jsx)(l.A, {
         className: o.d,
         iconNode: (0, i.jsx)(r.LvC, {
             size: "md",

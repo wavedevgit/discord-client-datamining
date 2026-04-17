@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var r = n(397927),
     s = n(888675),
-    a = n(985018),
-    l = n(627827);
+    l = n(985018),
+    a = n(627827);
 
 function o(e) {
     let {
@@ -19,10 +19,10 @@ function o(e) {
         iconNode: (0, i.jsx)(r.ysw, {
             size: "md",
             color: "currentColor",
-            className: l.K
+            className: a.K
         }),
         timestamp: t.timestamp,
         compact: n,
-        children: a.intl.string(a.t.OCs36J)
+        children: l.intl.string(l.t.OCs36J)
     })
 }

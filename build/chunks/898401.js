@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var r = n(421380),
     s = n(397927),
-    a = n(725807),
-    l = n(888675),
+    l = n(725807),
+    a = n(888675),
     o = n(652215),
     c = n(788868),
     u = n(985018),
@@ -19,7 +19,7 @@ function _(e) {
         message: t,
         channel: n
     } = e, _ = null != n.guild_id ? o.JJy.TEXT_IN_VOICE : o.JJy.CHANNEL_TEXT_AREA;
-    return (0, i.jsx)(l.A, {
+    return (0, i.jsx)(a.A, {
         contentClassName: d.o9,
         iconContainerClassName: d.zc,
         iconNode: (0, i.jsx)(s.XFE, {
@@ -44,7 +44,7 @@ function _(e) {
                 })]
             }), (0, i.jsx)("div", {
                 className: d.UD,
-                children: (0, i.jsx)(a.A, {
+                children: (0, i.jsx)(l.A, {
                     showGradient: !0,
                     iconClassName: d.PC,
                     subscriptionTier: c.pe.TIER_2,

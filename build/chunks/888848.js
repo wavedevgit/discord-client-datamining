@@ -51,7 +51,8 @@ function G(e) {
         subscriptionForGuild: N,
         sku: j,
         isCancelled: O,
-        renewalPlan: D
+        isOrphanedGuildSubscription: D,
+        renewalPlan: G
     } = (0, o.cf)([b.A, C.A, v.A, E.A], () => {
         let e, n = b.A.get(_),
             i = null != n ? C.A.get(n.skuId) : void 0,
@@ -59,7 +60,8 @@ function G(e) {
             l = null != n ? v.A.getForSKU(n.skuId) : null,
             r = null != l && (0, I.PJ)(l.skuFlags),
             o = r && null != a ? E.A.getGuild(a) : void 0,
-            c = (0, I.Uo)(t, i);
+            c = (0, I.Uo)(t, i),
+            u = r && null != a && null == o;
         if (!1 === c && null != d && d.items.length > 0) {
             let t = d.items[0];
             e = b.A.get(t.planId) ?? void 0
@@ -67,6 +69,7 @@ function G(e) {
         return {
             appId: s,
             isGuildSubscription: r,
+            isOrphanedGuildSubscription: u,
             plan: n,
             sku: i,
             storeListing: l,
@@ -75,22 +78,22 @@ function G(e) {
             renewalPlan: e
         }
     }, [a, _, d, t]), {
-        data: G
-    } = (0, h.YY)(x), H = l.useMemo(() => null != G ? (0, g.A)(G, 100) : null, [G]), z = j?.deleted ?? !1, Y = null != j && (0, I.Se)(j), X = t.status === R.Dmq.PAST_DUE, {
-        analyticsLocations: K
-    } = (0, m.Ay)(), [W, Z] = (0, T.Kq)({
+        data: H
+    } = (0, h.YY)(x), z = l.useMemo(() => null != H ? (0, g.A)(H, 100) : null, [H]), Y = j?.deleted ?? !1, X = null != j && (0, I.Se)(j), K = t.status === R.Dmq.PAST_DUE, {
+        analyticsLocations: W
+    } = (0, m.Ay)(), [Z] = (0, T.Kq)({
         subscriptionId: t.id,
         renewal: !0,
-        analyticsLocations: K,
+        analyticsLocations: W,
         analyticsLocation: u.A.APP_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE
-    }), q = Z?.code === 100062 && null != a && null == N, Q = (0, y.Y)(t.currentPeriodEnd), J = 0 === i;
+    }), q = (0, y.Y)(t.currentPeriodEnd), Q = 0 === i;
     return (0, s.jsxs)(r.q, {
         headerClassName: P.dL,
-        header: !1 === J ? (0, s.jsxs)(s.Fragment, {
+        header: !1 === Q ? (0, s.jsxs)(s.Fragment, {
             children: [(0, s.jsxs)("div", {
                 className: P.VW,
-                children: [null != H && (0, s.jsx)(c._V3, {
-                    src: H.href,
+                children: [null != z && (0, s.jsx)(c._V3, {
+                    src: z.href,
                     imageClassName: P.Z2,
                     width: 40,
                     height: 40
@@ -99,7 +102,7 @@ function G(e) {
                     children: [(0, s.jsx)(c.Heading, {
                         variant: "heading-md/semibold",
                         lineClamp: 1,
-                        children: G?.name ?? L.intl.string(L.t["7kqy7W"])
+                        children: H?.name ?? L.intl.string(L.t["7kqy7W"])
                     }), (0, s.jsx)(c.Text, {
                         variant: "text-sm/medium",
                         color: "text-default",
@@ -109,15 +112,16 @@ function G(e) {
                 })]
             }), (0, s.jsx)("div", {
                 className: P.Pz,
-                children: null != G && null != f && null != j && !1 === q && (0, s.jsx)(V, {
+                children: null != H && null != f && null != j && (0, s.jsx)(V, {
                     subscription: t,
-                    app: G,
+                    app: H,
                     guild: N,
                     sku: j,
                     storeListing: f,
                     isCancelled: O,
+                    isOrphanedGuildSubscription: D,
                     navigateToSwitchPlan: n,
-                    renewalSkuId: D?.skuId
+                    renewalSkuId: G?.skuId
                 })
             })]
         }) : (0, s.jsx)(c.y$y, {
@@ -125,17 +129,15 @@ function G(e) {
         }),
         children: [O && (0, s.jsx)(w, {
             type: "warning",
-            title: Y ? L.intl.formatToPlainString(L.t.QOnM1y, {
-                subscriptionPeriodEnd: Q
+            title: X ? L.intl.formatToPlainString(L.t.QOnM1y, {
+                subscriptionPeriodEnd: q
             }) : L.intl.formatToPlainString(L.t.HOaZu8, {
-                subscriptionPeriodEnd: Q
+                subscriptionPeriodEnd: q
             })
-        }), q && (0, s.jsx)(w, {
+        }), !O && D && (0, s.jsx)(w, {
             type: "warning",
-            title: L.intl.formatToPlainString(L.t.HOaZu8, {
-                subscriptionPeriodEnd: Q
-            })
-        }), X && (0, s.jsx)(w, {
+            title: L.intl.string(L.t.SmSP8Q)
+        }), K && (0, s.jsx)(w, {
             type: "danger",
             title: L.intl.string(L.t.fvOqBo)
         }), (0, s.jsxs)("div", {
@@ -168,24 +170,24 @@ function G(e) {
                     }), L.intl.string(L.t["6anEVv"])]
                 })
             }), (0, s.jsx)(M, {
-                invoicePreview: W,
+                invoicePreview: Z,
                 subscriptionPlan: A
             }), (0, s.jsx)(k, {
                 title: L.intl.string(L.t.dnUzb6),
                 content: (0, y.Y)(t.createdAt ?? t.currentPeriodStart)
             }), (0, s.jsx)(U, {
                 isCancelled: O,
-                subscriptionPeriodEnd: Q,
-                renewalPlan: D
+                subscriptionPeriodEnd: q,
+                renewalPlan: G
             })]
         }), (0, s.jsx)(F, {
             subscription: t,
-            currentInvoicePreview: W,
+            currentInvoicePreview: Z,
             loadingState: i,
-            isDeleted: z,
+            isDeleted: Y,
             isCancelled: O
-        }), null != G && f?.benefits != null && f.benefits.length > 0 && (0, s.jsx)(B, {
-            appId: G.id,
+        }), null != H && f?.benefits != null && f.benefits.length > 0 && (0, s.jsx)(B, {
+            appId: H.id,
             listingBenefits: f.benefits
         })]
     })
@@ -300,17 +302,18 @@ function V(e) {
         sku: r,
         subscription: a,
         isCancelled: d,
-        guild: u,
-        renewalSkuId: g,
-        navigateToSwitchPlan: x
-    } = e, h = (0, I.Se)(r), {
-        analyticsLocations: p
-    } = (0, m.Ay)(), [T, f] = l.useState(!1), E = (0, _.C)(t.id), b = (0, o.bG)([C.A], () => C.A.getParentSKU(i.skuId), [i.skuId]), v = l.useMemo(() => null == b ? [] : (0, O.l)(i.id, b, E.subscriptions), [i.id, E, b]), N = 0 !== v.length, j = async () => {
+        isOrphanedGuildSubscription: u,
+        guild: g,
+        renewalSkuId: x,
+        navigateToSwitchPlan: h
+    } = e, p = (0, I.Se)(r), {
+        analyticsLocations: T
+    } = (0, m.Ay)(), [f, E] = l.useState(!1), b = (0, _.C)(t.id), v = (0, o.bG)([C.A], () => C.A.getParentSKU(i.skuId), [i.skuId]), N = l.useMemo(() => null == v ? [] : (0, O.l)(i.id, v, b.subscriptions), [i.id, b, v]), j = 0 !== N.length, y = async () => {
         try {
-            f(!0);
+            E(!0);
             let {
                 subscription: e
-            } = await (0, A.QP)(a, p);
+            } = await (0, A.QP)(a, T);
             if (null == e) return;
             (0, c.mMO)(async () => {
                 let {
@@ -323,17 +326,17 @@ function V(e) {
                 })
             })
         } finally {
-            f(!1)
+            E(!1)
         }
     };
     return (0, s.jsxs)("div", {
         className: P.fw,
-        children: [h ? null : d ? (0, s.jsx)(c.Button, {
+        children: [p || d && u ? null : d ? (0, s.jsx)(c.Button, {
             variant: "secondary",
             size: "sm",
             text: L.intl.string(L.t.QtMnkW),
-            onClick: j,
-            loading: T
+            onClick: y,
+            loading: f
         }) : (0, s.jsx)(c.Button, {
             variant: "secondary",
             size: "sm",
@@ -348,22 +351,22 @@ function V(e) {
                         application: t,
                         storeListing: i,
                         subscription: a,
-                        guild: u
+                        guild: g
                     })
                 })
             }
-        }), N && null != b && !1 === d && (0, s.jsx)(c.Button, {
+        }), j && null != v && !1 === d && !1 === u && (0, s.jsx)(c.Button, {
             variant: "primary",
             size: "sm",
             text: L.intl.string(L.t.R74ZBR),
             onClick: () => {
-                x({
+                h({
                     currentSubscription: a,
-                    alternativeListings: v,
+                    alternativeListings: N,
                     app: t,
-                    subscriptionGroup: b,
+                    subscriptionGroup: v,
                     currentListing: i,
-                    renewalSkuId: g
+                    renewalSkuId: x
                 })
             }
         })]

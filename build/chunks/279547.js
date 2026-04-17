@@ -10,21 +10,21 @@ function l(e) {
         onError: t,
         onSuccess: n,
         report: l
-    } = e, [s, r] = i.useState(!1);
+    } = e, [r, s] = i.useState(!1);
     return {
         reportFalsePositive: i.useCallback(async () => {
-            if (!s) {
-                r(!0);
+            if (!r) {
+                s(!0);
                 try {
                     await l(), n?.()
                 } catch (n) {
                     let e = new a.LG(n);
                     t?.(e)
                 } finally {
-                    r(!1)
+                    s(!1)
                 }
             }
-        }, [s, t, n, l]),
-        isReportFalsePositiveLoading: s
+        }, [r, t, n, l]),
+        isReportFalsePositiveLoading: r
     }
 }

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     r = n(64700),
     s = n(311907),
-    a = n(397927),
-    l = n(688810),
+    l = n(397927),
+    a = n(688810),
     o = n(287809),
     c = n(987144),
     u = n(652215),
@@ -22,7 +22,7 @@ function _(e) {
         variant: A = "expressive"
     } = e, [m, I] = r.useState(!1), {
         analyticsLocations: T
-    } = (0, l.Ay)(_ ?? []), N = (0, s.bG)([o.default], () => o.default.getCurrentUser()), g = N?.isPremiumGroupMember();
+    } = (0, a.Ay)(_ ?? []), N = (0, s.bG)([o.default], () => o.default.getCurrentUser()), g = N?.isPremiumGroupMember();
     async function p() {
         I(!0), await (0, c.g)({
             analyticsLocations: T,
@@ -38,10 +38,10 @@ function _(e) {
             }
         })
     }
-    return (0, i.jsx)(a.Button, {
+    return (0, i.jsx)(l.Button, {
         variant: A,
         size: "md",
-        icon: a._Jp,
+        icon: l._Jp,
         text: d.intl.string(d.t.gKmQ1G),
         onClick: p,
         loading: m,

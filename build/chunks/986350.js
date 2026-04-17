@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var a = n(397927),
     l = n(29352),
-    s = n(652215),
-    r = n(985018),
+    r = n(652215),
+    s = n(985018),
     o = n(473988);
 
 function d(e) {
@@ -22,14 +22,14 @@ function d(e) {
         let e = (0, l.R)(u);
         t = (0, i.jsx)("div", {
             className: o.rd,
-            children: r.intl.format(r.t.wx1tLQ, {
+            children: s.intl.format(s.t.wx1tLQ, {
                 handleDelete: _,
                 reason: e
             })
         })
-    } else t = n.type === s.lAJ.STAGE_RAISE_HAND ? r.intl.format(r.t["qDAX++"], {
+    } else t = n.type === r.lAJ.STAGE_RAISE_HAND ? s.intl.format(s.t["qDAX++"], {
         handleDelete: _
-    }) : r.intl.format(r.t.uX3ecL, {
+    }) : s.intl.format(s.t.uX3ecL, {
         count: 1,
         countMessages: 1,
         handleDelete: _

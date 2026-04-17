@@ -3,42 +3,42 @@ n.d(t, {
     CC: () => i,
     Jv: () => o,
     RQ: () => m,
-    WD: () => a,
+    WD: () => l,
     b: () => h,
     gP: () => u,
     o8: () => c,
     ue: () => d
 });
-var r = n(954571),
-    l = n(652215);
+var s = n(954571),
+    r = n(652215);
 
-function s(e, t) {
-    r.default.track(l.HAw.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED, {
+function a(e, t) {
+    s.default.track(r.HAw.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED, {
         cta_type: e,
         program_state: t
     })
 }
-let a = e => {
-        s("shop_orbs", e)
+let l = e => {
+        a("shop_orbs", e)
     },
     i = e => {
-        s("view_billing", e)
+        a("view_billing", e)
     },
     d = e => {
-        s("update_billing", e)
+        a("update_billing", e)
     },
     o = e => {
-        s("resubscribe", e)
+        a("resubscribe", e)
     },
     c = e => {
-        s("orbs_card_helpdesk", e)
+        a("orbs_card_helpdesk", e)
     },
     u = () => {
-        s("balance_popover_upsell")
+        a("balance_popover_upsell")
     },
     m = () => {
-        s("balance_popover_next_drop")
+        a("balance_popover_next_drop")
     },
     h = () => {
-        s("balance_popover_helpdesk")
+        a("balance_popover_helpdesk")
     }

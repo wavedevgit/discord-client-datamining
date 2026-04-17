@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(503698),
-    s = n.n(l),
-    r = n(110259),
+    r = n.n(l),
+    s = n(110259),
     o = n(311907),
     d = n(397927),
     c = n(846293),
@@ -39,8 +39,8 @@ function N(e) {
         analyticsLocations: D
     } = (0, m.Ay)(_.A.INVITE_EMBED);
     (0, h.A)({
-        name: r.ImpressionNames.INVITE_EMBED,
-        type: r.ImpressionTypes.VIEW,
+        name: s.ImpressionNames.INVITE_EMBED,
+        type: s.ImpressionTypes.VIEW,
         properties: {
             invite_code: t.code,
             invite_guild_id: t.guild?.id,
@@ -53,8 +53,8 @@ function N(e) {
     }), a.useLayoutEffect(() => {
         P((x.current?.clientHeight ?? 0) > 292)
     }, [P]);
-    let O = (0, p.oO)(t),
-        k = a.useCallback(() => {
+    let k = (0, p.oO)(t),
+        O = a.useCallback(() => {
             !R || N && L(!1)
         }, [N, R]),
         U = a.useCallback(() => {
@@ -64,25 +64,25 @@ function N(e) {
             height: N ? 292 : x.current.clientHeight + 36 + 48,
             transition: M ? void 0 : "height 0.2s ease"
         } : {}, [N, R, M]);
-    return null == O ? (0, i.jsx)(b.A, {}) : (0, i.jsxs)(d.sqX, {
-        className: s()(S.Gg, {
+    return null == k ? (0, i.jsx)(b.A, {}) : (0, i.jsxs)(d.sqX, {
+        className: r()(S.Gg, {
             [S.vk]: R && N
         }),
-        onClick: k,
+        onClick: O,
         style: B,
         "aria-label": y.intl.string(y.t.dcl9MQ),
         children: [(0, i.jsxs)("div", {
             className: S.uY,
             ref: x,
             children: [(0, i.jsx)(C.J$, {
-                profile: O,
+                profile: k,
                 className: S.vK
             }), (0, i.jsx)(C.CG, {
-                profile: O
+                profile: k
             }), (0, i.jsx)(f.A, {
-                profile: O
+                profile: k
             }), (0, i.jsx)(A.P, {
-                profile: O,
+                profile: k,
                 className: S.rb
             }), (0, i.jsx)(v.A, {
                 guild: null != t.guild ? (0, I.DY)(t.guild) : null,
@@ -99,20 +99,20 @@ function N(e) {
                 text: y.intl.string(y.t.xdCLeM)
             })
         }) : null, (0, i.jsxs)("div", {
-            className: s()(S.qr, {
+            className: r()(S.qr, {
                 [S.iK]: R
             }),
             children: [R && N ? (0, i.jsx)("div", {
                 className: S.D7
             }) : null, (0, i.jsx)("div", {
-                className: s()(S.z8, {
+                className: r()(S.z8, {
                     [S.it]: R && N
                 }),
                 children: (0, i.jsx)("div", {
                     className: S.UD,
                     children: (0, i.jsx)(j, {
                         invite: t,
-                        profile: O,
+                        profile: k,
                         isMemberOfGuild: n,
                         message: l,
                         submitting: w,
@@ -130,8 +130,8 @@ function j(e) {
         invite: t,
         profile: n,
         isMemberOfGuild: l,
-        message: s,
-        submitting: r,
+        message: r,
+        submitting: s,
         onTransitionToInviteChannel: o,
         onAcceptInstantInvite: d
     } = e, {
@@ -144,15 +144,15 @@ function j(e) {
         (0, c.he)({
             invite: t,
             action: e,
-            inviter_id: s.author.id,
-            invite_message_id: s.id,
-            invite_instance_id: (0, E._U)(t.code, s.id)
+            inviter_id: r.author.id,
+            invite_message_id: r.id,
+            invite_instance_id: (0, E._U)(t.code, r.id)
         }, p)
-    }, [t, s, p, l]);
+    }, [t, r, p, l]);
     return null == h ? null : (0, i.jsx)(x.Y, {
         guildId: u,
         ctaType: h,
-        submitting: r,
+        submitting: s,
         onGoToGuild: o,
         onAcceptInvite: d,
         onStartApplication: d,

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     a = n(64700),
     l = n(503698),
-    s = n.n(l),
-    r = n(341915),
+    r = n.n(l),
+    s = n(341915),
     o = n(73473),
     d = n(327247),
     c = n(867461),
@@ -24,13 +24,13 @@ function m(e) {
         questOrQuests: t,
         questContent: n,
         questContentPosition: l,
-        trackGuildAndChannelMetadata: n === r.uF.QUESTS_EMBED,
+        trackGuildAndChannelMetadata: n === s.uF.QUESTS_EMBED,
         sourceQuestContent: m,
         children: e => (0, i.jsxs)("div", {
             ref: t => {
                 e.current = t
             },
-            className: s()(u.k, _.A),
+            className: r()(u.k, _.A),
             onMouseEnter: g,
             onMouseLeave: A,
             onFocus: g,

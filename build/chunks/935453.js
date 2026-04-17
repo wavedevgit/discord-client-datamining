@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var a = n(835245),
     l = n(397927),
-    s = n(391048),
-    r = n(636099),
+    r = n(391048),
+    s = n(636099),
     o = n(120700),
     d = n(742810),
     c = n(954571),
@@ -53,7 +53,7 @@ function _(e) {
                     checkout_design: e ? d.rS.UNIFIED : d.rS.LEGACY,
                     checkout_flow: o.C.GUILD_PRODUCT_CHECKOUT
                 })
-            }(0, s.ET)(), (0, r.z)()
+            }(0, r.ET)(), (0, s.z)()
         },
         onCloseRequest: u.tEg
     })

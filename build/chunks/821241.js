@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var r = n(503698),
     s = n.n(r),
-    a = n(311907),
-    l = n(397927),
+    l = n(311907),
+    a = n(397927),
     o = n(709066),
     c = n(71393),
     u = n(763754),
@@ -25,22 +25,22 @@ function T(e) {
         compact: n,
         usernameHook: r,
         channel: T
-    } = e, N = (0, a.bG)([c.A], () => c.A.getGuild(T.guild_id)), g = (0, u.Ay)(t), p = r(g), {
-        avatarSrc: C,
+    } = e, N = (0, l.bG)([c.A], () => c.A.getGuild(T.guild_id)), g = (0, u.Ay)(t), p = r(g), {
+        avatarSrc: f,
         eventHandlers: {
-            onMouseEnter: f,
+            onMouseEnter: C,
             onMouseLeave: h
         }
     } = (0, _.a)(!0);
     return (0, i.jsx)("div", {
-        onMouseEnter: f,
+        onMouseEnter: C,
         onMouseLeave: h,
         children: (0, i.jsx)(E.A, {
             className: s()(I.rs, {
                 [I.oE]: n
             }),
             iconNode: n ? null : (0, i.jsx)(_.l, {
-                src: C
+                src: f
             }),
             iconContainerClassName: I.zc,
             compact: n,
@@ -56,7 +56,7 @@ function T(e) {
                     }),
                     username: (0, i.jsxs)("div", {
                         className: I.he,
-                        children: [(0, i.jsx)(l.Text, {
+                        children: [(0, i.jsx)(a.Text, {
                             variant: "text-md/normal",
                             color: "text-brand",
                             tag: "span",

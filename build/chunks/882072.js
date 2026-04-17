@@ -6,15 +6,15 @@ var i = n(627968);
 n(64700);
 var a = n(311907),
     l = n(529200),
-    s = n(961350),
-    r = n(4274),
+    r = n(961350),
+    s = n(4274),
     o = n(985018);
 
 function d(e) {
     let {
         author: t,
         inviteError: n
-    } = e, d = (0, a.bG)([s.default], () => s.default.getId()) === t.id ? o.intl.string(o.t.C89OLE) : o.intl.string(o.t.YVub5y), c = (0, r.g)(n?.code);
+    } = e, d = (0, a.bG)([r.default], () => r.default.getId()) === t.id ? o.intl.string(o.t.C89OLE) : o.intl.string(o.t.YVub5y), c = (0, s.g)(n?.code);
     return (0, i.jsxs)(l.A, {
         children: [(0, i.jsx)(l.A.Header, {
             text: d

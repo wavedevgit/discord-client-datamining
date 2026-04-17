@@ -6,16 +6,16 @@ n.d(t, {
 var i = n(64700),
     a = n(311907),
     l = n(599941),
-    s = n(544199),
-    r = n(697627);
+    r = n(544199),
+    s = n(697627);
 
 function o(e, t) {
-    let n = (0, a.bG)([r.A], () => r.A.getPriceTiersForGuildAndType(e, t)),
-        l = (0, a.bG)([r.A], () => r.A.getPriceTiersFetchStateForGuildAndType(e, t));
+    let n = (0, a.bG)([s.A], () => s.A.getPriceTiersForGuildAndType(e, t)),
+        l = (0, a.bG)([s.A], () => s.A.getPriceTiersFetchStateForGuildAndType(e, t));
     return i.useEffect(() => {
-        l === r.e.NOT_FETCHED && (0, s.F)(e, t)
+        l === s.e.NOT_FETCHED && (0, r.F)(e, t)
     }, [e, l, t]), {
-        loading: l === r.e.FETCHING,
+        loading: l === s.e.FETCHING,
         priceTiers: n
     }
 }
@@ -29,10 +29,10 @@ function d(e) {
     i.useEffect(() => {
         t(e)
     }, [t, e]);
-    let s = (0, l.Tq)(e);
+    let r = (0, l.Tq)(e);
     return {
-        loaded: null != s && !n,
-        subscriptionsSettings: s,
+        loaded: null != r && !n,
+        subscriptionsSettings: r,
         loading: n,
         error: a
     }

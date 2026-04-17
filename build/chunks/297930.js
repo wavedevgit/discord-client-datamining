@@ -1,44 +1,44 @@
 /** chunk id: 297930 params = (module,exports,require) **/
-s.r(a), s.d(a, {
-    default: () => r
+n.r(t), n.d(t, {
+    default: () => o
 });
-var i = s(627968);
-s(64700);
-var c = s(503698),
-    d = s.n(c),
-    m = s(225180),
-    l = s(291021);
+var i = n(627968);
+n(64700);
+var l = n(503698),
+    s = n.n(l),
+    a = n(225180),
+    r = n(291021);
 
-function r(e) {
+function o(e) {
     let {
-        gameId: a
-    } = e, s = (0, m.A)(a, "cover");
+        gameId: t
+    } = e, n = (0, a.A)(t, "cover");
     return (0, i.jsxs)("div", {
-        className: l.kL,
+        className: r.kL,
         children: [(0, i.jsxs)("div", {
-            className: d()(l.Su, l.TK),
+            className: s()(r.Su, r.TK),
             children: [(0, i.jsx)("div", {
-                className: d()(l.w1, l.Uf)
+                className: s()(r.w1, r.Uf)
             }), (0, i.jsx)("div", {
-                className: d()(l.w1, l.Gj)
+                className: s()(r.w1, r.Gj)
             })]
         }), (0, i.jsxs)("div", {
-            className: d()(l.Su, l._3),
+            className: s()(r.Su, r._3),
             children: [(0, i.jsx)("div", {
-                className: d()(l.w1, l.Uf)
+                className: s()(r.w1, r.Uf)
             }), (0, i.jsx)("div", {
-                className: d()(l.w1, l.Gj)
+                className: s()(r.w1, r.Gj)
             })]
         }), (0, i.jsxs)("div", {
-            className: d()(l.Su, l.Tp),
+            className: s()(r.Su, r.Tp),
             children: [(0, i.jsx)("img", {
-                src: s,
+                src: n,
                 alt: "",
-                className: l.Sl
+                className: r.Sl
             }), (0, i.jsx)("div", {
-                className: d()(l.w1, l.Uf)
+                className: s()(r.w1, r.Uf)
             }), (0, i.jsx)("div", {
-                className: d()(l.w1, l.Gj)
+                className: s()(r.w1, r.Gj)
             })]
         })]
     })

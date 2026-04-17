@@ -1,7 +1,7 @@
 /** chunk id: 152815 params = (module,exports,require) **/
 n.d(t, {
     P: () => v,
-    ThirdPartyPromotionsModal: () => R
+    ThirdPartyPromotionsModal: () => N
 });
 var i = n(627968);
 n(64700);
@@ -16,8 +16,8 @@ var r = n(158954),
     _ = n(412260),
     m = n(116011),
     p = n(881373),
-    g = n(125877),
-    A = n(652215),
+    A = n(125877),
+    g = n(652215),
     f = n(962995),
     h = n(985018),
     b = n(75662);
@@ -63,19 +63,19 @@ let x = {
             }
         }
     },
-    C = {
+    R = {
         logitech: {
             modalTitle: f.default["2I7nK+"],
             modalSubtitle: {
                 message: f.default.W8jOD0,
                 values: {
-                    termsUrl: c.A.getArticleURL(A.MVz.LOGITECH_PROMOTION)
+                    termsUrl: c.A.getArticleURL(g.MVz.LOGITECH_PROMOTION)
                 }
             },
             landingUrl: "https://www.logitech.com/"
         }
     },
-    N = (e, t) => {
+    C = (e, t) => {
         let n = x[e.outboundTitle];
         return {
             id: e.id,
@@ -88,12 +88,12 @@ let x = {
             code: t
         }
     },
-    R = e => {
+    N = e => {
         let {
             partnerId: t,
             transitionState: n,
             onClose: s
-        } = e, o = C[t], [c, d] = (0, a.yK)([_.A], () => {
+        } = e, o = R[t], [c, d] = (0, a.yK)([_.A], () => {
             let {
                 recurring: e,
                 oneTime: n
@@ -101,13 +101,13 @@ let x = {
             return [e, n]
         }), {
             promotionsLoaded: p,
-            claimedOutboundPromotionCodeMap: A
+            claimedOutboundPromotionCodeMap: g
         } = (0, u.y7)();
         if (!p) return (0, i.jsx)(r.y$y, {});
         let x = o?.modalSubtitle != null ? h.intl.format(o.modalSubtitle.message, o.modalSubtitle.values) : void 0,
-            R = null == o ? t : h.intl.string(o.modalTitle);
+            N = null == o ? t : h.intl.string(o.modalTitle);
         return (0, i.jsx)(r.Modal, {
-            title: R,
+            title: N,
             subtitle: x,
             actions: [],
             transitionState: n,
@@ -123,7 +123,7 @@ let x = {
                         className: b.kR,
                         children: c.map(e => (0, i.jsx)(m.wx, {
                             recurrence: {
-                                ...N(e, A[e.id] ?? null),
+                                ...C(e, g[e.id] ?? null),
                                 asset: m.oL[e.partnerId ?? ""]?.asset ?? ""
                             },
                             showPartnerImage: !0,
@@ -139,8 +139,8 @@ let x = {
                         children: h.intl.string(f.default.Wm58LR)
                     }), (0, i.jsx)("div", {
                         className: b.kR,
-                        children: d.map(e => (0, i.jsx)(g.$, {
-                            promotion: N(e, A[e.id] ?? null),
+                        children: d.map(e => (0, i.jsx)(A.$, {
+                            promotion: C(e, g[e.id] ?? null),
                             analyticsLocations: [l.A.THIRD_PARTY_PROMOTIONS_MODAL]
                         }, e.id))
                     })]
@@ -152,7 +152,7 @@ let x = {
         let {
             partnerId: t
         } = e;
-        o.default.track(A.HAw.THIRD_PARTY_PROMOTION_MODAL_OPENED, {
+        o.default.track(g.HAw.THIRD_PARTY_PROMOTION_MODAL_OPENED, {
             partner_id: t
         }), d.Ay.fetchActivePromotions(), (0, s.mMO)(async () => {
             let {

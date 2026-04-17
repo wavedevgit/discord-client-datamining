@@ -1,39 +1,39 @@
 /** chunk id: 46282 params = (module,exports,require) **/
-n.d(e, {
-    y: () => T
+n.d(t, {
+    y: () => _
 });
 var i = n(627968),
     l = n(877624),
-    r = n(311907),
-    s = n(397927),
-    a = n(688810),
+    s = n(311907),
+    a = n(397927),
+    r = n(688810),
     o = n(532794),
-    c = n(412260),
-    d = n(49999),
+    d = n(412260),
+    c = n(49999),
     u = n(652215),
-    E = n(985018),
-    _ = n(448759);
-let T = t => {
+    h = n(985018),
+    A = n(448759);
+let _ = e => {
     let {
-        markAsDismissed: e
-    } = t, {
+        markAsDismissed: t
+    } = e, {
         analyticsLocations: n
-    } = (0, a.Ay)(), T = (0, r.bG)([c.A], () => {
-        let t = c.A.getMarketingComponentByType(l.C.GIFT_REMINDER_NAGBAR);
-        return null == t || "giftReminderNagbar" !== t.properties.properties.oneofKind ? null : t.properties.properties.giftReminderNagbar
+    } = (0, r.Ay)(), _ = (0, s.bG)([d.A], () => {
+        let e = d.A.getMarketingComponentByType(l.C.GIFT_REMINDER_NAGBAR);
+        return null == e || "giftReminderNagbar" !== e.properties.properties.oneofKind ? null : e.properties.properties.giftReminderNagbar
     });
-    return null == T ? null : (0, i.jsxs)(s.$Td, {
-        color: s.Hv$.PREMIUM_TIER_2,
-        children: [(0, i.jsx)(s.PMB, {
-            onClick: () => e(d.i.USER_DISMISS),
+    return null == _ ? null : (0, i.jsxs)(a.$Td, {
+        color: a.Hv$.PREMIUM_TIER_2,
+        children: [(0, i.jsx)(a.PMB, {
+            onClick: () => t(c.i.USER_DISMISS),
             noticeType: u.kqX.GIFTING_PROMOTION_REMINDER
-        }), (0, i.jsx)(s.okO, {
+        }), (0, i.jsx)(a.okO, {
             size: "custom",
             width: 20,
             height: 20,
             color: "currentColor",
-            className: _.ez
-        }), T.body, (0, i.jsx)(s.Z_L, {
+            className: A.ez
+        }), _.body, (0, i.jsx)(a.Z_L, {
             onClick: () => {
                 (0, o.A)({
                     isGift: !0,
@@ -46,7 +46,7 @@ let T = t => {
                 })
             },
             noticeType: u.kqX.GIFTING_PROMOTION_REMINDER,
-            children: E.intl.string(E.t.RzWDqY)
+            children: h.intl.string(h.t.RzWDqY)
         })]
     })
 }
