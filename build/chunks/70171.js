@@ -38,14 +38,14 @@ function C(e) {
         popoutType: n
     } = e, {
         reducedMotion: C
-    } = l.useContext(r.CZ), x = (0, l.useRef)(null), S = h.K.getState().clipsButtonRef, I = (0, m._z)(t), T = (0, a.bG)([d.A], () => d.A.getActiveAnimation()), v = (0, a.yK)([d.A], () => d.A.getStreamClipAnimations(I)), N = (0, l.useRef)(void 0);
+    } = l.useContext(r.CZ), x = (0, l.useRef)(null), S = h.K.getState().clipsButtonRef, I = (0, m._z)(t), T = (0, a.bG)([d.A], () => d.A.getActiveAnimation()), N = (0, a.yK)([d.A], () => d.A.getStreamClipAnimations(I)), v = (0, l.useRef)(void 0);
     l.useEffect(() => () => {
         (0, u.MI)(I)
     }, [I]);
     let y = e => {
             if (n !== c.N.NO_POPOUT) return _;
             let t = S?.getBoundingClientRect();
-            if (N.current = t, e.timestamp !== T || null == t) return _;
+            if (v.current = t, e.timestamp !== T || null == t) return _;
             let {
                 top: i,
                 left: l
@@ -58,7 +58,7 @@ function C(e) {
             }
         },
         b = (0, l.useRef)(null),
-        j = (0, o.pnh)(v, {
+        j = (0, o.pnh)(N, {
             keys: e => e.timestamp,
             ref: b,
             from: {
@@ -70,7 +70,7 @@ function C(e) {
             config: p
         }, "animate-always"),
         R = (0, l.useRef)(null),
-        M = (0, o.pnh)(v, {
+        M = (0, o.pnh)(N, {
             ref: R,
             keys: e => e.timestamp,
             from: e => ({
@@ -99,16 +99,16 @@ function C(e) {
                     height: 0,
                     width: 0,
                     ...(() => {
-                        if (null != N.current) return {
-                            top: N.current.top + 12,
-                            left: N.current.left + 12
+                        if (null != v.current) return {
+                            top: v.current.top + 12,
+                            left: v.current.left + 12
                         }
                     })()
                 }
             },
             config: C.enabled ? E : f,
             onRest: (e, t) => {
-                null != t.item && null != v.find(e => e.timestamp === t.item.timestamp) && (0, u.MI)(I, t.item.timestamp)
+                null != t.item && null != N.find(e => e.timestamp === t.item.timestamp) && (0, u.MI)(I, t.item.timestamp)
             }
         }, "animate-always");
     return (0, s.useChain)([b, R], [0, .1], 3e3), (0, i.jsxs)(i.Fragment, {

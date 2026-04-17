@@ -24,8 +24,8 @@ var i = n(627968),
     S = n(652215),
     I = n(788868),
     T = n(985018),
-    v = n(18238);
-let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
+    N = n(18238);
+let v = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
     y = {
         opacity: 0,
         transform: "translate3d(100%, 0, 0)"
@@ -41,10 +41,10 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
         opacity: 1
     },
     M = {
-        borderRadius: `${N}px ${N}px ${N}px ${N}px`
+        borderRadius: `${v}px ${v}px ${v}px ${v}px`
     },
     L = {
-        borderRadius: `0px ${N}px ${N}px 0px`
+        borderRadius: `0px ${v}px ${v}px 0px`
     },
     D = {
         mass: 1,
@@ -57,7 +57,7 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                 participant: r,
                 isUpsellEnabled: o,
                 shape: h,
-                size: N,
+                size: v,
                 didTrackUpsellViewed: y,
                 setDidTrackUpsellViewed: b,
                 className: j,
@@ -108,15 +108,15 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
             position: "bottom",
             children: (0, i.jsxs)(m.DUT, {
                 onClick: k,
-                className: a()(v.t5, N, _.u1[h], D ? v.Y5 : v.Lc, {
-                    [v.vk]: U && O
+                className: a()(N.t5, v, _.u1[h], D ? N.Y5 : N.Lc, {
+                    [N.vk]: U && O
                 }),
                 children: [O ? (0, i.jsx)(m.tvc, {
                     size: "md",
                     color: "currentColor",
-                    className: v.fY
+                    className: N.fY
                 }) : null, (0, i.jsx)("span", {
-                    className: v.UD,
+                    className: N.UD,
                     children: (0, C.ME)(M.maxResolution)
                 }), (0, i.jsx)("span", {
                     children: (0, C.Bs)(M.maxFrameRate)
@@ -125,8 +125,8 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
         });
         return (0, i.jsx)(m.LpS, {
             text: G,
-            className: a()(j, v.AA, {
-                [v.Dc]: O && R
+            className: a()(j, N.AA, {
+                [N.Dc]: O && R
             }),
             color: d.A.unsafe_rawColors.PRIMARY_500.css,
             shape: _.u1[h]
@@ -159,12 +159,12 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                 popoutProps: l
             } = e;
             return (0, i.jsxs)("div", {
-                className: a()(v.dr, n),
+                className: a()(N.dr, n),
                 ...l,
                 children: [f((e, n) => n ? (0, i.jsx)(r.animated.div, {
                     style: e,
                     children: (0, i.jsx)(O, {
-                        className: v.LZ,
+                        className: N.LZ,
                         participant: t,
                         size: o,
                         shape: m.EGs.ROUND_LEFT,
@@ -176,7 +176,7 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                     })
                 }) : null), (0, i.jsx)(r.animated.div, {
                     style: E,
-                    className: v.Ok,
+                    className: N.Ok,
                     children: (0, i.jsx)(_.Ay, {
                         look: _.gv.RED,
                         size: o,

@@ -43,7 +43,7 @@ let p = [{
     I = 0,
     T = 0;
 
-function v() {
+function N() {
     if (null == S || !b(S)) return !1;
     let e = y(S);
     if (e.lastActionTime > Date.now() - u.A.Millis.DAY && e.viewDuration > f) return !1;
@@ -51,9 +51,9 @@ function v() {
     return e.lastActionTime = t, e.viewDuration += t - I, I = t, !0
 }
 
-function N() {
+function v() {
     return 0 !== T && (clearInterval(T), T = 0), d.Ay.useNewNotifications && (T = setInterval(() => {
-        v() && M.emitChange()
+        N() && M.emitChange()
     }, 15 * u.A.Millis.SECOND)), !1
 }
 
@@ -82,7 +82,7 @@ class R extends l.Ay.PersistedStore {
     static displayName = "UnreadSettingNoticeStore2";
     static persistKey = "UnreadSettingNoticeStore2";
     initialize(e) {
-        null != e && (C.channels = e.channels), this.syncWith([d.Ay], N), this.waitFor(a.default, r.A, o.A, c.A, d.Ay)
+        null != e && (C.channels = e.channels), this.syncWith([d.Ay], v), this.waitFor(a.default, r.A, o.A, c.A, d.Ay)
     }
     getState() {
         return C
@@ -107,11 +107,11 @@ class R extends l.Ay.PersistedStore {
 }
 let M = new R(s.h, {
         CHANNEL_SELECT: function() {
-            let e = v();
+            let e = N();
             return S = c.A.getChannelId(), I = Date.now(), e
         },
         CONNECTION_OPEN: function() {
-            S = c.A.getChannelId(), I = Date.now(), N();
+            S = c.A.getChannelId(), I = Date.now(), v();
             let e = Date.now() - E;
             h.default.forEach(C.channels, (t, n) => {
                 let {

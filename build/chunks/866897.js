@@ -24,8 +24,8 @@ var i = n(64700),
     S = n(723702),
     I = n(661191),
     T = n(697470),
-    v = n(492841),
-    N = n(707985),
+    N = n(492841),
+    v = n(707985),
     y = n(519222),
     b = n(652215);
 let j = function(e, t, n) {
@@ -52,7 +52,7 @@ let j = function(e, t, n) {
                 i && !P.isSystemDM() && (0, T.A)(O, w) && (n.preventDefault(), (0, y.u_)(P, O));
                 break;
             case "p":
-                (i || D) && (0, v.A)(O, P) && (n.preventDefault(), (0, y.rS)(P, O, n));
+                (i || D) && (0, N.A)(O, P) && (n.preventDefault(), (0, y.rS)(P, O, n));
                 break;
             case "+":
                 (i || D) && function(e) {
@@ -60,7 +60,7 @@ let j = function(e, t, n) {
                         n = m.jW.getSetting(),
                         {
                             disableReactionCreates: i
-                        } = (0, N.A)({
+                        } = (0, v.A)({
                             channel: e,
                             canChat: t,
                             renderReactions: n,

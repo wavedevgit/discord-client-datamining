@@ -1,6 +1,6 @@
 /** chunk id: 206018 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => v
 });
 var i = n(627968);
 n(64700);
@@ -25,13 +25,13 @@ var l = n(110259),
     S = n(509381),
     I = n(731854),
     T = n(985018),
-    v = n(347933);
+    N = n(347933);
 
-function N(e) {
+function v(e) {
     let {
         appContext: t,
         onInteraction: n,
-        onSelect: N,
+        onSelect: v,
         onClose: y,
         maybeRenderPTTCheckbox: b = !1,
         renderDeafenCheckbox: j = !1,
@@ -82,13 +82,13 @@ function N(e) {
         object: x.ZSU.CONTEXT_MENU,
         children: (0, i.jsxs)(r.W1t, {
             "data-menu-migrated": !0,
-            onSelect: N,
+            onSelect: v,
             onInteraction: n,
             onClose: y,
             navId: "audio-device-context",
             variant: "fixed",
             "aria-label": T.intl.string(T.t.ZR1Ss6),
-            className: v.MK,
+            className: N.MK,
             children: [(0, i.jsxs)(r.rXV, {
                 children: [D && G, R && B, M && F]
             }), (0, i.jsxs)(r.rXV, {
@@ -101,8 +101,8 @@ function N(e) {
                             section: x.JJy.CONTEXT_MENU
                         },
                         meterOnly: !0,
-                        containerClassName: v.Eq,
-                        notchClassName: v.CO
+                        containerClassName: N.Eq,
+                        notchClassName: N.CO
                     })
                 }), L && W]
             }), (0, i.jsxs)(r.rXV, {

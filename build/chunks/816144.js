@@ -24,8 +24,8 @@ var i = n(627968),
     S = n(825244),
     I = n(423563),
     T = n(652215),
-    v = n(746080),
-    N = n(985018),
+    N = n(746080),
+    v = n(985018),
     y = n(818050);
 
 function b(e) {
@@ -66,7 +66,7 @@ function j(e) {
     }));
     if (t.isSystemDM()) return (0, i.jsx)(f.A, {
         channel: t,
-        children: N.intl.string(N.t.Rzvnig)
+        children: v.intl.string(v.t.Rzvnig)
     });
     if (o === T.rbe.DM) return (0, i.jsxs)(f.A, {
         channel: t,
@@ -75,7 +75,7 @@ function j(e) {
             variant: "heading-xl/medium",
             className: y.SX,
             children: u
-        }), N.intl.format(N.t["Qvg+6+"], {
+        }), v.intl.format(v.t["Qvg+6+"], {
             username: r
         }), d?.isProvisional ? (0, i.jsx)(c.Y, {
             userId: d.id
@@ -89,19 +89,19 @@ function j(e) {
         if (t.isManaged()) return (0, i.jsxs)(g.Ay, {
             channelId: t.id,
             children: [(0, i.jsx)(g.cr, {
-                children: N.intl.format(N.t.I3R7Vn, {
+                children: v.intl.format(v.t.I3R7Vn, {
                     channelName: r
                 })
             }), (0, i.jsx)(g.j1, {
-                children: N.intl.string(N.t.M8Ao6I)
+                children: v.intl.string(v.t.M8Ao6I)
             })]
         });
-        else if (t.hasFlag(v.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(p.A, {
+        else if (t.hasFlag(N.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(p.A, {
         channel: t
     });
     else return (0, i.jsx)(f.A, {
         channel: t,
-        children: N.intl.format(N.t.MFwcqO, {
+        children: v.intl.format(v.t.MFwcqO, {
             name: r
         })
     });
@@ -111,7 +111,7 @@ function j(e) {
     }) : (0, i.jsx)(g.Ay, {
         channelId: t.id,
         children: (0, i.jsx)(g.j1, {
-            children: N.intl.format(N.t.hPVEQG, {
+            children: v.intl.format(v.t.hPVEQG, {
                 channelName: r
             })
         })

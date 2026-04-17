@@ -24,9 +24,9 @@ var i = n(627968),
     S = n(985018),
     I = n(172115),
     T = n(9934),
-    v = n(824078);
+    N = n(824078);
 
-function N() {
+function v() {
     return (0, r.cf)([d.A], () => ({
         connectionState: d.A.getState(),
         hostname: d.A.getHostname(),
@@ -78,7 +78,7 @@ function R(e) {
     let {
         closePopout: t,
         connectionTypeText: n
-    } = e, l = N();
+    } = e, l = v();
     return (0, i.jsx)(f.A, {
         ...l,
         closePopout: t,
@@ -90,7 +90,7 @@ function M(e) {
     let {
         closePopout: t,
         connectionTypeText: n
-    } = e, l = N();
+    } = e, l = v();
     return (0, i.jsx)(_.Q, {
         ...l,
         closePopout: t,
@@ -158,7 +158,7 @@ function O(e) {
     return l.useEffect(() => {
         d && n(x.Rj.RTC_DEBUG_PANEL)
     }, [d]), (0, i.jsxs)("div", {
-        className: a()(v.popover, T.kL),
+        className: a()(N.popover, T.kL),
         children: [(0, i.jsxs)(o.VQ0, {
             className: T.vR,
             selectedItem: t,
@@ -269,7 +269,7 @@ function U(e) {
     }) ? (0, i.jsx)(O, {
         ...e
     }) : (0, i.jsx)("div", {
-        className: a()(v.popover, T.L3),
+        className: a()(N.popover, T.L3),
         children: (0, i.jsx)(L, {
             ...e
         })

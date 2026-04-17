@@ -24,8 +24,8 @@ var i = n(627968),
     S = n(875163),
     I = n(224805),
     T = n(598071),
-    v = n(101555),
-    N = n(834755),
+    N = n(101555),
+    v = n(834755),
     y = n(703007),
     b = n(2553),
     j = n(946274),
@@ -78,7 +78,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
             id: h,
             required: m,
             disabled: p,
-            accessibilityLabel: v,
+            accessibilityLabel: N,
             channel: y,
             type: b,
             focused: j,
@@ -109,7 +109,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
     o()(null != b, "chat input type must be set");
     let {
         analyticsLocations: ex
-    } = (0, C.Ay)(E.A.CHANNEL_TEXT_AREA), eS = (0, V.L0)(t), eI = l.useRef(null), eT = l.useRef(null), ev = l.useRef(null), eN = l.useRef(null);
+    } = (0, C.Ay)(E.A.CHANNEL_TEXT_AREA), eS = (0, V.L0)(t), eI = l.useRef(null), eT = l.useRef(null), eN = l.useRef(null), ev = l.useRef(null);
     eu?.(eT.current);
     let {
         activeCommand: ey
@@ -185,11 +185,11 @@ let X = l.memo(l.forwardRef(function(e, t) {
     }, [ei, ep, ef, y.id, eC, eE, ek]), {
         submit: eB,
         handleSubmit: eV
-    } = (0, V.Zx)(eH, b, eT, eN, y.id), {
+    } = (0, V.Zx)(eH, b, eT, ev, y.id), {
         autocompleteRef: eW,
         handleMaybeShowAutocomplete: eK,
         handleHideAutocomplete: ez
-    } = (0, V.v7)(), eY = l.useCallback(() => eN?.current?.hide(), []), {
+    } = (0, V.v7)(), eY = l.useCallback(() => ev?.current?.hide(), []), {
         editorHeight: eJ,
         handleResize: eq
     } = (0, V.ck)(k), {
@@ -257,7 +257,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                 className: a()(d, $.gM),
                 onMouseDown: e8,
                 children: [(0, i.jsx)("div", {
-                    ref: ev,
+                    ref: eN,
                     onScroll: eY,
                     className: a()($.Ui, {
                         [$.k6]: !em
@@ -305,7 +305,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                         disabled: eR,
                                         placeholder: eo,
                                         required: m,
-                                        accessibilityLabel: v,
+                                        accessibilityLabel: N,
                                         isPreviewing: (eb || ej) && eL,
                                         channel: y,
                                         type: F.oU.CREATE_ANNOUNCEMENT_POST,
@@ -432,7 +432,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                     setValue: (e, t) => w?.(null, e, t),
                     position: eh
                 })]
-            }), e0 ? null : (0, i.jsx)(N.A, {
+            }), e0 ? null : (0, i.jsx)(v.A, {
                 positionTargetRef: eS,
                 type: b,
                 onSelectGIF: e9,
@@ -510,7 +510,7 @@ function ee(e) {
             src: s,
             alt: J.intl.string(J.t["2ePvR8"]),
             className: q.c8
-        }), r ? (0, i.jsx)(v.Ay, {
+        }), r ? (0, i.jsx)(N.Ay, {
             className: q.jM,
             children: (0, i.jsx)(W.A, {
                 tooltip: J.intl.string(J.t.VjC21x),

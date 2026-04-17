@@ -26,8 +26,8 @@ var i = n(627968),
     S = n(58149),
     I = n(688810),
     T = n(571694),
-    v = n(47167),
-    N = n(915089),
+    N = n(47167),
+    v = n(915089),
     y = n(66442),
     b = n(279208),
     j = n(267102),
@@ -56,12 +56,12 @@ var i = n(627968),
     X = n(650583),
     Q = n(985018),
     ee = n(426057);
-let et = (0, N.Ld)(),
+let et = (0, v.Ld)(),
     en = e => {
         let {
             channel: t,
             onClose: n
-        } = e, l = (0, v.Ay)(t) ?? "", s = (0, c.bG)([k.Ay], () => k.Ay.lastMessageId(t.id) ?? t.id);
+        } = e, l = (0, N.Ay)(t) ?? "", s = (0, c.bG)([k.Ay], () => k.Ay.lastMessageId(t.id) ?? t.id);
         return (0, i.jsx)(u.DUT, {
             onClick: () => {
                 (0, R.uh)(Z.ME, t.id), n()
@@ -753,7 +753,7 @@ function es(e) {
         onChange: r
     } = e, {
         analyticsLocations: o
-    } = (0, I.Ay)(x.A.NEW_GROUP_DM_INVITE_MODAL), c = (0, v.Jo)(Array.from(t), H.default, G.A);
+    } = (0, I.Ay)(x.A.NEW_GROUP_DM_INVITE_MODAL), c = (0, N.Jo)(Array.from(t), H.default, G.A);
     return (0, i.jsxs)("div", {
         className: ee.zj,
         children: [(0, i.jsx)(y.X, {

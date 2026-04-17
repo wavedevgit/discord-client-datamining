@@ -37,8 +37,8 @@ let C = l.memo(function(e) {
     } = l.useContext(h.k3), {
         enabled: I,
         zoomLevel: T,
-        minZoom: v,
-        maxZoom: N,
+        minZoom: N,
+        maxZoom: v,
         isDragging: y,
         isWheeling: b,
         isSlidering: j,
@@ -50,7 +50,7 @@ let C = l.memo(function(e) {
         panOffset: P,
         setPanOffset: w,
         clampPanOffset: U
-    } = l.useContext(A.e9), [k, G] = l.useState(!1), F = l.useRef(null), H = T > v, B = l.useCallback(() => {
+    } = l.useContext(A.e9), [k, G] = l.useState(!1), F = l.useRef(null), H = T > N, B = l.useCallback(() => {
         x("interact")
     }, [x]), V = l.useCallback(() => {
         G(!1), S("interact")
@@ -147,14 +147,14 @@ let C = l.memo(function(e) {
                     children: (0, i.jsx)(d.K0, {
                         icon: d.V0_,
                         onClick: Z,
-                        disabled: T <= v,
+                        disabled: T <= N,
                         variant: "overlay-secondary",
                         size: "sm",
                         "aria-label": g.intl.string(g.t.M6Cmwy)
                     })
                 }), (0, i.jsx)(d.Apm, {
-                    minValue: v,
-                    maxValue: N,
+                    minValue: N,
+                    maxValue: v,
                     initialValue: T,
                     value: T,
                     asValueChanges: ee,
@@ -167,7 +167,7 @@ let C = l.memo(function(e) {
                 children: (0, i.jsx)(d.K0, {
                     icon: d.r1u,
                     onClick: X,
-                    disabled: T >= N,
+                    disabled: T >= v,
                     variant: "overlay-secondary",
                     size: "sm",
                     "aria-label": g.intl.string(g.t["9hMafy"])

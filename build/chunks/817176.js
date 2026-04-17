@@ -24,8 +24,8 @@ var i = n(627968),
     S = n(317560),
     I = n(533406),
     T = n(366523),
-    v = n(652215),
-    N = n(788868),
+    N = n(652215),
+    v = n(788868),
     y = n(985018),
     b = n(789901);
 let j = Object.freeze({
@@ -132,21 +132,21 @@ function D(e) {
         }
     }({
         sku: s,
-        priceSetAssignmentPurchaseType: r ? v.lid.DEFAULT : v.lid.GIFT
+        priceSetAssignmentPurchaseType: r ? N.lid.DEFAULT : N.lid.GIFT
     }), q = l.useCallback(e => {
         e.stopPropagation(), w?.(), (0, S.R)({
             skuId: s.id,
             applicationId: s.applicationId,
             isStorefront: !1,
             giftRecipient: a,
-            giftingOrigin: N.vQ.GUILD_CHANNEL,
+            giftingOrigin: v.vQ.GUILD_CHANNEL,
             analyticsLocations: P
         })
     }, [s.id, s.applicationId, a, P, w]), $ = l.useCallback(e => {
         e.stopPropagation(), U?.(), (0, I.a)(s, {
             isGift: !r,
             giftRecipient: a,
-            giftingOrigin: N.vQ.GUILD_CHANNEL
+            giftingOrigin: v.vQ.GUILD_CHANNEL
         }, {
             analyticsLocations: P,
             guildId: B

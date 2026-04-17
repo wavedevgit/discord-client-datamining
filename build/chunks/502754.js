@@ -37,8 +37,12 @@ function S(e) {
         treatSpam: d,
         gotoChannel: c
     } = e, u = (0, r.rm)(n.id ?? ""), h = l.useCallback(e => {
+        if (("Enter" === e.key || " " === e.key) && e.target === e.currentTarget) {
+            e.preventDefault(), c(e, n.id);
+            return
+        }
         "ArrowLeft" === e.key && document.querySelector(`[data-recents-channel="${t.id}"]`)?.focus()
-    }, [t.id]), _ = T.includes(n.type);
+    }, [t.id, c, n.id]), _ = T.includes(n.type);
     return (0, i.jsx)(o.vN3, {
         offset: N,
         children: (0, i.jsxs)("div", {
@@ -56,10 +60,9 @@ function S(e) {
                 compact: s,
                 animateAvatar: !1,
                 isGroupStart: a,
-                onKeyDown: h,
                 treatSpam: d
             })]
-        }, n.id)
+        })
     })
 }
 

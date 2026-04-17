@@ -86,6 +86,10 @@ function L(e) {
             tabIndex: 0,
             "data-recents-channel": t.id,
             onKeyDown: function(e) {
+                if (("Enter" === e.key || " " === e.key) && e.target === e.currentTarget) {
+                    e.preventDefault(), l(e);
+                    return
+                }
                 null != d && null != o && ("ArrowRight" === e.key && o.collapsed || "ArrowLeft" === e.key && !o.collapsed) && d?.(o)
             },
             children: [_ && null != o ? (0, i.jsx)(O, {

@@ -32,8 +32,8 @@ function I(e) {
     }, []);
     let I = (0, r.bG)([A.A, m.default], () => !!a()(A.A.getMessages(t.id).toArray()).reverse().find(e => e.author.id !== m.default.getId() && e.state === E.cmJ.SENT && !(0, f.A)(e))),
         T = (0, r.bG)([g.default], () => g.default.getUser(t.isPrivate() ? t.getRecipientId() : null)),
-        v = p.Ay.useName(T) ?? C.intl.string(C.t.y1Wu2f),
-        N = (0, r.bG)([u.A], () => u.A.getStickerById(S)),
+        N = p.Ay.useName(T) ?? C.intl.string(C.t.y1Wu2f),
+        v = (0, r.bG)([u.A], () => u.A.getStickerById(S)),
         y = l.useCallback(async () => {
             if (null == n || "" === n) try {
                 await c.A.sendGreetMessage(t.id, S), _.default.track(E.HAw.DM_EMPTY_ACTION, {
@@ -47,7 +47,7 @@ function I(e) {
             }
         }, [t.id, t.type, n]),
         b = C.intl.formatToPlainString(C.t.m0zYbV, {
-            username: v
+            username: N
         }),
         j = null != n && "" !== n ? (0, i.jsx)(o.Text, {
             className: x.z3,
@@ -62,7 +62,7 @@ function I(e) {
             "aria-label": C.intl.string(C.t.pJObYI),
             onClick: y,
             children: [(0, i.jsx)(h.A, {
-                sticker: N,
+                sticker: v,
                 size: 24
             }), (0, i.jsx)(o.Text, {
                 className: x.Qq,
@@ -73,7 +73,7 @@ function I(e) {
     }) : (0, i.jsxs)("div", {
         className: x.nj,
         children: [(0, i.jsx)(h.A, {
-            sticker: N,
+            sticker: v,
             size: 160,
             className: x.Xr
         }), (0, i.jsx)(o.Button, {

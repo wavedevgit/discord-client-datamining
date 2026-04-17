@@ -24,8 +24,8 @@ var i = n(627968),
     S = n(260821),
     I = n(226698),
     T = n(376708),
-    v = n(715757),
-    N = n(390897),
+    N = n(715757),
+    v = n(390897),
     y = n(704860),
     b = n(152007),
     j = n(867455),
@@ -55,7 +55,7 @@ function B(e) {
         variant: "secondary",
         text: s ? U.intl.string(k.default["2Y4vkk"]) : U.intl.string(k.default.YIbR4r),
         onClick: () => {
-            !0 === o.w.get(N.f) ? u() : (0, d.mMO)(async () => {
+            !0 === o.w.get(v.f) ? u() : (0, d.mMO)(async () => {
                 let {
                     default: e
                 } = await Promise.resolve().then(n.bind(n, 390897));
@@ -87,14 +87,14 @@ function V(e) {
     } = e, {
         ref: I,
         width: T
-    } = (0, m.Ay)(), [N, k] = l.useState(3), [V, W] = l.useState(!n), [K, z] = (0, A.A)(!1, 2e3), Y = (0, r.bG)([R.A], () => R.A.getChannel(t), [t]), {
+    } = (0, m.Ay)(), [v, k] = l.useState(3), [V, W] = l.useState(!n), [K, z] = (0, A.A)(!1, 2e3), Y = (0, r.bG)([R.A], () => R.A.getChannel(t), [t]), {
         firstMessage: J
     } = (0, O.OA)(Y), q = (0, r.bG)([b.A], () => b.A.hasJoined(t)), {
         disableReactionUpdates: $,
         disableReactionCreates: Z,
         isLurking: X,
         isPendingMember: Q
-    } = (0, f.A)(Y), ee = (0, v.W1)(Y), et = (0, r.bG)([R.A], () => R.A.getChannel(o)), en = (0, D.Ck)(et), ei = (0, r.bG)([g.A], () => g.A.shouldDisplayPrompt(t) && !0 === n, [t, n]), el = l.useCallback(e => {
+    } = (0, f.A)(Y), ee = (0, N.W1)(Y), et = (0, r.bG)([R.A], () => R.A.getChannel(o)), en = (0, D.Ck)(et), ei = (0, r.bG)([g.A], () => g.A.shouldDisplayPrompt(t) && !0 === n, [t, n]), el = l.useCallback(e => {
         let t = e[0];
         if (null != t && n) {
             let e = t.intersectionRect,
@@ -166,7 +166,7 @@ function V(e) {
                     disableReactionUpdates: $,
                     isLurking: X,
                     isPendingMember: Q,
-                    maxReactions: N,
+                    maxReactions: v,
                     className: G.Br,
                     useChatFontScaling: !1,
                     isForumToolbar: !0,

@@ -25,8 +25,8 @@ var l = n(503698),
     S = n(709309),
     I = n(153331),
     T = n(33852),
-    v = n(834425),
-    N = n(284525),
+    N = n(834425),
+    v = n(284525),
     y = n(443493),
     b = n(462226),
     j = n(913948),
@@ -128,7 +128,7 @@ let w = (0, d.A)(e => {
                     activity: t,
                     variant: J ? "secondary" : G,
                     onAction: H
-                }), (0, i.jsx)(N.A, {
+                }), (0, i.jsx)(v.A, {
                     activity: t,
                     embeddedActivity: n,
                     user: l,
@@ -139,7 +139,7 @@ let w = (0, d.A)(e => {
                     user: l,
                     variant: J ? "secondary" : G,
                     onAction: H
-                }), (0, i.jsx)(v.A, {
+                }), (0, i.jsx)(N.A, {
                     user: l,
                     activity: t,
                     variant: J ? "secondary" : G,

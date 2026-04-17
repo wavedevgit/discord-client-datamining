@@ -145,7 +145,7 @@ class I extends l.PureComponent {
             isDetectingInput: I
         } = this.state, T = e && !E ? x.intl.string(x.t["9viE2A"]) : null;
         E && e && !d && this._micTestStop();
-        let v = r.length >= s.length ? r : s;
+        let N = r.length >= s.length ? r : s;
         return (0, i.jsxs)("div", {
             className: a()(S.kL, p),
             children: [(0, i.jsx)(m.D0$, {
@@ -165,7 +165,7 @@ class I extends l.PureComponent {
                                 buttonRef: A,
                                 size: c,
                                 variant: o,
-                                text: v
+                                text: N
                             })
                         }), (0, i.jsx)(h.m, {
                             text: T,

@@ -24,8 +24,8 @@ var i = n(627968),
     S = n(253932),
     I = n(761640),
     T = n(629016),
-    v = n(186111),
-    N = n(576705),
+    N = n(186111),
+    v = n(576705),
     y = n(461213),
     b = n(203982),
     j = n(723702),
@@ -51,7 +51,7 @@ let k = l.memo(function(e) {
         location: "ChannelAttachButton"
     }), {
         onShareClick: X
-    } = (0, _.A)(s.id), Q = (0, r.bG)([p.HP], () => p.HP.hasHotspot(p._2.CLIPS_CHANNEL_ATTACH_REMINDER)), ee = (0, o.red)(e => (0, o.fDT)(e, P.nm)), et = (0, r.bG)([v.A], () => v.A.hasLayers()), en = (0, r.bG)([m.A], () => m.A.hasClips()), [ei, el] = l.useState(null), es = (0, h.sw)() && (z || en), ea = s.isPrivate(), er = (0, r.bG)([N.A], () => ea || N.A.can(O.xBc.ATTACH_FILES, s) && N.A.can(O.xBc.SEND_MESSAGES, s)), eo = (0, d.A)(Y);
+    } = (0, _.A)(s.id), Q = (0, r.bG)([p.HP], () => p.HP.hasHotspot(p._2.CLIPS_CHANNEL_ATTACH_REMINDER)), ee = (0, o.red)(e => (0, o.fDT)(e, P.nm)), et = (0, r.bG)([N.A], () => N.A.hasLayers()), en = (0, r.bG)([m.A], () => m.A.hasClips()), [ei, el] = l.useState(null), es = (0, h.sw)() && (z || en), ea = s.isPrivate(), er = (0, r.bG)([v.A], () => ea || v.A.can(O.xBc.ATTACH_FILES, s) && v.A.can(O.xBc.SEND_MESSAGES, s)), eo = (0, d.A)(Y);
 
     function ec() {
         (0, o.mMO)(async () => {

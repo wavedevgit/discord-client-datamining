@@ -26,8 +26,8 @@ var i = n(627968),
     S = n(540999),
     I = n(580745),
     T = n(661191),
-    v = n(521427),
-    N = n(141468),
+    N = n(521427),
+    v = n(141468),
     y = n(375901),
     b = n(143413),
     j = n(763754),
@@ -122,7 +122,7 @@ function Q(e) {
         viewingChannelId: x
     } = e, I = n.type === J.lAJ.REPLY ? n.messageReference : void 0, {
         onFocus: T,
-        ...v
+        ...N
     } = (0, c.rm)(e.id ?? ""), {
         isFocused: y,
         handleFocus: R,
@@ -167,14 +167,14 @@ function Q(e) {
             "aria-label": q.intl.string(q.t.k5WiPf),
             children: q.intl.string(q.t.k5WiPf)
         }), (0, i.jsx)(M.A, {
-            ...v,
+            ...N,
             id: t,
             compact: m,
             className: a()(A, {
                 [$.iU]: !0,
                 [$.HJ]: !m,
                 [$.mK]: n.mentioned,
-                [$.M1]: (0, N.ec)(n),
+                [$.M1]: (0, v.ec)(n),
                 [$.H4]: (0, b.A)(n),
                 [$._A]: n.id === p || n.type === J.lAJ.REPLY,
                 [$.wH]: es
@@ -278,9 +278,9 @@ let ee = l.memo(function(e) {
             ex(e), eg()
         }, [ex, eg]),
         eT = (0, d.bG)([I.A], () => I.A.isEditing(Z, E), [Z, E]),
-        ev = (0, d.bG)([h.A], () => h.A.keyboardModeEnabled),
-        eN = ed || eT || ev && ef,
-        ey = eN || ep,
+        eN = (0, d.bG)([h.A], () => h.A.keyboardModeEnabled),
+        ev = ed || eT || eN && ef,
+        ey = ev || ep,
         eb = (0, d.bG)([x.A], () => r.hasFlag(J.pr7.HAS_THREAD) && x.A.getChannel(T.default.castMessageIdAsChannelId(r.id))),
         ej = r.isFirstMessageInForumPost(y),
         eR = (0, _.S)((r.editedTimestamp ?? r.timestamp).valueOf()),
@@ -298,7 +298,7 @@ let ee = l.memo(function(e) {
             allowDevLinks: eM,
             previewLinkTarget: !0
         }),
-        eP = (0, P.A)(E, Z, ev),
+        eP = (0, P.A)(E, Z, eN),
         ew = (0, j.Ay)(r),
         eU = (0, d.bG)([p.A], () => p.A.getPendingReply(Z)),
         ek = (t = l.useRef(ee), l.useEffect(() => {
@@ -318,7 +318,7 @@ let ee = l.memo(function(e) {
         }),
         eK = l.useRef(window),
         ez = null != eV,
-        eY = (0, v.Nd)(y.guild_id, y, "ChatMessage");
+        eY = (0, N.Nd)(y.guild_id, y, "ChatMessage");
     n = r.type === J.lAJ.CUSTOM_GIFT ? "" : !eT && ez ? (0, F.A)(e, eL) : (0, V.A)(e, eL, eT), n = (0, i.jsx)(O.x, {
         value: ey,
         children: n
@@ -353,12 +353,12 @@ let ee = l.memo(function(e) {
                         [$.iU]: !0,
                         [$.HJ]: !X,
                         [$.mK]: r.mentioned,
-                        [$.M1]: (0, N.ec)(r),
+                        [$.M1]: (0, v.ec)(r),
                         [$.SH]: r.type === J.lAJ.NITRO_NOTIFICATION,
                         [$.Sg]: r.hasFlag(J.pr7.IS_GUILD_OFFICIAL) && eY,
                         [$.H4]: (0, b.A)(r),
                         [$._A]: !en && (eJ || r.type === J.lAJ.REPLY),
-                        [$.wH]: eN,
+                        [$.wH]: ev,
                         [$.$n]: eU?.message.id === r.id,
                         [$.$w]: r.isCommandType() && r.state === J.cmJ.SENDING,
                         [$.DX]: ez

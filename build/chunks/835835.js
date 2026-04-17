@@ -26,8 +26,8 @@ var i = n(627968),
     S = n(203982),
     I = n(81437),
     T = n(636922),
-    v = n(652215),
-    N = n(985018),
+    N = n(652215),
+    v = n(985018),
     y = n(251066);
 
 function b(e) {
@@ -96,7 +96,7 @@ class M extends l.PureComponent {
             children: (0, i.jsx)(u.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: N.intl.string(N.t.k5WiPf),
+                text: v.intl.string(v.t.k5WiPf),
                 onClick: this.handleClickJump,
                 loading: e
             })
@@ -116,7 +116,7 @@ class M extends l.PureComponent {
                 icon: u.PGe,
                 size: "sm",
                 variant: "secondary",
-                "aria-label": s ?? N.intl.string(N.t.cpT0Cq),
+                "aria-label": s ?? v.intl.string(v.t.cpT0Cq),
                 onClick: this.handleClickClose
             })
         }) : null
@@ -133,7 +133,7 @@ let L = d.Ay.connectStores([f.A], e => {
         channel: t
     } = e;
     return {
-        canManageMessages: null != t && f.A.can(v.xBc.MANAGE_MESSAGES, t)
+        canManageMessages: null != t && f.A.can(N.xBc.MANAGE_MESSAGES, t)
     }
 })(M);
 
@@ -153,7 +153,7 @@ function D(e) {
         listName: j
     } = e, R = l.useRef(null), M = (0, m.A)(j, R), L = (0, d.bG)([E.Ay], () => E.Ay.hasNotice()), D = (0, d.bG)([C.A], () => C.A.windowSize());
     l.useEffect(() => {
-        x.default.track(v.HAw.OPEN_POPOUT, {
+        x.default.track(N.HAw.OPEN_POPOUT, {
             type: t
         })
     }, [t]), l.useEffect(() => {
@@ -168,8 +168,8 @@ function D(e) {
                 animate: !0
             })
         }
-        return S._.subscribe(v.jej.SCROLL_PAGE_DOWN, t), S._.subscribe(v.jej.SCROLL_PAGE_UP, e), () => {
-            S._.unsubscribe(v.jej.SCROLL_PAGE_DOWN, t), S._.unsubscribe(v.jej.SCROLL_PAGE_UP, e)
+        return S._.subscribe(N.jej.SCROLL_PAGE_DOWN, t), S._.subscribe(N.jej.SCROLL_PAGE_UP, e), () => {
+            S._.unsubscribe(N.jej.SCROLL_PAGE_DOWN, t), S._.unsubscribe(N.jej.SCROLL_PAGE_UP, e)
         }
     }, []);
     let O = l.useCallback(() => {
@@ -196,7 +196,7 @@ function D(e) {
             variant: "secondary",
             size: "sm",
             fullWidth: !0,
-            text: N.intl.string(N.t.XBlaiC),
+            text: v.intl.string(v.t.XBlaiC),
             onClick: h
         })
     }) : (0, i.jsx)("div", {
@@ -270,7 +270,7 @@ function O(e) {
         getProTip: C,
         scrollerClassName: x,
         className: S,
-        onCloseMessage: N,
+        onCloseMessage: v,
         listName: b,
         closeAriaLabel: j
     } = e, R = (0, d.bG)([p.A], () => {
@@ -284,7 +284,7 @@ function O(e) {
                 id: i,
                 channel_id: l
             } = e, s = _.A.getChannel(l);
-            null != s && (h.A.trackJump(l, i, t), (0, g.pX)(v.BVt.CHANNEL(s.getGuildId(), l, i))), u?.(n)
+            null != s && (h.A.trackJump(l, i, t), (0, g.pX)(N.BVt.CHANNEL(s.getGuildId(), l, i))), u?.(n)
         };
         (0, I.A)(e, i) && !R && i()
     }
@@ -326,7 +326,7 @@ function O(e) {
                     jumping: R,
                     canCloseAllMessages: m,
                     jumpTo: M,
-                    onCloseMessage: N,
+                    onCloseMessage: v,
                     closeAriaLabel: j
                 })]
             }, t.id)), l)

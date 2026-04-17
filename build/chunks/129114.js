@@ -30,7 +30,7 @@ function f(e) {
         analyticsLocations: S,
         onCardClick: I,
         onButtonClick: T
-    } = e, [v, N] = l.useState(!1), {
+    } = e, [N, v] = l.useState(!1), {
         guildId: y
     } = (0, u.nG)(t.applicationId), b = l.useCallback(() => {
         I?.(), (0, h.R)({
@@ -68,17 +68,17 @@ function f(e) {
         "aria-label": _.intl.formatToPlainString(_.t.ZBB4Ty, {
             productName: (0, s.TC)(t)
         }),
-        onHoverOrFocusChange: N,
+        onHoverOrFocusChange: v,
         children: [(0, i.jsx)(c.A, {
             spec: p,
             onClick: j,
-            isHoveringOrFocusing: v,
+            isHoveringOrFocusing: N,
             label: R,
             icon: M
         }), (0, i.jsx)(o.A, {
             spec: p,
             sku: t,
-            isCardHovered: v,
+            isCardHovered: N,
             location: "SocialLayerGiftingVoicePanelSkuItemCard",
             replacedElement: E && !g && f === a.uS.WISHLIST ? (0, i.jsx)(d.n, {
                 spec: p,

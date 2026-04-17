@@ -24,8 +24,8 @@ var i = n(627968),
     S = n(71393),
     I = n(576705),
     T = n(287809),
-    v = n(488926),
-    N = n(427262),
+    N = n(488926),
+    v = n(427262),
     y = n(314307),
     b = n(234567),
     j = n(652215),
@@ -38,7 +38,7 @@ function D(e) {
         channel: t
     } = e, [n, s] = l.useState(!1), r = (0, g.Ay)(t, !0), D = t.guild_id, O = (0, d.bG)([x.A], () => null != D ? x.A.getSortedRoles(D) : void 0), P = (0, d.bG)([T.default, S.A], () => T.default.getUser(S.A.getGuild(D)?.ownerId)), w = l.useMemo(() => null != O ? O.filter(e => !(0, C.Oy)(e)) : [], [O]), U = l.useMemo(() => o()(w).filter(e => {
         if (null == D) return !1;
-        let n = v.aH({
+        let n = N.aH({
             forceRoles: {
                 [e.id]: e
             },
@@ -53,12 +53,12 @@ function D(e) {
             null != t && (e[t.id] = t)
         }
         return o()(e).filter(e => {
-            let n = v.$3({
+            let n = N.$3({
                     permission: j.xBc.ADMINISTRATOR,
                     user: e,
                     context: t
                 }),
-                i = t.permissionOverwrites[e.id] ?? v.x3,
+                i = t.permissionOverwrites[e.id] ?? N.x3,
                 l = c.zy(i.allow, j.xBc.VIEW_CHANNEL);
             return n || l
         }).value()
@@ -107,7 +107,7 @@ function D(e) {
                     users: k
                 });
                 let e = k[0],
-                    n = N.Ay.getName(e);
+                    n = v.Ay.getName(e);
                 return (0, i.jsxs)("div", {
                     className: M.HD,
                     children: [(0, i.jsx)(h.euF, {

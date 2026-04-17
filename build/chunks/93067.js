@@ -46,11 +46,11 @@ function _(e) {
         }
     }(s);
     p = null != f ? `${t} ${f}` : t;
-    let [C] = l.useState(new r.Ep), [x, S] = l.useState(!1), [I, T] = l.useState(!1), v = l.useCallback(() => {
+    let [C] = l.useState(new r.Ep), [x, S] = l.useState(!1), [I, T] = l.useState(!1), N = l.useCallback(() => {
         C.start(250, () => {
             S(!1)
         }, !1)
-    }, [C, S]), N = l.useCallback(() => {
+    }, [C, S]), v = l.useCallback(() => {
         C.stop(), S(!0)
     }, [C, S]), y = l.useCallback(() => {
         T(!0)
@@ -61,8 +61,8 @@ function _(e) {
         renderPopout: () => (0, i.jsx)(h.A, {
             children: (0, i.jsxs)("div", {
                 className: g.SW,
-                onMouseEnter: N,
-                onMouseLeave: v,
+                onMouseEnter: v,
+                onMouseLeave: N,
                 children: [t, null != E && (0, i.jsx)(o.Text, {
                     variant: "text-sm/semibold",
                     color: "text-muted",
@@ -79,8 +79,8 @@ function _(e) {
                 children: (0, i.jsx)("div", {
                     ref: _,
                     tabIndex: 0,
-                    onMouseEnter: N,
-                    onMouseLeave: v,
+                    onMouseEnter: v,
+                    onMouseLeave: N,
                     onFocus: y,
                     onBlur: b,
                     className: a()(n, g.zr),

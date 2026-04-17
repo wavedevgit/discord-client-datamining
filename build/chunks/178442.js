@@ -58,7 +58,7 @@ function C(e) {
         childrenAsSubtitle: S,
         connectionStatusTextVariant: I,
         hasVideo: T
-    } = e, v = l.useRef(null), N = s === A.S7L.RTC_CONNECTED, y = l.useCallback(e => (0, i.jsx)(h.A, {
+    } = e, N = l.useRef(null), v = s === A.S7L.RTC_CONNECTED, y = l.useCallback(e => (0, i.jsx)(h.A, {
         ...e,
         channelId: x
     }), [x]), {
@@ -69,9 +69,9 @@ function C(e) {
         className: g.pe,
         children: [(0, i.jsx)("div", {
             className: a()(g.yH, p[t], f),
-            ref: v,
+            ref: N,
             children: (0, i.jsx)(o.YNO, {
-                targetElementRef: v,
+                targetElementRef: N,
                 renderPopout: y,
                 position: "top",
                 children: e => {
@@ -79,7 +79,7 @@ function C(e) {
                         onClick: l
                     } = e;
                     return (0, i.jsxs)(i.Fragment, {
-                        children: [N && (0, i.jsx)(r.m, {
+                        children: [v && (0, i.jsx)(r.m, {
                             text: t !== A.bFR.UNKNOWN && null != n ? `${n.toFixed(0)} ms` : null,
                             children: (0, i.jsx)(o.DUT, {
                                 className: g.xr,

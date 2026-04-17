@@ -19,14 +19,15 @@ var i = n(627968),
 let A = e => {
     let {
         navBarSections: t,
-        activeSectionId: n
-    } = e, A = {
+        activeSectionId: n,
+        isAnimationComplete: A
+    } = e, p = {
         [g.k.HOME]: x.intl.string(x.t.uGRXjS),
         [g.k.WHATS_NEW]: x.intl.string(x.t["mfcR/v"]),
         [g.k.BEST_OF_NITRO]: x.intl.string(x.t.xQKkE8),
         [g.k.PLANS]: x.intl.string(x.t.wyNMnm),
         [g.k.COMPARE]: x.intl.string(x.t.pwD7If)
-    }, p = (0, l.bG)([c.default], () => c.default.getCurrentUser()), T = (0, d.Gh)("premium_marketing_nav_bar") && null != p, f = s.useRef(null), S = Object.values(t).sort((e, t) => e.order - t.order);
+    }, T = (0, l.bG)([c.default], () => c.default.getCurrentUser()), f = (0, d.Gh)("premium_marketing_nav_bar") && null != T, S = s.useRef(null), E = Object.values(t).sort((e, t) => e.order - t.order);
     return (0, i.jsxs)(o.A, {
         className: h.TQ,
         transparent: !0,
@@ -39,9 +40,9 @@ let A = e => {
                     colorClass: h.oG
                 }), (0, i.jsx)("div", {
                     className: h.zc,
-                    children: S.map(e => {
+                    children: E.map(e => {
                         let t = n === e.id,
-                            s = A[e.id];
+                            s = p[e.id];
                         return (0, i.jsxs)(r.DUT, {
                             className: h.S0,
                             onClick: e.scrollToSection,
@@ -57,8 +58,8 @@ let A = e => {
                 })]
             }), (0, i.jsxs)("div", {
                 className: h.MQ,
-                children: [T && (0, i.jsx)(m.l, {
-                    ref: f,
+                children: [f && (0, i.jsx)(m.l, {
+                    ref: S,
                     size: "sm",
                     location: a.A.PREMIUM_WISHLIST_MARKETING_PAGE
                 }), (0, i.jsx)(u.A, {
@@ -66,8 +67,8 @@ let A = e => {
                     variant: "overlay-secondary"
                 })]
             })]
-        }), T && (0, i.jsx)(_.O, {
-            targetElementRef: f
+        }), f && A && (0, i.jsx)(_.O, {
+            targetElementRef: S
         })]
     })
 }

@@ -29,9 +29,9 @@ function S(e) {
             user: I
         } = e,
         T = (0, s.bG)([o.A], () => o.A.useReducedMotion),
-        v = (0, u.Ay)(n) ?? "",
+        N = (0, u.Ay)(n) ?? "",
         {
-            avatarDecorationSrc: N,
+            avatarDecorationSrc: v,
             eventHandlers: y,
             isAnimating: b
         } = (0, f.A)({
@@ -59,20 +59,20 @@ function S(e) {
                 channel: n,
                 size: r._3J.SIZE_80,
                 animated: t,
-                "aria-label": v
+                "aria-label": N
             })
         }) : (0, i.jsx)(r.euF, {
-            "aria-label": v,
+            "aria-label": N,
             size: r._3J.SIZE_80,
             src: (0, d.Y)(n, 80, t),
-            avatarDecoration: N
+            avatarDecoration: v
         })), (0, i.jsx)(E.cr, {
             children: D ? (0, i.jsx)(m.A, {
-                userName: v,
+                userName: N,
                 displayNameStyles: I?.displayNameStyles,
                 effectDisplayType: j ? h.G.ANIMATED : h.G.STATIC,
                 loop: !0
-            }) : v
+            }) : N
         }), (0, i.jsx)(E.j1, {
             children: S
         }), n.isMultiUserDM() && (0, i.jsxs)(a.e2v, {

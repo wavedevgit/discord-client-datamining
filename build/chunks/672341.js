@@ -24,8 +24,8 @@ var i = n(627968),
     S = n(452082),
     I = n(357179),
     T = n(74114),
-    v = n(221059),
-    N = n(513272),
+    N = n(221059),
+    v = n(513272),
     y = n(881020),
     b = n(637384),
     j = n(383233),
@@ -108,14 +108,14 @@ function en(e) {
         eA = (0, F.r)(l),
         eg = m.length > 0 && m.first()?.isFirstMessageInForumPost(l),
         e_ = (0, o.cI)(l),
-        ep = (0, s.bG)([N.A], () => N.A.shouldShowTopicsBar() && !ed),
+        ep = (0, s.bG)([v.A], () => v.A.shouldShowTopicsBar() && !ed),
         ef = (0, T.l)(l.id),
         eE = (0, S.j)(l.id, X.Rx),
         eC = (0, u.E)(l.id),
         ex = (0, G.A)(),
         eS = function(e, t) {
             if (e.isDM() && null != t)
-                if (t.type === x._j.STRANGER_DANGER) return (0, i.jsx)(v.e, {
+                if (t.type === x._j.STRANGER_DANGER) return (0, i.jsx)(N.e, {
                     channelId: e.id,
                     warningId: t.id,
                     senderId: e.getRecipientId()
@@ -136,9 +136,9 @@ function en(e) {
             postId: l.id
         }) : null,
         eT = (0, f.A)(l.id),
-        ev = (0, E.W1)(l);
+        eN = (0, E.W1)(l);
     (0, J.A)();
-    let eN = null,
+    let ev = null,
         ey = [],
         eb = el.map((e, t) => {
             if (e.type === Z.TZK.DIVIDER) {
@@ -178,9 +178,9 @@ function en(e) {
                 }, e.key)
             }
             if (null != eo && eo > e.content.timestamp.getTime() * O.A.Millis.SECOND) return;
-            e.type === Z.TZK.MESSAGE && null == eN && (eN = e);
-            let n = e.groupId === eN?.groupId ? eN.content.id : e.groupId,
-                s = ev && e.content.isFirstMessageInForumPost(l),
+            e.type === Z.TZK.MESSAGE && null == ev && (ev = e);
+            let n = e.groupId === ev?.groupId ? ev.content.id : e.groupId,
+                s = eN && e.content.isFirstMessageInForumPost(l),
                 a = e.type === Z.TZK.THREAD_STARTER_MESSAGE ? B.VO : B.Ay;
             return (0, i.jsx)(a, {
                 compact: ei && !s,

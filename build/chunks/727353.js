@@ -35,8 +35,8 @@ function S(e) {
         canWatch: S,
         unavailableReason: I,
         onWatchStream: T,
-        onAction: v,
-        showHeader: N = !1,
+        onAction: N,
+        showHeader: v = !1,
         hideTip: y = !1,
         className: b
     } = e, j = (0, a.bG)([d.A], () => {
@@ -48,7 +48,7 @@ function S(e) {
     }, [u]), R = null != l && null != l.name ? E.intl.formatToPlainString(E.t["4CQq9Q"], {
         name: l.name
     }) : E.intl.string(E.t["Jpkr/q"]), M = (0, i.jsxs)(i.Fragment, {
-        children: [N && (0, i.jsxs)("div", {
+        children: [v && (0, i.jsxs)("div", {
             className: C.WG,
             children: [null != j && (0, i.jsx)(m.A, {
                 game: j,
@@ -102,7 +102,7 @@ function S(e) {
                         section: f.JJy.STREAM_VIEWER_POPOUT
                     }
                 },
-                onAction: v
+                onAction: N
             }) : (0, i.jsx)(c.A, {
                 type: o.M.STREAM_PREVIEW,
                 applicationStream: t,
@@ -110,7 +110,7 @@ function S(e) {
                 guildId: t.guildId,
                 channelId: t.channelId,
                 className: C.lx,
-                onAction: v
+                onAction: N
             }), !y && (0, i.jsx)(h.A, {
                 type: h.A.Types.INLINE,
                 className: C.PP,
@@ -140,8 +140,8 @@ function I(e) {
         onAction: S,
         showHeader: I = !1,
         wrapperClassName: T
-    } = e, v = (0, a.bG)([g.A], () => g.A.getChannel(t.channelId));
-    return null == v ? null : (0, i.jsxs)("div", {
+    } = e, N = (0, a.bG)([g.A], () => g.A.getChannel(t.channelId));
+    return null == N ? null : (0, i.jsxs)("div", {
         className: s()(C.yt, T),
         children: [I && (0, i.jsxs)("div", {
             className: C.mg,
@@ -187,7 +187,7 @@ function I(e) {
                 showHeader: !1,
                 presenceActivity: n,
                 userId: d.id,
-                channel: v,
+                channel: N,
                 applicationStream: t,
                 onAction: S
             }) : (0, i.jsx)(c.A, {

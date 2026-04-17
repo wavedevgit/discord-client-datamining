@@ -24,8 +24,8 @@ var i, l = n(627968),
     S = n(692969),
     I = n(263063),
     T = n(804630),
-    v = n(290987),
-    N = n(763758),
+    N = n(290987),
+    v = n(763758),
     y = n(82149),
     b = n(994500),
     j = n(287809),
@@ -300,7 +300,7 @@ class J extends s.PureComponent {
         if (e.type === H.$pd.CUSTOM_STATUS) s = i;
         else if (!(0, O.A)(e))
             if (s = i, a = i, (0, P.A)(e) && null != i) {
-                let t = (t, n) => (0, l.jsx)(N.A, {
+                let t = (t, n) => (0, l.jsx)(v.A, {
                     artists: i,
                     linkClassName: V.bodyLink,
                     canOpen: null != e.sync_id,
@@ -366,9 +366,9 @@ class J extends s.PureComponent {
         } = e;
         return null == n ? null : (0, D.A)(e) ? (0, l.jsx)(z, {
             timestamps: n
-        }) : (0, l.jsx)(v.Ay, {
+        }) : (0, l.jsx)(N.Ay, {
             start: n.start,
-            location: v.Ay.Locations.USER_ACTIVITY,
+            location: N.Ay.Locations.USER_ACTIVITY,
             className: V.playTime,
             isApplicationStreaming: null != t
         })

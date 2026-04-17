@@ -1,6 +1,6 @@
 /** chunk id: 38198 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => v
 });
 var i = n(627968),
     l = n(64700),
@@ -24,12 +24,12 @@ var i = n(627968),
     S = n(49999),
     I = n(412136),
     T = n(985018);
-let v = /(.*)```(\w+)\n(.*)```(.*)/s;
+let N = /(.*)```(\w+)\n(.*)```(.*)/s;
 
-function N(e) {
+function v(e) {
     let {
         channel: t,
-        options: N,
+        options: v,
         onFileUpload: y,
         onClose: b,
         onSelect: j,
@@ -75,7 +75,7 @@ function N(e) {
         let e = M,
             n = "txt",
             i = "",
-            l = M.match(v);
+            l = M.match(N);
         null != l && (i = l[1], n = l[2], e = l[3], i += l[4]), (0, f.R)([(0, p.VE)(new Blob([e], {
             type: "text/plain"
         }), `message.${n}`, "text/plain")], t, R), _._.dispatchToLastSubscribed(x.jej.CLEAR_TEXT), "" !== i && _._.dispatchToLastSubscribed(x.jej.INSERT_TEXT, {
@@ -94,7 +94,7 @@ function N(e) {
         navId: "channel-attach",
         onClose: b,
         "aria-label": T.intl.string(T.t.Xm41aV),
-        children: N.map(function(e) {
+        children: v.map(function(e) {
             switch (e.type) {
                 case C.v.UPLOAD_A_FILE:
                     return (0, i.jsx)(r.Drp, {
