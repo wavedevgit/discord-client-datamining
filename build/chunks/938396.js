@@ -17,8 +17,8 @@ var a = l(627968),
     x = l(309954),
     b = l(287809),
     y = l(975571),
-    f = l(474090),
-    g = l(94264),
+    g = l(474090),
+    f = l(94264),
     v = l(235365),
     _ = l(566119),
     E = l(788868),
@@ -27,14 +27,14 @@ var a = l(627968),
     S = l(490285),
     T = l(985018),
     A = l(757705),
-    P = l(268920),
-    k = l(633217),
+    k = l(268920),
+    P = l(633217),
     I = l(909340);
 let R = () => (0, a.jsx)("div", {
     className: A.s,
     children: (0, a.jsx)(p.A, {
-        src: k.A,
-        fallbackImage: P.A,
+        src: P.A,
+        fallbackImage: k.A,
         className: A.Cb
     })
 });
@@ -64,10 +64,10 @@ function O(e) {
     } = (0, m.F)({
         location: "PremiumTenureRewardsOrbsBalancePopover"
     }), j = (0, s.bG)([b.default], () => b.default.getCurrentUser()), {
-        balance: P
-    } = (0, x.W)(), k = !(0, f.ki)(j), O = n.useMemo(() => {
-        let e = (0, f.YE)(j, E.PremiumTypes.TIER_2);
-        if (!v || k) return null;
+        balance: k
+    } = (0, x.W)(), P = !(0, g.ki)(j), O = n.useMemo(() => {
+        let e = (0, g.YE)(j, E.PremiumTypes.TIER_2);
+        if (!v || P) return null;
         if (e && null != _) {
             let e = (0, o.default)(new Date(_.next_reward_date), new Date);
             return (0, a.jsxs)(a.Fragment, {
@@ -78,11 +78,11 @@ function O(e) {
                         days: Math.max(1, e),
                         deepLinkToNitroOrbs: N
                     })
-                }), (0, a.jsx)(g.A, {})]
+                }), (0, a.jsx)(f.A, {})]
             })
         }
         return null
-    }, [j, k, _, v]), L = (P ?? 0) >= 4100;
+    }, [j, P, _, v]), L = (k ?? 0) >= 4100;
     return (0, a.jsx)(d.x, {
         targetElementRef: t,
         shouldShow: l,
@@ -106,12 +106,12 @@ function O(e) {
                         className: A.hQ,
                         children: [(0, a.jsx)(R, {}), (0, a.jsxs)("div", {
                             className: A.y$,
-                            children: [(P ?? 0) > 0 && (0, a.jsxs)("div", {
+                            children: [(k ?? 0) > 0 && (0, a.jsxs)("div", {
                                 className: A.E2,
                                 children: [(0, a.jsx)(u.EYj, {
                                     variant: "display-lg",
                                     className: A.K,
-                                    children: P ?? 0
+                                    children: k ?? 0
                                 }), (0, a.jsx)(u.EYj, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
@@ -126,9 +126,9 @@ function O(e) {
                             fullWidth: !0
                         }), (0, a.jsx)(u.EYj, {
                             variant: "text-xs/normal",
-                            color: k ? "text-default" : "text-muted",
+                            color: P ? "text-default" : "text-muted",
                             className: A.CU,
-                            children: k ? T.intl.format(S.default.juvXqj, {
+                            children: P ? T.intl.format(S.default.juvXqj, {
                                 deepLinkToNitroOrbs: M
                             }) : T.intl.format(S.default.fhAVek, {
                                 helpdeskArticle: D

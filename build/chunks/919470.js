@@ -63,8 +63,8 @@ let p = {
             showProgress: x,
             progressCircleText: b,
             progressCirclePercent: y,
-            progressCircleUrgency: f,
-            delay: g,
+            progressCircleUrgency: g,
+            delay: f,
             size: v,
             gradientColor: _,
             estimatedTooltipHeight: E
@@ -81,12 +81,12 @@ let p = {
             if (null == S) return "";
             let e = c.VD[S];
             return (u.intl.string(u.t.lG6a5x) + " " + u.intl.string(e.nameUnformatted)).toLocaleUpperCase()
-        }, [S]), P = n.useMemo(() => {
+        }, [S]), k = n.useMemo(() => {
             if (!r || null == T) return;
             let e = x ? {
                 progressCircleText: b,
                 progressCirclePercent: y,
-                progressCircleUrgency: f
+                progressCircleUrgency: g
             } : {};
             return {
                 type: "dynamic",
@@ -98,17 +98,17 @@ let p = {
                     ...e
                 }
             }
-        }, [r, T, A, x, b, y, f]), k = {
+        }, [r, T, A, x, b, y, g]), P = {
             title: t,
             body: l,
-            graphic: P,
+            graphic: k,
             actions: n.useMemo(() => {
                 if (m) return [{
                     text: "Got it",
                     variant: "primary"
                 }]
             }, [m]),
-            delay: g,
+            delay: f,
             size: v,
             gradientColor: n.useMemo(() => "string" == typeof _ && _ in p ? p[_] : _, [_]),
             estimatedTooltipHeight: E
@@ -129,7 +129,7 @@ let p = {
                 },
                 children: [(0, a.jsx)(s.L, {
                     targetElementRef: C,
-                    ...k,
+                    ...P,
                     children: (0, a.jsx)(o.Button, {
                         buttonRef: C,
                         variant: "primary",
@@ -137,7 +137,7 @@ let p = {
                     })
                 }), (0, a.jsx)(s.L, {
                     targetElementRef: j,
-                    ...k,
+                    ...P,
                     children: (0, a.jsx)(o.Button, {
                         buttonRef: j,
                         variant: "primary",

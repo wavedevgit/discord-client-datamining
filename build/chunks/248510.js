@@ -25,8 +25,8 @@ let x = {
                 orientation: l,
                 title: m,
                 autoplay: x
-            } = e, b = (0, r.yK)([c.A, u.default], () => c.A.getFriendIDs().map(e => u.default.getUser(e)).filter(p.Vq)), [y, f] = n.useState(new Set), g = n.useCallback((e, t) => {
-                f(l => {
+            } = e, b = (0, r.yK)([c.A, u.default], () => c.A.getFriendIDs().map(e => u.default.getUser(e)).filter(p.Vq)), [y, g] = n.useState(new Set), f = n.useCallback((e, t) => {
+                g(l => {
                     let a = new Set(l);
                     return t ? a.add(e) : a.delete(e), a
                 })
@@ -86,7 +86,7 @@ let x = {
                                 className: h.nM,
                                 role: "checkbox",
                                 "aria-checked": t,
-                                onClick: () => g(e.id, !t),
+                                onClick: () => f(e.id, !t),
                                 children: [(0, a.jsx)(i.Lc, {
                                     value: t,
                                     size: 16

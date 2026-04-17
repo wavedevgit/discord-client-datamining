@@ -9,7 +9,7 @@ var a = l(627968),
     o = l(914410),
     s = l(252561);
 let d = () => {
-    let [e, t] = n.useState(0), [l, d] = n.useState(4), [c, u] = n.useState(2), [p, m] = n.useState(o.fh.LIGHT), [h, x] = n.useState(o.qP.BLUE), [b, y] = n.useState("darkslategray"), [f, g] = n.useState("blanchedalmond"), [v, _] = n.useState("pink"), [E, C] = n.useState(!0), j = n.useMemo(() => Object.entries(o.fh).map(e => {
+    let [e, t] = n.useState(0), [l, d] = n.useState(4), [c, u] = n.useState(2), [p, m] = n.useState(o.fh.LIGHT), [h, x] = n.useState(o.qP.BLUE), [b, y] = n.useState("darkslategray"), [g, f] = n.useState("blanchedalmond"), [v, _] = n.useState("pink"), [E, C] = n.useState(!0), j = n.useMemo(() => Object.entries(o.fh).map(e => {
         let [t, l] = e;
         return {
             id: l,
@@ -34,7 +34,7 @@ let d = () => {
             override: {
                 default: {
                     background: b,
-                    gradientStart: f,
+                    gradientStart: g,
                     gradientEnd: v
                 }
             },
@@ -115,9 +115,9 @@ let d = () => {
             })
         }), (0, a.jsx)(s.MG, {
             children: (0, a.jsx)(i.ksK, {
-                value: f,
+                value: g,
                 onChange: e => {
-                    g(e)
+                    f(e)
                 },
                 label: "Gradient Start"
             })

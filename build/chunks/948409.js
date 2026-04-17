@@ -17,8 +17,8 @@ var a = l(627968),
     x = l(252561),
     b = l(689614),
     y = l(652215),
-    f = l(818348),
-    g = l(76488);
+    g = l(818348),
+    f = l(76488);
 let v = (0, b.R)();
 async function _(e) {
     return (await i.Bo.post({
@@ -45,37 +45,37 @@ async function C(e, t) {
 }
 
 function j() {
-    let [e, t] = n.useState(!1), [l, i] = n.useState(!1), [u, b] = n.useState(null), [j, S] = n.useState(null), [T, A] = n.useState(v.defaultValue), [P, k] = n.useState(null), I = (0, r.bG)([m.A], () => m.A.paymentSources), R = (0, r.bG)([m.A], () => m.A.hasFetchedPaymentSources), N = (0, r.bG)([m.A], () => m.A.defaultPaymentSourceId);
+    let [e, t] = n.useState(!1), [l, i] = n.useState(!1), [u, b] = n.useState(null), [j, S] = n.useState(null), [T, A] = n.useState(v.defaultValue), [k, P] = n.useState(null), I = (0, r.bG)([m.A], () => m.A.paymentSources), R = (0, r.bG)([m.A], () => m.A.hasFetchedPaymentSources), N = (0, r.bG)([m.A], () => m.A.defaultPaymentSourceId);
     n.useEffect(() => {
         R || (0, c.$o)()
     }, [R]), n.useEffect(() => {
-        null != N && null == P && k(N)
-    }, [N, P]);
+        null != N && null == k && P(N)
+    }, [N, k]);
     let M = n.useRef(null);
     n.useEffect(() => {
         if (null == j || "" === j) {
-            M.current = P;
+            M.current = k;
             return
         }
-        if (P !== M.current) {
-            if (null == P || "" === P) {
-                M.current = P;
+        if (k !== M.current) {
+            if (null == k || "" === k) {
+                M.current = k;
                 return
             }
-            C(j, P).then(() => {
+            C(j, k).then(() => {
                 b(`Order updated successfully!
 Order ID: ${j}
 Payment source changed.`)
             }).catch(e => {
                 let t = e instanceof Error ? e.message : String(e);
                 b(`Failed to update order: ${t}`)
-            }), M.current = P
+            }), M.current = k
         }
-    }, [j, P]);
+    }, [j, k]);
     let D = n.useMemo(() => Object.values(I).map(e => {
             var t;
             let l, a = (t = e.type, null != (l = p.w[t]) ? l() : String(t));
-            if (e.type === f.he.CARD && "last4" in e) {
+            if (e.type === g.he.CARD && "last4" in e) {
                 let t = e.last4 ?? "",
                     l = e.brand ?? "Unknown";
                 a += ` - ****${t} (${l})`
@@ -87,11 +87,11 @@ Payment source changed.`)
             }
         }), [I]),
         O = async () => {
-            if (null == P || "" === P) return void b("Please select a payment source first.");
+            if (null == k || "" === k) return void b("Please select a payment source first.");
             if (null == T || "" === T || T === y.dJq) return void b("Please select a SKU ID.");
             t(!0), b(null), S(null);
             try {
-                let e = await (0, d.Aj)(T, P, "US", !1, {
+                let e = await (0, d.Aj)(T, k, "US", !1, {
                     gift_style: null,
                     recipient_id: void 0,
                     custom_message: void 0,
@@ -230,7 +230,7 @@ Error: ${t}`)
             direction: "vertical",
             children: [(0, a.jsx)(s.Text, {
                 variant: "text-md/normal",
-                className: g.cW,
+                className: f.cW,
                 children: "This section tests the orderSKU function, order signing, and 3DS authentication. Select SKU ID and payment source from the dropdowns below. Check the console for detailed logs."
             }), (0, a.jsxs)(s.nVY, {
                 label: "Configuration",
@@ -264,8 +264,8 @@ Error: ${t}`)
                     },
                     children: [(0, a.jsx)(s.l6P, {
                         selectionMode: "single",
-                        value: P,
-                        onSelectionChange: k,
+                        value: k,
+                        onSelectionChange: P,
                         options: D,
                         placeholder: "Select a payment source...",
                         disabled: !R,
@@ -274,7 +274,7 @@ Error: ${t}`)
                     }), !R && (0, a.jsx)(s.Text, {
                         variant: "text-sm/normal",
                         color: "text-muted",
-                        className: g.cW,
+                        className: f.cW,
                         children: "Loading payment sources..."
                     })]
                 })]
@@ -290,7 +290,7 @@ Error: ${t}`)
                     size: "sm",
                     text: e ? "Creating Order..." : "Create Order",
                     onClick: O,
-                    disabled: e || null == P || "" === P || null == T || "" === T || T === y.dJq
+                    disabled: e || null == k || "" === k || null == T || "" === T || T === y.dJq
                 }), (0, a.jsx)(o.$nd, {
                     variant: "secondary",
                     size: "sm",
@@ -299,7 +299,7 @@ Error: ${t}`)
                     disabled: l || null == j || "" === j
                 })]
             }), null != u && (0, a.jsx)("div", {
-                className: g.cW,
+                className: f.cW,
                 children: u.split("\n").map((e, t) => (0, a.jsx)(s.Text, {
                     variant: "text-md/normal",
                     style: {

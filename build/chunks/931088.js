@@ -26,16 +26,16 @@ let x = e => {
             renewalInvoiceDetails: m,
             errorOnCancel: x,
             errorOnRedeem: y,
-            setActiveStep: f,
-            activeStep: g
+            setActiveStep: g,
+            activeStep: f
         } = e, {
             analyticsLocations: v
-        } = (0, i.Ay)(r.A.USER_SETTINGS), [_, E] = n.useState(b(g));
+        } = (0, i.Ay)(r.A.USER_SETTINGS), [_, E] = n.useState(b(f));
         return (0, n.useEffect)(() => {
-            E(b(g))
-        }, [g]), (0, a.jsx)(u.CancellationContext.Provider, {
+            E(b(f))
+        }, [f]), (0, a.jsx)(u.CancellationContext.Provider, {
             value: {
-                setStep: f,
+                setStep: g,
                 premiumType: s,
                 onClose: l,
                 transitionState: t,

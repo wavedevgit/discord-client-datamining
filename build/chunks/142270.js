@@ -18,11 +18,11 @@ var a = l(627968),
     x = l(162097),
     b = l(219980),
     y = l(652215),
-    f = l(985018),
-    g = l(253167);
+    g = l(985018),
+    f = l(253167);
 let v = {
-        START: g.Vl,
-        END: g.Wk
+        START: f.Vl,
+        END: f.Wk
     },
     _ = e => {
         let {
@@ -30,24 +30,24 @@ let v = {
             ctaText: l,
             ctaOnClick: r,
             analyticsPage: _,
-            linkText: E = f.intl.string(f.t.XRdyjz),
+            linkText: E = g.intl.string(g.t.XRdyjz),
             cardAlignment: C = v.START,
             className: j
         } = e, {
             balance: S
-        } = (0, m.W)(), T = (0, u.DK)(c.W.NITRO, "BalanceWidgetMenu"), [A, P] = n.useState(h.k.DEFAULT), [k, I] = n.useState(!1), [R, N] = n.useState(!1), M = n.useRef(null);
-        (0, s.j)(!k);
+        } = (0, m.W)(), T = (0, u.DK)(c.W.NITRO, "BalanceWidgetMenu"), [A, k] = n.useState(h.k.DEFAULT), [P, I] = n.useState(!1), [R, N] = n.useState(!1), M = n.useRef(null);
+        (0, s.j)(!P);
         let D = n.useCallback(() => {
-                let e = !k;
+                let e = !P;
                 e && null != _ && (0, p.Y)({
                     pageType: _,
                     sectionType: y.JJy.ORBS_BALANCE_MENU,
                     ctaObject: y.ZSU.OPEN_ORB_BALANCE_MENU_FROM_PILL
-                }), P(e ? h.k.SELECTED : h.k.DEFAULT), I(e)
-            }, [k, _]),
+                }), k(e ? h.k.SELECTED : h.k.DEFAULT), I(e)
+            }, [P, _]),
             O = n.useCallback(() => {
-                k && D()
-            }, [k, D]),
+                P && D()
+            }, [P, D]),
             L = (0, o.A)(null, O),
             B = n.useMemo(() => (0, a.jsx)(x.b, {
                 analyticsPage: _,
@@ -59,17 +59,17 @@ let v = {
             }), [_, l, E, D, r]),
             w = n.useMemo(() => (0, a.jsx)(d.A, {
                 targetElementRef: M,
-                shouldShow: k,
+                shouldShow: P,
                 onRequestClose: D,
                 ctaText: l,
                 ctaOnClick: () => {
                     D(), r()
                 }
-            }), [k, D, l, r]);
+            }), [P, D, l, r]);
         return (0, a.jsxs)("div", {
-            className: i()(g.kL, j, {
-                [g.R]: R,
-                [g.RK]: !R
+            className: i()(f.kL, j, {
+                [f.R]: R,
+                [f.RK]: !R
             }),
             children: [(0, a.jsx)(b.J, {
                 pillRef: M,
@@ -80,10 +80,10 @@ let v = {
                 },
                 onClick: D,
                 showNotificationBadge: t
-            }), T ? w : k && (0, a.jsx)("div", {
-                className: i()(g.Ui, C, {
-                    [g.R]: R,
-                    [g.RK]: !R
+            }), T ? w : P && (0, a.jsx)("div", {
+                className: i()(f.Ui, C, {
+                    [f.R]: R,
+                    [f.RK]: !R
                 }),
                 ref: L,
                 children: B

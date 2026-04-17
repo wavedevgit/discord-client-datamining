@@ -1,8 +1,8 @@
 /** chunk id: 60075 params = (module,exports,require) **/
 l.d(t, {
-    D5: () => g,
+    D5: () => f,
     Ec: () => b,
-    IQ: () => P,
+    IQ: () => k,
     KF: () => T,
     LF: () => m,
     NA: () => x,
@@ -145,7 +145,7 @@ let y = [{
         label: "Nameplate",
         value: u.e.NAMEPLATE_MODAL_UPSELL
     }],
-    f = {
+    g = {
         [u.e.AVATAR_DECORATION_MODAL_UPSELL]: {
             title: "Express Yourself with Avatar Decorations",
             body: "Stand out with unique avatar decorations exclusive to Nitro subscribers."
@@ -160,12 +160,12 @@ let y = [{
         }
     };
 
-function g() {
+function f() {
     let [e, t] = n.useState(u.e.AVATAR_DECORATION_MODAL_UPSELL), r = n.useCallback(() => {
         let {
             title: t,
             body: n
-        } = f[e];
+        } = g[e];
         (0, i.mMO)(async () => {
             let {
                 default: r
@@ -372,7 +372,7 @@ function A() {
     })
 }
 
-function P() {
+function k() {
     let e = n.useCallback(() => {
         (0, i.mMO)(async () => {
             let [{

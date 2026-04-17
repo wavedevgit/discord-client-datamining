@@ -20,26 +20,29 @@ let c = "orb-checkout-payment-modal-key",
             onCheckoutSuccess: r,
             analyticsLocations: i = [],
             analyticsSourceLocation: s,
-            applicationId: d,
-            onCloseCallback: p
-        } = e, C = (0, n.A)(), m = !1;
+            discoverySessionId: d,
+            applicationId: p,
+            onCloseCallback: C
+        } = e, m = (0, n.A)(), x = !1;
         return k({
-            loadId: C,
+            loadId: m,
+            discoverySessionId: d,
             skuId: t,
             onCheckoutSuccess: e => {
-                m || r(e), m = !0
+                x || r(e), x = !0
             },
-            applicationId: d,
+            applicationId: p,
             analyticsLocations: i,
             analyticsSourceLocation: s,
             onCloseCallback: () => {
                 (0, a.S)({
-                    checkoutSucceeded: m
-                }), p?.()
+                    checkoutSucceeded: x
+                }), C?.()
             },
             onCloseRequest: () => {
-                m || (0, o.g)(u.HAw.PAYMENT_FLOW_CANCELED, {
-                    loadId: C,
+                x || (0, o.g)(u.HAw.PAYMENT_FLOW_CANCELED, {
+                    loadId: m,
+                    discoverySessionId: d,
                     skuId: t,
                     analyticsLocations: i,
                     analyticsSourceLocation: s
@@ -50,13 +53,14 @@ let c = "orb-checkout-payment-modal-key",
     k = e => {
         let {
             loadId: t,
-            skuId: r,
-            onCheckoutSuccess: n,
-            analyticsLocations: l = [],
-            analyticsSourceLocation: a,
-            applicationId: o,
-            onCloseCallback: u,
-            onCloseRequest: d
+            discoverySessionId: r,
+            skuId: n,
+            onCheckoutSuccess: l,
+            analyticsLocations: a = [],
+            analyticsSourceLocation: o,
+            applicationId: u,
+            onCloseCallback: d,
+            onCloseRequest: p
         } = e;
         return i.h.wait(() => {
             i.h.dispatch({
@@ -64,17 +68,18 @@ let c = "orb-checkout-payment-modal-key",
             })
         }), (0, s.Tt)().openCheckoutModal({
             loadId: t,
-            skuId: r,
-            applicationId: o,
-            analyticsLocations: l,
-            analyticsSourceLocation: a,
+            discoverySessionId: r,
+            skuId: n,
+            applicationId: u,
+            analyticsLocations: a,
+            analyticsSourceLocation: o,
             flowSpecificOptions: {
-                onCheckoutSuccess: n
+                onCheckoutSuccess: l
             },
             openModalOptions: {
-                onCloseCallback: u,
+                onCloseCallback: d,
                 modalKey: c,
-                onCloseRequest: d
+                onCloseRequest: p
             }
         })
     }

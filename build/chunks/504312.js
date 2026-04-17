@@ -1,6 +1,6 @@
 /** chunk id: 504312 params = (module,exports,require) **/
 l.d(t, {
-    Y: () => P
+    Y: () => k
 }), l(321073);
 var a = l(627968),
     n = l(64700),
@@ -17,8 +17,8 @@ var a = l(627968),
     x = l(812745),
     b = l(71393),
     y = l(287809),
-    f = l(295405),
-    g = l(652215),
+    g = l(295405),
+    f = l(652215),
     v = l(788868),
     _ = l(439519);
 let E = {
@@ -271,7 +271,7 @@ let E = {
         purchaseButtonText: "Subscribe",
         totalDue: 999,
         renewalPrice: 1099,
-        currency: g.Yri.USD,
+        currency: f.Yri.USD,
         interval: v.WT.MONTH,
         intervalCount: 1,
         startDate: new Date
@@ -307,7 +307,7 @@ let E = {
             applicationName: "Marvel Rivals"
         }
     },
-    P = {
+    k = {
         title: "Unified Checkout",
         stories: [S, {
             name: "Primitive: Order Summary Accordion",
@@ -335,7 +335,7 @@ let E = {
                     children: (0, a.jsx)(m.Vm, {
                         label: t,
                         lineItems: r,
-                        currency: g.Yri.USD
+                        currency: f.Yri.USD
                     })
                 })
             },
@@ -383,7 +383,7 @@ let E = {
                         lineItems: n,
                         intervalType: v.WT.MONTH,
                         intervalCount: 1,
-                        currency: g.Yri.USD
+                        currency: f.Yri.USD
                     })
                 })
             },
@@ -564,14 +564,14 @@ let E = {
                     giftCardsEnabled: l,
                     disabled: r,
                     hidePersonalInformation: i
-                } = e, o = (0, s.bG)([f.A], () => Object.values(f.A.paymentSources)), [p, x] = n.useState(void 0);
+                } = e, o = (0, s.bG)([g.A], () => Object.values(g.A.paymentSources)), [p, x] = n.useState(void 0);
                 n.useEffect(() => {
                     (0, c.$o)()
                 }, []);
                 let b = n.useMemo(() => o.map(e => new h.A(e, !0, [])), [o]),
                     {
                         dropdownPaymentSources: y,
-                        dropdownPaymentSourceId: g,
+                        dropdownPaymentSourceId: f,
                         handleDropdownPaymentSourceChange: v,
                         giftCardCheckboxProps: _
                     } = (0, u.Y)({
@@ -585,7 +585,7 @@ let E = {
                         giftCardsEnabled: l,
                         giftCardCheckboxProps: _,
                         paymentSourceDropdownProps: {
-                            selectedPaymentSourceId: g,
+                            selectedPaymentSourceId: f,
                             paymentSources: y,
                             hidePersonalInformation: i,
                             onChange: v
@@ -634,7 +634,7 @@ let E = {
                         value: i,
                         onChange: o
                     } : void 0,
-                    paymentSourceType: r ? g.hes.PAYSAFE_CARD : g.hes.CARD
+                    paymentSourceType: r ? f.hes.PAYSAFE_CARD : f.hes.CARD
                 })
             },
             controls: {
@@ -685,12 +685,12 @@ let E = {
                         variant: "text-sm/normal",
                         children: "Stateless Component:"
                     }), (0, a.jsx)(m.y, {
-                        onClick: g.tEg
+                        onClick: f.tEg
                     }), (0, a.jsx)("br", {}), (0, a.jsx)(d.Text, {
                         variant: "text-sm/normal",
                         children: "Link with Modal:"
                     }), (0, a.jsx)(m.Z4, {
-                        onComplete: g.tEg
+                        onComplete: f.tEg
                     })]
                 })
             }

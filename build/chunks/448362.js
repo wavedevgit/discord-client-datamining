@@ -27,17 +27,17 @@ let p = () => (0, a.jsx)("img", {
             onClick: x,
             onMouseDown: b,
             disabled: y,
-            isInModalOverlay: f,
-            className: g
-        } = e, [v, _] = (0, n.useState)(!1), E = (0, n.useMemo)(() => m === s.k.SELECTED ? u.wH : v ? u.mr : u.Ay, [m, v]), [C, j] = (0, n.useState)(!1), [S, T] = (0, n.useState)(!1), [A, P] = (0, n.useState)(2700), k = null === r;
+            isInModalOverlay: g,
+            className: f
+        } = e, [v, _] = (0, n.useState)(!1), E = (0, n.useMemo)(() => m === s.k.SELECTED ? u.wH : v ? u.mr : u.Ay, [m, v]), [C, j] = (0, n.useState)(!1), [S, T] = (0, n.useState)(!1), [A, k] = (0, n.useState)(2700), P = null === r;
         (0, n.useEffect)(() => {
-            k && !C && (j(!0), setTimeout(() => {
+            P && !C && (j(!0), setTimeout(() => {
                 T(!0)
             }, 500))
-        }, [k, j, C]), (0, n.useEffect)(() => {
-            S && !k && j(!1)
-        }, [k, S]);
-        let I = k || C,
+        }, [P, j, C]), (0, n.useEffect)(() => {
+            S && !P && j(!1)
+        }, [P, S]);
+        let I = P || C,
             R = C ? null : r,
             [N, M] = (0, n.useState)(null),
             D = (0, n.useRef)(null),
@@ -59,9 +59,9 @@ let p = () => (0, a.jsx)("img", {
                 onMouseEnter: y ? void 0 : () => _(!0),
                 onMouseLeave: y ? void 0 : () => _(!1),
                 ref: t,
-                className: i()(u.kL, E, g, {
+                className: i()(u.kL, E, f, {
                     [u.En]: I,
-                    [u.dA]: f,
+                    [u.dA]: g,
                     [u.r9]: y
                 }),
                 children: [(0, a.jsx)("div", {
@@ -69,7 +69,7 @@ let p = () => (0, a.jsx)("img", {
                     children: (0, a.jsx)(c.Ay, {
                         currentAnimationType: N,
                         animationTypeRef: D,
-                        onSetAnimationDurationMS: P
+                        onSetAnimationDurationMS: k
                     })
                 }), (0, a.jsx)(d.A, {
                     value: R,

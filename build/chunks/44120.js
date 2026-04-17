@@ -22,62 +22,65 @@ let _ = new Set([h.pn.REVIEW, h.pn.CONFIRM, h.pn.GIFT_CUSTOMIZATION]);
 
 function v(e) {
     let t, {
-            skuId: d,
-            analyticsLocations: h,
-            analyticsObject: v,
-            isGift: b = !1,
-            giftMessage: E,
-            giftingOrigin: j,
-            giftRecipient: I,
-            onClose: C,
-            onComplete: N
+            discoverySessionId: d,
+            skuId: h,
+            analyticsLocations: v,
+            analyticsObject: b,
+            isGift: E = !1,
+            giftMessage: j,
+            giftingOrigin: I,
+            giftRecipient: C,
+            onClose: N,
+            onComplete: S
         } = e,
-        S = !1,
-        T = (0, l.A)(),
-        y = b ? "gift-payment-modal" : "payment-modal",
-        L = f.default.getCurrentUser();
-    L?.verified ? (r.h.wait(() => {
+        T = !1,
+        y = (0, l.A)(),
+        L = E ? "gift-payment-modal" : "payment-modal",
+        k = f.default.getCurrentUser();
+    k?.verified ? (r.h.wait(() => {
         r.h.dispatch({
             type: "PAYMENT_MODAL_OPEN"
         })
     }), A({
-        loadId: T,
-        skuId: d,
-        analyticsLocations: h,
+        loadId: y,
+        discoverySessionId: d,
+        skuId: h,
+        analyticsLocations: v,
         onStepChange: e => {
             t = e
         },
-        modalKey: y,
-        isGift: b,
-        giftMessage: E,
-        giftingOrigin: j,
-        giftRecipient: I,
-        onClose: C,
+        modalKey: L,
+        isGift: E,
+        giftMessage: j,
+        giftingOrigin: I,
+        giftRecipient: C,
+        onClose: N,
         onCloseCallback: () => {
             if ((0, g.S)({
-                    checkoutSucceeded: S
-                }), !S) {
+                    checkoutSucceeded: T
+                }), !T) {
                 let e = (0, u.q1)({
                     location: "CollectiblesPaymentModal",
                     unifiedCheckoutFlow: c.C.COLLECTIBLES_CHECKOUT
                 });
                 x.default.track(p.HAw.PAYMENT_FLOW_CANCELED, {
-                    load_id: T,
+                    load_id: y,
+                    discovery_session_id: d,
                     payment_type: p.frM[p.VVm.ONE_TIME],
-                    location: v,
-                    is_gift: b,
-                    sku_id: d,
-                    location_stack: h,
+                    location: b,
+                    is_gift: E,
+                    sku_id: h,
+                    location_stack: v,
                     checkout_design: e ? u.rS.UNIFIED : u.rS.LEGACY,
                     checkout_flow: c.C.COLLECTIBLES_CHECKOUT
                 })
-            }(0, s.ET)(), (0, o.z)(), C?.(S), S && (0, m.gB)()
+            }(0, s.ET)(), (0, o.z)(), N?.(T), T && (0, m.gB)()
         },
         onCloseRequest: () => {
-            null != t && _.has(t) && (0, i.OoC)(y)
+            null != t && _.has(t) && (0, i.OoC)(L)
         },
         onComplete: () => {
-            S = !0, N?.()
+            T = !0, S?.()
         }
     })) : (0, i.mMO)(async () => {
         let {
@@ -91,7 +94,7 @@ function v(e) {
             return (0, a.jsx)(e, {
                 ...l,
                 onClose: () => {
-                    n(), C?.(!1)
+                    n(), N?.(!1)
                 }
             })
         }
@@ -100,38 +103,40 @@ function v(e) {
 let A = e => {
     let {
         loadId: t,
-        skuId: n,
-        analyticsLocations: a,
-        onStepChange: l,
-        modalKey: i,
-        isGift: r = !1,
-        giftMessage: s,
-        giftingOrigin: o,
-        giftRecipient: c,
-        onClose: u,
-        onCloseCallback: m,
-        onCloseRequest: f,
-        onComplete: x
+        discoverySessionId: n,
+        skuId: a,
+        analyticsLocations: l,
+        onStepChange: i,
+        modalKey: r,
+        isGift: s = !1,
+        giftMessage: o,
+        giftingOrigin: c,
+        giftRecipient: u,
+        onClose: m,
+        onCloseCallback: f,
+        onCloseRequest: x,
+        onComplete: h
     } = e;
     return (0, d.Tx)().openCheckoutModal({
         loadId: t,
-        skuId: n,
-        analyticsLocations: a,
+        discoverySessionId: n,
+        skuId: a,
+        analyticsLocations: l,
         giftContextProps: {
-            isGift: r,
-            giftMessage: s,
-            giftingOrigin: o,
-            giftRecipient: c
+            isGift: s,
+            giftMessage: o,
+            giftingOrigin: c,
+            giftRecipient: u
         },
-        onClose: u,
-        onComplete: x,
+        onClose: m,
+        onComplete: h,
         flowSpecificOptions: {
-            onStepChange: l
+            onStepChange: i
         },
         openModalOptions: {
-            modalKey: i,
-            onCloseCallback: m,
-            onCloseRequest: f
+            modalKey: r,
+            onCloseCallback: f,
+            onCloseRequest: x
         }
     })
 }

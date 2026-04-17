@@ -1,6 +1,6 @@
 /** chunk id: 162097 params = (module,exports,require) **/
 l.d(t, {
-    b: () => g
+    b: () => f
 });
 var a = l(627968),
     n = l(64700),
@@ -17,7 +17,7 @@ var a = l(627968),
     x = l(913603),
     b = l(268920),
     y = l(633217);
-let f = () => (0, a.jsx)("div", {
+let g = () => (0, a.jsx)("div", {
         className: h.s,
         children: (0, a.jsx)(d.A, {
             src: y.A,
@@ -25,7 +25,7 @@ let f = () => (0, a.jsx)("div", {
             className: h.Cb
         })
     }),
-    g = e => {
+    f = e => {
         let {
             ctaText: t,
             ctaOnClick: l,
@@ -41,7 +41,7 @@ let f = () => (0, a.jsx)("div", {
         }, [r]);
         return (0, a.jsxs)("div", {
             className: i()(h.kL, x.O),
-            children: [(0, a.jsx)(f, {}), (0, a.jsx)(o.$nd, {
+            children: [(0, a.jsx)(g, {}), (0, a.jsx)(o.$nd, {
                 text: t,
                 variant: "primary",
                 size: "sm",
