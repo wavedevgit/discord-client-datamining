@@ -50,7 +50,7 @@ function N(e) {
 let E = e => {
         e.stopPropagation(), e.preventDefault()
     },
-    C = e => {
+    T = e => {
         let {
             className: t,
             children: n,
@@ -66,7 +66,7 @@ let E = e => {
         })
     };
 
-function T(e) {
+function C(e) {
     let {
         rule: t,
         onChangeRule: n,
@@ -82,7 +82,7 @@ function T(e) {
                 rule: t,
                 onChangeRule: n
             })
-        }), (0, i.jsxs)(C, {
+        }), (0, i.jsxs)(T, {
             className: j.Ik,
             children: [(0, i.jsx)(a.dOG, {
                 onChange: l,
@@ -125,7 +125,7 @@ function b(e) {
         saveRule: g
     } = (0, x.S)(), {
         updateRule: _
-    } = (0, m.wP)(t.guildId), [A, p] = s.useState(t.enabled), T = (0, l.throttle)(async () => {
+    } = (0, m.wP)(t.guildId), [A, p] = s.useState(t.enabled), C = (0, l.throttle)(async () => {
         if (!c) {
             let e = {
                 ...t,
@@ -173,10 +173,10 @@ function b(e) {
                 rule: t,
                 triggerType: t.triggerType
             })]
-        }), (0, i.jsxs)(C, {
+        }), (0, i.jsxs)(T, {
             className: j.Ik,
             children: [(0, i.jsx)(a.dOG, {
-                onChange: T,
+                onChange: C,
                 checked: A ?? !1
             }), !n && (0, i.jsx)(r.m, {
                 text: f.intl.string(f.t["UKOtz+"]),
@@ -234,7 +234,7 @@ function v(e) {
             }), (0, i.jsx)(N, {
                 triggerType: t
             })]
-        }), (0, i.jsx)(C, {
+        }), (0, i.jsx)(T, {
             className: j.Ik,
             children: (0, i.jsx)(a.Button, {
                 variant: "primary",
@@ -269,7 +269,7 @@ function S(e) {
         triggerType: s,
         onSetupRule: c
     });
-    return null == t || d || (g = l ? (0, i.jsx)(T, {
+    return null == t || d || (g = l ? (0, i.jsx)(C, {
         rule: t,
         onChangeRule: u,
         onContextMenu: m

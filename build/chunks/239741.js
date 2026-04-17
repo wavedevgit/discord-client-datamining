@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(107795),
     N = n(655943),
     E = n(287479),
-    C = n(400812),
-    T = n(72533),
+    T = n(400812),
+    C = n(72533),
     I = n(23901),
     b = n(729984),
     v = n(692453),
@@ -44,7 +44,7 @@ function L() {
 function D(e) {
     let {
         guild: t
-    } = e, h = t.id, L = (0, r.bG)([E.A], () => E.A.getCurrentPage()), D = (0, T.A)(h), {
+    } = e, h = t.id, L = (0, r.bG)([E.A], () => E.A.getCurrentPage()), D = (0, C.A)(h), {
         hasChanges: M,
         hasConfiguredAnythingForCurrentStep: k,
         hasErrors: U
@@ -53,7 +53,7 @@ function D(e) {
         hasConfiguredAnythingForCurrentStep: E.A.hasConfiguredAnythingForCurrentStep(),
         hasErrors: E.A.hasErrors()
     })), P = (0, r.bG)([E.A], () => {
-        let e = (0, C.ql)(L);
+        let e = (0, T.ql)(L);
         return null != e && !E.A.isEducationUpsellDismissed(e)
     }), w = (0, u.Ay)(), B = s.useRef(null), [{
         spring: F
@@ -83,23 +83,23 @@ function D(e) {
             output: [W, (0, c.rdh)(a.A.colors.BACKGROUND_FEEDBACK_CRITICAL).hex()]
         });
     if (D) {
-        if (L === C.Hy.DEFAULT_CHANNELS) return (0, i.jsx)(b.G, {});
-        else if (L === C.Hy.CUSTOMIZATION_QUESTIONS) return (0, i.jsx)(S.fO, {});
-        else if (L === C.Hy.HOME_SETTINGS) return (0, i.jsx)(y.A, {});
-        else if (L === C.Hy.CONNECTIONS) return (0, i.jsx)(v.R, {});
-        else if ((L === C.Hy.LANDING || L === C.Hy.REVIEW) && f.A.hasChanges()) return (0, i.jsx)(y.A, {})
+        if (L === T.Hy.DEFAULT_CHANNELS) return (0, i.jsx)(b.G, {});
+        else if (L === T.Hy.CUSTOMIZATION_QUESTIONS) return (0, i.jsx)(S.fO, {});
+        else if (L === T.Hy.HOME_SETTINGS) return (0, i.jsx)(y.A, {});
+        else if (L === T.Hy.CONNECTIONS) return (0, i.jsx)(v.R, {});
+        else if ((L === T.Hy.LANDING || L === T.Hy.REVIEW) && f.A.hasChanges()) return (0, i.jsx)(y.A, {})
     }
-    let Y = L === C.kd[C.kd.length - 1],
+    let Y = L === T.kd[T.kd.length - 1],
         X = async () => {
             let e = N.A.advancedMode;
             if (M) try {
-                if (L === C.Hy.DEFAULT_CHANNELS) await (0, _.jr)(t).then(() => e ? (0, j.dm)(t, {
+                if (L === T.Hy.DEFAULT_CHANNELS) await (0, _.jr)(t).then(() => e ? (0, j.dm)(t, {
                     ignoreDefaultPrompt: !0
                 }) : Promise.resolve());
-                else if (L === C.Hy.CUSTOMIZATION_QUESTIONS) await (0, j.dm)(t, {
+                else if (L === T.Hy.CUSTOMIZATION_QUESTIONS) await (0, j.dm)(t, {
                     ignoreDefaultPrompt: !0
                 });
-                else if (L === C.Hy.HOME_SETTINGS) {
+                else if (L === T.Hy.HOME_SETTINGS) {
                     let e = f.A.getSettings();
                     await (0, p.W5)(t.id, e)
                 }
@@ -110,19 +110,19 @@ function D(e) {
         }, J = async () => {
             g.default.track(R.HAw.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, {
                 ...(0, m.H$)(h),
-                step: C.Hy[L],
+                step: T.Hy[L],
                 back: !1,
                 skip: !M
-            }), (0, A.Ay)((0, C.ql)(L)), await X() && (0, A._k)(h, L)
+            }), (0, A.Ay)((0, T.ql)(L)), await X() && (0, A._k)(h, L)
         }, Z = async () => {
             g.default.track(R.HAw.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, {
                 ...(0, m.H$)(h),
-                step: C.Hy[L],
+                step: T.Hy[L],
                 back: !0,
                 skip: !1
             }), await X() && (0, A.kP)(h, L)
         }, q = null;
-    P && (L === C.Hy.SAFETY_CHECK ? q = (0, i.jsx)(I.Et, {}) : L === C.Hy.DEFAULT_CHANNELS ? q = (0, i.jsx)(I.hz, {}) : L === C.Hy.CUSTOMIZATION_QUESTIONS ? q = (0, i.jsx)(I.yP, {}) : L === C.Hy.HOME_SETTINGS && (q = (0, i.jsx)(I.QS, {})));
+    P && (L === T.Hy.SAFETY_CHECK ? q = (0, i.jsx)(I.Et, {}) : L === T.Hy.DEFAULT_CHANNELS ? q = (0, i.jsx)(I.hz, {}) : L === T.Hy.CUSTOMIZATION_QUESTIONS ? q = (0, i.jsx)(I.yP, {}) : L === T.Hy.HOME_SETTINGS && (q = (0, i.jsx)(I.QS, {})));
     let Q = (0, i.jsx)("div", {
             className: P ? G.R : void 0,
             children: (0, i.jsx)(c.Button, {

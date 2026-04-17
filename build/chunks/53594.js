@@ -4,14 +4,14 @@ n.d(t, {
     H2: () => u,
     J6: () => m,
     i$: () => d,
-    kT: () => N,
-    ub: () => A,
+    kT: () => g,
+    ub: () => E,
     ws: () => T,
     xG: () => I,
     yT: () => _
 }), n(938796);
-var i, r, s = n(64700),
-    l = n(928108),
+var i, r, l = n(64700),
+    s = n(928108),
     a = n(979816),
     o = n(411335),
     c = n(985018),
@@ -82,11 +82,11 @@ let d = {
     }
 };
 var _ = ((r = {}).MEMBERS = "members", r.CONTENT = "content", r);
-let E = {
+let A = {
         members: [d[o.uh.USER_PROFILE]],
         content: [d[o.uh.SERVER_POLICY], d[o.uh.MENTION_SPAM], d[o.uh.ML_SPAM], d[o.uh.DEFAULT_KEYWORD_LIST], d[o.uh.KEYWORD]]
     },
-    A = (e, t) => d[e].flags.has(t);
+    E = (e, t) => d[e].flags.has(t);
 
 function m(e) {
     return Array.from(d[e].availableActionTypes)
@@ -97,17 +97,17 @@ function I(e, t) {
         id: n,
         eventType: i,
         triggerType: r,
-        actions: s
-    } = e, l = d[r];
-    if (t.filter(e => n !== e.id && e.triggerType === r).length > l.perGuildMaxCount) throw Error(`You have exceeded the maximum number of rules of type ${r}`);
-    if (s.some(e => !l.availableActionTypes.has(e.type))) throw Error("You have provided an action that is not available for this trigger type");
-    if (i !== l.eventType) throw Error("You have provided an event type that is not available for this trigger type")
+        actions: l
+    } = e, s = d[r];
+    if (t.filter(e => n !== e.id && e.triggerType === r).length > s.perGuildMaxCount) throw Error(`You have exceeded the maximum number of rules of type ${r}`);
+    if (l.some(e => !s.availableActionTypes.has(e.type))) throw Error("You have provided an action that is not available for this trigger type");
+    if (i !== s.eventType) throw Error("You have provided an event type that is not available for this trigger type")
 }
 
 function T(e) {
     let t = (0, a.XO)(e);
-    return s.useMemo(() => Object.keys(E).reduce((e, n) => {
-        let i = E[n].filter(e => e.type !== o.uh.SERVER_POLICY && (e.type !== o.uh.USER_PROFILE || !!t) && e.perGuildMaxCount > 0).map(e => e.type);
+    return l.useMemo(() => Object.keys(A).reduce((e, n) => {
+        let i = A[n].filter(e => e.type !== o.uh.SERVER_POLICY && (e.type !== o.uh.USER_PROFILE || !!t) && e.perGuildMaxCount > 0).map(e => e.type);
         return e[n] = i, e
     }, {
         members: [],
@@ -115,8 +115,8 @@ function T(e) {
     }), [t])
 }
 
-function N(e, t) {
-    let n = (0, l.p)(t);
+function g(e, t) {
+    let n = (0, s.p)(t);
     switch (e) {
         case o.uh.DEFAULT_KEYWORD_LIST:
             return {

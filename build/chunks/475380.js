@@ -41,9 +41,9 @@ function I(e) {
     } = (0, a.cf)([_.Ay], () => ({
         canToggleDetection: null == R || _.Ay.isDetectionEnabled(R),
         isCurrentGameDetectionEnabled: _.Ay.isDetectionEnabled(L)
-    })), G = (0, a.bG)([_.Ay], () => _.Ay.getVisibleGame()), [M, U] = s.useState(!1), k = s.useMemo(() => (0, h.n1)(L) ? O ? L.gameName : b.intl.formatToPlainString(b.t.G6BGdx, {
+    })), G = (0, a.bG)([_.Ay], () => _.Ay.getVisibleGame()), [M, k] = s.useState(!1), U = s.useMemo(() => (0, h.n1)(L) ? O ? L.gameName : b.intl.formatToPlainString(b.t.G6BGdx, {
         subgameName: L.gameName
-    }) : L.name, [L, O]), [w, V] = s.useState(k ?? "???"), B = r()(v.tR, {
+    }) : L.name, [L, O]), [w, V] = s.useState(U ?? "???"), B = r()(v.tR, {
         [C.LO]: !l,
         [C.Rw]: l,
         [C.FB]: null != L && l,
@@ -59,10 +59,10 @@ function I(e) {
             return t => (0, i.jsx)(e, {
                 ...t,
                 title: b.intl.formatToPlainString(b.t.PZ4fKc, {
-                    platform: k
+                    platform: U
                 }),
                 subtitle: b.intl.formatToPlainString(b.t.ZIQbfb, {
-                    platform: k
+                    platform: U
                 }),
                 actions: [{
                     text: b.intl.string(b.t["ETE/oC"]),
@@ -89,7 +89,7 @@ function I(e) {
                     className: C.HS,
                     children: [(0, i.jsx)("div", {
                         className: C.mO,
-                        children: k
+                        children: U
                     }), (0, i.jsx)(d.m_, {
                         text: b.intl.string(b.t["4PJP5p"]),
                         children: (0, i.jsx)(x.A, {
@@ -144,7 +144,7 @@ function I(e) {
                             T.default.track(S.HAw.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
                                 application_id: e?.id,
                                 game_name: (0, h.n1)(L) ? L.gameName : L.name
-                            }), U(!0), (0, c.mMO)(async () => {
+                            }), k(!0), (0, c.mMO)(async () => {
                                 let {
                                     default: t
                                 } = await n.e("49876").then(n.bind(n, 651930));

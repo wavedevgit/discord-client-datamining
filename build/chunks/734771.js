@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(763754),
-    s = n(888675),
-    l = n(985018);
+    l = n(888675),
+    s = n(985018);
 
 function a(e) {
     let t, {
@@ -18,23 +18,23 @@ function a(e) {
             compact: d,
             channel: _
         } = e,
-        E = (0, r.Ay)(a),
-        A = E.nick,
-        m = o(E),
+        A = (0, r.Ay)(a),
+        E = A.nick,
+        m = o(A),
         I = (0, r.d8)(c, _);
     if (null != I && null != u) {
         let e = u(I);
-        t = l.intl.format(l.t.L2FyVq, {
-            username: A,
+        t = s.intl.format(s.t.L2FyVq, {
+            username: E,
             usernameHook: m,
             otherUsername: I.nick,
             otherUsernameHook: e
         })
-    } else t = l.intl.format(l.t["5v2xa8"], {
-        username: A,
+    } else t = s.intl.format(s.t["5v2xa8"], {
+        username: E,
         usernameHook: m
     });
-    return (0, i.jsx)(s.A, {
+    return (0, i.jsx)(l.A, {
         icon: n(884797),
         timestamp: a.timestamp,
         compact: d,

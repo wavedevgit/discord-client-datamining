@@ -1,30 +1,30 @@
 /** chunk id: 809115 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    a: () => E,
-    l: () => A
+    a: () => A,
+    l: () => E
 });
 var i = n(627968),
     r = n(64700),
-    s = n(311907),
-    l = n(397927),
+    l = n(311907),
+    s = n(397927),
     a = n(775602),
     o = n(820883),
     c = n(837921),
     u = n(985018),
     d = n(609836);
-let _ = c.Ay.getEnableHardwareAcceleration() ? l.JsQ : l.euF;
+let _ = c.Ay.getEnableHardwareAcceleration() ? s.JsQ : s.euF;
 
-function E() {
+function A() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
         [t, n] = r.useState(!1),
-        i = (0, s.bG)([a.A], () => a.A.useReducedMotion),
-        l = r.useMemo(() => {
+        i = (0, l.bG)([a.A], () => a.A.useReducedMotion),
+        s = r.useMemo(() => {
             let n = t || !i && !e;
             return (0, o.q)(n)
         }, [t, i, e]);
     return {
-        avatarSrc: l,
+        avatarSrc: s,
         eventHandlers: {
             onMouseEnter: r.useCallback(() => n(!0), []),
             onMouseLeave: r.useCallback(() => n(!1), [])
@@ -32,7 +32,7 @@ function E() {
     }
 }
 
-function A(e) {
+function E(e) {
     let {
         src: t
     } = e;
@@ -40,7 +40,7 @@ function A(e) {
         className: d.H,
         children: (0, i.jsx)(_, {
             src: t,
-            size: l._3J.SIZE_40,
+            size: s._3J.SIZE_40,
             "aria-label": u.intl.string(u.t.hG1StD)
         })
     })

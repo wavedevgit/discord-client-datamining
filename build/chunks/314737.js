@@ -25,8 +25,8 @@ var i = n(627968),
     j = n(475743),
     N = n(793574),
     E = n(262295),
-    C = n(936555),
-    T = n(725437),
+    T = n(936555),
+    C = n(725437),
     I = n(952385),
     b = n(810877),
     v = n(945086),
@@ -373,11 +373,11 @@ let W = c().throttle(A.dZ, 1e3),
                 let {
                     emoji: e
                 } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                null != e ? (0, T.f)({
+                null != e ? (0, C.f)({
                     guildId: l.id,
                     emoji: e,
                     analyticsLocation: N.A.GUILD_SETTINGS_EMOJI_EDIT_BUTTON
-                }) : (0, T.f)({
+                }) : (0, C.f)({
                     guildId: l.id,
                     analyticsLocation: {
                         page: B.liQ.GUILD_SETTINGS,
@@ -424,7 +424,7 @@ let W = c().throttle(A.dZ, 1e3),
                     })
                 })
             }, en = s.useCallback(async (e, n, i) => {
-                await (0, T.f)({
+                await (0, C.f)({
                     userImage: {
                         data: e,
                         file: n,
@@ -435,7 +435,7 @@ let W = c().throttle(A.dZ, 1e3),
                         page: B.liQ.GUILD_SETTINGS
                     }
                 }), t.current += 1
-            }, [l.id]), ei = (0, C.w)(l);
+            }, [l.id]), ei = (0, T.w)(l);
         return (0, i.jsxs)("div", {
             className: V.Gi,
             children: [0 === L ? null : (0, i.jsx)(f.A, {

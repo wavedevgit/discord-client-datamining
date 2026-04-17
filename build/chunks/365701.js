@@ -25,8 +25,8 @@ var i = n(627968),
     j = n(734057),
     N = n(576705),
     E = n(555337),
-    C = n(652215),
-    T = n(401755),
+    T = n(652215),
+    C = n(401755),
     I = n(985018),
     b = n(200510),
     v = n(818050);
@@ -42,7 +42,7 @@ class S extends d.Ay.Store {
         let e = E.A.getProps().guild;
         if (null == e) return null;
         let t = p.A.getForGuild(e.id);
-        return null != t && t.state !== T.QB.RESOLVING ? t : null
+        return null != t && t.state !== C.QB.RESOLVING ? t : null
     }
     reset = () => {
         let e = this.getTemplate();
@@ -108,7 +108,7 @@ function L() {
         guild: t
     } = E.A.getProps();
     o()(null != t, "guild cannot be null");
-    let n = (e = t.id, (0, d.bG)([j.A, N.A], () => Object.values(j.A.getMutableGuildChannelsForGuild(e)).every(e => N.A.can(C.xBc.VIEW_CHANNEL, e)), [e])),
+    let n = (e = t.id, (0, d.bG)([j.A, N.A], () => Object.values(j.A.getMutableGuildChannelsForGuild(e)).every(e => N.A.can(T.xBc.VIEW_CHANNEL, e)), [e])),
         l = (0, d.bG)([y], () => y.error),
         [r, a] = s.useState(!0),
         {

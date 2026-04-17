@@ -6,15 +6,15 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(397927),
-    s = n(597864),
-    l = n(880652),
+    l = n(597864),
+    s = n(880652),
     a = n(225460);
 
 function o(e) {
     let {
         question: t,
         questionId: n,
-        value: l,
+        value: s,
         onValueChange: o
     } = e, {
         selectedChoice: c,
@@ -31,7 +31,7 @@ function o(e) {
             selectedChoice: n,
             textInputs: i
         }
-    })(l), d = e => {
+    })(s), d = e => {
         let i = u[e];
         null == i || "" === i ? o(n, e) : null != t.Choices && t.Choices[e]?.TextEntry === "true" ? o(n, `${e}:TEXT:${i}`) : o(n, e)
     }, _ = (e, t) => {
@@ -50,7 +50,7 @@ function o(e) {
             className: a.Me,
             children: Object.entries(t.Choices).map(e => {
                 let [t, n] = e;
-                return (0, i.jsx)(s.B, {
+                return (0, i.jsx)(l.B, {
                     choiceId: t,
                     choice: n,
                     isSelected: c === t,
@@ -68,7 +68,7 @@ function c(e) {
     let {
         question: t,
         questionId: n,
-        value: l,
+        value: s,
         onValueChange: o
     } = e, {
         selectedChoices: c,
@@ -89,7 +89,7 @@ function c(e) {
             selectedChoices: n,
             textInputs: i
         }
-    })(l), d = (e, t) => e.map(e => {
+    })(s), d = (e, t) => e.map(e => {
         let n = t[e];
         return null != n && "" !== n ? `${e}:TEXT:${n}` : e
     }).join(","), _ = e => {
@@ -98,7 +98,7 @@ function c(e) {
                 ...u
             };
         t.includes(e) || delete i[e], o(n, d(t, i))
-    }, E = (e, t) => {
+    }, A = (e, t) => {
         o(n, d(c, {
             ...u,
             [e]: t
@@ -117,14 +117,14 @@ function c(e) {
             className: a.Me,
             children: Object.entries(t.Choices).map(e => {
                 let [t, n] = e;
-                return (0, i.jsx)(s.B, {
+                return (0, i.jsx)(l.B, {
                     choiceId: t,
                     choice: n,
                     isSelected: c.includes(t),
                     onSelectionChange: _,
                     inputType: "checkbox",
                     textInputValue: u[t],
-                    onTextInputChange: E
+                    onTextInputChange: A
                 }, t)
             })
         })
@@ -136,17 +136,17 @@ function u(e) {
         question: t,
         questionId: n,
         value: r,
-        onValueChange: s
+        onValueChange: l
     } = e;
-    return t.Selector === l.BO.SINGLE_ANSWER ? (0, i.jsx)(o, {
+    return t.Selector === s.BO.SINGLE_ANSWER ? (0, i.jsx)(o, {
         question: t,
         questionId: n,
         value: r,
-        onValueChange: s
+        onValueChange: l
     }) : (0, i.jsx)(c, {
         question: t,
         questionId: n,
         value: r,
-        onValueChange: s
+        onValueChange: l
     })
 }

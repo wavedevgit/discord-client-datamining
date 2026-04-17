@@ -23,15 +23,15 @@ var i = n(627968),
     j = n(11725),
     N = n(652215),
     E = n(897513),
-    C = n(985018),
-    T = n(229344);
+    T = n(985018),
+    C = n(229344);
 let I = function(e, t, n) {
         let i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
             s = null;
-        return null == t || Number.isNaN(t) ? (null == t || Number.isNaN(t)) && null != e && (s = C.intl.string(C.t.xO2msf)) : s = C.intl.formatToPlainString(C.t.nskeMw, {
+        return null == t || Number.isNaN(t) ? (null == t || Number.isNaN(t)) && null != e && (s = T.intl.string(T.t.xO2msf)) : s = T.intl.formatToPlainString(T.t.nskeMw, {
             percentage: (0, r.s)(Math.abs(t), n)
         }), {
-            localizedNumber: null != e ? `${(0,r.s)(e,n)}${i?"%":""}` : C.intl.string(C.t.jHpxwo),
+            localizedNumber: null != e ? `${(0,r.s)(e,n)}${i?"%":""}` : T.intl.string(T.t.jHpxwo),
             subtext: s,
             isTrendingUp: t > 0,
             isTrendingDown: t < 0
@@ -40,24 +40,24 @@ let I = function(e, t, n) {
     b = function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
         return t || e === N.t02.NOT_ENOUGH_GUILD_MEMBERS ? (0, i.jsx)("div", {
-            className: T.NA,
+            className: C.NA,
             children: (0, i.jsx)(d.wx6, {
                 type: "info",
-                children: C.intl.string(C.t["FsgE/B"])
+                children: T.intl.string(T.t["FsgE/B"])
             })
         }) : null == e ? null : (0, i.jsx)(d.wx6, {
             type: "critical",
-            children: C.intl.string(C.t.Iju63e)
+            children: T.intl.string(T.t.Iju63e)
         })
     },
     v = () => {
         let [e, t] = s.useState(!1), n = (0, a.bG)([A.A], () => A.A.getGuildId());
         return (0, i.jsx)("div", {
             "data-button-hoisted-classname-wrapper": !0,
-            className: T.XU,
+            className: C.XU,
             children: (0, i.jsx)(d.Button, {
                 variant: "primary",
-                text: C.intl.string(C.t.Uskgxx),
+                text: T.intl.string(T.t.Uskgxx),
                 onClick: () => {
                     let e, i;
                     t(!0), (_.default.track(N.HAw.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
@@ -102,23 +102,23 @@ let I = function(e, t, n) {
             (0, u.sF)(E._.GUILD_ANALYTICS_GUILD_SETTINGS_MENU)
         }, []);
         let y = null != r ? (0, i.jsx)("div", {
-            className: T.__invalid_guildAnalyticsOverviewWrapper,
+            className: C.__invalid_guildAnalyticsOverviewWrapper,
             children: (0, i.jsxs)("div", {
-                className: T.SJ,
+                className: C.SJ,
                 children: [(0, i.jsx)(j.A, {
-                    title: C.intl.string(C.t.i0NorT),
-                    tooltipText: C.intl.string(C.t.KiRbLJ),
+                    title: T.intl.string(T.t.i0NorT),
+                    tooltipText: T.intl.string(T.t.KiRbLJ),
                     ...I(r.visitors, r.visitorsChange, l)
                 }), (0, i.jsx)(j.A, {
-                    title: C.intl.string(C.t.DDAHdQ),
-                    tooltipText: C.intl.string(C.t.HxWUkU),
+                    title: T.intl.string(T.t.DDAHdQ),
+                    tooltipText: T.intl.string(T.t.HxWUkU),
                     ...I(r.communicators, r.communicatorsChange, l)
                 }), (0, i.jsx)(j.A, {
-                    title: C.intl.string(C.t.hYeOqC),
+                    title: T.intl.string(T.t.hYeOqC),
                     ...I(r.newMembers, r.newMembersChange, l)
                 }), (0, i.jsx)(j.A, {
-                    title: C.intl.string(C.t.jj7OPw),
-                    tooltipText: C.intl.string(C.t.MQCslz),
+                    title: T.intl.string(T.t.jj7OPw),
+                    tooltipText: T.intl.string(T.t.MQCslz),
                     ...I(r.pctRetained, r.pctRetainedChange, l, !0)
                 })]
             })
@@ -126,21 +126,21 @@ let I = function(e, t, n) {
         return (0, i.jsxs)("div", {
             children: [(0, i.jsx)(d.Heading, {
                 variant: "heading-lg/semibold",
-                children: C.intl.string(C.t["0wWfUG"])
+                children: T.intl.string(T.t["0wWfUG"])
             }), (0, i.jsx)(d.Text, {
                 variant: "text-sm/normal",
-                children: C.intl.format(C.t.NIZ60a, {})
+                children: T.intl.format(T.t.NIZ60a, {})
             }), b(o, S), (0, i.jsxs)("div", {
-                className: T.Pg,
+                className: C.Pg,
                 children: [(0, i.jsx)("div", {
-                    className: T.jM
+                    className: C.jM
                 }), (0, i.jsx)(d.Text, {
-                    className: T.WO,
+                    className: C.WO,
                     variant: "text-sm/normal",
-                    children: C.intl.string(C.t.A5vswv)
+                    children: T.intl.string(T.t.A5vswv)
                 }), (0, i.jsx)(v, {})]
             }), _ ? (0, i.jsx)("div", {
-                className: T.Rc,
+                className: C.Rc,
                 children: (0, i.jsx)(c.A, {})
             }) : y]
         })

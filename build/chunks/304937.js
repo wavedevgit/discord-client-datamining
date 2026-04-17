@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(503698),
-    s = n.n(r),
-    l = n(158954),
+    l = n.n(r),
+    s = n(158954),
     a = n(212555),
     o = n(428855),
     c = n(880652),
@@ -20,7 +20,7 @@ function _(e) {
         questionId: n,
         responses: r,
         onResponseChange: _
-    } = e, E = (() => {
+    } = e, A = (() => {
         switch (t.QuestionType) {
             case c.SQ.TEXT_ENTRY:
                 return (0, i.jsx)(o.A, {
@@ -42,9 +42,9 @@ function _(e) {
                 return null
         }
     })();
-    return null == E ? null : (0, i.jsxs)("div", {
-        className: s()(d.PT, u.k),
-        children: [(0, i.jsx)(l.EYj, {
+    return null == A ? null : (0, i.jsxs)("div", {
+        className: l()(d.PT, u.k),
+        children: [(0, i.jsx)(s.EYj, {
             variant: "text-lg/normal",
             color: "text-strong",
             children: (0, i.jsx)("div", {
@@ -52,6 +52,6 @@ function _(e) {
                     __html: t.QuestionText_Unsafe ?? ""
                 }
             })
-        }), E]
+        }), A]
     })
 }

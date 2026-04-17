@@ -37,7 +37,7 @@ var i = n(627968),
     G = n(985018),
     M = n(308808);
 
-function U(e) {
+function k(e) {
     let {
         premiumSubscription: t,
         fractionalPremiumInfo: n,
@@ -83,7 +83,7 @@ function U(e) {
         })
     })
 }
-async function k(e, t, n, i) {
+async function U(e, t, n, i) {
     let s, l, a = null != i ? i : (s = Object.values(N.A.boostSlots), null != (l = r().sortBy(s.filter(e => !(0, y.I5)(e)), e => [null != e.premiumGuildSubscription, null != e.cooldownEndsAt ? new Date(e.cooldownEndsAt) : null])[0]) ? l.id : null);
     if (null == a) throw Error("No slot to cancel");
     let o = (0, O.aE)(e, t);
@@ -113,11 +113,11 @@ function w(e) {
                 [], !0
             ]
         }
-    }, [t]), U = s.useRef(x);
+    }, [t]), k = s.useRef(x);
     s.useEffect(() => {
-        U.current = x
+        k.current = x
     }), s.useEffect(() => {
-        D && U.current()
+        D && k.current()
     }, [D]);
     let {
         premiumSubscriptionPlan: w,
@@ -189,7 +189,7 @@ function w(e) {
     }));
     let J = async () => {
         try {
-            E(!0), j(null), await k(t, y, B, n), _()
+            E(!0), j(null), await U(t, y, B, n), _()
         } catch (e) {
             j(G.intl.string(G.t["5mlOCW"])), E(!1)
         }
@@ -365,7 +365,7 @@ function B(e) {
     });
     else switch (p) {
         case 1:
-            t = (0, i.jsx)(U, {
+            t = (0, i.jsx)(k, {
                 premiumSubscription: a,
                 fractionalPremiumInfo: u,
                 isInventory: null == n.premiumGuildSubscription,

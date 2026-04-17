@@ -1,6 +1,6 @@
 /** chunk id: 281052 params = (module,exports,require) **/
 n.d(t, {
-    A: () => U
+    A: () => k
 });
 var i = n(627968);
 n(64700);
@@ -38,7 +38,7 @@ var s = n(284009),
     G = n(985018),
     M = n(887267);
 
-function U() {
+function k() {
     let e = (0, r.bG)([j.default], () => {
             let e = j.default.getCurrentUser();
             return l()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
@@ -48,8 +48,8 @@ function U() {
     l()(null != n, "guild should not be null");
     let {
         pendingAvatar: s,
-        pendingNickname: U,
-        pendingBanner: k,
+        pendingNickname: k,
+        pendingBanner: U,
         pendingBio: w,
         pendingPronouns: V,
         pendingThemeColors: B,
@@ -60,7 +60,7 @@ function U() {
     })), H = (0, E.V7)({
         userId: e.id,
         image: s
-    }), z = (0, d.EC)(n.id), Y = (0, r.bG)([N.Ay], () => null == n.id ? null : N.Ay.getMember(n.id, e.id)), X = (0, r.bG)([v.A], () => v.A.getGuildMemberProfile(e.id, n.id)), K = y.Ay.canUsePremiumProfileCustomization(e), W = (0, u.z5)(s, Y?.avatar), Z = (0, u.Ac)(k, X?.banner), q = (0, R.l)(B, X?.themeColors), Q = X?.bio ?? "", J = X?.pronouns ?? "", $ = (e, t, n) => {
+    }), z = (0, d.EC)(n.id), Y = (0, r.bG)([N.Ay], () => null == n.id ? null : N.Ay.getMember(n.id, e.id)), X = (0, r.bG)([v.A], () => v.A.getGuildMemberProfile(e.id, n.id)), K = y.Ay.canUsePremiumProfileCustomization(e), W = (0, u.z5)(s, Y?.avatar), Z = (0, u.Ac)(U, X?.banner), q = (0, R.l)(B, X?.themeColors), Q = X?.bio ?? "", J = X?.pronouns ?? "", $ = (e, t, n) => {
         n(e ?? (null != t ? null : void 0))
     };
     return (0, i.jsxs)("div", {
@@ -68,7 +68,7 @@ function U() {
         children: [(0, i.jsx)(L.A, {
             errors: F?.nick ?? z?.nick,
             username: O.Ay.getName(e),
-            pendingNick: U,
+            pendingNick: k,
             currentNick: Y?.nick,
             user: e,
             guild: n

@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(11351),
     N = n(996507),
     E = n(389025),
-    C = n(2242),
-    T = n(284683),
+    T = n(2242),
+    C = n(284683),
     I = n(985018),
     b = n(187364);
 let v = (0, p.xI)(m.A.GUILD_SETTINGS_ROLE_SUBSCRIPTIONS_OVERVIEW_SETTINGS_MAX_WIDTH);
@@ -54,19 +54,19 @@ function S(e) {
         a?.cover_image_asset?.application_id != null && G((0, A.YE)(a.cover_image_asset.application_id, a.cover_image_asset, v))
     }, [a?.cover_image_asset]);
     let Y = (0, j.gN)(),
-        X = s.useMemo(() => T.aq.map(e => ({
+        X = s.useMemo(() => C.aq.map(e => ({
             id: e.toString(),
-            label: (0, T.Ac)(e),
+            label: (0, C.Ac)(e),
             value: e
         })), []),
         J = s.useMemo(() => [{
             id: "products-first",
             label: I.intl.string(I.t.X6h2gz),
-            value: T.HA.PRODUCTS_FIRST
+            value: C.HA.PRODUCTS_FIRST
         }, {
             id: "subs-first",
             label: I.intl.string(I.t["KzCF/6"]),
-            value: T.HA.SUBS_FIRST
+            value: C.HA.SUBS_FIRST
         }], []);
     return (0, i.jsxs)("div", {
         className: b.kL,
@@ -83,7 +83,7 @@ function S(e) {
                 description: I.intl.string(I.t.x87YqH),
                 value: p,
                 onChange: e => {
-                    l !== e && e === C.c4.ALL_CHANNELS && (0, u.A)({
+                    l !== e && e === T.c4.ALL_CHANNELS && (0, u.A)({
                         title: I.intl.string(I.t.dmVoOz),
                         subtitle: I.intl.string(I.t.mtwzdD),
                         confirmText: I.intl.string(I.t["NX+WJN"])
@@ -93,12 +93,12 @@ function S(e) {
                 options: [{
                     name: I.intl.string(I.t.rXqxhF),
                     desc: I.intl.string(I.t.yQiJne),
-                    value: C.c4.SOME_CHANNELS,
+                    value: T.c4.SOME_CHANNELS,
                     icon: g.N$i
                 }, {
                     name: I.intl.string(I.t.WzC9s6),
                     desc: I.intl.string(I.t.WmagiB),
-                    value: C.c4.ALL_CHANNELS,
+                    value: T.c4.ALL_CHANNELS,
                     icon: g.RYV
                 }]
             }), (0, i.jsx)(g.cGx, {
@@ -178,7 +178,7 @@ function S(e) {
                     onSave: () => {
                         r()(null != a, "Settings must be defined");
                         let e = {};
-                        y !== a.description && (e.description = y), null != O && O.startsWith("data:") && (e.cover_image = O), p !== l && (e.full_server_gate = p === C.c4.ALL_CHANNELS), L !== a.store_page_guild_products_default_sort && (e.store_page_guild_products_default_sort = L), M !== a.server_shop_tab_order && (e.server_shop_tab_order = M), o().isEmpty(e) || w(t.id, e)
+                        y !== a.description && (e.description = y), null != O && O.startsWith("data:") && (e.cover_image = O), p !== l && (e.full_server_gate = p === T.c4.ALL_CHANNELS), L !== a.store_page_guild_products_default_sort && (e.store_page_guild_products_default_sort = L), M !== a.server_shop_tab_order && (e.server_shop_tab_order = M), o().isEmpty(e) || w(t.id, e)
                     },
                     saveButtonTooltip: K ? void 0 : I.intl.string(I.t["6HRvit"])
                 })

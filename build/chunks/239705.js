@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(397927),
     r = n(47167),
-    s = n(734057),
-    l = n(994500),
+    l = n(734057),
+    s = n(994500),
     a = n(287809),
     o = n(411335),
     c = n(200700),
@@ -65,9 +65,9 @@ function _(e, t, n) {
                 case o.AH.FLAG_TO_CHANNEL: {
                     let e = t?.metadata?.channelId;
                     if (null == e) return null;
-                    let n = s.A.getChannel(e);
+                    let n = l.A.getChannel(e);
                     if (null == n) return null;
-                    let i = (0, r.m1)(n, a.default, l.A);
+                    let i = (0, r.m1)(n, a.default, s.A);
                     return u.intl.format(u.t.xQXnkK, {
                         channelName: i
                     })

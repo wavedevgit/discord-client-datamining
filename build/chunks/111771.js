@@ -23,17 +23,17 @@ function h(e) {
         options: l,
         className: h,
         onChange: _
-    } = e, [A, p] = s.useState(n), [f, j] = s.useState(!1), [N, E] = s.useState(!1), C = s.useRef(null);
+    } = e, [A, p] = s.useState(n), [f, j] = s.useState(!1), [N, E] = s.useState(!1), T = s.useRef(null);
     s.useEffect(() => {
         p(n)
     }, [n]), s.useEffect(() => () => {
-        clearTimeout(C.current)
+        clearTimeout(T.current)
     }, []);
-    let T = l.find(e => e.value === A);
+    let C = l.find(e => e.value === A);
     return (0, i.jsx)(u.A, {
-        title: f ? t : T?.title ?? t,
-        description: f ? `(${T?.title??g.intl.string(g.t.PoWNfe)})` : T?.description ?? "",
-        highlightColor: f ? c.t.NONE : T?.highlightColor,
+        title: f ? t : C?.title ?? t,
+        description: f ? `(${C?.title??g.intl.string(g.t.PoWNfe)})` : C?.description ?? "",
+        highlightColor: f ? c.t.NONE : C?.highlightColor,
         action: (0, i.jsx)(a.QWc, {
             text: g.intl.string(g.t.GEgsA4),
             textVariant: "text-sm/medium"
@@ -52,7 +52,7 @@ function h(e) {
                 className: x.VB
             }),
             onClick: () => {
-                e.disabled || e.value === A || (E(!0), _?.(e), p(e.value), C.current = setTimeout(() => {
+                e.disabled || e.value === A || (E(!0), _?.(e), p(e.value), T.current = setTimeout(() => {
                     E(!1), j(!1)
                 }, 1e3))
             },

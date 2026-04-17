@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(661191),
     N = n(997509),
     E = n(834720),
-    C = n(652215),
-    T = n(985018),
+    T = n(652215),
+    C = n(985018),
     I = n(672419);
 let b = e => {
     let {
@@ -92,7 +92,7 @@ let S = e => {
         {
             nsfwProperties: R
         } = S ?? {},
-        O = l?.features.has(C.GuildFeatures.PARTNERED),
+        O = l?.features.has(T.GuildFeatures.PARTNERED),
         G = R?.channels_banned_keywords,
         L = (0, u.bG)([_.Ay], () => {
             if (null == G) return [];
@@ -112,62 +112,62 @@ let S = e => {
             className: I.KQ,
             variant: "heading-md/semibold",
             color: "text-default",
-            children: T.intl.string(T.t.e1gm0f)
+            children: C.intl.string(C.t.e1gm0f)
         }), (0, i.jsx)(x.y$y, {
             className: I.__invalid_spinner
         })]
     });
-    let D = O ? T.t["WH+1Yz"] : T.t.a4MYDO,
+    let D = O ? C.t["WH+1Yz"] : C.t.a4MYDO,
         M = [{
-            name: T.intl.string(T.t.yvk9py),
-            failingName: T.intl.string(T.t["IY/UT/"]),
-            description: T.intl.string(T.t.hSLSM6),
-            failingDescription: T.intl.format(T.t.odsGgy, {
-                termsURL: C.X7G.TERMS,
-                guidelinesURL: f.A.getArticleURL(C.MVz.PUBLIC_GUILD_GUILDLINES)
+            name: C.intl.string(C.t.yvk9py),
+            failingName: C.intl.string(C.t["IY/UT/"]),
+            description: C.intl.string(C.t.hSLSM6),
+            failingDescription: C.intl.format(C.t.odsGgy, {
+                termsURL: T.X7G.TERMS,
+                guidelinesURL: f.A.getArticleURL(T.MVz.PUBLIC_GUILD_GUILDLINES)
             }),
             checked: S?.safeEnvironment
         }, {
-            name: T.intl.formatToPlainString(T.t.NYovA2, {
+            name: C.intl.formatToPlainString(C.t.NYovA2, {
                 minMembers: S.minimumGuildSize
             }),
-            failingName: T.intl.formatToPlainString(T.t.wvJwYs, {
+            failingName: C.intl.formatToPlainString(C.t.wvJwYs, {
                 minMembers: S.minimumGuildSize.toLocaleString()
             }),
             description: null,
-            failingDescription: T.intl.format(D, {
+            failingDescription: C.intl.format(D, {
                 minMembers: S.minimumGuildSize.toLocaleString()
             }),
             checked: S?.size
         }, {
-            name: T.intl.string(T.t.PtxOCK),
-            failingName: T.intl.string(T.t.JPF5IL),
-            description: T.intl.formatToPlainString(T.t.VT0bQJ, {
+            name: C.intl.string(C.t.PtxOCK),
+            failingName: C.intl.string(C.t.JPF5IL),
+            description: C.intl.formatToPlainString(C.t.VT0bQJ, {
                 minimumGuildAge: Math.ceil(S.minimumGuildAge / 7)
             }),
-            failingDescription: T.intl.formatToPlainString(T.t.jYwM1Y, {
+            failingDescription: C.intl.formatToPlainString(C.t.jYwM1Y, {
                 minimumGuildAge: Math.ceil(S.minimumGuildAge / 7),
                 passDate: c()(j.default.extractTimestamp(a)).add(S.minimumGuildAge, "days").format("LL")
             }),
             checked: S?.age
         }, {
-            name: S?.healthScorePending ? T.intl.string(T.t.G77ud0) : T.intl.string(T.t["95nW0H"]),
-            failingName: T.intl.string(T.t["+GHxPy"]),
-            description: T.intl.string(T.t.rTWJwX),
+            name: S?.healthScorePending ? C.intl.string(C.t.G77ud0) : C.intl.string(C.t["95nW0H"]),
+            failingName: C.intl.string(C.t["+GHxPy"]),
+            description: C.intl.string(C.t.rTWJwX),
             failingDescription: (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(x.Text, {
                     color: "text-muted",
                     className: I.t,
                     variant: "text-sm/normal",
-                    children: T.intl.string(T.t.LjqS0G)
+                    children: C.intl.string(C.t.LjqS0G)
                 }), S?.engagementHealthy ? null : (0, i.jsx)(x.Text, {
                     color: "text-feedback-critical",
                     variant: "text-sm/normal",
-                    children: T.intl.string(T.t.X8Lt77)
+                    children: C.intl.string(C.t.X8Lt77)
                 }), S?.retentionHealthy ? null : (0, i.jsx)(x.Text, {
                     color: "text-feedback-critical",
                     variant: "text-sm/normal",
-                    children: T.intl.string(T.t.esdy89)
+                    children: C.intl.string(C.t.esdy89)
                 }), (() => {
                     if (null == S || null == S.healthScore) return !1;
                     let {
@@ -194,28 +194,28 @@ let S = e => {
                             guildChecklist: S
                         })
                     }),
-                    children: T.intl.string(T.t.qyiTH8)
+                    children: C.intl.string(C.t.qyiTH8)
                 })]
             }),
-            pendingDescription: S?.size ? T.intl.format(T.t.ALtXIF, {
+            pendingDescription: S?.size ? C.intl.format(C.t.ALtXIF, {
                 checkBackHook: (e, t) => (0, i.jsx)("strong", {
                     className: I.eb,
                     children: e
                 }, t)
-            }) : T.intl.formatToPlainString(T.t["6S/96D"], {
+            }) : C.intl.formatToPlainString(C.t["6S/96D"], {
                 minMembers: 200
             }),
             checked: S?.healthy,
             pending: S?.healthScorePending
         }, {
-            name: T.intl.string(T.t["AUUV/x"]),
-            failingName: T.intl.string(T.t["jURyO+"]),
-            description: T.intl.string(T.t.wikb1q),
+            name: C.intl.string(C.t["AUUV/x"]),
+            failingName: C.intl.string(C.t["jURyO+"]),
+            description: C.intl.string(C.t.wikb1q),
             failingDescription: (0, i.jsxs)(i.Fragment, {
                 children: [R?.channels != null ? (0, i.jsx)(x.Text, {
                     color: "text-muted",
                     variant: "text-sm/normal",
-                    children: T.intl.format(T.t["T+DQYY"], {
+                    children: C.intl.format(C.t["T+DQYY"], {
                         channelHook: (e, t) => (0, i.jsx)("span", {
                             className: I.ty,
                             children: e
@@ -234,7 +234,7 @@ let S = e => {
                 }) : null, R?.name != null ? (0, i.jsx)(x.Text, {
                     color: "text-muted",
                     variant: "text-sm/normal",
-                    children: T.intl.format(T.t.KVD8E3, {
+                    children: C.intl.format(C.t.KVD8E3, {
                         nameHook: (e, t) => (0, i.jsx)("span", {
                             className: I.ty,
                             children: e
@@ -243,7 +243,7 @@ let S = e => {
                 }) : null, R?.description != null ? (0, i.jsx)(x.Text, {
                     color: "text-muted",
                     variant: "text-sm/normal",
-                    children: T.intl.format(T.t["/W9Kel"], {
+                    children: C.intl.format(C.t["/W9Kel"], {
                         descriptionHook: (e, t) => (0, i.jsx)("span", {
                             className: I.ty,
                             children: e
@@ -252,16 +252,16 @@ let S = e => {
                 }) : null, R?.icon != null || R?.discovery_splash != null || R?.invite_splash != null || R?.banner != null ? (0, i.jsx)(x.Text, {
                     color: "text-muted",
                     variant: "text-sm/normal",
-                    children: T.intl.string(T.t.WVKQ6q)
+                    children: C.intl.string(C.t.WVKQ6q)
                 }) : null]
             }),
             checked: null == R || 0 === Object.keys(R).length
         }, {
-            name: T.intl.string(T.t.lSXnL9),
-            failingName: T.intl.string(T.t.awA3Pb),
-            description: T.intl.string(T.t.QbBJ7R),
-            failingDescription: T.intl.format(T.t.kBXInb, {
-                onClick: () => N.A.setSection(C.BEX.SAFETY, C.nd0.SAFETY_PERMISSIONS)
+            name: C.intl.string(C.t.lSXnL9),
+            failingName: C.intl.string(C.t.awA3Pb),
+            description: C.intl.string(C.t.QbBJ7R),
+            failingDescription: C.intl.format(C.t.kBXInb, {
+                onClick: () => N.A.setSection(T.BEX.SAFETY, T.nd0.SAFETY_PERMISSIONS)
             }),
             checked: S?.protected
         }];

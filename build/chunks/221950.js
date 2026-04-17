@@ -1,8 +1,8 @@
 /** chunk id: 221950 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Cw: () => E,
-    Ld: () => A,
+    Cw: () => A,
+    Ld: () => E,
     UD: () => _,
     aZ: () => m,
     jo: () => I,
@@ -10,8 +10,8 @@ n.d(t, {
 });
 var i = n(73153),
     r = n(997509),
-    s = n(976860),
-    l = n(71393),
+    l = n(976860),
+    s = n(71393),
     a = n(134413),
     o = n(11541),
     c = n(652215),
@@ -30,7 +30,7 @@ function _(e) {
     })
 }
 
-function E(e, t) {
+function A(e, t) {
     let {
         continuationToken: n,
         ...r
@@ -41,7 +41,7 @@ function E(e, t) {
         pagination: r
     })
 }
-async function A(e, t) {
+async function E(e, t) {
     await i.h.dispatch({
         type: "MEMBER_SAFETY_SEARCH_STATE_UPDATE",
         guildId: e,
@@ -51,8 +51,8 @@ async function A(e, t) {
 
 function m(e) {
     let t = (0, a.Ml)(e),
-        n = l.A.getGuild(e);
-    return !!t && null != n && (n.features.has(c.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) || n.features.has(c.GuildFeatures.COMMUNITY) || n.features.has(c.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) ? (0, s.pX)(c.BVt.CHANNEL(e, u.VV.MEMBER_SAFETY)) : r.A.open(n.id, c.BEX.MEMBERS), !0)
+        n = s.A.getGuild(e);
+    return !!t && null != n && (n.features.has(c.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) || n.features.has(c.GuildFeatures.COMMUNITY) || n.features.has(c.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) ? (0, l.pX)(c.BVt.CHANNEL(e, u.VV.MEMBER_SAFETY)) : r.A.open(n.id, c.BEX.MEMBERS), !0)
 }
 async function I(e, t) {
     let n = await (0, o.vk)(e, t);

@@ -140,8 +140,8 @@ let G = function() {
         activeOutboundPromotions: p,
         claimedEndedOutboundPromotions: G,
         claimedOutboundPromotionCodeMap: M,
-        addClaimedOutboundPromotionCode: U
-    } = (0, A.y7)(), k = p.length + G.length > 0, w = a && k;
+        addClaimedOutboundPromotionCode: k
+    } = (0, A.y7)(), U = p.length + G.length > 0, w = a && U;
     return _ && h ? (0, i.jsxs)(i.Fragment, {
         children: [function() {
             let e = n.find(e => e.giftCodeBatchId === R.FB && !e.consumed),
@@ -154,7 +154,7 @@ let G = function() {
                 }),
                 d = (0, i.jsx)(c.Heading, {
                     variant: "heading-md/semibold",
-                    children: k ? L.intl.string(L.t.wFsj3B) : void 0
+                    children: U ? L.intl.string(L.t.wFsj3B) : void 0
                 }),
                 u = w ? (0, i.jsxs)("div", {
                     className: P.uo,
@@ -180,7 +180,7 @@ let G = function() {
                     })]
                 }) : null;
             return (0, i.jsxs)("div", {
-                children: [d, k ? (0, i.jsx)(c.cGx, {
+                children: [d, U ? (0, i.jsx)(c.cGx, {
                     className: P.yF
                 }) : null, (0, i.jsx)(f.A, {
                     className: P.Yj,
@@ -199,13 +199,13 @@ let G = function() {
                             return (0, i.jsx)(D, {
                                 outboundPromotion: n,
                                 code: t,
-                                addClaimedOutboundPromotionCode: U,
+                                addClaimedOutboundPromotionCode: k,
                                 disabled: !l
                             }, n.id)
                         }), p.map(e => (0, i.jsx)(D, {
                             outboundPromotion: e,
                             code: M[e.id],
-                            addClaimedOutboundPromotionCode: U,
+                            addClaimedOutboundPromotionCode: k,
                             disabled: !l
                         }, e.id)), null != e ? (0, i.jsx)(y.A, {
                             className: P.uI,

@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(201275),
     N = n(20851),
     E = n(176201),
-    C = n(676608),
-    T = n(828162),
+    T = n(676608),
+    C = n(828162),
     I = n(208039),
     b = n(34457),
     v = n(576705),
@@ -90,8 +90,8 @@ function J(e) {
         }
     };
 
-    function C() {
-        (0, T.A)(n, A.A.GUILD_POWERUPS_GUILD_SETTINGS_ROLE_EDIT), (0, x.jH)()
+    function T() {
+        (0, C.A)(n, A.A.GUILD_POWERUPS_GUILD_SETTINGS_ROLE_EDIT), (0, x.jH)()
     }
     return (0, i.jsx)(f.Ay, {
         contentTypes: [u.M.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE],
@@ -160,7 +160,7 @@ function J(e) {
                             children: B.intl.string(F.default.FJZeZF)
                         })]
                     }), (0, i.jsx)(g.Button, {
-                        onClick: C,
+                        onClick: T,
                         variant: "expressive",
                         icon: g._Jp,
                         text: B.intl.string(B.t["+7XY31"])
@@ -311,7 +311,7 @@ function ee(e) {
         role: n,
         locked: s,
         setSelectedSection: l
-    } = e, a = (0, C.jV)(t.id, n), o = (0, c.bG)([y.A], () => y.A.getRoleStyleData(n.id)), d = !a, u = null != o && a ? o.currentStyle : y.y.SOLID, m = (0, b.Oy)(n), x = s || m, h = (0, c.bG)([v.A], () => v.A.canImpersonateRole(t, n)), {
+    } = e, a = (0, T.jV)(t.id, n), o = (0, c.bG)([y.A], () => y.A.getRoleStyleData(n.id)), d = !a, u = null != o && a ? o.currentStyle : y.y.SOLID, m = (0, b.Oy)(n), x = s || m, h = (0, c.bG)([v.A], () => v.A.canImpersonateRole(t, n)), {
         headerHeight: _,
         headerRef: A
     } = (0, O.A)(0), {

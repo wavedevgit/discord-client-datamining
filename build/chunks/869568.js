@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(997509),
     N = n(396816),
     E = n(856644),
-    C = n(785312),
-    T = n(316506),
+    T = n(785312),
+    C = n(316506),
     I = n(981634),
     b = n(927573),
     v = n(652215),
@@ -267,10 +267,10 @@ function k(e) {
     } = e, [u, m] = s.useState(""), {
         headerHeight: g,
         headerRef: x
-    } = (0, C.A)(0), {
+    } = (0, T.A)(0), {
         scrolledToTop: h,
         handleScroll: _
-    } = (0, T.u)(), A = l.managed || a, j = (0, E.K5)(t.id, l.id), N = (0, o.bG)([f.A], () => f.A.getRoleMemberCount(t.id)?.[l.id] ?? 0) > j.length, I = () => {
+    } = (0, C.u)(), A = l.managed || a, j = (0, E.K5)(t.id, l.id), N = (0, o.bG)([f.A], () => f.A.getRoleMemberCount(t.id)?.[l.id] ?? 0) > j.length, I = () => {
         p.default.track(v.HAw.OPEN_MODAL, {
             type: "Add Role Members",
             location_page: "Role Settings",
@@ -297,7 +297,7 @@ function k(e) {
                     className: r()(R.wx, {
                         [R.l6]: !h
                     }),
-                    children: [(0, i.jsx)(T.A, {
+                    children: [(0, i.jsx)(C.A, {
                         guild: t,
                         role: l,
                         selectedSection: b.T$.MEMBERS,

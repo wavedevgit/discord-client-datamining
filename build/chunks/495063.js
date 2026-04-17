@@ -110,7 +110,7 @@ function E(e) {
     }
     return null
 }
-let C = (0, _.CU)({
+let T = (0, _.CU)({
         key: "AMOUNT ",
         cellClassName: j.Fh,
         renderHeader() {
@@ -128,7 +128,7 @@ let C = (0, _.CU)({
         },
         getAmount: e => e.amount
     }),
-    T = (0, A.gE)([(0, A.N7)({
+    C = (0, A.gE)([(0, A.N7)({
         key: "PERIOD",
         cellClassName: j.Ii,
         renderHeader: () => (0, i.jsx)(_.A3, {
@@ -147,9 +147,9 @@ let C = (0, _.CU)({
             })
         }
     }), (0, A.N7)({
-        ...C,
-        renderContent: C.render,
-        renderExpandedContent: (e, t) => C.render(e, t)
+        ...T,
+        renderContent: T.render,
+        renderExpandedContent: (e, t) => T.render(e, t)
     }), (0, _.HA)({
         key: "STATUS ",
         cellClassName: j.xG,
@@ -194,7 +194,7 @@ function I(e) {
         ...l
     }), [l, t]);
     return (0, i.jsx)(_.Ay, {
-        columns: T,
+        columns: C,
         data: r,
         cellProps: a
     })

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(311907),
-    s = n(397927),
-    l = n(47167),
+    l = n(397927),
+    s = n(47167),
     a = n(734057),
     o = n(763754),
     c = n(888675),
@@ -19,27 +19,27 @@ function _(e) {
         message: t,
         compact: n,
         usernameHook: _,
-        onClickThread: E,
-        onClickViewThreads: A,
+        onClickThread: A,
+        onClickViewThreads: E,
         onContextMenuThread: m
-    } = e, I = (0, o.Ay)(t), T = _(I), N = (0, r.bG)([a.A], () => a.A.getChannel(t.messageReference?.channel_id)), g = (0, l.Ay)(N), p = u.intl.format(u.t.cZ9Uf2, {
+    } = e, I = (0, o.Ay)(t), T = _(I), g = (0, r.bG)([a.A], () => a.A.getChannel(t.messageReference?.channel_id)), N = (0, s.Ay)(g), f = u.intl.format(u.t.cZ9Uf2, {
         actorName: I.nick,
         actorHook: T,
-        threadName: g ?? t.content,
+        threadName: N ?? t.content,
         threadOnClick: {
-            onClick: E,
+            onClick: A,
             onContextMenu: m
         },
-        viewThreadsOnClick: A
+        viewThreadsOnClick: E
     });
     return (0, i.jsx)(c.A, {
-        iconNode: (0, i.jsx)(s.ysw, {
+        iconNode: (0, i.jsx)(l.ysw, {
             size: "md",
             color: "currentColor",
             className: d.K
         }),
         timestamp: t.timestamp,
         compact: n,
-        children: p
+        children: f
     })
 }

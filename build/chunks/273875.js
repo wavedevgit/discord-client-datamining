@@ -96,8 +96,8 @@ function h(e) {
         isSelecting: A,
         error: p,
         forceShowErrorTooltip: f
-    } = e, j = s.useRef(null), N = s.useRef(null), [E, C] = s.useState(!1), {
-        ref: T,
+    } = e, j = s.useRef(null), N = s.useRef(null), [E, T] = s.useState(!1), {
+        ref: C,
         width: I = 0
     } = (0, c.Ay)(E), {
         ref: b,
@@ -115,15 +115,15 @@ function h(e) {
         }, [n]),
         D = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-            t.trim().length <= 0 && h(), null != j.current && null != T.current && null != N.current && (j.current.scrollTo(0, 0), j.current.setSelectionRange(0, 0), j.current.scrollLeft = 0, T.current.scrollLeft = 0, N.current?.ref != null && (N.current.ref.scrollLeft = 0)), C(!1), l(e)
-        }, [t, T, l, h]),
+            t.trim().length <= 0 && h(), null != j.current && null != C.current && null != N.current && (j.current.scrollTo(0, 0), j.current.setSelectionRange(0, 0), j.current.scrollLeft = 0, C.current.scrollLeft = 0, N.current?.ref != null && (N.current.ref.scrollLeft = 0)), T(!1), l(e)
+        }, [t, C, l, h]),
         M = s.useCallback(e => {
             let n = t.trim().length <= 0;
             m.Wu.has(e.key) ? (e.preventDefault(), e.stopPropagation(), D(!0)) : "Backspace" === e.key && n && (e.preventDefault(), e.stopPropagation(), D(!0))
         }, [D, t]),
         k = s.useCallback(e => {
             let t = e.metaKey || e.ctrlKey;
-            o(t), t ? e.preventDefault() : C(!0), e.stopPropagation()
+            o(t), t ? e.preventDefault() : T(!0), e.stopPropagation()
         }, [o]),
         U = s.useCallback(e => {
             h()
@@ -164,7 +164,7 @@ function h(e) {
                         width: G > 0 ? G : `calc(${t.length}ch + 10px)`
                     }
                 }), (0, i.jsx)(x, {
-                    ref: T,
+                    ref: C,
                     value: t,
                     isEditing: E,
                     isSelected: _,

@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(234419),
     G = n(558533),
     M = n(788868),
-    U = n(652215),
-    k = n(972119);
+    k = n(652215),
+    U = n(972119);
 let w = function(e) {
     let {
         entrypoint: t = M.Mf.UserSettings
@@ -61,10 +61,10 @@ let w = function(e) {
     (0, L.b)(), s.useEffect(() => {
         c.h.wait(async () => {
             let e = Date.now();
-            await Promise.all([h.hP(), h.$o(), (0, u.zS)(null, null, U.tF5.DISCOVERY)]), Z.current = Date.now() - e, W(!1)
+            await Promise.all([h.hP(), h.$o(), (0, u.zS)(null, null, k.tF5.DISCOVERY)]), Z.current = Date.now() - e, W(!1)
         })
     }, []), s.useEffect(() => {
-        K || j.default.track(U.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
+        K || j.default.track(k.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
             location_stack: l,
             load_duration_ms: Z.current
         })
@@ -83,7 +83,7 @@ let w = function(e) {
             nitro_basic: M.pe.TIER_0,
             nitro: M.pe.TIER_2
         } [e];
-        null != t && (J.current = !0, (0, b.bG)(U.BVt.APPLICATION_STORE), (0, E.A)({
+        null != t && (J.current = !0, (0, b.bG)(k.BVt.APPLICATION_STORE), (0, E.A)({
             subscriptionTier: t,
             analyticsLocations: w
         }))
@@ -96,7 +96,7 @@ let w = function(e) {
                 userId: H
             })
         }) : ee ? null : (0, i.jsx)("div", {
-            className: r()(k.kL, k.Lq),
+            className: r()(U.kL, U.Lq),
             children: (0, i.jsx)(d.y$y, {})
         });
     return null != es ? (0, i.jsxs)(i.Fragment, {

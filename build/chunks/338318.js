@@ -1,6 +1,6 @@
 /** chunk id: 338318 params = (module,exports,require) **/
 n.d(t, {
-    A: () => k
+    A: () => U
 });
 var i = n(627968),
     s = n(64700),
@@ -36,9 +36,9 @@ var i = n(627968),
     D = n(780207),
     G = n(652215),
     M = n(985018),
-    U = n(482549);
+    k = n(482549);
 
-function k() {
+function U() {
     let e = (0, a.bG)([O.default], () => {
             let e = O.default.getCurrentUser();
             return r()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
@@ -47,7 +47,7 @@ function k() {
         {
             pendingBio: n,
             pendingAvatar: l,
-            pendingNameplate: k,
+            pendingNameplate: U,
             showNotice: w,
             ...V
         } = (0, a.cf)([N.A], () => ({
@@ -59,7 +59,7 @@ function k() {
             image: l
         }),
         F = (0, S.lw)({
-            pendingValue: k,
+            pendingValue: U,
             userValue: e?.collectibles?.nameplate
         }),
         H = (0, I.A)() && null != n ? A.Ay.parse(void 0, n).content : n,
@@ -85,7 +85,7 @@ function k() {
                 user: e,
                 nameplate: F,
                 ...V,
-                className: null == F ? U.tJ : void 0,
+                className: null == F ? k.tJ : void 0,
                 isHighlighted: !0
             }),
             children: (0, i.jsx)(P.A, {})
@@ -103,7 +103,7 @@ function k() {
                 })
             })
         }), Z && !w && (0, i.jsx)(p.d, {
-            className: U.EL,
+            className: k.EL,
             showUpsell: !K,
             text: M.intl.format(M.t.TmfgI2, {
                 onClick: () => (0, f.K)({})
@@ -115,7 +115,7 @@ function k() {
                 location: g.A.PREMIUM_WISHLIST_EDIT_PROFILE_UPSELL
             }) : void 0,
             button: (0, i.jsx)("div", {
-                className: U.Xl,
+                className: k.Xl,
                 children: (0, i.jsx)(d.Button, {
                     variant: "overlay-primary",
                     onClick: () => {

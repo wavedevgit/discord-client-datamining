@@ -27,8 +27,8 @@ let E = function(e) {
         guildId: t,
         action: l,
         actionIndex: E,
-        onChange: C,
-        onDelete: T,
+        onChange: T,
+        onDelete: C,
         onDragStart: I,
         onDragComplete: b,
         onDragReset: v
@@ -61,11 +61,11 @@ let E = function(e) {
                 ...n,
                 guildId: t,
                 action: l,
-                onSave: (e, t, n) => C(E, e, t, n),
-                onDelete: () => T(E)
+                onSave: (e, t, n) => T(E, e, t, n),
+                onDelete: () => C(E)
             })
         })
-    }, [t, l, E, C, T]);
+    }, [t, l, E, T, C]);
     if (null == S || null == y) return null;
     let V = (0, u.gU)(S) ?? d.N$i;
     return (0, i.jsxs)("div", {

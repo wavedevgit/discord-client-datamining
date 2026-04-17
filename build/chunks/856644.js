@@ -5,7 +5,7 @@ n.d(t, {
     K5: () => f,
     L9: () => E,
     SB: () => p,
-    Vh: () => C,
+    Vh: () => T,
     cG: () => j,
     gz: () => A,
     uc: () => _
@@ -94,6 +94,6 @@ function E(e) {
     }
 }
 
-function C(e, t) {
+function T(e, t) {
     return "" === t || e.name.toLowerCase().includes(t.toLowerCase())
 }

@@ -26,7 +26,7 @@ function j(e) {
         priceTiers: t
     } = e, {
         editStateId: n
-    } = (0, g.O)(), j = (0, l.bG)([u.A], () => u.A.getSubscriptionListing(n)?.image_asset), [N, E] = x.tx(n), [C, T] = x.bL(n), [I, b] = x.I8(n), [v, S] = x.lK(n, 1024), {
+    } = (0, g.O)(), j = (0, l.bG)([u.A], () => u.A.getSubscriptionListing(n)?.image_asset), [N, E] = x.tx(n), [T, C] = x.bL(n), [I, b] = x.I8(n), [v, S] = x.lK(n, 1024), {
         imageCTA: y,
         imageAriaLabel: R,
         setFilename: O
@@ -68,8 +68,8 @@ function j(e) {
                         options: G,
                         disabled: D || null == t,
                         placeholder: p.intl.string(p.t["88XZDs"]),
-                        value: C,
-                        onSelectionChange: T,
+                        value: T,
+                        onSelectionChange: C,
                         maxOptionsVisible: 5,
                         "aria-labelledby": k
                     })

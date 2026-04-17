@@ -24,9 +24,9 @@ let m = s.memo(function(e) {
         setEditingRule: _
     } = (0, a.U)(), {
         isLoading: A
-    } = (0, a.S)(), [p] = s.useState(() => !(0, l.wC)(t)), f = x?.id === t.id || n, j = (0, r.R)(t?.id), N = f && null != x ? x : t, E = s.useMemo(() => (0, o.cT)(t.name), [t?.name]), C = s.useCallback(() => {
+    } = (0, a.S)(), [p] = s.useState(() => !(0, l.wC)(t)), f = x?.id === t.id || n, j = (0, r.R)(t?.id), N = f && null != x ? x : t, E = s.useMemo(() => (0, o.cT)(t.name), [t?.name]), T = s.useCallback(() => {
         h(t.guildId, t.triggerType)
-    }, [t.guildId, t.triggerType, h]), T = s.useCallback(e => {
+    }, [t.guildId, t.triggerType, h]), C = s.useCallback(e => {
         A || _(e, !0)
     }, [A, _]);
     s.useEffect(() => {
@@ -44,8 +44,8 @@ let m = s.memo(function(e) {
             triggerType: t.triggerType,
             isEditMode: f,
             isDefaultRule: j,
-            onChangeRule: T,
-            onSetupRule: C
+            onChangeRule: C,
+            onSetupRule: T
         }),
         isStuck: f && g,
         isExpanded: f,
@@ -53,7 +53,7 @@ let m = s.memo(function(e) {
         children: f && (0, i.jsx)(d.A, {
             rule: N,
             isLoading: A,
-            onChangeRule: T
+            onChangeRule: C
         })
     })
 })

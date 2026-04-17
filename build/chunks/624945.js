@@ -1,12 +1,12 @@
 /** chunk id: 624945 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => E
+    A: () => A
 });
 var i = n(627968),
     r = n(311907),
-    s = n(827734),
-    l = n(397927),
+    l = n(827734),
+    s = n(397927),
     a = n(287809),
     o = n(763754),
     c = n(447215),
@@ -14,31 +14,31 @@ var i = n(627968),
     d = n(985018),
     _ = n(179250);
 
-function E(e) {
+function A(e) {
     let {
         message: t,
         channel: n,
-        compact: E
-    } = e, A = t.getChannelId(), m = n.isDM() ? n.getRecipientId() : void 0, I = (0, r.bG)([a.default], () => null != m ? a.default.getUser(m) : void 0, [m]), T = (0, r.bG)([a.default], () => a.default.getCurrentUser(), []), N = null != T && t.author.id === T.id, g = (0, o.d8)(I, n), p = (0, c.P)({
+        compact: A
+    } = e, E = t.getChannelId(), m = n.isDM() ? n.getRecipientId() : void 0, I = (0, r.bG)([a.default], () => null != m ? a.default.getUser(m) : void 0, [m]), T = (0, r.bG)([a.default], () => a.default.getCurrentUser(), []), g = null != T && t.author.id === T.id, N = (0, o.d8)(I, n), f = (0, c.P)({
         user: I,
-        channelId: A,
+        channelId: E,
         guildId: void 0,
         messageId: t.id
-    })(g);
+    })(N);
     if (!n.isDM() || null == I || null == T) return null;
-    let f = N ? d.t.S6PRsh : d.t["H/9Tlj"],
-        C = d.intl.format(f, {
-            username: g.nick,
-            usernameHook: p
+    let C = g ? d.t.S6PRsh : d.t["H/9Tlj"],
+        p = d.intl.format(C, {
+            username: N.nick,
+            usernameHook: f
         });
     return (0, i.jsx)(u.A, {
-        iconNode: (0, i.jsx)(l.V1C, {
+        iconNode: (0, i.jsx)(s.V1C, {
             size: "sm",
-            color: s.A.colors.STATUS_POSITIVE
+            color: l.A.colors.STATUS_POSITIVE
         }),
         iconContainerClassName: _.z,
         timestamp: t.timestamp,
-        compact: E,
-        children: C
+        compact: A,
+        children: p
     })
 }

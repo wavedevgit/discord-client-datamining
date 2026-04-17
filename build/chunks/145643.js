@@ -5,15 +5,15 @@ n.d(t, {
 });
 var i = n(311907),
     r = n(73153),
-    s = n(71393);
-let l = new Map;
+    l = n(71393);
+let s = new Map;
 class a extends i.Ay.Store {
     static displayName = "GuildRoleConnectionsConfigurationStore";
     initialize() {
-        this.waitFor(s.A)
+        this.waitFor(l.A)
     }
     getGuildRoleConnectionsConfiguration(e) {
-        return l.get(e)
+        return s.get(e)
     }
 }
 let o = new a(r.h, {
@@ -22,6 +22,6 @@ let o = new a(r.h, {
             roleId: t,
             roleConnectionConfigurations: n
         } = e;
-        l.set(t, n)
+        s.set(t, n)
     }
 })

@@ -67,7 +67,7 @@ function j(e) {
     return (0, i.jsx)(i.Fragment, {
         children: t.map(e => e.isCategory() ? (0, i.jsx)(E, {
             channel: e
-        }, e.id) : (0, i.jsx)(C, {
+        }, e.id) : (0, i.jsx)(T, {
             channel: e
         }, e.id))
     })
@@ -99,7 +99,7 @@ function E(e) {
     })
 }
 
-function C(e) {
+function T(e) {
     let {
         channel: t
     } = e, n = (0, o.Ay)(t), s = (0, u.sZ)(t), r = (0, d.gU)(t) ?? a.N$i;

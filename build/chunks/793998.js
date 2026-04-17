@@ -50,7 +50,7 @@ let G = {
         [O.u9.DATA_AND_PRIVACY]: v.A
     };
 
-function U() {
+function k() {
     return (0, i.jsx)(d.BJc, {
         justify: "center",
         align: "center",
@@ -59,7 +59,7 @@ function U() {
     })
 }
 
-function k(e) {
+function U(e) {
     let {
         section: t,
         handleItemSelect: n
@@ -156,7 +156,7 @@ function V() {
         "aria-label": P.intl.string(L.default.RZqaJn),
         children: [(0, i.jsx)(g.HI, {
             location: P.intl.string(L.default.RZqaJn)
-        }), (0, i.jsx)(k, {
+        }), (0, i.jsx)(U, {
             section: n,
             handleItemSelect: e => {
                 l(e)
@@ -165,7 +165,7 @@ function V() {
             id: n,
             "aria-labelledby": e,
             className: D.Us,
-            children: t ? (0, i.jsx)(U, {}) : (0, i.jsx)(a, {})
+            children: t ? (0, i.jsx)(k, {}) : (0, i.jsx)(a, {})
         })]
     })
 }
@@ -210,7 +210,7 @@ function B() {
                 children: (0, i.jsx)(d.HOs, {
                     children: (0, i.jsx)("div", {
                         className: D.O4,
-                        children: x ? (0, i.jsx)(U, {}) : (0, i.jsx)(v, {})
+                        children: x ? (0, i.jsx)(k, {}) : (0, i.jsx)(v, {})
                     })
                 })
             })]

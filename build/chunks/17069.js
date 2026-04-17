@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(503698),
-    s = n.n(r),
-    l = n(30474);
+    l = n.n(r),
+    s = n(30474);
 
 function a(e) {
     let {
@@ -18,13 +18,13 @@ function a(e) {
     if ("stacked" === n) {
         let e = Math.min(t.length, 2);
         return (0, i.jsx)("div", {
-            className: s()(l.qH, r, {
-                [l.qK]: 1 === e,
-                [l.xs]: 2 === e
+            className: l()(s.qH, r, {
+                [s.qK]: 1 === e,
+                [s.xs]: 2 === e
             }),
             children: t.slice(0, 2).map((e, t) => (0, i.jsx)("img", {
                 alt: "Clip preview",
-                className: l.M3,
+                className: s.M3,
                 src: e,
                 "data-index": t
             }, `${e}-${t}`))
@@ -32,15 +32,15 @@ function a(e) {
     }
     let a = Math.min(t.length, 4);
     return (0, i.jsx)("div", {
-        className: s()(l.bF, r, {
-            [l.tK]: 1 === a,
-            [l.y0]: 2 === a,
-            [l.rm]: 3 === a,
-            [l.E1]: a >= 4
+        className: l()(s.bF, r, {
+            [s.tK]: 1 === a,
+            [s.y0]: 2 === a,
+            [s.rm]: 3 === a,
+            [s.E1]: a >= 4
         }),
         children: t.slice(0, 4).map((e, t) => (0, i.jsx)("img", {
             alt: "Clip preview",
-            className: l.N3,
+            className: s.N3,
             src: e,
             "data-index": t
         }, `${e}-${t}`)).reverse()

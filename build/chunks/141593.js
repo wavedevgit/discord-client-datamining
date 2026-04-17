@@ -1,27 +1,27 @@
 /** chunk id: 141593 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => l
 });
 var i = n(627968);
 n(64700);
 var r = n(953727);
 
-function s(e) {
+function l(e) {
     let {
         width: t = 440,
         height: n = 200,
-        avatar: s,
-        ...l
+        avatar: l,
+        ...s
     } = e;
     return (0, i.jsxs)("svg", {
-        ...(0, r.A)(l),
+        ...(0, r.A)(s),
         width: t,
         height: n,
         viewBox: `0 0 ${t} ${n}`,
         fill: "none",
         xmlns: "http://www.w3.org/2000/svg",
-        ...l,
+        ...s,
         children: [(0, i.jsx)("rect", {
             y: "12",
             width: "440",
@@ -81,7 +81,7 @@ function s(e) {
             y: "100",
             width: "56",
             height: "56",
-            children: s
+            children: l
         })]
     })
 }

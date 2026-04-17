@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(827734),
-    s = n(397927),
-    l = n(763754),
+    l = n(397927),
+    s = n(763754),
     a = n(888675),
     o = n(985018),
     c = n(554655);
@@ -17,20 +17,20 @@ function u(e) {
         message: t,
         compact: n,
         usernameHook: u
-    } = e, d = (0, l.Ay)(t), _ = u(d), E = o.intl.format(o.t["Rv+TSM"], {
+    } = e, d = (0, s.Ay)(t), _ = u(d), A = o.intl.format(o.t["Rv+TSM"], {
         username: d.nick,
         usernameHook: _,
         topic: t.content
     });
     return (0, i.jsx)(a.A, {
         className: c.d,
-        iconNode: (0, i.jsx)(s.qux, {
+        iconNode: (0, i.jsx)(l.qux, {
             size: "md",
             color: r.A.unsafe_rawColors.GREEN_360.css
         }),
         iconContainerClassName: c.z,
         timestamp: t.timestamp,
         compact: n,
-        children: E
+        children: A
     })
 }

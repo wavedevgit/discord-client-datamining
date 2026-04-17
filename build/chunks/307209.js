@@ -1,7 +1,7 @@
 /** chunk id: 307209 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => T
 });
 var i = n(627968);
 n(64700);
@@ -25,7 +25,7 @@ var s = n(311907),
     N = n(985018),
     E = n(956888);
 
-function C(e) {
+function T(e) {
     let {
         guildId: t,
         completed: n
@@ -106,7 +106,7 @@ function C(e) {
         })]
     });
     return n ? (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(T, {
+        children: [(0, i.jsx)(C, {
             guildId: t,
             handlePreview: h
         }), (0, i.jsx)(I, {}), (0, i.jsxs)("div", {
@@ -130,7 +130,7 @@ function C(e) {
     })
 }
 
-function T(e) {
+function C(e) {
     let {
         guildId: t,
         handlePreview: n

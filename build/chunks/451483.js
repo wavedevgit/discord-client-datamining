@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    s = n(397927),
-    l = n(517905),
+    l = n(397927),
+    s = n(517905),
     a = n(763754),
     o = n(888675),
     c = n(985018);
@@ -17,15 +17,15 @@ function u(e) {
         messageReference: n,
         guildName: a
     } = e, o = r.useRef(null);
-    if (null == n) return (0, i.jsx)(s.MzZ, {
+    if (null == n) return (0, i.jsx)(l.MzZ, {
         children: t
     });
     let {
         guild_id: c
     } = n;
-    return null == c ? (0, i.jsx)(s.MzZ, {
+    return null == c ? (0, i.jsx)(l.MzZ, {
         children: t
-    }) : (0, i.jsx)(l.A, {
+    }) : (0, i.jsx)(s.A, {
         guildId: c,
         name: a,
         targetElementRef: o,
@@ -33,10 +33,10 @@ function u(e) {
             let {
                 "aria-controls": n,
                 "aria-expanded": r,
-                ...l
+                ...s
             } = e;
-            return (0, i.jsx)(s.MzZ, {
-                ...l,
+            return (0, i.jsx)(l.MzZ, {
+                ...s,
                 ref: o,
                 children: t
             })
@@ -48,15 +48,15 @@ function d(e) {
     let {
         usernameHook: t,
         message: r,
-        compact: s
+        compact: l
     } = e, {
-        content: l,
+        content: s,
         timestamp: d,
         messageReference: _
-    } = r, E = (0, a.Ay)(r), A = t(E), m = (l ?? "").split(" ").slice(0, -1).join(" "), I = c.intl.format(c.t["47CZc2"], {
-        username: E.nick,
-        usernameHook: A,
-        webhookName: l,
+    } = r, A = (0, a.Ay)(r), E = t(A), m = (s ?? "").split(" ").slice(0, -1).join(" "), I = c.intl.format(c.t["47CZc2"], {
+        username: A.nick,
+        usernameHook: E,
+        webhookName: s,
         webhookNameHook: (e, t) => (0, i.jsx)(u, {
             messageReference: _,
             guildName: m,
@@ -66,7 +66,7 @@ function d(e) {
     return (0, i.jsx)(o.A, {
         icon: n(617184),
         timestamp: d,
-        compact: s,
+        compact: l,
         children: I
     })
 }

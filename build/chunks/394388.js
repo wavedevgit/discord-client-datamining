@@ -5,24 +5,24 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    s = n(311907),
-    l = n(554146),
+    l = n(311907),
+    s = n(554146),
     a = n(397927),
     o = n(155718),
     c = n(775602),
     u = n(793574),
     d = n(367727),
     _ = n(509536),
-    E = n(881635),
-    A = n(363487),
+    A = n(881635),
+    E = n(363487),
     m = n(828162),
     I = n(71393),
     T = n(888675),
-    N = n(652215),
-    g = n(49999),
-    p = n(985018),
-    f = n(853513),
-    C = n(829687),
+    g = n(652215),
+    N = n(49999),
+    f = n(985018),
+    C = n(853513),
+    p = n(829687),
     h = n(274993),
     S = n(218924);
 
@@ -31,19 +31,19 @@ function R(e) {
         title: t,
         body: n,
         guild: r,
-        analyticsLocations: l
-    } = e, o = (0, s.bG)([c.A], () => c.A.useReducedMotion);
+        analyticsLocations: s
+    } = e, o = (0, l.bG)([c.A], () => c.A.useReducedMotion);
     return (0, i.jsxs)("div", {
-        className: C.kL,
+        className: p.kL,
         children: [(0, i.jsx)("div", {
-            className: C.ZS,
+            className: p.ZS,
             children: (0, i.jsx)("img", {
-                className: C.Sl,
+                className: p.Sl,
                 src: o ? S.A : h.A,
                 alt: "Boost gem"
             })
         }), (0, i.jsxs)("div", {
-            className: C.Qs,
+            className: p.Qs,
             children: [(0, i.jsx)(a.Heading, {
                 variant: "heading-md/semibold",
                 style: {
@@ -53,17 +53,17 @@ function R(e) {
                 children: t
             }), (0, i.jsx)(a.Text, {
                 color: "text-muted",
-                className: C.rf,
+                className: p.rf,
                 variant: "text-sm/medium",
                 children: n
             })]
         }), (0, i.jsx)("div", {
-            children: (0, i.jsx)(E.A, {
+            children: (0, i.jsx)(A.A, {
                 guild: r,
-                analyticsLocations: l,
+                analyticsLocations: s,
                 analyticsLocation: {
-                    page: N.liQ.GUILD_CHANNEL,
-                    section: N.JJy.CHANNEL_TEXT_AREA
+                    page: g.liQ.GUILD_CHANNEL,
+                    section: g.JJy.CHANNEL_TEXT_AREA
                 }
             })
         })]
@@ -75,15 +75,15 @@ function x(e) {
         guild: t
     } = e;
     r.useEffect(() => {
-        (0, d.uh)(l.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
-            dismissAction: g.i.AUTO_DISMISS,
+        (0, d.uh)(s.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
+            dismissAction: N.i.AUTO_DISMISS,
             guildId: t.id
         })
     }, [t.id]);
-    let n = (0, A.A)(t.id);
+    let n = (0, E.A)(t.id);
     return (0, i.jsx)(R, {
-        title: p.intl.string(f.default.qGDEON),
-        body: p.intl.format(f.default["s+HTdX"], {
+        title: f.intl.string(C.default.qGDEON),
+        body: f.intl.format(C.default["s+HTdX"], {
             viewAllPerks: e => (0, i.jsx)(a.DUT, {
                 tag: "a",
                 role: "link",
@@ -91,8 +91,8 @@ function x(e) {
                     n ? (0, m.A)(t.id, u.A.GUILD_BOOSTING_FIRST_TIME_BOOSTER_UPSELL) : (0, _.K4)({
                         guildId: t.id,
                         location: {
-                            section: N.JJy.CHANNEL_TEXT_AREA,
-                            object: N.ZSU.BOOST_ANNOUNCEMENT_UPSELL
+                            section: g.JJy.CHANNEL_TEXT_AREA,
+                            object: g.ZSU.BOOST_ANNOUNCEMENT_UPSELL
                         }
                     })
                 },
@@ -118,16 +118,16 @@ function M(e) {
     let {
         boostingPrompt: t,
         channel: n
-    } = e, r = n.guild_id, l = (0, s.bG)([I.A], () => I.A.getGuild(r), [r]);
-    return null == l ? null : (0, i.jsx)(T.A, {
-        contentClassName: C.FG,
-        iconContainerClassName: C.zc,
+    } = e, r = n.guild_id, s = (0, l.bG)([I.A], () => I.A.getGuild(r), [r]);
+    return null == s ? null : (0, i.jsx)(T.A, {
+        contentClassName: p.FG,
+        iconContainerClassName: p.zc,
         iconNode: (0, i.jsx)(a.XFE, {
-            colorClass: C.Kk
+            colorClass: p.Kk
         }),
         children: (0, i.jsx)(O, {
             boostingPrompt: t,
-            guild: l
+            guild: s
         })
     })
 }

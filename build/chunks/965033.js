@@ -25,8 +25,8 @@ var i = n(627968),
     j = n(997509),
     N = n(555337),
     E = n(512122),
-    C = n(939662),
-    T = n(111771),
+    T = n(939662),
+    C = n(111771),
     I = n(294363),
     b = n(652215),
     v = n(985018),
@@ -68,7 +68,7 @@ function y(e) {
                 variant: "text-sm/normal",
                 children: v.intl.format(v.t.iuRk2j, {})
             })]
-        }), (0, i.jsx)(T.A, {
+        }), (0, i.jsx)(C.A, {
             changeTitle: v.intl.string(v.t.TxESJG),
             value: a?.value,
             options: r,
@@ -121,7 +121,7 @@ function R(e) {
                         helpdeskArticle: p.A.getArticleURL(b.MVz.SAFE_DIRECT_MESSAGING)
                     })
                 })]
-            }), (0, i.jsx)(T.A, {
+            }), (0, i.jsx)(C.A, {
                 changeTitle: v.intl.string(v.t["eBd+Uv"]),
                 value: m?.value,
                 options: u,
@@ -230,7 +230,7 @@ function D() {
             mfaLevel: t
         }), (0, i.jsx)(R, {
             guild: e
-        }), (0, i.jsx)(C.A, {
+        }), (0, i.jsx)(T.A, {
             guild: e,
             location: "guild_settings_safety_setup"
         }), (0, i.jsx)(d.cGx, {

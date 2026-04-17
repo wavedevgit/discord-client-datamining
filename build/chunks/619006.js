@@ -7,12 +7,12 @@ n.d(t, {
 });
 var i = n(562465),
     r = n(73153),
-    s = n(545868),
-    l = n(652215);
+    l = n(545868),
+    s = n(652215);
 
 function a(e, t) {
     i.Bo.get({
-        url: l.Rsh.GUILD_ROLE_CONNECTIONS_CONFIGURATION(e, t),
+        url: s.Rsh.GUILD_ROLE_CONNECTIONS_CONFIGURATION(e, t),
         rejectWithError: !0
     }).then(e => {
         let n = [];
@@ -38,7 +38,7 @@ async function o(e, t, n) {
             value: e.value
         }))),
         o = await i.Bo.put({
-            url: l.Rsh.GUILD_ROLE_CONNECTIONS_CONFIGURATION(e, t),
+            url: s.Rsh.GUILD_ROLE_CONNECTIONS_CONFIGURATION(e, t),
             body: 0 === a.length ? [] : a,
             oldFormErrors: !0,
             rejectWithError: !1
@@ -52,7 +52,7 @@ async function o(e, t, n) {
                 value: e.value
             })))), t
         }),
-        c = await (0, s.a)(e, t, !1);
+        c = await (0, l.a)(e, t, !1);
     null != c && r.h.dispatch({
         type: "GUILD_ROLE_MEMBER_COUNT_UPDATE",
         guildId: e,
@@ -66,7 +66,7 @@ async function o(e, t, n) {
 }
 async function c() {
     return (await i.Bo.get({
-        url: l.Rsh.APPLICATION_USER_ROLE_CONNECTIONS,
+        url: s.Rsh.APPLICATION_USER_ROLE_CONNECTIONS,
         rejectWithError: !1
     })).body
 }

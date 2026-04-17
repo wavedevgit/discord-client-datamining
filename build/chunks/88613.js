@@ -80,8 +80,8 @@ function p(e) {
         }, [c, p]),
         N = (0, x.N)(t),
         E = N[u.C.CAPTCHA_AND_RAID_PROTECTION],
-        C = N[u.C.DM_AND_SPAM_PROTECTION],
-        T = N[u.C.PERMISSIONS],
+        T = N[u.C.DM_AND_SPAM_PROTECTION],
+        C = N[u.C.PERMISSIONS],
         I = (0, o.iI)(t.id);
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(l.Heading, {
@@ -107,8 +107,8 @@ function p(e) {
                 icon: n(134635),
                 title: h.intl.string(h.t.O0SfFy),
                 subtitle: h.intl.formatToPlainString(h.t.TG7NYK, {
-                    enabled: C.filter(e => e.enabled).length,
-                    total: C.length
+                    enabled: T.filter(e => e.enabled).length,
+                    total: T.length
                 }),
                 page: u.C.DM_AND_SPAM_PROTECTION
             }), (0, i.jsx)("div", {
@@ -129,8 +129,8 @@ function p(e) {
                 icon: n(638154),
                 title: h.intl.string(h.t.xrmhRX),
                 subtitle: h.intl.formatToPlainString(h.t.TG7NYK, {
-                    enabled: T.filter(e => e.enabled).length,
-                    total: T.length
+                    enabled: C.filter(e => e.enabled).length,
+                    total: C.length
                 }),
                 page: u.C.PERMISSIONS
             })]

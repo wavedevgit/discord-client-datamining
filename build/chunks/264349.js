@@ -3,24 +3,24 @@
 n.d(t, {
     Zy: () => a,
     cT: () => o,
-    ih: () => l
+    ih: () => s
 });
 var i = n(627968);
 n(64700);
 var r = n(397927);
 
-function s(e) {
+function l(e) {
     return new Promise(t => {
         (0, r.mMO)(() => e(() => {
             t(!0)
         }, e => (t(!1), e())))
     })
 }
-let l = e => s(async (t, r) => {
+let s = e => l(async (t, r) => {
         let {
-            default: s
+            default: l
         } = await n.e("6322").then(n.bind(n, 49065));
-        return n => (0, i.jsx)(s, {
+        return n => (0, i.jsx)(l, {
             ...n,
             ruleName: e,
             onConfirm: t,
@@ -28,30 +28,30 @@ let l = e => s(async (t, r) => {
             onCancel: () => r(n.onClose)
         })
     }),
-    a = (e, t) => s(async (r, s) => {
+    a = (e, t) => l(async (r, l) => {
         let {
-            default: l
+            default: s
         } = await n.e("78785").then(n.bind(n, 92696));
-        return n => (0, i.jsx)(l, {
+        return n => (0, i.jsx)(s, {
             ...n,
             ruleName: e,
             keyword: t,
             onConfirm: r,
-            onClose: () => s(n.onClose),
-            onCancel: () => s(n.onClose)
+            onClose: () => l(n.onClose),
+            onCancel: () => l(n.onClose)
         })
     }),
-    o = e => t => s(async (r, s) => {
+    o = e => t => l(async (r, l) => {
         let {
-            default: l
+            default: s
         } = await n.e("99979").then(n.bind(n, 146502)), a = () => {
             t(), r()
         };
-        return t => (0, i.jsx)(l, {
+        return t => (0, i.jsx)(s, {
             ruleName: e,
             ...t,
             onConfirm: a,
-            onClose: () => s(t.onClose),
-            onCancel: () => s(t.onClose)
+            onClose: () => l(t.onClose),
+            onCancel: () => l(t.onClose)
         })
     })

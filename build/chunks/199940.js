@@ -10,11 +10,11 @@ n.d(t, {
     UP: () => R,
     W5: () => y,
     WA: () => v,
-    Wh: () => C,
+    Wh: () => T,
     XD: () => b,
     hL: () => _,
     kO: () => D,
-    px: () => T,
+    px: () => C,
     sd: () => N,
     sk: () => M,
     z4: () => I
@@ -84,7 +84,7 @@ function E(e) {
         actions: e
     })
 }
-async function C(e, t, n) {
+async function T(e, t, n) {
     let i = {};
     null != n.emoji ? i.emoji = n.emoji : i.icon = n.icon;
     try {
@@ -113,7 +113,7 @@ async function C(e, t, n) {
     }
 }
 
-function T(e) {
+function C(e) {
     r.h.dispatch({
         type: "GUILD_SETTINGS_ONBOARDING_ADD_RESOURCE_CHANNEL",
         resourceChannel: e
@@ -243,7 +243,7 @@ async function G(e, t, n) {
     } = n;
     if (null != l) return;
     let r = null != i && s ? await L(i) : i;
-    await C(e, t, {
+    await T(e, t, {
         icon: r,
         emoji: null
     })

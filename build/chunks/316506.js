@@ -38,13 +38,13 @@ function f(e) {
         setSelectedSection: j
     } = e, N = s.useCallback(e => {
         j(e)
-    }, [j]), E = (0, l.bG)([u.A], () => u.A.getRoleMemberCount(t.id)?.[p.id], [p.id, t.id]), C = (0, c.Oy)(p), T = (0, m.A)(t.id, p), I = (0, l.bG)([o.A], () => {
+    }, [j]), E = (0, l.bG)([u.A], () => u.A.getRoleMemberCount(t.id)?.[p.id], [p.id, t.id]), T = (0, c.Oy)(p), C = (0, m.A)(t.id, p), I = (0, l.bG)([o.A], () => {
         let e = o.A.getGuildRoleConnectionsConfiguration(p.id);
         return null != e && e.some(e => e.some(e => e.connectionType === x.fg2.RIOT_GAMES || e.connectionType === x.fg2.LEAGUE_OF_LEGENDS))
     });
     s.useEffect(() => {
-        C && j(g.T$.PERMISSIONS)
-    }, [C, j]);
+        T && j(g.T$.PERMISSIONS)
+    }, [T, j]);
     let b = (0, d.x)(t, p);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
@@ -78,9 +78,9 @@ function f(e) {
             }) : null]
         }), (0, i.jsxs)("div", {
             className: A.QR,
-            children: [null != T ? (0, i.jsx)(r.po8, {
+            children: [null != C ? (0, i.jsx)(r.po8, {
                 messageType: r.YCn.WARNING,
-                children: T
+                children: C
             }) : null, I ? (0, i.jsx)(r.po8, {
                 messageType: r.YCn.WARNING,
                 children: h.intl.format(_.default.sbMMtk, {})
@@ -97,7 +97,7 @@ function f(e) {
             children: [(0, i.jsx)(r.VQ0.Item, {
                 className: A.YU,
                 id: g.T$.DISPLAY,
-                disabled: C,
+                disabled: T,
                 children: h.intl.string(h.t.hmdomw)
             }), (0, i.jsx)(r.VQ0.Item, {
                 className: A.YU,
@@ -106,13 +106,13 @@ function f(e) {
             }), (0, i.jsx)(r.VQ0.Item, {
                 className: A.YU,
                 id: g.T$.VERIFICATIONS,
-                disabled: C,
+                disabled: T,
                 children: h.intl.string(h.t["5//Muu"])
             }), (0, i.jsx)(r.VQ0.Item, {
                 className: A.YU,
                 id: g.T$.MEMBERS,
-                disabled: C,
-                children: C ? h.intl.string(h.t["kg//+7"]) : h.intl.formatToPlainString(h.t.bHnZWW, {
+                disabled: T,
+                children: T ? h.intl.string(h.t["kg//+7"]) : h.intl.formatToPlainString(h.t.bHnZWW, {
                     numMembers: String(E)
                 })
             })]

@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(260197),
     N = n(652215),
     E = n(985018),
-    C = n(243518);
-let T = "RULE";
+    T = n(243518);
+let C = "RULE";
 
 function I(e) {
     let {
@@ -45,7 +45,7 @@ function I(e) {
         textValue: y,
         richValue: R
     }, O] = s.useState((0, x.ur)(t.value)), [, G, L] = (0, d.i)({
-        type: T,
+        type: C,
         item: {
             rule: t,
             index: l
@@ -54,7 +54,7 @@ function I(e) {
             null == e || t.didDrop() || _(e.rule, null, !0)
         }
     }), [, D] = (0, c.H)({
-        accept: T,
+        accept: C,
         hover: (e, t) => {
             let {
                 index: n
@@ -76,16 +76,16 @@ function I(e) {
     let M = "" !== t.value ? t.value : t.id;
     return (0, i.jsx)("div", {
         ref: v,
-        className: r()(C.XQ, {
-            [C.cB]: A
+        className: r()(T.XQ, {
+            [T.cB]: A
         }),
         "data-dnd-name": M,
         children: (0, i.jsxs)("div", {
-            className: C.I6,
+            className: T.I6,
             children: [(0, i.jsx)(m.DUT, {
                 onMouseDown: () => f(l),
                 children: (0, i.jsx)(h.Ay, {
-                    innerClassName: C.oQ,
+                    innerClassName: T.oQ,
                     type: g.oU.RULES_INPUT,
                     textValue: y,
                     richValue: R,
@@ -109,7 +109,7 @@ function I(e) {
                     })
                 })
             }), (0, i.jsx)("div", {
-                className: C.mt,
+                className: T.mt,
                 children: (0, i.jsx)(m.K0, {
                     size: "sm",
                     variant: "icon-only",
@@ -119,12 +119,12 @@ function I(e) {
                 })
             }), (0, i.jsx)("div", {
                 ref: S,
-                className: C.cK,
+                className: T.cK,
                 "data-dnd-name": M,
                 children: I && (0, i.jsx)(m.WP0, {
                     size: "xs",
                     color: "currentColor",
-                    className: C.co
+                    className: T.co
                 })
             })]
         })
@@ -137,7 +137,7 @@ function b(e) {
         setRules: n,
         guild: l,
         disabled: r
-    } = e, a = l.rulesChannelId, d = l.features.has(N.GuildFeatures.PREVIEW_ENABLED), c = (0, u.bG)([_.A], () => null != a ? _.A.getChannel(a) : null), g = (0, u.bG)([A.Ay], () => A.Ay.getDefaultChannel(l.id)), [x, h] = s.useState(null), [T, b] = s.useState(null), v = s.useCallback(e => {
+    } = e, a = l.rulesChannelId, d = l.features.has(N.GuildFeatures.PREVIEW_ENABLED), c = (0, u.bG)([_.A], () => null != a ? _.A.getChannel(a) : null), g = (0, u.bG)([A.Ay], () => A.Ay.getDefaultChannel(l.id)), [x, h] = s.useState(null), [C, b] = s.useState(null), v = s.useCallback(e => {
         if (!r && t.length !== j.yN)
             if (null != e && "" === t[t.length - 1].value) {
                 let i = [...t];
@@ -194,7 +194,7 @@ function b(e) {
     }, [v, r, O]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            className: C.$W,
+            className: T.$W,
             children: t.map((e, s) => (0, i.jsx)(I, {
                 rulesChannel: c ?? g,
                 rule: e,
@@ -210,7 +210,7 @@ function b(e) {
                 })(s),
                 onRuleReorder: R,
                 isDropHovered: s === x,
-                focused: s === T,
+                focused: s === C,
                 onFocus: b,
                 previewEnabled: d ?? !0,
                 isDragEnabled: !r && t.length > 1,
@@ -223,11 +223,11 @@ function b(e) {
         }), (0, i.jsx)(m.Heading, {
             variant: "text-xs/bold",
             color: "text-muted",
-            className: C.V7,
+            className: T.V7,
             children: E.intl.string(E.t.XHWj8W)
         }), (0, i.jsx)(f.z, {
             pills: G,
-            pillClassName: C.Io
+            pillClassName: T.Io
         })]
     })
 }

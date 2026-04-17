@@ -1,24 +1,24 @@
 /** chunk id: 675722 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => l
+    A: () => s
 });
 var i = n(627968);
 n(64700);
 var r = n(143413),
-    s = n(672834);
+    l = n(672834);
 
-function l(e) {
+function s(e) {
     let {
         message: t,
         channel: n,
-        compact: l,
+        compact: s,
         disableInteraction: a
     } = e;
-    return (0, r.A)(t) ? (0, i.jsx)(s.A, {
+    return (0, r.A)(t) ? (0, i.jsx)(l.A, {
         message: t,
         channel: n,
-        compact: l,
+        compact: s,
         disableInteraction: a
     }) : null
 }

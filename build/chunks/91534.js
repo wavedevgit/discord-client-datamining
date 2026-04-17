@@ -67,7 +67,7 @@ let N = {
             })]
         })
     },
-    C = () => (0, i.jsxs)(l.BJc, {
+    T = () => (0, i.jsxs)(l.BJc, {
         gap: 8,
         children: [(0, i.jsx)(l.Text, {
             variant: "text-md/medium",
@@ -86,7 +86,7 @@ let N = {
             })
         })]
     }),
-    T = e => {
+    C = e => {
         let t, n, s, {
                 guild: l,
                 guildStickers: r
@@ -131,10 +131,10 @@ let N = {
                     variant: "heading-lg/semibold",
                     children: f.intl.string(f.t.R5nQkS)
                 }), o ? (0, i.jsxs)("div", {
-                    children: [(0, i.jsx)(T, {
+                    children: [(0, i.jsx)(C, {
                         guild: e,
                         guildStickers: t
-                    }), (0, i.jsx)(C, {})]
+                    }), (0, i.jsx)(T, {})]
                 }) : (0, i.jsx)(E, {
                     guild: e
                 }), (0, i.jsx)(l.cGx, {

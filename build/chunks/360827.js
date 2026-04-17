@@ -24,8 +24,8 @@ var i = n(627968),
     j = n(655943),
     N = n(259866),
     E = n(699256),
-    C = n(191117),
-    T = n(652215),
+    T = n(191117),
+    C = n(652215),
     I = n(539916),
     b = n(985018),
     v = n(964416);
@@ -159,7 +159,7 @@ function R(e) {
             className: v.yJ,
             children: [(0, i.jsx)(a.MzZ, {
                 target: "_blank",
-                href: T.X7G.GUILD_ONBOARDING_EXAMPLES,
+                href: C.X7G.GUILD_ONBOARDING_EXAMPLES,
                 children: (0, i.jsx)(a.Text, {
                     variant: "text-sm/medium",
                     color: "text-link",
@@ -186,7 +186,7 @@ function R(e) {
             guildId: t.id
         }), (0, i.jsx)("div", {
             className: v.E3,
-            children: r ? (0, i.jsx)(a.y$y, {}) : (0, i.jsx)(C.A, {
+            children: r ? (0, i.jsx)(a.y$y, {}) : (0, i.jsx)(T.A, {
                 postjoinOnly: d,
                 guildId: t.id
             })

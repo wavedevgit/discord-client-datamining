@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(311907),
     r = n(506774),
-    s = n(73153),
-    l = n(785796);
+    l = n(73153),
+    s = n(785796);
 let a = "MaintenanceStore",
     o = null,
     c = null,
@@ -24,9 +24,9 @@ class d extends i.Ay.Store {
         return null != c && c.id !== u && (null == e || Date.now() < new Date(e).getTime()) ? c : null
     }
 }
-let _ = new d(s.h, {
+let _ = new d(l.h, {
     CONNECTION_OPEN: function() {
-        o = null, l.A.checkScheduledMaintenances()
+        o = null, s.A.checkScheduledMaintenances()
     },
     STATUS_PAGE_INCIDENT: function(e) {
         o = e.incident

@@ -8,8 +8,8 @@ n.d(t, {
 var i = n(311907);
 n(928108);
 var r = n(576705),
-    s = n(903093),
-    l = n(610136),
+    l = n(903093),
+    s = n(610136),
     a = n(652215);
 
 function o(e) {
@@ -19,8 +19,8 @@ function o(e) {
 
 function c(e) {
     let t = (0, i.bG)([r.A], () => o(e, r.A), [e]),
-        n = (0, i.bG)([l.A], () => null != e ? l.A.getGuildIncident(e.id) : null, [e]);
-    return !(null != n && (0, s.k$)(n)) && t
+        n = (0, i.bG)([s.A], () => null != e ? s.A.getGuildIncident(e.id) : null, [e]);
+    return !(null != n && (0, l.k$)(n)) && t
 }
 
 function u(e) {

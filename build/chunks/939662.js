@@ -28,12 +28,12 @@ function p(e) {
     } = (0, o.L)({
         guildId: t.id,
         location: p
-    }), j = (0, l.bG)([m.A], () => m.A.can(h.xBc.MANAGE_GUILD, t), [t]), N = (0, l.bG)([u.A], () => null != t.verificationRoleId ? u.A.getRole(t.id, t.verificationRoleId) : null, [t.id, t.verificationRoleId]), E = (0, l.bG)([x.A], () => x.A.getRoleMemberCount(t.id), [t.id]), C = (0, l.bG)([c.A], () => c.A.getMemberCount(t.id), [t.id]), T = null != t.verificationRoleId;
+    }), j = (0, l.bG)([m.A], () => m.A.can(h.xBc.MANAGE_GUILD, t), [t]), N = (0, l.bG)([u.A], () => null != t.verificationRoleId ? u.A.getRole(t.id, t.verificationRoleId) : null, [t.id, t.verificationRoleId]), E = (0, l.bG)([x.A], () => x.A.getRoleMemberCount(t.id), [t.id]), T = (0, l.bG)([c.A], () => c.A.getMemberCount(t.id), [t.id]), C = null != t.verificationRoleId;
     if (s.useEffect(() => {
-            T && (0, g.L)(t.id)
-        }, [t.id, T]), !f && !T) return null;
-    let I = T && null != E && null != t.verificationRoleId ? E[t.verificationRoleId] ?? 0 : 0,
-        b = T && null != C ? Math.max(C - I, 0) : 0;
+            C && (0, g.L)(t.id)
+        }, [t.id, C]), !f && !C) return null;
+    let I = C && null != E && null != t.verificationRoleId ? E[t.verificationRoleId] ?? 0 : 0,
+        b = C && null != T ? Math.max(T - I, 0) : 0;
     return (0, i.jsxs)("div", {
         className: A.ue,
         children: [(0, i.jsxs)("div", {
@@ -51,7 +51,7 @@ function p(e) {
                             variant: "heading-md/semibold",
                             color: "text-strong",
                             children: _.intl.string(_.t["whKq+8"])
-                        }), !T && (0, i.jsx)(a.LpS, {
+                        }), !C && (0, i.jsx)(a.LpS, {
                             color: r.A.colors.BADGE_BACKGROUND_BRAND.css,
                             text: _.intl.string(_.t.y2b7CA)
                         })]
@@ -62,9 +62,9 @@ function p(e) {
                     })]
                 })]
             }), j && (0, i.jsx)(a.Button, {
-                variant: T ? "secondary" : "primary",
+                variant: C ? "secondary" : "primary",
                 size: "sm",
-                text: T ? _.intl.string(_.t.bt75uw) : _.intl.string(_.t["mio/Xf"]),
+                text: C ? _.intl.string(_.t.bt75uw) : _.intl.string(_.t["mio/Xf"]),
                 onClick: () => (0, a.mMO)(async () => {
                     let {
                         default: e
@@ -76,7 +76,7 @@ function p(e) {
                     })
                 })
             })]
-        }), T && null != N && (0, i.jsxs)(i.Fragment, {
+        }), C && null != N && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
                 className: A.Jb
             }), (0, i.jsxs)("div", {
@@ -91,7 +91,7 @@ function p(e) {
                         role: N,
                         guildId: t.id
                     })]
-                }), null != C && null != E && (0, i.jsxs)(a.Text, {
+                }), null != T && null != E && (0, i.jsxs)(a.Text, {
                     variant: "text-sm/medium",
                     color: "text-muted",
                     className: A.xW,

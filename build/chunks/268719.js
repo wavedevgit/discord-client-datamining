@@ -6,16 +6,16 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(311907),
-    s = n(994500),
-    l = n(301960);
+    l = n(994500),
+    s = n(301960);
 
 function a(e) {
     let {
         message: t,
         channel: n,
         compact: a
-    } = e, o = (0, r.bG)([s.A], () => null != t.interaction && s.A.isBlocked(t.interaction.user.id), [t.interaction]);
-    return (0, i.jsx)(l.A, {
+    } = e, o = (0, r.bG)([l.A], () => null != t.interaction && l.A.isBlocked(t.interaction.user.id), [t.interaction]);
+    return (0, i.jsx)(s.A, {
         message: t,
         channel: n,
         compact: a,

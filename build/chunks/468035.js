@@ -6,8 +6,8 @@ function i(e, t) {
         Operator: n,
         QuestionID: i,
         ChoiceLocator: r,
-        LeftOperand: s,
-        RightOperand: l
+        LeftOperand: l,
+        RightOperand: s
     } = e;
     if (null == i) return !0;
     let a = t[i];
@@ -20,21 +20,21 @@ function i(e, t) {
         case "NotSelected":
             return null != c && !a.split(",").includes(c);
         case "EqualTo":
-            return a === (l ?? s);
+            return a === (s ?? l);
         case "NotEqualTo":
-            return a !== (l ?? s);
+            return a !== (s ?? l);
         case "GreaterThan":
-            return Number(a) > Number(l ?? s ?? 0);
+            return Number(a) > Number(s ?? l ?? 0);
         case "LessThan":
-            return Number(a) < Number(l ?? s ?? 0);
+            return Number(a) < Number(s ?? l ?? 0);
         case "GreaterThanOrEqualTo":
-            return Number(a) >= Number(l ?? s ?? 0);
+            return Number(a) >= Number(s ?? l ?? 0);
         case "LessThanOrEqualTo":
-            return Number(a) <= Number(l ?? s ?? 0);
+            return Number(a) <= Number(s ?? l ?? 0);
         case "Contains":
-            return a.includes(l ?? s ?? "");
+            return a.includes(s ?? l ?? "");
         case "DoesNotContain":
-            return !a.includes(l ?? s ?? "");
+            return !a.includes(s ?? l ?? "");
         default:
             return !0
     }
@@ -46,16 +46,16 @@ function r(e) {
     return t
 }
 
-function s(e) {
+function l(e) {
     let t = [],
         n = [];
     for (let i of e.BlockElements) "Page Break" === i.Type ? n.length > 0 && (t.push(n), n = []) : "Question" === i.Type && null != i.QuestionID && n.push(i.QuestionID);
     return n.length > 0 && t.push(n), t
 }
 
-function l(e) {
+function s(e) {
     for (let t of r(e)) {
-        let n = s(e.Blocks[t]);
+        let n = l(e.Blocks[t]);
         if (n.length > 0 && n[0].length > 0) return {
             blockId: t,
             pageIndex: 0,
@@ -75,10 +75,10 @@ function a(e, t) {
     let {
         blockId: n,
         pageIndex: r,
-        responses: l
+        responses: s
     } = t, a = e.Blocks[n];
     if (null == a) return [];
-    let o = s(a);
+    let o = l(a);
     return r >= o.length ? [] : o[r].filter(t => (function(e, t) {
         if (null == e.DisplayLogic) return !0;
         let {
@@ -94,22 +94,22 @@ function a(e, t) {
                             if (0 === n.length) return !0;
                             let r = i(n[0], t);
                             for (let e = 1; e < n.length; e++) {
-                                let s = n[e],
-                                    l = i(s, t);
-                                r = "Or" === (s.Conjuction ?? s.Conjunction ?? "And") ? r || l : r && l
+                                let l = n[e],
+                                    s = i(l, t);
+                                r = "Or" === (l.Conjuction ?? l.Conjunction ?? "And") ? r || s : r && s
                             }
                             return r
                         }(r, t)) return !0
                 } else if ("Else" === r.Type) return !0
             } return !1
-    })(e.Questions[t], l))
+    })(e.Questions[t], s))
 }
 
 function o(e, t) {
     let {
         blockId: n,
         pageIndex: i,
-        responses: l
+        responses: s
     } = t, a = r(e), o = e.Blocks[n];
     if (null == o) return {
         blockId: null,
@@ -117,12 +117,12 @@ function o(e, t) {
         questionIds: [],
         isComplete: !0
     };
-    let c = s(o),
+    let c = l(o),
         u = c[i];
     if (null != u && u.length > 0)
         for (let t = u.length - 1; t >= 0; t--) {
             let n = u[t];
-            if (null != e.Questions[n] && null != l[n]) {
+            if (null != e.Questions[n] && null != s[n]) {
                 let t = o.BlockElements.find(e => e.QuestionID === n);
                 if (null != t) {
                     let n = function(e, t) {
@@ -132,11 +132,11 @@ function o(e, t) {
                                 QuestionID: e,
                                 Condition: i,
                                 Value: r,
-                                SkipToDestination: s,
-                                ChoiceLocator: l
+                                SkipToDestination: l,
+                                ChoiceLocator: s
                             } = n, a = t[e];
                             if (null == a || "" === a) continue;
-                            let o = l?.match(/SelectableChoice\/(\d+)/),
+                            let o = s?.match(/SelectableChoice\/(\d+)/),
                                 c = o?.[1],
                                 u = !1;
                             switch (i) {
@@ -171,12 +171,12 @@ function o(e, t) {
                                     u = !a.includes(r?.toString() ?? "")
                             }
                             if (u) {
-                                if ("ENDOFSURVEY" === s?.trim().toUpperCase()) return "ENDOFSURVEY";
-                                return s
+                                if ("ENDOFSURVEY" === l?.trim().toUpperCase()) return "ENDOFSURVEY";
+                                return l
                             }
                         }
                         return null
-                    }(t, l);
+                    }(t, s);
                     if ("ENDOFSURVEY" === n) return {
                         blockId: null,
                         pageIndex: 0,
@@ -185,7 +185,7 @@ function o(e, t) {
                     };
                     if (null != n)
                         for (let t of a) {
-                            let i = s(e.Blocks[t]);
+                            let i = l(e.Blocks[t]);
                             for (let e = 0; e < i.length; e++)
                                 if (i[e].includes(n)) return {
                                     blockId: t,
@@ -206,7 +206,7 @@ function o(e, t) {
     let d = a.indexOf(n);
     for (let t = d + 1; t < a.length; t++) {
         let n = a[t],
-            i = s(e.Blocks[n]);
+            i = l(e.Blocks[n]);
         if (i.length > 0 && i[0].length > 0) return {
             blockId: n,
             pageIndex: 0,
@@ -222,7 +222,7 @@ function o(e, t) {
     }
 }
 n.d(t, {
-    i: () => l,
+    i: () => s,
     uy: () => a,
     vt: () => o
 }), n(321073)

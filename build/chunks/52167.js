@@ -37,8 +37,8 @@ var g = n(355097),
     D = n(747918),
     G = n(330290),
     M = n(252261),
-    U = n(106731);
-let k = (e, t, n) => (0, s.Mw)(e) ? t : n,
+    k = n(106731);
+let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
     w = e => {
         let {
             styles: t
@@ -58,7 +58,7 @@ let k = (e, t, n) => (0, s.Mw)(e) ? t : n,
             badgeAlt: {
                 title: _.intl.string(_.t["5cYMu0"]),
                 description: _.intl.string(_.t.vxk9va),
-                imageSource: k(s, x, h),
+                imageSource: U(s, x, h),
                 imageClassName: t.badgeNewImage
             },
             clientThemes: {
@@ -112,43 +112,43 @@ let k = (e, t, n) => (0, s.Mw)(e) ? t : n,
             longerMessages: {
                 title: _.intl.string(_.t.BUScid),
                 description: _.intl.string(_.t.vN6XpQ),
-                imageSource: k(s, L, P),
+                imageSource: U(s, L, P),
                 imageClassName: t.longerMessagesImage
             },
             moreGuilds: {
                 title: _.intl.string(_.t.Bv8Pfk),
                 description: _.intl.string(_.t.JMfaTU),
-                imageSource: k(s, p, D),
+                imageSource: U(s, p, D),
                 imageClassName: t.moreGuildsImage
             },
             moreGuildsAlt: {
                 title: _.intl.string(_.t.Bv8Pfk),
                 description: _.intl.string(_.t.JMfaTU),
-                imageSource: k(s, f, S),
+                imageSource: U(s, f, S),
                 imageClassName: t.moreGuildsAltImage
             },
             soundboard: {
                 title: _.intl.string(_.t["lGcW+c"]),
                 description: _.intl.string(_.t["/fDyO+"]),
-                imageSource: k(s, E, b),
+                imageSource: U(s, E, b),
                 imageClassName: t.soundboardImage
             },
             stickers: {
                 title: _.intl.string(_.t["1c+xwT"]),
                 description: _.intl.string(_.t.hJG8ZN),
-                imageSource: k(s, C, G),
+                imageSource: U(s, C, G),
                 imageClassName: t.stickersImage
             },
             stickersBurst: {
                 title: _.intl.string(_.t.tzdIwI),
                 description: _.intl.string(_.t.hJG8ZN),
-                imageSource: k(s, C, G),
+                imageSource: U(s, C, G),
                 imageClassName: t.stickersImage
             },
             stickersPremiumPerk: {
                 title: _.intl.string(_.t.tzdIwI),
                 description: _.intl.string(_.t.hJG8ZN),
-                imageSource: k(s, C, G),
+                imageSource: U(s, C, G),
                 imageClassName: t.stickersImage
             },
             streaming: {
@@ -160,7 +160,7 @@ let k = (e, t, n) => (0, s.Mw)(e) ? t : n,
             superReactions: {
                 title: _.intl.string(_.t["uZt5q/"]),
                 description: _.intl.string(_.t.ZK3ZoX),
-                imageSource: k(s, v, N),
+                imageSource: U(s, v, N),
                 imageClassName: t.superReactionsImage
             },
             upload: {
@@ -170,13 +170,13 @@ let k = (e, t, n) => (0, s.Mw)(e) ? t : n,
                 description: _.intl.formatToPlainString(_.t["HI+cfm"], {
                     premiumMaxSize: B
                 }),
-                imageSource: U,
+                imageSource: k,
                 imageClassName: t.uploadImage
             },
             videoBackground: {
                 title: _.intl.string(_.t.NaGpTf),
                 description: _.intl.string(_.t["A8O/Qw"]),
-                imageSource: k(s, I, j),
+                imageSource: U(s, I, j),
                 imageClassName: t.videoBackgroundImage
             }
         }

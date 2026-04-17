@@ -1,8 +1,8 @@
 /** chunk id: 824451 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => T,
-    wF: () => C
+    Ay: () => C,
+    wF: () => T
 });
 var i = n(627968),
     s = n(64700),
@@ -25,7 +25,7 @@ var i = n(627968),
     N = n(996408),
     E = n(701628);
 
-function C() {
+function T() {
     let e, {
             guild: t,
             submitting: n,
@@ -51,7 +51,7 @@ function C() {
     })
 }
 
-function T() {
+function C() {
     let e = (0, a.bG)([_.A], () => _.A.getProps().guild),
         {
             analyticsLocations: t

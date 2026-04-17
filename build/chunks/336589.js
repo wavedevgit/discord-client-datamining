@@ -1,30 +1,30 @@
 /** chunk id: 336589 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    I: () => p
+    I: () => f
 });
 var i = n(627968),
     r = n(64700),
-    s = n(311907),
-    l = n(732955),
+    l = n(311907),
+    s = n(732955),
     a = n(355622),
     o = n(148355),
     c = n(406704),
     u = n(696451),
     d = n(71393),
     _ = n(576705),
-    E = n(287809),
-    A = n(460350),
+    A = n(287809),
+    E = n(460350),
     m = n(167681),
     I = n(652215),
     T = n(985018),
-    N = n(914342);
-let g = e => {
+    g = n(914342);
+let N = e => {
         let {
             channel: t,
             message: n
-        } = e, s = (0, m.dv)(n.id), c = r.useCallback(() => {
-            (0, A.i)({
+        } = e, l = (0, m.dv)(n.id), c = r.useCallback(() => {
+            (0, E.i)({
                 type: a.oU.FORM,
                 content: "",
                 channel: t
@@ -32,15 +32,15 @@ let g = e => {
                 let {
                     valid: i
                 } = e;
-                i && (0, m.S9)(t, n, s.id)
+                i && (0, m.S9)(t, n, l.id)
             })
-        }, [t, n, s]);
+        }, [t, n, l]);
         return (0, i.jsx)("div", {
-            className: N.T,
-            children: (0, i.jsx)(l.$nd, {
+            className: g.T,
+            children: (0, i.jsx)(s.$nd, {
                 icon: {
                     type: "sticker",
-                    asset: s,
+                    asset: l,
                     component: o.A
                 },
                 text: T.intl.string(T.t["7Tj6HT"]),
@@ -49,21 +49,21 @@ let g = e => {
             })
         })
     },
-    p = e => {
+    f = e => {
         let {
             message: t,
             channel: n
-        } = e, r = n.getGuildId(), l = (0, s.bG)([E.default, _.A, d.A, u.Ay], () => {
-            let e = E.default.getCurrentUser(),
+        } = e, r = n.getGuildId(), s = (0, l.bG)([A.default, _.A, d.A, u.Ay], () => {
+            let e = A.default.getCurrentUser(),
                 i = (0, c.UJ)(n),
-                s = _.A.can(I.xBc.SEND_MESSAGES, n),
-                l = null != r && null != e && u.Ay.getMember(r, e.id)?.isPending,
+                l = _.A.can(I.xBc.SEND_MESSAGES, n),
+                s = null != r && null != e && u.Ay.getMember(r, e.id)?.isPending,
                 a = t.author.bot,
                 o = d.A.getGuild(r),
-                A = null != o && (o.systemChannelFlags & I.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
-            return s && !i && !l && !a && A
+                E = null != o && (o.systemChannelFlags & I.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
+            return l && !i && !s && !a && E
         });
-        return null != r && l ? (0, i.jsx)(g, {
+        return null != r && s ? (0, i.jsx)(N, {
             message: t,
             channel: n
         }) : null

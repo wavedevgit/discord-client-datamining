@@ -1,6 +1,6 @@
 /** chunk id: 196291 params = (module,exports,require) **/
 n.d(t, {
-    A: () => U
+    A: () => k
 });
 var i = n(627968),
     s = n(64700),
@@ -37,12 +37,12 @@ var i = n(627968),
     G = n(985018),
     M = n(461414);
 
-function U(e) {
+function k(e) {
     let {
         user: t,
         isVisible: n,
-        shouldShow: U
-    } = e, k = b.Ay.isPremium(t), w = b.Ay.canUseAnimatedAvatar(t), {
+        shouldShow: k
+    } = e, U = b.Ay.isPremium(t), w = b.Ay.canUseAnimatedAvatar(t), {
         pendingAvatar: V,
         pendingThemeColors: B,
         tryItOutThemeColors: F,
@@ -100,7 +100,7 @@ function U(e) {
     let Q = (0, c.V)()?.subscription_trial?.sku_id === P.pe.TIER_2,
         J = (0, d.O)(),
         $ = (0, g.U9)(J, P.pe.TIER_2);
-    return U ? (0, i.jsx)(o.f5, {
+    return k ? (0, i.jsx)(o.f5, {
         value: W,
         children: (0, i.jsxs)(j.A, {
             ref: K,
@@ -180,7 +180,7 @@ function U(e) {
                         })
                     }
                 }),
-                button: k ? G.intl.string(G.t.AfRWI8) : $ ? G.intl.formatToPlainString(G.t.bkQ4bH, {
+                button: U ? G.intl.string(G.t.AfRWI8) : $ ? G.intl.formatToPlainString(G.t.bkQ4bH, {
                     percent: J?.discount.amount
                 }) : G.intl.string(G.t.pj0XBN),
                 position: "inline"

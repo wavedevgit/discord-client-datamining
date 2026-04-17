@@ -47,8 +47,8 @@ function P() {
             pendingBio: D,
             pendingPronouns: G,
             pendingAccentColor: M,
-            pendingThemeColors: U,
-            pendingLegacyUsernameDisabled: k,
+            pendingThemeColors: k,
+            pendingLegacyUsernameDisabled: U,
             pendingPrimaryGuildId: w,
             errors: V
         } = (0, r.cf)([N.A], () => {
@@ -123,7 +123,7 @@ function P() {
             }, "banner"), (0, i.jsx)(S.A, {
                 user: e,
                 pendingAvatarSrc: B,
-                pendingColors: U,
+                pendingColors: k,
                 onThemeColorsChange: e => (0, v.p)({
                     themeColors: e
                 }),
@@ -152,7 +152,7 @@ function P() {
             })
         }), null != K && (0, i.jsx)(x.A, {
             legacyUsername: K,
-            pendingLegacyUsernameDisabled: k
+            pendingLegacyUsernameDisabled: U
         }, "legacy_username")]
     })
 }

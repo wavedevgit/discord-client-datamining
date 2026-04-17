@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(927573),
     N = n(652215),
     E = n(783419),
-    C = n(985018),
-    T = n(844919),
+    T = n(985018),
+    C = n(844919),
     I = n(838719);
 
 function b(e, t) {
@@ -39,22 +39,22 @@ function v(e) {
         locked: n
     } = e;
     return (0, i.jsxs)("div", {
-        className: T.Gq,
+        className: C.Gq,
         children: [(0, i.jsx)(c.Heading, {
-            className: T.gg,
+            className: C.gg,
             variant: "eyebrow",
-            children: C.intl.string(C.t.nMir27)
+            children: T.intl.string(T.t.nMir27)
         }), (0, i.jsx)(c.Text, {
             variant: "text-sm/normal",
             color: "text-default",
-            className: T.$L,
-            children: C.intl.format(C.t.q5f7tK, {
+            className: C.$L,
+            children: T.intl.format(T.t.q5f7tK, {
                 helpdeskArticleUrl: g.A.getArticleURL(N.MVz.CONNECTION_DETAILS_ADMIN)
             })
         }), (0, i.jsx)(c.Button, {
             disabled: n,
             onClick: t,
-            text: C.intl.string(C.t["OSvW5+"]),
+            text: T.intl.string(T.t["OSvW5+"]),
             fullWidth: !0,
             variant: "primary"
         })]
@@ -109,40 +109,40 @@ function S(e) {
         M.length < 10 && (t = (0, i.jsx)(c.Button, {
             disabled: l,
             onClick: P,
-            text: C.intl.string(C.t["OSvW5+"]),
+            text: T.intl.string(T.t["OSvW5+"]),
             icon: c.U1e,
             fullWidth: !0,
             variant: "secondary"
         })), w = (0, i.jsxs)(i.Fragment, {
             children: [(B = () => (0, h.pn)(n.id, []), (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsxs)("div", {
-                    className: T.$$,
+                    className: C.$$,
                     children: [(0, i.jsx)("div", {
-                        className: T.Ir,
+                        className: C.Ir,
                         children: (0, i.jsx)(c.Heading, {
                             variant: "eyebrow",
-                            children: C.intl.string(C.t.nMir27)
+                            children: T.intl.string(T.t.nMir27)
                         })
                     }), (0, i.jsx)(c.QWc, {
                         variant: "critical",
                         onClick: B,
                         disabled: l,
-                        text: C.intl.string(C.t.ntW1cc),
+                        text: T.intl.string(T.t.ntW1cc),
                         textVariant: "text-sm/semibold"
                     })]
                 }), (0, i.jsx)(c.Text, {
                     variant: "text-sm/normal",
-                    children: C.intl.format(C.t.q5f7tK, {
+                    children: T.intl.format(T.t.q5f7tK, {
                         helpdeskArticleUrl: g.A.getArticleURL(N.MVz.CONNECTION_DETAILS_ADMIN)
                     })
                 })]
             })), (n.id, F = (e, t) => (0, h.pn)(n.id, b(e, t)), e = b(M, m.jO.OR), (0, i.jsx)(c.z6M, {
-                label: C.intl.string(C.t.Xs7PHX),
+                label: T.intl.string(T.t.Xs7PHX),
                 options: [{
-                    name: C.intl.string(C.t.W3iY58),
+                    name: T.intl.string(T.t.W3iY58),
                     value: m.jO.OR
                 }, {
-                    name: C.intl.string(C.t.gHXS9A),
+                    name: T.intl.string(T.t.gHXS9A),
                     value: m.jO.AND
                 }],
                 onChange: e => F(M, e),
@@ -193,7 +193,7 @@ function S(e) {
                     })
                 }
                 return (0, i.jsx)("div", {
-                    className: T.rr,
+                    className: C.rr,
                     children: Array.from(a.values()).map(e => (0, i.jsx)(p.A, {
                         configurationItems: e,
                         onConfigurationChange: r,
@@ -205,7 +205,7 @@ function S(e) {
         })
     }
     return (0, i.jsx)(c.GtU, {
-        className: T.XG,
+        className: C.XG,
         style: {
             scrollPaddingTop: S
         },
@@ -224,17 +224,17 @@ function S(e) {
                     setSelectedSection: a
                 })
             }), (G ?? 0) > 0 ? (0, i.jsxs)("div", {
-                className: T.UW,
+                className: C.UW,
                 children: [(0, i.jsx)(c.EpV, {
                     size: "custom",
                     width: 20,
                     height: 20,
                     color: "currentColor",
-                    className: T.QW
+                    className: C.QW
                 }), (0, i.jsx)(c.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    children: C.intl.string(C.t["2aFeef"])
+                    children: T.intl.string(T.t["2aFeef"])
                 })]
             }) : null, w]
         })

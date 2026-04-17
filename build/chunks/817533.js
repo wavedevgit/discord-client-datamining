@@ -6,15 +6,15 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(311907),
-    s = n(775602),
-    l = n(690362);
+    l = n(775602),
+    s = n(690362);
 
 function a(e) {
     let {
         guildId: t,
         user: n,
         className: a
-    } = e, o = (0, r.bG)([s.A], () => !s.A.useReducedMotion), c = n.getAvatarURL(t, 56, o), u = (0, i.jsx)("foreignObject", {
+    } = e, o = (0, r.bG)([l.A], () => !l.A.useReducedMotion), c = n.getAvatarURL(t, 56, o), u = (0, i.jsx)("foreignObject", {
         x: "30",
         y: "68",
         width: "56",
@@ -22,7 +22,7 @@ function a(e) {
         transform: "skewX(12)",
         children: (0, i.jsx)("img", {
             src: c,
-            className: l.dj,
+            className: s.dj,
             alt: ""
         })
     });
@@ -34,7 +34,7 @@ function a(e) {
             viewBox: "0 0 128 200",
             fill: "none",
             xmlns: "http://www.w3.org/2000/svg",
-            className: l.JW,
+            className: s.JW,
             children: [(0, i.jsx)("path", {
                 fillRule: "evenodd",
                 clipRule: "evenodd",

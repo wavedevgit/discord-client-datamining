@@ -5,31 +5,31 @@ n.d(t, {
 }), n(321073);
 var i = n(735438),
     r = n.n(i),
-    s = n(311907),
-    l = n(506774),
+    l = n(311907),
+    s = n(506774),
     a = n(73153),
     o = n(339048),
     c = n(830382),
     u = n(627363),
     d = n(587895),
     _ = n(15285),
-    E = n(287809),
-    A = n(469778),
+    A = n(287809),
+    E = n(469778),
     m = n(67480),
     I = n(652215);
 let T = "DetectedOffPlatformPremiumPerksStore",
-    N = {},
     g = {},
-    p = [];
+    N = {},
+    f = [];
 
-function f() {
+function C() {
     let e = !1;
     for (let {
             skuId: t,
             applicationId: n
         }
-        of r().values(g)) {
-        if (p.includes(t)) continue;
+        of r().values(N)) {
+        if (f.includes(t)) continue;
         let i = d.A.getApplication(n);
         if (null == i) {
             d.A.isFetchingApplication(n) || d.A.didFetchingApplicationFail(n) || u.Ay.fetchApplication(n);
@@ -40,36 +40,36 @@ function f() {
             m.A.isFetching(t) || m.A.didFetchingSkuFail(t) || c.EX(i.id, t);
             continue
         }
-        A.A.applicationIdsFetching.has(i.id) || A.A.isEntitledToSku(E.default.getCurrentUser(), t, i.id, i.id) || !r.available ? null != N[t] && (delete N[t], e = !0) : (N[t] = {
+        E.A.applicationIdsFetching.has(i.id) || E.A.isEntitledToSku(A.default.getCurrentUser(), t, i.id, i.id) || !r.available ? null != g[t] && (delete g[t], e = !0) : (g[t] = {
             skuId: t,
             applicationId: n
         }, e = !0)
     }
     return e
 }
-class C extends s.Ay.Store {
+class p extends l.Ay.Store {
     static displayName = "DetectedOffPlatformPremiumPerksStore";
     initialize() {
-        this.waitFor(d.A, A.A, _.Ay, m.A, E.default), p = l.w.get(T) ?? p
+        this.waitFor(d.A, E.A, _.Ay, m.A, A.default), f = s.w.get(T) ?? f
     }
     getDetectedOffPlatformPremiumPerks() {
-        return r().values(N)
+        return r().values(g)
     }
 }
-let h = new C(a.h, {
+let h = new p(a.h, {
     LOGOUT: function() {
-        N = {}, g = {}
+        g = {}, N = {}
     },
-    SKU_FETCH_SUCCESS: f,
-    ENTITLEMENT_FETCH_APPLICATION_SUCCESS: f,
-    ENTITLEMENT_CREATE: f,
-    APPLICATION_FETCH_SUCCESS: f,
+    SKU_FETCH_SUCCESS: C,
+    ENTITLEMENT_FETCH_APPLICATION_SUCCESS: C,
+    ENTITLEMENT_CREATE: C,
+    APPLICATION_FETCH_SUCCESS: C,
     DETECTED_OFF_PLATFORM_PREMIUM_PERKS_DISMISS: function(e) {
         let {
             skuId: t
         } = e;
-        if (delete N[t], p.includes(t)) return !1;
-        p.push(t), l.w.set(T, p)
+        if (delete g[t], f.includes(t)) return !1;
+        f.push(t), s.w.set(T, f)
     },
     RUNNING_GAMES_CHANGE: function() {
         let e = !1;
@@ -83,10 +83,10 @@ let h = new C(a.h, {
                         skuId: n,
                         applicationId: i
                     }
-                    of I.m_i) i !== t || p.includes(n) || null == g[n] && (A.A.applicationIdsFetched.has(i) || A.A.applicationIdsFetching.has(i) || null != A.A.getForSku(n) || o.LM(i), g[n] = {
+                    of I.m_i) i !== t || f.includes(n) || null == N[n] && (E.A.applicationIdsFetched.has(i) || E.A.applicationIdsFetching.has(i) || null != E.A.getForSku(n) || o.LM(i), N[n] = {
                     skuId: n,
                     applicationId: i
                 }, e = !0);
-        return e && f(), e
+        return e && C(), e
     }
 })

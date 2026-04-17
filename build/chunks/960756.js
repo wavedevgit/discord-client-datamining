@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
     $i: () => E,
-    aV: () => T,
-    bW: () => C,
+    aV: () => C,
+    bW: () => T,
     gE: () => N,
     n5: () => j
 });
@@ -134,7 +134,7 @@ function N(e) {
         guildId: t,
         onEdit: n,
         disableGoodStatus: d
-    } = e, c = (0, l.yK)([a.A], () => a.A.getDefaultChannelIds(t)), u = (0, l.bG)([a.A], () => (0, o.G4)(t, a.A.getDefaultChannelIds(t), a.A.getOnboardingPrompts(t)).length), m = s.useMemo(() => new Set(c), [c]), [, g] = (0, o.tb)(t, m), j = g.length, N = f(t), E = (0, x.Mj)(t), C = (0, l.bG)([a.A], () => a.A.isAdvancedMode(t)), T = C ? _.intl.formatToPlainString(_.t.nHwnLK, {
+    } = e, c = (0, l.yK)([a.A], () => a.A.getDefaultChannelIds(t)), u = (0, l.bG)([a.A], () => (0, o.G4)(t, a.A.getDefaultChannelIds(t), a.A.getOnboardingPrompts(t)).length), m = s.useMemo(() => new Set(c), [c]), [, g] = (0, o.tb)(t, m), j = g.length, N = f(t), E = (0, x.Mj)(t), T = (0, l.bG)([a.A], () => a.A.isAdvancedMode(t)), C = T ? _.intl.formatToPlainString(_.t.nHwnLK, {
         numDefaultChannels: j,
         numFromQuestions: u - j
     }) : N ? _.intl.formatToPlainString(_.t.HxEwSv, {
@@ -143,14 +143,14 @@ function N(e) {
         numChattableChannels: h.Kd
     });
     return (0, i.jsx)(p, {
-        title: C ? _.intl.string(_.t.YZookV) : _.intl.string(_.t["4GSygh"]),
-        description: T,
+        title: T ? _.intl.string(_.t.YZookV) : _.intl.string(_.t["4GSygh"]),
+        description: C,
         icon: (0, i.jsx)(r.N$i, {
             size: "md",
             color: "currentColor",
             className: A.p
         }),
-        hasStarted: j > 0 || C,
+        hasStarted: j > 0 || T,
         status: N || E ? d ? "none" : "good" : "required",
         onEdit: n
     })
@@ -185,7 +185,7 @@ function E(e) {
     })
 }
 
-function C(e) {
+function T(e) {
     let {
         guildId: t,
         onEdit: n,
@@ -196,8 +196,8 @@ function C(e) {
     j && (x && !o ? N = "good" : x || (N = "required"));
     let E = _.intl.string(_.t.GMOwOD);
     x ? j || (E = _.intl.string(_.t.wHOoyE)) : E = _.intl.string(_.t.wXFbgZ);
-    let C = null;
-    return j && g && (C = (0, i.jsx)("div", {
+    let T = null;
+    return j && g && (T = (0, i.jsx)("div", {
         className: A.WW,
         children: (0, i.jsx)(r.dOG, {
             checked: h,
@@ -215,11 +215,11 @@ function C(e) {
         hasStarted: j,
         status: N,
         onEdit: n,
-        extra: C
+        extra: T
     })
 }
 
-function T(e) {
+function C(e) {
     let {
         guildId: t,
         onEdit: n,

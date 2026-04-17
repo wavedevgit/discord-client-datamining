@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(397927),
-    s = n(429913),
-    l = n(763754),
+    l = n(429913),
+    s = n(763754),
     a = n(447215),
     o = n(888675),
     c = n(985018),
@@ -18,23 +18,23 @@ function d(e) {
         message: t,
         channel: n,
         compact: d
-    } = e, _ = (0, l.Ay)(t), E = (0, a.P)({
+    } = e, _ = (0, s.Ay)(t), A = (0, a.P)({
         user: t.author,
         channelId: n.id,
         guildId: n.guild_id,
         messageId: t.id
-    })(_), A = (0, s.h)(t.applicationId);
-    if (null == A) return null;
+    })(_), E = (0, l.h)(t.applicationId);
+    if (null == E) return null;
     let m = c.intl.format(c.t.mAtJTC, {
         username: t.author.username,
-        usernameHook: E,
-        applicationName: A.name,
+        usernameHook: A,
+        applicationName: E.name,
         applicationNameHook: () => (0, i.jsx)(r.Text, {
             className: u.S,
             variant: "text-md/semibold",
             color: "text-strong",
-            children: A.name
-        }, A.name),
+            children: E.name
+        }, E.name),
         helpdeskArticle: "#"
     });
     return (0, i.jsx)(o.A, {

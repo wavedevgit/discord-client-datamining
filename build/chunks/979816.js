@@ -8,13 +8,13 @@ n.d(t, {
 });
 var i = n(311907),
     r = n(71393),
-    s = n(576705),
-    l = n(652215);
+    l = n(576705),
+    s = n(652215);
 let a = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.A,
-        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.A,
+        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : l.A,
         i = t.getGuild(e);
-    return null != i && n.can(l.xBc.MANAGE_GUILD, i)
+    return null != i && n.can(s.xBc.MANAGE_GUILD, i)
 };
 
 function o(e) {
@@ -26,12 +26,12 @@ function c(e) {
 }
 
 function u(e) {
-    return (0, i.bG)([r.A, s.A], () => a(e, r.A, s.A), [e])
+    return (0, i.bG)([r.A, l.A], () => a(e, r.A, l.A), [e])
 }
 
 function d(e) {
     return (0, i.bG)([r.A], () => {
         let t = r.A.getGuild(e);
-        return t?.features.has(l.GuildFeatures.COMMUNITY) || !1
+        return t?.features.has(s.GuildFeatures.COMMUNITY) || !1
     }, [e])
 }

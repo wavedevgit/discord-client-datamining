@@ -1,7 +1,7 @@
 /** chunk id: 756369 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => e9,
-    OC: () => e2,
+    Ay: () => e2,
+    OC: () => e9,
     iV: () => e7
 }), n(938796);
 var i = n(627968),
@@ -743,7 +743,7 @@ class e7 extends a.Component {
     }
 }
 
-function e9(e) {
+function e2(e) {
     let {
         channel: t,
         message: n,
@@ -793,7 +793,7 @@ function e9(e) {
         shouldAgeVerify: O
     })
 }
-let e2 = e => {
+let e9 = e => {
     let {
         message: t,
         channel: n,

@@ -5,41 +5,41 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     r = n(64700),
-    s = n(136722),
-    l = n(158954),
+    l = n(136722),
+    s = n(158954),
     a = n(311907),
     o = n(397927),
     c = n(260509),
     u = n(34457),
     d = n(696451),
     _ = n(317525),
-    E = n(71393),
-    A = n(287809),
+    A = n(71393),
+    E = n(287809),
     m = n(488926),
     I = n(661191),
     T = n(529942),
-    N = n(164956),
-    g = n(209700),
-    p = n(652215),
-    f = n(985018),
-    C = n(59742);
+    g = n(164956),
+    N = n(209700),
+    f = n(652215),
+    C = n(985018),
+    p = n(59742);
 
 function h(e) {
     let {
         guildId: t
-    } = e, n = (0, a.bG)([A.default], () => A.default.getCurrentUser()), h = (0, a.bG)([E.A], () => E.A.getGuild(t)), R = (0, a.bG)([_.A], () => _.A.getRolesSnapshot(t)), x = (0, a.bG)([_.A], () => _.A.getSortedRoles(t)), {
+    } = e, n = (0, a.bG)([E.default], () => E.default.getCurrentUser()), h = (0, a.bG)([A.A], () => A.A.getGuild(t)), R = (0, a.bG)([_.A], () => _.A.getRolesSnapshot(t)), x = (0, a.bG)([_.A], () => _.A.getSortedRoles(t)), {
         impersonateType: O,
         viewingRoles: M
-    } = (0, a.cf)([N.A], () => ({
-        impersonateType: N.A.getImpersonateType(t),
-        viewingRoles: N.A.getViewingRoles(t)
-    })), D = O === g._.SERVER_SHOP, U = (0, a.bG)([d.Ay], () => null != n ? d.Ay.getTrueMember(t, n.id) : null), P = null != h ? R[(0, c.af)(h)] : null, [L, v] = r.useState(() => {
+    } = (0, a.cf)([g.A], () => ({
+        impersonateType: g.A.getImpersonateType(t),
+        viewingRoles: g.A.getViewingRoles(t)
+    })), D = O === N._.SERVER_SHOP, U = (0, a.bG)([d.Ay], () => null != n ? d.Ay.getTrueMember(t, n.id) : null), P = null != h ? R[(0, c.af)(h)] : null, [L, v] = r.useState(() => {
         let e = null == M ? [] : I.default.keys(M);
         return null != P && e.push(P.id), e
-    }), y = r.useRef(h);
+    }), b = r.useRef(h);
     r.useEffect(() => {
         let e = {},
-            t = y.current;
+            t = b.current;
         if (null != t && null != O) {
             for (let t of L) {
                 let n = R[t];
@@ -50,8 +50,8 @@ function h(e) {
             })
         }
     }, [L, O, R]);
-    let b = null != h && null != n && null != U ? x.find(e => U.roles.includes(e.id)) : void 0,
-        k = r.useMemo(() => null != h && null != n ? x.filter(e => !(0, u.Oy)(e)).filter(e => !D || e.tags?.subscription_listing_id != null).filter(e => b?.id === e.id || m.wO(h, n.id, b, e)) : [], [h, n, D, b, x]),
+    let y = null != h && null != n && null != U ? x.find(e => U.roles.includes(e.id)) : void 0,
+        k = r.useMemo(() => null != h && null != n ? x.filter(e => !(0, u.Oy)(e)).filter(e => !D || e.tags?.subscription_listing_id != null).filter(e => y?.id === e.id || m.wO(h, n.id, y, e)) : [], [h, n, D, y, x]),
         j = r.useMemo(() => {
             let e = Array.from(k).map(e => ({
                 leading: S(e),
@@ -73,11 +73,11 @@ function h(e) {
     return (U.roles.forEach(e => {
         let t = R[e];
         null != t && (G[t.id] = t)
-    }), s.zy(m.aH({
+    }), l.zy(m.aH({
         forceRoles: G,
         context: h
-    }), s.kg(p.xBc.MANAGE_GUILD, p.xBc.MANAGE_ROLES)) || (0, c.bM)(h, n)) ? (0, i.jsx)("div", {
-        className: C.kL,
+    }), l.kg(f.xBc.MANAGE_GUILD, f.xBc.MANAGE_ROLES)) || (0, c.bM)(h, n)) ? (0, i.jsx)("div", {
+        className: p.kL,
         children: (0, i.jsxs)(o.iS7, {
             selectionMode: "multiple",
             options: j,
@@ -88,16 +88,16 @@ function h(e) {
             children: [(0, i.jsx)(o.a32, {
                 hideTags: !0,
                 autoFocus: !0,
-                placeholder: f.intl.string(f.t.Sojqsr)
+                placeholder: C.intl.string(C.t.Sojqsr)
             }), (0, i.jsx)(o.X2W, {
-                renderListItem: e => (0, i.jsx)(l.c$x, {
+                renderListItem: e => (0, i.jsx)(s.c$x, {
                     ...e
                 })
             })]
         })
     }) : (0, i.jsx)(o.Text, {
         variant: "text-md/medium",
-        children: f.intl.string(f.t.MNSTbY)
+        children: C.intl.string(C.t.MNSTbY)
     })
 }
 

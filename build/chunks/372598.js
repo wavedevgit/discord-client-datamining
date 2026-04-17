@@ -1,17 +1,17 @@
 /** chunk id: 372598 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    XO: () => s,
+    XO: () => l,
     dL: () => r
 });
 var i = n(411335);
 
 function r(e) {
-    let t = s();
+    let t = l();
     return Array.from(e.defaultActionTypes).map(e => t[e])
 }
 
-function s() {
+function l() {
     return {
         [i.AH.BLOCK_MESSAGE]: {
             type: i.AH.BLOCK_MESSAGE,

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(763754),
-    s = n(888675),
-    l = n(985018);
+    l = n(888675),
+    s = n(985018);
 
 function a(e) {
     let {
@@ -17,13 +17,13 @@ function a(e) {
         actorUsernameHook: c,
         targetUsernameHook: u,
         compact: d
-    } = e, _ = (0, r.Ay)(t), E = (0, r.d8)(o, a), A = c(_), m = u(E ?? void 0), I = l.intl.format(l.t.tusv2h, {
+    } = e, _ = (0, r.Ay)(t), A = (0, r.d8)(o, a), E = c(_), m = u(A ?? void 0), I = s.intl.format(s.t.tusv2h, {
         actorName: _.nick,
-        actorHook: A,
-        targetName: E?.nick,
+        actorHook: E,
+        targetName: A?.nick,
         targetHook: m
     });
-    return (0, i.jsx)(s.A, {
+    return (0, i.jsx)(l.A, {
         icon: n(617184),
         timestamp: t.timestamp,
         compact: d,

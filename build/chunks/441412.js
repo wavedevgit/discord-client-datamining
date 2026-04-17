@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(397927),
-    s = n(843472),
-    l = n(763754),
+    l = n(843472),
+    s = n(763754),
     a = n(888675),
     o = n(985018);
 
@@ -17,13 +17,13 @@ function c(e) {
         usernameHook: n,
         onClickPins: c,
         compact: u
-    } = e, d = (0, l.Ay)(t), _ = d.nick, E = n(d), A = () => {
+    } = e, d = (0, s.Ay)(t), _ = d.nick, A = n(d), E = () => {
         if (null == t.messageReference) return;
         let {
             channel_id: e,
             message_id: n
         } = t.messageReference;
-        s.A.jumpToMessage({
+        l.A.jumpToMessage({
             channelId: e,
             messageId: n,
             flash: !0
@@ -39,19 +39,19 @@ function c(e) {
         timestamp: t.timestamp,
         compact: u,
         children: null != t.messageReference ? null == c ? o.intl.format(o.t.lD5tup, {
-            usernameHook: E,
+            usernameHook: A,
             username: _,
-            messageOnClick: A
+            messageOnClick: E
         }) : o.intl.format(o.t.yIDvPL, {
-            usernameHook: E,
+            usernameHook: A,
             username: _,
             pinsActionOnClick: c,
-            messageOnClick: A
+            messageOnClick: E
         }) : null == c ? o.intl.format(o.t.vfkjqx, {
-            usernameHook: E,
+            usernameHook: A,
             username: _
         }) : o.intl.format(o.t.R7vZGZ, {
-            usernameHook: E,
+            usernameHook: A,
             username: _,
             pinsActionOnClick: c
         })

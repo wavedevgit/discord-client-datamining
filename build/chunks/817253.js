@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(638075),
-    s = n(763754),
-    l = n(888675),
+    l = n(763754),
+    s = n(888675),
     a = n(985018);
 
 function o(e) {
@@ -15,14 +15,14 @@ function o(e) {
         message: t,
         usernameHook: o,
         compact: c
-    } = e, u = (0, s.Ay)(t), d = o(u), _ = r.A.getSystemMessageUserJoin(t.id), E = a.intl.format(_, {
+    } = e, u = (0, l.Ay)(t), d = o(u), _ = r.A.getSystemMessageUserJoin(t.id), A = a.intl.format(_, {
         username: u.nick,
         usernameHook: d
     });
-    return (0, i.jsx)(l.A, {
+    return (0, i.jsx)(s.A, {
         icon: n(617184),
         timestamp: t.timestamp,
         compact: c,
-        children: E
+        children: A
     })
 }

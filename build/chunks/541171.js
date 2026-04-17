@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(397927),
-    s = n(47167),
-    l = n(402216),
+    l = n(47167),
+    s = n(402216),
     a = n(763754),
     o = n(888675),
     c = n(985018);
@@ -19,15 +19,15 @@ function u(e) {
         playingActivity: u,
         onJoinStream: d,
         usernameHook: _,
-        compact: E
-    } = e, A = (0, a.Ay)(t), m = (0, s.Ay)(n), I = t.call?.duration, T = _(A), N = c.intl.format(c.t.FKXvaI, {
-        username: A.nick,
+        compact: A
+    } = e, E = (0, a.Ay)(t), m = (0, l.Ay)(n), I = t.call?.duration, T = _(E), g = c.intl.format(c.t.FKXvaI, {
+        username: E.nick,
         activityName: null != u ? u.name : "unknown",
         onJoinStream: d,
         usernameHook: T
     });
-    return null != I && (N = c.intl.format(c.t.NEFxtd, {
-        username: A.nick,
+    return null != I && (g = c.intl.format(c.t.NEFxtd, {
+        username: E.nick,
         duration: I.humanize(),
         channelName: m ?? "",
         usernameHook: T
@@ -37,11 +37,11 @@ function u(e) {
             color: "currentColor",
             width: 20,
             height: 20
-        }) : (0, i.jsx)(l.Ay, {
-            size: l.Ay.Sizes.SMALL
+        }) : (0, i.jsx)(s.Ay, {
+            size: s.Ay.Sizes.SMALL
         }),
         timestamp: t.timestamp,
-        compact: E,
-        children: N
+        compact: A,
+        children: g
     })
 }

@@ -27,8 +27,8 @@ function h(e) {
     } = e, p = e => () => A(e), f = (0, d.x)(t.type, t, n), j = t.metadata?.durationSeconds, N = null != j ? (0, m.getFriendlyDurationString)(j) : null, E = (0, s.bG)([o.A, a.A], () => o.A.can(u.xBc.MODERATE_MEMBERS, a.A.getGuild(h)), [h]);
     if (null == f) return null;
     let {
-        headerText: C,
-        descriptionText: T,
+        headerText: T,
+        descriptionText: C,
         icon: I
     } = f;
     return (0, i.jsxs)("div", {
@@ -44,11 +44,11 @@ function h(e) {
             className: x.xj,
             children: [(0, i.jsx)(r.Heading, {
                 variant: "heading-sm/semibold",
-                children: C
+                children: T
             }), (0, i.jsx)(r.Text, {
                 color: "interactive-text-default",
                 variant: "text-xs/medium",
-                children: T
+                children: C
             }), _ && (0, i.jsxs)(r.Text, {
                 color: "interactive-text-default",
                 variant: "text-xs/medium",

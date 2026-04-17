@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(503698),
-    s = n.n(r),
-    l = n(763754),
+    l = n.n(r),
+    s = n(763754),
     a = n(491182),
     o = n(291812),
     c = n(643204),
@@ -20,24 +20,24 @@ function d(e) {
         content: r,
         className: d,
         compact: _,
-        popoutProps: E,
-        hideTimestamp: A = !1,
+        popoutProps: A,
+        hideTimestamp: E = !1,
         withFooter: m = !1,
         ...I
-    } = e, T = (0, l.Ay)(t);
+    } = e, T = (0, s.Ay)(t);
     return (0, i.jsx)("div", {
-        className: s()({
+        className: l()({
             [u.Ym]: m
         }, u.gD, {
             [u.oE]: _
         }, d),
         children: (0, i.jsx)(a.A, {
             ...I,
-            className: s()(u.zC, {
+            className: l()(u.zC, {
                 [u.oE]: _
             }),
             childrenMessageContent: (0, i.jsx)(o.Ay, {
-                className: s()(u.__invalid_messageContent, {
+                className: l()(u.__invalid_messageContent, {
                     [u.oE]: _
                 }),
                 message: t,
@@ -50,11 +50,11 @@ function d(e) {
                 author: T,
                 guildId: n?.guild_id,
                 compact: _,
-                hideTimestamp: A,
-                className: s()(u.wx, {
+                hideTimestamp: E,
+                className: l()(u.wx, {
                     [u.oE]: _
                 }),
-                ...E ?? {}
+                ...A ?? {}
             }),
             compact: _,
             author: T

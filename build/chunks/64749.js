@@ -25,8 +25,8 @@ var i = n(627968),
     j = n(734057),
     N = n(317525),
     E = n(994500),
-    C = n(287809),
-    T = n(985018),
+    T = n(287809),
+    C = n(985018),
     I = n(627452);
 let b = (0, h.Ld)(),
     v = (0, h.Ld)(),
@@ -57,7 +57,7 @@ function O(e) {
 }
 
 function G(e) {
-    let t = (0, g.m1)(e, C.default, E.A);
+    let t = (0, g.m1)(e, T.default, E.A);
     return {
         tag: {
             type: m._.CHANNEL,
@@ -157,7 +157,7 @@ function k(e) {
         }), t.forEach(e => {
             e in n && (i[e] = O(n[e]))
         }), i
-    })(a, g, p), [a, g, p]), E = s.useMemo(() => Object.keys(f), [f]), [C, S] = s.useState(""), [L, D] = s.useState(!1), [k, U] = s.useState(!1), [P, w] = s.useState(!1), B = s.useRef(null), {
+    })(a, g, p), [a, g, p]), E = s.useMemo(() => Object.keys(f), [f]), [T, S] = s.useState(""), [L, D] = s.useState(!1), [k, U] = s.useState(!1), [P, w] = s.useState(!1), B = s.useRef(null), {
         refs: F,
         floatingStyles: H
     } = (0, d.uaw)({
@@ -168,15 +168,15 @@ function k(e) {
         sections: V,
         sectionCounts: z
     } = s.useMemo(() => {
-        let e = "" !== C ? l.filter(e => o()(C, e.display.toLocaleLowerCase())) : l,
-            t = "" !== C ? n.filter(e => o()(C, e.display.toLocaleLowerCase())) : n,
+        let e = "" !== T ? l.filter(e => o()(T, e.display.toLocaleLowerCase())) : l,
+            t = "" !== T ? n.filter(e => o()(T, e.display.toLocaleLowerCase())) : n,
             i = [],
             s = [];
         return i[0] = e, s[0] = e.length, i[1] = t, s[1] = t.length, {
             sections: i,
             sectionCounts: s
         }
-    }, [C, l, n]), W = s.useCallback(e => {
+    }, [T, l, n]), W = s.useCallback(e => {
         let t = Object.values(e),
             n = t.filter(e => {
                 let {
@@ -250,7 +250,7 @@ function k(e) {
                 tags: Z,
                 maxHeight: 98,
                 size: m.A.Sizes.MEDIUM,
-                query: C,
+                query: T,
                 ref: B,
                 onRemoveTag: e => {
                     let t = E[e],
@@ -263,7 +263,7 @@ function k(e) {
                 onQueryChange: e => {
                     S(e.trim().toLocaleLowerCase())
                 },
-                placeholder: h ?? T.intl.string(T.t.uqHLzW),
+                placeholder: h ?? C.intl.string(C.t.uqHLzW),
                 sections: [E.length],
                 inputProps: {
                     "aria-labelledby": b,
@@ -292,12 +292,12 @@ function k(e) {
                         return 0 === t ? (0, i.jsx)(u.Heading, {
                             variant: "heading-sm/semibold",
                             className: r()(I.Gf, I.r6),
-                            children: T.intl.string(T.t.OGiMXJ)
-                        }, T.intl.string(T.t.OGiMXJ)) : 1 === t ? (0, i.jsx)(u.Heading, {
+                            children: C.intl.string(C.t.OGiMXJ)
+                        }, C.intl.string(C.t.OGiMXJ)) : 1 === t ? (0, i.jsx)(u.Heading, {
                             variant: "heading-sm/semibold",
                             className: r()(I.Gf, I.r6),
-                            children: T.intl.string(T.t["LPJmL/"])
-                        }, T.intl.string(T.t["LPJmL/"])) : null
+                            children: C.intl.string(C.t["LPJmL/"])
+                        }, C.intl.string(C.t["LPJmL/"])) : null
                     },
                     renderFooter: e => {
                         let {

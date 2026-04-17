@@ -1,23 +1,23 @@
 /** chunk id: 345981 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    X: () => s
+    X: () => l
 });
 var i = n(652215),
     r = n(985018);
 
-function s(e) {
+function l(e) {
     let {
         application: t,
         username: n,
-        usernameHook: s = i.tEg
+        usernameHook: l = i.tEg
     } = e;
     return null != t ? r.intl.format(r.t.dXdgno, {
         username: n,
         applicationName: t.name,
-        usernameHook: s
+        usernameHook: l
     }) : r.intl.format(r.t.O829Uu, {
         username: n,
-        usernameHook: s
+        usernameHook: l
     })
 }

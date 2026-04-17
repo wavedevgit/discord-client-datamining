@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(397927),
-    s = n(880652),
-    l = n(434122);
+    l = n(880652),
+    s = n(434122);
 
 function a(e) {
     let {
@@ -15,9 +15,9 @@ function a(e) {
         questionId: n,
         value: a,
         onValueChange: o
-    } = e, c = t.Selector !== s.BO.SINGLE_LINE;
+    } = e, c = t.Selector !== l.BO.SINGLE_LINE;
     return (0, i.jsx)("div", {
-        className: l.k,
+        className: s.k,
         children: c ? (0, i.jsx)(r.fs1, {
             value: a,
             onChange: e => o(n, e),

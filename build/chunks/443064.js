@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(253932),
     G = n(780964),
     M = n(858897),
-    U = n(980429),
-    k = n(982363),
+    k = n(980429),
+    U = n(982363),
     w = n(652215),
     V = n(53516),
     B = n(985018),
@@ -207,9 +207,9 @@ function W(e) {
             t = {
                 buttonText: B.intl.string(B.t.bt75uw),
                 buttonAriaLabel: B.intl.string(B.t["8peUT0"]),
-                valueMessage: (0, i.jsx)(k.q, {
+                valueMessage: (0, i.jsx)(U.q, {
                     text: e,
-                    censor: U.B,
+                    censor: k.B,
                     revealLabel: B.intl.string(B.t["Zvx+yV"]),
                     hideLabel: B.intl.string(B.t.nqTD4d)
                 }),
@@ -271,9 +271,9 @@ function Z(e) {
         phone: a,
         email: o
     } = l, d = null != a;
-    return t = d ? (0, i.jsx)(k.q, {
+    return t = d ? (0, i.jsx)(U.q, {
         text: a,
-        censor: U.D,
+        censor: k.D,
         revealLabel: B.intl.string(B.t.eY3xlT),
         hideLabel: B.intl.string(B.t["jllbv+"])
     }) : B.intl.string(B.t.I5kDqj), (0, i.jsxs)("div", {

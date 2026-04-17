@@ -23,8 +23,8 @@ var i = n(627968),
     j = n(351906),
     N = n(287809),
     E = n(403362),
-    C = n(427262),
-    T = n(555337),
+    T = n(427262),
+    C = n(555337),
     I = n(276373),
     b = n(523599),
     v = n(438407),
@@ -263,7 +263,7 @@ class M extends s.PureComponent {
             return {
                 id: t.id,
                 value: t.id,
-                label: C.Ay.getUserTag(t, {
+                label: T.Ay.getUserTag(t, {
                     mode: "username"
                 }),
                 leading: (0, i.jsx)(c.euF, {
@@ -494,8 +494,8 @@ class M extends s.PureComponent {
         this._lastExpandedRef = e
     }
 }
-let k = d.Ay.connectStores([b.A, T.A, f.A, h.A, j.A, N.default], () => {
-    let e = T.A.getGuildId(),
+let k = d.Ay.connectStores([b.A, C.A, f.A, h.A, j.A, N.default], () => {
+    let e = C.A.getGuildId(),
         t = f.A.getGuild(e),
         n = b.A.logs;
     return {

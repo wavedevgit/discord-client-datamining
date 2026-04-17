@@ -4,14 +4,14 @@ n.d(t, {
     HR: () => o,
     Mv: () => c,
     Uq: () => a,
-    c_: () => l,
+    c_: () => s,
     ir: () => u
 });
 let i = /[\t\n,]/g,
     r = /\s{2,}/g,
-    s = /[*"']/g;
+    l = /[*"']/g;
 
-function l(e) {
+function s(e) {
     return e.split(i).map(e => e.replace(r, " ").trim()).filter(e => e.length > 0)
 }
 
@@ -21,8 +21,8 @@ function a(e) {
 
 function o(e) {
     return e.sort((e, t) => {
-        let n = e.replaceAll(s, ""),
-            i = t.replaceAll(s, "");
+        let n = e.replaceAll(l, ""),
+            i = t.replaceAll(l, "");
         return n.localeCompare(i)
     })
 }

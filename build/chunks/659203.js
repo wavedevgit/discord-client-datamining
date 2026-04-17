@@ -1,28 +1,28 @@
 /** chunk id: 659203 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => y
+    A: () => b
 });
 var i = n(627968),
     r = n(64700),
-    s = n(989349),
-    l = n.n(s),
+    l = n(989349),
+    s = n.n(l),
     a = n(607399),
     o = n(311907),
     c = n(827734),
     u = n(397927),
     d = n(863574),
     _ = n(793574),
-    E = n(688810),
-    A = n(888675),
+    A = n(688810),
+    E = n(888675),
     m = n(532794),
     I = n(287809),
     T = n(166403),
-    N = n(954571),
-    g = n(405269),
-    p = n(975571),
-    f = n(927578),
-    C = n(851746),
+    g = n(954571),
+    N = n(405269),
+    f = n(975571),
+    C = n(927578),
+    p = n(851746),
     h = n(727949),
     S = n(664654),
     R = n(303682),
@@ -55,7 +55,7 @@ class v extends r.Component {
             n = t?.username !== void 0 ? t.username : "";
         return U.intl.format(U.t.yisueA, {
             sender: n,
-            helpdeskArticle: p.A.getArticleURL(D.MVz.REFERRAL_PROGRAM)
+            helpdeskArticle: f.A.getArticleURL(D.MVz.REFERRAL_PROGRAM)
         })
     }
     getTitleText() {
@@ -74,11 +74,11 @@ class v extends r.Component {
     }
     getBodyText() {
         return this.recipientHasNitro && !this.isSender && void 0 === this.trialOffer.redeemed_at ? U.intl.format(U.t.LwCwT9, {
-            helpdeskArticle: p.A.getArticleURL(D.MVz.REFERRAL_PROGRAM)
+            helpdeskArticle: f.A.getArticleURL(D.MVz.REFERRAL_PROGRAM)
         }) : this.offerExpired ? null : U.intl.string(U.t.lQLlOb)
     }
     renderActions() {
-        let e = this.currentUser.id !== this.trialOffer.user_id || (0, f.TW)(this.currentUser) || !this.currentUser.verified || (0, O.P)(this.trialOffer),
+        let e = this.currentUser.id !== this.trialOffer.user_id || (0, C.TW)(this.currentUser) || !this.currentUser.verified || (0, O.P)(this.trialOffer),
             t = this.renderExpirationDate();
         return (0, i.jsxs)("div", {
             className: P.UD,
@@ -110,12 +110,12 @@ class v extends r.Component {
             trialEndsAt: t
         } = this.props;
         if (void 0 !== e.redeemed_at && !this.isSender && null !== t) return U.intl.formatToPlainString(U.t.nP0ivR, {
-            date: (0, g.i$)(l()(t), "LL")
+            date: (0, N.i$)(s()(t), "LL")
         });
         if (this.recipientHasNitro || void 0 === e.expires_at) return null;
-        let n = l()(e.expires_at);
+        let n = s()(e.expires_at);
         return this.offerExpired ? U.intl.formatToPlainString(U.t.PuSHfU, {
-            date: (0, g.i$)(l()(n), "LL")
+            date: (0, N.i$)(s()(n), "LL")
         }) : (0, h.GQ)(n.valueOf())
     }
     renderMedia() {
@@ -135,7 +135,7 @@ class v extends r.Component {
                             recipient: t
                         }),
                         bodyText: U.intl.formatToPlainString(U.t.u7hyDx, {
-                            helpdeskArticle: p.A.getArticleURL(D.MVz.REFERRAL_PROGRAM)
+                            helpdeskArticle: f.A.getArticleURL(D.MVz.REFERRAL_PROGRAM)
                         })
                     };
                     else return {
@@ -177,7 +177,7 @@ class v extends r.Component {
                         analyticsLocations: t,
                         startingScreen: r
                     } = e;
-                    N.default.track(D.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+                    g.default.track(D.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                         location_stack: t
                     }), (0, u.mMO)(async () => {
                         let {
@@ -194,8 +194,8 @@ class v extends r.Component {
                 }),
                 text: U.intl.string(U.t.Lm2nFc)
             }),
-            s = this.isSender ? r : t,
-            l = (0, i.jsx)(u._V3, {
+            l = this.isSender ? r : t,
+            s = (0, i.jsx)(u._V3, {
                 src: L.A,
                 height: 84,
                 width: 144,
@@ -205,7 +205,7 @@ class v extends r.Component {
                 headerText: a,
                 bodyText: o
             } = e();
-        return (0, i.jsxs)(A.A, {
+        return (0, i.jsxs)(E.A, {
             className: P.SB,
             iconNode: (0, i.jsx)(u.tvc, {
                 size: "md",
@@ -219,7 +219,7 @@ class v extends r.Component {
                 children: this.getSystemMessageHeader()
             }), (0, i.jsxs)("div", {
                 className: P.i2,
-                children: [l, (0, i.jsxs)("div", {
+                children: [s, (0, i.jsxs)("div", {
                     className: P.KX,
                     children: [(0, i.jsxs)("div", {
                         className: P.xJ,
@@ -234,7 +234,7 @@ class v extends r.Component {
                         })]
                     }), (0, i.jsx)("div", {
                         className: P.ox,
-                        children: s
+                        children: l
                     })]
                 })]
             })]
@@ -242,31 +242,31 @@ class v extends r.Component {
     }
 }
 
-function y(e) {
+function b(e) {
     let {
         userTrialOfferId: t,
         canRenderReferralEmbed: n,
         compact: r
     } = e, {
-        trialOffer: s,
-        isResolving: l,
+        trialOffer: l,
+        isResolving: s,
         referralsSent: c
-    } = (0, o.cf)([C.A], () => ({
-        trialOffer: n ? C.A.getRelevantUserTrialOffer(t) : null,
-        isResolving: !!n && C.A.isResolving(t),
-        referralsSent: C.A.getRecipientStatus()
-    }), [n, t]), u = I.default.getCurrentUser(), A = (0, o.bG)([I.default], () => null != s && (0, f.TW)(void 0 !== u && s.user_id === u.id ? u : I.default.getUser(s.user_id))), m = (0, o.bG)([T.A], () => A ? T.A.getPremiumTypeSubscription()?.trialEndsAt : null), {
-        analyticsLocations: N
-    } = (0, E.Ay)(_.A.SHARE_NITRO_EMBED);
-    return l ? (0, i.jsx)(d.Wb, {
+    } = (0, o.cf)([p.A], () => ({
+        trialOffer: n ? p.A.getRelevantUserTrialOffer(t) : null,
+        isResolving: !!n && p.A.isResolving(t),
+        referralsSent: p.A.getRecipientStatus()
+    }), [n, t]), u = I.default.getCurrentUser(), E = (0, o.bG)([I.default], () => null != l && (0, C.TW)(void 0 !== u && l.user_id === u.id ? u : I.default.getUser(l.user_id))), m = (0, o.bG)([T.A], () => E ? T.A.getPremiumTypeSubscription()?.trialEndsAt : null), {
+        analyticsLocations: g
+    } = (0, A.Ay)(_.A.SHARE_NITRO_EMBED);
+    return s ? (0, i.jsx)(d.Wb, {
         isHorizontal: !a.Fr
-    }) : n && null != s && void 0 !== u ? (0, i.jsx)(v, {
-        trialOffer: s,
+    }) : n && null != l && void 0 !== u ? (0, i.jsx)(v, {
+        trialOffer: l,
         referralsSent: c,
         currentUser: u,
-        recipientHasNitro: A,
+        recipientHasNitro: E,
         trialEndsAt: m,
-        analyticsLocations: N,
+        analyticsLocations: g,
         compact: r
     }) : (0, i.jsx)("div", {
         className: P.TU,

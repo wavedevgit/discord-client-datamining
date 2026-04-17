@@ -28,8 +28,8 @@ function p(e) {
         onDragComplete: j,
         draggingId: N
     } = e, E = (0, c.Ay)(), {
-        drag: C,
-        drop: T,
+        drag: T,
+        drop: C,
         dragSourcePosition: I,
         setIsDraggable: b
     } = (0, g.A)({
@@ -81,7 +81,7 @@ function p(e) {
         onMouseEnter: () => b(!0),
         onMouseLeave: () => b(!1),
         ref: e => {
-            C(T(e))
+            T(C(e))
         },
         children: [(0, i.jsx)("div", {
             className: A.BU,

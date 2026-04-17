@@ -1,27 +1,27 @@
 /** chunk id: 911726 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => B
+    Ay: () => w
 });
 var i, r = n(627968),
-    s = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
     o = n(106778),
     c = n(835245),
     u = n(23339),
     d = n(319060),
     _ = n(397927),
-    E = n(21161),
-    A = n(943961),
+    A = n(21161),
+    E = n(943961),
     m = n(513609),
     I = n(928830),
     T = n(567771),
-    N = n(780964),
-    g = n(858897),
-    p = n(473145),
-    f = n(763754),
-    C = n(888675),
+    g = n(780964),
+    N = n(858897),
+    f = n(473145),
+    C = n(763754),
+    p = n(888675),
     h = n(921066),
     S = n(652215),
     R = n(985018),
@@ -113,10 +113,10 @@ let D = ["TOP_LEFT", "TOP_RIGHT"],
         }
     }),
     v = "falling-leaf",
-    y = ["#61D5B2"],
-    b = n(80705),
+    b = ["#61D5B2"],
+    y = n(80705),
     k = n(232460),
-    j = [b, k];
+    j = [y, k];
 
 function G() {
     return n.e("98150").then(n.t.bind(n, 633343, 19)).then(e => {
@@ -132,8 +132,8 @@ function F(e) {
         onAnimationComplete: t,
         onClick: n,
         position: i,
-        size: l
-    } = e, u = s.useRef(null), [d, A] = s.useState(null), [m] = s.useState(i ?? function() {
+        size: s
+    } = e, u = l.useRef(null), [d, E] = l.useState(null), [m] = l.useState(i ?? function() {
         switch (Math.floor(Math.random() * Object.keys(M).length)) {
             case 0:
                 return "TOP_LEFT";
@@ -147,7 +147,7 @@ function F(e) {
     }()), {
         createMultipleConfettiAt: I,
         confettiCanvas: T
-    } = s.useContext(E.x), [N, g] = s.useState(null), p = (0, o.f9)(T, N), f = function(e, t) {
+    } = l.useContext(A.x), [g, N] = l.useState(null), f = (0, o.f9)(T, g), C = function(e, t) {
         if (null == e) return "enter";
         switch (e) {
             case "enter":
@@ -162,14 +162,14 @@ function F(e) {
             case "exit":
                 return "enter"
         }
-    }(d, m), C = D.includes(m), h = C && "exit" === d, S = s.useCallback(e => {
-        A(e)
-    }, []), R = s.useCallback(() => {
+    }(d, m), p = D.includes(m), h = p && "exit" === d, S = l.useCallback(e => {
+        E(e)
+    }, []), R = l.useCallback(() => {
         "exit" === d && t?.()
-    }, [t, d]), P = s.useCallback(e => {
+    }, [t, d]), P = l.useCallback(e => {
         u.current = e
     }, []);
-    return s.useEffect(() => {
+    return l.useEffect(() => {
         if ("confetti" === d) {
             let {
                 confettiVelocityDirection: e
@@ -185,7 +185,7 @@ function F(e) {
                     x: i.left + r.x,
                     y: i.top + r.y
                 }
-            }(u.current, m, l);
+            }(u.current, m, s);
             I(t.x, t.y, {
                 velocity: {
                     type: "static-random",
@@ -200,10 +200,10 @@ function F(e) {
                 }
             })
         }
-    }, [I, m, d, l]), s.useEffect(() => {
-        if (C && "leaf_fall" === d) {
+    }, [I, m, d, s]), l.useEffect(() => {
+        if (p && "leaf_fall" === d) {
             let e = L[m].leafRotationDirection;
-            p.createConfetti({
+            f.createConfetti({
                 id: `${v}-${(0,c.A)()}`,
                 position: {
                     type: "static",
@@ -248,14 +248,14 @@ function F(e) {
                     }
                 }
             }, {
-                sprite: "TOP_LEFT" === m ? b : k
+                sprite: "TOP_LEFT" === m ? y : k
             })
         }
-    }, [C, p, m, d]), (0, r.jsxs)(r.Fragment, {
+    }, [p, f, m, d]), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(o.K_, {
-            ref: g,
+            ref: N,
             sprites: j,
-            colors: y,
+            colors: b,
             spriteWidth: 45,
             spriteHeight: 45
         }), (0, r.jsx)(_.DUT, {
@@ -271,7 +271,7 @@ function F(e) {
                 className: a()(x.oQ, {
                     [x.EG]: h
                 }),
-                nextScene: f,
+                nextScene: C,
                 sceneSegments: O,
                 onScenePlay: S,
                 onSceneComplete: R,
@@ -286,7 +286,7 @@ function H(e) {
     let t, {
             message: n,
             compact: i,
-            guild: l,
+            guild: s,
             usernameHook: a,
             onClickMessage: o
         } = e,
@@ -304,17 +304,17 @@ function H(e) {
         u = (0, T.A)(n),
         {
             createMultipleConfettiAt: d,
-            addClickListener: A
-        } = s.useContext(E.x),
-        [h, O] = s.useState(!1),
-        M = s.useRef(null),
+            addClickListener: E
+        } = l.useContext(A.x),
+        [h, O] = l.useState(!1),
+        M = l.useRef(null),
         {
             reducedMotion: D
-        } = s.useContext(_.CZY),
-        U = (0, f.Ay)(n),
+        } = l.useContext(_.CZY),
+        U = (0, C.Ay)(n),
         P = U.nick,
         L = a(U);
-    t = null == c || null == l ? u > 1 ? R.intl.format(R.t.yfC9ds, {
+    t = null == c || null == s ? u > 1 ? R.intl.format(R.t.yfC9ds, {
         username: P,
         usernameHook: L,
         numSubscriptions: u
@@ -325,15 +325,15 @@ function H(e) {
         username: P,
         usernameHook: L,
         numSubscriptions: u,
-        guildName: l.name,
-        newTierName: (0, p.gb)(c)
+        guildName: s.name,
+        newTierName: (0, f.gb)(c)
     }) : R.intl.format(R.t.cUfTTE, {
         username: P,
         usernameHook: L,
-        guildName: l.name,
-        newTierName: (0, p.gb)(c)
+        guildName: s.name,
+        newTierName: (0, f.gb)(c)
     });
-    let y = s.useCallback(() => {
+    let b = l.useCallback(() => {
             if (!D.enabled)
                 if (h || 0 !== Math.floor(50 * Math.random())) {
                     let e = M.current?.getBoundingClientRect();
@@ -341,19 +341,19 @@ function H(e) {
                     d(e.left + e.width / 2, e.top + e.height / 2)
                 } else O(!0)
         }, [d, D, h]),
-        b = s.useCallback(() => {
+        y = l.useCallback(() => {
             O(!1)
         }, []),
-        k = s.useCallback(() => {
+        k = l.useCallback(() => {
             (0, I.O9)({
                 settingsVisible: !0
-            }), (0, g.openUserSettings)(N.X.POGGERMODE_PANEL), O(!1)
+            }), (0, N.openUserSettings)(g.X.POGGERMODE_PANEL), O(!1)
         }, []),
-        j = s.useCallback((e, t) => {
+        j = l.useCallback((e, t) => {
             t?.id.startsWith(v) && k()
         }, [k]);
-    s.useEffect(() => A(j));
-    let G = s.useCallback(e => {
+    l.useEffect(() => E(j));
+    let G = l.useCallback(e => {
             e.target === e.currentTarget && o(e)
         }, [o]),
         H = (0, r.jsx)(_.DUT, {
@@ -363,10 +363,10 @@ function H(e) {
             children: (0, r.jsx)(_._Jp, {
                 color: _.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
                 className: x.Kk,
-                onMouseEnter: y
+                onMouseEnter: b
             })
         });
-    return (0, r.jsxs)(C.A, {
+    return (0, r.jsxs)(p.A, {
         iconNode: H,
         timestamp: n.timestamp,
         compact: i,
@@ -378,7 +378,7 @@ function H(e) {
             children: (0, r.jsx)("div", {
                 className: x.LK,
                 children: (0, r.jsx)(F, {
-                    onAnimationComplete: b,
+                    onAnimationComplete: y,
                     onClick: k
                 })
             })
@@ -386,22 +386,22 @@ function H(e) {
     })
 }
 
-function B(e) {
+function w(e) {
     let {
         message: t,
         compact: n,
         guild: i,
-        usernameHook: s
+        usernameHook: l
     } = e, {
-        enabled: l,
+        enabled: s,
         showCta: a
-    } = A.X.useConfig({
+    } = E.X.useConfig({
         location: "UserPremiumGuildSubscription"
     });
-    return t.type === S.lAJ.GUILD_BOOST && l && !n ? (0, r.jsx)(h.A, {
+    return t.type === S.lAJ.GUILD_BOOST && s && !n ? (0, r.jsx)(h.A, {
         message: t,
         guild: i,
-        usernameHook: s,
+        usernameHook: l,
         showCta: a
     }) : (0, r.jsx)(H, {
         ...e

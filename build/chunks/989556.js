@@ -27,9 +27,9 @@ let p = function(e) {
         primaryColor: f,
         secondaryColor: j,
         isDisabled: N = !1
-    } = e, E = (0, r.bG)([g.A], () => g.A.getProps().originalProfile), C = null != E && E.tag !== s;
+    } = e, E = (0, r.bG)([g.A], () => g.A.getProps().originalProfile), T = null != E && E.tag !== s;
 
-    function T(e) {
+    function C(e) {
         m.A.updateGuildProfile(n, {
             tag: e
         })
@@ -58,7 +58,7 @@ let p = function(e) {
                         }),
                         disabled: N,
                         value: s ?? "",
-                        onChange: T
+                        onChange: C
                     })
                 }), (0, i.jsx)("div", {
                     className: A.e7,
@@ -69,7 +69,7 @@ let p = function(e) {
                     })
                 })]
             })
-        }), C && (0, i.jsx)(c.A, {
+        }), T && (0, i.jsx)(c.A, {
             className: A.O2,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-xs/medium",

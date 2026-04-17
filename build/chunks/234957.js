@@ -1,12 +1,12 @@
 /** chunk id: 234957 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => E
+    A: () => A
 });
 var i = n(627968),
     r = n(64700),
-    s = n(311907),
-    l = n(9842),
+    l = n(311907),
+    s = n(9842),
     a = n(994500),
     o = n(465364),
     c = n(763754),
@@ -18,22 +18,22 @@ let _ = r.memo(function(e) {
         channel: n,
         referencedMessage: d,
         compact: _ = !1
-    } = e, E = d.state === l.a.LOADED ? d.message : void 0, A = r.useMemo(() => E?.content != null && "" !== E.content ? (0, o.Ay)(E, {
+    } = e, A = d.state === s.a.LOADED ? d.message : void 0, E = r.useMemo(() => A?.content != null && "" !== A.content ? (0, o.Ay)(A, {
         formatInline: !0
-    }).content : null, [E]), {
+    }).content : null, [A]), {
         isReplyAuthorBlocked: m,
         isReplyAuthorIgnored: I
-    } = (0, s.cf)([a.A], () => ({
-        isReplyAuthorBlocked: null != E && a.A.isBlockedForMessage(E),
-        isReplyAuthorIgnored: null != E && a.A.isIgnoredForMessage(E)
-    }), [E]), T = (0, c.X4)(E), N = (0, c.X4)(t);
+    } = (0, l.cf)([a.A], () => ({
+        isReplyAuthorBlocked: null != A && a.A.isBlockedForMessage(A),
+        isReplyAuthorIgnored: null != A && a.A.isIgnoredForMessage(A)
+    }), [A]), T = (0, c.X4)(A), g = (0, c.X4)(t);
     return (0, i.jsx)(u.A, {
         repliedAuthor: T,
-        baseAuthor: N,
+        baseAuthor: g,
         baseMessage: t,
         channel: n,
         referencedMessage: d,
-        content: A,
+        content: E,
         compact: _,
         isReplyAuthorBlocked: m,
         isReplyAuthorIgnored: I,
@@ -42,11 +42,11 @@ let _ = r.memo(function(e) {
     })
 });
 
-function E(e, t, n, r, s) {
+function A(e, t, n, r, l) {
     return e.type !== d.lAJ.REPLY || null == n ? null : (0, i.jsx)(_, {
         baseMessage: e,
         channel: t,
         referencedMessage: r,
-        compact: s
+        compact: l
     })
 }

@@ -23,12 +23,12 @@ var i = n(627968),
     j = n(190695),
     N = n(29086),
     E = n(652215),
-    C = n(743981),
-    T = n(661023),
+    T = n(743981),
+    C = n(661023),
     I = n(985018),
     b = n(644961);
 let v = function() {
-    (0, I.useSyncMessages)(T.messagesLoader);
+    (0, I.useSyncMessages)(C.messagesLoader);
     let e = (0, r.bG)([h.A], () => h.A.getGuild()),
         t = (0, r.bG)([h.A], () => h.A.getGuildProfile()),
         {
@@ -45,7 +45,7 @@ let v = function() {
     let S = l.i.VISIBLE.has(t.visibility),
         y = (0, u.Rg)(e),
         R = !y || t?.tag == null,
-        O = t.badge ?? C.hc["0"],
+        O = t.badge ?? T.hc["0"],
         G = t.badgeColorPrimary ?? null,
         L = t.badgeColorSecondary ?? null,
         D = (0, i.jsxs)(i.Fragment, {
@@ -73,7 +73,7 @@ let v = function() {
         children: [(0, i.jsx)(a.Heading, {
             className: b.DD,
             variant: "heading-lg/semibold",
-            children: I.intl.string(T.default.mf2OwH)
+            children: I.intl.string(C.default.mf2OwH)
         }), (0, i.jsxs)("div", {
             className: b.kL,
             children: [(0, i.jsxs)("div", {
@@ -83,7 +83,7 @@ let v = function() {
                     children: [(0, i.jsx)(a.Text, {
                         variant: "text-sm/medium",
                         color: "text-subtle",
-                        children: I.intl.format(T.default["655Uny"], {
+                        children: I.intl.format(C.default["655Uny"], {
                             onClickServerProfile: () => {
                                 x.A.setSection(E.BEX.PROFILE)
                             },
@@ -95,7 +95,7 @@ let v = function() {
                         className: b.pB,
                         children: (0, i.jsx)(a.Text, {
                             variant: "text-xs/medium",
-                            children: I.intl.format(T.default.CRbkIz, {
+                            children: I.intl.format(C.default.CRbkIz, {
                                 onClickEditSetting: () => x.A.setSection(E.BEX.PROFILE, E.nd0.PROFILE_VISIBILITY)
                             })
                         })
@@ -107,7 +107,7 @@ let v = function() {
                         children: (0, i.jsx)(a.Text, {
                             variant: "text-md/semibold",
                             color: "text-strong",
-                            children: I.intl.string(T.default["1zams8"])
+                            children: I.intl.string(C.default["1zams8"])
                         })
                     }), (0, i.jsx)(a.dOG, {
                         id: "enable-server-tag",
