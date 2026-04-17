@@ -24,7 +24,7 @@ function E(e) {
     } = e, n = l.useRef(null), [a, r] = l.useState(null), s = l.useCallback(() => {
         r(function(e) {
             if (null == e) return 1;
-            let t = Math.floor((e.clientWidth - 40 + 24) / 360);
+            let t = Math.floor((e.clientWidth + 24) / 360);
             return t > 0 ? t : 1
         }(n.current))
     }, [r]);
@@ -35,8 +35,7 @@ function E(e) {
         ref: n,
         style: {
             "--custom-min-quest-tile-width": "336px",
-            "--custom-quest-grid-gap": "24px",
-            "--custom-quest-grid-padding": "20px"
+            "--custom-quest-grid-gap": "24px"
         },
         children: null !== a && t(a)
     })

@@ -27,11 +27,11 @@ function w(e) {
         className: s,
         onClose: a,
         context: w
-    } = e, S = (0, i.bG)([c.A], () => c.A.can(j.xBc.READ_MESSAGE_HISTORY, t)), y = (0, h.AI)(t), p = () => {
+    } = e, N = (0, i.bG)([c.A], () => c.A.can(j.xBc.READ_MESSAGE_HISTORY, t)), y = (0, h.AI)(t), p = () => {
         a(), (0, A.Tv)(t, void 0, "Thread Browser Empty State")
     }, b = n.useCallback((e, t) => {
         a(), (0, A.JA)(e, !t, f.H9.BROWSER)
-    }, [a]), C = function(e, t) {
+    }, [a]), I = function(e, t) {
         let [s, l] = n.useState(""), [a, r] = n.useState(!1), [i, o] = n.useState(!1), [d, c] = n.useState([]), h = async () => {
             if (null != s && "" !== s && !a) {
                 r(!0);
@@ -69,11 +69,11 @@ function w(e) {
                     variant: "heading-md/semibold",
                     className: T.DD,
                     children: v.intl.string(v.t.E3H5lE)
-                }), S ? (0, l.jsxs)(l.Fragment, {
+                }), N ? (0, l.jsxs)(l.Fragment, {
                     children: [(0, l.jsx)("div", {
                         className: T.yF
-                    }), (0, l.jsx)(N, {
-                        ...C
+                    }), (0, l.jsx)(S, {
+                        ...I
                     })]
                 }) : null, (0, l.jsx)("div", {
                     className: T.jH
@@ -94,11 +94,11 @@ function w(e) {
                     })
                 }) : null]
             }),
-            children: C.hasResults ? (0, l.jsx)(m.A, {
+            children: I.hasResults ? (0, l.jsx)(m.A, {
                 channel: t,
                 startThread: p,
                 goToThread: b,
-                threadIds: C.results
+                threadIds: I.results
             }) : (0, l.jsx)(x.A, {
                 channel: t,
                 startThread: p,
@@ -108,7 +108,7 @@ function w(e) {
     })
 }
 
-function N(e) {
+function S(e) {
     let {
         query: t,
         setQuery: s,

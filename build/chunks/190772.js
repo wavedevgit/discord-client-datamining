@@ -21,14 +21,14 @@ var l = s(627968),
     v = s(427262),
     T = s(456874),
     w = s(707539),
-    N = s(838541),
-    S = s(985018),
+    S = s(838541),
+    N = s(985018),
     y = s(992092);
 
 function p(e) {
     return e.isActiveThread() ? (0, l.jsx)(b, {
         channel: e
-    }) : (0, l.jsx)(k, {
+    }) : (0, l.jsx)(E, {
         channel: e
     })
 }
@@ -37,15 +37,15 @@ function b(e) {
     let {
         channel: t
     } = e, s = (0, a.bG)([T.A], () => T.A.getMostRecentMessage(t.id));
-    return null == s ? (0, l.jsx)(C, {
+    return null == s ? (0, l.jsx)(I, {
         channel: t
-    }) : (0, l.jsx)(I, {
+    }) : (0, l.jsx)(C, {
         channel: t,
         message: s
     })
 }
 
-function C(e) {
+function I(e) {
     let {
         channel: t
     } = e, s = (0, w.JO)(t);
@@ -53,11 +53,11 @@ function C(e) {
         className: y.W$,
         variant: "text-sm/normal",
         color: "text-default",
-        children: [S.intl.string(S.t.Jmh6n9), "\xa0 • \xa0", (0, w.aK)(s)]
+        children: [N.intl.string(N.t.Jmh6n9), "\xa0 • \xa0", (0, w.aK)(s)]
     })
 }
 
-function I(e) {
+function C(e) {
     let {
         channel: t,
         message: s
@@ -73,7 +73,7 @@ function I(e) {
         } = (0, u.Ay)(s),
         T = (0, g.gn)(t.guild_id, d.id, v),
         {
-            isBlocked: S,
+            isBlocked: N,
             isIgnored: p
         } = (0, a.cf)([A.A], () => ({
             isBlocked: A.A.isBlockedForMessage(s),
@@ -88,17 +88,17 @@ function I(e) {
                     renderedContent: n,
                     trailingIcon: a,
                     leadingIcon: r
-                } = (0, h.o)(s, e, S, p, y.BK, {
+                } = (0, h.o)(s, e, N, p, y.BK, {
                     trailingIconClass: y.sl,
                     leadingIconClass: y.aG,
-                    iconSize: N.eJ
+                    iconSize: S.eJ
                 });
             return (0, l.jsxs)(l.Fragment, {
                 children: [r, n ?? (0, l.jsx)("span", {
                     children: t
                 }), a]
             })
-        }, [s, S, p]);
+        }, [s, N, p]);
     return (0, l.jsxs)(r.Text, {
         className: y.W$,
         variant: "text-sm/normal",
@@ -116,7 +116,7 @@ function I(e) {
     })
 }
 
-function k(e) {
+function E(e) {
     let {
         channel: t
     } = e, s = (0, a.bG)([x.Ay], () => x.Ay.lastMessageId(t.id)), n = null == s ? new Date(t.threadMetadata?.archiveTimestamp ?? Date.now()).getTime() : j.default.extractTimestamp(s);
@@ -140,7 +140,7 @@ function k(e) {
                     size: "custom",
                     color: "currentColor"
                 })
-            }), S.intl.format(S.t["5Wk9+o"], {
+            }), N.intl.format(N.t["5Wk9+o"], {
                 time: (0, w.aK)(n)
             })]
         }) : (0, l.jsxs)(l.Fragment, {
@@ -148,7 +148,7 @@ function k(e) {
                 className: y.my,
                 user: c,
                 size: r._3J.SIZE_16
-            }), S.intl.format(S.t["GFDmd/"], {
+            }), N.intl.format(N.t["GFDmd/"], {
                 authorHook: (e, t) => (0, l.jsx)(r.gyj, {
                     className: y.eS,
                     colorString: u?.colorString ?? null,
@@ -158,7 +158,7 @@ function k(e) {
             }), (0, l.jsx)("span", {
                 className: y.xE,
                 children: "•"
-            }), S.intl.format(S.t["5Wk9+o"], {
+            }), N.intl.format(N.t["5Wk9+o"], {
                 time: (0, w.aK)(n)
             })]
         })
