@@ -2,10 +2,10 @@
 r.d(t, {
     A: () => v
 });
-var i = r(627968);
+var n = r(627968);
 r(64700);
-var n = r(503698),
-    a = r.n(n),
+var i = r(503698),
+    a = r.n(i),
     s = r(989349),
     l = r.n(s),
     o = r(311907),
@@ -26,11 +26,11 @@ function A(e) {
     let {
         defaultPriceString: t,
         subscriptionPlan: r,
-        discountOffer: n
+        discountOffer: i
     } = e, a = (0, p.N1)(r);
-    return (0, i.jsx)(i.Fragment, {
+    return (0, n.jsx)(n.Fragment, {
         children: f.intl.format(f.t.sJTwHQ, {
-            numMonths: n.discount.user_usage_limit ?? h.OJ,
+            numMonths: i.discount.user_usage_limit ?? h.OJ,
             discountedPrice: a,
             regularPrice: t
         })
@@ -41,7 +41,7 @@ function v(e) {
     let {
         isGift: t,
         premiumTier: r,
-        offerTierMatchesCard: n,
+        offerTierMatchesCard: i,
         offerType: s,
         showYearlyPrice: p,
         priceOptions: v,
@@ -57,7 +57,7 @@ function v(e) {
         let e = null != M.trialEndsAt ? l()(M?.trialEndsAt).diff(l()(), "d") : 0,
             t = h.hd[M.planIdFromItems],
             r = m.Ay.formatPriceString(m.Ay.getDefaultPrice(t.id), t.interval);
-        return (0, i.jsx)(c.Heading, {
+        return (0, n.jsx)(c.Heading, {
             variant: y,
             color: C,
             className: a()(j.K, E),
@@ -74,9 +74,9 @@ function v(e) {
             })
         })
     }
-    if (!P && !t && n) {
+    if (!P && !t && i) {
         let e = m.Ay.formatPriceString(m.Ay.getDefaultPrice(r === h.PremiumTypes.TIER_0 ? h.gD.PREMIUM_MONTH_TIER_0 : h.gD.PREMIUM_MONTH_TIER_2), h.WT.MONTH);
-        if (s === h.Vk.PREMIUM_TRIAL) return (0, i.jsx)(c.Heading, {
+        if (s === h.Vk.PREMIUM_TRIAL) return (0, n.jsx)(c.Heading, {
             variant: y,
             color: C,
             className: a()(j.K, E),
@@ -90,19 +90,19 @@ function v(e) {
                 price: e
             })
         });
-        if (null != G) return (0, i.jsx)(c.Heading, {
+        if (null != G) return (0, n.jsx)(c.Heading, {
             variant: y,
             color: C,
             className: a()(j.K, E),
-            children: (0, i.jsx)(A, {
+            children: (0, n.jsx)(A, {
                 defaultPriceString: e,
                 subscriptionPlan: h.gD.PREMIUM_MONTH_TIER_2,
                 discountOffer: G
             })
         })
     }
-    return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(I.A, {
+    return (0, n.jsxs)(n.Fragment, {
+        children: [(0, n.jsx)(I.A, {
             subscriptionTier: w,
             isGift: t,
             className: null != _ ? _ : j.q,
@@ -110,7 +110,7 @@ function v(e) {
             variant: R,
             isApplicationHome: P,
             enablePremiumBrandRefresh: N
-        }), p && (0, i.jsx)(I.A, {
+        }), p && (0, n.jsx)(I.A, {
             subscriptionTier: w,
             interval: h.WT.YEAR,
             className: null != _ ? _ : j.q,

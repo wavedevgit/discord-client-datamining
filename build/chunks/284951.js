@@ -7,125 +7,125 @@ r.d(t, {
     ku: () => c,
     z9: () => o
 });
-var i = r(397927),
-    n = r(252424),
+var n = r(397927),
+    i = r(252424),
     a = r(927578),
     s = r(788868),
     l = r(985018);
 let o = [{
-        Icon: i.A9s,
+        Icon: n.A9s,
         getText: () => l.intl.string(l.t.kpMomJ)
     }, {
-        Icon: i.A9s,
+        Icon: n.A9s,
         getText: () => l.intl.formatToPlainString(l.t.p8QVLT, {
             maxUploadPremium: (0, a.EJ)(s.PremiumTypes.TIER_2, {
                 useSpace: !1
             })
         })
     }, {
-        Icon: i.A9s,
+        Icon: n.A9s,
         getText: () => l.intl.string(l.t.W180bY)
     }, {
-        Icon: i.A9s,
+        Icon: n.A9s,
         getText: () => l.intl.string(l.t.zTk8Ul)
     }],
     c = [{
-        Icon: i._Jp,
+        Icon: n._Jp,
         getText: function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "en-US";
             return l.intl.formatToPlainString(l.t["T9RTr/"], {
                 numBoosts: s.M4,
-                percentageOff: (0, n.l9)(e, s.oX / 100)
+                percentageOff: (0, i.l9)(e, s.oX / 100)
             })
         }
     }, {
-        Icon: i.JMY,
+        Icon: n.JMY,
         getText: () => l.intl.formatToPlainString(l.t.p8QVLT, {
             maxUploadPremium: (0, a.EJ)(s.PremiumTypes.TIER_2, {
                 useSpace: !1
             })
         })
     }, {
-        Icon: i.nm2,
+        Icon: n.nm2,
         getText: () => l.intl.string(l.t.KjrZ8Z)
     }, {
-        Icon: i.Fzq,
+        Icon: n.Fzq,
         getText: () => l.intl.string(l.t.W180bY)
     }, {
-        Icon: i.clX,
+        Icon: n.clX,
         getText: () => l.intl.string(l.t.CNIZfy)
     }],
     d = [{
-        Icon: i.JMY,
+        Icon: n.JMY,
         getText: () => l.intl.formatToPlainString(l.t.p8QVLT, {
             maxUploadPremium: (0, a.EJ)(s.PremiumTypes.TIER_2, {
                 useSpace: !1
             })
         })
     }, {
-        Icon: i.nm2,
+        Icon: n.nm2,
         getText: () => l.intl.string(l.t.KjrZ8Z)
     }, {
-        Icon: i.it9,
+        Icon: n.it9,
         getText: () => l.intl.string(l.t["taMwg/"])
     }, {
-        Icon: i.Fzq,
+        Icon: n.Fzq,
         getText: () => l.intl.string(l.t.W180bY)
     }, {
-        Icon: i.clX,
+        Icon: n.clX,
         getText: () => l.intl.string(l.t.CNIZfy)
     }],
     u = [{
-        Icon: i.JMY,
+        Icon: n.JMY,
         getText: () => l.intl.formatToPlainString(l.t.p8QVLT, {
             maxUploadPremium: (0, a.EJ)(s.PremiumTypes.TIER_2, {
                 useSpace: !1
             })
         })
     }, {
-        Icon: i.nm2,
+        Icon: n.nm2,
         getText: () => l.intl.string(l.t.KjrZ8Z)
     }, {
-        Icon: i.it9,
+        Icon: n.it9,
         getText: () => l.intl.string(l.t["taMwg/"])
     }, {
-        Icon: i.Fzq,
+        Icon: n.Fzq,
         getText: () => l.intl.string(l.t.W180bY)
     }, {
-        Icon: i._Jp,
+        Icon: n._Jp,
         getText: () => l.intl.string(l.t.cdfuUU)
     }, {
-        Icon: i.clX,
+        Icon: n.clX,
         getText: () => l.intl.string(l.t.CNIZfy)
     }],
     m = [{
-        Icon: i.A9s,
+        Icon: n.A9s,
         getText: () => l.intl.string(l.t.KjrZ8Z)
     }, {
-        Icon: i.A9s,
+        Icon: n.A9s,
         getText: () => l.intl.formatToPlainString(l.t.p8QVLT, {
             maxUploadPremium: (0, a.EJ)(s.PremiumTypes.TIER_0, {
                 useSpace: !1
             })
         })
     }, {
-        Icon: i.A9s,
+        Icon: n.A9s,
         getText: () => l.intl.string(l.t.Uukj4o)
     }],
     x = [{
-        Icon: i.JMY,
+        Icon: n.JMY,
         getText: () => l.intl.formatToPlainString(l.t.p8QVLT, {
             maxUploadPremium: (0, a.EJ)(s.PremiumTypes.TIER_0, {
                 useSpace: !1
             })
         })
     }, {
-        Icon: i.nm2,
+        Icon: n.nm2,
         getText: () => l.intl.string(l.t.KjrZ8Z)
     }, {
-        Icon: i.it9,
+        Icon: n.it9,
         getText: () => l.intl.string(l.t["taMwg/"])
     }, {
-        Icon: i.tvc,
+        Icon: n.tvc,
         getText: () => l.intl.string(l.t["8ukxAW"])
     }]

@@ -18,7 +18,7 @@ function _(e) {
         analyticsSource: t,
         onLearnMore: _,
         ...u
-    } = e, m = r.pe.TIER_2, A = c.intl.format(c.t.hDMlqD, {
+    } = e, m = r.pe.TIER_2, p = c.intl.format(c.t.hDMlqD, {
         onLearnMore: function() {
             _?.(), n(), (0, s.e)()
         }
@@ -28,8 +28,8 @@ function _(e) {
         artContainerClassName: o.z,
         type: r.e.VIDEO_BACKGROUNDS_MODAL,
         title: c.intl.string(c.t.fHqiDW),
-        body: A,
-        glowUp: A,
+        body: p,
+        glowUp: p,
         analyticsSource: t,
         analyticsLocation: {
             page: l.liQ.PREMIUM_UPSELL_MODAL_VIDEO_BACKGROUNDS,

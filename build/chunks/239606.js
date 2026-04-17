@@ -34,8 +34,8 @@ var t = l(627968),
     S = l(101928),
     L = l(837529),
     k = l(346713),
-    D = l(672691),
-    U = l(195898),
+    U = l(672691),
+    D = l(195898),
     G = l(486678),
     M = l(567915),
     F = l(716804),
@@ -106,9 +106,9 @@ function eE(e) {
         isLoading: _ = !1
     } = e, R = n.id === l.id, O = i.useRef(null), {
         isHoveringOrFocusing: S
-    } = (0, h.A)(O), [L, U] = i.useState(), G = i.useCallback(e => {
+    } = (0, h.A)(O), [L, D] = i.useState(), G = i.useCallback(e => {
         let n = e.contentRect.width;
-        n <= 350 ? U("compact-xs") : n <= 380 ? U("compact-sm") : U(void 0)
+        n <= 350 ? D("compact-xs") : n <= 380 ? D("compact-sm") : D(void 0)
     }, []);
     (0, c.g)(O, G, [], {
         fireOnMount: !0
@@ -130,7 +130,7 @@ function eE(e) {
         {
             appIdentities: eu,
             connections: ep
-        } = (0, D.A)(n.id),
+        } = (0, U.A)(n.id),
         eA = (0, k.A)(n.id),
         ex = P ? ef.A : z.A,
         eh = P ? eg.A : V.A;
@@ -310,7 +310,7 @@ function eT(e) {
     }), {
         profileThemeStyle: d,
         profileThemeClassName: c
-    } = (0, U.A)({
+    } = (0, D.A)({
         theme: a,
         themeType: null,
         primaryColor: r,
@@ -340,8 +340,8 @@ function eP(e) {
         openedAt: T,
         onClose: S,
         sourceAnalyticsLocations: k = [],
-        themeContainerClassName: D
-    } = e, U = n.id === l.id, {
+        themeContainerClassName: U
+    } = e, D = n.id === l.id, {
         guildId: V,
         pendingGuildId: B,
         isLoading: z,
@@ -356,7 +356,7 @@ function eP(e) {
     let K = (0, O.Ay)(n.id, V),
         $ = (0, x.A)(K?.profileFrame?.skuId, "UserProfileModalV2"),
         X = (0, R.X)("UserProfileModalV2"),
-        Y = U && X,
+        Y = D && X,
         {
             pendingThemeColors: Z,
             avatarDecorationOverride: J,
@@ -494,7 +494,7 @@ function eP(e) {
                                     children: [(0, t.jsxs)("div", {
                                         className: ey.modalHeaderButtons,
                                         children: [(0, t.jsx)(ea.A, {
-                                            isCurrentUser: U,
+                                            isCurrentUser: D,
                                             onClose: S
                                         }), (0, t.jsx)(o.AC4, {
                                             children: (0, t.jsx)(o.H, {
@@ -523,7 +523,7 @@ function eP(e) {
                                         collapseButtonRef: eg,
                                         isLoading: z
                                     }) : null), (0, t.jsxs)(ee.A, {
-                                        className: a()(D, ey.profileContentContainer),
+                                        className: a()(U, ey.profileContentContainer),
                                         user: n,
                                         displayProfile: K,
                                         themeType: eI.d.MODAL_V2,

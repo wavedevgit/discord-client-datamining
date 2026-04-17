@@ -2,8 +2,8 @@
 r.d(t, {
     K: () => m
 });
-var i = r(627968),
-    n = r(311907),
+var n = r(627968),
+    i = r(311907),
     a = r(397927),
     s = r(775602),
     l = r(937008),
@@ -13,7 +13,7 @@ var i = r(627968),
     u = r(731113);
 
 function m() {
-    let e = (0, n.bG)([s.A], () => s.A.useReducedMotion),
+    let e = (0, i.bG)([s.A], () => s.A.useReducedMotion),
         {
             claimableRewards: t
         } = (0, l.Pv)(),
@@ -24,23 +24,23 @@ function m() {
         g = (0, c.K5)(m.gradientConfig, {
             defaultAngle: 180
         });
-    return (0, i.jsxs)("div", {
+    return (0, n.jsxs)("div", {
         className: u.us,
         style: x ?? g,
-        children: [(0, i.jsxs)("div", {
+        children: [(0, n.jsxs)("div", {
             className: u.ZR,
-            children: [(0, i.jsx)(a.Text, {
+            children: [(0, n.jsx)(a.Text, {
                 variant: "text-sm/semibold",
                 color: "always-white",
                 children: m.heading()
-            }), null != m.subheading && (0, i.jsx)(a.Text, {
+            }), null != m.subheading && (0, n.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 color: "always-white",
                 children: m.subheading(t.length)
             })]
-        }), (0, i.jsx)("div", {
+        }), (0, n.jsx)("div", {
             className: u.my,
-            children: (0, i.jsx)(d.A, {
+            children: (0, n.jsx)(d.A, {
                 maxRewardImageSrc: m.getImageUrl(!0, e),
                 claimableRewards: t,
                 size: a._3J.SIZE_80

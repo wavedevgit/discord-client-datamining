@@ -51,9 +51,9 @@ function N(e) {
         disabled: v
     } = e, {
         newestAnalyticsLocation: N
-    } = (0, o.Ay)(), y = null != l, C = (0, x.Ay)(n, l), b = (0, s.bG)([A.A], () => A.A.getPendingChanges(l ?? void 0).pendingBanner), E = (0, s.bG)([m.default], () => m.default.getCurrentUser()?.banner != null), T = null === b, P = void 0 !== b, _ = y && (C?.isUsingGuildMemberBanner() ?? !1), R = T && y ? E : (0, c.Ac)(b, C?.banner), O = y ? _ : C?.banner != null, S = P ? null != b : O, L = C?.getPreviewBanner(b, !1, 296) ?? void 0, k = (0, r.rdh)(a.A.unsafe_rawColors.PRIMARY_800).hex(), D = C?.primaryColor ?? (0, i.LX)(k), {
-        hex: U
-    } = (0, d.A)(D), G = () => (0, u.XD)({
+    } = (0, o.Ay)(), y = null != l, C = (0, x.Ay)(n, l), b = (0, s.bG)([A.A], () => A.A.getPendingChanges(l ?? void 0).pendingBanner), E = (0, s.bG)([m.default], () => m.default.getCurrentUser()?.banner != null), T = null === b, P = void 0 !== b, _ = y && (C?.isUsingGuildMemberBanner() ?? !1), R = T && y ? E : (0, c.Ac)(b, C?.banner), O = y ? _ : C?.banner != null, S = P ? null != b : O, L = C?.getPreviewBanner(b, !1, 296) ?? void 0, k = (0, r.rdh)(a.A.unsafe_rawColors.PRIMARY_800).hex(), U = C?.primaryColor ?? (0, i.LX)(k), {
+        hex: D
+    } = (0, d.A)(U), G = () => (0, u.XD)({
         uploadType: f.HL.BANNER,
         analyticsSource: N,
         guildId: l ?? void 0,
@@ -61,7 +61,7 @@ function N(e) {
     }), M = null != L ? (0, t.jsx)(I, {
         src: L
     }) : (0, t.jsx)(j, {
-        backgroundColor: U
+        backgroundColor: D
     });
     if (!R) return (0, t.jsx)(g.kL, {
         variant: "square",
