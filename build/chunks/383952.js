@@ -142,6 +142,7 @@ function w(e) {
                             color: es,
                             className: M
                         }) : (0, a.jsx)(r.F0F, {
+                            autoPause: !0,
                             allowAnimationWhileUnfocused: !0,
                             defaultViewModelInstance: et ? "Off" : "On",
                             dataBinding: {

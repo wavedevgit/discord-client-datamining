@@ -33,6 +33,7 @@ function o(e) {
                 type: "rive",
                 asset: n.MX_,
                 riveProps: {
+                    autoPause: !0,
                     dataBinding: {
                         fill: "currentColor"
                     }

@@ -29,6 +29,7 @@ function m(e) {
             (0, o.X)(r, o.O.DISCONNECT), n()
         },
         icon: (0, i.jsx)(a.AYu, {
+            autoPause: !0,
             eventTargetRef: d,
             dataBinding: {
                 fill: "currentColor"

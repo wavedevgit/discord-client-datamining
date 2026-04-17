@@ -81,6 +81,7 @@ function j(e) {
                             color: O,
                             className: A
                         }) : (0, a.jsx)(r.Wtl, {
+                            autoPause: !0,
                             defaultViewModelInstance: E ? "Off" : "On",
                             allowAnimationWhileUnfocused: !0,
                             className: l()(r.d5l.refresh_sm, A),

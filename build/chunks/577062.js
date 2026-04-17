@@ -26,6 +26,7 @@ function u(e) {
     } = e, {
         parentAnalyticsLocation: x
     } = (0, a.Ay)(), I = u || h || A, C = _ ? d.l : d.A, N = (0, r.A)(u, h, A, m), T = l.useRef(null), S = (t = I, n = T, l.useMemo(() => (0, i.jsx)(s.F0F, {
+        autoPause: !0,
         defaultViewModelInstance: t ? "Off" : "On",
         allowAnimationWhileUnfocused: !0,
         eventTargetRef: n,

@@ -106,6 +106,7 @@ function T(e) {
             themeable: T,
             label: R ? N.intl.string(N.t["Ox4/zU"]) : j ? N.intl.string(N.t["+YBKYI"]) : O ? N.intl.string(N.t.X1lQli) : void 0,
             iconComponent: (0, i.jsx)(o.gZH, {
+                autoPause: !0,
                 eventTargetRef: W,
                 className: o.d5l.refresh_sm,
                 dataBinding: {

@@ -21,7 +21,7 @@ let A = new Set,
     f = {},
     S = {};
 
-function E(e, t) {
+function _(e, t) {
     let n = f[e];
     null != n && null != t && n.has(t) && C.Ay.isOptInEnabled(e) && !h.A.getChannel(t)?.isThread() && null == g.Ay.ackMessageId(t) && s.h.wait(() => (0, l.ack)(t, {
         object: y.ZSU.ACK_RECENT_CHANNEL_NEW_CHANNEL_VIEWED,
@@ -29,7 +29,7 @@ function E(e, t) {
     }, !0, !0, I.default.atPreviousMillisecond(t)))
 }
 
-function _(e) {
+function E(e) {
     if (null != f[e]) return;
     let t = o.Ay.getChannels(e)[o.I6].map(e => e.channel.id),
         n = u.Ay.getMember(e, d.default.getId())?.joinedAt;
@@ -54,12 +54,12 @@ class w extends i.Ay.Store {
         this.waitFor(d.default, h.A, o.Ay, u.Ay, c.A, g.Ay, C.Ay, a.A), this.syncWith([C.Ay], v)
     }
     getNewChannelIds(e) {
-        return null != e && null == f[e] && _(e), null != e ? f[e] ?? A : A
+        return null != e && null == f[e] && E(e), null != e ? f[e] ?? A : A
     }
     shouldIndicateNewChannel(e, t) {
         if (null == e) return !1;
         let n = c.A.getGuild(e);
-        return null != n && !!n.features.has(y.GuildFeatures.COMMUNITY) && (null != e && null == f[e] && _(e), f[e]?.has(t) && null == g.Ay.getTrackedAckMessageId(t))
+        return null != n && !!n.features.has(y.GuildFeatures.COMMUNITY) && (null != e && null == f[e] && E(e), f[e]?.has(t) && null == g.Ay.getTrackedAckMessageId(t))
     }
 }
 let m = new w(s.h, {
@@ -77,7 +77,7 @@ let m = new w(s.h, {
             guildId: t,
             channelId: n
         } = e;
-        return null != t && (null == f[t] || S[t] < Date.now() - p.A.Millis.HOUR ? (_(t), !0) : (null != n && E(t, n), !1))
+        return null != t && (null == f[t] || S[t] < Date.now() - p.A.Millis.HOUR ? (E(t), !0) : (null != n && _(t, n), !1))
     },
     SIDEBAR_VIEW_CHANNEL: function(e) {
         let {
@@ -85,14 +85,14 @@ let m = new w(s.h, {
             channelId: n,
             sidebarType: i
         } = e;
-        return null != t && i === r.PE.VIEW_CHANNEL && (E(t, n), !1)
+        return null != t && i === r.PE.VIEW_CHANNEL && (_(t, n), !1)
     },
     SIDEBAR_VIEW_GUILD: function(e) {
         let {
             guildId: t,
             baseChannelId: n
         } = e;
-        return null != t && (E(t, n), !1)
+        return null != t && (_(t, n), !1)
     },
     GUILD_DELETE: function(e) {
         let {

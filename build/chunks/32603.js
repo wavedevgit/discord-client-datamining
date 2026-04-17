@@ -30,8 +30,8 @@ var i = n(284009),
     A = n(454058),
     f = n(272720),
     S = n(56595),
-    E = n(863005),
-    _ = n(152007),
+    _ = n(863005),
+    E = n(152007),
     v = n(95701),
     w = n(924985),
     m = n(734057),
@@ -170,8 +170,8 @@ class $ {
         return {
             selectedChannel: m.A.getChannel(O.A.getChannelId()),
             selectedVoiceChannelId: O.A.getVoiceChannelId(),
-            activeJoinedRelevantThreads: E.A.getActiveJoinedRelevantThreadsForGuild(this.id),
-            activeJoinedUnreadThreads: E.A.getActiveJoinedUnreadThreadsForGuild(this.id)
+            activeJoinedRelevantThreads: _.A.getActiveJoinedRelevantThreadsForGuild(this.id),
+            activeJoinedUnreadThreads: _.A.getActiveJoinedUnreadThreadsForGuild(this.id)
         }
     }
     invalidate() {
@@ -758,7 +758,7 @@ function eg(e, t, n, i, s) {
         a = null != n && n.isThread() && n.parent_id === e.id;
     if (v.wE.has(e.type)) {
         let e = r().sortBy(Object.values(t), e => -e.joinTimestamp).map(e => e.channel.id);
-        return l ? e : a ? (n.id in t || e.unshift(n.id), e) : s ? e.filter(e => !_.A.isMuted(e) || b.Ay.getMentionCount(e) > 0) : e
+        return l ? e : a ? (n.id in t || e.unshift(n.id), e) : s ? e.filter(e => !E.A.isMuted(e) || b.Ay.getMentionCount(e) > 0) : e
     }
     return []
 }
