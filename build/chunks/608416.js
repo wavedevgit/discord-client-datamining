@@ -9,7 +9,7 @@ n.d(t, {
 });
 var i, r, a = n(627968),
     s = n(64700),
-    l = n(407045),
+    l = n(825638),
     o = n(397927),
     c = n(396583);
 let d = 3e3,
@@ -66,7 +66,7 @@ let A = e => {
         onRest: () => x(e => -1 * e)
     } : {
         blur: 0
-    }), C = (0, s.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), [N, v] = (0, s.useState)(0), [E, T] = (0, s.useState)(1), j = (0, o.zhh)({
+    }), C = (0, s.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), [N, E] = (0, s.useState)(0), [v, T] = (0, s.useState)(1), j = (0, o.zhh)({
         xOffset: N,
         config: {
             tension: 10,
@@ -75,7 +75,7 @@ let A = e => {
         }
     });
     return ((0, c.A)(() => {
-        v(E * (.5 * Math.random() * 5 + 2.5)), T(e => -1 * e)
+        E(v * (.5 * Math.random() * 5 + 2.5)), T(e => -1 * e)
     }, C), u) ? m : (0, a.jsx)(l.animated.div, {
         style: {
             transform: p.y?.to(e => {

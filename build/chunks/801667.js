@@ -1,6 +1,6 @@
 /** chunk id: 801667 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => E
 });
 var i = n(64700),
     l = n(311907),
@@ -14,29 +14,23 @@ var i = n(64700),
     h = n(576705),
     m = n(927813),
     A = n(661191),
-    g = n(302909),
-    _ = n(342220),
-    p = n(652215);
-let f = 90 * m.A.Millis.DAY,
-    E = 14 * m.A.Millis.DAY;
+    g = n(342220),
+    _ = n(652215);
+let p = 90 * m.A.Millis.DAY,
+    f = 14 * m.A.Millis.DAY;
 
-function C(e) {
+function E(e) {
     let t = (0, l.bG)([d.A], () => d.A.getGuild(e.guild_id)),
         n = (0, l.bG)([c.A], () => c.A.getMemberCount(t?.id) ?? 0),
         m = (0, l.bG)([u.A], () => u.A.getLastMessage(e.id)),
-        C = (0, l.bG)([h.A], () => null != t && h.A.can(p.xBc.ADMINISTRATOR, t)),
-        x = (0, l.bG)([o.A], () => o.A.getGuildAffinity(e.guild_id)?.score),
-        S = (0, l.bG)([r.A], () => r.A.hasConsented(p.YAq.PERSONALIZATION)),
-        I = (0, _.A)(),
-        {
-            enabled: T
-        } = g.A.useConfig({
-            location: "useIsEligibleForFirstBoosterUpsell"
-        }),
-        [N] = (0, a.Wl)(s.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
+        E = (0, l.bG)([h.A], () => null != t && h.A.can(_.xBc.ADMINISTRATOR, t)),
+        C = (0, l.bG)([o.A], () => o.A.getGuildAffinity(e.guild_id)?.score),
+        x = (0, l.bG)([r.A], () => r.A.hasConsented(_.YAq.PERSONALIZATION)),
+        S = (0, g.A)(),
+        [I] = (0, a.Wl)(s.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
             cooldownDurationMs: 0,
             numTimesToRecur: 3
         }),
-        v = N === s.M.FIRST_BOOSTER_UPSELL_OVERSEER;
-    return i.useMemo(() => !(!T || !v || !S || null == x || x <= 17.06 || e.type !== p.rbe.GUILD_TEXT || null == t || A.default.age(t.id) < f || null == t.premiumSubscriberCount || 0 !== t.premiumSubscriberCount || n < 10 || m?.id == null || A.default.age(m.id) > E) && (C || I), [T, v, S, e.type, t, n, x, m?.id, C, I])
+        T = I === s.M.FIRST_BOOSTER_UPSELL_OVERSEER;
+    return i.useMemo(() => !(!T || !x || null == C || C <= 17.06 || e.type !== _.rbe.GUILD_TEXT || null == t || A.default.age(t.id) < p || null == t.premiumSubscriberCount || 0 !== t.premiumSubscriberCount || n < 10 || m?.id == null || A.default.age(m.id) > f) && (E || S), [T, x, e.type, t, n, C, m?.id, E, S])
 }

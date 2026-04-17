@@ -24,8 +24,8 @@ var r = n(503698),
     R = n(927578),
     C = n(40185),
     N = n(89366),
-    v = n(881489),
-    E = n(422936),
+    E = n(881489),
+    v = n(422936),
     T = n(234419),
     j = n(549996),
     I = n(371764),
@@ -52,7 +52,7 @@ let K = e => {
             fpEndsAt: t,
             className: n,
             buttonVisibilityRef: r
-        } = e, s = (0, v.Zb)(t);
+        } = e, s = (0, E.Zb)(t);
         return (0, i.jsx)("div", {
             className: a()(Y.kL, n),
             ref: r,
@@ -119,17 +119,17 @@ let K = e => {
             buttonVisibilityRef: C
         } = q(), {
             analyticsLocations: N
-        } = (0, m.Ay)(_.A.PREMIUM_MARKETING_HERO_CTA), v = (0, j.c)(s.C.MARKETING_PAGE_BANNER), y = null;
-        null != v && "marketingPageBanner" === v.properties.properties.oneofKind ? y = (0, i.jsx)(I.x, {
-            componentId: v.id,
-            promotionBannerMarketingComponentFields: v.properties.properties.marketingPageBanner
+        } = (0, m.Ay)(_.A.PREMIUM_MARKETING_HERO_CTA), E = (0, j.c)(s.C.MARKETING_PAGE_BANNER), y = null;
+        null != E && "marketingPageBanner" === E.properties.properties.oneofKind ? y = (0, i.jsx)(I.x, {
+            componentId: E.id,
+            promotionBannerMarketingComponentFields: E.properties.properties.marketingPageBanner
         }) : r ? y = (0, i.jsx)(S.A, {
             variant: S.c.SUBSCRIBER_HOME
         }) : l ? y = (0, i.jsx)(B.A, {}) : c && (y = (0, i.jsx)(M.S, {}));
         let k = (0, o.bG)([h.A], () => h.A.getPremiumTypeSubscription()),
             G = null != k && k.status === F.Dmq.CANCELED && null != b,
             X = (0, T.V)(),
-            Z = (0, E.O)(),
+            Z = (0, v.O)(),
             $ = (0, D.U9)(Z, z.pe.TIER_2) ? z.pe.TIER_2 : void 0,
             Q = null != k && k.status !== F.Dmq.ACCOUNT_HOLD && k.hasAnyPremiumNitro,
             J = (0, A.A)(),
@@ -214,11 +214,11 @@ let K = e => {
             discountedPrice: a
         } = e, {
             analyticsLocations: s
-        } = (0, m.Ay)(_.A.PREMIUM_MARKETING_HERO_CTA), l = (0, v.ds)(), o = (0, C.cg)(), d = (0, N.QQ)(), u = W.intl.string(W.t.qYKftX), g = (0, y.m)(), f = W.intl.string(W.t.ifwQZb), {
+        } = (0, m.Ay)(_.A.PREMIUM_MARKETING_HERO_CTA), l = (0, E.ds)(), o = (0, C.cg)(), d = (0, N.QQ)(), u = W.intl.string(W.t.qYKftX), g = (0, y.m)(), f = W.intl.string(W.t.ifwQZb), {
             fractionalState: h,
             endsAt: b
-        } = (0, A.A)(), R = (0, p.Ay)(b, p.yE.CREDITS_ENDS_IN), E = null;
-        if (h === z.xc.NONE || l) E = (0, i.jsx)(k.A, {
+        } = (0, A.A)(), R = (0, p.Ay)(b, p.yE.CREDITS_ENDS_IN), v = null;
+        if (h === z.xc.NONE || l) v = (0, i.jsx)(k.A, {
             enablePremiumBrandRefresh: !0,
             text: u
         });
@@ -227,7 +227,7 @@ let K = e => {
             let e = W.intl.format(W.t["yR+oDD"], {
                 helpCenterLink: x.A.getArticleURL(F.MVz.FRACTIONAL_PREMIUM_ABOUT)
             });
-            E = (0, i.jsx)(c.A, {
+            v = (0, i.jsx)(c.A, {
                 text: e,
                 "aria-label": e.toString(),
                 tooltipClassName: Y.YL,
@@ -250,7 +250,7 @@ let K = e => {
             children: (0, i.jsx)(Z.Provider, {
                 value: {
                     headingText: f,
-                    headingTop: E,
+                    headingTop: v,
                     showPill: d,
                     userDiscountOffer: r,
                     discountedPrice: a,

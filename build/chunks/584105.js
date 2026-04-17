@@ -1,5 +1,4 @@
 /** chunk id: 584105 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     IG: "streamerModeEnabled_aa3ffd",
     ch: "userSettingsStreamerModeEnabled_aa3ffd",

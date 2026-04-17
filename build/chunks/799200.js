@@ -1,11 +1,11 @@
 /** chunk id: 799200 params = (module,exports,require) **/
-a.d(t, {
+l.d(t, {
     U: () => s
 });
-var l = a(221997),
-    r = a(480773),
-    n = a(966739);
+var a = l(221997),
+    r = l(480773),
+    n = l(966739);
 let s = {
     title: "Featured Blocks",
-    stories: [l.Q, r.u, n.V]
+    stories: [a.Q, r.u, n.V]
 }

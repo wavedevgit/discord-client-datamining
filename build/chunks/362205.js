@@ -1,7 +1,7 @@
 /** chunk id: 362205 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => N
+    A: () => b
 });
 var r = n(627968),
     i = n(64700),
@@ -9,7 +9,7 @@ var r = n(627968),
     s = n.n(a),
     l = n(284009),
     o = n.n(l),
-    u = n(407045),
+    u = n(825638),
     c = n(837381),
     d = n(935399),
     h = n(319354),
@@ -25,7 +25,7 @@ var r = n(627968),
     x = n(890690),
     A = n(429566);
 
-function b(e) {
+function N(e) {
     let {
         category: t,
         onClick: n,
@@ -51,7 +51,7 @@ function b(e) {
     })
 }
 
-function N(e) {
+function b(e) {
     let {
         active: t,
         visibleCategories: n,
@@ -174,7 +174,7 @@ function C(e) {
             ref: y
         }), a.map(e => {
             let t = (0, v.H)(e.key, s, l);
-            return (0, r.jsx)(b, {
+            return (0, r.jsx)(N, {
                 onClick: () => {
                     var t;
                     return t = e.key, void g.A.navigate(t, {

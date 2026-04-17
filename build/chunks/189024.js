@@ -23,8 +23,8 @@ var i = n(627968),
     R = n(341915),
     C = n(245853),
     N = n(890687),
-    v = n(590202),
-    E = n(976860),
+    E = n(590202),
+    v = n(976860),
     T = n(591179),
     j = n(462463),
     I = n(780964),
@@ -84,11 +84,11 @@ function es() {
             analyticsLocations: e
         }))
     }, [e]), ef = (0, r.useCallback)(() => {
-        (0, S.openUserSettings)(I.X.DISPLAY_IN_APP_ICON_CATEGORY)
+        (0, S.openUserSettings)(I.X.APPEARANCE_IN_APP_ICON_CATEGORY)
     }, []), eh = (0, r.useCallback)(() => {
         null != e_ && (e_.userStatus?.enrolledAt == null ? (0, b.Oy)(e_.id, {
             questContent: R.uF.NITRO_HOME_PERK_CARD,
-            questContentCTA: v.Cy.START_QUEST,
+            questContentCTA: E.Cy.START_QUEST,
             sourceQuestContent: R.uF.NITRO_HOME_PERK_CARD
         }).then(e => {
             switch (e.type) {
@@ -127,8 +127,8 @@ function es() {
         shouldShowBonusOrbsUX: eC,
         multiplier: eN
     } = (0, C.Dl)(z.rE.NITRO_HOME_MARKETING), {
-        currentDate: ev,
-        nDaysInMonth: eE
+        currentDate: eE,
+        nDaysInMonth: ev
     } = (0, r.useMemo)(() => {
         let e = new Date;
         return {
@@ -158,7 +158,7 @@ function es() {
                     termsUrl: M.A.getArticleURL(H.MVz.LOGITECH_PROMOTION)
                 }),
                 subscriptionRequired: !0,
-                progress: ev.getDate() / eE,
+                progress: eE.getDate() / ev,
                 ctaText: K.intl.string(K.t.w7s5Qr),
                 onCtaClick: () => (0, D.P)({
                     partnerId: U.XY
@@ -202,7 +202,7 @@ function es() {
                     alt: "SteelSeries"
                 }),
                 backgroundAssetUrl: en.A,
-                progress: ev.getDate() / eE,
+                progress: eE.getDate() / ev,
                 ctaText: K.intl.string(K.t.w7s5Qr),
                 onCtaClick: () => (0, k.u)({
                     analyticsLocations: e,
@@ -218,7 +218,7 @@ function es() {
                 pillText: K.intl.string(K.t.oW0eUd),
                 primaryAsset: Q.A,
                 ctaText: K.intl.string(K.t.jVcuVY),
-                onCtaClick: () => (0, E.pX)(H.BVt.QUEST_HOME),
+                onCtaClick: () => (0, v.pX)(H.BVt.QUEST_HOME),
                 primaryAssetClassName: X.Nf
             } : null, {
                 id: B.DISPLAY_NAME_STYLES_CARD_ID,
@@ -260,5 +260,5 @@ function es() {
             s = (r = r.filter(e => null != e))[0].featured,
             c = s ? 5 : 6;
         return r.splice(+!!s, 0, eR), r.length > c && r.splice(c, r.length - c), r
-    }, [eR, e_, es, eh, el, ec, eC, eN, eE, ev, e, eA, ef, eg, ex, em, t, eo])
+    }, [eR, e_, es, eh, el, ec, eC, eN, ev, eE, e, eA, ef, eg, ex, em, t, eo])
 }

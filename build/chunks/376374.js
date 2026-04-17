@@ -31,7 +31,7 @@ function C(t) {
         icon: r,
         state: o = 0
     } = t, u = null != a ? (0, I._J)(a) : null, c = 1 === o;
-    return 0 === o || c ? (0, l.jsx)(P, {
+    return 0 === o || c ? (0, l.jsx)(N, {
         appId: i,
         skuId: s,
         onClick: t => {
@@ -42,7 +42,7 @@ function C(t) {
         text: null != u ? T.intl.formatToPlainString(T.t.i4T8vz, {
             rate: u
         }) : T.intl.string(T.t.uuzaAK)
-    }) : (0, l.jsx)(N, {
+    }) : (0, l.jsx)(P, {
         text: function(t, i) {
             switch (t) {
                 case 2:
@@ -72,9 +72,9 @@ function f(t) {
     } = (0, o.Ay)(r.A.APP_STOREFRONT), S = (0, A.L)(s.id), p = s.type === _.Puh.DURABLE && S, {
         price: E
     } = s;
-    return null == E ? null : p ? (0, l.jsx)(N, {
+    return null == E ? null : p ? (0, l.jsx)(P, {
         text: T.intl.string(T.t["6cfuDj"])
-    }) : (0, l.jsx)(P, {
+    }) : (0, l.jsx)(N, {
         appId: i,
         skuId: s.id,
         onClick: t => {
@@ -94,7 +94,7 @@ function f(t) {
     })
 }
 
-function P(t) {
+function N(t) {
     let {
         appId: i,
         skuId: e,
@@ -119,7 +119,7 @@ function P(t) {
     })
 }
 
-function N(t) {
+function P(t) {
     let {
         text: i
     } = t;

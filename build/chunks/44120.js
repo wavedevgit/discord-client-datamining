@@ -2,9 +2,9 @@
 n.d(t, {
     A: () => v
 });
-var a = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(835245),
+var a = n(835245),
     i = n(397927),
     r = n(73153),
     s = n(391048),
@@ -14,16 +14,16 @@ var l = n(835245),
     u = n(742810),
     m = n(979286),
     f = n(287809),
-    x = n(954571),
-    h = n(166532),
+    h = n(954571),
+    x = n(166532),
     g = n(301518),
     p = n(652215);
-let _ = new Set([h.pn.REVIEW, h.pn.CONFIRM, h.pn.GIFT_CUSTOMIZATION]);
+let _ = new Set([x.pn.REVIEW, x.pn.CONFIRM, x.pn.GIFT_CUSTOMIZATION]);
 
 function v(e) {
     let t, {
             discoverySessionId: d,
-            skuId: h,
+            skuId: x,
             analyticsLocations: v,
             analyticsObject: b,
             isGift: E = !1,
@@ -34,7 +34,7 @@ function v(e) {
             onComplete: S
         } = e,
         T = !1,
-        y = (0, l.A)(),
+        y = (0, a.A)(),
         L = E ? "gift-payment-modal" : "payment-modal",
         k = f.default.getCurrentUser();
     k?.verified ? (r.h.wait(() => {
@@ -44,7 +44,7 @@ function v(e) {
     }), A({
         loadId: y,
         discoverySessionId: d,
-        skuId: h,
+        skuId: x,
         analyticsLocations: v,
         onStepChange: e => {
             t = e
@@ -63,13 +63,13 @@ function v(e) {
                     location: "CollectiblesPaymentModal",
                     unifiedCheckoutFlow: c.C.COLLECTIBLES_CHECKOUT
                 });
-                x.default.track(p.HAw.PAYMENT_FLOW_CANCELED, {
+                h.default.track(p.HAw.PAYMENT_FLOW_CANCELED, {
                     load_id: y,
                     discovery_session_id: d,
                     payment_type: p.frM[p.VVm.ONE_TIME],
                     location: b,
                     is_gift: E,
-                    sku_id: h,
+                    sku_id: x,
                     location_stack: v,
                     checkout_design: e ? u.rS.UNIFIED : u.rS.LEGACY,
                     checkout_flow: c.C.COLLECTIBLES_CHECKOUT
@@ -89,10 +89,10 @@ function v(e) {
         return t => {
             let {
                 onClose: n,
-                ...l
+                ...a
             } = t;
-            return (0, a.jsx)(e, {
-                ...l,
+            return (0, l.jsx)(e, {
+                ...a,
                 onClose: () => {
                     n(), N?.(!1)
                 }
@@ -104,8 +104,8 @@ let A = e => {
     let {
         loadId: t,
         discoverySessionId: n,
-        skuId: a,
-        analyticsLocations: l,
+        skuId: l,
+        analyticsLocations: a,
         onStepChange: i,
         modalKey: r,
         isGift: s = !1,
@@ -114,14 +114,14 @@ let A = e => {
         giftRecipient: u,
         onClose: m,
         onCloseCallback: f,
-        onCloseRequest: x,
-        onComplete: h
+        onCloseRequest: h,
+        onComplete: x
     } = e;
     return (0, d.Tx)().openCheckoutModal({
         loadId: t,
         discoverySessionId: n,
-        skuId: a,
-        analyticsLocations: l,
+        skuId: l,
+        analyticsLocations: a,
         giftContextProps: {
             isGift: s,
             giftMessage: o,
@@ -129,14 +129,14 @@ let A = e => {
             giftRecipient: u
         },
         onClose: m,
-        onComplete: h,
+        onComplete: x,
         flowSpecificOptions: {
             onStepChange: i
         },
         openModalOptions: {
             modalKey: r,
             onCloseCallback: f,
-            onCloseRequest: x
+            onCloseRequest: h
         }
     })
 }

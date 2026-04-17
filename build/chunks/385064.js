@@ -2,8 +2,8 @@
 n.d(t, {
     A: () => d
 });
-var a = n(284009),
-    l = n.n(a),
+var l = n(284009),
+    a = n.n(l),
     i = n(846293),
     r = n(976860),
     s = n(71393),
@@ -13,19 +13,19 @@ async function d(e) {
     let {
         invite: t,
         guildId: n,
-        channelId: a,
+        channelId: l,
         messageId: d,
         analyticsLocationStack: u
     } = e;
-    l()(u.length > 0, "analyticsLocationStack must have at least one location");
+    a()(u.length > 0, "analyticsLocationStack must have at least one location");
     let m = u[u.length - 1],
         f = null;
     if (null != t && (n = t.guild?.id, f = new Set(t.guild?.features)), null == n) return;
-    let x = s.A.getGuild(n);
-    if (x?.joinedAt == null)
+    let h = s.A.getGuild(n);
+    if (h?.joinedAt == null)
         if (null == f || f.has(c.GuildFeatures.PREVIEW_ENABLED)) return void await (0, o.Z2)(n, {}, {
             shouldNavigate: !0,
-            channelId: a,
+            channelId: l,
             messageId: d,
             joinSource: c.Q4z.GAME_PROFILE_ANNOUNCEMENTS
         }, u);
@@ -36,7 +36,7 @@ async function d(e) {
             },
             skipOnboarding: !0
         });
-    (0, r.pX)(c.BVt.CHANNEL(n, a, d), {
+    (0, r.pX)(c.BVt.CHANNEL(n, l, d), {
         sourceLocationStack: u
     })
 }

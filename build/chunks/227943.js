@@ -1,33 +1,33 @@
 /** chunk id: 227943 params = (module,exports,require) **/
-a.d(t, {
+l.d(t, {
     z: () => c
 });
-var l = a(627968),
-    r = a(397927),
-    n = a(18769),
-    s = a(954644),
-    i = a(261225),
-    o = a(673277),
-    d = a(700263);
+var a = l(627968),
+    r = l(397927),
+    n = l(18769),
+    s = l(954644),
+    i = l(261225),
+    o = l(673277),
+    d = l(700263);
 let c = {
     name: "Skeleton",
     id: "skeleton",
-    component: () => (0, l.jsxs)(l.Fragment, {
-        children: [(0, l.jsx)(r.Text, {
+    component: () => (0, a.jsxs)(a.Fragment, {
+        children: [(0, a.jsx)(r.Text, {
             variant: "text-lg/semibold",
             children: "Skeleton provides a loading placeholder with a shimmer effect while content is being loaded."
-        }), (0, l.jsx)(r.Text, {
+        }), (0, a.jsx)(r.Text, {
             variant: "text-lg/normal",
             children: "Skeleton hides its children and applies a mask over the whole container of the child"
-        }), (0, l.jsx)(r.Text, {
+        }), (0, a.jsx)(r.Text, {
             variant: "text-lg/normal",
             children: "Skeleton always puts a border radius on the shimmer. It might not match the child's radius."
-        }), (0, l.jsxs)(o.A, {
-            children: [(0, l.jsx)(r.Text, {
+        }), (0, a.jsxs)(o.A, {
+            children: [(0, a.jsx)(r.Text, {
                 variant: "text-md/normal",
                 children: "Basic rectangular skeleton"
-            }), (0, l.jsx)(d.A, {
-                children: (0, l.jsx)("div", {
+            }), (0, a.jsx)(d.A, {
+                children: (0, a.jsx)("div", {
                     style: {
                         height: 120,
                         width: "100%",
@@ -35,34 +35,34 @@ let c = {
                     }
                 })
             })]
-        }), (0, l.jsx)(r.Text, {
+        }), (0, a.jsx)(r.Text, {
             variant: "text-lg/normal",
             children: "Here we have a Grid with three Skeleton children that are wrapping three ShopProductCard to simulate a shop loading state"
-        }), (0, l.jsx)(o.A, {
-            children: (0, l.jsxs)(i.A, {
+        }), (0, a.jsx)(o.A, {
+            children: (0, a.jsxs)(i.A, {
                 columns: 3,
-                children: [(0, l.jsx)(d.A, {
-                    children: (0, l.jsx)(s.A, {
+                children: [(0, a.jsx)(d.A, {
+                    children: (0, a.jsx)(s.A, {
                         skuId: "1458472704192811088"
                     })
-                }), (0, l.jsx)(d.A, {
-                    children: (0, l.jsx)(s.A, {
+                }), (0, a.jsx)(d.A, {
+                    children: (0, a.jsx)(s.A, {
                         skuId: "1458472704192811088"
                     })
-                }), (0, l.jsx)(d.A, {
-                    children: (0, l.jsx)(s.A, {
+                }), (0, a.jsx)(d.A, {
+                    children: (0, a.jsx)(s.A, {
                         skuId: "1458472704192811088"
                     })
                 })]
             })
-        }), (0, l.jsx)(r.Text, {
+        }), (0, a.jsx)(r.Text, {
             variant: "text-lg/normal",
             children: "Here we have a Grid with two Skeleton children that are wrapping two FeaturedCollection to simulate a shop loading state"
-        }), (0, l.jsx)(o.A, {
-            children: (0, l.jsxs)(i.A, {
+        }), (0, a.jsx)(o.A, {
+            children: (0, a.jsxs)(i.A, {
                 columns: 2,
-                children: [(0, l.jsx)(d.A, {
-                    children: (0, l.jsx)(n.A, {
+                children: [(0, a.jsx)(d.A, {
+                    children: (0, a.jsx)(n.A, {
                         backgroundImage: {
                             src: "https://cdn.discordapp.com/assets/content/cd657aa88cb5c636a97dd3a5d68debfb009515cdc1c541296c1ac4e3ad5fc63e"
                         },
@@ -75,8 +75,8 @@ let c = {
                         href: "",
                         ctaText: "Take Me There"
                     })
-                }), (0, l.jsx)(d.A, {
-                    children: (0, l.jsx)(n.A, {
+                }), (0, a.jsx)(d.A, {
+                    children: (0, a.jsx)(n.A, {
                         backgroundImage: {
                             src: "https://cdn.discordapp.com/assets/content/cd657aa88cb5c636a97dd3a5d68debfb009515cdc1c541296c1ac4e3ad5fc63e"
                         },

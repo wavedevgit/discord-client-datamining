@@ -1,9 +1,9 @@
 /** chunk id: 476464 params = (module,exports,require) **/
 n.d(t, {
-    _: () => l,
+    _: () => a,
     y: () => i
 });
-let a = (0, n(945810).mj)({
+let l = (0, n(945810).mj)({
     name: "2025-12-game-profiles-v2",
     kind: "user",
     defaultConfig: {
@@ -22,14 +22,14 @@ let a = (0, n(945810).mj)({
     }
 });
 
-function l(e) {
-    return a.useConfig({
+function a(e) {
+    return l.useConfig({
         location: e
     }).enabled
 }
 
 function i(e) {
-    return a.useConfig({
+    return l.useConfig({
         location: e
     }).storeLinksEnabled
 }

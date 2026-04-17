@@ -6,7 +6,7 @@ var r = n(627968),
     l = n(64700),
     a = n(503698),
     i = n.n(a),
-    u = n(407045),
+    u = n(825638),
     s = n(311907),
     o = n(876230),
     c = n(649658),
@@ -98,7 +98,7 @@ let w = {
         l.useLayoutEffect(() => {
             e0.current = performance.now()
         }, []);
-        let [e1, e6] = l.useState(K), [e2, e4] = l.useState(X), [e9, e8] = l.useState(!1), [e7, e3] = l.useState(!1), [e5, te] = l.useState(!1), tt = (0, s.bG)([f.A], () => f.A.useReducedMotion), tn = (0, l.useRef)(null), tr = (0, l.useRef)(null), tl = l.useRef(!0), [ta, ti] = l.useState(null), tu = l.useCallback((e, t) => {
+        let [e1, e6] = l.useState(K), [e2, e9] = l.useState(X), [e4, e8] = l.useState(!1), [e7, e3] = l.useState(!1), [e5, te] = l.useState(!1), tt = (0, s.bG)([f.A], () => f.A.useReducedMotion), tn = (0, l.useRef)(null), tr = (0, l.useRef)(null), tl = l.useRef(!0), [ta, ti] = l.useState(null), tu = l.useCallback((e, t) => {
             B?.(e, t)
         }, [B]), {
             isHlsActive: ts
@@ -431,7 +431,7 @@ let w = {
                         playerState: eR,
                         isControlBarExpanded: tR
                     })
-                }), e9 && eR !== o.Q6.ENDED && null != $ && (0, r.jsxs)(r.Fragment, {
+                }), e4 && eR !== o.Q6.ENDED && null != $ && (0, r.jsxs)(r.Fragment, {
                     children: [(0, r.jsx)(d.DUT, {
                         onClick: () => {
                             eR === o.Q6.PAUSED && tv(o.Q6.PLAYING, o.KB.USER), e8(!1)
@@ -576,12 +576,12 @@ let w = {
                             keyDownHandlerRef: tY,
                             volume: e1,
                             muted: e2,
-                            transcriptEnabled: e9,
+                            transcriptEnabled: e4,
                             captionEnabled: e7,
                             fullScreenEnabled: e5,
                             handlePlaybackBtnClick: tD,
                             handleTranscriptBtnClick: () => {
-                                e8(!e9)
+                                e8(!e4)
                             },
                             handleCaptionBtnClick: () => {
                                 e3(!e7)
@@ -599,7 +599,7 @@ let w = {
                                 e6(e), _?.(e)
                             },
                             onMutedChange: e => {
-                                e4(e), Y?.(e)
+                                e9(e), Y?.(e)
                             }
                         })
                     })]

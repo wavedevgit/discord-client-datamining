@@ -15,23 +15,23 @@ let u = a.createContext(null);
 
 function m(e) {
     var t, m, h;
-    let p, x, f, g, v, j, b, {
+    let p, x, g, f, v, j, b, {
             children: C,
             clip: y,
-            modalContainerRef: N
+            modalContainerRef: A
         } = e,
-        A = y.type === d.nQ.SCREENSHOT,
+        N = y.type === d.nQ.SCREENSHOT,
         {
             initialDuration: E,
             initialCropStart: k,
             initialCropEnd: I,
             initialCurrentTime: S
-        } = (p = y.length / 1e3, x = y.editMetadata?.start ?? 0, f = y.editMetadata?.end ?? 0, g = 0 !== x || 0 !== f && f !== p, {
+        } = (p = y.length / 1e3, x = y.editMetadata?.start ?? 0, g = y.editMetadata?.end ?? 0, f = 0 !== x || 0 !== g && g !== p, {
             initialDuration: p,
             initialCropStart: x,
-            initialCropEnd: f,
-            isCropped: g,
-            initialCurrentTime: g ? x : p / 2
+            initialCropEnd: g,
+            isCropped: f,
+            initialCurrentTime: f ? x : p / 2
         }),
         w = a.useMemo(() => null == r.A.clips.getClipProtocolURLFromPath ? null : r.A.clips.getClipProtocolURLFromPath(y.filepath), [y.filepath]),
         [L, M] = a.useState({
@@ -140,7 +140,7 @@ function m(e) {
         async function e() {
             let e = {},
                 t = v.current;
-            A || null == w || (e = {
+            N || null == w || (e = {
                 thumbnail: await (0, c.m)(w, t.editMetadata.start)
             }), (0, o.Yy)(m, {
                 ...t,
@@ -150,7 +150,7 @@ function m(e) {
         return () => {
             e()
         }
-    }, [m, w, A, v]), a.useEffect(() => {
+    }, [m, w, N, v]), a.useEffect(() => {
         H > 0 && O <= 0 && E <= 0 && M(e => ({
             ...e,
             cropEnd: H
@@ -190,7 +190,7 @@ function m(e) {
         {
             play: ep,
             pause: ex,
-            seek: ef
+            seek: eg
         } = (b = a.useCallback(() => {
             V?.current?.play()
         }, [V]), {
@@ -206,7 +206,7 @@ function m(e) {
         let e = V.current?.videoElement;
         if (null == e || !Y.current) return;
         let t = e.currentTime;
-        z.current !== t && (z.current = t, X.current.forEach(e => e.onTimeUpdate?.(t))), N.current?.style.setProperty("--custom-video-progress", `${t/e.duration*100}%`)
+        z.current !== t && (z.current = t, X.current.forEach(e => e.onTimeUpdate?.(t))), A.current?.style.setProperty("--custom-video-progress", `${t/e.duration*100}%`)
     }), a.useEffect(() => {
         if (null == Q) return;
         let e = () => {
@@ -228,7 +228,7 @@ function m(e) {
             Q.removeEventListener("play", e), Q.removeEventListener("pause", t), Q.removeEventListener("durationchange", l), Q.removeEventListener("loadedmetadata", n), Q.removeEventListener("seeked", a)
         }
     }, [Q, S, V, X, K, F, $, Y]);
-    let eg = a.useCallback(e => {
+    let ef = a.useCallback(e => {
             M(t => ({
                 ...t,
                 clipName: e
@@ -271,7 +271,7 @@ function m(e) {
                 }
             }, []), e
         }, [z, X]),
-        eN = a.useMemo(() => ({
+        eA = a.useMemo(() => ({
             useCurrentTime: ey,
             duration: H,
             isPlaying: _,
@@ -284,7 +284,7 @@ function m(e) {
             setCrop: eh,
             play: ep,
             pause: ex,
-            seek: ef,
+            seek: eg,
             subscribe: ec,
             setVideoPlayerRef: es,
             videoPlayerRef: V,
@@ -299,13 +299,13 @@ function m(e) {
             setSoundboardAudioEnabled: eC,
             getEditedClip: ei,
             clipName: T,
-            setClipName: eg,
+            setClipName: ef,
             isTemporary: R,
             audioURL: J,
             setIsTemporary: ev
-        }), [ey, H, _, B, D, O, eo, eu, em, eh, ep, ex, ef, J, ec, es, W, et, en, U, ej, P, eb, G, eC, ei, T, eg, R, ev]);
+        }), [ey, H, _, B, D, O, eo, eu, em, eh, ep, ex, eg, J, ec, es, W, et, en, U, ej, P, eb, G, eC, ei, T, ef, R, ev]);
     return (0, n.jsx)(u.Provider, {
-        value: eN,
+        value: eA,
         children: C
     })
 }

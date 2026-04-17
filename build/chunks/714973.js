@@ -1,6 +1,6 @@
 /** chunk id: 714973 params = (module,exports,require) **/
 l.d(t, {
-    A: () => g
+    A: () => f
 });
 var n = l(627968);
 l(64700);
@@ -31,7 +31,7 @@ function x(e) {
     })
 }
 
-function f() {
+function g() {
     let e = (0, i.bG)([o.Ay], () => o.Ay.getKeybindForAction(u.hCu.SAVE_CLIP)),
         t = null != e ? c.dI(e.shortcut, !0) : null;
     return (0, n.jsxs)("div", {
@@ -71,7 +71,7 @@ function f() {
     })
 }
 
-function g(e) {
+function f(e) {
     let {
         isEmptyBecauseQuery: t
     } = e;
@@ -91,7 +91,7 @@ function g(e) {
                 className: p.h_,
                 variant: "text-md/medium",
                 children: h.intl.string(m.default.xkY5xS)
-            }) : (0, n.jsx)(f, {})]
+            }) : (0, n.jsx)(g, {})]
         })
     })
 }

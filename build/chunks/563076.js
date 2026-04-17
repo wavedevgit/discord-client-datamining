@@ -1,6 +1,6 @@
 /** chunk id: 563076 params = (module,exports,require) **/
 l.d(t, {
-    A: () => g
+    A: () => f
 }), l(321073);
 var n = l(627968),
     a = l(64700),
@@ -28,7 +28,7 @@ function x(e, t) {
     return e.includes(m.gC.APPLICATION) ? !l : e.includes(m.gC.VOICE) ? !n : !e.includes(m.gC.SOUNDBOARD) || !a
 }
 
-function f(e) {
+function g(e) {
     let {
         setRef: t,
         audioTrackLabel: l,
@@ -51,18 +51,18 @@ function f(e) {
         onLoadedMetadata: d
     })
 }
-let g = a.forwardRef(function(e, t) {
+let f = a.forwardRef(function(e, t) {
     let {
         clip: l,
-        applicationAudioEnabled: g,
+        applicationAudioEnabled: f,
         voiceAudioEnabled: v,
         soundboardAudioEnabled: j
     } = e, {
         cropStart: b,
         cropEnd: C,
         setVideoPlayerRef: y,
-        videoURL: N,
-        audioURL: A
+        videoURL: A,
+        audioURL: N
     } = (0, u.T)(), E = a.useRef({}), k = a.useRef(!1), [I, S] = a.useState([]), w = a.useCallback(() => {
         let e = E.current.main;
         if (null == e) return;
@@ -110,14 +110,14 @@ let g = a.forwardRef(function(e, t) {
     let U = a.useCallback(() => {
         R(b)
     }, [R, b]);
-    if (null == N) return null;
+    if (null == A) return null;
     let G = l.type === d.nQ.VOICE_CLIP;
     return (0, n.jsxs)("div", {
         className: h.DV,
         children: [G ? (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)("audio", {
                 ref: O,
-                src: N,
+                src: A,
                 muted: !0,
                 preload: "auto"
             }), (0, n.jsx)(o.A, {
@@ -127,9 +127,9 @@ let g = a.forwardRef(function(e, t) {
             onClick: D,
             className: h.Ap,
             ref: O,
-            src: N,
+            src: A,
             muted: x(":all", {
-                applicationAudioEnabled: g,
+                applicationAudioEnabled: f,
                 voiceAudioEnabled: v,
                 soundboardAudioEnabled: j,
                 isVoiceClip: G
@@ -142,9 +142,9 @@ let g = a.forwardRef(function(e, t) {
             clip: l
         }), (0, n.jsx)("audio", {
             id: "ClipsPlayerAudioTrack:application",
-            src: A ?? void 0,
+            src: N ?? void 0,
             muted: x(":application", {
-                applicationAudioEnabled: g,
+                applicationAudioEnabled: f,
                 voiceAudioEnabled: v,
                 soundboardAudioEnabled: j,
                 isVoiceClip: G
@@ -153,12 +153,12 @@ let g = a.forwardRef(function(e, t) {
             preload: "auto",
             ref: e => P(e, "main:application"),
             onLoadedMetadata: L
-        }), I.map(e => (0, n.jsx)(f, {
+        }), I.map(e => (0, n.jsx)(g, {
             setRef: P,
             audioTrackLabel: e,
-            src: A,
+            src: N,
             muted: x(e, {
-                applicationAudioEnabled: g,
+                applicationAudioEnabled: f,
                 voiceAudioEnabled: v,
                 soundboardAudioEnabled: j,
                 isVoiceClip: G

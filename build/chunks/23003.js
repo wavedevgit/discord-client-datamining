@@ -26,8 +26,8 @@ var s, r, n, i = a(627968),
     M = a(975571),
     I = a(852218),
     P = a(161319),
-    S = a(992315),
-    N = a(788868),
+    N = a(992315),
+    S = a(788868),
     U = a(88001),
     T = a(652215),
     O = a(654487),
@@ -91,8 +91,8 @@ let eg = function() {
         }, [t]),
         eb = (0, l.useCallback)(() => {
             (0, b.A)({
-                subscriptionTier: N.pe.TIER_2,
-                initialPlanId: N.gD.PREMIUM_GROUP_MONTH,
+                subscriptionTier: S.pe.TIER_2,
+                initialPlanId: S.gD.PREMIUM_GROUP_MONTH,
                 analyticsLocations: t
             })
         }, [t]),
@@ -250,7 +250,7 @@ let eg = function() {
                         let {
                             openUserSettings: e
                         } = a(858897);
-                        e(R.X.DISPLAY_THEME_CATEGORY, {
+                        e(R.X.APPEARANCE_THEME_CATEGORY, {
                             analyticsLocations: t
                         })
                     }
@@ -318,7 +318,7 @@ let eg = function() {
             if (null == t) throw Error(`useBentoBoxes: missing bento config for ${e}`);
             return t
         },
-        eE = (0, S.A)(eh),
+        eE = (0, N.A)(eh),
         eM = [],
         eI = e ? null : eE[0],
         eP = eE.slice(+!e, e ? 2 : 3);

@@ -22,9 +22,9 @@ var i = n(64700),
 function b(e) {
     let {
         fractionalState: t
-    } = (0, s.A)(), n = t === A.xc.FP_ONLY, r = (0, d.$F)(), b = (0, d.Xb)(), x = r?.status === d.Wo.UPCOMING || n, R = (0, _.N)(r?.id), C = (0, o.z)(), N = (0, u.t)(), v = (0, l.P)();
+    } = (0, s.A)(), n = t === A.xc.FP_ONLY, r = (0, d.$F)(), b = (0, d.Xb)(), x = r?.status === d.Wo.UPCOMING || n, R = (0, _.N)(r?.id), C = (0, o.z)(), N = (0, u.t)(), E = (0, l.P)();
     return (0, i.useMemo)(() => {
-        let t, i = null != v ? g.intl.string(v.nameUnformattedNitro) : void 0;
+        let t, i = null != E ? g.intl.string(E.nameUnformattedNitro) : void 0;
         return null == r ? n && (t = (0, c.T)(A.Ac.PREMIUM_TENURE_1_MONTH, 1) ?? void 0) : t = r.status === d.Wo.UPCOMING ? g.intl.formatToPlainString(g.t.a1eKDi, {
             days: N?.days ?? 0
         }) : function(e, t) {
@@ -57,5 +57,5 @@ function b(e) {
                 analyticsLocations: e
             })
         }
-    }, [r, R, x, b, C, n, N, v, e])
+    }, [r, R, x, b, C, n, N, E, e])
 }

@@ -1,6 +1,6 @@
 /** chunk id: 726574 params = (module,exports,require) **/
 l.d(t, {
-    A: () => h
+    A: () => m
 }), l(321073);
 var n = l(627968),
     a = l(64700),
@@ -9,27 +9,26 @@ var n = l(627968),
     r = l(397927),
     d = l(71393),
     o = l(287809),
-    c = l(661191),
-    u = l(792852),
-    m = l(985018);
+    c = l(792852),
+    u = l(985018);
 
-function h(e) {
+function m(e) {
     let {
         closePopout: t,
         allClips: l
     } = e, {
         selectedUserIds: i,
-        selectedActivity: h,
-        selectedGuildId: p,
-        selectedYear: x,
-        sortOrder: f,
+        selectedActivity: m,
+        selectedGuildId: h,
+        selectedYear: p,
+        sortOrder: x,
         toggleUserId: g,
-        setSelectedActivity: v,
-        setSelectedGuildId: j,
-        setSelectedYear: b,
-        setSortOrder: C,
-        clearFilters: y
-    } = (0, u.P)(), N = a.useMemo(() => (function(e) {
+        setSelectedActivity: f,
+        setSelectedGuildId: v,
+        setSelectedYear: j,
+        setSortOrder: b,
+        clearFilters: C
+    } = (0, c.P)(), y = a.useMemo(() => (function(e) {
         let t = new Set;
         for (let l of e) l.users.forEach(e => t.add(e));
         let l = [];
@@ -48,7 +47,7 @@ function h(e) {
         let t = new Set;
         for (let l of e) l.activity?.state != null && t.add(l.activity.state), l.activity?.details != null && t.add(l.activity.details);
         return Array.from(t).sort((e, t) => e.localeCompare(t))
-    })(l), [l]), E = a.useMemo(() => (function(e) {
+    })(l), [l]), N = a.useMemo(() => (function(e) {
         let t = new Set;
         for (let l of e) null != l.guildId && t.add(l.guildId);
         let l = [];
@@ -60,43 +59,43 @@ function h(e) {
             })
         }
         return l.sort((e, t) => e.name.toLowerCase().localeCompare(t.name.toLowerCase())), l
-    })(l), [l]), k = a.useMemo(() => (function(e) {
+    })(l), [l]), E = a.useMemo(() => (function(e) {
         let t = new Set;
         for (let l of e) {
-            let e = new Date(c.default.extractTimestamp(l.id)).getFullYear();
+            let e = new Date(l.createdAt).getFullYear();
             t.add(e)
         }
         return Array.from(t).sort((e, t) => t - e)
-    })(l), [l]), [I, S] = a.useState(""), [w, L] = a.useState(""), [M, T] = a.useState(""), R = a.useMemo(() => 0 === I.trim().length ? N : N.filter(e => s()(I.toLowerCase(), e.name.toLowerCase())), [N, I]), D = a.useMemo(() => 0 === w.trim().length ? E : E.filter(e => s()(w.toLowerCase(), e.name.toLowerCase())), [E, w]), O = a.useMemo(() => 0 === M.trim().length ? A : A.filter(e => s()(M.toLowerCase(), e.toLowerCase())), [A, M]), P = i.size > 0 || null != h || null != p || null != x, U = a.useMemo(() => {
-        if (0 !== i.size) return N.filter(e => i.has(e.userId)).map(e => e.name).join(", ")
-    }, [i, N]), G = a.useMemo(() => {
-        if (null == p) return;
-        let e = E.find(e => e.guildId === p);
+    })(l), [l]), [k, I] = a.useState(""), [S, w] = a.useState(""), [L, M] = a.useState(""), T = a.useMemo(() => 0 === k.trim().length ? y : y.filter(e => s()(k.toLowerCase(), e.name.toLowerCase())), [y, k]), R = a.useMemo(() => 0 === S.trim().length ? N : N.filter(e => s()(S.toLowerCase(), e.name.toLowerCase())), [N, S]), D = a.useMemo(() => 0 === L.trim().length ? A : A.filter(e => s()(L.toLowerCase(), e.toLowerCase())), [A, L]), O = i.size > 0 || null != m || null != h || null != p, P = a.useMemo(() => {
+        if (0 !== i.size) return y.filter(e => i.has(e.userId)).map(e => e.name).join(", ")
+    }, [i, y]), U = a.useMemo(() => {
+        if (null == h) return;
+        let e = N.find(e => e.guildId === h);
         return e?.name
-    }, [p, E]), V = a.useMemo(() => h ?? void 0, [h]), z = a.useMemo(() => null != x ? String(x) : void 0, [x]);
+    }, [h, N]), G = a.useMemo(() => m ?? void 0, [m]), V = a.useMemo(() => null != p ? String(p) : void 0, [p]);
     return (0, n.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "clips-filters-context",
-        "aria-label": m.intl.string(m.t.X7yRDm),
+        "aria-label": u.intl.string(u.t.X7yRDm),
         onClose: t,
         onSelect: void 0,
         variant: "fixed",
         children: [(0, n.jsxs)(r.rXV, {
             label: "Filter",
-            children: [N.length > 0 && (0, n.jsxs)(r.Drp, {
+            children: [y.length > 0 && (0, n.jsxs)(r.Drp, {
                 id: "participants",
-                label: m.intl.string(m.t.YQ6dJg),
-                subtext: U,
-                children: [N.length > 20 && (0, n.jsx)(r.aK1, {
+                label: u.intl.string(u.t.YQ6dJg),
+                subtext: P,
+                children: [y.length > 20 && (0, n.jsx)(r.aK1, {
                     id: "participants-search",
                     control: (e, t) => (0, n.jsx)(r.VPO, {
                         ...e,
-                        query: I,
-                        onChange: S,
+                        query: k,
+                        onChange: I,
                         ref: t,
-                        placeholder: m.intl.string(m.t["5h0QOP"])
+                        placeholder: u.intl.string(u.t["5h0QOP"])
                     })
-                }), R.map(e => {
+                }), T.map(e => {
                     let {
                         userId: t,
                         name: l
@@ -108,26 +107,26 @@ function h(e) {
                         checked: i.has(t)
                     }, t)
                 })]
-            }), E.length > 0 && (0, n.jsxs)(r.Drp, {
+            }), N.length > 0 && (0, n.jsxs)(r.Drp, {
                 id: "servers",
-                label: m.intl.string(m.t["5qyruI"]),
-                subtext: G,
-                children: [E.length > 20 && (0, n.jsx)(r.aK1, {
+                label: u.intl.string(u.t["5qyruI"]),
+                subtext: U,
+                children: [N.length > 20 && (0, n.jsx)(r.aK1, {
                     id: "servers-search",
                     control: (e, t) => (0, n.jsx)(r.VPO, {
                         ...e,
-                        query: w,
-                        onChange: L,
+                        query: S,
+                        onChange: w,
                         ref: t,
-                        placeholder: m.intl.string(m.t["5h0QOP"])
+                        placeholder: u.intl.string(u.t["5h0QOP"])
                     })
                 }), (0, n.jsx)(r.iDA, {
                     id: "server-all",
                     group: "server",
-                    label: m.intl.string(m.t["2/yeUU"]),
-                    action: () => j(null),
-                    checked: null == p
-                }), D.map(e => {
+                    label: u.intl.string(u.t["2/yeUU"]),
+                    action: () => v(null),
+                    checked: null == h
+                }), R.map(e => {
                     let {
                         guildId: t,
                         name: l
@@ -136,74 +135,74 @@ function h(e) {
                         id: `server-${t}`,
                         group: "server",
                         label: l,
-                        action: () => j(t),
-                        checked: p === t
+                        action: () => v(t),
+                        checked: h === t
                     }, t)
                 })]
             }), A.length > 0 && (0, n.jsxs)(r.Drp, {
                 id: "activities",
-                label: m.intl.string(m.t.agRtPG),
-                subtext: V,
+                label: u.intl.string(u.t.agRtPG),
+                subtext: G,
                 children: [A.length > 20 && (0, n.jsx)(r.aK1, {
                     id: "activities-search",
                     control: (e, t) => (0, n.jsx)(r.VPO, {
                         ...e,
-                        query: M,
-                        onChange: T,
+                        query: L,
+                        onChange: M,
                         ref: t,
-                        placeholder: m.intl.string(m.t["5h0QOP"])
+                        placeholder: u.intl.string(u.t["5h0QOP"])
                     })
                 }), (0, n.jsx)(r.iDA, {
                     id: "activity-all",
                     group: "activity",
-                    label: m.intl.string(m.t["2/yeUU"]),
-                    action: () => v(null),
-                    checked: null == h
-                }), O.map(e => (0, n.jsx)(r.iDA, {
+                    label: u.intl.string(u.t["2/yeUU"]),
+                    action: () => f(null),
+                    checked: null == m
+                }), D.map(e => (0, n.jsx)(r.iDA, {
                     id: `activity-${e}`,
                     group: "activity",
                     label: e,
-                    action: () => v(e),
-                    checked: h === e
+                    action: () => f(e),
+                    checked: m === e
                 }, e))]
-            }), k.length > 0 && (0, n.jsxs)(r.Drp, {
+            }), E.length > 0 && (0, n.jsxs)(r.Drp, {
                 id: "years",
-                label: m.intl.string(m.t.w9zd68),
-                subtext: z,
+                label: u.intl.string(u.t.w9zd68),
+                subtext: V,
                 children: [(0, n.jsx)(r.iDA, {
                     id: "year-all",
                     group: "year",
-                    label: m.intl.string(m.t["2/yeUU"]),
-                    action: () => b(null),
-                    checked: null == x
-                }), k.map(e => (0, n.jsx)(r.iDA, {
+                    label: u.intl.string(u.t["2/yeUU"]),
+                    action: () => j(null),
+                    checked: null == p
+                }), E.map(e => (0, n.jsx)(r.iDA, {
                     id: `year-${e}`,
                     group: "year",
                     label: String(e),
-                    action: () => b(e),
-                    checked: x === e
+                    action: () => j(e),
+                    checked: p === e
                 }, e))]
             })]
         }), (0, n.jsxs)(r.rXV, {
-            label: m.intl.string(m.t.XvNMNk),
+            label: u.intl.string(u.t.XvNMNk),
             children: [(0, n.jsx)(r.iDA, {
                 id: "sort-recent",
                 group: "sort",
-                label: m.intl.string(m.t["4LLKx3"]),
-                action: () => C("descending"),
-                checked: "descending" === f
+                label: u.intl.string(u.t["4LLKx3"]),
+                action: () => b("descending"),
+                checked: "descending" === x
             }), (0, n.jsx)(r.iDA, {
                 id: "sort-oldest",
                 group: "sort",
-                label: m.intl.string(m.t["0gitSE"]),
-                action: () => C("ascending"),
-                checked: "ascending" === f
+                label: u.intl.string(u.t["0gitSE"]),
+                action: () => b("ascending"),
+                checked: "ascending" === x
             })]
-        }), P && (0, n.jsx)(r.rXV, {
+        }), O && (0, n.jsx)(r.rXV, {
             children: (0, n.jsx)(r.Drp, {
                 id: "clear-filters",
-                label: m.intl.string(m.t.FbDgiu),
-                action: y
+                label: u.intl.string(u.t.FbDgiu),
+                action: C
             })
         })]
     })

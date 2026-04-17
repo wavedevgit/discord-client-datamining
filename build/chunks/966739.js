@@ -1,68 +1,68 @@
 /** chunk id: 966739 params = (module,exports,require) **/
-a.d(t, {
+l.d(t, {
     V: () => d
 });
-var l = a(627968);
-a(64700);
-var r = a(397927),
-    n = a(261225),
-    s = a(673277),
-    i = a(219561),
-    o = a(753825);
+var a = l(627968);
+l(64700);
+var r = l(397927),
+    n = l(261225),
+    s = l(673277),
+    i = l(219561),
+    o = l(753825);
 let d = {
     name: "FeaturedProduct",
     id: "featured-product",
     component: e => {
         let {
             backgroundImage: t,
-            ...a
+            ...l
         } = e, d = {
             backgroundImage: {
                 src: t
             },
-            ...a
+            ...l
         };
-        return (0, l.jsxs)("div", {
-            children: [(0, l.jsx)(r.Text, {
+        return (0, a.jsxs)("div", {
+            children: [(0, a.jsx)(r.Text, {
                 variant: "text-lg/semibold",
                 children: "PLACEHOLDER"
-            }), (0, l.jsx)(s.A, {
-                children: (0, l.jsx)(o.A, {
+            }), (0, a.jsx)(s.A, {
+                children: (0, a.jsx)(o.A, {
                     ...d
                 })
-            }), (0, l.jsxs)(s.A, {
-                children: [(0, l.jsx)(r.Text, {
+            }), (0, a.jsxs)(s.A, {
+                children: [(0, a.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     children: "Grid (3):"
-                }), (0, l.jsxs)(n.A, {
+                }), (0, a.jsxs)(n.A, {
                     columns: 3,
-                    children: [(0, l.jsx)(o.A, {
+                    children: [(0, a.jsx)(o.A, {
                         ...d
-                    }), (0, l.jsx)(o.A, {
+                    }), (0, a.jsx)(o.A, {
                         ...d
-                    }), (0, l.jsx)(o.A, {
+                    }), (0, a.jsx)(o.A, {
                         ...d
-                    }), (0, l.jsx)(o.A, {
+                    }), (0, a.jsx)(o.A, {
                         ...d
-                    }), (0, l.jsx)(o.A, {
+                    }), (0, a.jsx)(o.A, {
                         ...d
-                    }), (0, l.jsx)(o.A, {
+                    }), (0, a.jsx)(o.A, {
                         ...d
                     })]
                 })]
-            }), (0, l.jsxs)(s.A, {
-                children: [(0, l.jsx)(r.Text, {
+            }), (0, a.jsxs)(s.A, {
+                children: [(0, a.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     children: "Stack:"
-                }), (0, l.jsxs)(i.Kp, {
+                }), (0, a.jsxs)(i.Kp, {
                     direction: "horizontal",
-                    children: [(0, l.jsx)(o.A, {
+                    children: [(0, a.jsx)(o.A, {
                         ...d
-                    }), (0, l.jsx)(o.A, {
+                    }), (0, a.jsx)(o.A, {
                         ...d
-                    }), (0, l.jsx)(o.A, {
+                    }), (0, a.jsx)(o.A, {
                         ...d
-                    }), (0, l.jsx)(o.A, {
+                    }), (0, a.jsx)(o.A, {
                         ...d
                     })]
                 })]

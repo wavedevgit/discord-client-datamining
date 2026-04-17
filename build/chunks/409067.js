@@ -1,6 +1,6 @@
 /** chunk id: 409067 params = (module,exports,require) **/
 l.d(t, {
-    a: () => h
+    a: () => m
 }), l(321073);
 var n = l(64700),
     a = l(91871),
@@ -8,18 +8,17 @@ var n = l(64700),
     s = l(989349),
     r = l.n(s),
     d = l(311907),
-    o = l(661191),
-    c = l(274372),
-    u = l(792852);
+    o = l(274372),
+    c = l(792852);
 
-function m(e, t) {
-    return "ascending" === t ? e.sort((e, t) => e.id.localeCompare(t.id)) : "descending" === t ? e.sort((e, t) => t.id.localeCompare(e.id)) : e
+function u(e, t) {
+    return "ascending" === t ? e.sort((e, t) => e.createdAt - t.createdAt) : "descending" === t ? e.sort((e, t) => t.createdAt - e.createdAt) : e
 }
 
-function h() {
-    let e = (0, d.yK)([c.A], () => c.A.getClips()),
-        t = (0, d.bG)([c.A], () => c.A.getPendingClips()),
-        l = (0, u.P)();
+function m() {
+    let e = (0, d.yK)([o.A], () => o.A.getClips()),
+        t = (0, d.bG)([o.A], () => o.A.getPendingClips()),
+        l = (0, c.P)();
     return n.useMemo(() => {
         let n = [...t, ...e],
             a = new Map,
@@ -41,19 +40,19 @@ function h() {
                         n = e.activity?.details;
                     if (l !== t.selectedActivity && n !== t.selectedActivity) return !1
                 }
-                return (null === t.selectedYear || r()(o.default.extractTimestamp(e.id)).year() === t.selectedYear) && !0
+                return (null === t.selectedYear || r()(e.createdAt).year() === t.selectedYear) && !0
             }(e, l);
             if (t && s.push(e), null == e.applicationId) continue;
             let n = a.get(e.applicationId);
             null == n ? a.set(e.applicationId, {
                 clips: [e],
                 filteredClips: t ? [e] : [],
-                mostRecentClipId: e.id,
+                mostRecentClipCreatedAt: e.createdAt,
                 name: e.applicationName
-            }) : (n.clips.push(e), t && n.filteredClips.push(e), e.id > n.mostRecentClipId && (n.mostRecentClipId = e.id))
+            }) : (n.clips.push(e), t && n.filteredClips.push(e), e.createdAt > n.mostRecentClipCreatedAt && (n.mostRecentClipCreatedAt = e.createdAt))
         }
-        let d = m(s, l.sortOrder),
-            c = m(s.filter(e => e.isFavorite), l.sortOrder);
+        let d = u(s, l.sortOrder),
+            o = u(s.filter(e => e.isFavorite), l.sortOrder);
         return {
             clipsByGame: Array.from(a.entries()).map(e => {
                 let [t, n] = e;
@@ -61,13 +60,13 @@ function h() {
                     applicationId: t,
                     name: n.name,
                     count: n.filteredClips.length,
-                    mostRecentClipId: n.mostRecentClipId,
-                    filteredClips: m(n.filteredClips, l.sortOrder)
+                    mostRecentClipCreatedAt: n.mostRecentClipCreatedAt,
+                    filteredClips: u(n.filteredClips, l.sortOrder)
                 }
-            }).sort((e, t) => t.mostRecentClipId.localeCompare(e.mostRecentClipId)),
+            }).sort((e, t) => t.mostRecentClipCreatedAt - e.mostRecentClipCreatedAt),
             allClips: n,
             filteredClips: d,
-            favoriteClips: c
+            favoriteClips: o
         }
     }, [e, t, l])
 }

@@ -1,6 +1,6 @@
 /** chunk id: 152815 params = (module,exports,require) **/
 n.d(t, {
-    P: () => v,
+    P: () => E,
     ThirdPartyPromotionsModal: () => N
 });
 var i = n(627968);
@@ -148,7 +148,7 @@ let x = {
             })
         })
     },
-    v = e => {
+    E = e => {
         let {
             partnerId: t
         } = e;

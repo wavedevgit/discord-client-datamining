@@ -1,75 +1,75 @@
 /** chunk id: 148702 params = (module,exports,require) **/
-a.d(t, {
+l.d(t, {
     A: () => c
 });
-var l = a(627968),
-    r = a(64700),
-    n = a(503698),
-    s = a.n(n),
-    i = a(157941),
-    o = a(752238),
-    d = a(585289);
+var a = l(627968),
+    r = l(64700),
+    n = l(503698),
+    s = l.n(n),
+    i = l(157941),
+    o = l(752238),
+    d = l(585289);
 
 function c(e) {
     let {
         value: t,
-        onChange: a
+        onChange: l
     } = e, n = "json", c = r.useRef(null), [u, x] = r.useState("");
     return r.useEffect(() => {
         if (null != t && o.default.hasLanguage(n)) {
             let e = o.default.highlight(n, t, !0);
             null != e ? x(e.value + "\n") : x(t + "\n")
         } else x(t + "\n")
-    }, [t, n]), (0, l.jsxs)("div", {
+    }, [t, n]), (0, a.jsxs)("div", {
         className: d.t,
-        children: [(0, l.jsx)("pre", {
+        children: [(0, a.jsx)("pre", {
             className: d.c5,
             "aria-hidden": "true",
-            children: (0, l.jsx)(i.l, {
+            children: (0, a.jsx)(i.l, {
                 location: "LayoutEditor",
                 code: t,
                 lang: "json",
                 className: "hljs",
-                children: (0, l.jsx)("code", {
+                children: (0, a.jsx)("code", {
                     className: s()("hljs", n),
                     dangerouslySetInnerHTML: {
                         __html: u ?? ""
                     }
                 })
             })
-        }), (0, l.jsx)("textarea", {
+        }), (0, a.jsx)("textarea", {
             ref: c,
             className: d.mW,
             value: t,
             onChange: e => {
-                a(e.target.value)
+                l(e.target.value)
             },
             onScroll: e => {
                 let t = e.target,
-                    a = t.previousElementSibling;
-                null != a && (a.scrollTop = t.scrollTop, a.scrollLeft = t.scrollLeft)
+                    l = t.previousElementSibling;
+                null != l && (l.scrollTop = t.scrollTop, l.scrollLeft = t.scrollLeft)
             },
             onKeyDown: e => {
                 if ("Tab" === e.key) {
                     e.preventDefault();
-                    let l = e.target,
-                        r = l.selectionStart,
-                        n = l.selectionEnd;
+                    let a = e.target,
+                        r = a.selectionStart,
+                        n = a.selectionEnd;
                     if (e.shiftKey) {
                         let e = t.lastIndexOf("\n", r - 1) + 1,
-                            l = t.indexOf("\n", r),
-                            n = t.substring(e, -1 === l ? t.length : l),
+                            a = t.indexOf("\n", r),
+                            n = t.substring(e, -1 === a ? t.length : a),
                             s = 0;
                         for (let e = 0; e < Math.min(2, n.length); e++)
                             if (" " === n[e]) s++;
                             else break;
-                        s > 0 && (a(t.substring(0, e) + t.substring(e + s)), setTimeout(() => {
+                        s > 0 && (l(t.substring(0, e) + t.substring(e + s)), setTimeout(() => {
                             if (null != c.current) {
                                 let t = Math.max(e, r - s);
                                 c.current.selectionStart = c.current.selectionEnd = t
                             }
                         }, 0))
-                    } else a(t.substring(0, r) + "  " + t.substring(n)), setTimeout(() => {
+                    } else l(t.substring(0, r) + "  " + t.substring(n)), setTimeout(() => {
                         null != c.current && (c.current.selectionStart = c.current.selectionEnd = r + 2)
                     }, 0)
                 }

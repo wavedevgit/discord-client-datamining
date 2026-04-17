@@ -3,8 +3,8 @@ n.d(t, {
     A: () => j,
     o: () => I
 });
-var a = n(627968),
-    l = n(64700),
+var l = n(627968),
+    a = n(64700),
     i = n(503698),
     r = n.n(i),
     s = n(505779),
@@ -14,8 +14,8 @@ var a = n(627968),
     u = n(714991),
     m = n(970163),
     f = n(184989),
-    x = n(486020),
-    h = n(240248),
+    h = n(486020),
+    x = n(240248),
     g = n(409626),
     p = n(305080),
     _ = n(652215),
@@ -29,14 +29,14 @@ function j(e) {
         game: t,
         trackAction: n,
         onInviteResolved: i,
-        closeModal: h
-    } = e, [p, E] = l.useState(), j = (0, o.bG)([f.A], () => p?.guild?.id != null && f.A.isMember(p?.guild?.id)), I = l.useMemo(() => t.websites?.find(e => {
+        closeModal: x
+    } = e, [p, E] = a.useState(), j = (0, o.bG)([f.A], () => p?.guild?.id != null && f.A.isMember(p?.guild?.id)), I = a.useMemo(() => t.websites?.find(e => {
         let {
             category: t
         } = e;
         return t === s.V.DISCORD
     }), [t.websites]);
-    l.useEffect(() => {
+    a.useEffect(() => {
         let e = async e => {
             let t = e.split("/").pop();
             if (null != t) {
@@ -47,47 +47,47 @@ function j(e) {
         };
         null != I && e(I.url)
     }, [I, i, p]);
-    let C = l.useCallback(() => {
-        null != p && (n(g.Ws.JoinOfficialServer), h(), d.h.dispatch({
+    let C = a.useCallback(() => {
+        null != p && (n(g.Ws.JoinOfficialServer), x(), d.h.dispatch({
             type: "INVITE_MODAL_OPEN",
             invite: p,
             code: p.code,
             context: _.BRT.APP
         }))
-    }, [p, n, h]);
+    }, [p, n, x]);
     if (null == p || null == p.guild || !p.guild.features.includes(_.GuildFeatures.VERIFIED)) return null;
-    let N = x.Ay.getGuildIconURL({
+    let N = h.Ay.getGuildIconURL({
         id: p.guild.id,
         icon: p.guild.icon,
         size: 32
     });
-    return (0, a.jsxs)("div", {
+    return (0, l.jsxs)("div", {
         className: A.fi,
-        children: [(0, a.jsx)(c.Heading, {
+        children: [(0, l.jsx)(c.Heading, {
             className: A.bV,
             variant: "text-xs/semibold",
             color: "text-default",
             children: v.intl.string(v.t.kBDZSL)
-        }), (0, a.jsxs)("div", {
+        }), (0, l.jsxs)("div", {
             className: r()(A.nM, A.mX),
-            children: [(0, a.jsx)("img", {
+            children: [(0, l.jsx)("img", {
                 className: b.$f,
                 src: N,
                 alt: v.intl.formatToPlainString(v.t.xm6W9D, {
                     guildName: p.guild.name
                 })
-            }), (0, a.jsxs)("div", {
+            }), (0, l.jsxs)("div", {
                 className: b.U5,
-                children: [(0, a.jsxs)("div", {
+                children: [(0, l.jsxs)("div", {
                     className: b.YS,
-                    children: [(0, a.jsx)(c.Text, {
+                    children: [(0, l.jsx)(c.Text, {
                         variant: "text-sm/semibold",
                         children: p.guild.name
-                    }), (0, a.jsx)(u.A, {
+                    }), (0, l.jsx)(u.A, {
                         guild: p.guild,
                         size: 16
                     })]
-                }), null != p.approximate_member_count && (0, a.jsx)(c.Text, {
+                }), null != p.approximate_member_count && (0, l.jsx)(c.Text, {
                     variant: "text-xxs/normal",
                     color: "text-muted",
                     children: v.intl.format(v.t.zRl6XR, {
@@ -95,7 +95,7 @@ function j(e) {
                     })
                 })]
             })]
-        }), (0, a.jsx)(c.Button, {
+        }), (0, l.jsx)(c.Button, {
             variant: "secondary",
             text: j ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr),
             onClick: C,
@@ -113,7 +113,7 @@ function I(e) {
         hasAlreadyLinked: r,
         officialInvite: s,
         isMember: o
-    } = (0, p.c)(), m = l.useCallback(() => {
+    } = (0, p.c)(), m = a.useCallback(() => {
         null != s && (t(g.Ws.JoinOfficialServer), n(), d.h.dispatch({
             type: "INVITE_MODAL_OPEN",
             invite: s,
@@ -122,17 +122,17 @@ function I(e) {
         }))
     }, [s, t, n]);
     if (null == s || null == s.guild || !s.guild.features.includes(_.GuildFeatures.VERIFIED)) return null;
-    let f = x.Ay.getGuildIconURL({
+    let f = h.Ay.getGuildIconURL({
             id: s.guild.id,
             icon: s.guild.icon,
             size: 48
         }),
-        A = x.Ay.getGuildSplashURL({
+        A = h.Ay.getGuildSplashURL({
             id: s.guild.id,
             splash: s.guild.splash
         }),
         b = i && !r || null == A,
-        j = (0, a.jsx)("img", {
+        j = (0, l.jsx)("img", {
             className: E.$f,
             src: f,
             alt: v.intl.formatToPlainString(v.t.xm6W9D, {
@@ -142,64 +142,64 @@ function I(e) {
         }),
         I = b ? E.To : E.Kt,
         C = b ? E.yj : E.FS;
-    return (0, a.jsxs)("div", {
+    return (0, l.jsxs)("div", {
         className: E.uW,
-        children: [(0, a.jsx)(c.Heading, {
+        children: [(0, l.jsx)(c.Heading, {
             className: E.Gf,
             variant: "heading-sm/semibold",
             color: "text-strong",
             children: v.intl.string(v.t["U2N+ci"])
-        }), (0, a.jsxs)("div", {
+        }), (0, l.jsxs)("div", {
             className: E.kL,
-            children: [!b && null != A && (0, a.jsx)("img", {
+            children: [!b && null != A && (0, l.jsx)("img", {
                 className: E.ll,
                 src: A,
                 alt: "",
                 draggable: !1
-            }), (0, a.jsxs)("div", {
+            }), (0, l.jsxs)("div", {
                 className: E.hQ,
-                children: [(0, a.jsxs)("div", {
+                children: [(0, l.jsxs)("div", {
                     className: I,
-                    children: [b ? j : (0, a.jsx)("div", {
+                    children: [b ? j : (0, l.jsx)("div", {
                         className: E._C,
-                        children: (0, a.jsx)("div", {
+                        children: (0, l.jsx)("div", {
                             className: E.kW,
                             children: j
                         })
-                    }), (0, a.jsxs)("div", {
+                    }), (0, l.jsxs)("div", {
                         className: C,
-                        children: [(0, a.jsxs)("div", {
+                        children: [(0, l.jsxs)("div", {
                             className: E.YS,
-                            children: [(0, a.jsx)(u.A, {
+                            children: [(0, l.jsx)(u.A, {
                                 guild: s.guild,
                                 size: 16
-                            }), (0, a.jsx)(c.Heading, {
+                            }), (0, l.jsx)(c.Heading, {
                                 variant: "heading-md/semibold",
                                 color: "text-default",
                                 children: s.guild.name
                             })]
-                        }), !(0, h.uJ)(s.guild?.description) && (0, a.jsx)(c.Text, {
+                        }), !(0, x.uJ)(s.guild?.description) && (0, l.jsx)(c.Text, {
                             variant: "text-sm/medium",
                             color: "text-muted",
                             children: s.guild?.description
-                        }), null != s.approximate_member_count || null != s.approximate_presence_count ? (0, a.jsxs)("div", {
+                        }), null != s.approximate_member_count || null != s.approximate_presence_count ? (0, l.jsxs)("div", {
                             className: E.iR,
-                            children: [null != s.approximate_presence_count && (0, a.jsxs)("div", {
+                            children: [null != s.approximate_presence_count && (0, l.jsxs)("div", {
                                 className: E.Tb,
-                                children: [(0, a.jsx)("i", {
+                                children: [(0, l.jsx)("i", {
                                     className: E._o
-                                }), (0, a.jsx)(c.Text, {
+                                }), (0, l.jsx)(c.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
                                     children: v.intl.format(v.t["LC+S+m"], {
                                         membersOnline: s.approximate_presence_count
                                     })
                                 })]
-                            }), null != s.approximate_member_count && (0, a.jsxs)("div", {
+                            }), null != s.approximate_member_count && (0, l.jsxs)("div", {
                                 className: E.Tb,
-                                children: [(0, a.jsx)("i", {
+                                children: [(0, l.jsx)("i", {
                                     className: E.jk
-                                }), (0, a.jsx)(c.Text, {
+                                }), (0, l.jsx)(c.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
                                     children: v.intl.format(v.t.zRl6XR, {
@@ -209,7 +209,7 @@ function I(e) {
                             })]
                         }) : null]
                     })]
-                }), (0, a.jsx)(c.Button, {
+                }), (0, l.jsx)(c.Button, {
                     variant: "secondary",
                     text: o ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr),
                     onClick: m,

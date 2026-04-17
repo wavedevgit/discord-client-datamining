@@ -30,9 +30,9 @@ let u = e => {
         subscriptionTier: n,
         useShorterCTA: m,
         isPersistentCTA: _
-    }), R = (0, l.V)(), C = R?.subscription_trial, N = null != C && x === C.sku_id, v = g ?? ((0, r.Mw)(h) ? a.XD.BRAND_INVERTED : a.XD.BRAND);
+    }), R = (0, l.V)(), C = R?.subscription_trial, N = null != C && x === C.sku_id, E = g ?? ((0, r.Mw)(h) ? a.XD.BRAND_INVERTED : a.XD.BRAND);
     return (0, i.jsx)(o.A, {
-        color: v,
+        color: E,
         textOptions: {
             textOverride: b,
             textClassName: N ? d.A : void 0,

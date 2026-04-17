@@ -1,9 +1,9 @@
 /** chunk id: 422069 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => x
 });
-var a = n(311907),
-    l = n(73153);
+var l = n(311907),
+    a = n(73153);
 let i = {},
     r = {},
     s = {},
@@ -13,7 +13,7 @@ let i = {},
     u = {},
     m = {},
     f = null;
-class x extends a.Ay.Store {
+class h extends l.Ay.Store {
     static displayName = "GameProfileStore";
     getSimilarGames(e) {
         return i[e]
@@ -43,7 +43,7 @@ class x extends a.Ay.Store {
         return f
     }
 }
-let h = new x(l.h, {
+let x = new h(a.h, {
     GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS: function(e) {
         let {
             applicationId: t,
@@ -87,13 +87,13 @@ let h = new x(l.h, {
         let {
             gameId: t,
             messages: n,
-            channelId: a,
-            guildId: l
+            channelId: l,
+            guildId: a
         } = e;
         d[t] = {
             messages: n,
-            channelId: a,
-            guildId: l
+            channelId: l,
+            guildId: a
         }, u[t] = !0, m[t] = !1
     },
     GAME_PROFILE_GET_ANNOUNCEMENTS_ERROR: function(e) {
@@ -106,13 +106,13 @@ let h = new x(l.h, {
         let {
             gameId: t,
             channelId: n,
-            initialScrollOffset: a
+            initialScrollOffset: l
         } = e;
-        if (f?.gameId === t && f?.channelId === n && f?.initialScrollOffset === a) return !1;
+        if (f?.gameId === t && f?.channelId === n && f?.initialScrollOffset === l) return !1;
         f = {
             gameId: t,
             channelId: n,
-            initialScrollOffset: a
+            initialScrollOffset: l
         }
     },
     GAME_PROFILE_CLEAR_PENDING_RETURN: function(e) {

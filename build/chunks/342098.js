@@ -1,7 +1,7 @@
 /** chunk id: 342098 params = (module,exports,require) **/
 e.d(i, {
     A: () => f,
-    l: () => N
+    l: () => P
 }), e(938796);
 var n = e(627968);
 e(64700);
@@ -32,8 +32,8 @@ function f(t) {
         analyticsSubscriptionType: I,
         renderHeader: A,
         planGroup: f,
-        skuId: P,
-        guildId: N,
+        skuId: N,
+        guildId: P,
         reviewWarningMessage: h,
         applicationId: g,
         showBenefitsFirst: m,
@@ -46,7 +46,7 @@ function f(t) {
         } = await Promise.resolve().then(e.bind(e, 156312)), a = (await e.e("72752").then(e.bind(e, 97491))).default, {
             getApplicationPaymentSteps: r
         } = await e.e("50243").then(e.bind(e, 107854)), u = r({
-            guildId: N,
+            guildId: P,
             showBenefitsFirst: m
         });
         return e => (0, n.jsx)(t, {
@@ -54,14 +54,14 @@ function f(t) {
             applicationId: g,
             activeSubscription: l,
             stepConfigs: u,
-            skuIDs: [P],
+            skuIDs: [N],
             unifiedCheckoutFlow: d.CL.PREMIUM_APPS_SUBSCRIPTION_CHECKOUT,
             children: (0, n.jsx)(E.Qt, {
                 children: (0, n.jsx)(T.dX, {
                     children: (0, n.jsx)(a, {
                         ...e,
                         initialPlanId: i,
-                        skuId: P,
+                        skuId: N,
                         analyticsLocations: p,
                         analyticsObject: s,
                         analyticsLocation: o,
@@ -70,7 +70,7 @@ function f(t) {
                         planGroup: f,
                         reviewWarningMessage: h,
                         applicationId: g,
-                        guildId: N ?? void 0,
+                        guildId: P ?? void 0,
                         onComplete: () => {
                             b = !0, L?.()
                         },
@@ -81,32 +81,26 @@ function f(t) {
         })
     }, {
         onCloseCallback: () => {
-            if (!b) {
-                let t = (0, S.q1)({
-                    location: "ApplicationPaymentModal",
-                    unifiedCheckoutFlow: d.CL.PREMIUM_APPS_SUBSCRIPTION_CHECKOUT
-                });
-                _.default.track(C.HAw.PAYMENT_FLOW_CANCELED, {
-                    load_id: F,
-                    payment_type: C.frM[C.VVm.SUBSCRIPTION],
-                    location: o ?? s,
-                    is_gift: !1,
-                    sku_id: P,
-                    application_id: g,
-                    location_stack: p,
-                    checkout_design: t ? S.rS.UNIFIED : S.rS.LEGACY,
-                    checkout_flow: d.CL.PREMIUM_APPS_SUBSCRIPTION_CHECKOUT
-                }), (0, u.ET)(), (0, c.z)()
-            }
+            b || (_.default.track(C.HAw.PAYMENT_FLOW_CANCELED, {
+                load_id: F,
+                payment_type: C.frM[C.VVm.SUBSCRIPTION],
+                location: o ?? s,
+                is_gift: !1,
+                sku_id: N,
+                application_id: g,
+                location_stack: p,
+                checkout_design: S.rS.UNIFIED,
+                checkout_flow: d.CL.PREMIUM_APPS_SUBSCRIPTION_CHECKOUT
+            }), (0, u.ET)(), (0, c.z)())
         },
         onCloseRequest: C.tEg
     })
 }
-let P = async (t, i) => {
+let N = async (t, i) => {
     let e = (await (0, o.LM)(t)).filter(t => null == t.ends_at || new Date(t.ends_at) > new Date).find(t => t.sku_id === i);
     s()(null == e, "User already has an active subscription to this SKU")
 };
-async function N(t) {
+async function P(t) {
     let {
         applicationId: i,
         skuId: e,
@@ -117,7 +111,7 @@ async function N(t) {
     } = t, o = A.A.get(e), u = I.A.getForSKU(e);
     s()(null != o, "Failed to find SKU");
     let c = (0, p.bg)(o.flags);
-    s()(c, "Guild application subscriptions unsupported!"), await P(i, e), f({
+    s()(c, "Guild application subscriptions unsupported!"), await N(i, e), f({
         initialPlanId: n ?? u[0]?.id,
         activeSubscription: null,
         analyticsLocations: a,

@@ -1,14 +1,14 @@
 /** chunk id: 272835 params = (module,exports,require) **/
-a.d(t, {
+l.d(t, {
     H: () => u
 });
-var l = a(627968),
-    r = a(64700),
-    n = a(735438),
-    s = a(397927),
-    i = a(252561),
-    o = a(951707),
-    d = a(614822);
+var a = l(627968),
+    r = l(64700),
+    n = l(735438),
+    s = l(397927),
+    i = l(252561),
+    o = l(951707),
+    d = l(614822);
 let c = [{
         id: "xxs",
         label: "xxs",
@@ -82,33 +82,33 @@ let c = [{
         name: "Interactive H Scroll",
         id: "interactive-h-scroll",
         component: () => {
-            let [e, t] = r.useState(15), [a, u] = r.useState(8), [x, h] = r.useState("xl"), [m, b] = r.useState(!0), p = r.useMemo(() => [...Array(e)].map((e, t) => (0, l.jsx)(s.DUT, {
+            let [e, t] = r.useState(15), [l, u] = r.useState(8), [x, h] = r.useState("xl"), [m, b] = r.useState(!0), p = r.useMemo(() => [...Array(e)].map((e, t) => (0, a.jsx)(s.DUT, {
                 className: d.j,
                 onClick: () => console.log(t),
-                children: (0, l.jsxs)(s.BJc, {
+                children: (0, a.jsxs)(s.BJc, {
                     direction: "vertical",
                     justify: "space-between",
                     align: "center",
-                    children: [(0, l.jsx)("div", {
+                    children: [(0, a.jsx)("div", {
                         children: t
-                    }), t % 3 == 0 && (0, l.jsx)(s.Button, {
+                    }), t % 3 == 0 && (0, a.jsx)(s.Button, {
                         onClick: () => console.log(`clicked button ${t}`),
                         text: "Click Me"
                     })]
                 })
             }, t)), [e]);
-            return (0, l.jsxs)("div", {
-                children: [(0, l.jsx)(o.A, {
-                    gap: a,
+            return (0, a.jsxs)("div", {
+                children: [(0, a.jsx)(o.A, {
+                    gap: l,
                     edgeFade: x,
                     hideActionsWhenDisabled: m,
                     children: p
-                }), (0, l.jsx)(i.nB, {}), (0, l.jsxs)(i.MG, {
-                    children: [(0, l.jsx)(s.Checkbox, {
+                }), (0, a.jsx)(i.nB, {}), (0, a.jsxs)(i.MG, {
+                    children: [(0, a.jsx)(s.Checkbox, {
                         checked: m,
                         onChange: () => b(!m),
                         label: "Hide Actions When Disabled"
-                    }), (0, l.jsx)(s.ksK, {
+                    }), (0, a.jsx)(s.ksK, {
                         type: "number",
                         min: 0,
                         value: e.toString(),
@@ -117,17 +117,17 @@ let c = [{
                         },
                         label: "Children Count"
                     })]
-                }), (0, l.jsx)(i.MG, {
-                    children: (0, l.jsx)(s.l6P, {
-                        value: a,
+                }), (0, a.jsx)(i.MG, {
+                    children: (0, a.jsx)(s.l6P, {
+                        value: l,
                         options: c,
                         onSelectionChange: u,
                         label: "Children Gap",
                         selectionMode: "single",
                         fullWidth: !0
                     })
-                }), (0, l.jsx)(i.MG, {
-                    children: (0, l.jsx)(s.l6P, {
+                }), (0, a.jsx)(i.MG, {
+                    children: (0, a.jsx)(s.l6P, {
                         value: x,
                         options: c,
                         onSelectionChange: h,

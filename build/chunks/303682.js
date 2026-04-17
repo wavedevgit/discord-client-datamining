@@ -23,8 +23,8 @@ var i, r = n(627968),
     R = n(761546),
     C = n(972007),
     N = n(636184),
-    v = n(652215),
-    E = n(985018),
+    E = n(652215),
+    v = n(985018),
     T = n(468049);
 let j = e => {
         let {
@@ -44,24 +44,24 @@ let j = e => {
         return null === s ? (0, r.jsx)(d.y$y, {}) : I ? (0, r.jsx)(o.Modal, {
             transitionState: t,
             size: "sm",
-            title: E.intl.string(E.t.lcuio4),
-            subtitle: E.intl.string(E.t["x09+CD"]),
+            title: v.intl.string(v.t.lcuio4),
+            subtitle: v.intl.string(v.t["x09+CD"]),
             onClose: n,
             actions: []
         }) : !1 === u ? (0, r.jsx)(o.Modal, {
             transitionState: t,
             size: "sm",
-            title: E.intl.string(E.t["2YigPp"]),
-            subtitle: E.intl.format(E.t.OOCbz8, {
-                helpdeskArticle: f.A.getArticleURL(v.MVz.REFERRAL_PROGRAM)
+            title: v.intl.string(v.t["2YigPp"]),
+            subtitle: v.intl.format(v.t.OOCbz8, {
+                helpdeskArticle: f.A.getArticleURL(E.MVz.REFERRAL_PROGRAM)
             }),
             onClose: n,
             actions: []
         }) : (0, r.jsx)(o.Modal, {
             size: "md",
             transitionState: t,
-            title: E.intl.string(E.t["2dVCLl"]),
-            subtitle: E.intl.string(E.t.DXgoi2),
+            title: v.intl.string(v.t["2dVCLl"]),
+            subtitle: v.intl.string(v.t.DXgoi2),
             onClose: n,
             input: (0, r.jsx)(d.iS7, {
                 selectionMode: "multiple",
@@ -82,7 +82,7 @@ let j = e => {
                 children: (0, r.jsx)("div", {
                     className: T.c,
                     children: (0, r.jsx)(d.a32, {
-                        placeholder: 0 === m.size ? E.intl.string(E.t.Kd5RaI) : "",
+                        placeholder: 0 === m.size ? v.intl.string(v.t.Kd5RaI) : "",
                         onQueryChange: e => {
                             g(e.target.value)
                         }
@@ -95,7 +95,7 @@ let j = e => {
                         eligibleRecipients: a
                     } = e,
                     s = b.length > 0 && 0 === a.size;
-                return t = !0 === s ? E.intl.string(E.t.wpSqAW) : m.size <= 1 ? E.intl.string(E.t.ItpQxk) : E.intl.format(E.t.iW2stn, {
+                return t = !0 === s ? v.intl.string(v.t.wpSqAW) : m.size <= 1 ? v.intl.string(v.t.ItpQxk) : v.intl.format(v.t.iW2stn, {
                     nTrials: m.size
                 }), (0, r.jsx)("div", {
                     className: l()(T.qr, T.h0),
@@ -131,8 +131,8 @@ let j = e => {
                     isUserDisabled: e => null !== s && 0 !== s && [...m.values()].filter(e => !y.has(e.id)).length >= s && !m.has(e.id) && !y.has(e.id),
                     searchQuery: b,
                     emptySearchContent: {
-                        header: E.intl.string(E.t["8+ywHD"]),
-                        body: E.intl.string(E.t.CgQmY2)
+                        header: v.intl.string(v.t["8+ywHD"]),
+                        body: v.intl.string(v.t.CgQmY2)
                     },
                     className: T.p_
                 })
@@ -164,11 +164,11 @@ let j = e => {
         }, [_]), (0, r.jsx)(o.Modal, {
             size: "md",
             transitionState: n,
-            title: E.intl.string(E.t.rKmy8I),
-            subtitle: E.intl.string(E.t.VDlF6o),
+            title: v.intl.string(v.t.rKmy8I),
+            subtitle: v.intl.string(v.t.VDlF6o),
             onClose: i,
             actions: [],
-            actionBarInput: (t = g.size <= 1 ? E.intl.string(E.t.ItpQxk) : E.intl.format(E.t.iW2stn, {
+            actionBarInput: (t = g.size <= 1 ? v.intl.string(v.t.ItpQxk) : v.intl.format(v.t.iW2stn, {
                 nTrials: g.size
             }), (0, r.jsx)("div", {
                 className: l()(T.qr, T.h0),
@@ -206,7 +206,7 @@ let y = e => {
     } = e, s = (0, c.bG)([x.A], () => x.A.getReferralsRemaining()), [l, o] = a.useState(i), [u, _] = a.useState([]), {
         analyticsLocations: A
     } = (0, p.Ay)([m.A.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL]), f = async e => {
-        g.default.track(v.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, {
+        g.default.track(E.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, {
             location_stack: A
         });
         let t = await (0, b.xm)(Object.values(e).map(e => e.id));

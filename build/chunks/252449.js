@@ -15,8 +15,8 @@ var n = l(627968),
     h = l(372684),
     p = l(429364),
     x = l(731854),
-    f = l(178420);
-let g = new d.Vy("ClipsSpeakingOverlay");
+    g = l(178420);
+let f = new d.Vy("ClipsSpeakingOverlay");
 class v {
     timeline;
     userSpeakingStates;
@@ -100,52 +100,52 @@ function j(e) {
             speakingUserIds: s().sortBy(l.speakingUserIds),
             activeSoundboards: s().sortBy(l.activeSoundboards, "soundboardId")
         }
-    }, [b, C]), [N, A] = a.useState(() => y(x)), E = (0, r.cf)([c.default], () => s().pick(c.default.getUsers(), t.users));
+    }, [b, C]), [A, N] = a.useState(() => y(x)), E = (0, r.cf)([c.default], () => s().pick(c.default.getUsers(), t.users));
     return (a.useEffect(() => h({
         onTimeUpdate: e => {
             let t = y(e);
-            A(e => s().isEqual(t, e) ? e : (g.info("Event snapshot changed", {
+            N(e => s().isEqual(t, e) ? e : (f.info("Event snapshot changed", {
                 newEventSnapshot: t,
                 currentEventSnapshot: e
             }), t))
         }
     }), [h, y]), null == j) ? null : (0, n.jsxs)("div", {
-        className: f.h8,
-        children: [i && N.speakingUserIds.map(e => {
+        className: g.h8,
+        children: [i && A.speakingUserIds.map(e => {
             let l = E[e];
             if (null == l) return null;
             let a = (0, m.mG)(t.guildId, t.channelId, l);
             return (0, n.jsxs)("div", {
-                className: f.q7,
+                className: g.q7,
                 children: [(0, n.jsx)(o.euF, {
                     "aria-label": a,
                     size: o._3J.SIZE_24,
                     src: l.getAvatarURL(null, 24, !1)
                 }), (0, n.jsx)(o.Text, {
-                    className: f.Xh,
+                    className: g.Xh,
                     color: "always-white",
                     variant: "text-sm/normal",
                     children: a
                 })]
             }, e)
-        }), l && N.activeSoundboards.map(e => {
+        }), l && A.activeSoundboards.map(e => {
             let t = E[e.userId];
             return null == t ? null : (0, n.jsxs)("div", {
-                className: f.q7,
+                className: g.q7,
                 children: [(0, n.jsx)(o.euF, {
                     "aria-label": t.username,
                     size: o._3J.SIZE_24,
                     src: t.getAvatarURL(null, 24, !1)
                 }), null != e.emojiId || null != e.emojiName ? (0, n.jsx)("img", {
                     alt: e.name,
-                    className: f.g8,
+                    className: g.g8,
                     src: (0, u.Ez)({
                         id: e.emojiId,
                         name: e.emojiName ?? "",
                         animated: e.emojiAnimated ?? !1
                     }, 24)
                 }) : null, (0, n.jsx)(o.Text, {
-                    className: f.Xh,
+                    className: g.Xh,
                     color: "always-white",
                     variant: "text-sm/normal",
                     children: e.name

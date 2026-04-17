@@ -1,51 +1,69 @@
 /** chunk id: 897586 params = (module,exports,require) **/
 n.d(t, {
-    du: () => T,
-    j0: () => f,
-    yj: () => E
-});
-var i = n(934551),
-    s = n(554146),
-    l = n(920603),
-    r = n(419954),
-    a = n(933297),
-    o = n(780964),
-    d = n(358776),
-    c = n(227542),
-    u = n(19462),
-    m = n(672729),
-    g = n(261590),
-    _ = n(37148),
-    x = n(937762),
-    h = n(653026),
-    A = n(63575),
-    p = n(985018);
-
-function T() {
-    (0, l.v)()
-}
-let f = [{
-        badgeType: a.Xi.STRONGLY_DISCOURAGED_CUSTOM,
-        dismissibleContent: s.M.CLIENT_THEMES_SETTINGS_BADGE,
-        StronglyDiscouragedCustomComponent: u.L
+    y: () => I
+}), n(321073);
+var i = n(627968),
+    s = n(64700),
+    l = n(934551),
+    r = n(554146),
+    a = n(397927),
+    o = n(920603),
+    d = n(419954),
+    c = n(933297),
+    u = n(780964),
+    m = n(227542),
+    g = n(264124),
+    _ = n(850060),
+    x = n(19462),
+    h = n(981371),
+    A = n(559362),
+    p = n(669358),
+    T = n(681367),
+    f = n(680423),
+    S = n(439219),
+    E = n(288048),
+    b = n(985018);
+let C = [{
+        badgeType: c.Xi.STRONGLY_DISCOURAGED_CUSTOM,
+        dismissibleContent: r.M.CLIENT_THEMES_SETTINGS_BADGE,
+        StronglyDiscouragedCustomComponent: x.L
     }, {
-        badgeType: a.Xi.STRONGLY_DISCOURAGED_CUSTOM,
-        dismissibleContent: s.M.DEKSTOP_CUSTOM_APP_ICON_BADGE,
-        StronglyDiscouragedCustomComponent: u.L
+        badgeType: c.Xi.STRONGLY_DISCOURAGED_CUSTOM,
+        dismissibleContent: r.M.DEKSTOP_CUSTOM_APP_ICON_BADGE,
+        StronglyDiscouragedCustomComponent: x.L
     }, {
-        badgeType: a.Xi.NEW,
-        dismissibleContent: s.M.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE
+        badgeType: c.Xi.NEW,
+        dismissibleContent: r.M.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE
     }],
-    S = (0, r.t_)(o.X.APPEARANCE_PANEL, {
-        useTitle: () => p.intl.string(p.t["iHH+ky"]),
-        initialize: T,
-        buildLayout: () => [h.S, g._, A.u, _.U, x.M, m.d]
+    v = (0, d.t_)(u.X.APPEARANCE_PANEL, {
+        initialize: function() {
+            (0, o.v)()
+        },
+        useTitle: () => b.intl.string(b.t["iHH+ky"]),
+        buildLayout: () => [E.K, p.S, T.X, A.S, f.f, S.X, h.V]
     }),
-    E = (0, r.i4)(o.X.APPEARANCE_SIDEBAR_ITEM, {
-        useTitle: () => p.intl.string(p.t["iHH+ky"]),
-        icon: i.PaintPaletteIcon,
-        usePredicate: () => !(0, d.bp)("AppearanceSidebarItem"),
-        useMenu: c.A,
-        getDismissibleBadges: () => f,
-        buildLayout: () => [S]
+    N = [...C, {
+        badgeType: c.Xi.STRONGLY_DISCOURAGED_CUSTOM,
+        dismissibleContent: r.M.FAVORITES_GUILD_NEW_BADGE,
+        StronglyDiscouragedCustomComponent: x.L
+    }],
+    I = (0, d.i4)(u.X.APPEARANCE_SIDEBAR_ITEM, {
+        useTitle: () => b.intl.string(b.t["iHH+ky"]),
+        icon: l.PaintPaletteIcon,
+        useMenu: function() {
+            let e = (0, m.A)(),
+                t = (0, _.A)(),
+                n = (0, g.A)();
+            return s.useMemo(() => {
+                let s = [...e];
+                return null != t && s.push((0, i.jsx)(a.rXV, {
+                    label: b.intl.string(b.t.Ob7VMB),
+                    children: t
+                }, "text-and-images")), null != n && s.push((0, i.jsx)(a.rXV, {
+                    children: n
+                }, "streamer-mode")), s
+            }, [e, t, n])
+        },
+        getDismissibleBadges: () => N,
+        buildLayout: () => [v]
     })

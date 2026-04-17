@@ -1,24 +1,24 @@
 /** chunk id: 300056 params = (module,exports,require) **/
-a.d(t, {
+l.d(t, {
     a: () => s
 });
-var l = a(627968);
-a(64700);
-var r = a(397927),
-    n = a(287944);
+var a = l(627968);
+l(64700);
+var r = l(397927),
+    n = l(287944);
 let s = {
     name: "Tooltip",
     id: "cms-tooltip",
-    component: e => (0, l.jsx)(n.A, {
+    component: e => (0, a.jsx)(n.A, {
         ...e,
-        children: (0, l.jsx)("div", {
+        children: (0, a.jsx)("div", {
             style: {
                 width: 300,
                 background: "pink",
                 borderRadius: 8,
                 padding: 12
             },
-            children: (0, l.jsx)(r.Text, {
+            children: (0, a.jsx)(r.Text, {
                 variant: "text-lg/semibold",
                 children: "Hover me."
             })

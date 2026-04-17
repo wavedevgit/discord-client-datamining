@@ -36,13 +36,13 @@ let _ = new r.J(t => [p(t.application_id), ...t.subscription_listings_ids.map(S)
     C = {},
     f = {};
 
-function P(t) {
+function N(t) {
     for (let e of (_.set(t.id, t), t.subscription_listings ?? [])) {
         var i;
         i = e, T.set(i.id, i)
     }
 }
-class N extends a.il {
+class P extends a.il {
     static displayName = "ApplicationSubscriptionStore";
     getSubscriptionGroupListingsForApplicationFetchState(t) {
         return C[t] ?? 0
@@ -76,7 +76,7 @@ class N extends a.il {
         return E.values(A(i, t))
     }
 }
-let h = new N(o.h, {
+let h = new P(o.h, {
     LOGOUT: function() {
         _.clear(), T.clear(), E.clear(), C = {}, f = {}
     },
@@ -95,7 +95,7 @@ let h = new N(o.h, {
             applicationId: i,
             groupListing: e
         } = t;
-        C[i] = 2, P(e)
+        C[i] = 2, N(e)
     },
     APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS_FAILURE: function(t) {
         let {
@@ -129,6 +129,6 @@ let h = new N(o.h, {
         let {
             groupListing: i
         } = t;
-        P(i)
+        N(i)
     }
 })

@@ -1,8 +1,8 @@
 /** chunk id: 187384 params = (module,exports,require) **/
 n.d(t, {
-    p: () => a
+    p: () => l
 });
-let a = (0, n(945810).mj)({
+let l = (0, n(945810).mj)({
     name: "2026-04-steam-reviews-v2",
     kind: "user",
     defaultConfig: {

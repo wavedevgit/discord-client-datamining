@@ -15,15 +15,15 @@ var n = l(627968),
     h = l(765671),
     p = l(607470),
     x = l(287809),
-    f = l(531685),
-    g = l(427262),
+    g = l(531685),
+    f = l(427262),
     v = l(372684),
     j = l(335494),
     b = l(584794),
     C = l(429364),
     y = l(696016),
-    N = l(985018),
-    A = l(445563),
+    A = l(985018),
+    N = l(445563),
     E = l(474847);
 
 function k(e) {
@@ -246,7 +246,7 @@ function w(e) {
             let l = s(e.timestamp);
             if (null == l || null == e.signal.emojiId && null == e.signal.emojiName) return null;
             let a = x.default.getUser(e.signal.userId),
-                i = (0, g.mG)(a);
+                i = (0, f.mG)(a);
             return (0, n.jsx)(o.u, {
                 title: e.signal.name,
                 body: i ?? "",
@@ -281,7 +281,7 @@ function L(e) {
         children: i.map((e, t) => {
             let l = s(e.timestamp);
             return null == l ? null : (0, n.jsx)(o.u, {
-                title: N.intl.string(N.t.mIkeS2),
+                title: A.intl.string(A.t.mIkeS2),
                 body: e.signal.text,
                 position: "top",
                 children: (0, n.jsx)("div", {
@@ -310,7 +310,7 @@ let M = function(e) {
         useCurrentTime: c,
         duration: m,
         isPlaying: x,
-        cropStart: g,
+        cropStart: f,
         cropEnd: v,
         cropDuration: k,
         setCropStart: S,
@@ -329,7 +329,7 @@ let M = function(e) {
         ref: Y,
         width: Q = 0,
         height: q = 0
-    } = (0, h.Ay)(), W = (0, d.bG)([f.A], () => f.A.windowSize());
+    } = (0, h.Ay)(), W = (0, d.bG)([g.A], () => g.A.windowSize());
     a.useMemo(() => {
         W.width, W.height;
         let e = Y.current;
@@ -343,21 +343,21 @@ let M = function(e) {
             let l = ((0, r.clamp)(e, F.left, F.right) - F.left) / F.width * m,
                 n = (0, r.clamp)(l, 0, m),
                 a = z;
-            null == a && t && (a = n <= g ? "start" : n >= v ? "end" : "playhead", x && (M(), B(!0)), H(a)), "start" === a ? S(n) : "end" === a ? w(n) : "playhead" === a && O((0, r.clamp)(n, g, v))
-        }, [m, F, z, g, v, x, M, S, w, O]),
+            null == a && t && (a = n <= f ? "start" : n >= v ? "end" : "playhead", x && (M(), B(!0)), H(a)), "start" === a ? S(n) : "end" === a ? w(n) : "playhead" === a && O((0, r.clamp)(n, f, v))
+        }, [m, F, z, f, v, x, M, S, w, O]),
         et = a.useCallback(e => {
             if (null == m) return;
             let t = (0, b.A)(m, e.shiftKey),
                 l = !1;
             switch (e.key) {
                 case "ArrowLeft":
-                    l = !0, S(g - t);
+                    l = !0, S(f - t);
                     break;
                 case "ArrowRight":
-                    l = !0, S(g + t)
+                    l = !0, S(f + t)
             }
             l && (e.stopPropagation(), e.preventDefault())
-        }, [m, S, g]),
+        }, [m, S, f]),
         el = a.useCallback(e => {
             if (null == m) return;
             let t = (0, b.A)(m, e.shiftKey),
@@ -414,10 +414,10 @@ let M = function(e) {
             })
         }()
     }, [Q, q, Y, m, Z, G]);
-    let es = P - g,
+    let es = P - f,
         er = a.useCallback(() => {
-            O(Math.max(g, P - 10))
-        }, [g, P, O]),
+            O(Math.max(f, P - 10))
+        }, [f, P, O]),
         ed = a.useCallback(() => {
             O(Math.min(v, P + 10))
         }, [v, P, O]),
@@ -425,7 +425,7 @@ let M = function(e) {
             x ? M() : L()
         }, [x, L, M]),
         ec = a.useCallback(() => V(!0), []),
-        eu = g / m * 100,
+        eu = f / m * 100,
         em = (1 - (m - v) / m) * 100,
         eh = {
             background: `linear-gradient(to right, var(--black-500) ${eu}%, transparent ${eu}%, transparent ${em}%, var(--black-500) ${em}%)`
@@ -458,18 +458,18 @@ let M = function(e) {
                         variant: "secondary",
                         icon: u.qN$,
                         onClick: er,
-                        "aria-label": N.intl.string(A.default["dRVF+Z"])
+                        "aria-label": A.intl.string(N.default["dRVF+Z"])
                     }), (0, n.jsx)(u.K0, {
                         size: "md",
                         icon: x ? u.E$n : u.udU,
                         onClick: eo,
-                        "aria-label": N.intl.string(x ? N.t.ZcgDJX : N.t.RscU7I)
+                        "aria-label": A.intl.string(x ? A.t.ZcgDJX : A.t.RscU7I)
                     }), (0, n.jsx)(u.K0, {
                         size: "md",
                         variant: "secondary",
                         icon: u.i76,
                         onClick: ed,
-                        "aria-label": N.intl.string(A.default.yV2FLL)
+                        "aria-label": A.intl.string(N.default.yV2FLL)
                     })]
                 })]
             }), (0, n.jsx)(j.A, {
@@ -513,7 +513,7 @@ let M = function(e) {
                     }), (0, n.jsxs)("div", {
                         className: E.Ws,
                         style: {
-                            left: null != m ? `${g/m*100}%` : "0",
+                            left: null != m ? `${f/m*100}%` : "0",
                             right: null != m ? `${(m-v)/m*100}%` : "0"
                         },
                         children: [(0, n.jsx)(u.vN3, {
@@ -526,10 +526,10 @@ let M = function(e) {
                                 role: "slider",
                                 tabIndex: 0,
                                 "aria-valuemin": 0,
-                                "aria-valuenow": g,
-                                "aria-valuetext": R(g),
+                                "aria-valuenow": f,
+                                "aria-valuetext": R(f),
                                 "aria-valuemax": v - y.zj,
-                                "aria-label": N.intl.string(N.t["+BTvw8"]),
+                                "aria-label": A.intl.string(A.t["+BTvw8"]),
                                 children: (0, n.jsx)("div", {
                                     className: E.FV
                                 })
@@ -543,11 +543,11 @@ let M = function(e) {
                                 onKeyDown: el,
                                 role: "slider",
                                 tabIndex: 0,
-                                "aria-valuemin": g + y.zj,
+                                "aria-valuemin": f + y.zj,
                                 "aria-valuenow": v,
                                 "aria-valuetext": R(v),
                                 "aria-valuemax": m,
-                                "aria-label": N.intl.string(N.t.bBgBYo),
+                                "aria-label": A.intl.string(A.t.bBgBYo),
                                 children: (0, n.jsx)("div", {
                                     className: E.kn
                                 })
@@ -570,10 +570,10 @@ function T(e) {
 
 function R(e) {
     let t = Math.floor(e / 60),
-        l = N.intl.formatToPlainString(N.t.iXLF9W, {
+        l = A.intl.formatToPlainString(A.t.iXLF9W, {
             minutes: t
         }),
-        n = N.intl.formatToPlainString(N.t.geSp4K, {
+        n = A.intl.formatToPlainString(A.t.geSp4K, {
             seconds: e % 60
         });
     return `${l} ${n}`

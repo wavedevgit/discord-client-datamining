@@ -1,6 +1,6 @@
 /** chunk id: 107854 params = (module,exports,require) **/
-n.d(t, {
-    getApplicationPaymentSteps: () => m
+n.d(e, {
+    getApplicationPaymentSteps: () => p
 });
 var i = n(627968);
 n(64700);
@@ -13,30 +13,30 @@ var l = n(166532),
     c = n(758655),
     u = n(985018);
 
-function m(e) {
+function p(t) {
     let {
-        guildId: t,
+        guildId: e,
         showBenefitsFirst: n
-    } = e;
+    } = t;
     return [{
         key: null,
-        renderStep: e => (0, i.jsx)(d.A, {
+        renderStep: t => (0, i.jsx)(d.A, {
             initialStep: n ? l.pn.BENEFITS : l.pn.REVIEW,
-            guildId: t,
-            ...e
+            guildId: e,
+            ...t
         })
     }, {
         key: l.pn.BENEFITS,
-        renderStep: e => (0, i.jsx)(s.A, {
-            ...e
+        renderStep: t => (0, i.jsx)(s.A, {
+            ...t
         }),
         options: {
             useBreadcrumbLabel: () => u.intl.string(u.t["5LD2+B"])
         }
     }, {
         key: l.pn.ADD_PAYMENT_STEPS,
-        renderStep: e => (0, i.jsx)(r.x, {
-            ...e,
+        renderStep: t => (0, i.jsx)(r.x, {
+            ...t,
             breadcrumbSteps: [l.pn.ADD_PAYMENT_STEPS, l.pn.REVIEW, l.pn.CONFIRM]
         }),
         options: {
@@ -44,10 +44,10 @@ function m(e) {
         }
     }, ...a.hh, {
         key: l.pn.REVIEW,
-        renderStep: e => (0, i.jsx)(c.A, {
+        renderStep: t => (0, i.jsx)(c.A, {
             backButtonEligible: !!n || void 0,
             prevStep: n ? l.pn.BENEFITS : void 0,
-            ...e
+            ...t
         }),
         options: {
             renderHeader: !0,
@@ -55,9 +55,9 @@ function m(e) {
         }
     }, {
         key: l.pn.CONFIRM,
-        renderStep: e => (0, i.jsx)(o.A, {
+        renderStep: t => (0, i.jsx)(o.A, {
             showBenefits: !n,
-            ...e
+            ...t
         })
     }]
 }

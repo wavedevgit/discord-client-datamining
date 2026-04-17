@@ -4,8 +4,8 @@ n.d(t, {
     a: () => c,
     ff: () => u
 });
-var a = n(530493),
-    l = n(985018),
+var l = n(530493),
+    a = n(985018),
     i = n(833450),
     r = n(5678),
     s = n(623915),
@@ -13,26 +13,26 @@ var a = n(530493),
 
 function c(e) {
     switch (e) {
-        case a.h.MIGHTY:
-            return l.intl.string(l.t.aZej2g);
-        case a.h.STRONG:
-            return l.intl.string(l.t.MLxnSg);
-        case a.h.FAIR:
-            return l.intl.string(l.t["3f19KA"]);
-        case a.h.WEAK:
-            return l.intl.string(l.t.jtVgSh)
+        case l.h.MIGHTY:
+            return a.intl.string(a.t.aZej2g);
+        case l.h.STRONG:
+            return a.intl.string(a.t.MLxnSg);
+        case l.h.FAIR:
+            return a.intl.string(a.t["3f19KA"]);
+        case l.h.WEAK:
+            return a.intl.string(a.t.jtVgSh)
     }
 }
 
 function d(e) {
     switch (e) {
-        case a.h.MIGHTY:
+        case l.h.MIGHTY:
             return r.A;
-        case a.h.STRONG:
+        case l.h.STRONG:
             return s.A;
-        case a.h.FAIR:
+        case l.h.FAIR:
             return i.A;
-        case a.h.WEAK:
+        case l.h.WEAK:
             return o.A
     }
 }
@@ -40,16 +40,16 @@ function d(e) {
 function u(e) {
     let t = "";
     switch (e) {
-        case a.h.MIGHTY:
+        case l.h.MIGHTY:
             t = "#fc430a";
             break;
-        case a.h.STRONG:
+        case l.h.STRONG:
             t = "#9e00b4";
             break;
-        case a.h.FAIR:
+        case l.h.FAIR:
             t = "#4aa1ce";
             break;
-        case a.h.WEAK:
+        case l.h.WEAK:
             t = "#80b06a"
     }
     return {

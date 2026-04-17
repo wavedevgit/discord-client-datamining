@@ -1,18 +1,18 @@
 /** chunk id: 453854 params = (module,exports,require) **/
-a.d(t, {
+l.d(t, {
     A: () => c
 });
-var l = a(627968),
-    r = a(575593),
-    n = a(674658),
-    s = a(88686),
-    i = a(780898),
-    o = a(214881),
-    d = a(486020);
+var a = l(627968),
+    r = l(575593),
+    n = l(674658),
+    s = l(88686),
+    i = l(780898),
+    o = l(214881),
+    d = l(486020);
 let c = e => {
     let {
         skuId: t,
-        size: a = 128,
+        size: l = 128,
         animated: c = !1
     } = e, {
         product: u
@@ -21,24 +21,24 @@ let c = e => {
     if (x.type === r.R.AVATAR_DECORATION) {
         let e = d.Ay.getAvatarDecorationURL({
             avatarDecoration: x,
-            size: a,
+            size: l,
             canAnimate: c
         });
-        return null != e ? (0, l.jsx)("img", {
+        return null != e ? (0, a.jsx)("img", {
             src: e,
             alt: x.label
         }) : null
     }
     if (x.type === r.R.PROFILE_EFFECT) {
         let e = x.thumbnailPreviewSrc;
-        return (0, l.jsx)("img", {
+        return (0, a.jsx)("img", {
             src: e,
             alt: x.accessibilityLabel
         })
     }
     if (x.type === r.R.NAMEPLATE) {
         let e = (0, i.WK)(x);
-        return (0, l.jsx)(o.A, {
+        return (0, a.jsx)(o.A, {
             nameplate: e,
             placement: s.u.PREVIEW
         })

@@ -2,9 +2,9 @@
 n.d(t, {
     A: () => i
 });
-var a = n(52133),
-    l = n(510373);
+var l = n(52133),
+    a = n(510373);
 
 function i(e) {
-    return (0, l.A)(() => e, e, a.A)
+    return (0, a.A)(() => e, e, l.A)
 }

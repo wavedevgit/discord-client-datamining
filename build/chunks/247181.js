@@ -21,17 +21,17 @@ function x(e) {
         clip: l,
         onClose: x
     } = e, {
-        applicationAudioEnabled: f,
-        voiceAudioEnabled: g,
+        applicationAudioEnabled: g,
+        voiceAudioEnabled: f,
         soundboardAudioEnabled: v,
         cropStart: j,
         cropEnd: b,
         videoPlayerRef: C,
         videoURL: y,
-        audioTracks: N
-    } = (0, m.T)(), A = l.type === r.nQ.SCREENSHOT;
+        audioTracks: A
+    } = (0, m.T)(), N = l.type === r.nQ.SCREENSHOT;
     a.useEffect(() => {
-        if (!A) return document.addEventListener("keydown", e), () => document.removeEventListener("keydown", e);
+        if (!N) return document.addEventListener("keydown", e), () => document.removeEventListener("keydown", e);
 
         function e(e) {
             if (document.activeElement?.tagName === "INPUT" || document.activeElement?.role === "textbox") return;
@@ -53,8 +53,8 @@ function x(e) {
             }
             a && (e.stopPropagation(), e.preventDefault())
         }
-    }, [C, A, l.type, j, b]);
-    let E = a.useMemo(() => N.filter(e => e.trackName.includes(":voice")), [N]),
+    }, [C, N, l.type, j, b]);
+    let E = a.useMemo(() => A.filter(e => e.trackName.includes(":voice")), [A]),
         k = a.useCallback(() => {
             (0, s.R)({
                 items: [{
@@ -67,7 +67,7 @@ function x(e) {
                 location: "ClipsEditModal"
             }, "stack")
         }, [l.thumbnail, l.name]);
-    if (A) return (0, n.jsx)("div", {
+    if (N) return (0, n.jsx)("div", {
         className: p.OJ,
         children: t !== i.ip4.ENTERED ? (0, n.jsx)(d.A, {}) : (0, n.jsx)("div", {
             className: p.zT,
@@ -98,8 +98,8 @@ function x(e) {
                 })
             }), I ? (0, n.jsx)(d.A, {}) : (0, n.jsxs)(n.Fragment, {
                 children: [(0, n.jsx)(o.A, {
-                    applicationAudioEnabled: f,
-                    voiceAudioEnabled: g,
+                    applicationAudioEnabled: g,
+                    voiceAudioEnabled: f,
                     soundboardAudioEnabled: v,
                     ref: C,
                     clip: l

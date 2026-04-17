@@ -1,5 +1,5 @@
 /** chunk id: 530493 params = (module,exports,require) **/
 n.d(t, {
-    h: () => l
+    h: () => a
 });
-var a, l = ((a = {})[a.MIGHTY = 1] = "MIGHTY", a[a.STRONG = 2] = "STRONG", a[a.FAIR = 3] = "FAIR", a[a.WEAK = 4] = "WEAK", a)
+var l, a = ((l = {})[l.MIGHTY = 1] = "MIGHTY", l[l.STRONG = 2] = "STRONG", l[l.FAIR = 3] = "FAIR", l[l.WEAK = 4] = "WEAK", l)

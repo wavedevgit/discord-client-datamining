@@ -1,5 +1,5 @@
 /** chunk id: 252561 params = (module,exports,require) **/
-a.d(t, {
+l.d(t, {
     Hq: () => n.Hq,
     LB: () => n.LB,
     MG: () => n.MG,
@@ -9,17 +9,17 @@ a.d(t, {
     nB: () => n.nB,
     wn: () => n.wn
 });
-var l = a(627968),
-    r = a(397927),
-    n = a(441446);
-a(714126);
-var s = a(709772),
-    i = a(32058);
+var a = l(627968),
+    r = l(397927),
+    n = l(441446);
+l(714126);
+var s = l(709772),
+    i = l(32058);
 let o = e => {
     let {
         href: t
     } = e;
-    return (0, l.jsx)(r.MzZ, {
+    return (0, a.jsx)(r.MzZ, {
         href: t,
         children: t
     })

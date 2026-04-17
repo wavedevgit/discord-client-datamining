@@ -1,13 +1,13 @@
 /** chunk id: 876333 params = (module,exports,require) **/
-a.d(t, {
+l.d(t, {
     F: () => o
 });
-var l = a(585026),
-    r = a(580766),
-    n = a(950966),
-    s = a(86962),
-    i = a(300056);
+var a = l(585026),
+    r = l(580766),
+    n = l(950966),
+    s = l(86962),
+    i = l(300056);
 let o = {
     title: "Mana",
-    stories: [l.r, r.r, n.Z, s.O, i.a]
+    stories: [a.r, r.r, n.Z, s.O, i.a]
 }

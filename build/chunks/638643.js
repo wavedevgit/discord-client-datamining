@@ -47,10 +47,10 @@ async function I(t) {
             stackingBehavior: "stack"
         }), A = await t
     }
-    let P = u.A.getParentSKU(a.id),
-        N = null;
-    return null != P && ([N] = (0, c.wm)({
-        groupSku: P,
+    let N = u.A.getParentSKU(a.id),
+        P = null;
+    return null != N && ([P] = (0, c.wm)({
+        groupSku: N,
         SubscriptionStore: o.A,
         SubscriptionPlanStore: r.A,
         mapSubscriptionItems: c.W_,
@@ -58,7 +58,7 @@ async function I(t) {
     })), (0, s.A)({
         initialPlanId: i,
         skuId: a.id,
-        activeSubscription: N,
+        activeSubscription: P,
         applicationId: a.applicationId,
         planGroup: I,
         guildId: A,

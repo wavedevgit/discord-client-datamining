@@ -1,35 +1,35 @@
 /** chunk id: 920324 params = (module,exports,require) **/
-a.d(t, {
+l.d(t, {
     t: () => m
 });
-var l = a(627968),
-    r = a(64700),
-    n = a(397927),
-    s = a(561769),
-    i = a(41770),
-    o = a(53566),
-    d = a(148702),
-    c = a(785330),
-    u = a(652215),
-    x = a(985018),
-    h = a(692914);
+var a = l(627968),
+    r = l(64700),
+    n = l(397927),
+    s = l(561769),
+    i = l(41770),
+    o = l(53566),
+    d = l(148702),
+    c = l(785330),
+    u = l(652215),
+    x = l(985018),
+    h = l(692914);
 let m = {
     title: "Layout Builder",
     stories: [{
         name: "Layout Builder",
         id: "layout-builder",
         component: () => {
-            let [e, t] = r.useState(JSON.stringify(i.uG, null, 2)), [a, n] = r.useState(e);
+            let [e, t] = r.useState(JSON.stringify(i.uG, null, 2)), [l, n] = r.useState(e);
             return r.useEffect(() => {
                 try {
                     (0, c.F2)(JSON.parse(e)) && n(e)
                 } catch {}
-            }, [e]), (0, l.jsxs)("div", {
-                children: [(0, l.jsx)(d.A, {
+            }, [e]), (0, a.jsxs)("div", {
+                children: [(0, a.jsx)(d.A, {
                     value: e,
                     onChange: e => t(e)
-                }), (0, l.jsx)("hr", {}), (0, l.jsx)(c.Ay, {
-                    layout: JSON.parse(a)
+                }), (0, a.jsx)("hr", {}), (0, a.jsx)(c.Ay, {
+                    layout: JSON.parse(l)
                 })]
             })
         },
@@ -120,11 +120,11 @@ let m = {
                     }]
                 }]
             };
-            return (0, l.jsxs)("div", {
+            return (0, a.jsxs)("div", {
                 style: {
                     position: "relative"
                 },
-                children: [(0, l.jsx)("div", {
+                children: [(0, a.jsx)("div", {
                     style: {
                         position: "absolute",
                         width: "100%",
@@ -137,15 +137,15 @@ let m = {
                         backgroundSize: "contain",
                         backgroundRepeat: "no-repeat"
                     }
-                }), (0, l.jsx)(s.v3.Provider, {
+                }), (0, a.jsx)(s.v3.Provider, {
                     value: {
                         prioritizedCurrency: s.Hi.ORBS
                     },
-                    children: (0, l.jsx)("div", {
+                    children: (0, a.jsx)("div", {
                         style: {
                             position: "relative"
                         },
-                        children: (0, l.jsx)(c.Ay, {
+                        children: (0, a.jsx)(c.Ay, {
                             layout: e
                         })
                     })
@@ -159,11 +159,11 @@ let m = {
         component: e => {
             let {
                 layoutId: t,
-                tenantId: a
+                tenantId: l
             } = e;
-            return (0, l.jsx)(c.Qs, {
+            return (0, a.jsx)(c.Qs, {
                 layoutId: t,
-                tenantId: a
+                tenantId: l
             })
         },
         controls: {
@@ -184,11 +184,11 @@ let m = {
         component: e => {
             let {
                 templateId: t,
-                tenantId: a
+                tenantId: l
             } = e;
-            return (0, l.jsx)(c.Z_, {
+            return (0, a.jsx)(c.Z_, {
                 templateId: t,
-                tenantId: a
+                tenantId: l
             })
         },
         controls: {
@@ -209,7 +209,7 @@ let m = {
         component: e => {
             let {
                 lightAsset: t,
-                darkAsset: a
+                darkAsset: l
             } = e, r = {
                 id: "themed-images",
                 children: [{
@@ -217,7 +217,7 @@ let m = {
                     backgroundImage: {
                         src: {
                             light: t,
-                            dark: a
+                            dark: l
                         }
                     },
                     children: [{
@@ -239,7 +239,7 @@ let m = {
                     }]
                 }]
             };
-            return (0, l.jsx)(c.Ay, {
+            return (0, a.jsx)(c.Ay, {
                 layout: r
             })
         },
@@ -263,20 +263,20 @@ let m = {
                 text: t
             } = e;
             (0, x.useSyncMessages)(h.c);
-            let a = (0, o.S)(t);
-            return (0, l.jsxs)("div", {
-                children: [(0, l.jsxs)(n.Text, {
+            let l = (0, o.S)(t);
+            return (0, a.jsxs)("div", {
+                children: [(0, a.jsxs)(n.Text, {
                     variant: "text-lg/bold",
                     children: ["Any registered string key can be used to reference client-side international strings", " "]
-                }), (0, l.jsx)(n.Text, {
+                }), (0, a.jsx)(n.Text, {
                     variant: "text-md/normal",
                     children: "Strings are registered in `useCmsString.tsx`"
-                }), (0, l.jsx)("br", {}), (0, l.jsx)("hr", {}), (0, l.jsx)("br", {}), (0, l.jsxs)(n.Text, {
+                }), (0, a.jsx)("br", {}), (0, a.jsx)("hr", {}), (0, a.jsx)("br", {}), (0, a.jsxs)(n.Text, {
                     variant: "text-md/semibold",
                     children: ["Received: ", t]
-                }), (0, l.jsxs)(n.Text, {
+                }), (0, a.jsxs)(n.Text, {
                     variant: "text-md/semibold",
-                    children: ["Resolved: ", a]
+                    children: ["Resolved: ", l]
                 })]
             })
         },

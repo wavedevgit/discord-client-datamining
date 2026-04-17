@@ -16,15 +16,15 @@ var n = l(627968),
     h = l(688810),
     p = l(274372),
     x = l(247181),
-    f = l(309777),
-    g = l(429364),
+    g = l(309777),
+    f = l(429364),
     v = l(794905),
     j = l(219480),
     b = l(650995),
     C = l(792852),
     y = l(409067),
-    N = l(985018),
-    A = l(847455);
+    A = l(985018),
+    N = l(847455);
 let E = a.createContext({
     selectedClipIds: new Set,
     toggleClipSelection: () => {},
@@ -50,7 +50,7 @@ function k(e) {
         onShareClick: P
     } = (0, v.A)(t), U = (0, r.bG)([p.A], () => p.A.getExportingClipIds().length > 0), [G, V] = a.useState("gallery"), [z, H] = a.useState(null), $ = (0, r.bG)([p.A], () => null != z ? p.A.getClipById(z) : null, [z]), _ = a.useRef(G);
     _.current = G;
-    let [K, B] = a.useState(c.ip4.HIDDEN), F = a.useRef(null), X = (0, C.P)(e => e.selectedGameId), Y = a.useMemo(() => null == X || "favorites" === X ? null : T.find(e => e.applicationId === X) ?? null, [X, T]), Q = a.useMemo(() => "favorites" === X ? D : Y?.filteredClips ?? R, [X, Y, R, D]), q = a.useMemo(() => "favorites" === X ? N.intl.string(N.t["9rlCk1"]) : Y?.name ?? N.intl.string(N.t.dPVrEv), [X, Y]), W = a.useCallback(e => {
+    let [K, B] = a.useState(c.ip4.HIDDEN), F = a.useRef(null), X = (0, C.P)(e => e.selectedGameId), Y = a.useMemo(() => null == X || "favorites" === X ? null : T.find(e => e.applicationId === X) ?? null, [X, T]), Q = a.useMemo(() => "favorites" === X ? D : Y?.filteredClips ?? R, [X, Y, R, D]), q = a.useMemo(() => "favorites" === X ? A.intl.string(A.t["9rlCk1"]) : Y?.name ?? A.intl.string(A.t.dPVrEv), [X, Y]), W = a.useCallback(e => {
         M(t => {
             let l = new Set(t);
             return l.has(e) ? l.delete(e) : l.add(e), l
@@ -110,10 +110,10 @@ function k(e) {
                 transitionState: I,
                 ...S,
                 children: (0, n.jsxs)("div", {
-                    className: A.jT,
+                    className: N.jT,
                     ref: F,
                     children: [(0, n.jsxs)("div", {
-                        className: s()(A.PD, "gallery" === G && A.vu),
+                        className: s()(N.PD, "gallery" === G && N.vu),
                         "aria-hidden": "gallery" !== G,
                         children: [(0, n.jsx)(b.A, {
                             clipsByGame: T,
@@ -121,34 +121,34 @@ function k(e) {
                             favoriteClips: D,
                             allClips: O
                         }), (0, n.jsxs)("div", {
-                            className: A.Qs,
+                            className: N.Qs,
                             children: [(0, n.jsxs)("div", {
-                                className: A.$Q,
+                                className: N.$Q,
                                 children: [(0, n.jsx)(c.Heading, {
                                     variant: "heading-md/medium",
                                     color: "text-default",
                                     children: q
                                 }), (0, n.jsxs)("div", {
-                                    className: A.$s,
+                                    className: N.$s,
                                     children: [et && (0, n.jsxs)(n.Fragment, {
                                         children: [(0, n.jsx)(d.m, {
-                                            text: N.intl.string(N.t.RDE0Sc),
+                                            text: A.intl.string(A.t.RDE0Sc),
                                             children: (0, n.jsx)(c.K0, {
                                                 onClick: en,
                                                 icon: c.liv,
                                                 size: "sm",
                                                 variant: "icon-only",
-                                                "aria-label": N.intl.string(N.t.RDE0Sc),
+                                                "aria-label": A.intl.string(A.t.RDE0Sc),
                                                 loading: U
                                             })
                                         }), (0, n.jsx)(d.m, {
-                                            text: N.intl.string(N.t.oyYWHE),
+                                            text: A.intl.string(A.t.oyYWHE),
                                             children: (0, n.jsx)(c.K0, {
                                                 onClick: el,
                                                 icon: c.ucK,
                                                 size: "sm",
                                                 variant: "icon-only",
-                                                "aria-label": N.intl.string(N.t.oyYWHE)
+                                                "aria-label": A.intl.string(A.t.oyYWHE)
                                             })
                                         })]
                                     }), (0, n.jsx)(c.K0, {
@@ -156,7 +156,7 @@ function k(e) {
                                         icon: c.d$L,
                                         size: "sm",
                                         variant: "icon-only",
-                                        "aria-label": N.intl.string(N.t.cpT0Cq)
+                                        "aria-label": A.intl.string(A.t.cpT0Cq)
                                     })]
                                 })]
                             }), (0, n.jsx)(j.A, {
@@ -168,19 +168,19 @@ function k(e) {
                             })]
                         })]
                     }), (0, n.jsx)("div", {
-                        className: s()(A.jN, "editing" === G && A.vu),
+                        className: s()(N.jN, "editing" === G && N.vu),
                         "aria-hidden": "editing" !== G,
                         onTransitionEnd: () => {
                             "gallery" === G ? (H(null), B(c.ip4.HIDDEN)) : "editing" === G && B(c.ip4.ENTERED)
                         },
-                        children: null != $ && (0, n.jsxs)(g.p, {
+                        children: null != $ && (0, n.jsxs)(f.p, {
                             clip: $,
                             modalContainerRef: F,
                             children: [(0, n.jsx)(x.A, {
                                 clip: $,
                                 transitionState: K,
                                 onClose: J
-                            }), (0, n.jsx)(f.A, {
+                            }), (0, n.jsx)(g.A, {
                                 channelId: t,
                                 clip: $,
                                 onClose: J

@@ -1522,9 +1522,6 @@ function D() {
             experimentName: m.W2.definition.name,
             options: k
         }), (0, a.jsx)(w, {
-            experimentName: m.nG.definition.name,
-            options: k
-        }), (0, a.jsx)(w, {
             experimentName: m._$.definition.name,
             options: k
         }), (0, a.jsx)(w, {

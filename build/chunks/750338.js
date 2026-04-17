@@ -31,8 +31,8 @@ let R = e => {
         shouldLoadVideo: M,
         index: I,
         customVideoStyle: P,
-        isReducedMotion: S,
-        onClick: N,
+        isReducedMotion: N,
+        onClick: S,
         badgeText: U,
         badgeVariant: T = "gradient",
         size: O,
@@ -45,16 +45,16 @@ let R = e => {
             box_type: (0, l.snakeCase)(t)
         })
     }, 800), [t]), X = () => {
-        null == k.current || S || (k.current.currentTime = B.current, k.current.play()), S || C?.current?.play()
+        null == k.current || N || (k.current.currentTime = B.current, k.current.play()), N || C?.current?.play()
     }, z = () => {
-        null == k.current || S || (B.current = k.current.currentTime, k.current.pause()), S || C?.current?.pause()
+        null == k.current || N || (B.current = k.current.currentTime, k.current.pause()), N || C?.current?.pause()
     }, K = O === h.A0.LARGE ? "heading-xxl/bold" : "heading-xl/bold", Q = () => {
-        let e = null != R && null != N,
+        let e = null != R && null != S,
             t = null != w && w.length > 0;
         if (!e && !t) return null;
         let a = e ? [{
             variant: "secondary",
-            onClick: N,
+            onClick: S,
             text: R
         }] : w;
         return (0, s.jsx)("div", {

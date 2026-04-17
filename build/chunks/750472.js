@@ -1,45 +1,45 @@
 /** chunk id: 750472 params = (module,exports,require) **/
-a.d(t, {
+l.d(t, {
     D: () => i
 });
-var l = a(627968),
-    r = a(397927),
-    n = a(673277),
-    s = a(190503);
+var a = l(627968),
+    r = l(397927),
+    n = l(673277),
+    s = l(190503);
 let i = {
     name: "Image",
     id: "cms-image",
     component: e => {
         let {
             imageSrc: t,
-            videoSrc: a
+            videoSrc: l
         } = e;
-        return (0, l.jsxs)("div", {
-            children: [(0, l.jsxs)(n.A, {
-                children: [(0, l.jsx)(r.Text, {
+        return (0, a.jsxs)("div", {
+            children: [(0, a.jsxs)(n.A, {
+                children: [(0, a.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     children: "Static image"
-                }), (0, l.jsx)("div", {
+                }), (0, a.jsx)("div", {
                     style: {
                         height: 200
                     },
-                    children: (0, l.jsx)(s.A, {
+                    children: (0, a.jsx)(s.A, {
                         src: {
                             src: t
                         }
                     })
                 })]
-            }), (0, l.jsxs)(n.A, {
-                children: [(0, l.jsx)(r.Text, {
+            }), (0, a.jsxs)(n.A, {
+                children: [(0, a.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     children: "Video asset"
-                }), (0, l.jsx)("div", {
+                }), (0, a.jsx)("div", {
                     style: {
                         height: 200
                     },
-                    children: (0, l.jsx)(s.A, {
+                    children: (0, a.jsx)(s.A, {
                         src: {
-                            src: a
+                            src: l
                         }
                     })
                 })]

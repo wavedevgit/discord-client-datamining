@@ -1,9 +1,9 @@
 /** chunk id: 999450 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => x
 });
-var a = n(627968),
-    l = n(64700),
+var l = n(627968),
+    a = n(64700),
     i = n(793574),
     r = n(688810),
     s = n(44724),
@@ -13,40 +13,40 @@ var a = n(627968),
     u = n(305080),
     m = n(954506),
     f = n(652215),
-    x = n(985018);
+    h = n(985018);
 
-function h(e) {
+function x(e) {
     let {
         trackAction: t
     } = e, {
         socialLayerStorefrontRecommendationsData: n,
-        closeModal: h
+        closeModal: x
     } = (0, u.c)(), {
         analyticsLocations: g
-    } = (0, r.Ay)([i.A.GAME_PROFILE]), p = l.useCallback(() => {
-        n?.guildId != null && (t(d.Ws.GameShop), h(), (0, s.default)({
+    } = (0, r.Ay)([i.A.GAME_PROFILE]), p = a.useCallback(() => {
+        n?.guildId != null && (t(d.Ws.GameShop), x(), (0, s.default)({
             guildId: n.guildId
         }))
-    }, [n, t, h]), _ = l.useCallback((e, a) => {
-        let l = n?.guildId;
-        null != l && (t(d.Ws.GameShopItem), (0, o.R)({
+    }, [n, t, x]), _ = a.useCallback((e, l) => {
+        let a = n?.guildId;
+        null != a && (t(d.Ws.GameShopItem), (0, o.R)({
             skuId: e,
-            applicationId: a,
+            applicationId: l,
             isStorefront: !1,
             analyticsLocations: g,
             onClose: () => {
-                location.pathname.indexOf(f.BVt.CHANNELS_GAME_SHOP(l)) >= 0 && h()
+                location.pathname.indexOf(f.BVt.CHANNELS_GAME_SHOP(a)) >= 0 && x()
             }
         }))
-    }, [t, h, g, n]);
+    }, [t, x, g, n]);
     if (null == n) return null;
     let {
         skuIds: v
     } = n;
-    return (0, a.jsx)(m.A, {
-        title: x.intl.string(x.t.WDdlUb),
+    return (0, l.jsx)(m.A, {
+        title: h.intl.string(h.t.WDdlUb),
         onClickViewAll: p,
-        children: (0, a.jsx)(c.R, {
+        children: (0, l.jsx)(c.R, {
             skuIds: v,
             analyticsLocations: g,
             onCardClick: _

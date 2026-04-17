@@ -1,10 +1,10 @@
 /** chunk id: 556810 params = (module,exports,require) **/
-a.d(t, {
+l.d(t, {
     l: () => n
 });
-var l = a(627968);
-a(64700);
-var r = a(954644);
+var a = l(627968);
+l(64700);
+var r = l(954644);
 let n = {
     name: "ShopProductCard",
     id: "shopProduct-card",
@@ -12,8 +12,8 @@ let n = {
         let {
             skuId: t
         } = e;
-        return (0, l.jsx)("div", {
-            children: (0, l.jsx)(r.A, {
+        return (0, a.jsx)("div", {
+            children: (0, a.jsx)(r.A, {
                 skuId: t
             })
         })

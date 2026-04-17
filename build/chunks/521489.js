@@ -1,12 +1,12 @@
 /** chunk id: 521489 params = (module,exports,require) **/
 n.d(t, {
-    N: () => x
+    N: () => h
 });
-var a = n(627968),
-    l = n(64700),
+var l = n(627968),
+    a = n(64700),
     i = n(503698),
     r = n.n(i),
-    s = n(407045),
+    s = n(825638),
     o = n(110259),
     c = n(158954),
     d = n(397927),
@@ -14,48 +14,48 @@ var a = n(627968),
     m = n(382450),
     f = n(967744);
 
-function x(e) {
+function h(e) {
     let {
         transitionState: t,
         animationVariant: n = "default",
         returnRef: i,
-        "aria-label": x,
-        onClose: h,
+        "aria-label": h,
+        onClose: x,
         trackingProps: g,
         children: p
-    } = e, _ = l.useId(), v = l.useMemo(() => ({
+    } = e, _ = a.useId(), v = a.useMemo(() => ({
         id: _,
         headingId: `heading-${_}`,
-        onClose: h,
+        onClose: x,
         dismissable: !0
-    }), [_, h]), A = (0, u.NC)(), {
+    }), [_, x]), A = (0, u.NC)(), {
         theme: b
     } = (0, d.wRf)(), E = (0, c.kSI)(t, n);
-    return (0, a.jsx)(c.Vs9.Provider, {
+    return (0, l.jsx)(c.Vs9.Provider, {
         value: v,
-        children: (0, a.jsx)(d.lGe, {
+        children: (0, l.jsx)(d.lGe, {
             id: _,
             role: "dialog",
-            "aria-label": x,
-            "aria-labelledby": null != x ? void 0 : v.headingId,
+            "aria-label": h,
+            "aria-labelledby": null != h ? void 0 : v.headingId,
             returnRef: i,
             ...g,
             impressionType: g?.impressionType ?? o.ImpressionTypes.MODAL,
-            children: (0, a.jsx)(c.Fmo, {
+            children: (0, l.jsx)(c.Fmo, {
                 forceLevel: 1,
-                children: (0, a.jsx)("div", {
+                children: (0, l.jsx)("div", {
                     className: m.nw,
-                    children: (0, a.jsx)(d.NPJ, {
+                    children: (0, l.jsx)(d.NPJ, {
                         theme: A,
-                        children: e => (0, a.jsx)(s.animated.div, {
+                        children: e => (0, l.jsx)(s.animated.div, {
                             "data-mana-component": "layer-modal",
                             className: r()(f.container, m.yl, e),
                             style: E,
-                            children: (0, a.jsx)("div", {
+                            children: (0, l.jsx)("div", {
                                 className: m.jE,
-                                children: (0, a.jsx)(d.NPJ, {
+                                children: (0, l.jsx)(d.NPJ, {
                                     theme: b,
-                                    children: e => (0, a.jsx)("div", {
+                                    children: e => (0, l.jsx)("div", {
                                         className: r()(e, m.h_),
                                         children: p
                                     })

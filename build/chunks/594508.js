@@ -1,5 +1,5 @@
 /** chunk id: 594508 params = (module,exports,require) **/
-n.d(t, {
+n.d(e, {
     E: () => d,
     v: () => c
 });
@@ -10,15 +10,15 @@ var l = n(732955),
     a = n(701273),
     s = n(985018),
     o = n(425013);
-let d = e => {
+let d = t => {
     let {
-        onConfirm: t,
+        onConfirm: e,
         onCancel: n,
         title: d,
         subtitle: c,
         confirmCta: u,
-        showOpenDiscord: m = !0
-    } = e;
+        showOpenDiscord: p = !0
+    } = t;
     return (0, i.jsxs)("div", {
         className: o.RP,
         children: [(0, i.jsx)(r.Heading, {
@@ -32,7 +32,7 @@ let d = e => {
             children: c
         }) : null, (0, i.jsxs)("div", {
             className: o.UD,
-            children: [m && (0, i.jsx)(l.$nd, {
+            children: [p && (0, i.jsx)(l.$nd, {
                 variant: "primary",
                 text: s.intl.string(s.t["8L5bZG"]),
                 fullWidth: !0,
@@ -41,7 +41,7 @@ let d = e => {
                 variant: "secondary",
                 text: u,
                 fullWidth: !0,
-                onClick: t
+                onClick: e
             }), null != n && (0, i.jsx)(l.$nd, {
                 variant: "secondary",
                 text: s.intl.string(s.t.iAfxo3),
@@ -52,12 +52,12 @@ let d = e => {
     })
 };
 
-function c(e) {
+function c(t) {
     let {
-        onConfirm: t,
+        onConfirm: e,
         tierName: n,
         subscription: d
-    } = e;
+    } = t;
     return (0, i.jsxs)("div", {
         className: o.RP,
         children: [(0, i.jsx)(r.Heading, {
@@ -86,7 +86,7 @@ function c(e) {
             }), (0, i.jsx)(l.$nd, {
                 variant: "secondary",
                 text: s.intl.string(s.t.nlkywz),
-                onClick: t
+                onClick: e
             })]
         })]
     })

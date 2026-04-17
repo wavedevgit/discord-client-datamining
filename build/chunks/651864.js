@@ -2,8 +2,8 @@
 n.d(t, {
     A: () => v
 }), n(321073);
-var a = n(627968),
-    l = n(64700),
+var l = n(627968),
+    a = n(64700),
     i = n(540185),
     r = n(311907),
     s = n(397927),
@@ -13,21 +13,21 @@ var a = n(627968),
     u = n(289173),
     m = n(622543),
     f = n(958805),
-    x = n(735321),
-    h = n(961350),
+    h = n(735321),
+    x = n(961350),
     g = n(760751),
     p = n(985018);
 async function _(e) {
-    let t = e((0, x.BF)());
+    let t = e((0, h.BF)());
     await f.A.savePendingWidgets(t.filter(e => !e.isDiscardable()))
 }
 
 function v(e) {
     let t = e?.id,
         n = e?.name ?? "",
-        f = (0, r.bG)([h.default], () => h.default.getId()),
+        f = (0, r.bG)([x.default], () => x.default.getId()),
         v = (0, r.bG)([g.A], () => g.A.getDetectableGame(t)),
-        A = l.useMemo(() => [{
+        A = a.useMemo(() => [{
             type: i.x.FAVORITE_GAMES,
             addLabel: p.intl.string(p.t.fgmitg),
             removeLabel: p.intl.string(p.t.TSGNQY),
@@ -56,7 +56,7 @@ function v(e) {
         E = (0, o.w$)({
             location: "game-profile-overflow-menu"
         }),
-        j = l.useMemo(() => {
+        j = a.useMemo(() => {
             if (null == E || 0 === E.length) return null;
             if (null != e) {
                 if (E.some(t => t.applicationId === e.id)) return e.id;
@@ -65,43 +65,43 @@ function v(e) {
             }
             return null
         }, [E, e]),
-        I = l.useCallback(async (e, n) => {
-            let a = null;
-            if (await _(l => {
-                    let i = l.filter(u.fu).find(t => t.type === e) ?? null;
+        I = a.useCallback(async (e, n) => {
+            let l = null;
+            if (await _(a => {
+                    let i = a.filter(u.fu).find(t => t.type === e) ?? null;
                     if (n) {
-                        if (i?.games.some(e => e.applicationId === t) || null != i && (0, x.uA)(i)) return l;
+                        if (i?.games.some(e => e.applicationId === t) || null != i && (0, h.uA)(i)) return a;
                         let n = {
                                 applicationId: t
                             },
                             r = null != i ? [n, ...i.games ?? []] : [n];
-                        a = new u.Yy({
+                        l = new u.Yy({
                             ...i ?? {
                                 type: e
                             },
                             games: r
                         })
                     } else {
-                        if (null == i) return l;
+                        if (null == i) return a;
                         let e = i.games.filter(e => e.applicationId !== t);
-                        a = new u.Yy({
+                        l = new u.Yy({
                             ...i,
                             games: e
                         })
                     }
-                    var r = a;
-                    let s = l.findIndex(e => e.getUniqueKey() === r.getUniqueKey());
-                    if (-1 === s) return [r, ...l];
-                    let o = [...l];
+                    var r = l;
+                    let s = a.findIndex(e => e.getUniqueKey() === r.getUniqueKey());
+                    if (-1 === s) return [r, ...a];
+                    let o = [...a];
                     return o[s] = r, o
-                }), null == a) return;
-            let l = a;
+                }), null == l) return;
+            let a = l;
             (0, c.un)({
                 action: n ? "GAME_ADDED" : "GAME_REMOVED",
-                ...l.getProfileEditAnalyticsOptions()
+                ...a.getProfileEditAnalyticsOptions()
             })
         }, [t]),
-        C = l.useCallback(async e => {
+        C = a.useCallback(async e => {
             if (null == j) return;
             let t = null;
             if (await _(n => e ? n.some(e => e instanceof d.R && e.applicationId === j) ? n : [t = new d.R({
@@ -114,11 +114,11 @@ function v(e) {
             })
         }, [j]);
     if (null == f) return null;
-    let N = null != e && null != v && (0, x.XX)(v),
+    let N = null != e && null != v && (0, h.XX)(v),
         S = [];
     if (null != j) {
         let e = b.some(e => e instanceof d.R && e.applicationId === j);
-        S.push((0, a.jsx)(s.Drp, {
+        S.push((0, l.jsx)(s.Drp, {
             id: "game-profile-app-widget",
             label: e ? p.intl.formatToPlainString(p.t.Ktb1n8, {
                 name: n
@@ -135,14 +135,14 @@ function v(e) {
     if (N)
         for (let e of A) {
             let n = b.filter(u.fu).find(t => t.type === e.type) ?? null,
-                l = null != n && n.games.some(e => e.applicationId === t),
-                i = !l && null != n && (0, x.uA)(n);
-            S.push((0, a.jsx)(s.Drp, {
+                a = null != n && n.games.some(e => e.applicationId === t),
+                i = !a && null != n && (0, h.uA)(n);
+            S.push((0, l.jsx)(s.Drp, {
                 id: e.menuId,
-                label: l ? e.removeLabel : e.addLabel,
+                label: a ? e.removeLabel : e.addLabel,
                 subtext: i ? p.intl.string(p.t["86OoiH"]) : void 0,
                 subtextLineClamp: 1,
-                action: () => I(e.type, !l),
+                action: () => I(e.type, !a),
                 leadingAccessory: {
                     type: "icon",
                     icon: e.icon

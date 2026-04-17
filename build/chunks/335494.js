@@ -19,20 +19,20 @@ let p = new Map,
             clipId: t,
             voiceAudioTracks: i,
             onMouseDown: x,
-            className: f
-        } = e, g = a.useRef(null), {
+            className: g
+        } = e, f = a.useRef(null), {
             ref: v,
             width: j,
             height: b
-        } = (0, o.Ay)(), [C, y] = a.useState(null), N = (0, d.rdh)(r.A.colors.BACKGROUND_MOD_STRONG).hex();
-        return (a.useEffect(() => (g.current = new Worker(new URL("/assets/" + l.u("33197"), l.b)), () => {
-            g.current?.terminate()
+        } = (0, o.Ay)(), [C, y] = a.useState(null), A = (0, d.rdh)(r.A.colors.BACKGROUND_MOD_STRONG).hex();
+        return (a.useEffect(() => (f.current = new Worker(new URL("/assets/" + l.u("33197"), l.b)), () => {
+            f.current?.terminate()
         }), []), a.useEffect(() => {
-            if (0 === j || 0 === i.length || null == g.current) return;
+            if (0 === j || 0 === i.length || null == f.current) return;
             let e = `${t}-${i.map(e=>e.trackName).join(",")}-${j}`,
                 l = p.get(e);
             if (null != l) return void y(l.waveform);
-            let n = g.current,
+            let n = f.current,
                 a = !1,
                 s = t => {
                     if (a) return;
@@ -79,14 +79,14 @@ let p = new Map,
                 width: l,
                 height: n
             } = e, a = l / C.length, i = -(a * (m.Jh.waveformBarWidth - 1));
-            t.clearRect(0, 0, l, n), t.fillStyle = N;
+            t.clearRect(0, 0, l, n), t.fillStyle = A;
             for (let e = 0; e < C.length; e++) {
                 let l = C[e] * n,
                     s = e * a + i;
                 t.fillRect(s, n, a - i, -l)
             }
-        }, [N, j, v, b, C]), 0 === i.length) ? null : (0, n.jsx)("div", {
-            className: s()(h.k, f),
+        }, [A, j, v, b, C]), 0 === i.length) ? null : (0, n.jsx)("div", {
+            className: s()(h.k, g),
             children: (0, n.jsx)("canvas", {
                 className: h.s,
                 ref: v,

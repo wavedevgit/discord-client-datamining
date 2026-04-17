@@ -2,14 +2,14 @@
 n.d(t, {
     Y: () => i
 });
-var a = n(505779);
-let l = [a.V.OFFICIAL, a.V.FACEBOOK, a.V.TWITTER, a.V.INSTAGRAM, a.V.YOUTUBE, a.V.BLUESKY, a.V.REDDIT, a.V.TWITCH];
+var l = n(505779);
+let a = [l.V.OFFICIAL, l.V.FACEBOOK, l.V.TWITTER, l.V.INSTAGRAM, l.V.YOUTUBE, l.V.BLUESKY, l.V.REDDIT, l.V.TWITCH];
 
 function i(e) {
     return (e?.websites ?? []).filter(e => {
         let {
             category: t
         } = e;
-        return l.includes(t)
-    }).sort((e, t) => l.indexOf(e.category) - l.indexOf(t.category))
+        return a.includes(t)
+    }).sort((e, t) => a.indexOf(e.category) - a.indexOf(t.category))
 }

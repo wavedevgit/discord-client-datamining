@@ -1,13 +1,13 @@
 /** chunk id: 715185 params = (module,exports,require) **/
-a.d(t, {
+l.d(t, {
     H: () => d,
     M: () => o
 });
-var l = a(627968);
-a(64700);
-var r = a(397927),
-    n = a(41770),
-    s = a(785330);
+var a = l(627968);
+l(64700);
+var r = l(397927),
+    n = l(41770),
+    s = l(785330);
 let i = {
         id: "dummy-show-of-skeletons",
         children: [{
@@ -81,17 +81,17 @@ let i = {
     o = {
         name: "SubLayout",
         id: "sub-layout-basic",
-        component: () => (0, l.jsxs)("div", {
-            children: [(0, l.jsx)(r.Heading, {
+        component: () => (0, a.jsxs)("div", {
+            children: [(0, a.jsx)(r.Heading, {
                 variant: "heading-lg/bold",
                 children: 'The SubLayout component accepts a layout id and "get or fetch"es the layout'
-            }), (0, l.jsx)(r.Text, {
+            }), (0, a.jsx)(r.Text, {
                 variant: "text-md/semibold",
                 children: "When resolved, the layout trees are merged into one layout. This allows for the asynchronous resolution of layouts, for faster first paints"
-            }), (0, l.jsx)(r.Text, {
+            }), (0, a.jsx)(r.Text, {
                 variant: "text-md/semibold",
                 children: "Here, the \"popular picks\" are actually a sub layout with the id 'dummy-popular-picks'"
-            }), (0, l.jsx)("br", {}), (0, l.jsx)("hr", {}), (0, l.jsx)("br", {}), (0, l.jsx)(s.Ay, {
+            }), (0, a.jsx)("br", {}), (0, a.jsx)("hr", {}), (0, a.jsx)("br", {}), (0, a.jsx)(s.Ay, {
                 layout: n.uG
             })]
         }),
@@ -100,14 +100,14 @@ let i = {
     d = {
         name: "SubLayout - Loading State",
         id: "sub-layout-skeleton",
-        component: () => (0, l.jsxs)("div", {
-            children: [(0, l.jsx)(r.Heading, {
+        component: () => (0, a.jsxs)("div", {
+            children: [(0, a.jsx)(r.Heading, {
                 variant: "heading-lg/bold",
                 children: 'The SubLayout can take a "Skeleton" property which is just `children` to display if the layout is being fetched from the api'
-            }), (0, l.jsx)(r.Text, {
+            }), (0, a.jsx)(r.Text, {
                 variant: "text-md/semibold",
                 children: "Here we use the `Skeleton` component to show the shop cards loading while the (dummy) Shop Cards SubLayout are resolving (it will never stop loading for demonstration purposes)"
-            }), (0, l.jsx)("br", {}), (0, l.jsx)("hr", {}), (0, l.jsx)("br", {}), (0, l.jsx)(s.Ay, {
+            }), (0, a.jsx)("br", {}), (0, a.jsx)("hr", {}), (0, a.jsx)("br", {}), (0, a.jsx)(s.Ay, {
                 layout: i
             })]
         }),

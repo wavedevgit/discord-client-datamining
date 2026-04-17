@@ -1,63 +1,63 @@
 /** chunk id: 184247 params = (module,exports,require) **/
-a.d(t, {
+l.d(t, {
     x: () => d
 });
-var l = a(627968);
-a(64700);
-var r = a(397927),
-    n = a(219561),
-    s = a(261225),
-    i = a(673277),
-    o = a(427941);
+var a = l(627968);
+l(64700);
+var r = l(397927),
+    n = l(219561),
+    s = l(261225),
+    i = l(673277),
+    o = l(427941);
 let d = {
     name: "BackgroundImage",
     id: "background-image",
     component: e => {
         let {
             backgroundImage: t,
-            secondBackgroundImage: a
+            secondBackgroundImage: l
         } = e;
-        return (0, l.jsxs)("div", {
-            children: [(0, l.jsx)(r.Text, {
+        return (0, a.jsxs)("div", {
+            children: [(0, a.jsx)(r.Text, {
                 variant: "text-lg/semibold",
                 children: "Background Image just takes children and displays them in with a background image behind them, and some padding to add inset"
-            }), (0, l.jsx)(o.A, {
+            }), (0, a.jsx)(o.A, {
                 backgroundImage: {
                     src: t
                 },
-                children: (0, l.jsx)(i.A, {
-                    children: (0, l.jsx)(s.A, {
+                children: (0, a.jsx)(i.A, {
+                    children: (0, a.jsx)(s.A, {
                         columns: 2,
-                        children: (0, l.jsxs)(n.Kp, {
+                        children: (0, a.jsxs)(n.Kp, {
                             direction: "vertical",
-                            children: [(0, l.jsx)(r.Heading, {
+                            children: [(0, a.jsx)(r.Heading, {
                                 variant: "heading-xxl/bold",
                                 children: "What can I get with orbs?"
-                            }), (0, l.jsx)(r.Text, {
+                            }), (0, a.jsx)(r.Text, {
                                 variant: "text-md/normal",
                                 children: "Spend Orbs on exclusives or grab your favorites from the shop"
                             })]
                         })
                     })
                 })
-            }), (0, l.jsx)(i.A, {
-                children: (0, l.jsx)(r.Text, {
+            }), (0, a.jsx)(i.A, {
+                children: (0, a.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     children: "It also automatically handles animated asset urls"
                 })
-            }), (0, l.jsx)(o.A, {
+            }), (0, a.jsx)(o.A, {
                 backgroundImage: {
-                    src: a
+                    src: l
                 },
-                children: (0, l.jsx)(i.A, {
-                    children: (0, l.jsx)(s.A, {
+                children: (0, a.jsx)(i.A, {
+                    children: (0, a.jsx)(s.A, {
                         columns: 2,
-                        children: (0, l.jsxs)(n.Kp, {
+                        children: (0, a.jsxs)(n.Kp, {
                             direction: "vertical",
-                            children: [(0, l.jsx)(r.Heading, {
+                            children: [(0, a.jsx)(r.Heading, {
                                 variant: "heading-xxl/bold",
                                 children: "What can I get with orbs?"
-                            }), (0, l.jsx)(r.Text, {
+                            }), (0, a.jsx)(r.Text, {
                                 variant: "text-md/normal",
                                 children: "Spend Orbs on exclusives or grab your favorites from the shop"
                             })]

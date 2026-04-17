@@ -3,22 +3,22 @@ n.d(t, {
     Mk: () => r,
     iM: () => s
 });
-var a = n(627968),
-    l = n(64700);
-let i = l.createContext(null);
+var l = n(627968),
+    a = n(64700);
+let i = a.createContext(null);
 
 function r() {
-    return l.useContext(i)
+    return a.useContext(i)
 }
 
 function s(e) {
     let {
         tab: t,
         children: n
-    } = e, r = l.useMemo(() => ({
+    } = e, r = a.useMemo(() => ({
         tab: t
     }), [t]);
-    return (0, a.jsx)(i.Provider, {
+    return (0, l.jsx)(i.Provider, {
         value: r,
         children: n
     })

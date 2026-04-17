@@ -1,6 +1,6 @@
 /** chunk id: 650995 params = (module,exports,require) **/
 l.d(t, {
-    A: () => A
+    A: () => N
 });
 var n = l(627968),
     a = l(64700),
@@ -15,8 +15,8 @@ var n = l(627968),
     h = l(858897),
     p = l(532624),
     x = l(350535),
-    f = l(726574),
-    g = l(792852),
+    g = l(726574),
+    f = l(792852),
     v = l(652215),
     j = l(16590),
     b = l(985018),
@@ -27,9 +27,9 @@ let y = a.memo(function(e) {
         } = e, {
             query: l,
             setQuery: i
-        } = (0, g.P)(), s = (0, r.bG)([p.Ay], () => p.Ay.getKeybindForAction(v.hCu.SAVE_CLIP)), c = (0, g.P)(e => +(e.selectedUserIds.size > 0) + +(null != e.selectedActivity) + +(null != e.selectedGuildId) + +(null != e.selectedYear)), u = a.useCallback(() => {
+        } = (0, f.P)(), s = (0, r.bG)([p.Ay], () => p.Ay.getKeybindForAction(v.hCu.SAVE_CLIP)), c = (0, f.P)(e => +(e.selectedUserIds.size > 0) + +(null != e.selectedActivity) + +(null != e.selectedGuildId) + +(null != e.selectedYear)), u = a.useCallback(() => {
             (0, h.openUserSettings)(m.X.CLIPS_PANEL)
-        }, []), y = a.useCallback(() => i(""), [i]), N = null != s ? x.dI(s.shortcut, !0) : null, A = a.useRef(null);
+        }, []), y = a.useCallback(() => i(""), [i]), A = null != s ? x.dI(s.shortcut, !0) : null, N = a.useRef(null);
         return (0, n.jsxs)("div", {
             className: C.aN,
             children: [(0, n.jsxs)("div", {
@@ -40,9 +40,9 @@ let y = a.memo(function(e) {
                         variant: "heading-lg/semibold",
                         color: "text-strong",
                         children: b.intl.string(b.t.z2jK6X)
-                    }), null != N && (0, n.jsx)(o.e7I, {
+                    }), null != A && (0, n.jsx)(o.e7I, {
                         className: C.P,
-                        shortcut: N
+                        shortcut: A
                     })]
                 }), (0, n.jsxs)("div", {
                     className: C.$s,
@@ -50,13 +50,13 @@ let y = a.memo(function(e) {
                         text: b.intl.string(b.t.X7yRDm),
                         children: (0, n.jsx)(o.YNO, {
                             position: "bottom",
-                            targetElementRef: A,
-                            renderPopout: e => (0, n.jsx)(f.A, {
+                            targetElementRef: N,
+                            renderPopout: e => (0, n.jsx)(g.A, {
                                 ...e,
                                 allClips: t
                             }),
                             children: e => (0, n.jsx)("div", {
-                                ref: A,
+                                ref: N,
                                 children: c > 0 ? (0, n.jsx)(o.Button, {
                                     size: "sm",
                                     variant: "secondary",
@@ -98,7 +98,7 @@ let y = a.memo(function(e) {
             })]
         })
     }),
-    N = a.memo(function(e) {
+    A = a.memo(function(e) {
         let {
             name: t,
             count: l,
@@ -130,13 +130,13 @@ let y = a.memo(function(e) {
         })
     });
 
-function A(e) {
+function N(e) {
     let {
         clipsByGame: t,
         filteredClips: l,
         favoriteClips: i,
         allClips: s
-    } = e, r = (0, g.P)(e => e.selectedGameId), d = (0, g.P)(e => e.setSelectedGameId), m = a.useMemo(() => t.map(e => e.applicationId), [t]), h = (0, c.A)(m), p = a.useCallback(() => d(null), [d]), x = a.useCallback(() => d("favorites"), [d]), f = a.useMemo(() => new Map(h.map(e => [e?.id, e])), [h]);
+    } = e, r = (0, f.P)(e => e.selectedGameId), d = (0, f.P)(e => e.setSelectedGameId), m = a.useMemo(() => t.map(e => e.applicationId), [t]), h = (0, c.A)(m), p = a.useCallback(() => d(null), [d]), x = a.useCallback(() => d("favorites"), [d]), g = a.useMemo(() => new Map(h.map(e => [e?.id, e])), [h]);
     return (0, n.jsxs)("div", {
         className: C.pz,
         children: [(0, n.jsx)(y, {
@@ -147,13 +147,13 @@ function A(e) {
                 className: C.om,
                 children: (0, n.jsxs)("div", {
                     className: C.Ep,
-                    children: [(0, n.jsx)(N, {
+                    children: [(0, n.jsx)(A, {
                         name: b.intl.string(b.t.dPVrEv),
                         count: l.length,
                         icon: (0, n.jsx)(o.xgA, {}),
                         isSelected: null === r,
                         onClick: p
-                    }), (0, n.jsx)(N, {
+                    }), (0, n.jsx)(A, {
                         name: b.intl.string(b.t["9rlCk1"]),
                         count: i.length,
                         icon: (0, n.jsx)(o.Gg5, {}),
@@ -177,11 +177,11 @@ function A(e) {
                             count: l,
                             applicationId: a
                         } = e;
-                        return (0, n.jsx)(N, {
+                        return (0, n.jsx)(A, {
                             name: t,
                             count: l,
                             icon: (0, n.jsx)(u.A, {
-                                game: f.get(a),
+                                game: g.get(a),
                                 size: u.M.XSMALL
                             }),
                             isSelected: r === a,

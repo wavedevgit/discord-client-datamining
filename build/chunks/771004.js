@@ -3,8 +3,8 @@ n.d(t, {
     A: () => v,
     h: () => _
 });
-var a = n(627968),
-    l = n(64700),
+var l = n(627968),
+    a = n(64700),
     i = n(503698),
     r = n.n(i),
     s = n(934551),
@@ -14,8 +14,8 @@ var a = n(627968),
     u = n(981355),
     m = n(409626),
     f = n(305080),
-    x = n(936636),
-    h = n(985018),
+    h = n(936636),
+    x = n(985018),
     g = n(141535),
     p = n(242021);
 
@@ -23,44 +23,44 @@ function _(e) {
     let {
         game: t,
         trackAction: n
-    } = e, [i, f] = l.useState(t?.summaryLocalized != null), [_, v] = l.useState(!0), [A, b] = l.useState(!1), E = l.useRef(null), {
+    } = e, [i, f] = a.useState(t?.summaryLocalized != null), [_, v] = a.useState(!0), [A, b] = a.useState(!1), E = a.useRef(null), {
         width: j,
         height: I
     } = (0, u.A)();
-    return (l.useEffect(() => {
+    return (a.useEffect(() => {
         let e = E.current;
         null != e && b(e.scrollHeight - e.clientHeight > 1 || !_)
-    }, [E, j, I, _]), null == t.description) ? null : (0, a.jsxs)("div", {
+    }, [E, j, I, _]), null == t.description) ? null : (0, l.jsxs)("div", {
         className: r()(g.fi, g.mX),
-        children: [null != t.summaryLocalized && (0, a.jsxs)("div", {
+        children: [null != t.summaryLocalized && (0, l.jsxs)("div", {
             className: r()(g.nM, g.Lc),
-            children: [(0, a.jsx)(s.PencilSparkleIcon, {
+            children: [(0, l.jsx)(s.PencilSparkleIcon, {
                 color: c.A.colors.TEXT_DEFAULT,
                 size: "xs"
-            }), (0, a.jsx)(o.EYj, {
+            }), (0, l.jsx)(o.EYj, {
                 variant: "text-xs/medium",
                 color: "text-default",
-                children: i ? h.intl.format(h.t.aZ2iIp, {
+                children: i ? x.intl.format(x.t.aZ2iIp, {
                     onShowOriginal: () => f(!1)
-                }) : h.intl.format(h.t["/2ylF4"], {
+                }) : x.intl.format(x.t["/2ylF4"], {
                     onShowTranslated: () => f(!0)
                 })
             })]
-        }), (0, a.jsx)(o.EYj, {
+        }), (0, l.jsx)(o.EYj, {
             ref: E,
             lineClamp: _ ? 8 : void 0,
             variant: "text-sm/normal",
             children: i ? t.summaryLocalized : t.description
-        }), A && (0, a.jsx)(d.DUT, {
+        }), A && (0, l.jsx)(d.DUT, {
             className: g.vk,
             onClick: () => {
                 n(_ ? m.Ws.ShowMore : m.Ws.ShowLess), v(!_)
             },
-            children: (0, a.jsx)(o.EYj, {
+            children: (0, l.jsx)(o.EYj, {
                 variant: "text-sm/semibold",
-                children: _ ? h.intl.string(h.t.lBeKY2) : h.intl.string(h.t["6MwJo/"])
+                children: _ ? x.intl.string(x.t.lBeKY2) : x.intl.string(x.t["6MwJo/"])
             })
-        }), (0, a.jsx)(x.A, {
+        }), (0, l.jsx)(h.A, {
             className: p.B,
             game: t
         })]
@@ -71,23 +71,23 @@ function v(e) {
     let {
         game: t,
         trackAction: n
-    } = e, i = l.useRef(null), {
+    } = e, i = a.useRef(null), {
         isExpanded: s,
         showToggle: c,
         handleToggleExpanded: d
     } = function(e, t) {
-        let [n, a] = l.useState("full");
-        l.useEffect(() => {
+        let [n, l] = a.useState("full");
+        a.useEffect(() => {
             let t = e.current;
             if (null == t) return;
             let n = new ResizeObserver(() => {
                 let t = e.current;
-                null != t && a(e => "expanded" === e ? e : t.scrollHeight - t.clientHeight > 1 ? "collapsed" : "full")
+                null != t && l(e => "expanded" === e ? e : t.scrollHeight - t.clientHeight > 1 ? "collapsed" : "full")
             });
             return n.observe(t), () => n.disconnect()
         }, [e]);
-        let i = l.useCallback(() => {
-            "expanded" === n ? (t(m.Ws.ShowLess), a("collapsed")) : "collapsed" === n && (t(m.Ws.ShowMore), a("expanded"))
+        let i = a.useCallback(() => {
+            "expanded" === n ? (t(m.Ws.ShowLess), l("collapsed")) : "collapsed" === n && (t(m.Ws.ShowMore), l("expanded"))
         }, [t, n]);
         return {
             isExpanded: "expanded" === n,
@@ -96,17 +96,17 @@ function v(e) {
         }
     }(i, n), {
         isTwoColumn: u
-    } = (0, f.c)(), x = l.useMemo(() => u ? 8 : 5, [u]);
+    } = (0, f.c)(), h = a.useMemo(() => u ? 8 : 5, [u]);
     if (null == t.description) return null;
-    let p = s ? h.intl.string(h.t["6MwJo/"]) : h.intl.string(h.t.lBeKY2);
-    return (0, a.jsxs)("div", {
+    let p = s ? x.intl.string(x.t["6MwJo/"]) : x.intl.string(x.t.lBeKY2);
+    return (0, l.jsxs)("div", {
         className: r()(g.fi, g.mX),
-        children: [(0, a.jsx)(o.EYj, {
+        children: [(0, l.jsx)(o.EYj, {
             ref: i,
-            lineClamp: s ? void 0 : x,
+            lineClamp: s ? void 0 : h,
             variant: "text-md/medium",
             children: t.description
-        }), c && (0, a.jsx)(o.QWc, {
+        }), c && (0, l.jsx)(o.QWc, {
             onClick: d,
             text: p
         })]
