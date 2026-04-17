@@ -17,13 +17,13 @@ function u(e) {
         guildScheduledEvent: t,
         channel: n,
         onClose: u
-    } = e, h = t.entity_type === c.Ps.EXTERNAL, _ = s.useCallback(e => (0, a.GI)(t, u)(e), [t, u]), p = (0, o.L)(t, n);
-    if (null == p) return null;
+    } = e, _ = t.entity_type === c.Ps.EXTERNAL, h = s.useCallback(e => (0, a.GI)(t, u)(e), [t, u]), g = (0, o.L)(t, n);
+    if (null == g) return null;
     let {
-        IconComponent: g,
+        IconComponent: p,
         locationName: m
-    } = p, A = (0, i.jsxs)(i.Fragment, {
-        children: [null != g && (0, i.jsx)(g, {
+    } = g, A = (0, i.jsxs)(i.Fragment, {
+        children: [null != p && (0, i.jsx)(p, {
             size: "custom",
             color: "currentColor",
             width: 20,
@@ -38,9 +38,9 @@ function u(e) {
     });
     return (0, i.jsx)("div", {
         className: d.nM,
-        children: null != _ ? (0, i.jsx)(r.DUT, {
-            className: h ? d.dC : d.h7,
-            onClick: _,
+        children: null != h ? (0, i.jsx)(r.DUT, {
+            className: _ ? d.dC : d.h7,
+            onClick: h,
             children: A
         }) : A
     })

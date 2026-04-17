@@ -16,8 +16,8 @@ var a = n(627968),
     p = n(572855),
     A = n(358731),
     b = n(597351),
-    S = n(985018),
-    h = n(897003);
+    h = n(985018),
+    S = n(897003);
 let C = i.memo(function(e) {
     let {
         message: t
@@ -28,21 +28,21 @@ let C = i.memo(function(e) {
             children: [(0, a.jsx)(c.A, {
                 user: t.author,
                 size: s._3J.SIZE_40,
-                className: o()(h.Du, e)
+                className: o()(S.Du, e)
             }), (0, a.jsxs)("div", {
-                className: o()(h.cy, e),
+                className: o()(S.cy, e),
                 children: [(0, a.jsx)(s.M1G, {
                     children: (0, a.jsx)("div", {
-                        className: h.mG,
+                        className: S.mG,
                         children: (0, a.jsx)(_.A, {
-                            className: h.fh,
+                            className: S.fh,
                             message: t,
                             channel: n
                         })
                     })
                 }), (0, a.jsx)(u.A, {
                     timestamp: t.timestamp,
-                    className: h.vE,
+                    className: S.vE,
                     tooltipPosition: "bottom"
                 })]
             })]
@@ -57,7 +57,7 @@ function g(e) {
         onClose: i
     } = e, r = t.sourceMetadata?.message;
     return (0, a.jsxs)("div", {
-        className: h.XV,
+        className: S.XV,
         children: [null != r && (0, a.jsx)(C, {
             message: r
         }), (0, a.jsx)(p.A, {
@@ -68,8 +68,8 @@ function g(e) {
             children: e => (0, a.jsx)(b.A, {
                 onClick: i,
                 icon: s.PGe,
-                tooltip: S.intl.string(S.t.cpT0Cq),
-                className: o()(h.b, e)
+                tooltip: h.intl.string(h.t.cpT0Cq),
+                className: o()(S.b, e)
             })
         })]
     })

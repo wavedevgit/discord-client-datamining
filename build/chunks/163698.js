@@ -1,7 +1,7 @@
 /** chunk id: 163698 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968);
 n(64700);
@@ -13,15 +13,15 @@ var s = n(503698),
     c = n(524832),
     d = n(652215),
     u = n(985018),
-    h = n(22079),
-    _ = n(818050);
+    _ = n(22079),
+    h = n(818050);
 
-function p(e) {
+function g(e) {
     let {
         children: t
     } = e;
     return (0, i.jsx)("li", {
-        className: h.Aw,
+        className: _.Aw,
         children: (0, i.jsx)(l.Text, {
             variant: "text-sm/medium",
             color: "text-default",
@@ -30,7 +30,7 @@ function p(e) {
     })
 }
 
-function g(e) {
+function p(e) {
     let {
         setSlide: t,
         transitionTo: s
@@ -38,35 +38,35 @@ function g(e) {
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(a._V, {
             src: n(79418),
-            className: r()(_.SX, _.Ot)
+            className: r()(h.SX, h.Ot)
         }), (0, i.jsx)(a.hE, {
-            className: _.QB,
+            className: h.QB,
             children: u.intl.string(u.t["8UcxI6"])
         }), (0, i.jsx)(l.Text, {
             variant: "text-md/normal",
             children: u.intl.string(u.t.O37hMl)
         }), (0, i.jsxs)(a.eB, {
-            className: r()(_.SX, _.QX),
+            className: r()(h.SX, h.QX),
             children: [(0, i.jsx)(l.Text, {
                 variant: "text-sm/normal"
             }), (0, i.jsxs)("ul", {
-                className: h.qI,
-                children: [(0, i.jsx)(p, {
+                className: _.qI,
+                children: [(0, i.jsx)(g, {
                     children: u.intl.string(u.t.Gj1Zry)
-                }), (0, i.jsx)(o.A, {}), (0, i.jsx)(p, {
+                }), (0, i.jsx)(o.A, {}), (0, i.jsx)(g, {
                     children: u.intl.string(u.t["8C6t3B"])
-                }), (0, i.jsx)(o.A, {}), (0, i.jsx)(p, {
+                }), (0, i.jsx)(o.A, {}), (0, i.jsx)(g, {
                     children: u.intl.string(u.t.mToZMA)
-                }), (0, i.jsx)(o.A, {}), (0, i.jsx)(p, {
+                }), (0, i.jsx)(o.A, {}), (0, i.jsx)(g, {
                     children: u.intl.string(u.t.TPEvkc)
-                }), (0, i.jsx)(o.A, {}), (0, i.jsx)(p, {
+                }), (0, i.jsx)(o.A, {}), (0, i.jsx)(g, {
                     children: u.intl.string(u.t.H8Y1Ln)
                 })]
             })]
         }), (0, i.jsxs)(l.ButtonGroup, {
             direction: "vertical",
             fullWidth: !0,
-            className: h.UD,
+            className: _.UD,
             children: [(0, i.jsx)(l.Button, {
                 text: u.intl.string(u.t.GgCRqR),
                 onClick: () => t(c.k.PASSWORD)

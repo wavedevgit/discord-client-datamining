@@ -20,7 +20,7 @@ let d = e => {
     let d = a.DY(t),
         {
             name: u,
-            description: h
+            description: _
         } = d;
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(s.Heading, {
@@ -56,11 +56,11 @@ let d = e => {
                     }) : null]
                 })]
             })]
-        }), null != h && "" !== h && (0, i.jsx)(s.Text, {
+        }), null != _ && "" !== _ && (0, i.jsx)(s.Text, {
             color: "text-default",
             className: c.CT,
             variant: "text-sm/normal",
-            children: h
+            children: _
         })]
     })
 }

@@ -1,7 +1,7 @@
 /** chunk id: 439680 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => h
+    A: () => _
 });
 var i = n(627968);
 n(64700);
@@ -14,17 +14,17 @@ var s = n(397927),
     d = n(985018),
     u = n(888849);
 
-function h(e) {
+function _(e) {
     let {
         invite: t,
         guild: n,
-        profile: h,
-        onAcceptInvite: _
+        profile: _,
+        onAcceptInvite: h
     } = e, {
-        gamesToDisplay: p,
-        lastGameToDisplay: g,
+        gamesToDisplay: g,
+        lastGameToDisplay: p,
         remainingGames: m
-    } = (0, a.A)(h), A = function(e) {
+    } = (0, a.A)(_), A = function(e) {
         let {
             state: t
         } = e;
@@ -35,7 +35,7 @@ function h(e) {
             default:
                 return !1
         }
-    }(t), f = h.description ?? n.description;
+    }(t), f = _.description ?? n.description;
     return (0, i.jsxs)("div", {
         className: u.f_,
         children: [(0, i.jsxs)("div", {
@@ -63,10 +63,10 @@ function h(e) {
                         color: "text-default",
                         children: f
                     }), (0, i.jsx)(o.A, {
-                        gamesToDisplay: p,
-                        lastGameToDisplay: g,
+                        gamesToDisplay: g,
+                        lastGameToDisplay: p,
                         remainingGames: m,
-                        activity: h.gameActivity
+                        activity: _.gameActivity
                     })]
                 })]
             })]
@@ -76,7 +76,7 @@ function h(e) {
                 variant: "primary",
                 size: "md",
                 text: d.intl.string(d.t.ohMvm1),
-                onClick: _,
+                onClick: h,
                 loading: A,
                 fullWidth: !0
             })

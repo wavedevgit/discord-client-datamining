@@ -16,8 +16,8 @@ var a = n(627968),
     p = n(454290),
     A = n(369254),
     b = n(847816),
-    S = n(652215),
-    h = n(985018),
+    h = n(652215),
+    S = n(985018),
     C = n(264482);
 
 function g(e, t) {
@@ -45,8 +45,8 @@ function f(e) {
         }
     })), D = i.useRef(null);
     i.useEffect(() => {
-        if (null != t) return _._.subscribe(S.jej.MEDIA_MODAL_CLOSE, t), () => {
-            _._.unsubscribe(S.jej.MEDIA_MODAL_CLOSE, t)
+        if (null != t) return _._.subscribe(h.jej.MEDIA_MODAL_CLOSE, t), () => {
+            _._.unsubscribe(h.jej.MEDIA_MODAL_CLOSE, t)
         }
     }, [t]);
     let j = i.useRef(null);
@@ -90,7 +90,7 @@ function f(e) {
             }
         }), [M, R]);
     return (0, a.jsx)(s.NPJ, {
-        theme: S.NJ8.MIDNIGHT,
+        theme: h.NJ8.MIDNIGHT,
         children: e => (0, a.jsx)(s.EOs, {
             "data-migration-pending": !0,
             hideShadow: !0,
@@ -101,7 +101,7 @@ function f(e) {
             animation: l.WM.SUBTLE,
             fullscreenOnMobile: !1,
             onClick: t,
-            "aria-label": h.intl.string(h.t.AMTX3j),
+            "aria-label": S.intl.string(S.t.AMTX3j),
             parentComponent: "MediaViewerModal",
             children: (0, a.jsxs)(p.f.Provider, {
                 value: w,

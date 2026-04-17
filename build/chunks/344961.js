@@ -12,10 +12,10 @@ var i = n(627968),
     c = n(598047),
     d = n(854378),
     u = n(414121),
-    h = n(525711),
-    _ = n(787610),
-    p = n(293731),
-    g = n(961350),
+    _ = n(525711),
+    h = n(787610),
+    g = n(293731),
+    p = n(961350),
     m = n(723702),
     A = n(427262),
     f = n(837921),
@@ -83,11 +83,11 @@ function S(e) {
         isPasswordlessActive: c
     } = e;
     switch (t.step) {
-        case h.b.INITIALIZING:
-        case h.b.PENDING_REMOTE_INIT:
+        case _.b.INITIALIZING:
+        case _.b.PENDING_REMOTE_INIT:
             return (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(j, {
-                    text: t.step === h.b.PENDING_REMOTE_INIT ? `https://discord.com/ra/${t.fingerprint}` : ""
+                    text: t.step === _.b.PENDING_REMOTE_INIT ? `https://discord.com/ra/${t.fingerprint}` : ""
                 }), (0, i.jsx)(d.hE, {
                     className: v.QB,
                     children: I.intl.string(I.t.UPiHaL)
@@ -103,7 +103,7 @@ function S(e) {
                         textVariant: "text-sm/normal",
                         onClick: () => {
                             let e;
-                            return e = m.isPlatformEmbedded && f.Ay.supportsFeature(E.BYE.WEBAUTHN) ? f.Ay.webAuthnAuthenticate : p.J, void a.A.authenticatePasswordless({
+                            return e = m.isPlatformEmbedded && f.Ay.supportsFeature(E.BYE.WEBAUTHN) ? f.Ay.webAuthnAuthenticate : g.J, void a.A.authenticatePasswordless({
                                 authenticateFunc: e,
                                 conditionalMediationAbortController: r
                             }).catch(() => {})
@@ -112,7 +112,7 @@ function S(e) {
                     })
                 })]
             });
-        case h.b.PENDING_TICKET: {
+        case _.b.PENDING_TICKET: {
             let {
                 user: e
             } = t;
@@ -140,8 +140,8 @@ function S(e) {
                 })]
             })
         }
-        case h.b.PENDING_LOGIN:
-        case h.b.FINISH:
+        case _.b.PENDING_LOGIN:
+        case _.b.FINISH:
             return (0, i.jsx)(l.y$y, {
                 type: l.y$y.Type.WANDERING_CUBES
             })
@@ -152,17 +152,17 @@ function y(e) {
     let {
         onAuthenticateSuccess: t,
         conditionalMediationAbortController: n
-    } = e, s = (0, r.bG)([g.default], () => g.default.getIsPasswordlessActive()), a = (0, c.A)(), {
+    } = e, s = (0, r.bG)([p.default], () => p.default.getIsPasswordlessActive()), a = (0, c.A)(), {
         state: o,
         cancel: d
-    } = (0, _.H)(t, a), u = function(e) {
+    } = (0, h.H)(t, a), u = function(e) {
         switch (e) {
-            case h.b.INITIALIZING:
-            case h.b.PENDING_REMOTE_INIT:
+            case _.b.INITIALIZING:
+            case _.b.PENDING_REMOTE_INIT:
                 return 0;
-            case h.b.PENDING_TICKET:
-            case h.b.PENDING_LOGIN:
-            case h.b.FINISH:
+            case _.b.PENDING_TICKET:
+            case _.b.PENDING_LOGIN:
+            case _.b.FINISH:
                 return 1
         }
     }(o.step);

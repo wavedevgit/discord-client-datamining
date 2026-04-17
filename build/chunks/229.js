@@ -12,10 +12,10 @@ var i = n(627968),
     c = n(935399),
     d = n(311907),
     u = n(397927),
-    h = n(830215),
-    _ = n(475743),
-    p = n(17841),
-    g = n(965252),
+    _ = n(830215),
+    h = n(475743),
+    g = n(17841),
+    p = n(965252),
     m = n(139286),
     A = n(908192),
     f = n(669629),
@@ -53,7 +53,7 @@ function M(e) {
         onLoginStart: H,
         onRegister: K,
         transitionTo: z = T.pX
-    } = e, Q = (0, d.bG)([S.A], () => S.A.getAuthenticationConsentRequired()), q = (0, d.bG)([C.default], () => C.default.isAuthenticated()), Y = (0, d.bG)([p.A], () => p.A.isUnderageAnonymous()), X = (0, d.bG)([N.A], () => N.A.getHasLoggedInAccounts()), J = null != e.location ? (0, a.parse)(e.location.search) : {}, [$, Z] = s.useState(J.email ?? ""), [ee, et] = s.useState({}), en = (0, _.A)(q), ei = function(e, t, n) {
+    } = e, Q = (0, d.bG)([S.A], () => S.A.getAuthenticationConsentRequired()), q = (0, d.bG)([C.default], () => C.default.isAuthenticated()), Y = (0, d.bG)([g.A], () => g.A.isUnderageAnonymous()), X = (0, d.bG)([N.A], () => N.A.getHasLoggedInAccounts()), J = null != e.location ? (0, a.parse)(e.location.search) : {}, [$, Z] = s.useState(J.email ?? ""), [ee, et] = s.useState({}), en = (0, h.A)(q), ei = function(e, t, n) {
         if (null != e) return "gift";
         if (null != t) return "guild_template";
         if (null != n) {
@@ -72,7 +72,7 @@ function M(e) {
             ...null != r ? (0, x.A)(r, !1, !1) : {}
         }, {
             flush: !0
-        }), null == Q && h.A.getLocationMetadata(), (0, j.d)("register")
+        }), null == Q && _.A.getLocationMetadata(), (0, j.d)("register")
     }), s.useEffect(() => {
         q && !1 === en && ((0, v.C)(U.zY.ORGANIC_REGISTERED), el())
     }, [q, en, el]);
@@ -89,12 +89,12 @@ function M(e) {
         let t, i = null != V ? (0, a.parse)(V.search) : {};
         null != F ? t = k.BVt.INVITE_LOGIN(F.code) : null != n ? t = k.BVt.GIFT_CODE_LOGIN(n.code) : null != M ? t = k.BVt.GUILD_TEMPLATE_LOGIN(M.code) : null != W ? (t = k.BVt.LOGIN, i.redirect_to = W) : (t = k.BVt.LOGIN, "" !== $ && (i = {
             email: $
-        })), h.A.loginReset(), z(t, {
+        })), _.A.loginReset(), z(t, {
             search: (0, a.stringify)(i),
             source: "register"
         }), H?.(e), R._.dispatch(k.jej.WAVE_EMPHASIZE)
     }, [$, F, n, M, W, V, H, z]);
-    if (Y || null != ee.date_of_birth) return (0, i.jsx)(g.A, {});
+    if (Y || null != ee.date_of_birth) return (0, i.jsx)(p.A, {});
     if (null != F && es) return (0, i.jsx)(f.A, {
         invite: F,
         authBoxClassName: t,

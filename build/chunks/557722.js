@@ -1,7 +1,7 @@
 /** chunk id: 557722 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => h,
+    A: () => _,
     d: () => u
 });
 var i, s = n(110259),
@@ -12,7 +12,7 @@ var i, s = n(110259),
     c = n(53516),
     d = n(652215),
     u = ((i = {}).USER_ACTION_REQUIRED = "user_action_required", i.USER_SETTINGS_UPDATE = "user_settings_update", i.GUILD_PHONE_REQUIRED = "guild_phone_required", i.MFA_PHONE_UPDATE = "mfa_phone_update", i.CONTACT_SYNC = "contact_sync", i);
-let h = {
+let _ = {
     setCountryCode(e) {
         l.h.dispatch({
             type: "PHONE_SET_COUNTRY_CODE",
@@ -97,7 +97,7 @@ let h = {
             r = {},
             u = a.default.getFingerprint();
         null != u && "" !== u && (r["X-Fingerprint"] = u), i && (r.authorization = "");
-        let h = await o.A.post({
+        let _ = await o.A.post({
             url: d.Rsh.VERIFY_PHONE,
             headers: r,
             body: {
@@ -113,6 +113,6 @@ let h = {
         return n && l.h.dispatch({
             type: "MODAL_POP",
             key: c.V
-        }), h.body
+        }), _.body
     }
 }

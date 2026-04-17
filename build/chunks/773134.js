@@ -17,13 +17,13 @@ function u(e) {
     let t, {
             username: n,
             suggestion: u,
-            globalName: h,
-            isUsernameFocused: _,
-            onClickSuggestion: p
+            globalName: _,
+            isUsernameFocused: h,
+            onClickSuggestion: g
         } = e,
-        g = (0, a.i)(n, !0, !0),
+        p = (0, a.i)(n, !0, !0),
         m = n.length > 0;
-    return t = m ? (0, s.YW)(g).with({
+    return t = m ? (0, s.YW)(p).with({
         type: l.q.ERROR,
         message: s.P.select()
     }, e => (0, i.jsx)(r.Text, {
@@ -41,19 +41,19 @@ function u(e) {
         variant: "text-sm/normal",
         color: "text-default",
         children: c.intl.string(c.t.z7c4bP)
-    })) : null != u && u.length > 0 && h.length > 0 ? (0, i.jsx)(r.Text, {
+    })) : null != u && u.length > 0 && _.length > 0 ? (0, i.jsx)(r.Text, {
         variant: "text-sm/normal",
         color: "text-default",
         children: c.intl.format(c.t.nDGqqq, {
             suggestion: u,
-            nameOnClick: p
+            nameOnClick: g
         })
     }) : (0, i.jsx)(r.Text, {
         variant: "text-sm/normal",
         color: "text-default",
         children: c.intl.string(c.t.z7c4bP)
     }), (0, i.jsx)(o.A, {
-        show: m && g?.type === l.q.ERROR || _,
+        show: m && p?.type === l.q.ERROR || h,
         top: -12,
         bottom: 20,
         children: t

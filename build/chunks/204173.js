@@ -16,28 +16,28 @@ function d(e, t) {
         u = () => {
             d || t?.()
         },
-        h = h => {
+        _ = _ => {
             d = !0, setTimeout(() => {
                 d = !1
             }, 0);
-            let _ = async () => {
-                await (0, o.TP)(e, h)
-            }, p = async t => await (0, o.G_)(e, h, t), g = n => {
+            let h = async () => {
+                await (0, o.TP)(e, _)
+            }, g = async t => await (0, o.G_)(e, _, t), p = n => {
                 d = !0, setTimeout(() => {
                     d = !1
                 }, 0);
                 let i = n?.token;
                 e === l.tY.MESSAGE ? (0, a.bM)(i, t) : e === l.tY.USER ? (0, a.nQ)(i, t) : e === l.tY.GUILD ? (0, a.V3)(i, t) : e === l.tY.MEDIA_TAKEDOWN && (0, a._Y)(i, t)
             };
-            _(), (0, r.mMO)(async () => {
+            h(), (0, r.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("19840").then(n.bind(n, 79779));
                 return t => (0, i.jsx)(e, {
                     ...t,
-                    onFormSubmit: p,
-                    onResend: _,
-                    onSuccess: g,
+                    onFormSubmit: g,
+                    onResend: h,
+                    onSuccess: p,
                     headerText: c.intl.string(c.t.H3Q7U8),
                     confirmButtonText: c.intl.string(c.t["13ofGu"]),
                     impression: {
@@ -56,7 +56,7 @@ function d(e, t) {
             } = await n.e("29232").then(n.bind(n, 180275));
             return n => (0, i.jsx)(t, {
                 ...n,
-                onSuccess: h,
+                onSuccess: _,
                 headerText: c.intl.string(c.t.ZLRYGU),
                 confirmButtonText: c.intl.string(c.t.PDTjLN),
                 subtitle: e === l.tY.MEDIA_TAKEDOWN ? c.intl.string(c.t.jt3z8f) : void 0

@@ -1,9 +1,9 @@
 /** chunk id: 104473 params = (module,exports,require) **/
 a.d(t, {
-    AZ: () => f
+    AZ: () => h
 });
-var n = a(627968),
-    o = a(64700),
+var o = a(627968),
+    n = a(64700),
     r = a(825638),
     i = a(397927),
     l = a(664111),
@@ -15,21 +15,21 @@ function u(e) {
     let {
         orientation: t,
         thumbnailUrl: a,
-        onReplay: o
+        onReplay: n
     } = e;
-    return (0, n.jsxs)(n.Fragment, {
-        children: [(0, n.jsx)(s.nY, {
+    return (0, o.jsxs)(o.Fragment, {
+        children: [(0, o.jsx)(s.nY, {
             url: a
-        }), (0, n.jsx)(s.KP, {}), (0, n.jsxs)(s.zj, {
+        }), (0, o.jsx)(s.KP, {}), (0, o.jsxs)(s.zj, {
             orientation: t,
-            children: [(0, n.jsx)(s.Kb, {
+            children: [(0, o.jsx)(s.Kb, {
                 url: a,
                 orientation: t
-            }), (0, n.jsx)(s.lx, {
+            }), (0, o.jsx)(s.lx, {
                 title: "Watch Again",
                 subtitle: "Replay this video",
                 ctaBtnLabel: "Replay",
-                onCTAClick: o,
+                onCTAClick: n,
                 orientation: t
             })]
         })]
@@ -40,7 +40,7 @@ function p(e) {
     let {
         orientation: t,
         autoplay: a,
-        maxSeekableTimeSec: o,
+        maxSeekableTimeSec: n,
         videoUrl: r,
         poster: s,
         showEndScreen: p,
@@ -48,7 +48,7 @@ function p(e) {
         autoHideVolumeSlider: b,
         sizing: _
     } = e;
-    return (0, n.jsx)("div", {
+    return (0, o.jsx)("div", {
         style: "video" === _ ? {
             width: "landscape" === t ? "640px" : "360px",
             height: "landscape" === t ? "360px" : "640px",
@@ -63,13 +63,13 @@ function p(e) {
             borderRadius: "8px",
             overflow: "hidden"
         },
-        children: (0, n.jsx)(l.A, {
+        children: (0, o.jsx)(l.A, {
             src: r,
             poster: s,
             active: m,
             autoplay: a,
             orientation: t,
-            maxSeekableTimeSec: o > 0 ? o : void 0,
+            maxSeekableTimeSec: n > 0 ? n : void 0,
             autoHideVolumeSlider: b,
             parentTransitionState: i.ip4.ENTERED,
             targetTimeSec: 1 / 0,
@@ -83,7 +83,7 @@ function p(e) {
                 let {
                     replay: a
                 } = e;
-                return (0, n.jsx)(u, {
+                return (0, o.jsx)(u, {
                     orientation: t,
                     thumbnailUrl: c,
                     onReplay: a
@@ -198,7 +198,7 @@ let m = {
         friction: 30,
         clamp: !0
     },
-    f = {
+    h = {
         title: "Discord Video Player (Generic)",
         stories: [b, _, g, {
             name: "Timeline Indicators",
@@ -211,7 +211,7 @@ let m = {
                     videoUrl: d,
                     indicatorTimeSec: c
                 } = e, u = function(e) {
-                    let [t, a] = o.useState(null), [l, s] = o.useState(null), d = o.useRef(null), [{
+                    let [t, a] = n.useState(null), [l, s] = n.useState(null), d = n.useRef(null), [{
                         expansion: c
                     }, u] = (0, i.zhh)(() => ({
                         expansion: 0,
@@ -219,20 +219,20 @@ let m = {
                         onRest: () => {
                             null == d.current && s(null)
                         }
-                    })), p = o.useCallback(e => {
+                    })), p = n.useCallback(e => {
                         d.current = e, null != e ? (s(e), u({
                             expansion: 4
                         })) : u({
                             expansion: 0
                         }), a(e)
-                    }, [u]), m = o.useMemo(() => [{
+                    }, [u]), m = n.useMemo(() => [{
                         index: 0,
                         timeSec: e,
                         widthPx: 32,
                         gapPx: 4
-                    }], [e]), b = o.useCallback((e, t) => {
+                    }], [e]), b = n.useCallback((e, t) => {
                         let a = l === e.index;
-                        return (0, n.jsx)(r.animated.div, {
+                        return (0, o.jsx)(r.animated.div, {
                             "data-testid": "timeline-indicator",
                             onMouseEnter: () => p(e.index),
                             onMouseLeave: () => p(null),
@@ -253,7 +253,7 @@ let m = {
                                 cursor: "pointer",
                                 zIndex: 1
                             },
-                            children: (0, n.jsx)(i.Text, {
+                            children: (0, o.jsx)(i.Text, {
                                 variant: "text-xs/semibold",
                                 color: "always-white",
                                 children: "R"
@@ -268,13 +268,13 @@ let m = {
                         renderIndicator: b
                     }
                 }(c);
-                return (0, n.jsx)("div", {
+                return (0, o.jsx)("div", {
                     style: {
                         width: "landscape" === t ? "640px" : "360px",
                         height: "landscape" === t ? "360px" : "640px",
                         margin: "0 auto"
                     },
-                    children: (0, n.jsx)(l.A, {
+                    children: (0, o.jsx)(l.A, {
                         src: d,
                         autoplay: a,
                         orientation: t,

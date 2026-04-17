@@ -12,10 +12,10 @@ var s = n(627968),
     c = n(397927),
     d = n(220839),
     u = n(897479),
-    h = n(942156),
-    _ = n(574094),
-    p = n(49463),
-    g = n(976860),
+    _ = n(942156),
+    h = n(574094),
+    g = n(49463),
+    p = n(976860),
     m = n(426660),
     A = n(652215),
     f = n(476958);
@@ -34,7 +34,7 @@ function C(e) {
     let {
         children: t
     } = e, n = function() {
-        let [e, t] = r.useState(!1), [n, s] = r.useState(!0), l = (0, o.bG)([p.A], () => p.A.hasLoadedExperiments);
+        let [e, t] = r.useState(!1), [n, s] = r.useState(!0), l = (0, o.bG)([g.A], () => g.A.hasLoadedExperiments);
         return ((0, d.A)(() => {}, 300), void 0 !== i) ? i : !n && l ? (e || t(!0), v("default")) : n ? v("default") : "loading"
     }(), a = (0, l.zy)(), c = j.includes(a.pathname), u = T.includes(a.pathname);
     if (c) return t;
@@ -74,14 +74,14 @@ class S extends r.Component {
         window.removeEventListener("resize", this.handleResize)
     }
     mobileTransitionTo(e, t) {
-        if (N(e))(0, g.pX)(e, t);
+        if (N(e))(0, p.pX)(e, t);
         else {
             let n = null != t && null != t.search ? t.search : null;
             window.location = null == n ? e : `${e}?${n}`
         }
     }
     mobileReplaceWith(e) {
-        N(e) ? (0, g.bG)(e) : window.location = e
+        N(e) ? (0, p.bG)(e) : window.location = e
     }
     renderDefault() {
         let {
@@ -89,8 +89,8 @@ class S extends r.Component {
         } = this.props, t = (0, s.jsx)(u.A, {
             component: r.Fragment,
             children: r.Children.map(this.props.children, e => r.cloneElement(e, {
-                transitionTo: g.pX,
-                replaceWith: g.bG
+                transitionTo: p.pX,
+                replaceWith: p.bG
             }))
         });
         return (0, s.jsx)("div", {
@@ -98,10 +98,10 @@ class S extends r.Component {
             children: (0, s.jsx)(c.Fmo, {
                 forceLevel: 1,
                 children: null != e ? (0, s.jsxs)(s.Fragment, {
-                    children: [(0, s.jsx)(h.A, {
+                    children: [(0, s.jsx)(_.A, {
                         show: !0,
                         className: f.wm
-                    }), (0, s.jsx)(_.A, {
+                    }), (0, s.jsx)(h.A, {
                         splash: e,
                         children: t
                     })]

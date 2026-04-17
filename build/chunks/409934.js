@@ -12,10 +12,10 @@ var i = n(627968),
     c = n(210714),
     d = n(650048),
     u = n(860689),
-    h = n(396681),
-    _ = n(854378),
-    p = n(652215),
-    g = n(985018),
+    _ = n(396681),
+    h = n(854378),
+    g = n(652215),
+    p = n(985018),
     m = n(818050);
 l.Ay.initialize();
 class A extends s.PureComponent {
@@ -28,10 +28,10 @@ class A extends s.PureComponent {
         guild: null
     };
     componentDidMount() {
-        let e = (0, h.A)(this.props.location),
+        let e = (0, _.A)(this.props.location),
             t = (0, r.parse)(this.props.location.search);
         a.Bo.post({
-            url: p.Rsh.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
+            url: g.Rsh.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
             body: {
                 token: e,
                 pixel_uuid: t.hash,
@@ -56,8 +56,8 @@ class A extends s.PureComponent {
         })), (0, c.d)("disable_server_highlight_notifications")
     }
     renderBusy() {
-        return (0, i.jsx)(_.Ay, {
-            children: (0, i.jsx)(_.CK, {})
+        return (0, i.jsx)(h.Ay, {
+            children: (0, i.jsx)(h.CK, {})
         })
     }
     renderSuccess() {
@@ -67,27 +67,27 @@ class A extends s.PureComponent {
         } = this.props, {
             guild: n
         } = this.state;
-        return (0, i.jsxs)(_.Ay, {
-            children: [(0, i.jsx)(_.hE, {
+        return (0, i.jsxs)(h.Ay, {
+            children: [(0, i.jsx)(h.hE, {
                 className: m.QB,
-                children: g.intl.string(g.t.Z33eiP)
-            }), (0, i.jsx)(_.tK, {
-                children: g.intl.format(g.t.NRWtfC, {
+                children: p.intl.string(p.t.Z33eiP)
+            }), (0, i.jsx)(h.tK, {
+                children: p.intl.format(p.t.NRWtfC, {
                     guildName: n.name
                 })
             }), (0, i.jsx)("div", {
                 className: m.eT,
                 children: (0, i.jsx)(o.Button, {
-                    text: g.intl.string(g.t.fIv16B),
+                    text: p.intl.string(p.t.fIv16B),
                     fullWidth: !0,
                     onClick: () => t(e)
                 })
             }), (0, i.jsx)("div", {
                 className: m.Ot,
                 children: (0, i.jsx)(o.QWc, {
-                    text: g.intl.string(g.t["cGmT/J"]),
+                    text: p.intl.string(p.t["cGmT/J"]),
                     onClick: () => {
-                        t(p.BVt.USER_GUILD_NOTIFICATION_SETTINGS(n.id))
+                        t(g.BVt.USER_GUILD_NOTIFICATION_SETTINGS(n.id))
                     }
                 })
             })]
@@ -98,19 +98,19 @@ class A extends s.PureComponent {
             defaultRoute: e,
             transitionTo: t
         } = this.props;
-        return (0, i.jsxs)(_.Ay, {
-            children: [(0, i.jsx)(_._V, {
+        return (0, i.jsxs)(h.Ay, {
+            children: [(0, i.jsx)(h._V, {
                 src: n(37772),
                 className: m.SX
-            }), (0, i.jsx)(_.hE, {
+            }), (0, i.jsx)(h.hE, {
                 className: m.QB,
-                children: g.intl.string(g.t.ox9hIS)
-            }), (0, i.jsx)(_.tK, {
-                children: g.intl.string(g.t["/dcuR5"])
+                children: p.intl.string(p.t.ox9hIS)
+            }), (0, i.jsx)(h.tK, {
+                children: p.intl.string(p.t["/dcuR5"])
             }), (0, i.jsx)("div", {
                 className: m.eT,
                 children: (0, i.jsx)(o.Button, {
-                    text: g.intl.string(g.t.fIv16B),
+                    text: p.intl.string(p.t.fIv16B),
                     fullWidth: !0,
                     onClick: () => t(e)
                 })

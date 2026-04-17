@@ -20,8 +20,8 @@ var s = t(627968),
     S = t(533406),
     h = t(954571),
     w = t(661492),
-    C = t(299679),
-    T = t(570050),
+    T = t(299679),
+    C = t(570050),
     L = t(95817),
     m = t(594832),
     E = t(146423),
@@ -32,11 +32,11 @@ var s = t(627968),
     x = t(479026),
     R = t(699976),
     H = t(652215),
-    M = t(788868),
-    j = t(985018),
+    j = t(788868),
+    M = t(985018),
     v = t(224601),
     G = t(997990);
-let P = M.vQ.DM_CHANNEL_WISHLIST,
+let P = j.vQ.DM_CHANNEL_WISHLIST,
     b = R.Z.SIZE_133;
 
 function D(i) {
@@ -63,12 +63,12 @@ function N(i) {
         skuAssetHoverClassName: S,
         spec: x = b,
         guildId: R,
-        channelId: M,
+        channelId: j,
         numMoreItems: G
-    } = i, [P, D] = n.useState(!1), N = (0, C.Ar)(), W = (0, d.A)(() => (0, c.A)()), B = null != G && G > 0, {
+    } = i, [P, D] = n.useState(!1), N = (0, T.Ar)(), W = (0, d.A)(() => (0, c.A)()), B = null != G && G > 0, {
         handleVisibilityChange: F
     } = (0, L.G)(W), K = (0, l.K)(F, .5, !B);
-    (0, T.J)(P && !B, W);
+    (0, C.J)(P && !B, W);
     let Y = n.useCallback(() => {
             if (B) return void u();
             let i = _ === m.uS.WISHLIST ? "wishlist" : "shop";
@@ -117,10 +117,8 @@ function N(i) {
             icon: J,
             isPromptingPurchase: Q
         } = (0, O.h)({
-            sku: e,
             wishlistOwner: a,
-            isOwned: !1,
-            location: "DM Gifting Modal Wishlist Item Card"
+            isOwned: !1
         });
     return (0, s.jsx)("div", {
         ref: K,
@@ -131,9 +129,9 @@ function N(i) {
             skuPreviewStyle: o()(v.e, f, P ? k : void 0),
             skuAssetClassName: P ? S : void 0,
             onClick: Y,
-            "aria-label": B ? j.intl.formatToPlainString(j.t["8uYD+I"], {
+            "aria-label": B ? M.intl.formatToPlainString(M.t["8uYD+I"], {
                 username: a.username
-            }) : j.intl.formatToPlainString(j.t.ZBB4Ty, {
+            }) : M.intl.formatToPlainString(M.t.ZBB4Ty, {
                 productName: (0, w.TC)(e)
             }),
             onHoverOrFocusChange: D,
@@ -146,7 +144,7 @@ function N(i) {
                     spec: x,
                     users: [a],
                     guildId: R ?? void 0,
-                    channelId: M ?? void 0
+                    channelId: j ?? void 0
                 }) : null
             }), !B && (0, s.jsx)(O.A, {
                 spec: x,

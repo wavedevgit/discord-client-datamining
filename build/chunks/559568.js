@@ -12,38 +12,38 @@ var i = n(627968),
     c = n(506774),
     d = n(397927),
     u = n(73153),
-    h = n(830215),
-    _ = n(961350),
-    p = n(954571),
-    g = n(927813),
+    _ = n(830215),
+    h = n(961350),
+    g = n(954571),
+    p = n(927813),
     m = n(104798),
     A = n(652215),
     f = n(985018),
     E = n(1959);
 let x = "mweb_handoff_nonce",
     I = "mweb_handoff_nonce_expiration",
-    N = +g.A.Millis.MINUTE,
+    N = +p.A.Millis.MINUTE,
     v = new Set(["nonce_missing", "nonce_expired", "handoff_exchange"]),
     T = new Set(["deep_link_failed"]),
     j = () => {
         c.w.remove(x), c.w.remove(I)
     },
     C = () => {
-        let e = (0, a.bG)([_.default], () => _.default.getFingerprint()),
+        let e = (0, a.bG)([h.default], () => h.default.getFingerprint()),
             {
                 fingerprint: t,
                 handoff_token: n
             } = (0, r.parse)(window.location.search),
-            g = Array.isArray(t) ? t.length > 1 ? t[0] : null : t,
-            C = g ?? (null !== e ? e : void 0);
+            p = Array.isArray(t) ? t.length > 1 ? t[0] : null : t,
+            C = p ?? (null !== e ? e : void 0);
         s.useEffect(() => {
-            null !== g && e !== g && u.h.dispatch({
+            null !== p && e !== p && u.h.dispatch({
                 type: "FINGERPRINT",
-                fingerprint: g
+                fingerprint: p
             })
-        }, [g, e]);
+        }, [p, e]);
         let [S, y] = s.useState(null), b = s.useCallback(e => {
-            y(e), p.default.track(A.HAw.MOBILE_WEB_HANDOFF_FAILURE, {
+            y(e), g.default.track(A.HAw.MOBILE_WEB_HANDOFF_FAILURE, {
                 reason: e,
                 fingerprint: (0, l.v)(C)
             }, {
@@ -63,8 +63,8 @@ let x = "mweb_handoff_nonce",
                         handoff_token: n
                     },
                     rejectWithError: !0
-                }).then(e => h.A.loginToken(e.body.token, !1)).then(() => {
-                    p.default.track(A.HAw.LOGIN_SUCCESSFUL, {
+                }).then(e => _.A.loginToken(e.body.token, !1)).then(() => {
+                    g.default.track(A.HAw.LOGIN_SUCCESSFUL, {
                         source: A.mdB.MOBILE_WEB_HANDOFF,
                         is_new_user: !1,
                         fingerprint: (0, l.v)(C)
@@ -103,7 +103,7 @@ let x = "mweb_handoff_nonce",
                         n = new URLSearchParams(window.location.search);
                     n.delete("fingerprint"), n.delete("handoff_token");
                     let i = new URLSearchParams;
-                    i.set("redirect", encodeURIComponent(window.location.pathname + n.toString())), i.set("key", e), i.set("fingerprint", C), t.search = i.toString(), p.default.track(A.HAw.DEEP_LINK_CLICKED, {
+                    i.set("redirect", encodeURIComponent(window.location.pathname + n.toString())), i.set("key", e), i.set("fingerprint", C), t.search = i.toString(), g.default.track(A.HAw.DEEP_LINK_CLICKED, {
                         fingerprint: (0, l.v)(C),
                         source: "mobile_web_handoff",
                         destination: A.J$u

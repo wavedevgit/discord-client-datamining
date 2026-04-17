@@ -1,8 +1,8 @@
 /** chunk id: 414121 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => g,
-    Lx: () => p,
+    Ay: () => p,
+    Lx: () => g,
     Zs: () => d
 });
 var i, s = n(627968),
@@ -16,8 +16,8 @@ let u = Object.freeze({
         SIZE_40: "size-40",
         SIZE_60: "size-60"
     }),
-    h = n(906118);
-class _ extends r.PureComponent {
+    _ = n(906118);
+class h extends r.PureComponent {
     static defaultProps = {
         size: 128,
         bgColor: "#ffffff",
@@ -44,7 +44,7 @@ class _ extends r.PureComponent {
         })
     }
 }
-class p extends r.PureComponent {
+class g extends r.PureComponent {
     static defaultProps = {
         size: 144,
         bgColor: "#ffffff",
@@ -56,17 +56,17 @@ class p extends r.PureComponent {
         } = this.props, t = u[e ?? "SIZE_40"];
         return (0, s.jsxs)("div", {
             className: c.qrCodeOverlayContainer,
-            children: [(0, s.jsx)(_, {
+            children: [(0, s.jsx)(h, {
                 ...this.props
             }), (0, s.jsx)("div", {
                 className: c.qrCodeOverlay,
                 children: (0, s.jsx)("img", {
                     className: c[t],
-                    src: h,
+                    src: _,
                     alt: ""
                 })
             })]
         })
     }
 }
-let g = _
+let p = h

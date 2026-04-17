@@ -17,7 +17,7 @@ function u(e) {
         transitionTo: t,
         token: n,
         width: u
-    } = e, [h, _] = s.useState(d.k.START), [p, g] = s.useState(null), [m, A] = s.useState(""), f = {
+    } = e, [_, h] = s.useState(d.k.START), [g, p] = s.useState(null), [m, A] = s.useState(""), f = {
         impression_group: r.ImpressionGroups.ACCOUNT_REVERT_FLOW
     };
     return (0, i.jsx)("div", {
@@ -25,15 +25,15 @@ function u(e) {
             margin: "8px"
         },
         children: (0, i.jsxs)(l.tN_, {
-            activeSlide: h,
+            activeSlide: _,
             width: u,
-            onSlideReady: g,
+            onSlideReady: p,
             children: [(0, i.jsx)(l.q7S, {
                 id: d.k.START,
                 impressionProperties: f,
                 impressionName: r.ImpressionNames.ACCOUNT_REVERT_EXPLAINER,
                 children: (0, i.jsx)(o.A, {
-                    setSlide: _,
+                    setSlide: h,
                     transitionTo: t
                 })
             }), (0, i.jsx)(l.q7S, {
@@ -42,9 +42,9 @@ function u(e) {
                 impressionName: r.ImpressionNames.ACCOUNT_REVERT_CHANGE_PASSWORD,
                 children: (0, i.jsx)(a.A, {
                     setOriginalEmail: A,
-                    setSlide: _,
+                    setSlide: h,
                     transitionTo: t,
-                    ready: p === d.k.PASSWORD,
+                    ready: g === d.k.PASSWORD,
                     token: n
                 })
             }), (0, i.jsx)(l.q7S, {

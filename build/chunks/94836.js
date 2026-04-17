@@ -16,9 +16,9 @@ var l = n(627968),
     f = n(248643),
     h = n(256905),
     x = n(652176),
-    g = n(371794),
-    p = n(409626),
-    _ = n(368546),
+    g = n(90721),
+    p = n(371794),
+    _ = n(409626),
     v = n(985018),
     A = n(141535),
     b = n(616337),
@@ -66,7 +66,7 @@ function j(e) {
                         ringClassName: b.jR
                     },
                     onClick: () => {
-                        n(p.Ws.ClickImage), (0, h.R)({
+                        n(_.Ws.ClickImage), (0, h.R)({
                             items: s,
                             startingIndex: t,
                             shouldHideMediaOptions: !0,
@@ -147,7 +147,7 @@ let I = a.memo(function(e) {
             onPause: o,
             onFullscreenChange: c
         } = e, d = a.useRef(null);
-        return (0, _.A)({
+        return (0, g.A)({
             videoRef: i,
             canvasRef: d,
             enabled: !n
@@ -187,14 +187,14 @@ function N(e) {
     let {
         game: t,
         trackAction: n
-    } = e, [i, r] = a.useState(0), [o, m] = a.useState(null), [f, x] = a.useState(t.screenshotUrls), _ = a.useRef(null), A = a.useRef(null), b = (0, s.bG)([d.A], () => d.A.useReducedMotion);
+    } = e, [i, r] = a.useState(0), [o, m] = a.useState(null), [f, x] = a.useState(t.screenshotUrls), g = a.useRef(null), A = a.useRef(null), b = (0, s.bG)([d.A], () => d.A.useReducedMotion);
     f !== t.screenshotUrls && (x(t.screenshotUrls), r(0));
     let j = a.useMemo(() => [...(t.trailers ?? []).map(e => {
-            let t = (0, g.YE)(e.application_id, e.id, e.width, "mp4");
+            let t = (0, p.YE)(e.application_id, e.id, e.width, "mp4");
             return {
                 url: t,
                 proxyUrl: t,
-                poster: (0, g.YE)(e.application_id, e.id, e.width, "webp"),
+                poster: (0, p.YE)(e.application_id, e.id, e.width, "webp"),
                 type: "VIDEO",
                 width: e.width,
                 height: e.height
@@ -214,8 +214,8 @@ function N(e) {
         [L, k] = a.useState(!1),
         R = a.useRef(null),
         O = a.useCallback(() => {
-            n(T ? p.Ws.ClickTrailer : p.Ws.ClickImage);
-            let e = _.current,
+            n(T ? _.Ws.ClickTrailer : _.Ws.ClickImage);
+            let e = g.current,
                 t = R.current,
                 l = null != e && !e.paused,
                 a = e?.muted ?? !0,
@@ -261,7 +261,7 @@ function N(e) {
             children: (0, l.jsx)(C, {
                 item: S,
                 reducedMotion: b,
-                videoRef: _,
+                videoRef: g,
                 mediaPlayerRef: R,
                 onPlay: M,
                 onPause: G,

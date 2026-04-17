@@ -18,7 +18,7 @@ function c(e) {
         buttonText: c,
         image: d,
         onButtonClick: u,
-        loading: h
+        loading: _
     } = e;
     return (0, i.jsx)(a.Ay, {
         className: o.kL,
@@ -37,7 +37,7 @@ function c(e) {
                         justify: "center",
                         className: o.Sl,
                         children: d
-                    }), h && (0, i.jsx)(l.y$y, {
+                    }), _ && (0, i.jsx)(l.y$y, {
                         type: l.y$y.Type.SPINNING_CIRCLE
                     }), (0, i.jsx)(s.DZT, {
                         variant: "heading-xl/semibold",
@@ -50,7 +50,7 @@ function c(e) {
                     className: o.VA,
                     children: n
                 })]
-            }), !h && (0, i.jsx)(r.$nd, {
+            }), !_ && (0, i.jsx)(r.$nd, {
                 onClick: u,
                 text: c,
                 variant: "overlay-primary"

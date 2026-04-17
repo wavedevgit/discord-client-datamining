@@ -65,11 +65,9 @@ function O(e) {
         icon: S,
         isPromptingPurchase: R
     } = (0, x.h)({
-        sku: t,
         wishlistOwner: n,
         isOwned: !1,
-        shortText: !0,
-        location: "DM Side Panel Wishlist Item Card"
+        shortText: !0
     }), [O, L] = l.useState(!1);
     return (0, i.jsxs)(o.BJc, {
         direction: "horizontal",

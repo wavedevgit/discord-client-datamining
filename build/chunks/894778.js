@@ -12,11 +12,11 @@ var i = n(353640),
     c = n(315290),
     d = n(652215);
 let u = "UserFlowAnalyticsStore_current",
-    h = "UserFlowAnalyticsStore";
+    _ = "UserFlowAnalyticsStore";
 
-function _(e) {
+function h(e) {
     if (e === c.do.UNKNOWN) return null;
-    let t = l.w.get(`${h}-${e}`);
+    let t = l.w.get(`${_}-${e}`);
     if (null == t) return null;
     let {
         version: n,
@@ -25,7 +25,7 @@ function _(e) {
     return 1 !== n ? null : i
 }
 new a.A("UserFlowAnalytics");
-let p = (0, i.v)()((0, s.eh)((e, t) => ({
+let g = (0, i.v)()((0, s.eh)((e, t) => ({
     flows: {},
     currentFlow: null,
     activeFlow: () => {
@@ -33,17 +33,17 @@ let p = (0, i.v)()((0, s.eh)((e, t) => ({
         if (null == e) return null;
         let {
             [e]: n
-        } = t().flows, i = n ?? _(e);
+        } = t().flows, i = n ?? h(e);
         return i?.currentStep != null ? e : null
     }
 })));
 
-function g(e, t) {
+function p(e, t) {
     let {
         [e]: n, ...i
-    } = p.getState().flows, s = n ?? _(e);
+    } = g.getState().flows, s = n ?? h(e);
     (s?.currentStep == null || s.currentStep !== t) && (0, r.r)(() => {
-        p.setState({
+        g.setState({
             flows: {
                 ...i,
                 [e]: {
@@ -63,12 +63,12 @@ function g(e, t) {
 function m(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
         i = e;
-    e === c.do.ANY && (i = p.getState().activeFlow() ?? c.do.UNKNOWN);
+    e === c.do.ANY && (i = g.getState().activeFlow() ?? c.do.UNKNOWN);
     let {
         [i]: s, ...l
-    } = p.getState().flows, a = s ?? _(i);
+    } = g.getState().flows, a = s ?? h(i);
     null == a || null == a.currentStep || a.currentStep !== t && (0, r.r)(() => {
-        p.setState({
+        g.setState({
             flows: {
                 ...l,
                 [i]: {
@@ -86,13 +86,13 @@ function m(e, t) {
 }
 
 function A() {
-    return null != p.getState().activeFlow()
+    return null != g.getState().activeFlow()
 }
-p.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : void 0, e => {
+g.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : void 0, e => {
     if (null != e && (! function(e) {
             if (e.type === c.do.UNKNOWN) return;
-            let t = `${h}-${e.type}`;
-            e.ended ? (l.w.remove(t), l.w.remove(u)) : (l.w.set(`${h}-${e.type}`, {
+            let t = `${_}-${e.type}`;
+            e.ended ? (l.w.remove(t), l.w.remove(u)) : (l.w.set(`${_}-${e.type}`, {
                 ...e,
                 version: 1
             }), l.w.set(u, e.type))
@@ -105,10 +105,10 @@ p.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : void 0, e => {
             flush: !0
         }), e.ended)) {
         let t = {
-            ...p.getState().flows
+            ...g.getState().flows
         };
         delete t[e.type], (0, r.r)(() => {
-            p.setState({
+            g.setState({
                 flows: t,
                 currentFlow: null
             })
@@ -116,9 +116,9 @@ p.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : void 0, e => {
     }
 });
 let f = {
-    flowStart: g,
+    flowStart: p,
     flowStepOrStart: function(e, t) {
-        A() ? m(e, t) : g(e, t)
+        A() ? m(e, t) : p(e, t)
     },
     flowStep: m,
     hasActiveFlow: A

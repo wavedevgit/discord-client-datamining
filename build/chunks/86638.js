@@ -94,10 +94,8 @@ function y(e) {
         icon: M,
         isPromptingPurchase: F
     } = (0, C.h)({
-        sku: t.sku,
         wishlistOwner: n,
-        isOwned: h,
-        location: "User Profile Wishlist Item Card"
+        isOwned: h
     });
     return (0, i.jsxs)("div", {
         className: D.kL,

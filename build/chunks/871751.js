@@ -35,8 +35,8 @@ var r = l(627968),
     M = l(998218),
     R = l(259407),
     W = l(690595),
-    L = l(692051),
-    k = l(652215),
+    k = l(692051),
+    L = l(652215),
     B = l(838541),
     V = l(985018),
     H = l(472840),
@@ -75,12 +75,12 @@ function G(e) {
         href: T,
         placeholder: M,
         placeholderVersion: W,
-        sourceMetadata: L
+        sourceMetadata: k
     } = e, [B, V] = n.useState(x), D = null != d && null == d.proxyURL, F = n.useCallback(() => V(!1), [V]), G = e => {
-        e.preventDefault(), e.stopPropagation(), y?.(!1), V(!0), D && (j._.dispatch(k.jej.VIDEO_EMBED_PLAYBACK_STARTED), j._.subscribeOnce(k.jej.VIDEO_EMBED_PLAYBACK_STARTED, F))
+        e.preventDefault(), e.stopPropagation(), y?.(!1), V(!0), D && (j._.dispatch(L.jej.VIDEO_EMBED_PLAYBACK_STARTED), j._.subscribeOnce(L.jej.VIDEO_EMBED_PLAYBACK_STARTED, F))
     };
     n.useEffect(() => () => {
-        D && j._.unsubscribe(k.jej.VIDEO_EMBED_PLAYBACK_STARTED, F)
+        D && j._.unsubscribe(L.jej.VIDEO_EMBED_PLAYBACK_STARTED, F)
     }, [D, F]);
     let {
         width: O,
@@ -118,7 +118,7 @@ function G(e) {
             onMute: E,
             onControlsHide: A,
             onControlsShow: S,
-            sourceMetadata: L
+            sourceMetadata: k
         })
     });
     if (B && null != d) {
@@ -187,7 +187,7 @@ function G(e) {
             placeholder: M,
             placeholderVersion: W,
             onClick: b && null != d ? G : null,
-            sourceMetadata: L,
+            sourceMetadata: k,
             analyticsSource: "EmbedVideo"
         }), (0, r.jsx)("div", {
             className: H._W,
@@ -197,8 +197,8 @@ function G(e) {
                     onPlay: null != d ? G : null,
                     externalURL: T,
                     renderLinkComponent: _,
-                    messageId: L?.message?.id,
-                    channelId: L?.message?.channel_id
+                    messageId: k?.message?.id,
+                    channelId: k?.message?.channel_id
                 }) : null
             })
         })]
@@ -314,7 +314,7 @@ class U extends n.PureComponent {
                 width: 150,
                 height: 18
             })
-        }) : (0, r.jsx)(L.Y.Consumer, {
+        }) : (0, r.jsx)(k.Y.Consumer, {
             children: s => {
                 let {
                     disableAnimations: o
@@ -415,7 +415,7 @@ class U extends n.PureComponent {
             {
                 sourceMetadata: s
             } = this.state;
-        return null == t ? null : (0, r.jsx)(L.Y.Consumer, {
+        return null == t ? null : (0, r.jsx)(k.Y.Consumer, {
             children: r => {
                 let {
                     disableAnimations: o
@@ -528,7 +528,7 @@ class U extends n.PureComponent {
     }
     handleImageHover() {
         let e = A.A.getChannel(this.props.message?.channel_id);
-        S.default.track(k.HAw.IMAGE_HOVERED, {
+        S.default.track(L.HAw.IMAGE_HOVERED, {
             guild_id: e?.guild_id,
             channel_id: e?.id,
             image_recommendations_shown: !1
@@ -597,7 +597,7 @@ class U extends n.PureComponent {
             },
             C = l.url.split(".").pop()?.split("?")[0] ?? "";
         return "jpg" === C && (C = "jpeg"), (0, r.jsx)(h.G.Consumer, {
-            children: t => (0, r.jsx)(L.Y.Consumer, {
+            children: t => (0, r.jsx)(k.Y.Consumer, {
                 children: l => {
                     let {
                         disableAnimations: r
@@ -640,7 +640,7 @@ class U extends n.PureComponent {
             sourceMetadata: b
         } = this.state;
         if (null == n || null == i) return null;
-        if (e) return null == a ? null : (0, r.jsx)(L.Y.Consumer, {
+        if (e) return null == a ? null : (0, r.jsx)(k.Y.Consumer, {
             children: e => {
                 let {
                     disableAnimations: s
@@ -702,7 +702,7 @@ class U extends n.PureComponent {
             footer: t,
             timestamp: l
         } = this.props.embed;
-        return null != t ? (0, r.jsx)(L.Y.Consumer, {
+        return null != t ? (0, r.jsx)(k.Y.Consumer, {
             children: n => {
                 let {
                     disableAnimations: i
@@ -750,7 +750,7 @@ class U extends n.PureComponent {
         });
         return (0, r.jsx)(s._V3, {
             className: e,
-            readyState: k.Rv1.READY,
+            readyState: L.Rv1.READY,
             src: "",
             width: a,
             height: o,
@@ -771,13 +771,13 @@ class U extends n.PureComponent {
             } = this.state;
         if (this.shouldShowStaticPlaceholder) return this.renderStaticPlaceholderMedia();
         switch (t.type) {
-            case k.Auw.GIFV:
+            case L.Auw.GIFV:
                 return this.renderVideo({
                     gifv: !0,
                     hiddenSpoiler: e,
                     isVisible: l
                 });
-            case k.Auw.VIDEO:
+            case L.Auw.VIDEO:
             default:
                 if (null != t.video) return this.renderVideo({
                     gifv: !1,
@@ -808,9 +808,9 @@ class U extends n.PureComponent {
             a = this.renderAuthor(n),
             s = this.renderTitle(n);
         switch (l.type) {
-            case k.Auw.IMAGE:
-            case k.Auw.VIDEO:
-            case k.Auw.GIFV:
+            case L.Auw.IMAGE:
+            case L.Auw.VIDEO:
+            case L.Auw.GIFV:
                 break;
             default:
                 e = this.renderDescription()
@@ -819,7 +819,7 @@ class U extends n.PureComponent {
         r || (t = this.renderMedia(!n));
         let d = this.renderFooter(),
             c = null == t;
-        return l.type === k.Auw.RICH && (c = null == l.video), {
+        return l.type === L.Auw.RICH && (c = null == l.video), {
             provider: i,
             author: a,
             title: s,
@@ -862,9 +862,9 @@ class U extends n.PureComponent {
             maxWidth: a,
             maxHeight: s
         });
-        if (!e && (n === k.Auw.VIDEO || d >= 300)) return d + 32;
-        if (n === k.Auw.RICH && void 0 !== l) return 520;
-        if (n === k.Auw.GIFV) {
+        if (!e && (n === L.Auw.VIDEO || d >= 300)) return d + 32;
+        if (n === L.Auw.RICH && void 0 !== l) return 520;
+        if (n === L.Auw.GIFV) {
             let {
                 width: e
             } = (0, N.Uj)({
@@ -936,7 +936,7 @@ class U extends n.PureComponent {
         let {
             embed: e
         } = this.props;
-        return e.type === k.Auw.IMAGE || e.type === k.Auw.VIDEO || e.type === k.Auw.GIFV || (e.type === k.Auw.RICH || e.type === k.Auw.ARTICLE) && (null != e.video || null != e.image)
+        return e.type === L.Auw.IMAGE || e.type === L.Auw.VIDEO || e.type === L.Auw.GIFV || (e.type === L.Auw.RICH || e.type === L.Auw.ARTICLE) && (null != e.video || null != e.image)
     }
     renderEmbedContent = (() => {
         var e = this;
@@ -1006,7 +1006,7 @@ class U extends n.PureComponent {
             alignSelf: "start"
         };
         let d = e ? void 0 : this.getMaxWidth(!1);
-        if (void 0 === d && void 0 === l && n !== k.Auw.RICH) {
+        if (void 0 === d && void 0 === l && n !== L.Auw.RICH) {
             let e = t ?? r;
             if (void 0 !== e) {
                 let {
@@ -1057,7 +1057,7 @@ class U extends n.PureComponent {
         }) : (0, w.A)(e) ? (0, r.jsx)(C.A, {
             embed: e,
             className: l
-        }) : e.provider?.name === "Amazon Music" && e.type === k.Auw.RICH ? (0, r.jsx)(p.A, {
+        }) : e.provider?.name === "Amazon Music" && e.type === L.Auw.RICH ? (0, r.jsx)(p.A, {
             embed: e,
             className: l
         }) : (0, d.A)(e) ? (0, r.jsx)(c.A, {

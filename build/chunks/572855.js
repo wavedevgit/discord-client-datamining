@@ -16,8 +16,8 @@ var a = n(627968),
     p = n(803316),
     A = n(465856),
     b = n(253932),
-    S = n(957565),
-    h = n(255438),
+    h = n(957565),
+    S = n(255438),
     C = n(307600),
     g = n(723702),
     f = n(837921),
@@ -172,7 +172,7 @@ function P(e) {
         });
         if (n?.identifier?.type !== "attachment") return null;
         let d = (0, A.A)(n.identifier),
-            u = (0, h.Xq)(n.identifier.size / 1e3);
+            u = (0, S.Xq)(n.identifier.size / 1e3);
         return (0, a.jsxs)(c.Drp, {
             id: "media-viewer-details",
             label: v.intl.string(v.t.sqBLa9),
@@ -225,7 +225,7 @@ function P(e) {
                 action: function() {
                     T.l.markActionPerformed(T.N.COPY_LINK_PRESSED);
                     let e = (0, p.XW)((0, p.bc)(t.original, t.url), t.contentType, t.originalContentType);
-                    (0, S.C)(e, () => {
+                    (0, h.C)(e, () => {
                         T.l.trackMediaViewerLinkCopied({
                             href: e,
                             success: !0
@@ -244,7 +244,7 @@ function P(e) {
 
 function w(e, t, n) {
     let r = i.useCallback(e => {
-        (0, S.C)(e, () => (0, c.showToast)({
+        (0, h.C)(e, () => (0, c.showToast)({
             message: v.intl.string(v.t.mGZ66D),
             type: c.ToastType.SUCCESS,
             id: "media-viewer-detail-copied"

@@ -1,8 +1,8 @@
 /** chunk id: 210714 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    D: () => _,
-    d: () => h
+    D: () => h,
+    d: () => _
 });
 var i = n(835245),
     s = n(77729),
@@ -83,10 +83,10 @@ class d {
 }
 let u = new d;
 
-function h(e) {
+function _(e) {
     u.trackAppUIViewed(e)
 }
 
-function _() {
+function h() {
     u.trackTTI()
 }

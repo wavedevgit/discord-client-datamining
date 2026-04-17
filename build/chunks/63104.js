@@ -13,10 +13,10 @@ var s = n(503698),
     c = n(397927),
     d = n(775602),
     u = n(7250),
-    h = n(394549);
-let _ = o.A.unsafe_rawColors.PRIMARY_300,
-    p = o.A.unsafe_rawColors.WHITE,
-    g = o.A.unsafe_rawColors.PRIMARY_630;
+    _ = n(394549);
+let h = o.A.unsafe_rawColors.PRIMARY_300,
+    g = o.A.unsafe_rawColors.WHITE,
+    p = o.A.unsafe_rawColors.PRIMARY_630;
 
 function m(e) {
     let {
@@ -25,7 +25,7 @@ function m(e) {
         forcedIconColor: s,
         className: o,
         iconClassName: m
-    } = e, [A, f] = (0, a.yK)([d.A], () => [d.A.desaturateUserColors, d.A.saturation]), E = (0, c.rdh)(_).hex(), x = t ?? E, I = (0, l.$k)((0, l.LX)(x), !1, A ? f : null), N = (0, c.rdh)(p).hex(), v = (0, c.rdh)(g).hex(), T = null != s ? s : (0, u.j)({
+    } = e, [A, f] = (0, a.yK)([d.A], () => [d.A.desaturateUserColors, d.A.saturation]), E = (0, c.rdh)(h).hex(), x = t ?? E, I = (0, l.$k)((0, l.LX)(x), !1, A ? f : null), N = (0, c.rdh)(g).hex(), v = (0, c.rdh)(p).hex(), T = null != s ? s : (0, u.j)({
         backgroundColor: x,
         colors: [N, v]
     }), j = n / 8;
@@ -41,7 +41,7 @@ function m(e) {
         children: (0, i.jsx)(c.qYV, {
             size: "custom",
             color: T,
-            className: r()(h.w, m),
+            className: r()(_.w, m),
             width: n - 2 * j,
             height: n - 2 * j,
             style: {

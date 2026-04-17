@@ -12,10 +12,10 @@ var i = n(627968),
     c = n(311907),
     d = n(73153),
     u = n(830215),
-    h = n(869038),
-    _ = n(846293),
-    p = n(526423),
-    g = n(745399),
+    _ = n(869038),
+    h = n(846293),
+    g = n(526423),
+    p = n(745399),
     m = n(549711),
     A = n(829691),
     f = n(212640),
@@ -68,10 +68,10 @@ let er = (0, G.A)(Y.A),
     ec = (0, G.A)(K.A),
     ed = (0, G.A)(C.A),
     eu = (0, G.A)($.A),
-    eh = (0, G.A)(et.A),
-    e_ = (0, G.A)(F.A),
-    ep = (0, G.A)(en.A),
-    eg = (0, G.A)(x.A),
+    e_ = (0, G.A)(et.A),
+    eh = (0, G.A)(F.A),
+    eg = (0, G.A)(en.A),
+    ep = (0, G.A)(x.A),
     em = (0, G.A)(ee.A),
     eA = (0, G.A)(W.A),
     ef = (0, G.A)(E.A),
@@ -80,7 +80,7 @@ let er = (0, G.A)(Y.A),
     eI = (0, G.A)(H.A),
     eN = (0, G.A)(J.A),
     ev = (0, G.A)(Z.A),
-    eT = (0, G.A)(g.A),
+    eT = (0, G.A)(p.A),
     ej = (0, G.A)(S.A);
 class eC extends s.PureComponent {
     state = {
@@ -124,13 +124,13 @@ class eC extends s.PureComponent {
             load_time: B.A.getTimeSinceNavigationStart()
         }, {
             flush: !0
-        })), t && this.resolveInvite(), this.resolveGiftCode(), this.resolveGuildTemplate(), p.A.initialize(), (0, b.D)()
+        })), t && this.resolveInvite(), this.resolveGiftCode(), this.resolveGuildTemplate(), g.A.initialize(), (0, b.D)()
     }
     componentDidUpdate(e) {
         !e.hasLoadedExperiments && this.props.hasLoadedExperiments && this.resolveInvite(), e.invite?.state !== this.props.invite?.state && this.maybeFetchApplicationSplash()
     }
     componentWillUnmount() {
-        p.A.terminate()
+        g.A.terminate()
     }
     maybeFetchApplicationSplash() {
         let {
@@ -155,8 +155,8 @@ class eC extends s.PureComponent {
         if (null == e) return;
         let {
             invite: t
-        } = await _.Ay.resolveInvite(e, ei.S3d.INVITE);
-        null != t && ((0, A.v)(t), null != t.type && es.uR.has(t.type) && _.Ay.openNativeAppModal(e))
+        } = await h.Ay.resolveInvite(e, ei.S3d.INVITE);
+        null != t && ((0, A.v)(t), null != t.type && es.uR.has(t.type) && h.Ay.openNativeAppModal(e))
     }
     resolveGuildTemplate() {
         let {
@@ -173,8 +173,8 @@ class eC extends s.PureComponent {
         let {
             giftCode: e
         } = this.props;
-        null != e && h.A.resolveGiftCode(e, !0, !0).then(t => {
-            null != t && null == t.giftCode.promotion && d.h.wait(() => h.A.openNativeGiftCodeModal(e))
+        null != e && _.A.resolveGiftCode(e, !0, !0).then(t => {
+            null != t && null == t.giftCode.promotion && d.h.wait(() => _.A.openNativeGiftCodeModal(e))
         })
     }
     render() {
@@ -269,7 +269,7 @@ class eC extends s.PureComponent {
                 }
             }), (0, i.jsx)(m.A, {
                 path: ei.BVt.VERIFY,
-                render: e => (0, i.jsx)(ep, {
+                render: e => (0, i.jsx)(eg, {
                     ...e
                 })
             }), (0, i.jsx)(m.A, {
@@ -279,7 +279,7 @@ class eC extends s.PureComponent {
                 })
             }), (0, i.jsx)(m.A, {
                 path: ei.BVt.VERIFY_REQUEST,
-                render: e => (0, i.jsx)(eg, {
+                render: e => (0, i.jsx)(ep, {
                     ...e
                 })
             }), (0, i.jsx)(m.A, {
@@ -294,7 +294,7 @@ class eC extends s.PureComponent {
                 })
             }), (0, i.jsx)(m.A, {
                 path: ei.BVt.AUTHORIZE_IP,
-                render: e => (0, i.jsx)(eh, {
+                render: e => (0, i.jsx)(e_, {
                     ...e
                 })
             }), (0, i.jsx)(m.A, {
@@ -311,7 +311,7 @@ class eC extends s.PureComponent {
                 })
             }), (0, i.jsx)(m.A, {
                 path: ei.BVt.AUTHORIZE_PAYMENT,
-                render: e => (0, i.jsx)(e_, {
+                render: e => (0, i.jsx)(eh, {
                     ...e
                 })
             }), (0, i.jsx)(m.A, {

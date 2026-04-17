@@ -16,9 +16,9 @@ var n, o = a(627968),
     p = a(793574),
     b = a(688810),
     C = a(922301),
-    f = a(750112),
+    h = a(750112),
     g = a(73392),
-    h = a(386467),
+    f = a(386467),
     I = a(534400),
     A = a(176201),
     T = a(676608),
@@ -44,13 +44,13 @@ function N(e) {
         hideSystemTag: R = !1,
         className: G,
         onClick: D,
-        onContextMenu: L,
-        onPopoutRequestClose: k,
+        onContextMenu: k,
+        onPopoutRequestClose: L,
         renderPopout: j,
         decorations: F,
         previewGuildId: U,
         subscribeToGroupId: H
-    } = e, V = i.useRef(null), z = i.useContext(h.A), W = n?.guild_id ?? z, {
+    } = e, V = i.useRef(null), z = i.useContext(f.A), W = n?.guild_id ?? z, {
         analyticsLocations: $
     } = (0, b.Ay)(p.A.USERNAME), K = N ? "@" : "", {
         nick: X,
@@ -88,8 +88,8 @@ function N(e) {
             } : void 0
         })(),
         onClick: D,
-        onContextMenu: L,
-        children: es ? (0, o.jsx)(f.A, {
+        onContextMenu: k,
+        children: es ? (0, o.jsx)(h.A, {
             userName: eu,
             displayNameStyles: Z,
             effectDisplayType: er ? C.G.ANIMATED : C.G.PLAIN,
@@ -120,7 +120,7 @@ function N(e) {
             avatar: t.guildMemberAvatar,
             size: 80
         }) : void 0,
-        onRequestClose: k,
+        onRequestClose: L,
         clickTrap: w,
         children: e => {
             let {
@@ -142,17 +142,17 @@ function N(e) {
             ...em,
             className: c()(em.className, G)
         }), ep]
-    }), ef = null != F ? F[0] : null, eg = null != F ? F[1] : null;
+    }), eh = null != F ? F[0] : null, eg = null != F ? F[1] : null;
     return (0, o.jsxs)(b.f5, {
         value: $,
-        children: [null != ef && !R && P ? (0, o.jsxs)(o.Fragment, {
-            children: [" ", ef, " "]
+        children: [null != eh && !R && P ? (0, o.jsxs)(o.Fragment, {
+            children: [" ", eh, " "]
         }) : null, "dot" === Q ? (0, o.jsx)(u.WYI, {
             color: Y,
             colors: ec ? J : null,
             name: q,
             className: O.m4,
             hoverOverride: er
-        }) : null, eC, null != eg ? eg : null, null == ef || R || P ? null : ef]
+        }) : null, eC, null != eg ? eg : null, null == eh || R || P ? null : eh]
     })
 }

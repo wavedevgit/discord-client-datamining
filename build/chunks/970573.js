@@ -12,10 +12,10 @@ var i, s = n(627968),
     c = n(397927),
     d = n(830215),
     u = n(442433),
-    h = n(427157),
-    _ = n(961350),
-    p = n(351906),
-    g = n(287809),
+    _ = n(427157),
+    h = n(961350),
+    g = n(351906),
+    p = n(287809),
     m = n(954571),
     A = n(427262),
     f = n(429707),
@@ -35,11 +35,11 @@ function j(e) {
         currentUser: r,
         hidePrivateData: l,
         isAuthenticated: x
-    } = (0, o.cf)([g.default, p.A, _.default], () => ({
-        currentUser: g.default.getCurrentUser(),
-        hidePrivateData: p.A.hidePersonalInformation,
-        isAuthenticated: _.default.isAuthenticated()
-    })), T = new h.A(n), j = x && r?.id === T.id, C = n.tokenStatus === E.U.INVALID, S = l || T.hasUniqueUsername() ? null : `#${T.discriminator}`, y = null;
+    } = (0, o.cf)([p.default, g.A, h.default], () => ({
+        currentUser: p.default.getCurrentUser(),
+        hidePrivateData: g.A.hidePersonalInformation,
+        isAuthenticated: h.default.isAuthenticated()
+    })), T = new _.A(n), j = x && r?.id === T.id, C = n.tokenStatus === E.U.INVALID, S = l || T.hasUniqueUsername() ? null : `#${T.discriminator}`, y = null;
     return j ? y = (0, s.jsx)(c.Text, {
         variant: "text-sm/semibold",
         className: v.dx,

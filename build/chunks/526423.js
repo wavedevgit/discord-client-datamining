@@ -1,7 +1,7 @@
 /** chunk id: 526423 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(562465),
     s = n(73153),
@@ -13,13 +13,13 @@ var i = n(562465),
     d = n(272355),
     u = n(652215);
 
-function h(e, t) {
+function _(e, t) {
     c.default.track(u.HAw.BROWSER_HANDOFF_SUCCEEDED, {
         authenticated: e,
         handoff_source: t
     })
 }
-class _ extends d.A {
+class h extends d.A {
     _initialize() {
         s.h.subscribe("BROWSER_HANDOFF_END", this.handleEnd), s.h.subscribe("BROWSER_HANDOFF_FROM_APP", this.handleHandoff)
     }
@@ -44,13 +44,13 @@ class _ extends d.A {
             let {
                 body: t
             } = e;
-            (0, l.uA)(t.user), r.A.loginToken(t.token, !1), h(!0, o)
+            (0, l.uA)(t.user), r.A.loginToken(t.token, !1), _(!0, o)
         }, e => {
-            null != s && h(!1, o), r.A.setFingerprint(s), (0, l.mZ)(), o === a.L.ROLE_SUBSCRIPTION && c.default.track(u.HAw.MOBILE_WEB_HANDOFF_FAILURE, {
+            null != s && _(!1, o), r.A.setFingerprint(s), (0, l.mZ)(), o === a.L.ROLE_SUBSCRIPTION && c.default.track(u.HAw.MOBILE_WEB_HANDOFF_FAILURE, {
                 reason: e.message ?? e.text,
                 handoff_source: o
             })
-        }) : null != s ? (r.A.setFingerprint(s), h(!1, o), (0, l.mZ)()) : (r.A.setFingerprint(s), (0, l.J0)())
+        }) : null != s ? (r.A.setFingerprint(s), _(!1, o), (0, l.mZ)()) : (r.A.setFingerprint(s), (0, l.J0)())
     }
     handleEnd = e => {
         let {
@@ -65,4 +65,4 @@ class _ extends d.A {
         }) : (r.A.setFingerprint(null), (0, l.J0)())
     }
 }
-let p = new _
+let g = new h

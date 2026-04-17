@@ -12,33 +12,33 @@ var i = n(64700),
     c = n(751124),
     d = n(203982),
     u = n(323737),
-    h = n(442767),
-    _ = n(525711),
-    p = n(652215);
-let g = new o.A("useAuthWebsocket");
+    _ = n(442767),
+    h = n(525711),
+    g = n(652215);
+let p = new o.A("useAuthWebsocket");
 
 function m(e, t) {
     let [n, o] = i.useState(0), [m, A] = i.useState(!1), [f, E] = i.useState({
-        step: _.b.INITIALIZING
+        step: h.b.INITIALIZING
     }), x = i.useRef(null), I = i.useMemo(() => new s.A(1500, 3e4), []), N = (0, a.A)(() => {
         E({
-            step: _.b.INITIALIZING
-        }), t ? o(e => e + 1) : (g.info("document is not visible, will defer reconnection when document becomes visible."), A(!0))
+            step: h.b.INITIALIZING
+        }), t ? o(e => e + 1) : (p.info("document is not visible, will defer reconnection when document becomes visible."), A(!0))
     }), v = i.useCallback(() => {
-        g.error("Could not complete Remote Auth login, trying to restart with a new Remote Auth session."), E({
-            step: _.b.INITIALIZING
+        p.error("Could not complete Remote Auth login, trying to restart with a new Remote Auth session."), E({
+            step: h.b.INITIALIZING
         }), I.pending || I.fail(N)
     }, [N, I]);
     return i.useEffect(() => {
-        t && m && f.step === _.b.INITIALIZING && (g.info("reconnecting, now that document is visible"), A(!1), o(e => e + 1))
+        t && m && f.step === h.b.INITIALIZING && (p.info("reconnecting, now that document is visible"), A(!1), o(e => e + 1))
     }, [f, t, m, A]), i.useEffect(() => {
         let t = Date.now(),
             n = e => `[${Date.now()-t}ms] ${e}`,
-            i = e => g.info(n(e)),
+            i = e => p.info(n(e)),
             s = `${window.GLOBAL_ENV.REMOTE_AUTH_ENDPOINT}/?v=2`;
         s.startsWith("//") && (s = `wss:${s}`);
         let a = (0, c.A)(s);
-        g.info(`[0ms] connecting to ${s}`);
+        p.info(`[0ms] connecting to ${s}`);
         let o = null,
             m = null,
             A = null,
@@ -69,11 +69,11 @@ function m(e, t) {
                         return
                     }
                     case "pending_remote_init": {
-                        I.succeed(), d._.dispatch(p.jej.WAVE_EMPHASIZE);
+                        I.succeed(), d._.dispatch(g.jej.WAVE_EMPHASIZE);
                         let e = await u.A.publicKeyFingerprint(j());
                         if (e !== o.fingerprint) throw Error(`bad fingerprint ${e} !== ${o.fingerprint}`);
                         i("handshake complete awaiting remote auth."), E({
-                            step: _.b.PENDING_REMOTE_INIT,
+                            step: h.b.PENDING_REMOTE_INIT,
                             fingerprint: e
                         });
                         return
@@ -82,10 +82,10 @@ function m(e, t) {
                         let t = o.ticket;
                         if (null == t) return void v();
                         E({
-                            step: _.b.PENDING_LOGIN,
+                            step: h.b.PENDING_LOGIN,
                             ticket: t
                         }), r.Bo.post({
-                            url: p.Rsh.REMOTE_AUTH_LOGIN,
+                            url: g.Rsh.REMOTE_AUTH_LOGIN,
                             body: {
                                 ticket: t
                             },
@@ -100,11 +100,11 @@ function m(e, t) {
                         return
                     }
                     case "pending_ticket": {
-                        d._.dispatch(p.jej.WAVE_EMPHASIZE), i("remote auth handshake started, awaiting ticket/cancel.");
+                        d._.dispatch(g.jej.WAVE_EMPHASIZE), i("remote auth handshake started, awaiting ticket/cancel.");
                         let e = o.encrypted_user_payload,
-                            t = await (0, h.n7)(j(), e);
+                            t = await (0, _.n7)(j(), e);
                         E({
-                            step: _.b.PENDING_TICKET,
+                            step: h.b.PENDING_TICKET,
                             user: t
                         });
                         return
@@ -124,7 +124,7 @@ function m(e, t) {
                         T = !0;
                         return;
                     default:
-                        g.warn(n("received unsupported message"))
+                        p.warn(n("received unsupported message"))
                 }
             }, y = async () => {
                 o = await u.A.generateRsaKeyPair(), m = await u.A.serializePublicKey(o);

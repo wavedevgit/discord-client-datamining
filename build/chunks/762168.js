@@ -1,14 +1,14 @@
 /** chunk id: 762168 params = (module,exports,require) **/
 a.d(t, {
-    DX: () => f,
+    DX: () => h,
     _v: () => T,
     cs: () => E,
     ec: () => S,
-    kK: () => h,
+    kK: () => f,
     sn: () => y
 });
-var n = a(627968),
-    o = a(64700),
+var o = a(627968),
+    n = a(64700),
     r = a(412703),
     i = a(440703),
     l = a(267548),
@@ -23,23 +23,23 @@ var n = a(627968),
     g = a(652215),
     v = a(784018);
 
-function f(e) {
+function h(e) {
     let {
         url: t,
         width: a = 640,
-        height: n = 360,
-        target: o = 60,
+        height: o = 360,
+        target: n = 60,
         videoTitle: i = "Test Video Quest",
         transcript: l
     } = e;
     return {
         type: r.n.WATCH_VIDEO,
-        target: o,
+        target: n,
         assets: {
             video: {
                 url: t,
                 width: a,
-                height: n,
+                height: o,
                 transcript: l
             }
         },
@@ -49,20 +49,20 @@ function f(e) {
     }
 }
 
-function h() {
+function f() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
         {
             streamProgressSeconds: t = 0,
             completedAt: a = null,
-            enrolledAt: n = null,
-            claimedAt: o = null
+            enrolledAt: o = null,
+            claimedAt: n = null
         } = e;
     return {
         userId: "123",
         questId: x,
-        enrolledAt: n,
+        enrolledAt: o,
         completedAt: a,
-        claimedAt: o,
+        claimedAt: n,
         claimedTier: null,
         lastStreamHeartbeatAt: null,
         streamProgressSeconds: t,
@@ -131,7 +131,7 @@ function S(e) {
                 buttonLabel: "Learn More"
             }
         },
-        userStatus: h({
+        userStatus: f({
             enrolledAt: new Date().toISOString()
         }),
         targetedContent: [c.uF.QUEST_HOME_DESKTOP]
@@ -146,7 +146,7 @@ function y(e) {
         isFullscreenEnabled: i = !1,
         useNewStyling: l = !1,
         setIsFullscreenEnabled: s = g.tEg
-    } = e, d = o.useMemo(() => ({
+    } = e, d = n.useMemo(() => ({
         quest: t,
         sourceQuestContent: c.uF.INTERNAL_PREVIEW_TOOL,
         videoSessionId: "playground-session",
@@ -157,16 +157,16 @@ function y(e) {
         useNewProgressBarStyling: l,
         progressSec: 0,
         targetSec: 0
-    }), [t, a, i, s, l]), u = o.useMemo(() => ({
+    }), [t, a, i, s, l]), u = n.useMemo(() => ({
         questConfig: t.config
     }), [t.config]);
-    return (0, n.jsx)(p.R, {
+    return (0, o.jsx)(p.R, {
         questOrQuests: t,
         questContent: c.uF.VIDEO_MODAL,
         sourceQuestContent: c.uF.INTERNAL_PREVIEW_TOOL,
-        children: (e, t) => (0, n.jsx)(b.l.Provider, {
+        children: (e, t) => (0, o.jsx)(b.l.Provider, {
             value: u,
-            children: (0, n.jsx)(b.a.Provider, {
+            children: (0, o.jsx)(b.a.Provider, {
                 value: d,
                 children: r
             })
@@ -183,24 +183,24 @@ function C(e) {
         targetTimeSec: l,
         useNewStyling: s,
         videoUrl: c
-    } = e, p = "portrait" === t, [b, v] = o.useState(!1), x = f({
+    } = e, p = "portrait" === t, [b, v] = n.useState(!1), x = h({
         url: c,
         width: p ? 360 : 640,
         height: p ? 640 : 360,
         target: l,
         videoTitle: p ? "Test Portrait Video" : "Test Landscape Video",
         transcript: "transcript.txt"
-    }), C = S(x), T = o.useRef(!1);
+    }), C = S(x), T = n.useRef(!1);
     T.current || (T.current = !0, u.Kr.getState().clearState()), i && (C.config.features = [_.Li.FULL_EPISODE_VIDEO_QUEST]);
     let E = r ? {
         ...C,
-        userStatus: h({
+        userStatus: f({
             enrolledAt: C.userStatus?.enrolledAt ?? null,
             completedAt: C.userStatus?.enrolledAt ?? null,
             streamProgressSeconds: x.target
         })
     } : C;
-    return (0, n.jsx)("div", {
+    return (0, o.jsx)("div", {
         style: {
             display: "flex",
             flexDirection: "column",
@@ -212,13 +212,13 @@ function C(e) {
             overflow: "hidden",
             "--custom-footer-horizontal-padding": "20px"
         },
-        children: (0, n.jsx)(y, {
+        children: (0, o.jsx)(y, {
             quest: E,
             isPortrait: p,
             isFullscreenEnabled: b,
             setIsFullscreenEnabled: v,
             useNewStyling: s,
-            children: (0, n.jsx)(m.A, {
+            children: (0, o.jsx)(m.A, {
                 targetTimeSec: x.target,
                 parentTransitionState: d.ip4.ENTERED,
                 onOptimisticProgressUpdate: g.tEg,

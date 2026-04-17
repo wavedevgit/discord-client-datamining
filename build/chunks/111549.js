@@ -12,10 +12,10 @@ var i = n(627968),
     c = n(80703),
     d = n(311907),
     u = n(362474),
-    h = n(397927),
-    _ = n(73153),
-    p = n(846293),
-    g = n(198982),
+    _ = n(397927),
+    h = n(73153),
+    g = n(846293),
+    p = n(198982),
     m = n(964486),
     A = n(475743),
     f = n(17841),
@@ -59,7 +59,7 @@ function q(e) {
     } = e, r = s?.guild_scheduled_event != null;
     return W.VP ? (0, i.jsx)("div", {
         className: r ? K.QX : K.eT,
-        children: (0, i.jsx)(h.Button, {
+        children: (0, i.jsx)(_.Button, {
             text: t,
             onClick: n,
             variant: r ? "active" : "primary",
@@ -111,21 +111,21 @@ function X(e) {
         }), W.VP ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
                 className: K.QX,
-                children: (0, i.jsx)(h.Button, {
+                children: (0, i.jsx)(_.Button, {
                     text: H.intl.string(H.t.UQvCf7),
                     onClick: () => {
                         w.default.track(M.HAw.INVITE_CTA_CLICKED, {
                             action: "open_app",
                             invite_code: t.code,
                             guild_id: t.guild?.id
-                        }), p.Ay.openNativeAppModal(t.code)
+                        }), g.Ay.openNativeAppModal(t.code)
                     },
                     variant: "primary",
                     fullWidth: !0
                 })
             }), (0, i.jsx)("div", {
                 className: K.Ot,
-                children: (0, i.jsx)(h.Button, {
+                children: (0, i.jsx)(_.Button, {
                     text: H.intl.string(H.t["2ixEBi"]),
                     onClick: () => {
                         w.default.track(M.HAw.INVITE_CTA_CLICKED, {
@@ -163,7 +163,7 @@ function $(e) {
         handleDefaultTransition: r
     } = e;
     return (0, i.jsx)(x.Ay, {
-        children: (0, i.jsxs)(h.BJc, {
+        children: (0, i.jsxs)(_.BJc, {
             direction: "vertical",
             gap: 24,
             children: [(0, i.jsx)(P.A, {
@@ -201,7 +201,7 @@ function Z(e) {
             style: {
                 textAlign: "left"
             },
-            children: (0, i.jsx)(h.QWc, {
+            children: (0, i.jsx)(_.QWc, {
                 size: "sm",
                 textVariant: "text-sm/medium",
                 text: H.intl.string(H.t.urIwn4),
@@ -231,25 +231,25 @@ function et(e) {
         location: n,
         transitionTo: r,
         login: l
-    } = e, h = (0, d.bG)([L.A], () => L.A.getInvite(t)), x = (0, d.bG)([v.A], () => v.A.getState(t)), I = (0, d.bG)([b.default], () => b.default.isAuthenticated()), N = (0, d.bG)([R.A], () => R.A.defaultRoute), k = (0, d.bG)([f.A], () => f.A.isUnderageAnonymous()), [P, K] = s.useState(null), [q, et] = s.useState(!1);
+    } = e, _ = (0, d.bG)([L.A], () => L.A.getInvite(t)), x = (0, d.bG)([v.A], () => v.A.getState(t)), I = (0, d.bG)([b.default], () => b.default.isAuthenticated()), N = (0, d.bG)([R.A], () => R.A.defaultRoute), k = (0, d.bG)([f.A], () => f.A.isUnderageAnonymous()), [P, K] = s.useState(null), [q, et] = s.useState(!1);
     s.useLayoutEffect(() => {
-        (x === M.fAW.OPEN || h?.state === M.elq.APP_OPENED) && et(!0)
-    }, [h?.state, x]);
+        (x === M.fAW.OPEN || _?.state === M.elq.APP_OPENED) && et(!0)
+    }, [_?.state, x]);
     let en = l ? Q : z,
-        ei = s.useCallback(e => p.Ay.getInviteContext(e, h), [h]),
+        ei = s.useCallback(e => g.Ay.getInviteContext(e, _), [_]),
         es = s.useCallback(e => {
-            null != h && (null != h.channel || e?.channel != null) && (h.guild?.id != null ? r(M.BVt.APP_WITH_INVITE_AND_GUILD_ONBOARDING(h.code)) : p.Ay.transitionToInvite(e ?? h, r))
-        }, [h, r]),
+            null != _ && (null != _.channel || e?.channel != null) && (_.guild?.id != null ? r(M.BVt.APP_WITH_INVITE_AND_GUILD_ONBOARDING(_.code)) : g.Ay.transitionToInvite(e ?? _, r))
+        }, [_, r]),
         er = s.useCallback(() => {
-            K(null), p.Ay.acceptInvite({
+            K(null), g.Ay.acceptInvite({
                 inviteKey: t,
                 context: ei(M.S3d.INVITE),
                 skipOnboarding: !0,
                 callback: e => {
-                    (0, E.v)(e), null != e.channel && p.Ay.openApp(t, e.channel.id)
+                    (0, E.v)(e), null != e.channel && g.Ay.openApp(t, e.channel.id)
                 }
             }).catch(e => {
-                if (e instanceof g.Wl || e instanceof g.LG) {
+                if (e instanceof p.Wl || e instanceof p.LG) {
                     let t = (0, D.s)(e.code);
                     K({
                         code: e.code,
@@ -266,7 +266,7 @@ function et(e) {
         }, [N, r]);
     if ((0, m.Ay)(() => {
             let e = b.default.getAnalyticsToken();
-            if (null != e && _.h.dispatch({
+            if (null != e && h.h.dispatch({
                     type: "SET_ANALYTICS_TOKEN",
                     analyticsToken: e,
                     userId: b.default.getId()
@@ -281,8 +281,8 @@ function et(e) {
                 (0, S.bG)(M.BVt.INVITE_LOGIN(e))
             }
         }), s.useEffect(() => {
-            h?.state === M.elq.APP_NOT_OPENED && es()
-        }, [h?.state, es]), function(e) {
+            _?.state === M.elq.APP_NOT_OPENED && es()
+        }, [_?.state, es]), function(e) {
             let {
                 invite: t,
                 inviteKey: n,
@@ -291,10 +291,10 @@ function et(e) {
                 mode: l,
                 getAcceptInviteContext: d,
                 handleContinue: u,
-                transitionTo: h
-            } = e, _ = (0, A.A)(i), g = (0, A.A)(r);
+                transitionTo: _
+            } = e, h = (0, A.A)(i), p = (0, A.A)(r);
             s.useEffect(() => {
-                if (l === Q && i && !1 === _) {
+                if (l === Q && i && !1 === h) {
                     let e = b.default.getFingerprint();
                     if (null != e) {
                         let i = (0, c.d)(e);
@@ -306,15 +306,15 @@ function et(e) {
                             prev_user_id: i
                         })
                     }
-                    p.Ay.acceptInvite({
+                    g.Ay.acceptInvite({
                         inviteKey: n,
                         context: d(M.S3d.INVITE),
                         skipOnboarding: !0,
                         callback: u
                     })
                 }
-            }, [i, _, l, d, u, t, n]), s.useEffect(() => {
-                if (null != t && l === z && i && !1 === _) {
+            }, [i, h, l, d, u, t, n]), s.useEffect(() => {
+                if (null != t && l === z && i && !1 === h) {
                     let {
                         channel: e
                     } = t;
@@ -322,11 +322,11 @@ function et(e) {
                         if ((0, C.C)(V.zY.INVITE_UNCLAIMED), null != t.guild) {
                             let e = (0, o.Lt)(t.flags ?? 0, a.Q.IS_APPLICATION_BYPASS),
                                 n = t.guild.features?.includes(M.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.guild.features?.includes(M.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
-                            !e && n ? h(M.BVt.GUILD_MEMBER_VERIFICATION(t.guild.id)) : h(M.BVt.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code))
-                        } else p.Ay.transitionToInvite(t, h)
+                            !e && n ? _(M.BVt.GUILD_MEMBER_VERIFICATION(t.guild.id)) : _(M.BVt.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code))
+                        } else g.Ay.transitionToInvite(t, _)
                 }
-            }, [t, i, _, h, l]), s.useEffect(() => {
-                null != t && r !== g && r === M.fAW.OPEN && w.default.track(M.HAw.INVITE_APP_INVOKED, {
+            }, [t, i, h, _, l]), s.useEffect(() => {
+                null != t && r !== p && r === M.fAW.OPEN && w.default.track(M.HAw.INVITE_APP_INVOKED, {
                     invite_code: (0, j.m0)(n),
                     guild_id: t.guild?.id,
                     channel_id: t.channel?.id,
@@ -335,9 +335,9 @@ function et(e) {
                     size_total: t.approximate_member_count,
                     invite_type: null != t.type ? F.Xd[t.type] : void 0
                 })
-            }, [t, r, g, n])
+            }, [t, r, p, n])
         }({
-            invite: h,
+            invite: _,
             inviteKey: t,
             authenticated: I,
             nativeAppState: x,
@@ -345,14 +345,14 @@ function et(e) {
             getAcceptInviteContext: ei,
             handleContinue: es,
             transitionTo: r
-        }), null == h) return null;
-    if (q || x === M.fAW.OPEN || h.state === M.elq.APP_OPENED) return (0, i.jsx)(X, {
-        invite: h,
+        }), null == _) return null;
+    if (q || x === M.fAW.OPEN || _.state === M.elq.APP_OPENED) return (0, i.jsx)(X, {
+        invite: _,
         onContinue: es
     });
     let {
         state: ea
-    } = h;
+    } = _;
     if (ea === M.elq.APP_NOT_OPENED) return (0, i.jsx)(ee, {
         handleDefaultTransition: el
     });
@@ -369,28 +369,28 @@ function et(e) {
         banned: !0,
         handleDefaultTransition: el
     }) : ea === M.elq.ERROR ? (0, i.jsx)($, {
-        invite: h,
+        invite: _,
         error: P,
         handleAccept: er,
         handleDefaultTransition: el
-    }) : ea === M.elq.RESOLVED ? I && (0, o.Lt)(h.flags ?? 0, a.Q.IS_GUEST_INVITE) ? (p.Ay.openApp(h.code), u.u.set(T.B, h.code), (0, i.jsx)(X, {
-        invite: h,
+    }) : ea === M.elq.RESOLVED ? I && (0, o.Lt)(_.flags ?? 0, a.Q.IS_GUEST_INVITE) ? (g.Ay.openApp(_.code), u.u.set(T.B, _.code), (0, i.jsx)(X, {
+        invite: _,
         onContinue: () => r(M.BVt.APP)
     })) : I || !W.VP ? (0, i.jsx)(Y, {
-        invite: h,
+        invite: _,
         handleAccept: er
     }) : en === Q ? (0, i.jsx)(B.A, {
-        invite: h,
+        invite: _,
         transitionTo: r,
         location: n
     }) : (0, i.jsx)(G.A, {
-        invite: h,
+        invite: _,
         onLoginStart: () => {
             w.default.track(M.HAw.INVITE_LOGIN, {
-                invite_code: h?.code,
-                guild_id: h?.guild?.id,
-                channel_id: h?.channel?.id,
-                inviter_id: h?.inviter?.id
+                invite_code: _?.code,
+                guild_id: _?.guild?.id,
+                channel_id: _?.channel?.id,
+                inviter_id: _?.inviter?.id
             })
         },
         location: n,

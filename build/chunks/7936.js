@@ -12,11 +12,11 @@ var i = n(627968),
     c = n(557722),
     d = n(628387),
     u = n(148864),
-    h = n(146571),
-    _ = n(854378);
+    _ = n(146571),
+    h = n(854378);
 n(53516);
-var p = n(985018),
-    g = n(653307),
+var g = n(985018),
+    p = n(653307),
     m = n(818050);
 let A = () => {
     let [e, t] = s.useState(""), [r, A] = s.useState(""), [f, E] = s.useState(!1), [x, I] = s.useState(!1), [N, v] = s.useState(null), [T, j] = s.useState(null), C = (0, a.bG)([u.A], () => u.A.getCountryCode()), S = C.code.split(" ")[0], y = async () => {
@@ -37,28 +37,28 @@ let A = () => {
         } finally {
             E(!1)
         }
-    }, R = (0, i.jsxs)(_.Ay, {
-        children: [(0, i.jsx)(_._V, {
+    }, R = (0, i.jsxs)(h.Ay, {
+        children: [(0, i.jsx)(h._V, {
             src: n(142041)
-        }), (0, i.jsxs)(_.hE, {
-            className: l()(m.QX, g.Uu, g.wq, g.Hu),
-            children: [p.intl.string(p.t.WWzQta), (0, i.jsx)(o.yr3, {
+        }), (0, i.jsxs)(h.hE, {
+            className: l()(m.QX, p.Uu, p.wq, p.Hu),
+            children: [g.intl.string(g.t.WWzQta), (0, i.jsx)(o.yr3, {
                 size: "md",
                 color: "currentColor",
                 className: m.oY
             })]
         })]
     });
-    return x ? R : (0, i.jsxs)(_.Ay, {
-        children: [(0, i.jsx)(_.hE, {
-            children: p.intl.string(p.t.o4JNrO)
-        }), (0, i.jsx)(_.tK, {
+    return x ? R : (0, i.jsxs)(h.Ay, {
+        children: [(0, i.jsx)(h.hE, {
+            children: g.intl.string(g.t.o4JNrO)
+        }), (0, i.jsx)(h.tK, {
             className: m.Ot,
-            children: p.intl.string(p.t.y0tVbq)
-        }), (0, i.jsxs)(_.eB, {
+            children: g.intl.string(g.t.y0tVbq)
+        }), (0, i.jsxs)(h.eB, {
             className: m.QX,
-            children: [(0, i.jsx)(h.A, {
-                label: p.intl.string(p.t["eJnn0+"]),
+            children: [(0, i.jsx)(_.A, {
+                label: g.intl.string(g.t["eJnn0+"]),
                 alpha2: C.alpha2,
                 countryCode: S,
                 value: e,
@@ -67,20 +67,20 @@ let A = () => {
                 onChange: t,
                 forceMode: d.Pd.PHONE,
                 error: N
-            }), (0, i.jsx)(_.pd, {
+            }), (0, i.jsx)(h.pd, {
                 className: m.QX,
-                label: p.intl.string(p.t.OdzNbm),
+                label: g.intl.string(g.t.OdzNbm),
                 value: r,
                 onChange: A,
                 maxLength: 6,
                 error: T
             }), (0, i.jsx)(o.QWc, {
-                text: p.intl.string(p.t["5b60gi"]),
+                text: g.intl.string(g.t["5b60gi"]),
                 onClick: y
             }), (0, i.jsx)("div", {
                 className: m.QX,
                 children: (0, i.jsx)(o.Button, {
-                    text: p.intl.string(p.t.i4jeWR),
+                    text: g.intl.string(g.t.i4jeWR),
                     fullWidth: !0,
                     onClick: b,
                     loading: f

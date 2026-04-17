@@ -12,10 +12,10 @@ var i, s = n(627968),
     c = n(830215),
     d = n(803306),
     u = n(49463),
-    h = n(17372),
-    _ = n(369053),
-    p = n(961350),
-    g = n(975571),
+    _ = n(17372),
+    h = n(369053),
+    g = n(961350),
+    p = n(975571),
     m = n(204173),
     A = n(19992),
     f = n(501334),
@@ -29,8 +29,8 @@ let T = e => {
         let {
             transitionState: t,
             onClose: n
-        } = e, [i, v] = r.useState(!0), [j, C] = r.useState([]), [S, y] = r.useState(null), b = (0, a.bG)([p.default], () => p.default.isAuthenticated()), R = (0, a.bG)([u.A], () => u.A.hasLoadedExperiments), O = r.useCallback(() => {
-            (0, _.OY)().then(e => {
+        } = e, [i, v] = r.useState(!0), [j, C] = r.useState([]), [S, y] = r.useState(null), b = (0, a.bG)([g.default], () => g.default.isAuthenticated()), R = (0, a.bG)([u.A], () => u.A.hasLoadedExperiments), O = r.useCallback(() => {
+            (0, h.OY)().then(e => {
                 let {
                     body: {
                         capabilities: t
@@ -50,8 +50,8 @@ let T = e => {
                 R || (await c.A.getLocationMetadata(), c.A.getExperiments())
             })()
         }, [R]);
-        let L = j.filter(e => e !== h.tY.MEDIA_TAKEDOWN),
-            w = j.includes(h.tY.MEDIA_TAKEDOWN),
+        let L = j.filter(e => e !== _.tY.MEDIA_TAKEDOWN),
+            w = j.includes(_.tY.MEDIA_TAKEDOWN),
             k = L.length > 0,
             D = k && w,
             U = i || !R;
@@ -68,7 +68,7 @@ let T = e => {
             B = r.useCallback((e, t) => {
                 "selection" !== t && "selection" !== e ? y("selection") : y(e)
             }, []),
-            G = r.useMemo(() => (0, m.i)(h.tY.MEDIA_TAKEDOWN, P), [P]),
+            G = r.useMemo(() => (0, m.i)(_.tY.MEDIA_TAKEDOWN, P), [P]),
             M = S ?? (D ? "selection" : k ? "dsa" : "tida");
         if (U || !k && !w) return (0, s.jsx)(l.Modal, {
             title: "",
@@ -90,7 +90,7 @@ let T = e => {
             if (k) return (0, s.jsx)(l.Modal, {
                 title: I.intl.string(I.t.Z11w18),
                 subtitle: I.intl.format(I.t["532l+q"], {
-                    supportURL: g.A.getArticleURL(x.MVz.COPYRIGHT_AND_IP_POLICY)
+                    supportURL: p.A.getArticleURL(x.MVz.COPYRIGHT_AND_IP_POLICY)
                 }),
                 actions: [],
                 transitionState: t,
@@ -125,7 +125,7 @@ let T = e => {
             modalProps: {
                 title: I.intl.string(I.t.Z11w18),
                 subtitle: I.intl.format(I.t["532l+q"], {
-                    supportURL: g.A.getArticleURL(x.MVz.COPYRIGHT_AND_IP_POLICY)
+                    supportURL: p.A.getArticleURL(x.MVz.COPYRIGHT_AND_IP_POLICY)
                 })
             },
             body: (0, s.jsx)(A.c, {

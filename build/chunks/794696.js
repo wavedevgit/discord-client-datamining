@@ -30,7 +30,7 @@ function c(e) {
             ref: e,
             height: t
         }
-    })(), h = (0, a.zhh)({
+    })(), _ = (0, a.zhh)({
         from: {
             height: 0,
             paddingBottom: "0px",
@@ -45,7 +45,7 @@ function c(e) {
             tension: 170,
             friction: 26
         }
-    }), _ = (0, a.zhh)({
+    }), h = (0, a.zhh)({
         from: {
             opacity: 0
         },
@@ -60,13 +60,13 @@ function c(e) {
     return (0, i.jsx)(l.animated.div, {
         style: {
             overflow: "hidden",
-            height: h.height,
-            paddingBottom: h.paddingBottom,
-            marginTop: h.marginTop
+            height: _.height,
+            paddingBottom: _.paddingBottom,
+            marginTop: _.marginTop
         },
         children: (0, i.jsx)(l.animated.div, {
             style: {
-                opacity: _.opacity
+                opacity: h.opacity
             },
             ref: d,
             children: n

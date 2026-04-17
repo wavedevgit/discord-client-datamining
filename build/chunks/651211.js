@@ -7,14 +7,14 @@ var i = n(111898),
 e.exports = function(e, t, n, o) {
     if (!l(e)) return e;
     t = s(t, e);
-    for (var c = -1, d = t.length, u = d - 1, h = e; null != h && ++c < d;) {
-        var _ = a(t[c]),
-            p = n;
+    for (var c = -1, d = t.length, u = d - 1, _ = e; null != _ && ++c < d;) {
+        var h = a(t[c]),
+            g = n;
         if (c != u) {
-            var g = h[_];
-            void 0 === (p = o ? o(g, _, h) : void 0) && (p = l(g) ? g : r(t[c + 1]) ? [] : {})
+            var p = _[h];
+            void 0 === (g = o ? o(p, h, _) : void 0) && (g = l(p) ? p : r(t[c + 1]) ? [] : {})
         }
-        i(h, _, p), h = h[_]
+        i(_, h, g), _ = _[h]
     }
     return e
 }

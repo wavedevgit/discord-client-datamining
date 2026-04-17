@@ -1,9 +1,9 @@
 /** chunk id: 294520 params = (module,exports,require) **/
 a.d(t, {
-    K6: () => f,
+    K6: () => h,
     eJ: () => g,
     iW: () => p,
-    rx: () => h,
+    rx: () => f,
     sC: () => b,
     tt: () => C
 }), a(938796);
@@ -56,7 +56,7 @@ let p = (e, t) => {
         return o.includes(r.Oc.EXPLICIT_CONTENT) ? r.Oc.EXPLICIT_CONTENT : o.includes(r.Oc.GORE_CONTENT) ? r.Oc.GORE_CONTENT : o.includes(r.Oc.SELF_HARM_CONTENT) ? r.Oc.SELF_HARM_CONTENT : l ? r.Oc.POTENTIAL_EXPLICIT_CONTENT : a ? r.Oc.SPOILER : null
     };
 
-function f(e, t, a) {
+function h(e, t, a) {
     if (null == e) return [!1, void 0];
     let n = function(e) {
         switch (e.type) {
@@ -87,9 +87,9 @@ function g(e) {
         channel: t,
         media: a
     } = e, n = (0, o.bG)([_.A], () => null != t && _.A.can(u.xBc.MANAGE_MESSAGES, t)), r = s.gs.useSetting(), l = (0, c.O8)(i.v.GUILD);
-    return f(a, !(0, d.A)(r, n), l)
+    return h(a, !(0, d.A)(r, n), l)
 }
-let h = e => {
+let f = e => {
     switch (e) {
         case r.Oc.EXPLICIT_CONTENT:
         case r.Oc.GORE_CONTENT:

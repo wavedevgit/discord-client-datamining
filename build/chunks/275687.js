@@ -22,12 +22,12 @@ function m(e) {
         autoPlay: p,
         src: b,
         embed: C = !1,
-        fillContainer: f = !1,
+        fillContainer: h = !1,
         minWidth: g = 500,
-        maxWidth: h = 1 / 0,
+        maxWidth: f = 1 / 0,
         maxHeight: I = 1 / 0,
         channelId: A,
-        showTextContent: T = h >= 250,
+        showTextContent: T = f >= 250,
         showParticipants: v = !0,
         volume: y,
         autoMute: S,
@@ -35,15 +35,15 @@ function m(e) {
         onMutedChange: x,
         onClick: M,
         onContextMenu: O
-    } = e, P = t.width ?? 0, N = t.height ?? 0, w = (0, c.bG)([_.A], () => _.A.getBasicChannel(A)?.guild_id, [A]), B = P > 0 && N > 0 ? P / N : 16 / 9, R = Math.min(P > 0 ? P : g, h), G = R / B;
+    } = e, P = t.width ?? 0, N = t.height ?? 0, w = (0, c.bG)([_.A], () => _.A.getBasicChannel(A)?.guild_id, [A]), B = P > 0 && N > 0 ? P / N : 16 / 9, R = Math.min(P > 0 ? P : g, f), G = R / B;
     G > I && (R = (G = I) * B), R < g && (G = (R = g) / B);
-    let D = Math.round(Math.min(R, h)),
-        L = Math.round(Math.min(G, I)),
-        k = P > 0 && N > 0 ? Math.min(D / P, L / N, 1) : 1,
+    let D = Math.round(Math.min(R, f)),
+        k = Math.round(Math.min(G, I)),
+        L = P > 0 && N > 0 ? Math.min(D / P, k / N, 1) : 1,
         j = (0, l.AE)({
             src: a,
-            width: Math.round(P * k),
-            height: Math.round(N * k)
+            width: Math.round(P * L),
+            height: Math.round(N * L)
         }),
         [F, U] = o.useState(!1),
         H = o.useCallback(e => {
@@ -70,15 +70,15 @@ function m(e) {
         }, [t, w, F, v, T]);
     return (0, n.jsx)("div", {
         className: r()(u.k, {
-            [u.H]: f
+            [u.H]: h
         }, i),
         onClick: e => e.stopPropagation(),
         onKeyUp: C ? e => e.stopPropagation() : void 0,
         onKeyDown: C ? e => e.stopPropagation() : void 0,
         onContextMenu: O,
-        style: f ? void 0 : {
+        style: h ? void 0 : {
             width: D,
-            height: L
+            height: k
         },
         children: (0, n.jsx)(s.A, {
             crossOrigin: null,
@@ -101,7 +101,8 @@ function m(e) {
             parentTransitionState: null,
             onFullscreenChange: U,
             onClick: M,
-            objectFit: f ? "cover" : void 0
+            withVideoHalo: !0,
+            objectFit: h ? "cover" : void 0
         })
     })
 }

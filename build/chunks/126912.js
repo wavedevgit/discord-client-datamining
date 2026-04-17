@@ -12,10 +12,10 @@ var i = n(627968),
     c = n(396681),
     d = n(854378),
     u = n(210714),
-    h = n(718446),
-    _ = n(427157),
-    p = n(650048),
-    g = n(652215),
+    _ = n(718446),
+    h = n(427157),
+    g = n(650048),
+    p = n(652215),
     m = n(431144),
     A = n(355097),
     f = n(985018),
@@ -35,7 +35,7 @@ class x extends s.PureComponent {
         let e = (0, c.A)(this.props.location),
             t = (0, r.parse)(this.props.location.search);
         a.Bo.post({
-            url: g.Rsh.DISABLE_EMAIL_NOTIFICATIONS,
+            url: p.Rsh.DISABLE_EMAIL_NOTIFICATIONS,
             body: {
                 token: e,
                 pixel_uuid: t.hash,
@@ -49,7 +49,7 @@ class x extends s.PureComponent {
                 body: {
                     user: n
                 }
-            } = e, i = new _.A(n);
+            } = e, i = new h.A(n);
             this.setState({
                 success: !0,
                 busy: !1,
@@ -91,7 +91,7 @@ class x extends s.PureComponent {
                 children: (0, i.jsx)(o.QWc, {
                     text: f.intl.string(f.t.YYTirT),
                     textVariant: "text-sm/normal",
-                    onClick: () => s((0, h.settingsPathToRoute)(A.od.NOTIFICATIONS_EMAILS))
+                    onClick: () => s((0, _.settingsPathToRoute)(A.od.NOTIFICATIONS_EMAILS))
                 })
             })]
         })
@@ -160,6 +160,6 @@ class x extends s.PureComponent {
         return e ? this.renderBusy() : t ? this.renderSuccess() : this.renderError()
     }
 }
-let I = l.Ay.connectStores([p.A], () => ({
-    defaultRoute: p.A.defaultRoute
+let I = l.Ay.connectStores([g.A], () => ({
+    defaultRoute: g.A.defaultRoute
 }))(x)

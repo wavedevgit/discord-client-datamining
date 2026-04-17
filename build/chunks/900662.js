@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     A: () => m,
-    N: () => g
+    N: () => p
 });
 var i = n(627968);
 n(64700);
@@ -14,11 +14,11 @@ var s = n(503698),
     c = n(235986),
     d = n(652215),
     u = n(985018),
-    h = n(592743),
-    _ = n(653307),
-    p = n(818050);
+    _ = n(592743),
+    h = n(653307),
+    g = n(818050);
 
-function g(e) {
+function p(e) {
     let {
         text: t,
         buttonCta: s,
@@ -28,37 +28,37 @@ function g(e) {
         children: [(0, i.jsx)(o._V, {
             src: n(431979)
         }), (0, i.jsx)(o.hE, {
-            className: r()(p.QX, p.QB, _.tR),
+            className: r()(g.QX, g.QB, h.tR),
             children: u.intl.string(u.t.eL5z0i)
         }), (0, i.jsx)(o.tK, {
-            className: p.C2,
+            className: g.C2,
             children: u.intl.string(u.t.poAv63)
         }), (0, i.jsxs)(a.ZpM, {
-            className: h.Nr,
+            className: _.Nr,
             type: a.ZpM.Types.CUSTOM,
             children: [(0, i.jsx)("img", {
                 alt: "",
-                className: h.q8,
+                className: _.q8,
                 src: n(133531)
             }), (0, i.jsx)("img", {
                 alt: "",
-                className: h.dw,
+                className: _.dw,
                 src: n(610925)
             }), (0, i.jsxs)(c.A, {
-                className: h.p_,
+                className: _.p_,
                 direction: c.A.Direction.VERTICAL,
                 align: c.A.Align.STRETCH,
                 grow: 0,
                 children: [(0, i.jsx)(a.Text, {
                     tag: "strong",
-                    className: h.p8,
+                    className: _.p8,
                     variant: "text-md/normal",
                     style: {
                         color: l.A.unsafe_rawColors.PRIMARY_300.css
                     },
                     children: t
                 }), (0, i.jsx)("div", {
-                    className: h.x6,
+                    className: _.x6,
                     children: (0, i.jsx)(a.Button, {
                         text: s,
                         fullWidth: !0,
@@ -79,7 +79,7 @@ function m(e) {
     } = e;
     return (0, i.jsx)(o.Ay, {
         theme: s,
-        children: (0, i.jsx)(g, {
+        children: (0, i.jsx)(p, {
             text: t,
             buttonCta: n,
             onClick: r

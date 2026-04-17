@@ -13,10 +13,10 @@ var i = n(627968),
 n(829926);
 var d = n(153488),
     u = n(954571),
-    h = n(203982),
-    _ = n(15552),
-    p = n(906564),
-    g = n(854378),
+    _ = n(203982),
+    h = n(15552),
+    g = n(906564),
+    p = n(854378),
     m = n(359438),
     A = n(383302),
     f = n(362707),
@@ -59,9 +59,9 @@ function C(e) {
         null == D && L.current?.focus()
     }, [D, L]);
     let [q, Y] = s.useState(null), [X, J] = s.useState(null), $ = s.useCallback(async () => {
-        h._.dispatch(N.jej.WAVE_EMPHASIZE), M(!0), V({});
+        _._.dispatch(N.jej.WAVE_EMPHASIZE), M(!0), V({});
         try {
-            await (0, p.Ay)({
+            await (0, g.Ay)({
                 consent: P,
                 invite: n.code,
                 globalName: w,
@@ -69,7 +69,7 @@ function C(e) {
             }), b?.()
         } catch (t) {
             if (M(!1), !(t instanceof o.LG)) return;
-            let e = (0, _.W)(t);
+            let e = (0, h.W)(t);
             V(e), S?.(e), "number" == typeof e.retry_after && Q(e.retry_after)
         }
     }, [n, w, D, P, S, b, Q, V, M]), Z = s.useCallback(e => {
@@ -82,14 +82,14 @@ function C(e) {
         name: w,
         onNameChange: k
     }) : (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(g.Ay, {
+        children: [(0, i.jsx)(p.Ay, {
             tag: "section",
             className: C,
             children: (0, i.jsxs)("form", {
                 onSubmit: Z,
                 children: [t, O ? (0, i.jsx)("div", {
                     className: T.yF
-                }) : null, (0, i.jsxs)(g.eB, {
+                }) : null, (0, i.jsxs)(p.eB, {
                     className: O ? void 0 : T.y0,
                     children: [(0, i.jsx)(l.ksK, {
                         helperText: v.intl.string(v.t["330TCc"]),
@@ -137,7 +137,7 @@ function C(e) {
                     })]
                 })]
             })
-        }), null != n && O ? (0, i.jsx)(g.Ay, {
+        }), null != n && O ? (0, i.jsx)(p.Ay, {
             className: j.QX,
             children: (0, i.jsx)(A.N, {
                 guild: n.guild,

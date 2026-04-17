@@ -12,10 +12,10 @@ var i = n(627968),
     c = n(587895),
     d = n(854378),
     u = n(769015),
-    h = n(242874),
-    _ = n(75825),
-    p = n(287809),
-    g = n(97352),
+    _ = n(242874),
+    h = n(75825),
+    g = n(287809),
+    p = n(97352),
     m = n(67480),
     A = n(615396),
     f = n(652215),
@@ -24,7 +24,7 @@ var i = n(627968),
     I = n(402693),
     N = n(653307),
     v = n(818050);
-let T = a.Ay.connectStores([m.A, c.A, g.A, p.default], e => {
+let T = a.Ay.connectStores([m.A, c.A, p.A, g.default], e => {
     let {
         giftCode: t
     } = e, n = m.A.get(t.skuId), {
@@ -34,7 +34,7 @@ let T = a.Ay.connectStores([m.A, c.A, g.A, p.default], e => {
         sku: n,
         subscriptionPlan: null != i ? (0, A.c9)(i) : null,
         application: c.A.getApplication(n.applicationId),
-        gifter: p.default.getUser(t.userId)
+        gifter: g.default.getUser(t.userId)
     }
 })(e => {
     let {
@@ -43,16 +43,16 @@ let T = a.Ay.connectStores([m.A, c.A, g.A, p.default], e => {
         gifter: r,
         sku: a,
         application: c,
-        subscriptionPlan: p
-    } = e, g = null == r ? x.intl.string(x.t.lTGZAl) : x.intl.formatToPlainString(x.t.TjWdPc, {
+        subscriptionPlan: g
+    } = e, p = null == r ? x.intl.string(x.t.lTGZAl) : x.intl.formatToPlainString(x.t.TjWdPc, {
         username: r.username
     }), m = a.name;
-    return null != p && (m = x.intl.formatToPlainString(p.interval === E.WT.MONTH ? x.t.CTpcCZ : x.t["rgPWG/"], {
+    return null != g && (m = x.intl.formatToPlainString(g.interval === E.WT.MONTH ? x.t.CTpcCZ : x.t["rgPWG/"], {
         skuName: a.name,
-        intervalCount: p.intervalCount
+        intervalCount: g.intervalCount
     })), (0, i.jsxs)(s.Fragment, {
-        children: [null != n.giftStyle ? (0, i.jsx)(_.A, {
-            defaultAnimationState: h.oA.LOOP,
+        children: [null != n.giftStyle ? (0, i.jsx)(h.A, {
+            defaultAnimationState: _.oA.LOOP,
             giftStyle: n.giftStyle,
             className: I.e
         }) : (0, i.jsx)(d.eu, {
@@ -67,7 +67,7 @@ let T = a.Ay.connectStores([m.A, c.A, g.A, p.default], e => {
             })]
         }) : (0, i.jsxs)(s.Fragment, {
             children: [(0, i.jsx)(d.tK, {
-                children: g
+                children: p
             }), (0, i.jsxs)(d.hE, {
                 className: l()(v.Ot, N.tR),
                 children: [a.productLine !== f.EZt.COLLECTIBLES && (0, i.jsx)(u.A, {

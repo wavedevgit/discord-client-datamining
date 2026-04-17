@@ -15,15 +15,15 @@ var i = n(627968),
 function u(e) {
     let {
         location: t
-    } = e, [u, h] = s.useState("submitting");
+    } = e, [u, _] = s.useState("submitting");
     return (s.useEffect(() => {
         (0, o.d)("authorize_payment");
         let e = (0, l.A)(t);
-        null == e ? h("failed") : (async () => {
+        null == e ? _("failed") : (async () => {
             try {
-                await r.A.authorizePayment(e), h("succeeded")
+                await r.A.authorizePayment(e), _("succeeded")
             } catch (e) {
-                h("failed")
+                _("failed")
             }
         })()
     }, [t]), "failed" === u) ? (0, i.jsxs)(a.Ay, {

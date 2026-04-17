@@ -12,11 +12,11 @@ var i = n(627968),
     c = n(397927),
     d = n(198982),
     u = n(475743),
-    h = n(201505);
+    _ = n(201505);
 n(829926);
-var _ = n(493527),
-    p = n(544395),
-    g = n(794696),
+var h = n(493527),
+    g = n(544395),
+    p = n(794696),
     m = n(153488),
     A = n(954571),
     f = n(203982),
@@ -46,7 +46,7 @@ function L(e) {
         onGotoLogin: D,
         onRegister: U
     } = e, [P, B] = s.useState(!1), [G, M] = s.useState(!1), F = async () => {
-        $.length > 0 && !p.A.wasRegistrationSuggestionFetched($) && await _.A.fetchSuggestionsRegistration($)
+        $.length > 0 && !g.A.wasRegistrationSuggestionFetched($) && await h.A.fetchSuggestionsRegistration($)
     }, V = e => {
         A.default.track(y.HAw.REGISTER_INPUT_FOCUS, {
             field: e
@@ -55,14 +55,14 @@ function L(e) {
         A.default.track(y.HAw.REGISTER_INPUT_BLUR, {
             field: e
         })
-    }, H = (0, a.bG)([m.A], () => m.A.getAuthenticationConsentRequired()), K = (0, a.bG)([p.A], () => p.A.registrationUsernameSuggestion()), z = s.useRef(null), Q = s.useRef(null), q = s.useRef(null), Y = s.useRef(null), [X, J] = s.useState(t), [$, Z] = s.useState(""), [ee, et] = s.useState(""), [en, ei] = s.useState(""), [es, er] = s.useState(null), [el, ea] = (0, j.S9)(H), [eo, ec] = s.useState(!1), [ed, eu] = (0, j.ic)(), [eh, e_] = s.useState({}), {
-        message: ep,
-        email: eg,
+    }, H = (0, a.bG)([m.A], () => m.A.getAuthenticationConsentRequired()), K = (0, a.bG)([g.A], () => g.A.registrationUsernameSuggestion()), z = s.useRef(null), Q = s.useRef(null), q = s.useRef(null), Y = s.useRef(null), [X, J] = s.useState(t), [$, Z] = s.useState(""), [ee, et] = s.useState(""), [en, ei] = s.useState(""), [es, er] = s.useState(null), [el, ea] = (0, j.S9)(H), [eo, ec] = s.useState(!1), [ed, eu] = (0, j.ic)(), [e_, eh] = s.useState({}), {
+        message: eg,
+        email: ep,
         username: em,
         global_name: eA,
         password: ef,
         date_of_birth: eE
-    } = eh, [ex, eI] = s.useState(null), [eN, ev] = s.useState(null), [eT, ej] = s.useState(null), [eC, eS] = s.useState(null), ey = null != H && el;
+    } = e_, [ex, eI] = s.useState(null), [eN, ev] = s.useState(null), [eT, ej] = s.useState(null), [eC, eS] = s.useState(null), ey = null != H && el;
     ! function(e) {
         let {
             apiErrors: t,
@@ -75,7 +75,7 @@ function L(e) {
             null == a || a !== t && (null != t.email || null != t.phone ? n.current?.focus() : null != t.username ? i.current?.focus() : null != t.global_name ? r.current?.focus() : null != t.password && l.current?.focus())
         }, [t, a, n, i, r, l])
     }({
-        apiErrors: eh,
+        apiErrors: e_,
         emailRef: z,
         usernameRef: Q,
         globalNameRef: q,
@@ -85,7 +85,7 @@ function L(e) {
             let e = null != r ? r.skuId : null,
                 t = x.mZ.getState(),
                 i = (0, E.uJ)(K) ? null : ee === K;
-            f._.dispatch(y.jej.WAVE_EMPHASIZE), ec(!0), e_({});
+            f._.dispatch(y.jej.WAVE_EMPHASIZE), ec(!0), eh({});
             try {
                 await (0, N.pG)({
                     email: X,
@@ -103,7 +103,7 @@ function L(e) {
             } catch (t) {
                 if (ec(!1), !(t instanceof d.LG)) return;
                 let e = (0, I.W)(t);
-                e_(e), w?.(e), "number" == typeof e.retry_after && eu(e.retry_after)
+                eh(e), w?.(e), "number" == typeof e.retry_after && eu(e.retry_after)
             }
         }, [r, L, n, X, w, U, K, ee, $, en, es, el, eu]),
         eR = s.useCallback(e => {
@@ -112,9 +112,9 @@ function L(e) {
             0 === X.length && (eI(b.intl.string(b.t.EkokLy)), t = !0), 0 === ee.length && (ev(b.intl.string(b.t.EkokLy)), t = !0), 0 === en.length && (ej(b.intl.string(b.t.EkokLy)), t = !0), null == es && (eS(b.intl.string(b.t.EkokLy)), t = !0), t || eb()
         }, [X, ee, en, es, H, eb]),
         eO = null;
-    return "string" == typeof ep && (eO = (0, i.jsx)(v.ME, {
+    return "string" == typeof eg && (eO = (0, i.jsx)(v.ME, {
         className: l()(O.QX, R.gJ),
-        children: ep
+        children: eg
     })), (0, i.jsx)("form", {
         onSubmit: eR,
         children: (0, i.jsxs)(v.eB, {
@@ -128,7 +128,7 @@ function L(e) {
                 onChange: e => {
                     J(e), k?.(e), eI(0 === e.length ? b.intl.string(b.t.EkokLy) : null)
                 },
-                error: ex ?? (0, j.yX)(eg),
+                error: ex ?? (0, j.yX)(ep),
                 type: "email",
                 autoComplete: "username",
                 setRef: z,
@@ -151,7 +151,7 @@ function L(e) {
                 onBlur: () => {
                     B(!1), W("global_name")
                 }
-            }), (0, i.jsx)(g.A, {
+            }), (0, i.jsx)(p.A, {
                 show: P,
                 top: -12,
                 bottom: 20,
@@ -203,7 +203,7 @@ function L(e) {
                 required: !0,
                 onFocus: () => V("password"),
                 onBlur: () => W("password")
-            }), (0, i.jsx)(h.A, {
+            }), (0, i.jsx)(_.A, {
                 label: b.intl.string(b.t.rhBeKe),
                 wrapperClassName: R.UJ,
                 name: "date_of_birth",

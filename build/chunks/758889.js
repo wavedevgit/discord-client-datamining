@@ -2,8 +2,8 @@
 a.d(t, {
     Vy: () => v
 });
-var n = a(627968),
-    o = a(64700),
+var o = a(627968),
+    n = a(64700),
     r = a(397927),
     i = a(405670),
     l = a(931135),
@@ -37,15 +37,15 @@ function p(e) {
         targetTimeSec: b,
         videoUrl: _,
         sizing: g
-    } = e, v = "portrait" === t, f = (0, s.DX)({
+    } = e, v = "portrait" === t, h = (0, s.DX)({
         url: _,
         width: v ? 360 : 640,
         height: v ? 640 : 360,
         target: b,
         videoTitle: v ? "Test Portrait Video" : "Test Landscape Video",
         transcript: "transcript.txt"
-    }), h = (0, s.ec)(f), x = o.useRef(!1);
-    x.current || (x.current = !0, i.Kr.getState().clearState()), o.useEffect(() => {
+    }), f = (0, s.ec)(h), x = n.useRef(!1);
+    x.current || (x.current = !0, i.Kr.getState().clearState()), n.useEffect(() => {
         let e = document.querySelector('[data-testid="discord-web-video-player-video"]');
         if (null == e) return;
         let t = () => {
@@ -55,22 +55,22 @@ function p(e) {
             once: !0
         }), () => e.removeEventListener("loadedmetadata", t);
         t()
-    }, []), m && (h.config.features = [d.Li.FULL_EPISODE_VIDEO_QUEST]);
+    }, []), m && (f.config.features = [d.Li.FULL_EPISODE_VIDEO_QUEST]);
     let S = p ? {
-        ...h,
+        ...f,
         userStatus: (0, s.kK)({
-            enrolledAt: h.userStatus?.enrolledAt ?? null,
-            completedAt: h.userStatus?.enrolledAt ?? null,
-            streamProgressSeconds: f.target
+            enrolledAt: f.userStatus?.enrolledAt ?? null,
+            completedAt: f.userStatus?.enrolledAt ?? null,
+            streamProgressSeconds: h.target
         })
-    } : h;
-    return (0, n.jsx)("div", {
+    } : f;
+    return (0, o.jsx)("div", {
         style: u(g, v),
-        children: (0, n.jsx)(s.sn, {
+        children: (0, o.jsx)(s.sn, {
             quest: S,
             isPortrait: v,
-            children: (0, n.jsx)(l.A, {
-                targetTimeSec: f.target,
+            children: (0, o.jsx)(l.A, {
+                targetTimeSec: h.target,
                 parentTransitionState: r.ip4.ENTERED,
                 onOptimisticProgressUpdate: c.tEg,
                 autoplay: a,
@@ -153,7 +153,7 @@ let {
             let {
                 orientation: t,
                 autoplay: a,
-                questCompleted: o,
+                questCompleted: n,
                 fullEpisode: i,
                 targetTimeSec: p,
                 videoUrl: m,
@@ -167,7 +167,7 @@ let {
                 transcript: "transcript.txt"
             }), v = (0, s.ec)(g);
             i && (v.config.features = [d.Li.FULL_EPISODE_VIDEO_QUEST]);
-            let f = o ? {
+            let h = n ? {
                 ...v,
                 userStatus: (0, s.kK)({
                     enrolledAt: v.userStatus?.enrolledAt ?? null,
@@ -175,12 +175,12 @@ let {
                     streamProgressSeconds: g.target
                 })
             } : v;
-            return (0, n.jsx)("div", {
+            return (0, o.jsx)("div", {
                 style: u(b, !1),
-                children: (0, n.jsx)(s.sn, {
-                    quest: f,
+                children: (0, o.jsx)(s.sn, {
+                    quest: h,
                     isPortrait: !1,
-                    children: (0, n.jsx)(l.A, {
+                    children: (0, o.jsx)(l.A, {
                         targetTimeSec: g.target,
                         parentTransitionState: r.ip4.ENTERED,
                         onOptimisticProgressUpdate: c.tEg,

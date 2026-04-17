@@ -1,7 +1,7 @@
 /** chunk id: 765624 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
@@ -12,13 +12,13 @@ var i = n(627968),
     c = n(319060),
     d = n(397927),
     u = n(240248),
-    h = n(115617);
-let _ = (0, u.xI)(c.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
-    p = {
+    _ = n(115617);
+let h = (0, u.xI)(c.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
+    g = {
         friction: 10,
         tension: 130
     },
-    g = function(e) {
+    p = function(e) {
         return class extends s.Component {
             timeout;
             anim = new a.A.Value(0);
@@ -29,7 +29,7 @@ let _ = (0, u.xI)(c.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
                 o.Fr || (window.addEventListener("resize", this.handleResizeDebounced), this.handleResize())
             }
             handleResize = () => {
-                let e = window.innerWidth > _;
+                let e = window.innerWidth > h;
                 !this.state.shouldAnimate && e && this.anim.setValue(1), this.setState({
                     shouldAnimate: e
                 })
@@ -50,7 +50,7 @@ let _ = (0, u.xI)(c.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
             animateTo(e, t) {
                 a.A.spring(this.anim, {
                     toValue: e,
-                    ...p
+                    ...g
                 }).start(t)
             }
             getAnimatedStyle(e) {
@@ -73,14 +73,14 @@ let _ = (0, u.xI)(c.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
             }
             render() {
                 return (0, i.jsx)("div", {
-                    className: h.i,
+                    className: _.i,
                     children: (0, i.jsx)(d.CZY.Consumer, {
                         children: t => {
                             let {
                                 reducedMotion: n
                             } = t;
                             return (0, i.jsx)(a.A.div, {
-                                className: h.l,
+                                className: _.l,
                                 style: this.getAnimatedStyle(n.enabled),
                                 children: (0, i.jsx)(e, {
                                     ...this.props

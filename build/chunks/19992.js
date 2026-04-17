@@ -1,7 +1,7 @@
 /** chunk id: 19992 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    c: () => h
+    c: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -37,7 +37,7 @@ let d = {
             })]
         })
     },
-    h = e => {
+    _ = e => {
         let {
             dsaCapabilities: t,
             onReopen: n

@@ -54,11 +54,9 @@ function f(e) {
         label: R,
         icon: M
     } = (0, c.h)({
-        sku: t,
         wishlistOwner: n,
         isOwned: !1,
-        shortText: !0,
-        location: "SocialLayerGiftingVoicePanelSkuItemCard"
+        shortText: !0
     });
     return (0, i.jsxs)(r.A, {
         sku: t,

@@ -12,23 +12,23 @@ var i = n(627968),
     c = n(121623),
     d = n(768397),
     u = n(210714),
-    h = n(961350),
-    _ = n(954571),
-    p = n(900662),
-    g = n(652215),
+    _ = n(961350),
+    h = n(954571),
+    g = n(900662),
+    p = n(652215),
     m = n(401755),
     A = n(985018),
     f = n(818050);
 
 function E(e, t, n) {
-    e.preventDefault(), _.default.track(g.HAw.GUILD_TEMPLATE_APP_OPENED, {
+    e.preventDefault(), h.default.track(p.HAw.GUILD_TEMPLATE_APP_OPENED, {
         guild_template_code: t,
         guild_template_name: n.name,
         guild_template_description: n.description,
         guild_template_guild_id: n.sourceGuildId
     });
-    let i = h.default.getFingerprint(),
-        s = null != i ? i : h.default.getId();
+    let i = _.default.getFingerprint(),
+        s = null != i ? i : _.default.getId();
     c.A.openMobileApp(n.state === m.QB.RESOLVED ? t : void 0, s)
 }
 
@@ -52,7 +52,7 @@ function x(e) {
                 onClick: e => E(e, t, n)
             })
         })]
-    }) : (0, i.jsx)(p.A, {
+    }) : (0, i.jsx)(g.A, {
         text: A.intl.string(A.t["e/rZ2n"]),
         buttonCta: A.intl.string(A.t.HAvYn0),
         onClick: e => E(e, t, n)

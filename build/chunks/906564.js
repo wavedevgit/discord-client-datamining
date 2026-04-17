@@ -13,10 +13,10 @@ var i = n(989349),
     c = n(577015),
     d = n(961350),
     u = n(954571),
-    h = n(499785),
-    _ = n(569717),
-    p = n(652215),
-    g = n(204925);
+    _ = n(499785),
+    h = n(569717),
+    g = n(652215),
+    p = n(204925);
 
 function m(e) {
     let {
@@ -50,15 +50,15 @@ function A(e) {
             type: "REGISTER"
         }), null != x) {
         let e;
-        (0, _.A)(x, p.JJy.REGISTER), u.default.track(p.HAw.AGE_GATE_ACTION, {
-            source: g.w_.REGISTER,
-            action: g.AM.AGE_GATE_SUBMITTED
-        }), (e = s()().diff(x, "years")) < 13 || u.default.track(p.HAw.USER_AGE_SUBMITTED, {
+        (0, h.A)(x, g.JJy.REGISTER), u.default.track(g.HAw.AGE_GATE_ACTION, {
+            source: p.w_.REGISTER,
+            action: p.AM.AGE_GATE_SUBMITTED
+        }), (e = s()().diff(x, "years")) < 13 || u.default.track(g.HAw.USER_AGE_SUBMITTED, {
             age_bucket: e >= 13 && e <= 17 ? "13-17" : e >= 18 && e <= 22 ? "18-22" : "23+"
         })
     }
-    return h.A.post({
-        url: p.Rsh.REGISTER,
+    return _.A.post({
+        url: g.Rsh.REGISTER,
         body: {
             fingerprint: d.default.getFingerprint(),
             email: t,
@@ -88,14 +88,14 @@ function A(e) {
         l.h.dispatch({
             type: "REGISTER_SUCCESS",
             token: e.body.token
-        }), u.default.track(p.HAw.AGE_GATE_ACTION, {
-            source: g.w_.REGISTER,
-            action: g.AM.AGE_GATE_SUCCESS
+        }), u.default.track(g.HAw.AGE_GATE_ACTION, {
+            source: p.w_.REGISTER,
+            action: p.AM.AGE_GATE_SUCCESS
         })
     }, e => {
         if (e instanceof c.CaptchaCancelError) throw e;
         let t = new a.A(e);
-        throw null != t.getFieldErrors("date_of_birth") && o.Xv(g.w_.REGISTER), u.default.track(p.HAw.REGISTER_SUBMIT_ERRORED, {
+        throw null != t.getFieldErrors("date_of_birth") && o.Xv(p.w_.REGISTER), u.default.track(g.HAw.REGISTER_SUBMIT_ERRORED, {
             is_unique_username_registration: !0,
             email_error_reason: t.getFirstFieldErrorMessage("email"),
             phone_error_reason: t.getFirstFieldErrorMessage("phone_token"),

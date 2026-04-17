@@ -1,7 +1,7 @@
 /** chunk id: 121623 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => h
+    A: () => _
 });
 var i = n(400253),
     s = n(49485),
@@ -12,7 +12,7 @@ var i = n(400253),
     c = n(292572),
     d = n(652215);
 let u = "template",
-    h = {
+    _ = {
         ...c.A,
         openNativeAppModal(e) {
             l.A.openNativeAppModal(e, d.e$_.GUILD_TEMPLATE_BROWSER)
