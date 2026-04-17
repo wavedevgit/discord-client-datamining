@@ -548,7 +548,7 @@ function en() {
         l === R.FetchState.NOT_FETCHED && _.A.fetch()
     }, [l]), e) ? null : (0, i.jsxs)(i.Fragment, {
         children: [null, (0, i.jsx)(et, {
-            fetching: t || a || l !== R.FetchState.FETCHED,
+            fetching: t || a || d.length > 0 && l !== R.FetchState.FETCHED,
             accounts: n,
             appIdentities: d,
             authorizedApps: r,

@@ -105,7 +105,7 @@ function y(e) {
             sku: t.sku,
             user: n,
             spec: w,
-            cardStyle: r,
+            cardStyle: s()(D.Nr, r),
             skuPreviewStyle: s()(D.ev, {
                 [D.go]: h && !_
             }, u),
