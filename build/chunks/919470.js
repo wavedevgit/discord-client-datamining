@@ -63,8 +63,8 @@ let p = {
             showProgress: x,
             progressCircleText: b,
             progressCirclePercent: y,
-            progressCircleUrgency: g,
-            delay: f,
+            progressCircleUrgency: f,
+            delay: g,
             size: v,
             gradientColor: _,
             estimatedTooltipHeight: E
@@ -86,7 +86,7 @@ let p = {
             let e = x ? {
                 progressCircleText: b,
                 progressCirclePercent: y,
-                progressCircleUrgency: g
+                progressCircleUrgency: f
             } : {};
             return {
                 type: "dynamic",
@@ -98,7 +98,7 @@ let p = {
                     ...e
                 }
             }
-        }, [r, T, A, x, b, y, g]), P = {
+        }, [r, T, A, x, b, y, f]), P = {
             title: t,
             body: l,
             graphic: k,
@@ -108,7 +108,7 @@ let p = {
                     variant: "primary"
                 }]
             }, [m]),
-            delay: f,
+            delay: g,
             size: v,
             gradientColor: n.useMemo(() => "string" == typeof _ && _ in p ? p[_] : _, [_]),
             estimatedTooltipHeight: E

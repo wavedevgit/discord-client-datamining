@@ -39,8 +39,8 @@ var l = n(627968),
     P = n(422069),
     V = n(476464),
     D = n(205184),
-    U = n(939764),
-    W = n(277089),
+    W = n(939764),
+    U = n(277089),
     F = n(611656),
     B = n(459746),
     Y = n(503364),
@@ -460,7 +460,7 @@ function eE(e) {
     } = (0, A.Ay)(v.A.GAME_PROFILE), x = a.useMemo(() => (0, G.u9)(), []), _ = (0, f.yK)([P.A], () => (P.A.getSimilarGames(t) ?? []).slice(0, 25)), [b, E] = a.useState(null), T = (0, D.s)(t), [y, k] = a.useState(null), R = (0, j.h)(t), {
         data: O,
         refetch: M
-    } = (0, S.I)(t), V = O?.name ?? R?.name, U = (e, l) => {
+    } = (0, S.I)(t), V = O?.name ?? R?.name, W = (e, l) => {
         (0, G.Tn)({
             gameName: V ?? "",
             applicationId: t,
@@ -526,7 +526,7 @@ function eE(e) {
                         game: O,
                         application: R,
                         entries: T,
-                        trackAction: U
+                        trackAction: W
                     }), (0, l.jsx)(g.Fmo, {
                         children: (0, l.jsxs)("div", {
                             className: r()(eu.Qs, eu.rb),
@@ -540,7 +540,7 @@ function eE(e) {
                                 onClose: o,
                                 viewId: x,
                                 source: n,
-                                trackAction: U
+                                trackAction: W
                             }), (0, l.jsx)(eA, {
                                 game: O,
                                 onSetOfficialGuildInvite: k,
@@ -550,7 +550,7 @@ function eE(e) {
                                 application: R,
                                 source: n,
                                 trackExternalAction: d,
-                                trackAction: U,
+                                trackAction: W,
                                 analyticsLocations: h
                             })]
                         })
@@ -586,9 +586,9 @@ function ej(e) {
     } = (0, E.RD)(w), {
         invite: J,
         isMember: $
-    } = (0, W.A)(V, T), {
+    } = (0, U.A)(V, T), {
         socialLayerStorefrontRecommendationsData: Q
-    } = (0, U.V)(w ?? null), q = (e, l) => {
+    } = (0, W.V)(w ?? null), q = (e, l) => {
         (0, G.Tn)({
             gameName: F,
             applicationId: t,

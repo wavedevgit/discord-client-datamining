@@ -17,8 +17,8 @@ var a = l(627968),
     x = l(688810),
     b = l(323082),
     y = l(589078),
-    g = l(541689),
-    f = l(721923),
+    f = l(541689),
+    g = l(721923),
     v = l(300233),
     _ = l(599941),
     E = l(250253),
@@ -35,8 +35,8 @@ var a = l(627968),
     M = l(761705),
     D = l(448362),
     O = l(71393),
-    L = l(166403),
-    B = l(652215),
+    B = l(166403),
+    L = l(652215),
     w = l(788868),
     V = l(985018),
     U = l(705018),
@@ -54,8 +54,8 @@ function H(e) {
         }, e))
     }) : null
 }
-let W = "checkout-error-boundary-test-modal",
-    F = () => {
+let F = "checkout-error-boundary-test-modal",
+    W = () => {
         let {
             setStep: e
         } = (0, P.Ay)();
@@ -103,16 +103,16 @@ let Y = {
         name: "Checkout Test Panel",
         id: "checkout-test-panel",
         component: () => {
-            let [e, t] = n.useState(w.pe.TIER_2), [l, o] = n.useState(null), d = (0, s.yK)([O.A], () => O.A.getGuildsArray()), [_] = (0, s.yK)([L.A], () => [L.A.getPremiumSubscription()]), E = d.map(e => ({
+            let [e, t] = n.useState(w.pe.TIER_2), [l, o] = n.useState(null), d = (0, s.yK)([O.A], () => O.A.getGuildsArray()), [_] = (0, s.yK)([B.A], () => [B.A.getPremiumSubscription()]), E = d.map(e => ({
                 id: e.id,
                 value: e,
                 label: e.name
             })), [C, j] = n.useState(E.length > 0 ? E[0].value : null), [S, A] = n.useState(""), [k, P] = n.useState({
                 plan_id: w.gD.PREMIUM_MONTH_TIER_2,
                 gift: "true"
-            }), V = "true" !== k.gift && null != _, [U, W] = n.useState(E.length > 0 ? E[0].value : null), {
-                analyticsLocations: F
-            } = (0, x.Ay)(h.A.PAYMENT_FLOW_TEST_PAGE), [$, Y] = n.useState(""), [z, q] = n.useState(B.dJq), {
+            }), V = "true" !== k.gift && null != _, [U, F] = n.useState(E.length > 0 ? E[0].value : null), {
+                analyticsLocations: W
+            } = (0, x.Ay)(h.A.PAYMENT_FLOW_TEST_PAGE), [$, Y] = n.useState(""), [z, q] = n.useState(L.dJq), {
                 balance: K,
                 isFetching: J,
                 error: X
@@ -120,9 +120,9 @@ let Y = {
                 isSubmitting: Q,
                 responseMessage: Z,
                 redeemVirtualCurrency: ee
-            } = (0, M.Q)(), [et, el] = n.useState(B.dJq), [ea, en] = n.useState(""), [er, ei] = n.useState(B.dJq);
+            } = (0, M.Q)(), [et, el] = n.useState(L.dJq), [ea, en] = n.useState(""), [er, ei] = n.useState(L.dJq);
             return (0, a.jsx)(x.f5, {
-                value: F,
+                value: W,
                 children: (0, a.jsx)(p.IpV, {
                     className: G.XG,
                     children: (0, a.jsxs)(p.BJc, {
@@ -193,7 +193,7 @@ let Y = {
                                 text: "Select Plan",
                                 onClick: () => (0, I.A)({
                                     subscriptionTier: l,
-                                    analyticsLocations: F
+                                    analyticsLocations: W
                                 })
                             })]
                         }), (0, a.jsx)(p.cGx, {}), (0, a.jsxs)(p.BJc, {
@@ -206,7 +206,7 @@ let Y = {
                                 onSelectionChange: j,
                                 selectionMode: "single",
                                 fullWidth: !0
-                            }), null != C ? (0, a.jsx)(f.A, {
+                            }), null != C ? (0, a.jsx)(g.A, {
                                 guild: C,
                                 analyticsLocation: {}
                             }) : (0, a.jsx)("div", {
@@ -235,7 +235,7 @@ let Y = {
                                         text: "Open Link",
                                         disabled: S.length < 1,
                                         onClick: () => {
-                                            window.open(B.BVt.BILLING_PROMOTION_REDEMPTION(S))
+                                            window.open(L.BVt.BILLING_PROMOTION_REDEMPTION(S))
                                         }
                                     })
                                 })]
@@ -295,7 +295,7 @@ let Y = {
                                 text: "Open Link",
                                 disabled: V,
                                 onClick: () => {
-                                    window.open(B.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + r.stringify({
+                                    window.open(L.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + r.stringify({
                                         ...k
                                     }))
                                 }
@@ -344,7 +344,7 @@ let Y = {
                                 label: "Premium Server Subscription For",
                                 value: U,
                                 options: E,
-                                onSelectionChange: W,
+                                onSelectionChange: F,
                                 selectionMode: "single",
                                 fullWidth: !0
                             }), (0, a.jsx)(p.Text, {
@@ -381,9 +381,9 @@ let Y = {
                                     openPremiumPaymentModal: () => !0,
                                     analyticsLocations: [],
                                     analyticsLocationObject: {
-                                        page: B.liQ.IN_APP
+                                        page: L.liQ.IN_APP
                                     },
-                                    context: B.BRT.APP
+                                    context: L.BRT.APP
                                 })
                             })]
                         }), (0, a.jsx)(p.cGx, {}), (0, a.jsx)(p.BJc, {
@@ -413,7 +413,7 @@ let Y = {
                                         onClick: () => (0, R.A)({
                                             applicationId: ea,
                                             skuId: er,
-                                            analyticsLocations: F,
+                                            analyticsLocations: W,
                                             checkoutFlow: y.CL.PREMIUM_APPS_OTP_CHECKOUT
                                         })
                                     })]
@@ -440,7 +440,7 @@ let Y = {
                             children: (0, a.jsx)(p.Button, {
                                 variant: "primary",
                                 text: "Reset DismissibleContentFrameworkStore",
-                                onClick: () => (0, g.Ab)()
+                                onClick: () => (0, f.Ab)()
                             })
                         })]
                     })
@@ -475,7 +475,7 @@ let Y = {
                                 errorType: n
                             } = t, r = [{
                                 key: S.pn.PLAN_SELECT,
-                                renderStep: () => (0, a.jsx)(F, {}),
+                                renderStep: () => (0, a.jsx)(W, {}),
                                 renderHeader: () => (0, a.jsx)(o.rQ0, {
                                     title: "Checkout Error Boundary Test"
                                 })
@@ -486,7 +486,7 @@ let Y = {
                                         errorType: n
                                     })
                                 })
-                            }], i = () => (0, p.OoC)(W);
+                            }], i = () => (0, p.OoC)(F);
                             return (0, p.mMO)(async () => {
                                 let t;
                                 return "show-alert" === l ? t = e => {
@@ -525,7 +525,7 @@ let Y = {
                             }, {
                                 onCloseRequest: i,
                                 onCloseCallback: i,
-                                modalKey: W
+                                modalKey: F
                             })
                         })(n, {
                             errorBoundaryVariant: t,

@@ -27,8 +27,8 @@ let p = () => (0, a.jsx)("img", {
             onClick: x,
             onMouseDown: b,
             disabled: y,
-            isInModalOverlay: g,
-            className: f
+            isInModalOverlay: f,
+            className: g
         } = e, [v, _] = (0, n.useState)(!1), E = (0, n.useMemo)(() => m === s.k.SELECTED ? u.wH : v ? u.mr : u.Ay, [m, v]), [C, j] = (0, n.useState)(!1), [S, T] = (0, n.useState)(!1), [A, k] = (0, n.useState)(2700), P = null === r;
         (0, n.useEffect)(() => {
             P && !C && (j(!0), setTimeout(() => {
@@ -44,7 +44,7 @@ let p = () => (0, a.jsx)("img", {
             O = (0, n.useCallback)(() => {
                 D.current = null, M(null)
             }, []),
-            L = (0, n.useCallback)(e => {
+            B = (0, n.useCallback)(e => {
                 let t = N === D.current;
                 e > 0 && ("earn" !== N || !t) && M("earn")
             }, [M, N]);
@@ -59,9 +59,9 @@ let p = () => (0, a.jsx)("img", {
                 onMouseEnter: y ? void 0 : () => _(!0),
                 onMouseLeave: y ? void 0 : () => _(!1),
                 ref: t,
-                className: i()(u.kL, E, f, {
+                className: i()(u.kL, E, g, {
                     [u.En]: I,
-                    [u.dA]: g,
+                    [u.dA]: f,
                     [u.r9]: y
                 }),
                 children: [(0, a.jsx)("div", {
@@ -73,7 +73,7 @@ let p = () => (0, a.jsx)("img", {
                     })
                 }), (0, a.jsx)(d.A, {
                     value: R,
-                    onValueChange: L,
+                    onValueChange: B,
                     onValueReached: O,
                     targetTotalCounterTime: A,
                     className: I ? u.F : void 0

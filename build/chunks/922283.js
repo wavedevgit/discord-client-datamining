@@ -26,8 +26,8 @@ function v(e) {
         title: i,
         rating: m,
         ratingCount: f,
-        isRecentReview: x = !1
-    } = e, g = (0, h.A)(), v = (0, c.j)(m, f), A = (0, u.y)(v), b = a.useCallback(() => {
+        tooltipVariant: x = "all"
+    } = e, g = (0, h.A)(), v = (0, c.j)(m, f), A = (0, u.yi)(v), b = a.useCallback(() => {
         n(d.Ws.SteamReviews), g(t)
     }, [g, n, t]);
     return (0, l.jsx)(s.DUT, {
@@ -48,7 +48,7 @@ function v(e) {
                     children: i
                 })]
             }), (0, l.jsx)(r.m, {
-                text: v === o.vI.NO_USER_REVIEWS ? p.intl.string(p.t.CLMt8J) : p.intl.format(x ? p.t.TzvC0k : p.t["lzANJ/"], {
+                text: v === o.vI.NO_USER_REVIEWS ? p.intl.string(p.t.CLMt8J) : p.intl.format("recent" === x ? p.t.TzvC0k : "localized" === x ? p.t.EOfrwm : p.t["lzANJ/"], {
                     rating: m,
                     rating_count: f?.toLocaleString()
                 }).toString(),
@@ -57,7 +57,7 @@ function v(e) {
                     children: [(0, l.jsx)(s.Text, {
                         variant: "text-xs/medium",
                         color: A,
-                        children: (0, u.a)(v)
+                        children: (0, u.ad)(v)
                     }), null != f && v !== o.vI.NO_USER_REVIEWS && (0, l.jsx)(s.Text, {
                         variant: "text-xs/medium",
                         color: "text-subtle",
@@ -66,7 +66,7 @@ function v(e) {
                         }).toString()
                     })]
                 })
-            }, x ? "open-steam-page-recent" : "open-steam-page")]
+            }, `open-steam-page-${x}`)]
         })
     })
 }
@@ -105,7 +105,7 @@ function A(e) {
                     tier: m
                 }) : null, g ? (0, l.jsx)(s.Text, {
                     variant: "text-xs/medium",
-                    color: (0, u.y)(o.vI.NO_USER_REVIEWS),
+                    color: (0, u.yi)(o.vI.NO_USER_REVIEWS),
                     children: p.intl.string(p.t["0xYzpO"])
                 }) : null]
             })]
@@ -165,10 +165,10 @@ let j = function(e) {
         trackAction: n
     } = e, {
         applicationId: a
-    } = t, r = (0, x.I)(a), d = t.opencriticUrl, u = m.p.useConfig({
+    } = t, r = (0, x.I)(a), d = t.opencriticUrl, f = m.p.useConfig({
         location: "GameProfileReviews"
-    }), f = u.recentEnabled || u.englishEnabled, h = t.steamReleaseStatus !== i.Y.RETIRED_ABANDONED && null != r, g = t.reviews?.steam, b = (0, c.j)(g?.recentRating, g?.recentRatingCount), E = h && u.recentEnabled && b !== o.vI.NO_USER_REVIEWS, j = t.reviews?.opencritic != null && null != d;
-    return h || E || j ? (0, l.jsxs)("div", {
+    }), h = f.recentEnabled || f.englishEnabled, g = t.steamReleaseStatus !== i.Y.RETIRED_ABANDONED && null != r, b = t.reviews?.steam, E = (0, c.j)(b?.recentRating, b?.recentRatingCount), j = g && f.recentEnabled && E !== o.vI.NO_USER_REVIEWS, I = f.englishEnabled && (0, u.HM)(b), C = I ? b?.localizedRating : b?.rating, N = I ? b?.localizedRatingCount : b?.ratingCount, S = h ? I ? p.t["aWb+V4"] : p.t["8e4LiB"] : p.t.whmopT, T = t.reviews?.opencritic != null && null != d;
+    return g || j || T ? (0, l.jsxs)("div", {
         className: _.uW,
         children: [(0, l.jsx)("div", {
             className: _.Gf,
@@ -179,26 +179,27 @@ let j = function(e) {
             })
         }), (0, l.jsxs)("div", {
             className: _.kL,
-            children: [E && null != r ? (0, l.jsx)("div", {
+            children: [j && null != r ? (0, l.jsx)("div", {
                 className: _.WH,
                 children: (0, l.jsx)(v, {
                     url: r,
                     trackAction: n,
                     title: p.intl.string(p.t.MQGNsN),
-                    rating: g?.recentRating,
-                    ratingCount: g?.recentRatingCount,
-                    isRecentReview: !0
+                    rating: b?.recentRating,
+                    ratingCount: b?.recentRatingCount,
+                    tooltipVariant: "recent"
                 })
-            }) : null, h && null != r ? (0, l.jsx)("div", {
+            }) : null, g && null != r ? (0, l.jsx)("div", {
                 className: _.WH,
                 children: (0, l.jsx)(v, {
                     url: r,
                     trackAction: n,
-                    title: p.intl.string(f ? p.t["8e4LiB"] : p.t.whmopT),
-                    rating: g?.rating,
-                    ratingCount: g?.ratingCount
+                    title: p.intl.string(S),
+                    rating: C,
+                    ratingCount: N,
+                    tooltipVariant: I ? "localized" : "all"
                 })
-            }) : null, j && null != d ? (0, l.jsx)("div", {
+            }) : null, T && null != d ? (0, l.jsx)("div", {
                 className: _.WH,
                 children: (0, l.jsx)(A, {
                     game: t,

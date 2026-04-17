@@ -64,9 +64,7 @@ function C(e) {
             children: [p(), !s && (0, i.jsx)(d.Text, {
                 variant: "text-sm/normal",
                 className: E.Wk,
-                children: f.intl.format(f.t.Sq9xJ7, {
-                    game: A
-                })
+                children: A
             })]
         })
     })

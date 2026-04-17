@@ -1,6 +1,6 @@
 /** chunk id: 786971 params = (module,exports,require) **/
 l.d(t, {
-    X: () => f
+    X: () => g
 });
 var a = l(627968),
     n = l(64700),
@@ -52,16 +52,16 @@ function b(e) {
     } = e, [l, c] = n.useState(p.gD.PREMIUM_MONTH_TIER_2), [u, h] = n.useState(!1), {
         error: b,
         handleSuccess: y,
-        handleFailure: g
-    } = x(), f = n.useCallback(() => {
+        handleFailure: f
+    } = x(), g = n.useCallback(() => {
         let e = (0, r.A)();
         (0, s.OD)({
             planId: l,
             isGift: u,
             loadId: e,
             flowType: t
-        }, y, g)
-    }, [l, u, t, y, g]);
+        }, y, f)
+    }, [l, u, t, y, f]);
     return (0, a.jsxs)(d.Hq, {
         label: "Nitro Checkout",
         direction: "vertical",
@@ -96,7 +96,7 @@ function b(e) {
             variant: "primary",
             size: "sm",
             text: "Open Nitro Checkout",
-            onClick: f
+            onClick: g
         }), null != b && (0, a.jsx)(i.EYj, {
             variant: "text-xs/normal",
             color: "status-danger",
@@ -135,7 +135,7 @@ function y(e) {
     })
 }
 
-function g(e) {
+function f(e) {
     let {
         flowType: t
     } = e, [l, u] = n.useState(""), {
@@ -169,7 +169,7 @@ function g(e) {
         })]
     })
 }
-let f = {
+let g = {
     name: "Redirect To Standalone",
     id: "standalone-redirect",
     component: function() {
@@ -205,7 +205,7 @@ let f = {
                 flowType: c
             }), (0, a.jsx)(y, {
                 flowType: c
-            }), (0, a.jsx)(g, {
+            }), (0, a.jsx)(f, {
                 flowType: c
             })]
         })

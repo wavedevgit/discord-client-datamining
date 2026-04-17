@@ -64,7 +64,7 @@ let b = [{
         variant: "text-sm/normal",
         children: "Purchase button is disabled for this story"
     }),
-    g = {
+    f = {
         isGift: {
             label: "Is Gift",
             type: "boolean",
@@ -76,7 +76,7 @@ let b = [{
             defaultValue: !0
         }
     },
-    f = (0, u.R)(),
+    g = (0, u.R)(),
     v = {
         title: "Checkout Review Step",
         stories: [{
@@ -98,8 +98,8 @@ let b = [{
                     skuId: t,
                     isGift: l,
                     applicationId: p.FYj
-                }), g = s.Ay.isPremiumSku(t);
-                return m || null == h || g ? (0, a.jsx)(c.k, {}) : (0, a.jsxs)("div", {
+                }), f = s.Ay.isPremiumSku(t);
+                return m || null == h || f ? (0, a.jsx)(c.k, {}) : (0, a.jsxs)("div", {
                     className: x.Cd,
                     children: [(0, a.jsx)(d.dL, {
                         stepConfigs: b,
@@ -122,10 +122,10 @@ let b = [{
                 skuId: {
                     label: "SKU ID",
                     type: "select",
-                    options: f.options,
-                    defaultValue: f.defaultValue
+                    options: g.options,
+                    defaultValue: g.defaultValue
                 },
-                ...g
+                ...f
             }
         }, {
             name: "Premium Review Step",
@@ -140,8 +140,8 @@ let b = [{
                     loadId: o,
                     handleClose: u,
                     handleComplete: h,
-                    isFetching: g,
-                    sku: f
+                    isFetching: f,
+                    sku: g
                 } = (0, d.ud)({
                     skuId: t,
                     isGift: l,
@@ -156,7 +156,7 @@ let b = [{
                 } = (0, d.n1)({
                     subscriptionPlanId: E
                 });
-                return !g && null != f && S && v && null != T ? (0, a.jsxs)("div", {
+                return !f && null != g && S && v && null != T ? (0, a.jsxs)("div", {
                     className: x.Cd,
                     children: [(0, a.jsx)(d.dL, {
                         stepConfigs: b,
@@ -188,7 +188,7 @@ let b = [{
                     }],
                     defaultValue: m.pe.TIER_0
                 },
-                ...g
+                ...f
             }
         }]
     }

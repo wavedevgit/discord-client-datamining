@@ -17,8 +17,8 @@ var a = l(627968),
     x = l(309954),
     b = l(287809),
     y = l(975571),
-    g = l(474090),
-    f = l(94264),
+    f = l(474090),
+    g = l(94264),
     v = l(235365),
     _ = l(566119),
     E = l(788868),
@@ -65,8 +65,8 @@ function O(e) {
         location: "PremiumTenureRewardsOrbsBalancePopover"
     }), j = (0, s.bG)([b.default], () => b.default.getCurrentUser()), {
         balance: k
-    } = (0, x.W)(), P = !(0, g.ki)(j), O = n.useMemo(() => {
-        let e = (0, g.YE)(j, E.PremiumTypes.TIER_2);
+    } = (0, x.W)(), P = !(0, f.ki)(j), O = n.useMemo(() => {
+        let e = (0, f.YE)(j, E.PremiumTypes.TIER_2);
         if (!v || P) return null;
         if (e && null != _) {
             let e = (0, o.default)(new Date(_.next_reward_date), new Date);
@@ -78,11 +78,11 @@ function O(e) {
                         days: Math.max(1, e),
                         deepLinkToNitroOrbs: N
                     })
-                }), (0, a.jsx)(f.A, {})]
+                }), (0, a.jsx)(g.A, {})]
             })
         }
         return null
-    }, [j, P, _, v]), L = (k ?? 0) >= 4100;
+    }, [j, P, _, v]), B = (k ?? 0) >= 4100;
     return (0, a.jsx)(d.x, {
         targetElementRef: t,
         shouldShow: l,
@@ -92,10 +92,10 @@ function O(e) {
         modal: !0,
         closeOnClickOutside: !0,
         children: (0, a.jsx)(u.NPJ, {
-            theme: L ? C.NJ8.DARKER : void 0,
+            theme: B ? C.NJ8.DARKER : void 0,
             children: e => (0, a.jsxs)("div", {
                 className: i()(e, A.j),
-                children: [L && (0, a.jsx)(p.A, {
+                children: [B && (0, a.jsx)(p.A, {
                     src: I.A,
                     className: A.yG
                 }), (0, a.jsxs)("div", {

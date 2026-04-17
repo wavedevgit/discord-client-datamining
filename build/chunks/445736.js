@@ -17,8 +17,8 @@ var a = l(627968),
     x = l(652215),
     b = l(935377),
     y = l(439519);
-let g = new c.A("PaymentElement.web.stories"),
-    f = () => {
+let f = new c.A("PaymentElement.web.stories"),
+    g = () => {
         let {
             elementsAppearanceOptions: e
         } = (0, s.E)();
@@ -54,7 +54,7 @@ let g = new c.A("PaymentElement.web.stories"),
             handleStepChange: x.tEg,
             onBillingAddressChange: x.tEg,
             paymentElementsEnabled: !0,
-            logger: g,
+            logger: f,
             shouldLogOnChangeEvents: !0,
             continueSessionToInitialStep: void 0
         }), {
@@ -64,7 +64,7 @@ let g = new c.A("PaymentElement.web.stories"),
             customPaymentMethodIdsToSourceTypes: A
         } = (0, s.p)({
             onSetupError: e => {
-                g.info("Stripe Payment Element options setup error: ", e)
+                f.info("Stripe Payment Element options setup error: ", e)
             },
             elementsAppearanceOptions: {
                 theme: t,
@@ -129,7 +129,7 @@ let g = new c.A("PaymentElement.web.stories"),
                             })]
                         })
                     })
-                }), (0, a.jsx)(f, {})]
+                }), (0, a.jsx)(g, {})]
             })]
         })
     },

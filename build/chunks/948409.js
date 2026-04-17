@@ -17,8 +17,8 @@ var a = l(627968),
     x = l(252561),
     b = l(689614),
     y = l(652215),
-    g = l(818348),
-    f = l(76488);
+    f = l(818348),
+    g = l(76488);
 let v = (0, b.R)();
 async function _(e) {
     return (await i.Bo.post({
@@ -75,7 +75,7 @@ Payment source changed.`)
     let D = n.useMemo(() => Object.values(I).map(e => {
             var t;
             let l, a = (t = e.type, null != (l = p.w[t]) ? l() : String(t));
-            if (e.type === g.he.CARD && "last4" in e) {
+            if (e.type === f.he.CARD && "last4" in e) {
                 let t = e.last4 ?? "",
                     l = e.brand ?? "Unknown";
                 a += ` - ****${t} (${l})`
@@ -107,7 +107,7 @@ Payment source changed.`)
             } finally {
                 t(!1)
             }
-        }, L = async () => {
+        }, B = async () => {
             if (null == j || "" === j) return void b("No order ID available. Please create an order first.");
             i(!0);
             try {
@@ -230,7 +230,7 @@ Error: ${t}`)
             direction: "vertical",
             children: [(0, a.jsx)(s.Text, {
                 variant: "text-md/normal",
-                className: f.cW,
+                className: g.cW,
                 children: "This section tests the orderSKU function, order signing, and 3DS authentication. Select SKU ID and payment source from the dropdowns below. Check the console for detailed logs."
             }), (0, a.jsxs)(s.nVY, {
                 label: "Configuration",
@@ -274,7 +274,7 @@ Error: ${t}`)
                     }), !R && (0, a.jsx)(s.Text, {
                         variant: "text-sm/normal",
                         color: "text-muted",
-                        className: f.cW,
+                        className: g.cW,
                         children: "Loading payment sources..."
                     })]
                 })]
@@ -295,11 +295,11 @@ Error: ${t}`)
                     variant: "secondary",
                     size: "sm",
                     text: l ? "Signing Order..." : "Sign Order",
-                    onClick: L,
+                    onClick: B,
                     disabled: l || null == j || "" === j
                 })]
             }), null != u && (0, a.jsx)("div", {
-                className: f.cW,
+                className: g.cW,
                 children: u.split("\n").map((e, t) => (0, a.jsx)(s.Text, {
                     variant: "text-md/normal",
                     style: {

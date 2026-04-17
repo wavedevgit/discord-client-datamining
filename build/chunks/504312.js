@@ -17,8 +17,8 @@ var a = l(627968),
     x = l(812745),
     b = l(71393),
     y = l(287809),
-    g = l(295405),
-    f = l(652215),
+    f = l(295405),
+    g = l(652215),
     v = l(788868),
     _ = l(439519);
 let E = {
@@ -271,7 +271,7 @@ let E = {
         purchaseButtonText: "Subscribe",
         totalDue: 999,
         renewalPrice: 1099,
-        currency: f.Yri.USD,
+        currency: g.Yri.USD,
         interval: v.WT.MONTH,
         intervalCount: 1,
         startDate: new Date
@@ -335,7 +335,7 @@ let E = {
                     children: (0, a.jsx)(m.Vm, {
                         label: t,
                         lineItems: r,
-                        currency: f.Yri.USD
+                        currency: g.Yri.USD
                     })
                 })
             },
@@ -383,7 +383,7 @@ let E = {
                         lineItems: n,
                         intervalType: v.WT.MONTH,
                         intervalCount: 1,
-                        currency: f.Yri.USD
+                        currency: g.Yri.USD
                     })
                 })
             },
@@ -564,14 +564,14 @@ let E = {
                     giftCardsEnabled: l,
                     disabled: r,
                     hidePersonalInformation: i
-                } = e, o = (0, s.bG)([g.A], () => Object.values(g.A.paymentSources)), [p, x] = n.useState(void 0);
+                } = e, o = (0, s.bG)([f.A], () => Object.values(f.A.paymentSources)), [p, x] = n.useState(void 0);
                 n.useEffect(() => {
                     (0, c.$o)()
                 }, []);
                 let b = n.useMemo(() => o.map(e => new h.A(e, !0, [])), [o]),
                     {
                         dropdownPaymentSources: y,
-                        dropdownPaymentSourceId: f,
+                        dropdownPaymentSourceId: g,
                         handleDropdownPaymentSourceChange: v,
                         giftCardCheckboxProps: _
                     } = (0, u.Y)({
@@ -585,7 +585,7 @@ let E = {
                         giftCardsEnabled: l,
                         giftCardCheckboxProps: _,
                         paymentSourceDropdownProps: {
-                            selectedPaymentSourceId: f,
+                            selectedPaymentSourceId: g,
                             paymentSources: y,
                             hidePersonalInformation: i,
                             onChange: v
@@ -634,7 +634,7 @@ let E = {
                         value: i,
                         onChange: o
                     } : void 0,
-                    paymentSourceType: r ? f.hes.PAYSAFE_CARD : f.hes.CARD
+                    paymentSourceType: r ? g.hes.PAYSAFE_CARD : g.hes.CARD
                 })
             },
             controls: {
@@ -685,12 +685,12 @@ let E = {
                         variant: "text-sm/normal",
                         children: "Stateless Component:"
                     }), (0, a.jsx)(m.y, {
-                        onClick: f.tEg
+                        onClick: g.tEg
                     }), (0, a.jsx)("br", {}), (0, a.jsx)(d.Text, {
                         variant: "text-sm/normal",
                         children: "Link with Modal:"
                     }), (0, a.jsx)(m.Z4, {
-                        onComplete: f.tEg
+                        onComplete: g.tEg
                     })]
                 })
             }
@@ -746,11 +746,13 @@ let E = {
             component: e => {
                 let {
                     relocationCountry: t,
-                    relocationCurrencyCode: l
+                    relocationCurrencyCode: l,
+                    willForfeitGiftCardBalance: n
                 } = e;
                 return (0, a.jsx)(m.ch, {
                     relocationCountry: t,
-                    relocationCurrencyCode: l
+                    relocationCurrencyCode: l,
+                    willForfeitGiftCardBalance: n
                 })
             },
             controls: {
@@ -764,6 +766,11 @@ let E = {
                     label: "Relocation Currency Code",
                     type: "text",
                     defaultValue: "USD"
+                },
+                willForfeitGiftCardBalance: {
+                    label: "Will Forfeit Gift Card Balance",
+                    type: "boolean",
+                    defaultValue: !0
                 }
             }
         }]

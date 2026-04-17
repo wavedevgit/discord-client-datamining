@@ -35,8 +35,11 @@ function E() {
     } = (0, a.cf)([A.A], () => ({
         hasFetchedSubscriptions: A.A.hasFetchedSubscriptions(),
         premiumSubscription: A.A.getPremiumTypeSubscription()
-    })), l = (0, g.Y)(), E = (0, a.bG)([h.A], () => h.A.hasFetchedPaymentSources), b = (0, a.bG)([x.A], () => x.A.isFetchingCurrentUserAppliedBoosts);
-    return t && l && E && !b ? (0, i.jsxs)("div", {
+    })), l = (0, g.Y)(), E = (0, a.bG)([h.A], () => h.A.hasFetchedPaymentSources), b = (0, a.bG)([x.A], () => x.A.isFetchingCurrentUserAppliedBoosts), C = !t || !l || !E || b, [v, N] = s.useState(!1);
+    return (C || v || N(!0), C && !v) ? (0, i.jsx)("div", {
+        className: r()(S.kL, S.Lq),
+        children: (0, i.jsx)(o.y$y, {})
+    }) : (0, i.jsxs)("div", {
         className: S.kL,
         children: [(0, i.jsx)("div", {
             className: S.Tp
@@ -48,8 +51,5 @@ function E() {
                 premiumSubscription: n
             })
         })]
-    }) : (0, i.jsx)("div", {
-        className: r()(S.kL, S.Lq),
-        children: (0, i.jsx)(o.y$y, {})
     })
 }

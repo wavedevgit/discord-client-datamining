@@ -1,7 +1,8 @@
 /** chunk id: 676937 params = (module,exports,require) **/
 n.d(t, {
-    a: () => r,
-    y: () => i
+    HM: () => s,
+    ad: () => r,
+    yi: () => i
 });
 var l = n(223273),
     a = n(985018);
@@ -52,4 +53,8 @@ function r(e) {
         default:
             return null
     }
+}
+
+function s(e) {
+    return null != e && null != e.localizedRating && null != e.localizedRatingCount && null != e.ratingCount && e.localizedRatingCount >= 200 && e.ratingCount >= 2e3
 }

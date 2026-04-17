@@ -18,11 +18,11 @@ var a = l(627968),
     x = l(162097),
     b = l(219980),
     y = l(652215),
-    g = l(985018),
-    f = l(253167);
+    f = l(985018),
+    g = l(253167);
 let v = {
-        START: f.Vl,
-        END: f.Wk
+        START: g.Vl,
+        END: g.Wk
     },
     _ = e => {
         let {
@@ -30,7 +30,7 @@ let v = {
             ctaText: l,
             ctaOnClick: r,
             analyticsPage: _,
-            linkText: E = g.intl.string(g.t.XRdyjz),
+            linkText: E = f.intl.string(f.t.XRdyjz),
             cardAlignment: C = v.START,
             className: j
         } = e, {
@@ -48,8 +48,8 @@ let v = {
             O = n.useCallback(() => {
                 P && D()
             }, [P, D]),
-            L = (0, o.A)(null, O),
-            B = n.useMemo(() => (0, a.jsx)(x.b, {
+            B = (0, o.A)(null, O),
+            L = n.useMemo(() => (0, a.jsx)(x.b, {
                 analyticsPage: _,
                 ctaText: l,
                 ctaOnClick: () => {
@@ -67,9 +67,9 @@ let v = {
                 }
             }), [P, D, l, r]);
         return (0, a.jsxs)("div", {
-            className: i()(f.kL, j, {
-                [f.R]: R,
-                [f.RK]: !R
+            className: i()(g.kL, j, {
+                [g.R]: R,
+                [g.RK]: !R
             }),
             children: [(0, a.jsx)(b.J, {
                 pillRef: M,
@@ -81,12 +81,12 @@ let v = {
                 onClick: D,
                 showNotificationBadge: t
             }), T ? w : P && (0, a.jsx)("div", {
-                className: i()(f.Ui, C, {
-                    [f.R]: R,
-                    [f.RK]: !R
+                className: i()(g.Ui, C, {
+                    [g.R]: R,
+                    [g.RK]: !R
                 }),
-                ref: L,
-                children: B
+                ref: B,
+                children: L
             })]
         })
     };
