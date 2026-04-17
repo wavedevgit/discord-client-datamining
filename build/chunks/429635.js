@@ -1,19 +1,19 @@
 /** chunk id: 429635 params = (module,exports,require) **/
-t.d(l, {
+n.d(t, {
     A: () => r
 });
-var n = t(64700),
-    s = t(311907),
-    a = t(733391),
-    i = t(832163);
+var l = n(64700),
+    a = n(311907),
+    s = n(733391),
+    i = n(832163);
 
 function r(e) {
     let {
-        guildId: l
-    } = e, t = (0, s.bG)([i.A], () => null != l ? i.A.getStorefrontData(l) : void 0, [l]);
-    return n.useEffect(() => {
-        null != l && (0, a.Rw)(l, {
+        guildId: t
+    } = e, n = (0, a.bG)([i.A], () => null != t ? i.A.getStorefrontData(t) : void 0, [t]);
+    return l.useEffect(() => {
+        null != t && (0, s.Rw)(t, {
             eager: !1
         })
-    }, [l]), t
+    }, [t]), n
 }

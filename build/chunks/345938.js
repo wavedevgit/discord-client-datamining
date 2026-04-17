@@ -2,8 +2,8 @@
 n.d(t, {
     d: () => i
 });
-var a = n(627968),
-    l = n(397927),
+var l = n(627968),
+    a = n(397927),
     s = n(294454);
 let i = e => {
     let {
@@ -13,11 +13,11 @@ let i = e => {
         analyticsLocations: o,
         analyticsContext: c
     } = e;
-    (0, l.mMO)(async () => {
+    (0, a.mMO)(async () => {
         let {
             default: e
         } = await Promise.all([n.e("96758"), n.e("79133"), n.e("81399")]).then(n.bind(n, 763375));
-        return n => (0, a.jsx)(e, {
+        return n => (0, l.jsx)(e, {
             ...n,
             sku: t,
             guildId: i,

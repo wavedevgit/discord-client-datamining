@@ -1,62 +1,62 @@
 /** chunk id: 294454 params = (module,exports,require) **/
 n.d(t, {
-    Be: () => s,
-    aU: () => o,
-    fO: () => l,
+    Be: () => o,
+    aU: () => i,
+    fO: () => r,
     vK: () => c
 });
-var a = n(627968);
+var l = n(627968);
 n(64700);
-var i = n(397927),
-    r = n(530912);
-let o = "forward-modal";
+var a = n(397927),
+    s = n(530912);
+let i = "forward-modal";
 
-function l(e) {
+function r(e) {
     let {
         message: t,
-        source: l,
-        initialSelectedDestinations: s = [],
+        source: r,
+        initialSelectedDestinations: o = [],
         forwardOptions: c,
         onRequestSent: d,
         customSendHandler: u
     } = e;
-    (0, r.pp)(t.channel_id, t.id, l), (0, i.mMO)(async () => {
+    (0, s.pp)(t.channel_id, t.id, r), (0, a.mMO)(async () => {
         let {
             ForwardModal: e
         } = await Promise.all([n.e("96758"), n.e("79133"), n.e("74867")]).then(n.bind(n, 911269));
-        return n => (0, a.jsx)(e, {
+        return n => (0, l.jsx)(e, {
             ...n,
             message: t,
-            initialSelectedDestinations: s,
+            initialSelectedDestinations: o,
             forwardOptions: c,
             onRequestSent: d,
             customSendHandler: u,
-            source: l
+            source: r
         })
     }, {
-        modalKey: o
+        modalKey: i
     })
 }
 
-function s() {
-    (0, i.OoC)(o)
+function o() {
+    (0, a.OoC)(i)
 }
 
 function c(e) {
     let {
         message: t,
-        failedDestinations: r,
-        forwardOptions: o
+        failedDestinations: s,
+        forwardOptions: i
     } = e;
-    (0, i.mMO)(async () => {
+    (0, a.mMO)(async () => {
         let {
             ForwardFailedAlertModal: e
         } = await n.e("66139").then(n.bind(n, 181622));
-        return n => (0, a.jsx)(e, {
+        return n => (0, l.jsx)(e, {
             ...n,
             message: t,
-            failedDestinations: r,
-            forwardOptions: o
+            failedDestinations: s,
+            forwardOptions: i
         })
     })
 }

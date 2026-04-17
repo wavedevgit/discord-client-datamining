@@ -1,9 +1,9 @@
-/** chunk id: 207654 params = (module,exports,require) **/
+/** chunk id: 857875 params = (module,exports,require) **/
 n.d(t, {
-    b: () => a
+    O: () => a
 });
 let l = (0, n(945810).mj)({
-    name: "2026-03-slayer-storefront-in-game-item-label",
+    name: "2026-04-slayer-storefront-pdp-redesign",
     kind: "user",
     defaultConfig: {
         enabled: !1

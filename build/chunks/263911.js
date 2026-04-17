@@ -2,16 +2,16 @@
 n.d(t, {
     I: () => i
 });
-var a = n(627968),
-    l = n(158954),
+var l = n(627968),
+    a = n(158954),
     s = n(985018);
 
 function i() {
-    return (0, a.jsx)(l.Exy, {
+    return (0, l.jsx)(a.Exy, {
         type: {
             text: s.intl.string(s.t.RiDMFz)
         },
         variant: "brand",
-        icon: l.pVd
+        icon: a.pVd
     })
 }
