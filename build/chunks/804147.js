@@ -23,8 +23,8 @@ function o(e) {
         maxSeekableTime: S,
         playerState: p,
         onClick: v,
-        onScrubBack: g,
-        onScrubForward: h,
+        onScrubBack: h,
+        onScrubForward: g,
         "data-testid": A
     } = e, {
         quest: C,
@@ -55,8 +55,8 @@ function o(e) {
         hoverTimelineHeightPx: T ? void 0 : 4,
         initialTimelineHeightPx: T ? 4 : 2,
         onClick: v,
-        onScrubBack: g,
-        onScrubForward: h,
+        onScrubBack: h,
+        onScrubForward: g,
         indicatorConfig: I,
         "data-testid": A
     })

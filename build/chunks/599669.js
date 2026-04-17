@@ -1,7 +1,7 @@
 /** chunk id: 599669 params = (module,exports,require) **/
 t.d(n, {
     Ak: () => B,
-    pc: () => Y,
+    pc: () => V,
     zT: () => G
 }), t(321073);
 var i = t(627968),
@@ -187,7 +187,7 @@ function F(e) {
     })
 }
 
-function Y(e) {
+function V(e) {
     let {
         guildId: n,
         paymentSources: t,
@@ -198,7 +198,7 @@ function Y(e) {
         newAdditionalPlans: E,
         setPaymentSourceId: w,
         onPaymentSourceAdd: B
-    } = e, Y = function(e) {
+    } = e, V = function(e) {
         let n, {
                 guildId: t,
                 priceOptions: i,
@@ -255,14 +255,14 @@ function Y(e) {
         premiumSubscriptionPlan: I,
         newAdditionalPlans: E
     }), {
-        isSubscriptionUpdate: V,
+        isSubscriptionUpdate: Y,
         guild: H,
         paymentSourceId: z,
         isPrepaid: K,
         isReverseTrial: J,
         proratedInvoicePreview: q,
         renewalInvoicePreview: $
-    } = Y, Q = l.useMemo(() => {
+    } = V, Q = l.useMemo(() => {
         let e = q?.checkoutContext;
         return null == e || null == e.payment_sources ? [] : e.payment_sources.map(h.A.createFromCheckoutContext)
     }, [q?.checkoutContext]), {
@@ -280,7 +280,7 @@ function Y(e) {
     }), ei = (0, a.bG)([T.A], () => T.A.hidePersonalInformation);
     if (null == q || null == $ || null == H) return (0, i.jsx)(m.Ed, {});
     let el = (0, i.jsx)(F, {
-            isSubscriptionUpdate: V,
+            isSubscriptionUpdate: Y,
             premiumSubscription: f,
             proratedInvoicePreview: q,
             renewalInvoicePreview: $,
@@ -293,6 +293,7 @@ function Y(e) {
             giftCardsEnabled: Z,
             giftCardCheckboxProps: et,
             paymentSourceDropdownProps: {
+                tooltipText: null == S ? null : U.intl.string(U.t.XiuuV9),
                 paymentSources: X,
                 selectedPaymentSourceId: ee,
                 onChange: en,
@@ -324,7 +325,7 @@ function Y(e) {
                 })
             }
         }({
-            isSubscriptionUpdate: V,
+            isSubscriptionUpdate: Y,
             premiumSubscriptionPlan: I,
             renewalInvoicePreview: $,
             proratedInvoicePreview: q,
@@ -393,7 +394,7 @@ function Y(e) {
             proratedInvoicePreview: q,
             renewalInvoicePreview: $,
             priceOptions: r,
-            reviewState: Y
+            reviewState: V
         }),
         ec = (0, i.jsx)(W, {
             ...eo

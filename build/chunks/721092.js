@@ -24,19 +24,19 @@ function d(e) {
         onIndicatorClick: m
     } = e, f = s.useMemo(() => E?.features.includes(o.Li.FULL_EPISODE_VIDEO_QUEST) === !0, [E?.features]), [_, S] = s.useState(null), p = s.useRef(null), [{
         expansion: v
-    }, g] = (0, a.zhh)(() => ({
+    }, h] = (0, a.zhh)(() => ({
         expansion: 0,
         config: c,
         onRest: () => {
             null == p.current && S(null)
         }
-    })), h = s.useCallback(e => {
-        p.current = e, null != e ? (S(e), g({
+    })), g = s.useCallback(e => {
+        p.current = e, null != e ? (S(e), h({
             expansion: u.KY
-        })) : g({
+        })) : h({
             expansion: 0
         })
-    }, [g]), A = s.useMemo(() => [{
+    }, [h]), A = s.useMemo(() => [{
         index: 0,
         timeSec: t,
         widthPx: u.ws,
@@ -56,11 +56,11 @@ function d(e) {
             expansionSpring: v,
             quest: n,
             sourceQuestContent: d,
-            onMouseEnter: () => h(e.index),
-            onMouseLeave: () => h(null),
+            onMouseEnter: () => g(e.index),
+            onMouseLeave: () => g(null),
             onClick: null != m ? () => m(a.targetSec) : void 0
         }, `indicator-${e.index}`)
-    }, [t, C, _, v, n, d, h, m]);
+    }, [t, C, _, v, n, d, g, m]);
     if (f) return {
         indicators: A,
         animatingIndex: _,

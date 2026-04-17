@@ -34,8 +34,8 @@ function f(e) {
         sourceQuestContent: S,
         logger: p,
         questId: v,
-        isQuestCompleted: g,
-        isFullEpisodeVideoQuest: h,
+        isQuestCompleted: h,
+        isFullEpisodeVideoQuest: g,
         listenForHlsErrors: A = !0
     } = e, C = (0, o.u0)(), x = (0, o.Ut)(), T = (0, l.bG)([u.A], () => u.A.getEffectiveConnectionSpeed()), D = (0, r.useRef)(-1), I = r.useCallback(e => {
         null != t.current && C({
@@ -167,7 +167,7 @@ function f(e) {
             properties: {
                 ...e,
                 video_asset_id: _,
-                quest_completed: g,
+                quest_completed: h,
                 video_duration_sec: t.current.duration,
                 video_progress: (0, c.zh)(e.segment_end_sec, t.current.duration),
                 video_session_id: f,
@@ -175,7 +175,7 @@ function f(e) {
             },
             sourceQuestContent: S
         })
-    }, [C, v, _, g, f, n, t, S]), w = r.useCallback((e, r) => {
+    }, [C, v, _, h, f, n, t, S]), w = r.useCallback((e, r) => {
         if (null == t.current) return;
         let l = t.current?.error,
             u = t.current?.networkState,
@@ -196,7 +196,7 @@ function f(e) {
                 video_error_code: l?.code,
                 video_error_message: l?.message,
                 video_network_state: u,
-                is_full_episode_video_quest: h,
+                is_full_episode_video_quest: g,
                 is_hls_supported: s.Ay.isSupported(),
                 ...m(n),
                 ...p
@@ -206,7 +206,7 @@ function f(e) {
             name: a.K.QUEST_VIDEO_ERROR,
             tags: [`quest_id:${v}`, `error_type:${e}`]
         })
-    }, [v, t, _, f, n, C, S, T, h]);
+    }, [v, t, _, f, n, C, S, T, g]);
     r.useEffect(() => {
         if (!A || null == n.current) return;
         let e = n.current,

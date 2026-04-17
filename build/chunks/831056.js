@@ -2,7 +2,7 @@
 n.d(t, {
     KP: () => m,
     Kb: () => _,
-    OH: () => h,
+    OH: () => g,
     lx: () => p,
     nY: () => E,
     pK: () => S,
@@ -94,7 +94,7 @@ function p(e) {
         children: [(0, r.jsx)(v, {
             title: t,
             subtitle: n
-        }), (0, r.jsx)(g, {
+        }), (0, r.jsx)(h, {
             label: s,
             icon: u,
             onClick: a
@@ -121,7 +121,7 @@ function v(e) {
     })
 }
 
-function g(e) {
+function h(e) {
     let {
         label: t,
         icon: n,
@@ -151,7 +151,7 @@ function g(e) {
     })
 }
 
-function h(e) {
+function g(e) {
     let {
         title: t,
         subtitle: n,

@@ -1,10 +1,10 @@
 /** chunk id: 768146 params = (module,exports,require) **/
 n.d(t, {
-    AU: () => E,
+    AU: () => v,
     Ey: () => y,
     QF: () => g,
-    do: () => x,
-    eC: () => v
+    do: () => E,
+    eC: () => x
 });
 var r = n(627968),
     l = n(64700),
@@ -17,10 +17,10 @@ var r = n(627968),
     d = n(435371),
     m = n(397927),
     f = n(985018),
-    p = n(834926);
-let h = "-:--",
-    x = 1500,
-    v = {
+    h = n(834926);
+let p = "-:--",
+    E = 1500,
+    x = {
         [o.Q6.PLAYING]: {
             icon: m.E$n,
             label: f.intl.string(f.t.ZcgDJX)
@@ -34,7 +34,7 @@ let h = "-:--",
             label: f.intl.string(f.t.hsvh0i)
         }
     },
-    E = {
+    v = {
         [o.oA.MD]: o.n4.MD,
         [o.oA.LG]: o.n4.LG
     },
@@ -47,21 +47,21 @@ function g(e) {
     let {
         current: t,
         duration: n
-    } = e, l = null != t ? (0, c.rB)(t) : h, a = null != n ? (0, c.rB)(n) : h;
+    } = e, l = null != t ? (0, c.rB)(t) : p, a = null != n ? (0, c.rB)(n) : p;
     return (0, r.jsxs)("div", {
-        className: i()(p.d$, p.jk),
+        className: i()(h.d$, h.jk),
         "data-testid": "discord-web-video-player-duration",
         children: [(0, r.jsx)(m.Text, {
             variant: "text-xs/normal",
-            className: p.Ue,
+            className: h.Ue,
             children: l
         }), (0, r.jsx)(m.Text, {
             variant: "text-xs/normal",
-            className: p.zO,
+            className: h.zO,
             children: "/"
         }), (0, r.jsx)(m.Text, {
             variant: "text-xs/normal",
-            className: p.Ue,
+            className: h.Ue,
             children: a
         })]
     })
@@ -73,25 +73,25 @@ let y = l.forwardRef(function(e, t) {
         visible: a,
         ariaLabel: c,
         active: f,
-        disabled: h,
-        tooltipLabel: v,
-        tooltipDelayMs: E = x,
+        disabled: p,
+        tooltipLabel: x,
+        tooltipDelayMs: v = E,
         shortcut: g,
         onClick: y,
         buttonSize: S = o.n4.MD,
-        "data-testid": C
-    } = e, A = e => (0, r.jsx)(m.DUT, {
+        "data-testid": A
+    } = e, C = e => (0, r.jsx)(m.DUT, {
         ...e,
-        onClick: !0 === h ? void 0 : y,
-        className: i()(p.K5, {
-            [p.Iy]: h
+        onClick: !0 === p ? void 0 : y,
+        className: i()(h.K5, {
+            [h.Iy]: p
         }),
         "aria-label": c,
-        "aria-disabled": h,
-        "data-testid": C,
+        "aria-disabled": p,
+        "data-testid": A,
         innerRef: t,
         children: (0, r.jsx)(s.animated.div, {
-            className: p.K5,
+            className: h.K5,
             style: {
                 opacity: (0, s.to)([l.to({
                     range: [0, 1],
@@ -104,18 +104,18 @@ let y = l.forwardRef(function(e, t) {
             },
             children: (0, r.jsx)(n, {
                 size: b[S],
-                color: !0 !== h ? u.A.colors.WHITE : u.A.colors.TEXT_MUTED,
-                className: i()(p.jk, {
-                    [p.x2]: f,
-                    [p.Wr]: !h
+                color: !0 !== p ? u.A.colors.WHITE : u.A.colors.TEXT_MUTED,
+                className: i()(h.jk, {
+                    [h.x2]: f,
+                    [h.Wr]: !p
                 })
             })
         })
     });
-    return null != v && a ? (0, r.jsx)(d.m_, {
-        text: v,
+    return null != x && a ? (0, r.jsx)(d.m_, {
+        text: x,
         keyboardShortcut: "" !== (g ?? "").trim() ? g : void 0,
-        delay: E,
-        children: A()
-    }) : A()
+        delay: v,
+        children: C()
+    }) : C()
 })

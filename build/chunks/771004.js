@@ -25,12 +25,12 @@ function _(e) {
         trackAction: n
     } = e, [i, f] = a.useState(t?.summaryLocalized != null), [_, v] = a.useState(!0), [A, b] = a.useState(!1), E = a.useRef(null), {
         width: j,
-        height: I
+        height: C
     } = (0, u.A)();
     return (a.useEffect(() => {
         let e = E.current;
         null != e && b(e.scrollHeight - e.clientHeight > 1 || !_)
-    }, [E, j, I, _]), null == t.description) ? null : (0, l.jsxs)("div", {
+    }, [E, j, C, _]), null == t.description) ? null : (0, l.jsxs)("div", {
         className: r()(g.fi, g.mX),
         children: [null != t.summaryLocalized && (0, l.jsxs)("div", {
             className: r()(g.nM, g.Lc),

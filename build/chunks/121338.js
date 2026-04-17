@@ -23,11 +23,11 @@ function m(e) {
     } = e, {
         components: f,
         applicationIconURL: b,
-        applicationName: C,
-        submissionState: I,
-        error: g,
-        validators: h,
-        validationErrors: T,
+        applicationName: I,
+        submissionState: C,
+        error: h,
+        validators: T,
+        validationErrors: g,
         setValidationErrors: E,
         onSubmit: v
     } = (0, c.uD)(e, n);
@@ -45,28 +45,28 @@ function m(e) {
                 leading: (0, r.jsx)(a.euF, {
                     src: b,
                     size: a._3J.SIZE_24,
-                    "aria-label": C,
+                    "aria-label": I,
                     className: p.In
                 }),
                 title: t,
                 titleTextVariant: "heading-xl/semibold"
             }), (0, r.jsxs)(i.cwr, {
-                children: [null != g && "" !== g ? (0, r.jsx)(a.po8, {
+                children: [null != h && "" !== h ? (0, r.jsx)(a.po8, {
                     messageType: a.YCn.ERROR,
                     className: p.$Q,
-                    children: g
+                    children: h
                 }) : null, (0, r.jsx)(a.po8, {
                     messageType: a.YCn.WARNING,
                     className: p.$Q,
                     children: u.intl.format(u.t["dSTy/w"], {
-                        applicationName: C
+                        applicationName: I
                     })
                 }), (0, r.jsx)("div", {
                     className: p.dK,
                     children: (0, r.jsx)(l.f5, {
                         modal: e,
-                        validators: h,
-                        validationErrors: T,
+                        validators: T,
+                        validationErrors: g,
                         setValidationErrors: E,
                         children: (0, d.fD)(f)
                     })
@@ -79,7 +79,7 @@ function m(e) {
                 }, {
                     variant: "primary",
                     text: u.intl.string(u.t.geKm7t),
-                    loading: I === _.Z.IN_FLIGHT,
+                    loading: C === _.Z.IN_FLIGHT,
                     onClick: v
                 }],
                 actionsFullWidth: !0

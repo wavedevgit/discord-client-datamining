@@ -36,15 +36,15 @@ function m(e) {
         g = p.split("/"),
         x = g[b]?.toLowerCase();
     null != _ && (x = "song");
-    let f = 450;
-    return "song" === x ? f = 175 : "music-video" === x && (f = 371), p = p.substr(1), (0, r.jsx)("iframe", {
+    let v = 450;
+    return "song" === x ? v = 175 : "music-video" === x && (v = 371), p = p.substr(1), (0, r.jsx)("iframe", {
         className: i()(h.li, t),
         src: u.q.EMBED(p, n ? "dark" : "light", _),
         style: {
             maxWidth: 660,
             minWidth: 300,
             width: "100%",
-            height: f
+            height: v
         },
         frameBorder: 0,
         sandbox: "allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation",

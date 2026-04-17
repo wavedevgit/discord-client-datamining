@@ -25,8 +25,8 @@ let f = {
             sourceQuestContent: S,
             expansionSpring: p,
             onClick: v,
-            onMouseEnter: g,
-            onMouseLeave: h
+            onMouseEnter: h,
+            onMouseLeave: g
         } = e, {
             label: A,
             targetSec: C,
@@ -60,8 +60,8 @@ let f = {
                 onClick: null != v ? e => {
                     e.stopPropagation(), v()
                 } : void 0,
-                onMouseEnter: g,
-                onMouseLeave: h,
+                onMouseEnter: h,
+                onMouseLeave: g,
                 children: (0, r.jsx)(d.A, {
                     fullWidth: !0,
                     quest: _,

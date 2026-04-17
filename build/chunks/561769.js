@@ -3,7 +3,7 @@ n.d(t, {
     AW: () => A,
     Hi: () => b,
     UU: () => E,
-    Vm: () => I,
+    Vm: () => C,
     gZ: () => v,
     ql: () => j,
     v3: () => _
@@ -74,7 +74,7 @@ let E = (e, t, n) => l => {
             })
         }, [e, a, g, d, n, r?.cardId, r?.sessionId, r?.tilePosition])(t)
     },
-    I = e => {
+    C = e => {
         let {
             flattenProductVariants: t,
             productOverride: n

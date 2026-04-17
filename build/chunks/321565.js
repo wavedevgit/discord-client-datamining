@@ -1,6 +1,6 @@
 /** chunk id: 321565 params = (module,exports,require) **/
 n.d(t, {
-    default: () => f
+    default: () => T
 });
 var a = n(627968),
     i = n(64700),
@@ -18,24 +18,24 @@ var a = n(627968),
     b = n(847816),
     h = n(652215),
     S = n(985018),
-    C = n(264482);
+    g = n(264482);
 
-function g(e, t) {
+function C(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
     !0 === n || u.A.useReducedMotion ? e.set(t) : e.start(t)
 }
 
-function f(e) {
+function T(e) {
     let {
         onClose: t,
         onIndexChange: n,
         items: r,
-        startingIndex: f,
-        enabledContentHarmTypeFlags: T,
+        startingIndex: T,
+        enabledContentHarmTypeFlags: f,
         shouldHideMediaOptions: E = !1,
-        transitionState: I,
-        ...y
-    } = e, [v, x] = i.useState(f ?? 0), [M, O] = i.useState(!1), [R, N] = (0, s.zhh)(() => ({
+        transitionState: y,
+        ...I
+    } = e, [v, x] = i.useState(T ?? 0), [M, O] = i.useState(!1), [R, N] = (0, s.zhh)(() => ({
         scale: u.A.useReducedMotion ? 1 : .9,
         x: 0,
         y: 0,
@@ -51,17 +51,17 @@ function f(e) {
     }, [t]);
     let j = i.useRef(null);
     i.useEffect(() => {
-        if (I !== j.current) switch (j.current = I, I) {
+        if (y !== j.current) switch (j.current = y, y) {
             case s.ip4.ENTERING:
-                g(R.scale, 1);
+                C(R.scale, 1);
                 break;
             case s.ip4.EXITING:
-                u.A.useReducedMotion || (g(R.x, 0), g(R.y, 0), g(R.scale, .9))
+                u.A.useReducedMotion || (C(R.x, 0), C(R.y, 0), C(R.scale, .9))
         }
-    }, [I, R]), I === s.ip4.HIDDEN && M && (O(!1), R.x.set(0), R.y.set(0), R.scale.set(1)), i.useEffect(() => {
-        I === s.ip4.ENTERED && (d.A.disable(), d.A.enableTemp(c.w)), I === s.ip4.HIDDEN && (d.A.disable(), d.A.enableTemp(c.b));
+    }, [y, R]), y === s.ip4.HIDDEN && M && (O(!1), R.x.set(0), R.y.set(0), R.scale.set(1)), i.useEffect(() => {
+        y === s.ip4.ENTERED && (d.A.disable(), d.A.enableTemp(c.w)), y === s.ip4.HIDDEN && (d.A.disable(), d.A.enableTemp(c.b));
         let e = () => {
-                d.A.disable(), I === s.ip4.ENTERED ? d.A.enableTemp(c.w) : d.A.enableTemp(c.b)
+                d.A.disable(), y === s.ip4.ENTERED ? d.A.enableTemp(c.w) : d.A.enableTemp(c.b)
             },
             t = () => {
                 d.A.disableTemp()
@@ -70,23 +70,23 @@ function f(e) {
         return n?.addEventListener("focus", e), n?.addEventListener("blur", t), () => {
             n?.removeEventListener("focus", e), n?.removeEventListener("blur", t), d.A.disableTemp()
         }
-    }, [I]);
+    }, [y]);
     let P = i.useCallback(e => {
             x(e), n?.(e), m.l.markActionPerformed(m.N.SELECTED_ITEM_CHANGE)
         }, [n]),
-        w = i.useMemo(() => ({
+        L = i.useMemo(() => ({
             scale: R.scale,
             x: R.x,
             y: R.y,
             setScale(e, t) {
-                g(R.scale, e, t?.immediate)
+                C(R.scale, e, t?.immediate)
             },
             setOffset(e, t, n) {
-                g(R.x, e, n?.immediate), g(R.y, t, n?.immediate)
+                C(R.x, e, n?.immediate), C(R.y, t, n?.immediate)
             },
             zoomed: M,
             setZoomed(e) {
-                O(e), g(R.scale, e ? 2.5 : 1), e || (g(R.x, 0), g(R.y, 0))
+                O(e), C(R.scale, e ? 2.5 : 1), e || (C(R.x, 0), C(R.y, 0))
             }
         }), [M, R]);
     return (0, a.jsx)(s.NPJ, {
@@ -94,9 +94,9 @@ function f(e) {
         children: e => (0, a.jsx)(s.EOs, {
             "data-migration-pending": !0,
             hideShadow: !0,
-            className: o()(C.O, e),
-            transitionState: I,
-            ...y,
+            className: o()(g.O, e),
+            transitionState: y,
+            ...I,
             size: s.rIJ.DYNAMIC,
             animation: l.WM.SUBTLE,
             fullscreenOnMobile: !1,
@@ -104,7 +104,7 @@ function f(e) {
             "aria-label": S.intl.string(S.t.AMTX3j),
             parentComponent: "MediaViewerModal",
             children: (0, a.jsxs)(p.f.Provider, {
-                value: w,
+                value: L,
                 children: [(0, a.jsx)(b.A, {
                     item: r[v],
                     hideMediaOptions: E,
@@ -118,7 +118,7 @@ function f(e) {
                     items: r,
                     startIndex: v,
                     onIndexChange: P,
-                    enabledContentHarmTypeFlags: T,
+                    enabledContentHarmTypeFlags: f,
                     shouldHideMediaOptions: E
                 })]
             })

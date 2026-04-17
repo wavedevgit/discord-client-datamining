@@ -1,7 +1,7 @@
 /** chunk id: 503364 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m,
-    N: () => f
+    A: () => g,
+    N: () => p
 });
 var l = n(627968),
     a = n(64700),
@@ -9,21 +9,25 @@ var l = n(627968),
     r = n(397927),
     s = n(442433),
     o = n(50268),
-    c = n(67518),
-    d = n(651864),
-    u = n(985018);
+    c = n(44724),
+    d = n(409626),
+    u = n(305080),
+    m = n(67518),
+    f = n(651864),
+    h = n(652215),
+    x = n(985018);
 
-function m(e) {
+function g(e) {
     let {
         applicationId: t,
         className: n,
-        trackAction: d
-    } = e, m = a.useRef(null), f = (0, o.A)({
+        trackAction: c
+    } = e, d = a.useRef(null), u = (0, o.A)({
         id: t,
-        label: u.intl.string(u.t["FfCL+6"])
-    }), h = (0, c.n)(t, d);
-    return null == f && null == h ? null : (0, l.jsx)(r.YNO, {
-        targetElementRef: m,
+        label: x.intl.string(x.t["FfCL+6"])
+    }), f = (0, m.n)(t, c);
+    return null == u && null == f ? null : (0, l.jsx)(r.YNO, {
+        targetElementRef: d,
         align: "top",
         position: "right",
         disablePointerEvents: !1,
@@ -37,21 +41,21 @@ function m(e) {
                 onClose: () => {
                     (0, s.Z_)(), t()
                 },
-                "aria-label": u.intl.string(u.t.PNeFgW),
+                "aria-label": x.intl.string(x.t.PNeFgW),
                 onSelect: () => {},
                 children: (0, l.jsxs)(l.Fragment, {
                     children: [(0, l.jsx)(r.rXV, {
-                        children: f
+                        children: u
                     }), (0, l.jsx)(r.rXV, {
-                        children: h
+                        children: f
                     })]
                 })
             })
         },
         children: e => (0, l.jsx)(i.m, {
-            text: u.intl.string(u.t["UKOtz+"]),
+            text: x.intl.string(x.t["UKOtz+"]),
             children: (0, l.jsx)(r.DUT, {
-                innerRef: m,
+                innerRef: d,
                 className: n,
                 ...e,
                 children: (0, l.jsx)(r.jNK, {
@@ -63,20 +67,30 @@ function m(e) {
     })
 }
 
-function f(e) {
+function p(e) {
     let {
         game: t,
         onClose: n,
-        className: m,
-        trackAction: f
-    } = e, h = a.useRef(null), x = a.useRef(null), g = (0, o.A)({
+        className: g,
+        trackAction: p
+    } = e, _ = a.useRef(null), v = a.useRef(null), A = (0, o.A)({
         id: t.id,
-        label: u.intl.string(u.t["FfCL+6"])
-    }), p = (0, c.n)(t.id, f), _ = (0, d.A)(t);
+        label: x.intl.string(x.t["FfCL+6"])
+    }), b = (0, m.n)(t.id, p), E = (0, f.A)(t), {
+        officialInvite: j
+    } = (0, u.c)(), C = new Set(j?.guild?.features).has(h.GuildFeatures.SOCIAL_LAYER_STOREFRONT), I = a.useCallback(() => {
+        null != j && (0, c.X)({
+            invite: j
+        })
+    }, [j]), N = a.useCallback(() => {
+        null != j && (p(d.Ws.GameShop), (0, c.default)({
+            invite: j
+        }), n())
+    }, [j, p, n]);
     return (0, l.jsxs)("div", {
-        className: m,
-        children: [null != _ && (0, l.jsx)(r.YNO, {
-            targetElementRef: x,
+        className: g,
+        children: [null != E && (0, l.jsx)(r.YNO, {
+            targetElementRef: v,
             align: "top",
             position: "right",
             disablePointerEvents: !1,
@@ -89,25 +103,35 @@ function f(e) {
                     onClose: () => {
                         (0, s.Z_)(), t()
                     },
-                    "aria-label": u.intl.string(u.t.sidPSo),
+                    "aria-label": x.intl.string(x.t.sidPSo),
                     onSelect: () => {},
                     children: (0, l.jsx)(r.rXV, {
-                        children: _
+                        children: E
                     })
                 })
             },
             children: e => (0, l.jsx)("div", {
                 ...e,
-                ref: x,
+                ref: v,
                 children: (0, l.jsx)(r.Button, {
                     icon: r.pa$,
                     variant: "overlay-secondary",
                     size: "sm",
-                    text: u.intl.string(u.t.sidPSo)
+                    text: x.intl.string(x.t.sidPSo)
                 })
             })
-        }), (null != g || null != p) && (0, l.jsx)(r.YNO, {
-            targetElementRef: h,
+        }), C && null != j && (0, l.jsx)(i.m, {
+            text: x.intl.string(x.t.apFNLU),
+            children: (0, l.jsx)(r.K0, {
+                icon: r.U1X,
+                variant: "overlay-secondary",
+                size: "sm",
+                "aria-label": x.intl.string(x.t.apFNLU),
+                onMouseDown: I,
+                onClick: N
+            })
+        }), (null != A || null != b) && (0, l.jsx)(r.YNO, {
+            targetElementRef: _,
             align: "top",
             position: "right",
             disablePointerEvents: !1,
@@ -120,27 +144,27 @@ function f(e) {
                     onClose: () => {
                         (0, s.Z_)(), t()
                     },
-                    "aria-label": u.intl.string(u.t.PNeFgW),
+                    "aria-label": x.intl.string(x.t.PNeFgW),
                     onSelect: () => {},
                     children: (0, l.jsxs)(l.Fragment, {
                         children: [(0, l.jsx)(r.rXV, {
-                            children: p
+                            children: b
                         }), (0, l.jsx)(r.rXV, {
-                            children: g
+                            children: A
                         })]
                     })
                 })
             },
             children: e => (0, l.jsx)(i.m, {
-                text: u.intl.string(u.t["UKOtz+"]),
+                text: x.intl.string(x.t["UKOtz+"]),
                 children: (0, l.jsx)("div", {
                     ...e,
-                    ref: h,
+                    ref: _,
                     children: (0, l.jsx)(r.K0, {
                         icon: r.jNK,
                         variant: "overlay-secondary",
                         size: "sm",
-                        "aria-label": u.intl.string(u.t["UKOtz+"])
+                        "aria-label": x.intl.string(x.t["UKOtz+"])
                     })
                 })
             })
@@ -149,7 +173,7 @@ function f(e) {
             variant: "overlay-secondary",
             size: "sm",
             onClick: n,
-            "aria-label": u.intl.string(u.t.cpT0Cq)
+            "aria-label": x.intl.string(x.t.cpT0Cq)
         })]
     })
 }

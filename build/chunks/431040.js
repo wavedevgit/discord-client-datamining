@@ -30,7 +30,7 @@ let v = function(e) {
         application: t,
         game: n,
         trackAction: v
-    } = e, A = a.useMemo(() => n.genres.map(o.du).join(", "), [n]), b = n.getCompanyByRole(r.wk.PUBLISHER), E = n.getCompanyByRole(r.wk.DEVELOPER), j = b.map(e => e.name).join(", "), I = E.map(e => e.name).join(", "), C = n.firstReleaseDate, N = (0, u.A)(n), S = (0, d.Y)(n), T = !(0, c.uJ)(A), y = !(0, c.uJ)(j), L = !(0, c.uJ)(I), k = !(0, c.uJ)(C), R = N.length > 0, O = S.length > 0 && !S.every(e => (0, c.uJ)(e.url));
+    } = e, A = a.useMemo(() => n.genres.map(o.du).join(", "), [n]), b = n.getCompanyByRole(r.wk.PUBLISHER), E = n.getCompanyByRole(r.wk.DEVELOPER), j = b.map(e => e.name).join(", "), C = E.map(e => e.name).join(", "), I = n.firstReleaseDate, N = (0, u.A)(n), S = (0, d.Y)(n), L = !(0, c.uJ)(A), T = !(0, c.uJ)(j), y = !(0, c.uJ)(C), k = !(0, c.uJ)(I), R = N.length > 0, O = S.length > 0 && !S.every(e => (0, c.uJ)(e.url));
     return (0, l.jsxs)("div", {
         className: p.uW,
         children: [(0, l.jsx)("div", {
@@ -48,7 +48,7 @@ let v = function(e) {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: 1 !== n.genres.length ? g.intl.string(g.t.pDgwYB) : g.intl.string(g.t.mjFKqn)
-                }), T ? (0, l.jsx)(i.Text, {
+                }), L ? (0, l.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     className: p.Gu,
@@ -60,7 +60,7 @@ let v = function(e) {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: 1 !== b.length ? g.intl.string(g.t.Hc7Enk) : g.intl.string(g.t["4Byy/G"])
-                }), y ? (0, l.jsx)(i.Text, {
+                }), T ? (0, l.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     className: p.Gu,
@@ -72,11 +72,11 @@ let v = function(e) {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: 1 !== E.length ? g.intl.string(g.t.KATEJB) : g.intl.string(g.t.na3PT0)
-                }), L ? (0, l.jsx)(i.Text, {
+                }), y ? (0, l.jsx)(i.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     className: p.Gu,
-                    children: I
+                    children: C
                 }) : (0, l.jsx)(_, {})]
             }), (0, l.jsxs)("div", {
                 className: p.J1,
@@ -88,7 +88,7 @@ let v = function(e) {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     className: p.Gu,
-                    children: s.i$(new Date(C), "LL")
+                    children: s.i$(new Date(I), "LL")
                 }) : (0, l.jsx)(_, {})]
             }), (0, l.jsxs)("div", {
                 className: p.J1,

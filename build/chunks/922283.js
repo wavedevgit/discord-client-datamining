@@ -167,8 +167,8 @@ let j = function(e) {
         applicationId: a
     } = t, r = (0, x.I)(a), d = t.opencriticUrl, f = m.p.useConfig({
         location: "GameProfileReviews"
-    }), h = f.recentEnabled || f.englishEnabled, g = t.steamReleaseStatus !== i.Y.RETIRED_ABANDONED && null != r, b = t.reviews?.steam, E = (0, c.j)(b?.recentRating, b?.recentRatingCount), j = g && f.recentEnabled && E !== o.vI.NO_USER_REVIEWS, I = f.englishEnabled && (0, u.HM)(b), C = I ? b?.localizedRating : b?.rating, N = I ? b?.localizedRatingCount : b?.ratingCount, S = h ? I ? p.t["aWb+V4"] : p.t["8e4LiB"] : p.t.whmopT, T = t.reviews?.opencritic != null && null != d;
-    return g || j || T ? (0, l.jsxs)("div", {
+    }), h = f.recentEnabled || f.englishEnabled, g = t.steamReleaseStatus !== i.Y.RETIRED_ABANDONED && null != r, b = t.reviews?.steam, E = (0, c.j)(b?.recentRating, b?.recentRatingCount), j = g && f.recentEnabled && E !== o.vI.NO_USER_REVIEWS, C = f.englishEnabled && (0, u.HM)(b), I = C ? b?.localizedRating : b?.rating, N = C ? b?.localizedRatingCount : b?.ratingCount, S = h ? C ? p.t["aWb+V4"] : p.t["8e4LiB"] : p.t.whmopT, L = t.reviews?.opencritic != null && null != d;
+    return g || j || L ? (0, l.jsxs)("div", {
         className: _.uW,
         children: [(0, l.jsx)("div", {
             className: _.Gf,
@@ -195,11 +195,11 @@ let j = function(e) {
                     url: r,
                     trackAction: n,
                     title: p.intl.string(S),
-                    rating: C,
+                    rating: I,
                     ratingCount: N,
-                    tooltipVariant: I ? "localized" : "all"
+                    tooltipVariant: C ? "localized" : "all"
                 })
-            }) : null, T && null != d ? (0, l.jsx)("div", {
+            }) : null, L && null != d ? (0, l.jsx)("div", {
                 className: _.WH,
                 children: (0, l.jsx)(A, {
                     game: t,

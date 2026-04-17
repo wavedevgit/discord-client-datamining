@@ -24,7 +24,7 @@ function i(e) {
             segment_end_sec: e.segmentEndSec,
             segment_duration_sec: e.segmentEndSec - e.segmentStartSec
         })
-    }, [n]), g = (0, r.useCallback)(() => {
+    }, [n]), h = (0, r.useCallback)(() => {
         let e = t();
         if (null != e && d && m) {
             let t = Date.now();
@@ -35,7 +35,7 @@ function i(e) {
                 segmentEndSec: e
             }), p.current = !0
         }
-    }, [t, d, m]), h = (0, r.useCallback)(() => {
+    }, [t, d, m]), g = (0, r.useCallback)(() => {
         let e = t();
         if (null == e || null == i) return;
         let n = Date.now();
@@ -53,8 +53,8 @@ function i(e) {
     (0, r.useEffect)(() => {
         d && m || (u(null), p.current = !1)
     }, [d, m]), (0, r.useEffect)(() => {
-        if (o && d && m) p.current || g(), _.current = window.setInterval(() => {
-            h()
+        if (o && d && m) p.current || h(), _.current = window.setInterval(() => {
+            g()
         }, 200);
         else {
             let e = t();
@@ -71,7 +71,7 @@ function i(e) {
         return () => {
             null != _.current && (clearInterval(_.current), _.current = null)
         }
-    }, [o, d, m, i, h, v, g, t]);
+    }, [o, d, m, i, g, v, h, t]);
     let A = (0, r.useCallback)(() => {
             let e = t();
             if (null != i && null != e) {

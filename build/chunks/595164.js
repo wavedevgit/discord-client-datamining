@@ -47,7 +47,7 @@ function F(e) {
     return "" === e || "-" === e
 }
 
-function Y(e) {
+function V(e) {
     let {
         value: n,
         onChange: t,
@@ -106,7 +106,7 @@ function Y(e) {
     })
 }
 
-function V(e) {
+function Y(e) {
     let {
         message: n
     } = e;
@@ -239,7 +239,7 @@ function K(e) {
             className: B.fh,
             children: [(0, i.jsxs)("div", {
                 className: B.fX,
-                children: [(0, i.jsx)(Y, {
+                children: [(0, i.jsx)(V, {
                     value: t,
                     onChange: e => r(e),
                     ariaLabel: o,
@@ -314,7 +314,7 @@ function q(e) {
         premiumSubscription: u,
         onClickPremiumSubscriptionLink: d,
         existingAvailableSlots: F = [],
-        priceOptions: Y,
+        priceOptions: V,
         isRefreshEnabled: q = !1,
         refreshNextStepLabel: $ = G.intl.string(G.t.QBnNHq)
     } = e, Q = function(e) {
@@ -325,7 +325,7 @@ function q(e) {
                 premiumSubscription: u,
                 onClickPremiumSubscriptionLink: d,
                 existingAvailableSlots: F,
-                priceOptions: Y
+                priceOptions: V
             } = e,
             z = (0, y.A)(),
             K = t.interval,
@@ -352,7 +352,7 @@ function q(e) {
                 items: Z,
                 renewal: !0,
                 paymentSourceId: u?.paymentSourceId,
-                currency: Y.currency,
+                currency: V.currency,
                 preventFetch: et,
                 analyticsLocations: ei,
                 analyticsLocation: _.A.GUILD_BOOSTING_PLAN_SELECT
@@ -371,7 +371,7 @@ function q(e) {
                 tax: 0,
                 taxInclusive: !0,
                 currency: el.currency
-            } : R.Ay.getPrice($.id, eo, !1, Y),
+            } : R.Ay.getPrice($.id, eo, !1, V),
             ep = r * ed.amount,
             em = (0, h.ds)() && eo && null != u,
             e_ = function(e) {
@@ -402,7 +402,7 @@ function q(e) {
             freeSubscriptionCount: w.M4
         });
         let ef = F.filter(e => (0, j.I5)(e)).length,
-            eS = (0, R.J$)(Y.paymentSourceId),
+            eS = (0, R.J$)(V.paymentSourceId),
             {
                 ipCountryCode: ex
             } = (0, I.A)(),
@@ -481,7 +481,7 @@ function q(e) {
         });
         return eC.push((0, i.jsx)(m.A, {
             message: eT
-        }, "localized-pricing")), ev.push((0, i.jsx)(V, {
+        }, "localized-pricing")), ev.push((0, i.jsx)(Y, {
             message: eT
         }, "localized-pricing")), {
             isLoading: es,
@@ -510,7 +510,7 @@ function q(e) {
         premiumSubscription: u,
         onClickPremiumSubscriptionLink: d,
         existingAvailableSlots: F,
-        priceOptions: Y
+        priceOptions: V
     });
     return (0, i.jsx)(q ? K : z, {
         isLoading: Q.isLoading,

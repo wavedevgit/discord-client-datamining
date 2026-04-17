@@ -18,8 +18,8 @@ var r = n(627968),
     S = n(607470),
     p = n(697397),
     v = n(544180),
-    g = n(723702),
-    h = n(475815),
+    h = n(723702),
+    g = n(475815),
     A = n(829219),
     C = n(341915),
     x = n(405670),
@@ -72,9 +72,9 @@ function Y(e) {
         visible: ei,
         visibleChanged: eu,
         targetRef: eo
-    } = (0, p.O7)(), [ec, ed] = s.useState(!0 === a ? k.Q6.PLAYING : k.Q6.PAUSED), [eE, em] = s.useState(!1), [ef, e_] = s.useState(!1), eS = (0, b.Yh)(W), [ep, ev] = s.useState(eS.percentComplete), eg = s.useCallback(e => {
+    } = (0, p.O7)(), [ec, ed] = s.useState(!0 === a ? k.Q6.PLAYING : k.Q6.PAUSED), [eE, em] = s.useState(!1), [ef, e_] = s.useState(!1), eS = (0, b.Yh)(W), [ep, ev] = s.useState(eS.percentComplete), eh = s.useCallback(e => {
         eQ(null), ev(e)
-    }, []), [eh, eA] = s.useState(!1), [eC, ex] = s.useState(!0), [eT, eD] = s.useState(!1), [eI, eb] = s.useState([]), [ey, eO] = s.useState(v.A.getEffectiveConnectionSpeed()), [eR, eL] = s.useState(0), [ek, eN] = s.useState(0), [eM, eP] = s.useState(!1), [eV, ew] = s.useState(!1), [eU, eQ] = s.useState(null), ej = s.useRef(!0), eB = s.useRef(null), eF = s.useRef(null), eY = (0, x.Kr)(e => e.videoProgress[W.id] ?? x.yc, o.x), eH = (0, x.Kr)(e => e.setVideoProgress), eK = (0, x.Kr)(e => e.muted), eG = (0, x.Kr)(e => e.setMuted), e$ = (0, x.Kr)(e => e.volume), eq = (0, x.Kr)(e => e.setVolume), eW = (0, c.bG)([_.A], () => _.A.useReducedMotion), ez = (0, s.useRef)(null), eZ = (0, s.useRef)(null), eX = (0, s.useRef)(null), eJ = s.useRef(!0), e0 = W.userStatus?.completedAt != null, e1 = s.useMemo(() => W.config.features.includes(U.Li.FULL_EPISODE_VIDEO_QUEST), [W.config.features]), e6 = s.useRef(!1), [e7, e4] = s.useState(null), [e9, e5] = s.useState(!1), [e3, e8] = s.useState(null), e2 = Math.max(eY.maxTimestampSec, eS.progressSeconds), te = e0 ? ez.current?.duration ?? 0 : (0, y.vd)(e2, eY.duration), tt = s.useMemo(() => (0, I.L)({
+    }, []), [eg, eA] = s.useState(!1), [eC, ex] = s.useState(!0), [eT, eD] = s.useState(!1), [eI, eb] = s.useState([]), [ey, eO] = s.useState(v.A.getEffectiveConnectionSpeed()), [eR, eL] = s.useState(0), [ek, eN] = s.useState(0), [eM, eP] = s.useState(!1), [eV, ew] = s.useState(!1), [eU, eQ] = s.useState(null), ej = s.useRef(!0), eB = s.useRef(null), eF = s.useRef(null), eY = (0, x.Kr)(e => e.videoProgress[W.id] ?? x.yc, o.x), eH = (0, x.Kr)(e => e.setVideoProgress), eK = (0, x.Kr)(e => e.muted), eG = (0, x.Kr)(e => e.setMuted), e$ = (0, x.Kr)(e => e.volume), eq = (0, x.Kr)(e => e.setVolume), eW = (0, c.bG)([_.A], () => _.A.useReducedMotion), ez = (0, s.useRef)(null), eZ = (0, s.useRef)(null), eX = (0, s.useRef)(null), eJ = s.useRef(!0), e0 = W.userStatus?.completedAt != null, e1 = s.useMemo(() => W.config.features.includes(U.Li.FULL_EPISODE_VIDEO_QUEST), [W.config.features]), e6 = s.useRef(!1), [e7, e4] = s.useState(null), [e9, e5] = s.useState(!1), [e3, e8] = s.useState(null), e2 = Math.max(eY.maxTimestampSec, eS.progressSeconds), te = e0 ? ez.current?.duration ?? 0 : (0, y.vd)(e2, eY.duration), tt = s.useMemo(() => (0, I.L)({
         quest: W,
         location: U.rE.VIDEO_MODAL
     }), [W]), tn = (0, E.g)(e0, eY, eS.progressSeconds), [tr, ts] = s.useState(k.oA.MD), ta = {
@@ -99,8 +99,8 @@ function Y(e) {
         trackQuestContentClick: tS,
         trackQuestVideoBufferingStarted: tp,
         trackQuestVideoBufferingEnded: tv,
-        trackQuestVideoSegmentWatched: tg,
-        trackQuestVideoTimeToFirstFrame: th,
+        trackQuestVideoSegmentWatched: th,
+        trackQuestVideoTimeToFirstFrame: tg,
         trackQuestVideoFullscreenChanged: tA,
         trackQuestVideoError: tC,
         trackQuestVideoVolumeChanged: tx
@@ -138,7 +138,7 @@ function Y(e) {
             handleSeek: tR
         } = (0, p.Yr)({
             getCurrentVideoTime: tI,
-            onAnalytics: tg,
+            onAnalytics: th,
             emitIntervalMs: p.KI,
             minSegmentDurationMs: p._4
         }),
@@ -190,8 +190,8 @@ function Y(e) {
     let tj = !tM && (ef || eE || ec === k.Q6.ENDED),
         tB = s.useCallback(() => {
             tt.info("[QV] | handleFullScreenExit");
-            let e = (0, h.qf)(ez.current?.parentNode, ez.current);
-            null == e || (0, h._U)(e) || (e.removeEventListener(h.Wb, tB), J(!1), tA(!1), ts(k.oA.MD))
+            let e = (0, g.qf)(ez.current?.parentNode, ez.current);
+            null == e || (0, g._U)(e) || (e.removeEventListener(g.Wb, tB), J(!1), tA(!1), ts(k.oA.MD))
         }, [J, tt, tA]),
         tF = () => {
             if (null == ez.current) return;
@@ -206,8 +206,8 @@ function Y(e) {
     s.useEffect(() => {
         let e = ez.current;
         return () => {
-            let t = (0, h.qf)(e?.parentNode, e);
-            null != t && t.removeEventListener(h.Wb, tB)
+            let t = (0, g.qf)(e?.parentNode, e);
+            null != t && t.removeEventListener(g.Wb, tB)
         }
     }, [tB]), s.useEffect(() => {
         let e = e => eX.current?.(e);
@@ -282,12 +282,12 @@ function Y(e) {
         tt.info(`[QV] | handleCanPlay: playerState: ${ec}`), null != ez.current && ec === k.Q6.PLAYING && (tt.info("[QV] | handleCanPlay: did NOT early return"), eC && (tt.info(`[QV] | handleCanPlay: loadingFirstChunk: ${eC}`), ex(!1)), eT && (tt.info(`[QV] | handleCanPlay: waitingForChunk: ${eT}`), tv(null != eF.current ? performance.now() - eF.current : null), eD(!1)), tt.info("[QV] | handleCanPlay: updating player state to playing"), tk(k.Q6.PLAYING))
     };
     s.useEffect(() => {
-        if (!eh) return;
+        if (!eg) return;
         let e = setTimeout(() => {
             eA(!1)
         }, 1e3);
         return () => clearTimeout(e)
-    }, [eh]);
+    }, [eg]);
     let [{
         controlBarAnimSpring: t1
     }, t6] = (0, m.zhh)(() => ({
@@ -375,7 +375,7 @@ function Y(e) {
                         var s;
                         tt.info(`[QV] | handleTimeUpdate: capturing server time update: currentTime: ${ez.current.currentTime}`), (s = ez.current.currentTime) >= t && (e6.current = !0), eL(s + U.aA + Math.random() * U.A6), tN(s)
                     }
-                    ez.current.currentTime >= ek && (eN(ez.current.currentTime + 1), (0, A.Gn)(W.id, eS.taskType, ez.current.currentTime), n(ez.current.currentTime)), eH(W.id, ez.current.currentTime, ez.current.duration), eg(ez.current.currentTime / ez.current.duration * 100)
+                    ez.current.currentTime >= ek && (eN(ez.current.currentTime + 1), (0, A.Gn)(W.id, eS.taskType, ez.current.currentTime), n(ez.current.currentTime)), eH(W.id, ez.current.currentTime, ez.current.duration), eh(ez.current.currentTime / ez.current.duration * 100)
                 },
                 onEnded: e => {
                     null != ez.current && (tN(ez.current.duration + 1), tt.info(`[QV] | handleEnded: sending progress update: ${ez.current.duration+1}`), eH(W.id, ez.current.duration, ez.current.duration)), tk(k.Q6.ENDED), eD(!1)
@@ -392,7 +392,7 @@ function Y(e) {
                 onPlaying: () => {
                     if (!ej.current) return;
                     let e = performance.now() - K;
-                    tt.info(`[QV] | ⏰ Video FCP: ${e}ms`), th(e), ej.current = !1
+                    tt.info(`[QV] | ⏰ Video FCP: ${e}ms`), tg(e), ej.current = !1
                 },
                 onWaiting: e => {
                     eF.current = performance.now(), tt.info(`[QV] | handleWaitingForData: bufferingStartTime: ${eF.current}`), tp(), eD(!0)
@@ -449,7 +449,7 @@ function Y(e) {
                         playerState: n,
                         pauseReason: r
                     } = e;
-                    return t ? n === k.Q6.PAUSED && r === d.KB.FOCUS ? j.intl.string(j.t.w6PeBF) : null : (0, g.isWeb)() ? j.intl.string(j.t["E1du/q"]) : j.intl.string(j.t["rStN/7"])
+                    return t ? n === k.Q6.PAUSED && r === d.KB.FOCUS ? j.intl.string(j.t.w6PeBF) : null : (0, h.isWeb)() ? j.intl.string(j.t["E1du/q"]) : j.intl.string(j.t["rStN/7"])
                 })({
                     hasVideoAsset: null != tl,
                     playerState: ec,
@@ -572,7 +572,7 @@ function Y(e) {
                     },
                     children: (0, r.jsx)(V.A, {
                         percent: null != eU ? eU : ep,
-                        animate: !0 !== eJ.current && !eh,
+                        animate: !0 !== eJ.current && !eg,
                         interactionEnabled: nr,
                         playerState: ec,
                         preloadedBuffers: tj ? eI : void 0,
@@ -634,8 +634,8 @@ function Y(e) {
                         handleFullScreenBtnClick: () => {
                             let e = !X;
                             tt.info(`[QV] | handleFullScreenButtonClick | shouldBeEnabled: ${e}`);
-                            let t = (0, h.qf)(ez.current?.parentNode, ez.current);
-                            e && null != t ? ((0, h.tl)(t), t.addEventListener(h.Wb, tB), tA(!0), ts(k.oA.LG)) : e || null == t || (t.removeEventListener(h.Wb, tB), tA(!1), (0, h.sP)(t), ts(k.oA.MD)), J(e)
+                            let t = (0, g.qf)(ez.current?.parentNode, ez.current);
+                            e && null != t ? ((0, g.tl)(t), t.addEventListener(g.Wb, tB), tA(!0), ts(k.oA.LG)) : e || null == t || (t.removeEventListener(g.Wb, tB), tA(!1), (0, g.sP)(t), ts(k.oA.MD)), J(e)
                         },
                         handleSeekBackBtnClick: tF,
                         handleSeekForwardBtnClick: tY,

@@ -28,18 +28,18 @@ let v = e => {
         customCTA: b,
         popoutClassname: E,
         popoutPosition: j = "right"
-    } = e, I = a.useRef(null), C = (0, s.bG)([d.A, c.A], () => c.A.getChannel(d.A.getChannelId())), N = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
+    } = e, C = a.useRef(null), I = (0, s.bG)([d.A, c.A], () => c.A.getChannel(d.A.getChannelId())), N = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
         nick: S,
-        avatar: T
+        avatar: L
     } = a.useMemo(() => {
-        let e = N?.getAvatarURL(C?.guild_id, 48, !1);
+        let e = N?.getAvatarURL(I?.guild_id, 48, !1);
         return {
-            nick: m.Ay.getName(C?.guild_id, C?.id, N),
+            nick: m.Ay.getName(I?.guild_id, I?.id, N),
             avatar: e
         }
-    }, [N, C]);
+    }, [N, I]);
     return null == N ? null : (0, l.jsx)(o.YNO, {
-        targetElementRef: I,
+        targetElementRef: C,
         position: j,
         renderPopout: e => {
             let {
@@ -66,7 +66,7 @@ let v = e => {
             v?.()
         },
         children: e => (0, l.jsx)(o.DUT, {
-            innerRef: I,
+            innerRef: C,
             ...e,
             className: p.GA,
             children: (0, l.jsx)(o.vN3, {
@@ -79,7 +79,7 @@ let v = e => {
                 children: (0, l.jsxs)(l.Fragment, {
                     children: [(0, l.jsx)("img", {
                         className: p.my,
-                        src: T,
+                        src: L,
                         alt: g.intl.formatToPlainString(g.t.IzVXxY, {
                             userName: S
                         })

@@ -1,6 +1,6 @@
 /** chunk id: 847816 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => C
 });
 var a = n(627968),
     i = n(64700),
@@ -18,7 +18,7 @@ var a = n(627968),
     b = n(597351),
     h = n(985018),
     S = n(897003);
-let C = i.memo(function(e) {
+let g = i.memo(function(e) {
     let {
         message: t
     } = e, n = (0, l.bG)([m.A], () => m.A.getChannel(t.channel_id));
@@ -50,7 +50,7 @@ let C = i.memo(function(e) {
     })
 });
 
-function g(e) {
+function C(e) {
     let {
         item: t,
         hideMediaOptions: n,
@@ -58,7 +58,7 @@ function g(e) {
     } = e, r = t.sourceMetadata?.message;
     return (0, a.jsxs)("div", {
         className: S.XV,
-        children: [null != r && (0, a.jsx)(C, {
+        children: [null != r && (0, a.jsx)(g, {
             message: r
         }), (0, a.jsx)(p.A, {
             item: t,

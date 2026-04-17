@@ -46,19 +46,19 @@ function a(e) {
         } {
             let t;
 
-            function p() {
-                o || (c(), t = requestAnimationFrame(p))
-            }
-
             function h() {
-                t = requestAnimationFrame(p)
+                o || (c(), t = requestAnimationFrame(h))
             }
 
-            function x() {
+            function p() {
+                t = requestAnimationFrame(h)
+            }
+
+            function E() {
                 cancelAnimationFrame(t)
             }
-            return e.addEventListener("play", h), e.addEventListener("pause", x), e.addEventListener("ended", x), e.addEventListener("seeked", c), e.addEventListener("loadeddata", c), e.paused ? e.readyState >= 2 && c() : t = requestAnimationFrame(p), () => {
-                o = !0, cancelAnimationFrame(t), e.removeEventListener("play", h), e.removeEventListener("pause", x), e.removeEventListener("ended", x), e.removeEventListener("seeked", c), e.removeEventListener("loadeddata", c)
+            return e.addEventListener("play", p), e.addEventListener("pause", E), e.addEventListener("ended", E), e.addEventListener("seeked", c), e.addEventListener("loadeddata", c), e.paused ? e.readyState >= 2 && c() : t = requestAnimationFrame(h), () => {
+                o = !0, cancelAnimationFrame(t), e.removeEventListener("play", p), e.removeEventListener("pause", E), e.removeEventListener("ended", E), e.removeEventListener("seeked", c), e.removeEventListener("loadeddata", c)
             }
         }
     }, [t, n, a, i, s])

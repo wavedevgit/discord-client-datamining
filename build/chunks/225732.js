@@ -1,6 +1,6 @@
 /** chunk id: 225732 params = (module,exports,require) **/
 n.d(t, {
-    default: () => eI
+    default: () => eC
 });
 var l = n(627968),
     a = n(64700),
@@ -23,13 +23,13 @@ var l = n(627968),
     b = n(139286),
     E = n(362490),
     j = n(429913),
-    I = n(590703),
-    C = n(708197),
+    C = n(590703),
+    I = n(708197),
     N = n(583846),
     S = n(454908),
-    T = n(928550),
-    y = n(657331),
-    L = n(773669),
+    L = n(928550),
+    T = n(657331),
+    y = n(773669),
     k = n(486020),
     R = n(541830),
     O = n(661191),
@@ -39,8 +39,8 @@ var l = n(627968),
     P = n(422069),
     V = n(476464),
     D = n(205184),
-    W = n(939764),
-    U = n(277089),
+    U = n(939764),
+    W = n(277089),
     F = n(611656),
     B = n(459746),
     Y = n(503364),
@@ -327,7 +327,7 @@ function ev(e) {
     });
     return {
         onCloudPlayClick: a,
-        isCloudPlayButtonShown: !(0, T.L)(t) && null != a
+        isCloudPlayButtonShown: !(0, L.L)(t) && null != a
     }
 }
 
@@ -341,7 +341,7 @@ function eA(e) {
         application: c,
         analyticsLocations: d
     } = e, u = a.useCallback(() => {
-        o(), (0, y.closeUserProfileModal)()
+        o(), (0, T.closeUserProfileModal)()
     }, [o]), {
         isCloudPlayButtonShown: m,
         onCloudPlayClick: f
@@ -455,19 +455,19 @@ function eE(e) {
         trackExternalAction: d
     } = e, {
         clientThemesClassName: u
-    } = (0, I.Ay)(), m = (0, f.bG)([L.default], () => L.default.locale), {
+    } = (0, C.Ay)(), m = (0, f.bG)([y.default], () => y.default.locale), {
         analyticsLocations: h
-    } = (0, A.Ay)(v.A.GAME_PROFILE), x = a.useMemo(() => (0, G.u9)(), []), _ = (0, f.yK)([P.A], () => (P.A.getSimilarGames(t) ?? []).slice(0, 25)), [b, E] = a.useState(null), T = (0, D.s)(t), [y, k] = a.useState(null), R = (0, j.h)(t), {
+    } = (0, A.Ay)(v.A.GAME_PROFILE), x = a.useMemo(() => (0, G.u9)(), []), _ = (0, f.yK)([P.A], () => (P.A.getSimilarGames(t) ?? []).slice(0, 25)), [b, E] = a.useState(null), L = (0, D.s)(t), [T, k] = a.useState(null), R = (0, j.h)(t), {
         data: O,
         refetch: M
-    } = (0, S.I)(t), V = O?.name ?? R?.name, W = (e, l) => {
+    } = (0, S.I)(t), V = O?.name ?? R?.name, U = (e, l) => {
         (0, G.Tn)({
             gameName: V ?? "",
             applicationId: t,
             action: e,
             similarGameId: l,
             viewId: x,
-            officialGuildId: y?.guild?.id,
+            officialGuildId: T?.guild?.id,
             source: n
         })
     };
@@ -479,7 +479,7 @@ function eE(e) {
             gameName: V ?? "",
             authorId: i,
             profileType: G.HV.FullProfile
-        }), (0, C.He)()
+        }), (0, I.He)()
     }), (0, j.A)(_), a.useEffect(() => {
         m.startsWith("en") || O?.summaryLocalized != null || M()
     }, [t, O?.summaryLocalized, m, M]), a.useEffect(() => {
@@ -495,7 +495,7 @@ function eE(e) {
         })()
     }, [t, _]), (0, p.Ay)(() => () => {
         let e = Date.now(),
-            n = T.map(t => {
+            n = L.map(t => {
                 let n = (0, N.JM)(t) ? (0, N.W6)(t, e) : (0, N.aJ)(t, m);
                 return JSON.stringify({
                     item_id: t.id,
@@ -507,10 +507,10 @@ function eE(e) {
             viewId: x,
             applicationId: t,
             gameName: V ?? "",
-            playedFriendIds: T.map(e => e.author_id),
+            playedFriendIds: L.map(e => e.author_id),
             playedFriendsData: n,
             similarGames: _.filter(F.oS).slice(0, 5),
-            officialGuildId: y?.guild?.id
+            officialGuildId: T?.guild?.id
         })
     }), null == O || null == R) ? null : (0, l.jsx)(A.f5, {
         value: h,
@@ -525,32 +525,32 @@ function eE(e) {
                     children: [(0, l.jsx)(eh, {
                         game: O,
                         application: R,
-                        entries: T,
-                        trackAction: W
+                        entries: L,
+                        trackAction: U
                     }), (0, l.jsx)(g.Fmo, {
                         children: (0, l.jsxs)("div", {
                             className: r()(eu.Qs, eu.rb),
                             children: [(0, l.jsx)(ex, {
                                 game: O,
                                 application: R,
-                                entries: T,
-                                officialGuildInvite: y,
+                                entries: L,
+                                officialGuildInvite: T,
                                 similarGames: _,
                                 similarGamesError: b,
                                 onClose: o,
                                 viewId: x,
                                 source: n,
-                                trackAction: W
+                                trackAction: U
                             }), (0, l.jsx)(eA, {
                                 game: O,
                                 onSetOfficialGuildInvite: k,
-                                officialGuildInvite: y,
+                                officialGuildInvite: T,
                                 onClose: o,
                                 appContext: c,
                                 application: R,
                                 source: n,
                                 trackExternalAction: d,
-                                trackAction: W,
+                                trackAction: U,
                                 analyticsLocations: h
                             })]
                         })
@@ -571,9 +571,9 @@ function ej(e) {
         appContext: c,
         trackExternalAction: u,
         initialScrollOffset: m
-    } = e, [h, _] = a.useState(!0), [b, T] = a.useState(null), {
+    } = e, [h, _] = a.useState(!0), [b, L] = a.useState(null), {
         clientThemesClassName: k
-    } = (0, I.Ay)(), R = (0, f.bG)([L.default], () => L.default.locale), O = a.useMemo(() => (0, G.u9)(), []), {
+    } = (0, C.Ay)(), R = (0, f.bG)([y.default], () => y.default.locale), O = a.useMemo(() => (0, G.u9)(), []), {
         analyticsLocations: M
     } = (0, A.Ay)(v.A.GAME_PROFILE), w = (0, j.h)(t), P = (0, D.s)(t), {
         data: V
@@ -586,9 +586,9 @@ function ej(e) {
     } = (0, E.RD)(w), {
         invite: J,
         isMember: $
-    } = (0, U.A)(V, T), {
+    } = (0, W.A)(V, L), {
         socialLayerStorefrontRecommendationsData: Q
-    } = (0, W.V)(w ?? null), q = (e, l) => {
+    } = (0, U.V)(w ?? null), q = (e, l) => {
         (0, G.Tn)({
             gameName: F,
             applicationId: t,
@@ -607,7 +607,7 @@ function ej(e) {
             gameName: F,
             authorId: i,
             profileType: G.HV.FullProfile
-        }), (0, C.He)()
+        }), (0, I.He)()
     }), (0, p.Ay)(() => () => {
         let e = Date.now(),
             n = P.map(t => {
@@ -635,7 +635,7 @@ function ej(e) {
             fireOnMount: !0
         }),
         en = a.useCallback(() => {
-            o(), (0, y.closeUserProfileModal)()
+            o(), (0, T.closeUserProfileModal)()
         }, [o]),
         el = a.useRef(null),
         ea = a.useCallback(() => el.current?.getScrollerNode()?.scrollTop ?? 0, []),
@@ -654,7 +654,7 @@ function ej(e) {
             getScrollOffset: ea
         }), [w, h, Y, B, z, K, X, J, $, Q, en, ea]),
         er = a.useCallback(() => {
-            o(), (0, y.closeUserProfileModal)()
+            o(), (0, T.closeUserProfileModal)()
         }, [o]),
         [es, eo] = a.useState(!1),
         [ec, ed] = a.useState(150),
@@ -734,7 +734,7 @@ function ej(e) {
         })
     })
 }
-let eI = function(e) {
+let eC = function(e) {
     let t = (0, V._)("GameProfileModal");
     return e.forceV2 || t ? (0, l.jsx)(ej, {
         ...e

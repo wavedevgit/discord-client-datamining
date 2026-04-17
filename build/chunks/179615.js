@@ -18,8 +18,8 @@ var r = n(627968),
     S = n(54291),
     p = n(781121),
     v = n(654487),
-    g = n(985018),
-    h = n(834926);
+    h = n(985018),
+    g = n(834926);
 
 function A(e) {
     let {
@@ -47,7 +47,7 @@ function A(e) {
         subtitle: R
     } = {
         title: (0, m.wr)(T),
-        subtitle: T.config.ctaConfig.subtitle ?? g.intl.string(g.t.mxaHfx)
+        subtitle: T.config.ctaConfig.subtitle ?? h.intl.string(h.t.mxaHfx)
     }, {
         enabled: L
     } = o.uK.useConfig({
@@ -90,13 +90,13 @@ function A(e) {
                 url: k
             })
         }), (0, r.jsx)("div", {
-            className: h.MT,
+            className: g.MT,
             "data-testid": "discord-web-video-player-end-screen"
         }), (0, r.jsx)(l.OH, {
             title: O,
             subtitle: R,
             icon: a.KS6,
-            className: h.mT,
+            className: g.mT,
             onClick: () => y(u.uF.VIDEO_MODAL),
             divider: (0, r.jsx)(S.A, {
                 color: "#747783"

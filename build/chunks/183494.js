@@ -1,6 +1,6 @@
 /** chunk id: 183494 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => h
+    Ay: () => p
 }), n(321073);
 var r = n(627968),
     l = n(64700),
@@ -13,113 +13,113 @@ var r = n(627968),
     d = n(972441),
     m = n(645871),
     f = n(6821);
-f.$9;
-let p = {
+f.f5;
+let h = {
     tension: 300,
     friction: 30,
     clamp: !0
 };
 
-function h(e) {
+function p(e) {
     let {
         isFullyVisible: t,
         percent: n,
         animate: a,
-        interactionEnabled: h,
-        backgroundColor: x,
-        playerState: v,
-        preloadedBuffers: E,
+        interactionEnabled: p,
+        backgroundColor: E,
+        playerState: x,
+        preloadedBuffers: v,
         durationSec: b,
         maxSeekableTime: g,
         progressClassName: y,
         timelineHeightPx: S = 4,
-        segmentBorderRadius: C,
-        hoverTimelineHeightPx: A,
+        segmentBorderRadius: A,
+        hoverTimelineHeightPx: C,
         initialTimelineHeightPx: N = S,
-        persistGrabber: R = !0,
+        persistPlayhead: R = !0,
         onClick: L,
         onScrubBack: w,
         onScrubForward: T,
-        onDragStateChange: j,
-        indicatorConfig: P,
-        "data-testid": k
+        onDragStateChange: P,
+        indicatorConfig: D,
+        "data-testid": j
     } = e, {
-        contRef: D,
-        boundingRect: M,
+        contRef: M,
+        boundingRect: k,
         handleMouseEnter: I,
         handleMouseLeave: B,
         handleMouseMove: U,
         handleKeyDown: F,
         hoveredAtX: G,
-        maxSeekableX: $,
-        isHovering: O,
-        isDragging: Q,
+        maxSeekableX: Q,
+        isHovering: $,
+        isDragging: O,
         dragX: _,
-        isHoverBeyondMax: Y,
-        handleClick: K,
+        isHoverBeyondMax: K,
+        handleClick: Y,
         handleMouseDown: X,
         ariaProps: z
     } = (0, d.A)({
         onScrubBack: w,
         onScrubForward: T,
         maxSeekableTime: g,
-        interactionEnabled: h,
+        interactionEnabled: p,
         durationSec: b,
         percent: n,
         onClick: L,
-        onDragStateChange: j
-    }), V = l.useMemo(() => null == G || null == M ? null : (0, o.rB)((0, o.hc)(G, M, b)), [G, M, b]), W = l.useMemo(() => {
-        if (null != M) return (0, o.TO)(n, M)
-    }, [n, M]), H = M?.width != null && M?.width !== 0 ? M?.width : 1, [{
-        playbackPxSpring: J
-    }, Z] = (0, c.zhh)(() => ({
+        onDragStateChange: P
+    }), V = l.useMemo(() => null == G || null == k ? null : (0, o.rB)((0, o.hc)(G, k, b)), [G, k, b]), W = l.useMemo(() => {
+        if (null != k) return (0, o.TO)(n, k)
+    }, [n, k]), H = k?.width != null && k?.width !== 0 ? k?.width : 1, [{
+        playbackPxSpring: Z
+    }, J] = (0, c.zhh)(() => ({
         playbackPxSpring: 0,
-        config: p
+        config: h
     })), q = l.useRef(null), ee = l.useRef(!1), et = l.useRef(a);
     l.useLayoutEffect(() => {
         let e = et.current;
-        if (et.current = a, e && !a && v !== u.Q6.PLAYING && null != q.current) {
+        if (et.current = a, e && !a && x !== u.Q6.PLAYING && null != q.current) {
             let e = parseFloat(getComputedStyle(q.current).left);
-            Number.isNaN(e) || (q.current.style.left = `${e}px`, Z({
+            Number.isNaN(e) || (q.current.style.left = `${e}px`, J({
                 playbackPxSpring: e,
                 immediate: !0
             })), ee.current = !0
         } else if (!e && a && null != q.current) {
             let e = null == W || Number.isNaN(W) ? 0 : W,
                 t = b > 0 ? Math.min(e + H / b * .275, H) : e;
-            q.current.style.left = `${e}px`, Z({
+            q.current.style.left = `${e}px`, J({
                 playbackPxSpring: t,
                 immediate: !0
             })
         }
-    }, [a, Z, W, v, b, H]);
-    let en = l.useRef(Q);
+    }, [a, J, W, x, b, H]);
+    let en = l.useRef(O);
     l.useLayoutEffect(() => {
         let e = en.current;
-        en.current = Q, e && !Q && Z({
+        en.current = O, e && !O && J({
             playbackPxSpring: null == W || Number.isNaN(W) ? 0 : W,
             immediate: !0
         })
-    }, [Q, W, Z]), l.useEffect(() => {
+    }, [O, W, J]), l.useEffect(() => {
         if (ee.current) {
             ee.current = !1;
             return
         }
         let e = null == W || Number.isNaN(W) ? 0 : W;
-        a && b > 0 ? Z({
+        a && b > 0 ? J({
             playbackPxSpring: Math.min(e + H / b * .275, H),
             immediate: !0
-        }) : Z({
+        }) : J({
             playbackPxSpring: e,
             immediate: !0
         })
-    }, [W, a, Z, H, b]);
+    }, [W, a, J, H, b]);
     let er = b > 1,
-        el = P?.indicators,
+        el = D?.indicators,
         ea = l.useMemo(() => {
             let e;
-            return null != el && null != M && er ? (e = M.width, el.map(t => {
-                let n = Math.max(0, Math.min((0, o.DX)(t.timeSec, b, M) - t.widthPx / 2, e - t.widthPx));
+            return null != el && null != k && er ? (e = k.width, el.map(t => {
+                let n = Math.max(0, Math.min((0, o.DX)(t.timeSec, b, k) - t.widthPx / 2, e - t.widthPx));
                 return {
                     leftPx: n,
                     rightPx: n + t.widthPx,
@@ -128,7 +128,7 @@ function h(e) {
                     source: t
                 }
             })) : void 0
-        }, [el, b, M, er]),
+        }, [el, b, k, er]),
         ei = l.useMemo(() => ((e, t) => {
             let n = [{
                 startPx: 0,
@@ -150,56 +150,56 @@ function h(e) {
             }
             return n
         })(H, ea), [H, ea]),
-        es = P?.hoverExpansionPx ?? 0,
-        eu = l.useCallback(e => null != e && null != ea && ea.some(t => e >= t.leftPx - t.gapPx - (P?.animatingIndex === t.index ? es : 0) && e <= t.rightPx + t.gapPx + (P?.animatingIndex === t.index ? es : 0)), [ea, P?.animatingIndex, es]);
+        es = D?.hoverExpansionPx ?? 0,
+        eu = l.useCallback(e => null != e && null != ea && ea.some(t => e >= t.leftPx - t.gapPx - (D?.animatingIndex === t.index ? es : 0) && e <= t.rightPx + t.gapPx + (D?.animatingIndex === t.index ? es : 0)), [ea, D?.animatingIndex, es]);
     return (0, r.jsx)("div", {
         className: i()(f.jD, {
             [f.we]: a
         }),
-        ref: D,
-        "data-testid": k,
+        ref: M,
+        "data-testid": j,
         style: {
-            "--custom-timeline-height": `${null!=A&&O?A:S}px`,
+            "--custom-timeline-height": `${null!=C&&$?C:S}px`,
             "--custom-initial-timeline-height": `${N}px`,
             "--custom-playback-transition-duration": "275ms"
         },
         children: (0, r.jsxs)(c.DUT, {
             className: i()(f.KF, {
-                [f.uc]: h
+                [f.uc]: p
             }),
-            style: Y ? {
+            style: K ? {
                 cursor: "default"
             } : void 0,
             ignoreKeyPress: !0,
-            onClick: K,
+            onClick: Y,
             onMouseDown: X,
             onMouseEnter: I,
             onMouseLeave: B,
             onMouseMove: U,
             onKeyDown: F,
-            tabIndex: h ? void 0 : -1,
+            tabIndex: p ? void 0 : -1,
             children: [(0, r.jsx)("div", {
-                className: f.G9,
+                className: f.PH,
                 ...z,
-                style: null != x ? {
-                    "--custom-segment-bg": x
+                style: null != E ? {
+                    "--custom-segment-bg": E
                 } : void 0,
-                children: null != M && ei.map((e, t) => (0, r.jsx)(m.A, {
+                children: null != k && ei.map((e, t) => (0, r.jsx)(m.A, {
                     segment: e,
-                    playbackPxSpring: J,
+                    playbackPxSpring: Z,
                     animate: a,
-                    playerState: v,
-                    isDragging: Q,
+                    playerState: x,
+                    isDragging: O,
                     dragX: _,
-                    animatingIndex: P?.animatingIndex,
-                    expansionSpring: P?.expansionSpring,
+                    animatingIndex: D?.animatingIndex,
+                    expansionSpring: D?.expansionSpring,
                     timelineWidth: H,
-                    preloadedBuffers: E,
-                    maxSeekableX: $,
-                    segmentBorderRadius: C,
+                    preloadedBuffers: v,
+                    maxSeekableX: Q,
+                    segmentBorderRadius: A,
                     progressClassName: y
                 }, t))
-            }), null != M && ea?.map(e => P?.renderIndicator(e, null != W && !Number.isNaN(W) ? W : 0)), O && null != V && t && !eu(G) && (0, r.jsx)(c.Text, {
+            }), null != k && ea?.map(e => D?.renderIndicator(e, null != W && !Number.isNaN(W) ? W : 0)), $ && null != V && t && !eu(G) && (0, r.jsx)(c.Text, {
                 className: f.Ey,
                 variant: "text-xs/normal",
                 color: "always-white",
@@ -207,11 +207,11 @@ function h(e) {
                     left: null != G ? `${G}px` : "auto"
                 },
                 children: V
-            }), (O || R) && h && null != W && !eu(Q && null != _ ? _ : W) && (0, r.jsx)(s.animated.div, {
+            }), ($ || R) && p && null != W && !eu(O && null != _ ? _ : W) && (0, r.jsx)(s.animated.div, {
                 ref: q,
-                className: f.Ub,
+                className: f.lG,
                 style: {
-                    left: Q && null != _ ? `${_}px` : J.to(e => `${e}px`)
+                    left: O && null != _ ? `${_}px` : Z.to(e => `${e}px`)
                 }
             })]
         })

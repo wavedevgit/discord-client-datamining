@@ -106,7 +106,7 @@ function j(e) {
         })]
     })
 }
-let I = a.memo(function(e) {
+let C = a.memo(function(e) {
         let {
             item: t,
             index: n,
@@ -137,7 +137,7 @@ let I = a.memo(function(e) {
             })
         })
     }),
-    C = a.memo(function(e) {
+    I = a.memo(function(e) {
         let {
             item: t,
             reducedMotion: n,
@@ -205,16 +205,16 @@ function N(e) {
         }))], [t.trailers, t.screenshotUrls]),
         N = j.length > 0 ? Math.min(i, j.length - 1) : 0,
         S = j[N],
-        T = S?.type === "VIDEO",
-        y = a.useCallback(e => {
+        L = S?.type === "VIDEO",
+        T = a.useCallback(e => {
             let t = j[N],
                 n = j[e];
             t?.type === "IMAGE" && n?.type === "IMAGE" && t.url !== n.url ? m(t.url) : m(null), r(e)
         }, [j, N]),
-        [L, k] = a.useState(!1),
+        [y, k] = a.useState(!1),
         R = a.useRef(null),
         O = a.useCallback(() => {
-            n(T ? _.Ws.ClickTrailer : _.Ws.ClickImage);
+            n(L ? _.Ws.ClickTrailer : _.Ws.ClickImage);
             let e = g.current,
                 t = R.current,
                 l = null != e && !e.paused,
@@ -247,7 +247,7 @@ function N(e) {
                     e?.pause(), null != t && null != e ? (t.setTime(e.currentTime, !1), n && t.setPlay(!0), t.setMuted(e.muted)) : n && t?.setPlay(!0), k(n)
                 }
             })
-        }, [n, j, N, T]),
+        }, [n, j, N, L]),
         M = a.useCallback(() => k(!0), []),
         G = a.useCallback(() => k(!1), []),
         w = a.useCallback(() => m(null), []),
@@ -256,9 +256,9 @@ function N(e) {
         }, [O]);
     return 0 === j.length ? null : (0, l.jsxs)("div", {
         className: E.kL,
-        children: [T ? (0, l.jsx)("div", {
+        children: [L ? (0, l.jsx)("div", {
             className: E.ND,
-            children: (0, l.jsx)(C, {
+            children: (0, l.jsx)(I, {
                 item: S,
                 reducedMotion: b,
                 videoRef: g,
@@ -293,12 +293,12 @@ function N(e) {
         }), (0, l.jsx)(u.A, {
             gap: "xs",
             iconButtonSize: "sm",
-            children: j.map((e, n) => (0, l.jsx)(I, {
+            children: j.map((e, n) => (0, l.jsx)(C, {
                 item: e,
                 index: n,
-                isPlaying: L,
+                isPlaying: y,
                 isSelected: n === N,
-                onSelect: y,
+                onSelect: T,
                 gameName: t.name
             }, `${n}-${e.url}`))
         })]

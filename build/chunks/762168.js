@@ -1,14 +1,14 @@
 /** chunk id: 762168 params = (module,exports,require) **/
 a.d(t, {
-    DX: () => h,
+    DX: () => v,
     _v: () => T,
-    cs: () => E,
-    ec: () => S,
-    kK: () => f,
-    sn: () => y
+    cs: () => P,
+    ec: () => f,
+    kK: () => x,
+    sn: () => S
 });
-var o = a(627968),
-    n = a(64700),
+var n = a(627968),
+    o = a(64700),
     r = a(412703),
     i = a(440703),
     l = a(267548),
@@ -21,25 +21,25 @@ var o = a(627968),
     b = a(795068),
     _ = a(654487),
     g = a(652215),
-    v = a(784018);
+    h = a(784018);
 
-function h(e) {
+function v(e) {
     let {
         url: t,
         width: a = 640,
-        height: o = 360,
-        target: n = 60,
+        height: n = 360,
+        target: o = 60,
         videoTitle: i = "Test Video Quest",
         transcript: l
     } = e;
     return {
         type: r.n.WATCH_VIDEO,
-        target: n,
+        target: o,
         assets: {
             video: {
                 url: t,
                 width: a,
-                height: o,
+                height: n,
                 transcript: l
             }
         },
@@ -49,20 +49,20 @@ function h(e) {
     }
 }
 
-function f() {
+function x() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
         {
             streamProgressSeconds: t = 0,
             completedAt: a = null,
-            enrolledAt: o = null,
-            claimedAt: n = null
+            enrolledAt: n = null,
+            claimedAt: o = null
         } = e;
     return {
         userId: "123",
-        questId: x,
-        enrolledAt: o,
+        questId: y,
+        enrolledAt: n,
         completedAt: a,
-        claimedAt: n,
+        claimedAt: o,
         claimedTier: null,
         lastStreamHeartbeatAt: null,
         streamProgressSeconds: t,
@@ -70,14 +70,14 @@ function f() {
         progress: {}
     }
 }
-let x = `playground-video-quest-${Date.now()}`;
+let y = `playground-video-quest-${Date.now()}`;
 
-function S(e) {
+function f(e) {
     return {
-        id: x,
+        id: y,
         preview: !0,
         config: {
-            id: x,
+            id: y,
             configVersion: 2,
             startsAt: "2024-01-01T00:00:00+00:00",
             expiresAt: "2030-01-01T00:00:00+00:00",
@@ -111,7 +111,7 @@ function S(e) {
             },
             assets: {
                 hero: "",
-                heroVideo: v.kz,
+                heroVideo: h.kz,
                 questBarHero: "",
                 questBarHeroVideo: null,
                 questBarHeroBlurhash: null,
@@ -131,14 +131,14 @@ function S(e) {
                 buttonLabel: "Learn More"
             }
         },
-        userStatus: f({
+        userStatus: x({
             enrolledAt: new Date().toISOString()
         }),
         targetedContent: [c.uF.QUEST_HOME_DESKTOP]
     }
 }
 
-function y(e) {
+function S(e) {
     let {
         quest: t,
         isPortrait: a,
@@ -146,7 +146,7 @@ function y(e) {
         isFullscreenEnabled: i = !1,
         useNewStyling: l = !1,
         setIsFullscreenEnabled: s = g.tEg
-    } = e, d = n.useMemo(() => ({
+    } = e, d = o.useMemo(() => ({
         quest: t,
         sourceQuestContent: c.uF.INTERNAL_PREVIEW_TOOL,
         videoSessionId: "playground-session",
@@ -157,16 +157,16 @@ function y(e) {
         useNewProgressBarStyling: l,
         progressSec: 0,
         targetSec: 0
-    }), [t, a, i, s, l]), u = n.useMemo(() => ({
+    }), [t, a, i, s, l]), u = o.useMemo(() => ({
         questConfig: t.config
     }), [t.config]);
-    return (0, o.jsx)(p.R, {
+    return (0, n.jsx)(p.R, {
         questOrQuests: t,
         questContent: c.uF.VIDEO_MODAL,
         sourceQuestContent: c.uF.INTERNAL_PREVIEW_TOOL,
-        children: (e, t) => (0, o.jsx)(b.l.Provider, {
+        children: (e, t) => (0, n.jsx)(b.l.Provider, {
             value: u,
-            children: (0, o.jsx)(b.a.Provider, {
+            children: (0, n.jsx)(b.a.Provider, {
                 value: d,
                 children: r
             })
@@ -183,24 +183,24 @@ function C(e) {
         targetTimeSec: l,
         useNewStyling: s,
         videoUrl: c
-    } = e, p = "portrait" === t, [b, v] = n.useState(!1), x = h({
+    } = e, p = "portrait" === t, [b, h] = o.useState(!1), y = v({
         url: c,
         width: p ? 360 : 640,
         height: p ? 640 : 360,
         target: l,
         videoTitle: p ? "Test Portrait Video" : "Test Landscape Video",
         transcript: "transcript.txt"
-    }), C = S(x), T = n.useRef(!1);
+    }), C = f(y), T = o.useRef(!1);
     T.current || (T.current = !0, u.Kr.getState().clearState()), i && (C.config.features = [_.Li.FULL_EPISODE_VIDEO_QUEST]);
-    let E = r ? {
+    let P = r ? {
         ...C,
-        userStatus: f({
+        userStatus: x({
             enrolledAt: C.userStatus?.enrolledAt ?? null,
             completedAt: C.userStatus?.enrolledAt ?? null,
-            streamProgressSeconds: x.target
+            streamProgressSeconds: y.target
         })
     } : C;
-    return (0, o.jsx)("div", {
+    return (0, n.jsx)("div", {
         style: {
             display: "flex",
             flexDirection: "column",
@@ -212,14 +212,14 @@ function C(e) {
             overflow: "hidden",
             "--custom-footer-horizontal-padding": "20px"
         },
-        children: (0, o.jsx)(y, {
-            quest: E,
+        children: (0, n.jsx)(S, {
+            quest: P,
             isPortrait: p,
             isFullscreenEnabled: b,
-            setIsFullscreenEnabled: v,
+            setIsFullscreenEnabled: h,
             useNewStyling: s,
-            children: (0, o.jsx)(m.A, {
-                targetTimeSec: x.target,
+            children: (0, n.jsx)(m.A, {
+                targetTimeSec: y.target,
                 parentTransitionState: d.ip4.ENTERED,
                 onOptimisticProgressUpdate: g.tEg,
                 autoplay: a,
@@ -267,10 +267,10 @@ let T = {
         videoUrl: {
             label: "Video URL",
             type: "text",
-            defaultValue: v.kz
+            defaultValue: h.kz
         }
     },
-    E = {
+    P = {
         title: "Legacy Quest Player",
         stories: [{
             name: "Landscape",

@@ -28,43 +28,43 @@ function v(e) {
             analyticsObject: b,
             isGift: E = !1,
             giftMessage: j,
-            giftingOrigin: I,
-            giftRecipient: C,
+            giftingOrigin: C,
+            giftRecipient: I,
             onClose: N,
             onComplete: S
         } = e,
-        T = !1,
-        y = (0, a.A)(),
-        L = E ? "gift-payment-modal" : "payment-modal",
+        L = !1,
+        T = (0, a.A)(),
+        y = E ? "gift-payment-modal" : "payment-modal",
         k = f.default.getCurrentUser();
     k?.verified ? (r.h.wait(() => {
         r.h.dispatch({
             type: "PAYMENT_MODAL_OPEN"
         })
     }), A({
-        loadId: y,
+        loadId: T,
         discoverySessionId: d,
         skuId: x,
         analyticsLocations: v,
         onStepChange: e => {
             t = e
         },
-        modalKey: L,
+        modalKey: y,
         isGift: E,
         giftMessage: j,
-        giftingOrigin: I,
-        giftRecipient: C,
+        giftingOrigin: C,
+        giftRecipient: I,
         onClose: N,
         onCloseCallback: () => {
             if ((0, g.S)({
-                    checkoutSucceeded: T
-                }), !T) {
+                    checkoutSucceeded: L
+                }), !L) {
                 let e = (0, u.q1)({
                     location: "CollectiblesPaymentModal",
                     unifiedCheckoutFlow: c.C.COLLECTIBLES_CHECKOUT
                 });
                 h.default.track(p.HAw.PAYMENT_FLOW_CANCELED, {
-                    load_id: y,
+                    load_id: T,
                     discovery_session_id: d,
                     payment_type: p.frM[p.VVm.ONE_TIME],
                     location: b,
@@ -74,13 +74,13 @@ function v(e) {
                     checkout_design: e ? u.rS.UNIFIED : u.rS.LEGACY,
                     checkout_flow: c.C.COLLECTIBLES_CHECKOUT
                 })
-            }(0, s.ET)(), (0, o.z)(), N?.(T), T && (0, m.gB)()
+            }(0, s.ET)(), (0, o.z)(), N?.(L), L && (0, m.gB)()
         },
         onCloseRequest: () => {
-            null != t && _.has(t) && (0, i.OoC)(L)
+            null != t && _.has(t) && (0, i.OoC)(y)
         },
         onComplete: () => {
-            T = !0, S?.()
+            L = !0, S?.()
         }
     })) : (0, i.mMO)(async () => {
         let {
