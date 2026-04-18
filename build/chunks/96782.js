@@ -49,16 +49,22 @@ let w = e => {
         downloadURL: n,
         onRemoveItem: l,
         showDownload: r,
-        isVisualMediaType: m
-    } = e, h = s.useRef(null), [x, g] = s.useState(0);
-    (0, d.i4)(h, e => {
+        isVisualMediaType: h,
+        type: x,
+        isSingleMosaicItem: g
+    } = e, p = s.useRef(null), [I, f] = s.useState(0), {
+        newEmbedUi: C
+    } = m.Q.useConfig({
+        location: "MosaicItemHoverButtons"
+    });
+    (0, d.i4)(p, e => {
         let {
             width: t
         } = e;
-        null != t && g(Math.floor((t - 8) / 32))
+        null != t && f(Math.floor((t - 8) / 32))
     });
-    let p = [];
-    null != l && p.push((0, i.jsx)(o.m, {
+    let A = [];
+    null != l && A.push((0, i.jsx)(o.m, {
         text: N.intl.string(N.t["/XT3ij"]),
         children: (0, i.jsx)(u.DUT, {
             className: a()(v.HF, L.GC),
@@ -74,7 +80,7 @@ let w = e => {
                 height: 20
             })
         })
-    }, "remove")), r && p.push((0, i.jsx)(o.m, {
+    }, "remove")), r && !("CLIP" === x && g && C) && A.push((0, i.jsx)(o.m, {
         text: N.intl.string(N.t["1WjMbC"]),
         children: (0, i.jsx)(c.A, {
             target: "_blank",
@@ -88,15 +94,15 @@ let w = e => {
             mimeType: t
         })
     }, "download"));
-    let I = Math.max(0, p.length - x);
+    let j = Math.max(0, A.length - I);
     return (0, i.jsxs)(i.Fragment, {
-        children: [x > 0 && p.length > 0 && (0, i.jsx)("div", {
+        children: [I > 0 && A.length > 0 && (0, i.jsx)("div", {
             className: a()(v.aq, {
-                [v.XE]: !m
+                [v.XE]: !h
             }),
-            children: p.slice(I)
+            children: A.slice(j)
         }), (0, i.jsx)("div", {
-            ref: h,
+            ref: p,
             className: v.St
         })]
     })
@@ -124,8 +130,8 @@ function P(e) {
         imgClassName: W,
         focusable: T,
         hiddenSpoilers: _,
-        mediaLayoutType: D,
-        maxWidth: b,
+        mediaLayoutType: b,
+        maxWidth: D,
         maxHeight: H,
         hasFooter: F,
         useFullWidth: G,
@@ -146,7 +152,7 @@ function P(e) {
         let e = (0, j.U8)({
             width: X ?? 0,
             height: Q ?? 0,
-            maxWidth: b ?? E.k6,
+            maxWidth: D ?? E.k6,
             maxHeight: H ?? E.Rk
         });
         !G && (e * (X ?? 0) < E.ie || e * (Q ?? 0) < E.ie) && (en = !0)
@@ -162,14 +168,16 @@ function P(e) {
             })
         }, [J]),
         el = s.useCallback(() => {
-            if (D === E.dG.MOSAIC) {
+            if (b === E.dG.MOSAIC) {
                 let e = !ee && ["VIDEO", "CLIP", "AUDIO"].includes(B) || "OTHER" === B;
                 return en ? null : !K && (0, i.jsx)(w, {
                     mimeType: et,
                     downloadURL: n.downloadUrl,
                     showDownload: e,
                     onRemoveItem: r ? ei : void 0,
-                    isVisualMediaType: V
+                    isVisualMediaType: V,
+                    type: B,
+                    isSingleMosaicItem: q
                 })
             }
             return r && (0, i.jsx)(u.DUT, {
@@ -186,16 +194,16 @@ function P(e) {
                     color: "currentColor"
                 })
             })
-        }, [D, r, z, ee, B, en, K, et, n, ei, V, o]);
+        }, [b, r, z, ee, B, en, K, et, n, ei, V, o, q]);
     if (R) return (0, i.jsx)(u._V3, {
         className: P,
         readyState: M.Rv1.READY,
         src: "",
         width: X ?? 350,
         height: Q ?? 350,
-        maxWidth: b,
+        maxWidth: D,
         maxHeight: H,
-        mediaLayoutType: D,
+        mediaLayoutType: b,
         useFullWidth: G,
         zoomable: !1
     });
@@ -219,8 +227,8 @@ function P(e) {
                     shouldLink: T,
                     hiddenSpoilers: _,
                     responsive: !0,
-                    mediaLayoutType: D,
-                    maxWidth: b,
+                    mediaLayoutType: b,
+                    maxWidth: D,
                     maxHeight: H,
                     useFullWidth: G,
                     handlePreloadImage: m,
@@ -245,8 +253,8 @@ function P(e) {
                 playable: T,
                 responsive: !0,
                 hiddenSpoilers: _,
-                mediaLayoutType: D,
-                maxWidth: b,
+                mediaLayoutType: b,
+                maxWidth: D,
                 maxHeight: H,
                 useFullWidth: G,
                 mimeType: et,
@@ -263,9 +271,9 @@ function P(e) {
                 message: t,
                 className: S,
                 imageClassName: W,
-                maxWidth: b,
+                maxWidth: D,
                 maxHeight: H,
-                mediaLayoutType: D,
+                mediaLayoutType: b,
                 useFullWidth: G
             });
         case "AUDIO":
@@ -329,7 +337,7 @@ let S = function(e) {
         return "IMAGE" === e || "VIDEO" === e || t && "CLIP" === e
     }(M, {
         enableClipsNewEmbedUi: N
-    }), D = (0, y.Xg)(M), b = d && null != v && (0, h.j8)(C, A), [H, F] = s.useState(!1), G = () => {
+    }), b = (0, y.Xg)(M), D = d && null != v && (0, h.j8)(C, A), [H, F] = s.useState(!1), G = () => {
         F(!0)
     }, V = () => {
         F(!1)
@@ -352,8 +360,8 @@ let S = function(e) {
             focusable: !e,
             mediaLayoutType: u,
             hasFooter: null != c,
-            useFullWidth: !!b && !!e || o,
-            isVisualMediaType: D,
+            useFullWidth: !!D && !!e || o,
+            isVisualMediaType: b,
             onVideoControlsShow: G,
             onVideoControlsHide: V,
             forcePlaceholder: S && O
@@ -368,7 +376,7 @@ let S = function(e) {
             [L.xV]: _,
             [L.D$]: o,
             [L.UI]: W,
-            [L.JP]: W && D,
+            [L.JP]: W && b,
             [L.hU]: null != c
         }),
         children: [null != v ? (0, i.jsx)(f.Ay, {
