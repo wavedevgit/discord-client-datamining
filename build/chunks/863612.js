@@ -16,26 +16,14 @@ var i = n(627968),
 
 function _() {
     let e = (0, l.bG)([c.default], () => c.default.getCurrentUser()?.storeCountry),
-        t = e?.setAt != null ? m.intl.format(m.t.ZkWzXG, {
-            date: new Date(e.setAt)
-        }) : null,
-        n = s.useCallback(() => {
+        t = s.useCallback(() => {
             (0, u.b)(e?.country ?? null)
         }, [e?.country]);
-    if (null == e) return (0, i.jsxs)("div", {
-        className: g.OO,
-        children: [(0, i.jsx)(a.Text, {
-            variant: "text-sm/normal",
-            color: "text-subtle",
-            children: m.intl.string(m.t.jGL0O5)
-        }), (0, i.jsx)(r.$nd, {
-            variant: "secondary",
-            size: "sm",
-            text: m.intl.string(m.t.EeFkoB),
-            onClick: n
-        })]
-    });
-    let _ = (0, d.Gw)(e.country);
+    if (null == e) return null;
+    let n = (0, d.Gw)(e.country),
+        _ = null != e.setAt ? m.intl.format(m.t.ZkWzXG, {
+            date: new Date(e.setAt)
+        }) : null;
     return (0, i.jsxs)("div", {
         className: g.OO,
         children: [(0, i.jsxs)("div", {
@@ -51,18 +39,18 @@ function _() {
                 className: g.d0,
                 children: [(0, i.jsx)(a.Text, {
                     variant: "text-md/semibold",
-                    children: _
-                }), null != t ? (0, i.jsx)(a.Text, {
+                    children: n
+                }), null != _ ? (0, i.jsx)(a.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    children: t
+                    children: _
                 }) : null]
             })]
         }), (0, i.jsx)(r.$nd, {
             variant: "secondary",
             size: "sm",
-            text: m.intl.string(m.t.EeFkoB),
-            onClick: n
+            text: m.intl.string(m.t.PuB1W7),
+            onClick: t
         })]
     })
 }

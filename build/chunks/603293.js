@@ -16,38 +16,31 @@ function u(e) {
         country: t,
         countryName: n,
         ...o
-    } = e, u = s.useCallback(() => null == t ? null : (0, i.jsx)("img", {
+    } = e, {
+        onClose: u
+    } = o, m = s.useCallback(() => null == t ? null : (0, i.jsx)("img", {
         alt: "",
         className: c.b,
         src: (0, a.t)(t)
-    }), [t]), m = null != n && null != t ? {
+    }), [t]), g = null != n && null != t ? {
         text: n,
-        leadingIcon: u
-    } : n ?? void 0;
+        leadingIcon: m
+    } : n ?? void 0, _ = s.useCallback(() => {
+        window.open("https://support.discord.com/hc/articles/39799791912087", "_blank"), u()
+    }, [u]);
     return (0, i.jsx)(l.Modal, {
         ...o,
-        title: d.intl.string(d.t.EeFkoB),
-        subtitle: m,
+        title: d.intl.string(d.t.PuB1W7),
+        subtitle: g,
         actions: [{
-            text: d.intl.string(d.t.cpT0Cq),
-            onClick: o.onClose,
-            variant: "secondary"
+            text: d.intl.string(d.t.PuB1W7),
+            onClick: _,
+            variant: "primary"
         }],
-        children: (0, i.jsxs)(r.BJc, {
-            gap: 16,
-            children: [(0, i.jsx)(r.Text, {
-                variant: "text-md/normal",
-                color: "text-muted",
-                children: d.intl.string(d.t["J+TYwL"])
-            }), (0, i.jsx)(r.Text, {
-                variant: "text-md/normal",
-                color: "text-muted",
-                children: d.intl.string(d.t.M57KeT)
-            }), (0, i.jsx)(r.Text, {
-                variant: "text-md/normal",
-                color: "text-muted",
-                children: d.intl.string(d.t.PDsztK)
-            })]
+        children: (0, i.jsx)(r.Text, {
+            variant: "text-md/normal",
+            color: "text-muted",
+            children: d.intl.string(d.t["21skUa"])
         })
     })
 }

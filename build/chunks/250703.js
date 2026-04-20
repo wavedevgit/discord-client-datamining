@@ -42,22 +42,24 @@ function v(e) {
         let t = [e];
         for (let n = e.parent; null != n && n.type !== d.Z6.SIDEBAR_ITEM; n = n.parent) n.type === d.Z6.PANEL && t.unshift(n);
         return t
-    }(t) : [], _ = a.at(-2);
+    }(t) : [], _ = a.at(-2), v = l.Fr && a.length <= 1, S = a.length > 1 && null != _;
     return (0, r.jsx)(u.NPJ, {
         theme: i,
         children: e => (0, r.jsxs)("div", {
-            className: s()(g.$Q, e),
+            className: s()(g.$Q, e, {
+                [g.HW]: v || S
+            }),
             children: [(0, r.jsxs)(u.BJc, {
                 direction: "horizontal",
                 align: "center",
                 className: g.y9,
-                children: [l.Fr && a.length <= 1 && (0, r.jsx)(y, {
+                children: [v && (0, r.jsx)(y, {
                     icon: u.fEi,
                     onClick: () => h.A.setState({
                         showNavigationMobile: !0
                     }),
                     label: f.intl.string(f.t["13/7kX"])
-                }), a.length > 1 && null != _ && (0, r.jsx)(y, {
+                }), S && (0, r.jsx)(y, {
                     icon: o.rJJ,
                     onClick: () => p.A.navigate(_.key),
                     label: f.intl.string(f.t["13/7kX"])
