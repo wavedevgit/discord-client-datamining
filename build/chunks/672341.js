@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073), n(667532);
 var i = n(627968),
     l = n(64700),
-    s = n(311907),
-    a = n(397927),
+    a = n(311907),
+    s = n(397927),
     r = n(843472),
     o = n(432371),
     c = n(775602),
@@ -62,12 +62,12 @@ let et = l.memo(function(e) {
         file: t,
         channel: n,
         user: l,
-        isGroupStart: s,
-        compact: a
+        isGroupStart: a,
+        compact: s
     } = e;
     return (0, i.jsx)(B.A, {
-        compact: a,
-        isGroupStart: s,
+        compact: s,
+        isGroupStart: a,
         channel: n,
         message: new j.Ay({
             id: t.id,
@@ -95,8 +95,8 @@ function en(e) {
             showNewMessagesBar: en,
             messageDisplayCompact: ei,
             channelStream: el,
-            uploads: es,
-            scrollManager: ea,
+            uploads: ea,
+            scrollManager: es,
             specs: er,
             filterAfterTimestamp: eo,
             showingQuarantineBanner: ec,
@@ -104,11 +104,11 @@ function en(e) {
             jumpBarClassName: eu
         } = e,
         eh = L.default.getCurrentUser(),
-        em = () => ea.isInitialized() || m.ready,
+        em = () => es.isInitialized() || m.ready,
         eA = (0, F.r)(l),
         eg = m.length > 0 && m.first()?.isFirstMessageInForumPost(l),
         e_ = (0, o.cI)(l),
-        ep = (0, s.bG)([N.A], () => N.A.shouldShowTopicsBar() && !ed),
+        ep = (0, a.bG)([N.A], () => N.A.shouldShowTopicsBar() && !ed),
         ef = (0, T.l)(l.id),
         eE = (0, S.j)(l.id, X.Rx),
         eC = (0, u.E)(l.id),
@@ -180,22 +180,22 @@ function en(e) {
             if (null != eo && eo > e.content.timestamp.getTime() * O.A.Millis.SECOND) return;
             e.type === Z.TZK.MESSAGE && null == eN && (eN = e);
             let n = e.groupId === eN?.groupId ? eN.content.id : e.groupId,
-                s = ev && e.content.isFirstMessageInForumPost(l),
-                a = e.type === Z.TZK.THREAD_STARTER_MESSAGE ? H.VO : H.Ay;
-            return (0, i.jsx)(a, {
-                compact: ei && !s,
+                a = ev && e.content.isFirstMessageInForumPost(l),
+                s = e.type === Z.TZK.THREAD_STARTER_MESSAGE ? H.VO : H.Ay;
+            return (0, i.jsx)(s, {
+                compact: ei && !a,
                 channel: l,
                 message: e.content,
                 groupId: n,
                 flashKey: e.flashKey,
                 id: (0, w.j)(l.id, e.content.id),
                 isLastItem: t >= el.length - 1,
-                renderContentOnly: eT || s
+                renderContentOnly: eT || a
             }, e.content.id)
         });
     ey.push(...eb);
     let ej = el[el.length - 1];
-    if (null != eh && es.forEach((e, t) => {
+    if (null != eh && ea.forEach((e, t) => {
             let n = 0 === t && (0, U.l)(l, ej, new j.Ay({
                 type: Z.lAJ.DEFAULT,
                 author: eh
@@ -231,20 +231,20 @@ function en(e) {
         }, "has-more-after")), !ec && eA && em() && ey.push((0, i.jsx)(Y.A, {
             channel: l
         })), B > 0 && en && em()) {
-        let e, n, s = R.Ay.getOldestUnreadTimestamp(l.id),
-            r = 0 !== s ? s : P.default.extractTimestamp(l.id),
+        let e, n, a = R.Ay.getOldestUnreadTimestamp(l.id),
+            r = 0 !== a ? a : P.default.extractTimestamp(l.id),
             c = (0, D.ro)(new Date, new Date(r));
         if (R.Ay.isEstimated(l.id) ? (e = c ? Q.t.wvtbbG : Q.t.tHqbtg, n = Q.t.vaPWFe) : (e = c ? Q.t["BctFH/"] : Q.t["3wXb9P"], n = Q.t["4H8ldG"]), e_ && (0, o.Kc)(l) && ex.includes(q.i.SUMMARIES)) {
-            let s = R.Ay.ackMessageId(l.id),
+            let a = R.Ay.ackMessageId(l.id),
                 c = (0, y.L)(l.id, R.Ay.getOldestUnreadMessageId(l.id));
             if ((0, d.zV)(Z.HAw.SUMMARIES_UNREAD_BAR_VIEWED, {
                     num_unread_summaries: c,
                     num_unread_messages: B,
-                    last_ack_message_id: s,
+                    last_ack_message_id: a,
                     summaries_enabled_by_user: ep,
                     summaries_enabled_for_channel: (0, o.pk)(l)
                 }), (0, o.pk)(l)) {
-                let s = ep ? Q.intl.format(n, {
+                let a = ep ? Q.intl.format(n, {
                     count: B
                 }) : Q.intl.format(e, {
                     count: B,
@@ -252,7 +252,7 @@ function en(e) {
                 });
                 if (ep) {
                     let e = c > 0 ? (0, i.jsxs)(i.Fragment, {
-                        children: [(0, i.jsx)(a.Text, {
+                        children: [(0, i.jsx)(s.Text, {
                             variant: "text-sm/medium",
                             color: "currentColor",
                             children: Q.intl.format(n, {
@@ -265,20 +265,20 @@ function en(e) {
                             },
                             height: 4,
                             width: 4
-                        }), (0, i.jsx)(a.Text, {
+                        }), (0, i.jsx)(s.Text, {
                             variant: "text-sm/medium",
                             color: "currentColor",
                             children: Q.intl.format(Q.t.CBftDc, {
                                 count: c
                             })
                         })]
-                    }) : (0, i.jsx)(a.Text, {
+                    }) : (0, i.jsx)(s.Text, {
                         variant: "text-sm/medium",
                         color: "currentColor",
-                        children: s
+                        children: a
                     });
                     t = (0, i.jsx)(K.OZ, {
-                        scrollManager: ea,
+                        scrollManager: es,
                         content: e,
                         channel: l
                     })
@@ -290,7 +290,7 @@ function en(e) {
                             alignItems: "center"
                         },
                         children: c > 0 ? (0, i.jsxs)(i.Fragment, {
-                            children: [(0, i.jsx)(a.Text, {
+                            children: [(0, i.jsx)(s.Text, {
                                 variant: "text-sm/medium",
                                 color: "currentColor",
                                 children: Q.intl.format(n, {
@@ -303,17 +303,17 @@ function en(e) {
                                 },
                                 height: 4,
                                 width: 4
-                            }), (0, i.jsx)(a.Text, {
+                            }), (0, i.jsx)(s.Text, {
                                 variant: "text-sm/medium",
                                 color: "currentColor",
                                 children: Q.intl.format(Q.t.CBftDc, {
                                     count: c
                                 })
                             })]
-                        }) : (0, i.jsx)(a.Text, {
+                        }) : (0, i.jsx)(s.Text, {
                             variant: "text-sm/medium",
                             color: "currentColor",
-                            children: s
+                            children: a
                         })
                     });
                     t = (0, i.jsx)(K.GN, {
@@ -332,7 +332,7 @@ function en(e) {
     }
     if (null == t && (0, o.pk)(l) && ep && ex.includes(q.i.SUMMARIES) && (t = (0, i.jsx)(K.UK, {
             channel: l,
-            scrollManager: ea
+            scrollManager: es
         })), m.error) n = (0, i.jsx)(K.Ez, {
         loading: m.loadingMore,
         onClick: () => {

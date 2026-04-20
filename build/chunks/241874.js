@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(143413),
-    a = n(860227),
+    a = n(143413),
+    s = n(860227),
     r = n(643204),
     o = n(449859),
     c = n(535421),
@@ -15,8 +15,8 @@ let h = l.memo(function(e) {
         let {
             message: t,
             channel: n,
-            compact: s = !1,
-            groupId: a,
+            compact: a = !1,
+            groupId: s,
             isGroupStart: o,
             usernameProfile: h,
             avatarProfile: m,
@@ -37,9 +37,9 @@ let h = l.memo(function(e) {
             channel: n,
             repliedMessage: _,
             author: g,
-            compact: s,
-            subscribeToGroupId: a,
-            showTimestampOnHover: !o && s && t.type !== u.lAJ.REPLY,
+            compact: a,
+            subscribeToGroupId: s,
+            showTimestampOnHover: !o && a && t.type !== u.lAJ.REPLY,
             renderPopout: c.A,
             showAvatarPopout: m,
             showUsernamePopout: h,
@@ -70,7 +70,7 @@ function A(e) {
         usernameProfile: p,
         avatarProfile: f
     } = l;
-    if ((0, s.A)(u)) return null;
+    if ((0, a.A)(u)) return null;
     let E = u.id === _;
     return E || A || null != r ? (0, i.jsx)(h, {
         message: u,
@@ -89,7 +89,7 @@ function A(e) {
         compact: !0,
         timestamp: u.timestamp,
         isInline: !1,
-        id: (0, a.xl)(u),
+        id: (0, s.xl)(u),
         isVisibleOnlyOnHover: !0,
         cozyAlt: !0
     })

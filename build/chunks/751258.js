@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(791332),
     l = n.n(i),
-    s = n(715943),
-    a = n(843472),
+    a = n(715943),
+    s = n(843472),
     r = n(58149),
     o = n(508675),
     c = n(649963),
@@ -45,7 +45,7 @@ let A = /\\([*?+/])/g,
                 let {
                     channel: n
                 } = t;
-                if (null != n.guild_id) return s.A.changeNickname(n.guild_id, n.id, m.ME, e), {
+                if (null != n.guild_id) return a.A.changeNickname(n.guild_id, n.id, m.ME, e), {
                     content: ""
                 }
             }
@@ -60,8 +60,8 @@ let A = /\\([*?+/])/g,
                 if (n || !h.A.hasPresent(i.id)) return;
                 let l = h.A.getMessages(i.id).last();
                 if (null == l || null == l.id) return;
-                let s = o.Ay.getDisambiguatedEmojiContext(i.guild_id).getByName(e.trim().slice(2, -1));
-                if (null != s) return (0, c.BB)(i.id, l.id, (0, d.jq)(s)), {
+                let a = o.Ay.getDisambiguatedEmojiContext(i.guild_id).getByName(e.trim().slice(2, -1));
+                if (null != a) return (0, c.BB)(i.id, l.id, (0, d.jq)(a)), {
                     content: ""
                 }
             }
@@ -78,10 +78,10 @@ let A = /\\([*?+/])/g,
                 if (null == l || null == l.id) return {
                     content: ""
                 };
-                let [s, r, o, c] = Array.from(e.match(this.match.regex) ?? []), d = c?.split("") ?? [];
+                let [a, r, o, c] = Array.from(e.match(this.match.regex) ?? []), d = c?.split("") ?? [];
                 r = r.replace(A, (e, t) => t), o = o.replace(A, (e, t) => t);
                 let u = d.includes("g") ? l.content.replaceAll(r, o) : l.content.replace(r, o);
-                return (null == u || "" === u.trim()) && 0 === l.attachments.length ? a.A.deleteMessage(i.id, l.id) : u !== l.content && a.A.editMessage(i.id, l.id, {
+                return (null == u || "" === u.trim()) && 0 === l.attachments.length ? s.A.deleteMessage(i.id, l.id) : u !== l.content && s.A.editMessage(i.id, l.id, {
                     content: u
                 }), {
                     content: ""

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(311907),
-    a = n(554146),
+    a = n(311907),
+    s = n(554146),
     r = n(397927),
     o = n(308368),
     c = n(688810),
@@ -41,7 +41,7 @@ function N(e) {
         analyticsLocations: O
     } = (0, c.Ay)(), P = (0, u.s)({
         channel: t
-    }), k = (0, s.bG)([m.A], () => m.A.isInProgress());
+    }), k = (0, a.bG)([m.A], () => m.A.isInProgress());
 
     function w() {
         (0, A.Tv)(t, void 0, "Plus Button")
@@ -56,7 +56,7 @@ function N(e) {
     }
 
     function F() {
-        (0, d.Dr)(a.M.POLLS_CHAT_INPUT_COACHMARK, {
+        (0, d.Dr)(s.M.POLLS_CHAT_INPUT_COACHMARK, {
             dismissAction: S.i.TAKE_ACTION
         }), (0, r.mMO)(async () => {
             let {

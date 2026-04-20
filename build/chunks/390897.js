@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(158954),
-    a = n(506774),
+    a = n(158954),
+    s = n(506774),
     r = n(397927),
     o = n(221314),
     c = n(985018);
@@ -18,7 +18,7 @@ function u(e) {
         onClose: n,
         handleResolveFlag: u
     } = e, [h, m] = l.useState(!1);
-    return (0, i.jsx)(s.Modal, {
+    return (0, i.jsx)(a.Modal, {
         transitionState: t,
         onClose: n,
         title: c.intl.string(o.default["8R4euh"]),
@@ -26,7 +26,7 @@ function u(e) {
         actions: [{
             text: c.intl.string(o.default.ctefO2),
             onClick: () => {
-                h && a.w.set(d, !0), n(), u()
+                h && s.w.set(d, !0), n(), u()
             }
         }],
         actionBarInput: (0, i.jsx)(r.Checkbox, {

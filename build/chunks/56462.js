@@ -1,12 +1,12 @@
 /** chunk id: 56462 params = (module,exports,require) **/
 n.d(t, {
-    CW: () => s,
+    CW: () => a,
     u6: () => l
 });
 var i = n(985018);
 let l = "https://discord.com/safety/understanding-and-avoiding-common-scams";
 
-function s() {
+function a() {
     return [{
         title: i.intl.string(i.t.wSZfJR),
         description: i.intl.string(i.t.CRwzW5)

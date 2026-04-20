@@ -6,8 +6,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(735438),
     o = n.n(r),
     c = n(311907),
@@ -68,7 +68,7 @@ class M extends l.PureComponent {
             activity: e
         } = this.props;
         return (0, i.jsxs)("div", {
-            className: a()(j.F4, {
+            className: s()(j.F4, {
                 [j.gV]: this.state.fadeIn
             }),
             children: [(0, i.jsx)("div", {
@@ -87,7 +87,7 @@ function L(e) {
     let {
         activityInviteEducationActivity: t,
         isFocused: n,
-        typingUsers: s,
+        typingUsers: a,
         className: r,
         channel: o,
         isThreadCreation: c,
@@ -104,31 +104,31 @@ function L(e) {
             enabled: h
         }), (0, m.g)(p, C, [], {
             enabled: h
-        }), 0 === s.length && !(A > 0)) return null != t ? (0, i.jsx)(M, {
+        }), 0 === a.length && !(A > 0)) return null != t ? (0, i.jsx)(M, {
         activity: t,
         isFocused: n
     }) : null;
-    let [x, S, I] = s, T = "";
-    1 === s.length ? T = b.intl.format(b.t.lJ9sZX, {
+    let [x, S, I] = a, T = "";
+    1 === a.length ? T = b.intl.format(b.t.lJ9sZX, {
         a: x
-    }) : 2 === s.length ? T = b.intl.format(b.t.rB0CUa, {
+    }) : 2 === a.length ? T = b.intl.format(b.t.rB0CUa, {
         a: x,
         b: S
-    }) : 3 === s.length ? T = b.intl.format(b.t.StKThj, {
+    }) : 3 === a.length ? T = b.intl.format(b.t.StKThj, {
         a: x,
         b: S,
         c: I
-    }) : s.length > 3 && (T = b.intl.format(b.t.Q8lUnE, {}));
-    let v = f && s.length > 0 && s.length <= 3 ? b.intl.format(b.t["qD/0qZ"], {}) : T;
+    }) : a.length > 3 && (T = b.intl.format(b.t.Q8lUnE, {}));
+    let v = f && a.length > 0 && a.length <= 3 ? b.intl.format(b.t["qD/0qZ"], {}) : T;
     return (0, i.jsxs)("div", {
-        className: a()(j.IW, {
+        className: s()(j.IW, {
             "stop-animation": !n,
             [j.Il]: h
         }, r),
         children: [(0, i.jsxs)("div", {
             className: j.y5,
             ref: g,
-            children: [s.length > 0 && !1 !== d && (0, i.jsx)(u.nvX, {
+            children: [a.length > 0 && !1 !== d && (0, i.jsx)(u.nvX, {
                 className: j.gO,
                 dotRadius: 3.5,
                 themed: !0
@@ -177,18 +177,18 @@ function P(e) {
         channel: t,
         isThreadCreation: n = !1,
         ...l
-    } = e, s = D(t), a = {
+    } = e, a = D(t), s = {
         ...l,
         baseTextColor: (0, u.rdh)(d.A.colors.INTERACTIVE_TEXT_DEFAULT).hex(),
         activeTextColor: (0, u.rdh)(d.A.colors.INTERACTIVE_TEXT_DEFAULT).hex(),
         activityInviteEducationActivity: O(t),
-        typingUsers: n ? [] : s,
+        typingUsers: n ? [] : a,
         isFocused: (0, c.bG)([I.A], () => I.A.isFocused()),
         guildId: t.guild_id,
         channel: t,
         isThreadCreation: n
     };
     return (0, i.jsx)(L, {
-        ...a
+        ...s
     })
 }

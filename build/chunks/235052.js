@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(311907),
-    s = n(397927),
-    a = n(308368),
+    a = n(397927),
+    s = n(308368),
     r = n(627363),
     o = n(616356),
     c = n(961350),
@@ -26,11 +26,11 @@ function _(e, t, n) {
         location: n
     }, {
         autoTrackExposure: !1
-    }), s = (0, l.bG)([c.default], () => c.default.getId()), A = (0, h.Ay)(e, t.guild_id)[0], g = (0, l.bG)([o.A], () => null != o.A.getStreamForUser(e, t.getGuildId())), _ = (0, r.YY)(A?.application_id).data, p = (0, u.A)(e, t.id);
-    return s !== e && null != A && null != _ && i && p && !g ? {
+    }), a = (0, l.bG)([c.default], () => c.default.getId()), A = (0, h.Ay)(e, t.guild_id)[0], g = (0, l.bG)([o.A], () => null != o.A.getStreamForUser(e, t.getGuildId())), _ = (0, r.YY)(A?.application_id).data, p = (0, u.A)(e, t.id);
+    return a !== e && null != A && null != _ && i && p && !g ? {
         playingApplication: _,
         handleRequestToStream: function(n) {
-            a.A.sendActivityInvite({
+            s.A.sendActivityInvite({
                 type: m.xL.STREAM_REQUEST,
                 channelId: t.id,
                 activity: A,
@@ -44,16 +44,16 @@ function _(e, t, n) {
 
 function p(e, t) {
     let n = _(e, t, "useRequestToStreamItem");
-    return null == n ? null : (0, i.jsx)(s.Drp, {
+    return null == n ? null : (0, i.jsx)(a.Drp, {
         id: "request-to-stream",
         label: g.intl.format(A.default["8qq+H7"], {
             applicationName: n.playingApplication.name
         }),
         action: () => n.handleRequestToStream("request to stream item"),
-        icon: s.ofK,
+        icon: a.ofK,
         leadingAccessory: {
             type: "icon",
-            icon: s.ofK
+            icon: a.ofK
         }
     }, "request-to-stream")
 }

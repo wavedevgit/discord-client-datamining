@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(827734),
-    a = n(582754),
+    a = n(827734),
+    s = n(582754),
     r = n(397927),
     o = n(58149),
     c = n(544028),
@@ -44,13 +44,13 @@ function g(e) {
         return null != C && (async () => {
             let [{
                 default: l
-            }, s] = await Promise.all([Promise.resolve().then(n.t.bind(n, 883885, 23)), (0, a.Mw)(t) ? C.dark() : C.light()]);
+            }, a] = await Promise.all([Promise.resolve().then(n.t.bind(n, 883885, 23)), (0, s.Mw)(t) ? C.dark() : C.light()]);
             i || null == I.current || (e = l.loadAnimation({
                 container: I.current,
                 renderer: "svg",
                 loop: !0,
                 autoplay: !0,
-                animationData: s
+                animationData: a
             }))
         })(), () => {
             i = !0, null != e && (e.destroy(), e = void 0)
@@ -113,7 +113,7 @@ function g(e) {
                 className: m.qr,
                 children: [(0, i.jsx)(r.mir, {
                     size: "xs",
-                    color: s.A.unsafe_rawColors.PRIMARY_400.css,
+                    color: a.A.unsafe_rawColors.PRIMARY_400.css,
                     className: m.Kk
                 }), (0, i.jsx)(r.Text, {
                     variant: "text-sm/normal",

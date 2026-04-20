@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(208798),
     o = n(23339),
     c = n(311907),
@@ -53,7 +53,7 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
         clamp: !0
     },
     O = e => {
-        let t, s, {
+        let t, a, {
                 participant: r,
                 isUpsellEnabled: o,
                 shape: h,
@@ -74,11 +74,11 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
             t = !1
         }
         try {
-            s = (0, C.OI)(M)
+            a = (0, C.OI)(M)
         } catch (e) {
-            s = !1
+            a = !1
         }
-        let O = t || s,
+        let O = t || a,
             {
                 location: P
             } = (0, A.p)(),
@@ -99,16 +99,16 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                 !y && O && (f.default.track(S.HAw.PREMIUM_UPSELL_VIEWED, {
                     type: I.e.STREAM_QUALITY_INDICATOR,
                     has_premium_stream_fps: t,
-                    has_premium_stream_resolution: s,
+                    has_premium_stream_resolution: a,
                     location_stack: L
                 }), b(!0))
-            }, [t, s, O, y, b, L]), null == M) return null;
+            }, [t, a, O, y, b, L]), null == M) return null;
         let G = (0, i.jsx)(u.m, {
             text: D ? T.intl.string(T.t.q8TiVt) : O ? T.intl.string(T.t.IHgpEn) : T.intl.string(T.t.vLb0VW),
             position: "bottom",
             children: (0, i.jsxs)(m.DUT, {
                 onClick: U,
-                className: a()(v.t5, N, _.u1[h], D ? v.Y5 : v.Lc, {
+                className: s()(v.t5, N, _.u1[h], D ? v.Y5 : v.Lc, {
                     [v.vk]: w && O
                 }),
                 children: [O ? (0, i.jsx)(m.tvc, {
@@ -125,7 +125,7 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
         });
         return (0, i.jsx)(m.LpS, {
             text: G,
-            className: a()(j, v.AA, {
+            className: s()(j, v.AA, {
                 [v.Dc]: O && R
             }),
             color: d.A.unsafe_rawColors.PRIMARY_500.css,
@@ -136,7 +136,7 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
         let {
             participant: t,
             showQuality: n,
-            isUpsellEnabled: s = !0,
+            isUpsellEnabled: a = !0,
             size: o,
             className: c,
             premiumIndicator: d
@@ -159,7 +159,7 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                 popoutProps: l
             } = e;
             return (0, i.jsxs)("div", {
-                className: a()(v.dr, n),
+                className: s()(v.dr, n),
                 ...l,
                 children: [f((e, n) => n ? (0, i.jsx)(r.animated.div, {
                     style: e,
@@ -168,7 +168,7 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                         participant: t,
                         size: o,
                         shape: m.EGs.ROUND_LEFT,
-                        isUpsellEnabled: s,
+                        isUpsellEnabled: a,
                         didTrackUpsellViewed: u,
                         setDidTrackUpsellViewed: h,
                         premiumIndicator: d,

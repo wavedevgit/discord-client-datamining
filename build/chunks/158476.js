@@ -4,18 +4,18 @@ n.d(t, {
 });
 var i = n(311907),
     l = n(73153),
-    s = n(857071);
-let a = null,
+    a = n(857071);
+let s = null,
     r = null;
 
 function o() {
-    let e = s.A.mostRecentLurkedGuildId();
-    null != e ? (a = e, r = null) : (r = null != a ? a : null, a = null)
+    let e = a.A.mostRecentLurkedGuildId();
+    null != e ? (s = e, r = null) : (r = null != s ? s : null, s = null)
 }
 class c extends i.Ay.Store {
     static displayName = "LurkerModePopoutStore";
     initialize() {
-        this.syncWith([s.A], o)
+        this.syncWith([a.A], o)
     }
     shouldShowPopout(e) {
         return r === e

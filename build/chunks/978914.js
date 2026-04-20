@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(735438),
     l = n.n(i),
-    s = n(311907),
-    a = n(562465),
+    a = n(311907),
+    s = n(562465),
     r = n(73153),
     o = n(320501),
     c = n(222823),
@@ -22,9 +22,9 @@ function A(e) {
         enabled: i = !0
     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
         loaded: l,
-        message: a,
+        message: s,
         error: r
-    } = (0, s.cf)([d.A, o.A, c.Ay], () => {
+    } = (0, a.cf)([d.A, o.A, c.Ay], () => {
         let e = c.Ay.lastMessageId(n),
             t = d.A.getMessageRequestPreview(n);
         if (null == t.message && null != e) {
@@ -36,11 +36,11 @@ function A(e) {
             }
         }
         return t
-    }, [n]), u = (0, s.bG)([d.A], () => d.A.shouldLoadMessageRequestPreview(n), [n]);
-    return i && !l && null == a && u && (t = n, h.add(t), null == m && (m = setTimeout(g, 0))), {
+    }, [n]), u = (0, a.bG)([d.A], () => d.A.shouldLoadMessageRequestPreview(n), [n]);
+    return i && !l && null == s && u && (t = n, h.add(t), null == m && (m = setTimeout(g, 0))), {
         loaded: l,
         error: r,
-        message: a
+        message: s
     }
 }
 async function g() {
@@ -53,7 +53,7 @@ async function g() {
 async function _() {
     let e = Array.from(h).slice(0, 25);
     try {
-        let t = await a.Bo.get({
+        let t = await s.Bo.get({
             url: u.Rsh.MESSAGE_REQUESTS_SUPPLEMENTAL_DATA,
             query: {
                 channel_ids: e

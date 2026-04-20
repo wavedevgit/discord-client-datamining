@@ -1,12 +1,12 @@
 /** chunk id: 623075 params = (module,exports,require) **/
 n.d(t, {
-    V: () => a
+    V: () => s
 });
 var i = n(311907),
     l = n(994500),
-    s = n(652215);
+    a = n(652215);
 
-function a(e) {
+function s(e) {
     let t = (0, i.bG)([l.A], () => l.A.getRelationshipType(e), [e]);
-    return t === s.eA$.NONE || t === s.eA$.BLOCKED || t === s.eA$.PENDING_INCOMING
+    return t === a.eA$.NONE || t === a.eA$.BLOCKED || t === a.eA$.PENDING_INCOMING
 }

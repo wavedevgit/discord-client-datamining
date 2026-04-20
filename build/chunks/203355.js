@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(311907),
     o = n(435371),
     c = n(397927),
@@ -49,10 +49,10 @@ function V(e) {
         participant: t,
         selected: n,
         focused: l,
-        idle: s,
-        width: a,
+        idle: a,
+        width: s,
         premiumIndicator: o
-    } = e, c = (0, r.bG)([T.A], () => T.A.getActiveStreamForUser(t.user.id, t.stream.guildId)), d = (0, k.VE)(a);
+    } = e, c = (0, r.bG)([T.A], () => T.A.getActiveStreamForUser(t.user.id, t.stream.guildId)), d = (0, k.VE)(s);
     return (0, i.jsxs)(i.Fragment, {
         children: [n || l ? null : (0, i.jsx)(P.A, {
             participant: t
@@ -60,7 +60,7 @@ function V(e) {
             size: g.Ay.Sizes.SMALL,
             className: B.Ok,
             participant: t,
-            showQuality: !d && !s,
+            showQuality: !d && !a,
             isUpsellEnabled: !1,
             premiumIndicator: o
         })]
@@ -71,7 +71,7 @@ function W(e) {
     let {
         participant: t,
         selected: n,
-        onVideoResize: s,
+        onVideoResize: a,
         fit: g,
         popoutType: _,
         width: x,
@@ -113,8 +113,8 @@ function W(e) {
     });
     if (null != $ && !n && null != V && y.Ay.supports(G.O5.VIDEO)) return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(S.A, {
-            onResize: s,
-            wrapperClassName: a()(_ !== A.N.CALL_TILE ? B.tN : void 0, P),
+            onResize: a,
+            wrapperClassName: s()(_ !== A.N.CALL_TILE ? B.tN : void 0, P),
             className: B.Qs,
             streamId: J,
             videoComponent: V,
@@ -132,13 +132,13 @@ function W(e) {
         })]
     });
     else return (0, i.jsxs)("div", {
-        className: a()(B.Qs, B.Rh, {
+        className: s()(B.Qs, B.Rh, {
             [B.EX]: en
         }),
         children: [(0, i.jsx)(C.A, {
             noImage: !0,
             noText: !0,
-            className: a()(B.HL, {
+            className: s()(B.HL, {
                 [B.gH]: null == $
             }),
             stream: t.stream
@@ -151,7 +151,7 @@ function W(e) {
                     text: x < 175 ? F.intl.string(F.t.I6JG46) : F.intl.string(F.t["7Xq/nV"])
                 })
             }), Z ? (0, i.jsx)("div", {
-                className: a()(B.lO, B.EU),
+                className: s()(B.lO, B.EU),
                 children: (0, i.jsx)(o.m_, {
                     text: F.intl.string(F.t.wCrzut),
                     children: (0, i.jsx)(c.K0, {

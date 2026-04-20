@@ -1,63 +1,54 @@
 /** chunk id: 157207 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => d
 });
 var i = n(627968),
     l = n(64700),
-    s = n(110259),
     a = n(397927),
-    r = n(139286),
-    o = n(450510),
-    c = n(399925),
-    d = n(237607),
-    u = n(985018),
-    h = n(280508);
+    s = n(399925),
+    r = n(237607),
+    o = n(985018),
+    c = n(280508);
 
-function m(e) {
+function d(e) {
     let {
         onOpenClips: t,
         lastClipsSession: n,
-        closePopout: m
+        closePopout: d
     } = e;
     return (l.useEffect(() => () => {
-        (0, c.jA)()
-    }, []), (0, r.A)({
-        type: s.ImpressionTypes.VIEW,
-        name: s.ImpressionNames.HOTSPOT,
-        properties: {
-            hotspot_location: o._2.CLIPS_CHANNEL_ATTACH_REMINDER
-        }
-    }), null == n) ? null : (0, i.jsxs)("div", {
-        className: h.WG,
+        (0, s.jA)()
+    }, []), null == n) ? null : (0, i.jsxs)("div", {
+        className: c.WG,
         children: [(0, i.jsx)("div", {
-            className: h.Yt,
-            children: (0, i.jsx)(d.A, {})
+            className: c.Yt,
+            children: (0, i.jsx)(r.A, {})
         }), (0, i.jsx)(a.Heading, {
-            className: h.wx,
+            className: c.wx,
             color: "text-strong",
             variant: "heading-md/extrabold",
-            children: u.intl.format(u.t["+qxkzC"], {
+            children: o.intl.format(o.t["+qxkzC"], {
                 count: n.newClipIds.length
             })
         }), (0, i.jsx)(a.Text, {
             color: "text-default",
-            className: h.__invalid_content,
+            className: c.__invalid_content,
             variant: "text-sm/medium",
-            children: u.intl.format(u.t["7XX0/X"], {
+            children: o.intl.format(o.t["7XX0/X"], {
                 applicationName: n.applicationName
             })
         }), (0, i.jsx)("div", {
-            className: h.NC,
+            className: c.NC,
             children: (0, i.jsxs)(a.ButtonGroup, {
                 children: [(0, i.jsx)(a.Button, {
                     variant: "secondary",
-                    text: u.intl.string(u.t["7r5Z19"]),
+                    text: o.intl.string(o.t["7r5Z19"]),
                     onClick: function() {
-                        (0, o.sF)(o._2.CLIPS_CHANNEL_ATTACH_REMINDER), m()
+                        (0, s.Mt)(!1), d()
                     }
                 }), (0, i.jsx)(a.Button, {
                     variant: "primary",
-                    text: u.intl.string(u.t.md4qKz),
+                    text: o.intl.string(o.t.md4qKz),
                     onClick: t
                 })]
             })

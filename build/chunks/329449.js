@@ -4,8 +4,8 @@ n.d(t, {
 }), n(142703);
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(208798),
     o = n(311907),
     c = n(397927),
@@ -25,32 +25,32 @@ let S = l.memo(function(e) {
         let {
             channelId: t,
             width: n
-        } = e, s = (0, o.bG)([u.A], () => u.A.useReducedMotion), a = (0, o.bG)([p.Ay], () => p.Ay.getMostRecentMessageCombo(t), [t]), [d, h] = l.useState(!1);
+        } = e, a = (0, o.bG)([u.A], () => u.A.useReducedMotion), s = (0, o.bG)([p.Ay], () => p.Ay.getMostRecentMessageCombo(t), [t]), [d, h] = l.useState(!1);
         l.useEffect(() => {
-            if (a?.displayed) return;
+            if (s?.displayed) return;
             h(!1), setImmediate(() => {
-                h((null != a ? (0, f.RL)(a.combo) : 0) > 0)
+                h((null != s ? (0, f.RL)(s.combo) : 0) > 0)
             });
             let e = setTimeout(() => {
-                h(!1), null != a && (0, g.Nu)(a)
+                h(!1), null != s && (0, g.Nu)(s)
             }, 2e3);
             return () => clearTimeout(e)
-        }, [a]);
-        let m = null != a ? "100%" : "200%",
+        }, [s]);
+        let m = null != s ? "100%" : "200%",
             A = (0, c.zhh)({
                 opacity: +!!d,
                 translateY: d ? "0" : m,
                 pointerEvents: "none",
                 width: n,
-                config: s ? r.config.stiff : r.config.slow
+                config: a ? r.config.stiff : r.config.slow
             }, "animate-always");
-        return null != a && (0, i.jsx)(r.animated.div, {
+        return null != s && (0, i.jsx)(r.animated.div, {
             className: x.Gi,
             style: A,
             children: (0, i.jsx)(c.Text, {
                 className: x.fX,
                 variant: "text-sm/bold",
-                children: (0, f.RL)(a.combo)
+                children: (0, f.RL)(s.combo)
             })
         })
     }),
@@ -59,7 +59,7 @@ let S = l.memo(function(e) {
             value: t,
             multiplier: n
         } = e, {
-            color: s,
+            color: a,
             square: r,
             flair: o
         } = l.useMemo(() => (0, f.HN)(n), [n]);
@@ -71,12 +71,12 @@ let S = l.memo(function(e) {
             }), (0, i.jsxs)("div", {
                 className: x._Z,
                 style: {
-                    color: s
+                    color: a
                 },
                 children: [(0, i.jsx)(c.Text, {
                     className: x.On,
                     style: {
-                        color: s
+                        color: a
                     },
                     variant: "text-sm/bold",
                     children: C.intl.format(C.t["6bgVlq"], {
@@ -84,25 +84,25 @@ let S = l.memo(function(e) {
                     })
                 }), r && (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)("div", {
-                        className: a()(x.QA, x.kb),
+                        className: s()(x.QA, x.kb),
                         style: {
-                            backgroundColor: s
+                            backgroundColor: a
                         }
                     }), (0, i.jsx)("div", {
-                        className: a()(x.QA, x.pG),
+                        className: s()(x.QA, x.pG),
                         style: {
-                            backgroundColor: s
+                            backgroundColor: a
                         }
                     })]
                 }), o && (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)("div", {
-                        className: a()(x.ox, x.kb),
+                        className: s()(x.ox, x.kb),
                         children: (0, i.jsx)(A.A, {
                             width: 24,
                             height: 24
                         })
                     }), (0, i.jsx)("div", {
-                        className: a()(x.ox, x.pG),
+                        className: s()(x.ox, x.pG),
                         children: (0, i.jsx)(A.A, {
                             width: 24,
                             height: 24
@@ -119,10 +119,10 @@ let S = l.memo(function(e) {
     T = l.memo(function(e) {
         let {
             channelId: t
-        } = e, n = (0, o.bG)([h.default], () => h.default.getId()), s = (0, o.bG)([m.A], () => m.A.isTyping(t, n), [t, n]), a = (0, o.bG)([_.A], () => _.A.isEnabled()), u = (0, o.bG)([p.Ay], () => p.Ay.isComboing(n, t), [t, n]), {
+        } = e, n = (0, o.bG)([h.default], () => h.default.getId()), a = (0, o.bG)([m.A], () => m.A.isTyping(t, n), [t, n]), s = (0, o.bG)([_.A], () => _.A.isEnabled()), u = (0, o.bG)([p.Ay], () => p.Ay.isComboing(n, t), [t, n]), {
             ref: A,
             width: g = 0
-        } = (0, d.Ay)(), [f, C] = l.useState(!1), T = (0, E.A)(t), v = a && u && s;
+        } = (0, d.Ay)(), [f, C] = l.useState(!1), T = (0, E.A)(t), v = s && u && a;
         l.useEffect(() => {
             v && C(!0);
             let e = setTimeout(() => C(v), 1e3);

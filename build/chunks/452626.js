@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(990078),
-    s = n(397927),
-    a = n(353411);
+    a = n(397927),
+    s = n(353411);
 
 function r(e) {
     let {
@@ -24,13 +24,13 @@ function r(e) {
         loading: g,
         disabled: _,
         onClick: p
-    } = (0, a._B)(t, n, r);
+    } = (0, s._B)(t, n, r);
     return (0, i.jsx)(l.m, {
         text: A,
-        children: (0, i.jsx)(s.Button, {
+        children: (0, i.jsx)(a.Button, {
             variant: c,
             size: o,
-            icon: s.L5T,
+            icon: a.L5T,
             text: m,
             fullWidth: d,
             onClick: () => {

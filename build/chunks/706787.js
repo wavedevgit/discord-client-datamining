@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(208798),
-    a = n(311907),
+    a = n(208798),
+    s = n(311907),
     r = n(397927),
     o = n(565645),
     c = n(775602),
@@ -25,7 +25,7 @@ function p(e) {
     } = e, {
         emoji: p,
         sentAt: f
-    } = n, E = (0, a.bG)([c.A], () => c.A.useReducedMotion), [C, x] = l.useState(!0), S = !E, I = (0, r.pnh)(C, {
+    } = n, E = (0, s.bG)([c.A], () => c.A.useReducedMotion), [C, x] = l.useState(!0), S = !E, I = (0, r.pnh)(C, {
         from: {
             rotate: -120
         },
@@ -35,7 +35,7 @@ function p(e) {
         leave: {
             rotate: -120
         },
-        config: s.config.default,
+        config: a.config.default,
         onRest: (e, t) => {
             let {
                 phase: n
@@ -54,7 +54,7 @@ function p(e) {
         let {
             rotate: n
         } = e;
-        return t && (0, i.jsx)(s.animated.div, {
+        return t && (0, i.jsx)(a.animated.div, {
             className: h._,
             style: {
                 transform: n.to(_)

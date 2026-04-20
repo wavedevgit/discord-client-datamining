@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(158954),
     o = n(311907),
     c = n(397927),
@@ -28,7 +28,7 @@ function S(e) {
         channel: t,
         previewIcon: n,
         onIconChange: l,
-        onIconRemove: s,
+        onIconRemove: a,
         analyticsLocations: r,
         petite: o = !1,
         className: d,
@@ -37,9 +37,9 @@ function S(e) {
         analyticsLocations: _
     } = (0, m.Ay)(r, h.A.GROUP_DM_ICON_EDITOR), p = o ? 32 : 64;
     return (0, i.jsxs)("div", {
-        className: a()(x.r2, d),
+        className: s()(x.r2, d),
         children: [(0, i.jsxs)(c.DUT, {
-            className: a()(x.zc, {
+            className: s()(x.zc, {
                 [x.ud]: o
             }),
             "aria-label": C.intl.string(C.t["0qPSMV"]),
@@ -65,7 +65,7 @@ function S(e) {
             })]
         }), null != g && u ? (0, i.jsx)(c.QWc, {
             variant: "critical",
-            onClick: s,
+            onClick: a,
             "aria-label": C.intl.string(C.t["uY+Nk/"]),
             text: C.intl.string(C.t["uY+Nk/"]),
             textVariant: "text-sm/medium",
@@ -79,8 +79,8 @@ let I = function(e) {
     let {
         channelId: t,
         onClose: n,
-        transitionState: s,
-        setHasPendingChanges: a,
+        transitionState: a,
+        setHasPendingChanges: s,
         closeOrShowDiscardChangesAlert: A,
         location: I
     } = e, T = (0, o.bG)([_.A], () => _.A.getChannel(t)), v = T?.name, N = (0, g.e5)(T), [y, b] = l.useState(v ?? ""), [j, R] = l.useState(void 0), M = void 0 !== j, {
@@ -94,8 +94,8 @@ let I = function(e) {
         old_icon_set: T?.icon != null
     };
     return (l.useEffect(() => {
-        a(y !== v || M)
-    }, [y, v, M, a]), (0, u.Ay)(() => (p.default.track(E.HAw.GDM_EDIT_INTERACTED, {
+        s(y !== v || M)
+    }, [y, v, M, s]), (0, u.Ay)(() => (p.default.track(E.HAw.GDM_EDIT_INTERACTED, {
         ...D,
         action: "opened"
     }), () => {
@@ -136,7 +136,7 @@ let I = function(e) {
                     disabled: y === v && !M
                 }],
                 onClose: () => Promise.resolve(A()),
-                transitionState: s,
+                transitionState: a,
                 children: (0, i.jsxs)("div", {
                     className: x.jE,
                     children: [(0, i.jsx)(S, {

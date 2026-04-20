@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(417597),
     l = n(933958),
-    s = n(969151),
-    a = n(108959),
+    a = n(969151),
+    s = n(108959),
     r = n(734057),
     o = n(626360),
     c = n(5867);
@@ -22,6 +22,6 @@ let d = "no_text_activity",
 function h() {
     let e = (0, i.bG)([l.Ay], () => l.Ay.getCurrentEmbeddedActivity()),
         t = (0, i.bG)([l.Ay], () => l.Ay.getActivityPanelMode()),
-        n = (0, s.H)(e?.location);
-    return void 0 === e || (0, a.A)(n, r.A) ? u[d] : u[t]
+        n = (0, a.H)(e?.location);
+    return void 0 === e || (0, s.A)(n, r.A) ? u[d] : u[t]
 }

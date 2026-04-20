@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(503698),
-    s = n.n(l),
-    a = n(63104),
+    a = n.n(l),
+    s = n(63104),
     r = n(474462);
 
 function o(e) {
@@ -17,7 +17,7 @@ function o(e) {
         roleColor: c,
         roleName: d
     } = e;
-    return t = o ? (0, i.jsx)(a.A, {
+    return t = o ? (0, i.jsx)(s.A, {
         size: 12,
         color: c,
         className: r.TS
@@ -27,7 +27,7 @@ function o(e) {
             backgroundColor: c
         }
     }), (0, i.jsxs)("div", {
-        className: s()(n, r.JC),
+        className: a()(n, r.JC),
         style: {
             "--custom-role-label-color": c
         },

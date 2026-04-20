@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(835245),
-    a = n(311907),
+    a = n(835245),
+    s = n(311907),
     r = n(73153),
     o = n(775602),
     c = n(58149),
@@ -20,23 +20,23 @@ function A(e) {
         guildId: n,
         userId: A,
         containerDimensions: g
-    } = e, _ = (0, a.bG)([o.A], () => o.A.useReducedMotion), [p, f] = l.useState([]), E = p.length < 50;
+    } = e, _ = (0, s.bG)([o.A], () => o.A.useReducedMotion), [p, f] = l.useState([]), E = p.length < 50;
     l.useEffect(() => {
         function e(e) {
             let {
                 channelId: i,
                 userId: l,
-                emoji: a,
+                emoji: s,
                 animationType: r,
                 animationId: o
             } = e;
             if (null != A && A !== l) return;
-            let u = null != a && null != r && null != o;
+            let u = null != s && null != r && null != o;
             if (i === t && !_ && E && u) {
-                let e = (0, d.Br)(a),
-                    i = null != a.id && !a.animated,
+                let e = (0, d.Br)(s),
+                    i = null != s.id && !s.animated,
                     u = {
-                        id: (0, s.A)(),
+                        id: (0, a.A)(),
                         animationType: r,
                         animationId: o,
                         shouldResize: i,

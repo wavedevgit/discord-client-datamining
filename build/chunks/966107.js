@@ -9,14 +9,14 @@ n.d(t, {
 });
 var i = n(562465),
     l = n(73153),
-    s = n(830215),
-    a = n(961523),
+    a = n(830215),
+    s = n(961523),
     r = n(652215);
 async function o(e) {
     await i.Bo.put({
         url: r.Rsh.CHANNEL_RECIPIENT_ME(e),
         body: {
-            consent_status: a.w.ACCEPTED
+            consent_status: s.w.ACCEPTED
         },
         rejectWithError: !1
     }), l.h.dispatch({
@@ -29,7 +29,7 @@ function c(e) {
     return i.Bo.put({
         url: r.Rsh.CHANNEL_RECIPIENT_ME(e),
         body: {
-            consent_status: a.w.UNSPECIFIED
+            consent_status: s.w.UNSPECIFIED
         },
         rejectWithError: !1
     })
@@ -39,7 +39,7 @@ function d(e) {
     return i.Bo.put({
         url: r.Rsh.CHANNEL_RECIPIENT_ME(e),
         body: {
-            consent_status: a.w.PENDING
+            consent_status: s.w.PENDING
         },
         rejectWithError: !1
     })
@@ -63,5 +63,5 @@ function h(e) {
 }
 
 function m() {
-    s.A.getLocationMetadata()
+    a.A.getLocationMetadata()
 }

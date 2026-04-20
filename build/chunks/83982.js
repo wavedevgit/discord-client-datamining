@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(311907),
     o = n(990078),
     c = n(397927),
@@ -60,7 +60,7 @@ function w(e) {
     let {
         participant: t,
         channel: n,
-        inCall: s,
+        inCall: a,
         width: o,
         selected: c,
         popoutType: S,
@@ -83,7 +83,7 @@ function w(e) {
         guildId: n.guild_id,
         size: et,
         animateOnHover: !ee
-    }), el = (0, r.bG)([h.A], () => h.A.getSelectedParticipant(n.id)), es = (0, _.A)(M.x.DEFAULT, t.user.id), ea = (0, g.A)(t.user.id), er = {
+    }), el = (0, r.bG)([h.A], () => h.A.getSelectedParticipant(n.id)), ea = (0, _.A)(M.x.DEFAULT, t.user.id), es = (0, g.A)(t.user.id), er = {
         channel: n,
         selectedParticipant: el,
         user: W
@@ -97,8 +97,8 @@ function w(e) {
             user: n
         } = eo.current;
         e.isGuildStageVoice() && !J && t?.id === n.id && d.A.selectParticipant(e.id, null)
-    }, [J]), s && !Z && !G && J && !c && null != H && T.Ay.supports(M.O5.VIDEO)) ? null != es && null == ea ? (0, i.jsx)(b.A, {
-        avError: es,
+    }, [J]), a && !Z && !G && J && !c && null != H && T.Ay.supports(M.O5.VIDEO)) ? null != ea && null == es ? (0, i.jsx)(b.A, {
+        avError: ea,
         userId: t.id,
         width: o,
         selected: c
@@ -114,7 +114,7 @@ function w(e) {
         paused: B,
         userId: W.id
     }, K) : (0, i.jsx)("div", {
-        className: a()(D.Qs, {
+        className: s()(D.Qs, {
             [D.Kx]: w || U
         }),
         children: (0, i.jsx)(f.A, {

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(731738),
-    a = n(311907),
+    a = n(731738),
+    s = n(311907),
     r = n(397927),
     o = n(831062),
     c = n(994500),
@@ -23,7 +23,7 @@ function _(e) {
         senderId: p
     } = e, f = l.useCallback(() => {
         (0, d.xi)(t, [_])
-    }, [t, _]), E = (0, a.bG)([c.A], () => c.A.isBlocked(p)), C = l.useMemo(() => ({
+    }, [t, _]), E = (0, s.bG)([c.A], () => c.A.isBlocked(p)), C = l.useMemo(() => ({
         channelId: t,
         warningId: _,
         senderId: p,
@@ -34,7 +34,7 @@ function _(e) {
             ...C,
             viewName: h.gN.SAFETY_WARNING_BANNER
         }), o.A.increment({
-            name: s.K.SAFETY_WARNING_VIEW
+            name: a.K.SAFETY_WARNING_VIEW
         })
     }, [C]);
     let x = l.useCallback(e => {
@@ -51,7 +51,7 @@ function _(e) {
                 return n => {
                     let {
                         transitionState: l,
-                        onClose: s
+                        onClose: a
                     } = n;
                     return (0, i.jsx)(e, {
                         otherUserId: p,
@@ -59,7 +59,7 @@ function _(e) {
                         warningId: _,
                         warningType: u._j.INAPPROPRIATE_CONVERSATION_TIER_2,
                         transitionState: l,
-                        onClose: s
+                        onClose: a
                     })
                 }
             }, {
@@ -80,16 +80,16 @@ function _(e) {
                 return n => {
                     let {
                         transitionState: l,
-                        onClose: s
+                        onClose: a
                     } = n;
                     return (0, i.jsx)(e, {
                         transitionState: l,
                         onBlock: I,
                         onBlockAndReport: T,
                         onCancel: () => {
-                            s?.(), x(h.Wm.USER_BANNER_BLOCK_CANCEL)
+                            a?.(), x(h.Wm.USER_BANNER_BLOCK_CANCEL)
                         },
-                        onClose: s,
+                        onClose: a,
                         userId: p,
                         channelId: t
                     })

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(311907),
-    a = n(436857),
+    a = n(311907),
+    s = n(436857),
     r = n(387408),
     o = n(942075),
     c = n(384231),
@@ -35,24 +35,24 @@ let S = l.memo(function(e) {
     } = e, j = n.state === h.a.LOADED ? n.message : void 0, R = (0, _.X4)(j), M = (0, c.S)((t.editedTimestamp ?? t.timestamp).valueOf()), L = l.useMemo(() => {
         if (null == j) return null;
         let e = (0, r.A)(j);
-        if (e.type === C.lAJ.USER_JOIN) return (0, a.$)(x.intl.formatToParts(A.A.getSystemMessageUserJoin(e.id), {
+        if (e.type === C.lAJ.USER_JOIN) return (0, s.$)(x.intl.formatToParts(A.A.getSystemMessageUserJoin(e.id), {
             username: null != R ? R.nick : e.author.username,
             usernameHook: e => e
         }));
-        if (e.type === C.lAJ.ROLE_SUBSCRIPTION_PURCHASE) return (0, a.$)((0, o.WC)({
+        if (e.type === C.lAJ.ROLE_SUBSCRIPTION_PURCHASE) return (0, s.$)((0, o.WC)({
             username: null != R ? R.nick : e.author.username,
             guildId: S?.guild_id,
             roleSubscriptionData: e.roleSubscriptionData
         }));
-        if (e.type === C.lAJ.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, a.$)((0, d.P)({
+        if (e.type === C.lAJ.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, s.$)((0, d.P)({
             application: e?.application,
             username: R?.nick
         }));
-        if (e.type === C.lAJ.PRIVATE_CHANNEL_INTEGRATION_ADDED) return (0, a.$)((0, u.g6)({
+        if (e.type === C.lAJ.PRIVATE_CHANNEL_INTEGRATION_ADDED) return (0, s.$)((0, u.g6)({
             application: e?.application,
             username: R?.nick
         }));
-        if (e.type === C.lAJ.PRIVATE_CHANNEL_INTEGRATION_REMOVED) return (0, a.$)((0, u.uk)({
+        if (e.type === C.lAJ.PRIVATE_CHANNEL_INTEGRATION_REMOVED) return (0, s.$)((0, u.uk)({
             application: e?.application,
             username: R?.nick
         }));
@@ -78,7 +78,7 @@ let S = l.memo(function(e) {
     }, [j, R, S, M]), {
         isReplyAuthorBlocked: D,
         isReplyAuthorIgnored: O
-    } = (0, s.cf)([m.A], () => ({
+    } = (0, a.cf)([m.A], () => ({
         isReplyAuthorBlocked: null != j && m.A.isBlockedForMessage(j),
         isReplyAuthorIgnored: null != j && m.A.isIgnoredForMessage(j)
     }), [j]), P = (0, E.r4)(j?.author.id, S.id), k = (0, E.Ck)(t, j), w = (0, E.H9)(j, S, T, N), U = (0, E.Ge)(v, N), G = l.useCallback(() => {
@@ -115,8 +115,8 @@ function I(e) {
         message: t,
         channel: n,
         compact: l,
-        setPopout: s,
-        referencedUsernameProfile: a,
+        setPopout: a,
+        referencedUsernameProfile: s,
         referencedAvatarProfile: r,
         replyReference: o,
         replyMessage: c,
@@ -129,8 +129,8 @@ function I(e) {
         referencedMessage: c,
         channel: n,
         compact: l,
-        setPopout: s,
-        referencedUsernameProfile: a,
+        setPopout: a,
+        referencedUsernameProfile: s,
         referencedAvatarProfile: r,
         isReplySpineClickable: d,
         showReplySpine: u

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(80477);
 class o extends l.PureComponent {
     static defaultProps = {
@@ -18,14 +18,14 @@ class o extends l.PureComponent {
             children: t,
             hoverText: n,
             className: l,
-            forceHover: s,
+            forceHover: a,
             ...o
         } = this.props;
         return (0, i.jsxs)("div", {
             ...o,
-            className: a()(l, r.oM, {
+            className: s()(l, r.oM, {
                 [r.r9]: null == n,
-                [r.EE]: s
+                [r.EE]: a
             }),
             children: [(0, i.jsx)(e, {
                 className: r.yo,

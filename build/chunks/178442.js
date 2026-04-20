@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(990078),
     o = n(397927),
     c = n(793574),
@@ -38,9 +38,9 @@ function E(e) {
         quality: t,
         largePing: n,
         ...l
-    } = e, s = f[t];
-    return (0, i.jsx)(s, {
-        className: a()(g.hU, {
+    } = e, a = f[t];
+    return (0, i.jsx)(a, {
+        className: s()(g.hU, {
             [g.kV]: n
         }),
         ...l
@@ -51,24 +51,24 @@ function C(e) {
     let {
         quality: t,
         lastPing: n,
-        state: s,
+        state: a,
         className: f,
         children: C,
         channelId: x,
         childrenAsSubtitle: S,
         connectionStatusTextVariant: I,
         hasVideo: T
-    } = e, v = l.useRef(null), N = s === A.S7L.RTC_CONNECTED, y = l.useCallback(e => (0, i.jsx)(h.A, {
+    } = e, v = l.useRef(null), N = a === A.S7L.RTC_CONNECTED, y = l.useCallback(e => (0, i.jsx)(h.A, {
         ...e,
         channelId: x
     }), [x]), {
         connectionStatus: b,
         connectionStatusText: j
-    } = u.A.getStatus(s, T);
+    } = u.A.getStatus(a, T);
     return (0, i.jsxs)("div", {
         className: g.pe,
         children: [(0, i.jsx)("div", {
-            className: a()(g.yH, p[t], f),
+            className: s()(g.yH, p[t], f),
             ref: v,
             children: (0, i.jsx)(o.YNO, {
                 targetElementRef: v,

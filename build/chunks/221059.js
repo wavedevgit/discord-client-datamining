@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(731738),
-    a = n(311907),
+    a = n(731738),
+    s = n(311907),
     r = n(397927),
     o = n(49229),
     c = n(831062),
@@ -24,28 +24,28 @@ function C(e) {
     let {
         senderId: t,
         channelId: n,
-        warningId: s
+        warningId: a
     } = e, {
         isIgnored: r
-    } = (0, a.cf)([h.A], () => ({
+    } = (0, s.cf)([h.A], () => ({
         isIgnored: h.A.isIgnored(t)
     }), [t]), c = l.useCallback(() => {
         (0, g._$)({
             channelId: n,
-            warningId: s,
+            warningId: a,
             senderId: t,
             warningType: A._j.STRANGER_DANGER,
             cta: g.Wm.USER_MODAL_IGNORE
         }), o.A.ignoreUser(t, "web_stranger_danger_more", n)
-    }, [n, s, t]), d = l.useCallback(() => {
+    }, [n, a, t]), d = l.useCallback(() => {
         (0, g._$)({
             channelId: n,
-            warningId: s,
+            warningId: a,
             senderId: t,
             warningType: A._j.STRANGER_DANGER,
             cta: g.Wm.USER_MODAL_UNIGNORE
         }), o.A.unignoreUser(t, "web_stranger_danger_more", n)
-    }, [n, s, t]);
+    }, [n, a, t]);
     return (0, i.jsx)(u.PQ, {
         title: E.intl.string(E.t.avyV7P),
         description: E.intl.string(E.t.naWE6W),
@@ -61,7 +61,7 @@ function x(e) {
         senderId: S
     } = e, {
         isBlocked: I
-    } = (0, a.cf)([h.A], () => ({
+    } = (0, s.cf)([h.A], () => ({
         isBlocked: h.A.isBlocked(S)
     }), [S]), T = l.useCallback(() => {
         (0, m.xi)(t, [x])
@@ -85,7 +85,7 @@ function x(e) {
             senderId: S,
             warningType: A._j.STRANGER_DANGER
         }), c.A.increment({
-            name: s.K.SAFETY_WARNING_VIEW
+            name: a.K.SAFETY_WARNING_VIEW
         })
     }, [t, x, S]);
     let y = () => {
@@ -96,11 +96,11 @@ function x(e) {
                 return n => {
                     let {
                         transitionState: l,
-                        onClose: s
+                        onClose: a
                     } = n;
                     return (0, i.jsx)(e, {
                         transitionState: l,
-                        onClose: s,
+                        onClose: a,
                         channelId: t,
                         warningId: x,
                         senderId: S,
@@ -121,7 +121,7 @@ function x(e) {
                                 buttonText: E.intl.string(E.t["5QYPO2"]),
                                 buttonVariant: "critical-primary",
                                 onButtonPress: () => {
-                                    s(), b(g.Wm.USER_MODAL_BLOCK_CONFIRM, g.Wm.USER_MODAL_BLOCK_CANCEL, y)
+                                    a(), b(g.Wm.USER_MODAL_BLOCK_CONFIRM, g.Wm.USER_MODAL_BLOCK_CANCEL, y)
                                 }
                             }, "block-button")]
                         })
@@ -129,17 +129,17 @@ function x(e) {
                 }
             })
         },
-        b = (e, l, s) => {
+        b = (e, l, a) => {
             (0, r.mMO)(async () => {
                 let {
-                    default: a
+                    default: s
                 } = await n.e("67554").then(n.bind(n, 219801));
-                return n => (0, i.jsx)(a, {
+                return n => (0, i.jsx)(s, {
                     ...n,
                     userId: S,
                     confirmBlock: N(e),
                     onCancel: () => {
-                        s?.(), (0, g._$)({
+                        a?.(), (0, g._$)({
                             channelId: t,
                             warningId: x,
                             senderId: S,

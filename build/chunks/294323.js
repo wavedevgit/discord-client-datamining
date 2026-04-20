@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(64700),
     l = n(311907),
-    s = n(587895),
-    a = n(429913),
+    a = n(587895),
+    s = n(429913),
     r = n(201718),
     o = n(339580),
     c = n(207803),
@@ -37,7 +37,7 @@ function _(e, t, n) {
             return [(t === m.e.NOT_FETCHED || t === m.e.FETCHING) && null == e, e]
         }, [_])),
         [v, N] = S ? T : I,
-        [y, b] = (p = null != N ? t : null, C = (0, a.h)(p), [(0, l.bG)([s.A], () => null != p && s.A.isFetchingApplication(p), [p]) && null == C, C ?? null]),
+        [y, b] = (p = null != N ? t : null, C = (0, s.h)(p), [(0, l.bG)([a.A], () => null != p && a.A.isFetchingApplication(p), [p]) && null == C, C ?? null]),
         j = null != N && null != b,
         [R, M] = (f = j ? e : null, E = j ? t : null, x = (0, l.bG)([o.A], () => null != f && o.A.getFetchState(f) === o.e.NOT_FETCHED, [f]), i.useEffect(() => {
             x && null != f && r.A.fetchUserApplicationIdentitiesWithProfiles(f)
@@ -47,10 +47,10 @@ function _(e, t, n) {
             return [(o.A.isFetchingUser(f) || o.A.getFetchState(f) === o.e.NOT_FETCHED) && null == e, e]
         }, [f, E])),
         [L, D] = function(e) {
-            let [t, n] = (0, l.yK)([u.A], () => null != e ? [u.A.isFetchingProfile(e), u.A.getUserProfile(e) ?? null] : [!1, null], [e]), s = null != e && !t && null == n;
+            let [t, n] = (0, l.yK)([u.A], () => null != e ? [u.A.isFetchingProfile(e), u.A.getUserProfile(e) ?? null] : [!1, null], [e]), a = null != e && !t && null == n;
             return i.useEffect(() => {
-                s && null != e && (0, h.A)(e)
-            }, [s, e]), [(t || s) && null == n, n]
+                a && null != e && (0, h.A)(e)
+            }, [a, e]), [(t || a) && null == n, n]
         }(j ? e : null),
         O = v || y || R || L;
     return i.useMemo(() => ({

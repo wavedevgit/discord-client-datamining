@@ -4,8 +4,8 @@ n.d(t, {
 }), n(938796);
 var i = n(665260),
     l = n(311907),
-    s = n(73153),
-    a = n(961350),
+    a = n(73153),
+    s = n(961350),
     r = n(734057),
     o = n(71393),
     c = n(309010),
@@ -82,7 +82,7 @@ class R extends l.Ay.PersistedStore {
     static displayName = "UnreadSettingNoticeStore2";
     static persistKey = "UnreadSettingNoticeStore2";
     initialize(e) {
-        null != e && (C.channels = e.channels), this.syncWith([d.Ay], N), this.waitFor(a.default, r.A, o.A, c.A, d.Ay)
+        null != e && (C.channels = e.channels), this.syncWith([d.Ay], N), this.waitFor(s.default, r.A, o.A, c.A, d.Ay)
     }
     getState() {
         return C
@@ -105,7 +105,7 @@ class R extends l.Ay.PersistedStore {
         }(t) && (delete C.channels[e], x.add(e), (0, m.mA)(t.guild_id, t.id, g.e.ALL_MESSAGES), !0)
     }
 }
-let M = new R(s.h, {
+let M = new R(a.h, {
         CHANNEL_SELECT: function() {
             let e = v();
             return S = c.A.getChannelId(), I = Date.now(), e
@@ -121,7 +121,7 @@ let M = new R(s.h, {
             })
         },
         MESSAGE_CREATE: function(e) {
-            if (e.optimistic || e.isPushNotification || e.message.author?.id !== a.default.getId() || !b(e.channelId)) return !1;
+            if (e.optimistic || e.isPushNotification || e.message.author?.id !== s.default.getId() || !b(e.channelId)) return !1;
             let t = y(e.channelId);
             t.lastActionTime = Date.now(), t.numSends++
         }

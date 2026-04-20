@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(556445),
-    s = n(833349),
-    a = n(90644),
+    a = n(833349),
+    s = n(90644),
     r = n(652215);
 
 function o(e) {
@@ -18,7 +18,7 @@ function o(e) {
         source: d,
         onAction: u
     } = e;
-    return null != t && (0, s.A)(t, r.jUm.SYNC) && (0, a.A)(t) ? (0, i.jsx)(l.A, {
+    return null != t && (0, a.A)(t, r.jUm.SYNC) && (0, s.A)(t) ? (0, i.jsx)(l.A, {
         size: "sm",
         variant: "secondary",
         user: n,

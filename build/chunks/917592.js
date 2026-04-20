@@ -1,12 +1,12 @@
 /** chunk id: 917592 params = (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => a
 });
 var i = n(652215),
     l = n(985018);
-let s = {
+let a = {
     getStatus: function(e) {
-        let t, n, s = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+        let t, n, a = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
         switch (e) {
             case i.S7L.CONNECTING:
                 t = i.vkP.CONNECTING, n = l.intl.string(l.t.MzW9sN);
@@ -18,7 +18,7 @@ let s = {
                 t = i.vkP.CONNECTING, n = l.intl.string(l.t.xEbu0Q);
                 break;
             case i.S7L.RTC_CONNECTED:
-                t = i.vkP.CONNECTED, n = s ? l.intl.string(l.t.HtVOdd) : l.intl.string(l.t.daXg45);
+                t = i.vkP.CONNECTED, n = a ? l.intl.string(l.t.HtVOdd) : l.intl.string(l.t.daXg45);
                 break;
             case i.S7L.RTC_CONNECTING:
                 t = i.vkP.CONNECTING, n = l.intl.string(l.t.Gp51dl);

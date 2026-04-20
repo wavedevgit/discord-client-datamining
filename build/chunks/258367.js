@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(64700),
     l = n(311907),
-    s = n(256311),
-    a = n(773669),
+    a = n(256311),
+    s = n(773669),
     r = n(222823),
     o = n(954571),
     c = n(883600),
@@ -15,7 +15,7 @@ var i = n(64700),
 
 function m(e) {
     let t = (0, d.A)(e),
-        n = (0, l.bG)([a.default], () => a.default.locale),
+        n = (0, l.bG)([s.default], () => s.default.locale),
         m = (0, l.bG)([c.A], () => c.A.getChangelog(t ?? "", n), [t, n]),
         A = (0, u.A)(e),
         g = i.useRef(A ? Date.now() : null),
@@ -26,7 +26,7 @@ function m(e) {
     }), i.useEffect(() => {
         g.current = Date.now()
     }, [A]), i.useEffect(() => {
-        A && null != t && s.A.fetchChangelog(t, n, !0)
+        A && null != t && a.A.fetchChangelog(t, n, !0)
     }, [t, n, A]), i.useEffect(() => {
         A && null != m && o.default.track(h.HAw.CHANGE_LOG_OPENED, {
             change_log_id: `${m.date}:${m.revision}`,

@@ -6,8 +6,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     l = n(64700),
-    s = n(735438),
-    a = n(90575),
+    a = n(735438),
+    s = n(90575),
     r = n(961350),
     o = n(927813),
     c = n(403362),
@@ -54,21 +54,21 @@ function p(e, t) {
             participantTileWidth: x
         } = l.useMemo(() => {
             let n = Date.now(),
-                l = (0, s.sortBy)(t, e => (function(e) {
+                l = (0, a.sortBy)(t, e => (function(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Date.now();
                     switch (e.type) {
                         case u.lp.ACTIVITY:
                             return `\x01${e.sortKey}`;
                         case u.lp.HIDDEN_STREAM:
                         case u.lp.STREAM:
-                            return `\x02${(0,a.A)(e.userNick,e.user)}`;
+                            return `\x02${(0,s.A)(e.userNick,e.user)}`;
                         case u.lp.USER:
                             var n;
                             let i, l = "\x06";
-                            return e.speaking ? l = "\x03" : t - e.lastSpoke < g ? l = "\x04" : e.voiceState?.selfVideo && (l = "\x05"), `${l}${n=e.lastSpoke,i=String(864e13).length,String(864e13-n).padStart(i,"0")}${(0,a.A)(e.userNick,e.user)}`
+                            return e.speaking ? l = "\x03" : t - e.lastSpoke < g ? l = "\x04" : e.voiceState?.selfVideo && (l = "\x05"), `${l}${n=e.lastSpoke,i=String(864e13).length,String(864e13-n).padStart(i,"0")}${(0,s.A)(e.userNick,e.user)}`
                     }
                 })(e, n)),
-                [m, A] = (0, s.partition)(l, u.Xw),
+                [m, A] = (0, a.partition)(l, u.Xw),
                 p = m.findIndex(_),
                 f = null; - 1 !== p && (f = m[p], m.splice(p, 1));
             let C = null == f || h ? e : e - i - o,
@@ -92,7 +92,7 @@ function p(e, t) {
                 }
             }
             let y = N.filter(c.Vq);
-            E.current = (0, s.keyBy)((0, s.range)(y.length), e => y[e].id);
+            E.current = (0, a.keyBy)((0, a.range)(y.length), e => y[e].id);
             let b = [...T, ...y];
             return null != f && (h && b.length >= x ? b[Math.max(0, b.length - 1)] = f : b.push(f)), {
                 visibleParticipants: b,
@@ -110,8 +110,8 @@ function f(e) {
         participants: t,
         participantTileWidth: n,
         selectedParticipantId: l,
-        onDoubleClick: s,
-        onContextMenu: a,
+        onDoubleClick: a,
+        onContextMenu: s,
         onClick: r,
         channel: o,
         inCall: c,
@@ -135,8 +135,8 @@ function f(e) {
                     className: h.Vs,
                     fit: d.Yl.COVER,
                     onClick: r,
-                    onDoubleClick: s,
-                    onContextMenu: a,
+                    onDoubleClick: a,
+                    onContextMenu: s,
                     width: t ? A : n,
                     inCall: c,
                     paused: m,

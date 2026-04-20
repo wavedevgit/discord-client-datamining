@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(397927),
     o = n(58149),
     c = n(954571),
@@ -26,7 +26,7 @@ function A(e) {
             banner_type: "channel_opt_in"
         })
     }, [t]), (0, i.jsxs)("div", {
-        className: a()(m.JD, {
+        className: s()(m.JD, {
             [m.sc]: n
         }),
         children: [(0, i.jsx)(r.Text, {

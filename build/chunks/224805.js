@@ -1,6 +1,6 @@
 /** chunk id: 224805 params = (module,exports,require) **/
 n.d(t, {
-    A: () => s,
+    A: () => a,
     x: () => l
 });
 let i = (0, n(839214).D)(() => ({
@@ -25,4 +25,4 @@ function l(e, t) {
         }
     })
 }
-let s = i
+let a = i
