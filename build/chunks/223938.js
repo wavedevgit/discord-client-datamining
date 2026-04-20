@@ -8,7 +8,7 @@ var i = n(627968),
     a = n.n(s),
     r = n(284009),
     o = n.n(r),
-    c = n(825638),
+    c = n(208798),
     d = n(835245),
     u = n(311907),
     h = n(827734),
@@ -40,8 +40,8 @@ var i = n(627968),
     U = n(518960),
     G = n(486319),
     F = n(355622),
-    H = n(415409),
-    B = n(147025),
+    B = n(415409),
+    H = n(147025),
     V = n(133343),
     W = n(851023),
     K = n(171593),
@@ -132,7 +132,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
     let {
         eventEmitter: eG,
         handleEditorSelectionChanged: eF
-    } = (0, V.ml)(eT, s, r), eH = l.useCallback(e => {
+    } = (0, V.ml)(eT, s, r), eB = l.useCallback(e => {
         let t = e => (e.shouldClear && ((0, I.x)(y.id, {
                 title: "",
                 heroFile: null
@@ -183,9 +183,9 @@ let X = l.memo(l.forwardRef(function(e, t) {
             }
         }).then(t)
     }, [ei, ep, ef, y.id, eC, eE, eU]), {
-        submit: eB,
+        submit: eH,
         handleSubmit: eV
-    } = (0, V.Zx)(eH, b, eT, eN, y.id), {
+    } = (0, V.Zx)(eB, b, eT, eN, y.id), {
         autocompleteRef: eW,
         handleMaybeShowAutocomplete: eK,
         handleHideAutocomplete: ez
@@ -206,13 +206,13 @@ let X = l.memo(l.forwardRef(function(e, t) {
         handleOuterClick: e1
     } = (0, V.MD)(b, eT, y.id), {
         handleAutocompleteVisibilityChange: e2
-    } = (0, V.uW)(b, y.id), e3 = (0, V.NO)(eT), e9 = (0, V.Vu)(eB, b, eT), e7 = (0, V.HG)(eT), e6 = (0, V.C)({
+    } = (0, V.uW)(b, y.id), e9 = (0, V.NO)(eT), e3 = (0, V.Vu)(eH, b, eT), e7 = (0, V.HG)(eT), e6 = (0, V.C)({
         editorRef: eT,
         disabled: eR,
         textValue: s,
         channelId: y.id,
         chatInputType: b,
-        submit: eH
+        submit: eB
     });
     (0, G.R)(eG, y.guild_id, y.id);
     let [e5, e4] = l.useState(!1), e8 = l.useCallback(() => {
@@ -295,7 +295,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                 children: (0, i.jsx)(A.vN3, {
                                     ringTarget: eS,
                                     ringClassName: $.Rg,
-                                    children: (0, i.jsx)(H.A, {
+                                    children: (0, i.jsx)(B.A, {
                                         ref: eT,
                                         id: h,
                                         focused: j,
@@ -319,7 +319,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                         onBlur: W,
                                         onFocus: Y,
                                         onKeyDown: X,
-                                        onSubmit: eB,
+                                        onSubmit: eH,
                                         onTab: e$,
                                         onEnter: eZ,
                                         onMoveSelection: eX,
@@ -353,7 +353,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                         className: q.j4,
                         children: [(0, i.jsx)(et, {
                             channel: y
-                        }), (0, i.jsx)(B.A, {
+                        }), (0, i.jsx)(H.A, {
                             type: F.oU.CREATE_ANNOUNCEMENT_POST,
                             disabled: eR,
                             channel: y,
@@ -382,7 +382,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                 children: e => (0, i.jsx)(A.Button, {
                                     ...e,
                                     onClick: () => {
-                                        eB(`${ep.length>0?`# ${ep}
+                                        eH(`${ep.length>0?`# ${ep}
 `:""}${s}`)
                                     },
                                     disabled: 0 === s.length && 0 === ep.length,
@@ -425,7 +425,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                     expressionPickerView: eQ,
                     type: b,
                     editorRef: eT,
-                    onSendMessage: eB,
+                    onSendMessage: eH,
                     onSendSticker: () => {},
                     onVisibilityChange: e2,
                     editorHeight: eJ,
@@ -435,8 +435,8 @@ let X = l.memo(l.forwardRef(function(e, t) {
             }), e0 ? null : (0, i.jsx)(N.A, {
                 positionTargetRef: eS,
                 type: b,
-                onSelectGIF: e9,
-                onSelectEmoji: e3,
+                onSelectGIF: e3,
+                onSelectEmoji: e9,
                 onSelectKaomoji: e7,
                 onSelectSticker: e6,
                 channel: y,

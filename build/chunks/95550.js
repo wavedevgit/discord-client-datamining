@@ -42,8 +42,8 @@ var i = n(627968),
     U = n(222823),
     G = n(994500),
     F = n(351906),
-    H = n(287809),
-    B = n(954571),
+    B = n(287809),
+    H = n(954571),
     V = n(957565),
     W = n(203982),
     K = n(403362),
@@ -147,7 +147,7 @@ class el extends l.PureComponent {
         } = this.props;
         h.h.wait(() => p.A.open(e?.id));
         let t = (0, S.dI)(e);
-        B.default.track(Z.HAw.OPEN_POPOUT, {
+        H.default.track(Z.HAw.OPEN_POPOUT, {
             ...t,
             type: this._getAnalyticsEntryPoint().entryPointType,
             source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -200,7 +200,7 @@ class el extends l.PureComponent {
     getMaxParticipants() {
         let {
             channel: e
-        } = this.props, t = H.default.getCurrentUser();
+        } = this.props, t = B.default.getCurrentUser();
         return null != t && t.isStaff() ? Z.$aF : null != e && e.userLimit > 0 ? e.userLimit : Z.wLU
     }
     getRemaining() {
@@ -254,7 +254,7 @@ class el extends l.PureComponent {
             if (null != e && e.isDM()) {
                 let t = e.getRecipientId();
                 if (null != t) {
-                    let e = H.default.getUser(t),
+                    let e = B.default.getUser(t),
                         n = null != e ? e.username : "";
                     return Q.intl.format(Q.t["eg+R9x"], {
                         username: n
@@ -267,7 +267,7 @@ class el extends l.PureComponent {
         if (this.isNotFriends()) {
             let t = null != e ? e.getRecipientId() : null;
             if (null == t) throw Error("no recipient in DM");
-            let n = H.default.getUser(t),
+            let n = B.default.getUser(t),
                 i = null != n ? n.username : "";
             return Q.intl.format(Q.t["eg+R9x"], {
                 username: i
@@ -314,7 +314,7 @@ class el extends l.PureComponent {
         if (!t || this.isNotFriends() || this.isPartyFull()) return null;
         let l = [];
         return n.forEach(e => {
-            let t = H.default.getUser(e);
+            let t = B.default.getUser(e);
             null != t && l.push({
                 id: e,
                 label: Y.Ay.getName(t)
@@ -478,7 +478,7 @@ class el extends l.PureComponent {
         if (this.isNotFriends()) {
             let e = null != t ? t.getRecipientId() : null;
             if (null == e) throw Error("no recipient in DM");
-            let n = H.default.getUser(e),
+            let n = B.default.getUser(e),
                 i = null != n && G.A.getRelationshipType(n.id) === Z.eA$.PENDING_OUTGOING;
             return {
                 actions: [{
@@ -582,7 +582,7 @@ class el extends l.PureComponent {
             channel: t
         } = this.props, n = (0, S.dI)(t);
         p.A.search(e, t?.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
-            B.default.track(Z.HAw.SEARCH_USER_LIST_STARTED, {
+            H.default.track(Z.HAw.SEARCH_USER_LIST_STARTED, {
                 ...n,
                 entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
                 entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -651,7 +651,7 @@ class el extends l.PureComponent {
             } = this.props,
             i = (0, S.dI)(n),
             l = !0;
-        1 === e.length && (l = null == A.A._openCachedDMChannel(e[0])), B.default.track(Z.HAw.CREATE_DM_USER_LIST_CLICKED, {
+        1 === e.length && (l = null == A.A._openCachedDMChannel(e[0])), H.default.track(Z.HAw.CREATE_DM_USER_LIST_CLICKED, {
             ...i,
             is_new_dm: l,
             entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
@@ -667,7 +667,7 @@ class el extends l.PureComponent {
         }).then(e => {
             this.props.onComplete?.(e);
             let t = {};
-            "" !== this.state.newChannelName && (t.name = this.state.newChannelName), null != this.state.previewIcon && (t.icon = this.state.previewIcon), (null != t.name || null != t.icon) && A.A.updateChannel(e, t, x.A.NEW_GROUP_DM_INVITE_MODAL), B.default.track(Z.HAw.GDM_EDIT_INTERACTED, {
+            "" !== this.state.newChannelName && (t.name = this.state.newChannelName), null != this.state.previewIcon && (t.icon = this.state.previewIcon), (null != t.name || null != t.icon) && A.A.updateChannel(e, t, x.A.NEW_GROUP_DM_INVITE_MODAL), H.default.track(Z.HAw.GDM_EDIT_INTERACTED, {
                 channel_id: e,
                 channel_type: Z.rbe.GROUP_DM,
                 location: x.A.NEW_GROUP_DM_INVITE_MODAL,
@@ -685,7 +685,7 @@ class el extends l.PureComponent {
                 if (e.isDM() && n !== e.id) return void m.A.call(n, !1, !0);
                 m.A.ring(n, t, "dm_invite")
             }
-        }), B.default.track(Z.HAw.CREATE_DM_USER_LIST_CLICKED, {
+        }), H.default.track(Z.HAw.CREATE_DM_USER_LIST_CLICKED, {
             ...i,
             is_new_dm: !0,
             entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
@@ -729,7 +729,7 @@ class el extends l.PureComponent {
             this.setState({
                 copied: !1
             })
-        }, 1e3), B.default.track(Z.HAw.COPY_INSTANT_INVITE, {
+        }, 1e3), H.default.track(Z.HAw.COPY_INSTANT_INVITE, {
             server: null,
             channel: null != t ? t.id : null,
             channel_type: null != t ? t.type : null,
@@ -753,7 +753,7 @@ function es(e) {
         onChange: r
     } = e, {
         analyticsLocations: o
-    } = (0, I.Ay)(x.A.NEW_GROUP_DM_INVITE_MODAL), c = (0, v.Jo)(Array.from(t), H.default, G.A);
+    } = (0, I.Ay)(x.A.NEW_GROUP_DM_INVITE_MODAL), c = (0, v.Jo)(Array.from(t), B.default, G.A);
     return (0, i.jsxs)("div", {
         className: ee.zj,
         children: [(0, i.jsx)(y.X, {
@@ -793,7 +793,7 @@ function ea(e) {
             hideDiscriminator: F.A.hidePersonalInformation,
             hideInstantInvites: F.A.hideInstantInvites
         }
-    }), a = (0, c.bG)([H.default], () => !!H.default.getCurrentUser()?.isStaff() && null != t && !!t.isDM() && t.recipients.every(e => H.default.getUser(e)?.isStaff()), [t]);
+    }), a = (0, c.bG)([B.default], () => !!B.default.getCurrentUser()?.isStaff() && null != t && !!t.isDM() && t.recipients.every(e => B.default.getUser(e)?.isStaff()), [t]);
     return (0, i.jsx)(el, {
         channel: t,
         isStaffOnlyDM: a,
@@ -851,7 +851,7 @@ function ec(e) {
     } = er({
         channel: t,
         subscribeToGlobalHotkey: d
-    }), g = (0, c.bG)([H.default], () => H.default.getUser(t?.getRecipientId()));
+    }), g = (0, c.bG)([B.default], () => B.default.getUser(t?.getRecipientId()));
     return g?.bot || g?.isProvisional ? null : (0, i.jsx)(q.Ay.Icon, {
         ref: h,
         onClick: A,

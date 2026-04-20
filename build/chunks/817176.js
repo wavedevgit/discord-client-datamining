@@ -54,9 +54,9 @@ function D(e) {
         onCardClick: k,
         onButtonClick: w
     } = e, U = l.useRef(null), G = (0, d.bG)([_.A], () => (0, c.Mwr)(_.A.theme)), F = (0, d.bG)([h.A], () => h.A.useReducedMotion), {
-        isHoveringOrFocusing: H
+        isHoveringOrFocusing: B
     } = (0, A.A)(U), {
-        guildId: B
+        guildId: H
     } = (0, x.nG)(s.applicationId), V = (0, d.bG)([m.A], () => m.A.getApplication(s.applicationId)), {
         primaryIconAsset: W,
         primaryIconLabel: K
@@ -149,16 +149,16 @@ function D(e) {
             giftingOrigin: N.vQ.GUILD_CHANNEL
         }, {
             analyticsLocations: P,
-            guildId: B
+            guildId: H
         })
-    }, [s, a, r, P, B, w]);
+    }, [s, a, r, P, H, w]);
     return (0, i.jsx)(c.vN3, {
         children: (0, i.jsxs)(u.sqX, {
             onClick: q,
             className: o()(b.Nr, {
                 [b.Zl]: !F,
                 [b.BN]: G,
-                [b.YF]: H
+                [b.YF]: B
             }),
             ref: U,
             "aria-label": s.name,
@@ -168,7 +168,7 @@ function D(e) {
             }), (0, i.jsx)(f.A, {
                 spec: j,
                 sku: s,
-                isCardHovered: H,
+                isCardHovered: B,
                 location: "SocialLayerGiftingVoicePanelFeaturedSkuItemCard",
                 replacedElement: M && !r && R === p.uS.WISHLIST ? (0, i.jsx)(C.n, {
                     spec: j,

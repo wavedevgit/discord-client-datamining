@@ -40,8 +40,8 @@ var i = n(627968),
     U = n(20737),
     G = n(133343),
     F = n(35277),
-    H = n(595914),
-    B = n(151271),
+    B = n(595914),
+    H = n(151271),
     V = n(81400),
     W = n(870006),
     K = n(837024),
@@ -94,8 +94,8 @@ var i = n(627968),
     eU = n(661191),
     eG = n(460350),
     eF = n(518960),
-    eH = n(382287),
-    eB = n(137577),
+    eB = n(382287),
+    eH = n(137577),
     eV = n(47167),
     eW = n(480870),
     eK = n(390756),
@@ -125,12 +125,12 @@ function e2(e) {
         ...n
     })
 }
-let e3 = l.forwardRef((e, t) => (0, i.jsx)(e9, {
+let e9 = l.forwardRef((e, t) => (0, i.jsx)(e3, {
     ...e,
     ref: t
 }));
-e3.displayName = "ChannelTextAreaForm";
-class e9 extends l.PureComponent {
+e9.displayName = "ChannelTextAreaForm";
+class e3 extends l.PureComponent {
     focusEditor() {
         this.editorRef?.focus()
     }
@@ -409,8 +409,8 @@ class e9 extends l.PureComponent {
                 shouldRefocus: !0
             };
             if (null != n && n.length > 0) {
-                let e = (0, eH.LJ)(n);
-                if ((0, eH.fJ)(e, d?.id)) return (0, eF.V)(h, e), {
+                let e = (0, eB.LJ)(n);
+                if ((0, eB.fJ)(e, d?.id)) return (0, eF.V)(h, e), {
                     shouldClear: !1,
                     shouldRefocus: !1
                 };
@@ -648,7 +648,7 @@ class e7 extends l.PureComponent {
         let {
             activeView: t
         } = e;
-        (0, B.bf)(t, this.props.chatInputType, this.props.channel.id)
+        (0, H.bf)(t, this.props.chatInputType, this.props.channel.id)
     };
     handleOpenAppLauncher = e => {
         let {
@@ -718,7 +718,7 @@ class e7 extends l.PureComponent {
                     tutorialId: "writing-messages",
                     position: "left",
                     offsetX: 75,
-                    children: (0, i.jsx)(e3, {
+                    children: (0, i.jsx)(e9, {
                         ref: this.refToChannelTextAreaFormComponent,
                         refInstance: this.containerDomRef,
                         focused: y,
@@ -837,7 +837,7 @@ let e6 = l.memo(function(e) {
         channel: t
     }), o = (0, eu.L)(eD.default.getCurrentUser(), t), [c] = (0, Y.c)(n?.id), d = (0, V.uZ)(n?.id), u = (0, h.bG)([eD.default], () => eD.default.getCurrentUser()), A = (0, h.bG)([ey.Ay], () => null != u && (ey.Ay.getMember(n?.id ?? e$.dJq, u?.id)?.isPending ?? !1)), g = (0, h.bG)([er.A], () => er.A.isEnabled()), _ = (0, ed.A)(t.id), p = (0, q.A)(t.id), E = (0, e_.D)(t.id), C = (0, h.bG)([eC.A], () => eC.A.getAlsoSendToChannel(t.id)), S = (0, h.bG)([eo.Ay, eI.default], () => eo.Ay.getUserCombo(eI.default.getId(), t.id)), I = (0, f.rj)(t), T = (0, f.aW)(t), v = I.length > 0 || t.rateLimitPerUser > 0 || null != S || null != T, {
         showLinkedLobbyApplicationLoadingIndicator: N
-    } = (0, eB.A)(t.linkedLobby), y = (0, H.A)("ChannelChat"), b = (0, es.A)((0, Q.GP)(n, "ChannelChat") ? n?.officialMessageColor ?? eZ.aj : null);
+    } = (0, eH.A)(t.linkedLobby), y = (0, B.A)("ChannelChat"), b = (0, es.A)((0, Q.GP)(n, "ChannelChat") ? n?.officialMessageColor ?? eZ.aj : null);
     return (0, K.A)(t), (0, i.jsx)(e7, {
         channel: t,
         guildOfficialMessageStyle: b,

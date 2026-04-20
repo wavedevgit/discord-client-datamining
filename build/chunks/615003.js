@@ -145,19 +145,19 @@ let et = new Set([o.M.PREMIUM_WISHLIST_COACHMARK]),
             e1 = [],
             e7 = [];
         (0, _.Tc)() && (ey && e1.push(o.M.RECURRING_3P_PROMOTION_POPOVER), eE && e1.push(o.M.BOGO_2025_NITRO_TAB_BADGE));
-        let [e6, e9] = (0, g.kn)(e1, void 0, !0);
+        let [e9, e6] = (0, g.kn)(e1, void 0, !0);
         eH && e7.push(o.M.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK), ef && (eD || ej ? e7.push(o.M.PREMIUM_GROUP_POPOVER_UPSELL_V2) : e7.push(o.M.PREMIUM_GROUP_POPOVER)), ew && e7.push(o.M.PREMIUM_ORBS_UPSELL_POPOVER), eB && e7.push(o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER), eK && e7.push(o.M.L_3PP_NITRO_TOOLTIP), eq && e7.push(o.M.L_3PP_NON_NITRO_POPOVER), eF && e7.push(o.M.PREMIUM_WISHLIST_COACHMARK);
         let [e5, e3] = (0, g.kn)(e7, void 0, !0), e2 = (0, G.c)(r.C.PREMIUM_TAB), e4 = (0, G.c)(r.C.PREMIUM_TAB_TOOLTIP), e8 = (0, G.c)(r.C.PREMIUM_TAB_POPOVER), [te, tt] = (0, g.Cc)(null != e2 && "premiumTab" === e2.properties.properties.oneofKind ? o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, e2?.promotionId ?? "", void 0, !0), [tn, ti] = (0, g.Cc)(null != e8 && "premiumTabPopover" === e8.properties.properties.oneofKind ? o.M.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL : null, e8?.promotionId ?? "", void 0, !0), [tl, ta] = (0, g.Cc)(eV ? o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER : null, eU ?? "", void 0, !0), tr = null != e4 && "premiumTabTooltip" === e4.properties.properties.oneofKind && te === o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, ts = eK && e5 === o.M.L_3PP_NITRO_TOOLTIP, to = eq && e5 === o.M.L_3PP_NON_NITRO_POPOVER;
         if (l.useEffect(() => {
-                !0 === ei && (null != e6 && e9(J.i.AUTO_DISMISS), null == e5 || et.has(e5) || e3(J.i.AUTO_DISMISS), null != te && tt(J.i.AUTO_DISMISS), null != tl && ta(J.i.AUTO_DISMISS), null != tn && ti(J.i.AUTO_DISMISS), eN && eS(J.i.AUTO_DISMISS), null != eC && eT(J.i.AUTO_DISMISS))
-            }, [e9, ei, e6, e3, e5, te, tt, tl, ta, tn, ti, eN, eS, eC, eT]), !en({
+                !0 === ei && (null != e9 && e6(J.i.AUTO_DISMISS), null == e5 || et.has(e5) || e3(J.i.AUTO_DISMISS), null != te && tt(J.i.AUTO_DISMISS), null != tl && ta(J.i.AUTO_DISMISS), null != tn && ti(J.i.AUTO_DISMISS), eN && eS(J.i.AUTO_DISMISS), null != eC && eT(J.i.AUTO_DISMISS))
+            }, [e6, ei, e9, e3, e5, te, tt, tl, ta, tn, ti, eN, eS, eC, eT]), !en({
                 selected: ei
             })) return null;
         let td = () => {
             eZ === o.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eJ(J.i.TAKE_ACTION), N.default.track(Z.HAw.NITRO_TAB_VISITED, {
                 badge_decorator: n,
                 has_premium: eu
-            }), null != e6 && e9(J.i.USER_DISMISS), null != te && tt(J.i.USER_DISMISS), (e5 === o.M.PREMIUM_GROUP_POPOVER || e5 === o.M.PREMIUM_GROUP_POPOVER_UPSELL_V2) && e3(J.i.USER_DISMISS), e5 === o.M.L_3PP_NITRO_TOOLTIP && e3(J.i.USER_DISMISS), e5 === o.M.L_3PP_NON_NITRO_POPOVER && e3(J.i.USER_DISMISS), eN && eS(J.i.USER_DISMISS), null != eC && eT(J.i.USER_DISMISS)
+            }), null != e9 && e6(J.i.USER_DISMISS), null != te && tt(J.i.USER_DISMISS), (e5 === o.M.PREMIUM_GROUP_POPOVER || e5 === o.M.PREMIUM_GROUP_POPOVER_UPSELL_V2) && e3(J.i.USER_DISMISS), e5 === o.M.L_3PP_NITRO_TOOLTIP && e3(J.i.USER_DISMISS), e5 === o.M.L_3PP_NON_NITRO_POPOVER && e3(J.i.USER_DISMISS), eN && eS(J.i.USER_DISMISS), null != eC && eT(J.i.USER_DISMISS)
         };
         ez === X.xc.NONE || ep || (n = 7, t = (0, i.jsx)(P.A, {
             className: "",
@@ -199,14 +199,14 @@ let et = new Set([o.M.PREMIUM_WISHLIST_COACHMARK]),
                 badgeCopy: ee.intl.string(ee.t.OS9KPu),
                 offerExpiresAt: !0 === e ? e_?.expires_at : null
             }), n = 4
-        } else e6 === o.M.RECURRING_3P_PROMOTION_POPOVER ? (t = (0, i.jsx)(c.Exy, {
+        } else e9 === o.M.RECURRING_3P_PROMOTION_POPOVER ? (t = (0, i.jsx)(c.Exy, {
             type: "new",
             variant: "expressive"
         }), n = 4, td = () => {
             N.default.track(Z.HAw.NITRO_TAB_VISITED, {
                 badge_decorator: n,
                 has_premium: eu
-            }), e9(J.i.USER_DISMISS)
+            }), e6(J.i.USER_DISMISS)
         }) : ep ? (t = (0, i.jsx)(c.Exy, {
             type: {
                 text: ee.intl.string(ee.t.raP9dM)

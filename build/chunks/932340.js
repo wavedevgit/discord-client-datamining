@@ -1,6 +1,6 @@
 /** chunk id: 932340 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => I
 });
 var i = n(627968),
     l = n(64700),
@@ -14,33 +14,38 @@ var i = n(627968),
     A = n(274372),
     h = n(915618),
     _ = n(361157),
-    m = n(798817),
-    g = n(696016),
-    p = n(985018);
+    m = n(710315),
+    g = n(798817),
+    p = n(696016),
+    E = n(985018);
 
-function E(e) {
+function I(e) {
     let {
         canShowReminder: t = !1
-    } = e, E = (0, h.A)(c.Ay), {
-        showClipsHeaderEntrypoint: I
+    } = e, I = (0, h.A)(c.Ay), {
+        showClipsHeaderEntrypoint: f
     } = u.L_.useConfig({
         location: "ClipsButton"
     }), {
-        hasNewClips: f,
-        lastClipsSession: C,
-        remindersEnabled: T,
-        hasAnyClipAnimations: N
+        topBarButton: C
+    } = m.$.useConfig({
+        location: "ClipsButton"
+    }), {
+        hasNewClips: T,
+        lastClipsSession: N,
+        remindersEnabled: S,
+        hasAnyClipAnimations: x
     } = (0, a.cf)([A.A], () => ({
         hasNewClips: A.A.getNewClipIds().length > 0,
         lastClipsSession: A.A.getLastClipsSession(),
         remindersEnabled: A.A.getSettings().remindersEnabled,
         hasAnyClipAnimations: A.A.hasAnyClipAnimations()
-    })), S = null != C && C.newClipIds.length > 0, x = (0, _.K)(e => e.clipsButtonRef), b = (0, _.K)(e => e.setClipsButtonRef), v = (0, a.bG)([d.A], () => d.A.hasLayers()), {
-        preventIdle: y,
-        allowIdle: O
+    })), b = null != N && N.newClipIds.length > 0, v = (0, _.K)(e => e.clipsButtonRef), y = (0, _.K)(e => e.setClipsButtonRef), O = (0, a.bG)([d.A], () => d.A.hasLayers()), {
+        preventIdle: L,
+        allowIdle: R
     } = (0, o.o)("animation");
 
-    function L() {
+    function P() {
         (0, r.mMO)(async () => {
             let {
                 default: e
@@ -49,21 +54,21 @@ function E(e) {
                 ...t
             })
         }, {
-            modalKey: g.nm
+            modalKey: p.nm
         })
     }
-    return (l.useEffect(() => (N ? y() : O(), () => O()), [N, y, O]), I && E) ? (0, i.jsxs)(i.Fragment, {
-        children: [null != x && t && T && S && !(0, r.ueM)() && !v && (0, i.jsx)(m.A, {
-            clipIconRef: x,
-            lastClipsSession: C,
-            onOpenClipsGallery: L
+    return (l.useEffect(() => (x ? L() : R(), () => R()), [x, L, R]), (f || C) && I) ? (0, i.jsxs)(i.Fragment, {
+        children: [null != v && t && S && b && !(0, r.ueM)() && !O && (0, i.jsx)(g.A, {
+            clipIconRef: v,
+            lastClipsSession: N,
+            onOpenClipsGallery: P
         }), (0, i.jsx)("div", {
-            ref: b,
+            ref: y,
             children: (0, i.jsx)(s.A, {
                 icon: r.xgA,
-                showBadge: f,
-                tooltip: p.intl.string(p.t.MXaLEM),
-                onClick: L
+                showBadge: T,
+                tooltip: E.intl.string(E.t.MXaLEM),
+                onClick: P
             })
         })]
     }) : null

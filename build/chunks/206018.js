@@ -63,8 +63,8 @@ function N(e) {
             analyticsLocations: w,
             asSubmenu: !0
         }),
-        H = (0, s.bG)([_.Ay], () => _.Ay.getActiveInputProfile()),
-        B = (0, A.A)(w),
+        B = (0, s.bG)([_.Ay], () => _.Ay.getActiveInputProfile()),
+        H = (0, A.A)(w),
         V = (0, m.A)(w),
         W = (0, g.A)(w),
         K = a.x.DEFAULT,
@@ -90,7 +90,7 @@ function N(e) {
             "aria-label": T.intl.string(T.t.ZR1Ss6),
             className: v.MK,
             children: [(0, i.jsxs)(r.rXV, {
-                children: [D && G, R && B, M && F]
+                children: [D && G, R && H, M && F]
             }), (0, i.jsxs)(r.rXV, {
                 children: [O && V, P && $ && (0, i.jsx)(r.aK1, {
                     id: "input-device-meter",
@@ -113,7 +113,7 @@ function N(e) {
                     action: () => o.A.setMode(J, void 0, void 0, {
                         analyticsLocations: w
                     }),
-                    disabled: H === S.m.STUDIO
+                    disabled: B === S.m.STUDIO
                 }) : null, j && (0, i.jsx)(r.sLh, {
                     id: "deafen",
                     label: T.intl.string(T.t.wjcRFX),

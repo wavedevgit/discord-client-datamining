@@ -219,7 +219,7 @@ function D(e) {
             maxHeight: D.height - 43 - 25 - 48
         };
     L && (F.maxHeight -= 40);
-    let H = null != h && s;
+    let B = null != h && s;
     return (0, i.jsx)("div", {
         className: a()(y.KQ, T ?? y.G6),
         style: F,
@@ -230,7 +230,7 @@ function D(e) {
             component: g(),
             children: [(0, i.jsxs)(u.T7Y, {
                 className: I ?? y.m4,
-                onScroll: H ? O : void 0,
+                onScroll: B ? O : void 0,
                 ref: R,
                 children: [(0, i.jsx)(c.hD, {
                     navigator: M,

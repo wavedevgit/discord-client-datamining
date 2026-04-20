@@ -40,8 +40,8 @@ var i = n(627968),
     U = n(954571),
     G = n(957565),
     F = n(690521),
-    H = n(403362),
-    B = n(628691),
+    B = n(403362),
+    H = n(628691),
     V = n(521427),
     W = n(697470),
     K = n(492841),
@@ -55,7 +55,7 @@ var i = n(627968),
     Q = n(307731),
     ee = n(985018),
     et = n(15393);
-let en = [p.Ay.getByName("100"), p.Ay.getByName("laughing"), p.Ay.getByName("sparkling_heart")].filter(H.Vq);
+let en = [p.Ay.getByName("100"), p.Ay.getByName("laughing"), p.Ay.getByName("sparkling_heart")].filter(B.Vq);
 
 function ei(e) {
     e.stopPropagation()
@@ -162,7 +162,7 @@ function ea(e) {
         canManageOfficialMessages: y,
         isGuildOfficial: O,
         isExpanded: F,
-        showMoreUtilities: H,
+        showMoreUtilities: B,
         showEmojiPicker: Z,
         showMessageBookmarksActions: Q,
         isMessageBookmark: et,
@@ -189,9 +189,9 @@ function ea(e) {
         } = (0, d.cf)([w.A], () => ({
             canAddNewReactions: I && w.A.can(X.xBc.ADD_REACTIONS, t),
             canManageMessages: w.A.can(X.xBc.MANAGE_MESSAGES, t)
-        }), [t, I]), y = (0, b.u)(t, n), O = (0, M.n)(t, n), U = (0, M.R)(n), F = (0, d.bG)([T.A], () => null != t.guild_id && T.A.isLurking(t.guild_id), [t]), H = u.id === m, J = (v || n.canDeleteOwnMessage(m)) && _ && !X.MRS.UNDELETABLE.has(n.type);
+        }), [t, I]), y = (0, b.u)(t, n), O = (0, M.n)(t, n), U = (0, M.R)(n), F = (0, d.bG)([T.A], () => null != t.guild_id && T.A.isLurking(t.guild_id), [t]), B = u.id === m, J = (v || n.canDeleteOwnMessage(m)) && _ && !X.MRS.UNDELETABLE.has(n.type);
         n.type === X.lAJ.AUTO_MODERATION_ACTION && (J = J && v), t.isModeratorReportChannel() && (J = J && n.id !== f?.id && !(0, z.A)(n));
-        let q = (0, B.ul)(n),
+        let q = (0, H.ul)(n),
             $ = (0, K.A)(n, t),
             Z = !t.isSystemDM() && (0, W.A)(n, m) && _ && !p,
             {
@@ -204,7 +204,7 @@ function ea(e) {
                 isLurking: F,
                 isActiveChannelOrUnarchivableThread: _
             }),
-            ee = t.type === X.rbe.GUILD_ANNOUNCEMENT && null != h && h.features.has(X.GuildFeatures.NEWS) && (H || v) && (0, g.A)(n),
+            ee = t.type === X.rbe.GUILD_ANNOUNCEMENT && null != h && h.features.has(X.GuildFeatures.NEWS) && (B || v) && (0, g.A)(n),
             et = t.getGuildId(),
             en = null != et && n.type === X.lAJ.USER_JOIN && w.A.canWithPartialContext(X.xBc.MANAGE_GUILD, {
                 guildId: et
@@ -248,14 +248,14 @@ function ea(e) {
             isFocused: o
         }
     }(e), er = l.useRef(null), eo = l.useCallback(() => {
-        H || U.default.track(X.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
+        B || U.default.track(X.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
             message_id: n.id,
             channel: n.channel_id,
             location: "expanding_buttons"
         }), en({
-            moreUtilities: !H
+            moreUtilities: !B
         })
-    }, [H, en, n]), ed = l.useCallback(() => {
+    }, [B, en, n]), ed = l.useCallback(() => {
         en({
             emojiPicker: !Z
         })
@@ -359,7 +359,7 @@ function ea(e) {
                     updatePosition: l
                 })
             },
-            shouldShow: H,
+            shouldShow: B,
             onRequestClose: eo,
             position: "left",
             align: "top",

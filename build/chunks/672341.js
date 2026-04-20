@@ -40,8 +40,8 @@ var i = n(627968),
     U = n(857069),
     G = n(675171),
     F = n(806621),
-    H = n(636922),
-    B = n(371741),
+    B = n(636922),
+    H = n(371741),
     V = n(66149),
     W = n(922529),
     K = n(652176),
@@ -65,7 +65,7 @@ let et = l.memo(function(e) {
         isGroupStart: s,
         compact: a
     } = e;
-    return (0, i.jsx)(H.A, {
+    return (0, i.jsx)(B.A, {
         compact: a,
         isGroupStart: s,
         channel: n,
@@ -91,7 +91,7 @@ function en(e) {
     let t, n, {
             channel: l,
             messages: m,
-            unreadCount: H,
+            unreadCount: B,
             showNewMessagesBar: en,
             messageDisplayCompact: ei,
             channelStream: el,
@@ -181,7 +181,7 @@ function en(e) {
             e.type === Z.TZK.MESSAGE && null == eN && (eN = e);
             let n = e.groupId === eN?.groupId ? eN.content.id : e.groupId,
                 s = ev && e.content.isFirstMessageInForumPost(l),
-                a = e.type === Z.TZK.THREAD_STARTER_MESSAGE ? B.VO : B.Ay;
+                a = e.type === Z.TZK.THREAD_STARTER_MESSAGE ? H.VO : H.Ay;
             return (0, i.jsx)(a, {
                 compact: ei && !s,
                 channel: l,
@@ -230,7 +230,7 @@ function en(e) {
             ...er
         }, "has-more-after")), !ec && eA && em() && ey.push((0, i.jsx)(Y.A, {
             channel: l
-        })), H > 0 && en && em()) {
+        })), B > 0 && en && em()) {
         let e, n, s = R.Ay.getOldestUnreadTimestamp(l.id),
             r = 0 !== s ? s : P.default.extractTimestamp(l.id),
             c = (0, D.ro)(new Date, new Date(r));
@@ -239,15 +239,15 @@ function en(e) {
                 c = (0, y.L)(l.id, R.Ay.getOldestUnreadMessageId(l.id));
             if ((0, d.zV)(Z.HAw.SUMMARIES_UNREAD_BAR_VIEWED, {
                     num_unread_summaries: c,
-                    num_unread_messages: H,
+                    num_unread_messages: B,
                     last_ack_message_id: s,
                     summaries_enabled_by_user: ep,
                     summaries_enabled_for_channel: (0, o.pk)(l)
                 }), (0, o.pk)(l)) {
                 let s = ep ? Q.intl.format(n, {
-                    count: H
+                    count: B
                 }) : Q.intl.format(e, {
-                    count: H,
+                    count: B,
                     timestamp: r
                 });
                 if (ep) {
@@ -256,7 +256,7 @@ function en(e) {
                             variant: "text-sm/medium",
                             color: "currentColor",
                             children: Q.intl.format(n, {
-                                count: H
+                                count: B
                             })
                         }), (0, i.jsx)(p.A, {
                             style: {
@@ -294,7 +294,7 @@ function en(e) {
                                 variant: "text-sm/medium",
                                 color: "currentColor",
                                 children: Q.intl.format(n, {
-                                    count: H
+                                    count: B
                                 })
                             }), (0, i.jsx)(p.A, {
                                 style: {
@@ -324,7 +324,7 @@ function en(e) {
             }
         } else ex.includes(q.i.NEW_MESSAGES) && (t = (0, i.jsx)(K.GN, {
             content: Q.intl.format(e, {
-                count: H,
+                count: B,
                 timestamp: r
             }),
             channelId: l.id

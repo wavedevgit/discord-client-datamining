@@ -113,8 +113,8 @@ var f = n(483270),
     e9 = n(402216),
     e7 = n(746080),
     e6 = n(652215),
-    e5 = n(5867),
-    e2 = n(806931),
+    e2 = n(5867),
+    e5 = n(806931),
     e3 = n(49999),
     e8 = n(165610),
     e4 = n(957173),
@@ -255,7 +255,7 @@ class tl extends l.PureComponent {
             selectedParticipant: e,
             premiumIndicatorEnabled: t
         } = this.props;
-        return e?.type !== e2.lp.STREAM ? null : (0, i.jsx)(K.A, {
+        return e?.type !== e5.lp.STREAM ? null : (0, i.jsx)(K.A, {
             size: e9.Ay.Sizes.LARGE,
             participant: e,
             showQuality: !0,
@@ -802,7 +802,7 @@ let ts = (0, x.A)(tl),
         }, [G, m, L, M]);
         let P = (0, h.bG)([N.Ay], () => N.Ay.getCurrentEmbeddedActivity()),
             k = (0, h.bG)([N.Ay], () => N.Ay.getActivityPanelMode()),
-            w = null != P && !(0, S.A)(m?.id) && k === e5.Gd.PANEL,
+            w = null != P && !(0, S.A)(m?.id) && k === e2.Gd.PANEL,
             H = (0, h.bG)([eX.A], () => null != m && m.isVocalThread() && !c().isEmpty(eX.A.getVoiceStatesForChannel(m.id)), [m]),
             K = null != m && m.isPrivate() && !w && v,
             Y = m?.isGuildVocal() || K || H,
@@ -812,7 +812,7 @@ let ts = (0, x.A)(tl),
             } = (0, u.zy)(),
             X = (0, h.bG)([e_.A], () => null != m && e_.A.isLurking(m.guild_id), [m]),
             J = (0, h.bG)([ek.A], () => ek.A.hasSeen(m?.guild_id, X), [m, X]),
-            Q = (0, h.bG)([j.A, N.Ay], () => null != N.Ay.getConnectedActivityLocation() && N.Ay.getActivityPanelMode() === e5.Gd.PANEL ? N.Ay.getFocusedLayout() === e5.E8.NO_CHAT ? e6.DUB.NO_CHAT : e6.DUB.NORMAL : null != a ? j.A.getLayout(a) : e6.DUB.NORMAL, [a]),
+            Q = (0, h.bG)([j.A, N.Ay], () => null != N.Ay.getConnectedActivityLocation() && N.Ay.getActivityPanelMode() === e2.Gd.PANEL ? N.Ay.getFocusedLayout() === e2.E8.NO_CHAT ? e6.DUB.NO_CHAT : e6.DUB.NORMAL : null != a ? j.A.getLayout(a) : e6.DUB.NORMAL, [a]),
             Z = (0, eh.A)(x?.id),
             ee = (0, ew.A)(q, x?.id),
             {

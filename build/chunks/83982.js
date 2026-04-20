@@ -70,8 +70,8 @@ function w(e) {
         ignored: U,
         noVideoRender: G = !1,
         pulseSpeakingIndicator: F = !1,
-        paused: H = !1
-    } = e, B = T.Ay.getVideoComponent(), V = (0, r.bG)([I.default], () => I.default.getId()), {
+        paused: B = !1
+    } = e, H = T.Ay.getVideoComponent(), V = (0, r.bG)([I.default], () => I.default.getId()), {
         user: W,
         streamId: K,
         speaking: z
@@ -97,7 +97,7 @@ function w(e) {
             user: n
         } = eo.current;
         e.isGuildStageVoice() && !J && t?.id === n.id && d.A.selectParticipant(e.id, null)
-    }, [J]), s && !Z && !G && J && !c && null != B && T.Ay.supports(M.O5.VIDEO)) ? null != es && null == ea ? (0, i.jsx)(b.A, {
+    }, [J]), s && !Z && !G && J && !c && null != H && T.Ay.supports(M.O5.VIDEO)) ? null != es && null == ea ? (0, i.jsx)(b.A, {
         avError: es,
         userId: t.id,
         width: o,
@@ -108,10 +108,10 @@ function w(e) {
         className: D.Qs,
         mirror: Y,
         streamId: K,
-        videoComponent: B,
+        videoComponent: H,
         fit: j,
         videoSpinnerContext: W.id === V ? u.u.SELF_VIDEO : u.u.REMOTE_VIDEO,
-        paused: H,
+        paused: B,
         userId: W.id
     }, K) : (0, i.jsx)("div", {
         className: a()(D.Qs, {

@@ -54,10 +54,12 @@ function O(e) {
 
 function L(e) {
     let {
-        onClick: t
+        onClick: t,
+        className: n
     } = e;
     return (0, i.jsx)(O, {
         onClick: t,
+        className: n,
         children: R.intl.string(R.t.R9GHya)
     })
 }
@@ -105,7 +107,7 @@ function M() {
             onClick: () => G({
                 backToSettings: !0
             }),
-            className: j.Gv,
+            className: j.R4,
             children: [(0, i.jsx)(x.A, {
                 width: 16,
                 height: 16,
@@ -169,7 +171,8 @@ function M() {
         }), c || a === b.BEX.ROLE_SUBSCRIPTIONS ? null : (0, i.jsx)(L, {
             onClick: () => G({
                 backToSettings: !1
-            })
+            }),
+            className: j.ZY
         })]
     })
 }
@@ -181,7 +184,8 @@ function D(e) {
     return (0, r.bG)([T.A], () => T.A.isViewingRoles(t)) ? (0, i.jsx)("div", {
         className: a()(j.xd, {
             [j.KF]: (0, C.isWindows)(),
-            [j.Xz]: (0, C.isMac)()
+            [j.Xz]: (0, C.isMac)(),
+            [j.pS]: (0, C.isLinux)()
         }),
         children: (0, i.jsx)(M, {})
     }) : null

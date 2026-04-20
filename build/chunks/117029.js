@@ -50,7 +50,7 @@ let C = l.memo(function(e) {
         panOffset: P,
         setPanOffset: k,
         clampPanOffset: w
-    } = l.useContext(A.e9), [U, G] = l.useState(!1), F = l.useRef(null), H = T > v, B = l.useCallback(() => {
+    } = l.useContext(A.e9), [U, G] = l.useState(!1), F = l.useRef(null), B = T > v, H = l.useCallback(() => {
         x("interact")
     }, [x]), V = l.useCallback(() => {
         G(!1), S("interact")
@@ -110,14 +110,14 @@ let C = l.memo(function(e) {
         Q.current?.stop()
     }), I && null != n) ? (0, i.jsxs)("div", {
         className: a()(p.ne, {
-            [p.Ge]: L || H
+            [p.Ge]: L || B
         }),
-        onMouseEnter: B,
+        onMouseEnter: H,
         onMouseLeave: V,
         onClick: f,
-        children: [(L || H) && (0, i.jsx)(d.DUT, {
+        children: [(L || B) && (0, i.jsx)(d.DUT, {
             onClick: f,
-            onMouseEnter: B,
+            onMouseEnter: H,
             onMouseLeave: V,
             children: (0, i.jsxs)("div", {
                 ref: F,
@@ -140,7 +140,7 @@ let C = l.memo(function(e) {
             })
         }), (0, i.jsxs)("div", {
             className: p.xu,
-            children: [(L || H) && (0, i.jsxs)(i.Fragment, {
+            children: [(L || B) && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(c.m_, {
                     text: g.intl.string(g.t.M6Cmwy),
                     position: "top",

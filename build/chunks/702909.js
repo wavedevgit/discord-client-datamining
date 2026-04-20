@@ -16,7 +16,7 @@ let c = (0, a.zD)(o.X.CLIPS_ENABLE_REMINDERS, {
     setValue: e => r.Mt(e),
     usePredicate: () => {
         let {
-            showClipsHeaderEntrypoint: e
+            enableClipsRemindersSetting: e
         } = s.L_.useConfig({
             location: "clips_recording_settings"
         });

@@ -41,8 +41,8 @@ var i = n(627968),
     U = n(84511),
     G = n(817176),
     F = n(129114),
-    H = n(652215),
-    B = n(360469),
+    B = n(652215),
+    H = n(360469),
     V = n(518477),
     W = n(985018),
     K = n(932231);
@@ -88,7 +88,7 @@ function q(e) {
         application: t
     } = e;
     if (null == t) return null;
-    let n = t.getIconURL(B.iu.SMALL);
+    let n = t.getIconURL(H.iu.SMALL);
     return (0, i.jsxs)(d.BJc, {
         direction: "horizontal",
         gap: 4,
@@ -180,7 +180,7 @@ function X(e) {
         return e && t
     }, [d, u, a]);
     return l.useEffect(() => {
-        0 !== d.length && L.default.track(H.HAw.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
+        0 !== d.length && L.default.track(B.HAw.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
             guild_id: i.guild_id,
             channel_id: i.id,
             sku_ids: d.map(e => e.id)
@@ -303,16 +303,16 @@ function et(e) {
         isTargetingCurrentUser: O
     }), w = (0, k.A)(s), {
         status: G,
-        recommendations: H,
-        skusToUserAndReason: B,
+        recommendations: B,
+        skusToUserAndReason: H,
         hasBothSources: Y
     } = X({
         userId: n,
         applicationId: s,
         channel: a,
         numItems: 8
-    }), Q = "loading" === G || 0 === H.length || null == v, et = l.useMemo(() => null == v || 0 === H.length ? [] : (H.length > 8 ? H.slice(0, 8) : H).map(e => {
-        let t = (B[e.id] ?? {})[n] === j.j.WISHLIST;
+    }), Q = "loading" === G || 0 === B.length || null == v, et = l.useMemo(() => null == v || 0 === B.length ? [] : (B.length > 8 ? B.slice(0, 8) : B).map(e => {
+        let t = (H[e.id] ?? {})[n] === j.j.WISHLIST;
         return (0, i.jsx)(F.A, {
             sku: e,
             targetUser: v,
@@ -325,7 +325,7 @@ function et(e) {
             onCardClick: r,
             onButtonClick: r
         }, e.id)
-    }), [v, H, a.guild_id, a.id, B, n, O, Y, h, r]);
+    }), [v, B, a.guild_id, a.id, H, n, O, Y, h, r]);
     return (0, i.jsxs)(J, {
         className: t,
         "aria-labelledby": z,

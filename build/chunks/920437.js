@@ -40,8 +40,8 @@ var i = n(627968),
     U = n(137577),
     G = n(786051),
     F = n(652215),
-    H = n(360469),
-    B = n(53516),
+    B = n(360469),
+    H = n(53516),
     V = n(985018),
     W = n(968884);
 class K extends l.PureComponent {
@@ -126,7 +126,7 @@ class K extends l.PureComponent {
                 ...t
             })
         }, {
-            modalKey: B.V
+            modalKey: H.V
         })
     };
     handleResendVerification = () => {
@@ -269,7 +269,7 @@ class K extends l.PureComponent {
             min: F.$8o.MEMBER_AGE
         }), N.countdown = r) : o && (N.message = V.intl.formatToPlainString(V.t["2JA2GH"], {
             min: F.$8o.ACCOUNT_AGE
-        }), N.countdown = c) : (N.imageSrc = S.getIconURL(H.iu.SMALL) ?? void 0, N.message = V.intl.format(V.t.EvDn1D, {
+        }), N.countdown = c) : (N.imageSrc = S.getIconURL(B.iu.SMALL) ?? void 0, N.message = V.intl.format(V.t.EvDn1D, {
             name: S.name
         }), null != S.connectionEntrypointUrl && (N.buttonText = V.intl.string(V.t.S0W8Z5), N.onButtonClick = () => {
             window.open(S.connectionEntrypointUrl, "_blank")

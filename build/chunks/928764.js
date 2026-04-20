@@ -40,9 +40,9 @@ var i = n(627968),
     U = n(221314),
     G = n(189971),
     F = n(347353),
-    H = n(518229);
+    B = n(518229);
 
-function B(e) {
+function H(e) {
     let {
         channel: t
     } = e, s = t.isArchivedThread(), a = (0, T.uW)(t), [r, c] = l.useState(!1), u = () => {
@@ -175,7 +175,7 @@ function V(e) {
                     message: J,
                     channel: Y,
                     useChatFontScaling: !1,
-                    className: a()(H.secondary, G.vU, {
+                    className: a()(B.secondary, G.vU, {
                         [G.w$]: !er
                     }),
                     isForumToolbar: !0,
@@ -183,7 +183,7 @@ function V(e) {
                 })]
             }), (0, i.jsxs)("div", {
                 className: G.Uo,
-                children: [ee ? (0, i.jsx)(B, {
+                children: [ee ? (0, i.jsx)(H, {
                     channel: Y
                 }) : !X && (0, i.jsx)(c.m, {
                     text: w.intl.string(w.t.F7oeDv),

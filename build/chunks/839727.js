@@ -7,7 +7,7 @@ var r = n(627968),
     a = n(503698),
     l = n.n(a),
     i = n(771253),
-    u = n(825638),
+    u = n(208798),
     o = n(942381),
     c = n(311907),
     d = n(876230),
@@ -74,7 +74,7 @@ function Y(e) {
         targetRef: eo
     } = (0, p.O7)(), [ec, ed] = s.useState(!0 === a ? N.Q6.PLAYING : N.Q6.PAUSED), [eE, em] = s.useState(!1), [ef, e_] = s.useState(!1), eS = (0, b.Yh)(W), [ep, ev] = s.useState(eS.percentComplete), eh = s.useCallback(e => {
         eQ(null), ev(e)
-    }, []), [eg, eA] = s.useState(!1), [eC, ex] = s.useState(!0), [eT, eD] = s.useState(!1), [eI, eb] = s.useState([]), [ey, eO] = s.useState(v.A.getEffectiveConnectionSpeed()), [eR, eL] = s.useState(0), [eN, ek] = s.useState(0), [eM, eP] = s.useState(!1), [eV, ew] = s.useState(!1), [eU, eQ] = s.useState(null), ej = s.useRef(!0), eB = s.useRef(null), eF = s.useRef(null), eY = (0, x.Kr)(e => e.videoProgress[W.id] ?? x.yc, o.x), eH = (0, x.Kr)(e => e.setVideoProgress), eK = (0, x.Kr)(e => e.muted), eG = (0, x.Kr)(e => e.setMuted), e$ = (0, x.Kr)(e => e.volume), eq = (0, x.Kr)(e => e.setVolume), eW = (0, c.bG)([_.A], () => _.A.useReducedMotion), ez = (0, s.useRef)(null), eZ = (0, s.useRef)(null), eX = (0, s.useRef)(null), eJ = s.useRef(!0), e0 = W.userStatus?.completedAt != null, e1 = s.useMemo(() => W.config.features.includes(U.Li.FULL_EPISODE_VIDEO_QUEST), [W.config.features]), e6 = s.useRef(!1), [e7, e4] = s.useState(null), [e9, e5] = s.useState(!1), [e3, e8] = s.useState(null), e2 = Math.max(eY.maxTimestampSec, eS.progressSeconds), te = e0 ? ez.current?.duration ?? 0 : (0, y.vd)(e2, eY.duration), tt = s.useMemo(() => (0, I.L)({
+    }, []), [eg, eA] = s.useState(!1), [eC, ex] = s.useState(!0), [eT, eD] = s.useState(!1), [eI, eb] = s.useState([]), [ey, eO] = s.useState(v.A.getEffectiveConnectionSpeed()), [eR, eL] = s.useState(0), [eN, ek] = s.useState(0), [eM, eP] = s.useState(!1), [eV, ew] = s.useState(!1), [eU, eQ] = s.useState(null), ej = s.useRef(!0), eB = s.useRef(null), eF = s.useRef(null), eY = (0, x.Kr)(e => e.videoProgress[W.id] ?? x.yc, o.x), eH = (0, x.Kr)(e => e.setVideoProgress), eK = (0, x.Kr)(e => e.muted), eG = (0, x.Kr)(e => e.setMuted), e$ = (0, x.Kr)(e => e.volume), eq = (0, x.Kr)(e => e.setVolume), eW = (0, c.bG)([_.A], () => _.A.useReducedMotion), ez = (0, s.useRef)(null), eZ = (0, s.useRef)(null), eX = (0, s.useRef)(null), eJ = s.useRef(!0), e0 = W.userStatus?.completedAt != null, e1 = s.useMemo(() => W.config.features.includes(U.Li.FULL_EPISODE_VIDEO_QUEST), [W.config.features]), e6 = s.useRef(!1), [e7, e4] = s.useState(null), [e9, e5] = s.useState(!1), [e8, e3] = s.useState(null), e2 = Math.max(eY.maxTimestampSec, eS.progressSeconds), te = e0 ? ez.current?.duration ?? 0 : (0, y.vd)(e2, eY.duration), tt = s.useMemo(() => (0, I.L)({
         quest: W,
         location: U.rE.VIDEO_MODAL
     }), [W]), tn = (0, E.g)(e0, eY, eS.progressSeconds), [tr, ts] = s.useState(N.oA.MD), ta = {
@@ -250,10 +250,10 @@ function Y(e) {
             }
         },
         tW = e => {
-            e8(e)
+            e3(e)
         },
         tz = e => {
-            e8(t => t?.id === e.id ? null : t)
+            e3(t => t?.id === e.id ? null : t)
         },
         tZ = s.useCallback(() => {
             if (null == ez.current || (tt.info(`[QV] | handleTracksLoaded: textTracks.length: ${ez.current.textTracks.length}`), 0 === ez.current.textTracks.length)) return;
@@ -310,19 +310,19 @@ function Y(e) {
         config: F
     }));
     s.useEffect(() => (t9({
-        captionHeightSpring: er && null != e3 ? t7.current?.clientHeight ?? 0 : 0,
+        captionHeightSpring: er && null != e8 ? t7.current?.clientHeight ?? 0 : 0,
         immediate: eW
     }), () => {
         t4.stop()
-    }), [er, t9, eW, e3, t4]), s.useEffect(() => (t6({
+    }), [er, t9, eW, e8, t4]), s.useEffect(() => (t6({
         controlBarAnimSpring: tj || eM ? 1 : 0,
         immediate: eW
     }), () => {
         t1.stop()
     }), [tj, t6, eW, eM, t1]);
     let t5 = ec === N.Q6.ENDED,
-        t3 = s.useMemo(() => (0, T.tW)(W, T.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1), [W]),
-        t8 = s.useMemo(() => (0, T.tW)(W, T.fY.VIDEO_PLAYER_CAPTION, void 0, !1), [W]),
+        t8 = s.useMemo(() => (0, T.tW)(W, T.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1), [W]),
+        t3 = s.useMemo(() => (0, T.tW)(W, T.fY.VIDEO_PLAYER_CAPTION, void 0, !1), [W]),
         t2 = e0 || e2 >= (ez.current?.currentTime ?? 0) + 1,
         ne = s.useMemo(() => null === (0, T.tW)(W, T.fY.VIDEO_PLAYER_TRANSCRIPT, void 0, !1), [W]),
         nt = ee ? 20 : 12,
@@ -365,7 +365,7 @@ function Y(e) {
                     [B.IR]: !0
                 }),
                 controls: !1,
-                poster: t3?.url,
+                poster: t8?.url,
                 disablePictureInPicture: !0,
                 "data-testid": "discord-web-video-player-video",
                 onTimeUpdate: e => {
@@ -424,9 +424,9 @@ function Y(e) {
                     tt.info("[QV] | handleVideoClick"), tq()
                 },
                 crossOrigin: "anonymous",
-                children: [null != t8 && (0, r.jsx)("track", {
+                children: [null != t3 && (0, r.jsx)("track", {
                     ref: eZ,
-                    src: t8.url,
+                    src: t3.url,
                     label: "English",
                     kind: "captions",
                     srcLang: "en",
@@ -539,7 +539,7 @@ function Y(e) {
                 }) : (0, r.jsx)(m.E$n, {
                     className: B.PK
                 })
-            }, ec), er && null != e3 && !t5 && (0, r.jsx)(u.animated.div, {
+            }, ec), er && null != e8 && !t5 && (0, r.jsx)(u.animated.div, {
                 className: B.o$,
                 ref: t7,
                 "data-testid": "discord-web-video-player-captions",
@@ -553,7 +553,7 @@ function Y(e) {
                     variant: "text-lg/semibold",
                     color: "always-white",
                     className: B.qh,
-                    children: e3.text
+                    children: e8.text
                 })
             }), (0, r.jsxs)(u.animated.div, {
                 className: B.r8,
@@ -613,7 +613,7 @@ function Y(e) {
                         animSpring: t1,
                         visible: tj,
                         seekForwardEnabled: t2,
-                        hideCaptionBtn: null == t8,
+                        hideCaptionBtn: null == t3,
                         hideTranscriptBtn: ne,
                         hideSkipButtons: "portrait" === G,
                         size: tr,

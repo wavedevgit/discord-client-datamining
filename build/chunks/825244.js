@@ -82,9 +82,9 @@ function L(e) {
             canManageGuild: G,
             canMessage: F
         } = (0, A.Sk)(O, P),
-        H = (0, o.bG)([C.default], () => C.default.getCurrentUser()?.desktop === !0 || C.default.getCurrentUser()?.mobile === !0),
+        B = (0, o.bG)([C.default], () => C.default.getCurrentUser()?.desktop === !0 || C.default.getCurrentUser()?.mobile === !0),
         {
-            guildPopulated: B,
+            guildPopulated: H,
             guildMessaged: V,
             guildPersonalized: W
         } = (0, A.lF)(P),
@@ -160,7 +160,7 @@ function L(e) {
                 }))
             }, [P])
         }),
-        $ = !(H || B || V || W),
+        $ = !(B || H || V || W),
         {
             titleAnimatedStyle: Z,
             opacities: X
@@ -215,7 +215,7 @@ function L(e) {
         children: (0, i.jsx)(M, {
             iconUrl: d.zNk,
             header: j.intl.string(j.t.q9n0Ta),
-            completed: B,
+            completed: H,
             onClick: K
         })
     }, "invite")), G && en.push((0, i.jsx)(r.A.div, {
@@ -248,7 +248,7 @@ function L(e) {
         children: (0, i.jsx)(M, {
             iconUrl: d.Gl0,
             header: j.intl.string(j.t.pGVNI9),
-            completed: H,
+            completed: B,
             onClick: J
         })
     }, "download")), en.push((0, i.jsx)(r.A.div, {

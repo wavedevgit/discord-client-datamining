@@ -42,8 +42,8 @@ var i = n(627968),
     U = n(522871),
     G = n(699352),
     F = n(426153),
-    H = n(444529),
-    B = n(241874),
+    B = n(444529),
+    H = n(241874),
     V = n(91624),
     W = n(653008),
     K = n(162792),
@@ -89,7 +89,7 @@ function X(e) {
             [$.H4]: !0,
             [$._A]: !0
         }),
-        childrenHeader: (0, B.A)({
+        childrenHeader: (0, H.A)({
             messageProps: e,
             setPopout: A,
             messagePopouts: m,
@@ -129,7 +129,7 @@ function Q(e) {
         handleBlur: U
     } = (0, D.G8)(T), {
         popouts: F,
-        selected: H,
+        selected: B,
         setPopout: W
     } = (0, k.A)(n.id, Y.Fd), Z = C.hD.useSetting(), X = C.rs.useSetting(), Q = (0, d.bG)([f.A], () => f.A.getMessageByReference(I)), ee = (0, _.S)((n.editedTimestamp ?? n.timestamp).valueOf()), {
         handleMouseEnter: et,
@@ -138,8 +138,8 @@ function Q(e) {
     } = (0, D.yp)({
         groupId: p,
         message: n,
-        defaultValue: H
-    }), el = (0, d.bG)([h.A], () => h.A.keyboardModeEnabled), es = H || el && y, ea = es || ei, er = (0, d.bG)([S.A], () => S.A.isDeveloper), {
+        defaultValue: B
+    }), el = (0, d.bG)([h.A], () => h.A.keyboardModeEnabled), es = B || el && y, ea = es || ei, er = (0, d.bG)([S.A], () => S.A.isDeveloper), {
         content: eo,
         hasSpoilerEmbeds: ec,
         hasBailedAst: ed
@@ -192,7 +192,7 @@ function Q(e) {
                 replyMessage: Q,
                 isReplySpineClickable: !0
             }),
-            childrenHeader: (0, B.A)({
+            childrenHeader: (0, H.A)({
                 messageProps: e,
                 setPopout: W,
                 messagePopouts: F,
@@ -309,8 +309,8 @@ let ee = l.memo(function(e) {
             roleId: ek.iconRoleId
         }),
         eF = (0, m.A)(Z, E)?.color ?? null,
-        eH = (0, L.fF)(r, et),
-        eB = (0, L.ZD)(r),
+        eB = (0, L.fF)(r, et),
+        eH = (0, L.ZD)(r),
         eV = (0, d.bG)([A.A], () => A.A.getMessage(E), [E]),
         eW = (0, U.A)({
             message: r,
@@ -340,8 +340,8 @@ let ee = l.memo(function(e) {
                     ...es,
                     "aria-setsize": -1,
                     "aria-roledescription": q.intl.string(q.t.BAB0yK),
-                    "aria-labelledby": eH,
-                    "aria-describedby": eB,
+                    "aria-labelledby": eB,
+                    "aria-describedby": eH,
                     onFocus: eS,
                     onBlur: eI,
                     onContextMenu: eh,
@@ -374,7 +374,7 @@ let ee = l.memo(function(e) {
                         isReplySpineClickable: !0
                     }),
                     childrenExecutedCommand: (0, W.A)(e, eu, ec),
-                    childrenHeader: en ? void 0 : (0, B.A)({
+                    childrenHeader: en ? void 0 : (0, H.A)({
                         messageProps: e,
                         setPopout: eu,
                         messagePopouts: ec,
@@ -392,7 +392,7 @@ let ee = l.memo(function(e) {
                         isAutomodBlockedMessage: ez,
                         forceAddReactions: r.type === J.lAJ.EMOJI_ADDED
                     }),
-                    childrenButtons: e_ || eE ? (0, H.A)({
+                    childrenButtons: e_ || eE ? (0, B.A)({
                         buttonProps: e,
                         setPopout: eu,
                         messagePopouts: ec,

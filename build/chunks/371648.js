@@ -6,7 +6,7 @@ var i = n(627968),
     l = n(64700),
     s = n(503698),
     a = n.n(s),
-    r = n(825638),
+    r = n(208798),
     o = n(837381),
     c = n(311907),
     d = n(397927),
@@ -40,8 +40,8 @@ var i = n(627968),
     U = n(504136),
     G = n(326337),
     F = n(540385),
-    H = n(830178),
-    B = n(722432),
+    B = n(830178),
+    H = n(722432),
     V = n(258024),
     W = n(672341),
     K = n(652215),
@@ -71,7 +71,7 @@ let J = (0, r.animated)(d.fKU),
                 jumpBarClassName: w,
                 typingGradient: U
             } = e,
-            [H, q] = l.useState(b.A.isAtBottom(f.id) ?? !1),
+            [B, q] = l.useState(b.A.isAtBottom(f.id) ?? !1),
             $ = (0, p.Ay)(f),
             Z = (0, G.I)(I, R),
             X = I ? Z : Math.round(.87 * Z),
@@ -96,7 +96,7 @@ let J = (0, r.animated)(d.fKU),
                 handleScrollFromBottom: l.useCallback(() => q(!1), [q]),
                 additionalMessagePadding: 48
             }),
-            en = (0, B.A)({
+            en = (0, H.A)({
                 scrollerRef: et.ref,
                 isEditing: null != j,
                 keyboardModeEnabled: M,
@@ -156,8 +156,8 @@ let J = (0, r.animated)(d.fKU),
                 let e = N.A.settings.appearance?.clientThemeSettings;
                 return e?.backgroundGradientPresetId != null || e?.customUserThemeSettings != null
             }),
-            eA = l.useMemo(() => U ? H ? Y.gA : Y.ru : Y.Zd, [U, H]),
-            eg = l.useMemo(() => U ? H ? Y.cz : Y.XF : Y.U6, [U, H]);
+            eA = l.useMemo(() => U ? B ? Y.gA : Y.ru : Y.Zd, [U, B]),
+            eg = l.useMemo(() => U ? B ? Y.cz : Y.XF : Y.U6, [U, B]);
         return (0, i.jsxs)(o.hD, {
             navigator: en,
             children: [null != eo && eo, (0, i.jsxs)("div", {
@@ -263,7 +263,7 @@ let J = (0, r.animated)(d.fKU),
             }
         }(), {
             messages: F,
-            channelStream: B,
+            channelStream: H,
             oldestUnreadMessageId: V,
             editingMessageId: W
         } = function(e) {
@@ -309,7 +309,7 @@ let J = (0, r.animated)(d.fKU),
         }(t);
         return (0, i.jsx)(I.Bs.Provider, {
             value: (0, w.A)(k, u),
-            children: (0, i.jsx)(H.t, {
+            children: (0, i.jsx)(B.t, {
                 children: (0, i.jsx)(q, {
                     ...d,
                     messageGroupSpacing: S,
@@ -317,7 +317,7 @@ let J = (0, r.animated)(d.fKU),
                     channel: t,
                     messageDisplayCompact: !r && (a || b),
                     messages: F,
-                    channelStream: B,
+                    channelStream: H,
                     permissionVersion: m,
                     uploads: (0, c.bG)([O.A], () => O.A.getFiles(t.id), [t]),
                     unreadCount: (0, c.bG)([D.Ay], () => D.Ay.getUnreadCount(t.id), [t]),

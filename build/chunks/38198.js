@@ -71,7 +71,7 @@ function N(e) {
         })
     }
 
-    function H() {
+    function B() {
         let e = M,
             n = "txt",
             i = "",
@@ -117,7 +117,7 @@ function N(e) {
                             type: "icon",
                             icon: e.icon
                         },
-                        action: H
+                        action: B
                     }, "upload-text-as-file");
                 case C.v.CLIPS:
                     return (0, i.jsx)(r.Drp, {

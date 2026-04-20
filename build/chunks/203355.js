@@ -41,8 +41,8 @@ var i = n(627968),
     U = n(806931),
     G = n(731854),
     F = n(985018),
-    H = n(391308);
-let B = new _.A("StreamTile");
+    B = n(391308);
+let H = new _.A("StreamTile");
 
 function V(e) {
     let {
@@ -58,7 +58,7 @@ function V(e) {
             participant: t
         }), l || null == c || c.state === w.XYD.ENDED || c.state === w.XYD.FAILED ? null : (0, i.jsx)(x.A, {
             size: g.Ay.Sizes.SMALL,
-            className: H.Ok,
+            className: B.Ok,
             participant: t,
             showQuality: !d && !s,
             isUpsellEnabled: !1,
@@ -87,7 +87,7 @@ function W(e) {
     });
     let ei = (0, p.u)(G.x.STREAM, t.user.id);
     if (l.useEffect(() => {
-            B.info(`Stream Tile State - activeStream: ${null!=$} | selected: ${n} | Video: ${null!=V} | MediaEngine: ${y.Ay.supports(G.O5.VIDEO)}`)
+            H.info(`Stream Tile State - activeStream: ${null!=$} | selected: ${n} | Video: ${null!=V} | MediaEngine: ${y.Ay.supports(G.O5.VIDEO)}`)
         }, [V, $, n]), K) return (0, i.jsx)(O.A, {
         stream: t.stream,
         isSmall: en,
@@ -114,8 +114,8 @@ function W(e) {
     if (null != $ && !n && null != V && y.Ay.supports(G.O5.VIDEO)) return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(S.A, {
             onResize: s,
-            wrapperClassName: a()(_ !== A.N.CALL_TILE ? H.tN : void 0, P),
-            className: H.Qs,
+            wrapperClassName: a()(_ !== A.N.CALL_TILE ? B.tN : void 0, P),
+            className: B.Qs,
             streamId: J,
             videoComponent: V,
             fit: g,
@@ -132,26 +132,26 @@ function W(e) {
         })]
     });
     else return (0, i.jsxs)("div", {
-        className: a()(H.Qs, H.Rh, {
-            [H.EX]: en
+        className: a()(B.Qs, B.Rh, {
+            [B.EX]: en
         }),
         children: [(0, i.jsx)(C.A, {
             noImage: !0,
             noText: !0,
-            className: a()(H.HL, {
-                [H.gH]: null == $
+            className: a()(B.HL, {
+                [B.gH]: null == $
             }),
             stream: t.stream
         }), n ? null : (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
-                className: H.lO,
+                className: B.lO,
                 children: (0, i.jsx)(c.Button, {
                     variant: "secondary",
                     size: en ? "sm" : "md",
                     text: x < 175 ? F.intl.string(F.t.I6JG46) : F.intl.string(F.t["7Xq/nV"])
                 })
             }), Z ? (0, i.jsx)("div", {
-                className: a()(H.lO, H.EU),
+                className: a()(B.lO, B.EU),
                 children: (0, i.jsx)(o.m_, {
                     text: F.intl.string(F.t.wCrzut),
                     children: (0, i.jsx)(c.K0, {
