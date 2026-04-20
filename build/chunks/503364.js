@@ -78,7 +78,7 @@ function p(e) {
         label: x.intl.string(x.t["FfCL+6"])
     }), b = (0, m.n)(t.id, p), E = (0, f.A)(t), {
         officialInvite: j
-    } = (0, u.c)(), C = new Set(j?.guild?.features).has(h.GuildFeatures.SOCIAL_LAYER_STOREFRONT), I = a.useCallback(() => {
+    } = (0, u.c)(), I = new Set(j?.guild?.features).has(h.GuildFeatures.SOCIAL_LAYER_STOREFRONT), C = a.useCallback(() => {
         null != j && (0, c.X)({
             invite: j
         })
@@ -120,14 +120,14 @@ function p(e) {
                     text: x.intl.string(x.t.sidPSo)
                 })
             })
-        }), C && null != j && (0, l.jsx)(i.m, {
+        }), I && null != j && (0, l.jsx)(i.m, {
             text: x.intl.string(x.t.apFNLU),
             children: (0, l.jsx)(r.K0, {
                 icon: r.U1X,
                 variant: "overlay-secondary",
                 size: "sm",
                 "aria-label": x.intl.string(x.t.apFNLU),
-                onMouseDown: I,
+                onMouseDown: C,
                 onClick: N
             })
         }), (null != A || null != b) && (0, l.jsx)(r.YNO, {

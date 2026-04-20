@@ -14,9 +14,9 @@ var i = n(627968),
     m = n(565150),
     h = n(521502),
     p = n(851023),
-    f = n(349688),
-    x = n(914905),
-    v = n(176634),
+    x = n(349688),
+    v = n(914905),
+    f = n(176634),
     g = n(101555),
     b = n(386976),
     j = n(32523),
@@ -48,7 +48,7 @@ function L(e) {
                 return "Linux"
         }
         return ""
-    }((0, w.getOS)())), [et, en] = a.useState(""), [ei, ea] = a.useState(""), [er, el] = a.useState(""), [es, eo] = a.useState(""), [eu, ed] = a.useState(!1), [ec, em] = a.useState(!1), [eh, ep] = a.useState(!1), [ef, ex] = a.useState(null);
+    }((0, w.getOS)())), [et, en] = a.useState(""), [ei, ea] = a.useState(""), [er, el] = a.useState(""), [es, eo] = a.useState(""), [eu, ed] = a.useState(!1), [ec, em] = a.useState(!1), [eh, ep] = a.useState(!1), [ex, ev] = a.useState(null);
     a.useEffect(() => {
         let e = Math.random().toString(16).slice(2);
         s.Bo.get({
@@ -58,15 +58,15 @@ function L(e) {
             },
             rejectWithError: !0
         }).then(e => {
-            if (null != e.body && "008485119f0ff0542187b65b793da09e09e2dd2e" !== e.body.hash) {
-                let e = new Date("1776710120237"),
+            if (null != e.body && "3338cc605d00e01b9a3084431458b4d1ec1b13d3" !== e.body.hash) {
+                let e = new Date("1776712503401"),
                     t = new Date,
                     n = (0, S.Tf)(t, e);
-                n.hours > 6 && ex(n.hours)
+                n.hours > 6 && ev(n.hours)
             }
         })
     }, []);
-    let ev = (0, l.bG)([y.default], () => {
+    let ef = (0, l.bG)([y.default], () => {
             let e = y.default.getCurrentUser();
             return e?.isStaff() || e?.isStaffPersonal()
         }),
@@ -118,7 +118,7 @@ function L(e) {
             } : {
                 overridePlatformInformation: G
             }, t).catch(() => ep(!0));
-        em(!1), null != a && a.ok ? (ev && window.open(a.body.permalink_url, "_blank"), L(), (0, d.mMO)(async () => {
+        em(!1), null != a && a.ok ? (ef && window.open(a.body.permalink_url, "_blank"), L(), (0, d.mMO)(async () => {
             let {
                 default: e
             } = await n.e("71256").then(n.bind(n, 369323));
@@ -132,13 +132,13 @@ function L(e) {
         async function e() {
             K(await (0, k.xt)())
         }
-        ev && e()
-    }, [ev]), a.useEffect(() => {
+        ef && e()
+    }, [ef]), a.useEffect(() => {
         $.length > 0 && N.current?.scrollIntoView({
             behavior: "smooth",
             block: "end"
         })
-    }, [$]), (0, v.A)({
+    }, [$]), (0, f.A)({
         onPasteFiles: a.useCallback(e => {
             let t = Array.from(e).filter(e => e.type.startsWith("image/")).at(0);
             void 0 !== t && H(e => e.some(e => e.filename === t.name && e.item.file?.size === t.size) ? e : [...e, new m.Ay({
@@ -163,7 +163,7 @@ function L(e) {
             autoFocus: !1
         }, {
             variant: "primary",
-            text: ev ? "Submit and Open Report" : "Submit Report",
+            text: ef ? "Submit and Open Report" : "Submit Report",
             loading: ec,
             onClick: e_,
             autoFocus: !1
@@ -185,18 +185,18 @@ function L(e) {
                             })
                         })
                     })]
-                }), null == eg && null != ef && (0, i.jsxs)(d.wx6, {
+                }), null == eg && null != ex && (0, i.jsxs)(d.wx6, {
                     type: "critical",
                     children: [(0, i.jsx)(d.Heading, {
                         variant: "heading-md/medium",
                         children: E.intl.formatToPlainString(E.t["ql2Q/e"], {
-                            hours: ef
+                            hours: ex
                         })
                     }), (0, i.jsx)(d.Text, {
                         variant: "text-sm/normal",
                         children: E.intl.string(E.t.x18RUs)
                     })]
-                }), ev && Object.keys(ey).length > 0 && (0, i.jsxs)(d.wx6, {
+                }), ef && Object.keys(ey).length > 0 && (0, i.jsxs)(d.wx6, {
                     type: "warning",
                     children: [(0, i.jsx)(d.Heading, {
                         variant: "heading-md/medium",
@@ -229,7 +229,7 @@ function L(e) {
                     placeholder: "What did you expect to see?",
                     value: D,
                     onChange: z,
-                    description: ev ? "You can add additional information/media on the ticket after submitting" : void 0,
+                    description: ef ? "You can add additional information/media on the ticket after submitting" : void 0,
                     autosize: !0
                 }), (0, i.jsx)(o.Te, {
                     label: E.intl.string(E.t.xMXLda),
@@ -273,7 +273,7 @@ function L(e) {
                     maxVisibleItems: 4,
                     closeOnSelect: !0,
                     "data-migration-pending": !0
-                }), ev && (0, i.jsx)(d.ZiE, {
+                }), ef && (0, i.jsx)(d.ZiE, {
                     selectionMode: "single",
                     label: E.intl.string(E.t["77VVd8"]),
                     value: F,
@@ -376,8 +376,8 @@ function L(e) {
                         children: $.length > 0 && $.map(e => (0, i.jsxs)("div", {
                             className: O.oh,
                             children: [(0, i.jsxs)("div", {
-                                children: [(0, i.jsx)(x.J, {
-                                    size: f.L.SMALL,
+                                children: [(0, i.jsx)(v.J, {
+                                    size: x.L.SMALL,
                                     upload: e
                                 }), (0, i.jsx)("div", {
                                     className: O.eA,

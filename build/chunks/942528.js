@@ -28,18 +28,18 @@ let v = e => {
         customCTA: b,
         popoutClassname: E,
         popoutPosition: j = "right"
-    } = e, C = a.useRef(null), I = (0, s.bG)([d.A, c.A], () => c.A.getChannel(d.A.getChannelId())), N = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
+    } = e, I = a.useRef(null), C = (0, s.bG)([d.A, c.A], () => c.A.getChannel(d.A.getChannelId())), N = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
         nick: S,
         avatar: L
     } = a.useMemo(() => {
-        let e = N?.getAvatarURL(I?.guild_id, 48, !1);
+        let e = N?.getAvatarURL(C?.guild_id, 48, !1);
         return {
-            nick: m.Ay.getName(I?.guild_id, I?.id, N),
+            nick: m.Ay.getName(C?.guild_id, C?.id, N),
             avatar: e
         }
-    }, [N, I]);
+    }, [N, C]);
     return null == N ? null : (0, l.jsx)(o.YNO, {
-        targetElementRef: C,
+        targetElementRef: I,
         position: j,
         renderPopout: e => {
             let {
@@ -66,7 +66,7 @@ let v = e => {
             v?.()
         },
         children: e => (0, l.jsx)(o.DUT, {
-            innerRef: C,
+            innerRef: I,
             ...e,
             className: p.GA,
             children: (0, l.jsx)(o.vN3, {

@@ -1,6 +1,6 @@
 /** chunk id: 225732 params = (module,exports,require) **/
 n.d(t, {
-    default: () => eC
+    default: () => eI
 });
 var l = n(627968),
     a = n(64700),
@@ -23,8 +23,8 @@ var l = n(627968),
     b = n(139286),
     E = n(362490),
     j = n(429913),
-    C = n(590703),
-    I = n(708197),
+    I = n(590703),
+    C = n(708197),
     N = n(583846),
     S = n(454908),
     L = n(928550),
@@ -455,7 +455,7 @@ function eE(e) {
         trackExternalAction: d
     } = e, {
         clientThemesClassName: u
-    } = (0, C.Ay)(), m = (0, f.bG)([y.default], () => y.default.locale), {
+    } = (0, I.Ay)(), m = (0, f.bG)([y.default], () => y.default.locale), {
         analyticsLocations: h
     } = (0, A.Ay)(v.A.GAME_PROFILE), x = a.useMemo(() => (0, G.u9)(), []), _ = (0, f.yK)([P.A], () => (P.A.getSimilarGames(t) ?? []).slice(0, 25)), [b, E] = a.useState(null), L = (0, D.s)(t), [T, k] = a.useState(null), R = (0, j.h)(t), {
         data: O,
@@ -479,7 +479,7 @@ function eE(e) {
             gameName: V ?? "",
             authorId: i,
             profileType: G.HV.FullProfile
-        }), (0, I.He)()
+        }), (0, C.He)()
     }), (0, j.A)(_), a.useEffect(() => {
         m.startsWith("en") || O?.summaryLocalized != null || M()
     }, [t, O?.summaryLocalized, m, M]), a.useEffect(() => {
@@ -573,7 +573,7 @@ function ej(e) {
         initialScrollOffset: m
     } = e, [h, _] = a.useState(!0), [b, L] = a.useState(null), {
         clientThemesClassName: k
-    } = (0, C.Ay)(), R = (0, f.bG)([y.default], () => y.default.locale), O = a.useMemo(() => (0, G.u9)(), []), {
+    } = (0, I.Ay)(), R = (0, f.bG)([y.default], () => y.default.locale), O = a.useMemo(() => (0, G.u9)(), []), {
         analyticsLocations: M
     } = (0, A.Ay)(v.A.GAME_PROFILE), w = (0, j.h)(t), P = (0, D.s)(t), {
         data: V
@@ -607,7 +607,7 @@ function ej(e) {
             gameName: F,
             authorId: i,
             profileType: G.HV.FullProfile
-        }), (0, I.He)()
+        }), (0, C.He)()
     }), (0, p.Ay)(() => () => {
         let e = Date.now(),
             n = P.map(t => {
@@ -734,7 +734,7 @@ function ej(e) {
         })
     })
 }
-let eC = function(e) {
+let eI = function(e) {
     let t = (0, V._)("GameProfileModal");
     return e.forceV2 || t ? (0, l.jsx)(ej, {
         ...e

@@ -106,7 +106,7 @@ function j(e) {
         })]
     })
 }
-let C = a.memo(function(e) {
+let I = a.memo(function(e) {
         let {
             item: t,
             index: n,
@@ -137,7 +137,7 @@ let C = a.memo(function(e) {
             })
         })
     }),
-    I = a.memo(function(e) {
+    C = a.memo(function(e) {
         let {
             item: t,
             reducedMotion: n,
@@ -258,7 +258,7 @@ function N(e) {
         className: E.kL,
         children: [L ? (0, l.jsx)("div", {
             className: E.ND,
-            children: (0, l.jsx)(I, {
+            children: (0, l.jsx)(C, {
                 item: S,
                 reducedMotion: b,
                 videoRef: g,
@@ -293,7 +293,7 @@ function N(e) {
         }), (0, l.jsx)(u.A, {
             gap: "xs",
             iconButtonSize: "sm",
-            children: j.map((e, n) => (0, l.jsx)(C, {
+            children: j.map((e, n) => (0, l.jsx)(I, {
                 item: e,
                 index: n,
                 isPlaying: y,

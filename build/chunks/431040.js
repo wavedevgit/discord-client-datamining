@@ -30,7 +30,7 @@ let v = function(e) {
         application: t,
         game: n,
         trackAction: v
-    } = e, A = a.useMemo(() => n.genres.map(o.du).join(", "), [n]), b = n.getCompanyByRole(r.wk.PUBLISHER), E = n.getCompanyByRole(r.wk.DEVELOPER), j = b.map(e => e.name).join(", "), C = E.map(e => e.name).join(", "), I = n.firstReleaseDate, N = (0, u.A)(n), S = (0, d.Y)(n), L = !(0, c.uJ)(A), T = !(0, c.uJ)(j), y = !(0, c.uJ)(C), k = !(0, c.uJ)(I), R = N.length > 0, O = S.length > 0 && !S.every(e => (0, c.uJ)(e.url));
+    } = e, A = a.useMemo(() => n.genres.map(o.du).join(", "), [n]), b = n.getCompanyByRole(r.wk.PUBLISHER), E = n.getCompanyByRole(r.wk.DEVELOPER), j = b.map(e => e.name).join(", "), I = E.map(e => e.name).join(", "), C = n.firstReleaseDate, N = (0, u.A)(n), S = (0, d.Y)(n), L = !(0, c.uJ)(A), T = !(0, c.uJ)(j), y = !(0, c.uJ)(I), k = !(0, c.uJ)(C), R = N.length > 0, O = S.length > 0 && !S.every(e => (0, c.uJ)(e.url));
     return (0, l.jsxs)("div", {
         className: p.uW,
         children: [(0, l.jsx)("div", {
@@ -76,7 +76,7 @@ let v = function(e) {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     className: p.Gu,
-                    children: C
+                    children: I
                 }) : (0, l.jsx)(_, {})]
             }), (0, l.jsxs)("div", {
                 className: p.J1,
@@ -88,7 +88,7 @@ let v = function(e) {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     className: p.Gu,
-                    children: s.i$(new Date(I), "LL")
+                    children: s.i$(new Date(C), "LL")
                 }) : (0, l.jsx)(_, {})]
             }), (0, l.jsxs)("div", {
                 className: p.J1,

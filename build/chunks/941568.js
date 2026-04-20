@@ -23,9 +23,9 @@ var l = n(627968),
     b = n(652215),
     E = n(985018),
     j = n(468489),
-    C = n(992595);
+    I = n(992595);
 
-function I(e, t) {
+function C(e, t) {
     return m.A.parse(e, !0, {
         allowHeading: !0,
         allowList: !0,
@@ -72,10 +72,10 @@ function N(e) {
                 variant: "heading-md/bold",
                 color: "text-strong",
                 className: x ? j.KX : j._N,
-                children: I(n.title, i)
+                children: C(n.title, i)
             }), n.body.length > 0 && (0, l.jsx)("div", {
-                className: r()(j.h_, x ? j.My : j.Gd, C.PT),
-                children: I(n.body, i)
+                className: r()(j.h_, x ? j.My : j.Gd, I.PT),
+                children: C(n.body, i)
             }), (0, l.jsxs)("div", {
                 className: j.ov,
                 children: [(0, l.jsx)(c.Text, {
@@ -139,17 +139,17 @@ function S(e) {
         }))
     }, [n, s, o, r, m, f, i, t]);
     if (null == f || 0 === c.length) return null;
-    let C = 2 !== c.length,
-        I = C ? c[0] : null,
-        S = C ? c.slice(1) : c;
+    let I = 2 !== c.length,
+        C = I ? c[0] : null,
+        S = I ? c.slice(1) : c;
     return (0, l.jsx)(A.A, {
         title: E.intl.string(E.t.B0BV3Y),
         onClickViewAll: h,
         children: (0, l.jsxs)("div", {
             className: j.f3,
-            children: [null != I && (0, l.jsx)(N, {
+            children: [null != C && (0, l.jsx)(N, {
                 variant: "main",
-                message: I,
+                message: C,
                 channelId: f,
                 onCardClick: b
             }), S.length > 0 && (0, l.jsx)(u.A, {
