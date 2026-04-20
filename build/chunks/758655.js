@@ -71,8 +71,7 @@ function b(t) {
                 currencies: N,
                 onCurrencyChange: t => k(t),
                 handlePaymentSourceAdd: () => r(m.pn.ADD_PAYMENT_STEPS),
-                metadata: Y ? void 0 : B,
-                purchaseState: w
+                metadata: Y ? void 0 : B
             }) : (0, i.jsx)(c.A, {
                 premiumSubscription: C,
                 paymentSources: P,

@@ -1,8 +1,8 @@
 /** chunk id: 250703 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => y
-});
+    A: () => S
+}), n(667532), n(134528), n(947204);
 var r = n(627968),
     i = n(64700),
     a = n(503698),
@@ -11,13 +11,15 @@ var r = n(627968),
     o = n(732955),
     u = n(397927),
     c = n(97469),
-    d = n(894858),
-    h = n(641324),
-    p = n(82186),
-    _ = n(985018),
-    m = n(441562);
+    d = n(963935),
+    h = n(894858),
+    p = n(272053),
+    _ = n(641324),
+    m = n(82186),
+    f = n(985018),
+    g = n(441562);
 
-function f(e) {
+function y(e) {
     let {
         icon: t,
         label: n,
@@ -32,52 +34,60 @@ function f(e) {
     })
 }
 
-function g(e) {
+function v(e) {
     let {
         setting: t,
         onClose: n
-    } = e, i = (0, c.NC)();
+    } = e, i = (0, c.NC)(), a = null != t ? function(e) {
+        let t = [e];
+        for (let n = e.parent; null != n && n.type !== d.Z6.SIDEBAR_ITEM; n = n.parent) n.type === d.Z6.PANEL && t.unshift(n);
+        return t
+    }(t) : [], _ = a.at(-2);
     return (0, r.jsx)(u.NPJ, {
         theme: i,
         children: e => (0, r.jsxs)("div", {
-            className: s()(m.$Q, e),
+            className: s()(g.$Q, e),
             children: [(0, r.jsxs)(u.BJc, {
                 direction: "horizontal",
                 align: "center",
-                className: m.y9,
-                children: [l.Fr && (0, r.jsx)(f, {
+                className: g.y9,
+                children: [l.Fr && a.length <= 1 && (0, r.jsx)(y, {
                     icon: u.fEi,
-                    onClick: () => d.A.setState({
+                    onClick: () => h.A.setState({
                         showNavigationMobile: !0
                     }),
-                    label: _.intl.string(_.t["13/7kX"])
-                }), null != t && (0, r.jsx)(p.E, {
-                    node: t
+                    label: f.intl.string(f.t["13/7kX"])
+                }), a.length > 1 && null != _ && (0, r.jsx)(y, {
+                    icon: o.rJJ,
+                    onClick: () => p.A.navigate(_.key),
+                    label: f.intl.string(f.t["13/7kX"])
+                }), null != t && (0, r.jsx)(m.E, {
+                    path: a
                 })]
-            }), (0, r.jsx)(f, {
+            }), (0, r.jsx)(y, {
                 icon: u.d$L,
                 onClick: n,
-                label: _.intl.string(_.t.cpT0Cq)
+                label: f.intl.string(f.t.cpT0Cq)
             })]
         })
     })
 }
-let y = i.memo(function(e) {
+let S = i.memo(function(e) {
     let {
         onClose: t,
         setting: n
-    } = e, i = d.A.useField("showNavigationMobile");
+    } = e, i = h.A.useField("showNavigationMobile");
     return (0, r.jsxs)("div", {
-        className: s()(m.Qs, {
-            [m.Hw]: l.Fr,
-            [m.n7]: i
+        className: s()(g.Qs, {
+            [g.Hw]: l.Fr,
+            [g.n7]: i
         }),
-        children: [(0, r.jsx)(g, {
+        children: [(0, r.jsx)(v, {
             setting: n,
             onClose: t
         }), (0, r.jsx)("div", {
-            className: m.yp,
-            children: null != n && (0, r.jsx)(h.A, {
+            className: g.yp,
+            children: null != n && (0, r.jsx)(_.A, {
                 node: n
             })
         })]
