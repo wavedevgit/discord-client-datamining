@@ -1,6 +1,6 @@
 /** chunk id: 802085 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => N
 });
 var i = n(627968),
     l = n(64700),
@@ -24,7 +24,7 @@ var i = n(627968),
     S = n(147860),
     I = n(334211),
     T = n(992595);
-let N = l.memo(function(e) {
+let v = l.memo(function(e) {
         let {
             message: t,
             notice: n,
@@ -71,7 +71,7 @@ let N = l.memo(function(e) {
             })]
         })
     }),
-    v = l.memo(function(e) {
+    N = l.memo(function(e) {
         let {
             className: t,
             compact: n,
@@ -79,7 +79,7 @@ let N = l.memo(function(e) {
             children: r,
             content: d,
             onUpdate: A
-        } = e, g = s.editedTimestamp?.toString(), _ = l.useRef(!1), C = (0, c.bG)([m.A], () => m.A.getMessage(s.id), [s.id]), v = l.useCallback(() => {
+        } = e, g = s.editedTimestamp?.toString(), _ = l.useRef(!1), C = (0, c.bG)([m.A], () => m.A.getMessage(s.id), [s.id]), N = l.useCallback(() => {
             C?.isBlockedEdit ? (0, h.j)(s.id) : u.A.deleteMessage(s.channel_id, s.id, !0)
         }, [s, C]);
         return l.useLayoutEffect(() => {
@@ -102,11 +102,11 @@ let N = l.memo(function(e) {
                         children: ["(", x.intl.string(x.t.Z7eEx9), ")"]
                     })
                 })]
-            }), (0, i.jsx)(N, {
+            }), (0, i.jsx)(v, {
                 notice: C?.errorMessage ?? x.intl.string(x.t.zQ69pv),
                 message: s,
                 compact: n,
-                onDismiss: v
+                onDismiss: N
             })]
         })
     }, f.sP)

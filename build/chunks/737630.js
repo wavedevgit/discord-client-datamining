@@ -73,14 +73,14 @@ let F = e => {
             V = r.useMemo(() => t === P.G2.HOME && null != G && U() ? G : t, [t, G, U]),
             {
                 categories: W,
-                refreshCategories: z
+                refreshCategories: K
             } = (0, v.Ay)({
                 logPerf: !0
             }, {
                 sessionId: s,
                 tab: V
             }),
-            K = r.useMemo(() => [...W.values()], [W]),
+            z = r.useMemo(() => [...W.values()], [W]),
             [Y, $] = r.useState(),
             Z = (0, o.bG)([b.A], () => b.A.getCategory(Y)?.name),
             [q, X] = r.useState();
@@ -147,10 +147,10 @@ let F = e => {
                                 }),
                                 children: (0, n.jsx)(O.A, {
                                     tab: Q,
-                                    refreshCategories: z,
+                                    refreshCategories: K,
                                     transitionToTab: et,
                                     transitionState: ee,
-                                    categories: K,
+                                    categories: z,
                                     updateAnalyticsState: J
                                 })
                             })]

@@ -47,7 +47,7 @@ function x() {
     l.listen(E.xEi + e % E.sJq, "127.0.0.1", t)
 }
 
-function v(e, t, n) {
+function b(e, t, n) {
     let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 200,
         l = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {},
         a = null != S(e.headers).origin ? {
@@ -62,9 +62,9 @@ function v(e, t, n) {
     }), t.end(n)
 }
 
-function b(e, t, n, i) {
+function v(e, t, n, i) {
     let l = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 0;
-    v(e, t, {
+    b(e, t, {
         code: l,
         message: i
     }, n)
@@ -120,7 +120,7 @@ class L extends a.EventEmitter {
     }
     handleRequest(e, t) {
         let [n, i] = S(e.url).split("?"), l = S(e.method);
-        if ("/rpc" === n && "OPTIONS" === l) return void v(e, t, {
+        if ("/rpc" === n && "OPTIONS" === l) return void b(e, t, {
             body: ""
         });
         let a = "POST" === l;
@@ -134,10 +134,10 @@ class L extends a.EventEmitter {
                     } = u.A.toURLSafe(n.get("callback") ?? "") ?? {};
                     e === location.protocol && i === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", C), t.writeHead(301), t.end()
                 },
-                s = new O(!a ? r : v.bind(null, e, t), !a ? r : b.bind(null, e, t, 400), Number(n.get("v")), l);
+                s = new O(!a ? r : b.bind(null, e, t), !a ? r : v.bind(null, e, t, 400), Number(n.get("v")), l);
             a ? (0, g.j7)(s, S(e.headers).origin, n.get("client_id")).then(() => {
                 let n = "";
-                e.on("data", e => n += e), e.on("error", () => b(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
+                e.on("data", e => n += e), e.on("error", () => v(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
             }).catch(e => {
                 let {
                     code: t,
@@ -147,7 +147,7 @@ class L extends a.EventEmitter {
             }) : (s.authorization.scopes = [p.kw], this.handleMessage(s, decodeURIComponent(n.get("payload") ?? "")));
             return
         }
-        b(e, t, 404, "Not Found")
+        v(e, t, 404, "Not Found")
     }
     handleConnection(e) {
         let t, n = new URLSearchParams(S(e.upgradeReq).url.split("?")[1]),

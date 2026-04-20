@@ -1,11 +1,11 @@
 /** chunk id: 953013 params = (module,exports,require) **/
 n.d(t, {
-    o: () => C
+    o: () => N
 }), n(321073);
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    s = n.n(r),
     a = n(311907),
     o = n(397927),
     u = n(46054),
@@ -59,7 +59,7 @@ function p(e) {
             })
     }
 }
-let _ = r.memo(function(e) {
+let _ = l.memo(function(e) {
         let {
             message: t
         } = e;
@@ -68,7 +68,7 @@ let _ = r.memo(function(e) {
             noStyleAndInteraction: !0
         }).content
     }),
-    S = r.memo(function(e) {
+    S = l.memo(function(e) {
         let {
             markup: t,
             channelId: n
@@ -83,29 +83,29 @@ function x(e) {
     let {
         channel: t,
         typingUserIds: n
-    } = e, r = (0, a.bG)([], () => (function(e, t, n) {
+    } = e, l = (0, a.bG)([], () => (function(e, t, n) {
         let i = [];
-        for (let r of e) {
-            let e = f.default.getUser(r);
+        for (let l of e) {
+            let e = f.default.getUser(l);
             null != e && i.push(A.Ay.getName(n, t, e))
         }
-        let [r, l, s, a] = i;
-        return null == r ? null : null == l ? I.intl.format(I.t.lJ9sZX, {
-            a: r
+        let [l, r, s, a] = i;
+        return null == l ? null : null == r ? I.intl.format(I.t.lJ9sZX, {
+            a: l
         }) : null == s ? I.intl.format(I.t.rB0CUa, {
-            a: r,
-            b: l
+            a: l,
+            b: r
         }) : null == a ? I.intl.format(I.t.StKThj, {
-            a: r,
-            b: l,
+            a: l,
+            b: r,
             c: s
         }) : I.intl.string(I.t.uVDhqZ)
     })(n, t.id, t.guild_id), [n, t.id, t.guild_id]);
-    return null == r ? null : (0, i.jsx)("div", {
+    return null == l ? null : (0, i.jsx)("div", {
         className: E.Sl,
         children: (0, i.jsx)("span", {
             className: E.BK,
-            children: r
+            children: l
         })
     })
 }
@@ -113,20 +113,20 @@ function x(e) {
 function T(e) {
     let t, {
             channel: n,
-            message: r
+            message: l
         } = e,
-        l = (0, d.BC)(r, n);
-    if (null == l) return null;
+        r = (0, d.BC)(l, n);
+    if (null == r) return null;
     let {
         authorLabel: a,
         color: o,
         trailingIcon: u
-    } = l;
-    return "text" === l.type ? t = l.text : "markup" === l.type ? t = (0, i.jsx)(S, {
-        markup: l.markup,
-        channelId: r.channel_id
-    }) : "message" === l.type && (t = (0, i.jsx)(_, {
-        message: l.message
+    } = r;
+    return "text" === r.type ? t = r.text : "markup" === r.type ? t = (0, i.jsx)(S, {
+        markup: r.markup,
+        channelId: l.channel_id
+    }) : "message" === r.type && (t = (0, i.jsx)(_, {
+        message: r.message
     })), (0, i.jsxs)("div", {
         className: s()(E.Sl, {
             [E.Vz]: "text-feedback-positive" === o
@@ -143,29 +143,29 @@ function T(e) {
     })
 }
 
-function C(e) {
+function N(e) {
     let {
         channel: t,
         message: n,
-        showTypingPreview: r
-    } = e, l = (0, a.bG)([f.default], () => {
-        if (!r) return [];
+        showTypingPreview: l
+    } = e, r = (0, a.bG)([f.default], () => {
+        if (!l) return [];
         let e = f.default.getCurrentUser()?.id ?? null;
         var n = t.id;
         let i = m.A.getTypingUsers(n),
-            l = [];
-        for (let t in i) t !== e && l.push(t);
-        return l.sort((e, t) => {
+            r = [];
+        for (let t in i) t !== e && r.push(t);
+        return r.sort((e, t) => {
             let n = +!!g.A.isFriend(e),
                 i = +!!g.A.isFriend(t);
             if (n !== i) return i - n;
-            let r = h.A.getUserAffinity(e)?.communicationProbability ?? 0;
-            return (h.A.getUserAffinity(t)?.communicationProbability ?? 0) - r
+            let l = h.A.getUserAffinity(e)?.communicationProbability ?? 0;
+            return (h.A.getUserAffinity(t)?.communicationProbability ?? 0) - l
         })
-    }, [t.id, r]);
-    return l.length > 0 ? (0, i.jsx)(x, {
+    }, [t.id, l]);
+    return r.length > 0 ? (0, i.jsx)(x, {
         channel: t,
-        typingUserIds: l
+        typingUserIds: r
     }) : null == n ? null : (0, i.jsx)(T, {
         channel: t,
         message: n

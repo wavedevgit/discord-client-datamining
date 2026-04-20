@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(174279),
     S = n(278066),
     x = n(594968),
-    v = n(756901),
-    b = n(575474),
+    b = n(756901),
+    v = n(575474),
     y = n(535266),
     O = n(787331);
 n(646363);
@@ -262,14 +262,14 @@ let G = function(e) {
         value: n,
         children: (0, i.jsxs)(u.A, {
             section: L.JJy.FRIENDS_LIST,
-            children: [k && (0, i.jsx)(b.g, {}), (0, i.jsx)("div", {
+            children: [k && (0, i.jsx)(v.g, {}), (0, i.jsx)("div", {
                 className: D.ON,
                 children: (0, i.jsx)(o.IWV, {
                     query: Y[d],
                     onChange: Q,
                     onClear: X
                 })
-            }), (0, i.jsx)(v.A, {
+            }), (0, i.jsx)(b.A, {
                 rows: ei,
                 renderRow: $,
                 renderSection: eo,

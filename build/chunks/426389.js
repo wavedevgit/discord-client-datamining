@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(943577),
     S = n(954571),
     x = n(927813),
-    v = n(279877),
-    b = n(112273),
+    b = n(279877),
+    v = n(112273),
     y = n(666290),
     O = n(928636),
     L = n(502696),
@@ -45,7 +45,7 @@ let w = 15 * x.A.Millis.MINUTE,
         } = e, s = l.useRef(null), d = (0, i.jsx)(y.A, {
             party: t,
             onUserContextMenu: n
-        }), u = (0, i.jsx)(b.A, {
+        }), u = (0, i.jsx)(v.A, {
             party: t,
             onChannelContextMenu: a,
             quest: r
@@ -111,8 +111,8 @@ function k() {
         fetching: C.A.isFetching(),
         currentUser: T.default.getCurrentUser()
     })), s = (0, d.bG)([h.A], () => h.A.quests), o = (0, g.oH)(Array.from(s.values()));
-    l.useEffect(() => (u.h.wait(() => v.O()), () => {
-        u.h.wait(() => v.v())
+    l.useEffect(() => (u.h.wait(() => b.O()), () => {
+        u.h.wait(() => b.v())
     }), [r?.id]), l.useEffect(() => {
         n && !a && G()
     }, [n, a]);
@@ -140,25 +140,25 @@ function k() {
             questsByPartyId: t,
             questIdsByPartyId: n
         }
-    }, [e, s, o]), b = (0, d.bG)([h.A], () => h.A.earnedQuestForPlacement.get(_.uF.ACTIVITY_PANEL), []), y = l.useRef([]), O = l.useMemo(() => {
+    }, [e, s, o]), v = (0, d.bG)([h.A], () => h.A.earnedQuestForPlacement.get(_.uF.ACTIVITY_PANEL), []), y = l.useRef([]), O = l.useMemo(() => {
         let e = Array.from(x.values()),
             t = y.current;
         return t.length === e.length && e.every((e, n) => e === t[n]) ? t : (y.current = e, e)
     }, [x]);
     l.useEffect(() => {
         f && 0 !== O.length && (0, A.yO)(O, _.uF.ACTIVITY_PANEL, "NowPlaying")
-    }, [O, f, b]);
+    }, [O, f, v]);
     let L = l.useMemo(() => {
             if (!f) return S;
-            if (null == b) return new Map;
+            if (null == v) return new Map;
             let e = new Map;
             for (let [t, n] of x.entries()) {
-                let i = b.earnedDecisionByQuestId.get(n),
+                let i = v.earnedDecisionByQuestId.get(n),
                     l = s.get(n);
                 (0, p.Oh)(i) && i.shouldDeliver && null != l && e.set(t, l)
             }
             return e
-        }, [b, x, S, f, s]),
+        }, [v, x, S, f, s]),
         R = null;
     return t ? R = e.length > 0 ? e.map(e => {
         let {

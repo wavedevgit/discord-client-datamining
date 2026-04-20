@@ -27,9 +27,9 @@ function N(e) {
     let {
         channel: t,
         baseChannelId: n
-    } = e, N = (0, E.Ay)(t), S = (0, A.k)(), x = (0, A.r)(), v = (0, a.bG)([c.A], () => c.A.isMessageRequest(t.id)), b = (0, a.bG)([u.A], () => u.A.isSpam(t.id)), y = (0, _.D)(t.id, t.getRecipientId()), O = l.useCallback(() => {
-        g.A.closeChannelSidebar(p.fe), v && S && (0, m.iN)(t.id), b && x && (0, m.iN)(t.id)
-    }, [t.id, b, x, v, S]), L = l.useCallback(() => {
+    } = e, N = (0, E.Ay)(t), S = (0, A.k)(), x = (0, A.r)(), b = (0, a.bG)([c.A], () => c.A.isMessageRequest(t.id)), v = (0, a.bG)([u.A], () => u.A.isSpam(t.id)), y = (0, _.D)(t.id, t.getRecipientId()), O = l.useCallback(() => {
+        g.A.closeChannelSidebar(p.fe), b && S && (0, m.iN)(t.id), v && x && (0, m.iN)(t.id)
+    }, [t.id, v, x, b, S]), L = l.useCallback(() => {
         (0, r.showToast)((0, r.createToast)(f.intl.string(f.t.pIQ3h4), r.ToastType.FAILURE))
     }, []), {
         markAsNotSpam: R
@@ -52,7 +52,7 @@ function N(e) {
                 channelName: N,
                 inSidebar: !0
             })
-        }), b && (0, i.jsxs)("div", {
+        }), v && (0, i.jsxs)("div", {
             className: T.F,
             children: [(0, i.jsx)(r.Text, {
                 variant: "text-sm/normal",

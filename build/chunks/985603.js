@@ -26,8 +26,8 @@ var l = n(835245),
     N = n(976860),
     S = n(718446),
     x = n(858897),
-    v = n(962173),
-    b = n(287809),
+    b = n(962173),
+    v = n(287809),
     y = n(954571),
     O = n(203982),
     L = n(998218),
@@ -72,7 +72,7 @@ let U = {
                     code: t
                 }
             } = e;
-            if (null == b.default.getCurrentUser()) return;
+            if (null == v.default.getCurrentUser()) return;
             let {
                 guildTemplate: l
             } = await I.A.resolveGuildTemplate(t);
@@ -304,11 +304,11 @@ let U = {
                     state: a
                 }
             } = e;
-            if (!v.A.hasPendingAuthorizedState(a)) throw new P.A({
+            if (!b.A.hasPendingAuthorizedState(a)) throw new P.A({
                 errorCode: M.Lw6.INVALID_CONNECTION_CALLBACK_STATE
             }, "Provider authorization did not originate from this discord client");
             try {
-                return v.A.deletePendingAuthorizedState(a), await c.A.callback(t, {
+                return b.A.deletePendingAuthorizedState(a), await c.A.callback(t, {
                     code: n,
                     openid_params: i,
                     iss: l,

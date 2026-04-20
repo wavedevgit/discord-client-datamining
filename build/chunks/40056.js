@@ -61,7 +61,7 @@ let m = {
             minZoom: n = 1,
             maxZoom: o = 5,
             children: c
-        } = e, [d, u] = l.useState(n), [h, _] = l.useState(!1), [p, f] = l.useState(!1), [E, C] = l.useState(!1), [x, S] = l.useState(!1), [I, T] = l.useState(16 / 9), [N, v] = l.useState({
+        } = e, [d, u] = l.useState(n), [h, _] = l.useState(!1), [p, f] = l.useState(!1), [E, C] = l.useState(!1), [x, S] = l.useState(!1), [I, T] = l.useState(16 / 9), [v, N] = l.useState({
             x: 0,
             y: 0
         }), y = l.useRef(null), b = l.useRef(null);
@@ -85,7 +85,7 @@ let m = {
                 if (null == i || r === d) return;
                 _(!0);
                 let c = r / d;
-                v(e => j({
+                N(e => j({
                     x: (e.x - i.x) * c + i.x,
                     y: (e.y - i.y) * c + i.y
                 }, r)), u(r), g(r, l, t), null == b.current && (b.current = new a.Ep), b.current.start(2e3, () => {
@@ -109,11 +109,11 @@ let m = {
                 videoAspectRatio: I,
                 setVideoAspectRatio: T,
                 doZoom: R,
-                panOffset: N,
-                setPanOffset: v,
+                panOffset: v,
+                setPanOffset: N,
                 wrapperRef: y,
                 clampPanOffset: j
-            }), [j, R, p, x, E, h, o, n, N, I, d]);
+            }), [j, R, p, x, E, h, o, n, v, I, d]);
         return (0, i.jsx)(A.Provider, {
             value: M,
             children: c

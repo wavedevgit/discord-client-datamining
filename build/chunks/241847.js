@@ -1,6 +1,6 @@
 /** chunk id: 241847 params = (module,exports,require) **/
 n.d(t, {
-    A: () => k
+    A: () => U
 });
 var i = n(627968),
     l = n(64700),
@@ -24,9 +24,9 @@ var i = n(627968),
     S = n(985018),
     I = n(172115),
     T = n(9934),
-    N = n(824078);
+    v = n(824078);
 
-function v() {
+function N() {
     return (0, r.cf)([d.A], () => ({
         connectionState: d.A.getState(),
         hostname: d.A.getHostname(),
@@ -78,7 +78,7 @@ function R(e) {
     let {
         closePopout: t,
         connectionTypeText: n
-    } = e, l = v();
+    } = e, l = N();
     return (0, i.jsx)(f.A, {
         ...l,
         closePopout: t,
@@ -90,7 +90,7 @@ function M(e) {
     let {
         closePopout: t,
         connectionTypeText: n
-    } = e, l = v();
+    } = e, l = N();
     return (0, i.jsx)(_.Q, {
         ...l,
         closePopout: t,
@@ -158,7 +158,7 @@ function O(e) {
     return l.useEffect(() => {
         d && n(x.Rj.RTC_DEBUG_PANEL)
     }, [d]), (0, i.jsxs)("div", {
-        className: a()(N.popover, T.kL),
+        className: a()(v.popover, T.kL),
         children: [(0, i.jsxs)(o.VQ0, {
             className: T.vR,
             selectedItem: t,
@@ -263,21 +263,21 @@ function w(e) {
     })
 }
 
-function U(e) {
+function k(e) {
     return (0, g.k)({
         channelId: e.channelId
     }) ? (0, i.jsx)(O, {
         ...e
     }) : (0, i.jsx)("div", {
-        className: a()(N.popover, T.L3),
+        className: a()(v.popover, T.L3),
         children: (0, i.jsx)(L, {
             ...e
         })
     })
 }
 
-function k(e) {
-    return (0, C.p)("RTCConnectionPopout") ? (0, i.jsx)(U, {
+function U(e) {
+    return (0, C.p)("RTCConnectionPopout") ? (0, i.jsx)(k, {
         ...e
     }) : (0, i.jsx)(w, {
         ...e

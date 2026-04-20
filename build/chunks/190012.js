@@ -3,8 +3,8 @@ n.d(t, {
     BC: () => I
 });
 var i = n(735438),
-    r = n(448761),
-    l = n(311907),
+    l = n(448761),
+    r = n(311907),
     s = n(931046),
     a = n(427930),
     o = n(77350),
@@ -21,33 +21,33 @@ function I(e, t) {
     let {
         isBlocked: n,
         isIgnored: I
-    } = (0, l.cf)([h.A], () => ({
+    } = (0, r.cf)([h.A], () => ({
         isBlocked: h.A.isBlocked(e.author.id),
         isIgnored: h.A.isIgnored(e.author.id)
-    }), [e.author.id]), E = (0, s.Ay)(t.id, e.id), p = (0, l.bG)([c.default], () => c.default.getId()), _ = (0, d.Ay)(e).nick, S = e.type !== r.l.USER_JOIN && e.author.id === p ? A.intl.string(A.t.LuZzxn) : _, x = (0, l.bG)([g.default], () => e.mentions.length > 0 ? g.default.getUser(e.mentions[0]) : void 0), T = (0, d.d8)(x, t).nick;
+    }), [e.author.id]), E = (0, s.Ay)(t.id, e.id), p = (0, r.bG)([c.default], () => c.default.getId()), _ = (0, d.Ay)(e).nick, S = e.type !== l.l.USER_JOIN && e.author.id === p ? A.intl.string(A.t.LuZzxn) : _, x = (0, r.bG)([g.default], () => e.mentions.length > 0 ? g.default.getUser(e.mentions[0]) : void 0), T = (0, d.d8)(x, t).nick;
     return function(e, t) {
         let {
             isBlocked: n,
-            isIgnored: l,
+            isIgnored: r,
             authorNick: s
         } = t;
         if (n) return {
             type: "text",
             text: A.intl.string(A.t.XAkOo2)
         };
-        if (l) return {
+        if (r) return {
             type: "text",
             text: A.intl.string(A.t["G7p6v/"])
         };
         if (function(e) {
                 switch (e.type) {
-                    case r.l.DEFAULT:
-                    case r.l.CHANGELOG:
-                    case r.l.REPLY:
-                    case r.l.CHAT_INPUT_COMMAND:
-                    case r.l.CONTEXT_MENU_COMMAND:
-                    case r.l.POLL_RESULT:
-                    case r.l.AUTO_MODERATION_ACTION:
+                    case l.l.DEFAULT:
+                    case l.l.CHANGELOG:
+                    case l.l.REPLY:
+                    case l.l.CHAT_INPUT_COMMAND:
+                    case l.l.CONTEXT_MENU_COMMAND:
+                    case l.l.POLL_RESULT:
+                    case l.l.AUTO_MODERATION_ACTION:
                         return !0;
                     default:
                         return !1
@@ -159,101 +159,101 @@ function I(e, t) {
         let d = function(e, t) {
             let {
                 currentUserId: n,
-                authorNick: l,
+                authorNick: r,
                 otherUser: s,
                 otherUserNick: a,
                 isCallActive: o
             } = t;
-            return e.type === r.l.RECIPIENT_ADD && null != a ? {
+            return e.type === l.l.RECIPIENT_ADD && null != a ? {
                 type: "text",
                 text: A.intl.formatToPlainString(A.t.MMN2Jq, {
-                    username: l,
+                    username: r,
                     usernameHook: i.identity,
                     otherUsername: a,
                     otherUsernameHook: i.identity
                 })
-            } : e.type === r.l.RECIPIENT_REMOVE && null != a ? {
+            } : e.type === l.l.RECIPIENT_REMOVE && null != a ? {
                 type: "text",
                 text: e.author.id === s?.id ? A.intl.formatToPlainString(A.t["5v2xa8"], {
-                    username: l,
+                    username: r,
                     usernameHook: i.identity
                 }) : A.intl.formatToPlainString(A.t.L2FyVq, {
-                    username: l,
+                    username: r,
                     usernameHook: i.identity,
                     otherUsername: a,
                     otherUsernameHook: i.identity
                 })
-            } : e.type === r.l.CALL ? {
+            } : e.type === l.l.CALL ? {
                 type: "text",
                 text: o ? A.intl.string(A.t["NGg/fm"]) : null == e.call || e.call.participants.includes(n) ? A.intl.string(A.t.v05Xd6) : A.intl.string(A.t["2CnhoI"]),
                 color: o ? "text-feedback-positive" : void 0,
                 trailingIcon: o ? "call-active" : "call-ended"
-            } : e.type === r.l.CHANNEL_NAME_CHANGE ? {
+            } : e.type === l.l.CHANNEL_NAME_CHANGE ? {
                 type: "text",
                 text: A.intl.formatToPlainString(A.t.oItgEw, {
-                    username: l,
+                    username: r,
                     usernameHook: i.identity,
                     channelName: e.content
                 })
-            } : e.type === r.l.CHANNEL_ICON_CHANGE ? {
+            } : e.type === l.l.CHANNEL_ICON_CHANGE ? {
                 type: "text",
                 text: A.intl.formatToPlainString(A.t.OEdU6X, {
-                    username: l,
+                    username: r,
                     usernameHook: i.identity
                 })
-            } : e.type === r.l.CHANNEL_PINNED_MESSAGE ? {
+            } : e.type === l.l.CHANNEL_PINNED_MESSAGE ? {
                 type: "text",
                 text: A.intl.formatToPlainString(A.t.vfkjqx, {
-                    username: l,
+                    username: r,
                     usernameHook: i.identity
                 })
-            } : e.type === r.l.USER_JOIN ? {
+            } : e.type === l.l.USER_JOIN ? {
                 type: "text",
                 text: A.intl.formatToPlainString(m.A.getSystemMessageUserJoin(e.id), {
-                    username: l,
+                    username: r,
                     usernameHook: i.identity
                 })
-            } : e.type === r.l.THREAD_CREATED ? {
+            } : e.type === l.l.THREAD_CREATED ? {
                 type: "text",
                 text: A.intl.formatToPlainString(A.t.SGaUAU, {
-                    actorName: l,
+                    actorName: r,
                     actorHook: i.identity,
                     threadName: e.content,
                     threadOnClick: i.identity
                 })
-            } : e.type === r.l.PREMIUM_REFERRAL ? {
+            } : e.type === l.l.PREMIUM_REFERRAL ? {
                 type: "text",
                 text: A.intl.formatToPlainString(A.t.lieTqU, {
-                    username: l
+                    username: r
                 })
-            } : e.type === r.l.STAGE_START ? {
+            } : e.type === l.l.STAGE_START ? {
                 type: "text",
                 text: A.intl.formatToPlainString(A.t.aZtRW8, {
-                    username: l,
+                    username: r,
                     usernameOnClick: i.identity,
                     topic: e.content
                 })
-            } : e.type === r.l.STAGE_END ? {
+            } : e.type === l.l.STAGE_END ? {
                 type: "text",
                 text: A.intl.formatToPlainString(A.t.vMJhvG, {
-                    username: l,
+                    username: r,
                     usernameOnClick: i.identity,
                     topic: e.content
                 })
-            } : e.type === r.l.STAGE_SPEAKER ? {
+            } : e.type === l.l.STAGE_SPEAKER ? {
                 type: "text",
                 text: A.intl.formatToPlainString(A.t.V4uCm4, {
-                    username: l,
+                    username: r,
                     usernameOnClick: i.identity
                 })
-            } : e.type === r.l.STAGE_TOPIC ? {
+            } : e.type === l.l.STAGE_TOPIC ? {
                 type: "text",
                 text: A.intl.formatToPlainString(A.t.ro3RM0, {
-                    username: l,
+                    username: r,
                     usernameOnClick: i.identity,
                     topic: e.content
                 })
-            } : e.type === r.l.VOICE_SESSION ? {
+            } : e.type === l.l.VOICE_SESSION ? {
                 type: "text",
                 text: (0, u.fn)(e)
             } : void 0

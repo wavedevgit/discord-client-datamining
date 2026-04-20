@@ -1,10 +1,10 @@
 /** chunk id: 610358 params = (module,exports,require) **/
 n.d(t, {
-    W: () => N
+    W: () => C
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(308368),
+    l = n(64700),
+    r = n(308368),
     s = n(308528),
     a = n(442433),
     o = n(544420),
@@ -23,11 +23,11 @@ var i = n(627968),
     S = n(652215),
     x = n(381941),
     T = n(731854),
-    C = n(985018);
+    N = n(985018);
 
-function N() {
+function C() {
     return {
-        handlePrimaryAction: r.useCallback(e => {
+        handlePrimaryAction: l.useCallback(e => {
             switch (e.type) {
                 case p.c.OPEN_DIRECT_MESSAGE:
                     if (null == e.userId) return;
@@ -151,7 +151,7 @@ function N() {
                     break;
                 case p.c.SEND_ACTIVITY_INVITE:
                     if (null == e.userId || null == e.activity) return;
-                    l.A.sendActivityInviteUser({
+                    r.A.sendActivityInviteUser({
                         type: S.xL.JOIN,
                         userId: e.userId,
                         activity: e.activity,
@@ -177,7 +177,7 @@ function N() {
                     break;
                 case p.c.ASK_TO_JOIN:
                     if (null == e.userId || null == e.activity) return;
-                    l.A.sendActivityInviteUser({
+                    r.A.sendActivityInviteUser({
                         type: S.xL.JOIN_REQUEST,
                         userId: e.userId,
                         activity: e.activity,
@@ -210,7 +210,7 @@ function N() {
                             if (null == i) return;
                             !0 === t.extra.fake_inventory_item ? await (0, h.J)({
                                 channel: i,
-                                content: C.intl.formatToPlainString(C.t.UVBA9g, {
+                                content: N.intl.formatToPlainString(N.t.UVBA9g, {
                                     gameName: t.extra.game_name
                                 }),
                                 whenReady: !0,
@@ -218,7 +218,7 @@ function N() {
                                 location: x.Hx.OVERLAY
                             }) : await (0, h.d)({
                                 channel: i,
-                                content: C.intl.string(C.t.DwAcMz),
+                                content: N.intl.string(N.t.DwAcMz),
                                 entry: t,
                                 whenReady: !0,
                                 doNotNotifyOnError: !1,
@@ -266,12 +266,12 @@ function N() {
                     e.type
             }
         }, []),
-        handleContextMenu: r.useCallback(e => {
+        handleContextMenu: l.useCallback(e => {
             switch (e.type) {
                 case p.K.FRIEND_ROW: {
                     let {
                         user: t,
-                        friendGroupId: r
+                        friendGroupId: l
                     } = e;
                     if (null == t) return;
                     (0, a.L3)(e.event, async () => {
@@ -283,7 +283,7 @@ function N() {
                             user: t,
                             appContext: S.BRT.OVERLAY,
                             widgetType: S.uss.FRIENDS,
-                            friendGroupId: r,
+                            friendGroupId: l,
                             showManageFriendGroupsItems: !0
                         })
                     }, {
@@ -298,9 +298,9 @@ function N() {
                 case p.K.FRIEND_GROUP: {
                     let {
                         groupId: t,
-                        groupName: r
+                        groupName: l
                     } = e;
-                    if (null == t || null == r) return;
+                    if (null == t || null == l) return;
                     (0, a.L3)(e.event, async () => {
                         let {
                             default: e
@@ -308,7 +308,7 @@ function N() {
                         return n => (0, i.jsx)(e, {
                             ...n,
                             groupId: t,
-                            groupName: r
+                            groupName: l
                         })
                     }), (0, A.YX)(S.uss.FRIENDS, {
                         type: A.Z5.FRIEND_LIST,
@@ -320,9 +320,9 @@ function N() {
                 case p.K.DM_CHANNEL: {
                     let {
                         channel: t,
-                        user: r
+                        user: l
                     } = e;
-                    if (null == t || null == r) return;
+                    if (null == t || null == l) return;
                     (0, A.YX)(S.uss.FRIENDS, {
                         type: A.Z5.TEXT_CHAT,
                         value: A.IP.SETTINGS_OPENED,
@@ -333,7 +333,7 @@ function N() {
                         } = await Promise.all([n.e("97262"), n.e("42128"), n.e("28059")]).then(n.bind(n, 92016));
                         return n => (0, i.jsx)(e, {
                             ...n,
-                            user: r,
+                            user: l,
                             channel: t,
                             showModalItems: !1,
                             widgetType: S.uss.FRIENDS
@@ -362,9 +362,9 @@ function N() {
                 case p.K.GUILD_TEXT_CHANNEL: {
                     let {
                         channel: t,
-                        guild: r
+                        guild: l
                     } = e;
-                    if (null == t || null == r) return;
+                    if (null == t || null == l) return;
                     (0, A.YX)(S.uss.FRIENDS, {
                         type: A.Z5.TEXT_CHAT,
                         value: A.IP.SETTINGS_OPENED,
@@ -385,7 +385,7 @@ function N() {
                         return n => (0, i.jsx)(e, {
                             ...n,
                             channel: t,
-                            guild: r,
+                            guild: l,
                             widgetType: S.uss.FRIENDS
                         })
                     });
@@ -394,9 +394,9 @@ function N() {
                 case p.K.VOICE_CHANNEL: {
                     let {
                         channel: t,
-                        guild: r
+                        guild: l
                     } = e;
-                    if (null == t || null == r) return;
+                    if (null == t || null == l) return;
                     (0, A.YX)(S.uss.FRIENDS, {
                         type: A.Z5.TEXT_CHAT,
                         value: A.IP.SETTINGS_OPENED,
@@ -408,7 +408,7 @@ function N() {
                         return n => (0, i.jsx)(e, {
                             ...n,
                             channel: t,
-                            guild: r,
+                            guild: l,
                             widgetType: S.uss.FRIENDS
                         })
                     });
@@ -417,20 +417,20 @@ function N() {
                 case p.K.VOICE_USER: {
                     let {
                         user: t,
-                        channelId: r,
-                        guild: l
+                        channelId: l,
+                        guild: r
                     } = e;
-                    if (null == t || null == r) return;
-                    let s = l?.id ?? null;
+                    if (null == t || null == l) return;
+                    let s = r?.id ?? null;
                     (0, A.YX)(S.uss.FRIENDS, {
                         type: A.Z5.TEXT_CHAT,
                         value: A.IP.SETTINGS_OPENED,
                         secondaryValue: "guild-voice-user"
                     }), (0, a.L3)(e.event, async () => {
                         let {
-                            default: r
+                            default: l
                         } = await Promise.all([n.e("97262"), n.e("87997")]).then(n.bind(n, 180812));
-                        return n => (0, i.jsx)(r, {
+                        return n => (0, i.jsx)(l, {
                             ...n,
                             user: t,
                             guildId: s ?? void 0,

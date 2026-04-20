@@ -4,8 +4,8 @@ n.d(t, {
     n: () => E
 });
 var i = n(64700),
-    r = n(311907),
-    l = n(870391),
+    l = n(311907),
+    r = n(870391),
     s = n(379078),
     a = n(704554),
     o = n(461213),
@@ -31,11 +31,11 @@ function g(e, t) {
 }
 
 function m() {
-    let [e] = (0, r.bG)([d.A, l.A, o.A], () => {
-        let e = l.A.getGroups(),
+    let [e] = (0, l.bG)([d.A, r.A, o.A], () => {
+        let e = r.A.getGroups(),
             [t, n] = d.A.getRows(d.j.FRIEND_REQUESTS),
             i = h(t),
-            r = h(d.A.getRows(d.j.SUGGESTIONS)[0]),
+            l = h(d.A.getRows(d.j.SUGGESTIONS)[0]),
             s = h(d.A.getRows(d.j.SAME_ACTIVITY)[0]),
             a = h(d.A.getRows(d.j.ACTIVITIES)[0]),
             u = h(d.A.getRows(d.j.IN_GAME)[0]),
@@ -55,7 +55,7 @@ function m() {
         return [{
             groups: m,
             friendRequests: i,
-            suggestions: r,
+            suggestions: l,
             inGame: u,
             activities: a,
             sameActivity: s,
@@ -83,12 +83,12 @@ let A = {
 };
 
 function I(e, t) {
-    let [n, r] = i.useState(t), l = i.useCallback(() => r(t), [t]);
-    return (0, a.RT)(e, t, r, A), [n, l]
+    let [n, l] = i.useState(t), r = i.useCallback(() => l(t), [t]);
+    return (0, a.RT)(e, t, l, A), [n, r]
 }
 
 function E(e) {
-    let [t, n] = i.useState(""), [r, l] = I(t, e.friendRequests), [s, a] = I(t, e.suggestions), [o, u] = I(t, e.sameActivity), [d, c] = I(t, e.activities), [h, g] = I(t, e.inGame), [m, A] = I(t, e.online), [E, p] = I(t, e.offline), _ = i.useMemo(() => {
+    let [t, n] = i.useState(""), [l, r] = I(t, e.friendRequests), [s, a] = I(t, e.suggestions), [o, u] = I(t, e.sameActivity), [d, c] = I(t, e.activities), [h, g] = I(t, e.inGame), [m, A] = I(t, e.online), [E, p] = I(t, e.offline), _ = i.useMemo(() => {
         if ("" === t.trim()) return e.groups;
         let n = t.toLowerCase();
         return e.groups.map(e => {
@@ -99,11 +99,11 @@ function E(e) {
             }
         }).filter(e => e.users.length > 0)
     }, [t, e.groups]), S = i.useCallback(() => {
-        n(""), l(), a(), u(), c(), g(), A(), p()
-    }, [l, a, u, c, g, A, p]);
+        n(""), r(), a(), u(), c(), g(), A(), p()
+    }, [r, a, u, c, g, A, p]);
     return {
         groups: _,
-        friendRequests: r,
+        friendRequests: l,
         suggestions: s,
         sameActivity: o,
         inGame: h,

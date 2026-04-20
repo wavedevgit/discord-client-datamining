@@ -1,10 +1,10 @@
 /** chunk id: 554932 params = (module,exports,require) **/
 n.d(t, {
-    G: () => r
+    G: () => l
 });
 var i = n(73153);
 
-function r(e) {
+function l(e) {
     let {
         tab: t,
         sectionKey: n

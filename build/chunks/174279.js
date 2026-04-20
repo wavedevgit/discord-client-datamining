@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(513297),
     S = n(414711),
     x = n(187696),
-    v = n(723690),
-    b = n(652215),
+    b = n(723690),
+    v = n(652215),
     y = n(788868),
     O = n(731854),
     L = n(985018),
@@ -115,8 +115,8 @@ class D extends l.PureComponent {
     openPrivateChannel = () => {
         let {
             user: e
-        } = this.props, t = r().find(g.A.getMutablePrivateChannels(), t => t.type === b.rbe.DM && t.getRecipientId() === e.id);
-        null != t ? (0, m.pX)(b.BVt.CHANNEL(b.ME, t.id)) : c.A.openPrivateChannel({
+        } = this.props, t = r().find(g.A.getMutablePrivateChannels(), t => t.type === v.rbe.DM && t.getRecipientId() === e.id);
+        null != t ? (0, m.pX)(v.BVt.CHANNEL(v.ME, t.id)) : c.A.openPrivateChannel({
             recipientIds: e.id
         })
     };
@@ -195,7 +195,7 @@ class D extends l.PureComponent {
             onClick: this.handleRowClick,
             children: t => (0, i.jsxs)("div", {
                 className: R.a4,
-                children: [(0, i.jsx)(v.A, {
+                children: [(0, i.jsx)(b.A, {
                     user: e,
                     status: r,
                     isMobile: s,

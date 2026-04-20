@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(247455),
     S = n(57718),
     x = n(652215),
-    v = n(985018),
-    b = n(659249);
+    b = n(985018),
+    v = n(659249);
 let y = (0, l.memo)(function(e) {
     let {
         quest: t
@@ -36,7 +36,7 @@ let y = (0, l.memo)(function(e) {
     } = (0, A.Ay)(), G = (0, h.Ay)(), k = (0, I.S5)(t.userStatus?.claimedAt, {
         month: "numeric",
         day: "numeric"
-    }), V = t.userStatus?.claimedTier ?? 0, B = t.config.rewards[V], H = B?.type === o.l.FRACTIONAL_PREMIUM, F = B?.type === o.l.COLLECTIBLE, Y = B?.type === o.l.VIRTUAL_CURRENCY, W = B?.collectibleProduct?.items?.[0], K = W?.type === s.R.AVATAR_DECORATION ? W : null, q = l.useMemo(() => null == B ? null : !0 === Y && t.userStatus?.orbQuantityClaimed != null ? v.intl.format(v.t["nLXlh+"], {
+    }), V = t.userStatus?.claimedTier ?? 0, B = t.config.rewards[V], H = B?.type === o.l.FRACTIONAL_PREMIUM, F = B?.type === o.l.COLLECTIBLE, Y = B?.type === o.l.VIRTUAL_CURRENCY, W = B?.collectibleProduct?.items?.[0], K = W?.type === s.R.AVATAR_DECORATION ? W : null, q = l.useMemo(() => null == B ? null : !0 === Y && t.userStatus?.orbQuantityClaimed != null ? b.intl.format(b.t["nLXlh+"], {
         orbAmount: t.userStatus.orbQuantityClaimed
     }) : B.name, [B, Y, t]);
     (0, A.i4)(P, e => {
@@ -82,12 +82,12 @@ let y = (0, l.memo)(function(e) {
             onBlur: en,
             onMouseEnter: et,
             onMouseLeave: en,
-            className: r()(b.kL, {
-                [b.yo]: n
+            className: r()(v.kL, {
+                [v.yo]: n
             }),
             children: [null != M && F && null != K && (0, i.jsx)("div", {
                 ref: j,
-                className: b.FX,
+                className: v.FX,
                 style: {
                     top: y
                 },
@@ -98,13 +98,13 @@ let y = (0, l.memo)(function(e) {
                     animateOnHover: !n
                 })
             }), H ? (0, i.jsx)(T.A, {
-                className: b.Sl
+                className: v.Sl
             }) : Y ? (0, i.jsx)(N.A, {
-                className: b.Sl,
+                className: v.Sl,
                 isAnimated: n,
                 questName: t.config.messages.questName
             }) : Q.isAnimated ? (0, i.jsx)(m.A, {
-                className: b.JU,
+                className: v.JU,
                 autoPlay: !1,
                 children: (0, i.jsx)("source", {
                     src: Q.url,
@@ -112,36 +112,36 @@ let y = (0, l.memo)(function(e) {
                     onError: () => ei(Q.url)
                 })
             }) : (0, i.jsx)("img", {
-                className: b.Sl,
+                className: v.Sl,
                 src: Q.url,
                 alt: t.config.messages.questName,
                 onError: () => ei(Q.url)
             }), (0, i.jsx)("div", {
-                className: r()(b.Lw, {
-                    [b.en]: z,
-                    [b.So]: !z
+                className: r()(v.Lw, {
+                    [v.en]: z,
+                    [v.So]: !z
                 })
             }), (0, i.jsx)("div", {
                 ref: D,
-                className: b.r$,
+                className: v.r$,
                 style: {
                     transform: `translateY(-${X}px)`
                 },
                 children: (0, i.jsx)(S.Ay, {
-                    logotypeClassName: r()(b.wm, {
-                        [b.A0]: $
+                    logotypeClassName: r()(v.wm, {
+                        [v.A0]: $
                     }),
                     quest: t,
                     withGameTile: !1
                 })
             }), (0, i.jsxs)("div", {
                 ref: w,
-                className: b.zH,
+                className: v.zH,
                 children: [(0, i.jsx)(u.Heading, {
-                    className: b.DD,
+                    className: v.DD,
                     variant: "heading-md/semibold",
                     color: "always-white",
-                    children: v.intl.format(v.t.EAYZAr, {
+                    children: b.intl.format(b.t.EAYZAr, {
                         questName: t.config.messages.questName
                     })
                 }), (0, i.jsx)(u.Text, {
@@ -150,7 +150,7 @@ let y = (0, l.memo)(function(e) {
                     style: {
                         opacity: z ? 1 : .75
                     },
-                    children: v.intl.format(v.t["kXVcV+"], {
+                    children: b.intl.format(b.t["kXVcV+"], {
                         reward: q,
                         claimedDate: k
                     })

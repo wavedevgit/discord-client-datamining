@@ -32,9 +32,9 @@ function g(e) {
     }, [C]);
     let N = (0, l.bG)([d.A], () => d.A.isRefreshing(), []),
         S = (0, l.bG)([d.A], () => d.A.isHydrating(), []),
-        [x, v] = i.useState([]),
+        [x, b] = i.useState([]),
         {
-            loadId: b,
+            loadId: v,
             lastScrollEventTimestamp: y
         } = (0, l.cf)([d.A], () => ({
             loadId: d.A.getLoadId(),
@@ -56,13 +56,13 @@ function g(e) {
         if (N || T || null == L || null == O || O === L) return;
         let e = Date.now();
         e - y > m.N && (r.A.gravityScrollEvent(e), s.k.trackFeedFirstScrollStarted())
-    }, [N, y, L, O, b, T]);
+    }, [N, y, L, O, v, T]);
     let R = i.useCallback(e => {
             let {
                 viewableItems: t
             } = e;
             if (t.some(e => "end" === e.item.data.kind) && p(!0), 0 === t.length) return;
-            v(t);
+            b(t);
             let n = [],
                 i = (0, u.P0)(t),
                 l = Date.now();

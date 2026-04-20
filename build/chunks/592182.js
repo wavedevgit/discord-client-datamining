@@ -25,8 +25,8 @@ var l = n(503698),
     S = n(709309),
     I = n(153331),
     T = n(33852),
-    N = n(834425),
-    v = n(284525),
+    v = n(834425),
+    N = n(284525),
     y = n(443493),
     b = n(462226),
     j = n(913948),
@@ -44,15 +44,15 @@ let w = (0, d.A)(e => {
         applicationStream: a,
         className: d,
         guildId: w,
-        channelId: U,
-        source: k,
+        channelId: k,
+        source: U,
         buttonVariant: G,
         type: F,
         onAction: H
     } = e, B = (0, o.bG)([f.default], () => {
         let e = f.default.getCurrentUser();
         return r()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-    }), V = F === I.O.STREAM_PREVIEW || null != a, W = (0, C.A)(t), K = W || V ? h.A.Direction.HORIZONTAL : h.A.Direction.VERTICAL, z = (0, o.bG)([p.A], () => null != U ? p.A.getChannel(U) : null, [U]), {
+    }), V = F === I.O.STREAM_PREVIEW || null != a, W = (0, C.A)(t), K = W || V ? h.A.Direction.HORIZONTAL : h.A.Direction.VERTICAL, z = (0, o.bG)([p.A], () => null != k ? p.A.getChannel(k) : null, [k]), {
         enableRequestToStream: Y
     } = m.m.useExperiment({
         guildId: w ?? z?.guild_id,
@@ -90,14 +90,14 @@ let w = (0, d.A)(e => {
                         activity: t,
                         user: l,
                         guildId: w,
-                        channelId: U,
-                        source: k,
+                        channelId: k,
+                        source: U,
                         onAction: H
                     }),
                     n = (0, i.jsx)(R.A, {
                         activity: t,
                         user: l,
-                        source: k,
+                        source: U,
                         onAction: H
                     });
                 return (0, i.jsxs)(c.ButtonGroup, {
@@ -128,7 +128,7 @@ let w = (0, d.A)(e => {
                     activity: t,
                     variant: J ? "secondary" : G,
                     onAction: H
-                }), (0, i.jsx)(v.A, {
+                }), (0, i.jsx)(N.A, {
                     activity: t,
                     embeddedActivity: n,
                     user: l,
@@ -139,7 +139,7 @@ let w = (0, d.A)(e => {
                     user: l,
                     variant: J ? "secondary" : G,
                     onAction: H
-                }), (0, i.jsx)(N.A, {
+                }), (0, i.jsx)(v.A, {
                     user: l,
                     activity: t,
                     variant: J ? "secondary" : G,

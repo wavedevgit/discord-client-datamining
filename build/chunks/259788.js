@@ -9,25 +9,25 @@ n.d(t, {
     nl: () => s
 });
 var i = n(839214);
-let r = {
+let l = {
         timeToLiveMs: 5e3,
         reappearTimeMs: 1e4
     },
-    l = (0, i.D)(() => r),
+    r = (0, i.D)(() => l),
     s = 1e4,
     a = 2e4,
     o = 500,
     u = 1e3;
 
 function d(e) {
-    l.setState({
+    r.setState({
         timeToLiveMs: e
     })
 }
 
 function c(e) {
-    l.setState({
+    r.setState({
         reappearTimeMs: e
     })
 }
-let h = l
+let h = r

@@ -24,8 +24,8 @@ var i = n(627968),
     S = n(317560),
     I = n(533406),
     T = n(366523),
-    N = n(652215),
-    v = n(788868),
+    v = n(652215),
+    N = n(788868),
     y = n(985018),
     b = n(789901);
 let j = Object.freeze({
@@ -52,10 +52,10 @@ function D(e) {
         channelId: O,
         analyticsLocations: P,
         onCardClick: w,
-        onButtonClick: U
-    } = e, k = l.useRef(null), G = (0, d.bG)([_.A], () => (0, c.Mwr)(_.A.theme)), F = (0, d.bG)([h.A], () => h.A.useReducedMotion), {
+        onButtonClick: k
+    } = e, U = l.useRef(null), G = (0, d.bG)([_.A], () => (0, c.Mwr)(_.A.theme)), F = (0, d.bG)([h.A], () => h.A.useReducedMotion), {
         isHoveringOrFocusing: H
-    } = (0, A.A)(k), {
+    } = (0, A.A)(U), {
         guildId: B
     } = (0, x.nG)(s.applicationId), V = (0, d.bG)([m.A], () => m.A.getApplication(s.applicationId)), {
         primaryIconAsset: W,
@@ -132,26 +132,26 @@ function D(e) {
         }
     }({
         sku: s,
-        priceSetAssignmentPurchaseType: r ? N.lid.DEFAULT : N.lid.GIFT
+        priceSetAssignmentPurchaseType: r ? v.lid.DEFAULT : v.lid.GIFT
     }), q = l.useCallback(e => {
         e.stopPropagation(), w?.(), (0, S.R)({
             skuId: s.id,
             applicationId: s.applicationId,
             isStorefront: !1,
             giftRecipient: a,
-            giftingOrigin: v.vQ.GUILD_CHANNEL,
+            giftingOrigin: N.vQ.GUILD_CHANNEL,
             analyticsLocations: P
         })
     }, [s.id, s.applicationId, a, P, w]), $ = l.useCallback(e => {
-        e.stopPropagation(), U?.(), (0, I.a)(s, {
+        e.stopPropagation(), k?.(), (0, I.a)(s, {
             isGift: !r,
             giftRecipient: a,
-            giftingOrigin: v.vQ.GUILD_CHANNEL
+            giftingOrigin: N.vQ.GUILD_CHANNEL
         }, {
             analyticsLocations: P,
             guildId: B
         })
-    }, [s, a, r, P, B, U]);
+    }, [s, a, r, P, B, k]);
     return (0, i.jsx)(c.vN3, {
         children: (0, i.jsxs)(u.sqX, {
             onClick: q,
@@ -160,7 +160,7 @@ function D(e) {
                 [b.BN]: G,
                 [b.YF]: H
             }),
-            ref: k,
+            ref: U,
             "aria-label": s.name,
             children: [(0, i.jsx)(E.P, {
                 spec: j,

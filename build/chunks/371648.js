@@ -24,8 +24,8 @@ var i = n(627968),
     S = n(164956),
     I = n(302031),
     T = n(513272),
-    N = n(253932),
-    v = n(617617),
+    v = n(253932),
+    N = n(617617),
     y = n(961350),
     b = n(72314),
     j = n(580745),
@@ -36,8 +36,8 @@ var i = n(627968),
     O = n(399263),
     P = n(287809),
     w = n(234320),
-    U = n(863439),
-    k = n(504136),
+    k = n(863439),
+    U = n(504136),
     G = n(326337),
     F = n(540385),
     H = n(830178),
@@ -60,7 +60,7 @@ let J = (0, r.animated)(d.fKU),
                 showNewMessagesBar: x,
                 messageDisplayCompact: I,
                 channelStream: T,
-                uploads: N,
+                uploads: v,
                 hasUnreads: y,
                 editingMessageId: j,
                 fontSize: R,
@@ -68,8 +68,8 @@ let J = (0, r.animated)(d.fKU),
                 filterAfterTimestamp: D,
                 showingQuarantineBanner: O,
                 hideSummaries: P = !1,
-                jumpBarClassName: U,
-                typingGradient: k
+                jumpBarClassName: k,
+                typingGradient: U
             } = e,
             [H, q] = l.useState(b.A.isAtBottom(f.id) ?? !1),
             $ = (0, p.Ay)(f),
@@ -116,7 +116,7 @@ let J = (0, r.animated)(d.fKU),
                 showNewMessagesBar: x,
                 messageDisplayCompact: I,
                 channelStream: T,
-                uploads: N,
+                uploads: v,
                 loadMore: et.loadMore,
                 scrollManager: et,
                 specs: ee,
@@ -128,7 +128,7 @@ let J = (0, r.animated)(d.fKU),
                         animate: !A.A.useReducedMotion
                     }) : u.A.jumpToPresent(f.id, Z)
                 },
-                jumpBarClassName: U
+                jumpBarClassName: k
             });
         t = et.ref, n = l.useCallback(() => t.current?.scrollToBottom(), [t]), s = l.useCallback(() => t.current?.scrollPageUp({
             animate: !A.A.useReducedMotion
@@ -152,12 +152,12 @@ let J = (0, r.animated)(d.fKU),
             eh = (0, m.A)(e => {
                 et.ref.current = e, ed.current = e?.getScrollerNode() ?? null
             }),
-            em = (0, c.bG)([v.A], () => {
-                let e = v.A.settings.appearance?.clientThemeSettings;
+            em = (0, c.bG)([N.A], () => {
+                let e = N.A.settings.appearance?.clientThemeSettings;
                 return e?.backgroundGradientPresetId != null || e?.customUserThemeSettings != null
             }),
-            eA = l.useMemo(() => k ? H ? Y.gA : Y.ru : Y.Zd, [k, H]),
-            eg = l.useMemo(() => k ? H ? Y.cz : Y.XF : Y.U6, [k, H]);
+            eA = l.useMemo(() => U ? H ? Y.gA : Y.ru : Y.Zd, [U, H]),
+            eg = l.useMemo(() => U ? H ? Y.cz : Y.XF : Y.U6, [U, H]);
         return (0, i.jsxs)(o.hD, {
             navigator: en,
             children: [null != eo && eo, (0, i.jsxs)("div", {
@@ -231,13 +231,13 @@ let J = (0, r.animated)(d.fKU),
             }
         }(t), {
             messageGroupSpacing: S,
-            fontSize: v,
+            fontSize: N,
             messageDisplayCompact: b,
             renderSpoilers: w,
             keyboardModeEnabled: G
         } = function() {
-            let e = N.hH.useSetting(),
-                t = N.gs.useSetting(),
+            let e = v.hH.useSetting(),
+                t = v.gs.useSetting(),
                 {
                     messageGroupSpacing: n,
                     fontSize: i,
@@ -291,7 +291,7 @@ let J = (0, r.animated)(d.fKU),
                     }), Array.from(e)
                 }, [t]), (0, _.A)(n));
             (0, g.A)(i, e);
-            let I = l.useMemo(() => (0, k.A)({
+            let I = l.useMemo(() => (0, U.A)({
                 channel: e,
                 messages: i,
                 oldestUnreadMessageId: s,
@@ -308,7 +308,7 @@ let J = (0, r.animated)(d.fKU),
             }
         }(t);
         return (0, i.jsx)(I.Bs.Provider, {
-            value: (0, U.A)(w, u),
+            value: (0, k.A)(w, u),
             children: (0, i.jsx)(H.t, {
                 children: (0, i.jsx)(q, {
                     ...d,
@@ -324,7 +324,7 @@ let J = (0, r.animated)(d.fKU),
                     hasUnreads: null != V,
                     canChat: p,
                     editingMessageId: W,
-                    fontSize: v,
+                    fontSize: N,
                     keyboardModeEnabled: G,
                     showingQuarantineBanner: n,
                     hideSummaries: s,

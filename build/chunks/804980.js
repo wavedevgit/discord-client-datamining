@@ -1,6 +1,6 @@
 /** chunk id: 804980 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => k,
+    Ay: () => U,
     LN: () => w
 });
 var i = n(627968),
@@ -25,8 +25,8 @@ var i = n(627968),
     S = n(227042),
     I = n(793574),
     T = n(688810),
-    N = n(698141),
-    v = n(429913),
+    v = n(698141),
+    N = n(429913),
     y = n(87001),
     b = n(961350),
     j = n(186111),
@@ -64,7 +64,7 @@ function w(e) {
     })
 }
 
-function U(e) {
+function k(e) {
     let {
         participants: t,
         application: n,
@@ -76,15 +76,15 @@ function U(e) {
         userId: R.default.getCurrentUser()?.id,
         channelId: s.id,
         application: n
-    }) === g.Gy.CAN_JOIN, I = s.getGuildId() ?? void 0, v = l.useId(), y = n.id, j = l.useMemo(() => ({
+    }) === g.Gy.CAN_JOIN, I = s.getGuildId() ?? void 0, N = l.useId(), y = n.id, j = l.useMemo(() => ({
         channel: s,
         type: "channel"
     }), [s]), {
         submitting: P
-    } = (0, N.A)({
+    } = (0, v.A)({
         applicationId: y,
         context: j,
-        launchingComponentId: v
+        launchingComponentId: N
     });
     return (0, i.jsxs)("div", {
         className: O.Yi,
@@ -122,7 +122,7 @@ function U(e) {
                         activityChannelId: s.id,
                         locationObject: C.location,
                         analyticsLocations: E,
-                        componentId: v
+                        componentId: N
                     })
                 },
                 loading: P,
@@ -133,7 +133,7 @@ function U(e) {
     })
 }
 
-function k(e) {
+function U(e) {
     let {
         participant: t,
         width: n,
@@ -144,13 +144,13 @@ function k(e) {
         analyticsLocations: c
     } = (0, T.Ay)(I.A.ACTIVITY_TILE), {
         applicationId: d
-    } = t, u = (0, _.A)(), h = null != u && (0, A.H)(u.location) === o.id && u.applicationId === d, [m] = (0, v.A)([d]), {
+    } = t, u = (0, _.A)(), h = null != u && (0, A.H)(u.location) === o.id && u.applicationId === d, [m] = (0, N.A)([d]), {
         url: g
     } = (0, p.A)({
         applicationId: d,
         names: P,
         size: 1024
-    }), C = !s && h, N = !h, b = !h && !s, R = (0, r.bG)([j.A, y.A], () => (0, S.A)({
+    }), C = !s && h, v = !h, b = !h && !s, R = (0, r.bG)([j.A, y.A], () => (0, S.A)({
         LayerStore: j.A,
         PopoutWindowStore: y.A
     }));
@@ -166,16 +166,16 @@ function k(e) {
             children: [C && null != u && (0, i.jsx)(f.A, {
                 className: O.pU,
                 embedId: (0, x.A)(u.location.id, d)
-            }), N && null != m && null != g && "" !== g ? (0, i.jsx)("img", {
+            }), v && null != m && null != g && "" !== g ? (0, i.jsx)("img", {
                 className: O.j0,
                 alt: m.name,
                 src: g
-            }) : null, b && null != m && (0, i.jsx)(U, {
+            }) : null, b && null != m && (0, i.jsx)(k, {
                 width: n,
                 channel: o,
                 participants: t.participants,
                 application: m
-            }), a || N ? null : (0, i.jsx)("div", {
+            }), a || v ? null : (0, i.jsx)("div", {
                 className: O.OB
             })]
         })

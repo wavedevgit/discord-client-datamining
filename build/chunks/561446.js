@@ -39,7 +39,7 @@ function E(e) {
             guildId: t?.id,
             maxMembers: t?.maxMembers
         }
-    }), N = (0, l.bG)([c.A], () => null != I ? c.A.getMemberCount(I) : 0), v = null != T && (N ?? 0) >= T, {
+    }), v = (0, l.bG)([c.A], () => null != I ? c.A.getMemberCount(I) : 0), N = null != T && (v ?? 0) >= T, {
         approveRequest: y,
         rejectRequest: b,
         submitting: j
@@ -48,14 +48,14 @@ function E(e) {
         className: f.U,
         children: [(0, i.jsx)(s.m, {
             text: p.intl.string(p.t.cdPGbE),
-            shouldShow: v,
+            shouldShow: N,
             children: (0, i.jsx)(a.Button, {
                 variant: "active",
                 size: "sm",
                 text: p.intl.string(p.t.BzjDQJ),
                 loading: j,
                 onClick: y,
-                disabled: v
+                disabled: N
             })
         }), (0, i.jsx)(a.Button, {
             variant: "critical-primary",

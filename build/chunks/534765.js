@@ -3,8 +3,8 @@ n.d(t, {
     r: () => o
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(442433),
+    l = n(64700),
+    r = n(442433),
     s = n(95701),
     a = n(652215);
 
@@ -14,9 +14,9 @@ function o(e) {
         guild: o,
         user: u
     } = e;
-    return r.useCallback(e => {
+    return l.useCallback(e => {
         if (null != t) {
-            if (t.isMultiUserDM()) return void(0, l.L3)(e, async () => {
+            if (t.isMultiUserDM()) return void(0, r.L3)(e, async () => {
                 let {
                     default: e
                 } = await n.e("77927").then(n.bind(n, 320442));
@@ -27,7 +27,7 @@ function o(e) {
                     widgetType: a.uss.TEXT_CHAT_V3
                 })
             });
-            if (t.isDM() && null != u) return void(0, l.L3)(e, async () => {
+            if (t.isDM() && null != u) return void(0, r.L3)(e, async () => {
                 let {
                     default: e
                 } = await Promise.all([n.e("97262"), n.e("42128"), n.e("28059")]).then(n.bind(n, 92016));
@@ -39,7 +39,7 @@ function o(e) {
                     widgetType: a.uss.TEXT_CHAT_V3
                 })
             });
-            if (t.isModeratorReportChannel()) return void(0, l.L3)(e, async () => {
+            if (t.isModeratorReportChannel()) return void(0, r.L3)(e, async () => {
                 let {
                     default: e
                 } = await n.e("56985").then(n.bind(n, 95616));
@@ -51,7 +51,7 @@ function o(e) {
             });
             if ((0, s.ay)(t.type)) {
                 if (null == o) return;
-                (0, l.L3)(e, async () => {
+                (0, r.L3)(e, async () => {
                     let {
                         default: e
                     } = await n.e("21905").then(n.bind(n, 769192));
@@ -64,7 +64,7 @@ function o(e) {
                 });
                 return
             }
-            null != o && (0, l.L3)(e, async () => {
+            null != o && (0, r.L3)(e, async () => {
                 let {
                     default: e
                 } = await Promise.all([n.e("97262"), n.e("54036")]).then(n.bind(n, 813407));

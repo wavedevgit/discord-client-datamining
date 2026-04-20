@@ -23,10 +23,10 @@ function I(e) {
     let {
         eventId: t
     } = e, n = (0, a.bG)([d.Ay], () => d.Ay.getGuildScheduledEvent(t), [t]), I = (0, a.bG)([g.A], () => g.A.getGuild(n?.guild_id), [n]), f = (0, a.bG)([m.A], () => m.A.getChannel(n?.channel_id), [n]), C = (0, u.nh)(t, null), T = null != n && (0, d.Fd)(n), N = null != n ? (0, _.G3)(n) : null, S = (0, A.A)(n?.guild_id, n?.id, N), x = C?.startTime.toISOString(), {
-        startDateTimeString: v
+        startDateTimeString: b
     } = l.useMemo(() => T ? {
         startDateTimeString: p.intl.string(p.t.TxqPQR)
-    } : (0, _.CC)(x ?? new Date().toISOString()), [x, T]), b = (0, s.Ay)(f), y = null != n ? (0, h.oF)(n) : void 0, O = b ?? y, L = null != f ? (0, o.gU)(f) : null;
+    } : (0, _.CC)(x ?? new Date().toISOString()), [x, T]), v = (0, s.Ay)(f), y = null != n ? (0, h.oF)(n) : void 0, O = v ?? y, L = null != f ? (0, o.gU)(f) : null;
     if (null == n || null == I) return null;
     let R = null != n.description && n.description.length > 0;
     return (0, i.jsxs)("div", {
@@ -36,7 +36,7 @@ function I(e) {
             children: (0, i.jsx)(r.Text, {
                 variant: "text-sm/semibold",
                 color: T ? "status-positive" : "text-brand",
-                children: v
+                children: b
             })
         }), (0, i.jsx)(r.Text, {
             variant: "text-lg/semibold",

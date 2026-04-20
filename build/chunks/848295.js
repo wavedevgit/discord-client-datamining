@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(774774),
     S = n(652215),
     x = n(49999),
-    v = n(985018),
-    b = n(695594);
+    b = n(985018),
+    v = n(695594);
 let y = [],
     O = e => {
         let {
@@ -34,7 +34,7 @@ let y = [],
             className: n
         } = e;
         return (0, i.jsx)(A.LpS, {
-            className: r()(b.Tc, n),
+            className: r()(v.Tc, n),
             text: t
         })
     },
@@ -47,25 +47,25 @@ let y = [],
             wideStyle: s
         } = e;
         return (0, i.jsxs)("div", {
-            className: r()(b.Vr, {
-                [b.tF]: s
+            className: r()(v.Vr, {
+                [v.tF]: s
             }),
             children: [null != a ? (0, i.jsx)(O, {
                 tagText: a,
-                className: b.bX
+                className: v.bX
             }) : null, (0, i.jsx)("img", {
                 alt: "",
-                className: r()(b._n, {
-                    [b.tF]: s
+                className: r()(v._n, {
+                    [v.tF]: s
                 }),
                 src: l
             }), (0, i.jsxs)("div", {
-                className: r()(b.Zz, {
-                    [b.tF]: s
+                className: r()(v.Zz, {
+                    [v.tF]: s
                 }),
                 children: [(0, i.jsx)(A.Heading, {
                     variant: "heading-sm/semibold",
-                    className: b.Hf,
+                    className: v.Hf,
                     children: t
                 }), (0, i.jsx)(A.Text, {
                     variant: "text-xs/normal",
@@ -169,23 +169,23 @@ function R(e) {
         }
     }, [k, n]), (0, i.jsx)(A.EOs, {
         "data-migration-pending": !0,
-        className: r()(b.zr, b.kv, a),
+        className: r()(v.zr, v.kv, a),
         transitionState: W,
         "aria-labelledby": K,
         parentComponent: "PremiumAnnouncementModalVariant1",
         children: (0, i.jsxs)(A.hLv, {
             color: "nitro-pink",
             children: [(0, i.jsx)("div", {
-                className: b.cG,
+                className: v.cG,
                 children: (0, i.jsx)(u.JnF, {
                     "data-migration-pending": !0,
                     onClick: async () => await Y()
                 })
             }), (0, i.jsxs)(A.$mQ, {
                 "data-migration-pending": !0,
-                className: b.Qs,
+                className: v.Qs,
                 children: ["video" === R.type ? (0, i.jsx)(E.A, {
-                    className: r()(b.Ki, P),
+                    className: r()(v.Ki, P),
                     autoPlay: !z,
                     loop: !0,
                     muted: !0,
@@ -209,7 +209,7 @@ function R(e) {
                     },
                     disablePictureInPicture: !0,
                     children: ec?.map(e => {
-                        let t = (0, v.getLanguages)().find(t => t.code === e.locale);
+                        let t = (0, b.getLanguages)().find(t => t.code === e.locale);
                         return null == t ? null : (0, i.jsx)("track", {
                             label: t.englishName,
                             kind: "captions",
@@ -219,7 +219,7 @@ function R(e) {
                         }, e.locale)
                     })
                 }) : "embed" === R.type ? (0, i.jsx)(m.rr, {
-                    className: r()(b.Ki, P),
+                    className: r()(v.Ki, P),
                     allowFullScreen: !1,
                     href: R.href,
                     thumbnail: R.thumbnail,
@@ -237,28 +237,28 @@ function R(e) {
                     }
                 }) : "image" === R.type ? (0, i.jsx)("img", {
                     alt: "",
-                    className: r()(b.Ki, P),
+                    className: r()(v.Ki, P),
                     src: R.src
                 }) : null, null != M && "" !== M ? (0, i.jsx)(N.e4, {
                     text: M,
                     colorOptions: N.at.PREMIUM_TIER_2_WHITE_FILL,
-                    className: b.ON
+                    className: v.ON
                 }) : null, (0, i.jsx)(A.Heading, {
                     variant: "display-md",
-                    className: r()(b.TK, j),
+                    className: r()(v.TK, j),
                     children: D
                 }), (0, i.jsxs)(A.Text, {
                     variant: "text-md/normal",
                     color: "text-subtle",
-                    className: b.uI,
+                    className: v.uI,
                     children: [w, U?.()]
                 }), null != B && "" !== B && (0, i.jsx)(A.Heading, {
                     variant: "heading-lg/semibold",
-                    className: b.G3,
+                    className: v.G3,
                     children: B
                 }), G.length > 0 && (0, i.jsx)("div", {
-                    className: r()(b.IS, {
-                        [b.tF]: q
+                    className: r()(v.IS, {
+                        [v.tF]: q
                     }),
                     children: G.map((e, t) => (0, i.jsx)(L, {
                         ...e,
@@ -267,10 +267,10 @@ function R(e) {
                 }), null != H && "" !== H && (0, i.jsxs)(A.Text, {
                     variant: "text-xs/medium",
                     color: "text-subtle",
-                    className: b.ed,
+                    className: v.ed,
                     children: [H, F?.()]
                 }), (0, i.jsx)("div", {
-                    className: b.UD,
+                    className: v.UD,
                     children: V()
                 })]
             })]

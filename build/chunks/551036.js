@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(167010),
     S = n(139613),
     x = n(746080),
-    v = n(985018),
-    b = n(832933);
+    b = n(985018),
+    v = n(832933);
 
 function y(e) {
     let {
@@ -36,7 +36,7 @@ function y(e) {
         restrictionsLoading: j
     } = (0, h.MH)(t), M = null == n || !P || R || j;
     (0, c.HU)({
-        subsection: v.intl.string(v.t["KzCF/6"]),
+        subsection: b.intl.string(b.t["KzCF/6"]),
         location: n?.name
     }), (0, d.A)(a.Fr ? "role-subscriptions-overview" : void 0);
     let w = y && (null == n || !(O || L) || D && !j);
@@ -51,24 +51,24 @@ function y(e) {
         })
     }
     return (0, i.jsxs)("div", {
-        className: b.kL,
+        className: v.kL,
         children: [(0, i.jsxs)(m.A, {
             toolbar: (0, i.jsx)(l.Fragment, {}),
-            className: b.jr,
+            className: v.jr,
             children: [(0, i.jsx)(m.A.Icon, {
                 icon: (0, s.kHD)(f.A),
                 "aria-hidden": !0
             }), (0, i.jsx)(m.A.Title, {
-                children: v.intl.string(v.t["KzCF/6"])
+                children: b.intl.string(b.t["KzCF/6"])
             })]
         }), (0, i.jsx)("div", {
             id: S.K
         }), (0, i.jsx)("div", {
-            className: b.Qs,
+            className: v.Qs,
             children: O ? (0, i.jsx)(s.d_W, {
-                className: b.XG,
+                className: v.XG,
                 children: (0, i.jsx)("div", {
-                    className: b.gT,
+                    className: v.gT,
                     children: M ? (0, i.jsx)(s.y$y, {}) : (0, i.jsx)(C.A, {
                         guild: n
                     })

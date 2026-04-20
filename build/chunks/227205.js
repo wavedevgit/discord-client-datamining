@@ -69,8 +69,8 @@ let k = {
             heroLogo: U,
             heroBannerStatic: V,
             heroBannerAnimated: W,
-            heroBannerRive: z
-        } = (0, b.Kk)(w), K = F?.responsive ?? !1, Y = F?.backgroundStyle, $ = null != z, Z = y === I.G2.ORBS, q = null != l && l.isOrbsExclusive, X = Z ? j.intl.string(j.t["1CdL8d"]) : j.intl.string(j.t.xYKa1T), J = () => {
+            heroBannerRive: K
+        } = (0, b.Kk)(w), z = F?.responsive ?? !1, Y = F?.backgroundStyle, $ = null != K, Z = y === I.G2.ORBS, q = null != l && l.isOrbsExclusive, X = Z ? j.intl.string(j.t["1CdL8d"]) : j.intl.string(j.t.xYKa1T), J = () => {
             Z ? ((0, h.Y)({
                 pageType: L.liQ.SHOP_ORBS_TAB,
                 sectionType: L.JJy.ORBS_SHOP_HERO_BLOCK,
@@ -103,7 +103,7 @@ let k = {
                 }) : null, (0, n.jsx)("div", {
                     className: a()(O.vK, {
                         [O.cN]: $,
-                        [O.no]: K
+                        [O.no]: z
                     }),
                     style: null != Y ? {
                         background: Y
@@ -111,8 +111,8 @@ let k = {
                     children: null != V && (0, n.jsx)(S.A, {
                         bannerStatic: V,
                         bannerAnimated: W,
-                        bannerRive: z,
-                        isResponsive: K,
+                        bannerRive: K,
+                        isResponsive: z,
                         eventTargetRef: B
                     })
                 }), (0, n.jsxs)("div", {
@@ -126,7 +126,7 @@ let k = {
                         })
                     }) : (0, n.jsxs)("div", {
                         className: a()(O.bC, {
-                            [O.no]: K
+                            [O.no]: z
                         }),
                         children: [t ? (0, n.jsx)("div", {
                             className: O.Hw

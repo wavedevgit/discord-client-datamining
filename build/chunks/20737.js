@@ -1,6 +1,6 @@
 /** chunk id: 20737 params = (module,exports,require) **/
 n.d(t, {
-    A: () => k
+    A: () => U
 });
 var i = n(627968),
     l = n(64700),
@@ -24,8 +24,8 @@ var i = n(627968),
     S = n(253932),
     I = n(761640),
     T = n(629016),
-    N = n(186111),
-    v = n(576705),
+    v = n(186111),
+    N = n(576705),
     y = n(461213),
     b = n(203982),
     j = n(723702),
@@ -36,12 +36,12 @@ var i = n(627968),
     O = n(652215),
     P = n(696016),
     w = n(985018),
-    U = n(644268);
-let k = l.memo(function(e) {
+    k = n(644268);
+let U = l.memo(function(e) {
     let {
         className: t,
         channel: s,
-        draftType: k,
+        draftType: U,
         editorTextContent: G,
         setValue: F,
         canOnlyUseTextCommands: H
@@ -51,7 +51,7 @@ let k = l.memo(function(e) {
         location: "ChannelAttachButton"
     }), {
         onShareClick: X
-    } = (0, _.A)(s.id), Q = (0, r.bG)([p.HP], () => p.HP.hasHotspot(p._2.CLIPS_CHANNEL_ATTACH_REMINDER)), ee = (0, o.red)(e => (0, o.fDT)(e, P.nm)), et = (0, r.bG)([N.A], () => N.A.hasLayers()), en = (0, r.bG)([m.A], () => m.A.hasClips()), [ei, el] = l.useState(null), es = (0, h.sw)() && (z || en), ea = s.isPrivate(), er = (0, r.bG)([v.A], () => ea || v.A.can(O.xBc.ATTACH_FILES, s) && v.A.can(O.xBc.SEND_MESSAGES, s)), eo = (0, d.A)(Y);
+    } = (0, _.A)(s.id), Q = (0, r.bG)([p.HP], () => p.HP.hasHotspot(p._2.CLIPS_CHANNEL_ATTACH_REMINDER)), ee = (0, o.red)(e => (0, o.fDT)(e, P.nm)), et = (0, r.bG)([v.A], () => v.A.hasLayers()), en = (0, r.bG)([m.A], () => m.A.hasClips()), [ei, el] = l.useState(null), es = (0, h.sw)() && (z || en), ea = s.isPrivate(), er = (0, r.bG)([N.A], () => ea || N.A.can(O.xBc.ATTACH_FILES, s) && N.A.can(O.xBc.SEND_MESSAGES, s)), eo = (0, d.A)(Y);
 
     function ec() {
         (0, o.mMO)(async () => {
@@ -105,7 +105,7 @@ let k = l.memo(function(e) {
     let ef = (0, i.jsx)(o.pa$, {
             size: "refresh_sm",
             color: "currentColor",
-            colorClass: U.dW
+            colorClass: k.dW
         }),
         eE = (0, i.jsx)(o.YNO, {
             targetElementRef: W,
@@ -135,7 +135,7 @@ let k = l.memo(function(e) {
                             options: ep,
                             channel: s,
                             onFileUpload: () => V.current?.activateUploadDialogue(),
-                            draftType: k,
+                            draftType: U,
                             editorTextContent: G,
                             setValue: F,
                             openClips: ec
@@ -146,8 +146,8 @@ let k = l.memo(function(e) {
             },
             children: e => (0, i.jsx)(M.A, {
                 ref: W,
-                className: a()(U.g$, t),
-                childClassName: U.wh,
+                className: a()(k.g$, t),
+                childClassName: k.wh,
                 isActive: !1,
                 "aria-label": w.intl.string(w.t.d56gCa),
                 onDoubleClick: er ? () => V.current?.activateUploadDialogue() : void 0,
@@ -158,12 +158,12 @@ let k = l.memo(function(e) {
         });
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            className: U.EJ,
+            className: k.EJ,
             children: (0, i.jsx)(c.A, {
                 ref: V,
                 onChange: e => {
                     var t, n;
-                    t = e.currentTarget.files, null != (n = e.currentTarget.err) && "ETOOLARGE" === n.code ? (0, R.V)(s, []) : (0, R.R)(t, s, k, {
+                    t = e.currentTarget.files, null != (n = e.currentTarget.err) && "ETOOLARGE" === n.code ? (0, R.V)(s, []) : (0, R.R)(t, s, U, {
                         requireConfirm: !0,
                         origin: "file_picker"
                     }), b._.dispatchToLastSubscribed(O.jej.TEXTAREA_FOCUS), e.currentTarget.value = ""
@@ -173,7 +173,7 @@ let k = l.memo(function(e) {
                 "aria-hidden": !0
             })
         }), (0, i.jsx)("div", {
-            className: U.Jd,
+            className: k.Jd,
             children: eE
         })]
     })

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(503698),
-    l = n.n(r),
+var l = n(503698),
+    r = n.n(l),
     s = n(435371),
     a = n(397927),
     o = n(286596);
@@ -14,14 +14,14 @@ function u(e) {
     let {
         tooltipText: t,
         showTooltip: n = !0,
-        className: r,
+        className: l,
         ariaLabel: u,
         onClick: d,
         onMouseEnter: c,
         onMouseLeave: h,
         children: g
     } = e, m = u ?? t, f = (0, i.jsx)(a.DUT, {
-        className: l()(o.k, r),
+        className: r()(o.k, l),
         "aria-label": m,
         onClick: d,
         onMouseEnter: c,

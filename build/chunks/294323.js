@@ -36,9 +36,9 @@ function _(e, t, n) {
                 t = m.A.getFetchState(_);
             return [(t === m.e.NOT_FETCHED || t === m.e.FETCHING) && null == e, e]
         }, [_])),
-        [N, v] = S ? T : I,
-        [y, b] = (p = null != v ? t : null, C = (0, a.h)(p), [(0, l.bG)([s.A], () => null != p && s.A.isFetchingApplication(p), [p]) && null == C, C ?? null]),
-        j = null != v && null != b,
+        [v, N] = S ? T : I,
+        [y, b] = (p = null != N ? t : null, C = (0, a.h)(p), [(0, l.bG)([s.A], () => null != p && s.A.isFetchingApplication(p), [p]) && null == C, C ?? null]),
+        j = null != N && null != b,
         [R, M] = (f = j ? e : null, E = j ? t : null, x = (0, l.bG)([o.A], () => null != f && o.A.getFetchState(f) === o.e.NOT_FETCHED, [f]), i.useEffect(() => {
             x && null != f && r.A.fetchUserApplicationIdentitiesWithProfiles(f)
         }, [x, f]), (0, l.yK)([o.A], () => {
@@ -52,13 +52,13 @@ function _(e, t, n) {
                 s && null != e && (0, h.A)(e)
             }, [s, e]), [(t || s) && null == n, n]
         }(j ? e : null),
-        O = N || y || R || L;
+        O = v || y || R || L;
     return i.useMemo(() => ({
         isV2: S,
         isLoading: O,
         application: b,
-        applicationWidgetConfig: v,
+        applicationWidgetConfig: N,
         userApplicationIdentity: M,
         profileApplicationWidget: D?.widgets?.find(e => null != t && e instanceof d.R && e.applicationId === t) ?? null
-    }), [b, t, v, M, O, S, D])
+    }), [b, t, N, M, O, S, D])
 }

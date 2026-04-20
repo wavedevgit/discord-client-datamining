@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(90166),
     S = n(940447),
     x = n(665037),
-    v = n(946960),
-    b = n(49999);
+    b = n(946960),
+    v = n(49999);
 let y = new Set([r.M.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION, r.M.CHANNEL_NOTICE_GUILD_BANNER]);
 
 function O(e) {
@@ -39,26 +39,26 @@ function R(e) {
     let n, {
             guild: _
         } = e,
-        [g, p] = l.useState(s.w.get(v.hV) ?? 0),
+        [g, p] = l.useState(s.w.get(b.hV) ?? 0),
         E = (t = _.id, n = (0, c.I)(t), l.useMemo(() => {
             let e = [];
             return n && e.push(r.M.GAME_CLAIM_COACHMARK), e.length > 0 ? e : L
         }, [n])),
-        [I, f] = (0, d.ww)(E, _.id, b.m.CHANNEL_NOTICES, !0),
+        [I, f] = (0, d.ww)(E, _.id, v.m.CHANNEL_NOTICES, !0),
         C = null != I,
-        N = (0, a.yK)(v.cJ, () => C ? [] : v.cA.filter(e => {
+        N = (0, a.yK)(b.cJ, () => C ? [] : b.cA.filter(e => {
             let {
                 dismissibleContentType: t,
                 store: n
             } = e;
             return !0 === n?.channelNoticePredicate(_, g) && !y.has(t)
         }).map(e => e.dismissibleContentType), [_, g, C]),
-        [x, R] = (0, d.kn)(N, b.m.CHANNEL_NOTICES),
+        [x, R] = (0, d.kn)(N, v.m.CHANNEL_NOTICES),
         P = I ?? x,
         D = null != I ? f : R,
         j = l.useCallback(() => {
             var e;
-            e = Date.now(), s.w.set(v.hV, e), p(e), D(b.i.UNKNOWN)
+            e = Date.now(), s.w.set(b.hV, e), p(e), D(v.i.UNKNOWN)
         }, [D]),
         M = (() => {
             switch (P) {
@@ -90,7 +90,7 @@ function R(e) {
                 case r.M.LINKED_ROLE_ADMIN_GUILD:
                     return (0, i.jsx)(o.A, {
                         guild: _,
-                        markAsDismissed: () => D(b.i.UNKNOWN)
+                        markAsDismissed: () => D(v.i.UNKNOWN)
                     });
                 case r.M.GAME_CLAIM_COACHMARK:
                     return (0, i.jsx)(u.A, {

@@ -3,9 +3,9 @@ n.d(t, {
     D: () => c
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    s = n.n(r),
     a = n(837381),
     o = n(193663),
     u = n(576420),
@@ -15,7 +15,7 @@ function c(e) {
     let {
         listItemId: t,
         isVisuallyOffline: n = !1,
-        recentlyAddedTimestampMs: l = null,
+        recentlyAddedTimestampMs: r = null,
         outerRef: c,
         leftIndicator: h,
         avatar: g,
@@ -28,13 +28,13 @@ function c(e) {
         onMouseLeave: _,
         className: S,
         rowInnerClassName: x
-    } = e, T = (0, a.rm)(t), [C, N] = r.useState(!1), v = r.useRef(null), [y, M] = r.useState(!1);
-    return r.useEffect(() => {
-        if (null == l || v.current === l) return;
-        v.current = l;
+    } = e, T = (0, a.rm)(t), [N, C] = l.useState(!1), v = l.useRef(null), [y, M] = l.useState(!1);
+    return l.useEffect(() => {
+        if (null == r || v.current === r) return;
+        v.current = r;
         let e = Date.now();
-        l > e || e - l > u.WS || M(!0)
-    }, [l]), (0, i.jsxs)("div", {
+        r > e || e - r > u.WS || M(!0)
+    }, [r]), (0, i.jsxs)("div", {
         ref: c,
         className: s()(d.nM, S, {
             [d.SS]: n
@@ -51,19 +51,19 @@ function c(e) {
             onClick: I,
             onContextMenu: E,
             onMouseEnter: e => {
-                N(!0), p?.(e)
+                C(!0), p?.(e)
             },
             onMouseLeave: e => {
-                N(!1), _?.(e)
+                C(!1), _?.(e)
             },
             avatar: g,
             name: m,
             subText: f,
-            hovered: C,
+            hovered: N,
             ...T,
             children: null != A ? (0, i.jsx)("div", {
                 className: d.cm,
-                children: A(C)
+                children: A(N)
             }) : null
         })]
     })

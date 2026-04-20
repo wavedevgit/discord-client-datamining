@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(239365),
     S = n(178629),
     x = n(701508),
-    v = n(979590),
-    b = n(153527),
+    b = n(979590),
+    v = n(153527),
     y = n(783531),
     O = n(334465),
     L = n(318346),
@@ -83,7 +83,7 @@ function e_(e) {
         children: [a, (0, i.jsxs)(y.A, {
             onScroll: s,
             ref: o,
-            children: [r && t, (0, i.jsxs)(v.A, {
+            children: [r && t, (0, i.jsxs)(b.A, {
                 className: er.Jo,
                 innerClassName: er.FG,
                 children: [!r && t, n]
@@ -99,7 +99,7 @@ function em(e) {
         tabs: l,
         endContent: a
     } = e;
-    return (0, i.jsx)(b.S, {
+    return (0, i.jsx)(v.S, {
         selectedTabId: t,
         handleTransition: n,
         tabs: l,
@@ -264,17 +264,17 @@ let eC = function(e) {
     let {
         topLevelRoute: t
     } = e, n = (0, s.zy)(), a = (0, s.W6)(), _ = l.useMemo(() => (0, O.B)(n.pathname, en.BVt.QUEST_HOME_DEPRECATED)?.isExact === !0, [n.pathname]), C = (0, c.bG)([E.A], () => E.A.getState("quests")), {
-        selectedTab: v,
-        onSelectTab: b,
+        selectedTab: b,
+        onSelectTab: v,
         tabs: y
     } = (0, ee.J)({
         withClaimedQuestsTab: !_
     });
     l.useLayoutEffect(() => {
-        _ && v === H.NC.CLAIMED && k.A.setState({
+        _ && b === H.NC.CLAIMED && k.A.setState({
             tab: H.NC.ALL
         })
-    }, [_, v]);
+    }, [_, b]);
     let {
         onScroll: D
     } = (0, S.G)(), M = V.A.getState().getUtmCurrentContext(), w = (0, $.W)(e => e.registerAssetLoad), B = l.useRef(M);
@@ -292,10 +292,10 @@ let eC = function(e) {
                 utm_medium_current: e.utmMediumCurrent,
                 utm_campaign_current: e.utmCampaignCurrent,
                 utm_content_current: e.utmContentCurrent,
-                tab: v
+                tab: b
             }
         })
-    }, [v]);
+    }, [b]);
     let {
         enabled: K
     } = (0, R.Z)({
@@ -375,8 +375,8 @@ let eC = function(e) {
                 hash: void 0
             }), X.current?.scrollToTop({
                 animate: !1
-            }), b(e)
-        }, [a, b]);
+            }), v(e)
+        }, [a, v]);
     return (0, i.jsx)(Q.M.Provider, {
         value: {
             onAssetLoadComplete: w
@@ -393,7 +393,7 @@ let eC = function(e) {
                 children: _ ? (0, i.jsx)(e_, {
                     withFullBleedBanner: !0,
                     header: (0, i.jsx)(em, {
-                        selectedTab: v,
+                        selectedTab: b,
                         onSelectTab: ed,
                         tabs: y
                     }),
@@ -428,7 +428,7 @@ let eC = function(e) {
                     })
                 }) : (0, i.jsx)(e_, {
                     header: (0, i.jsx)(em, {
-                        selectedTab: v,
+                        selectedTab: b,
                         onSelectTab: ed,
                         tabs: y,
                         endContent: K && (0, i.jsx)(P.SS, {
@@ -438,13 +438,13 @@ let eC = function(e) {
                             ctaOnClick: es
                         })
                     }),
-                    banner: v === H.NC.ALL && (0, i.jsx)(eI, {
+                    banner: b === H.NC.ALL && (0, i.jsx)(eI, {
                         onAssetLoad: w,
                         onQuestCtaClick: J
                     }),
-                    children: v === H.NC.CLAIMED ? (0, i.jsx)(z.A, {
+                    children: b === H.NC.CLAIMED ? (0, i.jsx)(z.A, {
                         onSelectTab: ed
-                    }) : v === H.NC.PREVIEW_TOOL ? (0, i.jsx)(Y.A, {}) : (0, i.jsx)(q.A, {
+                    }) : b === H.NC.PREVIEW_TOOL ? (0, i.jsx)(Y.A, {}) : (0, i.jsx)(q.A, {
                         ref: Z
                     })
                 })

@@ -24,8 +24,8 @@ var i = n(627968),
     S = n(71393),
     I = n(576705),
     T = n(287809),
-    N = n(488926),
-    v = n(427262),
+    v = n(488926),
+    N = n(427262),
     y = n(314307),
     b = n(234567),
     j = n(652215),
@@ -36,16 +36,16 @@ var i = n(627968),
 function D(e) {
     let {
         channel: t
-    } = e, [n, s] = l.useState(!1), r = (0, g.Ay)(t, !0), D = t.guild_id, O = (0, d.bG)([x.A], () => null != D ? x.A.getSortedRoles(D) : void 0), P = (0, d.bG)([T.default, S.A], () => T.default.getUser(S.A.getGuild(D)?.ownerId)), w = l.useMemo(() => null != O ? O.filter(e => !(0, C.Oy)(e)) : [], [O]), U = l.useMemo(() => o()(w).filter(e => {
+    } = e, [n, s] = l.useState(!1), r = (0, g.Ay)(t, !0), D = t.guild_id, O = (0, d.bG)([x.A], () => null != D ? x.A.getSortedRoles(D) : void 0), P = (0, d.bG)([T.default, S.A], () => T.default.getUser(S.A.getGuild(D)?.ownerId)), w = l.useMemo(() => null != O ? O.filter(e => !(0, C.Oy)(e)) : [], [O]), k = l.useMemo(() => o()(w).filter(e => {
         if (null == D) return !1;
-        let n = N.aH({
+        let n = v.aH({
             forceRoles: {
                 [e.id]: e
             },
             context: t
         });
         return c.X8(n, c.kg(j.xBc.ADMINISTRATOR, j.xBc.VIEW_CHANNEL))
-    }).value(), [t, D, w]), k = (0, d.yK)([T.default], () => {
+    }).value(), [t, D, w]), U = (0, d.yK)([T.default], () => {
         let e = {};
         for (let n of (null != P && (e[P.id] = P), Object.values(t.permissionOverwrites))) {
             if (n.type !== A.r2.MEMBER || null != e[n.id]) continue;
@@ -53,12 +53,12 @@ function D(e) {
             null != t && (e[t.id] = t)
         }
         return o()(e).filter(e => {
-            let n = N.$3({
+            let n = v.$3({
                     permission: j.xBc.ADMINISTRATOR,
                     user: e,
                     context: t
                 }),
-                i = t.permissionOverwrites[e.id] ?? N.x3,
+                i = t.permissionOverwrites[e.id] ?? v.x3,
                 l = c.zy(i.allow, j.xBc.VIEW_CHANNEL);
             return n || l
         }).value()
@@ -100,14 +100,14 @@ function D(e) {
         }) : null, (0, i.jsxs)("div", {
             className: M.ol,
             children: [function() {
-                if (1 !== k.length || U.length > 0) return (0, i.jsx)(u.A, {
+                if (1 !== U.length || k.length > 0) return (0, i.jsx)(u.A, {
                     guildId: t.guild_id,
                     className: M.HD,
                     maxUsers: 5,
-                    users: k
+                    users: U
                 });
-                let e = k[0],
-                    n = v.Ay.getName(e);
+                let e = U[0],
+                    n = N.Ay.getName(e);
                 return (0, i.jsxs)("div", {
                     className: M.HD,
                     children: [(0, i.jsx)(h.euF, {
@@ -126,12 +126,12 @@ function D(e) {
                         children: R.intl.string(R.t.rt0ERW)
                     })]
                 })
-            }(), U.map((e, n) => {
+            }(), k.map((e, n) => {
                 let l = e.colorString ?? j.TpD,
                     s = e.tags?.guild_connections !== void 0;
                 return G ? (0, i.jsx)(b.A, {
                     className: a()(M.JC, {
-                        [M.HV]: n === U.length - 1
+                        [M.HV]: n === k.length - 1
                     }),
                     roleName: e.name,
                     roleColor: l,
@@ -142,7 +142,7 @@ function D(e) {
                     }
                 }, e.id) : (0, i.jsx)(p.A, {
                     className: a()(M.JC, {
-                        [M.HV]: n === U.length - 1
+                        [M.HV]: n === k.length - 1
                     }),
                     roleName: e.name,
                     roleColor: l,

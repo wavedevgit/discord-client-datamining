@@ -25,8 +25,8 @@ var i = n(989349),
     N = n(543465),
     S = n(287809),
     x = n(427262),
-    v = n(54570),
-    b = n(8880);
+    b = n(54570),
+    v = n(8880);
 n(75804);
 var y = n(652215),
     O = n(985018);
@@ -72,12 +72,12 @@ function w() {
 }
 async function U(e, t, n, i, l) {
     let a = s.aW(e, n);
-    null !== a && (null == P && w(), t ? await (0, v.pr)() : R?.removeEventListener("end", v.pr), a.addEventListener("end", v.pr), null != i && a.addEventListener("start", i), null != l && a.addEventListener("end", l), R = a, s.wz(a, P))
+    null !== a && (null == P && w(), t ? await (0, b.pr)() : R?.removeEventListener("end", b.pr), a.addEventListener("end", b.pr), null != i && a.addEventListener("start", i), null != l && a.addEventListener("end", l), R = a, s.wz(a, P))
 }
 
 function G(e, t, n, i, l) {
     U(e, t, l, () => {
-        (0, v.kC)(n, i)
+        (0, b.kC)(n, i)
     })
 }
 
@@ -93,7 +93,7 @@ function k(e) {
 }
 
 function V() {
-    return null !== R && R.removeEventListener("end", v.pr), s._X(), R = null, !0
+    return null !== R && R.removeEventListener("end", b.pr), s._X(), R = null, !0
 }
 
 function B(e) {
@@ -136,8 +136,8 @@ function F(e) {
     let {
         id: t,
         channelId: n
-    } = e, i = b.A.currentMessage;
-    return null != i && t === i.messageId && n === i.channelId && ((0, v.pr)(), !0)
+    } = e, i = v.A.currentMessage;
+    return null != i && t === i.messageId && n === i.channelId && ((0, b.pr)(), !0)
 }
 
 function Y() {
@@ -147,8 +147,8 @@ function Y() {
 function W(e) {
     let {
         channelId: t
-    } = e, n = b.A.currentMessage;
-    null != n && n.channelId !== t && (0, v.pr)()
+    } = e, n = v.A.currentMessage;
+    null != n && n.channelId !== t && (0, b.pr)()
 }
 let K = {
     init() {

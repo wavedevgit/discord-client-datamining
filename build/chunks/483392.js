@@ -1,24 +1,24 @@
 /** chunk id: 483392 params = (module,exports,require) **/
 n.d(t, {
-    C: () => l
+    C: () => r
 });
 var i = n(627968);
 n(64700);
-var r = n(397927);
+var l = n(397927);
 
-function l(e) {
+function r(e) {
     let {
         isCollapsed: t,
         size: n = "md",
-        className: l
+        className: r
     } = e;
-    return t ? (0, i.jsx)(r._BQ, {
+    return t ? (0, i.jsx)(l._BQ, {
         size: n,
         color: "currentColor",
-        className: l
-    }) : (0, i.jsx)(r.abt, {
+        className: r
+    }) : (0, i.jsx)(l.abt, {
         size: n,
         color: "currentColor",
-        className: l
+        className: r
     })
 }

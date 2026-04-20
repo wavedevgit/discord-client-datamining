@@ -1,6 +1,6 @@
 /** chunk id: 914835 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => v
 });
 var i = n(627968),
     l = n(64700),
@@ -46,7 +46,7 @@ function I(e) {
         })
     }
     let T = C?.nick ?? f.Ay.getName(E) ?? "???",
-        N = C?.colorString;
+        v = C?.colorString;
     return null == E ? (0, i.jsx)("span", {
         className: a()(S.eM, S.sL),
         children: T
@@ -67,7 +67,7 @@ function I(e) {
                 onContextMenu: I,
                 children: (0, i.jsx)(o.gyj, {
                     name: T,
-                    colorString: N ?? null,
+                    colorString: v ?? null,
                     colorStrings: x
                 })
             })
@@ -106,7 +106,7 @@ function T(e) {
     })
 }
 
-function N(e) {
+function v(e) {
     let {
         channel: t
     } = e, n = (0, m.gU)(t) ?? o.ysw, l = (0, h.Ay)(t);

@@ -61,7 +61,7 @@ let x = e => {
         height: d
     } = (0, s.Ay)(), A = (0, a.bG)([p.A], () => p.A.getRequest(t)), h = (0, a.bG)([u.A], () => u.A.getGuild(t)), {
         hasFetchedRequestToJoinGuilds: x,
-        guildPreviewDisabled: v
+        guildPreviewDisabled: b
     } = (0, a.cf)([p.A], () => ({
         hasFetchedRequestToJoinGuilds: p.A.hasFetchedRequestToJoinGuilds,
         guildPreviewDisabled: p.A.getJoinRequestGuild(t)
@@ -71,7 +71,7 @@ let x = e => {
     }, [h, t]), l.useEffect(() => {
         x || _.A.fetchRequestToJoinGuilds()
     }, [x]);
-    let b = l.useCallback(() => {
+    let v = l.useCallback(() => {
             _.A.removeGuildJoinRequest(t), (0, c.pX)(C.BVt.ME)
         }, [t]),
         y = (e, t) => () => {
@@ -87,16 +87,16 @@ let x = e => {
             await _.A.resetGuildJoinRequest(t), (0, m.Ze)(t)
         }, L = e => {
             e ? y(T.intl.format(T.t["9ZezpN"], {
-                name: v?.name
-            }), b)() : b()
+                name: b?.name
+            }), v)() : v()
         }, R = y(T.intl.format(T.t.fJwWVt, {
-            name: v?.name
-        }), b);
+            name: b?.name
+        }), v);
     return (0, i.jsxs)("div", {
         className: N.MY,
         ref: n,
         children: [(0, i.jsx)(S, {
-            guild: v,
+            guild: b,
             height: d,
             width: o
         }), (0, i.jsx)("div", {
@@ -107,7 +107,7 @@ let x = e => {
                     case g.B5.SUBMITTED:
                         return (0, i.jsx)(f.A, {
                             onWithdrawApplication: () => L(!0),
-                            guild: v
+                            guild: b
                         });
                     case g.B5.REJECTED:
                         return (0, i.jsx)(I.A, {
@@ -116,13 +116,13 @@ let x = e => {
                             confirmText: T.intl.string(T.t.g9tK0o),
                             onWithdrawApplication: L,
                             rejectionReason: A.rejectionReason,
-                            guild: v
+                            guild: b
                         });
                     default:
                         return (0, i.jsx)(E.K, {
                             onDiscardApplication: R,
                             onContinueApplication: () => (0, m.Ze)(t),
-                            guild: v
+                            guild: b
                         })
                 }
             })()

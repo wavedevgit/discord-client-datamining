@@ -1,26 +1,26 @@
 /** chunk id: 535973 params = (module,exports,require) **/
 n.d(t, {
-    I: () => l,
+    I: () => r,
     s: () => s
 });
-var i, r = n(64700),
-    l = ((i = {}).BEFORE = "before", i.AFTER = "after", i);
+var i, l = n(64700),
+    r = ((i = {}).BEFORE = "before", i.AFTER = "after", i);
 
 function s(e) {
     let {
         groupIds: t,
         isDisabled: n,
         onCommitNewOrder: i
-    } = e, l = r.useRef(t);
-    r.useEffect(() => {
-        l.current = t
+    } = e, r = l.useRef(t);
+    l.useEffect(() => {
+        r.current = t
     }, [t]);
-    let [s, a] = r.useState({
+    let [s, a] = l.useState({
         draggedGroupId: null,
         dropTargetGroupId: null,
         dropTargetPosition: null,
         didCommitDrop: !1
-    }), o = r.useRef(s), u = r.useCallback(e => {
+    }), o = l.useRef(s), u = l.useCallback(e => {
         a(t => {
             let n = {
                 ...t,
@@ -28,27 +28,27 @@ function s(e) {
             };
             return o.current = n, n
         })
-    }, []), d = r.useCallback((e, t) => {
+    }, []), d = l.useCallback((e, t) => {
         let {
-            draggedGroupId: r,
+            draggedGroupId: l,
             didCommitDrop: s
         } = o.current;
-        if (s || n || null == r) return;
+        if (s || n || null == l) return;
         let d = function(e) {
             let {
                 groupIds: t,
                 draggedGroupId: n,
                 targetGroupId: i,
-                position: r
-            } = e, l = t.indexOf(n), s = t.indexOf(i);
-            if (-1 === l || -1 === s || n === i) return null;
+                position: l
+            } = e, r = t.indexOf(n), s = t.indexOf(i);
+            if (-1 === r || -1 === s || n === i) return null;
             let a = [...t];
-            a.splice(l, 1);
-            let o = l < s ? s - 1 : s;
-            return a.splice("before" === r ? o : o + 1, 0, n), a
+            a.splice(r, 1);
+            let o = r < s ? s - 1 : s;
+            return a.splice("before" === l ? o : o + 1, 0, n), a
         }({
-            groupIds: l.current,
-            draggedGroupId: r,
+            groupIds: r.current,
+            draggedGroupId: l,
             targetGroupId: e,
             position: t
         });
@@ -60,7 +60,7 @@ function s(e) {
             dropTargetGroupId: null,
             dropTargetPosition: null
         }))
-    }, [n, i, u]), c = r.useCallback((e, t) => ({
+    }, [n, i, u]), c = l.useCallback((e, t) => ({
         draggable: t && !n,
         "data-dnd-drag-handle": "true",
         onDragStart: i => {
@@ -77,10 +77,10 @@ function s(e) {
             } = o.current;
             if (n || null == i || i === e) return;
             t.preventDefault(), t.dataTransfer.dropEffect = "move";
-            let r = t.currentTarget.getBoundingClientRect();
+            let l = t.currentTarget.getBoundingClientRect();
             u({
                 dropTargetGroupId: e,
-                dropTargetPosition: t.clientY < r.top + r.height / 2 ? "before" : "after"
+                dropTargetPosition: t.clientY < l.top + l.height / 2 ? "before" : "after"
             })
         },
         onDrop: t => {
@@ -89,8 +89,8 @@ function s(e) {
             } = o.current;
             if (n || null == i || i === e) return;
             t.preventDefault();
-            let r = t.currentTarget.getBoundingClientRect();
-            d(e, t.clientY < r.top + r.height / 2 ? "before" : "after")
+            let l = t.currentTarget.getBoundingClientRect();
+            d(e, t.clientY < l.top + l.height / 2 ? "before" : "after")
         },
         onDragEnd: () => {
             let {

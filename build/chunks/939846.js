@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(742589),
     S = n(831062),
     x = n(378570),
-    v = n(138298),
-    b = n(940382),
+    b = n(138298),
+    v = n(940382),
     y = n(210714),
     O = n(544028),
     L = n(780964),
@@ -151,7 +151,7 @@ function en(e) {
         pageWidth: t,
         onSidebarResize: n
     } = e, l = (0, d.bG)([P.Ay], () => P.Ay.getSidebarState(P.fe)), a = (0, d.bG)([D.A], () => D.A.getChannel(l?.channelId));
-    if (null == l || l.type !== b.PE.VIEW_MESSAGE_REQUEST || null == a || !a.isPrivate()) return null;
+    if (null == l || l.type !== v.PE.VIEW_MESSAGE_REQUEST || null == a || !a.isPrivate()) return null;
     let r = t - Q.ItT;
     return (0, i.jsx)(p.A, {
         sidebarType: p.X.MessageRequestSidebar,
@@ -234,7 +234,7 @@ let ea = (0, _.A)(function(e) {
         [c, u] = l.useState(!1),
         _ = (0, d.bG)([P.Ay], () => {
             let e = P.Ay.getSidebarState(P.fe);
-            return null != e && e.type === b.PE.VIEW_MESSAGE_REQUEST ? e : null
+            return null != e && e.type === v.PE.VIEW_MESSAGE_REQUEST ? e : null
         }),
         g = _?.channelId,
         p = null != _,
@@ -242,7 +242,7 @@ let ea = (0, _.A)(function(e) {
         I = (0, w.A)(g),
         C = l.useRef(null);
     l.useEffect(() => {
-        null != g && !E && I && p && ((0, x.iN)(g), v.A.closeChannelSidebar(P.fe))
+        null != g && !E && I && p && ((0, x.iN)(g), b.A.closeChannelSidebar(P.fe))
     }, [g, I, p, E]);
     let [T, L] = l.useState($.zz.REQUESTS), R = e => {
         L(e)

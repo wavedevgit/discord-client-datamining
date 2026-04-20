@@ -25,8 +25,8 @@ var i = n(627968),
     S = n(203982),
     I = n(975571),
     T = n(723702),
-    N = n(661191),
-    v = n(314307),
+    v = n(661191),
+    N = n(314307),
     y = n(652215),
     b = n(936649),
     j = n(985018),
@@ -75,10 +75,10 @@ function L(e) {
             channel: O
         } = e,
         P = (0, o.bG)([E.A], () => null != O ? E.A.getGuild(O.getGuildId()) : null, [O]),
-        w = null != P && N.default.extractTimestamp(P.id) < Date.now() - y.NOr,
-        U = (0, o.bG)([f.default], () => P?.ownerId === f.default.getId(), [P]),
+        w = null != P && v.default.extractTimestamp(P.id) < Date.now() - y.NOr,
+        k = (0, o.bG)([f.default], () => P?.ownerId === f.default.getId(), [P]),
         {
-            canInvite: k,
+            canInvite: U,
             canManageGuild: G,
             canMessage: F
         } = (0, A.Sk)(O, P),
@@ -207,7 +207,7 @@ function L(e) {
             })()
         }, [P?.id]), null == P) return null;
     let en = [];
-    w || (k && en.push((0, i.jsx)(r.A.div, {
+    w || (U && en.push((0, i.jsx)(r.A.div, {
         className: R.cW,
         style: $ ? {
             opacity: X[en.length]
@@ -263,10 +263,10 @@ function L(e) {
             onClick: q
         })
     }, "addapp")));
-    let ei = U ? j.intl.string(j.t["1ach9C"]) : j.intl.string(j.t["ezm+/j"]);
+    let ei = k ? j.intl.string(j.t["1ach9C"]) : j.intl.string(j.t["ezm+/j"]);
     w && (ei = j.intl.string(j.t["gwyU/J"]));
     let el = `${I.A.getArticleURL(y.MVz.GUILD_GETTING_STARTED)}?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm`;
-    return (0, i.jsx)(v.Ay, {
+    return (0, i.jsx)(N.Ay, {
         channelId: O.id,
         children: (0, i.jsx)("div", {
             className: R.kL,

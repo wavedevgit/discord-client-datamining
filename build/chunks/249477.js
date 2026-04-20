@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(668267),
     S = n(379587),
     x = n(5180),
-    v = n(953384),
-    b = n(973522),
+    b = n(953384),
+    v = n(973522),
     y = n(15285),
     O = n(142120),
     L = n(442187),
@@ -80,11 +80,11 @@ async function ed(e) {
         exe: p,
         distributor: E,
         rawExePath: I
-    } = (0, b.wH)(t), f = l.enabledLegacy || l.enabledOOP, C = j.x.legacyEnabled || j.x.oopEnabled, T = l.source;
+    } = (0, v.wH)(t), f = l.enabledLegacy || l.enabledOOP, C = j.x.legacyEnabled || j.x.oopEnabled, T = l.source;
     en.default.track(er.HAw.LAUNCH_GAME, {
         game: m,
         game_id: g,
-        verified: null != n && (0, b.PQ)(I, n?.executables),
+        verified: null != n && (0, v.PQ)(I, n?.executables),
         elevated: t.elevated,
         is_launcher: t?.isLauncher ?? !1,
         game_platform: er.yTV.DESKTOP,
@@ -129,7 +129,7 @@ async function ec(e) {
         distributor: t.distributor,
         detection_method: "verified_non_game_application",
         current_user_status: Q.A.getStatus(),
-        executable_path: (0, b.Ic)(t.exePath),
+        executable_path: (0, v.Ic)(t.exePath),
         voice_channel_id: i,
         voice_channel_type: l,
         voice_channel_bitrate: a,
@@ -213,7 +213,7 @@ class eu extends l.PureComponent {
         if (e.runningGame !== o && null != o && !o.isLauncher && (!p || T)) {
             let {
                 gameId: e
-            } = (0, b.wH)(o), a = void 0 !== e ? H.A.getDetectableGame(e) : null, r = y.Ay.getOverrideForGame(o), s = Y.A.getGuildIds(), u = V.JG.getSetting(), A = s.filter(e => !u.includes(e)).slice(0, 200), h = null;
+            } = (0, v.wH)(o), a = void 0 !== e ? H.A.getDetectableGame(e) : null, r = y.Ay.getOverrideForGame(o), s = Y.A.getGuildIds(), u = V.JG.getSetting(), A = s.filter(e => !u.includes(e)).slice(0, 200), h = null;
             h = null != r ? "custom_override" : null != a ? "verified_game" : "launcher";
             let _ = w.default.getTrackedGameByPid(o.pid),
                 m = (0, y.hw)(o),
@@ -244,7 +244,7 @@ class eu extends l.PureComponent {
             }
         }
         if (e.runningNonGame !== u && u?.id != null && e.runningNonGame?.id !== u.id) {
-            let e = v.A.getById(u.id);
+            let e = b.A.getById(u.id);
             null != e && ec({
                 runningNonGame: u,
                 nonGameApplication: e,
@@ -306,7 +306,7 @@ class eu extends l.PureComponent {
 }
 
 function eA() {
-    let [e, t] = (0, o.yK)([z.A], () => [z.A.getVoiceChannelId(), z.A.getChannelId()], []), n = (0, o.bG)([B.A], () => B.A.getChannel(t), [t]), a = (0, o.bG)([f.A], () => n?.id != null && f.A.getChatOpen(n.id), [n]), r = n?.nsfw, s = (0, o.bG)([B.A], () => B.A.getChannel(e), [e]), d = (0, o.bG)([$.A], () => $.A.getGuildId(), []), c = (0, o.bG)([Y.A], () => Y.A.getGuild(d), [d]), u = (0, o.bG)([Z.default], () => Z.default.getCurrentUser(), []), E = (0, o.bG)([F.Ay], () => null != u && null != d && (F.Ay.getMember(d, u.id)?.isPending ?? !1), [u, d]), I = (0, o.bG)([ee.Ay], () => ee.Ay.getState().section, []), C = (0, o.bG)([J.A], () => J.A.getHomeLink(), []), v = (0, o.bG)([O.A], () => O.A.isConnected(), []), [b, R] = (0, o.yK)([W.Ay], () => [W.Ay.isVideoEnabled(), W.Ay.isScreenSharing()], []), j = (0, o.bG)([Q.A], () => Q.A.getPrimaryActivity(), []), {
+    let [e, t] = (0, o.yK)([z.A], () => [z.A.getVoiceChannelId(), z.A.getChannelId()], []), n = (0, o.bG)([B.A], () => B.A.getChannel(t), [t]), a = (0, o.bG)([f.A], () => n?.id != null && f.A.getChatOpen(n.id), [n]), r = n?.nsfw, s = (0, o.bG)([B.A], () => B.A.getChannel(e), [e]), d = (0, o.bG)([$.A], () => $.A.getGuildId(), []), c = (0, o.bG)([Y.A], () => Y.A.getGuild(d), [d]), u = (0, o.bG)([Z.default], () => Z.default.getCurrentUser(), []), E = (0, o.bG)([F.Ay], () => null != u && null != d && (F.Ay.getMember(d, u.id)?.isPending ?? !1), [u, d]), I = (0, o.bG)([ee.Ay], () => ee.Ay.getState().section, []), C = (0, o.bG)([J.A], () => J.A.getHomeLink(), []), b = (0, o.bG)([O.A], () => O.A.isConnected(), []), [v, R] = (0, o.yK)([W.Ay], () => [W.Ay.isVideoEnabled(), W.Ay.isScreenSharing()], []), j = (0, o.bG)([Q.A], () => Q.A.getPrimaryActivity(), []), {
         currentGame: M,
         currentNonGame: w
     } = (0, o.cf)([y.Ay], () => ({
@@ -318,8 +318,8 @@ function eA() {
         selectedGuildId: d,
         friendsTabSection: I,
         homeLink: C,
-        connected: v,
-        videoEnabled: b,
+        connected: b,
+        videoEnabled: v,
         isScreenSharing: R,
         voiceChannelId: s?.id,
         voiceChannelGuildId: s?.getGuildId(),

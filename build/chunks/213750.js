@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(979286),
     S = n(335657),
     x = n(252362),
-    v = n(540063),
-    b = n(870308),
+    b = n(540063),
+    v = n(870308),
     y = n(998694),
     O = n(158216),
     L = n(758836),
@@ -77,16 +77,16 @@ let M = e => {
             ...f
         } = e, C = (0, s.rm)("shop"), T = p.A.HOME_PAGE_SHOP_TAB, {
             analyticsLocations: S
-        } = (0, E.Ay)(T), [x, v] = l.useState(!1), b = l.useCallback(() => {
+        } = (0, E.Ay)(T), [x, b] = l.useState(!1), v = l.useCallback(() => {
             void 0 !== r && r(), void 0 !== o && (0, N.Cz)({
                 tab: o,
                 analyticsLocations: S,
                 analyticsSource: T
-            }), v(!0), (0, N.Sw)({
+            }), b(!0), (0, N.Sw)({
                 analyticsSource: T,
                 analyticsLocations: S
             })
-        }, [T, S, r, v, o]), y = R.BVt.COLLECTIBLES_SHOP;
+        }, [T, S, r, b, o]), y = R.BVt.COLLECTIBLES_SHOP;
         return (0, i.jsxs)(i.Fragment, {
             children: [x && (0, i.jsx)(w, {}), (0, i.jsx)(m.z9, {
                 showHoverGradient: A ?? !1,
@@ -102,7 +102,7 @@ let M = e => {
                 hoverGradientEnd: I,
                 onMouseEnter: d,
                 onMouseLeave: c,
-                onClick: b,
+                onClick: v,
                 children: u
             })]
         })
@@ -264,7 +264,7 @@ let M = e => {
                 ...n,
                 onClick: () => t(P.i.TAKE_ACTION),
                 listItemRef: a
-            }), (0, i.jsx)(v.A, {
+            }), (0, i.jsx)(b.A, {
                 targetElementRef: a,
                 onClick: () => t(P.i.TAKE_ACTION),
                 onRequestClose: () => t(P.i.USER_DISMISS)
@@ -280,7 +280,7 @@ let M = e => {
         } = e, {
             shopButtonDisplayOptions: r,
             dismissShopButtonDC: s
-        } = (0, b.A)(), o = !(0, h.ueM)(), [d, u] = (0, I.kn)(o ? [c.M.WISHLIST_SHOP_BUTTON_POPOVER] : []), A = {
+        } = (0, v.A)(), o = !(0, h.ueM)(), [d, u] = (0, I.kn)(o ? [c.M.WISHLIST_SHOP_BUTTON_POPOVER] : []), A = {
             selected: t,
             locationState: l,
             onClick: () => {

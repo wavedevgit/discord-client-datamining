@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(596719),
     S = n(769015),
     x = n(290987),
-    v = n(544028),
-    b = n(189081),
+    b = n(544028),
+    v = n(189081),
     y = n(194871),
     O = n(966846),
     L = n(531685),
@@ -617,15 +617,15 @@ function Z(e, t, n, i) {
             branchId: s,
             state: d,
             application: o,
-            libraryApplication: b.A.getLibraryApplication(r, s),
+            libraryApplication: v.A.getLibraryApplication(r, s),
             finished: t,
             index: a
         }), e
     }, [])
 }
-let J = (0, f.A)(c.Ay.connectStores([C.A, y.A, O.A, v.A, L.A], () => ({
+let J = (0, f.A)(c.Ay.connectStores([C.A, y.A, O.A, b.A, L.A], () => ({
     applications: [...Z(O.A.activeItems, !1, C.A, y.A), ...Z(O.A.finishedItems, !0, C.A, y.A)],
     paused: O.A.paused,
     isFocused: L.A.isFocused(),
-    theme: v.A.theme
+    theme: b.A.theme
 }))((0, I.A)(X)))

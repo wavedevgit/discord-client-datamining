@@ -27,12 +27,12 @@ function A(e) {
         onClose: t
     } = e, {
         analyticsLocations: s
-    } = (0, a.Ay)(l.A.GO_LIVE_MODAL_V2), A = (0, x.St)("hd_streaming_upsell_ribbon"), y = (0, d.V)(), S = (0, c.O)(), C = y?.subscription_trial?.sku_id === _.pe.TIER_2 || (0, f.U9)(S, _.pe.TIER_2), b = j.intl.string(g.default["+f+cqk"]);
-    return C && (null != y ? b = (0, p.FY)({
-        intervalType: y?.subscription_trial?.interval,
-        intervalCount: y?.subscription_trial?.interval_count
-    }) : null != S && (b = j.intl.formatToPlainString(j.t.bkQ4bH, {
-        percent: S.discount.amount
+    } = (0, a.Ay)(l.A.GO_LIVE_MODAL_V2), A = (0, x.St)("hd_streaming_upsell_ribbon"), S = (0, d.V)(), y = (0, c.O)(), C = S?.subscription_trial?.sku_id === _.pe.TIER_2 || (0, f.U9)(y, _.pe.TIER_2), b = j.intl.string(g.default["+f+cqk"]);
+    return C && (null != S ? b = (0, p.FY)({
+        intervalType: S?.subscription_trial?.interval,
+        intervalCount: S?.subscription_trial?.interval_count
+    }) : null != y && (b = j.intl.formatToPlainString(j.t.bkQ4bH, {
+        percent: y.discount.amount
     }))), (0, r.jsxs)("div", {
         className: v.zr,
         children: [(0, r.jsxs)(n.Text, {

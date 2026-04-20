@@ -1,7 +1,7 @@
 /** chunk id: 854514 params = (module,exports,require) **/
 n.d(t, {
     Ae: () => x,
-    Ay: () => b,
+    Ay: () => v,
     Hk: () => y
 });
 var i = n(627968),
@@ -33,7 +33,7 @@ function x() {
     })
 }
 
-function v(e) {
+function b(e) {
     let {
         heroImage: t,
         heroVideo: n
@@ -97,7 +97,7 @@ function v(e) {
     })
 }
 
-function b(e) {
+function v(e) {
     let {
         hero: t,
         onQuestCtaClick: n
@@ -161,7 +161,7 @@ function b(e) {
                     variant: "color-mix"
                 })]
             }),
-            background: null != t.heroImage ? (0, i.jsx)(v, {
+            background: null != t.heroImage ? (0, i.jsx)(b, {
                 heroImage: t.heroImage,
                 heroVideo: t.heroVideo
             }) : null

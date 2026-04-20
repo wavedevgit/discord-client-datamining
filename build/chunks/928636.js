@@ -24,8 +24,8 @@ var i, l = n(627968),
     N = n(90644),
     S = n(960076),
     x = n(847177),
-    v = n(359549),
-    b = n(793574),
+    b = n(359549),
+    v = n(793574),
     y = n(688810),
     O = n(139286),
     L = n(362490),
@@ -214,7 +214,7 @@ let ed = [14, 14, 12, 12, 10, 8, 6],
             name: a
         } = t, {
             data: r
-        } = (0, R.YY)(i), s = (0, v.A)({
+        } = (0, R.YY)(i), s = (0, b.A)({
             application: r,
             analyticsLocations: n
         }), o = (0, G.JZ)(u.M.CLOUD_PLAY_NEW_BADGE), d = (0, W.L)(i);
@@ -425,7 +425,7 @@ eT.Header = eC, eT.Body = e => {
         activity: r
     } = e, {
         analyticsLocations: s
-    } = (0, y.Ay)(b.A.NOW_PLAYING_ITEM_GAME_SECTION);
+    } = (0, y.Ay)(v.A.NOW_PLAYING_ITEM_GAME_SECTION);
     return (0, l.jsxs)(eh, {
         children: [(0, l.jsxs)("div", {
             className: eo.yn,
@@ -453,7 +453,7 @@ eT.Header = eC, eT.Body = e => {
         user: a
     } = e, {
         analyticsLocations: r
-    } = (0, y.Ay)(b.A.NOW_PLAYING_ITEM_RICH_PRESENCE_SECTION), {
+    } = (0, y.Ay)(v.A.NOW_PLAYING_ITEM_RICH_PRESENCE_SECTION), {
         data: o
     } = (0, R.YY)(t.application_id), {
         assets: d,
@@ -465,7 +465,7 @@ eT.Header = eC, eT.Body = e => {
     } = eg({
         activity: t,
         user: a
-    }), _ = (0, M.C4)(o)?.src ?? n(960648), m = (0, v.A)({
+    }), _ = (0, M.C4)(o)?.src ?? n(960648), m = (0, b.A)({
         application: o,
         analyticsLocations: r
     });

@@ -1,7 +1,7 @@
 /** chunk id: 431384 params = (module,exports,require) **/
 "use strict";
 r.d(t, {
-    A: () => O
+    A: () => A
 });
 var a = r(26412),
     n = r(658),
@@ -11,16 +11,16 @@ var a = r(26412),
     c = r(761847),
     l = r(416886),
     u = r(25701),
-    b = r(1139),
-    f = r(64700),
+    f = r(1139),
+    b = r(64700),
     d = r(223108),
     h = r.n(d),
     p = r(708906),
-    y = r(770237),
-    v = r(380883),
-    g = r(257341);
+    m = r(770237),
+    g = r(380883),
+    y = r(257341);
 
-function m(e, t) {
+function v(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
         var a = Object.getOwnPropertySymbols(e);
@@ -34,21 +34,21 @@ function m(e, t) {
 function w(e) {
     for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {};
-        t % 2 ? m(Object(r), !0).forEach(function(t) {
+        t % 2 ? v(Object(r), !0).forEach(function(t) {
             (0, l.A)(e, t, r[t])
-        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : m(Object(r)).forEach(function(t) {
+        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : v(Object(r)).forEach(function(t) {
             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
         })
     }
     return e
 }
 
-function A(e) {
+function M(e) {
     return {
         expanded: !e.isCircular && e.shouldExpandNode(e.keyPath, e.data, e.level)
     }
 }
-var O = function(e) {
+var A = function(e) {
     (0, s.A)(d, e);
     var t, r = (t = function() {
         if ("u" < typeof Reflect || !Reflect.construct || Reflect.construct.sham) return !1;
@@ -69,13 +69,13 @@ var O = function(e) {
             t.props.expandable && t.setState({
                 expanded: !t.state.expanded
             })
-        }), t.state = A(e), t
+        }), t.state = M(e), t
     }
     return (0, n.A)(d, [{
         key: "UNSAFE_componentWillReceiveProps",
         value: function(e) {
-            var t = A(e);
-            A(this.props).expanded !== t.expanded && this.setState(t)
+            var t = M(e);
+            M(this.props).expanded !== t.expanded && this.setState(t)
         }
     }, {
         key: "shouldComponentUpdate",
@@ -100,8 +100,8 @@ var O = function(e) {
                 l = e.keyPath,
                 d = e.labelRenderer,
                 h = e.expandable,
-                m = this.state.expanded,
-                A = m || o && 0 === this.props.level ? function e(t, r, a) {
+                v = this.state.expanded,
+                M = v || o && 0 === this.props.level ? function e(t, r, a) {
                     var n = t.nodeType,
                         o = t.data,
                         s = t.collectionLimit,
@@ -110,8 +110,8 @@ var O = function(e) {
                         l = t.postprocessValue,
                         d = t.sortObjectKeys,
                         h = [];
-                    return (0, y.A)(n, o, d, s, r, a).forEach(function(r) {
-                        if (void 0 !== r.to) h.push(f.createElement(g.A, (0, b.A)({}, t, {
+                    return (0, m.A)(n, o, d, s, r, a).forEach(function(r) {
+                        if (void 0 !== r.to) h.push(b.createElement(y.A, (0, f.A)({}, t, {
                             key: "ItemRange--".concat(r.from, "-").concat(r.to),
                             from: r.from,
                             to: r.to,
@@ -121,7 +121,7 @@ var O = function(e) {
                             var a = r.key,
                                 n = r.value,
                                 o = -1 !== i.indexOf(n);
-                            h.push(f.createElement(v.A, (0, b.A)({}, t, {
+                            h.push(b.createElement(g.A, (0, f.A)({}, t, {
                                 postprocessValue: l,
                                 collectionLimit: s,
                                 key: "Node--".concat(a),
@@ -136,24 +136,24 @@ var O = function(e) {
                 }(w(w({}, this.props), {}, {
                     level: this.props.level + 1
                 })) : null,
-                O = t(a, n, f.createElement("span", i("nestedNodeItemType", m), r), s(n, c), l),
-                k = [l, a, m, h];
-            return o ? f.createElement("li", i.apply(void 0, ["rootNode"].concat(k)), f.createElement("ul", i.apply(void 0, ["rootNodeChildren"].concat(k)), A)) : f.createElement("li", i.apply(void 0, ["nestedNode"].concat(k)), h && f.createElement(p.A, {
+                A = t(a, n, b.createElement("span", i("nestedNodeItemType", v), r), s(n, c), l),
+                O = [l, a, v, h];
+            return o ? b.createElement("li", i.apply(void 0, ["rootNode"].concat(O)), b.createElement("ul", i.apply(void 0, ["rootNodeChildren"].concat(O)), M)) : b.createElement("li", i.apply(void 0, ["nestedNode"].concat(O)), h && b.createElement(p.A, {
                 styling: i,
                 nodeType: a,
-                expanded: m,
+                expanded: v,
                 onClick: this.handleClick
-            }), f.createElement("label", (0, b.A)({}, i.apply(void 0, [
+            }), b.createElement("label", (0, f.A)({}, i.apply(void 0, [
                 ["label", "nestedNodeLabel"]
-            ].concat(k)), {
+            ].concat(O)), {
                 onClick: this.handleClick
-            }), d.apply(void 0, k)), f.createElement("span", (0, b.A)({}, i.apply(void 0, ["nestedNodeItemString"].concat(k)), {
+            }), d.apply(void 0, O)), b.createElement("span", (0, f.A)({}, i.apply(void 0, ["nestedNodeItemString"].concat(O)), {
                 onClick: this.handleClick
-            }), O), f.createElement("ul", i.apply(void 0, ["nestedNodeChildren"].concat(k)), A))
+            }), A), b.createElement("ul", i.apply(void 0, ["nestedNodeChildren"].concat(O)), M))
         }
     }]), d
-}(f.Component);
-(0, l.A)(O, "propTypes", {
+}(b.Component);
+(0, l.A)(A, "propTypes", {
     getItemString: h().func.isRequired,
     nodeTypeIndicator: h().any,
     nodeType: h().string.isRequired,
@@ -169,7 +169,7 @@ var O = function(e) {
     sortObjectKeys: h().oneOfType([h().func, h().bool]),
     isCircular: h().bool,
     expandable: h().bool
-}), (0, l.A)(O, "defaultProps", {
+}), (0, l.A)(A, "defaultProps", {
     data: [],
     circularCache: [],
     level: 0,

@@ -122,13 +122,13 @@ let S = l.memo(function(e) {
         } = e, n = (0, o.bG)([h.default], () => h.default.getId()), s = (0, o.bG)([m.A], () => m.A.isTyping(t, n), [t, n]), a = (0, o.bG)([_.A], () => _.A.isEnabled()), u = (0, o.bG)([p.Ay], () => p.Ay.isComboing(n, t), [t, n]), {
             ref: A,
             width: g = 0
-        } = (0, d.Ay)(), [f, C] = l.useState(!1), T = (0, E.A)(t), N = a && u && s;
+        } = (0, d.Ay)(), [f, C] = l.useState(!1), T = (0, E.A)(t), v = a && u && s;
         l.useEffect(() => {
-            N && C(!0);
-            let e = setTimeout(() => C(N), 1e3);
+            v && C(!0);
+            let e = setTimeout(() => C(v), 1e3);
             return () => clearTimeout(e)
-        }, [N]);
-        let v = (0, c.zhh)({
+        }, [v]);
+        let N = (0, c.zhh)({
                 opacity: +!!f,
                 transform: f ? "translateY(0)" : "translateY(100%)",
                 pointerEvents: "none",
@@ -146,9 +146,9 @@ let S = l.memo(function(e) {
             multiplier: j,
             value: R
         } = l.useMemo(() => ({
-            value: N ? y.value : b.current.value,
-            multiplier: N ? y.multiplier : b.current.multiplier
-        }), [N, y, b]);
+            value: v ? y.value : b.current.value,
+            multiplier: v ? y.multiplier : b.current.multiplier
+        }), [v, y, b]);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(S, {
                 channelId: t,
@@ -156,7 +156,7 @@ let S = l.memo(function(e) {
             }), (0, i.jsx)(r.animated.div, {
                 ref: A,
                 className: x.p_,
-                style: v,
+                style: N,
                 children: (0, i.jsx)(I, {
                     value: R,
                     multiplier: j

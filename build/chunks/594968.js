@@ -72,7 +72,7 @@ function x(e) {
     })
 }
 
-function v(e) {
+function b(e) {
     let {
         userId: t,
         applicationId: n,
@@ -97,7 +97,7 @@ function v(e) {
     })
 }
 
-function b(e) {
+function v(e) {
     let {
         isGameRelationship: t,
         applicationId: n,
@@ -150,7 +150,7 @@ function y(e) {
                 color: "text-muted",
                 children: N.intl.string(N.t.bgL68y)
             })]
-        }) : (0, i.jsx)(b, {
+        }) : (0, i.jsx)(v, {
             isGameRelationship: a,
             isProvisional: t.isProvisional,
             applicationId: o,
@@ -205,7 +205,7 @@ function O(e) {
                     isGameRelationship: A,
                     active: e,
                     onAcceptFriendRequest: m
-                }) : (0, i.jsx)(v, {
+                }) : (0, i.jsx)(b, {
                     userId: t.id,
                     applicationId: u,
                     isGameRelationship: A,

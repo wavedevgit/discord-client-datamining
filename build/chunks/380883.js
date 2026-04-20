@@ -1,7 +1,7 @@
 /** chunk id: 380883 params = (module,exports,require) **/
 "use strict";
 r.d(t, {
-    A: () => g
+    A: () => y
 });
 var a = r(1139),
     n = r(416886),
@@ -11,8 +11,8 @@ var a = r(1139),
     c = r.n(i),
     l = r(189776),
     u = r(531228),
-    b = r(609822),
-    f = r(790777),
+    f = r(609822),
+    b = r(790777),
     d = r(1514),
     h = ["getItemString", "keyPath", "labelRenderer", "styling", "value", "valueRenderer", "isCustomNode"];
 
@@ -27,7 +27,7 @@ function p(e, t) {
     return r
 }
 
-function y(e) {
+function m(e) {
     for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {};
         t % 2 ? p(Object(r), !0).forEach(function(t) {
@@ -38,42 +38,42 @@ function y(e) {
     }
     return e
 }
-var v = function(e) {
+var g = function(e) {
     var t = e.getItemString,
         r = e.keyPath,
         n = e.labelRenderer,
         i = e.styling,
         c = e.value,
         p = e.valueRenderer,
-        v = e.isCustomNode,
-        g = (0, o.A)(e, h),
-        m = v(c) ? "Custom" : (0, l.A)(c),
+        g = e.isCustomNode,
+        y = (0, o.A)(e, h),
+        v = g(c) ? "Custom" : (0, l.A)(c),
         w = {
             getItemString: t,
             key: r[0],
             keyPath: r,
             labelRenderer: n,
-            nodeType: m,
+            nodeType: v,
             styling: i,
             value: c,
             valueRenderer: p
         },
-        A = y(y(y({}, g), w), {}, {
+        M = m(m(m({}, y), w), {}, {
             data: c,
-            isCustomNode: v
+            isCustomNode: g
         });
-    switch (m) {
+    switch (v) {
         case "Object":
         case "Error":
         case "WeakMap":
         case "WeakSet":
-            return s.createElement(u.A, A);
+            return s.createElement(u.A, M);
         case "Array":
-            return s.createElement(b.A, A);
+            return s.createElement(f.A, M);
         case "Iterable":
         case "Map":
         case "Set":
-            return s.createElement(f.A, A);
+            return s.createElement(b.A, M);
         case "String":
             return s.createElement(d.A, (0, a.A)({}, w, {
                 valueGetter: function(e) {
@@ -117,12 +117,12 @@ var v = function(e) {
         default:
             return s.createElement(d.A, (0, a.A)({}, w, {
                 valueGetter: function() {
-                    return "<".concat(m, ">")
+                    return "<".concat(v, ">")
                 }
             }))
     }
 };
-v.propTypes = {
+g.propTypes = {
     getItemString: c().func.isRequired,
     keyPath: c().arrayOf(c().oneOfType([c().string, c().number]).isRequired).isRequired,
     labelRenderer: c().func.isRequired,
@@ -131,4 +131,4 @@ v.propTypes = {
     valueRenderer: c().func.isRequired,
     isCustomNode: c().func.isRequired
 };
-let g = v
+let y = g

@@ -34,8 +34,8 @@ function N(e) {
         receivesUpdatedUpsellPopover: N,
         orbsRewardAmount: S,
         lastGrantedRewardAmount: x,
-        dismissCoachMark: v,
-        dismissOrbsDropPopover: b,
+        dismissCoachMark: b,
+        dismissOrbsDropPopover: v,
         dismissMarketingPopover: y,
         orbMultiplier: O,
         fpCurrentEntitlementEndsAt: L,
@@ -48,14 +48,14 @@ function N(e) {
                 targetElementRef: i,
                 discountOffer: a,
                 premiumSubscription: T,
-                dismissCoachmark: v,
+                dismissCoachmark: b,
                 children: t
             });
             break;
         case "premium_group":
             return (0, l.jsx)(u.p, {
                 targetElementRef: i,
-                dismissPopover: v,
+                dismissPopover: b,
                 children: t
             });
         case "premium_group_tooltip":
@@ -66,25 +66,25 @@ function N(e) {
         case "orbs_upsell":
             if (N) return (0, l.jsx)(g.A, {
                 targetElementRef: i,
-                dismissPopover: v,
+                dismissPopover: b,
                 numOrbs: S,
                 children: t
             });
             return (0, l.jsx)(m.A, {
                 targetElementRef: i,
-                dismissPopover: v,
+                dismissPopover: b,
                 children: t
             });
         case "orbs_intro":
             return (0, l.jsx)(h.A, {
                 targetElementRef: i,
-                dismissPopover: v,
+                dismissPopover: b,
                 children: t
             });
         case "orbs_drop":
             if (null != x) return (0, l.jsx)(_.A, {
                 targetElementRef: i,
-                dismissPopover: b,
+                dismissPopover: v,
                 lastGrantedRewardAmount: x,
                 children: t
             });
@@ -116,7 +116,7 @@ function N(e) {
         case "l_upsell":
             return (0, l.jsx)(c.u, {
                 targetElementRef: i,
-                dismissPopover: v,
+                dismissPopover: b,
                 children: t
             });
         case "orbs_multiplier":

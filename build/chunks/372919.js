@@ -26,8 +26,8 @@ var l = n(179771),
     N = n(375492),
     S = n(461213),
     x = n(531685),
-    v = n(403362),
-    b = n(661191),
+    b = n(403362),
+    v = n(661191),
     y = n(998218),
     O = n(475815),
     L = n(636401),
@@ -245,13 +245,13 @@ let V = {
                         }, 1e3)
                     };
                     i.addEventListener("change", () => {
-                        (0, v.Vq)(i.files) && e(i.files[0]), l()
+                        (0, b.Vq)(i.files) && e(i.files[0]), l()
                     }), i.addEventListener("cancel", () => {
                         l()
                     }), n.document.body.addEventListener("focus", l, !0), n.document.body.appendChild(i), i.click()
                 }(async l => {
                     let a = await (0, h.CS)(n, i, l);
-                    (0, v.Vq)(a) && (0, v.Vq)(a.url) && !(a instanceof u.A) ? e({
+                    (0, b.Vq)(a) && (0, b.Vq)(a.url) && !(a instanceof u.A) ? e({
                         image_url: a.url
                     }): t(a)
                 }, () => t(Error("Upload canceled")))
@@ -326,7 +326,7 @@ let V = {
             if (null !== l || null !== a || null !== o) {
                 let e = [];
                 void 0 !== l && (e = [{
-                    id: b.default.cast(b.default.fromTimestamp(Date.now())),
+                    id: v.default.cast(v.default.fromTimestamp(Date.now())),
                     size: 0,
                     proxy_url: l.url,
                     filename: "preview",
@@ -334,7 +334,7 @@ let V = {
                     height: l.height,
                     width: l.width
                 }]), t = new C.Ay({
-                    id: b.default.cast(b.default.fromTimestamp(Date.now())),
+                    id: v.default.cast(v.default.fromTimestamp(Date.now())),
                     applicationId: u,
                     content: o,
                     components: a,

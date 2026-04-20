@@ -1,6 +1,6 @@
 /** chunk id: 83982 params = (module,exports,require) **/
 n.d(t, {
-    A: () => U,
+    A: () => k,
     s: () => w
 });
 var i = n(627968),
@@ -25,8 +25,8 @@ var i = n(627968),
     S = n(530804),
     I = n(961350),
     T = n(430452),
-    N = n(531685),
-    v = n(562153),
+    v = n(531685),
+    N = n(562153),
     y = n(51082),
     b = n(566566),
     j = n(289552),
@@ -56,7 +56,7 @@ function w(e) {
     })
 }
 
-function U(e) {
+function k(e) {
     let {
         participant: t,
         channel: n,
@@ -66,8 +66,8 @@ function U(e) {
         popoutType: S,
         fit: j,
         onVideoResize: w,
-        blocked: U,
-        ignored: k,
+        blocked: k,
+        ignored: U,
         noVideoRender: G = !1,
         pulseSpeakingIndicator: F = !1,
         paused: H = !1
@@ -75,7 +75,7 @@ function U(e) {
         user: W,
         streamId: K,
         speaking: z
-    } = t, Y = W.id === V, J = (0, y.Ay)(t), q = (0, r.bG)([N.A], () => N.A.isFocused()), $ = (0, r.bG)([C.A], () => C.A.getWindowFocused(R.MLl.CHANNEL_CALL_POPOUT)), Z = (0, r.bG)([T.Ay], () => null != W.id && T.Ay.isLocalVideoDisabled(W.id, (0, m.A)(t.type)), [W.id, t.type]), X = (0, p.A)(n.guild_id, W.id), Q = v.Ay.getName(n.getGuildId(), n.id, W) + (X ? ` ${L.intl.string(L.t["pFO/Ph"])}` : ""), ee = z && ($ || q), et = o < 124 ? P : O, {
+    } = t, Y = W.id === V, J = (0, y.Ay)(t), q = (0, r.bG)([v.A], () => v.A.isFocused()), $ = (0, r.bG)([C.A], () => C.A.getWindowFocused(R.MLl.CHANNEL_CALL_POPOUT)), Z = (0, r.bG)([T.Ay], () => null != W.id && T.Ay.isLocalVideoDisabled(W.id, (0, m.A)(t.type)), [W.id, t.type]), X = (0, p.A)(n.guild_id, W.id), Q = N.Ay.getName(n.getGuildId(), n.id, W) + (X ? ` ${L.intl.string(L.t["pFO/Ph"])}` : ""), ee = z && ($ || q), et = o < 124 ? P : O, {
         avatarSrc: en,
         avatarDecorationSrc: ei
     } = (0, x.A)({
@@ -115,7 +115,7 @@ function U(e) {
         userId: W.id
     }, K) : (0, i.jsx)("div", {
         className: a()(D.Qs, {
-            [D.Kx]: U || k
+            [D.Kx]: k || U
         }),
         children: (0, i.jsx)(f.A, {
             "aria-label": Q,

@@ -40,7 +40,7 @@ function p(e) {
         onAcceptSuccess: C,
         onRejectSuccess: f,
         onError: I
-    }), v = N || S, b = v || x;
+    }), b = N || S, v = b || x;
     return (0, i.jsxs)("div", {
         className: g.kL,
         children: [(0, i.jsx)(h.A, {
@@ -56,8 +56,8 @@ function p(e) {
                 onClick: e => {
                     T(p.id), e.stopPropagation()
                 },
-                disabled: b,
-                loading: v
+                disabled: v,
+                loading: b
             }), (0, i.jsx)(_.A, {
                 channel: p
             })]

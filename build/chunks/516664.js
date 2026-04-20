@@ -12,7 +12,7 @@ let d = (0, s.Tf)(r.X.ACCOUNT_DISABLE_SETTING, {
     useTitle: () => o.intl.string(o.t["p/Tjtp"]),
     useSubtitle: () => o.intl.string(o.t.YvDmKb),
     useLabel: () => o.intl.string(o.t.jf5GGb),
-    useVariant: () => "secondary",
+    useVariant: () => "critical-secondary",
     onClick: () => (0, a.c)(!1),
     usePredicate: () => {
         let e = (0, i.bG)([l.default], () => l.default.getCurrentUser());

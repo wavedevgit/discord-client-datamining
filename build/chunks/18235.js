@@ -3,13 +3,13 @@ n.d(t, {
     A: () => s
 });
 var i = n(827343),
-    r = n(579872),
-    l = n(985018);
+    l = n(579872),
+    r = n(985018);
 
 function s(e, t) {
-    e ? r.A.show({
-        title: l.intl.string(l.t.QZ7WSS),
-        body: l.intl.string(l.t.Tl9JpL)
+    e ? l.A.show({
+        title: r.intl.string(r.t.QZ7WSS),
+        body: r.intl.string(r.t.Tl9JpL)
     }) : i.A.toggleSelfDeaf({
         location: t
     })

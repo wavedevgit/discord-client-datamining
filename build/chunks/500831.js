@@ -26,8 +26,8 @@ var i = n(627968),
     N = n(667086),
     S = n(87001),
     x = n(52144),
-    v = n(966597),
-    b = n(922281),
+    b = n(966597),
+    v = n(922281),
     y = n(97469),
     O = n(253932),
     L = n(430363),
@@ -58,7 +58,7 @@ let G = (0, a.v)(() => ({
         }), a = (0, s.bG)([P.A], () => P.A.isDeveloper), G = (0, L.Uk)("VoiceDareTitleBarButton"), k = (0, s.bG)([D.A, c.A], () => O.Q_.getSetting() && null != D.A.testModeApplicationId && null != c.A.getApplication(D.A.testModeApplicationId) && (0, u.A)(c.A.getApplication(D.A.testModeApplicationId))), V = (0, f.g)(), B = null !== e && t === T.RK.TITLE_BAR_LEFT, H = null === e, {
             enabled: F,
             inInbox: Y
-        } = v.A.useConfig({
+        } = b.A.useConfig({
             location: "AppTitleBar"
         });
         l.useLayoutEffect(() => {
@@ -95,7 +95,7 @@ let G = (0, a.v)(() => ({
                     trailing: (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(m.A, {}), G ? (0, i.jsx)(R.A, {}) : null, V && (0, i.jsx)(f.A, {}), (0, i.jsx)(h.A, {
                             canShowReminder: !0
-                        }), F && !Y && (0, i.jsx)(b.A, {}), H && (0, i.jsx)(x.A, {
+                        }), F && !Y && (0, i.jsx)(v.A, {}), H && (0, i.jsx)(x.A, {
                             ..."RECENTS" === z ? e : {}
                         }), n ? (0, i.jsx)(E.w, {
                             focusSectionProps: "HELP" === z ? e : void 0

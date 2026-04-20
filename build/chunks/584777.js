@@ -1,7 +1,7 @@
 /** chunk id: 584777 params = (module,exports,require) **/
 let i;
 n.d(t, {
-    A: () => U
+    A: () => k
 }), n(321073);
 var l = n(311907),
     s = n(73153),
@@ -25,11 +25,11 @@ let f = !1,
     I = new Set,
     T = null;
 
-function N() {
+function v() {
     E = "", C = 0, x = [], I = new Set, f = !1, T = null
 }
 
-function v(e) {
+function N(e) {
     E = e, C = 0, y()
 }
 
@@ -117,7 +117,7 @@ function M() {
 
 function L(e) {
     if (e.key !== p.TLS) return !1;
-    f = !0, b(), i = M(), T = null, v("")
+    f = !0, b(), i = M(), T = null, N("")
 }
 
 function D(e) {
@@ -126,7 +126,7 @@ function D(e) {
 }
 
 function O() {
-    null != i && (i.destroy(), i = null), N()
+    null != i && (i.destroy(), i = null), v()
 }
 class P extends l.Ay.Store {
     static displayName = "PrivateChannelRecipientsInviteStore";
@@ -157,7 +157,7 @@ class P extends l.Ay.Store {
 }
 let w = new P(s.h, {
         CONNECTION_OPEN: function() {
-            N()
+            v()
         },
         CHANNEL_SELECT: function(e) {
             let {
@@ -166,18 +166,18 @@ let w = new P(s.h, {
             } = e;
             if (null != t) return !1;
             let i = f;
-            return N(), f = i, T = n, y()
+            return v(), f = i, T = n, y()
         },
         MODAL_PUSH: L,
         SHOW_ACTION_SHEET: L,
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-            f = !0, b(), i = M(), T = e.channelId, v("")
+            f = !0, b(), i = M(), T = e.channelId, N("")
         },
         MODAL_POP: D,
         HIDE_ACTION_SHEET: D,
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: O,
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_QUERY: function(e) {
-            T = e.channelId, v(e.query)
+            T = e.channelId, N(e.query)
         },
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT: function(e) {
             C = e.row
@@ -195,4 +195,4 @@ let w = new P(s.h, {
             I.delete(t), I = new Set(I)
         }
     }),
-    U = w
+    k = w

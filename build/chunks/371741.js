@@ -26,8 +26,8 @@ var i = n(627968),
     S = n(540999),
     I = n(580745),
     T = n(661191),
-    N = n(521427),
-    v = n(141468),
+    v = n(521427),
+    N = n(141468),
     y = n(375901),
     b = n(143413),
     j = n(763754),
@@ -38,8 +38,8 @@ var i = n(627968),
     O = n(516287),
     P = n(866897),
     w = n(754459),
-    U = n(538355),
-    k = n(522871),
+    k = n(538355),
+    U = n(522871),
     G = n(699352),
     F = n(426153),
     H = n(444529),
@@ -122,11 +122,11 @@ function Q(e) {
         viewingChannelId: x
     } = e, I = n.type === J.lAJ.REPLY ? n.messageReference : void 0, {
         onFocus: T,
-        ...N
+        ...v
     } = (0, c.rm)(e.id ?? ""), {
         isFocused: y,
         handleFocus: R,
-        handleBlur: k
+        handleBlur: U
     } = (0, D.G8)(T), {
         popouts: F,
         selected: H,
@@ -143,7 +143,7 @@ function Q(e) {
         content: eo,
         hasSpoilerEmbeds: ec,
         hasBailedAst: ed
-    } = (0, U.A)(n, {
+    } = (0, k.A)(n, {
         hideSimpleEmbedContent: Z && X,
         formatInline: !1,
         allowList: ee,
@@ -167,14 +167,14 @@ function Q(e) {
             "aria-label": q.intl.string(q.t.k5WiPf),
             children: q.intl.string(q.t.k5WiPf)
         }), (0, i.jsx)(M.A, {
-            ...N,
+            ...v,
             id: t,
             compact: m,
             className: a()(A, {
                 [$.iU]: !0,
                 [$.HJ]: !m,
                 [$.mK]: n.mentioned,
-                [$.M1]: (0, v.ec)(n),
+                [$.M1]: (0, N.ec)(n),
                 [$.H4]: (0, b.A)(n),
                 [$._A]: n.id === p || n.type === J.lAJ.REPLY,
                 [$.wH]: es
@@ -182,7 +182,7 @@ function Q(e) {
             zalgo: !0,
             onKeyDown: eu,
             onFocus: R,
-            onBlur: k,
+            onBlur: U,
             childrenRepliedMessage: n.type === J.lAJ.REPLY && (0, K.A)({
                 ...e,
                 setPopout: W,
@@ -278,9 +278,9 @@ let ee = l.memo(function(e) {
             ex(e), eg()
         }, [ex, eg]),
         eT = (0, d.bG)([I.A], () => I.A.isEditing(Z, E), [Z, E]),
-        eN = (0, d.bG)([h.A], () => h.A.keyboardModeEnabled),
-        ev = ed || eT || eN && ef,
-        ey = ev || ep,
+        ev = (0, d.bG)([h.A], () => h.A.keyboardModeEnabled),
+        eN = ed || eT || ev && ef,
+        ey = eN || ep,
         eb = (0, d.bG)([x.A], () => r.hasFlag(J.pr7.HAS_THREAD) && x.A.getChannel(T.default.castMessageIdAsChannelId(r.id))),
         ej = r.isFirstMessageInForumPost(y),
         eR = (0, _.S)((r.editedTimestamp ?? r.timestamp).valueOf()),
@@ -289,7 +289,7 @@ let ee = l.memo(function(e) {
             content: eL,
             hasSpoilerEmbeds: eD,
             hasBailedAst: eO
-        } = (0, U.A)(r, {
+        } = (0, k.A)(r, {
             hideSimpleEmbedContent: ea && er,
             formatInline: !1,
             allowList: ej || eR,
@@ -298,10 +298,10 @@ let ee = l.memo(function(e) {
             allowDevLinks: eM,
             previewLinkTarget: !0
         }),
-        eP = (0, P.A)(E, Z, eN),
+        eP = (0, P.A)(E, Z, ev),
         ew = (0, j.Ay)(r),
-        eU = (0, d.bG)([p.A], () => p.A.getPendingReply(Z)),
-        ek = (t = l.useRef(ee), l.useEffect(() => {
+        ek = (0, d.bG)([p.A], () => p.A.getPendingReply(Z)),
+        eU = (t = l.useRef(ee), l.useEffect(() => {
             t.current = ee ?? t.current
         }), ee ?? t.current),
         eG = (0, g.$7)({
@@ -312,13 +312,13 @@ let ee = l.memo(function(e) {
         eH = (0, L.fF)(r, et),
         eB = (0, L.ZD)(r),
         eV = (0, d.bG)([A.A], () => A.A.getMessage(E), [E]),
-        eW = (0, k.A)({
+        eW = (0, U.A)({
             message: r,
             channel: y
         }),
         eK = l.useRef(window),
         ez = null != eV,
-        eY = (0, N.Nd)(y.guild_id, y, "ChatMessage");
+        eY = (0, v.Nd)(y.guild_id, y, "ChatMessage");
     n = r.type === J.lAJ.CUSTOM_GIFT ? "" : !eT && ez ? (0, F.A)(e, eL) : (0, V.A)(e, eL, eT), n = (0, i.jsx)(O.x, {
         value: ey,
         children: n
@@ -353,13 +353,13 @@ let ee = l.memo(function(e) {
                         [$.iU]: !0,
                         [$.HJ]: !X,
                         [$.mK]: r.mentioned,
-                        [$.M1]: (0, v.ec)(r),
+                        [$.M1]: (0, N.ec)(r),
                         [$.SH]: r.type === J.lAJ.NITRO_NOTIFICATION,
                         [$.Sg]: r.hasFlag(J.pr7.IS_GUILD_OFFICIAL) && eY,
                         [$.H4]: (0, b.A)(r),
                         [$._A]: !en && (eJ || r.type === J.lAJ.REPLY),
-                        [$.wH]: ev,
-                        [$.$n]: eU?.message.id === r.id,
+                        [$.wH]: eN,
+                        [$.$n]: ek?.message.id === r.id,
                         [$.$w]: r.isCommandType() && r.state === J.cmJ.SENDING,
                         [$.DX]: ez
                     }),
@@ -413,8 +413,8 @@ let ee = l.memo(function(e) {
                 })
             })
         });
-    return null != ek ? (0, i.jsx)(R.A, {
-        flashKey: ek,
+    return null != eU ? (0, i.jsx)(R.A, {
+        flashKey: eU,
         className: a()({
             [$.bB]: !0,
             [$._A]: !X && r.id === et

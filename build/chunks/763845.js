@@ -117,9 +117,9 @@ let C = function(e) {
         }, [e, S]),
         {
             connectionState: T,
-            connectionTypeText: N
+            connectionTypeText: v
         } = e,
-        v = c.Q_.getSetting(),
+        N = c.Q_.getSetting(),
         y = {
             [g.S7L.AWAITING_ENDPOINT]: p.intl.format(p.t.Eu2vUR, {
                 url: g.qF7.STATUS
@@ -147,7 +147,7 @@ let C = function(e) {
             variant: "text-sm/normal",
             color: "text-muted",
             children: y
-        }), v && d.Ay.supports(_.O5.DIAGNOSTICS) && !__OVERLAY__ && (0, i.jsxs)(i.Fragment, {
+        }), N && d.Ay.supports(_.O5.DIAGNOSTICS) && !__OVERLAY__ && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("hr", {
                 className: E.me
             }), (0, i.jsxs)("div", {
@@ -192,9 +192,9 @@ let C = function(e) {
             }), (0, i.jsx)(a.Text, {
                 variant: "text-xs/medium",
                 color: "text-feedback-positive",
-                children: N
+                children: v
             })]
-        }), !v && !__OVERLAY__ && (0, i.jsxs)(i.Fragment, {
+        }), !N && !__OVERLAY__ && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("hr", {
                 className: E.me
             }), (0, i.jsx)(a.MzZ, {

@@ -1,6 +1,6 @@
 /** chunk id: 38198 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => N
 });
 var i = n(627968),
     l = n(64700),
@@ -24,12 +24,12 @@ var i = n(627968),
     S = n(49999),
     I = n(412136),
     T = n(985018);
-let N = /(.*)```(\w+)\n(.*)```(.*)/s;
+let v = /(.*)```(\w+)\n(.*)```(.*)/s;
 
-function v(e) {
+function N(e) {
     let {
         channel: t,
-        options: v,
+        options: N,
         onFileUpload: y,
         onClose: b,
         onSelect: j,
@@ -43,11 +43,11 @@ function v(e) {
         channel: t
     }), w = (0, s.bG)([m.A], () => m.A.isInProgress());
 
-    function U() {
+    function k() {
         (0, A.Tv)(t, void 0, "Plus Button")
     }
 
-    function k() {
+    function U() {
         g.default.track(x.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), L("/", (0, E.x7)("/"))
     }
 
@@ -75,7 +75,7 @@ function v(e) {
         let e = M,
             n = "txt",
             i = "",
-            l = M.match(N);
+            l = M.match(v);
         null != l && (i = l[1], n = l[2], e = l[3], i += l[4]), (0, f.R)([(0, p.VE)(new Blob([e], {
             type: "text/plain"
         }), `message.${n}`, "text/plain")], t, R), _._.dispatchToLastSubscribed(x.jej.CLEAR_TEXT), "" !== i && _._.dispatchToLastSubscribed(x.jej.INSERT_TEXT, {
@@ -94,7 +94,7 @@ function v(e) {
         navId: "channel-attach",
         onClose: b,
         "aria-label": T.intl.string(T.t.Xm41aV),
-        children: v.map(function(e) {
+        children: N.map(function(e) {
             switch (e.type) {
                 case C.v.UPLOAD_A_FILE:
                     return (0, i.jsx)(r.Drp, {
@@ -210,7 +210,7 @@ function v(e) {
                             type: "icon",
                             icon: e.icon
                         },
-                        action: U
+                        action: k
                     }, "THREAD");
                 case C.v.SLASH_COMMAND:
                     return (0, i.jsx)(r.Drp, {
@@ -221,7 +221,7 @@ function v(e) {
                             type: "icon",
                             icon: e.icon
                         },
-                        action: k
+                        action: U
                     }, "SLASH_COMMAND");
                 case C.v.SCHEDULED_MESSAGE:
                     return (0, i.jsx)(r.Drp, {

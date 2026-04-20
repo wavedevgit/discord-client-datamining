@@ -1,17 +1,17 @@
 /** chunk id: 968898 params = (module,exports,require) **/
 n.d(t, {
-    CS: () => b,
-    GQ: () => R,
-    O0: () => D,
+    CS: () => R,
+    GQ: () => D,
+    O0: () => b,
     Pl: () => T,
-    RE: () => N,
-    X1: () => C,
+    RE: () => C,
+    X1: () => N,
     we: () => M
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    s = n.n(r),
     a = n(311907),
     o = n(827734),
     u = n(990078),
@@ -42,26 +42,26 @@ function T(e) {
         })
     })
 }
-let C = 7e3;
+let N = 7e3;
 
-function N(e, t) {
+function C(e, t) {
     return v((0, a.bG)([m.A], () => m.A.getWidget(e), [e]), t)
 }
 
 function v(e, t) {
-    let n = r.useRef(e?.showExtrasHintTimestamp),
-        [i, l] = r.useState(!1),
+    let n = l.useRef(e?.showExtrasHintTimestamp),
+        [i, r] = l.useState(!1),
         s = (0, _.A)(),
-        a = r.useRef(void 0);
-    return r.useEffect(() => {
+        a = l.useRef(void 0);
+    return l.useEffect(() => {
         let i = e?.showExtrasHintTimestamp;
-        i !== n.current && (n.current = i, l(!0), a.current = setTimeout(() => {
-            l(!1)
+        i !== n.current && (n.current = i, r(!0), a.current = setTimeout(() => {
+            r(!1)
         }, t))
     }, [t, e?.showExtrasHintTimestamp]), (0, g.Ay)(() => {
         let n = e?.showExtrasHintTimestamp;
-        return null != n && Date.now() - n < t && (l(!0), a.current = setTimeout(() => {
-            l(!1)
+        return null != n && Date.now() - n < t && (r(!0), a.current = setTimeout(() => {
+            r(!1)
         }, t)), () => {
             null != a.current && clearTimeout(a.current)
         }
@@ -73,14 +73,14 @@ function M(e) {
     let {
         children: t,
         widgetId: n
-    } = e, r = (0, a.bG)([m.A], () => m.A.getWidget(n), [n]);
-    return v(r, y) ? (0, i.jsxs)(i.Fragment, {
+    } = e, l = (0, a.bG)([m.A], () => m.A.getWidget(n), [n]);
+    return v(l, y) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(A.A, {
             className: x.Z,
             children: (0, i.jsx)(d.DUT, {
                 className: x.SM,
                 onClick: () => {
-                    null != r && (h.A.setInputLocked(!1, I.A.getTargetPID()), (0, f.YX)(r.type, {
+                    null != l && (h.A.setInputLocked(!1, I.A.getTargetPID()), (0, f.YX)(l.type, {
                         type: f.Z5.KEYBIND_HINT,
                         value: f.IP.OVERLAY_UNLOCKED
                     }))
@@ -108,7 +108,7 @@ function M(e) {
     })
 }
 
-function b(e) {
+function R(e) {
     let {
         onClick: t
     } = e;
@@ -128,14 +128,14 @@ function b(e) {
     })
 }
 
-function R(e) {
+function D(e) {
     let {
         widgetId: t,
         showAllStreams: n
-    } = e, r = n ? S.intl.string(S.t.q2B3rh) : S.intl.string(S.t.JKGi6o);
+    } = e, l = n ? S.intl.string(S.t.q2B3rh) : S.intl.string(S.t.JKGi6o);
     return (0, _.A)() ? null : (0, i.jsx)(u.m, {
-        text: r,
-        "aria-label": r,
+        text: l,
+        "aria-label": l,
         children: (0, i.jsx)(d.DUT, {
             className: s()(x.x6, n && x.vu),
             onClick: () => {
@@ -151,19 +151,19 @@ function R(e) {
     })
 }
 
-function D(e) {
+function b(e) {
     let {
         id: t,
         pinned: n
-    } = e, r = n ? S.intl.string(S.t.cSu80j) : S.intl.string(S.t.cM8Vnm), l = (0, _.A)();
+    } = e, l = n ? S.intl.string(S.t.cSu80j) : S.intl.string(S.t.cM8Vnm), r = (0, _.A)();
     return (0, i.jsx)(u.m, {
-        text: r,
-        "aria-label": r,
+        text: l,
+        "aria-label": l,
         asContainer: !0,
         children: (0, i.jsx)(d.DUT, {
             className: s()(x.x6, n && x.vu),
             onClick: () => {
-                l || (0, c.v0)(t)
+                r || (0, c.v0)(t)
             },
             children: (0, i.jsx)(d.qgw, {
                 size: "xxs",

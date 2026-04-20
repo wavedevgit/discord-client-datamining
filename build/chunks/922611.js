@@ -3,8 +3,8 @@ n.d(t, {
     c: () => h,
     g: () => m
 });
-var i, r = n(627968),
-    l = n(64700),
+var i, l = n(627968),
+    r = n(64700),
     s = n(311907),
     a = n(397927),
     o = n(263063),
@@ -26,18 +26,18 @@ function g(e, t) {
             throw Error(`Unhandled icon type: ${String(t)}`)
     }
 }
-let m = l.memo(function(e) {
+let m = r.memo(function(e) {
     let {
         channel: t,
         user: n,
         guild: i,
-        isSelected: l = !1,
+        isSelected: r = !1,
         size: h = 24,
         isTyping: m = !1,
         mentionCount: f = 0,
         isMentionLowImportance: A = !1
     } = e, I = t?.isPrivate() ?? !1, E = t?.isMultiUserDM() ?? !1, p = n?.id, _ = (0, s.bG)([u.A], () => null != p ? u.A.getStatus(p) : null, [p]), S = (0, s.bG)([u.A], () => null != p && u.A.isMobileOnline(p), [p]);
-    if (I || E) return (0, r.jsx)(d.h, {
+    if (I || E) return (0, l.jsx)(d.h, {
         channel: t ?? null,
         user: n,
         "aria-hidden": !0,
@@ -48,19 +48,19 @@ let m = l.memo(function(e) {
         mentionCount: f,
         isMentionLowImportance: A
     });
-    if (null == i) return (0, r.jsx)(a.oyn, {
+    if (null == i) return (0, l.jsx)(a.oyn, {
         size: g(h, "default"),
         color: a.LU0.colors.INTERACTIVE_ICON_DEFAULT
     });
     {
-        if (null == t) return (0, r.jsx)(o.Ay, {
+        if (null == t) return (0, l.jsx)(o.Ay, {
             guild: i,
             size: g(h, "guild"),
             active: !0,
             showTooltip: !1
         });
         let e = 40 === h ? c.Q.MEDIUM_40 : c.Q.TINY_24;
-        return (0, r.jsx)(c.A, {
+        return (0, l.jsx)(c.A, {
             channel: t,
             guild: i,
             size: e,

@@ -38,11 +38,11 @@ function _(e) {
             href: S.url,
             children: S.linkText
         })]
-    }) : void 0, v = (0, d.C)(_.disclaimer?.disclaimerHelpArticle, ""), b = null != v ? () => (0, i.jsxs)(i.Fragment, {
+    }) : void 0, b = (0, d.C)(_.disclaimer?.disclaimerHelpArticle, ""), v = null != b ? () => (0, i.jsxs)(i.Fragment, {
         children: ["\xa0", (0, i.jsx)(s.MzZ, {
             className: h.$T,
-            href: v.url,
-            children: v.linkText
+            href: b.url,
+            children: b.linkText
         })]
     }) : void 0, y = {
         type: "video",
@@ -90,6 +90,6 @@ function _(e) {
             })
         },
         disclaimer: _.disclaimer?.disclaimerText !== "" ? _.disclaimer?.disclaimerText : void 0,
-        disclaimerExtra: b
+        disclaimerExtra: v
     }
 }

@@ -14,7 +14,7 @@ var a = n(397927),
     u = n(709977),
     A = n(14509),
     h = n(894778),
-    _ = n(447696),
+    _ = n(225315),
     m = n(684407),
     g = n(919638),
     p = n(71393),
@@ -26,9 +26,9 @@ var a = n(397927),
     N = n(426620),
     S = n(771016),
     x = n(994277),
-    v = n(652215);
+    b = n(652215);
 n(436317);
-var b = n(315290);
+var v = n(315290);
 
 function y() {
     null != i && (0, a.OoC)(i)
@@ -46,13 +46,13 @@ class O extends s.A {
         if (null == r) return;
         switch (r) {
             case S.zY.INVITE_UNCLAIMED:
-                h.A.flowStart(b.do.INVITE, b.ju.NUF_STARTED);
+                h.A.flowStart(v.do.INVITE, v.ju.NUF_STARTED);
                 break;
             case S.zY.ORGANIC_REGISTERED:
-                h.A.flowStart(b.do.ORGANIC, b.ju.NUF_STARTED);
+                h.A.flowStart(v.do.ORGANIC, v.ju.NUF_STARTED);
                 break;
             case S.zY.MARKETING_UNCLAIMED:
-                h.A.flowStart(b.do.ORGANIC_MARKETING, b.ju.NUF_STARTED)
+                h.A.flowStart(v.do.ORGANIC_MARKETING, v.ju.NUF_STARTED)
         }
         let s = !1,
             y = E.A.getGuildId();
@@ -68,25 +68,25 @@ class O extends s.A {
                 let t = e => {
                     switch (e) {
                         case x.i.AGE_GATE:
-                            h.A.flowStep(b.do.ANY, b.ju.AGE_GATE);
+                            h.A.flowStep(v.do.ANY, v.ju.AGE_GATE);
                             break;
                         case x.i.CHOOSE_TEMPLATE:
-                            h.A.flowStep(b.do.ANY, b.jC.GUILD_TEMPLATES);
+                            h.A.flowStep(v.do.ANY, v.jC.GUILD_TEMPLATES);
                             break;
                         case x.i.CUSTOMIZE_GUILD:
-                            h.A.flowStep(b.do.ANY, b.jC.GUILD_CREATE);
+                            h.A.flowStep(v.do.ANY, v.jC.GUILD_CREATE);
                             break;
                         case x.i.CHANNEL_PROMPT:
-                            h.A.flowStep(b.do.ANY, b.jC.CHANNEL_PROMPT);
+                            h.A.flowStep(v.do.ANY, v.jC.CHANNEL_PROMPT);
                             break;
                         case x.i.JOIN_GUILD:
-                            h.A.flowStep(b.do.ANY, b.jC.JOIN_GUILD);
+                            h.A.flowStep(v.do.ANY, v.jC.JOIN_GUILD);
                             break;
                         case x.i.CREATION_INTENT:
-                            h.A.flowStep(b.do.ANY, b.jC.CREATION_INTENT);
+                            h.A.flowStep(v.do.ANY, v.jC.CREATION_INTENT);
                             break;
                         case x.i.COMPLETE:
-                            h.A.flowStep(b.do.ANY, b.jC.SUCCESS);
+                            h.A.flowStep(v.do.ANY, v.jC.SUCCESS);
                             break;
                         case null:
                             break;
@@ -103,7 +103,7 @@ class O extends s.A {
                         onSlideChange: t
                     })
                 }, {
-                    onCloseRequest: v.tEg,
+                    onCloseRequest: b.tEg,
                     onCloseCallback: e,
                     modalKey: i
                 })
@@ -136,7 +136,7 @@ class O extends s.A {
             }),
             predicate: () => null != y && null != m.A.get(y) && m.A.get(y) !== m.E
         }], t = () => {
-            T.D(), h.A.flowStep(b.do.ANY, b.ju.NUF_COMPLETE, !0)
+            T.D(), h.A.flowStep(v.do.ANY, v.ju.NUF_COMPLETE, !0)
         }, [...e].reverse().forEach(e => {
             let n = t;
             t = () => {

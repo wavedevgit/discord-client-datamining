@@ -33,10 +33,10 @@ let _ = function(e) {
     }, [N]);
     let S = (0, a.bG)([r.A], () => r.A.hasNewContent(), []),
         x = (0, a.bG)([r.A], () => r.A.isHydrating(), []),
-        v = l.useMemo(() => T[0].onViewableItemsChanged, [T]),
+        b = l.useMemo(() => T[0].onViewableItemsChanged, [T]),
         {
-            registerItemRef: b
-        } = (0, A.N)(E, v, t),
+            registerItemRef: v
+        } = (0, A.N)(E, b, t),
         y = l.useMemo(() => E.some(e => "end" === e.data.kind), [E]),
         O = l.useCallback(() => {
             if (y) return;
@@ -88,12 +88,12 @@ let _ = function(e) {
                 children: "You're all caught up!"
             })
         }, e.id) : (0, i.jsx)("div", {
-            ref: t => b(e.id, t),
+            ref: t => v(e.id, t),
             "data-item-id": e.id,
             children: (0, i.jsx)(u.A, {
                 item: e
             })
-        }, e.id), [b]);
+        }, e.id), [v]);
     return I && 0 === E.length ? (0, i.jsx)("div", {
         style: {
             padding: "32px",

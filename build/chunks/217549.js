@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(134861),
     S = n(498642),
     x = n(71393),
-    v = n(189081),
-    b = n(375492),
+    b = n(189081),
+    v = n(375492),
     y = n(576705),
     O = n(994500),
     L = n(309010),
@@ -75,14 +75,14 @@ function H(e) {
         let {
             currentActivities: t
         } = e, n = l.useContext(w.AnalyticsContext);
-        return (0, a.yK)([P.default, v.A, C.A, x.A, S.A, O.A, L.A, D.A, y.A, b.A, R.A, u.Ay, E.A, M.A, N.A, p.Ay, j.A], () => {
+        return (0, a.yK)([P.default, b.A, C.A, x.A, S.A, O.A, L.A, D.A, y.A, v.A, R.A, u.Ay, E.A, M.A, N.A, p.Ay, j.A], () => {
             let e = P.default.getCurrentUser();
             return t.filter(e => !(0, m.A)(e.activity)).map(t => {
                 let {
                     activity: i,
                     game: l,
                     activityUser: a
-                } = t, r = v.A.getActiveLibraryApplication(l.id);
+                } = t, r = b.A.getActiveLibraryApplication(l.id);
                 return {
                     ...t,
                     libraryApplication: r,
@@ -100,12 +100,12 @@ function H(e) {
                         SelectedChannelStore: L.A,
                         VoiceStateStore: D.A,
                         PermissionStore: y.A,
-                        LocalActivityStore: b.A,
+                        LocalActivityStore: v.A,
                         SelfPresenceStore: R.A,
                         EmbeddedActivitiesStore: u.Ay
                     }),
                     canPlay: (0, U.A)({
-                        LibraryApplicationStore: v.A,
+                        LibraryApplicationStore: b.A,
                         LaunchableGameStore: E.A,
                         DispatchApplicationStore: M.A,
                         ConnectedAppsStore: N.A,

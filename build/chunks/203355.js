@@ -25,8 +25,8 @@ var i = n(627968),
     S = n(901690),
     I = n(919706),
     T = n(616356),
-    N = n(961350),
-    v = n(734057),
+    v = n(961350),
+    N = n(734057),
     y = n(430452),
     b = n(531685),
     j = n(200749),
@@ -37,8 +37,8 @@ var i = n(627968),
     O = n(399849),
     P = n(275731),
     w = n(345812),
-    U = n(652215),
-    k = n(806931),
+    k = n(652215),
+    U = n(806931),
     G = n(731854),
     F = n(985018),
     H = n(391308);
@@ -56,7 +56,7 @@ function V(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [n || l ? null : (0, i.jsx)(P.A, {
             participant: t
-        }), l || null == c || c.state === U.XYD.ENDED || c.state === U.XYD.FAILED ? null : (0, i.jsx)(x.A, {
+        }), l || null == c || c.state === k.XYD.ENDED || c.state === k.XYD.FAILED ? null : (0, i.jsx)(x.A, {
             size: g.Ay.Sizes.SMALL,
             className: H.Ok,
             participant: t,
@@ -77,11 +77,11 @@ function W(e) {
         width: x,
         wrapperClassName: P,
         paused: w = !1
-    } = e, V = y.Ay.getVideoComponent(), W = (0, r.bG)([N.default], () => N.default.getId()), K = (0, f.A)(), {
+    } = e, V = y.Ay.getVideoComponent(), W = (0, r.bG)([v.default], () => v.default.getId()), K = (0, f.A)(), {
         stream: z,
         user: Y,
         streamId: J
-    } = t, q = (0, r.bG)([v.A], () => v.A.getChannel(z.channelId)), $ = (0, r.bG)([T.A], () => T.A.getActiveStreamForUser(Y.id, z.guildId), [Y.id, z.guildId]), Z = (0, r.bG)([T.A], () => T.A.getAllActiveStreams().length > 0), X = (0, r.bG)([b.A], () => b.A.isFocused()), Q = $?.ownerId === W, ee = Q && !X && _ === A.N.NO_POPOUT, et = null != $ ? (0, E.A)($, Y, Y.id === W, ee) : null, en = x < 195;
+    } = t, q = (0, r.bG)([N.A], () => N.A.getChannel(z.channelId)), $ = (0, r.bG)([T.A], () => T.A.getActiveStreamForUser(Y.id, z.guildId), [Y.id, z.guildId]), Z = (0, r.bG)([T.A], () => T.A.getAllActiveStreams().length > 0), X = (0, r.bG)([b.A], () => b.A.isFocused()), Q = $?.ownerId === W, ee = Q && !X && _ === A.N.NO_POPOUT, et = null != $ ? (0, E.A)($, Y, Y.id === W, ee) : null, en = x < 195;
     (0, h.Ay)(() => {
         !Z && q?.isGuildStageVoice() && !Q && ((0, u.A9)(z), d.A.updateStageStreamSize(z.channelId, !1))
     });
@@ -94,19 +94,19 @@ function W(e) {
         selected: n,
         isSelfStream: Y.id === W
     });
-    if ($?.state === U.XYD.ENDED) return (0, i.jsx)(M.A, {
+    if ($?.state === k.XYD.ENDED) return (0, i.jsx)(M.A, {
         selected: n,
         stream: $,
         width: x
     });
-    if (null != ei || $?.state === U.XYD.FAILED) return (0, i.jsx)(L.A, {
+    if (null != ei || $?.state === k.XYD.FAILED) return (0, i.jsx)(L.A, {
         avError: ei?.type,
         avErrorContext: ei,
         selected: n,
         stream: t.stream,
         width: x
     });
-    if (t.type === k.lp.HIDDEN_STREAM) return (0, i.jsx)(D.A, {
+    if (t.type === U.lp.HIDDEN_STREAM) return (0, i.jsx)(D.A, {
         selected: n,
         participant: t,
         width: x
@@ -119,7 +119,7 @@ function W(e) {
             streamId: J,
             videoComponent: V,
             fit: g,
-            paused: w || $?.state === U.XYD.PAUSED || ee,
+            paused: w || $?.state === k.XYD.PAUSED || ee,
             videoSpinnerContext: Q ? m.u.SELF_STREAM : m.u.REMOTE_STREAM,
             userId: Y.id,
             streamKey: t.id

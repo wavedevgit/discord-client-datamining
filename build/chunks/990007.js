@@ -25,17 +25,17 @@ var i = n(488428),
     N = n(613057),
     S = n(652215);
 let x = "CachedTokens",
-    v = {
+    b = {
         "1273616940451102832": new o.A(2, +f.A.Millis.MINUTE)
     };
-async function b(e, t, n) {
+async function v(e, t, n) {
     let i, a, s, o, d, {
         client_id: c,
         response_type: u = "code",
         redirect_uri: f,
         code_challenge: N,
         code_challenge_method: x,
-        state: b,
+        state: v,
         nonce: y,
         scope: O,
         permissions: L,
@@ -78,7 +78,7 @@ async function b(e, t, n) {
             redirectUri: f,
             codeChallenge: N,
             codeChallengeMethod: x,
-            state: b,
+            state: v,
             integrationType: a,
             signal: U
         }), (0, h.vG)(c)])
@@ -99,7 +99,7 @@ async function b(e, t, n) {
             redirectUri: f,
             codeChallenge: N,
             codeChallengeMethod: x,
-            state: b,
+            state: v,
             nonce: y,
             integrationType: a
         })).location
@@ -116,7 +116,7 @@ async function b(e, t, n) {
     try {
         V = r.iu(L ?? 0)
     } catch (e) {}
-    if (null != s.integration_type && Object.values(l.b).includes(s.integration_type) && (i = new Map).set(s.integration_type, s), null != v[s.application.id] && (await v[s.application.id].process(), U?.aborted)) throw new T.A({
+    if (null != s.integration_type && Object.values(l.b).includes(s.integration_type) && (i = new Map).set(s.integration_type, s), null != b[s.application.id] && (await b[s.application.id].process(), U?.aborted)) throw new T.A({
         errorCode: S.Lw6.UNKNOWN_ERROR
     }, "Request aborted");
     return t({
@@ -128,7 +128,7 @@ async function b(e, t, n) {
         redirectUri: f,
         codeChallenge: N,
         codeChallengeMethod: x,
-        state: b,
+        state: v,
         guildId: R,
         channelId: P,
         prompt: D,
@@ -203,7 +203,7 @@ function O(e, t) {
                         errorCode: S.Lw6.INVALID_COMMAND
                     }, "No application.");
                     let o = a.F.IDENTIFY,
-                        d = () => b({
+                        d = () => v({
                             client_id: n,
                             scope: o,
                             response_type: "token",
@@ -268,7 +268,7 @@ function O(e, t) {
                     errorCode: S.Lw6.INVALID_CLIENTID
                 }, "Application does not match the connection's");
                 let o = a.scopes || a.scope;
-                return delete a.scopes, b({
+                return delete a.scopes, v({
                     ...a,
                     scope: o,
                     signal: l,

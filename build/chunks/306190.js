@@ -22,7 +22,7 @@ let p = function(e) {
         setQuestId: n,
         quest: p,
         refreshQuest: E
-    } = e, [I, f] = l.useState(!1), [C, T] = l.useState(!1), N = l.useRef(null), S = (0, u.pT)(), x = (0, a.bG)([c.A], () => null != t ? c.A.getFetchQuestPreviewError(t) : null, [t]), v = (0, a.bG)([c.A], () => null != t && c.A.isFetchingQuestPreview(t), [t]), b = l.useMemo(() => {
+    } = e, [I, f] = l.useState(!1), [C, T] = l.useState(!1), N = l.useRef(null), S = (0, u.pT)(), x = (0, a.bG)([c.A], () => null != t ? c.A.getFetchQuestPreviewError(t) : null, [t]), b = (0, a.bG)([c.A], () => null != t && c.A.isFetchingQuestPreview(t), [t]), v = l.useMemo(() => {
         let e = S.map(e => ({
             id: e.id,
             label: `${e.config?.messages?.questName??e.id} (${e.id})`,
@@ -77,7 +77,7 @@ let p = function(e) {
                             selectionMode: "single",
                             label: "Quest ID",
                             hideLabel: !0,
-                            options: b,
+                            options: v,
                             value: t,
                             onSelectionChange: R,
                             placeholder: m.intl.string(m.t.Zw8jxn),
@@ -94,7 +94,7 @@ let p = function(e) {
                             onClick: E,
                             "aria-label": m.intl.string(m.t.wzzjk9),
                             icon: r.fNY,
-                            loading: v
+                            loading: b
                         })]
                     })]
                 })
@@ -148,6 +148,6 @@ let p = function(e) {
             })
         }), null != x ? (0, i.jsx)(A.P, {
             error: x
-        }) : null, v ? (0, i.jsx)(r.y$y, {}) : null]
+        }) : null, b ? (0, i.jsx)(r.y$y, {}) : null]
     })
 }

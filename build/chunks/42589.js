@@ -1,22 +1,22 @@
 /** chunk id: 42589 params = (module,exports,require) **/
 n.d(t, {
     EB: () => g,
-    G: () => r,
+    G: () => l,
     Qb: () => m,
     aU: () => h,
     o5: () => d
 }), n(321073);
-var i, r = ((i = {}).GuildText = "GUILD_TEXT", i.GuildVoice = "GUILD_VOICE", i.DirectMessage = "DIRECT_MESSAGE", i.GroupDM = "GROUP_DM", i);
+var i, l = ((i = {}).GuildText = "GUILD_TEXT", i.GuildVoice = "GUILD_VOICE", i.DirectMessage = "DIRECT_MESSAGE", i.GroupDM = "GROUP_DM", i);
 
-function l(e, t, n, i) {
-    let r = 0;
-    for (let [l, s] of e.entries()) {
-        let e = i(l);
+function r(e, t, n, i) {
+    let l = 0;
+    for (let [r, s] of e.entries()) {
+        let e = i(r);
         if (e <= 0) continue;
         let a = e * o(s, t, n);
-        a > r && (r = a)
+        a > l && (l = a)
     }
-    return r
+    return l
 }
 class s {
     signals;
@@ -45,12 +45,12 @@ class s {
             let n = o(this.signals.lastUnreadAtMs, e, 18e5);
             t += .8 * n, this.scoreInfo.rawSignalsScore.lastUnreadAtMs = n
         }
-        let n = l(this.signals.recentMessageAuthorIds, e, 6e5, this.providers.getNormalizedUserAffinity);
+        let n = r(this.signals.recentMessageAuthorIds, e, 6e5, this.providers.getNormalizedUserAffinity);
         return this.scoreInfo.rawSignalsScore.recentMessageAuthorIds = n, t += 1.2 * n
     }
     _computeActivityScore(e) {
         if (!this.signals.isTyping) return 0;
-        let t = l(this.signals.typingUserIdsWithTimestampMs, e, 15e3, this.providers.getNormalizedUserAffinity);
+        let t = r(this.signals.typingUserIdsWithTimestampMs, e, 15e3, this.providers.getNormalizedUserAffinity);
         return this.scoreInfo.rawSignalsScore.typingUserIdsWithTimestampMs = t, 1.5 * t
     }
     getScoreWithoutPenalty(e) {
@@ -114,35 +114,35 @@ class a {
     }
     _computeVoiceUsersScore(e) {
         if (0 === this.signals.voiceUsersWithJoinTimestampMs.size) return 0;
-        let t = l(this.signals.voiceUsersWithJoinTimestampMs, e, 6e5, this.providers.getNormalizedUserAffinity);
+        let t = r(this.signals.voiceUsersWithJoinTimestampMs, e, 6e5, this.providers.getNormalizedUserAffinity);
         return this.scoreInfo.rawSignalsScore.voiceUsersWithJoinTimestampMs = t, 1.25 * t
     }
     _computeVoiceActivityScore(e) {
         let t = 0;
         null != this.signals.lastVoiceJoinAtMs && (t = Math.max(t, o(this.signals.lastVoiceJoinAtMs, e, 12e4))), this.scoreInfo.rawSignalsScore.lastVoiceJoinAtMs = t;
-        let n = l(this.signals.lastUnmuteActivityAtMs, e, 12e4, this.providers.getNormalizedUserAffinity);
-        return this.scoreInfo.rawSignalsScore.lastUnmuteActivityAtMs = n, n = Math.max(n, l(this.signals.lastUndeafenActivityAtMs, e, 12e4, this.providers.getNormalizedUserAffinity)), this.scoreInfo.rawSignalsScore.lastUndeafenActivityAtMs = n, 1.25 * (n + t)
+        let n = r(this.signals.lastUnmuteActivityAtMs, e, 12e4, this.providers.getNormalizedUserAffinity);
+        return this.scoreInfo.rawSignalsScore.lastUnmuteActivityAtMs = n, n = Math.max(n, r(this.signals.lastUndeafenActivityAtMs, e, 12e4, this.providers.getNormalizedUserAffinity)), this.scoreInfo.rawSignalsScore.lastUndeafenActivityAtMs = n, 1.25 * (n + t)
     }
     _computeStreamUsersScore(e) {
-        let t = l(this.signals.streamUsersWithTimestampMs, e, 6e5, this.providers.getNormalizedUserAffinity);
+        let t = r(this.signals.streamUsersWithTimestampMs, e, 6e5, this.providers.getNormalizedUserAffinity);
         this.scoreInfo.rawSignalsScore.streamUsersWithTimestampMs = t;
-        let n = l(this.signals.videoUsersWithTimestampMs, e, 6e5, this.providers.getNormalizedUserAffinity);
+        let n = r(this.signals.videoUsersWithTimestampMs, e, 6e5, this.providers.getNormalizedUserAffinity);
         return this.scoreInfo.rawSignalsScore.videoUsersWithTimestampMs = n, 2 * (t + n)
     }
     computeScore(e) {
         let t = this._computeTextualScore(e),
             n = this._computeVoiceUsersScore(e),
             i = this._computeVoiceActivityScore(e),
-            r = this._computeStreamUsersScore(e),
-            l = c(e, this.lastActivityAtMs);
-        return this.scoreInfo.penalty = l, this.scoreInfo.voiceUsersScore = n, this.scoreInfo.voiceActivityScore = i, this.scoreInfo.streamUsersScore = r, (t + n + i + r) * (1 - l)
+            l = this._computeStreamUsersScore(e),
+            r = c(e, this.lastActivityAtMs);
+        return this.scoreInfo.penalty = r, this.scoreInfo.voiceUsersScore = n, this.scoreInfo.voiceActivityScore = i, this.scoreInfo.streamUsersScore = l, (t + n + i + l) * (1 - r)
     }
     pruneSignals(e) {
         this._textualScore.pruneSignals(e);
         let t = t => {
             if (0 === t.size) return t;
             let n = new Map;
-            for (let [i, r] of t.entries()) e - r <= 12e4 && n.set(i, r);
+            for (let [i, l] of t.entries()) e - l <= 12e4 && n.set(i, l);
             return n
         };
         this.signals = {

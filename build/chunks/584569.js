@@ -1,6 +1,6 @@
 /** chunk id: 584569 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => v
 });
 var i = n(311907),
     l = n(205693),
@@ -86,7 +86,7 @@ class T extends i.Ay.Store {
         return f.values()
     }
 }
-let N = new T(s.h, {
+let v = new T(s.h, {
     CONNECTION_OPEN: function() {
         I()
     },

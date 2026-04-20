@@ -3,9 +3,9 @@ n.d(t, {
     A: () => _
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    s = n.n(r),
     a = n(825638),
     o = n(397927),
     u = n(475743),
@@ -24,30 +24,30 @@ let p = {
         friction: 18,
         clamp: !0
     },
-    _ = r.memo(function(e) {
+    _ = l.memo(function(e) {
         let {
             widgetId: t,
             tileWidth: n,
-            tileHeight: l,
+            tileHeight: r,
             layout: _,
             locked: S,
             activeStreams: x,
             streamParticipants: T,
-            participantsVersion: C,
-            pinned: N,
+            participantsVersion: N,
+            pinned: C,
             padding: v
         } = e, y = T.map(e => ({
             participant: e,
             key: e.user.id,
             width: n,
-            height: l,
+            height: r,
             locked: S,
             widgetId: t,
-            pinned: N
-        })), M = (0, u.A)(n), b = (0, u.A)(S), R = _ === A.IV.VERTICAL, D = S || b !== S || M !== n, O = r.useMemo(() => {
+            pinned: C
+        })), M = (0, u.A)(n), R = (0, u.A)(S), D = _ === A.IV.VERTICAL, b = S || R !== S || M !== n, O = l.useMemo(() => {
             let e = 0,
                 t = 0;
-            return R ? y.map((t, n) => ({
+            return D ? y.map((t, n) => ({
                 ...t,
                 y: (e += t.height + (n > 0 ? v : 0)) - t.height,
                 x: 0
@@ -56,7 +56,7 @@ let p = {
                 x: (t += e.width + (n > 0 ? v : 0)) - e.width,
                 y: 0
             }))
-        }, [y, v, R]), w = r.useMemo(() => 0 === O.length ? (0, f.uc)(m.Ub) : O.reduce((e, t) => e + t.height, 0) + (R ? v * (O.length - 1) : 0), [O, R, v]), j = r.useMemo(() => 0 === O.length ? m.Ub : O.reduce((e, t) => e + t.width, 0) + (R ? 0 : v * (O.length - 1)), [O, R, v]), k = (0, o.pnh)(O, {
+        }, [y, v, D]), w = l.useMemo(() => 0 === O.length ? (0, f.uc)(m.Ub) : O.reduce((e, t) => e + t.height, 0) + (D ? v * (O.length - 1) : 0), [O, D, v]), j = l.useMemo(() => 0 === O.length ? m.Ub : O.reduce((e, t) => e + t.width, 0) + (D ? 0 : v * (O.length - 1)), [O, D, v]), U = (0, o.pnh)(O, {
             key: e => e.key,
             from: {
                 height: 0,
@@ -71,13 +71,13 @@ let p = {
                     x: t,
                     y: n,
                     width: i,
-                    height: r
+                    height: l
                 } = e;
                 return {
                     x: t,
                     y: n,
                     width: i,
-                    height: r,
+                    height: l,
                     opacity: 1
                 }
             },
@@ -86,49 +86,49 @@ let p = {
                     x: t,
                     y: n,
                     width: i,
-                    height: r
+                    height: l
                 } = e;
                 return {
                     x: t,
                     y: n,
                     width: i,
-                    height: r
+                    height: l
                 }
             },
             config: p,
-            trail: 100 * !D
-        }, D ? "animate-never" : "respect-motion-settings"), U = (0, h.Dk)(() => new Set(T.map(e => e.user.id)), [T, C]), L = (0, h.Dk)(() => new Set(T.filter(e => x.has((0, d._z)(e.stream))).map(e => e.user.id)), [T, x, C]);
-        return r.useEffect(() => {
-            0 !== U.size && (0, h.Y)(I.uss.GO_LIVE, {
+            trail: 100 * !b
+        }, b ? "animate-never" : "respect-motion-settings"), L = (0, h.Dk)(() => new Set(T.map(e => e.user.id)), [T, N]), k = (0, h.Dk)(() => new Set(T.filter(e => x.has((0, d._z)(e.stream))).map(e => e.user.id)), [T, x, N]);
+        return l.useEffect(() => {
+            0 !== L.size && (0, h.Y)(I.uss.GO_LIVE, {
                 locked: c.default.isInstanceLocked(),
-                shownUserIds: Array.from(U),
-                liveUserIds: Array.from(L),
+                shownUserIds: Array.from(L),
+                liveUserIds: Array.from(k),
                 contentInventoryIds: []
             })
-        }, [U, L]), (0, i.jsx)("div", {
+        }, [L, k]), (0, i.jsx)("div", {
             className: s()({
                 [E.UT]: !0,
-                [E.Vd]: R,
-                [E.xM]: !R
+                [E.Vd]: D,
+                [E.xM]: !D
             }),
-            style: R ? {
+            style: D ? {
                 height: w
             } : {
                 width: j
             },
-            children: k((e, t, r, s) => (0, i.jsx)(a.animated.div, {
+            children: U((e, t, l, s) => (0, i.jsx)(a.animated.div, {
                 className: E.ux,
                 style: Object.assign({}, e, {
                     width: n,
-                    height: l,
+                    height: r,
                     zIndex: y.length - s
                 }),
                 children: (e => {
                     let {
                         participant: t,
                         width: n,
-                        locked: r,
-                        widgetId: l,
+                        locked: l,
+                        widgetId: r,
                         pinned: s
                     } = e;
                     return (0, i.jsx)("div", {
@@ -136,8 +136,8 @@ let p = {
                         children: (0, i.jsx)(g.d, {
                             participant: t,
                             width: n,
-                            locked: r,
-                            widgetId: l,
+                            locked: l,
+                            widgetId: r,
                             pinned: s
                         }, t.user.id)
                     })

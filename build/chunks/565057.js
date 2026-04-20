@@ -47,8 +47,8 @@ let N = e => {
         setSortType: U,
         sortedItems: V,
         sortOptions: W,
-        shuffleProducts: z,
-        showRecommendationOption: K
+        shuffleProducts: K,
+        showRecommendationOption: z
     } = (0, L.A)({
         sortedSkuIds: l,
         isPremiumUser: D,
@@ -79,7 +79,7 @@ let N = e => {
                     children: [(0, n.jsx)(c.Heading, {
                         variant: "heading-lg/semibold",
                         children: s
-                    }), K && (0, n.jsx)(o.m, {
+                    }), z && (0, n.jsx)(o.m, {
                         text: T.intl.string(T.t["3taPdj"]),
                         position: "top",
                         "aria-label": T.intl.string(T.t["3taPdj"]),
@@ -129,7 +129,7 @@ let N = e => {
                             onClick: () => {
                                 X({
                                     isShuffling: !0,
-                                    onOutroComplete: z,
+                                    onOutroComplete: K,
                                     returnRef: et
                                 }), p.default.track(k.HAw.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
                                     page_session_id: Q

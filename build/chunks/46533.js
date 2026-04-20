@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(250719),
     S = n(780645),
     x = n(72152),
-    v = n(502103),
-    b = n(929163),
+    b = n(502103),
+    v = n(929163),
     y = n(423183),
     O = n(568185),
     L = n(225437),
@@ -441,10 +441,10 @@ function ep(e) {
     }, [t, ea, en]);
     let [eo, eA] = (0, E.Ay)(e => [ec.cA.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(eu.m.GUILD_HEADER_TOOLTIPS)], r.x), eh = (0, p.A)(A), em = (0, u.red)(u.DXt), ep = (0, s.bG)([Q.A], () => Q.A.hasLayers()), eE = (0, D.xr)(e => e.fullScreenLayers.length > 0), eI = (0, s.bG)([Y.A], () => Y.A.shouldShow(e_)), ef = (0, y.A)(t), eC = A?.features.has(ed.GuildFeatures.HUB) === !0, eT = P && A?.features.has(ed.GuildFeatures.DISCOVERABLE) === !0, eN = (0, s.bG)([L.A, Q.A], () => null != A && null != F && P && !Q.A.hasLayers() && L.A.shouldShowGuildTemplateDirtyTooltip(t)), eS = (0, s.bG)([W.A], () => W.A.getChannel(a)), {
         isPopoutOpen: ex
-    } = (0, x.S)(), ev = A?.features.has(ed.GuildFeatures.COMMUNITY) ?? !1, eb = et.Ay.isNewUser(F), ey = ei && !eb;
-    (0, v.A)(A);
+    } = (0, x.S)(), eb = A?.features.has(ed.GuildFeatures.COMMUNITY) ?? !1, ev = et.Ay.isNewUser(F), ey = ei && !ev;
+    (0, b.A)(A);
     let eO = (0, I.JZ)(o.M.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
-        eL = (0, b.A)(t),
+        eL = (0, v.A)(t),
         eR = (0, s.bG)([J.A], () => J.A.getChannelId()),
         eP = (0, s.bG)([Z.A], () => Z.A.desyncedVoiceStatesCount),
         eD = (0, V.A)(t);
@@ -502,7 +502,7 @@ function ep(e) {
         anyLayerOpen: em || ep || eE,
         showGuildHeaderTutorial: eI,
         showGuildTemplateDirtyTooltip: eN,
-        showNewUnreadsBar: ev,
+        showNewUnreadsBar: eb,
         isHeaderPopoutOpen: ex,
         enableStudyGroup: z,
         isGuildHeaderDismissibleTooltipShown: eA,

@@ -1,9 +1,9 @@
 /** chunk id: 70191 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => l
 });
 var i = n(652215);
 
-function r(e) {
+function l(e) {
     return (e.type === i.$pd.PLAYING || e.type === i.$pd.COMPETING) && null != e.application_id
 }

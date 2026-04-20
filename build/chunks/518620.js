@@ -49,7 +49,7 @@ let h = function(e) {
         t.scrollToBottom({
             callback: () => requestAnimationFrame(() => e())
         })
-    }), []), v = l.useCallback(e => {
+    }), []), b = l.useCallback(e => {
         let t = document.querySelector(e),
             n = N.current;
         null != t && null != n && n.scrollIntoViewNode({
@@ -57,15 +57,15 @@ let h = function(e) {
             padding: 8,
             callback: () => t?.focus()
         })
-    }, []), b = (0, a.Ay)({
+    }, []), v = (0, a.Ay)({
         id: "people-list",
         isEnabled: T,
         scrollToStart: S,
         scrollToEnd: x,
-        setFocus: v
+        setFocus: b
     }), y = l.useMemo(() => t.map(e => e.length), [t]);
     return (0, i.jsx)(r.hD, {
-        navigator: b,
+        navigator: v,
         children: (0, i.jsx)(r.PR, {
             children: e => {
                 let {

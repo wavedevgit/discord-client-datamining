@@ -59,14 +59,14 @@ function I(e) {
             default:
                 return t.timestamp
         }
-    }, [t]), N = (0, r.bG)([A.A], () => A.A.getChannel(I), [I]), S = (0, s.Ay)(N), x = N?.guild_id ?? f, v = (0, r.bG)([h.A], () => null != x ? h.A.getGuild(x) : null, [x]), b = (0, r.bG)([_.default], () => null != C ? _.default.getUser(C) : null, [C]);
+    }, [t]), N = (0, r.bG)([A.A], () => A.A.getChannel(I), [I]), S = (0, s.Ay)(N), x = N?.guild_id ?? f, b = (0, r.bG)([h.A], () => null != x ? h.A.getGuild(x) : null, [x]), v = (0, r.bG)([_.default], () => null != C ? _.default.getUser(C) : null, [C]);
     return "unknown" === n ? null : (0, i.jsx)("div", {
         className: E.kL,
         children: (0, i.jsxs)("div", {
             className: E.wx,
             children: [(() => {
-                if ("guild" === n && null != v) return (0, i.jsx)(d.Ay, {
-                    guild: v,
+                if ("guild" === n && null != b) return (0, i.jsx)(d.Ay, {
+                    guild: b,
                     size: "Medium",
                     active: !1,
                     showBadge: !1,
@@ -75,11 +75,11 @@ function I(e) {
                     tooltipPosition: "top",
                     animate: !1
                 });
-                if ("user" === n && null != b) {
-                    let e = b.getAvatarURL(void 0, 50);
+                if ("user" === n && null != v) {
+                    let e = v.getAvatarURL(void 0, 50);
                     return (0, i.jsx)("img", {
                         src: e,
-                        alt: b.username,
+                        alt: v.username,
                         className: E.my
                     })
                 }
@@ -90,12 +90,12 @@ function I(e) {
                     className: E.$,
                     children: (0, i.jsxs)("div", {
                         className: E.gH,
-                        children: ["guild" === n && null != v ? (0, i.jsx)("div", {
+                        children: ["guild" === n && null != b ? (0, i.jsx)("div", {
                             className: E.DD,
-                            children: v.name
-                        }) : "user" === n && null != b ? (0, i.jsx)("div", {
+                            children: b.name
+                        }) : "user" === n && null != v ? (0, i.jsx)("div", {
                             className: E.DD,
-                            children: b.username
+                            children: v.username
                         }) : null, (0, i.jsx)("div", {
                             className: E.vE,
                             children: (0, u.jb)(T)
@@ -133,7 +133,7 @@ function I(e) {
                         })
                     });
                     if (null != N && null != e) {
-                        let t = (0, o.gU)(N, v);
+                        let t = (0, o.gU)(N, b);
                         return (0, i.jsxs)("div", {
                             className: E.VA,
                             children: [(0, i.jsx)("span", {

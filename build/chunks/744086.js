@@ -22,40 +22,40 @@ var i = s(141931),
     j = s(213279),
     v = s(420659),
     A = s(502075),
-    y = s(753070),
-    S = s(731854),
+    S = s(753070),
+    y = s(731854),
     C = s(710787),
     b = s(985018),
     w = s(396989);
 let I = [{
-        value: y.jQ.PRESET_AUTO,
+        value: S.jQ.PRESET_AUTO,
         canUse: e => e !== i.fS.CAMERA && (0, h.eO)({
             location: "StreamOptionsMenu"
         }).allowAutoQuality
     }, {
-        value: y.jQ.PRESET_VIDEO,
+        value: S.jQ.PRESET_VIDEO,
         canUse: e => !0
     }, {
-        value: y.jQ.PRESET_DOCUMENTS,
+        value: S.jQ.PRESET_DOCUMENTS,
         canUse: e => e !== i.fS.CAMERA
     }, {
-        value: y.jQ.PRESET_CUSTOM,
+        value: S.jQ.PRESET_CUSTOM,
         canUse: e => !0
     }],
     E = [{
-        value: y.on.RESOLUTION_720,
+        value: S.on.RESOLUTION_720,
         canUse: e => !0
     }, {
-        value: y.on.RESOLUTION_1080,
+        value: S.on.RESOLUTION_1080,
         canUse: e => !0
     }, {
-        value: y.on.RESOLUTION_1440,
+        value: S.on.RESOLUTION_1440,
         canUse: e => !0
     }, {
-        value: y.on.RESOLUTION_SOURCE,
+        value: S.on.RESOLUTION_SOURCE,
         canUse: e => e !== i.fS.CAMERA
     }],
-    N = [y.kn.FPS_15, y.kn.FPS_30, y.kn.FPS_60];
+    N = [S.kn.FPS_15, S.kn.FPS_30, S.kn.FPS_60];
 
 function O(e) {
     let {
@@ -90,8 +90,8 @@ function T(e) {
         if (null == t) return !0;
         let s = d.A.getMemberCount(t);
         return null == s || s > A.oe && s <= A.G1
-    }, [P]), k = (0, g.A)(), [H, B] = (0, v.A)(y.jQ.PRESET_VIDEO) ?? [y.on.RESOLUTION_720, y.kn.FPS_30], [W, Z] = (0, v.A)(y.jQ.PRESET_DOCUMENTS) ?? [y.on.RESOLUTION_SOURCE, y.kn.FPS_15], V = (0, o.H)({
-        deviceType: S.oh.AUDIO_INPUT,
+    }, [P]), k = (0, g.A)(), [H, B] = (0, v.A)(S.jQ.PRESET_VIDEO) ?? [S.on.RESOLUTION_720, S.kn.FPS_30], [W, Z] = (0, v.A)(S.jQ.PRESET_DOCUMENTS) ?? [S.on.RESOLUTION_SOURCE, S.kn.FPS_15], V = (0, o.H)({
+        deviceType: y.oh.AUDIO_INPUT,
         selectedDeviceId: h,
         analyticsLocations: [a.A.GO_LIVE_MODAL_SETTINGS_SELECTION],
         asSubmenu: !0,
@@ -133,19 +133,19 @@ function T(e) {
                     label: (0, m.K)(t),
                     subtext: function(e) {
                         switch (e) {
-                            case y.jQ.PRESET_VIDEO:
+                            case S.jQ.PRESET_VIDEO:
                                 return b.intl.format(C.default.G5O1Mz, {
                                     resolution: (0, _.b)(H),
                                     frameRate: B
                                 });
-                            case y.jQ.PRESET_DOCUMENTS:
+                            case S.jQ.PRESET_DOCUMENTS:
                                 return b.intl.format(C.default["8tcFL5"], {
                                     resolution: (0, _.b)(W),
                                     frameRate: Z
                                 });
-                            case y.jQ.PRESET_AUTO:
+                            case S.jQ.PRESET_AUTO:
                                 return b.intl.string(C.default.m4jtlc);
-                            case y.jQ.PRESET_CUSTOM:
+                            case S.jQ.PRESET_CUSTOM:
                                 return;
                             default:
                                 throw Error(`No case implemented for ${e}`)
@@ -157,7 +157,7 @@ function T(e) {
                     })
                 }, t)
             })
-        }), M === y.jQ.PRESET_CUSTOM && (0, r.jsxs)(r.Fragment, {
+        }), M === S.jQ.PRESET_CUSTOM && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(l.bXX, {}), (0, r.jsx)(l.Drp, {
                 id: "resolution",
                 label: b.intl.string(C.default.IG5n0X),
@@ -174,7 +174,7 @@ function T(e) {
                         group: "resolution",
                         id: `stream-option-resolution-${s}`,
                         checked: U === s,
-                        void_label: s !== y.on.RESOLUTION_720 ? (0, r.jsx)(O, {
+                        void_label: s !== S.on.RESOLUTION_720 ? (0, r.jsx)(O, {
                             label: (0, _.b)(s)
                         }) : (0, _.b)(s),
                         action: () => (function(e) {
@@ -195,7 +195,7 @@ function T(e) {
                     group: "frame-rate",
                     id: `stream-option-frame-rate-${e}`,
                     checked: G === e,
-                    void_label: e === y.kn.FPS_60 ? (0, r.jsx)(O, {
+                    void_label: e === S.kn.FPS_60 ? (0, r.jsx)(O, {
                         label: `${e}fps`
                     }) : `${e}fps`,
                     action: () => (function(e) {

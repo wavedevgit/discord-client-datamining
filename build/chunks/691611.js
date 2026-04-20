@@ -1,6 +1,6 @@
 /** chunk id: 691611 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => b
 });
 var i = n(627968),
     l = n(64700),
@@ -25,31 +25,31 @@ var i = n(627968),
     N = n(652215),
     S = n(372912),
     x = n(701628);
-let v = l.memo(function(e) {
+let b = l.memo(function(e) {
     let {
         message: t,
         className: n,
         onContextMenu: l,
         onClick: a,
-        hideSimpleEmbedContent: v = !0,
-        channel: b,
+        hideSimpleEmbedContent: b = !0,
+        channel: v,
         isGroupStart: y,
         animateAvatar: O,
         subscribeToComponentDispatch: L,
         renderThreadAccessory: R,
         ...P
-    } = e, D = t.type === N.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), j = t.isFirstMessageInForumPost(b), M = (0, c.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
+    } = e, D = t.type === N.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), j = t.isFirstMessageInForumPost(v), M = (0, c.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
         content: w,
         hasSpoilerEmbeds: U,
         hasBailedAst: G
     } = (0, m.A)(t, {
-        hideSimpleEmbedContent: v,
+        hideSimpleEmbedContent: b,
         allowList: j || M,
         allowHeading: j || M,
         allowLinks: !0,
         previewLinkTarget: !0
     }), k = (0, s.rm)(t.id), V = (0, A.Ay)(t), B = (0, o.bG)([C.A], () => t.hasFlag(N.pr7.HAS_THREAD) && C.A.getChannel(T.default.castMessageIdAsChannelId(t.id))), H = (0, d.$7)({
-        guildId: b.guild_id,
+        guildId: v.guild_id,
         roleId: V.iconRoleId
     }), F = (0, _.fF)(t), Y = (0, _.ZD)(t);
     return (0, i.jsx)(h.A, {
@@ -59,12 +59,12 @@ let v = l.memo(function(e) {
             [x.XN]: D
         }),
         disableInteraction: D,
-        childrenExecutedCommand: (0, f.A)(t, b, !1),
+        childrenExecutedCommand: (0, f.A)(t, v, !1),
         childrenHeader: (0, E.A)({
             message: t,
-            channel: b,
+            channel: v,
             author: V,
-            guildId: b.guild_id,
+            guildId: v.guild_id,
             compact: !1,
             animateAvatar: O,
             isGroupStart: !0,

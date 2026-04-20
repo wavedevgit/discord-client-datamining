@@ -1,6 +1,6 @@
 /** chunk id: 206018 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => N
 });
 var i = n(627968);
 n(64700);
@@ -25,13 +25,13 @@ var l = n(110259),
     S = n(509381),
     I = n(731854),
     T = n(985018),
-    N = n(347933);
+    v = n(347933);
 
-function v(e) {
+function N(e) {
     let {
         appContext: t,
         onInteraction: n,
-        onSelect: v,
+        onSelect: N,
         onClose: y,
         maybeRenderPTTCheckbox: b = !1,
         renderDeafenCheckbox: j = !1,
@@ -43,30 +43,30 @@ function v(e) {
         maybeRenderInputMeter: P = !1,
         renderSettingsButton: w = !1
     } = e, {
-        analyticsLocations: U
+        analyticsLocations: k
     } = (0, d.Ay)();
     (0, u.A)({
         type: l.ImpressionTypes.MENU,
         name: l.ImpressionNames.AUDIO_DEVICE_MENU,
         properties: {
-            location_stack: U
+            location_stack: k
         }
     });
-    let k = (0, C.A)(t),
+    let U = (0, C.A)(t),
         G = (0, h.H)({
             deviceType: I.oh.AUDIO_INPUT,
-            analyticsLocations: U,
+            analyticsLocations: k,
             asSubmenu: !0
         }),
         F = (0, h.H)({
             deviceType: I.oh.AUDIO_OUTPUT,
-            analyticsLocations: U,
+            analyticsLocations: k,
             asSubmenu: !0
         }),
         H = (0, s.bG)([_.Ay], () => _.Ay.getActiveInputProfile()),
-        B = (0, A.A)(U),
-        V = (0, m.A)(U),
-        W = (0, g.A)(U),
+        B = (0, A.A)(k),
+        V = (0, m.A)(k),
+        W = (0, g.A)(k),
         K = a.x.DEFAULT,
         z = _.Ay.isSelfDeaf(K),
         Y = (0, s.bG)([_.Ay], () => _.Ay.getMode()),
@@ -82,13 +82,13 @@ function v(e) {
         object: x.ZSU.CONTEXT_MENU,
         children: (0, i.jsxs)(r.W1t, {
             "data-menu-migrated": !0,
-            onSelect: v,
+            onSelect: N,
             onInteraction: n,
             onClose: y,
             navId: "audio-device-context",
             variant: "fixed",
             "aria-label": T.intl.string(T.t.ZR1Ss6),
-            className: N.MK,
+            className: v.MK,
             children: [(0, i.jsxs)(r.rXV, {
                 children: [D && G, R && B, M && F]
             }), (0, i.jsxs)(r.rXV, {
@@ -101,8 +101,8 @@ function v(e) {
                             section: x.JJy.CONTEXT_MENU
                         },
                         meterOnly: !0,
-                        containerClassName: N.Eq,
-                        notchClassName: N.CO
+                        containerClassName: v.Eq,
+                        notchClassName: v.CO
                     })
                 }), L && W]
             }), (0, i.jsxs)(r.rXV, {
@@ -111,7 +111,7 @@ function v(e) {
                     id: "input-mode",
                     label: T.intl.string(T.t.Q8gkVL),
                     action: () => o.A.setMode(J, void 0, void 0, {
-                        analyticsLocations: U
+                        analyticsLocations: k
                     }),
                     disabled: H === S.m.STUDIO
                 }) : null, j && (0, i.jsx)(r.sLh, {
@@ -122,7 +122,7 @@ function v(e) {
                         location: "AudioDeviceMenu"
                     }),
                     checked: z
-                }, "self-deafen"), w && k]
+                }, "self-deafen"), w && U]
             })]
         })
     })

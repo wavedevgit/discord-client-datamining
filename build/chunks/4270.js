@@ -1,6 +1,6 @@
 /** chunk id: 4270 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => v
 });
 var i = n(627968),
     l = n(64700),
@@ -25,14 +25,14 @@ var i = n(627968),
     N = n(687599),
     S = n(652215),
     x = n(985018),
-    v = n(900425);
+    b = n(900425);
 
-function b() {
+function v() {
     let e = l.useRef(null),
         t = (0, I.A)(),
         n = (0, f.I)(),
         a = (0, g.r)(),
-        b = (0, m.w)(),
+        v = (0, m.w)(),
         y = (0, u.A)("message-requests-spam-list"),
         {
             channelId: O
@@ -62,8 +62,8 @@ function b() {
             return (0, i.jsx)(T.A, {
                 index: n,
                 className: r()({
-                    [v.wH]: null != O && O === o,
-                    [v.wZ]: null != O && O === s
+                    [b.wH]: null != O && O === o,
+                    [b.wZ]: null != O && O === s
                 }),
                 channel: l.channel,
                 user: l.user,
@@ -71,12 +71,12 @@ function b() {
             }, o)
         }, [t, a, O]),
         j = l.useCallback(() => (0, i.jsxs)(A.A, {
-            className: v.Gf,
+            className: b.Gf,
             children: [x.intl.format(x.t.C79Edh, {
                 count: n
-            }), b && n > 0 ? (0, i.jsxs)(i.Fragment, {
+            }), v && n > 0 ? (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(d.Text, {
-                    className: v.sg,
+                    className: b.sg,
                     variant: "eyebrow",
                     color: "text-default",
                     tag: "span",
@@ -88,7 +88,7 @@ function b() {
                     "aria-label": x.intl.string(x.t.p6t7RC)
                 })]
             }) : null]
-        }, "message-requests-spam-title"), [n, P, b]);
+        }, "message-requests-spam-title"), [n, P, v]);
     return 0 === t.length ? (0, i.jsx)(C.A, {
         section: N.zz.SPAM
     }) : (0, i.jsx)(s.hD, {
@@ -101,7 +101,7 @@ function b() {
                     ...r
                 } = n;
                 return (0, i.jsx)(d.B8B, {
-                    className: v.p_,
+                    className: b.p_,
                     innerRole: a,
                     innerAriaLabel: x.intl.string(x.t.e7GWjQ),
                     ref: t => {

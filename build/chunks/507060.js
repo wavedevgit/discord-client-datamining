@@ -41,13 +41,13 @@ let T = (0, _.Fe)({
         webpackId: 422559,
         name: "GuildSettings"
     }),
-    v = {
+    b = {
         [I.zgK.CHANNEL_SETTINGS]: () => (0, i.jsx)(N, {}),
         [I.zgK.GUILD_SETTINGS]: () => (0, i.jsx)(x, {}),
         [I.zgK.COLLECTIBLES_SHOP]: () => (0, i.jsx)(S, {}),
         [I.zgK.COMPONENT_PLAYGROUND]: () => (0, i.jsx)(T, {})
     },
-    b = "SHOWN",
+    v = "SHOWN",
     y = "HIDDEN",
     O = {
         friction: 10,
@@ -87,8 +87,8 @@ class R extends l.PureComponent {
             mode: n
         } = e;
         if (t !== n) {
-            if (t === b && n === y) return this.animateIn();
-            if (t === y && n === b) return this.animateUnder()
+            if (t === v && n === y) return this.animateIn();
+            if (t === y && n === v) return this.animateUnder()
         }
     }
     componentWillEnter(e) {
@@ -230,16 +230,16 @@ class P extends l.PureComponent {
             length: l
         } = t, a = [];
         return a.push((0, i.jsx)(R, {
-            mode: 0 !== l || n ? y : b,
+            mode: 0 !== l || n ? y : v,
             baseLayer: !0,
             children: e
         }, "layer-base")), t.forEach((e, t) => a.push(this.renderComponent(e, t, l))), a
     }
     renderComponent(e, t, n) {
         let l;
-        return l = "string" == typeof e ? v[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(R, {
+        return l = "string" == typeof e ? b[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(R, {
             name: "string" == typeof e ? e : void 0,
-            mode: t === n - 1 ? b : y,
+            mode: t === n - 1 ? v : y,
             children: [(0, i.jsx)(L, {}), l]
         }, `layer-${t}`)
     }

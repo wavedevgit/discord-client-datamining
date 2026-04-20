@@ -1,6 +1,6 @@
 /** chunk id: 91624 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => v
 }), n(938796);
 var i = n(627968),
     l = n(64700),
@@ -45,8 +45,8 @@ function I(e) {
         id: c
     } = t, {
         id: d
-    } = n, g = t.getGuildId(), _ = (0, a.bG)([m.A], () => m.A.getGuild(g), [g]), f = t.type === C.rbe.GUILD_ANNOUNCEMENT, I = null != _ && _.features.has(C.GuildFeatures.NEWS), N = f && I, {
-        editingMessage: v,
+    } = n, g = t.getGuildId(), _ = (0, a.bG)([m.A], () => m.A.getGuild(g), [g]), f = t.type === C.rbe.GUILD_ANNOUNCEMENT, I = null != _ && _.features.has(C.GuildFeatures.NEWS), v = f && I, {
+        editingMessage: N,
         editingTextValue: y,
         editingRichValue: b
     } = (0, a.cf)([h.A], () => ({
@@ -56,7 +56,7 @@ function I(e) {
     }), [c]), j = (0, a.bG)([u.default], () => u.default.getId()), R = l.useCallback((e, i, l) => {
         let {
             content: a
-        } = l, c = A.A.can(C.xBc.MANAGE_MESSAGES, t), d = null != v && null != v.author ? v.author.id : null, u = N && (d === j || c), h = {
+        } = l, c = A.A.can(C.xBc.MANAGE_MESSAGES, t), d = null != N && null != N.author ? N.author.id : null, u = v && (d === j || c), h = {
             content: a,
             components: void 0
         };
@@ -69,8 +69,8 @@ function I(e) {
                 id: "82744"
             }), h.content = "", h.components = t
         }
-        return u && null != v && (0, s.Lt)(v.flags, C.pr7.CROSSPOSTED) ? p.A.confirmEdit(e, i, h) : r.A.editMessage(e, i, h), Promise.resolve()
-    }, [v, N, j, t, n]), M = l.useCallback(e => (0, l.createElement)(T, {
+        return u && null != N && (0, s.Lt)(N.flags, C.pr7.CROSSPOSTED) ? p.A.confirmEdit(e, i, h) : r.A.editMessage(e, i, h), Promise.resolve()
+    }, [N, v, j, t, n]), M = l.useCallback(e => (0, l.createElement)(T, {
         ...e,
         className: x.gM,
         key: d
@@ -124,7 +124,7 @@ function T(e) {
     }, s.id)
 }
 
-function N(e, t, n) {
+function v(e, t, n) {
     let {
         message: l,
         channel: s,

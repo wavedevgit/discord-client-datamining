@@ -3,8 +3,8 @@ n.d(t, {
     A: () => g
 });
 var i = n(311907),
-    r = n(73153),
-    l = n(640631),
+    l = n(73153),
+    r = n(640631),
     s = n(626584),
     a = n(734057),
     o = n(320501),
@@ -18,7 +18,7 @@ class h extends i.Ay.Store {
     guilds = new Map;
     generation = 0;
     constructor() {
-        super(r.h, {
+        super(l.h, {
             CONNECTION_OPEN: e => this.handleConnectionOpen(e),
             GUILD_CREATE: e => this.handleGuildCreate(e),
             GUILD_DELETE: e => this.handleGuildDelete(e),
@@ -76,9 +76,9 @@ class h extends i.Ay.Store {
             n = e.message.channel_id,
             i = e.message.id;
         if (null == n || null == i) return !1;
-        let r = this.data(t);
-        if (r?.messageId(n) !== i) return !1;
-        r?.update(e.message)
+        let l = this.data(t);
+        if (l?.messageId(n) !== i) return !1;
+        l?.update(e.message)
     }
     handleThreadListSync(e) {
         this.data(e.guildId).putMany(e.mostRecentMessages ?? [], this.generation)
@@ -86,11 +86,11 @@ class h extends i.Ay.Store {
     handleLoadMessagesSuccess(e) {
         let t = a.A.getBasicChannel(e.channelId);
         if (null == t) return !1;
-        (0, l.D)(e.messages), e.isAfter || e.isBefore || e.hasMoreAfter ? this.data(t.guild_id).putNew(e.channelId, e.messages[0] ?? null, this.generation) : this.data(t.guild_id).put(e.channelId, e.messages[0] ?? null, this.generation)
+        (0, r.D)(e.messages), e.isAfter || e.isBefore || e.hasMoreAfter ? this.data(t.guild_id).putNew(e.channelId, e.messages[0] ?? null, this.generation) : this.data(t.guild_id).put(e.channelId, e.messages[0] ?? null, this.generation)
     }
     handleLocalMessagesLoaded(e) {
         let t = a.A.getBasicChannel(e.channelId);
-        null != t && ((0, l.D)(e.messages), this.data(t.guild_id).putNew(e.channelId, e.messages[0] ?? null, d))
+        null != t && ((0, r.D)(e.messages), this.data(t.guild_id).putNew(e.channelId, e.messages[0] ?? null, d))
     }
     handleMessagePreviewsLoaded(e) {
         c.verbose(`adding remote previews (guildId: ${e.guildId}, messages: ${e.messages.length})`);

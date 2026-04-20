@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(270045),
     S = n(201805),
     x = n(212614),
-    v = n(79545),
-    b = n(847641),
+    b = n(79545),
+    v = n(847641),
     y = n(311243),
     O = n(545986),
     L = n(654487),
@@ -73,7 +73,7 @@ function M(e) {
         launchInGameActivity: w
     } = (0, g.zW)(n), U = _.t.useConfig({
         location: L.rE.ACTIVITY_PANEL
-    }), G = (0, v.Pd)(n), k = l.useCallback(e => {
+    }), G = (0, b.Pd)(n), k = l.useCallback(e => {
         e.stopPropagation()
     }, []), V = l.useCallback(() => {
         (0, u.Oy)(n.id, {
@@ -125,7 +125,7 @@ function M(e) {
             className: D.Wp,
             children: [Y ? (0, i.jsx)(j, {
                 quest: n
-            }) : (0, i.jsx)(b.A, {}), (0, i.jsx)(N.C, {
+            }) : (0, i.jsx)(v.A, {}), (0, i.jsx)(N.C, {
                 quest: n,
                 questContent: h.uF.ACTIVITY_PANEL,
                 shouldShowDisclosure: n.userStatus?.enrolledAt == null,
@@ -173,9 +173,9 @@ function M(e) {
                     variant: "secondary",
                     text: P.intl.string(P.t.LLLLPD),
                     onClick: H
-                }), U.enabled && G === v.UA.UNENROLLED && U.enabledQuestStates.has(v.UA.UNENROLLED) && !(0, f.Ic)(n) ? (0, i.jsx)(x.A, {
+                }), U.enabled && G === b.UA.UNENROLLED && U.enabledQuestStates.has(b.UA.UNENROLLED) && !(0, f.Ic)(n) ? (0, i.jsx)(x.A, {
                     quest: n,
-                    surface: v.V3.ACTIVITY_PANEL,
+                    surface: b.V3.ACTIVITY_PANEL,
                     size: "md",
                     analyticsCtxQuestContent: h.uF.ACTIVITY_PANEL,
                     analyticsCtxSourceQuestContent: h.uF.ACTIVITY_PANEL

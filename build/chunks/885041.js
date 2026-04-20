@@ -25,8 +25,8 @@ var i = n(627968),
     N = n(844358),
     S = n(828430),
     x = n(857365),
-    v = n(861638),
-    b = n(793574),
+    b = n(861638),
+    v = n(793574),
     y = n(114716),
     O = n(752412),
     L = n(105220),
@@ -79,8 +79,8 @@ var i = n(627968),
     eN = n(265367),
     eS = n(77509),
     ex = n(463347),
-    ev = n(334465),
-    eb = n(976860),
+    eb = n(334465),
+    ev = n(976860),
     ey = n(569745),
     eO = n(985986),
     eL = n(138298),
@@ -109,8 +109,8 @@ var i = n(627968),
     eJ = n(309010),
     e0 = n(967198),
     e1 = n(147964),
-    e6 = n(237631),
-    e7 = n(194871),
+    e7 = n(237631),
+    e6 = n(194871),
     e9 = n(856588),
     e5 = n(612181),
     e3 = n(723702),
@@ -122,7 +122,7 @@ var i = n(627968),
     tn = n(613057);
 n(115036), n(943577), n(131319), n(794383), n(845618), n(712687), n(328968), n(67480), n(874486), n(162605), n(2866), n(628965), n(752319), n(836602), n(555337), n(863036), n(291731), n(176360), n(972937), n(279061), n(750128), n(921955);
 let ti = !1;
-(0, v.as)(), s.Ay.initialize(), eO.A.loadServer(), e3.isPlatformEmbedded && (e2.Ay.on("USER_SETTINGS_OPEN", (e, t) => {
+(0, b.as)(), s.Ay.initialize(), eO.A.loadServer(), e3.isPlatformEmbedded && (e2.Ay.on("USER_SETTINGS_OPEN", (e, t) => {
     (0, eY.openUserSettings)()
 }), e2.Ay.on("LAUNCH_APPLICATION", (e, t) => {
     let n = eZ.A.getActiveLibraryApplication(t);
@@ -317,7 +317,7 @@ let tu = [{
         } = t.params;
         return (0, X.B)(() => (0, eG.openUserProfileModal)({
             userId: n,
-            sourceAnalyticsLocations: [b.A.URI_SCHEME]
+            sourceAnalyticsLocations: [v.A.URI_SCHEME]
         })), (0, i.jsx)(r.rd, {
             to: eQ.A.defaultRoute
         })
@@ -331,7 +331,7 @@ let tu = [{
             gameId: n,
             action: l
         } = t.params;
-        return e7.A.whenInitialized(() => {
+        return e6.A.whenInitialized(() => {
             eZ.A.whenInitialized(() => {
                 switch (l) {
                     case "launch": {
@@ -525,7 +525,7 @@ function tA(e) {
         }
         of tu) {
         if (!n) continue;
-        let i = (0, ev.B)(e, {
+        let i = (0, eb.B)(e, {
             path: t
         });
         if (null != i) return i
@@ -542,14 +542,14 @@ function th(e) {
     if (!Q.A.isConnected()) return;
     let {
         location: l
-    } = (0, eb.JK)();
-    l.pathname === i && (null == e$.A.getChannel(t) ? (0, eb.bG)(e8.BVt.CHANNEL(n)) : (0, eb.bG)(i))
+    } = (0, ev.JK)();
+    l.pathname === i && (null == e$.A.getChannel(t) ? (0, ev.bG)(e8.BVt.CHANNEL(n)) : (0, ev.bG)(i))
 }
 class t_ extends l.PureComponent {
     historyUnlisten = () => {};
     rewriterUnlisten = () => {};
     componentDidMount() {
-        e2.Ay.setZoomFactor(p.A.zoom), eO.A.init(), O.A.initialize(), eE.A.initialize(), K.A.initialize(), eK.A.initialize(), q.A.initialize(), eC.A.initialize(), k.A.initialize(), es.A.initialize(), E.A.init(), $.A.init(), z.A.init(), eA.A.initialize(), S.A.initialize(), H.A.initialize(), eT.A.initialize(), T.Ay.initialize(), F.Ay.initialize(), eW.A.initialize(), el.Ay.initialize(), ep.A.initialize(), C.A.initialize(), ea.A.init(), D.A.init(), e9.A.init(), f.A.initialize(), eU.A.init(), e6.A.init(), eV.A.init(), eD.A.initialize(), ej.A.initialize(), ek.A.initialize(), eH.A.init(), B.A.initialize(), I.A.initialize(), eP.A.initialize(), em.A.initialize(), e_.A.initialize(), eg.A.initialize(), j.A.initialize(), M.A.initialize(), W.A.initialize(), er.A.initialize(), eo.A.initialize(), eN.A.initialize(), eI.A.initialize(), P.A.initialize(), x.A.initialize(), this.rewriterUnlisten = eS.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eS.A.addRouteChangeListener(this.handleHistoryChange)
+        e2.Ay.setZoomFactor(p.A.zoom), eO.A.init(), O.A.initialize(), eE.A.initialize(), K.A.initialize(), eK.A.initialize(), q.A.initialize(), eC.A.initialize(), k.A.initialize(), es.A.initialize(), E.A.init(), $.A.init(), z.A.init(), eA.A.initialize(), S.A.initialize(), H.A.initialize(), eT.A.initialize(), T.Ay.initialize(), F.Ay.initialize(), eW.A.initialize(), el.Ay.initialize(), ep.A.initialize(), C.A.initialize(), ea.A.init(), D.A.init(), e9.A.init(), f.A.initialize(), eU.A.init(), e7.A.init(), eV.A.init(), eD.A.initialize(), ej.A.initialize(), ek.A.initialize(), eH.A.init(), B.A.initialize(), I.A.initialize(), eP.A.initialize(), em.A.initialize(), e_.A.initialize(), eg.A.initialize(), j.A.initialize(), M.A.initialize(), W.A.initialize(), er.A.initialize(), eo.A.initialize(), eN.A.initialize(), eI.A.initialize(), P.A.initialize(), x.A.initialize(), this.rewriterUnlisten = eS.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eS.A.addRouteChangeListener(this.handleHistoryChange)
     }
     componentWillUnmount() {
         eO.A.terminate(), eK.A.terminate(), eC.A.terminate(), eE.A.terminate(), O.A.terminate(), T.Ay.terminate(), F.Ay.terminate(), eW.A.terminate(), C.A.terminate(), eT.A.terminate(), ep.A.terminate(), ek.A.terminate(), f.A.terminate(), B.A.terminate(), eo.A.terminate(), I.A.terminate(), eN.A.terminate(), eP.A.terminate(), em.A.terminate(), e_.A.terminate(), eg.A.terminate(), j.A.terminate(), M.A.terminate(), eI.A.terminate(), Y.A.terminate(), P.A.terminate(), x.A.terminate(), W.A.terminate(), er.A.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
@@ -592,7 +592,7 @@ class t_ extends l.PureComponent {
                     let e = ez.Ay.getCurrentSidebarChannelId(n),
                         t = e !== s;
                     if (null != l && null != s && t)
-                        if (d)(0, eb.bG)(e8.BVt.CHANNEL(i, s, r));
+                        if (d)(0, ev.bG)(e8.BVt.CHANNEL(i, s, r));
                         else {
                             let e = {
                                 type: eR.LU.THREAD
@@ -613,7 +613,7 @@ class t_ extends l.PureComponent {
                         n = e === e8.BVt.GUILD_DISCOVERY;
                     t || n ? ed.A.closeSidebar() : ed.A.openSidebar()
                 } else(o && A || !_ && !o) && ed.A.closeSidebar()
-            } else td.some(t => (0, ev.B)(e, t)?.isExact === !0) || (0, eb.bG)(eQ.A.fallbackRoute)
+            } else td.some(t => (0, eb.B)(e, t)?.isExact === !0) || (0, ev.bG)(eQ.A.fallbackRoute)
         }(t, n), (0, V.MS)()
     }
     ensureChannelMatchesGuild(e) {

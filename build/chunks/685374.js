@@ -46,7 +46,7 @@ function I(e) {
         newChannel: h,
         inSettings: m,
         ...A
-    } = e, [E, S] = l.useState(""), [I, T] = l.useState({}), [N, v] = l.useState(!1), [y, b] = l.useState(null), j = l.useRef(null), R = (0, d.Ay)(n), {
+    } = e, [E, S] = l.useState(""), [I, T] = l.useState({}), [v, N] = l.useState(!1), [y, b] = l.useState(null), j = l.useRef(null), R = (0, d.Ay)(n), {
         roles: M,
         members: L,
         getRichTag: D
@@ -56,7 +56,7 @@ function I(e) {
     }), P = h && 0 === Object.keys(I).length;
     async function w() {
         if (null == n || 0 === Object.keys(I).length) return void a();
-        v(!0);
+        N(!0);
         try {
             var e, t, i;
             let l;
@@ -65,13 +65,13 @@ function I(e) {
                     row: n
                 } = t;
                 null != n.id && "" !== n.id && (n.rowType === f.T6.ROLE ? l.push((0, g.we)(n.id, e.type)) : n.rowType === f.T6.MEMBER && l.push((0, g.n3)(n.id, e.type)))
-            }), (0, o.R$)(e.id, l, i)), a(), v(!1)
+            }), (0, o.R$)(e.id, l, i)), a(), N(!1)
         } catch (t) {
             let e = new c.LG(t);
-            v(!1), b(e)
+            N(!1), b(e)
         }
     }
-    let U = (0, u.ke)(n.type) ? r.I$d : r.trU;
+    let k = (0, u.ke)(n.type) ? r.I$d : r.trU;
     return (0, i.jsx)(_.A.Provider, {
         listRef: j,
         query: E,
@@ -90,7 +90,7 @@ function I(e) {
                     className: x.HA,
                     variant: "text-lg/normal",
                     color: "text-default",
-                    children: [(0, i.jsx)(U, {
+                    children: [(0, i.jsx)(k, {
                         className: x.p,
                         size: "sm",
                         color: "currentColor"
@@ -133,7 +133,7 @@ function I(e) {
                 variant: "primary",
                 text: C.intl.string(C.t.i4jeWR),
                 onClick: w,
-                loading: N
+                loading: v
             }]
         })
     })

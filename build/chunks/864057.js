@@ -1,6 +1,6 @@
 /** chunk id: 864057 params = (module,exports,require) **/
 s.d(t, {
-    A: () => y
+    A: () => S
 });
 var r = s(627968);
 s(64700);
@@ -51,14 +51,14 @@ function A(e) {
     })
 }
 
-function y(e) {
+function S(e) {
     let {
         onSourceSelect: t
     } = e;
     (0, h.jd)(), (0, x.A)(t, g.FX);
     let [{
         nativeSourceType: s
-    }, i] = (0, p.tS)(), n = (0, f.isMac)() && a().satisfies(d.A?.os.release, _.WZ), l = u.Ay.getUseGamescopeCapture(), y = l ? "gamescope" : "screen";
+    }, i] = (0, p.tS)(), n = (0, f.isMac)() && a().satisfies(d.A?.os.release, _.WZ), l = u.Ay.getUseGamescopeCapture(), S = l ? "gamescope" : "screen";
     return (0, r.jsxs)("div", {
         className: v.zr,
         children: [(0, r.jsx)(o.DZT, {
@@ -78,11 +78,11 @@ function y(e) {
         }) : (0, r.jsxs)("div", {
             className: v.Ro,
             children: [(0, r.jsx)(A, {
-                selected: s === y,
+                selected: s === S,
                 onClick: () => {
                     i({
                         type: "set_native_source_type",
-                        sourceType: y
+                        sourceType: S
                     })
                 },
                 id: "screen",

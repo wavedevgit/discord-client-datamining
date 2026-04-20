@@ -3,8 +3,8 @@ n.d(t, {
     a: () => v
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(311907),
+    l = n(64700),
+    r = n(311907),
     s = n(397927),
     a = n(429913),
     o = n(609425),
@@ -23,22 +23,22 @@ var i = n(627968),
     S = n(996439),
     x = n(67103),
     T = n(70191),
-    C = n(652215),
-    N = n(567346);
-let v = r.memo(function(e) {
+    N = n(652215),
+    C = n(567346);
+let v = l.memo(function(e) {
     let {
         channelId: t,
         guildId: n,
         userId: v,
         onDoubleClick: y,
         onContextMenu: M
-    } = e, b = r.useRef(null), [R, D] = r.useState(!1), O = (0, l.bG)([I.default], () => I.default.getUser(v), [v]), w = function(e, t) {
-        let [n] = (0, l.bG)([E.A], () => [E.A.getVoiceStateForChannel(e, t) ?? null, E.A.getVoiceStateVersion()], [e, t], S.D);
+    } = e, R = l.useRef(null), [D, b] = l.useState(!1), O = (0, r.bG)([I.default], () => I.default.getUser(v), [v]), w = function(e, t) {
+        let [n] = (0, r.bG)([E.A], () => [E.A.getVoiceStateForChannel(e, t) ?? null, E.A.getVoiceStateVersion()], [e, t], S.D);
         return n
     }(t, v), j = (0, o.A)({
         userId: v,
         guildId: n
-    }), k = (0, l.bG)([f.A], () => null != n && null != f.A.getStreamForUser(v, n), [n, v]), U = (0, l.bG)([A.A], () => A.A.findActivity(v, T.A), [v]), L = (0, a.h)(U?.application_id), G = (0, _.tx)(n ?? void 0, t, O), P = r.useCallback(e => {
+    }), U = (0, r.bG)([f.A], () => null != n && null != f.A.getStreamForUser(v, n), [n, v]), L = (0, r.bG)([A.A], () => A.A.findActivity(v, T.A), [v]), k = (0, a.h)(L?.application_id), G = (0, _.tx)(n ?? void 0, t, O), P = l.useCallback(e => {
         (0, p.Vq)(O) && null != w && M?.({
             type: x.K.VOICE_USER,
             event: e,
@@ -47,52 +47,52 @@ let v = r.memo(function(e) {
         })
     }, [t, M, O, w]);
     return (0, p.Vq)(O) && null != w ? (0, i.jsx)(g.A, {
-        targetElementRef: b,
+        targetElementRef: R,
         user: O,
         guildId: n ?? void 0,
         channelId: t,
-        appContext: C.BRT.OVERLAY,
-        shouldShow: R,
-        onRequestClose: () => D(!1),
+        appContext: N.BRT.OVERLAY,
+        shouldShow: D,
+        onRequestClose: () => b(!1),
         spacing: 24,
         children: e => (0, i.jsx)(s.DUT, {
             ...e,
-            innerRef: b,
-            className: N.gD,
+            innerRef: R,
+            className: C.gD,
             onDoubleClick: y,
             onContextMenu: P,
             onClick: e => {
-                e.preventDefault(), e.stopPropagation(), D(!0)
+                e.preventDefault(), e.stopPropagation(), b(!0)
             },
             children: (0, i.jsxs)("div", {
-                className: N.h6,
+                className: C.h6,
                 children: [(0, i.jsx)(s.euF, {
                     src: O.getAvatarURL(n ?? void 0, 24),
                     size: s._3J.SIZE_24,
                     "aria-label": G
                 }), (0, i.jsxs)(s.Text, {
-                    className: N.rg,
+                    className: C.rg,
                     variant: "text-sm/medium",
                     color: "text-subtle",
                     children: [(0, i.jsx)(d.A, {
                         userName: G,
                         displayNameStyles: j,
                         effectDisplayType: u.G.STATIC,
-                        textClassName: N.m2
+                        textClassName: C.m2
                     }), (0, i.jsx)(h.Ay, {
                         userId: v,
                         disableGuildProfile: !0
                     })]
                 }), (0, i.jsx)("div", {
-                    className: N.ZA,
+                    className: C.ZA,
                     onDoubleClick: y,
                     children: (0, i.jsx)(m.Kc, {
                         guildId: n ?? void 0,
                         user: O,
                         video: w.selfVideo,
-                        isStreaming: k,
-                        className: N.ZA,
-                        iconClassName: N.Ow,
+                        isStreaming: U,
+                        className: C.ZA,
+                        iconClassName: C.Ow,
                         isWatching: !1,
                         localMute: !1,
                         localVideoDisabled: !1,
@@ -102,10 +102,10 @@ let v = r.memo(function(e) {
                         serverDeaf: w.deaf,
                         disabled: !1
                     })
-                }), null != L ? (0, i.jsx)(c.A, {
-                    game: L,
+                }), null != k ? (0, i.jsx)(c.A, {
+                    game: k,
                     size: c.M.XSMALL,
-                    className: N.IV
+                    className: C.IV
                 }) : null]
             })
         })

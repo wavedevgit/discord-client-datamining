@@ -33,12 +33,12 @@ let p = (0, h.A)(e => {
         prompt: N,
         disableGuildSelect: S,
         disclosures: x,
-        integrationType: v,
-        pid: b,
+        integrationType: b,
+        pid: v,
         signal: y
-    } = e, O = `OAuth2Authorize_${t}_${C}_${T}`, L = null != v ? n?.get(v) : void 0, R = L?.application ?? r.A.getApplication(t);
+    } = e, O = `OAuth2Authorize_${t}_${C}_${T}`, L = null != b ? n?.get(b) : void 0, R = L?.application ?? r.A.getApplication(t);
     return new Promise((e, r) => {
-        let L = (0, _.d5)(b),
+        let L = (0, _.d5)(v),
             P = l.SYi;
         null != R && null != (0, a.Ay)({
             application: R,
@@ -109,7 +109,7 @@ let p = (0, h.A)(e => {
             channelId: T,
             prompt: N,
             disableGuildSelect: "boolean" == typeof S ? S : "true" === S,
-            integrationType: v,
+            integrationType: b,
             cancelCompletesFlow: !0
         }), {
             modalKey: O,

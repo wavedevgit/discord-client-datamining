@@ -29,7 +29,7 @@ function N() {
     I = m.XlH.OPEN, f = {}, C = !1
 }
 let S = s().debounce(() => {
-    C && ((null == p || s().isEqual(p, x(p.id))) && (C = !1), C || b.emitChange())
+    C && ((null == p || s().isEqual(p, x(p.id))) && (C = !1), C || v.emitChange())
 }, 500);
 
 function x(e) {
@@ -40,7 +40,7 @@ function x(e) {
         return n === e
     })
 }
-class v extends o.Ay.Store {
+class b extends o.Ay.Store {
     static displayName = "ChannelSettingsIntegrationsStore";
     initialize() {
         this.waitFor(u.A, A.A, _.A, h.A)
@@ -76,7 +76,7 @@ class v extends o.Ay.Store {
         }
     }
 }
-let b = new v(d.h, __OVERLAY__ ? {} : {
+let v = new b(d.h, __OVERLAY__ ? {} : {
         INTEGRATION_SETTINGS_INIT: N,
         INTEGRATION_SETTINGS_SAVE_SUCCESS: N,
         CHANNEL_SETTINGS_SET_SECTION: function(e) {
@@ -160,4 +160,4 @@ let b = new v(d.h, __OVERLAY__ ? {} : {
             I = m.XlH.OPEN, f = e.errors ?? {}
         }
     }),
-    y = b
+    y = v

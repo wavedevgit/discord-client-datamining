@@ -3,8 +3,8 @@ n.d(t, {
     A: () => I
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(311907),
+    l = n(64700),
+    r = n(311907),
     s = n(843472),
     a = n(698718),
     o = n(355622),
@@ -21,19 +21,19 @@ function I(e) {
     let t, n, I, E, p, _, {
             selectedChannelId: S
         } = e,
-        x = (0, l.bG)([u.A], () => u.A.getChannel(S), [S]),
+        x = (0, r.bG)([u.A], () => u.A.getChannel(S), [S]),
         T = (0, m.A)(),
-        C = (0, l.bG)([d.A], () => (function(e, t) {
+        N = (0, r.bG)([d.A], () => (function(e, t) {
             if (null == e) return null;
             let n = e.getGuildId();
             return null == n ? null : t.getGuild(n) ?? null
         })(x, d.A), [x]);
-    return (t = x?.id ?? null, n = r.useRef(new Set), I = (0, l.bG)([c.A], () => null != t ? c.A.getMessages(t) : null, [t]), E = (0, l.bG)([h.A], () => h.A.can(f.xBc.READ_MESSAGE_HISTORY, x), [x]), p = I?.first() ?? null, _ = null != x && null == p && null != I && !I.loadingMore && !I.ready && !I.hasFetched && E, r.useEffect(() => {
+    return (t = x?.id ?? null, n = l.useRef(new Set), I = (0, r.bG)([c.A], () => null != t ? c.A.getMessages(t) : null, [t]), E = (0, r.bG)([h.A], () => h.A.can(f.xBc.READ_MESSAGE_HISTORY, x), [x]), p = I?.first() ?? null, _ = null != x && null == p && null != I && !I.loadingMore && !I.ready && !I.hasFetched && E, l.useEffect(() => {
         null == t || !n.current.has(t) && _ && (n.current.add(t), s.A.fetchMessages({
             channelId: t,
             limit: 50
         }))
-    }, [t, _]), r.useEffect(() => {
+    }, [t, _]), l.useEffect(() => {
         if (null == S) return;
         let e = T.requestAnimationFrame(() => {
             g._.dispatchToLastSubscribed(f.jej.TEXTAREA_FOCUS, {
@@ -47,7 +47,7 @@ function I(e) {
             className: A.T,
             children: (0, i.jsx)(a.A, {
                 channel: x,
-                guild: C,
+                guild: N,
                 chatInputType: o.oU.OVERLAY
             }, x.id)
         })

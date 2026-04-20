@@ -167,25 +167,25 @@ function ef(e) {
         {
             analyticsLocations: e5
         } = (0, S.Ay)(ef, f.A.GUILD_BOOST_PURCHASE_MODAL),
-        e1 = l.useMemo(() => e9.find(e => {
+        e3 = l.useMemo(() => e9.find(e => {
             let {
                 planId: n
             } = e;
             return es.pW.has(n)
         })?.planId ?? es.gD.PREMIUM_MONTH_GUILD, [e9]),
-        e3 = (0, o.bG)([Y.A], () => Y.A.get(e1)?.skuId, [e1]),
+        e1 = (0, o.bG)([Y.A], () => Y.A.get(e3)?.skuId, [e3]),
         e7 = l.useMemo(() => ({
             load_id: e6,
             payment_type: ea.fr[ea.VV.SUBSCRIPTION],
             sku_id: es.pe.GUILD,
             subscription_type: er.rzx.PREMIUM,
-            subscription_plan_id: e1,
+            subscription_plan_id: e3,
             quantity: eQ,
             location: eS,
             source: ex,
             location_stack: e5,
             checkout_flow: h.CL.GUILD_BOOST_CHECKOUT
-        }), [e6, eS, e5, ex, eQ, e1]);
+        }), [e6, eS, e5, ex, eQ, e3]);
     l.useEffect(() => {
         (0, q.c_)(eF)
     }, [eF]);
@@ -534,7 +534,7 @@ function ef(e) {
         children: (0, i.jsx)(u.y$y, {})
     });
     let nP = (0, y.u)({
-            skuId: e3,
+            skuId: e1,
             step: e2
         }),
         nA = null;

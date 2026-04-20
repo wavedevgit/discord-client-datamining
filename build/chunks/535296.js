@@ -25,8 +25,8 @@ var i = n(627968),
     S = n(657331),
     I = n(606758),
     T = n(605694),
-    N = n(246356),
-    v = n(332772),
+    v = n(246356),
+    N = n(332772),
     y = n(594832),
     b = n(631784),
     j = n(310209),
@@ -37,8 +37,8 @@ var i = n(627968),
     O = n(871123),
     P = n(832163),
     w = n(453774),
-    U = n(44724),
-    k = n(84511),
+    k = n(44724),
+    U = n(84511),
     G = n(817176),
     F = n(129114),
     H = n(652215),
@@ -63,7 +63,7 @@ function J(e) {
     } = (0, o.Ay)(), m = u > r ? h.T7Y : "div";
     return (0, i.jsx)("div", {
         onClick: e => e.stopPropagation(),
-        children: (0, i.jsx)(N.A, {
+        children: (0, i.jsx)(v.A, {
             children: (0, i.jsx)(d.lGe, {
                 "aria-labelledby": n,
                 modal: !1,
@@ -133,14 +133,14 @@ function Z(e) {
     } = e, s = t?.id, a = l.useCallback(() => {
         if (null != s) {
             let e = P.A.getGuildIdFromApplicationId(s);
-            null != e && (0, U.X)({
+            null != e && (0, k.X)({
                 guildId: e
             })
         }
     }, [s]), r = l.useCallback(() => {
         if (null != s) {
             let e = P.A.getGuildIdFromApplicationId(s);
-            null != e && (n(), (0, U.default)({
+            null != e && (n(), (0, k.default)({
                 guildId: e
             }))
         }
@@ -236,12 +236,12 @@ function et(e) {
         canShowCTA: o,
         onDismissCTA: c
     } = e;
-    (0, v.T)({
+    (0, N.T)({
         location: "social_layer_gifting_voice_panel"
     }), (0, p.P)(n);
     let {
         analyticsLocations: h
-    } = (0, A.Ay)(m.A.SLAYER_STOREFRONT_VC_GIFTING_PANEL), N = (0, u.bG)([M.default], () => M.default.getUser(n)), b = l.useMemo(() => new E.R({
+    } = (0, A.Ay)(m.A.SLAYER_STOREFRONT_VC_GIFTING_PANEL), v = (0, u.bG)([M.default], () => M.default.getUser(n)), b = l.useMemo(() => new E.R({
         applicationId: s
     }), [s]), L = (0, u.bG)([C.A], () => C.A.getWidgets(n)?.find(e => e instanceof E.R && e.applicationId === s)), D = (0, u.bG)([R.default], () => R.default.getId()), O = n === D, P = function(e) {
         let {
@@ -260,15 +260,15 @@ function et(e) {
         } = (0, _.A)(r ? t : void 0, r ? n : void 0, s), {
             fetched: C,
             hasAlreadyLinked: T,
-            canStartAuthorization: N,
-            startAuthorization: v
+            canStartAuthorization: v,
+            startAuthorization: N
         } = (0, g.RD)(r ? u : void 0), {
             analyticsLocations: y
         } = (0, A.Ay)(m.A.SLAYER_STOREFRONT_VC_GIFTING_PANEL), b = l.useCallback(() => {
-            N && v({
+            v && N({
                 analyticsLocations: y
             })
-        }, [y, N, v]), j = l.useCallback(() => {
+        }, [y, v, N]), j = l.useCallback(() => {
             a(), (0, S.openUserProfileModal)({
                 userId: t,
                 sourceAnalyticsLocations: y
@@ -281,7 +281,7 @@ function et(e) {
                 ...e.getProfileEditAnalyticsOptions()
             }), setTimeout(() => (0, I.XA)(V.jM.WIDGET_ADDED), 700)
         }, [y, n, t, a]);
-        return r && !d && C && null != h ? !T && N ? (0, i.jsx)(ee, {
+        return r && !d && C && null != h ? !T && v ? (0, i.jsx)(ee, {
             text: W.intl.format(c ? W.t.YWa8L2 : W.t.xxPgmT, {
                 onClick: b
             }),
@@ -301,7 +301,7 @@ function et(e) {
         canShowCTA: o,
         onDismissCTA: c,
         isTargetingCurrentUser: O
-    }), U = (0, w.A)(s), {
+    }), k = (0, w.A)(s), {
         status: G,
         recommendations: H,
         skusToUserAndReason: B,
@@ -311,11 +311,11 @@ function et(e) {
         applicationId: s,
         channel: a,
         numItems: 8
-    }), Q = "loading" === G || 0 === H.length || null == N, et = l.useMemo(() => null == N || 0 === H.length ? [] : (H.length > 8 ? H.slice(0, 8) : H).map(e => {
+    }), Q = "loading" === G || 0 === H.length || null == v, et = l.useMemo(() => null == v || 0 === H.length ? [] : (H.length > 8 ? H.slice(0, 8) : H).map(e => {
         let t = (B[e.id] ?? {})[n] === j.j.WISHLIST;
         return (0, i.jsx)(F.A, {
             sku: e,
-            targetUser: N,
+            targetUser: v,
             isTargetingCurrentUser: O,
             source: t ? y.uS.WISHLIST : y.uS.POPULAR,
             guildId: a.guild_id,
@@ -325,7 +325,7 @@ function et(e) {
             onCardClick: r,
             onButtonClick: r
         }, e.id)
-    }), [N, H, a.guild_id, a.id, B, n, O, Y, h, r]);
+    }), [v, H, a.guild_id, a.id, B, n, O, Y, h, r]);
     return (0, i.jsxs)(J, {
         className: t,
         "aria-labelledby": z,
@@ -333,10 +333,10 @@ function et(e) {
             className: K.wx,
             direction: "vertical",
             gap: 12,
-            children: [null != N ? (0, i.jsxs)("div", {
+            children: [null != v ? (0, i.jsxs)("div", {
                 className: K.p,
                 children: [(0, i.jsx)(T.A, {
-                    user: N,
+                    user: v,
                     widget: L ?? b,
                     guildId: a.guild_id,
                     channelId: a.id,
@@ -345,9 +345,9 @@ function et(e) {
                     embedded: !0
                 }), P]
             }) : (0, i.jsx)(q, {
-                application: U
+                application: k
             }), (0, i.jsx)($, {
-                user: N,
+                user: v,
                 isGift: !O
             })]
         }), Q ? (0, i.jsx)(d.y$y, {
@@ -356,9 +356,9 @@ function et(e) {
             className: K.HV,
             children: et
         }), (0, i.jsx)(Z, {
-            application: U,
+            application: k,
             onClose: r
-        }), (0, i.jsx)(k.A, {
+        }), (0, i.jsx)(U.A, {
             location: "social_layer_vc_gifting_panel",
             className: K.Ij
         })]
@@ -373,7 +373,7 @@ function en(e) {
         channel: a,
         onClose: r
     } = e;
-    (0, v.T)({
+    (0, N.T)({
         location: "social_layer_gifting_voice_panel"
     });
     let {
@@ -444,7 +444,7 @@ function en(e) {
         }), (0, i.jsx)(Z, {
             application: g,
             onClose: r
-        }), (0, i.jsx)(k.A, {
+        }), (0, i.jsx)(U.A, {
             location: "social_layer_vc_gifting_panel",
             className: K.Ij
         })]

@@ -1,19 +1,19 @@
 /** chunk id: 201479 params = (module,exports,require) **/
 n.d(t, {
-    J: () => l
+    J: () => r
 });
 var i = n(627968);
 n(64700);
-var r = n(769015);
+var l = n(769015);
 
-function l(e) {
+function r(e) {
     let {
         application: t,
         fallback: n
     } = e;
-    return null == t ? n : (0, i.jsx)(r.A, {
+    return null == t ? n : (0, i.jsx)(l.A, {
         game: t,
-        size: r.M.XSMALL,
+        size: l.M.XSMALL,
         allowUnknownGameIcon: !0,
         unknownGameIconFallback: n
     })

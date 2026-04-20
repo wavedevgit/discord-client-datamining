@@ -48,8 +48,8 @@ let I = l.forwardRef(function(e, t) {
         hasFetched: u,
         hasFiltersApplied: I = !1,
         onClearFilters: f
-    } = e, C = (0, s.zy)(), T = l.useRef(""), [N, S] = l.useState(null), [x, v] = l.useState(0), [{
-        highlightAnimationProgress: b
+    } = e, C = (0, s.zy)(), T = l.useRef(""), [N, S] = l.useState(null), [x, b] = l.useState(0), [{
+        highlightAnimationProgress: v
     }, y] = (0, c.zhh)(() => ({
         highlightAnimationProgress: 1,
         config: {
@@ -57,7 +57,7 @@ let I = l.forwardRef(function(e, t) {
         }
     })), O = l.useCallback(e => {
         let t = (0, h.vc)(e, n, a);
-        return null != t && (S(t.id), v(e => e + 1), !0)
+        return null != t && (S(t.id), b(e => e + 1), !0)
     }, [n, a]);
     return (l.useImperativeHandle(t, () => ({
         scrollToQuest: O
@@ -109,12 +109,12 @@ let I = l.forwardRef(function(e, t) {
                     [g.XB]: a
                 }),
                 style: a ? {
-                    boxShadow: (0, o.to)([b.to({
+                    boxShadow: (0, o.to)([v.to({
                         range: [0, .25, .75, 1],
                         output: [0, 1, 1, 0]
                     })], e => `0 0 ${25*e}px 0 rgba(88, 101, 242, ${e})`)
                 } : s ? {
-                    opacity: (0, o.to)([b.to({
+                    opacity: (0, o.to)([v.to({
                         range: [0, .25, .75, 1],
                         output: [1, .4, .4, 1]
                     })], e => e)

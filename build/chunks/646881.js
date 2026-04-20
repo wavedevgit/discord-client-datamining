@@ -4,8 +4,8 @@ n.d(t, {
     A: () => p
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(311907),
+    l = n(64700),
+    r = n(311907),
     s = n(287809),
     a = n(810412),
     o = n(914853),
@@ -23,7 +23,7 @@ function E() {
     let {
         onPrimaryAction: e,
         onContextMenu: t
-    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, n = (0, u.b4)(), f = n?.id, E = n?.altId, p = (0, l.bG)([s.default], () => s.default.getCurrentUser()) ?? null, _ = m.Ay.useField("activeTab"), S = m.Ay.useField("setActiveTab"), x = r.useCallback(e => {
+    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, n = (0, u.b4)(), f = n?.id, E = n?.altId, p = (0, r.bG)([s.default], () => s.default.getCurrentUser()) ?? null, _ = m.Ay.useField("activeTab"), S = m.Ay.useField("setActiveTab"), x = l.useCallback(e => {
         e !== _ && (S(e), (0, a.YX)(A.uss.FRIENDS, {
             type: a.Z5.TAB_SELECTED,
             value: function(e) {
@@ -63,15 +63,15 @@ function E() {
         })]
     })
 }
-let p = r.memo(function(e) {
+let p = l.memo(function(e) {
     let {
         locked: t
     } = e, {
         handlePrimaryAction: n,
-        handleContextMenu: r
+        handleContextMenu: l
     } = (0, f.W)();
     return t ? null : (0, i.jsx)(E, {
         onPrimaryAction: n,
-        onContextMenu: r
+        onContextMenu: l
     })
 })

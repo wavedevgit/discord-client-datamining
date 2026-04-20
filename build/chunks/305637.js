@@ -34,21 +34,21 @@ function p(e) {
             } = e;
             return t !== n.ownerId
         }).length > 0
-    })), C = (0, l.bG)([m.A], () => m.A.getChannel(n?.channelId)), [x, S] = (0, d.zP)(C), I = (0, u.aL)(), T = null != f && null != n && f.state !== g.XYD.ENDED && f.ownerId === n.ownerId, N = e => {
+    })), C = (0, l.bG)([m.A], () => m.A.getChannel(n?.channelId)), [x, S] = (0, d.zP)(C), I = (0, u.aL)(), T = null != f && null != n && f.state !== g.XYD.ENDED && f.ownerId === n.ownerId, v = e => {
         null != n && (p?.(), o.default.selectVoiceChannel(n.channelId), T || (0, c.Nl)(n, {
             forceMultiple: e
         }), I.dispatch(g.jej.POPOUT_CLOSE), A._.dispatch(g.jej.MODAL_CLOSE), r.A.popAll())
     };
     if (null == n) return null;
-    let v = (0, d.CT)(S);
-    return t ? v = _.intl.string(_.t.XvBdeT) : T && (v = _.intl.string(_.t["JH1SJ+"])), (0, i.jsxs)(i.Fragment, {
+    let N = (0, d.CT)(S);
+    return t ? N = _.intl.string(_.t.XvBdeT) : T && (N = _.intl.string(_.t["JH1SJ+"])), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(a.Button, {
             size: "sm",
             variant: T ? "secondary" : "active",
             icon: a.Fzq,
-            text: v,
+            text: N,
             disabled: t || T || !x,
-            onClick: () => N(!1),
+            onClick: () => v(!1),
             fullWidth: !0
         }), E && !T ? (0, i.jsx)(s.m, {
             text: _.intl.string(_.t.wCrzut),
@@ -58,7 +58,7 @@ function p(e) {
                 icon: a.vAm,
                 "aria-label": _.intl.string(_.t.wCrzut),
                 onClick: () => {
-                    N(!0)
+                    v(!0)
                 }
             })
         }) : null]

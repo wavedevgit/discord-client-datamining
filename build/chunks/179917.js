@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(397927),
-    l = n(485947),
+var l = n(397927),
+    r = n(485947),
     s = n(483392),
     a = n(894564);
 
@@ -22,11 +22,11 @@ function o(e) {
         size: "md",
         className: a.t4
     }) : null;
-    return (0, i.jsx)(l.A, {
+    return (0, i.jsx)(r.A, {
         className: a.uW,
         children: (0, i.jsxs)("div", {
             className: a.bV,
-            children: [(0, i.jsxs)(r.DUT, {
+            children: [(0, i.jsxs)(l.DUT, {
                 onClick: () => u && d(),
                 "aria-hidden": !0,
                 className: u ? a.Ws : void 0,
