@@ -41,32 +41,32 @@ function N(e) {
         renderInputDevices: D = !1,
         renderInputVolume: O = !1,
         maybeRenderInputMeter: P = !1,
-        renderSettingsButton: w = !1
+        renderSettingsButton: k = !1
     } = e, {
-        analyticsLocations: k
+        analyticsLocations: w
     } = (0, d.Ay)();
     (0, u.A)({
         type: l.ImpressionTypes.MENU,
         name: l.ImpressionNames.AUDIO_DEVICE_MENU,
         properties: {
-            location_stack: k
+            location_stack: w
         }
     });
     let U = (0, C.A)(t),
         G = (0, h.H)({
             deviceType: I.oh.AUDIO_INPUT,
-            analyticsLocations: k,
+            analyticsLocations: w,
             asSubmenu: !0
         }),
         F = (0, h.H)({
             deviceType: I.oh.AUDIO_OUTPUT,
-            analyticsLocations: k,
+            analyticsLocations: w,
             asSubmenu: !0
         }),
         H = (0, s.bG)([_.Ay], () => _.Ay.getActiveInputProfile()),
-        B = (0, A.A)(k),
-        V = (0, m.A)(k),
-        W = (0, g.A)(k),
+        B = (0, A.A)(w),
+        V = (0, m.A)(w),
+        W = (0, g.A)(w),
         K = a.x.DEFAULT,
         z = _.Ay.isSelfDeaf(K),
         Y = (0, s.bG)([_.Ay], () => _.Ay.getMode()),
@@ -111,7 +111,7 @@ function N(e) {
                     id: "input-mode",
                     label: T.intl.string(T.t.Q8gkVL),
                     action: () => o.A.setMode(J, void 0, void 0, {
-                        analyticsLocations: k
+                        analyticsLocations: w
                     }),
                     disabled: H === S.m.STUDIO
                 }) : null, j && (0, i.jsx)(r.sLh, {
@@ -122,7 +122,7 @@ function N(e) {
                         location: "AudioDeviceMenu"
                     }),
                     checked: z
-                }, "self-deafen"), w && U]
+                }, "self-deafen"), k && U]
             })]
         })
     })

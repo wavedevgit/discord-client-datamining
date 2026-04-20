@@ -35,8 +35,8 @@ var i = n(627968),
     D = n(222823),
     O = n(399263),
     P = n(287809),
-    w = n(234320),
-    k = n(863439),
+    k = n(234320),
+    w = n(863439),
     U = n(504136),
     G = n(326337),
     F = n(540385),
@@ -68,7 +68,7 @@ let J = (0, r.animated)(d.fKU),
                 filterAfterTimestamp: D,
                 showingQuarantineBanner: O,
                 hideSummaries: P = !1,
-                jumpBarClassName: k,
+                jumpBarClassName: w,
                 typingGradient: U
             } = e,
             [H, q] = l.useState(b.A.isAtBottom(f.id) ?? !1),
@@ -128,19 +128,19 @@ let J = (0, r.animated)(d.fKU),
                         animate: !A.A.useReducedMotion
                     }) : u.A.jumpToPresent(f.id, Z)
                 },
-                jumpBarClassName: k
+                jumpBarClassName: w
             });
         t = et.ref, n = l.useCallback(() => t.current?.scrollToBottom(), [t]), s = l.useCallback(() => t.current?.scrollPageUp({
             animate: !A.A.useReducedMotion
         }), [t]), r = l.useCallback(() => t.current?.scrollPageDown({
             animate: !A.A.useReducedMotion
-        }), [t]), (0, w.Vo)({
+        }), [t]), (0, k.Vo)({
             event: K.jej.SCROLLTO_PRESENT,
             handler: n
-        }), (0, w.Vo)({
+        }), (0, k.Vo)({
             event: K.jej.SCROLL_PAGE_UP,
             handler: s
-        }), (0, w.Vo)({
+        }), (0, k.Vo)({
             event: K.jej.SCROLL_PAGE_DOWN,
             handler: r
         });
@@ -233,7 +233,7 @@ let J = (0, r.animated)(d.fKU),
             messageGroupSpacing: S,
             fontSize: N,
             messageDisplayCompact: b,
-            renderSpoilers: w,
+            renderSpoilers: k,
             keyboardModeEnabled: G
         } = function() {
             let e = v.hH.useSetting(),
@@ -308,7 +308,7 @@ let J = (0, r.animated)(d.fKU),
             }
         }(t);
         return (0, i.jsx)(I.Bs.Provider, {
-            value: (0, k.A)(w, u),
+            value: (0, w.A)(k, u),
             children: (0, i.jsx)(H.t, {
                 children: (0, i.jsx)(q, {
                     ...d,

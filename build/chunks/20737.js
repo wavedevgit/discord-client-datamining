@@ -35,8 +35,8 @@ var i = n(627968),
     D = n(447155),
     O = n(652215),
     P = n(696016),
-    w = n(985018),
-    k = n(644268);
+    k = n(985018),
+    w = n(644268);
 let U = l.memo(function(e) {
     let {
         className: t,
@@ -105,7 +105,7 @@ let U = l.memo(function(e) {
     let ef = (0, i.jsx)(o.pa$, {
             size: "refresh_sm",
             color: "currentColor",
-            colorClass: k.dW
+            colorClass: w.dW
         }),
         eE = (0, i.jsx)(o.YNO, {
             targetElementRef: W,
@@ -146,10 +146,10 @@ let U = l.memo(function(e) {
             },
             children: e => (0, i.jsx)(M.A, {
                 ref: W,
-                className: a()(k.g$, t),
-                childClassName: k.wh,
+                className: a()(w.g$, t),
+                childClassName: w.wh,
                 isActive: !1,
-                "aria-label": w.intl.string(w.t.d56gCa),
+                "aria-label": k.intl.string(k.t.d56gCa),
                 onDoubleClick: er ? () => V.current?.activateUploadDialogue() : void 0,
                 "aria-haspopup": "menu",
                 ...e,
@@ -158,7 +158,7 @@ let U = l.memo(function(e) {
         });
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            className: k.EJ,
+            className: w.EJ,
             children: (0, i.jsx)(c.A, {
                 ref: V,
                 onChange: e => {
@@ -173,7 +173,7 @@ let U = l.memo(function(e) {
                 "aria-hidden": !0
             })
         }), (0, i.jsx)("div", {
-            className: k.Jd,
+            className: w.Jd,
             children: eE
         })]
     })

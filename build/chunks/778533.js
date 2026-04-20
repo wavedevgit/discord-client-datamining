@@ -1,6 +1,6 @@
 /** chunk id: 778533 params = (module,exports,require) **/
 s.d(t, {
-    A: () => f
+    A: () => v
 });
 var n = s(627968),
     l = s(64700),
@@ -9,62 +9,62 @@ var n = s(627968),
     o = s(435371),
     r = s(397927),
     u = s(713517),
-    c = s(240248),
-    d = s(341915),
+    d = s(240248),
+    c = s(341915),
     m = s(890687),
     x = s(590202),
     g = s(971649),
     h = s(781121),
     A = s(201257),
-    C = s(985018),
-    p = s(503820),
+    p = s(985018),
+    C = s(503820),
     S = s(834926);
 
-function f() {
+function v() {
     let {
         quest: e,
         sourceQuestContent: t,
         isPortrait: s,
         onClose: i
-    } = l.useContext(A.VideoQuestModalContext), f = (0, g.go)(), v = (0, m.LS)(e), j = l.useRef(null), {
+    } = l.useContext(A.VideoQuestModalContext), v = (0, g.go)(), f = (0, m.LS)(e), j = l.useRef(null), {
         isHoveringOrFocusing: N
     } = (0, u.A)(j), O = (0, h.H)({
         quest: e,
         onClose: i,
         sourceQuestContent: t,
-        impressionId: f
-    }), E = e.config.ctaConfig.subtitle, _ = void 0 !== E && !(0, c.uJ)(E);
+        impressionId: v
+    }), E = e.config.ctaConfig.subtitle, M = void 0 !== E && !(0, d.uJ)(E);
     return (0, n.jsx)(o.m_, {
-        text: C.intl.string(C.t.EuHF34),
+        text: p.intl.string(p.t.EuHF34),
         children: (0, n.jsx)(r.DUT, {
-            onClick: () => O(d.uF.VIDEO_MODAL, x.Cy.OPEN_GAME_LINK),
-            className: p._S,
+            onClick: () => O(c.uF.VIDEO_MODAL, x.Cy.OPEN_GAME_LINK),
+            className: C._S,
             children: (0, n.jsxs)("div", {
-                className: a()(S.hA, p.t8, {
-                    [p.Mc]: v
+                className: a()(S.hA, C.t8, {
+                    [C.Mc]: f
                 }),
                 ref: j,
                 children: [(0, n.jsx)("div", {
-                    className: p.sB,
+                    className: C.sB,
                     children: (0, n.jsx)(r.Heading, {
                         variant: "heading-md/medium",
                         color: "text-strong",
-                        className: a()(p.xw, {
-                            [p._L]: s
+                        className: a()(C.xw, {
+                            [C._L]: s
                         }),
                         lineClamp: s ? void 0 : 1,
-                        children: C.intl.format(C.t.EQa7os, {
+                        children: p.intl.format(p.t.EQa7os, {
                             questName: e.config.messages.questName
                         })
                     })
                 }), (0, n.jsxs)("div", {
-                    className: a()(p.sB, {
-                        [p.fi]: s
+                    className: a()(C.sB, {
+                        [C.fi]: s
                     }),
                     children: [(0, n.jsx)("div", {
-                        className: a()(p.PV, {
-                            [p.WV]: s,
-                            [p.mq]: s
+                        className: a()(C.PV, {
+                            [C.WV]: s,
+                            [C.mq]: s
                         }),
                         children: (0, n.jsx)(r.yr3, {
                             size: "xs",
@@ -72,22 +72,22 @@ function f() {
                         })
                     }), (0, n.jsx)(r.Heading, {
                         variant: "heading-sm/medium",
-                        className: a()(p.PV, {
-                            [p.WV]: s,
-                            [p.mq]: s
+                        className: a()(C.PV, {
+                            [C.WV]: s,
+                            [C.mq]: s
                         }),
                         color: N ? "text-strong" : "text-subtle",
                         lineClamp: 1,
                         children: e.config.messages.gamePublisher
-                    }), _ ? (0, n.jsxs)(n.Fragment, {
+                    }), M ? (0, n.jsxs)(n.Fragment, {
                         children: [(0, n.jsx)("div", {
                             "aria-hidden": "true",
-                            className: a()(p.SC, {
-                                [p.b2]: s
+                            className: a()(C.SC, {
+                                [C.b2]: s
                             })
                         }), (0, n.jsx)(r.Heading, {
-                            className: a()(p.xw, {
-                                [p._L]: s
+                            className: a()(C.xw, {
+                                [C._L]: s
                             }),
                             variant: "heading-sm/medium",
                             lineClamp: s ? void 0 : 1,

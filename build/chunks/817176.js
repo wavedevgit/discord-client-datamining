@@ -51,8 +51,8 @@ function D(e) {
         guildId: D,
         channelId: O,
         analyticsLocations: P,
-        onCardClick: w,
-        onButtonClick: k
+        onCardClick: k,
+        onButtonClick: w
     } = e, U = l.useRef(null), G = (0, d.bG)([_.A], () => (0, c.Mwr)(_.A.theme)), F = (0, d.bG)([h.A], () => h.A.useReducedMotion), {
         isHoveringOrFocusing: H
     } = (0, A.A)(U), {
@@ -134,7 +134,7 @@ function D(e) {
         sku: s,
         priceSetAssignmentPurchaseType: r ? v.lid.DEFAULT : v.lid.GIFT
     }), q = l.useCallback(e => {
-        e.stopPropagation(), w?.(), (0, S.R)({
+        e.stopPropagation(), k?.(), (0, S.R)({
             skuId: s.id,
             applicationId: s.applicationId,
             isStorefront: !1,
@@ -142,8 +142,8 @@ function D(e) {
             giftingOrigin: N.vQ.GUILD_CHANNEL,
             analyticsLocations: P
         })
-    }, [s.id, s.applicationId, a, P, w]), $ = l.useCallback(e => {
-        e.stopPropagation(), k?.(), (0, I.a)(s, {
+    }, [s.id, s.applicationId, a, P, k]), $ = l.useCallback(e => {
+        e.stopPropagation(), w?.(), (0, I.a)(s, {
             isGift: !r,
             giftRecipient: a,
             giftingOrigin: N.vQ.GUILD_CHANNEL
@@ -151,7 +151,7 @@ function D(e) {
             analyticsLocations: P,
             guildId: B
         })
-    }, [s, a, r, P, B, k]);
+    }, [s, a, r, P, B, w]);
     return (0, i.jsx)(c.vN3, {
         children: (0, i.jsxs)(u.sqX, {
             onClick: q,

@@ -37,7 +37,7 @@ let d = {
         }, [p, e, s, n]);
         let {
             clearError: A
-        } = (0, i.S)(), f = (0, l.W6)(), C = r.useCallback(async (e, t) => {
+        } = (0, i.S)(), C = (0, l.W6)(), f = r.useCallback(async (e, t) => {
             if (e !== c.G2.RIVALS) {
                 if (A(), e === c.G2.CATALOG) n();
                 else if ((0, c.dF)(e) && e !== S) {
@@ -49,15 +49,15 @@ let d = {
                         let e;
                         h(c.Pf.OUT), await (e = 1.1 * c.H1, new Promise(t => setTimeout(t, e)))
                     }
-                    m(e === c.G2.HOME || e === c.G2.ORBS ? e : c.G2.CATALOG), t && h(c.Pf.IN), f.push(u.BVt.COLLECTIBLES_SHOP_WITH_TAB(e), {
+                    m(e === c.G2.HOME || e === c.G2.ORBS ? e : c.G2.CATALOG), t && h(c.Pf.IN), C.push(u.BVt.COLLECTIBLES_SHOP_WITH_TAB(e), {
                         shallow: !0
                     }), h(c.Pf.VISIBLE)
                 }
             }
-        }, [f, s, n, S, A]);
+        }, [C, s, n, S, A]);
         return {
             selectedTab: S,
             transitionState: E,
-            transitionToTab: C
+            transitionToTab: f
         }
     }

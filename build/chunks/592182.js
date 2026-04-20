@@ -1,6 +1,6 @@
 /** chunk id: 592182 params = (module,exports,require) **/
 n.d(t, {
-    A: () => w
+    A: () => k
 });
 var i = n(627968);
 n(64700);
@@ -36,15 +36,15 @@ var l = n(503698),
     D = n(305637),
     O = n(652215),
     P = n(708727);
-let w = (0, d.A)(e => {
+let k = (0, d.A)(e => {
     let {
         activity: t,
         embeddedActivity: n,
         user: l,
         applicationStream: a,
         className: d,
-        guildId: w,
-        channelId: k,
+        guildId: k,
+        channelId: w,
         source: U,
         buttonVariant: G,
         type: F,
@@ -52,10 +52,10 @@ let w = (0, d.A)(e => {
     } = e, B = (0, o.bG)([f.default], () => {
         let e = f.default.getCurrentUser();
         return r()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-    }), V = F === I.O.STREAM_PREVIEW || null != a, W = (0, C.A)(t), K = W || V ? h.A.Direction.HORIZONTAL : h.A.Direction.VERTICAL, z = (0, o.bG)([p.A], () => null != k ? p.A.getChannel(k) : null, [k]), {
+    }), V = F === I.O.STREAM_PREVIEW || null != a, W = (0, C.A)(t), K = W || V ? h.A.Direction.HORIZONTAL : h.A.Direction.VERTICAL, z = (0, o.bG)([p.A], () => null != w ? p.A.getChannel(w) : null, [w]), {
         enableRequestToStream: Y
     } = m.m.useExperiment({
-        guildId: w ?? z?.guild_id,
+        guildId: k ?? z?.guild_id,
         location: "UserActivityActions"
     }, {
         autoTrackExposure: !1
@@ -89,8 +89,8 @@ let w = (0, d.A)(e => {
                 let e = (0, i.jsx)(M.A, {
                         activity: t,
                         user: l,
-                        guildId: w,
-                        channelId: k,
+                        guildId: k,
+                        channelId: w,
                         source: U,
                         onAction: H
                     }),

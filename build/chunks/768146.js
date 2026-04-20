@@ -78,9 +78,9 @@ let y = l.forwardRef(function(e, t) {
         tooltipDelayMs: v = E,
         shortcut: g,
         onClick: y,
-        buttonSize: S = o.n4.MD,
-        "data-testid": A
-    } = e, C = e => (0, r.jsx)(m.DUT, {
+        buttonSize: A = o.n4.MD,
+        "data-testid": C
+    } = e, S = e => (0, r.jsx)(m.DUT, {
         ...e,
         onClick: !0 === p ? void 0 : y,
         className: i()(h.K5, {
@@ -88,7 +88,7 @@ let y = l.forwardRef(function(e, t) {
         }),
         "aria-label": c,
         "aria-disabled": p,
-        "data-testid": A,
+        "data-testid": C,
         innerRef: t,
         children: (0, r.jsx)(s.animated.div, {
             className: h.K5,
@@ -100,10 +100,10 @@ let y = l.forwardRef(function(e, t) {
                 height: {
                     [o.n4.LG]: "32px",
                     [o.n4.MD]: "24px"
-                } [S]
+                } [A]
             },
             children: (0, r.jsx)(n, {
-                size: b[S],
+                size: b[A],
                 color: !0 !== p ? u.A.colors.WHITE : u.A.colors.TEXT_MUTED,
                 className: i()(h.jk, {
                     [h.x2]: f,
@@ -116,6 +116,6 @@ let y = l.forwardRef(function(e, t) {
         text: x,
         keyboardShortcut: "" !== (g ?? "").trim() ? g : void 0,
         delay: v,
-        children: C()
-    }) : C()
+        children: S()
+    }) : S()
 })

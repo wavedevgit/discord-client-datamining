@@ -33,8 +33,8 @@ function T(e) {
         startingIndex: T,
         enabledContentHarmTypeFlags: f,
         shouldHideMediaOptions: E = !1,
-        transitionState: y,
-        ...I
+        transitionState: I,
+        ...y
     } = e, [v, x] = i.useState(T ?? 0), [M, O] = i.useState(!1), [R, N] = (0, s.zhh)(() => ({
         scale: u.A.useReducedMotion ? 1 : .9,
         x: 0,
@@ -51,17 +51,17 @@ function T(e) {
     }, [t]);
     let j = i.useRef(null);
     i.useEffect(() => {
-        if (y !== j.current) switch (j.current = y, y) {
+        if (I !== j.current) switch (j.current = I, I) {
             case s.ip4.ENTERING:
                 C(R.scale, 1);
                 break;
             case s.ip4.EXITING:
                 u.A.useReducedMotion || (C(R.x, 0), C(R.y, 0), C(R.scale, .9))
         }
-    }, [y, R]), y === s.ip4.HIDDEN && M && (O(!1), R.x.set(0), R.y.set(0), R.scale.set(1)), i.useEffect(() => {
-        y === s.ip4.ENTERED && (d.A.disable(), d.A.enableTemp(c.w)), y === s.ip4.HIDDEN && (d.A.disable(), d.A.enableTemp(c.b));
+    }, [I, R]), I === s.ip4.HIDDEN && M && (O(!1), R.x.set(0), R.y.set(0), R.scale.set(1)), i.useEffect(() => {
+        I === s.ip4.ENTERED && (d.A.disable(), d.A.enableTemp(c.w)), I === s.ip4.HIDDEN && (d.A.disable(), d.A.enableTemp(c.b));
         let e = () => {
-                d.A.disable(), y === s.ip4.ENTERED ? d.A.enableTemp(c.w) : d.A.enableTemp(c.b)
+                d.A.disable(), I === s.ip4.ENTERED ? d.A.enableTemp(c.w) : d.A.enableTemp(c.b)
             },
             t = () => {
                 d.A.disableTemp()
@@ -70,7 +70,7 @@ function T(e) {
         return n?.addEventListener("focus", e), n?.addEventListener("blur", t), () => {
             n?.removeEventListener("focus", e), n?.removeEventListener("blur", t), d.A.disableTemp()
         }
-    }, [y]);
+    }, [I]);
     let P = i.useCallback(e => {
             x(e), n?.(e), m.l.markActionPerformed(m.N.SELECTED_ITEM_CHANGE)
         }, [n]),
@@ -95,8 +95,8 @@ function T(e) {
             "data-migration-pending": !0,
             hideShadow: !0,
             className: o()(g.O, e),
-            transitionState: y,
-            ...I,
+            transitionState: I,
+            ...y,
             size: s.rIJ.DYNAMIC,
             animation: l.WM.SUBTLE,
             fullscreenOnMobile: !1,

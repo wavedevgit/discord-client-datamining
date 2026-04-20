@@ -34,7 +34,7 @@ let f = {
             rightPx: T,
             index: D
         } = n, I = _.userStatus?.completedAt != null, [b, y] = s.useState(!1), O = x - E.Ue, R = t >= O ? Math.min(1, (t - O) / (T - O)) : 0, L = 0 === D && !I, {
-            fill: k
+            fill: N
         } = (0, u.zhh)({
             fill: 100 * R,
             config: f,
@@ -53,7 +53,7 @@ let f = {
             style: {
                 left: a ? p.to(e => x - e) : x,
                 "--custom-indicator-size": a ? p.to(e => `${E.lS+2*e}px`) : `${E.lS}px`,
-                "--custom-indicator-fill": k.to(e => e)
+                "--custom-indicator-fill": N.to(e => e)
             },
             children: [(0, r.jsx)(u.DUT, {
                 className: m.E6,

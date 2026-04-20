@@ -1,6 +1,6 @@
 /** chunk id: 931135 params = (module,exports,require) **/
 n.d(t, {
-    A: () => k
+    A: () => N
 });
 var r = n(627968),
     s = n(64700),
@@ -32,14 +32,14 @@ var r = n(627968),
     R = n(924838),
     L = n(25920);
 
-function k(e) {
+function N(e) {
     let {
         targetTimeSec: t,
         onOptimisticProgressUpdate: n,
-        autoplay: k,
-        autoFocus: N = !0,
+        autoplay: N,
+        autoFocus: k = !0,
         parentTransitionState: M,
-        performanceClockStartTime: P,
+        openedAtMs: P,
         orientation: V,
         videoUrlOverride: w
     } = e, {
@@ -112,18 +112,18 @@ function k(e) {
             handlePlayerStateChange: eO,
             handleLoadEnd: eR,
             handleFirstFrame: eL,
-            handleSeek: ek
+            handleSeek: eN
         } = (0, o.Yr)({
             getCurrentVideoTime: ey,
             onAnalytics: eD,
             emitIntervalMs: o.KI,
             minSegmentDurationMs: o._4
         }),
-        eN = (0, s.useRef)(null),
+        ek = (0, s.useRef)(null),
         eM = s.useCallback((e, t) => {
             switch (eO(e, t), e) {
                 case l.Q6.PLAYING:
-                    Y.current?.paused === !0 && ef(eN.current), eN.current = null;
+                    Y.current?.paused === !0 && ef(ek.current), ek.current = null;
                     break;
                 case l.Q6.PAUSED: {
                     let e = function(e) {
@@ -138,7 +138,7 @@ function k(e) {
                                 return null
                         }
                     }(t);
-                    null != e && (eN.current = e, e_(e))
+                    null != e && (ek.current = e, e_(e))
                 }
                 case l.Q6.ENDED:
             }
@@ -150,8 +150,9 @@ function k(e) {
             eR(e), em(e)
         }, [eR, em]),
         ew = s.useCallback(e => {
-            eL(e), eh(e)
-        }, [eL, eh]),
+            let t = e - P;
+            eL(t), eh(t)
+        }, [eL, eh, P]),
         eU = s.useCallback(e => {
             B(e), eg(e)
         }, [B, eg]),
@@ -164,8 +165,8 @@ function k(e) {
             (e >= ec.current || s) && (s && (ed.current = !0), ec.current = e + y.aA + Math.random() * y.A6, K || Q.userStatus?.enrolledAt == null || (0, h.zv)(Q, e), eT())
         }, [Q, H.taskType, t, K, $, eT, W, n]),
         eB = s.useCallback((e, t) => {
-            ek(), null != Y.current && W(Q.id, t, Y.current.duration)
-        }, [ek, Q.id, W]),
+            eN(), null != Y.current && W(Q.id, t, Y.current.duration)
+        }, [eN, Q.id, W]),
         eF = s.useCallback(() => {
             if (null != Y.current) {
                 let e = Y.current.duration;
@@ -194,14 +195,13 @@ function k(e) {
     return (0, r.jsx)(o.Ft, {
         ref: Y,
         parentTransitionState: M,
-        autoplay: k,
+        autoplay: N,
         progressClassName: G ? R.q : R.c,
         persistTimeline: !0,
         persistPlayhead: !1,
         pauseOnLostVisibility: !0,
-        autoFocus: N,
+        autoFocus: k,
         getPlaybackBlockedMessage: el,
-        performanceClockStartTime: P,
         orientation: V,
         videoUrlOverride: w,
         src: es?.url,

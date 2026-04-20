@@ -18,8 +18,8 @@ var r = s(627968),
     E = s(142270),
     h = s(287809),
     A = s(954571),
-    f = s(440938),
-    C = s(365491),
+    C = s(440938),
+    f = s(365491),
     g = s(563989),
     T = s(397309),
     y = s(628979),
@@ -44,12 +44,12 @@ function G(e) {
         location: "collectibles_shop_header_bar"
     }), F = (0, d.X)({
         location: "collectibles_shop_header_bar"
-    }), P = (0, f.uM)(), {
+    }), P = (0, C.uM)(), {
         searchQuery: k,
-        itemTypeFilters: D
-    } = (0, C.v)(), w = l.useRef(null), [M, $] = l.useState(!1);
-    (0, i.g)(w, l.useCallback(e => {
-        $(e.contentRect.width < 800)
+        itemTypeFilters: $
+    } = (0, f.v)(), D = l.useRef(null), [w, M] = l.useState(!1);
+    (0, i.g)(D, l.useCallback(e => {
+        M(e.contentRect.width < 800)
     }, []));
     let B = l.useCallback(() => {
             A.default.track(x.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
@@ -95,7 +95,7 @@ function G(e) {
                     } = e;
                     return (0, T.Y)({
                         selectedTab: t,
-                        itemTypeFilters: D,
+                        itemTypeFilters: $,
                         onTabSelect: s,
                         onClose: r
                     })
@@ -131,7 +131,7 @@ function G(e) {
                     })
                 }
             }), e
-        }, [N, j, U, s, H, t, D]),
+        }, [N, j, U, s, H, t, $]),
         V = t === L.G2.ORBS ? x.liQ.SHOP_ORBS_TAB : x.liQ.COLLECTIBLES_SHOP,
         z = l.useCallback(() => {
             (0, S.Y)({
@@ -152,7 +152,7 @@ function G(e) {
             e === L.G2.RIVALS ? B() : s(e)
         }, [s, B]);
     return (0, r.jsx)("div", {
-        ref: w,
+        ref: D,
         children: (0, r.jsxs)(c.A, {
             disableDoubleClick: !0,
             className: v.jr,
@@ -160,7 +160,7 @@ function G(e) {
                 children: [(0, r.jsx)(y.A, {
                     handleTransition: s,
                     selectedTab: t,
-                    isNarrow: M,
+                    isNarrow: w,
                     hasText: "" !== k
                 }), (0, r.jsx)(o.DUT, {
                     className: v.ij,

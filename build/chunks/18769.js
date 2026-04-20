@@ -17,10 +17,12 @@ let u = e => {
         supplementalImage: u,
         href: m,
         ctaText: h
-    } = e, p = null == h && null != m;
+    } = e, p = null != m;
     return (0, l.jsxs)(n.DUT, {
         className: o.rJ,
-        onClick: p ? () => (0, a.pX)(m) : void 0,
+        onClick: p ? e => {
+            e.preventDefault(), (0, a.pX)(m)
+        } : void 0,
         children: [(0, l.jsx)(c.A, {
             overflowable: !0,
             children: (0, l.jsx)(s.A, {

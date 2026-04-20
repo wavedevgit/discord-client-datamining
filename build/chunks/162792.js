@@ -81,7 +81,7 @@ let S = l.memo(function(e) {
     } = (0, s.cf)([m.A], () => ({
         isReplyAuthorBlocked: null != j && m.A.isBlockedForMessage(j),
         isReplyAuthorIgnored: null != j && m.A.isIgnoredForMessage(j)
-    }), [j]), P = (0, E.r4)(j?.author.id, S.id), w = (0, E.Ck)(t, j), k = (0, E.H9)(j, S, T, N), U = (0, E.Ge)(v, N), G = l.useCallback(() => {
+    }), [j]), P = (0, E.r4)(j?.author.id, S.id), k = (0, E.Ck)(t, j), w = (0, E.H9)(j, S, T, N), U = (0, E.Ge)(v, N), G = l.useCallback(() => {
         N({
             referencedUsernameProfile: !1,
             referencedAvatarProfile: !1
@@ -101,8 +101,8 @@ let S = l.memo(function(e) {
         showUsernamePopout: T,
         renderPopout: f.A,
         onClickAvatar: U,
-        onClickUsername: k,
-        onClickReply: w,
+        onClickUsername: w,
+        onClickReply: k,
         onContextMenu: P,
         onPopoutRequestClose: G,
         isReplySpineClickable: y,

@@ -35,8 +35,8 @@ var i = n(627968),
     D = n(972995),
     O = n(355622),
     P = n(408018),
-    w = n(223938),
-    k = n(811501),
+    k = n(223938),
+    w = n(811501),
     U = n(20737),
     G = n(133343),
     F = n(35277),
@@ -89,8 +89,8 @@ var i = n(627968),
     eD = n(287809),
     eO = n(954571),
     eP = n(147036),
-    ew = n(234320),
-    ek = n(203982),
+    ek = n(234320),
+    ew = n(203982),
     eU = n(661191),
     eG = n(460350),
     eF = n(518960),
@@ -189,7 +189,7 @@ class e9 extends l.PureComponent {
                 return void this.handleIncrementCombo("", 1);
             case e$.Ks6.ARROW_UP:
                 if (l || s) return;
-                if (e.preventDefault(), t) eL.A.getUploadCount(i.id, ev.C.ChannelMessage) > 0 ? ek._.dispatchToLastSubscribed(e$.jej.FOCUS_ATTACHMENT_AREA) : ek._.dispatchToLastSubscribed(e$.jej.FOCUS_MESSAGES, {
+                if (e.preventDefault(), t) eL.A.getUploadCount(i.id, ev.C.ChannelMessage) > 0 ? ew._.dispatchToLastSubscribed(e$.jej.FOCUS_ATTACHMENT_AREA) : ew._.dispatchToLastSubscribed(e$.jej.FOCUS_MESSAGES, {
                     atEnd: !0
                 });
                 else {
@@ -296,7 +296,7 @@ class e9 extends l.PureComponent {
             threadsAlsoSendToChannel: f
         } = this.props, E = !1;
         if (null != l) {
-            if (l.inputType === R.y$.BUILT_IN_INTEGRATION) return ek._.dispatch(e$.jej.SHAKE_APP, {
+            if (l.inputType === R.y$.BUILT_IN_INTEGRATION) return ew._.dispatch(e$.jej.SHAKE_APP, {
                 duration: 200,
                 intensity: 2
             }), Promise.resolve({
@@ -367,10 +367,10 @@ class e9 extends l.PureComponent {
                 failureReason: C
             } = e;
             if (!s)
-                if (C === e$.X8x.SLOWMODE_COOLDOWN) return ek._.dispatch(e$.jej.SHAKE_APP, {
+                if (C === e$.X8x.SLOWMODE_COOLDOWN) return ew._.dispatch(e$.jej.SHAKE_APP, {
                     duration: 200,
                     intensity: 2
-                }), ek._.dispatch(e$.jej.EMPHASIZE_SLOWMODE_COOLDOWN), {
+                }), ew._.dispatch(e$.jej.EMPHASIZE_SLOWMODE_COOLDOWN), {
                     shouldClear: !1,
                     shouldRefocus: !0
                 };
@@ -472,7 +472,7 @@ class e9 extends l.PureComponent {
         setValue: this.handleSetValue,
         canOnlyUseTextCommands: e
     });
-    renderApplicationCommandIcon = (e, t, n) => (0, i.jsx)(k.A, {
+    renderApplicationCommandIcon = (e, t, n) => (0, i.jsx)(w.A, {
         className: n,
         command: e,
         section: t,
@@ -496,7 +496,7 @@ class e9 extends l.PureComponent {
             announcementComposerEnabled: _
         } = this.props, {
             contentWarningProps: p
-        } = this.state, f = e.type === e$.rbe.GUILD_ANNOUNCEMENT && _ ? (0, i.jsx)(w.A, {
+        } = this.state, f = e.type === e$.rbe.GUILD_ANNOUNCEMENT && _ ? (0, i.jsx)(k.A, {
             ref: this.props.refInstance,
             textValue: this.state.textValue,
             richValue: this.state.richValue,
@@ -591,13 +591,13 @@ class e7 extends l.PureComponent {
     };
     dispatchGroupRef = l.createRef();
     componentDidMount() {
-        ek._.subscribe(e$.jej.FOCUS_CHANNEL_TEXT_AREA, this.handleRequestFocus)
+        ew._.subscribe(e$.jej.FOCUS_CHANNEL_TEXT_AREA, this.handleRequestFocus)
     }
     componentDidUpdate(e) {
         (this.props.isEditing !== e.isEditing || this.props.hasModalOpen !== e.hasModalOpen) && (this.props.isEditing || this.props.hasModalOpen ? this.handleInputBlur() : this.handleInputFocus())
     }
     componentWillUnmount() {
-        ek._.unsubscribe(e$.jej.FOCUS_CHANNEL_TEXT_AREA, this.handleRequestFocus)
+        ew._.unsubscribe(e$.jej.FOCUS_CHANNEL_TEXT_AREA, this.handleRequestFocus)
     }
     handleRequestFocus = e => {
         e.channelId === this.props.channel.id && (this.state.textAreaFocused ? this.refToChannelTextAreaFormComponent.current?.focusEditor() : this.setState({
@@ -634,12 +634,12 @@ class e7 extends l.PureComponent {
         } = this.props;
         if (t) switch (e.which) {
             case e$.Ks6.ARROW_LEFT:
-                n === O.oU.SIDEBAR && ek._.dispatch(e$.jej.FOCUS_CHANNEL_TEXT_AREA, {
+                n === O.oU.SIDEBAR && ew._.dispatch(e$.jej.FOCUS_CHANNEL_TEXT_AREA, {
                     channelId: eM.A.getChannelId()
                 });
                 return;
             case e$.Ks6.ARROW_RIGHT:
-                n === O.oU.NORMAL && ek._.dispatch(e$.jej.FOCUS_CHANNEL_TEXT_AREA, {
+                n === O.oU.NORMAL && ew._.dispatch(e$.jej.FOCUS_CHANNEL_TEXT_AREA, {
                     channelId: eT.Ay.getCurrentSidebarChannelId(i.id)
                 })
         }
@@ -748,18 +748,18 @@ class e7 extends l.PureComponent {
             page: (0, eP.DJ)(this.props.channel),
             children: (0, i.jsx)(Z.di, {
                 children: (0, i.jsx)($.Xq, {
-                    children: (0, i.jsxs)(ew.Ah, {
+                    children: (0, i.jsxs)(ek.Ah, {
                         ref: this.dispatchGroupRef,
-                        children: [(0, i.jsx)(ew.EG, {
+                        children: [(0, i.jsx)(ek.EG, {
                             event: e$.jej.TEXTAREA_FOCUS,
                             handler: this.handleInputFocus
-                        }), (0, i.jsx)(ew.EG, {
+                        }), (0, i.jsx)(ek.EG, {
                             event: e$.jej.TEXTAREA_BLUR,
                             handler: this.handleInputBlur
-                        }), (0, i.jsx)(ew.EG, {
+                        }), (0, i.jsx)(ek.EG, {
                             event: e$.jej.OPEN_EXPRESSION_PICKER,
                             handler: this.handleOpenExpressionPicker
-                        }), (0, i.jsx)(ew.EG, {
+                        }), (0, i.jsx)(ek.EG, {
                             event: e$.jej.OPEN_APP_LAUNCHER,
                             handler: this.handleOpenAppLauncher
                         }), (0, i.jsxs)(e2, {

@@ -4,8 +4,8 @@ a.d(t, {
     eJ: () => g,
     iW: () => p,
     rx: () => f,
-    sC: () => b,
-    tt: () => C
+    sC: () => C,
+    tt: () => b
 }), a(938796);
 var n = a(665260),
     o = a(417597),
@@ -31,7 +31,7 @@ let p = (e, t) => {
         }, t);
         return l.length > 0 ? l[0] : s ? r.Oc.POTENTIAL_EXPLICIT_CONTENT : a || (0, n.Lt)(o, u.sbO.IS_SPOILER) ? r.Oc.SPOILER : null
     },
-    b = (e, t, a, n) => {
+    C = (e, t, a, n) => {
         let o = (0, c.b)({
                 type: i.D.Embed,
                 media: e
@@ -42,7 +42,7 @@ let p = (e, t) => {
             }, n);
         return o.length > 0 ? o[0] : l ? r.Oc.POTENTIAL_EXPLICIT_CONTENT : a ? r.Oc.SPOILER : null
     },
-    C = function(e, t) {
+    b = function(e, t) {
         let a = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
             n = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
             o = (0, c.b)({

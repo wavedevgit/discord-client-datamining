@@ -35,8 +35,8 @@ var i = n(627968),
     D = n(405269),
     O = n(927813),
     P = n(661191),
-    w = n(326337),
-    k = n(375901),
+    k = n(326337),
+    w = n(375901),
     U = n(857069),
     G = n(675171),
     F = n(806621),
@@ -188,7 +188,7 @@ function en(e) {
                 message: e.content,
                 groupId: n,
                 flashKey: e.flashKey,
-                id: (0, k.j)(l.id, e.content.id),
+                id: (0, w.j)(l.id, e.content.id),
                 isLastItem: t >= el.length - 1,
                 renderContentOnly: eT || s
             }, e.content.id)
@@ -339,7 +339,7 @@ function en(e) {
             var e;
             return e = l.id, void r.A.fetchMessages({
                 channelId: e,
-                limit: (0, w.h)("renderStream.reload"),
+                limit: (0, k.h)("renderStream.reload"),
                 truncate: !0
             })
         },
@@ -364,7 +364,7 @@ function en(e) {
         }) : (0, i.jsx)(K.Ab, {
             onClick: () => {
                 let e;
-                return r.A.jumpToPresent(l.id, (0, w.h)("renderStream.jumpToPresent")), e = M.A.getChannelId(), void(l.id === e && (0, C.iN)(l.id))
+                return r.A.jumpToPresent(l.id, (0, k.h)("renderStream.jumpToPresent")), e = M.A.getChannelId(), void(l.id === e && (0, C.iN)(l.id))
             },
             className: eu
         })

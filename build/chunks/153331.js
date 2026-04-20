@@ -35,8 +35,8 @@ var i, l = n(627968),
     D = n(682261),
     O = n(672979),
     P = n(90644),
-    w = n(61330),
-    k = n(960076),
+    k = n(61330),
+    w = n(960076),
     U = n(139902),
     G = n(432166),
     F = n(360469),
@@ -93,7 +93,7 @@ class J extends s.PureComponent {
         return (0, L.t)(V, e, this.props.type, t)
     }
     isStreamerOnTypeActivityFeed() {
-        return (0, k.A)(this.activity) && "ActivityFeed" === this.props.type
+        return (0, w.A)(this.activity) && "ActivityFeed" === this.props.type
     }
     renderHeader(e) {
         let t, {
@@ -167,7 +167,7 @@ class J extends s.PureComponent {
                 application_id: o
             } = e;
         if (null == a || null == a.large_image && null == a.small_image) return null;
-        (0, k.A)(e) && (t = K[i]);
+        (0, w.A)(e) && (t = K[i]);
         let c = (0, P.A)(e),
             d = null != a.large_image ? (0, l.jsx)("img", {
                 alt: a.large_text ?? "",
@@ -311,7 +311,7 @@ class J extends s.PureComponent {
                     artistsHook: t
                 })
             } else(0, y.Cy)(e) && (s = e.assets?.small_text);
-        return null == s || "" === s ? null : ((0, k.A)(e) && (s = B.intl.formatToPlainString(B.t.gmCZRY, {
+        return null == s || "" === s ? null : ((0, w.A)(e) && (s = B.intl.formatToPlainString(B.t.gmCZRY, {
             game: s
         })), null != t) ? (0, l.jsx)(m.DUT, {
             onClick: t,
@@ -320,7 +320,7 @@ class J extends s.PureComponent {
             children: s
         }) : (0, l.jsx)("div", {
             title: a ?? void 0,
-            className: (0, k.A)(e) || (0, P.A)(e) ? V.detailsWrap : V.details,
+            className: (0, w.A)(e) || (0, P.A)(e) ? V.detailsWrap : V.details,
             children: s
         })
     }
@@ -331,12 +331,12 @@ class J extends s.PureComponent {
             channel: i
         } = this.props;
         return n && null != t ? null == i ? (0, l.jsx)("div", {
-            className: (0, k.A)(e) || (0, P.A)(e) ? V.detailsWrap : V.details,
+            className: (0, w.A)(e) || (0, P.A)(e) ? V.detailsWrap : V.details,
             children: B.intl.format(B.t["hq/Qze"], {
                 guildName: t.name
             })
         }) : (0, l.jsxs)("div", {
-            className: r()((0, k.A)(e) || (0, P.A)(e) ? V.detailsWrap : V.details, V.guildDetails),
+            className: r()((0, w.A)(e) || (0, P.A)(e) ? V.detailsWrap : V.details, V.guildDetails),
             children: [(0, l.jsx)(I.Ay, {
                 guild: t,
                 size: I.Ay.Sizes.SMOL,
@@ -444,7 +444,7 @@ class J extends s.PureComponent {
         let d = "ActivityFeed" === t,
             u = "StreamPreview" === t,
             h = !1;
-        if ((0, w.A)(c)) e = this.renderXboxImage(), h = !0;
+        if ((0, k.A)(c)) e = this.renderXboxImage(), h = !0;
         else {
             let t = (0, T.Gf)(this.props.user.id, c ?? void 0);
             t.isSpotify || (e = (0, l.jsx)(T.Tf, {

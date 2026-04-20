@@ -43,8 +43,8 @@ function p(e) {
         maxSeekableTimeSec: r,
         videoUrl: s,
         poster: p,
-        showEndScreen: m,
-        active: b,
+        showEndScreen: b,
+        active: m,
         autoHideVolumeSlider: _,
         sizing: g,
         persistPlayhead: h
@@ -90,20 +90,19 @@ function p(e) {
             children: (0, n.jsx)(l.A, {
                 src: y,
                 poster: p,
-                active: b,
-                autoFocus: !b,
+                active: m,
+                autoFocus: !m,
                 autoplay: a,
                 orientation: t,
                 maxSeekableTimeSec: r > 0 ? r : void 0,
                 autoHideVolumeSlider: _,
                 persistPlayhead: h,
                 parentTransitionState: i.ip4.ENTERED,
-                performanceClockStartTime: 0,
                 onProgressUpdate: () => {},
                 onEnded: () => {},
                 onError: () => {},
                 transcriptText: s === d.Im ? d.LI : d.pQ,
-                renderEndScreen: m ? e => {
+                renderEndScreen: b ? e => {
                     let {
                         replay: a
                     } = e;
@@ -113,11 +112,11 @@ function p(e) {
                         onReplay: a
                     })
                 } : void 0
-            }, `${String(b)}-${v}`)
+            }, `${String(m)}-${v}`)
         })]
     })
 }
-let m = {
+let b = {
         orientation: {
             label: "Orientation",
             type: "select",
@@ -183,14 +182,14 @@ let m = {
             defaultValue: "modal"
         }
     },
-    b = {
+    m = {
         name: "Landscape",
         id: "landscape-video-generic",
         component: p,
         controls: {
-            ...m,
+            ...b,
             orientation: {
-                ...m.orientation,
+                ...b.orientation,
                 defaultValue: "landscape"
             }
         }
@@ -200,9 +199,9 @@ let m = {
         id: "portrait-video-generic",
         component: p,
         controls: {
-            ...m,
+            ...b,
             orientation: {
-                ...m.orientation,
+                ...b.orientation,
                 defaultValue: "portrait"
             }
         }
@@ -212,13 +211,13 @@ let m = {
         id: "hls-video-generic",
         component: p,
         controls: {
-            ...m,
+            ...b,
             orientation: {
-                ...m.orientation,
+                ...b.orientation,
                 defaultValue: "landscape"
             },
             videoUrl: {
-                ...m.videoUrl,
+                ...b.videoUrl,
                 defaultValue: d.Im
             }
         }
@@ -230,7 +229,7 @@ let m = {
     },
     v = {
         title: "Discord Video Player (Generic)",
-        stories: [b, _, g, {
+        stories: [m, _, g, {
             name: "Timeline Indicators",
             id: "timeline-indicators-generic",
             component: function(e) {
@@ -255,12 +254,12 @@ let m = {
                         })) : u({
                             expansion: 0
                         }), a(e)
-                    }, [u]), m = o.useMemo(() => [{
+                    }, [u]), b = o.useMemo(() => [{
                         index: 0,
                         timeSec: e,
                         widthPx: 32,
                         gapPx: 4
-                    }], [e]), b = o.useCallback((e, t) => {
+                    }], [e]), m = o.useCallback((e, t) => {
                         let a = l === e.index;
                         return (0, n.jsx)(r.animated.div, {
                             "data-testid": "timeline-indicator",
@@ -291,11 +290,11 @@ let m = {
                         }, `indicator-${e.index}`)
                     }, [p, l, c]);
                     return {
-                        indicators: m,
+                        indicators: b,
                         animatingIndex: l,
                         expansionSpring: c,
                         hoverExpansionPx: 4,
-                        renderIndicator: b
+                        renderIndicator: m
                     }
                 }(c);
                 return (0, n.jsx)("div", {
@@ -310,16 +309,15 @@ let m = {
                         orientation: t,
                         maxSeekableTimeSec: s > 0 ? s : void 0,
                         parentTransitionState: i.ip4.ENTERED,
-                        performanceClockStartTime: 0,
                         timelineIndicatorConfig: u
                     })
                 })
             },
             controls: {
-                orientation: m.orientation,
-                autoplay: m.autoplay,
-                maxSeekableTimeSec: m.maxSeekableTimeSec,
-                videoUrl: m.videoUrl,
+                orientation: b.orientation,
+                autoplay: b.autoplay,
+                maxSeekableTimeSec: b.maxSeekableTimeSec,
+                videoUrl: b.videoUrl,
                 indicatorTimeSec: {
                     label: "Indicator Time (sec)",
                     type: "number",

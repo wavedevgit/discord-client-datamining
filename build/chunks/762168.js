@@ -1,8 +1,8 @@
 /** chunk id: 762168 params = (module,exports,require) **/
 a.d(t, {
     DX: () => v,
-    _v: () => T,
-    cs: () => P,
+    _v: () => P,
+    cs: () => T,
     ec: () => f,
     kK: () => x,
     sn: () => S
@@ -17,8 +17,8 @@ var n = a(627968),
     c = a(341915),
     u = a(405670),
     p = a(73473),
-    m = a(839727),
-    b = a(795068),
+    b = a(839727),
+    m = a(795068),
     _ = a(654487),
     g = a(652215),
     h = a(784018);
@@ -164,9 +164,9 @@ function S(e) {
         questOrQuests: t,
         questContent: c.uF.VIDEO_MODAL,
         sourceQuestContent: c.uF.INTERNAL_PREVIEW_TOOL,
-        children: (e, t) => (0, n.jsx)(b.l.Provider, {
+        children: (e, t) => (0, n.jsx)(m.l.Provider, {
             value: u,
-            children: (0, n.jsx)(b.a.Provider, {
+            children: (0, n.jsx)(m.a.Provider, {
                 value: d,
                 children: r
             })
@@ -183,16 +183,16 @@ function C(e) {
         targetTimeSec: l,
         useNewStyling: s,
         videoUrl: c
-    } = e, p = "portrait" === t, [b, h] = o.useState(!1), y = v({
+    } = e, p = "portrait" === t, [m, h] = o.useState(!1), y = v({
         url: c,
         width: p ? 360 : 640,
         height: p ? 640 : 360,
         target: l,
         videoTitle: p ? "Test Portrait Video" : "Test Landscape Video",
         transcript: "transcript.txt"
-    }), C = f(y), T = o.useRef(!1);
-    T.current || (T.current = !0, u.Kr.getState().clearState()), i && (C.config.features = [_.Li.FULL_EPISODE_VIDEO_QUEST]);
-    let P = r ? {
+    }), C = f(y), P = o.useRef(!1);
+    P.current || (P.current = !0, u.Kr.getState().clearState()), i && (C.config.features = [_.Li.FULL_EPISODE_VIDEO_QUEST]);
+    let T = r ? {
         ...C,
         userStatus: x({
             enrolledAt: C.userStatus?.enrolledAt ?? null,
@@ -213,25 +213,25 @@ function C(e) {
             "--custom-footer-horizontal-padding": "20px"
         },
         children: (0, n.jsx)(S, {
-            quest: P,
+            quest: T,
             isPortrait: p,
-            isFullscreenEnabled: b,
+            isFullscreenEnabled: m,
             setIsFullscreenEnabled: h,
             useNewStyling: s,
-            children: (0, n.jsx)(m.A, {
+            children: (0, n.jsx)(b.A, {
                 targetTimeSec: y.target,
                 parentTransitionState: d.ip4.ENTERED,
                 onOptimisticProgressUpdate: g.tEg,
                 autoplay: a,
                 autoFocus: !1,
-                performanceClockStartTime: 0,
+                openedAtMs: 0,
                 orientation: t,
                 videoUrlOverride: c
             })
         })
     })
 }
-let T = {
+let P = {
         orientation: {
             label: "Orientation",
             type: "select",
@@ -270,16 +270,16 @@ let T = {
             defaultValue: h.kz
         }
     },
-    P = {
+    T = {
         title: "Legacy Quest Player",
         stories: [{
             name: "Landscape",
             id: "landscape-video",
             component: C,
             controls: {
-                ...T,
+                ...P,
                 orientation: {
-                    ...T.orientation,
+                    ...P.orientation,
                     defaultValue: "landscape"
                 }
             }
@@ -288,9 +288,9 @@ let T = {
             id: "portrait-video",
             component: C,
             controls: {
-                ...T,
+                ...P,
                 orientation: {
-                    ...T.orientation,
+                    ...P.orientation,
                     defaultValue: "portrait"
                 }
             }

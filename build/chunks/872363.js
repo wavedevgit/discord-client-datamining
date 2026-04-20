@@ -82,10 +82,10 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
             {
                 location: P
             } = (0, A.p)(),
-            w = (0, c.bG)([p.default], () => p.default.getCurrentUser()),
-            k = o && !E.Ay.isPremium(w, I.PremiumTypes.TIER_1) && !E.Ay.canStreamQuality(E.Ay.StreamQuality.MID, w),
+            k = (0, c.bG)([p.default], () => p.default.getCurrentUser()),
+            w = o && !E.Ay.isPremium(k, I.PremiumTypes.TIER_1) && !E.Ay.canStreamQuality(E.Ay.StreamQuality.MID, k),
             U = l.useCallback(() => {
-                k && O && (0, m.mMO)(async () => {
+                w && O && (0, m.mMO)(async () => {
                     let {
                         default: e
                     } = await n.e("18630").then(n.bind(n, 826789));
@@ -94,7 +94,7 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                         analyticsSource: P
                     })
                 })
-            }, [k, O, P]);
+            }, [w, O, P]);
         if (l.useEffect(() => {
                 !y && O && (f.default.track(S.HAw.PREMIUM_UPSELL_VIEWED, {
                     type: I.e.STREAM_QUALITY_INDICATOR,
@@ -109,7 +109,7 @@ let N = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
             children: (0, i.jsxs)(m.DUT, {
                 onClick: U,
                 className: a()(v.t5, N, _.u1[h], D ? v.Y5 : v.Lc, {
-                    [v.vk]: k && O
+                    [v.vk]: w && O
                 }),
                 children: [O ? (0, i.jsx)(m.tvc, {
                     size: "md",

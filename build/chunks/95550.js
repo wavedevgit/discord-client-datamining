@@ -37,8 +37,8 @@ var i = n(627968),
     D = n(95701),
     O = n(734057),
     P = n(958590),
-    w = n(584777),
-    k = n(383501),
+    k = n(584777),
+    w = n(383501),
     U = n(222823),
     G = n(994500),
     F = n(351906),
@@ -679,7 +679,7 @@ class el extends l.PureComponent {
     pushToExistingDM = (e, t) => {
         let n = this._searchCounter,
             i = (0, S.dI)(e),
-            l = k.A.getChannelId() === e.id;
+            l = w.A.getChannelId() === e.id;
         A.A.addRecipients(e.id, t, Z.ThZ.ADD_FRIENDS_TO_DM).then(n => {
             if (this.props.onComplete?.(n), l) {
                 if (e.isDM() && n !== e.id) return void m.A.call(n, !1, !0);
@@ -785,10 +785,10 @@ function ea(e) {
         channel: t,
         onComplete: n,
         ...l
-    } = e, s = (0, c.cf)([w.A, P.A, F.A], () => {
+    } = e, s = (0, c.cf)([k.A, P.A, F.A], () => {
         let e;
         return null != t && null != (e = P.A.getInvite(t.id)) && e.isExpired() && (e = null), {
-            ...w.A.getState(),
+            ...k.A.getState(),
             invite: e,
             hideDiscriminator: F.A.hidePersonalInformation,
             hideInstantInvites: F.A.hideInstantInvites

@@ -29,7 +29,7 @@ function A(e) {
         showNewBadge: u,
         icon: d
     } = e;
-    return null != o ? (0, r.jsx)(f, {
+    return null != o ? (0, r.jsx)(C, {
         tab: t,
         label: s,
         selected: l,
@@ -55,7 +55,7 @@ function A(e) {
     })
 }
 
-function f(e) {
+function C(e) {
     let {
         tab: t,
         label: s,
@@ -65,15 +65,15 @@ function f(e) {
         submenuOnly: S
     } = e, m = l.useRef(null), E = l.useRef(!1), {
         isHovered: A,
-        setIsHovered: f,
-        onMouseEnter: C,
+        setIsHovered: C,
+        onMouseEnter: f,
         onMouseLeave: g,
         cancelTimers: T
     } = (0, p.A)(100, 100), y = e => {
-        ("Enter" === e.key || " " === e.key) && (e.preventDefault(), T(), f(!0), E.current = d.A.keyboardModeEnabled)
+        ("Enter" === e.key || " " === e.key) && (e.preventDefault(), T(), C(!0), E.current = d.A.keyboardModeEnabled)
     }, O = l.useCallback(() => {
-        E.current = d.A.keyboardModeEnabled, C()
-    }, [C]);
+        E.current = d.A.keyboardModeEnabled, f()
+    }, [f]);
     return (0, r.jsx)("div", {
         className: h.iV,
         onMouseEnter: O,
@@ -84,17 +84,17 @@ function f(e) {
             position: "bottom",
             align: "left",
             onRequestOpen: () => {
-                T(), f(!0), E.current = d.A.keyboardModeEnabled
+                T(), C(!0), E.current = d.A.keyboardModeEnabled
             },
             onRequestClose: () => {
-                E.current && !d.A.keyboardModeEnabled && (0, u.uS)(), f(!1), m.current?.focus()
+                E.current && !d.A.keyboardModeEnabled && (0, u.uS)(), C(!1), m.current?.focus()
             },
             renderPopout: e => {
                 let {
                     closePopout: t
                 } = e;
                 return (0, r.jsx)("div", {
-                    onMouseEnter: C,
+                    onMouseEnter: f,
                     onMouseLeave: g,
                     children: c({
                         onClose: t
@@ -127,7 +127,7 @@ function f(e) {
     })
 }
 
-function C(e) {
+function f(e) {
     let {
         onTabSelect: t,
         tabs: s,
@@ -135,15 +135,15 @@ function C(e) {
         selected: o
     } = e, c = l.useRef(null), m = l.useRef(!1), {
         isHovered: A,
-        setIsHovered: f,
-        onMouseEnter: C,
+        setIsHovered: C,
+        onMouseEnter: f,
         onMouseLeave: g,
         cancelTimers: T
     } = (0, p.A)(100, 100), y = e => {
-        ("Enter" === e.key || " " === e.key) && (e.preventDefault(), T(), f(!0), m.current = d.A.keyboardModeEnabled)
+        ("Enter" === e.key || " " === e.key) && (e.preventDefault(), T(), C(!0), m.current = d.A.keyboardModeEnabled)
     }, O = l.useCallback(() => {
-        m.current = d.A.keyboardModeEnabled, C()
-    }, [C]);
+        m.current = d.A.keyboardModeEnabled, f()
+    }, [f]);
     return (0, r.jsx)("div", {
         className: h.iV,
         onMouseEnter: O,
@@ -154,17 +154,17 @@ function C(e) {
             position: "bottom",
             align: "left",
             onRequestOpen: () => {
-                T(), f(!0), m.current = d.A.keyboardModeEnabled
+                T(), C(!0), m.current = d.A.keyboardModeEnabled
             },
             onRequestClose: () => {
-                m.current && !d.A.keyboardModeEnabled && (0, u.uS)(), f(!1), c.current?.focus()
+                m.current && !d.A.keyboardModeEnabled && (0, u.uS)(), C(!1), c.current?.focus()
             },
             renderPopout: e => {
                 let {
                     closePopout: l
                 } = e;
                 return (0, r.jsx)("div", {
-                    onMouseEnter: C,
+                    onMouseEnter: f,
                     onMouseLeave: g,
                     children: (0, r.jsx)(S.A, {
                         selectedTab: n,
@@ -218,13 +218,13 @@ function T(e) {
         itemGapPx: 24,
         maxLines: 1,
         containerWidth: u
-    }), E = l.useMemo(() => n.slice(0, p + 1), [p, n]), f = l.useMemo(() => n.slice(p + 1), [p, n]), T = l.useRef(null), y = l.useCallback(e => {
+    }), E = l.useMemo(() => n.slice(0, p + 1), [p, n]), C = l.useMemo(() => n.slice(p + 1), [p, n]), T = l.useRef(null), y = l.useCallback(e => {
         let t = e.contentRect.width;
         null != t && b.current !== t && (d(t), b.current = t)
     }, []);
     (0, c.g)(T, y);
     let O = 0 !== u,
-        L = f.some(e => g(e.tab, e, s));
+        L = C.some(e => g(e.tab, e, s));
     return (0, r.jsxs)("div", {
         className: a()(h.kL, t),
         ref: T,
@@ -244,8 +244,8 @@ function T(e) {
                 })
             }, e.tab)), (0, r.jsx)("div", {
                 ref: m,
-                children: (0, r.jsx)(C, {
-                    tabs: f,
+                children: (0, r.jsx)(f, {
+                    tabs: C,
                     onTabSelect: i,
                     selectedTab: s,
                     selected: L
@@ -261,8 +261,8 @@ function T(e) {
                 renderSubmenu: e.renderSubmenu,
                 submenuOnly: e.submenuOnly,
                 icon: e.icon
-            }, e.tab)), 0 !== f.length ? (0, r.jsx)(C, {
-                tabs: f,
+            }, e.tab)), 0 !== C.length ? (0, r.jsx)(f, {
+                tabs: C,
                 onTabSelect: i,
                 selectedTab: s,
                 selected: L

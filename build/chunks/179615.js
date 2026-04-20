@@ -52,13 +52,13 @@ function A(e) {
         enabled: L
     } = o.uK.useConfig({
         location: v.rE.VIDEO_MODAL
-    }), k = s.useMemo(() => (0, c.tW)(T, c.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1)?.url ?? null, [T]);
+    }), N = s.useMemo(() => (0, c.tW)(T, c.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1)?.url ?? null, [T]);
     return L ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l.nY, {
-            url: k
+            url: N
         }), (0, r.jsx)(l.KP, {}), (0, r.jsxs)(l.zj, {
             orientation: A,
-            children: [null != k && (0, r.jsx)(f.R, {
+            children: [null != N && (0, r.jsx)(f.R, {
                 questOrQuests: T,
                 questContent: u.uF.VIDEO_MODAL_END_CARD,
                 sourceQuestContent: x,
@@ -66,7 +66,7 @@ function A(e) {
                     ref: t => {
                         e.current = t
                     },
-                    url: k,
+                    url: N,
                     orientation: A
                 })
             }), (0, r.jsx)(l.lx, {
@@ -79,7 +79,7 @@ function A(e) {
             })]
         })]
     }) : (0, r.jsxs)(r.Fragment, {
-        children: [null != k && (0, r.jsx)(f.R, {
+        children: [null != N && (0, r.jsx)(f.R, {
             questOrQuests: T,
             questContent: u.uF.VIDEO_MODAL_END_CARD,
             sourceQuestContent: x,
@@ -87,7 +87,7 @@ function A(e) {
                 ref: t => {
                     e.current = t
                 },
-                url: k
+                url: N
             })
         }), (0, r.jsx)("div", {
             className: g.MT,

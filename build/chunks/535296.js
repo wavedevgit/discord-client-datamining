@@ -36,8 +36,8 @@ var i = n(627968),
     D = n(427262),
     O = n(871123),
     P = n(832163),
-    w = n(453774),
-    k = n(44724),
+    k = n(453774),
+    w = n(44724),
     U = n(84511),
     G = n(817176),
     F = n(129114),
@@ -133,14 +133,14 @@ function Z(e) {
     } = e, s = t?.id, a = l.useCallback(() => {
         if (null != s) {
             let e = P.A.getGuildIdFromApplicationId(s);
-            null != e && (0, k.X)({
+            null != e && (0, w.X)({
                 guildId: e
             })
         }
     }, [s]), r = l.useCallback(() => {
         if (null != s) {
             let e = P.A.getGuildIdFromApplicationId(s);
-            null != e && (n(), (0, k.default)({
+            null != e && (n(), (0, w.default)({
                 guildId: e
             }))
         }
@@ -301,7 +301,7 @@ function et(e) {
         canShowCTA: o,
         onDismissCTA: c,
         isTargetingCurrentUser: O
-    }), k = (0, w.A)(s), {
+    }), w = (0, k.A)(s), {
         status: G,
         recommendations: H,
         skusToUserAndReason: B,
@@ -345,7 +345,7 @@ function et(e) {
                     embedded: !0
                 }), P]
             }) : (0, i.jsx)(q, {
-                application: k
+                application: w
             }), (0, i.jsx)($, {
                 user: v,
                 isGift: !O
@@ -356,7 +356,7 @@ function et(e) {
             className: K.HV,
             children: et
         }), (0, i.jsx)(Z, {
-            application: k,
+            application: w,
             onClose: r
         }), (0, i.jsx)(U.A, {
             location: "social_layer_vc_gifting_panel",
@@ -378,7 +378,7 @@ function en(e) {
     });
     let {
         analyticsLocations: o
-    } = (0, A.Ay)(m.A.SLAYER_STOREFRONT_VC_GIFTING_PANEL), c = (0, u.bG)([M.default], () => M.default.getUser(n)), h = n === (0, u.bG)([R.default], () => R.default.getId()), g = (0, w.A)(s), {
+    } = (0, A.Ay)(m.A.SLAYER_STOREFRONT_VC_GIFTING_PANEL), c = (0, u.bG)([M.default], () => M.default.getUser(n)), h = n === (0, u.bG)([R.default], () => R.default.getId()), g = (0, k.A)(s), {
         status: _,
         recommendations: p,
         skusToUserAndReason: f,

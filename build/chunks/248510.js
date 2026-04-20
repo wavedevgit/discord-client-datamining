@@ -48,8 +48,7 @@ let x = {
                         autoplay: x,
                         orientation: l,
                         renderOverlay: _,
-                        parentTransitionState: o.ip4.ENTERED,
-                        performanceClockStartTime: 0
+                        parentTransitionState: o.ip4.ENTERED
                     })
                 }), (0, a.jsxs)(o.ZpM, {
                     className: h.nd,

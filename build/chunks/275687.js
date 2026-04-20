@@ -20,8 +20,8 @@ function m(e) {
         className: i,
         active: m = !1,
         autoPlay: p,
-        src: b,
-        embed: C = !1,
+        src: C,
+        embed: b = !1,
         fillContainer: h = !1,
         minWidth: g = 500,
         maxWidth: f = 1 / 0,
@@ -34,15 +34,15 @@ function m(e) {
         onVolumeChange: E,
         onMutedChange: x,
         onClick: M,
-        onContextMenu: P
-    } = e, O = t.width ?? 0, N = t.height ?? 0, w = (0, c.bG)([_.A], () => _.A.getBasicChannel(A)?.guild_id, [A]), B = O > 0 && N > 0 ? O / N : 16 / 9, R = Math.min(O > 0 ? O : g, f), G = R / B;
+        onContextMenu: O
+    } = e, P = t.width ?? 0, N = t.height ?? 0, w = (0, c.bG)([_.A], () => _.A.getBasicChannel(A)?.guild_id, [A]), B = P > 0 && N > 0 ? P / N : 16 / 9, R = Math.min(P > 0 ? P : g, f), G = R / B;
     G > I && (R = (G = I) * B), R < g && (G = (R = g) / B);
-    let k = Math.round(Math.min(R, f)),
-        D = Math.round(Math.min(G, I)),
-        L = O > 0 && N > 0 ? Math.min(k / O, D / N, 1) : 1,
+    let D = Math.round(Math.min(R, f)),
+        k = Math.round(Math.min(G, I)),
+        L = P > 0 && N > 0 ? Math.min(D / P, k / N, 1) : 1,
         j = (0, l.AE)({
             src: a,
-            width: Math.round(O * L),
+            width: Math.round(P * L),
             height: Math.round(N * L)
         }),
         [F, H] = o.useState(!1),
@@ -73,16 +73,16 @@ function m(e) {
             [u.H]: h
         }, i),
         onClick: e => e.stopPropagation(),
-        onKeyUp: C ? e => e.stopPropagation() : void 0,
-        onKeyDown: C ? e => e.stopPropagation() : void 0,
-        onContextMenu: P,
+        onKeyUp: b ? e => e.stopPropagation() : void 0,
+        onKeyDown: b ? e => e.stopPropagation() : void 0,
+        onContextMenu: O,
         style: h ? void 0 : {
-            width: k,
-            height: D
+            width: D,
+            height: k
         },
         children: (0, n.jsx)(s.A, {
             crossOrigin: null,
-            src: b,
+            src: C,
             downloadUrl: t.url,
             downloadContentType: t.content_type,
             poster: j,

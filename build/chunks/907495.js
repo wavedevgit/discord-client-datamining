@@ -35,8 +35,8 @@ var i = n(627968),
     D = n(961350),
     O = n(580745),
     P = n(71393),
-    w = n(834942),
-    k = n(576705),
+    k = n(834942),
+    w = n(576705),
     U = n(954571),
     G = n(957565),
     F = n(690521),
@@ -183,12 +183,12 @@ function ea(e) {
             author: u
         } = n, h = (0, d.bG)([P.A], () => P.A.getGuild(t.guild_id), [t.guild_id]), m = (0, d.bG)([D.default], () => D.default.getId()), _ = (0, M.Id)(t), p = (0, M.s5)(t), {
             firstMessage: f
-        } = (0, d.bG)([E.A], () => E.A.getMessage(t.id), [t.id]), x = L.jW.useSetting(), S = L.Q_.useSetting(), I = (0, d.bG)([w.A], () => null == t.guild_id || w.A.canChatInGuild(t.guild_id), [t]), {
+        } = (0, d.bG)([E.A], () => E.A.getMessage(t.id), [t.id]), x = L.jW.useSetting(), S = L.Q_.useSetting(), I = (0, d.bG)([k.A], () => null == t.guild_id || k.A.canChatInGuild(t.guild_id), [t]), {
             canManageMessages: v,
             canAddNewReactions: N
-        } = (0, d.cf)([k.A], () => ({
-            canAddNewReactions: I && k.A.can(X.xBc.ADD_REACTIONS, t),
-            canManageMessages: k.A.can(X.xBc.MANAGE_MESSAGES, t)
+        } = (0, d.cf)([w.A], () => ({
+            canAddNewReactions: I && w.A.can(X.xBc.ADD_REACTIONS, t),
+            canManageMessages: w.A.can(X.xBc.MANAGE_MESSAGES, t)
         }), [t, I]), y = (0, b.u)(t, n), O = (0, M.n)(t, n), U = (0, M.R)(n), F = (0, d.bG)([T.A], () => null != t.guild_id && T.A.isLurking(t.guild_id), [t]), H = u.id === m, J = (v || n.canDeleteOwnMessage(m)) && _ && !X.MRS.UNDELETABLE.has(n.type);
         n.type === X.lAJ.AUTO_MODERATION_ACTION && (J = J && v), t.isModeratorReportChannel() && (J = J && n.id !== f?.id && !(0, z.A)(n));
         let q = (0, B.ul)(n),
@@ -206,7 +206,7 @@ function ea(e) {
             }),
             ee = t.type === X.rbe.GUILD_ANNOUNCEMENT && null != h && h.features.has(X.GuildFeatures.NEWS) && (H || v) && (0, g.A)(n),
             et = t.getGuildId(),
-            en = null != et && n.type === X.lAJ.USER_JOIN && k.A.canWithPartialContext(X.xBc.MANAGE_GUILD, {
+            en = null != et && n.type === X.lAJ.USER_JOIN && w.A.canWithPartialContext(X.xBc.MANAGE_GUILD, {
                 guildId: et
             }),
             ei = (0, C.m)(n),

@@ -33,15 +33,15 @@ function p(e) {
         orientation: t,
         autoplay: a,
         questCompleted: p,
-        fullEpisode: m,
-        targetTimeSec: b,
+        fullEpisode: b,
+        targetTimeSec: m,
         videoUrl: _,
         sizing: g
     } = e, h = "portrait" === t, v = (0, s.DX)({
         url: _,
         width: h ? 360 : 640,
         height: h ? 640 : 360,
-        target: b,
+        target: m,
         videoTitle: h ? "Test Portrait Video" : "Test Landscape Video",
         transcript: "transcript.txt"
     }), x = (0, s.ec)(v), y = o.useRef(!1);
@@ -55,7 +55,7 @@ function p(e) {
             once: !0
         }), () => e.removeEventListener("loadedmetadata", t);
         t()
-    }, []), m && (x.config.features = [d.Li.FULL_EPISODE_VIDEO_QUEST]);
+    }, []), b && (x.config.features = [d.Li.FULL_EPISODE_VIDEO_QUEST]);
     let f = p ? {
         ...x,
         userStatus: (0, s.kK)({
@@ -75,7 +75,7 @@ function p(e) {
                 onOptimisticProgressUpdate: c.tEg,
                 autoplay: a,
                 autoFocus: !1,
-                performanceClockStartTime: 0,
+                openedAtMs: 0,
                 orientation: t,
                 videoUrlOverride: _
             })
@@ -83,8 +83,8 @@ function p(e) {
     })
 }
 let {
-    useNewStyling: m,
-    ...b
+    useNewStyling: b,
+    ...m
 } = s._v, _ = {
     label: "Full Episode (shows reward indicator)",
     type: "boolean",
@@ -107,7 +107,7 @@ let {
         id: "landscape-video-composed",
         component: p,
         controls: {
-            ...b,
+            ...m,
             orientation: {
                 ...s._v.orientation,
                 defaultValue: "landscape"
@@ -120,7 +120,7 @@ let {
         id: "portrait-video-composed",
         component: p,
         controls: {
-            ...b,
+            ...m,
             orientation: {
                 ...s._v.orientation,
                 defaultValue: "portrait"
@@ -133,7 +133,7 @@ let {
         id: "landscape-video-composed-autoplay",
         component: p,
         controls: {
-            ...b,
+            ...m,
             orientation: {
                 ...s._v.orientation,
                 defaultValue: "landscape"
@@ -156,10 +156,10 @@ let {
                 questCompleted: o,
                 fullEpisode: i,
                 targetTimeSec: p,
-                videoUrl: m,
-                sizing: b
+                videoUrl: b,
+                sizing: m
             } = e, _ = "portrait" === t, g = (0, s.DX)({
-                url: m,
+                url: b,
                 width: _ ? 360 : 640,
                 height: _ ? 640 : 360,
                 target: p,
@@ -176,7 +176,7 @@ let {
                 })
             } : h;
             return (0, n.jsx)("div", {
-                style: u(b, !1),
+                style: u(m, !1),
                 children: (0, n.jsx)(s.sn, {
                     quest: v,
                     isPortrait: !1,
@@ -186,15 +186,15 @@ let {
                         onOptimisticProgressUpdate: c.tEg,
                         autoplay: a,
                         autoFocus: !1,
-                        performanceClockStartTime: 0,
+                        openedAtMs: 0,
                         orientation: t,
-                        videoUrlOverride: m
+                        videoUrlOverride: b
                     })
                 })
             })
         },
         controls: {
-            ...b,
+            ...m,
             orientation: {
                 ...s._v.orientation,
                 defaultValue: "landscape"
