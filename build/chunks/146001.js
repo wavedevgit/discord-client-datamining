@@ -15,8 +15,8 @@ var s = n(627968),
     p = n(287809),
     A = n(954571),
     h = n(927578),
-    _ = n(979286),
-    x = n(993408),
+    x = n(979286),
+    _ = n(993408),
     g = n(821701),
     I = n(841702),
     E = n(169632),
@@ -36,33 +36,35 @@ function P(e) {
         disableApplyButton: u,
         canUsePremiumCollectibles: m,
         selectedProfileFrame: p
-    } = e, A = null != r ? (0, x.gA)(r) : (0, x.G0)(n);
-    return (0, s.jsxs)(l.jlY, {
-        "data-migration-pending": !0,
-        className: j.Hx,
-        children: [null != r && (m || !A) || null === p ? (0, s.jsx)(l.Button, {
-            variant: "primary",
-            text: y.intl.string(y.t.Jh8fJz),
-            onClick: i,
-            disabled: u
-        }) : null == r && (m || !A) ? (0, s.jsx)(l.Button, {
-            variant: "primary",
-            text: y.intl.string(y.t.fYfGgK),
-            onClick: () => o(p?.skuId)
-        }) : (0, s.jsx)(d.A, {
-            subscriptionTier: f.pe.TIER_2,
-            showGradient: !m,
-            textOptions: {
-                textOverride: h.Ay.isPremium(t) ? y.intl.string(y.t.KXLX7l) : m ? y.intl.string(y.t.mr4K7D) : y.intl.string(y.t.pj0XBN)
-            }
-        }), !m && A ? (0, s.jsx)(c.A, {
-            itemType: r?.type ?? n?.type,
-            onClose: a
-        }) : (0, s.jsx)(l.Button, {
-            variant: "secondary",
-            text: y.intl.string(y.t["ETE/oC"]),
-            onClick: a
-        })]
+    } = e, A = null != r ? (0, _.gA)(r) : (0, _.G0)(n);
+    return (0, s.jsx)(s.Fragment, {
+        children: (0, s.jsxs)(l.jlY, {
+            "data-migration-pending": !0,
+            className: j.Hx,
+            children: [null != r && (m || !A) || null === p ? (0, s.jsx)(l.Button, {
+                variant: "primary",
+                text: y.intl.string(y.t.Jh8fJz),
+                onClick: i,
+                disabled: u
+            }) : null == r && (m || !A) ? (0, s.jsx)(l.Button, {
+                variant: "primary",
+                text: y.intl.string(y.t.fYfGgK),
+                onClick: () => o(p?.skuId)
+            }) : (0, s.jsx)(d.A, {
+                subscriptionTier: f.pe.TIER_2,
+                showGradient: !m,
+                textOptions: {
+                    textOverride: h.Ay.isPremium(t) ? y.intl.string(y.t.KXLX7l) : m ? y.intl.string(y.t.mr4K7D) : y.intl.string(y.t.pj0XBN)
+                }
+            }), !m && A ? (0, s.jsx)(c.A, {
+                itemType: r?.type ?? n?.type,
+                onClose: a
+            }) : (0, s.jsx)(l.Button, {
+                variant: "secondary",
+                text: y.intl.string(y.t["ETE/oC"]),
+                onClick: a
+            })]
+        })
     })
 }
 
@@ -78,7 +80,7 @@ function k(e) {
         onClose: A
     } = e, {
         pendingProfileFrame: I
-    } = (0, u.Tu)(n?.id), C = r.useMemo(() => (0, x.MG)(o, i), [i, o]), [f, k] = r.useState(() => null != p ? p : void 0 !== I ? I : c ?? null), T = r.useMemo(() => C.find(e => {
+    } = (0, u.Tu)(n?.id), C = r.useMemo(() => (0, _.MG)(o, i), [i, o]), [f, k] = r.useState(() => null != p ? p : void 0 !== I ? I : c ?? null), T = r.useMemo(() => C.find(e => {
         let {
             skuId: t
         } = e;
@@ -89,7 +91,7 @@ function k(e) {
     } = (0, g.A)(T?.skuId), v = r.useRef(null), N = h.Ay.canUseCollectibles(t), M = void 0 === I ? f?.skuId === c?.skuId : f?.skuId === I?.skuId, S = r.useCallback(e => {
         k(e)
     }, [k]), L = r.useCallback(e => {
-        A(), (0, _.Cz)({
+        A(), (0, x.Cz)({
             analyticsLocations: d,
             analyticsSource: a.A.EDIT_PROFILE_FRAME_MODAL,
             initialProductSkuId: e
@@ -147,8 +149,8 @@ function T(e) {
         initialSelectedProfileFrame: m
     } = e, {
         isFetching: h,
-        categories: _,
-        purchases: x
+        categories: x,
+        purchases: _
     } = (0, I.Ay)(), g = (0, i.bG)([p.default], () => p.default.getCurrentUser()), {
         analyticsLocations: E
     } = (0, o.Ay)(n, a.A.EDIT_PROFILE_FRAME_MODAL), f = (0, u.Xf)({
@@ -174,8 +176,8 @@ function T(e) {
             }) : (0, s.jsx)(k, {
                 user: g,
                 guild: c,
-                categories: _,
-                purchases: x,
+                categories: x,
+                purchases: _,
                 currentSavedFrame: f,
                 onClose: d,
                 analyticsLocations: E,

@@ -15,7 +15,7 @@ var s = n(627968),
     p = n(985018),
     A = n(900183);
 let h = () => 80,
-    _ = e => {
+    x = e => {
         let {
             children: t,
             className: n,
@@ -32,7 +32,7 @@ let h = () => 80,
             children: t
         })
     },
-    x = e => {
+    _ = e => {
         let {
             skuId: t,
             label: n,
@@ -42,7 +42,7 @@ let h = () => 80,
             canUsePremiumCollectibles: c,
             ...d
         } = e, p = r.useRef(null);
-        return (0, s.jsxs)(_, {
+        return (0, s.jsxs)(x, {
             innerRef: i ?? p,
             isSelected: a,
             ...d,
@@ -88,7 +88,7 @@ let h = () => 80,
                         section: C,
                         items: f
                     } = g[e], y = f[t];
-                    if (y === m.dP) return (0, s.jsxs)(_, {
+                    if (y === m.dP) return (0, s.jsxs)(x, {
                         style: {
                             ...c
                         },
@@ -104,7 +104,7 @@ let h = () => 80,
                             children: null != n ? p.intl.string(p.t.CHf9iJ) : p.intl.string(p.t.PoWNfe)
                         })]
                     }, h);
-                    if (y === m.ZK) return (0, s.jsxs)(_, {
+                    if (y === m.ZK) return (0, s.jsxs)(x, {
                         style: c,
                         onSelect: u,
                         children: [(0, s.jsx)(o.U1X, {
@@ -121,7 +121,7 @@ let h = () => 80,
                     }, h);
                     if ((0, d.s)(y)) {
                         let e = r?.skuId === y.skuId;
-                        return (0, s.jsx)(x, {
+                        return (0, s.jsx)(_, {
                             style: {
                                 ...c
                             },

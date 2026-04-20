@@ -1,6 +1,6 @@
 /** chunk id: 194045 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => x
 });
 var i = n(627968);
 n(64700);
@@ -18,14 +18,13 @@ var l = n(397927),
     m = n(796774),
     g = n(209932),
     p = n(123973),
-    E = n(646202),
-    I = n(102597),
-    f = n(904054),
-    C = n(857179),
-    T = n(652215),
-    N = n(731854);
-let S = new r.A("SoundboardManager");
-class x extends _.A {
+    E = n(102597),
+    I = n(904054),
+    f = n(857179),
+    C = n(652215),
+    T = n(731854);
+let N = new r.A("SoundboardManager");
+class S extends _.A {
     playingSoundsWeb = new Map;
     _initialize() {
         super._initialize(), __OVERLAY__ || (a.h.subscribe("OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST", this._handleOverlaySoundboardSoundsFetchRequest), a.h.subscribe("RTC_CONNECTION_STATE", this._handleRTCConnectionState))
@@ -34,7 +33,7 @@ class x extends _.A {
         super._terminate(), __OVERLAY__ || (a.h.unsubscribe("OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST", this._handleOverlaySoundboardSoundsFetchRequest), a.h.unsubscribe("RTC_CONNECTION_STATE", this._handleRTCConnectionState))
     }
     _stopAndClearSounds = () => {
-        u.Ay.supports(N.O5.SAMPLE_PLAYBACK) && u.Ay.getMediaEngine().eachConnection(e => {
+        u.Ay.supports(T.O5.SAMPLE_PLAYBACK) && u.Ay.getMediaEngine().eachConnection(e => {
             e.stopAllSamplesLocalPlayback()
         }), this.playingSoundsWeb.forEach(e => {
             e.pause(), e.src = ""
@@ -50,13 +49,13 @@ class x extends _.A {
             if ((null == l || a) && !u.Ay.isDeaf() && !g.A.isLocalSoundboardMuted(i)) try {
                 let l = {
                     soundKey: `${i}-${t}`,
-                    soundURL: (0, I.A)(t),
-                    soundVolume: (0, f.A)(n),
+                    soundURL: (0, E.A)(t),
+                    soundVolume: (0, I.A)(n),
                     reportSoundStartedPlaying: () => (0, m.dZ)(t, i)
                 };
-                u.Ay.supports(N.O5.SAMPLE_PLAYBACK) ? await (0, C.o)(l) : await (0, C.G)(l, e.playingSoundsWeb)
+                u.Ay.supports(T.O5.SAMPLE_PLAYBACK) ? await (0, f.o)(l) : await (0, f.G)(l, e.playingSoundsWeb)
             } catch (e) {
-                S.warn(`Error playing soundboard sound: ${e.message}`)
+                N.warn(`Error playing soundboard sound: ${e.message}`)
             } finally {
                 (0, m.g0)(t, i)
             }
@@ -66,7 +65,7 @@ class x extends _.A {
         let {
             state: t
         } = e;
-        t === T.S7L.RTC_CONNECTED && (0, E.fN)("SoundboardManager") && (d.bW.loadIfNecessary(), (0, m.E7)({
+        t === C.S7L.RTC_CONNECTED && (d.bW.loadIfNecessary(), (0, m.E7)({
             disableAnalytics: !0
         }))
     };
@@ -76,7 +75,7 @@ class x extends _.A {
     _handleOpenEducationModal = (e, t) => {
         if (null == e) return;
         let a = c.A.getChannel(t),
-            r = h.Ay.getKeybindForAction(T.hCu.SOUNDBOARD_HOLD);
+            r = h.Ay.getKeybindForAction(C.hCu.SOUNDBOARD_HOLD);
         null != a && (0, p.Ay)(a) && null != r && o.A.hasHotspot(s._2.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, l.mMO)(async () => {
             let {
                 default: t
@@ -90,4 +89,4 @@ class x extends _.A {
         })
     }
 }
-let b = new x
+let x = new S
