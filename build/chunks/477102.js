@@ -1203,6 +1203,14 @@ let _ = {
         return t => (0, a.jsx)(e, {
             ...t
         })
+    },
+    NewUserOnboarding: async () => {
+        let {
+            default: e
+        } = await Promise.all([n.e("86746"), n.e("97050"), n.e("86996")]).then(n.bind(n, 955382));
+        return t => (0, a.jsx)(e, {
+            ...t
+        })
     }
 };
 

@@ -1,5 +1,5 @@
 /** chunk id: 940480 params = (module,exports,require) **/
-e.exports = {
+t.exports = {
     wx: "header__9f397",
     Q6: "channelPrompt__9f397",
     b: "closeButton__9f397",

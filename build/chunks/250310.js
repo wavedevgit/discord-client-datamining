@@ -1,5 +1,5 @@
 /** chunk id: 250310 params = (module,exports,require) **/
-e.exports = {
+t.exports = {
     wx: "header__991a0",
     DD: "title__991a0",
     b: "closeButton__991a0",

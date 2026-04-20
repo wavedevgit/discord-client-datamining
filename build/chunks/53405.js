@@ -42,18 +42,18 @@ function f(e) {
         hasError: null != M && "" !== M
     }, {
         refs: I,
-        floatingStyles: E,
-        isOpen: A,
+        floatingStyles: A,
+        isOpen: E,
         setIsOpen: L,
         context: O,
-        getFloatingProps: R,
-        getReferenceProps: B
+        getFloatingProps: B,
+        getReferenceProps: R
     } = (0, b.u)({
         matchReferenceWidth: !1,
         placement: "bottom-start"
     }), {
-        isMounted: _,
-        styles: P
+        isMounted: P,
+        styles: _
     } = (0, b.D)(O, {
         common: e => {
             let {
@@ -77,7 +77,7 @@ function f(e) {
             className: j ? y.e2 : y.qX,
             validation: N,
             ref: I.setReference,
-            ...B(),
+            ...R(),
             children: (0, t.jsxs)(s.Ur, {
                 id: e.controlId,
                 "aria-labelledby": e.labelId,
@@ -116,24 +116,24 @@ function f(e) {
                         })
                     }), (0, t.jsx)(u.$, {
                         className: y.B7,
-                        onClick: () => L(!A),
+                        onClick: () => L(!E),
                         "aria-label": k.DATE_INPUT_OPEN_CALENDAR_LABEL,
                         children: (0, t.jsx)(m.CalendarIcon, {
                             size: "sm",
                             color: "currentColor"
                         })
                     })]
-                }), A && _ && (0, t.jsx)("div", {
-                    ...R(),
+                }), E && P && (0, t.jsx)("div", {
+                    ...B(),
                     ref: I.setFloating,
-                    style: E,
+                    style: A,
                     className: y.oO,
                     children: (0, t.jsx)(i.n1, {
                         contain: !0,
                         restoreFocus: !0,
                         children: (0, t.jsx)(c.lG, {
                             "aria-label": k.DATE_INPUT_OPEN_CALENDAR_LABEL,
-                            style: P,
+                            style: _,
                             className: y.r3,
                             children: (0, t.jsx)(v._, {
                                 value: l,

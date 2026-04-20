@@ -65,7 +65,27 @@ class O extends s.A {
         e = [{
             key: "Unified NUF Modal",
             open: async function(e) {
-                let t = e => {
+                let {
+                    default: t
+                } = await n.e("74082").then(n.bind(n, 491380));
+                if (t.getConfig({
+                        location: "nuf_manager"
+                    }).enabled) {
+                    i = await (0, a.mMO)(async () => {
+                        let {
+                            default: e
+                        } = await Promise.all([n.e("86746"), n.e("97050"), n.e("74659")]).then(n.bind(n, 955382));
+                        return t => (0, l.jsx)(e, {
+                            ...t
+                        })
+                    }, {
+                        onCloseRequest: b.tEg,
+                        onCloseCallback: e,
+                        modalKey: i
+                    });
+                    return
+                }
+                let r = e => {
                     switch (e) {
                         case x.i.AGE_GATE:
                             h.A.flowStep(v.do.ANY, v.ju.AGE_GATE);
@@ -98,9 +118,9 @@ class O extends s.A {
                     let {
                         default: e
                     } = await Promise.all([n.e("86746"), n.e("66402")]).then(n.bind(n, 218318));
-                    return n => (0, l.jsx)(e, {
-                        ...n,
-                        onSlideChange: t
+                    return t => (0, l.jsx)(e, {
+                        ...t,
+                        onSlideChange: r
                     })
                 }, {
                     onCloseRequest: b.tEg,

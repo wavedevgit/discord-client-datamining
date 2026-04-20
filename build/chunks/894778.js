@@ -1,124 +1,123 @@
 /** chunk id: 894778 params = (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => f
+_.d(e, {
+    A: () => N
 });
-var i = n(353640),
-    s = n(499867),
-    r = n(121894),
-    l = n(506774),
-    a = n(626584),
-    o = n(954571),
-    c = n(315290),
-    d = n(652215);
-let u = "UserFlowAnalyticsStore_current",
-    _ = "UserFlowAnalyticsStore";
+var r = _(353640),
+    n = _(499867),
+    o = _(121894),
+    l = _(506774),
+    a = _(626584),
+    c = _(954571),
+    i = _(315290),
+    u = _(652215);
+let s = "UserFlowAnalyticsStore_current",
+    p = "UserFlowAnalyticsStore";
 
-function h(e) {
-    if (e === c.do.UNKNOWN) return null;
-    let t = l.w.get(`${_}-${e}`);
-    if (null == t) return null;
+function f(t) {
+    if (t === i.do.UNKNOWN) return null;
+    let e = l.w.get(`${p}-${t}`);
+    if (null == e) return null;
     let {
-        version: n,
-        ...i
-    } = t;
-    return 1 !== n ? null : i
+        version: _,
+        ...r
+    } = e;
+    return 1 !== _ ? null : r
 }
 new a.A("UserFlowAnalytics");
-let p = (0, i.v)()((0, s.eh)((e, t) => ({
+let d = (0, r.v)()((0, n.eh)((t, e) => ({
     flows: {},
     currentFlow: null,
     activeFlow: () => {
-        let e = t().currentFlow ?? l.w.get(u);
-        if (null == e) return null;
+        let t = e().currentFlow ?? l.w.get(s);
+        if (null == t) return null;
         let {
-            [e]: n
-        } = t().flows, i = n ?? h(e);
-        return i?.currentStep != null ? e : null
+            [t]: _
+        } = e().flows, r = _ ?? f(t);
+        return r?.currentStep != null ? t : null
     }
 })));
 
-function g(e, t) {
+function w(t, e) {
     let {
-        [e]: n, ...i
-    } = p.getState().flows, s = n ?? h(e);
-    (s?.currentStep == null || s.currentStep !== t) && (0, r.r)(() => {
-        p.setState({
+        [t]: _, ...r
+    } = d.getState().flows, n = _ ?? f(t);
+    (n?.currentStep == null || n.currentStep !== e) && (0, o.r)(() => {
+        d.setState({
             flows: {
-                ...i,
-                [e]: {
-                    type: e,
+                ...r,
+                [t]: {
+                    type: t,
                     lastStep: null,
                     lastTimestamp: null,
-                    currentStep: t,
+                    currentStep: e,
                     currentTimestamp: new Date,
                     skipped: !1
                 }
             },
-            currentFlow: e
+            currentFlow: t
         })
     })
 }
 
-function m(e, t) {
-    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-        i = e;
-    e === c.do.ANY && (i = p.getState().activeFlow() ?? c.do.UNKNOWN);
+function m(t, e) {
+    let _ = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+        r = t;
+    t === i.do.ANY && (r = d.getState().activeFlow() ?? i.do.UNKNOWN);
     let {
-        [i]: s, ...l
-    } = p.getState().flows, a = s ?? h(i);
-    null == a || null == a.currentStep || a.currentStep !== t && (0, r.r)(() => {
-        p.setState({
+        [r]: n, ...l
+    } = d.getState().flows, a = n ?? f(r);
+    null == a || null == a.currentStep || a.currentStep !== e && (0, o.r)(() => {
+        d.setState({
             flows: {
                 ...l,
-                [i]: {
+                [r]: {
                     ...a,
                     lastStep: a.currentStep,
                     lastTimestamp: a.currentTimestamp,
-                    currentStep: t,
+                    currentStep: e,
                     currentTimestamp: new Date,
-                    ended: n
+                    ended: _
                 }
             },
-            currentFlow: i
+            currentFlow: r
         })
     })
 }
 
 function A() {
-    return null != p.getState().activeFlow()
+    return null != d.getState().activeFlow()
 }
-p.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : void 0, e => {
-    if (null != e && (! function(e) {
-            if (e.type === c.do.UNKNOWN) return;
-            let t = `${_}-${e.type}`;
-            e.ended ? (l.w.remove(t), l.w.remove(u)) : (l.w.set(`${_}-${e.type}`, {
-                ...e,
+d.subscribe(t => null != t.currentFlow ? t.flows[t.currentFlow] : void 0, t => {
+    if (null != t && (! function(t) {
+            if (t.type === i.do.UNKNOWN) return;
+            let e = `${p}-${t.type}`;
+            t.ended ? (l.w.remove(e), l.w.remove(s)) : (l.w.set(`${p}-${t.type}`, {
+                ...t,
                 version: 1
-            }), l.w.set(u, e.type))
-        }(e), o.default.track(d.HAw.NUO_TRANSITION, {
-            flow_type: e.type,
-            from_step: e.lastStep,
-            to_step: e.currentStep,
-            seconds_on_from_step: "function" != typeof e.lastTimestamp?.getTime ? 0 : (e.currentTimestamp.getTime() - e.lastTimestamp.getTime()) / 1e3
+            }), l.w.set(s, t.type))
+        }(t), c.default.track(u.HAw.NUO_TRANSITION, {
+            flow_type: t.type,
+            from_step: t.lastStep,
+            to_step: t.currentStep,
+            seconds_on_from_step: "function" != typeof t.lastTimestamp?.getTime ? 0 : (t.currentTimestamp.getTime() - t.lastTimestamp.getTime()) / 1e3
         }, {
             flush: !0
-        }), e.ended)) {
-        let t = {
-            ...p.getState().flows
+        }), t.ended)) {
+        let e = {
+            ...d.getState().flows
         };
-        delete t[e.type], (0, r.r)(() => {
-            p.setState({
-                flows: t,
+        delete e[t.type], (0, o.r)(() => {
+            d.setState({
+                flows: e,
                 currentFlow: null
             })
         })
     }
 });
-let f = {
-    flowStart: g,
-    flowStepOrStart: function(e, t) {
-        A() ? m(e, t) : g(e, t)
+let N = {
+    flowStart: w,
+    flowStepOrStart: function(t, e) {
+        A() ? m(t, e) : w(t, e)
     },
     flowStep: m,
     hasActiveFlow: A

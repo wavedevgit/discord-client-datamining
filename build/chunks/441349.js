@@ -42,16 +42,16 @@ function f(e) {
         floatingStyles: D,
         isOpen: N,
         setIsOpen: I,
-        context: E,
-        getFloatingProps: A,
+        context: A,
+        getFloatingProps: E,
         getReferenceProps: L
     } = (0, b.u)({
         matchReferenceWidth: !1,
         placement: "bottom-start"
     }), {
         isMounted: O,
-        styles: R
-    } = (0, b.D)(E, {
+        styles: B
+    } = (0, b.D)(A, {
         common: e => {
             let {
                 side: l
@@ -65,7 +65,7 @@ function f(e) {
             transform: "scaleY(0.96)"
         },
         duration: 100
-    }), B = e => {
+    }), R = e => {
         a?.(e), I(!1)
     };
     return (0, t.jsx)(m.D, {
@@ -82,7 +82,7 @@ function f(e) {
                 "aria-invalid": null != e.errorMessageId,
                 "aria-errormessage": e.errorMessageId,
                 value: l,
-                onChange: B,
+                onChange: R,
                 isDisabled: S,
                 isRequired: w,
                 minValue: o,
@@ -108,7 +108,7 @@ function f(e) {
                         })
                     })]
                 }), N && O && (0, t.jsx)("div", {
-                    ...A(),
+                    ...E(),
                     ref: M.setFloating,
                     style: D,
                     className: y.oO,
@@ -117,11 +117,11 @@ function f(e) {
                         restoreFocus: !0,
                         children: (0, t.jsx)(c.lG, {
                             "aria-label": C.DATE_INPUT_OPEN_CALENDAR_LABEL,
-                            style: R,
+                            style: B,
                             className: y.r3,
                             children: (0, t.jsx)(p.V, {
                                 value: l,
-                                onChange: B,
+                                onChange: R,
                                 minValue: o,
                                 maxValue: f,
                                 disabled: S
