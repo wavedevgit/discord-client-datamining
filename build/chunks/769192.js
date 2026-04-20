@@ -8,8 +8,8 @@ var r = t(311907),
     l = t(397927),
     a = t(442433),
     s = t(847767),
-    u = t(358367),
-    o = t(793574),
+    o = t(358367),
+    u = t(793574),
     d = t(886393),
     c = t(475777),
     A = t(848977),
@@ -19,45 +19,45 @@ var r = t(311907),
     f = t(304694),
     I = t(671483),
     N = t(217563),
-    h = t(50268),
-    y = t(769591),
+    y = t(50268),
+    h = t(769591),
     p = t(446600),
     C = t(914853),
     D = t(708653),
-    b = t(297460),
-    _ = t(652215),
+    _ = t(297460),
+    b = t(652215),
     x = t(985018);
-let M = (0, u.A)((0, s.A)(function(e) {
+let M = (0, o.A)((0, s.A)(function(e) {
     let {
         channel: n,
         guild: t,
         onSelect: s,
-        widgetType: u
-    } = e, o = n.isGuildStageVoice(), _ = (0, r.bG)([p.A], () => o ? p.A.getStageInstanceByChannel(n.id) : void 0, [o, n.id]), M = (0, A.A)(n), S = (0, d.A)(n), {
+        widgetType: o
+    } = e, u = n.isGuildStageVoice(), b = (0, r.bG)([p.A], () => u ? p.A.getStageInstanceByChannel(n.id) : void 0, [u, n.id]), M = (0, A.A)(n), S = (0, d.A)(n), {
         toggleFavoriteItem: j
-    } = (0, D.Ay)(C.x.VOICE, n, u), O = (0, E.A)(n), U = (0, v.A)(n), L = (0, c.A)(n, t, _), G = (0, b.A)({
+    } = (0, D.Ay)(C.x.VOICE, n, o), O = (0, E.A)(n), U = (0, v.A)(n), L = (0, c.A)(n, t, b), T = (0, _.A)({
         kind: "CHANNEL",
         channel: n,
         guildId: t.id
-    }, u), T = (0, h.A)({
+    }, o), G = (0, y.A)({
         id: n.id,
         label: x.intl.string(x.t.gFHI3k)
-    }), R = (0, f.A)(n), m = (0, I.A)(n, t), k = (0, N.A)(n, t.id), F = (0, y.os)("OverlayChannelListVoiceChannelContextMenu"), H = (0, g.Ay)(n);
+    }), R = (0, f.A)(n), m = (0, I.A)(n, t), k = (0, N.A)(n, t.id), F = (0, h.os)("OverlayChannelListVoiceChannelContextMenu"), H = (0, g.Ay)(n);
     return (0, i.jsxs)(l.W1t, {
         navId: "overlay-channel-context",
         onClose: a.Z_,
         "aria-label": x.intl.string(x.t.Xm41aV),
         onSelect: s,
         children: [(0, i.jsxs)(l.rXV, {
-            children: [G, j, L, S]
+            children: [T, j, L, S]
         }, "primary-actions"), (0, i.jsxs)(l.rXV, {
             children: [k, M, m, R]
         }, "voice-actions"), (0, i.jsxs)(l.rXV, {
             children: [O, F ? H : U]
         }, "notifications"), (0, i.jsx)(l.rXV, {
-            children: T
+            children: G
         }, "developer-actions")]
     })
 }, {
-    object: _.ZSU.CONTEXT_MENU
-}), [o.A.CONTEXT_MENU, o.A.OVERLAY, o.A.CHANNEL_LIST_VOICE_CHANNEL_MENU])
+    object: b.ZSU.CONTEXT_MENU
+}), [u.A.CONTEXT_MENU, u.A.OVERLAY, u.A.CHANNEL_LIST_VOICE_CHANNEL_MENU])

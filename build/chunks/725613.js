@@ -68,6 +68,6 @@ let f = new A(a.h, {
         let {
             guildId: t
         } = e;
-        c.add(t), r.A.getSocket().requestChannelInfo(t, ["status", "voice_start_time"])
+        c.add(t)
     }
 })

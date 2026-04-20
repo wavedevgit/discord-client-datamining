@@ -4,9 +4,9 @@ s.d(t, {
     A: () => S
 });
 var n = s(627968),
-    l = s(64700),
-    r = s(503698),
-    a = s.n(r),
+    r = s(64700),
+    l = s(503698),
+    a = s.n(l),
     i = s(311907),
     o = s(397927),
     c = s(793574),
@@ -27,8 +27,8 @@ let S = e => {
     let {
         shelf: t,
         handleTransition: s,
-        tab: r
-    } = e, S = (0, i.bG)([_.default], () => _.default.getCurrentUser()), v = (0, h.W)("ShelfBlock"), I = (0, i.bG)([m.A], () => m.A.getCategory(t.categorySkuId)), L = (0, p.A)(), j = l.useMemo(() => L(t.rankedSkuIds), [t.rankedSkuIds, L]), O = (0, f.X)(j), {
+        tab: l
+    } = e, S = (0, i.bG)([_.default], () => _.default.getCurrentUser()), v = (0, h.W)("ShelfBlock"), I = (0, i.bG)([m.A], () => m.A.getCategory(t.categorySkuId)), L = (0, p.A)(), j = r.useMemo(() => L(t.rankedSkuIds), [t.rankedSkuIds, L]), O = (0, f.X)(j), {
         analyticsLocations: k
     } = (0, d.Ay)(c.A.COLLECTIBLES_SHOP_SHELF);
     return null == S ? null : (0, n.jsx)(d.f5, {
@@ -50,7 +50,7 @@ let S = e => {
                             sourceButton: "shelf block see all",
                             categorySkuId: t.categorySkuId,
                             isInternalShopDeeplink: !0,
-                            isOrbsExclusive: I?.isOrbsExclusive && r !== b.G2.ORBS
+                            isOrbsExclusive: I?.isOrbsExclusive && l !== b.G2.ORBS
                         })
                     }
                 })]
@@ -59,7 +59,7 @@ let S = e => {
                 children: (0, n.jsx)(n.Fragment, {
                     children: O.map((e, s) => {
                         if (null == m.A.getCategoryForProduct(e.skuId) || null == e) return null;
-                        let l = e.skuId;
+                        let r = e.skuId;
                         return (0, n.jsx)(g.R9, {
                             newValue: {
                                 tilePosition: s,
@@ -67,10 +67,10 @@ let S = e => {
                                 categoryPosition: 2
                             },
                             children: (0, n.jsx)(x.A, {
-                                skuId: l,
-                                prioritizedCurrency: r === b.G2.ORBS ? E.Hi.ORBS : v ? E.Hi.FIAT : void 0
-                            }, l)
-                        }, l)
+                                skuId: r,
+                                prioritizedCurrency: l === b.G2.ORBS ? E.Hi.ORBS : v ? E.Hi.FIAT : void 0
+                            }, r)
+                        }, r)
                     })
                 })
             })]

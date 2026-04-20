@@ -3,14 +3,14 @@ r.r(_), r.d(_, {
     default: () => C
 });
 var t = r(627968),
-    s = r(64700),
-    o = r(503698),
-    d = r.n(o),
+    o = r(64700),
+    s = r(503698),
+    d = r.n(s),
     n = r(397927),
     i = r(409013),
     a = r(785330),
-    l = r(856535),
-    b = r(475073),
+    b = r(856535),
+    l = r(475073),
     c = r(611924),
     m = r(594832),
     g = r(621653),
@@ -25,12 +25,12 @@ let C = e => {
     let {
         layoutId: _
     } = e;
-    (0, c.P)(b.a), (0, g.g)(), (0, m.pE)();
-    let r = s.useRef(null);
-    s.useEffect(() => {
+    (0, c.P)(l.a), (0, g.g)(), (0, m.pE)();
+    let r = o.useRef(null);
+    o.useEffect(() => {
         r.current?.focus()
     }, []);
-    let o = (0, I.yB)("CollectiblesShopLayout");
+    let s = (0, I.yB)("CollectiblesShopLayout");
     (0, I.gB)();
     let {
         selectedTab: C,
@@ -39,10 +39,10 @@ let C = e => {
         layout: v,
         loading: j,
         error: k
-    } = (0, l.A)(w.FYj, _);
+    } = (0, b.A)(w.FYj, _);
     return (0, t.jsxs)("div", {
         className: d()(x.bx, {
-            [I.jP]: o
+            [I.jP]: s
         }),
         ref: r,
         tabIndex: -1,

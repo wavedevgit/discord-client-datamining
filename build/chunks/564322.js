@@ -4,20 +4,20 @@ s.d(t, {
     X: () => d
 });
 var n = s(64700),
-    l = s(59520),
-    r = s(440938),
+    r = s(59520),
+    l = s(440938),
     a = s(790297),
     i = s(954571),
     o = s(652215);
 let c = (e, t, s, n) => {
         let {
-            scrollTop: l = 0,
-            scrollOffset: r = 0,
+            scrollTop: r = 0,
+            scrollOffset: l = 0,
             scrollHeight: a = 0,
             scrollWidth: o = 0
         } = n;
         if (a > 0) {
-            let n = (l + r) / a;
+            let n = (r + l) / a;
             n > 0 && i.default.track(e, {
                 scroll_visible_percent: n,
                 source: s,
@@ -30,9 +30,9 @@ let c = (e, t, s, n) => {
     d = (e, t) => {
         let {
             analyticsSource: s
-        } = (0, a.lC)(t), i = (0, l.I)(c, 5e3, [], {
+        } = (0, a.lC)(t), i = (0, r.I)(c, 5e3, [], {
             trailing: !0
-        }), d = (0, r.uM)(), u = d?.sessionId;
+        }), d = (0, l.uM)(), u = d?.sessionId;
         return {
             handleScroll: n.useCallback(() => {
                 if (null != e.current) {

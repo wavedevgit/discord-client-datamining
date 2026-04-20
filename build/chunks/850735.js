@@ -4,9 +4,9 @@ s.d(t, {
     A: () => I
 });
 var n = s(627968),
-    l = s(64700),
-    r = s(503698),
-    a = s.n(r),
+    r = s(64700),
+    l = s(503698),
+    a = s.n(l),
     i = s(572944),
     o = s(311907),
     c = s(397927),
@@ -26,20 +26,20 @@ var n = s(627968),
 let S = e => {
         let {
             tab: t
-        } = e, [s, r, c] = (0, o.yK)([p.A], () => [p.A.getLayout(t), p.A.isFetchingLayout(t), p.A.getLayoutFetchError(t)]), d = null == s && !r && c?.status !== 404 && c?.status !== 429;
-        return (l.useEffect(() => {
-            d && (0, g.T2)({
+        } = e, [s, l, a] = (0, o.yK)([p.A], () => [p.A.getLayout(t), p.A.isFetchingLayout(t), p.A.getLayoutFetchError(t)]), c = null == s && !l && a?.status !== 404 && a?.status !== 429;
+        return (r.useEffect(() => {
+            c && (0, g.T2)({
                 tab: t
             })
-        }, [d, t]), null == s) ? t !== i.g.HOME || d || r ? null : (0, n.jsx)("div", {
-            className: a()(A.YB, A.GS),
+        }, [c, t]), null == s) ? t !== i.g.HOME || c || l ? null : (0, n.jsx)("div", {
+            className: A.YB,
             children: (0, n.jsx)(u.Z_, {
                 tenantId: b.FYj,
                 templateId: "shop-home"
             })
         }) : (0, n.jsxs)(n.Fragment, {
             children: [t === i.g.ORBS && (0, n.jsx)(f.A, {}), (0, n.jsx)("div", {
-                className: a()(A.YB, A.GS),
+                className: A.YB,
                 children: (0, n.jsx)(u.Qs, {
                     tenantId: b.FYj,
                     layoutId: s
@@ -50,19 +50,19 @@ let S = e => {
     v = e => {
         let {
             url: t
-        } = e, [s, r] = l.useState(null);
-        return (l.useEffect(() => {
+        } = e, [s, l] = r.useState(null);
+        return (r.useEffect(() => {
             (async () => {
                 try {
                     let e = await fetch(t),
                         s = await e.json();
-                    r(s)
+                    l(s)
                 } catch (e) {
-                    r(null)
+                    l(null)
                 }
             })()
         }, [t]), null == s) ? null : (0, n.jsx)("div", {
-            className: a()(A.YB, A.GS),
+            className: A.YB,
             children: (0, n.jsx)(u.Ay, {
                 layout: s
             })
@@ -72,35 +72,35 @@ let S = e => {
         let {
             handleTransition: t,
             tab: s,
-            transitionState: r
-        } = e, a = (0, m.uM)(), u = (0, o.bG)([h.A], () => h.A.getShopLayoutUrlOverride()), g = l.useRef(null), {
-            handleScroll: p
-        } = (0, d.X)(g, s), [f, I] = l.useState(E.md), [L, j] = l.useState(!1);
-        return l.useEffect(() => {
-            if (null != g.current) {
+            transitionState: l
+        } = e, u = (0, m.uM)(), g = (0, o.bG)([h.A], () => h.A.getShopLayoutUrlOverride()), p = r.useRef(null), {
+            handleScroll: f
+        } = (0, d.X)(p, s), [I, L] = r.useState(E.md), [j, O] = r.useState(!1);
+        return r.useEffect(() => {
+            if (null != p.current) {
                 let e = () => {
-                        if (null == g.current) return;
-                        let e = g.current.getDistanceFromBottom();
-                        f >= 36 ? j(e < 20) : e <= 200 && I(e => e + E.md)
+                        if (null == p.current) return;
+                        let e = p.current.getDistanceFromBottom();
+                        I >= 36 ? O(e < 20) : e <= 200 && L(e => e + E.md)
                     },
-                    t = g.current.getScrollerNode();
+                    t = p.current.getScrollerNode();
                 return t?.addEventListener("scroll", e), () => {
                     t?.removeEventListener("scroll", e)
                 }
             }
-        }, [g, f, I, j]), (0, n.jsx)(c.T7Y, {
+        }, [p, I, L, O]), (0, n.jsx)(c.T7Y, {
             className: A.OW,
-            ref: g,
-            onScroll: p,
+            ref: p,
+            onScroll: f,
             children: (0, n.jsxs)("div", {
                 className: A.bx,
                 children: [(0, n.jsxs)("div", {
-                    className: A.rb,
-                    children: [null != u && "" !== u ? (0, n.jsx)(v, {
-                        url: u
+                    className: a()(A.rb, A.GS),
+                    children: [null != g && "" !== g ? (0, n.jsx)(v, {
+                        url: g
                     }) : (0, n.jsx)(S, {
                         tab: s
-                    }), s !== i.g.CATALOG && f >= 36 && (0, n.jsxs)("div", {
+                    }), s !== i.g.CATALOG && I >= 36 && (0, n.jsxs)("div", {
                         className: A.R$,
                         children: [(0, n.jsx)(c.Heading, {
                             variant: "heading-md/semibold",
@@ -113,9 +113,9 @@ let S = e => {
                                     sourceButton: "shop all button",
                                     shouldAnimate: !0
                                 }), _.default.track(b.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-                                    collectibles_shop_session_id: a?.sessionId,
+                                    collectibles_shop_session_id: u?.sessionId,
                                     page_type: s,
-                                    page_category: s === i.g.HOME ? void 0 : a?.pageCategory,
+                                    page_category: s === i.g.HOME ? void 0 : u?.pageCategory,
                                     cta_name: "browse the shop button"
                                 })
                             },
@@ -123,8 +123,8 @@ let S = e => {
                         })]
                     })]
                 }), (0, n.jsx)(x.A, {
-                    peaking: L,
-                    transitioning: r === E.Pf.OUT
+                    peaking: j,
+                    transitioning: l === E.Pf.OUT
                 })]
             })
         })

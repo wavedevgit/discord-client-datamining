@@ -11,23 +11,23 @@ var l = i(311907),
     d = i(136523),
     c = i(345640),
     o = i(576705),
-    A = i(309698),
+    A = i(882840),
     u = i(652215),
     h = i(985018);
 
 function g(n, t) {
     let g = (0, l.bG)([o.A], () => o.A.can(u.xBc.MANAGE_CHANNELS, t)),
         x = (0, s.Ay)(n),
-        C = (0, c.b)(n),
-        j = (0, l.bG)([A.A], () => A.A.getChannelStatus(n)),
-        b = null != j && j.length > 0;
-    return n.isGuildVoice() && (g || x) ? !C && g && b ? (0, e.jsx)(r.Drp, {
+        j = (0, c.b)(n),
+        C = (0, A.l)(n),
+        v = null != C && C.length > 0;
+    return n.isGuildVoice() && (g || x) ? !j && g && v ? (0, e.jsx)(r.Drp, {
         id: "clear-status",
         label: h.intl.string(h.t["22CYiZ"]),
         action: () => {
             a.Ay.updateVoiceChannelStatus(n.id, "")
         }
-    }) : C && x ? (0, e.jsx)(r.Drp, {
+    }) : j && x ? (0, e.jsx)(r.Drp, {
         id: "set-status",
         label: h.intl.string(h.t.RBd5PW),
         action: () => {

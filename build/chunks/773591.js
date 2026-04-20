@@ -4,8 +4,8 @@ s.d(t, {
     A: () => B
 });
 var n = s(627968),
-    l = s(64700),
-    r = s(575593),
+    r = s(64700),
+    l = s(575593),
     a = s(417597),
     i = s(582754),
     o = s(397927),
@@ -43,24 +43,24 @@ function B(e) {
     } = e, P = (0, _.uM)(), M = P?.sessionId ?? "", {
         noCache: H,
         includeUnpublished: D
-    } = (0, C.A)(), w = (0, m.W)("CollectiblesFilterableShop"), F = (0, a.bG)([d.default], () => d.default.getCurrentUser()), G = (0, a.bG)([g.A], () => g.A.productsWithVariantsAsGroup), [U, V] = l.useState(1), W = (0, c.DP)(), z = (0, i.qB)(W), [K, Y, $] = l.useMemo(() => {
+    } = (0, C.A)(), w = (0, m.W)("CollectiblesFilterableShop"), F = (0, a.bG)([d.default], () => d.default.getCurrentUser()), G = (0, a.bG)([g.A], () => g.A.productsWithVariantsAsGroup), [U, V] = r.useState(1), W = (0, c.DP)(), z = (0, i.qB)(W), [K, Y, $] = r.useMemo(() => {
         switch (B) {
             case A.G2.AVATAR_DECORATIONS:
-                return [v.intl.string(v.t.dRZYNE), z ? k.A : O.A, r.R.AVATAR_DECORATION];
+                return [v.intl.string(v.t.dRZYNE), z ? k.A : O.A, l.R.AVATAR_DECORATION];
             case A.G2.PROFILE_EFFECTS:
-                return [v.intl.string(v.t["1cNjtx"]), z ? R.A : N.A, r.R.PROFILE_EFFECT];
+                return [v.intl.string(v.t["1cNjtx"]), z ? R.A : N.A, l.R.PROFILE_EFFECT];
             case A.G2.NAMEPLATES:
-                return [v.intl.string(v.t.V68Fqz), z ? y.A : T.A, r.R.NAMEPLATE];
+                return [v.intl.string(v.t.V68Fqz), z ? y.A : T.A, l.R.NAMEPLATE];
             case A.G2.BUNDLES:
-                return [v.intl.string(v.t.FYFpps), z ? j.A : L.A, r.R.BUNDLE]
+                return [v.intl.string(v.t.FYFpps), z ? j.A : L.A, l.R.BUNDLE]
         }
-    }, [B, z]), Z = (0, h.p)(), q = l.useMemo(() => Z(G.filter(e => (e.type === $ || e.type === r.R.VARIANTS_GROUP && e.variants?.some(e => e.type === $) === !0) && !A.MS.some(t => {
+    }, [B, z]), Z = (0, h.p)(), q = r.useMemo(() => Z(G.filter(e => (e.type === $ || e.type === l.R.VARIANTS_GROUP && e.variants?.some(e => e.type === $) === !0) && !A.MS.some(t => {
         let {
             categorySkuId: s
         } = t;
         return s === e.categorySkuId
     }))), [G, $, Z]), X = (0, p.X)(q);
-    return (l.useEffect(() => {
+    return (r.useEffect(() => {
         (0, f.z)({
             sessionId: M,
             checkpoint: f.t.SHOP_MOUNTED,
@@ -68,7 +68,7 @@ function B(e) {
             unpublishedCategoriesShown: D,
             cacheDisabled: H
         })
-    }, []), l.useEffect(() => {
+    }, []), r.useEffect(() => {
         t || (0, f.z)({
             sessionId: M,
             checkpoint: f.t.SHOP_RENDERED,

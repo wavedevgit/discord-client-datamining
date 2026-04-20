@@ -26,8 +26,8 @@ var l = n(627968),
     v = n(871123),
     N = n(733391),
     S = n(832163),
-    k = n(207654),
-    I = n(681064),
+    I = n(207654),
+    k = n(681064),
     E = n(429635),
     y = n(476438),
     R = n(44724),
@@ -68,7 +68,7 @@ function J(e) {
 function V(e) {
     let {
         sku: t
-    } = e, n = (0, k.b)({
+    } = e, n = (0, I.b)({
         location: "product_details_modal"
     }), {
         normalPrice: a,
@@ -131,7 +131,7 @@ function z(e) {
         giftingOrigin: c,
         trackPDPClick: d,
         analyticsLocations: _
-    } = e, h = t.id, f = (0, r.bG)([S.A], () => S.A.getNormalizedSKUEligibility(h), [h]), b = (0, I.R)({
+    } = e, h = t.id, f = (0, r.bG)([S.A], () => S.A.getNormalizedSKUEligibility(h), [h]), b = (0, k.R)({
         location: "product_details_modal"
     }), C = (0, x.JL)({
         sku: t,
@@ -168,7 +168,7 @@ function z(e) {
                 analyticsLocations: [..._, u.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_GIFT_BUTTON]
             })
         }, [t, d, i, c, _]),
-        k = a.useCallback(() => {
+        I = a.useCallback(() => {
             if (null == j || !b) return;
             d(Y.Jq.BUY_WITH_ORBS_BUTTON);
             let e = [..._, u.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_PURCHASE_BUTTON];
@@ -218,7 +218,7 @@ function z(e) {
         }), b && f && null != C && (0, l.jsx)(o.Button, {
             icon: o.Cp8,
             variant: "secondary",
-            onClick: k,
+            onClick: I,
             text: q.intl.format(q.t.lOtBOI, {
                 orbPrice: C.amount,
                 orbIconHook: () => (0, l.jsx)(o.Cp8, {
@@ -277,8 +277,8 @@ function Q(e) {
         giftRecipient: x,
         giftingOrigin: p,
         analyticsLocations: g,
-        analyticsContext: k,
-        onClose: I
+        analyticsContext: I,
+        onClose: k
     } = e, {
         analyticsLocations: R
     } = (0, _.Ay)(g ?? []), {
@@ -311,8 +311,7 @@ function Q(e) {
     }, [eo]);
     let e_ = ea < er.length ? ea : 0,
         em = ei[e_] ?? null,
-        eh = (0, L.j)(u, em),
-        ex = er.length > 1;
+        eh = er.length > 1;
     (0, b.pE)(), (0, c.Ay)(() => {
         T.default.track(W.HAw.OPEN_MODAL, {
             location_stack: R,
@@ -321,45 +320,45 @@ function Q(e) {
             application_id: u
         }), (0, N.Xw)()
     });
-    let ef = a.useCallback(e => {
+    let ex = a.useCallback(e => {
             T.default.track(W.HAw.SLAYER_STOREFRONT_PDP_ELEMENT_CLICKED, {
-                slayer_storefront_session_id: k?.sessionId,
+                slayer_storefront_session_id: I?.sessionId,
                 sku_id: s,
-                guild_id: k?.guildId,
+                guild_id: I?.guildId,
                 cta_type: e,
                 location_stack: R
             })
-        }, [k, s, R]),
-        ep = a.useCallback(e => {
-            es(e), ef(Y.Jq.CAROUSEL_ITEM)
-        }, [ef]);
+        }, [I, s, R]),
+        ef = a.useCallback(e => {
+            es(e), ex(Y.Jq.CAROUSEL_ITEM)
+        }, [ex]);
     a.useEffect(() => {
         null == U || null == s || j.A.isFetchingForSKU(s) || (0, N.qf)(U, s)
     }, [U, s]);
-    let eg = a.useCallback(() => {
-            null != el && null != U && (ef(Y.Jq.FORWARD_BUTTON), (0, O.d)({
+    let ep = a.useCallback(() => {
+            null != el && null != U && (ex(Y.Jq.FORWARD_BUTTON), (0, O.d)({
                 sku: el,
                 guildId: U,
                 source: "social-layer-storefront-pdp",
                 analyticsLocations: R,
-                analyticsContext: k
+                analyticsContext: I
             }))
-        }, [el, U, ef, R, k]),
+        }, [el, U, ex, R, I]),
+        eg = a.useCallback(() => {
+            ex(Y.Jq.WISHLIST_BUTTON)
+        }, [ex]),
         eb = a.useCallback(() => {
-            ef(Y.Jq.WISHLIST_BUTTON)
-        }, [ef]),
-        eC = a.useCallback(() => {
-            en(!et), ef(Y.Jq.MUTE_BUTTON)
-        }, [et, ef]),
-        ej = (0, y.B)(),
-        eT = el?.tenantMetadata?.socialLayer;
-    if (null == el || null == eT) return Q ? (0, l.jsx)(o.y$y, {}) : null;
-    let eA = B?.storefront,
-        ev = eA?.logoAssetId != null ? (0, A.YE)(eA.applicationId, eA.logoAssetId, 75) : null,
-        eN = eA?.lightThemeLogoAssetId != null ? (0, A.YE)(eA.applicationId, eA.lightThemeLogoAssetId, 75) : null,
-        eS = null;
-    eS = ee ? ev ?? eN : eN ?? ev;
-    let ek = null != el.orbsReward && el.orbsReward > 0;
+            en(!et), ex(Y.Jq.MUTE_BUTTON)
+        }, [et, ex]),
+        eC = (0, y.B)(),
+        ej = el?.tenantMetadata?.socialLayer;
+    if (null == el || null == ej) return Q ? (0, l.jsx)(o.y$y, {}) : null;
+    let eT = B?.storefront,
+        eA = eT?.logoAssetId != null ? (0, A.YE)(eT.applicationId, eT.logoAssetId, 75) : null,
+        ev = eT?.lightThemeLogoAssetId != null ? (0, A.YE)(eT.applicationId, eT.lightThemeLogoAssetId, 75) : null,
+        eN = null;
+    eN = ee ? eA ?? ev : ev ?? eA;
+    let eS = null != el.orbsReward && el.orbsReward > 0;
     return (0, l.jsx)(o.EOs, {
         transitionState: t,
         "hide-shadow": !0,
@@ -369,8 +368,8 @@ function Q(e) {
         returnRef: n,
         children: (0, l.jsxs)(o.$mQ, {
             className: X.jE,
-            children: [ek && (0, l.jsx)(Z, {
-                timeRemaining: ej ?? void 0,
+            children: [eS && (0, l.jsx)(Z, {
+                timeRemaining: eC ?? void 0,
                 text: q.intl.format(q.t.d3njXi, {
                     orbCount: el.orbsReward
                 })
@@ -378,14 +377,11 @@ function Q(e) {
                 className: X.nr,
                 children: [(0, l.jsxs)("div", {
                     className: X.op,
-                    style: {
-                        background: eh
-                    },
                     children: [(0, l.jsx)("div", {
                         className: X.r$,
-                        children: null != eS ? (0, l.jsx)("img", {
+                        children: null != eN ? (0, l.jsx)("img", {
                             className: X.wm,
-                            src: eS,
+                            src: eN,
                             alt: ""
                         }) : null
                     }), (0, l.jsxs)("div", {
@@ -394,7 +390,7 @@ function Q(e) {
                         children: [el.exclusive && (0, l.jsx)("div", {
                             className: X.K3,
                             children: (0, l.jsx)(w.I, {})
-                        }), ex ? (0, l.jsxs)(l.Fragment, {
+                        }), eh ? (0, l.jsxs)(l.Fragment, {
                             children: [(0, l.jsx)(J, {
                                 sku: el
                             }), (0, l.jsx)("div", {
@@ -403,7 +399,7 @@ function Q(e) {
                                     mediaItems: er,
                                     labels: ei.map(e => e.label),
                                     selectedIndex: e_,
-                                    onSelectIndex: ep
+                                    onSelectIndex: ef
                                 })
                             }), (0, l.jsx)("div", {
                                 className: X.Jv,
@@ -439,7 +435,7 @@ function Q(e) {
                             shouldShowShopLink: !m,
                             giftRecipient: x?.id !== P ? x : void 0,
                             giftingOrigin: x?.id !== P ? p : void 0,
-                            trackPDPClick: ef,
+                            trackPDPClick: ex,
                             analyticsLocations: R
                         })]
                     })]
@@ -454,18 +450,18 @@ function Q(e) {
                             sku: el,
                             isCardHovered: !0,
                             className: i()(X.jU, X.ij),
-                            trackButtonClick: eb,
+                            trackButtonClick: eg,
                             variant: "overlay-secondary",
                             location: "social_layer_storefront_product_details_modal"
                         }), (0, l.jsx)(K, {
-                            onClick: eg,
+                            onClick: ep,
                             ariaLabel: q.intl.string(q.t.Ej3B3Y),
                             children: (0, l.jsx)(h.A, {
                                 size: "refresh_sm",
                                 color: "currentColor"
                             })
                         }), (0, l.jsx)(K, {
-                            onClick: eC,
+                            onClick: eb,
                             ariaLabel: et ? q.intl.string(q.t.YqAjXy) : q.intl.string(q.t.w4m945),
                             children: et ? (0, l.jsx)(o._RO, {
                                 size: "refresh_sm",
@@ -475,7 +471,7 @@ function Q(e) {
                                 color: "currentColor"
                             })
                         }), (0, l.jsx)(K, {
-                            onClick: I,
+                            onClick: k,
                             ariaLabel: q.intl.string(q.t.cpT0Cq),
                             children: (0, l.jsx)(o.d$L, {
                                 size: "refresh_sm",

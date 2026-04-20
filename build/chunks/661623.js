@@ -4,9 +4,9 @@ s.d(t, {
     A: () => L
 });
 var n = s(627968),
-    l = s(64700),
-    r = s(503698),
-    a = s.n(r),
+    r = s(64700),
+    l = s(503698),
+    a = s.n(l),
     i = s(158954),
     o = s(311907),
     c = s(230109),
@@ -26,13 +26,13 @@ var n = s(627968),
     S = s(68465),
     v = s(165530),
     I = s(871237);
-let L = l.memo(function(e) {
+let L = r.memo(function(e) {
     let {
         category: t,
         rewardSkuId: s
     } = e, {
-        handleCardVisibilityChange: r
-    } = (0, f.Z)(s), L = l.useRef(null), {
+        handleCardVisibilityChange: l
+    } = (0, f.Z)(s), L = r.useRef(null), {
         isHoveringOrFocusing: j
     } = (0, _.A)(L), {
         readyToClaim: O,
@@ -40,7 +40,7 @@ let L = l.memo(function(e) {
         collectedSkuIds: T
     } = (0, E.K)(t, s), y = (0, o.bG)([p.A], () => p.A.isClaiming === s);
     return (0, n.jsx)(c.L, {
-        onChange: r,
+        onChange: l,
         threshold: 0,
         innerRef: L,
         children: (0, n.jsx)("div", {

@@ -118,8 +118,11 @@ let u = 6,
                 pages: v,
                 setPage: m
             }), (0, l.jsx)("div", {
-                className: s()(o.grid, o[`columns${i}`]),
-                children: x
+                className: o.gridContainer,
+                children: (0, l.jsx)("div", {
+                    className: s()(o.grid, o[`columns${i}`]),
+                    children: x
+                })
             }), y && "bottom" === a && (0, l.jsx)(h, {
                 page: d,
                 pages: v,

@@ -16,14 +16,14 @@ var l = i(311907),
     h = i(133238),
     g = i(795144),
     x = i(979807),
-    C = i(671470),
-    j = i(690953),
-    b = i(508654),
-    v = i(24661),
+    j = i(671470),
+    C = i(690953),
+    v = i(508654),
+    b = i(24661),
     p = i(769591),
     V = i(446600),
-    G = i(533957),
-    E = i(886393),
+    E = i(533957),
+    G = i(886393),
     m = i(477190),
     y = i(307623),
     X = i(317910),
@@ -49,7 +49,7 @@ function Y(n) {
         channel: t,
         guild: i,
         onSelect: s
-    } = n, d = t.isGuildStageVoice(), o = (0, l.bG)([V.A], () => d ? V.A.getStageInstanceByChannel(t.id) : void 0, [d, t.id]), u = (0, f.A)(t), j = (0, E.A)(t), G = (0, b.Qs)(t.id), m = (0, v.A)(G?.id, i, t), y = (0, k.A)(t, o), X = (0, h.y)(t), _ = (0, g.A)(t), T = (0, x.A)(t), M = (0, C.A)(t), P = (0, N.A)(t), Z = (0, L.A)(t), U = (0, S.A)(t), Y = (0, O.Ay)(t), w = (0, p.os)("ChannelListVoiceContextMenuFavorites"), z = (0, B.A)(t, i), F = (0, A.A)({
+    } = n, d = t.isGuildStageVoice(), o = (0, l.bG)([V.A], () => d ? V.A.getStageInstanceByChannel(t.id) : void 0, [d, t.id]), u = (0, f.A)(t), C = (0, G.A)(t), E = (0, v.Qs)(t.id), m = (0, b.A)(E?.id, i, t), y = (0, k.A)(t, o), X = (0, h.y)(t), _ = (0, g.A)(t), T = (0, x.A)(t), M = (0, j.A)(t), P = (0, N.A)(t), Z = (0, L.A)(t), U = (0, S.A)(t), Y = (0, O.Ay)(t), w = (0, p.os)("ChannelListVoiceContextMenuFavorites"), z = (0, B.A)(t, i), F = (0, A.A)({
         id: t.id,
         label: H.intl.string(H.t.gFHI3k)
     }), Q = (0, D.A)(t), R = (0, c.A)(t), W = (0, I.A)();
@@ -60,13 +60,13 @@ function Y(n) {
         "aria-label": H.intl.string(H.t.Xm41aV),
         onSelect: s,
         children: [(0, e.jsx)(r.rXV, {
-            children: null != G ? m : y
+            children: null != E ? m : y
         }), (0, e.jsx)(r.rXV, {
             children: u
         }), (0, e.jsxs)(r.rXV, {
             children: [T, M, _]
         }), (0, e.jsxs)(r.rXV, {
-            children: [R, j]
+            children: [R, C]
         }), (0, e.jsxs)(r.rXV, {
             children: [z, P, Q]
         }), (0, e.jsxs)(r.rXV, {
@@ -84,10 +84,10 @@ function w(n) {
         channel: t,
         guild: i,
         onSelect: s
-    } = n, d = t.isGuildStageVoice(), o = (0, l.bG)([V.A], () => d ? V.A.getStageInstanceByChannel(t.id) : void 0, [d, t.id]), u = (0, f.A)(t), g = (0, E.A)(t), x = (0, b.Qs)(t.id), C = (0, v.A)(x?.id, i, t), U = (0, k.A)(t, o), Y = (0, h.m)(t), w = (0, h.y)(t), z = (0, N.A)(t), F = (0, S.A)(t), Q = (0, X.A)(t), R = (0, _.A)(t, i, o), W = (0, B.A)(t, i), q = (0, P.A)(t, i), K = (0, Z.A)(t, i.id), J = (0, G.A)(t, i), $ = (0, m.A)(t, i), nn = (0, y.A)(t), nt = (0, A.A)({
+    } = n, d = t.isGuildStageVoice(), o = (0, l.bG)([V.A], () => d ? V.A.getStageInstanceByChannel(t.id) : void 0, [d, t.id]), u = (0, f.A)(t), g = (0, G.A)(t), x = (0, v.Qs)(t.id), j = (0, b.A)(x?.id, i, t), U = (0, k.A)(t, o), Y = (0, h.m)(t), w = (0, h.y)(t), z = (0, N.A)(t), F = (0, S.A)(t), Q = (0, X.A)(t), R = (0, _.A)(t, i, o), W = (0, B.A)(t, i), q = (0, P.A)(t, i), K = (0, Z.A)(t, i.id), J = (0, E.A)(t, i), $ = (0, m.A)(t, i), nn = (0, y.A)(t), nt = (0, A.A)({
         id: t.id,
         label: H.intl.string(H.t.gFHI3k)
-    }), ni = (0, D.A)(t), ne = (0, c.A)(t), nl = (0, M.A)(t), nr = (0, T.A)(t), na = (0, j.A)(t), ns = (0, L.A)(t), nd = (0, p.os)("ChannelListVoiceContextMenuNormal"), nc = (0, O.Ay)(t), no = (0, I.A)();
+    }), ni = (0, D.A)(t), ne = (0, c.A)(t), nl = (0, M.A)(t), nr = (0, T.A)(t), na = (0, C.A)(t), ns = (0, L.A)(t), nd = (0, p.os)("ChannelListVoiceContextMenuNormal"), nc = (0, O.Ay)(t), no = (0, I.A)();
     return (0, e.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "channel-context",
@@ -95,7 +95,7 @@ function w(n) {
         "aria-label": H.intl.string(H.t.Xm41aV),
         onSelect: s,
         children: [(0, e.jsx)(r.rXV, {
-            children: null != x ? C : U
+            children: null != x ? j : U
         }), (0, e.jsx)(r.rXV, {
             children: u
         }, "mark-as-read-or-favorite"), (0, e.jsx)(r.rXV, {

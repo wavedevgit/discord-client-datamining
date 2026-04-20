@@ -46,15 +46,18 @@ let f = e => {
             selectedTab: f
         }), (0, o.jsx)(d.HOs, {
             children: (0, o.jsx)("div", {
-                className: a()(I.YB, I.GS),
-                children: (0, o.jsx)(i.Z_, {
-                    tenantId: C.FYj,
-                    templateId: "collection-index",
-                    requestParams: {
-                        collection_id: _
-                    },
-                    onError: k,
-                    onEmptyLayout: k
+                className: a()(I.GS, I.rb),
+                children: (0, o.jsx)("div", {
+                    className: I.YB,
+                    children: (0, o.jsx)(i.Z_, {
+                        tenantId: C.FYj,
+                        templateId: "collection-index",
+                        requestParams: {
+                            collection_id: _
+                        },
+                        onError: k,
+                        onEmptyLayout: k
+                    })
                 })
             })
         })]

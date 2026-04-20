@@ -5,8 +5,8 @@ s.d(t, {
 });
 var n = s(627968);
 s(64700);
-var l = s(311907),
-    r = s(832163),
+var r = s(311907),
+    l = s(832163),
     a = s(371794),
     i = s(873297),
     o = s(188275),
@@ -16,7 +16,7 @@ let d = e => {
         onDismiss: t,
         skuIds: s,
         tab: d
-    } = e, u = (0, l.bG)([r.A], () => r.A.getApplicationIdFromGuildId(o.Kf), []), _ = (0, l.bG)([r.A], () => null != u ? r.A.getStorefrontMetadata(u) : void 0, [u]), g = null != u && _?.logoAssetId != null ? (0, a.YE)(u, _.logoAssetId, 75) : null;
+    } = e, u = (0, r.bG)([l.A], () => l.A.getApplicationIdFromGuildId(o.Kf), []), _ = (0, r.bG)([l.A], () => null != u ? l.A.getStorefrontMetadata(u) : void 0, [u]), g = null != u && _?.logoAssetId != null ? (0, a.YE)(u, _.logoAssetId, 75) : null;
     return null == u ? null : (0, n.jsx)(i.A, {
         onDismiss: t,
         skuIds: s,

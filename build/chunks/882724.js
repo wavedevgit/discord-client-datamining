@@ -1,5 +1,6 @@
 /** chunk id: 882724 params = (module,exports,require) **/
 r.r(e.exports = {
+    gridContainer: "gridContainer__1b670",
     grid: "grid__1b670",
     pagination: "pagination__1b670",
     pageNumbers: "pageNumbers__1b670",

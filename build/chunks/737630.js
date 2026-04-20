@@ -4,9 +4,9 @@ s.r(t), s.d(t, {
     default: () => G
 });
 var n = s(627968),
-    l = s(64700),
-    r = s(503698),
-    a = s.n(r),
+    r = s(64700),
+    l = s(503698),
+    a = s.n(l),
     i = s(835245),
     o = s(417597),
     c = s(192308),
@@ -45,14 +45,14 @@ let F = e => {
             children: t,
             shouldAddEventListener: s,
             onClose: n
-        } = e, r = (0, c.useHasAnyModalOpen)();
-        return l.useEffect(() => {
-            if (!s || r) return;
+        } = e, l = (0, c.useHasAnyModalOpen)();
+        return r.useEffect(() => {
+            if (!s || l) return;
             let e = e => {
                 e.key === H.N$.Escape && n()
             };
             return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
-        }, [s, r, n]), t
+        }, [s, l, n]), t
     },
     G = function(e) {
         let {
@@ -60,7 +60,7 @@ let F = e => {
         } = e;
         (0, p.P)(h.a), (0, I.g)();
         let s = (0, _.A)((0, i.A)()),
-            r = (0, o.bG)([x.default], () => x.default.getCurrentUser());
+            l = (0, o.bG)([x.default], () => x.default.getCurrentUser());
         (0, f.pE)();
         let c = (0, B.yB)("CollectiblesShop"),
             {
@@ -70,7 +70,7 @@ let F = e => {
                 currentTab: G,
                 hasFilters: U
             } = (0, j.v)(),
-            V = l.useMemo(() => t === P.G2.HOME && null != G && U() ? G : t, [t, G, U]),
+            V = r.useMemo(() => t === P.G2.HOME && null != G && U() ? G : t, [t, G, U]),
             {
                 categories: W,
                 refreshCategories: z
@@ -80,12 +80,12 @@ let F = e => {
                 sessionId: s,
                 tab: V
             }),
-            K = l.useMemo(() => [...W.values()], [W]),
-            [Y, $] = l.useState(),
+            K = r.useMemo(() => [...W.values()], [W]),
+            [Y, $] = r.useState(),
             Z = (0, o.bG)([b.A], () => b.A.getCategory(Y)?.name),
-            [q, X] = l.useState();
+            [q, X] = r.useState();
         (0, k.XU)(s);
-        let J = l.useCallback((e, t) => {
+        let J = r.useCallback((e, t) => {
                 X(e), $(t)
             }, []),
             {
@@ -95,25 +95,25 @@ let F = e => {
             } = (0, L.o)(V);
         (0, m.HU)({
             location: D.intl.string(D.t.pWG4ze)
-        }), (0, A.uS)(s, Q, Z, ee, q), (0, A.N0)(Q, r);
+        }), (0, A.uS)(s, Q, Z, ee, q), (0, A.N0)(Q, l);
         let {
             dismissShopButtonDC: es
         } = (0, R.A)();
-        l.useEffect(() => {
+        r.useEffect(() => {
             es()
-        }, [es]), l.useEffect(() => {
+        }, [es]), r.useEffect(() => {
             (0, u.I)(M.BVt.COLLECTIBLES_SHOP)
         }, []);
-        let en = l.useRef(null),
-            el = l.useRef(null);
-        (0, d.tjt)(en), l.useEffect(() => {
-            el.current?.focus()
+        let en = r.useRef(null),
+            er = r.useRef(null);
+        (0, d.tjt)(en), r.useEffect(() => {
+            er.current?.focus()
         }, []), (0, B.gB)();
         let {
-            analyticsLocations: er
+            analyticsLocations: el
         } = (0, A.lC)(Q), ea = (0, S.V)(Q, "collectibles_shop");
         return (0, n.jsx)(g.f5, {
-            value: er,
+            value: el,
             children: (0, n.jsx)(E.R9, {
                 newValue: {
                     sessionId: s,
@@ -129,7 +129,7 @@ let F = e => {
                             className: a()(w.bx, {
                                 [B.jP]: c
                             }),
-                            ref: el,
+                            ref: er,
                             tabIndex: -1,
                             children: [(0, n.jsx)(T.G, {
                                 handleTransition: et,

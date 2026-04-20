@@ -4,9 +4,9 @@ s.d(t, {
     k: () => g
 });
 var n = s(627968),
-    l = s(64700),
-    r = s(503698),
-    a = s.n(r),
+    r = s(64700),
+    l = s(503698),
+    a = s.n(l),
     i = s(397927),
     o = s(496431),
     c = s(854818),
@@ -15,17 +15,17 @@ var n = s(627968),
 let _ = {
         pink: "pinkCountdown"
     },
-    g = l.memo(function(e) {
+    g = r.memo(function(e) {
         let {
             message: t,
             onClick: s,
-            countdownEndDate: r,
+            countdownEndDate: l,
             variant: g
-        } = e, m = l.useMemo(() => {
-            if (null == r) return null;
-            let e = r instanceof Date ? r : new Date(r);
+        } = e, m = r.useMemo(() => {
+            if (null == l) return null;
+            let e = l instanceof Date ? l : new Date(l);
             return isNaN(e.getTime()) ? null : e
-        }, [r]), h = (0, o.A)(m ?? 0, 1e3, void 0, null == m);
+        }, [l]), h = (0, o.A)(m ?? 0, 1e3, void 0, null == m);
         if (null != m && Object.values(h).every(e => 0 === e)) return null;
         let p = null != g ? u[g] : void 0,
             f = null != g ? u[_[g]] : void 0;

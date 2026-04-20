@@ -43,7 +43,7 @@ function S(e) {
     return null != t && "#000000" !== n ? s : void 0
 }
 
-function k(e) {
+function I(e) {
     let {
         item: t,
         onPlay: n,
@@ -93,7 +93,7 @@ function k(e) {
     })
 }
 
-function I(e) {
+function k(e) {
     let {
         item: t,
         setHasInteracted: n,
@@ -174,7 +174,7 @@ let E = (0, u.A)(e => {
         e < t ? B(!0) : e > t && w(!0)
     }, []), J = (0, a.useCallback)(() => {
         B(!1), w(!1)
-    }, []), V = (0, a.useCallback)((e, t, n) => (0, l.jsx)(I, {
+    }, []), V = (0, a.useCallback)((e, t, n) => (0, l.jsx)(k, {
         item: e,
         itemIndex: t,
         isCurrentItem: n,
@@ -191,7 +191,7 @@ let E = (0, u.A)(e => {
             style: null != a ? M(n, a) : null,
             onMouseEnter: s ? null : () => X(n),
             onMouseLeave: s ? null : J,
-            children: "video" === e.type ? (0, l.jsx)(k, {
+            children: "video" === e.type ? (0, l.jsx)(I, {
                 item: e,
                 onPlay: W,
                 onEnded: q,

@@ -42,8 +42,8 @@ var l = n(627968),
     D = n(860227),
     U = n(449859),
     P = n(855344),
-    H = n(812299),
-    V = n(109054),
+    V = n(812299),
+    H = n(109054),
     F = n(652215),
     B = n(985018),
     $ = n(334211);
@@ -105,7 +105,7 @@ let J = i.memo(function(e) {
         preview: I,
         subscribeToGroupId: b,
         hideGuildTag: S
-    } = e, j = (0, G.Ay)(t, n), T = i.useMemo(() => (0, H.y)({
+    } = e, j = (0, G.Ay)(t, n), T = i.useMemo(() => (0, V.y)({
         message: t,
         channel: s,
         user: t?.author,
@@ -311,7 +311,7 @@ let q = i.memo(function(e) {
             showAvatarPopout: C
         } = t, N = i.useRef(null), [I, _] = i.useState(!1), {
             analyticsLocations: b
-        } = (0, g.Ay)(m.A.AVATAR), R = (0, u.bG)([O.default], () => O.default.getCurrentUser()), M = (0, u.bG)([y.Ay], () => t.displayCompactAvatars ?? y.Ay.displayCompactAvatars), G = (0, V.A)(c), k = h ? 32 : 80, {
+        } = (0, g.Ay)(m.A.AVATAR), R = (0, u.bG)([O.default], () => O.default.getCurrentUser()), M = (0, u.bG)([y.Ay], () => t.displayCompactAvatars ?? y.Ay.displayCompactAvatars), G = (0, H.A)(c), k = h ? 32 : 80, {
             pendingAvatarDecoration: D
         } = (0, S.A)({
             guildId: n
@@ -322,7 +322,7 @@ let q = i.memo(function(e) {
             guildId: n
         }), {
             avatarSrc: P,
-            avatarDecorationSrc: H,
+            avatarDecorationSrc: V,
             eventHandlers: B
         } = (0, j.A)({
             userId: c.author.id,
@@ -362,7 +362,7 @@ let q = i.memo(function(e) {
                 children: e => z({
                     ...B,
                     avatarSrc: J,
-                    avatarDecorationSrc: H,
+                    avatarDecorationSrc: V,
                     compact: h,
                     onClick: x,
                     onContextMenu: p,
@@ -378,7 +378,7 @@ let q = i.memo(function(e) {
             children: z({
                 ...B,
                 avatarSrc: J,
-                avatarDecorationSrc: H,
+                avatarDecorationSrc: V,
                 compact: h,
                 onClick: x,
                 onContextMenu: p,
@@ -393,7 +393,7 @@ let q = i.memo(function(e) {
         guildId: e.guildId,
         handleRenderPopout: k,
         showCommunicationDisabledStyles: K
-    }), X = (0, u.bG)([y.Ay], () => e.displayCompactAvatars ?? y.Ay.displayCompactAvatars), Q = i.useMemo(() => (0, H.k)({
+    }), X = (0, u.bG)([y.Ay], () => e.displayCompactAvatars ?? y.Ay.displayCompactAvatars), Q = i.useMemo(() => (0, V.k)({
         message: t,
         channel: _,
         user: t?.author,

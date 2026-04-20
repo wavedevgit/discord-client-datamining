@@ -1,7 +1,7 @@
 /** chunk id: 634202 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => H
+    A: () => V
 });
 var l = n(627968),
     i = n(64700),
@@ -188,7 +188,7 @@ function P(e) {
     })
 }
 
-function H(e) {
+function V(e) {
     let {
         userId: t,
         messageId: n,

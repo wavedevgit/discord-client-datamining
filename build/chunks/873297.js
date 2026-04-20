@@ -4,8 +4,8 @@ s.d(t, {
     A: () => A
 });
 var n = s(627968),
-    l = s(64700),
-    r = s(158954),
+    r = s(64700),
+    l = s(158954),
     a = s(311907),
     i = s(230109),
     o = s(688810),
@@ -37,10 +37,10 @@ let A = e => {
             logoUrl: R
         } = e,
         B = (0, a.bG)([_.A], () => _.A.getGuildIdFromApplicationId(L), [L]),
-        P = (t = l.useRef([]), l.useEffect(() => {
+        P = (t = r.useRef([]), r.useEffect(() => {
             if (null != B)
                 for (let e of v)(0, d.qf)(B, e)
-        }, [v, B]), s = (0, a.bG)([f.A], () => !v.some(e => f.A.isFetching(e)) && v.some(e => f.A.didFetchingSkuFail(e)), [v]), l.useEffect(() => {
+        }, [v, B]), s = (0, a.bG)([f.A], () => !v.some(e => f.A.isFetching(e)) && v.some(e => f.A.didFetchingSkuFail(e)), [v]), r.useEffect(() => {
             s && null != B && (0, d.Rw)(B)
         }, [s, B]), A = (0, a.yK)([f.A, _.A], () => {
             if (v.some(e => f.A.isFetching(e))) return t.current;
@@ -51,7 +51,7 @@ let A = e => {
             if (null == s || "loading" === s.state) return e;
             let n = new Set(v);
             return [...e, ...null != s.storefront ? (0, c.jd)(s.storefront).filter(e => !n.has(e) && null != f.A.get(e)) : []].slice(0, v.length)
-        }, [v, B]), l.useEffect(() => {
+        }, [v, B]), r.useEffect(() => {
             A.length > 0 && (t.current = A)
         }, [A]), A);
     (0, p.j)({
@@ -62,13 +62,13 @@ let A = e => {
         {
             analyticsLocations: H
         } = (0, o.Ay)(),
-        D = l.useRef(null),
-        w = l.useRef(!1),
-        F = l.useRef(null),
-        G = l.useMemo(() => ({
+        D = r.useRef(null),
+        w = r.useRef(!1),
+        F = r.useRef(null),
+        G = r.useMemo(() => ({
             pageSection: k
         }), [k]),
-        U = l.useCallback((e, t) => {
+        U = r.useCallback((e, t) => {
             x.default.track(b.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: M?.sessionId,
                 page_type: I,
@@ -81,17 +81,17 @@ let A = e => {
                 } : void 0
             })
         }, [M?.sessionId, M?.pageCategory, M?.pageSection, I, T]),
-        V = l.useCallback(() => {
+        V = r.useCallback(() => {
             null != B && (0, g.X)({
                 guildId: B
             })
         }, [B]),
-        W = l.useCallback(() => {
+        W = r.useCallback(() => {
             null != B && (U("go_to_game_shop"), (0, g.default)({
                 guildId: B
             }))
         }, [U, B]),
-        z = l.useCallback((e, t) => {
+        z = r.useCallback((e, t) => {
             let {
                 skuId: s,
                 applicationId: n
@@ -103,10 +103,10 @@ let A = e => {
                 analyticsLocations: H
             })
         }, [U, H]),
-        K = l.useCallback(() => {
+        K = r.useCallback(() => {
             U("dismiss"), S()
         }, [U, S]),
-        Y = l.useCallback(e => {
+        Y = r.useCallback(e => {
             !w.current && (e && null === F.current ? F.current = setTimeout(() => {
                 w.current = !0, F.current = null, x.default.track(b.HAw.COLLECTIBLES_TILE_IMPRESSION, {
                     collectibles_shop_session_id: M?.sessionId,
@@ -117,7 +117,7 @@ let A = e => {
                 })
             }, 1e3) : e || null === F.current || (clearTimeout(F.current), F.current = null))
         }, [M?.sessionId, M?.pageCategory, M?.pageSection, I, y]);
-    return (l.useEffect(() => () => {
+    return (r.useEffect(() => () => {
         null !== F.current && (clearTimeout(F.current), F.current = null)
     }, []), 0 === P.length) ? null : (0, n.jsx)(i.L, {
         innerRef: D,
@@ -135,7 +135,7 @@ let A = e => {
                     }
                 }), (0, n.jsx)("div", {
                     className: C.b,
-                    children: (0, n.jsx)(r.JnF, {
+                    children: (0, n.jsx)(l.JnF, {
                         size: "sm",
                         variant: "icon-only",
                         onClick: K
@@ -148,14 +148,14 @@ let A = e => {
                     className: C.xf,
                     children: (0, n.jsxs)("div", {
                         className: C.B5,
-                        children: [(0, n.jsx)(r.DZT, {
+                        children: [(0, n.jsx)(l.DZT, {
                             variant: "heading-lg/semibold",
                             color: "always-white",
                             children: j
-                        }), (0, n.jsx)(r.$nd, {
+                        }), (0, n.jsx)(l.$nd, {
                             variant: "overlay-primary",
                             size: "sm",
-                            icon: r.I9m,
+                            icon: l.I9m,
                             iconPosition: "end",
                             text: O,
                             onMouseDown: V,

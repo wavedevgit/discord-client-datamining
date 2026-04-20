@@ -48,9 +48,9 @@ let A = function(e) {
         D(!0), M?.(e)
     }, [M]), P = i.useCallback(e => {
         D(!1), O?.(e)
-    }, [O]), H = (0, c.W)({
+    }, [O]), V = (0, c.W)({
         location: "BaseMessage"
-    }), V = (0, l.jsx)(o.C.Provider, {
+    }), H = (0, l.jsx)(o.C.Provider, {
         value: {
             animate: k,
             setAnimate: D
@@ -60,7 +60,7 @@ let A = function(e) {
             children: (0, l.jsxs)("div", {
                 className: a()(t, {
                     [h.D7]: G,
-                    [h.e8]: H && R?.displayNameStyles != null && R?.guildId == null,
+                    [h.e8]: V && R?.displayNameStyles != null && R?.guildId == null,
                     [h.iE]: !0,
                     [h.kl]: s,
                     [h.oE]: n,
@@ -87,6 +87,6 @@ let A = function(e) {
         })
     });
     return p ? (0, l.jsx)(u.M1G, {
-        children: V
-    }) : V
+        children: H
+    }) : H
 }

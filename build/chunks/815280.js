@@ -5,8 +5,8 @@ s.d(t, {
 });
 var n = s(627968);
 s(64700);
-var l = s(503698),
-    r = s.n(l),
+var r = s(503698),
+    l = s.n(r),
     a = s(311907),
     i = s(653887),
     o = s(775602),
@@ -17,23 +17,23 @@ let _ = e => {
     let {
         bannerStatic: t,
         bannerAnimated: s,
-        bannerRive: l,
+        bannerRive: r,
         isResponsive: _ = !1,
         eventTargetRef: g
     } = e, m = (0, a.bG)([o.A], () => o.A.useReducedMotion), h = (0, a.bG)([d.A], () => d.A.isFocused()), p = null != s && !m && h;
-    return null != l ? (0, n.jsx)(i._, {
-        src: l,
+    return null != r ? (0, n.jsx)(i._, {
+        src: r,
         fit: "fit-width",
         eventTargetRef: g
     }) : p ? (0, n.jsx)(c.A, {
-        className: r()({
+        className: l()({
             [u.no]: _
         }, u.BW, u.ud),
         src: s,
         autoPlay: !0,
         loop: !0
     }) : (0, n.jsx)("div", {
-        className: r()({
+        className: l()({
             [u.no]: _
         }, u.BW, u._e),
         style: {

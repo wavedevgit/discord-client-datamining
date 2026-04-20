@@ -4,8 +4,8 @@ s.d(t, {
     A: () => b
 });
 var n = s(627968),
-    l = s(64700),
-    r = s(311907),
+    r = s(64700),
+    l = s(311907),
     a = s(951707),
     i = s(440938),
     o = s(590180),
@@ -27,14 +27,14 @@ let b = e => {
             tab: S
         } = e,
         v = (0, d.W)("RewardHeroBlockCards"),
-        I = l.useMemo(() => o.A.getCategoryForProduct(A.rewardSkuId), [A.rewardSkuId]),
-        L = (0, r.bG)([c.A], () => c.A.getPurchase(A.rewardSkuId)),
+        I = r.useMemo(() => o.A.getCategoryForProduct(A.rewardSkuId), [A.rewardSkuId]),
+        L = (0, l.bG)([c.A], () => c.A.getPurchase(A.rewardSkuId)),
         {
             products: j
-        } = (t = (0, _.A)(), s = l.useMemo(() => C ? [] : t(A.rankedSkuIds).filter(e => e.skuId !== A.rewardSkuId || null != L), [C, t, A.rankedSkuIds, L, A.rewardSkuId]), b = (0, u.p)()(s), {
+        } = (t = (0, _.A)(), s = r.useMemo(() => C ? [] : t(A.rankedSkuIds).filter(e => e.skuId !== A.rewardSkuId || null != L), [C, t, A.rankedSkuIds, L, A.rewardSkuId]), b = (0, u.p)()(s), {
             products: (0, g.X)(b)
         }),
-        O = l.useMemo(() => !C && 0 !== A.rankedSkuIds.length && !(j.length > 0) && A.rankedSkuIds.every(e => o.A.getProduct(e)?.variantGroupStoreListingId != null), [C, A.rankedSkuIds, j.length]),
+        O = r.useMemo(() => !C && 0 !== A.rankedSkuIds.length && !(j.length > 0) && A.rankedSkuIds.every(e => o.A.getProduct(e)?.variantGroupStoreListingId != null), [C, A.rankedSkuIds, j.length]),
         k = C || O,
         {
             readyToClaim: T

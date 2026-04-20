@@ -4,8 +4,8 @@ s.d(t, {
     A: () => b
 });
 var n = s(627968),
-    l = s(64700),
-    r = s(951707),
+    r = s(64700),
+    l = s(951707),
     a = s(440938),
     i = s(590180),
     o = s(940980),
@@ -23,7 +23,7 @@ let f = e => (0, n.jsx)("div", {
             ...e
         })
     }),
-    x = e => (0, n.jsx)(r.A, {
+    x = e => (0, n.jsx)(l.A, {
         gap: "xl",
         children: (0, n.jsx)(E, {
             ...e
@@ -33,13 +33,13 @@ let f = e => (0, n.jsx)("div", {
         let {
             isLoading: t,
             products: s,
-            tab: l,
-            totalCards: r
+            tab: r,
+            totalCards: l
         } = e, c = (0, o.W)("HeroBlockCards");
         if (t) return (0, n.jsx)(n.Fragment, {
-            children: [...Array(r ?? 4)].map((e, t) => (0, n.jsx)(m.A, {}, t))
+            children: [...Array(l ?? 4)].map((e, t) => (0, n.jsx)(m.A, {}, t))
         });
-        let d = null != r ? s.slice(0, r) : s;
+        let d = null != l ? s.slice(0, l) : s;
         return (0, n.jsx)(g.v3.Provider, {
             value: {
                 flattenProductVariants: !1
@@ -54,14 +54,14 @@ let f = e => (0, n.jsx)("div", {
                     },
                     children: (0, n.jsx)(_.A, {
                         skuId: e?.skuId,
-                        prioritizedCurrency: l === h.G2.ORBS ? g.Hi.ORBS : c ? g.Hi.FIAT : void 0
+                        prioritizedCurrency: r === h.G2.ORBS ? g.Hi.ORBS : c ? g.Hi.FIAT : void 0
                     }, e.skuId)
                 }, e.skuId)
             })
         })
     },
     b = e => {
-        let t, s, r, {
+        let t, s, l, {
                 heroBlockRecord: a,
                 layout: o,
                 tab: _,
@@ -69,10 +69,10 @@ let f = e => (0, n.jsx)("div", {
             } = e,
             {
                 products: m
-            } = (t = (0, d.A)(), s = l.useMemo(() => g ? [] : t(a.rankedSkuIds), [g, t, a.rankedSkuIds]), r = (0, c.p)()(s), {
-                products: (0, u.X)(r)
+            } = (t = (0, d.A)(), s = r.useMemo(() => g ? [] : t(a.rankedSkuIds), [g, t, a.rankedSkuIds]), l = (0, c.p)()(s), {
+                products: (0, u.X)(l)
             }),
-            h = l.useMemo(() => !g && 0 !== a.rankedSkuIds.length && !(m.length > 0) && a.rankedSkuIds.every(e => i.A.getProduct(e)?.variantGroupStoreListingId != null), [g, a.rankedSkuIds, m.length]),
+            h = r.useMemo(() => !g && 0 !== a.rankedSkuIds.length && !(m.length > 0) && a.rankedSkuIds.every(e => i.A.getProduct(e)?.variantGroupStoreListingId != null), [g, a.rankedSkuIds, m.length]),
             p = g || h;
         switch (o) {
             case "feed":

@@ -175,8 +175,11 @@ let w = new F(s.h, {
     CHANNEL_MUTE_EXPIRED: P,
     CHANNEL_RTC_UPDATE_CHAT_OPEN: M,
     CHANNEL_SELECT: j,
-    CHANNEL_STATUSES: function(e) {
-        return R.clearGuildId(e.guildId)
+    CHANNEL_INFO: function(e) {
+        let {
+            guildId: t
+        } = e;
+        return R.clearGuildId(t)
     },
     CHANNEL_UPDATES: function(e) {
         let {

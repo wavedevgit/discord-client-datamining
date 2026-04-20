@@ -4,8 +4,8 @@ s.d(t, {
     p: () => _
 });
 var n = s(64700),
-    l = s(417597),
-    r = s(287809),
+    r = s(417597),
+    l = s(287809),
     a = s(927578),
     i = s(4227),
     o = s(993408),
@@ -13,7 +13,7 @@ var n = s(64700),
     d = s(660653),
     u = s(466459);
 let _ = () => {
-    let e = (0, l.bG)([r.default], () => r.default.getCurrentUser()),
+    let e = (0, r.bG)([l.default], () => l.default.getCurrentUser()),
         t = null != e && a.Ay.canUseCollectibles(e);
     return (0, n.useCallback)(e => null == e || 0 === e.length ? e : e.filter(e => {
         let {
@@ -26,12 +26,12 @@ let _ = () => {
             isPremiumUser: t
         });
         let n = (0, o.l8)(t),
-            l = (0, o.yt)(e, n);
-        if (null == l || 0 === l.amount) return !0;
-        let r = 0;
-        return null != e.bundledProducts && (r = e.bundledProducts.reduce((e, t) => {
+            r = (0, o.yt)(e, n);
+        if (null == r || 0 === r.amount) return !0;
+        let l = 0;
+        return null != e.bundledProducts && (l = e.bundledProducts.reduce((e, t) => {
             let s = (0, o.yt)(t, n);
             return e + (s?.amount ?? 0)
-        }, 0)), l.amount < r
+        }, 0)), r.amount < l
     }), [t])
 }

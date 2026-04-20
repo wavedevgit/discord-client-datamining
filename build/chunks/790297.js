@@ -6,8 +6,8 @@ s.d(t, {
     uS: () => m
 });
 var n = s(64700),
-    l = s(311907),
-    r = s(793574),
+    r = s(311907),
+    l = s(793574),
     a = s(688810),
     i = s(954571),
     o = s(927578),
@@ -19,32 +19,32 @@ let g = e => {
         let {
             analyticsSource: t,
             analyticsLocations: s
-        } = (0, l.cf)([c.A], () => c.A.getAnalytics()), n = (e => {
+        } = (0, r.cf)([c.A], () => c.A.getAnalytics()), n = (e => {
             switch (e) {
                 case d.G2.ORBS:
-                    return r.A.COLLECTIBLES_SHOP_ORBS_TAB;
+                    return l.A.COLLECTIBLES_SHOP_ORBS_TAB;
                 case d.G2.HOME:
-                    return r.A.COLLECTIBLES_SHOP_HOME_SCREEN;
+                    return l.A.COLLECTIBLES_SHOP_HOME_SCREEN;
                 case d.G2.BUNDLES:
-                    return r.A.COLLECTIBLES_SHOP_BUNDLES_TAB;
+                    return l.A.COLLECTIBLES_SHOP_BUNDLES_TAB;
                 case d.G2.AVATAR_DECORATIONS:
-                    return r.A.COLLECTIBLES_SHOP_AVATAR_DECORATIONS_TAB;
+                    return l.A.COLLECTIBLES_SHOP_AVATAR_DECORATIONS_TAB;
                 case d.G2.PROFILE_EFFECTS:
-                    return r.A.COLLECTIBLES_SHOP_PROFILE_EFFECTS_TAB;
+                    return l.A.COLLECTIBLES_SHOP_PROFILE_EFFECTS_TAB;
                 case d.G2.NAMEPLATES:
-                    return r.A.COLLECTIBLES_SHOP_NAMEPLATES_TAB;
+                    return l.A.COLLECTIBLES_SHOP_NAMEPLATES_TAB;
                 case d.G2.CATALOG:
                 case d.G2.COLLECTION_INDEX:
                 case d.G2.LAYOUT:
-                    return r.A.COLLECTIBLES_SHOP;
+                    return l.A.COLLECTIBLES_SHOP;
                 case d.G2.RIVALS:
                 case d.G2.GAME_SHOPS:
-                    return r.A.SLAYER_STOREFRONT_SHOP_TAB
+                    return l.A.SLAYER_STOREFRONT_SHOP_TAB
             }
         })(e), {
             analyticsLocations: i,
             newestAnalyticsLocation: o
-        } = (0, a.Ay)([...s, r.A.COLLECTIBLES_SHOP, n]);
+        } = (0, a.Ay)([...s, l.A.COLLECTIBLES_SHOP, n]);
         return {
             analyticsSource: t,
             analyticsLocations: i,
@@ -52,7 +52,7 @@ let g = e => {
             currentTabLocation: n
         }
     },
-    m = (e, t, s, l, r) => {
+    m = (e, t, s, r, l) => {
         let {
             analyticsLocations: a,
             analyticsSource: o,
@@ -60,8 +60,8 @@ let g = e => {
             newestAnalyticsLocation: _
         } = g(t);
         n.useEffect(() => {
-            if (l !== d.Pf.VISIBLE || _ !== c) return;
-            let n = t === d.G2.CATALOG ? r : o;
+            if (r !== d.Pf.VISIBLE || _ !== c) return;
+            let n = t === d.G2.CATALOG ? l : o;
             i.default.track(u.HAw.COLLECTIBLES_SHOP_VIEWED, {
                 location_stack: a,
                 source: n,
@@ -69,7 +69,7 @@ let g = e => {
                 page_type: t === d.G2.CATALOG ? "full" : t,
                 category: t === d.G2.HOME ? void 0 : s
             })
-        }, [a, e, t, s, c, l, r, o, _])
+        }, [a, e, t, s, c, r, l, o, _])
     },
     h = (e, t) => {
         let {

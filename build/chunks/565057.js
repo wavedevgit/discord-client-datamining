@@ -4,9 +4,9 @@ s.d(t, {
     A: () => N
 });
 var n = s(627968),
-    l = s(64700),
-    r = s(503698),
-    a = s.n(r),
+    r = s(64700),
+    l = s(503698),
+    a = s.n(l),
     i = s(311907),
     o = s(990078),
     c = s(397927),
@@ -36,7 +36,7 @@ let N = e => {
     let {
         isLoading: t,
         title: s,
-        sortedSkuIds: r,
+        sortedSkuIds: l,
         numVisibleItems: N,
         prioritizeUserDiscounts: R,
         tab: B,
@@ -50,7 +50,7 @@ let N = e => {
         shuffleProducts: z,
         showRecommendationOption: K
     } = (0, L.A)({
-        sortedSkuIds: r,
+        sortedSkuIds: l,
         isPremiumUser: D,
         prioritizeUserDiscounts: R,
         orbsSupportedOnly: M
@@ -59,7 +59,7 @@ let N = e => {
         startAnimation: X
     } = (0, I.s)(), J = (0, E.uM)(), Q = J?.sessionId ?? "", {
         analyticsLocations: ee
-    } = (0, g.Ay)(_.A.COLLECTIBLES_SHOP_POPULAR_PICKS), et = l.useRef(null), es = l.useCallback(e => {
+    } = (0, g.Ay)(_.A.COLLECTIBLES_SHOP_POPULAR_PICKS), et = r.useRef(null), es = r.useCallback(e => {
         X({
             isShuffling: !1,
             onOutroComplete: () => U(e)
@@ -144,8 +144,8 @@ let N = e => {
                 children: t ? (0, n.jsx)(n.Fragment, {
                     children: [...Array(12)].map((e, t) => (0, n.jsx)(v.A, {}, t + 1))
                 }) : V.slice(0, N).map((e, t) => {
-                    let s, l = b.A.getCategoryForProduct(e.skuId);
-                    if (null == e || null == l) return null;
+                    let s, r = b.A.getCategoryForProduct(e.skuId);
+                    if (null == e || null == r) return null;
                     if (Z)
                         if (q === I.J.SHUFFLE_OUT) return (0, n.jsx)("div", {
                             className: y.Z2,

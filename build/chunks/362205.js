@@ -1,7 +1,7 @@
 /** chunk id: 362205 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => N
 });
 var r = n(627968),
     i = n(64700),
@@ -25,7 +25,7 @@ var r = n(627968),
     x = n(890690),
     A = n(429566);
 
-function N(e) {
+function b(e) {
     let {
         category: t,
         onClick: n,
@@ -51,42 +51,43 @@ function N(e) {
     })
 }
 
-function b(e) {
+function N(e) {
     let {
         active: t,
-        visibleCategories: n,
-        visibleContent: a,
-        dismissibleBadges: s
-    } = e, l = f.A.useField("currentCategoryKey") ?? n[0]?.key, [o, u] = i.useState(t);
+        isTopLevelPanelVisible: n,
+        visibleCategories: a,
+        visibleContent: s,
+        dismissibleBadges: l
+    } = e, o = f.A.useField("currentCategoryKey"), [u, c] = i.useState(t);
     i.useLayoutEffect(() => {
-        t && u(!0)
+        t && c(!0)
     }, [t]);
-    let c = i.useMemo(() => Math.max(n.findIndex(e => e.key === l), 0), [n, l]);
+    let d = i.useMemo(() => a.findIndex(e => e.key === o), [a, o]);
     i.useEffect(() => {
         if (!t) {
-            let e = d.current;
+            let e = h.current;
             null != e && (e.style.height = `${e.scrollHeight}px`, window.getComputedStyle(e).height, e.style.height = "0", Promise.allSettled(e.getAnimations().map(e => e.finished)).then(() => {
-                u(!1)
+                c(!1)
             }))
         }
     }, [t]);
-    let d = i.useRef(null),
-        [h, p] = i.useState(t ? "auto" : "0");
-    return (0, x.u)(n, t), (0, r.jsx)("div", {
+    let h = i.useRef(null),
+        [p, _] = i.useState(t ? "auto" : "0");
+    return (0, x.u)(a, n), (0, r.jsx)("div", {
         className: A.lK,
         style: {
-            height: h,
+            height: p,
             opacity: +!!t
         },
-        ref: d,
-        children: o && (0, r.jsx)(C, {
-            index: c,
-            activeKey: l,
-            categories: n,
-            visibleContent: a,
-            dismissibleBadges: s,
+        ref: h,
+        children: u && (0, r.jsx)(C, {
+            index: d,
+            activeKey: o,
+            categories: a,
+            visibleContent: s,
+            dismissibleBadges: l,
             onMount: function() {
-                let e = d.current;
+                let e = h.current;
                 null != e && (e.style.height = `${e.scrollHeight}px`, Promise.all(e.getAnimations().map(e => e.finished)).then(() => {
                     e.style.height = "auto", y.A.scrollSidebarNodeIntoView(e, {
                         animate: !0,
@@ -103,14 +104,14 @@ function C(e) {
         index: t,
         activeKey: n,
         categories: a,
-        visibleContent: s,
-        dismissibleBadges: l,
-        onMount: o
+        visibleContent: l,
+        dismissibleBadges: o,
+        onMount: c
     } = e, {
-        thumbRef: c,
-        trackRef: f,
-        thumbAnchorRef: y,
-        springs: S
+        thumbRef: f,
+        trackRef: y,
+        thumbAnchorRef: S,
+        springs: x
     } = function(e) {
         let t = m.Xi.useSetting(),
             n = i.useRef(null),
@@ -118,7 +119,8 @@ function C(e) {
             a = i.useRef(null),
             s = i.useRef(!0),
             l = i.useRef(t),
-            [o, u] = (0, p.zhh)(() => ({
+            o = i.useRef(e),
+            [u, c] = (0, p.zhh)(() => ({
                 y: 0,
                 height: 0,
                 config: {
@@ -128,53 +130,55 @@ function C(e) {
                 }
             }));
         return i.useLayoutEffect(() => {
-            let e = l.current !== t,
-                i = () => {
+            let i = l.current !== t,
+                d = () => {
                     if (null == n.current || null == r.current || null == a.current) return;
-                    let [i, c] = [n.current.getBoundingClientRect(), a.current.getBoundingClientRect()], d = i.width / 2, h = (c.y - i.y) / d, p = c.height / d;
-                    s.current || e || _.A.useReducedMotion ? (o.y.set(h), o.height.set(p)) : u({
-                        y: h,
-                        height: p
-                    }), s.current = !1, l.current = t
+                    let [d, h] = [n.current.getBoundingClientRect(), a.current.getBoundingClientRect()], p = d.width / 2, m = (h.y - d.y) / p, f = h.height / p;
+                    s.current || i || _.A.useReducedMotion || -1 === o.current ? (u.y.set(m), u.height.set(f)) : c({
+                        y: m,
+                        height: f
+                    }), s.current = !1, l.current = t, o.current = e
                 },
-                c = null;
-            return e ? c = requestAnimationFrame(() => {
-                c = null, i()
-            }) : i(), () => {
-                null != c && cancelAnimationFrame(c)
+                h = null;
+            return i ? h = requestAnimationFrame(() => {
+                h = null, d()
+            }) : d(), () => {
+                null != h && cancelAnimationFrame(h)
             }
-        }, [e, u, o.y, o.height, t]), {
+        }, [e, c, u.y, u.height, t]), {
             thumbRef: r,
             trackRef: n,
             thumbAnchorRef: a,
-            springs: o
+            springs: u
         }
     }(t);
-    return (0, d.Ay)(o), (0, r.jsxs)("div", {
+    return (0, d.Ay)(c), (0, r.jsxs)("div", {
         className: A.o8,
         role: "list",
         style: {
             "--custom-nav-count": a.length,
-            "--custom-nav-index": t,
+            "--custom-nav-index": Math.max(t, 0),
             "--custom-nav-width": "2px",
             "--custom-icon-size": `${h.E[E.V]}px`
         },
         children: [(0, r.jsx)("div", {
             className: A.u4,
             "aria-hidden": "true",
-            ref: f,
+            ref: y,
             children: (0, r.jsx)(u.animated.div, {
-                className: A.FF,
-                style: S,
-                ref: c
+                className: s()(A.FF, {
+                    [A.R]: null == n
+                }),
+                style: x,
+                ref: f
             })
         }), (0, r.jsx)("div", {
             className: A.gu,
             "aria-hidden": "true",
-            ref: y
+            ref: S
         }), a.map(e => {
-            let t = (0, v.H)(e.key, s, l);
-            return (0, r.jsx)(N, {
+            let t = (0, v.H)(e.key, l, o);
+            return (0, r.jsx)(b, {
                 onClick: () => {
                     var t;
                     return t = e.key, void g.A.navigate(t, {
