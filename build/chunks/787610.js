@@ -14,8 +14,8 @@ var i = n(64700),
     u = n(323737),
     _ = n(442767),
     h = n(525711),
-    g = n(652215);
-let p = new o.A("useAuthWebsocket");
+    p = n(652215);
+let g = new o.A("useAuthWebsocket");
 
 function m(e, t) {
     let [n, o] = i.useState(0), [m, A] = i.useState(!1), [f, E] = i.useState({
@@ -23,45 +23,45 @@ function m(e, t) {
     }), x = i.useRef(null), I = i.useMemo(() => new s.A(1500, 3e4), []), N = (0, a.A)(() => {
         E({
             step: h.b.INITIALIZING
-        }), t ? o(e => e + 1) : (p.info("document is not visible, will defer reconnection when document becomes visible."), A(!0))
+        }), t ? o(e => e + 1) : (g.info("document is not visible, will defer reconnection when document becomes visible."), A(!0))
     }), v = i.useCallback(() => {
-        p.error("Could not complete Remote Auth login, trying to restart with a new Remote Auth session."), E({
+        g.error("Could not complete Remote Auth login, trying to restart with a new Remote Auth session."), E({
             step: h.b.INITIALIZING
         }), I.pending || I.fail(N)
     }, [N, I]);
     return i.useEffect(() => {
-        t && m && f.step === h.b.INITIALIZING && (p.info("reconnecting, now that document is visible"), A(!1), o(e => e + 1))
+        t && m && f.step === h.b.INITIALIZING && (g.info("reconnecting, now that document is visible"), A(!1), o(e => e + 1))
     }, [f, t, m, A]), i.useEffect(() => {
         let t = Date.now(),
             n = e => `[${Date.now()-t}ms] ${e}`,
-            i = e => p.info(n(e)),
+            i = e => g.info(n(e)),
             s = `${window.GLOBAL_ENV.REMOTE_AUTH_ENDPOINT}/?v=2`;
         s.startsWith("//") && (s = `wss:${s}`);
         let a = (0, c.A)(s);
-        p.info(`[0ms] connecting to ${s}`);
+        g.info(`[0ms] connecting to ${s}`);
         let o = null,
             m = null,
             A = null,
             f = null,
             T = !0;
 
-        function j() {
+        function C() {
             if (null != o) return o;
             throw Error("No key pair set")
         }
-        let C = () => {
+        let j = () => {
                 T ? (T = !1, a.send(JSON.stringify({
                     op: "heartbeat"
                 }))) : (i("heartbeat timeout, reconnecting."), a.close(), v())
             },
-            S = async t => {
+            y = async t => {
                 let {
                     data: s
                 } = t, o = JSON.parse(s);
                 switch (o.op) {
                     case "nonce_proof": {
                         let e = o.encrypted_nonce,
-                            t = await u.A.decryptNonce(j(), e);
+                            t = await u.A.decryptNonce(C(), e);
                         i("computed nonce proof"), a.send(JSON.stringify({
                             op: "nonce_proof",
                             nonce: t
@@ -69,8 +69,8 @@ function m(e, t) {
                         return
                     }
                     case "pending_remote_init": {
-                        I.succeed(), d._.dispatch(g.jej.WAVE_EMPHASIZE);
-                        let e = await u.A.publicKeyFingerprint(j());
+                        I.succeed(), d._.dispatch(p.jej.WAVE_EMPHASIZE);
+                        let e = await u.A.publicKeyFingerprint(C());
                         if (e !== o.fingerprint) throw Error(`bad fingerprint ${e} !== ${o.fingerprint}`);
                         i("handshake complete awaiting remote auth."), E({
                             step: h.b.PENDING_REMOTE_INIT,
@@ -85,7 +85,7 @@ function m(e, t) {
                             step: h.b.PENDING_LOGIN,
                             ticket: t
                         }), r.Bo.post({
-                            url: g.Rsh.REMOTE_AUTH_LOGIN,
+                            url: p.Rsh.REMOTE_AUTH_LOGIN,
                             body: {
                                 ticket: t
                             },
@@ -100,9 +100,9 @@ function m(e, t) {
                         return
                     }
                     case "pending_ticket": {
-                        d._.dispatch(g.jej.WAVE_EMPHASIZE), i("remote auth handshake started, awaiting ticket/cancel.");
+                        d._.dispatch(p.jej.WAVE_EMPHASIZE), i("remote auth handshake started, awaiting ticket/cancel.");
                         let e = o.encrypted_user_payload,
-                            t = await (0, _.n7)(j(), e);
+                            t = await (0, _.n7)(C(), e);
                         E({
                             step: h.b.PENDING_TICKET,
                             user: t
@@ -116,7 +116,7 @@ function m(e, t) {
                         i(`got hello, auth timeout=${o.timeout_ms}ms`);
                         let e = o.heartbeat_interval;
                         f = setTimeout(() => {
-                            f = null, C(), A = setInterval(C, e)
+                            f = null, j(), A = setInterval(j, e)
                         }, Math.floor(e * Math.random()));
                         return
                     }
@@ -124,9 +124,9 @@ function m(e, t) {
                         T = !0;
                         return;
                     default:
-                        p.warn(n("received unsupported message"))
+                        g.warn(n("received unsupported message"))
                 }
-            }, y = async () => {
+            }, S = async () => {
                 o = await u.A.generateRsaKeyPair(), m = await u.A.serializePublicKey(o);
                 let e = await u.A.publicKeyFingerprint(o);
                 i(`connected, handshaking with fingerprint: ${e}`), a.send(JSON.stringify({
@@ -138,8 +138,8 @@ function m(e, t) {
             }, R = e => {
                 i(`disconnected, error: ${JSON.stringify(e)}`), v()
             };
-        return a.addEventListener("open", y), a.addEventListener("message", S), a.addEventListener("close", b), a.addEventListener("error", R), () => {
-            i("cleaning up"), a.removeEventListener("open", y), a.removeEventListener("message", S), a.removeEventListener("close", b), a.removeEventListener("error", R), a.close(1e3), I.cancel(), u.A.release(), null != f && clearTimeout(f), null != A && clearInterval(A)
+        return a.addEventListener("open", S), a.addEventListener("message", y), a.addEventListener("close", b), a.addEventListener("error", R), () => {
+            i("cleaning up"), a.removeEventListener("open", S), a.removeEventListener("message", y), a.removeEventListener("close", b), a.removeEventListener("error", R), a.close(1e3), I.cancel(), u.A.release(), null != f && clearTimeout(f), null != A && clearInterval(A)
         }
     }, [N, e, n, I, v]), {
         state: f,

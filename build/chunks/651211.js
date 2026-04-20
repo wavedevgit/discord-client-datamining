@@ -9,12 +9,12 @@ e.exports = function(e, t, n, o) {
     t = s(t, e);
     for (var c = -1, d = t.length, u = d - 1, _ = e; null != _ && ++c < d;) {
         var h = a(t[c]),
-            g = n;
+            p = n;
         if (c != u) {
-            var p = _[h];
-            void 0 === (g = o ? o(p, h, _) : void 0) && (g = l(p) ? p : r(t[c + 1]) ? [] : {})
+            var g = _[h];
+            void 0 === (p = o ? o(g, h, _) : void 0) && (p = l(g) ? g : r(t[c + 1]) ? [] : {})
         }
-        i(_, h, g), _ = _[h]
+        i(_, h, p), _ = _[h]
     }
     return e
 }

@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(869038),
     _ = n(110782),
     h = n(803306),
-    g = n(854378),
-    p = n(10088),
+    p = n(854378),
+    g = n(10088),
     m = n(871123),
     A = n(210714),
     f = n(961350),
@@ -25,10 +25,10 @@ var i = n(627968),
     N = n(67480),
     v = n(45938),
     T = n(975571),
-    j = n(427262),
-    C = n(161928),
-    S = n(129851),
-    y = n(229),
+    C = n(427262),
+    j = n(161928),
+    y = n(129851),
+    S = n(229),
     b = n(652215),
     R = n(985018),
     O = n(818050);
@@ -139,10 +139,10 @@ class L extends s.PureComponent {
         })
     };
     renderSpinner(e) {
-        return (0, i.jsxs)(g.Ay, {
-            children: [(0, i.jsx)(g.hE, {
+        return (0, i.jsxs)(p.Ay, {
+            children: [(0, i.jsx)(p.hE, {
                 children: e
-            }), (0, i.jsx)(g.CK, {})]
+            }), (0, i.jsx)(p.CK, {})]
         })
     }
     renderExpiredInvite() {
@@ -150,11 +150,11 @@ class L extends s.PureComponent {
             defaultRoute: e,
             transitionTo: t
         } = this.props;
-        return (0, i.jsxs)(g.Ay, {
-            children: [(0, i.jsx)(g.hE, {
+        return (0, i.jsxs)(p.Ay, {
+            children: [(0, i.jsx)(p.hE, {
                 className: l()(O.Ot, O.QB),
                 children: R.intl.string(R.t.KPowgn)
-            }), (0, i.jsx)(g.tK, {
+            }), (0, i.jsx)(p.tK, {
                 children: R.intl.string(R.t.j8734b)
             }), (0, i.jsx)("div", {
                 className: l()(O.eT, O.QB),
@@ -171,11 +171,11 @@ class L extends s.PureComponent {
         })
     }
     renderAppOpened() {
-        return (0, i.jsxs)(g.Ay, {
-            children: [(0, i.jsx)(g.hE, {
+        return (0, i.jsxs)(p.Ay, {
+            children: [(0, i.jsx)(p.hE, {
                 className: O.QB,
                 children: R.intl.string(R.t.csrAMJ)
-            }), (0, i.jsx)(g.tK, {
+            }), (0, i.jsx)(p.tK, {
                 children: R.intl.string(R.t["m1+IBn"])
             }), (0, i.jsx)("div", {
                 className: O.eT,
@@ -193,15 +193,15 @@ class L extends s.PureComponent {
         let {
             sentVerification: t
         } = this.state;
-        return (0, i.jsxs)(g.Ay, {
-            children: [(0, i.jsx)(g._V, {
+        return (0, i.jsxs)(p.Ay, {
+            children: [(0, i.jsx)(p._V, {
                 src: n(792525),
                 className: O.QB
-            }), (0, i.jsx)(g.hE, {
+            }), (0, i.jsx)(p.hE, {
                 children: R.intl.format(R.t["ivLUf/"], {
                     username: e.username
                 })
-            }), (0, i.jsx)(g.tK, {
+            }), (0, i.jsx)(p.tK, {
                 className: O.QX,
                 children: R.intl.string(R.t["8Su18+"])
             }), (0, i.jsx)("div", {
@@ -230,8 +230,8 @@ class L extends s.PureComponent {
             sku: n,
             giftCodeCode: e.code,
             transitionTo: s,
-            children: (0, i.jsxs)(g.Ay, {
-                children: [(0, i.jsx)(C.A, {
+            children: (0, i.jsxs)(p.Ay, {
+                children: [(0, i.jsx)(j.A, {
                     giftCode: e
                 }), (0, i.jsx)("div", {
                     className: O.eT,
@@ -241,13 +241,13 @@ class L extends s.PureComponent {
                         disabled: null != r,
                         onClick: this.handleAccept
                     })
-                }), null != r ? (0, i.jsx)(g.tK, {
+                }), null != r ? (0, i.jsx)(p.tK, {
                     className: O.QX,
                     children: r
-                }) : (0, i.jsx)(g.ME, {
+                }) : (0, i.jsx)(p.ME, {
                     className: O.QX,
                     children: R.intl.format(R.t.NYM08s, {
-                        userTag: j.Ay.getUserTag(t),
+                        userTag: C.Ay.getUserTag(t),
                         onLogoutClick: this.handleLogout
                     })
                 })]
@@ -277,12 +277,12 @@ class L extends s.PureComponent {
                 let e = this.state.currentUser;
                 return c || null == e ? this.renderSpinner(R.intl.string(R.t.bYb2nS)) : this.requiresVerification && null != e ? this.renderVerification(e) : this.renderAuthenticated(s, e, t)
             }
-            return "login" === this.getMode() ? (0, i.jsx)(S.A, {
+            return "login" === this.getMode() ? (0, i.jsx)(y.A, {
                 giftCodeSKU: t,
                 giftCode: s,
                 transitionTo: a,
                 location: o
-            }) : (0, i.jsx)(y.A, {
+            }) : (0, i.jsx)(S.A, {
                 giftCodeSKU: t,
                 giftCode: s,
                 transitionTo: a,
@@ -292,7 +292,7 @@ class L extends s.PureComponent {
         return null
     }
 }
-let w = a.Ay.connectStores([x.A, I.A, f.default, N.A, E.A, p.A], e => {
+let w = a.Ay.connectStores([x.A, I.A, f.default, N.A, E.A, g.A], e => {
         let t = e.match.params.giftCode,
             n = x.A.get(t),
             i = null != n ? N.A.get(n.skuId) : null;
@@ -305,7 +305,7 @@ let w = a.Ay.connectStores([x.A, I.A, f.default, N.A, E.A, p.A], e => {
             isResolved: x.A.getIsResolved(t),
             isAccepting: x.A.getIsAccepting(t),
             libraryApplicationsFetched: I.A.fetched,
-            nativeAppState: p.A.getState(t)
+            nativeAppState: g.A.getState(t)
         }
     })(L),
     k = e => {
@@ -317,9 +317,9 @@ let w = a.Ay.connectStores([x.A, I.A, f.default, N.A, E.A, p.A], e => {
         } = e, a = (0, m.bF)(t);
         return (s.useEffect(() => {
             null != r && a && l(b.BVt.APP_WITH_GIFT_CODE(r))
-        }, [a, r, l]), a) ? (0, i.jsxs)(g.Ay, {
-            children: [(0, i.jsx)(g.hE, {
+        }, [a, r, l]), a) ? (0, i.jsxs)(p.Ay, {
+            children: [(0, i.jsx)(p.hE, {
                 children: R.intl.string(R.t.b3lf1c)
-            }), (0, i.jsx)(g.CK, {})]
+            }), (0, i.jsx)(p.CK, {})]
         }) : n
     }

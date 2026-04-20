@@ -1,8 +1,8 @@
 /** chunk id: 131929 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p,
-    s: () => g
+    A: () => g,
+    s: () => p
 });
 var i = n(627968);
 n(64700);
@@ -53,7 +53,7 @@ function h(e) {
     })
 }
 
-function g(e) {
+function p(e) {
     let {
         invite: t
     } = e, n = null != t.guild ? (0, c.DY)(t.guild) : null;
@@ -100,7 +100,7 @@ function g(e) {
     })
 }
 
-function p(e) {
+function g(e) {
     let {
         invite: t,
         channel: n,

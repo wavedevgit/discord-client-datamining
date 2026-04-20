@@ -17,13 +17,13 @@ function u(e) {
         guildScheduledEvent: t,
         channel: n,
         onClose: u
-    } = e, _ = t.entity_type === c.Ps.EXTERNAL, h = s.useCallback(e => (0, a.GI)(t, u)(e), [t, u]), g = (0, o.L)(t, n);
-    if (null == g) return null;
+    } = e, _ = t.entity_type === c.Ps.EXTERNAL, h = s.useCallback(e => (0, a.GI)(t, u)(e), [t, u]), p = (0, o.L)(t, n);
+    if (null == p) return null;
     let {
-        IconComponent: p,
+        IconComponent: g,
         locationName: m
-    } = g, A = (0, i.jsxs)(i.Fragment, {
-        children: [null != p && (0, i.jsx)(p, {
+    } = p, A = (0, i.jsxs)(i.Fragment, {
+        children: [null != g && (0, i.jsx)(g, {
             size: "custom",
             color: "currentColor",
             width: 20,

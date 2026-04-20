@@ -15,8 +15,8 @@ var s = n(607399),
     u = n(954571),
     _ = n(877062),
     h = n(652215),
-    g = n(985018),
-    p = n(611346),
+    p = n(985018),
+    g = n(611346),
     m = n(604880);
 
 function A(e) {
@@ -26,28 +26,28 @@ function A(e) {
         errorReason: A
     } = e;
     return n ? (0, i.jsxs)("div", {
-        className: p.MY,
+        className: g.MY,
         children: [(0, i.jsx)("div", {
-            className: p.r$,
+            className: g.r$,
             children: (0, i.jsx)("img", {
                 src: m,
                 alt: ""
             })
         }), (0, i.jsxs)("div", {
-            className: p.Qs,
+            className: g.Qs,
             children: [(0, i.jsx)(a.DeQ, {
                 alt: ""
             }), (0, i.jsx)(o.Heading, {
                 variant: "heading-lg/semibold",
-                className: p.ky,
-                children: g.intl.string(g.t.RtCSr1)
+                className: g.ky,
+                children: p.intl.string(p.t.RtCSr1)
             }), (0, i.jsx)(o.Text, {
                 variant: "text-md/normal",
-                className: p.G3,
-                children: g.intl.string(g.t["S+YjYJ"])
+                className: g.G3,
+                children: p.intl.string(p.t["S+YjYJ"])
             }), (0, i.jsx)(o.Button, {
                 variant: "primary",
-                text: g.intl.string(g.t.j3cG2p),
+                text: p.intl.string(p.t.j3cG2p),
                 fullWidth: !0,
                 onClick: () => {
                     u.default.track(h.HAw.ONE_TIME_LOGIN_BACK_TO_LOGIN_CLICKED, {
@@ -57,28 +57,28 @@ function A(e) {
             })]
         })]
     }) : (0, i.jsxs)("div", {
-        className: p.MY,
+        className: g.MY,
         children: [(0, i.jsx)("div", {
-            className: p.r$,
+            className: g.r$,
             children: (0, i.jsx)("img", {
                 src: m,
                 alt: ""
             })
         }), (0, i.jsxs)("div", {
-            className: p.Qs,
+            className: g.Qs,
             children: [(0, i.jsx)(a.DeQ, {
                 alt: ""
             }), (0, i.jsx)(o.Heading, {
                 variant: "heading-lg/semibold",
-                className: p.ky,
-                children: g.intl.string(g.t["9h/0Rl"])
+                className: g.ky,
+                children: p.intl.string(p.t["9h/0Rl"])
             }), (0, i.jsx)(o.Text, {
                 variant: "text-md/normal",
-                className: p.G3,
-                children: g.intl.string(g.t.Wgm7Om)
+                className: g.G3,
+                children: p.intl.string(p.t.Wgm7Om)
             }), (0, i.jsx)(o.Button, {
                 variant: "primary",
-                text: g.intl.string(g.t.NydsTd),
+                text: p.intl.string(p.t.NydsTd),
                 fullWidth: !0,
                 onClick: () => {
                     let e, n;

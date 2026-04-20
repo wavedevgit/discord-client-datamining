@@ -1,7 +1,7 @@
 /** chunk id: 998643 params = (module,exports,require) **/
 "use strict";
 n.r(t), n.d(t, {
-    default: () => eS
+    default: () => ey
 });
 var i = n(627968),
     s = n(64700),
@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(830215),
     _ = n(869038),
     h = n(846293),
-    g = n(526423),
-    p = n(745399),
+    p = n(526423),
+    g = n(745399),
     m = n(549711),
     A = n(829691),
     f = n(212640),
@@ -25,10 +25,10 @@ var i = n(627968),
     N = n(122906),
     v = n(121623),
     T = n(850381),
-    j = n(21599),
-    C = n(614986),
-    S = n(957622),
-    y = n(463347),
+    C = n(21599),
+    j = n(614986),
+    y = n(957622),
+    S = n(463347),
     b = n(210714),
     R = n(887324),
     O = n(961350),
@@ -66,12 +66,12 @@ let er = (0, G.A)(Y.A),
     ea = (0, G.A)(q.A),
     eo = (0, G.A)(z.A),
     ec = (0, G.A)(K.A),
-    ed = (0, G.A)(C.A),
+    ed = (0, G.A)(j.A),
     eu = (0, G.A)($.A),
     e_ = (0, G.A)(et.A),
     eh = (0, G.A)(F.A),
-    eg = (0, G.A)(en.A),
-    ep = (0, G.A)(x.A),
+    ep = (0, G.A)(en.A),
+    eg = (0, G.A)(x.A),
     em = (0, G.A)(ee.A),
     eA = (0, G.A)(W.A),
     ef = (0, G.A)(E.A),
@@ -80,9 +80,9 @@ let er = (0, G.A)(Y.A),
     eI = (0, G.A)(H.A),
     eN = (0, G.A)(J.A),
     ev = (0, G.A)(Z.A),
-    eT = (0, G.A)(p.A),
-    ej = (0, G.A)(S.A);
-class eC extends s.PureComponent {
+    eT = (0, G.A)(g.A),
+    eC = (0, G.A)(y.A);
+class ej extends s.PureComponent {
     state = {
         splash: null,
         redirectTo: null,
@@ -120,17 +120,17 @@ class eC extends s.PureComponent {
             isAuthenticated: n
         } = this.props;
         null != e && (!t && n && u.A.getExperiments(!0), k.default.track(ei.HAw.INVITE_OPENED, {
-            invite_code: (0, j.m0)(e),
+            invite_code: (0, C.m0)(e),
             load_time: B.A.getTimeSinceNavigationStart()
         }, {
             flush: !0
-        })), t && this.resolveInvite(), this.resolveGiftCode(), this.resolveGuildTemplate(), g.A.initialize(), (0, b.D)()
+        })), t && this.resolveInvite(), this.resolveGiftCode(), this.resolveGuildTemplate(), p.A.initialize(), (0, b.D)()
     }
     componentDidUpdate(e) {
         !e.hasLoadedExperiments && this.props.hasLoadedExperiments && this.resolveInvite(), e.invite?.state !== this.props.invite?.state && this.maybeFetchApplicationSplash()
     }
     componentWillUnmount() {
-        g.A.terminate()
+        p.A.terminate()
     }
     maybeFetchApplicationSplash() {
         let {
@@ -194,7 +194,7 @@ class eC extends s.PureComponent {
                 })
             }), (0, i.jsx)(m.A, {
                 path: ei.BVt.LOGIN_ONE_TIME,
-                render: e => (0, i.jsx)(ej, {
+                render: e => (0, i.jsx)(eC, {
                     ...e
                 })
             }), (0, i.jsx)(m.A, {
@@ -234,7 +234,7 @@ class eC extends s.PureComponent {
                         },
                         location: s,
                         transitionTo: r
-                    } = e, l = (0, j.fB)(t, s.search);
+                    } = e, l = (0, C.fB)(t, s.search);
                     return a.Fr || a.v1 ? (0, i.jsx)(ed, {
                         inviteKey: l,
                         transitionTo: r
@@ -269,7 +269,7 @@ class eC extends s.PureComponent {
                 }
             }), (0, i.jsx)(m.A, {
                 path: ei.BVt.VERIFY,
-                render: e => (0, i.jsx)(eg, {
+                render: e => (0, i.jsx)(ep, {
                     ...e
                 })
             }), (0, i.jsx)(m.A, {
@@ -279,7 +279,7 @@ class eC extends s.PureComponent {
                 })
             }), (0, i.jsx)(m.A, {
                 path: ei.BVt.VERIFY_REQUEST,
-                render: e => (0, i.jsx)(ep, {
+                render: e => (0, i.jsx)(eg, {
                     ...e
                 })
             }), (0, i.jsx)(m.A, {
@@ -326,12 +326,12 @@ class eC extends s.PureComponent {
                     ...e
                 })
             }), (0, i.jsx)(m.A, {
-                path: ei.BVt.CHANNELS_GAME_SHOP(y.pv.guildId(), ":pageIndex", ":skuId", ":slug?"),
+                path: ei.BVt.CHANNELS_GAME_SHOP(S.pv.guildId(), ":pageIndex", ":skuId", ":slug?"),
                 render: e => (0, i.jsx)(eI, {
                     ...e
                 })
             }), (0, i.jsx)(m.A, {
-                path: ei.BVt.CHANNEL(y.pv.guildId(), y.pv.channelId({
+                path: ei.BVt.CHANNEL(S.pv.guildId(), S.pv.channelId({
                     optional: !0
                 }), ":messageId?"),
                 render: e => (0, i.jsx)(ex, {
@@ -354,11 +354,11 @@ class eC extends s.PureComponent {
         })
     }
 }
-let eS = c.Ay.connectStores([O.default, w.A, L.A, I.A, N.A], e => {
+let ey = c.Ay.connectStores([O.default, w.A, L.A, I.A, N.A], e => {
     let {
         match: t,
         location: n
-    } = e, i = t?.params?.inviteCode, s = null != i ? (0, j.fB)(i, n.search) : void 0, r = t?.params?.giftCode, l = t?.params?.guildTemplateCode;
+    } = e, i = t?.params?.inviteCode, s = null != i ? (0, C.fB)(i, n.search) : void 0, r = t?.params?.giftCode, l = t?.params?.guildTemplateCode;
     return {
         inviteKey: s,
         isAuthenticated: O.default.isAuthenticated(),
@@ -369,4 +369,4 @@ let eS = c.Ay.connectStores([O.default, w.A, L.A, I.A, N.A], e => {
         guildTemplate: null != l ? N.A.getGuildTemplate(l) : null,
         hasLoadedExperiments: I.A.hasLoadedExperiments
     }
-})(eC)
+})(ej)

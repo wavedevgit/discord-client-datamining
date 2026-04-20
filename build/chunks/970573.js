@@ -1,7 +1,7 @@
 /** chunk id: 970573 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C,
+    A: () => j,
     X: () => T
 });
 var i, s = n(627968),
@@ -14,8 +14,8 @@ var i, s = n(627968),
     u = n(442433),
     _ = n(427157),
     h = n(961350),
-    g = n(351906),
-    p = n(287809),
+    p = n(351906),
+    g = n(287809),
     m = n(954571),
     A = n(427262),
     f = n(429707),
@@ -26,7 +26,7 @@ var i, s = n(627968),
     v = n(461402),
     T = ((i = {})[i.LOGIN_REQUIRED = 0] = "LOGIN_REQUIRED", i[i.SWITCHED = 1] = "SWITCHED", i[i.REMOVED = 2] = "REMOVED", i);
 
-function j(e) {
+function C(e) {
     let {
         actionText: t,
         user: n,
@@ -35,17 +35,17 @@ function j(e) {
         currentUser: r,
         hidePrivateData: l,
         isAuthenticated: x
-    } = (0, o.cf)([p.default, g.A, h.default], () => ({
-        currentUser: p.default.getCurrentUser(),
-        hidePrivateData: g.A.hidePersonalInformation,
+    } = (0, o.cf)([g.default, p.A, h.default], () => ({
+        currentUser: g.default.getCurrentUser(),
+        hidePrivateData: p.A.hidePersonalInformation,
         isAuthenticated: h.default.isAuthenticated()
-    })), T = new _.A(n), j = x && r?.id === T.id, C = n.tokenStatus === E.U.INVALID, S = l || T.hasUniqueUsername() ? null : `#${T.discriminator}`, y = null;
-    return j ? y = (0, s.jsx)(c.Text, {
+    })), T = new _.A(n), C = x && r?.id === T.id, j = n.tokenStatus === E.U.INVALID, y = l || T.hasUniqueUsername() ? null : `#${T.discriminator}`, S = null;
+    return C ? S = (0, s.jsx)(c.Text, {
         variant: "text-sm/semibold",
         className: v.dx,
         color: "text-feedback-positive",
         children: N.intl.string(N.t.seV8yt)
-    }) : C && (y = (0, s.jsx)(c.Text, {
+    }) : j && (S = (0, s.jsx)(c.Text, {
         variant: "text-sm/semibold",
         className: v.dx,
         color: "text-feedback-critical",
@@ -60,7 +60,7 @@ function j(e) {
                 "aria-label": n.username
             }), (0, s.jsxs)("div", {
                 className: a()(v.K_, {
-                    [v.zU]: !j
+                    [v.zU]: !C
                 }),
                 children: [(0, s.jsxs)("div", {
                     className: v.Xh,
@@ -75,16 +75,16 @@ function j(e) {
                     }), (0, s.jsx)(c.Text, {
                         color: "text-default",
                         variant: "text-sm/normal",
-                        children: S
+                        children: y
                     })]
-                }), y]
+                }), S]
             }), (0, s.jsxs)("div", {
                 className: v.Xp,
-                children: [!j && (0, s.jsx)(c.Button, {
+                children: [!C && (0, s.jsx)(c.Button, {
                     variant: "secondary",
-                    text: C ? N.intl.string(N.t["DSN+hw"]) : t,
+                    text: j ? N.intl.string(N.t["DSN+hw"]) : t,
                     onClick: function() {
-                        C ? i(0, n.id) : (m.default.track(I.HAw.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
+                        j ? i(0, n.id) : (m.default.track(I.HAw.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
                             location: {
                                 section: I.JJy.MANAGE_ACCOUNTS_MODAL
                             }
@@ -127,7 +127,7 @@ function j(e) {
     })
 }
 
-function C(e) {
+function j(e) {
     let {
         actionText: t,
         onAction: n
@@ -140,7 +140,7 @@ function C(e) {
         children: i ? (0, s.jsx)(c.y$y, {
             className: v.u1
         }) : l.map((e, i) => (0, s.jsxs)(r.Fragment, {
-            children: [(0, s.jsx)(j, {
+            children: [(0, s.jsx)(C, {
                 user: e,
                 actionText: t,
                 onAction: n

@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(49463),
     _ = n(369053),
     h = n(158237),
-    g = n(210714),
-    p = n(961350),
+    p = n(210714),
+    g = n(961350),
     m = n(652215),
     A = n(985018),
     f = n(818050);
@@ -23,7 +23,7 @@ r.Ay.initialize();
 let E = e => {
     let {
         location: t
-    } = e, n = (0, r.bG)([p.default], () => p.default.isAuthenticated()), E = (0, r.bG)([u.A], () => u.A.hasLoadedExperiments), x = (0, h.Jp)("RSL - Landing Page"), [I, N] = s.useState(!1), [v, T] = s.useState(A.intl.string(A.t["9exy+V"])), [j, C] = s.useState(!0), S = e => {
+    } = e, n = (0, r.bG)([g.default], () => g.default.isAuthenticated()), E = (0, r.bG)([u.A], () => u.A.hasLoadedExperiments), x = (0, h.Jp)("RSL - Landing Page"), [I, N] = s.useState(!1), [v, T] = s.useState(A.intl.string(A.t["9exy+V"])), [C, j] = s.useState(!0), y = e => {
         switch (e) {
             case m.t02.INVALID_FORM_BODY:
             case m.t02.DSA_RSL_REPORT_NOT_FOUND:
@@ -43,24 +43,24 @@ let E = e => {
         }
     };
     return s.useEffect(() => {
-        n ? (C(!0), o.rQ({
+        n ? (j(!0), o.rQ({
             withAnalyticsToken: !0
-        }).then(() => C(!1)).catch(() => C(!1))) : C(!1)
+        }).then(() => j(!1)).catch(() => j(!1))) : j(!1)
     }, [n]), s.useEffect(() => {
         E || x || a.A.getExperiments()
     }, [E, x]), s.useEffect(() => {
         let e = async e => {
             try {
                 let t = null != e ? await (0, _.q)(e) : void 0;
-                null != t ? T(A.intl.string(A.t.e6mZMt)) : S(t.body?.code)
+                null != t ? T(A.intl.string(A.t.e6mZMt)) : y(t.body?.code)
             } catch (e) {
-                S(e.body?.code)
+                y(e.body?.code)
             } finally {
                 N(!1)
             }
         };
-        N(!0), e((0, c.A)(t)), (0, g.d)("report_second_look")
-    }, [t]), x && !j && (0, i.jsxs)(d.Ay, {
+        N(!0), e((0, c.A)(t)), (0, p.d)("report_second_look")
+    }, [t]), x && !C && (0, i.jsxs)(d.Ay, {
         children: [(0, i.jsx)(d.hE, {
             className: f.QB,
             children: v

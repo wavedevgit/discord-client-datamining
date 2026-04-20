@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(900662),
     _ = n(765671),
     h = n(854378),
-    g = n(9994),
-    p = n(210714),
+    p = n(9994),
+    g = n(210714),
     m = n(961350),
     A = n(71393),
     f = n(299091),
@@ -25,10 +25,10 @@ var i = n(627968),
     N = n(860689),
     v = n(21599),
     T = n(949155),
-    j = n(663572),
-    C = n(439680),
-    S = n(131929),
-    y = n(66027),
+    C = n(663572),
+    j = n(439680),
+    y = n(131929),
+    S = n(66027),
     b = n(172799),
     R = n(652215),
     O = n(985018),
@@ -118,7 +118,7 @@ function P(e) {
     return (0, i.jsx)(U, {
         startAnimHeightPx: 0,
         sectionClassName: L.ui,
-        children: 1 === n ? (0, i.jsx)(S.s, {
+        children: 1 === n ? (0, i.jsx)(y.s, {
             invite: t
         }) : null
     })
@@ -136,10 +136,10 @@ function G(e) {
         r = k(n),
         {
             enabled: a
-        } = y.n.useConfig({
+        } = S.n.useConfig({
             location: "AcceptInviteMobile"
         }),
-        o = null != n ? (0, g.oO)(n) : null,
+        o = null != n ? (0, p.oO)(n) : null,
         c = n?.guild != null ? (0, N.DY)(n.guild) : null,
         d = a && null != o && function(e) {
             if (null == e || !l.i.VISIBLE.has(e.visibility)) return !1;
@@ -149,18 +149,18 @@ function G(e) {
             return t && (n || i)
         }(o) && null != c && null != n && !(0, T.Fk)(n);
     if (s.useEffect(() => {
-            d && y.n.getConfig({
+            d && S.n.getConfig({
                 location: "AcceptInviteMobile.hasProfile"
             })
         }, [d]), null == n) t = (0, i.jsx)(w, {});
     else switch (r) {
         case 1:
-            t = d ? (0, i.jsx)(C.A, {
+            t = d ? (0, i.jsx)(j.A, {
                 invite: n,
                 guild: c,
                 profile: o,
                 onAcceptInvite: e.onAcceptInvite
-            }) : (0, i.jsx)(j.A, {
+            }) : (0, i.jsx)(C.A, {
                 ...e,
                 invite: n
             });
@@ -222,7 +222,7 @@ function F(e) {
             type: "SET_ANALYTICS_TOKEN",
             analyticsToken: e,
             userId: m.default.getId()
-        }), (0, p.d)("invite_mobile"), E.default.track(R.HAw.INVITE_VIEWED, {
+        }), (0, g.d)("invite_mobile"), E.default.track(R.HAw.INVITE_VIEWED, {
             invite_code: t
         }, {
             flush: !0

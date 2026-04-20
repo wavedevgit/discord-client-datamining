@@ -21,7 +21,7 @@ function h(e) {
     } = e, h = (0, r.cf)([c.default], () => ({
         ticket: c.default.getMFATicket(),
         methods: c.default.getMFAMethods()
-    }), []), g = s.useCallback(e => {
+    }), []), p = s.useCallback(e => {
         let {
             mfaType: i,
             data: s,
@@ -40,7 +40,7 @@ function h(e) {
             padding: 0
         },
         children: (0, i.jsx)(o.t, {
-            mfaFinish: g,
+            mfaFinish: p,
             mfaChallenge: h,
             onEarlyClose: () => {
                 l.h.dispatch({

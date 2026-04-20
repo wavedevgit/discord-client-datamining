@@ -1,7 +1,7 @@
 /** chunk id: 765624 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -14,11 +14,11 @@ var i = n(627968),
     u = n(240248),
     _ = n(115617);
 let h = (0, u.xI)(c.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
-    g = {
+    p = {
         friction: 10,
         tension: 130
     },
-    p = function(e) {
+    g = function(e) {
         return class extends s.Component {
             timeout;
             anim = new a.A.Value(0);
@@ -50,7 +50,7 @@ let h = (0, u.xI)(c.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
             animateTo(e, t) {
                 a.A.spring(this.anim, {
                     toValue: e,
-                    ...g
+                    ...p
                 }).start(t)
             }
             getAnimatedStyle(e) {

@@ -1,7 +1,7 @@
 /** chunk id: 526423 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(562465),
     s = n(73153),
@@ -65,4 +65,4 @@ class h extends d.A {
         }) : (r.A.setFingerprint(null), (0, l.J0)())
     }
 }
-let g = new h
+let p = new h

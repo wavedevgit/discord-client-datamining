@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(351671),
     _ = n(854378),
     h = n(463347),
-    g = n(334465),
-    p = n(976860),
+    p = n(334465),
+    g = n(976860),
     m = n(961350),
     A = n(129851),
     f = n(652215),
@@ -24,9 +24,9 @@ var i = n(627968),
 function x(e) {
     let t = s.useCallback(t => {
             let n;
-            (n = (0, g.B)(t, {
+            (n = (0, p.B)(t, {
                 path: f.BVt.CHANNEL(h.pv.guildId(), h.pv.channelId())
-            }), +(n?.params?.channelId !== E.VV.ROLE_SUBSCRIPTIONS)) ? (e.transitionTo ?? p.pX)(t) : p.bG(t)
+            }), +(n?.params?.channelId !== E.VV.ROLE_SUBSCRIPTIONS)) ? (e.transitionTo ?? g.pX)(t) : g.bG(t)
         }, [e.transitionTo]),
         {
             isAuthenticated: n,
@@ -41,7 +41,7 @@ function x(e) {
         } = e,
         [v, T] = s.useState(n);
 
-    function j(e) {
+    function C(e) {
         let {
             handoffKey: t,
             handoffToken: n,
@@ -62,12 +62,12 @@ function x(e) {
             if (null != e && null != t) {
                 let n = null != N ? (0, u.Q)(N) : void 0;
                 v ? o.A.logout("handoff", null).finally(() => {
-                    j({
+                    C({
                         handoffKey: e,
                         handoffToken: t,
                         handoffSource: n
                     })
-                }) : j({
+                }) : C({
                     handoffKey: e,
                     handoffToken: t,
                     handoffSource: n

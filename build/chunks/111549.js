@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(362474),
     _ = n(397927),
     h = n(73153),
-    g = n(846293),
-    p = n(198982),
+    p = n(846293),
+    g = n(198982),
     m = n(964486),
     A = n(475743),
     f = n(17841),
@@ -25,10 +25,10 @@ var i = n(627968),
     N = n(383302),
     v = n(10088),
     T = n(921037),
-    j = n(21599),
-    C = n(942614),
-    S = n(976860),
-    y = n(210714),
+    C = n(21599),
+    j = n(942614),
+    y = n(976860),
+    S = n(210714),
     b = n(961350),
     R = n(650048),
     O = n(71393),
@@ -118,7 +118,7 @@ function X(e) {
                             action: "open_app",
                             invite_code: t.code,
                             guild_id: t.guild?.id
-                        }), g.Ay.openNativeAppModal(t.code)
+                        }), p.Ay.openNativeAppModal(t.code)
                     },
                     variant: "primary",
                     fullWidth: !0
@@ -236,20 +236,20 @@ function et(e) {
         (x === M.fAW.OPEN || _?.state === M.elq.APP_OPENED) && et(!0)
     }, [_?.state, x]);
     let en = l ? Q : z,
-        ei = s.useCallback(e => g.Ay.getInviteContext(e, _), [_]),
+        ei = s.useCallback(e => p.Ay.getInviteContext(e, _), [_]),
         es = s.useCallback(e => {
-            null != _ && (null != _.channel || e?.channel != null) && (_.guild?.id != null ? r(M.BVt.APP_WITH_INVITE_AND_GUILD_ONBOARDING(_.code)) : g.Ay.transitionToInvite(e ?? _, r))
+            null != _ && (null != _.channel || e?.channel != null) && (_.guild?.id != null ? r(M.BVt.APP_WITH_INVITE_AND_GUILD_ONBOARDING(_.code)) : p.Ay.transitionToInvite(e ?? _, r))
         }, [_, r]),
         er = s.useCallback(() => {
-            K(null), g.Ay.acceptInvite({
+            K(null), p.Ay.acceptInvite({
                 inviteKey: t,
                 context: ei(M.S3d.INVITE),
                 skipOnboarding: !0,
                 callback: e => {
-                    (0, E.v)(e), null != e.channel && g.Ay.openApp(t, e.channel.id)
+                    (0, E.v)(e), null != e.channel && p.Ay.openApp(t, e.channel.id)
                 }
             }).catch(e => {
-                if (e instanceof p.Wl || e instanceof p.LG) {
+                if (e instanceof g.Wl || e instanceof g.LG) {
                     let t = (0, D.s)(e.code);
                     K({
                         code: e.code,
@@ -274,11 +274,11 @@ function et(e) {
                     invite_code: t
                 }, {
                     flush: !0
-                }), (0, y.d)("invite"), W.VP || U.A.launch("discord://" + M.BVt.INVITE(t), () => void 0), !l && k) {
+                }), (0, S.d)("invite"), W.VP || U.A.launch("discord://" + M.BVt.INVITE(t), () => void 0), !l && k) {
                 let {
                     baseCode: e
-                } = (0, j.y$)(t);
-                (0, S.bG)(M.BVt.INVITE_LOGIN(e))
+                } = (0, C.y$)(t);
+                (0, y.bG)(M.BVt.INVITE_LOGIN(e))
             }
         }), s.useEffect(() => {
             _?.state === M.elq.APP_NOT_OPENED && es()
@@ -292,21 +292,21 @@ function et(e) {
                 getAcceptInviteContext: d,
                 handleContinue: u,
                 transitionTo: _
-            } = e, h = (0, A.A)(i), p = (0, A.A)(r);
+            } = e, h = (0, A.A)(i), g = (0, A.A)(r);
             s.useEffect(() => {
                 if (l === Q && i && !1 === h) {
                     let e = b.default.getFingerprint();
                     if (null != e) {
                         let i = (0, c.d)(e);
                         w.default.track(M.HAw.INVITE_LOGIN_SUCCESSFUL, {
-                            invite_code: (0, j.m0)(n),
+                            invite_code: (0, C.m0)(n),
                             guild_id: t?.guild?.id,
                             channel_id: t?.channel?.id,
                             inviter_id: t?.inviter?.id,
                             prev_user_id: i
                         })
                     }
-                    g.Ay.acceptInvite({
+                    p.Ay.acceptInvite({
                         inviteKey: n,
                         context: d(M.S3d.INVITE),
                         skipOnboarding: !0,
@@ -319,15 +319,15 @@ function et(e) {
                         channel: e
                     } = t;
                     if (null != e)
-                        if ((0, C.C)(V.zY.INVITE_UNCLAIMED), null != t.guild) {
+                        if ((0, j.C)(V.zY.INVITE_UNCLAIMED), null != t.guild) {
                             let e = (0, o.Lt)(t.flags ?? 0, a.Q.IS_APPLICATION_BYPASS),
                                 n = t.guild.features?.includes(M.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.guild.features?.includes(M.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
                             !e && n ? _(M.BVt.GUILD_MEMBER_VERIFICATION(t.guild.id)) : _(M.BVt.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code))
-                        } else g.Ay.transitionToInvite(t, _)
+                        } else p.Ay.transitionToInvite(t, _)
                 }
             }, [t, i, h, _, l]), s.useEffect(() => {
-                null != t && r !== p && r === M.fAW.OPEN && w.default.track(M.HAw.INVITE_APP_INVOKED, {
-                    invite_code: (0, j.m0)(n),
+                null != t && r !== g && r === M.fAW.OPEN && w.default.track(M.HAw.INVITE_APP_INVOKED, {
+                    invite_code: (0, C.m0)(n),
                     guild_id: t.guild?.id,
                     channel_id: t.channel?.id,
                     inviter_id: t.inviter?.id,
@@ -335,7 +335,7 @@ function et(e) {
                     size_total: t.approximate_member_count,
                     invite_type: null != t.type ? F.Xd[t.type] : void 0
                 })
-            }, [t, r, p, n])
+            }, [t, r, g, n])
         }({
             invite: _,
             inviteKey: t,
@@ -373,7 +373,7 @@ function et(e) {
         error: P,
         handleAccept: er,
         handleDefaultTransition: el
-    }) : ea === M.elq.RESOLVED ? I && (0, o.Lt)(_.flags ?? 0, a.Q.IS_GUEST_INVITE) ? (g.Ay.openApp(_.code), u.u.set(T.B, _.code), (0, i.jsx)(X, {
+    }) : ea === M.elq.RESOLVED ? I && (0, o.Lt)(_.flags ?? 0, a.Q.IS_GUEST_INVITE) ? (p.Ay.openApp(_.code), u.u.set(T.B, _.code), (0, i.jsx)(X, {
         invite: _,
         onContinue: () => r(M.BVt.APP)
     })) : I || !W.VP ? (0, i.jsx)(Y, {

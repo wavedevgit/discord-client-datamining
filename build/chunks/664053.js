@@ -20,8 +20,8 @@ function d(e) {
         password: u,
         onLoginChange: _,
         onPasswordChange: h,
-        setLoginRef: g,
-        setPasswordRef: p
+        setLoginRef: p,
+        setPasswordRef: g
     } = e;
     return (0, i.jsxs)(a.Ay, {
         className: t,
@@ -33,7 +33,7 @@ function d(e) {
                 countryCode: n.code.split(" ")[0],
                 label: o.intl.string(o.t.tUjnxr),
                 onChange: _,
-                setRef: g,
+                setRef: p,
                 autoCapitalize: "none",
                 autoComplete: "username webauthn",
                 autoCorrect: "off",
@@ -46,7 +46,7 @@ function d(e) {
                 label: o.intl.string(o.t["CIGa+7"]),
                 onChange: h,
                 type: "password",
-                setRef: p,
+                setRef: g,
                 autoComplete: "current-password",
                 spellCheck: "false",
                 value: u,

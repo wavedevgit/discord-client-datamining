@@ -145,19 +145,19 @@ let et = new Set([o.M.PREMIUM_WISHLIST_COACHMARK]),
             e0 = [],
             e1 = [];
         (0, _.Tc)() && (eb && e0.push(o.M.RECURRING_3P_PROMOTION_POPOVER), eE && e0.push(o.M.BOGO_2025_NITRO_TAB_BADGE));
-        let [e6, e7] = (0, g.kn)(e0, void 0, !0);
+        let [e7, e6] = (0, g.kn)(e0, void 0, !0);
         eB && e1.push(o.M.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK), ef && (eP || eD ? e1.push(o.M.PREMIUM_GROUP_POPOVER_UPSELL_V2) : e1.push(o.M.PREMIUM_GROUP_POPOVER)), eM && e1.push(o.M.PREMIUM_ORBS_UPSELL_POPOVER), eV && e1.push(o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER), eW && e1.push(o.M.L_3PP_NITRO_TOOLTIP), eK && e1.push(o.M.L_3PP_NON_NITRO_POPOVER), eH && e1.push(o.M.PREMIUM_WISHLIST_COACHMARK);
         let [e9, e5] = (0, g.kn)(e1, void 0, !0), e3 = (0, G.c)(r.C.PREMIUM_TAB), e2 = (0, G.c)(r.C.PREMIUM_TAB_TOOLTIP), e4 = (0, G.c)(r.C.PREMIUM_TAB_POPOVER), [e8, te] = (0, g.Cc)(null != e3 && "premiumTab" === e3.properties.properties.oneofKind ? o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, e3?.promotionId ?? "", void 0, !0), [tt, tn] = (0, g.Cc)(null != e4 && "premiumTabPopover" === e4.properties.properties.oneofKind ? o.M.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL : null, e4?.promotionId ?? "", void 0, !0), [ti, tl] = (0, g.Cc)(ek ? o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER : null, ew ?? "", void 0, !0), ta = null != e2 && "premiumTabTooltip" === e2.properties.properties.oneofKind && e8 === o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, tr = eW && e9 === o.M.L_3PP_NITRO_TOOLTIP, ts = eK && e9 === o.M.L_3PP_NON_NITRO_POPOVER;
         if (l.useEffect(() => {
-                !0 === ei && (null != e6 && e7(J.i.AUTO_DISMISS), null == e9 || et.has(e9) || e5(J.i.AUTO_DISMISS), null != e8 && te(J.i.AUTO_DISMISS), null != ti && tl(J.i.AUTO_DISMISS), null != tt && tn(J.i.AUTO_DISMISS), eT && eN(J.i.AUTO_DISMISS))
-            }, [e7, ei, e6, e5, e9, e8, te, ti, tl, tt, tn, eT, eN]), !en({
+                !0 === ei && (null != e7 && e6(J.i.AUTO_DISMISS), null == e9 || et.has(e9) || e5(J.i.AUTO_DISMISS), null != e8 && te(J.i.AUTO_DISMISS), null != ti && tl(J.i.AUTO_DISMISS), null != tt && tn(J.i.AUTO_DISMISS), eT && eN(J.i.AUTO_DISMISS))
+            }, [e6, ei, e7, e5, e9, e8, te, ti, tl, tt, tn, eT, eN]), !en({
                 selected: ei
             })) return null;
         let to = () => {
             eX === o.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eZ(J.i.TAKE_ACTION), N.default.track(Z.HAw.NITRO_TAB_VISITED, {
                 badge_decorator: n,
                 has_premium: eu
-            }), null != e6 && e7(J.i.USER_DISMISS), null != e8 && te(J.i.USER_DISMISS), (e9 === o.M.PREMIUM_GROUP_POPOVER || e9 === o.M.PREMIUM_GROUP_POPOVER_UPSELL_V2) && e5(J.i.USER_DISMISS), e9 === o.M.L_3PP_NITRO_TOOLTIP && e5(J.i.USER_DISMISS), e9 === o.M.L_3PP_NON_NITRO_POPOVER && e5(J.i.USER_DISMISS), eT && eN(J.i.USER_DISMISS)
+            }), null != e7 && e6(J.i.USER_DISMISS), null != e8 && te(J.i.USER_DISMISS), (e9 === o.M.PREMIUM_GROUP_POPOVER || e9 === o.M.PREMIUM_GROUP_POPOVER_UPSELL_V2) && e5(J.i.USER_DISMISS), e9 === o.M.L_3PP_NITRO_TOOLTIP && e5(J.i.USER_DISMISS), e9 === o.M.L_3PP_NON_NITRO_POPOVER && e5(J.i.USER_DISMISS), eT && eN(J.i.USER_DISMISS)
         };
         eq === X.xc.NONE || ep || (n = 7, t = (0, i.jsx)(P.A, {
             className: "",
@@ -199,14 +199,14 @@ let et = new Set([o.M.PREMIUM_WISHLIST_COACHMARK]),
                 badgeCopy: ee.intl.string(ee.t.OS9KPu),
                 offerExpiresAt: !0 === e ? e_?.expires_at : null
             }), n = 4
-        } else e6 === o.M.RECURRING_3P_PROMOTION_POPOVER ? (t = (0, i.jsx)(c.Exy, {
+        } else e7 === o.M.RECURRING_3P_PROMOTION_POPOVER ? (t = (0, i.jsx)(c.Exy, {
             type: "new",
             variant: "expressive"
         }), n = 4, to = () => {
             N.default.track(Z.HAw.NITRO_TAB_VISITED, {
                 badge_decorator: n,
                 has_premium: eu
-            }), e7(J.i.USER_DISMISS)
+            }), e6(J.i.USER_DISMISS)
         }) : ep ? (t = (0, i.jsx)(c.Exy, {
             type: {
                 text: ee.intl.string(ee.t.raP9dM)

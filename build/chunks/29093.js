@@ -20,7 +20,7 @@ function _(e) {
         authBoxClassName: n,
         onSubmit: s,
         onCancelAccountDeletion: _
-    } = e, h = t === o.aUe.ACCOUNT_DISABLED, g = h ? c.intl.string(c.t["j3rC+U"]) : c.intl.string(c.t.ZFWofo), p = h ? c.intl.string(c.t["6eNTWe"]) : c.intl.string(c.t["pCBti+"]);
+    } = e, h = t === o.aUe.ACCOUNT_DISABLED, p = h ? c.intl.string(c.t["j3rC+U"]) : c.intl.string(c.t.ZFWofo), g = h ? c.intl.string(c.t["6eNTWe"]) : c.intl.string(c.t["pCBti+"]);
     return (0, i.jsx)(a.Ay, {
         tag: "form",
         onSubmit: s,
@@ -28,11 +28,11 @@ function _(e) {
         children: (0, i.jsxs)(l.Fmo, {
             component: (0, i.jsx)(a.hE, {
                 className: u.QB,
-                children: g
+                children: p
             }),
             children: [(0, i.jsx)(a.tK, {
                 className: u.SX,
-                children: p
+                children: g
             }), (0, i.jsxs)(a.eB, {
                 children: [(0, i.jsx)(l.Button, {
                     text: c.intl.string(c.t.JhDw5o),

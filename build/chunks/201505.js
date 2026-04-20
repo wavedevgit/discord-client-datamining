@@ -14,11 +14,11 @@ var i = n(627968),
     u = n(985018),
     _ = n(629776);
 let h = o()().localeData().months(),
-    g = Array.from(Array(31).keys()).map(e => ({
+    p = Array.from(Array(31).keys()).map(e => ({
         value: e + 1,
         label: `${e+1}`
     })),
-    p = Array.from(Array(12).keys()).map(e => ({
+    g = Array.from(Array(12).keys()).map(e => ({
         value: e + 1,
         label: h[e]
     })),
@@ -76,12 +76,12 @@ let E = s.forwardRef(function(e, t) {
             required: N,
             onFocus: v,
             onBlur: T,
-            name: j
+            name: C
         } = e,
         {
-            day: C,
-            setDay: S,
-            month: y,
+            day: j,
+            setDay: y,
+            month: S,
             setMonth: b,
             year: R,
             setYear: O
@@ -100,7 +100,7 @@ let E = s.forwardRef(function(e, t) {
                 setYear: d
             }
         }(a),
-        L = s.useMemo(() => null != C && null != y && null != R ? o()(`${C}/${y}/${R}`, "DD/MM/YYYY") : null, [C, y, R]);
+        L = s.useMemo(() => null != j && null != S && null != R ? o()(`${j}/${S}/${R}`, "DD/MM/YYYY") : null, [j, S, R]);
     s.useEffect(() => {
         m(L?.isValid() ? L : null)
     }, [L, m]);
@@ -141,16 +141,16 @@ let E = s.forwardRef(function(e, t) {
                 M.push({
                     key: "day",
                     input: (0, i.jsx)(A, {
-                        options: g,
-                        selectOption: S,
+                        options: p,
+                        selectOption: y,
                         children: (0, i.jsx)(c.Te, {
                             "aria-label": u.intl.string(u.t.Voklre),
                             popoutPosition: "top",
                             placeholder: u.intl.string(u.t.Voklre),
-                            options: g,
-                            value: C,
+                            options: p,
+                            value: j,
                             onChange: t => {
-                                S(t), U(e + 1)
+                                y(t), U(e + 1)
                             },
                             maxVisibleItems: 6,
                             autoFocus: D === e,
@@ -163,14 +163,14 @@ let E = s.forwardRef(function(e, t) {
                 M.push({
                     key: "month",
                     input: (0, i.jsx)(A, {
-                        options: p,
+                        options: g,
                         selectOption: b,
                         children: (0, i.jsx)(c.Te, {
                             "aria-label": u.intl.string(u.t.UDlN8W),
                             popoutPosition: "top",
                             placeholder: u.intl.string(u.t.UDlN8W),
-                            options: p,
-                            value: y,
+                            options: g,
+                            value: S,
                             onChange: t => {
                                 b(t), U(e + 1)
                             },
@@ -221,10 +221,10 @@ let E = s.forwardRef(function(e, t) {
                         tabIndex: t + 1,
                         className: _[n],
                         onFocus: e => {
-                            e.currentTarget.contains(e.relatedTarget) || v?.(`${j}_${n}`)
+                            e.currentTarget.contains(e.relatedTarget) || v?.(`${C}_${n}`)
                         },
                         onBlur: e => {
-                            e.currentTarget.contains(e.relatedTarget) || T?.(`${j}_${n}`)
+                            e.currentTarget.contains(e.relatedTarget) || T?.(`${C}_${n}`)
                         },
                         children: s
                     }, n)

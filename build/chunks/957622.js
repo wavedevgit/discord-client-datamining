@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(961350),
     _ = n(954571),
     h = n(723702),
-    g = n(877062),
-    p = n(501187),
+    p = n(877062),
+    g = n(501187),
     m = n(652215),
     A = n(613057),
     f = n(985018);
@@ -64,10 +64,10 @@ let E = e => {
                     error_message: e
                 }), N("error")
             }
-        }, []), j = s.useCallback(e => {
+        }, []), C = s.useCallback(e => {
             let t = u.default.getFingerprint() ?? u.default.getId(),
                 n = `discord://login/one-time?token=${encodeURIComponent(e)}`;
-            g.A.launch(n, e => {
+            p.A.launch(n, e => {
                 e ? (_.default.track(m.HAw.DEEP_LINK_CLICKED, {
                     source: "web_page",
                     destination: "discord://login/one-time",
@@ -75,7 +75,7 @@ let E = e => {
                     fingerprint: t
                 }), N("app_launched")) : N("app_launch_not_supported")
             })
-        }, []), C = s.useCallback(e => {
+        }, []), j = s.useCallback(e => {
             let t = u.default.getFingerprint() ?? u.default.getId(),
                 i = u.default.getInstallationForTracking();
             Promise.resolve().then(n.bind(n, 129014)).then(n => {
@@ -95,12 +95,12 @@ let E = e => {
                         destination: "one_time_login_modal",
                         deep_link_provider: "rpc",
                         fingerprint: t
-                    }), N("app_launched")) : j(e)
+                    }), N("app_launched")) : C(e)
                 }).catch(() => {
-                    j(e)
+                    C(e)
                 }).then(() => s.disconnect())
             })
-        }, [j]);
+        }, [C]);
         if (s.useEffect(() => {
                 let e = null != x && "string" == typeof x,
                     t = l.Fr ? "mobile" : l.v1 ? "tablet" : (0, h.isDesktop)() ? "desktop_app" : "web";
@@ -116,10 +116,10 @@ let E = e => {
                         platform: e
                     });
                     return
-                }(0, h.isDesktop)() ? T(x): v.current || (v.current = !0, N("rpc_attempting"), C(x))
-            }, [x, a, T, C]), l.Fr || l.v1) {
+                }(0, h.isDesktop)() ? T(x): v.current || (v.current = !0, N("rpc_attempting"), j(x))
+            }, [x, a, T, j]), l.Fr || l.v1) {
             let e = null == x || "string" != typeof x ? "missing_token" : "invalid_token";
-            return (0, i.jsx)(p.W, {
+            return (0, i.jsx)(g.W, {
                 token: x,
                 hasError: "error" === I,
                 errorReason: e

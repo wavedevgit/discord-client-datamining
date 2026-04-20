@@ -1,7 +1,7 @@
 /** chunk id: 344961 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => y
+    A: () => S
 });
 var i = n(627968),
     s = n(64700),
@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(414121),
     _ = n(525711),
     h = n(787610),
-    g = n(293731),
-    p = n(961350),
+    p = n(293731),
+    g = n(961350),
     m = n(723702),
     A = n(427262),
     f = n(837921),
@@ -26,7 +26,7 @@ var i = n(627968),
     v = n(818050);
 let T = n(906118);
 
-function j(e) {
+function C(e) {
     let {
         text: t = ""
     } = e, [n, r] = s.useState(!1);
@@ -61,7 +61,7 @@ function j(e) {
         })
     })
 }
-let C = e => {
+let j = e => {
     let {
         className: t,
         children: n
@@ -74,7 +74,7 @@ let C = e => {
     })
 };
 
-function S(e) {
+function y(e) {
     let {
         state: t,
         cancel: n,
@@ -86,12 +86,12 @@ function S(e) {
         case _.b.INITIALIZING:
         case _.b.PENDING_REMOTE_INIT:
             return (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(j, {
+                children: [(0, i.jsx)(C, {
                     text: t.step === _.b.PENDING_REMOTE_INIT ? `https://discord.com/ra/${t.fingerprint}` : ""
                 }), (0, i.jsx)(d.hE, {
                     className: v.QB,
                     children: I.intl.string(I.t.UPiHaL)
-                }), null != s ? (0, i.jsx)(C, {
+                }), null != s ? (0, i.jsx)(j, {
                     children: s
                 }) : (0, i.jsx)(d.tK, {
                     children: I.intl.format(I.t["Qq+A6i"], {})
@@ -103,7 +103,7 @@ function S(e) {
                         textVariant: "text-sm/normal",
                         onClick: () => {
                             let e;
-                            return e = m.isPlatformEmbedded && f.Ay.supportsFeature(E.BYE.WEBAUTHN) ? f.Ay.webAuthnAuthenticate : g.J, void a.A.authenticatePasswordless({
+                            return e = m.isPlatformEmbedded && f.Ay.supportsFeature(E.BYE.WEBAUTHN) ? f.Ay.webAuthnAuthenticate : p.J, void a.A.authenticatePasswordless({
                                 authenticateFunc: e,
                                 conditionalMediationAbortController: r
                             }).catch(() => {})
@@ -148,11 +148,11 @@ function S(e) {
     }
 }
 
-function y(e) {
+function S(e) {
     let {
         onAuthenticateSuccess: t,
         conditionalMediationAbortController: n
-    } = e, s = (0, r.bG)([p.default], () => p.default.getIsPasswordlessActive()), a = (0, c.A)(), {
+    } = e, s = (0, r.bG)([g.default], () => g.default.getIsPasswordlessActive()), a = (0, c.A)(), {
         state: o,
         cancel: d
     } = (0, h.H)(t, a), u = function(e) {
@@ -176,7 +176,7 @@ function y(e) {
             steps: [0, 1],
             children: (0, i.jsx)("div", {
                 className: N.vP,
-                children: (0, i.jsx)(S, {
+                children: (0, i.jsx)(y, {
                     state: o,
                     cancel: d,
                     conditionalMediationAbortController: n,

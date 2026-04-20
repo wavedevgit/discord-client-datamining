@@ -1,7 +1,7 @@
 /** chunk id: 341826 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968);
 n(64700);
@@ -16,9 +16,9 @@ var s = n(503698),
 n(436317);
 var _ = n(985018),
     h = n(731286),
-    g = n(818050);
+    p = n(818050);
 
-function p(e) {
+function g(e) {
     let {
         authBoxClassName: t,
         name: n,
@@ -34,7 +34,7 @@ function p(e) {
                 children: (0, i.jsx)(d.pd, {
                     label: _.intl.string(_.t["9AjdkD"]),
                     autoFocus: !0,
-                    className: g.QB,
+                    className: p.QB,
                     name: "username",
                     value: n,
                     placeholder: _.intl.string(_.t["09Q8yp"]),
@@ -53,13 +53,13 @@ function p(e) {
             }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
-                className: r()(g.QX, h.E2),
+                className: r()(p.QX, h.E2),
                 children: _.intl.format(_.t["KI+BSb"], {
                     termsURL: u.X7G.TERMS,
                     privacyURL: u.X7G.PRIVACY
                 })
             }), (0, i.jsx)("div", {
-                className: g.Ot,
+                className: p.Ot,
                 children: (0, i.jsx)(a.Button, {
                     text: _.intl.string(_.t["825cFy"]),
                     variant: "primary",
@@ -67,7 +67,7 @@ function p(e) {
                     disabled: !0
                 })
             }), (0, i.jsx)("div", {
-                className: g.QX,
+                className: p.QX,
                 children: (0, i.jsx)(a.QWc, {
                     text: _.intl.string(_.t["1lWxux"]),
                     textVariant: "text-sm/normal",

@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(396681),
     _ = n(854378),
     h = n(976860),
-    g = n(210714),
-    p = n(652215),
+    p = n(210714),
+    g = n(652215),
     m = n(985018),
     A = n(818050);
 
@@ -29,13 +29,13 @@ function f(e) {
         return "Android" === l().os.family || "iOS" === l().os.family ? null : (0, i.jsx)(o.Button, {
             text: m.intl.string(m.t.dKhVQN),
             fullWidth: !0,
-            onClick: () => r(p.BVt.LOGIN, {
+            onClick: () => r(g.BVt.LOGIN, {
                 source: "authorizeIPAdress"
             })
         })
     }
     return ((0, d.Ay)(() => {
-        (0, g.d)("authorize_ip");
+        (0, p.d)("authorize_ip");
         let e = (0, u.A)(t);
         null == e ? f("failed") : (async () => {
             try {

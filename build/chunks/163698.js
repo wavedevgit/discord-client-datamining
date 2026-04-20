@@ -1,7 +1,7 @@
 /** chunk id: 163698 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968);
 n(64700);
@@ -16,7 +16,7 @@ var s = n(503698),
     _ = n(22079),
     h = n(818050);
 
-function g(e) {
+function p(e) {
     let {
         children: t
     } = e;
@@ -30,7 +30,7 @@ function g(e) {
     })
 }
 
-function p(e) {
+function g(e) {
     let {
         setSlide: t,
         transitionTo: s
@@ -51,15 +51,15 @@ function p(e) {
                 variant: "text-sm/normal"
             }), (0, i.jsxs)("ul", {
                 className: _.qI,
-                children: [(0, i.jsx)(g, {
+                children: [(0, i.jsx)(p, {
                     children: u.intl.string(u.t.Gj1Zry)
-                }), (0, i.jsx)(o.A, {}), (0, i.jsx)(g, {
+                }), (0, i.jsx)(o.A, {}), (0, i.jsx)(p, {
                     children: u.intl.string(u.t["8C6t3B"])
-                }), (0, i.jsx)(o.A, {}), (0, i.jsx)(g, {
+                }), (0, i.jsx)(o.A, {}), (0, i.jsx)(p, {
                     children: u.intl.string(u.t.mToZMA)
-                }), (0, i.jsx)(o.A, {}), (0, i.jsx)(g, {
+                }), (0, i.jsx)(o.A, {}), (0, i.jsx)(p, {
                     children: u.intl.string(u.t.TPEvkc)
-                }), (0, i.jsx)(o.A, {}), (0, i.jsx)(g, {
+                }), (0, i.jsx)(o.A, {}), (0, i.jsx)(p, {
                     children: u.intl.string(u.t.H8Y1Ln)
                 })]
             })]

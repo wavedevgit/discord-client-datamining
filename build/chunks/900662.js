@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     A: () => m,
-    N: () => p
+    N: () => g
 });
 var i = n(627968);
 n(64700);
@@ -16,9 +16,9 @@ var s = n(503698),
     u = n(985018),
     _ = n(592743),
     h = n(653307),
-    g = n(818050);
+    p = n(818050);
 
-function p(e) {
+function g(e) {
     let {
         text: t,
         buttonCta: s,
@@ -28,10 +28,10 @@ function p(e) {
         children: [(0, i.jsx)(o._V, {
             src: n(431979)
         }), (0, i.jsx)(o.hE, {
-            className: r()(g.QX, g.QB, h.tR),
+            className: r()(p.QX, p.QB, h.tR),
             children: u.intl.string(u.t.eL5z0i)
         }), (0, i.jsx)(o.tK, {
-            className: g.C2,
+            className: p.C2,
             children: u.intl.string(u.t.poAv63)
         }), (0, i.jsxs)(a.ZpM, {
             className: _.Nr,
@@ -79,7 +79,7 @@ function m(e) {
     } = e;
     return (0, i.jsx)(o.Ay, {
         theme: s,
-        children: (0, i.jsx)(p, {
+        children: (0, i.jsx)(g, {
             text: t,
             buttonCta: n,
             onClick: r

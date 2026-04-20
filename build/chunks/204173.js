@@ -22,7 +22,7 @@ function d(e, t) {
             }, 0);
             let h = async () => {
                 await (0, o.TP)(e, _)
-            }, g = async t => await (0, o.G_)(e, _, t), p = n => {
+            }, p = async t => await (0, o.G_)(e, _, t), g = n => {
                 d = !0, setTimeout(() => {
                     d = !1
                 }, 0);
@@ -35,9 +35,9 @@ function d(e, t) {
                 } = await n.e("19840").then(n.bind(n, 79779));
                 return t => (0, i.jsx)(e, {
                     ...t,
-                    onFormSubmit: g,
+                    onFormSubmit: p,
                     onResend: h,
-                    onSuccess: p,
+                    onSuccess: g,
                     headerText: c.intl.string(c.t.H3Q7U8),
                     confirmButtonText: c.intl.string(c.t["13ofGu"]),
                     impression: {

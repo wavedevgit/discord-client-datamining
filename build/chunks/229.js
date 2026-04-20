@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(397927),
     _ = n(830215),
     h = n(475743),
-    g = n(17841),
-    p = n(965252),
+    p = n(17841),
+    g = n(965252),
     m = n(139286),
     A = n(908192),
     f = n(669629),
@@ -25,10 +25,10 @@ var i = n(627968),
     N = n(274303),
     v = n(942614),
     T = n(976860),
-    j = n(210714),
-    C = n(961350),
-    S = n(153488),
-    y = n(650048),
+    C = n(210714),
+    j = n(961350),
+    y = n(153488),
+    S = n(650048),
     b = n(954571),
     R = n(203982),
     O = n(161928),
@@ -53,7 +53,7 @@ function M(e) {
         onLoginStart: H,
         onRegister: K,
         transitionTo: z = T.pX
-    } = e, Q = (0, d.bG)([S.A], () => S.A.getAuthenticationConsentRequired()), q = (0, d.bG)([C.default], () => C.default.isAuthenticated()), Y = (0, d.bG)([g.A], () => g.A.isUnderageAnonymous()), X = (0, d.bG)([N.A], () => N.A.getHasLoggedInAccounts()), J = null != e.location ? (0, a.parse)(e.location.search) : {}, [$, Z] = s.useState(J.email ?? ""), [ee, et] = s.useState({}), en = (0, h.A)(q), ei = function(e, t, n) {
+    } = e, Q = (0, d.bG)([y.A], () => y.A.getAuthenticationConsentRequired()), q = (0, d.bG)([j.default], () => j.default.isAuthenticated()), Y = (0, d.bG)([p.A], () => p.A.isUnderageAnonymous()), X = (0, d.bG)([N.A], () => N.A.getHasLoggedInAccounts()), J = null != e.location ? (0, a.parse)(e.location.search) : {}, [$, Z] = s.useState(J.email ?? ""), [ee, et] = s.useState({}), en = (0, h.A)(q), ei = function(e, t, n) {
         if (null != e) return "gift";
         if (null != t) return "guild_template";
         if (null != n) {
@@ -63,7 +63,7 @@ function M(e) {
         }
         return null
     }(n, M, F), es = null != F && (null != F.guild || null != F.channel), er = null != F && null == F.guild && null == F.channel && null != F.inviter, el = s.useCallback(() => {
-        q && (null != W ? z(W) : z(y.A.defaultRoute))
+        q && (null != W ? z(W) : z(S.A.defaultRoute))
     }, [q, W, z]);
     (0, c.Ay)(() => {
         el(), b.default.track(k.HAw.REGISTER_VIEWED, {
@@ -72,7 +72,7 @@ function M(e) {
             ...null != r ? (0, x.A)(r, !1, !1) : {}
         }, {
             flush: !0
-        }), null == Q && _.A.getLocationMetadata(), (0, j.d)("register")
+        }), null == Q && _.A.getLocationMetadata(), (0, C.d)("register")
     }), s.useEffect(() => {
         q && !1 === en && ((0, v.C)(U.zY.ORGANIC_REGISTERED), el())
     }, [q, en, el]);
@@ -94,7 +94,7 @@ function M(e) {
             source: "register"
         }), H?.(e), R._.dispatch(k.jej.WAVE_EMPHASIZE)
     }, [$, F, n, M, W, V, H, z]);
-    if (Y || null != ee.date_of_birth) return (0, i.jsx)(p.A, {});
+    if (Y || null != ee.date_of_birth) return (0, i.jsx)(g.A, {});
     if (null != F && es) return (0, i.jsx)(f.A, {
         invite: F,
         authBoxClassName: t,

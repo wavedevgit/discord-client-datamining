@@ -19,11 +19,11 @@ function u(e) {
             suggestion: u,
             globalName: _,
             isUsernameFocused: h,
-            onClickSuggestion: g
+            onClickSuggestion: p
         } = e,
-        p = (0, a.i)(n, !0, !0),
+        g = (0, a.i)(n, !0, !0),
         m = n.length > 0;
-    return t = m ? (0, s.YW)(p).with({
+    return t = m ? (0, s.YW)(g).with({
         type: l.q.ERROR,
         message: s.P.select()
     }, e => (0, i.jsx)(r.Text, {
@@ -46,14 +46,14 @@ function u(e) {
         color: "text-default",
         children: c.intl.format(c.t.nDGqqq, {
             suggestion: u,
-            nameOnClick: g
+            nameOnClick: p
         })
     }) : (0, i.jsx)(r.Text, {
         variant: "text-sm/normal",
         color: "text-default",
         children: c.intl.string(c.t.z7c4bP)
     }), (0, i.jsx)(o.A, {
-        show: m && p?.type === l.q.ERROR || h,
+        show: m && g?.type === l.q.ERROR || h,
         top: -12,
         bottom: 20,
         children: t

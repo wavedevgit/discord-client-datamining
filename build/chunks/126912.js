@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(210714),
     _ = n(718446),
     h = n(427157),
-    g = n(650048),
-    p = n(652215),
+    p = n(650048),
+    g = n(652215),
     m = n(431144),
     A = n(355097),
     f = n(985018),
@@ -35,7 +35,7 @@ class x extends s.PureComponent {
         let e = (0, c.A)(this.props.location),
             t = (0, r.parse)(this.props.location.search);
         a.Bo.post({
-            url: p.Rsh.DISABLE_EMAIL_NOTIFICATIONS,
+            url: g.Rsh.DISABLE_EMAIL_NOTIFICATIONS,
             body: {
                 token: e,
                 pixel_uuid: t.hash,
@@ -160,6 +160,6 @@ class x extends s.PureComponent {
         return e ? this.renderBusy() : t ? this.renderSuccess() : this.renderError()
     }
 }
-let I = l.Ay.connectStores([g.A], () => ({
-    defaultRoute: g.A.defaultRoute
+let I = l.Ay.connectStores([p.A], () => ({
+    defaultRoute: p.A.defaultRoute
 }))(x)

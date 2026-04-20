@@ -297,10 +297,10 @@ let eB = (0, c.Fe)({
         ...e
     }),
     e1 = () => (0, i.jsx)(V.A, {}),
-    e6 = e => (0, i.jsx)(e7, {
+    e7 = e => (0, i.jsx)(e6, {
         ...e
     }),
-    e7 = e => {
+    e6 = e => {
         let {
             channelId: t,
             messageId: n
@@ -688,7 +688,7 @@ function to() {
                                     path: ej.BVt.CHANNEL(ej.gNP, eI.pv.channelId({
                                         optional: !0
                                     }), ":messageId?"),
-                                    render: e6,
+                                    render: e7,
                                     disableTrack: !0
                                 }), (0, i.jsx)(v.A, {
                                     path: [ej.BVt.CHANNEL_THREAD_VIEW(eI.pv.guildId(), eI.pv.channelId(), ":threadId", ":messageId?"), ej.BVt.CHANNELS_GAME_SHOP(eI.pv.guildId(), ":gameShopPageIndex", ":gameShopSkuId?", ":gameShopSlug?"), ej.BVt.CHANNEL(ej.ME, eI.pv.channelId()), ej.BVt.CHANNEL(eI.pv.guildId(), eI.pv.channelId({

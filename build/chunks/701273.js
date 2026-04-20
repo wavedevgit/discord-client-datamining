@@ -14,8 +14,8 @@ var i = n(481613),
     u = n(650048),
     _ = n(954571),
     h = n(877062),
-    g = n(652215);
-async function p(e) {
+    p = n(652215);
+async function g(e) {
     let t = s().os?.family;
     if ("Android" === t || "iOS" === t) {
         let t = d.default.getFingerprint() ?? d.default.getId(),
@@ -32,9 +32,9 @@ async function p(e) {
     return "discord://"
 }
 async function m(e) {
-    let t = await p(e),
+    let t = await g(e),
         n = (0, l.X7)(t);
-    null != n && _.default.track(g.HAw.DEEP_LINK_CLICKED, {
+    null != n && _.default.track(p.HAw.DEEP_LINK_CLICKED, {
         fingerprint: (0, a.v)(n.fingerprint),
         attempt_id: n.attemptId,
         source: n.utmSource

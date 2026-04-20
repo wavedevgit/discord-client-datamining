@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(860689),
     _ = n(396681),
     h = n(854378),
-    g = n(652215),
-    p = n(985018),
+    p = n(652215),
+    g = n(985018),
     m = n(818050);
 l.Ay.initialize();
 class A extends s.PureComponent {
@@ -31,7 +31,7 @@ class A extends s.PureComponent {
         let e = (0, _.A)(this.props.location),
             t = (0, r.parse)(this.props.location.search);
         a.Bo.post({
-            url: g.Rsh.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
+            url: p.Rsh.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
             body: {
                 token: e,
                 pixel_uuid: t.hash,
@@ -70,24 +70,24 @@ class A extends s.PureComponent {
         return (0, i.jsxs)(h.Ay, {
             children: [(0, i.jsx)(h.hE, {
                 className: m.QB,
-                children: p.intl.string(p.t.Z33eiP)
+                children: g.intl.string(g.t.Z33eiP)
             }), (0, i.jsx)(h.tK, {
-                children: p.intl.format(p.t.NRWtfC, {
+                children: g.intl.format(g.t.NRWtfC, {
                     guildName: n.name
                 })
             }), (0, i.jsx)("div", {
                 className: m.eT,
                 children: (0, i.jsx)(o.Button, {
-                    text: p.intl.string(p.t.fIv16B),
+                    text: g.intl.string(g.t.fIv16B),
                     fullWidth: !0,
                     onClick: () => t(e)
                 })
             }), (0, i.jsx)("div", {
                 className: m.Ot,
                 children: (0, i.jsx)(o.QWc, {
-                    text: p.intl.string(p.t["cGmT/J"]),
+                    text: g.intl.string(g.t["cGmT/J"]),
                     onClick: () => {
-                        t(g.BVt.USER_GUILD_NOTIFICATION_SETTINGS(n.id))
+                        t(p.BVt.USER_GUILD_NOTIFICATION_SETTINGS(n.id))
                     }
                 })
             })]
@@ -104,13 +104,13 @@ class A extends s.PureComponent {
                 className: m.SX
             }), (0, i.jsx)(h.hE, {
                 className: m.QB,
-                children: p.intl.string(p.t.ox9hIS)
+                children: g.intl.string(g.t.ox9hIS)
             }), (0, i.jsx)(h.tK, {
-                children: p.intl.string(p.t["/dcuR5"])
+                children: g.intl.string(g.t["/dcuR5"])
             }), (0, i.jsx)("div", {
                 className: m.eT,
                 children: (0, i.jsx)(o.Button, {
-                    text: p.intl.string(p.t.fIv16B),
+                    text: g.intl.string(g.t.fIv16B),
                     fullWidth: !0,
                     onClick: () => t(e)
                 })

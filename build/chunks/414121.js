@@ -1,8 +1,8 @@
 /** chunk id: 414121 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => p,
-    Lx: () => g,
+    Ay: () => g,
+    Lx: () => p,
     Zs: () => d
 });
 var i, s = n(627968),
@@ -44,7 +44,7 @@ class h extends r.PureComponent {
         })
     }
 }
-class g extends r.PureComponent {
+class p extends r.PureComponent {
     static defaultProps = {
         size: 144,
         bgColor: "#ffffff",
@@ -69,4 +69,4 @@ class g extends r.PureComponent {
         })
     }
 }
-let p = h
+let g = h

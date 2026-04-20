@@ -1,7 +1,7 @@
 /** chunk id: 669629 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => j
 });
 var i = n(627968),
     s = n(64700),
@@ -15,8 +15,8 @@ var d = n(153488),
     u = n(954571),
     _ = n(203982),
     h = n(15552),
-    g = n(906564),
-    p = n(854378),
+    p = n(906564),
+    g = n(854378),
     m = n(359438),
     A = n(383302),
     f = n(362707),
@@ -27,14 +27,14 @@ var d = n(153488),
 n(436317);
 var v = n(985018),
     T = n(731286),
-    j = n(818050);
+    C = n(818050);
 
-function C(e) {
+function j(e) {
     let t, {
             invite: n,
-            authBoxClassName: C,
-            onApiErrors: S,
-            onGotoLogin: y,
+            authBoxClassName: j,
+            onApiErrors: y,
+            onGotoLogin: S,
             onRegister: b
         } = e,
         R = (0, r.bG)([d.A], () => d.A.getAuthenticationConsentRequired()),
@@ -44,7 +44,7 @@ function C(e) {
         channel: n.channel,
         guildScheduledEvent: n.guild_scheduled_event
     }) : (0, i.jsx)("div", {
-        className: j.S3,
+        className: C.S3,
         children: (0, i.jsx)(a.A, {
             invite: n,
             inUnclaimedFlow: !0
@@ -61,7 +61,7 @@ function C(e) {
     let [q, Y] = s.useState(null), [X, J] = s.useState(null), $ = s.useCallback(async () => {
         _._.dispatch(N.jej.WAVE_EMPHASIZE), M(!0), V({});
         try {
-            await (0, g.Ay)({
+            await (0, p.Ay)({
                 consent: P,
                 invite: n.code,
                 globalName: w,
@@ -70,26 +70,26 @@ function C(e) {
         } catch (t) {
             if (M(!1), !(t instanceof o.LG)) return;
             let e = (0, h.W)(t);
-            V(e), S?.(e), "number" == typeof e.retry_after && Q(e.retry_after)
+            V(e), y?.(e), "number" == typeof e.retry_after && Q(e.retry_after)
         }
-    }, [n, w, D, P, S, b, Q, V, M]), Z = s.useCallback(e => {
+    }, [n, w, D, P, y, b, Q, V, M]), Z = s.useCallback(e => {
         if (e?.preventDefault(), null === R) return;
         let t = !1;
         0 === w.length && (Y(v.intl.string(v.t.EkokLy)), t = !0), null == D && (J(v.intl.string(v.t.EkokLy)), t = !0), t || $()
     }, [w, D, R, $, Y, J]);
     return n.state === N.elq.RESOLVING ? (0, i.jsx)(x.A, {
-        authBoxClassName: C,
+        authBoxClassName: j,
         name: w,
         onNameChange: k
     }) : (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(p.Ay, {
+        children: [(0, i.jsx)(g.Ay, {
             tag: "section",
-            className: C,
+            className: j,
             children: (0, i.jsxs)("form", {
                 onSubmit: Z,
                 children: [t, O ? (0, i.jsx)("div", {
                     className: T.yF
-                }) : null, (0, i.jsxs)(p.eB, {
+                }) : null, (0, i.jsxs)(g.eB, {
                     className: O ? void 0 : T.y0,
                     children: [(0, i.jsx)(l.ksK, {
                         helperText: v.intl.string(v.t["330TCc"]),
@@ -128,17 +128,17 @@ function C(e) {
                         consent: P,
                         registering: G
                     }), (0, i.jsx)("div", {
-                        className: j.QX,
+                        className: C.QX,
                         children: (0, i.jsx)(l.QWc, {
                             text: v.intl.string(v.t["1lWxux"]),
                             textVariant: "text-sm/normal",
-                            onClick: y
+                            onClick: S
                         })
                     })]
                 })]
             })
-        }), null != n && O ? (0, i.jsx)(p.Ay, {
-            className: j.QX,
+        }), null != n && O ? (0, i.jsx)(g.Ay, {
+            className: C.QX,
             children: (0, i.jsx)(A.N, {
                 guild: n.guild,
                 onlineCount: n.approximate_presence_count

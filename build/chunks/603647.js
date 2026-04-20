@@ -2,7 +2,7 @@
 "use strict";
 let i;
 n.d(t, {
-    A: () => y
+    A: () => S
 });
 var s = n(627968),
     r = n(64700),
@@ -14,8 +14,8 @@ var s = n(627968),
     u = n(897479),
     _ = n(942156),
     h = n(574094),
-    g = n(49463),
-    p = n(976860),
+    p = n(49463),
+    g = n(976860),
     m = n(426660),
     A = n(652215),
     f = n(476958);
@@ -28,15 +28,15 @@ function N(e) {
 }
 let v = e => (i = e, e),
     T = [A.BVt.VERIFY, A.BVt.VERIFY_HUB_EMAIL],
-    j = [A.BVt.GIFT_CARD_REDEEM];
+    C = [A.BVt.GIFT_CARD_REDEEM];
 
-function C(e) {
+function j(e) {
     let {
         children: t
     } = e, n = function() {
-        let [e, t] = r.useState(!1), [n, s] = r.useState(!0), l = (0, o.bG)([g.A], () => g.A.hasLoadedExperiments);
+        let [e, t] = r.useState(!1), [n, s] = r.useState(!0), l = (0, o.bG)([p.A], () => p.A.hasLoadedExperiments);
         return ((0, d.A)(() => {}, 300), void 0 !== i) ? i : !n && l ? (e || t(!0), v("default")) : n ? v("default") : "loading"
-    }(), a = (0, l.zy)(), c = j.includes(a.pathname), u = T.includes(a.pathname);
+    }(), a = (0, l.zy)(), c = C.includes(a.pathname), u = T.includes(a.pathname);
     if (c) return t;
     switch (n) {
         case "default":
@@ -56,7 +56,7 @@ function C(e) {
             return null
     }
 }
-class S extends r.Component {
+class y extends r.Component {
     constructor(e) {
         super(e), this.state = {
             isMobileWidth: window.innerWidth <= 485
@@ -74,14 +74,14 @@ class S extends r.Component {
         window.removeEventListener("resize", this.handleResize)
     }
     mobileTransitionTo(e, t) {
-        if (N(e))(0, p.pX)(e, t);
+        if (N(e))(0, g.pX)(e, t);
         else {
             let n = null != t && null != t.search ? t.search : null;
             window.location = null == n ? e : `${e}?${n}`
         }
     }
     mobileReplaceWith(e) {
-        N(e) ? (0, p.bG)(e) : window.location = e
+        N(e) ? (0, g.bG)(e) : window.location = e
     }
     renderDefault() {
         let {
@@ -89,8 +89,8 @@ class S extends r.Component {
         } = this.props, t = (0, s.jsx)(u.A, {
             component: r.Fragment,
             children: r.Children.map(this.props.children, e => r.cloneElement(e, {
-                transitionTo: p.pX,
-                replaceWith: p.bG
+                transitionTo: g.pX,
+                replaceWith: g.bG
             }))
         });
         return (0, s.jsx)("div", {
@@ -105,7 +105,7 @@ class S extends r.Component {
                         splash: e,
                         children: t
                     })]
-                }) : (0, s.jsx)(C, {
+                }) : (0, s.jsx)(j, {
                     children: t
                 })
             })
@@ -127,4 +127,4 @@ class S extends r.Component {
         return e || a.Fr || a.v1 || t ? this.renderMobile() : this.renderDefault()
     }
 }
-let y = S
+let S = y

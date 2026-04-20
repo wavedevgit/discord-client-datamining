@@ -25,7 +25,7 @@ function h(e) {
     return 1 !== n ? null : i
 }
 new a.A("UserFlowAnalytics");
-let g = (0, i.v)()((0, s.eh)((e, t) => ({
+let p = (0, i.v)()((0, s.eh)((e, t) => ({
     flows: {},
     currentFlow: null,
     activeFlow: () => {
@@ -38,12 +38,12 @@ let g = (0, i.v)()((0, s.eh)((e, t) => ({
     }
 })));
 
-function p(e, t) {
+function g(e, t) {
     let {
         [e]: n, ...i
-    } = g.getState().flows, s = n ?? h(e);
+    } = p.getState().flows, s = n ?? h(e);
     (s?.currentStep == null || s.currentStep !== t) && (0, r.r)(() => {
-        g.setState({
+        p.setState({
             flows: {
                 ...i,
                 [e]: {
@@ -63,12 +63,12 @@ function p(e, t) {
 function m(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
         i = e;
-    e === c.do.ANY && (i = g.getState().activeFlow() ?? c.do.UNKNOWN);
+    e === c.do.ANY && (i = p.getState().activeFlow() ?? c.do.UNKNOWN);
     let {
         [i]: s, ...l
-    } = g.getState().flows, a = s ?? h(i);
+    } = p.getState().flows, a = s ?? h(i);
     null == a || null == a.currentStep || a.currentStep !== t && (0, r.r)(() => {
-        g.setState({
+        p.setState({
             flows: {
                 ...l,
                 [i]: {
@@ -86,9 +86,9 @@ function m(e, t) {
 }
 
 function A() {
-    return null != g.getState().activeFlow()
+    return null != p.getState().activeFlow()
 }
-g.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : void 0, e => {
+p.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : void 0, e => {
     if (null != e && (! function(e) {
             if (e.type === c.do.UNKNOWN) return;
             let t = `${_}-${e.type}`;
@@ -105,10 +105,10 @@ g.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : void 0, e => {
             flush: !0
         }), e.ended)) {
         let t = {
-            ...g.getState().flows
+            ...p.getState().flows
         };
         delete t[e.type], (0, r.r)(() => {
-            g.setState({
+            p.setState({
                 flows: t,
                 currentFlow: null
             })
@@ -116,9 +116,9 @@ g.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : void 0, e => {
     }
 });
 let f = {
-    flowStart: p,
+    flowStart: g,
     flowStepOrStart: function(e, t) {
-        A() ? m(e, t) : p(e, t)
+        A() ? m(e, t) : g(e, t)
     },
     flowStep: m,
     hasActiveFlow: A

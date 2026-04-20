@@ -15,8 +15,8 @@ var i = n(627968),
     _ = n(201505);
 n(829926);
 var h = n(493527),
-    g = n(544395),
-    p = n(794696),
+    p = n(544395),
+    g = n(794696),
     m = n(153488),
     A = n(954571),
     f = n(203982),
@@ -26,10 +26,10 @@ var h = n(493527),
     N = n(906564),
     v = n(854378),
     T = n(442184),
-    j = n(362707),
-    C = n(782021),
-    S = n(773134),
-    y = n(652215);
+    C = n(362707),
+    j = n(782021),
+    y = n(773134),
+    S = n(652215);
 n(436317), n(45723);
 var b = n(985018),
     R = n(731286),
@@ -46,23 +46,23 @@ function L(e) {
         onGotoLogin: D,
         onRegister: U
     } = e, [P, B] = s.useState(!1), [G, M] = s.useState(!1), F = async () => {
-        $.length > 0 && !g.A.wasRegistrationSuggestionFetched($) && await h.A.fetchSuggestionsRegistration($)
+        $.length > 0 && !p.A.wasRegistrationSuggestionFetched($) && await h.A.fetchSuggestionsRegistration($)
     }, V = e => {
-        A.default.track(y.HAw.REGISTER_INPUT_FOCUS, {
+        A.default.track(S.HAw.REGISTER_INPUT_FOCUS, {
             field: e
         })
     }, W = e => {
-        A.default.track(y.HAw.REGISTER_INPUT_BLUR, {
+        A.default.track(S.HAw.REGISTER_INPUT_BLUR, {
             field: e
         })
-    }, H = (0, a.bG)([m.A], () => m.A.getAuthenticationConsentRequired()), K = (0, a.bG)([g.A], () => g.A.registrationUsernameSuggestion()), z = s.useRef(null), Q = s.useRef(null), q = s.useRef(null), Y = s.useRef(null), [X, J] = s.useState(t), [$, Z] = s.useState(""), [ee, et] = s.useState(""), [en, ei] = s.useState(""), [es, er] = s.useState(null), [el, ea] = (0, j.S9)(H), [eo, ec] = s.useState(!1), [ed, eu] = (0, j.ic)(), [e_, eh] = s.useState({}), {
-        message: eg,
-        email: ep,
+    }, H = (0, a.bG)([m.A], () => m.A.getAuthenticationConsentRequired()), K = (0, a.bG)([p.A], () => p.A.registrationUsernameSuggestion()), z = s.useRef(null), Q = s.useRef(null), q = s.useRef(null), Y = s.useRef(null), [X, J] = s.useState(t), [$, Z] = s.useState(""), [ee, et] = s.useState(""), [en, ei] = s.useState(""), [es, er] = s.useState(null), [el, ea] = (0, C.S9)(H), [eo, ec] = s.useState(!1), [ed, eu] = (0, C.ic)(), [e_, eh] = s.useState({}), {
+        message: ep,
+        email: eg,
         username: em,
         global_name: eA,
         password: ef,
         date_of_birth: eE
-    } = e_, [ex, eI] = s.useState(null), [eN, ev] = s.useState(null), [eT, ej] = s.useState(null), [eC, eS] = s.useState(null), ey = null != H && el;
+    } = e_, [ex, eI] = s.useState(null), [eN, ev] = s.useState(null), [eT, eC] = s.useState(null), [ej, ey] = s.useState(null), eS = null != H && el;
     ! function(e) {
         let {
             apiErrors: t,
@@ -85,7 +85,7 @@ function L(e) {
             let e = null != r ? r.skuId : null,
                 t = x.mZ.getState(),
                 i = (0, E.uJ)(K) ? null : ee === K;
-            f._.dispatch(y.jej.WAVE_EMPHASIZE), ec(!0), eh({});
+            f._.dispatch(S.jej.WAVE_EMPHASIZE), ec(!0), eh({});
             try {
                 await (0, N.pG)({
                     email: X,
@@ -109,12 +109,12 @@ function L(e) {
         eR = s.useCallback(e => {
             if (e?.preventDefault(), null == H) return;
             let t = !1;
-            0 === X.length && (eI(b.intl.string(b.t.EkokLy)), t = !0), 0 === ee.length && (ev(b.intl.string(b.t.EkokLy)), t = !0), 0 === en.length && (ej(b.intl.string(b.t.EkokLy)), t = !0), null == es && (eS(b.intl.string(b.t.EkokLy)), t = !0), t || eb()
+            0 === X.length && (eI(b.intl.string(b.t.EkokLy)), t = !0), 0 === ee.length && (ev(b.intl.string(b.t.EkokLy)), t = !0), 0 === en.length && (eC(b.intl.string(b.t.EkokLy)), t = !0), null == es && (ey(b.intl.string(b.t.EkokLy)), t = !0), t || eb()
         }, [X, ee, en, es, H, eb]),
         eO = null;
-    return "string" == typeof eg && (eO = (0, i.jsx)(v.ME, {
+    return "string" == typeof ep && (eO = (0, i.jsx)(v.ME, {
         className: l()(O.QX, R.gJ),
-        children: eg
+        children: ep
     })), (0, i.jsx)("form", {
         onSubmit: eR,
         children: (0, i.jsxs)(v.eB, {
@@ -128,7 +128,7 @@ function L(e) {
                 onChange: e => {
                     J(e), k?.(e), eI(0 === e.length ? b.intl.string(b.t.EkokLy) : null)
                 },
-                error: ex ?? (0, j.yX)(ep),
+                error: ex ?? (0, C.yX)(eg),
                 type: "email",
                 autoComplete: "username",
                 setRef: z,
@@ -141,7 +141,7 @@ function L(e) {
                 name: "global_name",
                 value: $,
                 onChange: Z,
-                error: (0, j.yX)(eA),
+                error: (0, C.yX)(eA),
                 maxLength: 32,
                 autoComplete: "off",
                 setRef: q,
@@ -151,7 +151,7 @@ function L(e) {
                 onBlur: () => {
                     B(!1), W("global_name")
                 }
-            }), (0, i.jsx)(p.A, {
+            }), (0, i.jsx)(g.A, {
                 show: P,
                 top: -12,
                 bottom: 20,
@@ -174,13 +174,13 @@ function L(e) {
                     onChange: e => {
                         et(e.toLocaleLowerCase()), ev(0 === e.length ? b.intl.string(b.t.EkokLy) : null)
                     },
-                    error: eN ?? (0, j.yX)(em),
+                    error: eN ?? (0, C.yX)(em),
                     autoComplete: "off",
                     setRef: Q,
                     required: !0,
                     onFocus: () => V("username"),
                     onBlur: () => W("username")
-                }), (0, i.jsx)(S.A, {
+                }), (0, i.jsx)(y.A, {
                     username: ee,
                     suggestion: K,
                     globalName: $,
@@ -194,9 +194,9 @@ function L(e) {
                 name: "password",
                 value: en,
                 onChange: e => {
-                    ei(e), ej(0 === e.length ? b.intl.string(b.t.EkokLy) : null)
+                    ei(e), eC(0 === e.length ? b.intl.string(b.t.EkokLy) : null)
                 },
-                error: eT ?? (0, j.yX)(ef),
+                error: eT ?? (0, C.yX)(ef),
                 type: "password",
                 autoComplete: "new-password",
                 setRef: Y,
@@ -208,14 +208,14 @@ function L(e) {
                 wrapperClassName: R.UJ,
                 name: "date_of_birth",
                 onChange: e => {
-                    er(e), null != e && eS(null)
+                    er(e), null != e && ey(null)
                 },
-                error: eC ?? (0, j.yX)(eE),
+                error: ej ?? (0, C.yX)(eE),
                 value: es,
                 required: !0,
                 onFocus: V,
                 onBlur: W
-            }), (0, i.jsx)(T.A, {}), (0, i.jsx)(C.A, {
+            }), (0, i.jsx)(T.A, {}), (0, i.jsx)(j.A, {
                 consent: el,
                 consentRequired: H,
                 onConsentChange: ea
@@ -229,7 +229,7 @@ function L(e) {
                         fullWidth: !0,
                         type: "submit",
                         loading: eo,
-                        disabled: !ey || ed
+                        disabled: !eS || ed
                     })
                 })
             }), eO, (0, i.jsx)("div", {

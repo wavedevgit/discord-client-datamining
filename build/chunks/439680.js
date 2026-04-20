@@ -21,8 +21,8 @@ function _(e) {
         profile: _,
         onAcceptInvite: h
     } = e, {
-        gamesToDisplay: g,
-        lastGameToDisplay: p,
+        gamesToDisplay: p,
+        lastGameToDisplay: g,
         remainingGames: m
     } = (0, a.A)(_), A = function(e) {
         let {
@@ -63,8 +63,8 @@ function _(e) {
                         color: "text-default",
                         children: f
                     }), (0, i.jsx)(o.A, {
-                        gamesToDisplay: g,
-                        lastGameToDisplay: p,
+                        gamesToDisplay: p,
+                        lastGameToDisplay: g,
                         remainingGames: m,
                         activity: _.gameActivity
                     })]
