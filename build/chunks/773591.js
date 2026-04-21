@@ -20,8 +20,8 @@ var n = s(627968),
     f = s(100057),
     x = s(392183),
     E = s(751304),
-    b = s(561769),
-    C = s(998694),
+    C = s(561769),
+    b = s(998694),
     A = s(758836),
     S = s(652215),
     v = s(985018),
@@ -29,10 +29,10 @@ var n = s(627968),
     L = s(517700),
     j = s(304009),
     O = s(495482),
-    k = s(479512),
-    T = s(867341),
-    y = s(632728),
-    N = s(368146),
+    T = s(479512),
+    k = s(867341),
+    N = s(632728),
+    y = s(368146),
     R = s(536003);
 
 function B(e) {
@@ -43,18 +43,18 @@ function B(e) {
     } = e, P = (0, _.uM)(), M = P?.sessionId ?? "", {
         noCache: H,
         includeUnpublished: D
-    } = (0, C.A)(), w = (0, m.W)("CollectiblesFilterableShop"), F = (0, a.bG)([d.default], () => d.default.getCurrentUser()), G = (0, a.bG)([g.A], () => g.A.productsWithVariantsAsGroup), [U, V] = r.useState(1), W = (0, c.DP)(), K = (0, i.qB)(W), [z, Y, $] = r.useMemo(() => {
+    } = (0, b.A)(), w = (0, m.W)("CollectiblesFilterableShop"), F = (0, a.bG)([d.default], () => d.default.getCurrentUser()), G = (0, a.bG)([g.A], () => g.A.productsWithVariantsAsGroup), [U, K] = r.useState(1), W = (0, c.DP)(), z = (0, i.qB)(W), [V, Y, $] = r.useMemo(() => {
         switch (B) {
             case A.G2.AVATAR_DECORATIONS:
-                return [v.intl.string(v.t.dRZYNE), K ? k.A : O.A, l.R.AVATAR_DECORATION];
+                return [v.intl.string(v.t.dRZYNE), z ? T.A : O.A, l.R.AVATAR_DECORATION];
             case A.G2.PROFILE_EFFECTS:
-                return [v.intl.string(v.t["1cNjtx"]), K ? R.A : N.A, l.R.PROFILE_EFFECT];
+                return [v.intl.string(v.t["1cNjtx"]), z ? R.A : y.A, l.R.PROFILE_EFFECT];
             case A.G2.NAMEPLATES:
-                return [v.intl.string(v.t.V68Fqz), K ? y.A : T.A, l.R.NAMEPLATE];
+                return [v.intl.string(v.t.V68Fqz), z ? N.A : k.A, l.R.NAMEPLATE];
             case A.G2.BUNDLES:
-                return [v.intl.string(v.t.FYFpps), K ? j.A : L.A, l.R.BUNDLE]
+                return [v.intl.string(v.t.FYFpps), z ? j.A : L.A, l.R.BUNDLE]
         }
-    }, [B, K]), Z = (0, h.p)(), q = r.useMemo(() => Z(G.filter(e => (e.type === $ || e.type === l.R.VARIANTS_GROUP && e.variants?.some(e => e.type === $) === !0) && !A.MS.some(t => {
+    }, [B, z]), Z = (0, h.p)(), q = r.useMemo(() => Z(G.filter(e => (e.type === $ || e.type === l.R.VARIANTS_GROUP && e.variants?.some(e => e.type === $) === !0) && !A.MS.some(t => {
         let {
             categorySkuId: s
         } = t;
@@ -84,7 +84,7 @@ function B(e) {
             className: I.cI,
             children: (0, n.jsx)(o.Heading, {
                 variant: "heading-xxl/extrabold",
-                children: z
+                children: V
             })
         }), (0, n.jsx)("div", {
             className: I.ZE,
@@ -94,7 +94,7 @@ function B(e) {
                 },
                 children: (0, n.jsx)(E.A, {
                     skuId: e.skuId,
-                    prioritizedCurrency: w ? b.Hi.FIAT : void 0
+                    prioritizedCurrency: w ? C.Hi.FIAT : void 0
                 }, e.skuId)
             }, e.skuId))
         }), X.length > 40 && (0, n.jsx)("div", {
@@ -113,7 +113,7 @@ function B(e) {
                             page_size: 40,
                             cta_name: `${B} page ${e}`,
                             page_type: B
-                        }), V(e), s?.current?.scrollToTop({
+                        }), K(e), s?.current?.scrollToTop({
                             animate: !0
                         })
                     },

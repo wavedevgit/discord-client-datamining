@@ -20,8 +20,8 @@ var n = s(627968),
     f = s(594832),
     x = s(287809),
     E = s(440938),
-    b = s(590180),
-    C = s(161918),
+    C = s(590180),
+    b = s(161918),
     A = s(790297),
     S = s(338769),
     v = s(841702),
@@ -29,10 +29,10 @@ var n = s(627968),
     L = s(983545),
     j = s(365491),
     O = s(530971),
-    k = s(177366),
-    T = s(155486),
-    y = s(278576),
-    N = s(120286),
+    T = s(177366),
+    k = s(155486),
+    N = s(278576),
+    y = s(120286),
     R = s(870308),
     B = s(938191),
     P = s(758836),
@@ -65,26 +65,26 @@ let F = e => {
         let c = (0, B.yB)("CollectiblesShop"),
             {
                 onClose: H
-            } = (0, y.tR)(),
+            } = (0, N.tR)(),
             {
                 currentTab: G,
                 hasFilters: U
             } = (0, j.v)(),
-            V = r.useMemo(() => t === P.G2.HOME && null != G && U() ? G : t, [t, G, U]),
+            K = r.useMemo(() => t === P.G2.HOME && null != G && U() ? G : t, [t, G, U]),
             {
                 categories: W,
-                refreshCategories: K
+                refreshCategories: z
             } = (0, v.Ay)({
                 logPerf: !0
             }, {
                 sessionId: s,
-                tab: V
+                tab: K
             }),
-            z = r.useMemo(() => [...W.values()], [W]),
+            V = r.useMemo(() => [...W.values()], [W]),
             [Y, $] = r.useState(),
-            Z = (0, o.bG)([b.A], () => b.A.getCategory(Y)?.name),
+            Z = (0, o.bG)([C.A], () => C.A.getCategory(Y)?.name),
             [q, X] = r.useState();
-        (0, k.XU)(s);
+        (0, T.XU)(s);
         let J = r.useCallback((e, t) => {
                 X(e), $(t)
             }, []),
@@ -92,7 +92,7 @@ let F = e => {
                 selectedTab: Q,
                 transitionState: ee,
                 transitionToTab: et
-            } = (0, L.o)(V);
+            } = (0, L.o)(K);
         (0, m.HU)({
             location: D.intl.string(D.t.pWG4ze)
         }), (0, A.uS)(s, Q, Z, ee, q), (0, A.N0)(Q, l);
@@ -120,7 +120,7 @@ let F = e => {
                     pageCategory: Z,
                     pageSize: P.l5
                 },
-                children: (0, n.jsx)(C.iM, {
+                children: (0, n.jsx)(b.iM, {
                     tab: Q,
                     children: (0, n.jsx)(F, {
                         onClose: H,
@@ -131,10 +131,10 @@ let F = e => {
                             }),
                             ref: er,
                             tabIndex: -1,
-                            children: [(0, n.jsx)(T.G, {
+                            children: [(0, n.jsx)(k.G, {
                                 handleTransition: et,
                                 selectedTab: Q
-                            }), null != ea && ea.type === S.Z.COUNTDOWN && (0, n.jsx)(N.k, {
+                            }), null != ea && ea.type === S.Z.COUNTDOWN && (0, n.jsx)(y.k, {
                                 message: ea.message,
                                 onClick: () => et(P.G2.HOME),
                                 variant: "pink",
@@ -147,10 +147,10 @@ let F = e => {
                                 }),
                                 children: (0, n.jsx)(O.A, {
                                     tab: Q,
-                                    refreshCategories: K,
+                                    refreshCategories: z,
                                     transitionToTab: et,
                                     transitionState: ee,
-                                    categories: z,
+                                    categories: V,
                                     updateAnalyticsState: J
                                 })
                             })]

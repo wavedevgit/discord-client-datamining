@@ -20,8 +20,8 @@ var n = s(627968),
     f = s(206077),
     x = s(751304),
     E = s(561769),
-    b = s(758836),
-    C = s(985018),
+    C = s(758836),
+    b = s(985018),
     A = s(941734);
 let S = e => {
     let {
@@ -29,10 +29,10 @@ let S = e => {
         handleTransition: s,
         tab: l
     } = e, S = (0, i.bG)([_.default], () => _.default.getCurrentUser()), v = (0, h.W)("ShelfBlock"), I = (0, i.bG)([m.A], () => m.A.getCategory(t.categorySkuId)), L = (0, p.A)(), j = r.useMemo(() => L(t.rankedSkuIds), [t.rankedSkuIds, L]), O = (0, f.X)(j), {
-        analyticsLocations: k
+        analyticsLocations: T
     } = (0, d.Ay)(c.A.COLLECTIBLES_SHOP_SHELF);
     return null == S ? null : (0, n.jsx)(d.f5, {
-        value: k,
+        value: T,
         children: (0, n.jsxs)("div", {
             className: a()(A.Vp, A.YB),
             children: [(0, n.jsxs)("div", {
@@ -42,7 +42,7 @@ let S = e => {
                     children: t.name
                 }), (0, n.jsx)(o.Button, {
                     variant: "secondary",
-                    text: C.intl.formatToPlainString(C.t.bc9RBE, {
+                    text: b.intl.formatToPlainString(b.t.bc9RBE, {
                         category_name: t.name
                     }),
                     onClick: () => {
@@ -50,7 +50,7 @@ let S = e => {
                             sourceButton: "shelf block see all",
                             categorySkuId: t.categorySkuId,
                             isInternalShopDeeplink: !0,
-                            isOrbsExclusive: I?.isOrbsExclusive && l !== b.G2.ORBS
+                            isOrbsExclusive: I?.isOrbsExclusive && l !== C.G2.ORBS
                         })
                     }
                 })]
@@ -68,7 +68,7 @@ let S = e => {
                             },
                             children: (0, n.jsx)(x.A, {
                                 skuId: r,
-                                prioritizedCurrency: l === b.G2.ORBS ? E.Hi.ORBS : v ? E.Hi.FIAT : void 0
+                                prioritizedCurrency: l === C.G2.ORBS ? E.Hi.ORBS : v ? E.Hi.FIAT : void 0
                             }, r)
                         }, r)
                     })

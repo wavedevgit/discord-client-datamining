@@ -25,13 +25,13 @@ function f(e) {
         catalogBannerStatic: _,
         catalogBannerAnimated: f,
         catalogBannerRive: x
-    } = (0, m.MV)(t), E = r.useRef(null), b = null != x;
+    } = (0, m.MV)(t), E = r.useRef(null), C = null != x;
     return (0, n.jsxs)("div", {
         ref: E,
         className: a()(p.sW, {
-            [p.by]: b
+            [p.by]: C
         }),
-        children: [b ? (0, n.jsx)(o._, {
+        children: [C ? (0, n.jsx)(o._, {
             src: x,
             fit: "cover",
             alignment: "center-left",

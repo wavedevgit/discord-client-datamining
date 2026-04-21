@@ -1,7 +1,7 @@
 /** chunk id: 695413 params = (module,exports,require) **/
 "use strict";
 s.d(t, {
-    A: () => b
+    A: () => C
 });
 var n = s(627968),
     r = s(64700),
@@ -20,9 +20,9 @@ var n = s(627968),
     f = s(661623),
     x = s(357704),
     E = s(758836);
-let b = e => {
-    let t, s, b, {
-            isBlockLoading: C = !1,
+let C = e => {
+    let t, s, C, {
+            isBlockLoading: b = !1,
             heroBlock: A,
             tab: S
         } = e,
@@ -31,21 +31,21 @@ let b = e => {
         L = (0, l.bG)([c.A], () => c.A.getPurchase(A.rewardSkuId)),
         {
             products: j
-        } = (t = (0, _.A)(), s = r.useMemo(() => C ? [] : t(A.rankedSkuIds).filter(e => e.skuId !== A.rewardSkuId || null != L), [C, t, A.rankedSkuIds, L, A.rewardSkuId]), b = (0, u.p)()(s), {
-            products: (0, g.X)(b)
+        } = (t = (0, _.A)(), s = r.useMemo(() => b ? [] : t(A.rankedSkuIds).filter(e => e.skuId !== A.rewardSkuId || null != L), [b, t, A.rankedSkuIds, L, A.rewardSkuId]), C = (0, u.p)()(s), {
+            products: (0, g.X)(C)
         }),
-        O = r.useMemo(() => !C && 0 !== A.rankedSkuIds.length && !(j.length > 0) && A.rankedSkuIds.every(e => o.A.getProduct(e)?.variantGroupStoreListingId != null), [C, A.rankedSkuIds, j.length]),
-        k = C || O,
+        O = r.useMemo(() => !b && 0 !== A.rankedSkuIds.length && !(j.length > 0) && A.rankedSkuIds.every(e => o.A.getProduct(e)?.variantGroupStoreListingId != null), [b, A.rankedSkuIds, j.length]),
+        T = b || O,
         {
-            readyToClaim: T
+            readyToClaim: k
         } = (0, x.K)(I, A.rewardSkuId),
-        y = null == L && null != A.rewardSkuId && null != I;
+        N = null == L && null != A.rewardSkuId && null != I;
     return (0, n.jsx)(a.A, {
         gap: "xl",
-        children: k ? (0, n.jsx)(n.Fragment, {
+        children: T ? (0, n.jsx)(n.Fragment, {
             children: [void 0, void 0, void 0, void 0, void 0].map((e, t) => (0, n.jsx)(p.A, {}, t))
         }) : (0, n.jsxs)(n.Fragment, {
-            children: [y && T && (0, n.jsx)(i.R9, {
+            children: [N && k && (0, n.jsx)(i.R9, {
                 newValue: {
                     tilePosition: 0,
                     pageSection: "top 4",

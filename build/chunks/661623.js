@@ -20,8 +20,8 @@ var n = s(627968),
     f = s(597783),
     x = s(61750),
     E = s(357704),
-    b = s(985018),
-    C = s(496569),
+    C = s(985018),
+    b = s(496569),
     A = s(498924),
     S = s(68465),
     v = s(165530),
@@ -36,36 +36,36 @@ let L = r.memo(function(e) {
         isHoveringOrFocusing: j
     } = (0, _.A)(L), {
         readyToClaim: O,
-        collectibleProductSkuIds: k,
-        collectedSkuIds: T
-    } = (0, E.K)(t, s), y = (0, o.bG)([p.A], () => p.A.isClaiming === s);
+        collectibleProductSkuIds: T,
+        collectedSkuIds: k
+    } = (0, E.K)(t, s), N = (0, o.bG)([p.A], () => p.A.isClaiming === s);
     return (0, n.jsx)(c.L, {
         onChange: l,
         threshold: 0,
         innerRef: L,
         children: (0, n.jsx)("div", {
             ref: L,
-            className: a()(C.ty, A.Q3, {
-                [C.yo]: j
+            className: a()(b.ty, A.Q3, {
+                [b.yo]: j
             }),
-            "aria-label": b.intl.formatToPlainString(b.t.Ez6aHE, {
+            "aria-label": C.intl.formatToPlainString(C.t.Ez6aHE, {
                 category: t.name
             }),
             children: (0, n.jsxs)("div", {
-                className: C.qt,
+                className: b.qt,
                 children: [(0, n.jsx)("img", {
                     alt: "Reward Bow",
                     src: I.A,
                     className: A.L8
                 }), (0, n.jsx)("div", {
-                    className: C.N1,
+                    className: b.N1,
                     children: (0, n.jsx)(u.LpS, {
-                        text: b.intl.string(b.t.rykAJ9),
+                        text: C.intl.string(C.t.rykAJ9),
                         disableColor: !0,
                         className: A.HZ
                     })
                 }), (0, n.jsxs)("div", {
-                    className: C.xQ,
+                    className: b.xQ,
                     children: [(0, n.jsxs)("div", {
                         className: A.xE,
                         children: [(0, n.jsxs)("div", {
@@ -74,11 +74,11 @@ let L = r.memo(function(e) {
                                 variant: "heading-md/medium",
                                 color: "text-strong",
                                 lineClamp: 1,
-                                className: C.tZ,
-                                children: b.intl.string(b.t["0mDmg/"])
+                                className: b.tZ,
+                                children: C.intl.string(C.t["0mDmg/"])
                             }), (0, n.jsx)(d.m, {
-                                text: O ? b.intl.string(b.t.cKH3tk) : b.intl.formatToPlainString(b.t["8aMDPc"], {
-                                    totalCount: k.length
+                                text: O ? C.intl.string(C.t.cKH3tk) : C.intl.formatToPlainString(C.t["8aMDPc"], {
+                                    totalCount: T.length
                                 }),
                                 align: "right",
                                 caretConfig: {
@@ -94,14 +94,14 @@ let L = r.memo(function(e) {
                                 })
                             })]
                         }), (0, n.jsx)("div", {
-                            className: C.oh,
+                            className: b.oh,
                             "aria-hidden": !0,
                             children: (0, n.jsxs)("div", {
                                 className: A.L$,
                                 children: [(0, n.jsx)(g.Ay, {
                                     variant: g.qP.BLUE,
-                                    progress: T.length,
-                                    maximum: k.length
+                                    progress: k.length,
+                                    maximum: T.length
                                 }), (0, n.jsxs)("div", {
                                     className: a()(A.__, {
                                         [A.gF]: O
@@ -112,19 +112,19 @@ let L = r.memo(function(e) {
                                     }) : null, (0, n.jsx)(i.EYj, {
                                         variant: "text-xs/medium",
                                         color: "currentColor",
-                                        children: b.intl.formatToPlainString(b.t["5TwASM"], {
-                                            collectedCount: T.length,
-                                            totalCount: k.length
+                                        children: C.intl.formatToPlainString(C.t["5TwASM"], {
+                                            collectedCount: k.length,
+                                            totalCount: T.length
                                         })
                                     })]
                                 })]
                             })
                         })]
                     }), (0, n.jsx)("div", {
-                        className: C.Vs,
+                        className: b.Vs,
                         children: (0, n.jsx)(i.e2v, {
                             wrap: !1,
-                            className: C.Ld,
+                            className: b.Ld,
                             fullWidth: !0,
                             children: (0, n.jsx)(i.$nd, {
                                 variant: "primary",
@@ -148,22 +148,22 @@ let L = r.memo(function(e) {
                                             transitionState: e.transitionState,
                                             onClose: e.onClose,
                                             size: "sm",
-                                            title: b.intl.string(b.t.SRTlyA),
+                                            title: C.intl.string(C.t.SRTlyA),
                                             actions: [{
-                                                text: b.intl.string(b.t.TyCVIq),
+                                                text: C.intl.string(C.t.TyCVIq),
                                                 onClick: e.onClose,
                                                 variant: "primary"
                                             }],
                                             children: (0, n.jsx)("div", {
-                                                children: b.intl.string(b.t["0YpIF/"])
+                                                children: C.intl.string(C.t["0YpIF/"])
                                             })
                                         })))
                                     })
                                 },
-                                text: b.intl.string(b.t.VnVTNc),
+                                text: C.intl.string(C.t.VnVTNc),
                                 fullWidth: !0,
                                 disabled: !O,
-                                loading: y
+                                loading: N
                             })
                         })
                     })]

@@ -1,8 +1,8 @@
 /** chunk id: 177366 params = (module,exports,require) **/
 "use strict";
 s.d(t, {
-    XU: () => C,
-    Yr: () => b,
+    XU: () => b,
+    Yr: () => C,
     k0: () => A
 });
 var n = s(64700),
@@ -22,7 +22,7 @@ var n = s(64700),
 let f = "#itemSkuId=",
     x = RegExp(`^${f}(\\d+)$`),
     E = [p.BVt.COLLECTIBLES_SHOP],
-    b = e => {
+    C = e => {
         let t = (0, r.zy)();
         n.useEffect(() => {
             if (null != e && E.includes(t.pathname)) return () => {
@@ -30,7 +30,7 @@ let f = "#itemSkuId=",
             }
         }, [e, t.pathname])
     },
-    C = e => {
+    b = e => {
         let t = (0, m.U)(),
             s = n.useRef(null),
             a = (0, r.zy)(),
@@ -38,16 +38,16 @@ let f = "#itemSkuId=",
             {
                 analyticsLocations: E
             } = (0, o.Ay)(f),
-            b = (0, _.A)();
+            C = (0, _.A)();
         n.useEffect(() => {
             let e = x.exec(a.hash);
             null != e ? s.current = e[1] : s.current = null
-        }, [b, a.hash]);
-        let C = (0, l.bG)([d.A], () => d.A.initialProductSkuId);
+        }, [C, a.hash]);
+        let b = (0, l.bG)([d.A], () => d.A.initialProductSkuId);
         n.useEffect(() => {
             if (t) return;
             let n = null;
-            if (null != C ? n = C : null != s.current && (n = s.current), null != n) {
+            if (null != b ? n = b : null != s.current && (n = s.current), null != n) {
                 let t = setTimeout(() => {
                     (e => {
                         let {
@@ -84,13 +84,13 @@ let f = "#itemSkuId=",
                         productSkuId: n,
                         analyticsLocations: E,
                         analyticsSource: f,
-                        tab: b,
+                        tab: C,
                         sessionId: e
                     })
                 }, 250);
                 return () => clearTimeout(t)
             }
-        }, [E, f, t, C, b, e])
+        }, [E, f, t, b, C, e])
     },
     A = e => {
         let t = n.useRef({}),

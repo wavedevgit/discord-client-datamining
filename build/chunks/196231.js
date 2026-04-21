@@ -26,22 +26,22 @@ let h = e => {
     null != h && (t = c.A.getCategoryByStoreListingId(h?.categoryStoreListingId)?.skuId);
     let E = t ?? s?.skuId ?? "",
         {
-            handleCardVisibilityChange: b
+            handleCardVisibilityChange: C
         } = (0, d.Z)(E, "home", "marketing featured block"),
-        C = (0, u.s4)(s, h, f),
+        b = (0, u.s4)(s, h, f),
         A = r.useRef(null),
         S = h?.bodyText,
         v = (0, o.uM)();
     return (0, n.jsx)(l.L, {
         innerRef: A,
-        onChange: b,
+        onChange: C,
         threshold: 0,
         children: (0, n.jsxs)(a.DUT, {
             className: m.oT,
             innerRef: A,
             style: {
-                ...null != C && {
-                    backgroundImage: `url(${C})`
+                ...null != b && {
+                    backgroundImage: `url(${b})`
                 }
             },
             onClick: () => {

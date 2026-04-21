@@ -20,8 +20,8 @@ var n = s(627968),
     f = s(166489),
     x = s(613258),
     E = s(758836),
-    b = s(652215),
-    C = s(985018),
+    C = s(652215),
+    b = s(985018),
     A = s(941734);
 let S = e => {
         let {
@@ -34,14 +34,14 @@ let S = e => {
         }, [c, t]), null == s) ? t !== i.g.HOME || c || l ? null : (0, n.jsx)("div", {
             className: A.YB,
             children: (0, n.jsx)(u.Z_, {
-                tenantId: b.FYj,
+                tenantId: C.FYj,
                 templateId: "shop-home"
             })
         }) : (0, n.jsxs)(n.Fragment, {
             children: [t === i.g.ORBS && (0, n.jsx)(f.A, {}), (0, n.jsx)("div", {
                 className: A.YB,
                 children: (0, n.jsx)(u.Qs, {
-                    tenantId: b.FYj,
+                    tenantId: C.FYj,
                     layoutId: s
                 })
             })]
@@ -104,15 +104,15 @@ let S = e => {
                         className: A.R$,
                         children: [(0, n.jsx)(c.Heading, {
                             variant: "heading-md/semibold",
-                            children: C.intl.string(C.t.Yr70c4)
+                            children: b.intl.string(b.t.Yr70c4)
                         }), (0, n.jsx)(c.Button, {
                             variant: "primary",
-                            text: C.intl.string(C.t.AfrvRD),
+                            text: b.intl.string(b.t.AfrvRD),
                             onClick: () => {
                                 t({
                                     sourceButton: "shop all button",
                                     shouldAnimate: !0
-                                }), _.default.track(b.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                                }), _.default.track(C.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                                     collectibles_shop_session_id: u?.sessionId,
                                     page_type: s,
                                     page_category: s === i.g.HOME ? void 0 : u?.pageCategory,

@@ -1,7 +1,7 @@
 /** chunk id: 227205 params = (module,exports,require) **/
 "use strict";
 s.d(t, {
-    A: () => T
+    A: () => k
 });
 var n = s(627968),
     r = s(64700),
@@ -20,8 +20,8 @@ var n = s(627968),
     f = s(954571),
     x = s(440938),
     E = s(993408),
-    b = s(212407),
-    C = s(521e3),
+    C = s(212407),
+    b = s(521e3),
     A = s(938191),
     S = s(815280),
     v = s(60140),
@@ -29,7 +29,7 @@ var n = s(627968),
     L = s(652215),
     j = s(985018),
     O = s(941734);
-let k = {
+let T = {
         rankedSkuIds: [],
         name: "",
         unpublishedAt: void 0,
@@ -38,19 +38,19 @@ let k = {
         type: c.g.HERO,
         categoryStoreListingId: ""
     },
-    T = e => {
+    k = e => {
         let {
             isLoading: t,
             handleTransition: s,
             category: l,
-            heroBlock: T,
-            tab: y,
-            onVisibilityChange: N
+            heroBlock: k,
+            tab: N,
+            onVisibilityChange: y
         } = e, R = (0, i.K)(e => {
-            N?.(e)
-        }, .1, null != N), B = r.useRef(null), P = (0, A.yB)("HeroBlock"), M = (0, d.bG)([p.default], () => p.default.getCurrentUser()), H = (0, x.uM)(), {
+            y?.(e)
+        }, .1, null != y), B = r.useRef(null), P = (0, A.yB)("HeroBlock"), M = (0, d.bG)([p.default], () => p.default.getCurrentUser()), H = (0, x.uM)(), {
             analyticsLocations: D
-        } = (0, g.Ay)(_.A.COLLECTIBLES_SHOP_HERO), w = r.useMemo(() => null != T ? T : null == l ? k : {
+        } = (0, g.Ay)(_.A.COLLECTIBLES_SHOP_HERO), w = r.useMemo(() => null != k ? k : null == l ? T : {
             rankedSkuIds: l.heroRanking ?? [],
             name: l.name,
             unpublishedAt: l.unpublishedAt,
@@ -63,14 +63,14 @@ let k = {
             heroLogoUrl: l.heroLogoUrl,
             heroBannerUrl: l.heroBannerUrl,
             heroBannerAnimatedUrl: l.heroBannerAnimatedUrl
-        }, [T, l]), {
+        }, [k, l]), {
             bannerDisplayConfig: F,
             logoDisplayConfig: G,
             heroLogo: U,
-            heroBannerStatic: V,
+            heroBannerStatic: K,
             heroBannerAnimated: W,
-            heroBannerRive: K
-        } = (0, b.Kk)(w), z = F?.responsive ?? !1, Y = F?.backgroundStyle, $ = null != K, Z = y === I.G2.ORBS, q = null != l && l.isOrbsExclusive, X = Z ? j.intl.string(j.t["1CdL8d"]) : j.intl.string(j.t.xYKa1T), J = () => {
+            heroBannerRive: z
+        } = (0, C.Kk)(w), V = F?.responsive ?? !1, Y = F?.backgroundStyle, $ = null != z, Z = N === I.G2.ORBS, q = null != l && l.isOrbsExclusive, X = Z ? j.intl.string(j.t["1CdL8d"]) : j.intl.string(j.t.xYKa1T), J = () => {
             Z ? ((0, h.Y)({
                 pageType: L.liQ.SHOP_ORBS_TAB,
                 sectionType: L.JJy.ORBS_SHOP_HERO_BLOCK,
@@ -85,34 +85,34 @@ let k = {
             }), f.default.track(L.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: H?.sessionId,
                 sku_id: w.categorySkuId,
-                page_type: y,
+                page_type: N,
                 page_section: H?.pageSection,
                 page_category: H?.pageCategory,
                 cta_name: "shop latest category hero button"
             }))
         };
-        return null != M && (t || w !== k) ? (0, n.jsx)(g.f5, {
+        return null != M && (t || w !== T) ? (0, n.jsx)(g.f5, {
             value: D,
             children: (0, n.jsxs)("div", {
                 ref: R,
                 className: O.os,
-                children: [$ ? (0, C.VA)({
+                children: [$ ? (0, b.VA)({
                     isCustomCursorEnabled: P,
                     className: O.Xt,
                     riveEventTargetRef: B
                 }) : null, (0, n.jsx)("div", {
                     className: a()(O.vK, {
                         [O.cN]: $,
-                        [O.no]: z
+                        [O.no]: V
                     }),
                     style: null != Y ? {
                         background: Y
                     } : void 0,
-                    children: null != V && (0, n.jsx)(S.A, {
-                        bannerStatic: V,
+                    children: null != K && (0, n.jsx)(S.A, {
+                        bannerStatic: K,
                         bannerAnimated: W,
-                        bannerRive: K,
-                        isResponsive: z,
+                        bannerRive: z,
+                        isResponsive: V,
                         eventTargetRef: B
                     })
                 }), (0, n.jsxs)("div", {
@@ -126,7 +126,7 @@ let k = {
                         })
                     }) : (0, n.jsxs)("div", {
                         className: a()(O.bC, {
-                            [O.no]: z
+                            [O.no]: V
                         }),
                         children: [t ? (0, n.jsx)("div", {
                             className: O.Hw
@@ -167,9 +167,9 @@ let k = {
                         })]
                     }), (0, n.jsx)(v.A, {
                         heroBlockRecord: w,
-                        tab: y,
+                        tab: N,
                         isBlockLoading: t,
-                        layout: y === I.G2.HOME ? "hscroll" : "feed"
+                        layout: N === I.G2.HOME ? "hscroll" : "feed"
                     })]
                 })]
             })

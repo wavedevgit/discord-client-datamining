@@ -1,7 +1,7 @@
 /** chunk id: 565057 params = (module,exports,require) **/
 "use strict";
 s.d(t, {
-    A: () => N
+    A: () => y
 });
 var n = s(627968),
     r = s(64700),
@@ -20,8 +20,8 @@ var n = s(627968),
     f = s(975571),
     x = s(927578),
     E = s(440938),
-    b = s(590180),
-    C = s(940980),
+    C = s(590180),
+    b = s(940980),
     A = s(751304),
     S = s(561769),
     v = s(484469),
@@ -29,26 +29,26 @@ var n = s(627968),
     L = s(4196),
     j = s(938191),
     O = s(758836),
-    k = s(652215),
-    T = s(985018),
-    y = s(941734);
-let N = e => {
+    T = s(652215),
+    k = s(985018),
+    N = s(941734);
+let y = e => {
     let {
         isLoading: t,
         title: s,
         sortedSkuIds: l,
-        numVisibleItems: N,
+        numVisibleItems: y,
         prioritizeUserDiscounts: R,
         tab: B,
         buttonContainerClassName: P,
         orbsSupportedOnly: M
-    } = e, H = (0, i.bG)([m.default], () => m.default.getCurrentUser()), D = x.Ay.canUseCollectibles(H), w = (0, C.W)("FeedBlock"), F = (0, j.yB)("FeedBlock"), {
+    } = e, H = (0, i.bG)([m.default], () => m.default.getCurrentUser()), D = x.Ay.canUseCollectibles(H), w = (0, b.W)("FeedBlock"), F = (0, j.yB)("FeedBlock"), {
         sortType: G,
         setSortType: U,
-        sortedItems: V,
+        sortedItems: K,
         sortOptions: W,
-        shuffleProducts: K,
-        showRecommendationOption: z
+        shuffleProducts: z,
+        showRecommendationOption: V
     } = (0, L.A)({
         sortedSkuIds: l,
         isPremiumUser: D,
@@ -63,7 +63,7 @@ let N = e => {
         X({
             isShuffling: !1,
             onOutroComplete: () => U(e)
-        }), p.default.track(k.HAw.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
+        }), p.default.track(T.HAw.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
             page_session_id: Q,
             sort_type: e
         })
@@ -71,37 +71,37 @@ let N = e => {
     return null == H ? null : (0, n.jsx)(g.f5, {
         value: ee,
         children: (0, n.jsxs)("div", {
-            className: a()(y.lD, y.YB),
+            className: a()(N.lD, N.YB),
             children: [(0, n.jsxs)("div", {
-                className: y.$6,
+                className: N.$6,
                 children: [(0, n.jsxs)("div", {
-                    className: y.LD,
+                    className: N.LD,
                     children: [(0, n.jsx)(c.Heading, {
                         variant: "heading-lg/semibold",
                         children: s
-                    }), z && (0, n.jsx)(o.m, {
-                        text: T.intl.string(T.t["3taPdj"]),
+                    }), V && (0, n.jsx)(o.m, {
+                        text: k.intl.string(k.t["3taPdj"]),
                         position: "top",
-                        "aria-label": T.intl.string(T.t["3taPdj"]),
+                        "aria-label": k.intl.string(k.t["3taPdj"]),
                         children: (0, n.jsx)(c.DUT, {
-                            onClick: () => (0, d.A)(f.A.getArticleURL(k.MVz.DATA_USED_FOR_RECOMMENDED)),
-                            className: y.sT,
+                            onClick: () => (0, d.A)(f.A.getArticleURL(T.MVz.DATA_USED_FOR_RECOMMENDED)),
+                            className: N.sT,
                             children: (0, n.jsx)(c.mir, {
                                 size: "sm"
                             })
                         })
                     })]
                 }), (0, n.jsxs)("div", {
-                    className: a()(y.IE, {
+                    className: a()(N.IE, {
                         [j.jP]: F
                     }),
                     children: [(0, n.jsx)(c.Text, {
                         variant: "text-md/medium",
-                        children: T.intl.string(T.t.uaX705)
+                        children: k.intl.string(k.t.uaX705)
                     }), (0, n.jsx)("div", {
-                        className: a()(P, y.pI),
+                        className: a()(P, N.pI),
                         children: (0, n.jsx)(c.l6P, {
-                            label: T.intl.string(T.t.uaX705),
+                            label: k.intl.string(k.t.uaX705),
                             hideLabel: !0,
                             options: W,
                             onSelectionChange: es,
@@ -124,14 +124,14 @@ let N = e => {
                         className: P,
                         children: (0, n.jsx)(c.Button, {
                             variant: "secondary",
-                            text: T.intl.string(T.t.X3tnc4),
+                            text: k.intl.string(k.t.X3tnc4),
                             buttonRef: et,
                             onClick: () => {
                                 X({
                                     isShuffling: !0,
-                                    onOutroComplete: K,
+                                    onOutroComplete: z,
                                     returnRef: et
-                                }), p.default.track(k.HAw.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
+                                }), p.default.track(T.HAw.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
                                     page_session_id: Q
                                 })
                             },
@@ -140,20 +140,20 @@ let N = e => {
                     })]
                 })]
             }), (0, n.jsx)("div", {
-                className: y.hm,
+                className: N.hm,
                 children: t ? (0, n.jsx)(n.Fragment, {
                     children: [...Array(12)].map((e, t) => (0, n.jsx)(v.A, {}, t + 1))
-                }) : V.slice(0, N).map((e, t) => {
-                    let s, r = b.A.getCategoryForProduct(e.skuId);
+                }) : K.slice(0, y).map((e, t) => {
+                    let s, r = C.A.getCategoryForProduct(e.skuId);
                     if (null == e || null == r) return null;
                     if (Z)
                         if (q === I.J.SHUFFLE_OUT) return (0, n.jsx)("div", {
-                            className: y.Z2,
+                            className: N.Z2,
                             children: (0, n.jsx)(v.A, {
                                 skipPulseAnimation: !0
                             })
                         }, `${e.skuId}-${t}`);
-                        else q === I.J.SORT_OUT ? s = y.MW : q === I.J.SHUFFLE_IN ? s = y.aS : q === I.J.SORT_IN && (s = y.F7);
+                        else q === I.J.SORT_OUT ? s = N.MW : q === I.J.SHUFFLE_IN ? s = N.aS : q === I.J.SORT_IN && (s = N.F7);
                     return (0, n.jsx)(E.R9, {
                         newValue: {
                             tilePosition: t,

@@ -39,16 +39,16 @@ let x = {
         } = e, g = (0, a.K)(e => {
             i?.(e)
         }, .1, null != i), E = (0, o.bG)([_.default], () => _.default.getCurrentUser()), {
-            analyticsLocations: b
+            analyticsLocations: C
         } = (0, u.Ay)(d.A.COLLECTIBLES_SHOP_HERO), {
-            bannerDisplayConfig: C,
+            bannerDisplayConfig: b,
             logoDisplayConfig: A,
             heroLogo: S,
             heroBannerStatic: v,
             heroBannerAnimated: I
-        } = (0, m.Kk)(s), L = C?.responsive ?? !1, j = C?.backgroundStyle;
+        } = (0, m.Kk)(s), L = b?.responsive ?? !1, j = b?.backgroundStyle;
         return null != E && (t || s !== x) ? (0, n.jsx)(u.f5, {
-            value: b,
+            value: C,
             children: (0, n.jsxs)("div", {
                 ref: g,
                 className: f.os,

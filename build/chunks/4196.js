@@ -25,25 +25,25 @@ function x(e) {
         isPremiumUser: s,
         prioritizeUserDiscounts: r,
         orbsSupportedOnly: x
-    } = e, E = (0, i.bG)([o.A], () => o.A.hasConsented(p.YAq.PERSONALIZATION)), b = n.useMemo(() => t?.[a.i.RECOMMENDED] ?? [], [t]), C = n.useMemo(() => t?.[a.i.POPULAR] ?? [], [t]), A = b.length > 0 && E, [S, v] = n.useState(A ? a.i.RECOMMENDED : a.i.POPULAR), I = (0, i.bG)([c.A], () => c.A.productsWithVariantsAsGroup), L = n.useMemo(() => (0, u.CE)(I), [I]), j = (0, i.bG)([d.A], () => d.A.getUserDiscounts()), O = (0, g.A)(), k = (0, _.p)(), [T, y] = n.useState([]), N = n.useCallback(() => {
-        v(a.i.RANDOM), y(l().shuffle(L))
+    } = e, E = (0, i.bG)([o.A], () => o.A.hasConsented(p.YAq.PERSONALIZATION)), C = n.useMemo(() => t?.[a.i.RECOMMENDED] ?? [], [t]), b = n.useMemo(() => t?.[a.i.POPULAR] ?? [], [t]), A = C.length > 0 && E, [S, v] = n.useState(A ? a.i.RECOMMENDED : a.i.POPULAR), I = (0, i.bG)([c.A], () => c.A.productsWithVariantsAsGroup), L = n.useMemo(() => (0, u.CE)(I), [I]), j = (0, i.bG)([d.A], () => d.A.getUserDiscounts()), O = (0, g.A)(), T = (0, _.p)(), [k, N] = n.useState([]), y = n.useCallback(() => {
+        v(a.i.RANDOM), N(l().shuffle(L))
     }, [L]);
     n.useEffect(() => {
-        y(l().shuffle(L))
+        N(l().shuffle(L))
     }, [L]);
     let R = n.useMemo(() => {
         let e = [];
         if (S === a.i.RECENT) e = L;
         else if (S === a.i.PRICE_LOW_TO_HIGH) e = (0, u.bf)([...L], s, x);
         else if (S === a.i.RECOMMENDED) {
-            let t = O(b);
-            e = r ? (0, u.Bs)(t, j) : t
-        } else if (S === a.i.POPULAR) {
             let t = O(C);
             e = r ? (0, u.Bs)(t, j) : t
-        } else S === a.i.RANDOM && (e = T);
-        return x ? (0, h.ex)(k(e)) : k(e)
-    }, [S, x, k, s, L, O, b, r, j, C, T]);
+        } else if (S === a.i.POPULAR) {
+            let t = O(b);
+            e = r ? (0, u.Bs)(t, j) : t
+        } else S === a.i.RANDOM && (e = k);
+        return x ? (0, h.ex)(T(e)) : T(e)
+    }, [S, x, T, s, L, O, C, r, j, b, k]);
     return {
         sortType: S,
         setSortType: v,
@@ -65,6 +65,6 @@ function x(e) {
             }), e
         }, [A]),
         showRecommendationOption: A,
-        shuffleProducts: N
+        shuffleProducts: y
     }
 }

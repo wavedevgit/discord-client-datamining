@@ -20,8 +20,8 @@ var n = s(627968),
     f = s(231209),
     x = s(850735),
     E = s(781724),
-    b = s(758836);
-let C = [b.G2.HOME, b.G2.ORBS];
+    C = s(758836);
+let b = [C.G2.HOME, C.G2.ORBS];
 
 function A(e) {
     let {
@@ -36,14 +36,14 @@ function A(e) {
     let A = (0, a.bG)([i.A], () => i.A.useReducedMotion),
         [I, L] = r.useState(void 0),
         [j, O] = r.useState(!0),
-        k = r.useMemo(() => s.filter(e => !b.MS.some(t => {
+        T = r.useMemo(() => s.filter(e => !C.MS.some(t => {
             let {
                 categorySkuId: s
             } = t;
             return s === e.skuId
         })), [s]),
-        T = (0, o.f)("CollectiblesContent"),
-        y = r.useCallback(e => {
+        k = (0, o.f)("CollectiblesContent"),
+        N = r.useCallback(e => {
             let {
                 sourceButton: t,
                 categorySkuId: s,
@@ -53,31 +53,31 @@ function A(e) {
             } = e;
             u(t, s);
             let a = n && !A,
-                i = l ? b.G2.ORBS : b.G2.CATALOG;
+                i = l ? C.G2.ORBS : C.G2.CATALOG;
             L(s), O(!r), c(i, a)
         }, [A, c, u]),
         {
-            searchError: N
+            searchError: y
         } = (0, g.S)();
-    return null != N ? (0, n.jsx)(E.A, {}) : null != p ? (0, n.jsx)(h.h, {
+    return null != y ? (0, n.jsx)(E.A, {}) : null != p ? (0, n.jsx)(h.h, {
         onRetry: _,
         errorMessage: p,
         errorOrigin: h.A.SHOP_PAGE
-    }) : t === b.G2.HOME && T ? (0, n.jsx)(x.A, {
+    }) : t === C.G2.HOME && k ? (0, n.jsx)(x.A, {
         tab: l.g.HOME,
         transitionState: d,
-        handleTransition: y
-    }) : t === b.G2.ORBS && T ? (0, n.jsx)(x.A, {
+        handleTransition: N
+    }) : t === C.G2.ORBS && k ? (0, n.jsx)(x.A, {
         tab: l.g.ORBS,
         transitionState: d,
-        handleTransition: y
-    }) : C.includes(t) ? (0, n.jsx)(f.A, {
-        handleTransition: y,
+        handleTransition: N
+    }) : b.includes(t) ? (0, n.jsx)(f.A, {
+        handleTransition: N,
         tab: t,
         transitionState: d
     }) : (0, n.jsx)(m.A, {
         tab: t,
-        categories: k,
+        categories: T,
         initialCategoryId: I,
         showFilterInitially: j,
         onUnmount: () => {

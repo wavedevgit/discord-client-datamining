@@ -20,8 +20,8 @@ var n = s(627968),
     f = s(597783),
     x = s(212407),
     E = s(758836),
-    b = s(652215),
-    C = s(49999),
+    C = s(652215),
+    b = s(49999),
     A = s(818348),
     S = s(985018),
     v = s(941734);
@@ -29,7 +29,7 @@ let I = e => {
     let {
         wideBannerBlock: t,
         tab: s
-    } = e, l = p.A.getCategoryByStoreListingId(t.categoryStoreListingId), I = r.useRef(null), L = r.useRef(null), [j, O] = r.useState(), [k, T] = r.useState(!1);
+    } = e, l = p.A.getCategoryByStoreListingId(t.categoryStoreListingId), I = r.useRef(null), L = r.useRef(null), [j, O] = r.useState(), [T, k] = r.useState(!1);
     r.useEffect(() => {
         let e = L.current;
         if (null == e) return;
@@ -40,10 +40,10 @@ let I = e => {
             e.onload = null
         }
     }, []);
-    let y = l?.skuId ?? "",
+    let N = l?.skuId ?? "",
         {
-            handleCardVisibilityChange: N
-        } = (0, f.Z)(y, "home", "marketing wide banner"),
+            handleCardVisibilityChange: y
+        } = (0, f.Z)(N, "home", "marketing wide banner"),
         R = (0, h.uM)(),
         {
             bannerURL: B
@@ -53,17 +53,17 @@ let I = e => {
         H = !0 !== t.disableCta && (null != t.ctaText && "" !== t.ctaText || M),
         D = null != t.logoURL && "" !== t.logoURL,
         w = r.useCallback(() => {
-            if (T(!0), t.isDismissible) {
+            if (k(!0), t.isDismissible) {
                 let e = t.dismissibleContentVersion ?? 0;
                 (0, d.$l)(i.M.COLLECTIBLES_SHOP_WIDE_BANNER, e, {
-                    dismissAction: C.i.USER_DISMISS
+                    dismissAction: b.i.USER_DISMISS
                 })
             }
         }, [t.isDismissible, t.dismissibleContentVersion]),
         F = r.useCallback(e => {
-            g.default.track(b.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            g.default.track(C.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: R?.sessionId,
-                sku_id: y,
+                sku_id: N,
                 page_type: s,
                 page_section: R?.pageSection,
                 page_category: R?.pageCategory,
@@ -71,7 +71,7 @@ let I = e => {
                 tile_position: String(R?.tilePosition),
                 cta_name: e
             })
-        }, [R, y, s]),
+        }, [R, N, s]),
         G = r.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
             if (F(e), null != t.ctaRoute && "" !== t.ctaRoute) {
@@ -89,12 +89,12 @@ let I = e => {
                 } else(0, u.pX)(e)
             }
         }, [t.ctaRoute, F]);
-    if (null == B || k) return null;
+    if (null == B || T) return null;
     let U = a()(v.nM, v.Tq, v.TS, v.YB, {
             [v._1]: P,
             [v.vb]: M
         }),
-        V = (0, n.jsxs)(n.Fragment, {
+        K = (0, n.jsxs)(n.Fragment, {
             children: [t.isDismissible && (0, n.jsx)("div", {
                 className: v.Mh,
                 children: (0, n.jsx)(c.JnF, {
@@ -142,7 +142,7 @@ let I = e => {
                         lineClamp: 2,
                         variant: P ? "text-md/medium" : "text-sm/medium",
                         children: P ? S.intl.format(S.t.SFFP7K, {
-                            helpdeskArticle: m.A.getArticleURL(b.MVz.VIRTUAL_CURRENCY_LEARN_MORE)
+                            helpdeskArticle: m.A.getArticleURL(C.MVz.VIRTUAL_CURRENCY_LEARN_MORE)
                         }) : t.body
                     }), H && (0, n.jsxs)("div", {
                         className: v.nP,
@@ -165,17 +165,17 @@ let I = e => {
         theme: P ? void 0 : A.NJ.DARK,
         children: e => (0, n.jsx)(o.L, {
             innerRef: I,
-            onChange: N,
+            onChange: y,
             threshold: 0,
             children: M ? (0, n.jsx)(c.DUT, {
                 innerRef: I,
                 onClick: () => G(null),
                 className: a()(e, U),
-                children: V
+                children: K
             }) : (0, n.jsx)("div", {
                 ref: I,
                 className: a()(e, U),
-                children: V
+                children: K
             })
         })
     })

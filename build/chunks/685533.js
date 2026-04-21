@@ -20,8 +20,8 @@ var n = s(627968),
     f = s(100057),
     x = s(751304),
     E = s(561769),
-    b = s(484469),
-    C = s(998694),
+    C = s(484469),
+    b = s(998694),
     A = s(438166),
     S = s(652215),
     v = s(528096);
@@ -36,17 +36,17 @@ function L(e) {
         tab: l
     } = e, L = (0, u.uM)(), j = L?.sessionId ?? "", {
         noCache: O,
-        includeUnpublished: k
-    } = (0, C.A)(), T = (0, g.W)("CollectiblesFilterResults"), y = (0, i.bG)([c.default], () => c.default.getCurrentUser()), {
-        skus: N,
+        includeUnpublished: T
+    } = (0, b.A)(), k = (0, g.W)("CollectiblesFilterResults"), N = (0, i.bG)([c.default], () => c.default.getCurrentUser()), {
+        skus: y,
         currentPage: R,
         totalCount: B,
         isFetchingResults: P
-    } = (0, p.S)(), M = (0, i.yK)([_.A], () => _.A.getProductsBySkus(N)), H = r.useCallback(() => {
+    } = (0, p.S)(), M = (0, i.yK)([_.A], () => _.A.getProductsBySkus(y)), H = r.useCallback(() => {
         s?.current?.scrollToTop({
             animate: !0
         })
-    }, [s]), D = N?.join("");
+    }, [s]), D = y?.join("");
     r.useEffect(() => {
         H()
     }, [D, H]);
@@ -57,20 +57,20 @@ function L(e) {
             sessionId: j,
             checkpoint: f.t.SHOP_RENDERED,
             tab: l,
-            unpublishedCategoriesShown: k,
+            unpublishedCategoriesShown: T,
             cacheDisabled: O
         })
-    }, [j, k, O, t, l]);
+    }, [j, T, O, t, l]);
     let G = r.useRef(null),
         {
             setQueryPageSize: U,
-            setQueryPageOffset: V,
+            setQueryPageOffset: K,
             queryPageSize: W
         } = (0, h.v)(),
-        [K, z] = r.useState(!1),
-        Y = t || P || null == y;
+        [z, V] = r.useState(!1),
+        Y = t || P || null == N;
     r.useEffect(() => {
-        Y ? z(!1) : F.length > 0 && z(!0)
+        Y ? V(!1) : F.length > 0 && V(!0)
     }, [Y, F.length]);
     let $ = W > 0 && !Y && 0 === F.length;
     r.useEffect(() => {
@@ -88,8 +88,8 @@ function L(e) {
             page_size: W,
             cta_name: `filter results page ${e}`,
             page_type: "catalog"
-        }), V((e - 1) * W)
-    }, [L, W, V]);
+        }), K((e - 1) * W)
+    }, [L, W, K]);
     return (0, n.jsxs)(E.v3.Provider, {
         value: I,
         children: [(0, n.jsxs)("div", {
@@ -98,17 +98,17 @@ function L(e) {
             }),
             children: [$ && (0, n.jsx)(A.A, {}), (0, n.jsxs)("div", {
                 className: a()(v.ZE, {
-                    [v.Kp]: K
+                    [v.Kp]: z
                 }),
                 ref: G,
-                children: [Y && [...Array(W)].map((e, t) => (0, n.jsx)(b.A, {}, t)), !Y && F.map((e, t) => null == _.A.getCategory(e.categorySkuId) ? null : (0, n.jsx)(u.R9, {
+                children: [Y && [...Array(W)].map((e, t) => (0, n.jsx)(C.A, {}, t)), !Y && F.map((e, t) => null == _.A.getCategory(e.categorySkuId) ? null : (0, n.jsx)(u.R9, {
                     newValue: {
                         tilePosition: t
                     },
                     children: (0, n.jsx)(x.A, {
                         skuId: e.skuId,
                         hideStaticBundleBackgroundAsset: !0,
-                        prioritizedCurrency: T ? E.Hi.FIAT : void 0
+                        prioritizedCurrency: k ? E.Hi.FIAT : void 0
                     }, e.skuId)
                 }, e.skuId))]
             })]
