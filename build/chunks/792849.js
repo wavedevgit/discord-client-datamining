@@ -1,13 +1,14 @@
 /** chunk id: 792849 params = (module,exports,require) **/
 l.d(t, {
-    g: () => o
+    g: () => d
 });
 var a = l(627968);
 l(64700);
 var r = l(397927),
-    n = l(261225),
-    s = l(970488);
-let i = e => {
+    n = l(204990),
+    s = l(261225),
+    i = l(970488);
+let o = e => {
         let {
             color: t,
             children: l
@@ -27,16 +28,17 @@ let i = e => {
             children: l
         })
     },
-    o = {
+    d = {
         name: "Grid",
         id: "grid",
         component: e => {
             let {
                 columns: t,
-                perPage: l,
-                paginationPosition: o,
-                gridItemColumns: d,
-                gridItemRows: c
+                paginationStrategy: l,
+                perPage: n,
+                paginationPosition: d,
+                gridItemColumns: c,
+                gridItemRows: u
             } = e;
             return (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)(r.Text, {
@@ -49,65 +51,68 @@ let i = e => {
                     style: {
                         marginTop: 24
                     },
-                    children: (0, a.jsxs)(n.A, {
-                        perPage: l,
+                    children: (0, a.jsxs)(s.A, {
                         columns: t,
-                        paginationPosition: o,
-                        children: [(0, a.jsx)(i, {
+                        paginationOptions: {
+                            paginationStrategy: l,
+                            perPage: n,
+                            paginationPosition: d
+                        },
+                        children: [(0, a.jsx)(o, {
                             color: "red"
-                        }), (0, a.jsx)(s.A, {
-                            columns: d,
-                            rows: c,
-                            children: (0, a.jsx)(i, {
+                        }), (0, a.jsx)(i.A, {
+                            columns: c,
+                            rows: u,
+                            children: (0, a.jsx)(o, {
                                 color: "orange",
                                 children: (0, a.jsx)(r.Text, {
                                     variant: "text-lg/semibold",
                                     children: "GridItem"
                                 })
                             })
-                        }), (0, a.jsx)(i, {
+                        }), (0, a.jsx)(o, {
                             color: "yellow"
-                        }), (0, a.jsx)(i, {
+                        }), (0, a.jsx)(o, {
                             color: "green"
-                        }), (0, a.jsx)(i, {
+                        }), (0, a.jsx)(o, {
                             color: "blue"
-                        }), (0, a.jsx)(i, {
+                        }), (0, a.jsx)(o, {
                             color: "violet"
-                        }), (0, a.jsx)(i, {
+                        }), (0, a.jsx)(o, {
                             color: "red"
-                        }), (0, a.jsx)(i, {
+                        }), (0, a.jsx)(o, {
                             color: "orange"
-                        }), (0, a.jsx)(i, {
+                        }), (0, a.jsx)(o, {
                             color: "yellow"
-                        }), (0, a.jsx)(i, {
+                        }), (0, a.jsx)(o, {
                             color: "green"
-                        }), (0, a.jsx)(i, {
+                        }), (0, a.jsx)(o, {
                             color: "blue"
-                        }), (0, a.jsx)(i, {
+                        }), (0, a.jsx)(o, {
                             color: "violet"
-                        }), (0, a.jsx)(i, {
+                        }), (0, a.jsx)(o, {
                             color: "red"
-                        }), (0, a.jsx)(i, {
+                        }), (0, a.jsx)(o, {
                             color: "orange"
-                        }), (0, a.jsx)(i, {
+                        }), (0, a.jsx)(o, {
                             color: "yellow"
-                        }), (0, a.jsx)(i, {
+                        }), (0, a.jsx)(o, {
                             color: "green"
-                        }), (0, a.jsx)(i, {
+                        }), (0, a.jsx)(o, {
                             color: "blue"
-                        }), (0, a.jsx)(i, {
+                        }), (0, a.jsx)(o, {
                             color: "violet"
-                        }), (0, a.jsx)(i, {
+                        }), (0, a.jsx)(o, {
                             color: "red"
-                        }), (0, a.jsx)(i, {
+                        }), (0, a.jsx)(o, {
                             color: "orange"
-                        }), (0, a.jsx)(i, {
+                        }), (0, a.jsx)(o, {
                             color: "yellow"
-                        }), (0, a.jsx)(i, {
+                        }), (0, a.jsx)(o, {
                             color: "green"
-                        }), (0, a.jsx)(i, {
+                        }), (0, a.jsx)(o, {
                             color: "blue"
-                        }), (0, a.jsx)(i, {
+                        }), (0, a.jsx)(o, {
                             color: "violet",
                             children: (0, a.jsx)(r.Text, {
                                 variant: "text-lg/semibold",
@@ -123,6 +128,18 @@ let i = e => {
                 label: "Columns",
                 type: "number",
                 defaultValue: 3
+            },
+            paginationStrategy: {
+                label: "Pagination Strategy",
+                type: "select",
+                defaultValue: n.o.PAGINATE,
+                options: [{
+                    label: "Paginate",
+                    value: n.o.PAGINATE
+                }, {
+                    label: "Truncate",
+                    value: n.o.TRUNCATE
+                }]
             },
             perPage: {
                 label: "Grid Items per Page (default, all)",

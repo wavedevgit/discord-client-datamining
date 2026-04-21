@@ -1,6 +1,6 @@
 /** chunk id: 604238 params = (module,exports,require) **/
 r.d(t, {
-    E: () => T,
+    E: () => C,
     e: () => _
 });
 var l = r(64700),
@@ -23,8 +23,8 @@ var l = r(64700),
     S = r(702755),
     y = r(954644),
     x = r(634791),
-    C = r(190503);
-let T = {
+    T = r(190503);
+let C = {
         ContainedHero: a.A,
         InteractiveHScroll: u.A,
         Carousel: i.A,
@@ -47,7 +47,7 @@ let T = {
         Stack: g.Kp,
         Text: g.t,
         Tooltip: g.xY,
-        Image: C.A,
+        Image: T.A,
         Any1: x.A,
         Any2: x.A,
         Any3: x.A
@@ -57,7 +57,7 @@ let T = {
             overrides: e
         } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
         return l.useMemo(() => {
-            let t = (0, n.cloneDeep)(T);
+            let t = (0, n.cloneDeep)(C);
             if (null != e)
                 for (let [r, l] of Object.entries(e)) null != l && (t[r] = l);
             return t
