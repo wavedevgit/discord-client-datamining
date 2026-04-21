@@ -14,16 +14,16 @@ function o(e) {
         label: t,
         description: n,
         component: o,
-        renderComponent: c
-    } = e, d = (0, s.bO)(o);
-    return o.type === r.I5.CHECKBOX ? c(o, "label-child") : (0, l.jsxs)(a.eIh, {
+        renderComponent: d
+    } = e, c = (0, s.bO)(o);
+    return o.type === r.I5.CHECKBOX ? d(o, "label-child") : (0, l.jsxs)(a.eIh, {
         title: t,
         required: o.required,
-        error: d,
+        error: c,
         children: [null != n && (0, l.jsx)(a.ayl, {
             type: a.tiu.DESCRIPTION,
             className: i.h,
             children: n
-        }), c(o, "label-child")]
+        }), d(o, "label-child")]
     })
 }

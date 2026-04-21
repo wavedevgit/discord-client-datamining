@@ -9,8 +9,8 @@ var a = n(503698),
     s = n(397927),
     i = n(769840),
     o = n(263577),
-    c = n(156603),
-    d = n(176563),
+    d = n(156603),
+    c = n(176563),
     u = n(506326),
     m = n(915089),
     p = n(818348),
@@ -28,7 +28,7 @@ function E(e) {
     if (null != a && "href" in a) {
         let {
             ariaDescription: e,
-            href: c
+            href: d
         } = a;
         return (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(s.AC4, {
@@ -36,25 +36,25 @@ function E(e) {
                 children: e
             }), (0, l.jsx)(s.MzZ, {
                 className: r()(t, n),
-                href: c,
+                href: d,
                 "aria-describedby": o,
                 children: i
             })]
         })
     }
     let {
-        onClick: c,
-        ariaDescription: d
+        onClick: d,
+        ariaDescription: c
     } = a ?? {};
     return (0, l.jsxs)(s.gmh.Provider, {
-        value: null == c,
-        children: [null != c && null != d && (0, l.jsx)(s.AC4, {
+        value: null == d,
+        children: [null != d && null != c && (0, l.jsx)(s.AC4, {
             id: o,
-            children: d
+            children: c
         }), (0, l.jsx)(s.DUT, {
-            onClick: c,
-            "aria-describedby": null == c ? void 0 : o,
-            className: r()(t, null != c && n),
+            onClick: d,
+            "aria-describedby": null == d ? void 0 : o,
+            className: r()(t, null != d && n),
             children: i
         })]
     })
@@ -90,7 +90,7 @@ function N(e) {
     } = e, v = (0, m.GV)(), {
         primaryColor: j,
         secondaryColor: S
-    } = (0, d.A)(N);
+    } = (0, c.A)(N);
     return null != N && (T.background = `linear-gradient(45deg, ${j}, ${S})`), (0, l.jsx)(s.NPJ, {
         theme: p.NJ.DARK,
         disableAdaptiveTheme: !0,
@@ -149,7 +149,7 @@ function N(e) {
                 })]
             }), (0, l.jsx)("div", {
                 className: h.Y,
-                children: null != g ? (0, l.jsx)(c.A, {
+                children: null != g ? (0, l.jsx)(d.A, {
                     ...g
                 }) : null
             })]

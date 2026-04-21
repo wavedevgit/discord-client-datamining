@@ -14,8 +14,8 @@ function o(e) {
             baseEntryData: o
         } = e,
         {
-            provider: c,
-            image_url: d
+            provider: d,
+            image_url: c
         } = n.extra.media,
         u = n.extra.artist.name,
         m = {
@@ -30,12 +30,12 @@ function o(e) {
                 itemName: u
             })
         };
-    return c === l.X.SPOTIFY && (t = {
+    return d === l.X.SPOTIFY && (t = {
         type: r.a4.SPOTIFY
     }), {
         ...o,
         title: u,
-        thumbnailUrl: d,
+        thumbnailUrl: c,
         titleClickable: p,
         subtitleClickable: m,
         thumbnailClickable: m,

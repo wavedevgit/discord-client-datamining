@@ -1,6 +1,6 @@
 /** chunk id: 532719 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var l = n(627968),
     a = n(64700),
@@ -8,21 +8,21 @@ var l = n(627968),
     s = n.n(r),
     i = n(397927),
     o = n(155718),
-    c = n(207963);
+    d = n(207963);
 
-function d(e) {
+function c(e) {
     let {
         type: t,
         default: n
-    } = e, r = (0, c.jc)();
+    } = e, r = (0, d.jc)();
     s()(null != r, "CheckboxActionComponent must be rendered inside a ComponentStateContext");
     let {
-        state: d,
+        state: c,
         executeStateUpdate: u
     } = r.useComponentState(e, null != n ? {
         type: t,
         value: n
-    } : void 0), m = a.useMemo(() => d?.type === t && d.value, [d, t]), p = r.getParents(e)?.[0], A = p?.type === o.I5.LABEL ? p : void 0;
+    } : void 0), m = a.useMemo(() => c?.type === t && c.value, [c, t]), p = r.getParents(e)?.[0], A = p?.type === o.I5.LABEL ? p : void 0;
     return s()(null != A, "CheckboxActionComponent must be a child of a Label component"), (0, l.jsx)(i.Checkbox, {
         label: A.label,
         description: A.description,

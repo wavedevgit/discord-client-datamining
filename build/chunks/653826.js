@@ -8,8 +8,8 @@ var l = n(64700),
     s = n(998218),
     i = n(583846),
     o = n(424994),
-    c = n(360469),
-    d = n(985018);
+    d = n(360469),
+    c = n(985018);
 
 function u(e) {
     let t, {
@@ -18,10 +18,10 @@ function u(e) {
         } = e,
         m = (0, a.h)(n.extra.application_id),
         p = m?.getIconURL(128),
-        A = (0, r.uD)(n.extra.application_id, n.extra.media_assets_large_image, [c.iu.LARGE, c.iu.LARGE]),
+        A = (0, r.uD)(n.extra.application_id, n.extra.media_assets_large_image, [d.iu.LARGE, d.iu.LARGE]),
         h = n.extra.media_title,
         C = n.extra.media_subtitle,
-        E = (0, i.Hd)(n) ? d.t["LH+Z3y"] : d.t.YuKgml,
+        E = (0, i.Hd)(n) ? c.t["LH+Z3y"] : c.t.YuKgml,
         x = {
             type: o.a4.CRUNCHYROLL
         },
@@ -32,7 +32,7 @@ function u(e) {
         }, [n.extra.url]);
     return null != N && (t = {
         href: s.A.format(N),
-        ariaDescription: d.intl.formatToPlainString(d.t.aFFQ3g, {
+        ariaDescription: c.intl.formatToPlainString(c.t.aFFQ3g, {
             title: h
         })
     }), {

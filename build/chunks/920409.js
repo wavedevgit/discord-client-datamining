@@ -9,8 +9,8 @@ var a = n(503698),
     s = n(155718),
     i = n(594808),
     o = n(207963),
-    c = n(953756),
-    d = n(292366),
+    d = n(953756),
+    c = n(292366),
     u = n(324877),
     m = n(746544);
 
@@ -21,7 +21,7 @@ function p(e) {
         renderComponents: a
     } = e, {
         message: p
-    } = (0, o.jc)(), [A, h] = (0, c.zn)(), C = (0, c.Hq)(h), E = n.type === s.I5.BUTTON;
+    } = (0, o.jc)(), [A, h] = (0, d.zn)(), C = (0, d.Hq)(h), E = n.type === s.I5.BUTTON;
     return (0, l.jsxs)("div", {
         className: m.uW,
         ref: A,
@@ -39,7 +39,7 @@ function p(e) {
                 children: function(e) {
                     switch (e.type) {
                         case s.I5.BUTTON:
-                            return (0, l.jsx)(d.A, {
+                            return (0, l.jsx)(c.A, {
                                 ...e
                             });
                         case s.I5.THUMBNAIL:

@@ -8,8 +8,8 @@ var l = n(627968),
     s = n.n(r),
     i = n(284009),
     o = n.n(i),
-    c = n(311907),
-    d = n(397927),
+    d = n(311907),
+    c = n(397927),
     u = n(608299),
     m = n(817363),
     p = n(23658),
@@ -37,7 +37,7 @@ function y(e) {
         minValues: a,
         maxValues: r,
         guildId: i
-    } = e, o = (0, f.o2)(i), c = (0, _.Xq)(o / _.XF, {
+    } = e, o = (0, f.o2)(i), d = (0, _.Xq)(o / _.XF, {
         useKibibytes: !0,
         useSpace: !0
     });
@@ -47,37 +47,37 @@ function y(e) {
             className: s()(R.e8, {
                 [R.R]: t
             }),
-            children: [(0, l.jsx)(d.H8$, {
-                color: d.LU0.colors.ICON_STRONG,
+            children: [(0, l.jsx)(c.H8$, {
+                color: c.LU0.colors.ICON_STRONG,
                 size: "refresh_sm"
-            }), (0, l.jsx)(d.Text, {
+            }), (0, l.jsx)(c.Text, {
                 variant: "text-md/normal",
                 color: "text-muted",
                 children: O.intl.format(O.t.y68I8P, {
                     onClick: () => n.current?.activateUploadDialogue(),
                     maxValues: r
                 })
-            }), (0, l.jsx)(d.Text, {
+            }), (0, l.jsx)(c.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
                 children: a > 1 ? a === r ? O.intl.format(O.t.SAr31z, {
                     minValues: a,
-                    maxSize: c
+                    maxSize: d
                 }) : O.intl.format(O.t["ZG+3Ck"], {
                     minValues: a,
                     maxValues: r,
-                    maxSize: c
+                    maxSize: d
                 }) : O.intl.format(O.t.tyxwW1, {
                     maxValues: r,
-                    maxSize: c
+                    maxSize: d
                 })
             })]
         }), t && (0, l.jsxs)("div", {
             className: s()(R.e8, R.r$),
-            children: [(0, l.jsx)(d.H8$, {
-                color: d.LU0.colors.ICON_STRONG,
+            children: [(0, l.jsx)(c.H8$, {
+                color: c.LU0.colors.ICON_STRONG,
                 size: "refresh_sm"
-            }), (0, l.jsx)(d.Text, {
+            }), (0, l.jsx)(c.Text, {
                 variant: "text-md/normal",
                 color: "text-strong",
                 children: O.intl.string(O.t["8OJlsH"])
@@ -89,14 +89,14 @@ function y(e) {
 function b() {
     return (0, l.jsxs)("div", {
         className: s()(R.pp, R.e8),
-        children: [(0, l.jsx)(d.yr3, {
-            color: d.LU0.colors.ICON_STRONG,
+        children: [(0, l.jsx)(c.yr3, {
+            color: c.LU0.colors.ICON_STRONG,
             size: "refresh_sm"
-        }), (0, l.jsx)(d.Text, {
+        }), (0, l.jsx)(c.Text, {
             variant: "text-md/normal",
             color: "text-strong",
             children: O.intl.string(O.t["0PhgpK"])
-        }), (0, l.jsx)(d.Text, {
+        }), (0, l.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
             children: O.intl.string(O.t.HYg2Hn)
@@ -117,7 +117,7 @@ function P(e) {
         children: [(0, l.jsx)(E.J, {
             upload: t,
             size: a ? C.L.XSMALL : C.L.XXSMALL
-        }), (0, l.jsx)(d.Text, {
+        }), (0, l.jsx)(c.Text, {
             variant: `text-${a?"md":"xs"}/medium`,
             className: R.iW,
             children: t.filename ?? O.intl.string(O.t.ZMirp0)
@@ -128,7 +128,7 @@ function P(e) {
                 tooltip: O.intl.string(O.t.N86XcP),
                 onClick: () => n(t.id),
                 dangerous: !0,
-                children: (0, l.jsx)(d.ucK, {
+                children: (0, l.jsx)(c.ucK, {
                     size: "xs",
                     color: "currentColor",
                     className: R.gE
@@ -142,7 +142,7 @@ function L(e) {
     let {
         minValues: t,
         maxValues: n
-    } = e, r = a.useRef(null), i = a.useRef(null), [d, h] = a.useState(!1), C = (0, v.jc)();
+    } = e, r = a.useRef(null), i = a.useRef(null), [c, h] = a.useState(!1), C = (0, v.jc)();
     o()(null != C, "FileUploadActionComponent must be used within a ComponentStateContextProvider");
     let E = C.channelId;
     o()(null != E, "FileUploadActionComponent must be used inside a channel");
@@ -153,7 +153,7 @@ function L(e) {
         setUploadIds: f,
         currentUploads: L,
         error: D
-    } = (0, S.j)(e), U = (0, c.bG)([N.A], () => N.A.getBasicChannel(E));
+    } = (0, S.j)(e), U = (0, d.bG)([N.A], () => N.A.getBasicChannel(E));
     o()(null != U, "FileUploadActionComponent requires a valid channel");
     let k = a.useCallback(e => {
             e.preventDefault(), e.dataTransfer?.types.includes("Files") && h(!0)
@@ -206,11 +206,11 @@ function L(e) {
     }) : (0, l.jsxs)("div", {
         ref: i,
         className: s()(R.kL, {
-            [R.Ke]: d,
+            [R.Ke]: c,
             [R.z3]: null != D
         }),
         children: [_.length >= n ? (0, l.jsx)(b, {}) : (0, l.jsx)(y, {
-            dropping: d,
+            dropping: c,
             fileInputRef: r,
             minValues: t,
             maxValues: n,

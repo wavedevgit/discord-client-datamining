@@ -11,8 +11,8 @@ var l = n(238136),
     s = n(734057),
     i = n(696451),
     o = n(317525),
-    c = n(71393),
-    d = n(994500),
+    d = n(71393),
+    c = n(994500),
     u = n(287809),
     m = n(248465),
     p = n(403362),
@@ -28,7 +28,7 @@ function E(e, t, n) {
         i = e === a.I5.ROLE_SELECT || e === a.I5.MENTIONABLE_SELECT,
         {
             users: o,
-            roles: c
+            roles: d
         } = m.Ay.queryMentionResults({
             query: t,
             channel: l,
@@ -48,7 +48,7 @@ function E(e, t, n) {
             value: e.user.id,
             label: t ?? e.user.globalName ?? e.user.username
         }
-    }), ...c.map(e => ({
+    }), ...d.map(e => ({
         type: h.iw.ROLE,
         value: e.id,
         label: e.name
@@ -65,14 +65,14 @@ function x(e, t, n) {
     }).channels.map(e => ({
         type: h.iw.CHANNEL,
         value: e.id,
-        label: (0, r.m1)(e, u.default, d.A)
+        label: (0, r.m1)(e, u.default, c.A)
     }))
 }
 
 function N(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [];
     if (null == e) return;
-    let a = c.A.getGuild(t);
+    let a = d.A.getGuild(t);
     return e.map(e => {
         switch (e.type) {
             case l.i.USER: {
@@ -102,7 +102,7 @@ function N(e, t) {
                 return {
                     type: h.iw.CHANNEL,
                     value: t.id,
-                    label: (0, r.m1)(t, u.default, d.A)
+                    label: (0, r.m1)(t, u.default, c.A)
                 }
             }
         }

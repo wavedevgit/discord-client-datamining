@@ -13,13 +13,13 @@ function i(e) {
         options: n,
         required: i,
         maxValues: o
-    } = e, c = a.useMemo(() => n.filter(e => e.default).map(e => e.value), [n]), {
-        state: d,
+    } = e, d = a.useMemo(() => n.filter(e => e.default).map(e => e.value), [n]), {
+        state: c,
         executeStateUpdate: u
-    } = (0, s.At)(e, c.length > 0 ? {
+    } = (0, s.At)(e, d.length > 0 ? {
         type: t,
-        values: c
-    } : void 0), m = a.useMemo(() => d?.type === t ? d.values : [], [d, t]);
+        values: d
+    } : void 0), m = a.useMemo(() => c?.type === t ? c.values : [], [c, t]);
     return (0, l.jsx)(r.$QX, {
         options: n.map(e => ({
             label: e.label,

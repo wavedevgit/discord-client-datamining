@@ -8,26 +8,26 @@ var l = n(681154),
     s = n(409626),
     i = n(692969),
     o = n(583846),
-    c = n(424994),
-    d = n(158611),
+    d = n(424994),
+    c = n(158611),
     u = n(360469),
     m = n(985018);
 let p = {
-        [a.Y.XBOX]: c.a4.XBOX,
-        [a.Y.PLAYSTATION]: c.a4.PLAYSTATION
+        [a.Y.XBOX]: d.a4.XBOX,
+        [a.Y.PLAYSTATION]: d.a4.PLAYSTATION
     },
     A = {
-        [d.Z.EMBED]: s.Ob.Embed
+        [c.Z.EMBED]: s.Ob.Embed
     };
 
 function h(e) {
     let t, n, {
             entry: a,
             location: s,
-            baseEntryData: c
+            baseEntryData: d
         } = e,
-        d = (0, r.h)(a.extra.application_id),
-        h = d?.getIconURL(u.iu.LARGE),
+        c = (0, r.h)(a.extra.application_id),
+        h = c?.getIconURL(u.iu.LARGE),
         C = a.extra.game_name;
     if (null != a.extra.platform) {
         let e = p[a.extra.platform];
@@ -50,7 +50,7 @@ function h(e) {
             })
         };
     return {
-        ...c,
+        ...d,
         thumbnailUrl: h,
         title: C,
         titleClickable: x,

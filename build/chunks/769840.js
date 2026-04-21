@@ -8,8 +8,8 @@ var l = n(627968),
     s = n.n(r),
     i = n(342952),
     o = n(397927),
-    c = n(562153),
-    d = n(576757),
+    d = n(562153),
+    c = n(576757),
     u = n(291594),
     m = n(22869),
     p = n(959),
@@ -27,7 +27,7 @@ function C(e) {
         participant2: I,
         numOtherParticipants: _,
         orderedParticipants: f
-    } = (0, d.A)(t), g = [N, I];
+    } = (0, c.A)(t), g = [N, I];
     return (0, l.jsxs)("div", {
         className: s()(h.kL, r),
         children: [x.length > 0 ? (0, l.jsxs)(l.Fragment, {
@@ -57,8 +57,8 @@ function C(e) {
             className: s()(h.IY, h.Io),
             scaleFontToUserSetting: !0,
             children: A.intl.format(A.t.rH95Gu, {
-                user0: c.Ay.getName(n.guild_id, n.id, g[0]),
-                user1: c.Ay.getName(n.guild_id, n.id, g[1]),
+                user0: d.Ay.getName(n.guild_id, n.id, g[0]),
+                user1: d.Ay.getName(n.guild_id, n.id, g[1]),
                 countOthers: _,
                 name0Hook: (e, t) => (0, l.jsx)(m.A, {
                     text: e,

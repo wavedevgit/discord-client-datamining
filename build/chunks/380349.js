@@ -1,6 +1,6 @@
 /** chunk id: 380349 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var l = n(211401),
     a = n(500049),
@@ -8,23 +8,23 @@ var l = n(211401),
     s = n(355622),
     i = n(583846),
     o = n(360469),
-    c = n(985018);
+    d = n(985018);
 
-function d(e) {
+function c(e) {
     let {
         entry: t
-    } = e, n = (0, r.h)(t.extra.application_id), d = n?.getIconURL(o.iu.LARGE), u = t.extra.activity_name, m = (0, i.Hd)(t) ? c.t.vPg1JT : c.t.rPqqts, p = {
+    } = e, n = (0, r.h)(t.extra.application_id), c = n?.getIconURL(o.iu.LARGE), u = t.extra.activity_name, m = (0, i.Hd)(t) ? d.t.vPg1JT : d.t.rPqqts, p = {
         onClick: () => {
             l.R(a.s4.TEXT, s.oU.NORMAL, {
                 applicationId: t.extra.application_id
             })
         },
-        ariaDescription: c.intl.formatToPlainString(c.t.NTHttN, {
+        ariaDescription: d.intl.formatToPlainString(d.t.NTHttN, {
             title: u
         })
     };
     return {
-        thumbnailUrl: d,
+        thumbnailUrl: c,
         title: u,
         titleClickable: p,
         thumbnailClickable: p,

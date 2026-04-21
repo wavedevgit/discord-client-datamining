@@ -9,8 +9,8 @@ var a = n(284009),
     s = n(311907),
     i = n(694705),
     o = n(734057),
-    c = n(207963),
-    d = n(681168),
+    d = n(207963),
+    c = n(681168),
     u = n(158611);
 
 function m(e) {
@@ -20,7 +20,7 @@ function m(e) {
     } = e, {
         parsedEntry: a
     } = (0, i.v)();
-    return (0, l.jsx)(d.A, {
+    return (0, l.jsx)(c.A, {
         ...a,
         entry: t,
         channel: n
@@ -28,7 +28,7 @@ function m(e) {
 }
 
 function p(e) {
-    let t = (0, c.jc)();
+    let t = (0, d.jc)();
     r()(null != t, "Component context is not defined. Did you forget to wrap your component in a ComponentStateContextProvider?");
     let {
         channelId: n

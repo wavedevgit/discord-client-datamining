@@ -47,7 +47,7 @@ let h = t => {
         return null != t && t.state !== c.m.FAILED && (t.data.interactionType === u.G4.MESSAGE_COMPONENT && t.data.componentId === e.id ? l = C.BB.LOADING : h(e) && (l = C.BB.DISABLED)), n && h(e) && (l = C.BB.DISABLED), l
     };
 
-function O(t, e) {
+function L(t, e) {
     let n = i.useContext(P),
         l = i.useCallback(e => {
             let l = (0, _.A)(t, e, null != n.modal ? "modal" : "message");
@@ -67,7 +67,7 @@ function O(t, e) {
     }
 }
 
-function L(t, e, n, l) {
+function O(t, e, n, l) {
     let a = (0, r.bG)([f.A], () => f.A.getInteractionComponentState(t.id, n.id)),
         u = (0, r.bG)([d.Ay], () => d.Ay.getInteraction(t), [t]),
         o = (t => {
@@ -86,7 +86,7 @@ function L(t, e, n, l) {
         {
             error: c,
             validate: C
-        } = O(n, a),
+        } = L(n, a),
         m = t.applicationId ?? t.author.id;
     return {
         state: a,
@@ -117,7 +117,7 @@ function v(t, e, n) {
         {
             error: s,
             validate: d
-        } = O(e, l),
+        } = L(e, l),
         c = i.useCallback(n => null == n || (a.h.dispatch({
             type: "SET_INTERACTION_COMPONENT_STATE",
             rootContainerId: t.customId,
@@ -148,7 +148,7 @@ function R(t) {
         shouldDisableInteractiveComponents: d = !1
     } = t, c = i.useMemo(() => {
         if (null != n) return {
-            useComponentState: L.bind(null, n, d),
+            useComponentState: O.bind(null, n, d),
             channelId: n.channel_id,
             containerId: n.id,
             message: n,

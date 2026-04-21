@@ -8,8 +8,8 @@ var l = n(627968),
     s = n(562465),
     i = n(397927),
     o = n(73153),
-    c = n(163437),
-    d = n(97352),
+    d = n(163437),
+    c = n(97352),
     u = n(67480),
     m = n(328968),
     p = n(927578),
@@ -18,12 +18,12 @@ var l = n(627968),
     C = n(168393),
     E = n(652215),
     x = n(985018);
-let N = (0, r.UT)([u.A, d.A, m.A], {
+let N = (0, r.UT)([u.A, c.A, m.A], {
     getQueryId: E.fic.APP_PREMIUM_BUTTON,
     get: e => {
         if (null == e) return;
         let t = u.A.get(e),
-            n = d.A.getForSKU(e) ?? [],
+            n = c.A.getForSKU(e) ?? [],
             l = m.A.getForSKU(e),
             a = u.A.getParentSKU(e);
         return null == t || null == l || null != t && t.type === E.Puh.SUBSCRIPTION && null == a ? null : {
@@ -61,7 +61,7 @@ let N = (0, r.UT)([u.A, d.A, m.A], {
 function I(e) {
     let {
         data: t
-    } = N(e), n = t?.parentSku, r = t?.sku, s = t?.storeListing, o = t?.subscriptionPlans, d = a.useCallback(() => {
+    } = N(e), n = t?.parentSku, r = t?.sku, s = t?.storeListing, o = t?.subscriptionPlans, c = a.useCallback(() => {
         if (r?.applicationId == null || r?.id == null || r?.flags == null) return null;
         (0, i.qfG)(e => {
             let {
@@ -70,7 +70,7 @@ function I(e) {
             } = e;
             return (0, l.jsx)(C.SubscriptionDetailsModal, {
                 appId: r.applicationId,
-                subscriptionType: (0, c.bg)(r.flags) ? "user" : "guild",
+                subscriptionType: (0, d.bg)(r.flags) ? "user" : "guild",
                 onClose: t,
                 skuId: r.id,
                 transitionState: n,
@@ -110,7 +110,7 @@ function I(e) {
                     skuName: r.name,
                     price: (0, A.$g)(t.amount, t.currency)
                 }),
-                onClick: d
+                onClick: c
             }
         }
         return null == r.price ? {

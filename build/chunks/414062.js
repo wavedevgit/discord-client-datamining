@@ -1,6 +1,6 @@
 /** chunk id: 414062 params = (module,exports,require) **/
 n.d(t, {
-    j: () => d
+    j: () => c
 });
 var l = n(64700),
     a = n(284009),
@@ -8,21 +8,21 @@ var l = n(64700),
     s = n(155718),
     i = n(31717),
     o = n(522602),
-    c = n(207963);
+    d = n(207963);
 
-function d(e) {
-    let t = (0, c.jc)();
+function c(e) {
+    let t = (0, d.jc)();
     r()(null != t, "useFileUploadComponentState must be used within a ComponentStateContextProvider");
     let n = t.channelId;
     r()(null != n, "useFileUploadComponentState must be used inside a channel");
     let {
         state: a,
-        executeStateUpdate: d,
+        executeStateUpdate: c,
         error: u
-    } = t.useComponentState(e), m = l.useMemo(() => a?.type === s.I5.FILE_UPLOAD ? a.uploadIds : [], [a]), p = o.A.getUploads(n, i.C.InteractionModal), A = l.useMemo(() => m.map(e => p.find(t => t.id === e)).filter(e => null != e), [m, p]), h = l.useCallback(e => d({
+    } = t.useComponentState(e), m = l.useMemo(() => a?.type === s.I5.FILE_UPLOAD ? a.uploadIds : [], [a]), p = o.A.getUploads(n, i.C.InteractionModal), A = l.useMemo(() => m.map(e => p.find(t => t.id === e)).filter(e => null != e), [m, p]), h = l.useCallback(e => c({
         type: s.I5.FILE_UPLOAD,
         uploadIds: e
-    }), [d]);
+    }), [c]);
     return l.useEffect(() => {
         m.length > A.length && h(m.filter(e => A.some(t => t.id === e)))
     }, [m, A, h]), {

@@ -13,22 +13,22 @@ function o(e) {
             entry: n,
             baseEntryData: o
         } = e,
-        c = n.extra.entries[0].media,
-        d = c.artists[0],
+        d = n.extra.entries[0].media,
+        c = d.artists[0],
         {
             title: u,
             provider: m,
             image_url: p
-        } = c,
-        A = d.name,
+        } = d,
+        A = c.name,
         h = {
-            onClick: () => (0, a.n)(s.M0.TRACK, c.external_id),
+            onClick: () => (0, a.n)(s.M0.TRACK, d.external_id),
             ariaDescription: i.intl.formatToPlainString(i.t.xTsar2, {
                 itemName: u
             })
         },
         C = {
-            onClick: () => (0, a.n)(s.M0.ARTIST, d.external_id),
+            onClick: () => (0, a.n)(s.M0.ARTIST, c.external_id),
             ariaDescription: i.intl.formatToPlainString(i.t.xTsar2, {
                 itemName: A
             })

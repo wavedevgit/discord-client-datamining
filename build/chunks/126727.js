@@ -1,6 +1,6 @@
 /** chunk id: 126727 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var l = n(627968),
     a = n(64700),
@@ -8,12 +8,12 @@ var l = n(627968),
     s = n(155718),
     i = n(207963),
     o = n(969508),
-    c = n(597526);
+    d = n(597526);
 
-function d(e) {
+function c(e) {
     let t, {
             type: n,
-            style: d,
+            style: c,
             label: u,
             placeholder: m,
             minLength: p,
@@ -48,7 +48,7 @@ function d(e) {
         },
         autoFocus: f
     };
-    switch (d) {
+    switch (c) {
         case s.qz.SMALL:
             t = (0, l.jsx)(r.ksK, {
                 ...g
@@ -63,7 +63,7 @@ function d(e) {
     return null != u ? (0, l.jsx)(r.eIh, {
         title: u,
         required: h,
-        className: c.k,
+        className: d.k,
         error: _,
         children: t
     }) : t

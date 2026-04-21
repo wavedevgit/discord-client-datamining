@@ -9,8 +9,8 @@ var a = n(665260),
     s = n(731068),
     i = n(608214),
     o = n(269849),
-    c = n(294520),
-    d = n(448381),
+    d = n(294520),
+    c = n(448381),
     u = n(718266),
     m = n(564107),
     p = n(394839),
@@ -44,7 +44,7 @@ function x(e) {
 
     function j(e, n) {
         let l = e.originalItem;
-        return (0, c.tt)(l.media, n, l.spoiler, t?.author.bot ?? !1)
+        return (0, d.tt)(l.media, n, l.spoiler, t?.author.bot ?? !1)
     }
     let S = e.items.map((e, n) => {
         let l = e.media,
@@ -54,7 +54,7 @@ function x(e) {
                 item: {
                     uniqueId: `${l.proxyUrl}--${n}`,
                     originalItem: e,
-                    type: (0, d.wz)(l),
+                    type: (0, c.wz)(l),
                     downloadUrl: l.url,
                     height: l.height,
                     width: l.width,

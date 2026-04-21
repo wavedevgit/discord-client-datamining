@@ -8,8 +8,8 @@ var l = n(627968),
     s = n.n(r),
     i = n(673698),
     o = n(990078),
-    c = n(155718),
-    d = n(891694),
+    d = n(155718),
+    c = n(891694),
     u = n(652215),
     m = n(985018),
     p = n(552437);
@@ -17,7 +17,7 @@ var l = n(627968),
 function A(e) {
     let t = a.useRef(null),
         n = e.media;
-    if (n.loadingState === c.TD.LOADED_NOT_FOUND) return (0, l.jsx)(o.m, {
+    if (n.loadingState === d.TD.LOADED_NOT_FOUND) return (0, l.jsx)(o.m, {
         text: m.intl.string(m.t.UvDfMz),
         position: "bottom",
         align: "center",
@@ -31,13 +31,13 @@ function A(e) {
                 height: e.placeholderHeight
             },
             role: "img",
-            children: (0, l.jsx)(d.A, {
+            children: (0, l.jsx)(c.A, {
                 ref: t,
                 className: p.i4
             })
         })
     });
-    let r = n.loadingState === c.TD.LOADING ? u.Rv1.LOADING : u.Rv1.ERROR;
+    let r = n.loadingState === d.TD.LOADING ? u.Rv1.LOADING : u.Rv1.ERROR;
     return (0, l.jsx)(i._, {
         className: s()(e.className, {
             [p.gS]: e.hiddenSpoilers

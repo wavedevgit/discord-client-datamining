@@ -9,8 +9,8 @@ var a = n(503698),
     s = n(735438),
     i = n(421380),
     o = n(397927),
-    c = n(442433),
-    d = n(565645),
+    d = n(442433),
+    c = n(565645),
     u = n(155718),
     m = n(30008),
     p = n(957565),
@@ -28,7 +28,7 @@ function N(e) {
     return p.p5 && null != t ? (0, l.jsx)(o.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "component-button",
-        onClose: c.Z_,
+        onClose: d.Z_,
         "aria-label": E.intl.string(E.t.tvTXy8),
         onSelect: n,
         children: (0, l.jsx)(o.rXV, {
@@ -87,7 +87,7 @@ function I(e) {
         disabled: p || g === C.BB.DISABLED || T || S,
         onClick: t,
         onContextMenu: e => {
-            b && (0, c.jA)(e, e => (0, l.jsx)(N, {
+            b && (0, d.jA)(e, e => (0, l.jsx)(N, {
                 ...e,
                 url: I
             }))
@@ -105,7 +105,7 @@ function I(e) {
                     size: "xs",
                     color: "white"
                 })
-            }) : null, R ? (0, l.jsx)(d.A, {
+            }) : null, R ? (0, l.jsx)(c.A, {
                 className: r()({
                     [x.MR]: y
                 }),

@@ -8,8 +8,8 @@ var l = n(627968),
     s = n(311907),
     i = n(827734),
     o = n(397927),
-    c = n(565645),
-    d = n(222713),
+    d = n(565645),
+    c = n(222713),
     u = n(57882),
     m = n(7584),
     p = n(263063),
@@ -43,7 +43,7 @@ function f(e) {
         notation: "compact",
         compactDisplay: "short",
         maximumFractionDigits: 2
-    }).format(T), P = (0, u.oO)(g), L = (0, u.OW)(n), D = d.f[n], U = (0, o.rdh)(D.primaryColor).hex(), k = (0, o.rdh)(D.secondaryColor).hex({
+    }).format(T), P = (0, u.oO)(g), L = (0, u.OW)(n), D = c.f[n], U = (0, o.rdh)(D.primaryColor).hex(), k = (0, o.rdh)(D.secondaryColor).hex({
         opacity: .2
     }), M = (0, s.bG)([A.A], () => A.A.getGuild(S?.guildId)), w = new Intl.NumberFormat(C.intl.currentLocale, {
         notation: "compact",
@@ -112,7 +112,7 @@ function f(e) {
                             children: C.intl.string(E.default["fn+gnp"])
                         })]
                     }) : (0, l.jsxs)(l.Fragment, {
-                        children: [(0, l.jsx)(c.A, {
+                        children: [(0, l.jsx)(d.A, {
                             emojiId: v.emojiId,
                             emojiName: v.emojiName,
                             className: x.iY

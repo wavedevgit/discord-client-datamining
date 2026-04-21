@@ -8,8 +8,8 @@ var l = n(627968),
     s = n.n(r),
     i = n(665260),
     o = n(338717),
-    c = n(731068),
-    d = n(448381),
+    d = n(731068),
+    c = n(448381),
     u = n(564107),
     m = n(652176),
     p = n(302031),
@@ -22,7 +22,7 @@ function E(e) {
         media: t,
         spoiler: n,
         description: r
-    } = e, E = (0, d.wz)(t), x = (0, i.Lt)(t.flags, c.e5.IS_ANIMATED), {
+    } = e, E = (0, c.wz)(t), x = (0, i.Lt)(t.flags, d.e5.IS_ANIMATED), {
         gifAutoPlay: N
     } = (0, u.X)(), [I, _] = a.useState(n), [f, g] = a.useState(n);
     n !== I && (_(n), g(n));

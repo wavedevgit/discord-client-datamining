@@ -8,19 +8,19 @@ var l = n(627968),
     s = n(266080),
     i = n(121090),
     o = n(18282),
-    c = n(424994),
-    d = n(985018);
+    d = n(424994),
+    c = n(985018);
 let u = {
-        [c.a4.SPOTIFY]: i.A,
-        [c.a4.CRUNCHYROLL]: a.kwD,
-        [c.a4.XBOX]: s.A,
-        [c.a4.PLAYSTATION]: r.A
+        [d.a4.SPOTIFY]: i.A,
+        [d.a4.CRUNCHYROLL]: a.kwD,
+        [d.a4.XBOX]: s.A,
+        [d.a4.PLAYSTATION]: r.A
     },
     m = {
-        [c.a4.SPOTIFY]: () => d.intl.string(d.t["0ZB/XE"]),
-        [c.a4.CRUNCHYROLL]: () => d.intl.string(d.t.jdJYXw),
-        [c.a4.XBOX]: () => d.intl.string(d.t.Nfvo72),
-        [c.a4.PLAYSTATION]: () => d.intl.string(d.t.fFl4jo)
+        [d.a4.SPOTIFY]: () => c.intl.string(c.t["0ZB/XE"]),
+        [d.a4.CRUNCHYROLL]: () => c.intl.string(c.t.jdJYXw),
+        [d.a4.XBOX]: () => c.intl.string(c.t.Nfvo72),
+        [d.a4.PLAYSTATION]: () => c.intl.string(c.t.fFl4jo)
     };
 
 function p(e) {

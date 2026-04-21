@@ -1,49 +1,28 @@
 /** chunk id: 159329 params = (module,exports,require) **/
 n.d(t, {
-    P3: () => s
+    P3: () => l
 });
-var i = n(600975),
-    l = n(250105);
-let a = (0, i.C)({
-        id: "2025-05_safety_flows",
-        label: "Safety Flows",
-        kind: "user",
-        defaultConfig: {
+let i = (0, n(250105).Ay)({
+    name: "2026-04-safety-flows",
+    kind: "user",
+    defaultConfig: {
+        enabled: !1
+    },
+    variations: {
+        0: {
             enabled: !1
         },
-        treatments: [{
-            id: 1,
-            label: "Enabled",
-            config: {
-                enabled: !0
-            }
-        }]
-    }),
-    r = (0, l.Ay)({
-        name: "2026-04-safety-flows",
-        kind: "user",
-        defaultConfig: {
-            enabled: !1
-        },
-        variations: {
-            0: {
-                enabled: !1
-            },
-            1: {
-                enabled: !0
-            }
+        1: {
+            enabled: !0
         }
-    });
+    }
+});
 
-function s(e) {
+function l(e) {
     let {
         location: t
-    } = e, n = a.getCurrentConfig({
+    } = e;
+    return i.getConfig({
         location: t
-    }, {
-        autoTrackExposure: !1
-    }).enabled, i = r.getConfig({
-        location: t
-    }).enabled;
-    return n || i
+    }).enabled
 }

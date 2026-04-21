@@ -1,6 +1,6 @@
 /** chunk id: 764148 params = (module,exports,require) **/
 n.d(t, {
-    A: () => O
+    A: () => y
 });
 var i = n(256415),
     l = n(837921),
@@ -18,15 +18,14 @@ var i = n(256415),
     g = n(1791),
     p = n(293890),
     E = n(985603),
-    I = n(103949),
-    f = n(873351),
-    C = n(885969),
-    T = n(944127),
-    N = n(388331),
-    S = n(466444),
-    x = n(177235),
-    b = n(266686);
-let v = {
+    I = n(873351),
+    f = n(885969),
+    C = n(944127),
+    T = n(388331),
+    N = n(466444),
+    S = n(177235),
+    x = n(266686);
+let b = {
         ...a.U,
         ...u.A,
         ...A.A,
@@ -37,25 +36,24 @@ let v = {
         ...E.A,
         ...I.A,
         ...f.A,
-        ...C.A,
-        ...N.A,
-        ...x.A,
+        ...T.A,
         ...S.A,
+        ...N.A,
         ...h.A,
-        ...T.A
+        ...C.A
     },
-    y = {
+    v = {
         ...r.A,
         ...o.c,
         ...d.I,
         ...c.p
     },
-    O = {
+    y = {
         server: s.A,
-        commands: v,
-        events: y,
+        commands: b,
+        events: v,
         stores: [i.default],
-        transports: [b.A],
+        transports: [x.A],
         registerTransportsForEmbeddedPlatform: function() {
             l.Ay.ensureModule("discord_rpc").then(() => {
                 for (let e of [n(33006).A, n(998921).A]) s.A.registerTransport(e)

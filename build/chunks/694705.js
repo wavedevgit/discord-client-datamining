@@ -9,8 +9,8 @@ var l = n(627968),
     s = n.n(r),
     i = n(681154),
     o = n(61259),
-    c = n(380349),
-    d = n(420009),
+    d = n(380349),
+    c = n(420009),
     u = n(315093),
     m = n(438414),
     p = n(873498),
@@ -27,7 +27,7 @@ function E(e) {
         entry: t,
         ...n
     } = e, a = {
-        baseEntryData: (0, d.A)({
+        baseEntryData: (0, c.A)({
             entry: t,
             channel: n.channel
         }),
@@ -87,7 +87,7 @@ function N(e) {
         entry: t,
         children: n,
         ...a
-    } = e, r = (0, c.A)({
+    } = e, r = (0, d.A)({
         entry: t,
         ...a
     });

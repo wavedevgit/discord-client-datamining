@@ -8,8 +8,8 @@ var l = n(627968),
     s = n.n(r),
     i = n(338717),
     o = n(302031),
-    c = n(953756),
-    d = n(647901),
+    d = n(953756),
+    c = n(647901),
     u = n(404228);
 
 function m(e) {
@@ -20,7 +20,7 @@ function m(e) {
         renderComponents: m
     } = e, [p, A] = a.useState(r), [h, C] = a.useState(r);
     r !== p && (A(r), C(r));
-    let E = e => (0, l.jsx)(c.O7.AutoMeasuredNestedContainer, {
+    let E = e => (0, l.jsx)(d.O7.AutoMeasuredNestedContainer, {
         children: a => (0, l.jsx)("div", {
             ref: a,
             className: s()(u.kL, {
@@ -30,7 +30,7 @@ function m(e) {
             style: {
                 "--__accent-color": n
             },
-            children: (0, l.jsx)(d.x, {
+            children: (0, l.jsx)(c.x, {
                 size: "reduced",
                 children: m(t)
             })

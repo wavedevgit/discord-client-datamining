@@ -1,7 +1,7 @@
 /** chunk id: 718266 params = (module,exports,require) **/
 n.d(t, {
     Bu: () => o,
-    PI: () => c,
+    PI: () => d,
     oo: () => i
 });
 var l = n(627968);
@@ -42,7 +42,7 @@ function o(e) {
     })
 }
 
-function c(e) {
+function d(e) {
     let t = e.item.originalItem.media,
         n = r.A.toURLSafe(t.proxyUrl);
     return null == n ? null : (n.searchParams.append("format", "webp"), (0, s.$o)({
