@@ -228,9 +228,8 @@ function Z(t) {
                 normalPrice: n,
                 discountedPrice: r,
                 discountPercent: a
-            } = (0, O.ou)({
-                sku: e,
-                priceSetAssignmentPurchaseType: W.lid.DEFAULT
+            } = (0, O.CD)({
+                sku: e
             }), l = r ?? n, u = i.useMemo(() => null != e && null != e.orbsReward && e.orbsReward > 0 ? (0, s.jsx)("div", {
                 className: q.pt,
                 children: (0, s.jsx)(m.Text, {

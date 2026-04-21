@@ -1,38 +1,38 @@
 /** chunk id: 430580 params = (module,exports,require) **/
-n.d(t, {
+l.d(t, {
     A: () => h
 });
-var l = n(627968),
-    a = n(64700),
-    s = n(310784),
-    i = n.n(s),
-    r = n(654107),
-    o = n(871751),
-    c = n(619517),
-    d = n(652176),
-    u = n(172079);
+var n = l(627968),
+    a = l(64700),
+    s = l(310784),
+    i = l.n(s),
+    r = l(654107),
+    o = l(871751),
+    c = l(619517),
+    d = l(652176),
+    u = l(172079);
 let _ = e => (0, d.$o)({
         ...e,
         className: u.tN,
         mediaPlayerClassName: u.yf
     }),
-    m = e => (0, l.jsx)(c.Ay, {
+    m = e => (0, n.jsx)(c.Ay, {
         ...e
     });
 
 function h(e) {
     let {
         item: t,
-        isMuted: n,
+        isMuted: l,
         className: s
     } = e, c = function(e) {
         let t = null != e ? "videoThumbnailSrc" in e ? e.videoThumbnailSrc : e.src : null,
-            [n] = (0, r.rh)(t, "#000000");
+            [l] = (0, r.rh)(t, "#000000");
         return a.useMemo(() => {
-            if (null == t || "#000000" === n) return;
-            let e = i()(n).darken(1);
+            if (null == t || "#000000" === l) return;
+            let e = i()(l).darken(1);
             return `radial-gradient(circle, ${e.alpha(.2).hex()} 0%, transparent 100%)`
-        }, [t, n])
+        }, [t, l])
     }(t);
     if (null == t) return null;
     let h = {
@@ -42,12 +42,12 @@ function h(e) {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
     };
-    return "video" === t.type ? (0, l.jsx)("div", {
+    return "video" === t.type ? (0, n.jsx)("div", {
         className: s ?? u.kL,
-        children: (0, l.jsx)("div", {
+        children: (0, n.jsx)("div", {
             className: u.h4,
             style: h,
-            children: (0, l.jsx)(o.rr, {
+            children: (0, n.jsx)(o.rr, {
                 href: null,
                 thumbnail: {
                     url: t.videoThumbnailSrc,
@@ -67,19 +67,19 @@ function h(e) {
                 playable: !0,
                 className: u.Ki,
                 volume: 1,
-                autoMute: n,
+                autoMute: l,
                 autoPlay: !0,
                 renderVideoComponent: _,
                 renderImageComponent: m,
                 renderLinkComponent: d.bU
-            }, `${t.src}-${n?"muted":"unmuted"}`)
+            }, `${t.src}-${l?"muted":"unmuted"}`)
         })
-    }) : (0, l.jsx)("div", {
+    }) : (0, n.jsx)("div", {
         className: s ?? u.kL,
-        children: (0, l.jsx)("div", {
+        children: (0, n.jsx)("div", {
             className: u.h4,
             style: h,
-            children: (0, l.jsx)("img", {
+            children: (0, n.jsx)("img", {
                 src: t.src,
                 alt: "",
                 className: u.Sl

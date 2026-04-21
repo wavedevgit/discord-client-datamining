@@ -1,10 +1,10 @@
 /** chunk id: 345938 params = (module,exports,require) **/
-n.d(t, {
+l.d(t, {
     d: () => i
 });
-var l = n(627968),
-    a = n(397927),
-    s = n(294454);
+var n = l(627968),
+    a = l(397927),
+    s = l(294454);
 let i = e => {
     let {
         sku: t,
@@ -16,9 +16,9 @@ let i = e => {
     (0, a.mMO)(async () => {
         let {
             default: e
-        } = await Promise.all([n.e("96758"), n.e("79133"), n.e("81399")]).then(n.bind(n, 763375));
-        return n => (0, l.jsx)(e, {
-            ...n,
+        } = await Promise.all([l.e("96758"), l.e("79133"), l.e("81399")]).then(l.bind(l, 763375));
+        return l => (0, n.jsx)(e, {
+            ...l,
             sku: t,
             guildId: i,
             source: r,

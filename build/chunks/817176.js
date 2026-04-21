@@ -72,7 +72,7 @@ function D(e) {
             normalPrice: a,
             discountedPrice: s,
             discountPercent: r
-        } = (0, g.ou)({
+        } = (0, g.CD)({
             sku: t,
             priceSetAssignmentPurchaseType: n
         }), o = s ?? a, d = l.useMemo(() => null != t && null != t.orbsReward && t.orbsReward > 0 ? (0, i.jsx)("div", {

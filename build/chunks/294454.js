@@ -1,14 +1,14 @@
 /** chunk id: 294454 params = (module,exports,require) **/
-n.d(t, {
+l.d(t, {
     Be: () => o,
     aU: () => i,
     fO: () => r,
     vK: () => c
 });
-var l = n(627968);
-n(64700);
-var a = n(397927),
-    s = n(530912);
+var n = l(627968);
+l(64700);
+var a = l(397927),
+    s = l(530912);
 let i = "forward-modal";
 
 function r(e) {
@@ -23,9 +23,9 @@ function r(e) {
     (0, s.pp)(t.channel_id, t.id, r), (0, a.mMO)(async () => {
         let {
             ForwardModal: e
-        } = await Promise.all([n.e("96758"), n.e("79133"), n.e("74867")]).then(n.bind(n, 911269));
-        return n => (0, l.jsx)(e, {
-            ...n,
+        } = await Promise.all([l.e("96758"), l.e("79133"), l.e("74867")]).then(l.bind(l, 911269));
+        return l => (0, n.jsx)(e, {
+            ...l,
             message: t,
             initialSelectedDestinations: o,
             forwardOptions: c,
@@ -51,9 +51,9 @@ function c(e) {
     (0, a.mMO)(async () => {
         let {
             ForwardFailedAlertModal: e
-        } = await n.e("66139").then(n.bind(n, 181622));
-        return n => (0, l.jsx)(e, {
-            ...n,
+        } = await l.e("66139").then(l.bind(l, 181622));
+        return l => (0, n.jsx)(e, {
+            ...l,
             message: t,
             failedDestinations: s,
             forwardOptions: i

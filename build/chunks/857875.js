@@ -1,8 +1,8 @@
 /** chunk id: 857875 params = (module,exports,require) **/
-n.d(t, {
+l.d(t, {
     O: () => a
 });
-let l = (0, n(945810).mj)({
+let n = (0, l(945810).mj)({
     name: "2026-04-slayer-storefront-pdp-redesign",
     kind: "user",
     defaultConfig: {
@@ -22,7 +22,7 @@ function a(e) {
     let {
         location: t
     } = e;
-    return l.useConfig({
+    return n.useConfig({
         location: t
     }).enabled
 }

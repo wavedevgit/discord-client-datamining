@@ -26,17 +26,17 @@ function p(e) {
         clearSearchQuery: y,
         searchBar: v,
         ...S
-    } = e, [E, x] = i.useState(!1), [A, b] = i.useState(1.4), N = i.useRef(null), C = (0, a.bG)([o.A], () => o.A.useReducedMotion), j = (0, a.bG)([u.A], () => u.A.isFocused());
+    } = e, [E, x] = i.useState(!1), [A, N] = i.useState(1.4), b = i.useRef(null), C = (0, a.bG)([o.A], () => o.A.useReducedMotion), j = (0, a.bG)([u.A], () => u.A.isFocused());
     return i.useEffect(() => {
         let e = e => {
             let {
                 intensity: t,
                 duration: n
             } = e;
-            !C && j && (x(!0), b(t ?? 1.4), clearTimeout(N.current), N.current = setTimeout(() => x(!1), n ?? 1e3))
+            !C && j && (x(!0), N(t ?? 1.4), clearTimeout(b.current), b.current = setTimeout(() => x(!1), n ?? 1e3))
         };
         return c._.subscribe(h.jej.SHAKE_SETTINGS_MODAL, e), () => {
-            c._.unsubscribe(h.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(N.current)
+            c._.unsubscribe(h.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(b.current)
         }
     }, [C, j]), (0, r.jsx)(l.bfh, {
         isShaking: E,
