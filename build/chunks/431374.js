@@ -25,8 +25,8 @@ var l = n(627968),
     j = n(267859),
     y = n(334310),
     O = n(685396),
-    N = n(16663),
-    D = n(403918),
+    D = n(16663),
+    N = n(403918),
     v = n(652215),
     w = n(307731),
     P = n(985018),
@@ -81,14 +81,14 @@ function U(e) {
         actionBarInput: (0, l.jsx)("div", {
             className: R.l3,
             children: (0, l.jsx)(u.Te, {
-                maxVisibleItems: D.SX.length + 1,
+                maxVisibleItems: N.SX.length + 1,
                 value: L,
                 options: [{
                     value: E,
                     key: E,
                     label: P.intl.string(P.t.E45wvP),
                     disabled: !0
-                }, ...D.SX.map(e => ({
+                }, ...N.SX.map(e => ({
                     value: e,
                     key: e,
                     label: (0, j.A)(e)
@@ -123,7 +123,7 @@ function U(e) {
         }],
         children: [null != M && (0, l.jsx)("div", {
             className: R.q5,
-            children: (0, l.jsx)(N.A, {
+            children: (0, l.jsx)(D.A, {
                 user: M,
                 previewText: H,
                 previewEmoji: Y,
@@ -200,7 +200,7 @@ function U(e) {
                 }), (0, l.jsx)(d.f9, {
                     autosize: !0,
                     value: H,
-                    maxLength: D.hp,
+                    maxLength: N.hp,
                     rows: 1,
                     showRemainingCharacterCount: !1,
                     placeholder: z,
@@ -208,7 +208,7 @@ function U(e) {
                         I(e)
                     },
                     onKeyDown: e => {
-                        "Enter" === e.key && W()
+                        "Enter" === e.key && (e.preventDefault(), e.shiftKey || W())
                     },
                     className: R.hF,
                     inputRef: B,

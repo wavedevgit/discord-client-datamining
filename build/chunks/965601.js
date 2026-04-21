@@ -41,7 +41,7 @@ function A(e) {
                 let e = null;
                 if (null != n) {
                     let i = d.A.getMessage(t.id, n);
-                    e = i?.content ?? null
+                    e = i?.getContentMessage()?.content ?? null
                 } else A.textValue.trim().length >= 10 && (e = A.textValue);
                 if (null != e) {
                     let t = await h(e);
