@@ -2,26 +2,26 @@
 "use strict";
 s.d(e, {
     NG: () => r,
-    Np: () => n,
+    Np: () => a,
     QZ: () => i
 });
-var a = s(73153);
+var n = s(73153);
 
-function n() {
-    a.h.dispatch({
+function a() {
+    n.h.dispatch({
         type: "SPELLCHECK_TOGGLE"
     })
 }
 
 function r(t) {
-    a.h.dispatch({
+    n.h.dispatch({
         type: "SPELLCHECK_LEARN_WORD",
         word: t
     })
 }
 
 function i(t) {
-    a.h.dispatch({
+    n.h.dispatch({
         type: "SPELLCHECK_UNLEARN_WORD",
         word: t
     })

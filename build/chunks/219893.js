@@ -2,6 +2,7 @@
 n.d(t, {
     I2: () => A,
     a3: () => x,
+    d: () => T,
     fU: () => o,
     li: () => h,
     n1: () => g,
@@ -9,7 +10,7 @@ n.d(t, {
     yG: () => r,
     yK: () => a,
     yN: () => _
-});
+}), n(321073);
 var i = n(988506),
     s = n(602339),
     l = n(985018);
@@ -77,5 +78,19 @@ function p(e) {
         minutes: e.minutes,
         seconds: 0,
         nanos: 0
+    }
+}
+
+function T(e, t, n) {
+    let i = [];
+    return r.forEach((s, l) => {
+        if (!e.has(s)) return;
+        let r = t.find(e => e.days.includes(s));
+        null != r && i.push({
+            dayLabel: n[l],
+            timeRange: h(r)
+        })
+    }), {
+        conflictingEntries: i
     }
 }

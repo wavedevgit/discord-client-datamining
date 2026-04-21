@@ -3,9 +3,9 @@
 s.d(e, {
     b: () => r
 });
-var a = s(311907),
-    n = s(287809);
+var n = s(311907),
+    a = s(287809);
 
 function r() {
-    return (0, a.bG)([n.default], () => n.default.getCurrentUser()?.isStaff() ?? !1)
+    return (0, n.bG)([a.default], () => a.default.getCurrentUser()?.isStaff() ?? !1)
 }
