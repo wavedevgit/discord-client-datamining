@@ -1,6 +1,6 @@
 /** chunk id: 465424 params = (module,exports,require) **/
 n.d(t, {
-    D: () => M
+    D: () => C
 });
 var l = n(627968),
     i = n(64700),
@@ -20,7 +20,7 @@ var l = n(627968),
     h = n(652215),
     x = n(756699);
 
-function C(e) {
+function M(e) {
     let {
         channel: t
     } = e, n = (0, o.Ay)(t);
@@ -40,7 +40,7 @@ function C(e) {
     })
 }
 
-function M(e) {
+function C(e) {
     let {
         userId: t
     } = e, {
@@ -51,7 +51,7 @@ function M(e) {
         if (null == n) return !1;
         let e = (0, s.r9)() && (0, s.UK)(n.id);
         return (n.isPrivate() || E.A.can(h.xBc.CONNECT, n)) && !e
-    }), g = (0, a.bG)([f.A], () => f.A.isInChannel(n?.id)), x = (0, a.bG)([m.default], () => m.default.getId() === t), M = i.useCallback(() => {
+    }), g = (0, a.bG)([f.A], () => f.A.isInChannel(n?.id)), x = (0, a.bG)([m.default], () => m.default.getId() === t), C = i.useCallback(() => {
         null != n && (n.isGuildStageVoice() ? (0, c.av)(n) : u.A.handleVoiceConnect({
             channel: n,
             connected: g,
@@ -65,9 +65,9 @@ function M(e) {
     return p && o && !x && null != n ? (0, l.jsx)(r.Drp, {
         id: "join-voice",
         label: g ? (0, b.om)(n) : (0, b.M)(n),
-        subtext: (0, l.jsx)(C, {
+        subtext: (0, l.jsx)(M, {
             channel: n
         }),
-        action: M
+        action: C
     }) : null
 }

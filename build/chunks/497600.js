@@ -26,7 +26,7 @@ function g(e) {
         loading: E,
         note: f
     } = (0, r.A)(m), h = !E && null != f && f.length > 0, x = b === u.BRT.POPOUT || b === u.BRT.OVERLAY, {
-        analyticsLocations: C
+        analyticsLocations: M
     } = (0, a.Ay)();
     return m === s.default.getId() || o.A.hidePersonalInformation || x ? null : (0, l.jsx)(i.Drp, {
         id: "note",
@@ -39,7 +39,7 @@ function g(e) {
                 scrollTarget: c.bk.NOTE,
                 guildId: n,
                 channelId: g,
-                sourceAnalyticsLocations: C,
+                sourceAnalyticsLocations: M,
                 appContext: b
             })
         }

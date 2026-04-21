@@ -1,6 +1,6 @@
 /** chunk id: 341354 params = (module,exports,require) **/
 n.d(t, {
-    default: () => j
+    default: () => L
 });
 var l = n(627968);
 n(64700);
@@ -26,45 +26,45 @@ var i = n(397927),
     D = n(972432),
     N = n(77544),
     _ = n(566396),
-    S = n(571964),
-    M = n(708653),
+    M = n(571964),
+    S = n(708653),
     y = n(297460),
     C = n(652215),
     U = n(985018);
-let j = (0, d.A)((0, a.A)(function(e) {
+let L = (0, d.A)((0, a.A)(function(e) {
     let {
         user: t,
         guildId: n,
         channelId: a,
         showMediaItems: d = !1,
         mediaEngineContext: o,
-        onSelect: j,
-        onInteraction: O,
-        appContext: L = C.BRT.OVERLAY,
+        onSelect: L,
+        onInteraction: j,
+        appContext: O = C.BRT.OVERLAY,
         friendGroupId: k,
         showManageFriendGroupsItems: R = !1,
         onMessageUser: V,
         widgetType: T
-    } = e, G = (0, m.A)({
+    } = e, F = (0, m.A)({
         userId: t.id,
         guildId: n,
         channelId: a
-    }), F = (0, y.A)({
+    }), G = (0, y.A)({
         kind: "DM_USER",
         userId: t.id,
         onOpenOverride: V
     }, T), {
         toggleFavoriteItem: w
-    } = (0, M.As)(t.id, T), B = (0, h.A)({
+    } = (0, S.As)(t.id, T), B = (0, h.A)({
         user: t
-    }), P = (0, _.A)(t.id), H = (0, E.A)({
+    }), H = (0, _.A)(t.id), P = (0, E.A)({
         user: t,
         guildId: n,
         channelId: a,
-        context: L
+        context: O
     }), X = (0, g.A)({
         user: t
-    }), W = (0, S.A)({
+    }), W = (0, M.A)({
         user: t,
         groupId: k
     }), Y = (0, N.A)(t.id), K = (0, D.A)(t.id), Z = (0, p.A)(t.id, o), $ = (0, I.A)({
@@ -87,15 +87,15 @@ let j = (0, d.A)((0, a.A)(function(e) {
         navId: "overlay-user-context",
         onClose: r.Z_,
         "aria-label": U.intl.string(U.t.liqwPJ),
-        onSelect: j,
-        onInteraction: O,
+        onSelect: L,
+        onInteraction: j,
         children: [!ei && (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(i.rXV, {
                 children: el
             }), (0, l.jsxs)(i.rXV, {
-                children: [F, B, P, Y]
+                children: [G, B, H, Y]
             }), (0, l.jsxs)(i.rXV, {
-                children: [G, H, X, w, R ? W : null]
+                children: [F, P, X, w, R ? W : null]
             }), d && (0, l.jsx)(i.rXV, {
                 children: K
             }), (0, l.jsx)(i.rXV, {

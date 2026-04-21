@@ -1,6 +1,6 @@
 /** chunk id: 146359 params = (module,exports,require) **/
 t.d(n, {
-    A: () => b
+    A: () => f
 });
 var l = t(627968),
     i = t(64700),
@@ -15,32 +15,32 @@ var l = t(627968),
     g = t(71393),
     m = t(576705),
     x = t(287809),
-    f = t(985018);
+    b = t(985018);
 
-function b(e, n, b) {
+function f(e, n, f) {
     let h = i.useMemo(() => ({
         [n]: [e.id]
     }), [n, e.id]);
     (0, d.Eq)(h, "useThreadAdminActionItems"), (0, r.bG)([m.A], () => m.A.getGuildVersion(n), [n]);
-    let p = (0, r.bG)([A.A], () => A.A.getChannel(b)),
+    let p = (0, r.bG)([A.A], () => A.A.getChannel(f)),
         E = (0, r.bG)([g.A], () => g.A.getGuild(n), [n]),
-        C = (0, r.bG)([x.default], () => x.default.getCurrentUser()),
-        _ = (0, s.A)(p, "Context Menu"),
+        _ = (0, r.bG)([x.default], () => x.default.getCurrentUser()),
+        C = (0, s.A)(p, "Context Menu"),
         T = (0, c.qi)(p?.id);
-    return C?.id === e.id ? [_] : null == E || null == p || null == C ? [] : [T ? (0, l.jsx)(a.Drp, {
+    return _?.id === e.id ? [C] : null == E || null == p || null == _ ? [] : [T ? (0, l.jsx)(a.Drp, {
         id: "remove",
-        label: p.isForumPost() ? f.intl.formatToPlainString(f.t.v2KNNx, {
+        label: p.isForumPost() ? b.intl.formatToPlainString(b.t.v2KNNx, {
             user: e.username
-        }) : f.intl.formatToPlainString(f.t["27xWaT"], {
+        }) : b.intl.formatToPlainString(b.t["27xWaT"], {
             user: e.username
         }),
         color: "danger",
         action: () => o.A.removeMember(p.id, e.id, "Context Menu")
     }) : null, (0, u.L7)(e, E) ? (0, l.jsx)(a.Drp, {
         id: "kick",
-        label: T ? f.intl.formatToPlainString(f.t["1Ie87p"], {
+        label: T ? b.intl.formatToPlainString(b.t["1Ie87p"], {
             user: e.username
-        }) : f.intl.formatToPlainString(f.t["9l/iTS"], {
+        }) : b.intl.formatToPlainString(b.t["9l/iTS"], {
             user: e.username
         }),
         color: "danger",
@@ -56,9 +56,9 @@ function b(e, n, b) {
         })
     }) : null, (0, u.EZ)(e, E) ? (0, l.jsx)(a.Drp, {
         id: "ban",
-        label: T ? f.intl.formatToPlainString(f.t.i62APf, {
+        label: T ? b.intl.formatToPlainString(b.t.i62APf, {
             user: e.username
-        }) : f.intl.formatToPlainString(f.t.WnpUBi, {
+        }) : b.intl.formatToPlainString(b.t.WnpUBi, {
             user: e.username
         }),
         color: "danger",

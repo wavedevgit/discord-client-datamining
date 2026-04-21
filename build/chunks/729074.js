@@ -1,6 +1,6 @@
 /** chunk id: 729074 params = (module,exports,require) **/
 n.d(t, {
-    Q: () => h
+    Q: () => x
 });
 var i = n(64700),
     s = n(934551),
@@ -10,18 +10,17 @@ var i = n(64700),
     o = n(780964),
     d = n(479879),
     c = n(68897),
-    u = n(177430),
-    m = n(832463),
-    g = n(985018);
-let _ = (0, r.zZ)(o.X.GIFT_INVENTORY_CATEGORY, {
-        buildLayout: () => [d.V, u.E, c.R, m.Y]
+    u = n(832463),
+    m = n(985018);
+let g = (0, r.zZ)(o.X.GIFT_INVENTORY_CATEGORY, {
+        buildLayout: () => [d.V, c.R, u.Y]
     }),
-    x = (0, r.t_)(o.X.GIFT_PANEL, {
-        useTitle: () => g.intl.string(g.t["jcSP+g"]),
-        buildLayout: () => [_]
+    _ = (0, r.t_)(o.X.GIFT_PANEL, {
+        useTitle: () => m.intl.string(m.t["jcSP+g"]),
+        buildLayout: () => [g]
     }),
-    h = (0, r.i4)(o.X.GIFT_SIDEBAR_ITEM, {
-        useTitle: () => g.intl.string(g.t["jcSP+g"]),
+    x = (0, r.i4)(o.X.GIFT_SIDEBAR_ITEM, {
+        useTitle: () => m.intl.string(m.t["jcSP+g"]),
         icon: s.GiftIcon,
         usePersistentBadge: function() {
             return i.useMemo(() => ({
@@ -29,5 +28,5 @@ let _ = (0, r.zZ)(o.X.GIFT_INVENTORY_CATEGORY, {
                 useCount: () => (0, l.IO)().length
             }), [])
         },
-        buildLayout: () => [x]
+        buildLayout: () => [_]
     })

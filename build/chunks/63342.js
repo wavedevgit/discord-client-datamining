@@ -1,11 +1,11 @@
 /** chunk id: 63342 params = (module,exports,require) **/
 t.d(i, {
-    A: () => x
+    A: () => h
 });
 var l = t(627968),
     s = t(64700),
-    n = t(503698),
-    a = t.n(n),
+    a = t(503698),
+    n = t.n(a),
     r = t(47762),
     o = t(990078),
     d = t(397927),
@@ -14,15 +14,15 @@ var l = t(627968),
     m = t(985018),
     _ = t(822017);
 
-function h(e) {
+function x(e) {
     let {
         game: i,
         activityLevel: t
     } = e, {
         data: s
-    } = (0, u.I)(i.id), n = s?.getCoverURL();
-    if (null == n) return null;
-    let a = t?.level === r._.HIGH;
+    } = (0, u.I)(i.id), a = s?.getCoverURL();
+    if (null == a) return null;
+    let n = t?.level === r._.HIGH;
     return (0, l.jsx)(o.m, {
         position: "bottom",
         "aria-label": i.name,
@@ -31,9 +31,9 @@ function h(e) {
             className: _.Xy,
             children: [(0, l.jsx)("img", {
                 className: _._s,
-                src: n,
+                src: a,
                 alt: i.name
-            }), a && (0, l.jsx)(c.Ay, {
+            }), n && (0, l.jsx)(c.Ay, {
                 mask: c.hW.GAMEPLAY_HIGH_ACTIVITY_ICON,
                 width: 16,
                 height: 16,
@@ -52,21 +52,21 @@ function h(e) {
     })
 }
 
-function x(e) {
+function h(e) {
     let {
         gamesToDisplay: i,
         lastGameToDisplay: t,
-        remainingGames: n,
+        remainingGames: a,
         activity: r,
         onExpandClick: c
-    } = e, [x, g] = s.useState(!1), {
+    } = e, [h, g] = s.useState(!1), {
         data: p
     } = (0, u.I)(t?.id), A = s.useCallback(() => {
         c?.(), g(!0)
     }, [c]), E = s.useMemo(() => {
         if (null == t) return null;
         let e = p?.getCoverURL();
-        return null == e ? null : 0 === n.length || x ? (0, l.jsx)(h, {
+        return null == e ? null : 0 === a.length || h ? (0, l.jsx)(x, {
             game: t,
             activityLevel: r?.[t.id]
         }) : (0, l.jsx)(o.m, {
@@ -74,11 +74,11 @@ function x(e) {
             "aria-label": m.intl.string(m.t.yohc6E),
             text: m.intl.string(m.t.yohc6E),
             children: (0, l.jsxs)(d.DUT, {
-                className: a()(_.Xy, _.oL, _.vk),
+                className: n()(_.Xy, _.oL, _.vk),
                 onClick: A,
-                "aria-label": `Show ${n.length} more games`,
+                "aria-label": `Show ${a.length} more games`,
                 children: [(0, l.jsx)("img", {
-                    className: a()(_._s, _.tJ),
+                    className: n()(_._s, _.tJ),
                     src: e,
                     alt: t.name
                 }), (0, l.jsx)("div", {
@@ -88,22 +88,22 @@ function x(e) {
                     children: (0, l.jsx)(d.Text, {
                         variant: "text-xs/normal",
                         color: "always-white",
-                        children: `+${n.length}`
+                        children: `+${a.length}`
                     })
                 })]
             })
         })
-    }, [t, p, n, r, x, A]);
+    }, [t, p, a, r, h, A]);
     if (null == i || 0 === i.length) return null;
-    let j = x && n.length > 0 ? n : [];
+    let j = h && a.length > 0 ? a : [];
     return (0, l.jsxs)(d.BJc, {
         direction: "horizontal",
         gap: 8,
         wrap: !0,
-        children: [i.map(e => (0, l.jsx)(h, {
+        children: [i.map(e => (0, l.jsx)(x, {
             game: e,
             activityLevel: r?.[e.id]
-        }, e.id)), x && n.length > 0 ? j.map(e => (0, l.jsx)(h, {
+        }, e.id)), h && a.length > 0 ? j.map(e => (0, l.jsx)(x, {
             game: e,
             activityLevel: r?.[e.id]
         }, e.id)) : E]

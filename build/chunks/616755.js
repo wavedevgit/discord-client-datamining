@@ -5,8 +5,8 @@ t.d(i, {
 });
 var l = t(627968),
     s = t(64700),
-    n = t(503698),
-    a = t.n(n),
+    a = t(503698),
+    n = t.n(a),
     r = t(110259),
     o = t(158954),
     d = t(397927),
@@ -14,8 +14,8 @@ var l = t(627968),
     u = t(260451),
     m = t(444316),
     _ = t(460760),
-    h = t(115703),
-    x = t(63342),
+    x = t(115703),
+    h = t(63342),
     g = t(438842),
     p = t(879472),
     A = t(649640),
@@ -24,18 +24,18 @@ var l = t(627968),
     v = t(473644),
     I = t(57930),
     f = t(450382),
-    C = t(652215),
-    T = t(963120);
+    y = t(652215),
+    C = t(963120);
 
-function y(e) {
+function T(e) {
     let {
         className: i,
         splashURL: t,
         backgroundColor: s,
-        expanded: n
+        expanded: a
     } = e, r = (0, A.b2)();
     return null == t ? (0, l.jsx)("div", {
-        className: a()(i, T.D7),
+        className: n()(i, C.D7),
         style: {
             background: (0, A.n6)(s ?? r.hex())
         }
@@ -45,19 +45,19 @@ function y(e) {
             backgroundImage: `url(${t})`
         },
         "aria-hidden": !0,
-        "data-expanded": n
+        "data-expanded": a
     })
 }
 
-function D(e) {
+function N(e) {
     let {
         invite: i,
         guild: t,
-        splashURL: n,
+        splashURL: a,
         friendMemberIds: r,
         discoveryGuild: o
-    } = e, c = null != r && r.length > 0, [u, _] = s.useState(!1), h = s.useCallback(e => {
-        _(e), E.default.track(C.HAw.INVITE_ACCEPT_DETAILS_VIEWED, {
+    } = e, c = null != r && r.length > 0, [u, _] = s.useState(!1), x = s.useCallback(e => {
+        _(e), E.default.track(y.HAw.INVITE_ACCEPT_DETAILS_VIEWED, {
             guild_id: t.id,
             invite_code: i.code,
             action: e ? "expanded" : "collapsed"
@@ -65,15 +65,15 @@ function D(e) {
     }, [t.id, i.code]);
     return (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsxs)("div", {
-            className: T.g3,
+            className: C.g3,
             id: "invite-details",
-            children: [(0, l.jsx)(y, {
-                className: T.se,
-                splashURL: n,
+            children: [(0, l.jsx)(T, {
+                className: C.se,
+                splashURL: a,
                 expanded: u
             }), (0, l.jsxs)("div", {
-                className: a()(T.qm, {
-                    [T.rd]: u
+                className: n()(C.qm, {
+                    [C.rd]: u
                 }),
                 children: [(0, l.jsx)(I.A, {
                     guild: t,
@@ -87,7 +87,7 @@ function D(e) {
                         discoveryGuild: o
                     }), c && (0, l.jsx)(m.A, {
                         friendMemberIds: r,
-                        className: T.QS,
+                        className: C.QS,
                         avatarSize: d._3J.SIZE_24
                     })]
                 }), (0, l.jsx)(f.A, {
@@ -95,34 +95,34 @@ function D(e) {
                     guild: t,
                     discoveryGuild: o,
                     expanded: u,
-                    setExpanded: h,
-                    scrollableSectionClassName: T.kw
+                    setExpanded: x,
+                    scrollableSectionClassName: C.kw
                 })]
             })]
         }), (0, l.jsx)(j.A, {
             invite: i,
             guild: t,
-            className: T.i
+            className: C.i
         })]
     })
 }
 
-function N(e) {
+function D(e) {
     let {
         invite: i,
         guild: t,
         splashURL: s,
-        friendMemberIds: n,
-        discoveryGuild: a
-    } = e, r = null != n && n.length > 0;
+        friendMemberIds: a,
+        discoveryGuild: n
+    } = e, r = null != a && a.length > 0;
     return (0, l.jsxs)("div", {
-        className: T.$5,
+        className: C.$5,
         id: "invite-details",
-        children: [(0, l.jsx)(y, {
-            className: T.je,
+        children: [(0, l.jsx)(T, {
+            className: C.je,
             splashURL: s
         }), (0, l.jsxs)("div", {
-            className: T.x6,
+            className: C.x6,
             children: [(0, l.jsx)(I.A, {
                 guild: t
             }), (0, l.jsxs)(d.BJc, {
@@ -131,24 +131,24 @@ function N(e) {
                 children: [(0, l.jsx)(v.A, {
                     guild: t,
                     invite: i,
-                    discoveryGuild: a
+                    discoveryGuild: n
                 }), r && (0, l.jsx)(m.A, {
-                    friendMemberIds: n,
-                    className: T.QS,
+                    friendMemberIds: a,
+                    className: C.QS,
                     avatarSize: d._3J.SIZE_24
                 })]
             }), (0, l.jsx)("div", {
-                className: T.Sd,
+                className: C.Sd,
                 children: (0, l.jsx)(f.A, {
                     invite: i,
                     guild: t,
-                    discoveryGuild: a,
-                    scrollableSectionClassName: T.r_
+                    discoveryGuild: n,
+                    scrollableSectionClassName: C.r_
                 })
             }), (0, l.jsx)(j.A, {
                 invite: i,
                 guild: t,
-                className: T.pU
+                className: C.pU
             })]
         })]
     })
@@ -158,11 +158,11 @@ function b(e) {
     let {
         guild: i,
         invite: t,
-        discoveryGuild: n,
-        transitionState: a,
+        discoveryGuild: a,
+        transitionState: n,
         headerId: m,
-        channel: h,
-        onClose: x
+        channel: x,
+        onClose: h
     } = e;
     s.useEffect(() => {
         (0, _.Mu)()
@@ -171,13 +171,13 @@ function b(e) {
         treatment: g
     } = u.zQ.useConfig({
         location: "AcceptInviteModalRedesign"
-    }), p = (0, c.A)("(max-width: 600px)"), A = "v1" === g || p, E = s.useMemo(() => A ? D : N, [A]);
+    }), p = (0, c.A)("(max-width: 600px)"), A = "v1" === g || p, E = s.useMemo(() => A ? N : D, [A]);
     return (0, l.jsxs)(d.dWK, {
         size: A ? "md" : "xxl",
         "aria-labelledby": m,
-        "aria-label": i?.name ?? h?.name ?? "",
-        transitionState: a,
-        onClose: () => (x(), Promise.resolve()),
+        "aria-label": i?.name ?? x?.name ?? "",
+        transitionState: n,
+        onClose: () => (h(), Promise.resolve()),
         trackingProps: {
             impression: {
                 impressionName: r.ImpressionNames.INVITE_ACCEPT,
@@ -188,13 +188,13 @@ function b(e) {
             }
         },
         children: [(0, l.jsx)("div", {
-            className: T.cG,
+            className: C.cG,
             children: (0, l.jsx)(o.s_y, {
                 shouldColorMix: !0
             })
         }), (0, l.jsx)(E, {
             ...e,
-            discoveryGuild: n
+            discoveryGuild: a
         })]
     })
 }
@@ -203,22 +203,22 @@ function L(e) {
     let {
         invite: i,
         guild: t,
-        splashURL: n,
-        friendMemberIds: a,
+        splashURL: a,
+        friendMemberIds: n,
         profile: c,
         transitionState: _,
         headerId: f,
-        channel: D,
-        onClose: N
+        channel: N,
+        onClose: D
     } = e, {
         treatment: b
     } = u.SH.useConfig({
         location: "AcceptInviteModalRedesign"
-    }), L = null != a && a.length > 0, {
+    }), L = null != n && n.length > 0, {
         gamesToDisplay: S,
         lastGameToDisplay: U,
         remainingGames: R
-    } = (0, h.A)(c), G = s.useMemo(() => c.traits.map((e, i) => ({
+    } = (0, x.A)(c), G = s.useMemo(() => c.traits.map((e, i) => ({
         key: `trait-${i}`,
         ...e
     })).filter(e => e.label.length > 0), [c]), O = (0, A.b2)(), k = (0, A.aG)({
@@ -229,9 +229,9 @@ function L(e) {
     return (0, l.jsxs)(d.dWK, {
         size: "md",
         "aria-labelledby": f,
-        "aria-label": t?.name ?? D?.name ?? "",
+        "aria-label": t?.name ?? N?.name ?? "",
         transitionState: _,
-        onClose: () => (N(), Promise.resolve()),
+        onClose: () => (D(), Promise.resolve()),
         trackingProps: {
             impression: {
                 impressionName: r.ImpressionNames.INVITE_ACCEPT,
@@ -242,19 +242,19 @@ function L(e) {
             }
         },
         children: [(0, l.jsx)("div", {
-            className: T.cG,
+            className: C.cG,
             children: (0, l.jsx)(o.s_y, {
                 shouldColorMix: !0
             })
         }), (0, l.jsxs)("div", {
-            className: T.g3,
+            className: C.g3,
             id: "invite-details",
-            children: [(0, l.jsx)(y, {
-                className: T.se,
-                splashURL: n,
+            children: [(0, l.jsx)(T, {
+                className: C.se,
+                splashURL: a,
                 backgroundColor: P
             }), (0, l.jsxs)("div", {
-                className: T.qm,
+                className: C.qm,
                 children: [(0, l.jsx)(I.A, {
                     guild: t,
                     outline: !0
@@ -266,8 +266,8 @@ function L(e) {
                         invite: i,
                         showGuildTag: !0
                     }), L && (0, l.jsx)(m.A, {
-                        friendMemberIds: a,
-                        className: T.QS,
+                        friendMemberIds: n,
+                        className: C.QS,
                         avatarSize: d._3J.SIZE_24
                     }), null != t.description && "" !== t.description && (0, l.jsx)(d.Text, {
                         variant: "text-sm/normal",
@@ -281,13 +281,13 @@ function L(e) {
                     }) : "v2" === b ? (0, l.jsx)(d.BJc, {
                         direction: "vertical",
                         gap: 8,
-                        children: (0, l.jsx)(x.A, {
+                        children: (0, l.jsx)(h.A, {
                             gamesToDisplay: S,
                             lastGameToDisplay: U,
                             remainingGames: R,
                             activity: c.gameActivity,
                             onExpandClick: () => {
-                                E.default.track(C.HAw.INVITE_ACCEPT_DETAILS_VIEWED, {
+                                E.default.track(y.HAw.INVITE_ACCEPT_DETAILS_VIEWED, {
                                     guild_id: t.id,
                                     invite_code: i.code,
                                     action: "games_expanded"
@@ -303,7 +303,7 @@ function L(e) {
         }), (0, l.jsx)(j.A, {
             invite: i,
             guild: t,
-            className: T.i
+            className: C.i
         })]
     })
 }

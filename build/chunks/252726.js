@@ -20,8 +20,8 @@ var i = n(311907),
     f = n(977997),
     h = n(147036),
     x = n(488926),
-    C = n(652215),
-    M = n(985018);
+    M = n(652215),
+    C = n(985018);
 
 function p(e, t) {
     let n = (0, i.bG)([c.Ay], () => c.Ay.getChannels(t)[c.vM], [t]),
@@ -30,22 +30,22 @@ function p(e, t) {
             return u.A.getChannel(n)
         }, [t, e.id]);
     if ((0, i.bG)([A.Ay], () => A.Ay.isGuestOrLurker(t, e.id), [t, e.id]) || null == p) return null;
-    let j = e.id === o.default.getId();
-    if (!j && !b.A.can(C.xBc.MOVE_MEMBERS, p)) return null;
-    let v = n.filter(t => {
+    let I = e.id === o.default.getId();
+    if (!I && !b.A.can(M.xBc.MOVE_MEMBERS, p)) return null;
+    let j = n.filter(t => {
         let {
             channel: n
         } = t;
-        return n.id !== p.id && (j ? b.A.can(C.xBc.CONNECT, n) && !(0, h.Pd)(n, f.A, g.A) : b.A.can(C.xBc.MOVE_MEMBERS, n) && (b.A.can(C.xBc.CONNECT, n) || x.$3({
-            permission: C.xBc.CONNECT,
+        return n.id !== p.id && (I ? b.A.can(M.xBc.CONNECT, n) && !(0, h.Pd)(n, f.A, g.A) : b.A.can(M.xBc.MOVE_MEMBERS, n) && (b.A.can(M.xBc.CONNECT, n) || x.$3({
+            permission: M.xBc.CONNECT,
             user: e,
             context: n
         })) && !(0, h.Pd)(n, f.A, g.A))
     });
-    return 0 === v.length ? null : (0, l.jsx)(a.Drp, {
+    return 0 === j.length ? null : (0, l.jsx)(a.Drp, {
         id: "voice-move",
-        label: M.intl.string(M.t.FAplms),
-        children: v.map(n => {
+        label: C.intl.string(C.t.FAplms),
+        children: j.map(n => {
             let {
                 channel: i
             } = n;

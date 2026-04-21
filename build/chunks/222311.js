@@ -16,8 +16,8 @@ var l = n(311907),
     g = n(312006),
     b = n(150401),
     m = n(354583),
-    f = n(418208),
-    x = n(985018);
+    x = n(418208),
+    f = n(985018);
 
 function h(e) {
     let t = (0, m.A)(),
@@ -28,24 +28,24 @@ function h(e) {
         C = o.default.getCurrentUser()?.id === e.id,
         I = (0, b.A)(),
         S = (0, l.bG)([g.Ay], () => g.Ay.getPermissionsForUser(e.id, n), [n, e.id]),
-        v = (0, A.Ni)(n),
-        _ = (0, f.zU)();
+        _ = (0, A.Ni)(n),
+        v = (0, x.zU)();
     if (null == t || null == E || null == j || S.speaker) return null;
-    let p = () => {
+    let D = () => {
         if (C) {
-            if ((0, f.Cf)(t.id)) return void r.A.showAgeVerificationGetStartedModal({
+            if ((0, x.Cf)(t.id)) return void r.A.showAgeVerificationGetStartedModal({
                 entryPoint: d.q1.STAGE_CHANNEL_RAISE_HAND
             });
             (0, c.e7)(t, !1)
         } else(0, c.SA)(t, e.id)
     };
-    return C && _ ? null : v ? (0, i.jsx)(a.Drp, {
+    return C && v ? null : _ ? (0, i.jsx)(a.Drp, {
         id: "invite-speaker",
-        label: C ? x.intl.string(x.t["W6c/Vf"]) : x.intl.string(x.t.VUCWcO),
-        action: p
+        label: C ? f.intl.string(f.t["W6c/Vf"]) : f.intl.string(f.t.VUCWcO),
+        action: D
     }) : I && C ? (0, i.jsx)(a.Drp, {
         id: "invite-speaker",
-        label: x.intl.string(x.t["W6c/Vf"]),
-        action: p
+        label: f.intl.string(f.t["W6c/Vf"]),
+        action: D
     }) : null
 }

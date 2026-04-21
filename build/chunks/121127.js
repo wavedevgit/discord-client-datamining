@@ -19,27 +19,27 @@ var l = n(627968),
     f = n(954571),
     h = n(652215),
     x = n(746080),
-    C = n(486974),
-    M = n(985018);
+    M = n(486974),
+    C = n(985018);
 
 function p(e) {
     let {
         userId: t,
         guildId: n,
         channelId: p,
-        location: j,
-        onAction: v,
-        appContext: I
-    } = e, S = i.useContext(f.AnalyticsContext), y = (0, u.aL)(), D = (0, a.bG)([E.A], () => p ?? E.A.getChannelId(n, !0), [p, n]), T = (0, a.bG)([m.Ay], () => null == n ? null : m.Ay.getMember(n, t), [n, t]), O = (0, o.q)(n);
+        location: I,
+        onAction: j,
+        appContext: v
+    } = e, D = i.useContext(f.AnalyticsContext), S = (0, u.aL)(), y = (0, a.bG)([E.A], () => p ?? E.A.getChannelId(n, !0), [p, n]), T = (0, a.bG)([m.Ay], () => null == n ? null : m.Ay.getMember(n, t), [n, t]), O = (0, o.q)(n);
     return null != n && null != T && O ? (0, l.jsx)(r.Drp, {
         id: "mod-view",
-        label: M.intl.string(M.t.kj3tz2),
+        label: C.intl.string(C.t.kj3tz2),
         action: () => {
-            v?.(), (0, c.A)(I), y.dispatch(h.jej.POPOUT_CLOSE);
-            let e = b.A.getChannel(D),
+            j?.(), (0, c.A)(v), S.dispatch(h.jej.POPOUT_CLOSE);
+            let e = b.A.getChannel(y),
                 l = {
-                    modViewPanel: C.g.INFO,
-                    sourceLocation: j ?? S.location
+                    modViewPanel: M.g.INFO,
+                    sourceLocation: I ?? D.location
                 };
             if (e?.isThread() && null != e.parent_id) {
                 g.Ay.getCurrentSidebarChannelId(e.parent_id) === e.id && (d.h.dispatch({
@@ -47,7 +47,7 @@ function p(e) {
                     baseChannelId: e.parent_id
                 }), (0, A.iN)(e.id)), (0, s.z)(n, t, e.parent_id, l);
                 return
-            }(0, s.z)(n, t, D ?? x.VV.MEMBER_SAFETY, l)
+            }(0, s.z)(n, t, y ?? x.VV.MEMBER_SAFETY, l)
         }
     }) : null
 }

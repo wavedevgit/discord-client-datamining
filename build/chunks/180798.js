@@ -21,7 +21,7 @@ var i = n(311907),
     h = n(985018),
     x = n(32271);
 
-function C(e, t, n) {
+function M(e, t, n) {
     return {
         type: "roleDot",
         variant: "dot" === t ? "dot" : "circle",
@@ -30,7 +30,7 @@ function C(e, t, n) {
     }
 }
 
-function M(e, t, n) {
+function C(e, t, n) {
     let i = e.colorString ?? f.TpD,
         r = n ? e.colorStrings : null;
     return (0, l.jsx)("div", {
@@ -52,16 +52,16 @@ function p(e, t) {
         a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null,
         x = arguments.length > 4 && void 0 !== arguments[4] && arguments[4],
         p = (0, i.bG)([b.A], () => b.A.getGuild(t)),
-        j = (0, i.bG)([g.A], () => g.A.getSortedRoles(t)),
-        v = (0, i.bG)([d.A], () => d.A.roleStyle),
-        I = (0, s.$9)(t, {
+        I = (0, i.bG)([g.A], () => g.A.getSortedRoles(t)),
+        j = (0, i.bG)([d.A], () => d.A.roleStyle),
+        v = (0, s.$9)(t, {
             location: a,
             targetUserId: e
         }),
         {
-            userRoles: S,
-            isGuildMember: y,
-            canManageRoles: D
+            userRoles: D,
+            isGuildMember: S,
+            canManageRoles: y
         } = (0, i.cf)([A.Ay, m.A], () => {
             let n = A.Ay.getMember(t, e);
             return {
@@ -71,27 +71,27 @@ function p(e, t) {
             }
         }, [e, t, p]),
         T = (0, u.Ay)(t, e);
-    if (__OVERLAY__ || null == S || null == p || !y) return null;
+    if (__OVERLAY__ || null == D || null == p || !S) return null;
     let O = m.A.getHighestRole(p),
-        _ = D && !x ? j.map(n => {
+        _ = y && !x ? I.map(n => {
             if ((0, c.Oy)(n)) return null;
             let i = n.managed || !m.A.isRoleHigher(p, O, n),
-                a = S.includes(n.id);
+                a = D.includes(n.id);
             return i && !a ? null : (0, l.jsx)(r.sLh, {
                 id: n.id,
-                leadingAccessory: C(n, v, T),
-                leftIcon: M(n, v, T),
+                leadingAccessory: M(n, j, T),
+                leftIcon: C(n, j, T),
                 label: n.name,
                 disabled: i,
                 action: () => {
-                    S.includes(n.id) ? (o.A.updateMemberRoles(t, e, S.filter(e => e !== n.id), [], [n.id]), I(s.Nj.REMOVE_ROLE)) : (o.A.updateMemberRoles(t, e, S.concat([n.id]), [n.id], []), I(s.Nj.ADD_ROLE))
+                    D.includes(n.id) ? (o.A.updateMemberRoles(t, e, D.filter(e => e !== n.id), [], [n.id]), v(s.Nj.REMOVE_ROLE)) : (o.A.updateMemberRoles(t, e, D.concat([n.id]), [n.id], []), v(s.Nj.ADD_ROLE))
                 },
                 checked: a
             }, n.id)
-        }) : j.map(e => (0, c.Oy)(e) || !S.includes(e.id) ? null : (0, l.jsx)(r.Drp, {
+        }) : I.map(e => (0, c.Oy)(e) || !D.includes(e.id) ? null : (0, l.jsx)(r.Drp, {
             id: e.id,
-            leadingAccessory: C(e, v, T),
-            iconLeft: M(e, v, T),
+            leadingAccessory: M(e, j, T),
+            iconLeft: C(e, j, T),
             label: e.name
         }, e.id));
     return 0 === (_ = _.filter(E.Vq)).length ? null : n ? _ : (0, l.jsx)(r.Drp, {

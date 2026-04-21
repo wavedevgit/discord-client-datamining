@@ -1,11 +1,11 @@
 /** chunk id: 444316 params = (module,exports,require) **/
 t.d(i, {
-    A: () => h
+    A: () => x
 });
 var l = t(627968),
     s = t(64700),
-    n = t(503698),
-    a = t.n(n),
+    a = t(503698),
+    n = t.n(a),
     r = t(417597),
     o = t(397927),
     d = t(966327),
@@ -14,13 +14,13 @@ var l = t(627968),
     m = t(985018),
     _ = t(197691);
 
-function h(e) {
+function x(e) {
     let {
         friendMemberIds: i,
         className: t,
-        avatarSize: n = o._3J.SIZE_16
-    } = e, h = (0, r.yK)([c.default], () => i.slice(0, 3).map(e => c.default.getUser(e)).filter(e => null != e)), {
-        enabled: x
+        avatarSize: a = o._3J.SIZE_16
+    } = e, x = (0, r.yK)([c.default], () => i.slice(0, 3).map(e => c.default.getUser(e)).filter(e => null != e)), {
+        enabled: h
     } = u.SH.useConfig({
         location: "InviteFriendMembers"
     }), g = s.useCallback((e, i) => (0, l.jsx)(o.Text, {
@@ -29,32 +29,32 @@ function h(e) {
         color: "text-subtle",
         children: e
     }, i), []);
-    if (0 === h.length) return null;
-    let p = h[0],
+    if (0 === x.length) return null;
+    let p = x[0],
         A = {
             count: i.length - 1,
             username: p.username,
-            username2: 2 === i.length && h.length >= 2 ? h[1].username : ""
+            username2: 2 === i.length && x.length >= 2 ? x[1].username : ""
         },
-        E = x ? m.intl.format(m.t.qnYumI, {
+        E = h ? m.intl.format(m.t.qnYumI, {
             usernameHook: g,
             ...A
         }) : m.intl.format(m.t["5NHEPu"], A);
     return (0, l.jsxs)("div", {
-        className: a()(_.kL, t),
+        className: n()(_.kL, t),
         children: [(0, l.jsx)("div", {
             className: _.yA,
             style: {
-                maxHeight: `${(0,o.FT9)(n)}px`
+                maxHeight: `${(0,o.FT9)(a)}px`
             },
-            children: h.map((e, i) => (0, l.jsx)("div", {
+            children: x.map((e, i) => (0, l.jsx)("div", {
                 className: _.R3,
                 style: {
-                    zIndex: h.length - i
+                    zIndex: x.length - i
                 },
                 children: (0, l.jsx)(d.A, {
                     user: e,
-                    size: n
+                    size: a
                 })
             }, e.id))
         }), (0, l.jsx)(o.Text, {
