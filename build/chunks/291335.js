@@ -13,8 +13,8 @@ var i = l(503698),
     c = l(837057),
     u = l(310419),
     m = l(773669),
-    p = l(427157),
-    A = l(967198),
+    A = l(427157),
+    p = l(967198),
     x = l(183555),
     g = l(488995),
     f = l(985018),
@@ -31,7 +31,7 @@ function v(e) {
         children: [(0, t.jsx)("div", {
             className: h.k_,
             children: null != n.application.bot ? (0, t.jsx)(o.A, {
-                user: new p.A(n.application.bot),
+                user: new A.A(n.application.bot),
                 size: r._3J.SIZE_16
             }) : (0, t.jsx)(r._7Z, {
                 color: "currentColor",
@@ -84,7 +84,7 @@ function j(e) {
         onClose: i
     } = e, {
         trackUserProfileAction: r
-    } = (0, x.NJ)(), o = (0, a.bG)([m.default], () => m.default.locale), d = (0, a.bG)([A.A], () => A.A.getGuildId());
+    } = (0, x.NJ)(), o = (0, a.bG)([m.default], () => m.default.locale), d = (0, a.bG)([p.A], () => p.A.getGuildId());
     return 0 === n.length ? null : (0, t.jsx)("ul", {
         className: s()(h.kL, l),
         children: n.map((e, n) => (0, t.jsx)("li", {

@@ -12,12 +12,12 @@ var t = l(627968),
     c = l(775602),
     u = l(606758),
     m = l(518477),
-    p = l(985018),
-    A = l(707238),
+    A = l(985018),
+    p = l(707238),
     x = l(861173);
 let g = {
         [m.jM.WIDGET_ADDED]: {
-            message: p.intl.string(p.t.fFP1Uy),
+            message: A.intl.string(A.t.fFP1Uy),
             icon: (0, t.jsx)(d.A9s, {
                 size: "sm",
                 color: d.LU0.colors.STATUS_POSITIVE.css
@@ -25,7 +25,7 @@ let g = {
             toast_id: "user_profile_widget_added"
         },
         [m.jM.WIDGET_REMOVED]: {
-            message: p.intl.string(p.t.zzsK7h),
+            message: A.intl.string(A.t.zzsK7h),
             icon: (0, t.jsx)(d.A9s, {
                 size: "sm",
                 color: d.LU0.colors.STATUS_POSITIVE.css
@@ -33,7 +33,7 @@ let g = {
             toast_id: "user_profile_widget_removed"
         },
         [m.jM.PROFILE_SAVE_GENERIC_FAILURE]: {
-            message: p.intl.string(p.t["84MExs"]),
+            message: A.intl.string(A.t["84MExs"]),
             icon: (0, t.jsx)(d.d$L, {
                 size: "sm",
                 color: d.LU0.colors.ICON_FEEDBACK_CRITICAL
@@ -42,7 +42,7 @@ let g = {
             type: d.ToastType.FAILURE
         },
         [m.jM.SOMETHING_WENT_WRONG]: {
-            message: p.intl.string(p.t.F8FvUy),
+            message: A.intl.string(A.t.F8FvUy),
             icon: (0, t.jsx)(d.d$L, {
                 size: "sm",
                 color: d.LU0.colors.ICON_FEEDBACK_CRITICAL
@@ -58,10 +58,10 @@ let g = {
             type: i
         } = e;
         return (0, t.jsxs)("div", {
-            className: a()(x.oR, A.oR),
+            className: a()(x.oR, p.oR),
             "data-type": i,
             children: [(0, t.jsx)("div", {
-                className: A.RC,
+                className: p.RC,
                 children: l
             }), (0, t.jsx)(d.Text, {
                 color: "text-strong",
@@ -73,9 +73,9 @@ let g = {
     h = e => {
         let {
             className: n
-        } = e, l = (0, u.fu)(), s = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, p] = i.useState(!1), [x, h] = i.useState(null);
+        } = e, l = (0, u.fu)(), s = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, A] = i.useState(!1), [x, h] = i.useState(null);
         i.useEffect(() => {
-            null !== l ? (p(!0), h(g[l]), d.ORC.announce(g[l].message)) : p(!1)
+            null !== l ? (A(!0), h(g[l]), d.ORC.announce(g[l].message)) : A(!1)
         }, [l]);
         let v = (0, d.pnh)(m, {
             from: {
@@ -106,7 +106,7 @@ let g = {
             }
         }, [m]), (0, t.jsx)(t.Fragment, {
             children: v((e, l) => l && null !== x && (0, t.jsx)(r.animated.div, {
-                className: a()(n, A.Jt),
+                className: a()(n, p.Jt),
                 style: e,
                 children: (0, t.jsx)(f, {
                     ...x

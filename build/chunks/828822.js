@@ -1,6 +1,6 @@
 /** chunk id: 828822 params = (module,exports,require) **/
 l.d(n, {
-    A: () => p
+    A: () => A
 });
 var t = l(627968);
 l(64700);
@@ -14,7 +14,7 @@ var i = l(503698),
     u = l(338165);
 let m = r.Ay.getEnableHardwareAcceleration() ? a.JsQ : a.euF;
 
-function p(e) {
+function A(e) {
     let {
         avatarProps: n,
         eventHandlers: l

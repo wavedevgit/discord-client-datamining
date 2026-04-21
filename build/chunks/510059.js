@@ -1,6 +1,6 @@
 /** chunk id: 510059 params = (module,exports,require) **/
 l.d(n, {
-    A: () => C
+    A: () => y
 });
 var t = l(627968);
 l(64700);
@@ -13,8 +13,8 @@ var i = l(503698),
     c = l(58149),
     u = l(681819),
     m = l(370480),
-    p = l(169869),
-    A = l(773669),
+    A = l(169869),
+    p = l(773669),
     x = l(486020),
     g = l(307600),
     f = l(652215),
@@ -27,10 +27,10 @@ function I(e) {
         account: n,
         locale: l,
         userId: i
-    } = e, s = n.metadata ?? {}, a = (0, m.An)(s[h.pK.CREATED_AT], l), A = d.A.get((0, u.ML)(n.type));
-    return (0, t.jsx)(y, {
+    } = e, s = n.metadata ?? {}, a = (0, m.An)(s[h.pK.CREATED_AT], l), p = d.A.get((0, u.ML)(n.type));
+    return (0, t.jsx)(C, {
         renderAccountName: () => {
-            let e = A?.getPlatformUserUrl?.(n);
+            let e = p?.getPlatformUserUrl?.(n);
             return null == e ? (0, t.jsx)(r.m, {
                 overflowOnly: !0,
                 text: n.name,
@@ -43,14 +43,14 @@ function I(e) {
                 href: e,
                 className: j.Y2,
                 useDefaultUnderlineStyles: !1,
-                "aria-label": A?.name != null ? `${A.name}, ${n.name}, ${v.intl.string(v.t.q5jLJB)}` : `${n.name}, ${v.intl.string(v.t.q5jLJB)}`,
+                "aria-label": p?.name != null ? `${p.name}, ${n.name}, ${v.intl.string(v.t.q5jLJB)}` : `${n.name}, ${v.intl.string(v.t.q5jLJB)}`,
                 onClick: l => {
                     (0, c.zV)(f.HAw.CONNECTED_ACCOUNT_VIEWED, {
                         platform_type: n.type,
                         other_user_id: i
                     }), (0, g.h)({
                         href: e,
-                        trusted: A?.type !== f.fg2.DOMAIN
+                        trusted: p?.type !== f.fg2.DOMAIN
                     }, l)
                 },
                 children: (0, t.jsxs)("div", {
@@ -70,9 +70,9 @@ function I(e) {
                 })
             })
         },
-        renderMetadata: () => n.type === f.fg2.REDDIT ? (0, p.xE)(s) : n.type === f.fg2.STEAM ? (0, p.dy)(s) : n.type === f.fg2.BLUESKY || n.type === f.fg2.MASTODON || n.type === f.fg2.TWITTER ? (0, p.ED)(s) : n.type === f.fg2.PAYPAL ? (0, p.gZ)(s) : n.type === f.fg2.EBAY ? (0, p.ub)(s) : n.type === f.fg2.TIKTOK ? (0, p.HU)(s) : null,
-        platformIcon: A?.icon.lightPNG,
-        platformName: A?.name,
+        renderMetadata: () => n.type === f.fg2.REDDIT ? (0, A.xE)(s) : n.type === f.fg2.STEAM ? (0, A.dy)(s) : n.type === f.fg2.BLUESKY || n.type === f.fg2.MASTODON || n.type === f.fg2.TWITTER ? (0, A.ED)(s) : n.type === f.fg2.PAYPAL ? (0, A.gZ)(s) : n.type === f.fg2.EBAY ? (0, A.ub)(s) : n.type === f.fg2.TIKTOK ? (0, A.HU)(s) : null,
+        platformIcon: p?.icon.lightPNG,
+        platformName: p?.name,
         createdAtDate: a
     })
 }
@@ -89,7 +89,7 @@ function N(e) {
         id: i.id,
         icon: i.icon
     });
-    return (0, t.jsx)(y, {
+    return (0, t.jsx)(C, {
         renderAccountName: () => (0, t.jsx)(r.m, {
             overflowOnly: !0,
             text: l.profile.username,
@@ -107,7 +107,7 @@ function N(e) {
     })
 }
 
-function y(e) {
+function C(e) {
     let {
         renderAccountName: n,
         renderMetadata: l,
@@ -147,13 +147,13 @@ function y(e) {
     })
 }
 
-function C(e) {
+function y(e) {
     let {
         connections: n,
         applicationIdentities: l,
         userId: i,
         className: r
-    } = e, o = (0, a.bG)([A.default], () => A.default.locale);
+    } = e, o = (0, a.bG)([p.default], () => p.default.locale);
     return 0 === n.length && 0 === l.length ? null : (0, t.jsxs)("ul", {
         className: s()(j.kL, r),
         children: [n.map(e => (0, t.jsx)(I, {

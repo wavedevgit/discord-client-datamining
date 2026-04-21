@@ -61,9 +61,11 @@ function p(e) {
     let {
         variant: n,
         disabled: t = !1,
-        children: a
+        children: a,
+        innerRef: r
     } = e;
     return (0, i.jsx)("div", {
+        ref: r,
         className: l()(o.tile, o[n], {
             [o.disabled]: t
         }),
@@ -80,17 +82,21 @@ function A(e) {
         showOverlay: d = !1,
         overlayIcon: s,
         overlayControls: _,
-        disabled: A = !1
+        disabled: A = !1,
+        buttonRef: g,
+        ...f
     } = e;
     return (0, i.jsxs)(p, {
         variant: n,
         disabled: A,
+        innerRef: g,
         children: [(0, i.jsxs)(r.DUT, {
             className: o.tileButton,
             "aria-label": a,
             onClick: A ? void 0 : t,
             "aria-disabled": A,
             tabIndex: A ? -1 : 0,
+            ...f,
             children: [(0, i.jsx)("div", {
                 className: o.content,
                 children: l

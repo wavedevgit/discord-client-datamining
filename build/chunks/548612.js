@@ -59,10 +59,10 @@ function u(e) {
         onSelectSecondaryColor: a,
         suggestedColors: u,
         disabled: m = !1
-    } = e, p = (0, s.Hl)(n), A = (0, s.Hl)(l), x = `linear-gradient(to bottom, ${p}, ${A})`, g = o.intl.formatToPlainString(o.t.FquTfm, {
-        colorLabel: p
-    }), f = o.intl.formatToPlainString(o.t.xOnm4z, {
+    } = e, A = (0, s.Hl)(n), p = (0, s.Hl)(l), x = `linear-gradient(to bottom, ${A}, ${p})`, g = o.intl.formatToPlainString(o.t.FquTfm, {
         colorLabel: A
+    }), f = o.intl.formatToPlainString(o.t.xOnm4z, {
+        colorLabel: p
     });
     return (0, t.jsx)(r.Yt, {
         variant: "square",

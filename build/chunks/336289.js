@@ -13,8 +13,8 @@ var i = l(317097),
     c = l(919395),
     u = l(385612),
     m = l(287809),
-    p = l(84540),
-    A = l(836602),
+    A = l(84540),
+    p = l(836602),
     x = l(950191),
     g = l(930349),
     f = l(339984),
@@ -51,40 +51,40 @@ function N(e) {
         disabled: v
     } = e, {
         newestAnalyticsLocation: N
-    } = (0, o.Ay)(), y = null != l, C = (0, x.Ay)(n, l), b = (0, s.bG)([A.A], () => A.A.getPendingChanges(l ?? void 0).pendingBanner), E = (0, s.bG)([m.default], () => m.default.getCurrentUser()?.banner != null), T = null === b, P = void 0 !== b, _ = y && (C?.isUsingGuildMemberBanner() ?? !1), R = T && y ? E : (0, c.Ac)(b, C?.banner), O = y ? _ : C?.banner != null, S = P ? null != b : O, L = C?.getPreviewBanner(b, !1, 296) ?? void 0, k = (0, r.rdh)(a.A.unsafe_rawColors.PRIMARY_800).hex(), U = C?.primaryColor ?? (0, i.LX)(k), {
+    } = (0, o.Ay)(), C = null != l, y = (0, x.Ay)(n, l), b = (0, s.bG)([p.A], () => p.A.getPendingChanges(l ?? void 0).pendingBanner), E = (0, s.bG)([m.default], () => m.default.getCurrentUser()?.banner != null), T = null === b, P = void 0 !== b, R = C && (y?.isUsingGuildMemberBanner() ?? !1), _ = T && C ? E : (0, c.Ac)(b, y?.banner), O = C ? R : y?.banner != null, S = P ? null != b : O, L = y?.getPreviewBanner(b, !1, 296) ?? void 0, k = (0, r.rdh)(a.A.unsafe_rawColors.PRIMARY_800).hex(), U = y?.primaryColor ?? (0, i.LX)(k), {
         hex: D
-    } = (0, d.A)(U), G = () => (0, u.XD)({
+    } = (0, d.A)(U), M = () => (0, u.XD)({
         uploadType: f.HL.BANNER,
         analyticsSource: N,
         guildId: l ?? void 0,
         stackingBehavior: "stack"
-    }), M = null != L ? (0, t.jsx)(I, {
+    }), G = null != L ? (0, t.jsx)(I, {
         src: L
     }) : (0, t.jsx)(j, {
         backgroundColor: D
     });
-    if (!R) return (0, t.jsx)(g.kL, {
+    if (!_) return (0, t.jsx)(g.kL, {
         variant: "square",
-        onClick: G,
+        onClick: M,
         accessibleLabel: h.intl.string(h.t.N0bC3P),
         disabled: v,
-        children: M
+        children: G
     });
-    let F = y && E,
-        w = S ? {
-            onClick: () => (0, p.p)({
+    let w = C && E,
+        F = S ? {
+            onClick: () => (0, A.p)({
                 guildId: l ?? void 0,
                 banner: null
             }),
-            type: F ? "reset" : "remove",
-            accessibleLabel: h.intl.string(F ? h.t.jHlJNS : h.t.tT9n7D)
+            type: w ? "reset" : "remove",
+            accessibleLabel: h.intl.string(w ? h.t.jHlJNS : h.t.tT9n7D)
         } : void 0;
     return (0, t.jsx)(g.NW, {
         variant: "square",
-        onClick: G,
+        onClick: M,
         accessibleLabel: h.intl.string(h.t.N0bC3P),
-        deleteButtonConfig: w,
+        deleteButtonConfig: F,
         disabled: v,
-        children: M
+        children: G
     })
 }

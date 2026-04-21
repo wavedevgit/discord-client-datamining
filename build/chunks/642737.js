@@ -1,6 +1,6 @@
 /** chunk id: 642737 params = (module,exports,require) **/
 l.d(n, {
-    A: () => A
+    A: () => p
 }), l(667532);
 var t = l(627968),
     i = l(64700),
@@ -12,13 +12,13 @@ var t = l(627968),
     c = l(403362),
     u = l(985018),
     m = l(308696);
-let p = "MAIN_PROFILE";
+let A = "MAIN_PROFILE";
 
-function A(e) {
+function p(e) {
     let {
         selectedGuildId: n,
         onChange: l,
-        loading: A
+        loading: p
     } = e, x = (0, s.bG)([d.Ay], () => d.Ay.getFlattenedGuildIds()), g = (0, s.bG)([o.A], () => o.A.getGuilds()), f = i.useMemo(() => {
         let e = x.map(e => {
             let n = g[e];
@@ -35,9 +35,9 @@ function A(e) {
             }
         }).filter(c.Vq);
         return e.unshift({
-            id: p,
+            id: A,
             label: u.intl.string(u.t["2p07FR"]),
-            value: p,
+            value: A,
             leading: (0, t.jsx)(a.pVd, {
                 size: "sm",
                 color: a.LU0.colors.ICON_DEFAULT,
@@ -45,15 +45,15 @@ function A(e) {
             })
         }), e
     }, [x, g]), h = i.useCallback(e => {
-        l(e === p ? null : e)
+        l(e === A ? null : e)
     }, [l]);
     return (0, t.jsx)(a.ZiE, {
         label: u.intl.string(u.t.rki38K),
         hideLabel: !0,
         selectionMode: "single",
         onSelectionChange: h,
-        value: n ?? p,
+        value: n ?? A,
         options: f,
-        loading: A
+        loading: p
     })
 }

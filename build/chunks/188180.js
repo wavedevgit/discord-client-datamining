@@ -44,18 +44,18 @@ function v(e) {
             case "destructive":
                 return "text-feedback-critical"
         }
-    }(E), N = function(e) {
+    }(E), b = function(e) {
         switch (e) {
             case "default":
                 return "currentColor";
             case "destructive":
                 return o.LU0.colors.ICON_FEEDBACK_CRITICAL
         }
-    }(E), b = v?.(a), C = i.useMemo(() => null != u ? a ? null : (0, r.jsx)(_.A, {
+    }(E), N = v?.(a), C = i.useMemo(() => null != u ? a ? null : (0, r.jsx)(_.A, {
         badge: u
-    }) : null != b ? (0, r.jsx)(m.A, {
-        badge: b
-    }) : void 0, [a, u, b]);
+    }) : null != N ? (0, r.jsx)(m.A, {
+        badge: N
+    }) : void 0, [a, u, N]);
     return (0, r.jsxs)(t, {
         "data-settings-sidebar-item": c,
         className: g.DB,
@@ -69,7 +69,7 @@ function v(e) {
             children: [null != f ? (0, r.jsx)(f, {}) : (0, r.jsxs)("div", {
                 className: g.Ly,
                 children: [(0, r.jsx)(p, {
-                    color: N,
+                    color: b,
                     size: y,
                     className: g.Kk
                 }), (0, r.jsx)(o.Text, {
@@ -110,24 +110,24 @@ function S(e) {
         visibleCategories: S,
         visibleContent: n,
         dismissibleBadges: a
-    }) : null, [S, x, y, g, n, a]), N = s ? "li" : "div", b = i.useMemo(() => (0, p.H)(t.key, n, a), [t.key, n, a]);
+    }) : null, [S, x, y, g, n, a]), b = s ? "li" : "div", N = i.useMemo(() => (0, p.H)(t.key, n, a), [t.key, n, a]);
     return s ? (0, r.jsx)(v, {
-        tag: N,
+        tag: b,
         panelKey: o?.key,
         onClick: E,
         active: y,
         node: t,
-        dismissibleBadge: b,
+        dismissibleBadge: N,
         children: A
     }) : (0, r.jsx)(l.tG, {
         id: t.key,
         children: e => (0, r.jsx)(v, {
-            tag: N,
+            tag: b,
             panelKey: o?.key,
             onClick: E,
             active: y,
             node: t,
-            dismissibleBadge: b,
+            dismissibleBadge: N,
             listItemProps: e,
             children: A
         })

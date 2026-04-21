@@ -12,8 +12,8 @@ var t = l(627968),
     c = l(654107),
     u = l(101058),
     m = l(84540),
-    p = l(836602),
-    A = l(950191),
+    A = l(836602),
+    p = l(950191),
     x = l(101928),
     g = l(548612);
 
@@ -22,11 +22,11 @@ function f(e) {
         user: n,
         guildId: l,
         disabled: s = !1
-    } = e, f = (0, A.Ay)(n.id, l), {
+    } = e, f = (0, p.Ay)(n.id, l), {
         pendingThemeColors: h,
         pendingAvatar: v
-    } = (0, r.cf)([p.A], () => {
-        let e = p.A.getPendingChanges(l ?? void 0);
+    } = (0, r.cf)([A.A], () => {
+        let e = A.A.getPendingChanges(l ?? void 0);
         return {
             pendingThemeColors: e.pendingThemeColors,
             pendingAvatar: e.pendingAvatar
@@ -43,7 +43,7 @@ function f(e) {
         pendingThemeColors: h,
         pendingAvatarSrc: j ?? void 0,
         isPreview: !0
-    }), y = (0, d.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), C = null != j ? j : n.getAvatarURL(l ?? void 0, 80), b = (0, c.rh)(C, y, !1), E = i.useCallback(e => {
+    }), C = (0, d.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), y = null != j ? j : n.getAvatarURL(l ?? void 0, 80), b = (0, c.rh)(y, C, !1), E = i.useCallback(e => {
         let n = a()(e, f?.themeColors);
         (0, m.p)({
             guildId: l ?? void 0,
