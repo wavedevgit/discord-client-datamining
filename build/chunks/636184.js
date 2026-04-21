@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(851746),
     h = n(652215),
     b = n(985018),
-    R = n(494025),
-    C = n(299148);
+    C = n(494025),
+    R = n(299148);
 let N = e => {
         let {
             recipient: t,
@@ -35,10 +35,10 @@ let N = e => {
             size: d._3J.SIZE_56
         }), o = g.Ay.getName(t), c = n === f.o.FAIL;
         return (0, i.jsxs)("div", {
-            className: R.w4,
+            className: C.w4,
             children: [(0, i.jsx)(d.euF, {
                 imageClassName: s()({
-                    [R.jN]: c
+                    [C.jN]: c
                 }),
                 src: a,
                 "aria-label": o,
@@ -46,13 +46,13 @@ let N = e => {
                 ...l
             }), c ? (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(d.Text, {
-                    className: R.E0,
+                    className: C.E0,
                     variant: "text-md/medium",
                     color: "text-strong",
                     children: o
                 }), (0, i.jsx)(d.Text, {
                     variant: "text-md/medium",
-                    className: R.nT,
+                    className: C.nT,
                     color: "text-strong",
                     children: b.intl.format(b.t.RO3T4B, {
                         userName: o
@@ -60,7 +60,7 @@ let N = e => {
                 })]
             }) : (0, i.jsx)(d.Text, {
                 variant: "text-md/medium",
-                className: R.Pm,
+                className: C.Pm,
                 color: "text-strong",
                 children: o
             }), (0, i.jsx)(d.Button, {
@@ -90,7 +90,7 @@ let N = e => {
         } = r.useContext(c.CZ);
         return null === u ? (0, i.jsx)(d.y$y, {}) : (0, i.jsx)(l.ExpressiveModal, {
             graphic: _.enabled ? {
-                src: C.A,
+                src: R.A,
                 type: "image"
             } : {
                 rive: d.lBW,
@@ -106,7 +106,7 @@ let N = e => {
             onClose: a,
             transitionState: t,
             children: (0, i.jsx)("div", {
-                className: R.Hz,
+                className: C.Hz,
                 children: n.map(e => (0, i.jsx)(N, {
                     recipient: e.recipient,
                     status: e.status,

@@ -25,8 +25,8 @@ let m = e => {
         carAssetClassName: x,
         hammerAssetClassName: h,
         keyAssetClassName: b,
-        starAssetClassName: R,
-        animationSpeedScale: C = 1,
+        starAssetClassName: C,
+        animationSpeedScale: R = 1,
         blurScale: N = 1
     } = e;
     return (0, i.jsxs)(i.Fragment, {
@@ -56,7 +56,7 @@ let m = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: C,
+                animationSpeedScale: R,
                 children: (0, i.jsx)("img", {
                     src: o.A,
                     className: f,
@@ -79,7 +79,7 @@ let m = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: C,
+                animationSpeedScale: R,
                 children: (0, i.jsx)("img", {
                     src: c.A,
                     className: x,
@@ -102,7 +102,7 @@ let m = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: C,
+                animationSpeedScale: R,
                 children: (0, i.jsx)("img", {
                     src: d.A,
                     className: h,
@@ -135,7 +135,7 @@ let m = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: C,
+                animationSpeedScale: R,
                 children: (0, i.jsx)("img", {
                     src: u.A,
                     className: b,
@@ -168,10 +168,10 @@ let m = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: C,
+                animationSpeedScale: R,
                 children: (0, i.jsx)("img", {
                     src: _.A,
-                    className: R,
+                    className: C,
                     alt: ""
                 })
             })

@@ -22,7 +22,7 @@ let p = e => {
         className: A,
         iconButtonSize: g,
         "aria-label": f
-    } = e, x = r.useId(), h = r.useRef(0), b = r.useRef(0), R = r.useRef(0), C = r.useRef(!1), N = r.useRef(!1), v = r.useRef(null), E = r.useRef(null), T = (0, o.bG)([u.A], () => u.A.keyboardModeEnabled), j = (0, o.bG)([u.A], () => u.A.useReducedMotion), I = r.useMemo(() => r.Children.map(t, e => r.isValidElement(e) ? null != e && "object" == typeof e && e.$$typeof === Symbol.for("react.portal") ? e : r.cloneElement(e, {
+    } = e, x = r.useId(), h = r.useRef(0), b = r.useRef(0), C = r.useRef(0), R = r.useRef(!1), N = r.useRef(!1), v = r.useRef(null), E = r.useRef(null), T = (0, o.bG)([u.A], () => u.A.keyboardModeEnabled), j = (0, o.bG)([u.A], () => u.A.useReducedMotion), I = r.useMemo(() => r.Children.map(t, e => r.isValidElement(e) ? null != e && "object" == typeof e && e.$$typeof === Symbol.for("react.portal") ? e : r.cloneElement(e, {
         tabIndex: -1
     }) : e), [t]), [S, y] = r.useState(!1), [M, O] = r.useState(!1), [P, D] = r.useState(!0), L = () => {
         y(b.current > h.current)
@@ -30,12 +30,12 @@ let p = e => {
         if (N.current) return null;
         let e = G.current;
         if (null == e) return null;
-        let t = Math.floor((R.current + e.clientWidth / 2) / (e.scrollWidth / e.childElementCount)),
+        let t = Math.floor((C.current + e.clientWidth / 2) / (e.scrollWidth / e.childElementCount)),
             n = Math.max(0, Math.min(e.childElementCount - 1, t));
         return v.current = n, n
     }, []), k = r.useCallback(() => {
         let e = G.current;
-        null != e && (O(R.current > 0), D(R.current + e.clientWidth < e.scrollWidth), U())
+        null != e && (O(C.current > 0), D(C.current + e.clientWidth < e.scrollWidth), U())
     }, [U]), w = r.useCallback(() => {
         let e = G.current;
         if (null == e) return;
@@ -49,13 +49,13 @@ let p = e => {
         let {
             contentRect: t
         } = e;
-        h.current = t.width, null != G.current && (R.current = G.current?.scrollLeft), L(), k(), w()
+        h.current = t.width, null != G.current && (C.current = G.current?.scrollLeft), L(), k(), w()
     }), G = r.useRef(null);
     r.useEffect(() => {
         let e = G.current;
         if (null == e) return;
         let t = new ResizeObserver(() => {
-            b.current = e.scrollWidth, e.scrollLeft !== R.current && (e.scrollLeft = R.current), L(), k()
+            b.current = e.scrollWidth, e.scrollLeft !== C.current && (e.scrollLeft = C.current), L(), k()
         });
         Array.from(e.children).forEach(e => {
             t.observe(e)
@@ -77,10 +77,10 @@ let p = e => {
             let {
                 scrollLeft: t
             } = e, n = Math.max(0, t - h.current);
-            R.current = n, C.current = !0, e.scrollTo({
+            C.current = n, R.current = !0, e.scrollTo({
                 left: n,
                 behavior: j ? "auto" : "smooth"
-            }), e.addEventListener("scrollend", () => C.current = !1, {
+            }), e.addEventListener("scrollend", () => R.current = !1, {
                 once: !0
             }), k();
             let i = U();
@@ -92,10 +92,10 @@ let p = e => {
             let {
                 scrollLeft: t
             } = e, n = t + h.current;
-            R.current = n, C.current = !0, e.scrollTo({
+            C.current = n, R.current = !0, e.scrollTo({
                 left: n,
                 behavior: j ? "auto" : "smooth"
-            }), e.addEventListener("scrollend", () => C.current = !1, {
+            }), e.addEventListener("scrollend", () => R.current = !1, {
                 once: !0
             }), k();
             let i = U();
@@ -207,18 +207,18 @@ let p = e => {
                         });
                         let e = r.offsetLeft - t.clientWidth / 2 + r.offsetWidth / 2,
                             n = Math.max(0, Math.min(t.scrollWidth - t.clientWidth, e));
-                        R.current = n, n !== t.scrollLeft && (C.current = !0, N.current = !0, t.scrollTo({
+                        C.current = n, n !== t.scrollLeft && (R.current = !0, N.current = !0, t.scrollTo({
                             left: n,
                             behavior: j ? "auto" : "smooth"
                         }), t.addEventListener("scrollend", () => {
-                            C.current = !1, N.current = !1
+                            R.current = !1, N.current = !1
                         }, {
                             once: !0
                         })), v.current = i, E.current = i, w()
                     } else t.setAttribute("tabIndex", "0"), U()
             },
             onScroll: e => {
-                C.current || (R.current = e.target.scrollLeft, k())
+                R.current || (C.current = e.target.scrollLeft, k())
             },
             children: I
         })]

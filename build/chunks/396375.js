@@ -30,7 +30,7 @@ let u = e => {
         subscriptionTier: n,
         useShorterCTA: m,
         isPersistentCTA: _
-    }), R = (0, l.V)(), C = R?.subscription_trial, N = null != C && b === C.sku_id, v = g ?? ((0, r.Mw)(x) ? a.XD.BRAND_INVERTED : a.XD.BRAND);
+    }), C = (0, l.V)(), R = C?.subscription_trial, N = null != R && b === R.sku_id, v = g ?? ((0, r.Mw)(x) ? a.XD.BRAND_INVERTED : a.XD.BRAND);
     return (0, i.jsx)(o.A, {
         color: v,
         textOptions: {

@@ -442,7 +442,7 @@ function V(e) {
         ed = (0, i.jsx)(x.f7, {
             ...eu
         });
-    return (0, i.jsx)(m.rg, {
+    return (0, i.jsx)(m.T_, {
         shouldShowGlobalNotices: !0,
         purchaseItemContent: ed,
         subscriptionDetailsContent: el,

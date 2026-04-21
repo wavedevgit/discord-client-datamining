@@ -53,9 +53,7 @@ let y = s.memo(s.forwardRef((e, t) => {
                         containerVisibilityPercentage: G
                     }), V && (0, i.jsx)("div", {
                         className: j.XN,
-                        children: (0, i.jsx)(b.A, {
-                            enablePremiumBrandRefresh: !0
-                        })
+                        children: (0, i.jsx)(b.A, {})
                     }), (0, i.jsx)("div", {
                         className: j.s8,
                         children: (0, i.jsx)(d.Heading, {
@@ -69,8 +67,7 @@ let y = s.memo(s.forwardRef((e, t) => {
                         children: [L && (0, i.jsx)("div", {
                             className: j.eZ,
                             children: (0, i.jsx)(p.A, {
-                                referrer: R,
-                                enablePremiumBrandRefresh: !0
+                                referrer: R
                             })
                         }), k && (0, i.jsx)("div", {
                             className: j.Qn,

@@ -1,8 +1,7 @@
 /** chunk id: 45861 params = (module,exports,require) **/
 e.exports = {
-    E2: "attributionBannerContainerRebranded_e6e64d",
-    hA: "attributionBannerContentApplicationHomeRebranded_e6e64d",
-    Mn: "textContainerRebranded_e6e64d",
-    kR: "iconContainerApplicationHome_e6e64d",
-    Kk: "icon_e6e64d"
+    $6: "attributionBannerContainer_e6e64d",
+    sc: "attributionBannerContentApplicationHome_e6e64d",
+    FS: "textContainer_e6e64d",
+    kR: "iconContainerApplicationHome_e6e64d"
 }

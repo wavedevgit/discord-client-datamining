@@ -12,32 +12,30 @@ var s = n(397927),
 
 function d(e) {
     let {
-        referrer: t,
-        enablePremiumBrandRefresh: n
+        referrer: t
     } = e, {
-        avatarSrc: d,
-        eventHandlers: c
+        avatarSrc: n,
+        eventHandlers: d
     } = (0, l.A)({
         userId: t?.id,
-        size: n ? r._3.SIZE_24 : r._3.SIZE_32,
+        size: r._3.SIZE_24,
         animateOnHover: !0
     });
     return (0, i.jsx)("div", {
-        className: o.E2,
+        className: o.$6,
         children: (0, i.jsxs)("div", {
-            className: o.hA,
+            className: o.sc,
             children: [(0, i.jsx)("div", {
                 className: o.kR,
                 children: (0, i.jsx)(s.euF, {
-                    className: o.Kk,
-                    src: d,
+                    src: n,
                     "aria-label": t.username,
                     size: r._3.SIZE_32,
-                    ...c
+                    ...d
                 })
             }), (0, i.jsx)(s.Heading, {
                 variant: "heading-sm/normal",
-                className: o.Mn,
+                className: o.FS,
                 color: "text-strong",
                 children: a.intl.format(a.t.IqxblS, {
                     username: null != t.globalName ? t.globalName : t.username

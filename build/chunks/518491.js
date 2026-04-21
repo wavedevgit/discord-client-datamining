@@ -21,8 +21,8 @@ var r = n(503698),
     x = n(166403),
     h = n(786300),
     b = n(975571),
-    R = n(927578),
-    C = n(40185),
+    C = n(927578),
+    R = n(40185),
     N = n(89366),
     v = n(881489),
     E = n(422936),
@@ -62,7 +62,6 @@ let K = e => {
                     align: "start",
                     gap: 32,
                     children: [(0, i.jsx)(k.A, {
-                        enablePremiumBrandRefresh: !0,
                         text: W.intl.string(W.t.yhldRB)
                     }), (0, i.jsxs)(d.BJc, {
                         align: "start",
@@ -116,7 +115,7 @@ let K = e => {
             showPill: f,
             userDiscountOffer: h,
             discountedPrice: b,
-            buttonVisibilityRef: C
+            buttonVisibilityRef: R
         } = q(), {
             analyticsLocations: N
         } = (0, m.Ay)(_.A.PREMIUM_MARKETING_HERO_CTA), v = (0, j.c)(s.C.MARKETING_PAGE_BANNER), y = null;
@@ -142,11 +141,11 @@ let K = e => {
         return l ? (0, i.jsx)(K, {
             fpEndsAt: J.currentEntitlementEndsAt,
             className: t,
-            buttonVisibilityRef: C
+            buttonVisibilityRef: R
         }) : (0, i.jsx)("div", {
             className: a()(Y.kL, t),
             "data-testid": "subscriber-nitro-home-hero-header",
-            ref: C,
+            ref: R,
             children: (0, i.jsxs)("div", {
                 className: Y.Qs,
                 ref: en,
@@ -167,7 +166,7 @@ let K = e => {
                         color: "text-strong",
                         children: W.intl.format(W.t["3Q4wCy"], {
                             discountedPrice: b,
-                            billingPeriod: (0, R.Ke)(h.discount.user_usage_limit_interval),
+                            billingPeriod: (0, C.Ke)(h.discount.user_usage_limit_interval),
                             numMonths: h.discount.user_usage_limit
                         })
                     })]
@@ -214,12 +213,11 @@ let K = e => {
             discountedPrice: a
         } = e, {
             analyticsLocations: s
-        } = (0, m.Ay)(_.A.PREMIUM_MARKETING_HERO_CTA), l = (0, v.ds)(), o = (0, C.cg)(), d = (0, N.QQ)(), u = W.intl.string(W.t.qYKftX), g = (0, y.m)(), f = W.intl.string(W.t.ifwQZb), {
+        } = (0, m.Ay)(_.A.PREMIUM_MARKETING_HERO_CTA), l = (0, v.ds)(), o = (0, R.cg)(), d = (0, N.QQ)(), u = W.intl.string(W.t.qYKftX), g = (0, y.m)(), f = W.intl.string(W.t.ifwQZb), {
             fractionalState: x,
             endsAt: h
-        } = (0, A.A)(), R = (0, p.Ay)(h, p.yE.CREDITS_ENDS_IN), E = null;
+        } = (0, A.A)(), C = (0, p.Ay)(h, p.yE.CREDITS_ENDS_IN), E = null;
         if (x === F.xc.NONE || l) E = (0, i.jsx)(k.A, {
-            enablePremiumBrandRefresh: !0,
             text: u
         });
         else {
@@ -238,8 +236,7 @@ let K = e => {
                     children: (0, i.jsx)("div", {
                         className: Y.eL,
                         children: (0, i.jsx)(k.A, {
-                            enablePremiumBrandRefresh: !0,
-                            text: R
+                            text: C
                         })
                     })
                 })

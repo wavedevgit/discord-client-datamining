@@ -21,8 +21,8 @@ var a = n(503698),
     x = n(297362),
     h = n(137815),
     b = n(967521),
-    R = n(767032),
-    C = n(990521),
+    C = n(767032),
+    R = n(990521),
     N = ((i = {}).SUBSCRIBER_HOME = "SUBSCRIBER_HOME", i.NITRO_SETTINGS = "SETTINGS", i.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", i);
 let v = function(e) {
     let {
@@ -85,7 +85,7 @@ let v = function(e) {
                 className: x.V9,
                 children: (0, r.jsx)("img", {
                     alt: "",
-                    src: R.A,
+                    src: C.A,
                     className: x.$V
                 })
             }), (0, r.jsxs)("div", {
@@ -116,7 +116,7 @@ let v = function(e) {
                 className: x.m0,
                 children: (0, r.jsx)("img", {
                     alt: "",
-                    src: C.A,
+                    src: R.A,
                     className: x.$V
                 })
             })]

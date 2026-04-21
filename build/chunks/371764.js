@@ -39,7 +39,7 @@ let f = e => {
             analyticsLocation: x.location
         }),
         b = (0, A.a)(n.body),
-        R = (0, A.C)(n.helpArticle, n.helpArticleId);
+        C = (0, A.C)(n.helpArticle, n.helpArticleId);
     return (0, i.jsxs)("div", {
         className: g.kL,
         children: [(0, i.jsx)("div", {
@@ -59,11 +59,11 @@ let f = e => {
                 variant: "text-md/medium",
                 color: "text-subtle",
                 className: g.tb,
-                children: [b, null != R && (0, i.jsxs)(i.Fragment, {
+                children: [b, null != C && (0, i.jsxs)(i.Fragment, {
                     children: ["\xa0", (0, i.jsx)(d.MzZ, {
                         className: g.$T,
-                        href: R.url,
-                        children: R.linkText
+                        href: C.url,
+                        children: C.linkText
                     })]
                 })]
             })]

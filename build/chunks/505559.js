@@ -8,15 +8,14 @@ var r = n(397927),
     a = n(166988);
 let s = e => {
     let {
-        enablePremiumBrandRefresh: t = !1,
-        text: n
+        text: t
     } = e;
     return (0, i.jsx)("div", {
-        className: t ? a.x : a.U,
+        className: a.i,
         children: (0, i.jsx)(r.Text, {
-            variant: t ? "text-sm/bold" : "text-xs/bold",
+            variant: "text-sm/bold",
             color: "always-white",
-            children: n
+            children: t
         })
     })
 }

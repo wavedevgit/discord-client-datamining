@@ -14,9 +14,9 @@ let d = e => {
         searchQuery: t,
         selectedUsers: n,
         limit: r
-    } = e, d = (0, s.bG)([c.A], () => c.A.getRecipientStatus()), u = (0, s.bG)([c.A], () => c.A.getReferralsRemaining()), [_, m] = i.useState(0), [p, A] = i.useState([]), [g, f] = i.useState(!1), [x, h] = i.useState(!1), [b, R] = i.useState(new Map);
+    } = e, d = (0, s.bG)([c.A], () => c.A.getRecipientStatus()), u = (0, s.bG)([c.A], () => c.A.getReferralsRemaining()), [_, m] = i.useState(0), [p, A] = i.useState([]), [g, f] = i.useState(!1), [x, h] = i.useState(!1), [b, C] = i.useState(new Map);
     a()(null != u, "Referrals remaining should not be null");
-    let C = async (e, i) => {
+    let R = async (e, i) => {
         if (!g && !x && null != e && 0 !== u) try {
             f(!0);
             let r = [...b.values()];
@@ -30,7 +30,7 @@ let d = e => {
                 let i = new Set(r.map(e => e.id)),
                     s = a.users.filter(e => !n.has(e.id) && !i.has(e.id));
                 return 0 === e ? [...n.values(), ...r.values(), ...s] : [...t, ...s]
-            }), R(e => {
+            }), C(e => {
                 let t = new Map(e);
                 for (let e of r) t.set(e.id, e);
                 return t
@@ -42,14 +42,14 @@ let d = e => {
         }
     }, N = {
         limit: r,
-        getNextRows: C,
+        getNextRows: R,
         getLocalReferrals: async () => {
             let e = new Map;
             for (let [t, n] of d)
                 if (n === o.aK.PENDING && !b.has(t)) {
                     let n = await (0, l.wz)(t);
                     e.set(n.id, n)
-                } R(e), A(Array.from(e.values()))
+                } C(e), A(Array.from(e.values()))
         }
     }, v = i.useRef(N);
     return i.useEffect(() => {
@@ -63,7 +63,7 @@ let d = e => {
         u > 0 ? e(0, t) : n()
     }, [t, u]), {
         eligibleUsers: p,
-        fetchUsers: () => C(_, r),
+        fetchUsers: () => R(_, r),
         hasError: x,
         isFetching: g,
         resendUsers: b

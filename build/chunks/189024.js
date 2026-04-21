@@ -20,8 +20,8 @@ var i = n(627968),
     x = n(31502),
     h = n(259065),
     b = n(95035),
-    R = n(532794),
-    C = n(829219),
+    C = n(532794),
+    R = n(829219),
     N = n(859703),
     v = n(341915),
     E = n(245853),
@@ -76,11 +76,11 @@ function eA() {
         location: "useWhatsNewPerkCards"
     }).functionalityEnabled, ex = U.A.useConfig({
         location: "PremiumWhatsNewSection"
-    }).enabled, eh = (0, l.bG)([D.A], () => D.A.getPremiumTypeSubscription()), eb = eh?.hasActiveTrial ?? !1, eR = (0, l.bG)([N.A], () => [...N.A.quests.values()].find(e => e.config.features.includes(Z.Li.NITRO_CONTROL_CTA)) ?? null), eC = (0, M.A)({
+    }).enabled, eh = (0, l.bG)([D.A], () => D.A.getPremiumTypeSubscription()), eb = eh?.hasActiveTrial ?? !1, eC = (0, l.bG)([N.A], () => [...N.A.quests.values()].find(e => e.config.features.includes(Z.Li.NITRO_CONTROL_CTA)) ?? null), eR = (0, M.A)({
         analyticsLocations: e
     }), {
         launchInGameActivity: eN
-    } = (0, T.zW)(eR), ev = (0, r.useCallback)(() => {
+    } = (0, T.zW)(eC), ev = (0, r.useCallback)(() => {
         (0, P.openUserSettings)(O.X.PROFILE_PANEL, {
             analyticsLocations: e
         }, () => (0, h.L)({
@@ -95,29 +95,29 @@ function eA() {
     }, [e]), eT = (0, r.useCallback)(() => {
         (0, P.openUserSettings)(O.X.APPEARANCE_IN_APP_ICON_CATEGORY)
     }, []), ej = (0, r.useCallback)(() => {
-        null != eR && (eR.userStatus?.enrolledAt == null ? (0, C.Oy)(eR.id, {
+        null != eC && (eC.userStatus?.enrolledAt == null ? (0, R.Oy)(eC.id, {
             questContent: v.uF.NITRO_HOME_PERK_CARD,
             questContentCTA: j.Cy.START_QUEST,
             sourceQuestContent: v.uF.NITRO_HOME_PERK_CARD
         }).then(e => {
             switch (e.type) {
-                case C.WM.SUCCESS:
+                case R.WM.SUCCESS:
                     eN();
                     break;
-                case C.WM.CAPTCHA_FAILED:
+                case R.WM.CAPTCHA_FAILED:
                     d.A.show({
                         title: ee.intl.string(ee.t["/CidxO"]),
                         body: ee.intl.string(ee.t.HQdHg6)
                     });
                     break;
-                case C.WM.UNKNOWN_ERROR:
+                case R.WM.UNKNOWN_ERROR:
                     d.A.show({
                         title: ee.intl.string(ee.t.R0RpRX),
                         body: ee.intl.string(ee.t.OXD41D)
                     })
             }
         }) : eN())
-    }, [eR, eN]), eI = () => {
+    }, [eC, eN]), eI = () => {
         (0, _.A)(Y.TE)
     }, eS = (0, r.useCallback)(() => {
         eb ? (0, c.mMO)(async () => {
@@ -127,7 +127,7 @@ function eA() {
             return t => (0, i.jsx)(e, {
                 ...t
             })
-        }) : (0, R.A)({
+        }) : (0, C.A)({
             subscriptionTier: W.pe.TIER_2,
             initialPlanId: W.gD.PREMIUM_GROUP_MONTH,
             analyticsLocations: e
@@ -152,8 +152,8 @@ function eA() {
     }, []);
     return (0, r.useMemo)(() => {
         let n = null;
-        if (null != eR) {
-            let e = eR.userStatus?.completedAt != null;
+        if (null != eC) {
+            let e = eC.userStatus?.completedAt != null;
             n = {
                 id: H.NITRO_CONTROL_QUEST_CARD_ID,
                 title: ee.intl.string(e ? Q.default.S4okiP : Q.default.lvidGa),
@@ -257,7 +257,7 @@ function eA() {
                 id: H.DISPLAY_NAME_STYLES_CARD_ID,
                 title: ee.intl.string(ee.t.OLtTrt),
                 description: ee.intl.string(ee.t["di/pXR"]),
-                onCtaClick: t ? eC : ev,
+                onCtaClick: t ? eR : ev,
                 ctaText: ee.intl.string(ee.t.jVcuVY),
                 primaryAsset: ea.A,
                 pillText: ee.intl.string(ee.t.y2b7CA)
@@ -281,7 +281,7 @@ function eA() {
                     ariaHidden: !0
                 }),
                 ctaText: ee.intl.string(ee.t.jVcuVY),
-                onCtaClick: t ? eC : eE
+                onCtaClick: t ? eR : eE
             }, {
                 id: H.CUSTOM_APP_ICONS_CARD_ID,
                 title: ee.intl.string(ee.t["GU+wqh"]),
@@ -293,5 +293,5 @@ function eA() {
             l = (r = r.filter(e => null != e))[0].featured,
             d = l ? 5 : 6;
         return r.splice(+!!l, 0, ey), r.length > d && r.splice(d, r.length - d), r
-    }, [ey, eU, eL, eR, eA, ej, eg, ex, eM, eO, ew, ek, e, ev, eT, eE, eS, eC, t, ef])
+    }, [ey, eU, eL, eC, eA, ej, eg, ex, eM, eO, ew, ek, e, ev, eT, eE, eS, eR, t, ef])
 }

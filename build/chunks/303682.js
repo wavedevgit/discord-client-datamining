@@ -20,8 +20,8 @@ var i, r = n(627968),
     x = n(427262),
     h = n(326084),
     b = n(851746),
-    R = n(761546),
-    C = n(972007),
+    C = n(761546),
+    R = n(972007),
     N = n(636184),
     v = n(652215),
     E = n(985018),
@@ -37,7 +37,7 @@ let j = e => {
             hasError: I,
             isFetching: S,
             resendUsers: y
-        } = (0, C.i)({
+        } = (0, R.i)({
             searchQuery: h,
             selectedUsers: m
         }), [M, O] = a.useState(!1), P = N.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map);
@@ -117,7 +117,7 @@ let j = e => {
                 let {
                     eligibleRecipients: t
                 } = e;
-                return (0, r.jsx)(R.A, {
+                return (0, r.jsx)(C.A, {
                     users: Array.from(t.values()),
                     isUserSelected: e => m.has(e.id),
                     onSelectionChange: (e, t) => {
@@ -150,7 +150,7 @@ let j = e => {
             _ = (0, c.bG)([b.A], () => b.A.getRecipientStatus()),
             [m, p] = a.useState(new Map),
             [g, f] = a.useState(new Map),
-            [x, C] = a.useState(!1);
+            [x, R] = a.useState(!1);
         return a.useEffect(() => {
             (async () => {
                 let e = new Map;
@@ -179,11 +179,11 @@ let j = e => {
                     size: "md",
                     fullWidth: !0,
                     onClick: async () => {
-                        C(!0), await s([...g.values()]), C(!1)
+                        R(!0), await s([...g.values()]), R(!1)
                     }
                 })
             })),
-            children: (0, r.jsx)(R.A, {
+            children: (0, r.jsx)(C.A, {
                 users: Array.from(m.values()),
                 isUserSelected: e => g.has(e.id),
                 isUserDisabled: e => e.referralStatus === h.aK.REDEEMED,

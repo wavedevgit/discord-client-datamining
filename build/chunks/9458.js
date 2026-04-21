@@ -22,7 +22,7 @@ var i = n(64700),
 function h(e) {
     let {
         fractionalState: t
-    } = (0, s.A)(), n = t === A.xc.FP_ONLY, r = (0, d.$F)(), h = (0, d.Xb)(), b = r?.status === d.Wo.UPCOMING || n, R = (0, _.N)(r?.id), C = (0, o.z)(), N = (0, u.t)(), v = (0, l.P)();
+    } = (0, s.A)(), n = t === A.xc.FP_ONLY, r = (0, d.$F)(), h = (0, d.Xb)(), b = r?.status === d.Wo.UPCOMING || n, C = (0, _.N)(r?.id), R = (0, o.z)(), N = (0, u.t)(), v = (0, l.P)();
     return (0, i.useMemo)(() => {
         let t, i = null != v ? g.intl.string(v.nameUnformattedNitro) : void 0;
         return null == r ? n && (t = (0, c.T)(A.Ac.PREMIUM_TENURE_1_MONTH, 1) ?? void 0) : t = r.status === d.Wo.UPCOMING ? g.intl.formatToPlainString(g.t.a1eKDi, {
@@ -42,7 +42,7 @@ function h(e) {
             id: p.TENURE_BADGE_CARD_ID,
             title: null != r ? g.intl.string(r.nameUnformattedNitro) : n ? g.intl.string(g.t.tx9Fvw) : "",
             pillText: g.intl.string(g.t["jyYgZ+"]),
-            primaryAsset: null != R ? b ? R.standard : R.ambientLarge : n ? x : null,
+            primaryAsset: null != C ? b ? C.standard : C.ambientLarge : n ? x : null,
             primaryAssetClassName: a()(f.p, {
                 [f.n]: b
             }),
@@ -51,11 +51,11 @@ function h(e) {
             }) : void 0,
             description: t,
             subscriptionRequired: !0,
-            progress: C ?? void 0,
+            progress: R ?? void 0,
             ctaText: g.intl.string(g.t.jVcuVY),
             onCtaClick: () => (0, m.D)({
                 analyticsLocations: e
             })
         }
-    }, [r, R, b, h, C, n, N, v, e])
+    }, [r, C, b, h, R, n, N, v, e])
 }

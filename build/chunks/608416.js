@@ -53,7 +53,7 @@ let A = e => {
         onRest: () => f(e => -1 * e)
     } : {
         scale: 1
-    }), [h, b] = (0, s.useState)(1), R = (0, o.zhh)(null != t ? {
+    }), [h, b] = (0, s.useState)(1), C = (0, o.zhh)(null != t ? {
         from: {
             blur: h > 0 ? t.startBlurRadius : t.endBlurRadius
         },
@@ -66,17 +66,17 @@ let A = e => {
         onRest: () => b(e => -1 * e)
     } : {
         blur: 0
-    }), C = (0, s.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), [N, v] = (0, s.useState)(0), [E, T] = (0, s.useState)(1), j = (0, o.zhh)({
+    }), R = (0, s.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), [N, v] = (0, s.useState)(0), [E, T] = (0, s.useState)(1), j = (0, o.zhh)({
         xOffset: N,
         config: {
             tension: 10,
             friction: 10,
-            duration: C
+            duration: R
         }
     });
     return ((0, c.A)(() => {
         v(E * (.5 * Math.random() * 5 + 2.5)), T(e => -1 * e)
-    }, C), u) ? m : (0, a.jsx)(l.animated.div, {
+    }, R), u) ? m : (0, a.jsx)(l.animated.div, {
         style: {
             transform: p.y?.to(e => {
                 if (null == i) return "translateY(0px)";
@@ -90,7 +90,7 @@ let A = e => {
             }),
             translateX: d ? j.xOffset.to(e => `${e}px`) : 0,
             scale: x.scale,
-            filter: R.blur?.to(e => `blur(${e}px)`),
+            filter: C.blur?.to(e => `blur(${e}px)`),
             opacity: null != r && r.changeOpacity ? r.containerVisibilityPercentage : 1
         },
         children: m

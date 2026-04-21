@@ -63,7 +63,7 @@ let b = {
             }
         }
     },
-    R = {
+    C = {
         logitech: {
             modalTitle: f.default["2I7nK+"],
             modalSubtitle: {
@@ -75,7 +75,7 @@ let b = {
             landingUrl: "https://www.logitech.com/"
         }
     },
-    C = (e, t) => {
+    R = (e, t) => {
         let n = b[e.outboundTitle];
         return {
             id: e.id,
@@ -93,7 +93,7 @@ let b = {
             partnerId: t,
             transitionState: n,
             onClose: s
-        } = e, o = R[t], [c, d] = (0, a.yK)([_.A], () => {
+        } = e, o = C[t], [c, d] = (0, a.yK)([_.A], () => {
             let {
                 recurring: e,
                 oneTime: n
@@ -123,7 +123,7 @@ let b = {
                         className: h.kR,
                         children: c.map(e => (0, i.jsx)(m.wx, {
                             recurrence: {
-                                ...C(e, g[e.id] ?? null),
+                                ...R(e, g[e.id] ?? null),
                                 asset: m.oL[e.partnerId ?? ""]?.asset ?? ""
                             },
                             showPartnerImage: !0,
@@ -140,7 +140,7 @@ let b = {
                     }), (0, i.jsx)("div", {
                         className: h.kR,
                         children: d.map(e => (0, i.jsx)(A.$, {
-                            promotion: C(e, g[e.id] ?? null),
+                            promotion: R(e, g[e.id] ?? null),
                             analyticsLocations: [l.A.THIRD_PARTY_PROMOTIONS_MODAL]
                         }, e.id))
                     })]
