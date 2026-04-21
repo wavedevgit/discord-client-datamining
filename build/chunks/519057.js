@@ -611,22 +611,16 @@ let e$ = {
     [eP.kqX.PREMIUM_GROUP_PRIMARY_REMINDER_NAGBAR]: {
         predicate: e => {
             let {
-                currentUser: t,
-                premiumSubscription: n
-            } = e;
+                currentUser: t
+            } = e, n = ef.A.getPremiumGroupSubscription();
             if (null == n) return !1;
             let i = y.A.hasFetchedMembers(),
                 r = y.A.getNumAvailableInvites();
             return (0, k.ux)(t, n) && i && r >= ev.Vu
         },
-        metadata: e => {
-            let {
-                premiumSubscription: t
-            } = e;
-            return {
-                premiumSubscription: t
-            }
-        }
+        metadata: () => ({
+            premiumSubscription: ef.A.getPremiumGroupSubscription()
+        })
     },
     [eP.kqX.BLOCK_USER_FEEDBACK_NAGBAR]: {
         predicate: () => !eQ(eP.kqX.BLOCK_USER_FEEDBACK_NAGBAR) && B.Cm(),

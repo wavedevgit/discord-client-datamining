@@ -1,6 +1,6 @@
 /** chunk id: 524728 params = (module,exports,require) **/
 n.d(e, {
-    A: () => f
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -8,13 +8,13 @@ var i = n(627968),
     r = n(397927),
     l = n(341915),
     d = n(73473),
-    o = n(545986),
-    c = n(240710),
+    c = n(545986),
+    o = n(240710),
     u = n(654487),
     m = n(985018),
     h = n(63639);
 
-function x(t) {
+function f(t) {
     let {
         onClose: e,
         transitionState: n
@@ -37,40 +37,40 @@ function x(t) {
     })
 }
 
-function f(t) {
+function g(t) {
     let {
         quest: e,
         sourceQuestContent: n,
         transitionState: a,
         onClose: m,
-        rewardContent: f,
-        isRewardContentLoading: g,
+        rewardContent: g,
+        isRewardContentLoading: x,
         rewardContentHasError: C,
-        location: b
-    } = t, N = l.uF.REWARD_MODAL, [p, A] = s.useState(!0), j = e.config.features.some(t => u.Tz.has(t)), I = s.useCallback(async () => {
-        j ? m() : await (0, o.f7)(e.config.ctaConfig?.link) && (m(), (0, r.s7G)())
-    }, [e.config.ctaConfig?.link, m, j]);
-    if (C) return (0, i.jsx)(x, {
+        location: I
+    } = t, b = l.uF.REWARD_MODAL, [N, A] = s.useState(!0), p = e.config.features.some(t => u.Tz.has(t)), v = s.useCallback(async () => {
+        p ? m() : await (0, c.f7)(e.config.ctaConfig?.link) && (m(), (0, r.s7G)())
+    }, [e.config.ctaConfig?.link, m, p]);
+    if (C) return (0, i.jsx)(f, {
         onClose: m,
         transitionState: a
     });
-    let v = g || p;
+    let T = x || N;
     return (0, i.jsx)(d.R, {
         questOrQuests: e,
-        questContent: N,
+        questContent: b,
         sourceQuestContent: n,
         children: t => (0, i.jsxs)(i.Fragment, {
-            children: [v ? (0, i.jsx)(r.y$y, {
+            children: [T ? (0, i.jsx)(r.y$y, {
                 className: h.u1,
                 type: r.y$y.Type.WANDERING_CUBES
             }) : null, (0, i.jsx)("div", {
                 ref: t,
                 style: {
-                    visibility: v ? "hidden" : "visible"
+                    visibility: T ? "hidden" : "visible"
                 },
                 children: (0, i.jsxs)(r.EOs, {
                     "data-migration-pending": !0,
-                    transitionState: v ? r.ip4.HIDDEN : a,
+                    transitionState: T ? r.ip4.HIDDEN : a,
                     size: r.rIJ.DYNAMIC,
                     className: h.yl,
                     parentComponent: "QuestRewardModalBase",
@@ -83,15 +83,15 @@ function f(t) {
                         className: h.jE,
                         children: [(0, i.jsx)("div", {
                             className: h._H,
-                            children: f
+                            children: g
                         }), (0, i.jsx)("div", {
                             className: h.xK,
-                            children: (0, i.jsx)(c.A, {
+                            children: (0, i.jsx)(o.A, {
                                 quest: e,
                                 sourceQuestContent: n,
                                 onLoadComplete: () => A(!1),
-                                preCtaClick: I,
-                                location: b
+                                preCtaClick: v,
+                                location: I
                             })
                         })]
                     })]
