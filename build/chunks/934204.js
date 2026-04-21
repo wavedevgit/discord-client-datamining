@@ -1,9 +1,9 @@
 /** chunk id: 934204 params = (module,exports,require) **/
 n.d(t, {
-    z: () => r
+    z: () => a
 });
 var s = n(627968);
-let r = () => (0, s.jsx)("svg", {
+let a = () => (0, s.jsx)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "100%",
     height: "100%",

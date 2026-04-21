@@ -3,16 +3,16 @@ n.d(t, {
     A: () => l
 });
 var s = n(64700),
-    r = n(287809),
-    a = n(657331);
+    a = n(287809),
+    r = n(657331);
 
 function l() {
     let {
         analyticsLocations: e
     } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
     return (0, s.useCallback)(() => {
-        let t = r.default.getCurrentUser();
-        null != t && (0, a.openUserProfileModal)({
+        let t = a.default.getCurrentUser();
+        null != t && (0, r.openUserProfileModal)({
             userId: t.id,
             sourceAnalyticsLocations: e
         })

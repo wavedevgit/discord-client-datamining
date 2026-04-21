@@ -22,9 +22,9 @@ let m = e => {
         keyContainerClassName: A,
         starContainerClassName: g,
         boltAssetClassName: f,
-        carAssetClassName: h,
-        hammerAssetClassName: b,
-        keyAssetClassName: x,
+        carAssetClassName: x,
+        hammerAssetClassName: h,
+        keyAssetClassName: b,
         starAssetClassName: R,
         animationSpeedScale: C = 1,
         blurScale: N = 1
@@ -82,7 +82,7 @@ let m = e => {
                 animationSpeedScale: C,
                 children: (0, i.jsx)("img", {
                     src: c.A,
-                    className: h,
+                    className: x,
                     alt: ""
                 })
             })
@@ -105,7 +105,7 @@ let m = e => {
                 animationSpeedScale: C,
                 children: (0, i.jsx)("img", {
                     src: d.A,
-                    className: b,
+                    className: h,
                     alt: ""
                 })
             })
@@ -138,7 +138,7 @@ let m = e => {
                 animationSpeedScale: C,
                 children: (0, i.jsx)("img", {
                     src: u.A,
-                    className: x,
+                    className: b,
                     alt: ""
                 })
             })

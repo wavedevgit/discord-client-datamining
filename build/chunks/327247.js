@@ -247,7 +247,7 @@ function O(e) {
     return _ ? (0, i.jsx)(d.$nd, {
         variant: "secondary",
         disabled: !0,
-        text: R.intl.format(R.t["14o6QY"], {
+        text: R.intl.format(R.t["6p8BZx"], {
             expiryDate: p
         }),
         fullWidth: !0

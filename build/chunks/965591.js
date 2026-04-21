@@ -23,7 +23,7 @@ let A = function(e) {
         discountedPrice: g
     } = e, {
         analyticsLocations: f
-    } = (0, c.Ay)(o.A.CHURN_DISCOUNT_PERSISTENT_CTA), h = (0, l.zhh)({
+    } = (0, c.Ay)(o.A.CHURN_DISCOUNT_PERSISTENT_CTA), x = (0, l.zhh)({
         transform: t ? "translateY(-100%)" : "translateY(0%)",
         opacity: +!!t,
         config: {
@@ -35,7 +35,7 @@ let A = function(e) {
         className: a()(m.iE, {
             [m.q4]: !t
         }),
-        style: h,
+        style: x,
         children: (0, i.jsxs)("div", {
             className: m.iJ,
             children: [(0, i.jsx)("img", {

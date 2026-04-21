@@ -14,14 +14,14 @@ let d = e => {
         searchQuery: t,
         selectedUsers: n,
         limit: r
-    } = e, d = (0, s.bG)([c.A], () => c.A.getRecipientStatus()), u = (0, s.bG)([c.A], () => c.A.getReferralsRemaining()), [_, m] = i.useState(0), [p, A] = i.useState([]), [g, f] = i.useState(!1), [h, b] = i.useState(!1), [x, R] = i.useState(new Map);
+    } = e, d = (0, s.bG)([c.A], () => c.A.getRecipientStatus()), u = (0, s.bG)([c.A], () => c.A.getReferralsRemaining()), [_, m] = i.useState(0), [p, A] = i.useState([]), [g, f] = i.useState(!1), [x, h] = i.useState(!1), [b, R] = i.useState(new Map);
     a()(null != u, "Referrals remaining should not be null");
     let C = async (e, i) => {
-        if (!g && !h && null != e && 0 !== u) try {
+        if (!g && !x && null != e && 0 !== u) try {
             f(!0);
-            let r = [...x.values()];
+            let r = [...b.values()];
             for (let [e, t] of d)
-                if (t === o.aK.PENDING && !x.has(e)) {
+                if (t === o.aK.PENDING && !b.has(e)) {
                     let t = await (0, l.wz)(e);
                     r.push(t)
                 } let a = await (0, o.P7)(e, t, i);
@@ -36,7 +36,7 @@ let d = e => {
                 return t
             }), m(a.nextIndex)
         } catch (e) {
-            b(!0)
+            h(!0)
         } finally {
             f(!1)
         }
@@ -46,26 +46,26 @@ let d = e => {
         getLocalReferrals: async () => {
             let e = new Map;
             for (let [t, n] of d)
-                if (n === o.aK.PENDING && !x.has(t)) {
+                if (n === o.aK.PENDING && !b.has(t)) {
                     let n = await (0, l.wz)(t);
                     e.set(n.id, n)
                 } R(e), A(Array.from(e.values()))
         }
-    }, E = i.useRef(N);
+    }, v = i.useRef(N);
     return i.useEffect(() => {
-        E.current = N
+        v.current = N
     }), i.useEffect(() => {
         let {
             getNextRows: e,
             limit: t,
             getLocalReferrals: n
-        } = E.current;
+        } = v.current;
         u > 0 ? e(0, t) : n()
     }, [t, u]), {
         eligibleUsers: p,
         fetchUsers: () => C(_, r),
-        hasError: h,
+        hasError: x,
         isFetching: g,
-        resendUsers: x
+        resendUsers: b
     }
 }

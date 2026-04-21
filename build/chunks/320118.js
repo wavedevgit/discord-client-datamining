@@ -3,23 +3,23 @@ n.d(t, {
     F: () => o
 });
 var s = n(311907),
-    r = n(895944),
-    a = n(649032),
+    a = n(895944),
+    r = n(649032),
     l = n(26508),
     i = n(673608),
     d = n(861495);
 
 function o(e) {
     let t = e?.location ?? "useNitroProgramReward",
-        n = (0, l.DK)(a.W.NITRO, t),
+        n = (0, l.DK)(r.W.NITRO, t),
         {
             isReady: o,
             programReward: c,
             totalDays: u
-        } = (0, s.cf)([r.A], () => ({
-            isReady: r.A.isReady(),
-            programReward: r.A.getRewardForProgram(a.W.NITRO),
-            totalDays: r.A.getTotalDaysInDuration(a.W.NITRO)
+        } = (0, s.cf)([a.A], () => ({
+            isReady: a.A.isReady(),
+            programReward: a.A.getRewardForProgram(r.W.NITRO),
+            totalDays: a.A.getTotalDaysInDuration(r.W.NITRO)
         })),
         m = (0, i.q)(),
         h = (0, d.Q)(c, n),

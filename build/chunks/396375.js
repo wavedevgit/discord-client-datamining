@@ -22,24 +22,24 @@ let u = e => {
         confirmationFooter: A,
         color: g,
         ...f
-    } = e, h = (0, s.Ay)(), {
-        buttonText: b,
-        marketingSubscriptionTierSkuId: x
+    } = e, x = (0, s.Ay)(), {
+        buttonText: h,
+        marketingSubscriptionTierSkuId: b
     } = (0, c.s)({
         hasActivePromotion: u,
         subscriptionTier: n,
         useShorterCTA: m,
         isPersistentCTA: _
-    }), R = (0, l.V)(), C = R?.subscription_trial, N = null != C && x === C.sku_id, E = g ?? ((0, r.Mw)(h) ? a.XD.BRAND_INVERTED : a.XD.BRAND);
+    }), R = (0, l.V)(), C = R?.subscription_trial, N = null != C && b === C.sku_id, v = g ?? ((0, r.Mw)(x) ? a.XD.BRAND_INVERTED : a.XD.BRAND);
     return (0, i.jsx)(o.A, {
-        color: E,
+        color: v,
         textOptions: {
-            textOverride: b,
+            textOverride: h,
             textClassName: N ? d.A : void 0,
             ...t
         },
         onlyShineOnHover: !0,
-        subscriptionTier: x,
+        subscriptionTier: b,
         showGradient: p,
         confirmationFooter: A,
         ...f

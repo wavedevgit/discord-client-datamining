@@ -19,7 +19,7 @@ let s = function(e) {
         disabled: !0,
         fullWidth: !0,
         size: n,
-        text: r.intl.format(r.t["14o6QY"], {
+        text: r.intl.format(r.t["6p8BZx"], {
             expiryDate: s
         })
     })

@@ -10,35 +10,35 @@ n.d(t, {
     ue: () => d
 });
 var s = n(954571),
-    r = n(652215);
+    a = n(652215);
 
-function a(e, t) {
-    s.default.track(r.HAw.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED, {
+function r(e, t) {
+    s.default.track(a.HAw.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED, {
         cta_type: e,
         program_state: t
     })
 }
 let l = e => {
-        a("shop_orbs", e)
+        r("shop_orbs", e)
     },
     i = e => {
-        a("view_billing", e)
+        r("view_billing", e)
     },
     d = e => {
-        a("update_billing", e)
+        r("update_billing", e)
     },
     o = e => {
-        a("resubscribe", e)
+        r("resubscribe", e)
     },
     c = e => {
-        a("orbs_card_helpdesk", e)
+        r("orbs_card_helpdesk", e)
     },
     u = () => {
-        a("balance_popover_upsell")
+        r("balance_popover_upsell")
     },
     m = () => {
-        a("balance_popover_next_drop")
+        r("balance_popover_next_drop")
     },
     h = () => {
-        a("balance_popover_helpdesk")
+        r("balance_popover_helpdesk")
     }

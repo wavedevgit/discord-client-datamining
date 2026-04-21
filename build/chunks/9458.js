@@ -1,6 +1,6 @@
 /** chunk id: 9458 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => h
 });
 var i = n(64700),
     r = n(503698),
@@ -17,14 +17,14 @@ var i = n(64700),
     A = n(788868),
     g = n(985018),
     f = n(792641),
-    h = n(714206);
+    x = n(714206);
 
-function b(e) {
+function h(e) {
     let {
         fractionalState: t
-    } = (0, s.A)(), n = t === A.xc.FP_ONLY, r = (0, d.$F)(), b = (0, d.Xb)(), x = r?.status === d.Wo.UPCOMING || n, R = (0, _.N)(r?.id), C = (0, o.z)(), N = (0, u.t)(), E = (0, l.P)();
+    } = (0, s.A)(), n = t === A.xc.FP_ONLY, r = (0, d.$F)(), h = (0, d.Xb)(), b = r?.status === d.Wo.UPCOMING || n, R = (0, _.N)(r?.id), C = (0, o.z)(), N = (0, u.t)(), v = (0, l.P)();
     return (0, i.useMemo)(() => {
-        let t, i = null != E ? g.intl.string(E.nameUnformattedNitro) : void 0;
+        let t, i = null != v ? g.intl.string(v.nameUnformattedNitro) : void 0;
         return null == r ? n && (t = (0, c.T)(A.Ac.PREMIUM_TENURE_1_MONTH, 1) ?? void 0) : t = r.status === d.Wo.UPCOMING ? g.intl.formatToPlainString(g.t.a1eKDi, {
             days: N?.days ?? 0
         }) : function(e, t) {
@@ -42,12 +42,12 @@ function b(e) {
             id: p.TENURE_BADGE_CARD_ID,
             title: null != r ? g.intl.string(r.nameUnformattedNitro) : n ? g.intl.string(g.t.tx9Fvw) : "",
             pillText: g.intl.string(g.t["jyYgZ+"]),
-            primaryAsset: null != R ? x ? R.standard : R.ambientLarge : n ? h : null,
+            primaryAsset: null != R ? b ? R.standard : R.ambientLarge : n ? x : null,
             primaryAssetClassName: a()(f.p, {
-                [f.n]: x
+                [f.n]: b
             }),
-            caption: null != b ? g.intl.formatToPlainString(g.t.Hu4jfi, {
-                date: new Date(b)
+            caption: null != h ? g.intl.formatToPlainString(g.t.Hu4jfi, {
+                date: new Date(h)
             }) : void 0,
             description: t,
             subscriptionRequired: !0,
@@ -57,5 +57,5 @@ function b(e) {
                 analyticsLocations: e
             })
         }
-    }, [r, R, x, b, C, n, N, E, e])
+    }, [r, R, b, h, C, n, N, v, e])
 }

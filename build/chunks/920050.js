@@ -1,8 +1,8 @@
 /** chunk id: 920050 params = (module,exports,require) **/
 n.r(t), n.d(t, {
     BADGE_CARD_ID: () => s,
-    CLIENT_THEMES_CARD_ID: () => r,
-    CUSTOM_APP_ICONS_CARD_ID: () => a,
+    CLIENT_THEMES_CARD_ID: () => a,
+    CUSTOM_APP_ICONS_CARD_ID: () => r,
     CUSTOM_SOUNDS_CARD_ID: () => l,
     DISPLAY_NAME_STYLES_CARD_ID: () => i,
     EARLY_ACCESS_CARD_ID: () => d,
@@ -12,6 +12,7 @@ n.r(t), n.d(t, {
     LOGITECH_3PP_CARD_ID: () => N,
     MORE_EMOJIS_CARD_ID: () => m,
     NITRO_CONTROL_QUEST_CARD_ID: () => h,
+    NITRO_ORBS_REWARDS_CARD_ID: () => A,
     PERMADECOS_CARD_ID: () => x,
     PREMIUM_GROUP_CARD_ID: () => C,
     PROFILES_CARD_ID: () => _,
@@ -25,8 +26,8 @@ n.r(t), n.d(t, {
     VIDEO_BACKGROUNDS_CARD_ID: () => v
 });
 let s = "badge",
-    r = "clientThemes",
-    a = "customAppIcons",
+    a = "clientThemes",
+    r = "customAppIcons",
     l = "customSounds",
     i = "displayNameStyles",
     d = "earlyAccess",
@@ -46,4 +47,5 @@ let s = "badge",
     j = "tenureBadge",
     v = "videoBackgrounds",
     N = "logitech3PP",
-    E = "orbMultiplier"
+    E = "orbMultiplier",
+    A = "nitroOrbsRewards"

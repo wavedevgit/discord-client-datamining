@@ -4,9 +4,9 @@ n.d(t, {
     L: () => p
 });
 var s = n(627968),
-    r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     i = n(230109),
     d = n(732955),
     o = n(688810),
@@ -23,15 +23,15 @@ let p = "orbs",
             className: t,
             location: n
         } = e, {
-            analyticsLocations: a
-        } = (0, o.Ay)(n), g = r.useRef(null), f = r.useRef(!1), {
+            analyticsLocations: r
+        } = (0, o.Ay)(n), g = a.useRef(null), f = a.useRef(!1), {
             passesGeneralUIInvariant: R,
             programReward: b
         } = (0, c.F)({
             location: "PremiumTenureRewardsOrbsSection"
         });
         return R ? (0, s.jsx)(o.f5, {
-            value: a,
+            value: r,
             children: (0, s.jsx)(i.L, {
                 innerRef: g,
                 onChange: e => {

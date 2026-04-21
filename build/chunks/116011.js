@@ -4,8 +4,8 @@ n.d(t, {
     wx: () => y
 });
 var s = n(627968),
-    r = n(64700),
-    a = n(158954),
+    a = n(64700),
+    r = n(158954),
     l = n(311907),
     i = n(397927),
     d = n(914410),
@@ -35,8 +35,8 @@ let E = {
             bodyWithExpiration: f.default["6KjkUa"],
             redemptionURL: "https://www.logitech.com/",
             logos: {
-                dark: (0, s.jsx)(r.Fragment, {}, "logitech-logo-dark"),
-                light: (0, s.jsx)(r.Fragment, {}, "logitech-logo-light")
+                dark: (0, s.jsx)(a.Fragment, {}, "logitech-logo-dark"),
+                light: (0, s.jsx)(a.Fragment, {}, "logitech-logo-light")
             },
             asset: v.A
         },
@@ -68,7 +68,7 @@ let E = {
             t = (0, u.P6)();
         return (0, s.jsxs)("div", {
             className: `${b.G9} ${b.sQ}`,
-            children: [(0, s.jsx)(a.EYj, {
+            children: [(0, s.jsx)(r.EYj, {
                 variant: "text-sm/normal",
                 color: "text-muted",
                 className: b.kT,
@@ -99,15 +99,15 @@ let E = {
             })
         })
     },
-    P = e => {
+    I = e => {
         let {
             recurrence: t
-        } = e, n = (0, s.jsx)(a.rOg, {
+        } = e, n = (0, s.jsx)(r.rOg, {
             color: i.LU0.colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT
         }), l = (0, s.jsx)("span", {
             className: b.nP,
-            children: (0, s.jsx)(a.K0, {
-                icon: a.TdU,
+            children: (0, s.jsx)(r.K0, {
+                icon: r.TdU,
                 size: "sm",
                 variant: "icon-only",
                 "aria-label": "",
@@ -115,19 +115,19 @@ let E = {
                     navigator.clipboard.writeText(t.code), o(n)
                 }
             })
-        }), [d, o] = r.useState(() => l);
+        }), [d, o] = a.useState(() => l);
         if (null != t.code) return (0, s.jsx)("div", {
             className: b.oP,
             children: (0, s.jsxs)("div", {
                 className: b.t0,
                 children: [(0, s.jsx)("div", {
                     className: b.cD,
-                    children: (0, s.jsx)(a.EYj, {
+                    children: (0, s.jsx)(r.EYj, {
                         variant: "text-md/medium",
                         color: "text-strong",
                         children: t.code
                     })
-                }), d, (0, s.jsx)(a.$nd, {
+                }), d, (0, s.jsx)(r.$nd, {
                     variant: "secondary",
                     size: "sm",
                     text: R.intl.formatToPlainString(R.t.DF68t7, {
@@ -140,20 +140,20 @@ let E = {
             })
         })
     },
-    I = e => {
+    P = e => {
         let {
             recurrence: t,
             canBeClaimed: n,
-            hasClaimError: r,
+            hasClaimError: a,
             setCode: l,
             setHasClaimError: i,
             className: d,
             analyticsLocations: o = []
         } = e;
-        return n ? r ? (0, s.jsx)("div", {
+        return n ? a ? (0, s.jsx)("div", {
             className: d,
-            children: (0, s.jsx)(a.$nd, {
-                icon: a.EpV,
+            children: (0, s.jsx)(r.$nd, {
+                icon: r.EpV,
                 variant: "critical-secondary",
                 size: "sm",
                 disabled: !0,
@@ -161,8 +161,8 @@ let E = {
             })
         }) : (0, s.jsx)("div", {
             className: d,
-            children: (0, s.jsx)(a.$nd, {
-                icon: a.XAi,
+            children: (0, s.jsx)(r.$nd, {
+                icon: r.XAi,
                 variant: "secondary",
                 size: "sm",
                 text: R.intl.string(R.t.vwASIl),
@@ -190,9 +190,9 @@ let E = {
                 displayCTAInDedicatedFooter: p = !1,
                 analyticsLocations: f = []
             } = e,
-            [j, v] = r.useState(c.code),
-            [N, y] = r.useState(!1),
-            T = (t = c.partnerId, n = (0, l.bG)([o.A], () => (0, a.Mwr)(o.A.theme)), null == (d = E[t]) ? null : n ? d.logos.dark : d.logos.light),
+            [j, v] = a.useState(c.code),
+            [N, y] = a.useState(!1),
+            T = (t = c.partnerId, n = (0, l.bG)([o.A], () => (0, r.Mwr)(o.A.theme)), null == (d = E[t]) ? null : n ? d.logos.dark : d.logos.light),
             w = null == j;
         return (0, s.jsxs)("div", {
             className: b.lA,
@@ -202,11 +202,11 @@ let E = {
                     className: b.JN,
                     children: [h && T, (0, s.jsxs)("div", {
                         className: null != u ? `${b.yO} ${u}` : b.yO,
-                        children: [(0, s.jsx)(a.DZT, {
+                        children: [(0, s.jsx)(r.DZT, {
                             variant: "secondary" === C ? "heading-md/semibold" : "heading-lg/semibold",
                             color: "text-strong",
                             children: c.title
-                        }), (0, s.jsx)(a.DZT, {
+                        }), (0, s.jsx)(r.DZT, {
                             variant: "heading-sm/medium",
                             color: "text-subtle",
                             children: N ? R.intl.format(R.t.i2EuFO, {
@@ -215,7 +215,7 @@ let E = {
                                 date: c.endDate
                             }) : c.body
                         })]
-                    }), !p && (0, s.jsx)(I, {
+                    }), !p && (0, s.jsx)(P, {
                         recurrence: c,
                         canBeClaimed: w,
                         hasClaimError: N,
@@ -234,13 +234,13 @@ let E = {
                         zoomable: !1
                     })
                 })]
-            }), p && (0, s.jsx)(A, {}), null != j && (0, s.jsx)(P, {
+            }), p && (0, s.jsx)(A, {}), null != j && (0, s.jsx)(I, {
                 recurrence: {
                     ...c,
                     code: j
                 }
             }), p && null == j && (0, s.jsx)(D, {
-                children: (0, s.jsx)(I, {
+                children: (0, s.jsx)(P, {
                     recurrence: c,
                     canBeClaimed: w,
                     hasClaimError: N,

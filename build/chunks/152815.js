@@ -1,6 +1,6 @@
 /** chunk id: 152815 params = (module,exports,require) **/
 n.d(t, {
-    P: () => E,
+    P: () => v,
     ThirdPartyPromotionsModal: () => N
 });
 var i = n(627968);
@@ -19,9 +19,9 @@ var r = n(158954),
     A = n(125877),
     g = n(652215),
     f = n(962995),
-    h = n(985018),
-    b = n(75662);
-let x = {
+    x = n(985018),
+    h = n(75662);
+let b = {
         Logitech30P: {
             title: f.default.jkdhZq,
             titleParams: {
@@ -76,12 +76,12 @@ let x = {
         }
     },
     C = (e, t) => {
-        let n = x[e.outboundTitle];
+        let n = b[e.outboundTitle];
         return {
             id: e.id,
             partnerId: e.partnerId ?? "",
-            title: null != n ? h.intl.formatToPlainString(n.title, n.titleParams ?? {}) : "",
-            body: null != n && null != n.body ? h.intl.formatToPlainString(n.body, n.bodyParams ?? {}) : "",
+            title: null != n ? x.intl.formatToPlainString(n.title, n.titleParams ?? {}) : "",
+            body: null != n && null != n.body ? x.intl.formatToPlainString(n.body, n.bodyParams ?? {}) : "",
             startDate: e.startDate,
             endDate: e.endDate,
             redemptionURL: e.outboundRedemptionPageLink,
@@ -104,23 +104,23 @@ let x = {
             claimedOutboundPromotionCodeMap: g
         } = (0, u.y7)();
         if (!p) return (0, i.jsx)(r.y$y, {});
-        let x = o?.modalSubtitle != null ? h.intl.format(o.modalSubtitle.message, o.modalSubtitle.values) : void 0,
-            N = null == o ? t : h.intl.string(o.modalTitle);
+        let b = o?.modalSubtitle != null ? x.intl.format(o.modalSubtitle.message, o.modalSubtitle.values) : void 0,
+            N = null == o ? t : x.intl.string(o.modalTitle);
         return (0, i.jsx)(r.Modal, {
             title: N,
-            subtitle: x,
+            subtitle: b,
             actions: [],
             transitionState: n,
             onClose: s,
             children: (0, i.jsxs)("div", {
-                className: b.kL,
+                className: h.kL,
                 children: [c.length > 0 && (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(r.EYj, {
                         variant: "text-md/medium",
                         color: "text-subtle",
-                        children: h.intl.string(f.default["9Y2p6p"])
+                        children: x.intl.string(f.default["9Y2p6p"])
                     }), (0, i.jsx)("div", {
-                        className: b.kR,
+                        className: h.kR,
                         children: c.map(e => (0, i.jsx)(m.wx, {
                             recurrence: {
                                 ...C(e, g[e.id] ?? null),
@@ -132,13 +132,13 @@ let x = {
                         }, e.id))
                     })]
                 }), d.length > 0 && (0, i.jsxs)("div", {
-                    className: b.E7,
+                    className: h.E7,
                     children: [(0, i.jsx)(r.EYj, {
                         variant: "text-md/medium",
                         color: "text-subtle",
-                        children: h.intl.string(f.default.Wm58LR)
+                        children: x.intl.string(f.default.Wm58LR)
                     }), (0, i.jsx)("div", {
-                        className: b.kR,
+                        className: h.kR,
                         children: d.map(e => (0, i.jsx)(A.$, {
                             promotion: C(e, g[e.id] ?? null),
                             analyticsLocations: [l.A.THIRD_PARTY_PROMOTIONS_MODAL]
@@ -148,7 +148,7 @@ let x = {
             })
         })
     },
-    E = e => {
+    v = e => {
         let {
             partnerId: t
         } = e;

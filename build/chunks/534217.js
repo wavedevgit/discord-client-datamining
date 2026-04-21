@@ -1,6 +1,6 @@
 /** chunk id: 534217 params = (module,exports,require) **/
 n.d(t, {
-    S: () => E
+    S: () => v
 }), n(321073);
 var i = n(627968);
 n(64700);
@@ -18,9 +18,9 @@ var r = n(503698),
     A = n(303682),
     g = n(652215),
     f = n(985018),
-    h = n(849812),
-    b = n(544879);
-let x = e => {
+    x = n(849812),
+    h = n(544879);
+let b = e => {
         let {
             user: t
         } = e, {
@@ -31,7 +31,7 @@ let x = e => {
             size: l._3J.SIZE_24
         });
         return (0, i.jsx)(l.euF, {
-            className: h.bj,
+            className: x.bj,
             src: n,
             "aria-label": (0, u.mG)(t),
             size: l._3J.SIZE_24,
@@ -43,7 +43,7 @@ let x = e => {
             slotIndex: t
         } = e;
         return (0, i.jsx)("div", {
-            className: h.p,
+            className: x.p,
             children: t
         })
     },
@@ -52,12 +52,12 @@ let x = e => {
             referralSentUsers: t
         } = e;
         return (0, i.jsx)("div", {
-            className: h.L$,
+            className: x.L$,
             children: (() => {
                 let e = [];
                 for (let n = 0; n < p.Z; n++)
                     if (t?.[n] !== void 0) {
-                        let r = (0, i.jsx)(x, {
+                        let r = (0, i.jsx)(b, {
                             user: t[n]
                         }, t[n].id);
                         e.push(r)
@@ -77,37 +77,37 @@ let x = e => {
         return (0, i.jsx)(l.a3E, {
             percent: 33.3 * t,
             colorOverride: "#53ac66",
-            background: h.cq,
+            background: x.cq,
             strokeSize: .8,
-            ringColorOverrideClassName: h.e0,
-            overlayClassName: t === p.Z ? h.ys : void 0,
+            ringColorOverrideClassName: x.e0,
+            overlayClassName: t === p.Z ? x.ys : void 0,
             children: (0, i.jsx)(l._V3, {
-                src: b.A,
+                src: h.A,
                 height: 93,
                 width: 93,
                 zoomable: !1
             })
         })
     },
-    E = e => {
+    v = e => {
         let {
             className: t
         } = e, {
             referralSentUsers: r
-        } = (0, p.J)(), o = (0, s.bG)([m.A], () => m.A.getRecipientStatus()), u = (0, s.bG)([m.A], () => m.A.getHasEligibleFriends()), b = o.size === p.Z && [...o.values()].every(e => e === _.aK.REDEEMED), x = o.size === p.Z;
+        } = (0, p.J)(), o = (0, s.bG)([m.A], () => m.A.getRecipientStatus()), u = (0, s.bG)([m.A], () => m.A.getHasEligibleFriends()), h = o.size === p.Z && [...o.values()].every(e => e === _.aK.REDEEMED), b = o.size === p.Z;
         return (0, i.jsxs)("div", {
-            className: a()(h.kL, t),
+            className: a()(x.kL, t),
             children: [(0, i.jsx)("div", {
-                className: h.G3,
+                className: x.G3,
                 children: (0, i.jsx)(N, {
                     nReferralsSent: o.size
                 })
             }), (0, i.jsxs)("div", {
-                className: h.IH,
+                className: x.IH,
                 children: [(0, i.jsx)(C, {
                     referralSentUsers: r
                 }), (0, i.jsxs)("div", {
-                    className: h.n4,
+                    className: x.n4,
                     children: [(0, i.jsx)(l.Heading, {
                         variant: "heading-lg/semibold",
                         color: "text-strong",
@@ -117,7 +117,7 @@ let x = e => {
                         color: "text-subtle",
                         children: !1 === u ? f.intl.format(f.t["zWhX/Q"], {
                             helpdeskArticle: d.A.getArticleURL(g.MVz.REFERRAL_PROGRAM)
-                        }) : r.length === p.Z ? !0 === b ? f.intl.format(f.t["1aEjsH"], {
+                        }) : r.length === p.Z ? !0 === h ? f.intl.format(f.t["1aEjsH"], {
                             helpdeskArticle: d.A.getArticleURL(g.MVz.REFERRAL_PROGRAM)
                         }) : f.intl.format(f.t["+u3AOO"], {
                             helpdeskArticle: d.A.getArticleURL(g.MVz.REFERRAL_PROGRAM)
@@ -127,7 +127,7 @@ let x = e => {
                     })]
                 }), (0, i.jsx)(l.Button, {
                     variant: "primary",
-                    disabled: !1 === u || !0 === x,
+                    disabled: !1 === u || !0 === b,
                     text: f.intl.string(f.t.Lm2nFc),
                     onClick: () => (e => {
                         let {

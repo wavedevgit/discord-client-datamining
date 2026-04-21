@@ -30,10 +30,12 @@ function c(e) {
                     [o.Y4]: t === a
                 }),
                 onClick: () => c(t),
+                "aria-label": l?.[t],
+                "aria-pressed": t === a,
                 children: (0, n.jsx)("img", {
                     className: o.q_,
                     src: null != e.thumbnailSrc ? e.thumbnailSrc : "video" === e.type ? e.videoThumbnailSrc : e.src,
-                    alt: l?.[t] ?? "",
+                    alt: "",
                     draggable: !1
                 })
             }, t))

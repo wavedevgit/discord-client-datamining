@@ -1,13 +1,18 @@
 /** chunk id: 31502 params = (module,exports,require) **/
 n.d(t, {
-    l: () => r
+    Q: () => r,
+    l: () => a
 });
-var i = n(945810);
+var s = n(945810);
+
+function a(e) {
+    return !1
+}
 
 function r(e) {
     return !1
 }
-n(610546), (0, i.mj)({
+n(610546), (0, s.mj)({
     name: "2026-03-croissant",
     kind: "user",
     defaultConfig: {

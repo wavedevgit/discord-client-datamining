@@ -143,7 +143,7 @@ function B(e) {
     } = L({
         quest: t,
         sourceQuestContent: n
-    }), d = R.intl.format(R.t["14o6QY"], {
+    }), d = R.intl.format(R.t["6p8BZx"], {
         expiryDate: i
     });
     return (0, a.jsxs)(r.e2v, {

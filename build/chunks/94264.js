@@ -4,8 +4,8 @@ n.d(t, {
 });
 var s = n(627968);
 n(64700);
-var r = n(503698),
-    a = n.n(r),
+var a = n(503698),
+    r = n.n(a),
     l = n(892227),
     i = n(827734),
     d = n(732955),
@@ -28,16 +28,16 @@ let h = {
             className: t
         } = e, {
             passesProgressBarInvariant: n,
-            programReward: r,
+            programReward: a,
             totalDays: i
         } = (0, u.F)();
-        if (!n || null == r || null == i) return null;
-        let x = (0, l.default)(new Date(r.next_reward_date), new Date),
-            C = r.program_current_state === c.L.PREMIUM_CHURNING,
+        if (!n || null == a || null == i) return null;
+        let x = (0, l.default)(new Date(a.next_reward_date), new Date),
+            C = a.program_current_state === c.L.PREMIUM_CHURNING,
             _ = C ? h.churning.start : h.active.start,
             p = C ? h.churning.end : h.active.end;
         return (0, s.jsxs)("div", {
-            className: a()(m.k, t),
+            className: r()(m.k, t),
             children: [(0, s.jsx)(o.Ay, {
                 variant: o.qP.UNSET,
                 progress: i - x,

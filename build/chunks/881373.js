@@ -2,12 +2,12 @@
 n.d(t, {
     K2: () => l,
     YS: () => d,
-    aW: () => r,
-    y$: () => a
+    aW: () => a,
+    y$: () => r
 });
 var s = n(250105);
-let r = 30,
-    a = 5,
+let a = 30,
+    r = 5,
     l = 5,
     i = (0, s.Ay)({
         kind: "user",

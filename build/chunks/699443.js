@@ -1,12 +1,12 @@
 /** chunk id: 699443 params = (module,exports,require) **/
 n.d(t, {
-    Gn: () => a,
+    Gn: () => r,
     WF: () => l,
-    a1: () => r,
+    a1: () => a,
     s: () => i
 });
 var s = n(627968);
-let r = () => (0, s.jsxs)("svg", {
+let a = () => (0, s.jsxs)("svg", {
         width: "20",
         height: "20",
         viewBox: "0 0 20 20",
@@ -52,7 +52,7 @@ let r = () => (0, s.jsxs)("svg", {
             })
         })]
     }),
-    a = () => (0, s.jsxs)("svg", {
+    r = () => (0, s.jsxs)("svg", {
         width: "20",
         height: "20",
         viewBox: "0 0 20 20",

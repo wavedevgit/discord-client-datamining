@@ -1,6 +1,6 @@
 /** chunk id: 130946 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E,
+    A: () => v,
     c: () => N
 });
 var i, r = n(627968);
@@ -18,41 +18,41 @@ var a = n(503698),
     A = n(788868),
     g = n(652215),
     f = n(985018),
-    h = n(297362),
-    b = n(137815),
-    x = n(967521),
+    x = n(297362),
+    h = n(137815),
+    b = n(967521),
     R = n(767032),
     C = n(990521),
     N = ((i = {}).SUBSCRIBER_HOME = "SUBSCRIBER_HOME", i.NITRO_SETTINGS = "SETTINGS", i.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", i);
-let E = function(e) {
+let v = function(e) {
     let {
         variant: t
     } = e, n = (0, m.cg)(), i = (0, c.Ay)(), a = (0, o.Mwr)(i) ? l.XD.BRAND_INVERTED : l.XD.BRAND;
     return n ? "APPLICATION_NITRO_HOME" === t ? (0, r.jsx)(() => (0, r.jsx)(u.Y, {
         newLocations: [d.A.PREMIUM_MARKETING_PAGE_BANNER],
         children: (0, r.jsxs)("div", {
-            className: h._G,
+            className: x._G,
             children: [(0, r.jsx)("div", {
-                className: h.V2,
+                className: x.V2,
                 children: (0, r.jsx)("div", {
-                    className: h.N4
+                    className: x.N4
                 })
             }), (0, r.jsx)("div", {
-                className: s()(h.Fg, h.cj),
+                className: s()(x.Fg, x.cj),
                 children: (0, r.jsx)(o.Text, {
                     variant: "eyebrow",
                     color: "always-white",
                     children: f.intl.string(f.t.OS9KPu)
                 })
             }), (0, r.jsxs)("div", {
-                className: h.IH,
+                className: x.IH,
                 children: [(0, r.jsx)(o.Heading, {
-                    className: h.U_,
+                    className: x.U_,
                     variant: "heading-xxl/extrabold",
                     color: "text-strong",
                     children: f.intl.string(f.t["+5UxML"])
                 }), (0, r.jsx)(o.Text, {
-                    className: h._M,
+                    className: x._M,
                     variant: "text-md/medium",
                     color: "text-subtle",
                     children: f.intl.format(f.t["lVOH/p"], {
@@ -61,42 +61,42 @@ let E = function(e) {
                 }), (0, r.jsx)(p.A, {
                     textOptions: {
                         textOverride: f.intl.string(f.t.J61px0),
-                        textClassName: h.cZ
+                        textClassName: x.cZ
                     },
                     subscriptionTier: A.pe.TIER_2,
                     showIcon: !1,
-                    className: h.xF,
+                    className: x.xF,
                     color: a
                 })]
             }), (0, r.jsx)("div", {
-                className: h.ZS,
+                className: x.ZS,
                 children: (0, r.jsx)("img", {
                     alt: "",
-                    src: x.A,
-                    className: h.F$
+                    src: b.A,
+                    className: x.F$
                 })
             })]
         })
     }), {}) : "SETTINGS" === t ? (0, r.jsx)(() => (0, r.jsx)(u.Y, {
         newLocations: [d.A.PREMIUM_SETTINGS],
         children: (0, r.jsxs)("div", {
-            className: h.O3,
+            className: x.O3,
             children: [(0, r.jsx)("div", {
-                className: h.V9,
+                className: x.V9,
                 children: (0, r.jsx)("img", {
                     alt: "",
                     src: R.A,
-                    className: h.$V
+                    className: x.$V
                 })
             }), (0, r.jsxs)("div", {
-                className: h.l$,
+                className: x.l$,
                 children: [(0, r.jsx)(o.Heading, {
-                    className: h.U_,
+                    className: x.U_,
                     variant: "heading-lg/extrabold",
                     color: "text-strong",
                     children: f.intl.string(f.t["+5UxML"])
                 }), (0, r.jsx)(o.Text, {
-                    className: h._M,
+                    className: x._M,
                     variant: "text-sm/medium",
                     color: "text-subtle",
                     children: f.intl.format(f.t["lVOH/p"], {
@@ -105,40 +105,40 @@ let E = function(e) {
                 }), (0, r.jsx)(p.A, {
                     textOptions: {
                         textOverride: f.intl.string(f.t.J61px0),
-                        textClassName: h.cZ
+                        textClassName: x.cZ
                     },
                     subscriptionTier: A.pe.TIER_2,
                     showIcon: !1,
-                    className: h.xF,
+                    className: x.xF,
                     color: a
                 })]
             }), (0, r.jsx)("div", {
-                className: h.m0,
+                className: x.m0,
                 children: (0, r.jsx)("img", {
                     alt: "",
                     src: C.A,
-                    className: h.$V
+                    className: x.$V
                 })
             })]
         })
     }), {}) : (0, r.jsx)(() => (0, r.jsxs)("div", {
-        className: h.jo,
+        className: x.jo,
         children: [(0, r.jsx)("div", {
-            className: h.yk,
+            className: x.yk,
             children: (0, r.jsx)("img", {
                 alt: "",
-                src: b.A,
-                className: h.$V
+                src: h.A,
+                className: x.$V
             })
         }), (0, r.jsxs)("div", {
-            className: h.Ep,
+            className: x.Ep,
             children: [(0, r.jsx)(o.Heading, {
-                className: h.U_,
+                className: x.U_,
                 variant: "heading-md/extrabold",
                 color: "text-strong",
                 children: f.intl.string(f.t["+5UxML"])
             }), (0, r.jsx)(o.Text, {
-                className: h._M,
+                className: x._M,
                 variant: "text-sm/medium",
                 color: "text-subtle",
                 children: f.intl.format(f.t["lVOH/p"], {
@@ -148,7 +148,7 @@ let E = function(e) {
         }), (0, r.jsx)(p.A, {
             subscriptionTier: A.pe.TIER_2,
             showIcon: !0,
-            shinyButtonClassName: h.Xp,
+            shinyButtonClassName: x.Xp,
             hasActivePromotion: !0
         })]
     }), {}) : null

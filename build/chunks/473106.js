@@ -54,8 +54,8 @@ function H(e) {
         }, e))
     }) : null
 }
-let F = "checkout-error-boundary-test-modal",
-    W = () => {
+let W = "checkout-error-boundary-test-modal",
+    F = () => {
         let {
             setStep: e
         } = (0, P.Ay)();
@@ -110,8 +110,8 @@ let Y = {
             })), [C, j] = n.useState(E.length > 0 ? E[0].value : null), [S, A] = n.useState(""), [k, P] = n.useState({
                 plan_id: w.gD.PREMIUM_MONTH_TIER_2,
                 gift: "true"
-            }), V = "true" !== k.gift && null != _, [U, F] = n.useState(E.length > 0 ? E[0].value : null), {
-                analyticsLocations: W
+            }), V = "true" !== k.gift && null != _, [U, W] = n.useState(E.length > 0 ? E[0].value : null), {
+                analyticsLocations: F
             } = (0, x.Ay)(h.A.PAYMENT_FLOW_TEST_PAGE), [$, Y] = n.useState(""), [z, q] = n.useState(L.dJq), {
                 balance: K,
                 isFetching: J,
@@ -122,7 +122,7 @@ let Y = {
                 redeemVirtualCurrency: ee
             } = (0, M.Q)(), [et, el] = n.useState(L.dJq), [ea, en] = n.useState(""), [er, ei] = n.useState(L.dJq);
             return (0, a.jsx)(x.f5, {
-                value: W,
+                value: F,
                 children: (0, a.jsx)(p.IpV, {
                     className: G.XG,
                     children: (0, a.jsxs)(p.BJc, {
@@ -193,7 +193,7 @@ let Y = {
                                 text: "Select Plan",
                                 onClick: () => (0, I.A)({
                                     subscriptionTier: l,
-                                    analyticsLocations: W
+                                    analyticsLocations: F
                                 })
                             })]
                         }), (0, a.jsx)(p.cGx, {}), (0, a.jsxs)(p.BJc, {
@@ -344,7 +344,7 @@ let Y = {
                                 label: "Premium Server Subscription For",
                                 value: U,
                                 options: E,
-                                onSelectionChange: F,
+                                onSelectionChange: W,
                                 selectionMode: "single",
                                 fullWidth: !0
                             }), (0, a.jsx)(p.Text, {
@@ -413,7 +413,7 @@ let Y = {
                                         onClick: () => (0, R.A)({
                                             applicationId: ea,
                                             skuId: er,
-                                            analyticsLocations: W,
+                                            analyticsLocations: F,
                                             checkoutFlow: y.CL.PREMIUM_APPS_OTP_CHECKOUT
                                         })
                                     })]
@@ -475,7 +475,7 @@ let Y = {
                                 errorType: n
                             } = t, r = [{
                                 key: S.pn.PLAN_SELECT,
-                                renderStep: () => (0, a.jsx)(W, {}),
+                                renderStep: () => (0, a.jsx)(F, {}),
                                 renderHeader: () => (0, a.jsx)(o.rQ0, {
                                     title: "Checkout Error Boundary Test"
                                 })
@@ -486,7 +486,7 @@ let Y = {
                                         errorType: n
                                     })
                                 })
-                            }], i = () => (0, p.OoC)(F);
+                            }], i = () => (0, p.OoC)(W);
                             return (0, p.mMO)(async () => {
                                 let t;
                                 return "show-alert" === l ? t = e => {
@@ -525,7 +525,7 @@ let Y = {
                             }, {
                                 onCloseRequest: i,
                                 onCloseCallback: i,
-                                modalKey: F
+                                modalKey: W
                             })
                         })(n, {
                             errorBoundaryVariant: t,

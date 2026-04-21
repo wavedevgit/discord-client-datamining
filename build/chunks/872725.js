@@ -3,9 +3,9 @@ n.d(t, {
     A: () => C
 });
 var s = n(627968),
-    r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     i = n(524007),
     d = n(844222),
     o = n(786558),
@@ -31,7 +31,7 @@ let h = {
         let {
             children: t,
             id: n,
-            tabIndex: a,
+            tabIndex: r,
             className: C,
             cardClassName: _,
             cardStyle: p = x,
@@ -44,10 +44,10 @@ let h = {
             hueRotate: N = 0,
             isReducedMotion: E,
             onMouseEnter: A
-        } = e, D = r.useRef(null), P = r.useRef(null), {
-            status: I,
+        } = e, D = a.useRef(null), I = a.useRef(null), {
+            status: P,
             buffer: y
-        } = (0, c.CE)(b ? i.A : null), T = r.useContext(d.C), w = E ?? T.reducedMotion.enabled, O = {
+        } = (0, c.CE)(b ? i.A : null), T = a.useContext(d.C), w = E ?? T.reducedMotion.enabled, O = {
             "--custom-glow-amount": `${j}px`,
             "--custom-blur-amount": `${v}px`,
             "--custom-hue-rotate": `${N}deg`,
@@ -56,17 +56,17 @@ let h = {
         return (0, s.jsxs)("div", {
             id: n,
             ref: D,
-            tabIndex: a,
+            tabIndex: r,
             className: l()(m.k, C),
             style: O,
             onMouseEnter: A,
-            children: [b && I !== c.BW.Loading && (0, s.jsx)(o.w, {
+            children: [b && P !== c.BW.Loading && (0, s.jsx)(o.w, {
                 buffer: y,
                 artboard: f,
                 artboardProperties: h,
                 eventTargetRef: D,
                 className: m.Q,
-                ref: P,
+                ref: I,
                 fit: R,
                 withReducedMotion: w ? "halt" : "play"
             }), (0, s.jsx)(u.ZpM, {

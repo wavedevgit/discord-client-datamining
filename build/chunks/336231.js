@@ -22,8 +22,8 @@ var n = l(627968),
     C = l(961350),
     j = l(328968),
     v = l(954571),
-    T = l(371794),
-    A = l(871123),
+    A = l(371794),
+    T = l(871123),
     N = l(733391),
     S = l(832163),
     I = l(681064),
@@ -41,9 +41,9 @@ var n = l(627968),
     M = l(430580),
     H = l(743693),
     F = l(995393),
-    Y = l(188275),
-    G = l(652215),
-    W = l(985018),
+    G = l(188275),
+    W = l(652215),
+    Y = l(985018),
     q = l(334588);
 
 function X(e) {
@@ -64,7 +64,7 @@ function X(e) {
     })
 }
 
-function J(e) {
+function V(e) {
     let {
         sku: t
     } = e, {
@@ -105,7 +105,7 @@ function J(e) {
                 children: (0, n.jsx)(o.Text, {
                     variant: "text-sm/semibold",
                     color: "currentColor",
-                    children: W.intl.format(W.t.GiVd2Q, {
+                    children: Y.intl.format(Y.t.GiVd2Q, {
                         orbCount: t.orbsReward,
                         orbIconHook: () => (0, n.jsx)(o.Cp8, {
                             size: "xs",
@@ -118,7 +118,7 @@ function J(e) {
     })
 }
 
-function V(e) {
+function J(e) {
     let {
         sku: t,
         guildId: l,
@@ -144,12 +144,12 @@ function V(e) {
                 guildId: l
             }))
         }, [t, d, l, _]),
-        T = a.useCallback(() => {
+        A = a.useCallback(() => {
             null != l && (0, y.X)({
                 guildId: l
             })
         }, [l]),
-        A = a.useCallback(() => {
+        T = a.useCallback(() => {
             null != l && (d(F.Jq.VISIT_SHOP), (0, o.s7G)(), (0, y.default)({
                 guildId: l
             }))
@@ -183,38 +183,44 @@ function V(e) {
     return (0, n.jsxs)("div", {
         className: q.NC,
         children: [!f && (0, n.jsx)(o.Text, {
-            variant: "text-sm/normal",
+            variant: "text-xxs/normal",
             color: "text-subtle",
-            children: W.intl.string(W.t.IqlPbQ)
-        }), (0, n.jsxs)("div", {
+            children: Y.intl.string(Y.t.IqlPbQ)
+        }), f ? (0, n.jsxs)("div", {
             className: q.mr,
-            children: [f && (0, n.jsx)(o.Button, {
+            children: [(0, n.jsx)(o.Button, {
                 variant: "primary",
                 onClick: v,
-                text: W.intl.string(W.t.boqtTA),
+                text: Y.intl.string(Y.t.boqtTA),
                 fullWidth: !0
             }), (0, n.jsx)(o.DUT, {
                 className: q.xP,
                 onClick: N,
-                "aria-label": W.intl.string(W.t.QAZA5f),
+                "aria-label": Y.intl.string(Y.t.QAZA5f),
                 role: "button",
                 children: (0, n.jsx)(o.okO, {
                     size: "refresh_sm",
                     color: "currentColor"
                 })
             })]
+        }) : (0, n.jsx)(o.Button, {
+            icon: o.okO,
+            variant: "secondary",
+            onClick: N,
+            text: Y.intl.string(Y.t.QAZA5f),
+            fullWidth: !0
         }), s && (0, n.jsx)(o.Button, {
             icon: o.U1X,
             variant: "secondary",
-            onMouseDown: T,
-            onClick: A,
-            text: W.intl.string(W.t["2QW9nR"]),
+            onMouseDown: A,
+            onClick: T,
+            text: Y.intl.string(Y.t["2QW9nR"]),
             fullWidth: !0
         }), b && f && null != C && (0, n.jsx)(o.Button, {
             icon: o.Cp8,
             variant: "secondary",
             onClick: k,
-            text: W.intl.format(W.t.lOtBOI, {
+            text: Y.intl.format(Y.t.lOtBOI, {
                 orbPrice: C.amount,
                 orbIconHook: () => (0, n.jsx)(o.Cp8, {
                     size: "xs",
@@ -232,13 +238,13 @@ function z(e) {
         applicationId: l
     } = e;
     if (null == t) return null;
-    let a = null != t.labelIconAssetId ? (0, T.YE)(l, t.labelIconAssetId) : null;
+    let a = null != t.labelIconAssetId ? (0, A.YE)(l, t.labelIconAssetId) : null;
     return (0, n.jsxs)("div", {
         className: q.HI,
         children: [null != a && (0, n.jsx)("img", {
             className: q.IX,
             src: a,
-            alt: t.label
+            alt: ""
         }, a), (0, n.jsx)(o.Text, {
             variant: "text-xs/medium",
             color: "text-subtle",
@@ -278,7 +284,7 @@ function K(e) {
         analyticsLocations: O
     } = (0, _.Ay)(g ?? []), {
         guildId: L
-    } = (0, A.nG)(u), B = (0, r.bG)([C.default], () => C.default.getId());
+    } = (0, T.nG)(u), B = (0, r.bG)([C.default], () => C.default.getId());
     a.useEffect(() => {
         null != L && null != s && (0, N.iR)(L, s)
     }, [L, s]);
@@ -309,15 +315,15 @@ function K(e) {
         eh = er.length > 1,
         ex = er.some(e => "video" === e.type);
     (0, b.pE)(), (0, c.Ay)(() => {
-        v.default.track(G.HAw.OPEN_MODAL, {
+        v.default.track(W.HAw.OPEN_MODAL, {
             location_stack: O,
-            type: Y.Nh,
+            type: G.Nh,
             sku_id: s,
             application_id: u
         }), (0, N.Xw)()
     });
     let ef = a.useCallback(e => {
-            v.default.track(G.HAw.SLAYER_STOREFRONT_PDP_ELEMENT_CLICKED, {
+            v.default.track(W.HAw.SLAYER_STOREFRONT_PDP_ELEMENT_CLICKED, {
                 slayer_storefront_session_id: I?.sessionId,
                 sku_id: s,
                 guild_id: I?.guildId,
@@ -349,11 +355,11 @@ function K(e) {
         ej = (0, E.B)(),
         ev = en?.tenantMetadata?.socialLayer;
     if (null == en || null == ev) return Z ? (0, n.jsx)(o.y$y, {}) : null;
-    let eT = D?.storefront,
-        eA = eT?.logoAssetId != null ? (0, T.YE)(eT.applicationId, eT.logoAssetId, 75) : null,
-        eN = eT?.lightThemeLogoAssetId != null ? (0, T.YE)(eT.applicationId, eT.lightThemeLogoAssetId, 75) : null,
+    let eA = D?.storefront,
+        eT = eA?.logoAssetId != null ? (0, A.YE)(eA.applicationId, eA.logoAssetId, 75) : null,
+        eN = eA?.lightThemeLogoAssetId != null ? (0, A.YE)(eA.applicationId, eA.lightThemeLogoAssetId, 75) : null,
         eS = null;
-    eS = ee ? eA ?? eN : eN ?? eA;
+    eS = ee ? eT ?? eN : eN ?? eT;
     let eI = null != en.orbsReward && en.orbsReward > 0;
     return (0, n.jsx)(o.EOs, {
         transitionState: t,
@@ -366,7 +372,7 @@ function K(e) {
             className: q.jE,
             children: [eI && (0, n.jsx)(Q, {
                 timeRemaining: ej ?? void 0,
-                text: W.intl.format(W.t.d3njXi, {
+                text: Y.intl.format(Y.t.d3njXi, {
                     orbCount: en.orbsReward
                 })
             }), (0, n.jsxs)("div", {
@@ -378,7 +384,7 @@ function K(e) {
                         children: null != eS ? (0, n.jsx)("img", {
                             className: q.wm,
                             src: eS,
-                            alt: ""
+                            alt: eA?.title ?? ""
                         }) : null
                     }), (0, n.jsxs)("div", {
                         ref: ec,
@@ -423,9 +429,9 @@ function K(e) {
                         className: i()(q.Td, {
                             [q.t7]: ed
                         }),
-                        children: [(0, n.jsx)(J, {
+                        children: [(0, n.jsx)(V, {
                             sku: en
-                        }), (0, n.jsx)(V, {
+                        }), (0, n.jsx)(J, {
                             sku: en,
                             guildId: L,
                             shouldShowShopLink: !m,
@@ -439,7 +445,8 @@ function K(e) {
                     className: q.il,
                     children: [(0, n.jsx)(M.A, {
                         item: er[e_],
-                        isMuted: et
+                        isMuted: et,
+                        alt: em?.label ?? en.name
                     }), (0, n.jsxs)("div", {
                         className: q.V7,
                         children: [null != en && (0, n.jsx)(H._, {
@@ -451,14 +458,14 @@ function K(e) {
                             location: "social_layer_storefront_product_details_modal"
                         }), (0, n.jsx)($, {
                             onClick: eg,
-                            ariaLabel: W.intl.string(W.t.Ej3B3Y),
+                            ariaLabel: Y.intl.string(Y.t.Ej3B3Y),
                             children: (0, n.jsx)(h.A, {
                                 size: "refresh_sm",
                                 color: "currentColor"
                             })
                         }), ex && (0, n.jsx)($, {
                             onClick: eC,
-                            ariaLabel: et ? W.intl.string(W.t.YqAjXy) : W.intl.string(W.t.w4m945),
+                            ariaLabel: et ? Y.intl.string(Y.t.YqAjXy) : Y.intl.string(Y.t.w4m945),
                             children: et ? (0, n.jsx)(o._RO, {
                                 size: "refresh_sm",
                                 color: "currentColor"
@@ -468,7 +475,7 @@ function K(e) {
                             })
                         }), (0, n.jsx)($, {
                             onClick: y,
-                            ariaLabel: W.intl.string(W.t.cpT0Cq),
+                            ariaLabel: Y.intl.string(Y.t.cpT0Cq),
                             children: (0, n.jsx)(o.d$L, {
                                 size: "refresh_sm",
                                 color: "currentColor"

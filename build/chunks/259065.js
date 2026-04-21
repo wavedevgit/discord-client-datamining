@@ -4,8 +4,8 @@ n.d(t, {
 });
 var s = n(627968);
 n(64700);
-var r = n(397927),
-    a = n(954571),
+var a = n(397927),
+    r = n(954571),
     l = n(652215);
 let i = "display-name-styles-modal",
     d = e => {
@@ -13,7 +13,7 @@ let i = "display-name-styles-modal",
             analyticsLocations: t,
             guildId: d
         } = e;
-        (0, r.mMO)(async () => {
+        (0, a.mMO)(async () => {
             let {
                 default: e
             } = await Promise.all([n.e("57174"), n.e("91652"), n.e("37457"), n.e("8555"), n.e("57875"), n.e("90365"), n.e("28936"), n.e("68859"), n.e("48330"), n.e("92414"), n.e("94857"), n.e("48840"), n.e("49559"), n.e("18976"), n.e("37372"), n.e("98141"), n.e("41595"), n.e("69255")]).then(n.bind(n, 619481));
@@ -25,7 +25,7 @@ let i = "display-name-styles-modal",
         }, {
             modalKey: i,
             onCloseRequest: () => {
-                a.default.track(l.HAw.DISPLAY_NAME_STYLES_CLOSED), (0, r.OoC)(i)
+                r.default.track(l.HAw.DISPLAY_NAME_STYLES_CLOSED), (0, a.OoC)(i)
             }
         })
     }

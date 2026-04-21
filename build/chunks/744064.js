@@ -3,9 +3,9 @@ n.d(t, {
     S: () => v
 });
 var s = n(627968),
-    r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     i = n(735438),
     d = n(110259),
     o = n(732955),
@@ -26,13 +26,13 @@ let v = e => {
     let {
         id: t,
         title: n,
-        description: a,
+        description: r,
         caption: v,
         pillText: E,
         primaryAsset: A,
         primaryAssetClassName: D,
-        backgroundAssetUrl: P,
-        progress: I,
+        backgroundAssetUrl: I,
+        progress: P,
         ctaIcon: y,
         ctaIconPosition: T,
         ctaText: w,
@@ -44,9 +44,11 @@ let v = e => {
         className: k,
         containerClassName: B,
         tabIndex: F = 0,
-        blurTint: G
-    } = e, H = (0, m.DP)(), {
-        fractionalState: W
+        blurTint: G,
+        footerContent: W,
+        backgroundElement: H
+    } = e, V = (0, m.DP)(), {
+        fractionalState: Y
     } = (0, x.A)();
     (0, h.A)({
         type: d.ImpressionTypes.VIEW,
@@ -55,47 +57,51 @@ let v = e => {
             name: t
         }
     });
-    let V = r.useMemo(() => (0, i.debounce)(() => {
+    let Z = a.useMemo(() => (0, i.debounce)(() => {
             _.default.track(R.HAw.PREMIUM_MARKETING_WHAT_IS_NEW_CARD_HOVERED, {
                 card_type: (0, i.snakeCase)(n)
             })
         }, 800), [n]),
-        Y = r.useCallback(() => {
+        K = a.useCallback(() => {
             null != O && (O(), _.default.track(R.HAw.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
                 card_type: (0, i.snakeCase)(n),
                 function_name: (0, i.snakeCase)(O.name)
             }))
         }, [O, n]),
-        Z = S && W === f.xc.FP_ONLY,
-        K = !(0, i.isEmpty)(P),
-        z = K && (0, c.q)(H),
-        $ = (0, u.rdh)(u.LU0.colors.BACKGROUND_BASE_LOW).hex(),
-        X = Z || !(0, i.isEmpty)(w);
+        z = S && Y === f.xc.FP_ONLY,
+        $ = !(0, i.isEmpty)(I) || null != H,
+        X = $ && (0, c.q)(V),
+        q = (0, u.rdh)(u.LU0.colors.BACKGROUND_BASE_LOW).hex(),
+        J = z || !(0, i.isEmpty)(w);
     return (0, s.jsx)(o.NPJ, {
-        theme: z ? R.NJ8.DARKER : void 0,
+        theme: X ? R.NJ8.DARKER : void 0,
         children: e => (0, s.jsxs)(p.A, {
             id: t,
             tabIndex: F,
-            onMouseEnter: V,
+            onMouseEnter: Z,
             cardType: u.sl2.PRIMARY,
             glowing: M,
             hueRotate: 25,
-            glowAmount: (0, c.M)(H) ? 2 : 8,
+            glowAmount: (0, c.M)(V) ? 2 : 8,
             blurAmount: 10,
             className: l()(j.Ui, B, {
-                [j.Tn]: K
+                [j.Tn]: $
             }),
             cardClassName: l()(j.Nr, e, k, {
                 [j.j8]: U
             }),
             cardStyle: {
-                backgroundImage: K ? `url(${P})` : void 0,
+                backgroundImage: null != I ? `url(${I})` : void 0,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundOrigin: "padding-box",
                 backgroundClip: "padding-box"
             },
-            children: [!(0, i.isEmpty)(E) && (0, s.jsx)(u.Text, {
+            children: [null != H && (0, s.jsx)("div", {
+                className: j.d$,
+                "aria-hidden": "true",
+                children: H
+            }), !(0, i.isEmpty)(E) && (0, s.jsx)(u.Text, {
                 variant: "text-xs/bold",
                 color: "badge-expressive-text-default",
                 className: j.Io,
@@ -118,12 +124,12 @@ let v = e => {
                 children: [(0, s.jsx)("div", {
                     className: j.u_,
                     style: {
-                        "--custom-tint-color": G ?? $
+                        "--custom-tint-color": G ?? q
                     },
                     "aria-hidden": !0
                 }), (0, s.jsxs)("div", {
                     className: j.P_,
-                    children: [Z && (0, s.jsxs)("div", {
+                    children: [z && (0, s.jsxs)("div", {
                         className: j.d_,
                         children: [(0, s.jsx)(u.tvc, {
                             size: "sm",
@@ -143,42 +149,45 @@ let v = e => {
                     }), (0, s.jsx)(u.Heading, {
                         variant: "heading-lg/semibold",
                         children: n
-                    }), !(0, i.isEmpty)(a) && (0, s.jsxs)("div", {
+                    }), !(0, i.isEmpty)(r) && (0, s.jsxs)("div", {
                         className: j.Wi,
                         children: [(0, s.jsx)(u.Text, {
                             variant: "text-sm/normal",
                             color: "text-default",
                             className: j.h_,
-                            children: a
+                            children: r
                         }), (0, s.jsx)(u.Text, {
                             variant: "text-sm/normal",
                             color: "text-default",
                             className: j.XV,
                             inert: !0,
-                            children: a
+                            children: r
                         })]
-                    }), null != I && (0, s.jsx)("div", {
+                    }), null != P && (0, s.jsx)("div", {
                         className: j.oU,
                         children: (0, s.jsx)(C.Ay, {
                             variant: C.qP.BLUE,
-                            progress: (0, i.clamp)(I, 0, 1),
+                            progress: (0, i.clamp)(P, 0, 1),
                             maximum: 1,
                             glowing: L
                         })
-                    }), X && (0, s.jsx)("div", {
+                    }), null != W && (0, s.jsx)("div", {
+                        className: j.Gv,
+                        children: W
+                    }), J && (0, s.jsx)("div", {
                         className: j.Cj
                     })]
-                }), X && (0, s.jsxs)("div", {
+                }), J && (0, s.jsxs)("div", {
                     className: j.yk,
-                    children: [Z && (0, s.jsx)(g.A, {
+                    children: [z && (0, s.jsx)(g.A, {
                         fullWidth: !0,
                         defaultTextOverride: b.intl.string(b.t.sEAnVH)
-                    }), !Z && (0, s.jsx)(o.$nd, {
+                    }), !z && (0, s.jsx)(o.$nd, {
                         icon: y,
                         iconPosition: T,
                         text: w,
-                        variant: !K && (0, c.q)(H) ? "primary" : "overlay-primary",
-                        onClick: Y
+                        variant: !$ && (0, c.q)(V) ? "primary" : "overlay-primary",
+                        onClick: K
                     })]
                 })]
             })]

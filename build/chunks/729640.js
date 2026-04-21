@@ -4,22 +4,22 @@ n.d(t, {
 });
 var s = n(627968);
 n(64700);
-var r = n(934204),
-    a = n(75662);
+var a = n(934204),
+    r = n(75662);
 let l = e => {
     let {
         percentage: t
     } = e;
     return (0, s.jsxs)("div", {
-        className: a.hr,
+        className: r.hr,
         children: [t > 0 && t < 100 && (0, s.jsx)(() => (0, s.jsx)("div", {
-            className: a.ML,
+            className: r.ML,
             style: {
                 left: `calc(${t}% - 5px)`
             },
-            children: (0, s.jsx)(r.z, {})
+            children: (0, s.jsx)(a.z, {})
         }), {}), (0, s.jsx)("div", {
-            className: a.SX,
+            className: r.SX,
             style: {
                 width: `${t}%`
             }

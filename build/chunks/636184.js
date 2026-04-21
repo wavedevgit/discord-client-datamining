@@ -1,6 +1,6 @@
 /** chunk id: 636184 params = (module,exports,require) **/
 n.d(t, {
-    h: () => E
+    h: () => v
 });
 var i = n(627968),
     r = n(64700),
@@ -17,9 +17,9 @@ var i = n(627968),
     A = n(975571),
     g = n(427262),
     f = n(326084),
-    h = n(851746),
-    b = n(652215),
-    x = n(985018),
+    x = n(851746),
+    h = n(652215),
+    b = n(985018),
     R = n(494025),
     C = n(299148);
 let N = e => {
@@ -54,7 +54,7 @@ let N = e => {
                     variant: "text-md/medium",
                     className: R.nT,
                     color: "text-strong",
-                    children: x.intl.format(x.t.RO3T4B, {
+                    children: b.intl.format(b.t.RO3T4B, {
                         userName: o
                     })
                 })]
@@ -66,7 +66,7 @@ let N = e => {
             }), (0, i.jsx)(d.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: x.intl.string(x.t["g33r/P"]),
+                text: b.intl.string(b.t["g33r/P"]),
                 icon: d.oyn,
                 onClick: () => {
                     var e;
@@ -77,14 +77,14 @@ let N = e => {
             })]
         })
     },
-    E = e => {
+    v = e => {
         let {
             transitionState: t,
             results: n,
             onClose: a,
             isReminderConfirmation: s
-        } = e, u = (0, o.bG)([h.A], () => h.A.getReferralsRemaining());
-        p.default.track(b.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
+        } = e, u = (0, o.bG)([x.A], () => x.A.getReferralsRemaining());
+        p.default.track(h.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
         let {
             reducedMotion: _
         } = r.useContext(c.CZ);
@@ -97,11 +97,11 @@ let N = e => {
                 type: "rive"
             },
             gradientColor: "nitro-pink",
-            title: 0 === n.filter(e => e.status === f.o.SUCCESS).length ? x.intl.string(x.t["7VBEue"]) : !0 === s ? x.intl.string(x.t.GP5lbq) : x.intl.string(x.t.tKCltd),
-            subtitle: !0 === s ? x.intl.format(x.t["4gJJfD"], {
-                helpdeskArticle: A.A.getArticleURL(b.MVz.REFERRAL_PROGRAM)
-            }) : x.intl.format(x.t.AwGSWl, {
-                helpdeskArticle: A.A.getArticleURL(b.MVz.REFERRAL_PROGRAM)
+            title: 0 === n.filter(e => e.status === f.o.SUCCESS).length ? b.intl.string(b.t["7VBEue"]) : !0 === s ? b.intl.string(b.t.GP5lbq) : b.intl.string(b.t.tKCltd),
+            subtitle: !0 === s ? b.intl.format(b.t["4gJJfD"], {
+                helpdeskArticle: A.A.getArticleURL(h.MVz.REFERRAL_PROGRAM)
+            }) : b.intl.format(b.t.AwGSWl, {
+                helpdeskArticle: A.A.getArticleURL(h.MVz.REFERRAL_PROGRAM)
             }),
             onClose: a,
             transitionState: t,
