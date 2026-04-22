@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(110259),
-    s = n(311907),
-    a = n(205693),
+    a = n(311907),
+    s = n(205693),
     r = n(397927),
     o = n(827343),
     c = n(820284),
@@ -63,21 +63,21 @@ function N(e) {
             analyticsLocations: w,
             asSubmenu: !0
         }),
-        B = (0, s.bG)([p.Ay], () => p.Ay.getActiveInputProfile()),
+        B = (0, a.bG)([p.Ay], () => p.Ay.getActiveInputProfile()),
         H = (0, A.A)(w),
         V = (0, m.A)(w),
         W = (0, g.A)(w),
-        K = a.x.DEFAULT,
+        K = s.x.DEFAULT,
         z = p.Ay.isSelfDeaf(K),
-        Y = (0, s.bG)([p.Ay], () => p.Ay.getMode()),
+        Y = (0, a.bG)([p.Ay], () => p.Ay.getMode()),
         J = Y === x.TBI.VOICE_ACTIVITY ? x.TBI.PUSH_TO_TALK : x.TBI.VOICE_ACTIVITY,
-        q = (0, s.bG)([p.Ay, f.Ay], () => {
+        q = (0, a.bG)([p.Ay, f.Ay], () => {
             let e = p.Ay.getModeOptions().shortcut?.length > 0,
                 t = null != f.Ay.getKeybindForAction(x.hCu.PUSH_TO_TALK, !1, !0),
                 n = null != f.Ay.getKeybindForAction(x.hCu.PUSH_TO_TALK_PRIORITY, !1, !0);
             return e || t || n
         }),
-        $ = (0, s.bG)([_.A], () => null != _.A.getChannelId());
+        $ = (0, a.bG)([_.A], () => null != _.A.getChannelId());
     return (0, i.jsx)(c.A, {
         object: x.ZSU.CONTEXT_MENU,
         children: (0, i.jsxs)(r.W1t, {

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(311907),
-    s = n(397927),
-    a = n(435183),
+    a = n(397927),
+    s = n(435183),
     r = n(47167),
     o = n(46054),
     c = n(95701),
@@ -39,14 +39,14 @@ function p(e) {
             })
         }), p ? (0, i.jsx)("div", {
             className: A.U,
-            children: (0, i.jsx)(s.Button, {
+            children: (0, i.jsx)(a.Button, {
                 size: "sm",
                 variant: "secondary",
                 text: m.intl.string(m.t["3gUsJb"]),
                 onClick: () => {
-                    a.Ay.open(t.id)
+                    s.Ay.open(t.id)
                 },
-                icon: s.R2l
+                icon: a.R2l
             })
         }) : null]
     })

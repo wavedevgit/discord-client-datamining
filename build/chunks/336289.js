@@ -51,7 +51,7 @@ function N(e) {
         disabled: v
     } = e, {
         newestAnalyticsLocation: N
-    } = (0, o.Ay)(), C = null != l, y = (0, x.Ay)(n, l), b = (0, s.bG)([p.A], () => p.A.getPendingChanges(l ?? void 0).pendingBanner), E = (0, s.bG)([m.default], () => m.default.getCurrentUser()?.banner != null), T = null === b, P = void 0 !== b, R = C && (y?.isUsingGuildMemberBanner() ?? !1), _ = T && C ? E : (0, c.Ac)(b, y?.banner), O = C ? R : y?.banner != null, S = P ? null != b : O, L = y?.getPreviewBanner(b, !1, 296) ?? void 0, k = (0, r.rdh)(a.A.unsafe_rawColors.PRIMARY_800).hex(), U = y?.primaryColor ?? (0, i.LX)(k), {
+    } = (0, o.Ay)(), y = null != l, C = (0, x.Ay)(n, l), b = (0, s.bG)([p.A], () => p.A.getPendingChanges(l ?? void 0).pendingBanner), E = (0, s.bG)([m.default], () => m.default.getCurrentUser()?.banner != null), T = null === b, P = void 0 !== b, R = y && (C?.isUsingGuildMemberBanner() ?? !1), _ = T && y ? E : (0, c.Ac)(b, C?.banner), O = y ? R : C?.banner != null, S = P ? null != b : O, L = C?.getPreviewBanner(b, !1, 296) ?? void 0, k = (0, r.rdh)(a.A.unsafe_rawColors.PRIMARY_800).hex(), U = C?.primaryColor ?? (0, i.LX)(k), {
         hex: D
     } = (0, d.A)(U), M = () => (0, u.XD)({
         uploadType: f.HL.BANNER,
@@ -70,7 +70,7 @@ function N(e) {
         disabled: v,
         children: G
     });
-    let w = C && E,
+    let w = y && E,
         F = S ? {
             onClick: () => (0, A.p)({
                 guildId: l ?? void 0,

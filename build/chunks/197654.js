@@ -2,8 +2,8 @@
 i.d(e, {
     A: () => E
 });
-var a = i(627968),
-    l = i(64700),
+var l = i(627968),
+    a = i(64700),
     n = i(158954),
     r = i(397927),
     s = i(154672),
@@ -22,14 +22,14 @@ let E = t => {
         setGuildId: g,
         invite: h,
         ...m
-    } = t, [S, y] = l.useState(null), [x, f] = l.useState(!1), L = async t => {
+    } = t, [S, y] = a.useState(null), [x, f] = a.useState(!1), L = async t => {
         t.preventDefault(), y(null), f(!0);
         try {
             let t = h?.guild?.id ?? c.A.getChannel(h?.channel?.id)?.getGuildId() ?? void 0;
             t === d.TA && (t = void 0);
-            let a = await s.A.sendVerificationEmail(E, !0, t),
-                l = a.guilds_info;
-            a.has_matching_guild ? (g(t), e(d.Di.VERIFY_PIN)) : 0 === l.length ? e(d.Di.SUBMIT_SCHOOL) : 1 === l.length ? (g(l[0].id), await s.A.sendVerificationEmail(E, !0, l[0].id), e(d.Di.VERIFY_PIN)) : (i(l), e(d.Di.SELECT_SCHOOL))
+            let l = await s.A.sendVerificationEmail(E, !0, t),
+                a = l.guilds_info;
+            l.has_matching_guild ? (g(t), e(d.Di.VERIFY_PIN)) : 0 === a.length ? e(d.Di.SUBMIT_SCHOOL) : 1 === a.length ? (g(a[0].id), await s.A.sendVerificationEmail(E, !0, a[0].id), e(d.Di.VERIFY_PIN)) : (i(a), e(d.Di.SELECT_SCHOOL))
         } catch (t) {
             y(new o.LG(t))
         } finally {
@@ -45,10 +45,10 @@ let E = t => {
             count: h.approximate_member_count
         })
     }
-    return (0, a.jsx)("form", {
+    return (0, l.jsx)("form", {
         className: I.o,
         onSubmit: L,
-        children: (0, a.jsxs)(n.Modal, {
+        children: (0, l.jsxs)(n.Modal, {
             ...m,
             title: p,
             actions: [{
@@ -57,14 +57,14 @@ let E = t => {
                 loading: x,
                 text: _.intl.string(_.t["8vmKO0"])
             }],
-            children: [(0, a.jsx)(r.ksK, {
+            children: [(0, l.jsx)(r.ksK, {
                 label: _.intl.string(_.t.kmCxkf),
                 placeholder: _.intl.string(_.t.ImAOh5),
                 onChange: t => {
                     A(t)
                 },
                 error: S?.getAnyErrorMessage()
-            }), (0, a.jsx)(r.Text, {
+            }), (0, l.jsx)(r.Text, {
                 className: I.V,
                 color: "text-muted",
                 variant: "text-xs/normal",

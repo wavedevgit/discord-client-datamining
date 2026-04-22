@@ -1,7 +1,7 @@
 /** chunk id: 407195 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => er
+    A: () => eo
 });
 var i = n(627968),
     s = n(64700),
@@ -56,10 +56,11 @@ var i = n(627968),
     $ = n(672396),
     ee = n(652215),
     et = n(381941),
-    en = n(985018),
-    ei = n(463912);
-let es = $.Li.TOP;
-class el extends s.Component {
+    en = n(650583),
+    ei = n(985018),
+    es = n(463912);
+let el = $.Li.TOP;
+class ea extends s.Component {
     textAreaRef = s.createRef();
     constructor(e) {
         super(e), M.A.addChangeListener(this.draftDidChange);
@@ -90,7 +91,7 @@ class el extends s.Component {
         }
     })();
     handleTextareaKeyDown = e => {
-        if (e.which === ee.Ks6.ARROW_UP && !e.shiftKey && !e.altKey && !e.ctrlKey && !e.metaKey && 0 === this.state.textValue.length) {
+        if (e.key === en.dh.ARROW_UP && !e.shiftKey && !e.altKey && !e.ctrlKey && !e.metaKey && 0 === this.state.textValue.length) {
             e.preventDefault();
             let {
                 channel: t
@@ -228,7 +229,7 @@ class el extends s.Component {
         }, e.id)
     }
 }
-class ea extends s.PureComponent {
+class er extends s.PureComponent {
     componentDidUpdate(e) {
         let {
             channel: t,
@@ -286,10 +287,10 @@ class ea extends s.PureComponent {
             channelId: t.id
         }) : (0, i.jsx)(D.A, {
             channel: t,
-            className: ei.Wk,
+            className: es.Wk,
             forceCompact: u,
             showNewMessagesBar: !f,
-            scrollerClassName: u ? ei.XG : void 0,
+            scrollerClassName: u ? es.XG : void 0,
             showingQuarantineBanner: !1
         }, t.id), (0, i.jsx)(T.Y.Provider, {
             value: {
@@ -301,43 +302,43 @@ class ea extends s.PureComponent {
                     channel: t,
                     guild: r
                 }), (0, i.jsx)(q.Ay.Background, {
-                    opacityOverride: o || h ? null : es,
+                    opacityOverride: o || h ? null : el,
                     children: (0, i.jsx)("div", {
-                        className: a()(ei.MJ, {
-                            [ei.Id]: p,
-                            [ei.$p]: u && o && !d
+                        className: a()(es.MJ, {
+                            [es.Id]: p,
+                            [es.$p]: u && o && !d
                         }),
                         children: e
                     })
                 }), x ? null : (0, i.jsx)("div", {
                     children: y ? (0, i.jsx)(q.Ay.Background, {
-                        opacityOverride: o || h ? null : es,
+                        opacityOverride: o || h ? null : el,
                         children: (0, i.jsxs)("div", {
-                            className: ei.z8,
-                            children: [(0, i.jsx)(el, {
+                            className: es.z8,
+                            children: [(0, i.jsx)(ea, {
                                 channel: t,
                                 placeholder: n,
                                 isTemporarilyActive: d,
                                 pendingReply: A
                             }), (0, i.jsx)("div", {
-                                className: ei.V_,
+                                className: es.V_,
                                 children: (0, i.jsx)(g.Ay, {
                                     channel: t,
-                                    className: ei.IW,
+                                    className: es.IW,
                                     isInTextChannel: !0
                                 })
                             })]
                         })
                     }) : (0, i.jsx)("div", {
-                        className: ei.Zl,
+                        className: es.Zl,
                         children: (0, i.jsx)(q.Ay.Background, {
                             opacityOverride: $.Li.LOWER,
                             children: (0, i.jsx)("div", {
-                                className: a()(ei.ew, ei.__invalid_mediumBackgroundOpacity),
-                                children: null != _ && _.length > 0 ? en.intl.formatToPlainString(en.t["9TkYMO"], {
+                                className: a()(es.ew, es.__invalid_mediumBackgroundOpacity),
+                                children: null != _ && _.length > 0 ? ei.intl.formatToPlainString(ei.t["9TkYMO"], {
                                     keybind: c,
                                     channelName: t.isMultiUserDM() ? _ : `#${_}`
-                                }) : en.intl.formatToPlainString(en.t["hxz/4E"], {
+                                }) : ei.intl.formatToPlainString(ei.t["hxz/4E"], {
                                     keybind: c
                                 })
                             })
@@ -393,12 +394,12 @@ class ea extends s.PureComponent {
             A = (0, X.A)(r);
         return (0, i.jsx)(q.Ay, {
             className: a()(A, {
-                [ei.yw]: !n,
-                [ei.CP]: n,
-                [ei.xt]: p,
-                [ei.iM]: u,
-                [ei.ip]: h,
-                [ei.dp]: n,
+                [es.yw]: !n,
+                [es.CP]: n,
+                [es.xt]: p,
+                [es.iM]: u,
+                [es.ip]: h,
+                [es.dp]: n,
                 "overlay-unlocked": !t
             }, o),
             type: d,
@@ -408,7 +409,7 @@ class ea extends s.PureComponent {
     }
     renderContainedWrapper(e) {
         return (0, i.jsx)("div", {
-            className: ei.k_,
+            className: es.k_,
             children: e
         })
     }
@@ -427,8 +428,8 @@ class ea extends s.PureComponent {
         if (null == t || !this.shouldDisplay()) return null;
         let r = (0, i.jsxs)(s.Fragment, {
             children: [(0, i.jsx)(Q.A, {
-                draggableClassName: ei.bl,
-                className: ei.fB,
+                draggableClassName: es.bl,
+                className: es.fB,
                 channel: t,
                 locked: e,
                 pinned: n,
@@ -438,7 +439,7 @@ class ea extends s.PureComponent {
                 onContextMenu: this.handleContextMenu,
                 onMouseDown: this.moveDragStart
             }), this.renderContent(), e || l ? null : (0, i.jsx)("div", {
-                className: ei.cB,
+                className: es.cB,
                 onMouseDown: this.resizeDragStart
             })]
         });
@@ -446,7 +447,7 @@ class ea extends s.PureComponent {
     }
 }
 
-function er(e) {
+function eo(e) {
     let {
         contained: t = !1,
         ...n
@@ -455,7 +456,7 @@ function er(e) {
     } = (0, _.A)({
         channel: a
     });
-    return null != a && null != p && ee.kvI.GUILD_THREADS_ONLY.has(a.type) ? (0, i.jsx)(x.A, {}) : (0, i.jsx)(ea, {
+    return null != a && null != p && ee.kvI.GUILD_THREADS_ONLY.has(a.type) ? (0, i.jsx)(x.A, {}) : (0, i.jsx)(er, {
         guild: p,
         channel: a,
         user: m,

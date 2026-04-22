@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(397927),
-    a = n(471271),
+    a = n(397927),
+    s = n(471271),
     r = n(138298),
     o = n(761640),
     c = n(287809),
@@ -17,7 +17,7 @@ function h(e) {
         channel: t,
         user: n
     } = e, h = l.useCallback(() => {
-        (0, s.showToast)((0, s.createToast)(u.intl.string(u.t.a2j0hv), s.ToastType.FAILURE))
+        (0, a.showToast)((0, a.createToast)(u.intl.string(u.t.a2j0hv), a.ToastType.FAILURE))
     }, []), m = l.useCallback(() => {
         r.A.closeChannelSidebar(o.fe)
     }, []), A = l.useCallback(() => {
@@ -29,21 +29,21 @@ function h(e) {
         isRejectLoading: f,
         isOptimisticAccepted: E,
         isOptimisticRejected: C
-    } = (0, a.t)({
+    } = (0, s.t)({
         user: c.default.getUser(n.id),
         onError: h,
         onAcceptSuccess: A,
         onRejectSuccess: m
     }), x = _ || f || E || C;
-    return (0, i.jsxs)(s.ButtonGroup, {
+    return (0, i.jsxs)(a.ButtonGroup, {
         size: "sm",
-        children: [(0, i.jsx)(s.Button, {
+        children: [(0, i.jsx)(a.Button, {
             variant: "primary",
             disabled: x,
             onClick: () => g(t.id),
             loading: _,
             text: u.intl.string(u.t.Kz8Pwr)
-        }), (0, i.jsx)(s.Button, {
+        }), (0, i.jsx)(a.Button, {
             variant: "secondary",
             disabled: x,
             onClick: () => p(t.id),

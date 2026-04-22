@@ -22,7 +22,7 @@ function x(e) {
     } = e, {
         mutualFriendsCount: x,
         mutualGuilds: g
-    } = (0, d.A)(n), f = g?.length, h = (0, o.A)(n), v = (0, c.A)(n.id), j = (0, r.A)(n.id), I = [], N = n.id === l?.id, C = a.A.getFirstWishlistId(n.id), y = null != C, b = y ? a.A.getWishlistSettings(n.id, C) : null, E = (y ? i.A.getWishlistItems(C) : []).length > 0, T = v.length > 0;
+    } = (0, d.A)(n), f = g?.length, h = (0, o.A)(n), v = (0, c.A)(n.id), j = (0, r.A)(n.id), I = [], N = n.id === l?.id, y = a.A.getFirstWishlistId(n.id), C = null != y, b = C ? a.A.getWishlistSettings(n.id, y) : null, E = (C ? i.A.getWishlistItems(y) : []).length > 0, T = v.length > 0;
     (N || T) && I.push({
         text: p.intl.string(p.t.laViwx),
         section: A.RP.WIDGETS

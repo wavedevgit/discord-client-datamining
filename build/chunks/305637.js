@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(311907),
-    s = n(990078),
-    a = n(397927),
+    a = n(990078),
+    s = n(397927),
     r = n(630054),
     o = n(956793),
     c = n(401843),
@@ -42,20 +42,20 @@ function _(e) {
     if (null == n) return null;
     let N = (0, d.CT)(S);
     return t ? N = p.intl.string(p.t.XvBdeT) : T && (N = p.intl.string(p.t["JH1SJ+"])), (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(a.Button, {
+        children: [(0, i.jsx)(s.Button, {
             size: "sm",
             variant: T ? "secondary" : "active",
-            icon: a.Fzq,
+            icon: s.Fzq,
             text: N,
             disabled: t || T || !x,
             onClick: () => v(!1),
             fullWidth: !0
-        }), E && !T ? (0, i.jsx)(s.m, {
+        }), E && !T ? (0, i.jsx)(a.m, {
             text: p.intl.string(p.t.wCrzut),
-            children: (0, i.jsx)(a.K0, {
+            children: (0, i.jsx)(s.K0, {
                 variant: "secondary",
                 size: "sm",
-                icon: a.vAm,
+                icon: s.vAm,
                 "aria-label": p.intl.string(p.t.wCrzut),
                 onClick: () => {
                     v(!0)

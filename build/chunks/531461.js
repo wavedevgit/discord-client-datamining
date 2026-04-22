@@ -2,14 +2,14 @@
 i.d(e, {
     A: () => _
 });
-var a = i(627968),
-    l = i(64700),
+var l = i(627968),
+    a = i(64700),
     n = i(158954),
     r = i(397927),
     s = i(154672),
     o = i(198982),
     c = i(330936),
-    d = i(652215),
+    d = i(650583),
     u = i(985018);
 let _ = t => {
     let {
@@ -19,7 +19,7 @@ let _ = t => {
         school: I,
         setSchool: E,
         ...A
-    } = t, [g, h] = l.useState(null), [m, S] = l.useState(!1), y = async () => {
+    } = t, [g, h] = a.useState(null), [m, S] = a.useState(!1), y = async () => {
         h(null), S(!0);
         try {
             await s.A.signup(e, I), i(c.Di.EMAIL_WAITLIST)
@@ -29,9 +29,9 @@ let _ = t => {
             S(!1)
         }
     }, x = async t => {
-        null != I && "" !== I && t.charCode === d.Ks6.ENTER && await y()
+        null != I && "" !== I && t.key === d.dh.ENTER && await y()
     };
-    return (0, a.jsx)(n.Modal, {
+    return (0, l.jsx)(n.Modal, {
         ...A,
         title: u.intl.string(u.t["2FNWBG"]),
         subtitle: u.intl.string(u.t["/4y6ox"]),
@@ -45,7 +45,7 @@ let _ = t => {
             onClick: y,
             loading: m
         }],
-        children: (0, a.jsx)(r.ksK, {
+        children: (0, l.jsx)(r.ksK, {
             label: u.intl.string(u.t["L+AfJr"]),
             onKeyPress: x,
             placeholder: u.intl.string(u.t.Y1btJd),

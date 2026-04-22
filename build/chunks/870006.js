@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(311907),
-    s = n(397927),
-    a = n(793574),
+    a = n(397927),
+    s = n(793574),
     r = n(688810),
     o = n(989985),
     c = n(206835),
@@ -28,7 +28,7 @@ function E(e) {
     });
     return (0, i.jsx)("div", {
         children: (0, i.jsx)(o._, {
-            bannerIcon: (0, i.jsx)(s._mZ, {
+            bannerIcon: (0, i.jsx)(a._mZ, {
                 size: "lg",
                 color: "currentColor",
                 className: f.q3
@@ -39,7 +39,7 @@ function E(e) {
             bannerSubtext: _.intl.string(_.t.ONjwD5),
             textStyles: f.cI,
             headerStyles: f.U_,
-            children: (0, i.jsx)(s.Button, {
+            children: (0, i.jsx)(a.Button, {
                 variant: "primary",
                 size: "sm",
                 text: _.intl.string(_.t.Viksoo),
@@ -54,13 +54,13 @@ function C(e) {
         guild: t
     } = e, {
         analyticsLocations: n
-    } = (0, r.Ay)(a.A.AUTOMOD_PROFILE_QUARANTINE_ALERT), [l, c] = (0, m.j8)({
+    } = (0, r.Ay)(s.A.AUTOMOD_PROFILE_QUARANTINE_ALERT), [l, c] = (0, m.j8)({
         guildId: t?.id ?? A.dJq,
         analyticsLocations: n
     }), d = c ? _.intl.string(_.t["9ph2v7"]) : _.intl.string(_.t.ldh9Cg), u = c ? _.intl.string(_.t["/PGQf0"]) : _.intl.string(_.t.WikgZ1);
     return (0, i.jsx)("div", {
         children: (0, i.jsx)(o._, {
-            bannerIcon: (0, i.jsx)(s._mZ, {
+            bannerIcon: (0, i.jsx)(a._mZ, {
                 size: "lg",
                 color: "currentColor",
                 className: f.q3
@@ -71,7 +71,7 @@ function C(e) {
             bannerSubtext: d,
             textStyles: f.cI,
             headerStyles: f.U_,
-            children: (0, i.jsx)(s.Button, {
+            children: (0, i.jsx)(a.Button, {
                 variant: "primary",
                 size: "sm",
                 text: u,

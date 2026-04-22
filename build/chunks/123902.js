@@ -4,9 +4,9 @@ n.d(t, {
     V: () => h
 });
 var i, l = n(627968),
-    s = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    a = n(64700),
+    s = n(503698),
+    r = n.n(s),
     o = n(827734),
     c = n(765671),
     d = n(371664),
@@ -30,7 +30,7 @@ function p(e) {
         notchBackground: t,
         progress: n,
         size: i = "md",
-        gradientStart: a = o.A.unsafe_rawColors.YELLOW_260.css,
+        gradientStart: s = o.A.unsafe_rawColors.YELLOW_260.css,
         gradientEnd: h = o.A.unsafe_rawColors.GREEN_360.css,
         className: p,
         notchClassName: _,
@@ -38,15 +38,15 @@ function p(e) {
     } = e, E = A[i], {
         ref: C,
         width: x
-    } = (0, c.Ay)(), S = s.useMemo(() => null != x ? g(x) : 0, [x]), I = s.useMemo(() => {
+    } = (0, c.Ay)(), S = a.useMemo(() => null != x ? g(x) : 0, [x]), I = a.useMemo(() => {
         let e = Math.abs(g(S * (100 - Math.max(0, Math.min(100, n))) / 100) - S);
         return {
             transform: `translateX(${e}px)`
         }
-    }, [n, S]), T = s.useMemo(() => ({
+    }, [n, S]), T = a.useMemo(() => ({
         width: `${S}px`,
-        background: n <= 0 ? "none" : `linear-gradient(to right, ${a}, ${h})`
-    }), [h, a, n, S]);
+        background: n <= 0 ? "none" : `linear-gradient(to right, ${s}, ${h})`
+    }), [h, s, n, S]);
     return (0, l.jsxs)("div", {
         className: u.iE,
         ref: C,

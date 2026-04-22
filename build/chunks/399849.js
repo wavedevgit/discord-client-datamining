@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(503698),
-    s = n.n(l),
-    a = n(990078),
+    a = n.n(l),
+    s = n(990078),
     r = n(397927),
     o = n(607407),
     c = n(985018),
@@ -21,11 +21,11 @@ function u(e) {
     } = e;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.A, {
-            className: s()(d.HL, d.gH),
+            className: a()(d.HL, d.gH),
             stream: t,
             noText: !0
         }), !l && (0, i.jsxs)("div", {
-            className: s()(d.Qs, d.JK, {
+            className: a()(d.Qs, d.JK, {
                 [d.EX]: n
             }),
             children: [(0, i.jsx)(r.Text, {
@@ -33,7 +33,7 @@ function u(e) {
                 color: "always-white",
                 variant: n ? "text-sm/semibold" : "text-md/semibold",
                 children: u ? c.intl.string(c.t.UeEwjy) : c.intl.string(c.t["1i3tSY"])
-            }), (0, i.jsx)(a.m, {
+            }), (0, i.jsx)(s.m, {
                 asContainer: !0,
                 text: u ? c.intl.string(c.t["ro/HN8"]) : c.intl.string(c.t.UPf6ZM),
                 children: (0, i.jsx)("div", {

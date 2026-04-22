@@ -46,8 +46,8 @@ var i = n(627968),
     z = n(9458),
     W = n(788868),
     Y = n(88001),
-    K = n(652215),
-    X = n(758836),
+    X = n(652215),
+    K = n(758836),
     Z = n(654487),
     q = n(962995),
     $ = n(466919),
@@ -182,13 +182,13 @@ function eA() {
                 }),
                 footerContent: (0, i.jsx)(F.A, {}),
                 ctaText: ee.intl.string(J.default.BxjHiu),
-                onCtaClick: () => (0, S.pX)(K.BVt.COLLECTIBLES_SHOP_WITH_TAB(X.G2.ORBS))
+                onCtaClick: () => (0, S.pX)(X.BVt.COLLECTIBLES_SHOP_WITH_TAB(K.G2.ORBS))
             } : null, ef ? {
                 id: H.LOGITECH_3PP_CARD_ID,
                 title: ee.intl.string(q.default.OlObRa),
                 description: ee.intl.format(q.default["/UNTlE"], {
                     discountPercent: k.aW,
-                    termsUrl: L.A.getArticleURL(K.MVz.LOGITECH_PROMOTION)
+                    termsUrl: L.A.getArticleURL(X.MVz.LOGITECH_PROMOTION)
                 }),
                 subscriptionRequired: !0,
                 progress: ek.getDate() / ew,
@@ -251,7 +251,7 @@ function eA() {
                 pillText: ee.intl.string(ee.t.oW0eUd),
                 primaryAsset: es.A,
                 ctaText: ee.intl.string(ee.t.jVcuVY),
-                onCtaClick: () => (0, S.pX)(K.BVt.QUEST_HOME),
+                onCtaClick: () => (0, S.pX)(X.BVt.QUEST_HOME),
                 primaryAssetClassName: et.Nf
             } : null, {
                 id: H.DISPLAY_NAME_STYLES_CARD_ID,

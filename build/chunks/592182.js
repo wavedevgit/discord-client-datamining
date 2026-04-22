@@ -5,9 +5,9 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(503698),
-    s = n.n(l),
-    a = n(284009),
-    r = n.n(a),
+    a = n.n(l),
+    s = n(284009),
+    r = n.n(s),
     o = n(311907),
     c = n(397927),
     d = n(707606),
@@ -41,7 +41,7 @@ let k = (0, d.A)(e => {
         activity: t,
         embeddedActivity: n,
         user: l,
-        applicationStream: a,
+        applicationStream: s,
         className: d,
         guildId: k,
         channelId: w,
@@ -52,7 +52,7 @@ let k = (0, d.A)(e => {
     } = e, H = (0, o.bG)([f.default], () => {
         let e = f.default.getCurrentUser();
         return r()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-    }), V = F === I.O.STREAM_PREVIEW || null != a, W = (0, C.A)(t), K = W || V ? h.A.Direction.HORIZONTAL : h.A.Direction.VERTICAL, z = (0, o.bG)([_.A], () => null != w ? _.A.getChannel(w) : null, [w]), {
+    }), V = F === I.O.STREAM_PREVIEW || null != s, W = (0, C.A)(t), K = W || V ? h.A.Direction.HORIZONTAL : h.A.Direction.VERTICAL, z = (0, o.bG)([_.A], () => null != w ? _.A.getChannel(w) : null, [w]), {
         enableRequestToStream: Y
     } = m.m.useExperiment({
         guildId: k ?? z?.guild_id,
@@ -65,7 +65,7 @@ let k = (0, d.A)(e => {
         align: h.A.Align.STRETCH,
         direction: K,
         wrap: $ ? h.A.Wrap.WRAP : h.A.Wrap.NO_WRAP,
-        className: s()(d, P.jx, $ ? P.Vd : P.xM),
+        className: a()(d, P.jx, $ ? P.Vd : P.xM),
         children: (() => {
             if (!(0, E.Ay)(t)) {
                 if ((0, x.A)(t)) return (0, i.jsx)(T.A, {
@@ -117,7 +117,7 @@ let k = (0, d.A)(e => {
             }
             return V ? (0, i.jsx)(D.A, {
                 isCurrentUser: H.id === l.id,
-                applicationStream: a,
+                applicationStream: s,
                 onAction: B
             }) : (0, i.jsxs)(i.Fragment, {
                 children: [J && (0, i.jsx)(g.B, {

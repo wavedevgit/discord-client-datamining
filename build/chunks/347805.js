@@ -1,6 +1,6 @@
 /** chunk id: 347805 params = (module,exports,require) **/
 l.d(n, {
-    A: () => A
+    A: () => p
 });
 var t = l(627968),
     i = l(64700),
@@ -10,39 +10,40 @@ var t = l(627968),
     o = l(612630),
     d = l(351906),
     c = l(652215),
-    u = l(985018),
-    m = l(999878);
+    u = l(650583),
+    m = l(985018),
+    A = l(999878);
 
-function A(e) {
+function p(e) {
     let {
         autoFocus: n = !1,
         className: l,
-        userId: A,
-        onUpdate: p
-    } = e, x = (0, s.bG)([d.A], () => d.A.hidePersonalInformation), {
-        loading: g,
-        note: f
-    } = (0, o.A)(A), h = i.useRef(null);
+        userId: p,
+        onUpdate: x
+    } = e, g = (0, s.bG)([d.A], () => d.A.hidePersonalInformation), {
+        loading: f,
+        note: h
+    } = (0, o.A)(p), v = i.useRef(null);
     return (i.useEffect(() => {
-        if (!n || x) return;
-        let e = h.current;
+        if (!n || g) return;
+        let e = v.current;
         e?.selectionStart != null && (e.focus(), e.setSelection(e.value.length, e.value.length))
-    }, [n, x]), x) ? null : (0, t.jsx)("div", {
+    }, [n, g]), g) ? null : (0, t.jsx)("div", {
         className: l,
         children: (0, t.jsx)(a.d4u, {
-            ref: h,
-            className: m.P,
-            disabled: g,
-            placeholder: g ? u.intl.string(u.t["WLKx/9"]) : u.intl.string(u.t.VBhOe2),
-            "aria-label": u.intl.string(u.t.PbMNh2),
+            ref: v,
+            className: A.P,
+            disabled: f,
+            placeholder: f ? m.intl.string(m.t["WLKx/9"]) : m.intl.string(m.t.VBhOe2),
+            "aria-label": m.intl.string(m.t.PbMNh2),
             onBlur: e => {
                 let n = e.currentTarget.value;
-                (f ?? "") !== n && (p?.(), r.A.updateNote(A, n))
+                (h ?? "") !== n && (x?.(), r.A.updateNote(p, n))
             },
             onKeyPress: e => {
-                13 === e.which ? e.shiftKey ? (e.currentTarget.value.match(/\n/g) ?? []).length >= 5 && e.preventDefault() : (e.preventDefault(), e.currentTarget.blur()) : e.which === c.Ks6.SPACE && e.stopPropagation()
+                e.key === u.dh.ENTER ? e.shiftKey ? (e.currentTarget.value.match(/\n/g) ?? []).length >= 5 && e.preventDefault() : (e.preventDefault(), e.currentTarget.blur()) : e.key === u.dh.SPACE && e.stopPropagation()
             },
-            defaultValue: f ?? void 0,
+            defaultValue: h ?? void 0,
             maxLength: c.T7x
         })
     })

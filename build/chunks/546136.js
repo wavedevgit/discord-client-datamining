@@ -1,6 +1,6 @@
 /** chunk id: 546136 params = (module,exports,require) **/
 l.d(n, {
-    Ay: () => y,
+    Ay: () => C,
     _T: () => N,
     oA: () => I
 });
@@ -70,7 +70,7 @@ function N(e) {
     })
 }
 
-function C(e) {
+function y(e) {
     let {
         onClick: n,
         innerRef: l
@@ -92,20 +92,20 @@ function C(e) {
     })
 }
 
-function y(e) {
+function C(e) {
     let {
         user: n,
         selectedGuildId: l,
         onSelectGuildId: i,
         isLoading: I = !1,
         onClose: N,
-        className: y,
+        className: C,
         collapseButtonRef: b
     } = e, E = (0, g.A)(i), T = null != l, P = r.Ay.canUsePremiumProfileCustomization(n);
     return (0, t.jsxs)("aside", {
         id: v,
         "aria-labelledby": j,
-        className: s()(h.nd, y),
+        className: s()(h.nd, C),
         "aria-busy": I,
         children: [(0, t.jsx)(a.AC4, {
             children: (0, t.jsx)(a.H, {
@@ -114,7 +114,7 @@ function y(e) {
             })
         }), (0, t.jsxs)("div", {
             className: h.wx,
-            children: [(0, t.jsx)(C, {
+            children: [(0, t.jsx)(y, {
                 innerRef: b,
                 onClick: N
             }), (0, t.jsx)(x.A, {

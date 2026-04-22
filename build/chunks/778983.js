@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(311907),
-    s = n(421380),
-    a = n(397927),
+    a = n(421380),
+    s = n(397927),
     r = n(351001),
     o = n(145530),
     c = n(734057),
@@ -30,7 +30,7 @@ function g(e) {
         T = `delete-message-${t.id}`;
     return (0, i.jsx)(h.A, {
         text: S,
-        icon: a.ucK,
+        icon: s.ucK,
         onClick: () => {
             null != C && null != E && o.A.confirmDelete(C, E, !1, {
                 isFlagResolved: x,
@@ -38,6 +38,6 @@ function g(e) {
             })
         },
         disabled: I,
-        color: s.$n.Colors.RED
+        color: a.$n.Colors.RED
     }, T)
 }

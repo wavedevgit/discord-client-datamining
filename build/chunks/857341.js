@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(311907),
-    a = n(397927),
+    a = n(311907),
+    s = n(397927),
     r = n(383501),
     o = n(957565),
     c = n(798286),
@@ -20,7 +20,7 @@ var m = n(985018),
 function p(e) {
     let {
         channelId: t
-    } = e, n = (0, s.bG)([r.A], () => r.A.getSecureFramesState()?.epochAuthenticator), p = (0, u.z)({
+    } = e, n = (0, a.bG)([r.A], () => r.A.getSecureFramesState()?.epochAuthenticator), p = (0, u.z)({
         fingerprintBase64: n,
         chunkSize: 5,
         desiredLength: 30
@@ -33,11 +33,11 @@ function p(e) {
     }, [t, E]);
     return (0, i.jsxs)("div", {
         className: g.kL,
-        children: [(0, i.jsx)(a.Heading, {
+        children: [(0, i.jsx)(s.Heading, {
             variant: "text-sm/bold",
             color: "text-strong",
             children: m.intl.string(m.t.cTQI5t)
-        }), (0, i.jsx)(a.Text, {
+        }), (0, i.jsx)(s.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
             children: m.intl.format(m.t.wKxADe, {
@@ -50,13 +50,13 @@ function p(e) {
                 columns: 3,
                 className: g.lu
             })
-        }), null != p && (0, i.jsxs)(a.DUT, {
+        }), null != p && (0, i.jsxs)(s.DUT, {
             className: A.n2,
             onClick: C,
             children: [(0, i.jsx)("div", {
                 className: _ ? A.Dx : A.t6,
-                children: (0, i.jsx)(a.Button, {
-                    icon: a.TdU,
+                children: (0, i.jsx)(s.Button, {
+                    icon: s.TdU,
                     text: m.intl.string(m.t.OpuAlK),
                     variant: "secondary",
                     size: "sm",
@@ -64,8 +64,8 @@ function p(e) {
                 })
             }), (0, i.jsx)("div", {
                 className: _ ? A.t6 : A.Dx,
-                children: (0, i.jsx)(a.Button, {
-                    icon: a.yr3,
+                children: (0, i.jsx)(s.Button, {
+                    icon: s.yr3,
                     text: m.intl.string(m.t.t5VZ88),
                     variant: "secondary",
                     size: "sm",
@@ -74,17 +74,17 @@ function p(e) {
             })]
         }), (0, i.jsx)("hr", {
             className: A.me
-        }), (0, i.jsx)(a.Text, {
+        }), (0, i.jsx)(s.Text, {
             variant: "text-xs/normal",
             color: "text-subtle",
             children: m.intl.string(m.t.B9JNsl)
-        }), (0, i.jsxs)(a.ZpM, {
-            type: a.ZpM.Types.SUCCESS,
+        }), (0, i.jsxs)(s.ZpM, {
+            type: s.ZpM.Types.SUCCESS,
             className: A.g4,
-            children: [(0, i.jsx)(a.XAi, {
+            children: [(0, i.jsx)(s.XAi, {
                 size: "xxs",
-                color: a.LU0.colors.TEXT_FEEDBACK_POSITIVE.css
-            }), (0, i.jsx)(a.Text, {
+                color: s.LU0.colors.TEXT_FEEDBACK_POSITIVE.css
+            }), (0, i.jsx)(s.Text, {
                 variant: "text-xs/medium",
                 color: "text-feedback-positive",
                 children: m.intl.string(m.t["3BogKe"])

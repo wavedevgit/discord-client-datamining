@@ -7,7 +7,7 @@ var i = n(627968),
     s = n(64700),
     l = n(503698),
     r = n.n(l),
-    a = n(652215),
+    a = n(650583),
     o = n(816054);
 class d extends s.Component {
     inputRef = s.createRef();
@@ -59,7 +59,7 @@ class d extends s.Component {
         t?.(e)
     };
     handleKeyPress = e => {
-        e.which === a.Ks6.ENTER && this.inputRef.current?.blur()
+        e.key === a.dh.ENTER && this.inputRef.current?.blur()
     };
     render() {
         let e, {

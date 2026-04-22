@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(503698),
-    s = n.n(l),
-    a = n(990078),
+    a = n.n(l),
+    s = n(990078),
     r = n(397927),
     o = n(396787),
     c = n(985018),
@@ -19,11 +19,11 @@ function u(e) {
         editable: u,
         location: h
     } = e;
-    return u ? (0, i.jsx)(a.m, {
+    return u ? (0, i.jsx)(s.m, {
         position: "bottom",
         text: c.intl.string(c.t["0qPSMV"]),
         children: (0, i.jsxs)(r.DUT, {
-            className: s()(d.e, l),
+            className: a()(d.e, l),
             onClick: () => (0, o.jv)(t.id, h),
             children: [n, (0, i.jsx)("div", {
                 className: d.Z,

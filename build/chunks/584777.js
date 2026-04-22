@@ -4,8 +4,8 @@ n.d(t, {
     A: () => w
 }), n(321073);
 var l = n(311907),
-    s = n(73153),
-    a = n(450827),
+    a = n(73153),
+    s = n(450827),
     r = n(49463),
     o = n(21119),
     c = n(95701),
@@ -49,13 +49,13 @@ function y() {
     }
     let n = null != e ? e.recipients : [];
     if (null != i) {
-        let e, t, l, s = p.default.getCurrentUser(),
-            a = s?.isStaff() ?? !1;
+        let e, t, l, a = p.default.getCurrentUser(),
+            s = a?.isStaff() ?? !1;
         i.setQuery({
             query: E,
             filters: {
                 friends: !0,
-                staff: a,
+                staff: s,
                 provisional: !1
             },
             blacklist: n,
@@ -67,9 +67,9 @@ function y() {
             })), l = {}, e.forEach(e => {
                 let n = A.A.getScoreWithoutFetchingLatest(e.id),
                     i = e.getRecipientId(),
-                    s = .2 * !!g.A.isFriend(i),
-                    a = .1 * (null != h.A.getDMFromUserId(i));
-                l[i] = 1 + n / t + s + a
+                    a = .2 * !!g.A.isFriend(i),
+                    s = .1 * (null != h.A.getDMFromUserId(i));
+                l[i] = 1 + n / t + a + s
             }), l)
         })
     }
@@ -112,7 +112,7 @@ function R(e) {
 }
 
 function M() {
-    return null != i && (i.destroy(), i = null), a.A.getUserSearchContext(R, 1e3)
+    return null != i && (i.destroy(), i = null), s.A.getUserSearchContext(R, 1e3)
 }
 
 function L(e) {
@@ -155,7 +155,7 @@ class P extends l.Ay.Store {
         }
     }
 }
-let k = new P(s.h, {
+let k = new P(a.h, {
         CONNECTION_OPEN: function() {
             v()
         },

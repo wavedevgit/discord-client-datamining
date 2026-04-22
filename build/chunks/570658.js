@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(397927),
-    s = n(954571),
-    a = n(687599),
+    a = n(954571),
+    s = n(687599),
     r = n(652215);
 
 function o(e) {
@@ -16,8 +16,8 @@ function o(e) {
         onConfirm: o,
         onCancel: c
     } = e;
-    s.default.track(r.HAw.OPEN_MODAL, {
-        type: a.PY,
+    a.default.track(r.HAw.OPEN_MODAL, {
+        type: s.PY,
         channel_id: t
     }), (0, l.mMO)(async () => {
         let {
@@ -34,7 +34,7 @@ function o(e) {
 function c(e) {
     let {
         onConfirm: t,
-        onCancel: s
+        onCancel: a
     } = e;
     (0, l.mMO)(async () => {
         let {
@@ -42,7 +42,7 @@ function c(e) {
         } = await n.e("19729").then(n.bind(n, 693864));
         return n => (0, i.jsx)(e, {
             onConfirm: t,
-            onDismiss: s,
+            onDismiss: a,
             ...n
         })
     })

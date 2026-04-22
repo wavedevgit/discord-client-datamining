@@ -5,8 +5,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(615300),
     o = n(311907),
     c = n(554146),
@@ -36,7 +36,7 @@ function M(e) {
     let {
         className: t,
         iconUrl: n,
-        icon: s,
+        icon: a,
         header: r,
         completed: o,
         onClick: c
@@ -44,23 +44,23 @@ function M(e) {
     return l.useEffect(() => {
         null != A && o !== A && (m(!0), setTimeout(() => m(!1), 1e3))
     }, [o, A]), (0, i.jsxs)(d.DUT, {
-        className: a()(t, R.Nr, {
+        className: s()(t, R.Nr, {
             [R.so]: o
         }),
         onClick: c,
-        children: [s ?? (0, i.jsx)("img", {
+        children: [a ?? (0, i.jsx)("img", {
             className: R.Kk,
             src: n,
             alt: ""
         }), (0, i.jsx)(d.Text, {
             color: "text-strong",
-            className: a()(R.t$, R.MY),
+            className: s()(R.t$, R.MY),
             variant: "text-sm/normal",
             children: r
         }), o ? (0, i.jsx)(d.A9s, {
             size: "md",
             color: "currentColor",
-            className: a()(R.AI, {
+            className: s()(R.AI, {
                 [R.i0]: u
             })
         }) : (0, i.jsx)(x.A, {
@@ -71,7 +71,7 @@ function M(e) {
 }
 
 function L(e) {
-    let t, s, h, x, L, D, {
+    let t, a, h, x, L, D, {
             channel: O
         } = e,
         P = (0, o.bG)([E.A], () => null != O ? E.A.getGuild(O.getGuildId()) : null, [O]),
@@ -111,7 +111,7 @@ function L(e) {
                     }
                 })
             })
-        }, [P]), s = l.useCallback(() => {
+        }, [P]), a = l.useCallback(() => {
             m.Ay.trackWithMetadata(y.HAw.SERVER_SETUP_CTA_CLICKED, {
                 setup_type: b.XT.CHANNEL_WELCOME,
                 action: b.AG.SEND_MESSAGE
@@ -128,7 +128,7 @@ function L(e) {
             })
         }, [P]), {
             handleInvite: t,
-            handleMessage: s,
+            handleMessage: a,
             handlePersonalize: h,
             handleDownload: l.useCallback(() => {
                 m.Ay.trackWithMetadata(y.HAw.SERVER_SETUP_CTA_CLICKED, {
@@ -282,7 +282,7 @@ function L(e) {
                         })
                     }), (0, i.jsxs)(d.Text, {
                         color: "text-default",
-                        className: a()({
+                        className: s()({
                             [R.VA]: !0,
                             [R.lg]: 0 === en.length
                         }),

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(311907),
-    s = n(397927),
-    a = n(991982),
+    a = n(397927),
+    s = n(991982),
     r = n(838111),
     o = n(870136),
     c = n(696451),
@@ -26,9 +26,9 @@ function p(e) {
     let x = `timeout-user-${n?.id}`;
     return (0, i.jsx)(m.A, {
         text: E ? g.intl.string(A.default["6uMZbv"]) : g.intl.string(A.default["Sgg/uI"]),
-        icon: s.O4,
+        icon: a.O4,
         onClick: () => {
-            null != n && (0, a.R)({
+            null != n && (0, s.R)({
                 guildId: t.guild_id,
                 userId: n.id,
                 modReportId: t.id

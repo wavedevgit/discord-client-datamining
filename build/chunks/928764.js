@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(311907),
     o = n(506774),
     c = n(990078),
@@ -45,15 +45,15 @@ var i = n(627968),
 function H(e) {
     let {
         channel: t
-    } = e, s = t.isArchivedThread(), a = (0, T.uW)(t), [r, c] = l.useState(!1), u = () => {
+    } = e, a = t.isArchivedThread(), s = (0, T.uW)(t), [r, c] = l.useState(!1), u = () => {
         c(!0), I.A.resolveFlag(t.id).then(() => {
             c(!1)
         })
     };
-    return a ? (0, i.jsx)(d.Button, {
+    return s ? (0, i.jsx)(d.Button, {
         size: "sm",
         variant: "secondary",
-        text: s ? w.intl.string(U.default["2Y4vkk"]) : w.intl.string(U.default.YIbR4r),
+        text: a ? w.intl.string(U.default["2Y4vkk"]) : w.intl.string(U.default.YIbR4r),
         onClick: () => {
             !0 === o.w.get(N.f) ? u() : (0, d.mMO)(async () => {
                 let {
@@ -74,7 +74,7 @@ function H(e) {
         },
         loading: r,
         icon: d.A9s,
-        disabled: s
+        disabled: a
     }) : null
 }
 
@@ -82,7 +82,7 @@ function V(e) {
     let {
         postId: t,
         isFirstMessage: n,
-        isLastItem: s = !1,
+        isLastItem: a = !1,
         parentChannelId: o
     } = e, {
         ref: I,
@@ -112,9 +112,9 @@ function V(e) {
             t.disconnect()
         }
     });
-    let [es, ea] = l.useState(!0);
+    let [ea, es] = l.useState(!0);
     if (l.useEffect(() => {
-            null == T || (U(Math.floor((T - 280) / 58)), ea(!1))
+            null == T || (U(Math.floor((T - 280) / 58)), es(!1))
         }, [T]), null == Y || null == J) return null;
     let er = J.reactions.length > 0,
         eo = () => {
@@ -128,7 +128,7 @@ function V(e) {
         ec = q ? d.A9s : d.XFE;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: a()(G.kL, {
+            className: s()(G.kL, {
                 [G.wx]: V
             }),
             ref: I,
@@ -139,8 +139,8 @@ function V(e) {
                     channel: Y
                 })
             }) : (0, i.jsxs)("div", {
-                className: a()(G.hY, {
-                    [G.Lq]: es
+                className: s()(G.hY, {
+                    [G.Lq]: ea
                 }),
                 children: [!er && !Z && null != en && (0, i.jsx)("div", {
                     className: F.reactions,
@@ -175,7 +175,7 @@ function V(e) {
                     message: J,
                     channel: Y,
                     useChatFontScaling: !1,
-                    className: a()(B.secondary, G.vU, {
+                    className: s()(B.secondary, G.vU, {
                         [G.w$]: !er
                     }),
                     isForumToolbar: !0,
@@ -233,7 +233,7 @@ function V(e) {
             threadId: t
         }), (0, i.jsx)(C.A, {
             channel: Y,
-            isLastItem: s
+            isLastItem: a
         })]
     })
 }

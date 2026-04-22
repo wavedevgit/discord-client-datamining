@@ -2,8 +2,8 @@
 n.d(t, {
     A: () => A
 });
-var i, l, s = n(627968),
-    a = n(64700),
+var i, l, a = n(627968),
+    s = n(64700),
     r = n(499979),
     o = n(451988),
     c = n(985018),
@@ -157,7 +157,7 @@ let h = e => (t, n) => null == n ? "" : c.intl.format(e(), {
     };
 
 function A(e) {
-    return class extends a.PureComponent {
+    return class extends s.PureComponent {
         static Locations = d;
         static Types = u;
         timer = new o.IX;
@@ -221,15 +221,15 @@ function A(e) {
                 isApplicationStreaming: i,
                 ...l
             } = this.props, {
-                time: a
+                time: s
             } = this.state, o = this.getType();
             if (null == o) return null;
-            let c = this.getTimeUnit(a, t, o),
+            let c = this.getTimeUnit(s, t, o),
                 d = m[t][o];
             if (null == d) return null;
             let u = d[c],
-                h = Math.floor((0, r.eZ)(a, c));
-            return (0, s.jsx)(e, {
+                h = Math.floor((0, r.eZ)(s, c));
+            return (0, a.jsx)(e, {
                 ...l,
                 children: u?.(h, n, i)
             })

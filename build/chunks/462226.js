@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(397927),
-    s = n(626584),
-    a = n(833349),
+    a = n(626584),
+    s = n(833349),
     r = n(652215),
     o = n(985018);
 
@@ -18,12 +18,12 @@ function c(e) {
         onAction: d,
         ...u
     } = e;
-    return (0, a.A)(t, r.jUm.INSTANCE) ? (0, i.jsx)(l.Button, {
+    return (0, s.A)(t, r.jUm.INSTANCE) ? (0, i.jsx)(l.Button, {
         text: o.intl.string(o.t.vwl1PK),
         variant: c,
         size: "sm",
         onClick: () => {
-            d?.(), new s.A("UserActivityActions").log("notify", n.id, t)
+            d?.(), new a.A("UserActivityActions").log("notify", n.id, t)
         },
         fullWidth: !0,
         ...u

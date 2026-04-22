@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(311907),
     o = n(435371),
     c = n(397927),
@@ -42,12 +42,12 @@ function k(e) {
         avatarSize: t,
         guildId: n,
         channelId: l,
-        users: s
-    } = e, a = t ?? c._3J.SIZE_32, r = (0, c.FT9)(a);
+        users: a
+    } = e, s = t ?? c._3J.SIZE_32, r = (0, c.FT9)(s);
     return (0, i.jsx)(C.Ay, {
         size: r,
         guildId: n,
-        users: s,
+        users: a,
         max: 4,
         renderUser: e => {
             if (null == e || e === C.mt) return null;
@@ -68,18 +68,18 @@ function w(e) {
     let {
         participants: t,
         application: n,
-        channel: s,
+        channel: a,
         width: o
-    } = e, A = o > 400 ? 2 : +(o > 300), [p] = o > 400 ? [c._3J.SIZE_56, 56] : o > 300 ? [c._3J.SIZE_32, 32] : [c._3J.SIZE_24, 24], _ = (0, r.yK)([R.default, b.default], () => Array.from(t).map(e => (0, m.S)(e, b.default) ? null : R.default.getUser(e.userId)).filter(M.Vq)), f = (0, r.bG)([u.Ay], () => u.Ay.getEmbeddedActivitiesForChannel(s.id).find(e => e.applicationId === n.id) ?? u.Ay.getEmbeddedActivitiesForStartingChannel(s.id).find(e => e.applicationId === n.id)), {
+    } = e, A = o > 400 ? 2 : +(o > 300), [p] = o > 400 ? [c._3J.SIZE_56, 56] : o > 300 ? [c._3J.SIZE_32, 32] : [c._3J.SIZE_24, 24], _ = (0, r.yK)([R.default, b.default], () => Array.from(t).map(e => (0, m.S)(e, b.default) ? null : R.default.getUser(e.userId)).filter(M.Vq)), f = (0, r.bG)([u.Ay], () => u.Ay.getEmbeddedActivitiesForChannel(a.id).find(e => e.applicationId === n.id) ?? u.Ay.getEmbeddedActivitiesForStartingChannel(a.id).find(e => e.applicationId === n.id)), {
         analyticsLocations: E
-    } = (0, T.Ay)(), C = (0, d.p)(), x = L.Ay.getName(s.getGuildId(), s.id, _?.[0]), S = (0, g.vG)({
+    } = (0, T.Ay)(), C = (0, d.p)(), x = L.Ay.getName(a.getGuildId(), a.id, _?.[0]), S = (0, g.vG)({
         userId: R.default.getCurrentUser()?.id,
-        channelId: s.id,
+        channelId: a.id,
         application: n
-    }) === g.Gy.CAN_JOIN, I = s.getGuildId() ?? void 0, N = l.useId(), y = n.id, j = l.useMemo(() => ({
-        channel: s,
+    }) === g.Gy.CAN_JOIN, I = a.getGuildId() ?? void 0, N = l.useId(), y = n.id, j = l.useMemo(() => ({
+        channel: a,
         type: "channel"
-    }), [s]), {
+    }), [a]), {
         submitting: P
     } = (0, v.A)({
         applicationId: y,
@@ -91,10 +91,10 @@ function w(e) {
         children: [(0, i.jsx)(k, {
             avatarSize: p,
             guildId: I,
-            channelId: s.id,
+            channelId: a.id,
             users: _
         }), (0, i.jsx)(c.Text, {
-            className: a()(O.m_, {
+            className: s()(O.m_, {
                 [O.EX]: 0 === A,
                 [O.Y]: 1 === A
             }),
@@ -106,7 +106,7 @@ function w(e) {
                 username: x
             })
         }), (0, i.jsx)(c.Text, {
-            className: a()(O.wx, {
+            className: s()(O.wx, {
                 [O.EX]: 0 === A,
                 [O.Y]: 1 === A
             }),
@@ -119,7 +119,7 @@ function w(e) {
                 onClick: function(e) {
                     e.stopPropagation(), null != f && (0, h.A)({
                         applicationId: f.applicationId,
-                        activityChannelId: s.id,
+                        activityChannelId: a.id,
                         locationObject: C.location,
                         analyticsLocations: E,
                         componentId: N
@@ -137,8 +137,8 @@ function U(e) {
     let {
         participant: t,
         width: n,
-        selected: s,
-        interactible: a,
+        selected: a,
+        interactible: s,
         channel: o
     } = e, {
         analyticsLocations: c
@@ -150,7 +150,7 @@ function U(e) {
         applicationId: d,
         names: P,
         size: 1024
-    }), C = !s && h, v = !h, b = !h && !s, R = (0, r.bG)([j.A, y.A], () => (0, S.A)({
+    }), C = !a && h, v = !h, b = !h && !a, R = (0, r.bG)([j.A, y.A], () => (0, S.A)({
         LayerStore: j.A,
         PopoutWindowStore: y.A
     }));
@@ -175,7 +175,7 @@ function U(e) {
                 channel: o,
                 participants: t.participants,
                 application: m
-            }), a || v ? null : (0, i.jsx)("div", {
+            }), s || v ? null : (0, i.jsx)("div", {
                 className: O.OB
             })]
         })

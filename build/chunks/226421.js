@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(503698),
-    s = n.n(l),
-    a = n(397927),
+    a = n.n(l),
+    s = n(397927),
     r = n(870386);
 
 function o(e) {
@@ -14,8 +14,8 @@ function o(e) {
         className: t
     } = e;
     return (0, i.jsx)("div", {
-        className: s()(r.L, t),
-        children: (0, i.jsx)(a.xgA, {
+        className: a()(r.L, t),
+        children: (0, i.jsx)(s.xgA, {
             size: "lg",
             color: "currentColor"
         })

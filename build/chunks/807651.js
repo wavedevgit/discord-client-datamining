@@ -28,8 +28,8 @@ function g(e) {
         relationshipType: j,
         onClose: I
     } = e, N = (0, a.X)("UserProfileModalV2Buttons"), {
-        newestAnalyticsLocation: C
-    } = (0, s.Ay)(), y = (0, r.A)({
+        newestAnalyticsLocation: y
+    } = (0, s.Ay)(), C = (0, r.A)({
         user: n,
         guildId: f,
         channelId: h,
@@ -52,7 +52,7 @@ function g(e) {
         }), (0, t.jsx)(u.Zt, {
             user: n,
             guildId: g,
-            viewProfileItem: y
+            viewProfileItem: C
         })]
     }) : (0, t.jsxs)(t.Fragment, {
         children: [(0, t.jsx)(o.A, {
@@ -64,7 +64,7 @@ function g(e) {
         }), (0, t.jsx)(u.Zt, {
             user: n,
             guildId: g,
-            viewProfileItem: y
+            viewProfileItem: C
         })]
     }) : n.bot ? (0, t.jsxs)(t.Fragment, {
         children: [(0, t.jsx)(c.e, {
@@ -74,7 +74,7 @@ function g(e) {
         }), (0, t.jsx)(u.Zt, {
             user: n,
             guildId: g,
-            viewProfileItem: y
+            viewProfileItem: C
         })]
     }) : j === x.eA$.PENDING_INCOMING ? (0, t.jsxs)(t.Fragment, {
         children: [(0, t.jsx)(c.e, {
@@ -95,13 +95,13 @@ function g(e) {
         }), (0, t.jsx)(A.Ef, {
             user: n,
             relationshipType: j,
-            analyticsLocation: C
+            analyticsLocation: y
         }), (0, t.jsx)(d.A, {
             user: n
         }), (0, t.jsx)(u.Zt, {
             user: n,
             guildId: g,
-            viewProfileItem: y
+            viewProfileItem: C
         })]
     }) : j === x.eA$.NONE && P ? (0, t.jsxs)(t.Fragment, {
         children: [(0, t.jsx)(c.e, {
@@ -110,7 +110,7 @@ function g(e) {
             autoFocus: !0
         }), (0, t.jsx)(A.ES, {
             user: n,
-            analyticsLocation: C,
+            analyticsLocation: y,
             gameFriends: b,
             tooltipPosition: "top",
             tooltipAlign: "center",
@@ -121,13 +121,13 @@ function g(e) {
         }), (0, t.jsx)(u.Zt, {
             user: n,
             guildId: g,
-            viewProfileItem: y
+            viewProfileItem: C
         })]
     }) : (0, t.jsxs)(t.Fragment, {
         children: [(0, t.jsx)(A.cO, {
             variant: "primary",
             userId: n.id,
-            analyticsLocation: C,
+            analyticsLocation: y,
             autoFocus: !0
         }), (0, t.jsx)(c.l, {
             userId: n.id,
@@ -138,7 +138,7 @@ function g(e) {
         }), (0, t.jsx)(u.Zt, {
             user: n,
             guildId: g,
-            viewProfileItem: y
+            viewProfileItem: C
         })]
     })
 }

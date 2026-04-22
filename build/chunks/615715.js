@@ -1,31 +1,31 @@
 /** chunk id: 615715 params = (module,exports,require) **/
 n.d(t, {
-    default: () => R
+    default: () => h
 });
 var s = n(627968),
     a = n(64700),
-    i = n(311907),
-    l = n(181658),
+    l = n(311907),
+    i = n(181658),
     o = n(557722),
     r = n(515258),
     E = n(870570),
     d = n(287809),
-    c = n(446868),
-    h = n(662758),
-    u = n(985018);
-let R = a.forwardRef(function(e, t) {
+    u = n(446868),
+    c = n(662758),
+    R = n(985018);
+let h = a.forwardRef(function(e, t) {
     let {
         onAddedPhone: n,
-        onClose: R,
+        onClose: h,
         transitionState: I,
         reason: p,
         layerContext: _
-    } = e, f = (0, i.bG)([d.default], () => d.default.getCurrentUser()), g = (0, i.bG)([E.A], () => E.A.getAction()), [C, m] = a.useState(null), [A, y] = a.useState(null), [F, b] = a.useState(null), [P, x] = a.useState(!1), B = a.useCallback(async e => {
+    } = e, f = (0, l.bG)([d.default], () => d.default.getCurrentUser()), g = (0, l.bG)([E.A], () => E.A.getAction()), [C, A] = a.useState(null), [m, y] = a.useState(null), [F, b] = a.useState(null), [P, x] = a.useState(!1), B = a.useCallback(async e => {
         x(!0);
         try {
-            c.A.isPhoneReverification(f, g) ? await o.A.beginReverifyPhone(e, p) : await o.A.beginAddPhone(e, p), b(null), m(e)
+            u.A.isPhoneReverification(f, g) ? await o.A.beginReverifyPhone(e, p) : await o.A.beginAddPhone(e, p), b(null), A(e)
         } catch (e) {
-            b(new l.A(e))
+            b(new i.A(e))
         }
         x(!1)
     }, [f, p, g]), D = a.useCallback(async e => {
@@ -37,20 +37,20 @@ let R = a.forwardRef(function(e, t) {
                 } = await o.A.verifyPhone(C, e);
                 b(null), y(t)
             } catch (e) {
-                b(new l.A(e))
+                b(new i.A(e))
             }
             x(!1)
         }
     }, [f, C]), V = a.useCallback(async e => {
-        null != A && (c.A.isPhoneReverification(f, g) ? await o.A.reverifyPhone(A, e, p) : await o.A.addPhone(A, e, p), n?.(), R())
-    }, [n, R, A, p, f, g]);
-    return null != A ? (0, s.jsx)(h.default, {
-        onClose: R,
+        null != m && (u.A.isPhoneReverification(f, g) ? await o.A.reverifyPhone(m, e, p) : await o.A.addPhone(m, e, p), n?.(), h())
+    }, [n, h, m, p, f, g]);
+    return null != m ? (0, s.jsx)(c.default, {
+        onClose: h,
         transitionState: I,
-        title: u.intl.string(u.t.ZtCDc2),
+        title: R.intl.string(R.t.ZtCDc2),
         handleSubmit: V
     }) : (0, s.jsx)(r.default, {
-        onClose: R,
+        onClose: h,
         transitionState: I,
         error: F?.getAnyErrorMessage(),
         working: P,

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(801541);
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(889137),
     o = n(397927),
     c = n(375901),
@@ -23,11 +23,11 @@ function f(e) {
         expanded: t,
         onClick: n,
         count: l,
-        compact: s,
-        collapsedReason: a,
+        compact: a,
+        collapsedReason: s,
         canUncollapse: c = !0
     } = e, u = (0, r.YW)({
-        collapsedReason: a
+        collapsedReason: s
     }).with({
         collapsedReason: g.t["VFWjc+"]
     }, () => (0, i.jsx)(o.G3N, {
@@ -52,15 +52,15 @@ function f(e) {
         className: p.Q6
     }));
     return (0, i.jsx)(d.A, {
-        compact: s,
+        compact: a,
         role: "group",
         childrenMessageContent: (0, i.jsx)(m.A, {
-            compact: s,
+            compact: a,
             className: p.L9,
             iconNode: u,
             children: (0, i.jsxs)("div", {
                 className: c ? p.Fo : p.GU,
-                children: [g.intl.format(a, {
+                children: [g.intl.format(s, {
                     count: l
                 }), c && (0, i.jsxs)(i.Fragment, {
                     children: [" — ", (0, i.jsx)(o.DUT, {
@@ -78,7 +78,7 @@ let E = l.memo(function(e) {
     let {
         messages: t,
         channel: n,
-        compact: s = !1,
+        compact: a = !1,
         unreadId: r,
         collapsedReason: o,
         canUncollapse: d = !0
@@ -92,7 +92,7 @@ let E = l.memo(function(e) {
     }, [m, d]);
     let x = t.hasUnread ? t.content.length - 1 : t.content.length;
     return (0, i.jsxs)("div", {
-        className: a()({
+        className: s()({
             [_._A]: !0,
             [p.sz]: g
         }),
@@ -101,7 +101,7 @@ let E = l.memo(function(e) {
             id: r
         }, "divider") : null, (0, i.jsx)(f, {
             count: x,
-            compact: s,
+            compact: a,
             expanded: g,
             onClick: C,
             collapsedReason: o,
@@ -120,7 +120,7 @@ let E = l.memo(function(e) {
                 return (0, i.jsx)(t, {
                     id: (0, c.j)(n.id, e.content.id),
                     className: p.__invalid_blocked,
-                    compact: s,
+                    compact: a,
                     channel: n,
                     message: e.content,
                     groupId: e.groupId,

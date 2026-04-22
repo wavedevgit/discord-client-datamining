@@ -43,7 +43,7 @@ function f(e) {
         pendingThemeColors: h,
         pendingAvatarSrc: j ?? void 0,
         isPreview: !0
-    }), C = (0, d.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), y = null != j ? j : n.getAvatarURL(l ?? void 0, 80), b = (0, c.rh)(y, C, !1), E = i.useCallback(e => {
+    }), y = (0, d.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), C = null != j ? j : n.getAvatarURL(l ?? void 0, 80), b = (0, c.rh)(C, y, !1), E = i.useCallback(e => {
         let n = a()(e, f?.themeColors);
         (0, m.p)({
             guildId: l ?? void 0,

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(731738),
-    a = n(397927),
+    a = n(731738),
+    s = n(397927),
     r = n(832712),
     o = n(831062),
     c = n(662502),
@@ -45,7 +45,7 @@ function C(e) {
             senderId: x,
             warningType: m._j.LIKELY_ATO
         }), o.A.increment({
-            name: s.K.SAFETY_WARNING_VIEW
+            name: a.K.SAFETY_WARNING_VIEW
         })
     }, [t, C, x]), (0, i.jsx)(g.N, {
         channelId: t,
@@ -59,18 +59,18 @@ function C(e) {
             text: E.intl.string(E.t.tC1pvL),
             variant: "primary",
             onClick: () => {
-                (0, a.mMO)(async () => {
+                (0, s.mMO)(async () => {
                     let {
                         default: e
                     } = await n.e("8546").then(n.bind(n, 63865));
                     return n => {
                         let {
                             transitionState: l,
-                            onClose: s
+                            onClose: a
                         } = n;
                         return (0, i.jsx)(e, {
                             transitionState: l,
-                            onClose: s,
+                            onClose: a,
                             channelId: t,
                             warningId: C,
                             senderId: x,
@@ -86,10 +86,10 @@ function C(e) {
                                 description: E.intl.string(E.t.w2ve0t),
                                 buttonText: E.intl.string(E.t.ftIK2A),
                                 onButtonPress: () => {
-                                    T(A.Wm.USER_MODAL_MUTE), s()
+                                    T(A.Wm.USER_MODAL_MUTE), a()
                                 }
                             }, "likely-ato-mute")],
-                            learnMore: (0, i.jsx)(a.DUT, {
+                            learnMore: (0, i.jsx)(s.DUT, {
                                 onClick: () => (0, A._$)({
                                     channelId: t,
                                     warningId: C,
@@ -97,7 +97,7 @@ function C(e) {
                                     warningType: m._j.LIKELY_ATO,
                                     cta: A.Wm.USER_MODAL_LEARN_MORE
                                 }),
-                                children: (0, i.jsx)(a.Heading, {
+                                children: (0, i.jsx)(s.Heading, {
                                     variant: "heading-sm/medium",
                                     color: "text-link",
                                     children: E.intl.format(E.t.UkH122, {

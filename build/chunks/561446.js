@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(311907),
-    s = n(990078),
-    a = n(397927),
+    a = n(990078),
+    s = n(397927),
     r = n(58736),
     o = n(657331),
     c = n(498642),
@@ -46,10 +46,10 @@ function E(e) {
     } = (0, g.W)(x?.guildId, x?.userId, x?.joinRequestId);
     return null != x && x.applicationStatus === A.B5.SUBMITTED && S ? (0, i.jsxs)("div", {
         className: f.U,
-        children: [(0, i.jsx)(s.m, {
+        children: [(0, i.jsx)(a.m, {
             text: _.intl.string(_.t.cdPGbE),
             shouldShow: N,
-            children: (0, i.jsx)(a.Button, {
+            children: (0, i.jsx)(s.Button, {
                 variant: "active",
                 size: "sm",
                 text: _.intl.string(_.t.BzjDQJ),
@@ -57,13 +57,13 @@ function E(e) {
                 onClick: y,
                 disabled: N
             })
-        }), (0, i.jsx)(a.Button, {
+        }), (0, i.jsx)(s.Button, {
             variant: "critical-primary",
             size: "sm",
             text: _.intl.string(_.t.hDtbsz),
             onClick: b,
             disabled: j || x.applicationStatus !== A.B5.SUBMITTED
-        }), n && (0, i.jsx)(a.Button, {
+        }), n && (0, i.jsx)(s.Button, {
             onClick: () => {
                 (0, o.openUserProfileModal)({
                     userId: x.userId,

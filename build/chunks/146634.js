@@ -1,6 +1,6 @@
 /** chunk id: 146634 params = (module,exports,require) **/
 s.d(e, {
-    A: () => p
+    A: () => u
 }), s(321073);
 var n = s(627968),
     i = s(64700),
@@ -8,9 +8,10 @@ var n = s(627968),
     l = s(732955),
     r = s(397927),
     o = s(652215),
-    h = s(985018),
-    d = s(31008);
-class g extends i.PureComponent {
+    h = s(650583),
+    d = s(985018),
+    g = s(31008);
+class p extends i.PureComponent {
     static defaultProps = {
         canResend: !1,
         canChange: !0,
@@ -39,7 +40,7 @@ class g extends i.PureComponent {
             password: i
         } = this.state;
         if (!t) return [{
-            text: h.intl.string(h.t.v740sh),
+            text: d.intl.string(d.t.v740sh),
             variant: "primary",
             onClick: this.handleVerify,
             loading: s,
@@ -47,11 +48,11 @@ class g extends i.PureComponent {
         }];
         let a = [{
             variant: "secondary",
-            text: h.intl.string(h.t.WnX4J2),
+            text: d.intl.string(d.t.WnX4J2),
             onClick: this.handleResendEmail
         }];
         return e && a.push({
-            text: h.intl.string(h.t.Vm8akB),
+            text: d.intl.string(d.t.Vm8akB),
             variant: "primary",
             onClick: this.handleChangeEmailClick
         }), a
@@ -72,14 +73,14 @@ class g extends i.PureComponent {
             children: (0, n.jsxs)(r.BJc, {
                 gap: 20,
                 children: [(0, n.jsx)(r.ksK, {
-                    label: h.intl.string(h.t.dI4d4S),
+                    label: d.intl.string(d.t.dI4d4S),
                     value: s,
                     error: t,
                     onChange: this.handleEmailChange,
                     onKeyPress: this.handleKeyPress,
                     autoFocus: !0
                 }), (0, n.jsx)(r.ksK, {
-                    label: h.intl.string(h.t["CIGa+7"]),
+                    label: d.intl.string(d.t["CIGa+7"]),
                     type: "password",
                     value: i,
                     error: e,
@@ -98,15 +99,15 @@ class g extends i.PureComponent {
                 canResend: i,
                 transitionState: a
             } = this.props;
-        return t = e && null != s ? h.intl.format(h.t.JqLgQL, {
+        return t = e && null != s ? d.intl.format(d.t.JqLgQL, {
             email: s
-        }) : i ? h.intl.string(h.t.tSXg8O) : h.intl.string(h.t.KW5DEh), (0, n.jsx)(l.kpP, {
+        }) : i ? d.intl.string(d.t.tSXg8O) : d.intl.string(d.t.KW5DEh), (0, n.jsx)(l.kpP, {
             transitionState: a,
-            title: h.intl.string(h.t["1MPz27"]),
+            title: d.intl.string(d.t["1MPz27"]),
             subtitle: t,
             graphic: {
                 type: "image",
-                src: d.A
+                src: g.A
             },
             onClose: this.props.onClose,
             actions: this.getActions(),
@@ -155,7 +156,7 @@ class g extends i.PureComponent {
             email: e,
             password: s
         } = this.state;
-        13 === t.which && e.length > 0 && s.length > 0 && (t.preventDefault(), this.handleVerify())
+        t.key === h.dh.ENTER && e.length > 0 && s.length > 0 && (t.preventDefault(), this.handleVerify())
     }
 }
-let p = g
+let u = p

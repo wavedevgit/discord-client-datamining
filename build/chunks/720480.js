@@ -1,16 +1,16 @@
 /** chunk id: 720480 params = (module,exports,require) **/
 n.d(t, {
     A: () => c,
-    L: () => a.A
+    L: () => s.A
 });
 var i = n(627968);
 n(64700);
 var l = n(492917),
-    s = n(989985),
-    a = n(316465),
+    a = n(989985),
+    s = n(316465),
     r = n(831502),
     o = n(985018);
-let c = () => (0, i.jsx)(s._, {
+let c = () => (0, i.jsx)(a._, {
     bannerIcon: (0, i.jsx)(l.Mwn, {
         alt: "",
         width: 80,

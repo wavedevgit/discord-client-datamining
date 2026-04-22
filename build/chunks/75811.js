@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(397927),
     o = n(686052);
 
@@ -13,7 +13,7 @@ function c(e) {
     let {
         chunks: t,
         columns: n,
-        className: s
+        className: a
     } = e, c = l.useMemo(() => ({
         "--secure-frames-columns": n
     }), [n]);
@@ -22,7 +22,7 @@ function c(e) {
         children: (0, i.jsx)(r.y$y, {})
     }) : (0, i.jsx)("div", {
         style: c,
-        className: a()(o.aY, s),
+        className: s()(o.aY, a),
         children: t.map((e, t) => (0, i.jsxs)(l.Fragment, {
             children: [t > 0 && t % n == 0 && (0, i.jsx)("hr", {
                 className: o.yF

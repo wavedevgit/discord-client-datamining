@@ -2,8 +2,8 @@
 i.d(e, {
     A: () => o
 });
-var a = i(110259),
-    l = i(933681),
+var l = i(110259),
+    a = i(933681),
     n = i(73153),
     r = i(499785),
     s = i(652215);
@@ -15,11 +15,11 @@ let o = {
             school: e
         },
         trackedActionData: {
-            event: a.NetworkActionNames.HUB_WAITLIST_SIGNUP,
+            event: l.NetworkActionNames.HUB_WAITLIST_SIGNUP,
             properties: t => {
                 let e = !1,
                     i = t?.body?.email_domain;
-                return null != i && (e = -1 !== i.split(".").indexOf("edu")), (0, l.e0)({
+                return null != i && (e = -1 !== i.split(".").indexOf("edu")), (0, a.e0)({
                     is_edu_email: e
                 })
             }
@@ -35,10 +35,10 @@ let o = {
             use_verification_code: !0
         },
         trackedActionData: {
-            event: a.NetworkActionNames.HUB_EMAIL_VERIFY_SEND,
+            event: l.NetworkActionNames.HUB_EMAIL_VERIFY_SEND,
             properties: t => {
                 let e = t?.body?.has_matching_guild;
-                return (0, l.e0)({
+                return (0, a.e0)({
                     has_matching_guild: e
                 })
             }
@@ -53,7 +53,7 @@ let o = {
                         token: t
                     },
                     trackedActionData: {
-                        event: a.NetworkActionNames.HUB_EMAIL_VERIFY
+                        event: l.NetworkActionNames.HUB_EMAIL_VERIFY
                     },
                     rejectWithError: !1
                 }),
@@ -71,7 +71,7 @@ let o = {
     },
     async verifyCode(t, e, i) {
         if (null != t) try {
-            let l = await r.A.post({
+            let a = await r.A.post({
                     url: s.Rsh.HUB_EMAIL_VERIFY_CODE,
                     body: {
                         code: t,
@@ -79,15 +79,15 @@ let o = {
                         email: i
                     },
                     trackedActionData: {
-                        event: a.NetworkActionNames.HUB_EMAIL_VERIFY
+                        event: l.NetworkActionNames.HUB_EMAIL_VERIFY
                     },
                     rejectWithError: !1
                 }),
-                o = l.body.guild?.id;
+                o = a.body.guild?.id;
             return n.h.dispatch({
                 type: "HUB_VERIFY_EMAIL_SUCCESS",
                 guildId: o
-            }), l.body
+            }), a.body
         } catch (t) {
             throw n.h.dispatch({
                 type: "HUB_VERIFY_EMAIL_FAILURE",

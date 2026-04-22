@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(311907),
-    s = n(397927),
-    a = n(49229),
+    a = n(397927),
+    s = n(49229),
     r = n(258367),
     o = n(343328),
     c = n(994500),
@@ -29,7 +29,7 @@ function p(e) {
         x = {};
     if (E) {
         let e = f ? g.intl.string(g.t["+KSnWX"]) : g.intl.string(g.t.hvVgAZ);
-        x.message = g.intl.string(g.t.Bt2N7D), x.subtitle = g.intl.string(g.t["n/Vzkw"]), x.buttonText = e, x.buttonIcon = f ? s.tfB : void 0, x.onButtonClick = () => {
+        x.message = g.intl.string(g.t.Bt2N7D), x.subtitle = g.intl.string(g.t["n/Vzkw"]), x.buttonText = e, x.buttonIcon = f ? a.tfB : void 0, x.onButtonClick = () => {
             if (f) {
                 open(A.Do), d.default.track(m.HAw.CHANGE_LOG_CTA_CLICKED, {
                     cta_type: "chat_blocker",
@@ -40,7 +40,7 @@ function p(e) {
             open(u.A.getArticleURL(m.MVz.SYSTEM_DMS))
         }, x.imageSrc = n(388668)
     } else C && (x.message = g.intl.string(g.t["9T6N5/"]), x.buttonText = g.intl.string(g.t.XyHpKH), x.onButtonClick = () => {
-        a.A.unblockUser(t.getRecipientId())
+        s.A.unblockUser(t.getRecipientId())
     });
     return (0, i.jsx)(h.A, {
         ...x,

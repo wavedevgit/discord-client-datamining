@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(661492),
-    a = n(594832),
+    a = n(661492),
+    s = n(594832),
     r = n(146423),
     o = n(121700),
     c = n(662349),
@@ -64,7 +64,7 @@ function f(e) {
         spec: _,
         onClick: b,
         "aria-label": p.intl.formatToPlainString(p.t.ZBB4Ty, {
-            productName: (0, s.TC)(t)
+            productName: (0, a.TC)(t)
         }),
         onHoverOrFocusChange: N,
         children: [(0, i.jsx)(c.A, {
@@ -78,7 +78,7 @@ function f(e) {
             sku: t,
             isCardHovered: v,
             location: "SocialLayerGiftingVoicePanelSkuItemCard",
-            replacedElement: E && !g && f === a.uS.WISHLIST ? (0, i.jsx)(d.n, {
+            replacedElement: E && !g && f === s.uS.WISHLIST ? (0, i.jsx)(d.n, {
                 spec: _,
                 user: n,
                 guildId: C ?? void 0,

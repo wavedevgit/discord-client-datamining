@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(311907),
-    a = n(732955),
+    a = n(311907),
+    s = n(732955),
     r = n(397927),
     o = n(775602),
     c = n(793574),
@@ -28,7 +28,7 @@ function S(e) {
             children: S,
             user: I
         } = e,
-        T = (0, s.bG)([o.A], () => o.A.useReducedMotion),
+        T = (0, a.bG)([o.A], () => o.A.useReducedMotion),
         v = (0, u.Ay)(n) ?? "",
         {
             avatarDecorationSrc: N,
@@ -75,13 +75,13 @@ function S(e) {
             }) : v
         }), (0, i.jsx)(E.j1, {
             children: S
-        }), n.isMultiUserDM() && (0, i.jsxs)(a.e2v, {
+        }), n.isMultiUserDM() && (0, i.jsxs)(s.e2v, {
             className: x.U,
             children: [(0, i.jsx)(_.NE, {
                 channel: n,
                 text: C.intl.string(C.t["6Qgrev"]),
                 icon: r.DpX
-            }), (0, i.jsx)(a.$nd, {
+            }), (0, i.jsx)(s.$nd, {
                 icon: r.R2l,
                 variant: "secondary",
                 text: C.intl.string(C.t["5Q9+/L"]),

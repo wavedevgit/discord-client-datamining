@@ -1,6 +1,6 @@
 /** chunk id: 468691 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => C
 });
 var i = n(627968),
     l = n(64700),
@@ -16,9 +16,10 @@ var i = n(627968),
     _ = n(268387),
     m = n(715671),
     g = n(652215),
-    p = n(985018),
-    E = n(326112);
-class I extends l.Component {
+    p = n(650583),
+    E = n(985018),
+    I = n(326112);
+class f extends l.Component {
     searchBarRef = l.createRef();
     state = {
         focused: !1
@@ -57,11 +58,11 @@ class I extends l.Component {
         } = this;
         if (n || e.ctrlKey || e.altKey || e.metaKey || null == l) return;
         let a = (0, s.BF)(e)?.activeElement;
-        if (!(a !== l.current && (0, s.Cw)(a))) switch (e.which) {
-            case g.Ks6.ESCAPE:
+        if (!(a !== l.current && (0, s.Cw)(a))) switch (e.key) {
+            case p.dh.ESCAPE:
                 e.target !== l.current ? this.reset() : null != l.current && l.current?.blur();
                 break;
-            case g.Ks6.ENTER:
+            case p.dh.ENTER:
                 if (null != t) {
                     e.preventDefault();
                     let n = i.find(e => e.key === t);
@@ -79,9 +80,9 @@ class I extends l.Component {
                     })
                 }
                 break;
-            case g.Ks6.ARROW_DOWN:
-            case g.Ks6.ARROW_UP:
-                e.preventDefault(), e.stopPropagation(), this.updateActiveRow(e.which === g.Ks6.ARROW_DOWN ? 1 : -1);
+            case p.dh.ARROW_DOWN:
+            case p.dh.ARROW_UP:
+                e.preventDefault(), e.stopPropagation(), this.updateActiveRow(e.key === p.dh.ARROW_DOWN ? 1 : -1);
                 break;
             default:
                 null != l.current && e.target !== l.current && l.current?.focus()
@@ -95,8 +96,8 @@ class I extends l.Component {
         } = this.state;
         return (0, i.jsx)("div", {
             className: r()({
-                [E.sw]: !0,
-                [E.in]: t
+                [I.sw]: !0,
+                [I.in]: t
             }),
             children: (0, i.jsx)(d.IWV, {
                 ref: this.searchBarRef,
@@ -111,16 +112,16 @@ class I extends l.Component {
                     this.reset(), this.focusInput()
                 },
                 query: e,
-                placeholder: p.intl.string(p.t.aSxWSo)
+                placeholder: E.intl.string(E.t.aSxWSo)
             })
         })
     }
 }
 
-function f() {
+function C() {
     let e = (0, o.bG)([A.A], () => A.A.hasLayers()),
         t = (0, d.red)(d.DXt);
-    return (0, i.jsx)(I, {
+    return (0, i.jsx)(f, {
         activeRowKey: (0, o.bG)([_.A], () => _.A.activeRowKey),
         hasModalOpen: t || e,
         filterQuery: (0, o.bG)([h.A], () => h.A.applicationFilterQuery),

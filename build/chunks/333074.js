@@ -1,18 +1,18 @@
 /** chunk id: 333074 params = (module,exports,require) **/
 n.d(t, {
-    E: () => l
+    E: () => i
 });
 var s = n(64700),
     a = n(96337),
-    i = n(518977);
+    l = n(518977);
 
-function l() {
+function i() {
     return s.useMemo(() => {
         let e = new Map(a.A.flatMap(e => {
                 let {
                     alpha2: t,
                     phoneCountryCodes: n
-                } = e, s = (0, i.Gw)(t);
+                } = e, s = (0, l.Gw)(t);
                 return n.map(e => [`${t}-${e}`, {
                     code: e,
                     alpha2: t,

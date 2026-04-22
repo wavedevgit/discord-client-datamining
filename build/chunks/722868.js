@@ -27,8 +27,8 @@ function p(e) {
     } = (0, a.Ay)(), {
         context: v,
         trackUserProfileAction: j
-    } = (0, d.NJ)(), I = (0, m.Ay)(n.id, l), N = (0, i.bG)([r.default], () => r.default.getCurrentUser()?.id === n.id), C = (0, c.X)("useViewUserProfileModalItem");
-    return N && C || I?.guildId == null ? null : x?.guildId == null || x?.private ? x?.guildId != null ? null : (0, t.jsx)(s.Drp, {
+    } = (0, d.NJ)(), I = (0, m.Ay)(n.id, l), N = (0, i.bG)([r.default], () => r.default.getCurrentUser()?.id === n.id), y = (0, c.X)("useViewUserProfileModalItem");
+    return N && y || I?.guildId == null ? null : x?.guildId == null || x?.private ? x?.guildId != null ? null : (0, t.jsx)(s.Drp, {
         id: "view-server-profile",
         label: A.intl.string(A.t.DisZzB),
         subtext: A.intl.formatToPlainString(A.t["mn/nW2"], {

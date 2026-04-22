@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(311907),
     l = n(73153);
-let s = !1,
-    a = {},
+let a = !1,
+    s = {},
     r = new Set,
     o = {};
 
@@ -18,13 +18,13 @@ class d extends i.Ay.Store {
         return r
     }
     getScheduledMessagesForInbox() {
-        return a
+        return s
     }
     getPendingScheduledMessage(e) {
         return o[e]
     }
     get loading() {
-        return s
+        return a
     }
 }
 let u = new d(l.h, {
@@ -33,8 +33,8 @@ let u = new d(l.h, {
             channelId: t,
             scheduledMessageSend: n
         } = e;
-        a = {
-            ...a,
+        s = {
+            ...s,
             [n.scheduledMessageId]: n
         }, o = {
             ...o
@@ -44,8 +44,8 @@ let u = new d(l.h, {
         let {
             scheduledMessageSend: t
         } = e;
-        a = {
-            ...a,
+        s = {
+            ...s,
             [t.scheduledMessageId]: t
         }
     },
@@ -61,9 +61,9 @@ let u = new d(l.h, {
             scheduledMessageId: t
         } = e;
         if (!r.has(t)) return !1;
-        (r = new Set(r)).delete(t), a = {
-            ...a
-        }, delete a[t]
+        (r = new Set(r)).delete(t), s = {
+            ...s
+        }, delete s[t]
     },
     SCHEDULED_MESSAGES_DELETE_FAILURE: function(e) {
         let {
@@ -74,18 +74,18 @@ let u = new d(l.h, {
     },
     FETCH_SCHEDULED_MESSAGES: function(e) {
         let {} = e;
-        s = !0
+        a = !0
     },
     FETCH_SCHEDULED_MESSAGES_SUCCESS: function(e) {
         let {
             messages: t
         } = e;
-        for (let e of (a = {}, t)) a[e.scheduledMessageId] = e;
-        s = !1
+        for (let e of (s = {}, t)) s[e.scheduledMessageId] = e;
+        a = !1
     },
     FETCH_SCHEDULED_MESSAGES_FAILURE: function(e) {
         let {} = e;
-        s = !1
+        a = !1
     },
     CREATE_PENDING_SCHEDULED_MESSAGE: function(e) {
         let {

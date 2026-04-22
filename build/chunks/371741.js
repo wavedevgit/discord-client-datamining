@@ -6,8 +6,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(284009),
     o = n.n(r),
     c = n(837381),
@@ -64,7 +64,7 @@ function X(e) {
         message: {
             messageReference: l
         },
-        compact: s = !1,
+        compact: a = !1,
         className: r
     } = e;
     o()(n.type === J.lAJ.THREAD_STARTER_MESSAGE, "Message must be a thread starter message");
@@ -82,10 +82,10 @@ function X(e) {
     }) : (0, i.jsx)(M.A, {
         ...u,
         id: t,
-        compact: s,
-        className: a()(r, {
+        compact: a,
+        className: s()(r, {
             [$.iU]: !0,
-            [$.HJ]: !s,
+            [$.HJ]: !a,
             [$.H4]: !0,
             [$._A]: !0
         }),
@@ -110,7 +110,7 @@ function Q(e) {
         id: t,
         message: n,
         message: {
-            id: s,
+            id: a,
             channel_id: r
         },
         channel: {
@@ -139,7 +139,7 @@ function Q(e) {
         groupId: _,
         message: n,
         defaultValue: B
-    }), el = (0, d.bG)([h.A], () => h.A.keyboardModeEnabled), es = B || el && y, ea = es || ei, er = (0, d.bG)([S.A], () => S.A.isDeveloper), {
+    }), el = (0, d.bG)([h.A], () => h.A.keyboardModeEnabled), ea = B || el && y, es = ea || ei, er = (0, d.bG)([S.A], () => S.A.isDeveloper), {
         content: eo,
         hasSpoilerEmbeds: ec,
         hasBailedAst: ed
@@ -152,10 +152,10 @@ function Q(e) {
         allowDevLinks: er,
         previewLinkTarget: !0,
         viewingChannelId: x
-    }), eu = (0, P.A)(s, r, el), eh = (0, j.Ay)(n), em = (0, L.fF)(n, _), eA = (0, L.ZD)(n), eg = (0, i.jsx)(O.x, {
-        value: ea,
+    }), eu = (0, P.A)(a, r, el), eh = (0, j.Ay)(n), em = (0, L.fF)(n, _), eA = (0, L.ZD)(n), eg = (0, i.jsx)(O.x, {
+        value: es,
         children: (0, V.A)(e, eo, !1)
-    }), ep = l.useCallback(() => (0, E.uh)(o, r, s), [o, r, s]), e_ = (0, g.$7)({
+    }), ep = l.useCallback(() => (0, E.uh)(o, r, a), [o, r, a]), e_ = (0, g.$7)({
         guildId: o,
         roleId: eh.iconRoleId
     });
@@ -170,14 +170,14 @@ function Q(e) {
             ...v,
             id: t,
             compact: m,
-            className: a()(A, {
+            className: s()(A, {
                 [$.iU]: !0,
                 [$.HJ]: !m,
                 [$.mK]: n.mentioned,
                 [$.M1]: (0, N.ec)(n),
                 [$.H4]: (0, b.A)(n),
                 [$._A]: n.id === _ || n.type === J.lAJ.REPLY,
-                [$.wH]: es
+                [$.wH]: ea
             }),
             zalgo: !0,
             onKeyDown: eu,
@@ -205,7 +205,7 @@ function Q(e) {
                 channelMessageProps: e,
                 hasSpoilerEmbeds: ec,
                 hasBailedAst: ed,
-                isInteracting: ea,
+                isInteracting: es,
                 renderThreadAccessory: !1,
                 renderSuppressEmbeds: !1,
                 renderReactions: !1,
@@ -224,7 +224,7 @@ function Q(e) {
 }
 let ee = l.memo(function(e) {
     let t, n, {
-        id: s,
+        id: a,
         message: r,
         message: {
             id: E
@@ -243,9 +243,9 @@ let ee = l.memo(function(e) {
     let ei = J.sl8.has(r.type) ? r.messageReference : void 0,
         {
             onFocus: el,
-            ...es
+            ...ea
         } = (0, c.rm)(e.id ?? ""),
-        ea = C.hD.useSetting(),
+        es = C.hD.useSetting(),
         er = C.rs.useSetting(),
         eo = (0, d.bG)([f.A], () => f.A.getMessageByReference(ei)),
         {
@@ -290,7 +290,7 @@ let ee = l.memo(function(e) {
             hasSpoilerEmbeds: eD,
             hasBailedAst: eO
         } = (0, w.A)(r, {
-            hideSimpleEmbedContent: ea && er,
+            hideSimpleEmbedContent: es && er,
             formatInline: !1,
             allowList: ej || eR,
             allowHeading: ej || eR,
@@ -330,14 +330,14 @@ let ee = l.memo(function(e) {
                 right: 4
             },
             children: (0, i.jsx)("li", {
-                id: s,
+                id: a,
                 className: $.Nt,
                 "aria-setsize": -1,
                 style: null != eF ? {
                     backgroundColor: eF
                 } : void 0,
                 children: (0, i.jsx)(M.A, {
-                    ...es,
+                    ...ea,
                     "aria-setsize": -1,
                     "aria-roledescription": q.intl.string(q.t.BAB0yK),
                     "aria-labelledby": eB,
@@ -349,7 +349,7 @@ let ee = l.memo(function(e) {
                     onClick: em,
                     compact: X,
                     contentOnly: en,
-                    className: a()(Q, {
+                    className: s()(Q, {
                         [$.iU]: !0,
                         [$.HJ]: !X,
                         [$.mK]: r.mentioned,
@@ -415,10 +415,10 @@ let ee = l.memo(function(e) {
         });
     return null != eU ? (0, i.jsx)(R.A, {
         flashKey: eU,
-        className: a()({
+        className: s()({
             [$.bB]: !0,
             [$._A]: !X && r.id === et
         }),
         children: eq
-    }, `bg-flash-${s}`) : eq
+    }, `bg-flash-${a}`) : eq
 })

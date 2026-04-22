@@ -1,12 +1,12 @@
 /** chunk id: 533488 params = (module,exports,require) **/
 n.d(t, {
-    _: () => s,
-    d: () => a
+    _: () => a,
+    d: () => s
 });
 var i = n(509381);
 let l = [i.m.VOICE_ISOLATION, i.m.STUDIO, i.m.CUSTOM];
 
-function s(e) {
+function a(e) {
     let {
         location: t
     } = e;
@@ -15,7 +15,7 @@ function s(e) {
     }
 }
 
-function a(e) {
+function s(e) {
     let {
         location: t
     } = e;

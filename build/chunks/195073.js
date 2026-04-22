@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(311907),
-    a = n(732955),
+    a = n(311907),
+    s = n(732955),
     r = n(397927),
     o = n(824552),
     c = n(933958),
@@ -21,7 +21,7 @@ var i = n(627968),
 function f(e) {
     let {
         channel: t
-    } = e, l = (0, s.bG)([m.Ay], () => m.Ay.isChannelMuted(null, t.id));
+    } = e, l = (0, a.bG)([m.Ay], () => m.Ay.isChannelMuted(null, t.id));
     return (0, i.jsx)(r.Button, {
         variant: l ? "secondary" : "critical-primary",
         text: l ? _.intl.string(_.t.YqAjXy) : _.intl.string(_.t.w4m945),
@@ -44,7 +44,7 @@ function E(e) {
         channel: t,
         application: n,
         oauth2Token: l
-    } = e, u = (0, s.bG)([c.Ay], () => c.Ay.getSelfEmbeddedActivities());
+    } = e, u = (0, a.bG)([c.Ay], () => c.Ay.getSelfEmbeddedActivities());
 
     function h() {
         o.A.delete(l.id);
@@ -58,7 +58,7 @@ function E(e) {
         variant: "secondary",
         text: _.intl.string(_.t["5S3sQF"]),
         onClick: () => {
-            (0, r.qfG)(e => (0, i.jsx)(a.aFV, {
+            (0, r.qfG)(e => (0, i.jsx)(s.aFV, {
                 title: _.intl.string(_.t["DT39A+"]),
                 subtitle: _.intl.formatToPlainString(_.t.QWGvxA, {
                     applicationName: n.name
@@ -88,21 +88,21 @@ function C(e) {
     let {
         channel: t,
         user: n
-    } = e, a = (0, u.A)(n?.id ?? p.dJq), {
+    } = e, s = (0, u.A)(n?.id ?? p.dJq), {
         authorizedAppToken: c,
         authorizedAppsFetchState: d
-    } = (0, s.cf)([h.default], () => ({
-        authorizedAppToken: h.default.getNewestTokenForApplication(a?.id),
+    } = (0, a.cf)([h.default], () => ({
+        authorizedAppToken: h.default.getNewestTokenForApplication(s?.id),
         authorizedAppsFetchState: h.default.getFetchState()
     }));
     return (l.useEffect(() => {
         n.bot && d === h.FetchState.NOT_FETCHED && o.A.fetch()
-    }, [n.bot, d]), n.bot && null != a && null != c) ? (0, i.jsxs)(r.ButtonGroup, {
+    }, [n.bot, d]), n.bot && null != s && null != c) ? (0, i.jsxs)(r.ButtonGroup, {
         size: "sm",
         children: [(0, i.jsx)(f, {
             channel: t
         }), (0, i.jsx)(E, {
-            application: a,
+            application: s,
             channel: t,
             oauth2Token: c
         }), (0, i.jsx)(g.A, {

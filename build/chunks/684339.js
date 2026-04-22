@@ -4,8 +4,8 @@ n.d(t, {
     u: () => m
 });
 var i, l = n(499979),
-    s = n(626584),
-    a = n(961350),
+    a = n(626584),
+    s = n(961350),
     r = n(734057),
     o = n(544180),
     c = n(383501),
@@ -18,7 +18,7 @@ class g {
     logger;
     spinnerVisibleStart = null;
     constructor(e) {
-        this.logger = new s.A(e)
+        this.logger = new a.A(e)
     }
     onSpinnerStarted() {
         null == this.spinnerVisibleStart && (this.spinnerVisibleStart = (0, l.tB)())
@@ -26,14 +26,14 @@ class g {
     trackSpinnerDuration(e, t, n) {
         let i;
         if (null == this.spinnerVisibleStart) return;
-        let s = (i = (A.get(n) ?? 0) + 1, A.set(n, i), i),
+        let a = (i = (A.get(n) ?? 0) + 1, A.set(n, i), i),
             m = (0, l.tB)() - this.spinnerVisibleStart;
         if (this.spinnerVisibleStart = null, m < 0) return void this.logger.warn(`spinner duration is negative: ${m} ms
-        [${e}, count for stream: ${s}]`);
+        [${e}, count for stream: ${a}]`);
         this.logger.info(`spinner visible for ${m} ms
-      [${e}, count for stream: ${s}]`);
+      [${e}, count for stream: ${a}]`);
         let g = c.A.getGuildId(),
-            p = d.A.getUserVoiceChannelId(g, a.default.getId()),
+            p = d.A.getUserVoiceChannelId(g, s.default.getId()),
             _ = function(e) {
                 if (null != e) {
                     if (e.isGuildVoice()) return "guild_voice";
@@ -48,7 +48,7 @@ class g {
             duration_video_spinner_visible_ms: m,
             rtc_connection_id: c.A.getRTCConnectionId(),
             media_session_id: c.A.getMediaSessionId(),
-            event_count_for_stream: s,
+            event_count_for_stream: a,
             guild_id: g,
             channel_id: p,
             channel_type: _,

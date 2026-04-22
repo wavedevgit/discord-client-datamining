@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(64700),
     l = n(311907),
-    s = n(554146),
-    a = n(932001),
+    a = n(554146),
+    s = n(932001),
     r = n(153488),
     o = n(197305),
     c = n(498642),
@@ -27,10 +27,10 @@ function E(e) {
         C = (0, l.bG)([o.A], () => o.A.getGuildAffinity(e.guild_id)?.score),
         x = (0, l.bG)([r.A], () => r.A.hasConsented(p.YAq.PERSONALIZATION)),
         S = (0, g.A)(),
-        [I] = (0, a.Wl)(s.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
+        [I] = (0, s.Wl)(a.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
             cooldownDurationMs: 0,
             numTimesToRecur: 3
         }),
-        T = I === s.M.FIRST_BOOSTER_UPSELL_OVERSEER;
+        T = I === a.M.FIRST_BOOSTER_UPSELL_OVERSEER;
     return i.useMemo(() => !(!T || !x || null == C || C <= 17.06 || e.type !== p.rbe.GUILD_TEXT || null == t || A.default.age(t.id) < _ || null == t.premiumSubscriberCount || 0 !== t.premiumSubscriberCount || n < 10 || m?.id == null || A.default.age(m.id) > f) && (E || S), [T, x, e.type, t, n, C, m?.id, E, S])
 }

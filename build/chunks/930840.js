@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(990078),
     o = n(397927),
     c = n(957565),
@@ -16,15 +16,15 @@ function h(e) {
     let {
         chunks: t,
         className: n,
-        onCopy: s,
+        onCopy: a,
         ...h
     } = e, m = l.useMemo(() => t?.join(" "), [t]), [A, g] = l.useState(!1), p = l.useCallback(() => {
         (0, c.C)(m, () => {
-            g(!0), s?.()
+            g(!0), a?.()
         })
-    }, [s, m]), _ = A ? o.yr3 : o.TdU;
+    }, [a, m]), _ = A ? o.yr3 : o.TdU;
     return (0, i.jsx)(o.DUT, {
-        className: a()(u.k, n),
+        className: s()(u.k, n),
         onClick: p,
         children: (0, i.jsx)(r.m, {
             text: A ? d.intl.string(d.t.t5VZ88) : d.intl.string(d.t.OpuAlK),

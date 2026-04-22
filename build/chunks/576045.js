@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(731738),
-    a = n(831062),
+    a = n(731738),
+    s = n(831062),
     r = n(476592),
     o = n(665909);
 
@@ -21,8 +21,8 @@ function c(e) {
         buttons: A
     } = e;
     l.useEffect(() => {
-        a.A.increment({
-            name: s.K.SAFETY_WARNING_VIEW
+        s.A.increment({
+            name: a.K.SAFETY_WARNING_VIEW
         })
     }, []);
     let g = l.useCallback(() => {

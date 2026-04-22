@@ -2,9 +2,9 @@
 i.d(e, {
     A: () => o
 });
-var a = i(627968);
+var l = i(627968);
 i(64700);
-var l = i(158954),
+var a = i(158954),
     n = i(397927),
     r = i(330936),
     s = i(985018);
@@ -14,14 +14,14 @@ let o = t => {
         setStep: i,
         ...o
     } = t;
-    return (0, a.jsx)(l.Modal, {
+    return (0, l.jsx)(a.Modal, {
         ...o,
         title: s.intl.string(s.t.OaloU5),
         subtitle: s.intl.format(s.t.Rs7MXJ, {
             school: e
         }),
         actions: [],
-        children: (0, a.jsx)(n.QWc, {
+        children: (0, l.jsx)(n.QWc, {
             variant: "primary",
             size: "sm",
             text: s.intl.string(s.t.Zg63h4),

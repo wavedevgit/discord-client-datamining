@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(665260),
-    s = n(143413),
-    a = n(907495),
+    a = n(143413),
+    s = n(907495),
     r = n(652215),
     o = n(701628);
 
@@ -27,10 +27,10 @@ function c(e) {
         },
         messageWindow: p
     } = e, _ = h.state === r.cmJ.SENDING, f = h.id === A, E = (0, l.Lt)(h.flags, r.pr7.EPHEMERAL), C = h.state === r.cmJ.SEND_FAILED;
-    return _ || E && !C ? null : (0, i.jsx)(a.A, {
+    return _ || E && !C ? null : (0, i.jsx)(s.A, {
         className: o.Uo,
         innerClassName: o.Mc,
-        isHeader: !g && f && !(0, s.A)(h),
+        isHeader: !g && f && !(0, a.A)(h),
         isReply: !g && h.type === r.lAJ.REPLY && null != h.messageReference,
         channel: m,
         message: h,

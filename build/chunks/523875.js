@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(744682);
-let a = {
+    a = n(744682);
+let s = {
         mute: {
             name: "mute",
             start: 0,
@@ -44,12 +44,12 @@ let a = {
                 let n = "mute" === e ? "hover_unmuted" : "hover_muted";
                 t.current.stopIfPlaying(n)
             }, [e]),
-            u = l.useCallback(e => (0, i.jsx)(s.P, {
+            u = l.useCallback(e => (0, i.jsx)(a.P, {
                 ...e,
                 src: () => n.e("18133").then(n.t.bind(n, 705844, 19)),
                 ref: t,
                 initialAnimation: r.current,
-                markers: a
+                markers: s
             }), []);
         return {
             events: {

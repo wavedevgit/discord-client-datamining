@@ -4,8 +4,8 @@ n.d(t, {
 }), n(393431), n(532706), n(42231), n(232424), n(949626), n(767709), n(65162);
 var i = n(311907),
     l = n(205693),
-    s = n(73153),
-    a = n(652896),
+    a = n(73153),
+    s = n(652896),
     r = n(961350),
     o = n(383501),
     c = n(162605),
@@ -22,7 +22,7 @@ function f() {
     return c.A.getAllActiveStreamKeys().reduce((e, t) => {
         let {
             ownerId: n
-        } = (0, a.Iy)(t), i = !0 === A.get(n), l = g.get(t) !== i;
+        } = (0, s.Iy)(t), i = !0 === A.get(n), l = g.get(t) !== i;
         return g.set(t, i), !!l || e
     }, !1)
 }
@@ -50,9 +50,9 @@ function C(e) {
             let n = new Uint8Array(t),
                 i = h.A.isKeyVerified(e, n) || u.A.isKeyVerified(e, n),
                 l = (0, d.m8)(e, [o.A, c.A]),
-                s = i && !l,
-                a = s !== A.get(e);
-            return A.set(e, s), a
+                a = i && !l,
+                s = a !== A.get(e);
+            return A.set(e, a), s
         }(t),
         i = f(),
         l = E();
@@ -77,7 +77,7 @@ class S extends i.Ay.Store {
         return A.get(e)
     }
 }
-let I = new S(s.h, {
+let I = new S(a.h, {
     CONNECTION_OPEN: x,
     VOICE_CHANNEL_SELECT: function(e) {
         let {
@@ -106,8 +106,8 @@ let I = new S(s.h, {
             userIds: t
         } = e, n = r.default.getId(), i = t.reduce((e, t) => n === t ? e : !!C({
             userId: t
-        }) || e, !1), l = f(), s = E();
-        return i || l || s
+        }) || e, !1), l = f(), a = E();
+        return i || l || a
     },
     SECURE_FRAMES_TRANSIENT_KEY_CREATE: C,
     SECURE_FRAMES_TRANSIENT_KEY_DELETE: C,

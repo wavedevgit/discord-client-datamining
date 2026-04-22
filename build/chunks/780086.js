@@ -2,8 +2,8 @@
 i.d(e, {
     default: () => g
 });
-var a = i(627968),
-    l = i(64700),
+var l = i(627968),
+    a = i(64700),
     n = i(158954),
     r = i(311907),
     s = i(846293),
@@ -20,29 +20,29 @@ function g(t) {
     let {
         inviteCode: e,
         ...i
-    } = t, [g, h] = l.useState(null != e);
-    l.useEffect(() => {
+    } = t, [g, h] = a.useState(null != e);
+    a.useEffect(() => {
         null != e && s.Ay.resolveInvite(e, "Hub").finally(() => h(!1))
     }, [e]);
     let m = (0, r.bG)([o.A], () => null != e ? o.A.getInvite(e) : null),
-        [S, y] = l.useState([E.Di.VERIFY_EMAIL]),
-        [x, f] = l.useState(""),
-        [L, p] = l.useState(""),
-        [C, T] = l.useState(void 0),
-        [v, R] = l.useState([]),
+        [S, y] = a.useState([E.Di.VERIFY_EMAIL]),
+        [x, f] = a.useState(""),
+        [L, p] = a.useState(""),
+        [C, T] = a.useState(void 0),
+        [v, R] = a.useState([]),
         M = t => {
             y(S.concat(t).slice(-4))
         },
         N = S[S.length - 1];
-    if (g) return (0, a.jsx)(n.dWK, {
+    if (g) return (0, l.jsx)(n.dWK, {
         ...i,
-        children: (0, a.jsx)(n.y$y, {
+        children: (0, l.jsx)(n.y$y, {
             className: A.u
         })
     });
     switch (N) {
         case E.Di.VERIFY_EMAIL:
-            return (0, a.jsx)(c.A, {
+            return (0, l.jsx)(c.A, {
                 setGuildsInfo: R,
                 setStep: M,
                 email: x,
@@ -52,7 +52,7 @@ function g(t) {
                 ...i
             });
         case E.Di.SELECT_SCHOOL:
-            return (0, a.jsx)(d.A, {
+            return (0, l.jsx)(d.A, {
                 guildsInfo: v,
                 setStep: M,
                 email: x,
@@ -60,7 +60,7 @@ function g(t) {
                 ...i
             });
         case E.Di.SUBMIT_SCHOOL:
-            return (0, a.jsx)(u.A, {
+            return (0, l.jsx)(u.A, {
                 onBack: () => {
                     S.length > 1 && y(S.slice(0, -1).slice(-4))
                 },
@@ -71,13 +71,13 @@ function g(t) {
                 ...i
             });
         case E.Di.VERIFY_PIN:
-            return (0, a.jsx)(_.A, {
+            return (0, l.jsx)(_.A, {
                 email: x,
                 guildId: C,
                 ...i
             });
         case E.Di.EMAIL_WAITLIST:
-            return (0, a.jsx)(I.A, {
+            return (0, l.jsx)(I.A, {
                 setStep: M,
                 school: L,
                 ...i

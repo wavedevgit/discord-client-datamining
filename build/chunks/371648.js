@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(517738),
     o = n(837381),
     c = n(311907),
@@ -50,7 +50,7 @@ var i = n(627968),
 let J = (0, r.animated)(d.fKU),
     q = l.memo(function(e) {
         var t;
-        let n, s, r, {
+        let n, a, r, {
                 className: h,
                 messageGroupSpacing: g,
                 scrollerClassName: p,
@@ -105,8 +105,8 @@ let J = (0, r.animated)(d.fKU),
             ei = (0, c.bG)([S.A], () => L.A.can(K.xBc.READ_MESSAGE_HISTORY, f) ? null : S.A.getViewingRolesTimestamp(f.getGuildId())),
             {
                 channelStreamMarkup: el,
-                newMessagesBar: es,
-                jumpToPresentBar: ea,
+                newMessagesBar: ea,
+                jumpToPresentBar: es,
                 forumPostActionBar: er,
                 safetyWarningBanner: eo
             } = (0, W.A)({
@@ -130,7 +130,7 @@ let J = (0, r.animated)(d.fKU),
                 },
                 jumpBarClassName: w
             });
-        t = et.ref, n = l.useCallback(() => t.current?.scrollToBottom(), [t]), s = l.useCallback(() => t.current?.scrollPageUp({
+        t = et.ref, n = l.useCallback(() => t.current?.scrollToBottom(), [t]), a = l.useCallback(() => t.current?.scrollPageUp({
             animate: !A.A.useReducedMotion
         }), [t]), r = l.useCallback(() => t.current?.scrollPageDown({
             animate: !A.A.useReducedMotion
@@ -139,7 +139,7 @@ let J = (0, r.animated)(d.fKU),
             handler: n
         }), (0, k.Vo)({
             event: K.jej.SCROLL_PAGE_UP,
-            handler: s
+            handler: a
         }), (0, k.Vo)({
             event: K.jej.SCROLL_PAGE_DOWN,
             handler: r
@@ -161,11 +161,11 @@ let J = (0, r.animated)(d.fKU),
         return (0, i.jsxs)(o.hD, {
             navigator: en,
             children: [null != eo && eo, (0, i.jsxs)("div", {
-                className: a()(Y.Og, h, `group-spacing-${g}`),
-                children: [null == eo && es, (0, i.jsxs)(J, {
+                className: s()(Y.Og, h, `group-spacing-${g}`),
+                children: [null == eo && ea, (0, i.jsxs)(J, {
                     ref: eh,
                     customTheme: !0,
-                    className: a()(p, Y.XG, em ? eg : void 0),
+                    className: s()(p, Y.XG, em ? eg : void 0),
                     contentClassName: Y.gT,
                     onResize: et.handleResize,
                     onScroll: et.handleScroll,
@@ -175,7 +175,7 @@ let J = (0, r.animated)(d.fKU),
                     tabIndex: -1,
                     role: "group",
                     children: [er, (0, i.jsxs)("ol", {
-                        className: a()(Y.bv, {
+                        className: s()(Y.bv, {
                             [Y.FD]: f.isModeratorReportChannel()
                         }),
                         "aria-label": z.intl.formatToPlainString(z.t.XarRiL, {
@@ -188,7 +188,7 @@ let J = (0, r.animated)(d.fKU),
                             "aria-hidden": !0,
                             children: z.intl.string(z.t["Spb3s/"])
                         }), el, (0, i.jsx)("div", {
-                            className: a()({
+                            className: s()({
                                 [Y.lB]: !O,
                                 [Y.Ie]: 0 === E.length && !E.loadingMore,
                                 [Y.Fb]: 1 === E.length && !E.loadingMore && f.isForumPost() && E.first()?.isFirstMessageInForumPost(f)
@@ -197,7 +197,7 @@ let J = (0, r.animated)(d.fKU),
                     })]
                 }), em ? null : (0, i.jsx)("div", {
                     className: eA
-                }), ea]
+                }), es]
             })]
         })
     }, (e, t) => null != e.isHidden && null != t.isHidden && e.isHidden && t.isHidden),
@@ -205,8 +205,8 @@ let J = (0, r.animated)(d.fKU),
         let {
             channel: t,
             showingQuarantineBanner: n,
-            hideSummaries: s = !1,
-            forceCompact: a = !1,
+            hideSummaries: a = !1,
+            forceCompact: s = !1,
             forceCozy: r = !1,
             typingGradient: o = !1,
             ...d
@@ -269,9 +269,9 @@ let J = (0, r.animated)(d.fKU),
         } = function(e) {
             var t;
             let n, i = (0, c.bG)([M.A], () => M.A.getMessages(e.id), [e.id]),
-                s = (0, c.bG)([D.Ay], () => D.Ay.getOldestUnreadMessageId(e.id) ?? null, [e.id]),
+                a = (0, c.bG)([D.Ay], () => D.Ay.getOldestUnreadMessageId(e.id) ?? null, [e.id]),
                 {
-                    enabled: a
+                    enabled: s
                 } = x.A.useExperiment({
                     location: "41de6d_1"
                 }, {
@@ -294,16 +294,16 @@ let J = (0, r.animated)(d.fKU),
             let I = l.useMemo(() => (0, U.A)({
                 channel: e,
                 messages: i,
-                oldestUnreadMessageId: s,
-                treatSpam: a && !r,
+                oldestUnreadMessageId: a,
+                treatSpam: s && !r,
                 summaries: u,
                 selectedSummary: m,
                 selectedConversation: _
-            }), [i, e, s, a, u, m, _, S, r]);
+            }), [i, e, a, s, u, m, _, S, r]);
             return {
                 messages: i,
                 channelStream: I,
-                oldestUnreadMessageId: s,
+                oldestUnreadMessageId: a,
                 editingMessageId: (0, c.bG)([j.A], () => j.A.getEditingMessage(e.id)?.id)
             }
         }(t);
@@ -315,7 +315,7 @@ let J = (0, r.animated)(d.fKU),
                     messageGroupSpacing: S,
                     showNewMessagesBar: !0,
                     channel: t,
-                    messageDisplayCompact: !r && (a || b),
+                    messageDisplayCompact: !r && (s || b),
                     messages: F,
                     channelStream: H,
                     permissionVersion: m,
@@ -327,7 +327,7 @@ let J = (0, r.animated)(d.fKU),
                     fontSize: N,
                     keyboardModeEnabled: G,
                     showingQuarantineBanner: n,
-                    hideSummaries: s,
+                    hideSummaries: a,
                     typingGradient: o
                 })
             })

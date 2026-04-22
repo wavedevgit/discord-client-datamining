@@ -1,6 +1,6 @@
 /** chunk id: 510059 params = (module,exports,require) **/
 l.d(n, {
-    A: () => y
+    A: () => C
 });
 var t = l(627968);
 l(64700);
@@ -28,7 +28,7 @@ function I(e) {
         locale: l,
         userId: i
     } = e, s = n.metadata ?? {}, a = (0, m.An)(s[h.pK.CREATED_AT], l), p = d.A.get((0, u.ML)(n.type));
-    return (0, t.jsx)(C, {
+    return (0, t.jsx)(y, {
         renderAccountName: () => {
             let e = p?.getPlatformUserUrl?.(n);
             return null == e ? (0, t.jsx)(r.m, {
@@ -89,7 +89,7 @@ function N(e) {
         id: i.id,
         icon: i.icon
     });
-    return (0, t.jsx)(C, {
+    return (0, t.jsx)(y, {
         renderAccountName: () => (0, t.jsx)(r.m, {
             overflowOnly: !0,
             text: l.profile.username,
@@ -107,7 +107,7 @@ function N(e) {
     })
 }
 
-function C(e) {
+function y(e) {
     let {
         renderAccountName: n,
         renderMetadata: l,
@@ -147,7 +147,7 @@ function C(e) {
     })
 }
 
-function y(e) {
+function C(e) {
     let {
         connections: n,
         applicationIdentities: l,

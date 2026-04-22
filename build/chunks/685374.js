@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     l = n(64700),
-    s = n(158954),
-    a = n(311907),
+    a = n(158954),
+    s = n(311907),
     r = n(397927),
     o = n(702805),
     c = n(198982),
@@ -26,14 +26,14 @@ function S(e) {
     let {
         channelId: t,
         ...n
-    } = e, s = (0, a.bG)([h.A], () => h.A.getChannel(t), [t]), r = (0, a.bG)([m.A], () => m.A.getGuild(s?.getGuildId()));
+    } = e, a = (0, s.bG)([h.A], () => h.A.getChannel(t), [t]), r = (0, s.bG)([m.A], () => m.A.getGuild(a?.getGuildId()));
     return (l.useEffect(() => {
         A.default.track(E.HAw.OPEN_MODAL, {
             type: "Grant Channel Access"
         })
-    }, []), null == s || null == r) ? null : (0, i.jsx)(I, {
+    }, []), null == a || null == r) ? null : (0, i.jsx)(I, {
         guild: r,
-        channel: s,
+        channel: a,
         ...n
     })
 }
@@ -42,7 +42,7 @@ function I(e) {
     let {
         guild: t,
         channel: n,
-        onClose: a,
+        onClose: s,
         newChannel: h,
         inSettings: m,
         ...A
@@ -55,7 +55,7 @@ function I(e) {
         members: L
     }), P = h && 0 === Object.keys(I).length;
     async function k() {
-        if (null == n || 0 === Object.keys(I).length) return void a();
+        if (null == n || 0 === Object.keys(I).length) return void s();
         N(!0);
         try {
             var e, t, i;
@@ -65,7 +65,7 @@ function I(e) {
                     row: n
                 } = t;
                 null != n.id && "" !== n.id && (n.rowType === f.T6.ROLE ? l.push((0, g.we)(n.id, e.type)) : n.rowType === f.T6.MEMBER && l.push((0, g.n3)(n.id, e.type)))
-            }), (0, o.R$)(e.id, l, i)), a(), N(!1)
+            }), (0, o.R$)(e.id, l, i)), s(), N(!1)
         } catch (t) {
             let e = new c.LG(t);
             N(!1), b(e)
@@ -81,10 +81,10 @@ function I(e) {
         roles: M,
         members: L,
         getRichTag: D,
-        children: (0, i.jsx)(s.Modal, {
+        children: (0, i.jsx)(a.Modal, {
             ...A,
             title: C.intl.string(C.t.dMJ3Y6),
-            onClose: a,
+            onClose: s,
             input: (0, i.jsxs)("div", {
                 children: [(0, i.jsxs)(r.Text, {
                     className: x.HA,
@@ -124,11 +124,11 @@ function I(e) {
             actions: P ? [{
                 variant: "secondary",
                 text: C.intl.string(C.t.u46sxe),
-                onClick: a
+                onClick: s
             }] : [{
                 variant: "secondary",
                 text: C.intl.string(C.t["ETE/oC"]),
-                onClick: a
+                onClick: s
             }, {
                 variant: "primary",
                 text: C.intl.string(C.t.i4jeWR),

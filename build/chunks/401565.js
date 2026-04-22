@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(311907),
     l = n(73153),
-    s = n(141468),
-    a = n(287809),
+    a = n(141468),
+    s = n(287809),
     r = n(380335),
     o = n(157550);
 let c = {},
@@ -18,7 +18,7 @@ function u(e) {
 function h(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
     if (!u(e) || null != t && e !== t?.channel_id) return;
-    let i = null == t ? null : (0, s.rh)(t);
+    let i = null == t ? null : (0, a.rh)(t);
     c[e] = {
         loaded: !0,
         error: n,
@@ -28,7 +28,7 @@ function h(e, t) {
 class m extends i.Ay.Store {
     static displayName = "MessageRequestPreviewStore";
     initialize() {
-        this.waitFor(r.A, o.A, a.default)
+        this.waitFor(r.A, o.A, s.default)
     }
     shouldLoadMessageRequestPreview(e) {
         return !d.has(e)
@@ -74,7 +74,7 @@ let A = new m(l.h, {
         if (null == n || null == n.message) return !1;
         c[t] = {
             ...n,
-            message: (0, s.IU)(n.message, e.message)
+            message: (0, a.IU)(n.message, e.message)
         }
     },
     MESSAGE_DELETE: function(e) {

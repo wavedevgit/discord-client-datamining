@@ -1,17 +1,17 @@
 /** chunk id: 515258 params = (module,exports,require) **/
 n.d(t, {
-    default: () => u
+    default: () => R
 });
 var s = n(627968),
     a = n(64700),
-    i = n(110259),
-    l = n(158954),
+    l = n(110259),
+    i = n(158954),
     o = n(397927),
     r = n(13008),
     E = n(457570),
     d = n(985018),
-    c = n(762995);
-class h extends a.PureComponent {
+    u = n(762995);
+class c extends a.PureComponent {
     constructor(e) {
         super(e), this.state = {
             phone: ""
@@ -24,9 +24,9 @@ class h extends a.PureComponent {
     };
     render() {
         let e, t, n, a, {
-                error: h,
-                working: u,
-                transitionState: R,
+                error: c,
+                working: R,
+                transitionState: h,
                 validPhone: I,
                 layerContext: p
             } = this.props,
@@ -40,7 +40,7 @@ class h extends a.PureComponent {
         })), I ? (n = (0, s.jsx)(o.D0$, {
             label: d.intl.string(d.t.Xclkxp),
             hideLabel: !0,
-            errorMessage: h ?? void 0,
+            errorMessage: c ?? void 0,
             children: (0, s.jsx)(r.A, {
                 onSubmit: this.handleVerifyPhone
             })
@@ -48,20 +48,20 @@ class h extends a.PureComponent {
             variant: "secondary",
             text: d.intl.string(d.t["5b60gi"]),
             onClick: this.handleResendCode,
-            loading: u
+            loading: R
         }]) : (n = (0, s.jsx)(E.A, {
             label: d.intl.string(d.t["64bX0M"]),
-            errorMessage: h ?? void 0,
-            className: c.ZZ,
+            errorMessage: c ?? void 0,
+            className: u.ZZ,
             onChange: this.handlePhoneChange,
-            submitting: u,
+            submitting: R,
             layerContext: p
         }), f = [{
             text: d.intl.string(d.t.TXNS7S),
             disabled: "" === _,
-            loading: u,
+            loading: R,
             onClick: this.handleAddPhone
-        }]), a = I ? d.intl.string(d.t.xDBSN9) : d.intl.string(d.t.hY8QTR), (0, s.jsx)(l.Modal, {
+        }]), a = I ? d.intl.string(d.t.xDBSN9) : d.intl.string(d.t.hY8QTR), (0, s.jsx)(i.Modal, {
             size: I ? "sm" : "md",
             title: a,
             subtitle: e,
@@ -69,10 +69,10 @@ class h extends a.PureComponent {
             onClose: this.props.onClose,
             trackingProps: {
                 impression: {
-                    impressionName: i.ImpressionNames.USER_VERIFY_PHONE
+                    impressionName: l.ImpressionNames.USER_VERIFY_PHONE
                 }
             },
-            transitionState: R,
+            transitionState: h,
             children: (0, s.jsxs)(o.BJc, {
                 gap: 8,
                 children: [n, t]
@@ -100,4 +100,4 @@ class h extends a.PureComponent {
         e?.(this.state.phone)
     }
 }
-let u = h
+let R = c

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(451988),
     o = n(765671),
     c = n(964486),
@@ -23,7 +23,7 @@ let p = l.memo(function(e) {
         ...t
     } = e, {
         streamId: n,
-        onResize: s,
+        onResize: a,
         wrapperClassName: p
     } = t, {
         onActive: _
@@ -43,8 +43,8 @@ let p = l.memo(function(e) {
         doZoom: R,
         clampPanOffset: M
     } = l.useContext(m.e9), [L, D] = l.useState(null), [O, P] = l.useState(null), [k, w] = l.useState(0), [U, G] = l.useState(null), [F, B] = l.useState(null), [H, V] = l.useState(!1), W = l.useRef(new r.Ep), K = l.useRef(new r.Ep), z = l.useRef(null), Y = T > E, J = l.useCallback(e => {
-        e.width > 0 && e.height > 0 && b(e.width / e.height), s?.(e)
-    }, [s, b]), q = l.useCallback(e => {
+        e.width > 0 && e.height > 0 && b(e.width / e.height), a?.(e)
+    }, [a, b]), q = l.useCallback(e => {
         if (null == j.current) return m.qd;
         let t = j.current.getBoundingClientRect();
         return {
@@ -102,16 +102,16 @@ let p = l.memo(function(e) {
         }
         let {
             width: l,
-            height: s
+            height: a
         } = i;
-        1 > Math.abs(t - l) && 1 > Math.abs(n - s) || (V(!0), I(e => {
+        1 > Math.abs(t - l) && 1 > Math.abs(n - a) || (V(!0), I(e => {
             let i = l * (T - 1) / 2,
-                a = s * (T - 1) / 2,
+                s = a * (T - 1) / 2,
                 r = t * (T - 1) / 2,
                 o = n * (T - 1) / 2;
             return M({
                 x: (0 !== i ? e.x / i : 0) * r,
-                y: (0 !== a ? e.y / a : 0) * o
+                y: (0 !== s ? e.y / s : 0) * o
             })
         }), z.current = {
             width: t,
@@ -135,7 +135,7 @@ let p = l.memo(function(e) {
     }, [M, C, H, v, y, S, T]);
     return (0, i.jsx)("div", {
         ref: j,
-        className: a()(A.iE, p, {
+        className: s()(A.iE, p, {
             [A.rc]: f && Y,
             [A.d$]: C
         }),
@@ -146,7 +146,7 @@ let p = l.memo(function(e) {
         onWheel: et,
         onClick: Q,
         children: null != n && (0, i.jsx)("div", {
-            className: a()(A.j, A.L2),
+            className: s()(A.j, A.L2),
             style: en,
             children: (0, i.jsx)(h.A, {
                 ...t,

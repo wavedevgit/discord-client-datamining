@@ -4,20 +4,20 @@ n.d(t, {
 });
 var i = n(64700),
     l = n(311907),
-    s = n(290863),
-    a = n(240248),
+    a = n(290863),
+    s = n(240248),
     r = n(832163),
     o = n(533562);
 
 function c(e) {
     var t;
-    let n, c, u = (t = i.useMemo(() => null != e ? [e] : [], [e]), n = (0, o.W)(), c = (0, l.bG)([r.A], () => r.A.getDetectableIdsToApplicationIds()), (0, l.bG)([s.A], () => null != n ? t.reduce((e, t) => ({
+    let n, c, u = (t = i.useMemo(() => null != e ? [e] : [], [e]), n = (0, o.W)(), c = (0, l.bG)([r.A], () => r.A.getDetectableIdsToApplicationIds()), (0, l.bG)([a.A], () => null != n ? t.reduce((e, t) => ({
         ...e,
         [t]: n
     }), {}) : t.reduce((e, t) => {
-        for (let n of s.A.getActivities(t)) {
+        for (let n of a.A.getActivities(t)) {
             let i = n.application_id;
-            if (null != i && !(0, a.uJ)(c[i])) return {
+            if (null != i && !(0, s.uJ)(c[i])) return {
                 ...e,
                 [t]: c[i]
             }

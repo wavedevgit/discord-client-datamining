@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    a = n(503698),
+    s = n.n(a),
     r = n(311907),
     o = n(397927),
     c = n(915089),
@@ -53,9 +53,9 @@ function b(e) {
         lobbyId: t,
         connectionTypeText: n,
         closePopout: l
-    } = e, s = y(t);
+    } = e, a = y(t);
     return (0, i.jsx)(f.A, {
-        ...s,
+        ...a,
         closePopout: l,
         connectionTypeText: n
     })
@@ -66,9 +66,9 @@ function j(e) {
         lobbyId: t,
         connectionTypeText: n,
         closePopout: l
-    } = e, s = y(t);
+    } = e, a = y(t);
     return (0, i.jsx)(p.Q, {
-        ...s,
+        ...a,
         closePopout: l,
         connectionTypeText: n
     })
@@ -103,17 +103,17 @@ function L(e) {
         channelId: t,
         isOverlay: n,
         lobbyId: l,
-        closePopout: s
-    } = e, a = (0, g.k)({
+        closePopout: a
+    } = e, s = (0, g.k)({
         channelId: t
     }) ? S.intl.string(S.t["3BogKe"]) : S.intl.string(S.t.ETIVvg);
     return n ? (0, i.jsx)(b, {
         lobbyId: l,
-        closePopout: s,
-        connectionTypeText: a
+        closePopout: a,
+        connectionTypeText: s
     }) : (0, i.jsx)(R, {
-        closePopout: s,
-        connectionTypeText: a
+        closePopout: a,
+        connectionTypeText: s
     })
 }
 
@@ -122,22 +122,22 @@ function D(e) {
         channelId: t,
         isOverlay: n,
         lobbyId: l,
-        closePopout: s
-    } = e, a = (0, g.k)({
+        closePopout: a
+    } = e, s = (0, g.k)({
         channelId: t
     }) ? S.intl.string(S.t["3BogKe"]) : S.intl.string(S.t.ETIVvg);
     return n ? (0, i.jsx)(j, {
         lobbyId: l,
-        closePopout: s,
-        connectionTypeText: a
+        closePopout: a,
+        connectionTypeText: s
     }) : (0, i.jsx)(M, {
-        closePopout: s,
-        connectionTypeText: a
+        closePopout: a,
+        connectionTypeText: s
     })
 }
 
 function O(e) {
-    let [t, n] = l.useState(x.Rj.RTC_DEBUG_PANEL), s = (0, c.GV)(), r = [{
+    let [t, n] = l.useState(x.Rj.RTC_DEBUG_PANEL), a = (0, c.GV)(), r = [{
         id: x.Rj.RTC_DEBUG_PANEL,
         content: (0, i.jsx)(L, {
             ...e
@@ -158,7 +158,7 @@ function O(e) {
     return l.useEffect(() => {
         d && n(x.Rj.RTC_DEBUG_PANEL)
     }, [d]), (0, i.jsxs)("div", {
-        className: a()(v.popover, T.kL),
+        className: s()(v.popover, T.kL),
         children: [(0, i.jsxs)(o.VQ0, {
             className: T.vR,
             selectedItem: t,
@@ -183,7 +183,7 @@ function O(e) {
                 } = e;
                 return (0, i.jsx)(o.VQ0.Panel, {
                     id: n,
-                    "aria-labelledby": s,
+                    "aria-labelledby": a,
                     className: n !== t ? T._t : void 0,
                     children: l
                 }, n)
@@ -194,8 +194,8 @@ function O(e) {
 
 function P(e) {
     let t = (0, r.bG)([u.A], () => u.A.hasVideo(e.channelId)),
-        [n, s] = l.useState(x.Rj.RTC_DEBUG_PANEL),
-        a = (0, c.GV)(),
+        [n, a] = l.useState(x.Rj.RTC_DEBUG_PANEL),
+        s = (0, c.GV)(),
         d = l.useMemo(() => {
             switch (n) {
                 case x.Rj.RTC_DEBUG_PANEL:
@@ -216,7 +216,7 @@ function P(e) {
     }, [e.channelId, n]);
     let h = (0, A.c)();
     return l.useEffect(() => {
-        h && s(x.Rj.RTC_DEBUG_PANEL)
+        h && a(x.Rj.RTC_DEBUG_PANEL)
     }, [h]), (0, i.jsxs)("div", {
         className: I.kL,
         children: [(0, i.jsx)(o.Heading, {
@@ -229,7 +229,7 @@ function P(e) {
             selectedItem: n,
             type: "top",
             look: "brand",
-            onItemSelect: s,
+            onItemSelect: a,
             children: [(0, i.jsx)(o.VQ0.Item, {
                 id: x.Rj.RTC_DEBUG_PANEL,
                 className: I.YU,
@@ -241,7 +241,7 @@ function P(e) {
             })]
         }), (0, i.jsx)(o.VQ0.Panel, {
             id: n,
-            "aria-labelledby": a,
+            "aria-labelledby": s,
             children: d
         })]
     })
@@ -269,7 +269,7 @@ function w(e) {
     }) ? (0, i.jsx)(O, {
         ...e
     }) : (0, i.jsx)("div", {
-        className: a()(v.popover, T.L3),
+        className: s()(v.popover, T.L3),
         children: (0, i.jsx)(L, {
             ...e
         })

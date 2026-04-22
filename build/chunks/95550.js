@@ -6,9 +6,9 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     l = n(64700),
-    s = n(735438),
-    a = n(989349),
-    r = n.n(a),
+    a = n(735438),
+    s = n(989349),
+    r = n.n(s),
     o = n(158954),
     c = n(311907),
     d = n(421380),
@@ -61,7 +61,7 @@ let et = (0, N.Ld)(),
         let {
             channel: t,
             onClose: n
-        } = e, l = (0, v.Ay)(t) ?? "", s = (0, c.bG)([U.Ay], () => U.Ay.lastMessageId(t.id) ?? t.id);
+        } = e, l = (0, v.Ay)(t) ?? "", a = (0, c.bG)([U.Ay], () => U.Ay.lastMessageId(t.id) ?? t.id);
         return (0, i.jsx)(u.DUT, {
             onClick: () => {
                 (0, R.uh)(Z.ME, t.id), n()
@@ -77,7 +77,7 @@ let et = (0, N.Ld)(),
                     children: l
                 }), (0, i.jsx)("span", {
                     className: ee.Pd,
-                    children: r()(z.default.extractTimestamp(s)).fromNow()
+                    children: r()(z.default.extractTimestamp(a)).fromNow()
                 })]
             })
         })
@@ -87,7 +87,7 @@ let et = (0, N.Ld)(),
             onConfirm: t,
             channelIds: n,
             ...l
-        } = e, s = (0, c.yK)([O.A], () => Array.from(n).map(O.A.getChannel), [n]);
+        } = e, a = (0, c.yK)([O.A], () => Array.from(n).map(O.A.getChannel), [n]);
         return (0, i.jsx)(o.Modal, {
             title: Q.intl.string(Q.t.uFHxNd),
             subtitle: Q.intl.string(Q.t.rIsSqE),
@@ -108,7 +108,7 @@ let et = (0, N.Ld)(),
                 children: Q.intl.string(Q.t.cjE7wH)
             }),
             ...l,
-            children: s.filter(K.Vq).sort((e, t) => {
+            children: a.filter(K.Vq).sort((e, t) => {
                 let n = e.lastMessageId ?? e.id,
                     i = t.lastMessageId ?? t.id;
                 return z.default.compare(i, n)
@@ -287,22 +287,22 @@ class el extends l.PureComponent {
             results: i,
             query: l
         } = this.props, {
-            current: s
+            current: a
         } = this.searchBarRef;
-        if (null == s) return;
-        let a = t;
+        if (null == a) return;
+        let s = t;
         switch (e.key) {
             case X.dh.BACKSPACE:
                 (null == l || 0 === l.length) && n.size > 0 && (e.preventDefault(), e.stopPropagation(), this.handleRemoveTag(n.size - 1));
                 break;
             case X.dh.ARROW_DOWN:
-                e.preventDefault(), e.stopPropagation(), ++a >= i.length && (a = 0), this.handleSelectionChange(a);
+                e.preventDefault(), e.stopPropagation(), ++s >= i.length && (s = 0), this.handleSelectionChange(s);
                 break;
             case X.dh.ARROW_UP:
-                e.preventDefault(), e.stopPropagation(), --a < 0 && (a = i.length - 1), this.handleSelectionChange(a);
+                e.preventDefault(), e.stopPropagation(), --s < 0 && (s = i.length - 1), this.handleSelectionChange(s);
                 break;
             case X.dh.ENTER:
-                e.preventDefault(), e.stopPropagation(), i.length > a && this.handleSelect(a)
+                e.preventDefault(), e.stopPropagation(), i.length > s && this.handleSelect(s)
         }
     }
     renderSearchBar() {
@@ -414,15 +414,15 @@ class el extends l.PureComponent {
         if (t > 0) return null;
         let {
             results: l,
-            selectedUsers: s,
-            selectedRow: a,
+            selectedUsers: a,
+            selectedRow: s,
             hideDiscriminator: r
         } = this.props, o = l[n];
         if (null == o) return null;
         let {
             user: c,
             comparator: d
-        } = o, u = s.has(c.id), h = !u && 0 >= this.getRemaining();
+        } = o, u = a.has(c.id), h = !u && 0 >= this.getRemaining();
         return (0, i.jsx)($.A, {
             row: n,
             user: c,
@@ -430,7 +430,7 @@ class el extends l.PureComponent {
             comparator: d,
             checked: u,
             disabled: h,
-            selected: n === a,
+            selected: n === s,
             onClick: this.handleClick,
             onMouseEnter: this.focusResult,
             "aria-posinset": n + 1,
@@ -449,22 +449,22 @@ class el extends l.PureComponent {
             copied: l
         } = this.state;
         if (null == e || !e.isMultiUserDM() || this.isPartyFull()) return null;
-        let s = null != t ? (0, b.A)(t.code) : "",
-            a = s.length > 0;
+        let a = null != t ? (0, b.A)(t.code) : "",
+            s = a.length > 0;
         return (0, i.jsx)(u.D0$, {
             label: Q.intl.string(Q.t.t3O2BR),
-            helperText: s.length > 0 ? Q.intl.format(Q.t.ZVdJMy, {
+            helperText: a.length > 0 ? Q.intl.format(Q.t.ZVdJMy, {
                 numHours: "24"
             }) : void 0,
             children: (0, i.jsx)(u.e2O, {
                 supportsCopy: V.p5,
                 placeholder: (0, b.A)(Q.intl.string(Q.t.lPVBqP)),
-                value: a ? n ? Q.intl.string(Q.t["6HzNgZ"]) : s : "",
+                value: s ? n ? Q.intl.string(Q.t["6HzNgZ"]) : a : "",
                 buttonColor: d.$n.Colors.BRAND,
-                text: a ? l ? Q.intl.string(Q.t.q30c5i) : Q.intl.string(Q.t.OpuAlK) : Q.intl.string(Q.t.qzxqUf),
+                text: s ? l ? Q.intl.string(Q.t.q30c5i) : Q.intl.string(Q.t.OpuAlK) : Q.intl.string(Q.t.qzxqUf),
                 mode: l ? u.qCr.SUCCESS : u.qCr.DEFAULT,
                 onCopy: () => {
-                    a ? this.handleCopyInvite(s) : this.createInvite()
+                    s ? this.handleCopyInvite(a) : this.createInvite()
                 }
             })
         })
@@ -498,7 +498,7 @@ class el extends l.PureComponent {
         };
         if (this.isPartyFull()) return {};
         if (null == t) return {
-            actionBarInput: n.size > 1 ? (0, i.jsx)(es, {
+            actionBarInput: n.size > 1 ? (0, i.jsx)(ea, {
                 previewIcon: this.state.previewIcon,
                 selectedUsers: n,
                 channelName: this.state.newChannelName,
@@ -743,13 +743,13 @@ class el extends l.PureComponent {
     }
 }
 
-function es(e) {
+function ea(e) {
     let {
         selectedUsers: t,
         channelName: n,
         previewIcon: l,
-        onIconChange: s,
-        onIconRemove: a,
+        onIconChange: a,
+        onIconRemove: s,
         onChange: r
     } = e, {
         analyticsLocations: o
@@ -760,8 +760,8 @@ function es(e) {
             className: ee.r9,
             channel: null,
             previewIcon: l,
-            onIconChange: s,
-            onIconRemove: a,
+            onIconChange: a,
+            onIconRemove: s,
             analyticsLocations: o,
             petite: !0,
             allowRemovingIcon: !1
@@ -780,12 +780,12 @@ function es(e) {
     })
 }
 
-function ea(e) {
+function es(e) {
     let {
         channel: t,
         onComplete: n,
         ...l
-    } = e, s = (0, c.cf)([k.A, P.A, F.A], () => {
+    } = e, a = (0, c.cf)([k.A, P.A, F.A], () => {
         let e;
         return null != t && null != (e = P.A.getInvite(t.id)) && e.isExpired() && (e = null), {
             ...k.A.getState(),
@@ -793,13 +793,13 @@ function ea(e) {
             hideDiscriminator: F.A.hidePersonalInformation,
             hideInstantInvites: F.A.hideInstantInvites
         }
-    }), a = (0, c.bG)([B.default], () => !!B.default.getCurrentUser()?.isStaff() && null != t && !!t.isDM() && t.recipients.every(e => B.default.getUser(e)?.isStaff()), [t]);
+    }), s = (0, c.bG)([B.default], () => !!B.default.getCurrentUser()?.isStaff() && null != t && !!t.isDM() && t.recipients.every(e => B.default.getUser(e)?.isStaff()), [t]);
     return (0, i.jsx)(el, {
         channel: t,
-        isStaffOnlyDM: a,
+        isStaffOnlyDM: s,
         onComplete: n,
         ...l,
-        ...s
+        ...a
     })
 }
 
@@ -807,12 +807,12 @@ function er(e) {
     let {
         channel: t,
         subscribeToGlobalHotkey: n
-    } = e, s = `channel-invite-modal-${t?.id}`, a = (0, u.Ry6)(s), r = l.useCallback(() => (0, u.mMO)(() => Promise.resolve(e => (0, i.jsx)(ea, {
+    } = e, a = `channel-invite-modal-${t?.id}`, s = (0, u.Ry6)(a), r = l.useCallback(() => (0, u.mMO)(() => Promise.resolve(e => (0, i.jsx)(es, {
         ...e,
         channel: t
     })), {
-        modalKey: s
-    }), [t, s]), o = l.useCallback(() => a ? (0, u.OoC)(s) : r(), [a, s, r]);
+        modalKey: a
+    }), [t, a]), o = l.useCallback(() => s ? (0, u.OoC)(a) : r(), [s, a, r]);
     return l.useEffect(() => (n && W._.subscribe(Z.jej.TOGGLE_DM_CREATE, o), () => {
         W._.unsubscribe(Z.jej.TOGGLE_DM_CREATE, o)
     }), [n, o]), (0, C.Ay)(() => {
@@ -828,7 +828,7 @@ function eo(e) {
         channel: t,
         onComplete: n
     } = e, l = t?.id != null ? `channel-invite-modal-${t.id}` : "channel-invite-modal-new";
-    (0, u.mMO)(() => Promise.resolve(e => (0, i.jsx)(ea, {
+    (0, u.mMO)(() => Promise.resolve(e => (0, i.jsx)(es, {
         ...e,
         channel: t,
         onComplete: n
@@ -841,12 +841,12 @@ function ec(e) {
     let {
         channel: t,
         iconClassName: n,
-        className: s,
-        icon: a,
+        className: a,
+        icon: s,
         tooltip: r,
         tooltipPosition: o = "bottom",
         subscribeToGlobalHotkey: d = !1
-    } = e, h = l.useRef(null), m = a ?? (null == t ? u.ggM : u.DpX), {
+    } = e, h = l.useRef(null), m = s ?? (null == t ? u.ggM : u.DpX), {
         showModal: A
     } = er({
         channel: t,
@@ -856,7 +856,7 @@ function ec(e) {
         ref: h,
         onClick: A,
         icon: m,
-        className: s,
+        className: a,
         iconClassName: n,
         tooltip: r,
         tooltipPosition: o
@@ -867,8 +867,8 @@ function ed(e) {
     let {
         channel: t,
         fullWidth: n = !1,
-        text: s,
-        icon: a,
+        text: a,
+        icon: s,
         subscribeToGlobalHotkey: r = !1,
         ...o
     } = e, c = l.useRef(null), {
@@ -882,16 +882,16 @@ function ed(e) {
         onClick: d,
         variant: "primary",
         buttonRef: c,
-        text: s,
-        "aria-label": s,
-        icon: a,
+        text: a,
+        "aria-label": a,
+        icon: s,
         fullWidth: n
     })
 }
 
 function eu(e) {
     let t = eh(e);
-    return new Set((0, s.chain)(O.A.getMutablePrivateChannels()).values().filter(e => (0, D.MK)(e.type)).filter(e => eh(e.recipients) === t).map(e => e.id).value())
+    return new Set((0, a.chain)(O.A.getMutablePrivateChannels()).values().filter(e => (0, D.MK)(e.type)).filter(e => eh(e.recipients) === t).map(e => e.id).value())
 }
 
 function eh(e) {

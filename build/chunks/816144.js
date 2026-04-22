@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(311907),
-    s = n(397927),
-    a = n(47167),
+    a = n(397927),
+    s = n(47167),
     r = n(495273),
     o = n(265869),
     c = n(437774),
@@ -32,7 +32,7 @@ function b(e) {
     let {
         canManageRoles: t,
         channel: n
-    } = e, s = t && (0, r.Ae)(n), a = (0, l.bG)([u.Ay], () => null != n.guild_id && n === u.Ay.getDefaultChannel(n.guild_id), [n]);
+    } = e, a = t && (0, r.Ae)(n), s = (0, l.bG)([u.Ay], () => null != n.guild_id && n === u.Ay.getDefaultChannel(n.guild_id), [n]);
     if ((0, o.A)(n.id)) return null;
     if (n.isForumPost()) return (0, i.jsx)(p.A, {
         channel: n
@@ -40,10 +40,10 @@ function b(e) {
     if (d.Le.has(n.type)) return (0, i.jsx)(x.A, {
         channel: n
     });
-    if (a) return (0, i.jsx)(S.A, {
+    if (s) return (0, i.jsx)(S.A, {
         channel: n
     });
-    if (s) return (0, i.jsx)(E.A, {
+    if (a) return (0, i.jsx)(E.A, {
         channel: n
     });
     return (0, i.jsx)(C.A, {
@@ -55,7 +55,7 @@ function j(e) {
     let {
         channel: t,
         showingBanner: n
-    } = e, r = (0, a.Ay)(t), {
+    } = e, r = (0, s.Ay)(t), {
         type: o
     } = t, d = (0, l.bG)([m.default], () => t.isPrivate() ? m.default.getUser(t.getRecipientId()) : null), u = A.Ay.useUserTag(d), {
         canManageRoles: p,
@@ -71,7 +71,7 @@ function j(e) {
     if (o === T.rbe.DM) return (0, i.jsxs)(f.A, {
         channel: t,
         user: d,
-        children: [null == d || d.isProvisional ? null : (0, i.jsx)(s.Heading, {
+        children: [null == d || d.isProvisional ? null : (0, i.jsx)(a.Heading, {
             variant: "heading-xl/medium",
             className: y.SX,
             children: u
