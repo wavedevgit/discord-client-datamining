@@ -8,7 +8,7 @@ var i = n(627968),
     s = n.n(a),
     r = n(284009),
     o = n.n(r),
-    c = n(208798),
+    c = n(517738),
     d = n(835245),
     u = n(311907),
     h = n(827734),
@@ -206,7 +206,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
         handleOuterClick: e1
     } = (0, V.MD)(b, eT, y.id), {
         handleAutocompleteVisibilityChange: e2
-    } = (0, V.uW)(b, y.id), e3 = (0, V.NO)(eT), e9 = (0, V.Vu)(eH, b, eT), e7 = (0, V.HG)(eT), e6 = (0, V.C)({
+    } = (0, V.uW)(b, y.id), e3 = (0, V.NO)(eT), e7 = (0, V.Vu)(eH, b, eT), e9 = (0, V.HG)(eT), e6 = (0, V.C)({
         editorRef: eT,
         disabled: eR,
         textValue: a,
@@ -435,9 +435,9 @@ let X = l.memo(l.forwardRef(function(e, t) {
             }), e0 ? null : (0, i.jsx)(N.A, {
                 positionTargetRef: eS,
                 type: b,
-                onSelectGIF: e9,
+                onSelectGIF: e7,
                 onSelectEmoji: e3,
-                onSelectKaomoji: e7,
+                onSelectKaomoji: e9,
                 onSelectSticker: e6,
                 channel: y,
                 closeOnModalOuterClick: eA,

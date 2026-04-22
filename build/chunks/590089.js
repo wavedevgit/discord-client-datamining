@@ -1,54 +1,57 @@
 /** chunk id: 590089 params = (module,exports,require) **/
 n.d(t, {
-    U: () => d
+    U: () => o
 });
 var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
     r = n(158954),
-    a = n(397927),
-    o = n(349902);
+    a = n(349902);
 
-function d(e) {
+function o(e) {
     let {
         ref: t,
-        role: n,
-        leadingElement: s,
-        trailingElement: d,
-        title: c,
-        description: u,
+        leadingElement: n,
+        trailingElement: s,
+        title: o,
+        description: d,
+        "aria-label": c,
+        role: u,
         onClick: m,
         style: g
-    } = e;
-    return (0, i.jsxs)(a.DUT, {
-        className: l()(o.EA, {
-            [o.vk]: null != m
-        }),
-        role: n,
-        onClick: m,
-        innerRef: t,
+    } = e, _ = (0, i.jsxs)("div", {
+        className: l()(a.EA, null != m && a.vk),
+        ref: t,
         style: g,
-        children: [null != s && (0, i.jsx)("div", {
-            className: o._y,
-            children: s
+        children: [null != n && (0, i.jsx)("div", {
+            className: a._y,
+            children: n
         }), (0, i.jsxs)("div", {
-            className: o.jw,
+            className: a.jw,
             children: [(0, i.jsx)("div", {
-                className: o.eg,
+                className: a.eg,
                 children: (0, i.jsx)(r.DZT, {
                     variant: "heading-md/medium",
                     color: "text-strong",
-                    children: c
+                    children: o
                 })
-            }), null != u && (0, i.jsx)(r.EYj, {
+            }), null != d && (0, i.jsx)(r.EYj, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
-                children: u
+                children: d
             })]
-        }), null != d && (0, i.jsx)("div", {
-            className: o.EY,
-            children: d
+        }), null != s && (0, i.jsx)("div", {
+            className: a.EY,
+            children: s
         })]
-    })
+    });
+    return null != m ? (0, i.jsx)(r.sqX, {
+        onClick: m,
+        "aria-label": c,
+        buttonProps: null != u ? {
+            role: u
+        } : void 0,
+        children: _
+    }) : _
 }

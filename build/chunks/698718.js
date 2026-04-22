@@ -125,12 +125,12 @@ function e2(e) {
         ...n
     })
 }
-let e3 = l.forwardRef((e, t) => (0, i.jsx)(e9, {
+let e3 = l.forwardRef((e, t) => (0, i.jsx)(e7, {
     ...e,
     ref: t
 }));
 e3.displayName = "ChannelTextAreaForm";
-class e9 extends l.PureComponent {
+class e7 extends l.PureComponent {
     focusEditor() {
         this.editorRef?.focus()
     }
@@ -569,7 +569,7 @@ class e9 extends l.PureComponent {
         })
     }
 }
-class e7 extends l.PureComponent {
+class e9 extends l.PureComponent {
     static getDerivedStateFromProps(e, t) {
         let {
             channel: n
@@ -838,7 +838,7 @@ let e6 = l.memo(function(e) {
     }), o = (0, eu.L)(eD.default.getCurrentUser(), t), [c] = (0, Y.c)(n?.id), d = (0, V.uZ)(n?.id), u = (0, h.bG)([eD.default], () => eD.default.getCurrentUser()), A = (0, h.bG)([ey.Ay], () => null != u && (ey.Ay.getMember(n?.id ?? e$.dJq, u?.id)?.isPending ?? !1)), g = (0, h.bG)([er.A], () => er.A.isEnabled()), _ = (0, ed.A)(t.id), p = (0, q.A)(t.id), E = (0, e_.D)(t.id), C = (0, h.bG)([eC.A], () => eC.A.getAlsoSendToChannel(t.id)), S = (0, h.bG)([eo.Ay, eI.default], () => eo.Ay.getUserCombo(eI.default.getId(), t.id)), I = (0, f.rj)(t), T = (0, f.aW)(t), v = I.length > 0 || t.rateLimitPerUser > 0 || null != S || null != T, {
         showLinkedLobbyApplicationLoadingIndicator: N
     } = (0, eH.A)(t.linkedLobby), y = (0, B.A)("ChannelChat"), b = (0, ea.A)((0, Q.GP)(n, "ChannelChat") ? n?.officialMessageColor ?? eZ.aj : null);
-    return (0, K.A)(t), (0, i.jsx)(e7, {
+    return (0, K.A)(t), (0, i.jsx)(e9, {
         channel: t,
         guildOfficialMessageStyle: b,
         isEditing: null != (0, h.bG)([eN.A], () => eN.A.getEditingMessageId(t.id)),

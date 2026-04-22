@@ -1,23 +1,23 @@
 /** chunk id: 203443 params = (module,exports,require) **/
-l.d(t, {
-    w: () => r
+t.d(l, {
+    w: () => a
 });
-var s = l(562465),
-    n = l(844045),
-    i = l(985018);
+var s = t(562465),
+    n = t(844045),
+    r = t(985018);
 
-function r(e) {
-    if (!(e instanceof s.oh)) return i.intl.string(n.default.CqBvCr);
+function a(e) {
+    if (!(e instanceof s.oh)) return r.intl.string(n.default.CqBvCr);
     switch (e.status) {
         case 429:
-            return i.intl.string(n.default.yHHcCH);
+            return r.intl.string(n.default.yHHcCH);
         case 403:
-            return i.intl.string(n.default["Dfnp+b"]);
+            return r.intl.string(n.default["Dfnp+b"]);
         case 413:
-            return i.intl.string(n.default.sw6JQB);
+            return r.intl.string(n.default.sw6JQB);
         case 400:
-            return i.intl.string(n.default.HHJFhr);
+            return r.intl.string(n.default.HHJFhr);
         default:
-            return i.intl.string(n.default.CqBvCr)
+            return r.intl.string(n.default.CqBvCr)
     }
 }

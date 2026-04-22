@@ -1073,7 +1073,7 @@ let _ = {
     FamilyCenterQRCodeModal: async () => {
         let {
             default: e
-        } = await Promise.all([n.e("78598"), n.e("72875")]).then(n.bind(n, 320742));
+        } = await Promise.all([n.e("66535"), n.e("72875")]).then(n.bind(n, 320742));
         return t => (0, a.jsx)(e, {
             ...t
         })

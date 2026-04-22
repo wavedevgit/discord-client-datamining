@@ -21,7 +21,7 @@ var i, l = n(627968),
     S = n(985018),
     j = n(139763),
     A = n(555672),
-    b = n(938822),
+    b = n(977544),
     v = ((i = {}).WELCOME = "welcome", i.APPEARANCE = "appearance", i.DOWNLOAD_DESKTOP = "download-desktop", i.PROFILE = "profile", i.NEXT_STEPS = "next-steps", i.JOIN_SERVER = "join-server", i.ADD_FRIEND = "add-friend", i);
 
 function I(e) {

@@ -23,6 +23,7 @@ function c(e) {
     } = (0, a.x)(A), T = p?.useTitle?.(), f = g ?? T;
     return null == p || null == f ? null : (0, i.jsx)(r.U, {
         role: "link",
+        "aria-label": T,
         title: f,
         leadingElement: null != x ? (0, i.jsx)(o.g, {
             decoration: x
