@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(731738),
-    s = n(397927),
+    s = n(731738),
+    a = n(397927),
     r = n(832712),
     o = n(831062),
     c = n(662502),
@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(349435),
     A = n(665909),
     g = n(576045),
-    _ = n(477427),
-    p = n(56462),
+    p = n(477427),
+    _ = n(56462),
     f = n(652215),
     E = n(985018);
 
@@ -25,12 +25,12 @@ function C(e) {
         channelId: t,
         warningId: C,
         senderId: x
-    } = e, S = (0, p.CW)(), I = l.useCallback(() => {
+    } = e, S = (0, _.CW)(), I = l.useCallback(() => {
         (0, h.xi)(t, [C])
     }, [t, C]), T = e => {
         r.A.updateChannelOverrideSettings(null, t, {
             muted: !0
-        }, _.fd.Muted), c.A.showMuteSuccessToast(x, t), (0, A._$)({
+        }, p.fd.Muted), c.A.showMuteSuccessToast(x, t), (0, A._$)({
             channelId: t,
             warningId: C,
             senderId: x,
@@ -45,7 +45,7 @@ function C(e) {
             senderId: x,
             warningType: m._j.LIKELY_ATO
         }), o.A.increment({
-            name: a.K.SAFETY_WARNING_VIEW
+            name: s.K.SAFETY_WARNING_VIEW
         })
     }, [t, C, x]), (0, i.jsx)(g.N, {
         channelId: t,
@@ -59,18 +59,18 @@ function C(e) {
             text: E.intl.string(E.t.tC1pvL),
             variant: "primary",
             onClick: () => {
-                (0, s.mMO)(async () => {
+                (0, a.mMO)(async () => {
                     let {
                         default: e
                     } = await n.e("8546").then(n.bind(n, 63865));
                     return n => {
                         let {
                             transitionState: l,
-                            onClose: a
+                            onClose: s
                         } = n;
                         return (0, i.jsx)(e, {
                             transitionState: l,
-                            onClose: a,
+                            onClose: s,
                             channelId: t,
                             warningId: C,
                             senderId: x,
@@ -86,10 +86,10 @@ function C(e) {
                                 description: E.intl.string(E.t.w2ve0t),
                                 buttonText: E.intl.string(E.t.ftIK2A),
                                 onButtonPress: () => {
-                                    T(A.Wm.USER_MODAL_MUTE), a()
+                                    T(A.Wm.USER_MODAL_MUTE), s()
                                 }
                             }, "likely-ato-mute")],
-                            learnMore: (0, i.jsx)(s.DUT, {
+                            learnMore: (0, i.jsx)(a.DUT, {
                                 onClick: () => (0, A._$)({
                                     channelId: t,
                                     warningId: C,
@@ -97,11 +97,11 @@ function C(e) {
                                     warningType: m._j.LIKELY_ATO,
                                     cta: A.Wm.USER_MODAL_LEARN_MORE
                                 }),
-                                children: (0, i.jsx)(s.Heading, {
+                                children: (0, i.jsx)(a.Heading, {
                                     variant: "heading-sm/medium",
                                     color: "text-link",
                                     children: E.intl.format(E.t.UkH122, {
-                                        learnMoreLink: p.u6
+                                        learnMoreLink: _.u6
                                     })
                                 })
                             })

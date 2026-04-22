@@ -198,7 +198,7 @@ let U = s.memo(function(e) {
                             (0, x.L3)(e, async () => {
                                 let {
                                     default: e
-                                } = await l.e("10279").then(l.bind(l, 772063));
+                                } = await l.e("32660").then(l.bind(l, 772063));
                                 return t => (0, n.jsx)(e, {
                                     ...t,
                                     guild: g,

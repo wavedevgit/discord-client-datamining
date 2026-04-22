@@ -1,12 +1,12 @@
 /** chunk id: 305637 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var i = n(627968);
 n(64700);
 var l = n(311907),
-    a = n(990078),
-    s = n(397927),
+    s = n(990078),
+    a = n(397927),
     r = n(630054),
     o = n(956793),
     c = n(401843),
@@ -16,13 +16,13 @@ var l = n(311907),
     m = n(734057),
     A = n(203982),
     g = n(652215),
-    _ = n(985018);
+    p = n(985018);
 
-function p(e) {
+function _(e) {
     let {
         isCurrentUser: t,
         applicationStream: n,
-        onAction: p
+        onAction: _
     } = e, {
         activeStream: f,
         watchingOtherStream: E
@@ -35,28 +35,28 @@ function p(e) {
             return t !== n.ownerId
         }).length > 0
     })), C = (0, l.bG)([m.A], () => m.A.getChannel(n?.channelId)), [x, S] = (0, d.zP)(C), I = (0, u.aL)(), T = null != f && null != n && f.state !== g.XYD.ENDED && f.ownerId === n.ownerId, v = e => {
-        null != n && (p?.(), o.default.selectVoiceChannel(n.channelId), T || (0, c.Nl)(n, {
+        null != n && (_?.(), o.default.selectVoiceChannel(n.channelId), T || (0, c.Nl)(n, {
             forceMultiple: e
         }), I.dispatch(g.jej.POPOUT_CLOSE), A._.dispatch(g.jej.MODAL_CLOSE), r.A.popAll())
     };
     if (null == n) return null;
     let N = (0, d.CT)(S);
-    return t ? N = _.intl.string(_.t.XvBdeT) : T && (N = _.intl.string(_.t["JH1SJ+"])), (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(s.Button, {
+    return t ? N = p.intl.string(p.t.XvBdeT) : T && (N = p.intl.string(p.t["JH1SJ+"])), (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(a.Button, {
             size: "sm",
             variant: T ? "secondary" : "active",
-            icon: s.Fzq,
+            icon: a.Fzq,
             text: N,
             disabled: t || T || !x,
             onClick: () => v(!1),
             fullWidth: !0
-        }), E && !T ? (0, i.jsx)(a.m, {
-            text: _.intl.string(_.t.wCrzut),
-            children: (0, i.jsx)(s.K0, {
+        }), E && !T ? (0, i.jsx)(s.m, {
+            text: p.intl.string(p.t.wCrzut),
+            children: (0, i.jsx)(a.K0, {
                 variant: "secondary",
                 size: "sm",
-                icon: s.vAm,
-                "aria-label": _.intl.string(_.t.wCrzut),
+                icon: a.vAm,
+                "aria-label": p.intl.string(p.t.wCrzut),
                 onClick: () => {
                     v(!0)
                 }

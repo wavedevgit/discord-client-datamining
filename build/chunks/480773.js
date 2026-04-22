@@ -7,8 +7,8 @@ l(64700);
 var r = l(397927),
     n = l(261225),
     s = l(673277),
-    i = l(219561),
-    o = l(18769);
+    o = l(219561),
+    i = l(18769);
 let d = {
     name: "FeaturedCollection",
     id: "featured-collection",
@@ -38,7 +38,7 @@ let d = {
                 variant: "text-lg/semibold",
                 children: "Featured Collection will take up the full width of the parent, so it is best suited for CmsStack or Grid parents"
             }), (0, a.jsx)(s.A, {
-                children: (0, a.jsx)(o.A, {
+                children: (0, a.jsx)(i.A, {
                     ...h
                 })
             }), (0, a.jsxs)(s.A, {
@@ -47,9 +47,9 @@ let d = {
                     children: ["Grid (", t, "):"]
                 }), (0, a.jsxs)(n.A, {
                     columns: t,
-                    children: [(0, a.jsx)(o.A, {
+                    children: [(0, a.jsx)(i.A, {
                         ...h
-                    }), (0, a.jsx)(o.A, {
+                    }), (0, a.jsx)(i.A, {
                         ...h
                     })]
                 })]
@@ -57,15 +57,15 @@ let d = {
                 children: [(0, a.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     children: "Stack:"
-                }), (0, a.jsxs)(i.Kp, {
+                }), (0, a.jsxs)(o.Kp, {
                     direction: "horizontal",
-                    children: [(0, a.jsx)(o.A, {
+                    children: [(0, a.jsx)(i.A, {
                         ...h
-                    }), (0, a.jsx)(o.A, {
+                    }), (0, a.jsx)(i.A, {
                         ...h
-                    }), (0, a.jsx)(o.A, {
+                    }), (0, a.jsx)(i.A, {
                         ...h
-                    }), (0, a.jsx)(o.A, {
+                    }), (0, a.jsx)(i.A, {
                         ...h
                     })]
                 })]

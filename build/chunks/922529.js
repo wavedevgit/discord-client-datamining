@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(837381),
     o = n(813516),
     c = n(701628);
@@ -13,7 +13,7 @@ let d = l.forwardRef(function(e, t) {
         let {
             className: n,
             isBeforeGroup: l = !1,
-            itemId: a,
+            itemId: s,
             ...d
         } = e, {
             children: u
@@ -21,17 +21,17 @@ let d = l.forwardRef(function(e, t) {
             role: h,
             onFocus: m,
             ...A
-        } = (0, r.rm)(a ?? "");
+        } = (0, r.rm)(s ?? "");
         return (0, i.jsx)(o.A, {
             ...d,
-            ...null != a ? {
+            ...null != s ? {
                 ...A,
                 onFocus: m
             } : void 0,
             ref: t,
             role: "separator",
             "aria-label": "string" == typeof u ? u : void 0,
-            className: s()(n, {
+            className: a()(n, {
                 [c.yF]: !0,
                 [c.ov]: null != u,
                 [c.rd]: l

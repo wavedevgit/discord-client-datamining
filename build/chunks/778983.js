@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(311907),
-    a = n(421380),
-    s = n(397927),
+    s = n(421380),
+    a = n(397927),
     r = n(351001),
     o = n(145530),
     c = n(734057),
@@ -20,24 +20,24 @@ function g(e) {
         message: t,
         user: n,
         guild: g,
-        channel: _
-    } = e, p = (0, l.bG)([u.A], () => null != n && null != g && (0, r.Kd)(n, g, [u.A])), {
+        channel: p
+    } = e, _ = (0, l.bG)([u.A], () => null != n && null != g && (0, r.Kd)(n, g, [u.A])), {
         messageReference: f
-    } = t, E = (0, l.bG)([d.A], () => null != f ? d.A.getMessage(f.channel_id, f.message_id) : null), C = (0, l.bG)([c.A], () => null != E ? c.A.getChannel(E.channel_id) : null), x = (0, l.bG)([c.A], () => c.A.getChannel(_.id)?.isArchivedThread() ?? !1);
-    if (!p) return null;
+    } = t, E = (0, l.bG)([d.A], () => null != f ? d.A.getMessage(f.channel_id, f.message_id) : null), C = (0, l.bG)([c.A], () => null != E ? c.A.getChannel(E.channel_id) : null), x = (0, l.bG)([c.A], () => c.A.getChannel(p.id)?.isArchivedThread() ?? !1);
+    if (!_) return null;
     let S = null == E ? A.intl.string(m.default["0IZbwC"]) : A.intl.string(m.default.Uj6oD4),
         I = null == E,
         T = `delete-message-${t.id}`;
     return (0, i.jsx)(h.A, {
         text: S,
-        icon: s.ucK,
+        icon: a.ucK,
         onClick: () => {
             null != C && null != E && o.A.confirmDelete(C, E, !1, {
                 isFlagResolved: x,
-                moderatorReportChannelId: _.id
+                moderatorReportChannelId: p.id
             })
         },
         disabled: I,
-        color: a.$n.Colors.RED
+        color: s.$n.Colors.RED
     }, T)
 }

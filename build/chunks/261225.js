@@ -113,24 +113,24 @@ let m = 6,
             paginationStrategy: c = d.o.PAGINATE,
             perPage: i,
             paginationPosition: o = "bottom"
-        } = r ?? {}, h = c === d.o.TRUNCATE, A = Math.max(1, Math.min(m, Math.floor(t))), [g, f] = n.useState(0), [E, v] = n.useState(i), [S, y] = n.useState(n.Children.count(a)), x = n.Children.count(a), T = null == i || i < 1 ? 0 : Math.ceil(x / i), C = null != i && i > 0, _ = !h && C && T > 1;
-        (E !== i || S !== x) && (v(i), y(x), f(0));
-        let j = n.useMemo(() => C ? h ? n.Children.toArray(a).slice(0, i) : n.Children.toArray(a).slice(i * g, i * (g + 1)) : a, [g, i, a, C, h]);
+        } = r ?? {}, h = c === d.o.TRUNCATE, A = Math.max(1, Math.min(m, Math.floor(t))), [v, g] = n.useState(0), [f, E] = n.useState(i), [x, y] = n.useState(n.Children.count(a)), S = n.Children.count(a), C = null == i || i < 1 ? 0 : Math.ceil(S / i), T = null != i && i > 0, j = !h && T && C > 1;
+        (f !== i || x !== S) && (E(i), y(S), g(0));
+        let _ = n.useMemo(() => T ? h ? n.Children.toArray(a).slice(0, i) : n.Children.toArray(a).slice(i * v, i * (v + 1)) : a, [v, i, a, T, h]);
         return (0, l.jsxs)(l.Fragment, {
-            children: [_ && "top" === o && (0, l.jsx)(p, {
-                page: g,
-                pages: T,
-                setPage: f
+            children: [j && "top" === o && (0, l.jsx)(p, {
+                page: v,
+                pages: C,
+                setPage: g
             }), (0, l.jsx)("div", {
                 className: u.gridContainer,
                 children: (0, l.jsx)("div", {
                     className: s()(u.grid, u[`columns${A}`]),
-                    children: j
+                    children: _
                 })
-            }), _ && "bottom" === o && (0, l.jsx)(p, {
-                page: g,
-                pages: T,
-                setPage: f
+            }), j && "bottom" === o && (0, l.jsx)(p, {
+                page: v,
+                pages: C,
+                setPage: g
             })]
         })
     }

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(311907),
-    s = n(732955),
+    s = n(311907),
+    a = n(732955),
     r = n(397927),
     o = n(824552),
     c = n(933958),
@@ -15,16 +15,16 @@ var i = n(627968),
     m = n(543465),
     A = n(954571),
     g = n(33364),
-    _ = n(652215),
-    p = n(985018);
+    p = n(652215),
+    _ = n(985018);
 
 function f(e) {
     let {
         channel: t
-    } = e, l = (0, a.bG)([m.Ay], () => m.Ay.isChannelMuted(null, t.id));
+    } = e, l = (0, s.bG)([m.Ay], () => m.Ay.isChannelMuted(null, t.id));
     return (0, i.jsx)(r.Button, {
         variant: l ? "secondary" : "critical-primary",
-        text: l ? p.intl.string(p.t.YqAjXy) : p.intl.string(p.t.w4m945),
+        text: l ? _.intl.string(_.t.YqAjXy) : _.intl.string(_.t.w4m945),
         onClick: function() {
             (0, r.mMO)(async () => {
                 let {
@@ -44,7 +44,7 @@ function E(e) {
         channel: t,
         application: n,
         oauth2Token: l
-    } = e, u = (0, a.bG)([c.Ay], () => c.Ay.getSelfEmbeddedActivities());
+    } = e, u = (0, s.bG)([c.Ay], () => c.Ay.getSelfEmbeddedActivities());
 
     function h() {
         o.A.delete(l.id);
@@ -56,26 +56,26 @@ function E(e) {
     }
     return (0, i.jsx)(r.Button, {
         variant: "secondary",
-        text: p.intl.string(p.t["5S3sQF"]),
+        text: _.intl.string(_.t["5S3sQF"]),
         onClick: () => {
-            (0, r.qfG)(e => (0, i.jsx)(s.aFV, {
-                title: p.intl.string(p.t["DT39A+"]),
-                subtitle: p.intl.formatToPlainString(p.t.QWGvxA, {
+            (0, r.qfG)(e => (0, i.jsx)(a.aFV, {
+                title: _.intl.string(_.t["DT39A+"]),
+                subtitle: _.intl.formatToPlainString(_.t.QWGvxA, {
                     applicationName: n.name
                 }),
                 actions: [{
-                    text: p.intl.string(p.t["ETE/oC"]),
+                    text: _.intl.string(_.t["ETE/oC"]),
                     variant: "secondary",
                     onClick: e.onClose
                 }, {
-                    text: p.intl.string(p.t.xUqheM),
+                    text: _.intl.string(_.t.xUqheM),
                     variant: "critical-primary",
                     onClick: () => {
                         h(), e.onClose()
                     }
                 }],
                 ...e
-            })), A.default.track(_.HAw.APP_MANAGE_CTA_CLICKED, {
+            })), A.default.track(p.HAw.APP_MANAGE_CTA_CLICKED, {
                 application_id: n.id,
                 channel_id: t.id,
                 channel_type: t.type
@@ -88,21 +88,21 @@ function C(e) {
     let {
         channel: t,
         user: n
-    } = e, s = (0, u.A)(n?.id ?? _.dJq), {
+    } = e, a = (0, u.A)(n?.id ?? p.dJq), {
         authorizedAppToken: c,
         authorizedAppsFetchState: d
-    } = (0, a.cf)([h.default], () => ({
-        authorizedAppToken: h.default.getNewestTokenForApplication(s?.id),
+    } = (0, s.cf)([h.default], () => ({
+        authorizedAppToken: h.default.getNewestTokenForApplication(a?.id),
         authorizedAppsFetchState: h.default.getFetchState()
     }));
     return (l.useEffect(() => {
         n.bot && d === h.FetchState.NOT_FETCHED && o.A.fetch()
-    }, [n.bot, d]), n.bot && null != s && null != c) ? (0, i.jsxs)(r.ButtonGroup, {
+    }, [n.bot, d]), n.bot && null != a && null != c) ? (0, i.jsxs)(r.ButtonGroup, {
         size: "sm",
         children: [(0, i.jsx)(f, {
             channel: t
         }), (0, i.jsx)(E, {
-            application: s,
+            application: a,
             channel: t,
             oauth2Token: c
         }), (0, i.jsx)(g.A, {

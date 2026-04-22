@@ -1,12 +1,12 @@
 /** chunk id: 17143 params = (module,exports,require) **/
 n.d(t, {
     A: () => T,
-    V: () => _.V
+    V: () => p.V
 });
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(735438),
     o = n.n(r),
     c = n(311907),
@@ -16,8 +16,8 @@ var i = n(627968),
     m = n(397927),
     A = n(827343),
     g = n(765671),
-    _ = n(123902),
-    p = n(430452),
+    p = n(123902),
+    _ = n(430452),
     f = n(383501),
     E = n(954571),
     C = n(652215),
@@ -38,10 +38,10 @@ class I extends l.PureComponent {
         this._initTimeout.start(1e3, this.setupVoiceActivity)
     }
     setupVoiceActivity = () => {
-        p.Ay.getMediaEngine().on(d.bg.VoiceActivity, this.handleVoiceActivity)
+        _.Ay.getMediaEngine().on(d.bg.VoiceActivity, this.handleVoiceActivity)
     };
     componentWillUnmount() {
-        this._initTimeout.stop(), this._silenceTimeout.stop(), this._micTestStop(), p.Ay.getMediaEngine().removeListener(d.bg.VoiceActivity, this.handleVoiceActivity)
+        this._initTimeout.stop(), this._silenceTimeout.stop(), this._micTestStop(), _.Ay.getMediaEngine().removeListener(d.bg.VoiceActivity, this.handleVoiceActivity)
     }
     handleVoiceActivity = e => {
         let {
@@ -69,8 +69,8 @@ class I extends l.PureComponent {
             inputVolume: n,
             outputDeviceName: i,
             outputVolume: l,
-            inputMode: a,
-            vadAutoThreshold: s,
+            inputMode: s,
+            vadAutoThreshold: a,
             vadThreshold: r,
             location: o,
             isDeafened: c
@@ -84,8 +84,8 @@ class I extends l.PureComponent {
             input_device_volume: n,
             output_device_name: i,
             output_device_volume: l,
-            input_mode: a,
-            input_sensitivity_is_automatic: s,
+            input_mode: s,
+            input_sensitivity_is_automatic: a,
             input_sensitivity_threshold: Math.round(r),
             location: o
         })
@@ -129,7 +129,7 @@ class I extends l.PureComponent {
             title: t,
             description: n,
             notchBackground: l,
-            buttonTest: a = "",
+            buttonTest: s = "",
             buttonStop: r = "",
             buttonVariant: o = "secondary",
             size: c = "sm",
@@ -137,7 +137,7 @@ class I extends l.PureComponent {
             buttonMinWidth: u,
             measureButtonRef: A,
             meterOnly: g = !1,
-            containerClassName: p,
+            containerClassName: _,
             helpText: f
         } = this.props, {
             isMicTesting: E,
@@ -145,15 +145,15 @@ class I extends l.PureComponent {
             isDetectingInput: I
         } = this.state, T = e && !E ? x.intl.string(x.t["9viE2A"]) : null;
         E && e && !d && this._micTestStop();
-        let v = r.length >= a.length ? r : a;
+        let v = r.length >= s.length ? r : s;
         return (0, i.jsxs)("div", {
-            className: s()(S.kL, p),
+            className: a()(S.kL, _),
             children: [(0, i.jsx)(m.D0$, {
                 label: t ?? void 0,
                 hideLabel: g,
                 description: g ? null : n,
                 children: (0, i.jsxs)("div", {
-                    className: s()(S.ak, {
+                    className: a()(S.ak, {
                         [S.mi]: g,
                         [S.EX]: "sm" === c
                     }),
@@ -178,13 +178,13 @@ class I extends l.PureComponent {
                                 children: (0, i.jsx)(m.Button, {
                                     size: c,
                                     variant: o,
-                                    text: E ? r : a,
+                                    text: E ? r : s,
                                     onClick: this.handleToggleMicTest,
                                     fullWidth: !0
                                 })
                             })
                         })]
-                    }), (0, i.jsx)(_.A, {
+                    }), (0, i.jsx)(p.A, {
                         progress: E || g ? C + 100 : 0,
                         notchBackground: l,
                         notchClassName: this.props.notchClassName,
@@ -208,43 +208,43 @@ function T(e) {
         inputDevice: t,
         outputDevice: n,
         threshold: l,
-        autoThreshold: a,
-        inputVolume: s,
+        autoThreshold: s,
+        inputVolume: a,
         outputVolume: r,
         inputMode: d,
         isDeafened: u
-    } = (0, c.cf)([p.Ay], () => {
-        let e = p.Ay.getInputDeviceId(),
-            t = p.Ay.getInputDevices(),
+    } = (0, c.cf)([_.Ay], () => {
+        let e = _.Ay.getInputDeviceId(),
+            t = _.Ay.getInputDevices(),
             n = o().find(t, t => {
                 let {
                     id: n
                 } = t;
                 return n === e
             }),
-            i = p.Ay.getOutputDeviceId(),
-            l = p.Ay.getOutputDevices(),
-            a = o().find(l, e => {
+            i = _.Ay.getOutputDeviceId(),
+            l = _.Ay.getOutputDevices(),
+            s = o().find(l, e => {
                 let {
                     id: t
                 } = e;
                 return t === i
             }),
             {
-                threshold: s,
+                threshold: a,
                 autoThreshold: r
-            } = p.Ay.getModeOptions(),
-            c = p.Ay.getInputVolume(),
-            d = p.Ay.getOutputVolume();
+            } = _.Ay.getModeOptions(),
+            c = _.Ay.getInputVolume(),
+            d = _.Ay.getOutputVolume();
         return {
             inputDevice: n,
-            outputDevice: a,
-            threshold: s,
+            outputDevice: s,
+            threshold: a,
             autoThreshold: r,
             inputVolume: c,
             outputVolume: d,
-            inputMode: p.Ay.getMode(),
-            isDeafened: p.Ay.isSelfDeaf()
+            inputMode: _.Ay.getMode(),
+            isDeafened: _.Ay.isSelfDeaf()
         }
     }), h = (0, c.bG)([f.A], () => f.A.isConnected()), {
         ref: m,
@@ -252,12 +252,12 @@ function T(e) {
     } = (0, g.Ay)();
     return (0, i.jsx)(I, {
         isVoiceConnected: h,
-        inputVolume: s,
+        inputVolume: a,
         outputVolume: r,
         inputMode: d,
         isDeafened: u,
         vadThreshold: l,
-        vadAutoThreshold: a,
+        vadAutoThreshold: s,
         inputDeviceName: t?.name ?? "",
         outputDeviceName: n?.name ?? "",
         measureButtonRef: m,

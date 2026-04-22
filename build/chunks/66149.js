@@ -4,8 +4,8 @@ n.d(t, {
 }), n(801541);
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(889137),
     o = n(397927),
     c = n(375901),
@@ -15,58 +15,58 @@ var i = n(627968),
     m = n(888675),
     A = n(652215),
     g = n(985018),
-    _ = n(21623),
-    p = n(701628);
+    p = n(21623),
+    _ = n(701628);
 
 function f(e) {
     let {
         expanded: t,
         onClick: n,
         count: l,
-        compact: a,
-        collapsedReason: s,
+        compact: s,
+        collapsedReason: a,
         canUncollapse: c = !0
     } = e, u = (0, r.YW)({
-        collapsedReason: s
+        collapsedReason: a
     }).with({
         collapsedReason: g.t["VFWjc+"]
     }, () => (0, i.jsx)(o.G3N, {
         size: "md",
         color: "currentColor",
-        className: _.Q6
+        className: p.Q6
     })).with({
         collapsedReason: g.t["+FcYM/"]
     }, () => (0, i.jsx)(o.KTN, {
         size: "md",
         color: "currentColor",
-        className: _.Q6
+        className: p.Q6
     })).with({
         collapsedReason: g.t.rHRovo
     }, () => (0, i.jsx)(o._mZ, {
         size: "md",
         color: "currentColor",
-        className: _.TG
+        className: p.TG
     })).otherwise(() => (0, i.jsx)(o.PGe, {
         size: "md",
         color: "currentColor",
-        className: _.Q6
+        className: p.Q6
     }));
     return (0, i.jsx)(d.A, {
-        compact: a,
+        compact: s,
         role: "group",
         childrenMessageContent: (0, i.jsx)(m.A, {
-            compact: a,
-            className: _.L9,
+            compact: s,
+            className: p.L9,
             iconNode: u,
             children: (0, i.jsxs)("div", {
-                className: c ? _.Fo : _.GU,
-                children: [g.intl.format(s, {
+                className: c ? p.Fo : p.GU,
+                children: [g.intl.format(a, {
                     count: l
                 }), c && (0, i.jsxs)(i.Fragment, {
                     children: [" — ", (0, i.jsx)(o.DUT, {
                         tag: "span",
                         onClick: n,
-                        className: _.rB,
+                        className: p.rB,
                         children: t ? g.intl.string(g.t.fgq1gs) : g.intl.string(g.t.XJuakA)
                     })]
                 })]
@@ -78,7 +78,7 @@ let E = l.memo(function(e) {
     let {
         messages: t,
         channel: n,
-        compact: a = !1,
+        compact: s = !1,
         unreadId: r,
         collapsedReason: o,
         canUncollapse: d = !0
@@ -92,16 +92,16 @@ let E = l.memo(function(e) {
     }, [m, d]);
     let x = t.hasUnread ? t.content.length - 1 : t.content.length;
     return (0, i.jsxs)("div", {
-        className: s()({
-            [p._A]: !0,
-            [_.sz]: g
+        className: a()({
+            [_._A]: !0,
+            [p.sz]: g
         }),
         children: [t.hasUnread && (!g || t.content[0]?.type === A.TZK.DIVIDER) ? (0, i.jsx)(h.A, {
             isUnread: !0,
             id: r
         }, "divider") : null, (0, i.jsx)(f, {
             count: x,
-            compact: a,
+            compact: s,
             expanded: g,
             onClick: C,
             collapsedReason: o,
@@ -119,8 +119,8 @@ let E = l.memo(function(e) {
                 let t = e.type === A.TZK.THREAD_STARTER_MESSAGE ? u.VO : u.Ay;
                 return (0, i.jsx)(t, {
                     id: (0, c.j)(n.id, e.content.id),
-                    className: _.__invalid_blocked,
-                    compact: a,
+                    className: p.__invalid_blocked,
+                    compact: s,
                     channel: n,
                     message: e.content,
                     groupId: e.groupId,

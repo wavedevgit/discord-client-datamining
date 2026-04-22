@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(607399),
-    s = n(397927),
+    s = n(607399),
+    a = n(397927),
     r = n(308528),
     o = n(928658),
     c = n(957283),
@@ -21,13 +21,13 @@ function h(e) {
         isReportable: A,
         isLoaded: g
     } = (0, d.R)(t, n.id, h), {
-        channelId: _
-    } = (0, c.N)(), p = t.id === _, f = !a.Fr && !p, E = l.useCallback(() => {
+        channelId: p
+    } = (0, c.N)(), _ = t.id === p, f = !s.Fr && !_, E = l.useCallback(() => {
         null != m && (0, o.b8)(m, () => {
             r.A.closePrivateChannel(t.id, f)
         })
     }, [t.id, m, f]);
-    return !A || null == m && g ? null : (0, i.jsx)(s.Button, {
+    return !A || null == m && g ? null : (0, i.jsx)(a.Button, {
         size: "sm",
         variant: "critical-primary",
         disabled: null == m,

@@ -5,9 +5,9 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(503698),
-    a = n.n(l),
-    s = n(284009),
-    r = n.n(s),
+    s = n.n(l),
+    a = n(284009),
+    r = n.n(a),
     o = n(311907),
     c = n(397927),
     d = n(707606),
@@ -16,8 +16,8 @@ var l = n(503698),
     m = n(159426),
     A = n(25528),
     g = n(655724),
-    _ = n(82149),
-    p = n(734057),
+    p = n(82149),
+    _ = n(734057),
     f = n(287809),
     E = n(874546),
     C = n(90644),
@@ -41,7 +41,7 @@ let k = (0, d.A)(e => {
         activity: t,
         embeddedActivity: n,
         user: l,
-        applicationStream: s,
+        applicationStream: a,
         className: d,
         guildId: k,
         channelId: w,
@@ -52,7 +52,7 @@ let k = (0, d.A)(e => {
     } = e, H = (0, o.bG)([f.default], () => {
         let e = f.default.getCurrentUser();
         return r()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-    }), V = F === I.O.STREAM_PREVIEW || null != s, W = (0, C.A)(t), K = W || V ? h.A.Direction.HORIZONTAL : h.A.Direction.VERTICAL, z = (0, o.bG)([p.A], () => null != w ? p.A.getChannel(w) : null, [w]), {
+    }), V = F === I.O.STREAM_PREVIEW || null != a, W = (0, C.A)(t), K = W || V ? h.A.Direction.HORIZONTAL : h.A.Direction.VERTICAL, z = (0, o.bG)([_.A], () => null != w ? _.A.getChannel(w) : null, [w]), {
         enableRequestToStream: Y
     } = m.m.useExperiment({
         guildId: k ?? z?.guild_id,
@@ -65,7 +65,7 @@ let k = (0, d.A)(e => {
         align: h.A.Align.STRETCH,
         direction: K,
         wrap: $ ? h.A.Wrap.WRAP : h.A.Wrap.NO_WRAP,
-        className: a()(d, P.jx, $ ? P.Vd : P.xM),
+        className: s()(d, P.jx, $ ? P.Vd : P.xM),
         children: (() => {
             if (!(0, E.Ay)(t)) {
                 if ((0, x.A)(t)) return (0, i.jsx)(T.A, {
@@ -106,8 +106,8 @@ let k = (0, d.A)(e => {
                     children: [n, e]
                 })
             }
-            if ((0, _.Cy)(t)) {
-                let e = (0, _.UW)(t);
+            if ((0, p.Cy)(t)) {
+                let e = (0, p.UW)(t);
                 return null == e ? null : (0, i.jsx)(y.A, {
                     guildId: e.guildId,
                     channelId: e.channelId,
@@ -117,7 +117,7 @@ let k = (0, d.A)(e => {
             }
             return V ? (0, i.jsx)(D.A, {
                 isCurrentUser: H.id === l.id,
-                applicationStream: s,
+                applicationStream: a,
                 onAction: B
             }) : (0, i.jsxs)(i.Fragment, {
                 children: [J && (0, i.jsx)(g.B, {

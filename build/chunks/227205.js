@@ -49,8 +49,8 @@ let T = {
         } = e, R = (0, i.K)(e => {
             y?.(e)
         }, .1, null != y), B = r.useRef(null), P = (0, A.yB)("HeroBlock"), M = (0, d.bG)([p.default], () => p.default.getCurrentUser()), H = (0, x.uM)(), {
-            analyticsLocations: D
-        } = (0, g.Ay)(_.A.COLLECTIBLES_SHOP_HERO), w = r.useMemo(() => null != k ? k : null == l ? T : {
+            analyticsLocations: w
+        } = (0, g.Ay)(_.A.COLLECTIBLES_SHOP_HERO), D = r.useMemo(() => null != k ? k : null == l ? T : {
             rankedSkuIds: l.heroRanking ?? [],
             name: l.name,
             unpublishedAt: l.unpublishedAt,
@@ -70,7 +70,7 @@ let T = {
             heroBannerStatic: K,
             heroBannerAnimated: W,
             heroBannerRive: z
-        } = (0, C.Kk)(w), V = F?.responsive ?? !1, Y = F?.backgroundStyle, $ = null != z, Z = N === I.G2.ORBS, q = null != l && l.isOrbsExclusive, X = Z ? j.intl.string(j.t["1CdL8d"]) : j.intl.string(j.t.xYKa1T), J = () => {
+        } = (0, C.Kk)(D), V = F?.responsive ?? !1, Y = F?.backgroundStyle, $ = null != z, Z = N === I.G2.ORBS, q = null != l && l.isOrbsExclusive, X = Z ? j.intl.string(j.t["1CdL8d"]) : j.intl.string(j.t.xYKa1T), J = () => {
             Z ? ((0, h.Y)({
                 pageType: L.liQ.SHOP_ORBS_TAB,
                 sectionType: L.JJy.ORBS_SHOP_HERO_BLOCK,
@@ -79,20 +79,20 @@ let T = {
                 fromContent: o.u.ORBS_SHOP_HERO_CTA
             })) : (s({
                 sourceButton: "shop latest category hero",
-                categorySkuId: q ? w.categorySkuId : void 0,
+                categorySkuId: q ? D.categorySkuId : void 0,
                 isInternalShopDeeplink: !0,
                 isOrbsExclusive: q
             }), f.default.track(L.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: H?.sessionId,
-                sku_id: w.categorySkuId,
+                sku_id: D.categorySkuId,
                 page_type: N,
                 page_section: H?.pageSection,
                 page_category: H?.pageCategory,
                 cta_name: "shop latest category hero button"
             }))
         };
-        return null != M && (t || w !== T) ? (0, n.jsx)(g.f5, {
-            value: D,
+        return null != M && (t || D !== T) ? (0, n.jsx)(g.f5, {
+            value: w,
             children: (0, n.jsxs)("div", {
                 ref: R,
                 className: O.os,
@@ -132,7 +132,7 @@ let T = {
                             className: O.Hw
                         }) : (0, n.jsxs)("div", {
                             className: O.Hw,
-                            children: [(0, E.HF)(w.unpublishedAt) && (0, n.jsx)(u.LpS, {
+                            children: [(0, E.HF)(D.unpublishedAt) && (0, n.jsx)(u.LpS, {
                                 disableColor: !0,
                                 text: j.intl.string(j.t["h/uBCR"]),
                                 className: O.v0
@@ -141,20 +141,20 @@ let T = {
                                 children: [null != U && (0, n.jsx)("img", {
                                     className: O.rm,
                                     src: U,
-                                    alt: w.name,
+                                    alt: D.name,
                                     style: G?.toDesktopStyles()
-                                }), null != w.title && (0, n.jsx)(u.Heading, {
+                                }), null != D.title && (0, n.jsx)(u.Heading, {
                                     variant: "heading-xxl/bold",
                                     className: O.DD,
                                     color: "text-strong",
-                                    children: w.title
-                                }), null != w.summary && "" !== w.summary && (0, n.jsx)(u.Text, {
+                                    children: D.title
+                                }), null != D.summary && "" !== D.summary && (0, n.jsx)(u.Text, {
                                     variant: "text-md/normal",
                                     className: Z ? O.h4 : O.Tm,
-                                    style: null != w.bannerTextColor ? {
-                                        color: w.bannerTextColor
+                                    style: null != D.bannerTextColor ? {
+                                        color: D.bannerTextColor
                                     } : void 0,
-                                    children: w.summary
+                                    children: D.summary
                                 })]
                             })]
                         }), !t && (0, n.jsx)("div", {
@@ -166,7 +166,7 @@ let T = {
                             })
                         })]
                     }), (0, n.jsx)(v.A, {
-                        heroBlockRecord: w,
+                        heroBlockRecord: D,
                         tab: N,
                         isBlockLoading: t,
                         layout: N === I.G2.HOME ? "hscroll" : "feed"

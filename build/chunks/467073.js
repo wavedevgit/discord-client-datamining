@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(311907),
     l = n(229527),
-    a = n(870136),
-    s = n(857071),
+    s = n(870136),
+    a = n(857071),
     r = n(406704),
     o = n(696451),
     c = n(834942),
@@ -16,11 +16,11 @@ var i = n(311907),
 function m(e) {
     let t = e?.guild_id,
         n = (0, i.bG)([c.A], () => null == t || c.A.canChatInGuild(t), [t]),
-        m = (0, i.bG)([s.A], () => null != t && s.A.isLurking(t), [t]),
+        m = (0, i.bG)([a.A], () => null != t && a.A.isLurking(t), [t]),
         A = (0, i.bG)([o.Ay], () => null != t && o.Ay.isCurrentUserGuest(t), [t]),
         g = (0, i.bG)([d.A], () => n && d.A.can(h.xBc.ADD_REACTIONS, e), [n, e]),
-        _ = (0, l.ix)(t),
-        [, p] = (0, a.c)(t),
+        p = (0, l.ix)(t),
+        [, _] = (0, s.c)(t),
         f = (0, r.Id)(e);
     return null == e ? {
         disableReactionReads: !0,
@@ -36,9 +36,9 @@ function m(e) {
             renderReactions: !0,
             canAddNewReactions: g,
             isLurking: m,
-            communicationDisabled: p,
+            communicationDisabled: _,
             isActiveChannelOrUnarchivableThread: f,
-            isAutomodQuarantined: _
+            isAutomodQuarantined: p
         }),
         isLurking: m,
         isGuest: A,

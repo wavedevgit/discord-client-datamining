@@ -4,8 +4,8 @@ n.d(t, {
 }), n(938796);
 var i = n(665260),
     l = n(311907),
-    a = n(73153),
-    s = n(961350),
+    s = n(73153),
+    a = n(961350),
     r = n(734057),
     o = n(71393),
     c = n(309010),
@@ -15,8 +15,8 @@ var i = n(665260),
     m = n(887560),
     A = n(652215),
     g = n(790782),
-    _ = n(355097);
-let p = [{
+    p = n(355097);
+let _ = [{
         timeSinceJoin: +u.A.Millis.HOUR,
         sends: 1,
         viewTime: +u.A.Millis.MINUTE
@@ -33,7 +33,7 @@ let p = [{
         sends: 10,
         viewTime: 30 * u.A.Millis.MINUTE
     }],
-    f = 5 * p[p.length - 1].viewTime,
+    f = 5 * _[_.length - 1].viewTime,
     E = u.A.Millis.WEEK,
     C = {
         channels: {}
@@ -76,13 +76,13 @@ function b(e) {
 function j(e, t) {
     if (null == t) return !1;
     let n = d.Ay.getChannelOverrides(e)[t];
-    return null != n && !!(null != n.message_notifications && n.message_notifications !== A.orn.NULL || null != n.flags && (0, i.br)(n.flags, _.vv.UNREADS_ALL_MESSAGES | _.vv.UNREADS_ONLY_MENTIONS))
+    return null != n && !!(null != n.message_notifications && n.message_notifications !== A.orn.NULL || null != n.flags && (0, i.br)(n.flags, p.vv.UNREADS_ALL_MESSAGES | p.vv.UNREADS_ONLY_MENTIONS))
 }
 class R extends l.Ay.PersistedStore {
     static displayName = "UnreadSettingNoticeStore2";
     static persistKey = "UnreadSettingNoticeStore2";
     initialize(e) {
-        null != e && (C.channels = e.channels), this.syncWith([d.Ay], N), this.waitFor(s.default, r.A, o.A, c.A, d.Ay)
+        null != e && (C.channels = e.channels), this.syncWith([d.Ay], N), this.waitFor(a.default, r.A, o.A, c.A, d.Ay)
     }
     getState() {
         return C
@@ -99,13 +99,13 @@ class R extends l.Ay.PersistedStore {
                 i = Math.min(h.default.age(e.id), Date.now() - n.getTime()),
                 l = C.channels[e.id];
             if (null == l || l.lastActionTime < Date.now() - E) return !1;
-            for (let e of p)
+            for (let e of _)
                 if (i < e.timeSinceJoin && (l.numSends >= e.sends || l.viewDuration >= e.viewTime)) return !0;
             return !1
         }(t) && (delete C.channels[e], x.add(e), (0, m.mA)(t.guild_id, t.id, g.e.ALL_MESSAGES), !0)
     }
 }
-let M = new R(a.h, {
+let M = new R(s.h, {
         CHANNEL_SELECT: function() {
             let e = v();
             return S = c.A.getChannelId(), I = Date.now(), e
@@ -121,7 +121,7 @@ let M = new R(a.h, {
             })
         },
         MESSAGE_CREATE: function(e) {
-            if (e.optimistic || e.isPushNotification || e.message.author?.id !== s.default.getId() || !b(e.channelId)) return !1;
+            if (e.optimistic || e.isPushNotification || e.message.author?.id !== a.default.getId() || !b(e.channelId)) return !1;
             let t = y(e.channelId);
             t.lastActionTime = Date.now(), t.numSends++
         }

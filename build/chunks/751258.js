@@ -1,11 +1,11 @@
 /** chunk id: 751258 params = (module,exports,require) **/
 n.d(t, {
-    S: () => p
+    S: () => _
 });
 var i = n(791332),
     l = n.n(i),
-    a = n(715943),
-    s = n(843472),
+    s = n(715943),
+    a = n(843472),
     r = n(58149),
     o = n(508675),
     c = n(649963),
@@ -45,7 +45,7 @@ let A = /\\([*?+/])/g,
                 let {
                     channel: n
                 } = t;
-                if (null != n.guild_id) return a.A.changeNickname(n.guild_id, n.id, m.ME, e), {
+                if (null != n.guild_id) return s.A.changeNickname(n.guild_id, n.id, m.ME, e), {
                     content: ""
                 }
             }
@@ -60,8 +60,8 @@ let A = /\\([*?+/])/g,
                 if (n || !h.A.hasPresent(i.id)) return;
                 let l = h.A.getMessages(i.id).last();
                 if (null == l || null == l.id) return;
-                let a = o.Ay.getDisambiguatedEmojiContext(i.guild_id).getByName(e.trim().slice(2, -1));
-                if (null != a) return (0, c.BB)(i.id, l.id, (0, d.jq)(a)), {
+                let s = o.Ay.getDisambiguatedEmojiContext(i.guild_id).getByName(e.trim().slice(2, -1));
+                if (null != s) return (0, c.BB)(i.id, l.id, (0, d.jq)(s)), {
                     content: ""
                 }
             }
@@ -78,10 +78,10 @@ let A = /\\([*?+/])/g,
                 if (null == l || null == l.id) return {
                     content: ""
                 };
-                let [a, r, o, c] = Array.from(e.match(this.match.regex) ?? []), d = c?.split("") ?? [];
+                let [s, r, o, c] = Array.from(e.match(this.match.regex) ?? []), d = c?.split("") ?? [];
                 r = r.replace(A, (e, t) => t), o = o.replace(A, (e, t) => t);
                 let u = d.includes("g") ? l.content.replaceAll(r, o) : l.content.replace(r, o);
-                return (null == u || "" === u.trim()) && 0 === l.attachments.length ? s.A.deleteMessage(i.id, l.id) : u !== l.content && s.A.editMessage(i.id, l.id, {
+                return (null == u || "" === u.trim()) && 0 === l.attachments.length ? a.A.deleteMessage(i.id, l.id) : u !== l.content && a.A.editMessage(i.id, l.id, {
                     content: u
                 }), {
                     content: ""
@@ -95,22 +95,22 @@ let A = /\\([*?+/])/g,
         }
     };
 
-function _(e, t, n, i) {
+function p(e, t, n, i) {
     return r.Ay.trackWithMetadata(m.HAw.SLASH_COMMAND_USED, {
         command: e
     }), t.action(n, i)
 }
 
-function p(e, t) {
+function _(e, t) {
     for (let n in g) {
         let i = g[n];
         if (null != i.match) {
-            if (i.match.regex?.test(e)) return _(n, i, e, t);
+            if (i.match.regex?.test(e)) return p(n, i, e, t);
             continue
         }
         if (u.D_.getSetting() && "/" === e[0]) {
             let l = e.split(" ");
-            if (n === l[0].slice(1) && null != i.action) return _(n, i, l.slice(1).join(" "), t)
+            if (n === l[0].slice(1) && null != i.action) return p(n, i, l.slice(1).join(" "), t)
         }
     }
 }

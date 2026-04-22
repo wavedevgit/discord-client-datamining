@@ -4,11 +4,11 @@ n.d(t, {
 });
 var i = n(550946),
     l = n(562153),
-    a = n(806931),
-    s = n(985018);
+    s = n(806931),
+    a = n(985018);
 
 function r(e, t, n) {
-    if (t.type === a.lp.ACTIVITY) return n?.name ?? null;
+    if (t.type === s.lp.ACTIVITY) return n?.name ?? null;
     let r = (0, i.t)(e.guild_id, t.user?.id);
-    return l.Ay.getName(e.getGuildId(), e.id, t.user) + (r ? ` ${s.intl.string(s.t["pFO/Ph"])}` : "")
+    return l.Ay.getName(e.getGuildId(), e.id, t.user) + (r ? ` ${a.intl.string(a.t["pFO/Ph"])}` : "")
 }

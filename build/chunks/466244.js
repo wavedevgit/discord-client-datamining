@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(158954),
-    a = n(397927),
-    s = n(915089),
+    s = n(397927),
+    a = n(915089),
     r = n(985018),
     o = n(786147);
 let c = () => n.e("44678").then(n.t.bind(n, 144759, 19)).then(e => {
@@ -16,27 +16,27 @@ let c = () => n.e("44678").then(n.t.bind(n, 144759, 19)).then(e => {
         return t
     }),
     d = e => {
-        let t = (0, s.GV)();
+        let t = (0, a.GV)();
         return (0, i.jsxs)(l.dWK, {
             ...e,
             size: "sm",
             children: [(0, i.jsx)("div", {
                 className: o.Mp,
-                children: (0, i.jsx)(a.akl, {
+                children: (0, i.jsx)(s.akl, {
                     importData: c,
                     className: o.WG
                 })
             }), (0, i.jsx)(l.cwr, {
                 children: (0, i.jsxs)("div", {
                     className: o.lq,
-                    children: [(0, i.jsx)(a.Heading, {
+                    children: [(0, i.jsx)(s.Heading, {
                         variant: "heading-lg/semibold",
                         className: o.wx,
                         id: t,
                         children: r.intl.format(r.t.z9qozJ, {
                             guildName: e.guildName
                         })
-                    }), (0, i.jsx)(a.Text, {
+                    }), (0, i.jsx)(s.Text, {
                         variant: "text-sm/medium",
                         color: "text-default",
                         children: r.intl.string(r.t.nwpqyc)

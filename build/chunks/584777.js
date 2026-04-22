@@ -4,8 +4,8 @@ n.d(t, {
     A: () => w
 }), n(321073);
 var l = n(311907),
-    a = n(73153),
-    s = n(450827),
+    s = n(73153),
+    a = n(450827),
     r = n(49463),
     o = n(21119),
     c = n(95701),
@@ -15,8 +15,8 @@ var l = n(311907),
     m = n(153488),
     A = n(205761),
     g = n(994500),
-    _ = n(287809),
-    p = n(652215);
+    p = n(287809),
+    _ = n(652215);
 let f = !1,
     E = "",
     C = 0,
@@ -39,8 +39,8 @@ function y() {
     if (0 === E.trim().length) {
         var t;
         let n, l;
-        return null != i && i.clearQuery(), t = e, n = g.A.getFriendIDs(), l = _.default.getCurrentUser(), l?.isStaff() && (n = Array.from(new Set([...n, ..._.default.filter(e => e.isStaff() && e.id !== l.id, !1).map(e => e.id)]))), t?.isPrivate() && (n = n.filter(e => !t.recipients.includes(e))), x = n.reduce((e, t) => {
-            let n = _.default.getUser(t);
+        return null != i && i.clearQuery(), t = e, n = g.A.getFriendIDs(), l = p.default.getCurrentUser(), l?.isStaff() && (n = Array.from(new Set([...n, ...p.default.filter(e => e.isStaff() && e.id !== l.id, !1).map(e => e.id)]))), t?.isPrivate() && (n = n.filter(e => !t.recipients.includes(e))), x = n.reduce((e, t) => {
+            let n = p.default.getUser(t);
             return null == n || n.isProvisional || e.push({
                 user: n,
                 comparator: u.Ay.getName(n)
@@ -49,13 +49,13 @@ function y() {
     }
     let n = null != e ? e.recipients : [];
     if (null != i) {
-        let e, t, l, a = _.default.getCurrentUser(),
-            s = a?.isStaff() ?? !1;
+        let e, t, l, s = p.default.getCurrentUser(),
+            a = s?.isStaff() ?? !1;
         i.setQuery({
             query: E,
             filters: {
                 friends: !0,
-                staff: s,
+                staff: a,
                 provisional: !1
             },
             blacklist: n,
@@ -67,9 +67,9 @@ function y() {
             })), l = {}, e.forEach(e => {
                 let n = A.A.getScoreWithoutFetchingLatest(e.id),
                     i = e.getRecipientId(),
-                    a = .2 * !!g.A.isFriend(i),
-                    s = .1 * (null != h.A.getDMFromUserId(i));
-                l[i] = 1 + n / t + a + s
+                    s = .2 * !!g.A.isFriend(i),
+                    a = .1 * (null != h.A.getDMFromUserId(i));
+                l[i] = 1 + n / t + s + a
             }), l)
         })
     }
@@ -83,7 +83,7 @@ function b() {
 }
 
 function j(e, t) {
-    if (m.A.hasConsented(p.YAq.PERSONALIZATION)) {
+    if (m.A.hasConsented(_.YAq.PERSONALIZATION)) {
         let n = o.A.getUserAffinity(e.user.id)?.communicationProbability ?? 0,
             i = o.A.getUserAffinity(t.user.id)?.communicationProbability ?? 0;
         if (n !== i) return i - n
@@ -102,7 +102,7 @@ function R(e) {
             comparator: i
         }
         of t) {
-        let t = _.default.getUser(e);
+        let t = p.default.getUser(e);
         null != t && n.push({
             user: t,
             comparator: i
@@ -112,16 +112,16 @@ function R(e) {
 }
 
 function M() {
-    return null != i && (i.destroy(), i = null), s.A.getUserSearchContext(R, 1e3)
+    return null != i && (i.destroy(), i = null), a.A.getUserSearchContext(R, 1e3)
 }
 
 function L(e) {
-    if (e.key !== p.TLS) return !1;
+    if (e.key !== _.TLS) return !1;
     f = !0, b(), i = M(), T = null, N("")
 }
 
 function D(e) {
-    if (e.key !== p.TLS) return !1;
+    if (e.key !== _.TLS) return !1;
     O()
 }
 
@@ -131,7 +131,7 @@ function O() {
 class P extends l.Ay.Store {
     static displayName = "PrivateChannelRecipientsInviteStore";
     initialize() {
-        this.waitFor(h.A, m.A, r.A, A.A, g.A, o.A, _.default), this.syncWith([_.default, h.A], y), this.syncWith([g.A], b)
+        this.waitFor(h.A, m.A, r.A, A.A, g.A, o.A, p.default), this.syncWith([p.default, h.A], y), this.syncWith([g.A], b)
     }
     getResults() {
         return x
@@ -155,7 +155,7 @@ class P extends l.Ay.Store {
         }
     }
 }
-let k = new P(a.h, {
+let k = new P(s.h, {
         CONNECTION_OPEN: function() {
             v()
         },

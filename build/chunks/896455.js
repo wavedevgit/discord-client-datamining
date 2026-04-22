@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(158954),
-    s = n(397927),
+    s = n(158954),
+    a = n(397927),
     r = n(151282),
     o = n(388096),
     c = n(985018);
@@ -19,7 +19,7 @@ function u(e) {
         onClose: u,
         defaultValue: h
     } = e, [m, A] = l.useState(h);
-    return (0, i.jsx)(a.Modal, {
+    return (0, i.jsx)(s.Modal, {
         transitionState: n,
         size: "md",
         title: c.intl.string(c.t["3+ii4F"]),
@@ -35,7 +35,7 @@ function u(e) {
                 (0, r.yF)({
                     channelId: t.id,
                     scheduledTimestamp: m.toISOString()
-                }), (0, s.OoC)(d)
+                }), (0, a.OoC)(d)
             }
         }],
         children: (0, i.jsx)(o.A, {

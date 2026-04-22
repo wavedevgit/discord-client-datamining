@@ -1,13 +1,13 @@
 /** chunk id: 957283 params = (module,exports,require) **/
 n.d(t, {
-    N: () => s
+    N: () => a
 });
 var i = n(311907),
     l = n(940382),
-    a = n(761640);
+    s = n(761640);
 
-function s() {
-    let e = (0, i.bG)([a.Ay], () => a.Ay.getSidebarState(a.fe)),
+function a() {
+    let e = (0, i.bG)([s.Ay], () => s.Ay.getSidebarState(s.fe)),
         t = e?.type === l.PE.VIEW_MESSAGE_REQUEST ? e : null;
     return {
         channelId: t?.channelId,

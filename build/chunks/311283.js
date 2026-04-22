@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(64700);
 let l = new Map,
-    a = new Map,
-    s = new Map;
+    s = new Map,
+    a = new Map;
 
 function r(e) {
     return l.has(e) || l.set(e, !1), l.get(e)
@@ -14,7 +14,7 @@ function r(e) {
 function o(e) {
     var t;
     let n, i, l, r;
-    return a.has(e) || (a.set(e, new Set), s.set(e, (t = e, n = e => {
+    return s.has(e) || (s.set(e, new Set), a.set(e, (t = e, n = e => {
         c(e.shiftKey, t)
     }, i = e => {
         c(e.shiftKey, t)
@@ -24,7 +24,7 @@ function o(e) {
         c(!1, t)
     }, t.addEventListener("keydown", n), t.addEventListener("keyup", i), t.addEventListener("mousemove", l), t.addEventListener("blur", r), () => {
         t.removeEventListener("keydown", n), t.removeEventListener("keyup", i), t.removeEventListener("mousemove", l), t.removeEventListener("blur", r)
-    }))), a.get(e)
+    }))), s.get(e)
 }
 
 function c(e, t) {
@@ -39,7 +39,7 @@ function d() {
             n(e)
         };
         return o(e).add(t), () => {
-            o(e).delete(t), 0 === o(e).size && (s.get(e)?.(), s.delete(e), a.delete(e), l.delete(e))
+            o(e).delete(t), 0 === o(e).size && (a.get(e)?.(), a.delete(e), s.delete(e), l.delete(e))
         }
     }, [e]), t
 }

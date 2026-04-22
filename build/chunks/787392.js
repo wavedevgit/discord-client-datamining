@@ -4,8 +4,8 @@ n.d(t, {
 }), n(393431), n(532706), n(42231), n(232424), n(949626), n(767709), n(65162);
 var i = n(311907),
     l = n(149597),
-    a = n(73153),
-    s = n(661191);
+    s = n(73153),
+    a = n(661191);
 let r = {};
 class o extends i.Ay.PersistedStore {
     static displayName = "VerifiedKeyStore";
@@ -26,21 +26,21 @@ class o extends i.Ay.PersistedStore {
         return null != this.getKeyTrustedAt(e, t)
     }
     getUserIds() {
-        return s.default.keys(r)
+        return a.default.keys(r)
     }
     getUserVerifiedKeys(e) {
         return r[e]
     }
 }
-let c = new o(a.h, {
+let c = new o(s.h, {
     SECURE_FRAMES_VERIFIED_KEY_CREATE: function(e) {
         let t, {
                 userId: n,
                 key: i
             } = e,
-            a = (t = r[n] ?? {}, r[n] = t, t),
-            s = new Uint8Array(i);
-        a[(0, l.uo)(s)] = Date.now()
+            s = (t = r[n] ?? {}, r[n] = t, t),
+            a = new Uint8Array(i);
+        s[(0, l.uo)(a)] = Date.now()
     },
     SECURE_FRAMES_VERIFIED_KEY_DELETE: function(e) {
         let {
@@ -49,8 +49,8 @@ let c = new o(a.h, {
         } = e, i = r[t];
         if (null == i) return !1;
         let l = delete i[n],
-            a = !1;
-        return 0 === Object.keys(i).length && (delete r[t], a = !0), l || a
+            s = !1;
+        return 0 === Object.keys(i).length && (delete r[t], s = !0), l || s
     },
     SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: function(e) {
         let {

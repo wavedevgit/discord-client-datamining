@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(503698),
-    a = n.n(l),
-    s = n(311907),
+    s = n.n(l),
+    a = n(311907),
     r = n(397927),
     o = n(302959),
     c = n(592182),
@@ -17,8 +17,8 @@ var l = n(503698),
     m = n(769015),
     A = n(329554),
     g = n(734057),
-    _ = n(877315),
-    p = n(607407),
+    p = n(877315),
+    _ = n(607407),
     f = n(652215),
     E = n(985018),
     C = n(380668),
@@ -39,7 +39,7 @@ function S(e) {
         showHeader: N = !1,
         hideTip: y = !1,
         className: b
-    } = e, j = (0, s.bG)([d.A], () => {
+    } = e, j = (0, a.bG)([d.A], () => {
         if (null != u) {
             if (null != u.id) return d.A.getApplication(u.id);
             else if (null != u.name) return d.A.getApplicationByName(u.name)
@@ -61,7 +61,7 @@ function S(e) {
         }), null != T ? (0, i.jsxs)(r.DUT, {
             onClick: T,
             className: C.i1,
-            children: [(0, i.jsx)(p.A, {
+            children: [(0, i.jsx)(_.A, {
                 className: C.oz,
                 stream: t
             }), S ? (0, i.jsx)("div", {
@@ -70,12 +70,12 @@ function S(e) {
                     variant: "text-sm/normal",
                     color: "none",
                     className: C.ON,
-                    children: (0, _.A)(t, n, g, I)
+                    children: (0, p.A)(t, n, g, I)
                 })
             }) : null]
         }) : (0, i.jsxs)("div", {
             className: C.i1,
-            children: [(0, i.jsx)(p.A, {
+            children: [(0, i.jsx)(_.A, {
                 className: C.oz,
                 stream: t
             }), S ? (0, i.jsx)("div", {
@@ -84,7 +84,7 @@ function S(e) {
                     variant: "text-sm/normal",
                     color: "none",
                     className: C.ON,
-                    children: (0, _.A)(t, n, g, I)
+                    children: (0, p.A)(t, n, g, I)
                 })
             }) : null]
         }), (0, i.jsxs)("div", {
@@ -121,7 +121,7 @@ function S(e) {
     return (0, i.jsx)("div", {
         className: C.yt,
         children: (0, i.jsx)("div", {
-            className: a()(x.popover, C.Rh, b),
+            className: s()(x.popover, C.Rh, b),
             children: M
         })
     })
@@ -140,9 +140,9 @@ function I(e) {
         onAction: S,
         showHeader: I = !1,
         wrapperClassName: T
-    } = e, v = (0, s.bG)([g.A], () => g.A.getChannel(t.channelId));
+    } = e, v = (0, a.bG)([g.A], () => g.A.getChannel(t.channelId));
     return null == v ? null : (0, i.jsxs)("div", {
-        className: a()(C.yt, T),
+        className: s()(C.yt, T),
         children: [I && (0, i.jsxs)("div", {
             className: C.mg,
             children: [(0, i.jsx)(r.Text, {
@@ -155,7 +155,7 @@ function I(e) {
         }), null != x ? (0, i.jsxs)(r.DUT, {
             onClick: x,
             className: C.GE,
-            children: [(0, i.jsx)(p.A, {
+            children: [(0, i.jsx)(_.A, {
                 className: C.oz,
                 stream: t
             }), m ? (0, i.jsx)("div", {
@@ -164,12 +164,12 @@ function I(e) {
                     variant: "text-sm/normal",
                     color: "none",
                     className: C.ON,
-                    children: (0, _.A)(t, l, h, f)
+                    children: (0, p.A)(t, l, h, f)
                 })
             }) : null]
         }) : (0, i.jsxs)("div", {
             className: C.GE,
-            children: [(0, i.jsx)(p.A, {
+            children: [(0, i.jsx)(_.A, {
                 className: C.oz,
                 stream: t
             }), m ? (0, i.jsx)("div", {
@@ -178,7 +178,7 @@ function I(e) {
                     variant: "text-sm/normal",
                     color: "none",
                     className: C.ON,
-                    children: (0, _.A)(t, l, h, f)
+                    children: (0, p.A)(t, l, h, f)
                 })
             }) : null]
         }), (0, i.jsx)("div", {

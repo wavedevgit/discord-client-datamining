@@ -4,14 +4,14 @@ r.r(_), r.d(_, {
 });
 var t = r(627968),
     o = r(64700),
-    s = r(503698),
-    d = r.n(s),
-    n = r(397927),
+    n = r(503698),
+    d = r.n(n),
+    s = r(397927),
     i = r(409013),
     a = r(785330),
-    b = r(856535),
+    c = r(856535),
     l = r(475073),
-    c = r(611924),
+    b = r(611924),
     m = r(594832),
     g = r(621653),
     u = r(983545),
@@ -19,50 +19,50 @@ var t = r(627968),
     h = r(155486),
     I = r(938191),
     f = r(758836),
-    w = r(652215),
-    x = r(647685);
+    x = r(652215),
+    w = r(647685);
 let C = e => {
     let {
         layoutId: _
     } = e;
-    (0, c.P)(l.a), (0, g.g)(), (0, m.pE)();
+    (0, b.P)(l.a), (0, g.g)(), (0, m.pE)();
     let r = o.useRef(null);
     o.useEffect(() => {
         r.current?.focus()
     }, []);
-    let s = (0, I.yB)("CollectiblesShopLayout");
+    let n = (0, I.yB)("CollectiblesShopLayout");
     (0, I.gB)();
     let {
         selectedTab: C,
-        transitionToTab: R
+        transitionToTab: v
     } = (0, u.o)(f.G2.LAYOUT), {
-        layout: v,
+        layout: R,
         loading: j,
         error: k
-    } = (0, b.A)(w.FYj, _);
+    } = (0, c.A)(x.FYj, _);
     return (0, t.jsxs)("div", {
-        className: d()(x.bx, {
-            [I.jP]: s
+        className: d()(w.bx, {
+            [I.jP]: n
         }),
         ref: r,
         tabIndex: -1,
         children: [(0, t.jsx)(h.G, {
-            handleTransition: R,
+            handleTransition: v,
             selectedTab: C
-        }), (0, t.jsx)(n.HOs, {
+        }), (0, t.jsx)(s.HOs, {
             children: (0, t.jsx)("div", {
-                className: x.Qs,
-                children: j || null == _ ? (0, t.jsx)(n.y$y, {}) : null != k ? (0, t.jsx)(p.h, {
+                className: w.Qs,
+                children: j || null == _ ? (0, t.jsx)(s.y$y, {}) : null != k ? (0, t.jsx)(p.h, {
                     errorMessage: k.message,
                     errorOrigin: p.A.SHOP_PAGE,
                     onRetry: () => {
                         (0, i.v)({
-                            tenantId: w.FYj,
+                            tenantId: x.FYj,
                             layoutId: _
                         })
                     }
-                }) : null != v ? (0, t.jsx)(a.Ay, {
-                    layout: v
+                }) : null != R ? (0, t.jsx)(a.Ay, {
+                    layout: R
                 }) : null
             })
         })]

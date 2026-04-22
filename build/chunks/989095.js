@@ -1,11 +1,11 @@
 /** chunk id: 989095 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => s
 });
 var i = n(110259),
     l = n(139286);
 
-function a(e) {
+function s(e) {
     return (0, l.A)({
         type: i.ImpressionTypes.VIEW,
         name: i.ImpressionNames.NOTIFICATION_SETTING_UNREAD_NUDGE

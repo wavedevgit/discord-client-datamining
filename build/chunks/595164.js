@@ -14,15 +14,15 @@ var i = t(627968),
     p = t(397927),
     m = t(726656),
     _ = t(793574),
-    f = t(688810),
-    S = t(531260),
+    S = t(688810),
+    f = t(531260),
     x = t(94420),
     g = t(404374),
     b = t(543767),
     h = t(881489),
     I = t(477421),
-    E = t(234419),
-    y = t(163538),
+    y = t(234419),
+    E = t(163538),
     P = t(363476),
     A = t(934581),
     N = t(72140),
@@ -153,14 +153,14 @@ function z(e) {
         legacyDescriptionContent: d,
         refreshDescriptionContent: m,
         fractionalBanner: _,
-        existingSlotNotice: f,
-        discountCallout: S,
+        existingSlotNotice: S,
+        discountCallout: f,
         refreshDiscountCallout: x,
         legacyPricingNotes: g,
         refreshPricingNotes: b
     } = e;
     return (0, i.jsxs)("div", {
-        children: [_, d, f, (0, i.jsxs)("div", {
+        children: [_, d, S, (0, i.jsxs)("div", {
             className: W.mP,
             children: [(0, i.jsxs)("div", {
                 className: W.E6,
@@ -195,7 +195,7 @@ function z(e) {
             })]
         }), g.map((e, n) => (0, i.jsx)(l.Fragment, {
             children: e
-        }, n)), S]
+        }, n)), f]
     })
 }
 
@@ -211,8 +211,8 @@ function K(e) {
         refreshSubtotalContent: d,
         legacyDescriptionContent: m,
         refreshDescriptionContent: _,
-        fractionalBanner: f,
-        existingSlotNotice: S,
+        fractionalBanner: S,
+        existingSlotNotice: f,
         discountCallout: x,
         refreshDiscountCallout: g,
         legacyPricingNotes: b,
@@ -220,7 +220,7 @@ function K(e) {
     } = e;
     return (0, i.jsxs)("div", {
         className: B.xY,
-        children: [f, (0, i.jsxs)("div", {
+        children: [S, (0, i.jsxs)("div", {
             className: B.K3,
             children: [(0, i.jsx)(p.Text, {
                 variant: "text-md/medium",
@@ -235,7 +235,7 @@ function K(e) {
                 className: B.kX,
                 children: a
             })]
-        }), _, S, (0, i.jsxs)("div", {
+        }), _, f, (0, i.jsxs)("div", {
             className: B.fh,
             children: [(0, i.jsxs)("div", {
                 className: B.fX,
@@ -327,12 +327,12 @@ function q(e) {
                 existingAvailableSlots: F,
                 priceOptions: V
             } = e,
-            z = (0, y.A)(),
+            z = (0, E.A)(),
             K = t.interval,
             q = t.intervalCount,
             $ = (0, c.bG)([T.A], () => T.A.getForSkuAndInterval((0, R.mH)(w.pe.GUILD), K, q)),
             Q = (0, c.bG)([v.default], () => v.default.getCurrentUser()),
-            X = (0, S.A)({
+            X = (0, f.A)({
                 forceFetch: !1
             });
         o()(null != $, "Missing guildBoostingSubscriptionPlan");
@@ -346,7 +346,7 @@ function q(e) {
             et = null == z || !w.uJ.has(z) || null == en,
             {
                 analyticsLocations: ei
-            } = (0, f.Ay)(),
+            } = (0, S.Ay)(),
             [el, er] = (0, b.Kq)({
                 subscriptionId: u?.id,
                 items: Z,
@@ -362,7 +362,7 @@ function q(e) {
         l.useLayoutEffect(() => {
             a(es)
         }, [es, a]);
-        let ea = (0, E.V)()?.subscription_trial?.sku_id === w.pe.TIER_2,
+        let ea = (0, y.V)()?.subscription_trial?.sku_id === w.pe.TIER_2,
             eo = R.Ay.hasBoostDiscount(Q),
             ec = eo && null != u && R.Ay.isPremiumAtLeast(R.Ay.getPremiumType(u.planId), w.PremiumTypes.TIER_1),
             eu = el?.findInvoiceItemByPlanId($.id),
@@ -401,8 +401,8 @@ function q(e) {
             discountPercentage: (0, L.l9)(C.default.locale, w.oX / 100),
             freeSubscriptionCount: w.M4
         });
-        let ef = F.filter(e => (0, j.I5)(e)).length,
-            eS = (0, R.J$)(V.paymentSourceId),
+        let eS = F.filter(e => (0, j.I5)(e)).length,
+            ef = (0, R.J$)(V.paymentSourceId),
             {
                 ipCountryCode: ex
             } = (0, I.A)(),
@@ -422,13 +422,13 @@ function q(e) {
             }),
             eI = e_.showExistingSlotNotice ? (0, i.jsx)(J, {
                 existingAvailableSlots: F,
-                canceledCount: ef,
+                canceledCount: eS,
                 premiumSubscription: u
             }) : null,
-            eE = e_.showFractionalPremiumBanner ? (0, i.jsx)(A.vi, {
+            ey = e_.showFractionalPremiumBanner ? (0, i.jsx)(A.vi, {
                 fractionalPremiumInfo: X
             }) : null,
-            ey = eS ? function(e) {
+            eE = ef ? function(e) {
                 let {
                     intervalType: n,
                     intervalCount: t = 1
@@ -438,7 +438,7 @@ function q(e) {
                 intervalType: K,
                 intervalCount: q
             }) ?? G.intl.string(G.t.K9Bmze) : G.intl.string(G.t.K9Bmze),
-            eP = es ? (0, i.jsx)(p.y$y, {}) : eS ? (0, D.$g)(ed.amount, ed.currency) : function(e) {
+            eP = es ? (0, i.jsx)(p.y$y, {}) : ef ? (0, D.$g)(ed.amount, ed.currency) : function(e) {
                 let {
                     amount: n,
                     currency: t,
@@ -463,7 +463,7 @@ function q(e) {
                 currency: ed.currency,
                 intervalType: K,
                 intervalCount: q,
-                isPrepaidPaymentSource: eS
+                isPrepaidPaymentSource: ef
             }),
             eN = es ? (0, i.jsx)(p.y$y, {}) : (0, D.$g)(ep, ed.currency),
             eC = [],
@@ -485,14 +485,14 @@ function q(e) {
             message: eT
         }, "localized-pricing")), {
             isLoading: es,
-            planLabel: ey,
+            planLabel: eE,
             planPriceContent: eP,
             subtotalContent: eA,
             refreshSubtotalContent: eN,
             legacyDescriptionContent: eb,
             refreshDescriptionContent: eh,
             existingSlotNotice: eI,
-            fractionalBanner: eE,
+            fractionalBanner: ey,
             legacyPricingNotes: eC,
             refreshPricingNotes: ev,
             discountCallout: "reverse_trial" === e_.upsellVariant ? (0, i.jsx)(N.G, {}) : (0, i.jsx)(N.A, {

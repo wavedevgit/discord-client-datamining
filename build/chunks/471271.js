@@ -1,11 +1,11 @@
 /** chunk id: 471271 params = (module,exports,require) **/
 n.d(t, {
-    t: () => p
+    t: () => _
 });
 var i = n(64700),
     l = n(424266),
-    a = n.n(l),
-    s = n(198982),
+    s = n.n(l),
+    a = n(198982),
     r = n(928658),
     o = n(622543),
     c = n(576622),
@@ -15,52 +15,52 @@ var i = n(64700),
     m = n(570658),
     A = n(209079),
     g = n(687599),
-    _ = n(652215);
+    p = n(652215);
 
-function p(e) {
+function _(e) {
     let {
         user: t,
         onAcceptSuccess: n,
         onRejectSuccess: l,
-        onError: p
+        onError: _
     } = e, f = (0, A.A)(), [E, C] = i.useState(!1), [x, S] = i.useState(!1), [I, T] = i.useState(!1), [v, N] = i.useState(!1), [y, b] = i.useState(!1), j = E || x || I, R = i.useCallback(async e => {
         if (!j) {
             C(!0);
             try {
                 await (0, h.RK)(e), N(!0), n?.()
             } catch (t) {
-                let e = new s.LG(t);
-                p?.(e)
+                let e = new a.LG(t);
+                _?.(e)
             } finally {
                 C(!1)
             }
         }
-    }, [j, n, p]), M = i.useCallback(async e => {
+    }, [j, n, _]), M = i.useCallback(async e => {
         if (!j) {
             S(!0);
             try {
                 await (0, h.UK)(e), b(!0), l?.()
             } catch (t) {
-                let e = new s.LG(t);
-                p?.(e)
+                let e = new a.LG(t);
+                _?.(e)
             } finally {
                 S(!1)
             }
         }
-    }, [j, l, p]), L = i.useCallback(async e => {
+    }, [j, l, _]), L = i.useCallback(async e => {
         if (j) return;
         S(!0);
-        let t = a()(e, 50);
+        let t = s()(e, 50);
         try {
             for (let e of t) await (0, h.ST)(e);
             b(!0), l?.()
         } catch (t) {
-            let e = new s.LG(t);
-            p?.(e)
+            let e = new a.LG(t);
+            _?.(e)
         } finally {
             S(!1)
         }
-    }, [j, l, p]), D = i.useCallback(async e => {
+    }, [j, l, _]), D = i.useCallback(async e => {
         if (j) return;
         if (null != t && null == o.A.getMutualGuilds(t.id)) {
             T(!0);
@@ -75,7 +75,7 @@ function p(e) {
         }
         let n = async () => {
             let n = null != t ? o.A.getMutualGuilds(t.id)?.map(e => e.guild.id) : [];
-            u.default.track(_.HAw.MESSAGE_REQUEST_ACTION, {
+            u.default.track(p.HAw.MESSAGE_REQUEST_ACTION, {
                 action: g.LD.ACCEPT_CONFIRMATION_PROMPT,
                 channel_id: e,
                 mutual_guild_ids: n ?? [],
@@ -87,7 +87,7 @@ function p(e) {
             onConfirm: n,
             onCancel: () => {
                 let n = null != t ? o.A.getMutualGuilds(t.id)?.map(e => e.guild.id) : [];
-                u.default.track(_.HAw.MESSAGE_REQUEST_ACTION, {
+                u.default.track(p.HAw.MESSAGE_REQUEST_ACTION, {
                     action: g.LD.DISMISS_CONFIRMATION_PROMPT,
                     channel_id: e,
                     mutual_guild_ids: n ?? [],
@@ -97,7 +97,7 @@ function p(e) {
         })
     }, [R, j, t]), O = i.useCallback((e, t, n) => {
         let i = (i, l) => {
-                l && d.WY.updateSetting(i), i && null != t && (0, r.tJ)(t), R(e.id), u.default.track(_.HAw.MESSAGE_REQUEST_ACTION, {
+                l && d.WY.updateSetting(i), i && null != t && (0, r.tJ)(t), R(e.id), u.default.track(p.HAw.MESSAGE_REQUEST_ACTION, {
                     action: g.LD.ACCEPT_HAM_CONFIRMATION_PROMPT,
                     channel_id: e.id,
                     is_dont_show_again_checked: l,
@@ -109,7 +109,7 @@ function p(e) {
             channel: e,
             onConfirm: i,
             onCancel: () => {
-                u.default.track(_.HAw.MESSAGE_REQUEST_ACTION, {
+                u.default.track(p.HAw.MESSAGE_REQUEST_ACTION, {
                     action: g.LD.DISMISS_HAM_CONFIRMATION_PROMPT,
                     channel_id: e.id
                 })

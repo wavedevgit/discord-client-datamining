@@ -1,9 +1,9 @@
 /** chunk id: 785330 params = (module,exports,require) **/
 r.d(t, {
-    Ay: () => f,
+    Ay: () => g,
     F2: () => u,
     Qs: () => A,
-    Z_: () => g
+    Z_: () => v
 });
 var l = r(627968),
     n = r(64700),
@@ -109,7 +109,7 @@ let h = e => {
             onEmptyLayout: c
         })
     },
-    g = e => {
+    v = e => {
         let {
             templateId: t,
             tenantId: r,
@@ -130,4 +130,4 @@ let h = e => {
             onEmptyLayout: c
         })
     },
-    f = p
+    g = p

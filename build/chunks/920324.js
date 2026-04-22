@@ -6,8 +6,8 @@ var a = l(627968),
     r = l(64700),
     n = l(397927),
     s = l(561769),
-    i = l(41770),
-    o = l(53566),
+    o = l(41770),
+    i = l(53566),
     d = l(148702),
     c = l(785330),
     u = l(652215),
@@ -19,7 +19,7 @@ let m = {
         name: "Layout Builder",
         id: "layout-builder",
         component: () => {
-            let [e, t] = r.useState(JSON.stringify(i.uG, null, 2)), [l, n] = r.useState(e);
+            let [e, t] = r.useState(JSON.stringify(o.uG, null, 2)), [l, n] = r.useState(e);
             return r.useEffect(() => {
                 try {
                     (0, c.F2)(JSON.parse(e)) && n(e)
@@ -263,7 +263,7 @@ let m = {
                 text: t
             } = e;
             (0, x.useSyncMessages)(h.c);
-            let l = (0, o.S)(t);
+            let l = (0, i.S)(t);
             return (0, a.jsxs)("div", {
                 children: [(0, a.jsxs)(n.Text, {
                     variant: "text-lg/bold",

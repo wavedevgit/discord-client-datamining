@@ -57,7 +57,9 @@ function _(e) {
                     children: [(0, i.jsx)(r.A, {
                         guild: n,
                         invite: t,
-                        showGuildTag: !0
+                        showGuildTag: !0,
+                        highContrast: !0,
+                        hideEnglish: !0
                     }), null != f && "" !== f && (0, i.jsx)(s.Text, {
                         variant: "text-sm/normal",
                         color: "text-default",

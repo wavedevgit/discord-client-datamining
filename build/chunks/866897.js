@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(64700),
     l = n(843472),
-    a = n(843626),
-    s = n(294454),
+    s = n(843626),
+    a = n(294454),
     r = n(857071),
     o = n(517997),
     c = n(406704),
@@ -15,8 +15,8 @@ var i = n(64700),
     m = n(253932),
     A = n(961350),
     g = n(734057),
-    _ = n(580745),
-    p = n(834942),
+    p = n(580745),
+    _ = n(834942),
     f = n(320501),
     E = n(576705),
     C = n(957565),
@@ -56,7 +56,7 @@ let j = function(e, t, n) {
                 break;
             case "+":
                 (i || D) && function(e) {
-                    let t = null == e.guild_id || p.A.canChatInGuild(e.guild_id),
+                    let t = null == e.guild_id || _.A.canChatInGuild(e.guild_id),
                         n = m.jW.getSetting(),
                         {
                             disableReactionCreates: i
@@ -77,7 +77,7 @@ let j = function(e, t, n) {
                 (i || D) && (0, o.r)(P, O) && (n.preventDefault(), (0, y.$b)(P, O, n));
                 break;
             case "f":
-                (i || D) && (0, a.p)(O) && (n.preventDefault(), (0, s.fO)({
+                (i || D) && (0, s.p)(O) && (n.preventDefault(), (0, a.fO)({
                     message: O,
                     source: "keyboard-shortcut"
                 }));
@@ -96,7 +96,7 @@ let j = function(e, t, n) {
                 R && (n.preventDefault(), (0, y.cl)(P, O));
                 break;
             case "escape":
-                _.A.isEditing(P.id, O.id) ? l.A.endEditMessage(P.id) : x._.dispatch(b.jej.TEXTAREA_FOCUS)
+                p.A.isEditing(P.id, O.id) ? l.A.endEditMessage(P.id) : x._.dispatch(b.jej.TEXTAREA_FOCUS)
         }
     }, [e, t])
 }

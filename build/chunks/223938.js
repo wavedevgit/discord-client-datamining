@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073), n(323874), n(14289), n(35956);
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(284009),
     o = n.n(r),
     c = n(517738),
@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(990078),
     A = n(397927),
     g = n(608299),
-    _ = n(155718),
-    p = n(565150),
+    p = n(155718),
+    _ = n(565150),
     f = n(775602),
     E = n(793574),
     C = n(688810),
@@ -63,7 +63,7 @@ function Z(e, t, n) {
         media: {
             url: l,
             proxyUrl: l,
-            loadingState: _.TD.UNKNOWN,
+            loadingState: p.TD.UNKNOWN,
             flags: 0
         },
         description: t ?? void 0,
@@ -72,12 +72,12 @@ function Z(e, t, n) {
 }
 let X = l.memo(l.forwardRef(function(e, t) {
     let n, {
-            textValue: a,
+            textValue: s,
             richValue: r,
             className: d,
             id: h,
             required: m,
-            disabled: p,
+            disabled: _,
             accessibilityLabel: v,
             channel: y,
             type: b,
@@ -89,8 +89,8 @@ let X = l.memo(l.forwardRef(function(e, t) {
             onKeyDown: X,
             onSubmit: ei,
             promptToUpload: el,
-            canMentionRoles: ea,
-            canMentionChannels: es,
+            canMentionRoles: es,
+            canMentionChannels: ea,
             maxCharacterCount: er,
             placeholder: eo,
             "aria-describedby": ec,
@@ -101,11 +101,11 @@ let X = l.memo(l.forwardRef(function(e, t) {
             emojiPickerCloseOnModalOuterClick: eA,
             parentModalKey: eg
         } = e,
-        e_ = I.A.useField("channelDrafts")[y.id],
-        ep = e_?.title ?? "",
-        ef = e_?.heroFile,
-        eE = e_?.publish ?? !0,
-        eC = e_?.createThread ?? !0;
+        ep = I.A.useField("channelDrafts")[y.id],
+        e_ = ep?.title ?? "",
+        ef = ep?.heroFile,
+        eE = ep?.publish ?? !0,
+        eC = ep?.createThread ?? !0;
     o()(null != b, "chat input type must be set");
     let {
         analyticsLocations: ex
@@ -122,7 +122,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
         disabled: eR,
         canAttachFiles: eM,
         canEveryoneSendMessages: eL
-    } = (0, V.Sk)(y, b, ey, p), eD = !L.D_.useSetting() && !(0, w.isAndroidWeb)() && null != window.ResizeObserver, eO = !eD || !b.commands?.enabled || !j || "/" !== a, eP = (0, R.A)(), {
+    } = (0, V.Sk)(y, b, ey, _), eD = !L.D_.useSetting() && !(0, w.isAndroidWeb)() && null != window.ResizeObserver, eO = !eD || !b.commands?.enabled || !j || "/" !== s, eP = (0, R.A)(), {
         fontSize: ek
     } = (0, u.cf)([f.A], () => ({
         fontSize: f.A.fontSize,
@@ -132,13 +132,13 @@ let X = l.memo(l.forwardRef(function(e, t) {
     let {
         eventEmitter: eG,
         handleEditorSelectionChanged: eF
-    } = (0, V.ml)(eT, a, r), eB = l.useCallback(e => {
+    } = (0, V.ml)(eT, s, r), eB = l.useCallback(e => {
         let t = e => (e.shouldClear && ((0, I.x)(y.id, {
                 title: "",
                 heroFile: null
             }), eT.current?.blur()), e),
             n = [],
-            i = (ep.length > 0 ? ep : e.value.length > 0 ? e.value : J.intl.string(J.t["7Xm5QI"])).slice(0, z.Ign);
+            i = (e_.length > 0 ? e_ : e.value.length > 0 ? e.value : J.intl.string(J.t["7Xm5QI"])).slice(0, z.Ign);
         if (null == ef) return ei({
             ...e,
             announcementSendOptions: {
@@ -148,25 +148,25 @@ let X = l.memo(l.forwardRef(function(e, t) {
             }
         }).then(t);
         n.push({
-            type: _.I5.MEDIA_GALLERY,
+            type: p.I5.MEDIA_GALLERY,
             items: [Z(`attachment://${ef.name}`, null, !1)],
             id: "82733"
         }), e.value.length > 0 && n.push({
-            type: _.I5.TEXT_DISPLAY,
+            type: p.I5.TEXT_DISPLAY,
             content: e.value,
             id: "82744"
         });
         let l = P.A.getUploads(y.id, D.C.ChannelMessage),
-            a = l.filter(e => (e.isImage || e.isVideo) && e.filename !== ef?.name),
-            s = l.filter(e => !e.isImage && !e.isVideo && e.filename !== ef?.name),
-            r = a.map(e => Z(`attachment://${e.filename}`, e.description, e.spoiler));
+            s = l.filter(e => (e.isImage || e.isVideo) && e.filename !== ef?.name),
+            a = l.filter(e => !e.isImage && !e.isVideo && e.filename !== ef?.name),
+            r = s.map(e => Z(`attachment://${e.filename}`, e.description, e.spoiler));
         return r.length > 0 && n.push({
-            type: _.I5.MEDIA_GALLERY,
+            type: p.I5.MEDIA_GALLERY,
             items: r,
             id: "82755"
-        }), s.forEach((e, t) => {
+        }), a.forEach((e, t) => {
             n.push({
-                type: _.I5.FILE,
+                type: p.I5.FILE,
                 file: Z(`attachment://${e.filename}`, e.description, e.spoiler).media,
                 id: `${82766+t}`,
                 spoiler: e.spoiler,
@@ -182,7 +182,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                 publish: eE
             }
         }).then(t)
-    }, [ei, ep, ef, y.id, eC, eE, eU]), {
+    }, [ei, e_, ef, y.id, eC, eE, eU]), {
         submit: eH,
         handleSubmit: eV
     } = (0, V.Zx)(eB, b, eT, eN, y.id), {
@@ -209,7 +209,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
     } = (0, V.uW)(b, y.id), e3 = (0, V.NO)(eT), e7 = (0, V.Vu)(eH, b, eT), e9 = (0, V.HG)(eT), e6 = (0, V.C)({
         editorRef: eT,
         disabled: eR,
-        textValue: a,
+        textValue: s,
         channelId: y.id,
         chatInputType: b,
         submit: eB
@@ -217,7 +217,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
     (0, G.R)(eG, y.guild_id, y.id);
     let [e5, e4] = l.useState(!1), e8 = l.useCallback(() => {
         e1(), e4(!0)
-    }, [e1]), te = e5 || a.length > 0 || null != ef || ep.length > 0, {
+    }, [e1]), te = e5 || s.length > 0 || null != ef || e_.length > 0, {
         editorHeaderHeight: tt,
         paddingTop: tn
     } = (0, A.zhh)({
@@ -228,16 +228,16 @@ let X = l.memo(l.forwardRef(function(e, t) {
             friction: 15,
             clamp: !0
         }
-    }), ti = l.useRef(null), [tl, ta] = l.useState(!1), ts = l.useRef(!1), tr = l.useCallback(() => {
-        ts.current = !0;
+    }), ti = l.useRef(null), [tl, ts] = l.useState(!1), ta = l.useRef(!1), tr = l.useCallback(() => {
+        ta.current = !0;
         let e = setTimeout(() => {
-            ts.current && ta(!0)
+            ta.current && ts(!0)
         }, 100);
         return () => clearTimeout(e)
     }, []), to = l.useCallback(() => {
-        ts.current = !1;
+        ta.current = !1;
         let e = setTimeout(() => {
-            ts.current || ta(!1)
+            ta.current || ts(!1)
         }, 100);
         return () => clearTimeout(e)
     }, []), tc = l.useCallback(() => {
@@ -254,16 +254,16 @@ let X = l.memo(l.forwardRef(function(e, t) {
             value: ex,
             children: [(0, i.jsxs)("div", {
                 ref: eS,
-                className: s()(d, $.gM),
+                className: a()(d, $.gM),
                 onMouseDown: e8,
                 children: [(0, i.jsx)("div", {
                     ref: ev,
                     onScroll: eY,
-                    className: s()($.Ui, {
+                    className: a()($.Ui, {
                         [$.k6]: !em
                     }),
                     children: (0, i.jsxs)("div", {
-                        className: s()($.vW, q.vW),
+                        className: a()($.vW, q.vW),
                         children: [(0, i.jsxs)("div", {
                             className: q.rf,
                             children: [(0, i.jsxs)(c.animated.div, {
@@ -285,7 +285,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                     maxLength: 140,
                                     className: q.hz,
                                     placeholder: J.intl.string(J.t.Z8fYjO),
-                                    value: ep,
+                                    value: e_,
                                     onChange: e => (0, I.x)(y.id, {
                                         title: e.target.value
                                     })
@@ -300,7 +300,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                         id: h,
                                         focused: j,
                                         useSlate: eD,
-                                        textValue: a,
+                                        textValue: s,
                                         richValue: r,
                                         disabled: eR,
                                         placeholder: eo,
@@ -358,7 +358,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                             disabled: eR,
                             channel: y,
                             handleSubmit: eV,
-                            isEmpty: 0 === a.trim().length,
+                            isEmpty: 0 === s.trim().length,
                             showAllButtons: !0
                         })]
                     }), (0, i.jsx)("div", {
@@ -382,10 +382,10 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                 children: e => (0, i.jsx)(A.Button, {
                                     ...e,
                                     onClick: () => {
-                                        eH(`${ep.length>0?`# ${ep}
-`:""}${a}`)
+                                        eH(`${e_.length>0?`# ${e_}
+`:""}${s}`)
                                     },
-                                    disabled: 0 === a.length && 0 === ep.length,
+                                    disabled: 0 === s.length && 0 === e_.length,
                                     size: "sm",
                                     "aria-label": J.intl.string(J.t.TXNS7S),
                                     innerClassName: q.jo,
@@ -415,12 +415,12 @@ let X = l.memo(l.forwardRef(function(e, t) {
                     targetRef: eS,
                     ref: eW,
                     channel: y,
-                    canMentionRoles: ea,
-                    canMentionChannels: es,
+                    canMentionRoles: es,
+                    canMentionChannels: ea,
                     useNewSlashCommands: eD,
                     canOnlyUseTextCommands: !1,
                     canSendStickers: !0,
-                    textValue: a,
+                    textValue: s,
                     focused: j,
                     expressionPickerView: eQ,
                     type: b,
@@ -454,7 +454,7 @@ function Q(e) {
     let {
         channelId: t,
         canCreateThread: n
-    } = e, l = I.A.useField("channelDrafts")[t], a = l?.createThread ?? !0, s = l?.publish ?? !0;
+    } = e, l = I.A.useField("channelDrafts")[t], s = l?.createThread ?? !0, a = l?.publish ?? !0;
     return (0, i.jsxs)(A.W1t, {
         "data-menu-migrated": !0,
         "aria-label": J.intl.string(J.t["9WnJyo"]),
@@ -464,20 +464,20 @@ function Q(e) {
         children: [(0, i.jsx)(A.sLh, {
             id: "create-thread",
             label: J.intl.string(J.t.rBIGBL),
-            checked: n && a,
+            checked: n && s,
             disabled: !n,
             action: () => {
                 (0, I.x)(t, {
-                    createThread: !a
+                    createThread: !s
                 })
             }
         }), (0, i.jsx)(A.sLh, {
             id: "send-and-publish",
             label: J.intl.string(J.t.MFGE51),
-            checked: s,
+            checked: a,
             action: () => {
                 (0, I.x)(t, {
-                    publish: !s
+                    publish: !a
                 })
             }
         })]
@@ -488,12 +488,12 @@ function ee(e) {
     let {
         file: t,
         onRemoveHeroImage: n
-    } = e, [a, s] = l.useState();
+    } = e, [s, a] = l.useState();
     l.useEffect(() => {
         if (null == t || !1 === ["image/jpeg", "image/png", "image/webp", "image/gif"].includes(t.type)) return;
         let e = URL.createObjectURL(t);
-        return s(e), () => {
-            s(void 0), URL.revokeObjectURL(e)
+        return a(e), () => {
+            a(void 0), URL.revokeObjectURL(e)
         }
     }, [t]);
     let [r, o] = l.useState(!1), c = l.useCallback(() => {
@@ -501,13 +501,13 @@ function ee(e) {
     }, []), d = l.useCallback(() => {
         o(!1)
     }, []);
-    return null == a ? null : (0, i.jsxs)("div", {
+    return null == s ? null : (0, i.jsxs)("div", {
         onMouseEnter: c,
         onMouseLeave: d,
         className: q.Lb,
         "aria-hidden": !0,
         children: [(0, i.jsx)("img", {
-            src: a,
+            src: s,
             alt: J.intl.string(J.t["2ePvR8"]),
             className: q.c8
         }), r ? (0, i.jsx)(v.Ay, {
@@ -551,24 +551,24 @@ function en(e) {
     let {
         channel: t,
         onImageUploaded: n,
-        onFocus: a
-    } = e, s = l.useRef(null), r = async (e, i) => {
+        onFocus: s
+    } = e, a = l.useRef(null), r = async (e, i) => {
         let l = await (0, k.bX)(e, i.name, i.type),
-            a = {
+            s = {
                 id: (0, d.A)(),
                 file: l,
-                platform: p.xz.WEB,
+                platform: _.xz.WEB,
                 isThumbnail: !1,
                 origin: "file_picker"
             };
         g.A.addFile({
-            file: a,
+            file: s,
             channelId: t.id,
             draftType: D.C.ChannelMessage
         }), n(l)
     }, [o, c] = l.useState(!1), u = l.useCallback(() => {
         c(!0)
-    }, []), _ = l.useCallback(() => {
+    }, []), p = l.useCallback(() => {
         c(!1)
     }, []);
     return (0, i.jsx)("div", {
@@ -580,10 +580,10 @@ function en(e) {
             children: (0, i.jsxs)(A.DUT, {
                 className: q.qN,
                 onMouseOver: u,
-                onMouseOut: _,
-                onFocus: a,
+                onMouseOut: p,
+                onFocus: s,
                 children: [(0, i.jsx)(j.Ay, {
-                    ref: s,
+                    ref: a,
                     onChange: r,
                     "aria-hidden": !0,
                     tabIndex: -1,

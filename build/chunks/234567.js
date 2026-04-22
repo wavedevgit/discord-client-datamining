@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(503698),
-    a = n.n(l),
-    s = n(397927),
+    s = n.n(l),
+    a = n(397927),
     r = n(569989),
     o = n(84476);
 
@@ -20,8 +20,8 @@ function c(e) {
         disabled: u = !1,
         verified: h = !1
     } = e;
-    return (0, i.jsx)(s.DUT, {
-        className: a()(t, o.x6, {
+    return (0, i.jsx)(a.DUT, {
+        className: s()(t, o.x6, {
             [o.r9]: u
         }),
         onClick: u ? void 0 : d,
@@ -32,7 +32,7 @@ function c(e) {
             roleColor: n,
             roleName: l,
             verified: h,
-            children: c && (0, i.jsx)(s.PGe, {
+            children: c && (0, i.jsx)(a.PGe, {
                 size: "custom",
                 color: "currentColor",
                 height: 6,

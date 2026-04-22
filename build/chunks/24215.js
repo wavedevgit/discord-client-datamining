@@ -1,6 +1,6 @@
 /** chunk id: 24215 params = (module,exports,require) **/
 l.d(t, {
-    L: () => p
+    L: () => _
 });
 var n = l(627968),
     i = l(64700),
@@ -55,15 +55,15 @@ function A(e) {
         })]
     })
 }
-let p = () => {
+let _ = () => {
     let e = c.tz.useSetting(),
         {
             nickname: t,
             dmsAllowed: l,
             showActivity: u,
             setNickname: x,
-            setDmsAllowed: p,
-            setShowActivity: _,
+            setDmsAllowed: _,
+            setShowActivity: p,
             guildId: E,
             inviteCode: N
         } = (0, o.lD)(),
@@ -95,11 +95,11 @@ let p = () => {
         }), (0, n.jsx)(A, {
             label: g.intl.string(g.t["/2ed37"]),
             checked: l,
-            onChange: p
+            onChange: _
         }), (0, n.jsx)(h, {}), e && (0, n.jsx)(A, {
             label: g.intl.string(g.t.bN4m1G),
             checked: u,
-            onChange: _
+            onChange: p
         })]
     })
 }

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(990078),
     o = n(397927),
     c = n(793574),
@@ -15,12 +15,12 @@ var i = n(627968),
     m = n(167155),
     A = n(652215),
     g = n(648881);
-let _ = {
+let p = {
         [A.vkP.CONNECTED]: g.nf,
         [A.vkP.CONNECTING]: g._6,
         [A.vkP.ERROR]: g.Il
     },
-    p = {
+    _ = {
         [A.bFR.FINE]: g.LP,
         [A.bFR.AVERAGE]: g.mq,
         [A.bFR.BAD]: g.yA,
@@ -38,9 +38,9 @@ function E(e) {
         quality: t,
         largePing: n,
         ...l
-    } = e, a = f[t];
-    return (0, i.jsx)(a, {
-        className: s()(g.hU, {
+    } = e, s = f[t];
+    return (0, i.jsx)(s, {
+        className: a()(g.hU, {
             [g.kV]: n
         }),
         ...l
@@ -51,24 +51,24 @@ function C(e) {
     let {
         quality: t,
         lastPing: n,
-        state: a,
+        state: s,
         className: f,
         children: C,
         channelId: x,
         childrenAsSubtitle: S,
         connectionStatusTextVariant: I,
         hasVideo: T
-    } = e, v = l.useRef(null), N = a === A.S7L.RTC_CONNECTED, y = l.useCallback(e => (0, i.jsx)(h.A, {
+    } = e, v = l.useRef(null), N = s === A.S7L.RTC_CONNECTED, y = l.useCallback(e => (0, i.jsx)(h.A, {
         ...e,
         channelId: x
     }), [x]), {
         connectionStatus: b,
         connectionStatusText: j
-    } = u.A.getStatus(a, T);
+    } = u.A.getStatus(s, T);
     return (0, i.jsxs)("div", {
         className: g.pe,
         children: [(0, i.jsx)("div", {
-            className: s()(g.yH, p[t], f),
+            className: a()(g.yH, _[t], f),
             ref: v,
             children: (0, i.jsx)(o.YNO, {
                 targetElementRef: v,
@@ -101,7 +101,7 @@ function C(e) {
                                     text: j,
                                     textVariant: I,
                                     hasVideo: T,
-                                    className: _[b],
+                                    className: p[b],
                                     hasConnectedChannel: null != x
                                 })
                             }), S ? C : null]

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(311907),
     o = n(265872),
     c = n(990078),
@@ -16,15 +16,15 @@ var i = n(627968),
     m = n(692969),
     A = n(535296),
     g = n(240248),
-    _ = n(360469),
-    p = n(818348),
+    p = n(360469),
+    _ = n(818348),
     f = n(985018),
     E = n(391308);
 
 function C(e) {
     let t, {
             applicationId: n,
-            hideApplicationName: a
+            hideApplicationName: s
         } = e,
         o = (0, m.A)({
             location: "SocialLayerCommerceGameDetailsButton",
@@ -34,10 +34,10 @@ function C(e) {
         }),
         {
             name: A,
-            icon: p
+            icon: _
         } = (t = (0, r.bG)([u.A], () => u.A.getApplication(n)), l.useMemo(() => {
             if (null == t) return null;
-            let e = t.getIconURL(_.iu.SMALL);
+            let e = t.getIconURL(p.iu.SMALL);
             return (0, g.uJ)(e) ? null : {
                 name: t.name,
                 icon: () => (0, i.jsx)("div", {
@@ -51,17 +51,17 @@ function C(e) {
                 })
             }
         }, [t]) ?? {});
-    if (null == o || null == p) return null;
+    if (null == o || null == _) return null;
     let C = f.intl.string(f.t.ajHoOr);
     return (0, i.jsx)(c.m, {
         text: C,
         children: (0, i.jsxs)(d.DUT, {
-            className: s()(E.dY, E.ac, {
-                [E.M7]: a
+            className: a()(E.dY, E.ac, {
+                [E.M7]: s
             }),
             onClick: o,
             "aria-label": C,
-            children: [p(), !a && (0, i.jsx)(d.Text, {
+            children: [_(), !s && (0, i.jsx)(d.Text, {
                 variant: "text-sm/normal",
                 className: E.Wk,
                 children: A
@@ -74,10 +74,10 @@ function x(e) {
     let {
         userId: t,
         applicationId: n,
-        channel: a,
+        channel: s,
         hideWhenInactive: r,
         idle: u
-    } = e, [h, m] = l.useState(!1), g = l.useRef(null), _ = l.useCallback(() => m(!0), []), C = l.useCallback(() => m(!1), []), x = f.intl.string(f.t["wg/30i"]);
+    } = e, [h, m] = l.useState(!1), g = l.useRef(null), p = l.useCallback(() => m(!0), []), C = l.useCallback(() => m(!1), []), x = f.intl.string(f.t["wg/30i"]);
     return (0, i.jsx)(o.Y, {
         targetElementRef: g,
         shouldShow: h,
@@ -87,11 +87,11 @@ function x(e) {
         spacing: 8,
         onRequestClose: C,
         renderPopout: () => (0, i.jsx)(d.NPJ, {
-            theme: p.NJ.DARKER,
+            theme: _.NJ.DARKER,
             children: e => (0, i.jsx)(A.Z, {
                 className: e,
                 userId: t,
-                channel: a,
+                channel: s,
                 applicationId: n,
                 onClose: C
             })
@@ -102,7 +102,7 @@ function x(e) {
                 text: x,
                 shouldShow: !h && void 0,
                 children: (0, i.jsx)("div", {
-                    className: s()(E.V7, {
+                    className: a()(E.V7, {
                         [E.kl]: r,
                         [E.N7]: u
                     }),
@@ -110,7 +110,7 @@ function x(e) {
                         size: "sm",
                         variant: "overlay-secondary",
                         onClick: e => {
-                            e.stopPropagation(), _()
+                            e.stopPropagation(), p()
                         },
                         "aria-label": x,
                         icon: d.okO

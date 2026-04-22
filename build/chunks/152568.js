@@ -51,8 +51,8 @@ let I = e => {
         P = s === E.G2.ORBS,
         M = null != t.ctaRoute && "" !== t.ctaRoute,
         H = !0 !== t.disableCta && (null != t.ctaText && "" !== t.ctaText || M),
-        D = null != t.logoURL && "" !== t.logoURL,
-        w = r.useCallback(() => {
+        w = null != t.logoURL && "" !== t.logoURL,
+        D = r.useCallback(() => {
             if (k(!0), t.isDismissible) {
                 let e = t.dismissibleContentVersion ?? 0;
                 (0, d.$l)(i.M.COLLECTIBLES_SHOP_WIDE_BANNER, e, {
@@ -100,7 +100,7 @@ let I = e => {
                 children: (0, n.jsx)(c.JnF, {
                     size: "sm",
                     onClick: e => {
-                        e.stopPropagation(), w()
+                        e.stopPropagation(), D()
                     },
                     "aria-label": S.intl.string(S.t.WAI6xu)
                 })
@@ -152,7 +152,7 @@ let I = e => {
                                 e.stopPropagation(), G(t.ctaText ?? S.intl.string(S.t.jVcuVY))
                             },
                             text: t.ctaText ?? S.intl.string(S.t.jVcuVY)
-                        }), D && (0, n.jsx)("img", {
+                        }), w && (0, n.jsx)("img", {
                             src: t.logoURL,
                             alt: "",
                             className: v.bU

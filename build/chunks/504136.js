@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(448761),
     l = n(161204),
-    a = n(559149),
-    s = n(405269),
+    s = n(559149),
+    a = n(405269),
     r = n(661191),
     o = n(857069),
     c = n(694318),
@@ -17,8 +17,8 @@ function h(e) {
             channel: m,
             messages: A,
             oldestUnreadMessageId: g,
-            treatSpam: _,
-            summaries: p,
+            treatSpam: p,
+            summaries: _,
             selectedSummary: f,
             selectedConversation: E
         } = e,
@@ -27,26 +27,26 @@ function h(e) {
         S = null != g ? r.default.extractTimestamp(g) : null,
         I = null;
     return A.forEach(e => {
-        var a, T;
+        var s, T;
         let v, N;
-        if (null != p && p.length > 0) {
+        if (null != _ && _.length > 0) {
             let t = r.default.extractTimestamp(e.id);
-            for (let e = 0; e < p?.length; e++) {
-                if (null == p[e]) continue;
-                let n = r.default.extractTimestamp(p[e].startId),
-                    i = r.default.extractTimestamp(p[e].endId);
+            for (let e = 0; e < _?.length; e++) {
+                if (null == _[e]) continue;
+                let n = r.default.extractTimestamp(_[e].startId),
+                    i = r.default.extractTimestamp(_[e].endId);
                 if (t >= n && t <= i) {
-                    if (I === p[e].id) break;
+                    if (I === _[e].id) break;
                     C.push({
                         type: u.TZK.DIVIDER,
-                        content: p[e].topic,
-                        contentKey: p[e].id
-                    }), I = p[e].id;
+                        content: _[e].topic,
+                        contentKey: _[e].id
+                    }), I = _[e].id;
                     break
                 }
             }
         }
-        let y = (0, s.i$)(e.timestamp, "LL");
+        let y = (0, a.i$)(e.timestamp, "LL");
         y !== t && null == I && (C.push({
             type: u.TZK.DIVIDER,
             content: y,
@@ -63,12 +63,12 @@ function h(e) {
             else if (t.ignored) return u.TZK.MESSAGE_GROUP_IGNORED;
             else if ((0, c.iJ)(e) && n) return u.TZK.MESSAGE_GROUP_SPAMMER;
             return null
-        }(m, e, R && _);
-        (null !== M && ([j, b] = (N = a = b, null == a || a.type !== M ? (v = {
+        }(m, e, R && p);
+        (null !== M && ([j, b] = (N = s = b, null == s || s.type !== M ? (v = {
             type: M,
             content: [],
             key: e.id
-        }, C.push(v)) : N = (v = a).content[v.content.length - 1], [v, N])), g === e.id && null != S) ? (null != b && b.type === u.TZK.DIVIDER ? b.unreadId = e.id : null !== j ? (T = j, e.isFirstMessageInForumPost(m) || T.content.push({
+        }, C.push(v)) : N = (v = s).content[v.content.length - 1], [v, N])), g === e.id && null != S) ? (null != b && b.type === u.TZK.DIVIDER ? b.unreadId = e.id : null !== j ? (T = j, e.isFirstMessageInForumPost(m) || T.content.push({
             type: u.TZK.DIVIDER,
             unreadId: e.id
         }), T.hasUnread = !0) : e.isFirstMessageInForumPost(m) || C.push({
@@ -122,7 +122,7 @@ function h(e) {
             contentKey: `conv-end-${E.id}`,
             isConversationDivider: !0
         })
-    }), x && (0, c.iJ)(m) && a.A.trackExposure({
+    }), x && (0, c.iJ)(m) && s.A.trackExposure({
         location: "416cc9_1"
     }), C
 }

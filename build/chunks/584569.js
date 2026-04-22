@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(311907),
     l = n(205693),
-    a = n(73153),
-    s = n(194862),
+    s = n(73153),
+    a = n(194862),
     r = n(259464),
     o = n(288737),
     c = n(562153),
@@ -15,9 +15,9 @@ var i = n(311907),
     m = n(977997),
     A = n(607567),
     g = n(652215),
-    _ = n(806931);
-let p = new s.A,
-    f = new s.A,
+    p = n(806931);
+let _ = new a.A,
+    f = new a.A,
     E = new Set;
 
 function C(e, t, n) {
@@ -26,9 +26,9 @@ function C(e, t, n) {
             channelId: n
         }),
         l = (0, A.RQ)(i, t ?? g.ME, e.id);
-    p.set(e.id, l);
-    let a = {
-        type: _.lp.USER,
+    _.set(e.id, l);
+    let s = {
+        type: p.lp.USER,
         user: e,
         id: e.id,
         streamId: null,
@@ -43,11 +43,11 @@ function C(e, t, n) {
         localVideoDisabled: !1,
         isPoppedOut: !1
     };
-    f.set(e.id, a)
+    f.set(e.id, s)
 }
 
 function x(e) {
-    let t = p.delete(e),
+    let t = _.delete(e),
         n = f.delete(e),
         i = E.delete(e);
     return t || n || i
@@ -66,7 +66,7 @@ function S() {
 }
 
 function I() {
-    p.clear(), f.clear(), E.clear()
+    _.clear(), f.clear(), E.clear()
 }
 class T extends i.Ay.Store {
     static displayName = "RTCConnectionDesyncStore";
@@ -74,19 +74,19 @@ class T extends i.Ay.Store {
         this.waitFor(m.A, h.default, d.A, u.A), this.syncWith([h.default], S)
     }
     get desyncedVoiceStatesCount() {
-        return p.size()
+        return _.size()
     }
     getDesyncedUserIds() {
-        return p.keys()
+        return _.keys()
     }
     getDesyncedVoiceStates() {
-        return p.values()
+        return _.values()
     }
     getDesyncedParticipants() {
         return f.values()
     }
 }
-let v = new T(a.h, {
+let v = new T(s.h, {
     CONNECTION_OPEN: function() {
         I()
     },
@@ -116,9 +116,9 @@ let v = new T(a.h, {
             userIds: t,
             guildId: n,
             channelId: i,
-            context: a
+            context: s
         } = e;
-        return a === l.x.DEFAULT && t.reduce((e, t) => {
+        return s === l.x.DEFAULT && t.reduce((e, t) => {
             if (null != m.A.getVoiceStateForChannel(i, t)) return e;
             let l = h.default.getUser(t);
             return null == l ? (E.add(t), e) : (C(l, n, i), !0)

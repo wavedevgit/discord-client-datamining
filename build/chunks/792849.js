@@ -7,8 +7,8 @@ l(64700);
 var r = l(397927),
     n = l(204990),
     s = l(261225),
-    i = l(970488);
-let o = e => {
+    o = l(970488);
+let i = e => {
         let {
             color: t,
             children: l
@@ -58,61 +58,61 @@ let o = e => {
                             perPage: n,
                             paginationPosition: d
                         },
-                        children: [(0, a.jsx)(o, {
+                        children: [(0, a.jsx)(i, {
                             color: "red"
-                        }), (0, a.jsx)(i.A, {
+                        }), (0, a.jsx)(o.A, {
                             columns: c,
                             rows: u,
-                            children: (0, a.jsx)(o, {
+                            children: (0, a.jsx)(i, {
                                 color: "orange",
                                 children: (0, a.jsx)(r.Text, {
                                     variant: "text-lg/semibold",
                                     children: "GridItem"
                                 })
                             })
-                        }), (0, a.jsx)(o, {
+                        }), (0, a.jsx)(i, {
                             color: "yellow"
-                        }), (0, a.jsx)(o, {
+                        }), (0, a.jsx)(i, {
                             color: "green"
-                        }), (0, a.jsx)(o, {
+                        }), (0, a.jsx)(i, {
                             color: "blue"
-                        }), (0, a.jsx)(o, {
+                        }), (0, a.jsx)(i, {
                             color: "violet"
-                        }), (0, a.jsx)(o, {
+                        }), (0, a.jsx)(i, {
                             color: "red"
-                        }), (0, a.jsx)(o, {
+                        }), (0, a.jsx)(i, {
                             color: "orange"
-                        }), (0, a.jsx)(o, {
+                        }), (0, a.jsx)(i, {
                             color: "yellow"
-                        }), (0, a.jsx)(o, {
+                        }), (0, a.jsx)(i, {
                             color: "green"
-                        }), (0, a.jsx)(o, {
+                        }), (0, a.jsx)(i, {
                             color: "blue"
-                        }), (0, a.jsx)(o, {
+                        }), (0, a.jsx)(i, {
                             color: "violet"
-                        }), (0, a.jsx)(o, {
+                        }), (0, a.jsx)(i, {
                             color: "red"
-                        }), (0, a.jsx)(o, {
+                        }), (0, a.jsx)(i, {
                             color: "orange"
-                        }), (0, a.jsx)(o, {
+                        }), (0, a.jsx)(i, {
                             color: "yellow"
-                        }), (0, a.jsx)(o, {
+                        }), (0, a.jsx)(i, {
                             color: "green"
-                        }), (0, a.jsx)(o, {
+                        }), (0, a.jsx)(i, {
                             color: "blue"
-                        }), (0, a.jsx)(o, {
+                        }), (0, a.jsx)(i, {
                             color: "violet"
-                        }), (0, a.jsx)(o, {
+                        }), (0, a.jsx)(i, {
                             color: "red"
-                        }), (0, a.jsx)(o, {
+                        }), (0, a.jsx)(i, {
                             color: "orange"
-                        }), (0, a.jsx)(o, {
+                        }), (0, a.jsx)(i, {
                             color: "yellow"
-                        }), (0, a.jsx)(o, {
+                        }), (0, a.jsx)(i, {
                             color: "green"
-                        }), (0, a.jsx)(o, {
+                        }), (0, a.jsx)(i, {
                             color: "blue"
-                        }), (0, a.jsx)(o, {
+                        }), (0, a.jsx)(i, {
                             color: "violet",
                             children: (0, a.jsx)(r.Text, {
                                 variant: "text-lg/semibold",

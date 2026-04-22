@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(158954),
     o = n(311907),
     c = n(397927),
@@ -16,8 +16,8 @@ var i = n(627968),
     m = n(688810),
     A = n(571694),
     g = n(47167),
-    _ = n(734057),
-    p = n(954571),
+    p = n(734057),
+    _ = n(954571),
     f = n(396787),
     E = n(652215),
     C = n(985018),
@@ -28,22 +28,22 @@ function S(e) {
         channel: t,
         previewIcon: n,
         onIconChange: l,
-        onIconRemove: a,
+        onIconRemove: s,
         analyticsLocations: r,
         petite: o = !1,
         className: d,
         allowRemovingIcon: u = !0
     } = e, g = void 0 !== n ? n : t?.icon != null ? (0, A.Y)(t, 120) : null, {
-        analyticsLocations: _
-    } = (0, m.Ay)(r, h.A.GROUP_DM_ICON_EDITOR), p = o ? 32 : 64;
+        analyticsLocations: p
+    } = (0, m.Ay)(r, h.A.GROUP_DM_ICON_EDITOR), _ = o ? 32 : 64;
     return (0, i.jsxs)("div", {
-        className: s()(x.r2, d),
+        className: a()(x.r2, d),
         children: [(0, i.jsxs)(c.DUT, {
-            className: s()(x.zc, {
+            className: a()(x.zc, {
                 [x.ud]: o
             }),
             "aria-label": C.intl.string(C.t["0qPSMV"]),
-            onClick: () => (0, f.F5)(l, _),
+            onClick: () => (0, f.F5)(l, p),
             children: [null != g ? (0, i.jsx)("img", {
                 src: g,
                 alt: "",
@@ -52,8 +52,8 @@ function S(e) {
                 className: x.Pz,
                 children: (0, i.jsx)(c.nFg, {
                     size: "custom",
-                    width: p,
-                    height: p,
+                    width: _,
+                    height: _,
                     color: "currentColor"
                 })
             }), (0, i.jsx)("div", {
@@ -65,7 +65,7 @@ function S(e) {
             })]
         }), null != g && u ? (0, i.jsx)(c.QWc, {
             variant: "critical",
-            onClick: a,
+            onClick: s,
             "aria-label": C.intl.string(C.t["uY+Nk/"]),
             text: C.intl.string(C.t["uY+Nk/"]),
             textVariant: "text-sm/medium",
@@ -79,11 +79,11 @@ let I = function(e) {
     let {
         channelId: t,
         onClose: n,
-        transitionState: a,
-        setHasPendingChanges: s,
+        transitionState: s,
+        setHasPendingChanges: a,
         closeOrShowDiscardChangesAlert: A,
         location: I
-    } = e, T = (0, o.bG)([_.A], () => _.A.getChannel(t)), v = T?.name, N = (0, g.e5)(T), [y, b] = l.useState(v ?? ""), [j, R] = l.useState(void 0), M = void 0 !== j, {
+    } = e, T = (0, o.bG)([p.A], () => p.A.getChannel(t)), v = T?.name, N = (0, g.e5)(T), [y, b] = l.useState(v ?? ""), [j, R] = l.useState(void 0), M = void 0 !== j, {
         analyticsLocations: L
     } = (0, m.Ay)(I, h.A.GROUP_DM_EDIT_MODAL), D = {
         channel_id: t,
@@ -94,12 +94,12 @@ let I = function(e) {
         old_icon_set: T?.icon != null
     };
     return (l.useEffect(() => {
-        s(y !== v || M)
-    }, [y, v, M, s]), (0, u.Ay)(() => (p.default.track(E.HAw.GDM_EDIT_INTERACTED, {
+        a(y !== v || M)
+    }, [y, v, M, a]), (0, u.Ay)(() => (_.default.track(E.HAw.GDM_EDIT_INTERACTED, {
         ...D,
         action: "opened"
     }), () => {
-        p.default.track(E.HAw.GDM_EDIT_INTERACTED, {
+        _.default.track(E.HAw.GDM_EDIT_INTERACTED, {
             ...D,
             action: "dismissed"
         })
@@ -110,7 +110,7 @@ let I = function(e) {
                 e.preventDefault();
                 let i = y !== v,
                     l = void 0 !== j;
-                if (p.default.track(E.HAw.GDM_EDIT_INTERACTED, {
+                if (_.default.track(E.HAw.GDM_EDIT_INTERACTED, {
                         ...D,
                         action: "saved",
                         new_name_set: "" !== y,
@@ -136,7 +136,7 @@ let I = function(e) {
                     disabled: y === v && !M
                 }],
                 onClose: () => Promise.resolve(A()),
-                transitionState: a,
+                transitionState: s,
                 children: (0, i.jsxs)("div", {
                     className: x.jE,
                     children: [(0, i.jsx)(S, {

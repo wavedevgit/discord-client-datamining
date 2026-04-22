@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(735438),
     o = n.n(r),
     c = n(136722),
@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(435183),
     A = n(155718),
     g = n(47167),
-    _ = n(685374),
-    p = n(569989),
+    p = n(685374),
+    _ = n(569989),
     f = n(997509),
     E = n(46054),
     C = n(34457),
@@ -36,7 +36,7 @@ var i = n(627968),
 function D(e) {
     let {
         channel: t
-    } = e, [n, a] = l.useState(!1), r = (0, g.Ay)(t, !0), D = t.guild_id, O = (0, d.bG)([x.A], () => null != D ? x.A.getSortedRoles(D) : void 0), P = (0, d.bG)([T.default, S.A], () => T.default.getUser(S.A.getGuild(D)?.ownerId)), k = l.useMemo(() => null != O ? O.filter(e => !(0, C.Oy)(e)) : [], [O]), w = l.useMemo(() => o()(k).filter(e => {
+    } = e, [n, s] = l.useState(!1), r = (0, g.Ay)(t, !0), D = t.guild_id, O = (0, d.bG)([x.A], () => null != D ? x.A.getSortedRoles(D) : void 0), P = (0, d.bG)([T.default, S.A], () => T.default.getUser(S.A.getGuild(D)?.ownerId)), k = l.useMemo(() => null != O ? O.filter(e => !(0, C.Oy)(e)) : [], [O]), w = l.useMemo(() => o()(k).filter(e => {
         if (null == D) return !1;
         let n = v.aH({
             forceRoles: {
@@ -62,7 +62,7 @@ function D(e) {
                 l = c.zy(i.allow, j.xBc.VIEW_CHANNEL);
             return n || l
         }).value()
-    }, [t, P]), G = I.A.can(j.xBc.MANAGE_CHANNELS, t) || I.A.can(j.xBc.MANAGE_ROLES, t), F = l.useCallback(() => a(!1), []);
+    }, [t, P]), G = I.A.can(j.xBc.MANAGE_CHANNELS, t) || I.A.can(j.xBc.MANAGE_ROLES, t), F = l.useCallback(() => s(!1), []);
     return (0, i.jsxs)(y.Ay, {
         channelId: t.id,
         children: [(0, i.jsx)(y.WK, {
@@ -86,7 +86,7 @@ function D(e) {
                 size: "sm",
                 variant: "secondary",
                 text: R.intl.string(R.t.dMJ3Y6),
-                onClick: () => a(!0),
+                onClick: () => s(!0),
                 icon: h.nFg
             }), (0, i.jsx)(h.Button, {
                 size: "sm",
@@ -128,34 +128,34 @@ function D(e) {
                 })
             }(), w.map((e, n) => {
                 let l = e.colorString ?? j.TpD,
-                    a = e.tags?.guild_connections !== void 0;
+                    s = e.tags?.guild_connections !== void 0;
                 return G ? (0, i.jsx)(b.A, {
-                    className: s()(M.JC, {
+                    className: a()(M.JC, {
                         [M.HV]: n === w.length - 1
                     }),
                     roleName: e.name,
                     roleColor: l,
                     disabled: !G,
-                    verified: a,
+                    verified: s,
                     onClick: () => {
                         f.A.open(t.guild_id, j.BEX.MEMBERS), f.A.selectRole(e.id)
                     }
-                }, e.id) : (0, i.jsx)(p.A, {
-                    className: s()(M.JC, {
+                }, e.id) : (0, i.jsx)(_.A, {
+                    className: a()(M.JC, {
                         [M.HV]: n === w.length - 1
                     }),
                     roleName: e.name,
                     roleColor: l,
-                    verified: a
+                    verified: s
                 }, e.id)
             })]
         }), n ? (0, i.jsx)(h.aFV, {
-            renderModal: e => (0, i.jsx)(_.default, {
+            renderModal: e => (0, i.jsx)(p.default, {
                 ...e,
                 onClose: () => (F(), e.onClose()),
                 channelId: t.id
             }),
-            onCloseRequest: () => a(!1)
+            onCloseRequest: () => s(!1)
         }) : null]
     })
 }

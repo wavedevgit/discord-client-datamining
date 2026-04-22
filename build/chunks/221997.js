@@ -7,8 +7,8 @@ l(64700);
 var r = l(397927),
     n = l(261225),
     s = l(673277),
-    i = l(219561),
-    o = l(304973);
+    o = l(219561),
+    i = l(304973);
 let d = {
     name: "FeaturedChip",
     id: "featured-chip",
@@ -27,7 +27,7 @@ let d = {
                 variant: "text-lg/semibold",
                 children: "Featured Chip will take up the full width of the parent, so it is best suited for CmsStack or Grid parents"
             }), (0, a.jsx)(s.A, {
-                children: (0, a.jsx)(o.A, {
+                children: (0, a.jsx)(i.A, {
                     ...d
                 })
             }), (0, a.jsxs)(s.A, {
@@ -36,17 +36,17 @@ let d = {
                     children: "Grid (3):"
                 }), (0, a.jsxs)(n.A, {
                     columns: 3,
-                    children: [(0, a.jsx)(o.A, {
+                    children: [(0, a.jsx)(i.A, {
                         ...d
-                    }), (0, a.jsx)(o.A, {
+                    }), (0, a.jsx)(i.A, {
                         ...d
-                    }), (0, a.jsx)(o.A, {
+                    }), (0, a.jsx)(i.A, {
                         ...d
-                    }), (0, a.jsx)(o.A, {
+                    }), (0, a.jsx)(i.A, {
                         ...d
-                    }), (0, a.jsx)(o.A, {
+                    }), (0, a.jsx)(i.A, {
                         ...d
-                    }), (0, a.jsx)(o.A, {
+                    }), (0, a.jsx)(i.A, {
                         ...d
                     })]
                 })]
@@ -54,15 +54,15 @@ let d = {
                 children: [(0, a.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     children: "Stack:"
-                }), (0, a.jsxs)(i.Kp, {
+                }), (0, a.jsxs)(o.Kp, {
                     direction: "horizontal",
-                    children: [(0, a.jsx)(o.A, {
+                    children: [(0, a.jsx)(i.A, {
                         ...d
-                    }), (0, a.jsx)(o.A, {
+                    }), (0, a.jsx)(i.A, {
                         ...d
-                    }), (0, a.jsx)(o.A, {
+                    }), (0, a.jsx)(i.A, {
                         ...d
-                    }), (0, a.jsx)(o.A, {
+                    }), (0, a.jsx)(i.A, {
                         ...d
                     })]
                 })]

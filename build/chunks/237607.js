@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(503698),
-    a = n.n(l),
-    s = n(311907),
+    s = n.n(l),
+    a = n(311907),
     r = n(403362),
     o = n(274372),
     c = n(372684),
@@ -14,12 +14,12 @@ var l = n(503698),
     u = n(732774);
 
 function h() {
-    let e = (0, s.yK)([o.A], () => {
+    let e = (0, a.yK)([o.A], () => {
         let e = o.A.getLastClipsSession()?.newClipIds;
         return null == e ? [] : o.A.getClipIds().slice(0, 4).filter(t => e.includes(t)).map(e => o.A.getClipById(e)).filter(r.Vq)
     });
     return (0, i.jsx)("div", {
-        className: a()(u.vH, {
+        className: s()(u.vH, {
             [u.gb]: 1 === e.length,
             [u.$d]: 2 === e.length,
             [u.gS]: 3 === e.length,

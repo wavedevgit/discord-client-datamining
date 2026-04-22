@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(735438),
     o = n(451988),
     c = n(435371),
@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(430452),
     A = n(40056),
     g = n(985018),
-    _ = n(473772),
-    p = n(590782);
+    p = n(473772),
+    _ = n(590782);
 
 function f(e) {
     e.preventDefault(), e.stopPropagation()
@@ -29,7 +29,7 @@ let C = l.memo(function(e) {
     let {
         mirror: t = !1,
         streamId: n,
-        paused: a
+        paused: s
     } = e, {
         onActive: C,
         onPreventIdle: x,
@@ -66,10 +66,10 @@ let C = l.memo(function(e) {
             n = O.current.clientWidth,
             i = O.current.clientHeight,
             l = e.x - t.left,
-            a = e.y - t.top;
+            s = e.y - t.top;
         k(w({
             x: (.5 - l / t.width) * n * T,
-            y: (.5 - a / t.height) * i * T
+            y: (.5 - s / t.height) * i * T
         }))
     }, [w, T, O, k]), z = l.useCallback(e => {
         E(e) && (e.preventDefault(), e.stopPropagation(), G(!0), K({
@@ -89,10 +89,10 @@ let C = l.memo(function(e) {
             n = 1 / T,
             i = 1 / T,
             l = .5 - P.x / (e * T),
-            a = .5 - P.y / (t * T);
+            s = .5 - P.y / (t * T);
         return {
             "--custom-zoom-indicator-left": `${100*(0,r.clamp)(l-n/2,0,1-n)}%`,
-            "--custom-zoom-indicator-top": `${100*(0,r.clamp)(a-i/2,0,1-i)}%`,
+            "--custom-zoom-indicator-top": `${100*(0,r.clamp)(s-i/2,0,1-i)}%`,
             "--custom-zoom-indicator-width": `${100*n}%`,
             "--custom-zoom-indicator-height": `${100*i}%`,
             "--custom-zoom-indicator-transition": y || U || b || j ? "none" : "top 0.1s ease-out, left 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out"
@@ -109,8 +109,8 @@ let C = l.memo(function(e) {
     return ((0, u.l0)(() => {
         Q.current?.stop()
     }), I && null != n) ? (0, i.jsxs)("div", {
-        className: s()(p.ne, {
-            [p.Ge]: L || B
+        className: a()(_.ne, {
+            [_.Ge]: L || B
         }),
         onMouseEnter: H,
         onMouseLeave: V,
@@ -121,25 +121,25 @@ let C = l.memo(function(e) {
             onMouseLeave: V,
             children: (0, i.jsxs)("div", {
                 ref: F,
-                className: p.Wc,
+                className: _.Wc,
                 style: W,
                 onMouseDown: z,
                 onMouseMove: Y,
                 onMouseUp: J,
                 children: [(0, i.jsx)(q, {
-                    className: s()(p.BZ, {
-                        [_.mirror]: t
+                    className: a()(_.BZ, {
+                        [p.mirror]: t
                     }),
                     streamId: n,
-                    paused: a,
+                    paused: s,
                     reportContainerResized: !1
                 }), (0, i.jsx)("div", {
-                    className: p.xq,
+                    className: _.xq,
                     style: $
                 })]
             })
         }), (0, i.jsxs)("div", {
-            className: p.xu,
+            className: _.xu,
             children: [(L || B) && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(c.m_, {
                     text: g.intl.string(g.t.M6Cmwy),

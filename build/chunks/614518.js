@@ -5,8 +5,8 @@ n.d(t, {
     a: () => m
 }), n(667532);
 var l = n(735438),
-    a = n(311907),
-    s = n(582754),
+    s = n(311907),
+    a = n(582754),
     r = n(73153),
     o = n(927813),
     c = n(667050);
@@ -22,11 +22,11 @@ let d = [],
     },
     A = [],
     g = 10 * o.A.Millis.SECOND,
-    _ = (0, l.debounce)(() => {
+    p = (0, l.debounce)(() => {
         let e = (0, c.fr)(h);
-        s.OR.announce(e, "polite"), h = []
+        a.OR.announce(e, "polite"), h = []
     }, 500);
-class p extends a.Ay.Store {
+class _ extends s.Ay.Store {
     static displayName = "VoiceChannelEffectsStore";
     get recentlyUsedEmojis() {
         return d
@@ -41,7 +41,7 @@ class p extends a.Ay.Store {
         return u[e]
     }
 }
-let f = new p(r.h, {
+let f = new _(r.h, {
     VOICE_CHANNEL_EFFECT_CLEAR: e => {
         let {
             userId: t
@@ -67,7 +67,7 @@ let f = new p(r.h, {
         }, h = [...h, {
             emojiName: t.name,
             userId: n
-        }], _())
+        }], p())
     },
     VOICE_CHANNEL_EFFECT_SENT_LOCAL: () => {
         let e = new Date;

@@ -1,20 +1,20 @@
 /** chunk id: 778862 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => s
 });
 var i = n(64700),
     l = n(684339);
 
-function a(e) {
+function s(e) {
     let {
         location: t,
         videoSpinnerContext: n,
-        userId: a,
-        streamId: s,
+        userId: s,
+        streamId: a,
         loading: r,
         paused: o = !1
     } = e, [c] = i.useState(() => new l.M(t));
     i.useEffect(() => {
-        o || (r ? c.onSpinnerStarted() : null != s && c.trackSpinnerDuration(n, a, s))
-    }, [r, o, s, c, n, a])
+        o || (r ? c.onSpinnerStarted() : null != a && c.trackSpinnerDuration(n, s, a))
+    }, [r, o, a, c, n, s])
 }

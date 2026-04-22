@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(397927),
-    s = n(989985),
+    s = n(397927),
+    a = n(989985),
     r = n(226698),
     o = n(221314),
     c = n(985018),
@@ -16,15 +16,15 @@ let u = e => {
     } = e, n = l.useCallback(() => {
         r.A.reopenModReport(t)
     }, [t]);
-    return (0, i.jsx)(s._, {
-        bannerHeader: (0, i.jsx)(a.Text, {
+    return (0, i.jsx)(a._, {
+        bannerHeader: (0, i.jsx)(s.Text, {
             variant: "text-md/medium",
             color: "text-muted",
             children: c.intl.string(o.default["0eUUeF"])
         }),
         headerStyles: d.U,
         containerStyles: d.c,
-        children: (0, i.jsx)(a.Button, {
+        children: (0, i.jsx)(s.Button, {
             variant: "secondary",
             size: "sm",
             text: c.intl.string(o.default["6quCi9"]),

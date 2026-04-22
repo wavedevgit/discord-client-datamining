@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(205693),
     o = n(397927),
     c = n(233545),
@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(954571),
     A = n(957565),
     g = n(975571),
-    _ = n(917592),
-    p = n(652215),
+    p = n(917592),
+    _ = n(652215),
     f = n(731854),
     E = n(985018),
     C = n(666153);
@@ -41,7 +41,7 @@ let x = () => {
 
 function S(e) {
     (0, l.useEffect)(() => {
-        m.default.track(p.HAw.OPEN_POPOUT, {
+        m.default.track(_.HAw.OPEN_POPOUT, {
             type: "RTC Connection"
         })
     }, []);
@@ -55,7 +55,7 @@ function S(e) {
             let {
                 hostname: t,
                 averagePing: n,
-                lastPing: a,
+                lastPing: s,
                 outboundLossRate: r
             } = e, o = u.Q_.getSetting();
             return (0, i.jsxs)(l.Fragment, {
@@ -70,7 +70,7 @@ function S(e) {
                     }), (0, i.jsx)("div", {
                         className: C.xB,
                         children: (0, i.jsx)("strong", {
-                            children: _.A.getShortHostname(t)
+                            children: p.A.getShortHostname(t)
                         })
                     })]
                 }), (0, i.jsx)("div", {
@@ -78,10 +78,10 @@ function S(e) {
                     children: E.intl.format(E.t["X58/lN"], {
                         averagePing: n.toFixed(0)
                     })
-                }), null != a ? (0, i.jsx)("div", {
+                }), null != s ? (0, i.jsx)("div", {
                     className: C.xB,
                     children: E.intl.format(E.t["6iv2TF"], {
-                        lastPing: a.toFixed(0)
+                        lastPing: s.toFixed(0)
                     })
                 }) : null, null != r ? (0, i.jsx)("div", {
                     className: C.xB,
@@ -89,7 +89,7 @@ function S(e) {
                         outboundLossRate: r.toFixed(1)
                     })
                 }) : null, (0, i.jsxs)("div", {
-                    className: s()(C.xB, C.xJ),
+                    className: a()(C.xB, C.xJ),
                     children: [null == r ? E.intl.formatToPlainString(E.t.vggaMt, {
                         badPing: 250
                     }) : null, null != r ? E.intl.formatToPlainString(E.t["3pFz1P"], {
@@ -100,40 +100,40 @@ function S(e) {
             })
         }, [e]),
         {
-            connectionState: a,
+            connectionState: s,
             connectionTypeText: r
         } = e,
         A = u.Q_.getSetting(),
         S = {
-            [p.S7L.AWAITING_ENDPOINT]: E.intl.format(E.t.Eu2vUR, {
-                url: p.qF7.STATUS
+            [_.S7L.AWAITING_ENDPOINT]: E.intl.format(E.t.Eu2vUR, {
+                url: _.qF7.STATUS
             }),
-            [p.S7L.CONNECTING]: E.intl.string(E.t["y+E8aD"]),
-            [p.S7L.AUTHENTICATING]: E.intl.string(E.t["5lGIZH"]),
-            [p.S7L.DISCONNECTED]: E.intl.string(E.t.fOX25I),
-            [p.S7L.RTC_CONNECTING]: E.intl.string(E.t.b5Ubd5),
-            [p.S7L.ICE_CHECKING]: E.intl.format(E.t.SyoYUb, {
-                url: g.A.getArticleURL(p.MVz.VOICE_CONNECTION_ERRORS)
+            [_.S7L.CONNECTING]: E.intl.string(E.t["y+E8aD"]),
+            [_.S7L.AUTHENTICATING]: E.intl.string(E.t["5lGIZH"]),
+            [_.S7L.DISCONNECTED]: E.intl.string(E.t.fOX25I),
+            [_.S7L.RTC_CONNECTING]: E.intl.string(E.t.b5Ubd5),
+            [_.S7L.ICE_CHECKING]: E.intl.format(E.t.SyoYUb, {
+                url: g.A.getArticleURL(_.MVz.VOICE_CONNECTION_ERRORS)
             }),
-            [p.S7L.DTLS_CONNECTING]: E.intl.format(E.t.SyoYUb, {
-                url: g.A.getArticleURL(p.MVz.VOICE_CONNECTION_ERRORS)
+            [_.S7L.DTLS_CONNECTING]: E.intl.format(E.t.SyoYUb, {
+                url: g.A.getArticleURL(_.MVz.VOICE_CONNECTION_ERRORS)
             }),
-            [p.S7L.RTC_CONNECTED]: n,
-            [p.S7L.NO_ROUTE]: E.intl.format(E.t["2tgQnk"], {
-                url: g.A.getArticleURL(p.MVz.VOICE_CONNECTION_ERRORS)
+            [_.S7L.RTC_CONNECTED]: n,
+            [_.S7L.NO_ROUTE]: E.intl.format(E.t["2tgQnk"], {
+                url: g.A.getArticleURL(_.MVz.VOICE_CONNECTION_ERRORS)
             }),
-            [p.S7L.RTC_DISCONNECTED]: E.intl.string(E.t.fOX25I)
-        } [a];
+            [_.S7L.RTC_DISCONNECTED]: E.intl.string(E.t.fOX25I)
+        } [s];
     return (0, i.jsxs)(i.Fragment, {
         children: ["function" == typeof S ? S() : (0, i.jsx)("p", {
-            className: s()(C.xB, C.xJ),
+            className: a()(C.xB, C.xJ),
             children: S
         }), (0, i.jsx)("hr", {
             className: C.me
         }), (0, i.jsxs)("div", {
             className: C.Vf,
             children: [(0, i.jsxs)("span", {
-                className: s()(C.uO, C.ro),
+                className: a()(C.uO, C.ro),
                 children: [(0, i.jsx)(o.XAi, {
                     size: "xxs",
                     color: o.LU0.colors.TEXT_FEEDBACK_POSITIVE.css,
@@ -141,7 +141,7 @@ function S(e) {
                 }), r]
             }), A && h.Ay.supports(f.O5.DIAGNOSTICS) && !__OVERLAY__ && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsxs)(o.MzZ, {
-                    className: s()(C.Ce, C.ro),
+                    className: a()(C.Ce, C.ro),
                     onClick: t,
                     children: [E.intl.string(E.t.KBoWg9), (0, i.jsx)(o.tfB, {
                         size: "xxs",
@@ -149,7 +149,7 @@ function S(e) {
                         className: C.__invalid_icon
                     })]
                 }), (0, i.jsxs)(o.MzZ, {
-                    className: s()(C.d3, C.ro),
+                    className: a()(C.d3, C.ro),
                     onClick: x,
                     title: "Copy to clipboard",
                     children: [E.intl.string(E.t["XEb+Sj"]), (0, i.jsx)(o.TdU, {
@@ -160,7 +160,7 @@ function S(e) {
                 })]
             }), !A && !__OVERLAY__ && (0, i.jsx)(o.MzZ, {
                 className: C.Ce,
-                href: g.A.getArticleURL(p.MVz.VOICE_VIDEO_TROUBLESHOOTING),
+                href: g.A.getArticleURL(_.MVz.VOICE_VIDEO_TROUBLESHOOTING),
                 children: E.intl.string(E.t.hvVgAZ)
             })]
         })]

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(989349),
-    s = n.n(a),
+    s = n(989349),
+    a = n.n(s),
     r = n(311907),
     o = n(990078),
     c = n(397927),
@@ -15,13 +15,13 @@ var i = n(627968),
     m = n(927813),
     A = n(960850),
     g = n(652215),
-    _ = n(985018),
-    p = n(743586);
+    p = n(985018),
+    _ = n(743586);
 
 function f(e) {
     let t, {
             isEnabled: n,
-            rateLimitPerUser: a,
+            rateLimitPerUser: s,
             isBypassSlowmode: r,
             slowmodeCooldownGuess: u
         } = e,
@@ -36,9 +36,9 @@ function f(e) {
                 h._.unsubscribe(g.jej.EMPHASIZE_SLOWMODE_COOLDOWN, e)
             }
         }, []), !n) return null;
-    let E = (0, d.L)(a);
+    let E = (0, d.L)(s);
     if (!r && u > 0) {
-        let e = s().duration(u);
+        let e = a().duration(u);
         if (u > m.A.Millis.HOUR) {
             let n = `${e.minutes()}`.padStart(2, "0"),
                 i = `${e.seconds()}`.padStart(2, "0");
@@ -47,22 +47,22 @@ function f(e) {
             let n = `${e.seconds()}`.padStart(2, "0");
             t = `${e.minutes()}:${n}`
         }
-    } else t = r ? _.intl.string(_.t["8+NidX"]) : _.intl.string(_.t.Icu3bf);
+    } else t = r ? p.intl.string(p.t["8+NidX"]) : p.intl.string(p.t.Icu3bf);
     let C = (0, i.jsxs)(c.Text, {
-        className: p.rk,
+        className: _.rk,
         variant: "text-xs/medium",
         color: A ? "text-feedback-critical" : "text-muted",
         tabularNumbers: !0,
         children: [(0, i.jsx)(c.xbX, {
             size: "xxs",
             color: "currentColor",
-            className: p.Eq
+            className: _.Eq
         }), t]
     });
     return (0, i.jsx)(o.m, {
         text: E,
         children: (0, i.jsx)("div", {
-            className: p.ns,
+            className: _.ns,
             children: C
         })
     })
@@ -72,13 +72,13 @@ function E(e) {
     let {
         channel: t,
         isThreadCreation: n = !1
-    } = e, l = (0, r.bG)([u.A], () => u.A.getSlowmodeCooldownGuess(t.id, n ? u.R.CreateThread : u.R.SendMessage)), a = (0, A._)(t, n ? u.R.CreateThread : u.R.SendMessage), {
-        rateLimitPerUser: s
+    } = e, l = (0, r.bG)([u.A], () => u.A.getSlowmodeCooldownGuess(t.id, n ? u.R.CreateThread : u.R.SendMessage)), s = (0, A._)(t, n ? u.R.CreateThread : u.R.SendMessage), {
+        rateLimitPerUser: a
     } = t;
     return (0, i.jsx)(f, {
-        isEnabled: s > 0,
-        rateLimitPerUser: s,
-        isBypassSlowmode: a,
+        isEnabled: a > 0,
+        rateLimitPerUser: a,
+        isBypassSlowmode: s,
         slowmodeCooldownGuess: l
     })
 }

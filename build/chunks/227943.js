@@ -6,8 +6,8 @@ var a = l(627968),
     r = l(397927),
     n = l(18769),
     s = l(954644),
-    i = l(261225),
-    o = l(673277),
+    o = l(261225),
+    i = l(673277),
     d = l(700263);
 let c = {
     name: "Skeleton",
@@ -22,7 +22,7 @@ let c = {
         }), (0, a.jsx)(r.Text, {
             variant: "text-lg/normal",
             children: "Skeleton always puts a border radius on the shimmer. It might not match the child's radius."
-        }), (0, a.jsxs)(o.A, {
+        }), (0, a.jsxs)(i.A, {
             children: [(0, a.jsx)(r.Text, {
                 variant: "text-md/normal",
                 children: "Basic rectangular skeleton"
@@ -38,8 +38,8 @@ let c = {
         }), (0, a.jsx)(r.Text, {
             variant: "text-lg/normal",
             children: "Here we have a Grid with three Skeleton children that are wrapping three ShopProductCard to simulate a shop loading state"
-        }), (0, a.jsx)(o.A, {
-            children: (0, a.jsxs)(i.A, {
+        }), (0, a.jsx)(i.A, {
+            children: (0, a.jsxs)(o.A, {
                 columns: 3,
                 children: [(0, a.jsx)(d.A, {
                     children: (0, a.jsx)(s.A, {
@@ -58,8 +58,8 @@ let c = {
         }), (0, a.jsx)(r.Text, {
             variant: "text-lg/normal",
             children: "Here we have a Grid with two Skeleton children that are wrapping two FeaturedCollection to simulate a shop loading state"
-        }), (0, a.jsx)(o.A, {
-            children: (0, a.jsxs)(i.A, {
+        }), (0, a.jsx)(i.A, {
+            children: (0, a.jsxs)(o.A, {
                 columns: 2,
                 children: [(0, a.jsx)(d.A, {
                     children: (0, a.jsx)(n.A, {

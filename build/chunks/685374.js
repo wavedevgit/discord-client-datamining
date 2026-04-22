@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     l = n(64700),
-    a = n(158954),
-    s = n(311907),
+    s = n(158954),
+    a = n(311907),
     r = n(397927),
     o = n(702805),
     c = n(198982),
@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(71393),
     A = n(954571),
     g = n(147036),
-    _ = n(845202),
-    p = n(86944),
+    p = n(845202),
+    _ = n(86944),
     f = n(737045),
     E = n(652215),
     C = n(985018),
@@ -26,14 +26,14 @@ function S(e) {
     let {
         channelId: t,
         ...n
-    } = e, a = (0, s.bG)([h.A], () => h.A.getChannel(t), [t]), r = (0, s.bG)([m.A], () => m.A.getGuild(a?.getGuildId()));
+    } = e, s = (0, a.bG)([h.A], () => h.A.getChannel(t), [t]), r = (0, a.bG)([m.A], () => m.A.getGuild(s?.getGuildId()));
     return (l.useEffect(() => {
         A.default.track(E.HAw.OPEN_MODAL, {
             type: "Grant Channel Access"
         })
-    }, []), null == a || null == r) ? null : (0, i.jsx)(I, {
+    }, []), null == s || null == r) ? null : (0, i.jsx)(I, {
         guild: r,
-        channel: a,
+        channel: s,
         ...n
     })
 }
@@ -42,7 +42,7 @@ function I(e) {
     let {
         guild: t,
         channel: n,
-        onClose: s,
+        onClose: a,
         newChannel: h,
         inSettings: m,
         ...A
@@ -50,12 +50,12 @@ function I(e) {
         roles: M,
         members: L,
         getRichTag: D
-    } = (0, p.K)(t, n, n.accessPermissions, E), O = _.A.useSections({
+    } = (0, _.K)(t, n, n.accessPermissions, E), O = p.A.useSections({
         roles: M,
         members: L
     }), P = h && 0 === Object.keys(I).length;
     async function k() {
-        if (null == n || 0 === Object.keys(I).length) return void s();
+        if (null == n || 0 === Object.keys(I).length) return void a();
         N(!0);
         try {
             var e, t, i;
@@ -65,14 +65,14 @@ function I(e) {
                     row: n
                 } = t;
                 null != n.id && "" !== n.id && (n.rowType === f.T6.ROLE ? l.push((0, g.we)(n.id, e.type)) : n.rowType === f.T6.MEMBER && l.push((0, g.n3)(n.id, e.type)))
-            }), (0, o.R$)(e.id, l, i)), s(), N(!1)
+            }), (0, o.R$)(e.id, l, i)), a(), N(!1)
         } catch (t) {
             let e = new c.LG(t);
             N(!1), b(e)
         }
     }
     let w = (0, u.ke)(n.type) ? r.I$d : r.trU;
-    return (0, i.jsx)(_.A.Provider, {
+    return (0, i.jsx)(p.A.Provider, {
         listRef: j,
         query: E,
         setQuery: S,
@@ -81,10 +81,10 @@ function I(e) {
         roles: M,
         members: L,
         getRichTag: D,
-        children: (0, i.jsx)(a.Modal, {
+        children: (0, i.jsx)(s.Modal, {
             ...A,
             title: C.intl.string(C.t.dMJ3Y6),
-            onClose: s,
+            onClose: a,
             input: (0, i.jsxs)("div", {
                 children: [(0, i.jsxs)(r.Text, {
                     className: x.HA,
@@ -100,7 +100,7 @@ function I(e) {
                     className: x.h_,
                     variant: "text-sm/normal",
                     children: C.intl.string(C.t.f7VbhF)
-                }), (0, i.jsx)(_.A.SearchBox, {
+                }), (0, i.jsx)(p.A.SearchBox, {
                     placeholderText: C.intl.string(C.t.iezLLn)
                 }), (0, i.jsx)(r.Text, {
                     className: x.W$,
@@ -115,20 +115,20 @@ function I(e) {
             }),
             listProps: {
                 ref: j,
-                sectionHeight: _.A.SECTION_HEIGHT,
-                renderSection: _.A.renderSection,
-                rowHeight: _.A.ROW_HEIGHT,
-                renderRow: _.A.renderRow,
+                sectionHeight: p.A.SECTION_HEIGHT,
+                renderSection: p.A.renderSection,
+                rowHeight: p.A.ROW_HEIGHT,
+                renderRow: p.A.renderRow,
                 sections: O
             },
             actions: P ? [{
                 variant: "secondary",
                 text: C.intl.string(C.t.u46sxe),
-                onClick: s
+                onClick: a
             }] : [{
                 variant: "secondary",
                 text: C.intl.string(C.t["ETE/oC"]),
-                onClick: s
+                onClick: a
             }, {
                 variant: "primary",
                 text: C.intl.string(C.t.i4jeWR),

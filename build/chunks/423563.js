@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(311907),
-    a = n(157550),
-    s = n(957283),
+    s = n(157550),
+    a = n(957283),
     r = n(994500),
     o = n(195073),
     c = n(684018),
@@ -22,14 +22,14 @@ function A(e) {
             showingBanner: g
         } = e,
         {
-            channelId: _
-        } = (0, s.N)(),
-        p = (0, l.bG)([a.A], () => null != _ && a.A.isSpam(_), [_]),
+            channelId: p
+        } = (0, a.N)(),
+        _ = (0, l.bG)([s.A], () => null != p && s.A.isSpam(p), [p]),
         f = (0, l.bG)([r.A], () => r.A.getRelationshipType(A.id), [A.id]),
-        E = n.id === _,
+        E = n.id === p,
         C = !0 === A.bot,
         x = m.n;
-    return p || E ? t = (0, i.jsx)(u.A, {
+    return _ || E ? t = (0, i.jsx)(u.A, {
         channel: n,
         user: A
     }) : C ? t = (0, i.jsx)(o.A, {

@@ -6,8 +6,8 @@ var a = l(627968),
     r = l(64700),
     n = l(503698),
     s = l.n(n),
-    i = l(157941),
-    o = l(752238),
+    o = l(157941),
+    i = l(752238),
     d = l(585289);
 
 function c(e) {
@@ -16,8 +16,8 @@ function c(e) {
         onChange: l
     } = e, n = "json", c = r.useRef(null), [u, x] = r.useState("");
     return r.useEffect(() => {
-        if (null != t && o.default.hasLanguage(n)) {
-            let e = o.default.highlight(n, t, !0);
+        if (null != t && i.default.hasLanguage(n)) {
+            let e = i.default.highlight(n, t, !0);
             null != e ? x(e.value + "\n") : x(t + "\n")
         } else x(t + "\n")
     }, [t, n]), (0, a.jsxs)("div", {
@@ -25,7 +25,7 @@ function c(e) {
         children: [(0, a.jsx)("pre", {
             className: d.c5,
             "aria-hidden": "true",
-            children: (0, a.jsx)(i.l, {
+            children: (0, a.jsx)(o.l, {
                 location: "LayoutEditor",
                 code: t,
                 lang: "json",

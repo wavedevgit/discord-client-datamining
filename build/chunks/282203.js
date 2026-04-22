@@ -17,8 +17,8 @@ let c = e => {
         } = e, u = (0, s.D)(t, !0), {
             purchases: m,
             isFetching: h
-        } = (0, a.b5)(), p = (0, n.useMemo)(() => i ? [...t].sort((e, t) => (null != m.get(e)) - (null != m.get(t))) : t, [t, i, m]), A = o[r], g = o.Skeleton;
-        return null == A ? null : (u || i && h) && d ? t.map((e, t) => null != g ? (0, l.jsx)(g, {
+        } = (0, a.b5)(), p = (0, n.useMemo)(() => i ? [...t].sort((e, t) => (null != m.get(e)) - (null != m.get(t))) : t, [t, i, m]), A = o[r], v = o.Skeleton;
+        return null == A ? null : (u || i && h) && d ? t.map((e, t) => null != v ? (0, l.jsx)(v, {
             children: (0, l.jsx)(A, {
                 ...c,
                 skuId: e,

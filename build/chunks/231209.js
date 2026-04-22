@@ -57,7 +57,7 @@ let B = e => {
             isFetchingShopHome: P,
             fetchShopHomeError: M,
             shopBlocks: H,
-            refreshShopHome: D
+            refreshShopHome: w
         } = (0, h.y)(c, {
             noCache: d,
             includeUnpublished: _,
@@ -65,9 +65,9 @@ let B = e => {
         }, {
             sessionId: B,
             tab: c
-        }), w = r.useCallback(() => {
-            D()
-        }, [D]);
+        }), D = r.useCallback(() => {
+            w()
+        }, [w]);
         return (r.useEffect(() => {
             null != M || P || 0 === H.length || (0, p.z)({
                 sessionId: B,
@@ -77,7 +77,7 @@ let B = e => {
                 cacheDisabled: d
             })
         }, [M, P, H.length, _, d, B, c]), null != M) ? (0, n.jsx)(f.h, {
-            onRetry: w,
+            onRetry: D,
             errorOrigin: f.A.SHOP_PAGE,
             errorMessage: M.message
         }) : P || 0 === H.length ? (0, n.jsxs)("div", {

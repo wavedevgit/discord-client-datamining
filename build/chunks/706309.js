@@ -7,8 +7,8 @@ l(64700);
 var r = l(397927),
     n = l(18769),
     s = l(653793),
-    i = l(673277),
-    o = l(118713);
+    o = l(673277),
+    i = l(118713);
 let d = () => (0, a.jsx)("div", {
         style: {
             display: "flex",
@@ -43,8 +43,8 @@ let d = () => (0, a.jsx)("div", {
             }), (0, a.jsx)(r.Text, {
                 variant: "text-md/normal",
                 children: "The carousel will pause slidding when the mouse hovers it, and resume on mouse leave."
-            }), (0, a.jsx)(i.A, {
-                children: (0, a.jsxs)(o.A, {
+            }), (0, a.jsx)(o.A, {
+                children: (0, a.jsxs)(i.A, {
                     ...e,
                     children: [(0, a.jsx)("div", {
                         style: {
@@ -78,7 +78,7 @@ let d = () => (0, a.jsx)("div", {
                         children: (0, a.jsx)(c, {})
                     })]
                 })
-            }), (0, a.jsxs)(i.A, {
+            }), (0, a.jsxs)(o.A, {
                 children: [(0, a.jsx)(r.Text, {
                     variant: "text-md/normal",
                     children: "Here is an example of what a carousel inside of a card might look like for showing off different products"
@@ -93,17 +93,17 @@ let d = () => (0, a.jsx)("div", {
                             display: "flex",
                             overflow: "hidden"
                         },
-                        children: (0, a.jsxs)(o.A, {
+                        children: (0, a.jsxs)(i.A, {
                             ...e,
                             children: [(0, a.jsx)(d, {}), (0, a.jsx)(d, {}), (0, a.jsx)(d, {}), (0, a.jsx)(d, {}), (0, a.jsx)(d, {})]
                         })
                     })
                 })]
-            }), (0, a.jsxs)(i.A, {
+            }), (0, a.jsxs)(o.A, {
                 children: [(0, a.jsx)(r.Text, {
                     variant: "text-md/normal",
                     children: "And here is an example of a FeaturedBlock Carousel"
-                }), (0, a.jsx)("br", {}), (0, a.jsxs)(o.A, {
+                }), (0, a.jsx)("br", {}), (0, a.jsxs)(i.A, {
                     ...e,
                     children: [(0, a.jsx)(n.A, {
                         href: "",

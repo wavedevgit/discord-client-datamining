@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(744682);
-let s = {
+    s = n(744682);
+let a = {
         all: {
             name: "all",
             start: 0,
@@ -23,11 +23,11 @@ let s = {
             o = l.useCallback(() => {
                 null != e.current && e.current.stopIfPlaying("all")
             }, []),
-            c = l.useCallback(t => (0, i.jsx)(a.P, {
+            c = l.useCallback(t => (0, i.jsx)(s.P, {
                 ...t,
                 src: () => n.e("5506").then(n.t.bind(n, 429286, 19)),
                 ref: e,
-                markers: s
+                markers: a
             }), []);
         return {
             events: {

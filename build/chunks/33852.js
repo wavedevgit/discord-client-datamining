@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(311907),
-    a = n(397927),
-    s = n(882997),
+    s = n(397927),
+    a = n(882997),
     r = n(962173),
     o = n(985018);
 
@@ -19,9 +19,9 @@ function c(e) {
         icon: u,
         ...h
     } = e;
-    return (0, l.bG)([r.A], () => r.A.getAccounts().some(e => e.type === t.type)) ? null : (0, i.jsx)(a.Button, {
+    return (0, l.bG)([r.A], () => r.A.getAccounts().some(e => e.type === t.type)) ? null : (0, i.jsx)(s.Button, {
         onClick: () => {
-            d?.(), (0, s.A)({
+            d?.(), (0, a.A)({
                 platformType: t.type,
                 location: "Activity Action"
             })

@@ -42,7 +42,7 @@ let y = e => {
         tab: B,
         buttonContainerClassName: P,
         orbsSupportedOnly: M
-    } = e, H = (0, i.bG)([m.default], () => m.default.getCurrentUser()), D = x.Ay.canUseCollectibles(H), w = (0, b.W)("FeedBlock"), F = (0, j.yB)("FeedBlock"), {
+    } = e, H = (0, i.bG)([m.default], () => m.default.getCurrentUser()), w = x.Ay.canUseCollectibles(H), D = (0, b.W)("FeedBlock"), F = (0, j.yB)("FeedBlock"), {
         sortType: G,
         setSortType: U,
         sortedItems: K,
@@ -51,7 +51,7 @@ let y = e => {
         showRecommendationOption: V
     } = (0, L.A)({
         sortedSkuIds: l,
-        isPremiumUser: D,
+        isPremiumUser: w,
         prioritizeUserDiscounts: R,
         orbsSupportedOnly: M
     }), Y = (0, i.bG)([u.A], () => u.A.useReducedMotion), $ = (0, i.bG)([h.A], () => h.A.isFocused()), Z = !Y && $, {
@@ -165,7 +165,7 @@ let y = e => {
                             children: (0, n.jsx)(A.A, {
                                 skuId: e.skuId,
                                 hideStaticBundleBackgroundAsset: !0,
-                                prioritizedCurrency: B === O.G2.ORBS ? S.Hi.ORBS : w ? S.Hi.FIAT : void 0
+                                prioritizedCurrency: B === O.G2.ORBS ? S.Hi.ORBS : D ? S.Hi.FIAT : void 0
                             })
                         })
                     }, e.skuId)

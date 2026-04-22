@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(311907),
     o = n(506774),
     c = n(990078),
@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(765671),
     A = n(304072),
     g = n(390395),
-    _ = n(659195),
-    p = n(505527),
+    p = n(659195),
+    _ = n(505527),
     f = n(467073),
     E = n(960538),
     C = n(898280),
@@ -45,15 +45,15 @@ var i = n(627968),
 function H(e) {
     let {
         channel: t
-    } = e, a = t.isArchivedThread(), s = (0, T.uW)(t), [r, c] = l.useState(!1), u = () => {
+    } = e, s = t.isArchivedThread(), a = (0, T.uW)(t), [r, c] = l.useState(!1), u = () => {
         c(!0), I.A.resolveFlag(t.id).then(() => {
             c(!1)
         })
     };
-    return s ? (0, i.jsx)(d.Button, {
+    return a ? (0, i.jsx)(d.Button, {
         size: "sm",
         variant: "secondary",
-        text: a ? w.intl.string(U.default["2Y4vkk"]) : w.intl.string(U.default.YIbR4r),
+        text: s ? w.intl.string(U.default["2Y4vkk"]) : w.intl.string(U.default.YIbR4r),
         onClick: () => {
             !0 === o.w.get(N.f) ? u() : (0, d.mMO)(async () => {
                 let {
@@ -74,7 +74,7 @@ function H(e) {
         },
         loading: r,
         icon: d.A9s,
-        disabled: a
+        disabled: s
     }) : null
 }
 
@@ -82,7 +82,7 @@ function V(e) {
     let {
         postId: t,
         isFirstMessage: n,
-        isLastItem: a = !1,
+        isLastItem: s = !1,
         parentChannelId: o
     } = e, {
         ref: I,
@@ -112,9 +112,9 @@ function V(e) {
             t.disconnect()
         }
     });
-    let [ea, es] = l.useState(!0);
+    let [es, ea] = l.useState(!0);
     if (l.useEffect(() => {
-            null == T || (U(Math.floor((T - 280) / 58)), es(!1))
+            null == T || (U(Math.floor((T - 280) / 58)), ea(!1))
         }, [T]), null == Y || null == J) return null;
     let er = J.reactions.length > 0,
         eo = () => {
@@ -128,7 +128,7 @@ function V(e) {
         ec = q ? d.A9s : d.XFE;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: s()(G.kL, {
+            className: a()(G.kL, {
                 [G.wx]: V
             }),
             ref: I,
@@ -139,8 +139,8 @@ function V(e) {
                     channel: Y
                 })
             }) : (0, i.jsxs)("div", {
-                className: s()(G.hY, {
-                    [G.Lq]: ea
+                className: a()(G.hY, {
+                    [G.Lq]: es
                 }),
                 children: [!er && !Z && null != en && (0, i.jsx)("div", {
                     className: F.reactions,
@@ -151,7 +151,7 @@ function V(e) {
                         isLurking: X,
                         isPendingMember: Q,
                         emoji: en,
-                        type: p.v.NORMAL,
+                        type: _.v.NORMAL,
                         hideCount: !0,
                         count: 0,
                         me: !1,
@@ -175,7 +175,7 @@ function V(e) {
                     message: J,
                     channel: Y,
                     useChatFontScaling: !1,
-                    className: s()(B.secondary, G.vU, {
+                    className: a()(B.secondary, G.vU, {
                         [G.w$]: !er
                     }),
                     isForumToolbar: !0,
@@ -229,11 +229,11 @@ function V(e) {
                     })
                 })]
             })]
-        }), ei && (0, i.jsx)(_.A, {
+        }), ei && (0, i.jsx)(p.A, {
             threadId: t
         }), (0, i.jsx)(C.A, {
             channel: Y,
-            isLastItem: a
+            isLastItem: s
         })]
     })
 }

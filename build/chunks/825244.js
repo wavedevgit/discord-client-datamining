@@ -5,8 +5,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(615300),
     o = n(311907),
     c = n(554146),
@@ -16,8 +16,8 @@ var i = n(627968),
     m = n(58149),
     A = n(668446),
     g = n(997509),
-    _ = n(794967),
-    p = n(595818),
+    p = n(794967),
+    _ = n(595818),
     f = n(961350),
     E = n(71393),
     C = n(287809),
@@ -36,7 +36,7 @@ function M(e) {
     let {
         className: t,
         iconUrl: n,
-        icon: a,
+        icon: s,
         header: r,
         completed: o,
         onClick: c
@@ -44,23 +44,23 @@ function M(e) {
     return l.useEffect(() => {
         null != A && o !== A && (m(!0), setTimeout(() => m(!1), 1e3))
     }, [o, A]), (0, i.jsxs)(d.DUT, {
-        className: s()(t, R.Nr, {
+        className: a()(t, R.Nr, {
             [R.so]: o
         }),
         onClick: c,
-        children: [a ?? (0, i.jsx)("img", {
+        children: [s ?? (0, i.jsx)("img", {
             className: R.Kk,
             src: n,
             alt: ""
         }), (0, i.jsx)(d.Text, {
             color: "text-strong",
-            className: s()(R.t$, R.MY),
+            className: a()(R.t$, R.MY),
             variant: "text-sm/normal",
             children: r
         }), o ? (0, i.jsx)(d.A9s, {
             size: "md",
             color: "currentColor",
-            className: s()(R.AI, {
+            className: a()(R.AI, {
                 [R.i0]: u
             })
         }) : (0, i.jsx)(x.A, {
@@ -71,7 +71,7 @@ function M(e) {
 }
 
 function L(e) {
-    let t, a, h, x, L, D, {
+    let t, s, h, x, L, D, {
             channel: O
         } = e,
         P = (0, o.bG)([E.A], () => null != O ? E.A.getGuild(O.getGuildId()) : null, [O]),
@@ -111,7 +111,7 @@ function L(e) {
                     }
                 })
             })
-        }, [P]), a = l.useCallback(() => {
+        }, [P]), s = l.useCallback(() => {
             m.Ay.trackWithMetadata(y.HAw.SERVER_SETUP_CTA_CLICKED, {
                 setup_type: b.XT.CHANNEL_WELCOME,
                 action: b.AG.SEND_MESSAGE
@@ -123,12 +123,12 @@ function L(e) {
             m.Ay.trackWithMetadata(y.HAw.SERVER_SETUP_CTA_CLICKED, {
                 setup_type: b.XT.CHANNEL_WELCOME,
                 action: b.AG.PERSONALIZE_SERVER
-            }), null != P && g.A.open(P.id, (0, p.x)(), {
+            }), null != P && g.A.open(P.id, (0, _.x)(), {
                 section: y.JJy.CHANNEL_WELCOME_CTA
             })
         }, [P]), {
             handleInvite: t,
-            handleMessage: a,
+            handleMessage: s,
             handlePersonalize: h,
             handleDownload: l.useCallback(() => {
                 m.Ay.trackWithMetadata(y.HAw.SERVER_SETUP_CTA_CLICKED, {
@@ -201,7 +201,7 @@ function L(e) {
     if (l.useEffect(() => {
             (async () => {
                 try {
-                    let e = await (0, _.c)(P?.id ?? y.dJq);
+                    let e = await (0, p.c)(P?.id ?? y.dJq);
                     ee(e.map(e => e.id))
                 } catch {}
             })()
@@ -282,7 +282,7 @@ function L(e) {
                         })
                     }), (0, i.jsxs)(d.Text, {
                         color: "text-default",
-                        className: s()({
+                        className: a()({
                             [R.VA]: !0,
                             [R.lg]: 0 === en.length
                         }),

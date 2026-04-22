@@ -1,14 +1,14 @@
 /** chunk id: 204094 params = (module,exports,require) **/
 l.d(t, {
-    r: () => o
+    r: () => i
 });
 var a = l(627968);
 l(64700);
 var r = l(397927),
     n = l(206845),
     s = l(453854),
-    i = l(985018);
-let o = {
+    o = l(985018);
+let i = {
     name: "SkuPreview",
     id: "skupreview",
     component: e => {
@@ -27,7 +27,7 @@ let o = {
                     variant: "text-sm/bold",
                     children: "Avatar Decoration"
                 }), (0, a.jsx)(n.A, {
-                    text: i.intl.string(i.t.OpuAlK),
+                    text: o.intl.string(o.t.OpuAlK),
                     delay: 0,
                     "aria-label": !1,
                     copyValue: "1458472704192811088",
@@ -48,7 +48,7 @@ let o = {
                     variant: "text-sm/bold",
                     children: "Profile Effect"
                 }), (0, a.jsx)(n.A, {
-                    text: i.intl.string(i.t.OpuAlK),
+                    text: o.intl.string(o.t.OpuAlK),
                     delay: 0,
                     "aria-label": !1,
                     copyValue: "1458479739110166560",
@@ -69,7 +69,7 @@ let o = {
                     variant: "text-sm/bold",
                     children: "Nameplate"
                 }), (0, a.jsx)(n.A, {
-                    text: i.intl.string(i.t.OpuAlK),
+                    text: o.intl.string(o.t.OpuAlK),
                     delay: 0,
                     "aria-label": !1,
                     copyValue: "1458472704524156959",

@@ -1,11 +1,11 @@
 /** chunk id: 901690 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(451988),
     o = n(765671),
     c = n(964486),
@@ -18,15 +18,15 @@ var i = n(627968),
 function g(e) {
     return (1 & e.buttons) == 1
 }
-let _ = l.memo(function(e) {
+let p = l.memo(function(e) {
     let {
         ...t
     } = e, {
         streamId: n,
-        onResize: a,
-        wrapperClassName: _
+        onResize: s,
+        wrapperClassName: p
     } = t, {
-        onActive: p
+        onActive: _
     } = l.useContext(d.k3), {
         enabled: f,
         minZoom: E,
@@ -43,8 +43,8 @@ let _ = l.memo(function(e) {
         doZoom: R,
         clampPanOffset: M
     } = l.useContext(m.e9), [L, D] = l.useState(null), [O, P] = l.useState(null), [k, w] = l.useState(0), [U, G] = l.useState(null), [F, B] = l.useState(null), [H, V] = l.useState(!1), W = l.useRef(new r.Ep), K = l.useRef(new r.Ep), z = l.useRef(null), Y = T > E, J = l.useCallback(e => {
-        e.width > 0 && e.height > 0 && b(e.width / e.height), a?.(e)
-    }, [a, b]), q = l.useCallback(e => {
+        e.width > 0 && e.height > 0 && b(e.width / e.height), s?.(e)
+    }, [s, b]), q = l.useCallback(e => {
         if (null == j.current) return m.qd;
         let t = j.current.getBoundingClientRect();
         return {
@@ -57,7 +57,7 @@ let _ = l.memo(function(e) {
         let t = q(e);
         x(!0), P(t), D(t), w(Date.now()), B(t), G(S)
     }, [q, Y, S, x]), Z = l.useCallback(e => {
-        if ((f || Y) && p(), !C || !Y || null == F || null == U) return;
+        if ((f || Y) && _(), !C || !Y || null == F || null == U) return;
         e.preventDefault(), e.stopPropagation();
         let t = q(e),
             n = t.x - F.x,
@@ -66,7 +66,7 @@ let _ = l.memo(function(e) {
             x: U.x + n,
             y: U.y + i
         })), D(t)
-    }, [M, F, U, f, q, C, Y, p, I]), X = l.useCallback(e => {
+    }, [M, F, U, f, q, C, Y, _, I]), X = l.useCallback(e => {
         !C || g(e) || (e.preventDefault(), e.stopPropagation(), x(!1), B(null), G(null))
     }, [C, x]), Q = l.useCallback(e => {
         if (Y && null != O && null != L) {
@@ -82,10 +82,10 @@ let _ = l.memo(function(e) {
     }, [Y, O, k, L]), ee = l.useCallback(() => {
         x(!1), B(null), G(null)
     }, [x]), et = l.useCallback(e => {
-        f && (N(!0), R(T - e.deltaY / 100, q(e), "wheel"), p(), W.current.start(100, () => {
+        f && (N(!0), R(T - e.deltaY / 100, q(e), "wheel"), _(), W.current.start(100, () => {
             N(!1)
         }))
-    }, [f, R, T, q, p, N]);
+    }, [f, R, T, q, _, N]);
     (0, o.i4)(j, l.useCallback(e => {
         let {
             width: t,
@@ -102,16 +102,16 @@ let _ = l.memo(function(e) {
         }
         let {
             width: l,
-            height: a
+            height: s
         } = i;
-        1 > Math.abs(t - l) && 1 > Math.abs(n - a) || (V(!0), I(e => {
+        1 > Math.abs(t - l) && 1 > Math.abs(n - s) || (V(!0), I(e => {
             let i = l * (T - 1) / 2,
-                s = a * (T - 1) / 2,
+                a = s * (T - 1) / 2,
                 r = t * (T - 1) / 2,
                 o = n * (T - 1) / 2;
             return M({
                 x: (0 !== i ? e.x / i : 0) * r,
-                y: (0 !== s ? e.y / s : 0) * o
+                y: (0 !== a ? e.y / a : 0) * o
             })
         }), z.current = {
             width: t,
@@ -135,7 +135,7 @@ let _ = l.memo(function(e) {
     }, [M, C, H, v, y, S, T]);
     return (0, i.jsx)("div", {
         ref: j,
-        className: s()(A.iE, _, {
+        className: a()(A.iE, p, {
             [A.rc]: f && Y,
             [A.d$]: C
         }),
@@ -146,7 +146,7 @@ let _ = l.memo(function(e) {
         onWheel: et,
         onClick: Q,
         children: null != n && (0, i.jsx)("div", {
-            className: s()(A.j, A.L2),
+            className: a()(A.j, A.L2),
             style: en,
             children: (0, i.jsx)(h.A, {
                 ...t,

@@ -1,11 +1,11 @@
 /** chunk id: 706787 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var i = n(627968),
     l = n(64700),
-    a = n(517738),
-    s = n(311907),
+    s = n(517738),
+    a = n(311907),
     r = n(397927),
     o = n(565645),
     c = n(775602),
@@ -15,17 +15,17 @@ var i = n(627968),
 let m = 6 * d.A.Millis.SECOND,
     A = 2 * d.A.Millis.SECOND,
     g = 2 * d.A.Millis.SECOND,
-    _ = e => `scale(${1- -(e/120)}) rotate(${e}deg)`;
+    p = e => `scale(${1- -(e/120)}) rotate(${e}deg)`;
 
-function p(e) {
+function _(e) {
     let {
         userId: t,
         voiceChannelEffect: n,
         onComplete: d
     } = e, {
-        emoji: p,
+        emoji: _,
         sentAt: f
-    } = n, E = (0, s.bG)([c.A], () => c.A.useReducedMotion), [C, x] = l.useState(!0), S = !E, I = (0, r.pnh)(C, {
+    } = n, E = (0, a.bG)([c.A], () => c.A.useReducedMotion), [C, x] = l.useState(!0), S = !E, I = (0, r.pnh)(C, {
         from: {
             rotate: -120
         },
@@ -35,7 +35,7 @@ function p(e) {
         leave: {
             rotate: -120
         },
-        config: a.config.default,
+        config: s.config.default,
         onRest: (e, t) => {
             let {
                 phase: n
@@ -54,16 +54,16 @@ function p(e) {
         let {
             rotate: n
         } = e;
-        return t && (0, i.jsx)(a.animated.div, {
+        return t && (0, i.jsx)(s.animated.div, {
             className: h._,
             style: {
-                transform: n.to(_)
+                transform: n.to(p)
             },
             children: (0, i.jsx)(o.A, {
                 className: h.F,
-                emojiId: p.id,
-                emojiName: p.name,
-                animated: p.animated ?? !1
+                emojiId: _.id,
+                emojiName: _.name,
+                animated: _.animated ?? !1
             })
         })
     })

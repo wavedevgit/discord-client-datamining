@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(731738),
-    s = n(311907),
+    s = n(731738),
+    a = n(311907),
     r = n(397927),
     o = n(49229),
     c = n(831062),
@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(544231),
     A = n(349435),
     g = n(665909),
-    _ = n(576045),
-    p = n(327337),
+    p = n(576045),
+    _ = n(327337),
     f = n(652215),
     E = n(985018);
 
@@ -24,28 +24,28 @@ function C(e) {
     let {
         senderId: t,
         channelId: n,
-        warningId: a
+        warningId: s
     } = e, {
         isIgnored: r
-    } = (0, s.cf)([h.A], () => ({
+    } = (0, a.cf)([h.A], () => ({
         isIgnored: h.A.isIgnored(t)
     }), [t]), c = l.useCallback(() => {
         (0, g._$)({
             channelId: n,
-            warningId: a,
+            warningId: s,
             senderId: t,
             warningType: A._j.STRANGER_DANGER,
             cta: g.Wm.USER_MODAL_IGNORE
         }), o.A.ignoreUser(t, "web_stranger_danger_more", n)
-    }, [n, a, t]), d = l.useCallback(() => {
+    }, [n, s, t]), d = l.useCallback(() => {
         (0, g._$)({
             channelId: n,
-            warningId: a,
+            warningId: s,
             senderId: t,
             warningType: A._j.STRANGER_DANGER,
             cta: g.Wm.USER_MODAL_UNIGNORE
         }), o.A.unignoreUser(t, "web_stranger_danger_more", n)
-    }, [n, a, t]);
+    }, [n, s, t]);
     return (0, i.jsx)(u.PQ, {
         title: E.intl.string(E.t.avyV7P),
         description: E.intl.string(E.t.naWE6W),
@@ -61,13 +61,13 @@ function x(e) {
         senderId: S
     } = e, {
         isBlocked: I
-    } = (0, s.cf)([h.A], () => ({
+    } = (0, a.cf)([h.A], () => ({
         isBlocked: h.A.isBlocked(S)
     }), [S]), T = l.useCallback(() => {
         (0, m.xi)(t, [x])
-    }, [t, x]), v = (0, p.eT)(), N = l.useCallback(e => () => {
+    }, [t, x]), v = (0, _.eT)(), N = l.useCallback(e => () => {
         o.A.blockUser(S, {
-            location: p.Rx
+            location: _.Rx
         }).then(() => {
             T()
         }), (0, g._$)({
@@ -85,7 +85,7 @@ function x(e) {
             senderId: S,
             warningType: A._j.STRANGER_DANGER
         }), c.A.increment({
-            name: a.K.SAFETY_WARNING_VIEW
+            name: s.K.SAFETY_WARNING_VIEW
         })
     }, [t, x, S]);
     let y = () => {
@@ -96,11 +96,11 @@ function x(e) {
                 return n => {
                     let {
                         transitionState: l,
-                        onClose: a
+                        onClose: s
                     } = n;
                     return (0, i.jsx)(e, {
                         transitionState: l,
-                        onClose: a,
+                        onClose: s,
                         channelId: t,
                         warningId: x,
                         senderId: S,
@@ -121,7 +121,7 @@ function x(e) {
                                 buttonText: E.intl.string(E.t["5QYPO2"]),
                                 buttonVariant: "critical-primary",
                                 onButtonPress: () => {
-                                    a(), b(g.Wm.USER_MODAL_BLOCK_CONFIRM, g.Wm.USER_MODAL_BLOCK_CANCEL, y)
+                                    s(), b(g.Wm.USER_MODAL_BLOCK_CONFIRM, g.Wm.USER_MODAL_BLOCK_CANCEL, y)
                                 }
                             }, "block-button")]
                         })
@@ -129,17 +129,17 @@ function x(e) {
                 }
             })
         },
-        b = (e, l, a) => {
+        b = (e, l, s) => {
             (0, r.mMO)(async () => {
                 let {
-                    default: s
+                    default: a
                 } = await n.e("67554").then(n.bind(n, 219801));
-                return n => (0, i.jsx)(s, {
+                return n => (0, i.jsx)(a, {
                     ...n,
                     userId: S,
                     confirmBlock: N(e),
                     onCancel: () => {
-                        a?.(), (0, g._$)({
+                        s?.(), (0, g._$)({
                             channelId: t,
                             warningId: x,
                             senderId: S,
@@ -150,7 +150,7 @@ function x(e) {
                 })
             })
         };
-    return (0, i.jsx)(_.N, {
+    return (0, i.jsx)(p.N, {
         channelId: t,
         warningId: x,
         senderId: S,

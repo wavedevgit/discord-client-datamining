@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(311907),
     l = n(487329),
-    a = n(161518);
-let s = {
+    s = n(161518);
+let a = {
     [l.iy.STREAM_SOUNDSHARE_FAILED]: 0,
     [l.iy.STREAM_SEND_HIGH_PACKET_LOSS]: 1,
     [l.iy.STREAM_VIEW_HIGH_PACKET_LOSS]: 1,
@@ -16,8 +16,8 @@ let s = {
 
 function r(e) {
     let t = e.id;
-    return (0, i.bG)([a.A], () => {
-        let e = Array.from(a.A.getActiveErrors().values()).filter(e => "streamKey" in e && e.streamKey === t && null != s[e.type]).sort((e, t) => (s[e.type] ?? 0) - (s[t.type] ?? 0))[0];
+    return (0, i.bG)([s.A], () => {
+        let e = Array.from(s.A.getActiveErrors().values()).filter(e => "streamKey" in e && e.streamKey === t && null != a[e.type]).sort((e, t) => (a[e.type] ?? 0) - (a[t.type] ?? 0))[0];
         return e?.type
     }, [t])
 }

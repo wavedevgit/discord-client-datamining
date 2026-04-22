@@ -42,8 +42,8 @@ function B(e) {
         tab: B
     } = e, P = (0, _.uM)(), M = P?.sessionId ?? "", {
         noCache: H,
-        includeUnpublished: D
-    } = (0, b.A)(), w = (0, m.W)("CollectiblesFilterableShop"), F = (0, a.bG)([d.default], () => d.default.getCurrentUser()), G = (0, a.bG)([g.A], () => g.A.productsWithVariantsAsGroup), [U, K] = r.useState(1), W = (0, c.DP)(), z = (0, i.qB)(W), [V, Y, $] = r.useMemo(() => {
+        includeUnpublished: w
+    } = (0, b.A)(), D = (0, m.W)("CollectiblesFilterableShop"), F = (0, a.bG)([d.default], () => d.default.getCurrentUser()), G = (0, a.bG)([g.A], () => g.A.productsWithVariantsAsGroup), [U, K] = r.useState(1), W = (0, c.DP)(), z = (0, i.qB)(W), [V, Y, $] = r.useMemo(() => {
         switch (B) {
             case A.G2.AVATAR_DECORATIONS:
                 return [v.intl.string(v.t.dRZYNE), z ? T.A : O.A, l.R.AVATAR_DECORATION];
@@ -65,7 +65,7 @@ function B(e) {
             sessionId: M,
             checkpoint: f.t.SHOP_MOUNTED,
             tab: B,
-            unpublishedCategoriesShown: D,
+            unpublishedCategoriesShown: w,
             cacheDisabled: H
         })
     }, []), r.useEffect(() => {
@@ -73,10 +73,10 @@ function B(e) {
             sessionId: M,
             checkpoint: f.t.SHOP_RENDERED,
             tab: B,
-            unpublishedCategoriesShown: D,
+            unpublishedCategoriesShown: w,
             cacheDisabled: H
         })
-    }, [M, D, H, t, B]), t || null == F) ? (0, n.jsx)(x.A, {}) : (0, n.jsxs)(n.Fragment, {
+    }, [M, w, H, t, B]), t || null == F) ? (0, n.jsx)(x.A, {}) : (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)("div", {
             style: {
                 backgroundImage: `url(${Y})`
@@ -94,7 +94,7 @@ function B(e) {
                 },
                 children: (0, n.jsx)(E.A, {
                     skuId: e.skuId,
-                    prioritizedCurrency: w ? C.Hi.FIAT : void 0
+                    prioritizedCurrency: D ? C.Hi.FIAT : void 0
                 }, e.skuId)
             }, e.skuId))
         }), X.length > 40 && (0, n.jsx)("div", {

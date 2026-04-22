@@ -38,8 +38,8 @@ var n = s(627968),
     P = s(758836),
     M = s(652215),
     H = s(650583),
-    D = s(985018),
-    w = s(647685);
+    w = s(985018),
+    D = s(647685);
 let F = e => {
         let {
             children: t,
@@ -94,7 +94,7 @@ let F = e => {
                 transitionToTab: et
             } = (0, L.o)(K);
         (0, m.HU)({
-            location: D.intl.string(D.t.pWG4ze)
+            location: w.intl.string(w.t.pWG4ze)
         }), (0, A.uS)(s, Q, Z, ee, q), (0, A.N0)(Q, l);
         let {
             dismissShopButtonDC: es
@@ -126,7 +126,7 @@ let F = e => {
                         onClose: H,
                         shouldAddEventListener: !1,
                         children: (0, n.jsxs)("div", {
-                            className: a()(w.bx, {
+                            className: a()(D.bx, {
                                 [B.jP]: c
                             }),
                             ref: er,
@@ -140,10 +140,10 @@ let F = e => {
                                 variant: "pink",
                                 countdownEndDate: ea.countdownEndDate
                             }), (0, n.jsx)("div", {
-                                className: a()(w.td, {
-                                    [w.RK]: ee === P.Pf.VISIBLE,
-                                    [w.in]: ee === P.Pf.IN,
-                                    [w.FD]: ee === P.Pf.OUT
+                                className: a()(D.td, {
+                                    [D.RK]: ee === P.Pf.VISIBLE,
+                                    [D.in]: ee === P.Pf.IN,
+                                    [D.FD]: ee === P.Pf.OUT
                                 }),
                                 children: (0, n.jsx)(O.A, {
                                     tab: Q,

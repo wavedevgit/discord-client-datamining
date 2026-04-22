@@ -380,12 +380,14 @@ function Q(e) {
         setTextAreaState: s,
         submit: u,
         error: h
-    } = e, [A, _] = l.useState(!0), m = l.useCallback(() => _(!0), []), p = l.useCallback(() => _(!1), []), g = l.useCallback((e, n, i) => {
+    } = e, [A, _] = l.useState(!0), m = l.useRef(null), p = l.useCallback(e => {
+        _(!0), e?.wasEnterPressed && (e?.event?.preventDefault(), m.current?.submit())
+    }, []), g = l.useCallback(() => _(!1), []), f = l.useCallback((e, n, i) => {
         d.A.saveDraft(t.id, n, R.C.FirstThreadMessage), s(e => ("" !== n && e.textValue !== n ? c.A.startTyping(t.id) : "" === n && c.A.stopTyping(t.id), {
             textValue: n,
             richValue: i
         }))
-    }, [t.id, s]), f = l.useCallback(e => {
+    }, [t.id, s]), I = l.useCallback(e => {
         let {
             value: t,
             uploads: n,
@@ -395,24 +397,24 @@ function Q(e) {
     }, [u]);
     (0, M.Vo)({
         event: H.jej.TEXTAREA_FOCUS,
-        handler: m
+        handler: p
     }), (0, M.Vo)({
         event: H.jej.TEXTAREA_BLUR,
-        handler: p
+        handler: g
     });
-    let I = (0, r.bG)([O.A], () => O.A.can(H.xBc.ATTACH_FILES, t)),
-        C = (0, G.vr)(h, {
+    let C = (0, r.bG)([O.A], () => O.A.can(H.xBc.ATTACH_FILES, t)),
+        N = (0, G.vr)(h, {
             content: n.textValue
         });
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(x.A, {
             channelId: t.id,
             type: Y,
-            canAttachFiles: I
+            canAttachFiles: C
         }), (0, i.jsx)("div", {
             className: W.xN,
             children: (0, i.jsx)(o.dzK, {
-                error: C
+                error: N
             })
         }), (0, i.jsx)(E.Ay, {
             type: Y,
@@ -423,13 +425,16 @@ function Q(e) {
             focused: A,
             className: a()(W.gM, W.Yy),
             innerClassName: a()(W.SL, {
-                [W.cr]: null != C
+                [W.cr]: null != N
             }),
-            onFocus: m,
-            onBlur: p,
-            onChange: g,
-            onSubmit: f,
-            promptToUpload: U.R
+            onFocus: p,
+            onBlur: g,
+            onChange: f,
+            onSubmit: I,
+            promptToUpload: U.R,
+            setEditorRef: e => {
+                m.current = e
+            }
         })]
     })
 }

@@ -7,14 +7,14 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(653922),
-    a = n(397927),
-    s = n(157559),
+    s = n(397927),
+    a = n(157559),
     r = n(308528),
     o = n(793574),
     c = n(576470),
     d = n(339984),
     u = n(985018);
-let h = (e, t) => (0, a.mMO)(async () => {
+let h = (e, t) => (0, s.mMO)(async () => {
         let {
             default: l
         } = await Promise.all([n.e("79149"), n.e("53653"), n.e("79354")]).then(n.bind(n, 551028));
@@ -38,7 +38,7 @@ let h = (e, t) => (0, a.mMO)(async () => {
     A = e => {
         if (e?.body?.retry_after != null) {
             let t = (0, l.A)(new Date, e.body.retry_after);
-            s.A.show({
+            a.A.show({
                 title: u.intl.string(u.t.Whhv4w),
                 body: u.intl.format(u.t.VIJkAy, {
                     duration: (0, i.jsx)(c.A, {

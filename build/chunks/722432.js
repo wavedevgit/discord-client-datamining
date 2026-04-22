@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(64700),
     l = n(884362),
-    a = n(765548),
-    s = n(234320),
+    s = n(765548),
+    a = n(234320),
     r = n(203982),
     o = n(375901),
     c = n(381941),
@@ -15,14 +15,14 @@ function u(e) {
     let {
         scrollerRef: t,
         ...n
-    } = e, u = (0, a.A)(() => {
+    } = e, u = (0, s.A)(() => {
         let e = t.current;
         return null == e ? Promise.resolve() : new Promise(t => {
             e.scrollToBottom({
                 callback: () => requestAnimationFrame(t)
             })
         })
-    }), h = (0, a.A)(() => {
+    }), h = (0, s.A)(() => {
         let e = t.current;
         return null == e ? Promise.resolve() : new Promise(t => {
             e.scrollToTop({
@@ -48,14 +48,14 @@ function u(e) {
         scrollToStart: h,
         scrollToEnd: u,
         onNavigateNextAtEnd: A
-    }), _ = i.useCallback(e => {
+    }), p = i.useCallback(e => {
         let {
             atEnd: t = !1
         } = e;
         t ? g.focusLastVisibleItem() : g.focusFirstVisibleItem()
     }, [g]);
-    return (0, s.Vo)({
+    return (0, a.Vo)({
         event: d.jej.FOCUS_MESSAGES,
-        handler: _
+        handler: p
     }), g
 }

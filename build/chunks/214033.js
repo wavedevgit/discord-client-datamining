@@ -7,8 +7,8 @@ l(64700);
 var r = l(397927),
     n = l(206845),
     s = l(604238),
-    i = l(261225),
-    o = l(282203),
+    o = l(261225),
+    i = l(282203),
     d = l(985018);
 let c = {
     name: "SkuList",
@@ -30,9 +30,9 @@ let c = {
             }), (0, a.jsx)(r.Text, {
                 variant: "text-md/semibold",
                 children: "This will be useful when wanting to get a dynamic list of sku ids from the server (like popular picks) and push them into a product grid"
-            }), (0, a.jsx)("br", {}), (0, a.jsx)(i.A, {
+            }), (0, a.jsx)("br", {}), (0, a.jsx)(o.A, {
                 columns: 3,
-                children: (0, a.jsx)(o.A, {
+                children: (0, a.jsx)(i.A, {
                     skuIds: t?.split(","),
                     skuBlock: "ShopProductCard",
                     sortPurchased: l,

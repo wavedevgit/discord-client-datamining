@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(311907),
-    a = n(397927),
-    s = n(47167),
+    s = n(397927),
+    a = n(47167),
     r = n(495273),
     o = n(265869),
     c = n(437774),
@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(287809),
     A = n(427262),
     g = n(314307),
-    _ = n(393194),
-    p = n(455067),
+    p = n(393194),
+    _ = n(455067),
     f = n(635157),
     E = n(379768),
     C = n(391257),
@@ -32,18 +32,18 @@ function b(e) {
     let {
         canManageRoles: t,
         channel: n
-    } = e, a = t && (0, r.Ae)(n), s = (0, l.bG)([u.Ay], () => null != n.guild_id && n === u.Ay.getDefaultChannel(n.guild_id), [n]);
+    } = e, s = t && (0, r.Ae)(n), a = (0, l.bG)([u.Ay], () => null != n.guild_id && n === u.Ay.getDefaultChannel(n.guild_id), [n]);
     if ((0, o.A)(n.id)) return null;
-    if (n.isForumPost()) return (0, i.jsx)(_.A, {
+    if (n.isForumPost()) return (0, i.jsx)(p.A, {
         channel: n
     });
     if (d.Le.has(n.type)) return (0, i.jsx)(x.A, {
         channel: n
     });
-    if (s) return (0, i.jsx)(S.A, {
+    if (a) return (0, i.jsx)(S.A, {
         channel: n
     });
-    if (a) return (0, i.jsx)(E.A, {
+    if (s) return (0, i.jsx)(E.A, {
         channel: n
     });
     return (0, i.jsx)(C.A, {
@@ -55,10 +55,10 @@ function j(e) {
     let {
         channel: t,
         showingBanner: n
-    } = e, r = (0, s.Ay)(t), {
+    } = e, r = (0, a.Ay)(t), {
         type: o
     } = t, d = (0, l.bG)([m.default], () => t.isPrivate() ? m.default.getUser(t.getRecipientId()) : null), u = A.Ay.useUserTag(d), {
-        canManageRoles: _,
+        canManageRoles: p,
         canReadMessageHistory: E
     } = (0, l.cf)([h.A], () => ({
         canManageRoles: h.A.can(T.xBc.MANAGE_ROLES, t),
@@ -71,7 +71,7 @@ function j(e) {
     if (o === T.rbe.DM) return (0, i.jsxs)(f.A, {
         channel: t,
         user: d,
-        children: [null == d || d.isProvisional ? null : (0, i.jsx)(a.Heading, {
+        children: [null == d || d.isProvisional ? null : (0, i.jsx)(s.Heading, {
             variant: "heading-xl/medium",
             className: y.SX,
             children: u
@@ -96,7 +96,7 @@ function j(e) {
                 children: N.intl.string(N.t.M8Ao6I)
             })]
         });
-        else if (t.hasFlag(v.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(p.A, {
+        else if (t.hasFlag(v.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(_.A, {
         channel: t
     });
     else return (0, i.jsx)(f.A, {
@@ -107,7 +107,7 @@ function j(e) {
     });
     return E ? (0, i.jsx)(b, {
         channel: t,
-        canManageRoles: _
+        canManageRoles: p
     }) : (0, i.jsx)(g.Ay, {
         channelId: t.id,
         children: (0, i.jsx)(g.j1, {

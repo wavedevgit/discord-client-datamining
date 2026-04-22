@@ -1,12 +1,12 @@
 /** chunk id: 213012 params = (module,exports,require) **/
 n.d(t, {
-    I: () => s
+    I: () => a
 });
 var i = n(562465),
     l = n(73153),
-    a = n(652215);
-let s = () => i.Bo.get({
-    url: a.Rsh.GUILD_AFFINITIES,
+    s = n(652215);
+let a = () => i.Bo.get({
+    url: s.Rsh.GUILD_AFFINITIES,
     oldFormErrors: !0,
     rejectWithError: !1
 }).then(e => {

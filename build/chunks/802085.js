@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    s = n(503698),
+    a = n.n(s),
     r = n(877413),
     o = n.n(r),
     c = n(311907),
@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(93474),
     A = n(975571),
     g = n(465364),
-    _ = n(986350),
-    p = n(860227),
+    p = n(986350),
+    _ = n(860227),
     f = n(291812),
     E = n(449859),
     C = n(652215),
@@ -29,11 +29,11 @@ let v = l.memo(function(e) {
             message: t,
             notice: n,
             compact: l = !1,
-            onDismiss: a
+            onDismiss: s
         } = e;
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {
-                className: s()(S.K1, {
+                className: a()(S.K1, {
                     [S.oE]: l
                 }),
                 children: [(0, i.jsx)("div", {
@@ -52,12 +52,12 @@ let v = l.memo(function(e) {
                     })
                 })]
             }), (0, i.jsx)("div", {
-                className: s()(S.ah, {
+                className: a()(S.ah, {
                     [S.oE]: l
                 }),
-                children: (0, i.jsx)(_.A, {
+                children: (0, i.jsx)(p.A, {
                     message: t,
-                    onDeleteMessage: a,
+                    onDeleteMessage: s,
                     children: (0, i.jsx)(d.Text, {
                         variant: "text-xs/normal",
                         color: "interactive-text-default",
@@ -75,26 +75,26 @@ let v = l.memo(function(e) {
         let {
             className: t,
             compact: n,
-            message: a,
+            message: s,
             children: r,
             content: d,
             onUpdate: A
-        } = e, g = a.editedTimestamp?.toString(), _ = l.useRef(!1), C = (0, c.bG)([m.A], () => m.A.getMessage(a.id), [a.id]), N = l.useCallback(() => {
-            C?.isBlockedEdit ? (0, h.j)(a.id) : u.A.deleteMessage(a.channel_id, a.id, !0)
-        }, [a, C]);
+        } = e, g = s.editedTimestamp?.toString(), p = l.useRef(!1), C = (0, c.bG)([m.A], () => m.A.getMessage(s.id), [s.id]), N = l.useCallback(() => {
+            C?.isBlockedEdit ? (0, h.j)(s.id) : u.A.deleteMessage(s.channel_id, s.id, !0)
+        }, [s, C]);
         return l.useLayoutEffect(() => {
-            _.current ? null != A && A() : _.current = !0
-        }, [A, a.content, d, g, r]), (0, i.jsxs)("div", {
-            id: (0, p.CJ)(a),
-            className: s()(t, T.PT, {
+            p.current ? null != A && A() : p.current = !0
+        }, [A, s.content, d, g, r]), (0, i.jsxs)("div", {
+            id: (0, _.CJ)(s),
+            className: a()(t, T.PT, {
                 [I.BK]: !0,
-                [I.nB]: "rtl" === o()(a.content),
+                [I.nB]: "rtl" === o()(s.content),
                 [S.Dy]: C?.isBlockedEdit,
                 [S.bv]: !C?.isBlockedEdit
             }),
-            children: [r ?? (0, f._A)(a, d), C?.isBlockedEdit && null != a.timestamp && (0, i.jsxs)(i.Fragment, {
+            children: [r ?? (0, f._A)(s, d), C?.isBlockedEdit && null != s.timestamp && (0, i.jsxs)(i.Fragment, {
                 children: [" ", (0, i.jsx)(E.A, {
-                    timestamp: a.timestamp,
+                    timestamp: s.timestamp,
                     isEdited: !0,
                     isInline: !1,
                     children: (0, i.jsxs)("span", {
@@ -104,7 +104,7 @@ let v = l.memo(function(e) {
                 })]
             }), (0, i.jsx)(v, {
                 notice: C?.errorMessage ?? x.intl.string(x.t.zQ69pv),
-                message: a,
+                message: s,
                 compact: n,
                 onDismiss: N
             })]

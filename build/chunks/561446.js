@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(311907),
-    a = n(990078),
-    s = n(397927),
+    s = n(990078),
+    a = n(397927),
     r = n(58736),
     o = n(657331),
     c = n(498642),
@@ -16,8 +16,8 @@ var l = n(311907),
     m = n(844944),
     A = n(513461),
     g = n(123393),
-    _ = n(652215),
-    p = n(985018),
+    p = n(652215),
+    _ = n(985018),
     f = n(782329);
 
 function E(e) {
@@ -35,7 +35,7 @@ function E(e) {
             t = d.A.getGuild(e?.guildId);
         return {
             joinRequest: e,
-            isModmin: null != t && u.A.can(_.xBc.KICK_MEMBERS, t),
+            isModmin: null != t && u.A.can(p.xBc.KICK_MEMBERS, t),
             guildId: t?.id,
             maxMembers: t?.maxMembers
         }
@@ -46,24 +46,24 @@ function E(e) {
     } = (0, g.W)(x?.guildId, x?.userId, x?.joinRequestId);
     return null != x && x.applicationStatus === A.B5.SUBMITTED && S ? (0, i.jsxs)("div", {
         className: f.U,
-        children: [(0, i.jsx)(a.m, {
-            text: p.intl.string(p.t.cdPGbE),
+        children: [(0, i.jsx)(s.m, {
+            text: _.intl.string(_.t.cdPGbE),
             shouldShow: N,
-            children: (0, i.jsx)(s.Button, {
+            children: (0, i.jsx)(a.Button, {
                 variant: "active",
                 size: "sm",
-                text: p.intl.string(p.t.BzjDQJ),
+                text: _.intl.string(_.t.BzjDQJ),
                 loading: j,
                 onClick: y,
                 disabled: N
             })
-        }), (0, i.jsx)(s.Button, {
+        }), (0, i.jsx)(a.Button, {
             variant: "critical-primary",
             size: "sm",
-            text: p.intl.string(p.t.hDtbsz),
+            text: _.intl.string(_.t.hDtbsz),
             onClick: b,
             disabled: j || x.applicationStatus !== A.B5.SUBMITTED
-        }), n && (0, i.jsx)(s.Button, {
+        }), n && (0, i.jsx)(a.Button, {
             onClick: () => {
                 (0, o.openUserProfileModal)({
                     userId: x.userId,
@@ -72,7 +72,7 @@ function E(e) {
             },
             variant: "secondary",
             size: "sm",
-            text: p.intl.string(p.t.iXAna6)
+            text: _.intl.string(_.t.iXAna6)
         }), E && (0, i.jsx)(r.Ay.Divider, {})]
     }) : null
 }

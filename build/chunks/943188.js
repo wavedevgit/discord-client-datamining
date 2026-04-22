@@ -1,6 +1,6 @@
 /** chunk id: 943188 params = (module,exports,require) **/
 l.d(t, {
-    d: () => i
+    d: () => o
 });
 var a = l(627968);
 l(64700);
@@ -12,7 +12,7 @@ let s = () => (0, a.jsx)("div", {
             height: 120
         }
     }),
-    i = {
+    o = {
         name: "Section",
         id: "section",
         component: e => {

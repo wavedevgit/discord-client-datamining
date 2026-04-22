@@ -13,6 +13,7 @@ let n = e => {
     return (0, l.jsx)("section", {
         style: {
             alignSelf: "start",
+            width: "100%",
             marginTop: t,
             marginBottom: t,
             padding: r

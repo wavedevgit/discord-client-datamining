@@ -69,9 +69,9 @@ let S = e => {
     });
     let H = (0, C.uM)(),
         {
-            analyticsLocations: D
+            analyticsLocations: w
         } = (0, o.Ay)(),
-        w = r.useRef(null),
+        D = r.useRef(null),
         F = r.useRef(!1),
         G = r.useRef(null),
         U = r.useMemo(() => ({
@@ -109,9 +109,9 @@ let S = e => {
                 skuId: s,
                 applicationId: n,
                 isStorefront: !1,
-                analyticsLocations: D
+                analyticsLocations: w
             })
-        }, [K, D]),
+        }, [K, w]),
         Y = r.useCallback(() => {
             K("dismiss"), v()
         }, [K, v]),
@@ -129,11 +129,11 @@ let S = e => {
     return (r.useEffect(() => () => {
         null !== G.current && (clearTimeout(G.current), G.current = null)
     }, []), 0 === M.length) ? null : (0, n.jsx)(i.L, {
-        innerRef: w,
+        innerRef: D,
         onChange: $,
         threshold: 0,
         children: (0, n.jsx)("div", {
-            ref: w,
+            ref: D,
             className: A.YB,
             children: (0, n.jsxs)("div", {
                 className: A.kL,

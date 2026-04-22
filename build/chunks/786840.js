@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     l = n(64700),
-    a = n(311907),
-    s = n(397927),
+    s = n(311907),
+    a = n(397927),
     r = n(383501),
     o = n(798286),
     c = n(814278),
@@ -19,11 +19,11 @@ var m = n(985018),
 function g(e) {
     let {
         channelId: t
-    } = e, n = (0, a.bG)([r.A], () => r.A.getSecureFramesState()?.epochAuthenticator), g = (0, d.z)({
+    } = e, n = (0, s.bG)([r.A], () => r.A.getSecureFramesState()?.epochAuthenticator), g = (0, d.z)({
         fingerprintBase64: n,
         chunkSize: 5,
         desiredLength: 30
-    }), _ = l.useCallback(() => {
+    }), p = l.useCallback(() => {
         (0, o.k0)({
             channelId: t
         })
@@ -32,34 +32,34 @@ function g(e) {
         className: A.kL,
         children: [(0, i.jsxs)("div", {
             className: A.Tc,
-            children: [(0, i.jsx)(s.XAi, {
+            children: [(0, i.jsx)(a.XAi, {
                 size: "xxs",
-                color: s.LU0.colors.TEXT_FEEDBACK_POSITIVE
-            }), (0, i.jsx)(s.Text, {
+                color: a.LU0.colors.TEXT_FEEDBACK_POSITIVE
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-xs/medium",
                 color: "text-feedback-positive",
                 children: m.intl.string(m.t["3BogKe"])
             })]
-        }), (0, i.jsx)(s.Text, {
+        }), (0, i.jsx)(a.Text, {
             variant: "text-xs/normal",
             color: "text-subtle",
             children: m.intl.string(m.t.B9JNsl)
         }), (0, i.jsxs)("div", {
             className: A.wx,
-            children: [(0, i.jsx)(s.Heading, {
+            children: [(0, i.jsx)(a.Heading, {
                 variant: "text-sm/bold",
                 color: "text-strong",
                 children: m.intl.string(m.t.cTQI5t)
             }), null != g && (0, i.jsx)(h.c, {
                 chunks: g,
-                color: s.LU0.colors.INTERACTIVE_TEXT_DEFAULT.css,
-                onCopy: _
+                color: a.LU0.colors.INTERACTIVE_TEXT_DEFAULT.css,
+                onCopy: p
             })]
         }), (0, i.jsx)(u.O, {
             className: A.aY,
             chunks: g,
             columns: 3
-        }), (0, i.jsx)(s.Text, {
+        }), (0, i.jsx)(a.Text, {
             variant: "text-xs/normal",
             color: "text-subtle",
             children: m.intl.format(m.t.wKxADe, {

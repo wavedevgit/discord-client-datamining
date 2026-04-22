@@ -4,23 +4,23 @@ n.d(t, {
 });
 var i = n(311907),
     l = n(73153);
-let a = {};
-class s extends i.Ay.Store {
+let s = {};
+class a extends i.Ay.Store {
     static displayName = "ChannelFollowerStatsStore";
     getFollowerStatsForChannel(e) {
-        return a[e]
+        return s[e]
     }
 }
-let r = new s(l.h, {
+let r = new a(l.h, {
     CONNECTION_OPEN: function() {
-        a = {}
+        s = {}
     },
     CHANNEL_FOLLOWER_STATS_FETCH_SUCCESS: function(e) {
         let {
             channelId: t,
             stats: n
         } = e;
-        n = null != n ? n : {}, a[t] = {
+        n = null != n ? n : {}, s[t] = {
             loadingStatus: "succeeded",
             lastFetched: Date.now(),
             channelsFollowing: n.channels_following,
@@ -35,7 +35,7 @@ let r = new s(l.h, {
         let {
             channelId: t
         } = e;
-        a[t] = {
+        s[t] = {
             loadingStatus: "failed",
             lastFetched: Date.now(),
             channelsFollowing: 0,

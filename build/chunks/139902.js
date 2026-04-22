@@ -4,23 +4,23 @@ n.d(t, {
 });
 var i = n(573648),
     l = n(855511),
-    a = n(652215),
-    s = n(985018);
+    s = n(652215),
+    a = n(985018);
 
 function r(e) {
     let t = (0, l.A)(e) ?? "";
     switch (t) {
-        case a.yTV.PS4:
-        case a.yTV.PS5:
-            return s.intl.formatToPlainString(s.t.A17aM8, {
+        case s.yTV.PS4:
+        case s.yTV.PS5:
+            return a.intl.formatToPlainString(a.t.A17aM8, {
                 platform: t.toUpperCase()
             });
-        case a.yTV.XBOX:
-        case a.yTV.SAMSUNG:
-            return s.intl.formatToPlainString(s.t.A17aM8, {
+        case s.yTV.XBOX:
+        case s.yTV.SAMSUNG:
+            return a.intl.formatToPlainString(a.t.A17aM8, {
                 platform: i.A.get(t).name
             });
         default:
-            return s.intl.string(s.t["2TbM/G"])
+            return a.intl.string(a.t["2TbM/G"])
     }
 }

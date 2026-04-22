@@ -1,13 +1,13 @@
 /** chunk id: 235052 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p,
-    u: () => _
+    A: () => _,
+    u: () => p
 });
 var i = n(627968);
 n(64700);
 var l = n(311907),
-    a = n(397927),
-    s = n(308368),
+    s = n(397927),
+    a = n(308368),
     r = n(627363),
     o = n(616356),
     c = n(961350),
@@ -18,7 +18,7 @@ var l = n(311907),
     A = n(783198),
     g = n(985018);
 
-function _(e, t, n) {
+function p(e, t, n) {
     let {
         enableRequestToStream: i
     } = d.m.useExperiment({
@@ -26,11 +26,11 @@ function _(e, t, n) {
         location: n
     }, {
         autoTrackExposure: !1
-    }), a = (0, l.bG)([c.default], () => c.default.getId()), A = (0, h.Ay)(e, t.guild_id)[0], g = (0, l.bG)([o.A], () => null != o.A.getStreamForUser(e, t.getGuildId())), _ = (0, r.YY)(A?.application_id).data, p = (0, u.A)(e, t.id);
-    return a !== e && null != A && null != _ && i && p && !g ? {
-        playingApplication: _,
+    }), s = (0, l.bG)([c.default], () => c.default.getId()), A = (0, h.Ay)(e, t.guild_id)[0], g = (0, l.bG)([o.A], () => null != o.A.getStreamForUser(e, t.getGuildId())), p = (0, r.YY)(A?.application_id).data, _ = (0, u.A)(e, t.id);
+    return s !== e && null != A && null != p && i && _ && !g ? {
+        playingApplication: p,
         handleRequestToStream: function(n) {
-            s.A.sendActivityInvite({
+            a.A.sendActivityInvite({
                 type: m.xL.STREAM_REQUEST,
                 channelId: t.id,
                 activity: A,
@@ -42,18 +42,18 @@ function _(e, t, n) {
     } : null
 }
 
-function p(e, t) {
-    let n = _(e, t, "useRequestToStreamItem");
-    return null == n ? null : (0, i.jsx)(a.Drp, {
+function _(e, t) {
+    let n = p(e, t, "useRequestToStreamItem");
+    return null == n ? null : (0, i.jsx)(s.Drp, {
         id: "request-to-stream",
         label: g.intl.format(A.default["8qq+H7"], {
             applicationName: n.playingApplication.name
         }),
         action: () => n.handleRequestToStream("request to stream item"),
-        icon: a.ofK,
+        icon: s.ofK,
         leadingAccessory: {
             type: "icon",
-            icon: a.ofK
+            icon: s.ofK
         }
     }, "request-to-stream")
 }

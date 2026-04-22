@@ -1,7 +1,7 @@
 /** chunk id: 614986 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => F
+    A: () => W
 });
 var i = n(627968),
     s = n(64700),
@@ -33,15 +33,23 @@ var i = n(627968),
     R = n(652215),
     O = n(985018),
     L = n(888849);
+let w = n(843020);
 
-function w() {
+function k(e) {
+    if (null == e || !l.i.VISIBLE.has(e.visibility)) return !1;
+    let t = null != e.description && e.description.length > 0,
+        n = null != e.gameApplicationIds && e.gameApplicationIds.length > 0;
+    return t || n
+}
+
+function D() {
     return (0, i.jsx)("div", {
         className: L.$k,
         children: (0, i.jsx)(o.y$y, {})
     })
 }
 
-function k(e) {
+function U(e) {
     let t = e?.state == null && e?.channel == null;
     if (null == e || null == e.state || t) return 0;
     let n = e.state;
@@ -64,7 +72,7 @@ function k(e) {
     }
 }
 
-function D(e) {
+function P(e) {
     let {
         invite: t,
         onAcceptInvite: n
@@ -80,7 +88,7 @@ function D(e) {
     })
 }
 
-function U(e) {
+function B(e) {
     let {
         children: t,
         cardChildren: n,
@@ -109,13 +117,13 @@ function U(e) {
     })
 }
 
-function P(e) {
+function G(e) {
     let {
         invite: t
     } = e;
     if (null == t || !(0, T.Fk)(t)) return null;
-    let n = k(t);
-    return (0, i.jsx)(U, {
+    let n = U(t);
+    return (0, i.jsx)(B, {
         startAnimHeightPx: 0,
         sectionClassName: L.ui,
         children: 1 === n ? (0, i.jsx)(y.s, {
@@ -123,42 +131,37 @@ function P(e) {
         }) : null
     })
 }
-let B = {
+let M = {
     1: L._r,
     2: L.Gm,
     0: L.Kt
 };
 
-function G(e) {
+function F(e) {
     let t, {
             invite: n
         } = e,
-        r = k(n),
+        r = U(n),
         {
-            enabled: a
+            enabled: l
         } = S.n.useConfig({
             location: "AcceptInviteMobile"
         }),
-        o = null != n ? (0, p.oO)(n) : null,
-        c = n?.guild != null ? (0, N.DY)(n.guild) : null,
-        d = a && null != o && function(e) {
-            if (null == e || !l.i.VISIBLE.has(e.visibility)) return !1;
-            let t = null != e.description && e.description.length > 0,
-                n = null != e.traits && e.traits.filter(e => e.label.length > 0).length > 0,
-                i = null != e.gameApplicationIds && e.gameApplicationIds.length > 0;
-            return t && (n || i)
-        }(o) && null != c && null != n && !(0, T.Fk)(n);
+        a = null != n ? (0, p.oO)(n) : null,
+        o = n?.guild != null ? (0, N.DY)(n.guild) : null,
+        c = null != o && k(a) && null != n && !(0, T.Fk)(n),
+        d = l && c;
     if (s.useEffect(() => {
-            d && S.n.getConfig({
+            c && S.n.getConfig({
                 location: "AcceptInviteMobile.hasProfile"
             })
-        }, [d]), null == n) t = (0, i.jsx)(w, {});
+        }, [c]), null == n) t = (0, i.jsx)(D, {});
     else switch (r) {
         case 1:
             t = d ? (0, i.jsx)(j.A, {
                 invite: n,
-                guild: c,
-                profile: o,
+                guild: o,
+                profile: a,
                 onAcceptInvite: e.onAcceptInvite
             }) : (0, i.jsx)(C.A, {
                 ...e,
@@ -166,52 +169,56 @@ function G(e) {
             });
             break;
         case 2:
-            t = (0, i.jsx)(D, {
+            t = (0, i.jsx)(P, {
                 ...e,
                 invite: n
             });
             break;
         default:
-            t = (0, i.jsx)(w, {})
+            t = (0, i.jsx)(D, {})
     }
     let u = 1 === r && d ? L.c4 : L.qF;
-    return (0, i.jsx)(U, {
+    return (0, i.jsx)(B, {
         startAnimHeightPx: 200,
-        sectionClassName: B[r],
+        sectionClassName: M[r],
         inviteCardClassName: u,
         children: t
     })
 }
 
-function M(e) {
+function V(e) {
     let {
         invite: t,
         onAcceptInvite: n
     } = e, {
         guild: s
-    } = t ?? {}, r = {};
+    } = t ?? {}, r = {}, {
+        enabled: l
+    } = S.n.useConfig({
+        location: "AcceptInviteMobile"
+    }), a = null != t ? (0, p.oO)(t) : null, o = null != s && k(a) && null != t && !(0, T.Fk)(t);
     if (s?.splash != null) {
         let e = x.Ay.getGuildSplashURL({
             id: s.id,
             splash: s.splash
         });
         null != e && (r.backgroundImage = `url(${e})`, r.backgroundSize = "cover")
-    }
+    } else l && o && (r.backgroundImage = `url(${w})`, r.backgroundSize = "cover");
     return (0, i.jsxs)(h.Ay, {
         theme: R.NJ8.DARK,
         className: L.G3,
         style: r,
         contentClassName: L.__,
-        children: [(0, i.jsx)(G, {
+        children: [(0, i.jsx)(F, {
             ...e,
             onAcceptInvite: n
-        }), (0, i.jsx)(P, {
+        }), (0, i.jsx)(G, {
             ...e
         })]
     })
 }
 
-function F(e) {
+function W(e) {
     let {
         inviteKey: t,
         transitionTo: n
@@ -227,7 +234,7 @@ function F(e) {
         }, {
             flush: !0
         })
-    }, []), (0, i.jsx)(M, {
+    }, []), (0, i.jsx)(V, {
         invite: r,
         onAcceptInvite: e => {
             let n, i, s, l;

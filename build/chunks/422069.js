@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(311907),
     l = n(73153);
-let a = {},
-    s = {},
+let s = {},
+    a = {},
     r = {},
     o = {},
     c = {},
@@ -16,10 +16,10 @@ let a = {},
 class A extends i.Ay.Store {
     static displayName = "GameProfileStore";
     getSimilarGames(e) {
-        return a[e]
+        return s[e]
     }
     getSimilarGamesError(e) {
-        return s[e]
+        return a[e]
     }
     getShopCollectionSkuIds(e) {
         return r[e]
@@ -49,14 +49,14 @@ let g = new A(l.h, {
             applicationId: t,
             games: n
         } = e;
-        a[t] = n
+        s[t] = n
     },
     GAME_PROFILE_GET_SIMILAR_GAMES_ERROR: function(e) {
         let {
             applicationId: t,
             error: n
         } = e;
-        s[t] = n
+        a[t] = n
     },
     GAME_PROFILE_GET_SHOP_COLLECTION_START: function(e) {
         let {

@@ -1,11 +1,11 @@
 /** chunk id: 357179 params = (module,exports,require) **/
 n.d(t, {
-    _: () => _
+    _: () => p
 });
 var i = n(627968),
     l = n(64700),
-    a = n(731738),
-    s = n(311907),
+    s = n(731738),
+    a = n(311907),
     r = n(397927),
     o = n(831062),
     c = n(994500),
@@ -16,25 +16,25 @@ var i = n(627968),
     A = n(327337),
     g = n(985018);
 
-function _(e) {
+function p(e) {
     let {
         channelId: t,
-        warningId: _,
-        senderId: p
+        warningId: p,
+        senderId: _
     } = e, f = l.useCallback(() => {
-        (0, d.xi)(t, [_])
-    }, [t, _]), E = (0, s.bG)([c.A], () => c.A.isBlocked(p)), C = l.useMemo(() => ({
+        (0, d.xi)(t, [p])
+    }, [t, p]), E = (0, a.bG)([c.A], () => c.A.isBlocked(_)), C = l.useMemo(() => ({
         channelId: t,
-        warningId: _,
-        senderId: p,
+        warningId: p,
+        senderId: _,
         warningType: u._j.INAPPROPRIATE_CONVERSATION_TIER_2
-    }), [t, _, p]);
+    }), [t, p, _]);
     l.useEffect(() => {
         (0, h.QF)({
             ...C,
             viewName: h.gN.SAFETY_WARNING_BANNER
         }), o.A.increment({
-            name: a.K.SAFETY_WARNING_VIEW
+            name: s.K.SAFETY_WARNING_VIEW
         })
     }, [C]);
     let x = l.useCallback(e => {
@@ -51,21 +51,21 @@ function _(e) {
                 return n => {
                     let {
                         transitionState: l,
-                        onClose: a
+                        onClose: s
                     } = n;
                     return (0, i.jsx)(e, {
-                        otherUserId: p,
+                        otherUserId: _,
                         channelId: t,
-                        warningId: _,
+                        warningId: p,
                         warningType: u._j.INAPPROPRIATE_CONVERSATION_TIER_2,
                         transitionState: l,
-                        onClose: a
+                        onClose: s
                     })
                 }
             }, {
                 modalKey: A.V
             }), x(h.Wm.USER_BANNER_OPEN_SAFETY_TOOLS)
-        }, [t, p, _, x]),
+        }, [t, _, p, x]),
         I = l.useCallback(() => {
             f(), x(h.Wm.USER_BANNER_BLOCK_CONFIRM)
         }, [f, x]),
@@ -80,26 +80,26 @@ function _(e) {
                 return n => {
                     let {
                         transitionState: l,
-                        onClose: a
+                        onClose: s
                     } = n;
                     return (0, i.jsx)(e, {
                         transitionState: l,
                         onBlock: I,
                         onBlockAndReport: T,
                         onCancel: () => {
-                            a?.(), x(h.Wm.USER_BANNER_BLOCK_CANCEL)
+                            s?.(), x(h.Wm.USER_BANNER_BLOCK_CANCEL)
                         },
-                        onClose: a,
-                        userId: p,
+                        onClose: s,
+                        userId: _,
                         channelId: t
                     })
                 }
             })
-        }, [I, T, p, t, x]);
+        }, [I, T, _, t, x]);
     return (0, i.jsx)(m.N, {
         channelId: t,
-        warningId: _,
-        senderId: p,
+        warningId: p,
+        senderId: _,
         warningType: u._j.INAPPROPRIATE_CONVERSATION_TIER_2,
         header: g.intl.string(g.t.ZzlB5p),
         description: g.intl.string(g.t["D1aU+h"]),

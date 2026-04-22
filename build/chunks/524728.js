@@ -1,6 +1,6 @@
 /** chunk id: 524728 params = (module,exports,require) **/
 n.d(e, {
-    A: () => g
+    A: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -8,23 +8,23 @@ var i = n(627968),
     r = n(397927),
     l = n(341915),
     d = n(73473),
-    c = n(545986),
-    o = n(240710),
+    o = n(545986),
+    c = n(240710),
     u = n(654487),
-    m = n(985018),
-    h = n(63639);
+    h = n(985018),
+    m = n(63639);
 
-function f(t) {
+function b(t) {
     let {
         onClose: e,
         transitionState: n
     } = t;
     return (0, i.jsx)(a.Modal, {
         size: "md",
-        title: m.intl.string(m.t.Hd3D8W),
+        title: h.intl.string(h.t.Hd3D8W),
         actions: [{
             variant: "primary",
-            text: m.intl.string(m.t.cpT0Cq),
+            text: h.intl.string(h.t.cpT0Cq),
             onClick: e
         }],
         onClose: e,
@@ -32,36 +32,36 @@ function f(t) {
         children: (0, i.jsx)(r.Text, {
             variant: "text-md/medium",
             color: "text-subtle",
-            children: m.intl.string(m.t.Ij97SL)
+            children: h.intl.string(h.t.Ij97SL)
         })
     })
 }
 
-function g(t) {
+function f(t) {
     let {
         quest: e,
         sourceQuestContent: n,
         transitionState: a,
-        onClose: m,
-        rewardContent: g,
-        isRewardContentLoading: x,
-        rewardContentHasError: C,
-        location: I
-    } = t, b = l.uF.REWARD_MODAL, [N, A] = s.useState(!0), p = e.config.features.some(t => u.Tz.has(t)), v = s.useCallback(async () => {
-        p ? m() : await (0, c.f7)(e.config.ctaConfig?.link) && (m(), (0, r.s7G)())
-    }, [e.config.ctaConfig?.link, m, p]);
-    if (C) return (0, i.jsx)(f, {
-        onClose: m,
+        onClose: h,
+        rewardContent: f,
+        isRewardContentLoading: g,
+        rewardContentHasError: x,
+        location: C
+    } = t, I = l.uF.REWARD_MODAL, [N, p] = s.useState(!0), A = e.config.features.some(t => u.Tz.has(t)), v = s.useCallback(async () => {
+        A ? h() : await (0, o.f7)(e.config.ctaConfig?.link) && (h(), (0, r.s7G)())
+    }, [e.config.ctaConfig?.link, h, A]);
+    if (x) return (0, i.jsx)(b, {
+        onClose: h,
         transitionState: a
     });
-    let T = x || N;
+    let T = g || N;
     return (0, i.jsx)(d.R, {
         questOrQuests: e,
-        questContent: b,
+        questContent: I,
         sourceQuestContent: n,
         children: t => (0, i.jsxs)(i.Fragment, {
             children: [T ? (0, i.jsx)(r.y$y, {
-                className: h.u1,
+                className: m.u1,
                 type: r.y$y.Type.WANDERING_CUBES
             }) : null, (0, i.jsx)("div", {
                 ref: t,
@@ -72,26 +72,26 @@ function g(t) {
                     "data-migration-pending": !0,
                     transitionState: T ? r.ip4.HIDDEN : a,
                     size: r.rIJ.DYNAMIC,
-                    className: h.yl,
+                    className: m.yl,
                     parentComponent: "QuestRewardModalBase",
                     children: [(0, i.jsx)(r.s_y, {
                         "data-migration-pending": !0,
-                        className: h.b,
-                        onClick: m,
+                        className: m.b,
+                        onClick: h,
                         withCircleBackground: !0
                     }), (0, i.jsxs)("div", {
-                        className: h.jE,
+                        className: m.jE,
                         children: [(0, i.jsx)("div", {
-                            className: h._H,
-                            children: g
+                            className: m._H,
+                            children: f
                         }), (0, i.jsx)("div", {
-                            className: h.xK,
-                            children: (0, i.jsx)(o.A, {
+                            className: m.xK,
+                            children: (0, i.jsx)(c.A, {
                                 quest: e,
                                 sourceQuestContent: n,
-                                onLoadComplete: () => A(!1),
+                                onLoadComplete: () => p(!1),
                                 preCtaClick: v,
-                                location: I
+                                location: C
                             })
                         })]
                     })]
