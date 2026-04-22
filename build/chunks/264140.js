@@ -50,8 +50,8 @@ var f = n(483270),
     z = n(547015),
     q = n(561446),
     X = n(300233),
-    $ = n(721592),
-    J = n(403363),
+    J = n(721592),
+    $ = n(403363),
     Q = n(397036),
     Z = n(732044),
     ee = n(733441),
@@ -104,8 +104,8 @@ var f = n(483270),
     ez = n(309010),
     eq = n(287809),
     eX = n(977997),
-    e$ = n(47167),
-    eJ = n(698718),
+    eJ = n(47167),
+    e$ = n(698718),
     eQ = n(812771),
     eZ = n(991275),
     e0 = n(59e3),
@@ -537,7 +537,7 @@ class tl extends l.PureComponent {
             spoilerGatingChannelId: s,
             inCall: a
         } = this.props;
-        if (o()(null != e, "Missing channel in Channel.renderChat"), n) return (o()(null != t, "premium channels must exist within a guild"), e?.isRoleSubscriptionTemplatePreviewChannel()) ? (0, i.jsx)(J.A, {
+        if (o()(null != e, "Missing channel in Channel.renderChat"), n) return (o()(null != t, "premium channels must exist within a guild"), e?.isRoleSubscriptionTemplatePreviewChannel()) ? (0, i.jsx)($.A, {
             guildId: t.id
         }) : (0, i.jsx)(X.H, {
             guildId: t.id,
@@ -571,7 +571,7 @@ class tl extends l.PureComponent {
                 sidebarState: n
             }, e.id)
         }
-        return (0, i.jsx)(eJ.A, {
+        return (0, i.jsx)(e$.A, {
             channel: e,
             guild: t,
             chatInputType: M.oU.NORMAL
@@ -789,7 +789,7 @@ let ts = (0, x.A)(tl),
             providedChannel: t
         } = e, [n, s] = l.useState(null), a = (0, h.bG)([ez.A], () => ez.A.getChannelId()), r = (0, h.bG)([ez.A], () => ez.A.getVoiceChannelId()), o = (0, h.bG)([eV.A], () => t ?? eV.A.getChannel(a), [a, t]), d = (0, V.DZ)(), m = (0, V.e4)(o, "ConnectedChannel"), g = (0, h.bG)([eV.A], () => eV.A.getChannel(r), [r]), f = m?.parent_id, E = (0, h.bG)([eV.A], () => eV.A.getChannel(f), [f]), x = (0, h.bG)([eW.A], () => eW.A.getGuild(m?.guild_id), [m]), {
             needSubscriptionToAccess: T
-        } = (0, $.A)(m?.id ?? void 0), v = (0, h.bG)([j.A], () => {
+        } = (0, J.A)(m?.id ?? void 0), v = (0, h.bG)([j.A], () => {
             let e = null != a ? j.A.getParticipants(a) : [],
                 t = null != a ? j.A.getActivityParticipants(a) : [];
             return e.length - t.length > 0
@@ -811,7 +811,7 @@ let ts = (0, x.A)(tl),
                 welcomeModalChannelId: q
             } = (0, u.zy)(),
             X = (0, h.bG)([e_.A], () => null != m && e_.A.isLurking(m.guild_id), [m]),
-            J = (0, h.bG)([ek.A], () => ek.A.hasSeen(m?.guild_id, X), [m, X]),
+            $ = (0, h.bG)([ek.A], () => ek.A.hasSeen(m?.guild_id, X), [m, X]),
             Q = (0, h.bG)([j.A, N.Ay], () => null != N.Ay.getConnectedActivityLocation() && N.Ay.getActivityPanelMode() === e5.Gd.PANEL ? N.Ay.getFocusedLayout() === e5.E8.NO_CHAT ? e6.DUB.NO_CHAT : e6.DUB.NORMAL : null != a ? j.A.getLayout(a) : e6.DUB.NORMAL, [a]),
             Z = (0, eh.A)(x?.id),
             ee = (0, ew.A)(q, x?.id),
@@ -825,8 +825,8 @@ let ts = (0, x.A)(tl),
             ei = x?.id,
             el = (0, h.bG)([eB.Ay], () => eB.Ay.getGuildSidebarState(ei), [ei]),
             es = (0, em.lI)(),
-            ea = (0, e$.Ay)(m),
-            er = (0, e$.Ay)(m, !0),
+            ea = (0, eJ.Ay)(m),
+            er = (0, eJ.Ay)(m, !0),
             eo = (0, h.bG)([j.A], () => null != m ? j.A.getSelectedParticipant(m.id) : null),
             ed = (0, y.vL)(m),
             ec = (0, eN.Uf)(m),
@@ -893,7 +893,7 @@ let ts = (0, x.A)(tl),
             isMobile: (0, h.bG)([eK.A], () => m?.type === e6.rbe.DM && eK.A.isMobileOnline(m.getRecipientId()), [m]),
             isUnavailable: (0, h.bG)([eF.A], () => m?.guild_id != null && eF.A.isUnavailable(m.guild_id), [m]),
             showRealNameModal: Z,
-            showWelcomeModal: !J && ee,
+            showWelcomeModal: !$ && ee,
             showFollowButton: m?.type === e6.rbe.GUILD_ANNOUNCEMENT && x?.features.has(e6.GuildFeatures.NEWS) || !1,
             ...(0, h.cf)([eX.A], () => ({
                 hasVideo: null != m && eX.A.hasVideo(m.id)

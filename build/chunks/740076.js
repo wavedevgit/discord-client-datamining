@@ -1,14 +1,14 @@
 /** chunk id: 740076 params = (module,exports,require) **/
-r.d(t, {
-    I: () => a
+a.d(t, {
+    I: () => i
 });
-var n = r(334279),
-    l = r(311907),
-    i = r(166403),
-    s = r(985018);
-let a = e => {
-    let t = (0, l.bG)([i.A], () => {
-        let e = i.A.getPremiumSubscription();
+var n = a(334279),
+    l = a(311907),
+    r = a(166403),
+    s = a(985018);
+let i = e => {
+    let t = (0, l.bG)([r.A], () => {
+        let e = r.A.getPremiumSubscription();
         return e?.isPurchasedExternally === !0
     });
     return e === n.j.PREMIUM_TIER_2_3_DAY ? {

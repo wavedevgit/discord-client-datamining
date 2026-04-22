@@ -1,6 +1,6 @@
 /** chunk id: 876813 params = (module,exports,require) **/
 n.d(t, {
-    Q: () => m
+    Q: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -12,52 +12,61 @@ var i = n(627968),
 
 function c(e) {
     let {
+        sizePx: t
+    } = e, n = .5 / t, s = `translate(${n}, ${n}) scale(${1-2*n})`;
+    return (0, i.jsx)("svg", {
+        className: d.v9,
+        width: t,
+        height: t,
+        viewBox: "0 0 1 1",
+        "aria-hidden": !0,
+        children: (0, i.jsx)("path", {
+            d: a.Vf,
+            fill: "none",
+            stroke: "var(--border-subtle)",
+            strokeWidth: 1 / t,
+            transform: s
+        })
+    })
+}
+
+function u(e) {
+    let {
         icon: t,
         sizePx: n,
         positionClassName: l
-    } = e, c = function(e) {
-        switch (e) {
-            case o.NF.ROUNDED:
-                return d.Nb;
-            case o.NF.SQUIRCLE:
-                return d.uk
-        }
-    }(t.shape), u = s.useMemo(() => ({
+    } = e, u = s.useMemo(() => ({
         width: `${n}px`,
         height: `${n}px`
     }), [n]);
     switch (t.shape) {
         case o.NF.SQUIRCLE:
-            return (0, i.jsx)("div", {
+            return (0, i.jsxs)("div", {
                 className: r()(d.Gt, l),
                 style: u,
-                children: (0, i.jsx)(a.Ay, {
-                    className: d.uk,
+                children: [(0, i.jsx)(a.Ay, {
                     mask: a.Ay.Masks.SQUIRCLE,
                     width: n,
                     height: n,
                     children: (0, i.jsx)("div", {
-                        className: d.A3,
-                        children: (0, i.jsx)("div", {
-                            className: d.ZY,
-                            children: t.icon
-                        })
+                        className: d.pU,
+                        style: u,
+                        children: t.icon
                     })
-                })
+                }), (0, i.jsx)(c, {
+                    sizePx: n
+                })]
             });
         case o.NF.ROUNDED:
             return (0, i.jsx)("div", {
-                className: r()(d.Gt, l, c),
+                className: r()(d.Gt, l, d.Nb),
                 style: u,
-                children: (0, i.jsx)("div", {
-                    className: d.ZY,
-                    children: t.icon
-                })
+                children: t.icon
             })
     }
 }
 
-function u(e) {
+function m(e) {
     let {
         decoration: t
     } = e, n = t.useIcons();
@@ -69,11 +78,11 @@ function u(e) {
     return (0, i.jsxs)("div", {
         className: d.VD,
         "aria-hidden": !0,
-        children: [null != l && (0, i.jsx)(c, {
+        children: [null != l && (0, i.jsx)(u, {
             icon: l,
             sizePx: 40,
             positionClassName: d.j2
-        }), (0, i.jsx)(c, {
+        }), (0, i.jsx)(u, {
             icon: s,
             sizePx: 48,
             positionClassName: d.hU
@@ -81,11 +90,11 @@ function u(e) {
     })
 }
 
-function m(e) {
+function g(e) {
     let {
         decoration: t
     } = e;
-    if (t.type === o.wF.STACKED_ICONS) return (0, i.jsx)(u, {
+    if (t.type === o.wF.STACKED_ICONS) return (0, i.jsx)(m, {
         decoration: t
     })
 }

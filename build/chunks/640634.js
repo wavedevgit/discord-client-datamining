@@ -1,8 +1,8 @@
 /** chunk id: 640634 params = (module,exports,require) **/
-r.d(t, {
+a.d(t, {
     l: () => l
 });
-let n = (0, r(945810).mj)({
+let n = (0, a(945810).mj)({
         name: "2026-04-collectibles-orbs-redeem-short-text",
         kind: "user",
         defaultConfig: {

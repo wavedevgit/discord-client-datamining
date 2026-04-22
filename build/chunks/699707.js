@@ -52,17 +52,17 @@ function b(e) {
         [Y, z] = l.useState(!1),
         q = L.type === I.lp.ACTIVITY,
         X = (0, c.A)(q ? L.applicationId : void 0),
-        $ = !q && null != L.streamId,
-        J = G <= 2 * S + 144,
-        Q = M && !J,
+        J = !q && null != L.streamId,
+        $ = G <= 2 * S + 144,
+        Q = M && !$,
         Z = (0, d.A)(Q),
         ee = P === x.DUB.MINIMUM || P === x.DUB.NORMAL,
-        et = !J && (!ee || q),
+        et = !$ && (!ee || q),
         en = (0, m.A)(et, 100),
         ei = ((0, d.A)(L.id) ?? L.id) !== L.id,
         el = 0;
     (q || Q) && (el += 72), q && !Q && (et ? el += 48 : el += 8), Q && (el += .5 * S + 8);
-    let es = l.useMemo(() => q && X ? U / (G - 2 * el) : $ && null != V && V.width > 0 && V.height > 0 ? V.width / V.height : T, [$, V, q, U, G, el, X]),
+    let es = l.useMemo(() => q && X ? U / (G - 2 * el) : J && null != V && V.width > 0 && V.height > 0 ? V.width / V.height : T, [J, V, q, U, G, el, X]),
         ea = G - 2 * el,
         er = q && X ? U : ea * es,
         eo = Math.floor(Math.min(U, er) / es),
@@ -143,7 +143,7 @@ function b(e) {
         children: [(0, i.jsxs)("div", {
             className: N.QX,
             style: {
-                opacity: $ && W ? 0 : 1
+                opacity: J && W ? 0 : 1
             },
             children: [(0, i.jsxs)(r.animated.div, {
                 className: N.pc,

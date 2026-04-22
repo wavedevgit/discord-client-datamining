@@ -1,6 +1,6 @@
 /** chunk id: 552915 params = (module,exports,require) **/
 i.d(e, {
-    A: () => C
+    A: () => T
 });
 var s = i(627968);
 i(64700);
@@ -84,6 +84,17 @@ let A = a._3J.SIZE_152,
     C = t => {
         let {
             giftCode: e
+        } = t;
+        return null == e.giftStyle ? null : (0, s.jsx)(o.A, {
+            defaultAnimationState: r.oA.ACTION,
+            idleAnimationState: r.oA.LOOP,
+            className: g.l$,
+            giftStyle: e.giftStyle
+        })
+    },
+    T = t => {
+        let {
+            giftCode: e
         } = t, {
             product: i,
             isFetching: l
@@ -108,6 +119,10 @@ let A = a._3J.SIZE_152,
             case n.R.NAMEPLATE:
                 return (0, s.jsx)(R, {
                     item: u
+                });
+            case n.R.PROFILE_FRAME:
+                return (0, s.jsx)(C, {
+                    giftCode: e
                 });
             default:
                 return null != e.giftStyle ? (0, s.jsx)(o.A, {

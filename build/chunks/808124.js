@@ -88,7 +88,7 @@ let N = e => {
         l.useEffect(() => {
             X(O)
         }, [O, X]);
-        let $ = l.useCallback(e => {
+        let J = l.useCallback(e => {
             let t = q.current?.getBoundingClientRect();
             if (null == t) return;
             let n = t.height / R,
@@ -128,7 +128,7 @@ let N = e => {
                     }
                 },
                 onMouseMove: e => {
-                    !1 !== U && (k(P + Math.abs(e.movementX) + Math.abs(e.movementY)), $({
+                    !1 !== U && (k(P + Math.abs(e.movementX) + Math.abs(e.movementY)), J({
                         x: M.x + e.movementX,
                         y: M.y + e.movementY
                     })), H({

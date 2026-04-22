@@ -162,10 +162,10 @@ function H(e) {
         voiceChannel: q
     } = (0, p.A)({
         userId: n.id
-    }), X = (0, C.Ay)(q), $ = (0, h.S31)(h.clD.ONLINE), J = "success" === x || "sending" === x, Q = l.useCallback(e => {
+    }), X = (0, C.Ay)(q), J = (0, h.S31)(h.clD.ONLINE), $ = "success" === x || "sending" === x, Q = l.useCallback(e => {
         e.stopPropagation(), k || H()
     }, [H, k]), Z = l.useCallback(async () => {
-        if (J) return;
+        if ($) return;
         async function e() {
             let e = j.A.getInvite(t.id, {}) ?? null;
             if (null == e) {
@@ -192,7 +192,7 @@ function H(e) {
         }, e => {
             I(e ? "success" : null)
         })
-    }, [J, n, t]), {
+    }, [$, n, t]), {
         avatarDecorationSrc: ee,
         avatarSrc: et,
         eventHandlers: en
@@ -212,9 +212,9 @@ function H(e) {
         innerRef: o,
         tag: "li",
         className: a()(P.nM, {
-            [P.vk]: !J
+            [P.vk]: !$
         }),
-        "aria-disabled": J,
+        "aria-disabled": $,
         onClick: Z,
         "aria-label": el,
         children: [(0, i.jsx)(h.euF, {
@@ -237,7 +237,7 @@ function H(e) {
                 className: P.J2,
                 children: [er ? (0, i.jsx)(S.A, {
                     size: "custom",
-                    color: $,
+                    color: J,
                     channel: q,
                     className: P.RI
                 }) : null != z ? (0, i.jsx)(g.A, {

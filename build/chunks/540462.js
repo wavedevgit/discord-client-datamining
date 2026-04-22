@@ -49,8 +49,8 @@ var i = n(627968),
     z = n(105225),
     q = n(874739),
     X = n(461782),
-    $ = n(447404),
-    J = n(401685),
+    J = n(447404),
+    $ = n(401685),
     Q = n(20465),
     Z = n(156652),
     ee = n(622770),
@@ -112,9 +112,9 @@ function ek(e) {
         canInvite: a,
         onToggleChat: r,
         maybeLeaveFullScreen: o
-    } = e, d = (0, J.Bx)(), u = (0, c.bG)([L.A], () => l?.type === eL.lp.ACTIVITY ? L.A.getApplication(l.applicationId) : void 0), h = t === eM.DUB.NO_CHAT ? ee.A.Directions.UP : ee.A.Directions.DOWN, A = [eM.DUB.FULL_SCREEN, eM.DUB.NO_CHAT].includes(t);
+    } = e, d = (0, $.Bx)(), u = (0, c.bG)([L.A], () => l?.type === eL.lp.ACTIVITY ? L.A.getApplication(l.applicationId) : void 0), h = t === eM.DUB.NO_CHAT ? ee.A.Directions.UP : ee.A.Directions.DOWN, A = [eM.DUB.FULL_SCREEN, eM.DUB.NO_CHAT].includes(t);
     return (0, i.jsxs)(i.Fragment, {
-        children: [a && d < J.vs.NO_INVITE ? (0, i.jsx)(en.A, {
+        children: [a && d < $.vs.NO_INVITE ? (0, i.jsx)(en.A, {
             channel: n,
             stream: l?.type === eL.lp.STREAM ? (0, P.Iy)(l.id) : void 0,
             className: eU.jZ,
@@ -547,7 +547,7 @@ class ew extends l.PureComponent {
             useExternalHeader: r,
             renderHeader: o
         } = this.viewProperties;
-        return o ? (0, i.jsx)($.A, {
+        return o ? (0, i.jsx)(J.A, {
             children: (0, i.jsx)("div", {
                 className: eU.dL,
                 children: r ? e?.() : (0, i.jsx)(ey.A, {
@@ -724,7 +724,7 @@ let eB = function(e) {
     } = (0, c.cf)([F.A], () => ({
         popoutWindow: F.A.getWindow(eM.MLl.CHANNEL_CALL_POPOUT),
         popoutWindowAlwaysOnTop: F.A.getIsAlwaysOnTop(eM.MLl.CHANNEL_CALL_POPOUT)
-    })), $ = (0, c.bG)([eh.A], () => eh.A.can(eM.xBc.CONNECT, t)), J = (0, c.bG)([ed.A], () => ed.A.getToastsEnabled(t.id)), Q = (0, c.bG)([U.default], () => U.default.getAwaitingRemoteSessionInfo()), Z = (0, c.bG)([Y.Ay], () => Y.Ay.callHeaderHeight), ee = l.useCallback(e => {
+    })), J = (0, c.bG)([eh.A], () => eh.A.can(eM.xBc.CONNECT, t)), $ = (0, c.bG)([ed.A], () => ed.A.getToastsEnabled(t.id)), Q = (0, c.bG)([U.default], () => U.default.getAwaitingRemoteSessionInfo()), Z = (0, c.bG)([Y.Ay], () => Y.Ay.callHeaderHeight), ee = l.useCallback(e => {
         E.Ay.updatedUnsyncedSettings({
             callHeaderHeight: e
         })
@@ -772,7 +772,7 @@ let eB = function(e) {
                     children: [(0, i.jsx)(ew, {
                         channel: t,
                         guild: K,
-                        hasConnectPermission: $,
+                        hasConnectPermission: J,
                         participantsOpen: P,
                         renderExternalHeader: n,
                         appContext: f,
@@ -791,7 +791,7 @@ let eB = function(e) {
                         selectedParticipant: w,
                         allActiveStreams: H,
                         connectedEmbeddedActivity: ei ?? void 0,
-                        showChatToasts: J,
+                        showChatToasts: $,
                         storedCallHeaderHeight: Z,
                         updateStoredCallHeaderHeight: ee,
                         wrapperRef: d,

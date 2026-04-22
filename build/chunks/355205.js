@@ -49,8 +49,8 @@ var i = n(627968),
     z = n(334074),
     q = n(279250),
     X = n(880144),
-    $ = n(277680),
-    J = n(118277),
+    J = n(277680),
+    $ = n(118277),
     Q = n(905552),
     Z = n(95035),
     ee = n(716965),
@@ -443,11 +443,11 @@ class eV extends l.PureComponent {
         } = this.props, {
             title: l,
             sanitizedTitle: s
-        } = (0, $.A)(t);
+        } = (0, J.A)(t);
         return (0, i.jsxs)("div", {
             className: eD.cm,
             ref: this.accountLinkUpsellTargetRef,
-            children: [e ? (0, i.jsx)(J.A, {
+            children: [e ? (0, i.jsx)($.A, {
                 title: s,
                 icon: t?.sourceIcon
             }) : (0, i.jsx)(k.Ay, {
@@ -641,10 +641,10 @@ let eH = (0, I.A)(function(e) {
         hasAlreadyLinked: F,
         canStartAuthorization: Y,
         connectionApp: z,
-        startAuthorization: $
+        startAuthorization: J
     } = (0, L.RD)(x, {
         allowedFlows: [L._M.RPC, L._M.WEB]
-    }), [J, Z] = l.useState(!1), ee = (0, C.A)(x?.id);
+    }), [$, Z] = l.useState(!1), ee = (0, C.A)(x?.id);
     l.useEffect(() => {
         ee !== x?.id && Z(!1)
     }, [x, ee, Z]);
@@ -692,9 +692,9 @@ let eH = (0, I.A)(function(e) {
         accountLinkButtonRef: ei,
         startAuthorization: function() {
             for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-            return Z(!0), $(...t)
+            return Z(!0), J(...t)
         },
-        didStartAuthorization: J,
+        didStartAuthorization: $,
         connectionApp: z,
         gameCommunityGuildId: eI
     })

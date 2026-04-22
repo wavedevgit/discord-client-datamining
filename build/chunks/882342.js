@@ -19,7 +19,7 @@ function m(e) {
         onTrackClick: n
     } = e, m = (0, l.yt)(t, o.lid.PREMIUM_TIER_2);
     if (null == m) return null;
-    let p = (0, s.RS)(m.amount, m.currency);
+    let _ = (0, s.RS)(m.amount, m.currency);
     return (0, a.jsxs)("div", {
         className: u.k,
         children: [(0, a.jsx)(r.m, {
@@ -33,7 +33,7 @@ function m(e) {
         }), (0, a.jsx)(i.Text, {
             variant: "text-xs/medium",
             children: d.intl.format(d.t.Sv8iic, {
-                price: p,
+                price: _,
                 subscribeNowHook: e => (0, a.jsx)(c.Z, {
                     text: e,
                     onTrackClick: n

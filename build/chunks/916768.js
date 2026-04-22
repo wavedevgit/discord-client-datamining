@@ -50,8 +50,8 @@ var i = n(627968),
     z = n(475723),
     q = n(598733),
     X = n(801644),
-    $ = n(74848),
-    J = n(4630),
+    J = n(74848),
+    $ = n(4630),
     Q = n(532794),
     Z = n(234419),
     ee = n(37992),
@@ -134,7 +134,7 @@ function eM(e) {
     let t, n, {
             noticeType: l
         } = e,
-        s = (0, $.x5)(ey.oh.AUDIO_INPUT),
+        s = (0, J.x5)(ey.oh.AUDIO_INPUT),
         a = s?.guid ?? "",
         {
             inputDeviceOSMuted: r,
@@ -213,7 +213,7 @@ let eU = l.memo(function() {
     let S = null != s.type ? eE.Re[s.type] : null,
         y = null != s.type ? eE.rV[s.type] : null,
         G = null != s.type ? eE.f7[s.type] : null,
-        $ = eE.pe[s.type];
+        J = eE.pe[s.type];
     if (null != S) return (0, i.jsx)(U.$, {
         dismissibleContent: S,
         noticeType: s.type
@@ -224,8 +224,8 @@ let eU = l.memo(function() {
     if (null != G) return (0, i.jsx)(D.T, {
         dismissibleContent: G
     });
-    if (null != $) return (0, i.jsx)(L.r, {
-        dismissibleContent: $,
+    if (null != J) return (0, i.jsx)(L.r, {
+        dismissibleContent: J,
         noticeType: s.type
     });
     let eu = s.metadata?.premiumType;
@@ -521,7 +521,7 @@ let eU = l.memo(function() {
                     skuName: ew.name
                 }), (0, i.jsx)(h.Z_L, {
                     noticeType: eN.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK,
-                    onClick: () => (0, J.j)({
+                    onClick: () => (0, $.j)({
                         applicationId: eB.id,
                         skuId: ew.id,
                         openPremiumPaymentModal: () => {

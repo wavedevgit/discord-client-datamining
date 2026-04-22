@@ -1,6 +1,6 @@
 /** chunk id: 483270 params = (module,exports,require) **/
 n.d(t, {
-    A: () => $
+    A: () => J
 });
 var i = n(627968),
     l = n(64700),
@@ -87,7 +87,7 @@ let K = w.Ay.getEnableHardwareAcceleration(),
             guildId: t.guild_id
         }), [q, X] = l.useState(!1);
         if (null == g) return null;
-        let $ = A?.premiumSince;
+        let J = A?.premiumSince;
         return (0, i.jsx)(b.A, {
             targetElementRef: o,
             user: g,
@@ -122,7 +122,7 @@ let K = w.Ay.getEnableHardwareAcceleration(),
                     isMobile: N,
                     selected: q,
                     applicationStream: D,
-                    premiumSince: null == $ ? null : new Date($),
+                    premiumSince: null == J ? null : new Date(J),
                     onClickPremiumGuildIcon: Y,
                     itemProps: U,
                     lostPermissionTooltipText: P ? void 0 : H.intl.string(H.t["/QcoTz"]),
@@ -194,7 +194,7 @@ let K = w.Ay.getEnableHardwareAcceleration(),
         }) : null
     });
 
-function $(e) {
+function J(e) {
     var t, n;
     let s, r, u, _, m, {
             channel: E,
@@ -256,7 +256,7 @@ function $(e) {
                 channel_type: E.type,
                 guild_id: E.guild_id
             })
-        }, [E.guild_id, E.id, E.type]), v) return (0, i.jsx)(J, {
+        }, [E.guild_id, E.id, E.type]), v) return (0, i.jsx)($, {
         channel: E
     });
     let R = o().omit(b.containerProps, ["ref"]),
@@ -317,7 +317,7 @@ function $(e) {
     })
 }
 
-function J(e) {
+function $(e) {
     let {
         channel: t
     } = e;

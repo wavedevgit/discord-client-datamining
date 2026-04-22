@@ -5,15 +5,15 @@ n.d(t, {
 var s = n(627968);
 n(64700);
 var a = n(503698),
-    r = n.n(a),
-    l = n(892227),
+    l = n.n(a),
+    r = n(892227),
     i = n(827734),
     d = n(732955),
     o = n(914410),
     c = n(649032),
     u = n(320118),
-    m = n(992501);
-let h = {
+    h = n(992501);
+let m = {
         churning: {
             start: i.A.unsafe_rawColors.OPACITY_RED_80.css,
             end: i.A.unsafe_rawColors.RED_NEW_30.css
@@ -32,12 +32,12 @@ let h = {
             totalDays: i
         } = (0, u.F)();
         if (!n || null == a || null == i) return null;
-        let x = (0, l.default)(new Date(a.next_reward_date), new Date),
+        let x = (0, r.default)(new Date(a.next_reward_date), new Date),
             C = a.program_current_state === c.L.PREMIUM_CHURNING,
-            _ = C ? h.churning.start : h.active.start,
-            p = C ? h.churning.end : h.active.end;
+            _ = C ? m.churning.start : m.active.start,
+            p = C ? m.churning.end : m.active.end;
         return (0, s.jsxs)("div", {
-            className: r()(m.k, t),
+            className: l()(h.k, t),
             children: [(0, s.jsx)(o.Ay, {
                 variant: o.qP.UNSET,
                 progress: i - x,
@@ -51,11 +51,11 @@ let h = {
             }), C ? (0, s.jsx)(d.tvc, {
                 size: "sm",
                 color: "currentColor",
-                className: m.K
+                className: h.K
             }) : (0, s.jsx)(d.Cp8, {
                 size: "sm",
                 color: "currentColor",
-                className: m.K
+                className: h.K
             })]
         })
     }

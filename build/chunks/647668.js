@@ -76,8 +76,8 @@ function B(e) {
         {
             voiceUsersToShow: q,
             stageSpeakers: X,
-            numStageListeners: $,
-            streamUsersToShow: J,
+            numStageListeners: J,
+            streamUsersToShow: $,
             embeddedActivitiesUsers: Q
         } = (t = Y.id, n = (0, d.yK)([R.Ay, S.A], () => [...R.Ay.getChannels(t)[R.vM].filter(e => {
             let {
@@ -148,11 +148,11 @@ function B(e) {
                     className: P._I,
                     color: "text-default",
                     variant: "text-xs/normal",
-                    children: $
+                    children: J
                 })]
             })]
         }),
-        et = k(u.Fzq, J, z),
+        et = k(u.Fzq, $, z),
         en = k(u.k9F, Q, z),
         {
             isMuted: ei,

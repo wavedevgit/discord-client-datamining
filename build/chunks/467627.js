@@ -49,8 +49,8 @@ var i = n(627968),
     z = n(845211),
     q = n(941604),
     X = n(246884),
-    $ = n(497140),
-    J = n(34247),
+    J = n(497140),
+    $ = n(34247),
     Q = n(850729),
     Z = n(521872),
     ee = n(827975),
@@ -213,7 +213,7 @@ function eh(e) {
     } = e, [r] = (0, h.yK)([V.Ay], () => {
         let e = V.Ay.getGuildsTree();
         return [e, e.version]
-    }), o = r.getRoots(), d = (0, h.yK)([G.A], () => G.A.getGeoRestrictedGuilds()).map(e => (0, i.jsx)($.A, {
+    }), o = r.getRoots(), d = (0, h.yK)([G.A], () => G.A.getGeoRestrictedGuilds()).map(e => (0, i.jsx)(J.A, {
         id: e.id,
         name: e.name,
         icon: e.icon
@@ -248,7 +248,7 @@ function eA(e) {
         ref: j,
         ...G
     } = (0, c.$y)(), P = (0, f.R7z)(), [w, B] = l.useState(!1), z = (0, f.rdh)(p.A.modules.guildbar.AVATAR_SIZE), q = (0, f.rdh)(p.A.space.SPACE_XS), X = (0, v.A)("GuildsBar"), {
-        pathname: $
+        pathname: J
     } = (0, d.zy)(), {
         entrypoint: Q
     } = (0, L.X8)({
@@ -276,7 +276,7 @@ function eA(e) {
     }, []);
     let {
         analyticsLocations: el
-    } = (0, N.Ay)(C.A.GUILDS_LIST), eA = ed($);
+    } = (0, N.Ay)(C.A.GUILDS_LIST), eA = ed(J);
     (0, x.u5)(() => {
         if (!S.current && 0 !== o.size) {
             if (!eA) {
@@ -338,7 +338,7 @@ function eA(e) {
                     return null
             }
         }, [E, I, g, ei.setNodeRef]),
-        ep = (0, i.jsx)(J.A, {
+        ep = (0, i.jsx)($.A, {
             selected: eA,
             className: er.ai
         }),

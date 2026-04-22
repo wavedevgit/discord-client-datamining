@@ -19,8 +19,8 @@ function d(e) {
         className: d,
         discountOfferAmount: u,
         hideStrikethroughPrice: m = !1,
-        nitroIconType: p,
-        nitroIconSize: _ = "md"
+        nitroIconType: _,
+        nitroIconSize: p = "md"
     } = e, h = (0, s.WD)(t, {
         isPremiumUser: n,
         discount: r
@@ -54,8 +54,8 @@ function d(e) {
             className: i()({
                 [o.q9]: null == u
             }),
-            nitroIconType: g ? p : void 0,
-            nitroIconSize: _,
+            nitroIconType: g ? _ : void 0,
+            nitroIconSize: p,
             discountOfferAmount: u
         })]
     })

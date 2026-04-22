@@ -63,8 +63,8 @@ let Y = l.memo(function(e) {
             activity: M,
             application: D,
             analyticsContext: Y,
-            inviteButtonRef: $,
-            accountLinkButtonRef: J,
+            inviteButtonRef: J,
+            accountLinkButtonRef: $,
             startAuthorization: Q,
             canStartAuthorization: Z,
             hasAlreadyLinked: ee,
@@ -217,7 +217,7 @@ let Y = l.memo(function(e) {
                 })
             }(),
             ev = es && null == C ? (0, i.jsx)(w.A, {
-                ref: $,
+                ref: J,
                 tooltipText: H.intl.string(H.t["hC/Zey"]),
                 onClick: e_,
                 icon: u.DpX
@@ -243,12 +243,12 @@ let Y = l.memo(function(e) {
                     }, 9e4))
                 },
                 connectionApp: et,
-                ref: J
+                ref: $
             }),
             eM = !Z || ee ? null : (0, i.jsx)(c.AM, {
                 title: H.intl.string(H.t.ULvRFd),
                 body: H.intl.string(H.t["HJJDr+"]),
-                targetElementRef: J,
+                targetElementRef: $,
                 position: "top",
                 align: "center",
                 caretConfig: {

@@ -5,8 +5,8 @@ n.d(t, {
 var s = n(627968);
 n(64700);
 var a = n(397927),
-    r = n(954571),
-    l = n(652215);
+    l = n(954571),
+    r = n(652215);
 let i = "display-name-styles-modal",
     d = e => {
         let {
@@ -25,7 +25,7 @@ let i = "display-name-styles-modal",
         }, {
             modalKey: i,
             onCloseRequest: () => {
-                r.default.track(l.HAw.DISPLAY_NAME_STYLES_CLOSED), (0, a.OoC)(i)
+                l.default.track(r.HAw.DISPLAY_NAME_STYLES_CLOSED), (0, a.OoC)(i)
             }
         })
     }

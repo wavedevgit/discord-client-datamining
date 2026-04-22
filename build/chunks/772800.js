@@ -122,7 +122,7 @@ function B(e) {
         location: "VoiceUserPopout"
     }), [B, V] = (0, r.yK)([N.A], () => [N.A.getStreamForUser(h.id, s.getGuildId()), N.A.getActiveStreamForUser(h.id, s.getGuildId())], [s, h.id]), [H, F] = (0, r.yK)([R.A, b.A, y.A, _.default], () => (0, m.eo)(s, R.A, b.A, y.A, _.default)), W = (0, r.bG)([T.default], () => T.default.getId()), K = (0, r.bG)([v.A], () => (0, p.nr)(B, v.A), [B]), Y = (0, A.r9)() && (0, A.UK)(s.id), z = (t = (0, u.Ay)(s), n = l.useMemo(() => t.filter(e => e.embeddedActivity.userIds.has(h.id)), [t, h.id]), [...(0, u.Rz)(n).values()]), q = (0, x.W)(), X = (0, E.m)({
         location: "voice_channel_activities"
-    }), $ = (0, r.bG)([f.A], () => f.A.getDetectableIdsToApplicationIds()), J = C ?? K, Q = (0, c.m)(h, J), Z = null != B && null != S && !Y, ee = Z || Q.length > 0 || z.length > 0, et = ee || U;
+    }), J = (0, r.bG)([f.A], () => f.A.getDetectableIdsToApplicationIds()), $ = C ?? K, Q = (0, c.m)(h, $), Z = null != B && null != S && !Y, ee = Z || Q.length > 0 || z.length > 0, et = ee || U;
     if (l.useEffect(() => {
             et && j.default.track(D.HAw.OPEN_POPOUT, {
                 type: "Voice User Activities",
@@ -155,7 +155,7 @@ function B(e) {
                 channel: s,
                 activityApplicationId: t,
                 activity: e,
-                withGiftingBreadcrumb: X && null != t && null != $[t],
+                withGiftingBreadcrumb: X && null != t && null != J[t],
                 onAction: I
             }, e.application_id)
         })]

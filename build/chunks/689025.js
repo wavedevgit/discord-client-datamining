@@ -1,6 +1,6 @@
 /** chunk id: 689025 params = (module,exports,require) **/
 n.d(t, {
-    A: () => J
+    A: () => $
 });
 var i = n(627968),
     l = n(64700),
@@ -261,9 +261,9 @@ class X extends B.Ay {
         return A && (T = o(T)), h && (T = s(r(T))), T
     }
 }
-let $ = (0, A.a)((0, _.F)(X));
+let J = (0, A.a)((0, _.F)(X));
 
-function J(e) {
+function $(e) {
     let {
         guild: t,
         channel: n,
@@ -297,7 +297,7 @@ function J(e) {
         needSubscriptionToAccess: g,
         enableConnectedUserLimit: x || n.userLimit > 0 && n.userLimit < W.RCc
     }), C = e.connected && null == I;
-    return (0, i.jsx)($, {
+    return (0, i.jsx)(J, {
         categoryCollapsed: h,
         connectAction: A,
         numAudience: m,

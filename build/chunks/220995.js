@@ -98,21 +98,21 @@ function b(e) {
                 onRest: () => K(e)
             })
         }, [q, K]),
-        $ = l.useCallback(() => (null != j.current && clearTimeout(j.current), j.current = setTimeout(() => X("timeout"), 1e4), M(e => e + 1), () => {
+        J = l.useCallback(() => (null != j.current && clearTimeout(j.current), j.current = setTimeout(() => X("timeout"), 1e4), M(e => e + 1), () => {
             null != j.current && clearTimeout(j.current)
         }), [X]),
-        J = l.useCallback(() => (null != O.current && clearTimeout(O.current), O.current = setTimeout(() => {
+        $ = l.useCallback(() => (null != O.current && clearTimeout(O.current), O.current = setTimeout(() => {
             R(!1)
         }, 150), () => {
             null != O.current && clearTimeout(O.current)
         }), []);
-    (0, h.Ay)($), l.useEffect(() => {
+    (0, h.Ay)(J), l.useEffect(() => {
         if (!W) {
-            $(), J();
+            J(), $();
             return
         }
         null != j.current && clearTimeout(j.current), null != O.current && clearTimeout(O.current), R(!0)
-    }, [W, $, J]);
+    }, [W, J, $]);
     let Q = l.useCallback(() => {
             R(!0)
         }, []),

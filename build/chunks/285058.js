@@ -28,7 +28,7 @@ function x(e) {
         gap: 16,
         children: [(0, i.jsx)("div", {
             className: _.FO,
-            children: (0, i.jsx)(d.$, {
+            children: (0, i.jsx)(d.K, {
                 guild: t,
                 size: 48
             })

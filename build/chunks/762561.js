@@ -53,10 +53,10 @@ function H(e) {
         layout: "SIDEBAR",
         userId: t.id,
         channelId: H.id
-    }), $ = l.useRef(null), {
-        isHoveringOrFocusing: J,
+    }), J = l.useRef(null), {
+        isHoveringOrFocusing: $,
         isHovering: Q
-    } = (0, _.A)($), Z = (0, x.fC)(), ee = (0, o.zhh)({
+    } = (0, _.A)(J), Z = (0, x.fC)(), ee = (0, o.zhh)({
         opacity: +(null != Z.interactionType),
         config: {
             duration: 150
@@ -91,7 +91,7 @@ function H(e) {
             children: (0, i.jsx)(x.Hl, {
                 value: Z,
                 children: (0, i.jsxs)(y.A, {
-                    ref: $,
+                    ref: J,
                     user: t,
                     displayProfile: W,
                     themeType: w.d.SIDEBAR,
@@ -119,7 +119,7 @@ function H(e) {
                                 user: t,
                                 displayProfile: W,
                                 themeType: w.d.SIDEBAR,
-                                animateOnHoverOrFocusOnly: !J,
+                                animateOnHoverOrFocusOnly: !$,
                                 className: V.vK
                             }), (0, i.jsx)(T.A, {
                                 userId: t.id,
@@ -141,7 +141,7 @@ function H(e) {
                             currentUser: n,
                             displayProfile: W,
                             channel: H,
-                            isHoveringOrFocusing: null == Z.interactionType && J,
+                            isHoveringOrFocusing: null == Z.interactionType && $,
                             onOpenProfile: F ? void 0 : et
                         }), en && (0, i.jsx)("div", {
                             className: V.sJ,

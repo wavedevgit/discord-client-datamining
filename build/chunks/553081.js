@@ -67,8 +67,8 @@ let B = "section",
             }),
             {
                 scrollTargetId: X,
-                glowingSectionId: $,
-                glowingPerkId: J,
+                glowingSectionId: J,
+                glowingPerkId: $,
                 scrollBlock: Q,
                 scrollInline: Z
             } = l.useMemo(() => {
@@ -111,13 +111,13 @@ let B = "section",
                             discountedPrice: er
                         })
                     }), (0, i.jsx)(L.A, {
-                        glowingPerkId: J
+                        glowingPerkId: $
                     }), (0, i.jsx)(y.A, {
-                        glowingSectionId: $
+                        glowingSectionId: J
                     }), null != z && q && !s && (0, i.jsx)(M.A, {
                         location: h.A.PREMIUM_MARKETING_NITRO_HOME_ORBS_SECTION
                     }), (0, i.jsx)(O.A, {
-                        glowingPerkId: J
+                        glowingPerkId: $
                     }), (0, i.jsx)(v.A, {
                         className: k.Zy,
                         location: h.A.PREMIUM_MARKETING_GIFT_SECTION,

@@ -41,13 +41,13 @@ function m(e) {
         discount: r,
         product: o,
         hasSufficientOrbs: m,
-        onTrackClick: p,
-        isProductDisabled: _,
+        onTrackClick: _,
+        isProductDisabled: p,
         discountOfferAmount: h
     } = e, x = null != h;
     return 0 === t.length ? null : t[0].currency === c.Yr.DISCORD_ORB ? (0, a.jsx)(u, {
         orbPrice: t[0],
-        isProductDisabled: _,
+        isProductDisabled: p,
         hasSufficientOrbs: m
     }) : (0, a.jsxs)("div", {
         className: d.eg,
@@ -63,12 +63,12 @@ function m(e) {
                 discountOfferAmount: h
             }), n || x ? null : (0, a.jsx)(s.A, {
                 product: o,
-                onTrackClick: p
+                onTrackClick: _
             })]
         }), t.length > 1 && t[1].currency === c.Yr.DISCORD_ORB && (0, a.jsx)(l.x, {
             priceAmount: t[1].amount,
             priceCurrency: t[1].currency,
-            className: _ || !m ? d.r9 : void 0
+            className: p || !m ? d.r9 : void 0
         })]
     })
 }

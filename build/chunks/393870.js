@@ -39,8 +39,8 @@ let g = t => {
         purchaseType: P = y.gs.FIAT,
         overrideGraphic: N,
         overrideGradientColor: D
-    } = t, x = (0, c.Q)(n), B = (0, R.rb)(n, x), {
-        analyticsLocations: F
+    } = t, x = (0, c.Q)(n), F = (0, R.rb)(n, x), {
+        analyticsLocations: B
     } = (0, u.Ay)([...S, d.A.COLLECTIBLES_COLLECTED_MODAL]), {
         hasRequiredProductItems: U
     } = (t => {
@@ -58,39 +58,39 @@ let g = t => {
             firstProfileFrame: r,
             hasRequiredProductItems: a ? (0, O.uh)(t) : null != n || null != e || null != i || null != r
         }
-    })(B), w = (0, o.A)({
-        analyticsLocations: F
+    })(F), w = (0, o.A)({
+        analyticsLocations: B
     }), j = b.intl.string(b.t.eZrmtq), {
         environment: V,
         modalRef: G,
         confettiCanvas: H,
         setConfettiCanvas: W,
         customConfettiDisplayOptions: z
-    } = (0, C.mO)(B, P), K = (0, I.VG)(B);
-    (0, C.$V)(B, F);
+    } = (0, C.mO)(F, P), K = (0, I.VG)(F);
+    (0, C.$V)(F, B);
     let {
         handleUseNow: Q,
         isApplying: Y
     } = (0, E.p)({
-        product: B,
+        product: F,
         onSuccess: g,
         onError: g
     }), q = (0, C.$k)({
-        product: B,
+        product: F,
         overrideTitle: k,
         isVariantsGroupEnabled: !0,
         shouldShowPromotionalExperience: M,
         productName: K
     }), J = (0, C.v8)({
-        product: B,
+        product: F,
         overrideDescription: v,
         productName: K,
         shouldShowPromotionalExperience: M,
         promotionalRewardCollectedText: j
     }), Z = (0, C.aG)({
-        product: B,
+        product: F,
         onClose: g,
-        analyticsLocations: F,
+        analyticsLocations: B,
         hasRequiredProductItems: U,
         handleUseNow: Q,
         isApplying: Y,
@@ -98,7 +98,7 @@ let g = t => {
     }), {
         enabled: $
     } = (0, f.P)("CollectiblesCollectedModal"), X = "6/4";
-    switch (B.type) {
+    switch (F.type) {
         case a.R.NAMEPLATE:
         case a.R.AVATAR_DECORATION:
             X = "16/9";
@@ -107,22 +107,23 @@ let g = t => {
             X = $ ? "16/9" : "6/4";
             break;
         case a.R.PROFILE_EFFECT:
+        case a.R.PROFILE_FRAME:
         default:
             X = "6/4"
     }
     let {
         confettiColors: tt
-    } = (0, A.A)(B.styles), te = N ?? {
+    } = (0, A.A)(F.styles), te = N ?? {
         type: "dynamic",
         component: s.Oz7.COLLECTIBLES_PREVIEW,
         aspectRatio: X,
         props: {
-            product: B,
+            product: F,
             forCollectedModal: !0
         }
     };
     return (0, i.jsx)(u.f5, {
-        value: F,
+        value: B,
         children: (0, i.jsxs)("div", {
             ref: G,
             children: [(0, i.jsx)(r.Fk, {
@@ -142,7 +143,7 @@ let g = t => {
             }) : (0, i.jsx)(L.A, {
                 confettiTarget: G.current,
                 confettiCanvas: H,
-                sprites: (0, _.rA)(B.categorySkuId),
+                sprites: (0, _.rA)(F.categorySkuId),
                 colors: tt?.map(t => t.toHexString())
             })]
         })

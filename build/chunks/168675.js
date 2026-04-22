@@ -273,7 +273,7 @@ function X(e) {
                                     className: K.Kk
                                 })
                             }), (0, i.jsxs)(o.nVY, {
-                                children: [(0, i.jsx)(J, {
+                                children: [(0, i.jsx)($, {
                                     parentChannel: n,
                                     parentMessageId: s,
                                     threadSettings: m,
@@ -283,7 +283,7 @@ function X(e) {
                                     isGeneratingAI: N,
                                     enableAIFeatures: T,
                                     getThreadNameInputAccessory: y
-                                }), n.type === H.rbe.GUILD_TEXT ? (0, i.jsx)($, {
+                                }), n.type === H.rbe.GUILD_TEXT ? (0, i.jsx)(J, {
                                     startedFromMessage: null != s,
                                     threadSettings: m,
                                     updateThreadSettings: g,
@@ -315,7 +315,7 @@ function X(e) {
     })
 }
 
-function $(e) {
+function J(e) {
     let {
         startedFromMessage: t,
         threadSettings: n,
@@ -336,7 +336,7 @@ function $(e) {
     })
 }
 
-function J(e) {
+function $(e) {
     let {
         parentChannel: t,
         parentMessageId: n,

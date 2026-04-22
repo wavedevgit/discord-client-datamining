@@ -2,7 +2,7 @@
 n.d(t, {
     Gw: () => ee,
     HW: () => K,
-    K8: () => J,
+    K8: () => $,
     Mr: () => et,
     Ns: () => Z,
     UB: () => Y,
@@ -10,7 +10,7 @@ n.d(t, {
     bo: () => q,
     jz: () => X,
     lw: () => z,
-    mn: () => $
+    mn: () => J
 });
 var i = n(627968),
     l = n(64700),
@@ -279,7 +279,7 @@ function X(e) {
     })
 }
 
-function $(e) {
+function J(e) {
     let {
         guildId: t,
         markAsDismissed: n,
@@ -307,7 +307,7 @@ function $(e) {
     })
 }
 
-function J(e) {
+function $(e) {
     let {
         guildId: t,
         markAsDismissed: n,

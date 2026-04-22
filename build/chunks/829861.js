@@ -53,7 +53,7 @@ function K(e) {
         maxHeight: t,
         connectedLocation: n,
         renderExternalHeader: s
-    } = e, K = (0, L.A)(), Y = (0, r.yK)([v.Ay], () => v.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, r.bG)([I.A], () => I.A.getChannel(z)), X = (0, R.IQ)(Y), $ = (0, R.Rz)(X), J = l.useCallback(() => {
+    } = e, K = (0, L.A)(), Y = (0, r.yK)([v.Ay], () => v.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, r.bG)([I.A], () => I.A.getChannel(z)), X = (0, R.IQ)(Y), J = (0, R.Rz)(X), $ = l.useCallback(() => {
         (0, y.gk)(w.Gd.PIP)
     }, []), Q = l.useRef(null), Z = (0, r.bG)([v.Ay], () => v.Ay.getFocusedLayout()), ee = Z !== w.E8.NO_CHAT, [et, en] = l.useState(g.Ay.activityPanelHeight ?? t ?? null), ei = l.useCallback(e => {
         u.Ay.updatedUnsyncedSettings({
@@ -82,7 +82,7 @@ function K(e) {
             t = es.height;
         er ? ((t = es.width / w.B5) > es.height && (e = (t = es.height) * w.B5), ed = (es.height - t) / 2) : ((e = Math.min(es.height * w.B5)) > es.width && (t = (e = es.width) / w.B5), eo = (es.width - e) / 2)
     }
-    let eu = $.get(K?.id ?? ""),
+    let eu = J.get(K?.id ?? ""),
         eh = (0, r.bG)([N.A], () => N.A.getChannelId()),
         eA = (0, r.yK)([C.Ay], () => null == q ? [] : Array.from(eu?.embeddedActivity.userIds ?? []).map(e => C.Ay.getMember(q.guild_id, e)), [eu, q]),
         e_ = l.useMemo(() => {
@@ -184,7 +184,7 @@ function K(e) {
                             }), (0, i.jsx)(f.l, {
                                 isTrayButton: !0,
                                 label: V.intl.string(V.t.brPQ5U),
-                                onClick: J,
+                                onClick: $,
                                 iconComponent: c.gR,
                                 themeable: !0
                             })]

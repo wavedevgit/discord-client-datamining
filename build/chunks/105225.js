@@ -51,8 +51,8 @@ var i = n(627968),
     z = n(577062),
     q = n(533978),
     X = n(958449),
-    $ = n(970636),
-    J = n(616356),
+    J = n(970636),
+    $ = n(616356),
     Q = n(470710),
     Z = n(430452),
     ee = n(309010),
@@ -90,7 +90,7 @@ function ef(e) {
     } = e, {
         parentAnalyticsLocation: d,
         analyticsLocations: A
-    } = (0, x.Ay)(), _ = (0, G.Us)(), m = (0, c.yK)([J.A], () => J.A.getAllActiveStreams()), p = m.find(e => e.ownerId === n.id), g = l.useRef(null), f = l.useRef(null), E = t.getGuildId(), I = l.useCallback(() => {
+    } = (0, x.Ay)(), _ = (0, G.Us)(), m = (0, c.yK)([$.A], () => $.A.getAllActiveStreams()), p = m.find(e => e.ownerId === n.id), g = l.useRef(null), f = l.useRef(null), E = t.getGuildId(), I = l.useCallback(() => {
         if (s?.(), !a) return (0, ec.A)();
         (0, eu.A)(E, t.id, A)
     }, [E, t.id, a, s, A]), C = (0, P.k0)(), [N, T] = l.useState(!1), b = () => {
@@ -207,7 +207,7 @@ let ex = l.memo(function(e) {
         parentAnalyticsLocation: r
     } = (0, x.Ay)(), o = (0, c.bG)([I.A], () => I.A.getSelectedParticipant(s.id)), {
         reducedMotion: u
-    } = l.useContext(h.CZY), [A, p] = l.useState(!1), g = o?.id, f = (0, c.bG)([J.A], () => null != g ? J.A.getActiveStreamForStreamKey(g) : null, [g]), E = o?.type === e_.lp.STREAM && null != f && f.ownerId !== t?.id, C = (0, c.yK)([J.A], () => J.A.getAllActiveStreamsForChannel(s.id).filter(e => {
+    } = l.useContext(h.CZY), [A, p] = l.useState(!1), g = o?.id, f = (0, c.bG)([$.A], () => null != g ? $.A.getActiveStreamForStreamKey(g) : null, [g]), E = o?.type === e_.lp.STREAM && null != f && f.ownerId !== t?.id, C = (0, c.yK)([$.A], () => $.A.getAllActiveStreamsForChannel(s.id).filter(e => {
         let {
             ownerId: n
         } = e;
@@ -334,7 +334,7 @@ function eI(e) {
     });
     return (0, i.jsxs)("div", {
         className: ep.iE,
-        children: [(0, i.jsx)($.A, {
+        children: [(0, i.jsx)(J.A, {
             enabled: !0,
             centerButton: !0,
             join: !0,
@@ -392,7 +392,7 @@ let eN = function(e) {
         limit: K
     } = (0, ei.A)(t), {
         analyticsLocations: Y
-    } = (0, x.Ay)(E.A.VOICE_CONTROL_TRAY), X = (0, w.Ay)(t), J = l.useRef(null), Q = l.useRef(null), ea = (0, G.Us)();
+    } = (0, x.Ay)(E.A.VOICE_CONTROL_TRAY), X = (0, w.Ay)(t), $ = l.useRef(null), Q = l.useRef(null), ea = (0, G.Us)();
     return B ? (0, i.jsx)(x.f5, {
         value: Y,
         children: (0, i.jsxs)(p.A, {
@@ -408,7 +408,7 @@ let eN = function(e) {
                 children: [(0, i.jsxs)("div", {
                     className: ep.qi,
                     children: [(0, i.jsx)(h.YNO, {
-                        targetElementRef: J,
+                        targetElementRef: $,
                         renderPopout: e => {
                             let {
                                 closePopout: t
@@ -441,7 +441,7 @@ let eN = function(e) {
                                 isShown: l
                             } = t;
                             return (0, i.jsx)(z.A, {
-                                ref: J,
+                                ref: $,
                                 centerButton: !0,
                                 onPopoutClick: k ? null : n,
                                 selfMute: j,
@@ -477,7 +477,7 @@ let eN = function(e) {
                             } = e, {
                                 isShown: l
                             } = t;
-                            return (0, i.jsx)($.A, {
+                            return (0, i.jsx)(J.A, {
                                 ref: Q,
                                 centerButton: !0,
                                 hasPermission: b,

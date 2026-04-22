@@ -52,7 +52,7 @@ function A(e) {
         className: u.WM,
         children: [p.map(e => (0, i.jsx)(h, {
             iconSize: n,
-            children: (0, i.jsx)(c.$, {
+            children: (0, i.jsx)(c.K, {
                 guild: e,
                 size: n
             })

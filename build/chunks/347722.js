@@ -1,14 +1,17 @@
 /** chunk id: 347722 params = (module,exports,require) **/
-r.d(t, {
-    X: () => a
+a.d(t, {
+    X: () => u
 });
-var n = r(607399),
-    l = r(993408),
-    i = r(623373),
-    s = r(561769);
-let a = (e, t) => {
-    let r = (0, l.G0)(e),
-        a = (0, l.tt)(e),
-        o = (0, i.Ab)(e);
-    return !r && !a && !o && t !== s.Hi.ORBS && !n.Fr
+var n = a(607399),
+    l = a(575593),
+    r = a(993408),
+    s = a(772427),
+    i = a(623373),
+    o = a(561769);
+let u = (e, t) => {
+    let a = (0, r.G0)(e),
+        u = (0, r.tt)(e),
+        c = (0, i.Ab)(e),
+        d = (0, s.rV)("useCanGiftProduct");
+    return !a && !u && !c && t !== o.Hi.ORBS && !n.Fr && (e.type !== l.R.PROFILE_FRAME || !!d)
 }

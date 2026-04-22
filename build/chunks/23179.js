@@ -284,8 +284,8 @@ let B = [],
                 }), N(e)
             }, [N, t, a]),
             X = Math.floor(n.offset / L.T_y),
-            $ = W && X >= F,
-            J = F + 1,
+            J = W && X >= F,
+            $ = F + 1,
             Q = (0, r.yK)([b.A], () => {
                 if (0 !== n.offset) return B;
                 let e = u.length;
@@ -320,11 +320,11 @@ let B = [],
             }), (0, i.jsxs)(c.T7Y, {
                 ref: M,
                 className: U.XG,
-                children: [$ && !n.isSearching && (0, i.jsx)(c.po8, {
+                children: [J && !n.isSearching && (0, i.jsx)(c.po8, {
                     className: U.VC,
                     messageType: c.YCn.WARNING,
                     children: D.intl.formatToPlainString(D.t["E+2azY"], {
-                        maxPages: J
+                        maxPages: $
                     })
                 }), et && (0, i.jsx)(c.po8, {
                     className: U.QR,

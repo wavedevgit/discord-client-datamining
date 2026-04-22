@@ -49,8 +49,8 @@ var i = n(627968),
     z = n(68437),
     q = n(166444),
     X = n(850457),
-    $ = n(469178),
-    J = n(562991),
+    J = n(469178),
+    $ = n(562991),
     Q = n(588224);
 n(281405);
 var Z = n(652215),
@@ -188,7 +188,7 @@ class ei extends Y.Ay {
         } = this.props, n = (0, N.M)(this.props.subtitle)?.subtitle, {
             hovered: l
         } = this.state;
-        return (0, i.jsx)(J.A, {
+        return (0, i.jsx)($.A, {
             onClick: this.handleVoiceStatusClick,
             channel: e,
             connected: t,
@@ -327,7 +327,7 @@ class ei extends Y.Ay {
                 [en.fy]: R
             }),
             "data-dnd-name": (0, I.m1)(e, F.default, V.A),
-            children: [M && this.getVoiceStatesCount() > 0 && (0, i.jsx)($.A, {
+            children: [M && this.getVoiceStatesCount() > 0 && (0, i.jsx)(J.A, {
                 channel: e
             }), R && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)("div", {

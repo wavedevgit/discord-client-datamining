@@ -67,7 +67,7 @@ function S(e) {
         q = w && null != L && (V || H),
         {
             rankIconUrl: X,
-            rankText: $
+            rankText: J
         } = (t = D?.profile, l.useMemo(() => {
             if (null == t || "1346069614634864772" !== R) return {};
             let e = t.data?.primary?.rank_name;
@@ -77,7 +77,7 @@ function S(e) {
             }
         }, [R, t])),
         {
-            isAppIcon: J,
+            isAppIcon: $,
             icon: Q,
             text: Z,
             renderPopout: ee,
@@ -100,7 +100,7 @@ function S(e) {
                 return {
                     isAppIcon: t,
                     icon: l,
-                    text: $ ?? C.intl.string(C.t["9njbm2"]),
+                    text: J ?? C.intl.string(C.t["9njbm2"]),
                     renderPopout: e => (0, i.jsx)(f.V, {
                         className: e,
                         userId: n.id,
@@ -140,7 +140,7 @@ function S(e) {
                 }),
                 positionKey: "feature-card-version"
             }
-        }, [j, R, z, q, U, n.id, A, K, w, Y, X, $]);
+        }, [j, R, z, q, U, n.id, A, K, w, Y, X, J]);
     return O || W || null == ee ? null : (0, i.jsx)(d.NPJ, {
         theme: I.NJ.DARKER,
         children: e => (0, i.jsx)(d.YNO, {
@@ -165,7 +165,7 @@ function S(e) {
                     "aria-haspopup": "dialog",
                     children: [null != Q && (0, i.jsx)("div", {
                         className: a()(N.zc, {
-                            [N.RT]: J
+                            [N.RT]: $
                         }),
                         children: Q
                     }), (0, i.jsx)(d.Text, {
