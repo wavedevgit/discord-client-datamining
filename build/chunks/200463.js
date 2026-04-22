@@ -18,7 +18,6 @@ let m = new Set,
         layoutType: i.C.LIST,
         sortOrder: o.T.CREATION_DATE,
         tagFilter: m,
-        scrollPosition: 0,
         tagSetting: r.n.MATCH_SOME
     };
 class x {
@@ -52,7 +51,6 @@ class x {
                 layoutType: t.getDefaultLayout(),
                 sortOrder: t.getDefaultSortOrder(),
                 tagFilter: m,
-                scrollPosition: 0,
                 tagSetting: t.getDefaultTagSetting()
             }
         }
@@ -81,11 +79,6 @@ class x {
         this.setChannelState(e, {
             tagSetting: t
         }), h.A.setTagSetting(t)
-    };
-    setScrollPosition = (e, t) => {
-        this.setChannelState(e, {
-            scrollPosition: t
-        })
     }
 }
 let A = (0, a.v)((e, t) => new x(e, t)),
