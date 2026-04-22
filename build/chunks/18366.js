@@ -53,18 +53,18 @@ function a(e) {
         containerRef: a,
         faderSize: o,
         faderEdgeThreshold: d
-    } = e, c = s.useRef(null), [u, _] = s.useState(0), [h, m] = s.useState(0), [f, x] = s.useState(0), E = s.useCallback(() => {
-        null != c.current && (_(c.current.getDistanceFromTop()), m(c.current.getDistanceFromBottom()), x(c.current.getScrollerState().offsetHeight))
+    } = e, c = s.useRef(null), [u, _] = s.useState(0), [h, m] = s.useState(0), [f, E] = s.useState(0), x = s.useCallback(() => {
+        null != c.current && (_(c.current.getDistanceFromTop()), m(c.current.getDistanceFromBottom()), E(c.current.getScrollerState().offsetHeight))
     }, []);
     s.useEffect(() => {
-        if (E(), null == a.current) return;
+        if (x(), null == a.current) return;
         let e = new ResizeObserver(() => {
-            E()
+            x()
         });
         return e.observe(a.current), () => {
             e.disconnect()
         }
-    }, [c, a, E]);
+    }, [c, a, x]);
     let p = s.useMemo(() => {
         if (0 === u && 0 === h) return {};
         let e = [];
@@ -97,7 +97,7 @@ function a(e) {
         ref: c,
         style: p,
         className: t,
-        onScroll: E,
+        onScroll: x,
         children: n
     })
 }

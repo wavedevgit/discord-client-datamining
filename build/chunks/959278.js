@@ -127,7 +127,7 @@ let eB = (0, c.Fe)({
         renderLoader: eH
     }),
     eq = (0, c.Fe)({
-        createPromise: () => Promise.all([n.e("35894"), n.e("99583")]).then(n.bind(n, 756154)),
+        createPromise: () => Promise.all([n.e("92518"), n.e("99583")]).then(n.bind(n, 756154)),
         webpackId: 756154,
         name: "MemberSafetyPage",
         renderLoader: eH

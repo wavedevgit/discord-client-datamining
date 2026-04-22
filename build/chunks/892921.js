@@ -5,64 +5,64 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var s = n(397927),
-    l = n(442433),
-    r = n(828208),
+var r = n(397927),
+    s = n(442433),
+    l = n(828208),
     a = n(513461),
-    c = n(557420),
-    d = n(322388),
-    o = n(985018);
+    o = n(557420),
+    c = n(322388),
+    d = n(985018);
 
 function u(e) {
     let {
         addFormField: t,
         onSelect: n,
-        guild: c,
+        guild: o,
         allowTerms: u
     } = e;
-    return (0, i.jsx)(s.W1t, {
+    return (0, i.jsx)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "add-questions",
-        onClose: l.Z_,
-        "aria-label": o.intl.string(o.t.liqwPJ),
+        onClose: s.Z_,
+        "aria-label": d.intl.string(d.t.liqwPJ),
         onSelect: n,
-        children: (0, i.jsxs)(s.rXV, {
-            children: [(0, i.jsx)(s.Drp, {
+        children: (0, i.jsxs)(r.rXV, {
+            children: [(0, i.jsx)(r.Drp, {
                 id: "text-input",
-                icon: (0, s.kHD)(r.A),
+                icon: (0, r.kHD)(l.A),
                 leadingAccessory: {
                     type: "icon",
-                    icon: (0, s.kHD)(r.A)
+                    icon: (0, r.kHD)(l.A)
                 },
-                label: o.intl.string(o.t.w6Q9wz),
-                action: () => (0, d.PV)(a.rX.TEXT_INPUT, t, c)
-            }), (0, i.jsx)(s.Drp, {
+                label: d.intl.string(d.t.w6Q9wz),
+                action: () => (0, c.PV)(a.rX.TEXT_INPUT, t, o)
+            }), (0, i.jsx)(r.Drp, {
                 id: "paragraph",
-                icon: s.$tc,
+                icon: r.$tc,
                 leadingAccessory: {
                     type: "icon",
-                    icon: s.$tc
+                    icon: r.$tc
                 },
-                label: o.intl.string(o.t.gG0JBN),
-                action: () => (0, d.PV)(a.rX.PARAGRAPH, t, c)
-            }), (0, i.jsx)(s.Drp, {
+                label: d.intl.string(d.t.gG0JBN),
+                action: () => (0, c.PV)(a.rX.PARAGRAPH, t, o)
+            }), (0, i.jsx)(r.Drp, {
                 id: "multiple-choice",
-                icon: s.jsc,
+                icon: r.jsc,
                 leadingAccessory: {
                     type: "icon",
-                    icon: s.jsc
+                    icon: r.jsc
                 },
-                label: o.intl.string(o.t.ooKh3m),
-                action: () => (0, d.PV)(a.rX.MULTIPLE_CHOICE, t, c)
-            }), u && (0, i.jsx)(s.Drp, {
+                label: d.intl.string(d.t.ooKh3m),
+                action: () => (0, c.PV)(a.rX.MULTIPLE_CHOICE, t, o)
+            }), u && (0, i.jsx)(r.Drp, {
                 id: "terms",
-                icon: s.B8Q,
+                icon: r.B8Q,
                 leadingAccessory: {
                     type: "icon",
-                    icon: s.B8Q
+                    icon: r.B8Q
                 },
-                label: o.intl.string(o.t["3pz9t3"]),
-                action: () => (0, d.PV)(a.rX.TERMS, t, c)
+                label: d.intl.string(d.t["3pz9t3"]),
+                action: () => (0, c.PV)(a.rX.TERMS, t, o)
             })]
         })
     })
@@ -71,17 +71,17 @@ let x = function(e) {
     let {
         addFormField: t,
         guild: n,
-        allowTerms: s
+        allowTerms: r
     } = e;
-    return (0, i.jsx)(c.d, {
-        text: o.intl.string(o.t.CoHdoG),
-        tooltipText: o.intl.string(o.t.nsI4dU),
+    return (0, i.jsx)(o.d, {
+        text: d.intl.string(d.t.CoHdoG),
+        tooltipText: d.intl.string(d.t.nsI4dU),
         onClick: e => {
-            (0, l.jA)(e, e => (0, i.jsx)(u, {
+            (0, s.jA)(e, e => (0, i.jsx)(u, {
                 ...e,
                 addFormField: t,
                 guild: n,
-                allowTerms: s
+                allowTerms: r
             }), {
                 position: "top",
                 align: "center"

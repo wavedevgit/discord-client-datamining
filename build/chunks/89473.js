@@ -15,20 +15,20 @@ var r = n(627968),
     h = n(890620),
     m = n(338724),
     f = n(29697),
-    x = n(260197),
-    E = n(985018),
+    E = n(260197),
+    x = n(985018),
     p = n(944970);
 let g = () => (0, r.jsx)(a.A, {
         submitting: !1,
-        message: E.intl.string(E.t["8g514U"]),
+        message: x.intl.string(x.t["8g514U"]),
         onReset: () => {
             (0, h.C7)(!1)
         },
-        onResetText: E.intl.string(E.t["ETE/oC"]),
+        onResetText: x.intl.string(x.t["ETE/oC"]),
         onSave: () => {
-            (0, h.C7)(!1), (0, c.OoC)(x.LC)
+            (0, h.C7)(!1), (0, c.OoC)(E.LC)
         },
-        onSaveText: E.intl.string(E.t["Xt+Uab"]),
+        onSaveText: x.intl.string(x.t["Xt+Uab"]),
         onSaveButtonColor: d.XD.RED
     }),
     v = e => {
@@ -37,18 +37,18 @@ let g = () => (0, r.jsx)(a.A, {
             guildId: n,
             onClose: a,
             onComplete: d,
-            inviteKey: x,
-            isPreview: E = !1
+            inviteKey: E,
+            isPreview: x = !1
         } = e, v = (0, h.YN)(e => e.shouldShowWarning), {
             verificationForm: N,
             hasFetched: j
-        } = (0, m.$x)(n, E, x), I = (0, u.GV)();
+        } = (0, m.$x)(n, x, E), S = (0, u.GV)();
         return (s.useEffect(() => {
             j && N === _.U && a()
         }, [j, a, N]), N === _.U) ? null : (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsxs)(i.dWK, {
                 transitionState: t,
-                "aria-labelledby": I,
+                "aria-labelledby": S,
                 size: "xxl",
                 onClose: a,
                 children: [(0, r.jsx)("div", {
@@ -60,11 +60,11 @@ let g = () => (0, r.jsx)(a.A, {
                     className: p.kL,
                     children: (0, r.jsx)(f.A, {
                         verificationForm: N,
-                        headerId: I,
+                        headerId: S,
                         guildId: n,
                         onClose: a,
                         onComplete: d,
-                        isPreview: E
+                        isPreview: x
                     })
                 })]
             }), (0, r.jsx)(l.F, {

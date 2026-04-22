@@ -12,7 +12,7 @@ let {
     de: () => n.e("72720").then(n.t.bind(n, 220819, 19)),
     el: () => n.e("76838").then(n.t.bind(n, 523109, 19)),
     "en-GB": () => n.e("64926").then(n.t.bind(n, 749, 19)),
-    "es-419": () => n.e("91739").then(n.t.bind(n, 60731, 19)),
+    "es-419": () => n.e("14120").then(n.t.bind(n, 60731, 19)),
     "es-ES": () => n.e("6950").then(n.t.bind(n, 41285, 19)),
     fi: () => n.e("86654").then(n.t.bind(n, 465677, 19)),
     fr: () => n.e("91045").then(n.t.bind(n, 714788, 19)),

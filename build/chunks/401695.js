@@ -6,8 +6,8 @@ var n = l(627968),
     i = l(64700),
     s = l(33851),
     a = l.n(s),
-    r = l(417597),
-    C = l(565787),
+    C = l(417597),
+    r = l(565787),
     o = l(397927),
     d = l(530347),
     c = l(504049),
@@ -15,33 +15,33 @@ var n = l(627968),
     m = l(221950),
     x = l(652215),
     h = l(985018);
-let g = (0, C.k)(d.A);
+let g = (0, r.k)(d.A);
 
 function H(e) {
     let {
         guildId: t,
         onClose: l
-    } = e, s = (0, r.bG)([u.A], () => u.A.getSearchStateByGuildId(t), [t], a()), C = (0, c.Tj)(t), d = i.useCallback(() => {
-        s.requireUnusualDmActivity || C(c.Zp.UNUSUAL_DM_ACTIVITY), (0, m.Ld)(t, {
+    } = e, s = (0, C.bG)([u.A], () => u.A.getSearchStateByGuildId(t), [t], a()), r = (0, c.Tj)(t), d = i.useCallback(() => {
+        s.requireUnusualDmActivity || r(c.Zp.UNUSUAL_DM_ACTIVITY), (0, m.Ld)(t, {
             ...s,
             requireUnusualDmActivity: !s.requireUnusualDmActivity
         })
-    }, [t, s, C]), H = i.useCallback(() => {
-        s.requireCommunicationDisabled || C(c.Zp.COMMUNICATION_DISABLED), (0, m.Ld)(t, {
+    }, [t, s, r]), H = i.useCallback(() => {
+        s.requireCommunicationDisabled || r(c.Zp.COMMUNICATION_DISABLED), (0, m.Ld)(t, {
             ...s,
             requireCommunicationDisabled: !s.requireCommunicationDisabled
         })
-    }, [t, s, C]), j = i.useCallback(() => {
-        s.requireUnusualAccountActivity || C(c.Zp.UNUSUAL_ACCOUNT_ACTIVITY), (0, m.Ld)(t, {
+    }, [t, s, r]), p = i.useCallback(() => {
+        s.requireUnusualAccountActivity || r(c.Zp.UNUSUAL_ACCOUNT_ACTIVITY), (0, m.Ld)(t, {
             ...s,
             requireUnusualAccountActivity: !s.requireUnusualAccountActivity
         })
-    }, [t, s, C]), _ = i.useCallback(() => {
-        s.requireUsernameQuarantined || C(c.Zp.USERNAME_QUARANTINED), (0, m.Ld)(t, {
+    }, [t, s, r]), j = i.useCallback(() => {
+        s.requireUsernameQuarantined || r(c.Zp.USERNAME_QUARANTINED), (0, m.Ld)(t, {
             ...s,
             requireUsernameQuarantined: !s.requireUsernameQuarantined
         })
-    }, [t, s, C]);
+    }, [t, s, r]);
     return (0, n.jsx)(o.W1t, {
         "data-menu-migrated": !0,
         navId: "member-safety-flags",
@@ -78,7 +78,7 @@ function H(e) {
                         type: "icon",
                         icon: g
                     },
-                    action: j,
+                    action: p,
                     checked: s.requireUnusualAccountActivity
                 }), (0, n.jsx)(o.sLh, {
                     id: "toggle-require-username-quarantined",
@@ -88,7 +88,7 @@ function H(e) {
                         type: "icon",
                         icon: o._mZ
                     },
-                    action: _,
+                    action: j,
                     checked: s.requireUsernameQuarantined
                 })]
             })]

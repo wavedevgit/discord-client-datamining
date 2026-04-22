@@ -4,14 +4,14 @@ function n(e, t, l) {
     return `${e}:${t}:${n}`
 }
 l.d(t, {
-    _k: () => r,
+    _k: () => C,
     nA: () => s,
     yb: () => a
 });
 let i = (0, l(353640).v)(e => ({
     entries: {},
     setPreview(t, l, i, s, a) {
-        let r = n(t, l, i);
+        let C = n(t, l, i);
         e(e => {
             let t = {
                     ...e.entries
@@ -19,8 +19,8 @@ let i = (0, l(353640).v)(e => ({
                 l = {},
                 n = Date.now();
             for (let [e, i] of Object.entries(t)) n - i.cachedAt < 36e5 && (l[e] = i);
-            let i = l[r];
-            return (null == i || i.count <= s && !i.isFinished) && (l[r] = {
+            let i = l[C];
+            return (null == i || i.count <= s && !i.isFinished) && (l[C] = {
                 count: s,
                 isFinished: a,
                 cachedAt: Date.now()
@@ -44,7 +44,7 @@ function a() {
     i.getState().clear()
 }
 
-function r(e, t, l) {
+function C(e, t, l) {
     let s = i(i => {
         let s = n(e, t, l),
             a = i.entries[s];

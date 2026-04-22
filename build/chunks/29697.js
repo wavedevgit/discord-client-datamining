@@ -15,15 +15,15 @@ var r = n(627968),
     h = n(42780),
     m = n(764548),
     f = n(961350),
-    x = n(498642),
-    E = n(696451),
+    E = n(498642),
+    x = n(696451),
     p = n(287809),
     g = n(954571),
     v = n(486020),
     N = n(60175),
     j = n(513461),
-    I = n(709977),
-    S = n(338724),
+    S = n(709977),
+    I = n(338724),
     C = n(18366),
     R = n(624094),
     A = n(260197),
@@ -177,12 +177,12 @@ let P = e => {
                 onComplete: M,
                 isPreview: D = !1
             } = e,
-            G = (0, S.x$)(F, o?.guild, D),
+            G = (0, I.x$)(F, o?.guild, D),
             {
                 guildProfile: k,
                 fetchGuildProfile: H
             } = (0, _.u)(F),
-            w = (0, i.bG)([E.Ay, f.default], () => E.Ay.isMember(F, f.default.getId())),
+            w = (0, i.bG)([x.Ay, f.default], () => x.Ay.isMember(F, f.default.getId())),
             [B, V] = s.useState(!1);
         s.useEffect(() => {
             w && !B && null == k && H().finally(() => V(!0))
@@ -198,9 +198,9 @@ let P = e => {
             {
                 storeMemberCount: ei,
                 storeOnlineCount: el
-            } = (0, i.cf)([x.A], () => ({
-                storeMemberCount: x.A.getMemberCount(F),
-                storeOnlineCount: x.A.getOnlineCount(F)
+            } = (0, i.cf)([E.A], () => ({
+                storeMemberCount: E.A.getMemberCount(F),
+                storeOnlineCount: E.A.getOnlineCount(F)
             })),
             ea = el ?? o?.guild?.approximate_presence_count,
             eo = ei ?? o?.guild?.approximate_member_count,
@@ -217,18 +217,18 @@ let P = e => {
             {
                 currentStep: eu,
                 setCurrentStep: e_
-            } = (0, S.dy)(ec);
-        (0, S.he)(Y);
+            } = (0, I.dy)(ec);
+        (0, I.he)(Y);
         let eh = ec?.verified,
             em = ec?.isPhoneVerified(),
             {
                 invalidFormFields: ef,
-                hasInvalidTermsFormField: ex
+                hasInvalidTermsFormField: eE
             } = s.useMemo(() => ({
-                invalidFormFields: Y.some(e => !(0, I.Ge)(e)),
-                hasInvalidTermsFormField: Y.some(e => e.field_type === j.rX.TERMS && !(0, I.Ge)(e))
+                invalidFormFields: Y.some(e => !(0, S.Ge)(e)),
+                hasInvalidTermsFormField: Y.some(e => e.field_type === j.rX.TERMS && !(0, S.Ge)(e))
             }), [Y]),
-            eE = s.useMemo(() => {
+            ex = s.useMemo(() => {
                 if (null == M || ef) return !0;
                 if (ed || ec?.isStaff()) return !1;
                 switch (G?.verificationLevel) {
@@ -264,15 +264,15 @@ let P = e => {
                 await (0, d.KD)({
                     email: K,
                     password: J
-                }), q(!1), e_(S.Qg.EMAIL_CONFIRMATION)
+                }), q(!1), e_(I.Qg.EMAIL_CONFIRMATION)
             } catch (e) {
                 en(e?.body?.email), es(e?.body?.password)
             } finally {
                 q(!1)
             }
-        }, eI = async () => {
+        }, eS = async () => {
             q(!0), X(null);
-            let e = null != ec ? E.Ay.getMember(F, ec.id) : null;
+            let e = null != ec ? x.Ay.getMember(F, ec.id) : null;
             if (null != e && !e.isPending) return void O?.(!0);
             try {
                 await M?.({
@@ -285,16 +285,16 @@ let P = e => {
             } finally {
                 q(!1)
             }
-        }, eS = null != k;
+        }, eI = null != k;
         return (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsxs)("div", {
                 className: y.uC,
                 children: [(0, r.jsx)("div", {
                     style: {
-                        background: eS ? eN : ev
+                        background: eI ? eN : ev
                     },
                     className: y.nL
-                }), eS ? (0, r.jsx)(h.Ay, {
+                }), eI ? (0, r.jsx)(h.Ay, {
                     profile: k,
                     className: y.P5,
                     disableCTA: !0,
@@ -317,11 +317,11 @@ let P = e => {
                         faderEdgeThreshold: 48,
                         children: (0, r.jsx)(a.YC2, {
                             className: y.C9,
-                            steps: [S.Qg.CLAIM_ACCOUNT, S.Qg.EMAIL_CONFIRMATION, S.Qg.VERIFICATION_FORM],
+                            steps: [I.Qg.CLAIM_ACCOUNT, I.Qg.EMAIL_CONFIRMATION, I.Qg.VERIFICATION_FORM],
                             step: eu,
                             children: (() => {
                                 switch (eu) {
-                                    case S.Qg.CLAIM_ACCOUNT:
+                                    case I.Qg.CLAIM_ACCOUNT:
                                         return (0, r.jsx)(P, {
                                             headerId: R,
                                             email: K,
@@ -333,12 +333,12 @@ let P = e => {
                                             hasManualFormFields: W,
                                             isMember: w
                                         });
-                                    case S.Qg.EMAIL_CONFIRMATION:
+                                    case I.Qg.EMAIL_CONFIRMATION:
                                         return (0, r.jsx)(L, {
                                             headerId: R,
                                             email: K
                                         });
-                                    case S.Qg.VERIFICATION_FORM:
+                                    case I.Qg.VERIFICATION_FORM:
                                         return (0, r.jsx)(U, {
                                             headerId: R,
                                             guildId: F,
@@ -355,7 +355,7 @@ let P = e => {
                         })
                     }), (() => {
                         switch (eu) {
-                            case S.Qg.CLAIM_ACCOUNT:
+                            case I.Qg.CLAIM_ACCOUNT:
                                 return (0, r.jsxs)("div", {
                                     className: y.qr,
                                     children: [(0, r.jsx)("div", {
@@ -375,15 +375,15 @@ let P = e => {
                                         children: T.intl.string(T.t["9GPiR6"])
                                     })]
                                 });
-                            case S.Qg.EMAIL_CONFIRMATION:
+                            case I.Qg.EMAIL_CONFIRMATION:
                                 return null;
-                            case S.Qg.VERIFICATION_FORM:
+                            case I.Qg.VERIFICATION_FORM:
                                 return (0, r.jsxs)("div", {
                                     className: y.qr,
                                     children: [(0, r.jsx)(l.m, {
                                         asContainer: !0,
-                                        shouldShow: eE && ef && W,
-                                        text: ex ? T.intl.string(T.t.PLNbh3) : T.intl.string(T.t.brWmV2),
+                                        shouldShow: ex && ef && W,
+                                        text: eE ? T.intl.string(T.t.PLNbh3) : T.intl.string(T.t.brWmV2),
                                         children: (0, r.jsx)("div", {
                                             "data-button-hoisted-classname-wrapper": !0,
                                             className: y.RC,
@@ -392,8 +392,8 @@ let P = e => {
                                                 text: T.intl.string(T.t.geKm7t),
                                                 type: "submit",
                                                 loading: Q,
-                                                onClick: eI,
-                                                disabled: eE
+                                                onClick: eS,
+                                                disabled: ex
                                             })
                                         })
                                     }), null != $ && (0, r.jsx)(a.Text, {

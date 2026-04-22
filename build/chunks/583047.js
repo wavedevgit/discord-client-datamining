@@ -67,8 +67,7 @@ function h(e) {
             updateFormField: I,
             updateFormFieldOrder: b,
             canRemove: d.length > 1,
-            actionsLocation: "side",
-            fieldStyle: r.Vf.COMPACT
+            actionsLocation: "side"
         })), !N && (0, i.jsx)("div", {
             className: x.At,
             children: (0, i.jsx)(o.A, {

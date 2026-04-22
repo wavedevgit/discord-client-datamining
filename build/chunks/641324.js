@@ -19,7 +19,7 @@ var s = n(963935),
     h = n(743961),
     A = n(896005),
     p = n(388773),
-    T = n(691116),
+    T = n(168493),
     f = n(353667),
     S = n(182884),
     E = n(337998);
@@ -90,7 +90,7 @@ function b(e) {
             return (0, i.jsx)(o.A, {
                 node: t
             });
-        case s.Z6.NESTED_PANEL:
+        case s.Z6.NESTED_PANEL_NAVIGATOR:
             return (0, i.jsx)(T.A, {
                 node: t
             });

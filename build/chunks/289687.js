@@ -1,13 +1,13 @@
 /** chunk id: 289687 params = (module,exports,require) **/
 l.d(t, {
-    A: () => j
+    A: () => p
 });
 var n = l(627968),
     i = l(64700),
     s = l(735438),
     a = l.n(s),
-    r = l(311907),
-    C = l(732955),
+    C = l(311907),
+    r = l(732955),
     o = l(397927),
     d = l(73153),
     c = l(437553),
@@ -17,15 +17,15 @@ var n = l(627968),
     h = l(552247),
     g = l(985018),
     H = l(104514);
-let j = e => {
+let p = e => {
     let {
         guild: t,
         transitionState: l,
         onClose: s
-    } = e, [j, _] = i.useState(7), [f, p] = i.useState([]), {
+    } = e, [p, j] = i.useState(7), [_, f] = i.useState([]), {
         count: b,
-        isLoading: v
-    } = (0, h._k)(t.id, j, f);
+        isLoading: A
+    } = (0, h._k)(t.id, p, _);
     i.useEffect(() => {
         let e = e => {
             if (e.guildId !== t.id || !e.prune.isPreview) return;
@@ -37,13 +37,13 @@ let j = e => {
         return d.h.subscribe("GUILD_PRUNE_UPDATE", e), () => {
             d.h.unsubscribe("GUILD_PRUNE_UPDATE", e)
         }
-    }, [t.id, j, f]), i.useEffect(() => {
-        null == b && c.A.updateEstimateV2(t.id, j, f)
-    }, [t.id, j, f, b]);
-    let A = i.useCallback(() => {
-            c.A.prune(t.id, j, f), s(), (0, h.yb)()
-        }, [t.id, j, f, s]),
-        V = (0, r.yK)([x.A, m.A], () => {
+    }, [t.id, p, _]), i.useEffect(() => {
+        null == b && c.A.updateEstimateV2(t.id, p, _)
+    }, [t.id, p, _, b]);
+    let v = i.useCallback(() => {
+            c.A.prune(t.id, p, _), s(), (0, h.yb)()
+        }, [t.id, p, _, s]),
+        V = (0, C.yK)([x.A, m.A], () => {
             let e = x.A.getHighestRole(t);
             return a()(m.A.getSortedRoles(t.id)).filter(l => !(0, u.Oy)(l) && x.A.isRoleHigher(t, e, l)).map(e => {
                 let {
@@ -57,7 +57,7 @@ let j = e => {
                 }
             }).value()
         }, [t]);
-    return (0, n.jsx)(C.aFV, {
+    return (0, n.jsx)(r.aFV, {
         title: `${g.intl.string(g.t.zbyz7p)}—${null!=t?t.name:""}`,
         actions: [{
             text: g.intl.string(g.t["ETE/oC"]),
@@ -65,7 +65,7 @@ let j = e => {
             variant: "secondary"
         }, {
             text: g.intl.string(g.t["2mIlKQ"]),
-            onClick: A
+            onClick: v
         }],
         onClose: async () => {
             await s()
@@ -75,7 +75,7 @@ let j = e => {
             className: H.Q,
             children: [(0, n.jsx)(o.z6M, {
                 label: g.intl.string(g.t.YccTvK),
-                value: String(j),
+                value: String(p),
                 options: [{
                     name: g.intl.formatToPlainString(g.t.FM1dHS, {
                         days: 7
@@ -88,7 +88,7 @@ let j = e => {
                     value: "30"
                 }],
                 onChange: e => {
-                    _(Number(e))
+                    j(Number(e))
                 }
             }), (0, n.jsx)(o.IpV, {
                 className: H.X,
@@ -96,18 +96,18 @@ let j = e => {
                     selectionMode: "multiple",
                     label: g.intl.string(g.t.buoe17),
                     maxOptionsVisible: 10,
-                    value: f,
-                    onSelectionChange: e => p(e),
+                    value: _,
+                    onSelectionChange: e => f(e),
                     options: V
                 })
             }), (0, n.jsx)(o.Text, {
                 variant: "text-sm/normal",
-                children: f.length > 0 ? g.intl.format(v ? g.t.xSDcLk : g.t["5WxHHp"], {
+                children: _.length > 0 ? g.intl.format(A ? g.t.xSDcLk : g.t["5WxHHp"], {
                     members: b ?? -1,
-                    days: j
-                }) : g.intl.format(v ? g.t["98cHOp"] : g.t.f13az9, {
+                    days: p
+                }) : g.intl.format(A ? g.t["98cHOp"] : g.t.f13az9, {
                     members: b ?? -1,
-                    days: j
+                    days: p
                 })
             })]
         })

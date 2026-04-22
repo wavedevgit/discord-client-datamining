@@ -13,7 +13,7 @@ let c = (0, l.zZ)(r.X.ACCOUNT_FAMILY_CENTER_CATEGORY, {
         useTitle: () => o.intl.string(d.default.RZqaJn),
         buildLayout: () => [u]
     }),
-    u = (0, l.eA)(r.X.ACCOUNT_FAMILY_CENTER_NESTED_PANEL, {
+    u = (0, l.t0)(r.X.ACCOUNT_FAMILY_CENTER_NESTED_PANEL, {
         useTitle: () => (0, i.Li)() ? o.intl.string(d.default.IcMQUP) : o.intl.string(d.default["n8wrn/"]),
         useSubtitle: () => (0, s.Z)() ? o.intl.string(d.default["G/L4VO"]) : o.intl.string(d.default.Z53oSM),
         buildLayout: () => [a.U]

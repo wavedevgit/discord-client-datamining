@@ -8,8 +8,8 @@ var n = l(627968),
     a = l(793574),
     r = l(688810),
     d = l(547015),
-    c = l(138298),
-    o = l(761640),
+    o = l(138298),
+    c = l(761640),
     u = l(71393),
     x = l(652215),
     m = l(256177);
@@ -19,10 +19,10 @@ function h(e) {
         guildId: t
     } = e, l = (0, i.bG)([u.A], () => u.A.getGuild(t)), {
         analyticsLocations: h
-    } = (0, r.Ay)(a.A.MEMBER_SAFETY_PAGE), j = (0, i.bG)([o.Ay], () => o.Ay.getGuildSidebarState(t), [t]), _ = s.useCallback(() => {
-        c.A.closeGuildSidebar(t)
-    }, [t]), A = null != j;
-    return null != l && A && null != j ? (0, n.jsx)(r.f5, {
+    } = (0, r.Ay)(a.A.MEMBER_SAFETY_PAGE), j = (0, i.bG)([c.Ay], () => c.Ay.getGuildSidebarState(t), [t]), _ = s.useCallback(() => {
+        o.A.closeGuildSidebar(t)
+    }, [t]), g = null != j;
+    return null != l && g && null != j ? (0, n.jsx)(r.f5, {
         value: h,
         children: (0, n.jsx)("div", {
             className: m.__invalid_sidebarContainer,

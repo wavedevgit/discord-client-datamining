@@ -6,19 +6,19 @@ var n = l(627968),
     i = l(64700),
     s = l(33851),
     a = l.n(s),
-    r = l(517738),
-    C = l(615300),
+    C = l(517738),
+    r = l(615300),
     o = l(827734),
     d = l(397927),
     c = l(475743);
 let u = {
         duration: 100,
-        easing: C.A.Easing.inOut(C.A.Easing.back()),
+        easing: r.A.Easing.inOut(r.A.Easing.back()),
         clamp: !0
     },
     m = {
         duration: 2e3,
-        easing: C.A.Easing.quad,
+        easing: r.A.Easing.quad,
         clamp: !0
     };
 
@@ -27,13 +27,13 @@ function x(e) {
         value: t,
         children: l,
         equalityFn: s = a(),
-        style: C,
+        style: r,
         ...x
     } = e, h = (0, c.A)(t), [{
         spring: g
     }, H] = (0, d.zhh)(() => ({
         spring: 0
-    }), "animate-always"), j = (0, d.rdh)(o.A.colors.BACKGROUND_BASE_LOW).hex(), _ = (0, d.rdh)(o.A.colors.CONTROL_BRAND_FOREGROUND).hex(), f = i.useCallback(() => {
+    }), "animate-always"), p = (0, d.rdh)(o.A.colors.BACKGROUND_BASE_LOW).hex(), j = (0, d.rdh)(o.A.colors.CONTROL_BRAND_FOREGROUND).hex(), _ = i.useCallback(() => {
         H({
             spring: 1,
             config: u
@@ -44,19 +44,19 @@ function x(e) {
         })
     }, [H]);
     i.useEffect(() => {
-        null == t || null == h || s(t, h) || f()
-    }, [f, t, h, s]);
-    let p = g?.to({
+        null == t || null == h || s(t, h) || _()
+    }, [_, t, h, s]);
+    let f = g?.to({
             range: [0, 1],
-            output: [`${j}00`, `${_}27`]
+            output: [`${p}00`, `${j}27`]
         }),
-        b = null != C ? {
-            ...C,
-            backgroundColor: p
+        b = null != r ? {
+            ...r,
+            backgroundColor: f
         } : {
-            backgroundColor: p
+            backgroundColor: f
         };
-    return (0, n.jsx)(r.animated.tr, {
+    return (0, n.jsx)(C.animated.tr, {
         ...x,
         style: b,
         children: l

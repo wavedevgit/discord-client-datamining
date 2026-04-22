@@ -11,11 +11,11 @@ n.d(t, {
     WI: () => a,
     bd: () => g,
     dT: () => c,
-    eA: () => x,
     gN: () => h,
     hl: () => s,
     i4: () => o,
     sN: () => E,
+    t0: () => x,
     t_: () => d,
     v_: () => T,
     zC: () => u,
@@ -87,7 +87,7 @@ function _(e, t) {
 }
 
 function x(e, t) {
-    return l(e, i.Z6.NESTED_PANEL, t)
+    return l(e, i.Z6.NESTED_PANEL_NAVIGATOR, t)
 }
 
 function h(e, t) {

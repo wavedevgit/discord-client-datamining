@@ -1,6 +1,6 @@
 /** chunk id: 671576 params = (module,exports,require) **/
 l.d(t, {
-    default: () => T
+    default: () => b
 });
 var n = l(627968),
     s = l(64700),
@@ -8,121 +8,121 @@ var n = l(627968),
     a = l(311907),
     r = l(435371),
     d = l(397927),
-    c = l(71393),
-    o = l(954571),
+    o = l(71393),
+    c = l(954571),
     u = l(554113),
     x = l(974103),
     m = l(903093),
     h = l(610136),
     j = l(336496),
     _ = l(218113),
-    A = l(652215),
-    g = l(985018),
-    b = l(226143);
+    g = l(652215),
+    A = l(985018),
+    f = l(226143);
 
-function T(e) {
+function b(e) {
     let {
         guildId: t,
         transitionState: l,
-        onClose: T,
-        analyticsData: f
-    } = e, E = (0, a.bG)([c.A], () => c.A.getGuild(t), [t]), v = !!E?.features.has(A.GuildFeatures.INVITES_DISABLED), [S] = s.useState(!1), [N, I] = s.useState(_.f7), R = (0, a.bG)([h.A], () => h.A.getGuildIncident(t)), C = (0, x.w)(E), p = (0, m.r2)(R) || v, M = (0, m.di)(R), [D, G] = s.useState(p), [y, L] = s.useState(M), [U, P] = s.useState(!1), k = D !== p || y !== M || U, B = v && !C;
-    return null == E ? (T(), null) : (0, n.jsx)(i.Modal, {
+        onClose: b,
+        analyticsData: v
+    } = e, T = (0, a.bG)([o.A], () => o.A.getGuild(t), [t]), N = !!T?.features.has(g.GuildFeatures.INVITES_DISABLED), [E] = s.useState(!1), [S, C] = s.useState(_.f7), I = (0, a.bG)([h.A], () => h.A.getGuildIncident(t)), R = (0, x.w)(T), p = (0, m.r2)(I) || N, M = (0, m.di)(I), [D, y] = s.useState(p), [G, L] = s.useState(M), [P, k] = s.useState(!1), U = D !== p || G !== M || P, w = N && !R;
+    return null == T ? (b(), null) : (0, n.jsx)(i.Modal, {
         transitionState: l,
-        title: g.intl.string(g.t.oCYAc7),
+        title: A.intl.string(A.t.oCYAc7),
         actions: [{
-            text: g.intl.string(g.t["ETE/oC"]),
-            onClick: T,
+            text: A.intl.string(A.t["ETE/oC"]),
+            onClick: b,
             variant: "secondary",
-            disabled: S
+            disabled: E
         }, {
-            text: g.intl.string(g.t["pwm/z0"]),
+            text: A.intl.string(A.t["pwm/z0"]),
             onClick: () => {
-                (p || M) && !D && !y ? ((0, u.tr)(E.id, !1, !1), (0, d.mMO)(() => Promise.resolve(e => (0, n.jsx)(j.default, {
+                (p || M) && !D && !G ? ((0, u.tr)(T.id, !1, !1), (0, d.mMO)(() => Promise.resolve(e => (0, n.jsx)(j.default, {
                     ...e,
                     guildId: t
-                })))) : (0, u.tr)(E.id, D, y, N);
+                })))) : (0, u.tr)(T.id, D, G, S);
                 let {
                     source: e,
                     alertType: l,
                     messageId: s
-                } = f;
-                o.default.track(A.HAw.GUILD_RAID_INTERVENTION_STATE_CHANGE, {
+                } = v;
+                c.default.track(g.HAw.GUILD_RAID_INTERVENTION_STATE_CHANGE, {
                     guild_id: t,
                     source: e,
                     raid_alert_id: s,
                     raid_alert_type: l,
-                    intervention_type_enabled: (0, m.mR)(D, y),
-                    intervention_type_disabled: (0, m.fi)(D, y),
-                    duration: 60 * N
-                }), T()
+                    intervention_type_enabled: (0, m.mR)(D, G),
+                    intervention_type_disabled: (0, m.fi)(D, G),
+                    duration: 60 * S
+                }), b()
             },
-            loading: S,
-            disabled: !k
+            loading: E,
+            disabled: !U
         }],
-        onClose: T,
+        onClose: b,
         children: (0, n.jsxs)("div", {
-            className: b.rs,
+            className: f.rs,
             children: [(0, n.jsx)(d.l6P, {
-                label: g.intl.string(g.t.vKYZzc),
+                label: A.intl.string(A.t.vKYZzc),
                 hideLabel: !0,
-                placeholder: g.intl.string(g.t.vKYZzc),
+                placeholder: A.intl.string(A.t.vKYZzc),
                 options: (0, _.aE)(),
                 onSelectionChange: function(e) {
-                    I(e), P(!0)
+                    C(e), k(!0)
                 },
-                value: N,
+                value: S,
                 selectionMode: "single",
                 fullWidth: !0
             }), (0, n.jsxs)("div", {
-                className: b.Qb,
+                className: f.Qb,
                 children: [(0, n.jsxs)("div", {
-                    className: b.Iy,
+                    className: f.Iy,
                     children: [(0, n.jsx)(d.Text, {
                         variant: "text-md/semibold",
                         color: "text-strong",
-                        children: g.intl.string(g.t.Uwsjn6)
+                        children: A.intl.string(A.t.Uwsjn6)
                     }), (0, n.jsx)(d.Text, {
                         variant: "text-sm/normal",
                         color: "text-muted",
-                        children: g.intl.string(g.t.qPJkZh)
+                        children: A.intl.string(A.t.qPJkZh)
                     })]
                 }), (0, n.jsx)(r.un, {
-                    body: g.intl.string(g.t["9GPbsV"]),
-                    shouldShow: v,
+                    body: A.intl.string(A.t["9GPbsV"]),
+                    shouldShow: N,
                     asContainer: !0,
                     element: "div",
                     children: (0, n.jsx)("div", {
-                        className: b.L$,
+                        className: f.L$,
                         children: (0, n.jsx)(d.dOG, {
                             onChange: function() {
-                                G(e => !e)
+                                y(e => !e)
                             },
                             checked: D,
-                            disabled: B
+                            disabled: w
                         })
                     })
                 })]
             }), (0, n.jsxs)("div", {
-                className: b.Qb,
+                className: f.Qb,
                 children: [(0, n.jsxs)("div", {
-                    className: b.Iy,
+                    className: f.Iy,
                     children: [(0, n.jsx)(d.Text, {
                         variant: "text-md/semibold",
                         color: "text-strong",
-                        children: g.intl.string(g.t["wrDmA/"])
+                        children: A.intl.string(A.t["wrDmA/"])
                     }), (0, n.jsx)(d.Text, {
                         variant: "text-sm/normal",
                         color: "text-muted",
-                        children: g.intl.string(g.t.UQbJW7)
+                        children: A.intl.string(A.t.UQbJW7)
                     })]
                 }), (0, n.jsx)("div", {
-                    className: b.L$,
+                    className: f.L$,
                     children: (0, n.jsx)(d.dOG, {
                         onChange: function() {
                             L(e => !e)
                         },
-                        checked: y
+                        checked: G
                     })
                 })]
             })]

@@ -8,7 +8,6 @@ e.exports = {
     ZM: "canRemove_eaaeee",
     hP: "actionButton_eaaeee",
     _Q: "backgroundContainer_eaaeee",
-    pK: "containerPadding_eaaeee",
     ds: "compactContainer_eaaeee",
     ID: "compactTitle_eaaeee",
     cK: "dragContainer_eaaeee",
@@ -17,9 +16,6 @@ e.exports = {
     TG: "dropHovered_eaaeee",
     DD: "title_eaaeee",
     Gp: "containerTitle_eaaeee title_eaaeee",
-    vk: "clickable_eaaeee",
     Gc: "fieldPadding_eaaeee",
-    vs: "fieldFooterContainer_eaaeee",
-    IC: "termsFieldCaretIcon_eaaeee",
     L6: "typeTag_eaaeee"
 }

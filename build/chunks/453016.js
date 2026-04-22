@@ -1,41 +1,41 @@
 /** chunk id: 453016 params = (module,exports,require) **/
-n.d(t, {
-    _V: () => o,
-    aS: () => d,
+l.d(t, {
+    _V: () => d,
+    aS: () => o,
     y4: () => c
 });
-var r = n(627968);
-n(64700);
-var s = n(397927),
-    i = n(31457),
-    l = n(260197),
-    a = n(985018);
-
-function o(e) {
-    let {
-        value: t,
-        placeholder: n,
-        onChange: i,
-        disabled: a,
-        autofocus: o
-    } = e;
-    return (0, r.jsx)(s.ksK, {
-        maxLength: l.cs,
-        value: t ?? "",
-        placeholder: n,
-        onChange: i,
-        disabled: a,
-        autoFocus: o
-    })
-}
+var n = l(627968);
+l(64700);
+var s = l(397927),
+    i = l(31457),
+    a = l(260197),
+    r = l(985018);
 
 function d(e) {
     let {
+        value: t,
+        placeholder: l,
+        onChange: i,
+        disabled: r,
+        autofocus: d
+    } = e;
+    return (0, n.jsx)(s.ksK, {
+        maxLength: a.cs,
+        value: t ?? "",
+        placeholder: l,
+        onChange: i,
+        disabled: r,
+        autoFocus: d
+    })
+}
+
+function o(e) {
+    let {
         formField: t
     } = e;
-    return (0, r.jsx)(i._H, {
+    return (0, n.jsx)(i._H, {
         title: t.label,
-        children: (0, r.jsx)(s.fs1, {
+        children: (0, n.jsx)(s.fs1, {
             value: t.response,
             disabled: !0
         })
@@ -45,16 +45,16 @@ function d(e) {
 function c(e) {
     let {
         formField: t,
-        autofocus: n,
+        autofocus: l,
         onChange: s
     } = e;
-    return (0, r.jsx)(i.cS, {
+    return (0, n.jsx)(i.cS, {
         title: t.label,
-        children: (0, r.jsx)(o, {
+        children: (0, n.jsx)(d, {
             onChange: s,
             value: t.response,
-            autofocus: n,
-            placeholder: a.intl.string(a.t["Sqn+Wh"])
+            autofocus: l,
+            placeholder: r.intl.string(r.t["Sqn+Wh"])
         })
     })
 }

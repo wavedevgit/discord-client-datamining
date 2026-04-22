@@ -1,39 +1,39 @@
 /** chunk id: 828208 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => s
 });
 var i = n(627968);
 n(64700);
-var s = n(953727);
+var r = n(953727);
 
-function l(e) {
+function s(e) {
     let {
         width: t = 17,
         height: n = 16,
-        color: l = "currentColor",
-        foreground: r,
+        color: s = "currentColor",
+        foreground: l,
         ...a
     } = e;
     return (0, i.jsxs)("svg", {
-        ...(0, s.A)(a),
+        ...(0, r.A)(a),
         width: t,
         height: n,
         viewBox: "0 0 17 16",
         xmlns: "http://www.w3.org/2000/svg",
         children: [(0, i.jsx)("rect", {
-            className: r,
+            className: l,
             y: "5",
             width: "16",
             height: "2",
             rx: "1",
-            fill: l
+            fill: s
         }), (0, i.jsx)("rect", {
-            className: r,
+            className: l,
             y: "9",
             width: "8",
             height: "2",
             rx: "1",
-            fill: l
+            fill: s
         })]
     })
 }

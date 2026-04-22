@@ -1,53 +1,53 @@
 /** chunk id: 243056 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => E
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    r = n(64700),
+    s = n(503698),
+    l = n.n(s),
     a = n(735438),
-    c = n(131346),
-    d = n(522437),
-    o = n(158954),
+    o = n(131346),
+    c = n(522437),
+    d = n(158954),
     u = n(827734),
     x = n(397927),
     m = n(828208),
-    h = n(513461),
-    v = n(985018),
-    j = n(637671);
+    v = n(513461),
+    j = n(985018),
+    h = n(637671);
 
 function f(e) {
     let {
         type: t
-    } = e, n = s.useMemo(() => {
+    } = e, n = r.useMemo(() => {
         switch (t) {
-            case h.rX.MULTIPLE_CHOICE:
+            case v.rX.MULTIPLE_CHOICE:
                 return {
-                    icon: x.jsc, text: v.intl.string(v.t.ooKh3m)
+                    icon: x.jsc, text: j.intl.string(j.t.ooKh3m)
                 };
-            case h.rX.PARAGRAPH:
+            case v.rX.PARAGRAPH:
                 return {
-                    icon: x.$tc, text: v.intl.string(v.t.gG0JBN)
+                    icon: x.$tc, text: j.intl.string(j.t.gG0JBN)
                 };
-            case h.rX.TEXT_INPUT:
+            case v.rX.TEXT_INPUT:
                 return {
-                    icon: (0, x.kHD)(m.A), text: v.intl.string(v.t.w6Q9wz)
+                    icon: (0, x.kHD)(m.A), text: j.intl.string(j.t.w6Q9wz)
                 };
-            case h.rX.TERMS:
+            case v.rX.TERMS:
                 return {
-                    icon: x.B8Q, text: v.intl.string(v.t["3pz9t3"])
+                    icon: x.B8Q, text: j.intl.string(j.t["3pz9t3"])
                 };
             default:
                 return null
         }
     }, [t]);
     return null == n ? null : (0, i.jsxs)("div", {
-        className: j.L6,
+        className: h.L6,
         children: [(0, i.jsx)(n.icon, {
             size: "xs",
             color: "currentColor"
-        }), (0, i.jsx)(o.EYj, {
+        }), (0, i.jsx)(d.EYj, {
             variant: "text-sm/medium",
             tag: "span",
             children: n.text
@@ -55,120 +55,105 @@ function f(e) {
     })
 }
 
-function g(e) {
+function p(e) {
     let {
         title: t,
-        children: n,
-        fieldStyle: s,
-        field: l
+        field: n
     } = e;
     return (0, i.jsx)("div", {
-        className: j._Q,
-        children: s === h.Vf.REGULAR ? (0, i.jsxs)("div", {
-            className: j.pK,
-            children: [(0, i.jsx)(o.EYj, {
+        className: h._Q,
+        children: (0, i.jsxs)("div", {
+            className: h.ds,
+            children: [(0, i.jsx)(d.EYj, {
                 variant: "text-md/medium",
-                className: j.Gp,
-                children: t
-            }), n]
-        }) : (0, i.jsxs)("div", {
-            className: j.ds,
-            children: [(0, i.jsx)(o.EYj, {
-                variant: "text-md/medium",
-                className: j.ID,
+                className: h.ID,
                 children: t
             }), (0, i.jsx)(f, {
-                type: l.field_type
+                type: n.field_type
             })]
         })
     })
 }
-let p = "FORM_FIELD";
+let g = "FORM_FIELD";
 
 function A(e) {
     let {
         index: t,
         field: n,
-        isDropHovered: l,
-        onDrop: o,
-        fieldStyle: m
-    } = e, v = (0, a.debounce)(async (e, t, n) => {
-        await o(e, t, n)
-    }), f = s.useRef(null), [, A] = (0, c.i)({
-        type: p,
+        isDropHovered: s,
+        onDrop: d
+    } = e, m = (0, a.debounce)(async (e, t, n) => {
+        await d(e, t, n)
+    }), v = r.useRef(null), [, j] = (0, o.i)({
+        type: g,
         item: {
             index: t,
             field: n
         },
         end: (e, t) => {
-            null == e || t.didDrop() || v(e.field, null, !0)
+            null == e || t.didDrop() || m(e.field, null, !0)
         }
-    }), [, T] = (0, d.H)({
-        accept: p,
+    }), [, f] = (0, c.H)({
+        accept: g,
         hover: (e, n) => {
             let {
                 index: i
-            } = e, s = f.current?.getBoundingClientRect(), l = n.getClientOffset();
-            if (null == s || null == l) return;
-            let r = (s.bottom - s.top) / 2,
-                a = l.y - s.top;
-            i < t && a < r || i > t && a < r || i === t || v(e.field, t, !1)
+            } = e, r = v.current?.getBoundingClientRect(), s = n.getClientOffset();
+            if (null == r || null == s) return;
+            let l = (r.bottom - r.top) / 2,
+                a = s.y - r.top;
+            i < t && a < l || i > t && a < l || i === t || m(e.field, t, !1)
         },
         drop: e => {
-            v(e.field, t, !0)
+            m(e.field, t, !0)
         }
     });
-    return s.useLayoutEffect(() => (A(T(f)), () => {
-        T(null), A(null)
-    }), [A, T]), (0, i.jsxs)("div", {
-        ref: f,
+    return r.useLayoutEffect(() => (j(f(v)), () => {
+        f(null), j(null)
+    }), [j, f]), (0, i.jsxs)("div", {
+        ref: v,
         "data-dnd-name": `field-${t}`,
-        className: r()(j.cK, {
-            [j.TG]: l
+        className: l()(h.cK, {
+            [h.TG]: s
         }),
         children: [(0, i.jsx)("div", {
-            className: r()(j.VU, {
-                [j.oE]: m === h.Vf.COMPACT
-            }),
+            className: l()(h.VU, h.oE),
             children: (0, i.jsx)(x.WP0, {
                 size: "xs",
-                className: j.co,
+                className: h.co,
                 color: u.A.unsafe_rawColors.PRIMARY_400.css
             })
-        }), (0, i.jsx)(g, {
+        }), (0, i.jsx)(p, {
             ...e
         })]
     })
 }
 
-function T(e) {
+function E(e) {
     return (0, i.jsxs)("div", {
-        className: r()(j.e4, {
-            [j.oE]: e.fieldStyle === h.Vf.COMPACT
-        }),
+        className: l()(h.e4, h.oE),
         children: [(0, i.jsx)("div", {
-            className: j.Th,
+            className: h.Th,
             children: e.isDragEnabled ? (0, i.jsx)(A, {
                 ...e
-            }) : (0, i.jsx)(g, {
+            }) : (0, i.jsx)(p, {
                 ...e
             })
         }), "side" === e.actionsLocation && (0, i.jsxs)("div", {
-            className: r()(j.fc, {
-                [j.oE]: e.fieldStyle === h.Vf.COMPACT,
-                [j.ZM]: e.canRemove
+            className: l()(h.fc, h.oE, {
+                [h.ZM]: e.canRemove
             }),
             children: [(0, i.jsx)(x.DUT, {
-                className: j.hP,
+                className: h.hP,
                 onClick: e.onEdit,
-                "aria-label": v.intl.string(v.t.bt75uw),
+                "aria-label": j.intl.string(j.t.bt75uw),
                 children: (0, i.jsx)(x.R2l, {
                     size: "xs"
                 })
             }), e.canRemove && (0, i.jsx)(x.DUT, {
-                className: j.hP,
+                className: h.hP,
                 onClick: e.onRemove,
-                "aria-label": v.intl.string(v.t.N86XcP),
+                "aria-label": j.intl.string(j.t.N86XcP),
                 children: (0, i.jsx)(x.ucK, {
                     size: "xs"
                 })

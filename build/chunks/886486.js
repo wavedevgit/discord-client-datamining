@@ -9,8 +9,8 @@ var s = l(311907),
     a = l(287809),
     r = l(513461),
     d = l(31457),
-    c = l(414626),
-    o = l(601047),
+    o = l(414626),
+    c = l(601047),
     u = l(273926),
     x = l(453016),
     m = l(985018);
@@ -37,11 +37,11 @@ let h = function(e) {
                         formField: e
                     }, t);
                 case r.rX.PARAGRAPH:
-                    return (0, n.jsx)(o.P1, {
+                    return (0, n.jsx)(c.P1, {
                         formField: e
                     }, t);
                 case r.rX.MULTIPLE_CHOICE:
-                    return (0, n.jsx)(c.CI, {
+                    return (0, n.jsx)(o.CI, {
                         formField: e
                     }, t)
             }

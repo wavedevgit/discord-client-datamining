@@ -6,8 +6,8 @@ var n = l(627968),
     i = l(64700),
     s = l(397927),
     a = l(159083),
-    r = l(189552),
-    C = l(636670),
+    C = l(189552),
+    r = l(636670),
     o = l(985018),
     d = l(570804);
 
@@ -15,16 +15,16 @@ function c(e) {
     let {
         searchState: t
     } = e, l = i.useMemo(() => ({
-        [r.IY.LOADING]: null,
-        [r.IY.SUCCESS_STILL_INDEXING]: {
+        [C.IY.LOADING]: null,
+        [C.IY.SUCCESS_STILL_INDEXING]: {
             icon: (0, n.jsx)(a.A, {}),
             message: o.intl.string(o.t.AXPbZr)
         },
-        [r.IY.SUCCESS_EMPTY]: {
-            icon: (0, n.jsx)(C.A, {}),
+        [C.IY.SUCCESS_EMPTY]: {
+            icon: (0, n.jsx)(r.A, {}),
             message: o.intl.string(o.t.wdyR52)
         },
-        [r.IY.SUCCESS_FULL]: null
+        [C.IY.SUCCESS_FULL]: null
     }), [])[t];
     return null == l ? null : (0, n.jsxs)("div", {
         className: d.p,

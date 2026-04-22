@@ -10,14 +10,14 @@ var i = n(200921),
     o = n(358776),
     d = n(4887),
     c = n(985018);
-let u = (0, l.eA)(a.X.ACCOUNT_SESSIONS_NESTED_PANEL, {
+let u = (0, l.t0)(a.X.ACCOUNT_SESSIONS_NESTED_PANEL, {
     buildLayout: () => [d.C],
     usePredicate: () => (0, o._A)("AccountSessionsNestedPanel"),
     initialize: () => {
         (0, i.GY)()
     },
     useTrailingDecoration: () => ({
-        type: r.sw.TEXT,
+        type: r.xn.TEXT,
         useText: () => {
             let {
                 currentSession: e,

@@ -24,7 +24,7 @@ n.d(t, {
         }), t.type === i.Z6.PANEL && (r = {
             sidebarItem: l.sidebarItem,
             panel: t
-        }), t.type === i.Z6.NESTED_PANEL && (r = {
+        }), t.type === i.Z6.NESTED_PANEL_NAVIGATOR && (r = {
             ...l,
             panel: t.layout[0]
         }), t.type === i.Z6.CATEGORY && (r = {

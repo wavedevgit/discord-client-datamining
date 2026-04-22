@@ -1,13 +1,13 @@
 /** chunk id: 976715 params = (module,exports,require) **/
 l.d(t, {
-    A: () => _
+    A: () => j
 });
 var n = l(627968),
     i = l(64700),
     s = l(827734),
     a = l(397927),
-    r = l(793574),
-    C = l(834409),
+    C = l(793574),
+    r = l(834409),
     o = l(903093),
     d = l(671576),
     c = l(449585),
@@ -36,7 +36,7 @@ function g(e) {
         onHandleEnableLockdown: t,
         onHandleReportFalseAlarm: l,
         incidentData: i
-    } = e, r = i.raidDetectedAt ?? i.dmSpamDetectedAt;
+    } = e, C = i.raidDetectedAt ?? i.dmSpamDetectedAt;
     return (0, n.jsxs)("div", {
         className: x.hD,
         children: [(0, n.jsxs)("div", {
@@ -56,7 +56,7 @@ function g(e) {
                     className: x.Ng,
                     variant: "text-sm/medium",
                     children: m.intl.format(m.t["4QIIZl"], {
-                        dateTime: new Date(r ?? "").toLocaleString(m.intl.currentLocale, o.yc)
+                        dateTime: new Date(C ?? "").toLocaleString(m.intl.currentLocale, o.yc)
                     })
                 })]
             })]
@@ -112,12 +112,12 @@ function H(e) {
     })
 }
 
-function j(e) {
+function p(e) {
     let {
         onHandleEnableLockdown: t,
         onHandleReportFalseAlarm: l,
         incidentData: i,
-        guildName: r
+        guildName: C
     } = e;
     return (0, n.jsxs)("div", {
         className: x.hD,
@@ -137,7 +137,7 @@ function j(e) {
                 }), (0, n.jsx)(a.Text, {
                     className: x.Ng,
                     variant: "text-sm/medium",
-                    children: (0, o.ql)(i, r)
+                    children: (0, o.ql)(i, C)
                 })]
             })]
         }), (0, n.jsxs)("div", {
@@ -156,7 +156,7 @@ function j(e) {
     })
 }
 
-function _(e) {
+function j(e) {
     let {
         guild: t,
         incidentData: l,
@@ -165,8 +165,8 @@ function _(e) {
     } = e, x = i.useCallback(() => {
         (0, a.mMO)(async () => {
             let e = {
-                source: C.Eo.MEMBER_SAFETY_PAGE,
-                location: r.A.MEMBER_SAFETY_PAGE,
+                source: r.Eo.MEMBER_SAFETY_PAGE,
+                location: C.A.MEMBER_SAFETY_PAGE,
                 alertType: (0, o.$5)(l)
             };
             return l => (0, n.jsx)(d.default, {
@@ -178,7 +178,7 @@ function _(e) {
     }, [t.id, l]), h = i.useCallback(() => {
         let e = u.A.getLastIncidentAlertMessage(t.id);
         (0, c.is)(e, t.id)
-    }, [t.id]), _ = (() => {
+    }, [t.id]), j = (() => {
         switch (!0) {
             case m && s:
                 return 3;
@@ -191,7 +191,7 @@ function _(e) {
         }
     })();
     if (null == t || null == l) return null;
-    switch (_) {
+    switch (j) {
         case 1:
             return (0, n.jsx)(g, {
                 onHandleEnableLockdown: x,
@@ -205,7 +205,7 @@ function _(e) {
                 guildName: t.name
             });
         case 3:
-            return (0, n.jsx)(j, {
+            return (0, n.jsx)(p, {
                 onHandleEnableLockdown: x,
                 onHandleReportFalseAlarm: h,
                 incidentData: l,

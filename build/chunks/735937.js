@@ -1,6 +1,6 @@
 /** chunk id: 735937 params = (module,exports,require) **/
 l.d(t, {
-    A: () => r
+    A: () => C
 });
 var n = l(627968);
 l(64700);
@@ -8,18 +8,18 @@ var i = l(585510),
     s = l(903093),
     a = l(976715);
 
-function r(e) {
+function C(e) {
     let {
         guild: t
     } = e, {
         shouldShowIncidentActions: l,
-        incidentData: r,
-        isUnderLockdown: C
+        incidentData: C,
+        isUnderLockdown: r
     } = (0, i.Li)(t.id), o = !1;
-    return (null != r && (o = (0, s.k$)(r) && l), o || C) ? (0, n.jsx)(a.A, {
+    return (null != C && (o = (0, s.k$)(C) && l), o || r) ? (0, n.jsx)(a.A, {
         guild: t,
-        incidentData: r,
-        isUnderLockdown: C,
+        incidentData: C,
+        isUnderLockdown: r,
         isRaidDetected: o
     }) : null
 }

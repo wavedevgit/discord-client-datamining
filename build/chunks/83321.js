@@ -16,7 +16,7 @@ let c = (0, l.zZ)(a.X.ACCOUNT_STANDING_NESTED_CATEGORY, {
         useTitle: () => d.intl.string(d.t["16r9jm"]),
         buildLayout: () => [c]
     }),
-    m = (0, l.eA)(a.X.ACCOUNT_STANDING_NESTED_PANEL, {
+    m = (0, l.t0)(a.X.ACCOUNT_STANDING_NESTED_PANEL, {
         useTitle: s.$b,
         useSubtitle: s.bh,
         useLeadingDecoration: function() {
@@ -26,7 +26,7 @@ let c = (0, l.zZ)(a.X.ACCOUNT_STANDING_NESTED_CATEGORY, {
                 Icon: n
             } = (0, s._k)();
             return {
-                type: r.IJ.ICON,
+                type: r.Xy.ICON,
                 icon: n,
                 color: e,
                 backgroundColor: t
