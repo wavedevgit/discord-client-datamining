@@ -1,58 +1,89 @@
 import { Node, Program } from 'acorn';
 import * as walk from 'acorn-walk';
-import { parse } from 'meriyah';
+import { parseScript } from 'meriyah';
 
-function getModules(code): {
+function getModules(code: string): {
     js: Record<string, string>;
     css: Record<string, string>;
 } {
-    const ast: Program = parse(code, {
-        next: true,
-        sourceType: 'script',
-    }) as Program;
+    const ast: Program = parseScript(code) as unknown as Program;
 
     const result = { js: {}, css: {} };
-    const add = (node: Node, type: 'js' | 'css') => {
-        // @ts-expect-error
-        walk.simple(node.expression.right.body, {
-            ObjectExpression(node) {
-                for (const prop of node.properties) {
-                    // @ts-expect-error
-                    result[type][prop.key.value] = prop.value.value;
-                }
-            },
-        });
-    };
-    walk.simple(ast, {
-        ExpressionStatement(node) {
-            // js function
-            if (
-                // @ts-expect-error
-                (node.expression?.left?.object?.name !==
-                    '__webpack_require__' &&
-                    // @ts-expect-error
-                    node.expression?.right?.type !== 'FunctionExpression') ||
-                // @ts-expect-error
-                node.expression?.right?.type !== 'ArrowFunctionExpression'
-            )
-                return;
-            let type;
 
-            // @ts-expect-error
-            switch (node?.expression?.right?.body?.right?.value) {
+    const add = (
+        objectNode: any,
+        type: 'js' | 'css',
+    ) => {
+        for (const prop of objectNode.properties) {
+            result[type][prop.key.value] = prop.value.value;
+        }
+    };
+
+    walk.simple(ast, {
+        BinaryExpression(node: any) {
+            if (node.left?.type !== 'BinaryExpression') return;
+
+            const binaryExpr = node.left;
+
+            if (
+                typeof binaryExpr.left?.value !== 'string' ||
+                binaryExpr.right?.type !== 'MemberExpression' ||
+                binaryExpr.right?.object?.type !== 'ObjectExpression' ||
+                !['.js', '.css'].includes(node.right?.value)
+            ) return;
+
+            let type: 'js' | 'css';
+
+            const run = () => {
+                add(binaryExpr.right.object, type);
+            };
+
+            switch (node.right.value) {
                 case '.js': {
                     type = 'js';
-                    add(node, type);
+                    run();
                     return;
                 }
                 case '.css': {
                     type = 'css';
-                    add(node, type);
+                    run();
                     return;
                 }
             }
         },
+
+        ConditionalExpression(node: any) {
+            if (
+                node.consequent?.type !== 'BinaryExpression' ||
+                node.test?.type !== 'BinaryExpression' ||
+                node.consequent?.right?.type !== 'Literal'
+            )
+                return;
+
+            if (
+                typeof node.consequent.right.value !== 'string' ||
+                !(
+                    node.consequent.right.value.endsWith('.js') ||
+                    node.consequent.right.value.endsWith('.css')
+                )
+            )
+                return;
+
+            if (
+                node.test.left?.type !== 'Literal' ||
+                typeof node.test.left.value !== 'string'
+            )
+                return;
+
+            const id = node.test.left.value;
+            const filePath = id + node.consequent.right.value;
+
+            result[
+                filePath.endsWith('.js') ? 'js' : 'css'
+            ][String(id)] = filePath;
+        },
     });
+
     return result;
 }
 
