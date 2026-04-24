@@ -74,13 +74,12 @@ function getModules(code: string): {
                 typeof node.test.left.value !== 'string'
             )
                 return;
-
-            const id = node.test.left.value;
-            const filePath = id + node.consequent.right.value;
-
-            result[
-                filePath.endsWith('.js') ? 'js' : 'css'
-            ][String(id)] = filePath;
+          const id = String(node.test.left?.value);
+          let filePath = node.consequent?.right?.value;
+          if (!filePath.startsWith(".") && !filePath.startsWith(id)) filePath = "." + filePath
+          if (!filePath.startsWith(id)) filePath = id + filePath
+          result[filePath.endsWith('.js') ? 'js' : 'css'][id] =
+            filePath;
         },
     });
 
