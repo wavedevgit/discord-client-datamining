@@ -22,7 +22,7 @@ export default function getChunksByCode(
     moduleId: string,
     moduleFileName: string,
 ): Record<string, string> {
-    const ast: Program = parse(code, {
+    try { const ast: Program = parse(code, {
         next: true,
         ranges: true,
     }) as Program;
@@ -65,5 +65,5 @@ export default function getChunksByCode(
     } catch (err) {
         console.log('!!!! error', err, moduleId, moduleFileName);
     }
-    return result;
+    return result; } catch { return [] } 
 }
