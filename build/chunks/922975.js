@@ -299,6 +299,7 @@ function ee() {
             } = e, d = i, m = S.A.getSubscriptionListing(d);
             try {
                 if (t(!0), l(void 0), null != m) r()(null != a, "groupListingId is null"), await
+
                 function(e) {
                     let {
                         guildId: t,

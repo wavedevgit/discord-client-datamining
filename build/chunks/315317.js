@@ -32,6 +32,7 @@ async function x(e, n) {
     } = e;
     if (t === u.Ps.STAGE_INSTANCE) {
         let t = await
+
         function(e, n) {
             let {
                 guild_id: t,
