@@ -1,44 +1,64 @@
-import { exec } from 'node:child_process';
+import { readdir } from 'fs/promises';
 import { createWriteStream } from 'node:fs';
 import { Readable } from 'node:stream';
 import { finished } from 'node:stream/promises';
+import { spawn } from 'node:child_process';
 
 import { Build } from '../types.js';
+import chunk from '../utils/chunk.js';
 import { asset } from '../utils/requests.js';
 
+const WASM_REGEX = /([a-f0-9]{16})\.wasm/;
+
+function run(cmd: string, args: string[]) {
+    return new Promise<void>((resolve, reject) => {
+        const p = spawn(cmd, args, { stdio: 'inherit' });
+
+        p.on('error', reject);
+        p.on('close', (code) => {
+            if (code === 0) resolve();
+            else reject(new Error(`${cmd} failed with code ${code}`));
+        });
+    });
+}
+
 export default async function getLibDiscore(build: Build): Promise<void> {
-    const { id } = build.libdiscore.match(
-        /[\w_]+\.exports(\s+|)=(\s+|)[\w_]+\.v\([\w_]+,(\s+|)[\w_]+\.id,(\s+|)"(?<id>[a-f0-9]{16})",(\s+|){/,
-    )?.groups || { id: null };
-    if (!id) {
-        console.log('no libdiscore wasm file found');
+    const chunks = await readdir('./build/chunks/');
+
+    let wasmId: string | null = null;
+
+    for (const chunkFile of chunks) {
+        if (chunkFile === 'readme.md') continue;
+
+        const content = await chunk(chunkFile.replace('.js', ''));
+
+        const match = content.match(WASM_REGEX);
+        if (!match) continue;
+
+        wasmId = match[1];
+        break;
+    }
+
+    if (!wasmId) {
+        console.log('no libdiscore wasm found in chunks (sadly)');
         return;
     }
-    build.libdiscore = asset(id + '.module.wasm');
-    const writeStream = createWriteStream('./build/libdiscore.module.wasm');
+
+    const wasmUrl = asset(`${wasmId}.wasm`);
+    const wasmPath = './build/libdiscore.module.wasm';
+    const cPath = wasmPath.replace(/\.wasm$/, '.c');
+
+    const res = await fetch(wasmUrl);
+    if (!res.body) throw new Error('no wasm body received');
+
+    const writeStream = createWriteStream(wasmPath);
+
     await finished(
-        Readable.fromWeb(
-            await (
-                await fetch(asset(id + '.module.wasm'), {
-                    headers: {
-                        'user-agent':
-                            'Mozilla/5.0 (Linux; arm_64; Android 10; Nokia 3.1 Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 YaBrowser/20.4.3.90.00 SA/1 Mobile Safari/537.36',
-                    },
-                })
-            ).body,
-        ).pipe(writeStream),
+        Readable.fromWeb(res.body as any).pipe(writeStream)
     );
-    const wasmFile = './build/libdiscore.module.wasm';
-    const cFile = wasmFile.replace(/\.wasm$/, '.c');
 
-    try {
-        // wasm -> pseudo c
-        await exec('wasm-decompile ' + wasmFile + ' -o ' + cFile);
+    await run('wasm-decompile', [wasmPath, '-o', cPath]);
 
-        console.log('done.');
-        console.log('saved pseudo-C of libdiscore  to:', cFile);
-    } catch (err) {
-        console.error('failed:', err.message);
-        process.exit(1);
-    }
+    console.log('done.');
+    console.log('libdiscore extracted to:', cPath);
 }
